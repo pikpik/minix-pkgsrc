@@ -1,3 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/02 11:28:38 shannonjr Exp $
 include/libiberty.h
+include/libiberty_decl.h
 lib/libiberty.a
