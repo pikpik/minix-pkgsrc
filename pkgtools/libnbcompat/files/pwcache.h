@@ -1,4 +1,4 @@
-/*	$NetBSD: pwcache.h,v 1.2 2003/06/24 14:09:21 jschauma Exp $	*/
+/*	$NetBSD: pwcache.h,v 1.3 2003/12/19 22:16:14 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -34,6 +34,9 @@
  *
  *      @(#)cache.h	8.1 (Berkeley) 5/31/93
  */
+
+#ifndef _NBCOMPAT_PWCACHE_H
+#define _NBCOMPAT_PWCACHE_H
 
 /*
  * Constants and data structures used to implement group and password file
@@ -86,3 +89,5 @@ int uid_from_user(const char *, uid_t *);
 #ifndef HAVE_GID_FROM_GROUP
 int gid_from_group(const char *, gid_t *);
 #endif
+
+#endif /* !_NBCOMPAT_PWCACHE_H */
