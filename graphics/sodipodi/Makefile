@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/03 14:20:39 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/13 17:37:17 fredb Exp $
 #
 
 DISTNAME=	sodipodi-0.23
@@ -15,6 +15,7 @@ GNU_CONFIGURE=		YES
 #USE_BUILDLINK_ONLY=	YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
+USE_X11BASE=		YES
 
 PTHREAD_TYPE=	native pth
 
