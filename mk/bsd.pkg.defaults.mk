@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.191 2003/11/11 14:32:06 agc Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.192 2003/11/12 17:24:38 agc Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1070,6 +1070,12 @@ IRCD_HYBRID_NETWORK_DESC?=	Package Source Network
 # Possible: YES, not defined
 # Default: not defined
 
+IRSSI_USE_SSL?=	YES
+# Enable SSL in irssi (for IRC server connections)
+# Possible: YES, NO
+# Default: YES
+
+#XLOCK_DEFAULT_MODE=
 #JB_FQHOSTNAME=
 # Used by jitterbug package to include the fully-qualified domain name
 # of the host.
