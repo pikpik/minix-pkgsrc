@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/avl.h
+include/avlt.h
+include/avltr.h
+include/rb.h
+info/avl.info
+lib/libavl.a
