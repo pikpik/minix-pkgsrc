@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- config.h.in.orig	Sat Jan 23 21:27:49 1999
-+++ config.h.in	Sat Mar  6 17:50:41 1999
++++ config.h.in	Sat Mar  6 19:50:56 1999
 @@ -1,5 +1,12 @@
  /* config.h.in.  Generated automatically from configure.in by autoheader.  */
  
@@ -31,15 +31,6 @@ $NetBSD$
  
  /*
   *  SCO 4.x
-@@ -154,7 +164,7 @@
-  * The prefix which is prepended to the name of messages when they
-  * are "removed" by rmm.  This should typically be `,' or `#'
-  */
--#define BACKUP_PREFIX ","
-+#define BACKUP_PREFIX "#"
- 
- /*
-  * Name of link to file to which you are replying.
 @@ -399,9 +409,6 @@
  
  /* Define if you have the <sys/ndir.h> header file.  */
