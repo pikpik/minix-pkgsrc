@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/06/03 13:16:56 agc Exp $
+# $NetBSD: Makefile,v 1.1 1998/11/24 04:12:07 tv Exp $
 #
 
 DISTNAME=	eggdrop1.3.22
@@ -10,6 +10,8 @@ MASTER_SITES=	ftp://ftp.sodre.net/pub/eggdrop/ \
 
 MAINTAINER=     tv@netbsd.org
 HOMEPAGE=	http://www.sodre.net/eggdrop/
+
+DEPENDS+=	tcl-8.0.5:../../lang/tcl80
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	TCLLIB="${PREFIX}/lib" TCLINC="${PREFIX}/include/tcl8.0"
