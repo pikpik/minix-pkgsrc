@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 1999/02/18 23:37:56 tron Exp $
+@comment $NetBSD: PLIST,v 1.9 1999/02/19 23:07:20 tron Exp $
 bin/kdecode
 bin/kmail
 bin/knu
@@ -10,64 +10,11 @@ bin/kfinger
 bin/kppplogview
 bin/kppp
 bin/newkrn
-bin/ksticker
-bin/mathpod
-bin/ksirc
-bin/dsirc
 bin/ktalkd
 bin/kotalkd
 bin/mail.local
 bin/kcmktalkd
 bin/ktalkdlg
-lib/libkplunger.a
-lib/libpuke.a
-lib/libpuke.la
-lib/libpuke.so.0.1
-lib/ksirc/libpframe.so.0.0
-lib/ksirc/libpframe.la
-lib/ksirc/libpframe.a
-lib/ksirc/libplined.so.0.0
-lib/ksirc/libplined.la
-lib/ksirc/libplined.a
-lib/ksirc/libpbutton.so.0.0
-lib/ksirc/libpbutton.la
-lib/ksirc/libpbutton.a
-lib/ksirc/libppushbt.so.0.0
-lib/ksirc/libppushbt.la
-lib/ksirc/libppushbt.a
-lib/ksirc/libpprogress.so.0.0
-lib/ksirc/libpprogress.la
-lib/ksirc/libpprogress.a
-lib/ksirc/libptablevw.so.0.0
-lib/ksirc/libptablevw.la
-lib/ksirc/libptablevw.a
-lib/ksirc/libplistbox.so.0.0
-lib/ksirc/libplistbox.la
-lib/ksirc/libplistbox.a
-lib/ksirc/libplabel.so.0.0
-lib/ksirc/libplabel.la
-lib/ksirc/libplabel.a
-lib/ksirc/libpmenudta.so.0.0
-lib/ksirc/libpmenudta.la
-lib/ksirc/libpmenudta.a
-lib/ksirc/libppopmenu.so.0.0
-lib/ksirc/libppopmenu.la
-lib/ksirc/libppopmenu.a
-lib/ksirc/libpalistbox.so.0.0
-lib/ksirc/libpalistbox.la
-lib/ksirc/libpalistbox.a
-lib/ksirc/libptabdialog.so.0.0
-lib/ksirc/libptabdialog.la
-lib/ksirc/libptabdialog.a
-lib/ksirc/libksirclistbox.so.0.0
-lib/ksirc/libksirclistbox.la
-lib/ksirc/libksirclistbox.a
-lib/ksirc/libpkfiledialog.so.0.0
-lib/ksirc/libpkfiledialog.la
-lib/ksirc/libpkfiledialog.a
-lib/ksirc/libpobjfinder.so.0.0
-lib/ksirc/libpobjfinder.la
-lib/ksirc/libpobjfinder.a
 share/kde/apps/kmail/pics/kmmsgforwarded.xpm
 share/kde/apps/kmail/pics/kmmsgqueued.xpm
 share/kde/apps/kmail/pics/kmmsgsent.xpm
@@ -283,59 +230,6 @@ share/kde/apps/kppp/Rules/Switzerland/Sunrise_Internet.rst
 share/kde/apps/kppp/Rules/Switzerland/Sunrise_Local.rst
 share/kde/apps/kppp/Rules/checkrules
 share/kde/apps/kppp/Rules/TEMPLATE
-share/kde/apps/ksirc/servers.txt
-share/kde/apps/ksirc/servers.ini
-share/kde/apps/ksirc/pics/pws_general.xpm
-share/kde/apps/ksirc/pics/pws_www.xpm
-share/kde/apps/ksirc/commands-handler.pl
-share/kde/apps/ksirc/commands-perl.pl
-share/kde/apps/ksirc/convert_commands.pl
-share/kde/apps/ksirc/puke.pl
-share/kde/apps/ksirc/small.pl
-share/kde/apps/ksirc/test.pl
-share/kde/apps/ksirc/tester.pl
-share/kde/apps/ksirc/dcc_progress.pm
-share/kde/apps/ksirc/dcc_status.pm
-share/kde/apps/ksirc/ksirclistbox.pm
-share/kde/apps/ksirc/load_all.pm
-share/kde/apps/ksirc/palistbox.pm
-share/kde/apps/ksirc/pbase.pm
-share/kde/apps/ksirc/pboxlayout.pm
-share/kde/apps/ksirc/pbutton.pm
-share/kde/apps/ksirc/pframe.pm
-share/kde/apps/ksirc/pkfiledialog.pm
-share/kde/apps/ksirc/plabel.pm
-share/kde/apps/ksirc/plined.pm
-share/kde/apps/ksirc/plistbox.pm
-share/kde/apps/ksirc/pmenudta.pm
-share/kde/apps/ksirc/ppopmenu.pm
-share/kde/apps/ksirc/pprogress.pm
-share/kde/apps/ksirc/ppushbt.pm
-share/kde/apps/ksirc/ptabdialog.pm
-share/kde/apps/ksirc/ptablevw.pm
-share/kde/apps/ksirc/pwidget.pm
-share/kde/apps/ksirc/pobjfinder.pm
-share/kde/apps/ksirc/icons/server.xpm
-share/kde/apps/ksirc/icons/channel.xpm
-share/kde/apps/ksirc/icons/channels.xpm
-share/kde/apps/ksirc/icons/ksirc_a.xpm
-share/kde/apps/ksirc/icons/ksirc_b.xpm
-share/kde/apps/ksirc/icons/ksirc_dock.xpm
-share/kde/apps/ksirc/icons/arrow.gif
-share/kde/apps/ksirc/icons/greenpin.gif
-share/kde/apps/ksirc/icons/madsmiley.gif
-share/kde/apps/ksirc/icons/smiley.gif
-share/kde/apps/ksirc/icons/blueball.gif
-share/kde/apps/ksirc/icons/info.gif
-share/kde/apps/ksirc/icons/star.gif
-share/kde/apps/ksirc/icons/bluepin.gif
-share/kde/apps/ksirc/icons/info1.gif
-share/kde/apps/ksirc/icons/mini-run.gif
-share/kde/apps/ksirc/icons/ksirc.gif
-share/kde/apps/ksirc/ksirc.pl
-share/kde/apps/ksirc/filters.pl
-share/kde/apps/ksirc/sirc.help.gz
-share/kde/apps/ksirc/relnotes
 share/kde/config/karchierc
 share/kde/config/kfingerrc
 share/kde/config/ktalkdrc
@@ -402,16 +296,6 @@ share/doc/kde/HTML/en/kppp/kppp-9.html
 share/doc/kde/HTML/en/kppp/kppp-10.html
 share/doc/kde/HTML/en/kppp/hayes.html
 share/doc/kde/HTML/en/kppp/logotp3.gif
-share/doc/kde/HTML/en/pws/pws.html
-share/doc/kde/HTML/en/pws/pws-1.html
-share/doc/kde/HTML/en/pws/pws-2.html
-share/doc/kde/HTML/en/pws/pws.gif
-share/doc/kde/HTML/en/ksirc/colours.html
-share/doc/kde/HTML/en/ksirc/filters.html
-share/doc/kde/HTML/en/ksirc/index.html
-share/doc/kde/HTML/en/ksirc/ksirc.gif
-share/doc/kde/HTML/en/ksirc/keys.html
-share/doc/kde/HTML/en/ksirc/PROGRAMMING
 share/doc/kde/HTML/en/ktalkd/ktalkd.html
 share/doc/kde/HTML/en/ktalkd/ktalkd-1.html
 share/doc/kde/HTML/en/ktalkd/ktalkd-2.html
@@ -449,8 +333,6 @@ share/kde/applnk/Internet/kbiff.kdelnk
 share/kde/applnk/Internet/kfinger.kdelnk
 share/kde/applnk/Internet/kppplogview.kdelnk
 share/kde/applnk/Internet/Kppp.kdelnk
-share/kde/applnk/Internet/pws.kdelnk
-share/kde/applnk/Internet/ksirc.kdelnk
 share/kde/applnk/Internet/Krn.kdelnk
 share/kde/applnk/Internet/knu.kdelnk
 share/kde/applnk/Internet/KOrn.kdelnk
@@ -463,7 +345,6 @@ share/kde/icons/mini/korn.xpm
 share/kde/icons/mini/karchie.xpm
 share/kde/icons/mini/kbiff.xpm
 share/kde/icons/mini/kppp.xpm
-share/kde/icons/mini/pws.xpm
 share/kde/icons/kmail.xpm
 share/kde/icons/knu.xpm
 share/kde/icons/korn.xpm
@@ -471,8 +352,6 @@ share/kde/icons/krn.xpm
 share/kde/icons/karchie.xpm
 share/kde/icons/kbiff.xpm
 share/kde/icons/kppp.xpm
-share/kde/icons/pws.xpm
-share/kde/icons/ksirc.gif
 share/kde/locale/fr/LC_MESSAGES/kppp.mo
 share/kde/locale/da/LC_MESSAGES/kppp.mo
 share/kde/locale/it/LC_MESSAGES/krn.mo
@@ -549,10 +428,8 @@ share/kde/locale/eo/LC_MESSAGES/kbiff.mo
 share/kde/locale/eo/LC_MESSAGES/kcmktalkd.mo
 share/kde/locale/eo/LC_MESSAGES/kfinger.mo
 share/kde/locale/eo/LC_MESSAGES/korn.mo
-share/kde/locale/eo/LC_MESSAGES/ksirc.mo
 share/kde/locale/eo/LC_MESSAGES/ktalkd.mo
 share/kde/locale/is/LC_MESSAGES/kmail.mo
-share/kde/locale/is/LC_MESSAGES/ksirc.mo
 share/kde/locale/is/LC_MESSAGES/ktalkd.mo
 share/kde/locale/is/LC_MESSAGES/karchie.mo
 share/kde/locale/is/LC_MESSAGES/kbiff.mo
@@ -581,13 +458,11 @@ share/kde/locale/pt_BR/LC_MESSAGES/kbiff.mo
 share/kde/locale/pt_BR/LC_MESSAGES/ktalkd.mo
 share/kde/locale/pt_BR/LC_MESSAGES/karchie.mo
 share/kde/locale/pt_BR/LC_MESSAGES/kfinger.mo
-share/kde/locale/pt_BR/LC_MESSAGES/ksirc.mo
 share/kde/locale/pt_BR/LC_MESSAGES/kcmktalkd.mo
 share/kde/locale/de/LC_MESSAGES/ktalkd.mo
 share/kde/locale/de/LC_MESSAGES/korn.mo
 share/kde/locale/de/LC_MESSAGES/kfinger.mo
 share/kde/locale/de/LC_MESSAGES/kcmktalkd.mo
-share/kde/locale/de/LC_MESSAGES/ksirc.mo
 share/kde/locale/de/LC_MESSAGES/karchie.mo
 share/kde/locale/de/LC_MESSAGES/kbiff.mo
 share/kde/locale/fr/LC_MESSAGES/ktalkd.mo
@@ -603,7 +478,6 @@ share/kde/locale/sv/LC_MESSAGES/kppp.mo
 share/kde/locale/sv/LC_MESSAGES/karchie.mo
 share/kde/locale/sv/LC_MESSAGES/kcmtalkd.mo
 share/kde/locale/sv/LC_MESSAGES/ktalkd.mo
-share/kde/locale/sv/LC_MESSAGES/ksirc.mo
 share/kde/locale/sv/LC_MESSAGES/krn.mo
 share/kde/locale/cs/LC_MESSAGES/kfinger.mo
 share/kde/locale/cs/LC_MESSAGES/ktalkd.mo
@@ -622,7 +496,6 @@ share/kde/locale/ru/LC_MESSAGES/kmail.mo
 share/kde/locale/ru/LC_MESSAGES/knu.mo
 share/kde/locale/ru/LC_MESSAGES/kppp.mo
 share/kde/locale/ru/LC_MESSAGES/krn.mo
-share/kde/locale/ru/LC_MESSAGES/ksirc.mo
 share/kde/locale/ru/LC_MESSAGES/ktalkd.mo
 share/kde/locale/hu/LC_MESSAGES/ktalkd.mo
 share/kde/locale/hu/LC_MESSAGES/kfinger.mo
@@ -635,7 +508,6 @@ share/kde/locale/da/LC_MESSAGES/kmail.mo
 share/kde/locale/da/LC_MESSAGES/knu.mo
 share/kde/locale/da/LC_MESSAGES/korn.mo
 share/kde/locale/da/LC_MESSAGES/krn.mo
-share/kde/locale/da/LC_MESSAGES/ksirc.mo
 share/kde/locale/da/LC_MESSAGES/ktalkd.mo
 share/kde/locale/it/LC_MESSAGES/kbiff.mo
 share/kde/locale/it/LC_MESSAGES/korn.mo
@@ -646,39 +518,33 @@ share/kde/locale/pt/LC_MESSAGES/ktalkd.mo
 share/kde/locale/pt/LC_MESSAGES/kfinger.mo
 share/kde/locale/pt/LC_MESSAGES/kbiff.mo
 share/kde/locale/pt/LC_MESSAGES/kcmktalkd.mo
-share/kde/locale/pt/LC_MESSAGES/ksirc.mo
 share/kde/locale/no/LC_MESSAGES/ktalkd.mo
 share/kde/locale/no/LC_MESSAGES/korn.mo
 share/kde/locale/no/LC_MESSAGES/kbiff.mo
 share/kde/locale/no/LC_MESSAGES/kfinger.mo
 share/kde/locale/no/LC_MESSAGES/karchie.mo
 share/kde/locale/no/LC_MESSAGES/kcmktalkd.mo
-share/kde/locale/no/LC_MESSAGES/ksirc.mo
 share/kde/locale/pl/LC_MESSAGES/kbiff.mo
 share/kde/locale/pl/LC_MESSAGES/korn.mo
 share/kde/locale/pl/LC_MESSAGES/kfinger.mo
 share/kde/locale/pl/LC_MESSAGES/karchie.mo
-share/kde/locale/pl/LC_MESSAGES/ksirc.mo
 share/kde/locale/pl/LC_MESSAGES/ktalkd.mo
 share/kde/locale/pl/LC_MESSAGES/kcmktalkd.mo
 share/kde/locale/fi/LC_MESSAGES/kcmktalkd.mo
 share/kde/locale/fi/LC_MESSAGES/ktalkd.mo
 share/kde/locale/fi/LC_MESSAGES/kbiff.mo
 share/kde/locale/fi/LC_MESSAGES/kfinger.mo
-share/kde/locale/fi/LC_MESSAGES/ksirc.mo
 share/kde/locale/fi/LC_MESSAGES/karchie.mo
 share/kde/locale/fi/LC_MESSAGES/korn.mo
 share/kde/locale/hr/LC_MESSAGES/ktalkd.mo
 share/kde/locale/hr/LC_MESSAGES/kfinger.mo
 share/kde/locale/hr/LC_MESSAGES/kbiff.mo
-share/kde/locale/hr/LC_MESSAGES/ksirc.mo
 share/kde/locale/ro/LC_MESSAGES/kfinger.mo
 share/kde/locale/sk/LC_MESSAGES/ktalkd.mo
 share/kde/locale/sk/LC_MESSAGES/korn.mo
 share/kde/locale/sk/LC_MESSAGES/kfinger.mo
 share/kde/locale/sk/LC_MESSAGES/kcmktalkd.mo
 share/kde/locale/sk/LC_MESSAGES/kbiff.mo
-share/kde/locale/sk/LC_MESSAGES/ksirc.mo
 share/kde/locale/sk/LC_MESSAGES/karchie.mo
 share/kde/locale/ca/LC_MESSAGES/knu.mo
 share/kde/locale/ca/LC_MESSAGES/kmail.mo
@@ -690,9 +556,7 @@ share/kde/toolbar/mini-connect.xpm
 share/kde/toolbar/mini-clock.xpm
 @dirrm share/doc/kde/HTML/it/ktalkd
 @dirrm share/doc/kde/HTML/fr/ktalkd
-@dirrm share/doc/kde/HTML/en/pws
 @dirrm share/doc/kde/HTML/en/ktalkd
-@dirrm share/doc/kde/HTML/en/ksirc
 @dirrm share/doc/kde/HTML/en/kppp
 @dirrm share/doc/kde/HTML/en/kfinger
 @dirrm share/doc/kde/HTML/en/kbiff
@@ -702,9 +566,6 @@ share/kde/toolbar/mini-clock.xpm
 @dirrm share/doc/kde/HTML/en/knu
 @dirrm share/doc/kde/HTML/en/korn
 @dirrm share/doc/kde/HTML/el/ktalkd
-@dirrm share/kde/apps/ksirc/pics
-@dirrm share/kde/apps/ksirc/icons
-@dirrm share/kde/apps/ksirc
 @dirrm share/kde/apps/kppp/pics
 @dirrm share/kde/apps/kppp/Rules/Switzerland
 @dirrm share/kde/apps/kppp/Rules/Sweden
@@ -749,4 +610,3 @@ share/kde/toolbar/mini-clock.xpm
 @dirrm share/kde/apps/krn
 @dirrm share/kde/apps/kmail/pics
 @dirrm share/kde/apps/kmail
-@dirrm lib/ksirc
