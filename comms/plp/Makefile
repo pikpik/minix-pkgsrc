@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/04/23 08:26:01 skrll Exp $
+# $NetBSD: Makefile,v 1.10 2001/08/19 18:39:50 jlam Exp $
 
 DISTNAME=	plp_1_8
 PKGNAME=	plp-1.8
@@ -9,11 +9,10 @@ MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://www.proudman51.freeserve.co.uk/psion/
 COMMENT=	Tools to talk to the PSION organiser
 
-USE_BUILDLINK_ONLY=	yes
-USE_GMAKE=	yes
-USE_LIBTOOL=	yes
-
-MAKE_ENV+=	REALCXX="${CXX}"
+USE_BUILDLINK2=	# defined
+USE_CXX=	# defined
+USE_GMAKE=	# defined
+USE_LIBTOOL=	# defined
 
 do-install:
 	${LIBTOOL} --mode=install ${INSTALL_DATA} ${WRKSRC}/utils/libplputils.la ${PREFIX}/lib
