@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2001/12/03 07:55:44 jlam Exp $
+# $NetBSD: Makefile,v 1.51 2001/12/14 05:32:35 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -146,7 +146,7 @@ post-build:
 
 post-install:
 .if defined(STATIC_PERL) && (${STATIC_PERL} == "YES")
-	${RM} ${PREFIX}/bin/perl ${PREFIX}/bin/perl${PERL_DIST_VERS}
+	${RM} -f ${PREFIX}/bin/perl ${PREFIX}/bin/perl${PERL_DIST_VERS}
 	${INSTALL_PROGRAM} ${STATIC_WRKDIR}/${DISTNAME}/perl ${PREFIX}/bin/perl
 	${LN} -f ${PREFIX}/bin/perl ${PREFIX}/bin/perl${PERL_DIST_VERS}
 .endif
