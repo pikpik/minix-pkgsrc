@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.281 2002/04/20 20:05:15 schmonz Exp $
+# $NetBSD: Makefile,v 1.282 2002/04/22 11:52:42 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -135,6 +135,7 @@ SUBDIR+=	libslang
 SUBDIR+=	libsmi
 SUBDIR+=	libstash
 SUBDIR+=	libstroke
+SUBDIR+=	libtar
 SUBDIR+=	libtool
 SUBDIR+=	libtool-base
 SUBDIR+=	libtool-info
