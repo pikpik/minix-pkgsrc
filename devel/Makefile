@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2000/02/23 20:38:57 jlam Exp $
+# $NetBSD: Makefile,v 1.107 2000/02/25 01:04:13 wiz Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -49,6 +49,7 @@
     SUBDIR += libglade
     SUBDIR += libgtop
     SUBDIR += libhfs
+    SUBDIR += libidl
     SUBDIR += libnet
     SUBDIR += libproplist
     SUBDIR += librep
