@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2001/06/11 06:34:25 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/08/11 18:28:58 rh Exp $
 #
 
-DISTNAME=	GConf-1.0.3
+DISTNAME=	GConf-1.0.4
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=unstable/sources/GConf/}
 EXTRACT_SUFX=	.tar.bz2
