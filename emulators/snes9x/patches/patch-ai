@@ -7,7 +7,7 @@ $NetBSD$
  #endif
  
 +/* removed in NetBSD around 2001/01/18 */
-+#ifndef OF /* function prototypes */
++#ifndef OF
 +#  ifdef STDC
 +#    define OF(args)  args
 +#  else

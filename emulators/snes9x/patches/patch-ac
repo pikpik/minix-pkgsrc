@@ -1,6 +1,6 @@
 $NetBSD$
 
---- i386/fxemu2.asm.orig	Fri Sep 10 19:18:40 1999
+--- i386/fxemu2.asm.orig	Fri Sep 10 21:18:39 1999
 +++ i386/fxemu2.asm
 @@ -2683,4 +2683,3 @@
  SECTION .data
