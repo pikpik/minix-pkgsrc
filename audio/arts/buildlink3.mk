@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/01/15 09:11:02 markd Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/01/24 03:26:46 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ARTS_BUILDLINK3_MK:=	${ARTS_BUILDLINK3_MK}+
@@ -15,6 +15,7 @@ BUILDLINK_PKGSRCDIR.arts?=	../../audio/arts
 .  include "../../audio/libaudiofile/buildlink3.mk"
 .  include "../../audio/libogg/buildlink3.mk"
 .  include "../../audio/libvorbis/buildlink3.mk"
+.  include "../../devel/glib2/buildlink2.mk"
 .  include "../../mk/ossaudio.buildlink3.mk"
 .endif	# ARTS_BUILDLINK3_MK
 
