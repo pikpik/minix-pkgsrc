@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- scheme/gschem.scm.orig	Tue Feb 18 21:20:02 2003
++++ scheme/gschem.scm	Sat Mar  8 16:48:32 2003
+@@ -32,5 +32,5 @@
+ (define no-action
+   (lambda ()
+-        ()
++       nil
+   )
+ )
