@@ -1,0 +1,12 @@
+# $NetBSD$
+#
+
+CFENGINE_VERSION= 2.0.4
+DISTNAME=	cfengine-${CFENGINE_VERSION}
+CATEGORIES=	sysutils net
+MASTER_SITES=	ftp://ftp.iu.hio.no/pub/cfengine/ \
+		http://sunsite.utk.edu/ftp/pub/cfengine/cfengine-ftp/ \
+		ftp://ftp.cfengine.webmotion.net/pub/cfengine/
+
+MAINTAINER=	mike@ethmoid.org
+HOMEPAGE=	http://www.cfengine.org/
