@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/30 19:12:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/21 20:26:12 hubertf Exp $
 #
 
 DISTNAME=		archivemail-0.6.1
@@ -10,8 +10,9 @@ HOMEPAGE=		http://archivemail.sourceforge.net/
 COMMENT=		Tool for archiving and compressing old email in mailboxes
 
 NO_CONFIGURE=		yes
-NO_BUILD=		yes
 USE_BUILDLINK3=		yes
+
+do-build:
 
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} setup.py install \
