@@ -1,8 +1,9 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/02/16 16:00:24 jmmv Exp $
 bin/xchat
 bin/xchat-text
 share/applications/xchat.desktop
 ${PKGLOCALEDIR}/locale/am/LC_MESSAGES/xchat.mo
+${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/xchat.mo
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/xchat.mo
 ${PKGLOCALEDIR}/locale/el/LC_MESSAGES/xchat.mo
 ${PKGLOCALEDIR}/locale/es/LC_MESSAGES/xchat.mo
@@ -18,3 +19,4 @@ share/pixmaps/xchat.png
 @comment in gnome2-dirs: @dirrm share/applications
 @exec ${MKDIR} %D/lib/xchat/plugins
 @dirrm lib/xchat/plugins
+@dirrm lib/xchat
