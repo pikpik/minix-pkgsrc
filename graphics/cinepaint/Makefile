@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/28 23:18:21 reed Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/17 13:38:37 adam Exp $
 
 DISTNAME=	cinepaint-0.19-0
 PKGNAME=	cinepaint-0.19.0
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cinepaint/}
 
 MAINTAINER=	adam@NetBSD.org
-HOMEPAGE=	http://cinepaint.sourceforge.org/
+HOMEPAGE=	http://cinepaint.sourceforge.net/
 COMMENT=	Motion picture painting and image retouching program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
