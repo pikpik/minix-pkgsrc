@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:05 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 17:20:19 martti Exp $
 #
 
 DISTNAME=		Digest-HMAC-1.01
 PKGNAME=		p5-${DISTNAME}
-SVR4_PKGNAME=		p5sh2
+SVR4_PKGNAME=		p5hmac
 CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Digest/}
 
