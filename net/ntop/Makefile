@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2000/01/15 18:46:32 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/09/19 20:00:03 agc Exp $
 
-DISTNAME=		ntop-1.1
+DISTNAME=		ntop-1.1nb1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.unipi.it/pub/local/ntop/source/
 EXTRACT_SUFX=		-src.tar.gz
