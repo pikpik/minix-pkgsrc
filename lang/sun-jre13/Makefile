@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/03/16 14:32:37 tv Exp $
+# $NetBSD: Makefile,v 1.4 2001/04/03 13:37:42 skrll Exp $
 #
 
 # MASTER_SITES is very special, and must end in "=":
@@ -46,7 +46,7 @@ post-fetch:
 post-patch:
 	@${FIND} ${WRKSRC} -name '*.orig' -print | xargs ${RM} -f
 
-# This is ugly.  The chown should happen after copying, ot tar should have
+# This is ugly.  The chown should happen after copying, or tar should have
 # a way to override permissions.
 do-install:
 	${INSTALL_PROGRAM_DIR} ${PREFIX} ${PREFIX}/jre
