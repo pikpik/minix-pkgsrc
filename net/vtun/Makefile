@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2001/11/25 19:22:19 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2001/12/21 21:04:23 jlam Exp $
 
-DISTNAME=	vtun-2.4
+DISTNAME=	vtun-2.5
 CATEGORIES=	net
 MASTER_SITES=	http://vtun.sourceforge.net/
 
@@ -18,6 +18,7 @@ CONFIGURE_ARGS+=	--with-lzo-headers=${BUILDLINK_DIR}/include
 CONFIGURE_ARGS+=	--with-lzo-lib=${BUILDLINK_DIR}/lib
 ALL_TARGET=		vtund
 
+WRKSRC=			${WRKDIR}/vtun
 DOCDIR=			${PREFIX}/share/doc/vtun
 EGDIR=			${PREFIX}/share/examples/vtun
 LOCKDIR=		/var/run/vtund
