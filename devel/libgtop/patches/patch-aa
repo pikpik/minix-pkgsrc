@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- configure.orig	Thu May 25 10:35:06 2000
++++ configure
+@@ -8433,6 +8433,11 @@
+ 	< $srcdir/po/POTFILES.in > po/POTFILES
+   
+ 
++# NetBSD: set DATADIRNAME to "share"
++DATADIRNAME="share"
++INTLDEPS=
++INTLLIBS="-lintl"
++
+ # If we find X, set shell vars x_includes and x_libraries to the
+ # paths, otherwise set no_x=yes.
+ # Uses ac_ vars as temps to allow command line to override cache and checks.
