@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/05/03 21:32:46 tv Exp $
+# $NetBSD: Makefile,v 1.5 1999/05/03 21:40:59 tv Exp $
 #
 
 DISTNAME=	php-${PHP_VERSION}
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=--with-system-regex --without-gd \
 		--enable-track-vars --enable-force-cgi-redirect \
 		--enable-discard-path --enable-memory-limit \
 		--enable-sysvsem --enable-sysvshm
+CONFIGURE_ENV+=	PERL_PATH=${LOCALBASE}/bin/perl
 
 .if !defined(BUILDING_EXTENSION_MODULE)
 CONFIGURE_ENV+=	CPPFLAGS="-DPHP_INTERNAL_FUNCS"
