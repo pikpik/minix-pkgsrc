@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/amiwm
+bin/requestchoice
+lib/amiwm/requestchoice
+lib/amiwm/executecmd
+lib/amiwm/Background
+lib/amiwm/Keyboard
+lib/amiwm/system.amiwmrc
+lib/amiwm/def_tool.info
+@dirrm lib/amiwm
+man/man1/amiwm.1
