@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- vfu/makefile.orig	Wed Feb  3 14:49:42 1999
 +++ vfu/makefile	Thu Feb  4 01:46:58 1999
 @@ -3,9 +3,9 @@
