@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/04/17 14:10:01 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2000/09/01 17:58:02 jwise Exp $
 #
 
 DISTNAME=	eggdrop1.3.22
@@ -13,7 +13,7 @@ BROKEN=		This package has not yet been updated to work with tcl-8.3.2.
 MAINTAINER=     tv@netbsd.org
 HOMEPAGE=	http://www.sodre.net/eggdrop/
 
-DEPENDS+=	tcl-8.0.5:../../lang/tcl80
+DEPENDS+=	tcl-8.0.5:../../lang/tcl
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	TCLLIB="${PREFIX}/lib" TCLINC="${PREFIX}/include/tcl8.0"
