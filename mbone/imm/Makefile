@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/01/19 07:13:49 salo Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/17 21:48:24 grant Exp $
 #
 # NetBSD "imm" package
 # The original was based on the imm-3.5a1 FreeBSD port maintained
@@ -16,6 +16,7 @@ MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://tonnant.itd.nrl.navy.mil/ipresearch/imm.html
 COMMENT=	Internet Image(or other data) Multicaster (and receiver)
 
+DEPENDS+=       xv>=3.10:../../graphics/xv
 DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 USE_X11=	yes
