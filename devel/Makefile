@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.525 2004/08/15 14:47:37 drochner Exp $
+# $NetBSD: Makefile,v 1.526 2004/08/21 15:10:26 darcy Exp $
 #
 
 COMMENT=	Development utilities
@@ -60,6 +60,7 @@ SUBDIR+=	ccache
 SUBDIR+=	cdecl
 SUBDIR+=	cdk
 SUBDIR+=	cervisia2
+SUBDIR+=	cfg+
 SUBDIR+=	cfitsio
 SUBDIR+=	cgdb
 SUBDIR+=	check
