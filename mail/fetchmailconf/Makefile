@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/02/17 18:24:47 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/03/03 12:27:52 frueauf Exp $
 
 DISTNAME=	fetchmail-5.7.0
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
@@ -14,7 +14,7 @@ COMMENT=	Configuration tool for fetchmail
 DEPENDS+=	${DISTNAME}:../../mail/fetchmail
 DEPENDS+=	py-Tk-*:../../x11/py-Tk
 
-MD5_FILE=	${.CURDIR}/../fetchmail/files/md5
+DIGEST_FILE=	${.CURDIR}/../fetchmail/files/md5
 NO_BUILD=	YES
 USE_X11=	YES
 
