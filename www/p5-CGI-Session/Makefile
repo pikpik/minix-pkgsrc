@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/19 14:12:27 wennmach Exp $
 
 DISTNAME=		CGI-Session-3.95
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5ses
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
 

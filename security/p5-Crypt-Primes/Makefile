@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 17:20:16 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/22 22:24:38 heinz Exp $
 #
 
 DISTNAME=		Crypt-Primes-0.50
 PKGNAME=		p5-${DISTNAME}
 PKGREVISION=		# empty
 SVR4_PKGNAME=		p5cpr
+PKGREVISION=		1
 CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Crypt/}
 

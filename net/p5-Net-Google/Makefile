@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/09 11:31:55 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/08 05:25:12 snj Exp $
 
 DISTNAME=		Net-Google-0.61
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		net perl5 www
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
 

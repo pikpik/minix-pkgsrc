@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:13:29 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/04/27 04:59:42 snj Exp $
 #
 
 DISTNAME=	perldap-1.2.2
 PKGNAME=	p5-LDAP-1.2.2
 SVR4_PKGNAME=	p5lda
+PKGREVISION=	1
 CATEGORIES=	devel perl5 databases
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/directory/perldap/
 EXTRACT_SUFX=	.tgz

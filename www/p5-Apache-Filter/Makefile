@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/05/09 06:48:40 snj Exp $
+# $NetBSD: Makefile,v 1.9 2004/11/27 14:49:35 he Exp $
 
 DISTNAME=	Apache-Filter-1.022
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5afi
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
 

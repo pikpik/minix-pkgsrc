@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 17:01:23 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/27 02:24:09 snj Exp $
 
 DISTNAME=	ControlX10-CM17-0.07
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cx7
+PKGREVISION=	1
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ControlX10/}
 

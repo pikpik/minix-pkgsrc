@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2004/04/25 04:15:34 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/05 15:54:15 he Exp $
 #
 
 DISTNAME=	Cache-Cache-1.03
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cc
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Cache/}
 

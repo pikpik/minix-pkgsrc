@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 17:27:36 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/24 23:27:54 heinz Exp $
 #
 
 DISTNAME=		Convert-PEM-0.06
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5pem
+PKGREVISION=		1
 CATEGORIES=		converters perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Convert/}
 

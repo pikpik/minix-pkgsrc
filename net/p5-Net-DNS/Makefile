@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2004/03/07 01:42:09 heinz Exp $
+# $NetBSD: Makefile,v 1.21 2004/05/29 16:50:49 heinz Exp $
 #
 
 DISTNAME=		Net-DNS-0.47
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5ndn
+PKGREVISION=		1
 CATEGORIES=		net perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}		\
 			http://www.net-dns.org/download/

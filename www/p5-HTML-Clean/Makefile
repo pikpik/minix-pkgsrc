@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2003/07/22 04:14:30 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/25 05:48:15 minskim Exp $
 
 DISTNAME=	HTML-Clean-0.8
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5hcl
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTML/}
 

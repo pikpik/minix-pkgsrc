@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2004/05/01 16:04:38 kim Exp $
+# $NetBSD: Makefile,v 1.20 2004/09/24 20:55:33 kristerw Exp $
 
 DISTNAME=		Test-Harness-2.40
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5tha
+PKGREVISION=		1
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Test/}
 

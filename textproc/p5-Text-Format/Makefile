@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2004/04/29 14:18:58 sketch Exp $
+# $NetBSD: Makefile,v 1.3 2004/05/04 23:46:37 snj Exp $
 #
 
 DISTNAME=       Text-Format0.52
 PKGNAME=        p5-Text-Format-0.52
 SVR4_PKGNAME=	p5tfo
+PKGREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 

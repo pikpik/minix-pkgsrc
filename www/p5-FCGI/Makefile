@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2003/07/22 04:14:30 martti Exp $
+# $NetBSD: Makefile,v 1.15 2004/04/27 05:44:23 snj Exp $
 #
 
 PKGVER=			0.67
 DISTNAME=       	FCGI-${PKGVER}
 PKGNAME=        	p5-FCGI-${PKGVER}
 SVR4_PKGNAME=		p5fcg
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=FCGI/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:47:59 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/27 21:26:09 snj Exp $
 #
 
 DISTNAME=	Spreadsheet-WriteExcel-0.41
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/J/JM/JMCNAMARA/}
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/16 17:51:58 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/16 21:33:03 minskim Exp $
 #
 
 DISTNAME=		Scalar-List-Utils-1.13
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5slu
+PKGREVISION=		1
 CATEGORIES=		misc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Scalar/}
 

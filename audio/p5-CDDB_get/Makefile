@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/18 03:44:05 ben Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/18 03:48:30 ben Exp $
 #
 
 DISTNAME=	CDDB_get-2.23
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/F/FO/FONKIE/}
 

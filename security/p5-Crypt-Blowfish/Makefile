@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2003/07/21 17:20:13 martti Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/20 17:21:32 heinz Exp $
 #
 
 DISTNAME=		Crypt-Blowfish-2.09
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5cbl
+PKGREVISION=		1
 CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Crypt/}
 

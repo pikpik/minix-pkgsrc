@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.39 2004/05/06 11:05:58 markd Exp $
+# $NetBSD: Makefile,v 1.40 2004/05/09 05:30:44 minskim Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/09/14 04:00:00 jfitz Exp
 #
 
 DISTNAME=	Tk-804.027
 PKGNAME=	p5-Tk-804.027
 SVR4_PKGNAME=	p5tk
+PKGREVISION=	1
 CATEGORIES=	x11 tk perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Tk/}
 
