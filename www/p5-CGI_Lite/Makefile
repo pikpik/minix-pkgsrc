@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2001/11/26 06:50:32 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/25 14:38:49 seb Exp $
 #
 
-DISTNAME=       	CGI-Lite-2.0
-PKGNAME=        	p5-${DISTNAME}
+NAME=			CGI-Lite-2.001
+DISTNAME=       	${NAME}-emergencyrelease
+PKGNAME=        	p5-${NAME}
 SVR4_PKGNAME=		p5cgl
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
