@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 1998/08/20 15:16:52 tsarna Exp $
+# $NetBSD: Makefile,v 1.11 1999/04/06 02:03:01 abs Exp $
 #
 
 DISTNAME=	compat11
+PKGNAME=	compat11-1.1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	_${ARCH}.tgz
