@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2004/01/05 09:31:31 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2004/01/05 11:05:45 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MESALIB_BUILDLINK3_MK:=	${MESALIB_BUILDLINK3_MK}+
@@ -73,6 +73,7 @@ BUILDLINK_DEPENDS+=		MesaLib
 .if !empty(MESALIB_BUILDLINK3_MK:M+)
 .  if !empty(BUILDLINK_USE_BUILTIN.MesaLib:M[yY][eE][sS])
 BUILDLINK_PREFIX.MesaLib=	${X11BASE}
+USE_X11=			yes
 .  else
 BUILDLINK_CPPFLAGS.MesaLib=	-DGLX_GLXEXT_LEGACY
 .  endif
