@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/10/09 19:31:46 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/16 16:45:56 tsarna Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-expat-0
@@ -28,6 +28,6 @@ do-patch:
 	done)
 
 .include "../../textproc/expat/buildlink2.mk"
-.include "../../lang/python/srcdist.mk"
 .include "../../lang/python/extension.mk"
+.include "../../lang/python/srcdist.mk"
 .include "../../mk/bsd.pkg.mk"
