@@ -1,10 +1,13 @@
-# $NetBSD: Makefile,v 1.327 2004/01/20 13:43:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.328 2004/01/21 21:06:29 kristerw Exp $
 #
 
 COMMENT=	Packages to support the X window system
 
 SUBDIR+=	9term
 SUBDIR+=	XF86Setup
+SUBDIR+=	XFree86-clients
+SUBDIR+=	XFree86-libs
+SUBDIR+=	XFree86-server
 SUBDIR+=	XaoS
 SUBDIR+=	Xaw-Xpm
 SUBDIR+=	Xaw3d
@@ -74,6 +77,7 @@ SUBDIR+=	gtkstep
 SUBDIR+=	gtoolkit
 SUBDIR+=	hanterm
 SUBDIR+=	hot-babe
+SUBDIR+=	imake
 SUBDIR+=	imwheel
 SUBDIR+=	ion-dock
 SUBDIR+=	kde2
