@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/19 12:03:23 grant Exp $
 #
 
 DISTNAME=	ninja-1.5.8.1
-CATEGORIES=	irc
+CATEGORIES=	chat
 MASTER_SITES=	ftp://ninja.qoop.org/ninja/sources/
 
 MAINTAINER=	jrp@hispabsd.org
