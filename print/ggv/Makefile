@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 1999/09/03 17:58:02 tron Exp $
+# $NetBSD: Makefile,v 1.9 1999/10/23 11:08:58 tron Exp $
 #
 
 DISTNAME=	ggv-0.50
 CATEGORIES=	print gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/ggv/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/ggv/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
