@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:35 tron Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 17:06:54 wiz Exp $
 #
 
 DISTNAME=	wmfire-0.0.3.8
@@ -12,6 +12,8 @@ USE_X11=	YES
 USE_XPM=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	CPPFLAGS=-I${X11BASE}/include
+MAKE_ENV+=	XPMDIR=${XPMDIR}
+EVAL_PREFIX=	XPMDIR=xpm
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/wmfire
