@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 2001/02/25 04:18:14 hubertf Exp $
+# $NetBSD: Makefile,v 1.89 2001/03/04 03:26:51 assar Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -25,7 +25,8 @@ LICENSE=		no-commercial-use
 USE_RSAREF2=		NO
 
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
-CFLAGS=			-O2
+# the next line is needed if you have the gmp package installed
+LDFLAGS+=		-Lgmp-2.0.2-ssh-2
 GNU_CONFIGURE=		YES
 
 .include "../../mk/bsd.prefs.mk"
