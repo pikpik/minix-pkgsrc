@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1998/02/22 23:29:38 hubertf Exp $
+# $NetBSD: Makefile,v 1.17 1998/04/15 10:38:09 agc Exp $
 #
 
     SUBDIR += amp
@@ -8,6 +8,7 @@
     SUBDIR += maplay
     SUBDIR += mikmod
     SUBDIR += mpg123
+    SUBDIR += nas
     SUBDIR += nspmod
     #SUBDIR += rplay
     SUBDIR += snd
@@ -16,7 +17,7 @@
     SUBDIR += timidity
     SUBDIR += tosha
     SUBDIR += tracker
-    SUBDIR += xcd
+    #SUBDIR += xcd
     SUBDIR += xcdplayer
     SUBDIR += xmcd
     SUBDIR += xmix
