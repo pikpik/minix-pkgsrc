@@ -1,10 +1,8 @@
 # $NetBSD: Makefile,v 1.15 2003/12/08 14:41:39 wiz Exp $
 
-DISTNAME=	kdesdk-3.1.4
-PKGREVISION=	1
+DISTNAME=	kdesdk-3.1.5
 CATEGORIES=	devel
 COMMENT=	Support applications and tools used by KDE developers
-PKGREVISION=	1
 
 CONFLICTS=	cervisia-[0-9]*
 
