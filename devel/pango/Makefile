@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2002/10/21 03:02:24 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.13 2002/10/30 03:09:31 rh Exp $
 #
 
 DISTNAME=		pango-1.0.5
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v2.0/ \
 			ftp://ftp.cs.umn.edu/pub/gimp/gtk/v2.0/ \
-			http://www.ameth.org/gimp/pub/gtk/v2.0/ \
 			${MASTER_SITE_GNOME:=sources/pango/1.0/}
 
 MAINTAINER=		packages@netbsd.org
