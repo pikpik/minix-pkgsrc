@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/ne
+man/man1/ne.1
+share/doc/ne/NE.spec.ascii
+share/doc/ne/NE.changes.spec
+share/doc/ne/LICENCE
+@dirrm share/doc/ne
