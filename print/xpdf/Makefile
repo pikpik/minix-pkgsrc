@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/02/02 13:02:49 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2004/03/03 10:50:09 adam Exp $
 
 DISTNAME=	xpdf-3.00
 CATEGORIES=	print
@@ -13,7 +13,7 @@ DEPENDS+=	ghostscript-fonts-[0-9]*:../../fonts/ghostscript-fonts
 
 CONFLICTS=	xpdf-crypto-[0-9]*
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_X11=		YES
 USE_LANGUAGES=		c c++
@@ -45,10 +45,10 @@ post-patch:
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xpdf
 
-.include "../../fonts/t1lib/buildlink2.mk"
-.include "../../graphics/freetype2/buildlink2.mk"
-.include "../../graphics/xpm/buildlink2.mk"
-.include "../../mk/motif.buildlink2.mk"
+.include "../../fonts/t1lib/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
+.include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
 
