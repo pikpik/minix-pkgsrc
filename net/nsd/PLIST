@@ -1,0 +1,7 @@
+@comment $NetBSD$
+sbin/nsd
+sbin/nsdc
+sbin/zonec
+man/man8/nsd.8
+man/man8/nsdc.8
+man/man8/zonec.8
