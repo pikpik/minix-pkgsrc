@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2001/04/07 10:33:10 rh Exp $
+# $NetBSD: Makefile,v 1.84 2001/04/12 19:24:38 manu Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -52,6 +52,7 @@ SUBDIR+=	pyxml
 SUBDIR+=	rfcutil
 SUBDIR+=	rman
 SUBDIR+=	rtfm
+SUBDIR+=	saxon
 SUBDIR+=	scrollkeeper
 SUBDIR+=	sp
 SUBDIR+=	t1lib
