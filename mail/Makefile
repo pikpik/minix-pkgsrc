@@ -1,7 +1,8 @@
- $NetBSD: Makefile,v 1.30 1999/11/29 08:33:29 itojun Exp $
+ $NetBSD: Makefile,v 1.31 1999/12/06 08:21:32 rh Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
+    SUBDIR += balsa
 #    SUBDIR += bulk_mailer
     SUBDIR += coolmail
     SUBDIR += cucipop
