@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:51:45 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/31 11:29:17 abs Exp $
 #
 
 DISTNAME=		cpuflags-0.1
@@ -8,6 +8,8 @@ DISTFILES=		# empty
 
 MAINTAINER=		abs@netbsd.org
 COMMENT=		Determine compiler flags to best target current cpu
+
+ONLY_FOR_PLATFORM= NetBSD-*-* Linux-*-*
 
 EXTRACT_ONLY=	# empty
 NO_WRKSUBDIR=	yes
