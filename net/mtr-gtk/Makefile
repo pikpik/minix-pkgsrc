@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5.2.1 2002/07/01 17:45:01 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/25 21:50:03 jlam Exp $
 #
 
-DISTNAME=	mtr-0.49
+DISTNAME=	mtr-0.51
 PKGNAME=	${DISTNAME:S/-/-gtk-/}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
