@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/09/28 09:13:55 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2004/01/20 12:07:43 agc Exp $
 
 DISTNAME=	xmcd-3.0.2
 PKGREVISION=    3
@@ -26,7 +26,7 @@ MAKE_ENV+=		BATCH_LIBDIR=${PREFIX}/lib/X11
 MAKE_ENV+=		BATCH_MANDIR=${PREFIX}/man/man1
 MAKE_ENV+=		SHELL=${SH}
 
-INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]* NetBSD-1.6[A-S]-*
+INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]* NetBSD-1.6[A-S]*
 
 ARCHBIN=	${PREFIX}/lib/X11/xmcd/bin-${OPSYS}-${MACHINE_ARCH}
 XMCDDIR=	${PREFIX}/lib/X11/xmcd
