@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/01/20 12:28:26 agc Exp $
+# $NetBSD: Makefile,v 1.25 2004/02/02 23:10:29 xtraeme Exp $
 # FreeBSD: /c/ncvs/ports/x11-toolkits/open-motif/Makefile,v 1.18 2000/10/09 01:40:02 asami Exp
 # OpenBSD: Makefile,v 1.5 2000/10/23 16:08:12 espie Exp
 
@@ -25,7 +25,7 @@ CONFLICTS+=		lesstif-[0-9]*
 WRKSRC=			${WRKDIR}/motif
 DIST_SUBDIR=		openmotif
 USE_X11BASE=		yes
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 ALL_TARGET=		World
 
