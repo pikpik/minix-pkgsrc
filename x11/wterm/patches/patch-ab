@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/Makefile.in.orig	Thu Oct  7 22:26:11 1999
++++ src/Makefile.in	Thu Oct  7 22:25:13 1999
+@@ -69,6 +69,7 @@
+ 
+ install: allbin alldoc
+ 	$(INSTALL_PROGRAM) wterm $(DESTDIR)$(bindir)/$(binprefix)wterm
++	chmod 4755 $(DESTDIR)$(bindir)/$(binprefix)wterm
+ 
+ uninstall:
+ 	(cd $(bindir); $(RMF) $(binprefix)wterm)
