@@ -1,4 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/02/14 23:56:39 hubertf Exp $
+@comment $NetBSD$
 lib/xmms/Visualization/libmadspin.a
 lib/xmms/Visualization/libmadspin.la
 lib/xmms/Visualization/libmadspin.so
+share/xmms/madspin/star1.bmp
+share/xmms/madspin/star2.bmp
+@dirrm share/xmms/madspin
