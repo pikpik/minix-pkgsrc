@@ -1,8 +1,8 @@
 $NetBSD$
 
---- scripts/autoconf/Makefile.in.orig	Thu Dec  5 18:17:46 2002
-+++ scripts/autoconf/Makefile.in	Thu Dec  5 18:20:59 2002
-@@ -140,9 +140,9 @@
+--- scripts/autoconf/Makefile.in.orig	2003-07-18 01:04:28.000000000 +0200
++++ scripts/autoconf/Makefile.in	2003-07-18 12:09:47.000000000 +0200
+@@ -151,9 +151,9 @@
  
  EXTRA_DIST = ac_find_motif.m4
  
