@@ -1,6 +1,6 @@
 $NetBSD$
 
---- configure.orig	Sun Dec 16 02:42:15 2001
+--- configure.orig	Tue Jan  1 18:28:52 2002
 +++ configure
 @@ -2229,7 +2229,6 @@
    FALSE_FALSE=
@@ -9,7 +9,7 @@ $NetBSD$
 -localedir='${prefix}/share/locale'
  
  
- ALL_LINGUAS="da de es et fi fr hu it ja nl no pl pt_BR ru sk sl tr uk zh_CN.GB2312 zh_TW"
+ ALL_LINGUAS="cs da de es et fi fr hu it ja nl no pl pt_BR ru sk sl tr uk zh_CN.GB2312 zh_TW"
 @@ -4060,7 +4059,13 @@
  	< $srcdir/po/POTFILES.in > po/POTFILES
    
