@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.157 2002/08/02 19:00:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.158 2002/08/06 03:50:24 jschauma Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -49,6 +49,7 @@ SUBDIR+=	ispell-catalan
 SUBDIR+=	ispell-francais
 SUBDIR+=	ispell-gaeilge
 SUBDIR+=	ispell-german
+SUBDIR+=	ispell-romanian
 SUBDIR+=	ispell-slovak
 SUBDIR+=	ispell-spanish
 SUBDIR+=	ispell-svenska
