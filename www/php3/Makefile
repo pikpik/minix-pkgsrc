@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/08/27 02:46:08 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2000/09/03 13:40:30 wiz Exp $
 #
 
 DISTNAME=	php-${PHP_VERSION}
@@ -10,7 +10,7 @@ DISTFILES+=	${DISTNAME}.tar.gz
 MAINTAINER=	cjs@netbsd.org
 HOMEPAGE=	http://www.php.net/
 
-BUILD_DEPENDS+=	${PERL5}:../../lang/perl5
+BUILD_DEPENDS+=	${PERL5}:../../lang/perl5-base
 DEPENDS+=	gdbm>=1.7.3:../../databases/gdbm
 
 .include "../../mk/bsd.prefs.mk"
