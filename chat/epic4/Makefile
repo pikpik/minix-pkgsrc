@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.19 2003/09/19 18:34:37 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2003/11/12 03:39:39 jschauma Exp $
 #
 
-DISTNAME=	epic4-1.1.12
+DISTNAME=	epic4-1.2.1
 CATEGORIES=	chat
-PKGREVISION=	1
-MASTER_SITES=	ftp://ftp.epicsol.org/pub/epic/EPIC4-ALPHA/	\
-		ftp://ftp.icm.edu.pl/pub/unix/irc/EPIC/EPIC4-ALPHA/ \
-		ftp://ftp.archive.de.uu.net/pub/unix/irc/epic/EPIC4-ALPHA/	\
-		ftp://ftp.nl.uu.net/pub/unix/irc/epic/EPIC4-ALPHA/
+MASTER_SITES=	ftp://ftp.epicsol.org/pub/epic/EPIC4-BETA/	\
+		ftp://ftp.icm.edu.pl/pub/unix/irc/EPIC/EPIC4-BETA/ \
+		ftp://ftp.archive.de.uu.net/pub/unix/irc/epic/EPIC4-BETA/	\
+		ftp://ftp.nl.uu.net/pub/unix/irc/epic/EPIC4-BETA/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	zuntum@NetBSD.org
