@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2004/01/30 21:44:39 david Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/08 07:37:40 snj Exp $
 
 DISTNAME=	freeradius-0.9.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/ \
 		ftp://ftp.Awfulhak.org/pub/radius/
 
-MAINTAINER=	david@netbsd-fr.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.freeradius.org/
 COMMENT=	Free RADIUS server implementation
 
