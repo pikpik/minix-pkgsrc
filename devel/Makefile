@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.619 2005/03/04 20:42:38 tv Exp $
+# $NetBSD: Makefile,v 1.620 2005/03/06 17:04:16 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -60,6 +60,7 @@ SUBDIR+=	buddy
 SUBDIR+=	bugzilla
 SUBDIR+=	buildtool
 SUBDIR+=	buildtool-doc
+SUBDIR+=	byacc
 SUBDIR+=	c-cpp-reference
 SUBDIR+=	c4
 SUBDIR+=	cbrowser
