@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/09/01 17:26:54 jwise Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:06:16 wiz Exp $
 #
 
 DISTNAME=	BLT2.4o
@@ -10,7 +10,7 @@ MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://www.tcltk.com/blt/index.html
 COMMENT=	extension to Tcl/Tk
 
-DEPENDS+=	tk-8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 GNU_CONFIGURE=	YES
 

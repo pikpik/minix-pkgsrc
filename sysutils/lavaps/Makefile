@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/10/15 02:33:13 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 17:42:15 wiz Exp $
 #
 
 DISTNAME=	lavaps-1.15
@@ -9,7 +9,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 COMMENT=	Lava lamp of currently running processes
 
-DEPENDS+=	tk-8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 USE_X11=	# defined
 GNU_CONFIGURE=	# defined

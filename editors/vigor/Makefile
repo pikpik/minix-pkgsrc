@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/30 16:20:35 jwise Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/16 14:40:53 wiz Exp $
 #
 
 DISTNAME=	vigor-0.010
@@ -9,7 +9,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.red-bean.com/~joelh/vigor/
 COMMENT=	nvi with excessive online "help"
 
-DEPENDS+=	tk-8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 CONFLICTS+=	nvi-*
 
