@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gstreamer-0.8/libgstcdparanoia.a
+lib/gstreamer-0.8/libgstcdparanoia.la
+lib/gstreamer-0.8/libgstcdparanoia.so
+@comment in gstreamer: @dirrm lib/gstreamer-0.8
