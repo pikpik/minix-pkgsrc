@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/14 15:59:44 skrll Exp $
 #
 
 DISTNAME=	kdelibs-2.1
@@ -13,6 +13,7 @@ DEPENDS+=		jade>=1.2.1:../../textproc/jade
 
 .include "../../x11/kde2/Makefile.part2"
 
+USE_LTDL=		yes
 LTCONFIG_OVERRIDE+=	${WRKSRC}/ksgmltools/ltconfig
 
 CONFIGURE_ENV+=		LIBS="-Wl,--export-dynamic"
