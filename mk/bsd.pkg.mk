@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1152 2003/03/19 01:19:30 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1153 2003/03/22 04:00:57 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -824,6 +824,7 @@ MASTER_SITE_SOURCEFORGE+=	\
 	http://cesnet.dl.sourceforge.net/sourceforge/ \
 	http://switch.dl.sourceforge.net/sourceforge/ \
 	http://telia.dl.sourceforge.net/sourceforge/ \
+	http://flow.dl.sourceforge.net/sourceforge/ \
 	http://twtelecom.dl.sourceforge.net/sourceforge/ \
 	http://umn.dl.sourceforge.net/sourceforge/ \
 	http://unc.dl.sourceforge.net/sourceforge/ \
