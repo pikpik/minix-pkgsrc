@@ -9,19 +9,19 @@ $NetBSD$
 +  } elsif ($os eq 'netbsd') {
 +    chomp($machine = `uname -p`);
 +    if ($machine =~ 'arm.*') {
-+        machine='arm';
++        $machine='arm';
 +    } elsif ($machine = 'i386') {
-+        machine='ix86';
++        $machine='ix86';
 +    } elsif ($machine =~ 'mips.*') {
-+        machine='mips';
++        $machine='mips';
 +    } elsif ($machine = 'powerpc') {
-+        machine='ppc';
++        $machine='ppc';
 +    } elsif ($machine =~ 'sh3.*') {
-+        machine='sh3';
++        $machine='sh3';
 +    } elsif ($machine =~ 'sh5.*') {
-+        machine='sh5';
++        $machine='sh5';
 +    } elsif ($machine = 'sparc64') {
-+        machine='sparcv9';
++        $machine='sparcv9';
 +    } 
 +    # these can be used verbatim: alpha amd64 m68k sparc vax
    }
