@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- QW/Makefile.Linux.orig	Wed Apr 21 20:16:24 1999
 +++ QW/Makefile.Linux	Tue Feb  8 12:16:23 2000
 @@ -27,41 +27,51 @@
