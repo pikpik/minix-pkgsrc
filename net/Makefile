@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 1999/04/10 21:37:29 tron Exp $
+# $NetBSD: Makefile,v 1.65 1999/04/24 23:25:04 tron Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -16,6 +16,8 @@
     SUBDIR += coda_doc
     SUBDIR += coda_intro
     SUBDIR += coda_server
+    SUBDIR += coda5_client
+    SUBDIR += coda5_server
 #    SUBDIR += cvsup
 #    SUBDIR += cvsup-mirror
     SUBDIR += delegate
