@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/11/27 16:28:44 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/03/15 12:14:51 martti Exp $
 #
 
 DISTNAME=	Image-Size-2.98
@@ -11,11 +11,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/Image-Size/
 COMMENT=	Read the dimensions of an image in several popular formats
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Image/Size/.packlist
 
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
-
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
