@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/03/27 08:54:55 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/03/29 00:29:51 dmcmahill Exp $
 #
 
 DISTNAME=		nethack-3.3.0
@@ -21,8 +21,7 @@ HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./sys/unix/setup.sh
 ALL_TARGET=		nethack
 INSTALL_TARGET=		binfiles
-PATH=			${X11BASE}/qt2/bin:$$PATH
-MAKE_ENV+=		GTYPE=-qt QTDIR=${X11BASE}/qt2
+MAKE_ENV+=		GTYPE=-qt QTDIR=${X11BASE}
 
 PATCHFILES+=		${PKGSRCDIR}/games/nethack-lib/patches/patch-*
 ALLFILES=		${DISTFILES}	# don't checksum shared patches
