@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/xli
-bin/xlito
-bin/xview
-bin/xsetbg
-lib/X11/app-defaults/Xloadimage
-man/cat1/xli.0
-man/cat1/xlito.0

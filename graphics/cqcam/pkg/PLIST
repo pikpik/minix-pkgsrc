@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/cqcam
-bin/xcqcam
-bin/webcam
-man/man1/cqcam.1

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/flops
-share/doc/flops/flops.doc
-@dirrm share/doc/flops

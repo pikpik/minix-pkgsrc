@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/mplex
-share/doc/mplex/COPYING
-share/doc/mplex/INSTRUCT
-share/doc/mplex/README
-@dirrm share/doc/mplex

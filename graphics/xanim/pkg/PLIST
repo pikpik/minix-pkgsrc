@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1998/02/12 12:45:08 agc Exp $
-bin/xanim
-man/cat1/xanim.0

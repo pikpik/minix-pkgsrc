@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/swarm
-share/doc/swarm/swarm.pdf
-@dirrm share/doc/swarm

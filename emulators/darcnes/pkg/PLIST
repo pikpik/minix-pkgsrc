@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/darcnes
-share/doc/darcnes/readme
-@dirrm share/doc/darcnes

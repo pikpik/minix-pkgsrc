@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/spim
-bin/xspim
-share/doc/spim/spim.ps.gz
-share/doc/spim/cycle.ps.gz
-share/spim/trap.handler
-@dirrm share/doc/spim
-@dirrm share/spim

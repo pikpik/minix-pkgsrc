@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/07 19:56:21 rh Exp $
-bin/pngcrush
-share/pngcrush/README.txt
-@dirrm share/pngcrush

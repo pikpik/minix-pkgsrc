@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1998/07/04 12:05:07 mycroft Exp $
-bin/xmame
-man/man6/xmame.6
-share/xmame/xmamerc
-@dirrm share/xmame

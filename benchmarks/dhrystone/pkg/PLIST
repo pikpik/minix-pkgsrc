@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/dry2
-bin/dry2reg
-share/doc/dhrystone/clarify.doc
-share/doc/dhrystone/Rationale
-@dirrm share/doc/dhrystone

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/dvdview
-share/doc/dvdview/README
-@dirrm share/doc/dvdview
