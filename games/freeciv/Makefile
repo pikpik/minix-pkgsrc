@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.8 1999/07/22 23:35:40 garbled Exp $
 #
 
 DISTNAME=	freeciv-1.8.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freeciv.org/freeciv/stable_version/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.freeciv.org/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
