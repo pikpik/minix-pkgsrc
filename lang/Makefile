@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1998/12/02 02:43:17 tv Exp $
+# $NetBSD: Makefile,v 1.21 1999/01/14 15:53:40 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -41,7 +41,7 @@
     SUBDIR += moscow_ml
     SUBDIR += nawk
 #    SUBDIR += ocaml
-#    SUBDIR += p2c
+    SUBDIR += p2c
 #    SUBDIR += p5-Tcl
 #    SUBDIR += p5-ePerl
 #    SUBDIR += pbasic
