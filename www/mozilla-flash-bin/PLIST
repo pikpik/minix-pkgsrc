@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/mozilla-linux/components/flashplayer.xpt
+lib/mozilla-linux/plugins/libflashplayer.so
+${DOCDIR}/readme.txt
+${DOCDIR}/ReadMe.htm
+@dirrm ${DOCDIR}
