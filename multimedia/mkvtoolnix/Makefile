@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/05/05 15:57:47 salo Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/08 18:09:20 salo Exp $
 #
 
 .include "../../multimedia/mkvtoolnix/Makefile.dist"
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.bunkus.org/videotools/mkvtoolnix/
 COMMENT=	Set of tools to create, alter and inspect Matroska files
 
