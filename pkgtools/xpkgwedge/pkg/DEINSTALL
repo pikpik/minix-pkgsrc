@@ -1,18 +1,18 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: DEINSTALL,v 1.2 1998/08/07 11:18:26 agc Exp $
 #
 
 case "$2" in
 	DEINSTALL) cat <<EOF
 
-===============================================================
+================================================================
 
-Note that you now need to remove the line which assigns X11BASE
-(such as X11BASE=\${LOCALBASE}) from your /etc/mk.conf!  If you
-do not remove that change, X11 pkgs will no longer build.
+Note that you now need to undefine USE_LOCALBASE_FOR_X11 in your
+/etc/mk.conf!  If you do not remove that change, X11 pkgs will
+no longer build.
 
-===============================================================
+================================================================
 
 EOF
 	;;
