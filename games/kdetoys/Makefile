@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/10/07 17:41:53 tron Exp $
+# $NetBSD: Makefile,v 1.3 2000/04/12 22:35:18 dmcmahill Exp $
 
 DISTNAME=	kdetoys-1.1.2
 CATEGORIES=	games kde
@@ -10,6 +10,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 
 DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
+
+CONFLICTS=	kworldwatch-*
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
