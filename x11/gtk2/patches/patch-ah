@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- demos/Makefile.am.orig	Tue Mar  5 16:03:50 2002
++++ demos/Makefile.am
+@@ -22,6 +22,7 @@
+ 	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la	\
+ 	$(top_builddir)/gdk/@gdktargetlib@        			\
+ 	$(top_builddir)/gtk/@gtktargetlib@ 				\
++	@LDFLAGS@							\
+ @STRIP_END@
+ 
+ noinst_PROGRAMS = 		\
