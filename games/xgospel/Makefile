@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/06 20:56:00 hwr Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 15:11:02 wiz Exp $
 #
 
 DISTNAME=	xgospel-1.12d
@@ -9,8 +9,22 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://gailly.net/xgospel/
 COMMENT=	X11 based IGS client
 
-GNU_CONFIGURE=	YES
-USE_X11=	YES
-USE_GMAKE=	YES
+USE_BUILDLINK_ONLY=	yes
+GNU_CONFIGURE=		yes
+XAW_TYPE=		3d
 
+.include "../../mk/bsd.prefs.mk"
+
+.if defined(XAW_TYPE)
+.  if (${XAW_TYPE} == "3d") || (${XAW_TYPE} == "xpm")
+CONFIGURE_ARGS+=	--with-xaw3d
+.  endif
+.endif
+
+# Don't find libintl.a...it's only needed on SCO UNIX.
+CONFIGURE_ENV+=		ac_cv_lib_intl=no
+
+.include "../../graphics/xpm/buildlink.mk"
+.include "../../mk/xaw.buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
