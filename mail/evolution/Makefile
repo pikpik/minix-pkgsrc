@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2004/01/20 23:54:48 rh Exp $
+# $NetBSD: Makefile,v 1.49 2004/01/23 21:50:46 jmmv Exp $
 
 DISTNAME=		evolution-1.4.5
 PKGREVISION=		3
@@ -32,7 +32,7 @@ CONFIGURE_ARGS+=	--enable-ipv6=no
 .endif
 
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool ${WRKSRC}/libical/libtool

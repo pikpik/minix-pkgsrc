@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2003/12/04 13:42:37 adam Exp $
+# $NetBSD: Makefile,v 1.47 2004/01/05 12:20:57 markd Exp $
 
 DISTNAME=		R-1.8.1
 PKGREVISION=		1
@@ -18,7 +18,7 @@ TEST_TARGET=		check
 USE_BUILDLINK2=		# defined
 USE_X11=		# defined
 USE_PERL5=		# defined
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 USE_GNU_READLINE=	# uses callback interface
 USE_MAKEINFO=		# defined
 TEXINFO_REQD=		4.0

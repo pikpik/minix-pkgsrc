@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:19:43 agc Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/23 21:50:46 jmmv Exp $
 #
 
 DISTNAME=	Pantomime-1.1.1
@@ -13,7 +13,7 @@ COMMENT=	Objective-C mail system class library
 WRKSRC=			${WRKDIR}/Pantomime
 NO_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 MAKEFILE=		GNUmakefile
 MAKE_ENV+=		ADDITIONAL_CPPFLAGS=-DMKDIR

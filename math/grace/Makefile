@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/08/12 20:35:32 seb Exp $
+# $NetBSD: Makefile,v 1.28 2004/01/03 18:49:46 reed Exp $
 #
 
 DISTNAME=	grace-5.1.12
@@ -18,7 +18,7 @@ COMMENT=	GRaphing, Advanced Computation and Exploration of data
 
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_FORTRAN=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-grace-home=${PREFIX}/grace

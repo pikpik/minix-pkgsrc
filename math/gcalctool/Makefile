@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/16 02:46:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/23 21:50:46 jmmv Exp $
 #
 
 DISTNAME=		gcalctool-4.3.38
@@ -16,7 +16,7 @@ DEPENDS+=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_PKGLOCALEDIR=	yes
 
