@@ -1,3 +1,4 @@
+@comment $NetBSD$
 sbin/rumba
 sbin/unrumba
 man/man8/smbmount.8.gz
