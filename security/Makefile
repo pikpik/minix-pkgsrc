@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.140 2003/08/29 00:25:34 dan Exp $
+# $NetBSD: Makefile,v 1.141 2003/09/01 16:41:21 jdolecek Exp $
 #
 
 COMMENT=	Security tools
@@ -69,6 +69,8 @@ SUBDIR+=	openssh+gssapi
 SUBDIR+=	openssl
 SUBDIR+=	otpcalc
 SUBDIR+=	p0f
+SUBDIR+=	p5-Authen-SASL
+SUBDIR+=	p5-Authen-SASL-Cyrus
 SUBDIR+=	p5-Crypt-Blowfish
 SUBDIR+=	p5-Crypt-CBC
 SUBDIR+=	p5-Crypt-DES
