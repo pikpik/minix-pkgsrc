@@ -13,3 +13,12 @@ $NetBSD$
  
  #include <X11/Xlib.h>
  #include <Xm/Xm.h>
+@@ -116,7 +116,7 @@ Sample::shot ()
+ 	if (j == 0 || j != length)	// EOF
+ 	    return false;
+ 
+-#if __BYTE_ORDER == __LITTLE_ENDIAN
++#if BYTE_ORDER == LITTLE_ENDIAN
+ 	dsp.swapbuffer (buffer, 4 * length);
+ #endif
+ 
