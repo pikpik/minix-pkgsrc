@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/02/12 03:31:34 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2001/02/17 18:24:48 wiz Exp $
 
 DISTNAME=       imap-2000c
 PKGNAME=        imap-uw-2000.0.3nb1
@@ -93,9 +93,8 @@ post-extract:
 post-build:
 	${MKDIR} ${WRKDIR}/piclib
 	cd ${WRKDIR}/piclib;						\
-	for file in ${WRKSRC}/c-client/*.lo; do				\
-		base=`basename $${file} .lo`;				\
-		${LN} -sf $${file} $${base}.o;				\
+	for file in ${WRKSRC}/c-client/.libs/*.o; do			\
+		${LN} -sf $${file} .;					\
 	done;								\
 	${RM} -f ${CCLIENT_PICLIB};					\
 	${AR} cru ${CCLIENT_PICLIB} *.o;				\
