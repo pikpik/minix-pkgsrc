@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:17:26 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/06 11:39:54 hubertf Exp $
 #
 
 DISTNAME=		libiodbc-2.50.3
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.iodbc.org/dist/
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.iodbc.org/
 COMMENT=		ODBC 2.x driver manager
+
+CONFLICTS+=		unixodbc-[0-9]*
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
