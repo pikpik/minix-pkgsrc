@@ -1,10 +1,9 @@
-@comment $NetBSD: PLIST,v 1.4 2001/06/12 16:31:47 skrll Exp $
+@comment $NetBSD: PLIST,v 1.5 2001/09/14 10:19:11 abs Exp $
 bin/java
 jre/CHANGES
 jre/COPYRIGHT
 jre/ControlPanel.html
 jre/LICENSE
-jre/LICENSE.fr
 jre/README
 jre/Welcome.html
 jre/bin/.java_wrapper
