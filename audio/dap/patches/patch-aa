@@ -1,8 +1,8 @@
 $NetBSD$
 
---- main/Makefile.netbsd.orig	Mon May 22 18:07:21 2000
+--- main/Makefile.netbsd.orig	2000-05-22 18:07:21.000000000 -0500
 +++ main/Makefile.netbsd
-@@ -8,13 +8,13 @@
+@@ -8,13 +8,13 @@ AUDIO   = ../libaudio
  AUDIOF  = ../libaudiofile
  BACKDIR = ../bak/main
  HOMEDIR = $(HOME)
@@ -17,7 +17,7 @@ $NetBSD$
 +DEBUG   = #-g3
  OPTIM   = -O1
 -LDFLAGS = $(LIBDIR) -ldsp -laudio -laudiofile -ltooltips -lforms -lXpm -lX11 -lm -lossaudio
-+LDFLAGS = $(LIBDIR) -ldsp -laudio -laudiofile -ltooltips -lforms -ljpeg -lXpm -lX11 -lm -lossaudio
++LDFLAGS = $(LIBDIR) -ldsp -laudio -laudiofile -ltooltips -lforms -ljpeg -lXpm -lX11 -lm ${LIBOSSAUDIO}
  
  PROGS =	DAP
  OBJS  = DPTich.o DPTich_cb.o DPTich_DSP.o DPTich_edit_cb.o DPTich_macros.o \

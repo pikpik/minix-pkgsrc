@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/04/11 15:50:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:13:05 tv Exp $
 
 DISTNAME=		dap-2.1.2
 PKGREVISION=		5
@@ -26,6 +26,7 @@ do-install:
 
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/ossaudio.buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
