@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.in,v 1.3 2003/09/01 16:27:14 jlam Exp $
 
 srcdir=		@srcdir@
 
@@ -32,4 +32,4 @@ clean:
 	rm -f $(OBJS) $(LIB)
 
 install:
-	# do nothing
+	@# do nothing
