@@ -1,6 +1,0 @@
-# $NetBSD: Makefile.SunOS.i386,v 1.2 2003/12/20 11:24:51 grant Exp $
-
-MOZ_VER=	0.7
-DISTNAME=	MozillaFirebird-${MOZ_VER}-i386-pc-solaris2.8
-
-MOZ_PLATFORM=	solaris
