@@ -1,6 +1,6 @@
 $NetBSD$
 
---- kmix/Makefile.am.orig	Sun Oct 27 11:20:17 2002
+--- kmix/Makefile.am.orig	Wed May  7 23:46:50 2003
 +++ kmix/Makefile.am
 @@ -2,7 +2,7 @@ SUBDIRS = control pics
  INCLUDES= $(all_includes)
@@ -17,7 +17,7 @@ $NetBSD$
  METASOURCES = AUTO
 -kmix_la_SOURCES = main.cpp kmix.cpp kmixdockwidget.cpp kmixprefdlg.cpp \
 +libkmix_main_la_SOURCES = main.cpp kmix.cpp kmixdockwidget.cpp kmixprefdlg.cpp \
- 	kmixerwidget.cpp channel.cpp mixer.cpp ksmallslider.cpp \
+ 	kmixerwidget.cpp channel.cpp mixer.cpp ksmallslider.cpp VerticalText.cpp \
  	volume.cpp kledbutton.cpp mixdevicewidget.cpp mixerIface.skel
 -kmix_la_LIBADD = $(LIB_KDEUI) $(LIBALIB) $(LIBOSSAUDIO) $(LIBASOUND)
 +libkmix_main_la_LIBADD = $(LIB_KDEUI) $(LIBALIB) $(LIBOSSAUDIO) $(LIBASOUND)
