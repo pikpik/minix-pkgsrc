@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 1999/04/13 15:31:05 agc Exp $
+# $NetBSD: Makefile,v 1.32 1999/05/24 20:39:36 tv Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
@@ -18,7 +18,7 @@ DEPENDS+=		tk-8.0.5:../../x11/tk80 \
 			addnerd-1.6:../../sysutils/addnerd
 
 # Needs ELF clue, mips has no TAS implementation
-NOT_FOR_PLATFORM=	*-*-{alpha,mips}
+NOT_FOR_PLATFORM=	*-*-alpha *-*-mips
 
 PLIST_SRC=		${WRKDIR}/PLIST.tmp
 REQ_FILE=		${WRKDIR}/REQ

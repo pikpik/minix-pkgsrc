@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 1999/03/10 08:42:14 tron Exp $
+# $NetBSD: Makefile,v 1.43 1999/05/24 20:39:39 tv Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 #
 
@@ -23,7 +23,7 @@ DEPENDS=		xpm-3.4k:../../graphics/xpm \
 			png-1.0.3:../../graphics/png \
 			gdbm-1.7.3:../../databases/gdbm
 
-NOT_FOR_PLATFORM=	*-*-{alpha,mips}	#fails purespace dumping
+NOT_FOR_PLATFORM=	*-*-alpha *-*-mips	#fails purespace dumping
 
 HAS_CONFIGURE=
 
