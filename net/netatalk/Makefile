@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2000/08/23 23:45:11 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2000/09/29 23:06:31 fredb Exp $
 #
 
 DISTNAME=		netatalk-990130
-PKGNAME=		netatalk-umich-19990130nb1
+PKGNAME=		netatalk-umich-19990130nb2
 WRKSRC=			${WRKDIR}/netatalk-990130
 CATEGORIES=		net
 MASTER_SITES=		ftp://terminator.rs.itd.umich.edu/unix/netatalk/
