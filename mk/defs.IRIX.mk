@@ -1,4 +1,4 @@
-# $NetBSD: defs.IRIX.mk,v 1.16 2003/01/10 08:44:20 jlam Exp $
+# $NetBSD: defs.IRIX.mk,v 1.17 2003/01/15 20:55:39 jlam Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -49,7 +49,7 @@ MTREE?=		${LOCALBASE}/bin/mtree
 MV?=		/sbin/mv
 NICE?=		/sbin/nice
 PATCH?=		/usr/sbin/patch -b
-PAX?=		/usr/sbin/pax
+PAX?=		${LOCALBASE}/bin/pax
 PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/sbin/ps
