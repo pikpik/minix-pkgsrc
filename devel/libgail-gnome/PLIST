@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/gtk-2.0/modules/libgail-gnome.a
+lib/gtk-2.0/modules/libgail-gnome.la
+lib/gtk-2.0/modules/libgail-gnome.so
+lib/pkgconfig/libgail-gnome.pc
+@comment in gtk2: @dirrm lib/gtk-2.0/modules
