@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2002/06/19 02:23:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2002/08/16 03:12:13 jschauma Exp $
 #
 
-DISTNAME=	ocaml-3.04
+DISTNAME=	ocaml-3.06
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/
+MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/${DISTNAME}/
 
 MAINTAINER=	jschauma@netbsd.org
 HOMEPAGE=	http://caml.inria.fr/ocaml/
