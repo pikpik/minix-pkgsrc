@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/10 11:05:31 mjl Exp $
 #
 
 DISTNAME=	bmf-0.84
@@ -21,6 +21,6 @@ ALL_TARGET=	apps
 # ship pre-build man pages (snarfed from the Debian package).
 
 post-build:
-		${CP} files/* ${WRKSRC}
+		${CP} files/*.1 ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
