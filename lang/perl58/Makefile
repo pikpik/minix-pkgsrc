@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2004/10/28 08:22:48 jklos Exp $
+# $NetBSD: Makefile,v 1.52 2004/10/28 08:59:45 wiz Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -45,8 +45,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILDING_PERL5=		yes
 PERL5_CONFIGURE=	no
-
-CFLAGS+=		-O
 
 USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
