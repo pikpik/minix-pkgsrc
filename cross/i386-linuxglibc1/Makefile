@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:27:53 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/08/04 21:07:48 jmc Exp $
 #
 
 DISTVERSION=		5.3.12.1
+PKGREVISION=		1
 DISTFILES=		${LINUXDEVEL_FILES}
 EXTRACT_ONLY=		# none of the RPM files
 MASTER_SITES=		ftp://ftp.cdrom.com/pub/linux/redhat/redhat-4.2/i386/RedHat/RPMS/

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:27:52 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:10:55 agc Exp $
 #
 
 DISTVERSION=		1.0.0.0
 DISTFILES=		# none
+PKGREVISION=		1
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/

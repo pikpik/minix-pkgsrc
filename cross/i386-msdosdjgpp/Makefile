@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2004/01/20 12:10:55 agc Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/27 00:53:12 heinz Exp $
 #
 
 DISTVERSION=		2.02.0
+PKGREVISION=		1
 DISTFILES=		${DJGPP_FILES}
 EXTRACT_ONLY=		# none of the djgpp files
 MASTER_SITES=		ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2/old/ \
