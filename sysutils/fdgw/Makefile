@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 17:24:14 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/03 15:15:10 wiz Exp $
 #
 
 DISTNAME=	fdgw-20020130
@@ -21,7 +21,7 @@ pre-fetch:
 	@ ${ECHO} "";
 	@ ${ECHO} "********************************************************";
 	@ ${ECHO} "Please note: The install stage of fdgw requires a kernel"
-	@ ${ECHO} "             with 'pseudo-device vnd 4' enabled.";
+	@ ${ECHO} "             with at least one vnd(4) device.";
 	@ ${ECHO} "********************************************************";
 	@ ${ECHO} "";
 
