@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$NetBSD: soffice,v 1.1.1.1 2002/02/13 18:10:10 mrauch Exp $
+#	$NetBSD: soffice,v 1.2 2003/05/19 02:58:19 simonb Exp $
 #
 SOINST=@@PREFIX@@/OpenOffice.org641
 [ "$SOFFICE" = "" ] && SOFFICE=$HOME/OpenOffice.org641
@@ -34,4 +34,4 @@ fi
 # have to be open for normal operation
 ulimit -n `ulimit -n -H`
 
-exec ${SOFFICE}/soffice $*
+exec ${SOFFICE}/soffice "$@"
