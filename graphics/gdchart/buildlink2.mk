@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1 2002/10/07 20:12:13 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/01/17 13:49:07 jmmv Exp $
 #
 
 .if !defined(GDCHART_BUILDLINK2_MK)
@@ -15,6 +15,8 @@ BUILDLINK_FILES.gdchart+=	include/gdc.h
 BUILDLINK_FILES.gdchart+=	include/gdcpie.h
 BUILDLINK_FILES.gdchart+=	include/gifencode.h
 BUILDLINK_FILES.gdchart+=	lib/libgdchart.*
+
+.include "../../graphics/jpeg/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gdchart-buildlink
 
