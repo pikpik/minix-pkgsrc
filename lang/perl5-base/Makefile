@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/09/05 09:18:21 jlam Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/07/18 06:16:44 markm Exp
 #
 
@@ -19,12 +19,6 @@ CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX} -Doptimize="${CFLAGS}" \
 			-Darchname=${MACHINE_ARCH}-${LOWER_OPSYS} \
 			-Dcc=gcc -Dusemymalloc=false
 MAKE_ENV+=		LD_LIBRARY_PATH=${WRKSRC}
-
-.if exists(/usr/libexec/ld.so) || exists(/usr/libexec/ld.elf_so)
-CONFIGURE_ARGS+=	-Duseshrplib=true
-.else
-CONFIGURE_ARGS+=	-Duseshrplib=false
-.endif
 
 .include "../../mk/bsd.prefs.mk"
 
