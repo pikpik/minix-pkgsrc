@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1999/05/23 20:34:34 tv Exp $
+# $NetBSD: Makefile,v 1.15 1999/05/23 20:56:50 tv Exp $
 # FreeBSD Id: Makefile,v 1.18 1997/05/16 01:42:31 asami Exp 
 #
 
@@ -10,7 +10,7 @@
     SUBDIR += gsharutils
     SUBDIR += gtar
     SUBDIR += ha
-#    SUBDIR += hpack.non-usa.only
+    SUBDIR += hpack
     SUBDIR += lha
     SUBDIR += macutil
 #    SUBDIR += nulib
