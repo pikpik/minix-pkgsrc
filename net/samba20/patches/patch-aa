@@ -60,15 +60,3 @@ $NetBSD$
  
  bin/smbspool: $(CUPS_OBJ) bin/.dummy
  	@echo Linking $@
-@@ -462,8 +464,9 @@
- install: installbin installman installscripts installcp installswat
- 
- installdirs:
--	$(SHELL) $(srcdir)/install-sh -d -m $(INSTALLPERMS) \
--	$(BASEDIR) $(SBINDIR) $(BINDIR) $(LIBDIR) $(VARDIR) $(CODEPAGEDIR)
-+	@for dir in $(BASEDIR) $(SBINDIR) $(BINDIR) $(LIBDIR) $(VARDIR) $(CODEPAGEDIR); do \
-+		$(SHELL) $(srcdir)/install-sh -d -m $(INSTALLPERMS) $${dir}; \
-+	done
- 
- installservers: all installdirs
- 	@$(SHELL) $(srcdir)/script/installbin.sh $(INSTALLPERMS) $(BASEDIR) $(SBINDIR) $(LIBDIR) $(VARDIR) $(SPROGS)
