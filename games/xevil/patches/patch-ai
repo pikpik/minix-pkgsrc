@@ -1,17 +1,17 @@
 $NetBSD$
 
---- cmn/role.cpp.orig	2000-01-19 12:54:34.000000000 -0800
-+++ cmn/role.cpp	2003-11-22 10:55:47.000000000 -0800
+--- cmn/xetp.cpp.orig	2000-01-19 12:54:30.000000000 -0800
++++ cmn/xetp.cpp	2003-11-22 11:24:52.000000000 -0800
 @@ -29,9 +29,10 @@
  
  #include "stdafx.h"
  
 -#include <iostream.h>
 +#include <iostream>
-+using namespace std;
  #if X11
 -#include <strstream.h>
 +#include <strstream>
- #include <time.h>
++using namespace std;
  #endif
  #if WIN32
+ #include <strstrea.h>
