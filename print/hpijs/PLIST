@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/hpijs
+share/doc/html/hpijs/gs_hpijs.png
+share/doc/html/hpijs/hpijs_readme.html
+@dirrm share/doc/html/hpijs
