@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Makefile.orig	Tue Apr  2 22:53:49 2002
-+++ Makefile	Wed Apr  3 12:42:29 2002
+--- Makefile.orig	Thu May  2 00:58:23 2002
++++ Makefile	Tue May  7 14:26:33 2002
 @@ -41,15 +41,14 @@
  # Run-time enviroment settings
  
@@ -20,11 +20,11 @@ $NetBSD$
  
  # The flags to pass to the NSD on startup
  NSDFLAGS        = 
-@@ -80,7 +79,7 @@
+@@ -92,7 +91,7 @@
  #
  #	Please see DBFLAGS below to switch the internal database type.
  #
--FEATURES	= # -DMIMIC_BIND8  -DINET6
+-FEATURES	= # -DINET6
 +FEATURES	= -DINET6
  
  # To compile NSD with internal red-black tree database
