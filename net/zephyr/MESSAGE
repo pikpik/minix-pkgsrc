@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD$
-
-Zephyr requires a single master server, and then a host server for every
-host that supports zephyr.  You must start these out of your rc script.
-
-===========================================================================
