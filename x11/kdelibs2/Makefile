@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2003/05/02 11:57:26 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2003/05/11 05:24:29 jmc Exp $
 
 DISTNAME=	kdelibs-2.2.2
 PKGREVISION=	5
@@ -10,7 +10,7 @@ COMMENT=	Support libraries for the KDE integrated X11 desktop
 CONFLICTS=	arts-[1-9]*
 
 USE_BUILDLINK2=		YES
-USE_CXX=		YES
+USE_GCC_SHLIB=		YES
 USE_OPENSSL_VERSION=	${OPENSSL_VERSION_096}
 
 CONFIGURE_ARGS+=	--with-ssl-dir="${BUILDLINK_PREFIX.openssl}"
