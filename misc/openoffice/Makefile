@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/04/08 13:25:00 mrauch Exp $
+# $NetBSD: Makefile,v 1.10 2002/04/24 07:22:13 agc Exp $
 
 DISTNAME=		openoffice-0.0.0.641
 PKGREVISION=		1
 WRKSRC=			${WRKDIR}/oo_641_src/config_office
 CATEGORIES=		misc
-MASTER_SITES=		http://sf1.mirror.openoffice.org/641b/
+MASTER_SITES=		http://sf1.mirror.openoffice.org/641b/		\
+			http://www.fs.tum.de/~mrauch/OpenOffice/download/
 DISTFILES=		oo_641_src.tar.bz2
 DISTFILES+=		gpc231.tar.Z
 DISTFILES+=		oo_moz_641.tar.gz
