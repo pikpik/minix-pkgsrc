@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/04/22 16:08:47 recht Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/11 04:23:07 minskim Exp $
 #
 
 DISTNAME=	libcddb-0.9.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libcddb/}
 
@@ -17,5 +17,6 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	libcddb.pc.in
 GNU_CONFIGURE=		yes
+GCC_REQD+=		2.95
 
 .include "../../mk/bsd.pkg.mk"
