@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.2 2001/06/12 13:16:09 jlam Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.3 2001/06/18 19:58:55 jlam Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -8,6 +8,7 @@ CAT?=		/bin/cat
 CHMOD?=		/bin/chmod
 CHOWN?=		/usr/sbin/chown
 CHGRP?=		/usr/bin/chgrp
+CMP?=		/usr/bin/cmp
 CP?=		/bin/cp
 CUT?=		/usr/bin/cut
 DC?=		/usr/bin/dc

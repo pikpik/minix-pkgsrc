@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.2 2001/06/12 13:16:09 jlam Exp $
+# $NetBSD: defs.SunOS.mk,v 1.3 2001/06/18 19:58:55 jlam Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -8,6 +8,7 @@ CAT?=		/usr/bin/cat
 CHMOD?=		/usr/bin/chmod
 CHOWN?=		/usr/bin/chown
 CHGRP?=		/usr/bin/chgrp
+CMP?=		cmp
 CP?=		/usr/bin/cp
 CUT?=		/usr/bin/cut
 DC?=		/usr/bin/dc
