@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/09 20:08:48 agc Exp $
 # FreeBSD Id: ports/net/nbtscan/Makefile,v 1.2 2001/08/25 10:53:28 kris Exp
 
-DISTNAME=	nbtscan-1.0.2
+DISTNAME=	nbtscan-1.0.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.inetcat.org/software/
 
