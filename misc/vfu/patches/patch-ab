@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- vslib/unicon.h.BAK	Tue Jan 26 20:55:19 1999
++++ vslib/unicon.h	Tue Jan 26 20:55:25 1999
+@@ -16,7 +16,7 @@
+ #endif
+ 
+ #ifdef _TARGET_LINUX_
+-  #include <curses.h>
++  #include <ncurses.h>
+ #endif
+ 
+ ///////////////////////////////////////////////////////////////////////////
