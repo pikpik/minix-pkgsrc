@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2002/06/12 04:38:24 sakamoto Exp $
+# $NetBSD: Makefile,v 1.51 2002/09/25 07:04:16 jlam Exp $
 
 DISTNAME=	xemacs-21.1.14
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.xemacs.org/pub/xemacs/xemacs-21.1/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/xemacs-21.1/ \
