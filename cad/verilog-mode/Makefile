@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/14 02:28:18 dmcmahill Exp $
 #
 
 DISTNAME=		verilog-mode-3.60
@@ -12,8 +12,6 @@ HOMEPAGE=		http://www.verilog.com/verilog-mode.html
 COMMENT=		Verilog mode for Emacs
 
 WRKSRC=			${WRKDIR}
-
-.include "../../mk/bsd.prefs.mk"
 
 .include "../../mk/emacs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/30 17:46:20 sommerfeld Exp $
+# $NetBSD: Makefile,v 1.3 2003/01/02 18:39:13 wiz Exp $
 #
 
 DISTNAME=	zephyr-mode-2.5.20
@@ -13,7 +13,6 @@ DEPENDS=	tzc>=2.6.15:../../chat/tzc
 
 USE_BUILDLINK2=	YES
 
-.include "../../mk/bsd.prefs.mk"
 .include "../../mk/emacs.mk"
 
 do-build:
