@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/shar.c.orig	Sun Jun  8 22:47:22 1997
 +++ src/shar.c	Sun Jun  8 22:47:37 1997
 @@ -688,7 +688,7 @@
