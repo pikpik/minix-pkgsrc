@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/11 17:07:23 cjep Exp $
 
 DISTNAME=	nettest.92.11.09
 PKGNAME=	nettest-92.11.09
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ginsbach@cray.com
 COMMENT=	Performs client and server functions for timing data throughput
-
-.include "../../mk/bsd.prefs.mk"
 
 WRKSRC=		${WRKDIR}
 
