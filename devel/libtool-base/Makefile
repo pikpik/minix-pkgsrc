@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/02/05 20:14:06 skrll Exp $
+# $NetBSD: Makefile,v 1.22 2004/02/05 21:30:00 jlam Exp $
 #
 
 PKGNAME=	${DISTNAME:C/-/-base-/}
@@ -32,6 +32,11 @@ BUILD_SHLIBTOOL=	NO
 .else
 CONFIGURE_ARGS=		--enable-ltdl-install
 .endif
+
+# libtool persists in trying to find the path to ld, which always ends
+# up in ${BUILDLINK_DIR}.  Prevent it from caring.
+#
+CONFIGURE_ENV+=		lt_cv_path_LD=${LD:Q}
 
 .if !empty(MACHINE_PLATFORM:MDarwin-*-*)
 .  include "../../devel/dlcompat/buildlink3.mk"
