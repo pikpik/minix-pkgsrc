@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 1998/11/12 23:26:58 tron Exp $
+# $NetBSD: Makefile,v 1.21 1998/11/13 00:58:23 frueauf Exp $
 #
 
 DISTNAME=	netpbm
 PKGNAME=	netpbm-19940301
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.wustl.edu//graphics/graphics/packages/NetPBM/ \
+MASTER_SITES=	ftp://ftp.wustl.edu/graphics/graphics/packages/NetPBM/ \
 		ftp://ftp.informatik.uni-oldenburg.de/pub/netpbm/ \
 		ftp://ftp.informatik.uni-oldenburg.de/pub/grafik/png/applications/
 DISTFILES=	netpbm-1mar1994.tar.gz \
