@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/09 13:53:38 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:03 tv Exp $
 
 DISTNAME=	xvid4conf-1.12
 PKGREVISION=	1
@@ -13,5 +13,6 @@ GNU_CONFIGURE=	YES
 USE_BUILDLINK3=	YES
 USE_X11=	YES
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
