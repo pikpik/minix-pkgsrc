@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.12 1999/11/17 09:53:08 agc Exp $
+# $NetBSD: Makefile,v 1.13 1999/12/07 11:45:12 agc Exp $
 #
 
 SUBDIR+= gensolpkg
 #SUBDIR+= pax			# only needed on 1.3 systems
 #SUBDIR+= pkg_install		# only install on demand of bsd.pkg.mk
+SUBDIR+= pkg_tarup
 SUBDIR+= pkgdep
 SUBDIR+= pkglibtool
 SUBDIR+= pkglint
