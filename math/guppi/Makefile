@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 00:05:50 tron Exp $
+# $NetBSD: Makefile,v 1.2 2001/07/01 11:01:45 tron Exp $
 
 DISTNAME=	Guppi-0.35.5
 PKGNAME=	guppi-0.35.5nb1
@@ -20,7 +20,7 @@ USE_X11BASE=	YES
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE} \
-			PKGVERSION=${PKGNAME:S/guppi-//}
+			PKGVERSION=${PKGNAME:C/.*-//:C/nb.*//}
 
 post-install:
 	${TEST} ${PREFIX} = ${LOCALBASE} || \
