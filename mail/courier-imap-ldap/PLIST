@@ -1,0 +1,6 @@
+@comment $NetBSD$
+libexec/courier/authlib/authdaemond.ldap
+share/examples/courier/authldap.schema
+share/examples/courier/authldaprc.dist
+@unexec ${RMDIR} -p %D/share/examples/courier 2>/dev/null || ${TRUE}
+@unexec ${RMDIR} -p %D/libexec/courier 2>/dev/null || ${TRUE}
