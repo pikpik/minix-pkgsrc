@@ -1,0 +1,8 @@
+$NetBSD$
+--- src/ckconfig.c.orig	Mon Jul 13 03:13:37 1998
++++ src/ckconfig.c	Mon Jul 13 03:14:44 1998
+@@ -35,2 +35,4 @@
+ #endif
++
++#include <string.h>
+ #include <stdio.h>
