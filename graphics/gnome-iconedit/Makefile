@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2004/04/14 16:15:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2004/04/18 22:35:12 snj Exp $
 #
 
 DISTNAME=		gnome-iconedit-1.2.0
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		graphics gnome
 MASTER_SITES=		http://www.webtribe.net/i/iain/
 
