@@ -1,3 +1,4 @@
 $NetBSD$
 
-MD5 (vim-5.1.tar.gz) = 62b9c9023dcc49c37859d133d6647edd
+MD5 (vim-5.2-src.tar.gz) = 590a295e4fdef20c886a49a787e27686
+MD5 (vim-5.2-rt.tar.gz) = d55a60481a8ba05c8c23ef60853f96fe
