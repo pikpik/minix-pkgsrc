@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/22 12:52:31 agc Exp $
+# $NetBSD: Makefile,v 1.10 1998/07/14 10:56:16 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/04/20 13:19:30 wosch Exp
 #
 
@@ -12,9 +12,8 @@ DEPENDS+=	tk-8.0p2:../../x11/tk80
 RUN_DEPENDS=	wish8.0:../../x11/tk80
 
 # this pkg opens some X connectin
-.ifndef DISPLAY
 IS_INTERACTIVE= yes
-.endif
+
 GNU_CONFIGURE=	yes
 
 do-build:
