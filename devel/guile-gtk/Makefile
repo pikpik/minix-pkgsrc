@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/06/01 11:23:21 rh Exp $
+# $NetBSD: Makefile,v 1.3 2000/06/21 01:09:06 jlam Exp $
 #
 
 DISTNAME=		guile-gtk-0.17
@@ -12,7 +12,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.ping.de/sites/zagadka/guile-gtk/
 
 DEPENDS+=		gnome-core-*:../../x11/gnome-core
-DEPENDS+=		guile-1.3.*:../../lang/guile
+DEPENDS+=		guile>=1.3.2:../../lang/guile
 
 GNU_CONFIGURE=		# defined
 USE_X11=		# defined
