@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.558 2000/08/31 04:29:53 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.559 2000/08/31 14:29:00 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -1937,7 +1937,7 @@ checkpatch:
 # Special target to re-run install
 
 .if !target(reinstall)
-reinstall: deinstall
+reinstall:
 	${_PKG_SILENT}${_PKG_DEBUG}${RM} -f ${INSTALL_COOKIE} ${PACKAGE_COOKIE} ${PLIST}
 	${_PKG_SILENT}${_PKG_DEBUG}DEPENDS_TARGET=${DEPENDS_TARGET} ${MAKE} ${MAKEFLAGS} install
 .endif
