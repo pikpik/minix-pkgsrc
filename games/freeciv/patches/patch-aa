@@ -1,9 +1,13 @@
 $NetBSD$
 
---- client/climisc.c.orig	Thu Jun 11 22:16:11 1998
-+++ client/climisc.c	Thu Jun 11 22:16:56 1998
-@@ -46,3 +46,3 @@
-     } else {
--      datadir = "data";		/* correct if not 'data' is the default */
-+      datadir = "@X11BASE@/share/freeciv/data"; /* correct if not 'data' is the default */
-     };
+--- client/climisc.c.orig	Thu Dec  3 11:48:49 1998
++++ client/climisc.c	Sat Dec 26 22:10:54 1998
+@@ -33,7 +33,7 @@
+ #include <chatline.h>
+ 
+ #ifndef FREECIV_DATADIR
+-#define FREECIV_DATADIR "data"
++#define FREECIV_DATADIR "@X11BASE@/share/freeciv/data"
+ #endif
+ 
+ 
