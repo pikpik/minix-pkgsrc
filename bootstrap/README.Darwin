@@ -1,4 +1,4 @@
-$NetBSD: README.Darwin,v 1.1.1.1 2004/03/11 13:03:58 grant Exp $
+$NetBSD: README.Darwin,v 1.2 2004/04/24 19:22:41 danw Exp $
 
 If you are using Mac OS X, please read "README.MacOSX" as well.
 
@@ -12,8 +12,7 @@ $ curl -O \
 $ tar -C /Volumes/NetBSD -zxvf pkgsrc.tar.gz && rm pkgsrc.tar.gz
 $ sudo ./bootstrap \
     --prefix=/Volumes/NetBSD/pkg \
-    --pkgdbdir=/Volumes/NetBSD/pkgdb \
-    --pkgsrcdir=/Volumes/NetBSD/pkgsrc
+    --pkgdbdir=/Volumes/NetBSD/pkgdb
 
 Note: if you already have a UFS partition, or have a spare partition
 that you can format as UFS, use that instead of the UFS disk image.
