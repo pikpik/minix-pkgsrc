@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/02/14 11:39:46 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/03 20:31:02 drochner Exp $
 
 DISTNAME=	Imaging-1.1.3
 PKGNAME=	${PYPKGPREFIX}-imaging-1.1.3
@@ -9,13 +9,11 @@ MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.pythonware.com/products/pil/
 COMMENT=	PIL, the Python Imaging Library
 
-#DEPENDS+=	jpeg-6b:../../graphics/jpeg
-
 DIST_SUBDIR=    python
 PYDISTUTILSPKG= yes
 PY_PATCHPLIST=	yes
-GNU_CONGIGURE=	yes
-USE_BUILDLINK2=	yes
+GNU_CONFIGURE=	yes
+USE_BUILDLINK=	yes
 
 do-configure:
 	(cd ${WRKSRC}/libImaging && ${SETENV} ${CONFIGURE_ENV} ./configure \
@@ -25,5 +23,5 @@ do-configure:
 	 ${WRKSRC}/setup.py
 
 .include "../../lang/python/extension.buildlink.mk"
-.include "../../graphics/jpeg/buildlink2.mk"
+.include "../../graphics/jpeg/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
