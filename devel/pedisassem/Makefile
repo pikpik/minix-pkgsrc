@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:43:43 martti Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:13:29 agc Exp $
 
 DISTNAME=	dsasmsrc
 PKGNAME=	pedisassem-0.23
@@ -13,7 +13,7 @@ COMMENT=	Disassembler for Win32 code
 WRKSRC=		${WRKDIR}
 
 # LP64 problems
-NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64
+NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64 *-*-x86_64
 
 post-extract:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}
