@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/10/09 16:51:09 jlam Exp $
+# $NetBSD: Makefile,v 1.3 1999/11/12 11:21:05 agc Exp $
 #
 
 DISTNAME=	gdcd-0.0.2
@@ -9,7 +9,7 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://cdcd.undergrid.net/gdcd/
 
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
-DEPENDS+=	imlib-1.9.4:../../graphics/imlib
+DEPENDS+=	imlib-*:../../graphics/imlib
 DEPENDS+=	pth-1.2.0:../../devel/pth
 DEPENDS+=	libcdaudio-0.99.1:../../audio/libcdaudio
 
