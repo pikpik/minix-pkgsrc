@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/08/05 22:19:17 recht Exp $
+# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:28 tv Exp $
 
 DISTNAME=	libXrender-0.8.4
 PKGNAME=	${DISTNAME:S/lib//}
@@ -17,6 +17,12 @@ USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 PKGCONFIG_OVERRIDE=	xrender.pc.in
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+CFLAGS+=	-Xc
+.endif
 
 BUILDLINK_DEPENDS.render+=	render>=0.8
 
