@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2001/06/24 05:52:03 taca Exp $
+# $NetBSD: Makefile,v 1.80 2001/06/28 17:02:02 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -62,6 +62,7 @@ SUBDIR+=	rats
 SUBDIR+=	rc5des
 SUBDIR+=	rid
 SUBDIR+=	rsaref
+SUBDIR+=	ruby-md5
 SUBDIR+=	scanssh
 SUBDIR+=	smimemsg
 SUBDIR+=	smtpd
