@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2002/05/18 22:46:47 zuntum Exp $
+# $NetBSD: Makefile,v 1.46 2002/07/18 02:19:30 rh Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/08/06 14:55:12 vanilla Exp
 #
 
@@ -30,10 +30,7 @@ TEXINFO_OVERRIDE=	YES
 CFLAGS=		-O0
 .endif
 
-# GLib needs a working pthreads implementation, and pth is proven to work.
-USE_PTHREAD=	native pth
-
-.include "../../mk/bsd.prefs.mk"
+PTHREAD_OPTS+=		require
 
 GLIB_VERSION=		${DISTNAME:S/glib-//}
 GLIB_MAJOR_VERSION=	${GLIB_VERSION:C/\..*//}

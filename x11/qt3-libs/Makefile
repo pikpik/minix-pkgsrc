@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/05/29 19:09:55 skrll Exp $
+# $NetBSD: Makefile,v 1.6 2002/05/30 12:33:26 skrll Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -14,8 +14,7 @@ MAKE_ENV+=		LIBQT="${WRKSRC}/lib/libqt-mt.la"
 
 ALL_TARGET=		sub-plugins
 
-USE_PTHREAD=  native pth-syscall
-.include "../../mk/bsd.prefs.mk"
+PTHREAD_OPTS+=		require
 
 UNLIMIT_RESOURCES=	datasize
 

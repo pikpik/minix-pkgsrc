@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/06/15 09:31:38 shell Exp $
 
 DISTNAME=	Chinput-3.0
 CATEGORIES=	inputmethod
@@ -10,8 +10,8 @@ COMMENT=	Chinese input server
 
 DEPENDS+=	unicon-im>=1.2:../../inputmethod/unicon-im
 
-USE_PTHREAD=	native pth
 USE_X11BASE=	yes
+PTHREAD_OPTS+=	require
 
 ALL_TARGET=	chinput
 

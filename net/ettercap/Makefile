@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/04/10 01:43:03 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/06/05 00:29:02 hubertf Exp $
 
 DISTNAME=		ettercap-0.6.6.6
 CATEGORIES=		security net
@@ -14,7 +14,7 @@ CONFIGURE_ARGS+=	--enable-plugins \
 
 # missing newpad()
 USE_NCURSES=		yes
-USE_PTHREAD=		native pth
+PTHREAD_OPTS+=		require
 
 CPPFLAGS+=		-I${LOCALBASE}/include -L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib
 

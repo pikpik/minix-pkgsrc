@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/04/29 21:41:41 rh Exp $
+# $NetBSD: Makefile,v 1.6 2002/07/22 09:23:10 agc Exp $
 #
 
 DISTNAME=	libmpeg3-1.3
@@ -20,7 +20,7 @@ USE_BUILDLINK_ONLY=	yes
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 
-USE_PTHREAD=	native pth
+PTHREAD_OPTS+=	require
 
 post-configure:
 	${ECHO} "CFLAGS+=-O2" >>${WRKSRC}/global_config

@@ -1,15 +1,17 @@
 $NetBSD$
 
---- program/cheesetracker.cpp.orig	Thu Apr 11 23:24:16 2002
+--- program/cheesetracker.cpp.orig	Fri Apr 12 02:24:16 2002
 +++ program/cheesetracker.cpp
-@@ -186,12 +186,19 @@
+@@ -186,12 +186,21 @@ void start_player() {
  
  }
  
++#ifdef _POSIX_THREAD_IS_GNU_PTH
 +gint pth_nbschedule(gint no_need_this) {
 +	pthread_yield_np();
 +	return 1;
 +}
++#endif
 +
  
  int main(int argc, char *argv[]) {
@@ -22,7 +24,7 @@ $NetBSD$
  
  	int tmperror,counter=0;
  	char * filename;
-@@ -238,9 +245,19 @@
+@@ -238,9 +247,19 @@ int main(int argc, char *argv[]) {
  	quit_player=false;
  
  	pthread_attr_init(&thread_attr);

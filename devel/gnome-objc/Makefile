@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/01/24 18:31:34 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2002/03/13 17:36:49 fredb Exp $
 #
 
 DISTNAME=	gnome-objc-1.0.40
@@ -12,7 +12,7 @@ COMMENT=	Objective C API for gnome and gtk
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
-USE_PTHREAD=	native pth
+PTHREAD_OPTS+=	require
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
