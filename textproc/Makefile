@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.273 2004/12/26 15:58:11 wiz Exp $
+# $NetBSD: Makefile,v 1.274 2005/01/08 12:56:09 minskim Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -233,6 +233,7 @@ SUBDIR+=	rman
 SUBDIR+=	robodoc
 SUBDIR+=	rtf-tools
 SUBDIR+=	rtfm
+SUBDIR+=	rubber
 SUBDIR+=	ruby-amrita
 SUBDIR+=	ruby-erb
 SUBDIR+=	ruby-eruby
