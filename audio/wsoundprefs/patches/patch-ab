@@ -1,12 +1,13 @@
-$NetBSD: patch-ab,v 1.1.1.1 1999/04/06 17:39:40 tron Exp $
+$NetBSD$
 
---- src/Imakefile.orig	Tue Mar  2 08:06:36 1999
-+++ src/Imakefile	Sun Mar 21 03:19:46 1999
+--- src/Imakefile.orig	Tue Mar  2 14:06:36 1999
++++ src/Imakefile	Mon Mar 12 11:49:41 2001
 @@ -13,11 +13,18 @@
  XCOMM EFENCELIB = -lefence
  EFENCELIB =
  
 -WMSOUNDLIB = -lwmsnd
+-WRASTERCFLAGS = `get-wraster-flags --cflags`
 +XCOMM NetBSD requires -lossaudio for Linux OSS interface compatibility.
 +#ifdef NetBSDArchitecture
 +  OSSLIB = -lossaudio
@@ -15,7 +16,7 @@ $NetBSD: patch-ab,v 1.1.1.1 1999/04/06 17:39:40 tron Exp $
 +#endif
 +
 +WMSOUNDLIB = -lwmsnd $(OSSLIB)
- WRASTERCFLAGS = `get-wraster-flags --cflags`
++WRASTERCFLAGS = `get-wraster-flags --cflags` -I${PREFIX}/include/WINGs
  WRASTERLFLAGS = `get-wraster-flags --lflags`
  WRASTERLIBS = `get-wraster-flags --libs`
 -WINGSLIBS = -lWINGs -lPropList
