@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2001/01/25 21:43:59 tv Exp $
+# $NetBSD: Makefile,v 1.10 2001/02/17 18:38:14 wiz Exp $
 #
 
-DISTNAME=		compat13-${MACHINE_ARCH}
-PKGNAME=		compat13-1.3.3
+DISTNAME=		compat13-${MACHINE_ARCH}${PKGMINOR}
+PKGNAME=		compat13-1.3.3${PKGMINOR}
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
@@ -31,6 +31,12 @@ COMPAT_LIBDIR=		${EMULSUBDIR}/usr/lib
 .else
 LOCALBASE=		/usr
 COMPAT_LIBDIR=		lib
+.endif
+
+.if ${MACHINE_ARCH} == "alpha"
+PLIST_SRC+=		${PKGDIR}/PLIST
+PLIST_SRC+=		${PKGDIR}/PLIST.alpha
+PKGMINOR=		nb1
 .endif
 
 PLIST_SUBST+=		COMPAT_LIBDIR=${COMPAT_LIBDIR}

@@ -1,0 +1,3 @@
+@comment $NetBSD$
+${COMPAT_LIBDIR}/libcurses.so.2.1
+${COMPAT_LIBDIR}/libcurses.so.2
