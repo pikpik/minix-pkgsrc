@@ -1,0 +1,17 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.2 2001/11/21 17:13:38 jlam Exp $
+
+                    *===* SECURITY NOTES *===*
+
+The users' encrypted passwords stored in
+
+	${SAMBA_ETCDIR}/private/smbpasswd 
+
+are _PASSWORD_EQUIVALENT_ from the viewpoint of SMB protocol.  Do not
+weaken the permissions of this file (owned by ${ROOT_USER}:${ROOT_GROUP} and with file
+mode rw-------) without any special reasons.
+
+Please note that even if you pkg_delete ${PKGNAME}, pkg_delete will
+not remove the smbpasswd file.  If you won't use this package anymore, it
+is strongly recommended that you remove the smbpasswd file manually.
+===========================================================================
