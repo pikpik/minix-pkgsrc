@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/22 06:11:39 garbled Exp $
+# $NetBSD: Makefile,v 1.4 1998/10/11 20:27:03 kim Exp $
 
 DISTNAME=	ntop-1.0
 CATEGORIES=	net
@@ -7,7 +7,7 @@ EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	kim@tac.nyc.ny.us
 
-DEPENDS+=	autoconf-2.12:../../devel/autoconf
+BUILD_DEPENDS+=	autoconf:../../devel/autoconf
 DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
 
 HOMEPAGE=	http://www-serra.unipi.it/~ntop/
