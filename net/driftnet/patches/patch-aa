@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.orig	Thu Jan  9 09:06:38 2003
++++ Makefile
+@@ -51,7 +51,7 @@
+ 
+ # added 20020604 edobbs
+ # On BSD systems, may need to use /usr/local/include
+-#CFLAGS += -I/usr/local/include
++CFLAGS += -I${LOCALBASE}/include
+ 
+ 
+ #
