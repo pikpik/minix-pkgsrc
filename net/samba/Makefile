@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2004/01/11 02:26:30 jlam Exp $
+# $NetBSD: Makefile,v 1.110 2004/01/12 03:33:04 jlam Exp $
 
 DISTNAME=		samba-3.0.1
 PKGREVISION=		1
@@ -80,6 +80,8 @@ BUILD_DEFS+=		SAMBA_WITH_ADS
 .if defined(USE_CUPS) && !empty(USE_CUPS:M[yY][eE][sS])
 .  include "../../print/cups/buildlink3.mk"
 CONFIGURE_ARGS+=	--enable-cups
+.else
+CONFIGURE_ARGS+=	--disable-cups
 .endif
 BUILD_DEFS+=		USE_CUPS
 
