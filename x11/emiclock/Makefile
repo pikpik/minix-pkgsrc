@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 1999/06/10 15:29:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1999/08/25 13:37:36 agc Exp $
 #
 
-DISTNAME=	emiclock-1.0.4
+DISTNAME=	emiclock-2.0.2
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.plaza.hitachi-sk.co.jp/pub/EmiClock/X11/
+MASTER_SITES=	ftp://ftp.noge.com/pub/EmiClock/X11/
 
 MAINTAINER=	minoura@netbsd.org
 
