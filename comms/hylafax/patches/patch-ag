@@ -2,7 +2,7 @@ $NetBSD$
 
 --- etc/Makefile.in.orig	Tue Feb  6 04:54:06 2001
 +++ etc/Makefile.in
-@@ -85,14 +85,16 @@
+@@ -85,14 +85,16 @@ install: default
  		-src ${SRCDIR}/faxsetup.$$i -O faxsetup.$$i; \
  	done
  	${PUTSERVER} -F ${SBIN} -m 755 -src probemodem.sh -O probemodem

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- config/skel.orig	Mon Feb  5 06:32:56 2001
+--- config/skel.orig	Sun Apr  7 21:29:27 2002
 +++ config/skel
-@@ -41,8 +41,8 @@
+@@ -41,8 +41,8 @@ ServerTracing:		1		# log server-related 
  SessionTracing:		11		# log server-related operations
  RecvFileMode:		0600		# recvd facsimile are not public
  LogFileMode:		0600		# private log files
