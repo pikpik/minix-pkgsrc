@@ -1,4 +1,4 @@
-# $NetBSD: mipspro.mk,v 1.25 2004/08/27 06:29:09 jlam Exp $
+# $NetBSD: mipspro.mk,v 1.26 2004/09/21 15:01:41 jlam Exp $
 
 .if !defined(COMPILER_MIPSPRO_MK)
 COMPILER_MIPSPRO_MK=	defined
@@ -24,12 +24,14 @@ _MIPSPRO_CC=		${_MIPSPRO_DIR}/bin/cc
 _MIPSPRO_LINKS+=	_MIPSPRO_CC
 PKG_CC=			${_MIPSPRO_CC}
 CC=			${PKG_CC:T}
+CCPATH=			${MIPSPROBASE}/bin/cc
 .endif
 .if exists(${MIPSPROBASE}/bin/CC)
 _MIPSPRO_CXX=		${_MIPSPRO_DIR}/bin/CC
 _MIPSPRO_LINKS+=	_MIPSPRO_CXX
 PKG_CXX=		${_MIPSPRO_CXX}
 CXX=			${PKG_CXX:T}
+CXXPATH=		${MIPSPROBASE}/bin/CC
 .endif
 
 .if exists(${MIPSPROBASE}/bin/cc)
