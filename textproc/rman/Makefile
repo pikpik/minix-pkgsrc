@@ -1,19 +1,20 @@
-# $NetBSD: Makefile,v 1.12 1999/02/20 22:48:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2000/04/18 04:02:20 fredb Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
-DISTNAME=	rman-3.0.8
+DISTNAME=	rman
+PKGNAME=	rman-3.0.9
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
-EXTRACT_SUFX=	.tar.Z
+MASTER_SITES=	ftp://polyglot.sourceforge.net/pub/polyglotman/ \
+		http://polyglotman.sourceforge.net/
+EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://http.cs.berkeley.edu/~phelps/tcltk/
+HOMEPAGE=	http://polyglotman.sourceforge.net/
 
-RESTRICTED=	"Permission to incorporate this software into commercial products is needed."
-NO_CDROM=	"License required"
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 post-install:
-	@strip ${PREFIX}/bin/rman
+	strip ${PREFIX}/bin/rman
 
 .include "../../mk/bsd.pkg.mk"
