@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/01/15 23:55:37 rh Exp $
+# $NetBSD: Makefile,v 1.15 2002/03/13 17:36:51 fredb Exp $
 #
 
 DISTNAME=		oaf-0.6.7
@@ -16,13 +16,10 @@ GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-REPLACE_BUILDLINK_SED=	-e "s|${BUILDLINK_DIR}/|${LOCALBASE}/|g"
-REPLACE_BUILDLINK+=	oafConf.sh
-REPLACE_BUILDLINK+=	oaf-config
-
+.include "../../devel/popt/buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
 .include "../../x11/gnome-libs/buildlink.mk"
-.include "../../devel/popt/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
