@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: authdaemond.sh,v 1.2 2002/01/27 00:04:41 jlam Exp $
+# $NetBSD: authdaemond.sh,v 1.3 2002/02/05 06:04:37 jlam Exp $
 #
 # Courier user authentication daemon
 #
@@ -48,7 +48,7 @@ courier_doit()
         stop)   echo "Stopping ${name}." ;;
         esac
 
-        @SETENV@ - ${daemon} ${action}
+        @SETENV@ -i ${daemon} ${action}
 }
 
 if [ -f /etc/rc.subr ]
