@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.711 2001/04/04 23:14:37 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.712 2001/04/07 08:05:00 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -177,7 +177,7 @@ PKG_FC?=		f2c-f77
 # /usr/bin/f77, the default will remain as f2c-f77.
 PKG_FC?=		f2c-f77
 .if  (${PKG_FC} == "f2c-f77")
-BUILD_DEPENDS+=       f2c-20001205:../../lang/f2c
+BUILD_DEPENDS+=       f2c>=20001205:../../lang/f2c
 .endif
 FC=             ${PKG_FC}
 F77=            ${PKG_FC}
