@@ -26,7 +26,7 @@ BUILDLINK_FILES.controlcenter=	include/libcapplet1/*
 BUILDLINK_FILES.controlcenter+=	lib/libcapplet.*
 
 BUILDLINK_TRANSFORM.controlcenter= \
-	-e "s|/include/libcapplet1/|/include/|g
+	-e "s|/include/libcapplet1/|/include/|g"
 REPLACE_BUILDLINK_SED+= \
 	-e "s|-I${BUILDLINK_DIR}/\(include/libcapplet1/\)|-I${BUILDLINK_PREFIX.controlcenter}/\1|g"
 BUILDLINK_CONFIG_WRAPPER_SED+=  \
