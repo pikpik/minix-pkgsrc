@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 1999/10/24 16:49:33 tron Exp $
+@comment $NetBSD: PLIST,v 1.7 1999/10/28 00:23:12 jlam Exp $
 bin/imlib_config
 bin/imlib-config
 etc/imrc
@@ -26,3 +26,6 @@ share/doc/imlib/curve2.gif
 share/doc/imlib/imlib.gif
 share/doc/imlib/index.html
 @dirrm share/doc/imlib
+@exec test %D = ${LOCALBASE} || ln -fs %D/share/aclocal/imlib.m4 ${LOCALBASE}/share/aclocal/imlib.m4
+@unexec test %D = ${LOCALBASE} || rm ${LOCALBASE}/share/aclocal/imlib.m4
+@unexec rmdir %D/share/aclocal 2>/dev/null || true
