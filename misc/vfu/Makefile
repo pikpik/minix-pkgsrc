@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/05/22 00:49:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2000/06/15 20:56:02 hubertf Exp $
 #
 
 DISTNAME=	vfu-3.01
@@ -13,6 +13,9 @@ HOMEPAGE=	http://www.biscom.net/~cade/away/vfu/
 DEPENDS=	ncurses>=5.0:../../devel/ncurses
 
 USE_PERL5=	yes
+
+post-extract:
+	${ECHO} "" >>build.netbsd
 
 do-build:
 	cd ${WRKSRC} ; \
