@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/14 19:06:03 jmmv Exp $
 #
 
-DISTNAME=	shared-mime-info-0.13
+DISTNAME=	shared-mime-info-0.14
 CATEGORIES=	databases
 MASTER_SITES=	http://freedesktop.org/Software/shared-mime-info/
 
