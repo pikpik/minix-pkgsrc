@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- etc/Makefile.in.orig	Sat Oct 11 17:09:27 2003
++++ etc/Makefile.in
+@@ -328,7 +328,8 @@ info: info-am
+ 
+ info-am:
+ 
+-install-data-am: install-desktopDATA install-iconDATA install-pixmapDATA
++#install-data-am: install-desktopDATA install-iconDATA install-pixmapDATA
++install-data-am: install-iconDATA install-pixmapDATA
+ 
+ install-exec-am:
+ 
