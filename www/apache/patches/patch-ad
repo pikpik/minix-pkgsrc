@@ -1,7 +1,7 @@
 $NetBSD$
 
---- src/ap/ap_hook.c.orig	Sat Nov 27 23:46:41 1999
-+++ src/ap/ap_hook.c	Sat Nov 27 23:46:43 1999
+--- src/ap/ap_hook.c.orig	Thu Sep  7 01:19:46 2000
++++ src/ap/ap_hook.c
 @@ -740,6 +740,15 @@
          *((int *)v_rc) = ((int(*)(void *, void *, void *, int, void *))(hf->hf_ptr))(v1, v2, v3, v4, v5);
          rc = (*((int *)v_rc) != he->he_modeval.v_int);
