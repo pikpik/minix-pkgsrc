@@ -1,8 +1,0 @@
-/* $NetBSD$ */
-
-hasxdmauth:
-#ifdef HasXdmAuth
-#if HasXdmAuth == YES
-	@echo "#define HASXDMAUTH 1"
-#endif
-#endif

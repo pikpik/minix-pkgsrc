@@ -17,7 +17,7 @@ KDEBASE2_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.kdebase2?=	kdebase>=2.2.1
+BUILDLINK_DEPENDS.kdebase2?=	kdebase-2.[1-9]*
 DEPENDS+=	${BUILDLINK_DEPENDS.kdebase2}:../../x11/kdebase2
 
 .include "../../mk/bsd.prefs.mk"
