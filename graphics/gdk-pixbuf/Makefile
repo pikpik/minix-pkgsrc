@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2001/02/16 15:22:20 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/03/04 18:27:34 tron Exp $
 #
 .include "Makefile.common"
 
-PKGNAME=	${DISTNAME}nb2
+PKGNAME=	${DISTNAME}
 
 COMMENT=	the GNOME image loading library
 
