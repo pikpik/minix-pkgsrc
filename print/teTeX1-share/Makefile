@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:24:29 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/29 09:44:48 grant Exp $
 #
 
 DISTNAME=	teTeX-texmf-1.0.2
@@ -15,7 +15,7 @@ CONFLICTS+=	teTeX2-share-[2-9]*
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	teTeX
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
