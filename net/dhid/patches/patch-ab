@@ -1,9 +1,9 @@
 $NetBSD$
 
---- dhid.h.orig	Wed Dec 15 19:59:48 1999
-+++ dhid.h	Mon Aug  7 04:15:57 2000
-@@ -73,8 +73,8 @@
- #define	OFFLINE_REQ	0x00000451
+--- dhid.h.orig	Wed Sep 12 12:32:26 2001
++++ dhid.h
+@@ -72,8 +72,8 @@
+ #define	OFFLINE_REQ	0x00000551
  
  
 -#define	DHID_CONF	"/etc/dhid.conf"
