@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.3 1999/03/07 00:41:51 kim Exp $
+# $NetBSD: Makefile,v 1.4 1999/05/03 23:39:22 tv Exp $
 
 DISTNAME=	cyrus-imapd-v1.5.14
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/
 
 MAINTAINER=	kim@tac.nyc.ny.us
+
+DEPENDS+=	tcl-8.0.5:../../lang/tcl80
 
 GNU_CONFIGURE=	yes
 
@@ -17,9 +19,10 @@ GNU_CONFIGURE=	yes
 # XXX
 # XXX + Kim
 
-CONFIGURE_ARGS+=	--with-cyrus-prefix=${PREFIX}/cyrus
+CONFIGURE_ARGS+=	--with-cyrus-prefix=${LOCALBASE}/cyrus
 CONFIGURE_ARGS+=	--with-statedir=/var/run
-CONFIGURE_ARGS+=	--with-tcl=/usr/local/tcl
+CONFIGURE_ARGS+=	--includedir=${LOCALBASE}/include/tcl8.0
+CONFIGURE_ARGS+=	--enable-netscapehack
 
 .include "../../mk/bsd.pkg.mk"
 
