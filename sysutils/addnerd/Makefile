@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/12/31 21:21:53 marc Exp $
+# $NetBSD: Makefile,v 1.10 1999/02/20 22:48:43 hubertf Exp $
 #
 
 DISTNAME=	addnerd-1.6
@@ -9,5 +9,7 @@ MAINTAINER=	agc@netbsd.org
 HOMEPAGE=	http://www.westley.demon.co.uk/software.html
 
 GNU_CONFIGURE=	yes
+
+CONFIGURE_ENV+= CHOWN="${CHOWN}"
 
 .include "../../mk/bsd.pkg.mk"
