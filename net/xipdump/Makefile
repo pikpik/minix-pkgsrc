@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/15 02:29:51 sakamoto Exp $
 #
 
-DISTNAME=	xipdump-1.5.1
+DISTNAME=	xipdump-1.5.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.epita.fr/~lse/xipdump/
 EXTRACT_SUFX=	.tgz
