@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2002/02/18 15:14:09 seb Exp $
+# $NetBSD: Makefile,v 1.8 2002/12/22 17:39:07 wiz Exp $
 #
 
-DISTNAME=		diffutils-2.7
+DISTNAME=		diffutils-2.8.1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=diffutils/}
 
