@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/30 22:29:31 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/04 13:21:15 wulf Exp $
 #
 
 DISTNAME=	cppunit-1.10.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cppunit/}
 
