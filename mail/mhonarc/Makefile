@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/08/20 15:17:10 tsarna Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/03 01:49:03 jwise Exp $
 #
 
 DISTNAME=	MHonArc2.4.7
@@ -7,7 +7,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/tar/ \
 		ftp://hhobel.phl.univie.ac.at/MHonArc/
 
-MAINTAINER=	tv@netbsd.org
+MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.oac.uci.edu/indiv/ehood/mhonarc.html
 
 USE_PERL5=	YES
