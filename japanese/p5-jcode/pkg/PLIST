@@ -1,1 +1,2 @@
-lib/perl/jcode.pl
+@comment $NetBSD$
+lib/perl5/site_perl/jcode.pl
