@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 1999/10/16 00:10:08 mjl Exp $
+# $NetBSD: Makefile,v 1.9 2000/01/01 18:24:30 mjl Exp $
 #
 
-DISTNAME=		slrn-0.9.6.2
+DISTNAME=		slrn-0.9.6.3
 CATEGORIES=		news
 MASTER_SITES=		ftp://space.mit.edu/pub/davis/slrn/ \
 			ftp://ftp.uni-stuttgart.de/pub/unix/misc/slang/slrn/
