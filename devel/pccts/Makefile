@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 14:38:56 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/20 11:40:09 wiz Exp $
 #
 
 DISTNAME=	pccts133mr22
@@ -13,7 +13,6 @@ COMMENT=	Purdue Compiler Construction Tool Set
 
 DIST_SUBDIR=	${PKGNAME}
 
-EXTRACT_CMD=    unzip -qo ${DOWNLOADED_DISTFILE}
 WRKSRC=		${WRKDIR}/pccts
 MAKEFILE=	makefile
 ALL_TARGET=

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:42:15 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/05/08 16:15:56 agc Exp $
 #
 
 DISTNAME=		memconf
@@ -15,7 +15,6 @@ ONLY_FOR_PLATFORM=	SunOS-*-* 	# only for Solaris
 
 WRKSRC=			${WRKDIR}
 
-EXTRACT_CMD=		${GZCAT} ${DOWNLOADED_DISTFILE} > ${WRKSRC}/memconf
 NO_BUILD=		yes
 
 do-install:
