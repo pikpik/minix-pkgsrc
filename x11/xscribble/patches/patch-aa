@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- lirec/li_recognizer.c-	Thu Nov  2 04:17:33 2000
++++ lirec/li_recognizer.c	Thu Nov  2 04:17:46 2000
+@@ -925,3 +925,4 @@
+ /*#include <assert.h>*/
+-#include <values.h>
++#include <sys/param.h>
++#define MAXINT	INT_MAX
+ #include <sys/time.h>
