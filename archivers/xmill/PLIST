@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/xmill
+bin/xdemill
+bin/xbmill
+bin/xbdemill
+share/doc/xmill/COPYRIGHT.txt
+share/doc/xmill/LICENSE.txt
+share/doc/xmill/MANUAL.txt
+share/doc/xmill/README.txt
+share/doc/xmill/xmill.ps.gz
+@dirrm share/doc/xmill
