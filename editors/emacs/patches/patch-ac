@@ -1,9 +1,0 @@
-$NetBSD$
-
---- /dev/null	Fri Aug 28 10:35:45 1998
-+++ lisp/site-load.el	Fri Aug 28 12:51:28 1998
-@@ -0,0 +1,4 @@
-+;; MH files from nmh package are at an unexpected location.
-+
-+(setq mh-progs "/usr/pkg/bin")
-+(setq mh-lib "/usr/pkg/libexec/nmh")
