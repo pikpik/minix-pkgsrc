@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/23 13:08:52 markd Exp $
 
 DISTNAME=		mimedefang-2.21
 CATEGORIES=		mail
@@ -14,7 +14,7 @@ DEPENDS+=		p5-HTML-Tagset>=3.03:../../www/p5-HTML-Tagset
 DEPENDS+=		p5-IO-stringy>=2.108:../../devel/p5-IO-stringy
 DEPENDS+=		p5-MailTools>=1.44:../../mail/p5-MailTools
 DEPENDS+=		p5-MIME-Base64>=2.11:../../converters/p5-MIME-Base64
-DEPENDS+=		p5-MIME-tools>=5.411a:../../mail/p5-MIME-tools
+DEPENDS+=		p5-MIME-tools>=5.411.1:../../mail/p5-MIME-tools
 DEPENDS+=		spamassassin>=2.31:../../mail/spamassassin
 
 USE_BUILDLINK2=		YES
