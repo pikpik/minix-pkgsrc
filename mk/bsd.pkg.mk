@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.723 2001/04/19 19:11:59 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.724 2001/04/21 12:40:58 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -2531,7 +2531,7 @@ makepatchsum mps: uptodate-digest
 			if [ "X$$sumfile" = "Xpatch-*" ]; then break; fi; \
 			case $$sumfile in				\
 				patch-local-*) ;;			\
-				*.orig) continue ;;			\
+				*.orig|*.rej|*~) continue ;;		\
 				*)	${ECHO} "${DIGEST_ALGORITHM} ($$sumfile) = `${SED} -e '/\$$NetBSD.*/d' $$sumfile | ${DIGEST} ${DIGEST_ALGORITHM}`" >> $$newfile;; \
 			esac;						\
 		done);							\
