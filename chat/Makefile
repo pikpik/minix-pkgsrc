@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2004/11/30 08:21:37 uebayasi Exp $
+# $NetBSD: Makefile,v 1.102 2004/12/03 17:31:52 minskim Exp $
 #
 
 COMMENT=	Communication programs
@@ -47,7 +47,6 @@ SUBDIR+=	jabberd
 SUBDIR+=	jabberd2
 SUBDIR+=	kadu
 SUBDIR+=	kmess
-SUBDIR+=	kyim
 SUBDIR+=	libirc
 SUBDIR+=	libtlen
 SUBDIR+=	libyahoo

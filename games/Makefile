@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.235 2004/12/26 18:54:14 wiz Exp $
+# $NetBSD: Makefile,v 1.236 2005/01/03 14:27:55 wiz Exp $
 #
 
 COMMENT=	Games
@@ -110,9 +110,7 @@ SUBDIR+=	imaze
 SUBDIR+=	ivan
 SUBDIR+=	jetpack
 SUBDIR+=	kapooka
-SUBDIR+=	kdegames2
 SUBDIR+=	kdegames3
-SUBDIR+=	kdetoys2
 SUBDIR+=	kdetoys3
 SUBDIR+=	ketm
 SUBDIR+=	knightcap
