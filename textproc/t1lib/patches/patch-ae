@@ -1,0 +1,12 @@
+$NetBSD$
+--- lib/t1lib/Makefile.in.orig	Wed Nov  4 16:23:04 1998
++++ lib/t1lib/Makefile.in	Wed Nov  4 16:23:24 1998
+@@ -14,7 +14,7 @@
+ #
+ # Modified by H.Kakugawa to use libtool
+ 
+-LIBTOOL   = ../../libtool
++LIBTOOL   = @LIBTOOL@
+ SHELL     = /bin/sh
+ CC        = @CC@
+ CPP       = @CPP@
