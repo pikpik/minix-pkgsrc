@@ -102,7 +102,7 @@ _GCC_VERSION_REQD=	gcc>=${GCC_REQD}
 GCC_REQD=		2.95.3
 _NEED_PKGSRC_GCC=	YES
 .    else
-_GCC_IN_USE=		gcc-${_CC_VERSION:S/-//g}
+_GCC_IN_USE=		gcc-${_CC_VERSION}
 _NEED_PKGSRC_GCC!=	\
 	if ${PKG_ADMIN} pmatch '${_GCC_VERSION_REQD}' ${_GCC_IN_USE}; then \
 		${ECHO} "NO"; \
