@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# $NetBSD$
-#
-# untrue $1: convert /bin/true -> true
-# also mask CFLAGS
-mv -f $1 $1.true
-sed -e 's./bin/true.true.;s.^CFLAGS.#CFLAGS.' $1.true > $1
