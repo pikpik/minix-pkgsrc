@@ -1,3 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2000/10/23 17:32:08 jlam Exp $
+bin/bdftopcf
+bin/fstobdf
+bin/mkfontdir
 bin/pkgxmkmf
 lib/X11/config/xpkgwedge.def
