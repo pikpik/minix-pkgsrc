@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/06/17 17:07:13 bouyer Exp $
+# $NetBSD: Makefile,v 1.11 1998/06/22 12:58:34 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/10/23 15:17:43 max Exp
 #
 
@@ -14,7 +14,10 @@ STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/samba.sh.sample
 SAMPLE_CONFIG=	${PREFIX}/etc/smb.conf.sample
 SAMBA_SPOOL=	/var/spool/samba
 SAMBA_LOGDIR=	/var/log
-SAMBA_PRIVATE=	${PREFIX}/private
+SAMBA_ETCDIR?=	/etc/samba
+SAMBA_PRIVATE?=	${SAMBA_ETCDIR}/private
+
+MAKE_ENV+=	ETCDIR=${SAMBA_ETCDIR} PRIVDIR=${SAMBA_PRIVATE}
 
 .include "../../mk/bsd.prefs.mk"
 
