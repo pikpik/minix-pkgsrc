@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: oss.sh,v 1.2 2002/10/02 20:46:46 jlam Exp $
+# $NetBSD: oss.sh,v 1.3 2002/10/02 21:06:55 jlam Exp $
 #
 # PROVIDE: oss
 # REQUIRE: aftermountlkm
@@ -32,7 +32,7 @@ oss_start()
 
 oss_stop()
 {
-        if modstat -n oss >/dev/null; then
+        if @MODSTAT@ -n oss >/dev/null; then
 		if [ -x @PREFIX@/sbin/soundoff ]; then
 			@ECHO@ "Stopping ${name}."
 			@PREFIX@/sbin/soundoff
