@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/22 09:03:07 agc Exp $
+# $NetBSD: Makefile,v 1.10 1998/08/20 15:16:42 tsarna Exp $
 # $FreeBSD Id: Makefile,v 1.17 1997/11/26 23:16:51 jseger Exp
 #
 
@@ -24,6 +24,5 @@ MANCOMPRESSED=	yes
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/kermit
 	${INSTALL_DATA} ${FILESDIR}/dot.kermrc ${PREFIX}/share/examples/kermit
-	@${CAT} ${PKGDIR}/DESCR
 
 .include "../../mk/bsd.pkg.mk"
