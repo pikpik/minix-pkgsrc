@@ -1,4 +1,4 @@
-/*	$NetBSD: nbcompat.h,v 1.21 2003/09/14 05:35:57 grant Exp $	*/
+/*	$NetBSD: nbcompat.h,v 1.23 2003/09/14 14:24:12 grant Exp $	*/
 
 /*-
  * Copyright (c) 2003 The NetBSD Foundation, Inc.
@@ -322,6 +322,12 @@ void	 tputs(const char *, int, int (*)(int));
 
 #if HAVE_LIBUTIL_H
 # include <libutil.h>
+#endif
+
+#if HAVE_NBCOMPAT_MD5INIT
+# if HAVE_MD5_H
+#  undef HAVE_MD5_H
+# endif
 #endif
 
 #if HAVE_MD5_H
