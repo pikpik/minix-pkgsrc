@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/12/06 15:56:00 taya Exp $
+# $NetBSD: Makefile,v 1.21 2001/12/28 04:41:37 taya Exp $
 
 DISTNAME=	galeon-1.0.2
 CATEGORIES=	www
@@ -34,7 +34,11 @@ CONFIGURE_ARGS+= --with-mozilla-includes=${PREFIX}/include/mozilla \
 
 MOZ_LIBDIR=     ${PREFIX}/lib/mozilla
 LDFLAGS+=       -Wl,-R${MOZ_LIBDIR}
+.if(${OBJECT_FMT} == ELF)
 LDFLAGS+=	-export-dynamic
+.else
+LIBS+=		-lstdc++
+.endif
 
 #.if (${OPSYS} == NetBSD)
 #post-configure:
