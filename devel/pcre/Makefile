@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/12/30 18:08:01 cjep Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 21:33:02 grant Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/07/12 22:59:19 steve Exp $
 
 DISTNAME=	pcre-3.9
@@ -17,5 +17,7 @@ GNU_CONFIGURE=		yes
 
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
+TEST_TARGET=		test
 
 .include "../../mk/bsd.pkg.mk"
