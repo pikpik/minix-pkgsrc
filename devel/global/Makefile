@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1999/01/09 04:17:00 abs Exp $
+# $NetBSD: Makefile,v 1.2 1999/01/14 23:29:19 abs Exp $
 #
 
 DISTNAME=	global-3.42
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=   http://wafu.netgate.net/tama/unix/
 
 MAINTAINER=	abs@netbsd.org
-HOMEPAGE=	http://wafu.netgate.net/tama/unix/global.html
+HOMEPAGE=	http://www.tamacom.com/global/
 
 PERL5=		yes
 
