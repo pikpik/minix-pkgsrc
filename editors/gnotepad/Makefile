@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/09/10 16:06:40 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2002/09/22 00:03:03 jlam Exp $
 
 DISTNAME=	gnotepad+-1.3.3
 PKGNAME=	${DISTNAME:S/+//}
@@ -13,6 +13,7 @@ COMMENT=	easy-to-use, yet fairly feature-rich, simple HTML and text editor for X
 BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
