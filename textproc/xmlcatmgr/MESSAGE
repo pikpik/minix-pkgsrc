@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+The default catalog is ${PREFIX}/share/xml/catalog.  If you will be
+using xmlcatmgr to manage catalogs from inside other packages, please do
+not manually specify it.
+
+===========================================================================
