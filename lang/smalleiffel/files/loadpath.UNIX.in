@@ -1,0 +1,5 @@
+-- $NetBSD$
+--
+@@SE_LIB@@/lib_std/
+@@SE_LIB@@/lib_rand/
+@@SE_LIB@@/lib_se/
