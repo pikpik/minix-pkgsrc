@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/06 13:51:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/16 13:42:13 jmmv Exp $
 #
 
 GST_PLUGINS_NAME=	theora
 GST_PLUGINS_DIR=	ext/theora
-
-PKGREVISION=		1
 
 .include "../../multimedia/gst-plugins/Makefile.common"
 
