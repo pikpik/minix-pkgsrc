@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/11/30 23:32:22 salo Exp $
+# $NetBSD: Makefile,v 1.11 2002/12/26 15:14:41 shell Exp $
 
 DISTNAME=	nano-1.0.9
 CATEGORIES=	editors
@@ -12,7 +12,9 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	nano.info
+
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
