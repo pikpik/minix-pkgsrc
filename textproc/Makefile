@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2001/01/13 16:49:58 skrll Exp $
+# $NetBSD: Makefile,v 1.68 2001/01/15 12:44:49 skrll Exp $
 #
 
     SUBDIR += antiword
@@ -39,6 +39,7 @@
     SUBDIR += par
     SUBDIR += py-dtml
     SUBDIR += rman
+    SUBDIR += rtfm
     SUBDIR += sp
     SUBDIR += t1lib
     SUBDIR += t1utils
