@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/26 02:27:38 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/05/09 20:19:44 snj Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -36,7 +36,7 @@ NO_SRC_ON_FTP=  	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=  	${RESTRICTED}
 
-ONLY_FOR_PLATFORM=	NetBSD-1.[6-9]*-* NetBSD-[2-9]*-* Linux-*-* SunOS-*-*
+ONLY_FOR_PLATFORM=	NetBSD-1.6*-* NetBSD-[2-9]*-* Linux-*-* SunOS-*-*
 
 .include "../../mk/bsd.prefs.mk"
 
