@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/07 05:09:18 rh Exp $
+$NetBSD$
 
-MD5 (glibwww-0.2.tar.gz) = 3f20f0e7b01acb8dc81502e088cd9389
+SHA1 (glibwww-0.2.tar.gz) = ce1d8d3bd8720ace668058114e5192d3d4fd4571
+Size (glibwww-0.2.tar.gz) = 162157 bytes

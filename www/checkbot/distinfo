@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2001/02/15 11:32:00 abs Exp $
+$NetBSD$
 
-MD5 (checkbot-1.63.tar.gz) = 0f6debb01e7fd8ded7faab19aede4516
+SHA1 (checkbot-1.63.tar.gz) = c43a1b29031cfe0036d7ab0f6cb760335adf4355
+Size (checkbot-1.63.tar.gz) = 25734 bytes

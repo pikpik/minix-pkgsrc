@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1998/12/05 03:48:46 tv Exp $
+$NetBSD$
 
-MD5 (Apache-ASP-0.05.tar.gz) = b2801e8d598b4875512b9cf37e7127df
+SHA1 (Apache-ASP-0.05.tar.gz) = e50a167122c36307fd604382ed8672c90119b575
+Size (Apache-ASP-0.05.tar.gz) = 45010 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 2000/12/04 01:52:54 tv Exp $
+$NetBSD$
 
-MD5 (HTML-Tagset-3.03.tar.gz) = 47c56ab15771fac1a6fdfcbf8bff4288
+SHA1 (HTML-Tagset-3.03.tar.gz) = 7ad256ec5f1ec46824044e01a05062b8b328d321
+Size (HTML-Tagset-3.03.tar.gz) = 6642 bytes

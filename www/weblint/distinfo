@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:27:42 agc Exp $
+$NetBSD$
 
-MD5 (weblint-1.020.tar.gz) = 032d12e353397e7675b1a739b0e7bc0a
+SHA1 (weblint-1.020.tar.gz) = 445cc723ff2a25095c48aa52bd3f082fef22ba0c
+Size (weblint-1.020.tar.gz) = 41264 bytes
 SHA1 (patch-aa) = d21483dab233a9d2c4fe032dcabc705cf767a41c

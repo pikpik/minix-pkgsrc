@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 2000/12/27 23:04:28 jwise Exp $
+$NetBSD$
 
-MD5 (mod_dtcl-0.8.12.tar.gz) = ee71c3a6e2b60554fb22b988ab2a5cc1
+SHA1 (mod_dtcl-0.8.12.tar.gz) = 628ece104afdcf539c4500cb3ef57c2f3e4c6736
+Size (mod_dtcl-0.8.12.tar.gz) = 59064 bytes

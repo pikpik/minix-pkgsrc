@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/02/02 16:41:52 jlam Exp $
+$NetBSD$
 
-MD5 (mod_perl-1.25.tar.gz) = c6a29600f54c62cb9b8a96eaf2be023a
+SHA1 (mod_perl-1.25.tar.gz) = a3ad57bbf1143cdda4b80754ce8f34913f5df053
+Size (mod_perl-1.25.tar.gz) = 366834 bytes
 SHA1 (patch-aa) = 35bee82048acc1e7e3bab417afa1042c84dfbda0

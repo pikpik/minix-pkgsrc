@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/06 22:05:56 jtb Exp $
+$NetBSD$
 
-MD5 (haskell-cgi-20001206.tar.gz) = dcd6d988b4fc30196a1e2e2d500c6da7
+SHA1 (haskell-cgi-20001206.tar.gz) = b840b7a930be4a38efbcd9b7b68fdc2337407ddb
+Size (haskell-cgi-20001206.tar.gz) = 9338 bytes

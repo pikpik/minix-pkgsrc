@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/02/02 17:52:26 jlam Exp $
+$NetBSD$
 
-MD5 (CGI.pm-2.75.tar.gz) = 334eacf7fb74f11bfa99eb7d9c5dfb5a
+SHA1 (CGI.pm-2.75.tar.gz) = 301674b27bf0fa31561fac5c5f6c0ad7b1aee9fa
+Size (CGI.pm-2.75.tar.gz) = 171159 bytes
 SHA1 (patch-aa) = 677871ee0f5ff3283316cceeacee8a3d197a2cd6

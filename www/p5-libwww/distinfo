@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.6 2001/02/15 11:28:51 abs Exp $
+$NetBSD$
 
-MD5 (libwww-perl-5.50.tar.gz) = 9ae366ecbce3eafb888b99444a9ad670
+SHA1 (libwww-perl-5.50.tar.gz) = 3980ff3bec6cbd162cf3a19f425fbfef0948904a
+Size (libwww-perl-5.50.tar.gz) = 152710 bytes

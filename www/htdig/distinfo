@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.4 2000/02/29 23:31:33 hubertf Exp $
+$NetBSD$
 
-MD5 (htdig-3.1.5.tar.gz) = cbf4a0f2b703d9822db555a14dc96ed3
+SHA1 (htdig-3.1.5.tar.gz) = 44f3a8ec59d9eb8c2e9b9ebd551dbdfe7c34081f
+Size (htdig-3.1.5.tar.gz) = 1960580 bytes
 SHA1 (patch-aa) = ff2c8933c3068db9f09f3df972cb54ba8db2b9d6
 SHA1 (patch-ab) = e441ae14f7b44904503c6497f611565351480833
 SHA1 (patch-ac) = d1f6ef3c4c7a2995217f391a4bf9d544e10f5a00

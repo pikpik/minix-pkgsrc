@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/04 01:58:18 tv Exp $
+$NetBSD$
 
-MD5 (HTML-Tree-3.08.tar.gz) = 37b007a43ed9030098b9a2b42dd3e0c1
+SHA1 (HTML-Tree-3.08.tar.gz) = 337af4815f6bf9dada4d5ee76bbbb548c0945db4
+Size (HTML-Tree-3.08.tar.gz) = 67413 bytes

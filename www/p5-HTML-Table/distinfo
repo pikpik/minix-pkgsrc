@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 02:49:25 jlam Exp $
+$NetBSD$
 
-MD5 (HTML-Table-1.04.tar.gz) = 30f136044d102d4879bfbc5ac9809abc
+SHA1 (HTML-Table-1.04.tar.gz) = 68c64e6501eb8fe87701a1d8e91c28f3d2318e26
+Size (HTML-Table-1.04.tar.gz) = 7260 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/06/21 16:07:37 darcy Exp $
+$NetBSD$
 
-MD5 (AuthPG-1.2b2.tar.gz) = ef66c1a13a1f06039157f12a4f78cb84
+SHA1 (AuthPG-1.2b2.tar.gz) = 1e288967899ac87d68b44fddd70e8eb867c7cde8
+Size (AuthPG-1.2b2.tar.gz) = 11781 bytes

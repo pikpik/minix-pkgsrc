@@ -1,7 +1,9 @@
-$NetBSD: md5,v 1.7 2000/10/28 02:35:52 itojun Exp $
+$NetBSD$
 
-MD5 (thttpd-2.20b.tar.gz) = ab9c3c1214f599d86944d6264ec90fed
-MD5 (sitedrivenby.gif) = ad0647dceb931d02bfd046e55915f7b1
+SHA1 (thttpd-2.20b.tar.gz) = 761e3b2aa9ec070330a75fb30b9b20f8b834aca5
+Size (thttpd-2.20b.tar.gz) = 123822 bytes
+SHA1 (sitedrivenby.gif) = 7671e9a8ec2cad3961b268befd33c0920e07c658
+Size (sitedrivenby.gif) = 8519 bytes
 SHA1 (patch-aa) = e8dab4830fe993da8eb35de8250502e807b60444
 SHA1 (patch-ab) = 3766ae48fabc1980483e482157d1267971e621df
 SHA1 (patch-ac) = 7ea638e2d9b33efddd1c98d263b56887362e5cf2

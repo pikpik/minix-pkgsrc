@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/01/23 12:47:14 abs Exp $
+$NetBSD$
 
-MD5 (HTML-Template-2.2.tar.gz) = fd5791cdbe403440d6f9786c11ccc4c1
+SHA1 (HTML-Template-2.2.tar.gz) = e455c84c50151e1aee9ee5bc1a27cef83ab8f287
+Size (HTML-Template-2.2.tar.gz) = 57473 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 02:51:46 jlam Exp $
+$NetBSD$
 
-MD5 (HTML-PrettyPrinter-0.03.tar.gz) = 4d3f84ba4e35cb7fac863b828b7f2b68
+SHA1 (HTML-PrettyPrinter-0.03.tar.gz) = d02642cc30bd3ef5dd91204e55643406121d673b
+Size (HTML-PrettyPrinter-0.03.tar.gz) = 14036 bytes
