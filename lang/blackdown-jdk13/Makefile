@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2001/09/27 23:18:16 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/07/27 22:45:08 jschauma Exp $
 #
 
 BASENAME=		j2sdk
+DISTNAME=		${EXTNAME}-${MACHINE_ARCH}
 PKGNAME=		blackdown-jdk13-1
 PKGREVISION=	1
 
 DEPENDS=		blackdown-jre13>=1:../../lang/blackdown-jre13
 
-.if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "sparc"
-DISTNAME=		${EXTNAME}-${MACHINE_ARCH}
-.elif ${MACHINE_ARCH} == "powerpc"
+.if ${MACHINE_ARCH} == "powerpc"
 DISTNAME=		${EXTNAME}-ppc
 DEPENDS+=		linuxppc_lib>=2000.4.2:../../emulators/linuxppc_lib
 .endif
