@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xapply
+man/man1/xapply.1
