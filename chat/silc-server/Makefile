@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2002/02/02 10:58:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2002/03/03 23:49:49 hubertf Exp $
 
-DISTNAME=		silc-server-0.8
+DISTNAME=		silc-server-0.8.1
 CATEGORIES=		chat
 MASTER_SITES=		http://www.silcnet.org/download/server/sources/ \
 			ftp://ftp.silcnet.org/silc/server/sources/ \
@@ -55,6 +55,10 @@ CONFIGURE_ARGS+=	--with-silcd-config-file=${PKG_SYSCONFDIR}/silcd.conf
 CONFIGURE_ARGS+=	--with-silcd-pid-file=/var/run/silcd.pid
 CONFIGURE_ARGS+=	--with-logsdir=/var/log/silcd
 CONFIGURE_ARGS+=	--without-ncurses
+
+# list it into IPv6-ready packages
+BUILD_DEFS+=		USE_INET6
+CONFIGURE_ARGS+=	--enable-ipv6
 
 # If you want to debug silc-server, uncomment this
 #
