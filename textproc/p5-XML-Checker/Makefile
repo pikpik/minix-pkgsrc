@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/30 21:55:31 mjl Exp $
 
-DISTNAME=	XML-Checker-0.10
+DISTNAME=	XML-Checker-0.11
 PKGNAME=	p5-${DISTNAME}
 #SVR4_PKGNAME=	
 CATEGORIES=	textproc perl5
