@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/04/14 20:01:42 garbled Exp $
+# $NetBSD: Makefile,v 1.25 1999/07/15 15:51:42 agc Exp $
 #
 
 DISTNAME=       MesaLib-3.0
@@ -12,6 +12,8 @@ DISTFILES=	MesaLib-${MESA_VERSION}${EXTRACT_SUFX} \
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.ssec.wisc.edu/~brianp/Mesa.html
+
+CONFLICT=	Mesa-glx-*
 
 WRKSRC=         ${WRKDIR}/${PKGNAME}
 ALL_TARGET=	${LOWER_OPSYS}
