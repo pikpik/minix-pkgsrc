@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/03/18 00:37:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.25 2004/03/26 02:27:35 wiz Exp $
 
 DISTNAME=		${IRSSI_DISTNAME}
 PKGREVISION=		1
@@ -22,6 +22,9 @@ USE_PKGINSTALL=		yes
 CONFIGURE_ARGS+=	--with-terminfo \
 			--without-ncurses \
 			--sysconfdir=${PKG_SYSCONFDIR}
+
+# Avoid an ICE in gcc2 on sparc64
+CONFIGURE_ENV+=		F77=${FALSE}
 
 EGDIR=		${PREFIX}/share/examples/irssi
 CONF_FILES=	${EGDIR}/irssi.conf ${PKG_SYSCONFDIR}/irssi.conf
