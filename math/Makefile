@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2003/09/30 00:02:24 reed Exp $
+# $NetBSD: Makefile,v 1.108 2003/12/24 10:58:47 recht Exp $
 #
 
 COMMENT=	Mathematics
@@ -14,6 +14,7 @@ SUBDIR+=	blitz++
 SUBDIR+=	calc
 SUBDIR+=	capc-calc
 SUBDIR+=	cassowary
+SUBDIR+=	cln
 SUBDIR+=	dcdflib.c
 SUBDIR+=	dcdflib.f
 SUBDIR+=	dfftpack
