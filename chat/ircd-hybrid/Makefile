@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/21 21:26:51 seb Exp $
+# $NetBSD: Makefile,v 1.2 2002/05/12 10:16:45 abs Exp $
 #
 
 DISTNAME=	ircd-hybrid-6.2
@@ -12,7 +12,7 @@ COMMENT=	Irc server with many options
 
 GNU_CONFIGURE=	YES
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
@@ -182,5 +182,5 @@ post-install:
 		${INSTALL_DATA} ${WRKDIR}/ircd-hybrid-6.2/doc/$$f  ${PREFIX}/share/doc/ircd-hybrid/$$f ; \
 	done
 
-.include "../../devel/zlib/buildlink.mk"
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
