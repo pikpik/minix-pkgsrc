@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:22:52 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:07:43 agc Exp $
 #
 
-DISTNAME=	mp3asm-0.1.3
+DISTNAME=	mp3asm-0.1.3-1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3asm/}
 EXTRACT_SUFX=	.tar.bz2
