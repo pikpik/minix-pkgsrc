@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: $
 
---- config/cf/host.def.orig	Thu Jan 10 02:44:40 2002
-+++ config/cf/host.def
-@@ -1,17 +1,20 @@
+--- config/cf/host.def.orig	Mon May 19 14:04:32 2003
++++ config/cf/host.def	Mon May 19 14:06:39 2003
+@@ -1,17 +1,19 @@
  #ifdef BeforeVendorCF
  
 -#define TopLevelProject         Motif
@@ -15,7 +15,7 @@ $NetBSD$
 +#define X11ProjectRoot          $(X11BASE)
  #define VirtualBindingsPath     $(LIBDIR)/bindings
  #define ImportX11               YES
- #define USE_BYACC               YES
+-#define USE_BYACC               YES
  #define NoMessageCatalog        YES
  #define ForceNormalLib          YES
  #define HasVarDirectory         NO
