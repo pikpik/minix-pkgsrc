@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.547 2005/03/27 17:55:13 wiz Exp $
+# $NetBSD: Makefile,v 1.548 2005/03/31 21:21:45 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -266,6 +266,7 @@ SUBDIR+=	p5-Socket6
 SUBDIR+=	p5-Wais
 SUBDIR+=	p5-ispman
 SUBDIR+=	packit
+SUBDIR+=	partysip
 SUBDIR+=	pchar
 SUBDIR+=	pconsole
 SUBDIR+=	pear-Net_DIME
