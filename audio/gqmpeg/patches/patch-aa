@@ -1,10 +1,10 @@
 $NetBSD$
 
---- Makefile.in.orig	Sun Dec  3 07:35:39 2000
+--- Makefile.in.orig	Thu Jan 18 04:42:51 2001
 +++ Makefile.in
 @@ -109,11 +109,11 @@
  skindir = $(prefix)/share/gqmpeg/skins
- skin_DATA = 
+ skin_DATA = SKIN-SPECS
  
 -@HAVE_GNOME_TRUE@desktopdir = $(GNOME_DATADIR)/gnome/apps/Multimedia
 -@HAVE_GNOME_TRUE@desktop_DATA = gqmpeg.desktop
