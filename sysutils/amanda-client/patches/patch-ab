@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- client-src/Makefile.in.old	Tue Feb 23 11:09:57 1999
 +++ client-src/Makefile.in	Tue Feb 23 11:11:28 1999
 @@ -83,7 +83,7 @@

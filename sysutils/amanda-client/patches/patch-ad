@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- man/Makefile.in.old	Tue Feb 23 11:12:23 1999
 +++ man/Makefile.in	Tue Feb 23 11:12:46 1999
 @@ -158,12 +158,7 @@

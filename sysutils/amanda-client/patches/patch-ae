@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- client-src/sendbackup-gnutar.c.old	Fri Feb 26 12:02:58 1999
 +++ client-src/sendbackup-gnutar.c	Fri Feb 26 12:06:59 1999
 @@ -300,11 +300,11 @@
