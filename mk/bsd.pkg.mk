@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.847 2001/11/14 12:38:51 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.848 2001/11/14 21:04:43 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -59,9 +59,9 @@ PATCHDIR?=		${.CURDIR}/patches
 SCRIPTDIR?=		${.CURDIR}/scripts
 FILESDIR?=		${.CURDIR}/files
 .if exists(${.CURDIR}/pkg)
-PKGDIR?=               ${.CURDIR}/pkg
+PKGDIR?=		${.CURDIR}/pkg
 .else
-PKGDIR?=               ${.CURDIR}
+PKGDIR?=		${.CURDIR}
 .endif
 
 .if defined(USE_JAVA)
