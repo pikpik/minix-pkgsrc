@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.ac.orig	Tue Dec 23 20:20:58 2003
+--- configure.ac.orig	2004-07-26 14:18:06.000000000 +0200
 +++ configure.ac
-@@ -609,7 +609,7 @@ AC_CHECK_FUNCS(strerror stpcpy strsep st
+@@ -633,7 +633,7 @@ AC_CHECK_FUNCS(strerror stpcpy strsep st
  AC_CHECK_FUNCS(strcasecmp strncasecmp ctermid times)
  AC_CHECK_FUNCS(memmove gettimeofday getrusage setrlimit clock_gettime)
  AC_CHECK_FUNCS(atexit raise getpagesize strftime nl_langinfo setlocale)
