@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2000/08/16 21:23:48 tron Exp $: Makefile,v 1.30 2000/06/17 22:14:00 tsarna Exp $
+# $NetBSD: Makefile,v 1.37 2000/08/30 21:59:52 martin Exp $
 
 DISTNAME=	mozilla-source-M17
-PKGNAME=	mozilla-1.0m17
+PKGNAME=	mozilla-5.0m17
 WRKSRC=		${WRKDIR}/mozilla
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m17/src/
