@@ -4,3 +4,7 @@ SHA1 (firefox-0.8-i386-unknown-netbsdelf1.6.tar.bz2) = e93acf161226044ca2abd6897
 Size (firefox-0.8-i386-unknown-netbsdelf1.6.tar.bz2) = 8722216 bytes
 SHA1 (firefox-0.8-i686-pc-linux-gnu.tar.gz) = 4dd239f88f212958dec089c7a4c02d7dcd157caf
 Size (firefox-0.8-i686-pc-linux-gnu.tar.gz) = 9189879 bytes
+SHA1 (firefox-0.8-sparc-sun-solaris2.8.tar.gz) = aa5c708ca3e148c69f09d8d7c32f20dc36d40ea7
+Size (firefox-0.8-sparc-sun-solaris2.8.tar.gz) = 19171802 bytes
+SHA1 (firefox-0.8-i386-pc-solaris2.8.tar.gz) = a416a6e1d6d36b55ccb231f6b6d1ab2b5cad697c
+Size (firefox-0.8-i386-pc-solaris2.8.tar.gz) = 16818955 bytes
