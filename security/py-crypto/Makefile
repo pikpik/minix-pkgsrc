@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/03/08 10:53:57 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/04/17 01:41:13 tsarna Exp $
 
 DISTNAME=	pycrypt100
 PKGNAME=	py-crypto-1.0.0
@@ -40,6 +40,7 @@ do-build:
 		${WRKSRC}/Lib
 
 do-install:
+	${MKDIR} ${PREFIX}/lib/python1.5/site-packages
 	(cd ${WRKSRC}/Lib ; ${INSTALL_DATA} *.py *.pyc *.pyo \
 		${PREFIX}/lib/python1.5/site-packages)
 	(cd ${WRKSRC}/src ; ${INSTALL_DATA} *.so \
