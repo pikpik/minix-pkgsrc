@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2002/09/20 10:59:53 jlam Exp $
+# $NetBSD: Makefile,v 1.51 2002/09/20 11:16:06 jlam Exp $
 #
 
 COMMENT=	communication programs
@@ -40,6 +40,7 @@ SUBDIR+=	liece
 SUBDIR+=	lmme
 SUBDIR+=	micq
 SUBDIR+=	naim
+SUBDIR+=	navi2ch
 SUBDIR+=	p5-Net-AIM
 SUBDIR+=	p5-Net-AOLIM
 SUBDIR+=	p5-Net-Goofey
