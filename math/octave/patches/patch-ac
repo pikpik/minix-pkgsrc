@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Makeconf.in.orig	Sun Oct 18 16:04:22 1998
 +++ Makeconf.in	Sun Oct 18 16:07:37 1998
 @@ -63,7 +63,7 @@
