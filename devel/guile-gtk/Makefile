@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/01/07 11:43:12 uebayasi Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/25 12:34:41 jlam Exp $
 #
 
 DISTNAME=		guile-gtk-0.19
@@ -21,6 +21,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--datadir=${GUILE14_PREFIX}/share
 PLIST_SUBST+=		GUILE14_SUBDIR=${GUILE14_SUBDIR}
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 pre-build:
 	cd ${WRKSRC}; for file in build-guile-gtk; do			\
