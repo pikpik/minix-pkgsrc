@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/cbmconvert
+bin/disk2zip
+bin/zip2disk
+share/doc/cbmconvert/README
+share/doc/cbmconvert/README.html
+@dirrm share/doc/cbmconvert
