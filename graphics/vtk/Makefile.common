@@ -1,0 +1,7 @@
+# $NetBSD$
+
+VTK_VERSION=		4.2
+
+CATEGORIES=		graphics
+MAINTAINER=		dotz@irc.pl
+HOMEPAGE=		http://www.vtk.org/
