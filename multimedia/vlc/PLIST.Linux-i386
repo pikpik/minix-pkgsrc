@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/vlc/video_output/libfb_plugin.so
