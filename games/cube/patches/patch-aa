@@ -7,7 +7,7 @@ $NetBSD$
 -CXXOPTFLAGS=-Wall -O3 -fsigned-char -fomit-frame-pointer
 -CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include `sdl-config --cflags`
 +CXXOPTFLAGS=-Wall -O3 -fsigned-char -fomit-frame-pointer -Wno-deprecated
-+CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include `sdl-config --cflags` -I/usr/X11R6/include
++CXXFLAGS=$(CXXOPTFLAGS) -I../enet/include `sdl-config --cflags` -DHAS_SOCKLEN_T
  
  CLIENT_LIBS=-L../enet -lenet `sdl-config --libs` -lSDL_image -lSDL_mixer -lz -lGL -lGLU 
  CLIENT_OBJS= \
