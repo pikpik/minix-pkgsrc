@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2003/07/24 16:18:38 jtb Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/03 23:45:56 danw Exp $
 
-DISTNAME=	hevea-1.06
-PKGREVISION=	1
+DISTNAME=	hevea-1.07
 CATEGORIES=	textproc
 MASTER_SITES=	http://para.inria.fr/~maranget/hevea/distri/
 
@@ -9,7 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://para.inria.fr/~maranget/hevea/
 COMMENT=	LaTeX to HTML translator
 
-BUILD_DEPENDS+=	ocaml>=3.00:../../lang/ocaml
+BUILD_DEPENDS+=	ocaml>=3.07:../../lang/ocaml
 
 MAKE_ENV+=	M4="${M4}"
 
