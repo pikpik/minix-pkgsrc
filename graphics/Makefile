@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.191 2002/06/01 08:18:45 wiz Exp $
+# $NetBSD: Makefile,v 1.192 2002/06/05 08:59:32 skrll Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -111,6 +111,7 @@ SUBDIR+=	mpeg-lib
 SUBDIR+=	mpeg2codec
 SUBDIR+=	mpeg_encode
 SUBDIR+=	mpeg_play
+SUBDIR+=	mpgtx
 SUBDIR+=	mplayer
 SUBDIR+=	mplayer-share
 SUBDIR+=	mplex
