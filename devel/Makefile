@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.504 2004/06/06 21:44:51 salo Exp $
+# $NetBSD: Makefile,v 1.505 2004/06/06 23:51:36 tv Exp $
 #
 
 COMMENT=	Development utilities
@@ -123,6 +123,8 @@ SUBDIR+=	gal2
 SUBDIR+=	gconfmm
 SUBDIR+=	gcvs
 SUBDIR+=	gdb
+SUBDIR+=	gdb6
+SUBDIR+=	gdbada
 SUBDIR+=	gettext
 SUBDIR+=	gettext-lib
 SUBDIR+=	gettext-m4
@@ -202,6 +204,7 @@ SUBDIR+=	libgnomeui
 SUBDIR+=	libgphoto2
 SUBDIR+=	libgsf
 SUBDIR+=	libhfs
+SUBDIR+=	libiberty
 SUBDIR+=	libidn
 SUBDIR+=	libjit
 SUBDIR+=	libmemmgr
@@ -477,8 +480,5 @@ SUBDIR+=	xxgdb
 SUBDIR+=	yasm
 SUBDIR+=	z80-asm
 SUBDIR+=	zlib
-SUBDIR+=	gdb6
-SUBDIR+=	libiberty
-SUBDIR+=	gdbada
 
 .include "../mk/bsd.pkg.subdir.mk"
