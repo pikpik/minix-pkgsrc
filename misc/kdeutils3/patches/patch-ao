@@ -75,3 +75,11 @@ $NetBSD$
  # darwin needs this to initialize the environment
  
  for ac_header in crt_externs.h
+@@ -32333,6 +32267,7 @@ cat >>conftest.$ac_ext <<_ACEOF
+ /* end confdefs.h.  */
+ 
+ 
++#include <sys/param.h>
+ #include <sys/mount.h>
+ 
+ 
