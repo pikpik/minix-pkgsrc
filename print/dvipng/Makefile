@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/05 07:21:56 wiz Exp $
 #
 
 DISTNAME=		dvipng-0.5
@@ -11,7 +11,6 @@ COMMENT=		Convert DVI files to PNG files
 
 USE_BUILDLINK2=		yes
 USE_MAKEINFO=		yes
-USE_NEW_TEXINFO=	yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 

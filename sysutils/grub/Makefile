@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/17 22:53:36 grant Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/20 16:48:53 seb Exp $
 #
 
 DISTNAME=	grub-0.93
@@ -14,7 +14,6 @@ ONLY_FOR_PLATFORM=	*-*-i386
 
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
-USE_NEW_TEXINFO=	YES
 USE_BUILDLINK2=		YES
 
 INFO_FILES=		grub.info

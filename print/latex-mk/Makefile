@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/08/04 21:43:43 seb Exp $
+# $NetBSD: Makefile,v 1.8 2003/08/04 21:44:17 seb Exp $
 #
 
 DISTNAME=	latex-mk-1.1
@@ -11,7 +11,6 @@ COMMENT=	Makefile fragments and scripts for managing LaTeX documents
 
 GNU_CONFIGURE=	YES
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	latex-mk.info
 
 TEST_DIRS=	${WRKSRC}

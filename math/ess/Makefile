@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/31 23:41:11 seb Exp $
+# $NetBSD: Makefile,v 1.5 2003/08/08 16:55:27 seb Exp $
 
 DISTNAME=	ess-5.1.24
 CATEGORIES=	math
@@ -10,7 +10,6 @@ COMMENT=	Emacs Speaks Statistics
 
 MAKEFLAGS+=	EMACS=${EMACS_BIN}
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 
 .if defined(USE_XEMACS)

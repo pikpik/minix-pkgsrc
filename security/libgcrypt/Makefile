@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:52:57 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/08/05 10:14:22 seb Exp $
 #
 
 DISTNAME=	libgcrypt-1.1.12
@@ -16,7 +16,6 @@ GNU_CONFIGURE=	YES
 
 TEST_TARGET=	check
 
-USE_NEW_TEXINFO=	YES
 TEXINFO_REQD=		4.0
 INFO_FILES=		gcrypt.info
 

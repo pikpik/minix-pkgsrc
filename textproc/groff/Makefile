@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 22:54:16 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/31 22:02:07 seb Exp $
 #
 
 DISTNAME=	groff-1.19
@@ -17,7 +17,6 @@ GNU_CONFIGURE=		YES
 USE_GCC_SHLIB=		YES
 USE_PERL5=		YES
 USE_BUILDLINK2=		YES
-USE_NEW_TEXINFO=	YES
 
 INFO_FILES=	groff
 

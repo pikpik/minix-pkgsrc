@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/08/05 13:59:58 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/08/09 07:45:46 heinz Exp $
 
 DISTNAME=	coreutils-5.0
 PKGREVISION=	2
@@ -18,7 +18,6 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_PERL5=		build
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	coreutils.info
 
 TEST_TARGET=		check

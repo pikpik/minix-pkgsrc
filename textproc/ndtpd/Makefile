@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 22:54:31 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/08/05 22:21:56 seb Exp $
 #
 
 DISTNAME=	ndtpd-3.1.4
@@ -15,7 +15,6 @@ USE_PKGINSTALL=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	ndtpd-ja.info ndtpd.info
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
