@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2004/07/14 16:08:48 erh Exp $
+# $NetBSD: Makefile,v 1.21 2004/07/19 17:38:36 erh Exp $
 
-DISTNAME=	pkg_tarup-1.6.1
+DISTNAME=	pkg_tarup-1.6.2
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -26,7 +26,8 @@ SCRIPT_SUBST+=	\
 		PKG_TOOLS_BIN=${PKG_TOOLS_BIN:Q}	\
 		SED=${SED:Q}			\
 		SH=${SH:Q}				\
-		SU=${SU:Q}
+		SU=${SU:Q}				\
+		XARGS=${XARGS:Q}
 
 SCRIPT_SUBST_SED=	${SCRIPT_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}
 
