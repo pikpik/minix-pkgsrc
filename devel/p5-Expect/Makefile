@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/09/27 23:17:57 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/10/18 15:20:15 veego Exp $
 
 DISTNAME=	Expect-1.11
 PKGNAME=	p5-expect-1.11
@@ -12,10 +12,11 @@ COMMENT=	perl version of the TCL "expect" tool
 DEPENDS+=	p5-IO-stty-[0-9]*:../../devel/p5-IO-Stty
 DEPENDS+=	p5-IO-tty-[0-9]*:../../devel/p5-IO-Tty
 
-USE_PERL5=	# defined
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Expect/.packlist
+USE_BUILDLINK_ONLY=	YES
+PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Expect/.packlist
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
+.include "../../lang/perl5/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/03/25 04:36:21 mjl Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/18 15:20:08 veego Exp $
 #
 
 DISTNAME=	DBIx-DataSource-0.02
@@ -11,10 +11,11 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.420.am/dbix-datasource
 COMMENT=	create and drop functions for databases
 
-USE_PERL5=	# defined
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/DBIx/DataSource/.packlist
+USE_BUILDLINK_ONLY=	YES
+PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/DBIx/DataSource/.packlist
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
+.include "../../lang/perl5/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

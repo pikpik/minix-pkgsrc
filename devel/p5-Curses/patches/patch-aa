@@ -9,7 +9,7 @@ $NetBSD$
 -  'netbsd'    => [ ''                       => '-lcurses -ltermcap'        ],
 +  'netbsd'   => {
 +    'bsd'     => [ ''                       => '-lcurses -ltermcap'        ],
-+    'ncurses' => [ "-I$ENV{'LOCALBASE'}/include" => "$ENV{'LDFLAGS'} -lncurses" ],
++    'ncurses' => [ ''                       => '-lncurses'                 ],
 +    'default' =>   'ncurses'
 +  },
    'next'      => [ ''                       => '-lcurses -ltermcap'        ],

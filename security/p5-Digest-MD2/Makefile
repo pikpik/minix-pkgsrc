@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/19 03:12:30 mjl Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/18 15:20:37 veego Exp $
 #
 
 DISTNAME=		Digest-MD2-2.00
@@ -12,10 +12,11 @@ COMMENT=		perl5 module for MD2
 
 CONFLICTS+=		p5-Digest-MD5<=2.12
 
-USE_PERL5=		# defined
+USE_BUILDLINK_ONLY=	YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Digest/MD2/.packlist
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
+.include "../../lang/perl5/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/27 07:36:12 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/18 15:20:27 veego Exp $
 
 DISTNAME=		Mail-ListDetector-0.18
 PKGNAME=		p5-${DISTNAME}
@@ -14,10 +14,11 @@ DEPENDS+=		p5-Email-Valid-[0-9]*:../../mail/p5-Email-Valid
 DEPENDS+=		p5-URI-[0-9]*:../../www/p5-URI
 DEPENDS+=		p5-Test-Simple-[0-9]*:../../devel/p5-Test-Simple
 
-USE_PERL5=		# defined
+USE_BUILDLINK_ONLY=	YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Mail/ListDetector/.packlist
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
+.include "../../lang/perl5/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
