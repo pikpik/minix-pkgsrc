@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2002/01/05 21:35:39 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/01/29 19:25:53 drochner Exp $
 #
 
-DISTNAME=	grail-06
-PKGNAME=	grail-0.6
+DISTNAME=	grail-0.6
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.python.org/pub/grail/
+MASTER_SITES=	http://prdownloads.sourceforge.net/grail/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tsarna@netbsd.org
@@ -15,7 +14,6 @@ USE_X11=	yes
 NO_CONFIGURE=   yes
 NO_BUILD=       yes
 
-WRKSRC=		${WRKDIR}/grail-0.6
 GRAILDIR=	share/misc/grail-0.6
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 PYTHON_VERSIONS_ACCEPTED= 15
