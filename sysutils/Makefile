@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.241 2004/06/24 18:31:50 xtraeme Exp $
+# $NetBSD: Makefile,v 1.242 2004/06/30 17:31:33 jschauma Exp $
 
 COMMENT=	System utilities
 
@@ -69,6 +69,7 @@ SUBDIR+=	gnome-acme
 SUBDIR+=	gnome-pkgview
 SUBDIR+=	gnome-vfs
 SUBDIR+=	gnome-vfs2
+SUBDIR+=	gnome-vfsmm26
 SUBDIR+=	gnome2-system-monitor
 SUBDIR+=	gnometoaster
 SUBDIR+=	gpart
