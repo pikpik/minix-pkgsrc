@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2004/03/06 20:52:59 snj Exp $
-#
+# $NetBSD: Makefile,v 1.15 2004/04/17 20:47:57 zuntum Exp $
 
-DISTNAME=	prboom-2.2.4
-PKGREVISION=	1
+DISTNAME=	prboom-2.2.5
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=prboom/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://prboom.sourceforge.net/
 COMMENT=	Multiplayer-capable and modified version of DOOM
 
@@ -17,4 +15,5 @@ GNU_CONFIGURE=		YES
 
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../net/SDL_net/buildlink3.mk"
+
 .include "../../mk/bsd.pkg.mk"
