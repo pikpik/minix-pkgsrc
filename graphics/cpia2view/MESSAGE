@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+You should apply following kernel patch to use this package.
+
+	http://www2.starcat.ne.jp/~takam/bsd/cpia2-netbsd-sys-1.6.2.diff
+
+===========================================================================
