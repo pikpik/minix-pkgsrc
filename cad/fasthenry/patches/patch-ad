@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 1998/08/07 10:36:27 agc Exp $
 
 --- src/fasthenry/sparse/Makefile.orig	Wed May  6 23:42:03 1998
 +++ src/fasthenry/sparse/Makefile	Wed May  6 23:42:12 1998
@@ -6,6 +6,6 @@ $NetBSD$
  #  UC Berkeley
  #
 -CFLAGS = -O
-+CFLAGS = -O2 -w
++#CFLAGS = -O
  LINTFLAGS = -lc -lm
  SHELL = /bin/sh
