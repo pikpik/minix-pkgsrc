@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/audiocompose
 bin/audiosend
 bin/extcompose

@@ -3,6 +3,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
+# $NetBSD$
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:27:26 asami Exp
 #
 
