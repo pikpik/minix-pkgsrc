@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.236 2003/04/11 07:28:27 salo Exp $
+# $NetBSD: Makefile,v 1.237 2003/04/11 12:01:16 rh Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -137,6 +137,7 @@ SUBDIR+=	magicpoint
 SUBDIR+=	mencoder
 SUBDIR+=	mgl
 SUBDIR+=	mng
+SUBDIR+=	moz-bin-flash
 SUBDIR+=	moz-flash
 SUBDIR+=	mpeg-lib
 SUBDIR+=	mpeg2codec
