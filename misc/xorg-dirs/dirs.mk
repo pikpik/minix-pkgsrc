@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: dirs.mk,v 1.1.1.1 2004/07/29 07:26:03 xtraeme Exp $
 #
 
 .if !defined(DIRS_XORG_MK)
@@ -6,7 +6,6 @@ DIRS_XORG_MK=		# defined
 
 oldval:=		${XORG_ONLY_DIRS}
 XORG_ONLY_DIRS:=	YES
-.include "../../meta-pkgs/xorg/Makefile.common"
 XORG_ONLY_DIRS:=	${oldval}
 .undef oldval
 
