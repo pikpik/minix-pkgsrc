@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/19 23:13:51 xtraeme Exp $
 #
 
 DISTNAME=	pkgse-0.1
@@ -10,11 +10,15 @@ MAINTAINER=	imil@gcu.info
 HOMEPAGE=	http://imil.net/
 COMMENT=	Fetch informations about a NetBSD package on pkgsrc.netbsd.se
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 DEPENDS+=	p5-libwww>=5.76:../../www/p5-libwww
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 USE_PERL5=	yes
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/pkgse ${PREFIX}/bin
