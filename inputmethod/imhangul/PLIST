@@ -1,5 +1,4 @@
-@comment $NetBSD$
-lib/gtk-2.0/immodules/im-hangul.a
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/02/10 08:58:17 minskim Exp $
 lib/gtk-2.0/immodules/im-hangul.la
 lib/gtk-2.0/immodules/im-hangul.so
 @dirrm lib/gtk-2.0/immodules
