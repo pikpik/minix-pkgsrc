@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2004/11/26 16:23:57 cube Exp $
+# $NetBSD: Makefile,v 1.75 2004/11/30 00:27:10 xtraeme Exp $
 #
 
 DISTNAME=		sudo-1.6.8p5
@@ -27,12 +27,6 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--disable-root-mailer --disable-setreuid
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-
-.if ${OPSYS} == "NetBSD"
-CONFIGURE_ARGS+=	--with-skey
-.elif ${OPSYS} == "SunOS"
-CONFIGURE_ARGS+=	--without-skey
-.endif
 
 .include "options.mk"
 
