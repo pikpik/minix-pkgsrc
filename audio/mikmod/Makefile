@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.25 2001/06/19 16:04:18 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2001/06/29 04:54:50 jlam Exp $
 #
 
 DISTNAME=	mikmod-3.1.6-a
 PKGNAME=	mikmod-3.1.6a
 CATEGORIES=	audio
-MASTER_SITES=	http://mikmod.darkorb.net/mikmod/
+MASTER_SITES=	http://www.mikmod.org/files/mikmod/
 
 MAINTAINER=	mycroft@NetBSD.ORG
-HOMEPAGE=	http://mikmod.darkorb.net/
+HOMEPAGE=	http://www.mikmod.org/
 COMMENT=	MOD player for UNI IT XM S3M MOD MTM STM DSM MED FAR ULT 669 files
 
 USE_GMAKE=		yes
