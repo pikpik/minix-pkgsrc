@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.112 2004/07/29 23:20:44 wiz Exp $
+# $NetBSD: Makefile,v 1.113 2004/07/31 11:50:18 jdolecek Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -62,7 +62,6 @@ SUBDIR+=	simh
 SUBDIR+=	snes9x
 SUBDIR+=	spim
 SUBDIR+=	stella
-SUBDIR+=	stella-sdl
 SUBDIR+=	suse64_audio
 SUBDIR+=	suse64_base
 SUBDIR+=	suse64_compat
