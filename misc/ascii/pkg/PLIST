@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/ascii
+man/man1/ascii.1
+share/examples/ascii/ascii.cgi
+@dirrm share/examples/ascii
