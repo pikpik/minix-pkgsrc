@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/makecpt.c.orig	Tue Oct 24 17:24:39 2000
+--- src/makecpt.c.orig	Thu Apr 19 18:02:08 2001
 +++ src/makecpt.c
 @@ -48,7 +48,7 @@
  
