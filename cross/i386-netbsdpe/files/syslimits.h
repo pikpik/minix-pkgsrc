@@ -1,4 +1,5 @@
-/*	$NetBSD: syslimits.h,v 1.18 1999/09/27 16:24:40 kleink Exp $	*/
+/*	$NetBSD$	*/
+/*	from: NetBSD: syslimits.h,v 1.18 1999/09/27 16:24:40 kleink Exp	*/
 
 /*
  * Copyright (c) 1988, 1993
