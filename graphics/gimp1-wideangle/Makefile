@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 22:08:14 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/03/29 22:22:54 xtraeme Exp $
 #
 
 DISTNAME=	wideangleFeb03
@@ -13,11 +13,11 @@ HOMEPAGE=	http://www.ozemail.com.au/~hodsond/
 COMMENT=	GIMP plugin for wideangle lens distortions
 
 WRKSRC=		${WRKDIR}/wideangle
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
 ALL_TARGET=	wideangle
 
-.include "../../graphics/gimp1-base/buildlink2.mk"
+.include "../../graphics/gimp1-base/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
