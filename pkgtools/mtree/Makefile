@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/31 09:30:27 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/09/05 03:58:21 reed Exp $
 #
 
-DISTNAME=		mtree-20030731
+DISTNAME=		mtree-20030905
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -25,3 +25,10 @@ do-extract:
 
 .include "../../pkgtools/libnbcompat/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
+
+PREFIX:=		${PKG_TOOLS_BIN:C|/[^/]?bin$||}
+.if ${PREFIX} == "/usr"
+CONFIGURE_ARGS+=	--mandir=${PREFIX}/share/man
+.else
+CONFIGURE_ARGS+=	--mandir=${PREFIX}/man
+.endif
