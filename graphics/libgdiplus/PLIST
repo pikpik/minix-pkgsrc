@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libgdiplus.a
+lib/libgdiplus.la
+lib/libgdiplus.so
+lib/libgdiplus.so.0
+lib/libgdiplus.so.0.0
+lib/pkgconfig/libgdiplus.pc
