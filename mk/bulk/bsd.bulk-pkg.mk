@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.26 2001/05/09 02:39:31 dmcmahill Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.27 2001/05/09 02:54:38 hubertf Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@netbsd.org>
@@ -182,6 +182,10 @@ bulk-package:
 			${ECHO_MSG} "BULK> Removing outdated (installed) package ${PKGNAME} first." ; \
 			${ECHO_MSG} ${MAKE} deinstall ; \
 			${DO}       ${MAKE} deinstall ; \
+			if ${PKG_INFO} -qe ${PKGWILDCARD} ; then \
+				${ECHO_MSG} ${PKG_DELETE} -r ${PKGWILDCARD} ;\
+				${DO} ${PKG_DELETE} -r ${PKGWILDCARD} ;\
+			fi ;\
 		fi ; \
 		if [ -f ${PKGFILE} ]; then \
 			${ECHO_MSG} "BULK> Removing old binary package..." ; \
