@@ -1,9 +1,9 @@
-$NetBSD: patch-ai,v 1.4 2000/04/09 08:10:20 simonb Exp $
+$NetBSD: patch-ai,v 1.5 2000/04/10 00:19:17 bad Exp $
 
 --- global/Makefile.orig	Sun May 30 18:49:13 1999
 +++ global/Makefile	Sun May 30 18:49:13 1999
 @@ -0,0 +1,35 @@
-+#	$NetBSD: patch-ai,v 1.4 2000/04/09 08:10:20 simonb Exp $
++#	$NetBSD: patch-ai,v 1.5 2000/04/10 00:19:17 bad Exp $
 +
 +LIB	= global
 +
@@ -25,7 +25,7 @@ $NetBSD: patch-ai,v 1.4 2000/04/09 08:10:20 simonb Exp $
 +	recipient_list.c record.c remove.c resolve_clnt.c resolve_local.c \
 +	rewrite_clnt.c sent.c smtp_stream.c split_addr.c string_list.c \
 +	sys_exits.c timed_ipc.c tok822_find.c tok822_node.c tok822_parse.c \
-+	tok822_resolve.c tok822_rewrite.c tok822_tree.c
++	tok822_resolve.c tok822_rewrite.c tok822_tree.c abounce.c
 +
 +MKLINT=		no
 +MKPIC=		no
