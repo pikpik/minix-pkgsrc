@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/15 10:12:41 skrll Exp $
+@comment $NetBSD: PLIST,v 1.3 2002/12/09 16:01:25 tron Exp $
 bin/quake3arena-demo
 lib/lokigames/quake3arena-demo/demoq3/pak0.pk3
-lib/lokigames/quake3arena-demo/q3ded
 lib/lokigames/quake3arena-demo/quake3arena-demo
 lib/lokigames/quake3arena-demo/icon.bmp
 lib/lokigames/quake3arena-demo/icon.xpm
