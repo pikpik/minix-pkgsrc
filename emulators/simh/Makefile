@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/09/09 20:36:22 agc Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/20 23:58:14 soren Exp $
 #
 
-DISTNAME=	simhv29-11
-PKGNAME=	simh-2.9.11
+DISTNAME=	simhv210-0b2
+PKGNAME=	simh-2.10.0b2
 CATEGORIES=	emulators
 MASTER_SITES=	http://simh.trailing-edge.com/sources/
 EXTRACT_SUFX=	.zip
@@ -14,10 +14,11 @@ COMMENT=	Bob Supnik's historical computer simulator
 
 WRKSRC=		${WRKDIR}
 
-pre-build:
+post-extract:
 	${MKDIR} ${WRKSRC}/BIN
-	-${MV} ${WRKSRC}/AltairZ80/altairz80_defs.h \
-		${WRKSRC}/AltairZ80/altairZ80_defs.h
+	${MV} ${WRKSRC}/makefile ${WRKSRC}/Makefile
+	${MV} ${WRKSRC}/AltairZ80/altairZ80_defs.h \
+	    ${WRKSRC}/AltairZ80/altairz80_defs.h
 
 do-install:
 	(cd ${WRKSRC}/BIN && for BIN in *; do				\
