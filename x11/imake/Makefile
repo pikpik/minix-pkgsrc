@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/31 14:38:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/02 14:14:45 xtraeme Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	imake-${XF_VER}
@@ -11,9 +11,9 @@ MAINTAINER=	xfree86@blef.org
 HOMEPAGE=	http://www.xfree86.org/
 COMMENT=	Imake and other utilities from XFree86
 
-USE_BUILDLINK2=	YES
-INSTALL_TARGET=	install install.man
+INSTALL_TARGET=		install install.man
 
+NO_BUILDLINK=		# defined
 NO_XFREE86_TARGETS=	# defined
 
 .include "../../mk/bsd.prefs.mk"
