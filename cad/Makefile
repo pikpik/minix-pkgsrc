@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/03/13 12:43:27 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.40 2002/04/06 21:39:34 dmcmahill Exp $
 #
 
 COMMENT=	CAD tools
@@ -39,6 +39,7 @@ SUBDIR+=	spice
 SUBDIR+=	spiceprm
 SUBDIR+=	verilog
 SUBDIR+=	verilog-current
+SUBDIR+=	verilog-mode
 SUBDIR+=	vipec
 SUBDIR+=	xchiplogo
 SUBDIR+=	xcircuit
