@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/23 14:01:30 rh Exp $
 #
 
-DISTNAME=	tnef-0.14.1
+DISTNAME=	tnef-0.15
 CATEGORIES=	mail
 MASTER_SITES=	http://world.std.com/~damned/
 
