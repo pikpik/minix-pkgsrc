@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/08/26 17:15:05 veego Exp $
+# $NetBSD: Makefile,v 1.10 2000/08/31 18:02:22 skrll Exp $
 #
 
 DISTNAME=		nocol-4.3.1
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.netplex-tech.com/software/nocol/
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
-CONFIGURE_ARGS+=	< ${FILESDIR}/answers
+CONFIGURE_ARGS+=	< ${WRKSRC}/answers
 
 USE_PERL5=		yes
 USE_LIBTOOL=		yes
