@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/04/01 11:06:30 zuntum Exp $
+# $NetBSD: Makefile,v 1.5 2002/04/20 14:41:05 cjep Exp $
 
 DISTNAME=	RasMol_2.7.1
 PKGNAME=	rasmol-2.7.1
@@ -29,7 +29,6 @@ DEPTHDEF=	-DSIXTEENBIT
 .endif
 .endif
 DEPTHDEF?=	-DEIGHTBIT
-
 
 post-patch:
 	${LN} -sf ${WRKDIR}/${DISTNAME}/doc  ${WRKSRC}
