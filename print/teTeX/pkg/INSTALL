@@ -1,6 +1,6 @@
-#! /bin/sh
+#!/bin/sh
 #
-# $NetBSD: INSTALL,v 1.3 1999/08/17 23:33:49 tron Exp $
+# $NetBSD: INSTALL,v 1.3 1999/08/18 07:47:37 tron Exp $
 #
 
 case $2 in
