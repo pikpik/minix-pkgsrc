@@ -3,18 +3,20 @@
 .if !defined(AIKSAURUS_BUILDLINK2_MK)
 AIKSAURUS_BUILDLINK2_MK=	# defined
 
-BUILDLINK_PACKAGES+=			Aiksaurus
-BUILDLINK_DEPENDS.Aiksaurus?=		Aiksaurus>=0.15
-BUILDLINK_PKGSRCDIR.Aiksaurus?=		../../textproc/aiksaurus
+BUILDLINK_PACKAGES+=			aiksaurus
+BUILDLINK_DEPENDS.aiksaurus?=		aiksaurus>=1.0.1
+BUILDLINK_PKGSRCDIR.aiksaurus?=		../../textproc/aiksaurus
 
-EVAL_PREFIX+=	BUILDLINK_PREFIX.Aiksaurus=Aiksaurus
-BUILDLINK_PREFIX.Aiksaurus_DEFAULT=	${LOCALBASE}
-BUILDLINK_FILES.Aiksaurus+=	include/Aiksaurus.h
-BUILDLINK_FILES.Aiksaurus+=	include/AiksaurusC.h
-BUILDLINK_FILES.Aiksaurus+=	lib/libAiksaurus.*
+EVAL_PREFIX+=	BUILDLINK_PREFIX.aiksaurus=aiksaurus
+BUILDLINK_PREFIX.aiksaurus_DEFAULT=	${LOCALBASE}
+BUILDLINK_FILES.aiksaurus+=	include/Aiksaurus/Aiksaurus.h
+BUILDLINK_FILES.aiksaurus+=	include/Aiksaurus/AiksaurusC.h
+BUILDLINK_FILES.aiksaurus+=	lib/libAiksaurus-1.0.*
+BUILDLINK_FILES.aiksaurus+=	lib/libAiksaurus.*
+BUILDLINK_FILES.aiksaurus+=	lib/pkgconfig/aiksaurus-1.0.pc
 
-BUILDLINK_TARGETS+=	Aiksaurus-buildlink
+BUILDLINK_TARGETS+=	aiksaurus-buildlink
 
-Aiksaurus-buildlink: _BUILDLINK_USE
+aiksaurus-buildlink: _BUILDLINK_USE
 
 .endif	# AIKSAURUS_BUILDLINK2_MK
