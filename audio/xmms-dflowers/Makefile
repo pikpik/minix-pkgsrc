@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/08/16 04:30:11 zuntum Exp $
+# $NetBSD: Makefile,v 1.7 2001/08/17 21:16:47 jlam Exp $
 #
 
 DISTNAME=	dflowers-1.2
@@ -10,7 +10,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://hem.passagen.se/joakime/linuxapp.html
 COMMENT=	XMMS plugin for dual flower scope
 
-USE_BULIDLINK_ONLY=	YES
+USE_BUILDLINK_ONLY=	YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
