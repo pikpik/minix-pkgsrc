@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2002/10/03 05:04:29 lukem Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/02 18:41:20 drochner Exp $
 
-DISTNAME=	cdrtools-1.11a40
-PKGNAME=	cdrecord-xcdroast098a11-1.10.40
+DISTNAME=	cdrtools-2.0
+PKGNAME=	cdrecord-xcdroast098a13-2.0
 WRKSRC=		${WRKDIR}/${DISTNAME:C/a.*//}
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/
 MAINTAINER=	lukem@netbsd.org
 HOMEPAGE=	http://www.fokus.gmd.de/research/cc/glone/employees/joerg.schilling/private/cdrecord.html
 COMMENT=	cdrecord bits for xcdroast
+
+CONFLICTS+=	cdrecord-xcdroast098a11-*
 
 .include "../../mk/bsd.prefs.mk"
 
