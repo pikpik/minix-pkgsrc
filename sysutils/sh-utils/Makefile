@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/12 21:20:37 tron Exp $
+# $NetBSD: Makefile,v 1.5 2001/12/20 06:17:39 tron Exp $
 
 DISTNAME=		sh-utils-2.0
 CATEGORIES=		sysutils
@@ -7,6 +7,8 @@ MASTER_SITES=		${MASTER_SITE_GNU:=sh-utils/}
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/shellutils/shellutils.html
 COMMENT=		GNU shell utilities
+
+BUILD_DEPENDS+=		perl>=${PERL5_REQD}:../../lang/perl5
 
 USE_GMAKE=		YES
 USE_GTEXINFO=		YES
