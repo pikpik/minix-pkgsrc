@@ -1,4 +1,4 @@
-$NetBSD: patch-aa$
+$NetBSD$
 
 --- configure.orig	Sun Sep 19 13:59:45 1999
 +++ configure	Sat Nov 20 11:40:23 1999
