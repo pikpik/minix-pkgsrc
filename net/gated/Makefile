@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/06/26 00:21:03 christos Exp $
+# $NetBSD: Makefile,v 1.2 1998/07/02 21:23:44 tron Exp $
 # FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp 
 #
 
@@ -8,6 +8,8 @@ CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.gated.merit.edu/net-research/gated/
 
 MAINTAINER=	packages@netbsd.org
+
+MIRROR_DISTFILE=	no
 
 ALL_TARGET=	gated
 
