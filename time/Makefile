@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:09 wiz Exp $
 #
 
     SUBDIR += asclock
@@ -10,6 +10,7 @@
     SUBDIR += dclock
     SUBDIR += emiclock
     SUBDIR += glclock
+    SUBDIR += gnyaclock
     SUBDIR += ical
     SUBDIR += logtime
     SUBDIR += plan
