@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/aspell/ru.multi
+lib/aspell/ru.rws
+lib/aspell/russian.alias
+share/aspell/ru.dat
+share/aspell/ru_phonet.dat
