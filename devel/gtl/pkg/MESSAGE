@@ -1,7 +1,0 @@
-==========================================================================
-$NetBSD$
-
-If your project uses GTL, then you will need to pass
-"-I@LOCALBASE@/include/sgi-stl" to the compiler so that it may
-find the SGI STL headers.
-==========================================================================
