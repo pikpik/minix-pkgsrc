@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libeispack.a
+lib/libeispack.la
+lib/libeispack.so.0.0
