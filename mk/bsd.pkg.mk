@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1085 2002/11/17 11:58:49 grant Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1086 2002/11/21 00:49:32 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1138,7 +1138,11 @@ BUILD_DEFS+=	OSVERSION_SPECIFIC
 .endif # OSVERSION_SPECIFIC
 
 .if !target(all)
+.  if ${PKGSRC_RUN_TEST} == "YES" || ${PKGSRC_RUN_TEST} == "yes"
+all: test
+.  else
 all: build
+.  endif
 .endif
 
 .if !defined(DEPENDS_TARGET)
