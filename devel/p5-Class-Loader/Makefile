@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/25 04:11:37 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 16:43:34 martti Exp $
 #
 
 DISTNAME=		Class-Loader-2.02
@@ -12,9 +12,7 @@ MAINTAINER=		mcr@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Class-Loader/
 COMMENT=		Perl5 module for module loading and on-demand object creation
 
-PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
-USE_BUILDLINK3=		YES
+USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Class/Loader/.packlist
 
 .include "../../lang/perl5/module.mk"
