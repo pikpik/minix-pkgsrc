@@ -1,7 +1,7 @@
 $NetBSD$
 
---- gdc_py.c.orig	Sat Mar 17 04:06:08 2001
-+++ gdc_py.c	Mon Jun 18 17:03:24 2001
+--- gdc_py.c.orig	Fri Mar 16 20:06:08 2001
++++ gdc_py.c
 @@ -33,6 +33,8 @@
  #include <stdio.h>
  #include <string.h>
