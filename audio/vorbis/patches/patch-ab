@@ -1,8 +1,0 @@
-$NetBSD$
---- vorbis-tools/libao/configure-	Fri Aug 18 01:32:43 2000
-+++ vorbis-tools/libao/configure	Fri Aug 18 01:32:51 2000
-@@ -1301,3 +1301,3 @@
- case $host in
--        *-*-linux*|*-openbsd*|*-freebsd*)
-+        *-*-linux*|*-openbsd*|*-freebsd*|*-netbsd*)
-                     LIBAO_OBJS="$LIBAO_OBJS ao_oss.o"
