@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2003/10/05 09:28:57 wiz Exp $
+@comment $NetBSD$
 bin/bomberclone
 include/bomberclone/basic.h
 include/bomberclone/bomberclone.h
@@ -144,11 +144,6 @@ share/bomberclone/tileset/sheep/background.png
 share/bomberclone/tileset/sheep/block.png
 share/bomberclone/tileset/sheep/map.nfo
 share/bomberclone/tileset/sheep/stone.png
-share/bomberclone/tileset/sisso_cesso/background.png
-share/bomberclone/tileset/sisso_cesso/block.png
-share/bomberclone/tileset/sisso_cesso/dead.wav
-share/bomberclone/tileset/sisso_cesso/drop.wav
-share/bomberclone/tileset/sisso_cesso/stone.png
 share/bomberclone/tileset/supermario/background.png
 share/bomberclone/tileset/supermario/block.png
 share/bomberclone/tileset/supermario/stone.png
@@ -171,7 +166,6 @@ share/doc/bomberclone/TODO
 @dirrm share/bomberclone/tileset/zbb_frog
 @dirrm share/bomberclone/tileset/uccia_garbage
 @dirrm share/bomberclone/tileset/supermario
-@dirrm share/bomberclone/tileset/sisso_cesso
 @dirrm share/bomberclone/tileset/sheep
 @dirrm share/bomberclone/tileset/radioactive
 @dirrm share/bomberclone/tileset/modern
