@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2005/01/04 14:05:02 manu Exp $
+# $NetBSD: Makefile,v 1.159 2005/01/16 02:01:08 tv Exp $
 #
 
 COMMENT=	Databases
@@ -32,6 +32,7 @@ SUBDIR+=	jdbc-postgresql74
 SUBDIR+=	kmysqladmin
 SUBDIR+=	libgda
 SUBDIR+=	libgda-postgres
+SUBDIR+=	libgda-sqlite
 SUBDIR+=	libgnomedb
 SUBDIR+=	libpqxx
 SUBDIR+=	libpqxx-doc
