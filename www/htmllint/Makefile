@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	htmllint
-PKGNAME=	htmllint-20010413
+PKGNAME=	htmllint-20021103
 CATEGORIES=	www japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/k16/htmllint/archives/
 EXTRACT_SUFX=	.zip
