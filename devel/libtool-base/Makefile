@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/05/25 15:17:26 grant Exp $
+# $NetBSD: Makefile,v 1.35 2004/06/03 23:31:53 jschauma Exp $
 #
 
 PKGNAME=	${DISTNAME:C/-/-base-/}
@@ -27,7 +27,7 @@ DEPENDS+=	c++rt0>=1.0:../../sysutils/c++rt0
 
 .if ${OPSYS} == "NetBSD"
 .  if !exists(/usr/libexec/ld.so) && !exists(/usr/libexec/ld.elf_so)
-5~CONFIGURE_ARGS=		--disable-shared
+CONFIGURE_ARGS=		--disable-shared
 BUILD_SHLIBTOOL=	NO
 .  endif
 .else
