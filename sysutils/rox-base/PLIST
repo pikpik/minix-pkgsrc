@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/04/21 11:25:07 rh Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/06/01 18:21:34 cjep Exp $
 share/rox/Choices/MIME-icons/application.xpm
 share/rox/Choices/MIME-icons/application_pdf.xpm
 share/rox/Choices/MIME-icons/application_postscript.xpm
@@ -48,4 +48,3 @@ share/rox/Choices/MIME-types/text
 @dirrm share/rox/Choices/MIME-icons
 @dirrm share/rox/Choices
 @dirrm share/rox
-@dirrm libexec/rox
