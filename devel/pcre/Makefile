@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 1999/09/18 20:48:43 ad Exp $
+# $NetBSD: Makefile,v 1.3 1999/09/19 00:55:35 ad Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/07/12 22:59:19 steve Exp $
 
-DISTNAME=       pcre-2.07
+DISTNAME=       pcre-2.08
 CATEGORIES=     devel
 MASTER_SITES=   ftp://ftp.cus.cam.ac.uk/pub/software/programs/pcre/
 
