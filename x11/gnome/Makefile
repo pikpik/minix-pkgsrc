@@ -26,16 +26,9 @@ DEPENDS+=	gnome-utils>=1.0.51:../../misc/gnome-utils
 DEPENDS+=	gnumeric>=0.52:../../math/gnumeric
 DEPENDS+=	gtk-->=1.0.3:../gtk--
 DEPENDS+=	gtk-engines>=0.8:../gtk-engines
+DEPENDS+=	gtop>=1.0.9:../../sysutils/gtop
 DEPENDS+=	xchat>=1.4.1:../../net/xchat
 DEPENDS+=	xscreensaver-gnome>=3.24:../xscreensaver-gnome
-
-.include "../../mk/bsd.prefs.mk"
-.if (${OPSYS} == "NetBSD")
-.if (${MACHINE_ARCH} == arm32) || (${MACHINE_ARCH} == i386) || \
-   (${MACHINE_ARCH} == m68k)
-DEPENDS+=	gtop>=1.0.9:../../sysutils/gtop
-.endif
-.endif
 
 USE_X11=	yes
 EXTRACT_ONLY=	# empty
