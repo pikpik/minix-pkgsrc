@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2003/09/18 04:01:17 simonb Exp $
+# $NetBSD: Makefile,v 1.49 2004/01/03 18:49:38 reed Exp $
 #
 
 DISTNAME=		libglade-0.17
@@ -14,7 +14,10 @@ BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
+
 GNU_CONFIGURE=		YES
+CONFIG_GUESS_OVERRIDE+=	${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE+=	${WRKSRC}/config.sub
 
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
