@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/netscape/plugins/ShockwaveFlash.class
+lib/netscape/plugins/libflashplayer.so
