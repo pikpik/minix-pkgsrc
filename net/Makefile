@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1997/11/09 22:16:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1997/11/10 10:53:09 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -6,7 +6,7 @@
 #    SUBDIR += arpwatch
 #    SUBDIR += ascend-radius
 #    SUBDIR += bb
-#    SUBDIR += bing
+    SUBDIR += bing
 #    SUBDIR += cap
 #    SUBDIR += cvsup
 #    SUBDIR += cvsup-mirror
