@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- SETUP.in.orig	Sun Feb 24 21:47:45 2002
++++ SETUP.in
+@@ -1816,7 +1816,7 @@ fail()
+ 
+ export APS_BASEDIR="@datadir@/apsfilter"
+ cd "$APS_BASEDIR"
+-CONF_DIR="@sysconfdir@/apsfilter"
++CONF_DIR="@sysconfdir@"
+ SPOOL="@spooldir@"
+ 
+ # check read/write permissions
