@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/21 12:40:17 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/21 14:01:06 jlam Exp $
 
 DISTNAME=	cyrus-sasl-2.1.17
 PKGNAME=	${DISTNAME:S/sasl/saslauthd/}
@@ -7,7 +7,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/sasl/
 
-CONFLICTS+=	cyrus-sasl-[0-9]*
+CONFLICTS+=	cyrus-sasl<2.1.15nb2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
