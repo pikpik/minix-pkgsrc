@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/21 16:34:34 martti Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:09:35 agc Exp $
 
 DISTNAME=	vicq-0.4.1
 PKGREVISION=	1
@@ -10,10 +10,10 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gonzo.kiev.ua/projects/vicq/
 COMMENT=	Simple icq client written in perl
 
-DEPEND+=	p5-Term-ReadLine>=1.11:../../devel/p5-Term-ReadLine
+DEPENDS+=	p5-Term-ReadLine>=1.11:../../devel/p5-Term-ReadLine
 
 WRKSRC=			${WRKDIR}/vicq
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 NO_BUILD=		YES
 
 REPLACE_PERL=		vicq
