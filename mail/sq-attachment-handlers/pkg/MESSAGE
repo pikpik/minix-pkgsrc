@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+To enable the ${PKGNAME} plugin, please run the SquirrelMail
+configuration script:
+
+        cd ${SMDIR}/config && ./conf.pl
+
+===========================================================================
