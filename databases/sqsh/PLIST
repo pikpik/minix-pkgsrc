@@ -1,3 +1,5 @@
-@comment $NetBSD: PLIST,v 1.2 2001/05/22 05:28:24 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:53 zuntum Exp $
 bin/sqsh
 man/man1/sqsh.1
+share/examples/sqsh/sample.sqshrc
+@dirrm share/examples/sqsh

@@ -2,7 +2,7 @@
 
 DISTNAME=	sqsh-1.7-src
 PKGNAME=	sqsh-1.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	${HOMEPAGE}
 
@@ -42,6 +42,8 @@ CONFIGURE_ENV+=		LIBDIRS="${BUILDLINK_PREFIX.readline}/lib"
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sqsh ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/doc/sqsh.1 ${PREFIX}/man/man1/sqsh.1
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/sqsh
+	${INSTALL_DATA} ${WRKSRC}/doc/sample.sqshrc ${PREFIX}/share/examples/sqsh
 
 .if !defined(USE_SYBASE_OPENCLIENT)
 .  include "../../databases/freetds/buildlink2.mk"
