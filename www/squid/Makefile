@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2000/09/03 13:42:22 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2000/09/05 09:33:18 jlam Exp $
 
 DISTNAME=	squid-2.3.STABLE3-src
 PKGNAME=	squid-2.3s3
@@ -37,7 +37,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 .include "../../mk/bsd.prefs.mk"
 # Configuration options which can be overwritten by the user.
 SQUID_CONFIGURE_ARGS?=	--enable-cachemgr-hostname=localhost \
-			--enable-delay-pool \
+			--enable-delay-pools \
 			--enable-icmp \
 			--enable-ipf-transparent \
 			--enable-snmp \
