@@ -1,9 +1,10 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: cyrus.sh,v 1.1.1.1 2004/01/18 12:42:12 recht Exp $
+# $NetBSD: cyrus.sh,v 1.2 2004/05/27 04:45:06 jlam Exp $
 #
 # PROVIDE: cyrus
 # REQUIRE: DAEMON
+# BEFORE: mail
 #
 # To start cyrus-imapd at startup, copy this script to /etc/rc.d and set
 # cyrus=YES in /etc/rc.conf.
