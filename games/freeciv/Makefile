@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/10/24 16:44:30 tron Exp $
+# $NetBSD: Makefile,v 1.13 1999/12/18 18:26:37 jonb Exp $
 #
 
 DISTNAME=	freeciv-1.9.0
@@ -13,7 +13,7 @@ DEPENDS+=	xpm-*:../../graphics/xpm
 DEPENDS+=	imlib-*:../../graphics/imlib
 DEPENDS+=	png-*:../../graphics/png
 DEPENDS+=	jpeg-*:../../graphics/jpeg
-DEPENDS+=	gettext-*:../../devel/gettext
+DEPENDS+=	gettext-0.10.*:../../devel/gettext
 
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/27 04:08:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/11/30 15:17:24 tron Exp $
 
 DISTNAME=		gimp-1.1.13
 CATEGORIES=		graphics
@@ -16,7 +16,7 @@ DEPENDS+=		mpeg-1.2.1:../../graphics/mpeg-lib
 DEPENDS+=		png-1.0.3:../../graphics/png
 DEPENDS+=		tiff-*:../../graphics/tiff
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
-DEPENDS+=		gettext-0.10.35:../../devel/gettext
+DEPENDS+=		gettext-0.10.*:../../devel/gettext
 
 USE_X11BASE=		yes
 USE_GMAKE=		yes
