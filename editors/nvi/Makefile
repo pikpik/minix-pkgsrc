@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/02/14 17:21:39 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/12 11:09:01 xtraeme Exp $
 #
 
 DISTNAME=	nvi-1.81.5
@@ -16,6 +16,8 @@ COMMENT=	Berkeley nvi with additional features
 .  if !empty(OS_VERSION:M[2-9].*) || !empty(OS_VERSION:M1.6[A-Z]*)
 CONFIGURE_ENV+=		vi_cv_include_sys_select=no
 .  endif
+# XXX ignore NetBSD 2.0F and later's granpt(2) and SysV pty for just now
+CONFIGURE_ENV+=		vi_cv_sys5_pty=no
 .endif
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/build.unix
