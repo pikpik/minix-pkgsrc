@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/12/02 14:47:13 tron Exp $
+# $NetBSD: Makefile,v 1.6 2002/07/02 12:45:04 wiz Exp $
 #
 
 PKGNAME=	${DISTNAME:C/-/player-/}
+PKGREVISION=	1
 
 DEPENDS+=	libflash-[0-9]*:../libflash
 

@@ -11,7 +11,7 @@ $NetBSD$
  
  INCLUDES= adpcm.h        cxform.h       graphic.h      script.h       sqrt.h\
  	bitmap.h       displaylist.h  matrix.h       shape.h        swf.h\
-@@ -34,10 +34,20 @@
+@@ -34,10 +34,20 @@ SWFOBJS=\
  #	bitstream.o
  #	dump.o
  
