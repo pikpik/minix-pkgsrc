@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2001/11/28 12:22:35 martti Exp $
+# $NetBSD: Makefile,v 1.28 2002/03/20 11:33:09 martti Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/09/14 04:00:00 jfitz Exp
 #
 
-DISTNAME=		Tk800.024
+DISTNAME=		Tk-800.024
 PKGNAME=		p5-Tk-800.024
 SVR4_PKGNAME=		p5tk
 CATEGORIES=		x11 tk perl5
