@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/09/16 10:40:24 agc Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:14:39 tv Exp $
 #
 
 DISTNAME=	nvi-1.81.5
@@ -30,4 +30,5 @@ USE_LIBTOOL=		YES
 USE_BUILDLINK3=		YES
 
 .include "../../databases/db3/buildlink3.mk"
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
