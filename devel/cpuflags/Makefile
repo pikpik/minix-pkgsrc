@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2003/03/28 21:14:15 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2003/03/29 12:40:31 jmmv Exp $
 #
 
-DISTNAME=		cpuflags-0.39
+DISTNAME=		cpuflags-0.40
 WRKSRC=			${WRKDIR}
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
