@@ -1,7 +1,0 @@
-# $NetBSD: Makefile,v 1.9 2000/12/12 01:31:03 wiz Exp $
-#
-
-    SUBDIR += 9menu
-    SUBDIR += 9term
-
-.include "../mk/bsd.pkg.subdir.mk"
