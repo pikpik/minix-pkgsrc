@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/24 15:02:59 agc Exp $
+$NetBSD$
 
-MD5 (xwatchwin.tar.gz) = f194163eb5d7e578a45655858b66091f
+SHA1 (xwatchwin.tar.gz) = 36dcc365d38c4798cdea8859576abf3f913de387
+Size (xwatchwin.tar.gz) = 12313 bytes

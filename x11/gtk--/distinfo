@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.4 2000/07/15 09:48:13 jlam Exp $
+$NetBSD$
 
-MD5 (gtkmm-1.2.1.tar.gz) = 70a95d054f2c641f3d5a8f82639aa985
+SHA1 (gtkmm-1.2.1.tar.gz) = 0c17a4d0a4e1f6d4cb8810f6e10429ab91b9750e
+Size (gtkmm-1.2.1.tar.gz) = 618728 bytes
 SHA1 (patch-ag) = 32955371bf64162dc2da520ad96788115e1591ef
 SHA1 (patch-ah) = 5db5ac60b28e538977abeb6e9aa4940907910cb2

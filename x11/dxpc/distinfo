@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:29:04 agc Exp $
+$NetBSD$
 
-MD5 (dxpc-3.7.0.tar.gz) = 9b9b6605e46bf1731d44e150049a019e
+SHA1 (dxpc-3.7.0.tar.gz) = 06b6b7d555c3f1b40e61f54cabddc65ddf619d25
+Size (dxpc-3.7.0.tar.gz) = 109529 bytes

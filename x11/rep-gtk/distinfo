@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2000/10/27 08:06:00 jlam Exp $
+$NetBSD$
 
-MD5 (rep-gtk-0.14.tar.gz) = ea1eb8f3128177b2df0cf06ba594aae4
+SHA1 (rep-gtk-0.14.tar.gz) = aeb73d6d0c37b9cc1221b6e41305d842e9a013de
+Size (rep-gtk-0.14.tar.gz) = 140584 bytes

@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/12 05:57:52 rh Exp $
+$NetBSD$
 
-MD5 (wmWeather-1.31.tar.gz) = f04693aa86d22099162cff3d0b5c9275
+SHA1 (wmWeather-1.31.tar.gz) = b03ac1ad93f9e942feca26cfad91c1ea0b92eeb9
+Size (wmWeather-1.31.tar.gz) = 28639 bytes
 SHA1 (patch-aa) = 2fddb64c4044b9a76b4a41c0794dc640266c8bbe
 SHA1 (patch-ab) = ffe2f8bf5618470d8c03a50d04df206e475a54c4

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/12/27 17:28:19 hubertf Exp $
+$NetBSD$
 
-MD5 (xflame-1.1.1.tar.gz) = 6aa56927ae0181048d2ddfd15b017cb7
+SHA1 (xflame-1.1.1.tar.gz) = e76ac080115275e78590fbe1c6206da75dc99fd7
+Size (xflame-1.1.1.tar.gz) = 10439 bytes
 SHA1 (patch-aa) = 44aa8318dfd12c94a9498839cb669a699666eb5c

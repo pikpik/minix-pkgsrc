@@ -1,2 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/11/17 18:32:29 drochner Exp $
-MD5 (qwtlib-0.2.tgz) = d40ca70a996799337c4027c89c5fedb2
+$NetBSD$
+
+SHA1 (qwtlib-0.2.tgz) = 29aa2873c25c0c714d87fa798c0c44b65af842eb
+Size (qwtlib-0.2.tgz) = 485222 bytes

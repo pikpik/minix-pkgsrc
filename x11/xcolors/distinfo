@@ -1,4 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:29:09 agc Exp $
+$NetBSD$
 
-MD5 (xcolors.tar.gz) = IGNORE
+SHA1 (xcolors.tar.gz) = IGNORE
 SHA1 (patch-aa) = 3dd0444d505850b22373ca2ceaf209383f1fc7b7

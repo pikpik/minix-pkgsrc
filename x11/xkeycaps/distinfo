@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/02/27 16:52:39 mjl Exp $
+$NetBSD$
 
-MD5 (xkeycaps-2.46.tar.Z) = 6792f828db6538f44f7696a8783b44ac
+SHA1 (xkeycaps-2.46.tar.Z) = 458133a394f63d84efacaf917254074005ce953d
+Size (xkeycaps-2.46.tar.Z) = 489439 bytes
 SHA1 (patch-aa) = 5ae1df3276449ed6fbd12f37e6c11401863911aa

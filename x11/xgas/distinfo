@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:29:10 agc Exp $
+$NetBSD$
 
-MD5 (xgas.tar.gz) = d48372429fbada32acf403105865924d
+SHA1 (xgas.tar.gz) = 623abb0d185285a02c04cb239fe3141d9cfc99cd
+Size (xgas.tar.gz) = 24975 bytes

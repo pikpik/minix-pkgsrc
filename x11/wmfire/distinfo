@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/24 00:33:10 hubertf Exp $
+$NetBSD$
 
-MD5 (wmfire-0.0.3.8.tar.gz) = 026f92098b7096593b7a1dcb0f32709d
+SHA1 (wmfire-0.0.3.8.tar.gz) = 1c615ef63d8a6fb0a87dca2fdfcb685cb87bb683
+Size (wmfire-0.0.3.8.tar.gz) = 53253 bytes

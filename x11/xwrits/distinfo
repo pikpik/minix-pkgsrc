@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.5 2000/11/24 18:12:31 dmcmahill Exp $
+$NetBSD$
 
-MD5 (xwrits-2.12.tar.gz) = e46be9575594d4347ace055216cab357
+SHA1 (xwrits-2.12.tar.gz) = 3f06e187cb13115df3cf4857d9dcd5070c75d264
+Size (xwrits-2.12.tar.gz) = 123755 bytes

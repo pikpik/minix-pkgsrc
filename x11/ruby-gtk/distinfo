@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2000/04/18 10:54:46 sakamoto Exp $
+$NetBSD$
 
-MD5 (ruby-gtk-0.23.tar.gz) = 054100d5651024af90b36cb8c2401982
+SHA1 (ruby-gtk-0.23.tar.gz) = 4bb68929c8096ae7f35d63ee6a59c773a18ad288
+Size (ruby-gtk-0.23.tar.gz) = 295430 bytes
 SHA1 (patch-aa) = 70d5e707f520578f0c4dc219ee346fab6ce309ed
