@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.27 2004/11/29 09:05:46 adam Exp $
+@comment $NetBSD: PLIST,v 1.28 2005/01/05 09:25:18 adam Exp $
 bin/Magick++-config
 bin/Magick-config
 bin/Wand-config
@@ -74,6 +74,7 @@ include/magick/monitor.h
 include/magick/montage.h
 include/magick/option.h
 include/magick/paint.h
+include/magick/pixel.h
 include/magick/profile.h
 include/magick/quantize.h
 include/magick/random.h
