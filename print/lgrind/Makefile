@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/09/08 18:55:59 jwise Exp $
+# $NetBSD: Makefile,v 1.6 1999/09/28 20:40:04 soren Exp $
 
 DISTNAME=	lgrind
 PKGNAME=	lgrind-3.5
@@ -8,7 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	jwise@netbsd.org
 
-DEPENDS=	teTeX-1.0.6:../../print/teTeX
+DEPENDS+=	teTeX-1.0.6:../../print/teTeX
 
 USE_X11=	yes
 MIRROR_DISTFILE=no
