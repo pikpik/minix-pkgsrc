@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2002/03/24 18:08:57 wiz Exp $
+# $NetBSD: Makefile,v 1.125 2002/03/25 11:26:30 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -72,6 +72,7 @@ SUBDIR+=	qlogtools
 SUBDIR+=	rconfig
 SUBDIR+=	roller
 SUBDIR+=	rtty
+SUBDIR+=	ruby-quota
 SUBDIR+=	ruby-syslog
 SUBDIR+=	safetynet
 SUBDIR+=	sarah
