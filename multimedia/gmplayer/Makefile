@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:09:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/20 17:32:33 jmmv Exp $
 
 PKGNAME=	gmplayer-${MPLAYER_PKG_VERSION}
 PKGREVISION=	1
 
 SKIN_SITES=	http://www.mplayerhq.hu/MPlayer/Skin/		\
 		ftp://ftp.mplayerhq.hu/MPlayer/Skin/		\
+		ftp://ftp.lug.udel.edu/MPlayer/Skin/		\
+		http://distro.ibiblio.org/pub/linux/distributions/sorcerer/sources/MPlayer,Skin-AlienMind/1.1/ \
 		${MASTER_SITE_LOCAL:=mplayer}
 
 .include "../../multimedia/mplayer-share/Makefile.common"
