@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/05/16 15:28:42 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/18 06:13:54 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -34,7 +34,7 @@ DEPENDS+=		user>=20000313:../../sysutils/user
 ADDUSER=		${LOCALBASE}/sbin/useradd
 ADDGROUP=		${LOCALBASE}/sbin/groupadd
 .endif
-.elif ${OPSYS} == "SunOS"
+.else
 ADDUSER=		useradd
 ADDGROUP=		groupadd
 .endif
