@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $NetBSD: DEINSTALL,v 1.1 2001/11/01 01:16:36 zuntum Exp $
+# $NetBSD: DEINSTALL,v 1.2 2001/11/21 22:22:10 jlam Exp $
 
-SASLDB=@CONFDIR@/sasldb.db
+SASLDB=@PKG_SYSCONFDIR@/sasldb.db
 PWCHECKDIR=@PWCHECKDIR@
 
 case ${STAGE} in
