@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.576 2004/11/28 08:06:29 taca Exp $
+# $NetBSD: Makefile,v 1.577 2004/11/30 08:25:32 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -302,6 +302,7 @@ SUBDIR+=	p5-Class-Container
 SUBDIR+=	p5-Class-Data-Inheritable
 SUBDIR+=	p5-Class-Factory
 SUBDIR+=	p5-Class-Fields
+SUBDIR+=	p5-Class-Inner
 SUBDIR+=	p5-Class-Loader
 SUBDIR+=	p5-Class-MethodMaker
 SUBDIR+=	p5-Class-ObjectTemplate
