@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/02/14 18:56:51 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:07 tv Exp $
 #
 
-DISTNAME=	libshout-2.0
-PKGREVISION=	1
+DISTNAME=	libshout-2.1
 CATEGORIES=	audio
-MASTER_SITES=	http://icecast.org/files/libshout/
+MASTER_SITES=	http://downloads.xiph.org/releases/libshout/
 
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.gnu.org/directory/audio/ogg/libshout.html
@@ -18,5 +17,6 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--disable-pkgconfig
 
 .include "../../audio/libvorbis/buildlink3.mk"
+.include "../../multimedia/libtheora/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
