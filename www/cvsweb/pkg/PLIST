@@ -1,4 +1,0 @@
-@comment $NetBSD$
-libexec/cgi-bin/cvsweb.cgi
-share/examples/cvsweb/cvsweb.conf.default
-@dirrm share/examples/cvsweb

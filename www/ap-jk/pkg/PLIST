@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.7 2001/03/28 02:46:09 jwise Exp $
-lib/httpd/mod_jk.so

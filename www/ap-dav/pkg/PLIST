@@ -1,6 +1,0 @@
-@comment $NetBSD$
-lib/httpd/mod_dav.so
-share/doc/html/mod_dav/LICENSE.html
-share/doc/mod_dav/INSTALL
-@dirrm share/doc/mod_dav
-@dirrm share/doc/html/mod_dav

@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/calamaris
-man/man1/calamaris.1
-share/doc/calamaris/CHANGES
-share/doc/calamaris/COPYRIGHT
-share/doc/calamaris/EXAMPLES
-share/doc/calamaris/README
-@dirrm share/doc/calamaris

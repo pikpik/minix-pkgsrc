@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2001/03/23 14:55:54 itojun Exp $
-sbin/www6to4
-share/examples/www6to4/www6to4.conf
-share/examples/www6to4/www6to4_forward.conf
-@dirrm share/examples/www6to4

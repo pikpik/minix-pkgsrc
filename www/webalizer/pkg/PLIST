@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1999/03/23 21:16:06 mjl Exp $
-bin/webalizer
-bin/webazolver
-man/man1/webalizer.1
-etc/webalizer.conf.sample

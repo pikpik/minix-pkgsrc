@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.5 2000/02/06 03:49:50 fredb Exp $
-bin/arena
-share/examples/arenarc
-@exec if [ ! -f ${LOCALBASE}/etc/arenarc ]; then cp %D/share/examples/arenarc ${LOCALBASE}/etc/; fi
-man/man1/arena.1
-share/locale/en/LC_MESSAGES/Arena.gmo

@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/bearerbox
-bin/smsbox
-bin/wapbox
-bin/wmlsc
-bin/wmlsdasm
-bin/seewbmp
-bin/run_kannel_box
-bin/start-stop-daemon
