@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:20:04 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:12:55 tv Exp $
 
 DISTNAME=	dcdflib.f-1.1
 PKGREVISION=	1
@@ -10,7 +10,7 @@ HOMEPAGE=	http://odin.mdacc.tmc.edu/anonftp/
 COMMENT=	Library of Fortran Routines for Cumulative Distribution Functions
 
 WRKSRC=		${WRKDIR}/dcdflib.f/src
-USE_FORTRAN=	yes
+USE_LANGUAGES=	fortran
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dcdflib.f

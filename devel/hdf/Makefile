@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/04/25 02:16:42 snj Exp $
+# $NetBSD: Makefile,v 1.19 2004/10/03 00:13:28 tv Exp $
 
 DISTNAME=		HDF4.2r0
 PKGNAME=		hdf-4.2r0
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://hdf.ncsa.uiuc.edu/hdf4.html
 COMMENT=		NCSA Hierarchical Data Format
 
-USE_FORTRAN=		# defined
+USE_LANGUAGES=		fortran
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-szlib
