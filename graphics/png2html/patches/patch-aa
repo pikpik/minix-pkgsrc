@@ -1,13 +1,14 @@
-$NetBSD: patch-aa,v 1.1 2000/10/23 17:06:37 hubertf Exp $
+$NetBSD$
 
 --- Makefile.orig	Sat Nov 13 23:42:36 1999
-+++ Makefile	Mon Oct 23 18:50:04 2000
++++ Makefile
 @@ -1,7 +1,7 @@
  # Makefile for png2html, (c) 1999 Geoff Holden
  
- CC      = gcc
+-CC      = gcc
 -CFLAGS  = -O2 -Wall -lpng -lgd
-+CFLAGS  = -O2 -Wall -I${LOCALBASE}/include -L${X11BASE}/lib -L${LOCALBASE}/lib -Wl,-R${X11BASE}/lib -Wl,-R${LOCALBASE}/lib -lgd
++CC     ?= gcc
++CFLAGS += -Wall -lgd
  
  all:    png2html
  
