@@ -1,11 +1,11 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/02/16 17:33:16 grant Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/02/28 23:29:34 grant Exp $
 
 .if !defined(ZLIB_BUILDLINK2_MK)
 ZLIB_BUILDLINK2_MK=	# defined
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILDLINK_DEPENDS.zlib?=	zlib>=1.1.3
+BUILDLINK_DEPENDS.zlib?=	zlib>=1.1.4nb1
 BUILDLINK_PKGSRCDIR.zlib?=	../../devel/zlib
 
 .if defined(USE_ZLIB)
