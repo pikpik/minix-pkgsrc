@@ -1,8 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/27 22:39:14 jlam Exp $
 
-PKGNAME=	courier-authmysql-${BASE_VERS}
-PKGREVISION?=	# empty
-COMMENT=	Courier MySQL authentication module
+PKGNAME=		courier-authmysql-${BASE_VERS}
+PKGREVISION?=		# empty
+COMMENT=		Courier MySQL authentication module
+
+DEPENDS+=		courier-auth>=${BASE_VERS}:../../mail/courier-auth
 
 USE_BUILDLINK_ONLY=	yes
 
