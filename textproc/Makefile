@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2001/05/31 10:55:09 agc Exp $
+# $NetBSD: Makefile,v 1.104 2001/06/10 11:32:19 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -19,6 +19,7 @@ SUBDIR+=	fop
 SUBDIR+=	glimpse
 SUBDIR+=	groff
 SUBDIR+=	helpdeco
+SUBDIR+=	hevea
 SUBDIR+=	html
 SUBDIR+=	html2text
 SUBDIR+=	icu
