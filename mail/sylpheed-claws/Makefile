@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2003/09/03 18:19:42 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2003/09/28 11:38:51 xtraeme Exp $
 #
 
 DISTNAME=	sylpheed-0.9.4claws
-PKGREVISION=	1
+PKGREVISION=	2
 PKGNAME=	sylpheed-claws-0.9.4
 CATEGORIES=	mail news x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sylpheed-claws/}
