@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:47:08 martti Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/09 07:44:57 itojun Exp $
+#
 
 DISTNAME=	mkfontscale-20020524
 PKGREVISION=	2
@@ -10,6 +11,7 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://www.pps.jussieu.fr/~jch/software/files/
 COMMENT=	Create an index of scalable font files for X
 
+USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
 
 .include "../../mk/bsd.prefs.mk"
