@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/08/07 12:14:09 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2004/10/13 19:12:22 reed Exp $
 #
 
 DISTNAME=	pkgconfig-0.15.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.freedesktop.org/software/pkgconfig/releases/
 
@@ -29,4 +29,5 @@ TEST_TARGET=		check
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/pkgconfig
 
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
