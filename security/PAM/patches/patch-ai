@@ -1,8 +1,8 @@
 $NetBSD$
 
---- modules/pam_time/Makefile.orig	Mon Jan 28 17:28:23 2002
-+++ modules/pam_time/Makefile
-@@ -14,8 +14,4 @@
+--- modules/pam_access/Makefile.orig	Sun Nov 19 18:54:03 2000
++++ modules/pam_access/Makefile
+@@ -14,8 +14,4 @@ INSTALLED_CONFILE=$(SCONFIGD)/access.con
  DEFS=-DDEFAULT_CONF_FILE=\"$(INSTALLED_CONFILE)\"
  CFLAGS += $(DEFS)
  

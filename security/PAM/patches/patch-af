@@ -1,8 +1,8 @@
 $NetBSD$
 
---- libpam_misc/Makefile.orig	Mon Jan 28 19:00:46 2002
-+++ libpam_misc/Makefile
-@@ -85,7 +85,7 @@
+--- libpamc/Makefile.orig	Sat Feb 10 02:17:53 2001
++++ libpamc/Makefile
+@@ -85,7 +85,7 @@ ifeq ($(DYNAMIC_LIBPAM),yes)
  	$(INSTALL) -m $(SHLIBMODE) $(LIBNAMED) $(FAKEROOT)$(libdir)/$(LIBNAMEDFULL)
  	$(LDCONFIG)
    ifneq ($(DYNTYPE),"sl")
