@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.195 2004/03/08 19:29:25 jmmv Exp $
+# $NetBSD: Makefile,v 1.196 2004/03/28 21:57:05 xtraeme Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -15,7 +15,6 @@ SUBDIR+=	bbappconf
 SUBDIR+=	bbdb
 SUBDIR+=	bbweather
 SUBDIR+=	bidwatcher
-SUBDIR+=	blackbook
 SUBDIR+=	blccc
 SUBDIR+=	bottlerocket
 SUBDIR+=	brs
