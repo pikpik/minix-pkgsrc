@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/desktop-file-install
+bin/desktop-file-validate
+bin/desktop-menu-tool
+bin/update-desktop-database
+@comment in INSTALL script: share/applications/mimeinfo.cache
+@comment in xdg-dirs: @dirrm share/applications
