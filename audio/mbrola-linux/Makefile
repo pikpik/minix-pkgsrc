@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/04/15 14:53:10 proff Exp $
+# $NetBSD: Makefile,v 1.5 1999/05/24 20:39:35 tv Exp $
 
 DISTNAME=		mbrola-linux-301g1
 CATEGORIES=		audio
@@ -10,7 +10,7 @@ HOMEPAGE=		http://tcts.fpms.ac.be/synthesis/
 
 BUILD_DEPENDS=		unzip:../../archivers/unzip
 
-LICENSE=		non-commercial-use
+LICENSE=		no-commercial-use
 
 EXTRACT_CMD=		unzip -Loq ${DOWNLOADED_DISTFILE}
 NO_WRKSUBDIR=

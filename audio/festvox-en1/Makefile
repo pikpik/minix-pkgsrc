@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/14 04:50:24 proff Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1999/04/15 14:34:28 proff Exp $
 
 DISTNAME=	festvox-en1-1.3.1
 WRKSRC=		${WRKDIR}/festival
@@ -15,7 +15,7 @@ DEPENDS+=	festival-1.3.1:../festival \
 		mbrola-linux-301g1:../mbrola-linux \
 		mbrolavox-en1-980910:../mbrolavox-en1
 
-LICENSE=	non-commercial-use
+LICENSE=	no-commercial-use
 
 NO_BUILD=	yes
 
