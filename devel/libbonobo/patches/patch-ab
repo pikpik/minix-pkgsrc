@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- activation-server/object-directory-config-file.h.orig	2001-09-13 19:50:12.000000000 +0200
++++ activation-server/object-directory-config-file.h
+@@ -27,7 +27,7 @@
+ 
+ #include <libxml/tree.h>
+ 
+-#define SERVER_CONFIG_FILE "/bonobo-activation/bonobo-activation-config.xml"
++#define SERVER_CONFIG_FILE "/bonobo-activation-config.xml"
+ 
+ /* loads the information from oaf configuration file
+    in $sysconfdir/oaf/oaf-conf.xml.
