@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2004/07/13 10:35:35 tron Exp $
+# $NetBSD: Makefile,v 1.105 2004/07/16 01:02:09 wiz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -26,6 +26,7 @@ SUBDIR+=	fmsx
 SUBDIR+=	freebsd_lib
 SUBDIR+=	fuse
 SUBDIR+=	fuse-utils
+SUBDIR+=	gcube
 SUBDIR+=	generator
 SUBDIR+=	gnuboy
 SUBDIR+=	gpsim
