@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/17 18:09:05 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/03/27 03:20:08 hubertf Exp $
 #
 
 DISTNAME=	gperiodic-1.2.6
@@ -19,8 +19,8 @@ USE_LIBINTL=	yes
 USE_X11BASE=	yes
 
 pre-configure:
-.for file in config.cache config.h config.log config.status
-	${RM} -f ${WRKSRC}/${file}
+.for f in config.cache config.h config.log config.status
+	${RM} -f ${WRKSRC}/$f
 .endfor
 
 post-install:
