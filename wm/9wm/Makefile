@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.10 1999/04/01 14:07:55 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 13:05:02 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/05/28 06:18:20 fenner Exp
 #
 
 DISTNAME=		9wm-1.1
 CATEGORIES=		plan9 wm
-MASTER_SITES=		ftp://ftp.mathcs.emory.edu/pub/arnold/
+MASTER_SITES=		ftp://ftp.freefriends.org/arnold/Source/
 EXTRACT_SUFX=		.shar.gz
 
 MAINTAINER=		packages@netbsd.org
