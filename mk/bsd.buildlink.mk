@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink.mk,v 1.22 2001/07/02 05:03:45 jlam Exp $
+# $NetBSD: bsd.buildlink.mk,v 1.23 2001/07/06 18:45:15 tron Exp $
 #
 # This Makefile fragment is included by package buildlink.mk files.  This
 # file does the following things:
@@ -64,7 +64,10 @@
 #
 # .include "../../mk/bsd.buildlink.mk"
 #
-# BUILDLINK_PREFIX.foo=		${LOCALBASE}
+# BUILDLINK_DEPENDS.foo?=	foo>=1.0
+# DEPENDS+=			${BUILDLINK_DEPENDS.foo}:../../category/foo
+#
+# EVAL_PREFIX+=			BUILDLINK_PREFIX.foo=foo
 # BUILDLINK_FILES.foo=		include/foo.h
 # BUILDLINK_FILES.foo+=		include/bar.h
 # BUILDLINK_FILES.foo+=		lib/libfoo.*
