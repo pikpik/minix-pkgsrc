@@ -1,0 +1,6 @@
+@comment $NetBSD$
+publicfile/bin/configure
+publicfile/bin/httpd
+publicfile/bin/ftpd
+@dirrm publicfile/bin
+@dirrm publicfile
