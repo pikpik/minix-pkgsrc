@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/08/15 01:37:19 kim Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:17:07 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/07/18 06:16:44 markm Exp
 #
 
@@ -28,6 +28,11 @@ post-install:
 .if (${OPSYS} != "NetBSD")
 # agc - no suidperl???
 	@strip ${PREFIX}/bin/suidperl
+.endif
+
+# XXX until alpha can dynamically load perl modules
+.if (${MACHINE_ARCH} == "alpha")
+NOPIC=1
 .endif
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.167 1998/09/23 13:09:32 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.168 1998/10/02 14:49:33 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -1017,13 +1017,11 @@ PLIST_SRC=	${PKGDIR}/PLIST
       exists(${PKGDIR}/PLIST-md.shared) && \
       exists(${PKGDIR}/PLIST-md.static)
 PLIST_SRC=	${PKGDIR}/PLIST-mi
-.if ${MACHINE_ARCH} == "powerpc" ||  ${MACHINE_ARCH} == "mips" ||  ${MACHINE_ARCH} == "alpha"
-# XXX this is mostly for perl; alpha can be removed once perl knows
-#  how to do dynamic loading - hubertf
+.if defined(NOPIC)
 PLIST_SRC+=	${PKGDIR}/PLIST-md.static
 .else
 PLIST_SRC+=	${PKGDIR}/PLIST-md.shared
-.endif  # powerpc || mips || alpha
+.endif  # NOPIC
 .else   # no PLIST at all
 PLIST_SRC=
 .endif  # ${PKGDIR}/PLIST
