@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2004/01/24 14:58:00 grant Exp $
+# $NetBSD: Makefile,v 1.73 2004/02/08 03:00:29 jlam Exp $
 #
 # The CUPS author is very good about taking back changes into the main
 # CUPS distribution.  The correct place to send patches or bug-fixes is:
@@ -29,6 +29,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=			${WRKDIR}/cups-${BASE_VERS}
 UNLIMIT_RESOURCES=	datasize memorysize
+USE_LANGUAGES=		c c++	# pdftops is a C++ application
 USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
