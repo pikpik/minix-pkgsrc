@@ -1,7 +1,14 @@
 $NetBSD$
 
---- src/zbuf/Makefile.default.orig	Wed May  6 23:28:17 1998
-+++ src/zbuf/Makefile.default	Wed May  6 23:28:26 1998
+--- src/zbuf/Makefile.default.orig	Tue Nov 12 14:18:57 1996
++++ src/zbuf/Makefile.default	Thu Feb  8 20:08:06 2001
+@@ -37,5 +37,5 @@
+ $(IO)/dump_struct.c $(IO)/savemat_mod.c
+ 
+-LIBS = -lm
++LIBS?= -lm
+ 
+ # These compile flags are needed to account for differences in the
 @@ -44,5 +44,5 @@
  #
  # for generic machine use (timers not supported)
