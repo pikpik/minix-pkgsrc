@@ -1,5 +1,4 @@
-/*	$Id: setprogname.c,v 1.1.1.1 2003/03/31 05:03:00 grant Exp $	*/
-/*	$NetBSD: setprogname.c,v 1.1.1.1 2003/03/04 13:18:57 grant Exp $	*/
+/*	$NetBSD: setprogname.c,v 1.1.1.1 2003/03/31 05:03:00 grant Exp $	*/
 
 /*-
  * Copyright (c) 2001 The NetBSD Foundation, Inc.

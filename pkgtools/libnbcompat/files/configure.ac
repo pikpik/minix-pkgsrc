@@ -1,3 +1,5 @@
+dnl $NetBSD$
+
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
 AC_INIT([libnbcompat], [20030823], [grant@NetBSD.org])

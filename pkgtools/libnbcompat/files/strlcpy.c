@@ -1,5 +1,4 @@
-/*	$Id: strlcpy.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $	*/
-/*	$NetBSD: strlcpy.c,v 1.1.1.1 2003/03/04 13:18:57 grant Exp $	*/
+/*	$NetBSD: strlcpy.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $	*/
 /*	from OpenBSD: strlcpy.c,v 1.4 1999/05/01 18:56:41 millert Exp 	*/
 
 /*

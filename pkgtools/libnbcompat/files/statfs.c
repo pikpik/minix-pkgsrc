@@ -1,4 +1,5 @@
-/*	$NetBSD: statfs.c,v 1.2 2003/09/02 02:05:22 jlam Exp $	*/
+/*	$NetBSD: statfs.c,v 1.3 2003/09/03 13:11:16 jlam Exp $	*/
+
 /*-
  * Copyright (c) 1998 The NetBSD Foundation, Inc.
  * All rights reserved.

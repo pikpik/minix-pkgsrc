@@ -1,4 +1,4 @@
-dnl $Id: aclocal.m4,v 1.1.1.1 2003/03/31 05:02:22 grant Exp $
+dnl $NetBSD$
 dnl
 
 dnl
