@@ -1,0 +1,5 @@
+@comment $NetBSD: PLIST,v 1.1 1998/06/22 21:53:10 tron Exp $
+lib/python1.5/site-packages/_mysqlmodule.so
+lib/python1.5/site-packages/MySQLdb.py
+lib/python1.5/site-packages/MySQLdb.pyc
+lib/python1.5/site-packages/MySQLdb.pyo
