@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/07 23:46:01 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/09 00:55:06 salo Exp $
 #
 
-DISTNAME=	tinyproxy-1.5.2
+DISTNAME=	tinyproxy-1.5.3
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tinyproxy/}
 
@@ -11,7 +11,6 @@ COMMENT=	lightweight HTTP/SSL proxy
 
 USE_BUILDLINK2=	YES
 USE_PKGINSTALL=	YES
-USE_GMAKE=	YES
 GNU_CONFIGURE=	YES
 
 RCD_SCRIPTS=		tinyproxy
