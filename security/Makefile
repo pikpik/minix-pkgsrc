@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2001/12/30 14:29:07 wiz Exp $
+# $NetBSD: Makefile,v 1.97 2002/01/03 10:59:55 agc Exp $
 #
 
 COMMENT=	Security tools
@@ -86,6 +86,7 @@ SUBDIR+=	rc5des
 SUBDIR+=	rid
 SUBDIR+=	rsaref
 SUBDIR+=	ruby-acl
+SUBDIR+=	ruby-digest
 SUBDIR+=	ruby-md5
 SUBDIR+=	ruby-sha1
 SUBDIR+=	ruby-ssl
