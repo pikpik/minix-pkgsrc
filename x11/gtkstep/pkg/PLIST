@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/08/29 08:28:19 jlam Exp $
+@comment $NetBSD: PLIST,v 1.2 1999/11/20 13:41:55 tron Exp $
 lib/gtk/themes/engines/libstep.a
+lib/gtk/themes/engines/libstep.la
 lib/gtk/themes/engines/libstep.so.0.0
 share/themes/Step/ICON.png
 share/themes/Step/README.html
