@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/03/18 22:10:11 jwise Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/18 22:16:04 jwise Exp $
 
 DISTNAME=       dictd-1.9.15
 PKGNAME=        dict-client-1.9.15
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=   ftp://ftp.dict.org/pub/dict/
 
