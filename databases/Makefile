@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2004/11/06 01:37:07 he Exp $
+# $NetBSD: Makefile,v 1.151 2004/11/06 20:21:53 he Exp $
 #
 
 COMMENT=	Databases
@@ -18,7 +18,6 @@ SUBDIR+=	gdbm
 SUBDIR+=	gdbm_primitive
 SUBDIR+=	geneweb
 SUBDIR+=	gnats
-SUBDIR+=	gnats4
 SUBDIR+=	gnome-mime-data
 SUBDIR+=	gq
 SUBDIR+=	gramps
