@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/04/17 09:37:24 agc Exp $
+# $NetBSD: Makefile,v 1.11 1998/04/22 14:22:41 agc Exp $
 
 DISTNAME=	gimp-0.99.26
 CATEGORIES=	graphics
@@ -25,6 +25,10 @@ CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 
 CFLAGS=		-pipe -O2 -I${LOCALBASE}/include -I${X11BASE}/include
 USE_GTEXINFO=	yes
+
+MAN1=		gimp.1
+
+INFO_FILES=	pdb.info
 
 post-configure:
 	@${ECHO_MSG} "--> now configuring in ${GIMP_DATA}"
