@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/07/03 01:29:39 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2002/07/18 02:19:35 rh Exp $
 #
 
 DISTNAME=		pango-1.0.3
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v2.0/ \
 			ftp://ftp.cs.umn.edu/pub/gimp/gtk/v2.0/ \
@@ -18,6 +18,8 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_GMAKE=		yes
+
+.include "../../mk/bsd.prefs.mk"
 
 # directory appeared in XFree86 4.*
 # if it is there, we are using XFree86 4.* and will
