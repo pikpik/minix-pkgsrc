@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/26 18:56:15 garbled Exp $
+# $NetBSD: Makefile,v 1.6 1999/05/25 23:45:05 jlam Exp $
 #
 
 DISTNAME=	R-0.64.1
@@ -34,6 +34,8 @@ CONFIGURE_ARGS+=--enable-readline --with-x
 #
 .if defined(PAPERSIZE)
 R_PAPERSIZE?=	${PAPERSIZE}
+.else
+R_PAPERSIZE?=	A4
 .endif
 .if (${R_PAPERSIZE} == "Letterdj")
 R_PAPERSIZE=	Letter
