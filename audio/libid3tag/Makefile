@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/07/10 08:34:54 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/10 08:38:35 wiz Exp $
 #
 
 DISTNAME=	libid3tag-0.15.0b
@@ -17,4 +17,5 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
