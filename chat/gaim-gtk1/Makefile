@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/11 15:39:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/23 02:09:58 jmc Exp $
 #
 
 .include "Makefile.common"
 
-CONFLICTS+=		gaim-[0-9]* gaim-gnome-[0-9]*
+CONFLICTS+=		gaim>0.59.8 gaim-gnome-[0-9]*
 
 USE_BUILDLINK2=		YES
 
