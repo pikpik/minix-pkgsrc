@@ -1,9 +1,9 @@
 $NetBSD$
 
---- configure.orig	Tue Mar 13 19:55:14 2001
+--- configure.orig	Thu Apr 26 23:50:36 2001
 +++ configure
-@@ -4177,13 +4177,13 @@
- if { (eval echo configure:4178: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+@@ -4660,13 +4660,13 @@
+ if { (eval echo configure:4661: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
    rm -rf conftest*
    CATOBJEXT=.gmo
 -		   DATADIRNAME=share
@@ -18,7 +18,7 @@ $NetBSD$
  fi
  rm -f conftest*
  		INSTOBJEXT=.mo
-@@ -4412,7 +4412,7 @@
+@@ -4895,7 +4895,7 @@
        # We need to process the po/ directory.
        POSUB=po
      else
