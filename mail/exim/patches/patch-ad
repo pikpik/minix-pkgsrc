@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.3 2002/12/09 11:38:05 ad Exp $
 
 --- OS/Makefile-NetBSD~	Mon Jul 22 09:59:45 2002
 +++ OS/Makefile-NetBSD	Mon Dec  9 11:22:09 2002
@@ -8,7 +8,7 @@ $NetBSD$
  
 -# Include Makfile.NetBSD-a.out
 +CHOWN_COMMAND=/usr/sbin/chown
-+CFLAGS=-O2 -pipe
++CFLAGS+=-O2 -pipe
  
 -.if exists(OS/Makefile-NetBSD-a.out)
 -.include "OS/Makefile-NetBSD-a.out"
