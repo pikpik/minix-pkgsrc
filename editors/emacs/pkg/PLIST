@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 1998/09/04 02:28:55 tron Exp $
+@comment $NetBSD: PLIST,v 1.15 1998/10/03 02:44:42 tv Exp $
 bin/emacs
 bin/emacs-20.3
 bin/emacs-etags
@@ -1361,6 +1361,7 @@ share/emacs/20.3/lisp/emacs-lisp/tq.elc
 share/emacs/20.3/lisp/emacs-lisp/trace.elc
 share/emacs/20.3/lisp/COPYING
 share/emacs/20.3/lisp/site-load.el
+share/emacs/20.3/site-lisp/subdirs.el
 share/emacs/site-lisp/subdirs.el
 @dirrm share/emacs/20.3/lisp/calendar
 @dirrm share/emacs/20.3/lisp/textmodes
