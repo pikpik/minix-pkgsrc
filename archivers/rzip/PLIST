@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/runzip
+bin/rzip
+man/man1/runzip.1
+man/man1/rzip.1
