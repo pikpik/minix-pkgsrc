@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2002/10/16 14:47:01 dillo Exp $
+# $NetBSD: Makefile,v 1.92 2002/11/03 09:18:07 rh Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -90,6 +90,7 @@ SUBDIR+=	xpdf-chinese-simplified
 SUBDIR+=	xpdf-chinese-traditional
 SUBDIR+=	xpdf-cyrillic
 SUBDIR+=	xpdf-greek
+SUBDIR+=	xpdf-hebrew
 SUBDIR+=	xpdf-japanese
 SUBDIR+=	xpdf-korean
 SUBDIR+=	xpdf-latin2
