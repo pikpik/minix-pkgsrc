@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/29 17:26:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/29 20:21:38 seb Exp $
 #
 
 DISTNAME=	ircd-hybrid-6.2
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	seb@pbox.org
 HOMEPAGE=	http://www.ircd-hybrid.net/
-COMMENT=	Irc server with many options
+COMMENT=	IRC server with many options
 
 GNU_CONFIGURE=	YES
 
