@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: upsd.sh,v 1.2 2001/11/21 21:38:55 jlam Exp $
+# $NetBSD: upsd.sh,v 1.3 2002/02/05 06:04:41 jlam Exp $
 #
 # PROVIDE: upsd
 # REQUIRE: upsdriver
@@ -16,7 +16,7 @@ command="@PREFIX@/sbin/${name}"
 required_files="@NUT_CONFDIR@/${name}.conf"
 pidfile="@NUT_STATEDIR@/${name}.pid"
 
-if [ -f /etc/rc.d ]
+if [ -f /etc/rc.subr ]
 then
 	load_rc_config $name
 	run_rc_command "$1"
