@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2001/02/16 15:51:50 wiz Exp $
+# $NetBSD: Makefile,v 1.118 2001/02/18 12:42:09 tron Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -98,6 +98,8 @@ SUBDIR+=	qvplay
 SUBDIR+=	rayshade
 SUBDIR+=	ruby-gl
 SUBDIR+=	sane
+SUBDIR+=	sane-backends
+SUBDIR+=	sane-frontends
 SUBDIR+=	scigraphica
 SUBDIR+=	sketch
 SUBDIR+=	tgif
