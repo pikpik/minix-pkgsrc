@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/08/27 06:29:07 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/29 05:59:23 jdolecek Exp $
 
 MODNAME=		mysql
 CATEGORIES+=		databases
@@ -7,7 +7,7 @@ COMMENT=		PHP4 extension for MySQL databases
 
 MAINTAINER=		tech-pkg@NetBSD.org
 
-DISTINFO_FILE=		${.CURDIR}/distinfo
+USE_PHP_EXT_PATCHES=	yes
 
 .include "../../www/php4/Makefile.module"
 
