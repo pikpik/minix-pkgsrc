@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- Makefile.in.orig	Wed Jan  1 19:24:13 2003
++++ Makefile.in
+@@ -678,7 +678,6 @@ INSTALL_MODULES = \
+ 	install-dejagnu \
+ 	install-diff \
+ 	install-dosutils \
+-	install-etc \
+ 	install-fastjar \
+ 	install-fileutils \
+ 	install-findutils \
+@@ -698,7 +697,6 @@ INSTALL_MODULES = \
+ 	install-itcl \
+ 	install-ld \
+ 	install-libgui \
+-	install-libiberty \
+ 	install-libtool \
+ 	install-m4 \
+ 	install-make \
