@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.153 2003/12/28 01:11:45 heinz Exp $
+# $NetBSD: Makefile,v 1.154 2003/12/31 00:45:31 kristerw Exp $
 #
 
 COMMENT=	Security tools
@@ -29,6 +29,7 @@ SUBDIR+=	dsniff
 SUBDIR+=	egd
 SUBDIR+=	flawfinder
 SUBDIR+=	fortify
+SUBDIR+=	fp-netbsd-ws
 SUBDIR+=	fressh
 SUBDIR+=	fsh
 SUBDIR+=	gnupg
