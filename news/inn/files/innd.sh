@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: innd.sh,v 1.11 2001/07/29 05:11:26 tron Exp $
+# $NetBSD: innd.sh,v 1.12 2002/08/27 15:27:03 grant Exp $
 #
 # PROVIDE: inn
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ then
 
 	if [ ! -f @PREFIX@/etc/nntp/domainname ]
 	then
-		(set - X `grep ^fromhost: @INN_DATA_DIR@/etc/inn.conf`
+		(set - X `grep ^fromhost: @PKG_SYSCONFDIR@/inn.conf`
 		if [ $# -eq 3 ]
 		then
 			echo $3 >@PREFIX@/etc/nntp/domainname
