@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- vfs/Makefile.in.orig	Mon May 25 06:16:04 1998
 +++ vfs/Makefile.in	Sun Oct  4 09:07:34 1998
 @@ -91,25 +91,25 @@
