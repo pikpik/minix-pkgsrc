@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2004/02/14 18:26:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.49 2004/02/22 07:03:20 minskim Exp $
 
 DISTNAME=	libxml2-${LIBXML_VERSION}
 CATEGORIES=	textproc
@@ -16,7 +16,7 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	libxml-2.0.pc.in
 
-LIBXML_VERSION=		2.6.6
+LIBXML_VERSION=		2.6.7
 PLIST_SUBST+=		LIBXML_VERSION=${LIBXML_VERSION}
 
 GNU_CONFIGURE=		yes
