@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.25 2000/06/20 23:20:13 jlam Exp $
+@comment $NetBSD: PLIST,v 1.26 2000/06/25 19:06:21 rh Exp $
 bin/dns-helper
 bin/gconfigger
 bin/gnome-bug
@@ -580,7 +580,7 @@ share/type-convert/type.convert
 @unexec rmdir %D/etc/httpd 2>/dev/null || true
 @dirrm share/idl
 @dirrm share/mime-info
-@dirrm share/pixmaps
+@unexec rmdir %D/share/pixmaps 2>/dev/null || true
 @dirrm share/type-convert
 @exec mkdir -p ${LOCALSTATEDIR}
 @unexec rm -rf ${LOCALSTATEDIR}
