@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:53 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:34 frueauf Exp $
 #
 
 DISTNAME=		dxpc-3.7.0
@@ -10,8 +10,6 @@ MAINTAINER=		frueauf@netbsd.org
 
 GNU_CONFIGURE=		yes
 USE_X11=		yes
-
-MAN1=			dxpc.1
 
 post-install:
 	@strip ${PREFIX}/bin/dxpc

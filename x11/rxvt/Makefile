@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:55 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:35 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
 #
 
@@ -14,6 +14,5 @@ MAINTAINER=		packages@netbsd.org
 
 USE_X11=		yes
 GNU_CONFIGURE=		yes
-MAN1=			rxvt.1
 
 .include "../../mk/bsd.pkg.mk"

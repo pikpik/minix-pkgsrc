@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1998/04/22 14:22:50 agc Exp $
+# $NetBSD: Makefile,v 1.14 1998/05/19 00:45:03 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/10/10 09:24:38 tg Exp
 #
 
@@ -16,6 +16,5 @@ CONFIGURE_ARGS+= --with-mesagl --without-motif --without-sx \
 		--without-editres --without-dtsaver --without-rplay \
 		--without-nas
 USE_X11=	yes
-MAN1=		xlock.1
 
 .include "../../mk/bsd.pkg.mk"

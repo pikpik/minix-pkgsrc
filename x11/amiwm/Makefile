@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:52 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/05/22 13:49:41 tron Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -11,7 +11,5 @@ MAINTAINER=	rh@trapdoor.vip.at
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="-DHAVE_X11_EXTENSIONS_SHAPE_H=1 -O"
-
-MAN1=		amiwm.1
 
 .include "../../mk/bsd.pkg.mk"
