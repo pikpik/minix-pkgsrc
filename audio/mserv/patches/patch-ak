@@ -22,7 +22,19 @@ $NetBSD$
  	    mserv_strtoprintable(author);
  	    mserv_strtoprintable(name);
  	    mserv_strtoprintable(genres);
-@@ -3370,7 +3370,13 @@ int mserv_setmixer(t_client *cl, int wha
+@@ -3328,8 +3328,10 @@ int mserv_setmixer(t_client *cl, int wha
+     return -1;
+   }
+   curval = curval & 0xff;
+-  if (!*line)
++  if (!*line) {
++    close(mixer_fd);
+     return curval;
++  }
+   if (*line == '+' || *line == '-') {
+     type = *line == '+' ? 1 : -1;
+     param = 1;
+@@ -3370,7 +3372,13 @@ int mserv_setmixer(t_client *cl, int wha
  	mserv_response(cl, "IOCTLWR", NULL);
  	return -1;
        }
