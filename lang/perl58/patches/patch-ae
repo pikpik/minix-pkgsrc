@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- makedepend.SH.orig	Wed Jul 10 00:06:42 2002
++++ makedepend.SH
+@@ -79,6 +79,7 @@ if test -f Makefile; then
+     case "$osname" in
+     os2) ;;
+     netbsd) ;;
++    freebsd) ;;
+     *) $touch $firstmakefile ;;
+     esac
+ fi
