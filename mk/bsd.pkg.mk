@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1159 2003/03/30 05:06:49 grant Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1160 2003/04/03 16:55:09 salo Exp $
 #
 # This file is in the public domain.
 #
@@ -538,7 +538,7 @@ uptodate-digest:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	if [ ! -f ${DIGEST} -o ${DIGEST_VERSION} -lt ${DIGEST_REQD} ]; then \
 		case ${PKGNAME} in					\
-		digest-*)						\
+		digest-* | pkgchk-*)					\
 			;;						\
 		*)							\
 			{ cd ${_PKGSRCDIR}/pkgtools/digest;		\
