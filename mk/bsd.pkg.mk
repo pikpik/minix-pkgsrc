@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.818 2001/10/01 21:15:11 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.819 2001/10/03 07:57:04 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -133,6 +133,17 @@ NO_MTREE=		yes
 .else
 PREFIX=			${LOCALBASE}
 .endif
+
+# We need to make sure the buildlink-x11 package is not installed since it
+# currently breaks builds that use imake.
+#
+.if defined(USE_IMAKE)
+.  if exists(${LOCALBASE}/lib/X11/config/buildlinkX11.def) || \
+      exists(${X11BASE}/lib/X11/config/buildlinkX11.def)
+IGNORE+= "${PKGNAME} uses imake, but the buildlink-x11 package was found." \
+	 "    Please deinstall it (pkg_delete buildlink-x11)."
+.  endif
+.endif	# USE_IMAKE
 
 .if defined(USE_GMAKE)
 BUILD_DEPENDS+=		gmake>=3.78:../../devel/gmake
