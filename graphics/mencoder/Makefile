@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/06/08 23:41:56 veego Exp $
+# $NetBSD: Makefile,v 1.3 2002/08/28 07:00:46 jlam Exp $
 
 .include "../../graphics/mplayer-share/Makefile.common"
 
@@ -7,6 +7,7 @@ COMMENT=	Simple movie encoder for MPlayer-playable movies
 
 USE_BUILDLINK2=		# defined
 CONFIGURE_ARGS+=	--disable-nas
+CONFIGURE_ARGS+=	--confdir=${PREFIX}/share/mplayer
 
 ALL_TARGET=	mencoder
 

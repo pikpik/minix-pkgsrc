@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/06/08 23:41:55 veego Exp $
+# $NetBSD: Makefile,v 1.9 2002/08/28 07:00:45 jlam Exp $
 
 .include "../../graphics/mplayer-share/Makefile.common"
 
@@ -43,6 +43,7 @@ DISTFILES+=	${SKINS}
 USE_BUILDLINK2=		# defined
 CONFIGURE_ARGS+=	--enable-gui
 CONFIGURE_ARGS+=	--disable-mencoder
+CONFIGURE_ARGS+=	--confdir=${PREFIX}/share/mplayer
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mplayer ${PREFIX}/bin/gmplayer
