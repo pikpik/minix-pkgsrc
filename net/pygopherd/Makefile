@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/07/09 22:45:04 recht Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:47 reed Exp $
 #
 
 DISTNAME=	pygopherd_2.0.9
@@ -43,7 +43,7 @@ PYTHON_PATCH_SCRIPTS+=	pygopherd/gopherentryTest.py
 PYTHON_PATCH_SCRIPTS+=	pygopherd/initializationTest.py
 PYTHON_PATCH_SCRIPTS+=	pygopherd/testutil.py
 
-PYTHON_VERSIONS_ACCEPTED=	23 23pth 22 22pth
+PYTHON_VERSIONS_ACCEPTED=	23 22
 
 SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch

@@ -1,16 +1,26 @@
-# $NetBSD: Makefile,v 1.25 2004/06/10 10:13:06 recht Exp $
+# $NetBSD: Makefile.common,v 1.3 2004/12/20 13:16:02 grant Exp $
 #
 
+DISTNAME=	Python-2.3.4
 PKGNAME=	python23-pth-2.3.4
+PKGREVISION=	3
+CATEGORIES=	lang python
+MASTER_SITES=	# empty
+DISTFILES=	# empty
 
-#PKG_INSTALLATION_TYPES=	overwrite pkgviews
+MAINTAINER=	recht@NetBSD.org
+HOMEPAGE=	http://www.python.org/
+COMMENT=	Interpreted, interactive, object-oriented programming language
 
-PTHREAD_OPTS=   require
-.include "../../mk/pthread.buildlink3.mk"
-.if ${PTHREAD_TYPE} == "pth"
-CONFIGURE_ARGS+=	--with-pth
-.endif
+DEPENDS+=	python23>=2.3.4:../../lang/python23
 
-PY_VER_SUFFIX=	2p3
+EXTRACT_ONLY=	# empty
+NO_CHECKSUM=	yes
+NO_CONFIGURE=	yes
+NO_BUILD=	yes
+NO_BUILDLINK=	yes
+NO_MTREE=	yes
 
-.include "../../lang/python23/Makefile.common"
+do-install:	# empty
+
+.include "../../mk/bsd.pkg.mk"

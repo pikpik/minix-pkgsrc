@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/05/18 12:44:05 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/07/22 09:16:01 recht Exp $
 #
 
 DISTNAME=		Lupy-0.2.1
@@ -14,7 +14,7 @@ USE_BUILDLINK3=		yes
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 
-PYTHON_VERSIONS_ACCEPTED=	23pth 22pth 23 22
+PYTHON_VERSIONS_ACCEPTED=	23 22
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
