@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/10/28 12:42:36 agc Exp $
+# $NetBSD: Makefile,v 1.48 2002/11/18 13:36:53 cjep Exp $
 #
 
 COMMENT=	Archivers
@@ -28,6 +28,7 @@ SUBDIR+=	lha
 SUBDIR+=	liblzo
 SUBDIR+=	lzop
 SUBDIR+=	macutil
+SUBDIR+=	makeself
 SUBDIR+=	mousetar
 SUBDIR+=	mscompress
 SUBDIR+=	nulib2
