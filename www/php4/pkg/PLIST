@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/php.ini-dist
+etc/php.ini-optimized
+share/php4/php4.gif
+@dirrm share/php4
