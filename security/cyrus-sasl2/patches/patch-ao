@@ -1,8 +1,8 @@
 $NetBSD$
 
---- include/Makefile.in.orig	Wed Mar 10 10:56:11 2004
+--- include/Makefile.in.orig	Fri Jul  2 15:40:19 2004
 +++ include/Makefile.in
-@@ -560,9 +560,6 @@ uninstall-am: uninstall-frameheaderDATA 
+@@ -562,9 +562,6 @@ uninstall-am: uninstall-frameheaderDATA 
  	uninstall-info-am uninstall-saslincludeHEADERS
  
  

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Wed Mar 10 10:56:11 2004
+--- Makefile.in.orig	Fri Jul  2 15:39:53 2004
 +++ Makefile.in
-@@ -235,7 +235,7 @@ target_vendor = @target_vendor@
+@@ -237,7 +237,7 @@ target_vendor = @target_vendor@
  @MACOSX_FALSE@INSTALLOSX = 
  @MACOSX_TRUE@INSTALLOSX = install-exec-local-osx
  
