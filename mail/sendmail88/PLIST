@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:01:21 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/02/15 10:12:49 skrll Exp $
 etc/mailer.conf.sendmail
 libexec/sendmail/sendmail
-libexec/sendmail/smrsh
 sbin/mailstats
 sbin/makemap
 sbin/praliases
