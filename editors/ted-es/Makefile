@@ -1,8 +1,7 @@
 # $NetBSD: Makefile,v 1.2 2001/05/19 17:18:43 wiz Exp $
 
 DISTNAME=	Ted_es_ES
-PKGNAME=	ted-es-2.10
-PKGREVISION=	1
+PKGNAME=	ted-es-2.11
 WRKSRC=		${WRKDIR}
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/ \
@@ -16,6 +15,7 @@ DEPENDS+=       ted>=2.6:../../editors/ted
 
 USE_X11BASE=	YES
 
+DIST_SUBDIR=	Ted-2.11
 NO_BUILD=	YES
 
 do-install:
