@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/09/17 19:41:10 grant Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:27:15 agc Exp $
 
 DISTNAME=	asclock-classic-1.0
 PKGNAME=	asclock-1.0
@@ -54,7 +54,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/asclock.sh ${PREFIX}/bin/asclock
 	${INSTALL_PROGRAM} ${WRKSRC}/asclock ${PREFIX}/libexec/asclock-classic
 	${CAT} ${PKGDIR}/PLIST > ${PLIST_SRC}
-.if (${OPSYS} == SunOS)
+.if (${OPSYS} == SunOS) || (${OPSYS} == "Linux")
 	${INSTALL_DATA} ${WRKSRC}/asclock.man ${PREFIX}/man/man1/asclock.1
 	@${ECHO} man/man1/asclock.1 >> ${PLIST_SRC}
 .else
