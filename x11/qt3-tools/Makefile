@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/01/07 23:56:56 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2003/02/04 18:09:17 skrll Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -8,8 +8,6 @@ COMMENT=		QT GUI (WYSIWYG) builder and other tools
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include \
 			-L${QTDIR}/lib
-
-MAKE_ENV+=              LIBQT="-lqt-mt"
 
 USE_BUILDLINK2=		yes
 BUILD_QT3=		yes

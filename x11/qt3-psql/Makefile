@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/01/05 20:14:35 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2003/02/04 18:09:17 skrll Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -8,8 +8,6 @@ COMMENT=		QT postgresql driver
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include \
 			-L${QTDIR}/lib
-
-MAKE_ENV+=              LIBQT="-lqt-mt"
 
 USE_BUILDLINK2=		yes
 BUILD_QT3=		yes
