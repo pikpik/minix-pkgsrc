@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 1999/12/14 16:33:12 bouyer Exp $
+# $NetBSD: Makefile,v 1.59 1999/12/20 12:04:26 rh Exp $
 # FreeBSD Id: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp
 #
 
@@ -7,6 +7,7 @@
     SUBDIR += ap-DBI
     SUBDIR += ap-Embperl
     SUBDIR += ap-auth-cookie
+    SUBDIR += ap-auth-postgresql
     SUBDIR += ap-dtcl
     SUBDIR += ap-fastcgi
     SUBDIR += ap-ssl
