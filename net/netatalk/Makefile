@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/01/08 16:48:42 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1999/03/01 18:57:13 wrstuden Exp $
 #
 
 DISTNAME=		netatalk-990130
@@ -11,5 +11,9 @@ MAINTAINER=		wrstuden@netbsd.org
 HOMEPAGE=		http://www.umich.edu/~rsug/netatalk/
 
 CONFLICTS=		netatalk-19981109
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/sys/netbsd/rc.atalk ${PREFIX}/etc
+	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../mk/bsd.pkg.mk"
