@@ -10,7 +10,6 @@ sbin/applyfilter
 sbin/checkgroups
 sbin/fetchnews
 sbin/leafnode
-sbin/lsort
 sbin/texpire
 share/examples/leafnode/config.example
 @dirrm share/examples/leafnode
