@@ -1,14 +1,17 @@
-# $NetBSD: Makefile,v 1.3 1997/11/13 14:47:23 agc Exp $
 # New ports collection makefile for:	MIT pthreads
 # Version required:     1.60beta6
 # Date created:		10th October 1997
 # Whom:			Alistair Crooks (agc@netbsd.org)
+#
+# $NetBSD: Makefile,v 1.4 1997/11/13 14:48:50 agc Exp $
 #
 
 DISTNAME=       pthreads-1_60_beta6
 PKGNAME=        mit-pthreads-1.60b6
 CATEGORIES=	devel
 MASTER_SITES=   ftp://sipb.mit.edu/pub/pthreads/
+
+MAINTAINER=	agc@netbsd.org
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}/pthreads
