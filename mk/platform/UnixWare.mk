@@ -1,4 +1,4 @@
-# $NetBSD: UnixWare.mk,v 1.2 2004/10/13 15:31:31 tv Exp $
+# $NetBSD: UnixWare.mk,v 1.4 2004/11/16 18:04:00 tv Exp $
 #
 # Variable definitions for the UnixWare 7 operating system.
 
@@ -132,7 +132,7 @@ _USE_GNU_GETTEXT=	yes		# Use GNU gettext
 #
 # The native linker for UnixWare doesn't really support an option to pass
 # rpath directives, but pretend it does anyway since the wrapper scripts
-# will correctly convert it into the the proper LD_RUN_PATH variable.
+# will correctly convert it into the proper LD_RUN_PATH variable.
 #
 _USE_RPATH=		yes		# add rpath to LDFLAGS
 
