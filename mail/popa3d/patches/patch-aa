@@ -2,6 +2,24 @@ $NetBSD$
 
 --- params.h.orig	Sun Sep  8 11:49:24 2002
 +++ params.h
+@@ -13,7 +13,7 @@
+ /*
+  * Are we going to be a standalone server or start via an inetd clone?
+  */
+-#define POP_STANDALONE			0
++#define POP_STANDALONE			1
+ 
+ #if POP_STANDALONE
+ 
+@@ -38,7 +38,7 @@
+  * option is provided primarily as a way to meet conventions of certain
+  * systems where all services obey libwrap access controls.
+  */
+-#define DAEMON_LIBWRAP			0
++#define DAEMON_LIBWRAP			1
+ 
+ #if DAEMON_LIBWRAP
+ /*
 @@ -143,8 +143,8 @@
   *
   * Note that there's no built-in password aging support.

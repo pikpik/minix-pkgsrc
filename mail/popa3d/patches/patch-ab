@@ -26,7 +26,15 @@ $NetBSD$
  # HP-UX trusted system
  #LIBS += -lsec
  # Solaris (POP_STANDALONE, POP_VIRTUAL)
-@@ -24,7 +24,7 @@ LIBS =
+@@ -17,14 +17,14 @@ LIBS =
+ # PAM
+ #LIBS += -lpam
+ # TCP wrappers
+-#LIBS += -lwrap
++LIBS += -lwrap
+ # libwrap may also want this
+ #LIBS += -lnsl
+ # OpenSSL (-DHAVE_OPENSSL)
  #LIBS += -lcrypto
  
  DESTDIR =
