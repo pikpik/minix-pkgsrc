@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.emacs,v 1.1 2001/01/28 03:16:57 jtb Exp $
+@comment $NetBSD: PLIST.emacs,v 1.1 2001/11/01 01:03:04 zuntum Exp $
 bin/base64-decode
 bin/base64-encode
 bin/qp-decode
@@ -108,6 +108,8 @@ share/emacs/site-lisp/vm/tapestry.elc
 share/emacs/site-lisp/vm/vm-autoload.el
 share/emacs/site-lisp/vm/vm-autoload.elc
 share/emacs/site-lisp/vm/vm-byteopts.el
+share/emacs/site-lisp/vm/vm-crypto.el
+share/emacs/site-lisp/vm/vm-crypto.elc
 share/emacs/site-lisp/vm/vm-delete.el
 share/emacs/site-lisp/vm/vm-delete.elc
 share/emacs/site-lisp/vm/vm-digest.el
