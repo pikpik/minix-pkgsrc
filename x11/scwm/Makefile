@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/08/31 09:43:12 agc Exp $
+# $NetBSD: Makefile,v 1.5 1999/10/23 00:05:18 tron Exp $
 #
 
 DISTNAME=	scwm-0.9
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://scwm.mit.edu/pub/scwm/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://scwm.mit.edu/
 
-DEPENDS+=	guile-1.3.2:../../lang/guile
+DEPENDS+=	guile-1.3.*:../../lang/guile
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 DEPENDS+=	gtar-1.12:../../archivers/gtar
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
