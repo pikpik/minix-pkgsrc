@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1 1998/07/17 04:39:19 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 1998/07/20 13:09:24 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.6 1996/11/18 11:22:35 asami Exp
 #
 
 DISTNAME=	bcc
 PKGNAME=	bcc-95.3.12
 CATEGORIES=	devel
+
+NOT_FOR_ARCHS=	alpha	#Severe LP64 problems
 
 MAINTAINER=	tsarna@netbsd.org
 

@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.19 1998/09/07 22:58:24 mycroft Exp $
+# $NetBSD: Makefile,v 1.20 1998/09/07 23:20:04 mycroft Exp $
 #
 
 DISTNAME=		xmame-0.34b2.2
 CATEGORIES=		emulators games x11
 MASTER_SITES=		ftp://drake.dit.upm.es/xmame/ftpsite/
 EXTRACT_SUFX=		.tgz
+
+NOT_FOR_ARCHS=		alpha	#gcc lossage
 
 MAINTAINER=		mycroft@NetBSD.ORG
 HOMEPAGE=		http://drake.dit.upm.es/~mame/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/08/20 15:17:11 tsarna Exp $
+# $NetBSD: Makefile,v 1.16 1998/09/15 17:05:06 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/09/11 03:54:43 fenner Exp 
 #
 
@@ -6,6 +6,8 @@ DISTNAME=	vat-4.0b2
 CATEGORIES=	mbone
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 DISTFILES=	vatsrc-4.0b2.tar.gz
+
+NOT_FOR_ARCHS=	alpha	#filter.cc compiler error
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www-nrg.ee.lbl.gov/vat/

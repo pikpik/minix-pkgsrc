@@ -1,8 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/09/06 06:51:04 garbled Exp $
 
 DISTNAME=		bochs-980707a
 CATEGORIES=		emulators
 MASTER_SITES=		ftp://ftp.std.com/pub/bochs/
+
+NOT_FOR_ARCHS=		alpha	#runs, SEGV.
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://world.std.com/~bochs/

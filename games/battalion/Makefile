@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/09/13 20:24:28 garbled Exp $
+# $NetBSD: Makefile,v 1.7 1998/09/13 23:05:16 garbled Exp $
 #
 
 DISTNAME=	battalion
@@ -7,6 +7,8 @@ WRKSRC=		${WRKDIR}/battalionSource
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.evl.uic.edu/aej/
 DISTFILES=	battalionSource1.4.tar.Z battalionSUN4.tar.gz
+
+NOT_FOR_ARCHS=	alpha	# relies on Mesa (gcc)
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.evl.uic.edu/aej/AndyBattalion.html
