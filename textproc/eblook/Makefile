@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:54:13 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:27:31 martti Exp $
 #
 
 DISTNAME=	eblook-1.5.1
@@ -12,6 +12,8 @@ COMMENT=	Interactive command-line interface for EPWING electric dictionaries
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	eblook.info
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../textproc/eb/buildlink2.mk"
