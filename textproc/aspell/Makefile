@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2004/02/23 21:58:56 snj Exp $
+# $NetBSD: Makefile,v 1.22 2004/07/24 19:05:37 salo Exp $
 #
 
 DISTNAME=		aspell-0.50.5
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_GNU:=aspell/}
 
@@ -23,7 +24,13 @@ CONFIGURE_ARGS+=	--enable-curses=ncurses
 
 REPLACE_PERL=		scripts/aspell-import
 
+LIBS.SunOS+=		-lm
+
 .include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+LIBS.SunOS+=		-lCrun -lCstd
+.endif
 
 pre-patch:
 .if !empty(PKGSRC_COMPILER:Msunpro)
