@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/09/04 00:57:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.26 1999/09/13 20:04:48 fredb Exp $
 
 DISTNAME=		ncurses-4.2
 CATEGORIES=		devel
@@ -31,5 +31,9 @@ post-patch:
 	  ${SED} -e '/#include/s/curses.h/ncurses.h/' \
 		<$$i >`basename $$i .3x`.3; \
 	  ${RM} -f $$i; done )
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/c++/demo.cc \
+		${PREFIX}/share/examples/ncurses++demo.cc
 
 .include "../../mk/bsd.pkg.mk"
