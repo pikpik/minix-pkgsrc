@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.77 2004/05/22 10:38:06 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2004/06/10 10:06:43 grant Exp $
 #
 
 DISTNAME=	cvs-1.11.17
+PKGREVISION=	1
 CATEGORIES=	devel
 # (SSL) download URL according to http://www.cvshome.org/ is
 # https://ccvs.cvshome.org/files/documents/19/191/cvs-1.11.17.tar.bz2
