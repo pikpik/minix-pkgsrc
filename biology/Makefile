@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/09/30 02:11:32 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/10/04 19:16:29 jschauma Exp $
 #
 
 COMMENT=	Software for the biological sciences
@@ -13,6 +13,7 @@ SUBDIR+=	genesplicer
 SUBDIR+=	glimmer
 SUBDIR+=	gp
 SUBDIR+=	hmmer
+SUBDIR+=	lucy
 SUBDIR+=	mummer
 SUBDIR+=	nut
 SUBDIR+=	pdbalign
