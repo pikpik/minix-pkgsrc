@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/01/15 12:49:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2005/02/26 17:22:33 jmmv Exp $
 
 DISTNAME=		startup-notification-0.8
 CATEGORIES=		x11 gnome
@@ -19,7 +19,7 @@ USE_X11=		yes
 PKGCONFIG_OVERRIDE=	libstartup-notification-1.0.pc.in
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/startup-notification/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/startup-notification
 	cd ${WRKSRC} && ${INSTALL_DATA} AUTHORS COPYING ChangeLog NEWS \
 		doc/startup-notification.txt \
 		${PREFIX}/share/doc/startup-notification/
