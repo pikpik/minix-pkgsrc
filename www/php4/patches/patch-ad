@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ext/imap/php_imap.c.orig	Sat Sep  9 16:26:15 2000
+--- ext/imap/php_imap.c.orig	Wed Oct 25 13:43:52 2000
 +++ ext/imap/php_imap.c
-@@ -389,7 +389,11 @@
+@@ -392,7 +392,11 @@
  	ZEND_INIT_MODULE_GLOBALS(imap, php_imap_init_globals, NULL)
  
  
