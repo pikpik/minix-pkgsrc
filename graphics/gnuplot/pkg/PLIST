@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gnuplot
+bin/gnuplot_x11
+man/man1/gnuplot.1
+lib/gnuplot.gih
