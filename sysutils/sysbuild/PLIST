@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/sysbuild
+man/man8/sysbuild.8
+share/examples/sysbuild/crontab
+share/examples/sysbuild/default.conf
+@dirrm share/examples/sysbuild
