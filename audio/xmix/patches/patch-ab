@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -r -u ../../src/xmix-2.1/xmix.c ./xmix.c
 --- ../../src/xmix-2.1/xmix.c	Sun Jan 17 13:13:12 1999
 +++ ./xmix.c	Sun Jan 17 13:16:12 1999

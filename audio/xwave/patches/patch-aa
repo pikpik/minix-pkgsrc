@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/XWave.orig	Thu Aug 13 01:27:09 1998
 +++ src/XWave	Mon Feb  8 16:41:18 1999
 @@ -2,7 +2,7 @@
