@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/02/25 03:00:49 grant Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/24 19:45:30 jlam Exp $
 #
 
 DISTNAME=	mod_mp3-0.35
-PKGNAME=	ap-mp3-0.35
+PKGNAME=	${DISTNAME:C|mod_|ap-|}
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tangent.org/pub/apache/ \
 		http://software.tangent.org/download/
@@ -18,18 +18,18 @@ DOC_DIR=	${PREFIX}/share/httpd/htdocs/manual/mod/mod_mp3
 
 do-build:
 	@cd ${WRKSRC}/src && ${PREFIX}/sbin/apxs -c -o mod_mp3.so \
+		common.c \
 		directives.c \
 		encode.c \
 		ice.c \
-		load.c \
-		mod_mp3.c \
-		shout.c \
-		utility.c \
-		ogg.c \
-		common.c \
 		id3.c \
+		internal_dispatch.c \
+		load.c \
 		log.c \
-		internal_dispatch.c
+		mod_mp3.c \
+		ogg.c \
+		shout.c \
+		utility.c
 
 do-install:
 	@cd ${WRKSRC}/src && ${PREFIX}/sbin/apxs -i mod_mp3.so
