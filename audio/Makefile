@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.189 2003/12/13 20:26:03 ben Exp $
+# $NetBSD: Makefile,v 1.190 2003/12/24 00:16:08 ben Exp $
 #
 
 COMMENT=	Audio tools
@@ -67,6 +67,7 @@ SUBDIR+=	gmp3info
 SUBDIR+=	gnome-audio
 SUBDIR+=	gnome-media
 SUBDIR+=	gnome2-media
+SUBDIR+=	gnome-speech
 SUBDIR+=	gogo
 SUBDIR+=	gqmpeg
 SUBDIR+=	gqmpeg-skins
