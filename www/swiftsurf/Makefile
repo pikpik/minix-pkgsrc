@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/07/22 04:14:37 martti Exp $
+# $NetBSD: Makefile,v 1.4 2003/12/30 17:28:39 cjep Exp $
 
 DISTNAME=		swiftsurf-1.2.5
 CATEGORIES=		www
@@ -11,7 +11,7 @@ COMMENT=		Web proxy that can handle http and https
 BUILD_DEPENDS=		ocaml>=3.00:../../lang/ocaml
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")
 ALL_TARGET=	nat

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/20 12:27:59 agc Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/23 21:50:49 jmmv Exp $
 
 DISTNAME=	quanta-2.0-pr2
 PKGNAME=	quanta-1.9.9.2
@@ -19,7 +19,7 @@ BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK2=		YES
 
 USE_PERL5=		build
-USE_GMAKE=              YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          YES
 USE_LIBTOOL=            YES
 LTCONFIG_OVERRIDE=      ${WRKSRC}/admin/ltconfig

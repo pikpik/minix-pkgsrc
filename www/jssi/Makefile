@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/08/23 15:26:28 jschauma Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/20 12:27:59 agc Exp $
 
 DISTNAME=	ApacheJSSI-1.1.2
 PKGNAME=	jssi-1.1.2
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/ApacheJSSI-1.1.2/src/java
 
 .include "../../mk/bsd.prefs.mk"
 
-USE_GMAKE=
+USE_GNU_TOOLS+=		make
 NO_CONFIGURE=
 MAKE_ENV+=	CLASSPATH=${CLASSPATH}
 

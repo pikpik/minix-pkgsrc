@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2004/01/06 06:10:51 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2004/01/20 12:27:59 agc Exp $
 #
 
 DISTNAME=		lynx2.8.5dev.7
@@ -23,7 +23,7 @@ WRKSRC=			${WRKDIR}/lynx2-8-5
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 INSTALL_TARGET=		install-full install-lss
 MAKEFILE=       	makefile
 
