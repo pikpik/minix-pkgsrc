@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xcruise
+share/doc/xcruise/README
+@dirrm share/doc/xcruise
