@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2004/09/25 16:27:04 uebayasi Exp $
+# $NetBSD: Makefile,v 1.117 2004/10/02 14:26:19 dmcmahill Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -17,6 +17,8 @@ SUBDIR+=	compat13
 SUBDIR+=	compat14
 SUBDIR+=	compat14-crypto
 SUBDIR+=	compat16
+SUBDIR+=	cygwin_esound
+SUBDIR+=	cygwin_lib
 SUBDIR+=	darcnes
 SUBDIR+=	darwin_lib
 SUBDIR+=	dega
