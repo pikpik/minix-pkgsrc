@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2000/04/21 10:59:53 mjl Exp $
+# $NetBSD: Makefile,v 1.33 2000/05/25 17:58:34 wennmach Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -32,5 +32,7 @@
     SUBDIR += stunnel
     SUBDIR += sudo
     SUBDIR += tripwire
+    SUBDIR += uvscan
+    SUBDIR += uvscan-dat
 
 .include "../mk/bsd.pkg.subdir.mk"
