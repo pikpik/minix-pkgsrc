@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/arpd
+etc/arpd.conf.example
+share/doc/arpd.README
