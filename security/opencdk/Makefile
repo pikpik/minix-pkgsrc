@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/06/02 01:17:14 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 22:53:01 grant Exp $
 #
 
-DISTNAME=	opencdk-0.4.5
+DISTNAME=	opencdk-0.5.3
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/opencdk/
 
@@ -12,7 +12,6 @@ COMMENT=	Open Crypto Development Kit
 USE_BUILDLINK2=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
-USE_PERL5=	build
 
 LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 REPLACE_PERL=		doc/gdoc
@@ -30,7 +29,6 @@ pre-install:
 	cd ${WRKSRC}/tests && ${INSTALL_DATA} *.gpg *.c ${EGDIR}
 
 .include "../../devel/zlib/buildlink2.mk"
-.include "../../lang/perl5/buildlink2.mk"
 .include "../../security/libgcrypt/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
