@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2000/08/25 01:30:47 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 14:39:00 wiz Exp $
 #
 
-DISTNAME=	rpc2-1.5
+DISTNAME=	rpc2-1.10
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/ \
 		ftp://ftp.wu-wien.ac.at/pub/systems/coda/src/
@@ -10,7 +10,7 @@ MAINTAINER=	phil@cs.wwu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 COMMENT=	CMU (Coda) remote procedure call package
 
-DEPENDS+=	lwp>=1.1:../../devel/lwp
+DEPENDS+=	lwp>=1.6:../../devel/lwp
 DEPENDS+=	readline>=4.0:../../devel/readline
 
 GNU_CONFIGURE=	YES
