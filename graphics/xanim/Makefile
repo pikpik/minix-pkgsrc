@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/10/21 15:40:51 mycroft Exp $
+# $NetBSD: Makefile,v 1.24 2001/11/29 01:12:36 hubertf Exp $
 
 DISTNAME=	xanim2801
 PKGNAME=	xanim-2.80.1
@@ -45,7 +45,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xanim ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/xanim.0 ${PREFIX}/man/cat1
 
-.include "../../mk/bsd.pkg.mk"
+.include "../../mk/bsd.prefs.mk"
 
 MACHINE_OBJ_ARCH=	${MACHINE_ARCH}-${OBJECT_FMT}
 
@@ -69,3 +69,5 @@ EXTRA_FILES=	xa2.0_cvid_sparcCOFF.o.Z \
 EXTRA_FILES=	xa2.0_cvid_linuxPPC.o.Z \
 		xa1.0_cyuv_linuxPPC.o.Z
 .endif
+
+.include "../../mk/bsd.pkg.mk"
