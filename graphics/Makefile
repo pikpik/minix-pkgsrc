@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.363 2005/01/20 23:53:51 wiz Exp $
+# $NetBSD: Makefile,v 1.364 2005/01/22 17:34:52 tron Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -195,6 +195,7 @@ SUBDIR+=	p5-GDGraph
 SUBDIR+=	p5-GDGraph3d
 SUBDIR+=	p5-GDTextUtil
 SUBDIR+=	p5-GIFgraph
+SUBDIR+=	p5-Gdk-Imlib
 SUBDIR+=	p5-Gdk-Pixbuf
 SUBDIR+=	p5-GraphViz
 SUBDIR+=	p5-Image-Imlib2
