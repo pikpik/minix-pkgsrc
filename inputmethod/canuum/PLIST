@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/canuum
+man/ja_JP.EUC/man1/canuum.1
