@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kchart/kdchart/KDChartData.h.orig	Mon Dec 10 15:01:12 2001
++++ kchart/kdchart/KDChartData.h
+@@ -12,7 +12,7 @@
+ 
+ #include <qstring.h>
+ #include <qdatetime.h>
+-#ifdef unix
++#if !defined(__FreeBSD__) && !defined(__NetBSD__)
+ #include <values.h>
+ #else
+ #include <float.h>
