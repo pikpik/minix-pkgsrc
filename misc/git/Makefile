@@ -3,7 +3,7 @@
 # Date created:		12 Jul 1995
 # Whom:			torstenb@FreeBSD.ORG
 #
-# $NetBSD: Makefile,v 1.5 1998/02/09 07:10:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/03/16 08:52:11 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:54:39 asami Exp
 #
 
@@ -17,8 +17,8 @@ RUN_DEPENDS=	${PREFIX}/bin/install-info:${PORTSDIR}/devel/gtexinfo
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	${MACHINE_ARCH}--netbsd
-MAN1=		git.1 gitaction.1 gitmount.1 gitcmp.1 gitkeys.1 \
-		gitredir.1 gitrgrep.1 gitps.1 gitview.1
+MAN1=		git.1 gitaction.1 gitkeys.1 gitmount.1 gitps.1 gitrgrep.1 \
+		gitunpack.1 gitview.1
 
 pre-install:
 	(cd ${WRKSRC}/info ; ${MAKE} info )
