@@ -7,11 +7,13 @@ MASTER_SITES=	http://www.freebsd.org/~fenner/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.freebsd.org/~fenner/
+#HOMEPAGE=	
 
 ONLY_FOR_PLATFORM=	SunOS-*-*        # untested on NetBSD
 
-MAKE_ENV+=	CPPFLAGS="`${AWK} -F: '/^uucp:/ { printf(\"-DDAEMONUSER=%s -DDAEMONGROUP=%s\", $$3, $$4); }' /etc/passwd`"
+MAKE_ENV+=	CPPFLAGS="`${AWK} -F: '/^uucp:/ { 			\
+	printf(\"-DDAEMONUSER=%s -DDAEMONGROUP=%s\", $$3, $$4); }'	\
+	/etc/passwd`"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qpage ${PREFIX}/bin
