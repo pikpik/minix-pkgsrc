@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:57:25 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/07/12 13:48:08 wiz Exp $
 bin/xp-mapedit
 bin/xp-replay
 bin/xpilot
 bin/xpilots
+man/cat6/xp-mapedit.0
 man/cat6/xp-replay.0
 man/cat6/xpilot.0
 man/cat6/xpilots.0
