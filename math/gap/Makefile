@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/12/22 16:06:33 cjep Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/22 17:40:03 cjep Exp $
 #
 
 DISTNAME=	gap4r3
@@ -40,10 +40,9 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/${GAP_PLATFORM}/gac		\
 				${GAP_DIRECTORY}/bin/${GAP_PLATFORM}
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/gap.sh 				\
-				${PREFIX}/bin/gap${PKGVERSION}
+				${PREFIX}/bin/gap
 	${INSTALL_DATA} ${WRKSRC}/description4 				\
 				${GAP_DIRECTORY}
-	${LN} -sf ${PREFIX}/bin/gap${PKGVERSION} ${PREFIX}/bin/gap
 	${INSTALL_DATA} ${WRKSRC}/sysinfo.gap				\
 				${GAP_DIRECTORY}
 
