@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2002/10/03 00:52:48 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/06/02 01:19:17 jschauma Exp $
 
 DISTNAME=		plplot-5.0.4
 CATEGORIES=		graphics
@@ -50,6 +50,7 @@ CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--disable-itcl
 CONFIGURE_ARGS+=	--disable-dp
 
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		plplotdoc.info
 
 post-extract:
@@ -74,5 +75,4 @@ post-install:
 		${PREFIX}/share/doc/html/plplot
 
 .include "../../mk/autoconf.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
