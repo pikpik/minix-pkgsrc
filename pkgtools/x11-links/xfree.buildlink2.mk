@@ -454,6 +454,7 @@ BUILDLINK_FILES.XFree+=	lib/libXcursor.so
 BUILDLINK_FILES.XFree+=	lib/libXcursor.so.1
 BUILDLINK_FILES.XFree+=	lib/libXcursor.so.1.0
 BUILDLINK_FILES.XFree+=	lib/libXdmcp.a
+BUILDLINK_FILES.XFree+=	lib/libXdpms.a
 BUILDLINK_FILES.XFree+=	lib/libXext.a
 BUILDLINK_FILES.XFree+=	lib/libXext.so
 BUILDLINK_FILES.XFree+=	lib/libXext.so.6
