@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.8 1998/08/20 15:16:51 tsarna Exp $
+# $NetBSD: Makefile,v 1.9 1998/08/24 10:12:22 agc Exp $
 
-DISTNAME=	vim-5.2
+DISTNAME=	vim-5.3
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.vim.org/pub/misc/editors/vim/unix/ \
-		ftp://ftp.oce.nl/pub/vim/unix/ \
+MASTER_SITES=	ftp://ftp.oce.nl/pub/vim/unix/ \
+		ftp://ftp.vim.org/pub/misc/editors/vim/unix/ \
 		ftp://uiarchive.uiuc.edu/pub/packages/vim/ \
 		ftp://ftp.progsoc.uts.edu.au/pub/vim/unix/
-DISTFILES=	vim-5.2-src.tar.gz vim-5.2-rt.tar.gz
+DISTFILES=	vim-5.3-src.tar.gz vim-5.3-rt.tar.gz
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.vim.org/
