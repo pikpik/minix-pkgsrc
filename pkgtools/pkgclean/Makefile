@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/06 05:32:29 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/18 22:32:00 tv Exp $
 
 DISTNAME=	pkgclean-20050118
 CATEGORIES=	pkgtools
@@ -15,8 +15,6 @@ NO_CONFIGURE=	yes
 NO_CHECKSUM=	yes
 
 INSTALLATION_DIRS=	bin man/man1
-
-NROFF=		nroff -mandoc
 
 do-extract:
 	@${CP} -R ${FILESDIR} ${WRKSRC}
