@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 1999/10/18 11:41:45 frueauf Exp $
+# $NetBSD: Makefile,v 1.33 1999/10/23 00:05:19 tron Exp $
 #
 
 DISTNAME=	xscreensaver-3.18
@@ -25,5 +25,12 @@ USE_XAW=	yes
 .include "../../mk/bsd.prefs.mk"
 
 XAW_TYPE?=	3d
+
+.if (${OPSYS} == "NetBSD")
+.if defined(KERBEROS)
+CFLAGS+=	-I/usr/include/kerberosIV
+CONFIGURE_ARGS+=--with-kerbeors=yes
+.endif
+.endif
 
 .include "../../mk/bsd.pkg.mk"
