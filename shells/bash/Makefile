@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/21 03:11:14 xtraeme Exp $
 #
 
 DISTNAME=	bash-3.0
@@ -24,8 +24,6 @@ TEST_TARGET=		test
 INFO_FILES=		bash.info
 
 PKG_SHELL=		${PREFIX}/bin/bash
-
-USE_GNU_READLINE=	yes
 
 # All features enabled by default.
 CONFIGURE_ARGS+=	--enable-readline
@@ -66,5 +64,4 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/bashbug.1 ${PREFIX}/man/man1
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
