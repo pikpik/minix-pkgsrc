@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2004/07/30 15:50:37 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:13:12 tv Exp $
 
 DISTNAME=		benchfft-2.0
 PKGREVISION=	1
 CATEGORIES=		benchmarks math
-MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/benchfft/ \
-			ftp://ftp.fftw.org/pub/fftw/old/
+MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/ \
+			ftp://ftp.fftw.org/pub/fftw/old/benchfft/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} fftw-2.0.1${EXTRACT_SUFX}
 
 MAINTAINER=		root@garbled.net
