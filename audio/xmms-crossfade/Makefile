@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/08/08 15:29:45 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2002/09/21 01:31:24 jlam Exp $
 #
 
 DISTNAME=		xmms-crossfade-0.2.9
@@ -18,6 +18,8 @@ USE_LIBTOOL=		YES
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 LDFLAGS+=		${LIBOSSAUDIO}
+OSS_DEFS+=		-DDEFAULT_OSS_ALT_AUDIO_DEVICE=\\\"${DEVOSSSOUND}\\\"
+MAKE_ENV+=		OSS_DEFS="${OSS_DEFS}"
 
 .include "../../audio/xmms/buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
