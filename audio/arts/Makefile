@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2003/05/30 12:49:09 markd Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/07 20:51:53 skrll Exp $
 
-DISTNAME=	arts-1.1.2
-PKGREVISION=	2
+DISTNAME=	arts-1.1.3
 CATEGORIES=	audio
 COMMENT=	Analog Real-Time Synthesizer
 
-.include "../../x11/kde3/Makefile.kde3"
+.include "../../meta-pkgs/kde3/Makefile.kde3"
 
 CONFLICTS+=	kdelibs-2*
 
@@ -21,7 +20,7 @@ LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 .include "../../audio/libaudiofile/buildlink2.mk"
 .include "../../audio/libogg/buildlink2.mk"
 .include "../../audio/libvorbis/buildlink2.mk"
-.include "../../x11/kde3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
 

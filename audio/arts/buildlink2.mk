@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.9 2003/05/30 12:49:10 markd Exp $
+# $NetBSD: buildlink2.mk,v 1.10 2003/07/07 20:51:54 skrll Exp $
 #
 # This Makefile fragment is included by packages that use arts.
 
@@ -6,7 +6,7 @@
 ARTS_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			arts
-BUILDLINK_DEPENDS.arts?=		arts>=1.1.2nb2
+BUILDLINK_DEPENDS.arts?=		arts>=1.1.3
 BUILDLINK_PKGSRCDIR.arts?=		../../audio/arts
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.arts=arts
