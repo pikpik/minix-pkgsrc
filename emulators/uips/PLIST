@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/uips
+share/doc/uips/uips.txt
+@dirrm share/doc/uips
