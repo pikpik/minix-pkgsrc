@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 1999/05/04 22:47:21 tron Exp $
+# $NetBSD: Makefile,v 1.38 1999/05/05 21:01:46 tv Exp $
 
 DISTNAME=		gimp-1.0.4
 CATEGORIES=		graphics
@@ -41,7 +41,7 @@ post-configure:
 		./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
 
 pre-build:
-	@if [ "$$DISPLAY" = "1" ]; then \
+	@if [ "$$DISPLAY" = "" ]; then \
 		${ECHO} "${DISTNAME} can only be built under X11."; \
 		exit 1; \
 	fi
