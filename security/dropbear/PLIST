@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/dropbearconvert
+bin/dropbearkey
+sbin/dropbear
