@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/20 20:45:20 tron Exp $
 
-DISTNAME=	gnome-1.0.53
+DISTNAME=	gnome-1.0.53.1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
