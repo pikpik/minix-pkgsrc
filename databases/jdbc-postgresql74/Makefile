@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2004/01/22 08:02:15 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/06/03 10:23:19 abs Exp $
 #
 
-DIST_VERS=		7.4.2
+DIST_VERS=		7.4.3
 DISTNAME=		postgresql-${DIST_VERS}
 PKGNAME=		jdbc-${DISTNAME}
-PKGREVISION=		1
 CATEGORIES=		databases java
 MASTER_SITES?=		http://www.postgresql.org/ftpsite/source/v${DIST_VERS}/ \
 			ftp://ftp.postgresql.org/pub/source/v${DIST_VERS}/ \
