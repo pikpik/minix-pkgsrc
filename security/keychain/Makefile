@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:56 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/18 03:59:49 martti Exp $
 
 DISTNAME=	keychain-2.0.3
 PKGNAME=	${DISTNAME}
@@ -14,7 +14,11 @@ COMMENT=	Nice ssh-agent front-end
 DEPENDS+=	openssh-[0-9]*:../../security/openssh
 .endif
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 NO_BUILD=	# defined
+
+INSTALLATION_DIRS=	bin man/man1 share/doc/${PKGBASE}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/keychain ${PREFIX}/bin
