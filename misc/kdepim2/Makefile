@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/05/13 20:02:50 jmc Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/13 13:52:42 wiz Exp $
 
 DISTNAME=	kdepim-2.2.2
 PKGREVISION=	4
@@ -16,7 +16,7 @@ LTCONFIG_OVERRIDE+=	${WRKSRC}/libical/ltconfig
 
 .if ${OPSYS} == "SunOS"
 CFLAGS+= -DSunOS
-BUILD_DEPENDS+= bison:../../devel/bison
+BUILD_DEPENDS+= bison-[0-9]*:../../devel/bison
 YACC= bison -y
 .endif
 
