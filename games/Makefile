@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2001/10/25 04:44:43 jlam Exp $
+# $NetBSD: Makefile,v 1.125 2001/10/28 08:07:29 jlam Exp $
 #
 
 COMMENT=	Games
@@ -69,6 +69,7 @@ SUBDIR+=	kdetoys2
 SUBDIR+=	ketm
 SUBDIR+=	knightcap
 SUBDIR+=	knightcap-brain
+SUBDIR+=	knights
 SUBDIR+=	koth
 SUBDIR+=	kulki
 SUBDIR+=	lbreakout
