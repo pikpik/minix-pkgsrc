@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/tirc
-man/man1/tirc.1
-share/tirc/tircrc
-@dirrm share/tirc
