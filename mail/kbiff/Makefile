@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/24 13:55:30 grant Exp $
+# $NetBSD: Makefile,v 1.11 2004/02/09 11:46:49 markd Exp $
 
 DISTNAME=	kbiff-3.7
 CATEGORIES=	devel kde
@@ -11,6 +11,7 @@ COMMENT= 	A new mail notification utility for KDE
 
 USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
+USE_LANGUAGES=		c c++
 GNU_CONFIGURE=          yes
 
 .include "../../meta-pkgs/kde3/buildlink2.mk"

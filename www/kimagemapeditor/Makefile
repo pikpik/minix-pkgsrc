@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 15:23:47 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/14 17:21:54 jlam Exp $
 
 DISTNAME=	kimagemapeditor-1.0
 PKGREVISION=	3
@@ -12,6 +12,7 @@ COMMENT= 	Edit HTML Image maps
 
 USE_BUILDLINK2=		YES
 USE_GNU_TOOLS+=		make
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 
