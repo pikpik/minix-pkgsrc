@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 1999/03/31 21:02:53 garbled Exp $
+# $NetBSD: Makefile,v 1.39 1999/04/06 05:59:17 rh Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -50,6 +50,7 @@
     SUBDIR += plotutils
     SUBDIR += png
     SUBDIR += povray
+    SUBDIR += py-imaging
 #    SUBDIR += qvplay
     SUBDIR += rayshade
     SUBDIR += sane
@@ -63,9 +64,9 @@
     SUBDIR += urt
 #    SUBDIR += vcg
 #    SUBDIR += whirlgif
-    SUBDIR += xart
     SUBDIR += xanim
 #    SUBDIR += xaos
+    SUBDIR += xart
     SUBDIR += xbmbrowser
 #    SUBDIR += xdl
     SUBDIR += xfig
