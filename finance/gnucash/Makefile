@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2004/01/03 18:49:40 reed Exp $
+# $NetBSD: Makefile,v 1.55 2004/01/06 18:53:11 jmmv Exp $
 
 DISTNAME=		gnucash-1.8.8
 PKGREVISION=		2
@@ -18,7 +18,7 @@ BUILDLINK_DEPENDS.guile14+=	guile14<1.5.0:../../lang/guile14
 
 BUILD_DEPENDS+=			bison>=1.28:../../devel/bison
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

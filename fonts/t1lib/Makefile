@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:37:38 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 16:47:09 martti Exp $
 
 DISTNAME=	t1lib-1.3.1
 CATEGORIES=	fonts devel graphics
@@ -10,7 +10,7 @@ COMMENT=	Library for generating bitmaps from Adobe Type 1 fonts
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_X11=		YES

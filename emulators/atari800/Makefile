@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/08 15:24:42 adam Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/20 12:14:40 agc Exp $
 #
 
 DISTNAME=	atari800-1.3.2
@@ -18,7 +18,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--target=x11

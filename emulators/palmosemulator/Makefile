@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:35:41 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:14:41 agc Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
@@ -34,7 +34,7 @@ BUILD_DIRS=	${POSE_BUILD_DIR}
 USE_BUILDLINK2=	YES
 USE_PERL5=	build
 USE_X11=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--with-fltk=${BUILDLINK_PREFIX.fltk}

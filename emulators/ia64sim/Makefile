@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:19:58 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:35:33 grant Exp $
 
 DISTNAME=		ia64sim
 PKGNAME=		ia64sim-0.3
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.glue.umd.edu/~jasonp/
 COMMENT=		IA64 simulator (Intel(R) Architecture 64)
 
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 DIST_SUBDIR=		${PKGNAME}
 
 MAKEFILE=		makefile.unx
