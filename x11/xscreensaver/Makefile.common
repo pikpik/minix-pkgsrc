@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.17 2001/06/18 15:41:49 fredb Exp $
+# $NetBSD: Makefile.common,v 1.18 2001/09/27 23:19:03 jlam Exp $
 #
 
 DISTNAME=		xscreensaver-3.33
@@ -36,7 +36,7 @@ MAKE_ENV+=		KDEDIR=${X11PREFIX}
 DISTINFO_FILE=		${.CURDIR}/../../x11/xscreensaver/distinfo
 FILESDIR=		${.CURDIR}/../../x11/xscreensaver/files
 PATCHDIR=		${.CURDIR}/../../x11/xscreensaver/patches
-PKGDIR=			${.CURDIR}/../../x11/xscreensaver/pkg
+PKGDIR=			${.CURDIR}/../../x11/xscreensaver
 
 post-patch:
 	cd ${WRKSRC}/driver ; \
