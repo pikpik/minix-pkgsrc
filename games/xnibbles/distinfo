@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1 1998/08/23 09:55:27 garbled Exp $
+$NetBSD$
 
-MD5 (xnibbles-1.0BETA4.tar.gz) = d498e1faaea4388175e6e74685c22872
+SHA1 (xnibbles-1.0BETA4.tar.gz) = 2f0ed0ea1184cb3e81fa56a430d3c53e96618452
+Size (xnibbles-1.0BETA4.tar.gz) = 134982 bytes
 SHA1 (patch-aa) = 3880dd86342807aaecba43040eba4632beb691de
 SHA1 (patch-ab) = faadb812447658f6f7f1a808a4361f372d095a3f

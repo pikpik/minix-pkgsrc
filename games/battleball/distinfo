@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2000/01/06 08:36:10 fredb Exp $
+$NetBSD$
 
-MD5 (battleball.21.src.tar.gz) = d0ed7beee19194cea86e738fed2b69c4
+SHA1 (battleball.21.src.tar.gz) = 5bc651d513d378d449c117488ef54af5f3381072
+Size (battleball.21.src.tar.gz) = 102001 bytes
 SHA1 (patch-aa) = 645b753a5be8f1bba80181da92df878546a04fb1

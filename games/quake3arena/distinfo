@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/13 23:58:32 wiz Exp $
+$NetBSD$
 
-MD5 (linuxq3apoint-1.17.x86.run) = d099a07e91cea00ba4f9c38bae1eb4d0
+SHA1 (linuxq3apoint-1.17.x86.run) = b0dcf5c12621d15c6a417cb1e1dc4e6da4aa8801
+Size (linuxq3apoint-1.17.x86.run) = 9845235 bytes

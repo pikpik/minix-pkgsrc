@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/08/13 19:04:56 tron Exp $
+$NetBSD$
 
-MD5 (xjewel-1.6.tar.z) = b6448726269ec158c5db6eb54864bdfe
+SHA1 (xjewel-1.6.tar.z) = b202d4fdb70bf3a61707aed7a00607a907c80275
+Size (xjewel-1.6.tar.z) = 45439 bytes
 SHA1 (patch-aa) = e544ebd4d884e8d1f96cc13485501877974ab832

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1 1998/08/10 22:27:46 tron Exp $
+$NetBSD$
 
-MD5 (xzip180.tar.Z) = 88397d490183fcb0ee180e9f7d3ee7c9
+SHA1 (xzip180.tar.Z) = 45581b97e2b00535fe6f4dfab2aa4f8efb353749
+Size (xzip180.tar.Z) = 134871 bytes
 SHA1 (patch-aa) = fa9f12081660760f52679357ab13bb9e8b9e5694

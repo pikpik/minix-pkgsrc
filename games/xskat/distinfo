@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.3 2000/12/16 01:30:12 wiz Exp $
+$NetBSD$
 
-MD5 (xskat-3.4.tar.gz) = 678de9e339669791e2e46f1294f78aaf
+SHA1 (xskat-3.4.tar.gz) = dd74fdb8234ab05fc688a0a95217ca33777bb986
+Size (xskat-3.4.tar.gz) = 291348 bytes
 SHA1 (patch-aa) = 95c42daaa5d713d72514908dfe4af284a774c6c7

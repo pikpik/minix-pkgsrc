@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/09 18:25:05 wiz Exp $
+$NetBSD$
 
-MD5 (lokigames/linuxq3ademo-1_11-6_x86_gz.sh) = 484610c1ce34272223a52ec331c99d5d
+SHA1 (lokigames/linuxq3ademo-1_11-6_x86_gz.sh) = 7d305eed3fc896c874697278ec0fb746690e04d0
+Size (lokigames/linuxq3ademo-1_11-6_x86_gz.sh) = 49289300 bytes

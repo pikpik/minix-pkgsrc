@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/30 14:26:45 wiz Exp $
+$NetBSD$
 
-MD5 (manual-1.8.1-2.tar.gz) = 5a6022f475310a1135746c90dedf64f9
+SHA1 (manual-1.8.1-2.tar.gz) = 2163a214189334e3bed5e5b364f23dd16751ca63
+Size (manual-1.8.1-2.tar.gz) = 1030214 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2000/11/20 04:11:47 toshii Exp $
+$NetBSD$
 
-MD5 (cgoban-1.9.10.tar.gz) = a9e90f73791aca6719073af7404fc9bc
+SHA1 (cgoban-1.9.10.tar.gz) = 554af7b303469ef11af4dab5d94f967ad5b5628d
+Size (cgoban-1.9.10.tar.gz) = 337684 bytes
 SHA1 (patch-aa) = a05ba71100266ba658260d9545d4bfb4e897b114

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 02:08:52 jlam Exp $
+$NetBSD$
 
-MD5 (chessbooks/small.zip) = 4faca1c02593e142ab9d901935c41dea
+SHA1 (chessbooks/small.zip) = b8ad36334874e861ae80656f0803dd0c2e79a348
+Size (chessbooks/small.zip) = 160309 bytes

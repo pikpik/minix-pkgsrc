@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2000/11/21 04:51:36 toshii Exp $
+$NetBSD$
 
-MD5 (gnugo-2.6.tar.gz) = 34c84ae83668a66677df4032fad478d9
+SHA1 (gnugo-2.6.tar.gz) = 03b3da993a62b6fee473784900795eaade7e788a
+Size (gnugo-2.6.tar.gz) = 617161 bytes
 SHA1 (patch-aa) = 8ba523dd10dfc3c08af06750bf1eff9eff76571b

@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:21:35 agc Exp $
+$NetBSD$
 
-MD5 (xsoldier-0.96.tar.gz) = 63f7ef2cd4de43524486b48c0f097553
+SHA1 (xsoldier-0.96.tar.gz) = af16dbe1506cdd519a099ed58e26a5569400bea2
+Size (xsoldier-0.96.tar.gz) = 82413 bytes
 SHA1 (patch-aa) = 426f57ec82b4fe8be553684bc2f6ec4162e80bc6
 SHA1 (patch-ab) = 464407fb6e9e0af33b57d7dfc17a58acb1591f0a
 SHA1 (patch-ac) = 3551fd7507aa0ff8faeb9cdc8e2addc03dbc1274

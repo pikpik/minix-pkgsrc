@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1 1998/09/07 03:23:09 garbled Exp $
+$NetBSD$
 
-MD5 (svb.shar.Z) = d1afd5e04fa50144fd0cb05a34dec997
+SHA1 (svb.shar.Z) = 9792ca79f49bf21cbe01b01f3fd0645872e646a9
+Size (svb.shar.Z) = 17403 bytes
 SHA1 (patch-aa) = 0862fa445b83f39631460f9b367bb4337a69fd73

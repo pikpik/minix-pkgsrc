@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/16 12:24:02 abs Exp $
+$NetBSD$
 
-MD5 (lokigames/civctp-demo-10251999.tar.gz) = 791393a18e86f75bf94678d850f6663e
+SHA1 (lokigames/civctp-demo-10251999.tar.gz) = 1f758fa5c93a34b044118557ce7817b3c1ddba2d
+Size (lokigames/civctp-demo-10251999.tar.gz) = 59306712 bytes

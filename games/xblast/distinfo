@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.3 1998/11/10 08:34:55 garbled Exp $
+$NetBSD$
 
-MD5 (xblast-2.6.beta-sound.tar.gz) = bc7ca97eee60b97b0b15c54b53aef699
+SHA1 (xblast-2.6.beta-sound.tar.gz) = 3700f50d54e1c5fa4bbf97da964cf8cae5261292
+Size (xblast-2.6.beta-sound.tar.gz) = 2471921 bytes
 SHA1 (patch-aa) = cc76f6814b2f37ad221ade5a7261fbdfb4aa0429
 SHA1 (patch-ab) = 964b7139513baef671280e1ced905095fe83cfb6
 SHA1 (patch-ac) = 8d830c9b640d18a7d3387fdb13394f20076c08cc

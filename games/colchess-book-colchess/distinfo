@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/24 20:12:17 jlam Exp $
+$NetBSD$
 
-MD5 (colchess-7.0/colchess.tgz) = eed5e9629052c0b70ea70abc9573f3c4
+SHA1 (colchess-7.0/colchess.tgz) = 66ece148fb68ca43a8354cc90788dcfd6cc30793
+Size (colchess-7.0/colchess.tgz) = 141954 bytes

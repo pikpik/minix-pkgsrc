@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 01:57:10 jlam Exp $
+$NetBSD$
 
-MD5 (chess-5.00.tar.gz) = 8bf7cd9250aa96c4e37e9770733d8fe3
+SHA1 (chess-5.00.tar.gz) = 86b364d60aab4a2ec5932fb800ef4857251a84cd
+Size (chess-5.00.tar.gz) = 157211 bytes

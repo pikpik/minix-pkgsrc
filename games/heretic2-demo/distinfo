@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/16 12:24:58 abs Exp $
+$NetBSD$
 
-MD5 (lokigames/heretic2-demo-x86.run) = a9086ca8fbc4bccd9651d92963b96e10
+SHA1 (lokigames/heretic2-demo-x86.run) = 8f11f2895419d7f2ccdcba63b4f7075db5de66a3
+Size (lokigames/heretic2-demo-x86.run) = 53801988 bytes
