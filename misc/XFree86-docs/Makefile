@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/24 09:05:59 xtraeme Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		XFree86-docs-${XF_VER}
 WRKSRC=			${WRKDIR}/xc/doc/specs
-CATEGORIES=		x11
+CATEGORIES=		misc x11
 MASTER_SITES=		${MASTER_SITE_XFREE}
 DISTFILES+=		X430src-1.tgz X430src-6.tgz
 
