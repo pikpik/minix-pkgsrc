@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.31 1999/03/23 17:47:59 tron Exp $
+# $NetBSD: Makefile,v 1.32 1999/06/03 22:44:04 tron Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/27 00:25:46 se Exp
 #
 
 DISTNAME=	kdelibs-1.1.1
 CATEGORIES=	x11 kde
-MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/1.1/distribution/tar/generic/source/bz2/ \
-		ftp://ftp.de.kde.org/pub/kde/stable/1.1/distribution/tar/generic/source/bz2/
+MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/1.1.1/distribution/tar/generic/source/bz2/ \
+		ftp://ftp.de.kde.org/pub/kde/stable/1.1.1/distribution/tar/generic/source/bz2/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tron@netbsd.org
