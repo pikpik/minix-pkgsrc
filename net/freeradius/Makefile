@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/15 12:03:53 tv Exp $
+# $NetBSD: Makefile,v 1.16 2004/11/10 22:27:32 adrianp Exp $
 
 DISTNAME=	freeradius-1.0.1
 PKGREVISION=	3
@@ -117,7 +117,7 @@ post-install:
 .include "../../mk/pthread.buildlink3.mk"
 
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "none"
-CONFIGURE_ARGS+=	--with-threads=no
+CONFIGURE_ARGS+=	--without-threads
 .endif
 
 .include "../../mk/bsd.pkg.mk"
