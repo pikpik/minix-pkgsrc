@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/01/30 23:18:46 agc Exp $
+# $NetBSD: Makefile,v 1.16 1999/03/02 15:50:56 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:58:03 gj Exp
 #
 
@@ -32,7 +32,7 @@ SCREEN_TYPE=	x11
 
 post-install:
 	@${ECHO} "You might want to copy the *.rc files from the source tree before"
-	@${ECHO} "doing \`make clean'."
+	@${ECHO} "doing \`${MAKE} clean'."
 .if defined(USE_MENUS)
 	@${ECHO} "And also take a look at README.MENU !"
 .endif

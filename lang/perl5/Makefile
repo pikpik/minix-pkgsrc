@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/12/02 16:53:03 tv Exp $
+# $NetBSD: Makefile,v 1.18 1999/02/04 22:25:02 tv Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/07/18 06:16:44 markm Exp
 #
 
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX} \
 MAKE_ENV+=		LD_LIBRARY_PATH=${WRKSRC}
 
 test:
-	@(cd ${WRKSRC}; make test)
+	@(cd ${WRKSRC}; ${MAKE} test)
 
 post-install:
 	@strip ${PREFIX}/bin/a2p

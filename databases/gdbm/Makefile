@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/08/10 15:29:39 tv Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:16:44 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/01/28 08:11:23 asami Exp 
 #
 
@@ -15,6 +15,6 @@ USE_LIBTOOL=	yes
 INFO_FILES=	gdbm.info
 
 post-build:
-	cd ${WRKSRC} ; ${RM} gdbm.info ; make gdbm.info
+	cd ${WRKSRC} ; ${RM} gdbm.info ; ${MAKE} gdbm.info
 
 .include "../../mk/bsd.pkg.mk"

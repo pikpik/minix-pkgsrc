@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/04 22:55:11 augustss Exp $
+# $NetBSD: Makefile,v 1.12 1998/06/18 16:15:11 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
 #
 
@@ -24,7 +24,7 @@ pre-configure:
 	chmod +x ${WRKSRC}/configure
 
 post-build:
-	cd ${WRKSRC}/doc ; make info
+	cd ${WRKSRC}/doc ; ${MAKE} info
 
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/rplayd.sh ]; then \

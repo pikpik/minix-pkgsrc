@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/12/23 07:04:22 tsarna Exp $
+# $NetBSD: Makefile,v 1.5 1999/02/20 22:48:46 hubertf Exp $
 #
 
 DISTNAME=	Zope-1.9.0-src
@@ -19,7 +19,7 @@ do-configure:
 	${SED} -e "s,@PREFIX@,${PREFIX}," \
 		<${FILESDIR}/Makefile.in > ${WRKSRC}/Makefile
 	(cd ${WRKSRC}; rm -rf lib/Components/zlib)
-	(cd ${WRKSRC}; make configure)
+	(cd ${WRKSRC}; ${MAKE} configure)
 
 do-install:
 	${CAT} ${PKGDIR}/PLIST.pre >${PLIST_SRC}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:10 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/04/20 11:56:19 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/01/07 14:58:04 torstenb Exp 
 #
 
@@ -14,6 +14,6 @@ NO_WRKSUBDIR=	yes
 PATCH_STRIP=	-p2
 
 pre-configure:
-	@(cd ${WRKSRC}; make pre-install)
+	@(cd ${WRKSRC}; ${MAKE} pre-install)
 
 .include "../../mk/bsd.pkg.mk"
