@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/05/22 07:30:03 adam Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:10 tv Exp $
 
 DISTNAME=	libtasn1-0.2.10
 PKGREVISION=	1
@@ -17,5 +17,14 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+
+.include "../../mk/bsd.prefs.mk"
+
+# Darwin has no prototype for getopt_long and no declaration for
+# struct option, so ignore getopt_long() even though the test
+# succeeds.
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ENV+=		ac_cv_func_getopt_long=no
+.endif
 
 .include "../../mk/bsd.pkg.mk"
