@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.384 2005/03/20 17:34:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.385 2005/03/23 23:12:13 markd Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -305,7 +305,6 @@ SUBDIR+=	xpns
 SUBDIR+=	xpostit
 SUBDIR+=	xscreensaver
 SUBDIR+=	xscreensaver-demo
-SUBDIR+=	xscreensaver-gnome
 SUBDIR+=	xscribble
 SUBDIR+=	xscript
 SUBDIR+=	xservers
