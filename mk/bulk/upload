@@ -1,4 +1,6 @@
 #!/bin/sh
+# $NetBSD$
+
 #
 # Upload non-restricted binary pkgs to ftp server
 # Must be called in $USR_PKGSRC
