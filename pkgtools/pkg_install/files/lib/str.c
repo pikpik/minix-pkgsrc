@@ -1,4 +1,4 @@
-/*	$NetBSD: str.c,v 1.46 2003/10/04 00:50:34 wiz Exp $	*/
+/*	$NetBSD: str.c,v 1.7 2003/10/29 23:00:28 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "Id: str.c,v 1.5 1997/10/08 07:48:21 charnier Exp";
 #else
-__RCSID("$NetBSD: str.c,v 1.46 2003/10/04 00:50:34 wiz Exp $");
+__RCSID("$NetBSD: str.c,v 1.7 2003/10/29 23:00:28 jlam Exp $");
 #endif
 #endif
 
@@ -109,7 +109,7 @@ void
 str_lowercase(char *s)
 {
 	for (; *s; s++) {
-		*s = tolower(*s);
+		*s = tolower((unsigned char)*s);
 	}
 }
 
@@ -210,8 +210,8 @@ mkcomponent(arr_t *ap, char *num)
 		return 0;
 	}
 	ALLOC(int64_t, ap->v, ap->size, ap->c, 62, "mkver", exit(EXIT_FAILURE));
-	if (isdigit(*num)) {
-		for (cp = num, n = 0 ; isdigit(*num) ; num++) {
+	if (isdigit((unsigned char)*num)) {
+		for (cp = num, n = 0 ; isdigit((unsigned char)*num) ; num++) {
 			n = (n * 10) + (*num - '0');
 		}
 		ap->v[ap->c++] = n;
@@ -224,15 +224,15 @@ mkcomponent(arr_t *ap, char *num)
 		}
 	}
 	if (strncasecmp(num, "nb", 2) == 0) {
-		for (cp = num, num += 2, n = 0 ; isdigit(*num) ; num++) {
+		for (cp = num, num += 2, n = 0 ; isdigit((unsigned char)*num) ; num++) {
 			n = (n * 10) + (*num - '0');
 		}
 		ap->netbsd = n;
 		return (int)(num - cp);
 	}
-	if (isalpha(*num)) {
+	if (isalpha((unsigned char)*num)) {
 		ap->v[ap->c++] = Dot;
-		cp = strchr(alphas, tolower(*num));
+		cp = strchr(alphas, tolower((unsigned char)*num));
 		ALLOC(int64_t, ap->v, ap->size, ap->c, 62, "mkver", exit(EXIT_FAILURE));
 		ap->v[ap->c++] = (int64_t)(cp - alphas) + 1;
 		return 1;
