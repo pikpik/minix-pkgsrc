@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2004/09/02 05:03:23 cjs Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/03 11:32:07 grant Exp $
 #
 
 DISTNAME=		xlhtml-0.5
-PKGNAME=		${DISTNAME:S/./-/}
 CATEGORIES=		converters
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=chicago/}
 EXTRACT_SUFX=		.tgz
