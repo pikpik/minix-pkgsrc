@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gtar
-# Version required:     
+# Version required:     1.12
 # Date created:		1 March 1998
 # Whom:			tv@netbsd.org
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/03/04 14:57:13 tv Exp $
 #
 
 DISTNAME=       tar-1.12
