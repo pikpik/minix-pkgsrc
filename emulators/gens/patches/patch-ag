@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/gens/util/chd.h.orig	2004-06-25 19:55:16.000000000 +0200
+--- src/gens/util/chd.h.orig	2004-08-15 11:35:14.000000000 +0200
 +++ src/gens/util/chd.h
 @@ -0,0 +1,94 @@
 +#ifndef HAD_CHD_H
