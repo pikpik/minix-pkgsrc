@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libgda/providers/libgda-postgres.a
+lib/libgda/providers/libgda-postgres.la
+lib/libgda/providers/libgda-postgres.so
+@comment in libgda: @dirrm lib/libgda/providers
