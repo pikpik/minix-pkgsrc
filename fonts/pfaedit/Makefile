@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:40 reed Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/04 17:12:34 junyoung Exp $
 #
 
 DISTNAME=	pfaedit_full-${VERSION}
 PKGNAME=	pfaedit-20${VERSION}
-PKGREVISION=			1
 WRKSRC=		${WRKDIR}/pfaedit-${VERSION}
 CATEGORIES=	fonts editors
 MASTER_SITES=	http://pfaedit.sourceforge.net/
