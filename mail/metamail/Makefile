@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/08/29 22:41:20 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2002/05/26 10:42:41 wiz Exp $
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
@@ -12,17 +12,16 @@ COMMENT=	Implementation of MIME, the Multipurpose Internet Mail Extensions
 CONFLICTS+=	elm>=2.5.5 mm-2.7
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
+USE_X11=		YES
 
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
 CFLAGS=		-DSYSV
-MAKE_ENV+=	CC="${CC}"
 .endif
 
 post-patch:
 	${RM} -f ${WRKDIR}/mm2.7/src/bin/*.orig
 
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
