@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/12 13:57:49 xtraeme Exp $
 #
 
 DISTNAME=	ladspa_sdk_1.12
@@ -17,4 +17,7 @@ USE_GNU_TOOLS+=	make
 
 MAKEFILE=	makefile
 
+BUILDLINK_LIBS.dl+=	${BUILDLINK_LDADD.dl}
+
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
