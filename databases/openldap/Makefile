@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2002/02/02 15:00:18 kleink Exp $
+# $NetBSD: Makefile,v 1.41 2002/02/13 12:21:24 martti Exp $
 
 DISTNAME=	openldap-2.0.23
 SVR4_PKGNAME=	oldap
@@ -13,6 +13,8 @@ COMMENT=	Lightweight directory access protocol server and client package
 CONFLICTS+=	ldapsdk-[0-9]*
 
 USE_BUILDLINK_ONLY=	YES
+REPLACE_BUILDLINK_SED+=	-e "s|-L${WRKSRC}/libraries||g"
+
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/build/ltconfig
 
