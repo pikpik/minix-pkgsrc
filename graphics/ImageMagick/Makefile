@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 1999/03/04 14:03:34 tron Exp $
+# $NetBSD: Makefile,v 1.37 1999/04/05 01:11:58 tron Exp $
 #
 
 DISTNAME=	ImageMagick-4.2.2
@@ -26,5 +26,10 @@ MIRROR_DISTFILE= no
 USE_IMAKE=	yes
 XMKMF=		${MAKE_ENV} xmkmf -a
 MAKE_ENV+=	LOCALBASE=${LOCALBASE} PREFIX=${PREFIX}
+
+GCC_VERSION!=  gcc --version
+.if (${GCC_VERSION:C/-.*$$//} != egcs)
+NOT_FOR_ARCHS=	alpha pmax
+.endif
 
 .include "../../mk/bsd.pkg.mk"
