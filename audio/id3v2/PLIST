@@ -1,3 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/04/19 14:35:29 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/06/12 14:34:29 grant Exp $
 bin/id3v2
 man/man1/id3v2.1
+share/doc/id3v2/README
+@dirrm share/doc/id3v2
