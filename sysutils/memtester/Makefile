@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2004/08/21 06:59:22 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2004/09/02 02:30:19 schmonz Exp $
 #
 
 DISTNAME=		memtester-4.0.4
 CATEGORIES=		sysutils
 MASTER_SITES=		${HOMEPAGE}
 
-MAINTAINER=		pancake@phreaker.net
+MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.qcc.ca/~charlesc/software/memtester/
 COMMENT=		Utility for testing the memory subsystem for faults
 
