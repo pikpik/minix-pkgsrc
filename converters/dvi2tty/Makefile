@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/11/14 23:40:46 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:27:14 grant Exp $
 #
 
 DISTNAME=	dvi2tty
@@ -12,7 +12,7 @@ COMMENT=	Program for previewing DVI files
 
 LICENSE=	no-commercial-use
 
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	# defined
 MAKE_FLAGS+=	CFLAGS="${CFLAGS}"
 
 pre-patch:
