@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/19 15:16:04 zuntum Exp $
 
 DISTNAME=	cwtext-0.91
-CATEGORIES=	textproc
+CATEGORIES=	ham
 MASTER_SITES=	http://prdownloads.sourceforge.net/cwtext/
 
 MAINTAINER=	packages@netbsd.org
