@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/01/10 16:25:27 bouyer Exp $
+# $NetBSD: Makefile,v 1.31 2005/01/16 21:13:37 adrianp Exp $
 
 DISTNAME=	horde-2.2.7
 CATEGORIES=	www
@@ -63,6 +63,7 @@ do-install:
 	cd ${WRKSRC}/config; ${INSTALL_DATA} * ${HORDEDIR}/config
 	cd ${WRKSRC}; ${INSTALL_DATA} *.php ${HORDEDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${HORDEDIR}
-	${CHMOD} -R a-w ${HORDEDIR}
+	${FIND} ${HORDEDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${HORDEDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE}
 
 .include "../../mk/bsd.pkg.mk"
