@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.18 2002/03/04 00:53:15 hubertf Exp $
+# $NetBSD: Makefile,v 1.19 2002/05/14 00:05:02 rh Exp $
 #
 
-DISTNAME=	url2pkg-1.19
+DISTNAME=	url2pkg-1.20
 CATEGORIES=	pkgtools sysutils
 MASTER_SITES=	# Nothing
 DISTFILES=	# Nothing
 
 MAINTAINER=	hubertf@netbsd.org
-COMMENT=	Shellscript to help with the first steps to build a package
+COMMENT=	Shell script to help with the first steps to build a package
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
