@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/04/23 05:55:02 kim Exp $
+$NetBSD$
 
-MD5 (html2ps-1.0b1.tar.gz) = 00fb5ac8c3769473b53ec4ad20e9b7cb
+SHA1 (html2ps-1.0b1.tar.gz) = ef80edf8a1fb8156848993d4ded306ab6c9149df
+Size (html2ps-1.0b1.tar.gz) = 107435 bytes
 SHA1 (patch-aa) = 1b2912d42b41049d07560153f624cd999cc2bad2

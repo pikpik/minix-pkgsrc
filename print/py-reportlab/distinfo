@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/10/22 20:01:55 tsarna Exp $
+$NetBSD$
 
-MD5 (python/ReportLab_1_01.tgz) = 0c4126432624875bf36fac56faa963e7
+SHA1 (python/ReportLab_1_01.tgz) = ed8e8456018e7ca442c7ad4200fab5c983daa352
+Size (python/ReportLab_1_01.tgz) = 665597 bytes

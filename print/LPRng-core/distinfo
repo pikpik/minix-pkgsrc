@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/12 20:09:42 kei Exp $
+$NetBSD$
 
-MD5 (LPRng-3.6.26.tgz) = 8d3dc76549191ae6681f6b61ed9fc660
+SHA1 (LPRng-3.6.26.tgz) = 9ca6e7eff9acbcaad81109e34a47cab1675fc030
+Size (LPRng-3.6.26.tgz) = 2135703 bytes
 SHA1 (patch-ac) = 18672f47fd9fcb8288c070a89278ecb1c8ee8242

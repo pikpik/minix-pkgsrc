@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/23 13:47:00 rh Exp $
+$NetBSD$
 
-MD5 (pcps840.tar.gz) = 79d594e2054253984b183d351aff6835
+SHA1 (pcps840.tar.gz) = aa144398d59326c183d2d248b16f30f31420b3c6
+Size (pcps840.tar.gz) = 84459 bytes
 SHA1 (patch-aa) = 7208cca66eac6221a599003352c9e2f5880eeaa0

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/04 02:12:45 tv Exp $
+$NetBSD$
 
-MD5 (Font-AFM-1.18.tar.gz) = 4e134a23de7be8c44f70e87d831c4f18
+SHA1 (Font-AFM-1.18.tar.gz) = 92b82f57f18b72462ba9d0d56953c8d3011eb421
+Size (Font-AFM-1.18.tar.gz) = 8815 bytes
