@@ -1,4 +1,4 @@
-/*	$NetBSD: str.c,v 1.43 2003/09/02 07:35:04 jlam Exp $	*/
+/*	$NetBSD: str.c,v 1.45 2003/09/09 08:22:39 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "Id: str.c,v 1.5 1997/10/08 07:48:21 charnier Exp";
 #else
-__RCSID("$NetBSD: str.c,v 1.43 2003/09/02 07:35:04 jlam Exp $");
+__RCSID("$NetBSD: str.c,v 1.45 2003/09/09 08:22:39 jlam Exp $");
 #endif
 #endif
 
@@ -656,7 +656,7 @@ add_to_list_fn(const char *pkg, void *vp)
 	char fn[FILENAME_MAX];
 
 	snprintf(fn, sizeof(fn), "%s/%s", _pkgdb_getPKGDB_DIR(), pkg);
-	if (!isfile(fn)) {	/* might as well use sanity_check() */
+	if (isdir(fn) || islinktodir(fn)) {
 		lpp = alloc_lpkg(pkg);
 		TAILQ_INSERT_TAIL(pkgs, lpp, lp_link);
 	}
