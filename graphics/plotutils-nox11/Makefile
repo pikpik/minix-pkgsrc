@@ -2,24 +2,24 @@
 #
 
 DISTNAME=		plotutils-2.4.1
-PKGREVISION=		2
-CATEGORIES=		devel graphics x11
+PKGNAME=		${DISTNAME:C/-/-nox11-/}
+CATEGORIES=		devel graphics
 MASTER_SITES=		${MASTER_SITE_GNU:=plotutils/}
 
 MAINTAINER=		dmcmahill@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/plotutils/plotutils.html
 COMMENT=		Programs and library for plotting scientific data
 
-CONFLICTS+=		${DISTNAME:C/-[0-9].*/-nox11/}
+CONFLICTS+=		${DISTNAME:C/-[0-9].*//}
 
-USE_BUILDLINK2=		YES
-USE_GCC_SHLIB=		YES
-USE_X11=		YES
+USE_BUILDLINK2=		yes
+USE_GCC_SHLIB=		yes
 
-GNU_CONFIGURE=		YES
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-libplotter
+CONFIGURE_ARGS+=	--without-x
 
-USE_LIBTOOL=		YES
+USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig ${WRKSRC}/libxmi/ltconfig
 
 .include "../../graphics/png/buildlink2.mk"
