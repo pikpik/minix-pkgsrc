@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2003/02/22 23:37:14 mjl Exp $
 
 .if !defined(SPREAD_BUILDLINK2_MK)
 SPREAD_BUILDLINK2_MK=		# defined
@@ -20,4 +20,3 @@ BUILDLINK_TARGETS+=		spread-buildlink
 spread-buildlink: _BUILDLINK_USE
 
 .endif # SPREAD_BUILDLINK2_MK
-
