@@ -13,7 +13,7 @@ BUILD_DEFS+=	USE_INN
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(USE_INN) && ${USE_INN} == YES
-DEPENDS=	inn-2.2:../inn
+DEPENDS=	inn>=2.2:../inn
 .else
 DEPENDS=	nntpclnt-1.6.1:../nntpclnt
 .endif
