@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/12/03 12:41:58 frueauf Exp $
+# $NetBSD: Makefile,v 1.18 1998/12/03 13:09:11 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.28 1997/12/08 15:51:20 tg Exp
 #
 
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		packages@netbsd.org
 
-DEPENDS+=		tk-8.0p2:../../x11/tk80
+DEPENDS+=		tk-8.0.5:../../x11/tk80
 DEPENDS+=		rman-3.0.6:../../textproc/rman
 DEPENDS+=		glimpse-4.1:../../textproc/glimpse
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/06/22 12:44:31 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/08/20 15:17:08 tsarna Exp $
 #
 
 DISTNAME=	tclX8.0.2
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/tclx-distrib/
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.neosoft.com/TclX/
 
-DEPENDS+=	tk-8.0p2:../../x11/tk80
+DEPENDS+=	tk-8.0.5:../../x11/tk80
 
 WRKSRC=		${WRKDIR}/tclX8.0.2/unix
 GNU_CONFIGURE=	yes

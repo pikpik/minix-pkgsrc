@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/11/07 20:04:48 mycroft Exp $
+# $NetBSD: Makefile,v 1.18 1998/11/19 15:40:45 agc Exp $
 #
 
 DISTNAME=       timidity-0.2i
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.cgs.fi/~tt/timidity/
 
 BUILD_DEPENDS=  unzip:../../archivers/unzip
 DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
-DEPENDS+=	tk-8.0p2:../../x11/tk80
+DEPENDS+=	tk-8.0.5:../../x11/tk80
 
 NO_CDROM=       "Uses copyrighted patches"
 
