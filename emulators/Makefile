@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.100 2004/06/20 19:35:00 xtraeme Exp $
+# $NetBSD: Makefile,v 1.101 2004/06/21 20:32:13 xtraeme Exp $
 #
 
 COMMENT=	Emulators for other operating systems
 
 SUBDIR+=	BasiliskII
 SUBDIR+=	NeoPop-SDL
+SUBDIR+=	aranym
 SUBDIR+=	arcem
 SUBDIR+=	arnold
 SUBDIR+=	atari800
