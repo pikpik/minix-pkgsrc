@@ -94,6 +94,12 @@ ${PYSITELIB}/Pyrex/Distutils/__init__.pyo
 ${PYSITELIB}/Pyrex/Distutils/build_ext.py
 ${PYSITELIB}/Pyrex/Distutils/build_ext.pyc
 ${PYSITELIB}/Pyrex/Distutils/build_ext.pyo
+${PYSITELIB}/Pyrex/Mac/DarwinSystem.py
+${PYSITELIB}/Pyrex/Mac/DarwinSystem.pyc
+${PYSITELIB}/Pyrex/Mac/DarwinSystem.pyo
+${PYSITELIB}/Pyrex/Mac/DarwinTesting.py
+${PYSITELIB}/Pyrex/Mac/DarwinTesting.pyc
+${PYSITELIB}/Pyrex/Mac/DarwinTesting.pyo
 ${PYSITELIB}/Pyrex/Mac/FileMarking.py
 ${PYSITELIB}/Pyrex/Mac/FileMarking.pyc
 ${PYSITELIB}/Pyrex/Mac/FileMarking.pyo
