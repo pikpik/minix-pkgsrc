@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: version.mk,v 1.1 2002/11/20 22:13:21 jlam Exp $
 #
 # This file computes the version number of the Mesa distributed with
 # XFree86 and stores it in ${_MESA_VERSION}.
@@ -7,6 +7,8 @@
 
 .if !defined(MESA_VERSION_MK)
 MESA_VERSION_MK=	# defined
+
+MESA_VERSION=		5.0.2
 
 .include "../../mk/bsd.prefs.mk"
 
