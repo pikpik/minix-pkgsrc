@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2003/07/13 13:53:44 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2003/07/17 22:55:18 grant Exp $
 
 DISTNAME=		WindowMaker-0.80.2
 PKGNAME=		windowmaker-0.80.2
@@ -94,6 +94,5 @@ post-install:
 .include "../../mk/bsd.pkg.mk"
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-USE_GCC3=YES
-.  include "../../mk/gcc.buildlink2.mk"
+USE_GCC3=	# defined
 .endif

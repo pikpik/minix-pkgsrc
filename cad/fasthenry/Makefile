@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/06/11 20:50:51 abs Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 21:24:53 grant Exp $
 #
 
 DISTNAME=	fasthenry-3.0-12Nov96
@@ -40,7 +40,7 @@ MAKE_ENV+=	LIBS="${LIBS}"
 .endif
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-.  include "../../mk/gcc.buildlink2.mk"
+USE_GCC2=		# defined
 .endif
 
 .include "../../mk/bsd.pkg.mk"

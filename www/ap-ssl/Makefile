@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2003/07/17 22:55:27 grant Exp $
+# $NetBSD: Makefile,v 1.72 2003/07/19 12:34:18 tron Exp $
 
 DISTNAME=		mod_ssl-2.8.15-1.3.28
 PKGNAME=		ap-ssl-2.8.15
@@ -100,5 +100,4 @@ post-install:
 .include "../../security/openssl/buildlink2.mk"
 .include "../../www/apache/buildlink2.mk"
 
-.include "../../mk/gcc.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
