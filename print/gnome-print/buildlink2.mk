@@ -12,7 +12,6 @@ BUILDLINK_PREFIX.gnome-print_DEFAULT=	${X11PREFIX}
 BUILDLINK_FILES.gnome-print+=	include/gnome-1.0/libgnomeprint/*
 BUILDLINK_FILES.gnome-print+=	lib/libgnomeprint.*
 
-.include "../../databases/db4/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf-gnome/buildlink2.mk"
 .include "../../textproc/libxml/buildlink2.mk"
 

@@ -12,7 +12,6 @@ BUILDLINK_PREFIX.glibwww_DEFAULTS=	${X11PREFIX}
 BUILDLINK_FILES.glibwww=	include/glibwww/glibwww.h
 BUILDLINK_FILES.glibwww+=	lib/libglibwww.*
 
-.include "../../databases/db4/buildlink2.mk"
 .include "../../www/libwww/buildlink2.mk"
 .include "../../x11/gnome-libs/buildlink2.mk"
 

@@ -17,7 +17,6 @@ BUILDLINK_FILES.gnome-vfs+=	lib/libgnomevfs.*
 .include "../../converters/libiconv/buildlink2.mk"
 .include "../../devel/GConf/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
-.include "../../databases/db4/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gnome-vfs-buildlink
 
