@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1549 2004/12/21 17:30:07 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1550 2004/12/27 06:41:50 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -255,6 +255,9 @@ _USE_GMAKE=		yes
 .if defined(_USE_GMAKE)
 MAKE_PROGRAM=		${GMAKE}
 .elif defined(USE_IMAKE)
+.  if ${_IMAKE_MAKE} == ${GMAKE}
+USE_GNU_TOOLS+=		make
+.  endif
 MAKE_PROGRAM=		${_IMAKE_MAKE}
 .else
 MAKE_PROGRAM=		${MAKE}
