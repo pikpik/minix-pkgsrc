@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.56 2001/06/11 21:57:57 zuntum Exp $
+$NetBSD: TODO,v 1.57 2001/07/04 17:16:25 jlam Exp $
 
 packages TODO (Suggested new packages)
 ^^^^^^^^^^^^^
@@ -34,6 +34,10 @@ packages TODO (Suggested new packages)
 	squirm
 	fast and configurable redirector for Squid
 	http://squirm.foote.com.au/
+
+	smsclient
+	send SMS messages to mobile phones and pagers on wide range of providers
+	http://www.styx.demon.co.uk/
 
 	SquirrelMail plugins
 	SquirrelMail has a plugings features and several plugins exist.
