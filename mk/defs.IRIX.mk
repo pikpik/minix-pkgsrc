@@ -1,4 +1,4 @@
-# $NetBSD: defs.IRIX.mk,v 1.15 2002/12/23 23:03:23 jschauma Exp $
+# $NetBSD: defs.IRIX.mk,v 1.16 2003/01/10 08:44:20 jlam Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -53,6 +53,7 @@ PAX?=		/usr/sbin/pax
 PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/sbin/ps
+PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/sbin/rm
 RMDIR?=		/usr/bin/rmdir
 SED?=		/sbin/sed

@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.103 2003/01/14 16:25:41 wiz Exp $
+# $NetBSD$
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -295,8 +295,8 @@ PKGDIR?=		${.CURDIR}
 .if defined(WRKOBJDIR)
 BUILD_DIR?=		${WRKOBJDIR}/${PKGPATH}
 .else
-BUILD_DIR?=		${.CURDIR}
-.endif	# WRKOBJDIR
+BUILD_DIR!=		cd ${.CURDIR} && ${PWD_CMD}
+.endif
 
 # If OBJHOSTNAME is set, use first component of hostname in directory name.
 # If OBJMACHINE is set, use ${MACHINE_ARCH} in the working directory name.

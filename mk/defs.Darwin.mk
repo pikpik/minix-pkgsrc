@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.41 2002/12/18 06:18:14 schmonz Exp $
+# $NetBSD: defs.Darwin.mk,v 1.42 2003/01/10 08:44:20 jlam Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -42,6 +42,7 @@ PAX?=		/bin/pax
 PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
+PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
 SED?=		/usr/bin/sed
