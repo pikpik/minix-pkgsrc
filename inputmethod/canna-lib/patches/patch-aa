@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.4 2000/11/30 15:48:10 itojun Exp $
 
 --- Canna.conf-	Fri Dec  1 00:31:14 2000
 +++ Canna.conf	Fri Dec  1 00:31:36 2000
@@ -46,8 +46,7 @@ $NetBSD$
 -#define UseInstalledLibCanna NO
 +#define UseInstalledLibCanna YES
  
--DicDir   = $(cannaLibDir)/dic
-+DicDir   = ${DICT_DIR}/canna
+ DicDir   = $(cannaLibDir)/dic
  
 @@ -241,14 +244,14 @@
  # endif

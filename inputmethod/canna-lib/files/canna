@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: canna,v 1.1 2001/03/16 18:16:38 wiz Exp $
 #
 # PROVIDE: canna
 # REQUIRE: DAEMON

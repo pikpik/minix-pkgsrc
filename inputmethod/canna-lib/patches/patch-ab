@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.4 2002/04/13 03:02:26 jwise Exp $
 
 --- ./Imakefile.orig	Wed Nov 27 16:01:34 1996
 +++ ./Imakefile	Fri Jul 30 19:17:44 1999
