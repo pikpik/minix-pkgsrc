@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- console/cmds.c.old	Wed Oct 30 12:47:26 2002
 +++ console/cmds.c	Wed Oct 30 12:49:37 2002
 @@ -1365,9 +1365,9 @@
