@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2002/04/26 09:36:57 tron Exp $
+# $NetBSD: Makefile,v 1.6 2002/09/13 10:40:39 uebayasi Exp $
 
 DISTNAME=		zenicb-19981202
-PKGNAME=		${EMACS_PKGPREFIX}${DISTNAME}
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

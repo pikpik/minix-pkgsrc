@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 13:51:26 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/13 10:37:53 uebayasi Exp $
 
 DISTNAME=	irchat-pj-2.4.24.20
-PKGNAME=	${EMACS_PKGPREFIX}${DISTNAME}
 CATEGORIES=	chat
 MASTER_SITES=	ftp://ftp.madoka.org/pub/irchat-pj/
 
