@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/01/20 12:15:17 agc Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/11 17:18:30 snj Exp $
 #
 
 DISTNAME=	mkfontscale-20020524
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.pps.jussieu.fr/~jch/software/files/
 
@@ -18,6 +18,10 @@ USE_IMAKE=	YES
 
 .if !exists(${X11BASE}/include/X11/fonts/fontenc.h)
 PKG_FAIL_REASON= "Needs the fontenc.h header file, which comes with newer XFree versions."
+.endif
+
+.if exists(${X11BASE}/bin/mkfontscale)
+CONFLICTS+=	xpkgwedge>=1.11
 .endif
 
 .include "../../mk/bsd.pkg.mk"
