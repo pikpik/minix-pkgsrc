@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/06/14 07:30:23 kleink Exp $
+# $NetBSD: Makefile,v 1.14 2000/06/14 13:02:16 veego Exp $
 
 DISTNAME=	sendmail.8.9.3
 PKGNAME=	sendmail-8.9.3
@@ -58,6 +58,12 @@ MAKE_ENV+=	LDAP_CONF="-DLDAPMAP"			\
 		LDAP_LIBS="-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -lldap -llber"
 .else
 MAKE_ENV+=	LDAP_CONF="" LDAP_ENVDEF="" LDAP_LIBS=""
+.endif
+
+.if ${OPSYS} == "NetBSD"
+MAKE_ENV+=	TCPD_CONF="-DTCPWRAPPERS" TCPD_LIBS="-lwrap"
+.else
+MAKE_ENV+=	TCPD_CONF="" TCPD_LIBS=""
 .endif
 
 post-patch:
