@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# $NetBSD$
 
 PGUSER=@PGUSER@
 PGGROUP=@PGGROUP@
