@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2001/10/01 10:38:02 agc Exp $
+# $NetBSD: Makefile,v 1.38 2001/10/16 07:03:44 jlam Exp $
 #
 
 COMMENT=	Archivers
@@ -7,6 +7,7 @@ SUBDIR+=	arc
 SUBDIR+=	bicom
 SUBDIR+=	bunzip
 SUBDIR+=	bzip2
+SUBDIR+=	cabextract
 SUBDIR+=	dact
 SUBDIR+=	fastjar
 SUBDIR+=	freeze
