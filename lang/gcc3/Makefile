@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/08/09 10:59:11 seb Exp $
+# $NetBSD: Makefile,v 1.45 2003/10/11 06:24:52 wiz Exp $
 #
 
 DISTNAME=		gcc-3.3
@@ -112,6 +112,11 @@ post-install:
 		>> ${PLIST_SRC}
 
 .include "../../mk/bsd.pkg.mk"
+
+# do not allow gcc to find libintl.h (or anything else) in ${LOCALBASE}.
+# if it can, it expects it can have libintl, and linking fails miserably.
+CFLAGS:=	${CFLAGS:S|-I${LOCALBASE}/include||}
+CPPFLAGS:=	${CPPFLAGS:S|-I${LOCALBASE}/include||}
 
 # Make bootstrap with compiler != gcc possible.
 CONFIGURE_ENV+=	LDFLAGS="${_STRIPFLAG_CC}"
