@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: DEINSTALL,v 1.2 2001/11/26 22:22:19 zuntum Exp $
 
 case "${STAGE}" in
 POST-DEINSTALL)
 	${ECHO} ===========================================================================
 	${ECHO}
-	${ECHO} You may want to remove qmail-users package now, as it is no longer needed.
+	${ECHO} You may remove qmail-users package now, as it is no longer needed.
 	${ECHO}
 	${ECHO} ===========================================================================
 	;;
