@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2001/09/17 15:17:32 tron Exp $
+# $NetBSD: Makefile,v 1.77 2001/09/27 23:18:09 jlam Exp $
 
 DISTNAME=		ImageMagick-5.3.9
 CATEGORIES=		graphics
@@ -16,9 +16,6 @@ DEPENDS+=		mpeg2codec-1.2:../../graphics/mpeg2codec
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
 USE_BUILDLINK_ONLY=	YES
-REPLACE_BUILDLINK=	Magick++/bin/Magick++-config
-REPLACE_BUILDLINK+=	magick/Magick-config
-
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

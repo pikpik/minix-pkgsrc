@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/07/29 05:38:40 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2001/10/01 20:51:45 jlam Exp $
 
 .include "Makefile.common"
 
@@ -7,7 +7,6 @@ PDFLIB_PKG_VERS=	# empty
 COMMENT=		C library to produce PDF files
 
 USE_BUILDLINK_ONLY=	YES
-REPLACE_BUILDLINK+=	pdflib-config
 
 ALL_TARGET=		pdflib
 DOCDIR=			${PREFIX}/share/doc/pdflib

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/04/17 11:09:09 zuntum Exp $
+# $NetBSD: Makefile,v 1.8 2001/07/14 16:41:38 sakamoto Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.packetfactory.net/libnet/
 COMMENT=	C library for portable packet creation and injection
 
 USE_BUILDLINK_ONLY= # defined
-REPLACE_BUILDLINK=  libnet-config
 
 USE_LIBTOOL=	#defined
 GNU_CONFIGURE=	#defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/08/29 22:41:08 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/09/24 14:28:55 rh Exp $
 #
 
 DISTNAME=	SDL-1.2.2
@@ -15,7 +15,6 @@ BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 BUILDLINK_DEPENDS.pth=	pth>=1.4.0
 
 USE_BUILDLINK_ONLY=	YES
-REPLACE_BUILDLINK=	sdl-config
 
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
