@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/25 16:31:05 ben Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/03 15:14:59 wiz Exp $
 #
 
 DISTNAME=		gfract-0.30
@@ -23,6 +23,10 @@ SUBST_STAGE.prefix=	post-extract
 SUBST_FILES.prefix=	main.cpp
 SUBST_SED.prefix=	-e "s,/usr/local,${PREFIX},g"
 
+.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+
 post-extract:
 	${MV} ${WRKDIR}/monk2\'.map ${WRKDIR}/monk2.map
 
@@ -33,6 +37,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/gfract.xpm ${PREFIX}/share/gfract/
 	${INSTALL_PROGRAM} ${WRKSRC}/gfract ${PREFIX}/bin/
 
-.include "../../graphics/png/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
