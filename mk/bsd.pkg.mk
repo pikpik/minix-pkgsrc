@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.451 2000/06/02 23:30:52 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.452 2000/06/03 07:15:28 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -2206,9 +2206,9 @@ PACKAGE_NAME_TYPE?=	name
 .if !target(package-name)
 package-name:
 .if (${PACKAGE_NAME_TYPE} == "html")
-	@${ECHO} '<A HREF="../../'`${MAKE} ${MAKEFLAGS} package-path | ${HTMLIFY}`'/README.html">'`${ECHO} ${PKGNAME} | ${HTMLIFY}`'</A>'
+	@${ECHO} '<A HREF="../../'`${ECHO} ${.CURDIR:C,.*/([^/]*/[^/]*)$,\1,} | ${HTMLIFY}`'/README.html">'`${ECHO} ${PKGNAME} | ${HTMLIFY}`'</A>'
 .else
-	@${ECHO} '${PKGNAME}'
+	@${ECHO} ${PKGNAME}
 .endif # PACKAGE_NAME_TYPE
 .endif # !target(package-name)
 
