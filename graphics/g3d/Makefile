@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2004/04/14 19:30:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/24 23:13:50 snj Exp $
 #
 
 DISTNAME=	g3d-0.0.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://condor.stcloudstate.edu/~hebl9901/g3d/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2004/04/26 22:15:28 snj Exp $
+# $NetBSD: Makefile,v 1.19 2004/07/06 20:57:45 drochner Exp $
 #
 
 DISTNAME=		cdrdao-1.1.9
 PKGNAME=		gcdmaster-1.1.9
+PKGREVISION=	1
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdrdao/}
 

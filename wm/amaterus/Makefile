@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 22:55:09 grant Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/10 14:12:50 xtraeme Exp $
 
 DISTNAME=	amaterus-0.34.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	wm
 MASTER_SITES=	http://www.taiyaki.org/src/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2004/07/08 20:27:56 heinz Exp $
+# $NetBSD: Makefile,v 1.38 2004/08/29 16:49:58 recht Exp $
 #
 
 DISTNAME=	hylafax-4.1.8
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.hylafax.org/source/ \
 		ftp://ftp.leo.org/pub/comp/os/unix/networking/fax/hylafax/source/

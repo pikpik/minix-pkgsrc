@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/01/24 13:30:55 grant Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/12 21:24:58 snj Exp $
 #
 
 DISTNAME=	copter-commander-1.8
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=coco/}
 EXTRACT_SUFX=	.tar.bz2

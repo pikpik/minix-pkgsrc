@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/19 01:06:43 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:08 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 TREMOR_BUILDLINK3_MK:=	${TREMOR_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	tremor
 
 .if !empty(TREMOR_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.tremor+=	tremor>=1.0.2
+BUILDLINK_RECOMMENDED.tremor+=	tremor>=1.0.2nb4
 BUILDLINK_PKGSRCDIR.tremor?=	../../audio/tremor
 .endif	# TREMOR_BUILDLINK3_MK
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/16 01:12:14 xtraeme Exp $
 #
 
 DISTNAME=	libjit-0.0.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.southern-storm.com.au/download/
 

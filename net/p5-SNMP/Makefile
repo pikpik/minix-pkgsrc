@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2004/02/13 17:46:22 seb Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/27 06:05:57 snj Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/06/27 01:53:13 jfitz Exp
 #
 
 DISTNAME=	net-snmp-5.0.9
 PKGNAME=	p5-SNMP-5.0.9
+PKGREVISION=	1
 SVR4_PKGNAME=	p5snm
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/}

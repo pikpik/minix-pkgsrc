@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/03/05 19:25:11 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/03/18 09:12:10 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSLANG_BUILDLINK3_MK:=	${LIBSLANG_BUILDLINK3_MK}+
@@ -14,6 +14,7 @@ BUILDLINK_PACKAGES+=	libslang
 
 .if !empty(LIBSLANG_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libslang+=	libslang>=1.4.9nb1
+BUILDLINK_RECOMMENDED.libslang+=	libslang>=1.4.9nb2
 BUILDLINK_PKGSRCDIR.libslang?=	../../devel/libslang
 .endif	# LIBSLANG_BUILDLINK3_MK
 

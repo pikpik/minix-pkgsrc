@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:26:15 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/14 17:21:52 jlam Exp $
 #
 
 DISTNAME=	fakeroot_0.5.8
 PKGNAME=	fakeroot-0.5.8
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/f/fakeroot/}
 

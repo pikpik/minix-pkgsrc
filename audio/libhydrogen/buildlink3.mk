@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/07/06 14:51:17 xtraeme Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBHYDROGEN_BUILDLINK3_MK:=	${LIBHYDROGEN_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libhydrogen
 
 .if !empty(LIBHYDROGEN_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libhydrogen+=		libhydrogen>=0.8.0
+BUILDLINK_RECOMMENDED.libhydrogen+=	libhydrogen>=0.8.0nb1
 BUILDLINK_PKGSRCDIR.libhydrogen?=	../../audio/libhydrogen
 .endif	# LIBHYDROGEN_BUILDLINK3_MK
 

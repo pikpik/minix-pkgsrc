@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/06/28 15:37:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2004/09/21 17:12:39 jmmv Exp $
 #
 
 DISTNAME=	gpdf-2.8.0
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gpdf/2.8/}
 EXTRACT_SUFX=	.tar.bz2

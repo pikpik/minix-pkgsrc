@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/06/08 17:52:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/06/08 18:01:14 jmmv Exp $
 #
 
 DISTNAME=	tkgate-1.6i
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	cad
 MASTER_SITES=	ftp://gadoid.ices.cmu.edu/pub/tkgate/
 EXTRACT_SUFX=	.tgz

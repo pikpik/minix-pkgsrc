@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:47:27 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:20:04 agc Exp $
 
 DISTNAME=		eispack-20001130
+PKGREVISION=	1
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

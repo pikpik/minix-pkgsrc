@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2004/06/15 11:37:36 grant Exp $
+# $NetBSD: Makefile,v 1.22 2004/06/15 11:38:00 grant Exp $
 
 DISTNAME=	pstoedit_3_31
 PKGNAME=	pstoedit-3.31
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	converters graphics print
 MASTER_SITES=	http://home.t-online.de/home/helga.glunz/wglunz/pstoedit/
 EXTRACT_SUFX=	.zip

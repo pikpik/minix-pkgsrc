@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2004/04/14 16:15:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/24 22:46:13 jlam Exp $
 
 DISTNAME=		gtkstep-1.10
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		x11
 MASTER_SITES=		http://ulli.linuxave.net/gtkstep/
 EXTRACT_SUFX=		.tar.bz2

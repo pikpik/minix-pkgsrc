@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2004/06/10 12:47:03 markd Exp $
+# $NetBSD: Makefile,v 1.33 2004/08/21 15:39:02 markd Exp $
 
 DISTNAME=	kdevelop-3.1.0
 PKGNAME=	kdevelop-base-3.1.0
+PKGREVISION=	1
 CATEGORIES=	devel kde
 
 HOMEPAGE=       http://www.kdevelop.org/

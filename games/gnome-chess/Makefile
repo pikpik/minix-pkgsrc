@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2004/04/14 16:15:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.30 2004/04/26 04:59:26 snj Exp $
 
 DISTNAME=		gnome-chess-0.3.3
-PKGREVISION=		13
+PKGREVISION=		14
 CATEGORIES=		games gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-chess/0.3/}
 

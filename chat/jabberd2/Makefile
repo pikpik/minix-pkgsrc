@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/08/07 14:13:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.11 2004/08/07 14:29:20 xtraeme Exp $
 #
 
 DISTNAME=		jabberd-2.0s3
+PKGREVISION=	1
 CATEGORIES=		chat
 MASTER_SITES=		http://www.jabberstudio.org/files/jabberd2/
 

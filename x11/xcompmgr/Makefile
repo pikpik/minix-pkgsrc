@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/09/21 17:04:08 xtraeme Exp $
 #
 
 DISTNAME=	xcompmgr-cvs-20040914
 PKGNAME=	${DISTNAME:S/-cvs//}
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/xtraeme/
 EXTRACT_SUFX=	.tgz

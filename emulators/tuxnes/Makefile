@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/19 20:29:37 wiz Exp $
 #
 
 DISTNAME=		tuxnes-0.75
+PKGREVISION=	1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tuxnes/}
 

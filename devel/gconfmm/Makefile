@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2004/03/09 20:56:35 minskim Exp $
+# $NetBSD: Makefile,v 1.14 2004/07/05 11:15:38 drochner Exp $
 #
 
 DISTNAME=	gconfmm-2.0.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gconfmm/2.0/}
 

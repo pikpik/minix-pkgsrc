@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 15:13:19 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/18 19:36:39 wiz Exp $
 #
 
 DISTNAME=	GutenMark_source_${GVER}
 PKGNAME=	GutenMark-${GVER}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.sandroid.org/GutenMark/SoftwareSnapshots/
 

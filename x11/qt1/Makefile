@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2004/03/22 15:06:52 bouyer Exp $
+# $NetBSD: Makefile,v 1.15 2004/04/24 22:38:22 snj Exp $
 #
 
 DISTNAME=	qt-1.44
 PKGNAME=	qt1-1.44
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.troll.no/qt/source/ \
 		ftp://ftp.fu-berlin.de/unix/X11/gui/Qt/source/

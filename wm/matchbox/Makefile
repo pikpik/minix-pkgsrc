@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2004/03/10 14:12:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.13 2004/09/30 11:36:33 agc Exp $
 #
 
 DISTNAME=	matchbox-window-manager-0.8.4
 PKGNAME=	matchbox-0.8.4
+PKGREVISION=	1
 CATEGORIES=	wm x11
 MASTER_SITES=	http://matchbox.handhelds.org/sources/matchbox-window-manager/0.8/
 

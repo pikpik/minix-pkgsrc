@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2004/05/09 06:48:40 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/07/17 01:24:45 rh Exp $
 #
 
 DISTNAME=	pam_ldap-150
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.padl.com/pub/
 

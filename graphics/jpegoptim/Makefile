@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/03 21:50:29 cube Exp $
 
 DISTNAME=       jpegoptim-1.2.2
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://people.cc.jyu.fi/~tjko/rpms/jpegoptim/
 

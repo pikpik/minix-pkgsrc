@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 15:00:22 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/25 04:55:22 snj Exp $
 #
 
 DISTNAME=		otpCalc-0.96
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		x11 security
 MASTER_SITES=		http://original.killa.net/infosec/otpCalc/
 

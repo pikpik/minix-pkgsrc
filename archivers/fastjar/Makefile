@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/03/11 18:03:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/29 18:19:52 minskim Exp $
 #
 
 DISTNAME=	fastjar-0.93
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fastjar/}
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/05/08 18:09:20 salo Exp $
+# $NetBSD: Makefile,v 1.5 2004/07/21 00:04:30 salo Exp $
 #
 
 .include "../../multimedia/mkvtoolnix/Makefile.dist"
+
+PKGREVISION=	1
 
 MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.bunkus.org/videotools/mkvtoolnix/

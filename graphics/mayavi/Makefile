@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/02 14:13:45 drochner Exp $
 #
 
 DISTNAME=		MayaVi-1.3
+PKGREVISION=	1
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mayavi/}
 

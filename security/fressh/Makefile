@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/09/21 08:35:51 jmc Exp $
+# $NetBSD: Makefile,v 1.9 2004/07/25 04:19:59 grant Exp $
 
 DISTNAME=		fressh-0.8.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security
 MASTER_SITES=		http://www.fressh.org/
 EXTRACT_SUFX=		.tar.bz2

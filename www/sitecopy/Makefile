@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2004/04/15 21:44:47 snj Exp $
+# $NetBSD: Makefile,v 1.27 2004/04/24 22:46:13 jlam Exp $
 
 DISTNAME=		sitecopy-0.13.4
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		www
 MASTER_SITES=		http://www.lyra.org/sitecopy/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 15:11:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/18 06:08:38 snj Exp $
 
 DISTNAME=	avifile-0.53.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://ernie.eit.uni-kl.de/avifile/			\
 		http://divx.euro.ru/					\

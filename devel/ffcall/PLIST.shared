@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:23:25 zuntum Exp $
-lib/libavcall.so.0.0
-lib/libavcall.so.0
-lib/libavcall.so
-lib/libcallback.so.0.0
-lib/libcallback.so.0
-lib/libcallback.so

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2004/02/14 00:54:45 grant Exp $
+# $NetBSD: Makefile,v 1.29 2004/02/14 17:21:42 jlam Exp $
 #
 
 DISTNAME=		jpegsrc.v6b
 PKGNAME=		jpeg-6b
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.fu-berlin.de/unix/graphics/jpeg/ \
 			ftp://ftp.uu.net/graphics/jpeg/

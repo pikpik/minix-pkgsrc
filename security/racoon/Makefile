@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.68 2004/06/17 03:36:18 itojun Exp $
+# $NetBSD: Makefile,v 1.69 2004/09/22 16:14:37 kim Exp $
 #
 
 DISTNAME=	racoon-20040617a
+PKGREVISION=	1
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/03/10 07:41:16 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/10 11:53:37 xtraeme Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 PKGNAME=	xfce4-fm-icons-${XFCE4_VERSION}
+PKGREVISION=	1
 DISTNAME=	xffm-icons-${XFCE4_VERSION}
 CATEGORIES=	sysutils
 COMMENT=	XFce4 filemanager icons

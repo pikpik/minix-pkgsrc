@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2004/01/24 15:46:44 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/21 04:52:54 snj Exp $
 #
 
 DISTNAME=	resize_image-0.6
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://lab.erasme.org/resize_image/
 

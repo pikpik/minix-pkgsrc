@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2004/01/24 15:30:34 grant Exp $
+# $NetBSD: Makefile,v 1.20 2004/07/06 22:08:17 hubertf Exp $
 #
 
 DISTNAME=	xglobe-0.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 #
 # The original MASTER_SITE for the program responds "200 OK"

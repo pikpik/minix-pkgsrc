@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/01/22 07:15:00 grant Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/28 22:34:07 grant Exp $
 #
 
 DISTNAME=	id3ed-1.10.4
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.azstarnet.com/~donut/programs/id3ed/
 

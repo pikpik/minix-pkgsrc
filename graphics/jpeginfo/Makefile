@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/03 21:51:54 cube Exp $
 #
 
 DISTNAME=	jpeginfo-1.6.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cc.jyu.fi/~tjko/src/
 

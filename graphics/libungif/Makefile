@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2004/02/15 13:34:59 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2004/07/13 08:01:31 adam Exp $
 
 DISTNAME=	libungif-4.1.3
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libungif/}
 EXTRACT_SUFX=	.tar.bz2

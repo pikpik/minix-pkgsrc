@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2004/01/24 13:30:56 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/10 03:36:59 snj Exp $
 #
 
 DISTNAME=	pag-0.91
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://pancake.host.sk/altres/src/
 

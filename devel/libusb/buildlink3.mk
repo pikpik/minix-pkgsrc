@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/21 22:54:04 cube Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:11 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBUSB_BUILDLINK3_MK:=	${LIBUSB_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libusb
 
 .if !empty(LIBUSB_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libusb+=	libusb>=0.1.7
+BUILDLINK_RECOMMENDED.libusb+=	libusb>=0.1.8nb2
 BUILDLINK_PKGSRCDIR.libusb?=	../../devel/libusb
 .endif	# LIBUSB_BUILDLINK3_MK
 

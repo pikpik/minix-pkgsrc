@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/01/03 18:49:53 reed Exp $
+# $NetBSD: Makefile,v 1.15 2004/04/12 04:48:39 snj Exp $
 #
 
 DISTNAME=		medusa-0.5.1
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/medusa/0.5/}	\
 			http://download.eazel.com/source/

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2004/05/14 08:04:04 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/05/29 12:20:14 xtraeme Exp $
 #
 
 DISTNAME=	pnetC-0.6.6
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.southern-storm.com.au/download/
 

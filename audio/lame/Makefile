@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2004/05/31 16:47:47 minskim Exp $
+# $NetBSD: Makefile,v 1.42 2004/09/06 10:46:03 adam Exp $
 #
 
 DISTNAME=	lame-${VERS}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} \
 		http://hive.me.gu.edu.au/not_lame/

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2004/03/07 06:21:51 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/22 12:29:35 wiz Exp $
 #
 
 .include "../libao/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/libao/libao-esound/}
+PKGREVISION=	1
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT+=	(esound plugin)

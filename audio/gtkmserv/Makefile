@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:07:42 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/04/11 17:17:50 xtraeme Exp $
 #
 
 DISTNAME=	gtkmserv-0.5.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://projects.ubertechnique.com/downloads/
 

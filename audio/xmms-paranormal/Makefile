@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/01/23 21:50:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/12 04:13:00 snj Exp $
 #
 
 DISTNAME=	paranormal-0.2.0
 PKGNAME=	xmms-paranormal-0.2.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/paranormal/}
 

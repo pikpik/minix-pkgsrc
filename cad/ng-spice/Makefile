@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2003/12/30 17:21:55 cjep Exp $
+# $NetBSD: Makefile,v 1.21 2004/04/11 05:13:44 snj Exp $
 #
 
 DISTNAME=	ng-spice-rework-14
 PKGNAME=	ng-spice-14
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngspice/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/26 17:48:29 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/06/27 18:48:09 kristerw Exp $
 #
 
 DISTNAME=		libdv-0.102
+PKGREVISION=		1
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=libdv/}
 

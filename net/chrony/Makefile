@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/09/28 09:13:58 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/25 08:14:54 snj Exp $
 
 DISTNAME=	chrony-1.17
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://chrony.sunsite.dk/projects/chrony/
 

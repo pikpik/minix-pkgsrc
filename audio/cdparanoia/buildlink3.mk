@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/11 00:47:04 xtraeme Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:06 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 CDPARANOIA_BUILDLINK3_MK:=	${CDPARANOIA_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	cdparanoia
 
 .if !empty(CDPARANOIA_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.cdparanoia+=		cdparanoia>=3.0
+BUILDLINK_RECOMMENDED.cdparanoia+=	cdparanoia>=3.0.9.8nb1
 BUILDLINK_PKGSRCDIR.cdparanoia?=	../../audio/cdparanoia
 .endif	# CDPARANOIA_BUILDLINK3_MK
 

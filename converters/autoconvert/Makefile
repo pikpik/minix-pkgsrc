@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/01/22 07:52:43 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/11 07:09:28 snj Exp $
 
 DISTNAME=	autoconvert-0.3.13
+PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	http://people.debian.org/~ygh/
 

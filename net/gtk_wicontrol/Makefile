@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2004/01/24 14:50:05 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/25 08:42:29 snj Exp $
 
 DISTNAME=	gtk_wicontrol-0.17
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://www.izawa.org/software/gtk_wicontrol/
 

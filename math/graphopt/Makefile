@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/04/14 16:15:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/18 19:31:38 wiz Exp $
 #
 
 DISTNAME=	graphopt-0.4.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphopt/}
 EXTRACT_SUFX=	.tgz

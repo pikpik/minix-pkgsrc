@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.55 2004/06/24 11:09:05 markd Exp $
+# $NetBSD: Makefile,v 1.56 2004/07/06 22:56:32 wiz Exp $
 
 DISTNAME=		R-1.9.1
+PKGREVISION=	1
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_R_CRAN:=base/}
 EXTRACT_SUFX=		.tgz

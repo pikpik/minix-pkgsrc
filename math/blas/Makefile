@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2004/05/18 11:27:29 uebayasi Exp $
+# $NetBSD: Makefile,v 1.18 2004/05/30 15:29:34 minskim Exp $
 #
 
 DISTNAME=	blas
 PKGNAME=	blas-1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.netlib.org/blas/ \
 		ftp://netlib.bell-labs.com/netlib/blas/ \

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2004/04/11 17:25:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.35 2004/05/12 21:57:43 grant Exp $
 #
 
 DISTNAME=	mikmod-3.1.6-a
 PKGNAME=	mikmod-3.1.6a
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://mikmod.raphnet.net/files/
 

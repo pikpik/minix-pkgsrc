@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 16:56:45 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/24 22:37:10 snj Exp $
 #
 
 DISTNAME=	hypermail-2.1.7
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	http://www.hypermail.org/dist/
 

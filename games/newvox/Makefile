@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2004/03/06 20:16:47 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/06/15 13:11:03 grant Exp $
 #
 
 DISTNAME=	newvox-1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	http://www.libsdl.org/projects/newvox/src/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.49 2004/01/03 18:50:01 reed Exp $
+# $NetBSD: Makefile,v 1.50 2004/04/11 15:40:01 xtraeme Exp $
 #
 
 DISTNAME=	xforms-1.0-release
 PKGNAME=	xforms-1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ncmir.ucsd.edu/pub/xforms/OpenSource/ \
 		http://archive.cs.uu.nl/mirror/XFORMS/OpenSource/

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/09/29 12:48:51 wulf Exp $
 
 DISTNAME=		geda-gattrib-${PKGVERSION}
 PKGNAME=		gattrib-${PKGVERSION}
+PKGREVISION=	1
 CATEGORIES=		cad
 MASTER_SITES=		http://www.brorson.com/gEDA/gattrib/
 

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/01/24 03:26:48 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/03/05 19:25:41 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 CGILIB_BUILDLINK3_MK:=	${CGILIB_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	cgilib
 
 .if !empty(CGILIB_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.cgilib+=	cgilib>=0.5nb1
+BUILDLINK_RECOMMENDED.cgilib+=	cgilib>=0.5nb2
 BUILDLINK_PKGSRCDIR.cgilib?=	../../www/cgilib
 .endif	# CGILIB_BUILDLINK3_MK
 

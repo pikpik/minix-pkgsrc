@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/01/22 08:36:04 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/11 17:14:26 snj Exp $
 #
 
 DISTNAME=	dgen-sdl-1.23
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.pknet.com/~joe/
 

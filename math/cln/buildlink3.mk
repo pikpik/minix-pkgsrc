@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/06 23:46:06 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 CLN_BUILDLINK3_MK:=	${CLN_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	cln
 
 .if !empty(CLN_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.cln+=		cln>=1.1.6
+BUILDLINK_RECOMMENDED.cln+=	cln>=1.1.6nb1
 BUILDLINK_PKGSRCDIR.cln?=	../../math/cln
 .endif	# CLN_BUILDLINK3_MK
 

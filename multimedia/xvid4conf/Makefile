@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/09 13:53:38 grant Exp $
 
 DISTNAME=	xvid4conf-1.12
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://zebra.fh-weingarten.de/~transcode/xvid4conf/
 

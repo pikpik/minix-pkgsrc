@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/03/02 16:43:49 adam Exp $
+# $NetBSD: Makefile,v 1.12 2004/07/10 23:37:19 wiz Exp $
 #
 
 DISTNAME=	lincity-1.12.0
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lincity/} \
 		http://www.ibiblio.org/pub/Linux/games/strategy/

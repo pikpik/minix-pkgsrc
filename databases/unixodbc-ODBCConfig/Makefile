@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:16 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/25 18:22:54 snj Exp $
 
 PKGNAME=		unixodbc-ODBCConfig-${ODBC_BASE_VERS}
-PKGREVISION=		2
+PKGREVISION=		3
 COMMENT=		GUI tool for unixODBC driver configuration
 
 USE_BUILDLINK3=		YES

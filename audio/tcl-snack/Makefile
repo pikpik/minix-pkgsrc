@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/03/08 20:27:13 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/09 18:01:26 minskim Exp $
 
 DISTNAME=	snack2.2
 PKGNAME=	tcl-snack-2.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.kth.se/~kare/
 EXTRACT_SUFX=	.tar.Z

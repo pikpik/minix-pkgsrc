@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/07/06 15:06:19 recht Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/07/06 16:28:12 recht Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBXSLT_BUILDLINK3_MK:=	${LIBXSLT_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libxslt
 
 .if !empty(LIBXSLT_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libxslt+=	libxslt>=1.1.8
+BUILDLINK_RECOMMENDED.libxslt+=	libxslt>=1.1.10nb1
 BUILDLINK_PKGSRCDIR.libxslt?=	../../textproc/libxslt
 .endif	# LIBXSLT_BUILDLINK3_MK
 

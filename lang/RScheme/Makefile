@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2004/04/28 05:06:28 snj Exp $
+# $NetBSD: Makefile,v 1.17 2004/06/14 11:47:36 kristerw Exp $
 
 DISTNAME=		rs-0.7.3.2
 PKGNAME=		RScheme-0.7.3.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.rscheme.org/pub/rscheme/
 

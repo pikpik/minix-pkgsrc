@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/05/07 01:14:48 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/13 12:59:37 wiz Exp $
 #
 
 DISTNAME=	freeglut-2.2.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freeglut/}
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/06 23:46:06 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 FFCALL_BUILDLINK3_MK:=	${FFCALL_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	ffcall
 
 .if !empty(FFCALL_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.ffcall+=	ffcall>=1.9
+BUILDLINK_RECOMMENDED.ffcall+=	ffcall>=1.10nb1
 BUILDLINK_PKGSRCDIR.ffcall?=	../../devel/ffcall
 .endif	# FFCALL_BUILDLINK3_MK
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/04/25 06:05:45 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/09/10 19:32:44 wiz Exp $
 #
 
 DISTNAME=		tvision-0.8
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=devel/lang/c++/}
 

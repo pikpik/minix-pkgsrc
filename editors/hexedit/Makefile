@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2004/04/11 08:12:34 snj Exp $
+# $NetBSD: Makefile,v 1.22 2004/08/03 12:12:54 adam Exp $
 
 DISTNAME=	hexedit-1.2.10
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://merd.net/pixel/
 EXTRACT_SUFX=	.src.tgz

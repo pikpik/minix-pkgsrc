@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2004/03/15 17:38:10 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2004/03/18 09:12:11 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GLU_BUILDLINK3_MK:=	${GLU_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	glu
 
 .if !empty(GLU_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.glu+=		glu>=3.4.2
+BUILDLINK_RECOMMENDED.glu+=	glu>=6.0.1nb1
 BUILDLINK_PKGSRCDIR.glu?=	../../graphics/glu
 .endif	# GLU_BUILDLINK3_MK
 

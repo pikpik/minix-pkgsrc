@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/06 14:39:15 xtraeme Exp $
 #
 
 DISTNAME=		gzrt-0.2
 PKGNAME=		gzrecover-0.2
+PKGREVISION=	1
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.urbanophile.com/arenn/hacking/gzrt/
 

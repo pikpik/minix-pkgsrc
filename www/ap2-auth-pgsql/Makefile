@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2004/07/24 22:45:16 recht Exp $
+# $NetBSD: Makefile,v 1.3 2004/08/27 06:29:11 jlam Exp $
 # FreeBSD Id: ports/www/mod_auth_pgsql2/Makefile,v 1.5 2004/02/06 11:21:00 clement Exp
 
 DISTNAME=		mod_auth_pgsql-2.0.2b1
 PKGNAME=		ap2-auth-pgsql-2.0.2b1
+PKGREVISION=	1
 CATEGORIES=		www databases
 MASTER_SITES=	http://www.giuseppetanzilli.it/mod_auth_pgsql2/dist/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2004/01/24 13:51:15 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/06 22:10:42 wiz Exp $
 #
 
 DISTNAME=	scm5d8
 PKGNAME=	scm-5d8
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://swissnet.ai.mit.edu/ftpdir/scm/
 EXTRACT_SUFX=	.zip

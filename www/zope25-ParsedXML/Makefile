@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/01/23 16:48:54 recht Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/23 11:41:35 recht Exp $
 
 DISTNAME=	ParsedXML-1.3.1
-PKGREVISION=	2
+PKGREVISION=	3
 PKGNAME=	zope25-ParsedXML-1.3.1
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/faassen/ParsedXML/

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.120 2004/07/17 00:33:15 schmonz Exp $
+# $NetBSD: Makefile,v 1.121 2004/08/05 07:19:25 jlam Exp $
 
 DISTNAME=		mutt-1.4.2.1i
 PKGNAME=		${DISTNAME:C/i$//}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.mutt.org/mutt/ \
 			ftp://ftp.stealth.net/pub/mirrors/ftp.mutt.org/pub/mutt/ \

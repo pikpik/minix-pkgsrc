@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2004/01/22 07:51:12 grant Exp $
+# $NetBSD: Makefile,v 1.39 2004/02/21 08:24:11 minskim Exp $
 
 DISTNAME=	minicom-1.83.1.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 #MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/serialcomm/dialout/} \

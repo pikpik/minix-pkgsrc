@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/22 04:14:42 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/23 11:41:35 recht Exp $
 
 DISTNAME=	JPicture-2_0
-PKGREVISION=	1
+PKGREVISION=	2
 PKGNAME=	zope25-JPicture-2.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.dataflake.org/software/jpicture/

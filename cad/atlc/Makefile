@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/12/30 17:21:54 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/11 04:19:40 snj Exp $
 #
 
 DISTNAME=	atlc-4.2.10
+PKGREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=atlc/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/01/27 10:58:51 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/24 22:46:11 jlam Exp $
 
 DISTNAME=	src
 PKGNAME=	unison-2.9.20
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/beta-test/latest/
 

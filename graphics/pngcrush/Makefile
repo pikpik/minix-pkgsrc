@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2004/01/12 21:23:05 adam Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/24 00:51:09 wiz Exp $
 #
 
 DISTNAME=	pngcrush-1.5.10
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pmt/}
 

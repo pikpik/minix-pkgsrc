@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2003/09/28 09:13:58 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2004/04/25 08:04:25 snj Exp $
 #
 
 DISTNAME=	tn5250-0.12.51
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.blarg.net/users/mmadore/
 

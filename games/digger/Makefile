@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/26 06:06:34 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/03/06 20:35:30 snj Exp $
 #
 
 DISTNAME=		digger-20020314
+PKGREVISION=	1
 CATEGORIES=		games
 MASTER_SITES=		http://www.digger.org/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2004/01/22 08:24:30 grant Exp $
+# $NetBSD: Makefile,v 1.27 2004/02/14 17:21:39 jlam Exp $
 #
 
 DISTNAME=	popt-1.7
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-4.1.x/		\
 		ftp://ftp.iks-jena.de/pub/software/unix/misc/		\

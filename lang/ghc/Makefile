@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2003/12/31 17:11:57 kristerw Exp $
+# $NetBSD: Makefile,v 1.17 2004/05/29 14:28:43 kristerw Exp $
 
 DISTNAME=	ghc-6.2.1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.haskell.org/ghc/dist/6.2.1/
 DISTFILES=	ghc-6.2.1-src.tar.bz2 \

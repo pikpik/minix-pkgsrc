@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/09/20 22:58:52 wiz Exp $
 #
 
 DISTNAME=		vpnc-0.2-rm+zomb.1
 PKGNAME=		vpnc-0.2.1
+PKGREVISION=	1
 CATEGORIES=		net security
 MASTER_SITES=		http://www.unix-ag.uni-kl.de/~massar/vpnc/
 

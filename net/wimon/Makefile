@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/07/23 13:03:56 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/08/31 15:35:42 wiz Exp $
 #
 
 DISTNAME=	wimon-0.3
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://imil.net/wimon/
 

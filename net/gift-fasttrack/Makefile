@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/08 02:04:53 xtraeme Exp $
 #
 
 DISTNAME=	giFT-FastTrack-0.8.6
 PKGNAME=	${DISTNAME:S/giFT-FastTrack/gift-fasttrack/}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.berlios.de/gift-fasttrack/
 

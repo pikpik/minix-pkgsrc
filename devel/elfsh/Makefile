@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2004/02/17 12:45:56 cube Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/30 06:50:16 uebayasi Exp $
 #
 
 VERS=		0.51b3
 DISTNAME=	${PKGNAME}-portable
 PKGNAME=	elfsh-${VERS}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://devhell.org/projects/elfsh/files/ \
 	http://www.hert.org/projects/elfsh/files/

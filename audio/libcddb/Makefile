@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/05/15 14:14:20 heinz Exp $
+# $NetBSD: Makefile,v 1.9 2004/09/20 23:43:20 wiz Exp $
 #
 
 DISTNAME=	libcddb-0.9.5
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libcddb/}
 

@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/09/30 12:42:38 wiz Exp $
 #
 
 DISTNAME=		libXcomposite-1.0.1
 PKGNAME=		${DISTNAME:S/lib//}
+PKGREVISION=		1
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://freedesktop.org/~xlibs/release/
 EXTRACT_SUFX=		.tar.bz2

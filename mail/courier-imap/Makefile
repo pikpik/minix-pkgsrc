@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2004/05/12 23:40:12 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2004/07/14 20:07:16 jlam Exp $
 
 DISTNAME=	courier-imap-3.0.5
+PKGREVISION=	1
 
 COMMENT=	IMAP server for access to maildir-style mailboxes
 HOMEPAGE=	http://www.inter7.com/courierimap/

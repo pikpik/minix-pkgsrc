@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/01/22 08:24:28 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/03/07 01:17:12 minskim Exp $
 #
 
 DISTNAME=	chmlib-0.31
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://66.93.236.84/%7Ejedwin/projects/chmlib/
 EXTRACT_SUFX=	.tbz

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/03/26 02:27:50 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/09 04:14:51 snj Exp $
 
 DISTNAME=	lyx-${LYX_VERS}
 PKGNAME=	cjk-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
 		ftp://gd.tuwien.ac.at/publishing/tex/lyx/stable/ \

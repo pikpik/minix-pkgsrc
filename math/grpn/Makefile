@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 21:47:41 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/24 04:22:39 snj Exp $
 #
 
 DISTNAME=	grpn-1.1.2
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	ftp://lashwhip.com/pub/ \
 		http://lashwhip.com/grpn/

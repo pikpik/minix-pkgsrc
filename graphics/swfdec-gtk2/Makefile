@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/04/01 18:37:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/07/04 10:25:42 mrg Exp $
 #
+
+PKGREVISION=		1
 
 .include "../../graphics/swfdec/Makefile.common"
 

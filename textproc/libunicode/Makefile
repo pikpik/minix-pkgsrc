@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:27:34 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/02/20 12:48:07 jmmv Exp $
 #
 
 DISTNAME=		libunicode-0.4
+PKGREVISION=		1
 CATEGORIES=		textproc devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libunicode/0.4/}
 

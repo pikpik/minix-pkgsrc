@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:22:18 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/25 04:14:01 snj Exp $
 #
 
 DISTNAME=	LaBrea2_3
 PKGNAME=	LaBrea-2.3
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	http://www.hackbusters.net/LaBrea/
 EXTRACT_SUFX=	.tgz

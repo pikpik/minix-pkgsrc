@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/28 22:42:57 snj Exp $
+# $NetBSD: Makefile,v 1.2 2004/03/07 05:27:54 snj Exp $
 
 DISTNAME=		wmctrl-1.05
+PKGREVISION=	1
 CATEGORIES=		wm
 MASTER_SITES=		http://sweb.cz/tripie/utils/wmctrl/dist/
 

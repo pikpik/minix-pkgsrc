@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2004/01/24 15:18:32 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/10 14:12:51 xtraeme Exp $
 
 DISTNAME=	bbrun-1.3
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	wm x11
 MASTER_SITES=	http://www.dwave.net/~jking/bbrun/
 

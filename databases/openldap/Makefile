@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.81 2004/08/04 19:45:02 jlam Exp $
+# $NetBSD: Makefile,v 1.82 2004/08/05 03:04:33 jlam Exp $
 
 DISTNAME=		openldap-2.2.13
 SVR4_PKGNAME=		oldap
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		databases
 MASTER_SITES=		ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/
 EXTRACT_SUFX=		.tgz

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2004/07/25 15:29:29 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/09/25 13:43:05 tv Exp $
 #
 
 DISTNAME=		entropy-${ENTROPY_VERSION}
 PKGNAME=		entropy-${ENTROPY_VERSION:S/-/./}
+PKGREVISION=	1
 WRKSRC=			${WRKDIR}/entropy-${ENTROPY_VERSION:C/-.*$//}
 CATEGORIES=		net www
 MASTER_SITES=		http://entropy.stop1984.com/files/

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/03/29 08:00:04 xtraeme Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBYAHOO_BUILDLINK3_MK:=	${LIBYAHOO_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libyahoo
 
 .if !empty(LIBYAHOO_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libyahoo+=	libyahoo>=0.18.4
+BUILDLINK_RECOMMENDED.libyahoo+=	libyahoo>=0.18.4nb1
 BUILDLINK_PKGSRCDIR.libyahoo?=	../../chat/libyahoo
 BUILDLINK_INCDIRS.libyahoo+=	include/libyahoo
 .endif	# LIBYAHOO_BUILDLINK3_MK

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 21:22:11 grant Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/11 16:21:17 xtraeme Exp $
 #
 
 DISTNAME=	freezetag-0.9.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://katz.linuxpower.org/freezetag/current/
 

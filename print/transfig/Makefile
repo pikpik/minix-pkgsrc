@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2003/11/10 03:06:12 danw Exp $
+# $NetBSD: Makefile,v 1.24 2004/04/12 20:55:33 snj Exp $
 #
 
 DISTNAME=		transfig.3.2.4
 PKGNAME=		transfig-3.2.4
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics print
 MASTER_SITES=		ftp://epb.lbl.gov/xfig/
 

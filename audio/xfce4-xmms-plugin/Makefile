@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2004/01/23 21:50:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/03/10 11:59:31 xtraeme Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	0.1.1
 
 DISTNAME=	xfce4-xmms-plugin-${XFCE4_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://download.berlios.de/xfce-goodies/
 COMMENT=	XFce4 XMMS plugin

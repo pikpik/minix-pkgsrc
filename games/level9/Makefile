@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:15:41 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/10 03:31:36 snj Exp $
 
 DISTNAME=		Level9_3.0_Source
 PKGNAME=		level9-3.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games
 MASTER_SITES=		http://www.ifarchive.org/if-archive/level9/interpreters/level9/
 EXTRACT_SUFX=		.zip

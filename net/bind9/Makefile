@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.59 2004/04/15 20:13:20 tron Exp $
+# $NetBSD: Makefile,v 1.60 2004/08/27 06:29:09 jlam Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	bind-${BIND_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}/
 

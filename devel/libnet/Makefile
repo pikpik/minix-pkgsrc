@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/04/25 05:35:44 minskim Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/25 05:40:44 minskim Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 

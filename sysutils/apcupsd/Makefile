@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2004/04/25 09:14:00 snj Exp $
+# $NetBSD: Makefile,v 1.28 2004/04/27 20:31:08 reed Exp $
 
 DISTNAME=		apcupsd-3.8.6
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=apcupsd/}
 

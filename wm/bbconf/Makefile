@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:33:58 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/11 22:52:17 snj Exp $
 #
 
 DISTNAME=	bbconf-1.4
+PKGREVISION=	1
 CATEGORIES=	wm
 MASTER_SITES=	http://bbconf.sourceforge.net/code/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2003/07/17 21:23:58 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/03/10 04:23:49 snj Exp $
 #
 
 DISTNAME=	dscope-1.2
 PKGNAME=	xmms-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://hem.passagen.se/joakime/
 

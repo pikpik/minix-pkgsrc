@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/26 15:26:29 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:37 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LAPACK_BUILDLINK3_MK:=	${LAPACK_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	lapack
 
 .if !empty(LAPACK_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.lapack+=	lapack>=20010201nb1
+BUILDLINK_RECOMMENDED.lapack+=	lapack>=20010201nb2
 BUILDLINK_PKGSRCDIR.lapack?=	../../math/lapack
 .endif	# LAPACK_BUILDLINK3_MK
 

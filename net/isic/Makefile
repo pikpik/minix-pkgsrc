@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/11/28 09:42:54 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/25 04:18:15 snj Exp $
 #
 
 DISTNAME=	isic-0.05
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.packetfactory.net/Projects/ISIC/
 EXTRACT_SUFX=	.tgz

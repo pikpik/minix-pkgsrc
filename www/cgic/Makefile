@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/20 21:44:29 jmmv Exp $
 #
 
 DISTNAME=	cgic202
 PKGNAME=	cgic-2.02
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.boutell.com/cgic/
 

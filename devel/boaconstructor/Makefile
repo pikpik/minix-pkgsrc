@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/27 15:07:11 drochner Exp $
 #
 
 DISTNAME=		boa-constructor-0.2.3.src
 PKGNAME=		boaconstructor-0.2.3
+PKGREVISION=	1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=boa-constructor/}
 EXTRACT_SUFX=		.zip

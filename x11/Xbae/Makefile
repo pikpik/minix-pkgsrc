@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2004/02/14 17:21:55 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/12 03:58:36 snj Exp $
 #
 
 DISTNAME=	Xbae-4.9.1
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/
 

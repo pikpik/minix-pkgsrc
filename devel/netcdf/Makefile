@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2004/01/20 12:13:28 agc Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/12 03:51:16 snj Exp $
 
 DISTNAME=	netcdf-3.5.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://www.gfd-dennou.org/arch/netcdf/unidata-mirror/
 EXTRACT_SUFX=	.tar.Z

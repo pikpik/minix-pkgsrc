@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/02/05 08:00:08 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/26 22:07:06 snj Exp $
 
 DISTNAME=	libsigc++-1.0.4
-PKGREVISION=	1
+PKGREVISION=	2
 PKGNAME=	${DISTNAME:S/libsigc++/libsigc++10/}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libsigc/}

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/06/20 20:41:22 agc Exp $
 #
 
 DISTNAME=		tunesbrowser-0.1.5
+PKGREVISION=	1
 CATEGORIES=		audio
 MASTER_SITES=		http://crazney.net/programs/itunes/files/
 EXTRACT_SUFX=		.tar.bz2

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:15:17 agc Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/11 17:15:49 snj Exp $
 #
 
 DISTNAME=	ttmkfdir
 PKGNAME=	ttmkfdir-0
+PKGREVISION=	1
 CATEGORIES=	fonts x11
 MASTER_SITES=	http://www.joerg-pommnitz.de/TrueType/
 

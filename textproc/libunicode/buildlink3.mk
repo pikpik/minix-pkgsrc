@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/20 12:48:07 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:40 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBUNICODE_BUILDLINK3_MK:=	${LIBUNICODE_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libunicode
 
 .if !empty(LIBUNICODE_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libunicode+=		libunicode>=0.4
+BUILDLINK_RECOMMENDED.libunicode+=	libunicode>=0.4nb1
 BUILDLINK_PKGSRCDIR.libunicode?=	../../textproc/libunicode
 .endif	# LIBUNICODE_BUILDLINK3_MK
 

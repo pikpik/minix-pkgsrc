@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/07/24 21:47:09 jdc Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/01 10:37:33 grant Exp $
 
 DISTNAME=	ogle-0.9.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.dtek.chalmers.se/groups/dvd/dist/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/08/09 11:16:21 seb Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/25 07:38:20 snj Exp $
 
 DISTNAME=	yafc-0.7.10
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yafc/}
 EXTRACT_SUFX=	.tar.bz2

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/08/09 11:27:46 seb Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/19 16:02:17 uebayasi Exp $
 #
 
 DISTNAME=	eblook-1.6
+PKGREVISION=	1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/eblook/dist/
 

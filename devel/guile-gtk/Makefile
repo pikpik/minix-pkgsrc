@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2004/02/21 06:51:42 snj Exp $
+# $NetBSD: Makefile,v 1.17 2004/05/03 15:58:55 wiz Exp $
 #
 
 DISTNAME=		guile-gtk-0.19
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		devel x11
 MASTER_SITES=		http://www.ping.de/sites/zagadka/guile-gtk/download/ \
 			http://erin.netpedia.net/download/ \

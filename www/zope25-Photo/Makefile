@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/01/03 18:49:55 reed Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/19 14:05:22 adam Exp $
 
 DISTNAME=	Photo-1.2.3
 PKGNAME=	zope25-Photo-1.2.3
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/rbickers/Photo/
 EXTRACT_SUFX=	.tgz

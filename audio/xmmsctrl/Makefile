@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/06/14 00:58:44 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/06/14 01:09:05 grant Exp $
 #
 
 DISTNAME=		xmmsctrl-1.6
+PKGREVISION=	1
 CATEGORIES=		audio
 MASTER_SITES=		http://www.docs.uu.se/~adavid/utils/
 

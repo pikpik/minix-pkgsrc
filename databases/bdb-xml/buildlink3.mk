@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/03/18 09:12:09 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/03/31 17:15:58 minskim Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 BDB_XML_BUILDLINK3_MK:=	${BDB_XML_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	bdb-xml
 
 .if !empty(BDB_XML_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.bdb-xml+=	bdb-xml>=1.2.0
+BUILDLINK_RECOMMENDED.bdb-xml+=	bdb-xml>=1.2.1nb1
 BUILDLINK_PKGSRCDIR.bdb-xml?=	../../databases/bdb-xml
 .endif	# BDB_XML_BUILDLINK3_MK
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2003/07/26 21:41:18 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/10 01:08:27 snj Exp $
 
 DISTNAME=	lbreakout-010315
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/15 00:45:50 schmonz Exp $
 #
 
 DISTNAME=		syncdir-1.0
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${HOMEPAGE}
 

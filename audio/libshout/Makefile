@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:33 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/14 18:56:51 jlam Exp $
 #
 
 DISTNAME=	libshout-2.0
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://icecast.org/files/libshout/
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/08 02:05:30 xtraeme Exp $
 #
 
 DISTNAME=		gift-gnutella-0.0.9.2
+PKGREVISION=	1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gift/}
 EXTRACT_SUFX=		.tar.bz2

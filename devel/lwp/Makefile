@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/04/27 04:29:17 snj Exp $
+# $NetBSD: Makefile,v 1.19 2004/06/04 20:56:10 jschauma Exp $
 #
 
 DISTNAME=	lwp-1.10
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/lwp/src/ \
 		ftp://ftp.wu-wien.ac.at/pub/systems/coda/src/

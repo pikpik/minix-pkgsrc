@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/10/19 10:22:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/27 05:44:23 snj Exp $
 #
 
 DISTNAME=	squidGuard-1.2.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.teledanmark.no/pub/www/proxy/squidGuard/		\
 		http://ftp.teledanmark.no/pub/www/proxy/squidGuard/

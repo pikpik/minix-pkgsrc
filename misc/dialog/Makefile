@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2004/04/24 22:46:11 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2004/05/31 16:47:48 minskim Exp $
 
 DISTNAME=       dialog-0.6z
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_SUNSITE:=utils/shell/}
 

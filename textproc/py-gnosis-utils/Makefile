@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/06 18:54:12 recht Exp $
 #
 
 DISTNAME=	Gnosis_Utils-1.1.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	http://gnosis.cx/download/
 

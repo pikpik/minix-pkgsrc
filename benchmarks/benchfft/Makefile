@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2004/04/11 03:04:33 snj Exp $
+# $NetBSD: Makefile,v 1.20 2004/07/30 15:50:37 minskim Exp $
 
 DISTNAME=		benchfft-2.0
+PKGREVISION=	1
 CATEGORIES=		benchmarks math
 MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/benchfft/ \
 			ftp://ftp.fftw.org/pub/fftw/old/

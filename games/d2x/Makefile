@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/29 01:03:37 xtraeme Exp $
 #
 
 DISTNAME=	d2x-0.2.5
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://icculus.org/d2x/src/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/04/12 11:09:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.12 2004/09/16 10:40:24 agc Exp $
 #
 
 DISTNAME=	nvi-1.81.5
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.kotnet.org/~skimo/nvi/devel/
 EXTRACT_SUFX=	.tar.bz2

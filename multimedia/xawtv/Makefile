@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/04/18 07:11:29 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/07/19 23:56:21 xtraeme Exp $
 #
 
 DISTNAME=	xawtv_3.90
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://bytesex.org/xawtv/
 

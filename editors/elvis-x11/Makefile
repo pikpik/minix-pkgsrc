@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2004/01/21 17:43:55 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/17 19:41:18 snj Exp $
 #
 
 .include "../elvis/Makefile.common"
 
 PKGNAME=        elvis-x11-2.2.0
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	GUI for elvis, includes console elvis
 
 CONFLICTS+=	elvis-[0-9]*

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/02/19 17:54:05 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2004/03/05 19:25:07 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBAO_BUILDLINK3_MK:=	${LIBAO_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libao
 
 .if !empty(LIBAO_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libao+=	libao>=0.8.4
+BUILDLINK_RECOMMENDED.libao+=	libao>=0.8.4nb1
 BUILDLINK_PKGSRCDIR.libao?=	../../audio/libao
 .endif	# LIBAO_BUILDLINK3_MK
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2004/01/20 12:28:27 agc Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/24 15:30:34 grant Exp $
 
 DISTNAME=	QwSpriteField1.6
 PKGNAME=	qwspritefield-1.6
+PKGREVISION=	1
 CATEGORIES=	x11 graphics
 MASTER_SITES=	ftp://ftp.troll.no/contrib/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/07/17 16:58:19 jdolecek Exp $
+# $NetBSD: Makefile,v 1.5 2004/08/27 06:29:11 jlam Exp $
 #
 
 DISTNAME=		libapache-mod-auth-mysql_4.3.1
 PKGNAME=		${DISTNAME:S/libapache-mod/ap/:S/_/-/}
+PKGREVISION=	1
 WRKSRC=			${WRKDIR}/${DISTNAME:S/_/-/}
 CATEGORIES=		www databases security
 MASTER_SITES=		${MASTER_SITE_DEBIAN:=pool/main/liba/libapache-mod-auth-mysql/}

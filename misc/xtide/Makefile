@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/07/22 21:14:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/11 09:18:25 snj Exp $
 
 DISTNAME=	xtide-2.4
 PKGNAME=	${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES= 	misc x11
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/
 DISTFILES=	${XTIDE_SRC} harmonics.txt.gz offsets.xml.gz

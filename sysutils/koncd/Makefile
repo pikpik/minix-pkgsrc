@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2004/03/26 02:27:55 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/05/02 00:07:33 snj Exp $
 
 DISTNAME=	koncd-0.7.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	sysutils
 MASTER_SITES=	${HOMEPAGE}download/
 

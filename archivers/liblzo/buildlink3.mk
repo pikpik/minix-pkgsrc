@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/02/09 23:56:32 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/03/05 19:25:06 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBLZO_BUILDLINK3_MK:=	${LIBLZO_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_PACKAGES+=	liblzo
 .if !empty(LIBLZO_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.liblzo+=	liblzo>=1.08
 BUILDLINK_PKGSRCDIR.liblzo?=	../../archivers/liblzo
+BUILDLINK_RECOMMENDED.liblzo+=	liblzo>=1.08nb1
 .endif	# LIBLZO_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/22 21:49:42 minskim Exp $
 #
 
 DISTNAME=	libtlen-20040212
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.libtlen.eu.org/snapshots/archive/
 

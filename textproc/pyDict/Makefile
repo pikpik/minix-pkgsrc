@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2004/05/05 09:06:45 recht Exp $
+# $NetBSD: Makefile,v 1.12 2004/07/22 09:16:02 recht Exp $
 
 DISTNAME=	pyDict-0.2.5.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	textproc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pydict/}
 

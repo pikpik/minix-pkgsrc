@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2004/03/11 18:19:09 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2004/03/26 20:00:29 wiz Exp $
 #
 
 DISTNAME=	cmp3-2.0pre5
 PKGNAME=	cmp3-2.0.p5
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.personal.psu.edu/users/n/k/nkk104/cmp3/
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2003/07/17 21:44:16 grant Exp $
+# $NetBSD: Makefile,v 1.23 2004/04/28 05:06:28 snj Exp $
 # FreeBSD Id: Makefile,v 1.15 1997/09/01 12:28:30 tg Exp
 #
 
 DISTNAME=		elk-3.0
 PKGNAME=		elk-3.0.3
+PKGREVISION=	1
 CATEGORIES=		lang
 MASTER_SITES=		http://www-rn.informatik.uni-bremen.de/software/elk/dist/
 

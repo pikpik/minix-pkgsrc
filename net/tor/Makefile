@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/13 19:33:41 jschauma Exp $
 #
 
 DISTNAME=		tor-0.0.7
+PKGREVISION=	1
 CATEGORIES=		net security
 MASTER_SITES=		http://freehaven.net/tor/dist/
 

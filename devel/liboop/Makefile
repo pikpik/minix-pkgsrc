@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/04/16 18:41:00 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/25 03:47:44 snj Exp $
 #
 
 DISTNAME=		liboop-1.0
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://download.ofb.net/liboop/
 EXTRACT_SUFX=		.tar.bz2

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:42:43 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/24 23:07:06 snj Exp $
 #
 
 DISTNAME=	s10sh-0.2.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kyuzz.org/antirez/s10sh-src/
 

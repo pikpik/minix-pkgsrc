@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2003/07/26 21:41:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/10 04:29:18 snj Exp $
 #
 
 DISTNAME=	FunTimeDancer-0.1
 PKGNAME=	xmms-funtimedancer-0.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ftd/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} FunTimeDancer-packs-1.0.tar.gz

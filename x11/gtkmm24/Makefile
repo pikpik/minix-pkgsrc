@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2004/04/02 12:33:22 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/04 13:55:15 drochner Exp $
 #
 
 DISTNAME=	gtkmm-2.4.4
 PKGNAME=	gtkmm24-2.4.4
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkmm/2.4/}
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/03/26 02:27:47 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/02 01:53:58 snj Exp $
 
 DISTNAME=	kdemultimedia-2.2.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	multimedia
 COMMENT=	KDE multimedia tools
 

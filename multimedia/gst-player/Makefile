@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/06 13:55:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/14 16:15:25 jmmv Exp $
 
 DISTNAME=	gst-player-0.8.0
+PKGREVISION=	1
 CATEGORIES=	audio graphics
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gst-player/
 EXTRACT_SUFX=	.tar.bz2

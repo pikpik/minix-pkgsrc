@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 22:55:34 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/05/11 05:18:59 snj Exp $
 #
 
 DISTNAME=	grail-0.6
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=grail/}
 EXTRACT_SUFX=	.tgz

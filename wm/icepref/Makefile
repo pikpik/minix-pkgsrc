@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:27:35 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/01 17:57:53 snj Exp $
 #
 
 DISTNAME=	icepref-1.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	wm
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/27 13:27:58 drochner Exp $
 #
 
 DISTNAME=		vp-1.5
+PKGREVISION=	1
 CATEGORIES=		graphics
 MASTER_SITES=		http://math.smsu.edu/~erik/files/
 

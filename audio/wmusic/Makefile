@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.9 2004/09/01 15:00:59 reed Exp $
 
 DISTNAME=	wmusic-1.5.0
+PKGREVISION=	1
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://home.jtan.com/~john/wmusic/
 
