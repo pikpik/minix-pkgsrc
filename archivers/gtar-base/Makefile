@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/10/02 22:40:24 recht Exp $
+# $NetBSD: Makefile,v 1.39 2005/01/09 22:52:13 recht Exp $
 #
 
 DISTNAME=       tar-1.15.1
@@ -50,6 +50,11 @@ PLIST_SUBST+=           GTAR_LINK=""
 PLIST_SUBST+=           GTAR_LINK="@comment "
 .endif
 
+# don't include rmt if gtar won't build it
+.if ${OPSYS} != "Interix"
+PLIST_SRC=		${WRKSRC}/.PLIST.rmt ${PKGDIR}/PLIST
+.endif
+
 post-install:
 	${INSTALL_MAN_DIR} ${PREFIX}/man/man1
 	${INSTALL_DATA} ${FILESDIR}/gtar.1 \
@@ -57,6 +62,9 @@ post-install:
 .if ${GTAR_PROGRAM_PREFIX} != "g"
 	${LN} -sf ${GTAR_PROGRAM_PREFIX}tar ${PREFIX}/bin/gtar
 .endif
+
+${WRKSRC}/.PLIST.rmt:
+	${ECHO} 'libexec/${GTAR_PROGRAM_PREFIX}rmt' >$@
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
