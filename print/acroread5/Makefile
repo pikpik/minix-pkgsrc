@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/07/24 14:43:12 mrg Exp $
+# $NetBSD: Makefile,v 1.22 2004/08/23 05:36:08 cube Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.09
@@ -52,7 +52,7 @@ PLATFORM=	sparcsolaris
 DISTNAME=	linux-509
 PLATFORM=	intellinux
 .elif ${OPSYS} == "SunOS"
-DISTNAME=	solaris-508
+DISTNAME=	solaris-509
 PLATFORM=	sparcsolaris
 .endif
 
