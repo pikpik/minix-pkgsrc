@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 1998/11/04 08:07:10 garbled Exp $
+# $NetBSD: Makefile,v 1.62 1998/11/20 07:09:37 jwise Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -104,6 +104,7 @@
 #    SUBDIR += xfedor
     SUBDIR += xfinans
     SUBDIR += xfishtank
+    SUBDIR += xflame
 #    SUBDIR += xfm
     SUBDIR += xforms
     SUBDIR += xgas
