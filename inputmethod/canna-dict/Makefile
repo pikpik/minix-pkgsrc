@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/08/21 02:43:45 grant Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/27 08:41:23 uebayasi Exp $
 
 DISTNAME=	Canna36p1
 PKGNAME=	Canna-dict-3.6.1
@@ -20,7 +20,6 @@ BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
 NO_MTREE=	yes
-LOCALBASE=	${IMDICTDIR}
 .if 0	# defined(USE_INET6) && ${USE_INET6} == "YES"
 INET6=		-DINET6
 .else
@@ -51,12 +50,11 @@ do-configure:
 do-build:
 	@(cd ${WRKSRC}/dic/ideo; ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM})
 
-post-build:
-	@${SED} -e 's|@PREFIX@|${PREFIX}|g' ${FILESDIR}/canna \
-		> ${WRKDIR}/canna
-
 do-install:
 	@(cd ${WRKSRC}/dic/ideo; ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} install)
 
 .include "../../devel/nbitools/nbitools.mk"
 .include "../../mk/bsd.pkg.mk"
+
+# Need to set this here _after_ bsd.pkg.mk
+PREFIX=		${IMDICTDIR}
