@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/08/31 01:34:23 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/25 14:57:59 seb Exp $
 
 DISTNAME=		HTML-Template-2.6
 PKGNAME=		p5-${DISTNAME}
@@ -9,7 +9,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=HTML/} \
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://html-template.sourceforge.net/
-COMMENT=		perl5 module to create HTML templates by extending HTML with simple tags
+COMMENT=		perl5 module to create HTML templates with simple tags
 
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/Template/.packlist

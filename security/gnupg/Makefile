@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/11/24 16:52:05 chris Exp $
+# $NetBSD: Makefile,v 1.39 2002/11/24 18:47:48 dillo Exp $
 #
 
 DISTNAME=	gnupg-1.2.1
@@ -17,7 +17,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.gnupg.org/
-COMMENT=	Privacy Guard, a public-Key encryption and digital signature utility
+COMMENT=	Privacy Guard, public-Key encryption and digital signatures
 
 BUILD_USES_MSGFMT=	yes
 
