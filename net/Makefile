@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.78 1999/08/30 17:48:16 kim Exp $
+# $NetBSD: Makefile,v 1.79 1999/08/31 02:38:41 kim Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -78,6 +78,7 @@
     SUBDIR += pfnet
     SUBDIR += pload
 #    SUBDIR += pmf
+    SUBDIR += ra-pna-proxy
     SUBDIR += radius
 #    SUBDIR += ratoolset
     SUBDIR += rdist6
