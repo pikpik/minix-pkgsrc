@@ -1,6 +1,6 @@
 $NetBSD$
 
---- cdrecord/scsi_cdr.c.orig	Fri Nov 28 20:29:50 2003
+--- cdrecord/scsi_cdr.c.orig	2004-07-31 23:44:33.000000000 +0200
 +++ cdrecord/scsi_cdr.c
 @@ -315,6 +315,12 @@ EXPORT int
  request_sense(scgp)
@@ -12,7 +12,7 @@ $NetBSD$
 +	scg_prsense((Uchar *)scgp->scmd->u_sense.cmd_sense,
 +	    scgp->scmd->sense_count);
 +#else	
- 		 char	sensebuf[CCS_SENSE_LEN];
+ 		char	sensebuf[CCS_SENSE_LEN];
  	register struct	scg_cmd	*scmd = scgp->scmd;
  
 @@ -334,6 +340,7 @@ request_sense(scgp)
