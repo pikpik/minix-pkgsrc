@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: authdaemond.sh,v 1.6 2002/09/20 02:01:56 grant Exp $
+# $NetBSD: authdaemond.sh,v 1.7 2004/02/21 14:43:15 jlam Exp $
 #
 # Courier user authentication daemon
 #
@@ -14,7 +14,7 @@ fi
 name="authdaemond"
 rcvar=${name}
 daemon="@PREFIX@/libexec/courier/authlib/authdaemond"
-pidfile="/var/authdaemon/pid"
+pidfile="@AUTHDAEMONVAR@/pid"
 required_files="@PKG_SYSCONFDIR@/authdaemonrc"
 
 start_cmd="courier_doit start"
@@ -29,8 +29,7 @@ stop_cmd="courier_doit stop"
 if [ -f @PKG_SYSCONFDIR@/authdaemonrc ]; then
 	command=`
 		. @PKG_SYSCONFDIR@/authdaemonrc
-		if [ -n "${version}" ]
-		then
+		if [ -n "${version}" ]; then
 			@ECHO@ @PREFIX@/libexec/courier/authlib/${version}
 		else
 			@ECHO@ @PREFIX@/libexec/courier/authlib/authdaemond.plain
