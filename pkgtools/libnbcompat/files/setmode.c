@@ -1,4 +1,4 @@
-/*	$NetBSD: setmode.c,v 1.1.1.1 2003/03/31 05:03:00 grant Exp $	*/
+/*	$NetBSD: setmode.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993, 1994
@@ -32,11 +32,11 @@
  * SUCH DAMAGE.
  */
 
-#ifdef HAVE_CONFIG_H
-#include "config.h"
+#if HAVE_CONFIG_H
+#include "nbconfig.h"
 #endif
 
-#ifdef HAVE_SYS_CDEFS_H
+#if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 
@@ -44,7 +44,7 @@
 #if 0
 static char sccsid[] = "@(#)setmode.c	8.2 (Berkeley) 3/25/94";
 #else
-__RCSID("$NetBSD: setmode.c,v 1.1.1.1 2003/03/31 05:03:00 grant Exp $");
+__RCSID("$NetBSD: setmode.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 

@@ -1,4 +1,4 @@
-/*	$NetBSD: spec.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $	*/
+/*	$NetBSD: spec.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993
@@ -67,7 +67,7 @@
 
 #include "nbcompat.h"
 
-#ifdef HAVE_SYS_CDEFS_H
+#if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 
@@ -75,7 +75,7 @@
 #if 0
 static char sccsid[] = "@(#)spec.c	8.2 (Berkeley) 4/28/95";
 #else
-__RCSID("$NetBSD: spec.c,v 1.1.1.1 2003/03/31 05:03:04 grant Exp $");
+__RCSID("$NetBSD: spec.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $");
 #endif
 #endif /* not lint */
 

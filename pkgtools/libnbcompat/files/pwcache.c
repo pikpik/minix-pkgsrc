@@ -1,4 +1,4 @@
-/*	$NetBSD: pwcache.c,v 1.1.1.1 2003/03/31 05:02:58 grant Exp $	*/
+/*	$NetBSD: pwcache.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -66,9 +66,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "config.h"
+#if HAVE_CONFIG_H
+#include "nbconfig.h"
+#endif
 
-#ifdef HAVE_SYS_CDEFS_H
+#if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 
@@ -76,7 +78,7 @@
 #if 0
 static char sccsid[] = "@(#)cache.c	8.1 (Berkeley) 5/31/93";
 #else
-__RCSID("$NetBSD: pwcache.c,v 1.1.1.1 2003/03/31 05:02:58 grant Exp $");
+__RCSID("$NetBSD: pwcache.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 
@@ -119,7 +121,7 @@ __weak_alias(pwcache_groupdb,_pwcache_groupdb)
  * these may be changed as necessary.
  */
 static	int		(*_pwcache_setgroupent)(int)		=
-#ifdef HAVE_SETGROUPENT
+#if HAVE_SETGROUPENT
 	setgroupent;
 #elif HAVE_SETGRENT
 	setgrent;
@@ -130,7 +132,7 @@ static	void		(*_pwcache_endgrent)(void)		= endgrent;
 static	struct group *	(*_pwcache_getgrnam)(const char *)	= getgrnam;
 static	struct group *	(*_pwcache_getgrgid)(gid_t)		= getgrgid;
 static	int		(*_pwcache_setpassent)(int)		=
-#ifdef HAVE_SETPASSENT
+#if HAVE_SETPASSENT
 	setpassent;
 #elif HAVE_SETGRENT
 	setpwent;

@@ -1,4 +1,4 @@
-/*	$NetBSD: getopt_long.c,v 1.1 2003/06/23 11:33:11 grant Exp $	*/
+/*	$NetBSD: getopt_long.c,v 1.2 2003/07/15 05:33:05 grant Exp $	*/
 
 /*-
  * Copyright (c) 2000 The NetBSD Foundation, Inc.
@@ -36,19 +36,23 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifdef HAVE_SYS_CDEFS_H
+#if HAVE_CONFIG_H
+#include "nbconfig.h"
+#endif
+
+#if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 
 #if defined(LIBC_SCCS) && !defined(lint)
-__RCSID("$NetBSD: getopt_long.c,v 1.1 2003/06/23 11:33:11 grant Exp $");
+__RCSID("$NetBSD: getopt_long.c,v 1.2 2003/07/15 05:33:05 grant Exp $");
 #endif /* LIBC_SCCS and not lint */
 
 /* #include "namespace.h" */
 
 #include <assert.h>
 
-#ifdef HAVE_ERR_H
+#if HAVE_ERR_H
 #include <err.h>
 #endif
 
