@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/01/28 12:13:02 xtraeme Exp $
+# $NetBSD: Makefile,v 1.34 2004/04/12 03:35:28 snj Exp $
 
 DISTNAME=	nedit-${VERS}-source
 PKGNAME=	nedit-${VERS}
@@ -8,12 +8,9 @@ CATEGORIES=	editors
 #		http://www.au.nedit.org/ftp/v${VERS:S/./_/g}/ \
 #		ftp://ftp.nl.nedit.org/pub/mirror/NEdit/v${VERS:S/./_/g}/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nedit/}
-#EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
-#XXX nedit.org's ISP currently has problems
-#HOMEPAGE=	http://www.nedit.org/
-HOMEPAGE=	http://nedit.sourceforge.net/
+HOMEPAGE=	http://www.nedit.org/
 COMMENT=	Motif based standard GUI style text editor
 
 VERS=		5.4
