@@ -1,4 +1,4 @@
-$NetBSD
+$NetBSD$
 
 --- ../idlc/source/parser.yy.orig	Tue Dec 24 13:09:17 2002
 +++ ../idlc/source/parser.yy	Tue Dec 24 13:40:48 2002
