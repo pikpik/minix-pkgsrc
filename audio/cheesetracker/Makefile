@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/09/29 03:27:57 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2002/10/02 18:18:29 dillo Exp $
 #
 
 DISTNAME=		cheesetracker-0.5.5
@@ -19,10 +19,11 @@ CXXFLAGS+=		-O
 AUTOMAKE_REQD=		1.4
 PTHREAD_OPTS+=		require
 
-post-extract:
+pre-configure:
 	${RM} -f ${WRKSRC}/install-sh
 	${RM} -f ${WRKSRC}/mkinstalldirs
-	${AUTOMAKE} --missing
+	${RM} -f ${WRKSRC}/missing
+	cd ${WRKSRC} && ${AUTOMAKE} --add-missing
 
 .include "../../mk/automake.mk"
 .include "../../lang/gcc/buildlink2.mk"
