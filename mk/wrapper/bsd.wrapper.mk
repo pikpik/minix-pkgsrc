@@ -1,4 +1,4 @@
-# $NetBSD: bsd.wrapper.mk,v 1.7 2004/10/06 09:49:53 grant Exp $
+# $NetBSD: bsd.wrapper.mk,v 1.8 2004/10/09 03:49:13 tv Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -184,6 +184,7 @@ _WRAP_UNTRANSFORM_SEDFILE?=	${WRAPPER_TMPDIR}/untransform.sed
 
 # Generate the transformation sedfiles if we need them.
 .if !empty(_WRAP_TRANSFORM_CMDS)
+_WRAP_TRANSFORM_CMDS:=		${_WRAP_TRANSFORM_CMDS:O:u}
 do-wrapper: ${_WRAP_TRANSFORM_SEDFILE} ${_WRAP_UNTRANSFORM_SEDFILE}
 _WRAP_TRANSFORM_SED+=	-f ${_WRAP_TRANSFORM_SEDFILE}
 _UNWRAP_SED=		-f ${_WRAP_UNTRANSFORM_SEDFILE}
