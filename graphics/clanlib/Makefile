@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/21 22:56:35 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1999/08/10 10:30:59 agc Exp $
 
 DISTNAME=		ClanLib-0.1.15
 CATEGORIES=		games x11
@@ -8,7 +8,7 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.clanlib.org/
 
 DEPENDS+=		Hermes-1.2.5:../../graphics/hermes
-DEPENDS+=		Mesa-3.0:../../graphics/Mesa
+DEPENDS+=		Mesa-*:../../graphics/Mesa
 DEPENDS+=		png-1.0.3:../../graphics/png
 
 USE_X11BASE=		yes
