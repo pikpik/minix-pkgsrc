@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2003/10/11 13:40:20 grant Exp $
+# $NetBSD: Makefile,v 1.84 2003/10/18 13:08:49 cjep Exp $
 #
 # This package does not compile in mod_ssl support hooks, as it conflicts
 # with IPv6-enable patch.
@@ -9,7 +9,7 @@
 DISTNAME=		apache_${APACHE_VERSION}
 PKGNAME=		apache6-${APACHE_VERSION}
 APACHE_VERSION=		1.3.28
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_APACHE:=httpd/} \
 			${MASTER_SITE_APACHE:=httpd/old/}
