@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/03/26 02:27:42 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2004/06/28 17:39:46 abs Exp $
 
 DISTNAME=		otp_src_R9C-0
 PKGNAME=		erlang-9.2
@@ -19,6 +19,12 @@ GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_JAVA=		yes
 USE_JAVA2=		yes
+
+SUBST_CLASSES=		target
+SUBST_STAGE.target=	post-patch
+SUBST_FILES.target=	make/target.mk
+SUBST_SED.target=	-e "s|=.*config.guess)|= ${MACHINE_GNU_PLATFORM}|"
+SUBST_MESSAGE.target=	"Fixing target name."
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
