@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.75 2004/11/30 00:27:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.76 2004/12/22 04:36:32 jlam Exp $
 #
 
 DISTNAME=		sudo-1.6.8p5
 PKGNAME=		sudo-1.6.8pl5
-PKGREVISION=		#
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.courtesan.com/sudo/dist/ \
 			ftp://ftp.courtesan.com/pub/sudo/ \
@@ -25,7 +25,7 @@ GNU_CONFIGURE=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
-CONFIGURE_ARGS+=	--disable-root-mailer --disable-setreuid
+CONFIGURE_ARGS+=	--disable-root-mailer
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 .include "options.mk"
