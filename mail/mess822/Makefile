@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/30 14:03:49 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/03 15:15:02 wiz Exp $
 #
 
 DISTNAME=		mess822-0.58
@@ -24,7 +24,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		yes
 
 EGDIR=			${PREFIX}/share/examples/mess822
-CFLAGS+=		-DPKG_SYSCONFDIR=\"\\\"${PKG_SYSCONFDIR}\\\"\"
+CFLAGS+=		-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR}\""
 USE_PKGINSTALL=		yes
 MAKE_DIRS+=		${PKG_SYSCONFDIR}
 SUPPORT_FILES+=		${EGDIR}/leapsecs.dat ${PKG_SYSCONFDIR}/leapsecs.dat
