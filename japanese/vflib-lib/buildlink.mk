@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/05/28 03:09:11 jlam Exp $
 #
 # This Makefile fragment is included by packages that use VFlib.
 #
@@ -42,7 +42,7 @@ link-vflib-headers:
 			${RM} -f $${dest};				\
 			${LN} -sf $${inc} $${dest};			\
 		fi;							\
-        done
+	done
 
 # This target links the libraries into ${BUILDLINK_LIBDIR}, which should
 # be searched first by the linker.

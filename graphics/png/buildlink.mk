@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/05/26 08:10:42 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/05/28 02:41:54 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libpng.
 #
@@ -43,7 +43,7 @@ link-png-headers:
 			${RM} -f $${dest};				\
 			${LN} -sf $${inc} $${dest};			\
 		fi;							\
-        done
+	done
 
 # This target links the libraries into ${BUILDLINK_LIBDIR}, which should
 # be searched first by the linker.
