@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17.2.2 2002/06/21 23:05:56 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2002/08/25 18:40:42 jlam Exp $
 
 PKGNAME=	qt2-libs-${QTVERSION}
 PKGREVISION=	2
@@ -13,6 +13,7 @@ CONFIGURE_ARGS+=	-L${LOCALBASE}/lib -L${X11BASE}/lib
 
 CONFIGURE_ENV+=		QTDIR="${WRKSRC}"
 MAKE_ENV+=		QTDIR="${WRKSRC}"
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 ALL_TARGET=		sub-src
 
