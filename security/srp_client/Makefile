@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/18 22:46:50 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/23 23:24:07 wiz Exp $
 #
 
 DISTNAME=		srp-1.4.4
@@ -16,6 +16,8 @@ MASTER_SITES=		ftp://paris.arcot.com/pub/srp/ \
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://srp.stanford.edu/srp/
 
+BUILD_DEPENDS+=		autoconf:../../devel/autoconf
+BUILD_DEPENDS+=		automake:../../devel/automake
 DEPENDS+=		gmp>=2.0.2:../../devel/gmp
 
 RESTRICTED=             "Crypto; export-controlled"
