@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/03/12 21:02:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/14 19:37:32 jlam Exp $
 
 DISTNAME=		kicq-1.0.0
 PKGREVISION=		1
@@ -28,6 +28,6 @@ CONFIGURE_ENV+=		KDEDIR=${KDEBASEDIR} \
 			all_libraries="${KDE_LDFLAGS}"
 
 FIX_RPATH+=	KDE_LDFLAGS
-KDE_LDFLAGS=	-Wl,${RPATH_FLAG}${QT1DIR}/qt1/lib -L${LOCALBASE}/lib -Wl,${RPATH_FLAG}${LOCALBASE}/lib -L${X11BASE}/lib -Wl,${RPATH_FLAG}${X11BASE}/lib -ltiff -ljpeg -lpng -lz"
+KDE_LDFLAGS=	-Wl,${RPATH_FLAG}${QT1DIR}/qt1/lib -L${LOCALBASE}/lib -Wl,${RPATH_FLAG}${LOCALBASE}/lib -L${X11BASE}/lib -Wl,${RPATH_FLAG}${X11BASE}/lib -ltiff -ljpeg -lpng -lz
 
 .include "../../mk/bsd.pkg.mk"
