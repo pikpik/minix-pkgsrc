@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/06/29 01:07:19 thorpej Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/29 01:10:34 thorpej Exp $
 
 DISTNAME=	kttcp-${VERSION}
 CATEGORIES=	benchmarks net
@@ -10,7 +10,7 @@ COMMENT=	kttcp kernel network throughput benchmark
 
 VERSION=	20020628
 
-ONLY_FOR_PLATFORM=	NetBSD-*-*
+ONLY_FOR_PLATFORM=	NetBSD-1.6[B-Z]-*
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
