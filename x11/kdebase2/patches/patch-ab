@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- kdm/Makefile.in.orig	Sun Oct 14 17:56:19 2001
++++ kdm/Makefile.in	Sun Oct 14 18:02:24 2001
+@@ -278,6 +278,9 @@
+ # Libraries:
+ LDFLAGS = $(all_libraries) $(KDE_RPATH) $(KRB_RPATH)
+ LDADD = $(LIB_X11) -lXau $(LIBXDMCP) $(PASSLIB)     $(LIB_LIBS) $(KERBEROS_LIBS) $(LIBSOCKET)     $(LIBCRYPT) $(LIBUCB) $(LIBDL) $(LIBUTIL) $(LIBRESOLV)
++ifeq ($(OPSYS),NetBSD)
++LDADD += -lstdc++
++endif
+ 
+ kdm_LDADD = $(LDADD) $(KDM_GREET_LIBS)
+ 
