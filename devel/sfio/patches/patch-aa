@@ -1,5 +1,7 @@
 $NetBSD$
 
+Make sure we get iffe from its correct location.
+
 --- src/lib/sfio/Makefile	1998/10/27 17:01:58	1.1
 +++ src/lib/sfio/Makefile	1998/10/27 17:03:57
 @@ -9,6 +9,8 @@
