@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/09/20 01:00:27 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2002/12/30 20:19:27 tron Exp $
 
 DISTNAME=	kdebase-2.2.2
 PKGREVISION=	1
@@ -92,7 +92,7 @@ post-install:
 	done
 
 	@# The global desktop template files need to be user-writeable, or
-	@# else users won't be able to alter them after copying them to 
+	@# else users won't be able to alter them after copying them to
 	@# their local directories.
 	@#
 	${CHMOD} u+w ${PREFIX}/share/kde/templates/.source/*

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/03/11 13:10:16 markd Exp $
+# $NetBSD: Makefile,v 1.20 2003/03/13 16:06:22 darcy Exp $
 
 DISTNAME=	kdebase-3.1
 CATEGORIES=	x11
@@ -112,7 +112,7 @@ post-install:
 		${PREFIX}/share/doc/kde/HTML/en/kdm
 
 	@# The global desktop template files need to be user-writeable, or
-	@# else users won't be able to alter them after copying them to 
+	@# else users won't be able to alter them after copying them to
 	@# their local directories.
 	@#
 	${CHMOD} u+w ${PREFIX}/share/kde/templates/.source/*
