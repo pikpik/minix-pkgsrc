@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/03/13 17:36:51 fredb Exp $
+# $NetBSD: Makefile,v 1.36 2002/04/09 23:05:42 jlam Exp $
 #
 
 DISTNAME=		libglade-0.17
@@ -18,6 +18,13 @@ GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+.include "../../databases/db/buildlink.mk"
+CPPFLAGS+=		-I${BUILDLINK_DIR}/include/db2
+.endif
 
 pre-configure:
 	${RM} ${WRKSRC}/libgladeConf.sh
