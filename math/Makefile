@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2001/01/26 23:48:34 jtb Exp $
+# $NetBSD: Makefile,v 1.40 2001/01/29 06:14:53 jtb Exp $
 #
 
     SUBDIR += R
@@ -28,6 +28,7 @@
     SUBDIR += otter
     SUBDIR += pspp
     SUBDIR += py-Numeric
+    SUBDIR += py-Scientific
     SUBDIR += quadpack
     SUBDIR += randlib
     SUBDIR += sc
