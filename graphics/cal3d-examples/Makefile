@@ -10,6 +10,7 @@ DISTFILES=		TheCallyDemo-0.9.1b.zip \
 
 COMMENT=	        Tools and demos for cal3d library
 
+USE_X11=		YES
 USE_BUILDLINK3=		yes
 CONFIGURE_ARGS+=	--with-cal3d=${PREFIX}
 CONFIGURE_ARGS+=	--with-glut=${PREFIX}
@@ -17,7 +18,8 @@ CONFIGURE_DIRS=		${WRKSRC}/examples/cally \
 			${WRKSRC}/examples/miniviewer_gl \
 			${WRKSRC}/tools/converter
 CFLAGS+=		-DCAL3D_DATADIR='\"${DATADIR}/\"'
-LIBS+=			-lm -lX11 -lXi -lGL -lGLU -lXmu
+LDFLAGS+=		-L${X11BASE}/lib
+LIBS+=			-lm -lGL -lX11 -lGLU -lXi -lXmu
 BUILD_DIRS=		${WRKSRC}/examples/cally \
 			${WRKSRC}/examples/miniviewer_gl \
 			${WRKSRC}/tools/converter
