@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/23 15:14:43 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/21 15:10:18 wiz Exp $
 #
 
 DISTNAME=		imlib2-1.0.3
@@ -15,7 +15,7 @@ USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 USE_BUILDLINK2=		YES
 
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../mk/bsd.prefs.mk"
 
