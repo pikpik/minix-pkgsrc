@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:39 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/11/12 01:31:49 salo Exp $
 #
 
 DISTNAME=	gpsim-0.20.7
@@ -7,7 +7,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	http://www.dattalo.com/gnupic/
 
 MAINTAINER=	snoonan@tbearsiberians.com
-HOMEPAGE=	http://www.dattalo.com/gnupic/gpsim
+HOMEPAGE=	http://www.dattalo.com/gnupic/gpsim.html
 COMMENT=	PIC emulator with X interface
 
 USE_BUILDLINK2=	YES
