@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/06/03 17:34:57 kei Exp $
 
 DISTNAME=	fMSX24.tar
 PKGNAME=	fmsx-2.4
@@ -49,8 +49,10 @@ do-install:
 
 .include "../../mk/bsd.pkg.mk"
 
-.ifdef DISPLAY
-CUR_DEPTH!=	( xwininfo -display ${DISPLAY} -root | fgrep Depth: | ${SED} 's-.*Depth: -BPP-' )
-.else
+# XXX It would be nice to customize for each user's display, but this
+#     way of doing it at build time depending on build environment is wrong.
+#.ifdef DISPLAY
+#CUR_DEPTH!=	( xwininfo -display ${DISPLAY} -root | fgrep Depth: | ${SED} 's-.*Depth: -BPP-' )
+#.else
 CUR_DEPTH= BPP8
-.endif
+#.endif
