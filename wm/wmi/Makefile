@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/16 02:20:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/17 10:19:27 salo Exp $
 #
 
-DISTNAME=	wmi-7
+DISTNAME=	wmi-8
 CATEGORIES=	wm
 MASTER_SITES=	http://download.berlios.de/wmi/
 
