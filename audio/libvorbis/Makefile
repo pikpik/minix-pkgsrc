@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/12/30 08:00:46 lukem Exp $
+# $NetBSD: Makefile,v 1.14 2002/01/02 12:39:36 lukem Exp $
 
 DISTNAME=	libvorbis-1.0rc3
 PKGNAME=	libvorbis-1.0.0.7
@@ -22,7 +22,7 @@ PLIST_SUBST+=		DISTNAME=${DISTNAME}
 
 GCC_VERSION!=gcc --version
 .if (${GCC_VERSION:C/-.*$$//} == egcs)
-IGNORE=		"gcc ${GCC_VERSION} cannot be used, as it generates bad ogg files"
+.include "../../lang/gcc/Makefile.gcc"
 .endif
 
 .include "../../audio/libogg/buildlink.mk"
