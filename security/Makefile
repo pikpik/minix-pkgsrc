@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2004/04/11 00:09:04 rh Exp $
+# $NetBSD: Makefile,v 1.176 2004/04/16 16:18:27 tv Exp $
 #
 
 COMMENT=	Security tools
@@ -53,6 +53,7 @@ SUBDIR+=	hashcash
 SUBDIR+=	heimdal
 SUBDIR+=	ike-scan
 SUBDIR+=	isakmpd
+SUBDIR+=	jessie
 SUBDIR+=	john
 SUBDIR+=	keychain
 SUBDIR+=	kssh
