@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:56:55 martti Exp $
+# $NetBSD: Makefile,v 1.10 2004/08/28 20:08:15 schmonz Exp $
 #
 
-DISTNAME=	queue-repair-0.9.0
-CATEGORIES=	mail
-MASTER_SITES=	${HOMEPAGE}
+DISTNAME=		queue-repair-0.9.0
+CATEGORIES=		mail
+MASTER_SITES=		${HOMEPAGE}
 
-MAINTAINER=	zuntum@NetBSD.org
-HOMEPAGE=	http://www.qcc.sk.ca/~charlesc/software/queue_repair/
-COMMENT=	Check or correct most corruptions of the queue in qmail
+MAINTAINER=		zuntum@NetBSD.org
+HOMEPAGE=		http://www.qcc.sk.ca/~charlesc/software/queue_repair/
+COMMENT=		Check or correct most corruptions of the queue in qmail
 
-NO_BUILD=	YES
+NO_BUILD=		YES
 
 PYTHON_PATCH_SCRIPTS=	queue_repair.py
 
