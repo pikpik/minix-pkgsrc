@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2002/12/16 23:21:06 grant Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/26 18:04:33 jschauma Exp $
 #
 
-DISTNAME=	star-1.4.2
+DISTNAME=	star-1.4.3
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.berlios.de/pub/star/
 
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.fokus.gmd.de/research/cc/glone/employees/joerg.schilling/pr
 COMMENT=	the fastest tar like archiver for UNIX
 
 USE_GMAKE=	# defined
-MAKE_FLAGS+=	INS_BASE=${LOCALBASE}
+MAKE_FLAGS+=	INS_BASE=${PREFIX}
 
 pre-build:
 	@cd ${WRKSRC}/RULES && for i in arm mipsel; do			\
