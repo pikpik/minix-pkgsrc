@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2002/12/25 22:44:53 mjl Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:42:29 jmmv Exp $
 #
 
-DISTNAME=	pstree-2.17
+DISTNAME=	pstree-2.19
 WRKSRC=		${WRKDIR}
 CATEGORIES=	sysutils
 # PKGREVISION=	1
-MASTER_SITES=	http://www.go.dlr.de/fresh/unix/src/misc/
+MASTER_SITES=	http://fresh.t-systems-sfr.com/unix/src/misc/
 
 MAINTAINER=	packages@netbsd.org
 COMMENT=	Display processes in a tree
