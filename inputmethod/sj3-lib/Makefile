@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/21 14:28:53 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:43:44 grant Exp $
 # FreeBSD Id: Makefile,v 1.9 1998/11/28 05:08:27 asami Exp $
 
 DISTNAME=	sj3-2.0.1.20
@@ -11,7 +11,9 @@ MASTER_SITES=	ftp://ftp.sony.co.jp/pub/unsupported/src/	\
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Japanese input method (library)
 
-USE_BUILDLINK2=	YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -25,5 +27,5 @@ pre-configure:
 do-configure:
 	@(cd ${WRKSRC}; ${XMKMF_CMD}; ${MAKE} Makefiles)
 
-.include "../../devel/nbitools/nbitools.mk"
+.include "../../devel/nbitools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
