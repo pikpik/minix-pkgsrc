@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 1999/11/16 00:00:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1999/12/20 03:52:22 briggs Exp $
 
-DISTNAME=	cdrecord-1.8a36
+DISTNAME=	cdrecord-1.8.1a01
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/
 
