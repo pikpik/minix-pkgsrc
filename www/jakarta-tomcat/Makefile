@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2000/01/13 17:47:53 jwise Exp $
 
 DISTNAME=	jakarta-tomcat.src
 PKGNAME=	jakarta-tomcat-3.0
@@ -45,6 +45,7 @@ do-install:
 PREFIX:=        ${JAVA_HOME}
 
 # work around a bug in kaffe's jar utility
+# pkglint or no, this has to be after bsd.pkg.mk
 .if ${PKG_JVM} == "kaffe"
 DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 EXTRACTOR=	${LOCALBASE}/bin/unzip -x
