@@ -1,0 +1,10 @@
+$NetBSD$
+===========================================================================
+
+For further information for LPRng, have a look at
+	${PREFIX}/share/doc/LPRng/LPRng-HOWTO.txt
+
+or point your favorite brower at
+	${PREFIX}/share/doc/LPRng/LPRng-HOWTO.html
+
+===========================================================================
