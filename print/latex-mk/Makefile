@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/14 14:21:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:52:33 grant Exp $
 #
 
 DISTNAME=	latex-mk-1.1
@@ -11,8 +11,10 @@ COMMENT=	Makefile fragments and scripts for managing LaTeX documents
 
 GNU_CONFIGURE=	YES
 
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	latex-mk.info
+
 TEST_DIRS=	${WRKSRC}
 TEST_TARGET=	check
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
