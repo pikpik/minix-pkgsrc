@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/11/28 05:20:42 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/11/29 01:12:26 hubertf Exp $
 
 DISTNAME=	sirc-2.211
 PKGREVISION=	1
@@ -39,6 +39,7 @@ SIRC_SCRIPTS= \
 		www.pl				\
 		yiff.pl
 
+USE_BUILDLINK2=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 DIST_SUBDIR=	sirc
@@ -74,5 +75,5 @@ do-install:
 		${ECHO} installing $$i ; \
 		${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/$$i ${PREFIX}/lib/sirc/scripts/$$i ; done
 
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
