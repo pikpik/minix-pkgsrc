@@ -1,0 +1,3 @@
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:24:25 zuntum Exp $
+bin/gtar
+man/man1/gtar.1
