@@ -1,4 +1,6 @@
 #!@BUILDLINK_SHELL@
+#
+# $NetBSD$
 
 transform="@_BLNK_TRANSFORM_SEDFILE@"
 untransform="@_BLNK_UNTRANSFORM_SEDFILE@"
