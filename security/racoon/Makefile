@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2002/06/17 10:06:50 drochner Exp $
+# $NetBSD: Makefile,v 1.51 2002/06/25 06:53:39 itojun Exp $
 #
 
 DISTNAME=	racoon-20020507a
@@ -17,7 +17,6 @@ IGNORE+=		"${PKGNAME} requires ipsec-ready NetBSD"
 .endif
 
 BUILD_DEFS+=	USE_INET6
-BUILD_DEFS+=	PKG_SYSCONFDIR
 .include "../../mk/bsd.prefs.mk"
 
 USE_BUILDLINK_ONLY=	yes
