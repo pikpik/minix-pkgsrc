@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1077 2002/10/23 12:21:29 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1079 2002/10/28 18:53:37 bouyer Exp $
 #
 # This file is in the public domain.
 #
@@ -1857,6 +1857,19 @@ do-config-star-override:
 		${LN} -s ${_PKGSRCDIR}/mk/gnu-config/config.sub $$s;	\
 	done
 .  endif
+.endif
+
+.if defined(PKGCONFIG_OVERRIDE)
+_CONFIGURE_PREREQ+=	do-pkgconfig-override
+do-pkgconfig-override:
+.  for pkgconfig in ${PKGCONFIG_OVERRIDE}
+	${_PKG_SILENT}${_PKG_DEBUG}					\
+	if [ -f ${pkgconfig} ]; then					\
+		${MV} ${pkgconfig} ${pkgconfig}.norpath ;		\
+		${SED} -e 's|^\(Libs:.*[ 	]\)-L\([ 	]*[^ 	]*\)\(.*\)$$|\1-Wl,-R\2 -L\2\3|'						\
+			< ${pkgconfig}.norpath > ${pkgconfig} ;		\
+	fi
+.  endfor
 .endif
 
 # By default, prevent invocation of GNU "auto*" driven by the generated
