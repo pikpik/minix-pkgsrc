@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2003/07/23 22:30:12 grant Exp $
+# $NetBSD: Makefile,v 1.71 2003/08/08 09:31:00 grant Exp $
 
 DISTNAME=		gcc-2.95.3
 PKGREVISION=		4
@@ -34,7 +34,6 @@ FILES_SUBST+=		DISTNAME=${DISTNAME} GCC_PREFIX=${GCC_PREFIX}
 MESSAGE_SUBST+=		DISTNAME=${DISTNAME}
 PLIST_SUBST+=		DISTNAME=${DISTNAME}
 
-USE_NEW_TEXINFO=	YES
 INFO_DIR=		${GCC_PREFIX:S|^${PREFIX}/||}/info
 INFO_FILES=		chill.info cpp.info g77.info gcc.info
 

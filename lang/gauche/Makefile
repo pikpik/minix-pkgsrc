@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 21:44:20 grant Exp $
+# $NetBSD: Makefile,v 1.16 2003/08/09 09:31:25 seb Exp $
 #
 
 DISTNAME=	Gauche-0.6.3
@@ -35,7 +35,6 @@ CONFIGURE_ENV+=		AS="${CC} -x assembler-with-cpp -c"
 _WITH_ICONV_LIB=	${BUILDLINK_LIBICONV_LDADD:M-l*:C/-l//}
 LDFLAGS+=		${BUILDLINK_LIBICONV_LDADD}
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		gauche-refe.info gauche-refj.info
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/04 20:41:36 seb Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:44:14 grant Exp $
 #
 
 DISTNAME=	eieio-0.17
@@ -21,7 +21,6 @@ MAKEFLAGS+=	EMACS=${EMACS_BIN}
 NO_CONFIGURE=	# set
 USE_GMAKE=	# set
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	eieio.info
 
 # XXX $cd ${WRKSRC}; ${MAKE} -V eieio_LISP

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/19 22:18:05 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:44:15 grant Exp $
 
 DISTNAME=	elisp-manual-21-2.8
 CATEGORIES=	lang
@@ -9,7 +9,6 @@ HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	The Emacs Lisp Reference Manual for GNU Emacs Version 20.3
 
 GNU_CONFIGURE=	YES
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	elisp
 
 ALL_TARGET=	elisp

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 21:44:54 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/21 16:54:03 martti Exp $
 
 DISTNAME=		mercury-compiler-0.11.0
 PKGNAME=		mercury-0.11.0
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_GNU_READLINE=	yes	# rl_prep_term_function
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=		mercury.info mercury_faq.info mercury_library.info
 INFO_FILES+=		mercury_ref.info mercury_trans_guide.info
 

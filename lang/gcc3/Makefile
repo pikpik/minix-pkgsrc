@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2003/07/28 21:49:15 jmmv Exp $
+# $NetBSD: Makefile,v 1.43 2003/08/08 09:31:03 grant Exp $
 #
 
 DISTNAME=		gcc-3.3
@@ -35,7 +35,6 @@ TEXINFO_REQD=		4.2
 
 BUILD_DEFS+=		PKG_GCC3_JAVA
 
-USE_NEW_TEXINFO=	YES
 INFO_DIR=		${GCC_PREFIX:S|^${PREFIX}/||}/info
 INFO_FILES=		cpp.info g77.info gcc.info gccint.info cppinternals.info
 .if defined(PKG_GCC3_JAVA)
