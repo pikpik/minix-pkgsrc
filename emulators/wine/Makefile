@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/08/07 12:39:43 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2002/08/07 13:41:56 wiz Exp $
 
 DISTNAME=		Wine-20020804
 PKGNAME=		${DISTNAME:S/W/w/}
@@ -30,6 +30,9 @@ REPLACE_PERL=		tools/winedump/function_grep.pl tools/winemaker
 CONFIGURE_ENV+=		ft_devel=${FREETYPE_CONFIG}
 CONFIGURE_ENV+=		X_LIBS="${LDFLAGS}"
 LIBS+=			${LDFLAGS}
+
+CONFIGURE_ENV+=		ac_cv_path_ARTSCCONFIG=no
+CONFIGURE_ENV+=		ac_cv_prog_sane_devel=no
 
 .include "../../mk/bsd.prefs.mk"
 
