@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.351 2003/02/16 17:22:39 grant Exp $
+# $NetBSD: Makefile,v 1.352 2003/02/17 11:52:01 zuntum Exp $
 #
 
 COMMENT=	Networking tools
@@ -12,7 +12,6 @@ SUBDIR+=	ORBit2
 SUBDIR+=	SDL_net
 SUBDIR+=	adns
 SUBDIR+=	airportbasestationconfig
-SUBDIR+=	ap-utils
 SUBDIR+=	archie
 SUBDIR+=	arla
 SUBDIR+=	arpd
@@ -275,6 +274,7 @@ SUBDIR+=	vncviewer
 SUBDIR+=	vsftpd
 SUBDIR+=	vtun
 SUBDIR+=	wakeup
+SUBDIR+=	wap-utils
 SUBDIR+=	wget
 SUBDIR+=	whatmask
 SUBDIR+=	wistumbler
