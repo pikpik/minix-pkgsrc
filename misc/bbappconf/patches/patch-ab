@@ -1,7 +1,7 @@
 $NetBSD: $
 
---- data/bbappconf.bb.orig	Sun Aug  4 11:51:37 2002
-+++ data/bbappconf.bb	Sun Aug  4 11:51:49 2002
+--- data/bbappconf.bb.orig	Tue Dec 17 23:11:37 2002
++++ data/bbappconf.bb	Tue Dec 17 23:12:21 2002
 @@ -19,7 +19,7 @@
  !bbappconf.1.maxHoriz:  false
  !bbappconf.1.startOnWorkspace:	
