@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2001/02/16 15:51:52 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2001/02/20 16:27:06 wiz Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
 
 SUBDIR+=	bsdpak
+SUBDIR+=	digest
 SUBDIR+=	gensolpkg
 #SUBDIR+=	pax		# Only needed on 1.3 systems
 SUBDIR+=	perl-mk
