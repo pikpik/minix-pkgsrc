@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/demomaker
+bin/fmaddlicense
+bin/framemaker
+bin/maker
