@@ -1,3 +1,4 @@
+$NetBSD$
 --- agent/Makefile.in.orig	Fri Aug 13 07:16:28 1999
 +++ agent/Makefile.in	Fri Jan 21 08:53:53 2000
 @@ -3,9 +3,11 @@
