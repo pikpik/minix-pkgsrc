@@ -1,6 +1,6 @@
-/*	$NetBSD: buildlinkX11.rules,v 1.1.1.1 2001/07/02 21:00:44 jlam Exp $	*/
+/*	$NetBSD: buildlinkX11.rules,v 1.2 2001/07/05 17:23:00 jlam Exp $	*/
 
-#include <X11.rules>
+#include <X11.dist.rules>
 
 #ifdef UseInstalled
 # ifdef BuildLink
