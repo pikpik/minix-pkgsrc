@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/09/09 15:22:13 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/16 15:08:55 agc Exp $
 #
 
 DISTNAME=	mtr-0.42
@@ -10,8 +10,8 @@ MAINTAINER=	sommerfeld@netbsd.org
 HOMEPAGE=	http://www.bitwizard.nl/mtr/
 COMMENT=	Traceroute and ping in a single graphical network diagnostic tool
 
-BUILD_DEPENDS+=	autoconf-2.13:../../devel/autoconf
-BUILD_DEPENDS+=	automake-1.4:../../devel/automake
+BUILD_DEPENDS+=	autoconf>=2.13:../../devel/autoconf
+BUILD_DEPENDS+=	automake>=1.4:../../devel/automake
 
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
