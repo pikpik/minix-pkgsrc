@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/04/12 20:38:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/05/31 05:54:46 tron Exp $
 #
 
 .include "../Mesa/Makefile.common"
@@ -12,7 +12,7 @@ DISTFILES+=		${DISTNAME:S/Mesa/MesaLib/}${EXTRACT_SUFX}
 DISTFILES+=		${DISTNAME:S/Mesa/MesaDemos/}${EXTRACT_SUFX}
 
 MAINTAINER=		rh@netbsd.org
-HOMEPAGE=		http://www.ssec.wisc.edu/~brianp/Mesa.html
+HOMEPAGE=		http://www.mesa3d.org/
 COMMENT=		GLUT Graphics library similar to SGI's OpenGL
 
 CONFLICTS+=		Mesa-glx-*
