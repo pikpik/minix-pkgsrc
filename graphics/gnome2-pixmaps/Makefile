@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2004/04/14 16:15:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2004/04/15 02:34:43 xtraeme Exp $
 #
 
-DISTNAME=		gnome-desktop-2.6.0
+DISTNAME=		gnome-desktop-2.6.1
 PKGNAME=		${DISTNAME:S/-desktop/2-pixmaps/}
 CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-desktop/2.6/}
