@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/05/02 13:40:59 kristerw Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/07 01:14:51 xtraeme Exp $
 #
 
 DISTNAME=	xpad-1.12
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xpad/}
 EXTRACT_SUFX=	.tar.bz2
@@ -25,6 +25,7 @@ LIBS.SunOS=		-lX11
 BUILDLINK_TRANSFORM+=	S:-DGTK_DISABLE_DEPRECATED:
 
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
