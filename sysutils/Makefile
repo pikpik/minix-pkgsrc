@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.157 2002/08/20 15:45:56 grant Exp $
+# $NetBSD: Makefile,v 1.158 2002/09/07 03:04:59 rh Exp $
 
 COMMENT=	System utilities
 
@@ -32,6 +32,7 @@ SUBDIR+=	daemontools
 SUBDIR+=	depot
 SUBDIR+=	dog
 SUBDIR+=	e2fsprogs
+SUBDIR+=	easydiskpasswd
 SUBDIR+=	etcupdate
 SUBDIR+=	extipl
 SUBDIR+=	fam
