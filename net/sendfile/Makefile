@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 22:51:50 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/08/30 22:51:28 jlam Exp $
 #
 
 DISTNAME=	sendfile-20010216
 PKGNAME=	sendfile-2.1.0.2
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/sendfile-2.1a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.belwue.de/pub/unix/sendfile/current/
 
@@ -12,6 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.belwue.de/aktivitaeten/projekte/saft/
 COMMENT=	Implementation of the Simple asynchronous file transfer protocol
 
+WRKSRC=		${WRKDIR}/sendfile-2.1a
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:40:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:27:40 grant Exp $
 # FreeBSD Id: ports/converters/unix2dos/Makefile,v 1.5 2000/07/04 10:31:42 sobomax Exp
 
 DISTNAME=	unix2dos-1.2
-WRKSRC=		${WRKDIR}
 CATEGORIES=	converters
 MASTER_SITES=	http://www.fisicc-ufm.edu/~obonilla/files/		\
 		ftp://ftp.guug.org/pub/
@@ -10,6 +9,7 @@ MASTER_SITES=	http://www.fisicc-ufm.edu/~obonilla/files/		\
 MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Translate ASCII files to/from DOS (cr/lf) and UNIX (lf)
 
+WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	# defined
 
 do-install:

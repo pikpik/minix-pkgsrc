@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2004/01/11 01:09:12 grant Exp $
+# $NetBSD: Makefile,v 1.41 2004/01/11 23:06:54 grant Exp $
 
 DISTNAME=		openoffice-0.0.0.641
 PKGREVISION=		2
-WRKSRC=			${WRKDIR}/oo_641_src/config_office
 CATEGORIES=		misc
 MASTER_SITES=		http://www.fs.tum.de/~mrauch/OpenOffice/download/
 DISTFILES=		oo_641_src.tar.bz2
@@ -15,6 +14,7 @@ MAINTAINER=		mrauch@NetBSD.org
 HOMEPAGE=		http://www.openoffice.org/
 COMMENT=		Integrated office productivity suite
 
+WRKSRC=			${WRKDIR}/oo_641_src/config_office
 USE_BUILDLINK2=		yes
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2003/06/02 01:15:47 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:56:19 grant Exp $
 # FreeBSD Id: Makefile,v 1.5 1996/12/07 23:43:56 asami Exp
 #
 
 DISTNAME=		9term.1.6.3
 PKGNAME=		9term-1.6.3
-WRKSRC=			${WRKDIR}
 CATEGORIES=		plan9 x11
 MASTER_SITES=		ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 
@@ -16,6 +15,7 @@ BUILDLINK_DEPMETHOD.sam=	full
 
 NOT_FOR_PLATFORM=	*-*-alpha	#LP64 Problems
 
+WRKSRC=			${WRKDIR}
 USE_BUILDLINK2=		yes
 USE_X11=		yes
 

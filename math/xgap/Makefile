@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:48:19 grant Exp $
 #
 
 DISTNAME=	xgap4r16
 PKGNAME=	xgap-4.16
 PKGREVISION=	1
-WRKSRC=         ${WRKDIR}/${GAP_PKG_NAME}
 CATEGORIES=	math x11
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/share/
 EXTRACT_SUFX=	.zoo
@@ -13,6 +12,7 @@ MAINTAINER=	cjep@NetBSD.org
 HOMEPAGE=	http://www.gap-system.org/Share/xgap.html
 COMMENT=	GUI for GAP
 
+WRKSRC=         ${WRKDIR}/${GAP_PKG_NAME}
 USE_BUILDLINK2=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES

@@ -1,9 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/21 09:56:35 wiz Exp $
 #
 
 DISTNAME=		libggigcp-0.8.2.src
 PKGNAME=		${DISTNAME:S/.src//}
-WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ggi/} \
 			ftp://ftp.ggi-project.org/pub/ggi/extensions/libgcp/
@@ -13,6 +12,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.ggi-project.org/packages/libggigcp.html
 COMMENT=		Color management extension for GGI
 
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes

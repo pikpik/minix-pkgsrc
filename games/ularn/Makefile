@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.12 2003/12/24 09:53:49 jmmv Exp $
 
 DISTNAME=		ularn
 PKGNAME=		ularn-6.12.92
 PKGREVISION=		1
-WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		http://www.cordier.com/ularn/
 
@@ -11,6 +10,7 @@ MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		http://www.cordier.com/ularn/
 COMMENT=		Fantasy roguelike game based on vintage larn
 
+WRKSRC=			${WRKDIR}
 HAS_CONFIGURE=          # defined
 CONFIGURE_ENV+=         PREFIX=${LOCALBASE}
 CONFIGURE_SCRIPT=       ./Configure

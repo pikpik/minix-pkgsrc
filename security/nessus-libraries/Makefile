@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:42:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/11/12 03:39:42 jschauma Exp $
 #
 
 DISTNAME=	nessus-libraries-${VERS}
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/nessus-libraries
 .include 	"../nessus/Makefile.common"
 
 COMMENT=	Libs required by the Nessus Network security scanner
 
+WRKSRC=		${WRKDIR}/nessus-libraries
 USE_BUILDLINK2=	yes
 USE_LIBTOOL=	yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2003/06/02 01:21:31 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 21:23:51 grant Exp $
 # FreeBSD Id: Makefile,v 1.5 1996/11/18 13:56:53 asami Exp
 #
 
 DISTNAME=		xmix-2.1
-WRKSRC=			${WRKDIR}/xmix
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/sound/mixers/}
 
@@ -13,6 +12,7 @@ PATCHFILES=		xmix-2.1.mixers.patch
 MAINTAINER=		tech-pkg@NetBSD.org
 COMMENT=		Mixer for X Window System
 
+WRKSRC=			${WRKDIR}/xmix
 USE_IMAKE=		yes
 
 pre-configure:

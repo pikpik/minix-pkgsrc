@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2003/09/06 13:59:18 cjep Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/05 11:56:49 jlam Exp $
 #
 
 DISTNAME=       awk
 PKGNAME=        nawk-20030731
-WRKSRC=		${WRKDIR}
 CATEGORIES=	lang
 MASTER_SITES=   http://cm.bell-labs.com/who/bwk/
 
@@ -12,6 +11,7 @@ HOMEPAGE=	http://cm.bell-labs.com/who/bwk/
 COMMENT=	Brian Kernighan's pattern-directed scanning and processing language
 
 DIST_SUBDIR=	${PKGNAME}
+WRKSRC=		${WRKDIR}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

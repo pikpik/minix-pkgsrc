@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2003/07/21 17:11:26 martti Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/05 11:28:52 jlam Exp $
 
 DISTNAME=	src
 PKGNAME=	unison-2.9.1
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/latest/
 
@@ -16,6 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 # docs: unison-manual.pdf/html/ps/dvi
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_BUILDLINK3=	yes
 USE_GMAKE=	yes
 MAKE_FLAGS+=	CFLAGS="" UISTYLE=text

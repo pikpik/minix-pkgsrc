@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/12 15:11:38 salo Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/22 04:14:35 martti Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
 PKGNAME=	privoxy-3.0.2
 PKGREVISION=	2
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}-stable
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ijbswa/}
 
@@ -30,6 +29,7 @@ EGDIR=			${PREFIX}/share/examples/privoxy
 AUTOCONF_REQD=		2.13
 CPPFLAGS+=		-Dunix
 
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}-stable
 USE_BUILDLINK2=		YES
 
 USE_GMAKE=		YES

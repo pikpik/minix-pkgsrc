@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2002/09/23 10:20:41 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/29 12:41:08 jmmv Exp $
 
 DISTNAME=	quake106
 PKGNAME=	quakedata-1.0
-WRKSRC=		${WRKDIR}
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/idstuff/quake/ \
 		ftp://ftp.idsoftware.com/idstuff/quake/
@@ -19,6 +18,7 @@ RESTRICTED=		"This software is shareware"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
+WRKSRC=		${WRKDIR}
 EXTRACT_CMD=	unzip -q -o ${DOWNLOADED_DISTFILE} -d ${WRKDIR} resource.*
 USE_BUILDLINK2=	YES
 NO_BUILD=	YES

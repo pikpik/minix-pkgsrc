@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:22:52 grant Exp $
 #
 
 DISTNAME=	mp3asm-0.1.3
-WRKSRC=		${WRKDIR}/mp3asm-0.1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3asm/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,6 +10,7 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://mp3asm.sourceforge.net/
 COMMENT=	mpeg 1/2/2.5 audio layer 1,2,3 frame level editor
 
+WRKSRC=		${WRKDIR}/mp3asm-0.1
 GNU_CONFIGURE=	yes
 
 post-patch:

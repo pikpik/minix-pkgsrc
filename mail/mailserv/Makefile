@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:46:23 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/10/02 16:18:36 reed Exp $
 #
 
 DISTNAME=	mailserv
 PKGNAME=	${DISTNAME}-3.29
-WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	http://www.csicop.org/~fitz/www/mailserv/
 
@@ -11,6 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.csicop.org/~fitz/www/mailserv/
 COMMENT=	WWW interface to several types of mailing list servers
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 USE_PERL5=	YES

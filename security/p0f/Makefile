@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/10/05 18:13:00 recht Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/03 11:45:28 recht Exp $
 #
 
 DISTNAME=	p0f-2.0.3
-WRKSRC=		${WRKDIR}/p0f
 CATEGORIES=	security net
 MASTER_SITES=	http://lcamtuf.coredump.cx/p0f/
 EXTRACT_SUFX=	.tgz
@@ -11,6 +10,7 @@ MAINTAINER=	dawszy@arhea.net
 HOMEPAGE=	http://lcamtuf.coredump.cx/p0f.shtml
 COMMENT=	Passive OS fingerprinting tool
 
+WRKSRC=		${WRKDIR}/p0f
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:11:20 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/11/20 14:26:00 he Exp $
 #
 
 DISTNAME=	scotty-${DIST_VERS}
 PKGNAME=	tcl-scotty-${DIST_VERS}
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 CATEGORIES=	net tcl tk
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 
@@ -16,6 +15,7 @@ DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 
 DIST_VERS=	2.1.11
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS+= --with-tcl-config=${PREFIX}/lib --enable-multicast \
 		--enable-gdmo --without-tk-config

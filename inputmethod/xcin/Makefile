@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:52:19 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:43:54 grant Exp $
 #
 
 DISTNAME=	xcin-2.5.3.pre2
 PKGNAME=	xcin-2.5.3rc2
 PKGREVISION=	2
-WRKSRC=		${WRKDIR}/xcin
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/devel/
 
@@ -12,6 +11,7 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://xcin.linux.org.tw/
 COMMENT=	Chinese XIM server
 
+WRKSRC=			${WRKDIR}/xcin
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11BASE=		yes

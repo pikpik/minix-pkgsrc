@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:52:19 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 17:14:09 martti Exp $
 #
 
 DISTNAME=	shlock-20020114
-WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -13,6 +12,7 @@ COMMENT=	Shell utility to perform dot-locking
 
 ONLY_FOR_PLATFORM=	SunOS-*-* Linux-*-*
 
+WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	#empty
 NO_CHECKSUM=	#defined
 MANCOMPRESSED_IF_MANZ=	yes

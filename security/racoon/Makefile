@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.61 2004/01/14 09:22:22 itojun Exp $
+# $NetBSD: Makefile,v 1.62 2004/01/16 02:29:49 itojun Exp $
 #
 
 DISTNAME=	racoon-20040116a
-WRKSRC=		${WRKDIR}/${DISTNAME}/racoon
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
@@ -12,6 +11,7 @@ COMMENT=	KAME racoon IKE daemon
 
 CONFLICTS+=	racoon-[0-9]*
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/racoon
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 

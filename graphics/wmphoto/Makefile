@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:43:03 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:51:53 martti Exp $
 #
 
 DISTNAME=	wmphoto-0.3a
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/wmphoto
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.dcc.uchile.cl/~amartoq/wmphoto/
 
@@ -10,6 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dcc.uchile.cl/~amartoq/wmphoto/
 COMMENT=	Dock-app that can show you a photo
 
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/wmphoto
 USE_X11BASE=	YES
 USE_BUILDLINK2=	YES
 USE_GMAKE=	YES

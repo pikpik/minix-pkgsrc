@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:17:14 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:00 grant Exp $
 
 DISTNAME=	nfsshell-1.0
-WRKSRC=		${WRKDIR}/nfsbug
 CATEGORIES=	net security
 MASTER_SITES=	http://www.asmodeus.com/archive/Xnix/
 DISTFILES=	nfsBugFerret.tgz \
@@ -11,6 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	NFS security verification suite
 
 EXTRACT_ONLY=   nfsBugFerret.tgz
+WRKSRC=		${WRKDIR}/nfsbug
 
 # Only works on 1.5B or greater on most platforms but will work on any x86
 # since struct pmap didn't get exposed through vm.h there.

@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.37 2003/06/02 01:16:11 jschauma Exp $
+# $NetBSD: Makefile,v 1.38 2003/07/17 22:55:19 grant Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/05/27 08:44:56 dburr Exp
 #
 
 DISTNAME=		Mosaic-src-2.7b5
 PKGNAME=		mosaic-2.7b5
 PKGREVISION=		1
-WRKSRC=			${WRKDIR}/Mosaic-src
 CATEGORIES=		www
 MASTER_SITES=		ftp://ftp.ncsa.uiuc.edu/Web/Mosaic/Unix/source/
 
@@ -17,6 +16,7 @@ LICENSE=		mosaic-license
 
 NOT_FOR_PLATFORM=	*-*-alpha	#LP64 problems
 
+WRKSRC=			${WRKDIR}/Mosaic-src
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
 USE_MOTIF12=		YES

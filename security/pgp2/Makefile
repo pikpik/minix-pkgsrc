@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2003/07/17 22:53:09 grant Exp $
+# $NetBSD: Makefile,v 1.35 2003/07/23 10:51:13 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
 #
 
 DISTNAME=	pgp263is
-WRKSRC=		${WRKDIR}/src
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/pgp/2.x/src/ \
 		ftp://ftp.kiarchive.ru/pub/unix/crypto/pgp/
@@ -12,6 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.pgpi.com/
 COMMENT=	Public-key encryption and digital signature utility (v2)
 
+WRKSRC=		${WRKDIR}/src
 CRYPTO=		yes
 USE_RSAREF2=	NO
 

@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:38:21 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:49:45 martti Exp $
 
 DISTNAME=	fortune-strfile-0
-WRKSRC=		${WRKDIR}
 CATEGORIES=	games
 DISTFILES=	# empty
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Tool to prepare a fortune database
 
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 
 # we depend on the "make" infrastructure

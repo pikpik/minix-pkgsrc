@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:23:07 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/21 16:30:44 martti Exp $
 #
 
 DISTNAME=	rio007
 PKGNAME=	rio-1.07
-WRKSRC=		${WRKDIR}/rio107
 CATEGORIES=	audio
 MASTER_SITES=	http://www.world.co.uk/sba/
 EXTRACT_SUFX=	.tgz
@@ -14,6 +13,7 @@ COMMENT=	Utility to display and manage files on the Diamond Rio PMP300
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
+WRKSRC=		${WRKDIR}/rio107
 MAKEFILE=	makefile
 
 do-install:

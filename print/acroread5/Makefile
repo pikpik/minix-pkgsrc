@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2003/09/04 08:21:57 martti Exp $
+# $NetBSD: Makefile,v 1.18 2003/11/01 13:33:10 dmcmahill Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.08
-WRKSRC=		${WRKDIR}
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/5.x/
 
@@ -19,6 +18,7 @@ NO_BIN_ON_FTP=	${RESTRICTED}
 NO_SRC_ON_FTP=	${RESTRICTED}
 LICENSE=	adobe-acrobat-license
 
+WRKSRC=		${WRKDIR}
 CHECK_SHLIBS=	NO
 NO_BUILD=	YES
 SHLIB_HANDLING=	NO

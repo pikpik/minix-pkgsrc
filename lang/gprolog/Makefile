@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2003/06/23 19:48:19 jtb Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/07 21:31:52 jtb Exp $
 
 DISTNAME=		gprolog-1.2.16
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/contraintes/gprolog/
 
@@ -11,6 +10,7 @@ COMMENT=		GNU prolog compiler and interpreter
 
 ONLY_FOR_PLATFORM=	*-*-i386 *-*-powerpc *-*-sparc
 
+WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-install-dir=${PREFIX}/libexec/${PKGNAME} \

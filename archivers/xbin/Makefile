@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:21:46 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/21 16:24:41 martti Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
 PKGNAME=	${PRGNAME}-2.3
-WRKSRC=		${WRKDIR}
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://sunsite.unc.edu/pub/packages/TeX/tools/xbin/
 DISTFILES=	${DISTNAME}.c ${PRGNAME}.man
@@ -15,6 +14,7 @@ RESTRICTED=	"May not be sold without permission"
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
+WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	# defined
 
 PRGNAME=	xbin

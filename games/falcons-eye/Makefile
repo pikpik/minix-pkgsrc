@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.11 2003/12/24 09:53:48 jmmv Exp $
 #
 
 DISTNAME=		nethack_source_331_jtp_193
 PKGNAME=		falcons-eye-1.9.3
 PKGREVISION=		3
-WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=falconseye/}
 EXTRACT_SUFX=		.zip
@@ -17,6 +16,7 @@ EXTRACT_CMD=		unzip -aq ${DOWNLOADED_DISTFILE}
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./sys/unix/setup.sh
 
+WRKSRC=			${WRKDIR}
 USE_BUILDLINK2=		yes
 USE_X11=		yes
 

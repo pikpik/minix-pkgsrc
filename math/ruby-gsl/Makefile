@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:48:07 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/15 00:18:31 dmcmahill Exp $
 
 DISTNAME=	ruby-gsl-0.1.9
-WRKSRC=		${WRKDIR}/${DISTNAME}/ext
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ruby-gsl/}
 
@@ -10,6 +9,7 @@ HOMEPAGE=	http://ruby-gsl.sourceforge.net/
 COMMENT=	Wrapper of the GNU Scientific Library (GSL) for Ruby
 
 DIST_SUBDIR=		ruby
+WRKSRC=			${WRKDIR}/${DISTNAME}/ext
 USE_RUBY_EXTCONF=	yes
 USE_BUILDLINK2=		yes
 INSTALL_TARGET=		site-install

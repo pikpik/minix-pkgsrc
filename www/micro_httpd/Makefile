@@ -1,8 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/09 09:44:55 jmmv Exp $
 
 DISTNAME=	micro_httpd_14dec2001
 PKGNAME=	micro_httpd-20011214
-WRKSRC=		${WRKDIR}/micro_httpd
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/micro_httpd/
 
@@ -12,6 +11,7 @@ COMMENT=	Really small HTTP server than runs from inetd(8)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+WRKSRC=			${WRKDIR}/micro_httpd
 USE_BUILDLINK3=		yes
 NO_CONFIGURE=		yes
 

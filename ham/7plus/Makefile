@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:43:24 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:52:07 martti Exp $
 #
 
 DISTNAME=	7pl225sr
 PKGNAME=	7plus-225
-WRKSRC=		${WRKDIR}/7plsrc.225
 CATEGORIES=	ham
 MASTER_SITES=	http://home.t-online.de/home/dg1bbq/
 DISTFILES=	7pl225sr.tgz \
@@ -15,6 +14,7 @@ COMMENT=	Uuencode-like file coder for AMPR BBS S&F of binary files
 
 LICENSE=        no-commercial-use
 
+WRKSRC=		${WRKDIR}/7plsrc.225
 MAKEFILE=	netbsd.mak
 USE_GMAKE=	yes
 

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:41:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:44:06 grant Exp $
 
 DISTNAME=		cint5.14
 PKGNAME=		cint-5.14.40
-WRKSRC=			${WRKDIR}
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 
@@ -12,6 +11,7 @@ COMMENT=		C/C++ interpreter
 
 #same distribution file name for minor versions
 DIST_SUBDIR=		${PKGNAME}
+WRKSRC=			${WRKDIR}
 
 do-build:
 	@cd ${WRKDIR};						\

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/03/29 12:41:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:45:53 grant Exp $
 #
 
 DISTNAME=	drac
 PKGNAME=	drac-1.12
-WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cc.umanitoba.ca/src/
 EXTRACT_SUFX=   .tar.Z
@@ -12,6 +11,7 @@ MAINTAINER=	groo@NetBSD.org
 HOMEPAGE=	http://mail.cc.umanitoba.ca/drac/
 COMMENT=	Dynamic Relay Authorization Control
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 USE_BUILDLINK2=	YES
 

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2002/11/11 00:54:28 seb Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/29 12:40:11 jmmv Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
 PKGREVISION=		1
-WRKSRC=			${WRKDIR}/hbench-OS
 CATEGORIES=		benchmarks
 MASTER_SITES=		ftp://ftp.eecs.harvard.edu/pub/hbench-OS/
 
@@ -13,6 +12,7 @@ COMMENT=		Suite of portable benchmarks to measure the OS and the hardware
 
 DEPENDS+=		gnuplot>=3.7:../../graphics/gnuplot
 
+WRKSRC=			${WRKDIR}/hbench-OS
 USE_BUILDLINK2=		YES
 OSVERSION_SPECIFIC=	YES
 ALL_TARGET=		build

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2003/03/29 12:41:55 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2003/08/11 10:39:39 markd Exp $
 #
 
 # A default so lintpkgsrc is happy, overridden below
 DISTNAME=       citrix
 PKGNAME=	citrix_ica-7.00
-WRKSRC=         ${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	http://download2.citrix.com/files/en/products/client/ica/current/
 
@@ -50,6 +49,7 @@ PLIST_SRC=	${PKGDIR}/PLIST.pre \
 		${PKGDIR}/PLIST.${MACHINE_ARCH} \
 		${PKGDIR}/PLIST.post
 
+WRKSRC=         ${WRKDIR}
 DIST_SUBDIR=    ${PKGNAME}
 
 CDIR=           ${PREFIX}/lib/ICAClient

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 21:29:04 grant Exp $
+# $NetBSD: Makefile,v 1.18 2003/08/01 14:22:18 drochner Exp $
 
 DISTNAME=		sqlite-2.8.5
-WRKSRC=			${WRKDIR}/sqlite-build
 CATEGORIES=		databases
 MASTER_SITES=		http://www.hwaci.com/sw/sqlite/ \
 			http://www.sqlite.org/
@@ -10,6 +9,7 @@ MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://www.hwaci.com/sw/sqlite/
 COMMENT=		SQL Database Engine In A C Library
 
+WRKSRC=			${WRKDIR}/sqlite-build
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
 USE_GMAKE=		YES

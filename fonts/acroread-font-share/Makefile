@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:54 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:36:43 grant Exp $
 #
 
 DISTNAME=	font-share
-WRKSRC=		${WRKDIR}/KORKIT
 CATEGORIES=	fonts
 DISTFILES=	korfont${EXTRACT_SUFX}
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (common base)
 
+WRKSRC=		${WRKDIR}/KORKIT
 TAR_FILE=	${WRKSRC}/LANGCOM.TAR
 
 PLIST_SUBST+=	MKDIR="${MKDIR}" CHOWN="${CHOWN}" CHMOD="${CHMOD}" \

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/08/01 03:01:05 jmc Exp $
+# $NetBSD: Makefile,v 1.13 2003/11/12 03:39:40 jschauma Exp $
 
 DISTNAME=	imap-utils
 PKGNAME=	imap-uw-utils-20020102
 PKGREVISION=	2
-WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
 EXTRACT_SUFX=	.tar.Z
@@ -12,6 +11,7 @@ MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.washington.edu/imap/
 COMMENT=	UW IMAP mailbox utilities
 
+WRKSRC=			${WRKDIR}
 DIST_SUBDIR=		${PKGNAME_NOREV}
 USE_BUILDLINK2=		# defined
 

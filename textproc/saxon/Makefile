@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/04/10 01:28:26 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 22:54:51 grant Exp $
 #
 
 DISTNAME=	saxon
 PKGNAME=	saxon-6.0.2
-WRKSRC=		${WRKDIR}
 CATEGORIES=	textproc www
 MASTER_SITES=	${HOMEPAGE}saxon6.0.2/
 EXTRACT_SUFX=	.zip
@@ -12,6 +11,7 @@ MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://users.iclway.co.uk/mhkay/saxon/
 COMMENT=	Michael H. Kay's Java XSLT processor
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME}
 USE_JAVA=	run
 USE_BUILDLINK2=

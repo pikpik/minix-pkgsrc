@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:03 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/25 18:29:22 jmmv Exp $
 #
 
 DISTNAME=	linunace22
 PKGNAME=	unace22-2.20
-WRKSRC=		${WRKDIR}
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.servidas.net/winace/ \
 		http://www.maxeline.com/winace/ \
@@ -17,6 +16,8 @@ HOMEPAGE=	http://www.winace.com/
 COMMENT=	Extract, list and test files in ACE archives (2.2 linux binary)
 
 ONLY_FOR_PLATFORM= NetBSD-1.5Z[A-Z]-i386 NetBSD-1.[6-9]*-i386 Linux-*-i[3-6]86
+
+WRKSRC=		${WRKDIR}
 
 .include "../../mk/bsd.prefs.mk"
 

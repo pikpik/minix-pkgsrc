@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:37:08 grant Exp $
 
 DISTNAME=		elisau10
 PKGNAME=		ja-elisau-1.0
-WRKSRC=			${WRKDIR}
 CATEGORIES=		fonts x11 japanese
 MASTER_SITES=		http://www.wheel.gr.jp/~dai/software/ \
 			ftp://ftp.jp.NetBSD.org/pub/NetBSD-jp/tut-jp/fonts/
@@ -18,6 +17,7 @@ SITES_elisau10${EXTRACT_SUFX}=	\
 			http://hp.vector.co.jp/authors/VA004814/freesoft/
 SITES_clR5x8.bdf=	ftp://ftp.jp.NetBSD.org/pub/NetBSD-jp/tut-jp/fonts/
 
+WRKSRC=			${WRKDIR}
 USE_X11BASE=		YES
 DOCDIR=			${PREFIX}/share/doc/elisau
 FONTDIR=		${X11PREFIX}/lib/X11/fonts/local

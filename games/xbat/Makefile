@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:39:28 grant Exp $
 # FreeBSD Id: ports/games/xbat/Makefile,v 1.5 1999/08/25 06:04:41 obrien Exp
 
 DISTNAME=	xev111
 PKGNAME=	xbat-1.11
-WRKSRC=		${WRKDIR}/Xev111
 CATEGORIES=	games
 MASTER_SITES=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/Xbat/
 
@@ -17,6 +16,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
+WRKSRC=		${WRKDIR}/Xev111
 USE_IMAKE=	yes
 ALL_TARGET=	xbat
 

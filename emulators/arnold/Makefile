@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/24 10:53:27 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2003/11/22 23:55:15 jlam Exp $
 #
 
 DISTNAME=		arnsrc27012002
 PKGNAME=		arnold-20020127
-WRKSRC=			${WRKDIR}/arnold/src
 CATEGORIES=		emulators
 MASTER_SITES=		http://arnold.emuunlim.com/download/
 EXTRACT_SUFX=		.zip
@@ -15,6 +14,7 @@ COMMENT=		Amstrad CPC, Amstrad CPC+ and KC Compact emulator
 # we want case sensitive file names.
 EXTRACT_CMD_OPTS.zip=	-aqo
 
+WRKSRC=			${WRKDIR}/arnold/src
 USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 ALL_TARGET=		arnold

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2003/07/17 22:55:42 grant Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/22 04:14:24 martti Exp $
 #
 
 DISTNAME=	${PLUGGER}-linux-x86-glibc
 PKGNAME=	moz-bin-${PLUGGER}
-WRKSRC=		${WRKDIR}/${PLUGGER}
 CATEGORIES=	www
 MASTER_SITES=	http://fredrik.hubbe.net/plugger/
 
@@ -15,6 +14,7 @@ DEPENDS+=	mozilla-bin-[0-9]*:../../www/mozilla-bin
 
 CONFLICTS+=	moz-linux-plugger-[0-9]*
 
+WRKSRC=		${WRKDIR}/${PLUGGER}
 USE_BUILDLINK2=	YES
 NO_CONFIGURE=	YES
 NO_BUILD=	YES

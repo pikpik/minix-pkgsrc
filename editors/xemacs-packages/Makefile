@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2003/07/17 21:35:14 grant Exp $
+# $NetBSD: Makefile,v 1.40 2003/12/22 08:14:26 uebayasi Exp $
 
 DISTNAME=	xemacs-packages
 PKGNAME=	xemacs-packages-1.13
-WRKSRC=		${WRKDIR}
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS:=packages/}
 DISTFILES=	\
@@ -132,6 +131,7 @@ COMMENT=	Common elisp packages for xemacs 21
 
 DEPENDS+=	xemacs>=21.1.14:../../editors/xemacs
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGBASE}
 EXTRACT_ONLY=	# empty
 NO_BUILD=	yes

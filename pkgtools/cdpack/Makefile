@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2003/07/21 17:14:05 martti Exp $
+# $NetBSD: Makefile,v 1.15 2003/12/30 17:27:31 cjep Exp $
 #
 
 DISTNAME=	cdpack-1.5
-WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -14,6 +13,7 @@ COMMENT=	Utility to create multi-cd binary package collections
 # for mkisofs
 DEPENDS+=	cdrecord-[0-9]*:../../sysutils/cdrecord
 
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    yes
 NO_CONFIGURE=   yes
 

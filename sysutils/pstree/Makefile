@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.13 2003/06/02 01:16:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 22:53:45 grant Exp $
 #
 
 DISTNAME=	pstree-2.19
-WRKSRC=		${WRKDIR}
 CATEGORIES=	sysutils
 # PKGREVISION=	1
 MASTER_SITES=	http://fresh.t-systems-sfr.com/unix/src/misc/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Display processes in a tree
+
+WRKSRC=		${WRKDIR}
 
 do-build:
 		cd ${WRKSRC}; ${CC} ${CFLAGS} -o pstree pstree.c

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/12/24 09:53:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/10 19:16:28 kristerw Exp $
 #
 
 DISTNAME=	renderPM-0-9
@@ -11,8 +11,8 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.reportlab.com/rl_addons.html
 COMMENT=	Pixmap rendering for reportlab
 
-WRKSRC=	${WRKDIR}
-PYBINMODULE= yes
+WRKSRC=		${WRKDIR}
+PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 USE_BUILDLINK2=	yes
 

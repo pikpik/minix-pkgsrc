@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2003/06/02 01:21:14 jschauma Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/17 21:27:42 grant Exp $
 #
 
 DISTNAME=       uudeview-0.5.18
 PKGNAME=        uulib-0.5.18
-WRKSRC=		${WRKDIR}/${DISTNAME}/uulib
 CATEGORIES=	converters
 MASTER_SITES=	http://www.fpx.de/fp/Software/UUDeview/download/
 
@@ -14,6 +13,7 @@ COMMENT=	Library for uu/xx/Base64/BinHex de-/encoding
 # "kdesupport-2.1b" included "uu" library.
 CONFLICTS=	kdesupport-2.1b
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/uulib
 USE_BUILDLINK2=	# defined
 GNU_CONFIGURE=	# defined
 USE_LIBTOOL=	# defined

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:33:46 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/09/02 06:13:26 taca Exp $
 #
 
 DISTNAME=	rdtool-${RUBY_RD_VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}rd-mode-${RUBY_RD_VERSION}
-WRKSRC=		${WRKDIR}/${DISTNAME}/utils
 CATEGORIES=	devel
 MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
 
@@ -21,6 +20,7 @@ EMACS=		emacs
 SITE_LISP=	share/emacs/site-lisp
 .endif
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/utils
 EXTRACT_ELEMENTS= ${DISTNAME}/utils/rd-mode.el
 DIST_SUBDIR=	ruby
 NO_CONFIGURE=	# defined

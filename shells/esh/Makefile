@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2003/08/05 11:43:17 seb Exp $
+# $NetBSD: Makefile,v 1.17 2003/08/09 11:23:00 seb Exp $
 
 DISTNAME=		esh-0.8
-WRKSRC=			${WRKDIR}/esh
 CATEGORIES=		shells
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 
@@ -10,6 +9,7 @@ COMMENT=		Unix shell with Lisp-like syntax
 
 INFO_FILES=		esh.info
 
+WRKSRC=			${WRKDIR}/esh
 USE_PKGINSTALL=		yes
 PKG_SHELL=		${PREFIX}/bin/esh
 

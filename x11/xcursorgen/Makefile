@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2003/08/01 18:13:10 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/08/15 02:02:45 jmc Exp $
 
 DISTNAME=	xcursorgen-4.3.0
-WRKSRC=		${WRKDIR}/${DISTNAME:C/-.*//}
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,6 +9,7 @@ MAINTAINER=	xsrc-manager@NetBSD.org
 HOMEPAGE=	http://www.xfree86.org/
 COMMENT=	Create an X cursor file from a collection of PNG images
 
+WRKSRC=		${WRKDIR}/${DISTNAME:C/-.*//}
 USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
 

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2003/03/29 12:42:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 22:52:24 grant Exp $
 
 DISTNAME=	cupsomatic
 PKGNAME=	${DISTNAME}-2.2
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}
 CATEGORIES=	print
 EXTRACT_SUFX=	# empty
 
@@ -25,6 +24,7 @@ COMMENT=	Foomatic CUPS printer filter
 
 CONFLICTS+=	cupsomatic-200012??
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 DEPENDS+=	cups>=1.1.14nb1:../../print/cups

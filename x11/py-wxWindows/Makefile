@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2004/01/10 14:25:42 recht Exp $
+# $NetBSD: Makefile,v 1.24 2004/01/10 20:56:32 recht Exp $
 #
 
 DISTNAME=	wxPythonSrc-2.4.2.4
 PKGNAME=	${PYPKGPREFIX}-wxWindows-2.4.2.4
 PKGREVISION=	3
-WRKSRC=		${WRKDIR}/wxPythonSrc-2.4.2.4/wxPython
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wxpython/}
 
@@ -12,6 +11,7 @@ MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://wxpython.org/
 COMMENT=	wxPython: Python bindings for wxWindows
 
+WRKSRC=		${WRKDIR}/wxPythonSrc-2.4.2.4/wxPython
 USE_BUILDLINK2=	yes
 USE_GMAKE=	yes
 

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2003/07/28 15:20:37 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/04 19:13:58 cjep Exp $
 #
 
 DISTNAME=	overnet0.51.2
 PKGNAME=	overnet-0.51.2
-WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	http://download.overnet.com/
 
@@ -11,6 +10,7 @@ MAINTAINER=	grant@NetBSD.org
 HOMEPAGE=	http://www.overnet.com/
 COMMENT=	Peer-to-peer file sharing client (binary pkg)
 
+WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined
 

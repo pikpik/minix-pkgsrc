@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 22:56:05 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/10/28 12:33:48 cube Exp $
 #
 
 DISTNAME=	tidy_src_031002
 PKGNAME=	tidy-20031002
-WRKSRC=		${WRKDIR}/tidy
 CATEGORIES=	www
 MASTER_SITES=	http://tidy.sourceforge.net/src/ \
 		http://tidy.sourceforge.net/docs/ \
@@ -15,6 +14,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://tidy.sourceforge.net/
 COMMENT=	Fixes and tidies up HTML files
 
+WRKSRC=		${WRKDIR}/tidy
 USE_BUILDLINK2=	yes
 NO_CONFIGURE=	yes
 USE_GMAKE=	yes

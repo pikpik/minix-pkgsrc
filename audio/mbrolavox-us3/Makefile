@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2001/07/18 15:19:48 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/04/10 01:28:12 grant Exp $
 
 DISTNAME=	us3-990208
 PKGNAME=	mbrolavox-${DISTNAME}
-WRKSRC=		${WRKDIR}
 CATEGORIES=	audio
 MASTER_SITES=	ftp://tcts.fpms.ac.be/pub/mbrola/VOICES/us3/ \
 		http://www.festvox.org/mbrola/dba/us3/
@@ -16,6 +15,7 @@ DEPENDS+=	mbrola-301h:../mbrola
 
 LICENSE=	no-commercial-use
 
+WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
 
 MHOME=		${PREFIX}/share/mbrola/voices

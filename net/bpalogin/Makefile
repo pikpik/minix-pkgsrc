@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:18:02 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:01 grant Exp $
 #
 
 DISTNAME=	bpalogin-2.0.1-src
 PKGNAME=	${DISTNAME:S/-src//}
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bpalogin/}
 
@@ -12,6 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://bpalogin.sourceforge.net/
 COMMENT=	BigPond Advance login client
 
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 ALL_TARGET=	bpalogin
 
 USE_PKGINSTALL=	yes

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2003/07/17 22:52:49 grant Exp $
+# $NetBSD: Makefile,v 1.4 2003/09/21 08:53:35 jmc Exp $
 #
 
 DISTNAME=	AiSSLtelnet-0.15
 PKGREVISION=	1
-WRKSRC=         ${WRKDIR}/AiSSLtelnet
 CATEGORIES=	security
 MASTER_SITES=	http://mars.elcom.nitech.ac.jp/security/
 
@@ -16,6 +15,8 @@ GNU_CONFIGURE=	YES
 RESTRICTED=             "Source code redistribution is not permitted.consult okuno@mars.elcom.nitech.ac.jp."
 NO_SRC_ON_FTP=          ${RESTRICTED}
 NO_SRC_ON_CDROM=        ${RESTRICTED}
+
+WRKSRC=         ${WRKDIR}/AiSSLtelnet
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/AiSSLtelnet

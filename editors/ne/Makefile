@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 1999/11/22 13:34:51 agc Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/16 14:40:51 wiz Exp $
 
 DISTNAME=	ne
 PKGNAME=	ne-1.26
-WRKSRC=		${WRKDIR}/src
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cus.cam.ac.uk/pub/software/programs/NE/
 DISTFILES=	ne.tar.gz ne.manpage.1 NE.spec.ascii NE.changes.spec
@@ -11,6 +10,7 @@ MAINTAINER=	bjh@mail.dotcom.fr
 COMMENT=	Re-write of Phoenix E.  A sensible light-weight editor
 
 DIST_SUBDIR=	${PKGNAME}
+WRKSRC=		${WRKDIR}/src
 
 EXTRACT_ONLY=	ne.tar.gz
 

@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 22:51:22 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/09/18 18:34:28 jmmv Exp $
 #
 
 DISTNAME=	mldonkey-${VER}.sources
 VER=		2.5-3
 PKGNAME=	mldonkey-${VER:S/-/./}
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/mldonkey-${VER}
 CATEGORIES=	net
 MASTER_SITES=	http://savannah.nongnu.org/download/mldonkey/release-${VER}/official/
 
@@ -13,6 +12,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/mldonkey/
 COMMENT=	Free peer-to-peer client with eDonkey support and more
 
+WRKSRC=			${WRKDIR}/mldonkey-${VER}
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes

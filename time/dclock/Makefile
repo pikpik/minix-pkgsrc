@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:16:22 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:54:59 grant Exp $
 #
 
 DISTNAME=	dclock
 PKGNAME=	dclock-4
-WRKSRC=		${WRKDIR}
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:S/contrib/R5contrib/}
 EXTRACT_SUFX=	.shar.Z
@@ -13,6 +12,7 @@ COMMENT=	Digital clock for X
 
 CONFLICTS+=	ivtools-*
 
+WRKSRC=		${WRKDIR}
 USE_X11BASE=	yes
 
 MAKE_ENV+=	CC="${CC}"

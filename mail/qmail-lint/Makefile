@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:46:56 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:56:54 martti Exp $
 #
 
 DISTNAME=	qmail-lint-0.55
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	http://qmail.obeer.com/
 EXTRACT_SUFX=	#
@@ -14,6 +13,7 @@ COMMENT=	Examine the qmail configuration to see if any common errors exist
 
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
+WRKSRC=		${WRKDIR}
 USE_PERL5=	yes
 REPLACE_PERL=	${DISTNAME}
 NO_BUILD=	yes

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/06/05 17:20:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:38:22 grant Exp $
 #
 
 DISTNAME=	fortunes-de_0.6.orig
 PKGNAME=	fortunes-de-0.6
-WRKSRC=		${WRKDIR}/fortunes-de-0.6
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/f/fortunes-de/}
 
@@ -13,6 +12,8 @@ COMMENT=	German data files for fortune
 
 BUILD_DEPENDS+=	fortune-strfile-*:../../games/fortune-strfile
 STRFILE=	${LOCALBASE}/bin/strfile
+
+WRKSRC=		${WRKDIR}/fortunes-de-0.6
 
 do-build:
 	${FIND} ${WRKSRC}/data -type f -exec ${STRFILE} {} \;

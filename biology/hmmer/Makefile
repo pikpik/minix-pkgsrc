@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/26 03:52:47 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2003/09/26 05:21:04 wiz Exp $
 #
 
 DISTNAME=		hmmer-2.3.1
-WRKSRC=			${WRKDIR}/hmmer-2.3.1
 CATEGORIES=		biology
 MASTER_SITES=		ftp://ftp.genetics.wustl.edu/pub/eddy/hmmer/2.3.1/
 
@@ -10,6 +9,7 @@ MAINTAINER=		hdp@cs.nmsu.edu
 HOMEPAGE=		http://hmmer.wustl.edu/
 COMMENT=		Implementation of profile HMM software for protein sequence analysis
 
+WRKSRC=			${WRKDIR}/hmmer-2.3.1
 USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 

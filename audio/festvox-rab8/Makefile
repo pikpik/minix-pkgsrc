@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2001/09/27 23:17:43 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2003/04/10 01:28:10 grant Exp $
 
 DISTNAME=	festvox_rablpc8k
 PKGNAME=	festvox-rab8-1.4.0
-WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/ \
 		http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/
@@ -17,6 +16,7 @@ DEPENDS+=	festlex-oald>=1.4.0:../festlex-oald
 
 CONFLICTS=	festvox-rab16-[0-9]*
 
+WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes
 
 FHOME=		${PREFIX}/share/festival

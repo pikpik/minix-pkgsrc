@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2002/08/06 15:17:27 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/04/10 01:28:05 grant Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 
@@ -17,6 +16,7 @@ DEPENDS+=	festlex-ogi>=2.0:../festlex-ogi
 LICENSE=	no-commercial-use
 
 DIST_SUBDIR=	${PKGNAME}
+WRKSRC=		${WRKDIR}/festival
 
 NO_BUILD=	yes
 

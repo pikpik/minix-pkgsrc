@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:36:24 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/10/05 07:12:21 jdolecek Exp $
 
 DISTNAME=	VMware-workstation-3.2.1-2242
 PKGNAME=	vmware-3.2.1pl1
-WRKSRC=		${WRKDIR}/vmware-distrib
 CATEGORIES=	emulators
 MASTER_SITES=	http://download3.vmware.com/software/wkst/ \
 		http://vmware-svca.www.conxion.com/software/ \
@@ -21,6 +20,7 @@ DEPENDS+=	suse_vmware>=6.4nb1:../../emulators/${SUSE_DIR_PREFIX}_vmware
 
 LICENSE=	vmware-license
 
+WRKSRC=		${WRKDIR}/vmware-distrib
 CHECK_SHLIBS=	NO
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386

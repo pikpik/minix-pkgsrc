@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:18:15 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:49:03 grant Exp $
 #
 
 DISTNAME=	gnome2-dirs-${GNOME_DIRS_VERSION}
-WRKSRC=		${WRKDIR}
 CATEGORIES=	misc gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -16,6 +15,7 @@ NO_CHECKSUM=	# defined
 NO_CONFIGURE=	# defined
 NO_EXTRACT=	# defined
 
+WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	YES
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2003/09/28 09:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2004/01/16 00:59:18 kristerw Exp $
 
 DISTNAME=		nhc98src-1.16
 PKGNAME=		nhc98-1.16
 PKGREVISION=		2
-WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.york.ac.uk/pub/haskell/nhc98/
 
@@ -14,6 +13,7 @@ COMMENT=		Portable Haskell 98 compiler
 # Not yet ported to 64-bit machines
 NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64
 
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_BUILDLINK2=		YES
 BUILDLINK_SETENV.CC=	CC=gcc
 

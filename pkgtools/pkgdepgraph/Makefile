@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2003/04/30 03:39:17 atatat Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:52:17 grant Exp $
 #
 
 DISTNAME=	pkgdepgraph-2.5
-WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -14,6 +13,7 @@ COMMENT=	Visual representation of installed NetBSD packages
 # removed so that pkgdepgraph can be used on "client" machines -- @@@
 # DEPENDS+=	graphviz-[0-9]*:../../graphics/graphviz
 
+WRKSRC=		${WRKDIR}
 USE_PERL5=	YES
 
 EXTRACT_ONLY=	# empty

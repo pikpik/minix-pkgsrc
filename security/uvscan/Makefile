@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2003/08/30 22:51:37 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2003/11/14 08:51:40 wiz Exp $
 
 DISTNAME=		vlnx424e
 PKGNAME=		uvscan-4.24.0
-WRKSRC=			${WRKDIR}
 CATEGORIES=		security
 MASTER_SITES=		http://download.nai.com/products/evaluation/virusscan/english/cmdline/linux/version_4.24/intel/
 EXTRACT_SUFX=		.tar.Z
@@ -18,6 +17,7 @@ DEPENDS+=		suse_compat>=6.1:../../emulators/${SUSE_DIR_PREFIX}_compat
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 CHECK_SHLIBS=		NO
 
+WRKSRC=			${WRKDIR}
 LICENSE=		shareware
 RESTRICTED=		"restrictive 30 day evaluation license"
 NO_BIN_ON_FTP=		${RESTRICTED}

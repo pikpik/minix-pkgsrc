@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2003/11/18 14:03:14 xtraeme Exp $
 #
 
 DISTNAME=	john-1.6
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PKGREVISION=	1
 CATEGORIES=	security textproc
 MASTER_SITES=	http://www.openwall.com/john/
@@ -11,6 +10,7 @@ MAINTAINER=	DawS@irc.pl
 HOMEPAGE=	http://www.openwall.com/john/
 COMMENT=	Unix Password Cracker
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 ALL_TARGET=	generic
 
 do-install:

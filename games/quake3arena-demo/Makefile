@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2003/10/12 07:11:49 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/04 18:53:54 xtraeme Exp $
 
 DISTNAME=	linuxq3ademo-1_11-6_x86_gz
 PKGREVISION=	1
 PKGNAME=	quake3arena-demo-1.11.6
-WRKSRC=		${WRKDIR}
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/quake3/linux/ \
 		ftp://mirrors.xmission.com/idsoftware/quake3/linux/
@@ -35,6 +34,7 @@ ONLY_FOR_PLATFORM=*-*-i386
 DISTBINNAME=	q3demo
 BINNAME=	quake3arena-demo
 
+WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	lokigames
 LIBDIR=		${PREFIX}/lib/lokigames/${BINNAME}
 SHAREDIR=	${PREFIX}/share/doc/lokigames

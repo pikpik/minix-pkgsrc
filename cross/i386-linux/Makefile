@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2003/06/02 01:21:12 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 21:27:53 grant Exp $
 #
 
-WRKSRC=			${WRKDIR}
 DISTVERSION=		2.0.7.1
 DISTFILES=		${LINUXDEVEL_FILES}
 EXTRACT_ONLY=		# none of the RPM files
@@ -14,6 +13,7 @@ BUILD_DEPENDS+=		rpm-[0-9]*:../../misc/rpm
 
 CHECK_SHLIBS=		no
 
+WRKSRC=			${WRKDIR}
 USE_CROSS_BINUTILS=	yes
 BINUTILS_GNUTARGET=	elf32-i386
 BINUTILS_LDEMULATION=	elf_i386

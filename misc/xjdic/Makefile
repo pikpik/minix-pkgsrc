@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/11/29 04:15:43 kristerw Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/02 03:17:53 wiz Exp $
 #
 
 DISTNAME=	xjdic24
 PKGNAME=	xjdic-2.4
-WRKSRC=		${WRKDIR}
 CATEGORIES=	japanese misc
 MASTER_SITES=	ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
 		http://japanology.arts.kuleuven.ac.be/mirrors/monash/ \
@@ -22,6 +21,7 @@ COMMENT=	Japanese dictionary
 DEPENDS+=	edict-[0-9]*:../../misc/edict
 DEPENDS+=	kanjidic-[0-9]*:../../misc/kanjidic
 
+WRKSRC=		${WRKDIR}
 MESSAGE_SUBST+=	PREFIX=${PREFIX}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 

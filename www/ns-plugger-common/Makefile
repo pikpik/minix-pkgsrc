@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 22:55:44 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/22 04:14:25 martti Exp $
 
 DISTNAME=		plugger-4.0-linux-x86-glibc
 PKGNAME=		ns-${PLUGGERNAME}-${BINNAME}-${PLUGGERVERS}
-WRKSRC=			${WRKDIR}/${PLUGGERFULL}
 CATEGORIES=		www
 MASTER_SITES=		http://fredrik.hubbe.net/plugger/
 
@@ -24,6 +23,7 @@ CONFLICTS+=		plugger-[0-9]*	# obsolete all-in-one plugger package
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
+WRKSRC=			${WRKDIR}/${PLUGGERFULL}
 NO_CONFIGURE=		YES
 NO_BUILD=		YES
 

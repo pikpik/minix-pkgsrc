@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:47 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/22 13:32:22 wiz Exp $
 #
 
 DISTNAME=		xfinans-5.9
-WRKSRC=			${WRKDIR}/Xfinans/Src
 CATEGORIES=		finance x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/financial/accounting/}
 
@@ -12,6 +11,7 @@ COMMENT=		Xfinans is a useful financial tracking, and account balancing tool
 
 DEPENDS=		gnuplot>=3.7:../../graphics/gnuplot
 
+WRKSRC=			${WRKDIR}/Xfinans/Src
 USE_IMAKE=		yes
 
 post-patch:

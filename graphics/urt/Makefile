@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2003/07/17 21:42:57 grant Exp $
+# $NetBSD: Makefile,v 1.30 2004/01/03 18:49:44 reed Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
 PKGREVISION=	3
-WRKSRC=		${WRKDIR}
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/dept/OLD/pub/
 DISTFILES=	urt-3.1b.tar.Z urt-doc.tar urt-img.tar
@@ -17,6 +16,7 @@ COMMENT=	Toolkit and library for raster image processing
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
+WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	yes
 USE_LIBTOOL=	yes
 USE_X11=	yes

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:38:19 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:49:44 martti Exp $
 
 DISTNAME=		small
 PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}-20000511
-WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/common/${DISTNAME}/
 EXTRACT_SUFX=		.zip
@@ -14,6 +13,7 @@ DEPENDS+=		exchess-[0-9]*:../../games/exchess
 
 CONFLICTS=		${CHESS_ENGINE}-book-[0-9]*
 
+WRKSRC=			${WRKDIR}
 CHESS_ENGINE=		exchess
 DIST_SUBDIR=		chessbooks
 NO_CONFIGURE=		# defined

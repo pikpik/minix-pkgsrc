@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:51:19 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:10:46 martti Exp $
 
 DISTNAME=	lambdamoo-doc-1.8.0p6
-WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.lambda.moo.mud.org/pub/MOO/ \
 		ftp://ftp.kanga.nu/pub/mirrors/ftp.lambda.moo.mud.org/pub/MOO/
@@ -13,6 +12,8 @@ HOMEPAGE=	http://www.ccs.neu.edu/home/eostrom/muds/lambdamoo.html
 COMMENT=	Documentation for lambdamoo
 
 EXTRACT_CMD=	:
+
+WRKSRC=		${WRKDIR}
 
 post-extract:
 	${CP} ${DISTDIR}/ProgrammersManual.texinfo ${WRKSRC}

@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:11 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/02 09:29:51 frueauf Exp $
 #
 
 DISTNAME=	nessus-core-${VERS}
-WRKSRC=		${WRKDIR}/nessus-core
 .include 	"../nessus/Makefile.common"
 
 COMMENT=	Core module of the Nessus Network Security Scanner
 
+WRKSRC=		${WRKDIR}/nessus-core
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 USE_X11=	yes

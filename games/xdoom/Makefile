@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2002/08/19 15:00:48 mycroft Exp $
+# $NetBSD: Makefile,v 1.19 2002/08/19 15:02:50 mycroft Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
 PKGREVISION=	2
-WRKSRC=		${WRKDIR}
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/source/
 MASTER_SITES+=	ftp://ftp.idsoftware.com/idstuff/doom/
@@ -17,6 +16,7 @@ BUILD_DEPENDS=	unzip-[0-9]*:../../archivers/unzip
 
 LICENSE=	shareware
 
+WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	doomsrc.zip
 EXTRACT_CMD=	unzip -qo ${DISTDIR}/${EXTRACT_ONLY}
 USE_X11BASE=	yes

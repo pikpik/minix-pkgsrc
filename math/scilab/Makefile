@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.43 2003/09/17 19:40:48 grant Exp $
+# $NetBSD: Makefile,v 1.44 2003/12/19 04:37:23 dmcmahill Exp $
 #
 
 DISTNAME=	${SCIBASE}.src
 PKGNAME=	${SCIBASE}
 PKGREVISION=	3
-WRKSRC=		${WRKDIR}/${SCIBASE}
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/Meta2/Scilab/distributions/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}  scicos.tar.gz scicos_blocks.tar.gz
@@ -15,6 +14,7 @@ COMMENT=	High-level scientific math programming environment with graphics
 
 DIST_SUBDIR=	${SCIBASE}
 SCIBASE=	scilab-2.7
+WRKSRC=		${WRKDIR}/${SCIBASE}
 
 SITES_scicos.tar.gz=		ftp://ftp.inria.fr/INRIA/Projects/Meta2/Scilab/misc/
 SITES_scicos_blocks.tar.gz=	ftp://ftp.inria.fr/INRIA/Projects/Meta2/Scilab/misc/

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:34 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/12 10:35:57 cjep Exp $
 
 DISTNAME=	gkrellmms-0.5.6
 PKGNAME=	gkrellm-xmms-0.5.6
 PKGREVISION=	3
-WRKSRC=		${WRKDIR}/gkrellmms
 CATEGORIES=	audio
 MASTER_SITES=	http://gkrellm.luon.net/files/
 
@@ -11,6 +10,7 @@ MAINTAINER=	damon@NetBSD.org
 HOMEPAGE=	http://gkrellm.luon.net/gkrellmms.phtml
 COMMENT=	gkrellm xmms plugin
 
+WRKSRC=		${WRKDIR}/gkrellmms
 USE_BUILDLINK2=	YES
 
 pre-install:

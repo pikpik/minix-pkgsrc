@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/03/29 12:41:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:39:03 grant Exp $
 
 DISTNAME=		um5.5.2
 PKGNAME=		moria-5.5.2
-WRKSRC=			${WRKDIR}/umoria
 CATEGORIES=		games
 # The "offical" master site has lost the pub/Games directory.
 #MASTER_SITES=		ftp://ftp.cis.ksu.edu/pub/Games/Moria/source/
@@ -12,6 +11,8 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		simonb@NetBSD.org
 HOMEPAGE=		http://www-math.bgsu.edu/~grabine/moria.html
 COMMENT=		Rogue-like game with a different sense of scale than Rogue
+
+WRKSRC=			${WRKDIR}/umoria
 
 do-configure:
 	@${RM} -f ${WRKSRC}/*.[ch] ${WRKSRC}/Makefile

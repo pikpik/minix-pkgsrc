@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2003/08/08 18:18:05 jmc Exp $
+# $NetBSD: Makefile,v 1.1 2003/09/27 14:13:08 grant Exp $
 
 DISTNAME=		MozillaFirebird-bin-java-1.0
-WRKSRC=			${WRKDIR}
 CATEGORIES=		www lang
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -14,6 +13,7 @@ DEPENDS+=		MozillaFirebird-bin>=0.6.1:../../www/MozillaFirebird-bin
 
 ONLY_FOR_PLATFORM=	NetBSD-1.[6-9]*-i386
 
+WRKSRC=			${WRKDIR}
 NO_CHECKSUM=		YES
 NO_BUILDLINK=		YES
 NO_EXTRACT=		YES

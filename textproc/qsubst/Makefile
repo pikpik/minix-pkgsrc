@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:54:47 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:27:50 martti Exp $
 #
 
 DISTNAME=	qsubst-20010422
-WRKSRC=		${WRKDIR}/qsubst
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Query-replace strings in files
+
+WRKSRC=		${WRKDIR}/qsubst
 
 .include "../../mk/bsd.pkg.mk"

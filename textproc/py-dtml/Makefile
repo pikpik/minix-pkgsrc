@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/04/16 16:29:24 jmc Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:54:45 grant Exp $
 #
 
 DISTNAME=	Zope-2.2.2-src
 PKGNAME=	py-dtml-2.2.2
-WRKSRC=		${WRKDIR}/${DISTNAME}/lib/python/DocumentTemplate
 CATEGORIES=	textproc
 MASTER_SITES=   http://www.zope.org/Products/Zope/2.2.2/
 EXTRACT_SUFX=	.tgz
@@ -14,6 +13,7 @@ COMMENT=	DTML and StructuredText from Zope, also independently useful
 
 DEPENDS+=	py-extclass>=2.2.2:../../lang/py-extclass
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/lib/python/DocumentTemplate
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 EXTRACT_ELEMENTS=	${DISTNAME}/lib/python/DocumentTemplate \
 			${DISTNAME}/lib/python/StructuredText \

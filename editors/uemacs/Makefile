@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:35:03 grant Exp $
 # FreeBSD: ports/editors/uemacs/Makefile,v 1.14 1999/10/07 06:49:01 tg Exp
 
 DISTNAME=	ue400dev
 PKGNAME=	uemacs-4.0
-WRKSRC=		${WRKDIR}
 CATEGORIES=	editors
 MASTER_SITES=	ftp://aquest.com/pub/uemacs400/disk2/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	tron@NetBSD.org
 COMMENT=	"emacs" key sequences compatible full screen editor
+
+WRKSRC=		${WRKDIR}
 
 post-extract:
 	${CP} -r ${WRKSRC}/freebsd ${WRKSRC}/netbsd

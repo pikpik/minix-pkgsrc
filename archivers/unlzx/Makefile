@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 01:21:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:21:43 grant Exp $
 
 DISTNAME=	unlzx.c
 PKGNAME=	unlzx-1.1
-WRKSRC=		${WRKDIR}
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://de.aminet.net/pub/aminet/misc/unix/ \
 		ftp://us.aminet.net/pub/aminet/misc/unix/
@@ -11,6 +10,7 @@ EXTRACT_SUFX=	.gz
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Extracts .lzx archives from Amiga systems
 
+WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	# defined
 
 do-build:

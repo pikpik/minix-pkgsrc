@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.9 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.10 2003/12/24 09:53:48 jmmv Exp $
 #
 
 DISTNAME=		portlib-1.01
 PKGNAME=		libportlib-1.01
-WRKSRC=			${WRKDIR}/portlib-1.01
 CATEGORIES=		devel
 MASTER_SITES=		http://www.snake.net/software/portlib/
 
 MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Portable file locking and directory reading
+
+WRKSRC=			${WRKDIR}/portlib-1.01
 
 post-patch:
 	${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.bak

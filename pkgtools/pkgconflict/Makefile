@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/03/29 12:42:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:17 grant Exp $
 #
 
 DISTNAME=	pkgconflict-0.3nb1
-WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -12,6 +11,7 @@ COMMENT=	Scripts to find conflicting packages in pkgsrc
 
 DEPENDS+=	postgresql>=7.0:../../databases/postgresql
 
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 

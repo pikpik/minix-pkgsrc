@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2003/12/18 19:09:31 sketch Exp $
+# $NetBSD: Makefile,v 1.38 2003/12/30 16:58:14 cjep Exp $
 
 DISTNAME=	nas-1.6.src
 PKGNAME=	${DISTNAME:S/.src//}
 PKGREVISION=	3
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	audio
 MASTER_SITES=	http://radscan.com/nas/ \
 		ftp://ftp.uni-duisburg.de/Sound/NAS/ \
@@ -14,6 +13,7 @@ COMMENT=	Network Audio System
 
 DEPENDS+=	p5-perl-headers-${OS_VERSION}:../../devel/p5-perl-headers
 
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 USE_IMAKE=		yes

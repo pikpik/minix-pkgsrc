@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/21 16:43:19 martti Exp $
+# $NetBSD: Makefile,v 1.5 2003/09/25 18:49:08 wiz Exp $
 #
 
 DISTNAME=	dmake-v4.1-src-export.all-unknown-all
 PKGNAME=	dmake-4.1
 PKGREVISION=	1
-WRKSRC=		${WRKDIR}/dmake
 CATEGORIES=	devel
 MASTER_SITES=	http://dmake.wticorp.com/SourceDistribution/ \
 		ftp://plg.uwaterloo.ca/pub/dmake/
@@ -15,6 +14,7 @@ COMMENT=	Portable make supported by many platforms
 
 MAKEFILE=	makefile
 ALL_TARGET=	linux
+WRKSRC=		${WRKDIR}/dmake
 
 do-configure:
 	cd ${WRKSRC} && ${RM} unix/bsd43/dirent.h &&		\

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.43 2003/09/05 19:00:58 tron Exp $
+# $NetBSD: Makefile,v 1.44 2004/01/05 11:42:20 jlam Exp $
 
 DISTNAME=	unzip550
 PKGNAME=	unzip-5.50
 PKGREVISION=	2
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/ \
 		ftp://ftp.icce.rug.nl/infozip/src/ \
@@ -20,6 +19,7 @@ COMMENT=	List, test and extract compressed files in a ZIP archive
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"

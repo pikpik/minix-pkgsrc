@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/10/11 12:20:19 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/27 17:27:29 abs Exp $
 #
 
 DISTNAME=		tightvnc-1.2.9
-WRKSRC=			${WRKDIR}/vnc_unixsrc
 CATEGORIES=		net x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vnc-tight/}
 DISTFILES=		${DISTNAME}_unixsrc.tar.bz2
@@ -13,6 +12,7 @@ COMMENT=		Display X and Win32 desktops on remote X/Win32/Java displays
 
 CONFLICTS=		vnc-[0-9]*
 
+WRKSRC=			${WRKDIR}/vnc_unixsrc
 CRYPTO=			yes
 USE_BUILDLINK2=		yes
 USE_IMAKE=		yes
