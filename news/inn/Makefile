@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/07/16 13:41:18 tron Exp $
+# $NetBSD: Makefile,v 1.29 2001/09/27 23:18:34 jlam Exp $
 
 DISTNAME=		inn-2.3.2
 CATEGORIES=		news
@@ -70,7 +70,9 @@ post-build:
 	done
 
 pre-install:
-	${INSTALL_DATA_DIR} ${INN_DATA_DIR} ${PREFIX}/etc/nntp ${PREFIX}/inn
+	for DIR in ${INN_DATA_DIR} ${PREFIX}/etc/nntp  ${PREFIX}/inn; do
+		${INSTALL_DATA_DIR} $$DIR; \
+	done
 
 post-install:
 	${RM} -f ${PREFIX}/bin/inews
