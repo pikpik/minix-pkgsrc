@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/07/28 19:58:56 rh Exp $
+$NetBSD$
 
-MD5 (phylip.tar.Z) = d437d19d82fd84c723a73b6420aae4fc
+SHA1 (phylip.tar.Z) = 1311d966d874faea7811611fe781b477d1e5228b
+Size (phylip.tar.Z) = 932516 bytes

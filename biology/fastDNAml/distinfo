@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/07/28 20:18:55 rh Exp $
+$NetBSD$
 
-MD5 (fastDNAml_1.2.1.tar.gz) = 61bb05165810ff6813ee13624ab08511
+SHA1 (fastDNAml_1.2.1.tar.gz) = f61a11f69746ad80e2009594f229db331cfbb8d0
+Size (fastDNAml_1.2.1.tar.gz) = 63110 bytes
