@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2003/09/12 19:42:06 tron Exp $
+# $NetBSD: Makefile,v 1.44 2003/09/12 22:17:28 wiz Exp $
 
 DISTNAME=	pine4.58
 PKGNAME=	pico-4.6
@@ -32,7 +32,8 @@ MAKE_ENV+=	_STRIPFLAG_INSTALL=	# debug...
 
 do-build:
 	cd ${WRKSRC} && \
-	./build ${BUILDNAME} CC="${PKGLIBTOOL} ${BUILDLINK_CC}" \
+	${SETENV} ${MAKE_ENV} ./build ${BUILDNAME} \
+	  CC="${PKGLIBTOOL} ${BUILDLINK_CC}" \
 	  PREFIX=${PREFIX} OPTIMIZE="${CFLAGS}"
 
 do-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2003/09/04 11:09:11 martti Exp $
+# $NetBSD: Makefile,v 1.76 2003/09/12 13:53:47 tron Exp $
 
 DISTNAME=       pine4.58
 PKGNAME=        pine-4.58
@@ -56,7 +56,8 @@ do-configure:
 	@${LN} -sf ${BUILDLINK_DIR}/include/pico ${WRKSRC}/pico
 
 do-build:
-	cd ${WRKSRC} && ./build ${BUILDNAME} ${LDAPCFLAGS} ${LDAPLIBS}	\
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ./build ${BUILDNAME}	\
+		${LDAPCFLAGS} ${LDAPLIBS}				\
 		PREFIX=${PREFIX}					\
 		CC="${BUILDLINK_CC} ${CFLAGS} ${LDFLAGS}"
 
