@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2003/02/18 11:25:57 jdolecek Exp $
+# $NetBSD: Makefile,v 1.95 2003/03/16 07:57:43 martti Exp $
 
 .include "Makefile.common"
 
@@ -71,7 +71,8 @@ post-extract:
 
 post-install:
 	# Install Samba documentation.
-	${INSTALL_DATA_DIR} ${DOCDIR} ${HTMLDIR}
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA_DIR} ${HTMLDIR}
 	cd ${WRKDIR}/${DISTNAME}/docs;					\
 		${INSTALL_DATA} announce textdocs/* ${DOCDIR};		\
 		${INSTALL_DATA} Registry/*.reg ${DOCDIR};		\
