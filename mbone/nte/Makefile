@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/09/22 06:11:38 garbled Exp $
+# $NetBSD: Makefile,v 1.12 1998/11/13 01:26:58 frueauf Exp $
 #
 
 DISTNAME=	nt.1.5a23
@@ -7,14 +7,6 @@ CATEGORIES=	mbone tk80
 MASTER_SITES=	ftp://cs.ucl.ac.uk/mice/nte/
 
 MAINTAINER=	mycroft@netbsd.org
-
-.include "../../mk/bsd.prefs.mk"
-
-.ifdef WRKOBJDIR
-BUILD_ROOT=	${WRKOBJDIR}
-.else
-BUILD_ROOT=	${PKGSRCDIR}
-.endif
 
 BUILD_DEPENDS=	${BUILD_ROOT}/x11/tk80/${WRKDIR:T}/tk8.0/generic/default.h:${TK_DIR}:configure
 DEPENDS+=	tk-8.0p2:../../x11/tk80
