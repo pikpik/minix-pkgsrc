@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/02/17 18:24:44 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/18 19:59:13 martin Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
@@ -37,4 +37,5 @@ post-install:
 			${FILESDIR}/elm.mimetypes ${PREFIX}/lib; \
 	fi
 
+.include "../../devel/gettext-lib/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
