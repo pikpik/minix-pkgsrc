@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.304 2002/05/31 14:40:53 skrll Exp $
+# $NetBSD: Makefile,v 1.305 2002/06/16 21:25:11 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -203,6 +203,7 @@ SUBDIR+=	sdist
 SUBDIR+=	sendfile
 SUBDIR+=	sftp
 SUBDIR+=	sharity-light
+SUBDIR+=	sipcalc
 SUBDIR+=	sitescooper
 SUBDIR+=	smb2www
 SUBDIR+=	sniffit
