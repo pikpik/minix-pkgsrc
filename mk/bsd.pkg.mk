@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.602 2000/11/11 19:13:41 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.603 2000/11/12 02:46:53 fredb Exp $
 #
 # This file is in the public domain.
 #
@@ -2182,6 +2182,11 @@ ${DLIST}:
 
 info: uptodate-pkgtools
 	${_PKG_SILENT}${_PKG_DEBUG}${PKG_INFO} ${PKGWILDCARD}
+
+# The 'check' target can be used to check an installed package.
+
+check: uptodate-pkgtools
+	${_PKG_SILENT}${_PKG_DEBUG}${PKG_ADMIN} check ${PKGWILDCARD}
 
 # This is for the use of sites which store distfiles which others may
 # fetch - only fetch the distfile if it is allowed to be
