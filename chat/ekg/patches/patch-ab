@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.in.orig	Wed Sep 11 17:23:06 2002
++++ Makefile.in
+@@ -30,7 +30,6 @@ examples:
+ #
+ 
+ configure:	configure.in m4/* acconfig.h
+-	./autogen.sh
+ 
+ #
+ 
