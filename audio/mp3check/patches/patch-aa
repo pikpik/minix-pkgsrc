@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.orig	Thu Jul 20 22:16:21 2000
++++ Makefile	Mon Sep 11 21:24:33 2000
+@@ -3,7 +3,7 @@
+ TARGET           = mp3check
+ 
+ # CXXFLAGS         = -Wall -W -ansi -pedantic -Woverloaded-virtual
+-CXXFLAGS         = -Wall -W
++CXXFLAGS         = $(CFLAGS) -Wall -W
+ 
+ CPPFLAGS         = -DVERSION=\"$(VER)\"
+ 
