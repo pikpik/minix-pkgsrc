@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/06/01 11:23:16 rh Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/14 13:55:04 wiz Exp $
 #
 
 DISTNAME=	fidogate-4.2.9
@@ -37,6 +37,6 @@ post-install:
 		${INSTALL_DATA} run1 run2 runffx runpoll ${PREFIX}/share/fidogate/scripts/
 	cd ${WRKSRC}/sendmail/mailer && \
 		${INSTALL_DATA} ffx.m4 ftn.m4 ${PREFIX}/share/fidogate/sendmail/
-	${INSTALL_DATA} ${WRKSRC}/scripts/maintenance/rc.fidogate ${PREFIX}/etc/rc.d/fidogate.sh
+	${INSTALL_DATA} ${WRKSRC}/scripts/maintenance/rc.fidogate ${PREFIX}/etc/rc.d/fidogate
 
 .include "../../mk/bsd.pkg.mk"
