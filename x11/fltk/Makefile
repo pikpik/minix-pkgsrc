@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 1999/09/29 22:58:45 tron Exp $
+# $NetBSD: Makefile,v 1.4 1999/10/31 03:00:34 jlam Exp $
 #
 
-DISTNAME=	fltk-1.0.6-source
+DISTNAME=	fltk-1.0.7-source
 PKGNAME=	${DISTNAME:S/-source//}
 VERS=		${PKGNAME:S/fltk-//}
 WRKSRC=		${WRKDIR}/${PKGNAME}
@@ -28,7 +28,7 @@ GNU_CONFIGURE=	yes
 # bump the MINOR when a new version comes out.
 #
 FLTK_MAJOR=	1
-FLTK_MINOR=	1
+FLTK_MINOR=	2
 MAKE_ENV+=	FLTK_MAJOR="${FLTK_MAJOR}" FLTK_MINOR="${FLTK_MINOR}"
 
 DOCDIR=		${PREFIX}/share/doc/fltk
