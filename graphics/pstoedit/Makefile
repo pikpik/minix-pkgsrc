@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/06/15 11:38:00 grant Exp $
+# $NetBSD: Makefile,v 1.23 2004/10/03 00:14:57 tv Exp $
 
 DISTNAME=	pstoedit_3_31
 PKGNAME=	pstoedit-3.31
@@ -19,7 +19,6 @@ WRKSRC=		${WRKDIR}/pstoedit_3.31/src
 USE_X11=	yes
 USE_LIBTOOL=	yes
 USE_BUILDLINK3=	yes
-USE_GCC_SHLIB=	yes
 USE_LANGUAGES=	c++
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	LIBTOOL="${LIBTOOL}" LIBPLOTTERLA="${X11PREFIX}/lib/libplotter.la"

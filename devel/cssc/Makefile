@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/25 04:49:53 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/18 18:49:39 seb Exp $
 #
 
 DISTNAME=	CSSC-1.00
@@ -10,10 +10,10 @@ MAINTAINER=	seb@NetBSD.org
 HOMEPAGE=	http://cssc.sourceforge.net/
 COMMENT=	GNU workalike for the source code control system SCCS
 
+USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--enable-binary
 USE_BUILDLINK3=	YES
-USE_GCC_SHLIB=	YES
 TEST_TARGET=	check
 
 USE_MAKEINFO=		YES

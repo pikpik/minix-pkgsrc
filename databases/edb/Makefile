@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/04/12 04:30:09 snj Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:13:18 tv Exp $
 #
 
 DISTNAME=		edb-1.0.3
@@ -13,7 +13,7 @@ COMMENT=		Database abstraction layer to Berkeley databases
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_BUILDLINK3=		YES
-USE_GCC_SHLIB=		YES
+USE_LANGUAGE=		c c++
 
 CONFIGURE_ARGS+=	--enable-cxx
 
