@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.10 2002/10/26 13:07:29 bouyer Exp $
+# $NetBSD: buildlink2.mk,v 1.11 2002/12/05 15:28:30 tron Exp $
 
 .if !defined(KDELIBS2_BUILDLINK2_MK)
 KDELIBS2_BUILDLINK2_MK=	# defined
@@ -30,6 +30,7 @@ USE_OPENSSL_VERSION=		${OPENSSL_VERSION_096}
 .include "../../devel/pcre/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"
 .include "../../x11/qt2-libs/buildlink2.mk"
+.include "../../textproc/libxslt/buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
 
 .if defined(USE_CUPS) && (${USE_CUPS} == "YES")
