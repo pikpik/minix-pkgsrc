@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:22:19 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 14:50:05 grant Exp $
 
 DISTNAME=	gkrellmPing-0.2-3
 PKGNAME=	gkrellm-ping-0.2.3
@@ -18,5 +18,5 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/gkrellm/plugins
 	${INSTALL_PROGRAM} ${WRKSRC}/gkrellmPing.so ${PREFIX}/lib/gkrellm/plugins/
 
-.include "../../sysutils/gkrellm/buildlink2.mk"
+.include "../../sysutils/gkrellm1/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
