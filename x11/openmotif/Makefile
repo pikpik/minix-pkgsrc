@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2002/08/25 18:40:39 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/01/28 22:04:36 jlam Exp $
 # FreeBSD: /c/ncvs/ports/x11-toolkits/open-motif/Makefile,v 1.18 2000/10/09 01:40:02 asami Exp 
 # OpenBSD: Makefile,v 1.5 2000/10/23 16:08:12 espie Exp 
 
 PKGVER=		2.1.30
 DISTNAME=	openmotif${PKGVER}
 PKGNAME=	openmotif-${PKGVER}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MOTIF_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R${PKGVER}/ \
 		ftp://ftp.opengroup.org/pub/openmotif/R${PKGVER}/ \
