@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.5 1998/04/24 09:20:35 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/05/04 19:38:44 tron Exp $
 
-DISTNAME=	NumPy-11
-PKGNAME=	py-Numeric-1.1
+DISTNAME=	LLNLPython4
+PKGNAME=	py-Numeric-1.3
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/python/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tsarna@endicor.com
+MAINTAINER=	tsarna@netbsd.org
 
 DEPENDS+=	python-1.5.1:../../lang/python
 
-WRKSRC=		${WRKDIR}/LLNLDistribution/Numerical
+WRKSRC=		${WRKDIR}/LLNLPython4/Numerical
 ALL_TARGET=	default
 MAKE_FLAGS=	'OPT=${CFLAGS}'
 DOCDIR=		${PREFIX}/share/doc/py-Numeric
