@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.359 2003/03/17 08:49:50 seb Exp $
+# $NetBSD: Makefile,v 1.360 2003/03/22 14:46:21 tron Exp $
 #
 
 COMMENT=	Networking tools
@@ -68,6 +68,7 @@ SUBDIR+=	flan
 SUBDIR+=	flow-tools
 SUBDIR+=	fmirror
 SUBDIR+=	fping
+SUBDIR+=	fping6
 SUBDIR+=	freeradius
 SUBDIR+=	freewais-sf
 SUBDIR+=	ftpproxy
@@ -233,6 +234,7 @@ SUBDIR+=	sipcalc
 SUBDIR+=	sitescooper
 SUBDIR+=	slurm
 SUBDIR+=	smb2www
+SUBDIR+=	smokeping
 SUBDIR+=	sniffit
 SUBDIR+=	snort
 SUBDIR+=	snort-mysql
