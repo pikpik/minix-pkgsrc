@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/04/09 13:29:48 agc Exp $
+# $NetBSD: Makefile,v 1.8 2002/04/09 16:51:49 agc Exp $
 #
 
 DISTNAME=	openh323_1.1beta3
@@ -19,7 +19,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.openh323.org/
 COMMENT=	Open H.323 library
 
-DEPENDS=	pwlib-1.1pl17:../../devel/pwlib
+DEPENDS=	pwlib>=1.1:../../devel/pwlib
 
 WRKSRC=		${WRKDIR}/openh323
 
