@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/28 14:32:44 recht Exp $
+# $NetBSD: Makefile,v 1.22 2004/01/28 15:01:24 recht Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -33,6 +33,8 @@ SUBDIR+=	mplayer
 SUBDIR+=	mplayer-share
 SUBDIR+=	mplex
 SUBDIR+=	ns-flash
+SUBDIR+=	ogle
+SUBDIR+=	ogle_gui
 SUBDIR+=	realplayer
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	trplayer
