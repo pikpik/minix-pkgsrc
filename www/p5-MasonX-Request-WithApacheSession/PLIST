@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${INSTALLSITELIB}/MasonX/Request/WithApacheSession.pm
+${INSTALLSITELIB}/MasonX/Request/WithMultiSession.pm
+${INSTALLSITEMAN3DIR}/MasonX::Request::WithApacheSession.3
+${INSTALLSITEMAN3DIR}/MasonX::Request::WithMultiSession.3
