@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:51:27 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/09 20:36:42 agc Exp $
 #
 
 DISTNAME=	pkgdep-1.0
@@ -19,7 +19,7 @@ NO_CONFIGURE=	yes
 
 do-build:
 	${CP} ${FILESDIR}/pkgdep.pl ${WRKDIR}/pkgdep
-#	${SED} -e 's|/usr/pkgsrc|${PKGSRCDIR}|' \
+#	${SED} -e 's|/usr/pkgsrc|${_PKGSRCDIR}|' \
 #		${FILESDIR}/pkgdep.pl > ${WRKDIR}/pkgdep
 
 do-install:

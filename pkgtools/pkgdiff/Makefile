@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/11/19 08:03:37 tron Exp $
+# $NetBSD: Makefile,v 1.21 2001/12/03 14:30:16 seb Exp $
 #
 
 DISTNAME=	pkgdiff-0.103
@@ -19,8 +19,7 @@ NO_CHECKSUM=	yes
 NO_PATCH=	yes
 NO_CONFIGURE=	yes
 
-PKGSRCDIR?=	${.CURDIR}/../..
-MAKE_ENV=	PKGSRCDIR=${PKGSRCDIR}
+MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR}
 
 .include "../../mk/bsd.prefs.mk"
 
