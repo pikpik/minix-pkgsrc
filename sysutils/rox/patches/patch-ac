@@ -1,13 +1,12 @@
 $NetBSD$
-
---- ../AppRun.orig	Thu Apr 11 21:58:15 2002
-+++ ../AppRun
+--- ../AppRun.orig	Sun May 26 16:30:50 2002
++++ ../AppRun	Sun May 26 16:34:31 2002
 @@ -39,7 +39,7 @@
  		exit 1
  esac
  
 -BIN="$APP_DIR/$PLATFORM/$PROG"
-+BIN="$APP_DIR/$PROG"
++BIN="@PREFIX@/libexec/rox/$PROG"
  
  if [ -x "$BIN" ]; then
    exec $DEBUGGER "$BIN" "$@"
