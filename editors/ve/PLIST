@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ve
+share/ve/ve.hlp
+@dirrm share/ve
