@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/02/26 15:26:05 adam Exp $
+# $NetBSD: Makefile,v 1.17 2004/05/18 11:27:29 uebayasi Exp $
 #
 
 DISTNAME=	blas
@@ -20,5 +20,7 @@ WRKSRC=			${WRKDIR}
 USE_BUILDLINK3=		YES
 USE_FORTRAN=		YES
 USE_LIBTOOL=		YES
+
+INSTALLATION_DIRS=	lib
 
 .include "../../mk/bsd.pkg.mk"
