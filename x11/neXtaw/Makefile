@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/08/12 11:56:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2002/08/28 15:19:11 jlam Exp $
 
 DISTNAME=	neXtaw-0.12
 CATEGORIES=	x11
@@ -20,11 +20,7 @@ EGDIR=		${PREFIX}/share/examples/${PKGBASE}
 .include "../../mk/bsd.prefs.mk"
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-*-alpha)
-GCC_VERSION!=           gcc --version
-.  if (${GCC_VERSION:C/-.*$$//} == egcs)
-# "egcs" cannot be used, as this package tickles c++ compiler bugs
-.    include "../../lang/gcc/Makefile.gcc"
-.  endif
+.  include "../../lang/gcc/buildlink2.mk
 .endif
 
 post-install:
