@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2002/11/20 16:57:54 bouyer Exp $
-#
+# $NetBSD: Makefile,v 1.18 2003/01/21 11:49:50 wiz Exp $
 
 DISTNAME=	gtar-1.13.25
-PKGNAME=	1
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	# empty
 DISTFILES=	# empty
