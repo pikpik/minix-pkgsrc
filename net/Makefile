@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.345 2002/12/18 07:55:24 rh Exp $
+# $NetBSD: Makefile,v 1.346 2002/12/29 04:38:42 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -109,6 +109,7 @@ SUBDIR+=	lambdamoo-doc
 SUBDIR+=	latd
 SUBDIR+=	lftp
 SUBDIR+=	libIDL
+SUBDIR+=	libares
 SUBDIR+=	libnids
 SUBDIR+=	libpcap
 SUBDIR+=	libsscript
