@@ -1,0 +1,14 @@
+@comment $NetBSD$
+bin/arj
+bin/arjdisp
+bin/rearj
+bin/register
+lib/arjcrypt.so
+share/doc/arj/COPYING
+share/doc/arj/arjl.txt
+share/doc/arj/arjs.txt
+share/doc/arj/debug.txt
+share/doc/arj/history.txt
+share/doc/arj/readme.txt
+share/doc/arj/unix.txt
+@dirrm share/doc/arj
