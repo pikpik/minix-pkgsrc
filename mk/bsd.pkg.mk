@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1430 2004/03/29 16:01:39 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1431 2004/03/31 10:00:43 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -1236,7 +1236,7 @@ _PATCHFILES?=	${PATCHFILES}
 _ALLFILES?=	${_DISTFILES} ${_PATCHFILES}
 
 # This is what is actually going to be extracted, and is overridable
-#  by user.
+# by user.
 EXTRACT_ONLY?=	${DISTFILES}
 
 .if !defined(CATEGORIES) || !defined(DISTNAME)
