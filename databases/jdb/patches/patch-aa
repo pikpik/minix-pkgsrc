@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Thu Jun 25 18:47:37 1998
++++ Makefile.in	Mon May 17 17:55:50 1999
+@@ -22,7 +22,7 @@
+ 
+ # Where should the support files go?
+ # LIBDIR=/usr/local/lib/jdb
+-LIBDIR=@mydatadir@
++LIBDIR=@mydatadir@/jdb
+ 
+ ######################################################################
+ # No need to change things below this line.
