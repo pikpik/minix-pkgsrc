@@ -1,0 +1,6 @@
+@comment $NetBSD$
+${PLUGINSDIR}/libexpense.a
+${PLUGINSDIR}/libexpense.la
+${PLUGINSDIR}/libexpense.so
+${PLUGINSDIR}/libexpense.so.1
+${PLUGINSDIR}/libexpense.so.1.1
