@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/12/12 02:10:19 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 23:25:17 wiz Exp $
 #
 
 DISTNAME=	wmakerconf-2.7
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://ulli.linuxave.net/wmakerconf/
+COMMENT=	Gtk+ based configuration tool for Window Maker
 
 DEPENDS+=	imlib-*:../../graphics/imlib
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk

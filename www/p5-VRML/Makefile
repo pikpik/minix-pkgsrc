@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/12/28 12:57:18 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/27 07:11:25 jlam Exp $
 #
 
 DISTNAME=	VRML-1.04
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=VRML/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gfz-potsdam.de/~palm/software/VRML/doc/VRML.pm.html
+COMMENT=	Set of VRML classes for Perl
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/VRML/.packlist

@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2000/05/09 07:12:58 tron Exp $
+# $NetBSD: Makefile,v 1.25 2000/09/02 23:18:28 abs Exp $
 #
+
+COMMENT=	Netscape navigator standalone browser - Digital UNIX/Linux/SunOS binary
 
 BINNAME=	navigator
 DIST_SDIR_NAME=	navigator_standalone

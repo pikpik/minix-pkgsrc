@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/01/26 05:21:49 hubertf Exp $
+# $NetBSD: Makefile,v 1.24 2001/01/29 11:34:47 wiz Exp $
 
 DISTNAME=	wwwoffle-2.6
 CATEGORIES=	www
@@ -13,6 +13,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gedanken.demon.co.uk/wwwoffle/
+COMMENT=	WWW proxy with support for offline browsing
 
 USE_GMAKE=	yes
 NO_CONFIGURE=	yes

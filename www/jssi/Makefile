@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/06/22 14:23:26 jwise Exp $
+# $NetBSD: Makefile,v 1.5 2001/01/29 11:34:46 wiz Exp $
 
 DISTNAME=	ApacheJSSI-1.1.2
 PKGNAME=	jssi-1.1.2
@@ -7,6 +7,7 @@ MASTER_SITES=	http://java.apache.org/jservssi/dist/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://java.apache.org/
+COMMENT=	Java Server-Side Include engine as a JSDK-2.0 servlet
 
 # yes, this needs _exactly_ version 2.0
 DEPENDS+=	jsdk-2.0:../../www/jsdk20

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/10/25 19:19:17 pooka Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:46 wiz Exp $
 #
 
 DISTNAME=	blackbox-0.61.1
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://portal.alug.org/pub/blackbox/0.6x.x/
 
 MAINTAINER=	djp@cpl.herston.uq.edu.au
 HOMEPAGE=	http://blackbox.alug.org/
+COMMENT=	small and fast X11R6 window manager
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes

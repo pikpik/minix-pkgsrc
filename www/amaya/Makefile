@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/06 14:04:07 agc Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/14 12:31:10 drochner Exp $
 #
 
 DISTNAME=	amaya-src-4.2.1
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://www.w3.org/Amaya/
+COMMENT=	Web Browser/Editor from the World Wide Web Consortium
 
 WRKSRC=		${WRKDIR}/Amaya/work
 GNU_CONFIGURE=	yes

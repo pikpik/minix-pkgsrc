@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/12/13 03:49:30 jwise Exp $
+# $NetBSD: Makefile,v 1.12 2001/01/29 11:34:46 wiz Exp $
 
 DISTNAME=	jakarta-tomcat.src
 PKGNAME=	jakarta-tomcat-3.1.1
@@ -8,6 +8,7 @@ DISTFILES=	jakarta-tomcat-3.1.1-src.tar.gz jakarta-tools.tar.gz jakarta-ant.tar.
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://jakarta.apache.org/
+COMMENT=	the Apache Project's Java Servlet 2.2 and JSP 1.1 server
 
 DIST_SUBDIR=	jakarta-3.1.1
 

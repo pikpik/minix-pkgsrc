@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2000/10/21 23:04:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/29 11:34:46 wiz Exp $
 #
 
 PKGNAME=	php-mysql-${PHP_VERSION}
+
+COMMENT=	PHP3 extension for MySQL databases
 
 DEPENDS+=	mysql-client-3.22.32:../../databases/mysql-client
 

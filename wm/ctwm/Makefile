@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/08/23 23:14:32 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:47 wiz Exp $
 #
 
 DISTNAME=	ctwm-3.5
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://slhp1.epfl.ch/pub/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://woland.afti.nsu.ru/~reberger/xwinman/ctwm.html
+COMMENT=	Window manager with support for multiple virtual screens
 
 USE_IMAKE=	YES
 USE_XPM=	YES

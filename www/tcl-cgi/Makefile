@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/09/06 06:32:20 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/01/24 18:44:59 he Exp $
 #
 
 DISTNAME=	cgi.tcl
@@ -9,6 +9,7 @@ MASTER_SITES=	http://expect.nist.gov/cgi.tcl/
 
 MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://expect.nist.gov/cgi.tcl/
+COMMENT=	Library of Tcl procedures to assist in writing CGI scripts
 
 DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 

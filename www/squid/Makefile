@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2000/12/16 09:45:18 hubertf Exp $
+# $NetBSD: Makefile,v 1.40 2001/01/26 04:56:13 hubertf Exp $
 
 DISTNAME=	squid-2.3.STABLE4-src
 PKGNAME=	squid-2.3s4nb3
@@ -22,6 +22,7 @@ PATCHFILES=	squid-2.3.stable4-invalid_ip_acl_entry.patch \
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.squid-cache.org/
+COMMENT=	Post-Harvest_cached WWW proxy cache and accelerator
 
 BUILD_DEPENDS+=	${PERL5}:../../lang/perl5-base
 

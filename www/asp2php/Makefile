@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/12/07 08:50:49 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/17 14:13:42 agc Exp $
 
 DISTNAME=	asp2php0.73.4
 PKGNAME=	asp2php-0.73.4
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://home.i1.net/~naken/asp2php/
+COMMENT=	converts asp pages to php pages
 
 WRKSRC=		${WRKDIR}/asp2php
 

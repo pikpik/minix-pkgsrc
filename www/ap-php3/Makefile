@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.5 1999/11/21 22:12:59 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/27 02:46:07 jlam Exp $
 #
 
 PKGNAME=	ap-${DISTNAME}
+
+COMMENT=	PHP3 server module for Apache
 
 DEPENDS+=	apache-1.3.*:../../www/apache
 

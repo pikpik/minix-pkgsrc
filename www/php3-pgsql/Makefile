@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2000/04/09 04:00:35 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2000/05/20 19:52:52 jlam Exp $
 #
 
 PKGNAME=	php-pgsql-${PHP_VERSION}
+
+COMMENT=	PHP3 extension for PostgreSQL databases
 
 DEPENDS+=	postgresql>=6.5.3:../../databases/postgresql
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/05 09:01:05 tron Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/06 03:17:01 fredb Exp $
 #
 
 DISTNAME=	bluefish-0.6
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wulf@ping.net.au
 HOMEPAGE=	http://bluefish.openoffice.nl/
+COMMENT=	GTK HTML editor for the experienced web designer
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 BUILD_DEPENDS+=	msgfmt:../../devel/gettext

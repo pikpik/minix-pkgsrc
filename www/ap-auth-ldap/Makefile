@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/09/05 09:33:17 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2000/12/14 12:27:51 kleink Exp $
 
 DISTNAME=	auth_ldap-1.5.2
 PKGNAME=	ap-auth-ldap-1.5.2
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.rudedog.org/auth_ldap/
 
 MAINTAINER=	kleink@netbsd.org
 HOMEPAGE=	http://www.rudedog.org/auth_ldap/
+COMMENT=	Module to allow apache authentication against an LDAP directory
 
 DEPENDS+=	apache-1.3.*:../../www/apache
 DEPENDS+=	openldap-1.2.*:../../databases/openldap

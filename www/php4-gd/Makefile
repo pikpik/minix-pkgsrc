@@ -1,9 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 09:20:32 jlam Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		gd
 CATEGORIES+=		graphics
+
+COMMENT=		PHP4 extension for GD graphics library
 
 DEPENDS+=		gd-*:../../graphics/gd
 

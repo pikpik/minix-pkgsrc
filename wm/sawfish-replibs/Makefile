@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/29 23:47:41 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:49 wiz Exp $
 #
 
 PKGNAME=	sawfish-replibs-${SF_VERS}
+
+COMMENT=	librep Lisp libraries for sawfish
 
 do-build:
 	cd ${WRKSRC}/src && \

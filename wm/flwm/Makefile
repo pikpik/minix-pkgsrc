@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/04 03:57:33 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
 #
 
 DISTNAME=	flwm-0.25
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://flwm.sourceforge.net/
+COMMENT=	The Fast, Light Window Manager
 
 DEPENDS+=	fltk-*:../../x11/fltk
 

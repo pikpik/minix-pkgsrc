@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:36 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:49 wiz Exp $
 
 DISTNAME=	wmx-5
 PKGNAME=	wmx-5.0
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.all-day-breakfast.com/wmx/
 
 MAINTAINER=	kuebart@mathematik.uni-ulm.de
 HOMEPAGE=	http://www.all-day-breakfast.com/wmx/
+COMMENT=	another X11 window manager based on wm2
 
 USE_X11BASE=	YES
 USE_XPM=	YES

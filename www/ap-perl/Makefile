@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/09/07 04:47:20 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/02 16:41:52 jlam Exp $
 #
 
 DISTNAME=		mod_perl-1.25
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Apache/} \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://perl.apache.org/
+COMMENT=		Module that embeds a Perl interpreter into Apache
 
 DEPENDS+=		libperl-{5.0*,5.6.0nb*,5.[6-9]*}:../../lang/libperl
 DEPENDS+=		apache{,6}-1.3.*:../../www/apache

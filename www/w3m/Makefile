@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2000/10/14 01:22:41 itojun Exp $
+# $NetBSD: Makefile,v 1.20 2000/11/23 15:44:21 abs Exp $
 
 DISTNAME=	w3m-0.1.11-pre
 PKGNAME=	w3m-0.1.10.pre11
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/
 
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://ei5nazha.yz.yamagata-u.ac.jp/~aito/w3m/
+COMMENT=	Terminal-based WWW browser with HTML tables and frames support
 
 DEPENDS=	boehm-gc>=5:../../devel/boehm-gc
 

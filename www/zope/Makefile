@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/08/23 21:33:53 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2000/10/22 23:11:48 tsarna Exp $
 #
 
 DISTNAME=	Zope-2.2.2-src
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.zope.org/
+COMMENT=	Zope, the Z Object Publishing Environment
 
 DEPENDS+=	py-extclass>=2.2.2:../../lang/py-extclass
 DEPENDS+=	py-dtml>=2.2.2:../../textproc/py-dtml

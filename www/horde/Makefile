@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/12 15:26:04 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/13 03:54:00 jlam Exp $
 
 DISTNAME=	horde-1.2.4
 CATEGORIES=	www
@@ -6,6 +6,7 @@ MASTER_SITES=	ftp://ftp.horde.org/pub/horde/tarballs/
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.horde.org/
+COMMENT=	PHP application framework
 
 DEPENDS+=	php>3.0.17:../../www/php4
 

@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2000/10/17 23:15:29 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
 
 PKGNAME=		${DISTNAME:S/-/-gnome-/}
+
+COMMENT=		small, fast and light-weight window manager (GNOME version)
 
 DEPENDS+=		gnome-libs-*:../../x11/gnome-libs
 

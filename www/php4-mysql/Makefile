@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/26 22:51:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/30 21:30:18 hubertf Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		mysql
 CATEGORIES+=		databases
+
+COMMENT=		PHP4 extension for MySQL databases
 
 DEPENDS+=		mysql-client>=3.22:../../databases/mysql-client
 

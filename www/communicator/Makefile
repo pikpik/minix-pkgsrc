@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2000/05/09 07:12:57 tron Exp $
+# $NetBSD: Makefile,v 1.27 2000/09/02 23:18:28 abs Exp $
 #
+
+COMMENT=	Netscape communicator complete install - Digital UNIX/Linux/SunOS binary
 
 BINNAME=	communicator
 DIST_SDIR_NAME=	complete_install
