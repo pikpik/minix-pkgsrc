@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/09/09 20:36:53 agc Exp $
+# $NetBSD: Makefile,v 1.6 2002/11/22 16:10:10 jschauma Exp $
 #
 
 DISTNAME=	htmllint
@@ -12,6 +12,8 @@ HOMEPAGE=	http://openlab.ring.gr.jp/k16/htmllint/
 COMMENT=	Another HTML-Lint program
 
 DEPENDS+=	p5-Jcode>=0.68:../../converters/p5-Jcode
+
+DIST_SUBDIR=	${PKGNAME}
 
 USE_PERL5=	# defined
 WRKSRC=		${WRKDIR}
