@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- benchmarks/benchmark.orig	Wed May 19 15:50:11 1999
++++ benchmarks/benchmark
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ gcc -o unbuff unbuff.c
+-../stalin -q -On -db benchmarks-to-latex
++%%PREFIX%%/bin/stalin -q -On -db benchmarks-to-latex
+ ./compile-benchmarks
+ ./run-benchmarks
+ ./benchmarks-to-latex
