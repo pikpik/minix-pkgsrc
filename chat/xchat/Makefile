@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/03/19 08:00:18 skrll Exp $
+# $NetBSD: Makefile,v 1.20 2002/04/09 09:14:58 tron Exp $
 
 DISTNAME=	xchat-1.8.8
 CATEGORIES=	chat x11 gnome
@@ -16,6 +16,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	ac_cv_lib_intl_bindtextdomain='yes'
 CONFIGURE_ENV+=	pythonpath=${PYTHONBIN}
 MAKE_ENV+=	PKGLOCALEDIR="${PKGLOCALEDIR}"
+BUILD_USES_MSGFMT=	YES
 
 BUILD_DEFS+=	USE_INET6
 
