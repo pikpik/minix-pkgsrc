@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 23:09:21 wiz Exp $
 #
 
-DISTNAME=		libvisual-xmms-0.1.7
+DISTNAME=		libvisual-xmms-0.2.0
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=libvisual/}
 
