@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2001/06/11 06:34:47 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/08/27 14:35:13 tron Exp $
 
 DISTNAME=	trafshow-3.1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nsk.su/pub/RinetSoftware/
 EXTRACT_SUFX=	.tgz
