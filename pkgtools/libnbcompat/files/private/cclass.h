@@ -1,4 +1,4 @@
-/*	$NetBSD: cclass.h,v 1.7 2003/08/07 16:43:19 agc Exp $	*/
+/*	$NetBSD: cclass.h,v 1.1 2004/08/16 17:24:56 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993, 1994

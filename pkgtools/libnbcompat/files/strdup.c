@@ -1,4 +1,4 @@
-/*	$NetBSD: strdup.c,v 1.2 2003/08/27 12:25:40 jmmv Exp $	*/
+/*	$NetBSD: strdup.c,v 1.13 2003/08/07 16:43:50 agc Exp $	*/
 
 /*
  * Copyright (c) 1988, 1993
@@ -29,13 +29,41 @@
  * SUCH DAMAGE.
  */
 
-#include "nbcompat.h"
+#include <nbcompat.h>
+#include <nbcompat/cdefs.h>
+#if defined(LIBC_SCCS) && !defined(lint)
+#if 0
+static char sccsid[] = "@(#)strdup.c	8.1 (Berkeley) 6/4/93";
+#else
+__RCSID("$NetBSD: strdup.c,v 1.13 2003/08/07 16:43:50 agc Exp $");
+#endif
+#endif /* LIBC_SCCS and not lint */
+
+#if 0
+#include "namespace.h"
+#endif
+
+#include <nbcompat/assert.h>
+#if HAVE_ERRNO_H
+#include <errno.h>
+#endif
+#include <nbcompat/stdlib.h>
+#include <nbcompat/string.h>
+
+#if 0
+#ifdef __weak_alias
+__weak_alias(strdup,_strdup)
+#endif
+#endif
 
 char *
-strdup(const char *str)
+strdup(str)
+	const char *str;
 {
 	size_t len;
 	char *copy;
+
+	_DIAGASSERT(str != NULL);
 
 	len = strlen(str) + 1;
 	if (!(copy = malloc(len)))

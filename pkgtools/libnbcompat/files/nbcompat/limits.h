@@ -1,4 +1,4 @@
-/*	$NetBSD$	*/
+/*	$NetBSD: limits.h,v 1.1 2004/08/10 18:47:55 jlam Exp $	*/
 
 /*-
  * Copyright (c) 2004 The NetBSD Foundation, Inc.
@@ -46,6 +46,10 @@
 /*
  * Declare functions and macros that may be missing in <limits.h>.
  */
+
+#ifndef UINT_MAX
+# define UINT_MAX	4294967295U
+#endif
 
 #if !defined(LLONG_MAX)
 # if defined(LONG_LONG_MAX)

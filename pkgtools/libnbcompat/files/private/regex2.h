@@ -1,4 +1,4 @@
-/*	$NetBSD: regex2.h,v 1.11 2004/03/26 22:42:17 enami Exp $	*/
+/*	$NetBSD: regex2.h,v 1.1 2004/08/16 17:24:56 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993, 1994

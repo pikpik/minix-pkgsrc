@@ -1,4 +1,4 @@
-/*	$NetBSD: utimes.c,v 1.1 2004/03/10 19:37:42 tv Exp $	*/
+/*	$NetBSD: utimes.c,v 1.1 2004/03/11 14:11:04 grant Exp $	*/
 
 /*-
  * Copyright (c) 2004 The NetBSD Foundation, Inc.
@@ -38,10 +38,11 @@
  * Emulate utimes(2) using utime(2), but losing sub-second granularity.
  */
 
-#include "nbcompat.h"
-
-#include <unistd.h>
+#include <nbcompat.h>
+#include <nbcompat/unistd.h>
+#if HAVE_UTIME_H
 #include <utime.h>
+#endif
 
 int
 utimes(const char *path, const struct timeval *times)

@@ -1,4 +1,4 @@
-/*	$NetBSD: utils.h,v 1.6 2003/08/07 16:43:21 agc Exp $	*/
+/*	$NetBSD: cname.h,v 1.1 2004/08/16 17:24:56 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993, 1994
@@ -31,7 +31,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	@(#)utils.h	8.3 (Berkeley) 3/20/94
+ *	@(#)cname.h	8.3 (Berkeley) 3/20/94
  */
 
 /*-
@@ -68,33 +68,108 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- *	@(#)utils.h	8.3 (Berkeley) 3/20/94
+ *	@(#)cname.h	8.3 (Berkeley) 3/20/94
  */
 
-/* utility definitions */
-#define	DUPMAX		_POSIX2_RE_DUP_MAX	/* xxx is this right? */
-#define	INFINITY	(DUPMAX + 1)
-#define	NC		(CHAR_MAX - CHAR_MIN + 1)
-typedef unsigned char uch;
-
-/* switch off assertions (if not already off) if no REDEBUG */
-#ifndef REDEBUG
-#ifndef NDEBUG
-#define	NDEBUG	/* no assertions please */
-#endif
-#endif
-#if HAVE_ASSERT_H
-#include <assert.h>
-#endif
-
-/*
- * Workaround bug in some assert.h.  This is okay since we really don't
- * want assertions in the regex code.
- */
-#undef assert
-#define	assert(cond)	((void) 0)
-
-/* for old systems with bcopy() but no memmove() */
-#ifdef USEBCOPY
-#define	memmove(d, s, c)	bcopy(s, d, c)
-#endif
+/* character-name table */
+static const struct cname {
+	const char *name;
+	char code;
+} cnames[] = {
+	{ "NUL",			'\0' },
+	{ "SOH",			'\001' },
+	{ "STX",			'\002' },
+	{ "ETX",			'\003' },
+	{ "EOT",			'\004' },
+	{ "ENQ",			'\005' },
+	{ "ACK",			'\006' },
+	{ "BEL",			'\007' },
+	{ "alert",			'\007' },
+	{ "BS",				'\010' },
+	{ "backspace",			'\b' },
+	{ "HT",				'\011' },
+	{ "tab",			'\t' },
+	{ "LF",				'\012' },
+	{ "newline",			'\n' },
+	{ "VT",				'\013' },
+	{ "vertical-tab",		'\v' },
+	{ "FF",				'\014' },
+	{ "form-feed",			'\f' },
+	{ "CR",				'\015' },
+	{ "carriage-return",		'\r' },
+	{ "SO",				'\016' },
+	{ "SI",				'\017' },
+	{ "DLE",			'\020' },
+	{ "DC1",			'\021' },
+	{ "DC2",			'\022' },
+	{ "DC3",			'\023' },
+	{ "DC4",			'\024' },
+	{ "NAK",			'\025' },
+	{ "SYN",			'\026' },
+	{ "ETB",			'\027' },
+	{ "CAN",			'\030' },
+	{ "EM",				'\031' },
+	{ "SUB",			'\032' },
+	{ "ESC",			'\033' },
+	{ "IS4",			'\034' },
+	{ "FS",				'\034' },
+	{ "IS3",			'\035' },
+	{ "GS",				'\035' },
+	{ "IS2",			'\036' },
+	{ "RS",				'\036' },
+	{ "IS1",			'\037' },
+	{ "US",				'\037' },
+	{ "space",			' ' },
+	{ "exclamation-mark",		'!' },
+	{ "quotation-mark",		'"' },
+	{ "number-sign",		'#' },
+	{ "dollar-sign",		'$' },
+	{ "percent-sign",		'%' },
+	{ "ampersand",			'&' },
+	{ "apostrophe",			'\'' },
+	{ "left-parenthesis",		'(' },
+	{ "right-parenthesis",		')' },
+	{ "asterisk",			'*' },
+	{ "plus-sign",			'+' },
+	{ "comma",			',' },
+	{ "hyphen",			'-' },
+	{ "hyphen-minus",		'-' },
+	{ "period",			'.' },
+	{ "full-stop",			'.' },
+	{ "slash",			'/' },
+	{ "solidus",			'/' },
+	{ "zero",			'0' },
+	{ "one",			'1' },
+	{ "two",			'2' },
+	{ "three",			'3' },
+	{ "four",			'4' },
+	{ "five",			'5' },
+	{ "six",			'6' },
+	{ "seven",			'7' },
+	{ "eight",			'8' },
+	{ "nine",			'9' },
+	{ "colon",			':' },
+	{ "semicolon",			';' },
+	{ "less-than-sign",		'<' },
+	{ "equals-sign",		'=' },
+	{ "greater-than-sign",		'>' },
+	{ "question-mark",		'?' },
+	{ "commercial-at",		'@' },
+	{ "left-square-bracket",	'[' },
+	{ "backslash",			'\\' },
+	{ "reverse-solidus",		'\\' },
+	{ "right-square-bracket",	']' },
+	{ "circumflex",			'^' },
+	{ "circumflex-accent",		'^' },
+	{ "underscore",			'_' },
+	{ "low-line",			'_' },
+	{ "grave-accent",		'`' },
+	{ "left-brace",			'{' },
+	{ "left-curly-bracket",		'{' },
+	{ "vertical-line",		'|' },
+	{ "right-brace",		'}' },
+	{ "right-curly-bracket",	'}' },
+	{ "tilde",			'~' },
+	{ "DEL",			'\177' },
+	{ NULL,				0 },
+};
