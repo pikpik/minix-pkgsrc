@@ -1,0 +1,12 @@
+$NetBSD$
+--- gsm/manager.c.orig	Fri Nov  3 02:20:50 2000
++++ gsm/manager.c	Mon Apr  2 19:53:40 2001
+@@ -307,7 +307,7 @@
+       if (restart_info)
+ 	free (restart_info);
+ 
+-      if (errno)
++      if (pid < 0)
+ 	{
+ 	  if (strcmp (command, SmRestartCommand) || client->connection)
+ 	    {
