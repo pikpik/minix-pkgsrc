@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/pnm2ppa.conf.default
+bin/calibrate_ppa
+bin/pnm2ppa
+man/man1/pnm2ppa.1
