@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/11/05 08:28:48 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/11/13 16:29:18 tv Exp $
 #
 
 DISTNAME=		t1lib-0.8-beta
@@ -16,7 +16,7 @@ WRKSRC=			${WRKDIR}/T1-0.8-beta
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_X11=		yes
+USE_X11BASE=		yes
 
 PATCHFILES+=		${PKGSRCDIR}/textproc/t1lib/patches/patch-*
 ALLFILES=		${DISTFILES}    # don't checksum shared patches

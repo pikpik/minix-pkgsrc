@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/11/13 01:50:21 frueauf Exp $
+# $NetBSD: Makefile,v 1.8 1998/11/23 15:01:39 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/05/27 08:44:56 dburr Exp
 #
 
@@ -17,7 +17,7 @@ DEPENDS=	jpeg-6b:../../graphics/jpeg \
 
 NOT_FOR_ARCHS=	alpha	#LP64 problems
 
-USE_X11=	yes
+USE_X11BASE=	yes
 USE_MOTIF=	yes
 
 GNU_CONFIGURE=	yes

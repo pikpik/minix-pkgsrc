@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/08/20 15:16:55 tsarna Exp $
+# $NetBSD: Makefile,v 1.3 1998/08/27 14:06:08 garbled Exp $
 #
 
 DISTNAME=	gemdropx
@@ -12,6 +12,6 @@ HOMEPAGE=	http://www.sonic.net/~nbs/unix/x/gemdropx/
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/gemdropx
 
-USE_X11=	yes
+USE_X11BASE=	yes
 
 .include "../../mk/bsd.pkg.mk"

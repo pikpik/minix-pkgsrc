@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/07/04 09:19:06 mycroft Exp $
+# $NetBSD: Makefile,v 1.10 1998/08/17 21:17:17 tron Exp $
 #
 
 DISTNAME=		asclock
@@ -39,7 +39,7 @@ LANG?=1
 # 3) 2bit greyscale        ( 4 colors)
 PANEL?=1
 
-USE_X11=	yes
+USE_X11BASE=	yes
 INSTALL_TARGET=	install install.man
 
 do-configure:

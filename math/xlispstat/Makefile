@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/12/21 10:45:31 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 1999/01/01 09:03:36 garbled Exp $
 # FreeBSD Id: Makefile,v 1.7 1998/08/20 07:35:21 asami Exp
 #
 
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.stat.umn.edu/~luke/xls/xlsinfo/xlsinfo.html
 CONFLICTS=	xlispstat-3.52.5
 
 GNU_CONFIGURE=	yes
-USE_X11=	yes
+USE_X11BASE=	yes
 
 NOT_FOR_ARCHS=	alpha #core dumps
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 1998/11/10 23:58:49 tron Exp $
+# $NetBSD: Makefile,v 1.22 1998/12/29 19:34:47 tron Exp $
 #
 
 DISTNAME=	qt-1.42
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.troll.no/products/qt.html
 
 CONFLICTS=	qt-*
 
-USE_X11=	yes
+USE_X11BASE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 

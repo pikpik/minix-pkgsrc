@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/15 13:45:46 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/08/20 15:16:55 tsarna Exp $
 #
 
 DISTNAME=		lincity109-src
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.floot.demon.co.uk/lincity.html
 WRKSRC=			${WRKDIR}/lincity109
 
 USE_GMAKE=		yes
-USE_X11=		yes
+USE_X11BASE=		yes
 ALL_TARGET=		freebsd
 
 post-patch:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/08/20 15:16:43 tsarna Exp $
+# $NetBSD: Makefile,v 1.11 1998/09/28 13:43:36 tron Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/24 21:43:45 jseger Exp
 #
 
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.informatik.uni-frankfurt.de/~fp/uudeview/
 DEPENDS+=	tk-8.0p2:../../x11/tk80
 DEPENDS+=	uulib-0.5.13:../../converters/uulib
 
-USE_X11=	yes
+USE_X11BASE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-tcl="${LOCALBASE}" --enable-tk="${LOCALBASE}"
 # Season to taste --- anything over tcl7.5

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/09/24 16:53:19 garbled Exp $
+# $NetBSD: Makefile,v 1.6 1998/11/12 23:34:31 frueauf Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -18,7 +18,7 @@ LICENSE=	shareware
 EXTRACT_CMD=	unzip
 EXTRACT_BEFORE_ARGS=	-qo
 EXTRACT_ONLY=	doomsrc.zip
-USE_X11=	yes
+USE_X11BASE=	yes
 USE_GMAKE=	yes
 
 post-extract:

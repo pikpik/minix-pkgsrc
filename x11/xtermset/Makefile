@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/01/02 13:04:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/01/07 23:43:40 hubertf Exp $
 #
 
 DISTNAME=	xtermset-0.2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.cs.vu.nl/~bernsti/xtermset/src/
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.cs.vu.nl/~bernsti/xtermset/
 
-USE_X11=	YES
+USE_X11BASE=	YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xtermset

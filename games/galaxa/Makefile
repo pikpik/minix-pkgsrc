@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/07/24 12:49:06 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1998/08/20 15:16:54 tsarna Exp $
 #
 
 DISTNAME=	galaxa.0.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.sonic.net/~nbs/unix/x/galaxa/
 
 WRKSRC=		${WRKDIR}/galaxa
 MAKEFILE=	makefile
-USE_X11=	yes
+USE_X11BASE=	yes
 
 pre-install:
 	${MKDIR} ${PREFIX}/share/doc/galaxa

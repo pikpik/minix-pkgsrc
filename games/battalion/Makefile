@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/09/30 20:03:18 tron Exp $
+# $NetBSD: Makefile,v 1.10 1998/11/12 23:34:30 frueauf Exp $
 #
 
 DISTNAME=	battalion
@@ -16,7 +16,7 @@ DEPENDS+=	Mesa-3.0:../../graphics/Mesa
 NOT_FOR_ARCHS=	alpha	# relies on Mesa (gcc)
 
 EXTRACT_ONLY=	battalionSource1.4.tar.Z
-USE_X11=	yes
+USE_X11BASE=	yes
 
 do-install:
 	${INSTALL} -c -s -o root -g games -m 2755 ${WRKSRC}/battalion ${PREFIX}/bin

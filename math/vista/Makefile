@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/10/03 20:33:46 frueauf Exp $
 #
 
 DISTNAME=	vista
@@ -12,7 +12,7 @@ HOMEPAGE=	http://forrest.psych.unc.edu/research/vista.html
 DEPENDS+=	xlispstat-3.52.5:../../math/xlispstat
 
 WRKSRC=		${WRKDIR}/vista-5.0.5
-USE_X11=	yes
+USE_X11BASE=	yes
 USE_GMAKE=	yes
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/09/22 06:11:36 garbled Exp $
+# $NetBSD: Makefile,v 1.3 1998/11/12 23:03:40 frueauf Exp $
 
 DISTNAME=		bochs-980707a
 CATEGORIES=		emulators
@@ -14,7 +14,7 @@ WRKSRC=			${WRKDIR}/bochs-980707
 USE_GMAKE=		yes
 CONFIGURE_ARGS+=	--enable-vga #--with-x11
 GNU_CONFIGURE=		yes
-USE_X11=		yes
+USE_X11BASE=		yes
 
 post-configure:
 	${SED} -e 's@XXXPREFIXXXX@${PREFIX}@' < ${WRKSRC}/.bochsrc > ${WRKSRC}/bochsrc
