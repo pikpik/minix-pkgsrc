@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/02/21 15:27:35 taca Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/06 16:36:08 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_RUBY}
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	${RUBY_HOMEPAGE}
-COMMENT=	Ruby 1.6 baed release minimum package
+COMMENT=	Ruby 1.6 based release minimum package
 
 RUBY_VERSION=		${RUBY16_VERSION}
 USE_BUILDLINK3=		yes
