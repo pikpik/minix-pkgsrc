@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.146 2003/12/04 00:34:59 heinz Exp $
+# $NetBSD: Makefile,v 1.147 2003/12/05 17:46:21 xtraeme Exp $
 #
 
 COMMENT=	Security tools
@@ -48,6 +48,7 @@ SUBDIR+=	libbf
 SUBDIR+=	libcrack
 SUBDIR+=	libdes
 SUBDIR+=	libgcrypt
+SUBDIR+=	libgpg-error
 SUBDIR+=	libidea
 SUBDIR+=	libident
 SUBDIR+=	libmcrypt
