@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/07/21 16:43:21 martti Exp $
+# $NetBSD: Makefile,v 1.22 2003/08/09 10:44:40 seb Exp $
 
 DISTNAME=	g-wrap-1.3.4
 PKGREVISION=	3
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnucash.org/pub/g-wrap/source/
 
 MAINTAINER=	rh@NetBSD.org
-HOMEPAGE=	http://web.mit.edu/chlee/www/Software/g-wrap/index.html
+HOMEPAGE=	http://www.gnucash.org/
 COMMENT=	Tool for importing types, functions, and constants into guile
 
 DEPENDS+=	guile-slib>=2.4.2:../../devel/guile-slib
