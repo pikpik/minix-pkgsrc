@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Tue Apr  2 06:45:37 2002
+--- configure.orig	Sun Jun 16 00:58:22 2002
 +++ configure
-@@ -8016,7 +8016,7 @@
+@@ -10391,7 +10391,7 @@
  
  # AM_GLIB_GNU_GETTEXT above substs $DATADIRNAME
  # this is the directory where the *.{mo,gmo} files are installed
@@ -10,4 +10,4 @@ $NetBSD$
 +gtklocaledir='${prefix}/${PKGLOCALEDIR}/locale'
  
  
- echo $ac_n "checking for extra flags to get ANSI library prototypes""... $ac_c" 1>&6
+ echo "$as_me:$LINENO: checking for extra flags to get ANSI library prototypes" >&5

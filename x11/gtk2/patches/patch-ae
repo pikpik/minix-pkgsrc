@@ -1,13 +1,12 @@
 $NetBSD$
 
---- demos/gtk-demo/Makefile.in.orig	Tue Apr  2 06:50:50 2002
+--- demos/gtk-demo/Makefile.in.orig	Sun Jun 16 01:16:32 2002
 +++ demos/gtk-demo/Makefile.in
-@@ -183,7 +183,7 @@
- DEPS =  	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@ 					$(top_builddir)/gtk/@gtktargetlib@
+@@ -216,6 +216,7 @@
  
  
--LDADDS = @STRIP_BEGIN@ 								$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@        				$(top_builddir)/gtk/@gtktargetlib@ 				@STRIP_END@
-+LDADDS = @STRIP_BEGIN@ @LDFLAGS@								$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@        				$(top_builddir)/gtk/@gtktargetlib@ 				@STRIP_END@
- 
- 
- bin_PROGRAMS = gtk-demo
+ LDADDS = @STRIP_BEGIN@ 							\
++	@LDFLAGS@							\
+ 	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la	\
+ 	$(top_builddir)/gdk/@gdktargetlib@        			\
+ 	$(top_builddir)/gtk/@gtktargetlib@ 				\
