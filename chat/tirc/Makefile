@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/09/28 09:13:56 jlam Exp $
 #
 
 DISTNAME=	tirc-1.2
@@ -13,6 +13,8 @@ USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+="--with-ansi-colours"
+
+LIBS.SunOS+=	-lnsl -lsocket
 
 post-patch:
 	${SED} "s,/usr/local,${PREFIX},g" ${WRKSRC}/tirc.1		\
