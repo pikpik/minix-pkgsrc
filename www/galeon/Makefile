@@ -21,11 +21,13 @@ DEPENDS+=	libxml>=1.8.13:../../textproc/libxml
 DEPENDS+=	libiconv>=1.6.1:../../converters/libiconv
 
 USE_X11BASE=	yes
+USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-mozilla-includes=${PREFIX}/include/mozilla \
 		 --with-mozilla-libs=${PREFIX}/lib/mozilla \
 		--with-libiconv=${LOCALBASE} \
 		--disable-applet
+USE_LIBINTL=	yes
 
 MOZ_LIBDIR=     ${PREFIX}/lib/mozilla
 LDFLAGS+=       -Wl,-R${MOZ_LIBDIR}
