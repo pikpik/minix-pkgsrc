@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 1999/05/13 00:04:22 hubertf Exp $
+# $NetBSD: Makefile,v 1.34 1999/06/05 23:55:27 hubertf Exp $
 #
 
     SUBDIR += amp
@@ -39,6 +39,7 @@
     SUBDIR += mbrolavox-en1
     SUBDIR += mikmod
     SUBDIR += mpg123
+    SUBDIR += musicbox
     SUBDIR += nas
     SUBDIR += nspmod
     SUBDIR += rplay
