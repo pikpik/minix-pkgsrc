@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:06:42 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/06/23 19:37:30 jlam Exp $
 #
 
 PKGNAME=	qt2-examples-${QTVERSION}
@@ -6,7 +6,7 @@ COMMENT=	QT2 Tutorial, example code and HTML documentation
 
 .include "../qt2-libs/Makefile.common"
 
-NO_BUILDLINK_ONLY=		yes
+USE_BUILDLINK_ONLY=		yes
 BUILDLINK_DEPENDS.qt2-libs=	qt2-libs-${QTVERSION}
 
 CONFIGURE_ENV+=	QTDIR=${QTPREFIX}
