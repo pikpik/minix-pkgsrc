@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:25:03 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 16:32:11 martti Exp $
 #
 
 DISTNAME=	gnucap-0.33
@@ -14,8 +14,8 @@ USE_GMAKE=		YES
 USE_GNU_READLINE=	YES
 
 do-build:
-	@cd ${WRKSRC}/modelgen && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${LOWER_OPSYS}
-	@cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${LOWER_OPSYS}
+	@cd ${WRKSRC}/modelgen && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} pkgsrc
+	@cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} pkgsrc
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/*/gnucap ${PREFIX}/bin/
