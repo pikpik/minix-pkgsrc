@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/03/28 19:44:05 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/24 09:08:48 xtraeme Exp $
 #
 
 DISTNAME=		jabberd-2.0s2
@@ -40,7 +40,7 @@ BUILD_DEFS+=	JABBERD_USER JABBERD_STATIC				\
 # This specify the actual method which will be used for authenticate
 # the users/accounts.
 #
-# JABBERD_AUTH_METOD has 4 available options:
+# JABBERD_AUTH_METHOD has 4 available options:
 #
 # db (by default)
 # mysql (MySQL)
