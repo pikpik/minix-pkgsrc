@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:21:10 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/11 18:03:49 xtraeme Exp $
 #
 
 DISTNAME=	fastjar-0.93
@@ -10,8 +10,12 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://fastjar.sourceforge.net/
 COMMENT=	C language version of the 'jar' archiver normally used by Java
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 GNU_CONFIGURE=	YES
 USE_BUILDLINK3=	YES
+
+INSTALLATION_DIRS=	man/man1
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/fastjar.1 ${PREFIX}/man/man1
