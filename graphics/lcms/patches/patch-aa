@@ -1,8 +1,8 @@
 $NetBSD$
 
---- include/lcms.h.orig	2004-05-19 04:09:56.000000000 -0500
+--- include/lcms.h.orig	2004-12-13 09:00:59.000000000 +0000
 +++ include/lcms.h
-@@ -73,7 +73,7 @@
+@@ -74,7 +74,7 @@
  
  // Metroworks CodeWarrior
  
