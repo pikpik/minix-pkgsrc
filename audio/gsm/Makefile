@@ -3,7 +3,7 @@
 # Date created:		5 January 1995
 # Whom:			pst
 #
-# $NetBSD: Makefile,v 1.2 1997/10/28 23:46:46 augustss Exp $
+# $NetBSD: Makefile,v 1.3 1997/11/14 14:09:42 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/07/17 15:12:39 max Exp 
 #
 
@@ -21,6 +21,6 @@ MAN1=		toast.1
 MAN3=		gsm.3 gsm_explode.3 gsm_option.3 gsm_print.3
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
+	${LDCONFIG} -m ${PREFIX}/lib || /usr/bin/true
 
 .include <bsd.port.mk>
