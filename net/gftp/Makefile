@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/05/16 20:23:40 tron Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/21 15:07:22 wiz Exp $
 
 DISTNAME=	gftp-2.0.8
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://gftp.seul.org/					\
 		ftp://gftp.seul.org/pub/gftp/				\
