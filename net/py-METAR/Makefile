@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2004/05/11 04:01:39 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/22 09:16:04 recht Exp $
 #
 
 DISTNAME=	pymetar-0.4
 PKGNAME=	${PYPKGPREFIX}-pymetar-0.4
 CATEGORIES=	net python
-MASTER_SITES=	http://unattached.i-no.de/pkgs/
+MASTER_SITES=	http://www.schwarzvogel.de/pkgs/
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://unattached.i-no.de/software-pymetar.shtml
+HOMEPAGE=	http://www.schwarzvogel.de/software-pymetar.shtml
 COMMENT=	Downloads weather reports
 
 PYDISTUTILSPKG=	yes
