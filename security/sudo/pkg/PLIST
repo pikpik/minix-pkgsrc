@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/sudo
 sbin/visudo
 etc/sudoers
