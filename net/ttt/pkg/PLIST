@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/ttt
+bin/tttprobe
+bin/tttview
+lib/ttt/ttt.tcl
+@dirrm lib/ttt
