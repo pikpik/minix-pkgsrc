@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/04/26 19:30:26 garbled Exp $
+# $NetBSD: Makefile,v 1.14 1999/05/02 22:33:05 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/09/14 04:00:00 jfitz Exp
 #
 
@@ -15,6 +15,9 @@ DEPENDS+=		tk-8.0.5:../../x11/tk80
 
 USE_PERL5=		YES
 USE_X11=		yes
+
+post-extract:
+	@${RM} -f ${WRKSRC}/blib.pm
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/perl Makefile.PL
