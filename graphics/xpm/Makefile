@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/22 12:39:48 agc Exp $
+# $NetBSD: Makefile,v 1.10 1998/07/04 09:14:52 mycroft Exp $
 #
 
 DISTNAME=       xpm-3.4k
@@ -10,8 +10,5 @@ MAINTAINER=	mycroft@netbsd.org
 CONFLICTS=	xpm-3.4j
 
 USE_IMAKE=	yes
-
-post-install:
-	${LDCONFIG} || ${TRUE}
 
 .include "../../mk/bsd.pkg.mk"
