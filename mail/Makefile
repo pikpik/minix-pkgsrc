@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2002/01/23 14:53:56 jlam Exp $
+# $NetBSD: Makefile,v 1.117 2002/01/24 07:24:33 jlam Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -8,6 +8,8 @@ SUBDIR+=	bulk_mailer
 SUBDIR+=	coolmail
 SUBDIR+=	courier-auth
 SUBDIR+=	courier-authldap
+SUBDIR+=	courier-authmysql
+SUBDIR+=	courier-authpgsql
 SUBDIR+=	courier-imap
 SUBDIR+=	courier-maildirmake
 SUBDIR+=	cucipop
