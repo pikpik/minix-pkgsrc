@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 1999/11/10 18:41:45 fredb Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 17:07:05 wiz Exp $
 #
 
 DISTNAME=	xearth-1.1
+PKGNAME=	xearth-1.1nb1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://cag.lcs.mit.edu/pub/tuna/ \
 		ftp://ftp.cs.colorado.edu/users/tuna/
