@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.4509 2004/01/19 20:19:04 wiz Exp $
+$NetBSD: CHANGES,v 1.4510 2004/01/20 02:50:30 jschauma Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -347,3 +347,4 @@ Changes to the packages collection and infrastructure in 2004:
 	Updated MesaDemos to 6.0 [jschauma 2004-01-19]
 	Updated glu to 6.0 [jschauma 2004-01-19]
 	Updated glut to 6.0 [jschauma 2004-01-19]
+	Updated stunnel to 4.04nb3 [grant 2004-01-20]
