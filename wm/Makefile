@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/06/03 16:07:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.45 2003/07/21 17:33:57 martti Exp $
 #
 
 COMMENT=	Window managers (for X)
@@ -21,6 +21,7 @@ SUBDIR+=	ethemes
 SUBDIR+=	evilwm
 SUBDIR+=	fluxbox
 SUBDIR+=	flwm
+#SUBDIR+=	fvwm-devel	# conflicts with other fvwm packages
 SUBDIR+=	fvwm1
 SUBDIR+=	fvwm2
 SUBDIR+=	fvwm2-themes
