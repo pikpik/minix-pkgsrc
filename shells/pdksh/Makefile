@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/16 14:10:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:23 grant Exp $
 #
 
 DISTNAME=	pdksh-5.2.14
@@ -15,9 +15,7 @@ MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://web.cs.mun.ca/~michael/pdksh/
 COMMENT=	Free clone of the AT&T Korn shell
 
-# pdksh is needed to bootstrap buildlink2 on some systems.
-USE_BUILDLINK2=	no
-
+USE_BUILDLINK2=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=pd
 
@@ -25,5 +23,3 @@ USE_PKGINSTALL=	yes
 PKG_SHELL=	${PREFIX}/bin/pdksh
 
 .include "../../mk/bsd.pkg.mk"
-
-LDFLAGS=	# empty
