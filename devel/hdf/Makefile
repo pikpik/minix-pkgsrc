@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/03/22 23:19:16 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/25 01:09:49 jtb Exp $
 
 DISTNAME=	HDF4.1r4
 PKGNAME=	hdf-4.1r4
@@ -46,7 +46,7 @@ post-patch:
 	${WRKSRC}/mfhdf/ncgen/hdfncgen.1
 
 pre-configure:
-	${CC} ${FILESDIR}/bytesex.c -o ${WRKSRC}/bytesex
+	${CC} ${CFLAGS} ${FILESDIR}/bytesex.c -o ${WRKSRC}/bytesex
 
 SWAP=	`${WRKSRC}/bytesex`
 
