@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1997/11/26 12:55:18 agc Exp $
+# $NetBSD: Makefile,v 1.3 1997/12/29 19:15:02 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -24,5 +24,6 @@
 #    SUBDIR += wine
 #    SUBDIR += x48
 #    SUBDIR += xgs
+   SUBDIR += xmame
 
 .include <bsd.port.subdir.mk>
