@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/04/15 20:39:49 tron Exp $
+# $NetBSD: Makefile,v 1.9 1999/06/14 01:28:13 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
 #
 
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://ftp.rxvt.org/pub/rxvt/ \
 			ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin.X11/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		gcw@rxvt.org
 HOMEPAGE=		http://www.rxvt.org/
 
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
