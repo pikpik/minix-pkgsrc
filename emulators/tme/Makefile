@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/23 08:21:54 skrll Exp $
 #
 
 DISTNAME=		tme-0.2
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		http://theory.lcs.mit.edu/~fredette/tme/
 
@@ -15,6 +16,8 @@ USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
+
+CONFIGURE_ARGS+=	--disable-debug
 
 .include "../../devel/libtool/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
