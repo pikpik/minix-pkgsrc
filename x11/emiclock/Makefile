@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/02/04 02:47:01 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/06/10 00:16:25 hubertf Exp $
 #
 
 DISTNAME=	emiclock-1.0.4
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.plaza.hitachi-sk.co.jp/pub/EmiClock/X11/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	minoura@netbsd.org
 
 DEPENDS=	Xaw3d-1.5:../../x11/Xaw3d
 
