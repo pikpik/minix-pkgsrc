@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/05/16 09:48:58 abs Exp $
+# $NetBSD: Makefile,v 1.3 2001/05/16 15:28:42 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -79,7 +79,6 @@ pre-install:
 		-e "s|@PGHOME@|${PGHOME}|g"				\
 		-e "s|@ADDUSER@|${ADDUSER}|g"				\
 		-e "s|@ADDGROUP@|${ADDGROUP}|g"				\
-		-e "s|@CAT@|${CAT}|g"					\
 		-e "s|@CHGRP@|${CHGRP}|g"				\
 		-e "s|@CHOWN@|${CHOWN}|g"				\
 		-e "s|@GREP@|${GREP}|g"					\
