@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/dillo
+share/examples/dillo/dillorc
+@dirrm share/examples/dillo
