@@ -1,16 +1,22 @@
-# $NetBSD: Makefile,v 1.8 2002/03/13 17:38:05 fredb Exp $
+# $NetBSD: Makefile,v 1.9 2002/03/19 15:34:33 wiz Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
-
 COMMENT=	Screen saver and locker for the X window system (with GNOME support)
 
-DEPENDS+=	control-center>=1.4.0.1nb1:../../x11/controlcenter
+BUILDLINK_DEPENDS.control-center=	control-center>=1.4.0.1nb1
 
-CONFLICTS+=	xscreensaver-[0-9]*
+CONFLICTS+=		xscreensaver-[0-9]*
 
+USE_BUILDLINK_ONLY=	yes
+
+.include "../../x11/xscreensaver/Makefile.common"
+
+CONFIGURE_ARGS+=	--with-gnome=${BUILDLINK_DIR}
 CONFIGURE_ARGS+=	--with-configdir=${PREFIX}/share/control-center/screensavers
 
 PLIST_SRC=	${.CURDIR}/PLIST
 
-.include "../../x11/xscreensaver/Makefile.common"
+.include "../../x11/controlcenter/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
+.include "../../mk/bsd.pkg.mk"
