@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/02 22:20:52 rh Exp $
 #
 
 DISTNAME=		utils-${PKGVERSION}
@@ -14,6 +14,8 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.geda.seul.org/
 
 DEPENDS+=		libgeda-${PKGVERSION}:../../cad/libgeda
+
+CONFLICTS+=		gEDA<19991011
 
 DIST_SUBDIR=		geda
 PKGVERSION=		19991011
