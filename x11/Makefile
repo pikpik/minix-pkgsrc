@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.357 2004/07/11 06:22:56 martti Exp $
+# $NetBSD: Makefile,v 1.358 2004/07/29 04:53:55 xtraeme Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -165,6 +165,7 @@ SUBDIR+=	p5-gtk2
 SUBDIR+=	paragui
 SUBDIR+=	py-Pmw
 SUBDIR+=	py-Tk
+SUBDIR+=	py-Xlib
 SUBDIR+=	py-gnome2
 SUBDIR+=	py-gtk2
 SUBDIR+=	py-qt2
