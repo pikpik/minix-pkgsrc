@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2000/11/18 00:39:32 tv Exp $
+# $NetBSD: Makefile,v 1.76 2000/11/21 16:34:53 skrll Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -26,6 +26,7 @@
     SUBDIR += guile
     SUBDIR += hugs
     SUBDIR += icon
+    SUBDIR += intercal
     SUBDIR += japhar
     SUBDIR += java-lang-spec
     SUBDIR += java-vm-spec
