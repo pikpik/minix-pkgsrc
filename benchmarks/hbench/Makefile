@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/12/03 01:27:05 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 1998/12/26 15:59:55 garbled Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.eecs.harvard.edu/pub/hbench-OS/
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.eecs.harvard.edu/vino/perf/hbench/
 
-DEPENDS+=		gnuplot-3.5:../../graphics/gnuplot
+DEPENDS+=		gnuplot-3.7:../../graphics/gnuplot
 
 ALL_TARGET=		build
 USE_PERL5=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/01/29 21:21:56 tron Exp $
+# $NetBSD: Makefile,v 1.8 1999/01/29 21:24:04 tron Exp $
 #
 
 DISTNAME=		xfinans-5.9
@@ -10,7 +10,7 @@ MASTER_SITE_SUBDIR=	apps/financial/accounting
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.cs.auc.dk/~lupus/xfinans.html
 
-DEPENDS=		gnuplot-3.5:../../graphics/gnuplot
+DEPENDS=		gnuplot-3.7:../../graphics/gnuplot
 
 USE_IMAKE=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/12/25 21:41:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1999/01/07 15:34:54 frueauf Exp $
 
 DISTNAME=       siag-3.1.2
 CATEGORIES=     misc textproc math
@@ -9,7 +9,7 @@ HOMEPAGE=       http://www.edu.stockholm.se/siag/
 
 DEPENDS+=	Xaw3d-1.5:../../x11/Xaw3d
 DEPENDS+=	gv-3.5.8:../../print/gv
-DEPENDS+=	gnuplot-3.5:../../graphics/gnuplot
+DEPENDS+=	gnuplot-3.7:../../graphics/gnuplot
 DEPENDS+=	guile-1.3:../../lang/guile
 
 GNU_CONFIGURE=  yes
