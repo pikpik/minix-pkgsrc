@@ -1,10 +1,10 @@
 $NetBSD$
 
---- doc/BitchX.1.orig	Mon Jan  8 17:24:22 2001
-+++ doc/BitchX.1
-@@ -171,14 +171,14 @@ is not there, this file is loaded on sta
+--- doc/BitchX.1.orig	Sat Mar 31 00:58:28 2001
++++ doc/BitchX.1	Thu Jan 30 23:37:53 2003
+@@ -167,14 +167,14 @@
  .I ~/.ircservers
- contains a list of IRC servers to cycle through.
+ Contains a list of IRC servers to cycle through.
  .TP
 -.I /usr/local/lib/bx/
 +.I @PREFIX@/share/bx/
@@ -19,7 +19,7 @@ $NetBSD$
  .TP
  .I ~/.BitchX/BitchX.formats
  Personal 
-@@ -186,12 +186,12 @@ Personal 
+@@ -182,12 +182,12 @@
  display formats.
  .TP
  .I ~/.BitchX/BitchX.reasons
