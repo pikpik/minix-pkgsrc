@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.26 2004/04/01 18:18:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/06/05 00:30:01 xtraeme Exp $
 
-DISTNAME=		libbonobo-2.6.0
+DISTNAME=		libbonobo-2.6.2
 CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libbonobo/2.6/}
 EXTRACT_SUFX=		.tar.bz2
@@ -30,6 +30,10 @@ PKG_SYSCONFSUBDIR=	bonobo-activation
 EGDIR=			${PREFIX}/share/examples/bonobo-activation
 CONF_FILES=		${EGDIR}/bonobo-activation-config.xml \
 			${PKG_SYSCONFDIR}/bonobo-activation-config.xml
+
+PRINT_PLIST_AWK+=	/^@dirrm lib\/(bonobo|bonobo\/monikers)$$/ \
+				{ print "@unexec $${RMDIR} %D/" $$2 \
+				  " 2>/dev/null || $${TRUE}"; next; }
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
