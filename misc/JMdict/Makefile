@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:21:01 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/07 17:49:45 wiz Exp $
 #
 
 DISTNAME=	JMdict
-PKGNAME=	JMdict-2003.012
+PKGNAME=	JMdict-2004.02
 CATEGORIES=	japanese misc
 MASTER_SITES=	ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
 		http://japanology.arts.kuleuven.ac.be/mirrors/monash/ \
