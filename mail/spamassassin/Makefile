@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/09/13 17:17:09 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2003/09/13 17:57:21 jlam Exp $
 
 DISTNAME=	Mail-SpamAssassin-2.55
 PKGNAME=	spamassassin-2.55
@@ -105,6 +105,9 @@ post-patch:
 .endfor
 
 pre-configure: perl5-configure
+
+post-build:
+	@${FIND} ${WRKSRC} -name "*.orig" -print | ${XARGS} ${RM} -f
 
 pre-install:
 	@-${TEST} -r ${PLIST_ADD} && ${RM} ${PLIST_ADD} ; :
