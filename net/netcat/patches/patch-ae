@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.4 2003/05/24 19:31:21 heinz Exp $
 
 --- Makefile.orig	Wed Mar 20 04:16:06 1996
 +++ Makefile
@@ -112,8 +112,9 @@ $NetBSD$
 +	${MAKE} -e $(ALL) $(MFLAGS) XFLAGS='-DNEXT' STATIC=-Bstatic
  
  # start with this for a new architecture, and see what breaks.
- generic:
+-generic:
 -	make -e $(ALL) $(MFLAGS) XFLAGS='-DGENERIC' STATIC=
++generic darwin:
 +	${MAKE} -e $(ALL) $(MFLAGS) XFLAGS='-DGENERIC' STATIC=
  
  # Still at large: dgux dynix ???
