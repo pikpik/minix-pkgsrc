@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/07/09 12:34:57 mycroft Exp $
-bin/xmess
-share/xmess/xmessrc
-@dirrm share/xmess
