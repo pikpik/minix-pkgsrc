@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/03/14 16:20:58 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/22 16:34:52 wiz Exp $
 #
 
-DISTNAME=		dutil214
-PKGNAME=		DatUtil-2.14
+DISTNAME=		dutil215
+PKGNAME=		DatUtil-2.15
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.logiqx.com/Tools/DatUtil/
 EXTRACT_SUFX=		.zip
@@ -17,6 +17,8 @@ WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile
 BUILD_TARGET=		datutil
 EXTRACT_CMD_OPTS.zip=	-Laaqo
+
+BUILDLINK_DEPENDS.DatLib+=	DatLib>=2.3
 
 post-extract:
 	${MKDIR} ${WRKSRC}/obj
