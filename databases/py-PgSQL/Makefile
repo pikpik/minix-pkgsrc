@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/07/22 19:30:35 recht Exp $
+# $NetBSD: Makefile,v 1.8 2004/07/24 22:45:15 recht Exp $
 #
 
 DISTNAME=	pyPgSQL-2.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pypgsql/}
 
