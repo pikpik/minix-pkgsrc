@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:42:18 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/09 20:36:47 agc Exp $
 #
 
 DISTNAME=	sysgen
 PKGNAME=	sysgen-1.0
-CATEGORIES=	systools
+CATEGORIES=	sysutils
 MASTER_SITES=	http://ox.compsoc.net/~dankolb/sysgen/
 EXTRACT_SUFX=	.tar.Z
 
