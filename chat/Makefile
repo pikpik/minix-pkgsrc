@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/03/06 18:40:50 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/03/10 15:04:15 wiz Exp $
 #
 
 COMMENT=	communication programs
@@ -21,6 +21,7 @@ SUBDIR+=	kxicq
 SUBDIR+=	libirc
 SUBDIR+=	micq
 SUBDIR+=	sirc
+SUBDIR+=	tirc
 SUBDIR+=	tkicb
 SUBDIR+=	tkirc
 SUBDIR+=	xchat
