@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:07:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/01 09:41:15 jlam Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
@@ -8,6 +8,8 @@ COMMENT=	Screen saver and locker for the X window system (with GNOME support)
 DEPENDS+=	control-center>=1.2.0:../../x11/controlcenter
 
 CONFLICTS+=	xscreensaver-[0-9]*
+
+CONFIGURE_ARGS+=	--with-configdir=${PREFIX}/share/control-center/screensavers
 
 PLIST_SRC=	${.CURDIR}/PLIST
 
