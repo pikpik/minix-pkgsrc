@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/numlockx
+share/doc/numlockx/README
+@dirrm share/doc/numlockx
