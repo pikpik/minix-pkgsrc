@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.7 2004/03/08 19:52:52 minskim Exp $
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2004/03/08 20:07:40 minskim Exp $
 
 .if !defined(TK_BUILDLINK2_MK)
 TK_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		tk
-BUILDLINK_DEPENDS.tk?=		tk>=8.3.4
+BUILDLINK_DEPENDS.tk?=		tk-8.3.4*
 BUILDLINK_PKGSRCDIR.tk?=	../../x11/tk83
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.tk=tk
