@@ -3,12 +3,14 @@
 # Date created:         10 Feb 1998
 # Whom:                 tv@netbsd.org
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/02/12 17:12:03 agc Exp $
 #
 
 DISTNAME=       depot-5.14
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.andrew.cmu.edu/pub/depot/alpha/
+
+MAINTAINER=	packages@netbsd.org
 
 GNU_CONFIGURE=	yes
 
