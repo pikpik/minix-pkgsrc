@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/06/11 06:34:48 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/27 23:18:40 jlam Exp $
 #
 
 DISTNAME=	pam_ldap
@@ -23,11 +23,6 @@ CONFIGURE_ARGS+=--with-ldap-dir=${PREFIX}
 INSTALL_TARGET=	install install-data
 
 VERSION=	77
-
-post-configure:		# prevent starting of autoconf
-.for file in aclocal.m4 Makefile.in Makefile stamp-h.in stamp-h
-	cd ${WRKSRC} && ${TOUCH} ${file}
-.endfor
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/pam-ldap
