@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/antonym
+share/examples/antonym/README
+share/examples/antonym/dot.antonym
+@dirrm share/examples/antonym
