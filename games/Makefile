@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.110 2001/01/26 18:25:28 abs Exp $
+# $NetBSD: Makefile,v 1.111 2001/02/16 15:51:50 wiz Exp $
 #
 
 COMMENT=	Games
 
+SUBDIR+=	0verkill
 SUBDIR+=	abuse
 SUBDIR+=	amor
 SUBDIR+=	angband-tty
