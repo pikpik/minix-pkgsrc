@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/08 04:21:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2003/02/04 02:42:21 dmcmahill Exp $
 #
 
 DISTNAME=	covered-${SNAPDATE}
@@ -13,6 +13,8 @@ COMMENT=	Verilog code coverage analyzer
 BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
 BUILD_DEPENDS+=	gperf-2.7.2:../../devel/gperf
 DEPENDS+=	verilog{,-current}-[0-9]*:../../cad/verilog
+
+CONFLICTS+=     covered-[0-9]*
 
 SNAPDATE=	20021214
 GNU_CONFIGURE=	YES
