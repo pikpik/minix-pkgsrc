@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/02 15:22:26 mjl Exp $
 #
 
-DISTNAME=		Class-ReturnValue-0.40
+DISTNAME=		Class-ReturnValue-0.51
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5clrv
 CATEGORIES=		devel perl5
