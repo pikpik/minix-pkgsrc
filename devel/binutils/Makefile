@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/08/07 19:06:59 jschauma Exp $
+# $NetBSD: Makefile,v 1.23 2004/08/13 18:47:49 jlam Exp $
 
 DISTNAME=	binutils-2.15
 PKGNAME=	binutils-2.15.0.0
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.gnu.org/directory/binutils.html
 COMMENT=	GNU binary utilities
 
 CONFLICTS=	avr-binutils<2.13.2.1nb1
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
