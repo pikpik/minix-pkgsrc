@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2001/03/05 19:17:17 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/08/19 04:48:36 jlam Exp $
 #
 
-DISTNAME=	fidogate-4.4.2
+DISTNAME=	fidogate-4.4.4
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.fido.de/pub/fidogate/
 
