@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/01/21 03:09:35 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2000/02/05 14:58:30 wiz Exp $
 #
 
 DISTNAME=	pth-1.3b1
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://alpha.gnu.org/gnu/pth/
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/pth/pth.html
+
+IGNORE=         "superceded by pth package"
 
 CONFLICTS=	pth-*
 
