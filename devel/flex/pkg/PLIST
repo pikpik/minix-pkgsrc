@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/flex
+bin/flex++
+include/FlexLexer.h
+lib/libfl.a
+man/man1/flex.1
