@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/10 14:26:38 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:26:33 grant Exp $
 #
 
 DISTNAME=	zephyr-mode-2.5.20
@@ -11,7 +11,7 @@ COMMENT=	CMU Emacs-based Zephyr client
 
 DEPENDS=	tzc>=2.6.15:../../chat/tzc
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
 .include "../../mk/emacs.mk"
 
