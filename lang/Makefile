@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2004/03/28 20:43:03 jmmv Exp $
+# $NetBSD: Makefile,v 1.171 2004/04/06 17:02:52 xtraeme Exp $
 #
 
 COMMENT=	Programming languages
@@ -94,6 +94,7 @@ SUBDIR+=	p2c
 SUBDIR+=	parrot
 SUBDIR+=	perl5
 SUBDIR+=	perl58
+SUBDIR+=	perl58-thread
 SUBDIR+=	pforth
 SUBDIR+=	pgcc
 SUBDIR+=	pnet
