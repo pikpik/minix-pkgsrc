@@ -1,8 +1,9 @@
 $NetBSD$
 
---- ./rfsv/Makefile.orig	Tue Feb  2 21:16:15 1999
-+++ ./rfsv/Makefile	Mon Dec  6 11:04:20 1999
-@@ -4,13 +4,13 @@
+--- rfsv/Makefile.orig	Tue Feb  2 12:16:15 1999
++++ rfsv/Makefile
+@@ -3,14 +3,14 @@
+ 
  OBJ=$(CCSOURCE:%.cc=%.o) $(CSOURCE:%.c=%.o)
  
 -../bin/rfsv : $(OBJ)
