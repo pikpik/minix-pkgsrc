@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/26 19:15:38 garbled Exp $
+# $NetBSD: Makefile,v 1.6 1999/07/07 20:49:24 tron Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.14
@@ -11,7 +11,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.dtek.chalmers.se/~d3august/xt/index.html
 
 DEPENDS+=	Mesa-3.0:../../graphics/Mesa
-DEPENDS+=	gtkglarea-1.1:../../x11/gtkglarea
+DEPENDS+=	gtkglarea-1.2.1:../../x11/gtkglarea
 DEPENDS+=	tiff-3.4:../../graphics/tiff
 
 USE_X11=	yes
