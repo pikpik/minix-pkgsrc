@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.172 2004/03/29 19:01:57 tv Exp $
+# $NetBSD: Makefile,v 1.173 2004/03/30 18:07:59 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -36,6 +36,7 @@ SUBDIR+=	fprot-workstation-bin
 SUBDIR+=	fragroute
 SUBDIR+=	fressh
 SUBDIR+=	fsh
+SUBDIR+=	gnome-keyring
 SUBDIR+=	gnupg
 SUBDIR+=	gnutls
 SUBDIR+=	gpa
