@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/11/22 18:55:04 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/12/09 18:28:12 dmcmahill Exp $
 #
 
 DISTNAME=	ipal-20001122
@@ -15,5 +15,8 @@ DEPENDS+=       gtk+>=1.2.7:../../x11/gtk
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 USE_X11=	YES
+
+post-patch:
+	${CHMOD} a+x ${WRKSRC}/configure
 
 .include "../../mk/bsd.pkg.mk"
