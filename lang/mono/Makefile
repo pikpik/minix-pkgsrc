@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/10/03 00:15:01 tv Exp $
+# $NetBSD: Makefile,v 1.31 2004/11/22 13:42:42 adam Exp $
 
 DISTNAME=	mono-1.0.4
 CATEGORIES=	lang
@@ -16,6 +16,9 @@ CONFLICTS=	pnet-[0-9]*
 NOT_FOR_PLATFORM=	NetBSD-1.[0-5]*-*
 NOT_FOR_PLATFORM+=	NetBSD-1.6-* NetBSD-1.6.*-*
 NOT_FOR_PLATFORM+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[AB]-*
+
+# LP64 problems
+NOT_FOR_PLATFORM+=	*-*-alpha *-*-sparc64 *-*-x86_64
 
 USE_GNU_TOOLS+=		make yacc
 USE_BUILDLINK3=		yes
