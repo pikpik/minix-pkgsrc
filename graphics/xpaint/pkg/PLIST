@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1998/02/05 11:44:14 agc Exp $
 bin/xpaint
 man/cat1/xpaint.0.gz
+lib/X11/doc/html/xpaint.1.html
 lib/X11/app-defaults/XPaint
