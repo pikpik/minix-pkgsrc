@@ -1,3 +1,4 @@
+@comment $NetBSD$
 etc/ftpaccess.example
 etc/ftpconversions.example
 etc/ftpusers.example
