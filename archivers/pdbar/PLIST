@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/pdbar
+include/prc.h
+lib/libprc.a
+man/man1/pdbar.1
