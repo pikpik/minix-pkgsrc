@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.37 2003/04/08 09:50:22 martti Exp $
+# $NetBSD: Makefile,v 1.38 2003/04/20 13:57:02 cjep Exp $
 
-DISTNAME=	mrtg-2.9.28
-PKGNAME=	mrtg-2.9.28
+DISTNAME=	mrtg-2.9.29
 CATEGORIES=	net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		http://gd.tuwien.ac.at/infosys/network/tools/mrtg/pub/ \
