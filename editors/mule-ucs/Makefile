@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/15 06:07:03 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/04 15:43:41 kei Exp $
 
 DISTNAME=	Mule-UCS-0.84
+PKGREVISION=	2
 CATEGORIES=	editors
-PKGREVISION=	1
 MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/Mule-UCS/
 
 MAINTAINER=	uebayasi@netbsd.org
