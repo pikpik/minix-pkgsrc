@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2003/12/29 00:02:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2004/01/03 18:49:40 reed Exp $
 
-DISTNAME=		gnome-games-2.4.1
-PKGREVISION=		1
+DISTNAME=		gnome-games-2.4.1.1
 CATEGORIES=		games gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-games/2.4/}
 EXTRACT_SUFX=		.tar.bz2
@@ -44,13 +43,6 @@ CONF_FILES+=		${EGDIR}/${conffile} ${PKG_SYSCONFDIR}/${conffile}
 .undef conffile
 
 FILES_SUBST+=		INSTALL="${INSTALL}"
-
-post-patch:
-	cd ${WRKSRC} &&							\
-	${CP} gnect/src/connect4.c gnect/src/connect4.c.broken &&	\
-	${SED} -e 's|/usr/share|${PREFIX}/share|'			\
-		< gnect/src/connect4.c.broken > gnect/src/connect4.c
-	${TOUCH} ${WRKSRC}/po/*.gmo
 
 GCONF2_SCHEMAS=		aisleriot.schemas
 GCONF2_SCHEMAS+=	blackjack.schemas
