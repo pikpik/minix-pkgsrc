@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+In order to enable POP service, you should add the following line
+to your /etc/inetd.conf:
+
+    pop3 stream tcp nowait root ${LOCALBASE}/libexec/qpopper qpopper -s
+
+===========================================================================
