@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/06/28 14:17:36 minskim Exp $
+# $NetBSD: Makefile,v 1.19 2004/10/03 00:14:51 tv Exp $
 #
 
 DISTNAME=	gle-3.1.0
@@ -19,6 +19,7 @@ USE_BUILDLINK3=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+LIBS+=			-lXext
 
 .include "../../graphics/Mesa/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
