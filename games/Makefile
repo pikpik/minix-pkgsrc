@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.243 2005/02/20 16:20:48 minskim Exp $
+# $NetBSD: Makefile,v 1.244 2005/02/28 02:49:52 ben Exp $
 #
 
 COMMENT=	Games
@@ -149,6 +149,7 @@ SUBDIR+=	newvox
 SUBDIR+=	nighthawk
 SUBDIR+=	omega
 SUBDIR+=	openmortal
+SUBDIR+=	openttd
 SUBDIR+=	orbital_eunuchs_sniper
 SUBDIR+=	pag
 SUBDIR+=	plib
