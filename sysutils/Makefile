@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2001/10/23 10:30:59 agc Exp $
+# $NetBSD: Makefile,v 1.115 2001/11/15 15:47:56 taca Exp $
 #
 
 COMMENT=	System utilities
@@ -36,6 +36,7 @@ SUBDIR+=	gkrellm
 SUBDIR+=	gmc
 SUBDIR+=	gnome-vfs
 SUBDIR+=	gpart
+SUBDIR+=	grun
 SUBDIR+=	gtop
 SUBDIR+=	hfsutils
 SUBDIR+=	i2ocfg
