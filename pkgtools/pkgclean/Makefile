@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/22 20:02:41 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/07 02:01:38 jlam Exp $
 
-DISTNAME=	pkgclean-20040622
+DISTNAME=	pkgclean-20041014
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
