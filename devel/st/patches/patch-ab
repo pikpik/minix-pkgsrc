@@ -1,16 +1,8 @@
 $NetBSD$
 
---- examples/Makefile.orig	Sat Nov  3 13:18:42 2001
+--- examples/Makefile.orig	Mon Feb 18 20:26:38 2002
 +++ examples/Makefile
-@@ -38,6 +38,7 @@
- # IRIX_64
- # LINUX
- # LINUX_IA64
-+# NETBSD
- # OPENBSD
- # OSF1
- # SOLARIS
-@@ -58,9 +59,9 @@
+@@ -59,9 +59,9 @@
  OTHER_FLAGS =
  
  OBJDIR      = $(DEPTH)/$(TARGETDIR)
@@ -23,7 +15,7 @@ $NetBSD$
  
  LIBRESOLV   =
  EXTRALIBS   =
-@@ -68,7 +69,7 @@
+@@ -69,7 +69,7 @@
  ifeq ($(OS),)
  EXAMPLES    = unknown
  else
@@ -32,7 +24,7 @@ $NetBSD$
  endif
  
  
-@@ -92,17 +93,17 @@
+@@ -93,17 +93,17 @@
  
  all: $(EXAMPLES)
  
