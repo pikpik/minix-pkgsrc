@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/07/08 01:49:21 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2002/07/10 18:19:05 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -38,6 +38,7 @@ SUBDIR+=	ko-hanyang
 SUBDIR+=	ko-kaist
 SUBDIR+=	ko-mizi
 SUBDIR+=	ko-x11fonts
+SUBDIR+=	kochi-ttf
 SUBDIR+=	mglfonts
 SUBDIR+=	mkfontalias
 SUBDIR+=	mkfontscale
