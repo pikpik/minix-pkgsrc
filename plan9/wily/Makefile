@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/06/22 13:01:52 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/08/20 15:17:23 tsarna Exp $
 #
 
 DISTNAME=	wily-0.13.36
@@ -10,5 +10,6 @@ MAINTAINER=	agc@netbsd.org
 HOMEPAGE=	http://www.psrg.cs.usyd.edu.au/~gary/wily/
 
 GNU_CONFIGURE=	yes
+USE_X11=	yes
 
 .include "../../mk/bsd.pkg.mk"
