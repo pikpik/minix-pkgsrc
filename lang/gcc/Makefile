@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/01/13 00:34:55 tron Exp $
+# $NetBSD: Makefile,v 1.12 2001/01/29 11:34:29 wiz Exp $
 
 DISTNAME=		gcc-2.95.2
 CATEGORIES=		lang
@@ -57,7 +57,7 @@ post-patch:
 
 .if (${OPSYS} != SunOS)
 post-build:
-	for FILE in ${FILESDIR}/gcc.mk do \
+	for FILE in ${FILESDIR}/gcc.mk; do \
 	  ${SED} -e 's#@@MAKE@@#${MAKE}#g' \
 		 -e 's#@@PKGNAME@@#${PKGNAME}#g' \
 		 -e 's#@@PREFIX@@#${PREFIX}#g' \
