@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2004/07/06 16:28:52 recht Exp $
+# $NetBSD: Makefile,v 1.27 2004/10/03 00:14:38 tv Exp $
 #
 
 DISTNAME=	conglomerate-0.7.12
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=conglomerate/}
 
@@ -19,7 +19,7 @@ USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes
 USE_GNU_TOOLS+=		make
-USE_PERL5=		yes
+USE_PERL5=		build
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--enable-printing
