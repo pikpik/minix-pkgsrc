@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/13 17:53:29 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/22 14:33:19 wiz Exp $
 #
 
-DISTNAME=	gkrellm-1.0.7
+DISTNAME=	gkrellm-1.0.8
 CATEGORIES=	sysutils
-MASTER_SITES=	http://newweb.wt.net/~billw/
+MASTER_SITES=	http://web.wt.net/~billw/gkrellm/
 
 MAINTAINER=	anthony.mallet@ficus.yi.org
 HOMEPAGE=	http://gkrellm.net/
@@ -20,6 +20,8 @@ BINGRP=         kmem
 BINMODE=        2755
 
 ALL_TARGET=	netbsd
+
+MAKE_ENV+=	LOCALEDIR="${LOCALBASE}/locale"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/gkrellm ${PREFIX}/bin/gkrellm
