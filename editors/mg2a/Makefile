@@ -1,17 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/01 00:21:25 dmcmahill Exp $
-# Top level for mg2a package make... nothing unusual
-# in this package - john refling
-#
+# $NetBSD: refling $
 
 DISTNAME=       mg2a
-PKGNAME=	mg2a-1.10
+PKGNAME=	mg2a-1.11
 CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.wustl.edu/languages/c/unix-c/editors/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=	refling@comet.lbl.gov
-
-USE_CONFIGURE=	NO
+MAINTAINER=	tron@netbsd.org
 
 post-extract:
 	cd ${WRKSRC} ; ${CP} sys/bsd/Makefile .

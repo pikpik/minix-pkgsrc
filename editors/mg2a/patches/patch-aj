@@ -1,7 +1,7 @@
-$NetBSD$
+$NetBSD: patch-aj 00/05/31 16:39:52 refling $
 
---- ./mg.rc.orig	Thu Mar 30 08:35:35 2000
-+++ ./mg.rc	Thu Mar 30 08:35:35 2000
+--- mg.rc.orig	Wed May 31 16:36:33 2000
++++ mg.rc	Wed May 31 16:36:33 2000
 @@ -0,0 +1,51 @@
 +; Small key definition file for VT100 terminals using the termcap
 +; driver. This only works if XKEYS is defined during compilation.
