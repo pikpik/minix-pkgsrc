@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2004/06/26 03:55:25 ben Exp $
+# $NetBSD: Makefile,v 1.222 2004/07/03 03:22:04 xtraeme Exp $
 #
 
 COMMENT=	Games
@@ -24,6 +24,7 @@ SUBDIR+=	cgoban
 SUBDIR+=	cgoban-java
 SUBDIR+=	civctp-demo
 SUBDIR+=	clanbomber
+SUBDIR+=	cmatrix
 SUBDIR+=	colchess
 SUBDIR+=	colchess-book-colchess
 SUBDIR+=	colchess-book-large
