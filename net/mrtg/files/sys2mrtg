@@ -1,4 +1,5 @@
 #! @PREFIX@/bin/perl
+#	$NetBSD$
 
 
 if (@ARGV < 1)

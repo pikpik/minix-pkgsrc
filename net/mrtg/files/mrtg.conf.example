@@ -1,3 +1,5 @@
+#	$NetBSD$
+
 WorkDir: @PREFIX@/share/httpd/htdocs/mrtg
 Refresh: 300
 Interval: 5
