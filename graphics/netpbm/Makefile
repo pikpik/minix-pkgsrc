@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2002/03/14 22:21:42 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2002/03/15 11:04:29 wiz Exp $
 
 DISTNAME=	netpbm-9.25
 CATEGORIES=	graphics
@@ -16,7 +16,7 @@ USE_PERL5=		yes
 REPLACE_PERL=		pnm/pnmquant ppm/ppmfade ppm/ppmrainbow ppm/ppmshadow
 
 INSTALL_TARGET=	install-dev install
-MAKE_ENV+=	CC="${CC}" INSTALL="${INSTALL}"
+MAKE_ENV+=	CC="${CC}" INSTALL="${INSTALL}" STRIPFLAG="${STRIPFLAG}"
 MAKEFILE=	GNUmakefile
 
 .include "../../mk/bsd.prefs.mk"
