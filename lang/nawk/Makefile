@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/02/08 04:03:15 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2004/02/09 14:47:34 cjep Exp $
 #
 
 DISTNAME=       awk
@@ -12,6 +12,8 @@ COMMENT=	Brian Kernighan's pattern-directed scanning and processing language
 
 DIST_SUBDIR=	${PKGNAME}
 WRKSRC=		${WRKDIR}
+
+USE_GNU_TOOLS+=	yacc
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
