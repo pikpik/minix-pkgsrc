@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.3 2002/06/21 23:00:33 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:39:23 jlam Exp $
 
 .if !defined(TIFF_BUILDLINK2_MK)
 TIFF_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		tiff
-BUILDLINK_DEPENDS.tiff?=	tiff>=3.5.4
+BUILDLINK_DEPENDS.tiff?=	tiff>=3.6.1
 BUILDLINK_PKGSRCDIR.tiff?=	../../graphics/tiff
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.tiff=tiff
