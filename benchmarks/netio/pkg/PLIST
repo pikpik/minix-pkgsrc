@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/netio
+share/doc/netio/netio.doc
+@dirrm share/doc/netio
