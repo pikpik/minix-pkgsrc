@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.123 2001/03/26 23:27:22 mjl Exp $
+# $NetBSD: Makefile,v 1.124 2001/03/27 18:07:38 itojun Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -16,6 +16,7 @@ SUBDIR+=	ap-csacek
 SUBDIR+=	ap-dtcl
 SUBDIR+=	ap-fastcgi
 SUBDIR+=	ap-jserv
+SUBDIR+=	ap-jk
 SUBDIR+=	ap-perl
 SUBDIR+=	ap-php3
 SUBDIR+=	ap-php4
