@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/config/autoconf.mk.in ./config/autoconf.mk.in
 --- ../Orig/mozilla/config/autoconf.mk.in	2004-03-21 11:31:17.000000000 +0900
-+++ ./config/autoconf.mk.in	2004-05-05 23:08:22.000000000 +0900
++++ ./config/autoconf.mk.in	2004-06-15 23:55:36.000000000 +0900
 @@ -31,13 +31,13 @@
  prefix		= @prefix@
  exec_prefix	= @exec_prefix@

@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/gfx/src/ps/nsFontMetricsPS.cpp ./gfx/src/ps/nsFontMetricsPS.cpp
 --- ../Orig/mozilla/gfx/src/ps/nsFontMetricsPS.cpp	2004-02-05 10:57:05.000000000 +0900
-+++ ./gfx/src/ps/nsFontMetricsPS.cpp	2004-05-05 23:17:00.000000000 +0900
++++ ./gfx/src/ps/nsFontMetricsPS.cpp	2004-06-15 23:55:54.000000000 +0900
 @@ -1141,10 +1141,10 @@
    
    mPixelSize = NSToIntRound(app2dev * mFont->size);

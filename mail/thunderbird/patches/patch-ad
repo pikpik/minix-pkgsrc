@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/xptcinvoke_netbsd_m68k.cpp ./xpcom/reflect/xptcall/src/md/unix/xptcinvoke_netbsd_m68k.cpp
 --- ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/xptcinvoke_netbsd_m68k.cpp	2001-09-29 05:12:51.000000000 +0900
-+++ ./xpcom/reflect/xptcall/src/md/unix/xptcinvoke_netbsd_m68k.cpp	2004-05-05 23:09:42.000000000 +0900
++++ ./xpcom/reflect/xptcall/src/md/unix/xptcinvoke_netbsd_m68k.cpp	2004-06-15 23:55:46.000000000 +0900
 @@ -132,6 +132,15 @@
      }
  }
