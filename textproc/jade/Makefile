@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/06/25 03:47:38 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2001/09/02 17:07:01 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.15 1999/01/31 11:15:57 dirk Exp
 #
 
@@ -14,7 +14,7 @@ MAINTAINER=	rh@NetBSD.ORG
 HOMEPAGE=	http://www.jclark.com/jade/
 COMMENT=	Object-oriented SGML/XML parser toolkit and DSSSL engine
 
-CONFLICTS+=	sp-*
+CONFLICTS+=	sp-[0-9]*
 
 USE_BUILDLINK_ONLY=	yes
 GNU_CONFIGURE=		yes

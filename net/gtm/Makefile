@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/03/19 17:08:04 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/04/01 08:16:48 tron Exp $
 
 DISTNAME=	gtm-0.4.9
 CATEGORIES=	net gnome
@@ -8,8 +8,8 @@ MAINTAINER=	magick@zhadum.de
 HOMEPAGE=	http://gtm.sourceforge.net/
 COMMENT=	Gnome Transfer Manager
 
-DEPENDS+=	gnome-core-*:../../x11/gnome-core
-DEPENDS+=	wget-*:../../net/wget
+DEPENDS+=	gnome-core-[0-9]*:../../x11/gnome-core
+DEPENDS+=	wget-[0-9]*:../../net/wget
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 14:40:50 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/09/14 22:48:27 wiz Exp $
 #
 
 DISTNAME=		jed-B0.99-14
@@ -11,7 +11,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://space.mit.edu/%7Edavis/jed.html
 COMMENT=		Text editor with many features, extensible through S-Lang functions
 
-DEPENDS+=		libslang-*:../../devel/libslang
+DEPENDS+=		libslang-[0-9]*:../../devel/libslang
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-X

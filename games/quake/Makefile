@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 15:10:57 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/09/09 20:36:27 agc Exp $
 
 DISTNAME=	q1source
 PKGNAME=	quake-2.30
@@ -12,7 +12,7 @@ MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.idsoftware.com/
 COMMENT=	legendary first person shoot'em up game
 
-DEPENDS+=	quakedata-*:../../games/quakedata
+DEPENDS+=	quakedata-[0-9]*:../../games/quakedata
 
 ONLY_FOR_PLATFORM=	*-*-i386
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/08/22 02:16:31 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/08/29 22:41:05 jlam Exp $
 #
 
 DISTNAME=	ng-spice-rework-13
@@ -10,7 +10,7 @@ MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://ieee.ing.uniroma1.it/ngspice/
 COMMENT=	Next generation circuit simulation program
 
-CONFLICTS+=		spice-*
+CONFLICTS+=		spice-[0-9]*
 
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

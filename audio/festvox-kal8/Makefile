@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/07/14 12:37:49 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2001/07/18 15:19:42 wiz Exp $
 
 DISTNAME=	festvox_kallpc8k
 PKGNAME=	festvox-kal8-1.4.0
@@ -15,7 +15,7 @@ DEPENDS+=	festival>=1.4.0:../festival
 DEPENDS+=	festlex-poslex>=1.4.0:../festlex-poslex
 DEPENDS+=	festlex-cmu>=1.4.0:../festlex-cmu
 
-CONFLICTS=	festvox-kal16-*
+CONFLICTS=	festvox-kal16-[0-9]*
 
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/04/09 22:03:37 soren Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/13 19:18:24 soren Exp $
 
 DISTNAME=		pchar-1.4
 CATEGORIES=		net
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--with-ipv6
 
 # XXX Not fully integrated
 .if ${OPSYS} == "NetBSD"
-DEPENDS+=		ucd-snmp-*:../../net/ucd-snmp
+DEPENDS+=		ucd-snmp-[0-9]*:../../net/ucd-snmp
 CONFIGURE_ARGS+=	--with-snmp=${PREFIX}
 .endif
 

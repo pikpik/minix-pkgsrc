@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/05/19 03:56:41 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2001/06/24 05:57:23 itojun Exp $
 #
 
 DISTNAME=	w3m-0.2.1
@@ -16,7 +16,7 @@ COMMENT=	multilingualized version of a pager/text-based browser w3m
 
 DEPENDS=	boehm-gc>=5.3:../../devel/boehm-gc
 
-CONFLICTS+=	w3m-m17n-*
+CONFLICTS+=	w3m-m17n-[0-9]*
 
 HELPDIR=        share/doc/w3m
 HELPERDIR=      lib/w3m

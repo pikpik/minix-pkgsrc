@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/25 23:11:52 groo Exp $
+# $NetBSD: Makefile,v 1.2 2001/08/01 15:25:24 wiz Exp $
 
 DISTNAME=	cook-2.17
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	groo@netbsd.org
 HOMEPAGE=	http://www.canb.auug.org.au/~millerp/cook/cook.html
 COMMENT=	More powerful replacement for the traditional make(1) tool
 
-DEPENDS+=	rx-*:../../devel/rx
+DEPENDS+=	rx-[0-9]*:../../devel/rx
 BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=	# defined

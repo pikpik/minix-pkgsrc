@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 13:51:36 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/23 19:17:39 hubertf Exp $
 #
 
 DISTNAME=		zenicb-19981202
@@ -19,7 +19,7 @@ MAKEFLAGS+=		USE_XEMACS=${USE_XEMACS}
 ELISPDIR=		lib/xemacs/xemacs-packages/lisp
 .else
 EMACS=			emacs
-DEPENDS+=		emacs-*:../../editors/emacs
+DEPENDS+=		emacs-[0-9]*:../../editors/emacs
 ELISPDIR=		share/emacs/site-lisp
 .endif
 

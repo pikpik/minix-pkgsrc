@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/15 14:20:41 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/19 13:48:00 wiz Exp $
 
 DISTNAME=	keychain-1.2
 PKGNAME=	${DISTNAME}nb1
@@ -10,10 +10,10 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gentoo.org/projects/keychain/
 COMMENT=	Nice ssh-agent front-end
 
-DEPENDS=	psmisc-*:../../sysutils/psmisc
+DEPENDS=	psmisc-[0-9]*:../../sysutils/psmisc
 
 .if !exists(/usr/bin/ssh-agent)
-DEPENDS+=	openssh-*:../../security/openssh
+DEPENDS+=	openssh-[0-9]*:../../security/openssh
 .endif
 
 NO_BUILD=	# defined

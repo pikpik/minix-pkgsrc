@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/08/28 06:17:41 tron Exp $
+# $NetBSD: Makefile,v 1.29 2001/09/09 23:47:25 mycroft Exp $
 
 DISTNAME=		gnome-games-1.4.0.2
 CATEGORIES=		games gnome
@@ -15,7 +15,7 @@ DEPENDS+=		gnome-core>1.4.0:../../x11/gnome-core
 DEPENDS+=		guile-[0-9]*:../../lang/guile
 BUILD_USES_MSGFMT=	YES
 
-CONFLICTS=		xbill-*
+CONFLICTS=		xbill-[0-9]*
 
 USE_GMAKE=		YES
 USE_X11BASE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/09 15:22:41 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/07/10 21:54:39 cjones Exp $
 #
 
 DISTNAME=	semantic-1.4beta5
@@ -15,11 +15,11 @@ DEPENDS+=	eieio-0.16:../../lang/eieio
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(USE_XEMACS)
-DEPENDS+=	 	xemacs-*:../../editors/xemacs
+DEPENDS+=	 	xemacs-[0-9]*:../../editors/xemacs
 EMACS=			xemacs
 LISPDIR=		lib/xemacs/xemacs-packages/lisp/semantic
 .else
-DEPENDS+=	 	emacs-*:../../editors/emacs
+DEPENDS+=	 	emacs-[0-9]*:../../editors/emacs
 EMACS=			emacs
 LISPDIR=		share/emacs/site-lisp/semantic
 .endif

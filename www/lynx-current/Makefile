@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/03/27 03:20:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.32 2001/06/11 06:34:55 jlam Exp $
 #
 
 DISTNAME=		lynx2.8.4dev.19
@@ -61,9 +61,9 @@ post-install:
 
 LYNX_SCREEN_LIB?=	slang
 .if (${LYNX_SCREEN_LIB} == slang)
-DEPENDS+=		libslang-*:../../devel/libslang
+DEPENDS+=		libslang-[0-9]*:../../devel/libslang
 .elif (${LYNX_SCREEN_LIB} == ncurses)
-DEPENDS+=		ncurses-*:../../devel/ncurses
+DEPENDS+=		ncurses-[0-9]*:../../devel/ncurses
 CONFIGURE_ARGS+=	--enable-color-style
 CPPFLAGS+=		-I/usr/include -I${LOCALBASE}/include
 .elif (${LYNX_SCREEN_LIB} == curses)

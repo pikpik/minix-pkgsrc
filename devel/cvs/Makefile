@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2001/04/17 07:49:46 tron Exp $
+# $NetBSD: Makefile,v 1.43 2001/06/25 20:38:43 jlam Exp $
 #
 
 DISTNAME=	cvs-1.11
@@ -24,7 +24,7 @@ PATCH_SITES=		ftp://ftp.kame.net/pub/kame/misc/
 PATCHFILES=		cvs-1.11-v6-20010413.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-BUILD_DEPENDS+=		autoconf-*:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf-[0-9]*:../../devel/autoconf
 
 .if ${USE_INET6} == "YES"
 CONFIGURE_ARGS+=	--enable-ipv6

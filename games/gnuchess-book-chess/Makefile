@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/21 22:38:07 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:10:50 wiz Exp $
 # FreeBSD Id: Makefile,v 1.6 1999/01/27 07:41:12 fenner Exp
 #
 
@@ -13,7 +13,7 @@ COMMENT=		chess opening book for GNU Chess (default)
 
 DEPENDS+=		gnuchess>=5.00nb1:../../games/gnuchess
 
-CONFLICTS+=		gnuchess-book-*
+CONFLICTS+=		gnuchess-book-[0-9]*
 
 CHESS_ENGINE=		gnuchess
 NO_CONFIGURE=		# defined

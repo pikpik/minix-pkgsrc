@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:37:45 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:18 hubertf Exp $
 #
 
 DISTNAME=	TclXML-1.2
@@ -13,7 +13,7 @@ COMMENT=	XML parser implemented entirely in Tcl
 DEPENDS+=       tcl>=8.3.2:../../lang/tcl
 
 # old name for this package...
-CONFLICTS+=	TclXML-*
+CONFLICTS+=	TclXML-[0-9]*
 
 NO_CONFIGURE=
 NO_BUILD=

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/17 18:19:32 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/03/12 18:46:14 kim Exp $
 #
 
 DISTNAME=	freerdist-0.92
@@ -13,7 +13,7 @@ RDIST6_NAME=	rdist6
 INSTALL_TARGET=	install install.man
 MAKE_ENV+=	RDIST6_NAME=${RDIST6_NAME}
 
-CONFLICTS=	rdist6-*
+CONFLICTS=	rdist6-[0-9]*
 
 post-install:
 	@strip ${PREFIX}/bin/${RDIST6_NAME}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:21:42 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/20 05:23:26 jonb Exp $
 #
 
 DISTNAME=       ApacheDBI-0.87
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/MERGL/}
 MAINTAINER=	packages@netbsd.org
 COMMENT=	perl5 Apache modules for DBI connections
 
-DEPENDS+=	ap-perl-*:../../www/ap-perl
+DEPENDS+=	ap-perl-[0-9]*:../../www/ap-perl
 DEPENDS+=	apache{,6}-1.3.*:../../www/apache
 
 USE_PERL5=	# defined

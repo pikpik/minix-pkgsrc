@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:22:20 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/05 17:18:21 jlam Exp $
 
 DISTNAME=		CGI-Application-1.2
 PKGNAME=		p5-${DISTNAME}
@@ -9,7 +9,7 @@ MAINTAINER=		jlam@netbsd.org
 COMMENT=		perl5 module to create sophisticated, reusable web-based applications
 
 DEPENDS+=		{p5-CGI>=2.66,perl>=5.6.1nb2}:../../www/p5-CGI
-DEPENDS+=		p5-HTML-Template-*:../../www/p5-HTML-Template
+DEPENDS+=		p5-HTML-Template-[0-9]*:../../www/p5-HTML-Template
 
 USE_PERL5=		# defined
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/CGI/Application/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/06/30 15:23:01 taca Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/30 15:30:20 taca Exp $
 # FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.16 2000/10/15 15:45:59 knu Exp
 
 DISTNAME=	ruby-gtk-0.25
@@ -18,7 +18,7 @@ USE_X11=	yes
 
 INSTALL_TARGET=	site-install
 
-DEPENDS+=	imlib-*:../../graphics/imlib
+DEPENDS+=	imlib-[0-9]*:../../graphics/imlib
 
 DOCS_EN=	README README.EXT doc/rbbr.rb
 DOCS_JA=	README.ja README.EXT.ja

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/22 01:07:55 itojun Exp $
 #
 
 DISTNAME=	xfntmizi-1.1-2.noarch
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.rpm
 MAINTAINER=	packages@netbsd.org
 COMMENT=	X11 fonts for KSC 5601 standard
 
-BUILD_DEPENDS+=	rpm-*:../../misc/rpm
+BUILD_DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 
 CONFLICTS+=	ksc5601fonts-[0-9]*
 

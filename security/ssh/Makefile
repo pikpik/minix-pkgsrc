@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2001/03/20 19:21:55 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2001/05/19 03:56:39 jlam Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=	--with-libwrap
 .endif
 
 .if ${OPSYS} == "SunOS"
-DEPENDS+=		zlib-*:../../devel/zlib
+DEPENDS+=		zlib-[0-9]*:../../devel/zlib
 CONFIGURE_ENV+=		X_CFLAGS="-I${LOCALBASE}/include"
 .endif
 

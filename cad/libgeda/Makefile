@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 13:46:24 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/07/17 03:06:27 dmcmahill Exp $
 #
 
 DISTNAME=		libgeda-${PKGVERSION}
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Library of shared modules for gEDA
 
 DEPENDS+=		guile>=1.3.0:../../lang/guile
-DEPENDS+=		libstroke-*:../../devel/libstroke
+DEPENDS+=		libstroke-[0-9]*:../../devel/libstroke
 DEPENDS+=		libgdgeda>=1.8:../../graphics/libgdgeda
 DEPENDS+=		gtk+>=1.2.3:../../x11/gtk
 

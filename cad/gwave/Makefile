@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 13:46:23 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/06/11 06:34:19 jlam Exp $
 #
 
 DISTNAME=	gwave-20001123
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.cs.unc.edu/~tell/gwave/
 COMMENT=	viewer for spice-like simulator output and other analog data
 
 DEPENDS+=	guile-gtk>=0.19:../../devel/guile-gtk
-DEPENDS+=	plotutils-*:../../graphics/plotutils
+DEPENDS+=	plotutils-[0-9]*:../../graphics/plotutils
 
 GNU_CONFIGURE=	YES
 # LDFLAGS to get -lreadline

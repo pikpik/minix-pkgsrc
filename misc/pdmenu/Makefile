@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/16 20:53:04 zuntum Exp $
+# $NetBSD: Makefile,v 1.7 2001/04/28 12:44:57 zuntum Exp $
 # FreeBSD Id: ports/misc/pdmenu/Makefile,v 1.11 2001/01/16 17:31:42 sobomax Exp
 
 DISTNAME=	${PKGNAME:S|-|_|}
@@ -10,7 +10,7 @@ MAINTAINER=	zuntum@netbsd.org
 HOMEPAGE=	http://www.kitenet.net/programs/pdmenu/
 COMMENT=	Simple console menu program
 
-DEPENDS+=	libslang-*:../../devel/libslang
+DEPENDS+=	libslang-[0-9]*:../../devel/libslang
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES

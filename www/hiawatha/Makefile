@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/15 02:56:38 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/09 20:36:52 agc Exp $
 #
 
 DISTNAME=	hiawatha
@@ -13,7 +13,7 @@ MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.pault.com/pault/downloads/
 COMMENT=	Barebones HTTP server with XML and XSLT support (and more)
 
-DEPENDS+=	saxon-*:../../textproc/saxon
+DEPENDS+=	saxon-[0-9]*:../../textproc/saxon
 
 NO_PATCH=
 NO_CONFIGURE=

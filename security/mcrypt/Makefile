@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:49:52 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/11 06:34:48 jlam Exp $
 
 DISTNAME=	mcrypt-2.5.5
 CATEGORIES=	security devel
@@ -8,8 +8,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://mcrypt.hellug.gr/
 COMMENT=	replacement to crypt(1), supports bunch of algorithms
 
-DEPENDS+=	libmcrypt-*:../../security/libmcrypt
-DEPENDS+=	mhash-*:../../security/mhash
+DEPENDS+=	libmcrypt-[0-9]*:../../security/libmcrypt
+DEPENDS+=	mhash-[0-9]*:../../security/mhash
 
 USE_LIBTOOL=	yes
 USE_LIBINTL=	yes

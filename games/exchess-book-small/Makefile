@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 15:10:47 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/09 20:36:25 agc Exp $
 
 DISTNAME=		small
 PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}-20000511
@@ -11,7 +11,7 @@ COMMENT=		chess opening book for EXchess (small)
 
 DEPENDS+=		exchess-[0-9]*:../../games/exchess
 
-CONFLICTS=		${CHESS_ENGINE}-book-*
+CONFLICTS=		${CHESS_ENGINE}-book-[0-9]*
 
 CHESS_ENGINE=		exchess
 DIST_SUBDIR=		chessbooks

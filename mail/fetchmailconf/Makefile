@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/08/10 05:31:40 tron Exp $
+# $NetBSD: Makefile,v 1.27 2001/09/23 10:53:38 frueauf Exp $
 
 DISTNAME=	fetchmail-5.9.0
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.tuxedo.org/~esr/fetchmail/
 COMMENT=	Configuration tool for fetchmail
 
 DEPENDS+=	${DISTNAME}:../../mail/fetchmail
-DEPENDS+=	py-Tk-*:../../x11/py-Tk
+DEPENDS+=	py-Tk-[0-9]*:../../x11/py-Tk
 
 DISTINFO_FILE=	${.CURDIR}/../fetchmail/distinfo
 NO_BUILD=	YES

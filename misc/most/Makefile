@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/02/17 18:09:14 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/04/20 22:20:50 jtb Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/06/03 21:52:01 asami Exp
 #
 
@@ -11,7 +11,7 @@ MAINTAINER=	rhwang@bigpanda.com
 HOMEPAGE=	http://space.mit.edu/~davis/most.html
 COMMENT=	Pager (like less) which has support for windows and binary files
 
-DEPENDS+=	libslang-*:../../devel/libslang
+DEPENDS+=	libslang-[0-9]*:../../devel/libslang
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-x

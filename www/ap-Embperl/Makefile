@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/27 10:37:03 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:21:43 wiz Exp $
 #
 
 DISTNAME=       HTML-Embperl-1.2.0
@@ -10,8 +10,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://perl.apache.org/embperl/
 COMMENT=	perl5 library for embedding perl in HTML documents
 
-DEPENDS+=	ap-perl-*:../../www/ap-perl
-DEPENDS+=	p5-HTML-Parser-*:../../www/p5-HTML-Parser
+DEPENDS+=	ap-perl-[0-9]*:../../www/ap-perl
+DEPENDS+=	p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/HTML/Embperl/.packlist

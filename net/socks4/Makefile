@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/03/31 13:39:32 zuntum Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/28 20:20:48 jlam Exp $
 #
 
 DISTNAME=	export.socks.cstc.4.2.2
@@ -11,7 +11,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.socks.nec.com/socksv4.html
 COMMENT=	Old library, server and client for using proxy firewall software
 
-CONFLICTS=	socks5-*
+CONFLICTS=	socks5-[0-9]*
 
 RESTRICTED=		"no commercial use"
 NO_SRC_ON_CDROM=	${RESTRICTED}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:37:59 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:18 hubertf Exp $
 #
 
 DISTNAME=	xt
@@ -11,8 +11,8 @@ MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.jclark.com/xml/
 COMMENT=	James Clark's Java implementation of XSLT
 
-DEPENDS+=	unzip-*:../../archivers/unzip
-DEPENDS+=	XP-*:../../textproc/xp
+DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
+DEPENDS+=	XP-[0-9]*:../../textproc/xp
 
 EXTRACT_ONLY=
 USE_JAVA=	yes

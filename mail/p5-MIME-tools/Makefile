@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:24:58 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/17 00:44:47 jtb Exp $
 #
 
 DISTNAME=       MIME-tools-5.410
@@ -10,9 +10,9 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.zeegee.com/code/perl/MIME-tools/
 COMMENT=	perl5 modules for encoding and decoding MIME messages
 
-DEPENDS+=	p5-IO-stringy-*:../../devel/p5-IO-stringy
-DEPENDS+=	p5-MIME-Base64-*:../../converters/p5-MIME-Base64
-DEPENDS+=	p5-MailTools-*:../../mail/p5-MailTools
+DEPENDS+=	p5-IO-stringy-[0-9]*:../../devel/p5-IO-stringy
+DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
+DEPENDS+=	p5-MailTools-[0-9]*:../../mail/p5-MailTools
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/MIME-tools/.packlist

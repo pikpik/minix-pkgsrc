@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/03/01 19:07:52 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2001/03/13 09:41:27 wiz Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -12,10 +12,10 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.sun.com/staroffice/
 COMMENT=		Integrated office suite
 
-BUILD_DEPENDS+=		unzip-*:../../archivers/unzip
+BUILD_DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=		suse_linux>=6.1:../../emulators/suse_linux
 
-CONFLICTS=		staroffice-*
+CONFLICTS=		staroffice-[0-9]*
 
 RESTRICTED=		"Redistribution not permitted"
 NO_SRC_ON_FTP=		${RESTRICTED}

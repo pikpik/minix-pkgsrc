@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2001/08/06 08:25:12 itojun Exp $
+# $NetBSD: Makefile,v 1.40 2001/08/31 09:43:09 itojun Exp $
 #
 
 DISTNAME=	racoon-20010831a
@@ -27,7 +27,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 CFLAGS+=	-I${LOCALBASE}/include
 LIBPATH=	-L${LOCALBASE}/lib
 
-CONFLICTS+=	racoon-*
+CONFLICTS+=	racoon-[0-9]*
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/racoon
 

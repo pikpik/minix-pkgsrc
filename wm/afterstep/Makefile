@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/08/27 14:35:15 tron Exp $
+# $NetBSD: Makefile,v 1.15 2001/08/29 22:41:21 jlam Exp $
 
 DISTNAME=	AfterStep-1.8.9
 PKGNAME=	afterstep-1.8.9
@@ -16,7 +16,7 @@ BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 # XXX The following would be "RUN_DEPENDS," if we had such a thing.
 # XXX
 DEPENDS+=		asclock-[0-9]*:../../time/asclock
-DEPENDS+=		xp-*:../../x11/xp
+DEPENDS+=		xp-[0-9]*:../../x11/xp
 
 USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES

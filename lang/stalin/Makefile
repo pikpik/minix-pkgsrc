@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/05/03 22:16:50 jtb Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/25 17:48:34 jtb Exp $
 
 DISTNAME=		stalin-0.9
 CATEGORIES=		lang
@@ -9,7 +9,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.neci.nj.nec.com/homepages/qobi/software.html
 COMMENT=		Aggressively optimizing Scheme compiler
 
-DEPENDS+=		boehm-gc-*:../../devel/boehm-gc
+DEPENDS+=		boehm-gc-[0-9]*:../../devel/boehm-gc
 
 USE_MESA=		yes
 

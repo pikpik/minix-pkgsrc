@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/05/31 05:54:46 tron Exp $
+# $NetBSD: Makefile,v 1.9 2001/07/06 00:49:06 fredb Exp $
 #
 
 .include "../Mesa/Makefile.common"
@@ -13,7 +13,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.mesa3d.org/
 COMMENT=		GLU polygon tesselation facility for Mesa
 
-CONFLICTS+=		Mesa-glx-*
+CONFLICTS+=		Mesa-glx-[0-9]*
 CONFLICTS+=		Mesa<3.2.1
 
 WRKSRC=			${WRKDIR}/${DISTNAME:C/Lib//}

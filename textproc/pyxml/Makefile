@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/05/14 16:27:08 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2001/08/06 16:05:57 drochner Exp $
 #
 
 DISTNAME=	PyXML-0.6.6
@@ -10,7 +10,7 @@ HOMEPAGE=	http://pyxml.sourceforge.net/
 COMMENT=	collection of libraries to process XML with Python
 
 DEPENDS+=	python>=2.0:../../lang/python
-DEPENDS+=	expat-*:../../textproc/expat
+DEPENDS+=	expat-[0-9]*:../../textproc/expat
 
 USE_PYTHON=	yes
 PYDISTUTILSPKG=	yes

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/06 22:18:43 zuntum Exp $
 #
 
 DISTNAME=	service-config-0.51
@@ -9,7 +9,7 @@ MAINTAINER=	zuntum@netbsd.org
 HOMEPAGE=	http://www.superscript.com/service-config/intro.html
 COMMENT=	Utility to create and configure svscan service directories
 
-DEPENDS+=	daemontools-*:../../sysutils/daemontools
+DEPENDS+=	daemontools-[0-9]*:../../sysutils/daemontools
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check

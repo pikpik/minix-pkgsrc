@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/04/02 20:06:12 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/08/26 10:32:20 skrll Exp $
 
 DISTNAME=	kdevelop-1.3
 PKGNAME=	${DISTNAME:S/-/-base-/}
@@ -11,7 +11,7 @@ HOMEPAGE=       http://www.kdevelop.org/
 COMMENT=	Base modules for IDE for Unix/X11/KDE
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS+=       autoconf-*:../../devel/autoconf
+DEPENDS+=       autoconf-[0-9]*:../../devel/autoconf
 DEPENDS+=       automake>=1.4:../../devel/automake
 DEPENDS+=       kdebase-1.*:../../x11/kdebase
 DEPENDS+=       kdoc-2*:../../textproc/kdoc
