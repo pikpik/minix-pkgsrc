@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- Src/watch.c.orig	Tue Jan 16 14:44:20 2001
++++ Src/watch.c	Mon Mar  4 21:22:10 2002
+@@ -29,6 +29,11 @@
+ 
+ #include "zsh.mdh"
+ 
++#if defined(__NetBSD__) && defined(HAVE_UTMPX_H)
++# undef HAVE_UTMPX_H
++# undef HAVE_STRUCT_UTMPX
++#endif
++
+ /* Headers for utmp/utmpx structures */
+ #ifdef HAVE_UTMP_H
+ # include <utmp.h>
