@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.313 2002/07/09 20:09:35 agc Exp $
+# $NetBSD: Makefile,v 1.314 2002/07/10 02:12:55 kim Exp $
 #
 
 COMMENT=	Networking tools
@@ -187,7 +187,6 @@ SUBDIR+=	py-soaplib
 SUBDIR+=	py-xmlrpclib
 SUBDIR+=	ra-pna-proxy
 SUBDIR+=	ra-rtsp-proxy
-SUBDIR+=	radius
 SUBDIR+=	radiusd-cistron
 SUBDIR+=	rdesktop
 SUBDIR+=	rdist6
