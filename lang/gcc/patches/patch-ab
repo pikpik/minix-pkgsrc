@@ -1,0 +1,15 @@
+$NetBSD$
+
+Enable building the shared libstdc++
+
+--- ../gcc-2.95.3/libstdc++/Makefile.in.orig	Thu Aug 29 18:57:24 2002
++++ ../gcc-2.95.3/libstdc++/Makefile.in
+@@ -43,7 +43,7 @@ SHDEPS  =
+ 
+ STAMP   = bigstmp
+ 
+-LIBS    = $(ARLIB) $(ARLINK)
++LIBS    = $(ARLIB) $(ARLINK) $(SHLIB) $(SHLINK)
+ 
+ #### package, host, target, and site dependent Makefile fragments come in here.
+ ##
