@@ -35,25 +35,11 @@ BUILDLINK_FILES.Mesa-localbase+=	lib/libGLU.*
 BUILDLINK_FILES.Mesa-localbase+=	lib/libglut.*
 
 BUILDLINK_TARGETS.Mesa+=	Mesa-localbase-buildlink
-BUILDLINK_TARGETS.Mesa+=	Mesa-extra-includes-buildlink
 
 BUILDLINK_TARGETS+=		${BUILDLINK_TARGETS.Mesa}
 
 pre-configure: ${BUILDLINK_TARGETS.Mesa}
 Mesa-x11base-buildlink: _BUILDLINK_USE
 Mesa-localbase-buildlink: _BUILDLINK_USE
-
-Mesa-extra-includes-buildlink:
-	${_PKG_SILENT}${_PKG_DEBUG}					\
-	${ECHO_MSG} "Touching extra Mesa headers in ${BUILDLINK_DIR}."; \
-	extra_includes="						\
-		include/GL/xmesa.h					\
-	";								\
-	for file in $${extra_includes}; do				\
-		header=${BUILDLINK_DIR}/$${file};			\
-		if [ ! -e $${header} ]; then				\
-			${TOUCH} ${TOUCH_FLAGS} $${header};		\
-		fi;							\
-	done
 
 .endif	# MESA_BUILDLINK_MK
