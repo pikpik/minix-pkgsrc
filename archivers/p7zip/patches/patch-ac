@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- makefile.glb.orig	2005-02-08 10:23:00.000000000 +0000
++++ makefile.glb
+@@ -2,7 +2,7 @@
+ MY_HOME=../../../myWindows
+ 
+ RM=rm -f
+-CFLAGS=-c \
++CFLAGS+=-c \
+ -I../../../myWindows \
+ -I../../../ \
+ -I../../../include_windows
