@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 14:50:23 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/05/16 09:48:58 abs Exp $
 
 .include "../../databases/postgresql/Makefile.common"
-.include "../../devel/libgetopt/Makefile.getopt"
 .include "../../databases/postgresql/Makefile.ssl"
+.include "../../devel/libgetopt/Makefile.getopt"
 
 PKGNAME=		postgresql-server-${PG_VERS}
 PG_PKG_VERS=		# empty
