@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/02/28 06:17:09 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/03 10:28:47 martti Exp $
 
 MODNAME=		mysql
 CATEGORIES+=		databases
@@ -6,6 +6,8 @@ PKGREVISION=		# empty
 COMMENT=		PHP4 extension for MySQL databases
 
 .include "../../www/php4/Makefile.module"
+
+USE_BUILDLINK2=		# defined
 
 EVAL_PREFIX+=		MYSQLDIR=mysql-client
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${MYSQLDIR}
