@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/06/06 02:38:36 soren Exp $
+# $NetBSD: Makefile,v 1.5 2000/06/15 11:32:20 hubertf Exp $
 
 DISTNAME=		pchar-1.2
 CATEGORIES=		net
@@ -9,15 +9,18 @@ HOMEPAGE=		http://www.ca.sandia.gov/~bmah/Software/pchar/
 
 GNU_CONFIGURE=		yes
 
-CONFIGURE_ARGS=		--with-snmp=${PREFIX}
+BUILD_DEFS+=		USE_INET6
 
-BUILD_DEFS+=	USE_INET6
 .include "../../mk/bsd.prefs.mk"
+
 .if defined(USE_INET6) && ${USE_INET6} == YES
 CONFIGURE_ARGS+=	--with-ipv6
 .endif
 
+.if ${OPSYS} == "NetBSD"
 DEPENDS+=		ucd-snmp-*:../../net/ucd-snmp
+CONFIGURE_ARGS+=	--with-snmp=${PREFIX}
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pchar ${PREFIX}/sbin
