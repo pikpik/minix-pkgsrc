@@ -1,9 +1,9 @@
-$NetBSD: patch-be,v 1.1.2.1 2002/06/23 19:05:28 jlam Exp $
+$NetBSD$
 
---- kdesktop/main.cc.orig	Wed May  8 19:21:24 2002
+--- kdesktop/main.cc.orig	Mon Dec 16 02:43:09 2002
 +++ kdesktop/main.cc
-@@ -70,7 +70,9 @@
- 	KApplication::kApplication()->quit(); // turn catchable signals into clean shutdown
+@@ -75,7 +75,9 @@ static void signalHandler(int sigId)
+         kapp->quit(); // turn catchable signals into clean shutdown
  }
  
 -int main( int argc, char **argv )
