@@ -1,4 +1,4 @@
-$NetBSD$$)C
+$NetBSD$
 
 --- src/fe-gtk/fkeys.c.orig	2004-07-01 11:28:43.000000000 -0500
 +++ src/fe-gtk/fkeys.c
