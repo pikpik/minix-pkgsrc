@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/05/17 12:33:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/06/26 10:18:56 zuntum Exp $
 #
 
 DISTNAME=	smpeg-0.4.3
@@ -15,6 +15,19 @@ USE_CONFIG_WRAPPER=	YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+
+# Fix config scripts by removing buildlink directory references.
+post-build:
+	@cd ${WRKSRC};							\
+	config_scripts="smpeg-config";					\
+	for file in $${config_scripts}; do				\
+	${MV} -f $${file} $${file}.fixme;				\
+		${SED}  -e "s|-I${BUILDLINK_DIR}/|-I${LOCALBASE}/|g"	\
+		-e "s|-L${BUILDLINK_DIR}/|-L${LOCALBASE}/|g"		\
+			$${file}.fixme > $${file};			\
+		${RM} -f $${file}.fixme;				\
+		${CHMOD} +x $${file};					\
+	done
 
 .include "../../devel/SDL/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
