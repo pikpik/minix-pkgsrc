@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/15 16:16:34 tsarna Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/30 10:55:41 markd Exp $
 #
 
 DISTNAME=	Python-2.2.2
@@ -20,7 +20,11 @@ GNU_CONFIGURE=		YES
 LOWER_OPSYS=	sunos
 .endif
 
+.if ${OPSYS} == "Darwin"
+PLIST_SUBST+=	PY_PLATNAME=${LOWER_OPSYS}
+.else
 PLIST_SUBST+=	PY_PLATNAME=${LOWER_OPSYS}${OS_VERSION:C/\..*//}
+.endif
 PLIST_SRC=	${PKGDIR}/PLIST.common ${PKGDIR}/PLIST.${LOWER_OPSYS} \
 		${PKGDIR}/PLIST.common_end
 
