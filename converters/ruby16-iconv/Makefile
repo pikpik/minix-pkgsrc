@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/27 14:24:15 taca Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/28 14:08:01 taca Exp $
 #
 
 DISTNAME=	iconv-0.5
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	converters ruby
 MASTER_SITES=	http://nokada.jin.gr.jp/ruby/
 
