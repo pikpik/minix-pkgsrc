@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/12/17 19:06:56 jdolecek Exp $
 
 DISTNAME=	Date-1.3
+CATEGORIES=	time
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE= 	http://pear.php.net/package/Date
