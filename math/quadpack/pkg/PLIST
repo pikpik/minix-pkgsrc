@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2001/01/04 15:10:49 agc Exp $
-lib/libquadpack.a
-share/doc/quadpack/doc
-share/doc/quadpack/readme
-@dirrm share/doc/quadpack

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-include/supermatrix.h
-lib/libsuperlu.a
-share/doc/superlu/ug.ps
-@dirrm share/doc/superlu

@@ -1,9 +1,0 @@
-======================================================================
-$NetBSD$
-
-Please set the following variable in your shell environment, which
-is required by the xgui application to find its configuration file:
-
-	XGUILOADPATH to ${LOCALBASE}/share/snns
-
-======================================================================
