@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:39:12 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 16:49:59 martti Exp $
 #
 
-DISTNAME=	plib-1.2.0
-PKGREVISION=	1
+DISTNAME=	plib-1.6.0
 CATEGORIES=	games x11
 MASTER_SITES=	http://plib.sourceforge.net/dist/
 
@@ -16,4 +15,6 @@ GNU_CONFIGURE=	YES
 CPPFLAGS+=	-Dunix=1
 
 .include "../../graphics/Mesa/buildlink2.mk"
+
+.include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
