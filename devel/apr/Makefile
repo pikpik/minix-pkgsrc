@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/13 10:09:18 jklos Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/18 18:55:24 epg Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 PKGREVISION=	1
@@ -35,7 +35,8 @@ APR_CONFIGURE_ARGS= \
 APU_CONFIGURE_ARGS= \
 		--prefix=${PREFIX} \
 		--with-apr=${WRKSRC}/apr \
-		--with-expat=${BUILDLINK_PREFIX.expat}
+		--with-expat=${BUILDLINK_PREFIX.expat} \
+		--without-gdbm
 
 .include "../../mk/bsd.prefs.mk"
 .if ${APR_USE_DB4} == "YES"
