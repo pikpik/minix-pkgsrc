@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2001/11/27 00:04:45 kristerw Exp $
+# $NetBSD: Makefile,v 1.18 2001/12/01 16:23:22 kristerw Exp $
 
-DISTNAME=	uae-0.8.19
+DISTNAME=	uae-0.8.20
 PKGNAME=	${DISTNAME}
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.freiburg.linux.de/~uae/bin/sources/develop/
@@ -15,10 +15,7 @@ USE_GMAKE=	yes
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 
-# Because using the gtk+ user interface requires a thread library
-# we use a brute force method to avoid detection of gtk+.
-CONFIGURE_ARGS+=	--enable-dga --enable-vidmode \
-			--with-gtk-prefix=${WRKDIR}
+CONFIGURE_ARGS+=	--enable-dga --enable-vidmode --disable-ui
 
 do-install:
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} readdisk uae ${PREFIX}/bin
