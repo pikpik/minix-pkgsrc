@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:05:00 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/03/01 05:59:46 minoura Exp $
 #
 
 DISTVERSION=		1.1.4
@@ -55,7 +55,6 @@ post-patch:
 		${LN} -s ../../${PTHREAD_DISTNAME}/include/pthread.h . && \
 		${LN} -s ../../${PTHREAD_DISTNAME}/include/pthread .
 
-
 CFLAGS_FOR_TARGET+=	-I${WRKDIR}
 post-configure:
 	${CP} ${FILESDIR}/i386_limits.h ${SYS_INCLUDE}/machine/limits.h
@@ -63,7 +62,7 @@ post-configure:
 	${CP} ${FILESDIR}/featuretest.h ${SYS_INCLUDE}/sys/
 	${CP} ${FILESDIR}/limits.h ${SYS_INCLUDE}/
 	${RM} ${WRKDIR}/${GCC_DISTNAME}/texinfo/makeinfo/Makefile
-	$(SED) "s/extern FILE/__declspec(dllimport) FILE/" /usr/include/stdio.h > $(WRKDIR)/stdio.h
+	${SED} "s/extern FILE/__declspec(dllimport) FILE/" /usr/include/stdio.h > ${WRKDIR}/stdio.h
 
 #.include "../COMMON/cross.mk"
 .include "files/cross.mk"
