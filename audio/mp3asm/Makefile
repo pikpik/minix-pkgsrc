@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/28 16:51:05 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/04/28 16:54:04 zuntum Exp $
 #
 
 DISTNAME=	mp3asm-0.1.3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3asm/}
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rxg@netbsd.org
 HOMEPAGE=	http://mp3asm.sourceforge.net/
