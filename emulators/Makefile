@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2002/04/14 10:11:56 tron Exp $
+# $NetBSD: Makefile,v 1.67 2002/04/20 08:11:57 rh Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -14,6 +14,7 @@ SUBDIR+=	darcnes
 SUBDIR+=	doscmd
 SUBDIR+=	fmsx
 SUBDIR+=	freebsd_lib
+SUBDIR+=	generator
 SUBDIR+=	gnuboy
 SUBDIR+=	gpsim
 SUBDIR+=	hercules
