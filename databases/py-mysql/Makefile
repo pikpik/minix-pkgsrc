@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/06/22 21:53:09 tron Exp $
 
 DISTNAME=	MySQLmodule-1.1
 PKGNAME=	py-mysql-1.1
@@ -10,7 +10,7 @@ DISTFILES=	MySQLmodule-1.1${EXTRACT_SUFX} \
 MAINTAINER=	tsarna@endicor.com
 
 DEPENDS+=	python-1.5.1:../../lang/python \
-		mysql-3.21.31:../mysql
+		mysql-3.21.31:../../databases/mysql
 
 EXTRACT_ONLY=	MySQLmodule-1.1${EXTRACT_SUFX}
 ALL_TARGET=	default
