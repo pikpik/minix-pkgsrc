@@ -1,6 +1,6 @@
 $NetBSD$
 
---- /dev/null	Sun Mar 25 00:37:57 2001
+--- /dev/null	Thu Apr 19 00:39:33 2001
 +++ hdf/util/Makefile
 @@ -0,0 +1,82 @@
 +UTILS= hdf24to8 hdfcomp hdfed hdfls hdfpack hdftopal hdftor8	\
@@ -19,12 +19,12 @@ $NetBSD$
 +LDFLAGS+= -L${.CURDIR}/../src
 +LDFLAGS+= -Wl,-R${JPEGBASE}/lib -L${JPEGBASE}/lib
 +
-+LDADD+= -ldf -ljpeg -lz -lm
++LDADD+= -ldf -ljpeg -lz
 +
 +NOGCCERROR= 1
 +
 +fp2hdf: fp2hdf.o
-+	${CC} ${CPPFLAGS} ${CFLAGS} $? ${LDFLAGS} ${LDADD} -o $@
++	${CC} ${CPPFLAGS} ${CFLAGS} $? ${LDFLAGS} ${LDADD} -lm -o $@
 +
 +hdf24to8: hdf24to8.o
 +	${CC} ${CPPFLAGS} ${CFLAGS} $? ${LDFLAGS} ${LDADD} -o $@
