@@ -1,9 +1,9 @@
-$NetBSD: patch-ak,v 1.2 1999/07/03 15:43:33 tron Exp $
+$NetBSD$
 
---- src/Makefile.in.in.orig	Sat Jun 20 02:58:42 1998
-+++ src/Makefile.in.in	Mon Dec  6 00:42:14 1999
-@@ -52,8 +52,8 @@
- RECURSIVE_MAKE=@RECURSIVE_MAKE@
+--- src/Makefile.in.in.orig	Wed Jan 15 21:18:00 2003
++++ src/Makefile.in.in
+@@ -72,8 +72,8 @@
+ LDFLAGS=@LDFLAGS@
  
  c_switch_all=@c_switch_all@
 -ld_switch_all=@ld_switch_all@
@@ -13,7 +13,7 @@ $NetBSD: patch-ak,v 1.2 1999/07/03 15:43:33 tron Exp $
  ld_dynamic_link_flags=@ld_dynamic_link_flags@
  
  extra_objs=@extra_objs@
-@@ -133,9 +133,9 @@
+@@ -162,9 +162,9 @@
  
  #ifdef SOLARIS2
  %.o : %.c
