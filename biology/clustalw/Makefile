@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/28 20:07:00 rh Exp $
 
 DISTNAME=	clustalw1.8.UNIX
 PKGNAME=	clustalw-1.8
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp-igbmc.u-strasbg.fr/pub/ClustalW/ \
 
 MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://www-igbmc.u-strasbg.fr/BioInfo/ClustalW/
+COMMENT=	General purpose multiple alignment program for DNA or proteins
 
 MAKEFILE=	makefile
 ALL_TARGET=	clustalw
