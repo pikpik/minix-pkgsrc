@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2002/06/04 16:45:49 cjep Exp $
+# $NetBSD: Makefile,v 1.144 2002/06/04 17:48:36 cjep Exp $
 #
 
 COMMENT=	System utilities
@@ -90,7 +90,6 @@ SUBDIR+=	rox-wallpaper
 SUBDIR+=	rox-wrappers
 SUBDIR+=	rtty
 SUBDIR+=	ruby-quota
-SUBDIR+=	ruby-syslog
 SUBDIR+=	safetynet
 SUBDIR+=	sarah
 SUBDIR+=	service-config
