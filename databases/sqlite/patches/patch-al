@@ -1,12 +1,10 @@
 $NetBSD$
 
---- ../sqlite/src/parse.y.orig	2003-07-16 03:19:38.000000000 +0100
-+++ ../sqlite/src/parse.y
-@@ -33,6 +33,7 @@
- }
- %name sqliteParser
- %include {
-+#include "os.h"
- #include "sqliteInt.h"
- #include "parse.h"
- 
+--- ../sqlite/src/main.c.orig	2003-07-22 14:05:10.000000000 +0100
++++ ../sqlite/src/main.c
+@@ -18,4 +18,4 @@
+ */
+-#include "sqliteInt.h"
+ #include "os.h"
++#include "sqliteInt.h"
+ #include <ctype.h>
