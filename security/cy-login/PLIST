@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/sasl/liblogin.a
+lib/sasl/liblogin.la
+lib/sasl/liblogin.so
+lib/sasl/liblogin.so.0
+lib/sasl/liblogin.so.0.6
