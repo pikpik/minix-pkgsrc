@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.284 1999/06/23 20:17:59 christos Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.285 1999/06/24 08:04:15 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -889,6 +889,19 @@ do-fetch:
 		if [ "X$$file" = X"" ]; then continue; fi;		\
 		${_FETCH_FILE}						\
 	 done)
+.endif
+.endif
+
+.if !target(show-distfiles)
+show-distfiles:
+.if defined(IGNORE)
+	${_PKG_SILENT}${_PKG_DEBUG}${DO_NADA}
+.else
+	${_PKG_SILENT}${_PKG_DEBUG}					\
+	for file in "" ${_CKSUMFILES}; do				\
+		if [ "X$$file" = "X" ]; then continue; fi;		\
+		${ECHO} $$file;						\
+	done
 .endif
 .endif
 
@@ -2151,6 +2164,11 @@ depend:
 # Same goes for tags
 .if !target(tags)
 tags:
+.endif
+
+# if automatic manual page compression is done, set it if MANZ is set
+.if defined(MANCOMPRESSED_IF_MANZ) && defined(MANZ)
+MANCOMPRESSED=	yes
 .endif
 
 # generate ${PLIST} from ${PLIST_SRC} by:
