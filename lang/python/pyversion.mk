@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.22 2003/09/30 22:44:52 kristerw Exp $
+# $NetBSD: pyversion.mk,v 1.23 2004/01/25 14:28:52 recht Exp $
 
 .if !defined(PYTHON_PYVERSION_MK)
 PYTHON_PYVERSION_MK=	defined
@@ -7,7 +7,7 @@ PYTHON_PYVERSION_MK=	defined
 
 PYTHON_VERSION_DEFAULT?=	22
 .if ${OPSYS} == "Darwin"
-PYTHON_VERSIONS_ACCEPTED=	22	# the only one that builds
+PYTHON_VERSIONS_ACCEPTED?=	23pth 22pth
 .else
 PYTHON_VERSIONS_ACCEPTED?=	22 22pth 23 23pth 21 21pth 20
 .endif
