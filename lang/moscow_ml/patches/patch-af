@@ -1,13 +1,13 @@
 $NetBSD$
 
---- mosmlyac/Makefile.orig	Mon Oct 16 10:36:52 1995
-+++ mosmlyac/Makefile	Tue Feb 17 00:07:43 1998
+--- mosmlyac/Makefile.orig	Mon Oct 16 09:36:52 1995
++++ mosmlyac/Makefile	Thu Dec  3 03:03:04 1998
 @@ -18,7 +18,7 @@
  	rm -f mosmlyac
  
  install:
 -	cp mosmlyac $(BINDIR)/mosmlyac
-+	${BSD_INSTALL_PROGRAM} mosmlyac $(BINDIR)/mosmlyac
++	${INSTALL_PROGRAM} mosmlyac $(BINDIR)/mosmlyac
  
  depend:
  
