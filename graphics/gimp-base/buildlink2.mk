@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:24 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:48 jlam Exp $
 
 .if !defined(GIMP_BASE_BUILDLINK2_MK)
 GIMP_BASE_BUILDLINK2_MK=	# defined
@@ -6,7 +6,7 @@ GIMP_BASE_BUILDLINK2_MK=	# defined
 BUILDLINK_PACKAGES+=		gimp-base
 BUILDLINK_DEPENDS.gimp-base?=	gimp-base>=1.2.3nb1
 BUILDLINK_PKGSRCDIR.gimp-base?=	../../graphics/gimp-base
-DEPENDS+=		${BUILDLINK_DEPENDS.gimpbase}:../../graphics/gimp-base
+DEPENDS+=		${BUILDLINK_DEPENDS.gimp-base}:../../graphics/gimp-base
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.gimp-base=gimp-base
 BUILDLINK_PREFIX.gimp-base_DEFAULT=	${X11PREFIX}
