@@ -1,3 +1,5 @@
+# $NetBSD$
+
 DISTNAME=		httpd-${APACHE_VERSION}
 # When updating this version be sure to update the checksum and remove
 # any PKGREVISION for devel/apr also.
