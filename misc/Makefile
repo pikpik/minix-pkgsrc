@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.145 2002/12/28 15:38:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.146 2003/01/05 17:39:09 tsarna Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -96,6 +96,7 @@ SUBDIR+=	p5-ControlX10-CM17
 SUBDIR+=	p5-File-MMagic
 SUBDIR+=	p5-Locale-Codes
 SUBDIR+=	p5-Mac-Macbinary
+SUBDIR+=	p5-Msgcat
 SUBDIR+=	p5-Search
 SUBDIR+=	parchive
 SUBDIR+=	pdmenu
