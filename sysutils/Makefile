@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.265 2004/10/11 17:47:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.266 2004/10/30 05:09:51 xtraeme Exp $
 
 COMMENT=	System utilities
 
@@ -6,6 +6,7 @@ SUBDIR+=	GWLib
 SUBDIR+=	acpi-iasl
 SUBDIR+=	acpidump
 SUBDIR+=	adjustkernel
+SUBDIR+=	adtool
 SUBDIR+=	amanda
 SUBDIR+=	amanda-client
 SUBDIR+=	amanda-common
