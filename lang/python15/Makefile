@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/06/23 15:54:08 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2004/07/22 09:16:03 recht Exp $
 #
 
 DISTNAME=	py152
@@ -20,8 +20,16 @@ INSTALL_TARGET=	altinstall
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "Darwin" || ${OPSYS} == "IRIX"
+PLIST_SRC=      ${.CURDIR}/../../lang/python15/PLIST.common
+.if exists(${.CURDIR}/../../lang/python15/PLIST.${OPSYS})
+PLIST_SRC+=     ${.CURDIR}/../../lang/python15/PLIST.${OPSYS}
+.endif
+PLIST_SRC+=     ${.CURDIR}/../../lang/python15/PLIST.common_end
+
+.if ${OPSYS} == "Darwin"
 PY_PLATNAME=	${LOWER_OPSYS}
+.elif ${OPSYS} == "IRIX"
+PY_PLATNAME=	${LOWER_OPSYS:C/\..*//}
 .else
 PY_PLATNAME=	${LOWER_OPSYS}${OS_VERSION:C/\..*//}
 .endif
