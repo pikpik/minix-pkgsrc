@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/04/15 20:39:50 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/01/05 20:24:05 is Exp $
 # FreeBSD Id: Makefile,v 1.7 1996/11/18 09:56:45 asami Exp 
 #
 
@@ -10,5 +10,6 @@ HOMEPAGE=	http://www.euronet.nl/~rja/Xsnow/
 MAINTAINER=	is@netbsd.org
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 
 .include "../../mk/bsd.pkg.mk"
