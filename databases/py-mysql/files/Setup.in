@@ -1,3 +1,5 @@
+# $NetBSD$
+#
 *shared*
 MySQL MySQLmodule.c -L@PREFIX@/lib -lmysqlclient \
 	-I@PREFIX@/include/mysql

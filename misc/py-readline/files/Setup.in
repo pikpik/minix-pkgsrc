@@ -1,2 +1,4 @@
+# $NetBSD$
+#
 *shared*
 readline readline.c -L@LOCALBASE@/lib -I@LOCALBASE@/include -lreadline -ltermcap
