@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/02/16 14:38:18 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2001/08/26 10:32:19 skrll Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
@@ -11,7 +11,7 @@ MAINTAINER=	fujimoto@oscar.elec.waseda.ac.jp
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html
 COMMENT=	GNU Standards-compliant Makefile generator
 
-DEPENDS=	autoconf-2.13:../../devel/autoconf
+DEPENDS=	autoconf>=2.13:../../devel/autoconf
 
 USE_PERL5=	# defined
 GNU_CONFIGURE=	# defined
