@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:18:16 agc Exp $
-#
+# $NetBSD: Makefile,v 1.10 2004/02/14 17:21:42 jlam Exp $
 
 DISTNAME=	libgii-0.8.4.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -14,7 +13,7 @@ HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Input Interface - API for all possible input sources
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 USE_X11=		yes
 USE_LIBTOOL=		yes
