@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2004/02/22 21:59:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2004/05/19 05:42:38 minskim Exp $
 #
 
 DISTNAME=	OpenSP-1.5.1
 PKGNAME=	${DISTNAME:S/OpenSP/opensp/}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openjade/}
 
@@ -15,7 +16,7 @@ CONFLICTS+=     sp-[0-9]*
 USE_BUILDLINK3=		yes
 USE_PERL5=		build
 USE_LIBTOOL=		yes
-PTHREAD_OPTS+=		native
+PTHREAD_OPTS+=		require
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-http \
@@ -23,9 +24,5 @@ CONFIGURE_ARGS+=	--enable-http \
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-
-.if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "none")
-.  include "../../devel/unproven-pthreads/buildlink3.mk"
-.endif
 
 .include "../../mk/bsd.pkg.mk"
