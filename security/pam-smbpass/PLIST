@@ -1,0 +1,10 @@
+@comment $NetBSD$
+lib/security/pam_smbpass.so
+share/doc/${PKGBASE}/README
+share/examples/${PKGBASE}/README
+share/examples/${PKGBASE}/kdc-pdc
+share/examples/${PKGBASE}/password-mature
+share/examples/${PKGBASE}/password-migration
+share/examples/${PKGBASE}/password-sync
+@dirrm share/examples/${PKGBASE}
+@dirrm share/doc/${PKGBASE}
