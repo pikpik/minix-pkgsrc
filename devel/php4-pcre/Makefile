@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/02/28 06:17:34 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/10 13:30:13 wiz Exp $
 
 MODNAME=		pcre
 CATEGORIES+=		devel
@@ -12,4 +12,5 @@ USE_BUILDLINK2=		YES
 CONFIGURE_ARGS+=	--with-pcre-regex=shared,${BUILDLINK_PREFIX.pcre}
 
 .include "../../devel/pcre/buildlink2.mk"
+.include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
