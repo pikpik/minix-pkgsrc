@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2004/10/27 19:33:37 drochner Exp $
+# $NetBSD: Makefile,v 1.40 2004/10/30 00:59:02 minskim Exp $
 #
 
 DISTNAME=		nautilus-2.8.1
@@ -25,8 +25,6 @@ PKGCONFIG_OVERRIDE+=	libnautilus-extension/libnautilus-extension.pc.in
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 GCONF2_SCHEMAS=		apps_nautilus_preferences.schemas
-
-BUILDLINK_DEPENDS.libexif=     libexif>=0.6.10
 
 .include "../../audio/esound/buildlink3.mk"
 .include "../../devel/GConf2/schemas.mk"
