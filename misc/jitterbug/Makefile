@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2003/07/17 21:49:15 grant Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/20 12:21:02 agc Exp $
 
 DISTNAME=	jitterbug-1.6.2
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://jitterbug.samba.org/pub/jitterbug/
 
