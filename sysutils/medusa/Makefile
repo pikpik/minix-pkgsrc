@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/11/12 01:31:51 salo Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/03 18:49:53 reed Exp $
 #
 
 DISTNAME=		medusa-0.5.1
@@ -13,12 +13,12 @@ COMMENT=		File system indexing engine
 
 DEPENDS+=		psmisc-[0-9]*:../../sysutils/psmisc
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-.include "../../sysutils/gnome-vfs/buildlink2.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
