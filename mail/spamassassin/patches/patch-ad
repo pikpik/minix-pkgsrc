@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- spamd/netbsd-rc-script.sh.orig	Thu Sep 26 12:50:26 2002
++++ spamd/netbsd-rc-script.sh
+@@ -1,2 +1,2 @@
+-#! /bin/sh
++#!@RCD_SCRIPTS_SHELL@
+ #
