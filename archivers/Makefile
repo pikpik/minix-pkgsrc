@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2003/12/15 17:53:03 agc Exp $
+# $NetBSD: Makefile,v 1.67 2004/01/07 15:14:23 ben Exp $
 #
 
 COMMENT=	Archivers
@@ -48,6 +48,7 @@ SUBDIR+=	php4-zip
 SUBDIR+=	php4-zlib
 SUBDIR+=	ppunpack
 SUBDIR+=	rar
+SUBDIR+=	rar-linux
 SUBDIR+=	squsq
 SUBDIR+=	star
 SUBDIR+=	stuffit
