@@ -1,11 +1,5 @@
-# $NetBSD: Makefile,v 1.2 1999/09/28 00:55:53 simonb Exp $
-#
-# New ports collection makefile for:   xaniroc
-# Version required:    0.3
-# Date created:        20 Sep 1997
-# Whom:                Stefan Zehl <sec@42.org>
-#
-# FreeBSD: ports/x11/xaniroc/Makefile,v 1.4 1999/08/31 02:50:46 peter Exp
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:06:58 wiz Exp $
+# from FreeBSD: ports/x11/xaniroc/Makefile,v 1.4 1999/08/31 02:50:46 peter Exp
 #
 
 DISTNAME=	xaniroc
