@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2005/02/05 18:22:49 jklos Exp $
+# $NetBSD: Makefile,v 1.114 2005/02/23 14:16:15 adam Exp $
 
 DISTNAME=	gimp-2.2.4
 CATEGORIES=	graphics
@@ -54,6 +54,8 @@ CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/pango/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/aalib/buildlink3.mk"
