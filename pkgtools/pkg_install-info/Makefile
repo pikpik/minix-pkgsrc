@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:14:08 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/25 03:29:57 grant Exp $
 #
 
 DISTNAME=		pkg_install-info-${VERSION}
@@ -11,7 +11,9 @@ MAINTAINER=		seb@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/texinfo/texinfo.html
 COMMENT=		Standalone GNU info file installation utility
 
-USE_BUILDLINK2=		# defined
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		# defined
 GNU_CONFIGURE=		# defined
 
 NO_CHECKSUM=		# defined
@@ -21,6 +23,8 @@ NO_CHECKSUM=		# defined
 VERSION=		4.5
 
 MAKE_ENV+=		BINOWN=${BINOWN} BINGRP=${BINGRP}
+
+INSTALLATION_DIRS=	bin
 
 do-extract:
 	@${CP} -Rp ${FILESDIR} ${WRKSRC}
