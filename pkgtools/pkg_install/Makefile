@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2003/09/11 07:14:42 reed Exp $
+# $NetBSD: Makefile,v 1.83 2003/09/13 04:08:12 jlam Exp $
 
 # Notes to package maintainers:
 #
@@ -32,11 +32,11 @@ PKG_PRESERVE=		# defined
 LIBNBCOMPAT_FILESDIR=	${.CURDIR}/../../pkgtools/libnbcompat/files
 LIBNBCOMPAT_SRCDIR=	${WRKDIR}/libnbcompat
 
+.include "../../mk/bsd.prefs.mk"
+
 CFLAGS+=		-I${LIBNBCOMPAT_SRCDIR}
 LDFLAGS+=		-L${LIBNBCOMPAT_SRCDIR}
 LIBS+=			-lnbcompat
-
-.include "../../mk/bsd.prefs.mk"
 
 VERSION!=		${AWK} -F '"' '/PKGTOOLS_VERSION/ {print $$2}' \
 			${FILESDIR}/lib/version.h
