@@ -1,5 +1,7 @@
+#	$NetBSD$
+
 CFLAGS+=	-I${LOCALBASE}/include
-LDFLAGS+=	-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib
+LDFLAGS+=	-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -lm
 
 all: emixer
 emixer: main.o
