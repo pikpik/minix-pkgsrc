@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2004/05/06 19:19:40 wiz Exp $
+# $NetBSD: Makefile,v 1.72 2004/05/07 15:25:14 cjep Exp $
 #
 
 DISTNAME=	lynx2.8.5
@@ -10,6 +10,7 @@ MASTER_SITES=	http://lynx.isc.org/${DISTNAME}/ \
 		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/WWW/lynx/${DISTNAME}/
 EXTRACT_SUFX=	.tar.bz2
 
+PATCH_DIST_STRIP= -p1
 PATCH_SITES=	${MASTER_SITES:=patches/}
 PATCHFILES=	2.8.5rel.2.patch.gz
 
