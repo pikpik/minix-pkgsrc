@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.303 2002/08/01 05:32:46 jlam Exp $
+# $NetBSD: Makefile,v 1.304 2002/08/03 01:30:57 hubertf Exp $
 #
 
 COMMENT=	Development utilities
@@ -297,6 +297,7 @@ SUBDIR+=	smpeg
 SUBDIR+=	spiff
 SUBDIR+=	stlport
 SUBDIR+=	stooop
+SUBDIR+=	subversion
 SUBDIR+=	swig
 SUBDIR+=	tavrasm
 SUBDIR+=	tkcvs
