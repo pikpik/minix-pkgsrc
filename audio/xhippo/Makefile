@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 1999/11/03 04:02:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/16 13:30:53 wiz Exp $
 #
 
 DISTNAME=	xhippo-2.0
 CATEGORIES=	audio x11
-MASTER_SITES=	http://zenchaos.netpedia.net/software/
+MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://zenchaos.netpedia.net/
