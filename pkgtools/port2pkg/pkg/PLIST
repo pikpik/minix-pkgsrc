@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/port2pkg
+man/cat1/port2pkg.0
+man/man1/port2pkg.1
