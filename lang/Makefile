@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.40 2000/01/10 22:11:06 pooka Exp $
+# $NetBSD: Makefile,v 1.41 2000/01/13 16:37:35 agc Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
 #    SUBDIR += Gofer
     SUBDIR += STk
 #    SUBDIR += Sather
-#    SUBDIR += bwbasic
+    SUBDIR += bwbasic
 #    SUBDIR += cim
     SUBDIR += cint
     SUBDIR += clisp
