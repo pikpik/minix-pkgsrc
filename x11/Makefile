@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 1998/08/29 12:59:33 garbled Exp $
+# $NetBSD: Makefile,v 1.54 1998/09/01 21:49:24 tron Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -112,7 +112,7 @@
 #    SUBDIR += xmold
     SUBDIR += xmove
     SUBDIR += xneko
-    SUBDIR += xpkgwedge
+#    SUBDIR += xpkgwedge - not for general consumption yet
     SUBDIR += xplot
     SUBDIR += xpmroot
     SUBDIR += xpns
