@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $NetBSD$
+# $NetBSD: pkgdep.pl,v 1.1.1.1 1999/09/21 02:26:13 sakamoto Exp $
 
 require 'getopts.pl';
 use strict;
@@ -128,6 +128,7 @@ sub mkreqd {
 	for (keys %deps) {
 		my ($p) = $_;
 		for (split(/ /, $deps{$p})) {
+			$_ =~ s/(\+)/\\\1/g;
 			if (defined($reqd{$_})) {
 				if (!($reqd{$_} =~ /$_/)) {
 					$reqd{$_} .= " " . $p;
