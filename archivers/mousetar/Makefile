@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/16 09:34:12 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/28 12:41:55 agc Exp $
 #
 
-DISTNAME=	mousetar-20020202
+DISTNAME=	mousetar-20021217
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/mouse/tar/
 DISTFILES=	tar.c tar.man
