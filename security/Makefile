@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.220 2005/01/13 21:52:11 jlam Exp $
+# $NetBSD: Makefile,v 1.221 2005/01/22 13:22:46 peter Exp $
 #
 
 COMMENT=	Security tools
@@ -217,6 +217,7 @@ SUBDIR+=	sudo
 SUBDIR+=	tacshell
 SUBDIR+=	tcp_wrappers
 SUBDIR+=	tct
+SUBDIR+=	tinyca
 SUBDIR+=	tkpasman
 SUBDIR+=	tls
 SUBDIR+=	tripwire
