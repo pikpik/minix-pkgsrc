@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/11/14 14:47:57 agc Exp $
+# $NetBSD: Makefile,v 1.6 2002/03/10 23:59:00 abs Exp $
 
 DISTNAME=	jakarta-servletapi-3.2.3-src
 PKGNAME=	jakarta-servletapi-3.2.3
@@ -30,7 +30,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/java/jakarta-servletapi
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/java/jakarta-servletapi
 	${INSTALL_DATA} ${WRKSRC}/LICENSE ${PREFIX}/share/doc/java/jakarta-servletapi
-	cd ${WRKDIR}/dist/servletapi/docs && ${PAX} -rwpe . ${PREFIX}/share/doc/java/jakarta-servletapi
+	cd ${WRKDIR}/dist/servletapi/docs && ${PAX} -rwpp . ${PREFIX}/share/doc/java/jakarta-servletapi
 
 .include "../../mk/bsd.pkg.mk"
 MAKE_PROGRAM=	${LOCALBASE}/bin/ant
