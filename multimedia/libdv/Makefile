@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/04 23:09:06 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/01/03 12:48:29 wiz Exp $
 
 DISTNAME=	libdv-0.104
 CATEGORIES=	multimedia
@@ -22,8 +22,9 @@ LIBS+=			${LIBOSSAUDIO}
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
-#if Xfree86 < ver. 4.x.x, uncomment 
-#CONFIGURE_ARGS+=--disable-xv
+.if !exists(${X11BASE}/include/X11/extensions/Xvlib.h)
+CONFIGURE_ARGS+=--disable-xv
+.endif
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
