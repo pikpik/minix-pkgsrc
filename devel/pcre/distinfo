@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/04/26 21:59:53 kim Exp $
+$NetBSD$
 
-MD5 (pcre-2.08.tar.gz) = c0a0e7605eb1ed1787a0641f4d775e56
+SHA1 (pcre-2.08.tar.gz) = 957f5aa2c7e9d12100d4344030fcd6836727d89d
+Size (pcre-2.08.tar.gz) = 180799 bytes
