@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/12/28 15:40:14 zuntum Exp $
+# $NetBSD: Makefile,v 1.16 2003/12/28 16:21:35 zuntum Exp $
 #
 
 DISTNAME=	devtodo-0.1.17
@@ -14,8 +14,6 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
-CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 # We don't need curses, just termcap.
 CONFIGURE_ENV+=		ac_cv_lib_curses_tputs=no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/01/05 20:38:35 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/20 12:18:16 agc Exp $
 #
 
 DISTNAME=		jpegsrc.v6b
@@ -20,8 +20,6 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-static

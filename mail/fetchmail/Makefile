@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2003/11/12 03:39:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.137 2004/01/06 07:06:30 jlam Exp $
 
 DISTNAME=	fetchmail-6.2.5
 PKGREVISION=	1
@@ -19,8 +19,6 @@ USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-hesiod
-CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 BUILD_DEFS+=		USE_INET6
 LDFLAGS+=		${CFLAGS}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:17:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:25 grant Exp $
 #
 
 DISTNAME=	nbtscan-1.5
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.inetcat.org/software/nbtscan.html
 COMMENT=	NetBIOS name network scanner
 
 GNU_CONFIGURE=	yes
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 ALL_TARGET=	nbtscan
 

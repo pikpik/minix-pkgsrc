@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/09/05 09:09:25 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2003/09/23 10:42:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/12/24 17:45:28 ache Exp
 #
 
@@ -40,9 +40,6 @@ CONFLICTS+=	lukemftpd-[0-9]*
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--enable-quota --enable-noop --enable-skey
-
-CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 DIST_SUBDIR=		wu-ftpd
 

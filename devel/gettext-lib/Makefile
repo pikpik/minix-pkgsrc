@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/01/05 11:17:10 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2004/01/06 04:37:52 jlam Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -24,8 +24,6 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-included-gettext
 
-CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
-CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 CONFIGURE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
