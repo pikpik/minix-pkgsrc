@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/22 13:51:26 agc Exp $
+# $NetBSD: Makefile,v 1.2 2002/04/22 13:54:28 agc Exp $
 #
 
 DISTNAME=	jasmin-1.06
@@ -19,6 +19,7 @@ post-patch:
 	${MV} ${WRKSRC}/bin/jasmin ${WRKSRC}/bin/jasmin.patch && \
 		${SED} -e 's|@PREFIX@|${PREFIX}|g' ${WRKSRC}/bin/jasmin.patch > ${WRKSRC}/bin/jasmin && \
 		${CHMOD} 755 ${WRKSRC}/bin/jasmin
+	${CHMOD} -R ugo+rX ${WRKSRC}/
 	${RM} ${WRKSRC}/bin/jasmin.patch
 
 do-install:
