@@ -1,0 +1,12 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	${RM} -f @DOCDIR@/samples
+	${LN} -sf ../../examples/mutt @DOCDIR@/samples
+	;;
+
+DEINSTALL)
+	${RM} -f @DOCDIR@/samples
+	;;
+esac
