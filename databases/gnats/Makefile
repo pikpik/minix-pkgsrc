@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/11 11:42:26 martti Exp $
+# $NetBSD: Makefile,v 1.2 2002/02/18 15:14:06 seb Exp $
 
 DISTNAME=	gnats-3.113.1
 CATEGORIES=	devel
@@ -12,7 +12,7 @@ COMMENT=	Cygnus GNATS bug tracking system
 
 BUILD_DEPENDS+=	m4-*:../../devel/m4
 
-.if exists(/usr/sbin/user)
+.if exists(/usr/sbin/useradd)
 ADDUSER=	/usr/sbin/useradd
 ADDGROUP=	/usr/sbin/groupadd
 .else
