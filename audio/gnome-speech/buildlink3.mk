@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/02/17 22:02:02 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use gnome-speech.
 #
@@ -14,7 +14,7 @@ BUILDLINK_DEPENDS+=	gnome-speech
 
 .if !empty(GNOME_SPEECH_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=			gnome-speech
-BUILDLINK_DEPENDS.gnome-speech?=		gnome-speech>=0.2.7
+BUILDLINK_DEPENDS.gnome-speech+=		gnome-speech>=0.2.7
 BUILDLINK_PKGSRCDIR.gnome-speech?=		../../audio/gnome-speech
 
 .include "../../devel/gettext-lib/buildlink3.mk"
