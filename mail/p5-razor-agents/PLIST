@@ -1,1 +1,5 @@
 @comment $NetBSD$
+bin/razor-admin
+bin/razor-check
+bin/razor-report
+bin/razor-revoke
