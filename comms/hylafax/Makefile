@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/03/20 12:28:55 abs Exp $
+# $NetBSD: Makefile,v 1.26 2002/08/28 20:59:38 abs Exp $
 #
 
 DISTNAME=	hylafax-4.1
@@ -14,7 +14,6 @@ COMMENT=	Telecommunication and fax server system
 DEPENDS+=	tiff-[0-9]*:../../graphics/tiff
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	mawk>=1.2.2:../../lang/mawk
-DEPENDS+=	ghostscript{,-nox11}-[6-9]*:../../print/ghostscript
 
 DIST_SUBDIR=	hylafax
 
@@ -42,5 +41,6 @@ post-install:
 	${CHMOD} 4555 ${SUID_EXES}
 	${INSTALL_SCRIPT} ${WRKDIR}/hylafax.sh ${PREFIX}/etc/rc.d/hylafax
 
+.include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

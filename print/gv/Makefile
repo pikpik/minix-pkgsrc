@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/01/28 05:18:41 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2002/03/13 17:37:35 fredb Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/07/13 18:49:29 max Exp
 #
 
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://wwwthep.physik.uni-mainz.de/~plass/gv/
 COMMENT=	PostScript and PDF previewer
-
-DEPENDS+=	ghostscript-[6-9]*:../../print/ghostscript
 
 USE_IMAKE=	yes
 XAW_TYPE?=	3d
@@ -30,4 +28,5 @@ post-install:
 	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} install.doc
 
 .include "../../mk/xaw.buildlink.mk"
+.include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"
