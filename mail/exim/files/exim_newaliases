@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$NetBSD: exim_newaliases,v 1.1 1999/09/18 20:26:00 ad Exp $
+#	$NetBSD: exim_newaliases,v 1.2 2000/08/30 11:17:05 ad Exp $
 #
 if [ -f /etc/mail/aliases ]; then
 	ALIASDIR=/etc/mail
@@ -10,4 +10,4 @@ fi
 
 cd $ALIASDIR
 echo -n "$ALIASDIR/aliases: "
-@PREFIX@/sbin/exim_dbmbuild aliases aliases.db
+@PREFIX@/sbin/exim_dbmbuild aliases aliases
