@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/02/22 21:32:18 recht Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/22 21:44:33 recht Exp $
 
 DISTNAME=	coreutils-5.2.0
 CATEGORIES=	sysutils
@@ -35,6 +35,12 @@ CONFLICTS+=		geneweb-[0-9]*
 .if ${GNU_PROGRAM_PREFIX} == ""
 CONFLICTS+=		teTeX-bin-[0-9]*
 .endif
+# graphics/graphviz installs a 'gpr' program, so conflict with it if
+# GNU_PROGRAM_PREFIX == 'g'
+.if ${GNU_PROGRAM_PREFIX} == "g"
+CONFLICTS+=		graphviz-[0-9]*
+.endif
+
 PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
