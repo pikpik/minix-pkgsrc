@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2004/07/30 13:50:07 wiz Exp $
+# $NetBSD: Makefile,v 1.118 2004/08/14 13:30:38 dmcmahill Exp $
 #
 
 COMMENT=	Mathematics
@@ -46,6 +46,7 @@ SUBDIR+=	gtklife
 SUBDIR+=	guppi
 SUBDIR+=	lapack
 SUBDIR+=	libffm
+SUBDIR+=	libmatheval
 SUBDIR+=	linpack
 SUBDIR+=	ltm
 SUBDIR+=	mapm
