@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/10/28 10:24:10 agc Exp $
+# $NetBSD: Makefile,v 1.16 1999/10/29 07:53:03 tron Exp $
 #
 
 DISTNAME=	libglade-0.7
@@ -18,6 +18,7 @@ USE_X11BASE=	YES
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include"
+LDFLAGS+=	-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib
 
 pre-configure:
 	${RM} ${WRKSRC}/libgladeConf.sh
