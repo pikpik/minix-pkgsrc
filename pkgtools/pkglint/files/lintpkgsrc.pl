@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.71 2002/09/30 16:08:18 atatat Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.72 2002/11/14 04:01:56 wiz Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -712,6 +712,14 @@ sub parse_makefile_pkgsrc
 	{ $pkgname = $vars->{PKGNAME}; }
     elsif (defined $vars->{DISTNAME})
 	{ $pkgname = $vars->{DISTNAME}; }
+    if ($pkgname !~ /(.*)-(\d.*)/)
+	{
+	# invoke make here as a last resort
+	my($pkgsrcdir) = ($file =~ m:(/.*)/:);
+	my($makepkgname) = `cd $pkgsrcdir ; make show-vars VARNAMES=PKGNAME`;
+	if ($makepkgname =~ /(.*)-(\d.*)/)
+	    { $pkgname = $makepkgname; }
+	}
     if ($pkgname =~ /^pkg_install-(\d+)$/ && $1 < $pkg_installver)
 	{ $pkgname = "pkg_install-$pkg_installver"; }
     if (defined $pkgname)
