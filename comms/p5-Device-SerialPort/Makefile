@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2001/11/26 06:49:38 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/20 17:46:00 seb Exp $
 #
 
-DISTNAME=	Device-SerialPort-0.070
+DISTNAME=	Device-SerialPort-0.12
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5dse
-WRKSRC=		${WRKDIR}/Device-SerialPort-0.07
 CATEGORIES=	comms perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Device/}
 
