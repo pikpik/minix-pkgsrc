@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/06/25 17:21:02 rh Exp $
+# $NetBSD: Makefile,v 1.9 2000/06/27 08:30:47 tron Exp $
 
 DISTNAME=		gnome-games-1.2.0
 CATEGORIES=		games gnome
@@ -16,30 +16,18 @@ GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS=		--localstatedir=/var
 
 USE_X11BASE=		# defined
+USE_CURSES=		# defined
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 INSTALL_FILE=		${WRKDIR}/INSTALL
-
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-GOOD_CURSES=	1.4[Y-Z] 1.4Z[A-Z] 1.[5-9]*
-
-.for PATTERN in ${GOOD_CURSES}
-.if ${OS_VERSION:M${PATTERN}} != ""
-CURSES_GOOD?=	# defined
-.endif
-.endfor
-
-.if !defined(CURSES_GOOD)
-DEPENDS+=	ncurses>=5.0:../../devel/ncurses
-CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
-.endif
-.endif
 
 post-build:
 	${SED} -e 's#@@INSTALL@@#${INSTALL}#' \
 	  ${PKGDIR}/INSTALL >${INSTALL_FILE}
 
 .include "../../mk/bsd.pkg.mk"
+
+.if ${NEED_NCURSES} == "YES"
+CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
+.endif
