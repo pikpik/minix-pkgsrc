@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.18 2004/05/27 10:28:54 tron Exp $
+# $NetBSD: Makefile.common,v 1.19 2004/10/07 02:01:37 jlam Exp $
 
 SUSE_VERSION=		7.3
 
@@ -29,7 +29,7 @@ BUILD_DEFS+=		RPMIGNOREPATH
 # The SuSE Linux packages have circular dependencies.
 LDD?=			${TRUE}
 
-RPM2PKGARGS=		-d ${PREFIX} -f ${PLIST_SRC} -p ${EMULSUBDIR}
+RPM2PKGARGS?=		-d ${PREFIX} -f ${PLIST_SRC} -p ${EMULSUBDIR}
 .for TEMP in ${RPMIGNOREPATH}
 RPM2PKGARGS+=		-i ${TEMP}
 .endfor
