@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/recode
+@unexec %D/bin/install-info --delete %D/info/recode.info %D/info/dir
+info/recode.info
+@exec %D/bin/install-info %D/info/recode.info %D/info/dir
