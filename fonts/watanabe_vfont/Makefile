@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4.2.2 2002/06/21 23:05:15 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/08/25 21:49:52 jlam Exp $
 #
 
 DISTNAME=	watanabe-vf
@@ -12,7 +12,6 @@ COMMENT=	Watanabe-vector Japanese font
 USE_BUILDLINK2=	yes
 
 EXTRACT_ONLY=	# empty
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
