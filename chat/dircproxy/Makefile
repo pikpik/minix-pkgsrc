@@ -1,13 +1,24 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/15 15:16:23 agc Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/30 10:24:57 kleink Exp $
 
-DISTNAME=	dircproxy-1.0.1
+DISTNAME=	dircproxy-1.0.5
 CATEGORIES=	chat
-MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=dircproxy/}
+MASTER_SITES=	http://www.dircproxy.net/download/stable/
 
-MAINTAINER=     sb125499@ohiou.edu
+MAINTAINER=	sb125499@ohiou.edu
 HOMEPAGE=	http://www.dircproxy.net/
-COMMENT=	detachable internet relay chat proxy server
+COMMENT=	Detachable internet relay chat proxy server
 
-GNU_CONFIGURE=	YES
+GNU_CONFIGURE=		YES
+USE_BUILDLINK2=		YES
+USE_PERL5=		YES
+USE_PKGINSTALL=		YES
+
+REPLACE_PERL=		${WRKSRC}/contrib/log.pl ${WRKSRC}/contrib/privmsg.pl
+
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+
+EGDIR=			${PREFIX}/share/examples/dircproxy
+CONF_FILES=		${EGDIR}/dircproxyrc ${PKG_SYSCONFDIR}/dircproxyrc
+RCD_SCRIPTS=		dircproxy
 
 .include "../../mk/bsd.pkg.mk"
