@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/cgoban
+bin/grab_cgoban
+man/man6/cgoban.6
+share/misc/seigen-minoru.sgf
