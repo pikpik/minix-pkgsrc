@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/11/06 20:32:57 fredb Exp $
+# $NetBSD: Makefile,v 1.28 2003/11/12 03:39:41 jschauma Exp $
 #
 
 DISTNAME=	ntp-4.2.0
@@ -15,7 +15,7 @@ GNU_CONFIGURE=	YES
 USE_PERL5=	build
 #USE_BUILDLINK2=YES ***FIXME: Causes lots of "missing prototype" warnings.***
 
-CONFIGURE_ENV+=	PATH_PERL="${PERL5}"
+CONFIGURE_ENV+=	PATH_PERL="${PERL5}" ac_cv_header_sys_soundcard_h=no
 
 DOCDIR=		${PREFIX}/share/doc/html
 EXAMPLESDIR=	${PREFIX}/share/examples
