@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2002/04/27 10:12:40 rh Exp $
+# $NetBSD: Makefile,v 1.5 2002/09/06 06:45:07 jlam Exp $
 #
 
-DISTNAME=	flac-1.0.3
-PKGNAME=	flac-xmms-1.0.3
+DISTNAME=	flac-1.0.4
+PKGNAME=	flac-xmms-1.0.4
 CATEGORIES=	audio archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flac/}
 
@@ -20,6 +20,8 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 XMMS_WRKSRC=	${WRKSRC}/src/plugin_xmms
 
 do-build:
+	@cd ${XMMS_WRKSRC}/../plugin_common && ${SETENV} ${MAKE_ENV} \
+		${MAKE_PROGRAM} ${MAKE_FLAGS} -f ${MAKEFILE} ${ALL_TARGET}
 	@cd ${XMMS_WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		${MAKE_PROGRAM} ${MAKE_FLAGS} -f ${MAKEFILE} ${ALL_TARGET}
 
