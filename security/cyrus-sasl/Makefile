@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/25 12:32:50 veego Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/25 15:23:49 jlam Exp $
 
 DISTNAME=	cyrus-sasl-1.5.24
 CATEGORIES=	security
@@ -21,6 +21,11 @@ CONFIGURE_ENV+=	CPPFLAGS="-I/usr/include/openssl"
 .endif
 
 CONFIGURE_ARGS+=	--with-plugindir=${PREFIX}/lib/sasl
+
+.if defined(USE_PAM)
+CONFIGURE_ARGS+=	--with-pam=${PREFIX}
+DEPENDS+=		PAM-*:../../security/PAM
+.endif
 
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
