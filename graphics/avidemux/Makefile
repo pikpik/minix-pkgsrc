@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/24 15:46:42 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/26 12:42:02 jmmv Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -47,7 +47,7 @@ do-install:
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
-.include "../../graphics/mjpegtools/buildlink2.mk"
+.include "../../multimedia/mjpegtools/buildlink2.mk"
 .include "../../multimedia/xvidcore/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
