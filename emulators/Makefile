@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/03/19 14:17:10 frueauf Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:23 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -18,7 +18,7 @@
 #    SUBDIR += pcemu
 #    SUBDIR += prodosemu
 #    SUBDIR += sim6811
-#    SUBDIR += spim
+    SUBDIR += spim
 #    SUBDIR += stella
 #    SUBDIR += tkhfs
 #    SUBDIR += vgb
