@@ -1,4 +1,4 @@
-/*	$NetBSD: ftree.c,v 1.32 2004/07/02 16:26:53 christos Exp $	*/
+/*	$NetBSD: ftree.c,v 1.7 2004/08/21 03:28:56 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -84,7 +84,7 @@
 #if 0
 static char sccsid[] = "@(#)ftree.c	8.2 (Berkeley) 4/18/94";
 #else
-__RCSID("$NetBSD: ftree.c,v 1.32 2004/07/02 16:26:53 christos Exp $");
+__RCSID("$NetBSD: ftree.c,v 1.7 2004/08/21 03:28:56 jlam Exp $");
 #endif
 #endif /* not lint */
 
@@ -544,7 +544,7 @@ next_file(ARCHD *arcn)
 			statbuf.st_gid = ftnode->st_gid;
 		if (ftnode->flags & (F_UID | F_UNAME))
 			statbuf.st_uid = ftnode->st_uid;
-#if HAVE_STRUCT_STAT_ST_FLAGS
+#if HAVE_FILE_FLAGS
 		if (ftnode->flags & F_FLAGS)
 			statbuf.st_flags = ftnode->st_flags;
 #endif

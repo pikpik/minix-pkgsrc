@@ -1,4 +1,4 @@
-/*	$NetBSD: tables.c,v 1.23 2003/10/27 00:12:41 lukem Exp $	*/
+/*	$NetBSD: tables.c,v 1.4 2004/08/21 03:28:56 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -48,7 +48,7 @@
 #if 0
 static char sccsid[] = "@(#)tables.c	8.1 (Berkeley) 5/31/93";
 #else
-__RCSID("$NetBSD: tables.c,v 1.23 2003/10/27 00:12:41 lukem Exp $");
+__RCSID("$NetBSD: tables.c,v 1.4 2004/08/21 03:28:56 jlam Exp $");
 #endif
 #endif /* not lint */
 
@@ -1195,7 +1195,7 @@ add_dir(char *name, int nlen, struct stat *psb, int frc_mode)
 	dblk.mode = psb->st_mode & 0xffff;
 	dblk.mtime = psb->st_mtime;
 	dblk.atime = psb->st_atime;
-#if HAVE_STRUCT_STAT_ST_FLAGS
+#if HAVE_FILE_FLAGS
 	dblk.fflags = psb->st_flags;
 #else
 	dblk.fflags = 0;
@@ -1225,7 +1225,7 @@ add_dir(char *name, int nlen, struct stat *psb, int frc_mode)
 	dblk->mode = psb->st_mode & 0xffff;
 	dblk->mtime = psb->st_mtime;
 	dblk->atime = psb->st_atime;
-#if HAVE_STRUCT_STAT_ST_FLAGS
+#if HAVE_FILE_FLAGS
 	dblk->fflags = psb->st_flags;
 #else
 	dblk->fflags = 0;
