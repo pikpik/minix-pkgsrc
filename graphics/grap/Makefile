@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:41:08 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/01/01 03:57:25 minskim Exp $
 
 DISTNAME=	grap-1.30
 PKGREVISION=	1
@@ -10,5 +10,6 @@ HOMEPAGE=	http://www.lunabase.org/~faber/Vault/software/grap/
 COMMENT=	Language for typesetting graphs
 
 GNU_CONFIGURE=	yes
+USE_LANGUAGES=	c++
 
 .include "../../mk/bsd.pkg.mk"
