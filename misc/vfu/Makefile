@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/08/16 03:12:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.27 2002/10/25 17:58:04 wiz Exp $
 #
 
 DISTNAME=	vfu-3.04
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.biscom.net/~cade/away/vfu/
 COMMENT=	Small, handy, easy-to-use file manager
 
 USE_BUILDLINK2=	# defined
-USE_NCURSES=	# defined
+USE_NCURSES=	# qiflush()
 
 DOCDIR=		${PREFIX}/share/doc/vfu
 EGDIR=		${PREFIX}/share/examples/vfu

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/08/16 03:12:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2002/09/29 06:32:37 jlam Exp $
 #
 
 DISTNAME=	angband-3.0.1
@@ -17,7 +17,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 USE_BUILDLINK2=	# defined
 USE_X11=	# defined
-USE_NCURSES=	# defined
+USE_NCURSES=	# can_change_color
 
 SPOILERFILE=	angband-spoilers.tar.gz
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2002/07/02 11:29:11 agc Exp $
+# $NetBSD: Makefile,v 1.33 2002/10/08 11:50:04 jlam Exp $
 
 DISTNAME=	xmcd-3.0.2
 CATEGORIES=	audio
@@ -15,7 +15,7 @@ PATCH_DIST_STRIP=	-p1
 WRKSRC=		${WRKDIR}/xmcd-3.0
 
 USE_BUILDLINK2=		# defined
-USE_NCURSES=		# defined
+USE_NCURSES=		# cursor_normal, cursor_invisible (in ncurses in term.h)
 USE_IMAKE=		# defined
 MAKE_ENV+=		BATCH_BINDIR=${PREFIX}/bin
 MAKE_ENV+=		BATCH_LIBDIR=${PREFIX}/lib/X11
