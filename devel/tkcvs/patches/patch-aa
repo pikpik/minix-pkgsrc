@@ -9,13 +9,6 @@ $NetBSD$
 +exec tclsh "$0" -- ${1+"$@"}
  
  #
-@@ -23,5 +23,5 @@ proc set_paths {INSTALLROOT} {
-   } else {
-     set BINDIR [file join $INSTALLROOT bin]
--    set LIBDIR [file join $INSTALLROOT lib]
-+    set LIBDIR [file join $INSTALLROOT share]
-     set MANDIR [file join $INSTALLROOT man man1]
-   }
 @@ -34,21 +34,4 @@ proc show_paths {INSTALLROOT} {
  
    set_paths $INSTALLROOT
