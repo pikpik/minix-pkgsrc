@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2000/10/31 17:06:17 itojun Exp $
+# $NetBSD: Makefile,v 1.150 2000/11/06 18:13:13 wennmach Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -52,6 +52,7 @@
     SUBDIR += guile-gtk
     SUBDIR += guile-slib
     SUBDIR += g-wrap
+    SUBDIR += hdf5
     SUBDIR += id-utils
     SUBDIR += ipv6socket_scrub
     SUBDIR += isect
