@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2003-09-16 05:17:17.000000000 +1000
+--- configure.orig	2004-03-04 23:07:24.000000000 +0100
 +++ configure
-@@ -11659,8 +11659,8 @@ fi
+@@ -11454,8 +11454,8 @@ fi
  # This can only change between Evolution versions (and then can only
  # go up.)
  evolution_db_version_major=3
