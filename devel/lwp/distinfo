@@ -1,5 +1,4 @@
 $NetBSD$
 
-SHA1 (lwp-1.1.tar.gz) = fad87eb45100f163e2a8b26309c2a4e7820f50de
-Size (lwp-1.1.tar.gz) = 172977 bytes
-SHA1 (patch-aa) = 98d2fffe12c67c184786589caaaea12e95885f33
+SHA1 (lwp-1.6.tar.gz) = 0f2ac4edef5d79384218bea30849963753338f73
+Size (lwp-1.6.tar.gz) = 183453 bytes
