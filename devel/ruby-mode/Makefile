@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:33:41 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:13:29 agc Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}mode-${RUBY_VERSION}
-CATEGORIES=	devel
+CATEGORIES=	devel ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 
 MAINTAINER=	taca@NetBSD.org

@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/16 02:03:33 salo Exp $
 #
 
 DISTNAME=	rdoc-beta-2
 PKGNAME=	ruby-rdoc-0.0.0.2
-CATEGORIES=	textproc
+CATEGORIES=	textproc ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rdoc/}
 EXTRACT_SUFX=	.tgz
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/13 13:50:59 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/09/11 15:34:02 taca Exp $
 #
 
 DISTNAME=	mysql-ruby-2.4.5
 PKGNAME=	${RUBY_PKGNAMEPREFIX}mysql-2.4.5
-CATEGORIES=	databases
+CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.tmtm.org/mysql/ruby/
 
 MAINTAINER=	neumann@s-direktnet.de

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/06 15:35:23 taca Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/07 03:40:20 taca Exp $
 
 DISTNAME=	installpkg-0.0.1
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
-CATEGORIES=	devel
+CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.aracnet.com/~ptkwt/ruby_stuff/InstallPkg/
 EXTRACT_SUFX=	.tgz
 

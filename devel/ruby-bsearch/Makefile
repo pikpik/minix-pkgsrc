@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/03/28 21:14:16 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:33:38 grant Exp $
 
 DISTNAME=	ruby-bsearch-${VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}bsearch-${VERSION}
-CATEGORIES=	devel
+CATEGORIES=	devel ruby
 MASTER_SITES=	http://namazu.org/~satoru/ruby-bsearch/
 
 MAINTAINER=	taca@NetBSD.org

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:33:47 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:13:29 agc Exp $
 #
 
 DISTNAME=	ri-0.8a
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
-CATEGORIES=	devel
+CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.pragmaticprogrammer.com/ruby/downloads/files/
 EXTRACT_SUFX=	.tgz
 

@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/30 07:16:42 taca Exp $
 # FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.7 2000/09/26 22:01:12 knu Exp
 
 DISTNAME=	ruby-zlib-${VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}zlib-${VERSION}
-CATEGORIES=	devel
+CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.blue.sky.or.jp/atelier/ruby/
 
 MAINTAINER=	taca@NetBSD.org
