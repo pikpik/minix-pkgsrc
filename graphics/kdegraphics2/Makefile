@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/14 16:10:41 skrll Exp $
+# $NetBSD: Makefile,v 1.2 2001/06/12 20:33:03 jlam Exp $
 #
 
 DISTNAME=	kdegraphics-2.1
@@ -6,7 +6,7 @@ CATEGORIES=	graphics kde
 .include "../../x11/kde2/Makefile.part1"
 COMMENT=	Graphics programs for the KDE integrated X11 desktop
 
-DEPENDS+=	kdebase-2.1:../../x11/kdebase2
+DEPENDS+=	kdebase>=2.1:../../x11/kdebase2
 DEPENDS+=	ghostscript>=6.01:../../print/ghostscript
 #DEPENDS+=	gPhoto2
 #DEPENDS+=	gpio

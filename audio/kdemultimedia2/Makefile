@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2001/04/17 16:03:18 skrll Exp $
+# $NetBSD: Makefile,v 1.4 2001/06/12 20:33:00 jlam Exp $
 
 DISTNAME=	kdemultimedia-2.1
 CATEGORIES=	audio kde
 .include "../../x11/kde2/Makefile.part1"
 COMMENT=	KDE audio tools
 
-DEPENDS+=	kdebase-2.1:../../x11/kdebase2
+DEPENDS+=	kdebase>=2.1:../../x11/kdebase2
 DEPENDS+=	pth>=1.3.7:../../devel/pth
 
 .include "../../x11/kde2/Makefile.part2"
