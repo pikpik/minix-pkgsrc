@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/12/05 16:58:56 augustss Exp $
+# $NetBSD: Makefile,v 1.3 2001/12/11 06:02:57 jmc Exp $
 #
 
-DISTNAME=       birda-0.2
+DISTNAME=       birda-0.3
 CATEGORIES=	comms
 MASTER_SITES=   ftp://ftp.augustsson.net/pub/netbsd/
 
