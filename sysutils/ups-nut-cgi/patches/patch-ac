@@ -1,14 +1,13 @@
 $NetBSD$
 
---- acconfig.h.orig	Sat Mar 10 17:00:13 2001
-+++ acconfig.h	Sat Mar 10 17:00:39 2001
-@@ -15,6 +15,9 @@
- /* default path for model-specific drivers */
- #define MODELPATH "/usr/local/ups/bin"
+--- conf/Makefile.in.orig	Tue Sep  3 17:23:02 2002
++++ conf/Makefile.in
+@@ -4,7 +4,7 @@
+ prefix		= @prefix@
+ exec_prefix	= @exec_prefix@
  
-+/* default path for graphics library files */
-+#define GRAPHLIB_PATH "/usr/local"
-+
- /* path where your pid files should go. */
- #define PIDPATH "/var/run"
+-CONFPATH	= $(DESTDIR)@sysconfdir@
++CONFPATH	= $(DESTDIR)@datadir@/examples/nut
+ 
+ INSTALLCMD  = @INSTALL@
  

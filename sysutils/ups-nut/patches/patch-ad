@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.1 2001/03/11 13:46:12 martin Exp $
+$NetBSD$
 
---- configure.in.orig	Tue Jun 12 07:47:56 2001
-+++ configure.in	Fri Sep 28 10:41:01 2001
-@@ -396,13 +396,17 @@
+--- configure.in.orig	Mon Dec  2 23:08:46 2002
++++ configure.in
+@@ -526,13 +526,17 @@
  dnl | let's test it for sanity before proceeding.  It's better to      |
  dnl | catch them here rather than in the program itself at runtime.    |
  
