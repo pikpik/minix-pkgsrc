@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:17:11 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:53:04 grant Exp $
 #
 
 DISTNAME=		Crypt-OpenPGP-0.17
@@ -10,7 +10,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Crypt/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
 #HOMEPAGE=	
-COMMENT=		perl5 module for OpenPGP support
+COMMENT=		Perl5 module for OpenPGP support
 
 DEPENDS+=		p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 DEPENDS+=		p5-Compress-Zlib-[0-9]*:../../devel/p5-Compress-Zlib

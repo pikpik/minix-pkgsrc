@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/29 16:15:47 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 23:46:57 jlam Exp $
 
 DISTNAME=	GnuPGInterface-0.3.2
 PKGNAME=	${PYPKGPREFIX}-gnupg-0.3.2
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=py-gnupg/}
 
 MAINTAINER=	shell@shellhung.org
 HOMEPAGE=	http://py-gnupg.sourceforge.net/
-COMMENT=	python module for GnuPG interface
+COMMENT=	Python module for GnuPG interface
 
 DEPENDS+=	gnupg>=1.0.0:../../security/gnupg
 

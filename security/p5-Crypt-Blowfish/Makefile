@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:17:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:53:02 grant Exp $
 #
 
 DISTNAME=		Crypt-Blowfish-2.09
@@ -8,7 +8,7 @@ CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Crypt/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
-COMMENT=		perl5 Blowfish implementation
+COMMENT=		Perl5 Blowfish implementation
 
 CRYPTO=			YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:17:09 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:05 grant Exp $
 #
 
 DISTNAME=		Digest-HMAC-1.01
@@ -8,7 +8,7 @@ CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Digest/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
-COMMENT=		perl5 module for HMAC
+COMMENT=		Perl5 module for HMAC
 
 DEPENDS+=		p5-Digest-SHA1>=1.00:../p5-Digest-SHA1
 DEPENDS+=		p5-Digest-MD5>=2.00:../p5-Digest-MD5

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/04/13 13:50:14 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:15 grant Exp $
 #
 
 DISTNAME=	smimemsg15
@@ -9,7 +9,7 @@ MASTER_SITES=	http://mars.elcom.nitech.ac.jp/security/
 
 MAINTAINER=	tech-pkg@jp.NetBSD.org
 HOMEPAGE=	http://mars.elcom.nitech.ac.jp/security/
-COMMENT=	generate and read S/MIME messages
+COMMENT=	Generate and read S/MIME messages
 
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:17:04 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:53:14 grant Exp $
 
 DISTNAME=	scanssh-1.6b
 WRKSRC=		${WRKDIR}/scanssh
@@ -8,7 +8,7 @@ MASTER_SITES=	http://monkey.org/~provos/				\
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://monkey.org/~provos/scanssh/
-COMMENT=	ssh remote version scanner
+COMMENT=	SSH remote version scanner
 
 GNU_CONFIGURE=	yes
 
