@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/09/28 09:13:56 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2003/10/11 14:20:20 dillo Exp $
 #
 
 DISTNAME=	prc-tools-2.2
@@ -30,7 +30,7 @@ CONFLICTS+=	prc-tools-binutils-[0-9]*
 CONFLICTS+=	prc-tools-gcc-[0-9]*
 CONFLICTS+=	prc-tools-gdb-[0-9]*
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
 AUTOCONF_REQD=	2.50

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/12/21 09:49:25 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/16 07:09:28 xtraeme Exp $
 
 DISTNAME=		distcc-2.12.1
 CATEGORIES=		devel
@@ -10,7 +10,7 @@ HOMEPAGE=		http://distcc.samba.org/
 COMMENT=		Tool for distributed C/C++ compiling
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS=		--enable-rfc2553

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/31 00:05:19 kristerw Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:13:28 agc Exp $
 #
 
 DISTNAME=	libtecla-1.5.0
@@ -11,7 +11,7 @@ COMMENT=	Interactive command line editing facilities
 
 WRKSRC=		${WRKDIR}/${PKGBASE}
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 ALL_TARGET=	default
 

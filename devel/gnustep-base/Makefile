@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:30:52 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/12/05 09:55:46 adam Exp $
 #
 
 DISTNAME=		gnustep-base-1.8.0
@@ -12,7 +12,7 @@ COMMENT=		GNUstep foundation classes
 PTHREAD_LIBS=		-lpthread
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 MAKEFILE=		GNUmakefile
 GNU_CONFIGURE=		YES

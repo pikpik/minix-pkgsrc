@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/07/17 21:31:49 grant Exp $
+# $NetBSD: Makefile,v 1.26 2003/09/27 15:29:47 grant Exp $
 #
 
 DISTNAME=	maketool-0.7
@@ -16,7 +16,7 @@ BUILD_USES_MSGFMT=	# defined
 USE_BUILDLINK2=		# defined
 USE_PKGLOCALEDIR=	# defined
 USE_X11=		# defined
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		# defined
 USE_PKGLOCALEDIR=	# defined
 

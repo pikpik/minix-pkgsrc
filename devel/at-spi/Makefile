@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/12/30 16:48:44 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/03 18:49:36 reed Exp $
 #
 
 DISTNAME=		at-spi-1.3.8
@@ -14,7 +14,7 @@ COMMENT=		Assistive Technology Service Provider Interface
 DEPENDS+=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

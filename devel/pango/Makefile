@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/09/08 14:17:42 adam Exp $
+# $NetBSD: Makefile,v 1.30 2003/12/30 17:21:55 cjep Exp $
 #
 
 DISTNAME=		pango-1.2.5
@@ -14,7 +14,7 @@ COMMENT=		Library for layout and rendering of text
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check

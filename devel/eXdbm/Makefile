@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 14:13:53 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/02 13:16:27 wiz Exp $
 #
 
 DISTNAME=	eXdbm-beta-1.0b1
@@ -10,7 +10,7 @@ MAINTAINER=	snoonan@tbearsiberians.com
 HOMEPAGE=	http://www.linux-france.org/pesch/exode/exdbm.html
 COMMENT=	eXode configuration database routines
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 USE_BUILDLINK2=	YES
 
 .include "../../mk/bsd.pkg.mk"

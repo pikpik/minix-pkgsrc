@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/01/05 23:22:51 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2004/01/20 12:13:29 agc Exp $
 #
 
 DISTNAME=	popt-1.7
@@ -21,7 +21,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME}
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/12/28 23:37:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/03 18:49:38 reed Exp $
 #
 
 DISTNAME=	gtranslator-1.0
@@ -15,7 +15,7 @@ DEPENDS=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 MANCOMPRESSED=		yes

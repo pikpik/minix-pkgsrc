@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/12/08 14:41:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:39 reed Exp $
 
 DISTNAME=	umbrello-1.1.1
 PKGREVISION=	5
@@ -11,7 +11,7 @@ HOMEPAGE=	http://uml.sourceforge.net/
 COMMENT= 	Unified Modelling Language diagram program for KDE
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=              yes
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          yes
 
 .include "../../meta-pkgs/kde3/buildlink2.mk"

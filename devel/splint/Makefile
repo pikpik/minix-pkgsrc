@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:34:05 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:13:29 agc Exp $
 #
 
 VERSION=	3.0.1.6
@@ -13,7 +13,7 @@ HOMEPAGE=	http://lclint.cs.virginia.edu/
 COMMENT=	Statically check C programs
 
 WRKSRC=		${WRKDIR}/splint-${VERSION}
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=  YES
 
 post-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2003/12/08 14:41:39 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2004/01/03 18:49:38 reed Exp $
 
 DISTNAME=	kdbg-1.2.9
 PKGREVISION=	2
@@ -13,7 +13,7 @@ COMMENT=	Graphical User Interface around gdb using KDE
 BUILD_USES_MSGFMT=	yes
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

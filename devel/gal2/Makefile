@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/12/28 23:37:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/03 18:49:38 reed Exp $
 #
 
 DISTNAME=	gal-1.99.10
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Library functions that came from Gnumeric and Evolution
 
 USE_X11=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 BUILD_USES_MSGFMT=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/03 18:49:39 reed Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/20 12:13:29 agc Exp $
 #
 
 DISTNAME=	ogre-v0-12-1
@@ -15,7 +15,7 @@ COMMENT=	Object-Oriented Graphics Rendering Engine
 WRKSRC=			${WRKDIR}/ogrenew
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 USE_X11=		yes
 

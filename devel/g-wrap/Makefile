@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/08/09 10:44:40 seb Exp $
+# $NetBSD: Makefile,v 1.23 2003/09/19 05:18:36 dent Exp $
 
 DISTNAME=	g-wrap-1.3.4
 PKGREVISION=	3
@@ -14,7 +14,7 @@ DEPENDS+=	guile-slib>=2.4.2:../../devel/guile-slib
 USE_BUILDLINK2=		YES
 
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 
 USE_MAKEINFO=		YES

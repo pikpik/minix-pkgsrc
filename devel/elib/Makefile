@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/08/09 10:44:39 seb Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/18 16:29:50 cube Exp $
 #
 
 DISTNAME=	elib-1.0
@@ -18,7 +18,7 @@ BUILD_ENV+=	EMACS=${EMACS_FLAVOR}
 MAKEFLAGS+=	EMACS=${EMACS_FLAVOR}
 
 NO_CONFIGURE=	# set
-USE_GMAKE=	# set
+USE_GNU_TOOLS+=	make
 
 USE_MAKEINFO=	YES
 INFO_FILES=	elib.info
