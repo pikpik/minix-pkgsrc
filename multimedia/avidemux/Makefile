@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:59:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:45 jlam Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -23,6 +23,8 @@ LDFLAGS+=		${LIBOSSAUDIO}
 CONFIGURE_ARGS+=	--disable-warnings
 
 .include "../../mk/bsd.prefs.mk"
+
+BUILD_DEFS+=		USE_MMX
 
 .if empty(USE_MMX:M[Yy][Ee][Ss])
 CONFIGURE_ARGS+=	--disable-mmx
