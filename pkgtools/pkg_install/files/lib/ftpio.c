@@ -1,4 +1,4 @@
-/*	$NetBSD: ftpio.c,v 1.65 2004/12/29 11:35:02 agc Exp $	*/
+/*	$NetBSD: ftpio.c,v 1.66 2005/01/06 11:56:39 agc Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: ftpio.c,v 1.65 2004/12/29 11:35:02 agc Exp $");
+__RCSID("$NetBSD: ftpio.c,v 1.66 2005/01/06 11:56:39 agc Exp $");
 #endif
 
 /*-
@@ -1238,7 +1238,7 @@ unpackURL(const char *url, const char *dir)
 			errx(EXIT_FAILURE, "don't know how to decompress %s, sorry", pkg);
 
 		/* yes, this is gross, but needed for borken ftp(1) */
-		(void) snprintf(cmd, sizeof(cmd), "get %s \"| ( cd %s; " TAR_CMD " %s %s -%sx -f - | tee /dev/stderr )\"\n",
+		(void) snprintf(cmd, sizeof(cmd), "get %s \"| ( cd %s; " TAR_CMD " %s %s -%sxp -f - | tee /dev/stderr )\"\n",
 		    pkg, dir,
 		    decompress_cmd != NULL ? "--use-compress-program" : "",
 		    decompress_cmd != NULL ? decompress_cmd : "",
