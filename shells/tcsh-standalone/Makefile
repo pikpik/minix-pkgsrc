@@ -1,10 +1,13 @@
-# $NetBSD: Makefile,v 1.9 2003/05/05 10:54:13 agc Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/18 22:59:38 grant Exp $
 #
 
 NO_MTREE=		YES
 
-PKGNAME=		standalone-${DISTNAME}
+PKGNAME=		${DISTNAME:C|-.*||}-standalone${DISTNAME:C|[^-]*||}
 WRKSRC=			${WRKDIR}/${DISTNAME}
+
+# this package used to be called 'standalone-tcsh'
+CONFLICTS+=		standalone-tcsh-[0-9]*
 
 PKG_SHELL=		/bin/tcsh
 
