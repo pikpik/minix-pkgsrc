@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/24 22:18:51 recht Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/10 12:38:21 jdolecek Exp $
 
 PKGNAME=		postgresql74-plpython-${BASE_VERS}
+
 COMMENT=		PL/Python procedural language for the PostgreSQL backend
 
 DEPENDS+=	postgresql74-server>=${BASE_VERS}:../../databases/postgresql74-server
@@ -11,6 +12,7 @@ USE_BUILDLINK3=		yes
 
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
 CONFIGURE_ARGS+=	--with-python
+CONFIGURE_ENV+=		PYTHON="${PYTHONBIN}"
 
 BUILD_DIRS=		${WRKSRC}/src/pl/plpython
 
