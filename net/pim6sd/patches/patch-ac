@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- cftoken.l.orig	Wed Apr  3 07:32:18 2002
++++ cftoken.l
+@@ -44,11 +44,7 @@
+ #include "vmbuf.h"
+ #include "debug.h"
+ #include "cfparse-defs.h"
+-#ifdef __NetBSD__
+-#include "cfparse.h"
+-#else
+ #include "y.tab.h"
+-#endif
+ 
+ static int yyerrorcount = 0;
+ int lineno = 1;
