@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/09 07:53:24 rh Exp $
+# $NetBSD: Makefile,v 1.17 2004/05/29 07:51:19 rh Exp $
 #
 
 DISTNAME=	cgoban-unix-2.6.1
@@ -13,7 +13,7 @@ COMMENT=	Java Go server client and SGF viewer/editor
 
 WRKSRC=		${WRKDIR}/cgoban
 NO_BUILD=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_JAVA2=	yes
 USE_JAVA=	run
 
