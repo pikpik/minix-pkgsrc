@@ -1,12 +1,12 @@
 $NetBSD$
 
---- gtkextra/gtkplotps.c.orig	Tue Jul 10 13:27:39 2001
-+++ gtkextra/gtkplotps.c	Tue Jul 10 13:28:10 2001
+--- gtkextra/gtkplotps.c.orig	Wed Jan  9 12:09:03 2002
++++ gtkextra/gtkplotps.c	Wed Jan  9 12:09:20 2002
 @@ -34,7 +34,6 @@
  #include <ctype.h>
  #include <time.h>
  #include <gtk/gtk.h>
 -#include <wctype.h>
+ #include <locale.h>
  
  #include "gtkplot.h"
- #include "gtkpsfont.h"
