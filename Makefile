@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2003/07/25 02:44:09 grant Exp $
+# $NetBSD: Makefile,v 1.59 2003/09/16 20:31:00 jmmv Exp $
 #
 
 .include "mk/bsd.prefs.mk"
@@ -25,6 +25,7 @@ SUBDIR += emulators
 SUBDIR += finance
 SUBDIR += fonts
 SUBDIR += games
+SUBDIR += geography
 SUBDIR += graphics
 SUBDIR += ham
 SUBDIR += inputmethod
