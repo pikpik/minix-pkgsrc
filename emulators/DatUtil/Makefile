@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/04 12:05:13 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/14 16:20:58 wiz Exp $
 #
 
 DISTNAME=		dutil214
 PKGNAME=		DatUtil-2.14
-CATEGORIES=		emulation
+CATEGORIES=		emulators
 MASTER_SITES=		http://www.logiqx.com/Tools/DatUtil/
 EXTRACT_SUFX=		.zip
 
