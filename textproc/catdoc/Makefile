@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/04/17 10:30:01 jdolecek Exp $
+# $NetBSD: Makefile,v 1.14 2000/04/17 10:55:02 jdolecek Exp $
 #
 
 DISTNAME=	catdoc-0.91.4
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.go.dlr.de/fresh/unix/src/contrib/
 
 MAINTAINER=	packages@netbsd.org
 
-DEPENDS=	tk-[0-9]*:../../x11/tk80
+DEPENDS=	tk-8.3.2:../../x11/tk
 
 WRKSRC=		${WRKDIR}/catdoc
 
