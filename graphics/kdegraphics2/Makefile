@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/12/03 15:37:16 skrll Exp $
+# $NetBSD: Makefile,v 1.8 2002/03/13 17:37:11 fredb Exp $
 
 DISTNAME=	kdegraphics-2.2.2
 PKGREVISION=	1
@@ -16,11 +16,8 @@ USE_BUILDLINK_ONLY=	YES
 
 CONFIGURE_ARGS+=	--without-kamera	# requires gPhoto2, gpio
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-LIBS=			-Wl,--export-dynamic
-.endif
+# Ensure we export symbols in the linked shared object.
+LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
 .include "../../graphics/tiff/buildlink.mk"
 .include "../../x11/kde2/buildlink.mk"

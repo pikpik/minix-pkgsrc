@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/08/01 05:48:04 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/28 07:15:26 skrll Exp $
 
 DISTNAME=	kdemultimedia-3.0.3
 CATEGORIES=	audio
@@ -10,11 +10,8 @@ DEPENDS+=	xanim>=2.80.0:../../graphics/xanim
 
 USE_BUILDLINK_ONLY=	YES
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-LIBS=			-Wl,--export-dynamic
-.endif
+# Ensure we export symbols in the linked shared object.
+LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
 PTHREAD_OPT+=	require
 
