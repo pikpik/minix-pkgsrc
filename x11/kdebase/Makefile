@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2000/10/15 13:33:27 wiz Exp $
+# $NetBSD: Makefile,v 1.74 2000/11/08 15:09:36 abs Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/11/27 00:35:27 se Exp
 
 DISTNAME=	kdebase-1.1.2
@@ -45,7 +45,8 @@ KDE_DIRS=	share/doc/kde/HTML/cs share/doc/kde/HTML/da \
 		share/doc/kde/HTML/de share/doc/kde/HTML/el \
 		share/doc/kde/HTML/fi share/doc/kde/HTML/fr \
 		share/doc/kde/HTML/it share/doc/kde/HTML/no \
-		share/doc/kde/HTML/pl share/doc/kde/HTML/sv
+		share/doc/kde/HTML/pl share/doc/kde/HTML/pt \
+		share/doc/kde/HTML/sv
 
 .include "../../mk/bsd.prefs.mk"
 

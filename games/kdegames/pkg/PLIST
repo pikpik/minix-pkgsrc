@@ -1111,7 +1111,6 @@ share/kde/locale/zh_TW.Big5/LC_MESSAGES/ksnake.mo
 @dirrm share/kde/apps/kabalone/toolbar
 @dirrm share/kde/apps/kabalone
 @dirrm share/doc/kde/HTML/pt/konquest
-@dirrm share/doc/kde/HTML/pt
 @dirrm share/doc/kde/HTML/fr/kabalone
 @dirrm share/doc/kde/HTML/en/ksokoban
 @dirrm share/doc/kde/HTML/en/ksnake
