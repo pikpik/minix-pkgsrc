@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/elfsh
+lib/libelfsh.a
+lib/libelfsh.so
+include/libelfsh.h
+share/doc/elfsh/README
+share/doc/elfsh/libelfsh-ref.txt
+@unexec ${RMDIR} %D/share/doc/elfsh
