@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2003/07/17 22:55:25 grant Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/22 04:14:19 martti Exp $
 
 DISTNAME=	ApacheJServ-1.1.2
 PKGNAME=	ap-jserv-1.1.2
-CATEGORIES=	www
+CATEGORIES=	www java
 MASTER_SITES=	http://java.apache.org/jserv/dist/
 
 MAINTAINER=	jwise@NetBSD.org
