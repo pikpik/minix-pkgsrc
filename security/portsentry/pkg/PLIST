@@ -1,0 +1,4 @@
+@comment $NetBSD$
+etc/portsentry.ignore
+etc/portsentry.conf
+sbin/portsentry
