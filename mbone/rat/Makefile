@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/08/31 00:11:31 jwise Exp $
+# $NetBSD: Makefile,v 1.16 2000/09/09 19:40:19 fredb Exp $
 #
 
 DISTNAME=	rat-3.0.28
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/3.0.28/
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
+COMMENT=	Robust Audio Tool - multicast audioconferencing
 
 DEPENDS+=	tk-8.3.2:../../x11/tk
 
