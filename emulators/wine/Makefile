@@ -3,7 +3,7 @@
 # Date created:		15 March 1998
 # Whom:			mycroft
 #
-# $NetBSD: $
+# $NetBSD: Makefile,v 1.1 1998/03/16 03:30:46 mycroft Exp $
 
 DISTNAME=	wine980215
 PKGNAME=	wine-980215
@@ -15,6 +15,8 @@ ONLY_FOR_ARCHS=	i386
 MAINTAINER=	mycroft@NetBSD.ORG
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-dll
+USE_GMAKE=	yes
 
 MAN1=		wine.1
 
