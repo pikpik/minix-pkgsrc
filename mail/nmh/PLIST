@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/15 10:12:47 skrll Exp $
+@comment $NetBSD: PLIST,v 1.3 2002/12/09 16:01:31 tron Exp $
 bin/ali
 bin/anno
 bin/burst
@@ -85,7 +85,9 @@ man/man1/burst.1
 man/man1/comp.1
 man/man1/dist.1
 man/man1/flist.1
+man/man1/flists.1
 man/man1/folder.1
+man/man1/folders.1
 man/man1/forw.1
 man/man1/inc.1
 man/man1/mark.1
