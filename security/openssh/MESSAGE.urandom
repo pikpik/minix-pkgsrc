@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+You will need a working /dev/urandom.  Please make sure you have a kernel
+compiled from a config file containing the line:
+
+	pseudo-device	rnd
+===========================================================================

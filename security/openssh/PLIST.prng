@@ -1,0 +1,2 @@
+@comment $NetBSD$
+share/examples/openssh/ssh_prng_cmds
