@@ -1,4 +1,4 @@
-# $NetBSD: defs.IRIX.mk,v 1.19 2003/02/26 15:15:38 jschauma Exp $
+# $NetBSD: defs.IRIX.mk,v 1.20 2003/02/28 03:41:39 jschauma Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -42,6 +42,7 @@ HOSTNAME_CMD?=	/usr/bsd/hostname
 ID?=		/usr/bin/id
 LN?=		/sbin/ln
 LS?=		/sbin/ls
+M4?=		/usr/bin/m4
 MKDIR?=		/sbin/mkdir -p
 .if exists(${LOCALBASE}/sbin/mtree)
 MTREE?=		${LOCALBASE}/sbin/mtree

@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.46 2003/02/26 03:02:59 grant Exp $
+# $NetBSD: defs.Darwin.mk,v 1.47 2003/02/28 03:41:39 jschauma Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -34,6 +34,7 @@ ID?=		/usr/bin/id
 LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln
 LS?=		/bin/ls
+M4?=		/usr/bin/m4 
 MKDIR?=		/bin/mkdir -p
 MTREE?=		/usr/sbin/mtree
 MV?=		/bin/mv

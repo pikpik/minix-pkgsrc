@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1148 2003/02/28 03:41:39 jschauma Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1149 2003/03/03 19:41:27 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -268,10 +268,6 @@ DIGEST_ALGORITHM?=	SHA1
 SHCOMMENT?=		${ECHO_MSG} >/dev/null '***'
 
 DISTINFO_FILE?=		${.CURDIR}/distinfo
-
-.if exists(/usr/bin/m4)
-M4?=			/usr/bin/m4
-.endif
 
 .if defined(USE_X11)
 X11_LDFLAGS=		# empty
