@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- pthread.h.in.orig	Sun Jan 27 11:03:41 2002
++++ pthread.h.in
+@@ -29,6 +29,13 @@
+ #define _PTH_PTHREAD_H_
+ 
+ /*
++ * check if the user wants a bigger FD_SETSIZE than we can handle
++ */
++#if FD_SETSIZE > @PTH_FDSETSIZE@
++#error "FD_SETSIZE is larger than pth can handle."
++#endif
++
++/*
+ **
+ ** BOOTSTRAPPING
+ **
