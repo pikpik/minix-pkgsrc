@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/visitors
+share/doc/visitors/doc.html
+share/visitors/graph.png
+share/visitors/powered-by-visitors.png
+@dirrm share/visitors
+@dirrm share/doc/visitors
