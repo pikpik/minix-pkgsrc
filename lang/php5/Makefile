@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/11/02 21:03:03 jdolecek Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/04 18:38:55 jdolecek Exp $
 #
 
 PKGNAME=		php-${PHP_BASE_VERS}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 
 MAINTAINER=		pancake@phreaker.net
