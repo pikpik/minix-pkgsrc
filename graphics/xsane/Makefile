@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2001/06/11 06:34:38 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2001/06/12 20:33:04 jlam Exp $
 #
 
-DISTNAME=	xsane-0.72
+DISTNAME=	xsane-0.79
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xsane.org/download/ \
 		http://gd.tuwien.ac.at/hci/sane/xsane/ \
