@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2003/07/21 16:51:48 martti Exp $
+# $NetBSD: Makefile,v 1.77 2003/08/23 23:07:12 wiz Exp $
 
 DISTNAME=	netpbm-10.11.8
 CATEGORIES=	graphics
@@ -36,8 +36,8 @@ BUILD_DEPENDS+=	flex>=2.5.4:../../devel/flex
 MAKE_ENV+=	NETWORKLD=""
 .endif
 
-.if ${OPSYS} == Linux && !exists(/usr/bin/flex)                                                                                  
-BUILD_DEPENDS+=	flex>=2.5.4:../../devel/flex                                                                              
+.if ${OPSYS} == Linux && !exists(/usr/bin/flex)
+BUILD_DEPENDS+=	flex>=2.5.4:../../devel/flex
 .endif
 
 pre-configure:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/29 16:25:56 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/29 16:57:46 jmmv Exp $
 #
 
 DISTNAME=	i2cbd-2.0_BETA0
@@ -21,7 +21,7 @@ PLIST_SUBST+=		ICBD_OWNER=${ICBD_OWNER}
 
 PKG_SYSCONFSUBDIR=	icbd
 EGDIR=			${PREFIX}/share/examples/i2cbd
-EGFILES=		motd icbd_help icbd.deny news.1 
+EGFILES=		motd icbd_help icbd.deny news.1
 CONF_FILES_PERMS=
 .for f in ${EGFILES}
 CONF_FILES_PERMS+=	${EGDIR}/$f ${PKG_SYSCONFDIR}/$f \
