@@ -1,12 +1,13 @@
 $NetBSD$
 
---- mpeglib/lib/util/render/x11/imageDeskX11.cpp.orig	Thu Jan 11 15:40:00 2001
+--- mpeglib/lib/util/render/x11/imageDeskX11.cpp.orig	Thu Jan 11 16:40:00 2001
 +++ mpeglib/lib/util/render/x11/imageDeskX11.cpp
-@@ -397,7 +397,11 @@
+@@ -397,7 +397,12 @@
  	}
  
  	int bestMode = -1;
 +#if defined(__NetBSD__)
++#	include <machine/limits.h>
 +	int border, minBorder = INT_MAX;
 +#else
  	int border, minBorder = MAXINT;
