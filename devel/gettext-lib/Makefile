@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/07/19 03:07:21 schmonz Exp $
+# $NetBSD$
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -14,8 +14,13 @@ HOMEPAGE=		http://www.gnu.org/software/gettext/gettext.html
 COMMENT=		tools for providing messages in different languages, libintl only
 
 CONFLICTS=		gettext<=0.10.35
+
+# gettext-lib is needed to bootstrap shell/bash2, which is needed to
+# bootstrap buildlink2.
+#
+USE_BUILDLINK2=		no
+
 GNU_CONFIGURE=		yes
-USE_BUILDLINK_ONLY=	yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--with-included-gettext
@@ -35,3 +40,5 @@ do-install:
 	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC}/intl && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} -f ${MAKEFILE} ${INSTALL_TARGET}
 
 .include "../../mk/bsd.pkg.mk"
+
+LDFLAGS:=	${LDFLAGS:N-L${LOCALBASE}/lib*}
