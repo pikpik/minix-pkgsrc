@@ -7,7 +7,8 @@
 # Date created:         31 July 1995
 # Whom:                 faulkner@cactus.org
 #
-# $Id: Makefile,v 1.1.1.1 1997/10/11 21:54:01 hubertf Exp $
+# $NetBSD$
+# FreeBSD Id: Makefile,v 1.12 1997/08/10 22:31:15 fenner Exp
 #
 
 DISTNAME=       ast53unx
