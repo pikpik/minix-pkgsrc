@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.1621 2003/03/11 13:41:35 grant Exp $
+$NetBSD: CHANGES,v 1.1622 2003/03/11 14:26:40 markd Exp $
 
 Changes to the packages collection and infrastructure in 2003:
 
@@ -1060,4 +1060,4 @@ Changes to the packages collection and infrastructure in 2003:
 	Added quanta-3.1 [markd 2003-03-11]
 	Added kbiff-3.6.3 [markd 2003-03-11]
 	Updated mimedefang to 2.30 [markd 2003-03-11]
-
+	Added biznet-iso8859-2-1.0 [salo 2003-03-11]
