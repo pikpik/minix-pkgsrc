@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.18 2000/10/15 11:31:42 rh Exp $
+# $NetBSD: bsd.prefs.mk,v 1.19 2000/11/02 03:01:40 wiz Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -136,9 +136,9 @@ NEED_NCURSES=   	YES
 .endif
 .endfor
 .endif
-# we can pass the flag down without recursive dependency of ncurses
-# on itself, because it's explicitly tested in bsd.pkg.mk
-MAKEFLAGS+=	NEED_NCURSES=${NEED_NCURSES}
+# we can NOT pass the NEED_NCURSES flag down as every required package
+# will start to require ncurses, which is not true (and raises some
+# recursive dependency problems!)
 .endif # USE_CURSES
 
 .endif	# BSD_PKG_MK
