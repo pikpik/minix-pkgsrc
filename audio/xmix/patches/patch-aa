@@ -1,8 +1,16 @@
 $NetBSD$
 
-diff -r -u ../../src/xmix-2.1/Imakefile ./Imakefile
---- ../../src/xmix-2.1/Imakefile	Tue Feb  1 22:54:35 1994
-+++ ./Imakefile	Sun Jan 17 13:16:12 1999
+--- Imakefile.orig	Tue Feb  1 23:54:35 1994
++++ Imakefile
+@@ -2,7 +2,7 @@
+ # xmix Imakefile.
+ #
+ #CDEBUGFLAGS=-gstabs
+-CDEBUGFLAGS=-O
++#CDEBUGFLAGS=-O
+ #define PassCDebugFlags 'CDEBUGFLAGS=$(CDEBUGFLAGS)'
+ 
+ SRCS1=	xmix.c
 @@ -12,6 +12,8 @@
  
  all::  $(PROGRAMS)
