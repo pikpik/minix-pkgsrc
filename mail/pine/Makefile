@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2004/05/17 11:02:45 grant Exp $
+# $NetBSD: Makefile,v 1.92 2004/05/17 11:21:10 grant Exp $
 
 DISTNAME=       pine4.60
 PKGNAME=        pine-4.60
@@ -33,6 +33,7 @@ BUILDFILE=	osx
 .else
 BUILDNAME=	neb
 BUILDFILE=	neb
+CFLAGS+=	-O
 .endif
 
 .if !empty(CC_VERSION:Mgcc-*)
