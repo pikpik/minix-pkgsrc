@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2003/07/06 12:31:59 grant Exp $
+# $NetBSD: Makefile,v 1.35 2003/07/06 15:33:36 seb Exp $
 #
 
 DISTNAME=		gcc-3.3
-PKGREVISION=		3
+PKGREVISION=		4
 PKGNAME=		${DISTNAME:C|gcc|gcc3|}
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/gcc-3.3/}
