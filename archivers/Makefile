@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.59 2003/02/17 09:23:06 grant Exp $
+# $NetBSD: Makefile,v 1.60 2003/06/26 03:54:58 salo Exp $
 #
 
 COMMENT=	Archivers
 
 SUBDIR+=	9e
+SUBDIR+=	afio
 SUBDIR+=	arc
 SUBDIR+=	arj
 SUBDIR+=	bicom
