@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/xvid.h
+lib/libxvidcore.a
+lib/libxvidcore.so
