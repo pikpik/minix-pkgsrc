@@ -1,0 +1,7 @@
+$NetBSD$
+
+--- netbsd/configure.orig	2005-01-08 12:39:02.000000000 -0600
++++ netbsd/configure
+@@ -0,0 +1,2 @@
++#!/bin/sh
++cat ../src/Makefile.template Makefile.netbsd > Makefile
