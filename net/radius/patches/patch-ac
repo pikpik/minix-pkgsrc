@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/rad.ftp.c.orig	Sat Oct 10 16:17:47 1998
++++ src/rad.ftp.c	Sun Mar 21 19:56:35 1999
+@@ -3,6 +3,8 @@
+ 
+ /* this file still needs to be proof-read for cross-platform compatibility */
+ 
++#include <sys/types.h>
++
+ /* used by ???*/
+ #include <sys/ioctl.h>
+ 
