@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/21 21:01:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/30 13:04:00 wennmach Exp $
 #
 
 DISTNAME=		arla-0.34.2
@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.stacken.kth.se/project/arla/
 
 DEPENDS+=		kth-krb4-1.0.1:../../security/kth-krb4
 
+OSVERSION_SPECIFIC=	yes
 GNU_CONFIGURE=		yes
 INFO_FILES=		arla.info
 
