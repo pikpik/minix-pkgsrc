@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.11 2004/05/07 22:08:56 reed Exp $
+# $NetBSD: Makefile,v 1.12 2004/11/13 21:28:27 jlam Exp $
 #
 
 DISTNAME=	latex2rtf-1.8aa
 PKGNAME=	latex2rtf-1.8a
 CATEGORIES=	print
-MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=support/latex2rtf/}
+MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=support/latex2rtf/} \
+		${MASTER_SITE_SOURCEFORGE:=latex2rtf/}
 
 MAINTAINER=	brook@nmsu.edu
-HOMEPAGE=	http://www.kfa-juelich.de/isr/1/texconv/latex2rtf.html
+HOMEPAGE=	http://latex2rtf.sourceforge.net/
 COMMENT=	LaTeX to RTF converter
 
 USE_BUILDLINK3=	yes
