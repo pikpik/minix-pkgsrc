@@ -1,4 +1,4 @@
-/*	$NetBSD: pen.c,v 1.33 2004/12/29 11:35:03 agc Exp $	*/
+/*	$NetBSD: pen.c,v 1.16 2004/12/29 12:16:56 agc Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: pen.c,v 1.25 1997/10/08 07:48:12 charnier Exp";
 #else
-__RCSID("$NetBSD: pen.c,v 1.33 2004/12/29 11:35:03 agc Exp $");
+__RCSID("$NetBSD: pen.c,v 1.16 2004/12/29 12:16:56 agc Exp $");
 #endif
 #endif
 
@@ -217,5 +217,5 @@ min_free(char *tmpdir)
 		warn("statvfs");
 		return 0;
 	}
-	return buf.f_bavail * buf.f_bsize;
+	return (uint64_t)buf.f_bavail * buf.f_bsize;
 }
