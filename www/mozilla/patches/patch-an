@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- client.mk.orig	Fri Jun  9 12:27:38 2000
++++ client.mk	Fri Jun 23 10:34:38 2000
+@@ -352,7 +352,7 @@
+ 	@if test ! -d $(OBJDIR); then $(MKDIR) $(OBJDIR); else true; fi
+ 	@echo cd $(OBJDIR);
+ 	@echo $(CONFIGURE)
+-	@cd $(OBJDIR) && $(CONFIGURE_ENV_ARGS) $(CONFIGURE) \
++	@cd $(OBJDIR) && $(CONFIGURE_ENV_ARGS) $(CONFIGURE) --without-pthreads \
+ 	  || ( echo "*** Fix above errors and then restart with\
+                \"$(MAKE) -f client.mk build\"" && exit 1 )
+ 	@touch $(OBJDIR)/Makefile
