@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tcptrace
 share/doc/tcptrace/COPYRIGHT
 share/doc/tcptrace/README
