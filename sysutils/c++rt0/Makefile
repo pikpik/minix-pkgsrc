@@ -9,7 +9,7 @@ MASTER_SITES+=	ftp://ftp.netbsd.org/pub/NetBSD/arch/sparc/c++rt0/
 CATEGORIES=	sysutils
 MAINTAINER=	hubertf@netbsd.org
 
-ONLY_FOR_PLATFORM=	NetBSD-1.4*-sparc
+ONLY_FOR_PLATFORM=	NetBSD-1.4-sparc NetBSD-1.4.[12]-sparc
 
 EXTRACT_ONLY=	# empty
 NO_PATCH=	yes
