@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/07/04 05:53:12 mycroft Exp $
+# $NetBSD: Makefile,v 1.16 1998/07/04 09:37:30 mycroft Exp $
 #
 
 DISTNAME=	Xaw3d-1.5
@@ -18,7 +18,6 @@ post-extract:
 	@(cd ${WRKSRC}; ${LN} -s .. X11)
 
 post-install:
-	${LDCONFIG} || ${TRUE}
 	${MKDIR} ${PREFIX}/share/doc/Xaw3d
 	${CP} ${WRKSRC}/README.XAW3D ${PREFIX}/share/doc/Xaw3d
 	@if [ -f ${WRKSRC}/libXaw3d.a ]; then			\
