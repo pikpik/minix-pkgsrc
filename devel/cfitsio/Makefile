@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/09/08 13:32:31 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/03 00:13:25 tv Exp $
 
 DISTNAME=	cfitsio2500
 PKGNAME=	cfitsio-2.500
@@ -14,7 +14,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV:C/-.*//}
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 
-ALL_TARGET=	all testprog
+BUILD_TARGET=	all testprog
 
 post-build:
 	cd ${WRKSRC}; \

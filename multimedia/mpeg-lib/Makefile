@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2004/06/26 18:27:23 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:03 tv Exp $
 #
 
 DISTNAME=	mpeg_lib-1.3.1
@@ -17,7 +17,7 @@ USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
-ALL_TARGET=	libmpeg_lib.la
+BUILD_TARGET=	libmpeg_lib.la
 
 CONFIGURE_ENV+=	OPTIMIZE="${CFLAGS}" EXTRA_LDFLAGS="${LDFLAGS}"	\
 		EXTRA_CPPFLAGS="${CPPFLAGS}"

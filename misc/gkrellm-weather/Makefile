@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/26 02:27:45 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:12:58 tv Exp $
 
 DISTNAME=       gkrellweather-2.0.6
 PKGNAME=        gkrellm-weather-2.0.6
@@ -17,7 +17,7 @@ BUILD_USES_MSGFMT=      YES
 USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
-ALL_TARGET=		gkrellweather.so
+BUILD_TARGET=		gkrellweather.so
 
 MAKE_ENV+=	LOCALEDIR=${PREFIX}/${PKGLOCALEDIR}/locale \
 		enable_nls=1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/24 14:11:10 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/28 05:24:25 snj Exp $
 
 DISTNAME=		root_v2.23.08.source
 PKGNAME=		root-2.23
@@ -17,7 +17,7 @@ USE_BUILDLINK3=		YES
 USE_X11=		YES
 USE_GNU_TOOLS+=		make
 
-ALL_TARGET=		netbsd
+BUILD_TARGET=		netbsd
 MAKE_ENV=		LD_LIBRARY_PATH=${WRKDIR}/lib ROOTSYS=${WRKDIR}
 
 .if (${MACHINE_ARCH} == "arm")

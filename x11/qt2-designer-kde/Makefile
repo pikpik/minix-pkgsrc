@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/05/01 23:57:00 snj Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:18:37 tv Exp $
 #
 
 PKGNAME=		qt2-designer-kde-${QTVERSION}
@@ -16,7 +16,7 @@ CONFIGURE_ARGS+=	-kde
 CONFIGURE_ENV+=		KDEDIR="${KDEDIR}"
 MAKE_ENV+=		KDEDIR="${KDEDIR}"
 
-ALL_TARGET=		sub-tools
+BUILD_TARGET=		sub-tools
 UNLIMIT_RESOURCES=	datasize
 
 do-install:

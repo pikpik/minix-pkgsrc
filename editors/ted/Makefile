@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/05/11 11:50:00 markd Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:14:39 tv Exp $
 
 DISTNAME=	ted-2.16.src
 PKGNAME=	ted-2.16
@@ -38,7 +38,7 @@ MAKE_ENV+=	DEF_PKGDIR='-DPKGDIR=\"${PREFIX}\"' \
 		DEF_INDDIR='-DINDDIR=\"${INDDIR}\"' \
 		DEF_INFODIR='-DDOCUMENT_DIR=\"${INFODIR}\"'
 
-ALL_TARGET=	compile.shared
+BUILD_TARGET=	compile.shared
 INSTALL_TARGET=	install.shared
 
 post-extract:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/21 16:50:02 martti Exp $
+# $NetBSD: Makefile,v 1.14 2004/05/23 23:50:05 kristerw Exp $
 #
 
 DISTNAME=		xjig-2.4
@@ -11,7 +11,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 COMMENT=		Jigsaw puzzle
 
 USE_IMAKE=		yes
-ALL_TARGET=		xjig xjig.0
+BUILD_TARGET=		xjig xjig.0
 
 USE_LANGUAGES=		c c++
 

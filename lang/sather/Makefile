@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:15:02 tv Exp $
+# $NetBSD: Makefile,v 1.22 2004/11/28 19:19:52 jlam Exp $
 
 DISTNAME=		sather-1.2.1
 PKGREVISION=		5
@@ -13,7 +13,7 @@ USE_BUILDLINK3=		yes
 USE_X11=		# defined
 USE_GNU_TOOLS+=		make
 
-ALL_TARGET=		full optional
+BUILD_TARGET=		full optional
 
 USE_MAKEINFO=		YES
 INFO_FILES=		sather.info sather-tutorial.info sather-mode.info

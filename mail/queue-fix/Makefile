@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/28 22:14:33 schmonz Exp $
 #
 
 DISTNAME=		queue-fix
@@ -14,7 +14,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 USE_BUILDLINK3=		yes
 
-ALL_TARGET=		it
+BUILD_TARGET=		it
 
 INSTALLATION_DIRS=	bin share/doc/queue-fix
 

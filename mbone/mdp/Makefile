@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 14:00:13 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/23 20:58:42 danw Exp $
 #
 
 DISTNAME=	src-mdp-1.9a5
@@ -13,7 +13,7 @@ COMMENT=	Multicast file transfer
 
 WRKSRC=		${WRKDIR}/mdp/unix
 USE_GNU_TOOLS+=	make
-ALL_TARGET=	mdp
+BUILD_TARGET=	mdp
 USE_BUILDLINK3=	yes
 
 pre-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/24 22:46:10 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:14:45 tv Exp $
 
 DISTNAME=		KnightCap-3.6
 PKGNAME=		knightcap-3.6
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://anu.samba.org/KnightCap/
 COMMENT=		Chess engine with 3D OpenGL-rendered chessboard
 
-ALL_TARGET=		KnightCap
+BUILD_TARGET=		KnightCap
 
 WRKSRC=			${WRKDIR}/Export
 USE_BUILDLINK3=		yes

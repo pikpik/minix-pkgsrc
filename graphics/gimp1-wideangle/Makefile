@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/05/05 02:26:41 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:51 tv Exp $
 #
 
 DISTNAME=	wideangleFeb03
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/wideangle
 USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
-ALL_TARGET=	wideangle
+BUILD_TARGET=	wideangle
 
 .include "../../graphics/gimp1-base/buildlink3.mk"
 

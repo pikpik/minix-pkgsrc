@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/07/19 10:10:10 recht Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/22 20:15:29 wiz Exp $
 #
 
 .include "../../sysutils/mbmon/Makefile.common"
@@ -9,7 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	
 COMMENT=	Motherboard monitoring utility
 
-ALL_TARGET=	mbmon
+BUILD_TARGET=	mbmon
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mbmon ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/23 04:41:01 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:12 tv Exp $
 #
 
 DISTNAME=		rats-2.1
@@ -15,7 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--datadir=${LOCALBASE}/share/rats
-ALL_TARGET=		rats
+BUILD_TARGET=		rats
 
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:13:03 tv Exp $
+# $NetBSD: Makefile,v 1.14 2004/11/06 00:47:34 wiz Exp $
 #
 
 PKGNAME=	mencoder-${MPLAYER_PKG_VERSION}
@@ -11,7 +11,7 @@ COMMENT=	Simple movie encoder for MPlayer-playable movies
 USE_BUILDLINK3=		YES
 CONFIGURE_ARGS+=	--confdir=${PREFIX}/share/mplayer
 
-ALL_TARGET=	mencoder
+BUILD_TARGET=	mencoder
 
 MANCOMPRESSED_IF_MANZ=	1
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:44:02 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:19:16 agc Exp $
 #
 
 DISTNAME=		cl74unix
@@ -11,7 +11,7 @@ HOMEPAGE=		http://caml.inria.fr/distrib-caml-light-eng.html
 COMMENT=		Another implementation of Caml
 
 WRKSRC=			${WRKDIR}/cl74/src
-ALL_TARGET=		world
+BUILD_TARGET=		world
 
 do-configure:
 	(cd ${WRKSRC}; make configure)

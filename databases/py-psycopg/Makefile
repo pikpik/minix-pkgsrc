@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/07/22 18:00:37 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2004/07/24 22:45:15 recht Exp $
 #
 
 DISTNAME=	psycopg-1.1.14
@@ -15,7 +15,7 @@ CONFIGURE_ARGS+= --with-python=${PYTHONBIN}
 CONFIGURE_ARGS+= \
  --with-postgres-includes=${PGSQL_PREFIX}/include/postgresql\
  --with-postgres-libraries=${PGSQL_PREFIX}/lib
-ALL_TARGET=	default
+BUILD_TARGET=	default
 USE_BUILDLINK3=	yes
 
 PYTHON_VERSIONS_ACCEPTED= 23pth 22pth 21pth

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:14 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/03 12:15:54 adam Exp $
 
 DISTNAME=	eggdrop1.6.17
 PKGNAME=	eggdrop-1.6.17
@@ -68,7 +68,7 @@ do-install-program:
 .include "../../mk/bsd.pkg.mk"
 
 .if defined(NOPIC)
-ALL_TARGET=	static
+BUILD_TARGET=	static
 PLIST_SUBST+=	NOPIC="@comment "
 .else
 PLIST_SUBST+=	NOPIC=

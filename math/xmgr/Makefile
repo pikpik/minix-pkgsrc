@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/04/12 04:14:23 snj Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/03 00:12:57 tv Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/12/12 22:27:21 jseger Exp
 #
 
@@ -24,7 +24,7 @@ USE_FORTRAN=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-acegr-home="${PREFIX}"
 
-ALL_TARGET=		# empty
+BUILD_TARGET=		# empty
 INSTALL_TARGET=		install
 
 .include "../../devel/netcdf/buildlink3.mk"

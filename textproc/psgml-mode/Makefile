@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/08/05 22:29:40 seb Exp $
+# $NetBSD: Makefile,v 1.6 2003/08/09 11:27:51 seb Exp $
 
 DISTNAME=		psgml-1.2.5
 PKGNAME=		${DISTNAME:S/-/-mode-/}
@@ -12,7 +12,7 @@ COMMENT=		SGML/XML mode for Emacs
 .include "../../mk/emacs.mk"
 
 .if ${EMACS_FLAVOR} != "emacs"
-ALL_TARGET=	xemacs
+BUILD_TARGET=	xemacs
 .endif
 
 SRCS=	psgml-api.el psgml-charent.el psgml-debug.el psgml-dtd.el	\

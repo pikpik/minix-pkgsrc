@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/03/10 03:36:59 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:14:46 tv Exp $
 #
 
 DISTNAME=	pag-0.91
@@ -14,7 +14,7 @@ USE_GNU_TOOLS+=	make
 USE_BUILDLINK3=	yes
 USE_NCURSES=	yes # missing function stdscr
 
-ALL_TARGET=	compile
+BUILD_TARGET=	compile
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../graphics/aalib/buildlink3.mk"

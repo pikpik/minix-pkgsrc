@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/26 02:27:45 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:12:58 tv Exp $
 #
 
 DISTNAME=	gkleds-0.8.1
@@ -13,7 +13,7 @@ COMMENT=	GKrellM plugin that monitors CapsLock, NumLock and ScrollLock keys
 
 USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
-ALL_TARGET=	unix
+BUILD_TARGET=	unix
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/gkleds.so ${PREFIX}/lib/gkrellm2/plugins

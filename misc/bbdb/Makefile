@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/12/30 17:09:32 cjep Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/26 22:07:06 snj Exp $
 #
 
 DISTNAME=		bbdb-2.34
@@ -16,7 +16,7 @@ CONFLICTS+=		xemacs-packages
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-ALL_TARGET=		all mhe
+BUILD_TARGET=		all mhe
 USE_MAKEINFO=		yes
 INFO_FILES=		bbdb.info
 INFO_DIR=		${INFODIR}

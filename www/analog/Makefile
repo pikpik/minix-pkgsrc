@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/08/04 10:51:38 tron Exp $
+# $NetBSD: Makefile,v 1.44 2004/10/11 18:06:31 tron Exp $
 
 DISTNAME=       analog-5.32
 CATEGORIES=	www
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.analog.cx/
 COMMENT=	Extremely fast program for analysing WWW logfiles
 
 WRKSRC=		${WRKDISTDIR}/src
-ALL_TARGET=	analog
+BUILD_TARGET=	analog
 MAKE_ENV+=	PREFIX=${PREFIX} SYSCONFDIR=${PKG_SYSCONFDIR}
 WRKDISTDIR=	${WRKDIR}/${DISTNAME}
 

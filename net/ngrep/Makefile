@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/06/02 22:19:20 recht Exp $
+# $NetBSD: Makefile,v 1.18 2004/07/05 21:42:46 hubertf Exp $
 #
 
 DISTNAME=	ngrep-1.42
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-pcre
 # ngrep's configure use --includedir/$includedir in a weird way!
 CONFIGURE_ARGS+=	--includedir=${BUILDLINK_PREFIX.libpcap}/include
-ALL_TARGET=		ngrep
+BUILD_TARGET=		ngrep
 
 .include "../../mk/bsd.prefs.mk"
 

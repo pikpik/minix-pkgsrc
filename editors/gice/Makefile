@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/11 08:11:04 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:14:38 tv Exp $
 #
 
 DISTNAME=		gice-0.6.1
@@ -17,7 +17,7 @@ USE_GNU_TOOLS+=		make
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
-ALL_TARGET=		gice
+BUILD_TARGET=		gice
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gice ${PREFIX}/bin

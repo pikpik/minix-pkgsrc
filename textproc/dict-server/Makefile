@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/15 12:05:28 tv Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/15 12:07:03 tv Exp $
 
 DISTNAME=	dictd-1.8.0
 PKGNAME=	dict-server-1.8.0
@@ -17,7 +17,7 @@ USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	# defined
 CONFIGURE_ARGS+=--with-etcdir=${PKG_SYSCONFDIR}
 
-ALL_TARGET=	dictd dictzip
+BUILD_TARGET=	dictd dictzip
 INSTALL_TARGET=	install.dictd install.dictzip install.dictfmt
 
 EGDIR=		${PREFIX}/share/examples/dict-server

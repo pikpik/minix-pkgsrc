@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/07/22 01:04:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.19 2004/07/26 19:16:53 schmonz Exp $
 # FreeBSD Id: ports/sysutils/ucspi-tcp/Makefile,v 1.12 2000/07/10 01:41:24 steve Exp
 
 DISTNAME=	ucspi-tcp-0.88
@@ -21,7 +21,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
 
-ALL_TARGET=	it
+BUILD_TARGET=	it
 INSTALL_TARGET=	setup check
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/22 10:08:19 agc Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/25 05:10:02 snj Exp $
 #
 
 DISTNAME=	portsentry-1.2
@@ -13,7 +13,7 @@ USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 WRKSRC=		${WRKDIR}/portsentry_beta
 
-ALL_TARGET=	${LOWER_OPSYS}
+BUILD_TARGET=	${LOWER_OPSYS}
 
 EGDIR=		${PREFIX}/share/examples/portsentry
 CONF_FILES=	${EGDIR}/portsentry.conf ${PKG_SYSCONFDIR}/portsentry.conf

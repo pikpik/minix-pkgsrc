@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/12/07 02:39:06 schmonz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:24:14 martti Exp $
 #
 
 DISTNAME=	fdgw-20020130
@@ -14,7 +14,7 @@ _IMG_DST_DIR =	${PREFIX}/fdgw/${MACHINE_ARCH}
 
 ONLY_FOR_PLATFORM=	NetBSD-1.5.*-i386
 
-ALL_TARGET=	dist-build
+BUILD_TARGET=	dist-build
 MAKE_ENV+=	BSDSRCDIR="${BSDSRCDIR}"
 
 pre-fetch:

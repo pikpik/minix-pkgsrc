@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/13 13:52:00 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/03 00:14:50 tv Exp $
 
 .include "Makefile.common"
 
@@ -8,7 +8,7 @@ COMMENT=	TrueType font rendering engine and library API
 
 CONFIGURE_ARGS+=	--without-x
 
-ALL_TARGET=		ttlib ttpo
+BUILD_TARGET=		ttlib ttpo
 INSTALL_TARGET=		install-ttlib install-ttpo
 
 .include "../../mk/bsd.pkg.mk"

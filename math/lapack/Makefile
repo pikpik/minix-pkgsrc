@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/06/20 20:23:29 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:12:56 tv Exp $
 #
 
 DISTNAME=	lapack
@@ -23,7 +23,7 @@ DIST_SUBDIR=		lapack-20010201
 USE_BUILDLINK3=		YES
 USE_FORTRAN=		YES
 USE_LIBTOOL=		YES
-ALL_TARGET=		lapacklib
+BUILD_TARGET=		lapacklib
 
 INSTALLATION_DIRS=	lib
 

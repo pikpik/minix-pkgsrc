@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/10 14:12:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:18:22 tv Exp $
 
 DISTNAME=	bbrun-1.3
 PKGREVISION=	3
@@ -14,7 +14,7 @@ USE_BUILDLINK3=	YES
 USE_X11=	YES
 USE_GNU_TOOLS+=	make
 
-ALL_TARGET=	bbrun
+BUILD_TARGET=	bbrun
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bbrun ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/09/27 23:18:31 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 17:11:14 martti Exp $
 #
 
 DISTNAME=		sdist-1.6
@@ -18,7 +18,7 @@ DEPENDS+=		srsh-[0-9]*:../../net/srsh
 SDIST_PAWD?=		pwd
 
 NO_CONFIGURE=		yes
-ALL_TARGET=		all PREFIX=${PREFIX} PAWD=${SDIST_PAWD}
+BUILD_TARGET=		all PREFIX=${PREFIX} PAWD=${SDIST_PAWD}
 INSTALL_TARGET=		install PREFIX=${PREFIX}
 
 .include "../../mk/bsd.pkg.mk"

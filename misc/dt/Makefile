@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/11/20 01:05:18 fredb Exp $
+# $NetBSD: Makefile,v 1.22 2004/01/20 12:21:01 agc Exp $
 #
 
 DISTNAME=	dt-1.1.7
@@ -13,7 +13,7 @@ NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 ONLY_FOR_PLATFORM=	NetBSD-*-m68k
 
 WRKSRC=		${WRKDIR}/dt
-ALL_TARGET=	depend all
+BUILD_TARGET=	depend all
 CPPFLAGS+=	-D${DT_LAYOUT}_LAYOUT
 
 DTDOCSDIR=	${PREFIX}/share/doc/dt

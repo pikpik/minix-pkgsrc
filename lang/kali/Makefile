@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:19:00 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:44:47 grant Exp $
 
 DISTNAME=	kali-0.47
 CATEGORIES=	lang
@@ -9,7 +9,7 @@ HOMEPAGE=	http://www.neci.nj.nec.com/PLS/Kali.html
 COMMENT=	Distributed implementation of Scheme
 
 GNU_CONFIGURE=	yes
-ALL_TARGET=	# empty
+BUILD_TARGET=	# empty
 
 NOT_FOR_PLATFORM=       *-*-alpha
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/04/26 05:12:37 snj Exp $
+# $NetBSD: Makefile,v 1.25 2004/10/03 00:13:25 tv Exp $
 #
 
 DISTNAME=		latestCDK
@@ -19,7 +19,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 AUTOCONF_REQD=		2.13
 
-ALL_TARGET=		default
+BUILD_TARGET=		default
 
 pre-configure:
 	cd ${WRKSRC}; ${AUTOCONF}

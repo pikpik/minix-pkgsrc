@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/09/01 22:08:25 darcy Exp $
+# $NetBSD: Makefile,v 1.22 2004/10/03 00:14:57 tv Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	${PYPKGPREFIX}-gd-1.3
@@ -14,7 +14,7 @@ COMMENT=	Python interface to gd graphics library
 EXTRACT_CMD=	${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}
 
 WRKSRC=		${WRKDIR}
-ALL_TARGET=	default
+BUILD_TARGET=	default
 USE_BUILDLINK3=	yes
 
 PYDISTUTILSPKG= yes

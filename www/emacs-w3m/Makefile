@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/08/18 13:19:37 minoura Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/08 13:35:20 uebayasi Exp $
 
 DISTNAME=	emacs-w3m-1.3.3
 CATEGORIES=	www
@@ -30,7 +30,7 @@ BUILD_DEPENDS+=	Mule-UCS>=0.84:../../editors/mule-ucs
 
 HAS_CONFIGURE=	# defined
 CONFIGURE_ARGS+=--with-emacs=${EMACS_BIN}
-ALL_TARGET=	default
+BUILD_TARGET=	default
 .if ${EMACS_FLAVOR} == "xemacs"
 INSTALL_TARGET=	install-package
 .else

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:30:26 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:20 martti Exp $
 #
 
 DISTNAME=	ilisp-20021222
@@ -11,7 +11,7 @@ HOMEPAGE=	http://sourceforge.net/projects/ilisp/
 COMMENT=	Emacs interface to embedded Lisp process
 
 MAKE_ENV+=	EMACS=${EMACS_BIN}
-ALL_TARGET=	compile
+BUILD_TARGET=	compile
 
 SITELISP=	${EMACS_LISPPREFIX}/ilisp
 

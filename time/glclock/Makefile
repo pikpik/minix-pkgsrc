@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/11 09:30:37 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:22 tv Exp $
 #
 
 DISTNAME=		glclock-6.0b6.0
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.daionet.gr.jp/~masa/glclock
 COMMENT=		OpenGL-based pocket watch
 
 MAKEFILE=		makefile
-ALL_TARGET=		glclock
+BUILD_TARGET=		glclock
 
 USE_BUILDLINK3=		yes
 USE_X11=		# defined

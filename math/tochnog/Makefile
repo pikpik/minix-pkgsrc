@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/12/30 17:27:31 cjep Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:20:05 agc Exp $
 
 DISTNAME=	tochnog-20010429
 CATEGORIES=	math
@@ -13,7 +13,7 @@ WRKSRC=		${WRKDIR}/tochnog/src
 DIST_SUBDIR=	${DISTNAME}
 EXTRACT_ONLY=	tn.tar.gz
 MAKEFILE=	makefile
-ALL_TARGET=	netbsd
+BUILD_TARGET=	netbsd
 
 MAKE_ENV+=	MACHINE_ARCH=${MACHINE_ARCH}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/08/15 12:06:34 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2004/08/18 11:22:36 wiz Exp $
 
 DISTNAME=	nut-10.2
 CATEGORIES=	biology
@@ -9,7 +9,7 @@ MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.lafn.org/~av832/
 COMMENT=	Record what you eat and analyze your meals
 
-ALL_TARGET=	nut
+BUILD_TARGET=	nut
 USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/09/11 13:38:46 markd Exp $
+# $NetBSD: Makefile,v 1.39 2004/10/03 00:14:46 tv Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -14,7 +14,7 @@ DEPENDS+=		nethack-lib-${NETHACK_VERSION}:../nethack-lib
 USE_BUILDLINK3=		yes
 USE_X11=		# defined
 
-ALL_TARGET=		x11tiles nethack
+BUILD_TARGET=		x11tiles nethack
 INSTALL_TARGET=		binfiles
 MAKE_ENV+=		GTYPE=-qt
 CFLAGS+=		-DPREFIX=\"\\\"${PREFIX}\\\"\"

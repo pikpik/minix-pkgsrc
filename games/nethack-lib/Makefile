@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/10/14 13:42:18 pooka Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/15 21:29:16 snj Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -10,7 +10,7 @@ COMMENT=		Data files for Nethack
 USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./sys/unix/setup.sh
-ALL_TARGET=		datastuff
+BUILD_TARGET=		datastuff
 INSTALL_TARGET=		manpages install-dat
 
 USE_PKGINSTALL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: modules.mk,v 1.1.1.1 2004/11/27 13:57:21 taca Exp $
 
 .if !defined(_RUBY_MODULE_MK)
 _RUBY_MODULE_MK=	# defined
@@ -54,7 +54,7 @@ do-build:	ruby-extconf-build
 ruby-extconf-build:
 .for d in ${RUBY_EXTCONF_SUBDIRS}
 	@${ECHO_MSG} "===>  Building ${d}"
-	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC}/${d}; ${SETENV} ${MAKE_ENV} ${MAKE} ${ALL_TARGET}
+	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC}/${d}; ${SETENV} ${MAKE_ENV} ${MAKE} ${BUILD_TARGET}
 .endfor
 .endif
 

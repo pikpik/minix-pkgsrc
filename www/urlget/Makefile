@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/02/15 21:01:57 kim Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/19 04:39:45 snj Exp $
 #
 
 DISTNAME=		urlget-1.4
@@ -13,9 +13,9 @@ USE_BUILDLINK3=		YES
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-ALL_TARGET=		svr4
+BUILD_TARGET=		svr4
 .else
-ALL_TARGET=		bsd
+BUILD_TARGET=		bsd
 .endif
 INSTALL_TARGET=		inst-all DEST=${PREFIX}
 

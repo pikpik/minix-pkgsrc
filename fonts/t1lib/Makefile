@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:14:42 tv Exp $
+# $NetBSD: Makefile,v 1.17 2004/11/22 23:48:22 wiz Exp $
 #
 
 DISTNAME=	t1lib-5.0.2
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_X11=		YES
 
-ALL_TARGET=	without_doc
+BUILD_TARGET=	without_doc
 
 EGDIR=		${PREFIX}/share/examples/${PKGBASE}
 DATADIR=	${PREFIX}/share/${PKGBASE}

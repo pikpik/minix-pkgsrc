@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/08/30 16:00:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/03 00:18:14 tv Exp $
 #
 
 DISTNAME=	TkPasMan-2.2a
@@ -32,7 +32,7 @@ CONFIG_SUBST+=		USE_OPENSSL="false"
 CONFIG_SUBST+=		OPENSSL=""
 .endif
 
-ALL_TARGET=		tkpasman
+BUILD_TARGET=		tkpasman
 
 post-extract:
 	${MV} ${WRKSRC}/config ${WRKSRC}/config.in

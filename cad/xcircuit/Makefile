@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:13:13 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/19 13:24:11 adam Exp $
 
 DISTNAME=	xcircuit-3.3.0
 CATEGORIES=	cad graphics
@@ -18,7 +18,7 @@ CONFIGURE_ARGS+=--with-tcllibs=${BUILDLINK_PREFIX.tcl}/lib
 CONFIGURE_ARGS+=--with-tkincls=${BUILDLINK_PREFIX.tk}/include
 CONFIGURE_ARGS+=--with-tklibs=${BUILDLINK_PREFIX.tk}/lib
 
-ALL_TARGET=	tcl
+BUILD_TARGET=	tcl
 INSTALL_TARGET=	install-tcl
 
 post-extract:

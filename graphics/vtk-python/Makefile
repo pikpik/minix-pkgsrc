@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/09/10 11:21:24 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:14:58 tv Exp $
 #
 
 PKGNAME=	vtk-python-${VTKDIST_VERSION}
@@ -23,10 +23,10 @@ VTK_PY_LIBS=	bin/libvtkCommonPython.so \
 		bin/libvtkRenderingPythonTkWidgets.so \
 		bin/libvtkHybridPython.so
 
-ALL_TARGET=	default_target_Wrapping_Python
+BUILD_TARGET=	default_target_Wrapping_Python
 
 pre-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${ALL_TARGET}
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${BUILD_TARGET}
 
 pre-install:
 	for lib in ${VTK_PY_LIBS}; do \

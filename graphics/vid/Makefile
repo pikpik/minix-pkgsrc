@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/24 01:06:20 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:14:58 tv Exp $
 #
 
 DISTNAME=	vid-1.0.1
@@ -10,7 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://members.home.com/housel/projects.htm
 COMMENT=	Simple-minded image capture program for some USB webcams
 
-ALL_TARGET=	vid
+BUILD_TARGET=	vid
 
 USE_BUILDLINK3=		YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:14:05 agc Exp $
+# $NetBSD: Makefile,v 1.15 2004/04/11 08:25:09 snj Exp $
 
 DISTNAME=	ng-1.4.3
 CATEGORIES=     editors japanese
@@ -21,7 +21,7 @@ USE_CANNA=	YES
 .include "../../inputmethod/canna-lib/buildlink3.mk"
 .endif
 
-ALL_TARGET=	ng
+BUILD_TARGET=	ng
 MAKEFLAGS+=	USE_CANNA=${USE_CANNA}
 
 post-patch:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/09/12 02:37:25 uebayasi Exp $
+# $NetBSD: Makefile,v 1.14 2004/09/27 08:48:34 uebayasi Exp $
 
 DISTNAME=	semi-1.14.6
 PKGREVISION=	2
@@ -23,10 +23,10 @@ BUILD_DEPENDS+=	qkc-*:../../converters/qkc
 .include "../../mk/emacs.mk"
 
 .if ${EMACS_FLAVOR} == "emacs"
-ALL_TARGET=     elc
+BUILD_TARGET=     elc
 INSTALL_TARGET= install
 .else   # ${EMACS_FLAVOR} == "xemacs"
-ALL_TARGET=     package
+BUILD_TARGET=     package
 INSTALL_TARGET= install-package
 MAKEFLAGS+=     PACKAGEDIR=${EMACS_LISPPREFIX:C|/lisp$||}
 .endif

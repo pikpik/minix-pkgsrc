@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/09/19 21:38:20 kim Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:18:00 tv Exp $
 #
 
 DISTNAME=		tcptraceroute-1.4
@@ -12,7 +12,7 @@ COMMENT=		Traceroute implementation using TCP packets
 
 USE_BUILDLINK3=		YES
 
-ALL_TARGET=		tcptraceroute
+BUILD_TARGET=		tcptraceroute
 
 DOCDIR=			${PREFIX}/share/doc/tcptraceroute
 BINMODE=		4711

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/04/14 14:56:09 ben Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/28 02:47:35 minskim Exp $
 #
 
 DISTNAME=	ppmdi1
@@ -14,7 +14,7 @@ COMMENT=	PPM file compressor
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 MAKEFILE=	makefile.gmk
-ALL_TARGET=	ppmd
+BUILD_TARGET=	ppmd
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	c++

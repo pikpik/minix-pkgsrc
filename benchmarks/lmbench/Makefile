@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/05/07 15:25:13 cjep Exp $
+# $NetBSD: Makefile,v 1.19 2004/07/30 15:50:37 minskim Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
-ALL_TARGET=		build
+BUILD_TARGET=		build
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 INSTALLATION_DIRS=	man/man1 man/man3 man/man8

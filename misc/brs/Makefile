@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/24 18:16:04 snj Exp $
+# $NetBSD: Makefile,v 1.5 2004/08/16 11:54:20 salo Exp $
 #
 
 DISTNAME=	brs.4.00.l1
@@ -14,7 +14,7 @@ COMMENT=	Interactive King James Version Bible
 USE_BUILDLINK3=	YES
 
 WRKSRC=		${WRKDIR}/bible
-ALL_TARGET=	bible
+BUILD_TARGET=	bible
 
 SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch

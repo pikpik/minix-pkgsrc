@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/12/18 14:44:17 sketch Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/01 18:49:22 cjep Exp $
 #
 
 DISTNAME=	gap4r3
@@ -22,7 +22,7 @@ LICENSE=	no-commercial-use
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	PREFIX=${PREFIX}
-ALL_TARGET=	default
+BUILD_TARGET=	default
 
 GAP_DIRECTORY=	${PREFIX}/lib/gap4.3
 GAP_PLATFORM=	${MACHINE_GNU_PLATFORM}-${CC}

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/09 14:15:22 hubertf Exp $
 #
 
 .include "../../graphics/freetype-lib/Makefile.common"
@@ -20,7 +20,7 @@ T2PSRC=			${WRKSRC}/contrib/ttf2pk
 CONFIGURE_DIRS+=	${T2PSRC}
 BUILD_DIRS=		${T2PSRC}
 
-ALL_TARGET=		depend all
+BUILD_TARGET=		depend all
 
 USE_LIBTOOL=		# defined
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:17:49 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/19 16:39:42 wiz Exp $
 #
 
 DISTNAME=		arping-2.01
@@ -16,15 +16,15 @@ NO_CONFIGURE=		yes
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD"
-ALL_TARGET=		openbsd
+BUILD_TARGET=		openbsd
 .elif ${OPSYS} == "Linux"
-ALL_TARGET=		linux
+BUILD_TARGET=		linux
 .elif ${OPSYS} == "FreeBSD"
-ALL_TARGET=		freebsd
+BUILD_TARGET=		freebsd
 .elif ${OPSYS} == "SunOS"
-ALL_TARGET=		solaris
+BUILD_TARGET=		solaris
 .elif ${OPSYS} == "Darwin"
-ALL_TARGET=		macosx
+BUILD_TARGET=		macosx
 .endif
 
 .include "../../devel/libnet/buildlink3.mk"

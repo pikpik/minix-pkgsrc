@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/22 18:38:46 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:15:01 tv Exp $
 #
 
 DISTNAME=		tcl8.4.6-src
@@ -22,7 +22,7 @@ USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 TCLLIB=			libtcl84-nothread.la
-ALL_TARGET=		${TCLLIB}
+BUILD_TARGET=		${TCLLIB}
 
 # Add ${VIEWBASE}/lib/tcl to the list of locations for Tcl packages.
 CONFIGURE_ENV+=		TCL_PACKAGE_PATH="${VIEWBASE}/lib/tcl"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/04/11 22:45:44 snj Exp $
+# $NetBSD: Makefile,v 1.25 2004/10/03 00:18:38 tv Exp $
 
 PKGNAME=	qt2-libs-${QTVERSION}
 PKGREVISION=	6
@@ -12,7 +12,7 @@ CONFIGURE_ENV+=		QTDIR="${WRKSRC}"
 MAKE_ENV+=		QTDIR="${WRKSRC}"
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
-ALL_TARGET=		sub-src
+BUILD_TARGET=		sub-src
 
 do-install:
 	${INSTALL_DATA_DIR} ${QTPREFIX}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/01/20 12:25:34 agc Exp $
+# $NetBSD: Makefile,v 1.31 2004/10/03 00:18:13 tv Exp $
 #
 
 DISTNAME=		rsaref
@@ -20,7 +20,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 MAKEFILE=		unix/makefile
-ALL_TARGET=		librsaref.la
+BUILD_TARGET=		librsaref.la
 
 do-configure:
 	@${RM} -f ${WRKDIR}/source/rsaref && ${LN} -sf . ${WRKDIR}/source/rsaref

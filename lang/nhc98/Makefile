@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/05/02 04:59:23 snj Exp $
+# $NetBSD: Makefile,v 1.31 2004/10/03 00:15:02 tv Exp $
 
 DISTNAME=		nhc98src-1.16
 PKGNAME=		nhc98-1.16
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	--buildwith=gcc --installdir=${PREFIX} \
 # hbc (Chalmers Haskell).
 
 USE_GNU_TOOLS+=		make
-ALL_TARGET=		default
+BUILD_TARGET=		default
 
 HARCH=			`${WRKSRC}/script/harch`
 PLIST_SUBST+=		HARCH=${HARCH}

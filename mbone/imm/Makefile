@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/01/20 12:20:24 agc Exp $
+# $NetBSD: Makefile,v 1.19 2004/03/08 20:27:15 minskim Exp $
 #
 # NetBSD "imm" package
 # The original was based on the imm-3.5a1 FreeBSD port maintained
@@ -20,6 +20,6 @@ DEPENDS+=	tk>=8.3.2:../../x11/tk83
 
 WRKSRC=		${WRKDIR}/${DISTNAME}.src
 USE_X11=	yes
-ALL_TARGET=	netbsd
+BUILD_TARGET=	netbsd
 
 .include "../../mk/bsd.pkg.mk"

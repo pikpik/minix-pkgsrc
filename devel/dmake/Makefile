@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/09/25 18:49:08 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:13:28 agc Exp $
 #
 
 DISTNAME=	dmake-v4.1-src-export.all-unknown-all
@@ -13,7 +13,7 @@ HOMEPAGE=	http://dmake.wticorp.com/
 COMMENT=	Portable make supported by many platforms
 
 MAKEFILE=	makefile
-ALL_TARGET=	linux
+BUILD_TARGET=	linux
 WRKSRC=		${WRKDIR}/dmake
 
 do-configure:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/04/11 17:58:00 snj Exp $
+# $NetBSD: Makefile,v 1.19 2004/11/15 15:43:16 dillo Exp $
 #
 
 DISTNAME=	tin-1.6.2
@@ -52,7 +52,7 @@ CONFIGURE_ARGS+= --with-inews-dir=${PREFIX}/inn/bin \
 CONFIGURE_ARGS+= --enable-nntp-only
 .endif
 
-ALL_TARGET=	build
+BUILD_TARGET=	build
 
 post-patch:
 	@${MV} ${WRKSRC}/doc/tin.1 ${WRKSRC}/doc/tin.1.dist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/06/21 08:23:48 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:14:39 tv Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--with-tlib=ncurses
 CONFIGURE_ENV+=		BUILDLINK_DIR="${BUILDLINK_DIR}"
 MAKE_ENV+=		BUILDLINK_DIR="${BUILDLINK_DIR}"
 
-ALL_TARGET=		vim
+BUILD_TARGET=		vim
 INSTALL_TARGET=		installvimbin
 
 post-install:

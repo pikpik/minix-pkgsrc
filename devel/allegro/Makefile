@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/08 15:18:39 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/09 10:48:02 adam Exp $
 
 DISTNAME=	allegro-4.1.16
 CATEGORIES=	devel
@@ -14,7 +14,7 @@ USE_X11=		yes
 GNU_CONFIGURE=		yes
 
 MAKEFILE=		makefile
-ALL_TARGET=		# there is no 'all' target for some reason
+BUILD_TARGET=		# there is no 'all' target for some reason
 USE_MAKEINFO=		yes
 INFO_FILES=		allegro.info
 INSTALL_TARGET=		install install-info

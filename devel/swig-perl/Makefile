@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/07 23:30:22 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:33 tv Exp $
 
 PKGNAME=	swig-perl-${SWIG_VERSION}
 PKGREVISION=	1
@@ -10,7 +10,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFIGURE_ARGS+=	--with-perl5=${PERL5}
 
-ALL_TARGET=		runtime
+BUILD_TARGET=		runtime
 INSTALL_TARGET=		install-runtime
 
 .include "../../lang/perl5/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/06/21 08:23:48 martti Exp $
+# $NetBSD: Makefile,v 1.42 2004/10/03 00:14:39 tv Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -16,7 +16,7 @@ USE_X11=		yes
 CONFIGURE_ARGS+=	--enable-gui=gtk
 CONFIGURE_ARGS+=	--with-tlib=ncurses
 
-ALL_TARGET=		vim
+BUILD_TARGET=		vim
 INSTALL_TARGET=		installvimbin
 
 post-install:

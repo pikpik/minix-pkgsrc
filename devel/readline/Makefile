@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/10/03 00:13:33 tv Exp $
+# $NetBSD: Makefile,v 1.33 2004/11/14 06:16:49 jlam Exp $
 #
 
 DISTNAME=	readline-5.0
@@ -15,7 +15,7 @@ USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 
-ALL_TARGET=		all-libtool
+BUILD_TARGET=		all-libtool
 INSTALL_TARGET=		install-libtool
 
 INFO_FILES=		history.info readline.info rluserman.info

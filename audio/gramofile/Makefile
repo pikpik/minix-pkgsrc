@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/07/09 12:02:04 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:06 tv Exp $
 #
 
 DISTNAME=	gramofile-1.6
@@ -12,7 +12,7 @@ COMMENT=	Tool for ripping audio from vinyl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-ALL_TARGET=	gramofile makebplay
+BUILD_TARGET=	gramofile makebplay
 
 USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make

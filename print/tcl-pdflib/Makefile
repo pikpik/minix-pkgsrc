@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/05/03 21:26:31 snj Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:07 tv Exp $
 
 .include "../pdflib/Makefile.common"
 
@@ -21,7 +21,7 @@ pre-build:
 do-build:
 .for DIR in ${DIRS_TO_BUILD}
 	cd ${WRKSRC}/${DIR} && ${SETENV} ${MAKE_ENV}			\
-		${MAKE_PROGRAM} ${MAKE_FLAGS} ${ALL_TARGET}
+		${MAKE_PROGRAM} ${MAKE_FLAGS} ${BUILD_TARGET}
 .endfor
 
 do-install:

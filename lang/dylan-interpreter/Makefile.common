@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.15 2004/05/09 02:26:14 snj Exp $
+# $NetBSD: Makefile.common,v 1.16 2004/09/30 10:53:19 agc Exp $
 #
 
 DISTNAME=		gwydion-dylan-${DYLAN_VERSION}
@@ -20,7 +20,7 @@ USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 MAKEFILE=		GNUmakefile
-ALL_TARGET=		default
+BUILD_TARGET=		default
 
 GNU_CONFIGURE=		yes
 AUTOMAKE_REQD=		1.4
