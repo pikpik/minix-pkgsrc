@@ -24,3 +24,13 @@ CFLAGS+=	-DDEBUGGING -g -msoft-quad-float -O2
 .    endif
 .  endif
 .endif
+
+### [Sun Nov 14 02:35:50 EST 2004 : jlam]
+### On PowerPC, building with optimisation with GCC causes an "attempt
+### to free unreference scalar".  Remove optimisation flags as a
+### workaround until GCC is fixed.
+###
+.if !empty(CC_VERSION:Mgcc*) && (${MACHINE_ARCH} == "powerpc")
+PKG_HACKS+=		powerpc-codegen
+BUILDLINK_TRANSFORM+=	rm:-O[0-9]*
+.endif
