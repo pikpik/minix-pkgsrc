@@ -1,13 +1,14 @@
 #!/bin/sh
 #
-# $NetBSD: smbd.sh,v 1.1 2001/02/04 15:29:59 tron Exp $
+# $NetBSD$
 #
 # PROVIDE: smbd
 # REQUIRE: nmbd
 
 name="smbd"
 command="@PREFIX@/sbin/${name}"
-smbd_flags="-D"
+command_args="-D"		# _must_ start as daemon from rc.d;
+				# add more flags through ${smbd_flags}
 
 if [ ! -d /etc/rc.d ]
 then
