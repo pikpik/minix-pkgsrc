@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+# $NetBSD$
 
 from distutils.core import setup
 
