@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/08/09 10:44:45 seb Exp $
+# $NetBSD: Makefile,v 1.25 2004/01/05 11:34:26 jlam Exp $
 #
 
 DISTNAME=	m4-1.4
@@ -14,6 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
+MAKE_ENV+=		INFO_DIR=${INFO_DIR}
 INFO_FILES=		m4.info
 USE_MAKEINFO=		yes
 
