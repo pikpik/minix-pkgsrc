@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/04/15 10:51:53 martti Exp $
+# $NetBSD: Makefile,v 1.3 2002/06/30 03:47:53 jlam Exp $
 
 DISTNAME=	ipa-1.2.7
 CATEGORIES=	net sysutils
@@ -14,7 +14,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_PACKAGE=		${RESTRICTED}
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 ALL_TARGET=		NetBSD
 
 CFLAGS+=		-DCFGFILE=\\\"${PKG_SYSCONFDIR}/ipa.conf\\\"
