@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2001/08/26 21:39:33 kristerw Exp $
+# $NetBSD: Makefile,v 1.52 2001/09/02 22:07:39 kristerw Exp $
 #
 
-DISTNAME=		xmame-0.54.1
-PKGNAME=		xmame-0.54.1nb1
+DISTNAME=		xmame-0.54.2
 CATEGORIES=		emulators games x11
 MASTER_SITES=		http://x.mame.net/download/
 EXTRACT_SUFX=		.tar.bz2
