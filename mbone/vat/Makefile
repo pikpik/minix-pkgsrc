@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/09/22 06:11:38 garbled Exp $
+# $NetBSD: Makefile,v 1.18 1998/11/13 01:28:46 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/09/11 03:54:43 fenner Exp 
 #
 
@@ -36,5 +36,8 @@ INSTALL_TARGET=	install install-man
 
 post-install:
 	@strip ${PREFIX}/bin/vat
+
+pre-clean:
+	@cd ../../audio/gsm && ${MAKE} clean
 
 .include "../../mk/bsd.pkg.mk"
