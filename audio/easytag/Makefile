@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/08/03 17:08:48 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/08/17 21:16:45 jlam Exp $
 #
 
 DISTNAME=	easytag-0.15
@@ -10,8 +10,9 @@ HOMEPAGE=	http://easytag.sourceforge.net/
 COMMENT=	Tool to view, edit and write ID3 v1&2 TAGs with a GTK+ interface
 
 USE_GMAKE=	yes
-#USE_LIBINTL=	yes
+BUILD_USES_MSGFMT=	yes				# xgettext, really
 USE_X11BASE=	yes
+USE_CONFIG_WRAPPER=	yes				# $GTK_CONFIG
 
 .include "../../audio/id3lib/buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
