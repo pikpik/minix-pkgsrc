@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.4 1999/12/16 00:58:28 dmcmahill Exp $
 
 --- ./libI77/makefile.orig	Tue Dec  7 17:52:41 1999
 +++ ./libI77/makefile	Tue Dec  7 18:05:10 1999
@@ -6,6 +6,6 @@ $NetBSD$
  .SUFFIXES: .c .o
  CC = cc
 -CFLAGS = -O
-+CFLAGS = -Wcast-align -O2 
++CFLAGS = -fPIC -Wcast-align -O2 
  SHELL = /bin/sh
  
