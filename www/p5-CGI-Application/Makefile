@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2001/10/18 15:20:48 veego Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/26 06:50:31 jlam Exp $
 
-DISTNAME=		CGI-Application-1.2
+DISTNAME=		CGI-Application-2.1
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5cga
 CATEGORIES=		www perl5
