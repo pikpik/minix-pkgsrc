@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/08/25 18:40:35 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2002/09/10 16:06:53 wiz Exp $
 
 DISTNAME=	kdelibs-2.2.2
 PKGREVISION=	3
@@ -14,6 +14,7 @@ USE_BUILDLINK2=		YES
 USE_OPENSSL_VERSION=	${OPENSSL_VERSION_096}
 
 CONFIGURE_ARGS+=	--with-ssl-dir="${BUILDLINK_PREFIX.openssl}"
+CONFIGURE_ENV+=		PKG_CONFIG=${WRKDIR}/must-not-exist
 
 .if (${MACHINE_ARCH} == "arm32")
 BROKEN=		Compilation causes arm32 machines to hang
