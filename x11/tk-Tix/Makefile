@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/16 16:04:05 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:38 tv Exp $
 #
 
 DISTNAME=	tix8.2.0b1
@@ -24,4 +24,5 @@ TEST_TARGET=		test
 
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
