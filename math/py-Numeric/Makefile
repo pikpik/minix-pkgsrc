@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2000/09/05 08:47:38 rh Exp $
+# $NetBSD: Makefile,v 1.16 2000/12/05 10:05:45 drochner Exp $
 
-DISTNAME=	Numeric-17.1.2
-PKGNAME=	py-Numeric-17.1.2
+DISTNAME=	Numeric-17.2.0
+PKGNAME=	py-Numeric-17.2.0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 
