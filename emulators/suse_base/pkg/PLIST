@@ -1,6 +1,5 @@
 @comment $NetBSD$
 sbin/linux-mkpwd
-sbin/rpm2pkg
 @unexec rm -f %D/@@EMULSUBDIR@@/etc/ld.so.cache
 @@EMULSUBDIR@@/etc/ld.so.conf
 @unexec cd %D/@@EMULSUBDIR@@/etc && rm -f group gshadow passwd shadow
