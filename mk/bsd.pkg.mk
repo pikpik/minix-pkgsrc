@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1328 2003/12/25 16:18:48 seb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1329 2003/12/26 17:43:24 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -2603,7 +2603,7 @@ real-su-install: ${MESSAGE}
 		for manpage in $$newmanpages; do			\
 			manpage=`${ECHO} $$manpage | ${SED} -e 's|\.gz$$||'`; \
 			if [ -h ${PREFIX}/$$manpage.gz ]; then		\
-				set - `${FILE_CMD} ${PREFIX}/$$manpage.gz | ${SED} -e 's|\.gz$$||'`; \
+				set - `${LS} -l ${PREFIX}/$$manpage.gz | ${SED} -e 's|\.gz$$||'`; \
 				shift `expr $$# - 1`;			\
 				${RM} -f ${PREFIX}/$$manpage;		\
 				${LN} -s $${1} ${PREFIX}/$$manpage;	\
@@ -2622,7 +2622,7 @@ real-su-install: ${MESSAGE}
 		for manpage in $$newmanpages; do			\
 			manpage=`${ECHO} $$manpage | ${SED} -e 's|\.gz$$||'`; \
 			if [ -h ${PREFIX}/$$manpage ]; then		\
-				set - `${FILE_CMD} ${PREFIX}/$$manpage`; \
+				set - `${LS} -l ${PREFIX}/$$manpage`; \
 				shift `expr $$# - 1`;			\
 				${RM} -f ${PREFIX}/$$manpage.gz; 	\
 				${LN} -s $${1}.gz ${PREFIX}/$$manpage.gz; \
