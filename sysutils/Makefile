@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.284 2005/01/27 23:11:09 tron Exp $
+# $NetBSD: Makefile,v 1.285 2005/01/30 11:20:32 agc Exp $
 
 COMMENT=	System utilities
 
@@ -105,6 +105,7 @@ SUBDIR+=	libgtop
 SUBDIR+=	libgtop2
 SUBDIR+=	libirman
 SUBDIR+=	libol
+SUBDIR+=	logfinder
 SUBDIR+=	logrot
 SUBDIR+=	lsof
 SUBDIR+=	mbmon
