@@ -1,7 +1,13 @@
 $NetBSD$
---- configure-	Sun Oct  8 23:15:09 2000
-+++ configure	Sun Oct  8 23:15:35 2000
-@@ -1509,2 +1509,3 @@
-   int major, minor;
-+  exit(0);	/*fool it*/
-   sscanf(pcap_version,"%d.%d", &major, &minor);
+
+--- libpcap-possiblymodified/bpf/net/bpf.h.orig	Wed Oct 14 22:27:16 1998
++++ libpcap-possiblymodified/bpf/net/bpf.h
+@@ -52,7 +52,7 @@
+  * Alignment macros.  BPF_WORDALIGN rounds up to the next 
+  * even multiple of BPF_ALIGNMENT. 
+  */
+-#define BPF_ALIGNMENT sizeof(bpf_int32)
++#define BPF_ALIGNMENT sizeof(long)
+ #define BPF_WORDALIGN(x) (((x)+(BPF_ALIGNMENT-1))&~(BPF_ALIGNMENT-1))
+ 
+ #define BPF_MAXINSNS 512
