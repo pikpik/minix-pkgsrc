@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2004/05/08 02:50:03 reed Exp $
+# $NetBSD: Makefile,v 1.53 2004/07/04 23:17:59 wiz Exp $
 
 DISTNAME=		texinfo-4.7
 PKGNAME=		g${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=		GNU info file manipulation utilities
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
-USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 INFO_FILES=		info-stnd.info info.info texinfo
 TEST_TARGET=		check
