@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/stroke_test
+lib/libstroke.so.0.3
+lib/libstroke.a
+lib/libstroke_tcl.so.0.3
+lib/libstroke_tcl.a
