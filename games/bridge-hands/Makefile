@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 16:49:35 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:15:39 agc Exp $
 
 DISTNAME=	hands-2.0.bsd386
 PKGNAME=	bridge-hands-2.0
@@ -15,7 +15,7 @@ WRKSRC=			${WRKDIR}/hands/source
 USE_BUILDLINK2=		# defined
 
 do-build:
-	cd ${WRKSRC}; ${BUILDLINK_CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}	\
+	cd ${WRKSRC}; ${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}		\
 		-o hands hands.c ${LIBS}
 
 do-install:

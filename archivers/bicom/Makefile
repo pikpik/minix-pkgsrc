@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/12/24 09:53:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/20 12:07:06 agc Exp $
 #
 
 DISTNAME=		bicom101
@@ -21,12 +21,12 @@ do-build:
 	for i in bialib bicom; do					\
 		cd ${WRKSRC}/$$i &&					\
 		for file in *.cpp; do					\
-			${BUILDLINK_CXX} ${CXXFLAGS} -I./ -I../bialib	\
+			${CXX} ${CXXFLAGS} -I./ -I../bialib		\
 				-c $$file;				\
 		done;							\
 	done
 	cd ${WRKSRC}/bicom &&						\
-		${BUILDLINK_CXX} ${CXXFLAGS} ${LDFLAGS}			\
+		${CXX} ${CXXFLAGS} ${LDFLAGS}				\
 			-o bicom *.o ../bialib/*.o
 
 do-install:

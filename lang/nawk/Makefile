@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/01/05 11:56:49 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2004/01/20 12:19:17 agc Exp $
 #
 
 DISTNAME=       awk
@@ -17,7 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
 MAKEFILE=	makefile
-MAKE_FLAGS+=	CC=${BUILDLINK_CC:Q} YACC=${YACC:Q} CFLAGS=${CFLAGS:Q}
+MAKE_FLAGS+=	CC=${CC:Q} YACC=${YACC:Q} CFLAGS=${CFLAGS:Q}
 ALL_TARGET=	a.out
 
 INSTALLATION_DIRS=	bin man/man1

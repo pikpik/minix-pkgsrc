@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/01/07 01:14:03 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2004/02/08 03:00:29 jlam Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -13,7 +13,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
-MAKE_ENV+=		REALCC="${BUILDLINK_CC}"
+MAKE_ENV+=		REALCC="${CC}"
 
 .include "../../mk/bsd.prefs.mk"
 

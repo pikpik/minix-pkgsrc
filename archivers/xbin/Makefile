@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/21 16:24:41 martti Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/20 12:07:07 agc Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -27,7 +27,7 @@ post-extract:
 
 do-build:
 	cd ${WRKSRC} && \
-	${BUILDLINK_CC} ${CFLAGS} -DBSD -o ${PRGNAME} ${DISTNAME}.c -lcompat
+	${CC} ${CFLAGS} -DBSD -o ${PRGNAME} ${DISTNAME}.c -lcompat
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PRGNAME} ${PREFIX}/bin
