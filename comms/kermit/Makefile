@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2003/09/15 16:27:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.48 2003/11/12 03:39:39 jschauma Exp $
 # $FreeBSD Id: Makefile,v 1.17 1997/11/26 23:16:51 jseger Exp
 #
 
@@ -28,7 +28,7 @@ PLIST_SRC=	${WRKDIR}/PLIST
 
 # Set to empty
 SSLINC=		-I${WRKDIR}/.buildlink/include
-SSLLIB=		-L${WRKDIR}/.buildlink/lib
+SSLLIB=		-L${WRKDIR}/.buildlink/lib -Wl,${RPATH_FLAG}${WRKDIR}/.buildlink/lib
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wermit ${PREFIX}/bin/kermit
