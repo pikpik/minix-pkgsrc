@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2000/07/28 14:59:46 ad Exp $
+# $NetBSD: Makefile,v 1.66 2000/07/31 01:56:43 hubertf Exp $
 #
 
     SUBDIR += ac3dec
@@ -43,6 +43,7 @@
     SUBDIR += gdcd
     SUBDIR += gnome-audio
     SUBDIR += gnome-media
+    SUBDIR += gogo
     SUBDIR += gqmpeg
     SUBDIR += gsm
     SUBDIR += id3ed
