@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/06 18:39:51 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/16 20:51:13 zuntum Exp $
 # FreeBSD Id: ports/irc/bnc/Makefile,v 1.9 2000/05/22 06:38:58 will Exp
 
 DISTNAME=	bnc2.8.2
@@ -15,8 +15,7 @@ DEPENDS+=	dialog-*:../../misc/dialog
 
 GNU_CONFIGURE=	YES
 
-MAKE_ENV+=	"OPTS=${CFLAGS}"					\
-		"CC=${CC}"
+MAKE_ENV+=	OPTS="${CFLAGS}"
 
 post-patch:
 	${SED}	-e "s,./mkpasswd,${PREFIX}/bin/bncmkpasswd,g"		\
