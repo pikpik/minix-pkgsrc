@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.1993 2004/08/02 02:08:28 minskim Exp $
+$NetBSD: TODO,v 1.1994 2004/08/02 13:06:03 cjep Exp $
 
 Suggested new packages
 ======================
@@ -352,7 +352,6 @@ Suggested package updates
 	o pth-2.0.1
 	o pureftpd-1.0.20
 	o pwlib-1.5.2
-	o py-checker-0.8.14
 	o py-psycopg-1.1.10
 	o pysol-4.82
 	o ratpoison-1.3.0
