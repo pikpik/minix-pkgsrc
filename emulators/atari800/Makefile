@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/05/23 05:17:04 tv Exp $
+# $NetBSD: Makefile,v 1.2 1999/10/21 07:45:47 garbled Exp $
 
 DISTNAME=	Atari800-0.9.9a
 PKGNAME=	atari800-0.9.9a
@@ -14,6 +14,7 @@ BUILD_DEPENDS=	unzip:../../archivers/unzip
 
 USE_X11=	yes
 RESTRICTED=	"copyrighted ROM images"
+NO_CDROM=	${RESTRICTED}
 MIRROR_DISTFILE=no
 
 EXTRACT_CMD=	unzip -Loq ${DOWNLOADED_DISTFILE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/07/15 12:27:36 kleink Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/02 10:57:53 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1999/04/08 07:49:18 dima Exp $
 
 PKGNAME=	acroread-4.0
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.adobe.com/prodindex/acrobat/readstep.html
 
 IS_INTERACTIVE=	YES
 RESTRICTED=	"Original installer required to redistribute."
+NO_CDROM=	${RESTRICTED}
 
 NO_BUILD=	YES
 

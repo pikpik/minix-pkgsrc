@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/01/30 23:18:46 agc Exp $
+# $NetBSD: Makefile,v 1.6 1999/05/18 08:45:48 tv Exp $
 
 DISTNAME=		vice-1.0
 CATEGORIES=		emulators
@@ -14,6 +14,7 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.cs.cmu.edu/~dsladic/vice/vice.html
 
 RESTRICTED=		"ROM image copyright is questionable"
+NO_CDROM=		${RESTRICTED}
 NO_PACKAGE=		${RESTRICTED}
 MIRROR_DISTFILE=	no
 
