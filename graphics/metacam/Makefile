@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/02 04:03:34 simonb Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/03 15:14:59 wiz Exp $
 #
 
 DISTNAME=		metacam-1.2
@@ -15,4 +15,5 @@ BUILD_TARGET=		default
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/metacam ${PREFIX}/bin
 
+.include "../../devel/libgetopt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
