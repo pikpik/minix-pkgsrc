@@ -1,4 +1,4 @@
-# $NetBSD: bsd.wrapper.mk,v 1.16 2005/01/10 03:40:25 jlam Exp $
+# $NetBSD: bsd.wrapper.mk,v 1.17 2005/01/10 17:16:35 jlam Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -272,7 +272,7 @@ _WRAP_TRANSFORM.CXX=	${_WRAP_TRANSFORM.CC}
 .endif
 
 _WRAP_CMD_SINK.LD=		${WRAPPER_TMPDIR}/cmd-sink-ld
-_WRAP_SKIP_TRANSFORM.IMAKE=	no
+_WRAP_SKIP_TRANSFORM.IMAKE=	yes
 
 # XXX
 # XXX This section is ${OPSYS}-specific and shouldn't be here.
