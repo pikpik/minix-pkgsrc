@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.54 1999/12/21 12:49:33 agc Exp $
+#	$NetBSD: Makefile,v 1.55 1999/12/23 01:32:33 abs Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += astrolog
@@ -30,6 +30,7 @@
     SUBDIR += jive
     SUBDIR += kdeutils
     SUBDIR += kp
+    SUBDIR += less
     SUBDIR += libutf
     SUBDIR += lile
     SUBDIR += linuxls
