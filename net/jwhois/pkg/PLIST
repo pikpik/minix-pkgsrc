@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/02/26 22:58:20 kim Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/10/05 14:17:15 kim Exp $
 bin/jwhois
-@unexec install-info --delete %D/info/jwhois.info %D/info/dir
+@unexec	install-info --delete %D/info/jwhois.info %D/info/dir
 info/jwhois.info
-@exec install-info %D/info/jwhois.info %D/info/dir
+@exec	install-info %D/info/jwhois.info %D/info/dir
 man/man1/jwhois.1
-share/jwhois.conf
+share/examples/jwhois.conf
+share/locale/sv/LC_MESSAGES/jwhois.mo
