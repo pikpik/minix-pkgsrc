@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/06/21 18:55:02 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/21 19:40:47 jlam Exp $
 
 DISTNAME=	tk8.3.2
 PKGNAME=	tk-8.3.2nb1
@@ -13,6 +13,7 @@ COMMENT=	Graphical toolkit for TCL
 WRKSRC=			${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_DIR}/lib
+MAKE_ENV+=		TOUCH="${TOUCH}"
 
 USE_X11=		yes
 USE_BUILDLINK_ONLY=	yes
