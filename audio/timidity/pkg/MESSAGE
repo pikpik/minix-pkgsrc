@@ -1,0 +1,8 @@
+======================================================================
+$NetBSD$
+
+  To use this program, you'll have to install either the eawpatches
+  or guspatches packages, located in pkgsrc/audio/eawpatch resp.
+  pkgsrc/audio/guspatch.
+
+======================================================================
