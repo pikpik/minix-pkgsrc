@@ -11,7 +11,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://lazy.ton.tut.fi/gtk--/gtk--.html
 
 DEPENDS+=	gnome-libs-*:../../x11/gnome-libs
-BUILD_DEPENDS+=	gm4:../../devel/m4
+BUILD_DEPENDS+=	${LOCALBASE}/bin/gm4:../../devel/m4
 
 USE_LIBTOOL=	yes
 USE_X11BASE=	yes
@@ -19,6 +19,7 @@ USE_GMAKE=	yes
 
 GNU_CONFIGURE=	yes
 
+M4=		${LOCALBASE}/bin/gm4
 PLIST_SUBST+=	LOCALBASE=${LOCALBASE}
 
 post-install:
