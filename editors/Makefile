@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2001/02/19 07:40:25 jun Exp $
+# $NetBSD: Makefile,v 1.45 2001/02/20 08:18:27 jun Exp $
 #
 
 COMMENT=	Editors
@@ -25,6 +25,19 @@ SUBDIR+=	pico
 SUBDIR+=	sam
 SUBDIR+=	ssam
 SUBDIR+=	tamago
+SUBDIR+=	ted
+SUBDIR+=	ted-cs
+SUBDIR+=	ted-da
+SUBDIR+=	ted-de
+SUBDIR+=	ted-en-gb
+SUBDIR+=	ted-en-us
+SUBDIR+=	ted-es
+SUBDIR+=	ted-fr
+SUBDIR+=	ted-it
+SUBDIR+=	ted-nl
+SUBDIR+=	ted-no
+SUBDIR+=	ted-pt
+SUBDIR+=	ted-sv
 SUBDIR+=	uemacs
 SUBDIR+=	vigor
 SUBDIR+=	vile
