@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/baduki
+share/locale/ko/LC_MESSAGES/baduki.mo
+share/baduki/baduki.gtkrc
+share/baduki/board.xpm
+@dirrm share/baduki
