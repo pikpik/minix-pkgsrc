@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 1999/01/20 01:57:47 hubertf Exp $
+# $NetBSD: Makefile,v 1.71 1999/01/22 06:28:13 mellon Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -85,7 +85,7 @@
     SUBDIR += unclutter
 #    SUBDIR += viewfax
     SUBDIR += windowmaker
-    SUBDIR += wm-themes
+    SUBDIR += wmthemes
 #    SUBDIR += wm2
     SUBDIR += x3270
 #    SUBDIR += xalarm
