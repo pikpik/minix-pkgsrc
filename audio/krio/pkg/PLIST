@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/Krio
+share/pixmaps/krio.xpm
+share/pixmaps/mini-krio.xpm
