@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/10/07 10:44:13 wiz Exp $
 #
 
 .if !defined(EVOLUTION_BUILDLINK2_MK)
 EVOLUTION_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			evolution
-BUILDLINK_DEPENDS.evolution?=		evolution>=1.0.8nb3
+BUILDLINK_DEPENDS.evolution?=		evolution>=1.0.8nb5
 BUILDLINK_PKGSRCDIR.evolution?=		../../mail/evolution
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.evolution=evolution

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2002/10/13 16:17:57 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/12/01 02:00:13 salo Exp $
 #
 
 DISTNAME=	gnome-breakout-0.5.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.senet.com.au/~alcaron/
 

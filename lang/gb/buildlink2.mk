@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:32 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:03 jlam Exp $
 
 .if !defined(GB_BUILDLINK2_MK)
 GB_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		gb
-BUILDLINK_DEPENDS.gb?=		gb>=0.0.20nb1
+BUILDLINK_DEPENDS.gb?=		gb>=0.0.20nb2
 BUILDLINK_PKGSRCDIR.gb?=	../../lang/gb
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.gb=gb

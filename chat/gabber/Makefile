@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2002/09/29 03:29:47 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/11/30 12:41:06 salo Exp $
 
 DISTNAME=	gabber-0.8.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gabber/}
 

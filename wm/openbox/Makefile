@@ -1,7 +1,8 @@
-# $NetBSD: $
+# $NetBSD: Makefile,v 1.1.1.1 2002/11/20 18:16:18 jschauma Exp $
 #
 
 DISTNAME=	openbox-2.2.0
+PKGREVISION=	1
 CATEGORIES=	wm
 MASTER_SITES=	http://icculus.org/openbox/releases/
 

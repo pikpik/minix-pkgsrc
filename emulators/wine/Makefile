@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2002/11/15 18:34:40 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2002/12/09 14:42:54 junyoung Exp $
 
 DISTNAME=		Wine-20021125
 PKGNAME=		${DISTNAME:S/W/w/}
+PKGREVISION=		1
 WRKSRC= 		${WRKDIR}/wine-20021125
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=ALPHA/wine/development/}

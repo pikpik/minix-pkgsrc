@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2002/10/19 10:54:57 rh Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/30 07:36:12 rh Exp $
 #
 
 DISTNAME=		libgnomeprintui-1.116.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		print gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgnomeprintui/1.116/}
 

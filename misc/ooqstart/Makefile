@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/09 08:18:25 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/08 17:47:05 wiz Exp $
 #
 
 DISTNAME=	ooqstart-0.8.3
+PKGREVISION=	1
 CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ooqstart/}
 EXTRACT_SUFX=	.tgz

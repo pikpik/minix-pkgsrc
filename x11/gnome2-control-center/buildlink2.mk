@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/09/22 09:52:37 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/23 19:57:32 jlam Exp $
 #
 # This Makefile fragment is included by packages that use gnome2-control-center.
 #
@@ -9,7 +9,7 @@
 GNOME2_CONTROL_CENTER_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gnome2-control-center
-BUILDLINK_DEPENDS.gnome2-control-center?=	gnome2-control-center>=2.0.1.1
+BUILDLINK_DEPENDS.gnome2-control-center?=	gnome2-control-center>=2.0.1.1nb1
 BUILDLINK_PKGSRCDIR.gnome2-control-center?=	../../x11/gnome2-control-center
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gnome2-control-center=gnome2-control-center

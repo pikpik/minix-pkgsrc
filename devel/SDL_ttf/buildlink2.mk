@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:20 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/08/28 02:50:03 jlam Exp $
 
 .if !defined(SDL_TTF_BUILDLINK2_MK)
 SDL_TTF_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		SDL_ttf
-BUILDLINK_DEPENDS.SDL_ttf?=	SDL_ttf>=2.0.3
+BUILDLINK_DEPENDS.SDL_ttf?=	SDL_ttf>=2.0.3nb1
 BUILDLINK_PKGSRCDIR.SDL_ttf?=	../../devel/SDL_ttf
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.SDL_ttf=SDL_ttf
