@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2001/10/18 11:14:39 darcy Exp $
+# $NetBSD: Makefile,v 1.2 2001/10/18 11:46:30 wiz Exp $
 #
 
 DISTNAME=	gdchart-py-0.6
@@ -12,8 +12,8 @@ COMMENT=	Python interface to GDChart
 
 BUILD_DEPENDS=	gdchart-0.10.1*:../../graphics/gdchart
 
-USE_PYTHON=	yes
 USE_GMAKE=	yes
+PYTHON_VERSIONS_ACCEPTED	=20
 MAKE_ENV=	GD_INCLUDE=${LOCALBASE}/include \
 		GDCHART_INCLUDE=${LOCALBASE}/include \
 		PYTHON_INCLUDE=${LOCALBASE}/include/python2.0 \
@@ -36,4 +36,5 @@ do-install:
 .endfor
 .endif
 
+.include "../../lang/python/extension.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
