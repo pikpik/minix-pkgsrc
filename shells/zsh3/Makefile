@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.10 2003/08/09 11:23:00 seb Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/18 04:36:42 snj Exp $
+#
 
 DISTNAME=       zsh-3.0.8
 CATEGORIES=	shells
@@ -13,14 +14,17 @@ HOMEPAGE=	http://sunsite.dk/zsh/
 COMMENT=	The Z shell
 
 GNU_CONFIGURE=	yes
+USE_BUILDLINK3=	YES
 USE_MAKEINFO=	YES
+USE_PKGINSTALL=	YES
+
 INFO_FILES=	zsh.info
-USE_BUILDLINK3=		YES
-USE_PKGINSTALL=		YES
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(ZSH_STATIC)
+BUILD_DEFS+=	ZSH_STATIC
+
+.if defined(ZSH_STATIC) && !empty(ZSH_STATIC:M[Yy][Ee][Ss])
 LDFLAGS+=	-static
 .endif
 
