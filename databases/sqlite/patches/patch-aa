@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ../sqlite/configure.orig	Thu Sep 27 21:34:44 2001
+--- ../sqlite/configure.orig	Fri Sep 28 03:34:44 2001
 +++ ../sqlite/configure
 @@ -13341,7 +13341,7 @@
  rm -f conftest.$ac_objext conftest$ac_exeext conftest.$ac_ext
