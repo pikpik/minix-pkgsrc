@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1130 2003/01/17 13:55:27 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1131 2003/01/20 16:26:43 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -222,7 +222,11 @@ CONFIG_SHELL?=		${SH}
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
 .endif
 
+.if defined(_OPSYS_LIBTOOL_REQD)
+LIBTOOL_REQD=		${_OPSYS_LIBTOOL_REQD}
+.else
 LIBTOOL_REQD?=		1.4.20010614nb11
+.endif
 LIBTOOL=		${LOCALBASE}/bin/libtool
 SHLIBTOOL=		${LOCALBASE}/bin/shlibtool
 .if defined(USE_LIBTOOL)
