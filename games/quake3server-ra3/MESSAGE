@@ -1,9 +1,10 @@
 ===========================================================================
 $NetBSD$
 
-To start a Rocket Arena Quake3 server, you should run:
+To start a Rocket Arena Quake3 server, add this to your /etc/rc.conf:
 
-./q3ded +set fs_game arena +set vm_game 0 +set sv_pure 1 +set bot_enable 0
-        +set dedicated 2 +set net_port 27960 +exec server.cfg
+	quake3server="YES"
+	quake3server_flags="+set fs_game arena +set dedicated 1
+			    +exec server.cfg &"
 
 ===========================================================================
