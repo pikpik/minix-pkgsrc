@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/04/14 21:39:01 tron Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/16 13:15:27 wiz Exp $
 #
 
 DISTNAME=       cpio-2.4.2
@@ -10,9 +10,9 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/cpio/cpio.html
 COMMENT=	GNU copy-in/out (cpio) with remote magnetic tape (rmt) support
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --program-prefix=g
-LDFLAGS=	-lgnumalloc
+USE_BUILDLINK_ONLY=	yes
+GNU_CONFIGURE=		yes
+LIBS+=			-lgnumalloc
 
 INFO_FILES=	cpio.info
 
