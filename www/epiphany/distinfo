@@ -1,5 +1,6 @@
-$NetBSD: distinfo,v 1.10 2004/08/31 16:04:48 jmmv Exp $
+$NetBSD: distinfo,v 1.11 2004/09/21 17:07:58 jmmv Exp $
 
 SHA1 (epiphany-1.4.0.tar.bz2) = 23695a16488c33c26095616e78fab0b76efb6a40
 Size (epiphany-1.4.0.tar.bz2) = 3381335 bytes
 SHA1 (patch-aa) = 06772fd02f5399e5e7827f80be089c3584551597
+SHA1 (patch-ab) = 6cb19d6dd33cb56c263f3066456e4402d6b2a299
