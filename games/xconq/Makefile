@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/02/18 15:14:19 seb Exp $
+# $NetBSD: Makefile,v 1.14 2002/09/23 10:28:26 jlam Exp $
 
 DISTNAME=		xconq-7.4.1
 CATEGORIES=		games x11
@@ -18,8 +18,9 @@ CONFIGURE_ARGS+=	--with-tkconfig="${BUILDLINK_PREFIX.tk}/lib"
 
 MAKE_ENV+=		LOCALBASE="${LOCALBASE}"
 
+USE_NEW_TEXINFO=	YES
+USE_MAKEINFO=		YES
 INFO_FILES=     	hacking.info xcdesign.info xconq.info
-TEXINFO_OVERRIDE=	YES
 
 post-build:
 	cd ${WRKSRC}/doc && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} info
@@ -29,5 +30,4 @@ post-install:
 
 .include "../../x11/tk/buildlink2.mk"
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
