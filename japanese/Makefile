@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2001/02/16 15:51:50 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2001/02/20 10:11:18 kei Exp $
 #
 
 COMMENT=	Packages with japanese language support
@@ -40,6 +40,8 @@ SUBDIR+=	sj3-server
 SUBDIR+=	skkfep
 SUBDIR+=	skkinput
 SUBDIR+=	skkserv
+SUBDIR+=	texfamily
+SUBDIR+=	texfamily-share
 SUBDIR+=	vflib
 SUBDIR+=	vflib-lib
 SUBDIR+=	vflib-utils
