@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.222 2001/05/21 13:17:54 zuntum Exp $
+# $NetBSD: Makefile,v 1.223 2001/05/29 20:05:42 kim Exp $
 #
 
 COMMENT=	Networking tools
@@ -113,6 +113,8 @@ SUBDIR+=	p5-Socket6
 SUBDIR+=	p5-Wais
 SUBDIR+=	pchar
 SUBDIR+=	pfnet
+SUBDIR+=	pim6dd
+SUBDIR+=	pim6sd
 SUBDIR+=	pload
 SUBDIR+=	poink
 SUBDIR+=	polsms
