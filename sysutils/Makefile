@@ -96,6 +96,7 @@ SUBDIR+=	rtty
 SUBDIR+=	ruby-quota
 SUBDIR+=	safetynet
 SUBDIR+=	sarah
+SUBDIR+=	scsiinfo
 SUBDIR+=	service-config
 SUBDIR+=	setquota
 SUBDIR+=	sh-utils
