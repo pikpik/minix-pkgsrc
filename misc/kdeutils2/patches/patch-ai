@@ -1,8 +1,8 @@
-$NetBSD: patch-ai,v 1.2 2001/07/29 05:51:51 tron Exp $
+$NetBSD$
 
---- klaptopdaemon/portable.cpp.orig	Sun Feb 18 15:31:14 2001
-+++ klaptopdaemon/portable.cpp
-@@ -658,6 +658,238 @@
+--- klaptopdaemon/portable.cpp.orig	Wed May 16 11:16:35 2001
++++ klaptopdaemon/portable.cpp	Mon Sep 16 14:45:41 2002
+@@ -658,6 +658,241 @@
  {
  	return(1);
  }
@@ -41,6 +41,7 @@ $NetBSD: patch-ai,v 1.2 2001/07/29 05:51:51 tron Exp $
 +	}
 +
 +	struct apm_power_info info;
++	memset(&info, 0, sizeof(info));
 +	ret=ioctl(fd, APM_IOC_GETPOWER, &info);
 +	::close(fd);
 +
@@ -62,6 +63,7 @@ $NetBSD: patch-ai,v 1.2 2001/07/29 05:51:51 tron Exp $
 +	  return 0;
 +
 +	struct apm_power_info info;
++	memset(&info, 0, sizeof(info));
 +	ret=ioctl(fd, APM_IOC_GETPOWER, &info);
 +	::close(fd);
 +
@@ -212,6 +214,7 @@ $NetBSD: patch-ai,v 1.2 2001/07/29 05:51:51 tron Exp $
 +         	goto bad;
 +
 +       	struct apm_power_info info;
++	memset(&info, 0, sizeof(info));
 +       	ret=ioctl(fd, APM_IOC_GETPOWER, &info);
 +       	::close(fd);
 +	
