@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/09/28 09:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/12/30 17:21:55 cjep Exp $
 
 DISTNAME=		zile-1.6.2
 PKGREVISION=		1
@@ -10,7 +10,7 @@ HOMEPAGE=		http://zile.sourceforge.net/
 COMMENT=		Emacs-like text editor
 
 GNU_CONFIGURE=		yes
-USE_NCURSES=		# KEY_RESIZE (also uses stdscr->_delay directly)
+USE_NCURSES=		# uses stdscr->_delay directly
 USE_BUILDLINK2= 	yes
 USE_MAKEINFO=		YES
 INFO_FILES=		zile.info
