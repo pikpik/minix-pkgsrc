@@ -1,4 +1,4 @@
-# $NetBSD: mk.conf.example,v 1.241 2001/09/08 20:33:24 jlam Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.1 2001/09/18 21:30:05 agc Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -63,10 +63,10 @@ X11BASE=	/usr/X11R6
 # Possible: any path
 # Default: /usr/X11R6
 
-MOTIFBASE?=	/usr/X11R6
+#MOTIFBASE?=	/usr/X11R6
 # Where Motif is installed on the system.
 # Possible: any path
-# Default: /usr/X11R6
+# Default: not defined
 
 DISTDIR?=	${PKGSRCDIR}/distfiles
 # Directory where original distribution
