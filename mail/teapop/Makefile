@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/24 06:17:06 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/04/03 05:52:00 zuntum Exp $
 
-DISTNAME=	teapop-0.3.0
+DISTNAME=	teapop-0.3.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.toontown.org/pub/teapop/			\
 		http://www.toontown.org/pub/teapop/
@@ -9,9 +9,11 @@ MAINTAINER=	zuntum@netbsd.org
 HOMEPAGE=	http://www.toontown.org/teapop/
 COMMENT=	Yet another RFC1939 compliant POP3 server
 
-GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=	--enable-flock
-CONFIGURE_ARGS+=--sysconfdir=/etc
+USE_BUILDLINK_ONLY=	YES
+GNU_CONFIGURE=		YES
+
+CONFIGURE_ARGS+=	--enable-flock
+CONFIGURE_ARGS+=	--sysconfdir=/etc
 
 .include "../../mk/bsd.prefs.mk"
 
