@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2001/02/19 16:11:38 tron Exp $
+# $NetBSD: Makefile,v 1.84 2001/03/05 22:14:01 jtb Exp $
 #
 
 COMMENT=	Audio tools
@@ -93,8 +93,8 @@ SUBDIR+=	tosha
 SUBDIR+=	tracker
 SUBDIR+=	vorbis
 SUBDIR+=	wmmixer
-SUBDIR+=	wmsound
 SUBDIR+=	wsoundprefs
+SUBDIR+=	wsoundserver
 SUBDIR+=	xamp
 SUBDIR+=	xcdplayer
 SUBDIR+=	xhippo
