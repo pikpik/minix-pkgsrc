@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/perl5/5.00503/${MACHINE_ARCH}-${LOWER_OPSYS}/CORE/libperl.so
