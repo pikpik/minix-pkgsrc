@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.183 2003/08/24 23:05:14 dillo Exp $
+# $NetBSD: Makefile,v 1.184 2003/09/09 15:10:01 adam Exp $
 #
 
 COMMENT=	Games
@@ -52,6 +52,7 @@ SUBDIR+=	falcons-eye
 SUBDIR+=	finalbattle
 SUBDIR+=	fire
 SUBDIR+=	fkiss
+SUBDIR+=	foobillard
 SUBDIR+=	fortune-strfile
 SUBDIR+=	fortunes-de
 SUBDIR+=	freeciv-client
