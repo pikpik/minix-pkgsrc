@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 1999/11/23 16:10:05 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/26 02:32:35 fredb Exp $
 #
 
-DISTNAME=	htdig-3.1.4
+DISTNAME=	htdig-3.1.5
 CATEGORIES=	www databases
-MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/www/indexing/} \
-		http://www.htdig.org/files/
+MASTER_SITES=	http://www.htdig.org/files/ \
+		ftp://ftp.htdig.org/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.htdig.org/
