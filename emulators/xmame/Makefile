@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.102 2004/01/17 17:11:08 kristerw Exp $
+# $NetBSD: Makefile,v 1.103 2004/01/22 08:36:04 grant Exp $
 #
 
 DISTNAME=		xmame-0.78.1
+PKGREVISION=		1
 CATEGORIES=		emulators games x11
 MASTER_SITES=		http://x.mame.net/download/
 EXTRACT_SUFX=		.tar.bz2
@@ -16,7 +17,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
-USE_X11BASE=		YES
+USE_X11=		YES
 USE_GNU_TOOLS+=		make
 MAKEFILE=		makefile.unix
 TARGET=			${PKGBASE}
