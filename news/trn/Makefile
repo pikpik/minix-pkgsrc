@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2000/03/27 08:54:59 tron Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/27 02:46:06 jlam Exp $
 #
 
-DISTNAME=		trn4-test72
-PKGNAME=		trn-4.72
+DISTNAME=		trn4-test74
+PKGNAME=		trn-4.74
 CATEGORIES=		news
-MASTER_SITES=		http://www.clari.net/~wayne/
+MASTER_SITES=		http://download.sourceforge.net/trn/ \
+			ftp://trn.sourceforge.net/pub/trn/
 
 MAINTAINER=     	packages@netbsd.org
-HOMEPAGE=		http://www.clari.net/~wayne/
+HOMEPAGE=		http://trn.sourceforge.net/
 
 .if defined(USE_INN) && ${USE_INN} == YES
 DEPENDS=		inn>=2.2:../inn
