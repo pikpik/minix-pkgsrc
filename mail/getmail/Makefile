@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2004/08/03 21:23:24 schmonz Exp $
+# $NetBSD: Makefile,v 1.20 2004/08/05 17:48:47 schmonz Exp $
 
-DISTNAME=	getmail-4.0.6
+DISTNAME=	getmail-4.0.8
 CATEGORIES=	mail
-MASTER_SITES=	${HOMEPAGE}/old-versions/
+MASTER_SITES=	${HOMEPAGE}old-versions/
 
 MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://www.qcc.ca/~charlesc/software/getmail-4/
