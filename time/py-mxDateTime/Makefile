@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/12/12 16:51:40 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:11 wiz Exp $
 #
 
 DISTNAME=	mxDateTime-1.3.0
@@ -21,11 +21,10 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 do-configure:
-	( cd ${WRKSRC}/mxDateTime ; \
-	make -f Makefile.pre.in boot )
+	( cd ${WRKSRC}/mxDateTime; ${MAKE_PROGRAM} -f Makefile.pre.in boot )
 
 do-build:
-	( cd ${WRKSRC}/mxDateTime; make  )
+	( cd ${WRKSRC}/mxDateTime; ${MAKE_PROGRAM} )
 	( cd ${WRKSRC}; python ${PREFIX}/lib/python2.0/compileall.py . )
 	( cd ${WRKSRC}; python -O ${PREFIX}/lib/python2.0/compileall.py . )
 
