@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/11/01 21:43:59 abs Exp $
+# $NetBSD: Makefile,v 1.16 2001/01/07 02:25:35 wiz Exp $
 
 DISTNAME=		ntop-1.1
 PKGNAME=		ntop-1.1nb1
@@ -8,6 +8,7 @@ EXTRACT_SUFX=		-src.tar.gz
 
 MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.ntop.org/
+COMMENT=		shows network usage (similar to "top" for processes)
 
 GNU_CONFIGURE=		yes
 USE_CURSES=		yes

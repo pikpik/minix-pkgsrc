@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/05/25 15:30:34 bouyer Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:29 tron Exp $
 #
 
 DISTNAME=       xmailbox-2.5
@@ -6,6 +6,7 @@ CATEGORIES=	mail x11
 MASTER_SITES=   ${MASTER_SITE_XCONTRIB:=applications/}
 
 MAINTAINER=	bouyer@netbsd.org
+COMMENT=	Enhanced xbiff, with pixmap and sound support
 
 USE_IMAKE=	YES
 USE_XPM=	YES

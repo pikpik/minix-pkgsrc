@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/12/05 10:05:45 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2001/01/15 11:58:25 drochner Exp $
 
 DISTNAME=	Numeric-17.2.0
 PKGNAME=	py-Numeric-17.2.0
@@ -7,6 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://numpy.sourceforge.net/
+COMMENT=	Adds multidimensional numeric arrays to Python
 
 DEPENDS+=	python>=1.6:../../lang/python
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/11/22 22:30:07 tv Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:19 jlam Exp $
 #
 
 DISTNAME=	fnet.pl-1.4
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.abattoir.com/pub/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.abattoir.com/~banshee/Tech/
+COMMENT=	Minimal FNET-like ICB client written in Perl
 
 USE_PERL5=	# defined
 

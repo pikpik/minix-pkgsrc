@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2001/01/29 10:48:09 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/11 05:24:29 hubertf Exp $
 #
 
 DISTNAME=		6to4-1.0
@@ -8,6 +8,7 @@ DISTFILES=		# empty
 
 MAINTAINER=		hubertf@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/packages/net/6to4/files/6to4.html
+COMMENT=		Enables 6to4 IPv6 automatic tunnels
 
 USE_PERL5=		YES
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/01/13 19:26:45 tv Exp $
+# $NetBSD: Makefile,v 1.14 2001/01/13 19:35:37 tv Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
@@ -11,6 +11,7 @@ MASTER_SITES=		ftp://ftp.ozone.fmi.fi/KEH/ \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.myxa.com/old/elm.html
+COMMENT=		ELM Mail User Agent
 
 CONFLICTS=		elm-*ME+*
 

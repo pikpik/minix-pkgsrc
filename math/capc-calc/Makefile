@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/08 15:50:20 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/08 15:59:53 wiz Exp $
 #
 
 DISTNAME=	calc-2.11.4t2
@@ -9,6 +9,7 @@ MASTER_SITES=	http://www.isthe.com/chongo/src/calc/ \
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc/
+COMMENT=	C arbitrary precision calculator
 
 NO_CONFIGURE=	# defined
 

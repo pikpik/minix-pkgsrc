@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/26 21:45:00 jtb Exp $
 
 DISTNAME=		etach-1.1.6
 CATEGORIES=		mail
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=etach/}
 
 MAINTAINER=		jtb@netbsd.org
 HOMEPAGE=		http://etach.sourceforge.net
+COMMENT=		Emacs Lisp package for dealing with MIME email attachments
 
 NO_CONFIGURE=		YES
 NO_BUILD=		YES

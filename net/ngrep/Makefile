@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/07/15 00:44:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/12 12:45:48 dent Exp $
 #
 
 DISTNAME=	ngrep-1.33
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.packetfactory.net/Projects/Ngrep/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.packetfactory.net/Projects/Ngrep/
+COMMENT=	network grep
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/ngrep

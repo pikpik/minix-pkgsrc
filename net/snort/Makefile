@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/03/20 12:03:45 agc Exp $
+# $NetBSD: Makefile,v 1.6 2000/12/27 10:08:35 rh Exp $
 #
 
 DISTNAME=	snort-1.6.3-patch2
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.snort.org/Files/				\
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.snort.org/
+COMMENT=	Libpcap-based packet sniffer/logger
 
 GNU_CONFIGURE=	YES
 

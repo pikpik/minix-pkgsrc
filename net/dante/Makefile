@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 17:29:14 rh Exp $
 #
 
 DISTNAME=		dante-1.1.4
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.inet.no/pub/socks/
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.inet.no/dante/
+COMMENT=		BSD-licensed socks 4/5 proxy suite
 
 CONFLICTS=		socks4-*
 

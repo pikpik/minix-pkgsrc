@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/10/27 19:12:22 agc Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/10 00:57:15 wiz Exp $
 #
 
 DISTNAME=	coda-doc-4.6.5-3
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rvb@cs.cmu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
+COMMENT=	documentation for a replicated, high-performance network file system
 
 #NO_DEPENDS=
 #NO_CONFIGURE=

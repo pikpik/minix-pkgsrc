@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/11 01:45:36 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/03 09:07:21 dmcmahill Exp $
 #
 
 DISTNAME=	src
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/latest/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.cis.upenn.edu/~bcpierce/unison/
+COMMENT=	file-synchronization tool
 
 BUILD_DEPENDS=	ocamlc:../../lang/ocaml
 

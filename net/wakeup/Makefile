@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/11/20 20:03:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1999/11/21 12:04:12 tron Exp $
 #
 
 DISTNAME=	hpwake
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.c.gz
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.berens-partner.de/wann/computer/wol.html
+COMMENT=	Wakeup On LAN client for remote power-up of machines
 
 do-extract:
 	${MKDIR} ${WRKSRC}

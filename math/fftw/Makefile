@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/27 18:45:15 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2000/05/11 02:07:08 dmcmahill Exp $
 
 DISTNAME=		fftw-2.1.3
 CATEGORIES=		math
@@ -6,6 +6,7 @@ MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.fftw.org/
+COMMENT=		Collection of fast C routines to compute DFTs
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-shared

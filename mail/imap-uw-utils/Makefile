@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/12 03:32:34 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/13 15:07:59 jlam Exp $
 
 DISTNAME=	imap-utils
 PKGNAME=	imap-uw-utils-20001220
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.washington.edu/imap/
+COMMENT=	UW IMAP mailbox utilities
 
 DEPENDS+=	imap-uw>=2000:../../mail/imap-uw
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/06 08:17:36 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:13 jlam Exp $
 #
 
 DISTNAME=       MIME-tools-4.124
@@ -7,6 +7,7 @@ CATEGORIES=	perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=MIME/}
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	perl5 modules for encoding and decoding MIME messages
 
 DEPENDS+=	p5-IO-stringy-*:../../devel/p5-IO-stringy
 DEPENDS+=	p5-MIME-Base64-*:../../converters/p5-MIME-Base64

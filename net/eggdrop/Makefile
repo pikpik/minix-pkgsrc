@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/11/14 16:39:56 abs Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/24 18:44:59 he Exp $
 #
 
 DISTNAME=	eggdrop1.3.22
@@ -12,6 +12,7 @@ BROKEN=		This package has not yet been updated to work past tcl-8.0.5.
 
 MAINTAINER=     tv@netbsd.org
 HOMEPAGE=	http://www.sodre.net/eggdrop/
+COMMENT=	IRC robot with TCL scripting and multi-channel ability
 
 DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/12/08 23:52:35 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/20 12:38:49 rh Exp $
 #
 
 DISTNAME=	lftp-2.3.7
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://ftp.yars.free.net/projects/lftp/
+COMMENT=	powerful command line ftp client
 
 DEPENDS+=	readline>=4.1:../../devel/readline
 

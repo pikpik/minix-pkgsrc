@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/13 23:04:37 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/13 23:29:28 tron Exp $
 
 DISTNAME=		tcpdump-3.6.1
 CATEGORIES=		net
@@ -6,6 +6,7 @@ MASTER_SITES= 		http://www.tcpdump.org/release/
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.tcpdump.org/
+COMMENT=		network monitoring tool
 
 DEPENDS+=		libpcap>=0.6.1:../libpcap
 

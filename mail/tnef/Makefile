@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/27 21:56:32 jwise Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/18 16:08:50 rh Exp $
 #
 
 DISTNAME=	tnef-0.16
@@ -7,6 +7,7 @@ MASTER_SITES=	http://world.std.com/~damned/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://world.std.com/~damned/software.html
+COMMENT=	decode MS-TNEF MIME attachments
 
 GNU_CONFIGURE=	YES
 

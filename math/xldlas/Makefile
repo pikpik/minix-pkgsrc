@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/09/28 20:34:04 fredb Exp $
+# $NetBSD: Makefile,v 1.10 2001/01/12 12:21:04 dent Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/09/26 23:18:07 steve Exp
 #
 
@@ -11,6 +11,7 @@ EXTRACT_SUFX=		-source.tgz
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://sunsite.math.klte.hu/mirrors/xldlas/
+COMMENT=		XForms-based statistics package
 
 DEPENDS=		xforms>=0.88nb1:../../x11/xforms
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/23 23:14:29 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/11/17 07:36:33 rh Exp $
 #
 
 DISTNAME=	abs-src-0.8
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.ping.be/bertin/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ping.be/bertin/abs.shtml
+COMMENT=	Free spreadsheet with graphical user interface
 
 USE_XPM=	YES
 USE_X11BASE=	YES

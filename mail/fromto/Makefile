@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/03/12 17:40:14 bad Exp $
 #
 
 DISTNAME=	fromto-1.5
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.sra.co.jp/pub/lang/perl/sra-scripts/
 EXTRACT_SUFX=	#empty
 
 MAINTAINER=	bad@netbsd.org
+COMMENT=	Sendmail logfile viewer
 
 USE_PERL5=	yes
 NO_WRKSUBDIR=	yes

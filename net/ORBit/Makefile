@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2001/02/05 09:01:01 tron Exp $
+# $NetBSD: Makefile,v 1.47 2001/02/07 03:23:08 fredb Exp $
 #
 
 DISTNAME=		ORBit-0.5.6
@@ -7,6 +7,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/ORBit/}
 
 MAINTAINER=		wiz@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		high-performance CORBA ORB with support for the C language
 
 DEPENDS+=		glib>=1.2.7:../../devel/glib
 DEPENDS+=		gindent-*:../../devel/gindent

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/04/11 23:39:29 groo Exp $
 #
 
 DISTNAME=	drac
@@ -10,5 +10,6 @@ EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	groo@netbsd.org
 HOMEPAGE=	http://mail.cc.umanitoba.ca/drac/
+COMMENT=	Dynamic Relay Authorization Control
 
 .include "../../mk/bsd.pkg.mk"

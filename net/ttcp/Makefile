@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/01/13 12:37:25 tron Exp $
+# $NetBSD: Makefile,v 1.16 2001/01/27 11:29:48 enami Exp $
 
 DISTNAME=	ttcp
 PKGNAME=	${DISTNAME}-1.12
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	thorpej@netbsd.org
 HOMEPAGE=	http://www.ccci.com/tools/ttcp/
+COMMENT=	TCP testing and performance measuring tool
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/10 10:51:56 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:14 jlam Exp $
 #
 
 DISTNAME=       Mail-IMAPClient-1.07
@@ -7,6 +7,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	perl5 module for talking to RFC-2060 IMAP servers
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Mail/IMAPClient/.packlist

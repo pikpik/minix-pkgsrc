@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/01/26 05:21:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.19 2001/01/29 11:34:30 wiz Exp $
 
 DISTNAME=	exim-3.20
 CATEGORIES=	mail net
@@ -9,6 +9,7 @@ DISTFILES=	exim-3.20.tar.gz exim-html-3.20.tar.gz
 
 MAINTAINER=	ad@netbsd.org
 HOMEPAGE=	http://www.exim.org/
+COMMENT=	The Exim mail transfer agent, a replacement for sendmail
 
 USE_PERL5=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/02/04 06:10:23 itojun Exp $
+# $NetBSD: Makefile,v 1.15 2001/02/05 06:23:06 itojun Exp $
 
 DISTNAME=	snapshot-20010204
 PKGNAME=	postfix-20010204
@@ -11,6 +11,7 @@ PATCH_DIST_STRIP+=	-p1
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.postfix.org/
+COMMENT=	postfix smtp server and tools
 
 DIST_SUBDIR=	postfix
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/07/05 20:45:43 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/29 11:34:35 wiz Exp $
 #
 
 DISTNAME=	icsi-finger-1.0.27
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.icsi.berkeley.edu/pub/ai/stolcke/software/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	is@netbsd.org
+COMMENT=	Distributed finger service
 
 USE_X11=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/01/29 11:34:31 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2001/02/01 10:33:23 wiz Exp $
 
 DISTNAME=	sendmail.8.11.2
 PKGNAME=	sendmail-8.11.2
@@ -17,6 +17,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.sendmail.org/
+COMMENT=	The well known Mail Transport Agent
 
 LICENSE=	no-profit
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/16 15:43:29 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/16 16:23:06 rh Exp $
 #
 
 DISTNAME=	netsaint-plugins-1.2.8-4
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netsaintplug/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://netsaintplug.sourceforge.net/
+COMMENT=	basic monitoring plugins for netsaint
 
 DEPENDS+=	netsaint-base-*:../../net/netsaint-base
 .if !exists(/usr/bin/ssh)

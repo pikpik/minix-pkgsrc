@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/01/15 18:09:27 christos Exp $
+# $NetBSD: Makefile,v 1.6 2000/01/18 10:50:04 agc Exp $
 #
 
 DISTNAME=	freerdist-0.91
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.astron.com/pub/freerdist/
 
 MAINTAINER=	christos@netbsd.org
-#HOMEPAGE=
+COMMENT=	Network file distribution/synchronisation utility
 
 RDIST6_NAME=	rdist6
 

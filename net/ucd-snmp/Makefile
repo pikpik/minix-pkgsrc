@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/02/05 09:01:02 tron Exp $
+# $NetBSD: Makefile,v 1.29 2001/02/06 03:16:59 fredb Exp $
 # FreeBSD Id: Makefile,v 1.18 1998/04/06 20:50:31 andreas Exp
 #
 
@@ -15,6 +15,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/} \
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://net-snmp.sourceforge.net/
+COMMENT=	Extensible SNMP implementation
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 

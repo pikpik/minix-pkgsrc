@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2001/02/05 09:00:59 tron Exp $
+# $NetBSD: Makefile,v 1.83 2001/02/07 05:16:39 fredb Exp $
 #
 
 DISTNAME=       fetchmail-5.6.0
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/ \
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.tuxedo.org/~esr/fetchmail/
+COMMENT=	batch mail retrieval/forwarding utility for pop2, pop3, apop, imap
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 

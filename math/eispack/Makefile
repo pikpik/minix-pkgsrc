@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2000/12/01 01:48:25 jtb Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/02 00:23:50 jtb Exp $
 
 DISTNAME=		eispack-20001130
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		jtb@netbsd.org
+COMMENT=		Fortran routines for the solution of eigenvalue problems
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 WRKSRC=			${WRKDIR}/eispack

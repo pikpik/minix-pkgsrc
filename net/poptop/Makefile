@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/10/08 04:32:23 dbj Exp $
+# $NetBSD: Makefile,v 1.2 1999/11/24 10:33:01 agc Exp $
 
 DISTNAME=	pptpd-1.0.0
 PKGNAME=	poptop-1.0.0
@@ -8,6 +8,7 @@ EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	dbj@netbsd.org
 HOMEPAGE=	http://www.moretonbay.com/vpn/pptp.html
+COMMENT=	PPTP server which can support Microsoft VPN clients
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-libwrap

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2000/07/31 08:42:01 rh Exp $
+# $NetBSD: Makefile,v 1.25 2000/09/29 15:40:29 fredb Exp $
 #
 
 DISTNAME=		coda-5.3.5
@@ -9,6 +9,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		phil@cs.wwu.edu
 HOMEPAGE=		http://www.coda.cs.cmu.edu/
+COMMENT=		server programs for a replicated high-performance network file system
 
 DEPENDS+=		lwp>=1.1:../../devel/lwp
 DEPENDS+=		ncurses>=4.2:../../devel/ncurses

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/26 23:35:17 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/13 23:51:34 jtb Exp $
 
 DISTNAME=	calc-2.02f
 CATEGORIES=	math
@@ -6,6 +6,7 @@ MASTER_SITES=	${MASTER_SITE_GNU:=calc/}
 
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/calc/calc.html
+COMMENT=	Advanced Calculator for GNU Emacs
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/01/30 11:24:01 kleink Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/31 10:54:46 tron Exp $
 
 DISTNAME=	vtun-2.4
 CATEGORIES=	net
@@ -6,6 +6,7 @@ MASTER_SITES=	http://vtun.sourceforge.net/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://vtun.sourceforge.net/
+COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping, etc.
 
 DEPENDS+=	liblzo-1.*:../../archivers/liblzo
 

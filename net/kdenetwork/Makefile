@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2000/11/08 15:09:36 abs Exp $
+# $NetBSD: Makefile,v 1.53 2000/12/27 16:57:14 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/11/05 04:19:54 asami Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.kde.org/
+COMMENT=		Network modules for the KDE integrated X11 desktop
 
 DEPENDS=		gdbm>=1.7.3:../../databases/gdbm
 DEPENDS+=		uulib-0.5.13:../../converters/uulib

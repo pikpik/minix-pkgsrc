@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/09/03 12:40:50 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/29 11:34:35 wiz Exp $
 #
 
 DISTNAME=	dhid-4.0.1
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.dhis.org/pub/dhis/
 
 MAINTAINER=	hubertf
 HOMEPAGE=	http://www.dhis.org/
+COMMENT=	Dynamic Host Information System client daemon
 
 DEPENDS+=	gmp-[0-9]*:../../devel/gmp
 
