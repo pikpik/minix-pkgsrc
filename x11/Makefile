@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 1999/01/29 20:47:28 tron Exp $
+# $NetBSD: Makefile,v 1.78 1999/01/29 21:21:56 tron Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -110,7 +110,6 @@
     SUBDIR += xgas
     SUBDIR += xglobe
 #    SUBDIR += xgrab
-    SUBDIR += xinvest
     SUBDIR += xkeycaps
     SUBDIR += xless
 #    SUBDIR += xloadimage

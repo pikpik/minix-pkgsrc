@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 1998/08/24 01:00:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1998/12/26 16:03:00 garbled Exp $
 
 DISTNAME=		xinvest-2.5.1
-CATEGORIES=		x11
+CATEGORIES=		misc x11
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
