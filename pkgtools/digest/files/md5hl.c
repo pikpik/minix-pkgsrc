@@ -1,4 +1,4 @@
-/*	$NetBSD: md5hl.c,v 1.1.1.1 2002/09/19 10:44:29 agc Exp $	*/
+/*	$NetBSD: md5hl.c,v 1.3 2002/12/21 04:06:14 schmonz Exp $	*/
 
 /*
  * Written by Jason R. Thorpe <thorpej@netbsd.org>, April 29, 1997.
@@ -11,8 +11,6 @@
 
 #include <digest-types.h>
 
-#include <digest-types.h>
-
 #define	MDALGORITHM	MD5
 
 /* #include "namespace.h" */
@@ -22,7 +20,7 @@
 #define _DIAGASSERT(cond)	assert(cond)
 #endif
 
-/*	$NetBSD: md5hl.c,v 1.1.1.1 2002/09/19 10:44:29 agc Exp $	*/
+/*	$NetBSD: md5hl.c,v 1.3 2002/12/21 04:06:14 schmonz Exp $	*/
 
 /*
  * ----------------------------------------------------------------------------
