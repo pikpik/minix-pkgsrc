@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/06/20 02:36:24 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/12 19:27:05 cube Exp $
 
 DISTNAME=	ffmpeg-0.4.8
 PKGREVISION=	1
@@ -31,6 +31,8 @@ CONFIGURE_ARGS+=	--enable-pp --disable-vhook --disable-debug
 BUILD_DEFS+=		USE_MMX
 .  if !empty(USE_MMX:M[Yy][Ee][Ss]) && !empty(CC_VERSION:Mgcc*)
 CFLAGS+=	-fomit-frame-pointer
+.  else
+CONFIGURE_ARGS+=	--disable-mmx
 .  endif
 .else
 CONFIGURE_ARGS+=	--disable-mmx
