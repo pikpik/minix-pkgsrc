@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.2447 2004/11/25 15:07:32 wiz Exp $
+$NetBSD: TODO,v 1.2448 2004/11/25 15:13:55 adam Exp $
 
 Suggested new packages
 ======================
@@ -409,7 +409,6 @@ Suggested package updates
 	o cscope-15.5
 	o cstream-2.5
 	o cue-20041115
-	o cvs2cl-2.55
 	o cvsgraph-1.5.1
 	o cvsweb-3.0.4
 	o cwtext-0.94
