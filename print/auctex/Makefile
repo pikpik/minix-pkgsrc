@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.10 2003/01/11 10:02:03 uebayasi Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/28 22:04:00 jlam Exp $
 
 DISTNAME=		auctex-11.13
+PKGREVISION=		1
 CATEGORIES=		print
 MASTER_SITES=		http://savannah.nongnu.org/download/auctex/stable.pkg/11.13/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.nongnu.org/auctex/
 COMMENT=		Enhanced LaTeX mode for Emacs
-
-DEPENDS+=		teTeX-[0-9]*:../../print/teTeX
 
 USE_GMAKE=		yes
 USE_PKGINSTALL=		yes
