@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.133 2002/01/15 01:08:28 wiz Exp $
+# $NetBSD: Makefile,v 1.134 2002/01/27 15:28:46 taca Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -84,6 +84,7 @@ SUBDIR+=	par
 SUBDIR+=	php4-wddx
 SUBDIR+=	php4-xml
 SUBDIR+=	php4-xslt
+SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-dtml
 SUBDIR+=	pyxml
 SUBDIR+=	qsubst
