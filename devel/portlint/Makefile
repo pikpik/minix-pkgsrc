@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/05/05 14:39:39 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 1998/06/11 11:32:40 agc Exp $
 #
 
 DISTNAME=		portlint-1.64
@@ -18,8 +18,6 @@ NO_WRKSUBDIR=		yes
 NO_CONFIGURE=		yes
 
 MAKE_ENV=		PKGSRCDIR=${.CURDIR}/../..
-
-MAN1=			portlint.1
 
 do-build:
 	${SED} -e 's|@PREFIX@|${PREFIX}|g'		\
