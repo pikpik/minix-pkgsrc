@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.5 1998/11/24 00:31:07 hubertf Exp $
+$NetBSD$
 
---- Makeflags.orig	Mon Jul 14 20:32:13 1997
-+++ Makeflags	Mon Aug  3 00:50:27 1998
+--- Makeflags.orig	Mon Jul 14 14:32:13 1997
++++ Makeflags	Sun Jul 30 01:32:07 2000
 @@ -1,12 +1,42 @@
 +# This file contains the template for Makeflags
  
@@ -14,8 +14,8 @@ $NetBSD: patch-aa,v 1.5 1998/11/24 00:31:07 hubertf Exp $
 -INSTALL = install
 +LOGIC = netlogic
  
-+XPMINCLUDE = -I$(X11BASE)/include
-+XPMLINKDIR = -Wl,-R$(X11BASE)/lib -L$(X11BASE)/lib
++XPMINCLUDE = -I$(XPMDIR)/include
++XPMLINKDIR = -Wl,-R$(XPMDIR)/lib -L$(XPMDIR)/lib
 +
 +BINDIR = $(PREFIX)/bin
 +LIBDIR = $(PREFIX)/share/maelstrom
