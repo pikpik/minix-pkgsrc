@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/08/13 19:46:23 recht Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/14 18:13:50 recht Exp $
 #
 
 DISTNAME=	spread-src-3.17.1
@@ -18,6 +18,8 @@ USE_PKGINSTALL=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/spread
 MAKE_FLAGS=	LD="${CC}"
+
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 SPREAD_USER=	spread
 SPREAD_GROUP=	spread
