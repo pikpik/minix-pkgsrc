@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2002/09/20 11:16:06 jlam Exp $
+# $NetBSD: Makefile,v 1.52 2002/10/28 18:41:55 uebayasi Exp $
 #
 
 COMMENT=	communication programs
@@ -24,6 +24,7 @@ SUBDIR+=	gale
 SUBDIR+=	gnomeicu
 SUBDIR+=	goofey
 SUBDIR+=	gtkyahoo
+SUBDIR+=	i2cb
 SUBDIR+=	icb
 SUBDIR+=	icqlib
 SUBDIR+=	ircII
