@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.274 2005/01/08 12:56:09 minskim Exp $
+# $NetBSD: Makefile,v 1.275 2005/01/16 17:59:19 cube Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -68,6 +68,7 @@ SUBDIR+=	expatobjc
 SUBDIR+=	flyspell
 SUBDIR+=	fop
 SUBDIR+=	freepwing
+SUBDIR+=	gdome2
 SUBDIR+=	glimpse
 SUBDIR+=	gnome-spell
 SUBDIR+=	gocr
