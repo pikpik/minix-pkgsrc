@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 18:18:35 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:37 agc Exp $
 #
 
 DISTNAME=	bind-4.9.8-REL
 PKGNAME=	bind-4.9.8
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind/src/DEPRECATED/4.9.8/
 
