@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/07/09 05:37:43 jun Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/14 02:45:40 uebayasi Exp $
 
 DISTNAME=	semi-1.14.4
 CATEGORIES=	devel
@@ -8,8 +8,9 @@ MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://www.m17n.org/SEMI/
 COMMENT=	Emacs lisp library to provide MIME feature
 
-DEPENDS+=	apel-10.*:../../devel/apel
-DEPENDS+=	flim-1.*:../../devel/flim
+DEPENDS+=	${PKGNAME_PREFIX}apel-10.*:../../devel/apel
+DEPENDS+=	${PKGNAME_PREFIX}flim-1.*:../../devel/flim
+BUILD_DEPENDS+=	${PKGNAME_PREFIX}w3-*:../../www/w3
 
 .include "../../mk/emacs.mk"
 
