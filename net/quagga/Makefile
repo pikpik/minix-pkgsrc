@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/11/18 16:34:49 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/21 18:53:26 kristerw Exp $
 # Based on KAME Id: Makefile,v 1.1.2.1.2.1.10.2 1999/01/05 11:03:50 itojun Exp
 #
 
@@ -43,7 +43,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.vtysh
 CONFIGURE_ARGS+=	--disable-vtysh
 .endif
 
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 
 BUILD_DEFS+=		USE_INET6
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/30 14:50:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/11/03 10:09:50 cube Exp $
 
 DISTNAME=	freeradius-0.7
 CATEGORIES=	net
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.freeradius.org/
 COMMENT=	Free RADIUS server implementation
 
 CONFLICTS+=	radiusd-cistron*
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	yes
 USE_BUILDLINK2= YES
 USE_LIBTOOL=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/10/30 10:28:58 salo Exp $
+# $NetBSD: Makefile,v 1.19 2003/11/12 03:39:41 jschauma Exp $
 #
 
 DISTNAME=	ipv6calc-0.46
@@ -15,7 +15,7 @@ COMMENT=	Manipulates IPv6 adresses
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 MAKE_ENV+=	root=${PREFIX}
 INSTALL_TARGET=	installonly

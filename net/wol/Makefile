@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/08/09 11:16:23 seb Exp $
+# $NetBSD: Makefile,v 1.7 2003/08/28 20:05:21 xtraeme Exp $
 #
 
 DISTNAME=	wol-0.6.0
@@ -12,7 +12,7 @@ COMMENT=	Small Wake On Lan client
 
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_GNU_GETTEXT=	YES
 USE_PKGLOCALEDIR=	YES
 INFO_FILES=		wol.info

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 12:57:20 jmmv Exp $
 #
 
 DISTNAME=	tsocks-1.7
@@ -11,7 +11,7 @@ COMMENT=	Transparent SOCKS proxying library
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 CONFIGURE_ARGS+=	--with-conf=${PKG_SYSCONFDIR}/tsocks.conf
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:51:13 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:48 reed Exp $
 
 DISTNAME=	gnubile-0.20
 PKGREVISION=	4
@@ -10,7 +10,7 @@ HOMEPAGE=	http://gnutella.wego.com/
 COMMENT=	Unix Gnutella client for GNOME
 
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 CPPFLAGS+=	`xml-config --cflags`
 

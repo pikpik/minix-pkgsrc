@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/10 14:25:42 recht Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/14 21:42:40 jmmv Exp $
 #
 
 DISTNAME=		aMule-1.2.4
@@ -17,7 +17,7 @@ BUILD_USES_MSGFMT=	yes
 CONFLICTS=		xmule-[0-9]*
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes

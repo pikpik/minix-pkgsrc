@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/15 19:46:14 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2003/07/17 22:51:04 grant Exp $
 #
 
 DISTNAME=	dctc-0.85.4
@@ -14,7 +14,7 @@ GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
 CONFIGURE_ARGS+=	--enable-manual-db-detect
 USE_PERL5=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 CPPFLAGS+=	-I${BUILDLINK_PREFIX.db4}/include/db4
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/12/04 17:08:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.22 2003/12/14 19:43:50 jmmv Exp $
 #
 
 DISTNAME=		ORBit2-2.8.2
@@ -12,7 +12,7 @@ COMMENT=		High-performance CORBA ORB with C language support
 
 CONFLICTS=		linc>=1.1
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES

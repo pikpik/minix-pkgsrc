@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/21 17:11:09 martti Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:22:20 agc Exp $
 #
 
 DISTNAME=	sms-1.9.2d
@@ -12,7 +12,7 @@ COMMENT=	Send SMS to cellular phones in Poland (Plus, Idea, Era)
 
 WRKSRC=		${WRKDIR}/sms
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sms ${PREFIX}/bin

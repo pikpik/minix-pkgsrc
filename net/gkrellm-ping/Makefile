@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:48 reed Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:22:19 agc Exp $
 
 DISTNAME=	gkrellmPing-0.2-3
 PKGNAME=	gkrellm-ping-0.2.3
@@ -12,7 +12,7 @@ COMMENT=	gkrellm ping plugin
 
 WRKSRC=		${WRKDIR}/gkrellmPing
 USE_BUILDLINK2=	# defined
-USE_GMAKE=	# defined
+USE_GNU_TOOLS+=	make
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/gkrellm/plugins
