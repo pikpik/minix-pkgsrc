@@ -16,3 +16,12 @@ $NetBSD$
  
  let emit_symbol s =
    if String.length s >= 1 & s.[0] = '.'
+@@ -79,7 +78,7 @@
+ (* Output a label *)
+ 
+ let label_prefix =
+-  if Config.system = "solaris" || Config.system = "linux" then ".L" else "L"
++  if Config.system = "sunos" then "L" else ".L"
+ 
+ let emit_label lbl =
+   emit_string label_prefix; emit_int lbl

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2003/05/14 23:11:32 seb Exp $
+# $NetBSD: Makefile,v 1.17 2003/06/23 20:15:16 jtb Exp $
 #
 
 DISTNAME=	ocaml-3.06
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/cristal/ocaml/${DISTNAME}/
 
@@ -24,13 +24,15 @@ FIX_RPATH+=		OCAML_LDFLAGS
 
 ALL_TARGET=	world
 
+post-extract:
+	${CP} ${WRKSRC}/asmrun/power-elf.S ${WRKSRC}/asmrun/power-bsd.S
+
 post-build:
 	if ${TEST} ${MACHINE_ARCH} = 'i386' -o ${MACHINE_ARCH} = 'powerpc' \
 		-o ${MACHINE_ARCH} = 'sparc' ; then \
 		cd ${WRKSRC}; \
 		${GMAKE} opt; \
-		${GMAKE} ocamlc.opt; \
-		${GMAKE} ocamlopt.opt; \
+		${GMAKE} opt.opt; \
 	fi
 
 .include "../../mk/bsd.prefs.mk"

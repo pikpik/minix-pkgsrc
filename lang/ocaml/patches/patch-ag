@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- asmcomp/power/arch.ml.orig
++++ asmcomp/power/arch.ml
+@@ -91,6 +91,5 @@
+ let toc =
+   match Config.system with
+   | "aix" -> true
+-  | "elf" -> false
+-  | "rhapsody" -> false
++  | "elf" | "rhapsody" | "bsd" -> false
+   | _ -> Misc.fatal_error "wrong $(SYSTEM)"
