@@ -15,7 +15,7 @@ $NetBSD$
 -CFLAGS		+= $(READLINE:1=-DREADLINE)
 -LIBS		+= $(READLINE:1=-lreadline -lcurses)
 +CFLAGS		+= -DREADLINE
-+LIBS		+= -lreadline
++LIBS		+= -lreadline -ltermcap
  
 -prefix		= /usr/local
 +prefix		= ${PREFIX}
