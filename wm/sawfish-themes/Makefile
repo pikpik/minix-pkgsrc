@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/03/13 17:37:46 fredb Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/07 17:00:43 jschauma Exp $
 
 DISTNAME=		sawfish-themes-0.1
 CATEGORIES=		x11 wm
@@ -34,7 +34,7 @@ pre-fetch:
 
 # here's what we do:
 # - some themes contain .xvpics - let's clean those up
-#   (Solaris can only '­print' (not '-print0' or -'printx'), thus tmpfile
+#   (Solaris can only '-print' (not '-print0' or -'printx'), thus tmpfile
 # - create a PLIST
 # - dirrm directives need to be reversed in case of subdirs
 pre-install:
@@ -59,8 +59,8 @@ pre-install:
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${THEMES_DIR}
-	cd ${WRKDIR} && ${PAX} -s /^.\/[.].*// 				\
-		-s /^.\/PLIST// -rw . ${PREFIX}/${THEMES_DIR}
+	cd ${WRKDIR} && ${PAX} -s ,^./[.].*,,				\
+		-s ,^./PLIST,, -rw . ${PREFIX}/${THEMES_DIR}
 
 .include "files/themes.sawfish"
 .include "../../mk/bsd.pkg.mk"
