@@ -9,9 +9,8 @@ MASTER_SITES=	http://www.ping.be/bertin/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ping.be/bertin/abs.shtml
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_X11BASE=	yes
+USE_X11BASE=	YES
+USE_XPM=	YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/abs ${PREFIX}/bin

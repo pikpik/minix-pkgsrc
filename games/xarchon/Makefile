@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/07/14 16:04:22 agc Exp $
+# $NetBSD: Makefile,v 1.14 2000/07/15 20:39:19 agc Exp $
 #
 
 DISTNAME=	xarchon-0.50
@@ -9,11 +9,11 @@ MASTER_SITES=	http://xarchon.seul.org/ \
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://xarchon.seul.org/
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 DEPENDS+=	esound-*:../../audio/esound
 
-GNU_CONFIGURE=	yes
+USE_XPM=	YES
+GNU_CONFIGURE=	YES
 EVAL_PREFIX+=	GTKDIR=gtk+ XPMDIR=xpm
 CONFIGURE_ARGS+=--with-xpm-prefix=${XPMDIR} \
 		--with-gtk-prefix=${GTKDIR} \

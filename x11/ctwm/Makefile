@@ -8,8 +8,7 @@ MASTER_SITES=	ftp://slhp1.epfl.ch/pub/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://woland.afti.nsu.ru/~reberger/xwinman/ctwm.html
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_IMAKE=	yes
+USE_IMAKE=	YES
+USE_XPM=	YES
 
 .include "../../mk/bsd.pkg.mk"

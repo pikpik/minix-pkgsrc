@@ -9,9 +9,9 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/pixmap/}
 
 MAINTAINER=		packages@netbsd.org
 
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
+USE_IMAKE=		YES
+USE_XPM=		YES
 
 WRKSRC=			${WRKDIR}/pixmap
-USE_IMAKE=		yes
 
 .include "../../mk/bsd.pkg.mk"

@@ -7,9 +7,9 @@ MASTER_SITES=   ${MASTER_SITE_XCONTRIB:=applications/}
 
 MAINTAINER=	bouyer@netbsd.org
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
 USE_IMAKE=	YES
+USE_XPM=	YES
+
 MAKE_ENV+=	INSTALL_PROGRAM='${INSTALL_PROGRAM}'
 MAKE_ENV+=	INSTALL_MAN='${INSTALL_MAN}'
 

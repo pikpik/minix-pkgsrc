@@ -9,9 +9,8 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB:=utilities/}
 
 MAINTAINER=		packages@netbsd.org
 
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
-
-USE_IMAKE=		yes
-USE_GMAKE=		yes
+USE_IMAKE=		YES
+USE_GMAKE=		YES
+USE_XPM=		YES
 
 .include "../../mk/bsd.pkg.mk"

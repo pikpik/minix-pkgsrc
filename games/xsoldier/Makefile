@@ -8,10 +8,9 @@ MASTER_SITES=		http://www.surfline.ne.jp/hachi/xsoldier/
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.surfline.ne.jp/hachi/xsoldier.html
 
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
-
-USE_IMAKE=		yes
-NO_INSTALL_MANPAGES=	yes
+USE_IMAKE=		YES
+USE_XPM=		YES
+NO_INSTALL_MANPAGES=	YES
 
 post-patch:
 	${TOUCH} ${WRKSRC}/xsoldier.man

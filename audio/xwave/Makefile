@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/04/06 02:14:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2000/04/24 14:52:33 hubertf Exp $
 #
 
 DISTNAME=		xwave2
@@ -8,9 +8,8 @@ MASTER_SITES=		http://www.funet.fi/~kouhia/
 
 MAINTAINER=		hubertf@netbsd.org
 
-DEPENDS+=		xpm-3.*:../../graphics/xpm
-
-USE_IMAKE=		yes
+USE_IMAKE=		YES
+USE_XPM=		YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/xwave ${PREFIX}/bin

@@ -8,9 +8,8 @@ MASTER_SITES=		ftp://ftp.afterstep.org/pub/
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.afterstep.org/
 
-DEPENDS=		xpm-3.4k:../../graphics/xpm
-
-USE_X11BASE=		yes
+USE_X11BASE=		YES
+USE_XPM=		YES
 
 do-configure:
 	(cd ${WRKSRC} ; xmkmf ; ${MAKE} Makefiles)

@@ -9,10 +9,9 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.xbill.org/
 
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
-
-NO_INSTALL_MANPAGES=	yes
-USE_IMAKE=		yes
+USE_IMAKE=		YES
+USE_XPM=		YES
+NO_INSTALL_MANPAGES=	YES
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/xbill.man ${PREFIX}/man/man6/xbill.6

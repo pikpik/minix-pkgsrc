@@ -9,9 +9,8 @@ MASTER_SITES=	http://www.asclock.org/tar/
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.asclock.org/
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_IMAKE=	yes
+USE_IMAKE=	YES
+USE_XPM=	YES
 
 LANGUAGES=	en de pt nl no it sv es hu br fr cs ru uk sl id da
 

@@ -10,11 +10,10 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=libs/X/}
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.zip.com.au/~bb/XawXpm/
 
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
-
 CONFLICTS=		Xaw3d-*
 
-USE_IMAKE=		yes
+USE_IMAKE=		YES
+USE_XPM=		YES
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/Xaw-Xpm

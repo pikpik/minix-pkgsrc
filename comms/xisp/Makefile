@@ -12,9 +12,9 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://users.hol.gr/~dbouras/
 
 DEPENDS+=		xforms-0.88:../../x11/xforms
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
-USE_X11BASE=		yes
+USE_X11BASE=		YES
+USE_XPM=		YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xisp

@@ -9,8 +9,7 @@ MASTER_SITES=	ftp://ftp.babafou.eu.org/pub/babafou/ \
 MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://www.spinne.com/x/games/xdemineur/
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_IMAKE=	yes
+USE_IMAKE=	YES
+USE_XPM=	YES
 
 .include "../../mk/bsd.pkg.mk"

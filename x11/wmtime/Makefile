@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/05/28 15:00:34 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2000/07/31 13:28:14 ad Exp $
 
 DISTNAME=	wmtime-1.0b2
 CATEGORIES=	x11
@@ -6,11 +6,11 @@ MASTER_SITES=	http://www.netbsd.org/~ad/distfiles/
 
 MAINTAINER=	ad@netbsd.org
 
-DEPENDS=	xpm-3.4k:../../graphics/xpm
+USE_IMAKE=	YES
+USE_XPM=	YES
 
-USE_IMAKE=	yes
-NO_INSTALL_MANPAGES=	1
-WRKSRC=		${WRKDIR}/wmtime.app/wmtime
+NO_INSTALL_MANPAGES=	YES
+WRKSRC=			${WRKDIR}/wmtime.app/wmtime
 
 post-extract:
 	${CP} ${WRKSRC}/../Imakefile ${WRKSRC}/Imakefile

@@ -8,9 +8,8 @@ MASTER_SITES=	http://bohemians.org/~iznogood/xbeats/
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://bohemians.org/~iznogood/
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_X11=	yes
-GNU_CONFIGURE=	yes
+USE_X11=	YES
+USE_XPM=	YES
+GNU_CONFIGURE=	YES
 
 .include "../../mk/bsd.pkg.mk"

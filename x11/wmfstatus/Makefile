@@ -1,5 +1,4 @@
 # $NetBSD$
-#
 
 DISTNAME=	wmfstatus-0.3
 CATEGORIES=	x11
@@ -8,9 +7,8 @@ MASTER_SITES=	http://www.finik.net/files/
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://www.finik.net/software.html
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
-USE_X11=	yes
+USE_X11=	YES
+USE_XPM=	YES
 
 CPPFLAGS=	-I${X11BASE}/include
 MAKE_ENV+=	CPPFLAGS="${CPPFLAGS}"

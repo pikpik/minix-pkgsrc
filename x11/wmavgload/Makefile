@@ -6,9 +6,9 @@ MASTER_SITES=	ftp://ftp.windowmaker.org/pub/contrib/srcs/utils/
 
 MAINTAINER=	ad@netbsd.org
 
-DEPENDS=	xpm-3.4k:../../graphics/xpm
+USE_IMAKE=      	YES
+USE_XPM=		YES
 
-USE_IMAKE=      	yes
-NO_INSTALL_MANPAGES=	yes
+NO_INSTALL_MANPAGES=	YES
 
 .include <../../mk/bsd.pkg.mk>

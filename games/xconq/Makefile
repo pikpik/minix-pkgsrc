@@ -1,5 +1,4 @@
 # $NetBSD$
-#
 
 DISTNAME=		xconq-7.2.2
 CATEGORIES=		games x11
@@ -8,10 +7,9 @@ MASTER_SITES=		ftp://sourceware.cygnus.com/pub/xconq/
 MAINTAINER=		kleink@netbsd.org
 HOMEPAGE=		http://sourceware.cygnus.com/xconq/
 
-DEPENDS=		xpm-3.4k:../../graphics/xpm
-
-USE_X11BASE=		yes
-GNU_CONFIGURE=		yes
+USE_X11BASE=		YES
+USE_XPM=		YES
+GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-xpm
 
 INFO_FILES=     	xcdesign.info xconq.info

@@ -12,7 +12,8 @@ DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 NOT_FOR_PLATFORM=	*-*-alpha	# suspected LP64 bugs
 
-GNU_CONFIGURE=		yes
-USE_X11=		yes
+GNU_CONFIGURE=		YES
+USE_X11=		YES
+USE_XPM=		YES
 
 .include "../../mk/bsd.pkg.mk"

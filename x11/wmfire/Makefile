@@ -7,9 +7,8 @@ MASTER_SITES=	http://www.zebra.net/~dm/wmfire/
 
 MAINTAINER=	hubertf@netbsd.org
 
-DEPENDS+=	xpm-3.4k:../../graphics/xpm
-
 USE_X11=	YES
+USE_XPM=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	CPPFLAGS=-I${X11BASE}/include
 
