@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/bww2tex
+man/man1/bww2tex.1
