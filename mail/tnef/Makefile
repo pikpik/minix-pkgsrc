@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/13 13:52:28 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:47:08 grant Exp $
 #
 
 DISTNAME=	tnef-1.2.0
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tnef/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://world.std.com/~damned/software.html
-COMMENT=	decode MS-TNEF MIME attachments
+COMMENT=	Decode MS-TNEF MIME attachments
 
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES

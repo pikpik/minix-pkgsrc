@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2002/09/23 10:10:51 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2003/03/01 21:12:52 pooka Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
 
 PKGNAME=		nethack-x11-${NETHACK_VERSION}
-COMMENT=		the X11 version of NetHack
+COMMENT=		The X11 version of NetHack
 
 CATEGORIES+=		x11
 

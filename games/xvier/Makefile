@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/06/18 18:33:46 agc Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:39:49 grant Exp $
 
 DISTNAME=	xvier
 PKGNAME=	xvier-1.0
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=
-COMMENT=	four-in-a-row game
+COMMENT=	Four-in-a-row game
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_IMAKE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:19:27 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:41:00 grant Exp $
 #
 
 DISTNAME=	libmng-1.0.5
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.3-t.com/libmng/download/ \
 
 MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	
-COMMENT=	simple GTK-based MNG viewer
+COMMENT=	Simple GTK-based MNG viewer
 
 USE_BUILDLINK2=	YES
 MAKE_ENV+=	LIBMNG_PREFIX=${BUILDLINK_PREFIX.mng:Q}

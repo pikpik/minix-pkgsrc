@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/06/11 06:34:44 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:48:45 grant Exp $
 # FreeBSD Id: Makefile,v 1.6 1996/11/17 09:05:15 obrien Exp
 
 DISTNAME=       buffer-1.17
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.gwdg.de/pub/linux/jurix/source/system/backup/ \
 		ftp://ftp.fu-berlin.de/unix/linux/mirrors/jurix.jura.uni-sb.de/source/system/backup/
 
 MAINTAINER=	tron@NetBSD.org
-COMMENT=	buffer sporadic binary I/O for faster tape use
+COMMENT=	Buffer sporadic binary I/O for faster tape use
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 01:19:12 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:43:02 grant Exp $
 #
 
 DISTNAME=	w32codec-0.90pre7
@@ -12,7 +12,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} qt6dlls.tar.bz2 dmocodecs.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://mplayerhq.hu/MPlayer/releases/codecs/
-COMMENT=	huge compilation of Win32 binary codecs
+COMMENT=	Huge compilation of Win32 binary codecs
 
 SITES_qt6dlls.tar.bz2=	http://www.mplayerhq.hu/~alex/codecs/
 SITES_dmocodecs.tar.bz2=	ftp://mplayerhq.hu/MPlayer/releases/codecs/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/06 12:03:13 rh Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:48:32 grant Exp $
 
 DISTNAME=	gnome-2.2.4
 CATEGORIES=	meta-pkgs x11 gnome
@@ -7,7 +7,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
-COMMENT=	meta-package for the GNU Network Object Model Environment
+COMMENT=	Meta-package for the GNU Network Object Model Environment
 
 DEPENDS+=	balsa>=2.0.10:../../mail/balsa2
 DEPENDS+=	eog>=2.2.0nb3:../../graphics/eog2

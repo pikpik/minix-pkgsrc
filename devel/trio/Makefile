@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/06/02 01:20:12 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:34:13 grant Exp $
 #
 
 DISTNAME=	trio-1.3
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.contactor.se/~dast/stuff/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.contactor.se/~dast/trio/
-COMMENT=	fully matured and stable set of printf and string functions
+COMMENT=	Fully matured and stable set of printf and string functions
 
 post-patch:
 	${SED} "s,^CFLAGS,#CFLAGS,g" ${WRKSRC}/Makefile			\

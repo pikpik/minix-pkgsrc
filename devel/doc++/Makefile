@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/10 07:37:19 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:30:20 grant Exp $
 
 DISTNAME=		doc++-3.4.9
 CATEGORIES=		devel
@@ -6,7 +6,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=docpp/}
 
 MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://docpp.sourceforge.net/
-COMMENT=		documentation system for C, C++ and Java
+COMMENT=		Documentation system for C, C++ and Java
 
 USE_GMAKE=		yes
 USE_BUILDLINK2=		yes

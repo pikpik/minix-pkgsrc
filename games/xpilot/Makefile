@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/01/09 15:57:35 mycroft Exp $
+# $NetBSD: Makefile,v 1.8 2003/02/26 04:07:50 jschauma Exp $
 #
 
 DISTNAME=	xpilot-4.5.4
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.xpilot.org/
-COMMENT=	networked space battles for X11
+COMMENT=	Networked space battles for X11
 
 USE_IMAKE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/23 22:27:05 seb Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:33:01 grant Exp $
 #
 
 DISTNAME=	pcl-cvs-2.9.9
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://rum.cs.yale.edu/pub/monnier/pcl-cvs/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=
-COMMENT=	front-end to CVS for emacs
+COMMENT=	Front-end to CVS for emacs
 
 DEPENDS+=	${PKGNAME_PREFIX}elib>=1.0:../../devel/elib
 

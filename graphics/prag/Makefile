@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/01/27 18:32:34 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:20 jmmv Exp $
 
 DISTNAME=	prag-1.0pl2
 PKGNAME=	prag-1.0.2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.kohala.com/start/troff/
 EXTRACT_SUFX=	.shar
 
 MAINTAINER=	itojun@kame.net
-COMMENT=	replacement to "grap" graph generator backend to pic
+COMMENT=	Replacement to "grap" graph generator backend to pic
 
 NO_BUILD=	yes
 

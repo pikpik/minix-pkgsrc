@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/07/13 13:51:42 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:37:55 grant Exp $
 #
 
 DISTNAME=		bomberclone-0.9.9
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://bomberclone.sourceforge.net/
-COMMENT=		multi-player Bomberman clone
+COMMENT=		Multi-player Bomberman clone
 
 DEPENDS+=		bomberclone-data>=0.7:../../games/bomberclone-data
 

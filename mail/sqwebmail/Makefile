@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2002/10/08 23:16:01 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/01/28 22:03:40 jlam Exp $
 
 DISTNAME=	sqwebmail-3.3.1
 CATEGORIES=	www
-COMMENT=	webmail CGI for access to local Maildir-style mailboxes
+COMMENT=	Webmail CGI for access to local Maildir-style mailboxes
 HOMEPAGE=	http://www.inter7.com/sqwebmail/
 
 DEPENDS+=	courier-auth>=0.37.1nb1:../../mail/courier-auth

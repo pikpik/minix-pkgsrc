@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:19:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:42:06 grant Exp $
 #
 
 DISTNAME=	Image-Info-1.12
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Image/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/Image-Info/
-COMMENT=	perl module to extract meta information from images
+COMMENT=	Perl module to extract meta information from images
 
 DEPENDS+=	p5-IO-String>=1.01:../../devel/p5-IO-String
 

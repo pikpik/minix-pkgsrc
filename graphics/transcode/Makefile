@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/13 13:52:17 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:42:53 grant Exp $
 
 DISTNAME=	transcode-0.6.7
 PKGREVISION=	1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.zebra.fh-weingarten.de/~transcode/pre/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.theorie.physik.uni-goettingen.de/~ostreich/transcode/
-COMMENT=	command line video-stream processing tool
+COMMENT=	Command line video-stream processing tool
 
 BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 

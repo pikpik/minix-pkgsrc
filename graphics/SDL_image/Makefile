@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/05 13:29:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/19 08:54:32 wiz Exp $
 #
 
 DISTNAME=		SDL_image-1.2.2
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.libsdl.org/projects/SDL_image/release/
 
 MAINTAINER=		collver1@comcast.net
 HOMEPAGE=		http://www.libsdl.org/projects/SDL_image/
-COMMENT=		load images as SDL surfaces
+COMMENT=		Load images as SDL surfaces
 
 CONFLICTS=		SDL-image-[0-9]*
 

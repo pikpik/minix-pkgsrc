@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:20:31 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:32:26 grant Exp $
 #
 
 DISTNAME=	File-Temp-0.12
@@ -8,7 +8,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-COMMENT=	provides functions for generating temporary files
+COMMENT=	Provides functions for generating temporary files
 
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/File/Temp/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:08:57 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/17 21:48:52 grant Exp $
 #
 
 DISTNAME=	cuecat-0.2.1
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://opensource.lineo.com/drivers/ \
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://opensource.lineo.com/cuecat/cuecat_driver/
-COMMENT=	read and parse barcodes from your CueCat barcode reader
+COMMENT=	Read and parse barcodes from your CueCat barcode reader
 
 NO_SOURCE_ON_FTP=	Hardware manufacturer claims intellectual property infringement.
 NO_SOURCE_ON_CDROM=	${NO_SOURCE_ON_FTP}

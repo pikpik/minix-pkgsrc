@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:43:42 grant Exp $
 #
 
 DISTNAME=	libtabe-0.2.5
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/devel/
 
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://libtabe.sourceforge.net/
-COMMENT=	library for Chinese language processing
+COMMENT=	Library for Chinese language processing
 
 USE_BUILDLINK2=		# defined
 USE_X11=		# defined

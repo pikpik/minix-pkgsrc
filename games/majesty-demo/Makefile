@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/19 16:44:07 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:39:01 grant Exp $
 #
 
 DISTNAME=	majesty_demo
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.run
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://majesty.linuxgamepublishing.com/
-COMMENT=	fantasy kingdom simulation (demo)
+COMMENT=	Fantasy kingdom simulation (demo)
 
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 			${GZCAT} | ${PAX} -O -r

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/03 18:41:28 jschauma Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:40:13 grant Exp $
 #
 
 DISTNAME=		blender-2.27
@@ -10,7 +10,7 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=		jschauma@NetBSD.org
 HOMEPAGE=		http://www.blender.org/
-COMMENT=		fully integrated 3D graphics creation suite
+COMMENT=		Fully integrated 3D graphics creation suite
 
 USE_X11=		YES
 HAS_CONFIGURE=		YES

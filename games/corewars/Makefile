@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:51:42 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:38:06 grant Exp $
 #
 
 DISTNAME=	corewars-0.9.11
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=corewars/}
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://corewars.sourceforge.net/
-COMMENT=	programs on a virtual machine, fighting each other
+COMMENT=	Programs on a virtual machine, fighting each other
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES

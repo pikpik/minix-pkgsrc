@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:51:49 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:38:49 grant Exp $
 #
 
 DISTNAME=	icebreaker-1.9.7
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.mattdm.org/icebreaker/
-COMMENT=	penguin capturing simulation
+COMMENT=	Penguin capturing simulation
 
 USE_BUILDLINK2=	yes
 USE_GMAKE=	yes

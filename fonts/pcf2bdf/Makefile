@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:58 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:37:35 grant Exp $
 #
 
 DISTNAME=	pcf2bdf-1.04
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.tsg.ne.jp/GANA/S/pcf2bdf/
-COMMENT=	convert X font from PCF to BDF
+COMMENT=	Convert X font from PCF to BDF
 
 USE_GMAKE=	YES
 MAKEFILE=	Makefile.gcc

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/03 14:35:23 wiz Exp $
 #
 
 DISTNAME=	dosbox-0.58
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dosbox/}
 
 MAINTAINER=	cube@cubidou.net
 HOMEPAGE=	http://dosbox.sourceforge.net/
-COMMENT=	multi-platform DOS emulator using SDL
+COMMENT=	Multi-platform DOS emulator using SDL
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES

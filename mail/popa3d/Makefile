@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/04/15 08:28:19 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2003/07/17 21:46:48 grant Exp $
 #
 
 DISTNAME=	popa3d-0.6.3
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.openwall.com/popa3d/ \
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.openwall.com/popa3d/
-COMMENT=	secure, reliable, performant, and small pop3 server
+COMMENT=	Secure, reliable, performant, and small pop3 server
 
 POPA3D_USER?=	popa3d
 POPA3D_GROUP?=	popa3d

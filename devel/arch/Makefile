@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/06/17 08:18:37 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:29:28 grant Exp $
 #
 
 DISTNAME=	arch1.0pre25
@@ -9,7 +9,7 @@ MASTER_SITES=	http://regexps.srparish.net/src/arch/
 
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://arch.fifthvision.net/bin/view/Arch/WebHome
-COMMENT=	revision control system ideal for widely distributed development
+COMMENT=	Revision control system ideal for widely distributed development
 
 USE_GMAKE=	# defined
 

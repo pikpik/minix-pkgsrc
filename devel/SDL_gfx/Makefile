@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/02 11:54:18 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/19 08:54:28 wiz Exp $
 #
 
 DISTNAME=	SDL_gfx-2.0.3
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.ferzkopp.net/Software/SDL_gfx-2.0/
 
 MAINTAINER=	collver1@comcast.net
 HOMEPAGE=	http://www.ferzkopp.net/Software/SDL_gfx-2.0/
-COMMENT=	basic drawing routines for SDL
+COMMENT=	Basic drawing routines for SDL
 
 USE_BUILDLINK2=		YES
 USE_X11=		YES

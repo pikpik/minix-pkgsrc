@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2003/06/07 17:39:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/03 15:32:35 seb Exp $
 #
 
 DISTNAME=		gnuplot-3.7.3
@@ -11,7 +11,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gnuplot/} \
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://sourceforge.net/projects/gnuplot/
-COMMENT=		gnuplot is a nice plotting utility
+COMMENT=		Gnuplot is a nice plotting utility
 
 CONFLICTS+=		gnuplot-[0-9]*
 

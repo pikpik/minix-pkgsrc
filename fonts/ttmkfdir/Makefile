@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:19:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:37:42 grant Exp $
 #
 
 DISTNAME=	ttmkfdir
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.joerg-pommnitz.de/TrueType/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.joerg-pommnitz.de/TrueType/xfsft.html
-COMMENT=	tool that creates a fonts.scale file
+COMMENT=	Tool that creates a fonts.scale file
 
 USE_BUILDLINK2=	yes
 

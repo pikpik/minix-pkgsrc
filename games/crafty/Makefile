@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/03/29 12:41:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2003/07/17 21:38:07 grant Exp $
 
 DISTNAME=		crafty-18.15
 WRKSRC=			${WRKDIR}
@@ -10,7 +10,7 @@ DISTFILES=		${CRAFTY_DISTFILES}
 DISTFILES+=		${CRAFTY_STARTPGN} ${CRAFTY_DOCFILES}
 
 MAINTAINER=		jlam@NetBSD.org
-COMMENT=		chess engine
+COMMENT=		Chess engine
 
 USE_BUILDLINK2=		YES
 
