@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/21 14:56:44 darcy Exp $
 #
 
-DISTNAME=	generate-2.0
+DISTNAME=	generate-2.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.druid.net/pub/distrib/
 EXTRACT_SUFX=	.tgz
