@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- libnautilus-private/nautilus-emblem-utils.c.orig   Sun Feb  1 13:22:13 2004
++++ libnautilus-private/nautilus-emblem-utils.c        Sun Feb  1 13:22:46 2004
+@@ -23,7 +23,9 @@
+ */
+ 
+ #include <config.h>
+-
++#ifdef __FreeBSD__
++#include <sys/types.h>
++#endif
+ #include <utime.h>
+ #include <stdio.h>
+ #include <time.h>
