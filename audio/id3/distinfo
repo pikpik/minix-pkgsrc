@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.4 2001/08/10 10:37:45 drochner Exp $
+
+SHA1 (id3_0.12.orig.tar.gz) = 6e74313f56214a73ef8b54edabd698444e07080f
+Size (id3_0.12.orig.tar.gz) = 12492 bytes
+SHA1 (patch-aa) = bdc5f4ffb461e65657d56b878ae4545121b4be15
