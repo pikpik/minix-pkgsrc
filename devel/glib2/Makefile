@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/02/13 19:12:14 recht Exp $
+# $NetBSD: Makefile,v 1.67 2005/03/02 15:38:08 wiz Exp $
 
 DISTNAME=		glib-2.6.3
 PKGNAME=		${DISTNAME:S/glib/glib2/}
@@ -23,9 +23,15 @@ USE_PERL5=		yes
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
 
-PKGCONFIG_OVERRIDE=	glib-2.0.pc.in
+PKGCONFIG_OVERRIDE=	glib-2.0-uninstalled.pc.in
+PKGCONFIG_OVERRIDE+=	glib-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	gmodule-2.0-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	gmodule-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	gmodule-export-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	gmodule-no-export-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	gobject-2.0-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	gobject-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	gthread-2.0-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	gthread-2.0.pc.in
 
 GNU_CONFIGURE=		# defined
