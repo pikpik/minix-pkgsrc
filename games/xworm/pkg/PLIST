@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xworm
 share/xworm/xworm.font
 share/xworm/xworm.grid
