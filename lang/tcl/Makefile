@@ -48,6 +48,10 @@ CONFIGURE_ENV+=		TCL_PACKAGE_PATH="${VIEWBASE}/lib/tcl"
 .endif
 .endif
 
+.if !empty(ABI) && ${ABI} == "64"
+CONFIGURE_ARGS+=	--enable-64bit
+.endif
+
 post-install:
 	cd ${WRKDIR} && ${PAX} -rwpm man ${PREFIX}
 	${RM} -rf ${WRKDIR}/man
