@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ../libipsec/key_debug.c-	Sat Jul 12 18:49:46 2003
 +++ ../libipsec/key_debug.c	Sat Jul 12 18:50:25 2003
 @@ -80,7 +80,9 @@
