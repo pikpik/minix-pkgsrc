@@ -3,11 +3,8 @@
 
 NO_MTREE=		YES
 
-PKGNAME=		${DISTNAME:C|-.*||}-standalone${DISTNAME:C|[^-]*||}
+PKGNAME=		standalone-${DISTNAME}
 WRKSRC=			${WRKDIR}/${DISTNAME}
-
-# this package used to be called 'standalone-tcsh'
-CONFLICTS+=		standalone-tcsh-[0-9]*
 
 PKG_SHELL=		/bin/tcsh
 

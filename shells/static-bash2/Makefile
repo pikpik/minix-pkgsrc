@@ -6,12 +6,11 @@ PATCHDIR=		${.CURDIR}/../../shells/bash2/patches
 PKGDIR=			${.CURDIR}/../../shells/bash2
 
 CONFLICTS=		bash-[0-9]*
-CONFLICTS+=		static-bash-[0-9]*
 
 .include "../../shells/bash2/Makefile"
 
 WRKSRC:=		${WRKDIR}/${DISTNAME}
-PKGNAME:=		${PKGBASE}-static-${PKGVERSION}
+PKGNAME:=		static-${DISTNAME}
 COMMENT:=		Statically-linked version of the ${COMMENT}
 
 LDFLAGS+=		-static

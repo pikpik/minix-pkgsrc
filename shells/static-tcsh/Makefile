@@ -6,12 +6,11 @@ PATCHDIR=		${.CURDIR}/../../shells/tcsh/patches
 PKGDIR=			${.CURDIR}/../../shells/tcsh
 
 CONFLICTS=		tcsh-[0-9]*
-CONFLICTS+=		static-tcsh-[0-9]*
 
 .include "../../shells/tcsh/Makefile"
 
 WRKSRC:=		${WRKDIR}/${DISTNAME}
-PKGNAME:=		${DISTNAME:C|-.*||}-static${DISTNAME:C|[^-]*||}
+PKGNAME:=		static-${DISTNAME}
 COMMENT:=		Statically-linked version of the ${COMMENT}
 
 LDFLAGS+=		-static
