@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/12/01 15:41:09 adam Exp $
+# $NetBSD: Makefile,v 1.39 2004/12/03 15:14:55 wiz Exp $
 
 DISTNAME=	pwlib-v1_8_3-src
 PKGNAME=	pwlib-1.8.3
@@ -23,8 +23,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-sasl --disable-openldap
 CONFIGURE_ARGS+=	--disable-expat --disable-video --disable-qos
 PTHREAD_OPTS+=		require
-
-GCC_REQD=		3.0
 
 BUILD_TARGET=		opt
 MAKE_ENV+=		PWLIBDIR="${WRKSRC}" CC="${CC}" CPLUS="${CXX}"
