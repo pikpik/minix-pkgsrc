@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/26 02:27:57 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/11 05:18:59 snj Exp $
 
 DISTNAME=	SVN-Web-0.35
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	perl5 www
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=OurNet/CLKAO/}
 
-MAINTAINER=	epg@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Unstable snapshot of Subversion repository browser
 
 DEPENDS+=	p5-subversion>=0.32.1:../../devel/p5-subversion

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:28 tv Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/15 14:50:06 tv Exp $
 
 DISTNAME=	guile-fcgi-0.1
 PKGREVISION=	5
 CATEGORIES=	devel www
 MASTER_SITES=	http://www.bgu.ru/%7Edsa/
 
-MAINTAINER=	epg@pretzelnet.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.bgu.ru/%7Edsa/guilefcgi.html
 COMMENT=	Guile interface to FastCGI
 
