@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/03/28 00:35:25 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/04/07 18:43:22 hubertf Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
 
-DEPENDS+=		freeciv-share-1.10.0:../../games/freeciv-share
+DEPENDS+=		freeciv-share-${FC_VERS}:../../games/freeciv-share
+DEPENDS+=		gettext>=0.10.35nb1:../../devel/gettext
 DEPENDS+=		xpm-*:../../graphics/xpm
 
 CONFLICTS=		freeciv-client-gtk-*
@@ -12,8 +13,10 @@ USE_X11=		# defined
 
 .include "../../mk/bsd.prefs.mk"
 
-CONFIGURE_ARGS+=	--disable-server --disable-make-data
+CONFIGURE_ARGS+=	--disable-server
+CONFIGURE_ARGS+=	--disable-make-data
 CONFIGURE_ARGS+=	--enable-client=xaw
+CPPFLAGS+=		-I${LOCALBASE}/include
 
 .if defined(XAW_TYPE) && (${XAW_TYPE} == "3d")
 CONFIGURE_ARGS+=	--with-xaw3d
