@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/08/18 22:46:46 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2000/09/25 14:29:11 is Exp $
 
 DISTNAME=	glunix-release-1-0a
 PKGNAME=	glunix-1.0a
@@ -10,7 +10,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} makedepend${EXTRACT_SUFX}
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://now.cs.berkeley.edu/Glunix/glunix.html
 
+.if !exists(/usr/bin/ssh)                 
 DEPENDS+=	{openssh-*,ssh{,6}-1.2.27}:../../security/ssh
+.endif
 
 USE_GMAKE=	yes
 USE_PERL5=	yes
