@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/21 14:37:06 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/21 23:28:57 hubertf Exp $
 #
 
 DISTNAME=		htdocs-share-20041021
@@ -25,7 +25,7 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 DOCDIR=			${PREFIX}/share/doc/pkgsrc
 
 BUILD_DEFS+=		OUTPUTS
-OUTPUTS?=		html html-split ascii
+OUTPUTS?=		html html-split ascii pdf
 
 # the html is needed to build the ascii version.
 .if !empty(OUTPUTS:Mascii)
