@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/09/19 22:07:22 kim Exp $
+# $NetBSD: Makefile,v 1.25 2000/02/04 21:29:14 tron Exp $
 #
 
 DISTNAME=       cvs-1.10
@@ -30,6 +30,7 @@ CONFIGURE_ARGS+=	--with-krb4=no
 .if defined(KERBEROS) && ${KERBEROS} == 5
 USE_KERBEROS=	yes
 CONFIGURE_ARGS+=	--with-gssapi
+CFLAGS+=		-I/usr/include/krb5		# krb5.h
 .else
 CONFIGURE_ARGS+=	--with-gssapi=no
 .endif
