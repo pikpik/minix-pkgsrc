@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/10/13 07:45:30 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2003/01/29 11:10:19 jlam Exp $
 
 DISTNAME=	j2sdk-1_3_1_07-linux-i586
 PKGNAME=	sun-jdk13-1.0.7
@@ -30,6 +30,8 @@ _FETCH_MESSAGE= \
 	${ECHO} "	${DISTDIR}"; \
 	${ECHO} " from:"; \
 	${ECHO} "	${DOWNLOAD}"; \
+	${ECHO} ; \
+	${ECHO} " Choose 'Linux self-extracting file' from the 'SDK' column."
 	${ECHO} ; \
 	${ECHO} "======================================================================"
 
