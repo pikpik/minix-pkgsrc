@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/05/23 20:36:07 tv Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/19 23:37:07 christos Exp $
 
 DISTNAME=	sharutils-4.2.1
 PKGNAME=	g${DISTNAME}
@@ -8,8 +8,11 @@ MASTER_SITES=	${MASTER_SITE_GNU:=sharutils/}
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/sharutils/sharutils.html
 
+BUILD_DEPENDS+=	msgfmt:../../devel/gettext
+
+USE_LIBINTL=	yes
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS= --program-prefix=g --disable-uucode --with-gnu-gettext
+CONFIGURE_ARGS= --program-prefix=g --disable-uucode
 INSTALL_TARGET= install install-man
 INFO_FILES=	remsync.info sharutils.info
 
