@@ -1,9 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: DEINSTALL,v 1.1 2001/10/31 22:59:45 zuntum Exp $
-
-PKGNAME=$1
-STAGE=$2
+# $NetBSD: DEINSTALL,v 1.2 2001/11/25 19:22:18 jlam Exp $
 
 CAT="@CAT@"
 CMP="@CMP@"
