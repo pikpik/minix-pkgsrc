@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/04/23 04:19:25 mycroft Exp $
+# $NetBSD: Makefile,v 1.10 1999/04/26 18:56:15 garbled Exp $
 # FreeBSD Id: Makefile,v 1.18 1998/09/27 20:10:45 steve Exp
 
 DISTNAME=	octave-2.0.13
@@ -37,6 +37,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/refcard/refcard-legal.ps ${PREFIX}/share/octave/2.0.13/doc
 	${INSTALL_DATA} ${WRKSRC}/doc/refcard/refcard-a4.ps ${PREFIX}/share/octave/2.0.13/doc
 	${INSTALL_DATA} ${WRKSRC}/doc/faq/Octave-FAQ.ps ${PREFIX}/share/octave/2.0.13/doc
+
+.include "../../mk/bsd.prefs.mk"
 
 GCC_VERSION!=	${CC} --version
 
