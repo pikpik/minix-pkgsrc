@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:29:52 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 16:43:17 martti Exp $
 #
 
-DISTNAME=	check-0.8.4
-PKGREVISION=	1
+DISTNAME=	check-0.9.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=check/}
 
@@ -12,5 +11,6 @@ COMMENT=	Unit test framework for C
 
 GNU_CONFIGURE=	# defined
 CONFIGURE_ARGS+=--enable-plain-docdir
+USE_GNU_TOOLS+=	make
 
 .include "../../mk/bsd.pkg.mk"
