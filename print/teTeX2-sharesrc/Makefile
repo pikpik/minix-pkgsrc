@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/03/15 08:17:09 kei Exp $
+# $NetBSD: Makefile,v 1.3 2003/03/29 12:42:18 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 
 DISTNAME=	tetex-texmfsrc-2.0.2
@@ -24,7 +24,7 @@ NO_MTREE=	yes
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/texmf
 .if defined(EXTRACT_USING_PAX)
-	cd ${PREFIX}/share/texmf; ${DECOMPRESS_CMD} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} | ${PAX} -r
+	cd ${PREFIX}/share/texmf; ${DECOMPRESS_CMD} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} | ${PAX} -O -r
 .else
 	cd ${PREFIX}/share/texmf; ${DECOMPRESS_CMD} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} | ${GTAR} -xpf -
 .endif

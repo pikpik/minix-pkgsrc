@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/01/05 20:12:21 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2003/03/25 15:13:47 cjep Exp $
 
 PKGNAME=		postgresql-client-${BASE_VERS}
 SVR4_PKGNAME=		pstgc
@@ -26,7 +26,7 @@ pre-build:
 
 post-install:
 	cd ${PREFIX}/man && 						\
-	${PAX} -crzf ${WRKSRC}/doc/man.tar.gz `${GREP} -v ^# ${FILESDIR}/exclude`
+		${PAX} -O -crzf ${WRKSRC}/doc/man.tar.gz `${GREP} -v ^# ${FILESDIR}/exclude`
 
 .include "../postgresql-lib/buildlink2.mk"
 .include "../../devel/readline/buildlink2.mk"
