@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2000/12/28 12:40:15 hubertf Exp $
+# $NetBSD: Makefile,v 1.67 2001/01/13 16:49:58 skrll Exp $
 #
 
     SUBDIR += antiword
@@ -63,6 +63,7 @@
     SUBDIR += untex
     SUBDIR += urlview
     SUBDIR += wdiff
+    SUBDIR += xalan-c
     SUBDIR += xalan-j
     SUBDIR += xerces-c
     SUBDIR += xerces-j
