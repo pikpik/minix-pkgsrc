@@ -1,0 +1,6 @@
+@comment $NetBSD$
+sbin/irr_check
+sbin/irr_notify
+sbin/irr_rpsl_submit
+sbin/irr_submit
+sbin/irrd
