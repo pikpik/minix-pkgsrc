@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/22 07:21:55 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/11 05:27:16 snj Exp $
 #
 
 DISTNAME=	ipal-20001210
@@ -15,7 +15,7 @@ BUILD_DEPENDS+= bison-[0-9]*:../../devel/bison
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK3=	YES
-USE_GNU_TOOLS+=	make
+USE_GNU_TOOLS+=	lex make
 
 CFLAGS+=	-fPIC
 
