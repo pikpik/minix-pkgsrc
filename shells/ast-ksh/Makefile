@@ -1,5 +1,5 @@
 # $OpenBSD: Makefile,v 1.5 2001/11/21 01:17:43 naddy Exp $
-# $NetBSD: Makefile,v 1.5 2003/01/08 07:04:13 uebayasi Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/28 22:04:10 jlam Exp $
 
 DISTNAME=	ast-ksh-${ASTKSH_VERSION}
 PKGNAME=	ast-ksh-${ASTKSH_VERSION:S/-//g}
@@ -51,7 +51,7 @@ do-install:
 # Part of regression test
 do-test:
 	@cd ${WRKSRC}/src/cmd/ksh93/tests && \
-		${ENV} SHELL=${PREFIX}/bin/ksh93 ${PREFIX}/bin/ksh93 shtests
+		${SETENV} SHELL=${PREFIX}/bin/ksh93 ${PREFIX}/bin/ksh93 shtests
 # XXX Their 'test' target needs nmake (Korn's another tool)
 #	@cd ${WRKSRC}; \
 #		${SETENV} SHELL=${PDKSH} ${PDKSH} ./bin/package test

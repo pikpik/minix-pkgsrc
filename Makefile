@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2002/12/15 02:49:37 salo Exp $
+# $NetBSD: Makefile,v 1.51 2003/01/05 13:37:15 dmcmahill Exp $
 #
 
 .include "mk/bsd.prefs.mk"
@@ -73,7 +73,7 @@ README.html: .PRECIOUS
 		esac;							\
 		cd ${.CURDIR} ;						\
 	fi;								\
-	${ENV} TMPDIR=${TMPDIR:U/tmp}/mkreadme	 			\
+	${SETENV} TMPDIR=${TMPDIR:U/tmp}/mkreadme	 		\
 		BMAKE=${MAKE} AWK=${AWK} EXPR=${EXPR} 			\
 		./mk/scripts/mkreadme --pkgsrc ${.CURDIR} 		\
 		--packages ${PACKAGES} ${_README_TYPE_FLAG} $$MULTIARCH \

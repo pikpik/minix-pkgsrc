@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/18 23:18:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/30 14:54:21 wiz Exp $
 #
 
 DISTNAME=	magic-7.1
@@ -25,6 +25,6 @@ post-patch:
 
 do-configure:
 	cd ${WRKSRC} && printf "1\n2\n6\n\n\n\n\n\n\n\n\n\n\n" | \
-		${ENV} ${MAKE_ENV} ./scripts/config
+		${SETENV} ${MAKE_ENV} ./scripts/config
 
 .include "../../mk/bsd.pkg.mk"
