@@ -1,5 +1,6 @@
 @comment $NetBSD$
 bin/pgpdump
+man/man1/pgpdump.1
 share/doc/pgpdump/COPYRIGHT
 share/doc/pgpdump/README
 @dirrm share/doc/pgpdump
