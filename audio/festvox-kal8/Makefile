@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/06/09 17:05:34 agc Exp $
+# $NetBSD: Makefile,v 1.5 1999/10/11 10:32:59 proff Exp $
 
 DISTNAME=	festvox-kal8-1.4.0
 WRKSRC=		${WRKDIR}/festival
@@ -8,6 +8,8 @@ DISTFILES=	festvox_kallpc8k.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
+
+BROKEN=		Conflict with kal16 package
 
 DEPENDS+=	festival-1.4.0:../festival \
 		festlex-poslex-1.4.0:../festlex-poslex \

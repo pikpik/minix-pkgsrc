@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/11/05 08:24:12 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1999/01/30 23:18:48 agc Exp $
 #
 
 DISTNAME=		Wormz-1.0b5
@@ -8,6 +8,8 @@ MASTER_SITES=		http://lide.punknet.cz/miri/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://lide.punknet.cz/miri/wormz.html
+
+BROKEN=			Compilation problems
 
 WRKSRC=			${WRKDIR}/Wormz
 USE_GMAKE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/06/09 17:05:35 agc Exp $
+# $NetBSD: Makefile,v 1.5 1999/10/11 10:33:00 proff Exp $
 
 DISTNAME=	festvox-ked8-1.4.0
 WRKSRC=		${WRKDIR}/festival
@@ -8,6 +8,8 @@ DISTFILES=	festvox_kedlpc8k.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
+
+BROKEN=		16-bit voice conflicts
 
 DEPENDS+=	festival-1.4.0:../festival \
 		festlex-poslex-1.4.0:../festlex-poslex \
