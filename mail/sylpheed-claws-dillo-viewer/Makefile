@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/01 21:42:34 cube Exp $
 #
 
 PLUGIN_NAME=	dillo_viewer
@@ -11,6 +11,6 @@ DEPENDS+=	dillo>=0.7.2:../../www/dillo
 
 CONFIGURE_ARGS+=	--enable-dillo-viewer-plugin
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
