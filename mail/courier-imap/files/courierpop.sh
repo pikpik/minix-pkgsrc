@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: courierpop.sh,v 1.8 2004/02/24 01:18:52 jlam Exp $
+# $NetBSD: courierpop.sh,v 1.9 2004/07/14 20:07:16 jlam Exp $
 #
 # Courier POP3 services daemon
 #
@@ -42,7 +42,7 @@ courier_doit()
 		done
 		for f in $required_files; do
 			if [ ! -r "$f" ]; then
-				@ECHO@ "$0: WARNING: $f is not readable"
+				@ECHO@ 1>&2 "$0: WARNING: $f is not readable"
 				if [ -z $rc_force ]; then
 					return 1
 				fi
