@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2004/01/13 01:08:57 jlam Exp $
+# $NetBSD: Makefile,v 1.80 2004/03/02 06:13:28 uebayasi Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -56,7 +56,7 @@ CONFIGURE_ARGS+=	-Dinstallsiteman1dir="${VIEWBASE}/man/man1"
 
 MKPIC?=			yes
 
-.if ${OPSYS} == "IRIX"
+.if ${OPSYS} == "IRIX" && defined(USE_MIPSPRO)
 .  if ${ABI} == "32"
 CONFIGURE_ARGS+=        -Dcc='cc -n32'
 .  elif ${ABI} == "64"
