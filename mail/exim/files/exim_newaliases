@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+#	$NetBSD$
+#
+cd /etc
+echo -n '/etc/aliases: '
+@PREFIX@/sbin/exim_dbmbuild aliases aliases.db
