@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/06/05 22:51:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2004/08/27 06:29:07 jlam Exp $
 #
 
 DISTNAME=		jgrasp170
@@ -13,6 +13,7 @@ COMMENT=		IDE with support for Software Visualizations
 
 WRKSRC=			${WRKDIR}/jgrasp
 PKG_JVMS_ACCEPTED=	sun-jdk13 sun-jdk14 jdk13 jdk14
+USE_X11=		yes
 
 do-configure:
 	${MKDIR} ${WRKSRC}/bin/${LOWER_OPSYS}
