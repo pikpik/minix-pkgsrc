@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./src/arch/unix/archdep.h.orig	Tue Nov 16 16:19:50 1999
-+++ ./src/arch/unix/archdep.h	Sun Feb  6 22:25:33 2000
+--- src/arch/unix/archdep.h.orig	Tue Nov 16 16:19:50 1999
++++ src/arch/unix/archdep.h
 @@ -51,8 +51,8 @@
  #define MODE_APPEND_READ_WRITE "a+"
  
