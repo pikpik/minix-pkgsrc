@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/08 19:40:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2004/03/26 02:27:40 wiz Exp $
 #
 
 DISTNAME=	sirius-0.8.0
@@ -11,10 +11,10 @@ HOMEPAGE=	http://sirius.bitvis.nu/
 COMMENT=	Othello game for GNOME2
 
 BUILD_USES_MSGFMT=	YES
-DEPENDS=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK3=		YES
+USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/01 18:29:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/09 20:11:45 minskim Exp $
 #
 
 DISTNAME=		gnome-icon-theme-1.2.0
@@ -13,10 +13,10 @@ COMMENT=		Theme consisting of a set of icons for GNOME
 DEPENDS+=		hicolor-icon-theme>=0.4:../../graphics/hicolor-icon-theme
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
+USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_PERL5=		build
 USE_PKGLOCALEDIR=	yes

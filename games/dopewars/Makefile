@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/03/30 14:55:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.28 2004/03/30 16:12:38 jmmv Exp $
 
 DISTNAME=		dopewars-1.5.9
 PKGREVISION=		4
@@ -9,9 +9,8 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://dopewars.sourceforge.net/
 COMMENT=		Make a fortune dealing drugs on the streets of New York
 
-DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
-
 USE_BUILDLINK3=		YES
+USE_DIRS+=		xdg-1.1
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/03/08 19:40:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2004/03/26 02:27:38 wiz Exp $
 #
 
 DISTNAME=	gtranslator-1.0
@@ -11,10 +11,10 @@ HOMEPAGE=	http://www.gtranslator.org/
 COMMENT=	Gettext po file editor for the GNOME2 desktop environment
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS=		gnome2-dirs>=1.5:../../misc/gnome2-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
+USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/08 19:40:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/09 23:32:59 snj Exp $
 #
 
 DISTNAME=	xbreaky-0.0.5
@@ -10,9 +10,8 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://xbreaky.sourceforge.net/
 COMMENT=	Breakout game for X11
 
-DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
-
 USE_BUILDLINK3=	YES
+USE_DIRS+=	xdg-1.1
 USE_X11=	YES
 
 .include "../../graphics/xpm/buildlink3.mk"

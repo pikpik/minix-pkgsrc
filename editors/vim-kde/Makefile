@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/03/26 02:27:39 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2004/03/31 04:31:20 snj Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
@@ -17,10 +17,9 @@ KVIM_VERSION=	6.2.14
 CONFLICTS+=	vim-gtk-[0-9]* vim-gtk2-[0-9]*
 CONFLICTS+=	vim-share-[0-9]* vim-[0-9]* vim-xaw-[0-9]*
 
-DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
-
 WRKSRC= 		${WRKDIR}/kvim-${KVIM_VERSION}/src
 USE_BUILDLINK2=		YES
+USE_DIRS+=		xdg-1.1
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-gui=kde

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/08 19:40:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/26 02:27:50 wiz Exp $
 #
 
 DISTNAME=	pan-0.11.4
@@ -12,9 +12,9 @@ HOMEPAGE=	http://pan.rebelbase.com/
 COMMENT=	Newsreader for Gnome
 
 BUILD_USES_MSGFMT=	YES
-DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 USE_BUILDLINK2=		YES
+USE_DIRS+=		xdg-x11-1.1
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES

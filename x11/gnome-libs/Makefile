@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2004/03/12 21:33:28 jlam Exp $
+# $NetBSD: Makefile,v 1.101 2004/03/26 18:48:52 jlam Exp $
 
 DISTNAME=		gnome-libs-1.4.2
 PKGREVISION=		3
@@ -9,9 +9,9 @@ MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Libraries for the GNU Network Object Model Environment
 
-DEPENDS+=		gnome1-dirs>=1.5:../../misc/gnome1-dirs
 BUILD_USES_MSGFMT=	YES
 
+USE_DIRS+=		gnome1-1.5
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES

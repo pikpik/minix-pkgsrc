@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/03/11 14:01:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/03/26 02:27:36 wiz Exp $
 #
 
 DISTNAME=		libgnomedb-1.0.3
@@ -12,12 +12,12 @@ HOMEPAGE=		http://www.gnome-db.org/
 COMMENT=		GNOME2 database library
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS=		gnome2-dirs>=1.5:../../misc/gnome2-dirs
 
 USE_X11=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_BUILDLINK3=		YES
+USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
