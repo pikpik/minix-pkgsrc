@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.157 2003/02/17 13:54:17 zuntum Exp $
+# $NetBSD: Makefile,v 1.158 2003/02/19 12:16:47 is Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -56,6 +56,7 @@ SUBDIR+=	isync
 SUBDIR+=	ja-mh
 SUBDIR+=	libesmtp
 SUBDIR+=	libmilter
+SUBDIR+=	libsieve
 SUBDIR+=	mailagent
 SUBDIR+=	mailcrypt
 SUBDIR+=	maildrop
