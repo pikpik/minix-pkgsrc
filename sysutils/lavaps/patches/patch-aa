@@ -1,3 +1,4 @@
+$NetBSD$
 --- process_scan_freebsd.cc.orig	Tue Nov  2 16:27:39 1999
 +++ process_scan_freebsd.cc	Tue Nov  2 16:53:24 1999
 @@ -112,7 +112,7 @@
