@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.207 2003/12/17 16:23:16 wiz Exp $
+# $NetBSD: Makefile,v 1.208 2003/12/17 19:30:12 jdolecek Exp $
 
 COMMENT=	System utilities
 
@@ -63,6 +63,7 @@ SUBDIR+=	gentoo
 SUBDIR+=	gkrellm
 SUBDIR+=	gkx86info
 SUBDIR+=	gmc
+SUBDIR+=	gnome-acme
 SUBDIR+=	gnome-vfs
 SUBDIR+=	gnome-vfs2
 SUBDIR+=	gnometoaster
