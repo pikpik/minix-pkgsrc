@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/SpiralSynth
+share/spiralsynth/.SpiralPatches.bank
+share/spiralsynth/.Spiralrc
+@dirrm share/spiralsynth
