@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1999/04/16 16:55:27 tsarna Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1999/05/02 17:48:37 tsarna Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	py-gd-1.3
@@ -10,7 +10,7 @@ MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://starship.python.net/~richard/gdmodule/
 
 DEPENDS+=	python-1.5.2:../../lang/python \
-		gd-1.3:../../graphics/gd
+		gd-1.3p1:../../graphics/gd
 
 WRKSRC=		${WRKDIR}/build
 
