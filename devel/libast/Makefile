@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/15 12:22:13 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/01/11 14:00:31 adam Exp $
 
 DISTNAME=	libast-0.6.1
 CATEGORIES=	devel
@@ -10,6 +10,7 @@ COMMENT=	The Library of Assorted Spiffy Things
 
 USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
+USE_X11=		YES
 GNU_CONFIGURE=		YES
 TEST_TARGET=		test
 
