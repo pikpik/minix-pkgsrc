@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/18 11:39:23 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/03/13 17:37:06 fredb Exp $
 #
 
 DISTNAME=	gdchart0.10.1dev
@@ -14,7 +14,7 @@ COMMENT=	Easy to use, fast C API for creating charts and graphs
 
 MAKEFILE=	makefile
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=	YES
 
 post-patch:
 	for fn in ${WRKSRC}/*.[ch]; do					      \
@@ -39,5 +39,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/gdc_pie_samp.c \
 		${PREFIX}/share/examples/gdchart
 
-.include "../../graphics/gd/buildlink.mk"
+.include "../../graphics/gd/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
