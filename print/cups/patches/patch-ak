@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- cups/usersys.c.orig	Mon Jul 12 12:09:42 1999
++++ cups/usersys.c	Sun Nov 28 21:06:28 1999
+@@ -136,7 +136,7 @@
+   * Next check to see if we have a cupsd.conf file...
+   */
+ 
+-  if ((fp = fopen(CUPS_SERVERROOT "/conf/cupsd.conf", "r")) == NULL)
++  if ((fp = fopen(CUPS_CONFDIR "/cupsd.conf", "r")) == NULL)
+     return ("localhost");
+ 
+  /*
