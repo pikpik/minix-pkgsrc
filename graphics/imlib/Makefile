@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2001/02/16 15:22:24 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2001/03/04 09:06:12 tron Exp $
 #
 
 DISTNAME=		imlib-1.9.8.1
@@ -35,6 +35,8 @@ CPPFLAGS=		-DENABLE_NLS
 CPPFLAGS+=		-I${LOCALBASE}/include
 
 pre-configure:
+	cd ${WRKSRC} && ${SED} "s|@LOCALBASE@|${LOCALBASE}|" configure.in \
+		> configure.in.tmp && ${MV} configure.in.tmp configure.in
 	cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf && ${LOCALBASE}/bin/automake
 
 post-install:
