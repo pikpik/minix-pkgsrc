@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libslatec.a
+lib/libslatec.la
+lib/libslatec.so.0.0
