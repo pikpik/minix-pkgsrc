@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.457 2004/01/18 20:17:32 kristerw Exp $
+# $NetBSD: Makefile,v 1.458 2004/01/20 21:29:48 rh Exp $
 #
 
 COMMENT=	Development utilities
@@ -443,7 +443,6 @@ SUBDIR+=	treecc
 SUBDIR+=	trio
 SUBDIR+=	tvision
 SUBDIR+=	ucl
-SUBDIR+=	umbrello
 SUBDIR+=	uml
 SUBDIR+=	unidiff
 SUBDIR+=	unproven-pthreads
