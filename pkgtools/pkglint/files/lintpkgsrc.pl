@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.54 2001/06/21 15:53:54 abs Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.55 2001/07/07 18:21:29 dmcmahill Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -1033,7 +1033,7 @@ sub scan_pkgsrc_distfiles_vs_distinfo
 		    {
 		    if (m/^(\w+) ?\(([^\)]+)\) = (\S+)/)
 			{
-			if (substr($2, 0, 6) eq 'patch-')
+			if ($2 =~ /^patch-[a-z0-9]+$/)
 			    { next; }
 			if (!defined $distfiles{$2})
 			    {
