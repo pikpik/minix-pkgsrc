@@ -1,8 +1,8 @@
 $NetBSD$
 
---- xpdf/XPDFViewer.cc.orig	Sun Nov  3 23:15:37 2002
+--- xpdf/XPDFViewer.cc.orig	2004-01-22 01:26:45.000000000 +0000
 +++ xpdf/XPDFViewer.cc
-@@ -143,9 +143,12 @@ XPDFViewer::XPDFViewer(XPDFApp *appA, GS
+@@ -181,9 +181,12 @@ XPDFViewer::XPDFViewer(XPDFApp *appA, GS
  
  XPDFViewer::~XPDFViewer() {
    delete core;
