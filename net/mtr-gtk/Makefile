@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2001/09/09 15:22:13 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 15:11:00 agc Exp $
 #
 
 DISTNAME=	mtr-0.42
-PKGNAME=	mtr-gtk-0.42
+PKGNAME=	mtr-gtk-0.42nb1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
