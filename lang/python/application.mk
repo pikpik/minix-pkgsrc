@@ -1,4 +1,4 @@
-# $NetBSD: application.mk,v 1.2 2002/10/18 16:28:25 jlam Exp $
+# $NetBSD: application.mk,v 1.3 2002/10/18 16:34:54 jlam Exp $
 
 .include "../../lang/python/pyversion.mk"
 
@@ -6,7 +6,7 @@
 # PYTHON_PATCH_SCRIPTS is a list of Python scripts to be installed,
 #  relative to ${WRKSRC}
 
-_PYTHON_PATCH_SCRIPT_SED=	-e "1s;^\#!.*python;\#!${PYTHONBIN};"
+_PYTHON_PATCH_SCRIPT_SED=	-e "1s;^\#!.*python[^ ];\#!${PYTHONBIN};"
 _PYTHON_PATCH_SCRIPT_SED+=	${PYTHON_PATCH_SCRIPT_SED}
 
 .if defined(PYTHON_PATCH_SCRIPTS)
