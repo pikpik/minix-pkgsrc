@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:26:15 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/18 15:30:08 reed Exp $
 
-DISTNAME=	adjustkernel-1.5
+DISTNAME=	adjustkernel-1.6
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
