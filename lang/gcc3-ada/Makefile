@@ -1,11 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2004/05/22 17:48:21 abs Exp $
+# $NetBSD: Makefile,v 1.12 2004/05/28 22:30:50 shannonjr Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-ada-${GCC_VERSION}
-PKGREVISION=    2
 COMMENT=	GNU Compiler Collection, v3 - Ada compiler
-
-INFO_FILES=	gnat_ug_unx.info gnat_ug_vms.info gnat_ug_vxw.info
-INFO_FILES+=	gnat_ug_wnt.info gnat_rm.info gnat-style.info
 
 .include "../../lang/gcc3/language.mk"
 
