@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/02/28 11:37:20 tron Exp $
+# $NetBSD: Makefile,v 1.11 1998/04/15 10:38:30 agc Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
@@ -22,6 +22,7 @@
 #    SUBDIR += p5-Mail-Folder
 #    SUBDIR += p5-Mail-POP3Client
 #    SUBDIR += p5-Mail-Tools
+    SUBDIR += petidomo
 #    SUBDIR += pgpsendmail
     SUBDIR += pine
 #    SUBDIR += popclient
