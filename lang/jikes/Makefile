@@ -1,17 +1,19 @@
-# $NetBSD: Makefile,v 1.2 1999/10/22 15:13:02 agc Exp $
+# $NetBSD: Makefile,v 1.3 2000/01/09 01:20:33 wiz Exp $
 #
 
-DISTNAME=	jikes-1.06
+DISTNAME=	jikes-1.12
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.whistle.com/pub/archie/misc/
+MASTER_SITES=	http://oss.software.ibm.com/developerworks/opensource/jikes/project/pub/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www10.software.ibm.com/developerworks/opensource/jikes/
 
-ONLY_FOR_PLATFORM=	SunOS-*-*	# only for Solaris, at the moment
+ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-*
 
-WRKSRC=		${WRKDIR}/jikes/src
+CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 
 GNU_CONFIGURE=	yes
+
+USE_GMAKE=	# uses multi-line comments with \ (naughty hack!)
 
 .include "../../mk/bsd.pkg.mk"
