@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/X11/xfig/CompKeyDB
 lib/X11/app-defaults/Fig
 lib/X11/app-defaults/Fig-color
