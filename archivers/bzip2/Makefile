@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/06/02 01:21:51 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/17 21:21:07 grant Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -34,6 +34,6 @@ do-install:
 	${LN} -s ${PREFIX}/man/man1/bzip2.1 ${PREFIX}/man/man1/bzcat.1
 	${LN} -s ${PREFIX}/man/man1/bzip2.1 ${PREFIX}/man/man1/bzip2recover.1
 	${INSTALL_DATA} ${WRKSRC}/bzlib.h ${PREFIX}/include
-	${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/libbz2.la ${PREFIX}/lib
+	${LIBTOOL} --mode=install ${INSTALL_DATA} ${WRKSRC}/libbz2.la ${PREFIX}/lib
 
 .include "../../mk/bsd.pkg.mk"
