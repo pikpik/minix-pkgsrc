@@ -1,0 +1,23 @@
+$NetBSD: patch-cc,v 1.2 2000/03/02 00:23:15 hubertf Exp $
+
+*** sbr/fmt_scan.c.~1~	Sun Sep 26 13:45:56 1999
+--- sbr/fmt_scan.c	Fri Sep 21 12:09:25 2001
+***************
+*** 282,289 ****
+      char *cp, *ep, *sp;
+      char *savestr, *str = NULL;
+      char buffer[BUFSIZ], buffer2[BUFSIZ];
+!     int i, c, ljust;
+!     int value = 0;
+      time_t t;
+      struct format *fmt;
+      struct comp *comp;
+--- 282,289 ----
+      char *cp, *ep, *sp;
+      char *savestr, *str = NULL;
+      char buffer[BUFSIZ], buffer2[BUFSIZ];
+!     int i, ljust;
+!     int64_t c, value = 0;
+      time_t t;
+      struct format *fmt;
+      struct comp *comp;
