@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/08/22 16:54:48 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 23:47:01 jlam Exp $
 #
 
 DISTNAME=	Zope-2.5.1-src
@@ -18,7 +18,7 @@ SITES_${HOTFIX}= http://www.zope.org/Products/Zope/Hotfix_2002-06-14/
 DISTFILES+=	${HOTFIX}
 
 PYTHON_VERSIONS_ACCEPTED=	21pth
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=	yes
 
 ZOPEDIR=	${PREFIX}/lib/zope
 ZOPEPY=		pcgi lib/python ZServer z2.py zpasswd.py
