@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/04 14:39:56 recht Exp $
 #
 # This Makefile fragment is included by packages that use randrext.
 #
@@ -16,7 +16,6 @@ EVAL_PREFIX+=	BUILDLINK_PREFIX.randrext=randrext
 BUILDLINK_PREFIX.randrext_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.randrext+=	include/X11/extensions/randr.h
 BUILDLINK_FILES.randrext+=	include/X11/extensions/randrproto.h
-
 
 BUILDLINK_TARGETS+=	randrext-buildlink
 

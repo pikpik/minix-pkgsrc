@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/14 13:53:56 jdolecek Exp $
 
 .if !defined(ZZIPLIB_BUILDLINK2_MK)
 ZZIPLIB_BUILDLINK2_MK=	# defined
@@ -19,7 +19,6 @@ LIBTOOL_ARCHIVE_UNTRANSFORM_SED+= \
 
 BUILDLINK_FILES.zziplib=	include/zzip/* include/zzip*.h
 BUILDLINK_FILES.zziplib+=	lib/libzzip.* lib/libzzip-0.*
-
 
 BUILDLINK_TARGETS+=		zziplib-buildlink
 

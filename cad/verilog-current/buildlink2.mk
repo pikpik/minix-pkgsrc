@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/11/10 01:57:48 dmcmahill Exp $
 #
 # This Makefile fragment is included by packages that use verilog-current.
 #
@@ -27,7 +27,6 @@ BUILDLINK_FILES.verilog-current+=	lib/ivl/system.vpi
 BUILDLINK_FILES.verilog-current+=	lib/ivl/vvp.tgt
 BUILDLINK_FILES.verilog-current+=	lib/libveriuser.*
 BUILDLINK_FILES.verilog-current+=	lib/libvpi.*
-
 
 BUILDLINK_TARGETS+=	verilog-current-buildlink
 
