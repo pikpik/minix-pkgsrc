@@ -11,7 +11,7 @@ $NetBSD$
  CFFILES = $(XVFILES) $(HEADERS)
  
 -InstallMultipleDestFlags(install,$(CFFILES),$(CONFIGDIR),$(INSTDATFLAGS))
-+InstallMultipleDestFlags(install,$(CFFILES),$(XVCONFIGDIR),$(INSTDATFLAGS))
++InstallMultipleDestFlags(install,$(CFFILES),$(PREFIX)/lib/X11/config,$(INSTDATFLAGS))
  
  depend::
  

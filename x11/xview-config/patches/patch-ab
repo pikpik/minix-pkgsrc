@@ -29,15 +29,6 @@ $NetBSD$
  #endif
  /*
   *	The implementation of internationalization support in XView depends
-@@ -315,7 +315,7 @@
-  *	features disabled.
-  */
- #ifndef OsHasLocale
--#define OsHasLocale YES
-+#define OsHasLocale NO
- #endif
- /*
-  *	There are number of memory allocation macros in lib/libxview/base.h 
 @@ -360,7 +360,7 @@
   *    	be defined as -PIC
   */
