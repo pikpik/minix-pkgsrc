@@ -1,4 +1,4 @@
-# $NetBSD: motif.buildlink3.mk,v 1.4 2004/06/18 11:22:41 kristerw Exp $
+# $NetBSD: motif.buildlink3.mk,v 1.5 2004/08/27 06:29:09 jlam Exp $
 #
 # MOTIFBASE
 #	choose the Motif-2.0 installation at the named location.
@@ -86,6 +86,6 @@ CPPFLAGS+=		-I${_MOTIFBASE}/include
 LDFLAGS+=		-L${_MOTIFBASE}/lib
 LDFLAGS+=		${COMPILER_RPATH_FLAG}${_MOTIFBASE}/lib
 MOTIFLIB?=		${COMPILER_RPATH_FLAG}${_MOTIFBASE}/lib \
-				-L${_MOTIFBASE}/lib -lXm -lXp
+			-L${_MOTIFBASE}/lib -lXm -lXp
 
 .endif	# MOTIF_BUILDLINK3_MK
