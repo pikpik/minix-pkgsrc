@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/05/20 20:09:50 tron Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/24 20:39:36 tv Exp $
 #
 
 DISTNAME=		mysql-3.22.22
@@ -27,7 +27,8 @@ CONFIGURE_ARGS+=	--localstatedir=${MYSQL_DATADIR} \
 CFLAGS+=		-Dunix
 
 # platforms on which included mit-pthreads is usable
-ONLY_FOR_PLATFORM=	NetBSD-*-{alpha,arm32,i386,sparc} SunOS-*-sparc
+ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm32 NetBSD-*-i386 \
+			NetBSD-*-sparc SunOS-*-sparc
 
 USE_GMAKE=
 USE_PERL5=
