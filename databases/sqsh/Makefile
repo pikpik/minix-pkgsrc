@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/04/04 14:04:36 mjl Exp $
+# $NetBSD: Makefile,v 1.5 2001/05/22 05:28:23 jlam Exp $
 
 DISTNAME=	sqsh-1.7-src
 PKGNAME=	sqsh-1.7
@@ -22,12 +22,12 @@ CONFIGURE_ENV+=		SYBASE="${SYBASE}"
 SYBASE=			${PREFIX}/freetds
 LDFLAGS+=		-Wl,-R${SYBASE}/lib
 
-.include "../../devel/readline/Makefile.readline"
+.include "../../devel/readline/buildlink.mk"
 
-LDFLAGS+=		-L${WRKLIBDIR}
-CONFIGURE_ENV+=		INCDIRS="${WRKINCDIR}"
-CONFIGURE_ENV+=		LIBDIRS="${WRKLIBDIR}"
+LDFLAGS+=		-L${BUILDLINK_LIBDIR}
+CONFIGURE_ENV+=		INCDIRS="${BUILDLINK_INCDIR}"
+CONFIGURE_ENV+=		LIBDIRS="${BUILDLINK_LIBDIR}"
 
-pre-configure: link-readline-headers link-readline-libs
+pre-configure: ${BUILDLINK_TARGETS}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/05/13 06:13:15 tron Exp $
+# $NetBSD: Makefile,v 1.24 2001/05/16 20:27:23 jlam Exp $
 # FreeBSD Id: Makefile,v 1.39 1998/01/31 17:49:48 jseger Exp
 #
 
@@ -30,12 +30,12 @@ DEPENDS+=		socks5-1.0.2:../../net/socks5
 .endif
 .endif
 
-.include "../../devel/readline/Makefile.readline"
+.include "../../devel/readline/buildlink.mk"
 
-CPPFLAGS+=		-I${WRKINCDIR}
-LDFLAGS+=		-L${WRKLIBDIR}
+CPPFLAGS+=		-I${BUILDLINK_INCDIR}
+LDFLAGS+=		-L${BUILDLINK_LIBDIR}
 
-pre-configure: link-readline-headers link-readline-libs
+pre-configure: ${BUILDLINK_TARGETS}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ncftp ${PREFIX}/bin/ncftp2
