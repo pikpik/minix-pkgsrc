@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/08 20:27:14 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/08 23:47:44 minskim Exp $
 
 DISTNAME=	otcl-1.8
 PKGNAME=	tcl-${DISTNAME}
@@ -16,6 +16,7 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_X11=	yes
 
+CONFIGURE_ARGS+=	V_LIBS="`${CONFIG_SHELL} -c '. ${TCLCONFIG_SH}; echo $$TCL_LIBS'`"
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
 CONFIGURE_ARGS+=	--with-tk=${BUILDLINK_PREFIX.tk}
 
