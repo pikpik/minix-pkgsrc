@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2003/09/10 21:22:29 manu Exp $
+# $NetBSD: Makefile,v 1.60 2003/09/18 14:42:53 xtraeme Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -10,6 +10,7 @@ SUBDIR+=	base64
 SUBDIR+=	bbcim
 SUBDIR+=	bib2xml
 SUBDIR+=	cbmconvert
+SUBDIR+=	chef
 SUBDIR+=	cn2jp
 SUBDIR+=	code2html
 SUBDIR+=	doc2html
