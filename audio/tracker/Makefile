@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/01/20 12:07:43 agc Exp $
+# $NetBSD: Makefile,v 1.29 2004/07/10 16:33:01 minskim Exp $
 # FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp
 #
 
@@ -11,10 +11,9 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		tech-pkg@NetBSD.org
 COMMENT=		MOD player
 
-RESTRICTED=		"Non-redistributable beta"
+RESTRICTED=		"No commercial redistribution"
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
-NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 
 USE_BUILDLINK3=		yes
