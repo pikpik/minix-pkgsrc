@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/wine/windows.h
 include/wine/wintypes.h
 lib/libwine.so.1.0
