@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.178 2002/02/22 22:26:06 tron Exp $
+# $NetBSD: Makefile,v 1.179 2002/02/25 02:59:24 grant Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -20,6 +20,7 @@ SUBDIR+=	ap-fastcgi
 SUBDIR+=	ap-jk
 SUBDIR+=	ap-jserv
 SUBDIR+=	ap-layout
+SUBDIR+=	ap-mp3
 SUBDIR+=	ap-perl
 SUBDIR+=	ap-php3
 SUBDIR+=	ap-php4
