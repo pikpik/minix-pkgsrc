@@ -1,11 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/02 08:03:38 jmmv Exp $
 
 DISTNAME=	sigrot_1.2-1
 PKGNAME=	sigrot-1.2
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.debian.org/debian/pool/main/s/sigrot/ \
-		ftp://ftp.de.debian.org/debian/pool/main/s/sigrot/
+MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/s/sigrot/}
 
 MAINTAINER=	drue@users.sourceforge.net
 HOMEPAGE=	http://packages.debian.org/stable/mail/sigrot.html
