@@ -2,8 +2,12 @@
 bin/ccc
 bin/cf77
 lib/libcc.a
+man/man1/ccc.1
+man/man1/cf77.1
 man/man3/chkpt.3
 man/man3/chkpt_init.3
 man/man3/chkpt_timer.3
 man/man3/chkpt_exit.3
 include/chkpt.h
+share/examples/chkpt/example.c
+share/examples/chkpt/example.f
