@@ -1,12 +1,12 @@
 @comment $NetBSD$
 include/ucl/ucl.h
+include/ucl/ucl_asm.h
 include/ucl/uclconf.h
-include/ucl/uclutil.h
 lib/libucl.a
 lib/libucl.la
 lib/libucl.so
-lib/libucl.so.0
-lib/libucl.so.0.0
+lib/libucl.so.1
+lib/libucl.so.1.0
 share/examples/ucl/Makefile
 share/examples/ucl/lutil.h
 share/examples/ucl/simple.c
