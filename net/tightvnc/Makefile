@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/29 12:42:05 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:51:56 grant Exp $
 #
 
 DISTNAME=		tightvnc-1.2.6
@@ -20,6 +20,8 @@ USE_BUILDLINK2=		yes
 USE_IMAKE=		yes
 NO_INSTALL_MANPAGES=	yes
 USE_PERL5=		yes
+
+USE_GNU_TOOLS+=		make
 
 ALL_TARGET=		World
 
