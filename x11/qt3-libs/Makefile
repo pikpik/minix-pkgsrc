@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/02/18 19:16:53 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2003/03/09 19:28:18 jschauma Exp $
 #
 
 LIBQT=			${WRKSRC}/lib/libqt-mt.la
@@ -17,7 +17,10 @@ PTHREAD_OPTS+=		require
 UNLIMIT_RESOURCES=	datasize
 
 post-extract:
-	${RM} -f ${WRKSRC}/include/qt_windows.h
+	${RM} -f ${WRKSRC}/include/qmotif.h
+	${RM} -f ${WRKSRC}/include/qmotifdialog.h
+	${RM} -f ${WRKSRC}/include/qmotifwidget.h
+	${RM} -f ${WRKSRC}/include/qxtwidget.h
 
 do-install:
 	${INSTALL_DATA_DIR} ${QTPREFIX}
@@ -35,6 +38,7 @@ do-install:
 	${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/plugins/imageformats/libqmng.la ${QTPREFIX}/plugins/imageformats
 
 .include "../../devel/zlib/buildlink2.mk"
+.include "../../fonts/Xft2/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../graphics/MesaLib/buildlink2.mk"
 .include "../../graphics/glu/buildlink2.mk"
