@@ -1,0 +1,15 @@
+$NetBSD: patch-aa,v 1.4 1999/11/14 22:53:22 frueauf Exp $
+
+--- Xsra/SelFile.c.orig	Sat Jan 12 17:52:02 2002
++++ Xsra/SelFile.c	Sat Jan 12 17:52:18 2002
+@@ -48,8 +48,10 @@
+ extern int errno;
+ extern int sys_nerr;
+ #ifndef __FreeBSD__
++#ifndef __NetBSD__
+ #ifndef __GLIBC__
+ extern char *sys_errlist[];
++#endif
+ #endif
+ #endif
+ 
