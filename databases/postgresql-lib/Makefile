@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/21 09:01:00 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/30 18:50:39 xtraeme Exp $
 
 PKGNAME=		postgresql-lib-${BASE_VERS}
 PKGREVISION=		1
@@ -26,7 +26,7 @@ PLIST_SUBST+=		LIBECPG="@comment "
 PLIST_SUBST+=		LIBPQ="@comment "
 .else
 PLIST_SUBST+=		LIBECPG=
-PLIST_SUBST+=		LIBEPQ=
+PLIST_SUBST+=		LIBPQ=
 .endif
 
 post-buildlink:
