@@ -1,7 +1,8 @@
 $NetBSD$
---- pine/osdep/os-lnx.h.orig	Mon Jul  8 14:38:13 2002
-+++ pine/osdep/os-lnx.h	Mon Jul  8 14:39:12 2002
-@@ -283,5 +283,6 @@
+
+--- pine/osdep/os-lnx.h.orig	2003-05-23 16:07:00.000000000 +0000
++++ pine/osdep/os-lnx.h
+@@ -295,5 +295,6 @@
  #define MAX_ADDR_EXPN   (1000)  /* Longest expanded addr                    */
  #define MAX_ADDR_FIELD (10000)  /* Longest fully-expanded addr field        */
  
