@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/09/16 08:42:08 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2002/09/24 13:51:21 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -63,6 +63,7 @@ SUBDIR+=	ms-ttf
 SUBDIR+=	oto
 SUBDIR+=	p5-Font-AFM
 SUBDIR+=	p5-Font-TTF
+SUBDIR+=	pfaedit
 SUBDIR+=	t1lib
 SUBDIR+=	t1utils
 SUBDIR+=	ttf2pt1
