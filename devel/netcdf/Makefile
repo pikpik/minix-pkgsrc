@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/01/11 15:58:45 cjep Exp $
+# $NetBSD: Makefile,v 1.17 2004/01/20 12:13:28 agc Exp $
 
 DISTNAME=	netcdf-3.5.0
 PKGREVISION=	1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.unidata.ucar.edu/packages/netcdf/index.html
 COMMENT=	Library for array-oriented data access
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		yes
 USE_FORTRAN=		# defined
 USE_GCC_SHLIB=		# defined
 USE_LIBTOOL=		# defined
