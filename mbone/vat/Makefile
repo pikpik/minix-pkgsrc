@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2000/04/07 17:20:40 hubertf Exp $
+# $NetBSD: Makefile,v 1.30 2000/06/16 22:40:04 wiz Exp $
 #
 
 DISTNAME=		vatsrc-4.0b2
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 MAINTAINER=		mycroft@netbsd.org
 HOMEPAGE=		http://www-nrg.ee.lbl.gov/vat/
 
-BUILD_DEPENDS+=		${LOCALBASE}/include/gsm/private.h:../../audio/gsm
+BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 DEPENDS+=		tk-8.0.5:../../x11/tk80
 DEPENDS+=		gsm-1.0.10:../../audio/gsm
 
