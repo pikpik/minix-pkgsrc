@@ -1,0 +1,4 @@
+@comment $NetBSD$
+emul/linux/etc/pluggerrc
+emul/linux/usr/bin/plugger-4.0
+lib/mozilla-linux/plugins/plugger.so
