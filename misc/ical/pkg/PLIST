@@ -1,6 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1998/02/17 19:33:47 tron Exp $
 bin/ical
-bin/ical-2.2
+bin/${PKGNAME}
 lib/ical/v2.2/actions.tcl
 lib/ical/v2.2/alarm.tcl
 lib/ical/v2.2/apptlist.tcl
