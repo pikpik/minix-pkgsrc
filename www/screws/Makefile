@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/23 16:09:20 xtraeme Exp $
 #
 
-DISTNAME=	screws-0.52
+DISTNAME=	screws-0.54
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.nopcode.org/prj/screws/
 
@@ -17,10 +17,11 @@ PKG_USERS=	screws
 PKG_GROUPS=	www
 
 EGDIR=		${PREFIX}/share/examples
-CONF_FILES=	${EGDIR}/screws.conf ${PKG_SYSCONFDIR}/screws.conf
+CONF_FILES=	${EGDIR}/default.conf ${PKG_SYSCONFDIR}/screws.conf
 FILESDIR=	${WRKSRC}/src/Utils/files
 
 RCD_SCRIPTS=	screws
 
+.include "../../lang/lua/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
