@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1287 2003/09/16 11:45:42 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1288 2003/09/17 02:38:22 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -390,8 +390,6 @@ DIGEST_ALGORITHM?=	SHA1
 SHCOMMENT?=		${ECHO_MSG} >/dev/null '***'
 
 DISTINFO_FILE?=		${.CURDIR}/distinfo
-
-.include "../../mk/compiler.mk"
 
 FIX_RPATH+=		LIBS
 .if defined(USE_X11)
