@@ -14,12 +14,9 @@ $NetBSD$
  #CFLAGS=-g
  
  LIBS=	-lm
-@@ -35,9 +33,8 @@
- all:	swish-e
- 
+@@ -37,7 +35,6 @@
  swish-e:	
--	make CFLAGS="-g" $(OBJS)
-+	$(MAKE) CFLAGS="-g" $(OBJS)
+ 	make CFLAGS="-g" $(OBJS)
  	$(CC) -o swish-e -g $(CFLAGS) $(OBJS) $(LIBS)
 -	chmod 755 swish-e
  
