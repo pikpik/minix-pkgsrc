@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.276 2003/12/04 15:28:34 epg Exp $
+# $NetBSD: Makefile,v 1.277 2003/12/04 15:33:06 grant Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -186,6 +186,7 @@ SUBDIR+=	ruby-borges
 SUBDIR+=	ruby-htmlsplit
 SUBDIR+=	ruby-tag
 SUBDIR+=	ruby-webrick
+SUBDIR+=	sarg
 SUBDIR+=	sitecopy
 SUBDIR+=	snarf
 SUBDIR+=	spfc
