@@ -1,9 +1,9 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: fetchmail.sh,v 1.1 2003/09/11 22:58:06 jlam Exp $
 #
 # PROVIDE: fetchmail
-# REQUIRE: DAEMON
+# REQUIRE: mail
 
 if [ -f /etc/rc.subr ]; then
 	. /etc/rc.subr
