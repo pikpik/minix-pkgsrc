@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/21 17:03:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:18:14 tv Exp $
 #
 
 DISTNAME=	desktop-file-utils-0.8
 PKGREVISION=	1
 CATEGORIES=	sysutils gnome
-MASTER_SITES=	http://freedesktop.org/Software/desktop-file-utils/releases/
+MASTER_SITES=	http://freedesktop.org/software/desktop-file-utils/releases/
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/Software/desktop-file-utils
