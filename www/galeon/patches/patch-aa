@@ -1,6 +1,6 @@
 $NetBSD$
 
---- configure.in.orig	2004-07-03 17:49:13.000000000 +0100
+--- configure.in.orig	2004-08-07 21:42:52.000000000 +0100
 +++ configure.in
 @@ -213,12 +213,12 @@ AC_ARG_WITH(mozilla-snapshot,
  AC_MSG_RESULT($MOZILLA_VERSION$autodetect)

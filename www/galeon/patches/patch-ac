@@ -1,6 +1,6 @@
 $NetBSD$
 
---- galeon.desktop.in.orig	2003-09-17 22:16:18.000000000 +0100
+--- galeon.desktop.in.orig	2004-07-21 21:46:59.000000000 +0100
 +++ galeon.desktop.in
 @@ -7,7 +7,7 @@ _Comment=Browse the web
  Exec=galeon
