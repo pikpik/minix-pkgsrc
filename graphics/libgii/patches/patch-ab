@@ -1,19 +1,20 @@
 $NetBSD$
 
---- input/xwin/Makefile.am.orig	Wed Mar 31 16:03:12 1999
+--- input/xwin/Makefile.am.orig	Sat Jul  7 21:55:49 2001
 +++ input/xwin/Makefile.am
-@@ -10,12 +10,10 @@ xwin_la_LDFLAGS = ${extra_libraries} -mo
+@@ -11,12 +11,11 @@ xwin_la_LDFLAGS = ${extra_libraries} -mo
  
- inputlibdir = ${libdir}/ggi/input
+ inputlibdir = ${libdir}/${ggi_subdir}/input
  
 -xev.c:	../x/xev.c
-+xev.c:	../x/xev.c ../x/xev.h
++xev.c:	../x/xev.c xev.h
  	rm -f xev.c
  	ln -s ../x/xev.c .
 -
 -xev.lo:
 -	rm -f xev.lo
 -	ln -s ../x/xev.lo .
++xev.h: ../x/xev.h
 +	rm -f xev.h
 +	ln -s ../x/xev.h .
  
