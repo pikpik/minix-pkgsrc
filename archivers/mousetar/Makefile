@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:21:46 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:21:28 grant Exp $
 #
 
 DISTNAME=	mousetar-20021217
@@ -17,7 +17,7 @@ do-extract:
 	done
 
 do-build:
-	cd ${WRKSRC}; ${CC} ${CFLAGS} tar.c -o mousetar
+	cd ${WRKSRC}; ${CC} ${CPPFLAGS} ${CFLAGS} tar.c -o mousetar
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mousetar ${PREFIX}/bin
