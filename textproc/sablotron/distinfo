@@ -1,4 +1,5 @@
-$NetBSD: distinfo,v 1.8 2003/08/31 10:58:37 jdolecek Exp $
+$NetBSD: distinfo,v 1.9 2004/01/05 19:11:25 wiz Exp $
 
 SHA1 (Sablot-1.0.1.tar.gz) = fbb41852bfc4b448d73b95c8cf951aa7f80c9d1b
+RMD160 (Sablot-1.0.1.tar.gz) = 2c52eecde29fe6913af00337dc2102995abaa78c
 Size (Sablot-1.0.1.tar.gz) = 485874 bytes
