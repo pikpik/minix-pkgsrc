@@ -1,10 +1,13 @@
-@comment $NetBSD: PLIST.i18n.90,v 1.1 2004/06/03 18:48:17 mrauch Exp $
+@comment $NetBSD$
 ${OPENOFFICE_VERSION}/share/autocorr/acor1033.dat
 ${OPENOFFICE_VERSION}/share/autocorr/acor2057.dat
 ${OPENOFFICE_VERSION}/share/autotext/${OPENOFFICE_LANG}/crdbus50.bau
 ${OPENOFFICE_VERSION}/share/autotext/${OPENOFFICE_LANG}/crdbus54.bau
+${OPENOFFICE_VERSION}/share/autotext/${OPENOFFICE_LANG}/standard.bau
 ${OPENOFFICE_VERSION}/share/autotext/${OPENOFFICE_LANG}/template.bau
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/internal/html.vor
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/internal/html.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/internal/idxexample.sxw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/internal/url_transfer.htm
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/layout/lyt-cool.sti
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/layout/lyt-darkblue.sti
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/presnt/prs-novelty.sti
@@ -145,18 +148,18 @@ ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/web/stl-sun.stw
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/web/stl-tracks.stw
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/web/stl-turquoise.stw
 ${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/web/stl-wetblue.stw
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn1.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn2.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn3.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf1.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf2.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf3.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax1.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax2.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax3.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem1.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem2.vor
-${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem3.vor
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn1.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn2.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizagn3.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf1.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf2.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizbrf3.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax1.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax2.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizfax3.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem1.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem2.stw
+${OPENOFFICE_VERSION}/share/template/${OPENOFFICE_LANG}/wizard/wizmem3.stw
 ${OPENOFFICE_VERSION}/share/wordbook/${OPENOFFICE_LANG}/soffice.dic
 ${OPENOFFICE_VERSION}/share/wordbook/${OPENOFFICE_LANG}/sun.dic
 ${OPENOFFICE_VERSION}/user/autotext/${OPENOFFICE_LANG}/mytexts.bau
