@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/12/11 16:31:56 erh Exp $
+# $NetBSD: Makefile,v 1.17 2004/01/20 12:23:57 agc Exp $
 
 DISTNAME=	pkg_tarup-1.5.1
 CATEGORIES=	pkgtools
@@ -27,6 +27,8 @@ SCRIPT_SUBST+=	AWK=${AWK:Q}				\
 		SU=${SU:Q}
 
 SCRIPT_SUBST_SED=	${SCRIPT_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}
+
+INSTALLATION_DIRS=	bin
 
 do-configure:
 	${SED} ${SCRIPT_SUBST_SED}			\
