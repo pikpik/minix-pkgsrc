@@ -1,6 +1,6 @@
 $NetBSD$
 
---- bins_edit.orig	Sat Aug 24 11:31:58 2002
+--- bins_edit.orig	Sat Aug 24 17:31:58 2002
 +++ bins_edit
 @@ -42,13 +42,14 @@ use HTML::Entities;
  my $verbose = 1;
@@ -10,14 +10,15 @@ $NetBSD$
 -chop($localEncoding);
 -if (! $localEncoding or ($localEncoding eq "ANSI_X3.4-1968")) {
 -  # ANSI is unspeakably primitive, promote it.
+-  $localEncoding = "LATIN1";
+-  print "Forcing encoding to $localEncoding\n" if ($verbose >=2);
+-}
 +# XXX no "locale" command in NetBSD
 +#my $localEncoding = `locale charmap`;
 +#chop($localEncoding);
 +#if (! $localEncoding or ($localEncoding eq "ANSI_X3.4-1968")) {
 +#  # ANSI is unspeakably primitive, promote it.
-   $localEncoding = "LATIN1";
--  print "Forcing encoding to $localEncoding\n" if ($verbose >=2);
--}
++my  $localEncoding = "LATIN1";
 +#  print "Forcing encoding to $localEncoding\n" if ($verbose >=2);
 +#}
  my $converter = Text::Iconv->new($localEncoding, "UTF-8");
