@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/07/14 16:04:20 agc Exp $
+# $NetBSD: Makefile,v 1.7 2000/07/15 20:39:15 agc Exp $
 #
 
 DISTNAME=		jpilot-0.98.1
@@ -19,6 +19,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 EVAL_PREFIX+=		GTKDIR=gtk+
 CONFIGURE_ARGS+=	--with-gtk-prefix="${GTKDIR}"
 CONFIGURE_ARGS+=	--with-pilot-prefix=${LOCALBASE}
+CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/jpilot/plugins
