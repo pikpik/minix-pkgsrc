@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libblas.a
+lib/libblas.la
+lib/libblas.so.0.0
