@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/29 23:57:28 minskim Exp $
 #
 
-DISTNAME=	Text-Quoted-1.5
+DISTNAME=	Text-Quoted-1.8
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
