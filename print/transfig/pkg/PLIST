@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/transfig
+bin/fig2dev
+bin/fig2ps2tex
+bin/fig2ps2tex.sh
+bin/pic2tpic
+man/cat1/fig2dev.0
+man/cat1/fig2ps2tex.0
+man/cat1/pic2tpic.0
+man/cat1/transfig.0
