@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/03/07 15:52:02 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/03/27 03:20:03 hubertf Exp $
 
 DISTNAME=		gcc-2.95.2
 PKGNAME=		pgcc-2.95.2.1
@@ -58,6 +58,10 @@ WRKSRC=			${WRKDIR}/objdir
 .if (${OPSYS} != SunOS)
 CONFIGURE_ARGS+=	--with-gnu-as --with-gnu-ld
 GCC_PREFIX=		${LOCALBASE}/${PKGNAME}
+.if ${MACHINE_PLATFORM:MNetBSD-*-sparc}
+PLIST_SRC=		${PKGDIR}/PLIST
+PLIST_SRC+=		${PKGDIR}/PLIST.NetBSD-sparc
+.endif
 .else
 .if (${CC} != gcc)
 ALL_TARGET=		bootstrap
