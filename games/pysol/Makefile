@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/09/27 23:18:07 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2002/01/28 17:38:44 drochner Exp $
 # FreeBSD Id: ports/games/pysol/Makefile,v 1.20 1999/12/08 11:01:01 tg Exp
 
 DISTNAME=       pysol-4.72
@@ -37,6 +37,6 @@ post-install:
 	  ${ECHO} "@dirrm $$DIR" >> ${PLIST_SRC}; \
 	  done)
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../x11/py-Tk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

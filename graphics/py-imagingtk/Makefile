@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/28 17:37:24 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2002/02/14 11:39:47 drochner Exp $
 #
 
 DISTNAME=	Imaging-1.1.2
@@ -30,7 +30,7 @@ do-install:
 	${INSTALL_DATA} enhancer.py painter.py player.py \
 	thresholder.py viewer.py ${PREFIX}/share/examples/py20-imaging )
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../graphics/py-imaging/buildlink.mk"
 .include "../../x11/py-Tk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

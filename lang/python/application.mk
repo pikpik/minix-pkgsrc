@@ -1,4 +1,4 @@
-# $NetBSD: application.buildlink.mk,v 1.4 2002/01/18 14:16:19 drochner Exp $
+# $NetBSD$
 
 .include "../../lang/python/pyversion.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/09/03 20:31:02 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2002/09/04 13:06:54 drochner Exp $
 
 DISTNAME=	Imaging-1.1.3
 PKGNAME=	${PYPKGPREFIX}-imaging-1.1.3
@@ -22,6 +22,6 @@ do-configure:
 	 >${WRKSRC}/setup.py.tmp && ${MV} -f ${WRKSRC}/setup.py.tmp \
 	 ${WRKSRC}/setup.py
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

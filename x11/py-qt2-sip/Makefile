@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/17 10:29:01 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/20 22:46:08 jlam Exp $
 #
 
 DISTNAME=	sip-3.1
@@ -24,7 +24,7 @@ PY_PATCHPLIST=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 MAKE_ENV+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../x11/qt2-libs/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/06/15 08:18:15 shell Exp $
 
 DISTNAME=	ChineseCodecs1.2.0
 PKGNAME=	${PYPKGPREFIX}-zhCodecs-1.2.0
@@ -18,5 +18,5 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/Python
 post-extract:
 	@${CHMOD} 711 ${WRKSRC}/chinesetw
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/06/02 08:51:44 cjep Exp $
 #
 
 DISTNAME=	Wallpaper-0.1.1
@@ -35,6 +35,6 @@ pre-install:
 do-install:
 	${CP} -Rf ${WRKSRC} ${PREFIX}/share/rox
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../x11/pygtk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

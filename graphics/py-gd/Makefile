@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/01/19 17:49:14 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2002/03/13 17:37:16 fredb Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	${PYPKGPREFIX}-gd-1.3
@@ -34,5 +34,5 @@ do-configure:
 	${CP} ${PREFIX}/${PYLIB}/config/Makefile.pre.in ${WRKSRC}
 	cd ${WRKSRC}; ${MAKE} -f Makefile.pre.in boot
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

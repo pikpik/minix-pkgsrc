@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/29 16:17:34 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/10 02:29:35 shell Exp $
 
 DISTNAME=	Optik-1.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -11,5 +11,5 @@ COMMENT=	command line parsing library for Python
 
 PYDISTUTILSPKG=	# defined
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

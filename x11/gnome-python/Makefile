@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/03/26 08:01:44 tron Exp $
+# $NetBSD: Makefile,v 1.26 2002/09/10 16:06:52 wiz Exp $
 
 DISTNAME=		gnome-python-1.4.0
 PKGNAME=		${PYPKGPREFIX}-gnome-1.4.0
@@ -38,6 +38,6 @@ post-configure:
 .endfor
 .endif
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../x11/gnome-core/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/14 13:02:23 wiz Exp $
 #
 
 DISTNAME=	flawfinder-1.20
@@ -20,6 +20,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/flawfinder ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/flawfinder.1 ${PREFIX}/man/man1
 
-.include "../../lang/python/application.buildlink.mk"
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/application.mk"
+.include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

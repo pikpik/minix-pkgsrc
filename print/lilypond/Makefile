@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/04/14 11:25:08 rh Exp $
+# $NetBSD: Makefile,v 1.8 2002/05/20 13:47:04 wiz Exp $
 #
 
 DISTNAME=	lilypond-1.4.13
@@ -23,7 +23,7 @@ CONFIGURE_ENV+=	PYTHON=${PYTHONBIN}
 PYTHON_VERSIONS_ACCEPTED= 20 21 # 22 has some regular expression problem
 
 .include "../../lang/guile/buildlink.mk"
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../print/teTeX-bin/kpathsea.buildlink.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/05/20 12:38:58 wiz Exp $
 #
 
 DISTNAME=	mkfontalias.py
@@ -23,5 +23,5 @@ do-extract:
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/mkfontalias.py ${PREFIX}/bin/mkfontalias
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

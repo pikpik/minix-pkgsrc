@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/04/19 15:19:07 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2002/05/12 10:16:47 abs Exp $
 
 DISTNAME=	cwtext-0.91
 CATEGORIES=	ham
@@ -23,5 +23,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cwpcm ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/cwtext ${PREFIX}/bin
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

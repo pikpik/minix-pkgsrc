@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:44 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/01/18 11:04:04 drochner Exp $
 #
 
 DISTNAME=	tdir-1.58
@@ -12,5 +12,5 @@ LICENSE=	tdir-license
 
 PYTHON_PATCH_SCRIPTS=	tdir
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/29 16:27:53 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/10 02:25:03 shell Exp $
 
 DISTNAME=	pychecker-0.8.10
 PKGNAME=	${PYPKGPREFIX}-checker-0.8.10
@@ -19,5 +19,5 @@ post-patch:
 		-e "s|@PYPKGPREFIX@|${PYPKGPREFIX}|" \
 		<${WRKSRC}/setup.py  > ${WRKSRC}/setup.py.new
 
-.include "../../lang/python/extension.buildlink.mk"
+.include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

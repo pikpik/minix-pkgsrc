@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/06/15 09:54:02 shell Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/15 09:55:53 shell Exp $
 
 DISTNAME=	pyDict-0.2.5.1
 CATEGORIES=	textproc
@@ -27,6 +27,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${WRKSRC}/COPYING ${WRKSRC}/README ${PREFIX}/share/doc/pyDict
 	${INSTALL_SCRIPT} ${WRKSRC}/dict.py ${PREFIX}/bin/pydict
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
 .include "../../x11/pygtk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
