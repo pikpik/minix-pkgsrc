@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2001/02/06 03:17:00 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 17:42:20 wiz Exp $
 #
 
-DISTNAME=		nut-0.44.2
-PKGNAME=		ups-nut-cgi-0.44.2
+DISTNAME=		nut-0.44.3-pre5
+PKGNAME=		ups-nut-cgi-0.44.3pre5
 CATEGORIES=		sysutils
-MASTER_SITES=		http://www.exploits.org/nut/release/
+MASTER_SITES=		http://www.exploits.org/nut/testing/0.44.3-pre/
 
-MAINTAINER=		collver@softhome.net
+MAINTAINER=		collver@linuxfreemail.com
 HOMEPAGE=		http://www.exploits.org/nut/
 COMMENT=		Network UPS Tools CGI scripts
 
@@ -14,7 +14,7 @@ DEPENDS+=		gd-*:../../graphics/gd
 DEPENDS+=		ups-nut-0*:../ups-nut
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 
-WRKSRC=			${WRKDIR}/nut-0.44.2
+WRKSRC=			${WRKDIR}/nut-0.44.3
 
 ALL_TARGET=		cgi
 INSTALL_TARGET=		install-cgi
