@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.29 2002/08/28 11:06:18 seb Exp $
+# $NetBSD: defs.Linux.mk,v 1.30 2002/09/04 14:47:33 agc Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -15,6 +15,7 @@ DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/bin/echo
 EGREP?=		/bin/egrep
+EXPR?=		/usr/bin/expr
 FALSE?=		/bin/false
 FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
