@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 21:47:50 grant Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:20:05 agc Exp $
 
 DISTNAME=		ntl-5.3.1
 CATEGORIES=		math devel
@@ -12,7 +12,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/src
 NO_CONFIGURE=		# defined
 USE_LIBTOOL=		yes
 MAKEFILE=		makefile
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 
-.include "../../devel/gmp/buildlink2.mk"
+.include "../../devel/gmp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
