@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/09/18 14:00:58 yyamano Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:07:06 agc Exp $
 #
 
 DISTNAME=	mousetar-20021217
@@ -11,6 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	der Mouse's version of tar program
 
 WRKSRC=		${WRKDIR}
+USE_BUILDLINK3=	yes
 
 do-extract:
 	for f in ${DISTFILES}; do					\
