@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/15 02:58:50 dmcmahill Exp $
 #
 
-DISTNAME=	gnucap-0.30
+DISTNAME=	gnucap-0.31
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_GNU:=gnucap/}
 

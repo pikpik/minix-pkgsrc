@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/11/15 02:58:50 dmcmahill Exp $
 bin/gnucap
+share/doc/gnucap/WARNINGS
 share/doc/gnucap/acs-tutorial
 share/doc/gnucap/contents.png
 share/doc/gnucap/images.aux
