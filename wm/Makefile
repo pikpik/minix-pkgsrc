@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/01/12 13:41:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.67 2005/01/14 13:38:29 jmmv Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -66,6 +66,7 @@ SUBDIR+=	windowlab
 SUBDIR+=	windowmaker
 SUBDIR+=	wm2
 SUBDIR+=	wmakerconf
+SUBDIR+=	wmdrawer
 SUBDIR+=	wmctrl
 SUBDIR+=	wmextra
 SUBDIR+=	wmi
