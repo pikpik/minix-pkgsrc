@@ -1,8 +1,9 @@
-# $NetBSD: $
 # New ports collection makefile for:	mpg123
 # Version required:     mpg123-0.59k
 # Date created:		97-10-25
 # Whom:			augustss@cs.chalmers.se
+#
+# $NetBSD: Makefile,v 1.2 1997/10/28 23:59:56 augustss Exp $
 #
 
 DISTNAME=       mpg123-0.59k
