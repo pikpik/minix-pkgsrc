@@ -1,0 +1,7 @@
+# $NetBSD$
+#
+
+DISTNAME=	phoenix-i686-pc-linux-gnu
+
+PLATFORM=	linux
+PHOENIX_LIB=    ${PREFIX}/lib/phoenix-${PLATFORM}
