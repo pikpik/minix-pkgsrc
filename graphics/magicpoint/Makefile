@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/11/30 17:29:30 taca Exp $
+# $NetBSD: Makefile,v 1.42 2004/12/13 22:51:09 agc Exp $
 
 DISTNAME=		magicpoint-1.10a
 PKGREVISION=		4
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/ \
 			ftp://ftp.mew.org/pub/MagicPoint/
 
 MAINTAINER=		itojun@itojun.org
-HOMEPAGE=		http://www.Mew.org/mgp/
+HOMEPAGE=		http://member.wide.ad.jp/wg/mgp/
 COMMENT=		X11 based presentation tool
 
 CONFLICTS=		mgp-[0-9]*
