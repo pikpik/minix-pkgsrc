@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.PL.orig	Wed Aug  1 17:27:52 2001
++++ Makefile.PL
+@@ -4,7 +4,7 @@
+ WriteMakefile(
+     'NAME'	   => 'Text::Iconv',
+     'VERSION_FROM' => 'Iconv.pm', # finds $VERSION
+-    'LIBS'	   => [''],   # e.g., '-lm' 
++    'LIBS'	   => ['-liconv'],   # e.g., '-lm' 
+     'DEFINE'	   => '',     # e.g., '-DHAVE_SOMETHING' 
+     'INC'	   => '',     # e.g., '-I/usr/include/other' 
+     'dist'         => {COMPRESS => 'gzip', SUFFIX => 'gz'},
