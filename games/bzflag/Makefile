@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/11/30 22:58:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/13 10:32:53 xtraeme Exp $
 
 DISTNAME=	bzflag-1.10.20031209
+PKGNAME=	${DISTNAME:S/20031209/0/}
 WRKSRC=		${WRKDIR}/bzflag-1.9.10.20031209
 CATEGORIES=	games x11
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=bzflag/}
