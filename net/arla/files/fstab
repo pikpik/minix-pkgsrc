@@ -1,0 +1,2 @@
+# $NetBSD$
+/dev/xfs0		/afs	xfs	rw		0	0
