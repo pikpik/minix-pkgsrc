@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/hot-babe
+man/man1/hot-babe.1
