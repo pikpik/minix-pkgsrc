@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.189 2004/07/26 15:20:25 minskim Exp $
+# $NetBSD: Makefile,v 1.190 2004/08/04 20:47:37 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -10,6 +10,7 @@ SUBDIR+=	aide
 SUBDIR+=	aide06
 SUBDIR+=	amavis
 SUBDIR+=	amavis-perl
+SUBDIR+=	amavisd-new
 SUBDIR+=	antonym
 SUBDIR+=	apg
 SUBDIR+=	arirang
