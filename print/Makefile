@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2003/03/23 10:12:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.102 2003/03/25 14:04:41 salo Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -15,6 +15,7 @@ SUBDIR+=	auctex
 SUBDIR+=	bg5pdf
 SUBDIR+=	bg5ps
 SUBDIR+=	bww2tex
+SUBDIR+=	chktex
 SUBDIR+=	cjk-lyx
 SUBDIR+=	cnprint
 SUBDIR+=	cups
