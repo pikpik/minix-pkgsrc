@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.534 2000/08/03 15:45:42 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.535 2000/08/06 23:39:23 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -328,7 +328,7 @@ DECOMPRESS_CMD?=	${BZCAT}
 DECOMPRESS_CMD?=	${CAT}
 .elif ${EXTRACT_SUFX} == ".zip"
 BUILD_DEPENDS+=		unzip:../../archivers/unzip
-EXTRACT_CMD=		unzip -Laq ${DOWNLOADED_DISTFILE}
+EXTRACT_CMD?=		unzip -Laq ${DOWNLOADED_DISTFILE}
 .else
 DECOMPRESS_CMD?=	${GZCAT}
 .endif
