@@ -1,15 +1,21 @@
-# $NetBSD: Makefile,v 1.15 1998/09/16 15:25:08 tron Exp $
-# FreeBSD Id: Makefile,v 1.2 1997/09/24 06:55:01 tg Exp
+# $NetBSD$
 #
 
-DISTNAME=	giflib-3.0
+DISTNAME=	giflib-4.1.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.ccil.org/~esr/giflib/
+MASTER_SITES=	ftp://prtr-13.ucsc.edu/pub/giflib/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.ccil.org/~esr/giflib/
+HOMEPAGE=	http://prtr-13.ucsc.edu/~badger/software/giflib.shtml
+
+CONFLICTS=	libungif-*
 
 USE_LIBTOOL=	yes
+
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--without-x
+
+DOCDIR=		${PREFIX}/share/doc/giflib
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -17,12 +23,12 @@ USE_LIBTOOL=	yes
 MAKE_ENV+=	CC="${CC} -I${LOCALBASE}/include"
 .endif
 
-post-extract:
-	@${RM} -f ${WRKSRC}/doc/gif2x11.html
+post-patch:
+	${RM} ${WRKSRC}/doc/gif2x11.html
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/doc/giflib
-	@${INSTALL_DATA} ${WRKSRC}/doc/*.html ${WRKSRC}/doc/*.txt \
-	  ${PREFIX}/share/doc/giflib
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	cd ${WRKSRC}; ${INSTALL_DATA} COPYING PATENT_PROBLEMS ${DOCDIR}
+	cd ${WRKSRC}/doc; ${INSTALL_DATA} *.html *.txt *.png ${DOCDIR}
 
 .include "../../mk/bsd.pkg.mk"
