@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2001/05/21 12:55:06 zuntum Exp $
+# $NetBSD: Makefile,v 1.222 2001/05/21 13:17:54 zuntum Exp $
 #
 
 COMMENT=	Networking tools
@@ -144,6 +144,7 @@ SUBDIR+=	speakfreely
 SUBDIR+=	spegla
 SUBDIR+=	srsh
 SUBDIR+=	ssync
+SUBDIR+=	stripes
 SUBDIR+=	tacacs
 SUBDIR+=	tcl-scotty
 SUBDIR+=	tcpdmerge
