@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/06/01 15:02:12 rh Exp $
+# $NetBSD: Makefile,v 1.18 2000/09/29 06:21:34 rh Exp $
 #
 
 DISTNAME=	ggv-0.95
@@ -7,6 +7,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/ggv/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
+COMMENT=	GNOME frontend for GhostScript
 
 DEPENDS+=	ghostscript-[6-9]*:../../print/ghostscript
 DEPENDS+=	gnome-core>=1.2.0:../../x11/gnome-core

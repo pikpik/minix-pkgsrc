@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 17:32:11 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/28 17:04:23 wiz Exp $
 #
 
 DISTNAME=	lilypond-1.3.119
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.cs.uu.nl/pub/GNU/LilyPond/development/
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.cs.uu.nl/people/hanwen/lilypond/index.html
+COMMENT=	GNU Music Typesetter
 
 DEPENDS+=	guile>=1.3.4:../../lang/guile
 DEPENDS+=	python>=2.0:../../lang/python

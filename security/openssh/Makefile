@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2001/02/06 03:17:00 fredb Exp $
+# $NetBSD: Makefile,v 1.38 2001/02/15 15:18:17 briggs Exp $
 
 DISTNAME=		openssh-2.3.0p1
 CATEGORIES=		security
@@ -10,6 +10,7 @@ MASTER_SITES=		ftp://gd.tuwien.ac.at/OpenBSD/OpenSSH/portable/ \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.openssh.com/
+COMMENT=		Open Source Secure shell client and server (remote login program)
 
 BUILD_DEPENDS+=		${PERL5}:../../lang/perl5-base
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2001/02/06 03:17:00 fredb Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/12 16:15:14 agc Exp $
 
 DISTNAME=		fressh-0.8
 CATEGORIES=		security
@@ -7,5 +7,6 @@ EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.fressh.com/
+COMMENT=		new, free, rewritten implementation of the SSH communication protocol
 
 .include "../../mk/bsd.pkg.mk"

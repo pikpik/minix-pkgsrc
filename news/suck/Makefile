@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.10 2001/01/21 18:31:27 veego Exp $
 #
 
 DISTNAME=	suck-4.2.2
@@ -9,6 +9,7 @@ MASTER_SITES=	http://home.att.net/~bobyetman/ \
 
 MAINTAINER=	drankin@bohemians.lexington.ky.us
 HOMEPAGE=	http://home.att.net/~bobyetman/
+COMMENT=	Feed a local news server without a dedicated newsfeed
 
 GNU_CONFIGURE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/06/22 08:11:34 itohy Exp $
+# $NetBSD: Makefile,v 1.14 2000/08/23 23:14:31 tron Exp $
 #
 
 DISTNAME=		transfig.3.2.3
@@ -8,6 +8,7 @@ CATEGORIES=		graphics print
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/transfig/}
 
 MAINTAINER=		root@garbled.net
+COMMENT=		TeX document creation tool utilizing portable graphics
 
 DEPENDS+=		jpeg-6b:../../graphics/jpeg
 

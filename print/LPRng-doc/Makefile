@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/13 00:37:10 kei Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/12 13:08:48 dent Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.lprng.com/
+COMMENT=	LPRng documentation in dvi, text, html and ps formats
 
 EXTRACT_ONLY=	# empty
 NO_PATCH=	yes

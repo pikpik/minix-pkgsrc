@@ -1,8 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/30 11:11:25 frueauf Exp $
 #
 
 DISTNAME=	libnasl-${VERS}
 .include	"../nessus/Makefile.common"
+
+COMMENT=	Nessus Attack Scripting Language library
 
 DEPENDS+=       nessus-libraries-${VERS}:../nessus-libraries
 

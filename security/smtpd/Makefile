@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/09/03 13:22:31 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/29 11:34:41 wiz Exp $
 #
 
 DISTNAME=	smtpd-2.0
@@ -9,6 +9,7 @@ PATCHFILES=	patch-smtpd-2.0-RBL.gz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.obtuse.com/smtpd.html
+COMMENT=	Store and forward SMTP proxy
 
 SPOOL=		/var/spool/smtpd
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1998/11/12 23:48:35 frueauf Exp $
 
 DISTNAME=	nfsshell-1.0
 WRKSRC=		${WRKDIR}/nfsbug
@@ -8,6 +8,7 @@ DISTFILES=	nfsBugFerret.tgz \
 		nfsShell.c
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	NFS security verification suite
 
 EXTRACT_ONLY=   nfsBugFerret.tgz
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/10 00:57:17 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/09/04 15:46:31 kim Exp $
 #
 
 DISTNAME=	mpdist-3.5.2
@@ -8,6 +8,7 @@ MASTER_SITES=	http://java.sun.com/people/richb/RichApps/mp/
 
 MAINTAINER=     kim@tac.nyc.ny.us
 HOMEPAGE=	http://java.sun.com/people/richb/
+COMMENT=	PostScript pretty printer
 
 GNU_CONFIGURE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/15 00:54:19 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/15 18:09:02 drochner Exp $
 #
 
 DISTNAME=		pdflib-3.03
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.pdflib.com/pdflib/download/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.pdflib.com/pdflib/index.html
+COMMENT=		C library to produce PDF files
 
 DEPENDS+=	tiff-3.5.5:../../graphics/tiff
 DEPENDS+=	jpeg-6b:../../graphics/jpeg

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2000/09/26 19:59:54 fredb Exp $
+# $NetBSD: Makefile,v 1.27 2000/10/10 11:42:15 itojun Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
 #
 
@@ -10,6 +10,7 @@ MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/pgp/2.x/src/ \
 
 MAINTAINER=	packages@NetBSD.ORG
 HOMEPAGE=	http://www.pgpi.com/
+COMMENT=	Public-Key encryption and digital signature utility
 
 CRYPTO=		yes
 USE_RSAREF2=	NO

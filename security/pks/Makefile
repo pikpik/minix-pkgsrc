@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/09/03 13:19:56 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/09/20 05:14:11 jlam Exp $
 
 DISTNAME=		pks-0.9.4
 CATEGORIES=		security www
@@ -13,6 +13,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		burgess@neonramp.com
 HOMEPAGE=		http://www.mit.edu/people/marc/pks/
+COMMENT=		PGP Public Key Server
 
 DEPENDS+=		db-*:../../databases/db
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/01/30 16:37:55 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/05 09:01:02 tron Exp $
 
 DISTNAME=	xpp-1.0
 CATEGORIES=	print x11
@@ -6,6 +6,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cups/}
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://cups.sourceforge.net/xpp/index.html
+COMMENT=	X Printing Panel
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
 DEPENDS+=	cups>=1.1.1:../../print/cups

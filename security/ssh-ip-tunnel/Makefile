@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/10/21 22:55:02 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/13 12:49:07 is Exp $
 
 DISTNAME=	vpn-1.0
 PKGNAME=	ssh-ip-tunnel-1.0
@@ -6,6 +6,7 @@ CATEGORIES=	security net
 MASTER_SITES=	http://bleu.west.spy.net/~dustin/soft/
 
 MAINTAINER=	dustin@spy.net
+COMMENT=	Simple VPN system using pppd over ssh
 
 DEPENDS+=	pty-redir-0.1:../../misc/pty-redir
 .if !exists(/usr/bin/ssh)

@@ -1,8 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/30 11:16:15 frueauf Exp $
 #
 
 DISTNAME=	nessus-plugins-${VERS}
 .include	"../nessus/Makefile.common"
+
+COMMENT=	Plugins for the Nessus Network Security Scanner
 
 DEPENDS+=	nessus-core-${VERS}:../nessus-core
 DEPENDS+=	nmap-2.*:../../net/nmap

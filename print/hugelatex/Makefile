@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/26 02:26:05 hubertf Exp $
 #
 
 DISTNAME=	hugelatex-1.0
@@ -7,6 +7,7 @@ MASTER_SITES=	# none
 DISTFILES=	# nada
 
 MAINTAINER=	hubertf@netbsd.org
+COMMENT=	LaTeX format files with large limits
 
 DEPENDS+=	teTeX-1.0*:../teTeX
 

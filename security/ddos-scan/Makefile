@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/02/14 16:23:31 agc Exp $
+# $NetBSD: Makefile,v 1.3 2000/04/06 23:11:38 wiz Exp $
 #
 
 DISTNAME=	ddos_scan
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://staff.washington.edu/dittrich/
+COMMENT=	scan for a limited set of distributed denial of service (ddos) agents
 
 DECOMPRESS_CMD=	${CAT}
 ALL_TARGET=	default dds

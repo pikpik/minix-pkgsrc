@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/14 02:07:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/05/16 16:02:04 hubertf Exp $
 #
 
 DISTNAME=	pkg_tarup-1.0.1
@@ -7,6 +7,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	hubertf@netbsd.org
+COMMENT=	Generates binary package from installed pkg
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    yes

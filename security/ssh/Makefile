@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2001/01/29 11:34:42 wiz Exp $
+# $NetBSD: Makefile,v 1.86 2001/02/13 12:49:07 is Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -16,6 +16,7 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.cs.hut.fi/ssh/
+COMMENT=		Secure shell client and server (remote login program)
 
 CONFLICTS=		openssh-[0-9]* ssh6-[0-9]*
 

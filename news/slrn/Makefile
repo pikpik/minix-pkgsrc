@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/01/01 18:24:30 mjl Exp $
+# $NetBSD: Makefile,v 1.10 2000/10/30 14:17:19 mjl Exp $
 #
 
 DISTNAME=		slrn-0.9.6.3
@@ -8,6 +8,7 @@ MASTER_SITES=		ftp://space.mit.edu/pub/davis/slrn/ \
 
 MAINTAINER=		mjl@netbsd.org
 HOMEPAGE=		http://space.mit.edu/%7Edavis/slrn.html
+COMMENT=		Powerful threaded newsreader, that is highly customizable
 
 DEPENDS+=		libslang-*:../../devel/libslang
 

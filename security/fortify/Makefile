@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/10/28 00:08:42 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/21 04:45:20 jlam Exp $
 #
 
 DISTNAME=	Fortify-1.4.6-unix-src
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.fortify.net/pub/Fortify/ \
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.fortify.net/
+COMMENT=	patches Netscape binary to provide 128-bit cryptography
 
 LICENSE=	fee-based-commercial-use
 

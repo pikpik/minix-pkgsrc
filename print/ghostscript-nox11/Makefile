@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2000/04/20 16:29:55 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/07 02:04:33 jlam Exp $
 
 PKGNAME=	ghostscript-nox11-${GS_VERS}
+
+COMMENT=	Aladdin Postscript interpreter
 
 CONFLICTS=	ghostscript{,-x11}-[0-9]*
 

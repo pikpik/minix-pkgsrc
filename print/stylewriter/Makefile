@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/05/07 02:11:18 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/05/10 15:39:08 jlam Exp $
 #
 
 DISTNAME=	stylewriter
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.pobox.com/~monroe/styl/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.pobox.com/~monroe/styl/
+COMMENT=	Apple StyleWriter driver for un*x
 
 DEPENDS+=	ghostscript{,-nox11}-[6-9]*:../../print/ghostscript
 DEPENDS+=	enscript-1.6.1:../../print/enscript

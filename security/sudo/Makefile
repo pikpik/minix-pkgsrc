@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2001/01/29 11:34:42 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2001/02/05 09:01:03 tron Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/11/12 03:24:41 obrien Exp
 #
 
@@ -12,6 +12,7 @@ MASTER_SITES=		http://www.courtesan.com/sudo/dist/ \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.courtesan.com/sudo/
+COMMENT=		Allow others to run commands as root
 
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 

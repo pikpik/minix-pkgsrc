@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/07 11:44:04 agc Exp $
+# $NetBSD: Makefile,v 1.2 1999/12/22 15:45:06 agc Exp $
 #
 
 DISTNAME=	pkgmanpages-19991222
@@ -7,6 +7,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	agc@netbsd.org
 HOMEPAGE=	http://www.netbsd.org/
+COMMENT=	manual page(s) for the packages collection
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/01/28 10:44:39 manu Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/28 16:03:22 tron Exp $
 
 DISTNAME=	rpm2pkg-1.1
 CATEGORIES=	pkgtools
@@ -7,6 +7,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/Packages.txt
+COMMENT=	Convert RPM archives to NetBSD packages
 
 BUILD_DEPENDS+=	${RPMLIB}:../../misc/rpm
 

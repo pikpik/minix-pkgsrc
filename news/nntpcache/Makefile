@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/06/21 12:50:28 mjl Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/26 05:21:48 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/01 03:04:11 itojun Exp
 #
 
@@ -15,6 +15,7 @@ MASTER_SITES=		ftp://ftp.nntpcache.org/pub/nntpcache/ \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.nntpcache.org/
+COMMENT=		nntp multi-server caching daemon
 
 LICENSE=		fee-based-commercial-use
 
