@@ -1,8 +1,8 @@
 $NetBSD$
 
---- sync.c.orig	Mon Jan 28 19:19:56 2002
-+++ sync.c
-@@ -48,7 +48,7 @@ set_uid (DBM * db, const char *f, unsign
+--- src/sync.c.orig	2003-05-07 00:06:37.000000000 +0000
++++ src/sync.c
+@@ -53,7 +53,7 @@ set_uid (DBM * db, const char *f, unsign
  
      key.dptr = (void *) f;
      s = strchr (f, ':');
