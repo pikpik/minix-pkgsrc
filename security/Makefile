@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/11/24 16:53:43 agc Exp $
+# $NetBSD: Makefile,v 1.13 1998/12/31 14:32:42 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -9,6 +9,7 @@
 #    SUBDIR += fwtk
 #    SUBDIR += john
 #    SUBDIR += libident
+    SUBDIR += nessus
     SUBDIR += nfsbug
 #    SUBDIR += p5-Authen-Radius
 #    SUBDIR += p5-Crypt-DES
