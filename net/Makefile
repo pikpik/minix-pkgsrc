@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.371 2003/04/14 18:34:57 cjep Exp $
+# $NetBSD: Makefile,v 1.372 2003/04/17 08:34:18 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -23,6 +23,7 @@ SUBDIR+=	bind8
 SUBDIR+=	bind9
 SUBDIR+=	bind9-current
 SUBDIR+=	bing
+SUBDIR+=	bittorrent
 SUBDIR+=	bounce
 SUBDIR+=	bpalogin
 SUBDIR+=	bridged
