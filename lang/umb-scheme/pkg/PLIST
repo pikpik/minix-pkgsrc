@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/scheme
+lib/umb-scheme/prelude.scheme
+@dirrm lib/umb-scheme
+man/man1/scheme.1
