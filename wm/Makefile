@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2003/05/15 11:21:00 salo Exp $
+# $NetBSD: Makefile,v 1.43 2003/06/01 11:39:25 jmmv Exp $
 #
 
 COMMENT=	window managers (for X)
@@ -28,6 +28,7 @@ SUBDIR+=	golem
 SUBDIR+=	icepref
 SUBDIR+=	icewm
 SUBDIR+=	icewm-gnome
+SUBDIR+=	icewm-imlib
 SUBDIR+=	icewmconf
 SUBDIR+=	ion
 SUBDIR+=	larswm
