@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.176 2004/01/10 09:48:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.177 2004/01/10 22:43:06 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -94,6 +94,7 @@ SUBDIR+=	kp
 SUBDIR+=	kstars
 SUBDIR+=	ktail
 SUBDIR+=	less
+SUBDIR+=	libcdio
 SUBDIR+=	libdvdcss
 SUBDIR+=	libdvdplay
 SUBDIR+=	libdvdread
