@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1253 2003/09/02 12:01:14 seb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1254 2003/09/02 23:38:56 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -4440,8 +4440,7 @@ print-PLIST:
 BUILD_VIEWS?=	yes
 .endif
 
-# XXX Only support the standard view.
-PKGVIEWS=	""
+PKGVIEWS+=	${DEFAULT_VIEW}
 
 # Fake installation of package so that user can pkg_delete it later.
 # Also, make sure that an installed package is recognized correctly in
