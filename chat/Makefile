@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/06/20 01:08:32 grant Exp $
+# $NetBSD: Makefile,v 1.39 2002/06/20 04:41:45 grant Exp $
 #
 
 COMMENT=	communication programs
@@ -9,6 +9,7 @@ SUBDIR+=	blackened
 SUBDIR+=	bnc
 SUBDIR+=	centericq
 SUBDIR+=	dircproxy
+SUBDIR+=	eggdrop
 SUBDIR+=	ekg
 SUBDIR+=	emech
 SUBDIR+=	epic4
