@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/06/02 01:02:50 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/06/02 05:01:39 itojun Exp $
 
-DISTNAME=	pim6dd-20010602a
+DISTNAME=	pim6dd-20020403a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
