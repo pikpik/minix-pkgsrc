@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2003/09/07 19:43:36 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2003/09/13 23:21:21 jlam Exp $
 
 .if !defined(GLU_BUILDLINK3_MK)
 GLU_BUILDLINK3_MK=	# defined
@@ -63,6 +63,8 @@ BUILDLINK_DEPENDS.glu=	glu>=5.0
 BUILDLINK_DEPENDS+=	glu
 .  endif
 BUILDLINK_PACKAGES+=	glu
+.else
+BUILDLINK_PREFIX.glu=	${X11BASE}
 .endif
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:C/\+$//}
