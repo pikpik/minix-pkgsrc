@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/03/18 01:07:56 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2003/12/17 10:53:57 wulf Exp $
 #
 
 DISTNAME=	bbsload-0.2.6
@@ -7,7 +7,7 @@ MASTER_SITES=	http://bbtools.thelinuxcommunity.org/sources/
 
 MAINTAINER=	pino@dohd.org
 HOMEPAGE=	http://bbtools.thelinuxcommunity.org/
-COMMENT=	Small (in dimensions) tool to display the avarage load
+COMMENT=	Small (in dimensions) tool to display the average load
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
