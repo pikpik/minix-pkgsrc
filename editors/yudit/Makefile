@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2002/04/04 20:09:55 jdolecek Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/10 00:05:41 wiz Exp $
 #
 
-DISTNAME=	yudit-2.5
+DISTNAME=	yudit-2.7.2
 CATEGORIES=	editors
 MASTER_SITES=	http://yudit.org/download/
 
@@ -11,13 +11,10 @@ COMMENT=	Unicode Text Editor
 
 USE_BUILDLINK2=	yes
 USE_GMAKE=	yes
-USE_X11BASE=	yes
+USE_X11=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--with-x
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
-post-configure:
-	cd ${WRKSRC}/gui/locale && mv cz cs
+CONFIGURE_ARGS+=	--with-x
 
 .include "../../graphics/freetype-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
