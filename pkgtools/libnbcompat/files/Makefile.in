@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.in,v 1.4 2003/06/10 05:59:16 grant Exp $
+# $NetBSD: Makefile.in,v 1.5 2003/06/23 11:33:08 grant Exp $
 #
 
 srcdir	= @srcdir@
@@ -64,8 +64,8 @@ install:
 	${INSTALL} -m 444 vis.h ${prefix}/include/libnbcompat
 
 clean:
-	rm -f *.a *.o bits nbtypes.h config.h
+	rm -f *.a *.o bits nbtypes.h
 
 distclean: clean
-	rm -f Makefile config.log config.status configure.lineno
+	rm -f Makefile config.h config.log config.status configure.lineno
 
