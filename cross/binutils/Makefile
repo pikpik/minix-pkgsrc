@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/05/19 03:56:32 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2002/08/01 02:37:44 jschauma Exp $
 #
 # GNU binutils configured to hold `as many targets as the cross system is
 # capable of using'.  Configures and builds everything except gas, which
@@ -13,6 +13,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnu.org/
 COMMENT=		Unified GNU binutils for cross build environments
 
+USE_BUILDLINK2=		yes
 USE_CROSSBASE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
