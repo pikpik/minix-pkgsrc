@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 2001/03/22 14:33:19 wiz Exp $
+$NetBSD$
 
-SHA1 (gkrellm-1.0.7.tar.gz) = 467d99fc88c6ffa9e380df06effe5755ed048c07
-SHA1 (patch-aa) = 6ca1d28c018804159702038673080111b60f00cb
-SHA1 (patch-ab) = f18ea3c7c456d4c5638a3bf122e7ef0dbb217a93
+SHA1 (gkrellm-2.1.25.tar.bz2) = e45cf8192de7dcc393742d97f8b9a78950e4a5c4
+Size (gkrellm-2.1.25.tar.bz2) = 633685 bytes
+SHA1 (patch-ac) = 577aecc480525f7ede6e8726308343c5ba90eca7
+SHA1 (patch-af) = c1879ccb5cb9adb1fe9822284fd7962c637daec7
