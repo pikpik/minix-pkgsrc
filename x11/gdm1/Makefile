@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/14 19:30:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/25 07:30:23 snj Exp $
 
 DISTNAME=	gdm-2.2.0
 PKGREVISION=	6
@@ -65,11 +65,11 @@ GDMGRP=		daemon
 DEPENDS+=	PAM-[0-9]*:../../security/PAM
 .else
 
-post-patch:
-	cd ${WRKSRC} &&					\
-	${CP} configure configure.old &&		\
-	${SED} -e 's:security/pam_appl.h:nopam:g'	\
-		< configure.old > configure
+SUBST_CLASSES+=		pam
+SUBST_MESSAGE.pam=	"Disabling PAM support."
+SUBST_STAGE.pam=	pre-configure
+SUBST_FILES.pam=	configure
+SUBST_SED.pam=		-e 's:security/pam_appl.h:nopam:g'
 .endif
 
 post-build:
