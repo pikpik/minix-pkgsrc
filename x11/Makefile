@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.110 1999/09/09 08:49:52 drochner Exp $
+# $NetBSD: Makefile,v 1.111 1999/09/10 00:41:23 tron Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -78,6 +78,8 @@
 #    SUBDIR += qvwm
     SUBDIR += qwspritefield
     SUBDIR += rclock
+    SUBDIR += ruby-Tk
+    SUBDIR += ruby-gtk
     SUBDIR += rxvt
     SUBDIR += scwm
 #    SUBDIR += sliderule
