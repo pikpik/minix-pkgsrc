@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2000/02/13 23:28:49 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2000/02/25 01:04:13 wiz Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -22,6 +22,7 @@
     SUBDIR += suse_linux
     SUBDIR += suse_x11
     SUBDIR += suse_xforms
+    SUBDIR += swarm
     SUBDIR += uae
     SUBDIR += vice
     SUBDIR += wine
