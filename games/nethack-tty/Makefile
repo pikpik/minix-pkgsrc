@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/03/27 08:54:56 tron Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/10 17:50:07 pooka Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -12,5 +12,6 @@ INSTALL_TARGET=		binfiles
 MAKE_ENV+=		GTYPE=-tty
 
 PATCHDIR=		"${.CURDIR}/../nethack-lib/patches"
+PATCH_SUM_FILE=		${.CURDIR}/../nethack-lib/files/patch-sum
 
 .include "../../mk/bsd.pkg.mk"
