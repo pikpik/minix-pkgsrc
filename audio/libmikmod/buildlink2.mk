@@ -1,9 +1,7 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:03:55 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:21:52 jlam Exp $
 
 .if !defined(LIBMIKMOD_BUILDLINK2_MK)
 LIBMIKMOD_BUILDLINK2_MK=	# defined
-
-.include "../../mk/bsd.buildlink.mk"
 
 BUILDLINK_PACKAGES+=		libmikmod
 BUILDLINK_DEPENDS.libmikmod?=	libmikmod>=3.1.9
