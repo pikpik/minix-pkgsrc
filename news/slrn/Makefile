@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2001/11/29 01:12:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.19 2001/12/01 20:50:05 mjl Exp $
 #
 
-DISTNAME=	slrn-0.9.7.3
+DISTNAME=	slrn-0.9.7.4
 CATEGORIES=	news
-MASTER_SITES=	http://prdownloads.sourceforge.net/slrn/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=slrn/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	mjl@netbsd.org
