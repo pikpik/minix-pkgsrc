@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.2309 2003/05/24 16:48:32 salo Exp $
+$NetBSD: CHANGES,v 1.2310 2003/05/24 17:30:20 salo Exp $
 
 Changes to the packages collection and infrastructure in 2003:
 
@@ -2132,3 +2132,5 @@ Changes to the packages collection and infrastructure in 2003:
 	Updated mplayer-share to 0.90nb2 [salo 2003-05-24]
 	Updated gmplayer to 0.90nb2 [salo 2003-05-24]
 	Updated mencoder to 0.90nb2 [salo 2003-05-24]
+	Updated links to 2.1.0.11 [wiz 2003-05-24]
+	Updated links-gui to 2.1.0.11 [wiz 2003-05-24]
