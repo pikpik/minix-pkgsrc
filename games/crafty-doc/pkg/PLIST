@@ -1,0 +1,3 @@
+@comment $NetBSD$
+share/doc/crafty/crafty.doc.ps
+@unexec rmdir -p %D/share/doc/crafty 2>/dev/null || true
