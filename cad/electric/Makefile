@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/13 01:39:18 dmcmahill Exp $
 #
 
 DISTNAME=	electric-6.05
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.gnu.org/software/electric/electric.html
 COMMENT=	Electrical CAD system
 
 USE_BUILDLINK_ONLY=	YES
+USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 
 post-patch:
