@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/06/02 01:21:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.31 2003/07/17 21:27:51 grant Exp $
 #
 # GNU binutils configured to hold `as many targets as the cross system is
 # capable of using'.  Configures and builds everything except gas, which
@@ -18,6 +18,8 @@ USE_CROSSBASE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
+CONFIG_GUESS_OVERRIDE=	# empty
+CONFIG_SUB_OVERRIDE=	# empty
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-64-bit-bfd
 CONFIGURE_ARGS+=	--enable-targets=${ENABLE_TARGETS_LIST} \
