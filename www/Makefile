@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2001/10/29 16:52:18 jlam Exp $
+# $NetBSD: Makefile,v 1.160 2001/10/29 19:36:28 jlam Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -97,6 +97,7 @@ SUBDIR+=	p5-HTML-Parser
 SUBDIR+=	p5-HTML-PrettyPrinter
 SUBDIR+=	p5-HTML-SimpleParse
 SUBDIR+=	p5-HTML-Table
+SUBDIR+=	p5-HTML-TableExtract
 SUBDIR+=	p5-HTML-Tagset
 SUBDIR+=	p5-HTML-Template
 SUBDIR+=	p5-HTML-Tree
