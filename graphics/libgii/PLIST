@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:51:52 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/11/25 20:16:26 jlam Exp $
 bin/mhub
 bin/xsendbut
-etc/ggi/libgii.conf
 include/ggi/errors.h
 include/ggi/events.h
 include/ggi/gg.h
@@ -68,10 +67,11 @@ man/man3/giiOpen.3
 man/man3/giiPanic.3
 man/man3/giiRemoveEventMask.3
 man/man3/giiSetEventMask.3
+share/examples/ggi/libgii.conf
+@dirrm share/examples/ggi
 @dirrm lib/ggi/input
 @dirrm lib/ggi/filter
 @dirrm lib/ggi
 @dirrm include/ggi/internal
 @dirrm include/ggi/input
 @dirrm include/ggi
-@dirrm etc/ggi
