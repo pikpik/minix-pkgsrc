@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 1999/05/18 21:27:01 hwr Exp $
+# $NetBSD: Makefile,v 1.10 1999/08/18 09:28:01 agc Exp $
 #
 
-DISTNAME=	openldap-1.2.1
-PKGNAME=	openldap-1.2.1p1
+DISTNAME=	openldap-1.2.7
+PKGNAME=	openldap-1.2.7p1
 WRKSRC=		${WRKDIR}/ldap
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/
