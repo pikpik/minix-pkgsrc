@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/23 18:16:10 wiz Exp $
 #
 
 DISTNAME=		flac-1.0-src
@@ -13,6 +13,7 @@ COMMENT=		FLAC xmms plugin
 
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
 DEPENDS+=		xmms>=1.2.4:../../audio/xmms
+DEPENDS+=		flac>=1.0:../../audio/flac
 
 .include "../../mk/bsd.prefs.mk"
 
