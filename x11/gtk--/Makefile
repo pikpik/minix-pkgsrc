@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/07/13 13:54:02 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2004/01/24 15:30:33 grant Exp $
 #
 
 DISTNAME=		gtkmm-1.2.10
@@ -12,19 +12,16 @@ MAINTAINER=		bsieker@freenet.de
 HOMEPAGE=		http://gtkmm.sourceforge.net/
 COMMENT=		C++ wrapper for GTK+
 
-BUILD_DEPENDS+=		m4>=1.4:../../devel/m4
-
 USE_X11BASE=		YES
 
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_PERL5=		build
-USE_GNU_TOOLS+=		make
+USE_GNU_TOOLS+=		m4 make
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS=		--enable-static
 
-M4=			${LOCALBASE}/bin/gm4
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE}
 
 post-install:
