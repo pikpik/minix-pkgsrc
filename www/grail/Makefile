@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/14 15:21:03 tsarna Exp $
+# $NetBSD: Makefile,v 1.6 1999/04/26 19:25:07 garbled Exp $
 #
 
 DISTNAME=	grail-06
@@ -25,12 +25,12 @@ do-install:
 	${CAT} ${PKGDIR}/PLIST.pre >${PLIST_SRC}
 	${SED} -e "s,@PREFIX@,${PREFIX}," -e "s,@GRAILDIR@,${GRAILDIR}," \
 		<${FILESDIR}/grail >${PREFIX}/bin/grail
-	chmod 555 ${PREFIX}/bin/grail
+	${CHMOD} 555 ${PREFIX}/bin/grail
 	${CP} -R ${WRKSRC} ${PREFIX}/${GRAILDIR}
 	${PREFIX}/bin/python \
 		${PREFIX}/lib/python1.5/compileall.py ${PREFIX}/${GRAILDIR}
-	(cd ${PREFIX}; find ${GRAILDIR} -type f -print >>${PLIST_SRC})
-	(cd ${PREFIX}; find -d ${GRAILDIR} -type d -print | \
+	(cd ${PREFIX}; ${FIND} ${GRAILDIR} -type f -print >>${PLIST_SRC})
+	(cd ${PREFIX}; ${FIND} -d ${GRAILDIR} -type d -print | \
 	${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
 .include "../../mk/bsd.pkg.mk"
