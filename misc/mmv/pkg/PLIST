@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/mmv
+man/man1/mmv.1
