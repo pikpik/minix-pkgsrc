@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/06/16 19:50:57 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2001/06/18 20:49:00 jlam Exp $
 
 DISTNAME=		esound-0.2.22
 CATEGORIES=		audio
@@ -12,6 +12,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
+USE_BUILDLINK_ONLY=	YES
 USE_CONFIG_WRAPPER=	YES
 
 .include "../../audio/libaudiofile/buildlink.mk"

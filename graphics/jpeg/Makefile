@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/06/03 19:17:43 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/16 15:22:25 wiz Exp $
 #
 
 DISTNAME=		jpegsrc.v6b
@@ -14,6 +14,7 @@ COMMENT=		IJG's jpeg compression utilities
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
+USE_BUILDLINK_ONLY=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-static
