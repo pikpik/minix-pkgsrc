@@ -1,7 +1,12 @@
 $NetBSD$
 
---- /dev/null	Wed Oct  1 17:23:30 1997
-+++ config/unix/intel_netbsd/setpath.c	Wed Oct  1 17:32:25 1997
-@@ -0,0 +1,2 @@
-+#include "paths.h"
-+#include "../Generic/setpath.h"
+--- src/rtt/Makefile.orig	Tue May 29 23:43:05 2001
++++ src/rtt/Makefile
+@@ -24,7 +24,6 @@
+ rtt:	$(OBJ)
+ 	$(CC) $(LDFLAGS) -o rtt $(OBJ)
+ 	cp rtt ../../bin
+-	strip ../../bin/rtt
+ 
+ library:	$(OBJ)
+ 		rm -rf rtt.a
