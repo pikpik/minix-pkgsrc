@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xvier
+man/cat6/xvier.0
+libexec/xvier_prog
