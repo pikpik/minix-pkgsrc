@@ -1,9 +1,10 @@
-@comment $NetBSD: PLIST,v 1.7 2004/02/15 21:54:55 seb Exp $
+@comment $NetBSD$
 bin/gctags
 bin/global
 bin/gozilla
 bin/gtags
 bin/htags
+bin/htags.pl
 man/man1/gctags.1
 man/man1/global.1
 man/man1/gozilla.1
@@ -18,6 +19,8 @@ share/gtags/LICENSE
 share/gtags/NEWS
 share/gtags/README
 share/gtags/THANKS
+share/gtags/bless.sh.tmpl
+share/gtags/global.cgi.tmpl
 share/gtags/globash.rc
 share/gtags/gtags.conf
 share/gtags/gtags.el
