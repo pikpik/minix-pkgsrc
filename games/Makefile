@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1998/08/01 15:01:54 frueauf Exp $
+# $NetBSD: Makefile,v 1.24 1998/08/03 18:45:42 tron Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -6,6 +6,7 @@
 #    SUBDIR += agm
 #    SUBDIR += an
 #    SUBDIR += angband
+    SUBDIR += battleball
 #    SUBDIR += block
 #    SUBDIR += blue
 #    SUBDIR += bs
