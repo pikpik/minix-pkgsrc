@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/28 02:17:00 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/30 00:40:20 jtb Exp $
 
-DISTNAME=		fftpack-20001129
+DISTNAME=		fftpack-20001130
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
@@ -11,12 +11,10 @@ WRKSRC=			${WRKDIR}/fftpack
 USE_LIBTOOL=		YES
 UES_FORTRAN=		YES
 
-FOPTS?=			-O2
-
 .include "../../mk/bsd.prefs.mk"
 
 post-extract:
-	@${SED} -e 's:%%FORTRAN%%:'${FC}':g;s:%%FOPTS%%:'${FOPTS}':g' \
+	@${SED} -e 's:%%FORTRAN%%:'${FC}':g' \
 	< ${FILESDIR}/Makefile > ${WRKSRC}/Makefile
 
 post-install:
