@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/05/05 19:05:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/13 13:52:34 wiz Exp $
 #
 
 DISTNAME=	blackbook-3
@@ -11,7 +11,7 @@ MAINTAINER=	sjr@hispabsd.org
 HOMEPAGE=	http://blackbook.sourceforge.net/
 COMMENT=	Simple address book (Gtk+ based)
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES

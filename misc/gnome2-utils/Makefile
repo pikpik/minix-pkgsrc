@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/17 00:21:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/23 21:50:46 jmmv Exp $
 #
 
 DISTNAME=		gnome-utils-2.4.1
@@ -14,7 +14,7 @@ COMMENT=		Set of useful GNOME2 utilities and applications
 BUILD_USES_MSGFMT=	yes
 
 USE_PERL5=		build
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes

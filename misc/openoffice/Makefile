@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2004/01/20 12:21:02 agc Exp $
+# $NetBSD: Makefile,v 1.43 2004/01/22 08:57:03 grant Exp $
 
 DISTNAME=		openoffice-0.0.0.641
 PKGREVISION=		2
@@ -29,7 +29,7 @@ BUILD_DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
 BUILD_DEPENDS+=		stlport>=4.0nb1:../../devel/stlport
 
 USE_X11=		# defined
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 PKG_JVMS_ACCEPTED=	sun-jdk13
 
 CONFLICTS+=		staroffice-[0-9]*

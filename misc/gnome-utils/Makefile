@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2003/11/12 01:31:50 salo Exp $
+# $NetBSD: Makefile,v 1.67 2004/01/03 18:49:46 reed Exp $
 
 DISTNAME=		gnome-utils-1.4.1.2
 PKGREVISION=		6
@@ -18,7 +18,7 @@ BUILDLINK_DEPENDS.gnome-panel=	gnome-panel<2.0
 
 CONFLICTS=		coreutils<=5.0
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES

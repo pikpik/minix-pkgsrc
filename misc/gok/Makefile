@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/03 18:49:46 reed Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/23 21:50:46 jmmv Exp $
 #
 
 DISTNAME=		gok-0.8.4
@@ -14,7 +14,7 @@ COMMENT=		GNOME On-Screen Keyboard
 DEPENDS+=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
