@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 1999/03/22 16:08:31 bad Exp $
+# $NetBSD: Makefile,v 1.4 1999/04/14 21:39:02 tron Exp $
 #
 
-DISTNAME=	gperf-2.7
+DISTNAME=	gperf-2.7.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=gperf/}
 
