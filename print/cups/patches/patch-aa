@@ -1,18 +1,8 @@
 $NetBSD$
 
---- Makedefs.in.orig	Mon Oct 16 19:02:08 2000
+--- Makedefs.in.orig	Wed Jan  3 12:44:39 2001
 +++ Makedefs.in
-@@ -46,14 +46,21 @@
- SHELL	=	/bin/sh
- 
- #
-+# CUPS administrator user and group...
-+#
-+
-+CUPS_USER	=	@CUPS_USER@
-+CUPS_GROUP	=	@CUPS_GROUP@
-+
-+#
+@@ -48,11 +48,11 @@
  # Installation programs...
  #
  
