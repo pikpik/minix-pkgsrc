@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.152 2002/11/04 07:41:33 rh Exp $
+# $NetBSD: Makefile,v 1.153 2002/11/15 17:33:37 wiz Exp $
 #
 
 COMMENT=	Games
@@ -18,6 +18,7 @@ SUBDIR+=	bridge-hands
 SUBDIR+=	bzflag
 SUBDIR+=	cbzone
 SUBDIR+=	cgoban
+SUBDIR+=	cgoban-java
 SUBDIR+=	civctp-demo
 SUBDIR+=	clanbomber
 SUBDIR+=	colchess
