@@ -1,4 +1,4 @@
-/*	$NetBSD: ar_io.c,v 1.37 2003/09/18 09:18:24 grant Exp $	*/
+/*	$NetBSD: ar_io.c,v 1.10 2003/09/23 14:48:46 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -78,7 +78,7 @@
 #if 0
 static char sccsid[] = "@(#)ar_io.c	8.2 (Berkeley) 4/18/94";
 #else
-__RCSID("$NetBSD: ar_io.c,v 1.2 2003/09/05 18:40:49 jlam Exp $");
+__RCSID("$NetBSD: ar_io.c,v 1.10 2003/09/23 14:48:46 grant Exp $");
 #endif
 #endif /* not lint */
 
@@ -93,6 +93,10 @@ __RCSID("$NetBSD: ar_io.c,v 1.2 2003/09/05 18:40:49 jlam Exp $");
 #endif
 #if HAVE_SYS_IOCTL_H
 #include <sys/ioctl.h>
+#endif
+#if HAVE_SYS_TAPE_H
+#include <sys/tape.h>
+#include "tape_h_fixup.h"
 #endif
 #if HAVE_SYS_MTIO_H
 #include <sys/mtio.h>
