@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.51 2003/08/23 09:07:07 grant Exp $
+# $NetBSD: defs.Darwin.mk,v 1.50.2.2 2003/08/26 21:58:06 jlam Exp $
 #
 # Variable definitions for the Darwin operating system.
 

@@ -1,4 +1,4 @@
-# $NetBSD: emacs.mk,v 1.14 2003/04/24 18:22:07 jmc Exp $
+# $NetBSD: emacs.mk,v 1.14.4.1 2003/08/19 20:11:08 jlam Exp $
 #
 # A Makefile fragment for Emacs Lisp packages.
 #

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: subst.mk,v 1.1.2.1 2003/08/27 11:44:32 jlam Exp $
 #
 # This Makefile fragment implements a general text replacement facility
 # for different classes of files in ${WRKSRC}.  For each class of files,

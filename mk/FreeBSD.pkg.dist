@@ -1,4 +1,4 @@
-#	$NetBSD: FreeBSD.pkg.dist,v 1.25 2003/07/22 23:21:18 jmmv Exp $
+#	$NetBSD: FreeBSD.pkg.dist,v 1.23.4.3 2003/08/27 11:44:28 jlam Exp $
 #
 
 /set type=dir uname=root gname=wheel mode=0755

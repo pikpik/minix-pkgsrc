@@ -1,5 +1,5 @@
 #!/usr/pkg/bin/perl
-# $NetBSD: post-build,v 1.24 2003/08/19 09:35:26 gavan Exp $
+# $NetBSD: post-build,v 1.22.2.1 2003/08/19 20:11:09 jlam Exp $
 #
 # Collect stuff after a pkg bulk build
 #

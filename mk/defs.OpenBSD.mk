@@ -1,4 +1,4 @@
-# $NetBSD: defs.OpenBSD.mk,v 1.17 2003/04/15 05:29:47 grant Exp $
+# $NetBSD: defs.OpenBSD.mk,v 1.17.4.1 2003/08/26 21:58:07 jlam Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 

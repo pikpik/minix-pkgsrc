@@ -1,4 +1,4 @@
-# $NetBSD: pthread.buildlink2.mk,v 1.13 2003/07/11 23:37:13 grant Exp $
+# $NetBSD: pthread.buildlink2.mk,v 1.13.4.2 2003/08/01 19:00:33 jlam Exp $
 #
 # The pthreads strategy for pkgsrc is to "bless" a particular pthread
 # package as the Official Pthread Replacement (OPR).  A package that uses
