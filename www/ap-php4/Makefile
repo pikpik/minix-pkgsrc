@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2001/02/17 17:21:52 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/03/27 03:20:22 hubertf Exp $
 
 .include "../../www/php4/Makefile.common"
 
-PKGNAME=		ap-php-${PHP_VERS}
+PKGNAME=		ap-php-${PHP_BASE_VERS}nb1
 
-MAINTAINER=		jdolecek@netbsd.org
-HOMEPAGE=		http://www.php.net/
 COMMENT=		PHP4: Hypertext Preprocessor (Apache module)
 
 DEPENDS+=		php-${PHP_VERS}:../../www/php4
