@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_ARCHLIBDIR}/readline.so
+${RUBY_DOCDIR}/readline/ja/README
+@dirrm ${RUBY_DOCDIR}/readline/ja
+@dirrm ${RUBY_DOCDIR}/readline
