@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tf
 bin/tf-40a6
 lib/tf-40a6-lib/CHANGES
