@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 13:15:33 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/28 11:25:46 wiz Exp $
 #
 
 DISTNAME=		lzo-1.06
@@ -13,8 +13,12 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://wildsau.idv.uni-linz.ac.at/mfx/lzo.html
 COMMENT=		Portable lossless data compression library written in ANSI C
 
+USE_BUILDLINK_ONLY=	# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/acconfig/ltconfig
+
+# Don't spuriously detect zlib, as it's not needed for the library.
+CONFIGURE_ENV+=		ac_cv_lib_z_gzputs=no
 
 .include "../../mk/bsd.pkg.mk"
