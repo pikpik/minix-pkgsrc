@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.34 2004/06/15 16:39:12 jwise Exp $
 #
 
 DISTNAME=		tcl8.4.6-src
 PKGNAME=		tcl-8.4.6
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tcl/}
 
