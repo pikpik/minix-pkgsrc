@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/15 21:29:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/28 21:43:12 jmmv Exp $
 #
 
 DISTNAME=	gtkhtml-3.2.4
@@ -18,6 +18,7 @@ USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	src/libgtkhtml.pc.in
 GNU_CONFIGURE=		yes
 
+.include "../../devel/atk/buildlink3.mk"
 .include "../../devel/gail/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libbonoboui/buildlink3.mk"
