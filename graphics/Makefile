@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2000/03/14 19:10:39 tron Exp $
+# $NetBSD: Makefile,v 1.77 2000/04/03 15:37:56 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -53,6 +53,7 @@
     SUBDIR += openptc
     SUBDIR += p5-GD
     SUBDIR += p5-Image-Size
+    SUBDIR += p5-PerlMagick
     SUBDIR += photopc
     SUBDIR += pixmap
     SUBDIR += ploticus
