@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.1237 2003/12/23 23:01:08 wiz Exp $
+$NetBSD: TODO,v 1.1238 2003/12/24 22:52:31 veego Exp $
 
 Suggested new packages
 ======================
@@ -158,6 +158,7 @@ Suggested package updates
 	o fltk-1.1.3
 	o foobillard-2.9
 	o foomatic-2.9.1 [jlam]
+	o freeciv-1.14.1
 	o freetype-2.1.7 [breaks compatibility with other packages]
 	o fsviewer-0.2.5
 	o gauche-0.7.3 [kei]
