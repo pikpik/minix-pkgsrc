@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Fri Feb  2 11:37:43 2001
+--- Makefile.orig	Thu Jun 28 12:20:08 2001
 +++ Makefile
 @@ -60,8 +60,8 @@
  		echo Installing in $$dir... ;\
@@ -13,3 +13,12 @@ $NetBSD$
  	echo Installing in data...
  	(cd data; $(MAKE) $(MFLAGS) install)
  	echo Installing in doc...
+@@ -75,7 +75,7 @@
+ 	echo Installing in templates...
+ 	(cd templates; $(MAKE) $(MFLAGS) install)
+ 	echo Installing startup script...
+-	if test "x$INITDIR" != "x"; then \
++	if test "x$(INITDIR)" != "x"; then \
+ 		$(INSTALL_DIR) $(prefix)/$(INITDIR)/init.d; \
+ 		$(INSTALL_SCRIPT) cups.sh $(prefix)/$(INITDIR)/init.d/cups; \
+ 		$(INSTALL_DIR) $(prefix)/$(INITDIR)/rc0.d; \
