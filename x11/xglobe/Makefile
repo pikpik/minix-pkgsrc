@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/07/15 20:39:28 agc Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/17 17:07:09 wiz Exp $
 #
 
 DISTNAME=	xglobe-0.5
@@ -8,13 +8,13 @@ CATEGORIES=	x11
 # and produces a page explaining how the user "uddn" no longer
 # has web pages on their system.
 #
-MASTER_SITES=	http://www.uni-karlsruhe.de/~uddn/xglobe/ \
+MASTER_SITES=	http://www.cs.unc.edu/~scheuerm/xglobe/ \
 		http://livingearth.com/LE/images/ \
 		http://www.ngdc.noaa.gov/mgg/image/
 DISTFILES+=	${MAPS} ${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	hubertf@netbsd.org
-HOMEPAGE=	http://www.uni-karlsruhe.de/~uddn/xglobe/
+HOMEPAGE=	http://www.cs.unc.edu/~scheuerm/xglobe/
 COMMENT=	Displays the earth as seen from space, similar to xearth
 
 DEPENDS+=	qt1-1.44:../../x11/qt1
