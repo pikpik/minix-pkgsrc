@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/07/10 13:46:04 jtb Exp $
+# $NetBSD: Makefile,v 1.28 2003/07/17 21:44:35 grant Exp $
 
 DISTNAME=       	icon.v942src
 PKGNAME=		icon-9.4.2
@@ -16,10 +16,11 @@ CONFIGURE_TARGET=	X-Configure
 ALL_TARGET=		All
 TEST_TARGET=		Test
 
-.if (${MACHINE_ARCH} != "alpha") || (${MACHINE_ARCH} != "i386") || \
-	(${MACHINE_ARCH} != "sparc") || (${MACHINE_ARCH} != "powerpc") || \
-	(${MACHINE_ARCH} != "mipseb") || (${MACHINE_ARCH} != "mipsel") || \
-	(${MACHINE_ARCH} != "m68k") || (${MACHINE_ARCH} != "vax")
+.if (${MACHINE_ARCH} == "alpha") || (${MACHINE_ARCH} == "i386") || \
+	(${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "powerpc") || \
+	(${MACHINE_ARCH} == "mipseb") || (${MACHINE_ARCH} == "mipsel") || \
+	(${MACHINE_ARCH} == "m68k") || (${MACHINE_ARCH} == "vax")
+.else
 PTHREAD_OPTS+=		require native
 .include "../../mk/pthread.buildlink2.mk"
 .endif
