@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.1.1.1 1999/08/27 04:09:28 sakamoto Exp $
 
 --- jhlp.c.orig	Thu Jan 21 21:52:56 1999
 +++ jhlp.c	Thu Jan 21 21:56:35 1999

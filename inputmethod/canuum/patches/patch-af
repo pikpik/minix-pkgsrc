@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1.1.1 1999/08/27 04:09:28 sakamoto Exp $
 
 --- sheader.h.orig	Tue Aug 17 17:47:04 1999
 +++ sheader.h	Tue Aug 17 17:48:00 1999
