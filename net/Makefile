@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.137 2000/07/31 01:56:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.138 2000/07/31 17:16:17 abs Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -105,6 +105,7 @@
     SUBDIR += spegla
     SUBDIR += srsh
     SUBDIR += ssync
+    SUBDIR += tcpillust
     SUBDIR += tcptrace
     SUBDIR += tinyfugue
     SUBDIR += tkicb
