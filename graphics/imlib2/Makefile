@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/09/06 02:56:07 rh Exp $
+# $NetBSD: Makefile,v 1.23 2004/10/03 00:14:53 tv Exp $
 #
 
 DISTNAME=		imlib2-1.1.2
@@ -28,6 +28,7 @@ CONFIGURE_ARGS+=	--enable-mmx
 . endif
 .endif
 
+.include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/libtool/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
