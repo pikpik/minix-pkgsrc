@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/11/16 11:27:54 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/12/03 01:27:05 hubertf Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
@@ -42,10 +42,21 @@ do-install:
 
 benchmark:
 	@if [ `id -u` != 0 ]; then echo "This benchmark must be run as root!" ; exit 1 ; fi
-	@cd ${WRKSRC};							\
+	cd ${WRKSRC};							\
+	${MKDIR} conf;							\
+	${MKDIR} results;						\
 	${SED} -e 's|@pwd@|'`/bin/pwd`'|g' 				\
 		-e 's|@hostname@|'`/bin/hostname -s`'|g'		\
+		-e 's|@wrksrc@|'`/bin/pwd`'|g'				\
 		${FILESDIR}/setup.answers | ${MAKE} setup;		\
+	${MV} conf/`/bin/hostname -s`.run conf/foo ;			\
+	${SED} -e 's|#PLAINBINDIR=${HBENCHROOT}|PLAINBINDIR='`/bin/pwd`'|' \
+		< conf/foo > conf/`/bin/hostname -s`.run ;		\
 	${MAKE} run
+
+results:
+	-@${MKDIR} /tmp/benches/`domainname`
+	-@cd ${WRKSRC} ; \
+	tar -cf /tmp/benches/`domainname`/hbench.`uname`-`uname -m`-`uname -r`.`hostname`.tar results conf
 
 .include "../../mk/bsd.pkg.mk"

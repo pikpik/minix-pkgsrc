@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/09/06 21:12:41 garbled Exp $
+# $NetBSD: Makefile,v 1.3 1998/09/24 09:08:16 agc Exp $
 
 DISTNAME=		paranoia
 PKGNAME=		paranoia-960101
@@ -20,6 +20,10 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/paranoia ${PREFIX}/bin
 
 benchmark:
-	@(cd ${WRKSRC}; ./paranoia < ${FILESDIR}/paranoia.run)
+	@(cd ${WRKSRC}; ./paranoia < ${FILESDIR}/paranoia.run | tee paranoia.out)
+
+results:
+	-@${MKDIR} /tmp/benches/`domainname`
+	-@cp ${WRKSRC}/paranoia.out /tmp/benches/`domainname`/paranoia.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"
