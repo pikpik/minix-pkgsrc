@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/09/28 09:13:56 jlam Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-curses-0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 
 MAINTAINER=	tsarna@NetBSD.org
