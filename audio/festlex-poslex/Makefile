@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/07/14 12:37:47 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/07/18 15:19:38 wiz Exp $
 
 DISTNAME=	festlex_POSLEX
 PKGNAME=	festlex-poslex-1.4.0
@@ -23,6 +23,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && ${PAX} -r -w * ${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/01 10:33:17 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:41:03 jmmv Exp $
 #
 
 DISTNAME=	fortunes-de_0.6.orig
@@ -19,6 +19,6 @@ do-build:
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/games/fortune/de
-	(cd ${WRKSRC}/data; ${PAX} -rw . ${PREFIX}/share/games/fortune/de)
+	cd ${WRKSRC}/data && ${PAX} -rw . ${PREFIX}/share/games/fortune/de
 
 .include "../../mk/bsd.pkg.mk"

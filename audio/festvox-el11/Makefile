@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/07/14 12:37:48 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/07/18 15:19:41 wiz Exp $
 
 DISTNAME=	festvox_ellpc11k
 PKGNAME=	festvox-el11-1.4.0
@@ -25,6 +25,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && ${PAX} -r -w * ${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/07/03 12:07:53 agc Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/26 04:05:40 jschauma Exp $
 
 DISTNAME=		sm_linux_v314_install
 PKGNAME=		storage-manager-3.14
@@ -40,8 +40,8 @@ _FETCH_MESSAGE= \
 
 do-extract:
 	${MKDIR} ${WRKSRC}
-	cd ${WRKSRC}; rpm2cpio ${DISTDIR}/${DISTNAME}.rpm > ${DISTNAME}.cpio
-	cd ${WRKSRC}; ${PAX} -rd -f ${DISTNAME}.cpio
+	cd ${WRKSRC} && rpm2cpio ${DISTDIR}/${DISTNAME}.rpm > ${DISTNAME}.cpio
+	cd ${WRKSRC} && ${PAX} -rd -f ${DISTNAME}.cpio
 
 do-patch:
 	${SED}	-e "s,@PREFIX@,${PREFIX},g"			\

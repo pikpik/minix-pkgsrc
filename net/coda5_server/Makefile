@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/09/18 21:15:14 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2003/01/28 22:03:50 jlam Exp $
 
 PKGNAME=	coda-server-${DIST_VERS}
 COMMENT=	server programs for a replicated high-performance network file system
@@ -12,7 +12,7 @@ USE_PKGINSTALL=	yes
 CONF_FILES+=	${EGDIR}/server.conf.ex ${PKG_SYSCONFDIR}/server.conf
 
 post-install:
-	cd ${PREFIX}; ${PAX} -zr					\
+	cd ${PREFIX} && ${PAX} -zr					\
 		-s "/usr\/\(man\/man.\/\)au.8/\1vice-au.8/"		\
 		-s "/usr\///"						\
 		-f ${_DISTDIR}/${CODADOC_DISTFILE}			\

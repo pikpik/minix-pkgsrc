@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/12/07 18:02:03 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:42:17 jmmv Exp $
 #
 
 DISTNAME=	ReportLab_1_16
@@ -17,7 +17,7 @@ PYDISTUTILSPKG=	yes
 USE_BUILDLINK2=	yes
 
 post-install:
-	(cd ${WRKDIR}; ${PAX} -r -w -v -p p reportlab ${PREFIX}/${PYSITELIB})
+	cd ${WRKDIR} && ${PAX} -rw -pp reportlab ${PREFIX}/${PYSITELIB}
 	${RM} -rf ${PREFIX}/${PYSITELIB}/reportlab/lib/build
 
 .include "../../lang/python/extension.mk"

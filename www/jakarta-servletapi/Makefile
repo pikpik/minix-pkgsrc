@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/12/26 22:42:31 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:42:49 jmmv Exp $
 
 DISTNAME=	jakarta-servletapi-${TOMCAT_VERSION}-src
 PKGNAME=	${DISTNAME:S/-src$//}
@@ -35,7 +35,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/LICENSE ${PREFIX}/${DOCDIR}
-	cd ${WRKDIR}/dist/servletapi/docs && ${PAX} -rwpp . ${PREFIX}/${DOCDIR}
+	cd ${WRKDIR}/dist/servletapi/docs && ${PAX} -rw -pp . ${PREFIX}/${DOCDIR}
 
 .include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/07/18 15:19:44 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/09/27 23:17:43 jlam Exp $
 
 DISTNAME=	festvox_rablpc8k
 PKGNAME=	festvox-rab8-1.4.0
@@ -27,6 +27,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && ${PAX} -r -w * ${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
 
 .include "../../mk/bsd.pkg.mk"
