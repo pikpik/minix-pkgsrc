@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2001/12/02 14:43:49 kleink Exp $
+# $NetBSD: Makefile,v 1.15 2001/12/05 16:03:57 agc Exp $
 #
 
-DISTNAME=	snort-1.8.3
+DISTNAME=	snort-1.8.4
 CATEGORIES=	net security
 MASTER_SITES=	http://www.snort.org/releases/				\
 		ftp://the.wiretapped.net/pub/security/network-intrusion-detection/snort/ \
