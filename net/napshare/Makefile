@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/04/25 08:29:22 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/03 00:17:55 tv Exp $
 
 DISTNAME=	napshare-1.1
 PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=napshare/}
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://napshare.sourceforge.net/
 COMMENT=	Fully featured Gnutella P2P client made to run 24/7 unattended
 
