@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/08 21:03:05 cjones Exp $
 #
 
 DISTNAME=	semantic-1.3.3
@@ -42,7 +42,7 @@ BNFFILES=	c.bnf make.bnf
 
 # XXX broken info
 post-extract:
-	cd ${WRKSRC} && touch semantic.info
+	cd ${WRKSRC} && ${TOUCH} semantic.info
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${LISPDIR}
