@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.117 2004/03/26 02:27:44 wiz Exp $
+# $NetBSD: Makefile,v 1.118 2004/06/02 15:43:09 minskim Exp $
 
 DISTNAME=		mutt-1.4.2.1i
-PKGNAME=                ${DISTNAME:C/i$//}
+PKGNAME=		${DISTNAME:C/i$//}
 PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.mutt.org/mutt/ \
@@ -76,8 +76,8 @@ post-extract:
 
 pre-build:
 	${SED} -e "s|@PREFIX@|${PREFIX}|g" \
-	       -e "s|@PKG_SYSCONFDIR@|${PKG_SYSCONFDIR}|g" \
-	       < ${WRKSRC}/doc/mutt.man.in > ${WRKSRC}/doc/mutt.man
+		-e "s|@PKG_SYSCONFDIR@|${PKG_SYSCONFDIR}|g" \
+		< ${WRKSRC}/doc/mutt.man.in > ${WRKSRC}/doc/mutt.man
 
 post-install:
 	${RM} -f ${PREFIX}/share/doc/mutt/samples
