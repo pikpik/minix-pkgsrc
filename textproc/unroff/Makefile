@@ -12,6 +12,8 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} ${PATCH1} ${PATCH2}
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www-rn.informatik.uni-bremen.de/software/unroff/
 
+DEPENDS=		elk-3.0.2:../../lang/elk
+
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=		unroff
 
