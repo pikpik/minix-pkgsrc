@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/05/07 13:12:14 adam Exp $
+# $NetBSD: Makefile,v 1.41 2004/06/02 12:07:48 adam Exp $
 
 DISTNAME=	curl-7.12.0
 CATEGORIES=	www
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://curl.haxx.se/
 COMMENT=	Client that groks URLs
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 # list it into IPv6-ready packages
 BUILD_DEFS+=	USE_INET6
