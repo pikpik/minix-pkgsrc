@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/as31
+man/man1/as31.1
+man/cat1/as31.0
