@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.491 2004/09/09 06:56:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.492 2004/09/20 23:00:55 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -319,6 +319,7 @@ SUBDIR+=	slurm
 SUBDIR+=	smokeping
 SUBDIR+=	sniffit
 SUBDIR+=	snort
+SUBDIR+=	snort-contrib
 SUBDIR+=	snort-mysql
 SUBDIR+=	snort-pgsql
 SUBDIR+=	socat
