@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.180 2003/09/06 11:51:17 jlam Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.181 2003/09/06 12:04:09 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -425,7 +425,7 @@ PATCH_FUZZ_FACTOR?= -F0
 .elif ${OPSYS} == "SunOS"
 #IMAKEOPTS?=	-DHasGcc2=YES -DHasGcc2ForCplusplus=YES
 # To use Sun ONE Studio (formerly known as WorkShop and Forte) compliers
-# set IMAKEOPTS tp the empty string
+# set IMAKEOPTS to the empty string.
 .endif
 
 PRE_ROOT_CMD?=	${TRUE}
