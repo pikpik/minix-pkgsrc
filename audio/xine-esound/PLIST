@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xine/plugins/1.0.0/xineplug_ao_out_esd.a
+lib/xine/plugins/1.0.0/xineplug_ao_out_esd.la
+lib/xine/plugins/1.0.0/xineplug_ao_out_esd.so
+@comment in xine-lib: @dirrm lib/xine/plugins/1.0.0
