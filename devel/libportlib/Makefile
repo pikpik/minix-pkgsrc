@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:30 martti Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/11 19:24:33 ben Exp $
 #
 
 DISTNAME=		portlib-1.01
@@ -15,6 +15,6 @@ post-patch:
 	${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.bak
 	${SED} <${WRKSRC}/Makefile.bak >${WRKSRC}/Makefile \
 		-e 's|/usr/local|${PREFIX}|' \
-		-e 's|/usr/ucb/install|${INSTALL}|'
+		-e 's|/usr/ucb/install|$${BSD_INSTALL}|'
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:27 martti Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/11 19:24:33 ben Exp $
 #
 
 DISTNAME=		ETM-1.09
@@ -15,7 +15,7 @@ post-patch:
 	${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.bak
 	${SED} <${WRKSRC}/Makefile.bak >${WRKSRC}/Makefile \
 		-e 's|/usr/local|${PREFIX}|' \
-		-e 's|install.sh|${INSTALL}|'
+		-e 's|install.sh|$${BSD_INSTALL}|'
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libetm
