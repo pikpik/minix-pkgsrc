@@ -1,8 +1,7 @@
 $NetBSD$
 
-diff -ur ../faces-DIST/x11.c ./x11.c
---- ../faces-DIST/x11.c	Tue Nov 19 15:00:50 1991
-+++ ./x11.c	Fri Oct  1 14:32:03 1999
+--- x11.c.orig	Tue Nov 19 05:00:50 1991
++++ x11.c	Sat Jul  8 14:25:27 2000
 @@ -18,10 +18,10 @@
   
  #include <stdio.h>
