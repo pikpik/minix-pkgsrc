@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2000/05/01 06:07:47 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2000/06/27 00:29:09 wiz Exp $
 
 DISTNAME=		enlightenment-0.16.2
 CATEGORIES=		x11 gnome
@@ -19,6 +19,7 @@ USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-fsstd
 CPPFLAGS+=		-I${LOCALBASE}/include
+CPPFLAGS+=		-I${LOCALBASE}/include/freetype
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 MAKE_ENV+=		USER=${SHAREOWN}:${SHAREGRP}
 
