@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/03/06 23:43:47 snj Exp $
+# $NetBSD: Makefile,v 1.13 2004/03/12 19:45:39 wiz Exp $
 #
 
-DISTNAME=		asc-source-1.13.8.0
+DISTNAME=		asc-source-1.14.0.0
 PKGNAME=		${DISTNAME:S/-source//}
-PKGREVISION=		3
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=asc-hq/}
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} ${AUDIO_FILES}

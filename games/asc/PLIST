@@ -1,9 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/07/13 22:23:13 wiz Exp $
 bin/asc
 bin/asc_bin2text
 bin/asc_demount
 bin/asc_makegfx
-bin/asc_map2pcx
 bin/asc_mapedit
 bin/asc_mount
 bin/asc_raw2pcx
