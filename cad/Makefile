@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2000/01/24 22:14:13 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19 2000/01/26 15:29:32 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
     SUBDIR += acs
 #    SUBDIR += chipmunk
+    SUBDIR += cascade
     SUBDIR += fastcap
     SUBDIR += fasthenry
 #    SUBDIR += felt
