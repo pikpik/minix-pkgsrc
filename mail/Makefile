@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2001/07/18 20:01:54 martin Exp $
+# $NetBSD: Makefile,v 1.94 2001/07/22 20:54:31 sommerfeld Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -6,6 +6,7 @@ COMMENT=	Electronic mail utilities
 SUBDIR+=	balsa
 SUBDIR+=	bulk_mailer
 SUBDIR+=	coolmail
+SUBDIR+=	courier-imap
 SUBDIR+=	cucipop
 SUBDIR+=	cue
 SUBDIR+=	cyrus-imapd
