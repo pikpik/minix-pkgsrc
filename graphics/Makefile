@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.282 2004/01/26 13:38:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.283 2004/01/26 14:54:05 jmmv Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -29,8 +29,6 @@ SUBDIR+=	autotrace
 SUBDIR+=	avi-xmms
 SUBDIR+=	aview
 SUBDIR+=	aview-x11
-SUBDIR+=	avifile
-SUBDIR+=	avifile-devel
 SUBDIR+=	barcode
 SUBDIR+=	bktr2jpeg
 SUBDIR+=	blender
