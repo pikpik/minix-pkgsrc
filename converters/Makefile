@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2004/03/07 05:41:43 minskim Exp $
+# $NetBSD: Makefile,v 1.70 2004/06/05 03:16:27 taca Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -53,6 +53,7 @@ SUBDIR+=	ruby-uconv
 SUBDIR+=	tex2rtf
 SUBDIR+=	txt2html
 SUBDIR+=	txt2man
+SUBDIR+=	txt2pdbdoc
 SUBDIR+=	unix2dos
 SUBDIR+=	uudeview
 SUBDIR+=	uulib
