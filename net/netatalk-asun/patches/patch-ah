@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- etc/atalkd/main.c.orig	Mon Jan 25 09:21:13 1999
-+++ etc/atalkd/main.c	Mon Jul 31 18:54:42 2000
++++ etc/atalkd/main.c
 @@ -245,12 +245,12 @@
  		    syslog( LOG_INFO, "config for no router" );
  		      
