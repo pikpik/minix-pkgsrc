@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/08/24 11:43:47 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/31 00:28:26 damon Exp $
 
 DISTNAME=		gkrellm_snmp-0.18
 PKGNAME=		gkrellm-snmp-0.18
@@ -15,6 +15,7 @@ DEPENDS+=		ucd-snmp>=4.1.0:../../net/ucd-snmp
 USE_GMAKE=		#defined
 
 do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/gkrellm/plugins
 	${INSTALL_PROGRAM} ${WRKSRC}/gkrellm_snmp.so ${PREFIX}/lib/gkrellm/plugins/
 
 .include "../../mk/bsd.prefs.mk"
