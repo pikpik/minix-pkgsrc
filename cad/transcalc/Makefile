@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2004/02/17 12:51:03 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:13:13 tv Exp $
 #
 
-DISTNAME=	transcalc-0.13
-PKGREVISION=	4
+DISTNAME=	transcalc-0.14
 CATEGORIES=	cad
 MASTER_SITES=	http://transcalc.sourceforge.net/
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=transcalc/}
@@ -15,6 +14,6 @@ GNU_CONFIGURE=	YES
 USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
-.include "../../x11/gtk/buildlink3.mk"
-.include "../../graphics/imlib/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+#.include "../../graphics/imlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
