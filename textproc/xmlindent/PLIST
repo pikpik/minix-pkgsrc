@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xmlindent
+man/man1/xmlindent.1
