@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/08/01 02:37:42 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/02/17 18:02:21 grant Exp $
 #
 
 DISTNAME=	mod_fastcgi_2.2.10
@@ -13,7 +13,6 @@ COMMENT=	New, improved CGI-like interface module for Apache
 USE_BUILDLINK2=	YES
 
 APACHE_MODULE_NAME=	mod_fastcgi.so
-APACHE_MODULE_SRC=	*.c
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/docs/mod_fastcgi.html \
