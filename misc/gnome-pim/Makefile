@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/05/30 21:08:25 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2000/10/23 17:06:57 jlam Exp $
 #
 
 DISTNAME=		gnome-pim-1.2.0
@@ -14,7 +14,8 @@ DEPENDS+=		gnome-core-*:../../x11/gnome-core
 USE_X11BASE=		# defined
 
 GNU_CONFIGURE=		# defined
-CONFIGURE_ENV+=		LOCALEBASE=${LOCALEBASE}
+CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LOCALEBASE=${LOCALEBASE}
 
 PLIST_SUBST+=		LOCALEBASE=${LOCALEBASE}
 
