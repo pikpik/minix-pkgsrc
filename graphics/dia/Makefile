@@ -1,13 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2003/05/09 15:21:29 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2003/05/30 16:19:58 jmmv Exp $
 
 DISTNAME=	dia-0.91
 PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/dia/0.91/}
-
-MAINTAINER=		jmcneill@invisible.yi.org
-HOMEPAGE=		http://www.lysator.liu.se/~alla/dia/
-COMMENT=		program for creating diagrams of all kinds
 
 MAINTAINER=	jmcneill@invisible.yi.org
 HOMEPAGE=	http://www.lysator.liu.se/~alla/dia/
