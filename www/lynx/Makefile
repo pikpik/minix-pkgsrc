@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2003/03/29 12:42:51 jmmv Exp $
+# $NetBSD: Makefile,v 1.54 2003/04/01 04:48:45 jschauma Exp $
 #
 
 DISTNAME=		lynx2.8.4rel.1
@@ -26,6 +26,7 @@ COMMENT=		Alphanumeric display oriented World-Wide Web Client
 BUILD_USES_MSGFMT=	yes
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 INSTALL_TARGET=		install-bin install-cfg install-help install-lss
 INSTALL_TARGET+=	install-doc install-man
