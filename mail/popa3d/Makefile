@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2001/12/02 06:56:41 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2001/12/07 20:30:59 jlam Exp $
 #
 
 DISTNAME=	popa3d-0.4.9.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.openwall.com/popa3d/ \
 		ftp://ftp.openwall.com/pub/projects/popa3d/ \
@@ -18,7 +18,6 @@ POPA3D_GROUP?=	popa3d
 PKG_GROUPS=	${POPA3D_GROUP}
 PKG_USERS=	${POPA3D_USER}:${POPA3D_GROUP}
 
-INSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
 DEINSTALL_EXTRA_TMPL=	${PKGDIR}/DEINSTALL
 
 FILES_SUBST+=	POPA3D_USER=${POPA3D_USER}
