@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.21 2002/04/09 22:15:41 jlam Exp $
+# $NetBSD: defs.Darwin.mk,v 1.22 2002/05/18 21:35:45 schmonz Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -66,7 +66,7 @@ ROOT_GROUP?=		wheel
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
 USERADD?=		${FALSE}			# XXX - Fix me!
-ZOULARISBASE?=		${DESTDIR}/usr/pkg
+ZOULARISBASE?=		${LOCALBASE}
 
 _DO_LIBINTL_CHECKS=	yes	# perform checks for valid libintl
 _DO_SHLIB_CHECKS=	yes	# on installation, fixup PLIST for shared libs
