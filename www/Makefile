@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.212 2002/09/21 01:26:54 rh Exp $
+# $NetBSD: Makefile,v 1.213 2002/09/24 13:55:50 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -7,7 +7,6 @@ SUBDIR+=	Mosaic
 SUBDIR+=	adzap
 SUBDIR+=	amaya
 SUBDIR+=	analog
-SUBDIR+=	ap-DBI
 SUBDIR+=	ap-Embperl
 SUBDIR+=	ap-aolserver
 SUBDIR+=	ap-auth-cookie
