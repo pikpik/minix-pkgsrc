@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.2 1999/08/30 23:11:15 tron Exp $
-#
+# $NetBSD$
 
-DISTNAME=	gnome-media-1.0.9.1
+DISTNAME=	gnome-media-1.0.51
 CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=gnome-1.0/sources/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
 
-DEPENDS+=	gettext-0.10.35:../../devel/gettext
 DEPENDS+=	gnome-core-*:../../x11/gnome-core
 
 GNU_CONFIGURE=	YES
