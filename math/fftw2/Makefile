@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/09 11:11:40 seb Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/24 13:58:23 grant Exp $
 
 DISTNAME=		fftw-2.1.5
 PKGNAME=		fftw2-2.1.5
@@ -15,6 +15,7 @@ CONFIGURE_ARGS=		--enable-shared
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=	--enable-i386-hacks
 .endif
+USE_BUILDLINK3=		yes
 USE_FORTRAN=		yes
 USE_GNU_TOOLS+=		make
 USE_MAKEINFO=		yes
