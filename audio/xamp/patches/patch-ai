@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sun Oct 26 17:55:34 1997
++++ configure	Mon Nov 15 13:58:45 1999
+@@ -1700,7 +1700,7 @@
+     CFLAGS="-O3 -ffast-math -funroll-loops"
+     ;;
+ 
+-  Linux|FreeBSD)
++  Linux|FreeBSD|NetBSD)
+     CC="gcc"
+     if test "$ARCH_TYPE" = "i486" ; then
+       CFLAGS_ARCH="-m486"
