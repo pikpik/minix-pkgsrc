@@ -1581,7 +1581,9 @@ pkg-su-deinstall: uptodate-pkgtools
 
 .if (${DEINSTALLDEPENDS} != "NO")
 .if (${DEINSTALLDEPENDS} != "ALL")
-root-install-flags+=	-R
+# used for removing stuff in bulk builds
+root-install-flags+=	-r -R
+# used for "update" target
 .else
 root-install-flags+=	-r
 .endif
