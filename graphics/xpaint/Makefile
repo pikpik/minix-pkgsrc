@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/20 11:56:24 frueauf Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/22 14:22:44 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/08/29 12:17:50 tg Exp
 #
 
@@ -21,6 +21,6 @@ pre-configure:
 	@${SED} -e 's|\$${LOCALBASE}|'${LOCALBASE}'|g' \
 		-e 's|\$${X11BASE}|'${X11BASE}'|g' \
 		< ${WRKSRC}/Local.config > ${WRKSRC}/Local.config.new && \
-	${MV} ${WRKSRC}/Local.config.new ${WRKSRC}/Local.config
+	${MV} -f ${WRKSRC}/Local.config.new ${WRKSRC}/Local.config
 
 .include "../../mk/bsd.pkg.mk"
