@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2001/07/30 16:11:26 taca Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/19 11:30:29 taca Exp $
 
 DISTNAME=	ruby-dbi-all-${RUBY_DBI_VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}DBD-postgresql-${RUBY_DBI_VERSION}
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
 

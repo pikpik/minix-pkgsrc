@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2002/07/02 11:42:39 agc Exp $
+# $NetBSD: Makefile,v 1.9 2002/08/01 09:40:37 wiz Exp $
 #
 
 DISTNAME=		openacs-3.2.5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		# none
 EXTRACT_SUFX=		.tgz
