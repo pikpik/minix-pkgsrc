@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.135 2002/10/25 10:49:36 drochner Exp $
+# $NetBSD: Makefile,v 1.136 2002/10/28 09:05:10 agc Exp $
 #
 
 COMMENT=	Programming languages
@@ -50,6 +50,7 @@ SUBDIR+=	java-vm-spec
 SUBDIR+=	jbuilder-jit
 SUBDIR+=	jdk
 SUBDIR+=	jikes
+SUBDIR+=	jikes112
 SUBDIR+=	jini
 SUBDIR+=	joos
 SUBDIR+=	kaffe
