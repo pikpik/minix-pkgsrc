@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/05/04 02:07:06 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/05/15 08:31:22 grant Exp $
 #
 
 DISTNAME=	cfengine-1.6.5
+PKGREVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	ftp://ftp.iu.hio.no/pub/cfengine/ \
 		http://sunsite.utk.edu/ftp/pub/cfengine/cfengine-ftp/
@@ -11,9 +12,12 @@ HOMEPAGE=	http://www.cfengine.org/
 COMMENT=	Automate configuration and administration of large systems
 
 USE_BUILDLINK3=		YES
+USE_OLD_DES_API=	YES
 USE_GNU_TOOLS+=		lex
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS=		--without-pthreads
+
+.include "../../security/openssl/buildlink3.mk"
 
 pre-configure:
 	cd ${WRKSRC};					\
