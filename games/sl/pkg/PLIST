@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/sl
+man/ja_JP.EUC/man1/sl.1
