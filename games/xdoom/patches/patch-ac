@@ -1,0 +1,12 @@
+$NetBSD$
+--- d_main.c.orig	Fri Aug 28 04:27:47 1998
++++ d_main.c	Fri Aug 28 04:28:42 1998
+@@ -577,7 +577,7 @@
+     char *doomwaddir;
+     doomwaddir = getenv("DOOMWADDIR");
+     if (!doomwaddir)
+-	doomwaddir = ".";
++	doomwaddir = "XXXPREFIXXXX/share/doom";
+ 
+     // Commercial.
+     doom2wad = malloc(strlen(doomwaddir)+1+9+1);

@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xdoom
+share/doom/doom1.wad
+@dirrm share/doom
