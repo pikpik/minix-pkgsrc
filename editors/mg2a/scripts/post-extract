@@ -1,5 +1,0 @@
-#!/bin/sh
-# Just links the unix makefile - john refling
-# $NetBSD$
-cd ${WRKSRC}
-cp sys/bsd/Makefile .
