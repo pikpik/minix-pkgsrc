@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/05/11 09:20:55 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/05/24 08:38:40 manu Exp $
 #
 
 PKGNAME=	blender-2.11.nb4
@@ -46,6 +46,7 @@ DISTNAME=	blender2.11-linux-glibc2.1.3-powerpc-static
 PLIST_ARCH=	linux-powerpc
 #
 .else
+DISTNAME=	# dummy, don't break pkg system
 IGNORE=		"Your platform is not supported and the package is buggy!"
 .endif
 
