@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/proplist.h
+lib/libPropList.a
+lib/libPropList.so.1.1
