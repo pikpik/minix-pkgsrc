@@ -1,9 +1,8 @@
 $NetBSD$
-
---- Imakefile.orig	Tue Jun 29 01:13:19 1993
-+++ Imakefile
-@@ -8,10 +8,10 @@
- /**/# config directory
+ 
+--- ./Imakefile.orig	Tue Jun 29 01:13:19 1993
++++ ./Imakefile	Tue May  1 22:40:31 2001
+@@ -9,8 +9,8 @@
  /**/# @(#)Imakefile	1.9 28 Jun 1993 SMI
  
 -XVFILES = XView.cf XView.lib XView.obj XView.rules XView.tmpl library.tmpl
@@ -14,4 +13,3 @@ $NetBSD$
 +InstallMultipleDestFlags(install,$(CFFILES),$(PREFIX)/lib/X11/config,$(INSTDATFLAGS))
  
  depend::
- 
