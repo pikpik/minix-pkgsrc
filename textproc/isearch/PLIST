@@ -1,7 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/02/06 22:09:27 jtb Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:56:57 zuntum Exp $
 bin/Iindex
 bin/Isearch
 bin/Iutil
+bin/Iget
+bin/zsearch
+bin/zpresent
 share/doc/html/isearch/Isearch-cgi-tutorial.html
 share/doc/html/isearch/IsearchFeatures.html
 share/doc/html/isearch/IsearchTutorial.html
