@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2001/03/15 15:28:49 wiz Exp $
+# $NetBSD: Makefile,v 1.80 2001/03/25 06:09:02 mjl Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -82,5 +82,6 @@ SUBDIR+=	xerces-c
 SUBDIR+=	xerces-j
 SUBDIR+=	xp
 SUBDIR+=	xt
+SUBDIR+=	yodl
 
 .include "../mk/bsd.pkg.subdir.mk"
