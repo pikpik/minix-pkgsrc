@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2003/08/10 11:35:31 rh Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/05 10:29:17 adam Exp $
 #
 
 DISTNAME=	Gorm-0.4.0
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=dev-apps/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Graphical user interface builder for GNUstep
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/10/27 17:57:33 manu Exp $
+# $NetBSD: Makefile,v 1.2 2003/10/27 22:52:48 manu Exp $
 #
 
 DISTNAME=		milter-sender-0.41
@@ -6,7 +6,7 @@ DISTFILES=		libsnert-1.23.tgz milter-sender-0.41.tgz
 CATEGORIES=		mail
 MASTER_SITES=		http://www.snert.com/Software/download/
 
-MAINTAINER=		manu@netbsd.org
+MAINTAINER=		manu@NetBSD.org
 HOMEPAGE=		http://www.snert.com/Software/download/
 COMMENT=		Real-time sender's e-mail validity check
 

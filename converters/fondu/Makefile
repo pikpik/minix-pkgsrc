@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/10 21:21:30 manu Exp $
+# $NetBSD: Makefile,v 1.2 2003/10/01 19:55:17 kristerw Exp $
 #
 
 DISTNAME=	fondu_src-030428
@@ -6,7 +6,7 @@ CATEGORIES=	converters print
 MASTER_SITES=	http://fondu.sourceforge.net/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	manu@netbsd.org
+MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://fondu.sourceforge.net
 COMMENT=	Utility to convert between Mac fonts and UNIX fonts
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/10/03 18:20:40 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2003/11/12 01:31:49 salo Exp $
 #
 
 DISTNAME=	chkfontpath-1.9.7
@@ -7,7 +7,7 @@ CATEGORIES=	fonts
 MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/linux/9/en/os/i386/SRPMS/
 EXTRACT_SUFX=	-1.src.rpm
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 COMMENT=	Command line tool to manage X server's font path
 
 BUILD_DEPENDS+=	rpm2cpio>=1.1:../../converters/rpm2cpio

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/10 10:09:20 seb Exp $
 #
 
 DISTNAME=	offlineimap_${_OFFLINEIMAP_VER}
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/offlineimap
 CATEGORIES=	mail
 MASTER_SITES=	http://gopher.quux.org:70/devel/offlineimap/
 
-MAINTAINER=	seb@netbsd.org
+MAINTAINER=	seb@NetBSD.org
 HOMEPAGE=	http://gopher.quux.org:70/devel/offlineimap/
 COMMENT=	Powerful IMAP/Maildir synchronization and reader support
 

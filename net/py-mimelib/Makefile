@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/08/11 14:56:54 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/10/21 12:43:33 drochner Exp $
 #
 
 DISTNAME=	email-2.5
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-mimelib-2.5
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/mimelib/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	packages@NetBSD.org
 HOMEPAGE=	http://mimelib.sourceforge.net/
 COMMENT=	Email package for Python
 

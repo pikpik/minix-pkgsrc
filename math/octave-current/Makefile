@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/06/02 01:18:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2003/12/04 11:15:37 adam Exp $
 #
 
 DISTNAME=	octave-${OCTAVE_VER}
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/bleeding-edge/ \
 		ftp://ftp.task.gda.pl/pub/software/octave/bleeding-edge/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	adam@netbsd.org
+MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.che.wisc.edu/octave/
 COMMENT=	High-level language, intended for numerical computations
 

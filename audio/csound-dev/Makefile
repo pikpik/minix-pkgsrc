@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/22 05:14:43 martti Exp $
+# $NetBSD: Makefile,v 1.1 2003/12/13 20:26:03 ben Exp $
 #
 
 DISTNAME=		Csound-4.24.1
@@ -7,7 +7,7 @@ CATEGORIES=		audio
 MASTER_SITES=		http://www.csounds.com/istvan/archive/misc/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		ben@netbsd.org
+MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		http://www.csounds.com/
 COMMENT=		Software synthesizer and sequencer
 
