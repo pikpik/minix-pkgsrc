@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.29 2002/10/04 23:32:17 jlam Exp $
+# $NetBSD: defs.SunOS.mk,v 1.30 2002/10/06 22:16:41 seb Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -40,6 +40,9 @@ LDCONFIG?=	/usr/bin/true
 LN?=		/usr/bin/ln
 LS?=		/usr/bin/ls
 MKDIR?=		/usr/bin/mkdir -p
+.if exists(${LOCALBASE}/sbin/mtree)
+MTREE?=		${LOCALBASE}/sbin/mtree
+.endif
 MTREE?=		${ZOULARISBASE}/bin/mtree
 MV?=		/usr/bin/mv
 .if exists(/usr/bin/gpatch)
@@ -119,6 +122,9 @@ ZOULARISBASE:=		${LOCALBASE}/bsd
 .  else
 ZOULARISBASE:=		${LOCALBASE}
 .  endif
+.endif
+.if exists(${LOCALBASE}/sbin/pkg_info)
+PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 .endif
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/bin
 
