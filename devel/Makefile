@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.482 2004/04/05 05:04:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.483 2004/04/07 13:30:28 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -8,6 +8,7 @@ SUBDIR+=	GConf2
 SUBDIR+=	GConf2-ui
 SUBDIR+=	Gorm
 SUBDIR+=	ProjectCenter
+SUBDIR+=	Renaissance
 SUBDIR+=	SDL
 SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
