@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.614 2005/02/22 00:35:52 wiz Exp $
+# $NetBSD: Makefile,v 1.615 2005/02/24 11:19:58 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -51,9 +51,10 @@ SUBDIR+=	boaconstructor
 SUBDIR+=	boehm-gc
 SUBDIR+=	bonobo
 SUBDIR+=	bonobo-conf
-SUBDIR+=	boost
+SUBDIR+=	boost-build
+SUBDIR+=	boost-headers
+SUBDIR+=	boost-libs
 SUBDIR+=	boost-python
-SUBDIR+=	boost-thread
 SUBDIR+=	buddy
 SUBDIR+=	bugzilla
 SUBDIR+=	buildtool
