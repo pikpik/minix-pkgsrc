@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2004-05-06 00:40:39.000000000 +0000
+--- configure.orig	2005-01-11 19:08:58.000000000 +0000
 +++ configure
-@@ -17852,7 +17852,7 @@ if { (eval echo "$as_me:$LINENO: \"$ac_l
+@@ -17810,7 +17810,7 @@ if { (eval echo "$as_me:$LINENO: \"$ac_l
    ac_status=$?
    echo "$as_me:$LINENO: \$? = $ac_status" >&5
    (exit $ac_status); }; }; then
@@ -11,7 +11,7 @@ $NetBSD$
  else
    echo "$as_me: failed program was:" >&5
  sed 's/^/| /' conftest.$ac_ext >&5
-@@ -19522,7 +19522,7 @@ if { (eval echo "$as_me:$LINENO: \"$ac_c
+@@ -19480,7 +19480,7 @@ if { (eval echo "$as_me:$LINENO: \"$ac_c
    ac_status=$?
    echo "$as_me:$LINENO: \$? = $ac_status" >&5
    (exit $ac_status); }; }; then

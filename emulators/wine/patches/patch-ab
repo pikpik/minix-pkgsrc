@@ -1,6 +1,6 @@
 $NetBSD$
 
---- dlls/ntdll/cdrom.c.orig	2003-10-08 04:59:22.000000000 +0200
+--- dlls/ntdll/cdrom.c.orig	2004-06-15 00:45:01.000000000 +0000
 +++ dlls/ntdll/cdrom.c
 @@ -61,6 +61,16 @@
  #endif

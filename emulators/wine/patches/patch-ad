@@ -1,8 +1,8 @@
 $NetBSD$
 
---- dlls/iphlpapi/ifenum.c.orig	2003-11-30 06:03:21.000000000 +0000
+--- dlls/iphlpapi/ifenum.c.orig	2004-12-23 18:41:05.000000000 +0000
 +++ dlls/iphlpapi/ifenum.c
-@@ -56,6 +56,7 @@
+@@ -55,6 +55,7 @@
  #endif
  
  #include <sys/types.h>
