@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/01/19 17:36:51 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/06/01 11:23:29 rh Exp $
 
 DISTNAME=	gphoto-0.4.2
 CATEGORIES=	graphics
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.gphoto.org/projects/gphoto/pub/tar/0.4/
 MAINTAINER=	jmcm@cs.cmu.edu
 HOMEPAGE=	http://www.gphoto.org/
 
-DEPENDS+=	imlib-1.9.8:../../graphics/imlib
+DEPENDS+=	imlib>=1.9.8:../../graphics/imlib
 
 USE_X11BASE=		yes
 USE_PKGLIBTOOL=		yes
