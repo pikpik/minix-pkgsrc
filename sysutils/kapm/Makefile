@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2000/07/15 20:39:24 agc Exp $
+# $NetBSD: Makefile,v 1.10 2001/02/17 17:42:14 wiz Exp $
 #
 
 DISTNAME=	kapm-0.3.1
+PKGNAME=	${DISTNAME}nb1
 CATEGORIES=	sysutils x11 kde
 MASTER_SITES=	ftp://bodnar42.dhs.org/pub/kapm/
 
