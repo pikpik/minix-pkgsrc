@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2001/07/31 22:49:44 jlam Exp $
+# $NetBSD: Makefile,v 1.96 2001/08/01 13:54:41 rh Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -57,6 +57,7 @@ SUBDIR+=	poppy
 SUBDIR+=	postfix
 SUBDIR+=	procmail
 SUBDIR+=	qcheck
+SUBDIR+=	qmail
 SUBDIR+=	qmHandle
 SUBDIR+=	qpopper
 SUBDIR+=	queue_repair
