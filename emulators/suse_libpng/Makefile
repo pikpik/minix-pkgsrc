@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/12/17 13:05:44 tron Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/25 09:24:45 tron Exp $
 
 DISTNAME=		suse_libpng-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -7,6 +7,7 @@ DISTFILES=		${RPMFILES}
 
 MAINTAINER=		hubertf@netbsd.org
 HOMEPAGE=		http://www.suse.com/
+COMMENT=		Linux compatibility package for png library
 
 DEPENDS+=		suse_base>=${SUSE_VERSION}:../suse_base
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/05/18 23:14:16 tv Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/11 21:21:17 dent Exp $
 
 DISTNAME=	stella-1.1-src
 PKGNAME=	stella-1.1
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.eos.ncsu.edu/pub/bsvc/stella/1.1/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://stella.atari.org/
+COMMENT=	Multi-platform Atari 2600 VCS emulator
 
 USE_X11=	yes
 
