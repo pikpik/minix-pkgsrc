@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/afio
+man/man1/afio.1
