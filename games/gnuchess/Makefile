@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/03/08 03:04:36 minskim Exp $
+# $NetBSD: Makefile,v 1.22 2004/03/08 06:03:10 minskim Exp $
 # FreeBSD Id: Makefile,v 1.6 1999/01/27 07:41:12 fenner Exp
 #
 
@@ -37,4 +37,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/doc/README ${DOCDIR}
 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
