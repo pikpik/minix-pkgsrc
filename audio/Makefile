@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.147 2002/07/08 02:50:48 wiz Exp $
+# $NetBSD: Makefile,v 1.148 2002/08/23 11:53:37 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -135,6 +135,7 @@ SUBDIR+=	sox
 SUBDIR+=	spiralloops
 SUBDIR+=	spiralsynth
 SUBDIR+=	splay
+SUBDIR+=	tcl-snack
 SUBDIR+=	tfmxplay
 SUBDIR+=	timidity
 SUBDIR+=	tosha
