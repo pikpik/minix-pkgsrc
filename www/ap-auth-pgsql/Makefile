@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/31 19:22:28 wiz Exp $
 
 DISTNAME=	mod_auth_pgsql-0.9.12
 PKGNAME=	ap-auth-pgsql-0.9.12
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/
 
 MAINTAINER=	waddell@caravan.com
 HOMEPAGE=	http://www.giuseppetanzilli.it/mod_auth_pgsql/
-COMMENT=	Module to allow apache log accesses and authenticate against a Postgresql database
+COMMENT=	Apache module for user authentication/logging against a PostgreSQL DB
 
 CONFLICTS=	ap-auth-postgresql-[0-9]*
 USE_BUILDLINK2=	YES
