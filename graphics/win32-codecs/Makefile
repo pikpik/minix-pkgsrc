@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2002/01/21 21:47:47 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/26 06:53:42 jlam Exp $
 #
 
-DISTNAME=	w32codec-0.60
-PKGNAME=	win32-codecs-011227
+DISTNAME=	w32codec-0.90pre7
+PKGNAME=	win32-codecs-020909
+WRKSRC=		${WRKDIR}/${DISTNAME:C/pre.*//}
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://mplayerhq.hu/MPlayer/releases/
 EXTRACT_SUFX=	.tar.bz2
