@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2002/10/16 15:41:14 jschauma Exp $
+# $NetBSD: Makefile,v 1.85 2002/10/18 21:57:47 abs Exp $
 #
 
 COMMENT=	Mathematics
@@ -32,6 +32,7 @@ SUBDIR+=	euler
 SUBDIR+=	fftpack
 SUBDIR+=	fftw
 SUBDIR+=	gap
+SUBDIR+=	gcalctool
 SUBDIR+=	geg
 SUBDIR+=	glpk
 SUBDIR+=	gnumeric
