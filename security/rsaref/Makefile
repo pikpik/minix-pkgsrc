@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/02/25 04:18:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.23 2001/03/24 02:35:56 fredb Exp $
 #
 
 DISTNAME=		rsaref
@@ -14,6 +14,7 @@ COMMENT=		Encryption/authentication library, RSA/MDX/DES
 CRYPTO=			yes
 LICENSE=		no-commercial-use
 
+USE_BUILDLINK_ONLY=	yes
 USE_LIBTOOL=		yes
 MAKEFILE=		unix/makefile
 ALL_TARGET=		librsaref.la
