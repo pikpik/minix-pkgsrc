@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:    scheme48
 # Version required:     0.46
 # Date created:         25 Aug 1997
