@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.6 2002/01/10 16:22:37 skrll Exp $
+
+SHA1 (automake-1.6.2.tar.bz2) = f032cbe25906ba253c01d5d15f40f8d9637c8b6b
+Size (automake-1.6.2.tar.bz2) = 475012 bytes
+SHA1 (patch-aa) = 1c13380a46dc6c3bbd233164da547526c9cc5679
