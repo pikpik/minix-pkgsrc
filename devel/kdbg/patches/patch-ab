@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- kdbg/mainwndbase.cpp.orig	Wed Sep 13 03:44:40 2000
 +++ kdbg/mainwndbase.cpp	Wed Feb 28 00:31:03 2001
 @@ -562,7 +562,11 @@
