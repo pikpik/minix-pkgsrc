@@ -1,0 +1,8 @@
+======================================================================
+$NetBSD$
+
+  To be able to view manpages either add \"/var/qmail/man/\" to the
+  _default line in /etc/man.conf or specify this directory in
+  MANPATH variable in your environment.
+
+======================================================================
