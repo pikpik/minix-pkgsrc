@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1162 2003/04/10 12:40:29 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1164 2003/04/10 20:32:28 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -3951,7 +3951,7 @@ print-PLIST:
 	"a.out")	genlinks=1 ;;					\
 	*)		genlinks=0 ;;					\
 	esac;								\
-	${FIND} ${PREFIX}/. -newer ${EXTRACT_COOKIE} \! -type d 	\
+	${FIND} ${PREFIX}/. -xdev -newer ${EXTRACT_COOKIE} \! -type d	\
 	 | ( ${GREP} -v emul/linux/proc || ${TRUE} )			\
 	 | ${SORT}							\
 	 | ${SED}							\
@@ -3987,7 +3987,7 @@ print-PLIST:
 		  }							\
 		}'
 	${_PKG_SILENT}${_PKG_DEBUG}\
-	for i in `${FIND} ${PREFIX}/. -newer ${EXTRACT_COOKIE} -type d	\
+	for i in `${FIND} ${PREFIX}/. -xdev -newer ${EXTRACT_COOKIE} -type d	\
 		        | ( ${GREP} -v emul/linux/proc || ${TRUE} )	\
 			| ${SED}					\
 				-e 's@${PREFIX}/./@@'			\
