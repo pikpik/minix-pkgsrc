@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1999/10/11 08:29:50 sakamoto Exp $
+# $NetBSD: Makefile,v 1.20 1999/11/02 11:20:27 sakamoto Exp $
 #
 
     SUBDIR += a2ps
@@ -24,6 +24,9 @@
     SUBDIR += nkf
     SUBDIR += p5-jcode
     SUBDIR += p5-nkf
+    SUBDIR += skkfep
+    SUBDIR += skkinput
+    SUBDIR += skkserv
     SUBDIR += sed
     SUBDIR += sj3-lib
     SUBDIR += sj3-server
