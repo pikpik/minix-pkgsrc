@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/01/21 11:05:17 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/02/15 00:36:41 salo Exp $
 #
 # Optionally define:
 #
@@ -30,6 +30,11 @@ _INCOMPAT_CURSES+=      NetBSD-1.4.*-* NetBSD-1.4[A-X]-*
 # information.
 #
 _INCOMPAT_CURSES+=	SunOS-*-*
+#
+# Similarly for IRIX
+#
+_INCOMPAT_CURSES+=      IRIX-*-*
+
 INCOMPAT_CURSES?=	# empty
 .  for _pattern_ in ${_INCOMPAT_CURSES} ${INCOMPAT_CURSES}
 .    if !empty(MACHINE_PLATFORM:M${_pattern_})
