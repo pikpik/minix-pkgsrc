@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:04:55 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:40 hubertf Exp $
 
-DISTNAME=	bfd-mdsetimage-1.0
+DISTNAME=	bfd-mdsetimage-1.15.1
 CATEGORIES=	cross
 MASTER_SITES=	# empty
 DISTFILES=	# empty
