@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/rlm_sql_mysql-${PKGVERSION}.so
+lib/rlm_sql_mysql.a
+lib/rlm_sql_mysql.la
+lib/rlm_sql_mysql.so
