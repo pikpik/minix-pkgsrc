@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/10/22 20:01:50 tsarna Exp $
+# $NetBSD: Makefile,v 1.9 2000/12/12 16:25:33 jlam Exp $
 #
 
 DISTNAME=	html-2.0
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.python.org/doc/
+COMMENT=	HTML Documentation for Python
 
 DIST_SUBDIR=	python
 

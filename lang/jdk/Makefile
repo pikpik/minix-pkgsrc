@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/02/09 17:48:39 agc Exp $
+# $NetBSD: Makefile,v 1.24 2001/02/09 17:59:46 agc Exp $
 #
 
 VERSION=	1.1.8
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=     jwise@netbsd.org
 HOMEPAGE=       http://www.quick.com.au/java/
+COMMENT=	Sun's Java(tm) Development Kit
 
 CONFLICTS=	blackdown-j* sun-j*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/01/09 01:19:11 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/21 21:01:31 hubertf Exp $
 #
 
 DISTNAME=	guavac-1.2
@@ -10,6 +10,7 @@ MASTER_SITES=	ftp://ftp.yggdrasil.com/pub/dist/devel/compilers/guavac/ \
 
 MAINTAINER=	packages@netbsd.org
 # HOMEPAGE=	http://www.cs.berkeley.edu/~engberg/guavac/ no longer exists
+COMMENT=	Free compiler for the Java language
 
 .include "../../mk/bsd.prefs.mk"
 

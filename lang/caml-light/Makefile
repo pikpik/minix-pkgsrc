@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/06/12 15:17:45 wulf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/21 11:42:46 bouyer Exp $
 #
 
 DISTNAME=		cl74unix
@@ -8,6 +8,7 @@ MASTER_SITES=		ftp://ftp.inria.fr/lang/caml-light/
 
 MAINTAINER=		bouyer@netbsd.org
 HOMEPAGE=		http://caml.inria.fr/distrib-caml-light-eng.html
+COMMENT=		Another implementation of Caml
 
 ALL_TARGET=		world
 

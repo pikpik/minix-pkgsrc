@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/10/01 14:06:22 rh Exp $
+# $NetBSD: Makefile,v 1.5 2001/01/24 18:44:58 he Exp $
 #
 
 DISTNAME=	expect
@@ -8,6 +8,7 @@ MASTER_SITES=	http://expect.nist.gov/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://expect.nist.gov/
+COMMENT=	extensions to Tcl to support scripting of interactive programs
 
 DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 

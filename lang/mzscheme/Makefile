@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/10 22:09:15 pooka Exp $
 
 DISTNAME=		mzscheme.src.unix
 PKGNAME=		mzscheme-101
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.cs.rice.edu/CS/PLT/packages/download/101/mzscheme/
 
 MAINTAINER=		pooka@netbsd.org
 HOMEPAGE=		http://www.cs.rice.edu/CS/PLT/packages/mzscheme/
+COMMENT=		R4RS-compilant and nearly R5RS-compliant scheme
 
 USE_GMAKE=		yes
 

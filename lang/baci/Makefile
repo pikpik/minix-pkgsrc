@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/09/24 23:23:33 wulf Exp $
+# $NetBSD: Makefile,v 1.3 2000/10/21 22:42:46 wiz Exp $
 #
 
 DISTNAME=	bacisrc
@@ -10,6 +10,7 @@ DISTFILES=	bacisrc.tar.gz \
 
 MAINTAINER=	wulf@netbsd.org
 HOMEPAGE=	http://www.mines.edu/fs_home/tcamp/baci/
+COMMENT=	Ben-Ari Concurrent Interpreter
 
 DEPENDS+=	bison-*:../../devel/bison
 

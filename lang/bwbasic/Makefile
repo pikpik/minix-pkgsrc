@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/02/15 19:43:22 pooka Exp $
 
 DISTNAME=	bwbasic-2.20
 CATEGORIES=	lang
@@ -7,6 +7,7 @@ DISTFILES=	bwbasic-2.20.tar.Z \
 		bwb-2.20-patch01.tar.Z.uu.txt bwb-2.20-patch02.tar.Z.uu.txt
 
 MAINTAINER=	jspath@bcpl.net
+COMMENT=	The Bywater Basic interpreter
 
 GNU_CONFIGURE=	yes
 EXTRACT_ONLY=	bwbasic-2.20.tar.Z

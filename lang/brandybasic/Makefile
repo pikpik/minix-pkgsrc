@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/06 15:13:11 abs Exp $
 #
 
 DISTNAME=       b105
@@ -9,6 +9,7 @@ EXTRACT_SUFX=   .tgz
 
 MAINTAINER=     abs
 HOMEPAGE=       http://www.argonet.co.uk/users/dave_daniels/
+COMMENT=	Brandy Basic V interpreter - Acorn ARM Computers BASIC dialect
 
 WRKSRC=		${WRKDIR}/brandy-105
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/19 22:26:59 jtb Exp $
 
 DISTNAME=		pfthunix19
 PKGNAME=		pforth-19
@@ -8,6 +8,7 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		jtb@netbsd.org
 HOMEPAGE=		http://www.softsynth.com/pforth/
+COMMENT=		Portable ANS-like Forth
 
 WRKSRC=			${WRKDIR}/pforth
 USE_GMAKE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/01/31 03:47:27 jwise Exp $
+# $NetBSD: Makefile,v 1.2 1999/09/09 02:19:52 jwise Exp $
 
 DISTNAME=	p2c-1.20
 WRKSRC=		${WRKDIR}/src
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://csvax.cs.caltech.edu/pub/
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	jwise@netbsd.org
+COMMENT=	Pascal to C compiler (translates Pascal to C)
 
 MAKE_FLAGS+=	CFLAGS='-Dunix'
 
