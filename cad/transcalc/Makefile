@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/22 07:21:55 grant Exp $
 #
 
 DISTNAME=	transcalc-0.13
@@ -12,9 +12,9 @@ HOMEPAGE=	http://transcalc.sourceforge.net/
 COMMENT=	Transmission line analysis/synthesis
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
-.include "../../x11/gtk/buildlink2.mk"
-.include "../../graphics/imlib/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
+.include "../../graphics/imlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
