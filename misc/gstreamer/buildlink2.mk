@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/04/25 04:39:55 rh Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/05/02 11:55:50 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gstreamer.
 #
@@ -46,7 +46,7 @@ BUILDLINK_FILES.gstreamer+=	lib/pkgconfig/gstreamer-control-0.6.pc
 .include "../../devel/libgnomeui/buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../devel/popt/buildlink2.mk"
-.include "../../lang/python22/buildlink2.mk"
+.include "../../lang/python/application.mk"
 .include "../../textproc/gtk-doc/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../textproc/libxslt/buildlink2.mk"
