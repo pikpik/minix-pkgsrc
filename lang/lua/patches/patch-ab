@@ -1,11 +1,11 @@
 $NetBSD$
 
---- /dev/null	Fri Feb 21 23:53:36 2003
-+++ build/liblua/Makefile
+--- /dev/null
++++ objdir/liblua/Makefile
 @@ -0,0 +1,28 @@
 +LIB= lua
 +
-+SHLIB_MAJOR= 0
++SHLIB_MAJOR= 1
 +SHLIB_MINOR= 0
 +
 +LIBDIR= ${PREFIX}/lib
@@ -19,10 +19,10 @@ $NetBSD$
 +
 +.PATH:	${.CURDIR}/../../src
 +
-+INCLUDES= lua.h luadebug.h lauxlib.h
++INCLUDES= lua.h lauxlib.h
 +
-+SRCS= lapi.c lcode.c ldebug.c ldo.c lfunc.c lgc.c llex.c lmem.c	\
-+      lobject.c lparser.c lstate.c lstring.c ltable.c ltests.c	\
++SRCS= lapi.c lcode.c ldebug.c ldo.c ldump.c lfunc.c lgc.c llex.c lmem.c	\
++      lobject.c lopcodes.c lparser.c lstate.c lstring.c ltable.c ltests.c	\
 +      ltm.c lundump.c lvm.c lzio.c
 +
 +afterinstall:
