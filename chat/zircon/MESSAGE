@@ -1,5 +1,5 @@
 ======================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.2 2001/02/06 14:24:05 wiz Exp $
 
 You might want to set the following environment variables in your
 favourite shell rc file:
