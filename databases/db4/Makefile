@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2004/03/20 05:42:35 snj Exp $
+# $NetBSD: Makefile,v 1.17 2004/04/07 15:12:40 jmmv Exp $
 
 DISTNAME=		db-4.2.52
 PKGNAME=		${DISTNAME:S/db/db4/}
 PKGREVISION=		1
 CATEGORIES=		databases
-MASTER_SITES=	http://www.sleepycat.com/update/snapshot/
+MASTER_SITES=		http://www.sleepycat.com/update/snapshot/
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.sleepycat.com/
