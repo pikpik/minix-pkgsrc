@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/01 09:21:50 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/04 09:19:46 uebayasi Exp $
 
 DISTNAME=	emacs-packages-0.1
 CATEGORIES=	meta-pkgs editors
@@ -44,7 +44,7 @@ DEPENDS+=	navi2ch-[0-9]*:../../chat/navi2ch
 DEPENDS+=	pcl-cvs-[0-9]*:../../devel/pcl-cvs
 .endif
 #DEPENDS+=	pvs-[0-9]*:../../devel/pvs	# XXX pvs-license
-DEPENDS+=	psgml-[0-9]*:../../textproc/psgml
+DEPENDS+=	psgml-mode-[0-9]*:../../textproc/psgml-mode
 DEPENDS+=	python-mode-[0-9]*:../../devel/python-mode
 DEPENDS+=	ruby-mode-[0-9]*:../../devel/ruby-mode
 DEPENDS+=	ruby-rd-mode-[0-9]*:../../devel/ruby-rd-mode
