@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/06/10 00:08:43 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/06/11 02:05:09 jlam Exp $
 
 DISTNAME=	CmdLine
 PKGNAME=	cmdline-${PKG_VERS}
@@ -13,7 +13,8 @@ COMMENT=	C++ library for parsing command arguments
 
 DIST_SUBDIR=	cmdline-${DIST_VERS}
 
-USE_LIBTOOL=	# defined
+USE_BUILDLINK_ONLY=	# defined
+USE_LIBTOOL=		# defined
 
 .include "../../devel/readline/buildlink.mk"
 
