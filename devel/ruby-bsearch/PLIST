@@ -1,2 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/01 11:58:20 taca Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:26:16 zuntum Exp $
 ${RUBY_SITELIBDIR}/bsearch.rb
+${RUBY_DOCDIR}/bsearch/bsearch.en.html
+${RUBY_DOCDIR}/bsearch/bsearch.en.rd
+${RUBY_DOCDIR}/bsearch/bsearch.ja.html
+${RUBY_DOCDIR}/bsearch/bsearch.ja.rd
+${RUBY_DOCDIR}/bsearch/bsearch.png
+@dirrm ${RUBY_DOCDIR}/bsearch
