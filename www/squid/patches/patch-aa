@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.10 2002/10/13 16:43:21 taca Exp $
 
 --- src/Makefile.in.orig	Sat Jul 13 00:10:04 2002
 +++ src/Makefile.in
@@ -86,9 +86,9 @@ $NetBSD$
 +install-data-local: install-dataDATA
 +	@mkdir -p $(DESTDIR)$(EXAMPLES_DIR)
 +	@echo "$(INSTALL_DATA) $(srcdir)/mime.conf.default $(DESTDIR)$(EXAMPLES_DIR)/mime.conf" ;\
-+	        $(INSTALL_DATA) $(srcdir)/mime.conf.default $(DESTDIR)$(EXAMPLES_DIR)/mime.conf; \
++	        $(INSTALL_DATA) $(srcdir)/mime.conf.default $(DESTDIR)$(EXAMPLES_DIR)/mime.conf
 +	@echo "$(INSTALL_DATA) squid.conf.default $(DESTDIR)$(EXAMPLES_DIR)/suqid.conf"; \
-+	        $(INSTALL_DATA) squid.conf.default $(DESTDIR)$(EXAMPLES_DIR)/squid.conf; \
++	        $(INSTALL_DATA) squid.conf.default $(DESTDIR)$(EXAMPLES_DIR)/squid.conf
 +
  	$(mkinstalldirs) $(DESTDIR)$(DEFAULT_LOG_PREFIX)
  
