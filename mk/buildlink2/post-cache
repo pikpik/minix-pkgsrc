@@ -1,8 +1,8 @@
-# $NetBSD: post-cache,v 1.1.2.7 2002/06/30 19:03:30 jlam Exp $
+# $NetBSD: post-cache,v 1.2 2002/08/22 08:21:29 jlam Exp $
 
 *)
 	case $arg in
-	*[\`\"\$\\])
+	*[\`\"\$\\]*)
 		arg=`@ECHO@ X$arg | $Xsed -e "$sed_quote_subst"`
 		case $arg in
 		*[\[\~\#\^\&\*\(\)\{\}\|\;\<\>\?\'\ \	]*|*]*|"")
