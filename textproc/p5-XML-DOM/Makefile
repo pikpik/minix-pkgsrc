@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2002/04/17 10:59:55 shell Exp $
+# $NetBSD: Makefile,v 1.9 2002/10/27 20:49:00 seb Exp $
 #
 
-DISTNAME=	XML-DOM-1.39
+DISTNAME=	XML-DOM-1.42
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5xdo
 CATEGORIES=	devel perl5
