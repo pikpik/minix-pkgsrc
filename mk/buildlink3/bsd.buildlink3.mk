@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.114 2004/03/12 18:45:20 jlam Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.115 2004/03/13 03:33:31 jlam Exp $
 #
 # An example package buildlink3.mk file:
 #
@@ -141,7 +141,7 @@ _BLNK_PACKAGES+=	${_pkg_}
 _BLNK_RECURSIVE_DEPENDS=	# empty
 .for _pkg_ in ${_BLNK_PACKAGES}   
 .  if empty(_BLNK_RECURSIVE_DEPENDS:M${_pkg_}) && \
-      !empty(USE_BUILTIN.${_pkg_}:M[nN][oO])
+      (defined(USE_BUILTIN.${_pkg_}) && !empty(USE_BUILTIN.${_pkg_}:M[nN][oO]))
 _BLNK_RECURSIVE_DEPENDS+=	${_pkg_}
 .  endif
 .endfor
