@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2002/04/06 16:53:01 frueauf Exp $
+# $NetBSD: Makefile,v 1.114 2002/06/15 21:20:01 cjep Exp $
 
 DISTNAME=	fetchmail-5.9.11
 CATEGORIES=	mail
@@ -26,7 +26,6 @@ FETCHMAIL_USE_SSL?=	YES
 
 .if defined(FETCHMAIL_USE_SSL) && ${FETCHMAIL_USE_SSL} == YES
 .include "../../security/openssl/buildlink.mk"
-#USE_SSL=		yes
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_DIR}
 .else
 CONFIGURE_ARGS+=	--without-ssl
