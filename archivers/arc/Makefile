@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/05/22 19:54:08 tv Exp $
+# $NetBSD: Makefile,v 1.7 1999/05/24 17:26:03 tv Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:09 fenner Exp 
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=     packages@netbsd.org
+COMMENT=	Create & extract files from DOS .ARC files
 
 NO_WRKSUBDIR=	yes
 

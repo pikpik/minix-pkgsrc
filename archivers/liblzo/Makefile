@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/06/01 11:23:13 rh Exp $
+# $NetBSD: Makefile,v 1.4 2000/06/09 06:54:51 jlam Exp $
 #
 
 DISTNAME=		lzo-1.06
@@ -11,6 +11,7 @@ MASTER_SITES=		http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/ \
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://wildsau.idv.uni-linz.ac.at/mfx/lzo.html
+COMMENT=		Portable lossless data compression library written in ANSI C
 
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined

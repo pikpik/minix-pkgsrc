@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/09/09 19:40:17 fredb Exp $
+# $NetBSD: Makefile,v 1.10 2001/01/11 20:13:49 dent Exp $
 #
 
 DISTNAME=	zip1-1.1
@@ -9,6 +9,7 @@ DISTFILES=	zip11.zip
 
 MAINTAINER=	tv@netbsd.org
 HOMEPAGE=	http://www.info-zip.org/pub/infozip/
+COMMENT=	Create/update ZIP files compatible with pkzip version 1
 
 BUILD_DEPENDS=	unzip:../../archivers/unzip
 

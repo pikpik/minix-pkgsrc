@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/09/18 14:49:08 kim Exp $
+# $NetBSD: Makefile,v 1.14 1999/09/18 15:07:29 kim Exp $
 #
 
 DISTNAME=       tar-1.12
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.shar.gz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/tar/tar.html
+COMMENT=	The GNU tape archiver with remote magnetic tape support
 
 EXTRACT_CMD=	${DECOMPRESS_CMD} ${DOWNLOADED_DISTFILE} | ${SH}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/21 21:01:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/10 11:57:50 tron Exp $
 
 DISTNAME=	gzip-1.2.4a
 CATEGORIES=	archivers
@@ -7,6 +7,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/gzip/gzip.html
+COMMENT=	The ''meta-package" for the GZIP compression utility
 
 DEPENDS+=	gzip-base-1.2.4a:../../archivers/gzip-base
 DEPENDS+=	gzip-info-1.2.4a:../../archivers/gzip-info

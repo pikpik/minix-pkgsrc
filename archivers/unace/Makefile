@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/20 19:46:46 wiz Exp $
 #
 
 DISTNAME=	unacepub
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.winace.com/
+COMMENT=	Extract, list and test files in ACE archives
 
 USE_GMAKE=	yes
 DIST_SUBDIR=	unace-1.2

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/05/23 20:55:29 tv Exp $
 
 DISTNAME=	bunzip021.c
 PKGNAME=	bunzip-0.21
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.gz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.muraroa.demon.co.uk/
+COMMENT=	Decompressor for bzip .bz files
 
 NO_WRKSUBDIR=
 EXTRACT_CMD=	${GZCAT} ${DOWNLOADED_DISTFILE} >${DISTNAME}
