@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2005/01/11 14:42:15 xtraeme Exp $
 #
 
 DISTNAME=	pkg_notify-0.4.1
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://imil.net/NetBSD/
 

@@ -1,2 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/12/28 00:26:21 xtraeme Exp $
 bin/pkg_notify
+share/examples/pkg_notify/pkg_notify.list
+@dirrm share/examples/pkg_notify
