@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Wed May 31 06:02:43 2000
++++ configure	Sun Jun 25 18:52:51 2000
+@@ -5688,7 +5688,7 @@
+   cat conftest.$ac_ext >&5
+   rm -rf conftest*
+   CATOBJEXT=.mo
+-		   DATADIRNAME=lib
++		   DATADIRNAME=share
+ fi
+ rm -f conftest*
+ 		INSTOBJEXT=.mo
