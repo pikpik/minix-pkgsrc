@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.140 2002/09/30 16:08:17 atatat Exp $
+# $NetBSD: Makefile,v 1.141 2002/11/14 04:01:55 wiz Exp $
 #
 
 DISTNAME=	pkglint-3.37
@@ -10,7 +10,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/Packages.txt
 COMMENT=	Verifier for NetBSD packages and complete pkgsrc tree
 
-DEPENDS+=	digest-2001*:../../pkgtools/digest
+DEPENDS+=	digest>=20010101:../../pkgtools/digest
 
 USE_PERL5=	YES
 
