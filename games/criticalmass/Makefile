@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:40 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 13:30:55 grant Exp $
 #
 
 DISTNAME=	CriticalMass-0.98
@@ -12,13 +12,13 @@ MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://criticalmass.sourceforge.net/
 COMMENT=	SDL/OpenGL space shoot'em up game
 
-USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
+USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 USE_X11=	YES
 
-.include "../../devel/SDL/buildlink2.mk"
-.include "../../devel/zlib/buildlink2.mk"
-.include "../../graphics/SDL_image/buildlink2.mk"
-.include "../../audio/SDL_mixer/buildlink2.mk"
+.include "../../devel/SDL/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/SDL_image/buildlink3.mk"
+.include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
