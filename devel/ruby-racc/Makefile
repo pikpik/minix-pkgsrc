@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/12/30 17:13:47 taca Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/17 21:33:44 grant Exp $
 # FreeBSD: ports/devel/ruby-racc/Makefile,v 1.20 2001/01/27 09:54:30 knu Exp
 
 DISTNAME=	${RACC_DISTFILE}
@@ -17,9 +17,9 @@ CONFIGURE_ARGS+=--with=racc
 
 DOCS=		BUGS.en BUGS.ja README.en README.ja
 DOCS_EN=	changes.html command.html debug.html grammar.html index.html \
-		parser.html usage.html
+		notes.html parser.html usage.html
 DOCS_JA=	changes.html command.html debug.html grammar.html index.html \
-		parser.html usage.html
+		notes.html parser.html usage.html
 EXAMPLES=	array.y array2.y calc-ja.y calc.y conflict.y hash.y lalr.y \
 		syntax.y yyerr.y
 
