@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/02 14:31:00 rh Exp $
+# $NetBSD: Makefile,v 1.2 1999/12/02 14:50:39 rh Exp $
 #
 
-PKGNAME=       	p5-Digest-MD5-2.09
-DISTNAME!=     	echo ${PKGNAME} | sed -e 's/^p5-//'
+DISTNAME=	Digest-MD5-2.09
+PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Digest/}
 
