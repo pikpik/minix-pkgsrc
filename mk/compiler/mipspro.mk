@@ -1,4 +1,4 @@
-# $NetBSD: mipspro.mk,v 1.22 2004/02/18 13:32:38 jlam Exp $
+# $NetBSD: mipspro.mk,v 1.23 2004/05/06 14:25:02 jschauma Exp $
 
 .if !defined(COMPILER_MIPSPRO_MK)
 COMPILER_MIPSPRO_MK=	defined
@@ -62,5 +62,11 @@ ${${_target_}}:
 	${_PKG_SILENT}${_PKG_DEBUG}${CHMOD} +x ${.TARGET}
 .  endif
 .endfor
+
+.if defined(ABI)
+MABIFLAG=       -${ABI:C/^32$/n&/}
+CFLAGS+=        ${MABIFLAG}
+LDFLAGS+=       ${MABIFLAG}
+.endif
 
 .endif	# COMPILER_MIPSPRO_MK
