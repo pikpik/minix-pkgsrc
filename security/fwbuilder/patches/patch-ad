@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/gui/FWBTree.cpp.orig	Sun Dec 12 09:38:29 2004
++++ src/gui/FWBTree.cpp	Thu Feb 24 00:31:41 2005
+@@ -51,6 +51,7 @@
+ #include "fwbuilder/IntervalGroup.h"
+ 
+ #include <iostream>
++#include <algorithm>
+ 
+ using namespace std;
+ using namespace libfwbuilder;
