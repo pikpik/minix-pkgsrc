@@ -1,0 +1,9 @@
+@comment $NetBSD$
+man/man8/pen.8
+man/man8/mergelogs.8
+sbin/pen
+sbin/mergelogs
+share/doc/pen/COPYING
+share/doc/pen/ChangeLog
+share/doc/pen/README
+@dirrm share/doc/pen
