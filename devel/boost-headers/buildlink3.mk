@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2005/02/26 22:48:35 jmmv Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 BOOST_HEADERS_BUILDLINK3_MK:=	${BOOST_HEADERS_BUILDLINK3_MK}+
@@ -15,5 +15,8 @@ BUILDLINK_DEPENDS.boost-headers+=	boost-headers>=1.32.0
 BUILDLINK_DEPMETHOD.boost-headers?=	build
 BUILDLINK_PKGSRCDIR.boost-headers?=	../../devel/boost-headers
 .endif	# BOOST_HEADERS_BUILDLINK3_MK
+
+PTHREAD_OPTS+=		require
+.include "../../mk/pthread.buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
