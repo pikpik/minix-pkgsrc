@@ -1,8 +1,8 @@
 $NetBSD$
 
---- wrlib/Makefile.am.orig	Sat Apr 21 09:12:35 2001
-+++ wrlib/Makefile.am
-@@ -4,7 +4,7 @@
+--- wrlib/Makefile.in.orig	Fri Oct  5 02:52:35 2001
++++ wrlib/Makefile.in
+@@ -106,7 +106,7 @@
  
  lib_LTLIBRARIES = libwraster.la
  
