@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:16:01 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:55:53 grant Exp $
 
 DISTNAME=	HTTPD-User-Manage-1.58
 PKGNAME=	p5-${DISTNAME}
@@ -10,7 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://stein.cshl.org/~lstein/user_manage/
 COMMENT=	Perl script/modules for managing web access control
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=         ${PERL5_SITEARCH}/auto/HTTPD-User-Manage/.packlist
 REPLACE_PERL=		user_manage
 

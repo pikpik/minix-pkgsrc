@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:08 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:20:26 martti Exp $
 #
 
 DISTNAME=		Tie-EncryptedHash-1.1
@@ -15,7 +15,7 @@ DEPENDS+=		p5-Crypt-CBC-[0-9]*:../../security/p5-Crypt-CBC
 DEPENDS+=		p5-Crypt-Blowfish-[0-9]*:../../security/p5-Crypt-Blowfish
 DEPENDS+=		p5-Crypt-DES-[0-9]*:../../security/p5-Crypt-DES
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Tie/EncryptedHash/.packlist
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/04 13:29:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2003/09/09 09:59:29 salo Exp $
 #
 
 DISTNAME=	Authen-SASL-2.04
@@ -10,7 +10,7 @@ MAINTAINER=	cube@cubidou.net
 HOMEPAGE=	http://search.cpan.org/dist/Authen-SASL/
 COMMENT=	Perl module to handle SASL authentication
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Authen/SASL/.packlist
 
 .include "../../lang/perl5/module.mk"
