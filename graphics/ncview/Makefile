@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/09 23:41:34 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:27 wiz Exp $
 
-DISTNAME=		ncview-1.92b
+DISTNAME=		ncview-1.92c
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://cirrus.ucsd.edu/pub/ncview/
 
