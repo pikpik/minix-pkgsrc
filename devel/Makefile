@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.232 2001/07/21 02:55:21 gmcgarry Exp $
+# $NetBSD: Makefile,v 1.233 2001/07/25 23:13:20 groo Exp $
 #
 
 COMMENT=	Development utilities
@@ -104,6 +104,7 @@ SUBDIR+=	libgtop
 SUBDIR+=	libhfs
 SUBDIR+=	libmemmgr
 SUBDIR+=	libmm
+SUBDIR+=	libmpeg3
 SUBDIR+=	libnet
 SUBDIR+=	libole2
 SUBDIR+=	libportlib
