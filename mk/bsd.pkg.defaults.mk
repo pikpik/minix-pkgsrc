@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.279 2004/09/01 02:21:29 uebayasi Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.280 2004/09/10 19:51:50 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1961,6 +1961,12 @@ TIN_USE_INN_SPOOL?= NO
 # set ${PREFIX} to /usr/local.  Use another path in such a case.
 # Possible: any valid path
 # Default: none
+
+#THTTPD_LOG_FACILITY?=	LOG_DAEMON
+# Used by the thttpd package to choose the log facility used
+# by thttpd for its syslogd(8) messages.
+# Possible: see "facility codes" in /usr/include/syslog.h
+# Default: LOG_DAEMON
 
 TKPASMAN_USE_SSL?=	YES
 # Enable SSL in tkpasman (to encode stored passwords)
