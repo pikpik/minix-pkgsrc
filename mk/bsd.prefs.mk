@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.36 2001/05/17 15:08:17 abs Exp $
+# $NetBSD: bsd.prefs.mk,v 1.37 2001/06/07 15:17:08 tron Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -208,6 +208,11 @@ PKG_TOOLS_BIN?=		/usr/sbin
 LOCALBASE?=             ${DESTDIR}/usr/local
 ZOULARISBASE?=		${LOCALBASE}/bsd
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/bin
+
+.if (${X11BASE} == "/usr/openwin")
+HAVE_OPENWINDOWS=	YES
+.endif
+
 .elif (${OPSYS} == "Linux")
 ZOULARISBASE?=		${DESTDIR}/usr/local/bsd
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/bin
