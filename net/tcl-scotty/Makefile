@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:22:22 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/08 19:52:51 minskim Exp $
 #
 
 DISTNAME=	scotty-${DIST_VERS}
@@ -22,6 +22,7 @@ CONFIGURE_ARGS+= --with-tcl-config=${PREFIX}/lib --enable-multicast \
 CONFIGURE_ENV+=	TARGET=scotty
 
 USE_LIBTOOL=	yes
+NO_EXPORT_CPP=	yes
 
 post-extract:
 	@${RM} -f ${WRKSRC}/../doc/http.n
