@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:21:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:26:13 grant Exp $
 #
 
 DISTNAME=	pircbot-0.9.11
-CATEGORIES=	chat
+CATEGORIES=	chat java
 MASTER_SITES=	http://www.jibble.org/files/
 EXTRACT_SUFX=	.zip
 
