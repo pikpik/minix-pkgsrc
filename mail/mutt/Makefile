@@ -1,12 +1,12 @@
 #
 # New ports collection makefile for:	mutt
-# Version required:			mutt-0.89.1i
-# Date Created:				02 February 1998
+# Version required:			mutt-0.91i
+# Date Created:				11 April 1998
 # Whom:					tron
 #
-# $NetBSD: Makefile,v 1.1 1998/02/02 10:48:30 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/02/09 00:02:47 hubertf Exp $
 
-DISTNAME=	mutt-0.89.1i
+DISTNAME=	mutt-0.91i
 CATEGORIES=	mail
 MASTER_SITES=	ftp://riemann.iam.uni-bonn.de/pub/mutt/ \
 		ftp://ftp.gbnet.net/pub/mutt-international/ \
