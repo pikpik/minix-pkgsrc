@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/07/24 01:57:00 tv Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:17:00 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/09/24 06:55:01 tg Exp
 #
 
@@ -10,6 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ccil.org/~esr/giflib/
 
 USE_LIBTOOL=	yes
+USE_X11=	yes
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/doc/giflib
