@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/08/31 22:56:37 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/09/01 02:45:55 dmcmahill Exp $
 #
 
-DISTNAME=	wxGTK-2.2.1
+DISTNAME=	wxGTK-2.2.2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
 
