@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/05/02 11:56:45 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/05/09 15:44:10 drochner Exp $
 
 .if !defined(NEON_BUILDLINK2_MK)
 NEON_BUILDLINK2_MK=	# defined
@@ -14,7 +14,7 @@ BUILDLINK_FILES.neon+=		lib/libneon.*
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"
-.include "../../textproc/libxml2/buildlink2.mk"
+.include "../../textproc/expat/buildlink2.mk"
 
 BUILDLINK_TARGETS+=		neon-buildlink
 
