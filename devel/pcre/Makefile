@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.8.2.3 2002/08/25 18:01:05 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/08/25 18:38:42 jlam Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/07/12 22:59:19 steve Exp $
 
-DISTNAME=	pcre-3.7
+DISTNAME=	pcre-3.9
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pcre/}			\
-		ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/	\
+MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/	\
 		ftp://pcre.sourceforge.net/pub/pcre/
 EXTRACT_SUFX=	.tar.bz2
 
