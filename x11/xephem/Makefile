@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/02 08:46:24 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/09/08 17:29:46 agc Exp $
 
 DISTNAME=	xephem-3.1
 CATEGORIES=	x11
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://iraf.noao.edu/contrib/xephem/xephem-3.1/ \
 		ftp://wolf.ifj.edu.pl/mirror/xephem/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://iraf.noao.edu/~ecdowney/xephem.html
+HOMEPAGE=	http://www.clearskyinstitute.com/xephem/xephem.html
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
