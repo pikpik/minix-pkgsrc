@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_mp3.so
+share/httpd/htdocs/manual/mod/mod_mp3/faq.html
+@dirrm share/httpd/htdocs/manual/mod/mod_mp3
