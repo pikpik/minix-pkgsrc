@@ -1,1 +1,2 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/09/05 09:18:21 jlam Exp $
+@unexec rm -f %D/${PERL5_ARCHLIB}/perllocal.pod
