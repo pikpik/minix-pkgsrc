@@ -1,9 +1,11 @@
 #! /bin/sh
 #
-# $NetBSD: DEINSTALL,v 1.1.1.1 1999/08/03 13:54:56 hubertf Exp $
+# $NetBSD: DEINSTALL,v 1.2 1999/08/17 23:38:17 tron Exp $
 #
 
-cat <<EOT
+case "$2" in
+        DEINSTALL) cat <<EOF
+
 ---------------------------------------------------------------------------
 Any fonts that were created on the fly when running TeX were created
 in the directory /var/spool/texfonts. You may want to remove this 
@@ -14,6 +16,8 @@ directory manually if you don't need it any longer:
 For further information have a look at $PKG_PREFIX/share/texmf/doc/tetex/.
 ---------------------------------------------------------------------------
 
-EOT
+EOF
+        ;;
+esac    
 
 exit 0
