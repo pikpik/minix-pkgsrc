@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2002/01/17 00:01:59 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/31 17:33:54 abs Exp $
 
-DISTNAME=		HTML-FixEntities-1.00
+DISTNAME=		HTML-FixEntities-1.01
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		www perl5
 MASTER_SITES=		http://www.mono.org/abs/tools/HTML-FixEntities/
