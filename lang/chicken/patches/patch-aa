@@ -1,14 +1,17 @@
 $NetBSD$
 
---- chicken-config.in-	Wed Aug 21 01:35:50 2002
-+++ chicken-config.in	Wed Aug 21 01:37:28 2002
-@@ -31,7 +31,8 @@
+--- chicken-config.in.orig	Tue May  7 18:06:47 2002
++++ chicken-config.in	Wed Aug 21 06:50:42 2002
+@@ -31,7 +31,11 @@
  # standard library directory.
  case "%libdir%" in
      /usr/lib|"") LIBDIR=;;
 -    *) LIBDIR=-L%libdir%;;
 +    *) LIBDIR="-L%libdir%"
-+       LIBDIR="$LIBDIR -Wl,-R%libdir%";;
++       if [ `uname -s` = "NetBSD" ]; then
++         LIBDIR="$LIBDIR -Wl,-R%libdir%"
++       fi
++       ;;
  esac 
  
  UNSAFE=""
