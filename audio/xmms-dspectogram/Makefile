@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/13 13:50:33 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 21:24:00 grant Exp $
 #
 
 DISTNAME=	dspectogram-1.2
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://hem.passagen.se/joakime/
 
 MAINTAINER=	hubertf@NetBSD.org
-HOMEPAGE=	http://hem.passagen.se/joakime/linuxapp.html
+HOMEPAGE=	http://www.shell.linux.se/bm/index.php?page=xmmsplugin
 COMMENT=	XMMS plugin for dual spectogram
 
 USE_BUILDLINK2=		YES
