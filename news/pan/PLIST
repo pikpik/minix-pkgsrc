@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/04/24 14:14:09 rh Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/10/15 07:24:40 rh Exp $
 bin/pan
 share/gnome/apps/Internet/pan.desktop
 ${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/pan.mo

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2001/05/06 09:39:08 wiz Exp $
+@comment $NetBSD: PLIST,v 1.7 2001/08/22 14:21:49 mjl Exp $
 bin/slrn
 bin/slrnpull
 man/man1/slrn.1

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/08/22 13:44:19 rh Exp $
 bin/updatenews
 etc/newscache.conf-dist
 @unexec install-info --delete %D/info/NewsCache.info %D/info/dir

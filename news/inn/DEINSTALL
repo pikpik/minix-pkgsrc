@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: DEINSTALL,v 1.2 1999/07/18 23:34:14 tron Exp $
 
 case "$2" in
         DEINSTALL) cat <<EOF
