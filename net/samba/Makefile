@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/03/29 16:15:34 bouyer Exp $
+# $NetBSD: Makefile,v 1.23 1999/04/07 09:18:18 agc Exp $
 
 DISTNAME=	samba-2.0.3
 CATEGORIES=	net
@@ -54,7 +54,7 @@ post-install:
 	${ECHO} '       $$nmbd -D' >> ${STARTUP_SCRIPT};                \
 	${ECHO} "fi" >> ${STARTUP_SCRIPT};                              \
 	${CHMOD} 755 ${STARTUP_SCRIPT};                                 \
-	${CHOWN} bin:bin ${STARTUP_SCRIPT};
+	${CHOWN} ${BINOWN}:${BINGRP} ${STARTUP_SCRIPT};
 	@if [ ! -f ${SAMPLE_CONFIG} ]; then                             \
 		${SED} -e 's:__LOGDIR__:${SAMBA_LOGDIR}:g'              \
 		-e 's:__ETCDIR__:${SAMBA_ETCDIR}:g'			\
