@@ -2,7 +2,7 @@ $NetBSD$
 
 --- Makefile.in.orig	Wed Jul 17 04:03:15 2002
 +++ Makefile.in
-@@ -1,14 +1,14 @@
+@@ -1,10 +1,10 @@
  # The path to the tcl.h header file
  
 -TCL_INCPATH = @TCL_SRC_DIR@/generic
@@ -14,11 +14,6 @@ $NetBSD$
 +TK_INCPATH  = @TK_PREFIX@/include
  
  # The path to the X11 include files
- 
--XINCLUDES   = @XINCLUDES@
-+XINCLUDES   = @XINCLUDES@/include
- 
- # Install SNACK package here
  
 @@ -28,6 +28,7 @@
  TCL_VERSION = @TCLVER@
