@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.187 2004/07/15 23:11:40 recht Exp $
+# $NetBSD: Makefile,v 1.188 2004/07/21 03:09:44 snj Exp $
 #
 
 COMMENT=	Security tools
@@ -20,6 +20,7 @@ SUBDIR+=	bitstir
 SUBDIR+=	cfs
 SUBDIR+=	chkrootkit
 SUBDIR+=	crack
+SUBDIR+=	crypto++
 SUBDIR+=	cy-login
 SUBDIR+=	cy2-login
 SUBDIR+=	cy2-ntlm
