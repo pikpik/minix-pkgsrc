@@ -1,7 +1,10 @@
-# $NetBSD$
+# $NetBSD: INSTALL,v 1.2 2001/11/25 23:55:35 zuntum Exp $
+
+POPA3D_USER="@POPA3D_USER@"
+POPA3D_GROUP="@POPA3D_GROUP@"
 
 case "${STAGE}" in
 POST-INSTALL)
-	${CHOWN} ${PKG_USER}:${PKG_GROUP} ${PKG_PREFIX}/libexec/popa3d
+	${CHOWN} ${POPA3D_USER}:${POPA3D_GROUP} ${PKG_PREFIX}/libexec/popa3d
 	;;
 esac
