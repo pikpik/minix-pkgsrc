@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Sun Jul 13 21:44:22 2003
+--- Makefile.in.orig	2004-01-03 22:06:43.000000000 +0100
 +++ Makefile.in
-@@ -150,11 +150,9 @@ libphysfsinclude_HEADERS = \
+@@ -160,11 +160,9 @@ libphysfsinclude_HEADERS = \
  @BUILD_MACOSX_TRUE@libphysfs_la_INCLUDES = $(ZLIB_INC)
  
  @BUILD_MACOSX_TRUE@libphysfs_la_LDFLAGS = \
