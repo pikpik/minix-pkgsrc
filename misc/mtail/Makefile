@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/28 15:41:04 zuntum Exp $
 #
 
-DISTNAME=	mtail-0.9.2
+DISTNAME=	mtail-1.0.0
 CATEGORIES=	misc
 MASTER_SITES=	http://matt.immute.net/src/mtail/
 EXTRACT_SUFX=	.tgz
