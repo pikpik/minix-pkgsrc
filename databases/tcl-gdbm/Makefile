@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/07 15:14:25 bouyer Exp $
+# $NetBSD: Makefile,v 1.2 1999/07/07 16:07:09 bouyer Exp $
 #
 
 DISTNAME=	Tclgdbm0.6
@@ -8,8 +8,8 @@ MASTER_SITES=	http://www.tcltk.com/ftp/ellson/
 
 MAINTAINER=	bouyer@netbsd.org
 
-DEPENDS+=	tcl-8.0.5:../../lang/tcl80	\
-		gdbm-1.7.3:../../databases/gdbm
+DEPENDS+=	tcl-8.0.5:../../lang/tcl80
+DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
 
 GNU_CONFIGURE=	yes
 

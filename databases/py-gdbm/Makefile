@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/04/01 14:07:53 agc Exp $
+# $NetBSD: Makefile,v 1.9 1999/04/14 06:17:31 tsarna Exp $
 #
 
 DISTNAME=	py152
@@ -11,8 +11,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	dolecek@ics.muni.cz
 HOMEPAGE=	http://www.python.org/doc/lib/module-gdbm.html
 
-DEPENDS+=	python-1.5.2:../../lang/python	\
-		gdbm-1.7.3:../../databases/gdbm
+DEPENDS+=	python-1.5.2:../../lang/python
+DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
 
 DIST_SUBDIR=	python
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/12/25 22:38:59 wiz Exp $
+# $NetBSD: Makefile,v 1.9 1999/12/28 04:20:00 wiz Exp $
 
 DISTNAME=	voice_hvs_di-2.0
 PKGNAME=	festvox-hvs-2.0
@@ -9,9 +9,9 @@ MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts
 
-DEPENDS+=	festival-1.4.0:../festival \
-		festlex-ogi-2.0:../festlex-ogi \
-		festogi-spanish-2.0:../festogi-spanish
+DEPENDS+=	festival-1.4.0:../festival
+DEPENDS+=	festlex-ogi-2.0:../festlex-ogi
+DEPENDS+=	festogi-spanish-2.0:../festogi-spanish
 
 LICENSE=	no-commercial-use
 

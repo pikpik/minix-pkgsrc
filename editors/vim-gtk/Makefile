@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2000/01/15 18:46:26 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/01/25 17:13:16 pooka Exp $
 
 .include		"../vim-share/Makefile.common"
 
 PKGNAME=		vim-gtk-${VIM_VERSION}
 
-DEPENDS+=		vim-share-${VIM_VERSION}:../vim-share \
-			gtk+-1.2.*:../../x11/gtk
+DEPENDS+=		vim-share-${VIM_VERSION}:../vim-share
+DEPENDS+=		gtk+-1.2.*:../../x11/gtk
 CONFLICTS=		vim-[0-9]* vim-xaw-*
 
 DISTFILES+=		${DISTNAME}-rt${EXTRACT_SUFX}
