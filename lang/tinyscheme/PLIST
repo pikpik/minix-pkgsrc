@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/tinyscheme
+lib/libtinyscheme.so.1.31
+lib/libtinyscheme.so.1
+lib/libtinyscheme.so
+lib/libtinyscheme.la
+lib/libtinyscheme.a
+share/tinyscheme/init.scm
+@dirrm share/tinyscheme
