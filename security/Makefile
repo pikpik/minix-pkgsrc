@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2001/03/26 05:15:43 zuntum Exp $
+# $NetBSD: Makefile,v 1.71 2001/03/26 12:00:16 hubertf Exp $
 #
 
 COMMENT=	Security tools
@@ -20,6 +20,7 @@ SUBDIR+=	fressh
 SUBDIR+=	fsh
 SUBDIR+=	gnupg
 SUBDIR+=	isakmpd
+SUBDIR+=	john
 SUBDIR+=	kth-krb4
 SUBDIR+=	libbf
 SUBDIR+=	libcrack
