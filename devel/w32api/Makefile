@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/08/25 04:49:13 kent Exp $
+# $NetBSD: Makefile,v 1.14 2003/08/25 06:06:10 kent Exp $
 # $PEACE: Makefile,v 1.21 2002/08/21 02:02:27 kent Exp $
 
 DISTNAME=	w32api-1.5-src
@@ -20,6 +20,8 @@ PE_CC=		${CROSSBASE}/bin/i386-netbsdpe-cc -I${WRKSRC}/include
 PE_AR=		${CROSSBASE}/bin/i386-netbsdpe-ar
 CRTWRKSRC=	${WRKDIR}/pe-crt-1.2
 CFLAGS+=	-I${WRKDIR}/include
+
+USE_PKGINSTALL=	yes
 
 # Building no import libraries but two static libraries.
 do-build:
