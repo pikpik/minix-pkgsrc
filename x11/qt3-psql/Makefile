@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/02/04 18:09:17 skrll Exp $
+# $NetBSD: Makefile,v 1.5 2003/02/18 19:16:55 drochner Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -7,6 +7,7 @@ PKGNAME=		qt3-psql-${QTVERSION}
 COMMENT=		QT postgresql driver
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include \
+			-I${PREFIX}/include/postgresql/server \
 			-L${QTDIR}/lib
 
 USE_BUILDLINK2=		yes
