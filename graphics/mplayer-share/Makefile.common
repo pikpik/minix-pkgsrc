@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.7 2002/08/07 12:53:06 veego Exp $
+# $NetBSD: Makefile.common,v 1.8 2002/08/28 07:00:47 jlam Exp $
 
 MPLAYER_DIST_VERSION=	0.90pre6
 
@@ -40,6 +40,7 @@ CONFIGURE_ARGS+=	--with-extralibdir="${LOCALBASE}/lib"
 #CONFIGURE_ARGS+=	--enable-dvdread
 CONFIGURE_ARGS+=	--disable-mpdvdkit
 CONFIGURE_ARGS+=	--disable-ossaudio
+CONFIGURE_ARGS+=	--enable-faad
 
 # The configure script attempts to test-execute compiled programs in /tmp,
 # but that directory may be mounted as noexec; work this around by setting
