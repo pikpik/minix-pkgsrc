@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/24 18:05:18 wulf Exp $
 #
 
 DISTNAME=	gmfsk-0.6
@@ -21,4 +21,5 @@ CONFIGURE_ARGS+=--enable-hamlib
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../math/fftw2/buildlink3.mk"
 .include "../../ham/hamlib/buildlink3.mk"
+.include "../../textproc/scrollkeeper/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
