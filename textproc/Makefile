@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.279 2005/02/19 19:23:04 wiz Exp $
+# $NetBSD: Makefile,v 1.280 2005/02/22 00:31:08 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -268,6 +268,7 @@ SUBDIR+=	unroff
 SUBDIR+=	untex
 SUBDIR+=	urlview
 SUBDIR+=	wdiff
+SUBDIR+=	writer2latex
 SUBDIR+=	xalan-c
 SUBDIR+=	xalan-j
 SUBDIR+=	xerces-c
