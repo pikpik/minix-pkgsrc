@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2002/07/03 11:11:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.67 2002/07/22 10:39:26 martti Exp $
 
 DISTNAME=	postfix-1.1.11
 PKGREVISION=	1
@@ -48,7 +48,7 @@ BUILD_DEFS+=	POSTFIX_USE_MYSQL
 .endif
 
 .if defined(USE_SASL) && ${USE_SASL} == "YES"
-DEPENDS+=	cyrus-sasl:../../security/cyrus-sasl
+DEPENDS+=	cyrus-sasl>=1.5.5:../../security/cyrus-sasl
 CCARGS+=	-DUSE_SASL_AUTH
 AUXLIBS+=	-lsasl
 PLIST_SRC+=	${WRKDIR}/PLIST.sasl
