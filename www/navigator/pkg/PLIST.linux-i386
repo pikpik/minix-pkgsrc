@@ -1,4 +1,6 @@
-@comment $NetBSD: PLIST.netbsd-i386,v 1.2 2000/01/05 15:43:36 abs Exp $
+@comment $NetBSD$
+lib/netscape/${BINNAME}-${NS_VERS}/plugins/ShockwaveFlash.class
+lib/netscape/${BINNAME}-${NS_VERS}/plugins/libflashplayer.so
 lib/netscape/${BINNAME}-${NS_VERS}/plugins/libnullplugin.so
 lib/netscape/${BINNAME}-${NS_VERS}/netscape-dynMotif
 lib/netscape/${BINNAME}-${NS_VERS}/libnullplugin-dynMotif.so
