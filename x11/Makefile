@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.204 2001/02/24 16:58:10 sakamoto Exp $
+# $NetBSD: Makefile,v 1.205 2001/02/25 14:49:02 wulf Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -128,6 +128,7 @@ SUBDIR+=	xsnow
 SUBDIR+=	xteddy
 SUBDIR+=	xteddy2
 SUBDIR+=	xtermset
+SUBDIR+=	xtoolwait
 SUBDIR+=	xview
 SUBDIR+=	xview-clients
 SUBDIR+=	xview-config
