@@ -1,5 +1,9 @@
+===========================================================================
+$NetBSD$
 
-To use the script please read the the manual
+To use the script, please read the the manual
   ${PREFIX}/share/docs/user_manage/user_manage.html
 
-to configure it propperly.
+to configure it properly.
+
+===========================================================================
