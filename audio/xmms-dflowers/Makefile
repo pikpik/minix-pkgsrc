@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/10 04:21:57 snj Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/03 00:13:11 tv Exp $
 #
 
 DISTNAME=	dflowers-1.2
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://hem.passagen.se/joakime/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://hem.passagen.se/joakime/linuxapp.html
 COMMENT=	XMMS plugin for dual flower scope
 

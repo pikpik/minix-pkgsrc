@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.43 2004/12/28 23:18:20 reed Exp $
+# $NetBSD: Makefile,v 1.44 2005/01/31 09:24:07 adam Exp $
 
 DISTNAME=       xpaint-2.7.3
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sf-xpaint/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://sf-xpaint.sourceforge.net/
 COMMENT=	Simple paint program
 

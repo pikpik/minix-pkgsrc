@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/10 04:29:18 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:11 tv Exp $
 #
 
 DISTNAME=	FunTimeDancer-0.1
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ftd/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} FunTimeDancer-packs-1.0.tar.gz
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/ftd/
 COMMENT=	XMMS plugin displaying an animation
 

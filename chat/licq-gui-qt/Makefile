@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/08/16 11:29:03 kristerw Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:13:15 tv Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -8,7 +8,7 @@ CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=licq/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.licq.org/
 COMMENT=	Qt GUI for licq
 

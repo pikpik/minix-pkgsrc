@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/01/20 12:26:15 agc Exp $
+# $NetBSD: Makefile,v 1.17 2004/03/08 20:27:15 minskim Exp $
 #
 
 DISTNAME=	lavaps-1.20
@@ -6,7 +6,7 @@ PKGNAME=	lavaps-1.20
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 COMMENT=	Lava lamp of currently running processes
 

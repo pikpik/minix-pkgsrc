@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/10/03 00:13:06 tv Exp $
+# $NetBSD: Makefile,v 1.44 2005/02/03 17:54:50 reed Exp $
 #
 
 DISTNAME=	lame-${VERS}
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} \
 		http://hive.me.gu.edu.au/not_lame/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://lame.sourceforge.net/
 COMMENT=	Fast, high quality MP3 encoder
 

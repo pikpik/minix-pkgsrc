@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/12 03:57:03 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:11 tv Exp $
 #
 
 DISTNAME=	neato
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.rpi.edu/~mullr/xmms/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.rpi.edu/~mullr/xmms/
 COMMENT=	Circle effect XMMS plugin
 

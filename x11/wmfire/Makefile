@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 22:56:48 grant Exp $
+# $NetBSD: Makefile,v 1.14 2004/04/18 07:37:07 snj Exp $
 #
 
 DISTNAME=	wmfire-0.0.3.9pre4
@@ -6,7 +6,7 @@ PKGNAME=	wmfire-0.0.3.9.4
 CATEGORIES=	x11
 MASTER_SITES=	http://staff.xmms.org/zinx/misc/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Displays generated fire according to system load
 
 USE_BUILDLINK3=	YES

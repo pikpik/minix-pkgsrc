@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.31 2004/11/22 13:58:28 adam Exp $
+# $NetBSD: Makefile,v 1.32 2004/12/18 15:43:19 grant Exp $
 
 DISTNAME=	gmp-4.1.4
 CATEGORIES=	devel math
 MASTER_SITES=	${MASTER_SITE_GNU:=gmp/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gmp/gmp.html
 COMMENT=	Library for arbitrary precision arithmetic
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/03/08 20:27:13 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/12 01:32:30 minskim Exp $
 
 DISTNAME=	tkirc1.202
 PKGNAME=	tkirc-1.202
 CATEGORIES=	chat x11
 MASTER_SITES=	ftp://ftp.informatik.uni-oldenburg.de/pub/tkirc/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://netsplit.de/tkirc1/
 COMMENT=	GUI for the ircII Internet Relay Chat client
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/04/18 07:09:46 snj Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:03 tv Exp $
 #
 
 DISTNAME=	mpeg_encode-1.5b-src
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	multimedia net
 MASTER_SITES=	ftp://mm-ftp.cs.berkeley.edu/pub/multimedia/mpeg/encode/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://bmrc.berkeley.edu/frame/research/mpeg/mpeg_encode.html
 COMMENT=	The Parallel Berkeley MPEG Encoder
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/12/18 15:50:42 grant Exp $
+# $NetBSD: Makefile,v 1.38 2004/12/28 23:18:20 reed Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.14
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.dtek.chalmers.se/~d3august/xt/dl/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		ndg_files.tar.gz
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dtek.chalmers.se/~d3august/xt/index.html
 COMMENT=	Graphical version of traceroute, which traces the route IP packets go
 

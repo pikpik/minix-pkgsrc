@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/12/03 15:15:07 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2004/12/29 15:31:24 minskim Exp $
 
 DISTNAME=	vtun-2.6
 PKGREVISION=	6
@@ -9,7 +9,7 @@ PATCHFILES=	vtun-26to30.patch
 PATCH_SITES+=	${MASTER_SITE_LOCAL}
 PATCH_DIST_STRIP=    -p1
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://vtun.sourceforge.net/
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
