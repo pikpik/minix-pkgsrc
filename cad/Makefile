@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2002/10/14 02:28:51 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.42 2002/10/29 00:35:02 dmcmahill Exp $
 #
 
 COMMENT=	CAD tools
@@ -7,6 +7,7 @@ SUBDIR+=	acs
 SUBDIR+=	atlc
 SUBDIR+=	boolean
 SUBDIR+=	cascade
+SUBDIR+=	covered-current
 SUBDIR+=	dinotrace
 SUBDIR+=	eagle
 SUBDIR+=	electric
