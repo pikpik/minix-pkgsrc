@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.27 2004/02/06 08:37:22 lukem Exp $
 #
 
 DISTNAME=	python
 PKGNAME=	python-${PYVERSSUFFIX}
-CATEGORIES=	lang
+CATEGORIES=	lang python
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 

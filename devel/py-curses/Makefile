@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2004/03/28 13:15:56 darcy Exp $
+# $NetBSD: Makefile,v 1.23 2004/04/27 03:43:53 snj Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-curses-0
 PKGREVISION=	2
-CATEGORIES=	devel
+CATEGORIES=	devel python
 
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/current/lib/module-curses.html

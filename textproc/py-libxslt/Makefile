@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/04/19 15:44:05 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/06 16:44:50 recht Exp $
 
 DISTNAME=	libxslt-1.1.8
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-CATEGORIES=	textproc
+CATEGORIES=	textproc python
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}
 EXTRACT_SUFX=	.tar.bz2
 

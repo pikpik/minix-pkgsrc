@@ -4,7 +4,7 @@
 DISTNAME=	pyPgSQL-2.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
 PKGREVISION=	1
-CATEGORIES=	databases
+CATEGORIES=	databases python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pypgsql/}
 
 MAINTAINER=	recht@NetBSD.org
@@ -20,5 +20,5 @@ PY_PATCHPLIST=	YES
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"
 .include "../../time/py-mxDateTime/buildlink3.mk"
-.include "../../databases/postgresql-lib/buildlink3.mk"
+.include "../../databases/postgresql-lib/pglib.mk"
 .include "../../mk/bsd.pkg.mk"

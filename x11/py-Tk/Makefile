@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2004/06/15 16:19:11 drochner Exp $
+# $NetBSD: Makefile,v 1.29 2004/06/22 14:43:12 recht Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-Tk-0
 PKGREVISION=	2
-CATEGORIES=	x11
+CATEGORIES=	x11 python
 
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/topics/tkinter/

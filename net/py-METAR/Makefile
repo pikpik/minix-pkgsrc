@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/09/21 09:27:24 jmc Exp $
+# $NetBSD: Makefile,v 1.6 2004/05/11 04:01:39 snj Exp $
 #
 
 DISTNAME=	pymetar-0.4
 PKGNAME=	${PYPKGPREFIX}-pymetar-0.4
-CATEGORIES=	net
+CATEGORIES=	net python
 MASTER_SITES=	http://unattached.i-no.de/pkgs/
 
 MAINTAINER=	tech-pkg@NetBSD.org

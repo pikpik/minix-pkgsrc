@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/09/21 09:47:31 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/05 09:00:23 recht Exp $
 
 DISTNAME=	GnuPGInterface-0.3.2
 PKGNAME=	${PYPKGPREFIX}-gnupg-0.3.2
-CATEGORIES=	security
+CATEGORIES=	security python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=py-gnupg/}
 
 MAINTAINER=	shell@shellhung.org

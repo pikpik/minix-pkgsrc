@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/09/21 09:35:18 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/22 04:05:36 snj Exp $
 
 DISTNAME=	pyunit-1.4.1
 PKGNAME=	${PYPKGPREFIX}-unit-1.4.1
-CATEGORIES=	devel
+CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyunit/}
 
 MAINTAINER=	shell@shellhung.org

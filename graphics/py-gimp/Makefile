@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/03/29 22:31:13 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/05 02:26:41 snj Exp $
 #
 
 DISTNAME=	pygimp-1.2
 PKGREVISION=	4
-CATEGORIES=	graphics
+CATEGORIES=	graphics python
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/pygimp/
 
 MAINTAINER=	tech-pkg@NetBSD.org

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/03/30 13:33:44 recht Exp $
+# $NetBSD: Makefile,v 1.2 2004/03/30 13:37:47 recht Exp $
 #
 
 DISTNAME=		${TWISTED_DISTNAME}
 PKGNAME=		py-twisted-docs-${TWISTED_VERSION}
-CATEGORIES=		net
+CATEGORIES=		net python
 MASTER_SITES=		${TWISTED_MASTER_SITES}
 
 MAINTAINER=		dotz@irc.pl

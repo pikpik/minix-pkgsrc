@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/09/21 09:37:53 jmc Exp $
+# $NetBSD: Makefile,v 1.6 2004/05/02 03:55:16 snj Exp $
 
 DISTNAME=	piddle-1.0.15
 PKGREVISION=	1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-CATEGORIES=	graphics
+CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=piddle/}
 
 MAINTAINER=	tech-pkg@NetBSD.org

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2004/03/26 02:27:58 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/21 04:59:44 snj Exp $
 
 DISTNAME=	pycurl-7.11.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
 PKGREVISION=	1
-CATEGORIES=	www
+CATEGORIES=	www python
 MASTER_SITES=	http://pycurl.sourceforge.net/download/
 
 MAINTAINER=	shell@NetBSD.org

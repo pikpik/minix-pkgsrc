@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:26:50 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/22 20:19:26 minskim Exp $
 
 DISTNAME=	HappyDoc_r2_1
 PKGNAME=	${PYPKGPREFIX}-HappyDoc-2.1
-CATEGORIES=	textproc
+CATEGORIES=	textproc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=happydoc/}
 
 MAINTAINER=	shell@NetBSD.org

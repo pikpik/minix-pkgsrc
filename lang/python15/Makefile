@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2004/06/16 22:57:50 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/06/23 15:54:08 minskim Exp $
 #
 
 DISTNAME=	py152
 PKGNAME=	python15-1.5.2
 PKGREVISION=	2
-CATEGORIES=	lang
+CATEGORIES=	lang python
 MASTER_SITES=	http://www.python.org/ftp/python/src/
 EXTRACT_SUFX=	.tgz
 

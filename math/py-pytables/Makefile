@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/22 15:17:08 drochner Exp $
 #
 
 DISTNAME=		pytables-0.8
 PKGNAME=		${PYPKGPREFIX}-pytables-0.8
-CATEGORIES=		math
+CATEGORIES=		math python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pytables/}
 
 MAINTAINER=		tech-pkg@NetBSD.org

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/04/15 17:58:57 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2004/05/02 03:55:05 snj Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-idle-0
-CATEGORIES=	devel
+CATEGORIES=	devel python
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.python.org/idle/

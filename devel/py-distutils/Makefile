@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/29 19:12:33 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:33:25 grant Exp $
 #
 
 DISTNAME=	Distutils-1.0.2
 PKGNAME=	${PYPKGPREFIX}-distutils-1.0.2
-CATEGORIES=	devel
+CATEGORIES=	devel python
 MASTER_SITES=	http://www.python.org/sigs/distutils-sig/download/
 
 MAINTAINER=	drochner@NetBSD.org

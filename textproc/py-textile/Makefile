@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/28 23:22:43 minskim Exp $
 #
 
 DISTNAME=		textile-2
 PKGNAME=		${PYPKGPREFIX}-textile-2.0
-CATEGORIES=		textproc
+CATEGORIES=		textproc python
 MASTER_SITES=		http://dealmeida.net/code/
 
 MAINTAINER=		dotz@irc.pl

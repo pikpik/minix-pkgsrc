@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/09/21 09:21:07 jmc Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/23 17:25:32 minskim Exp $
 
 DISTNAME=	dnspython-1.2.0
 PKGNAME=	${PYPKGPREFIX}-dns-1.2.0
-CATEGORIES=	net
+CATEGORIES=	net python
 MASTER_SITES=	http://www.dnspython.org/kits/${PKGVERSION}/
 
 MAINTAINER=	gson@NetBSD.org
