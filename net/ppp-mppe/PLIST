@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:01 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/01/19 15:12:11 kim Exp $
 sbin/chat
 sbin/pppd
 sbin/pppstats
 lkm/mppe.o
-@dirrm lkm
+@unexec ${RMDIR} %D/lkm 2>/dev/null || ${TRUE}
