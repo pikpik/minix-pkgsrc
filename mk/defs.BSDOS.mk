@@ -1,4 +1,4 @@
-# $NetBSD: defs.BSDOS.mk,v 1.6 2004/03/11 22:57:22 agc Exp $
+# $NetBSD: defs.BSDOS.mk,v 1.7 2004/04/07 14:26:51 tv Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -161,3 +161,11 @@ DEFAULT_SERIAL_DEVICE?=	/dev/null
 SERIAL_DEVICES?=	/dev/null
 
 PKG_CREATE_USERGROUP=	NO # until it works
+
+# check for maximum command line length and set it in configure's environment,
+# to avoid a test required by the libtool script that takes forever.
+# FIXME: Adjust to work on this system and enable the lines below.
+#.if defined(GNU_CONFIGURE) && defined(USE_LIBTOOL)
+#_OPSYS_MAX_CMDLEN!=	/sbin/sysctl -n kern.argmax
+#CONFIGURE_ENV+=		lt_cv_sys_max_cmd_len=${_OPSYS_MAX_CMDLEN}
+#.endif
