@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/07 02:02:23 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/05/10 15:28:31 jlam Exp $
 
 PKGNAME=	ghostscript-${GS_VERS}
 CATEGORIES+=	x11
 
-CONFLICTS=	ghostscript{,-nox11}-[0-9]*
+CONFLICTS=	ghostscript{,-x11,-nox11}-[0-9]*
 
 USE_X11=	# defined
 
