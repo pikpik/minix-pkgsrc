@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- mess/mess.mak.orig	Sat Dec 11 12:49:20 2004
++++ mess/mess.mak	Sat Dec 11 12:49:34 2004
+@@ -895,7 +895,7 @@
+ 
+ 
+ # additional tools
+-TOOLS = dat2html$(EXE) messtest$(EXE) chdman$(EXE) messdocs$(EXE) imgtool$(EXE)
++TOOLS = dat2html$(EXE) chdman$(EXE) messdocs$(EXE) imgtool$(EXE)
+ 
+ include mess/tools/imgtool/imgtool.mak
+ 
