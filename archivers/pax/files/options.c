@@ -1,4 +1,4 @@
-/*	$NetBSD: options.c,v 1.66 2003/08/07 09:05:21 agc Exp $	*/
+/*	$NetBSD: options.c,v 1.10 2003/09/15 04:44:54 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -78,7 +78,7 @@
 #if 0
 static char sccsid[] = "@(#)options.c	8.2 (Berkeley) 4/18/94";
 #else
-__RCSID("$NetBSD: options.c,v 1.66 2003/08/07 09:05:21 agc Exp $");
+__RCSID("$NetBSD: options.c,v 1.10 2003/09/15 04:44:54 grant Exp $");
 #endif
 #endif /* not lint */
 
@@ -1739,7 +1739,7 @@ cpio_options(int argc, char **argv)
 		 */
 		maxflt = 0;
 		while ((str = getline(stdin)) != NULL) {
-			ftree_add(str, NULL);
+			ftree_add(str, 0);
 		}
 		if (getline_error) {
 			tty_warn(1, "Problem while reading stdin");
