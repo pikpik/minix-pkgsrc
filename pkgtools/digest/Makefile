@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/06 11:21:04 agc Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/06 17:40:53 wiz Exp $
 #
 # When adding new digest algorithms, please use rmd160 as the template,
 # and bump the VERSION definition.
@@ -17,6 +17,7 @@ VERSION=	20010302
 EXTRACT_ONLY=   # empty
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    # defined
+MANCOMPRESSED_IF_MANZ=	YES
 
 MAKE_ENV+=	BINDIR=${LOCALBASE}/bin MANDIR=${LOCALBASE}/man
 MAKE_ENV+=	CPPFLAGS="${CPPFLAGS} -DVERSION=${VERSION}"
