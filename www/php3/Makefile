@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/02/28 15:07:17 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2002/07/24 19:45:31 jlam Exp $
 
 PKGNAME=		php-${BASE_VERS}
 PKGREVISION?=		1
@@ -40,3 +40,7 @@ do-install:
 
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
+
+.if ${OPSYS} == Linux
+LIBS+=	-lnsl
+.endif
