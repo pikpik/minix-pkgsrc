@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2000/01/15 18:46:31 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/05/22 00:49:52 hubertf Exp $
 #
 
-DISTNAME=	vfu-3.00
+DISTNAME=	vfu-3.01
 CATEGORIES=	misc
 MASTER_SITES=	http://www.biscom.net/~cade/away/vfu/ \
 		ftp://metalab.unc.edu/pub/Linux/utils/file/managers/
