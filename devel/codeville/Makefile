@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/15 14:32:27 drochner Exp $
 #
 
-DISTNAME=		Codeville-0.1.7.1
-PKGNAME=		codeville-0.1.7.1
+DISTNAME=		Codeville-0.1.8
+PKGNAME=		codeville-0.1.8
 CATEGORIES=		devel
 MASTER_SITES=		http://codeville.org/download/
 
