@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/04/27 09:16:18 skrll Exp $
+# $NetBSD: Makefile,v 1.7 2001/09/27 23:18:19 jlam Exp $
 #
 
 DISTNAME=	tclX8.2.0
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-shared --with-tcl=${PREFIX}/lib --enable-tk=NO
 
 CONFIGURE_ENV+=		\
-	PKGSRC_TCL_SRC_DIR="${BUILD_ROOT}/lang/tcl/${WRKDIR:T}/tcl8.3.2"
+	PKGSRC_TCL_SRC_DIR="${PKGSRCDIR}/lang/tcl/${WRKDIR:T}/tcl8.3.2"
 
 MAKE_ENV+=		GTAR=${GTAR} CHOWN=${CHOWN} CHMOD=${CHMOD} \
 			SHAREMODE=${SHAREMODE} SHAREOWN=${SHAREOWN} \
@@ -29,7 +29,7 @@ WRKSRC=			${WRKDIR}/tclX8.2.0/unix
 
 post-extract:
 	@${MV} ${WRKSRC}/../doc/Memory.n ${WRKSRC}/../doc/TclXMemory.n
-	@if [ ! -e ${BUILD_ROOT}/lang/tcl/${WRKDIR:T}/tcl8.3.2 ]; then	\
+	@if [ ! -e ${PKGSRCDIR}/lang/tcl/${WRKDIR:T}/tcl8.3.2 ]; then	\
 		cd ../../lang/tcl && ${MAKE} extract;			\
 	fi
 
