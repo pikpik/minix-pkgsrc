@@ -11,3 +11,12 @@ $NetBSD$
  fi
  AC_SUBST(LDAPLIBS)
  
+@@ -670,7 +668,7 @@
+ if test -x "$MYSQL_CONFIG"
+ then
+ 	MYSQL_CFLAGS="`$MYSQL_CONFIG --cflags`"
+-	MYSQL_LIBS="`mysql_config --libs`"
++	MYSQL_LIBS="`$MYSQL_CONFIG --libs`"
+ 
+ 	eval "MYSQL_CFLAGS=\"\`echo $MYSQL_CFLAGS\`\""
+ 	eval "MYSQL_LIBS=\"\`echo $MYSQL_LIBS\`\""
