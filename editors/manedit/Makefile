@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 14:40:51 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/16 20:53:02 zuntum Exp $
 #
 
 DISTNAME=	${PKGNAME:S,manedit-,manedit,}
@@ -15,10 +15,7 @@ DEPENDS+=	gtk+-*:../../x11/gtk
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/manedit
 
-MAKE_ENV+=	"CC=${CC}"							\
-		"CFLAGS=${CFLAGS}"						\
-		"CPP=${CXX}"							\
-		"PREFIX=${PREFIX}"
+MAKE_ENV+=	CC="${CC}" CFLAGS="${CFLAGS}" CPP="${CXX}" PREFIX="${PREFIX}"
 
 post-patch:
 		${SED}	-e "s,@PREFIX@,${PREFIX},g" ${WRKSRC}/manedit.1		\
