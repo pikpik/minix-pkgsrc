@@ -1,4 +1,5 @@
 $NetBSD: distinfo,v 1.2 2001/04/21 00:44:40 wiz Exp $
 
-SHA1 (Time-HiRes-01.20.tar.gz) = baae7d6a3fea1e060174e4887df63aa363c6294c
-Size (Time-HiRes-01.20.tar.gz) = 11330 bytes
+SHA1 (Time-HiRes-1.38.tar.gz) = bdf4203d567c228894b39cdf83d8219a9e8b8893
+Size (Time-HiRes-1.38.tar.gz) = 24176 bytes
+SHA1 (patch-aa) = 1d8935dba28d16468675c4c52bd910750ae59bb5
