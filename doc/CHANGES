@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.8688 2005/01/11 02:10:37 xtraeme Exp $
+$NetBSD: CHANGES,v 1.8689 2005/01/11 03:30:08 dmcmahill Exp $
 
 Changes to the packages collection and infrastructure in 2005:
 
@@ -226,3 +226,4 @@ Changes to the packages collection and infrastructure in 2005:
 	Updated gschem to 20041228 [dmcmahill 2005-01-10]
 	Updated gsymcheck to 20041228 [dmcmahill 2005-01-10]
 	Updated libgeda to 20041228 [dmcmahill 2005-01-10]
+	Updated leafnode to 1.10.7 [kim 2005-01-11]
