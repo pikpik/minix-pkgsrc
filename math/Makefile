@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2004/12/29 01:19:56 wiz Exp $
+# $NetBSD: Makefile,v 1.126 2005/01/25 14:11:54 cube Exp $
 #
 
 COMMENT=	Mathematics
@@ -73,6 +73,7 @@ SUBDIR+=	p5-Math-Pari
 SUBDIR+=	p5-Math-Random
 SUBDIR+=	p5-Number-Latin
 SUBDIR+=	p5-Set-Crontab
+SUBDIR+=	p5-Set-Infinite
 SUBDIR+=	p5-Spreadsheet-ParseExcel
 SUBDIR+=	p5-Spreadsheet-WriteExcel
 SUBDIR+=	pari
