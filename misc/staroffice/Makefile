@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/07/03 16:32:49 agc Exp $
+# $NetBSD: Makefile,v 1.26 2003/03/26 04:05:42 jschauma Exp $
 
 DISTNAME=		so51a_lnx_${LANGNO}
 PKGNAME=		staroffice-${LANGUAGE}-5.1a
@@ -25,7 +25,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 ONLY_FOR_PLATFORM=	NetBSD-1.4?-i386 NetBSD-1.4Z[A-Z]-i386 \
 			NetBSD-1.5*-i386 NetBSD-1.6*-i386
 PATCH_FUZZ_FACTOR=	-F1
-INTERACTIVE_STAGE=	fetch
+INTERACTIVE_STAGE=	fetch install
 NO_BUILD=		YES
 
 CHECK_SHLIBS=		no
