@@ -1,7 +1,7 @@
 $NetBSD$
 
---- kdm/kdmshutdown.h.orig	Fri Sep  4 17:33:00 1998
-+++ kdm/kdmshutdown.h	Mon Oct 11 17:17:14 1999
+--- ./kdm/kdmshutdown.h	Fri Sep  4 17:33:00 1998
++++ /usr/pkgsrc/x11/kdebase/work.i386.unpatched/kdebase-1.1.2/kdm/kdmshutdown.h	Fri Nov 12 05:10:32 1999
 @@ -49,9 +49,21 @@
  class KDMShutdown : public FDialog {
       Q_OBJECT
