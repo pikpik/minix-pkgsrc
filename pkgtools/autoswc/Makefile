@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2004/04/07 20:16:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/15 20:00:57 tv Exp $
 
-DISTNAME=		autoswc-1.3
+DISTNAME=		autoswc-1.4
 CATEGORIES=		pkgtools sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -8,7 +8,7 @@ DISTFILES=		# empty
 MAINTAINER=		jmmv@NetBSD.org
 COMMENT=		Generates system wide cache files for GNU autoconf
 
-DEPENDS=		autoconf>=2.59:../../devel/autoconf
+DEPENDS+=		autoconf>=2.59:../../devel/autoconf
 DEPENDS+=		automake>=1.8.2:../../devel/automake
 DEPENDS+=		libtool-base>=1.5.2:../../devel/libtool-base
 
