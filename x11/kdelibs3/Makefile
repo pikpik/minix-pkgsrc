@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2003/12/04 19:48:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.43 2003/12/08 14:41:42 wiz Exp $
 
 DISTNAME=	kdelibs-3.1.4
 PKGREVISION=	2
@@ -13,7 +13,6 @@ USE_BUILDLINK2=		YES
 USE_GCC_SHLIB=		YES
 
 CONFIGURE_ARGS+=	--with-ssl-dir="${BUILDLINK_PREFIX.openssl}"
-
 
 .include "../../mk/bsd.prefs.mk"
 
