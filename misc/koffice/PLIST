@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.5 2002/10/08 14:15:53 martti Exp $
 bin/kchart
 bin/kformula
 bin/kivio
@@ -344,7 +344,6 @@ lib/libkwordexportfilters.la
 lib/libkwordexportfilters.so
 lib/libkwordexportfilters.so.1
 lib/libkwordexportfilters.so.1.0
-lib/straight_connector.ksp
 share/doc/kde/HTML/en/kchart/commands.html
 share/doc/kde/HTML/en/kchart/common
 share/doc/kde/HTML/en/kchart/compilation.html
