@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/10/18 15:20:47 veego Exp $
+# $NetBSD: Makefile,v 1.5 2001/11/26 06:50:30 jlam Exp $
 #
 
-DISTNAME=		Apache-Session-1.53
+DISTNAME=		Apache-Session-1.54
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5ase
 CATEGORIES=		www perl5
