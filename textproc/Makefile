@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2002/08/31 02:57:20 mjl Exp $
+# $NetBSD: Makefile,v 1.164 2002/09/25 04:56:20 rh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -79,6 +79,7 @@ SUBDIR+=	p5-Convert-ASCII-Armour
 SUBDIR+=	p5-Convert-ASN1
 SUBDIR+=	p5-Convert-BER
 SUBDIR+=	p5-Convert-PEM
+SUBDIR+=	p5-Cz-Cstools
 SUBDIR+=	p5-Filter
 SUBDIR+=	p5-PDF
 SUBDIR+=	p5-PDF-API2
