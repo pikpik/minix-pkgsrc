@@ -1,4 +1,8 @@
-# $NetBSD: marshall,v 1.2 2003/09/02 07:00:00 jlam Exp $
+# $NetBSD: marshall,v 1.3 2003/10/03 19:40:55 jlam Exp $
+#
+# Handle cases where multiple consecutive arguments must be processed
+# together, either by merging the arguments or "skipping" the extra
+# arguments.
 #
 case $arg in
 #
