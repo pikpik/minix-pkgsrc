@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/16 14:04:44 tron Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/26 02:27:57 wiz Exp $
 #
 
 DISTNAME=		glibwww-0.2
@@ -10,13 +10,13 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Event register functions that use the glib event loop
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-.include "../../www/libwww/buildlink2.mk"
-.include "../../x11/gnome-libs/buildlink2.mk"
+.include "../../www/libwww/buildlink3.mk"
+.include "../../x11/gnome-libs/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
