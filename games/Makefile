@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2003/01/02 04:44:17 explorer Exp $
+# $NetBSD: Makefile,v 1.159 2003/01/10 16:17:02 jmmv Exp $
 #
 
 COMMENT=	Games
@@ -137,6 +137,7 @@ SUBDIR+=	sl
 SUBDIR+=	spellcast
 SUBDIR+=	svb
 SUBDIR+=	tanked
+SUBDIR+=	tileworld
 SUBDIR+=	tscp
 SUBDIR+=	ularn
 SUBDIR+=	wormz
