@@ -1,12 +1,12 @@
 $NetBSD: $
 
---- ../bin/setup-plt.orig	Wed Aug 28 18:32:25 2002
-+++ ../bin/setup-plt	Wed Aug 28 18:32:39 2002
+--- ../bin/mzc.orig	Wed Aug 28 18:32:13 2002
++++ ../bin/mzc	Wed Aug 28 18:32:25 2002
 @@ -2,7 +2,7 @@
  # This script was created by make-mzscheme-launcher
  
  if [ "$PLTHOME" = '' ] ; then
--  PLTHOME=/usr/local/lib/plt
+-  PLTHOME="/proj/scheme/plt"
 +  PLTHOME="@PREFIX@/lib/plt"
    export PLTHOME
  fi

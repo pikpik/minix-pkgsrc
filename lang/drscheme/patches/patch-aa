@@ -1,42 +1,13 @@
-$NetBSD$
+$NetBSD: $
 
---- mzscheme/sconfig.h.orig	Sat Jun 24 05:01:25 2000
-+++ mzscheme/sconfig.h	Tue Sep  4 22:00:42 2001
-@@ -278,6 +278,37 @@
+--- ../bin/background-help-desk.orig	Wed Aug 28 18:30:59 2002
++++ ../bin/background-help-desk	Wed Aug 28 18:31:31 2002
+@@ -2,7 +2,7 @@
+ # This script was created by make-mzscheme-launcher
  
- #endif
- 
-+  /********************* NetBSD ***********************/
-+
-+#if defined(__NetBSD__)
-+
-+# define SCHEME_PLATFORM_LIBRARY_SUBPATH "netbsd"
-+
-+# include "uconfig.h"
-+
-+# undef HAS_STANDARD_IOB
-+# define HAS_BSD_IOB
-+
-+# define STACK_GROWS_DOWN
-+
-+# define UNDERSCORE_DYNLOAD_SYMBOL_PREFIX
-+
-+# define USE_IEEE_FP_PREDS
-+# define POW_HANDLES_INF_CORRECTLY
-+
-+# define SIGSET_IS_SIGNAL
-+
-+# define USE_TM_GMTOFF_FIELD
-+
-+#if defined(__alpha__)
-+# define SIXTY_FOUR_BIT_INTEGERS
-+# define USE_DIVIDE_MAKE_INFINITY
-+#endif
-+
-+# define FLAGS_ALREADY_SET
-+
-+#endif
-+
-   /************** x86/OpenBSD with gcc ****************/
-               /* Thanks to Bengt Kleberg */
+ if [ "$PLTHOME" = '' ] ; then
+-  PLTHOME="/proj/scheme/plt"
++  PLTHOME="@PREFIX@/lib/plt"
+   export PLTHOME
+ fi
  
