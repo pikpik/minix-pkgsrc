@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.4 1999/04/26 18:38:28 garbled Exp $
+# $NetBSD: Makefile,v 1.5 1999/09/28 20:40:03 soren Exp $
 
-DISTNAME=	nethack-all-3.2.2
+DISTNAME=	nethack-all-3.3.0
 CATEGORIES=	games x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	root@garbled.net
 
-DEPENDS+=	nethack-tty-3.2.2:../nethack-tty
-DEPENDS+=	nethack-x11-3.2.2:../nethack-x11
-DEPENDS+=	nethack-qt-3.2.2:../nethack-qt
+DEPENDS+=	nethack-tty-3.3.0:../nethack-tty
+DEPENDS+=	nethack-x11-3.3.0:../nethack-x11
+#DEPENDS+=	nethack-qt-3.3.0:../nethack-qt
 
 USE_X11=	yes
 EXTRACT_ONLY=	# empty
