@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/09/12 11:56:24 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/16 17:53:53 tv Exp $
 #
 
 DISTNAME=	j2sdk-1.2.2-FCS-linux-i386-glibc-2.1.3
@@ -33,6 +33,7 @@ NO_BUILD=	yes
 NO_MTREE=	yes
 
 ONLY_FOR_PLATFORM= NetBSD-*-i386
+LDD=		${TRUE}
 
 post-patch:
 	@${FIND} ${WRKSRC} -name '*.orig' -print | xargs ${RM} -f
