@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.50 2000/06/29 10:08:11 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2000/07/03 10:28:26 agc Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
     SUBDIR += STk
     SUBDIR += bwbasic
+    SUBDIR += baci
     SUBDIR += caml-light
     SUBDIR += camlp4
     SUBDIR += cint
