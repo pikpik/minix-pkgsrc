@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/08/12 10:28:11 wulf Exp $
+$NetBSD$
 
-MD5 (tnt-1.9.1.tar.bz2) = 3fbd9bc029611a462c7864cf79994ffa
+SHA1 (tnt-1.9.1.tar.bz2) = d3842367acdb970e4c65f5fc62bf8347e024de7a
+Size (tnt-1.9.1.tar.bz2) = 742180 bytes

@@ -1,4 +1,6 @@
-$NetBSD: md5,v 1.2 2000/08/14 15:51:34 wulf Exp $
+$NetBSD$
 
-MD5 (7pl225sr.tgz) = b4c5f883d75b112cb0f0dd40c21b3d8c
-MD5 (7pl210mg.tgz) = c5fa7a70a71240738a64ef62248cf67b
+SHA1 (7pl225sr.tgz) = 9c393e8f6968d24ec469fbca45ade65a5c6d52fc
+Size (7pl225sr.tgz) = 65122 bytes
+SHA1 (7pl210mg.tgz) = 7acc708cabf8d166f74bd398940fb71aac2c7495
+Size (7pl210mg.tgz) = 31095 bytes

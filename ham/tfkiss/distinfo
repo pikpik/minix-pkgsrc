@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2000/05/11 15:43:36 wulf Exp $
+$NetBSD$
 
-MD5 (tfkiss-1.2.3.tar.gz) = e308a26a5946c8ca2a71c218fb35d138
+SHA1 (tfkiss-1.2.3.tar.gz) = 8c51b22d0fb0ce3f87c9944921f93c25aa4d01a6
+Size (tfkiss-1.2.3.tar.gz) = 145535 bytes
