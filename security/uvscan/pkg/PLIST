@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/uvscan
+libexec/uvscan/uvscan
+libexec/uvscan/license.dat
+libexec/uvscan/messages.dat
+share/doc/uvscan/unx47uag.pdf
+share/doc/uvscan/license.txt
