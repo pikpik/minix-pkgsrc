@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/05/03 12:34:39 markd Exp $
+# $NetBSD: Makefile,v 1.34 2002/05/24 13:24:36 markd Exp $
 
 DISTNAME=		R-1.4.1
 PKGREVISION=		2
@@ -9,6 +9,10 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.R-project.org/
 COMMENT=		Statistical language for data analysis and graphics
+
+#needs FPC code not found in older versions of NetBSD
+NOT_FOR_PLATFORM=	NetBSD-1.[0-4]*-alpha NetBSD-1.5-alpha \
+			NetBSD-1.5.*-alpha NetBSD-1.5[A-U]-alpha
 
 USE_BUILDLINK_ONLY=	# defined
 USE_X11=		# defined
