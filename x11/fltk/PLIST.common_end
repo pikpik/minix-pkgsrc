@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST.common_end,v 1.1 2004/04/17 18:40:08 ben Exp $
-@dirrm share/doc/fltk
-@dirrm include/FL
