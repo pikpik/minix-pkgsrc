@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1999/12/14 16:31:22 bouyer Exp $
 bin/hypermail
+man/man1/hypermail.1
 share/doc/hypermail/hypermail.gif
 share/doc/hypermail/hypermail.html
 share/doc/hypermail/customizing.html

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/28 16:06:13 martin Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/03/11 13:46:12 martin Exp $
 etc/rc.d/upsd
 etc/nut/hosts.conf.sample
 etc/nut/multimon.conf.sample
@@ -26,6 +26,8 @@ bin/upslog
 bin/upsct
 bin/upsct2
 bin/upscmd
+man/man8/apcsmart.8
+man/man8/powercom.8
 sbin/upsd
 sbin/upsmon
 sbin/upssched
