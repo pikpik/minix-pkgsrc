@@ -2,3 +2,4 @@ $NetBSD$
 
 MD5 (postfix/release-20010228.tar.gz) = 6af46cc231ca1e09e60393542d5611bd
 MD5 (postfix/postfix-20010228release-v6-20010302a.diff.gz) = e8b5954bc0466239c393235319476ff7
+MD5 (postfix/postfix-20010228release-ercpt.diff) = 9f5c4c422cb27cdef1d090ca39c44c3c
