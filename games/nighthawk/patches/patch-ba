@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src_sound/Makefile.BAK	Sun Feb  7 02:23:38 1999
 +++ src_sound/Makefile	Sun Feb  7 02:29:38 1999
 @@ -2,8 +2,8 @@

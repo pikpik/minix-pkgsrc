@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src_sound/dsp_mixxer.c.BAK	Sun Feb  7 02:24:23 1999
 +++ src_sound/dsp_mixxer.c	Sun Feb  7 02:26:49 1999
 @@ -23,6 +23,8 @@
