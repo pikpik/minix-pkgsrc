@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/17 18:04:02 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/17 18:16:29 xtraeme Exp $
 #
 
 DISTNAME=	openvpn-2.0_beta15
@@ -13,7 +13,6 @@ COMMENT=	Easy-to-use SSL VPN daemon
 USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_PKGINSTAL=	yes
 
 PKG_SYSCONFSUBDIR=	openvpn
 
