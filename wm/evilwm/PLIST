@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/evilwm
+man/man1/evilwm.1
+share/doc/evilwm/ChangeLog
+share/doc/evilwm/README
+share/doc/evilwm/README.multihead
+@dirrm share/doc/evilwm
