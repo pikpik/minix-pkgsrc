@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 1999/12/07 03:00:56 sakamoto Exp $
+$NetBSD$
 
-MD5 (tkdiff-3.05.tcl.txt) = db1837cb09a3857e9ae4e6b3beb065a6
+SHA1 (tkdiff-3.05.tcl.txt) = e13fa966b6a10154973e56d5c402444ed2558d57
+Size (tkdiff-3.05.tcl.txt) = 249773 bytes
