@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2001/02/20 16:33:13 itojun Exp $
+# $NetBSD: Makefile,v 1.41 2001/03/01 04:14:22 itojun Exp $
 
 DISTNAME=		openssh-2.5.1p2
 CATEGORIES=		security
@@ -73,6 +73,8 @@ MAKE_ENV+=		ASKPASS_LOCATION=${X11PREFIX}/bin
 .endif
 
 .if (${OPSYS} == SunOS)
+DEPENDS+=		zlib-*:../../devel/zlib
+
 INSTALL_FILE=		${WRKDIR}/INSTALL.SunOS
 PLIST_SRC=		${PKGDIR}/PLIST.SunOS
 .endif
