@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/18 14:41:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/11 07:37:33 snj Exp $
 #
 
-DISTNAME=	Unicode-String-2.06
+DISTNAME=	Unicode-String-2.07
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Unicode/}
