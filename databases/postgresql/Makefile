@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 1999/05/24 20:39:36 tv Exp $
+# $NetBSD: Makefile,v 1.33 1999/06/04 16:55:12 drochner Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
@@ -36,7 +36,7 @@ CONFIGURE_ARGS= 	--prefix=${PREFIX}/${PGUSER} \
 			--with-includes=${PREFIX}/include \
 			--with-libs=${PREFIX}/lib \
 			--with-template=`${ECHO} ${OPSYS} | ${TR} '[A-Z]' '[a-z]'`
-CONFIGURE_ENV+=		CPPFLAGS="-I${PREFIX}/include/tcl8.0 -I${PREFIX}/include/tk8.0"
+CPPFLAGS+=		-I${LOCALBASE}/include/tcl8.0 -I${LOCALBASE}/include/tk8.0
 
 INSTALL_TARGET=	install install-man
 
