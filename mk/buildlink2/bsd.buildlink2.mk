@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.90.4.13 2003/08/31 06:59:06 jlam Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.96 2003/09/02 06:59:50 jlam Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -170,7 +170,7 @@ buildlink-directories:
 	${_PKG_SILENT}${_PKG_DEBUG}${RM} -f ${BUILDLINK_X11_DIR}
 	${_PKG_SILENT}${_PKG_DEBUG}${LN} -sf ${BUILDLINK_DIR} ${BUILDLINK_X11_DIR}
 .  if empty(USE_X11_LINKS:M[nN][oO])
-	${_PKG_SILENT}${_PKG_DEBUG}${CP} -R ${_BLNK_X11_DIR}/* ${BUILDLINK_X11_DIR}
+	${_PKG_SILENT}${_PKG_DEBUG}cd ${_BLNK_X11_DIR} && ${PAX} -rwpp . ${BUILDLINK_X11_DIR}
 .  endif
 .endif
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${BUILDLINK_DIR}/include
