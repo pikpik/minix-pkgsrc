@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.244 1999/04/04 12:56:05 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.245 1999/04/05 02:25:59 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -1493,7 +1493,8 @@ pkg-su-install:
 				${ECHO} "*** WARNING *** Running: ${PRE_ROOT_CMD}"; \
 				${PRE_ROOT_CMD};			\
 			fi;                                             \
-			${ECHO_MSG} "Becoming root to install ${PKGNAME}.";\
+			${ECHO_MSG} "===>  Becoming root@`/bin/hostname` to install ${PKGNAME}."; \
+			${ECHO_MSG} -n "`${ECHO} ${SU_CMD} | ${AWK} '{ print $$1 }'` ";\
 			${SU_CMD} "cd ${.CURDIR}; $$make $$force ${.MAKEFLAGS} root-install"; \
                 fi;							\
 	fi
