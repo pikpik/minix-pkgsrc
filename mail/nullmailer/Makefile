@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:46:36 grant Exp $
+# $NetBSD: Makefile,v 1.11 2004/08/30 14:34:11 schmonz Exp $
 
 DISTNAME=		nullmailer-1.00RC7
 PKGNAME=		${DISTNAME:S/0RC7/.0rc7/}
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://untroubled.org/nullmailer/
 

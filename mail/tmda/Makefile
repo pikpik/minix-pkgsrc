@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2004/06/13 10:59:31 schmonz Exp $
+# $NetBSD: Makefile,v 1.21 2004/12/13 15:20:37 kim Exp $
 #
 
 DISTNAME=	tmda-1.0.3
+PKGREVISION=	1
 CATEGORIES=	mail python
 MASTER_SITES=	http://tmda.net/releases/stable/
 EXTRACT_SUFX=	.tgz

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2004/08/07 08:11:25 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2004/12/03 15:15:02 wiz Exp $
 
 DISTNAME=	postfix-2.2-20040628
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		http://public.planetmirror.com.au/pub/postfix/experimental/

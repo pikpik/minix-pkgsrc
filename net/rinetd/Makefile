@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:22:21 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/03 15:15:06 wiz Exp $
 #
 
 DISTNAME=		rinetd
 PKGNAME=		${DISTNAME}-0.62
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.boutell.com/rinetd/http/
 

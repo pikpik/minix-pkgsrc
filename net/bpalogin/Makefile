@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/07/28 10:38:04 rh Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/03 15:15:05 wiz Exp $
 #
 
 DISTNAME=	bpalogin-2.0.2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://bpalogin.sourceforge.net/download/	\
 		${MASTER_SITE_SOURCEFORGE:=bpalogin/}

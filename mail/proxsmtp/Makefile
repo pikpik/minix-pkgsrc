@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/02 04:08:18 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/04 20:37:47 jlam Exp $
 
 DISTNAME=	proxsmtp-1.0
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://memberwebs.com/nielsen/software/proxsmtp/
 

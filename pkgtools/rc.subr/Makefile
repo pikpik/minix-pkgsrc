@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/10/11 18:52:56 tv Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/11 19:32:14 tv Exp $
 #
 
 DISTNAME=		rc.subr-20041011
+PKGREVISION=		1
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty

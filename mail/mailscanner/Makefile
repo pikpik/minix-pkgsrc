@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/25 00:33:19 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/09/26 18:35:51 agc Exp $
 #
 
 DISTNAME=		MailScanner-4.30.3-2
 PKGNAME=		mailscanner-4.30.3.2
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://www.sng.ecs.soton.ac.uk/mailscanner/files/4/tar/
 

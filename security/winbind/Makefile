@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:18:14 tv Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/03 15:15:09 wiz Exp $
 
 PKGNAME=		winbind-${SAMBA_DIST_VERS}
 PKGREVISION=		# empty1
+PKGREVISION=		1
 CATEGORIES=		security
 
 USE_BUILDLINK3=		yes
