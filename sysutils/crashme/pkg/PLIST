@@ -1,3 +1,4 @@
+@comment $NetBSD$
 sbin/crashme
 sbin/pddet
 man/man1/crashme.1
