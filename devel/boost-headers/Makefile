@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/06/07 01:36:19 tv Exp $
+# $NetBSD: Makefile,v 1.1 2005/02/26 22:48:35 jmmv Exp $
 #
 
 BOOST_PACKAGE=		headers
@@ -19,4 +19,5 @@ do-install: bjam-install
 	${FIND} ${PREFIX}/include/boost \
 		-type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
