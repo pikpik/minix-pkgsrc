@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.131 2000/07/31 16:48:01 tron Exp $
+# $NetBSD: Makefile,v 1.132 2000/08/08 18:11:14 jlam Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -108,6 +108,7 @@
     SUBDIR += prcs
     SUBDIR += pth
     SUBDIR += ptl2
+    SUBDIR += pwlib
     SUBDIR += py-curses
     SUBDIR += rcs
     SUBDIR += rdp
