@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 14:17:39 wulf Exp $
+$NetBSD$
 
-MD5 (kpsql-1.0.tgz) = 6f88e353c7147d54ebadae1cd4578b85
+SHA1 (kpsql-1.0.tgz) = 3e8bb8d8569e53b627f4dacc0092b3d1669311c4
+Size (kpsql-1.0.tgz) = 574070 bytes
 SHA1 (patch-aa) = ae7630b452cf7af2c7faf844064d565077256503

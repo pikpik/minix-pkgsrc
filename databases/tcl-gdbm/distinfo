@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 2000/08/29 21:05:48 jwise Exp $
+$NetBSD$
 
-MD5 (tclgdbm-0.8.tar.gz) = f293c3247f1c1e341979b684cebbb9fb
+SHA1 (tclgdbm-0.8.tar.gz) = c8d2116303351832dd98552ed94701693292224b
+Size (tclgdbm-0.8.tar.gz) = 111619 bytes
 SHA1 (patch-aa) = ebba0cbd712655eaf23e476a4c8b56079cea1f59
 SHA1 (patch-ab) = f27346a74617e018721530d7f30d499c336d23dd

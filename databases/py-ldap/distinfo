@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/25 19:34:29 tsarna Exp $
+$NetBSD$
 
-MD5 (python-ldap-1.10alpha3-src.tar.gz) = a4e95cf9edec1b7952a5decbc8080372
+SHA1 (python-ldap-1.10alpha3-src.tar.gz) = feca8c817bd2c08d771ea4d6299b6e512801b491
+Size (python-ldap-1.10alpha3-src.tar.gz) = 87188 bytes

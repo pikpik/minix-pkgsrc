@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 18:07:07 rh Exp $
+$NetBSD$
 
-MD5 (gq-0.3.0.tar.gz) = bab7703de4013ba3678bd37765e8bd60
+SHA1 (gq-0.3.0.tar.gz) = 2febab573554ee07876f6d46fe5a17ef0e39c45a
+Size (gq-0.3.0.tar.gz) = 124421 bytes

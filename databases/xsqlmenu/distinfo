@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/27 02:18:07 hubertf Exp $
+$NetBSD$
 
 SHA1 (xsqlmenu-2.10.tar.gz) = d97c3237d5bfd2213648067196b5f6d4a57fe706
+Size (xsqlmenu-2.10.tar.gz) = 31458 bytes
 SHA1 (patch-aa) = 854bdd562eaa93bfaa3979baa87049898794154b

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 18:47:59 rh Exp $
+$NetBSD$
 
-MD5 (DBD-Sybase-0.23.tar.gz) = 211210528723934960eacb2bc9273ddc
+SHA1 (DBD-Sybase-0.23.tar.gz) = efcebec52d149496be4a3e4611c831aa6508fe2d
+Size (DBD-Sybase-0.23.tar.gz) = 55196 bytes
