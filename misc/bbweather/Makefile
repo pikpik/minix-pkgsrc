@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2002/06/29 23:20:20 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2002/07/01 23:53:38 wiz Exp $
 #
 
-DISTNAME=	bbweather-0.4
+DISTNAME=	bbweather-0.5
 CATEGORIES=	misc
 MASTER_SITES=	http://www.netmeister.org/apps/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	jschauma@netbsd.org
 HOMEPAGE=	http://www.netmeister.org/apps/bbweather/
 COMMENT=	show current weather conditions
 
