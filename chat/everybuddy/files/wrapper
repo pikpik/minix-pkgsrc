@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+@MKDIR@ $HOME/.everybuddy
+@RM@ -f $HOME/.everybuddy/eb_socke
+
+PATH=@PREFIX@/libexec/everybuddy:$PATH; export PATH
+
+exec everybuddy "$@"
