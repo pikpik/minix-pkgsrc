@@ -1,3 +1,5 @@
+# $NetBSD$
+
 PKG_OPTIONS_VAR=	PKG_OPTIONS.djbdns
 PKG_SUPPORTED_OPTIONS=	inet6 ignoreip2
 .include "../../mk/bsd.options.mk"

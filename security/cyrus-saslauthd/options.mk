@@ -1,8 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2004/08/05 03:04:34 jlam Exp $
-
-.if defined(SASL_USE_GSSAPI) && !empty(SASL_USE_GSSAPI:M[yY][eE][sS])
-PKG_DEFAULT_OPTIONS+=	gssapi
-.endif
+# $NetBSD: options.mk,v 1.2 2004/08/22 19:32:52 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cyrus-saslauthd
 PKG_SUPPORTED_OPTIONS=	PAM kerberos ldap gssapi
