@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/04/11 11:25:53 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use startup-notification.
 #
@@ -17,7 +17,6 @@ BUILDLINK_PREFIX.startup-notification_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.startup-notification+=	include/startup-notification-1.0/*
 BUILDLINK_FILES.startup-notification+=	include/startup-notification-1.0/libsn/*
 BUILDLINK_FILES.startup-notification+=	lib/libstartup-notification-1.*
-BUILDLINK_FILES.startup-notification+=	lib/pkgconfig/libstartup-notification-1.0.pc
 
 BUILDLINK_TARGETS+=	startup-notification-buildlink
 
