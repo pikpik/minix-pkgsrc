@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/control-center/Workspace/Enlightenment.desktop
+bin/e-conf
+@dirrm share/control-center/Workspace
