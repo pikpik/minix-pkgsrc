@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/06/30 09:16:47 zuntum Exp $
+# $NetBSD: Makefile,v 1.13 2001/07/14 18:20:51 jlam Exp $
 
 DISTNAME=		WindowMaker-0.65.0
 PKGNAME=		windowmaker-0.65.0
@@ -80,6 +80,7 @@ post-install:
 
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/libproplist/buildlink.mk"
+.include "../../graphics/hermes/buildlink.mk"
 .include "../../graphics/libungif/buildlink.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../graphics/png/buildlink.mk"
