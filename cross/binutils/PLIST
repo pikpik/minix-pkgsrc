@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2004/07/09 20:43:47 kristerw Exp $
 include/ansidecl.h
 include/bfd.h
+include/symcat.h
 lib/ldscripts/a29k.x
 lib/ldscripts/a29k.xbn
 lib/ldscripts/a29k.xn
