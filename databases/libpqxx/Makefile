@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/07 11:22:49 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/07 13:32:40 is Exp $
 #
 
 .include "../../databases/libpqxx/Makefile.common"
@@ -7,6 +7,7 @@ COMMENT=		C++ interface to postgresql-lib
 
 NOT_FOR_PLATFORM=	NetBSD-*-pc532
 
+USE_LANGUAGES=		c c++
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/libpqxx.pc.in
