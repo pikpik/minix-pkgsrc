@@ -1,4 +1,4 @@
-#$NetBSD$
+# $NetBSD: Makefile,v 1.11 2002/08/05 00:34:56 dmcmahill Exp $
 #
 
 # A default so lintpkgsrc is happy
@@ -54,7 +54,6 @@ PATCHDIR=${WRKDIR}/.patches
 pre-patch:
 	${MKDIR} ${PATCHDIR}
 	${CP} ${PKGDIR}/patches/patch-${MACHINE_ARCH}-* ${PATCHDIR}
-
 
 do-build:
 	${SED} s%DESTINATION%${CDIR}% ${FILESDIR}/response \
