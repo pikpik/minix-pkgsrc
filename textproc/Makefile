@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 1999/12/02 16:42:56 rh Exp $
+# $NetBSD: Makefile,v 1.27 1999/12/02 17:04:44 rh Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -9,6 +9,7 @@
     SUBDIR += docbook
     SUBDIR += dsssl-docbook-modular
     SUBDIR += eperl
+    SUBDIR += gawk
     SUBDIR += glimpse
 #    SUBDIR += html
 #    SUBDIR += info2html
