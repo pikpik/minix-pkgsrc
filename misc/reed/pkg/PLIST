@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/breed
+bin/reed
+bin/wrap
+man/man1/breed.1
+man/man1/reed.1
+man/man1/wrap.1
