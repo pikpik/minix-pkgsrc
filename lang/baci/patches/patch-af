@@ -1,0 +1,20 @@
+$NetBSD: $
+
+--- ccomp/bac.y.orig	Thu Dec 26 20:15:57 2002
++++ ccomp/bac.y	Thu Dec 26 20:18:43 2002
+@@ -1013,6 +1013,7 @@
+ 
+ the_else  :  ELSE
+          { emit(JUMP); $$ = lc; }
++	;
+ 
+ switch_hdr  :  SWITCH  '('  expr  ')'
+          { 
+@@ -1272,6 +1273,7 @@
+                }
+             }
+          }
++	;
+ 
+ return_stmt  :  the_return  opt_expr  ';'
+          {  
