@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gstreamer-0.8/libgstgnomevfs.a
+lib/gstreamer-0.8/libgstgnomevfs.la
+lib/gstreamer-0.8/libgstgnomevfs.so
+@comment in gst-plugins: @dirrm lib/gstreamer-0.8
