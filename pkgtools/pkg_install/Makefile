@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/05/30 03:21:58 christos Exp $
+# $NetBSD: Makefile,v 1.21 1999/05/30 14:02:52 tv Exp $
 #
 
 # Note to package maintainers:
@@ -9,7 +9,7 @@
 # (Use "make show-pkgtools-version" to find the correct value
 #  for YYYYMMDD)
 
-DISTNAME=		pkg_install-19990529
+DISTNAME=		pkg_install-19990412
 CATEGORIES=		pkgtools
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
