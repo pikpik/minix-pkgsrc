@@ -249,6 +249,14 @@ struct {								\
 #define _PATH_TMP	"/tmp/"
 #endif
 
+#ifndef _PATH_DEFTAPE
+# ifdef DEFTAPE
+#  define _PATH_DEFTAPE DEFTAPE
+# else
+#  define _PATH_DEFTAPE "/dev/tape"
+# endif /* DEFTAPE */
+#endif /* _PATH_DEFTAPE */
+
 typedef struct _stringlist {
 	char	**sl_str;
 	size_t	  sl_max;
