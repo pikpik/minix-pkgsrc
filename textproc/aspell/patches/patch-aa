@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- modules/filter/nroff.cpp.orig	Mon Feb  7 18:18:29 2005
++++ modules/filter/nroff.cpp	Mon Feb  7 18:18:42 2005
+@@ -73,7 +73,7 @@
+       return false;
+     }
+     
+-    bool inline NroffFilter::process_char (FilterChar::Chr c);
++    bool NroffFilter::process_char (FilterChar::Chr c);
+       
+   public:
+ 
