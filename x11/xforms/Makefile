@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2000/09/28 20:34:05 fredb Exp $
+# $NetBSD: Makefile,v 1.35 2001/02/17 17:07:08 wiz Exp $
 #
 
 DISTNAME=       bxform-088
@@ -42,7 +42,6 @@ DISTNAME=	bxform-088-ELF
 OBJMACHINE=	YES
 
 USE_X11BASE=	YES
-USE_XPM=	YES
 USE_LIBTOOL=	YES
 MAKEFILE=	${FILESDIR}/Makefile
 PLIST_SRC=	${PKGDIR}/PLIST.mi ${PKGDIR}/PLIST.shlib
@@ -72,4 +71,5 @@ post-install:
 		${PREFIX}/lib/libxforms.so.${SHLIB_MAJOR} \
 		${PREFIX}/lib/libxforms.so
 
+.include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
