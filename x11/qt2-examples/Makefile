@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7.2.2 2002/06/21 23:05:55 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/08/25 21:52:42 jlam Exp $
 #
 
 PKGNAME=	qt2-examples-${QTVERSION}
@@ -37,6 +37,6 @@ do-install:
 	    ${INSTALL_DATA} $${f} ${QTPREFIX}/$${f}; \
 	done)
 
-.include "../../x11/qt2-libs/buildlink.mk"
+.include "../../x11/qt2-libs/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
