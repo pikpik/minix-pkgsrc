@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/09/08 01:03:21 jwise Exp $
+# $NetBSD: Makefile,v 1.4 2000/10/16 15:07:45 agc Exp $
 
 DISTNAME=	tk8.3.2
 PKGNAME=	tk-8.3.2
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_3/ \
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.tcltk.com/
 
-DEPENDS+=	tcl-8.3.2:../../lang/tcl
+DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/06/07 22:14:08 tron Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/29 19:55:05 jwise Exp $
 
 DISTNAME=	stooop-4.1.1
 CATEGORIES=	x11 tcl
@@ -7,7 +7,7 @@ MASTER_SITES=	http://jfontain.free.fr/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://jfontain.free.fr/
 
-DEPENDS+=	tcl-8.3.2:../../lang/tcl
+DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 
 NO_PATCH=	yes
 NO_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/09/05 09:33:17 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2000/12/27 23:04:27 jwise Exp $
 
 DISTNAME=	mod_dtcl-0.8.12
 PKGNAME=	ap-dtcl-0.8.12
@@ -10,7 +10,7 @@ MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://tcl.apache.org/
 
 DEPENDS+=	apache-1.3.*:../../www/apache
-DEPENDS+=	tcl-8.3.2:../../lang/tcl
+DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 # For "apxs":
 BUILD_DEPENDS=	${PERL5}:../../lang/perl5-base
 
