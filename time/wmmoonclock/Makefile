@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:32:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/21 13:05:01 wiz Exp $
 #
 
 DISTNAME=	wmMoonClock-1.27
@@ -13,6 +13,14 @@ USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
 USE_X11BASE=	YES
 WRKSRC=         ${WRKDIR}/${DISTNAME}/Src
+
+MAKE_FLAGS+=    EXTRA_LOCAL_LIBS=${EXTRA_LOCAL_LIBS}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+EXTRA_LOCAL_LIBS=       -lsocket
+.endif
 
 .include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
