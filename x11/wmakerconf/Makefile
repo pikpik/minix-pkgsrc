@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2000/04/08 08:41:26 rh Exp $
+# $NetBSD: Makefile,v 1.16 2000/08/26 17:15:06 veego Exp $
 #
 
-DISTNAME=	wmakerconf-2.6.1
+DISTNAME=	wmakerconf-2.7
 CATEGORIES=	x11
 MASTER_SITES=	http://ulli.linuxave.net/wmakerconf/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,11 +15,12 @@ DEPENDS+=	windowmaker-*:../../x11/windowmaker
 
 USE_X11BASE=	yes
 USE_PERL5=	yes
+USE_LIBINTL=	yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
-# for libintl and libProplist
+# for libProplist
 CPPFLAGS+=	-I${LOCALBASE}/include
 LDFLAGS+=	-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib
 
