@@ -1,9 +1,9 @@
-# Makefile for:		wine
+# New packages collection makefile for:		wine
 # Version required:	980215
 # Date created:		15 March 1998
 # Whom:			mycroft
 #
-# $NetBSD: Makefile,v 1.2 1998/03/16 04:53:22 mycroft Exp $
+# $NetBSD: Makefile,v 1.3 1998/03/16 07:02:05 mycroft Exp $
 
 DISTNAME=	wine980215
 PKGNAME=	wine-980215
