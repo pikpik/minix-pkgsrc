@@ -10,8 +10,8 @@ $NetBSD$
 -DEBUG=-ggdb
 -CXX=g++
 -CXXFLAGS=-Wall -pedantic $(FREETYPE_INCL) $(DEBUG)
-+FREETYPE_INCL=`freetype-config --cflags`
-+FREETYPE_LIB=`freetype-config --libs`
++FREETYPE_INCL=`$(FREETYPE_CONFIG) --cflags`
++FREETYPE_LIB=`$(FREETYPE_CONFIG) --libs`
  
 -LDFLAGS=$(FREETYPE_LIB) $(DEBUG)
 +CXXFLAGS+=$(FREETYPE_INCL)
