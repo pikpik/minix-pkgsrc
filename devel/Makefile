@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.541 2004/10/10 10:12:48 minskim Exp $
+# $NetBSD: Makefile,v 1.542 2004/10/11 21:58:44 salo Exp $
 #
 
 COMMENT=	Development utilities
@@ -104,6 +104,7 @@ SUBDIR+=	doxygen
 SUBDIR+=	eclipse
 SUBDIR+=	eel
 SUBDIR+=	eel2
+SUBDIR+=	eet
 SUBDIR+=	electricfence
 SUBDIR+=	elf
 SUBDIR+=	elfsh
