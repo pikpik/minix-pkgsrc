@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2004/02/11 05:59:54 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/02/11 22:56:23 xtraeme Exp $
 #
 
 DISTNAME=	Apache-Gallery-0.7
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 SVR4_PKGNAME=	p5aga
 CATEGORIES=	www graphics
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
@@ -23,6 +23,7 @@ DEPENDS+=	p5-libapreq-[0-9]*:../../www/p5-libapreq
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_X11=		YES
+USE_PERL5=		run
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Apache/Gallery/.packlist
 
 .include "../../mk/bsd.prefs.mk"
