@@ -1,0 +1,2 @@
+@comment $NetBSD$
+include/boost-1_31/boost/config/thread_user.hpp
