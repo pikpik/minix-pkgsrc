@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PERL5_SITEARCH}/auto/Image/Imlib2/Imlib2.bs
+${PERL5_SITEARCH}/auto/Image/Imlib2/Imlib2.so
+${PERL5_SITEARCH}/Image/Imlib2.pm
