@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2001/07/14 02:36:29 taya Exp $
+# $NetBSD: Makefile,v 1.149 2001/07/16 17:19:58 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -93,6 +93,7 @@ SUBDIR+=	p5-HTML-Tagset
 SUBDIR+=	p5-HTML-Template
 SUBDIR+=	p5-HTML-Tree
 SUBDIR+=	p5-HTTP-Request-Form
+SUBDIR+=	p5-HTTPD-User-Manage
 SUBDIR+=	p5-Template-Toolkit
 SUBDIR+=	p5-URI
 SUBDIR+=	p5-VRML
