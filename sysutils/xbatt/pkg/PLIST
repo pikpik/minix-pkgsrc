@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xbatt
+lib/X11/app-defaults/XBatt
+share/doc/xbatt/README
+share/doc/xbatt/README.jp
