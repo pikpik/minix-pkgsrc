@@ -1,7 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:52:57 zuntum Exp $
+@comment $NetBSD$
 bin/cdrdao
+bin/cue2toc
 bin/toc2cue
 man/man1/cdrdao.1
+man/man1/cue2toc.1
 share/cdrdao/drivers
 share/doc/cdrdao/COPYING
 share/doc/cdrdao/CREDITS
