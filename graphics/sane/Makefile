@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/05/17 21:52:22 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2000/08/28 15:18:53 rh Exp $
 # FreeBSD Id: Makefile,v 1.3 1998/04/30 02:38:03 obrien Exp
 #
 
@@ -23,7 +23,7 @@ USE_X11BASE=	yes
 USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=${WRKSRC}/ltconfig
 
-# -O to workaorund bug with -O2 and egcs.
+# -O to work around a bug with -O2 and egcs.
 CFLAGS=		-O -I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"
