@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 1999/11/15 21:30:27 drochner Exp $
+# $NetBSD: Makefile,v 1.44 2000/01/31 20:45:43 drochner Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/08 08:34:13 tg Exp
 #
 
@@ -13,6 +13,8 @@ MASTER_SITES=		ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/ \
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.lesstif.org/
+
+BUILD_DEPENDS+=		lynx:../../www/lynx
 
 USE_LIBTOOL=		yes
 USE_X11BASE=		yes
