@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/procmail
 bin/formail
 bin/lockfile
