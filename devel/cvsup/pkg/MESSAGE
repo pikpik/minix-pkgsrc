@@ -1,0 +1,7 @@
+======================================================================
+$NetBSD$
+
+IMPORTANT: make sure your kernel has COMPAT_13 and COMPAT_14 defined !
+   (maybe COMPAT_15 is needed on 1.5 systems)
+
+======================================================================
