@@ -1,4 +1,4 @@
-/*	$NetBSD: tar.c,v 1.41 2003/06/24 06:41:51 grant Exp $	*/
+/*	$NetBSD: tar.c,v 1.3 2003/06/24 06:45:00 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -38,6 +38,7 @@
  */
 
 #include "nbcompat.h"
+#include "pwcache.h"
 
 #ifdef HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
@@ -47,7 +48,7 @@
 #if 0
 static char sccsid[] = "@(#)tar.c	8.2 (Berkeley) 4/18/94";
 #else
-__RCSID("$NetBSD: tar.c,v 1.2 2003/06/23 13:45:07 grant Exp $");
+__RCSID("$NetBSD: tar.c,v 1.3 2003/06/24 06:45:00 grant Exp $");
 #endif
 #endif /* not lint */
 
