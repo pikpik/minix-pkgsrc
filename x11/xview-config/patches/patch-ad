@@ -1,7 +1,7 @@
 $NetBSD$
 
---- XView.rules.orig	Tue Jun 29 07:13:20 1993
-+++ XView.rules	Sat Jul 24 00:28:53 1999
+--- XView.rules.orig	Tue Jun 29 01:13:20 1993
++++ XView.rules
 @@ -141,6 +141,23 @@
   * included in both the .so and the .sa parts of the library.
   */
