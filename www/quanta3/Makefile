@@ -1,10 +1,8 @@
 # $NetBSD: Makefile,v 1.9 2003/12/08 14:41:41 wiz Exp $
 
-DISTNAME=	quanta-3.1.4
-PKGREVISION=	1
+DISTNAME=	quanta-3.1.5
 CATEGORIES=	www
 COMMENT= 	HTML editor suitable for experienced web developers
-PKGREVISION=	1
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
