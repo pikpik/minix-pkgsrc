@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/12/30 13:57:46 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 17:37:35 wiz Exp $
 #
 
 DISTNAME=	OpenSP-1.4
@@ -17,7 +17,7 @@ CONFLICTS+=     sp-*
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--enable-http \
 		--enable-default-catalog=${PREFIX}/share/sgml/catalog
-CONFIGURE_ENV+= CC=${LOCALBASE}/pthreads/bin/pgcc \
-		CXX=${LOCALBASE}/pthreads/bin/pg++
+CONFIGURE_ENV+= CC="${LOCALBASE}/pthreads/bin/pgcc" \
+		CXX="${LOCALBASE}/pthreads/bin/pg++"
 
 .include "../../mk/bsd.pkg.mk"
