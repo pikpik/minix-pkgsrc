@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2002/09/29 07:34:30 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2003/02/17 15:27:59 dillo Exp $
 #
 
 DISTNAME=	ddd-3.3
@@ -36,7 +36,7 @@ post-configure:
 	${ECHO} "LIBXM = ${MOTIFLIB}" >> ${WRKSRC}/ddd/Makefile
 
 post-install:
-	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ddd
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/PROBLEMS ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/doc/README ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/doc/ddd-paper.ps ${PREFIX}/share/doc/ddd
