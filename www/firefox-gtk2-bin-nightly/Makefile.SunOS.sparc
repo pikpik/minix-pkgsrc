@@ -1,0 +1,6 @@
+# $NetBSD$
+
+DISTNAME=	${MOZILLA}-sparc-sun-solaris2.8-gtk2
+EXTRACT_SUFX=	.tar.bz2
+
+MOZ_PLATFORM=	solaris
