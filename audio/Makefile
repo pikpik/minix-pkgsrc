@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 1999/10/11 14:01:37 proff Exp $
+# $NetBSD: Makefile,v 1.47 1999/10/11 17:47:10 proff Exp $
 #
 
     SUBDIR += amp
@@ -42,6 +42,7 @@
     SUBDIR += id3ed
     SUBDIR += kdemultimedia
     SUBDIR += lame
+    SUBDIR += lame-gui
     SUBDIR += libaudiofile
     SUBDIR += libcdaudio
     SUBDIR += maplay
