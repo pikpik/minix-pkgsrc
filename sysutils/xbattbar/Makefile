@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2001/07/14 02:41:43 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/08/22 17:38:59 jlam Exp $
 
 DISTNAME=	${PKGNAME:S/-/_/}
-PKGNAME=	xbattbar-1.4.2
+PKGNAME=	xbattbar-1.4.2nb1
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://infonet.aist-nara.ac.jp/member/suguru/
