@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2004/02/18 15:42:37 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/03/10 18:12:40 wiz Exp $
 #
 
-DISTNAME=	doclifter-1.8
+DISTNAME=	doclifter-1.9
 CATEGORIES=	textproc
 MASTER_SITES=	http://catb.org/~esr/doclifter/
 
