@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2002/08/10 17:03:26 fredb Exp $
+# $NetBSD: Makefile,v 1.42 2002/08/19 22:03:04 fredb Exp $
 
 DISTNAME=	wwwoffle-2.7d
 CATEGORIES=	www
@@ -77,7 +77,7 @@ finish:
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${USE_INET6} == "YES"
+.if defined(USE_INET6) && ${USE_INET6} == "YES"
 CONFIGURE_ARGS+= --with-ipv6
 .endif
 
