@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/04/28 14:05:37 jmmv Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/05/02 11:55:21 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gtkglext.
 #
@@ -27,6 +27,7 @@ BUILDLINK_FILES.gtkglext+=	lib/pkgconfig/gtkglext-1.0.pc
 BUILDLINK_FILES.gtkglext+=	lib/pkgconfig/gtkglext-x11-1.0.pc
 
 .include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gtkglext-buildlink
