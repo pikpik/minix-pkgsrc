@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/pcal
+libexec/cgi-bin/pcal.cgi
+man/man1/pcal.1
+share/doc/ReadMe.pcal
+share/httpd/htdocs/pcal.html
+share/httpd/htdocs/pcalw.html
