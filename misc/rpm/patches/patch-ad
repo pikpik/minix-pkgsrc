@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 1998/08/07 11:10:29 agc Exp $
 
 --- po/Makefile.in.orig	Wed May 27 16:49:42 1998
 +++ po/Makefile.in	Wed Jul 29 12:46:56 1998
@@ -16,6 +16,6 @@ $NetBSD$
  	done
  
 -%.mo: %.po
-+.SUFFIXES: po mo
++.SUFFIXES: .po .mo
 +.po.mo:
  	msgfmt -o $@ $<
