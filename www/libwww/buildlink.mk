@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.8 2002/01/02 21:01:23 fredb Exp $
+# $NetBSD: buildlink.mk,v 1.8.2.1 2002/08/22 11:12:58 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libwww.
 #

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:49:48 wiz Exp $
+# $NetBSD: Makefile,v 1.4.2.2 2002/06/21 23:05:39 jlam Exp $
 #
 
 DISTNAME=	cracklib,2.7
@@ -11,8 +11,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.users.dircon.co.uk/~crypto/
 COMMENT=	password checking library
 
-USE_LIBTOOL=		YES
-USE_BUILDLINK_ONLY=	YES
+USE_LIBTOOL=	YES
+USE_BUILDLINK2=	YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/cracklib

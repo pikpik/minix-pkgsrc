@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.7.2.1 2002/06/23 18:57:14 jlam Exp $
 
 --- agent/mibgroup/ucd_snmp.h.orig	Thu Feb  7 16:39:26 2002
 +++ agent/mibgroup/ucd_snmp.h	Sat May 25 08:36:34 2002

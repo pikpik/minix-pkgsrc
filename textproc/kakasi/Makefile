@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.2.3 2002/08/25 18:01:06 jlam Exp $
 # FreeBSD Id: Makefile,v 1.14 1998/04/05 04:46:33 max Exp $
 
 DISTNAME=	kakasi-2.3.4
@@ -9,11 +9,11 @@ MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://kakasi.namazu.org/
 COMMENT=	Kanji-Kana Simple Inverter, language filter for Japanese
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/kakasi.1 ${PREFIX}/man/ja_JP.EUC/man1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.21 2002/04/15 18:25:45 kei Exp $
+# $NetBSD: Makefile.common,v 1.21.2.1 2002/06/23 18:44:29 jlam Exp $
 #
 
 DISTNAME=	libtool-ml-20010614

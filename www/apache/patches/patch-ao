@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.1.2.1 2002/06/23 19:03:27 jlam Exp $
 
 --- configure.orig	Thu Jun 20 20:56:07 2002
 +++ configure

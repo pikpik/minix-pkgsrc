@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.20 2002/03/13 17:37:58 fredb Exp $
+# $NetBSD: buildlink.mk,v 1.20.2.1 2002/08/22 11:13:35 jlam Exp $
 #
 # This Makefile fragment is included by packages that use kdelibs2.
 #

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.4 2002/06/06 14:51:48 kei Exp $
+# $NetBSD: buildlink.mk,v 1.3.2.2 2002/08/22 11:09:43 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libao.
 #

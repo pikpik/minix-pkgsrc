@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: saslauthd.sh,v 1.1.2.1 2002/08/22 11:12:17 jlam Exp $
 #
 # The saslauthd daemon allows cleartext UNIX password authentication via
 # several authentication mechanisms with Cyrus SASL.

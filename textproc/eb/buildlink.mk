@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2002/03/22 03:57:54 uebayasi Exp $
+# $NetBSD: buildlink.mk,v 1.2.2.1 2002/06/23 19:01:32 jlam Exp $
 #
 # This Makefile fragment is included by packages that use EB.
 #

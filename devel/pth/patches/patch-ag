@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.1.2.1 2002/08/22 11:11:02 jlam Exp $
 
 --- pth_lib.c.orig	Sun Jan 27 11:03:40 2002
 +++ pth_lib.c

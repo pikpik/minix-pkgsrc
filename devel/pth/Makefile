@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2002/08/01 05:58:00 jlam Exp $
+# $NetBSD: Makefile,v 1.40.2.4 2002/08/22 11:11:00 jlam Exp $
 #
 
 DISTNAME=		pth-1.4.1
@@ -12,7 +12,7 @@ COMMENT=		GNU Portable Thread library
 
 CONFLICTS=		pth-current-[0-9]* pth-syscall<1.4.1nb1
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		YES
@@ -37,3 +37,7 @@ post-install:
 			${PREFIX}/share/doc/pth/
 
 .include "../../mk/bsd.pkg.mk"
+
+.if (${MACHINE_ARCH} == "i386" && ${CFLAGS:M-O2} == "-O2")
+CFLAGS:=		${CFLAGS:S/-O2/-O0/}
+.endif

@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.5 2002/03/24 23:30:19 wiz Exp $
+$NetBSD: distinfo,v 1.5.2.1 2002/08/22 11:12:16 jlam Exp $
 
 SHA1 (cyrus-sasl-1.5.27.tar.gz) = eedaec8355219b61e64236e3a5d9845d3af5a13d
 Size (cyrus-sasl-1.5.27.tar.gz) = 528252 bytes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/06/30 11:09:50 zuntum Exp $
+# $NetBSD: Makefile,v 1.8.2.2 2002/08/22 11:11:28 jlam Exp $
 
 DISTNAME=		Hermes-1.3.2
 PKGREVISION=		1
@@ -11,7 +11,7 @@ COMMENT=		Library for conversion of pixel graphics
 
 WRKSRC=			${WRKDIR}/Hermes-1.3.2
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes

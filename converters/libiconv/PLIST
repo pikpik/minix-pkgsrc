@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 21:50:54 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1.2.1 2002/08/22 11:10:00 jlam Exp $
 bin/iconv
 include/iconv.h
 include/libcharset.h

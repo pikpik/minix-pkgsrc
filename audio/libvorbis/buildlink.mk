@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.8 2002/01/02 12:39:36 lukem Exp $
+# $NetBSD: buildlink.mk,v 1.8.2.1 2002/08/22 11:09:56 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libvorbis.
 #

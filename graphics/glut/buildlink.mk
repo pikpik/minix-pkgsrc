@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.2 2002/06/21 23:00:31 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.1.4.1 2002/08/22 11:11:26 jlam Exp $
 
 .if !defined(GLUT_BUILDLINK_MK)
 GLUT_BUILDLINK_MK=	# defined

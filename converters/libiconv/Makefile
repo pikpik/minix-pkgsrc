@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/07/12 06:37:14 grant Exp $
+# $NetBSD: Makefile,v 1.7.2.4 2002/08/22 11:10:00 jlam Exp $
 #
 
 DISTNAME=		libiconv-1.8
@@ -9,7 +9,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/libiconv/
 COMMENT=		character set conversion library
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.11 2002/08/05 21:26:04 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.8.2.2 2002/08/22 11:10:01 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libiconv.
 #

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2001/02/16 14:38:43 wiz Exp $
+# $NetBSD: Makefile,v 1.38.2.2 2002/06/21 23:05:08 jlam Exp $
 
 DISTNAME=		ncurses-${NC_VERS}
 NC_VERS=		5.2
@@ -12,7 +12,7 @@ HOMEPAGE=		http://dickey.his.com/ncurses/ncurses.html
 COMMENT=		CRT screen handling and optimization package
 
 USE_LIBTOOL=		# defined
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-libtool

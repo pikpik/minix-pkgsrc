@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.16 2002/06/12 00:48:20 wiz Exp $
+# $NetBSD: buildlink.mk,v 1.15.2.2 2002/08/22 11:10:37 jlam Exp $
 #
 # This Makefile fragment is included by packages that use glib.
 #

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/08/01 05:48:07 jlam Exp $
+# $NetBSD: Makefile,v 1.44.2.4 2002/08/22 11:10:36 jlam Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/08/06 14:55:12 vanilla Exp
 #
 
@@ -16,7 +16,7 @@ COMMENT=		Some useful routines for C programming
 
 CONFLICTS=		gtk+-1.0.*
 
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
@@ -77,6 +77,6 @@ test: build
 	cd ${WRKSRC} &&  ${MAKE_ENV} ${MAKE_PROGRAM} check 2>&1 | \
 		tee ${WRKDIR}/check.log
 
-.include "../../mk/pthread.buildlink.mk"
+.include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

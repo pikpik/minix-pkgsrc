@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.8 2002/04/26 10:32:37 martti Exp $
+$NetBSD: patch-aa,v 1.8.2.1 2002/06/23 19:02:19 jlam Exp $
 
 --- configure.orig	Mon Apr 29 18:38:47 2002
 +++ configure	Fri May 17 14:51:28 2002

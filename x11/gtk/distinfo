@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.2 2001/04/26 17:42:54 rh Exp $
+$NetBSD: distinfo,v 1.2.2.1 2002/08/22 11:13:10 jlam Exp $
 
 SHA1 (gtk+-1.2.10.tar.gz) = a5adcb909257da01ae4d4761e1d41081d06e4d7c
 Size (gtk+-1.2.10.tar.gz) = 2868322 bytes

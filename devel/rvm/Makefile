@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/06/20 19:28:14 jlam Exp $
+# $NetBSD: Makefile,v 1.7.2.3 2002/08/22 11:11:08 jlam Exp $
 #
 
 DISTNAME=	rvm-1.6
@@ -11,12 +11,13 @@ MAINTAINER=	phil@cs.wwu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 COMMENT=	Recoverable Virtual Memory
 
-GNU_CONFIGURE=		YES
-USE_LIBTOOL=		YES
+USE_BUILDLINK2=		YES
 USE_GMAKE=		YES
-USE_BUILDLINK_ONLY=	YES
 
-CONFIGURE_ARGS+=	--with-lwp-includes=${BUILDLINK_DIR}/include
+GNU_CONFIGURE=		YES
+CONFIGURE_ARGS+=	--with-lwp-includes=${BUILDLINK_PREFIX.lwp}/include
+
+USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 pre-build:
@@ -25,5 +26,5 @@ pre-build:
 		${LN} -sf $${file} `${BASENAME} $${file} .c`_lwp.c;	\
 	done
 
-.include "../../devel/lwp/buildlink.mk"
+.include "../../devel/lwp/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

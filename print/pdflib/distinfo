@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.5 2002/06/30 03:58:17 jschauma Exp $
+$NetBSD: distinfo,v 1.4.2.1 2002/08/22 11:12:13 jlam Exp $
 
 SHA1 (pdflib-4.0.3.tar.gz) = 9fbe256249ef780c4607ee3070785d9a4ecc03f7
 Size (pdflib-4.0.3.tar.gz) = 2373817 bytes

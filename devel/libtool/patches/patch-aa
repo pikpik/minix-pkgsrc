@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.26 2001/10/04 07:58:02 skrll Exp $
+$NetBSD: patch-aa,v 1.26.2.1 2002/06/23 18:44:30 jlam Exp $
 
 --- ltconfig.in.orig	Mon May 21 05:05:06 2001
 +++ ltconfig.in

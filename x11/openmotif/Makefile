@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/09/28 08:54:56 jlam Exp $
+# $NetBSD: Makefile,v 1.11.2.2 2002/06/21 23:05:54 jlam Exp $
 # FreeBSD: /c/ncvs/ports/x11-toolkits/open-motif/Makefile,v 1.18 2000/10/09 01:40:02 asami Exp 
 # OpenBSD: Makefile,v 1.5 2000/10/23 16:08:12 espie Exp 
 
@@ -25,7 +25,7 @@ CONFLICTS+=		lesstif-[0-9]*
 DIST_SUBDIR=		openmotif
 WRKSRC=			${WRKDIR}/motif
 USE_X11BASE=		# defined
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 ALL_TARGET=		World
 
 DEINSTALL_TMPL=		${.CURDIR}/DEINSTALL
@@ -105,6 +105,5 @@ post-install:
 		${INSTALL_MAN} $${file} ${PREFIX}/man/$${file};		\
         done
 
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.11 2002/07/02 12:56:29 wiz Exp $
+# $NetBSD: buildlink.mk,v 1.10.2.1 2002/08/22 11:12:45 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libxml.
 #

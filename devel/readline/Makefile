@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/08/06 14:20:46 jlam Exp $
+# $NetBSD: Makefile,v 1.20.2.2 2002/06/21 23:05:10 jlam Exp $
 #
 
 DISTNAME=	readline-4.2
@@ -9,7 +9,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/readline/
 COMMENT=	GNU library that can recall and edit previous input
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
 
@@ -17,19 +17,6 @@ ALL_TARGET=		all-la
 INSTALL_TARGET=		install-la
 
 INFO_FILES=		readline.info history.info
-
-# Remove -I$(includedir) from the INCLUDES passed to the compiler as this
-# defeats buildlink.
-#
-post-patch:
-	cd ${WRKSRC};							\
-	files="Makefile.in";						\
-	for file in $${files}; do					\
-		${MV} -f $${file} $${file}.fixme;			\
-		${SED} -e "s|[  ]*-I\$$(includedir)||"			\
-			$${file}.fixme > $${file};			\
-		${RM} $${file}.fixme;					\
-	done
 
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

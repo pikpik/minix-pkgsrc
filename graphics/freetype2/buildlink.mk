@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.15 2002/07/30 02:15:42 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.13.2.1 2002/08/22 11:11:22 jlam Exp $
 #
 # This Makefile fragment is included by packages that use freetype2.
 #

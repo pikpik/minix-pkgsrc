@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/02/18 15:14:20 seb Exp $
+# $NetBSD: Makefile,v 1.6.2.2 2002/06/21 23:05:17 jlam Exp $
 #
 
 DISTNAME=	aalib-1.4rc4
@@ -14,8 +14,9 @@ COMMENT=	ASCII Art library
 CONFLICTS+=	aalib-x11-[0-9]*
 
 WRKSRC=		${WRKDIR}/aalib-1.4.0
-GNU_CONFIGURE=	YES
-USE_LIBTOOL=	yes
+USE_BUILDLINK2=		YES
+GNU_CONFIGURE=		YES
+USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 CONFIGURE_ARGS+=	--with-x11-driver=no

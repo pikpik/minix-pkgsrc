@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.8 2001/09/10 13:35:56 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.8.2.1 2002/08/22 11:11:19 jlam Exp $
 #
 # This Makefile fragment is included by packages that use Mesa.
 #

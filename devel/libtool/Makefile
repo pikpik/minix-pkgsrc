@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/04/15 18:25:45 kei Exp $
+# $NetBSD: Makefile,v 1.35.2.1 2002/06/23 18:44:29 jlam Exp $
 #
 
 DISTFILES=	# empty

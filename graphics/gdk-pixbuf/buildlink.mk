@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.14 2002/05/14 09:04:41 tron Exp $
+# $NetBSD: buildlink.mk,v 1.12.2.1 2002/06/23 18:46:21 jlam Exp $
 #
 # This Makefile fragment is included by packages that use gdk-pixbuf.
 #
