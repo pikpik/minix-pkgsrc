@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/29 22:56:02 wiz Exp $
 #
 
-DISTNAME=		crimson-0.3.3
+DISTNAME=		crimson-0.3.4
 PKGNAME=		${DISTNAME:S/crimson/crimsonfields/}
 CATEGORIES=		games
 MASTER_SITES=		http://www.lanipage.de/jens/crimson/
