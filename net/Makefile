@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.490 2004/09/01 20:16:31 schmonz Exp $
+# $NetBSD: Makefile,v 1.491 2004/09/09 06:56:01 xtraeme Exp $
 #
 
 COMMENT=	Networking tools
@@ -373,6 +373,7 @@ SUBDIR+=	userppp
 SUBDIR+=	vcheck
 SUBDIR+=	vnc
 SUBDIR+=	vncviewer
+SUBDIR+=	vpnc
 SUBDIR+=	vsftpd
 SUBDIR+=	vtun
 SUBDIR+=	wakeup
