@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/02 20:21:31 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/07 14:55:29 drochner Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-21.2
@@ -15,7 +15,7 @@ CONFLICTS+=	emacs-[0-9]*
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=	yes
 
 CONFIGURE_ARGS+=--without-x
 
