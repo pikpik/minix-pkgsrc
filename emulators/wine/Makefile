@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2002/09/06 09:18:41 zuntum Exp $
+# $NetBSD: Makefile,v 1.33 2002/09/21 00:28:09 jlam Exp $
 
 DISTNAME=		Wine-20020804
 PKGNAME=		${DISTNAME:S/W/w/}
@@ -52,5 +52,6 @@ post-install:
 .include "../../graphics/Mesa/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
+.include "../../lang/perl5/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
