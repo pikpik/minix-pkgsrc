@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/03/10 18:37:48 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/08/14 15:51:37 snj Exp $
 
-DISTNAME=	nut-9.11
+DISTNAME=	nut-10.1
 CATEGORIES=	biology
 MASTER_SITES=	http://www.lafn.org/~av832/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.lafn.org/~av832/
