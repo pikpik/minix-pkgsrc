@@ -13,3 +13,20 @@ $NetBSD$
  /* external definitions for "icb" global variables */
  
  /* defined in port.c */
+@@ -25,6 +29,7 @@ extern char *mygroup;		/* requested grou
+ extern char *myserver;		/* server name */
+ extern char *myhost;		/* server host */
+ extern int myport;		/* server port */
++extern char *mylhost;		/* local address */
+ extern char *mbuf;		/* message buffer */
+ extern char *mbuf2;		/* message buffer */
+ extern int connected;		/* whether we are validated or not */
+@@ -69,7 +74,7 @@ void	clearargs (int argc, char **argv);
+ int	clientserve (void);
+ void	closesessionlog (void);
+ void	cmdoutmsg (char *pkt);
+-int	connecttoport (char *host_name, int port_number);
++int	connecttoport (char *host_name, int port_number, char *lhost_name);
+ void	copenmsg (char *pkt);
+ void	cpersonalmsg (char *pkt);
+ void	csendopen (char *txt);
