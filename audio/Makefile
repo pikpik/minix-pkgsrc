@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 1999/12/04 12:58:35 scw Exp $
+# $NetBSD: Makefile,v 1.50 1999/12/10 01:34:01 hubertf Exp $
 #
 
     SUBDIR += amp
@@ -7,6 +7,7 @@
     SUBDIR += cdd
     SUBDIR += cddbd
     SUBDIR += dap
+    SUBDIR += emixer
     SUBDIR += esound
     SUBDIR += festdoc
     SUBDIR += festival
