@@ -1,0 +1,26 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+ALIAS=@FONTDIR@/fonts.alias
+
+case ${STAGE} in
+PRE-DEINSTALL)
+	;;
+
+DEINSTALL)
+	;;
+
+POST-DEINSTALL)
+	${SED} -e '/^-- BEGIN Kappa20 --/,/^-- END Kappa20 --/d' \
+	    < ${ALIAS} > ${ALIAS}.new
+	${MV} ${ALIAS}.new ${ALIAS}
+	mkfontdir @FONTDIR@
+	;;
+
+*)
+	${ECHO} "Unexpected argument: ${STAGE}"
+	exit 1
+	;;
+
+esac
