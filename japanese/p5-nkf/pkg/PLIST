@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/perl5/man/man3/NKF.3
+lib/perl5/site_perl/NKF.pm
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/NKF/.packlist
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/NKF/NKF.bs
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/NKF/NKF.so
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/NKF
