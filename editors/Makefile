@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2004/02/25 22:05:56 jmmv Exp $
+# $NetBSD: Makefile,v 1.98 2004/03/08 23:21:08 wiz Exp $
 #
 
 COMMENT=	Editors
@@ -17,6 +17,7 @@ SUBDIR+=	conglomerate
 SUBDIR+=	cooledit
 SUBDIR+=	dasher
 SUBDIR+=	easyedit
+SUBDIR+=	ed
 SUBDIR+=	elvis
 SUBDIR+=	elvis-x11
 SUBDIR+=	emacs
