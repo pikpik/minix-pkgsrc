@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 1999/07/29 16:44:41 bad Exp $
+# $NetBSD: Makefile,v 1.22 1999/11/05 17:16:40 explorer Exp $
 #
 
 DISTNAME=		pthreads-1_60_beta6
@@ -18,6 +18,12 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX}/pthreads
 
 post-patch:
 	@${RM} ${WRKSRC}/include/endian.h
+
+post-configure:
+	@echo "#define HAVE_SYSCALL_SIGACTION 1" >> ${WRKSRC}/config.h
+	@echo "#define HAVE_SYSCALL_SIGPAUSE 1" >> ${WRKSRC}/config.h
+	@echo "#define HAVE_SYSCALL_SIGPROCMASK 1" >> ${WRKSRC}/config.h
+	@echo "#define HAVE_SYSCALL_SIGSUSPEND 1" >> ${WRKSRC}/config.h
 
 pre-install:
 	${MKDIR} ${PREFIX}/pthreads
