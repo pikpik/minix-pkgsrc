@@ -1,8 +1,8 @@
 $NetBSD$
 
---- capplets/sound-properties/Makefile.in.orig	Mon Oct  4 23:59:53 1999
-+++ capplets/sound-properties/Makefile.in	Tue Oct  5 00:00:01 1999
-@@ -139,7 +139,7 @@
+--- capplets/sound-properties/Makefile.in.orig	Wed May 24 01:09:51 2000
++++ capplets/sound-properties/Makefile.in	Tue May 30 18:38:33 2000
+@@ -136,7 +136,7 @@
  
  sound_properties_SOURCES = sound-properties.c
  
