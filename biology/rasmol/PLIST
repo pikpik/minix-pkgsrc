@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/03/13 04:41:59 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 21:28:15 zuntum Exp $
 bin/rasmol
 share/doc/rasmol/rasmol.hlp
 share/doc/rasmol/NOTICE
@@ -27,4 +27,4 @@ share/examples/rasmol/IUCR9800028.cif
 share/examples/rasmol/asprin.alc
 share/examples/rasmol/pdb2mcg.ent
 @dirrm share/examples/rasmol
-man/cat1/rasmol.0
+${IMAKE_MAN_DIR}/rasmol.${IMAKE_MANNEWSUFFIX}
