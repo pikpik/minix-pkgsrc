@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2002/12/22 17:15:33 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2003/01/20 23:23:57 jschauma Exp $
 #
 
 DISTNAME=       tar-1.13.25
 PKGNAME=	gtar-base-1.13.25
+PKGREVISION=	1
 SVR4_PKGNAME=	gtarb
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
