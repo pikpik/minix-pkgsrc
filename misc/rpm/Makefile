@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2003/07/13 13:52:46 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2003/07/17 21:49:52 grant Exp $
 
 DISTNAME=	rpm-2.5.4
 PKGREVISION=	1
@@ -18,9 +18,6 @@ USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
-
-DEINSTALL_TMPL=		${.CURDIR}/DEINSTALL
-INSTALL_TMPL=		${.CURDIR}/INSTALL
 
 # The rpm databases are kept under ${RPM_DB_PREFIX}/lib/rpm.
 CONFIGURE_ENV+=		varprefix="${RPM_DB_PREFIX}"
