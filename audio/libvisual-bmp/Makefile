@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 21:12:35 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/05 21:13:51 wiz Exp $
 #
 
 DISTNAME=		libvisual-bmp-0.1.0
@@ -22,6 +22,7 @@ post-extract:
 
 .include "../../audio/bmp/buildlink3.mk"
 .include "../../audio/libvisual/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
