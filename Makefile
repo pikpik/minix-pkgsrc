@@ -1,4 +1,5 @@
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
+# $NetBSD$
 #
 
 SUBDIR += archivers
