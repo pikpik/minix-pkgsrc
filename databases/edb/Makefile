@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/08/16 10:46:58 rh Exp $
 #
 
 DISTNAME=		edb-1.0.2
@@ -11,9 +11,10 @@ COMMENT=		database abstraction layer to Berkeley databases
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+USE_BUILDLINK2=		YES
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--enable-cxx
 
-.include "../../x11/gtk/buildlink.mk"
+.include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
