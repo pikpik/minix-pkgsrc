@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/28 15:19:52 tron Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/28 21:20:31 skrll Exp $
 #
 
 .include "../libtool/Makefile.common"
@@ -7,7 +7,7 @@ PKGNAME=        ${PKGPFX:C/-/-base-/}${PKGREV}
 
 COMMENT=	Generic shared library support script (the script itself)
 
-CONFLICTS+=	libtool<1.3.5nb11
+CONFLICTS+=	libtool<=1.3.5nb11
 
 test: build
 	cd ${WRKSRC} && ${MAKE} check
