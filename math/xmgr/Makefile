@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/04/05 04:19:00 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/20 20:09:51 tron Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/12/12 22:27:21 jseger Exp
 #
 
@@ -21,7 +21,7 @@ DEPENDS+=	fort77-1.14a:../../lang/fort77
 .endif
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 DEPENDS+=	netcdf-3.4:../../devel/netcdf
-BUILD_DEPENDS=	bison:../../devel/bison
+BUILD_DEPENDS=	${LOCALBASE}/bin/bison:../../devel/bison
 
 USE_X11=	YES
 USE_MOTIF=	YES
