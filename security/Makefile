@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2000/06/05 12:04:07 rh Exp $
+# $NetBSD: Makefile,v 1.35 2000/06/05 14:39:00 rh Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -35,5 +35,6 @@
     SUBDIR += tripwire
     SUBDIR += uvscan
     SUBDIR += uvscan-dat
+    SUBDIR += xdm-krb4
 
 .include "../mk/bsd.pkg.subdir.mk"
