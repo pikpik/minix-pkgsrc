@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/06/06 13:50:41 taca Exp $
+# $NetBSD: Makefile,v 1.33 2004/07/02 08:03:04 martti Exp $
 
 DISTNAME=	postfix-2.2-20040628
 CATEGORIES=	mail
@@ -9,7 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.postfix.org/
 COMMENT=	Postfix SMTP server and tools
 
-CONFLICTS+=	sendmail-[0-9]*
+CONFLICTS+=	sendmail-[0-9]* fastforward>=0.51nb2
 
 DIST_SUBDIR=	postfix
 

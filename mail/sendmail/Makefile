@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.70 2004/05/09 21:14:43 snj Exp $
+# $NetBSD: Makefile,v 1.71 2004/06/23 11:02:02 cjep Exp $
 
 .include "../../mail/sendmail/Makefile.common"
 
 PKGNAME=	sendmail-${DIST_VERS}
 COMMENT=	The well known Mail Transport Agent
 
-CONFLICTS+=	postfix-[0-9]*
+CONFLICTS+=	postfix-[0-9]* fastforward>=0.51nb2
 
 MESSAGE_SRC=	${WRKDIR}/.MESSAGE_SRC
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
