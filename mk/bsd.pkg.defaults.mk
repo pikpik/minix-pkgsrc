@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.257 2004/07/10 22:32:28 salo Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.258 2004/07/14 00:25:11 xtraeme Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -620,6 +620,11 @@ APR_USE_DB4?= YES
 # default, but apr is broken on NetBSD/powerpc so it is disabled
 # there.
 # Default: YES
+
+APR_USE_OPENLDAP?=	NO
+# Used in apr to enable OpenLDAP support.
+# Possible: yes or no.
+# Default: no.
 
 ARLA_CACHE?=	${LOCALBASE}/cache
 # Used in arla to specify the location of the cache used by arla. Should
