@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- audiofile-config.in.orig	Sat Nov 21 15:55:23 1998
++++ audiofile-config.in	Wed Apr 28 14:09:47 1999
+@@ -45,7 +45,7 @@
+       echo $includes
+       ;;
+     --libs)
+-      libdirs=-L@libdir@
++      libdirs="-L@libdir@ -Wl,-R@libdir@"
+       echo $libdirs -laudiofile -lm
+       ;;
+     *)
