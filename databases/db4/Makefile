@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/01/05 08:06:42 martti Exp $
+# $NetBSD: Makefile,v 1.34 2005/01/05 12:16:12 markd Exp $
 
 DISTNAME=		db-4.3.27
 PKGNAME=		${DISTNAME:S/db/db4/}
@@ -35,6 +35,7 @@ CONFIGURE_ARGS+=	--program-transform-name=s,db_,db4_,
 CONFIGURE_ENV+=		F77=${FALSE}
 
 OPSYSVARS+=		LIBSO_LIBS
+LIBSO_LIBS.Interix+=	-lrpclib
 LIBSO_LIBS.SunOS+=	-lnsl -lrt
 CONFIGURE_ENV+=		LIBSO_LIBS="${LIBSO_LIBS}"
 
