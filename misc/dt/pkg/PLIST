@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/dt
+share/doc/dt/README
+share/doc/dt/dt.html
+share/doc/dt/example.dtrc
+@dirrm share/doc/dt
