@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2002/06/25 02:13:11 itojun Exp $
+# $NetBSD: Makefile,v 1.74 2002/06/25 04:21:39 itojun Exp $
 
 DISTNAME=		openssh-3.3p1
 PKGNAME=		openssh-3.3.0.1
@@ -96,11 +96,11 @@ PLIST_SRC+=		${.CURDIR}/PLIST.prng
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 CONF_FILES=		# empty
 .for FILE in ${CONFS}
-CONF_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}
+CONF_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/ssh/${FILE}
 .endfor
 SUPPORT_FILES=		# empty
 .for FILE in ${SUPPS}
-SUPPORT_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}
+SUPPORT_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/ssh/${FILE}
 .endfor
 RCD_SCRIPTS=		sshd
 
