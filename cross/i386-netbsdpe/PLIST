@@ -1,5 +1,7 @@
-@comment $NetBSD: PLIST,v 1.2 2001/01/30 03:09:02 minoura Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:03:34 zuntum Exp $
 bin/${TARGET_ARCH}-dlltool
+bin/${TARGET_ARCH}-dllwrap
 bin/${TARGET_ARCH}-windres
 ${TARGET_ARCH}/bin/dlltool
+${TARGET_ARCH}/bin/dllwrap
 ${TARGET_ARCH}/bin/windres
