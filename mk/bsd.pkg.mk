@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.618 2000/11/26 21:12:54 mycroft Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.619 2000/11/27 15:57:43 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -1112,6 +1112,7 @@ install-depends check-depends:
 .endif # !NO_IGNORE
 
 # Add these defs to the ones dumped into +BUILD_DEFS
+BUILD_DEFS+=	PKGPATH
 BUILD_DEFS+=	OPSYS OS_VERSION MACHINE_ARCH MACHINE_GNU_ARCH
 BUILD_DEFS+=	CPPFLAGS CFLAGS LDFLAGS
 BUILD_DEFS+=	CONFIGURE_ENV CONFIGURE_ARGS
@@ -3110,7 +3111,7 @@ fake-pkg: ${PLIST} ${DESCR}
 	fi;								\
 	${GREP} '\$$NetBSD' $$files | ${SED} -e 's|^${PKGSRCDIR}/||' > ${BUILD_VERSION_FILE};
 .for def in ${BUILD_DEFS}
-	@${ECHO} ${def}=	${${def}:Q} | ${SED} -e 's|PATH=[^ 	]*|PATH=...|' >> ${BUILD_INFO_FILE}
+	@${ECHO} ${def}=	${${def}:Q} | ${SED} -e 's|^PATH=[^ 	]*|^PATH=...|' >> ${BUILD_INFO_FILE}
 .endfor
 	@${ECHO} "CC=	${CC}-`${CC} --version`" >> ${BUILD_INFO_FILE}
 .ifdef USE_PERL5
