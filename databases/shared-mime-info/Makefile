@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/11/26 17:20:07 sketch Exp $
 #
 
 DISTNAME=	shared-mime-info-0.15
@@ -20,7 +20,7 @@ USE_PKGLOCALEDIR=	YES
 
 CONFIGURE_ARGS+=	--disable-update-mimedb
 
-CPPFLAGS+=		-DPREFIX=\"\\\"${PREFIX}\\\"\"
+CPPFLAGS+=		-DPREFIX="\"${PREFIX}\""
 
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
