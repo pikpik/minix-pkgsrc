@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2002/11/14 23:28:55 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2003/02/17 12:54:25 grant Exp $
 #
 
 DISTNAME=       less-381
+PKGREVISION=	1
 CATEGORIES=     misc
 MASTER_SITES=   http://www.greenwoodsoftware.com/less/ \
 		${MASTER_SITE_GNU:=less/}
@@ -12,5 +13,7 @@ COMMENT=	pager similar to more and pg
 
 GNU_CONFIGURE=  	yes
 USE_BUILDLINK2=		yes
+
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 .include "../../mk/bsd.pkg.mk"
