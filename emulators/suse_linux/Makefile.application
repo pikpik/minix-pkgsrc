@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.application,v 1.5 2002/11/25 11:01:16 schmonz Exp $
+# $NetBSD: Makefile.application,v 1.6 2003/03/26 04:05:47 jschauma Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -23,4 +23,5 @@ SUSE_VERSION=			7.3
 # This speeds up the marking of all compat_linux packages
 # as not available.
 SUSE_DIR_PREFIX=		suse
+PKG_SKIP_REASON+=		"${PKGNAME} requires compat_linux, which is not available for ${MACHINE_PLATFORM}"
 .endif
