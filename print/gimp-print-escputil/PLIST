@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/escputil
+man/man1/escputil.1
