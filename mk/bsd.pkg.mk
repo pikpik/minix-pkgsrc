@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.945 2002/03/12 15:40:24 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.946 2002/03/13 15:39:36 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -356,7 +356,7 @@ PATCH_DIST_ARGS?=	-d ${WRKSRC} --forward --quiet -E ${PATCH_DIST_STRIP}
 PATCH_ARGS+=		--batch
 PATCH_DIST_ARGS+=	--batch
 .endif
-PATCH_ARGS+=		-V simple ${_PATCH_BACKUP_ARG} .orig
+PATCH_ARGS+=		${_PATCH_BACKUP_ARG} .orig
 PATCH_FUZZ_FACTOR?=	-F0			# Default to zero fuzz
 
 EXTRACT_SUFX?=		.tar.gz
