@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.5 2004/04/05 02:31:06 xtraeme Exp $
 
 --- config.orig	Fri Apr 11 14:00:41 2003
 +++ config
@@ -16,7 +16,7 @@ $NetBSD$
  # LUA_COMPATUPVALUES. Add these definitions to MYCFLAGS.
  #
 -# -DLUA_COMPATUPSYNTAX -DLUA_COMPATUPVALUES
-+EXTRA_DEFS=-DLUA_COMPATUPSYNTAX -DLUA_COMPATUPVALUES
++# EXTRA_DEFS=-DLUA_COMPATUPSYNTAX -DLUA_COMPATUPVALUES
  
  # ------------------------------------------------------------- Lua interpreter
  
