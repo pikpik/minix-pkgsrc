@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/aspell/ca.multi
+lib/aspell/ca.rws
+lib/aspell/catalan.alias
+share/aspell/ca.dat
