@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.359 2002/12/14 00:19:50 cjep Exp $
+# $NetBSD: Makefile,v 1.360 2002/12/18 22:36:58 tsarna Exp $
 #
 
 COMMENT=	Development utilities
@@ -236,8 +236,8 @@ SUBDIR+=	p5-IO-Null
 SUBDIR+=	p5-IO-String
 SUBDIR+=	p5-IO-Stty
 SUBDIR+=	p5-IO-Tty
-SUBDIR+=	p5-IO-stringy
 SUBDIR+=	p5-IO-Zlib
+SUBDIR+=	p5-IO-stringy
 SUBDIR+=	p5-IPC-Run
 SUBDIR+=	p5-IPC-ShareLite
 SUBDIR+=	p5-IPC-Shareable
