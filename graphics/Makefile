@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 1998/08/24 18:13:08 agc Exp $
+# $NetBSD: Makefile,v 1.28 1998/08/27 11:18:44 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -23,7 +23,7 @@
 #    SUBDIR += hobbes-icons-xpm
     SUBDIR += hp2xx
 #    SUBDIR += hpscan
-#    SUBDIR += imlib
+    SUBDIR += imlib
 #    SUBDIR += jbigkit
     SUBDIR += jpeg
     SUBDIR += kdegraphics
