@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libtokenscan.a
+include/tokenscan.h
+share/doc/libts/tokenscan.txt
+@dirrm share/doc/libts
