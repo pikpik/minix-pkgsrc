@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:44 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/11/13 14:01:20 wiz Exp $
 
 .if !defined(IMAGEMAGICK_BUILDLINK2_MK)
 IMAGEMAGICK_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			ImageMagick
-BUILDLINK_DEPENDS.ImageMagick?=		ImageMagick>=5.5.6.1
+BUILDLINK_DEPENDS.ImageMagick?=		ImageMagick>=5.5.1.6
 BUILDLINK_PKGSRCDIR.ImageMagick?=	../../graphics/ImageMagick
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.ImageMagick=ImageMagick
