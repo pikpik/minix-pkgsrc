@@ -1,12 +1,23 @@
-# $NetBSD: Makefile,v 1.24 2003/01/03 23:04:39 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/03/29 12:41:19 jmmv Exp $
 
+IM_MAJOR_VER=		5.5.6
+IM_MINOR_VER=		NONE
+IM_MAJOR_LIB_VER=	${IM_MAJOR_VER}-Q16
+
+.if (${IM_MINOR_VER} != NONE)
 DISTNAME=		ImageMagick-${IM_MAJOR_VER}-${IM_MINOR_VER}
 PKGNAME=		p5-PerlMagick-${IM_MAJOR_VER}.${IM_MINOR_VER}
+.else
+DISTNAME=		ImageMagick-${IM_MAJOR_VER}
+PKGNAME=		p5-PerlMagick-${IM_MAJOR_VER}
+.endif
 SVR4_PKGNAME=		p5pma
 WRKSRC=			${WRKDIR}/ImageMagick-${IM_MAJOR_VER}
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.nluug.nl/pub/ImageMagick/ \
 			ftp://ftp.yggdrasil.com/mirrors/site/ftp.simplesystems.org/pub/ImageMagick/ \
+			ftp://ftp.fu-berlin.de/unix/X11/graphics/ImageMagick/ \
+			ftp://ftp.sunet.se/pub/multimedia/graphics/ImageMagick/ \
 			ftp://ftp.fu-berlin.de/unix/X11/graphics/ImageMagick/
 EXTRACT_SUFX=		.tar.bz2
 
@@ -17,9 +28,6 @@ COMMENT=		Object-oriented Perl interface to ImageMagick
 DISTINFO_FILE=		${.CURDIR}/../../graphics/ImageMagick/distinfo
 FILESDIR=		${.CURDIR}/../../graphics/ImageMagick/files
 PATCHDIR=		${.CURDIR}/../../graphics/ImageMagick/patches
-
-IM_MAJOR_VER=		5.5.3
-IM_MINOR_VER=		2
 
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
