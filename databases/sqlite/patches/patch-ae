@@ -1,8 +1,0 @@
-$NetBSD$
-
---- ../sqlite/src/build.c.orig	2003-07-01 19:13:15.000000000 +0100
-+++ ../sqlite/src/build.c
-@@ -27,2 +27,3 @@
- */
-+#include "os.h"
- #include "sqliteInt.h"

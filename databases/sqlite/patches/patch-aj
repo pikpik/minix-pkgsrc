@@ -1,8 +1,0 @@
-$NetBSD$
-
---- ../sqlite/src/hash.c.orig	2003-05-13 00:06:53.000000000 +0100
-+++ ../sqlite/src/hash.c
-@@ -16,2 +16,3 @@
- */
-+#include "os.h"
- #include "sqliteInt.h"
