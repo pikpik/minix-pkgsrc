@@ -1,8 +1,0 @@
-@comment $NetBSD$
-include/libmcrypt22/mcrypt.h
-lib/libmcrypt22.a
-lib/libmcrypt22.la
-lib/libmcrypt22.so
-lib/libmcrypt22.so.2
-lib/libmcrypt22.so.2.5
-@dirrm include/libmcrypt22
