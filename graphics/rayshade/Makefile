@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/25 04:17:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2002/03/13 17:37:17 fredb Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/05/26 04:04:11 mph Exp
 #
 
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=     packages@netbsd.org
 COMMENT=	Extensible system for creating ray-traced images
 
-DEPENDS+=	urt-3.1b1nb1:../../graphics/urt
+DEPENDS+=	urt>=3.1b1nb1:../../graphics/urt
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
