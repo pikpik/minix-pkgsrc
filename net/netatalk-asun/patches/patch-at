@@ -1,8 +1,8 @@
 $NetBSD$
 
---- libatalk/nbp/nbp_util.c.orig	Thu Feb  4 07:27:02 1999
-+++ libatalk/nbp/nbp_util.c
-@@ -6,7 +6,7 @@
+--- libatalk/nbp/nbp_lkup.c.orig	Thu Feb  4 07:36:14 1999
++++ libatalk/nbp/nbp_lkup.c
+@@ -7,7 +7,7 @@
  #include <sys/types.h>
  #include <sys/param.h>
  #include <sys/socket.h>

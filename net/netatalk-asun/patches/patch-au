@@ -1,20 +1,13 @@
 $NetBSD$
 
---- man/Makefile.orig	Tue May 20 18:35:43 1997
-+++ man/Makefile
-@@ -8,6 +8,7 @@
- ${ALL}: FRC
- 	cd $@; ${MAKE} ${MFLAGS} CC="${CC}" DEFS="${DEFS}" \
- 	    OPTOPTS="${OPTOPTS}" DESTDIR="${DESTDIR}" MANDIR="${MANDIR}" \
-+	    LIBEXECDIR="${LIBEXECDIR}" EXAMPLEDIR="${EXAMPLEDIR}" \
- 	    SBINDIR="${SBINDIR}" BINDIR="${BINDIR}" RESDIR="${RESDIR}" \
- 	    ETCDIR="${ETCDIR}" LIBDIR="${LIBDIR}" INCDIR="${INCDIR}"
- 
-@@ -25,6 +26,7 @@
- 	for i in ${ALL}; \
- 	    do (cd $$i; ${MAKE} ${MFLAGS} \
- 		DESTDIR="${DESTDIR}"  MANDIR="${MANDIR}" \
-+		LIBEXECDIR="${LIBEXECDIR}" EXAMPLEDIR="${EXAMPLEDIR}" \
- 		SBINDIR="${SBINDIR}" BINDIR="${BINDIR}" RESDIR="${RESDIR}" \
- 	        ETCDIR="${ETCDIR}" LIBDIR="${LIBDIR}" INCDIR="${INCDIR}" \
- 		INSTALL="${INSTALL}" install); \
+--- libatalk/nbp/nbp_rgstr.c.orig	Thu Aug 14 22:27:23 1997
++++ libatalk/nbp/nbp_rgstr.c
+@@ -7,7 +7,7 @@
+ #include <sys/types.h>
+ #include <sys/param.h>
+ #include <sys/socket.h>
+-#include <sys/signal.h>
++#include <signal.h>
+ #include <sys/time.h>
+ #include <errno.h>
+ #include <netatalk/at.h>
