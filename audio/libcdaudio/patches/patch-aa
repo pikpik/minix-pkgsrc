@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/cdaudio.c.orig	2004-04-03 14:19:16.000000000 -0600
+--- src/cdaudio.c.orig	2004-09-09 00:26:20.000000000 +0000
 +++ src/cdaudio.c
-@@ -116,8 +116,12 @@ cd_init_device(char *device_name)
+@@ -121,8 +121,12 @@ cd_init_device(char *device_name)
  #endif
  #ifdef HAVE_GETMNTINFO
    int mounts;
