@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/nvi
 bin/nex
 bin/nview
