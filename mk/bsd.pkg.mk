@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1262 2003/09/05 19:00:57 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1263 2003/09/06 11:39:30 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -3799,7 +3799,7 @@ BINPKG_SITES?= \
 
 BIN_INSTALL_FLAGS?= 	# -v
 .if ${PKG_INSTALLATION_TYPE} == "pkgviews"
-PKG_ARGS_ADD=		-W ${LOCALBASE}
+PKG_ARGS_ADD=		-W ${LOCALBASE} -w ${DEFAULT_VIEW}
 .endif
 _BIN_INSTALL_FLAGS=	${BIN_INSTALL_FLAGS}
 _BIN_INSTALL_FLAGS+=	${PKG_ARGS_ADD}
