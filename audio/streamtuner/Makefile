@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2003/09/18 21:57:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/13 00:45:21 wiz Exp $
 #
 
-DISTNAME=	streamtuner-0.10.1
-PKGREVISION=	1
+DISTNAME=	streamtuner-${DIST_VER}
 CATEGORIES=	audio www
-MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/streamtuner.pkg/0.10.1/
+MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/streamtuner.pkg/${DIST_VER}/
 
 MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
@@ -22,6 +21,8 @@ GNU_CONFIGURE=		yes
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	${WRKSRC}/extras/streamtuner.pc.in
+
+DIST_VER=		0.10.2
 
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../www/curl/buildlink2.mk"
