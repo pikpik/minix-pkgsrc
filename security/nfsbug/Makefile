@@ -1,10 +1,14 @@
+# $NetBSD$
+
 DISTNAME=	nfsshell-1.0
+WRKSRC=		${WRKDIR}/nfsbug
+CATEGORIES=	net security
+MASTER_SITES=	http://www.asmodeus.com/archive/Xnix/
 DISTFILES=	nfsBugFerret.tgz \
 		nfsShell.c
-MASTER_SITES=	http://www.asmodeus.com/archive/Xnix/
-CATEGORIES=	net security
 
-WRKSRC=		${WRKDIR}/nfsbug
+MAINTAINER=	packages@netbsd.org
+
 EXTRACT_ONLY=   nfsBugFerret.tgz
 
 post-extract:
