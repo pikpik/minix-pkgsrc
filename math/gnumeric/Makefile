@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/03/21 13:32:27 martti Exp $
+# $NetBSD: Makefile,v 1.48 2002/04/23 13:31:44 martti Exp $
 #
 
 DISTNAME=		gnumeric-1.0.6
@@ -14,6 +14,8 @@ ONLY_FOR_PLATFORM=	NetBSD-1.5[R-Z]-* NetBSD-1.5Z[A-Z]-* NetBSD-1.[6-9]*-*
 
 # for Python support a shared libpython is required but not provided yet
 #BUILD_DEPENDS+=		python>=2.0:../../lang/python
+
+DEPENDS+=		scrollkeeper-[0-9]*:../../textproc/scrollkeeper
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
