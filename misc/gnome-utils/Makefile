@@ -1,9 +1,9 @@
-## $NetBSD: Makefile,v 1.47 2002/09/10 16:06:45 wiz Exp $
+## $NetBSD: Makefile,v 1.48 2002/10/06 02:01:19 wiz Exp $
 
 DISTNAME=		gnome-utils-1.4.1
 PKGREVISION=		3
 CATEGORIES=		misc x11 gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-utils/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-utils/1.4/}
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/

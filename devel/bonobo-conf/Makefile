@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2002/09/21 10:42:00 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/02 23:46:08 wiz Exp $
 
 DISTNAME=		bonobo-conf-0.14
 PKGREVISION=		2
 CATEGORIES=		devel gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/bonobo-conf/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/bonobo-conf/0.14/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnome.org/

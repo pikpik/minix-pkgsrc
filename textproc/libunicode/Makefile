@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3.2.1 2002/06/30 06:24:19 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/25 18:40:08 jlam Exp $
 #
 
 DISTNAME=		libunicode-0.4
 CATEGORIES=		textproc devel
-MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/libunicode/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libunicode/0.4/}
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.pango.org/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/09/10 16:06:40 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/11 11:44:35 jlam Exp $
 #
 
 DISTNAME=		pango-1.0.4
@@ -7,7 +7,7 @@ CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v2.0/ \
 			ftp://ftp.cs.umn.edu/pub/gimp/gtk/v2.0/ \
 			http://www.ameth.org/gimp/pub/gtk/v2.0/ \
-			${MASTER_SITE_GNOME:=stable/sources/pango/}
+			${MASTER_SITE_GNOME:=sources/pango/1.0/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.pango.org

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.67.2.3 2002/08/22 11:11:30 jlam Exp $
+# $NetBSD: Makefile,v 1.69 2002/08/25 18:39:11 jlam Exp $
 #
 
 DISTNAME=		imlib-1.9.14
 PKGREVISION=		1
 CATEGORIES=		graphics
-MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/imlib/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/imlib/1.9/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.nl.rasterman.com/imlib.html

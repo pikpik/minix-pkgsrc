@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2002/03/13 17:37:21 fredb Exp $
+# $NetBSD: Makefile,v 1.10 2002/10/08 12:23:12 wiz Exp $
 #
 
 DISTNAME=		gb-0.0.20
 PKGREVISION=		1
 CATEGORIES=		lang gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/gb/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gb/0.0/}
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/gb/

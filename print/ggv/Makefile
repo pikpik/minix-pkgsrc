@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2002/09/13 06:53:37 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2002/10/05 11:09:01 wiz Exp $
 #
 
 DISTNAME=	ggv-1.0.2
 PKGREVISION=	4
 CATEGORIES=	print gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/ggv/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/ggv/1.0/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
