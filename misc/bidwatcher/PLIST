@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.2 2001/10/07 08:29:44 tron Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:27:34 zuntum Exp $
 bin/bidwatcher
+bin/biddaemon
 share/doc/bidwatcher/AUTHORS
 share/doc/bidwatcher/COPYING
 share/doc/bidwatcher/INSTALL
