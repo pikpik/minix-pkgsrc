@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/gkrellm/plugins/gkrellm_snmp.so
