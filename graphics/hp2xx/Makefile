@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2000/05/12 16:07:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/31 12:37:01 dmcmahill Exp $
 #
 
 DISTNAME=	hp2xx-3.3.2
+PKGNAME=	hp2xx-3.3.2nb1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNU:=hp2xx/}
 
