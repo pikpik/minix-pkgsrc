@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/hatari
+share/hatari/authors.txt
+share/hatari/font8.bmp
+share/hatari/gpl.txt
+share/hatari/readme.txt
+@dirrm share/hatari
