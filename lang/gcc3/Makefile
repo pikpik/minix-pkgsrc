@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2003/07/17 21:44:26 grant Exp $
+# $NetBSD: Makefile,v 1.41 2003/07/23 22:30:13 grant Exp $
 #
 
 DISTNAME=		gcc-3.3
@@ -32,6 +32,8 @@ PLIST_SUBST+=		DISTNAME=${DISTNAME}
 TEXINFO_REQD=		4.2
 
 .include "../../mk/bsd.prefs.mk"
+
+BUILD_DEFS+=		PKG_GCC3_JAVA
 
 USE_NEW_TEXINFO=	YES
 INFO_DIR=		${GCC_PREFIX:S|^${PREFIX}/||}/info
