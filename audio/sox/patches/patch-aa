@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- sunaudio.c.orig	Sun Jul 18 20:57:36 1999
 +++ sunaudio.c	Thu Sep 30 01:43:33 1999
 @@ -17,7 +17,10 @@
