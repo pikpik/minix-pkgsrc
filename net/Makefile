@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.348 2003/01/09 08:30:25 hubertf Exp $
+# $NetBSD: Makefile,v 1.349 2003/01/30 12:05:58 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -12,6 +12,7 @@ SUBDIR+=	ORBit2
 SUBDIR+=	SDL_net
 SUBDIR+=	adns
 SUBDIR+=	airportbasestationconfig
+SUBDIR+=	ap-utils
 SUBDIR+=	archie
 SUBDIR+=	arla
 SUBDIR+=	arpd
