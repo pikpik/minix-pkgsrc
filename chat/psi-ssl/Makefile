@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/27 21:47:08 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2003/08/05 13:36:05 drochner Exp $
 
 PKGNAME=	psi-ssl-2.0
 DISTNAME=	qssl-2.0
@@ -14,7 +14,6 @@ COMMENT=	PSI Jabber Client - SSL plugin
 USE_BUILDLINK2=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-USE_X11BASE=	yes
 
 do-configure:
 	cd ${WRKSRC} && ${QTDIR}/bin/qmake qssl.pro
