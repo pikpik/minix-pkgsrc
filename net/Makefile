@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.390 2003/07/12 14:21:45 salo Exp $
+# $NetBSD: Makefile,v 1.391 2003/07/12 14:26:26 salo Exp $
 #
 
 COMMENT=	Networking tools
@@ -318,6 +318,7 @@ SUBDIR+=	xipdump
 SUBDIR+=	xmftp
 SUBDIR+=	xmule
 SUBDIR+=	xnap
+SUBDIR+=	xorp
 SUBDIR+=	xrmftp
 SUBDIR+=	xspeakfree
 SUBDIR+=	xtraceroute
