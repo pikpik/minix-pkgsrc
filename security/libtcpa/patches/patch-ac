@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libtcpa/buildbuff.c.orig	Thu Jul 10 13:32:54 2003
++++ libtcpa/buildbuff.c
+@@ -8,6 +8,7 @@
+ #include <string.h>
+ #include <stdarg.h>
+ #include <netinet/in.h>
++#include <sys/types.h>
+ 
+ /****************************************************************************/
+ /*                                                                          */
