@@ -19,21 +19,3 @@ $NetBSD$
  # Redirect the config.log output again, so that the ltconfig log is not
  # clobbered by the next message.
  exec 5>>./config.log
-@@ -7064,6 +7067,7 @@
- 	if test $ac_cv_header_tcpd_h != yes ; then
- 		have_wrappers=no
- 	else
-+if false; then
- 		echo $ac_n "checking for main in -lwrap""... $ac_c" 1>&6
- echo "configure:7069: checking for main in -lwrap" >&5
- ac_lib_var=`echo wrap'_'main | sed 'y%./+-:%__p__%'`
-@@ -7099,6 +7103,9 @@
- else
-   echo "$ac_t""no" 1>&6
- have_wrappers=no
-+fi
-+else
-+ have_wrappers=yes
- fi
- 
- 	fi

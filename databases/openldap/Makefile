@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2000/05/05 12:08:37 veego Exp $
+# $NetBSD: Makefile,v 1.15 2000/06/01 11:23:19 rh Exp $
 #
 
-DISTNAME=	openldap-1.2.7
-PKGNAME=	openldap-1.2.7p1
-WRKSRC=		${WRKDIR}/ldap
+DISTNAME=	openldap-1.2.11
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/
 EXTRACT_SUFX=	.tgz
