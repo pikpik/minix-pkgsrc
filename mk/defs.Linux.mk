@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.66 2004/03/11 22:57:22 agc Exp $
+# $NetBSD: defs.Linux.mk,v 1.67 2004/04/07 14:26:51 tv Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -194,7 +194,3 @@ _STRIPFLAG_INSTALL?=	-s	# install(1) option to strip
 .endif
 
 LOCALBASE?=		${DESTDIR}/usr/pkg
-.if exists(${LOCALBASE}/sbin/pkg_info)
-PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
-.endif
-PKG_TOOLS_BIN?=		${LOCALBASE}/bin
