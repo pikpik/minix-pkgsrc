@@ -2,6 +2,6 @@
 bin/pico
 bin/pilot
 lib/libpico.a
-lib/libpico.so.0.1
+lib/libpico.so.0.0
 man/man1/pico.1
 man/man1/pilot.1
