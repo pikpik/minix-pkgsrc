@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/14 22:20:25 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/14 22:21:58 itojun Exp $
 
 DISTNAME=	xbattbar_1.4
 PKGNAME=	xbattbar-1.4
@@ -11,6 +11,10 @@ HOMEPAGE=	http://infonet.aist-nara.ac.jp/member/suguru/xbattbar.html
 USE_X11BASE=	YES
 USE_IMAKE=	YES
 WRKSRC=		${WRKDIR}/xbattbar
+
+.if !exists(/usr/include/machine/apmvar.h)
+IGNORE+=	"APM is not available for ${MACHINE_PLATFORM}"
+.endif
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/xbattbar.man ${PREFIX}/man/man1/xbattbar.1
