@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2004/02/21 07:36:31 snj Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/18 23:19:46 snj Exp $
 #
 
 DISTNAME=	bbsload-0.2.6
 CATEGORIES=	sysutils x11 wm
-MASTER_SITES=	http://bbtools.thelinuxcommunity.org/sources/
+MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
 
 MAINTAINER=	pino@dohd.org
-HOMEPAGE=	http://bbtools.thelinuxcommunity.org/
+HOMEPAGE=	http://bbtools.windsofstorm.net/
 COMMENT=	Small (in dimensions) tool to display the average load
 
 GNU_CONFIGURE=		YES
