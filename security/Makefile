@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2002/08/06 01:49:07 cjs Exp $
+# $NetBSD: Makefile,v 1.115 2002/08/07 05:42:12 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -11,6 +11,7 @@ SUBDIR+=	amavis
 SUBDIR+=	amavis-perl
 SUBDIR+=	apg
 SUBDIR+=	arirang
+SUBDIR+=	avcheck
 SUBDIR+=	audit-packages
 SUBDIR+=	cfs
 SUBDIR+=	crack
