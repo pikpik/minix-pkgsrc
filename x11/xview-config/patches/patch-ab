@@ -7,7 +7,7 @@ $NetBSD$
   */
  #ifndef XVDestDir
 -#define XVDestDir /usr/X11/xview
-+#define XVDestDir /usr/X11R6
++#define XVDestDir ProjectRoot
  #endif
  /*
   *	Command to add object modules to the library.
