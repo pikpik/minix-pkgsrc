@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.23 1998/09/04 12:48:04 agc Exp $
+#	$NetBSD: Makefile,v 1.24 1998/12/04 03:49:30 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += amanda
@@ -11,6 +11,7 @@
 #   SUBDIR += dejagnu		# needs expect - HF
     SUBDIR += dialog
     SUBDIR += dotfile
+    SUBDIR += dt
     SUBDIR += dync
 #   SUBDIR += ecc		# broken - HF
 #   SUBDIR += estic		# left for someone w/ an Istec - HF
