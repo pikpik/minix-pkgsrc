@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/11/08 10:13:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 15:46:42 grant Exp $
 #
 
 DISTNAME=	Ngraph-6.3.20-src
@@ -15,7 +15,7 @@ COMMENT=	The 2D graph and data analysis program
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
 
@@ -25,5 +25,5 @@ post-extract:
 post-install:
 	${GTAR} -C ${PREFIX}/libexec/Ngraph -xzf ${DISTDIR}/Ngraph-6.3-doc.tar.gz
 
-.include "../../mk/motif.buildlink2.mk"
+.include "../../mk/motif.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
