@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+wine needs the data segment size limit set to over 265000, e.g. by
+	ulimit -d 265000
+in ksh or bash.  Otherwise, you'll get an out of memory error.
+
+===========================================================================
