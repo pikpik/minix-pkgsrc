@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2004/10/03 00:15:03 tv Exp $
+# $NetBSD: Makefile,v 1.39 2004/10/04 02:15:52 minskim Exp $
 
 DISTNAME=	tcl8.4.7-src
 PKGNAME=	tcl-8.4.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcl/}
 
@@ -81,5 +81,6 @@ post-install:
 		tclMath.h tclPlatDecls.h tclPort.h tclRegexp.h
 	${INSTALL_DATA} ${WRKSRC}/../generic/${f} ${PREFIX}/include/tcl/generic
 .endfor
+	${INSTALL_LIB_DIR} ${PREFIX}/lib/tcl
 
 .include "../../mk/bsd.pkg.mk"
