@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2002/09/26 22:11:05 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2002/09/27 22:10:34 cjep Exp $
 #
 
 COMMENT=	Shells
 
+SUBDIR+=	ast-ksh
 SUBDIR+=	bash2
 SUBDIR+=	bash2-doc
 SUBDIR+=	es
