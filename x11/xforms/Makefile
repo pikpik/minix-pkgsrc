@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2000/09/03 23:36:49 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2000/09/27 01:49:34 fredb Exp $
 #
 
 DISTNAME=       bxform-088
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://world.std.com/~xforms/
+
+LICENSE=	fee-based-commercial-use
 
 .if (${MACHINE_ARCH} == "arm32")
 ARCH_SUBDIR=    netBSD-arm
