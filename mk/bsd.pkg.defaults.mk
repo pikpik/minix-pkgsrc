@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.233 2004/04/21 21:09:32 cube Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.234 2004/04/22 15:58:26 seb Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1747,12 +1747,6 @@ PURE_FTPD_USE_VIRTUAL_CHROOT?=	NO
 # Add support for GSSAPI.
 # Possible: YES, not defined
 # Default: not defined
-
-PRIV_CONF_DIR?=${LOCALBASE}/etc
-# Specify the parent of the directory for pkgsrc/security/priv
-# package's configuration data.
-# Possible: Any valid directory
-# Default: ${LOCALBASE}/etc
 
 #PROCMAIL_MAILSPOOLHOME=.MailBox
 # To default user mailboxes to their home directory,
