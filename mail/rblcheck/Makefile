@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/04/22 22:18:10 zuntum Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/29 11:03:56 wiz Exp $
 # FreeBSD: ports/mail/rblcheck/Makefile,v 1.6 1999/08/25 06:50:47 obrien Exp
 #
 
@@ -12,6 +12,8 @@ HOMEPAGE=	http://rblcheck.sourceforge.net/
 COMMENT=	Command-line interface to Paul Vixie's RBL filter
 
 DOCS=		BUGS CHANGES CREDITS INSTALL PLATFORMS TODO
+
+USE_BUILDLINK3=	YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rblcheck ${PREFIX}/bin
