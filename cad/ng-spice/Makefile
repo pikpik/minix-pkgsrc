@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/12/02 00:06:40 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.24 2004/12/02 13:33:32 dmcmahill Exp $
 #
 
 DISTNAME=	ng-spice-rework-15c
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngspice/}
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://ngspice.sourceforge.net/
 COMMENT=	Next generation circuit simulation program
-
-CONFLICTS=	spice-[0-9]*
 
 WRKSRC=			${WRKDIR}/ng-spice-rework-15
 USE_BUILDLINK3=		YES
