@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/02/18 13:43:26 tv Exp $
+# $NetBSD: Makefile,v 1.14 1999/03/06 09:05:17 tron Exp $
 #
 
 DISTNAME=		texinfo-3.12
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-catgets
 
 .if exists(/usr/bin/install-info)
-IGNORE=			"included with your NetBSD distribution"
+IGNORE=			"is included with your NetBSD distribution"
 .endif
 
 post-patch:
