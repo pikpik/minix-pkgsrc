@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/lintpkgsrc
-bin/portlint
-bin/plist-clash
-man/man1/portlint.1

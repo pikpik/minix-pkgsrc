@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 1998/06/11 11:32:40 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/18 15:44:13 agc Exp $
 #
 
 DISTNAME=		portlint-1.64
 CATEGORIES=		devel
+INFO_URL=		http://www.netbsd.org/Documentation/netbsd/Packages.txt
 MASTER_SITES=		ftp://ftp.foretune.co.jp/pub/tools/portlint/
 EXTRACT_SUFX=		.shar
 
