@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.144 2002/06/04 17:48:36 cjep Exp $
+# $NetBSD: Makefile,v 1.145 2002/06/09 11:09:14 taca Exp $
 #
 
 COMMENT=	System utilities
@@ -71,6 +71,7 @@ SUBDIR+=	mgm
 #SUBDIR+=	mkisofs			# currently part of cdrecord
 SUBDIR+=	mksunbootcd
 SUBDIR+=	mtools
+SUBDIR+=	mtoolsfm
 SUBDIR+=	osname
 SUBDIR+=	p5-Unix-Syslog
 SUBDIR+=	pcvt-utils
