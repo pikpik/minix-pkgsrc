@@ -1,7 +1,7 @@
 $NetBSD$
 
---- pop3d-ssl.rc.in.orig	Sun Jan 28 13:52:49 2001
-+++ pop3d-ssl.rc.in
+--- pop3d.rc.in.orig	Sun Jul 29 20:02:32 2001
++++ pop3d.rc.in
 @@ -21,11 +21,6 @@
  		LIBAUTHMODULES="$LIBAUTHMODULES @libexecdir@/authlib/$f"
  	done
@@ -12,12 +12,12 @@ $NetBSD$
 -	fi
 -
  	@SETENV@ - @SHELL@ -c " . @sysconfdir@/pop3d ; \
- 		. @sysconfdir@/pop3d-ssl ; \
- 		POP3_TLS=1; export POP3_TLS; \
+ 				. @sysconfdir@/pop3d-ssl ; \
+ 		POP3_STARTTLS=$POP3DSTARTTLS ; export POP3_STARTTLS ; \
 @@ -44,10 +39,6 @@
  	;;
  stop)
- 	@libexecdir@/couriertcpd -pid=$SSLPIDFILE -stop
+ 	@libexecdir@/couriertcpd -pid=$PIDFILE -stop
 -	if test -x ${libexecdir}/authlib/authdaemond
 -	then
 -		${libexecdir}/authlib/authdaemond stop

@@ -1,13 +1,27 @@
 $NetBSD$
 
---- authlib/configure.orig	Sat Nov 24 14:39:36 2001
-+++ authlib/configure
-@@ -2689,8 +2689,6 @@
- 	STATIC_LIST="authldap_info $STATIC_LIST"
- 	LIBAUTH="$LIBAUTH libauth-authldap.a"
- 	echo authldaprc.dist >>authconfiglist
--else
--	authldaprc=""
- fi
+--- imapd-ssl.rc.in.orig	Thu Mar 15 22:36:47 2001
++++ imapd-ssl.rc.in
+@@ -21,11 +21,6 @@
+ 		LIBAUTHMODULES="$LIBAUTHMODULES @libexecdir@/authlib/$f"
+ 	done
  
- 
+-	if test -x ${libexecdir}/authlib/authdaemond
+-	then
+-		@SETENV@ - ${libexecdir}/authlib/authdaemond start
+-	fi
+-
+ 	ulimit -d $IMAP_ULIMITD
+ 	@SETENV@ - @SHELL@ -c " . @sysconfdir@/imapd ; \
+ 		. @sysconfdir@/imapd-ssl ; \
+@@ -45,10 +40,6 @@
+ 	;;
+ stop)
+ 	@libexecdir@/couriertcpd -pid=$SSLPIDFILE -stop
+-	if test -x ${libexecdir}/authlib/authdaemond
+-	then
+-		${libexecdir}/authlib/authdaemond stop
+-	fi
+ 	;;
+ esac
+ exit 0

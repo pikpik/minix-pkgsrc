@@ -1,11 +1,11 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: courierimaps.sh,v 1.3 2002/01/02 22:19:39 jlam Exp $
 #
 # Courier IMAP/SSL services daemon
 #
 # PROVIDE: courierimaps
-# REQUIRE: DAEMON
+# REQUIRE: authdaemond
 
 if [ -e /etc/rc.subr ]
 then
