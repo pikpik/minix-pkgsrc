@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2002/09/04 12:48:36 tron Exp $
+# $NetBSD: Makefile,v 1.85 2002/09/10 16:06:44 wiz Exp $
 
 DISTNAME=		mutt-1.4i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -52,7 +52,12 @@ CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=	--without-ssl
 .endif
 
-BUILD_DEFS+=		MUTT_USE_NCURSES MUTT_USE_SLANG MUTT_USE_SSL
+.if defined(USE_SASL) && ${USE_SASL} == "YES"
+.include "../../security/cyrus-sasl/buildlink2.mk"
+CONFIGURE_ARGS+=	--with-sasl=${BUILDLINK_PREFIX.cyrus-sasl}
+.endif
+
+BUILD_DEFS+=		MUTT_USE_NCURSES MUTT_USE_SLANG MUTT_USE_SSL USE_SASL
 MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 EGDIR=			${PREFIX}/share/doc/mutt/samples
