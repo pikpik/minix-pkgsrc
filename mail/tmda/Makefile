@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2002/08/31 23:08:40 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/21 23:46:53 jlam Exp $
 #
 
-DISTNAME=	tmda-0.61
+DISTNAME=	tmda-0.63
 CATEGORIES=	mail python
 MASTER_SITES=	http://tmda.net/releases/ \
 		http://tmda.net/releases/old/
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	schmonz@netbsd.org
 HOMEPAGE=	http://tmda.net/
 COMMENT=	Python-based SPAM reduction system
+
+PYTHON_VERSIONS_ACCEPTED=	22 21
 
 PY_PATCHPLIST=		# defined
 PYTHON_PATCH_SCRIPTS=	${TMDA_PROGRAMS}
@@ -51,6 +53,10 @@ do-install:
 
 	${INSTALL_SCRIPT_DIR} ${PREFIX}/${PYSITELIB}/TMDA
 	${INSTALL_SCRIPT} ${WRKSRC}/TMDA/*.py* ${PREFIX}/${PYSITELIB}/TMDA
+
+	${INSTALL_SCRIPT_DIR} ${PREFIX}/${PYSITELIB}/TMDA/pythonlib/email
+	${INSTALL_SCRIPT} ${WRKSRC}/TMDA/pythonlib/email/*.py* \
+		${PREFIX}/${PYSITELIB}/TMDA/pythonlib/email
 
 	${INSTALL_DATA_DIR} ${PREFIX}/${SHAREDIR}
 	${INSTALL_DATA} ${WRKSRC}/templates/*.txt ${PREFIX}/${SHAREDIR}
