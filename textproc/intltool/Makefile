@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.10 2003/08/17 19:47:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/12/03 02:27:11 xtraeme Exp $
 #
 
-DISTNAME=		intltool-0.27.2
+DISTNAME=		intltool-0.28
 CATEGORIES=		textproc devel gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/intltool/0.27/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/intltool/0.28/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		jmmv@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Toolbox for internationalisation
+
+DEPENDS=		p5-XML-Parser>=2.31nb1:../../textproc/p5-XML-Parser
 
 CONFLICTS=		xml-i18n-tools<=0.9
 
