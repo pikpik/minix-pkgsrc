@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.post,v 1.1 2001/05/05 17:24:14 dmcmahill Exp $
+@comment $NetBSD: PLIST.pre,v 1.2 2001/06/26 11:09:29 wiz Exp $
 bin/wfcmgr
 bin/wfica
 lib/ICAClient/Npica

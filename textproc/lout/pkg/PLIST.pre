@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST.pre,v 1.2 1998/11/12 23:51:12 frueauf Exp $
-bin/lout
-bin/prg2lout
-man/man1/lout.1
-man/man1/prg2lout.1
