@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 14:17:42 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/06 21:59:59 jwise Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 
 PKGNAME=		odbc-${DISTNAME}
 
 COMMENT=		ODBC interface to PostgreSQL
+MAINTAINER=		jwise@netbsd.org
 
 DEPENDS+=		postgresql-${PG_VERS}:../../databases/postgresql
 
