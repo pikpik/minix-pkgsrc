@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2003/11/12 01:31:50 salo Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/12 17:29:38 xtraeme Exp $
 #
 
-DISTNAME=		yelp-2.2.2
-PKGREVISION=		2
+DISTNAME=		yelp-2.4.2
 CATEGORIES=		misc
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.2/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.4/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		xtraeme@NetBSD.org
@@ -20,10 +19,9 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--with-html-widget=gtkhtml2
-
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/libgnomeui/buildlink2.mk"
