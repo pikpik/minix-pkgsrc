@@ -1,9 +1,9 @@
-/*	$NetBSD: pkgdb.c,v 1.8 2003/03/16 19:44:10 jschauma Exp $	*/
+/*	$NetBSD: pkgdb.c,v 1.10 2003/03/17 15:50:11 jschauma Exp $	*/
 
 #if 0
 #include <sys/cdefs.h>
 #ifndef lint
-__RCSID("$NetBSD: pkgdb.c,v 1.8 2003/03/16 19:44:10 jschauma Exp $");
+__RCSID("$NetBSD: pkgdb.c,v 1.10 2003/03/17 15:50:11 jschauma Exp $");
 #endif
 #endif
 
@@ -196,7 +196,7 @@ pkgdb_dump(void)
 		}
 		pkgdb_close();
 	}
-#endif
+#endif /* HAVE_DBOPEN */
 }
 
 /*
