@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/02/29 23:31:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/29 11:34:45 wiz Exp $
 #
 
 DISTNAME=	htdig-3.1.5
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.htdig.org/files/ \
 		ftp://ftp.htdig.org/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.htdig.org/
+HOMEPAGE=	http://htdig.sourceforge.net/
 
 DEPENDS+=	db-2.7.7:../../databases/db
 
