@@ -1,0 +1,4 @@
+@comment $NetBSD$
+etc/mailer.conf.mini_sendmail
+man/man8/mini_sendmail.8
+sbin/mini_sendmail
