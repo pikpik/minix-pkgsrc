@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/10/24 00:28:49 kei Exp $
+# $NetBSD: Makefile,v 1.10 2001/11/29 01:12:45 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
@@ -35,7 +35,7 @@ do-install:
 		-C ${PREFIX}/share/texmf \
 		-f ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES}
 	@cd ${PREFIX}/share/texmf/source/latex/base && \
-	  ${PATCH} < ${EXTRA_PATCH} && \
+	  ${PATCH} ${_PATCH_BACKUP_ARG} .orig < ${EXTRA_PATCH} && \
 	  ${RM} latex.ltx.orig
 
 .include "../../mk/bsd.pkg.mk"
