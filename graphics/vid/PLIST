@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/vid
+${DOCDIR}/README
+@dirrm ${DOCDIR}
