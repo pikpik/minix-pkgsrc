@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/12/31 13:15:22 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1999/01/30 23:18:45 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/11/18 17:35:16 vanilla Exp
 #
 
@@ -12,10 +12,11 @@ HOMEPAGE=	http://glade.pn.org/
 
 BUILD_DEPENDS+=	xgettext:../../devel/gettext
 BUILD_DEPENDS+=	msgfmt:../../devel/gettext
-DEPENDS+=	gtk+-1.0.6:../../x11/gtk10
+DEPENDS+=	gtk10-1.0.6:../../x11/gtk10
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
+CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
+		GTK_CONFIG="${X11BASE}/bin/gtk10-config"
 USE_X11BASE=	yes
 
 post-install:
