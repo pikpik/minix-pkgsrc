@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/09/30 16:35:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/03 11:44:39 wiz Exp $
 #
 
-DISTNAME=	dc_gui-0.62
+DISTNAME=	dc_gui-0.63
 CATEGORIES=	net
 MASTER_SITES=	http://www.ac2i.tzo.com/dctc/
 
@@ -9,7 +9,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ac2i.tzo.com/dctc/
 COMMENT=	graphical user interface for DCTC
 
-DEPENDS+=	dctc>=0.83.5:../../net/dctc
+DEPENDS+=	dctc>=0.83.6:../../net/dctc
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
