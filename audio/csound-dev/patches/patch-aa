@@ -25,7 +25,7 @@ $NetBSD$
  DEFINES = -DWINDOWS -DSFIRCAM -DSYS5 -DLINUX -DHAVE_TERMIOS_H		\
  	  -DIV_VERSION -DPIPES -DMACROS -DHAVE_FLTK -D_REENTRANT	\
 -	  -DHAVE_SSTREAM -DMYFLT=float
-+	  -DHAVE_SSTREAM -DMYFLT=float -DBSD -DDEVOSSSOUND="\"$(DEVOSSSOUND)\""
++	  -DHAVE_SSTREAM -DMYFLT=float -DDEVOSSSOUND="\"$(DEVOSSSOUND)\""
  # choose any of -
  #	-DSYS5		invoke System V headers, e.g. 'string.h' for 'strings.h'
  #	-DHAVE_SSTREAM	include <sstream> header from C++ sources, instead of
