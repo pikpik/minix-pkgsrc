@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/16 17:21:34 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/08 05:25:12 snj Exp $
 #
 
 DISTNAME=	psycopg-1.1.11
@@ -15,6 +15,7 @@ CONFIGURE_ARGS+= --with-python=${PYTHONBIN}
 CONFIGURE_ARGS+= \
  --with-postgres-includes=${BUILDLINK_PREFIX.postgresql-lib}/include/postgresql\
  --with-postgres-libraries=${BUILDLINK_PREFIX.postgresql-lib}/lib
+# XXX: following comment still true for buildlink3?
 # XXX ${PYSITELIB}/... doesn't get transformed by buildlink2
 CONFIGURE_ARGS+= --with-mxdatetime-includes=${BUILDLINK_DIR}/include
 ALL_TARGET=	default
