@@ -1,12 +1,12 @@
 $NetBSD$
 
---- tcldgl/demo/Makefile.am.orig	Thu May  4 15:12:32 2000
+--- tcldgl/demo/Makefile.am.orig	Wed May 15 23:55:31 2002
 +++ tcldgl/demo/Makefile.am
 @@ -2,7 +2,7 @@
  
  AUTOMAKE_OPTIONS = 1.4
  
--demodir = $(libdir)/@PACKAGE@/demo
+-demodir = $(datadir)/@PACKAGE@/demo
 +demodir = $(prefix)/share/examples/@PACKAGE@
  demo_SCRIPTS = dge
  demo_DATA = dge.README dge.example1.dot  dge.example2.dot
