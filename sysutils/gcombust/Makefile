@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2002/10/21 15:16:49 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2003/01/15 07:48:06 rh Exp $
 #
 
 DISTNAME=		gcombust-0.1.53
+PKGREVISION=		1
 CATEGORIES=		x11 sysutils
 MASTER_SITES=		${HOMEPAGE}
 
@@ -18,5 +19,6 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
 .include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../misc/gnome1-dirs/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
