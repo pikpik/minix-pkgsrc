@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2001/10/17 06:10:08 tron Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/26 16:02:01 taya Exp $
 
-DISTNAME=	galeon-0.12.5
+DISTNAME=	galeon-0.12.6
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=galeon/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	taya@netbsd.org
 HOMEPAGE=	http://galeon.sourceforge.net/
 COMMENT=	GNOME web browser based on gecko (mozilla rendering engine)
 
