@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 #
 # Handle registration of Info files; used by texinfo.mk.
 #
