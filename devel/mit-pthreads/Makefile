@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/11/05 17:16:40 explorer Exp $
+# $NetBSD: Makefile,v 1.23 1999/11/06 07:37:34 explorer Exp $
 #
 
 DISTNAME=		pthreads-1_60_beta6
@@ -15,6 +15,8 @@ ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm32 NetBSD-*-i386 \
 HAS_CONFIGURE=		yes
 MAKE_ENV+=		NOLINT=1 NOPROFILE=1 OBJECT_FMT=${OBJECT_FMT}
 CONFIGURE_ARGS+=	--prefix=${PREFIX}/pthreads
+
+PATCH_FUZZ_FACTOR=
 
 post-patch:
 	@${RM} ${WRKSRC}/include/endian.h
