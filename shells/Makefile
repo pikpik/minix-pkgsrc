@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/05/12 09:40:57 agc Exp $
-# FreeBSD Id: Makefile,v 1.13 1997/01/03 00:40:55 max Exp
+# $NetBSD: Makefile,v 1.7 2000/11/02 21:53:09 tron Exp $
 #
 
     SUBDIR += bash2

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.78 2000/11/28 20:33:12 tv Exp $
-# FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
+# $NetBSD: Makefile,v 1.79 2000/12/04 13:40:47 hubertf Exp $
 #
 
     SUBDIR += amanda

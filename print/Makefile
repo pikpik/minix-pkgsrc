@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2000/12/08 16:36:53 jlam Exp $
-# FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
+# $NetBSD: Makefile,v 1.47 2000/12/08 16:57:58 jlam Exp $
 #
 
     SUBDIR += LPRng

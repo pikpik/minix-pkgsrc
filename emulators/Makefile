@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2000/11/09 16:44:17 wiz Exp $
-# FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
+# $NetBSD: Makefile,v 1.42 2000/12/06 23:29:53 wiz Exp $
 #
 
     SUBDIR += atari800

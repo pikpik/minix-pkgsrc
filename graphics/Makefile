@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2000/12/03 15:11:45 wiz Exp $
-# FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
+# $NetBSD: Makefile,v 1.108 2000/12/05 00:16:55 hubertf Exp $
 #
 
     SUBDIR += GMT
