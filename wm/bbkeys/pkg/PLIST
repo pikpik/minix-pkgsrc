@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/bbkeys
+bin/bbkeysConfigC
+share/bbtools/README.bbkeys
+share/bbtools/bbkeys.bb
+share/bbtools/bbkeys.nobb
+@dirrm share/bbtools
