@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2002/11/11 05:28:07 schmonz Exp $
+# $NetBSD: Makefile,v 1.11 2002/11/14 04:25:31 kim Exp $
 #
 
-DISTNAME=	tmda-0.64
+DISTNAME=	tmda-0.65
 CATEGORIES=	mail python
 MASTER_SITES=	http://tmda.net/releases/ \
 		http://tmda.net/releases/old/
@@ -11,7 +11,7 @@ MAINTAINER=	schmonz@netbsd.org
 HOMEPAGE=	http://tmda.net/
 COMMENT=	Python-based SPAM reduction system
 
-PYTHON_VERSIONS_ACCEPTED=	22
+PYTHON_VERSIONS_ACCEPTED=	22 21
 
 PY_PATCHPLIST=		# defined
 PYTHON_PATCH_SCRIPTS=	${TMDA_PROGRAMS}
@@ -66,6 +66,8 @@ do-install:
 		${INSTALL_DATA} ${WRKSRC}/$${f} ${PREFIX}/${DOCDIR}; \
 	done
 
+	# the cgi directory currently has nothing
+	${RM} -rf ${WRKSRC}/contrib/cgi
 	${INSTALL_DATA_DIR} ${PREFIX}/${CONTRIBDIR}
 	${INSTALL_DATA} ${WRKSRC}/contrib/* ${PREFIX}/${CONTRIBDIR}
 
