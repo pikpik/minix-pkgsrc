@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.40 2002/12/03 20:53:41 agc Exp $
+# $NetBSD: defs.SunOS.mk,v 1.41 2002/12/03 21:13:38 agc Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -107,6 +107,10 @@ _PATCH_BACKUP_ARG= 	-V simple -z	# switch to patch(1) for backup suffix
 _PREFORMATTED_MAN_DIR=	man		# directory where catman pages are
 _USE_GNU_GETTEXT=	yes		# Use GNU gettext
 _USE_RPATH=		yes		# add rpath to LDFLAGS
+
+# Solaris has /usr/include/iconv.h, but it's not GNU iconv, so mark it
+# incompatible.
+_INCOMPAT_ICONV=       SunOS-*-*
 
 .if !defined(DEBUG_FLAGS)
 _STRIPFLAG_CC?=		-s	# cc(1) option to strip
