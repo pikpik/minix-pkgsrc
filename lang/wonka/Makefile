@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/10 08:32:20 jmc Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/10 13:07:25 skrll Exp $
 #
 
 DISTNAME=	wonka-src-0.9.5-release
@@ -41,13 +41,13 @@ SEDFILES=	\
 	${WRKSRC}/Configuration/cpu/x86
 
 post-extract:
-	${MKDIR} -p ${WRKSRC}/class/doclet/com/acunia/doclet
-	${SED}	-e "s|@PREFIX@|${PREFIX}|g"				\
+	@${MKDIR} -p ${WRKSRC}/class/doclet/com/acunia/doclet
+	@${SED}	-e "s|@PREFIX@|${PREFIX}|g"				\
 		${FILESDIR}/pkgsrc 					\
 		> ${WRKSRC}/Configuration/wonka/pkgsrc
 
 post-patch:
-	for file in ${SEDFILES}; do					\
+	@for file in ${SEDFILES}; do					\
 		${SED}	-e "s|@PREFIX@|${PREFIX}|g"			\
 			-e "s|@CC@|${CC}|g"				\
 			-e "s|@LD@|${LD}|g"				\
