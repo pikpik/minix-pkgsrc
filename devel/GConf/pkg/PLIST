@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/08/30 06:19:08 rh Exp $
 bin/gconf-config
 bin/gconf-config-1
 bin/gconfd-1
@@ -63,3 +63,5 @@ share/oaf/gconfd-1.oafinfo
 @dirrm etc/gconf
 lib/GConf/1/libgconfbackend-xml.so
 lib/GConf/1/libgconfbackend-xml.so.0
+@exec test %D = ${LOCALBASE} || ln -s %D/share/aclocal/gconf-1.m4 ${LOCALBASE}/share/aclocal/gconf-1.m4
+@unexec test %D = ${LOCALBASE} || rm ${LOCALBASE}/share/aclocal/gconf-1.m4
