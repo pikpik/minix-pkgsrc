@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/04/10 01:28:27 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 22:54:56 grant Exp $
 #
 
 DISTNAME=	xt
@@ -15,7 +15,7 @@ DEPENDS+=	XP-[0-9]*:../../textproc/xp
 
 EXTRACT_ONLY=	# empty
 USE_JAVA=	run
-USE_BUILDLINK2=
+USE_BUILDLINK3= YES
 NO_CONFIGURE=
 NO_BUILD=
 
