@@ -1,0 +1,4 @@
+@comment $NetBSD$
+@dirrm share/doc/jisx0208fonts
+@exec %D/bin/mkfontdir %D/lib/X11/fonts/local
+@unexec %D/bin/mkfontdir %D/lib/X11/fonts/local
