@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1325 2003/12/23 11:14:20 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1326 2003/12/23 18:27:24 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -2654,7 +2654,7 @@ real-su-install: ${MESSAGE}
 	${ECHO} "";							\
 	${CAT} ${MESSAGE};						\
 	${ECHO} "") |							\
-	mail -s"Package ${PKGNAME} installed" ${PKGSRC_MESSAGE_RECIPIENTS}
+	${MAIL} -s"Package ${PKGNAME} installed" ${PKGSRC_MESSAGE_RECIPIENTS}
 .  endif
 .endif
 .if !defined(NO_PKG_REGISTER)
