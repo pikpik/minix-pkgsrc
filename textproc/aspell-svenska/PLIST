@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/aspell/sv.multi
+lib/aspell/sv.rws
+lib/aspell/svenska.alias
+lib/aspell/swedish.alias
+share/aspell/sv.dat
+share/aspell/sv_phonet.dat
