@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/13 13:53:22 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 22:53:48 grant Exp $
 #
 
 DISTNAME=	ROX-Session-0.1.14
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://rox.sourceforge.net/
-COMMENT=	very simple session manager
+COMMENT=	Very simple session manager
 
 DEPENDS+=	rox>=1.2.0nb2:../../sysutils/rox
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/13 13:53:37 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:54:54 grant Exp $
 
 DISTNAME=	urlview-0.9
 PKGREVISION=	1
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/contrib/ \
 		ftp://uiarchive.cso.uiuc.edu/pub/packages/mail/mutt/contrib/
 
 MAINTAINER=	tron@NetBSD.org
-COMMENT=	extract URLs from text files and display them in a menu
+COMMENT=	Extract URLs from text files and display them in a menu
 
 GNU_CONFIGURE=	yes
 USE_BUILDLINK2=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:16:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:59 grant Exp $
 #
 
 DISTNAME=	xmeter-1.15
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=misdirected/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	#
-COMMENT=	distributed system load meter for X11
+COMMENT=	Distributed system load meter for X11
 
 USE_X11BASE=	yes
 USE_IMAKE=	yes

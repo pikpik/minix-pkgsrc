@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:42:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:53:53 grant Exp $
 #
 
 DISTNAME=	sysgen
@@ -9,7 +9,7 @@ MASTER_SITES=	http://ox.compsoc.net/~dankolb/sysgen/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	abs@NetBSD.org
-COMMENT=	assign DEC Qbus or UNIBUS standard CSR and vector addresses
+COMMENT=	Assign DEC Qbus or UNIBUS standard CSR and vector addresses
 
 ALL_TARGET=	sysgen
 

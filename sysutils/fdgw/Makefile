@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/04/19 10:34:21 wennmach Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/07 02:39:06 schmonz Exp $
 #
 
 DISTNAME=	fdgw-20020130
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.fml.org/pub/fdgw/source/
 
 MAINTAINER= 	fukachan@fml.org
 HOMEPAGE=	http://www.fml.org/software/fdgw/
-COMMENT= 	toolkit to build a one-floppy NetBSD system
+COMMENT= 	Toolkit to build a one-floppy NetBSD system
 
 _IMG_SRC_DIR =	${WRKSRC}/image.${MACHINE_ARCH}
 _IMG_DST_DIR =	${PREFIX}/fdgw/${MACHINE_ARCH}

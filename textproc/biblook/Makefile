@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2003/04/21 14:22:57 jschauma Exp $
 #
 
 DISTNAME=	biblook
@@ -9,7 +9,7 @@ MASTER_SITES=	http://compgeom.cs.uiuc.edu/~jeffe/files/
 
 MAINTAINER=	seb@pbox.org
 HOMEPAGE=	http://compgeom.cs.uiuc.edu/~jeffe/biblook.html
-COMMENT=	indexing and searching tools for BibTeX bibliography databases
+COMMENT=	Indexing and searching tools for BibTeX bibliography databases
 
 .include "../../mk/bsd.prefs.mk"
 

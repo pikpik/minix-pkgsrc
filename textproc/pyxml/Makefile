@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/03/14 19:37:56 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 22:54:46 grant Exp $
 #
 
 DISTNAME=	PyXML-0.8.2
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyxml/}
 
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://pyxml.sourceforge.net/
-COMMENT=	collection of libraries to process XML with Python
+COMMENT=	Collection of libraries to process XML with Python
 
 CONFLICTS+=	PyXML-*
 USE_BUILDLINK2=	yes

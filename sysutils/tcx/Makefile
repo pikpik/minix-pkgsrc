@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/23 13:55:24 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:53:53 grant Exp $
 
 DISTNAME=	tcx-linux
 PKGNAME=	tcx-19940124
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ibiblio.unc.edu/pub/Linux/utils/compress/
 
 MAINTAINER=	packages@NetBSD.org
 #HOMEPAGE=	
-COMMENT=	transparently compress executables
+COMMENT=	Transparently compress executables
 
 WRKSRC=		${WRKDIR}/tcx
 

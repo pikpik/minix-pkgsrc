@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:40 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:54:45 grant Exp $
 
 DISTNAME=	HappyDoc_r2_1
 PKGNAME=	${PYPKGPREFIX}-HappyDoc-2.1
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=happydoc/}
 
 MAINTAINER=	shell@NetBSD.org
 HOMEPAGE=	http://happydoc.sf.net/
-COMMENT=	python tool to generate Python API documents
+COMMENT=	Python tool to generate Python API documents
 
 PYDISTUTILSPKG=	# defined
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}

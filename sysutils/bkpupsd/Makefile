@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/03/12 16:43:45 taca Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:28 grant Exp $
 #
 
 DISTNAME=	bkpupsd-2.1.2
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	# not exist
-COMMENT=	simple UPS daemon for BK-Pro, BK series and FREQUPS F series
+COMMENT=	Simple UPS daemon for BK-Pro, BK series and FREQUPS F series
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:21 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:53:47 grant Exp $
 #
 
 DISTNAME=	Edit-0.1.2
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://rox.sourceforge.net/
-COMMENT=	simple text editor for ROX
+COMMENT=	Simple text editor for ROX
 
 DEPENDS+=	rox-lib>=0.1.4:../../sysutils/rox-lib
 

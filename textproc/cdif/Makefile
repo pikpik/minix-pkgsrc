@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:16:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:54:10 grant Exp $
 #
 
 DISTNAME=		cdif-1.15
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
 EXTRACT_SUFX=		# empty
 
 MAINTAINER=		tech-pkg@NetBSD.org
-COMMENT=		word context diff
+COMMENT=		Word context diff
 
 LICENSE=		no-commercial-use
 
