@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:32:38 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:39 martti Exp $
 #
 
-DISTNAME=     	Inline-0.43
+DISTNAME=     	Inline-0.44
 PKGNAME=       	p5-${DISTNAME}
 SVR4_PKGNAME=	p5inl
 CATEGORIES=	devel perl5
