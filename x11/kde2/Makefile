@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/07/17 22:56:33 grant Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/15 08:08:53 wiz Exp $
 
 DISTNAME=	kde-2.2.2
 PKGREVISION=	7
@@ -15,7 +15,7 @@ DEPENDS+=	kdeaddons-2.2.2nb3:../../misc/kdeaddons2
 DEPENDS+=	kdeadmin-2.2.2nb5:../../misc/kdeadmin2
 DEPENDS+=	kdegames-2.2.2nb4:../../games/kdegames2
 DEPENDS+=	kdegraphics-2.2.2nb5:../../graphics/kdegraphics2
-DEPENDS+=	kdemultimedia-2.2.2nb4:../../audio/kdemultimedia2
+DEPENDS+=	kdemultimedia-2.2.2nb4:../../multimedia/kdemultimedia2
 DEPENDS+=	kdenetwork-2.2.2nb7:../../net/kdenetwork2
 DEPENDS+=	kdepim-2.2.2nb5:../../misc/kdepim2
 DEPENDS+=	kdetoys-2.2.2nb4:../../games/kdetoys2
