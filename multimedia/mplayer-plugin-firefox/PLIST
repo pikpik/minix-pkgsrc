@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/examples/mplayer-plugin-${BROWSER}/mplayerplug-in.conf
+share/examples/mplayer-plugin-${BROWSER}/mplayerplug-in.types
+lib/${BROWSER}/plugins/mplayerplug-in.so
+lib/${BROWSER}/plugins/mplayerplug-in.xpt
+@dirrm share/examples/mplayer-plugin-${BROWSER}
