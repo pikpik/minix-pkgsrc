@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/bdftops
 bin/font2c
 bin/gs
