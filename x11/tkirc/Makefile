@@ -1,12 +1,18 @@
+# New ports collection makefile for:    tkirc
+# Version required:     1.147
+# Date created:         1997/11/09
+# Whom:                 Hubert Feyrer <hubertf@netbsd.org>
+#
 # $NetBSD$
 
 DISTNAME=	tkirc-1.147
-DISTFILES=	tkirc1.147.tar.gz
 WRKSRC=		${WRKDIR}/tkirc
+CATEGORIES=	net x11
 MASTER_SITES=	ftp://ftp.informatik.uni-oldenburg.de/pub/tkirc/
+DISTFILES=	tkirc1.147.tar.gz
 
 MAINTAINER=	hubertf@netbsd.org
-CATEGORIES=	net x11
+
 RUN_DEPENDS=	irc:${PORTSDIR}/net/ircII \
 		wish8.0:${PORTSDIR}/x11/tk80
 
