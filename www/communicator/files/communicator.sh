@@ -1,8 +1,11 @@
 #!/bin/sh
 #
-# $NetBSD: communicator.sh,v 1.1.1.1 1999/02/22 07:44:48 abs Exp $
+# $NetBSD: communicator.sh,v 1.2 1999/06/18 23:14:17 abs Exp $
 #
 MOZILLA_HOME=@@MOZILLA_HOME@@ ;	export MOZILLA_HOME
-XNLSPATH=$MOZILLA_HOME/nls ;		export XNLSPATH
-XKEYSYMDB=$MOZILLA_HOME/XKeysymDB ;	export XKEYSYMDB
-exec $MOZILLA_HOME/netscape "$@"
+NS_PLUGINS_DIR=@@NS_PLUGINS_DIR@@;	export NS_PLUGINS_DIR
+XNLSPATH=${MOZILLA_HOME}/nls ;		export XNLSPATH
+XKEYSYMDB=${MOZILLA_HOME}/XKeysymDB ;	export XKEYSYMDB
+NPX_PLUGIN_PATH=${NS_PLUGINS_DIR}:${MOZILLA_HOME}/plugins:${HOME}/.netscape/plugins ;	export NPX_PLUGIN_PATH
+
+exec ${MOZILLA_HOME}/netscape "$@"
