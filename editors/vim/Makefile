@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2003/12/14 10:10:52 cjs Exp $
+# $NetBSD: Makefile,v 1.51 2003/12/14 10:14:28 wiz Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -25,6 +25,6 @@ post-install:
 		${LN} -s vim ${PREFIX}/bin/$$f;			\
 	done
 
-.include "../../devel/ncurses/buildlink2.mk"
-.include "../../converters/libiconv/buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
