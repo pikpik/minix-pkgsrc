@@ -1,4 +1,4 @@
-/*	$NetBSD: sha1hl.c,v 1.6 2000/07/05 11:35:36 ad Exp $	*/
+/*	$NetBSD: sha1hl.c,v 1.1.1.1 2001/03/06 11:21:05 agc Exp $	*/
 
 /* sha1hl.c
  * ----------------------------------------------------------------------------
@@ -12,6 +12,7 @@
 /* #include "namespace.h" */
 
 #include <sys/cdefs.h>
+#include <sys/fcntl.h>
 #include <sys/file.h>
 #include <sys/types.h>
 #include <sys/uio.h>
@@ -24,7 +25,7 @@
 #include <unistd.h>
 
 #if defined(LIBC_SCCS) && !defined(lint)
-__RCSID("$NetBSD: sha1hl.c,v 1.6 2000/07/05 11:35:36 ad Exp $");
+__RCSID("$NetBSD: sha1hl.c,v 1.1.1.1 2001/03/06 11:21:05 agc Exp $");
 #endif /* LIBC_SCCS and not lint */
 
 #ifndef _DIAGASSERT
