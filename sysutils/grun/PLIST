@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/grun
+man/man1/grun.1
+share/grun/gassoc
+share/grun/consfile
+@dirrm share/grun
