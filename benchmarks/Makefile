@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/03/19 17:25:10 jschauma Exp $
+# $NetBSD: Makefile,v 1.29 2003/04/11 17:08:46 cjep Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -8,6 +8,7 @@ SUBDIR+=	benchfft
 SUBDIR+=	bonnie
 SUBDIR+=	bonnie++
 SUBDIR+=	bytebench
+SUBDIR+=	dbench
 SUBDIR+=	dhrystone
 SUBDIR+=	fib
 SUBDIR+=	flops
