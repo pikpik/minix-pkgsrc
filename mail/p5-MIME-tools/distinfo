@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/12/06 08:17:36 rh Exp $
+$NetBSD$
 
-MD5 (MIME-tools-4.124.tar.gz) = 6a51a5efb05e97116b89aa978ca0e6df
+SHA1 (MIME-tools-4.124.tar.gz) = a89f9dd5988f6f0737d559bb24a03202951bb464
+Size (MIME-tools-4.124.tar.gz) = 267364 bytes

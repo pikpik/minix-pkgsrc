@@ -1,7 +1,9 @@
-$NetBSD: md5,v 1.5 2001/02/23 02:13:17 itojun Exp $
+$NetBSD$
 
-MD5 (cucipop-1.31.tar.gz) = e4dc7c3c6e3a4a83dde5cbbe21fee5f8
-MD5 (cucipop-1.31-v6-20010223.diff.gz) = bcb0ea319d82624966fd4a80adbed358
+SHA1 (cucipop-1.31.tar.gz) = d9b5dc2960e96ad1ee63f0a6f8879165f4477434
+Size (cucipop-1.31.tar.gz) = 35508 bytes
+SHA1 (cucipop-1.31-v6-20010223.diff.gz) = 09dd955783237ea83b8b1052e464cf80bf6410e4
+Size (cucipop-1.31-v6-20010223.diff.gz) = 1713 bytes
 SHA1 (patch-aa) = baf7a7a262d8d50d404bcc1eed9fe8da72a7b927
 SHA1 (patch-ab) = 2f021113d2634065034065aba0afd06b7a403cb1
 SHA1 (patch-ac) = a44452d25e33d3090cdf85ab6d76405fcbf28746

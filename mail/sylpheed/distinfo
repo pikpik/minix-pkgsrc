@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/11 02:23:26 kei Exp $
+$NetBSD$
 
-MD5 (sylpheed-0.3.23.tar.bz2) = 6a21f5a501505da94c14d3a5c9f74989
+SHA1 (sylpheed-0.3.23.tar.bz2) = 7e5748c032f29bcd14ba1e22b5a64394eaf2e945
+Size (sylpheed-0.3.23.tar.bz2) = 350724 bytes
