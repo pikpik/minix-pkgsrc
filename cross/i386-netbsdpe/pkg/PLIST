@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/${TARGET_ARCH}-dlltool
+bin/${TARGET_ARCH}-windres
+${TARGET_ARCH}/bin/dlltool
+${TARGET_ARCH}/bin/windres
+${TARGET_ARCH}/include/assert.h
