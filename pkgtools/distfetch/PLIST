@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/distfetch
+man/man1/distfetch.1
+share/examples/distfetch/distfetch.conf
+@dirrm share/examples/distfetch
