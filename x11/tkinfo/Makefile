@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 1998/04/24 09:20:39 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/08/20 15:17:38 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.15 1997/12/16 09:26:12 tg Exp
 #
 
 DISTNAME=	tkinfo-1.5
-CATEGORIES=	misc tk80
+CATEGORIES=	x11 tk80
 MASTER_SITES=	http://www.math.ucsb.edu/~boldt/tkinfo/ \
 		http://math-www.uni-paderborn.de/~axel/tkinfo/
 

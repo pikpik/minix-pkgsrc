@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 1998/06/21 03:54:34 tv Exp $
+# $NetBSD: Makefile,v 1.5 1998/06/22 13:09:50 agc Exp $
 #
 
 DISTNAME=       depot-5.14
-CATEGORIES=	misc
+CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.andrew.cmu.edu/pub/depot/alpha/
 
 MAINTAINER=	packages@netbsd.org
