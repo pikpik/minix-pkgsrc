@@ -1,13 +1,13 @@
 $NetBSD$
 
---- libibex/Makefile.am.orig	Sun Sep 23 23:38:35 2001
-+++ libibex/Makefile.am	Sun Sep 23 23:38:42 2001
-@@ -9,8 +9,6 @@
- 	disktail.c \
- 	ibex_block.c
+--- libibex/Makefile.in.orig	Wed Oct  3 00:14:00 2001
++++ libibex/Makefile.in
+@@ -189,7 +189,7 @@
+ libibex_la_SOURCES =  	wordindexmem.c 	block.c ibex.h 	hash.c 	disktail.c 	ibex_block.c
+ 
  
 -libibex_la_LDFLAGS = -static
--
- libibex_la_LIBADD = \
- 	$(GAL_LIBS)
++libibex_la_LDFLAGS =
+ 
+ libibex_la_LIBADD =  	$(GAL_LIBS)
  
