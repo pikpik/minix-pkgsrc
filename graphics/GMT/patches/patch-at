@@ -11,7 +11,7 @@ $NetBSD$
  
  XSYSTEM_H	= x2sys.h
  XSYSTEM_C	= x2sys_datalist.c x2sys_cross.c
-@@ -18,24 +18,20 @@
+@@ -18,25 +18,21 @@
  
  #---------------------------------------------------------------
  
@@ -25,10 +25,9 @@ $NetBSD$
 +all:			libx2sys.la $(XSYSTEM)
  
  install:		all
- 			for i in $(XSYSTEM); do \
+-			for i in $(XSYSTEM); do \
 -				$(INSTALL) $$i$(EXE) $(bindir); \
-+				$(LIBTOOL) $(INSTALL_PROGRAM) $$i$(EXE) $(bindir); \
- 			done
+-			done
  			if [ ! -d $(libdir) ]; then \
  				mkdir -p $(libdir); \
  			fi
@@ -39,8 +38,12 @@ $NetBSD$
 -				fi; \
 +				$(LIBTOOL) $(INSTALL_DATA) libx2sys.la $(libdir); \
  			fi
++			for i in $(XSYSTEM); do \
++				$(LIBTOOL) $(INSTALL_PROGRAM) $$i$(EXE) $(bindir); \
++			done
  
  uninstall:	
+ 			for i in $(XSYSTEM); do \
 @@ -59,7 +55,7 @@
  			\rm -f *.a
  
