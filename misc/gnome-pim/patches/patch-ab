@@ -1,15 +1,13 @@
 $NetBSD$
 
---- configure.orig	Sat May 20 21:50:23 2000
-+++ configure
-@@ -6393,6 +6393,10 @@
- 
- 
- 
-+# Set DATADIRNAME to "${LOCALEBASE}"
-+DATADIRNAME="${LOCALEBASE}"
-+INTLDEPS=
-+INTLLIBS="-lintl"
- 
- trap '' 1 2 15
- cat > confcache <<\EOF
+--- aclocal.m4.orig	Sun May 21 01:50:15 2000
++++ aclocal.m4	Thu Nov  9 19:49:00 2000
+@@ -1439,7 +1439,7 @@
+ 		  [CATOBJEXT=.gmo
+ 		   DATADIRNAME=share],
+ 		  [CATOBJEXT=.mo
+-		   DATADIRNAME=lib])
++		   DATADIRNAME=${LOCALEBASE}])
+ 		INSTOBJEXT=.mo
+ 	      fi
+ 	    fi
