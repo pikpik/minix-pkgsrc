@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2002/04/27 11:31:24 rh Exp $
+# $NetBSD: Makefile,v 1.3 2002/05/12 01:16:49 rh Exp $
 #
 
-DISTNAME=		bonobo-activation-0.9.8
+DISTNAME=		bonobo-activation-1.0.2
 CATEGORIES=		devel gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=pre-gnome2/sources/bonobo-activation/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=2.0.0/sources/bonobo-activation/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
