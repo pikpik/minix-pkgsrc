@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2003/06/25 10:08:52 uebayasi Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/17 21:48:29 grant Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/09/11 03:54:53 fenner Exp
 #
 
 DISTNAME=	vicsrc-2.8
-PKGREVISION=	1
 PKGNAME=	${DISTNAME:S/src//}
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	mbone tk
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vic/
