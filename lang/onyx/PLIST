@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/onyx
 bin/onyx-${VERS}
 include/libonyx/libonyx.h
