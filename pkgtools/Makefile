@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2002/01/17 13:10:00 drochner Exp $
+# $NetBSD: Makefile,v 1.38 2002/04/29 11:04:37 rh Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -14,7 +14,6 @@ SUBDIR+=	gensolpkg
 SUBDIR+=	pkg_tarup
 SUBDIR+=	pkgchk
 SUBDIR+=	pkgconflict
-SUBDIR+=	pkgcvsupdate
 SUBDIR+=	pkgdep
 SUBDIR+=	pkgdiff
 SUBDIR+=	pkglint
