@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/03/04 19:41:07 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2002/04/01 04:14:36 sakamoto Exp $
 #
 
 DISTNAME=	jpnfont
@@ -11,6 +11,8 @@ DEPENDS+=	acroread-font-share-4.0:../../fonts/acroread-font-share
 
 WRKSRC=		${WRKDIR}/JPNKIT
 TAR_FILE=	${WRKSRC}/LANGJPN.TAR
+
+INTERACTIVE_STAGE=	fetch
 
 _FETCH_MESSAGE= \
 	${ECHO} "======================================================="; \

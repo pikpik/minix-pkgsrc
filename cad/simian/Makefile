@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/02/26 21:28:48 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/04 19:41:06 fredb Exp $
 #
 
 DISTNAME=	simian_12_98
@@ -19,6 +19,8 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/Simian/src
 ALL_TARGET=	simian
+
+INTERACTIVE_STAGE=	fetch
 
 _FETCH_MESSAGE= \
 	${ECHO} '======================================================='; \
