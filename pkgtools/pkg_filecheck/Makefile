@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/12/14 12:27:57 dillo Exp $
+# $NetBSD: Makefile,v 1.7 2003/12/18 14:28:08 grant Exp $
 #
 
 DISTNAME=		pkg_filecheck-0.1
@@ -31,7 +31,7 @@ do-build:
 	cd ${WRKSRC} \
 	    && ${CC} ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} \
 		-o pkg_filecheck pkg_filecheck.c \
-		${BUILDLINK_LIBS.db}
+		${BUILDLINK_LDFLAGS.db} ${BUILDLINK_LIBS.db}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/builddb.pl ${PREFIX}/bin/builddb
