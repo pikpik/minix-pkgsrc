@@ -1,5 +1,11 @@
 ==========================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.1.1.1 2001/02/01 12:31:43 agc Exp $
+
+Run
+	pkgsurvey
+
+to send a list of all your installed packages via mail to the people
+doing NetBSD pkgsrc works to help them keep the system at an optimum. 
 
 If the idea of divulging package or operating system version
 information is distasteful to you, or does not conform to your site's
