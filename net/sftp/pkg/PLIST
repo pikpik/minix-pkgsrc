@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/rsftp
+bin/sftp
+bin/sftpserv
+man/man1/sftp.1
+share/doc/README.sftp
