@@ -1,4 +1,4 @@
-#	$Id: KERN-LIVECD,v 1.1.1.1 2004/02/26 03:58:53 xtraeme Exp $
+#	$NetBSD$
 
 include "arch/i386/conf/std.i386"
 

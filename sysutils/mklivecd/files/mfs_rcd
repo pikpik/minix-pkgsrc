@@ -1,4 +1,4 @@
-# $Id: mfs_rcd,v 1.1.1.1 2004/02/26 03:58:56 xtraeme Exp $
+# $NetBSD$ 
 #
 # Mount mfs directories and unpack the required file
 # before anything.

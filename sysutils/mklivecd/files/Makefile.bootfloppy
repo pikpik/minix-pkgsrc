@@ -1,5 +1,4 @@
-#	$NetBSD: Makefile.bootfloppy,v 1.17 2003/10/08 04:25:43 lukem Exp $
-#	$Id: Makefile.bootfloppy,v 1.1.1.1 2004/02/26 03:58:58 xtraeme Exp $
+#	$NetBSD: Makefile.bootfloppy,v 1.1.1.1 2004/02/26 03:58:58 xtraeme Exp $
 
 # Makefile snippet to create a set of USTAR floppies
 #
