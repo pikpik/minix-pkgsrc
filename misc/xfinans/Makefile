@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/02/08 23:48:39 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:57 agc Exp $
 #
 
 DISTNAME=		xfinans-5.9
@@ -9,7 +9,7 @@ MASTER_SITE_SUBDIR=	apps/financial/accounting
 
 MAINTAINER=		root@garbled.futureone.com
 
-RUN_DEPENDS=		gnuplot:${PORTSDIR}/graphics/gnuplot
+RUN_DEPENDS=		gnuplot:../../graphics/gnuplot
 
 USE_IMAKE=		yes
 
