@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/13 21:22:43 magick Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/13 21:28:42 magick Exp $
 
 DISTNAME=	xemacs-21.1.14
 PKGNAME=	xemacs-nox11-21.1.14
@@ -19,7 +19,7 @@ NOT_FOR_PLATFORM=	*-*-mips*	# fails purespace dumping
 
 CONFLICTS=	xemacs-[0-9]*
 
-PLIST_SRC=	${.CURDIR}/../xemacs/
+PLIST_SRC=	${.CURDIR}/../xemacs/PLIST
 DISTINFO_FILE=	${.CURDIR}/../xemacs/distinfo
 PATCHDIR=	${.CURDIR}/../xemacs/patches
 
