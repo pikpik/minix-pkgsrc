@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/scummvm
+man/man6/scummvm.6
