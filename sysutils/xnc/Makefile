@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2002/07/08 14:25:03 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2002/09/23 23:35:49 jlam Exp $
 
 DISTNAME=	xnc-4.4.7.src
 PKGNAME=	xnc-4.4.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://www.xnc.dubna.su/src/
 
@@ -21,7 +21,12 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xnc
 	${INSTALL_DATA} ${WRKSRC}/Docs/* ${PREFIX}/share/doc/xnc
 	${INSTALL_MAN_DIR} ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/yo-man/*.1 ${PREFIX}/man/man1/
+	for f in ives.1 xjpegroot.1 xnc.1 xnlaunch.1; \
+	do \
+		${INSTALL_MAN} ${WRKSRC}/yo-man/$$f ${PREFIX}/man/man1/; \
+	done
+	${INSTALL_MAN} ${WRKSRC}/yo-man/es.1 ${PREFIX}/man/man1/iedit.1
+	${INSTALL_MAN} ${WRKSRC}/yo-man/vs.1 ${PREFIX}/man/man1/iview.1
 
 .include "../../graphics/tiff/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
