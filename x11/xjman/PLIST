@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/doc/xjman/COPYRIGHT
+share/doc/xjman/COPYRIGHT.XJDP
+share/doc/xjman/README
+@dirrm share/doc/xjman
