@@ -1,9 +1,9 @@
 $NetBSD$
 
 diff -ru ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in ./xpcom/reflect/xptcall/src/md/unix/Makefile.in
---- ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sat Oct 27 16:38:10 2001
-+++ ./xpcom/reflect/xptcall/src/md/unix/Makefile.in	Thu Nov 22 12:31:19 2001
-@@ -247,6 +247,13 @@
+--- ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in	Thu Dec  6 19:51:45 2001
++++ ./xpcom/reflect/xptcall/src/md/unix/Makefile.in	Sat Dec 22 13:02:44 2001
+@@ -249,6 +249,13 @@
  CPPSRCS		:= xptcinvoke_sparc_netbsd.cpp xptcstubs_sparc_netbsd.cpp
  ASFILES		:= xptcinvoke_asm_sparc_netbsd.s xptcstubs_asm_sparc_netbsd.s
  endif
