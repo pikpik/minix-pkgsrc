@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/24 13:51:15 grant Exp $
-#
+# $NetBSD: Makefile,v 1.4 2004/02/27 07:37:04 xtraeme Exp $
 
 DISTNAME=	pnet-0.6.2
 PKGREVISION=	1
@@ -21,4 +20,5 @@ USE_BUILDLINK3=	yes
 
 INFO_FILES=	pnettools.info
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
