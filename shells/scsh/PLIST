@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2001/04/12 21:29:50 jtb Exp $
+@comment $NetBSD: PLIST,v 1.7 2001/10/02 11:07:16 seb Exp $
 bin/scsh
 include/scsh.h
 lib/scsh/big/array.scm
