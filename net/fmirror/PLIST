@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/fmirror
+man/man1/fmirror.1
+share/examples/fmirror/README
+share/examples/fmirror/sample.conf
+share/examples/fmirror/redhat.conf
+share/examples/fmirror/generic.conf
+@dirrm share/examples/fmirror
