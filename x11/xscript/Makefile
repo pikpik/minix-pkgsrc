@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:57:03 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:28:29 agc Exp $
 #
 
 DISTNAME=	xscript.tar
@@ -17,7 +17,7 @@ HOMEPAGE=	http://www.ee.ryerson.ca/~elf/xapps/Q-XVIII.html
 COMMENT=	X Window system script recording and playback
 
 WRKSRC=		${WRKDIR}/test-distrib/src
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_X11BASE=	YES
 USE_IMAKE=	YES
 
