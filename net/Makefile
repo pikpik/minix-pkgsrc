@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.377 2003/05/16 12:18:22 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.378 2003/05/17 02:04:14 dmcmahill Exp $
 #
 
 COMMENT=	Networking tools
@@ -220,6 +220,7 @@ SUBDIR+=	py-google
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-soappy
 SUBDIR+=	py-xmlrpclib
+SUBDIR+= 	pyslsk
 SUBDIR+=	qadsl
 SUBDIR+=	ra-pna-proxy
 SUBDIR+=	ra-rtsp-proxy
