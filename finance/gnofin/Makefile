@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 1999/10/27 11:05:21 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/13 22:39:33 wiz Exp $
 #
 
 DISTNAME=       gnofin-0.6.0
-CATEGORIES=	misc
+CATEGORIES=	finance
 MASTER_SITES=   ftp://jagger.berkeley.edu/pub/darin/gnofin/source/
 
 MAINTAINER=	mellon@isc.org
