@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/02/14 17:21:44 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2004/02/14 20:39:38 recht Exp $
 #
 
 DISTNAME=	mono-0.30.1
@@ -49,7 +49,7 @@ CONF_FILES+=	${EGDIR}/DefaultWsdlHelpGenerator.aspx \
 
 .if ${OPSYS} == "Linux"
 BUILD_DEFS+=	MONO_USE_NPTL
-.  if !empty(MONO_USE_NPTL:M[yY][eE][sS])
+.  if defined(MONO_USE_NPTL) && !empty(MONO_USE_NPTL:M[yY][eE][sS])
 # Enable support for NPTL
 CONFIGURE_ARGS+=	--with-nptl
 .  endif
