@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/10/07 17:41:51 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/09 07:11:00 tls Exp $
 
 DISTNAME=		suse_devel-6.3
 CATEGORIES=		emulators
@@ -9,6 +9,8 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.suse.com/
 
 DEPENDS+=		suse_base-6.3:../suse_base
+
+ONLY_FOR_PLATFORM=      NetBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		yes
