@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/03 19:22:23 xtraeme Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/12/30 22:58:08 cjep Exp $
 #
 # This Makefile fragment is included by packages that use gss.
 #
@@ -9,7 +9,7 @@
 GSS_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gss
-BUILDLINK_DEPENDS.gss?=		gss>=0.0.6
+BUILDLINK_DEPENDS.gss?=		gss>=0.0.6nb1
 BUILDLINK_PKGSRCDIR.gss?=		../../security/gss
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gss=gss
