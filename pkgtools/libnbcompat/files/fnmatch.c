@@ -1,4 +1,4 @@
-/*	$NetBSD: fnmatch.c,v 1.20 2003/08/07 16:42:48 agc Exp $	*/
+/*	$NetBSD: fnmatch.c,v 1.1 2004/08/06 16:55:09 jlam Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993, 1994
@@ -32,9 +32,7 @@
  * SUCH DAMAGE.
  */
 
-#if HAVE_CONFIG_H
 #include "nbcompat/nbconfig.h"
-#endif
 
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
@@ -44,7 +42,7 @@
 #if 0
 static char sccsid[] = "@(#)fnmatch.c	8.2 (Berkeley) 4/16/94";
 #else
-__RCSID("$NetBSD: fnmatch.c,v 1.20 2003/08/07 16:42:48 agc Exp $");
+__RCSID("$NetBSD: fnmatch.c,v 1.1 2004/08/06 16:55:09 jlam Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 
@@ -53,7 +51,7 @@ __RCSID("$NetBSD: fnmatch.c,v 1.20 2003/08/07 16:42:48 agc Exp $");
  * Compares a filename or pathname to a pattern.
  */
 
-#include "namespace.h"
+/* #include "namespace.h" */
 
 #include <assert.h>
 #include <ctype.h>

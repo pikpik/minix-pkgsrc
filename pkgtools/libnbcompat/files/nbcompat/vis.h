@@ -1,4 +1,4 @@
-/*	$NetBSD: vis.h,v 1.1.1.1 2003/03/31 05:03:07 grant Exp $	*/
+/*	$NetBSD: vis.h,v 1.1 2003/09/03 13:35:54 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993
@@ -35,8 +35,8 @@
  *	@(#)vis.h	8.1 (Berkeley) 6/2/93
  */
 
-#ifndef _VIS_H_
-#define	_VIS_H_
+#ifndef _NBCOMPAT_VIS_H_
+#define	_NBCOMPAT_VIS_H_
 
 /*
  * to select alternate encoding format
@@ -104,4 +104,4 @@ int	unvis (char *, int, int *, int)	__RENAME(__unvis13);
 #endif
 __END_DECLS
 
-#endif /* !_VIS_H_ */
+#endif /* !_NBCOMPAT_VIS_H_ */

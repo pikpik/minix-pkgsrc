@@ -1,4 +1,4 @@
-/*	$NetBSD: unvis.c,v 1.4 2003/09/01 15:31:21 jlam Exp $	*/
+/*	$NetBSD: unvis.c,v 1.5 2003/09/03 13:11:16 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993
@@ -29,9 +29,7 @@
  * SUCH DAMAGE.
  */
 
-#if HAVE_CONFIG_H
 #include "nbcompat/nbconfig.h"
-#endif
 
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
@@ -41,13 +39,13 @@
 #if 0
 static char sccsid[] = "@(#)unvis.c	8.1 (Berkeley) 6/4/93";
 #else
-__RCSID("$NetBSD: unvis.c,v 1.4 2003/09/01 15:31:21 jlam Exp $");
+__RCSID("$NetBSD: unvis.c,v 1.5 2003/09/03 13:11:16 jlam Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 
 #define __LIBC12_SOURCE__
 
-#include "namespace.h"
+/* #include "namespace.h" */
 #include <sys/types.h>
 
 #include <assert.h>

@@ -1,4 +1,4 @@
-/*	$NetBSD: statfs.c,v 1.5 2004/03/11 13:28:45 grant Exp $	*/
+/*	$NetBSD: statvfs.c,v 1.1 2004/08/06 16:55:09 jlam Exp $	*/
 
 /*-
  * Copyright (c) 2004 The NetBSD Foundation, Inc.
@@ -36,9 +36,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#if HAVE_CONFIG_H
 #include "nbcompat/nbconfig.h"
-#endif
 
 #if HAVE_STRING_H
 #include <string.h>	/* memcpy() */
