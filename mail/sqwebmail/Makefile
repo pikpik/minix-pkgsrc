@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/05/28 15:07:05 yyamano Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/18 21:15:13 jlam Exp $
 
 DISTNAME=	sqwebmail-3.3.1
 CATEGORIES=	www
@@ -8,7 +8,6 @@ HOMEPAGE=	http://www.inter7.com/sqwebmail/
 DEPENDS+=	courier-auth>=0.37.1nb1:../../mail/courier-auth
 DEPENDS+=	courier-maildirmake>=0.37.1nb1:../../mail/courier-maildirmake
 
-USE_BUILDLINK_ONLY=	yes
 USE_PERL5=		yes
 REPLACE_PERL=		sysconftool
 
