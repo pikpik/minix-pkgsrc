@@ -1,21 +1,24 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:33 reed Exp $
+# $NetBSD$
 
-DISTNAME=	volume-0.8
-PKGNAME=	gkrellm-${DISTNAME}
-PKGREVISION=	3
+DISTNAME=	gkrellm-volume-2.1.9
+WRKSRC=		${WRKDIR}/gkrellm-volume
 CATEGORIES=	audio
 MASTER_SITES=	http://gkrellm.luon.net/files/
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	cube@NetBSD.org
 HOMEPAGE=	http://gkrellm.luon.net/volume.phtml
-COMMENT=	gkrellm volume mixer plugin
+COMMENT=	Gkrellm2 volume mixer plugin
 
-WRKSRC=		${WRKDIR}/volume
-PTHREAD_OPTS=		require
-USE_BUILDLINK2=		yes
+BUILD_USES_MSGFMT=	YES
 
-.include "../../graphics/imlib/buildlink2.mk"
-.include "../../sysutils/gkrellm/buildlink2.mk"
-.include "../../x11/gtk/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+USE_BUILDLINK3=		YES
+USE_GNU_TOOLS+=		make
+USE_PKGLOCALEDIR=	YES
+
+MAKE_ENV+=	LOCALEDIR=${PREFIX}/${PKGLOCALEDIR}/locale \
+		enable_nls=1
+
+.include "../../sysutils/gkrellm/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+.include "../../mk/ossaudio.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
