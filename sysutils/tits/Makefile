@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/02/06 16:58:15 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/05/23 07:33:54 scw Exp $
 #
 
 DISTNAME=       tits-1.0.2
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.mctavish.co.uk/tits/
 
