@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.58 2003/10/05 08:20:44 grant Exp $
+# $NetBSD: defs.Darwin.mk,v 1.59 2003/10/10 15:46:08 jschauma Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -96,14 +96,14 @@ PKG_CREATE_USERGROUP?=	NO				# XXX - Until then
 
 # imake installs manpages in weird places
 # these values from /usr/X11R6/lib/X11/config/Imake.tmpl
-IMAKE_MAN_SOURCE_PATH= man/man
-IMAKE_MAN_SUFFIX=      1
-IMAKE_LIBMAN_SUFFIX=   3
-IMAKE_FILEMAN_SUFFIX=  5
-IMAKE_MAN_DIR=         ${IMAKE_MAN_SOURCE_PATH}1
-IMAKE_LIBMAN_DIR=      ${IMAKE_MAN_SOURCE_PATH}3
-IMAKE_FILEMAN_DIR=     ${IMAKE_MAN_SOURCE_PATH}5
-IMAKE_MANNEWSUFFIX=    ${IMAKE_MAN_SUFFIX}
+IMAKE_MAN_SOURCE_PATH=	man/man
+IMAKE_MAN_SUFFIX=	1
+IMAKE_LIBMAN_SUFFIX=	3
+IMAKE_FILEMAN_SUFFIX=	5
+IMAKE_MAN_DIR=		${IMAKE_MAN_SOURCE_PATH}1
+IMAKE_LIBMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}3
+IMAKE_FILEMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}5
+IMAKE_MANNEWSUFFIX=	${IMAKE_MAN_SUFFIX}
 
 _DO_SHLIB_CHECKS=	yes	# on installation, fixup PLIST for shared libs
 _IMAKE_MAKE=		${MAKE}	# program which gets invoked by imake
