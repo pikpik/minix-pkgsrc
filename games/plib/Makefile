@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 15:10:56 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/06/11 06:34:33 jlam Exp $
 #
 
 DISTNAME=	plib-1.2.0
@@ -9,9 +9,10 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://plib.sourceforge.net/
 COMMENT=	libraries for writing portable games/realtime interactive apps
 
+USE_BUILDLINK2=	YES
 USE_X11=	YES
-USE_MESA=	YES
 GNU_CONFIGURE=	YES
-CPPFLAGS+=	-Dunix=1 -I${X11PREFIX}/include -I${X11BASE}/include
+CPPFLAGS+=	-Dunix=1
 
+.include "../../graphics/Mesa/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
