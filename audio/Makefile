@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2000/10/15 17:53:59 rh Exp $
+# $NetBSD: Makefile,v 1.71 2000/10/15 21:59:20 tron Exp $
 #
 
     SUBDIR += ac3dec
@@ -9,6 +9,7 @@
     SUBDIR += cdd
     SUBDIR += cddbd
     SUBDIR += cdparanoia
+    SUBDIR += cs4235
     SUBDIR += dap
     SUBDIR += easytag
     SUBDIR += emixer
