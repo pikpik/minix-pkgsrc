@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:38:42 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/02/18 15:14:14 seb Exp $
 
 DISTNAME=	nana-2.4
 CATEGORIES=	devel
@@ -9,6 +9,7 @@ HOMEPAGE=	http://www.cs.ntu.edu.au/homepages/pjm/nana-home/
 COMMENT=	improved support for assertions and logging in C and C++
 
 GNU_CONFIGURE=	yes
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	nana.info
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
