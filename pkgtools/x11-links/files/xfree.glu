@@ -1,0 +1,7 @@
+# $NetBSD$
+#
+include/GL/glu.h
+lib/libGLU.a
+lib/libGLU.so
+lib/libGLU.so.1
+lib/libGLU.so.1.3
