@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/06/10 15:08:40 taca Exp $
+# $NetBSD: Makefile,v 1.29 2001/07/26 15:43:28 taca Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -15,6 +15,7 @@ HOMEPAGE=		http://www.eudora.com/qpopper/
 COMMENT=		Qualcomm's POP server for Eudora
 
 VERSION=		4.0.3
+USE_BUILDLINK_ONLY=	# defined
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
