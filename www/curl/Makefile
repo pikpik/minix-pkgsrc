@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/07/30 10:29:02 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2003/11/12 03:39:43 jschauma Exp $
 
 DISTNAME=	curl-7.10.6
 PKGREVISION=	1
@@ -20,6 +20,12 @@ USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if empty(USE_INET6:M[yY][eE][sS])
+CONFIGURE_ARGS+=	--disable-ipv6
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/curl
