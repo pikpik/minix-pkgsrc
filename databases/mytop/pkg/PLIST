@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/mytop
+share/doc/mytop/README
+share/doc/mytop/mytop.html
+@dirrm share/doc/mytop
