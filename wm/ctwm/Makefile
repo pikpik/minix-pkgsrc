@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/03/15 01:07:47 nathanw Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/28 05:17:16 jlam Exp $
 #
 
 DISTNAME=	ctwm-3.5.2
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	http://ctwm.dl.nu/
 
