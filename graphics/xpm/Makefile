@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/03/10 18:35:32 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2004/03/23 04:41:01 jlam Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	1
@@ -14,7 +14,6 @@ USE_BUILDLINK3=	yes
 USE_IMAKE=	# defined
 
 CHECK_BUILTIN.xpm=	yes
-
 .include "builtin.mk"
 
 .if !empty(IS_BUILTIN.xpm:M[yY][eE][sS])
