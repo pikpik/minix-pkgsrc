@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.271 2004/12/02 10:08:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.272 2004/12/20 15:49:25 wiz Exp $
 
 COMMENT=	System utilities
 
@@ -212,6 +212,7 @@ SUBDIR+=	xcdroast
 SUBDIR+=	xdu
 SUBDIR+=	xen12
 SUBDIR+=	xentools12
+SUBDIR+=	xenvstat
 SUBDIR+=	xfce4-cpugraph-plugin
 SUBDIR+=	xfce4-diskperf-plugin
 SUBDIR+=	xfce4-fm
