@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/11 13:53:25 wiz Exp $
+$NetBSD$
 
-MD5 (tclticker-1.1.tar.gz) = f5d964a30de359d8bc02d994e5a80aef
+SHA1 (tclticker-1.1.tar.gz) = 803a40dae1828a6f489336a7386eef6d6dae1dd0
+Size (tclticker-1.1.tar.gz) = 11420 bytes
 SHA1 (patch-aa) = a22d202cf4b1121f5fc6714f8582e322d769ae76
 SHA1 (patch-ab) = 43ea1075437ee63b3672fc31d752e74a1e194997

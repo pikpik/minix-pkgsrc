@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/15 03:30:49 wiz Exp $
+$NetBSD$
 
-MD5 (gnofin-0.8.4.tar.gz) = eb552f99fcf605b699519671ca4102f1
+SHA1 (gnofin-0.8.4.tar.gz) = 455e00a1bf019348e2dd6789acba9d074792fbd4
+Size (gnofin-0.8.4.tar.gz) = 413231 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/11 13:53:26 wiz Exp $
+$NetBSD$
 
-MD5 (emma-0.7-5.tar.gz) = 60485d6f2ef2cb97685b72fe6a25071c
+SHA1 (emma-0.7-5.tar.gz) = 971f0e09303877dc8815605c79fc9acc8be2e8f8
+Size (emma-0.7-5.tar.gz) = 263784 bytes
