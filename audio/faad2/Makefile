@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/08 14:35:57 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/06/08 15:30:08 grant Exp $
 #
 
 DISTNAME=	faad2-1.1
@@ -12,7 +12,7 @@ COMMENT=	AAC decoding library
 
 RESTRICTED=	Dolby doesn't allow binary distributions
 NO_BIN_ON_FTP=	${RESTRICTED}
-NO_BIN_ON_CD=	${RESTRICTED}
+NO_BIN_ON_CDROM=${RESTRICTED}
 
 USE_BUILDLINK2=		YES
 USE_GCC_SHLIB=		YES
