@@ -1,0 +1,14 @@
+@comment $NetBSD$
+etc/mesa.conf
+include/GL/gl.h
+include/GL/gl_mangle.h
+include/GL/glx.h
+include/GL/glx_mangle.h
+include/GL/osmesa.h
+include/GL/xmesa.h
+include/GL/xmesa_x.h
+include/GL/xmesa_xf86.h
+lib/libGL.so.3.2
+lib/libGL.a
+lib/libGL.la
+@unexec rmdir %D/include/GL >/dev/null 2>&1 || true
