@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/02/18 15:14:11 seb Exp $
+# $NetBSD: Makefile,v 1.1 2002/05/09 12:22:41 agc Exp $
 #
 
 DISTNAME=       pclock0.7
@@ -13,7 +13,8 @@ COMMENT=	Time management software
 
 WRKSRC=		${WRKDIR}/projclock
 
+USE_BUILDLINK2=	# defined
 NO_BUILD=	# defined
 
-.include "../../x11/tk/buildlink.mk"
+.include "../../x11/tk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
