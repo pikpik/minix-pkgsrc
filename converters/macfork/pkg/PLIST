@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/macfork
-share/doc/macfork/README
-@dirrm share/doc/macfork

@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/base64
-man/man1/base64.1

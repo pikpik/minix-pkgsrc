@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1998/03/02 00:05:16 tron Exp $
-bin/uudeview
-bin/uuenview
-man/man1/uudeview.1
-man/man1/uuenview.1
