@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/30 10:48:21 grant Exp $
 
 DISTNAME=		mpd-${PKGVERSION}
 PKGNAME=		musicpd-0.10.3
@@ -53,6 +53,7 @@ CONFIGURE_ARGS+=	--disable-aac
 .if ${MUSICPD_WITH_AUDIOFILE} == "YES"
 .  include "../../audio/libaudiofile/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-audiofile=${BUILDLINK_PREFIX.audiofile}
+CONFIGURE_ENV+=		ac_cv_lib_iconv_iconv_open=yes
 .else
 CONFIGURE_ARGS+=	--disable-audiofile
 .endif
