@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/03/13 17:37:35 fredb Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/13 06:53:41 jlam Exp $
 #
 
 DISTNAME=	html2ps-1.0b1
@@ -14,7 +14,7 @@ DEPENDS+=	ImageMagick>=5.3.9nb1:../../graphics/ImageMagick
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	p5-PerlMagick-[0-9]*:../../graphics/p5-PerlMagick
 DEPENDS+=	p5-libwww-[0-9]*:../../www/p5-libwww
-DEPENDS+=	teTeX-bin>=1.0.6:../../print/teTeX-bin
+DEPENDS+=	teTeX{,2}-bin>=1.0.6:../../print/teTeX-bin
 DEPENDS+=	weblint-[0-9]*:../../www/weblint
 
 USE_PERL5=	yes
