@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:55:58 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/12/03 15:37:17 skrll Exp $
 bin/dsirc
 bin/kdict
 bin/kit
@@ -858,7 +858,7 @@ share/kde/sounds/ktalkd.wav
 @dirrm share/kde/apps/knode/icons
 @dirrm share/kde/apps/knode/filters
 @dirrm share/kde/apps/knode
-@dirrm share/kde/apps/knewsticker
+@unexec ${RMDIR} %D/share/kde/apps/knewsticker 2>/dev/null || ${TRUE}
 @dirrm share/kde/apps/kmail/pics
 @dirrm share/kde/apps/kmail/about
 @dirrm share/kde/apps/kmail
