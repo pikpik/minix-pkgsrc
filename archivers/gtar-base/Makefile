@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/02/13 17:41:37 grant Exp $
+# $NetBSD: Makefile,v 1.29 2003/04/22 20:25:08 wiz Exp $
 #
 
 DISTNAME=       tar-1.13.25
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/tar/tar.html
 COMMENT=	The GNU tape archiver with remote magnetic tape support
+
+BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
