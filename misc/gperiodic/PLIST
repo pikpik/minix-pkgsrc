@@ -1,9 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:28:14 zuntum Exp $
+@comment $NetBSD$
 bin/gperiodic
-man/man1/gperiodic.1
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/gperiodic.mo
-${PKGLOCALEDIR}/locale/es/LC_MESSAGES/gperiodic.mo
-${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/gperiodic.mo
-${PKGLOCALEDIR}/locale/nl/LC_MESSAGES/gperiodic.mo
-${PKGLOCALEDIR}/locale/pt/LC_MESSAGES/gperiodic.mo
-${PKGLOCALEDIR}/locale/it/LC_MESSAGES/gperiodic.mo
+share/gnome/apps/Applications/gperiodic.desktop
+${PKGLOCALEDIR}/locale/sv/LC_MESSAGES/gperiodic.mo
+share/pixmaps/gperiodic.png
+@unexec ${RMDIR} %D/share/gnome/apps/Applications 2>/dev/null || ${TRUE}
+@unexec ${RMDIR} %D/share/gnome/apps 2>/dev/null || ${TRUE}
+@unexec ${RMDIR} %D/share/gnome 2>/dev/null || ${TRUE}

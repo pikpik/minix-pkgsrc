@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- gperiodic.c.orig
++++ gperiodic.c
+@@ -413,7 +413,7 @@
+ 
+ 
+ int main(int argc, char** argv) {
+-  char ch;
++  signed char ch;
+ 
+     textdomain (PACKAGE);
+     bindtextdomain(PACKAGE, GPERIODIC_LOCALE_DIR);
