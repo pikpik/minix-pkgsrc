@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/06/27 00:34:58 abs Exp $
+# $NetBSD: Makefile,v 1.16 1999/07/01 23:28:32 tron Exp $
 #
 # Every effort has been made to keep the communicator and navigator
 # Makefiles as similar as possible.
@@ -50,6 +50,8 @@ WRKSRC=         ${WRKDIR}/${BINNAME}-v${NS_VERS_SHORT}.${WRKNAME}
 MOZILLA_HOME=	${PREFIX}/lib/netscape/${PKGNAME}
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 NS_PLIST_SED=	"s,\$${NS_VERS},${NS_VERS},g"
+
+.include "../../mk/bsd.prefs.mk"
 
 .if (${NS_ENCRYPTION} == "us")
 MASTER_SITES=
