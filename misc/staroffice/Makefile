@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/09/27 23:18:26 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2001/10/26 13:57:26 wiz Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -92,7 +92,7 @@ do-fetch:
 post-extract:
 	cd ${WRKSRC} && \
 		unzip -qqXL setup.zip && \
-		chmod 0755 setup.bin
+		${CHMOD} 0755 setup.bin
 
 do-configure:
 .for file in setup.ins
