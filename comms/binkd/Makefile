@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/08/19 04:48:33 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/08/01 02:31:21 jschauma Exp $
 #
 
 DISTNAME=		binkd094
@@ -13,8 +13,8 @@ MAINTAINER=		tv@pobox.com
 HOMEPAGE=		http://www.corbina.net/~maloff/binkd/
 COMMENT=		FidoNet-over-IP transport program utilizing BINKP protocol
 
-USE_BUILDLINK_ONLY=	yes
-GNU_CONFIGURE=		yes
+USE_BUILDLINK2=		# defined
+GNU_CONFIGURE=		# defined
 
 NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64
 

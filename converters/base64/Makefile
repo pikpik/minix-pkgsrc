@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/08/20 04:08:11 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/27 23:17:50 jlam Exp $
 #
 
 DISTNAME=	base64-1.3
@@ -13,7 +13,7 @@ COMMENT=	encode and decode base64 files
 CONFLICTS=	openssl-[0-9]*
 GNU_CONFIGURE=	yes
 ALL_TARGET=	prog
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/base64 ${PREFIX}/bin
