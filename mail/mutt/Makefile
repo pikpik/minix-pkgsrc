@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2004/08/05 07:19:25 jlam Exp $
+# $NetBSD: Makefile,v 1.122 2004/10/03 00:12:53 tv Exp $
 
 DISTNAME=		mutt-1.4.2.1i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -31,6 +31,10 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}			\
 
 .if (${OPSYS} == "SunOS")
 CONFIGURE_ARGS+=	--without-wc-funcs
+.endif
+
+.if ${LOWER_OPSYS} == "irix5.3"
+CONFIGURE_ENV+=		ac_cv_header_inttypes_h=no
 .endif
 
 # There is a problem using /bin/sh on old NetBSD releases, so use /bin/ksh
