@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/20 22:45:30 manu Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/09 22:40:32 manu Exp $
 #
 
 DISTNAME=	libradius-linux-20040827
@@ -8,6 +8,8 @@ MASTER_SITES=	http://portal-to-web.de/tacacs/
 
 MAINTAINER=	manu@NetBSD.org
 COMMENT=	RADIUS client library
+
+USE_BUILDLINK3=	yes
 
 WRKSRC=		${WRKDIR}/libradius-linux
 
