@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 1998/04/15 10:38:21 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/04/18 16:49:44 frueauf Exp $
 #
 
 DISTNAME=		pthreads-1_60_beta6
 PKGNAME=		mit-pthreads-1.60b6
 CATEGORIES=		devel
 MASTER_SITES=		ftp://sipb.mit.edu/pub/pthreads/
-ONLY_FOR_ARCHS=		alpha arm32 bebox i386 mips pc532 powerpc sparc vax
+ONLY_FOR_ARCHS=		alpha arm32 i386 mips* pc532 powerpc sparc vax
 
 MAINTAINER=		agc@netbsd.org
 
