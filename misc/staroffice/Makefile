@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/05/03 17:03:20 rh Exp $
+# $NetBSD: Makefile,v 1.8 2000/07/01 19:42:26 david Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -19,7 +19,7 @@ NO_CDROM=		"Redistribution not permitted"
 MIRROR_DISTFILE=	NO
 
 ONLY_FOR_PLATFORM=	NetBSD-1.4?-i386 NetBSD-1.4Z[A-Z]-i386 \
-			NetBSD-1.5_ALPHA-i386
+			NetBSD-1.5_ALPHA-i386 NetBSD-1.5?-i386
 PATCH_FUZZ_FACTOR=	-F1
 IS_INTERACTIVE=		YES
 NO_BUILD=		YES
