@@ -1,4 +1,4 @@
-# $NetBSD: config.layout,v 1.1 2001/04/29 21:21:14 jlam Exp $
+# $NetBSD: config.layout,v 1.2 2001/10/17 07:47:53 martti Exp $
 
 <Layout pkgsrc>
 prefix: @PREFIX@
@@ -7,7 +7,7 @@ bindir: ${exec_prefix}/bin
 sbindir: ${exec_prefix}/sbin
 libexecdir: ${exec_prefix}/lib/httpd
 mandir: ${prefix}/man
-sysconfdir: @APACHE_SYSCONFDIR@
+sysconfdir: @PKG_SYSCONFDIR@
 datadir: ${prefix}/share/httpd
 iconsdir: ${prefix}/share/httpd/icons
 htdocsdir: ${prefix}/share/httpd/htdocs

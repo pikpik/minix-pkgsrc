@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: rplayd.sh,v 1.2 2001/11/21 17:55:55 jlam Exp $
+# $NetBSD: rplayd.sh,v 1.3 2001/11/21 21:38:50 jlam Exp $
 #
 # PROVIDE: rplayd
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@ fi
 name="rplayd"
 rcvar=$name
 command="@PREFIX@/sbin/${name}"
-required_files="@CONFDIR@/rplay.conf"
+required_files="@PKG_SYSCONFDIR@/rplay.conf"
 
 if [ -e /etc/rc.subr ]
 then
