@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- imap/ctl_cyrusdb.c.orig	Wed May 29 12:49:14 2002
 +++ imap/ctl_cyrusdb.c	Tue Jan  7 13:03:45 2003
 @@ -231,9 +231,9 @@
