@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xfce4/panel-plugins/libdatetime.a
+lib/xfce4/panel-plugins/libdatetime.la
+lib/xfce4/panel-plugins/libdatetime.so
