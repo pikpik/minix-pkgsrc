@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/05 03:51:18 hubertf Exp $
 #
 
-DISTNAME=	xhangglider-0.92e
+DISTNAME=	xhangglider-0.94.0
 CATEGORIES=	x11
 MASTER_SITES=	http://plaza.harmonix.ne.jp/~redstar/
 
