@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/07/24 12:17:36 frueauf Exp $
 #
 
 DISTNAME=	galaxa.0.1
@@ -9,11 +9,8 @@ MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/galaxa/
 MAINTAINER=	root@garbled.net
 
 WRKSRC=		${WRKDIR}/galaxa
-
+MAKEFILE=	makefile
 USE_X11=	yes
-
-post-patch:
-	@${CP} ${WRKSRC}/makefile ${WRKSRC}/Makefile
 
 pre-install:
 	${MKDIR} ${PREFIX}/share/doc/galaxa
