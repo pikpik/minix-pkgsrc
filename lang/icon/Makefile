@@ -17,4 +17,11 @@ MAINTAINER=	ports@freebsd.org
 NO_WRKSUBDIR=	true
 ALL_TARGET=	Icon Icon-iconc
 
+OPSYS!=         uname -s
+.if (${OPSYS} == "NetBSD")
+MANCOMPRESSED=	yes
+.endif
+
+MAN1=		icon.1
+
 .include <bsd.port.mk>
