@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.762 2001/06/18 21:23:35 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.763 2001/06/19 11:54:56 assar Exp $
 #
 # This file is in the public domain.
 #
@@ -271,7 +271,6 @@ BUILD_DEFS+=	SSLBASE
 .endif
 
 .if defined(USE_XAW)
-XAW_TYPE?=		standard
 .if ${XAW_TYPE} == "xpm"
 DEPENDS+=		Xaw-Xpm-1.1:../../x11/Xaw-Xpm
 .elif ${XAW_TYPE} == "3d"
