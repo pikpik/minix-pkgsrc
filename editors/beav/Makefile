@@ -1,9 +1,4 @@
-# New ports collection makefile for:	beav
-# Version required:	1.40-11 (debian)
-# Date created:		01 July 1995
-# Whom:			Thomas Gellekum <tg@FreeBSD.ORG>
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1998/12/20 21:12:57 bad Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/08/23 02:10:57 hoek Exp 
 #
 
