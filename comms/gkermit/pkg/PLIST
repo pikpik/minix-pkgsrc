@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gkermit
+man/man1/gkermit.1
+share/gkermit.txt
