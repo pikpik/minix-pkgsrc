@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2000/08/18 22:46:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -8,7 +8,7 @@ CATEGORIES=	x11 wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	cjs@netbsd.org
-HOMEPAGE=	http://www.hpc.uh.edu/fvwm/
+HOMEPAGE=	http://www.fvwm.org/
 
 DEPENDS=	xpmroot-2.*:../../x11/xpmroot
 
