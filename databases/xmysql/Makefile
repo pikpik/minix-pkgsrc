@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/23 23:14:23 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/09/28 20:34:04 fredb Exp $
 #
 
 DISTNAME=	xmysql-1.10
@@ -11,6 +11,7 @@ HOMEPAGE=	http://web.wt.net/~dblhack
 DEPENDS=	mysql-client-3.22.32:../../databases/mysql-client
 DEPENDS+=	xforms>=0.88nb1:../../x11/xforms
 
+MAKE_ENV+=	X11PREFIX=${X11PREFIX}
 USE_X11=	YES
 USE_XPM=	YES
 
