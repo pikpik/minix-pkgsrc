@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/01/19 15:22:53 kim Exp $
+# $NetBSD: Makefile,v 1.14 2002/05/07 23:48:49 hubertf Exp $
 
 DISTNAME=	ppp-2.3.9
 PKGNAME=	ppp-mppe-2.3.9
@@ -11,7 +11,7 @@ COMMENT=	PPP daemon and LKM with MPPE - Microsoft Point-to-Point Encryption
 
 CONFLICTS+=	ppp-2.*
 
-OPENSSL_VERS=	0.9.6
+OPENSSL_VERS=	0.9.6g
 OPENSSL_SRC=	${_PKGSRCDIR}/security/openssl/${WRKDIR:T}/openssl-${OPENSSL_VERS}
 
 HAS_CONFIGURE=  yes
