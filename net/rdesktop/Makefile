@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/10/02 10:22:21 rh Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/28 12:23:13 grant Exp $
 #
 
 DISTNAME=		rdesktop-1.1.0
@@ -15,5 +15,11 @@ CONFIGURE_ARGS=		--prefix=${LOCALBASE}
 ALL_TARGET=		rdesktop
 
 USE_X11=		yes
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+LDFLAGS+=	-lnsl -lsocket
+.endif
 
 .include "../../mk/bsd.pkg.mk"
