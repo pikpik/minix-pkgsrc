@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/02/19 21:55:06 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/02/20 16:25:57 minskim Exp $
 #
 
 DISTNAME=	website-2.3
@@ -14,6 +14,7 @@ COMMENT=	DocBook XML DTD for building websites
 DEPENDS=	docbook-xsl>=1.58:../../textproc/docbook-xsl
 
 USE_BUILDLINK3=	yes
+USE_LANGUAGES=	# empty
 NO_BUILD=	# defined
 NO_CONFIGURE=	# defined
 
