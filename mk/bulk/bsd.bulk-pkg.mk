@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.28 2001/07/21 19:36:47 dmcmahill Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.29 2001/10/20 09:07:13 abs Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@netbsd.org>
@@ -218,7 +218,7 @@ bulk-package:
 					fi; \
 					if ${PKG_INFO} -qe $$pkgname ; then \
 						${SHCOMMENT} "Remove only unneeded pkgs" ; \
-						if ! ${EGREP} -q "^${PKGPATH}.* $$pkgdir( |$$)" ${DEPENDSFILE} ; then \
+						if ! ${EGREP} -q "^${PKGPATH} .* $$pkgdir( |$$)" ${DEPENDSFILE} ; then \
 							case "${BULK_PREREQ}" in \
 								*$$pkgdir* ) \
 									${ECHO_MSG} "BULK> Keeping BULK_PREREQ: $$pkgname ($$pkgdir)" ;\
