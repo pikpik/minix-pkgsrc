@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: tomcat.sh,v 1.4 2001/04/13 07:47:43 jwise Exp $
+# $NetBSD: tomcat.sh,v 1.5 2001/05/24 16:06:43 abs Exp $
 #
 # PROVIDE: tomcat
 # REQUIRE: DAEMON
@@ -34,7 +34,7 @@ then
 	eval ${rcvar}_flags="${flags}"
 fi
 
-CLASSPATH=${CLASSPATH}:${PREFIX}/lib/java/servlet.jar:${PREFIX}/lib/java/jaxp.jar:${PREFIX}/lib/java/parser.jar
+CLASSPATH=${CLASSPATH}:${PREFIX}/lib/java/servlet.jar:${PREFIX}/lib/java/jaxp.jar:${PREFIX}/lib/java/parser.jar:${PREFIX}/lib/java/crimson.jar:${PREFIX}/lib/java/ant.jar
 if [ -n "${tomcat_classpath}" ]
 then
 	CLASSPATH=${CLASSPATH}:${tomcat_classpath}
