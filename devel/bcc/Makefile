@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:29:39 grant Exp $
+# $NetBSD: Makefile,v 1.10 2005/01/06 05:36:28 tv Exp $
 # FreeBSD Id: Makefile,v 1.6 1996/11/18 11:22:35 asami Exp
 #
 
 DISTNAME=		bcc
 PKGNAME=		bcc-95.3.12
-CATEGORIES=		devel
+CATEGORIES=		devel lang
 
 MAINTAINER=		tsarna@NetBSD.org
 COMMENT=		Bruce Evans' C compiler (with as and ld); can do 16-bit code
