@@ -1,9 +1,8 @@
 $NetBSD$
-$NetBSD: patch-ab,v 1.2 1998/08/07 11:09:57 agc Exp $
 
---- src/ui.c.orig	Thu May 22 09:31:59 1997
-+++ src/ui.c	Thu Apr 23 10:21:20 1998
-@@ -202,7 +202,7 @@
+--- src/ui.c.orig	Tue Sep 22 04:56:20 1998
++++ src/ui.c	Wed Nov  4 21:27:03 1998
+@@ -203,7 +203,7 @@
  	eval_check(interp, comm);
  }
  
