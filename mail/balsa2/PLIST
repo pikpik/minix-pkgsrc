@@ -90,13 +90,9 @@ share/sounds/balsa/startup.wav
 @dirrm share/gnome/help/balsa/C/figures
 @dirrm share/gnome/help/balsa/C
 @dirrm share/gnome/help/balsa
-@comment in gnome-dirs: @dirrm share/gnome/help
+@comment in gnome2-dirs: @dirrm share/gnome/help
 @dirrm share/examples/balsa
 @dirrm share/balsa/pixmaps
 @dirrm share/balsa
 @comment in xdg-dirs: @dirrm share/applications
-@comment in scrollkeeper: @dirrm libdata/scrollkeeper/db/index
-@comment in scrollkeeper: @dirrm libdata/scrollkeeper/db/TOC
-@comment in scrollkeeper: @dirrm libdata/scrollkeeper/db
 @comment in libbonobo: @dirrm lib/bonobo/servers
-@comment in xdg-dirs: @dirrm etc/sound/events
