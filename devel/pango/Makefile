@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/10/19 10:54:52 rh Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/21 03:02:24 dmcmahill Exp $
 #
 
 DISTNAME=		pango-1.0.5
@@ -19,6 +19,11 @@ GNU_CONFIGURE=		yes
 
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	${WRKSRC}/pango.pc.in
+PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangoft2.pc.in
+PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangox.pc.in
+PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangowin32.pc.in
+PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangoxft.pc.in
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/10/08 22:31:43 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/19 10:54:56 rh Exp $
 #
 
 DISTNAME=		libIDL-0.7.4
@@ -15,6 +15,7 @@ USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	${WRKSRC}/libIDL-2.0.pc.in
 
 .include "../../converters/libiconv/buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"

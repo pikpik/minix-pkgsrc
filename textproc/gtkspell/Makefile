@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/25 04:54:46 rh Exp $
 #
 
 DISTNAME=		gtkspell-2.0.2
@@ -16,6 +16,7 @@ USE_BUILDLINK2=		YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	${WRKSRC}/gtkspell-2.0.pc.in
 
 .include "../../textproc/libpspell/buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"

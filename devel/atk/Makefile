@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/09/11 11:42:11 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/10/19 10:54:43 rh Exp $
 #
 
 DISTNAME=		atk-1.0.3
@@ -19,6 +19,7 @@ GNU_CONFIGURE=		yes
 
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	${WRKSRC}/atk.pc.in
 
 # glib-mkenums overflows a 2048kb stack on atkobject.h 
 UNLIMIT_RESOURCES=	stacksize
