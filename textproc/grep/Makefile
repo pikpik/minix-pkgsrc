@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/09/18 19:13:50 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/02/09 08:13:04 grant Exp $
 #
 
 DISTNAME=	grep-2.5.1
@@ -11,7 +11,7 @@ MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/grep/grep.html
 COMMENT=	GNU grep
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 BUILD_USES_MSGFMT=	YES
 GNU_CONFIGURE=		YES
@@ -30,5 +30,5 @@ CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX}
 PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
-.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
