@@ -1,3 +1,4 @@
 @comment $NetBSD$
 bin/p0f
 etc/p0f.fp
+share/doc/p0f.README
