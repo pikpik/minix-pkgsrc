@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/10/30 09:12:11 skrll Exp $
+# $NetBSD: Makefile,v 1.3 2000/11/03 08:37:05 skrll Exp $
 #
 
-PKGNAME=	qt2-docs-2.2.1
+PKGNAME=	qt2-docs-2.2.2
 
 .include "../qt2-libs/Makefile.common"
 

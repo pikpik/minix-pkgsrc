@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/19 07:41:12 skrll Exp $
+# $NetBSD: Makefile,v 1.2 2000/10/22 05:52:24 rh Exp $
 #
 USE_MESA=	yes
 
 .include "../qt2-libs/Makefile.common"
 
-PKGNAME=	qt2-libs-2.2.1
+PKGNAME=	qt2-libs-2.2.2
 
 DEPENDS+=	png-*:../../graphics/png
 DEPENDS+=	jpeg-*:../../graphics/jpeg
