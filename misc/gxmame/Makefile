@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:12:59 tv Exp $
+# $NetBSD: Makefile,v 1.9 2004/11/07 21:13:23 kristerw Exp $
 #
 
 DISTNAME=	gxmame-0.34b
@@ -21,5 +21,6 @@ USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
