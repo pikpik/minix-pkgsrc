@@ -1,8 +1,8 @@
 $NetBSD$
 
---- pico/osdep/unix.orig	Sat Jul 18 20:21:36 1998
-+++ pico/osdep/unix	Sat Jul 18 20:21:52 1998
-@@ -1268,7 +1268,7 @@
+--- pico/osdep/unix.orig	Mon Sep 13 15:35:36 1999
++++ pico/osdep/unix	Thu Nov 11 11:04:09 1999
+@@ -2301,7 +2301,7 @@
  errstr(err)
  int err;
  {
