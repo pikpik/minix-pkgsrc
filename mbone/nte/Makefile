@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/04/15 07:21:04 tron Exp $
+# $NetBSD: Makefile,v 1.17 1999/05/24 20:39:45 tv Exp $
 #
 
 DISTNAME=		nt.1.5a23
@@ -25,7 +25,7 @@ USE_GMAKE=		yes
 MAKE_ENV=		TK_SRC=${TK_SRC}
 
 do-configure:
-	cd ${WRKSRC}/netbsd && sh configure
+	cd ${WRKSRC}/netbsd && ${SH} configure
 
 .include "../../mk/bsd.pkg.mk"
 
