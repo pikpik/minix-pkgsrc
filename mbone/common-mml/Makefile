@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/27 01:50:02 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:46 jmmv Exp $
 #
 
 DISTNAME=	common-1.2.0
@@ -25,7 +25,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/common-mml
 	${INSTALL_DATA} ${WRKSRC}/*.h ${PREFIX}/include/common-mml
 
-test: build
+do-test:
 	${WRKSRC}/test-libcommon
 
 .include "../../mk/bsd.pkg.mk"

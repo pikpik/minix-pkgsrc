@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2003/07/02 13:00:46 grant Exp $
+# $NetBSD: Makefile,v 1.73 2003/07/02 13:03:25 grant Exp $
 
 DISTNAME=		openssl-0.9.6g
 PKGREVISION=		2
@@ -41,7 +41,7 @@ do-configure:
 		&& ${SETENV} ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT}	\
 			${CONFIGURE_ARGS}
 
-test: all
+do-test:
 	@cd ${WRKSRC}/test 						\
 		&& ${SETENV} ${LD_PATH_VARNAME}=${WRKSRC}		\
 			${MAKE_PROGRAM} tests	\
