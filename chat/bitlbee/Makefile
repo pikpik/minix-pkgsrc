@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:13 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/25 09:37:44 xtraeme Exp $
 #
 
 DISTNAME=		bitlbee-0.91
+PKGREVISION=		1
 CATEGORIES=		chat
 MASTER_SITES=		http://get.bitlbee.org/src/
 
@@ -46,6 +47,14 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/${f} ${DOCDIR}
 .endfor
 .undef f
+
+PKG_OPTIONS_VAR=	PKG_OPTIONS.bitlbee
+PKG_SUPPORTED_OPTIONS=	inet6
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Minet6)
+CONFIGURE_ARGS+=	--ipv6=1
+.endif
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
