@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2002/11/15 00:04:41 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/29 23:14:09 grant Exp $
 
 DISTNAME=	maildrop-1.3.9
 COMMENT=	Courier mail delivery agent with filtering abilities
 HOMEPAGE=	http://www.flounder.net/~mrsam/maildrop/
 
-PERL5_REQD=	5.6.0
+PERL5_REQD+=	5.6.0
 USE_PERL5=	build
 DEPENDS+=	courier-maildirmake>=0.37.1:../../mail/courier-maildirmake
 

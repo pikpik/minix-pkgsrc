@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2003/01/28 22:03:30 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/08/30 22:51:20 jlam Exp $
 
 PKGNAME=	courier-maildirmake-${BASE_VERS}
 PKGREVISION?=	1
 COMMENT=	Courier Maildir utilities
 
-PERL5_REQD=	5.6.0
+PERL5_REQD+=	5.6.0
 USE_PERL5=	build
 REPLACE_PERL=	sysconftool
 

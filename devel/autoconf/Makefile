@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2003/12/16 21:25:53 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2004/01/05 23:20:29 jlam Exp $
 
 DISTNAME=		autoconf-2.59
 CATEGORIES=		devel
@@ -25,7 +25,7 @@ M4=			${LOCALBASE}/bin/gm4
 
 INFO_FILES=		autoconf.info standards.info
 
-PERL5_REQD=		5.6
+PERL5_REQD+=		5.6
 TEXINFO_REQD=		4.0
 
 AUTOMAKE_OVERRIDE=	NO
