@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/03/26 20:09:55 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2004/03/31 07:12:21 xtraeme Exp $
 
 DISTNAME=		ettercap-0.6.b
 PKGREVISION=		1
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=	--enable-plugins \
 
 USE_BUILDLINK3=		yes
 
-USE_NCURSES=		# putwin(), pechochar()
+USE_NCURSES=		# putwin()
 PTHREAD_OPTS+=		require
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 LIBS+=			-ldes ${PTHREAD_LDFLAGS}
