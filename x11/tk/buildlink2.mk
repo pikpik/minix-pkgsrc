@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/09/21 10:30:58 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/01/04 20:59:22 wiz Exp $
 
 .if !defined(TK_BUILDLINK2_MK)
 TK_BUILDLINK2_MK=	# defined
@@ -9,7 +9,8 @@ BUILDLINK_PKGSRCDIR.tk?=	../../x11/tk
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.tk=tk
 BUILDLINK_PREFIX.tk_DEFAULT=	${LOCALBASE}
-BUILDLINK_FILES.tk=		include/tk.h
+BUILDLINK_FILES.tk=		bin/wish*
+BUILDLINK_FILES.tk+=		include/tk.h
 BUILDLINK_FILES.tk+=		include/tkDecls.h
 BUILDLINK_FILES.tk+=		include/tkPlatDecls.h
 BUILDLINK_FILES.tk+=		include/tkIntXlibDecls.h
