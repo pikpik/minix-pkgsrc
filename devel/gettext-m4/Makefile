@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/18 15:20:10 veego Exp $
+# $NetBSD: Makefile,v 1.3 2002/07/19 03:07:21 schmonz Exp $
 
 DISTNAME=		gettext-0.10.35
 PKGNAME=		gettext-m4-0.10.35
@@ -15,6 +15,8 @@ GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-included-gettext
 CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
 CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
+CONFIGURE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
+MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 PATCHDIR=		${.CURDIR}/../../devel/gettext/patches
 DISTINFO_FILE=		${.CURDIR}/../../devel/gettext/distinfo
