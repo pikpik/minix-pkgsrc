@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/22 12:40:14 xtraeme Exp $
 
 DISTNAME=	jpgraph-1.13
 PKGNAME=	php-${DISTNAME}
@@ -12,6 +12,7 @@ COMMENT=	Object Oriented class library for PHP
 DEPENDS+=	php-gd>=4.3.0:../../graphics/php4-gd
 
 NO_BUILD=	YES
+NO_BUILDLINK=	YES
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/php-jpgraph
