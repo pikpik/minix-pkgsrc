@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.53 2000/07/10 10:10:19 tron Exp $
+# $NetBSD$
 
-DISTNAME=	mutt-1.2.4i
+DISTNAME=	mutt-1.2.5i
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/ \
 		ftp://ftp.funet.fi/pub/unix/mail/mutt/ \
