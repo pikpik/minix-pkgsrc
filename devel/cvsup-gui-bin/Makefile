@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/29 08:02:48 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/29 08:03:55 xtraeme Exp $
 
 DISTNAME=	cvsup-gui-static-16.1.h
 PKGNAME=	${DISTNAME:C/static/bin/}
@@ -17,7 +17,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 DIST_SUBDIR=	cvsup-${MACHINE_ARCH}-${OS_VERSION:C/(...).*/\1/}
 
-ONLY_FOR_PLATFORM=      NetBSD-1.[5-9]*-i386
+ONLY_FOR_PLATFORM=      NetBSD-1.[5-9]*-i386 NetBSD-[2-9]*-i386
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/cvsup ${PREFIX}/bin/cvsup-gui
