@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/10 20:00:26 hubertf Exp $
+$NetBSD$
 
-MD5 (bbkeys-0.3.5.tar.gz) = fc979a69a83687544da40ceb83573a44
+SHA1 (bbkeys-0.3.5.tar.gz) = 1c0e74db16b940e0fbcda088a11a9c9af905a1e8
+Size (bbkeys-0.3.5.tar.gz) = 102703 bytes

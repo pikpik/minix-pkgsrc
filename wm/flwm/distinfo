@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
+$NetBSD$
 
-MD5 (flwm-0.25.tgz) = be036c20b15a28eed2b688cd7ef3f202
+SHA1 (flwm-0.25.tgz) = 9841ac029ef86fd697771e32207ba86ff43aea81
+Size (flwm-0.25.tgz) = 61301 bytes
 SHA1 (patch-aa) = f71ebceef3d4f39963113fbf32d3efddcf489c8f

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
+$NetBSD$
 
-MD5 (lwm-1.00/lwm.tar.gz) = a419c283cbd8b8580eccb2a3abe9aa5a
+SHA1 (lwm-1.00/lwm.tar.gz) = bd0e6d06c3c999f1364312fe6b505288dec9c12a
+Size (lwm-1.00/lwm.tar.gz) = 23609 bytes
 SHA1 (patch-aa) = 6b1dae47397b33f4071583338e33f5f410c9dd24

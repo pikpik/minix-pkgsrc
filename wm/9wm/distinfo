@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/12 13:05:02 wiz Exp $
+$NetBSD$
 
-MD5 (9wm-1.1.shar.gz) = e3ebae40e0d4ba2b4c05448c0bbf43ae
+SHA1 (9wm-1.1.shar.gz) = 43a4e28a0665d54331d81d9691abae65927738ac
+Size (9wm-1.1.shar.gz) = 19517 bytes
 SHA1 (patch-aa) = 3e0c11e450876ee882694fb653fa8222ee53340a

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/12 02:03:47 wiz Exp $
+$NetBSD$
 
-MD5 (ctwm-3.5.tar.gz) = e1ca78d934702e5c013da90476703301
+SHA1 (ctwm-3.5.tar.gz) = 12a23662e44518ed6c6ed89a2ea3c0c5e97c2775
+Size (ctwm-3.5.tar.gz) = 606864 bytes
