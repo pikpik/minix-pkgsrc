@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/01/24 23:04:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2004/02/22 20:34:04 jmmv Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -22,5 +22,6 @@ SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop
 SUBDIR+=	xfce4
 SUBDIR+=	xfce4-extras
+SUBDIR+=	xorg
 
 .include "../mk/bsd.pkg.subdir.mk"
