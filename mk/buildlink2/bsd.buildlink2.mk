@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.13 2002/09/03 22:10:17 jlam Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.14 2002/09/06 07:20:20 jlam Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -531,7 +531,7 @@ ${BUILDLINK_${_wrappee_}}:						\
 		done;							\
 		IFS="$$OLDIFS";						\
 		if [ ! -x "$${wrappee}" ]; then				\
-			${ECHO_BUILDLINK_MSG} "$${wrappee}: No such file";	\
+			${ECHO_BUILDLINK_MSG} "$${wrappee}: No such file"; \
 			exit 1;						\
 		fi;							\
 		;;							\
