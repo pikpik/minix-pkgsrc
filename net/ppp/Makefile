@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:28 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/20 22:39:43 hubertf Exp $
 
 DISTNAME=		ppp-2.3.11
 CATEGORIES=		net
@@ -8,6 +8,8 @@ MAINTAINER=		tron@netbsd.org
 COMMENT=		Point-to-Point Protocol for Internet connections over serial lines
 
 ONLY_FOR_PLATFORM=	NetBSD-*-*
+
+CONFLICTS+=		ppp-mppe-2.*
 
 HAS_CONFIGURE=		yes
 MANCOMPRESSED_IF_MANZ=	yes
