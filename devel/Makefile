@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/04/09 14:03:10 tv Exp $
+# $NetBSD: Makefile,v 1.18 1998/04/15 10:38:18 agc Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -81,7 +81,7 @@
 #    SUBDIR += p5-TimeDate
 #    SUBDIR += p5-TraceFuncs
 #    SUBDIR += pccts
-#    SUBDIR += portlint
+    SUBDIR += portlint
     SUBDIR += prcs
     SUBDIR += readline
 #    SUBDIR += sawt
