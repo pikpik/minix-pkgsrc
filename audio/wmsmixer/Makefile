@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:23:43 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/11 18:59:25 xtraeme Exp $
 #
 
 DISTNAME=	wmsmixer-0.5.1
@@ -11,6 +11,7 @@ COMMENT=	Another mixer designed for WindowMaker (dockapp)
 
 USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
+USE_LANGUAGES=	c++
 NO_INSTALL_MANPAGES= YES
 
 pre-build:
