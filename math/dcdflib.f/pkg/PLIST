@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/libdcdflib_f.a
+share/doc/dcdflib.f/README
+share/doc/dcdflib.f/dcdflib.chs
+share/doc/dcdflib.f/dcdflib.fdoc
+@dirrm share/doc/dcdflib.f
