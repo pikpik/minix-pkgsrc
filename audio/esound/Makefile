@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/09/23 15:02:26 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2002/09/24 13:01:15 wiz Exp $
 
 DISTNAME=		esound-0.2.29
 CATEGORIES=		audio
@@ -14,11 +14,13 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+MAKE_ENV+=		AM_CPPFLAGS='-DDEV_DSP=\"${DEVOSSAUDIO}\"'
 
 EGDIR=			${PREFIX}/share/examples/esound
 CONF_FILES=		${EGDIR}/esd.conf ${PKG_SYSCONFDIR}/esd.conf
 
 .include "../../audio/libaudiofile/buildlink2.mk"
+.include "../../mk/ossaudio.buildlink2.mk"
 
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
