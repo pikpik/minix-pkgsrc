@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/17 13:05:44 tron Exp $
+$NetBSD$
 
-MD5 (suse64/libpng.rpm) = ca61a7ac5451b317c9eb5f4c3da905a1
+SHA1 (suse64/libpng.rpm) = d7a1e08d995837f5949b7e9e60c13521eca394d1
+Size (suse64/libpng.rpm) = 215006 bytes

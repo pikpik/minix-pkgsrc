@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/17 13:05:42 tron Exp $
+$NetBSD$
 
-MD5 (suse64/audiofil.rpm) = 1c56961f4cd3a85632c8d1c90f86dc6d
+SHA1 (suse64/audiofil.rpm) = 7cada81cfc5b06323f0de33e13a916242ad11eb3
+Size (suse64/audiofil.rpm) = 290550 bytes

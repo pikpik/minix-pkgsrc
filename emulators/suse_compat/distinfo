@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 2000/12/17 13:05:42 tron Exp $
+$NetBSD$
 
-MD5 (suse64/compat.rpm) = 57d939ac8b59f73599449ffcacc5066e
+SHA1 (suse64/compat.rpm) = d801f31eac659af95ae796afec84cf7f47694e51
+Size (suse64/compat.rpm) = 1592133 bytes

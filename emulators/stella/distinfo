@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/18 23:14:16 tv Exp $
+$NetBSD$
 
-MD5 (stella-1.1-src.tar.gz) = 6e2e5336f2789654ddd822d82a4c7b8e
+SHA1 (stella-1.1-src.tar.gz) = 390b030f6dd16a1190384a9ca3d5dda8d93625a8
+Size (stella-1.1-src.tar.gz) = 587688 bytes
 SHA1 (patch-aa) = aa0f107df517d3742788914f911623e5d63cf7f3
 SHA1 (patch-ab) = fe07dc20efc96931f77df84c4ce66ad7e81d3805
 SHA1 (patch-ac) = 49894b9e667f0d82bf33c74907db27e1301de8db

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/04 07:16:30 mrg Exp $
+$NetBSD$
 
-MD5 (compat14-sparc.tar.gz) = ff6617bbff745e81be92080244141960
+SHA1 (compat14-sparc.tar.gz) = b7a0513e170ecc8e0e12c3a18ac534e8ac7f8233
+Size (compat14-sparc.tar.gz) = 1820181 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1998/09/02 20:57:02 explorer Exp $
+$NetBSD$
 
-MD5 (freebsd_lib-2.2.7.tar.gz) = eade1f63ea4451979662539526b4fd25
+SHA1 (freebsd_lib-2.2.7.tar.gz) = fb62fba4a442303d80df6820fd20592850fc877e
+Size (freebsd_lib-2.2.7.tar.gz) = 1950770 bytes

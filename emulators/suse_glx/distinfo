@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/17 13:05:43 tron Exp $
+$NetBSD$
 
-MD5 (suse64/glx.rpm) = 18a3f02cf9bf2d337516fc982c95c274
+SHA1 (suse64/glx.rpm) = cd4042208af439aa990a63852507c8b11752d1e5
+Size (suse64/glx.rpm) = 978087 bytes
