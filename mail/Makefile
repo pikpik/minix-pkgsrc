@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2000/12/12 01:30:52 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2001/01/02 01:14:05 wiz Exp $
 #
 
     SUBDIR += balsa
@@ -41,6 +41,7 @@
     SUBDIR += sendmail88
     SUBDIR += smtpfeed
     SUBDIR += spruce
+    SUBDIR += squirrelmail
     SUBDIR += sylpheed
     SUBDIR += tnef
     SUBDIR += vm
