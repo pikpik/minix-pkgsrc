@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Sun Jan 28 21:48:55 2001
-+++ configure
-@@ -1885,9 +1885,9 @@
+--- cf/sysloc.in.orig	Fri Jan 12 07:54:57 2001
++++ cf/sysloc.in
+@@ -19,9 +19,9 @@
  # appended to them though.
  
  ITKLIBSTR=-litk

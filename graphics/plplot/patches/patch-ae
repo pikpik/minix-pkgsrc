@@ -1,15 +1,13 @@
 $NetBSD$
 
---- cf/sysconf.in.orig	Fri Jun 25 04:27:20 1999
+--- cf/sysconf.in.orig	Sun Jan 28 21:59:55 2001
 +++ cf/sysconf.in
-@@ -293,6 +293,10 @@
-     fi
- fi
+@@ -78,7 +78,7 @@
  
-+if test "$F77" = "f2c-f77" ; then
-+    DBL_FLAG_F=""
-+fi
-+
- # ----------------------------------------------------------------------------
- # gcc
- # ----------------------------------------------------------------------------
+ # Defaults
+ 
+-M4=m4
++M4=gm4
+ 
+ # Double precision
+ # Note that because there is no standard way to invoke double
