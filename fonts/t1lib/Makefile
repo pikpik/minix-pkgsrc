@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/06/19 14:38:56 markd Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:14:42 tv Exp $
 #
 
 DISTNAME=	t1lib-5.0.2
@@ -18,7 +18,6 @@ USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_X11=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ac-tools/ltconfig
 
 ALL_TARGET=	without_doc
 
