@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2003/07/25 11:32:01 drochner Exp $
+# $NetBSD: Makefile,v 1.103 2003/09/09 13:47:25 recht Exp $
 #
 
 COMMENT=	Databases
@@ -91,6 +91,7 @@ SUBDIR+=	py-sybase
 SUBDIR+=	quicklist
 SUBDIR+=	rdb
 SUBDIR+=	rrdtool
+SUBDIR+=	ruby-DBD-mysql
 SUBDIR+=	ruby-DBD-postgresql
 SUBDIR+=	ruby-DBI
 SUBDIR+=	ruby-gdbm
