@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2002/03/26 07:29:34 rh Exp $
+# $NetBSD: Makefile,v 1.25 2002/04/10 14:37:16 jlam Exp $
 #
 
 DISTNAME=		bonobo-1.0.18
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/bonobo/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.66 2002/03/29 18:01:13 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2002/04/09 15:29:51 jlam Exp $
 #
 
 DISTNAME=		imlib-1.9.14
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/imlib/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/04/27 11:31:24 rh Exp $
+# $NetBSD: Makefile,v 1.4 2002/07/12 15:33:12 wiz Exp $
 #
 
 DISTNAME=		ORBit2-2.4.0
+PKGREVISION=		1
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=2.0.0/sources/ORBit2/}/
 EXTRACT_SUFX=		.tar.bz2
