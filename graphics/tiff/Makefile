@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1998/08/20 15:17:02 tsarna Exp $
+# $NetBSD: Makefile,v 1.18 1998/08/20 15:50:00 agc Exp $
 
 DISTNAME=	tiff-v3.4beta037
 PKGNAME=	tiff-3.4
@@ -16,7 +16,7 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 HAS_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 CONFIGURE_ARGS+=	--noninteractive --site ${FILESDIR}
-CONFIGURE_ENV+=		PREFIX=${PREFIX} GCOPTS=-O
+CONFIGURE_ENV+=		PREFIX=${PREFIX} GCOPTS="-O -Dunix"
 MAKE_ENV+=		INSTALL_MAN="${INSTALL_MAN}" LN="${LN}"
 
 .include "../../mk/bsd.pkg.mk"
