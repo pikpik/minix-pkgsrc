@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2004/04/28 14:33:58 dillo Exp $
+# $NetBSD: Makefile,v 1.32 2004/06/07 23:37:41 dmcmahill Exp $
 #
 
-DISTNAME=	fontconfig-2.2.95
+DISTNAME=	fontconfig-2.2.96
 CATEGORIES=	fonts gnome
 MASTER_SITES=	http://freedesktop.org/~fontconfig/release/
 
