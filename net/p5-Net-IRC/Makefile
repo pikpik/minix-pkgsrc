@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2001/10/18 15:20:31 veego Exp $
+# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:10 jlam Exp $
 
-DISTNAME=		Net-IRC-0.70
+DISTNAME=		Net-IRC-0.73
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5nir
 CATEGORIES=		net perl5
