@@ -1,10 +1,10 @@
 $NetBSD$
 
---- configure.orig	Thu Feb 21 08:55:21 2002
-+++ configure	Thu Jun 13 10:12:43 2002
-@@ -8802,6 +8802,11 @@
- #define LIBAO_SOLARIS
- EOF
+--- configure.orig	Sun Jul 28 05:50:42 2002
++++ configure
+@@ -9743,6 +9743,11 @@ if test $ac_cv_lib_ossaudio__oss_ioctl =
+   LIBAO_LIBS="$LIBAO_LIBS -lossaudio"
+ fi
  ;;
 +    *-netbsd*)
 +cat >> confdefs.h <<\EOF
