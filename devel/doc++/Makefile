@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:38:23 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/06/04 16:24:54 yyamano Exp $
 
 DISTNAME=		doc++-3.4.9
 CATEGORIES=		devel
@@ -9,6 +9,8 @@ HOMEPAGE=		http://docpp.sourceforge.net/
 COMMENT=		documentation system for C, C++ and Java
 
 USE_GMAKE=		yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
 post-install:
