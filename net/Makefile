@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.190 2001/02/16 15:51:52 wiz Exp $
+# $NetBSD: Makefile,v 1.191 2001/02/18 04:53:10 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -43,6 +43,7 @@ SUBDIR+=	gated
 SUBDIR+=	gnapfetch
 SUBDIR+=	gnapster
 SUBDIR+=	gnomeicu
+SUBDIR+=	gnubile
 SUBDIR+=	gnut
 SUBDIR+=	gtk-gnutella
 SUBDIR+=	gtksamba
