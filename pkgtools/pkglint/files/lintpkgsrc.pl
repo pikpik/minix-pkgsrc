@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.66 2002/03/22 15:57:55 wiz Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.67 2002/06/02 21:52:29 wiz Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -117,7 +117,7 @@ if ($opt{D} && @ARGV)
 		}
 	    close(VULN);
 	    }
-	if ($opt{p} || $opt{O} || $opt{R})
+	if ($opt{p} || $opt{O} || $opt{R} || $opt{V})
 	    { scan_pkgsrc_makefiles($pkgsrcdir); }
 	@prebuilt_pkgdirs = ($default_vars->{PACKAGES});
 	%prebuilt_pkgdir_cache = ();
