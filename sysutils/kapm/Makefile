@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/04/12 23:33:37 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2000/06/26 16:44:21 dmcmahill Exp $
 #
 
 DISTNAME=	kapm-0.3.1
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://bodnar42.dhs.org/pub/kapm/
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://bodnar42.dhs.org/kapm/
 
-.if !exists(/usr/include/machine/apmvar.h")
+.if !exists(/usr/include/machine/apmvar.h)
 IGNORE+=	"APM is not available for ${MACHINE_PLATFORM}"
 .endif
 
