@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1999/09/19 02:03:07 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.24 1999/09/19 11:32:52 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -29,7 +29,6 @@
 #    SUBDIR += sgmlformat
     SUBDIR += sp
     SUBDIR += t1lib
-    SUBDIR += t1libx
     SUBDIR += ted
     SUBDIR += ted-cs
     SUBDIR += ted-da
