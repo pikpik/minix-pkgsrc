@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.255 2001/10/16 07:09:16 jlam Exp $
+# $NetBSD: Makefile,v 1.256 2001/10/16 15:15:49 agc Exp $
 #
 
 COMMENT=	Networking tools
@@ -189,6 +189,7 @@ SUBDIR+=	tinyfugue
 SUBDIR+=	tkined
 SUBDIR+=	tn5250
 SUBDIR+=	totd
+SUBDIR+=	traceroute-as
 SUBDIR+=	trafshow
 SUBDIR+=	ttt
 SUBDIR+=	ucd-snmp
