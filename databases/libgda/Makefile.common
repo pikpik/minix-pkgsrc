@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.16 2004/02/14 17:21:35 jlam Exp $
+# $NetBSD: Makefile.common,v 1.17 2004/03/11 14:00:29 jmmv Exp $
 #
 
 DISTNAME?=		libgda-1.0.3
@@ -20,6 +20,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir="${PKG_SYSCONFDIR}"
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir="${PREFIX}/share/doc/html"
+CONFIGURE_ARGS+=	--without-ldap
 
 PKG_SYSCONFSUBDIR=	libgda
 EGDIR=			${PREFIX}/share/examples/libgda
