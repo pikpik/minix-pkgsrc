@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gmodplay
+bin/mod2wav
+share/doc/gmodplay/README
+@dirrm share/doc/gmodplay
