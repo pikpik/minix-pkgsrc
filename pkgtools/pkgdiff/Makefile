@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2003/07/17 22:52:17 grant Exp $
+# $NetBSD: Makefile,v 1.40 2003/08/23 19:40:18 seb Exp $
 #
 
 DISTNAME=	pkgdiff-0.113
@@ -22,6 +22,8 @@ USE_BUILDLINK2=	yes
 MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
+
+BUILD_DEFS+=	MANINSTALL
 
 .if ${OPSYS} == "SunOS"
 DEPENDS+=	diffutils-[0-9]*:../../devel/diffutils
