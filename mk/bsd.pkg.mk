@@ -4491,7 +4491,6 @@ _PRINT_PLIST_DIRS_CMD=	\
 	${FIND} ${PREFIX}/. -xdev -newer ${EXTRACT_COOKIE} -type d -print
 _PRINT_LA_LIBNAMES=	${.CURDIR}/../../mk/scripts/print-la-libnames
 
-.if defined(USE_LIBTOOL)
 _PRINT_PLIST_LIBTOOLIZE_FILTER?=					\
 	(								\
 	  if ${TEST} -d ${WRKDIR}; then					\
@@ -4516,9 +4515,6 @@ _PRINT_PLIST_LIBTOOLIZE_FILTER?=					\
 	  fi;								\
 	  ${RM} -f "$$fileslist" "$$libslist";				\
 	)
-.else
-_PRINT_PLIST_LIBTOOLIZE_FILTER?=	${CAT}
-.endif
 
 .PHONY: print-PLIST
 .if !target(print-PLIST)
@@ -4959,12 +4955,10 @@ BEGIN {									\
 .if ${PLIST_TYPE} == "dynamic"
 _PLIST_AWK_LIBTOOL?=	# empty
 .else
-.  if defined(USE_LIBTOOL)
 _PLIST_AWK_LIBTOOL?=							\
 /\.la$$/ {								\
 	system("cd ${PREFIX} && ${SH} ${_PRINT_LA_LIBNAMES} " $$0)	\
 }
-.  endif
 .endif
 
 # _PLIST_AWK_SCRIPT hold the complete awk script for plist target.
