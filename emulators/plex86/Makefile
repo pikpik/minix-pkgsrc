@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/12/15 00:10:32 tv Exp $
+# $NetBSD: Makefile,v 1.10 2000/12/16 12:43:13 fvdl Exp $
 #
 
 DISTNAME=	plex86-20001216
@@ -44,6 +44,7 @@ pre-build:
 	cd ${WRKSRC} && ${GTAR} xzf docs/output.tar.gz
 
 post-build:
+	${TEST} -f ${WRKSRC}/misc/vga.pcf.gz || \
 	${GZIP_CMD} -9 ${WRKSRC}/misc/vga.pcf
 
 do-install: do-install-dirs do-install-binaries do-install-bios \
