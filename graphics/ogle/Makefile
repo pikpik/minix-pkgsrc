@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/12/26 18:22:33 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/03/18 20:08:25 skrll Exp $
 
 DISTNAME=	ogle-0.8.2
 CATEGORIES=	graphics
@@ -21,6 +21,7 @@ CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_LIBTOOL=		yes
+USE_CONFIG_WRAPPER=	yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/gettext-lib/buildlink.mk"
