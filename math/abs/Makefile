@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.3 1999/01/30 23:18:52 agc Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/23 23:14:29 tron Exp $
 #
 
-DISTNAME=	abs-src-0.5
-PKGNAME=	abs-0.5
+DISTNAME=	abs-src-0.8
+PKGNAME=	abs-0.8
 CATEGORIES=	math x11
 MASTER_SITES=	http://www.ping.be/bertin/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ping.be/bertin/abs.shtml
 
-USE_X11BASE=	YES
 USE_XPM=	YES
+USE_X11BASE=	YES
+MAKEFILE=	Makefile.netBSD
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/abs ${PREFIX}/bin
