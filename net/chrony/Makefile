@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/22 23:01:52 tron Exp $
 
 DISTNAME=	chrony-1.17
 CATEGORIES=	net
@@ -17,7 +17,7 @@ RCD_SCRIPTS=		chronyd
 
 pre-install:
 	${SED} ${FILES_SUBST_SED} \
-		${FILESDIR}/chronyd > ${WRKDIR}/chronyd
+		${FILESDIR}/chronyd.sh > ${WRKDIR}/chronyd
 	for file in ${EGFILES}; do				\
 		${SED} ${FILES_SUBST_SED}			\
 			${WRKSRC}/examples/$${file} >		\
