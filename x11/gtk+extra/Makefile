@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 12:25:51 rh Exp $
 #
 
-DISTNAME=	gtk+extra-0.99.11
+DISTNAME=	gtk+extra-0.99.12
 CATEGORIES=	x11
-MASTER_SITES=	http://magnet.fsu.edu/~feiguin/gtk/src/
+MASTER_SITES=	http://gtkextra.sourceforge.net/src/
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://magnet.fsu.edu/~feiguin/gtk/
