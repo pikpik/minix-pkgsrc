@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- gtkspell-2.0.pc.in.orig	Fri Aug  2 14:31:47 2002
++++ gtkspell-2.0.pc.in
+@@ -7,6 +7,6 @@ Name: GTKSpell
+ Description: GTK spelling library
+ Version: @VERSION@
+ Requires: @GTKSPELL_PACKAGES@
+-Libs: -L${libdir} -lgtkspell -lpspell
++Libs: -Wl,-R${libdir} -L${libdir} -lgtkspell -lpspell
+ Cflags: -I${includedir}/gtkspell-2.0
+ 
