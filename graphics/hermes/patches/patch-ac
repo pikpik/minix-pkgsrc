@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2 1999/11/30 08:22:16 rh Exp $
 
 --- src/Makefile.in.orig	Mon Nov 29 16:22:58 1999
 +++ src/Makefile.in	Mon Nov 29 16:22:58 1999
@@ -7,7 +7,7 @@ $NetBSD$
  
  install-data-local:
 -	$(INSTALL) -m 0755 -d $(includedir)/Hermes
-+	$(INSTALL_PROGRAM_DIR) -m 0755 $(includedir)/Hermes
++	$(BSD_INSTALL_PROGRAM_DIR) -m 0755 $(includedir)/Hermes
  	for incfile in $(publicheaders); do \
  	  $(INSTALL) -m 0644 $$incfile $(includedir)/Hermes; \
  	done
