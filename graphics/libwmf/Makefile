@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2004/06/05 22:53:54 reed Exp $
+# $NetBSD: Makefile,v 1.50 2004/10/03 00:14:55 tv Exp $
 #
 
 DISTNAME=	libwmf-0.2.8.3
@@ -26,6 +26,5 @@ post-install:
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
