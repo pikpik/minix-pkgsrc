@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/yasql
+man/man1/yasql.1
+share/examples/yasql/yasql.conf
+@dirrm share/examples/yasql
