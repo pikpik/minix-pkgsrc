@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1999/06/22 04:16:30 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.4 1999/05/19 09:41:06 tg Exp $
 
-DISTNAME=	sketch-0.6.0
+DISTNAME=	sketch-0.6.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.online.de/home/sketch/
 
