@@ -1,5 +1,7 @@
 #!@RCD_SCRIPTS_SHELL@
 #
+# $NetBSD$
+#
 # PROVIDE: icecast
 # REQUIRE: DAEMON LOGIN network
 
