@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1 1998/08/12 22:44:32 tv Exp $
+# $NetBSD: Makefile,v 1.2 1998/08/23 20:48:03 frueauf Exp $
 #
 
-DISTNAME=	sim_2.3c
-PKGNAME=	simh-2.3c
+DISTNAME=	sim_2.3d
+PKGNAME=	simh-2.3d
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://minnie.cs.adfa.oz.au/pub/PDP-11/Sims/Supnik_2.3/sources/
 
