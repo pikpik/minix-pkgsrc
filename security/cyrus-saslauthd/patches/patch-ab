@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Mon Dec  1 11:35:12 2003
+--- Makefile.in.orig	Wed Mar 10 10:56:16 2004
 +++ Makefile.in
-@@ -602,14 +602,11 @@ uninstall-am: uninstall-info-am uninstal
+@@ -601,14 +601,11 @@ uninstall-am: uninstall-info-am uninstal
  	uninstall-sbinPROGRAMS
  
  
