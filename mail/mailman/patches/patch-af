@@ -1,0 +1,15 @@
+$NetBSD: patch-aa,v 1.4 2002/05/02 16:18:49 martti Exp $
+
+--- Mailman/Makefile.in.orig	Thu Aug  1 21:16:03 2002
++++ Mailman/Makefile.in	Thu Aug  1 21:16:25 2002
+@@ -67,10 +67,6 @@
+ 	    $(INSTALL) -m $(FILEMODE) $$f $(PACKAGEDIR); \
+ 	done
+ 	$(INSTALL) -m $(FILEMODE) mm_cfg.py.dist $(PACKAGEDIR)
+-	if [ ! -f $(PACKAGEDIR)/mm_cfg.py ]; \
+-	then \
+-	    $(INSTALL) -m $(FILEMODE) mm_cfg.py.dist $(PACKAGEDIR)/mm_cfg.py; \
+-	fi
+ 
+ install: install-here
+ 	for d in $(SUBDIRS); \
