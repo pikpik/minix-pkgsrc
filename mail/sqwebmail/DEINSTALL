@@ -1,0 +1,9 @@
+# $NetBSD$
+
+# Additional files that are may be created for sqwebmail.
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/calendarmode"
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/defaultdomain"
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/logindomainlist"
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/nochangingfrom"
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/noimages"
+ALL_FILES="${ALL_FILES} /dev/null @PKG_SYSCONFDIR@/usexsender"
