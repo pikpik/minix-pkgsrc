@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/03/29 10:17:49 recht Exp $
+# $NetBSD: Makefile,v 1.31 2004/04/27 14:59:49 adam Exp $
 #
 
 DISTNAME=	freetype-2.1.8
@@ -20,7 +20,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
-USE_GNU_TOOLS+=		make
+USE_GNU_TOOLS+=		grep make
 GNU_CONFIGURE=		YES
 CONFIGURE_DIRS=		${WRKSRC}/builds/unix
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include
