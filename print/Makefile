@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2003/03/25 14:04:41 salo Exp $
+# $NetBSD: Makefile,v 1.103 2003/04/06 14:38:40 wiz Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -10,6 +10,7 @@ SUBDIR+=	a2ps
 SUBDIR+=	acroread
 SUBDIR+=	acroread3
 SUBDIR+=	acroread5
+SUBDIR+=	adobeps-win
 SUBDIR+=	apsfilter
 SUBDIR+=	auctex
 SUBDIR+=	bg5pdf
