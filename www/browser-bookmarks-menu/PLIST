@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/bonobo/servers/BrowserBookmarksMenu.server
+libexec/browser-bookmarks-menu.py
+@comment in libbonobo: @dirrm lib/bonobo/servers
