@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2000/03/16 00:56:31 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2000/04/02 18:44:14 rh Exp $
 #
 
-DISTNAME=	gnapster-1.3.8
+DISTNAME=	gnapster-1.3.9
 CATEGORIES=	net
-MASTER_SITES=	http://www.gotlinux.org/~jasta/files/
+MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.gotlinux.org/~jasta/programs.html
+HOMEPAGE=	http://www.faradic.net/~jasta/programs.html
 
 DEPENDS+=	gnome-core-*:../../x11/gnome-core
 
