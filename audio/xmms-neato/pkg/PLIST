@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xmms/Visualization/neato.a
+lib/xmms/Visualization/neato.la
+lib/xmms/Visualization/neato.so
