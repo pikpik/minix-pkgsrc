@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.48 2000/04/09 03:53:16 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2000/05/20 19:32:18 jlam Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
-BUILD_DEPENDS+=		${LOCALBASE}/bin/bison:../../devel/bison
 DEPENDS+=		readline-*:../../devel/readline
 
 MAKEFILE=		GNUmakefile
