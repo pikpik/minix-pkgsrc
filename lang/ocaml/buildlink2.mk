@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1 2002/10/16 16:25:10 dillo Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2004/04/22 09:18:35 tron Exp $
 #
 # This Makefile fragment is included by packages that use ocaml.
 
@@ -22,5 +22,7 @@ BUILDLINK_FILES.ocaml+=	lib/ocaml/threads/*
 BUILDLINK_TARGETS+=	ocaml-buildlink
 
 ocaml-buildlink: _BUILDLINK_USE
+
+.include "../../x11/tk/buildlink3.mk"
 
 .endif	# OCAML_BUILDLINK2_MK
