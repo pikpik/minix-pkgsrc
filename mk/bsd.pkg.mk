@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.725 2001/04/21 12:56:56 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.726 2001/04/22 06:29:37 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -2500,7 +2500,7 @@ makesum: fetch uptodate-digest
 	for sumfile in "" ${_CKSUMFILES}; do				\
 		if [ "X$$sumfile" = "X" ]; then continue; fi;		\
 		${DIGEST} ${DIGEST_ALGORITHM} $$sumfile >> $$newfile;	\
-		${LS} -l $$sumfile | ${AWK} '{ print "Size (" $$9 ") = " $$5 " bytes" }' >> $$newfile; \
+		wc -c $$sumfile | ${AWK} '{ print "Size (" $$2 ") = " $$1 " bytes" }' >> $$newfile; \
 	done;								\
 	for ignore in "" ${_IGNOREFILES}; do				\
 		if [ "X$$ignore" = "X" ]; then continue; fi;		\
