@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/01/01 05:03:59 agc Exp $
+# $NetBSD: Makefile,v 1.18 2000/01/15 18:46:26 jlam Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:55:09 gj Exp
 
 DISTNAME=	vile-9.0
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	--with-screen=ncurses
 .endif
 
 post-install:
-	-@${MKDIR} -p ${PREFIX}/share/examples/vile
+	-@${MKDIR} ${PREFIX}/share/examples/vile
 	@for f in filters/spell.rc filters/filters.rc		\
 		macros/digraphs.rc macros/pictmode.rc		\
 		macros/manpage.rc visvile/visvile.rc; do	\
