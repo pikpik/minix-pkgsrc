@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/04/21 04:30:32 itohy Exp $
+# $NetBSD: Makefile,v 1.11 2000/05/19 07:34:33 itohy Exp $
 
 DISTNAME=	w3m-0.1.9
 CATEGORIES=	www
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://ei5nazha.yz.yamagata-u.ac.jp/~aito/w3m/
 
-DEPENDS=	boehm-gc-5.0a3:../../devel/boehm-gc
+DEPENDS=	boehm-gc-5.0a7:../../devel/boehm-gc
 
 WRKSRC=		${WRKDIR}/w3m
 HELPDIR=	share/doc/w3m
