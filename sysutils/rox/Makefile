@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/21 11:28:16 rh Exp $
 #
 
 DISTNAME=	rox-1.2.0
@@ -10,7 +10,7 @@ MAINTAINER=	rxg@netbsd.org
 HOMEPAGE=	http://rox.sourceforge.net/
 COMMENT=	RISC OS-like filer for X
 
-DEPENDS+=	rox-base>=1.0.2:../../misc/rox-base
+DEPENDS+=	rox-base>=1.0.2:../../sysutils/rox-base
 
 DIST_SUBDIR=	rox
 
