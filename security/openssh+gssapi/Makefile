@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2003/08/30 22:51:37 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2003/09/11 04:13:01 jlam Exp $
 
 # NOTE:  This package is modeled on ../openssh, but does not share
 # files with it as that package may update faster than the gssapi
 # patches do.
+
+BROKEN=			OpenSSH 3.6.1p2 contains a buffer overflow, and updated version of patch is not yet available.
 
 DISTNAME=		openssh-3.6.1p2
 PKGNAME=		openssh+gssapi-3.6.1.2.20030430
