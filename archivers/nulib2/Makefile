@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/11 03:01:02 tv Exp $
+# $NetBSD: Makefile,v 1.2 2001/07/16 10:09:45 jlam Exp $
 #
 
 DISTNAME=	nulibdist
@@ -6,7 +6,7 @@ PKGNAME=	nulib2-1.0.1
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.nulib.com/downloads/
 
-MAINTAINER=	tv@netbsd.org
+MAINTAINER=	tv@poxbox.com
 HOMEPAGE=	http://www.nulib.com/
 COMMENT=	Handles Apple II ShrinkIt (NuFX) file/disk archives
 
