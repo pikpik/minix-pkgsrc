@@ -1,0 +1,12 @@
+===========================================================================
+$NetBSD$
+
+To use ${PKGNAME}, you will need to make the following
+changes to ${PKG_SYSCONFDIR}/authdaemonrc:
+
+     1) Add "authmysql" to the lists of available authentication modules
+	in "authmodulelist" and "authmodulelistorig", and
+
+     2) Set version="authdaemond.mysql" to start the correct authentication
+	daemon.
+===========================================================================
