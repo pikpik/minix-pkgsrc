@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.5 2001/12/08 23:15:36 kristerw Exp $
+# $NetBSD: buildlink.mk,v 1.6 2001/12/17 09:38:07 tron Exp $
 #
 # This Makefile fragment is included by packages that use X11.
 #
@@ -10,6 +10,7 @@
 # (3) Add ${BUILDLINK_DIR}/lib to the front of the linker's library search
 #     path.
 
+.if defined(_FOR_X11_LINKS_ONLY)
 .if !defined(X11_LINKS_BUILDLINK_MK)
 X11_LINKS_BUILDLINK_MK=	# defined
 
@@ -1519,3 +1520,4 @@ pre-configure: ${BUILDLINK_TARGETS.X11}
 X11-buildlink: _BUILDLINK_USE
 
 .endif	# X11_LINKS_BUILDLINK_MK
+.endif	# _FOR_X11_LINKS_ONLY
