@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/17 21:30:33 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/21 16:43:21 martti Exp $
 
 DISTNAME=	g-wrap-1.3.4
 PKGREVISION=	3
@@ -17,7 +17,6 @@ GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		g-wrap.info
 

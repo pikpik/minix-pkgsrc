@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/06/23 21:13:10 seb Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:31:54 grant Exp $
 #
 
 DISTNAME=	nasm-0.98.36
@@ -14,7 +14,6 @@ INSTALL_TARGET=	install_everything
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_PERL5=	build
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=	YES
 INFO_FILES=	nasm.info
 

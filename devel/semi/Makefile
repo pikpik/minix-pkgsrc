@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/25 12:44:21 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:33:55 grant Exp $
 
 DISTNAME=	semi-1.14.5
 PKGREVISION=	1
@@ -24,7 +24,6 @@ INSTALL_TARGET= install-package
 MAKEFLAGS+=     PACKAGEDIR=${EMACS_LISPPREFIX:C|/lisp$||}
 .endif
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=	YES
 INFO_FILES=	mime-ui-en.info mime-ui-ja.info
 

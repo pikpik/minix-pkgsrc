@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:31:18 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:43:26 martti Exp $
 #
 
 DISTNAME=	avl-1.4.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.msu.edu/user/pfaffben/avl/
 COMMENT=	Library for manipulation of balanced binary trees
 
 GNU_CONFIGURE=	YES
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	avl.info
 
 # This text file documentation is not installed so just touch it

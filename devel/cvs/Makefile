@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2003/07/12 09:19:17 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2003/07/17 21:30:01 grant Exp $
 #
 
 DISTNAME=	cvs-1.11.6
@@ -47,7 +47,6 @@ pre-fetch:
 
 CONFIGURE_ENV+=	perl_path=${PERL5}
 
-USE_NEW_TEXINFO=	yes
 INFO_FILES=	cvs.info cvsclient.info
 USE_MAKEINFO=		yes
 TEXINFO_REQD?=		4.0

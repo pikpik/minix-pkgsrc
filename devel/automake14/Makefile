@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/19 23:49:53 seb Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:29:37 grant Exp $
 #
 
 DISTNAME=	automake-1.4-p6
@@ -19,7 +19,6 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV=		PERL=${PERL5}
 _STRIPFLAG_INSTALL=	# none
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		automake14.info
 

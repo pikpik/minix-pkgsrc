@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/23 11:11:09 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/13 13:51:14 wiz Exp $
 #
 
 DISTNAME=	guile-oops-0.9.0
@@ -14,7 +14,6 @@ USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
-USE_NEW_TEXINFO=	YES
 INFO_FILES=		goops.info
 
 .include "../../lang/guile14/buildlink2.mk"
