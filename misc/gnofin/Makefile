@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/16 10:33:31 agc Exp $
 #
 
-DISTNAME=       gnofin-0.5.10
+DISTNAME=       gnofin-0.6.0
 CATEGORIES=	misc
 MASTER_SITES=   ftp://jagger.berkeley.edu/pub/darin/gnofin/source/
 
