@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/01/28 22:03:13 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/05/02 11:54:15 wiz Exp $
 
 PKGNAME=		unixodbc-${ODBC_BASE_VERS}
 PKGREVISION=		2
@@ -30,5 +30,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKDIR}/odbcinst.ini ${EGDIR}/odbcinst.ini
 
-.include "../../devel/readline/buildlink2.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
