@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/icbirc
+man/cat8/icbirc.0
+man/man8/icbirc.8
