@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/08/13 10:25:03 agc Exp $
+# $NetBSD: Makefile,v 1.27 2001/08/27 14:35:10 tron Exp $
 
 DISTNAME=		R-1.3.0
 CATEGORIES=		math
@@ -108,4 +108,5 @@ post-install:
 .include "../../graphics/png/buildlink.mk"
 .include "../../math/blas/buildlink.mk"
 .include "../../x11/tk/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/08/27 14:35:05 tron Exp $
+# $NetBSD: Makefile,v 1.4 2001/10/23 13:14:47 jlam Exp $
 
 DISTNAME=	kyahoo-0.7
 CATEGORIES=	chat
@@ -25,7 +25,7 @@ MAKE_ENV+=		USER_LDFLAGS="${LDFLAGS}"
 pre-build:
 	${CHMOD} +x ${WRKSRC}/missing
 
-.include "../../mk/x11.buildlink.mk"
 .include "../../chat/libyahoo/buildlink.mk"
 .include "../../x11/kdebase2/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
