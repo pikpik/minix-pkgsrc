@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 1999/08/17 19:24:39 tron Exp $
+# $NetBSD: Makefile,v 1.27 1999/08/22 22:02:34 tron Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/11/30 19:37:48 vanilla Exp
 #
 
-DISTNAME=	mc-4.5.37
+DISTNAME=	mc-4.5.38
 CATEGORIES=	sysutils
 
 MAINTAINER=	tron@netbsd.org
