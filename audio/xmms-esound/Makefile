@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/25 09:25:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/08 14:41:38 wiz Exp $
 #
 
 .include "../../audio/xmms/Makefile.common"
@@ -16,6 +16,6 @@ BUILDLINK_DEPENDS.xmms=	xmms>=1.2.7nb9
 BUILD_DIRS=	${WRKSRC}/Output/esd
 INSTALL_DIRS=	${WRKSRC}/Output/esd
 
-.include "../../audio/esound/buildlink2.mk"
-.include "../../audio/xmms/buildlink2.mk"
+.include "../../audio/esound/buildlink3.mk"
+.include "../../audio/xmms/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
