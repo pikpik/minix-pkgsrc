@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.998 2002/06/30 15:01:47 schmonz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.999 2002/07/02 11:26:06 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -3100,7 +3100,10 @@ makesum: fetch uptodate-digest
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	newfile=${DISTINFO_FILE}.$$$$;					\
 	if [ -f ${DISTINFO_FILE} ]; then				\
-		${AWK} -- '{print ; exit}' ${DISTINFO_FILE} > $$newfile; \
+		${GREP} '^.NetBSD' ${DISTINFO_FILE} > $$newfile ||	\
+			(${ECHO} -n "$$" > $$newfile &&			\
+			 ${ECHO} -n "NetBSD" >> $$newfile && 		\
+			 ${ECHO} "$$" >> $$newfile)			\
 	else								\
 		${ECHO} -n "$$" > $$newfile;				\
 		${ECHO} -n "NetBSD" >> $$newfile; 			\
@@ -3138,6 +3141,7 @@ makepatchsum mps: uptodate-digest
 		${ECHO} -n "$$" > $$newfile;				\
 		${ECHO} -n "NetBSD" >> $$newfile; 			\
 		${ECHO} "$$" >> $$newfile;				\
+		${ECHO} "" >> $$newfile;				\
 	fi;								\
 	if [ -d ${PATCHDIR} ]; then					\
 		(cd ${PATCHDIR};					\
