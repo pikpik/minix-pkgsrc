@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makedefs.in.orig	Thu Sep 14 11:36:24 2000
+--- Makedefs.in.orig	Mon Oct 16 19:02:08 2000
 +++ Makedefs.in
 @@ -46,14 +46,21 @@
  SHELL	=	/bin/sh
