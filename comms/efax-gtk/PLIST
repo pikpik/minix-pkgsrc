@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/efax-gtk
+bin/efax-gtk-send
+etc/efax-gtkrc
+man/man1/efax-gtk.1
