@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.432 2003/12/02 23:24:47 recht Exp $
+# $NetBSD: Makefile,v 1.433 2003/12/03 19:03:19 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -188,10 +188,12 @@ SUBDIR+=	libgsf
 SUBDIR+=	libgtop
 SUBDIR+=	libgtop2
 SUBDIR+=	libhfs
+SUBDIR+=	libidn
 SUBDIR+=	libmemmgr
 SUBDIR+=	libmm
 SUBDIR+=	libmpeg3
 SUBDIR+=	libnet
+SUBDIR+=	libntlm
 SUBDIR+=	libole2
 SUBDIR+=	liboop
 SUBDIR+=	libportlib
