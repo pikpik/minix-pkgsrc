@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/01/04 12:25:13 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/28 22:03:19 jlam Exp $
 #
 
 DISTNAME=	koth-0.7.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www-unix.oit.umass.edu/~tetron/koth/
 
