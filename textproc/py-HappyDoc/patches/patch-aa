@@ -1,4 +1,4 @@
-@NetBSD@
+$NetBSD$
 
 --- setup.py.orig	Tue Jan 29 16:46:18 2002
 +++ setup.py	Tue Jan 29 16:47:05 2002
