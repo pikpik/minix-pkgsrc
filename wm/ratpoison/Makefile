@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/12 07:59:08 zuntum Exp $
 #
 
 DISTNAME=	ratpoison-0.1.1
@@ -10,5 +10,6 @@ HOMEPAGE=	http://ratpoison.sourceforge.net/
 COMMENT=	Simple window manager with no fat library dependencies
 
 GNU_CONFIGURE=	YES
+USE_X11=	YES
 
 .include "../../mk/bsd.pkg.mk"
