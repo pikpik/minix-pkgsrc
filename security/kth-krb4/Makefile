@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/03/26 02:27:52 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2004/05/10 02:10:14 snj Exp $
 #
 
 DISTNAME=		krb4-1.2.1
@@ -10,11 +10,6 @@ MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/krb/src/
 MAINTAINER=		wennmach@NetBSD.org
 HOMEPAGE=		http://www.pdc.kth.se/kth-krb/
 COMMENT=		Kerberos IV distribution from KTH
-
-# enable this once our autoconf has been upgraded to autoconf>=2.52:
-# (don't forget to also add automake.mk (see bottom))
-#AUTOCONF_REQD=		2.52
-#AUTOMAKE_REQD=		1.7
 
 CONFLICTS+=		zephyr-[0-9]*
 CONFLICTS+=		libdes-[0-9]*
