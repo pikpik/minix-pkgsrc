@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2001/08/08 07:15:03 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/08/22 17:38:59 jlam Exp $
 
 DISTNAME=       xpm-3.4k
 CATEGORIES=	graphics x11
-MASTER_SITES=	ftp://avahi.inria.fr/pub/xpm/
+MASTER_SITES=	http://koala.ilog.fr/ftp/pub/xpm/ \
+		${MASTER_SITE_XCONTRIB:=libraries/}
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.inria.fr/koala/lehors/xpm.html
