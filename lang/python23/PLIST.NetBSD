@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/python2.3/lib-dynload/bsddb185.so
+lib/python2.3/test/output/test_linuxaudiodev
+lib/python2.3/test/test_linuxaudiodev.py
+lib/python2.3/test/test_linuxaudiodev.pyc
+lib/python2.3/test/test_linuxaudiodev.pyo
