@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:31:59 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/25 04:18:19 hubertf Exp $
 #
 
 DISTNAME=	asclock-gtk-2.1.10beta
 PKGNAME=	asclock-gtk-2.1.10
 WRKSRC=		${WRKDIR}/asclock-gtk
 CATEGORIES=	x11 time
-MASTER_SITES=	http://www.asclock.org/tar/
+MASTER_SITES=	${MASTER_SITE_LOCAL}	# www.asclock.org is no more
 
 MAINTAINER=	jlam@netbsd.org
-HOMEPAGE=	http://www.asclock.org/
 COMMENT=	dockable clock and calendar with themes for GTK+
 
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
