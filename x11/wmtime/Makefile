@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2000/07/31 13:28:14 ad Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/23 23:14:36 tron Exp $
 
 DISTNAME=	wmtime-1.0b2
 CATEGORIES=	x11
-MASTER_SITES=	http://www.netbsd.org/~ad/distfiles/
+MASTER_SITES=	ftp://ftp.alpha.alt.ru/pub/UNIX/X11/WMaker/ \
+		http://www.netbsd.org/~ad/distfiles/
 
 MAINTAINER=	ad@netbsd.org
 
