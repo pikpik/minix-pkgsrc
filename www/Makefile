@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.306 2004/02/29 17:49:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.307 2004/03/03 21:19:34 ben Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
 
 SUBDIR+=	Mosaic
-SUBDIR+=	MozillaFirebird
 SUBDIR+=	MozillaFirebird-bin-nightly
 SUBDIR+=	adzap
 SUBDIR+=	amaya
