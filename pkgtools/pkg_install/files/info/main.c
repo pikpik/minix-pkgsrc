@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.6 2003/09/23 07:13:51 grant Exp $	*/
+/*	$NetBSD: main.c,v 1.7 2004/01/06 15:53:41 hubertf Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static char *rcsid = "from FreeBSD Id: main.c,v 1.14 1997/10/08 07:47:26 charnier Exp";
 #else
-__RCSID("$NetBSD: main.c,v 1.6 2003/09/23 07:13:51 grant Exp $");
+__RCSID("$NetBSD: main.c,v 1.7 2004/01/06 15:53:41 hubertf Exp $");
 #endif
 #endif
 
@@ -242,7 +242,7 @@ main(int argc, char **argv)
 
 	/* Get all the remaining package names, if any */
 	if (File2Pkg && !AllInstalled)
-		if (pkgdb_open(ReadOnly) == -1) {
+		if (!pkgdb_open(ReadOnly)) {
 			err(EXIT_FAILURE, "cannot open pkgdb");
 		}
 	while (*argv) {
