@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/05/07 01:14:48 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:47 tv Exp $
 #
 
 DISTNAME=	${DISTFILES}
@@ -15,7 +15,7 @@ COMMENT=	U.R.B.A.N The Cyborg Project
 USE_BUILDLINK3=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
-WRKSRC=			${WRKDIR}/${PKGNAME}
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 post-install:
 	cd ${WRKDIR} && ${PAX} -rwppm snd ${PREFIX}/share/urban
