@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.343 2004/11/07 15:09:41 minskim Exp $
+# $NetBSD: Makefile,v 1.344 2004/11/07 15:11:30 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -236,6 +236,7 @@ SUBDIR+=	sane-frontends
 SUBDIR+=	scigraphica
 SUBDIR+=	scrot
 SUBDIR+=	showimg
+SUBDIR+=	simage
 SUBDIR+=	skencil
 SUBDIR+=	snx101view
 SUBDIR+=	sodipodi
