@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/01/14 15:48:29 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/15 20:39:44 tron Exp $
 #
 
 DISTNAME=		fort77-1.14a
@@ -7,7 +7,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=devel/lang/fortran/}
 
 MAINTAINER=		packages@netbsd.org
 
-DEPENDS+=		f2c-19980913:../../lang/f2c
+DEPENDS+=		f2c:../../lang/f2c
 
 # on 1.3.X systems there is not shared libf2c, thus use libf2c.a
 # from the f2c package.
