@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/30 03:09:36 rh Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/24 06:10:18 wiz Exp $
 #
 
 DISTNAME=		gnet-1.1.7
@@ -16,6 +16,7 @@ PKGCONFIG_OVERRIDE=	${WRKSRC}/gnet.pc.in
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 CONFIGURE_ARGS=		--enable-glib2
+TEST_TARGET=		check
 
 .include "../../devel/glib2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
