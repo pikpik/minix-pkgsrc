@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 1999/02/19 14:26:57 rh Exp $
+# $NetBSD: Makefile,v 1.6 1999/03/01 13:16:24 rh Exp $
 #
 
-DISTNAME=	gEDA-19990226
+DISTNAME=	gEDA-19990327
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ftp.geda.seul.org/pub/geda/dist/ \
 		http://www.geda.seul.org/dist/ \
