@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/03/29 16:20:16 adam Exp $
+# $NetBSD: Makefile,v 1.30 2004/08/13 00:53:27 dmcmahill Exp $
 #
 
 DISTNAME=	octave-${OCTAVE_VER}
@@ -31,7 +31,6 @@ USE_GNU_TOOLS+=		make
 USE_GNU_READLINE=	yes
 USE_MAKEINFO=		yes
 USE_LIBTOOL=		yes
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++ fortran
 GCC_REQD=		3.0
