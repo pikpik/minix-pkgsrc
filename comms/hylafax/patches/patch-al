@@ -1,7 +1,7 @@
 $NetBSD$
 
---- faxd/faxGettyApp.c++.orig	Sat Feb 14 11:49:40 1998
-+++ faxd/faxGettyApp.c++	Mon Apr 12 18:06:51 1999
+--- faxd/faxGettyApp.c++.orig	Sun Jun 13 08:41:05 1999
++++ faxd/faxGettyApp.c++
 @@ -671,7 +671,7 @@
      FaxServer::notifyDocumentRecvd(ri);
  
