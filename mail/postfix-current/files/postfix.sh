@@ -1,6 +1,6 @@
-#!@RCD_SCRIPTS_DIR@
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: postfix,v 1.7 2003/01/31 06:47:16 lukem Exp $
+# $NetBSD: postfix.sh,v 1.1.1.1 2004/03/06 15:04:12 grant Exp $
 #
 
 # PROVIDE: mail
