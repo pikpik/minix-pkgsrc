@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 1998/08/12 22:44:31 tv Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/13 02:17:37 tv Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
 #    SUBDIR += aftp
+   SUBDIR += bochs
 #    SUBDIR += bsvc
    SUBDIR += compat12
 #    SUBDIR += cpmemu
