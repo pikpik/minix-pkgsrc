@@ -1,3 +1,4 @@
+$NetBSD$
 --- conf.c.orig	Fri Jan 13 17:10:33 1995
 +++ conf.c	Sun Apr 27 17:39:41 2003
 @@ -204,8 +204,10 @@
