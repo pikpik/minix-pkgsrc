@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xmysqladmin
+share/xmysqladmin/mysql.xpm
+share/xmysqladmin
