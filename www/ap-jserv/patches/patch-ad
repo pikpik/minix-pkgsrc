@@ -1,3 +1,4 @@
+$NetBSD$
 --- src/c/Makefile.in.orig	Sat Jan 15 20:09:12 2000
 +++ src/c/Makefile.in	Sat Jan 15 20:30:00 2000
 @@ -391,7 +391,7 @@
