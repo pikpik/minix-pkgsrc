@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/07 14:22:44 jmmv Exp $
 #
 
-DISTNAME=	sirius-0.5.0
+DISTNAME=	sirius-0.6.0
 CATEGORIES=	games gnome
 MASTER_SITES=	http://sirius.bitvis.nu/files/
 
