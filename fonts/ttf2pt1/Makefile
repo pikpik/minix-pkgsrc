@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:37:41 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/30 17:21:55 cjep Exp $
 #
 
 DISTNAME=	ttf2pt1-3.4.0
@@ -13,7 +13,7 @@ COMMENT=	TrueType font converter to Postscript type 1
 
 DEPENDS+=	t1utils-[0-9]*:../../fonts/t1utils
 
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	yes
 
-.include "../../graphics/freetype2/buildlink2.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
