@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/15 20:39:41 tron Exp $
+# $NetBSD: Makefile,v 1.6 1999/06/04 15:09:05 agc Exp $
 #
 
 DISTNAME=	xxgdb-1.12
@@ -6,6 +6,7 @@ CATEGORIES=	devel x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}
 
 MAINTAINER=	rh@trapdoor.vip.at
+COMMENT=	graphical X11 interface for gdb
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_IMAKE=	yes

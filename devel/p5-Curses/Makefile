@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/27 07:11:02 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/28 18:20:37 jlam Exp $
 # FreeBSD Id: Makefile,v 1.8 1998/04/04 13:58:26 vanilla Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Curses/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/Curses/Curses.html
+COMMENT=	perl5 module for terminal screen handling and optimization
 
 DEPENDS=	ncurses>=4.2:../../devel/ncurses
 

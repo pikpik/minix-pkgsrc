@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/01/14 05:31:12 tron Exp $
+# $NetBSD: Makefile,v 1.26 2001/02/13 11:47:00 tron Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_GNU:=gettext/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/gettext/gettext.html
+COMMENT=		tools for providing messages in different languages
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

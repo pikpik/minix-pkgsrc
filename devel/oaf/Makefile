@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/10/31 13:35:46 wennmach Exp $
+# $NetBSD: Makefile,v 1.7 2000/12/31 09:58:53 rh Exp $
 #
 
 DISTNAME=		oaf-0.6.1
@@ -7,6 +7,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/oaf/}
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		new object activation framework for GNOME
 
 DEPENDS+=		gnome-libs>=1.2.3:../../x11/gnome-libs
 DEPENDS+=		libxml>=1.8.10:../../textproc/libxml

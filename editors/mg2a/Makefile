@@ -1,4 +1,4 @@
-# $NetBSD: refling $
+# $NetBSD: Makefile,v 1.3 2000/07/10 18:26:52 tron Exp $
 
 DISTNAME=       mg2a
 PKGNAME=	mg2a-1.11
@@ -7,6 +7,7 @@ MASTER_SITES=   ftp://ftp.wustl.edu/languages/c/unix-c/editors/
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	tron@netbsd.org
+COMMENT=	Small, fast, public domain EMACS style editor
 
 post-extract:
 	cd ${WRKSRC} ; ${CP} sys/bsd/Makefile .

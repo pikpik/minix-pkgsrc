@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/14 18:00:24 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2000/09/29 15:40:27 fredb Exp $
 #
 
 DISTNAME=	lwp-1.1
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/ \
 
 MAINTAINER=	fb@enteract.com
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
+COMMENT=	Light Weight Process style threads
 
 # ${WRKSRC}/src/process.ss needs pmap handling assembly for
 # each arch. Mips has it, but it evidently needs more work.

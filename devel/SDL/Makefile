@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/05 09:00:55 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/07 05:16:39 fredb Exp $
 #
 
 DISTNAME=	SDL-1.1.6
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.libsdl.org/release/
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.libsdl.org/
+COMMENT=	Simple DirectMedia Layer, a cross-platform multimedia library
 
 BUILD_DEPENDS+= ${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+= ${LOCALBASE}/bin/automake:../../devel/automake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/05/26 14:28:16 hubertf Exp $
+# $NetBSD: Makefile,v 1.22 2000/06/25 20:00:44 deberg Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/06/13 20:00:47 max Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=   ${MASTER_SITE_GNU:=make/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/make/make.html
+COMMENT=	GNU version of 'make' utility
 
 CONFIGURE_ARGS=	--program-prefix="g"
 GNU_CONFIGURE=	yes

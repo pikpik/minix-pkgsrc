@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/04/23 21:35:55 mbw Exp $
+# $NetBSD: Makefile,v 1.5 2001/01/08 16:09:09 wiz Exp $
 #
 
 DISTNAME=	bvi-1.2.0.src
@@ -8,6 +8,7 @@ MASTER_SITES=	http://bvi.linuxave.net/download/
 
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://bvi.linuxave.net/
+COMMENT=	Display-oriented editor for binary files, based on the vi editor
 
 GNU_CONFIGURE=	YES
 USE_CURSES=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/03/10 15:45:35 minoura Exp $
+# $NetBSD: Makefile,v 1.3 2000/06/24 17:03:40 minoura Exp $
 
 DISTNAME=	leim-${VERSION}
 CATEGORIES=	editors
@@ -7,6 +7,7 @@ DISTFILES=	emacs-${VERSION}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
+COMMENT=	Libraries of Emacs Input Methods
 
 DEPENDS+=	emacs-${VERSION}:../emacs
 

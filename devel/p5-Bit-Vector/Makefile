@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:01 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/28 23:39:03 jlam Exp $
 #
 
 DISTNAME=	Bit-Vector-5.8
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Bit/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/Bit-Vector/Vector.html
+COMMENT=	Efficient base class implementing bit vectors
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Bit/Vector/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/06/21 06:01:32 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/15 02:36:44 jlam Exp $
 
 DISTNAME=	guile-slib-2c8
 CATEGORIES=	devel
@@ -7,6 +7,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://swissnet.ai.mit.edu/~jaffer/SLIB.html
+COMMENT=	SLIB installation for guile Scheme interpreter
 
 DEPENDS+=	guile>=1.3.2:../../lang/guile
 DEPENDS+=	slib-2c8:../../devel/slib

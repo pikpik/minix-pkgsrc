@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/09/03 17:15:27 kim Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:05 jlam Exp $
 #
 
 DISTNAME=	File-PathConvert-0.85
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/File-PathConvert/
+COMMENT=	Convert paths and URLs from absolute to relative and vice versa
 
 USE_PERL5=	# defined
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/File/PathConvert/.packlist

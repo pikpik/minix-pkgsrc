@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/21 18:18:04 fredb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/10 00:07:40 hubertf Exp $
 #
 
 DISTNAME=	${PKGNAME:S,manedit-,manedit,}
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	zuntum@eik.pl
 HOMEPAGE=	http://wolfpack.twu.net/ManEdit/
+COMMENT=	UNIX Manual (man, manpage) page editor, viewer, and browser for X11
 
 DEPENDS+=	gtk+-*:../../x11/gtk
 

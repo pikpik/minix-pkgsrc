@@ -1,4 +1,4 @@
-# $NetBSD: $
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/27 06:06:31 phil Exp $
 #
 
 DISTNAME=	rvm-1.1
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/ \
 
 MAINTAINER=	phil@cs.wwu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
+COMMENT=	Recoverable Virtual Memory
 
 DEPENDS+=	lwp>=1.1:../../devel/lwp
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/06/21 05:58:31 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/15 01:21:54 jlam Exp $
 
 DISTNAME=	slib2c8
 PKGNAME=	slib-2c8
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://swissnet.ai.mit.edu/~jaffer/SLIB.html
+COMMENT=	portable Scheme library of compatibility and utility functions
 
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined

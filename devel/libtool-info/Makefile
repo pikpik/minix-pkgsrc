@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2001/01/26 16:42:44 skrll Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/03 05:33:25 hubertf Exp $
 #
 
 .include "../libtool/Makefile.common"
 
 PKGNAME=	${DISTNAME:C/-/-info-/}${PKGREV}
+
+COMMENT=	Generic shared library support script - info pages
 
 USE_GTEXINFO=	yes
 

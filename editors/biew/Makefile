@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/30 00:41:54 mjl Exp $
 #
 
 DISTNAME=	biew-520
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://biew.sourceforge.net/en/biew.html
+COMMENT=	Binary viewer/editor
 
 DEPENDS+=	libslang-*:../../devel/libslang
 

@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2001/01/26 16:42:44 skrll Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/03 05:26:03 hubertf Exp $
 #
 
 .include "../libtool/Makefile.common"
 
 PKGNAME=        ${DISTNAME:C/-/-base-/}${PKGREV}
+
+COMMENT=	Generic shared library support script (the script itself)
 
 test: build
 	cd ${WRKSRC} && ${MAKE} check

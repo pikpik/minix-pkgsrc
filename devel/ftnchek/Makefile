@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/06 18:11:39 wennmach Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/08 21:00:56 jtb Exp $
 #
 
 DISTNAME=		ftnchek
@@ -11,6 +11,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		jasontd@indigo.ie
 HOMEPAGE=		http://www.dsm.fordham.edu/~ftnchek
+COMMENT=		Static analyzer for Fortran programs
 
 WRKSRC=			${WRKDIR}/${PKGNAME}
 GNU_CONFIGURE=		yes

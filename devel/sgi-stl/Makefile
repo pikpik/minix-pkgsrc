@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/24 05:46:52 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/07/12 20:22:42 jlam Exp $
 
 DISTNAME=		stl
 PKGNAME=		sgi-stl-3.3
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.sgi.com/Technology/STL/
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.sgi.com/Technology/STL/
+COMMENT=		SGI Standard Template Library
 
 DIST_SUBDIR=		${PKGNAME}
 NO_WRKSUBDIR=		# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/05/01 14:20:15 sakamoto Exp $
+# $NetBSD: Makefile,v 1.9 2000/12/08 08:49:22 wiz Exp $
 # FreeBSD Id: Makefile,v 1.11 1999/04/17 10:51:03 itojun Exp
 
 DISTNAME=	nvi-1.79
@@ -11,6 +11,7 @@ PATCH_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 PATCHFILES=	nvi-1.79.m17n-19991117.diff.gz
 
 MAINTAINER=	itojun@itojun.org
+COMMENT=	Clone of vi/ex, with multilingual patch
 
 CONFLICTS=	vigor-*
 

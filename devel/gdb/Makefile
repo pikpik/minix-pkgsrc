@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/01 15:26:19 agc Exp $
+# $NetBSD: Makefile,v 1.2 1999/07/02 08:46:51 agc Exp $
 #
 
 DISTNAME=       gdb-4.18
@@ -7,6 +7,7 @@ MASTER_SITES=   ${MASTER_SITE_GNU:=gdb/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/gdb/gdb.html
+COMMENT=	symbolic debugger for multiple language frontends
 
 ONLY_FOR_PLATFORM=	SunOS-*-*	# in NetBSD base system
 

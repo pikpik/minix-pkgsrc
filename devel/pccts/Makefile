@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/04/26 15:42:55 agc Exp $
+# $NetBSD: Makefile,v 1.5 2000/06/17 18:02:47 david Exp $
 #
 
 DISTNAME=	pccts133mr22
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	David Maxwell <david@maxwell.net>
 HOMEPAGE=	http://www.polhode.com/pccts.html
+COMMENT=	Purdue Compiler Construction Tool Set
 
 BUILD_DEPENDS=  unzip:../../archivers/unzip
 

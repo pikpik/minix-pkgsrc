@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/07/07 17:32:33 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/23 23:14:23 tron Exp $
 
 DISTNAME=	nedit-5.1.1-src
 PKGNAME=	nedit-5.1.1
@@ -7,6 +7,7 @@ MASTER_SITES=	http://ftp.nedit.org/ftp/v5_1_1/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.nedit.org/
+COMMENT=	Motif based standard GUI style text editor
 
 USE_MOTIF=	YES
 USE_XPM=	YES

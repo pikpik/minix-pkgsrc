@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/24 18:06:35 itojun Exp $
 
 DISTNAME=	dsasmsrc
 PKGNAME=	pedisassem-0.22
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.geocities.com/SiliconValley/Foothills/4078/
+COMMENT=	disassembler for Win32 code
 
 post-extract:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}

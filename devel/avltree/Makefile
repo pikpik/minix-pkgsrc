@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/20 11:15:59 agc Exp $
+# $NetBSD: Makefile,v 1.4 2000/09/25 18:51:59 skrll Exp $
 
 DISTNAME=	avltree-1.1
 CATEGORIES=	devel
@@ -6,6 +6,7 @@ MASTER_SITES=	ftp://odin.compchem.ucsf.edu/pub/amber/
 
 MAINTAINER=	wrstuden@netbsd.org
 #HOMEPAGE=
+COMMENT=	In-memory index w/ binary and string keys and key counts
 
 MANCOMPRESSED_IF_MANZ=	yes
 INSTALL_TARGET=	includes install

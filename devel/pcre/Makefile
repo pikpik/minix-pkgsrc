@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/09/19 00:55:35 ad Exp $
+# $NetBSD: Makefile,v 1.4 2000/04/26 21:59:53 kim Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/07/12 22:59:19 steve Exp $
 
 DISTNAME=       pcre-2.08
@@ -6,6 +6,7 @@ CATEGORIES=     devel
 MASTER_SITES=   ftp://ftp.cus.cam.ac.uk/pub/software/programs/pcre/
 
 MAINTAINER=	proff@netbsd.org
+COMMENT=	Perl Compatible Regular Expressions library
 
 do-configure:
 	${SED} -e '/^CC/s/.*/CC=${CC}/' \

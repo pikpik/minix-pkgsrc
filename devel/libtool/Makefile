@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.30 2001/01/26 16:42:44 skrll Exp $
+# $NetBSD: Makefile,v 1.31 2001/02/03 05:34:57 hubertf Exp $
 #
 
 DISTFILES=	# empty
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME}${PKGREV}
+
+COMMENT=	Generic shared library support script
 
 DEPENDS+=	${DISTNAME:C/-/-base-/}${PKGREV}:../libtool-base
 DEPENDS+=	${DISTNAME:C/-/-info-/}${PKGREV}:../libtool-info

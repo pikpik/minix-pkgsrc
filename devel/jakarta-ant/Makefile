@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/07/03 03:50:11 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/27 20:41:14 jwise Exp $
 
 DISTNAME=	jakarta-ant
 PKGNAME=	jakarta-ant-3.1
@@ -7,6 +7,7 @@ MASTER_SITES=	http://jakarta.apache.org/builds/ant/release/v3.1/src/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://jakarta.apache.org/
+COMMENT=	the Apache Project's Java-Based make(1) replacement
 
 DIST_SUBDIR=	jakarta-3.1
 USE_JAVA=	yes
