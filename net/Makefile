@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.538 2005/02/05 21:25:33 kristerw Exp $
+# $NetBSD: Makefile,v 1.539 2005/02/09 13:08:40 markd Exp $
 #
 
 COMMENT=	Networking tools
@@ -46,6 +46,7 @@ SUBDIR+=	choparp
 SUBDIR+=	chrony
 SUBDIR+=	cia
 SUBDIR+=	cidr
+SUBDIR+=	cisco-mibs
 SUBDIR+=	citrix_ica
 SUBDIR+=	cmu-dhcpd
 SUBDIR+=	coda5_client
