@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/10/28 22:33:57 kristerw Exp $
+# $NetBSD: Makefile,v 1.24 2003/12/02 21:57:26 salo Exp $
 #
 
 DISTNAME=		gmp-4.1.2
@@ -9,7 +9,9 @@ MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/gmp/gmp.html
 COMMENT=		Library for arbitrary precision arithmetic
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_GCC_SHLIB=		YES
 USE_LIBTOOL=		YES
