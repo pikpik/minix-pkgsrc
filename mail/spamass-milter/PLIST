@@ -1,0 +1,3 @@
+@comment $NetBSD$
+sbin/spamass-milter
+man/man1/spamass-milter.1
