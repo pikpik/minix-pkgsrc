@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Sun Jan 28 04:58:52 2001
+--- Makefile.orig	Thu Aug 23 18:10:14 2001
 +++ Makefile
 @@ -2,10 +2,10 @@
  PROG= fping
