@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/12/09 00:05:27 cjep Exp $
+# $NetBSD: Makefile,v 1.8 2002/12/11 10:21:17 jmmv Exp $
 #
 
 DISTNAME=       awk
@@ -14,7 +14,7 @@ DIST_SUBDIR=	${PKGNAME}
 
 WRKSRC=		${WRKDIR}
 MAKEFILE=	makefile
-MAKEFLAGS+=	CC=${CC} YACC=${YACC} CFLAGS=${CFLAGS:Q}
+MAKEFLAGS+=	CC=${CC:Q} YACC=${YACC:Q} CFLAGS=${CFLAGS:Q}
 ALL_TARGET=	a.out
 
 post-build:
