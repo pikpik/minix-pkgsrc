@@ -1,7 +1,7 @@
 $NetBSD$
 
---- libgsm/Makefile.orig	2003-10-15 14:09:01.000000000 +0000
-+++ libgsm/Makefile
+--- modules/voice/libgsm/Makefile.orig	2003-10-15 14:09:01.000000000 +0000
++++ modules/voice/libgsm/Makefile
 @@ -44,7 +44,7 @@ WAV49	= -DWAV49
  # CCFLAGS 	= -c -O
  
