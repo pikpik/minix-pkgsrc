@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/16 19:41:03 martti Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/17 14:22:30 martti Exp $
 #
 
 DISTNAME=	INET6-2.00
 PKGNAME=	p5-${DISTNAME}
-CATEGORIES=	wip perl5 net
+CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IO/}
 
 MAINTAINER=	adrianp@stindustries.net
