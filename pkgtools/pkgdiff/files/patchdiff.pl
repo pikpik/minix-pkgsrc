@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 #
-# $NetBSD$
+# $NetBSD: patchdiff.pl,v 1.1.1.1 2000/06/28 01:42:42 wiz Exp $
 #
 # patchdiff: compares a set of patches patch-aa, patch-ab, ... in
 #   $WRKDIR/.newpatches in the with another set in patches.
@@ -28,9 +28,11 @@ sub getfilename {
     local *handle;
     open(handle, $fname);
     while (<handle>) {
-	next unless m/^\+\+\+ ([^	]*)/;
+	next unless m/^\+\+\+[	 ]([^	]*)/;
 	close(handle);
-	return $1;
+	$_ = $1;
+	chomp();
+	return $_;
      }
      close(handle);
      return undef;
@@ -46,7 +48,7 @@ sub putinhash {
 	chomp;
 	$temp=getfilename($_);
 	$$hash{$temp}=$_;
-#	print "put in hash: $temp // $_";
+#	print "put in hash: $temp // $_\n";
      }
      close(handle);
 }
