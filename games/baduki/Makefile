@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/07/14 16:04:21 agc Exp $
+# $NetBSD: Makefile,v 1.13 2000/07/15 20:39:17 agc Exp $
 
 DISTNAME=	baduki-0.2.9
 CATEGORIES=	games
@@ -7,10 +7,12 @@ MASTER_SITES=	http://soback.kornet21.net/~artist/baduk/
 MAINTAINER=	bad@netbsd.org
 HOMEPAGE=	http://soback.kornet21.net/~artist/baduk/baduki.html
 
+BUILD_DEPENDS+=	msgfmt:../../devel/gettext
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 
 USE_X11=	yes
 GNU_CONFIGURE=	yes
+USE_LIBINTL=	yes
 
 EVAL_PREFIX+=	GTKDIR=gtk+
 CONFIGURE_ARGS+=	--with-gtk-prefix=${GTKDIR}
