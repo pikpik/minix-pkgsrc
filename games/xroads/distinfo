@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.1.1.1 1999/07/01 02:35:12 hubertf Exp $
+
+MD5 (xroads-v0.5.tar.gz) = 20f621e33fb8c1725ce4140aa8d8e519
+SHA1 (patch-aa) = 4978b1b718b920871d06acff54895da60642c949
+SHA1 (patch-ab) = f22b139e84c4e2d4d9d190d818d0ce6aba816a23

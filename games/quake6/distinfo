@@ -1,0 +1,6 @@
+$NetBSD: md5,v 1.2 2000/02/02 06:53:43 itojun Exp $
+
+MD5 (quake-v6-bsd-kame.tar.gz) = 634991e85ca27c8e867f387268c0ec48
+MD5 (quake6-00-v6-20000202b.diff.gz) = 7b610d74ecff7087bc2a3c5f7180681d
+SHA1 (patch-aa) = 6a1efb5ac2a9a8a7375a40c95beb67276ae163e8
+SHA1 (patch-ab) = 6cb06286340c5d9818125594c097dda77714fb5e

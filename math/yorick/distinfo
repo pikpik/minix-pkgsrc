@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.1.1.1 2000/08/03 17:49:25 rh Exp $
+
+MD5 (yorick-1.4.tar.gz) = 7cf50b3dee2e1fd54e832d52abd2b88c
+SHA1 (patch-aa) = 0032e1e564603c97779f47be1fae44e64561860d
+SHA1 (patch-ab) = f19497ceaca1699028c6326db710e0eb81e45d89

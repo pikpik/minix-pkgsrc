@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.2 2000/06/06 03:10:20 minoura Exp $
+
+MD5 (sl.tar) = cc06b159f78f86bfd2d4e0e16330fbae
+MD5 (sl5.patch) = 0af730e4a2d212be376d30094a76207c
+SHA1 (patch-aa) = 60d53ea5afc1e2064bf2981beb72adbef8c1fe20

@@ -1,0 +1,8 @@
+$NetBSD: md5,v 1.4 2000/06/22 08:18:07 itohy Exp $
+
+MD5 (xfig.3.2.3a.tar.gz) = 854b3dfad1dbdacc1b82022cfe85877c
+SHA1 (patch-aa) = b4e00763a80887bcce9ca2473adbd5305ae676b0
+SHA1 (patch-ab) = beef00b86bfe59f6851b950037b20caa5b919a7e
+SHA1 (patch-ac) = e56168054249f34731499e57d131ef59fef92d03
+SHA1 (patch-ad) = 854301f1c24d9ade9b8d1a3f0f7146cd4853fa13
+SHA1 (patch-ae) = e307b7c7341af0d335ffe21dc4c620b866396b4e

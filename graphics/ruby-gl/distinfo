@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.1.1.1 2000/04/03 15:35:41 sakamoto Exp $
+
+MD5 (rbogl.tgz) = 1716a9a8fbd61e969a47d73221f91890
+SHA1 (patch-aa) = 7981d3de5947efe62d9696c1abe2e764a411025b
+SHA1 (patch-ab) = d31e9a5094053c40ac8fab1f6c529a30cb05de58

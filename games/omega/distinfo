@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.2 1999/12/28 02:28:23 proff Exp $
+
+MD5 (omega-0.90-pa4.tar.gz) = 4936ed6f4afced6c35a0097fff9430ac
+SHA1 (patch-aa) = df5933dcc7098ba00f4b3002612b3318a9b09974
+SHA1 (patch-ab) = fe2960b28a3cd912c35edeb8a05087eb18d136f5

@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.2 2001/01/23 21:49:16 jtb Exp $
+
+MD5 (smalltalk-1.8.5.tar.gz) = dc37de41b971af7ee210dd2371224633
+SHA1 (patch-aa) = ce8810a6689458d6c13cb7bde309dfa91bdb0d08

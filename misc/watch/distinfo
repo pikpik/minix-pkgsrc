@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.1.1.1 1999/06/16 01:32:51 simonb Exp $
+
+MD5 (procps-2.0.2.tar.gz) = 57bedbb5c3eaf1b4d8700059886f9d2d
+SHA1 (patch-aa) = 1b2374757d7f55d70252f21559bcdd74e3872c46
