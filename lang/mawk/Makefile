@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:44:52 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/09/05 19:00:59 tron Exp $
 #
 
 DISTNAME=       mawk-1.3.3
@@ -10,6 +10,7 @@ MAINTAINER=	agc@NetBSD.org
 COMMENT=	Mike Brennan's fast awk clone
 
 GNU_CONFIGURE=	yes
+TEST_TARGET=	mawk_test fpe_test
 
 .include "../../mk/bsd.prefs.mk"
 
