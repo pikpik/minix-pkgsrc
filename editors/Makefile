@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2002/04/08 20:03:52 schmonz Exp $
+# $NetBSD: Makefile,v 1.58 2002/04/19 14:07:03 zuntum Exp $
 #
 
 COMMENT=	Editors
@@ -11,6 +11,7 @@ SUBDIR+=	ce
 SUBDIR+=	ce-doc
 SUBDIR+=	ce-x11
 SUBDIR+=	emacs
+SUBDIR+=	emacs21
 SUBDIR+=	gnotepad
 SUBDIR+=	hexedit
 SUBDIR+=	jde
