@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/16 05:58:49 salo Exp $
 #
 
-DISTNAME=	streamtuner-0.9.0
+DISTNAME=	streamtuner-0.9.1
 CATEGORIES=	audio www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=streamtuner/}
 
