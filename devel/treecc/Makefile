@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/02/27 07:24:52 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/11 07:33:13 jlam Exp $
 #
 
-DISTNAME=	treecc-0.2.6
+DISTNAME=	treecc-0.3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.southern-storm.com.au/download/
 
