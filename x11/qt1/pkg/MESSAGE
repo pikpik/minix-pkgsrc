@@ -1,4 +1,4 @@
-$NetBSD: MESSAGE,v 1.1.1.1 2000/03/23 21:27:41 dmcmahill Exp $
+$NetBSD: MESSAGE,v 1.2 2000/03/28 00:09:20 dmcmahill Exp $
 
 Please note that this package is provided for those programs
 which will not work with newer versions of Qt.  To allow this
@@ -13,4 +13,3 @@ programs which use it by ensuring that
 2) Use the "configure" argument "--with-qt-dir=${PREFIX}/qt1"
 
 3) you may also have to put ${PREFIX}/qt1/bin in your PATH
-
