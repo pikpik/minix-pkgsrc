@@ -1,5 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/06 15:36:18 wiz Exp $
+@comment $NetBSD$
 bin/xchm
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/xchm.mo
+${PKGLOCALEDIR}/locale/ro/LC_MESSAGES/xchm.mo
 share/pixmaps/xchm-128.xpm
 share/pixmaps/xchm-16.xpm
 share/pixmaps/xchm-32.xpm
