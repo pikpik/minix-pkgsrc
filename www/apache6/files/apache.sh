@@ -1,15 +1,47 @@
-#!/bin/sh
+#! /bin/sh
 #
-# $NetBSD: apache.sh,v 1.2 2000/07/10 12:22:30 hubertf Exp $
+# $NetBSD: apache.sh,v 1.8 2000/10/13 21:46:32 jlam Exp $
 #
 # PROVIDE: apache
 # REQUIRE: DAEMON
 
-CMD=${1:-start}
+name="apache"
+command="@PREFIX@/sbin/apachectl"
+pidfile="/var/run/httpd.pid"
+conffile="@PREFIX@/etc/httpd/httpd.conf"
 
-if [ -x @PREFIX@/sbin/httpd -a -f @PREFIX@/etc/httpd/httpd.conf ]
+apache_start="start"
+
+if [ -f @PREFIX@/etc/httpd/mod_ssl.conf ]
 then
- @PREFIX@/sbin/apachectl $CMD >/dev/null
- echo -n ' apache'
+	# This file can reset apache_start to "startssl"
+	. @PREFIX@/etc/httpd/mod_ssl.conf
 fi
+
+cmd=${1:-start}
+
+case ${cmd} in
+start)
+	if [ -x ${command} -a -f ${conffile} ]; then
+		echo "Starting ${name}."
+		${command} ${apache_start} > /dev/null
+	fi
+	;;
+stop)
+	if [ -x ${command} -a -f ${pidfile} ]; then
+		echo "Stopping ${name}."
+		${command} stop > /dev/null
+	fi
+	;;
+restart)
+	( $0 stop )
+	sleep 5
+	$0 start
+	;;
+*)
+	if [ -x ${command} ]; then
+		${command} ${cmd}
+	fi
+	;;
+esac
 exit 0
