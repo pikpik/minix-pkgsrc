@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/aspell/faroese.alias
+lib/aspell/fo.multi
+lib/aspell/fo.rws
+lib/aspell/føroyskt.alias
+share/aspell/fo.dat
+share/aspell/fo_phonet.dat
