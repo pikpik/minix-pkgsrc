@@ -1,7 +1,7 @@
 $NetBSD$
 
---- idea.c.orig	Sun Sep 16 22:50:43 2001
-+++ idea.c	Sun Sep 16 22:50:08 2001
+--- _idea.c.orig	Sat May 22 22:30:47 1999
++++ _idea.c
 @@ -5,7 +5,7 @@
  
  #include "idea.h"
