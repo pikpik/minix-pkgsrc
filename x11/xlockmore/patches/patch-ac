@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Wed Jun 16 21:23:29 1999
-+++ configure	Wed Apr  5 22:32:36 2000
-@@ -4614,7 +4614,7 @@
+--- configure.orig	Fri Mar 24 00:12:23 2000
++++ configure	Tue May  9 13:38:23 2000
+@@ -4844,7 +4844,7 @@
  #define USE_GL 1
  EOF
  
