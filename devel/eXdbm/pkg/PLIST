@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/eXdbmErrors.h
+include/eXdbmTypes.h
+include/eXdbm.h
+lib/libeXdbm.a
+share/doc/eXdbm/eXdbm.txt
+@dirrm share/doc/eXdbm
