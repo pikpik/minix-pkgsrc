@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2002/09/22 00:06:23 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 16:51:35 martti Exp $
 #
 
-DISTNAME=	Ngraph-6.3.06-src
-PKGNAME=	Ngraph-6.3.06
+DISTNAME=	Ngraph-6.3.20-src
+PKGNAME=	${DISTNAME:S/-src//}
 CATEGORIES=	graphics
 MASTER_SITES=	http://www2e.biglobe.ne.jp/~isizaka/bin/ \
 		ftp://ftp.cs.umb.edu/pub/interleaf/CDE/
@@ -16,7 +16,7 @@ COMMENT=	The 2D graph and data analysis program
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 USE_BUILDLINK2=		yes
-USE_X11BASE=		yes
+USE_X11=		yes
 USE_GMAKE=		yes
 
 post-extract:
