@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/02/04 18:54:35 agc Exp $
+# $NetBSD: Makefile,v 1.9 1999/04/01 14:07:55 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/09/08 12:23:55 tg Exp
 #
 
@@ -9,8 +9,7 @@ EXTRACT_SUFX=		.shar.gz
 
 MAINTAINER=		packages@netbsd.org
 
-OPSYS!=			uname -s
-
+.include "../../mk/bsd.prefs.mk"
 .if (${OPSYS} == "NetBSD")
 MANCOMPRESSED=		yes
 .endif
