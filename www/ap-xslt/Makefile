@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 18:23:21 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2001/10/22 15:10:49 jwise Exp $
 
 DISTNAME=	modxslt
 PKGNAME=	ap-xslt-1.1
 CATEGORIES=	www
-MASTER_SITES=	http://modxslt.userworld.com/
+MASTER_SITES=	http://modxslt.sourceforge.net/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://modxslt.userworld.com/
