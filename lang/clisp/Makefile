@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/04/03 05:10:43 mjl Exp $
+# $NetBSD: Makefile,v 1.39 2005/04/05 11:52:15 wiz Exp $
 
 DISTNAME=		clisp-2.33
 PKGREVISION=	1
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://clisp.cons.org/
 COMMENT=		CLISP, a Common Lisp implementation
 
-NOT_FOR_PLATFORM=	*-*-alpha	# severe LP64 problems
+NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64 *-*-x86_64	# severe LP64 problems
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
