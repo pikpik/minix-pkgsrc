@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2000/12/06 23:29:53 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2000/12/12 01:30:47 wiz Exp $
 #
 
     SUBDIR += atari800
@@ -34,6 +34,7 @@
     SUBDIR += wine-current
     SUBDIR += xbeeb
     SUBDIR += xcopilot
+    SUBDIR += xm7
     SUBDIR += xmame
 
 .include "../mk/bsd.pkg.subdir.mk"
