@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/03/09 06:18:23 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.15 2003/05/02 11:53:58 wiz Exp $
 #
 
 DISTNAME=		libgeda-${PKGVERSION}
@@ -22,6 +22,9 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
+USE_NEW_TEXINFO=	YES
+
+INFO_FILES=		libgedadoc.info
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
@@ -29,5 +32,4 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 .include "../../graphics/libgdgeda/buildlink2.mk"
 .include "../../lang/guile/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
