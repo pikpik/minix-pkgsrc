@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/27 20:59:20 mrauch Exp $
+# $NetBSD: Makefile,v 1.6 2003/02/27 22:04:08 mrauch Exp $
 
 DISTNAME=		OOo_1.0.2_LinuxIntel_install
 PKGNAME=		openoffice-linux-1.0.2
@@ -62,7 +62,7 @@ do-install:
 	${SED}	-e "s|@@PREFIX@@|${PREFIX}|g"				\
 		< ${FILESDIR}/soffice > ${PREFIX}/bin/soffice
 	${CHMOD} +x ${PREFIX}/bin/soffice
-	${PATCH} -t -s ${PREFIX}/OpenOffice.org1.0.2/program/soffice	\
+	${PATCH} ${PATCH_ARGS} ${PREFIX}/OpenOffice.org1.0.2/program/soffice \
 		< ${FILESDIR}/soffice.test.patch
 
 # everything specific to your OS/Arch goes into it's own Makefile
