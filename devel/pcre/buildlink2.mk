@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.3 2002/06/21 23:00:28 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:38:43 jlam Exp $
 
 .if !defined(PCRE_BUILDLINK2_MK)
 PCRE_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		pcre
-BUILDLINK_DEPENDS.pcre?=	pcre>=3.4
+BUILDLINK_DEPENDS.pcre?=	pcre>=3.4nb1
 BUILDLINK_PKGSRCDIR.pcre?=	../../devel/pcre
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.pcre=pcre
