@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/04/14 21:43:41 jtb Exp $
+# $NetBSD: Makefile,v 1.10 2001/04/19 00:56:33 jtb Exp $
 
 DISTNAME=	HDF4.1r4
 PKGNAME=	hdf-4.1r4
@@ -14,6 +14,7 @@ DEPENDS+=	jpeg-[0-9]*:../../graphics/jpeg
 
 USE_FORTRAN=	#defined
 
+JPEGBASE_DEFAULT=${LOCALBASE}
 EVAL_PREFIX+=	JPEGBASE=jpeg
 
 # This is ugly, but saves 31 patches

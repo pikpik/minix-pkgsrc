@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/04/13 00:45:04 jtb Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/14 21:43:53 jtb Exp $
 
 DISTNAME=		ntl-5.0c
 CATEGORIES=		math devel
@@ -16,6 +16,7 @@ NO_CONFIGURE=		#defined
 
 MAKEFILE=		makefile
 
+GMP_PREFIX_DEFAULT=	${LOCALBASE}
 EVAL_PREFIX+=		GMP_PREFIX=gmp
 
 .include "../../mk/bsd.pkg.mk"

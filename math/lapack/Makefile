@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:22:26 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/04/14 21:43:52 jtb Exp $
 
 DISTNAME=		lapack-20010201
 CATEGORIES=		math
@@ -13,6 +13,8 @@ DEPENDS+=		blas-[0-9]*:../../math/blas
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 WRKSRC=			${WRKDIR}/LAPACK
 USE_FORTRAN=		YES
+
+BLAS_PREFIX_DEFAULT=	${LOCALBASE}
 EVAL_PREFIX+=		BLAS_PREFIX=blas
 
 do-install:
