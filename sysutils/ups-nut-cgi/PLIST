@@ -1,4 +1,11 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/28 16:07:51 martin Exp $
+@comment $NetBSD$
+man/man5/hosts.conf.5
+man/man5/multimon.conf.5
+man/man5/upsset.conf.5
+man/man8/multimon.cgi.8
+man/man8/upsimage.cgi.8
+man/man8/upsset.cgi.8
+man/man8/upsstats.cgi.8
 share/nut/cgi/multimon.cgi
 share/nut/cgi/upsimage.cgi
 share/nut/cgi/upsset.cgi
