@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xmms/Visualization/gdancer.a
+lib/xmms/Visualization/gdancer.la
+lib/xmms/Visualization/gdancer.so
