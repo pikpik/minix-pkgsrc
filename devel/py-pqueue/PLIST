@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/pqueuemodule.so
+share/doc/${PYPKGPREFIX}-PQueue/README
+@dirrm share/doc/${PYPKGPREFIX}-PQueue
