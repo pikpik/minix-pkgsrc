@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/04/01 14:07:56 agc Exp $
+# $NetBSD: Makefile,v 1.16 1999/04/21 10:38:58 agc Exp $
 # FreeBSD Id: Makefile,v 1.19 1998/03/08 06:44:48 obrien Exp
 #
 
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/  \
 			ftp://ftp.cert.dfn.de/pub/tools/admin/lsof/  \
 			ftp://ftp.auscert.org.au/pub/mirrors/vic.cc.purdue.edu/lsof/  \
 			ftp://ftp.web.ad.jp/pub/UNIX/tools/lsof/  \
-			ftp://ftp.sunet.se/pub/unix/admin/lsof/
+			ftp://ftp0.sunet.se/pub/unix/admin/lsof/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www-rcd.cc.purdue.edu/~abe/
