@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/18 12:27:36 rh Exp $
 #
 
-DISTNAME=		cheesetracker-0.2.1
+DISTNAME=		cheesetracker-0.2.2
 CATEGORIES=		audio
 MASTER_SITES=		http://www.reduz.com.ar/cheesetracker/
 
