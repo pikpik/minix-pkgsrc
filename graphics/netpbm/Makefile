@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1999/03/04 14:18:54 tron Exp $
+# $NetBSD: Makefile,v 1.26 1999/04/07 08:56:46 agc Exp $
 #
 
 DISTNAME=	netpbm
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.wustl.edu/graphics/graphics/packages/NetPBM/ \
 DISTFILES=	netpbm-1mar1994.tar.gz \
 		pcxtoppm.tar.gz \
 		rletopnm.tar.gz \
-		pnmtopng-2.37.1.tar.gz
+		pnmtopng-2.37.2.tar.gz
 
 MAINTAINER=	tron@netbsd.org
 
