@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/08/21 14:07:33 markd Exp $
+# $NetBSD: Makefile,v 1.31 2004/10/03 00:12:59 tv Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
 PKGREVISION=	1
@@ -28,6 +28,8 @@ REPLACE_PERL=	kmail/kmail-3.1-update-new-mail-notification-settings.pl \
 		libkdenetwork/kpgp-3.1-upgrade-address-data.pl
 
 .include "../../meta-pkgs/kde3/kde3.mk"
+BUILDLINK_DEPMETHOD.qt3-tools=	full
+
 .include "../../comms/libmal/buildlink3.mk"
 .include "../../comms/pilot-link-libs/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
