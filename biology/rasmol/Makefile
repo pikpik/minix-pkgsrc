@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 13:41:32 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/04/01 11:06:30 zuntum Exp $
 
 DISTNAME=	RasMol_2.7.1
 PKGNAME=	rasmol-2.7.1
@@ -14,6 +14,11 @@ USE_IMAKE=	YES
 
 MAKE_ENV+=	DEPTHDEF="${DEPTHDEF}"
 
+.if (${MACHINE_ARCH} == arm32)
+. include "../../lang/gcc/Makefile.gcc"
+MAKE_FLAGS+=	CC=${CC}
+.endif
+
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(RASMOL_DEPTH)
@@ -24,6 +29,7 @@ DEPTHDEF=	-DSIXTEENBIT
 .endif
 .endif
 DEPTHDEF?=	-DEIGHTBIT
+
 
 post-patch:
 	${LN} -sf ${WRKDIR}/${DISTNAME}/doc  ${WRKSRC}
