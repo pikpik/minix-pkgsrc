@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2002/11/21 10:23:06 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/09 18:22:11 mycroft Exp $
 
 DISTNAME=		ntop-2.1.54
 PKGNAME=		ntop2-2.1.54
-#PKGREVISION=		1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ntop/}
 EXTRACT_SUFX=		.tgz
