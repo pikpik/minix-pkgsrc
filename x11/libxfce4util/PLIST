@@ -1,6 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/26 10:41:17 martti Exp $
 include/xfce4/libxfce4util/debug.h
 include/xfce4/libxfce4util/i18n.h
+include/xfce4/libxfce4util/libxfce4util.h
+include/xfce4/libxfce4util/libxfce4util-config.h
 include/xfce4/libxfce4util/utf8.h
 include/xfce4/libxfce4util/util.h
 lib/libxfce4util.a

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/03/10 11:53:37 xtraeme Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/14 16:15:30 jmmv Exp $
 #
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
@@ -6,6 +6,7 @@
 XFCE4_VERSION=	2.1.9
 
 DISTNAME=	gtk-xfce-engine-${XFCE4_VERSION}
+PKGREVISION=	2
 PKGNAME=	xfce4-gtk2-engine-${XFCE4_VERSION}
 CATEGORIES=	x11
 COMMENT=	XFce4 GTK2 themes
