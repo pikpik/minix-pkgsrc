@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/10/25 19:02:47 agc Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/13 16:30:41 wiz Exp $
 #
 
 DISTNAME=	sendfile-20010216
-PKGNAME=	sendfile-2.1.0.1
+PKGNAME=	sendfile-2.1.0.2
 WRKSRC=		${WRKDIR}/sendfile-2.1a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.belwue.de/pub/unix/sendfile/current/
