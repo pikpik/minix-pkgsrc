@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/02/16 17:41:26 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/02/22 17:25:22 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
 #
 
@@ -32,7 +32,7 @@
 #    SUBDIR += mp
 #    SUBDIR += musixtex
 #    SUBDIR += pkfonts
-#    SUBDIR += psutils
+    SUBDIR += psutils
 #    SUBDIR += rtf2latex
     SUBDIR += teTeX
 #    SUBDIR += tex
