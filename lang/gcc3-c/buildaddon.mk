@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildaddon.mk,v 1.1 2003/07/08 15:04:56 drochner Exp $
 
 .include "../../lang/gcc3-c/Makefile.common"
 
@@ -14,10 +14,6 @@ BUILDLINK_PREFIX.gcc3c=	${LOCALBASE}
 
 BUILDLINK_PACKAGES+=	gcc3c
 
-BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/include/*
-BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/include/*/*
-BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/include/*/*/*
-BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/include/*/*/*/*
 BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/libgcc.a
 BUILDLINK_FILES.gcc3c+=	${GCC_ARCHSUBDIR}/libgcc_eh.a
 BUILDLINK_FILES.gcc3c+=	${GCC_SUBPREFIX}/lib/libgcc_s.*
