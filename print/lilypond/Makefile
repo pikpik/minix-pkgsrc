@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/08/09 11:20:37 seb Exp $
+# $NetBSD: Makefile,v 1.19 2003/12/24 13:02:01 jmmv Exp $
 #
 
 DISTNAME=	lilypond-1.4.13
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=	bison>=1.875nb1:../../devel/bison
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 MAKEFILE=		GNUmakefile
 
 USE_MAKEINFO=	YES

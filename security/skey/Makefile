@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/23 16:03:55 salo Exp $
+# $NetBSD: Makefile,v 1.6 2003/09/22 00:56:48 grant Exp $
 #
 
 DISTNAME=		skey-1.1.5
@@ -14,7 +14,7 @@ NOT_FOR_PLATFORM=	NetBSD-*-* FreeBSD-*-* OpenBSD-*-* # in base system
 
 USE_PERL5=		build
 USE_BUIDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/07/17 22:52:48 grant Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/03 18:49:52 reed Exp $
 
 DISTNAME=	xpp-1.1
 PKGREVISION=	2
@@ -11,7 +11,7 @@ COMMENT=	X Printing Panel
 
 USE_BUILDLINK2=	# defined
 USE_X11=	# defined
-USE_GMAKE=	# defined
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	# defined
 
 DOCDIR=		${PREFIX}/share/doc/xpp

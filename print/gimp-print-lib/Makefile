@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/08/09 11:20:36 seb Exp $
+# $NetBSD: Makefile,v 1.18 2003/10/08 22:40:42 reed Exp $
 #
 
 DISTNAME=	gimp-print-4.2.5
@@ -17,7 +17,7 @@ LEX=			${LOCALBASE}/bin/flex
 .endif
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

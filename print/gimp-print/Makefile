@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/17 22:52:28 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/03 18:49:51 reed Exp $
 #
 
 DISTNAME=	gimp-print-4.2.5
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+= --enable-escputil=no
 CONFIGURE_ARGS+= --enable-libgimpprint=no
 USE_LIBTOOL=	yes
 LIBTOOL_OVERRIDE= ${WRKSRC}/libtool
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 USE_BUILDLINK2=	yes
 USE_X11=	yes
 

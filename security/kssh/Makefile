@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/03 18:49:52 reed Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/23 21:50:47 jmmv Exp $
 #
 
 DISTNAME=	kssh-0.7
@@ -12,7 +12,7 @@ COMMENT=	KDE Front-end to SSH
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 .include "../../net/kdenetwork3/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/08/31 01:43:23 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/24 13:02:00 jmmv Exp $
 
 DISTNAME=		advi-1.4.0
 PKGREVISION=		1
@@ -14,7 +14,7 @@ DEPENDS+=		teTeX-[0-9]*:../../print/teTeX
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_X11=		yes
 
 post-extract:
