@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/06/01 11:23:23 rh Exp $
+# $NetBSD: Makefile,v 1.5 2000/07/24 22:04:05 dmcmahill Exp $
 #
 
 DISTNAME=	lwp-1.1
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.coda.cs.cmu.edu/
 NOT_FOR_PLATFORM=	*-*-mips*
 
 GNU_CONFIGURE=	YES
-USE_PKGLIBTOOL=	YES
+USE_LIBTOOL=	YES
 
 LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
 
