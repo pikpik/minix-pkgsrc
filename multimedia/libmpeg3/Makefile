@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2004/03/12 19:34:01 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/06/12 04:34:49 grant Exp $
 #
 
 DISTNAME=	libmpeg3-1.3
 PKGREVISION=	4
-CATEGORIES=	devel audio graphics
+CATEGORIES=	devel audio graphics multimedia
 MASTER_SITES=	http://heroines.sourceforge.net/
 
 MAINTAINER=	tech-pkg@NetBSD.org

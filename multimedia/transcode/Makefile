@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/10 13:47:07 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/12 16:19:32 drochner Exp $
 
 DISTNAME=	transcode-0.6.12
 PKGREVISION=	1
@@ -49,7 +49,7 @@ post-install:
 .include "../../audio/lame/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
-.include "../../devel/libmpeg3/buildlink3.mk"
+.include "../../multimedia/libmpeg3/buildlink3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
