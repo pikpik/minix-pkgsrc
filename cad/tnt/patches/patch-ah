@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- doc/Makefile.in.orig	Thu Jul 29 16:58:47 2004
++++ doc/Makefile.in
+@@ -157,7 +157,7 @@ AUTOMAKE_OPTIONS = foreign
+ #  in a special 'doc' dir.
+ #
+ #---------------------------------------------------------------
+-docdir = $(prefix)/doc
++docdir = $(pkgdatadir)
+ doc_DATA = \
+ 	user-guide.pdf 
+ 
