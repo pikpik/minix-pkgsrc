@@ -1,4 +1,4 @@
-$NetBSD: patch-libstdc++-v3_configure_host,v 1.1.1.1 2004/06/01 19:18:17 shannonjr Exp $
+$NetBSD$
 
 --- libstdc++-v3/configure.host.orig	2004-03-18 10:36:12.000000000 -0700
 +++ libstdc++-v3/configure.host
