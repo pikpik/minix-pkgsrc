@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/01 10:37:33 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:13:09 tv Exp $
 #
 
 DISTNAME=	rioutil-1.4.6
@@ -12,7 +12,6 @@ COMMENT=	Program and library to interface with Rio 600, 800, Nike psa[play
 
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		# defined
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-libusb
 
