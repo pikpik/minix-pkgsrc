@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- Make.Rules.in.orig	Thu Jun 27 00:04:54 2002
++++ Make.Rules.in	Sun Feb  9 11:02:40 2003
+@@ -96,5 +96,5 @@
+ LD_D=@LD_D@
+ LD_L=@LD_L@
+-LDCONFIG=@LDCONFIG@
++LDCONFIG=${PKG_LDCONFIG}
+ DYNTYPE=@DYNTYPE@
+ USESONAME=@USESONAME@
