@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.2 1999/05/30 03:47:43 christos Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/30 11:43:59 tron Exp $
 
-PKGNAME=	postfix-19990317pl05
 DISTNAME=	postfix-19990317-pl05
+PKGNAME=	postfix-19990317p05
 CATEGORIES=	mail
 MASTER_SITES=	ftp://postfix.cloud9.net/official/
-DISTFILES=	postfix-19990317-pl05.tar.gz
 
 MAINTAINER=	christos@netbsd.org
 HOMEPAGE=	http://www.postfix.org
