@@ -6,7 +6,7 @@ CATEGORIES=	benchmarks www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 
 MAINTAINER=	thorpej@netbsd.org
-HOMEPAGE=	http://www.hpl.hp.com/personal/Davis_Mosberger/httperf.html
+HOMEPAGE=	http://www.hpl.hp.com/personal/David_Mosberger/httperf.html
 
 LICENSE=	no-commercial-use
 
