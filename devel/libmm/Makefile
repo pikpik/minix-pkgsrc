@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2001/10/23 14:40:36 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/07/30 15:41:58 jlam Exp $
 #
 
-DISTNAME=	mm-1.1.3
-PKGNAME=	libmm-1.1.3
+DISTNAME=	mm-1.2.1
+PKGNAME=	libmm-1.2.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.ossp.org/pkg/lib/mm/
 
