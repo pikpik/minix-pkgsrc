@@ -1,0 +1,8 @@
+@comment $NetBSD$
+share/doc/cpuburn.README
+bin/burnBX
+bin/burnK6
+bin/burnK7
+bin/burnMMX
+bin/burnP5
+bin/burnP6
