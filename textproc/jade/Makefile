@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/10/05 10:02:53 tron Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/14 12:19:16 tron Exp $
 
 DISTNAME=	jade-1.2.1
 PKGNAME=	jade-1.2.1nb4
@@ -21,7 +21,6 @@ CONFLICTS+=	sp-[0-9]*
 USE_BUILDLINK_ONLY=	YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
-#USE_LIBINTL=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/config/ltconfig
 
