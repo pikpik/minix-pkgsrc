@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1998/10/13 23:31:04 garbled Exp $
 libexec/pvmd3
 libexec/pvm
 bin/dbwtest
@@ -231,3 +231,5 @@ include/pvmproto.h
 include/pvmtev.h
 lib/libpvm3.a
 lib/libpvmtrc.a
+lib/libfpvm.a
+lib/libgpvm.a
