@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/10/22 20:01:54 tsarna Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 17:37:41 wiz Exp $
 #
 
 DISTNAME=	Zope-2.2.2-src
@@ -41,6 +41,6 @@ do-install:
 		${PY_SITEPATH}/StructuredText \
 		-type d -print | ${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
-.include "../../lang/python/Makefile.inc"
+.include "../../lang/python20/Makefile.inc"
 .include "../../mk/bsd.pkg.mk"
 
