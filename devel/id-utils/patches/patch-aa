@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/lid.c.orig	Sun Aug  1 02:08:35 1999
 +++ src/lid.c	Sun Aug  1 02:09:38 1999
 @@ -563,7 +563,10 @@
