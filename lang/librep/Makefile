@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/17 14:43:05 mellon Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/01 03:39:44 danw Exp $
 #
 
-DISTNAME=		librep-0.12.2
+DISTNAME=		librep-0.12.4
 CATEGORIES=		lang devel
 MASTER_SITES=		ftp://librep.sourceforge.net/pub/librep/
 
