@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 09:20:32 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:22:32 wiz Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		gd
 CATEGORIES+=		graphics
+PHP_PKG_VERS=		nb1
 
 COMMENT=		PHP4 extension for GD graphics library
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 09:21:20 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:22:35 wiz Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		pgsql
 CATEGORIES+=		databases
+PHP_PKG_VERS=		nb1
 
 COMMENT=		PHP4 extension for PostgreSQL databases
 
