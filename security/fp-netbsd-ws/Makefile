@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/02 18:43:00 ben Exp $
 #
 
 DISTNAME=		fp-netbsd-ws-4.3.1
@@ -9,6 +9,8 @@ MASTER_SITES=		ftp://ftp.f-prot.com/pub/bsd/
 MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		http://www.f-prot.com/products/home_use/bsd/
 COMMENT=		F-prot antivirus for home users
+
+DEPENDS+=		p5-libwww>=5.69:../../www/p5-libwww
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 RESTRICTED=		"Redistribution not permitted"
