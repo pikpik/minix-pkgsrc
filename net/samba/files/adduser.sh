@@ -3,7 +3,8 @@
 # $NetBSD$
 #
 # This is an adduser script for NetBSD systems whose useradd(8) doesn't
-# accept "$" in the username.
+# accept "$" in the username.  This script may be used for the
+# "add machine script" in smb.conf.
 
 awkprog="@AWK@"
 catprog="@CAT@"
