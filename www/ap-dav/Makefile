@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4.2.2 2002/08/25 21:22:04 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/25 21:51:45 jlam Exp $
 
 DISTNAME=		mod_dav-1.0.3-1.3.6
 PKGNAME=		ap-dav-1.0.3
@@ -23,7 +23,8 @@ HTMLDIR=		${PREFIX}/share/doc/html/mod_dav
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libdav.so ${AP_MODULE_DIR}/mod_dav.so
-	${INSTALL_DATA_DIR} ${DOCDIR} ${HTMLDIR}
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA_DIR} ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/LICENSE.html ${HTMLDIR}
