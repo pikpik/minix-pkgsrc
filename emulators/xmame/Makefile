@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.61 2002/01/04 12:04:22 tron Exp $
+# $NetBSD: Makefile,v 1.62 2002/01/05 06:47:00 tron Exp $
 #
 
-DISTNAME=		xmame-0.56.2
+DISTNAME=		xmame-0.57.1
 CATEGORIES=		emulators games x11
 MASTER_SITES=		http://roms.mame.dk/emu/ \
 			http://x.mame.net/download/
