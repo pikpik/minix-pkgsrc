@@ -1,0 +1,6 @@
+@comment $NetBSD$
+sbin/pptpd
+sbin/pptpctrl
+man/man8/pptpd.8
+man/man8/pptpctrl.8
+man/man5/pptpd.conf.5

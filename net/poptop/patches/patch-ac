@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- pptpctrl.c.orig	Wed Sep 22 20:01:28 1999
++++ pptpctrl.c	Sat Sep 25 21:27:35 1999
+@@ -33,6 +33,7 @@
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #ifdef HAVE_OPENPTY
++#include <util.h>
+ #ifdef HAVE_PTY_H
+ #include <pty.h>
+ #endif
