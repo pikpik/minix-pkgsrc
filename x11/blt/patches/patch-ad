@@ -1,3 +1,4 @@
+$NetBSD$
 --- library/pkgIndex.tcl.in.orig	Thu Sep  7 22:06:25 2000
 +++ library/pkgIndex.tcl.in	Thu Sep  7 22:06:59 2000
 @@ -10,7 +10,7 @@
