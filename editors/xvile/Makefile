@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/05/06 09:03:50 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/02 16:16:15 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:58:03 gj Exp
 #
 
@@ -18,7 +18,7 @@ CONFIGURE_ARGS+= --with-screen=${SCREEN_TYPE}
 INSTALL_TARGET=	install install-perl
 MAN1=		xvile.1
 
-#.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.prefs.mk"
 
 pre-configure:
 	@echo "To use xvile with menus, set the variable USE_MENUS"
