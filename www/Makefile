@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.151 2001/07/27 11:15:17 wiz Exp $
+# $NetBSD: Makefile,v 1.152 2001/08/09 07:57:30 simonb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -125,6 +125,7 @@ SUBDIR+=	ruby-tag
 SUBDIR+=	ruby-uri
 SUBDIR+=	sitecopy
 SUBDIR+=	skipstone
+SUBDIR+=	snarf
 SUBDIR+=	spfc
 SUBDIR+=	squid
 SUBDIR+=	surfraw
