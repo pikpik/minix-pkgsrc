@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2003/07/22 04:14:17 martti Exp $
+# $NetBSD: Makefile,v 1.39 2003/08/13 03:05:48 simonb Exp $
 #
 
-DISTNAME=	adzap-20030811
+DISTNAME=	adzap-20031018
 WRKSRC=		${WRKDIR}/adzap
 CATEGORIES=	www perl5
 # XXX: should use the following one day:
@@ -35,7 +35,7 @@ do-install:
     no-op.html no-op.js webbug-clear.gif webbug-clear.js webbug.gif webbug.js
 	${INSTALL_DATA} ${WRKSRC}/zaps/${FILE} ${PREFIX}/share/examples/adzap
 .endfor
-.for FILE in proxy-cisra.pac proxy-home.pac proxy-zip.pac
+.for FILE in proxy-home.pac proxy-zip.pac
 	${INSTALL_DATA} ${WRKSRC}/rc/${FILE} ${PREFIX}/share/examples/adzap
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/scripts/adzap.conf \
