@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2000/12/14 08:20:48 garbled Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:51:45 zuntum Exp $
 bin/gcfclient
 bin/cfclient
 bin/cfsndserv
@@ -70,4 +70,3 @@ share/cfclient/sounds/swish.raw
 share/cfclient/sounds/thru.raw
 @dirrm share/cfclient/sounds
 @dirrm share/cfclient
-
