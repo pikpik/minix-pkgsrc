@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 07:42:32 garbled Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/20 14:24:03 wiz Exp $
 
 DISTNAME=		clanbomber-1.01
+PKGNAME=		${DISTNAME}nb1
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.clanbomber.de/files/
 
