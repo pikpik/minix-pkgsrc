@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.98 2003/05/17 01:45:41 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.99 2003/06/03 22:27:57 salo Exp $
 #
 
 COMMENT=	Databases
 
+SUBDIR+=	abook
 SUBDIR+=	cdb
 SUBDIR+=	db
 SUBDIR+=	db3
