@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2000/01/28 17:01:46 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2000/02/28 01:55:26 thorpej Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/11/12 03:24:41 obrien Exp
 #
 
-DISTNAME=	sudo-1.6.2p1
+DISTNAME=	sudo-1.6.3p4
 CATEGORIES=	security
 MASTER_SITES=	http://www.courtesan.com/sudo/dist/ \
 		ftp://ftp.courtesan.com/pub/sudo/ \
