@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.39 2003/03/29 09:38:21 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.40 2004/02/05 20:14:06 skrll Exp $
 
 .include "Makefile.common"
 
 SVR4_PKGNAME=	ltool
 
-DEPENDS+=	${DISTNAME:S/-/-base-/}${PKGREVISION:C/[0-9]*/nb/}${PKGREVISION}:../libtool-base
-DEPENDS+=	${DISTNAME:S/-/-info-/}${PKGREVISION:C/[0-9]*/nb/}${PKGREVISION}:../libtool-info
+DEPENDS+=	${DISTNAME:S/-/-base-/}{,nb[0-9]}:../libtool-base
+DEPENDS+=	${DISTNAME:S/-/-info-/}{,nb[0-9]}:../libtool-info
 
 COMMENT=	Generic shared library support script
 
