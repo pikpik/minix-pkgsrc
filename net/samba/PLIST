@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.26 2001/10/15 08:50:52 martti Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:43 zuntum Exp $
 bin/make_printerdef
 bin/make_smbcodepage
 bin/make_unicodemap
@@ -13,7 +13,9 @@ bin/smbstatus
 bin/smbtar
 bin/testparm
 bin/testprns
+etc/rc.d/nmbd
 etc/rc.d/samba
+etc/rc.d/smbd
 man/man1/findsmb.1
 man/man1/make_smbcodepage.1
 man/man1/make_unicodemap.1
