@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/02/08 13:18:13 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/18 23:18:23 snj Exp $
 
 DISTNAME=	dvdrtools-${VERSION}
 PKGNAME=	${DISTNAME:S/dvdrtools/dvdrecord/}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://freesoftware.fsf.org/download/dvdrtools/dvdrtools.pkg/${VERSION}/
 EXTRACT_SUFX=	.tar.bz2
