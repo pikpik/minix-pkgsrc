@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- netscape-installer.orig	Wed Jun 25 02:04:39 2003
++++ netscape-installer
+@@ -38,7 +38,7 @@
+ 
+ LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+ export LD_LIBRARY_PATH
+-export -n MOZILLA_FIVE_HOME
++unset MOZILLA_FIVE_HOME
+ 
+ PATH=.:$PATH
+ export PATH
