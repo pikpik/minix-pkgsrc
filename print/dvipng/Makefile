@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/08/05 07:21:56 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/08/09 11:20:39 seb Exp $
 #
 
-DISTNAME=		dvipng-0.5
+DISTNAME=		dvipng-0.6
 CATEGORIES=		textproc converters
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=preview-latex/}
 
