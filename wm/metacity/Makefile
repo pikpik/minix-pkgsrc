@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2003/07/13 13:53:43 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:55:14 grant Exp $
 #
 
-DISTNAME=	metacity-2.4.34
-PKGREVISION=	3
+DISTNAME=	metacity-2.4.55
 CATEGORIES=	wm x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/metacity/2.4/}
 EXTRACT_SUFX=	.tar.bz2
@@ -22,8 +21,6 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-
-CONFIGURE_ARGS=		--without-included-gettext
 
 GCONF2_SCHEMAS=		metacity.schemas
 
