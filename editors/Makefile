@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/06/02 22:34:02 tron Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/07 19:51:18 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.44 1997/09/13 20:19:28 chuckr Exp
 #
 
@@ -14,6 +14,7 @@
 #    SUBDIR += jove
 #    SUBDIR += mule
 #    SUBDIR += mule-common
+    SUBDIR += ne
     SUBDIR += nedit
 #    SUBDIR += nvi
 #   SUBDIR += pico
