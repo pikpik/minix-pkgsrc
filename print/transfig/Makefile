@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2002/10/08 13:17:09 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2003/01/07 06:19:05 rh Exp $
 #
 
 DISTNAME=		transfig.3.2.4
 PKGNAME=		transfig-3.2.4
+PKGREVISION=		1
 CATEGORIES=		graphics print
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/transfig/} \
 			ftp://epb.lbl.gov/xfig/
