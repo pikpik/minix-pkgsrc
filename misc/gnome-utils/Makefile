@@ -1,4 +1,4 @@
-## $NetBSD: Makefile,v 1.43 2001/12/12 16:20:48 wiz Exp $
+## $NetBSD: Makefile,v 1.44 2002/03/13 17:37:26 fredb Exp $
 
 DISTNAME=		gnome-utils-1.4.1
 PKGREVISION=		1
@@ -18,6 +18,7 @@ USE_X11BASE=		YES
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		PKGLOCALEDIR=${PKGLOCALEDIR}
+CONFIGURE_ARGS+=	--localstatedir=${X11PREFIX}/var/lib
 
 .include "../../devel/libglade/buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
