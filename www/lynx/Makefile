@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2003/07/13 13:53:49 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2003/07/17 22:55:40 grant Exp $
 #
 
 DISTNAME=		lynx2.8.4rel.1
@@ -35,10 +35,15 @@ MAKEFILE=       	makefile
 
 BUILD_DEFS+=		LYNX_SCREEN_LIB USE_SOCKS USE_INET6
 
+.include "../../mk/bsd.prefs.mk"
+
 # For nls/gettext
-CONFIGURE_ARGS+=	--enable-nls
 CONFIGURE_ARGS+=	--with-nls-datadir=${PREFIX}/share
 CONFIGURE_ARGS+=	--without-included-gettext
+
+.if ${OPSYS} != "IRIX"
+CONFIGURE_ARGS+=	--enable-nls
+.endif
 
 # With SSL, lynx can get https:// and snews:// URL's.
 CONFIGURE_ARGS+=	--with-ssl
@@ -68,8 +73,6 @@ pre-install:
 
 post-install:
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/lynx
-
-.include "../../mk/bsd.prefs.mk"
 
 .if (${LYNX_SCREEN_LIB} == slang)
 .  include "../../devel/libslang/buildlink2.mk"
