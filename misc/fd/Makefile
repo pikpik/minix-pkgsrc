@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/03/08 10:53:57 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/12/03 16:23:17 rh Exp $
 # FreeBSD: ports/misc/fd/Makefile,v 1.14 1999/08/25 07:21:37 obrien Exp
 #
 
@@ -23,7 +23,7 @@ do-configure:
 post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/fd
-	@for i in $(DOCS); do \
+	@for i in ${DOCS}; do \
 		${INSTALL_DATA} ${WRKSRC}/$$i ${PREFIX}/share/doc/fd; \
 	done
 .endif
