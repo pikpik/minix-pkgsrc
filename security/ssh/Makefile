@@ -169,6 +169,6 @@ post-install:
 # targets precede inclusion of this.
 
 BUILD_DEFS+=		DONT_USE_IDEA SSH_CONF_DIR SSH_SUID USE_RSAREF2
-BUILD_DEFS+=		LIBWRAP_FWD
+BUILD_DEFS+=		LIBWRAP_FWD M68060
 
 .include "../../mk/bsd.pkg.mk"
