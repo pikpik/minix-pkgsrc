@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2002/09/28 02:20:48 rh Exp $
+# $NetBSD: Makefile,v 1.162 2002/09/29 08:42:07 lukem Exp $
 
 COMMENT=	System utilities
 
@@ -86,6 +86,7 @@ SUBDIR+=	psmisc
 SUBDIR+=	pstree
 SUBDIR+=	qlogtools
 SUBDIR+=	rconfig
+SUBDIR+=	rdiff-backup
 SUBDIR+=	roller
 SUBDIR+=	rox
 SUBDIR+=	rox-archive
