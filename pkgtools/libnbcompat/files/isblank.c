@@ -1,4 +1,4 @@
-/* $NetBSD */
+/* $NetBSD$ */
 
 #include "nbcompat.h"
 
