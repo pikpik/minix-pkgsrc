@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/13 21:56:01 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/07/13 23:12:18 itojun Exp $
 
-DISTNAME=	lambd-20010714
+DISTNAME=	lambd-20010718
 CATEGORIES=	sysutils
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -15,12 +15,9 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 MAKE_ENV+=	BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man
 
-F=	lambd.c lambd.8 Makefile
-
 do-extract:
 	${MKDIR} ${WRKSRC}
-	for i in ${F}; do \
-		${CP} ${FILESDIR}/$$i ${WRKSRC}; \
-	done
+	${CP} ${FILESDIR}/*.[ch8] ${WRKSRC}
+	${CP} ${FILESDIR}/Makefile ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"

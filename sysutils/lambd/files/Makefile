@@ -1,4 +1,7 @@
+#	$NetBSD$
+
 PROG=	lambd
+SRCS=	lambd.c lambio.c
 MAN=	lambd.8
 
 WARNS?=	2
