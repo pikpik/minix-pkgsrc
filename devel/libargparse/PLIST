@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/argparse.h
+lib/libargparse.a
+lib/libargparse.la
+lib/libargparse.so
+lib/libargparse.so.0
+lib/libargparse.so.0.0
