@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.173 2004/05/17 18:40:51 minskim Exp $
+# $NetBSD: Makefile,v 1.174 2004/05/28 00:48:27 wiz Exp $
 #
 
 COMMENT=	Programming languages
@@ -159,5 +159,6 @@ SUBDIR+=	vscm
 SUBDIR+=	vslisp
 SUBDIR+=	wonka
 SUBDIR+=	yabasic
+SUBDIR+=	gccAda-3.4
 
 .include "../mk/bsd.pkg.subdir.mk"
