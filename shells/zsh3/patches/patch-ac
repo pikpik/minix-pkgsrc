@@ -1,8 +1,8 @@
-$NetBSD: patch-ac,v 1.3 2000/01/06 22:42:15 windsor Exp $
+$NetBSD$
 
---- Doc/zsh.texi.orig	Thu Jan  6 15:44:41 2000
-+++ Doc/zsh.texi	Thu Jan  6 15:45:48 2000
-@@ -2,6 +2,10 @@
+--- Doc/zsh.texi.orig	Tue Feb 29 08:29:07 2000
++++ Doc/zsh.texi
+@@ -2,11 +2,15 @@
  @c %**start of header
  @setfilename zsh.info
  @settitle    zsh
@@ -13,3 +13,9 @@ $NetBSD: patch-ac,v 1.3 2000/01/06 22:42:15 windsor Exp $
  @c %**end of header
  
  @ifinfo
+ @c Note to RedHat: Do NOT change this to @{@}.  It really should be @'@'.
+-@set dsq @'@'
++@set dsq '@:'
+ @end ifinfo
+ @iftex
+ @c The sequence {} disappears completely in TeX, leaving only the quotes.
