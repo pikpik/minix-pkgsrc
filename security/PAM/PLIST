@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/security/_pam_aconf.h
 include/security/_pam_compat.h
 include/security/_pam_macros.h
