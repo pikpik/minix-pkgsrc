@@ -3,7 +3,8 @@
 # Date created:         20 Jul 1996
 # Whom:                 lukin@okbmei.msk.su
 #
-# $Id: Makefile,v 1.1.1.1 1997/10/27 02:18:58 hubertf Exp $
+# $NetBSD$
+# FreeBSD Id: Makefile,v 1.3 1996/11/18 11:20:59 asami Exp 
 #
 
 DISTNAME=       freeze-2.5
