@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/17 03:51:34 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/19 06:35:48 salo Exp $
 #
 
 DISTNAME=	aspell-fr-0.50-3
 PKGNAME=	${DISTNAME:C/fr-(.*)-(.*)$/francais-\1.\2/}
 CATEGORIES=	textproc
-MASTER_SITES=	${MASTER_SITE_GNU:=aspell/}
+MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/fr/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
