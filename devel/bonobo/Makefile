@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/02 15:15:16 rh Exp $
 #
 
 DISTNAME=		bonobo-0.4
-CATEGORIES=		devel corba
+CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=/unstable/sources/bonobo/}
 
 MAINTAINER=		packages@netbsd.org
