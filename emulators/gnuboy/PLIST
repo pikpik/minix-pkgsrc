@@ -1,6 +1,13 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/05/30 11:13:18 agc Exp $
+@comment $NetBSD$
 bin/xgnuboy
-share/doc/gnuboy/README
-share/doc/gnuboy/sample.rc
+share/doc/gnuboy/CHANGES
+share/doc/gnuboy/CONFIG
 share/doc/gnuboy/CREDITS
+share/doc/gnuboy/FAQ
+share/doc/gnuboy/HACKING
+share/doc/gnuboy/LIBERTY
+share/doc/gnuboy/README
+share/doc/gnuboy/README.old
+share/doc/gnuboy/WHATSNEW
+share/doc/gnuboy/sample.rc
 @dirrm share/doc/gnuboy
