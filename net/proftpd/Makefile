@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2002/09/16 09:32:20 martti Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/31 09:19:04 martti Exp $
 
-DISTNAME=	proftpd-1.2.7
+DISTNAME=	proftpd-1.2.8
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.proftpd.org/distrib/source/
 EXTRACT_SUFX=	.tar.bz2
