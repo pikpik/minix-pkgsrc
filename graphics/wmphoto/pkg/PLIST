@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/wmphoto
+share/doc/wmphoto/README
+share/doc/wmphoto/HINTS
+@dirrm share/doc/wmphoto
