@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/04/30 17:07:11 tv Exp $
+# $NetBSD: Makefile,v 1.5 1999/10/07 17:41:55 tron Exp $
 
 DISTNAME=	sendmail.8.9.3
 PKGNAME=	sendmail-8.9.3
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/ \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.sendmail.org/
 
-DEPENDS+=	db-2.7.3:../../databases/db
+DEPENDS+=	db-2.7.7:../../databases/db
 
 LICENSE=	no-profit
 
