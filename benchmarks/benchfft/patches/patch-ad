@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1 2000/05/13 14:51:12 dmcmahill Exp $
 
 link required fortran library
 
@@ -14,6 +14,6 @@ link required fortran library
  
  bench: $(OBJECTS)
 -	$(CC) $(CFLAGS) $(OBJECTS) $(LIBRARIES) -o $@
-+	$(CC) $(CFLAGS) $(OBJECTS) $(LIBRARIES) $(FLIBS) -o $@
++	$(CC) $(CFLAGS) $(OBJECTS) $(LIBRARIES) $(FLIBS) -u _MAIN__ -u MAIN__ -o $@
  
  submit: bench
