@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2000/05/31 00:28:56 itohy Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:37 tron Exp $
 #
 
 DISTNAME=	xpenguins-1.2
 CATEGORIES=	games x11
-MASTER_SITES=	http://www.met.rdg.ac.uk/~swrhgnrj/xpenguins/
+MASTER_SITES=	http://xpenguins.seul.org/
 
 MAINTAINER=	hubertf@netbsd.org
-HOMEPAGE=	http://www.met.rdg.ac.uk/~swrhgnrj/xpenguins/
+HOMEPAGE=	http://xpenguins.seul.org/
 
 USE_XPM=	YES
 
