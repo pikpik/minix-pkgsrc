@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2001/06/11 04:59:58 jtb Exp $
+# $NetBSD: Makefile,v 1.4 2001/10/31 18:11:25 zuntum Exp $
 
 DISTNAME=	sarah-0.7b
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.conundrum.com/pub/sarah/
 
-MAINTAINER=	zuntum@netbsd.org
+MAINTAINER=	packages@netbsd.org
 COMMENT=	Syslog automated Rotation and Archive Handler
 
 LICENSE=	limited-redistribution
