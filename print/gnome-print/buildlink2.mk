@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/07/13 13:53:08 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2004/01/03 18:49:51 reed Exp $
 
 .if !defined(GNOME_PRINT_BUILDLINK2_MK)
 GNOME_PRINT_BUILDLINK2_MK=	# defined
@@ -12,6 +12,7 @@ BUILDLINK_PREFIX.gnome-print_DEFAULT=	${X11PREFIX}
 BUILDLINK_FILES.gnome-print+=	include/gnome-1.0/libgnomeprint/*
 BUILDLINK_FILES.gnome-print+=	lib/libgnomeprint.*
 
+.include "../../databases/db4/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf-gnome/buildlink2.mk"
 .include "../../textproc/libxml/buildlink2.mk"
 
