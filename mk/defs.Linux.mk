@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.38 2002/12/03 21:13:38 agc Exp $
+# $NetBSD: defs.Linux.mk,v 1.39 2002/12/15 02:12:32 salo Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -11,6 +11,7 @@ CHGRP?=		/bin/chgrp
 CMP?=		cmp
 CP?=		/bin/cp
 CUT?=		/bin/cut
+DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/bin/echo
@@ -35,6 +36,7 @@ LS?=		/bin/ls
 MKDIR?=		/bin/mkdir -p
 MTREE?=		${ZOULARISBASE}/sbin/mtree
 MV?=		/bin/mv
+NICE?=		/bin/nice
 PATCH?=		/usr/bin/patch
 PAX?=		${ZOULARISBASE}/bin/pax
 PERL5?=		${LOCALBASE}/bin/perl
