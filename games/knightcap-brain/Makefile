@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 08:39:18 jlam Exp $
 
-DISTNAME=		knightcap-brain-19980616
+DISTNAME=		new_brain
+PKGNAME=		knightcap-brain-19980616
 CATEGORIES=		games
 MASTER_SITES=		ftp://samba.anu.edu.au/pub/KnightCap/
-DISTFILES=		new_brain.dat
+EXTRACT_SUFX=		.dat
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://anu.samba.org/KnightCap/
