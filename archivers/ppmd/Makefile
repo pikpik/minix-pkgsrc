@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/07/28 02:47:35 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/03 15:14:50 wiz Exp $
 #
 
 DISTNAME=	ppmdi1
@@ -30,7 +30,7 @@ post-extract:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ppmd ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ppmd/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ppmd
 	${INSTALL_DATA} ${WRKSRC}/read_me.txt ${PREFIX}/share/doc/ppmd/
 
 .include "../../mk/bsd.pkg.mk"
