@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- configure.orig	Sat May 20 21:50:23 2000
++++ configure
+@@ -6393,6 +6393,10 @@
+ 
+ 
+ 
++# Set DATADIRNAME to "${LOCALEBASE}"
++DATADIRNAME="${LOCALEBASE}"
++INTLDEPS=
++INTLLIBS="-lintl"
+ 
+ trap '' 1 2 15
+ cat > confcache <<\EOF
