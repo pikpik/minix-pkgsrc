@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/03/11 21:39:17 tv Exp $
+# $NetBSD: Makefile,v 1.31 2004/03/27 14:21:21 grant Exp $
 #
 
 DISTNAME=	unrarsrc-3.3.6
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.rarlab.com/
 COMMENT=	Extract, view & test RAR archives
 
 USE_GCC_SHLIB=	# defined
+USE_LANGUAGES=	c++
 
 MAKEFILE=	makefile.unix
 
