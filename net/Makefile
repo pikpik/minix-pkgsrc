@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.402 2003/09/04 08:42:51 drochner Exp $
+# $NetBSD: Makefile,v 1.403 2003/09/04 13:27:03 xtraeme Exp $
 #
 
 COMMENT=	Networking tools
@@ -189,6 +189,7 @@ SUBDIR+=	p5-Net-SNMP
 SUBDIR+=	p5-Net-Server
 SUBDIR+=	p5-Net-TFTP
 SUBDIR+=	p5-Net-Telnet
+SUBDIR+=	p5-Net-Telnet-Cisco
 SUBDIR+=	p5-Net-Z3950
 SUBDIR+=	p5-SNMP
 SUBDIR+=	p5-SNMP_Session
