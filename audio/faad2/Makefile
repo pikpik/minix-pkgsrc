@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/07/31 08:10:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:13:05 tv Exp $
 #
 
 DISTNAME=	faad2-2.0
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://faac.sourceforge.net/
+HOMEPAGE=	http://www.audiocoding.com/
 COMMENT=	AAC decoding library
 
 RESTRICTED=	Dolby doesn't allow binary distributions

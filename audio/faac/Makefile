@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/16 01:51:21 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:05 tv Exp $
 #
 
 DISTNAME=	faac-1.24
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://faac.sourceforge.net/
+HOMEPAGE=	http://www.audiocoding.com/
 COMMENT=	AAC audio encoder
 
 USE_BUILDLINK3=	yes
