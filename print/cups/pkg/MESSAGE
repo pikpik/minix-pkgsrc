@@ -1,0 +1,8 @@
+==========================================================================
+$NetBSD$
+
+You may want to backup /etc/printcap before starting cupsd for the first
+time, as cupsd may overwrite this file with automatically generated
+content.
+
+==========================================================================
