@@ -1,0 +1,6 @@
+@comment $NetBSD$
+man/man5/iplog.conf.5
+man/man8/iplog.8
+sbin/iplog
+etc/rc.d/iplog
+etc/iplog.conf.sample
