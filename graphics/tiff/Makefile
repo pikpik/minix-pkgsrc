@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/22 12:39:47 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/07/04 05:11:13 mycroft Exp $
 
 DISTNAME=	tiff-v3.4beta037
 PKGNAME=	tiff-3.4
@@ -15,6 +15,7 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--noninteractive --site ${FILESDIR}
 CONFIGURE_ENV+=		PREFIX=${PREFIX}
+MAKE_ENV+=		INSTALL_MAN="${INSTALL_MAN}" LN="${LN}"
 
 post-install:
 	${LDCONFIG} || ${TRUE}
