@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.311 2004/03/12 05:13:51 taca Exp $
+# $NetBSD: Makefile,v 1.312 2004/03/30 23:42:17 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -221,6 +221,7 @@ SUBDIR+=	swill
 SUBDIR+=	swish-e
 SUBDIR+=	tcl-cgi
 SUBDIR+=	thttpd
+SUBDIR+=	thy
 SUBDIR+=	tidy
 SUBDIR+=	tinyproxy
 SUBDIR+=	trac
