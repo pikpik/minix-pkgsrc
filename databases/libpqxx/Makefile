@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/05/08 05:25:12 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/07/24 22:45:15 recht Exp $
 #
 
 .include "../../databases/libpqxx/Makefile.common"
@@ -20,6 +20,8 @@ CONFIGURE_ARGS+=	--with-postgres-include=${PGSQL_PREFIX}/include/postgresql
 
 # Avoid an ICE in gcc2 on sparc64
 CONFIGURE_ENV+=		F77=${FALSE}
+
+PGSQL_VERSION_REQD=	73
 
 .include "../../mk/pgsql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
