@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- xpmroot.c.BAK	Mon Feb 22 04:04:55 1999
 +++ xpmroot.c	Mon Feb 22 04:04:58 1999
 @@ -6,8 +6,6 @@
