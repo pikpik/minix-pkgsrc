@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2003/06/23 13:23:36 adam Exp $
+# $NetBSD: Makefile,v 1.31 2005/01/06 11:52:35 adam Exp $
 
 DISTNAME=	ntop-3.1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ntop/}
 EXTRACT_SUFX=	.tgz
@@ -31,6 +32,8 @@ CONFIGURE_ARGS+=	--with-zlib-root=${BUILDLINK_PREFIX.zlib}
 CONFIGURE_ARGS+=	--disable-ipv6
 
 PTHREAD_OPTS+=		require
+
+BUILDLINK_DEPENDS.libpcap+=	libpcap>=0.8.3
 
 .include "../../databases/gdbm/buildlink3.mk"
 .include "../../graphics/gdchart/buildlink3.mk"
