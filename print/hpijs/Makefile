@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/06/03 11:53:05 cube Exp $
+# $NetBSD: Makefile,v 1.14 2004/06/27 13:33:29 grant Exp $
 
 DISTNAME=	hpijs-1.5
 PKGREVISION=	1
@@ -16,11 +16,7 @@ USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		# defined
 CPPFLAGS+=		-DAPDK_BUFFER_SEND
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "SunOS"
-USE_PKGSRC_GCC=		# defined
-.endif
+ONLY_FOR_COMPILER=	gcc
 
 do-install:
 	${INSTALL_DATA_DIR} ${LOCALBASE}/share/ppd
