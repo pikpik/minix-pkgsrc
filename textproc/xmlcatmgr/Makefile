@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/23 17:12:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/28 19:51:06 jmmv Exp $
 #
 
 DISTNAME=	xmlcatmgr-2.0
@@ -34,6 +34,12 @@ SUPPORT_FILES+=	${EGDIR}/catalog.share.xml ${PREFIX}/share/xml/catalog
 
 BUILD_DIRS=	${WRKSRC}/work
 INSTALL_DIRS=	${WRKSRC}/work
+
+.include "../../mk/bsd.prefs.mk"
+
+.if defined(USE_MIPSPRO) && !empty(USE_MIPSPRO:M[yY][eE][sS])
+CFLAGS+=	-c99
+.endif
 
 post-build:
 	@${ECHO} "Creating SGML catalogs..."
