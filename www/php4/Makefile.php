@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.2 2001/10/16 12:44:17 tron Exp $
+# $NetBSD: Makefile.php,v 1.3 2001/10/18 17:16:43 jlam Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=	--disable-posix
 CONFIGURE_ARGS+=	--disable-session
 CONFIGURE_ARGS+=	--disable-xml
 
-CONFIGURE_ARGS+=	--with-config-file-path=${PHP_CONFDIR}
+CONFIGURE_ARGS+=	--with-config-file-path=${CONFDIR}
 CONFIGURE_ARGS+=	--with-exec-dir=${PREFIX}/libexec/php4
 CONFIGURE_ARGS+=	--with-regex=system
 

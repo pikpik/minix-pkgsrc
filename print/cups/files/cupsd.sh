@@ -1,5 +1,7 @@
 #! /bin/sh
 #
+# $NetBSD$
+#
 # Common UNIX Printing System daemon
 #
 # PROVIDE: cupsd
