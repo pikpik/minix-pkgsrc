@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/08/30 22:51:27 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/12 12:07:18 uebayasi Exp $
 
 DISTNAME=	net-snmp-5.0.9
 CATEGORIES=	net
@@ -79,6 +79,10 @@ CONFIGURE_ARGS+=	--enable-ucd-snmp-compatibility
 CONFIGURE_ENV+=		ac_cv_path_LPSTAT_PATH=no
 .endif
 CONFIGURE_ENV+=		PERLPROG="${PERL5}"
+
+.if (${OPSYS} == "NetBSD")
+OSVERSION_SPECIFIC=	YES
+.endif
 
 # Handle ${PREFIX}/share/snmp in the DEINSTALL script since it may contain
 # leftover config files or pidfiles after deinstallation.
