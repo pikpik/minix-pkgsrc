@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- nttcp.c.orig	Mon Dec 18 21:16:54 2000
++++ nttcp.c
+@@ -136,7 +136,7 @@
+ #endif /* aix */ 
+ 
+ /*====================================================================*/
+-#if defined(FreeBSD)
++#if defined(FreeBSD) || defined(__NetBSD__)
+ #define	SIGCLD	SIGCHLD
+ #endif /*FreeBSD*/
+ 
