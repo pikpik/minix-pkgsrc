@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ipl/BuildBin.orig	Sat Jun 23 20:09:56 2001
+--- ipl/BuildBin.orig
 +++ ipl/BuildBin
-@@ -15,8 +15,8 @@
+@@ -13,8 +13,8 @@
  TOP=`cd ..; pwd`
  BIN=$TOP/bin
  PATH=$BIN:$PATH
@@ -12,4 +12,4 @@ $NetBSD$
 +LPATH=$TOP/lib/icon
  export PATH IPATH LPATH
  
- #  Always build progs
+ #  Figure out executable extension
