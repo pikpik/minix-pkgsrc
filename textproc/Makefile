@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2004/05/29 02:01:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.250 2004/06/24 03:46:33 xtraeme Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -202,6 +202,7 @@ SUBDIR+=	py-csv
 SUBDIR+=	py-docutils
 SUBDIR+=	py-dtml
 SUBDIR+=	py-expat
+SUBDIR+=	py-feedparser
 SUBDIR+=	py-gdick
 SUBDIR+=	py-gnosis-utils
 SUBDIR+=	py-libxml2
