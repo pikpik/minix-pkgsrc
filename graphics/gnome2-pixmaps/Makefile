@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/09/15 11:59:36 rh Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/05 04:01:14 wiz Exp $
 #
 
 DISTNAME=		gnome-desktop-2.0.8
@@ -33,5 +33,4 @@ do-install:
 		${INSTALL_DATA} $$i ${DSTDIR} ;			\
 	done
 
-.include "../../archivers/bzip2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
