@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.41 2003/04/28 20:54:45 salo Exp $
+# $NetBSD: Makefile,v 1.42 2004/04/24 21:34:46 snj Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
 #
 
 DISTNAME=		rxvt-2.7.10
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.rxvt.org/pub/rxvt/ \
 			ftp://mason.primenet.com.au/pub/rxvt/
