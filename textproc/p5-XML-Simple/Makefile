@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:16:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:54:41 grant Exp $
 #
 
 DISTNAME=	XML-Simple-2.07
@@ -16,7 +16,9 @@ DEPENDS+=       p5-XML-NamespaceSupport-[0-9]*:../../textproc/p5-XML-NamespaceSu
 DEPENDS+=       p5-Storable-[0-9]*:../../devel/p5-Storable
 DEPENDS+=       p5-Test-Simple-[0-9]*:../../devel/p5-Test-Simple
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/Simple/.packlist
 
 .include "../../lang/perl5/module.mk"

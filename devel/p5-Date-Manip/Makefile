@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/21 16:43:36 martti Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/25 12:02:23 jmmv Exp $
 #
 
 DISTNAME=     	DateManip-5.42a
@@ -11,7 +11,9 @@ MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://www.cpan.org/
 COMMENT=	Perl5 module for date calculations
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Date/Manip/.packlist
 
 .include "../../lang/perl5/module.mk"

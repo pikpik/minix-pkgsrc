@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/07/21 16:36:14 martti Exp $
+# $NetBSD: Makefile,v 1.23 2003/11/27 16:34:28 grant Exp $
 #
 
 VERS=			2.21
@@ -12,7 +12,9 @@ MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/MIME-Base64/Base64.html
 COMMENT=		Perl5 module for Base64 and Quoted-Printable encodings
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/MIME/Base64/.packlist
 
 .include "../../lang/perl5/module.mk"
