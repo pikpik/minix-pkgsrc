@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 13:09:58 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/17 19:24:42 wiz Exp $
 
 PKGNAME=		realplayer-8.0.1
 PKGREVISION=		1
@@ -67,7 +67,15 @@ _FETCH_MESSAGE= \
 	    ${ECHO} "==============================================================="; \
 	    ${ECHO} "  RealPlayer 8 (Self-Extracting) must be fetched"; \
 	    ${ECHO} "  into ${DISTDIR} from"; \
-	    ${ECHO} "  ${DOWNLOAD}."; \
+	    ${ECHO} "  ${DOWNLOAD}.";
+.if defined(EXTRA_DIST)
+_FETCH_MESSAGE+= \
+	    ${ECHO} "  You also need the file ${EXTRA_DIST} which you can"; \
+	    ${ECHO} "  get following the"; \
+	    ${ECHO} "  \`\`free RealVideo 9 codec upgrade package'' link"; \
+	    ${ECHO} "  on the same page.";
+.endif
+_FETCH_MESSAGE+= \
 	    ${ECHO} "==============================================================="
 
 pre-extract:
