@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/08/25 15:52:02 tv Exp $
+# $NetBSD: Makefile,v 1.6 1999/03/08 10:53:57 agc Exp $
 # $FreeBSD Id: Makefile,v 1.2 1997/07/21 19:28:46 max Exp
 #
 
@@ -26,7 +26,8 @@ post-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rumba ${PREFIX}/sbin
 	${INSTALL_PROGRAM} ${WRKDIR}/unrumba/unrumba ${PREFIX}/sbin
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/README.rumba
+	${MKDIR} ${PREFIX}/share/doc/rumba
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/rumba/README
 	${INSTALL_MAN} ${WRKSRC}/smbmount.8 ${PREFIX}/man/man8/rumba.8
 
 .include "../../mk/bsd.pkg.mk"
