@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+                  *===* ADDITIONAL SECURITY NOTES *===*
+
+ja-samba-2.2.7.1.1.1 already contains fixes for two security problems
+which are solved by samba 2.2.8.
+
+===========================================================================
