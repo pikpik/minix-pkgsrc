@@ -20,4 +20,9 @@ pre-install:
 		${CHMOD} -R g=,o= ${SPOOL}
 		${CP} /etc/localtime /etc/resolv.conf ${SPOOL}/etc
 
+post-install:
+	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/smtpd
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/smtpd
+	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/smtpd
+
 .include "../../mk/bsd.pkg.mk"
