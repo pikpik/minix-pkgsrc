@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/08/13 09:10:10 zuntum Exp $
 #
 
 DISTNAME=	qmail-1.03
@@ -60,6 +60,7 @@ pre-build:
 
 pre-install:
 	${SED} ${FILES_SUBST_SED} ${PKGDIR}/DEINSTALL > ${DEINSTALL_FILE}
+	${LN} -sf ${QMAILDIR} ${PREFIX}/qmail
 
 post-install:
 	${MKDIR} ${QMAILDIR}/alias
