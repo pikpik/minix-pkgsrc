@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.81 2003/04/15 01:33:58 grant Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.82 2003/04/15 01:35:59 grant Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -741,7 +741,7 @@ ${BUILDLINK_${_wrappee_}}:						\
 		done;							\
 		IFS="$$OLDIFS";						\
 		if [ ! -x "$${wrappee}" ]; then				\
-			${ECHO_MSG} "Unable to create $${wrappee} wrapper script: no such file"; \
+			${ECHO_MSG} "Unable to create \"$${wrappee}\" wrapper script: no such file"; \
 			exit 1;						\
 		fi;							\
 		;;							\
