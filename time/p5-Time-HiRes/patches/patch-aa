@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.PL.orig	Sun Oct 13 19:20:37 2002
+--- Makefile.PL.orig	Mon May 12 18:36:44 2003
 +++ Makefile.PL
-@@ -365,7 +365,6 @@ sub doMakefile {
+@@ -398,7 +398,6 @@ sub doMakefile {
  	'XSOPT'	=> $XSOPT,
      # do not even think about 'INC' => '-I/usr/ucbinclude', Solaris will avenge.
  	'INC'	=> '',     # e.g., '-I/usr/include/other' 
