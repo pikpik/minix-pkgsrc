@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.3 2002/11/02 16:08:32 grant Exp $	*/
+/*	$NetBSD: main.c,v 1.1.1.1 2002/12/20 18:14:09 schmonz Exp $	*/
 
 #if 0
 #include <sys/cdefs.h>
@@ -6,7 +6,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: main.c,v 1.17 1997/10/08 07:46:23 charnier Exp";
 #else
-__RCSID("$NetBSD: main.c,v 1.3 2002/11/02 16:08:32 grant Exp $");
+__RCSID("$NetBSD: main.c,v 1.1.1.1 2002/12/20 18:14:09 schmonz Exp $");
 #endif
 #endif
 #endif
@@ -32,7 +32,7 @@ __RCSID("$NetBSD: main.c,v 1.3 2002/11/02 16:08:32 grant Exp $");
 #include "lib.h"
 #include "create.h"
 
-static const char Options[] = "ORhlVvFf:p:P:C:c:d:i:k:L:r:t:X:D:m:s:S:b:B:UI:";
+static const char Options[] = "B:C:D:FI:L:OP:RS:UVX:b:c:d:f:hi:k:lm:n:p:r:s:t:v";
 
 char   *Prefix = NULL;
 char   *Comment = NULL;
@@ -50,6 +50,7 @@ char   *BuildVersion = NULL;
 char   *BuildInfo = NULL;
 char   *SizePkg = NULL;
 char   *SizeAll = NULL;
+char   *Preserve = NULL;
 char   *SrcDir = NULL;
 char   *realprefix = NULL;
 char    PlayPen[FILENAME_MAX];
@@ -167,6 +168,10 @@ main(int argc, char **argv)
 
 		case 'm':
 			Mtree = optarg;
+			break;
+
+		case 'n':
+			Preserve = optarg;
 			break;
 
 		case 'P':
