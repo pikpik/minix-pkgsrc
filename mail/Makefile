@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.167 2003/05/14 04:21:09 salo Exp $
+# $NetBSD: Makefile,v 1.168 2003/05/31 13:57:32 uebayasi Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -129,6 +129,7 @@ SUBDIR+=	spamprobe
 SUBDIR+=	spruce
 SUBDIR+=	squirrelmail
 SUBDIR+=	sqwebmail
+SUBDIR+=	ssmtp
 SUBDIR+=	sylpheed
 SUBDIR+=	sylpheed-claws
 SUBDIR+=	sympa
