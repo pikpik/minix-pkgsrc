@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/04/20 03:47:35 enami Exp $
+# $NetBSD: Makefile,v 1.9 2000/04/21 03:54:43 itohy Exp $
 
 DISTNAME=	w3m-0.1.8
 CATEGORIES=	www
@@ -20,9 +20,9 @@ BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
 .if defined(EXTRACT_USING_PAX)
-EXTRACT_ELEMENTS=	-c w3m/gc\*
+EXTRACT_ELEMENTS=	-c w3m/gc/\*
 .else
-EXTRACT_ELEMENTS=	--exclude w3m/gc\*
+EXTRACT_ELEMENTS=	--exclude w3m/gc/\*
 .endif
 
 # Set this to NO for ISO-8859-1 support (exclusive to Japanese).
