@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2002/06/12 01:40:05 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/05 03:07:08 wiz Exp $
 #
 
 DISTNAME=	eblook-1.5.1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/eblook/dist/
 
-MAINTAINER=	uebayasi@soum.co.jp
+MAINTAINER=	uebayasi@netbsd.org
 HOMEPAGE=	http://openlab.ring.gr.jp/edict/eblook/
 COMMENT=	interactive command-line interface for EPWING electric dictionaries
 
