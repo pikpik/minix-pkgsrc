@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.476 2004/03/28 21:27:58 darcy Exp $
+# $NetBSD: Makefile,v 1.477 2004/03/29 18:56:14 tv Exp $
 #
 
 COMMENT=	Development utilities
@@ -20,6 +20,7 @@ SUBDIR+=	aegis
 SUBDIR+=	ald
 SUBDIR+=	anjuta
 SUBDIR+=	apache-ant
+SUBDIR+=	apache-ant15
 SUBDIR+=	apel
 SUBDIR+=	apr
 SUBDIR+=	argtable
