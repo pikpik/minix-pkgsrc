@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.171 2003/04/25 04:50:29 rh Exp $
+# $NetBSD: Makefile,v 1.172 2003/06/01 12:28:11 jmmv Exp $
 #
 
 COMMENT=	Audio tools
@@ -154,6 +154,7 @@ SUBDIR+=	sweep
 SUBDIR+=	tcl-snack
 SUBDIR+=	tfmxplay
 SUBDIR+=	timidity
+SUBDIR+=	toolame
 SUBDIR+=	tosha
 SUBDIR+=	tracker
 SUBDIR+=	tremor
