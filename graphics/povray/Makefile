@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/02/09 20:20:55 tron Exp $
+# $NetBSD: Makefile,v 1.9 2000/03/21 22:40:54 tron Exp $
 # FreeBSD Id: Makefile,v 1.9 1998/08/20 18:56:00 jseger Exp
 #
 
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Official/Unix/ \
 DISTFILES=      povuni_s.tgz povuni_d.tgz
 DIST_SUBDIR=	${PKGNAME}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	pooka@netbsd.org
 HOMEPAGE=	http://www.povray.org/
 
 DEPENDS+=	png>=1.0.6:../../graphics/png
