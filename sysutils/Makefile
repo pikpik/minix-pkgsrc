@@ -1,10 +1,14 @@
-# $NetBSD: Makefile,v 1.25 1999/03/14 20:58:57 tron Exp $
+# $NetBSD: Makefile,v 1.26 1999/03/15 00:11:58 tron Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
 #    SUBDIR += LPRng
     SUBDIR += addnerd
 #    SUBDIR += afio
+    SUBDIR += amanda
+    SUBDIR += amanda-common
+    SUBDIR += amanda-server
+    SUBDIR += amanda-client
     SUBDIR += asapm
     SUBDIR += cdrecord
 #    SUBDIR += cd-write

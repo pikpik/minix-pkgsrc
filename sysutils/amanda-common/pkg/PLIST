@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 1998/07/18 14:39:41 tv Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/02/23 17:03:41 bouyer Exp $
 lib/libamanda.a
 lib/libamanda-2.4.1p1.so.0.0
 lib/libamtape.a
