@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.9 1998/04/15 10:38:17 agc Exp $
+# $NetBSD: Makefile,v 1.10 1999/01/25 14:54:46 kleink Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
 #    SUBDIR += btoa
 #    SUBDIR += c2html
+    SUBDIR += cbmconvert
 #    SUBDIR += ish
-   SUBDIR += kdesupport
+    SUBDIR += kdesupport
 #    SUBDIR += mimepp
     SUBDIR += mpack
 #    SUBDIR += p5-Convert-UU
