@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.60 2003/04/10 20:10:20 grant Exp $
+# $NetBSD: Makefile,v 1.61 2003/05/03 16:55:28 atatat Exp $
 #
 
 DISTNAME=		lsof_4.67
-PKGREVISION=		2
 PKGNAME=		${DISTNAME:S/_/-/}
-TMPWRK=			${WRKDIR}/${DISTNAME}
+PKGREVISION=		2
 WRKSRC=			${WRKDIR}/${DISTNAME}/${SRCBALL_NAME}
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/  \
@@ -27,6 +26,7 @@ CPPFLAGS+=		-DLSOF_MORE_SECURE=${LSOF_MORE_SECURE} \
 			-DLSOF_LESS_SECURE_SOCKETS=${LSOF_LESS_SECURE_SOCKETS}
 OSVERSION_SPECIFIC=	yes
 
+TMPWRK=			${WRKDIR}/${DISTNAME}
 SRCBALL_NAME=		${DISTNAME}_src
 
 .include "../../mk/bsd.prefs.mk"
