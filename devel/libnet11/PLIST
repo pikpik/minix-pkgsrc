@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/01/20 18:04:58 adrianp Exp $
+bin/libnet-config
 include/libnet.h
 include/libnet/libnet-asn1.h
 include/libnet/libnet-functions.h
