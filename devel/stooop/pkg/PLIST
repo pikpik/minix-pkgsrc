@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/stooop/pkgIndex.tcl
+lib/stooop/stooop.tcl
+lib/stooop/switched.tcl
+@dirrm lib/stooop
