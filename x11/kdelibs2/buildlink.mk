@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.7 2001/08/17 21:14:17 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.8 2001/09/07 14:27:13 drochner Exp $
 #
 # This Makefile fragment is included by packages that use kdelibs2.
 #
@@ -32,6 +32,7 @@ BUILDLINK_FILES.kdelibs2+=	bin/dcopserver
 .endif
 
 .include "../../archivers/bzip2/buildlink.mk"
+BUILDLINK_DEPENDS.audiofile=	libaudiofile>=0.1.9
 .include "../../audio/libaudiofile/buildlink.mk"
 .include "../../devel/libtool/buildlink.mk"
 .include "../../graphics/tiff/buildlink.mk"
