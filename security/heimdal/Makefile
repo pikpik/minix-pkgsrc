@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2004/06/25 15:42:52 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/06/25 15:44:30 jlam Exp $
 
 DISTNAME=	heimdal-0.6.1
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.pdc.kth.se/pub/heimdal/src/		\
 		ftp://ftp.sunet.se/pub/unix/admin/mirror-pdc/pub/heimdal/src/
@@ -16,7 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
-HEIMDAL_STATEDIR?=	/var/heimdal
+HEIMDAL_STATEDIR?=	${VARBASE}/heimdal
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
