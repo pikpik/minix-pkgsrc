@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/10/19 10:54:46 rh Exp $
+# $NetBSD: Makefile,v 1.28 2002/10/26 18:08:54 bouyer Exp $
 
 DISTNAME=		gal-0.19.3
 PKGREVISION=		1
@@ -15,7 +15,7 @@ USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 INCOMPAT_ICONV= SunOS-*-*
 
