@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/01/26 13:13:54 martti Exp $
+# $NetBSD: Makefile,v 1.30 2003/02/12 00:47:52 atatat Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -55,6 +55,9 @@ post-install:
 	${INSTALL_DATA} \
 		${WRKSRC}/sample.fvwmrc/system.fvwm2rc \
 		${PREFIX}/lib/X11/fvwm2/system.fvwm2rc.example
+	${INSTALL_SCRIPT} \
+		${WRKSRC}/utils/fvwmrc_convert \
+		${PREFIX}/bin/fvwmrc_convert
 	if [ ! -f ${PREFIX}/lib/X11/fvwm2/system.fvwm2rc ]; then \
 		${INSTALL_DATA} \
 			${PREFIX}/lib/X11/fvwm2/system.fvwm2rc.example \
