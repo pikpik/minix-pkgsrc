@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/12 15:26:04 jlam Exp $
 
 DISTNAME=	horde-1.2.4
 CATEGORIES=	www
@@ -17,7 +17,7 @@ INSTALL_FILE=	${WRKDIR}/INSTALL
 CONFDIR=	${PREFIX}/etc/httpd
 DOCDIR=		${PREFIX}/share/doc/horde
 HORDEDIR=	${PREFIX}/share/horde
-PHPLIBDIR=	${PREFIX}/share/horde-phplib
+PHPLIBDIR=	${PREFIX}/share/horde/phplib
 
 MESSAGE_SUBST+=	HORDEDIR=${HORDEDIR}
 MESSAGE_SUBST+=	PHPLIBDIR=${PHPLIBDIR}
