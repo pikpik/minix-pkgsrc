@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/20 12:08:40 agc Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/11 04:06:09 snj Exp $
 #
 
 DISTNAME=		hmmer-2.3.1
@@ -12,5 +12,7 @@ COMMENT=		Implementation of profile HMM software for protein sequence analysis
 WRKSRC=			${WRKDIR}/hmmer-2.3.1
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
+
+MAKE_FLAGS+=            MKDIR="${MKDIR}"
 
 .include "../../mk/bsd.pkg.mk"
