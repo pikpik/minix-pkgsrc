@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./kdm/daemon.c	Wed Sep 30 23:19:53 1998
-+++ /usr/pkgsrc/x11/kdebase/work.i386.unpatched/kdebase-1.1.2/kdm/daemon.c	Fri Nov 12 05:10:31 1999
+--- kdm/daemon.c.orig	Wed Sep 30 22:19:53 1998
++++ kdm/daemon.c
 @@ -38,6 +38,10 @@
  
  #include <X11/Xos.h>

@@ -1,9 +1,7 @@
-$NetBSD: patch-ab,v 1.10 1999/12/06 20:44:59 bouyer Exp $
+$NetBSD$
 
-The ossaudio check pulled into KDE. 1999-12-11 jdolecek
-
---- ./kaudio/Makefile.in	Tue Sep  7 17:20:48 1999
-+++ /usr/pkgsrc/x11/kdebase/work.i386.unpatched/kdebase-1.1.2/kaudio/Makefile.in	Fri Nov 12 05:10:31 1999
+--- kaudio/Makefile.in.orig	Tue Sep  7 16:20:48 1999
++++ kaudio/Makefile.in
 @@ -201,7 +201,7 @@
  CPPFLAGS = @CPPFLAGS@
  LIBS = @LIBS@

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- kdehelp/Makefile.in.orig	Tue Sep  7 10:20:54 1999
+--- kdehelp/Makefile.in.orig	Tue Sep  7 16:20:54 1999
 +++ kdehelp/Makefile.in
 @@ -174,7 +174,7 @@
  INCLUDES = $(all_includes)
