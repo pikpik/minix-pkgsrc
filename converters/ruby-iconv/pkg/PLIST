@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITEARCHLIBDIR}/iconv.so
+${RUBY_DOCDIR}/iconv/iconv.html
+${RUBY_DOCDIR}/iconv/rd.css
+@dirrm ${RUBY_DOCDIR}/iconv
