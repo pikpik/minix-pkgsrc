@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:30:09 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/20 08:29:20 wiz Exp $
 
-DISTNAME=	cvsup-static-16.1.f
+DISTNAME=	cvsup-static-16.1.h
 PKGNAME=	${DISTNAME:C/-static//}
 WRKSRC=		${WRKDIR}
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/cvsupd/${MACHINE_ARCH}-${OS_VERSION:C/(...).*/\1/}/
+MASTER_SITES=	http://motoyuki.bsdclub.org/data/NetBSD/CVSup/i386/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tech-pkg@NetBSD.org
@@ -33,7 +33,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/share/doc/cvsup/License \
 		${PREFIX}/share/doc/cvsup
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/cvsup
-	${INSTALL_DATA} ${FILESDIR}/supfile-cvsup.no.netbsd.org \
+	${INSTALL_DATA} ${FILESDIR}/supfile* \
 		${PREFIX}/share/examples/cvsup
 
 .include "../../mk/bsd.pkg.mk"
