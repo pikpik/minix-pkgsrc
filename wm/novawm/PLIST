@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/novawm
+doc/novawm/AUTHORS
+doc/novawm/COPYING
+doc/novawm/ChangeLog
+doc/novawm/INSTALL
+doc/novawm/NEWS
+doc/novawm/README
+doc/novawm/TODO
+@dirrm doc/novawm
