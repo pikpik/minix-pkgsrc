@@ -1,7 +1,7 @@
-$NetBSD: patch-ac,v 1.2 1998/10/16 16:24:04 bad Exp $
+$NetBSD$
 
---- scripts/RunCache.in.orig	Tue Aug  4 22:59:32 1998
-+++ scripts/RunCache.in	Fri Oct 16 17:57:43 1998
+--- scripts/RunCache.in.orig	Fri Jan 29 19:19:46 1999
++++ scripts/RunCache.in	Sun May  2 14:36:10 1999
 @@ -5,7 +5,7 @@
  prefix=@prefix@
  exec_prefix=@exec_prefix@
@@ -19,8 +19,8 @@ $NetBSD: patch-ac,v 1.2 1998/10/16 16:24:04 bad Exp $
 +	echo "Running: squid -Y $conf >> $logdir/squid.out 2>&1"
  	echo "Startup: `date`" >> $logdir/squid.out
  	start=`date '+%d%H%M%S'`
--	squid -sY $conf >> $logdir/squid.out 2>&1
-+	squid -Y $conf >> $logdir/squid.out 2>&1
+-	squid -NsY $conf >> $logdir/squid.out 2>&1
++	squid -NY $conf >> $logdir/squid.out 2>&1
  	stop=`date '+%d%H%M%S'`
  	t=`expr $stop - $start`
  	if test 0 -le $t -a $t -lt 5 ; then
