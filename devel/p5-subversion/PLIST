@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/libsvn_swig_perl-1.a
+lib/libsvn_swig_perl-1.la
+lib/libsvn_swig_perl-1.so
+lib/libsvn_swig_perl-1.so.0
+lib/libsvn_swig_perl-1.so.0.0
