@@ -1479,7 +1479,7 @@ show-downlevel:
 	if [ "X$$found" != "X" -a "X$$found" != "X${PKGNAME}" ]; then	\
 		${ECHO} "${PKGBASE} package: $$found installed, pkgsrc version ${PKGNAME}"; \
 		if [ "X$$STOP_DOWNLEVEL_AFTER_FIRST" != "X" ]; then	\
-			${ECHO} "stoping after first downlevel pkg found"; \
+			${ECHO} "stopping after first downlevel pkg found"; \
 			exit 1;						\
 		fi;							\
 	fi
