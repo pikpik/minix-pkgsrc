@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.5 1998/08/20 15:17:29 tsarna Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 17:37:40 wiz Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/08/13 06:33:51 asami Exp
 #
 
-DISTNAME=       Par150
-PKGNAME=        par-1.50
+DISTNAME=	Par152
+PKGNAME=	par-1.52
 CATEGORIES=	textproc
-MASTER_SITES=   http://www.cs.berkeley.edu/~amc/Par/
+MASTER_SITES=	http://www.cs.berkeley.edu/~amc/Par/
 
-MAINTAINER=	mark@grondar.za
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.cs.berkeley.edu/~amc/Par/
-COMMENT=	Pargraph reformatter for email
+COMMENT=	Paragraph reformatter, vaguely similar to fmt, but better
 
 ALL_TARGET=
 
