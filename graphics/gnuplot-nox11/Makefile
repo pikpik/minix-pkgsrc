@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/06/06 14:41:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.1 2003/06/07 17:39:25 jschauma Exp $
 #
 
 DISTNAME=		gnuplot-3.7.3
@@ -13,12 +13,15 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://sourceforge.net/projects/gnuplot/
 COMMENT=		gnuplot is a nice plotting utility
 
-CONFLICTS+=             ${DISTNAME:C/-[0-9].*//}
+CONFLICTS+=		gnuplot-[0-9]*
 
 USE_BUILDLINK2=		YES
 # because of missing rl_complete_with_tilde_expansion and rl_terminal_name
 USE_GNU_READLINE=	YES
 GNU_CONFIGURE=		YES
+
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	gnuplot.info
 
 CONFIGURE_ARGS+=	--with-pdf
 CONFIGURE_ARGS+=	--with-plot=${LOCALBASE}
@@ -29,5 +32,4 @@ CONFIGURE_ARGS+=	--without-x
 .include "../../graphics/plotutils-nox11/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
 .include "../../print/pdflib/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
