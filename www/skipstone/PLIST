@@ -1,7 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 02:18:51 zuntum Exp $
+@comment $NetBSD$
+bin/skipdownload
 bin/skipstone
 bin/skipstone-bin
-bin/skipdownload
 share/skipstone/pixmaps/default/back.xpm
 share/skipstone/pixmaps/default/config.xpm
 share/skipstone/pixmaps/default/forward.xpm
