@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/10/01 20:33:33 kim Exp $
 sbin/logprune
 sbin/logroll
 sbin/roller
+share/roller/proc-cron
 share/roller/proc-httpd-access
 share/roller/proc-httpd-errors
 share/roller/proc-messages
