@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2003/07/11 07:28:13 jtb Exp $
 
 --- runtime/workers.c.orig
 +++ runtime/workers.c
@@ -13,8 +13,3 @@ $NetBSD$
    
       for (i = 0; i < USE_PARAMETER(active_size); i++)
       {
-@@ -82,4 +84,3 @@
- 		      res, i));
-      }
- }
--
