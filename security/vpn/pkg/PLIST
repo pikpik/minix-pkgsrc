@@ -1,0 +1,7 @@
+@comment $NetBSD$
+sbin/vpn
+etc/vpn/peers/sample.peer
+etc/vpn/global.conf
+man/man8/vpn.8
+@unexec /bin/rm -rf %D/etc/vpn/peers
+@dirrm etc/vpn
