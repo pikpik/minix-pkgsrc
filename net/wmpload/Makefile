@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2004/04/18 07:14:19 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/21 21:16:10 salo Exp $
 #
 
-DISTNAME=	wmpload-0.9.4
+DISTNAME=	wmpload-0.9.5
 CATEGORIES=	net x11
 MASTER_SITES=	http://www.engr.utk.edu/~mdsmith/pload/
 

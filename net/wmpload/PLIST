@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/25 10:54:55 abs Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:59:51 zuntum Exp $
 bin/wmpload
+man/cat1/wmpload.0
+
