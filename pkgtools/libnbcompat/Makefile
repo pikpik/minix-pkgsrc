@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/09/04 01:51:15 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2003/09/05 18:35:58 jlam Exp $
 #
 
 DISTNAME=		libnbcompat-20030829
@@ -9,6 +9,8 @@ DISTFILES=		# empty
 MAINTAINER=		grant@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Portable NetBSD compatibility library
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_TOOLS=		# defined
 NO_BUILDLINK=		# defined
