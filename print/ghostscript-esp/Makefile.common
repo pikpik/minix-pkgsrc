@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.10 2003/12/19 12:07:43 recht Exp $
+# $NetBSD: Makefile.common,v 1.11 2004/01/03 18:49:51 reed Exp $
 
 DISTNAME=	espgs-${GS_VERS}-source
 BASEGS_VERS=	7.07
@@ -63,7 +63,7 @@ CFLAGS+=		-DHAVE_MKSTEMP=1
 
 REPLACE_PERL=		lib/fixmswrd.pl
 
-CUPS_CONFDIR?=		${PKG_SYSCONFBASE}/cups
+CUPS_CONFDIR?=		${PKG_SYSCONFBASEDIR}/cups
 CUPS_EGDIR=		${PREFIX}/share/examples/cups
 DOCDIR=			${PREFIX}/share/doc/ghostscript
 HTMLDIR=		${PREFIX}/share/doc/html/ghostscript

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/03 18:49:43 reed Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/04 17:23:39 jmmv Exp $
 #
 
 DISTNAME=	librsvg-2.5.0
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--with-gimp=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html/librsvg2
 
 .if !defined(PKG_SYSCONFDIR.gtk2) || empty(PKG_SYSCONFDIR.gtk2)
-MESSAGE_SUBST+=		PKG_SYSCONFDIR.gtk2="${PKG_SYSCONFBASE}/gtk-2.0"
+MESSAGE_SUBST+=		PKG_SYSCONFDIR.gtk2="${PKG_SYSCONFBASEDIR}/gtk-2.0"
 .else
 MESSAGE_SUBST+=		PKG_SYSCONFDIR.gtk2="${PKG_SYSCONFDIR.gtk2}"
 .endif
