@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.130 2002/02/13 18:44:54 jdolecek Exp $
+# $NetBSD: Makefile,v 1.131 2002/02/14 00:01:13 wiz Exp $
 #
 
 COMMENT=	Games
@@ -125,6 +125,7 @@ SUBDIR+=	xdoom
 SUBDIR+=	xemeraldia
 SUBDIR+=	xevil
 SUBDIR+=	xfreecell
+SUBDIR+=	xfrisk
 SUBDIR+=	xgalaga
 SUBDIR+=	xgospel
 SUBDIR+=	xjewel
