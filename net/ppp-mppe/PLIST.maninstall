@@ -1,0 +1,4 @@
+@comment $NetBSD$
+man/man8/chat.8
+man/man8/pppd.8
+man/man8/pppstats.8
