@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/Data/Dumper/Dumper.bs
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/Data/Dumper/Dumper.so
+@dirrm lib/perl5/site_perl/<$ARCH>-netbsd/auto/Data/Dumper

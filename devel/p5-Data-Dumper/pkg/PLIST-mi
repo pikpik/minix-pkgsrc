@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/man/man3/Data::Dumper.3.gz
+lib/perl5/site_perl/Data/Dumper.pm
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/Data/Dumper/.packlist
