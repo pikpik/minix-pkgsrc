@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ioctl_stat.c	Sat Dec 18 01:35:12 1999
-+++ /tmp/ioctl_stat.c	Tue Jan 25 10:32:46 2000
+--- ioctl_stat.c.orig	Sat Dec 18 02:35:12 1999
++++ ioctl_stat.c
 @@ -68,6 +68,9 @@
  
  void ioctl_stat(if_data *ifd)
