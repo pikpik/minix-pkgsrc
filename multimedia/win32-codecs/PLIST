@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/26 12:02:33 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/06/26 16:14:42 grant Exp $
 lib/win32/3ivX.qtx
 lib/win32/BeHereiVideo.qtx
 lib/win32/CLRVIDDC.DLL
@@ -96,4 +96,6 @@ lib/win32/wmv8ds32.ax
 lib/win32/wmv9dmod.dll
 lib/win32/wmvdmod.dll
 lib/win32/wmvds32.ax
+lib/win32/wnvplay1.dll
+lib/win32/wnvwinx.dll
 @dirrm lib/win32
