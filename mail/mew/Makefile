@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.55 2004/03/13 16:49:54 uebayasi Exp $
+# $NetBSD: Makefile,v 1.56 2004/05/08 13:35:20 uebayasi Exp $
 
 DISTNAME=	mew-2.3
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/release/
 
