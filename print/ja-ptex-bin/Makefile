@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/12/24 13:02:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/01 15:16:49 wiz Exp $
 
 DISTNAME=	ptex-src-${PTEX_VERS}
 PKGNAME=	ja-ptex-bin-${PTEX_VERS}
@@ -117,5 +117,5 @@ do-install:
 pre-clean:
 	cd ../../print/teTeX-bin && ${MAKE} clean
 
-.include "../../print/teTeX-bin/kpathsea.buildlink2.mk"
+.include "../../print/teTeX-bin/kpathsea.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
