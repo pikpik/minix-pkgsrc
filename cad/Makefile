@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/02/16 15:51:47 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2001/03/26 20:54:41 jtb Exp $
 #
 
 COMMENT=	CAD tools
@@ -21,6 +21,7 @@ SUBDIR+=	gsymcheck
 SUBDIR+=	gwave
 SUBDIR+=	ipal-current
 SUBDIR+=	libgeda
+SUBDIR+=	mpac
 SUBDIR+=	ng-spice
 SUBDIR+=	ntesla
 SUBDIR+=	oregano
