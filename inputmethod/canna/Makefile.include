@@ -1,0 +1,5 @@
+# $NetBSD$
+#
+
+.include "../../devel/nbitools/nbitools.mk"
+.include "../../mk/bsd.pkg.mk"
