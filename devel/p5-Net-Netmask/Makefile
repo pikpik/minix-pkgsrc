@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/09 01:46:19 grant Exp $
 
 DISTNAME=	Net-Netmask-1.9007
 PKGNAME=	p5-${DISTNAME}
-CATEGORIES=	net perl5
+CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=	charlie@rubberduck.com
