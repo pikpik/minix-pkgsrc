@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/04/03 12:12:58 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2001/04/30 10:23:24 abs Exp $
 
 DISTNAME=	opera-5.0b8
 CATEGORIES=	www
@@ -32,7 +32,7 @@ DEPENDS+=	suse_x11>=6.4:../../emulators/suse_x11
 
 OPERA_ARCH=	${MACHINE_ARCH}
 .elif (${MACHINE_ARCH} == powerpc)
-DEPENDS+=	linuxppc_lib>=2000.q4.2:../../emulators/linuxppc_lib
+DEPENDS+=	linuxppc_lib>=2000.4.2:../../emulators/linuxppc_lib
 
 OPERA_ARCH=	ppc
 .endif
