@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.367 1999/11/12 11:58:45 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.368 1999/11/20 21:15:49 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -1162,7 +1162,7 @@ do-install:
 .if !target(do-package)
 do-package: ${PLIST} ${DESCR}
 	${_PKG_SILENT}${_PKG_DEBUG}if ${TEST} -e ${PLIST}; then		\
-		${ECHO_MSG} "===>  Building package for ${PKGNAME}";	\
+		${ECHO_MSG} "===>  Building binary package for ${PKGNAME}"; \
 		if [ ! -d ${PKGREPOSITORY} ]; then			\
 			${MKDIR} ${PKGREPOSITORY};			\
 			if [ $$? -ne 0 ]; then				\
