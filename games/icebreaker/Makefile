@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2002/08/30 22:55:59 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/02 20:46:07 wiz Exp $
 #
 
 DISTNAME=	icebreaker-1.9.7
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.mattdm.org/icebreaker/1.9.x/
 EXTRACT_SUFX=	.tgz
@@ -25,7 +26,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/icebreaker.6 ${PREFIX}/man/man6
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/icebreaker
 
-.include "../../audio/SDL-mixer/buildlink2.mk"
+.include "../../audio/SDL_mixer/buildlink2.mk"
 .include "../../devel/smpeg/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
