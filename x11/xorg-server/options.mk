@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2005/01/24 10:57:27 hira Exp $
+# $NetBSD: options.mk,v 1.2 2005/01/24 17:24:08 hira Exp $
 
 _COMMONCARDDRIVERS=	apm ark ati chips cirrus cyrix dummy glint i128 mga \
 			neomagic nv rendition s3 s3virge savage siliconmotion \
@@ -7,7 +7,7 @@ _NOTX86_64CARDDRIVERS=	i740 i810 imstt newport nsc via vmware
 _LINUXCARDDRIVERS=	fbdev v4l
 
 _ALLCARDDRIVERS=	${_COMMONCARDDRIVERS} ${_NOTX86_64CARDDRIVERS} \
-			${_LINUXCARDDRIVERS} 
+			${_LINUXCARDDRIVERS}
 
 _OSCARDDRIVERS=		# defined
 
