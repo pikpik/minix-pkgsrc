@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2003/08/30 16:16:32 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2004/04/19 00:32:13 wiz Exp $
 #
 
 DISTNAME=		lrmi-0.8
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lrmi/}
-PKGREVISION=		1
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/lrmi/
