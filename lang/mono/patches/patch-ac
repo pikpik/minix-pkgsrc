@@ -1,13 +1,13 @@
-$NetBSD: patch-ac,v 1.2 2003/05/09 13:03:21 jmmv Exp $
+$NetBSD$
 
---- data/Makefile.in.orig	2003-08-14 08:00:52.000000000 +0200
-+++ data/Makefile.in	2003-09-25 01:58:12.000000000 +0200
-@@ -114,7 +114,7 @@
+--- data/Makefile.in.orig	2003-11-13 13:03:51.000000000 +0100
++++ data/Makefile.in	2003-11-13 16:22:41.000000000 +0100
+@@ -117,7 +117,7 @@
  libgc_dir = @libgc_dir@
  libmono_cflags = @libmono_cflags@
  libmono_ldflags = @libmono_ldflags@
 -monodir = $(sysconfdir)/mono
 +monodir = $(datadir)/examples/mono
  
- EXTRA_DIST = config.in machine.config
+ EXTRA_DIST = config.in machine.config DefaultWsdlHelpGenerator.aspx
  
