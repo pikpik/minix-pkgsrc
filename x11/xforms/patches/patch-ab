@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.4 2002/04/17 18:18:53 fredb Exp $
 
 --- demos/Imakefile.orig	Mon Apr  1 10:56:26 2002
 +++ demos/Imakefile
@@ -8,7 +8,7 @@ $NetBSD$
  
 -JPEGLIBLOC	= /usr/local/lib
 +LDPRELIBS	=
-+JPEGLIBLOC	= ${BUILDLINK_DIR}/lib
++JPEGLIBLOC	= ${LOCALBASE}/lib
 +JPEGLIB		= -L${JPEGLIBLOC} -ljpeg
  
  #if Solaris64Bit
@@ -36,7 +36,7 @@ $NetBSD$
  		  -Ifd \
  		  -I. \
 -		  -I/usr/local/include \
-+		  -I${BUILDLINK_DIR}/include \
++		  -I${LOCALBASE}/include \
  		  /* Don't remove this line */
  
  EXTRA_LIBRARIES	= \
