@@ -1229,6 +1229,8 @@ share/omf/gnome-core/panel-ja.omf
 share/omf/gnome-core/printer_applet-C.omf
 share/omf/gnome-core/printer_applet-da.omf
 share/omf/gnome-core/printer_applet-it.omf
+share/omf/gnome-core/session-C.omf
+share/omf/gnome-core/session-ja.omf
 share/omf/gnome-core/tasklist_applet-C.omf
 share/pixmaps/apple-green.png
 share/pixmaps/apple-red.png
