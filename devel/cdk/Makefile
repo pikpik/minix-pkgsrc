@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/05/17 08:38:42 abs Exp $
+# $NetBSD: Makefile,v 1.14 2001/06/11 06:34:26 jlam Exp $
 #
 
 DISTNAME=		latestCDK
@@ -12,7 +12,7 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.vexus.ca/CDK.html
 COMMENT=		Curses Development Kit
 
-BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/15 09:46:37 agc Exp $
 #
 
 DISTNAME=		twin-src-3.1.14
@@ -10,7 +10,7 @@ MAINTAINER=		collver@linuxfreemail.com
 HOMEPAGE=		http://www.willows.com
 COMMENT=		cross-platform implementation of the win32 api
 
-BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes

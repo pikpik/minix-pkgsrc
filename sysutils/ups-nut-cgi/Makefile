@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/03/11 13:50:50 martin Exp $
-#
+# $NetBSD: Makefile,v 1.6 2001/03/27 03:20:18 hubertf Exp $
 
 DISTNAME=		nut-0.44.3-pre5
 PKGNAME=		ups-nut-cgi-0.44.3pre5
@@ -12,7 +11,7 @@ COMMENT=		Network UPS Tools CGI scripts
 
 DEPENDS+=		gd-*:../../graphics/gd
 DEPENDS+=		ups-nut-0*:../ups-nut
-BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 
 WRKSRC=			${WRKDIR}/nut-0.44.3
 

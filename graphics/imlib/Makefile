@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2001/08/13 19:20:16 rh Exp $
+# $NetBSD: Makefile,v 1.55 2001/08/26 10:32:21 skrll Exp $
 #
 
 DISTNAME=		imlib-1.9.11
@@ -9,7 +9,7 @@ MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.nl.rasterman.com/imlib.html
 COMMENT=		image manipulation library for X11
 
-BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
 
 USE_X11BASE=		yes

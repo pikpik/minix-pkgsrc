@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/07/23 13:14:44 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2001/08/13 10:25:03 agc Exp $
 
 DISTNAME=		R-1.3.0
 CATEGORIES=		math
@@ -19,7 +19,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.R-project.org/
 COMMENT=		Statistical language for data analysis and graphics
 
-BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 
 USE_BUILDLINK_ONLY=	# defined
 USE_X11=		# defined
