@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/trplayer
+@unexec ${INSTALL_INFO} --delete %D/info/trplayer.info %D/info/dir
+info/trplayer.info
+@exec ${INSTALL_INFO} %D/info/trplayer.info %D/info/dir
