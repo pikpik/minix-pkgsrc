@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Fri Dec 29 22:06:34 2000
++++ Makefile.in	Fri Dec 29 22:05:51 2000
+@@ -7,7 +7,7 @@
+ # Department of Chemical Engineering
+ 
+ TARGETS = octave-bug mkoctfile libcruft liboctave kpathsea dlfcn \
+-	readline src scripts doc check octave.info INSTALL.OCTAVE BUGS \
++	src scripts doc check octave.info INSTALL.OCTAVE BUGS \
+ 	install install-strip uninstall tags TAGS dist conf-dist \
+ 	snapshot snapshot-version
+ 
