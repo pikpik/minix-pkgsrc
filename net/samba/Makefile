@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2001/10/15 08:50:51 martti Exp $
+# $NetBSD: Makefile,v 1.66 2001/11/01 15:18:52 abs Exp $
 
 DISTNAME=		samba-2.2.2
 WRKSRC=			${WRKDIR}/${DISTNAME}/source
@@ -99,7 +99,6 @@ post-extract:
 pre-install:
 	${SED} ${FILES_SUBST_SED} ${FILESDIR}/samba.sh > ${WRKDIR}/samba.sh
 	${SED} ${FILES_SUBST_SED} ${PKGDIR}/INSTALL > ${INSTALL_FILE}
-	${SED} ${FILES_SUBST_SED} ${PKGDIR}/DEINSTALL > ${DEINSTALL_FILE}
 	${SED} ${FILES_SUBST_SED} ${PKGDIR}/DEINSTALL > ${DEINSTALL_FILE}
 
 post-install:
