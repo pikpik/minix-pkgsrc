@@ -1,5 +1,4 @@
 ===========================================================================
-$NetBSD$
 
 It is recommended that you create a nonprivileged account to run
 the DGD driver.
