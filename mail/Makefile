@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.172 2003/08/14 11:53:33 zuntum Exp $
+# $NetBSD: Makefile,v 1.173 2003/08/15 09:53:27 zuntum Exp $
 #
 
 COMMENT=	Electronic mail utilities
 
 SUBDIR+=	GNUMail
 SUBDIR+=	Pantomime
+SUBDIR+=	YoSucker
 SUBDIR+=	anomy-sanitizer
 SUBDIR+=	autorespond
 SUBDIR+=	balsa
