@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/27 23:17:55 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/08 19:32:15 cjep Exp $
 #
 
 DISTNAME=	pcl-cvs-2.9.9
@@ -9,22 +9,19 @@ MAINTAINER=	packages@netbsd.org
 #HOMEPAGE=
 COMMENT=	front-end to CVS for emacs
 
-DEPENDS+= 	emacs-20.*:../../editors/emacs
-DEPENDS+=	elib>=1.0:../../devel/elib
+DEPENDS+=	${PKGNAME_PREFIX}elib>=1.0:../../devel/elib
 
 CONFLICTS=	emacs-21.*
 CONFLICTS+=	emacs21
 
-.include "../../mk/bsd.prefs.mk"
+EMACS_VERSIONS_ACCEPTED=	emacs20
 
-LISPDIR=	share/emacs/site-lisp/pcl-cvs
+.include "../../mk/emacs.mk"
 
 MAKE_ENV+=	PREFIX=${PREFIX}
 ALL_TARGET= 	default
 INFO_FILES=	pcl-cvs.info
-
-PLIST_SUBST+=	LISPDIR=${LISPDIR}
-MESSAGE_SUBST+=	LISPDIR=${LISPDIR}
+MESSAGE_SUBST+=	EMACS_LISPPREFIX=${EMACS_LISPPREFIX:Q}
 
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
