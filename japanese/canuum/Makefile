@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/08/27 04:11:35 sakamoto Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:25:13 wiz Exp $
 #
 
 DISTNAME=	canuum-1.0
@@ -28,7 +28,7 @@ pre-patch:
 	@(cd ${WRKSRC}; ${PATCH} ${PATCH_DIST_ARGS} < Canuum.patch)
 
 do-configure:
-	@(cd ${WRKSRC}; xmkmf; ${MAKE} ${MAKE_ARGS} Makefile; \
+	@(cd ${WRKSRC}; ${X11BASE}/bin/xmkmf; ${MAKE} ${MAKE_ARGS} Makefile; \
 	${MAKE} ${MAKE_ARGS} cannaconf.h; ${MAKE} ${MAKE_ARGS} depend)
 
 do-build:
