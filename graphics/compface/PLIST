@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/compface
+bin/uncompface
+lib/libcompface.a
+include/compface.h
+man/man1/compface.1
+man/man3/compface.3
