@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:53:55 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:24:41 martti Exp $
 #
 
 DISTNAME=	tkdesk-1.2
@@ -18,7 +18,7 @@ CONFIGURE_ARGS+=--with-tcl=${BUILDLINK_PREFIX.tcl}/lib	\
 
 pre-install:
 	${RM} -Rf ${WRKSRC}/tcldesk/configs/.trash
-	${FIND} ${WRKSRC}/tcldesk -type f -name '*.orig' | ${XARGS} ${RM} -rf
+	${FIND} ${WRKSRC}/tcldesk -type f -name '*.orig' -print | ${XARGS} ${RM} -rf
 	${FIND} ${WRKSRC}/tcldesk -name '*' -exec ${TOUCH} {} ';'
 
 .include "../../lang/tcl/buildlink2.mk"

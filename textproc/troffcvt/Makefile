@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/12/13 20:14:27 ben Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/24 09:53:50 jmmv Exp $
 #
 
 DISTNAME=		troffcvt-1.04
@@ -19,7 +19,7 @@ USE_PERL5=		yes
 INSTALL_TARGET=		install install.man
 
 post-patch:
-	for i in `${FIND} ${WRKSRC} -name Makefile`; do \
+	for i in `${FIND} ${WRKSRC} -name Makefile -print`; do \
 		${MV} $$i $$i.bak;\
 		${SED} <$$i.bak >$$i \
 			-e "s| -Dsun -DSVR4||" \

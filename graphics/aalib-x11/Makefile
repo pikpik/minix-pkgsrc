@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/10/26 06:50:10 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/05 20:38:34 jlam Exp $
 
 PKGNAME=	aalib-x11-${BASE_VERS}
 CATEGORIES+=	x11
@@ -28,7 +28,7 @@ post-patch:
 			$${file} > $${file}.fixed;			\
 		${MV} -f $${file}.fixed $${file};			\
 	done
-	@for f in `${FIND} ${WRKSRC} -name '*.[ch]'`; do		\
+	@for f in `${FIND} ${WRKSRC} -name '*.[ch]' -print`; do		\
 		${SED} -e "s|<malloc.h>|<stdlib.h>|g" $$f > $$f.patch	\
 		&& ${MV} $$f.patch $$f;					\
 	done

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:49:58 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:01:27 martti Exp $
 #
 
 DISTNAME=	tds-1.4.2
@@ -15,6 +15,6 @@ GNU_CONFIGURE=	YES
 NO_BUILD=	YES
 
 post-patch:
-	@${FIND} ${WRKSRC} -type f -name '*.orig' | ${XARGS} ${RM} -f
+	@${FIND} ${WRKSRC} -type f -name '*.orig' -print | ${XARGS} ${RM} -f
 
 .include "../../mk/bsd.pkg.mk"

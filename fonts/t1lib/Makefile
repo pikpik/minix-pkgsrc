@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 16:47:09 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/22 08:38:29 grant Exp $
 
 DISTNAME=	t1lib-1.3.1
 CATEGORIES=	fonts devel graphics
@@ -25,7 +25,7 @@ CONF_FILES=	${EGDIR}/t1lib.config.sample ${DATADIR}/t1lib.config
 CONF_FILES+=	${EGDIR}/FontDataBase ${DATADIR}/FontDataBase
 
 pre-build:
-	${FIND} ${WRKSRC} -name "*.orig" | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -print | ${XARGS} ${RM}
 
 post-install:
 	${INSTALL_DATA_DIR} ${DATADIR}

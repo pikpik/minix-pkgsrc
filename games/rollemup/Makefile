@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/07/17 21:39:21 grant Exp $
+# $NetBSD: Makefile,v 1.23 2003/11/11 12:32:36 wiz Exp $
 
 DISTNAME=	Rollemup
 PKGNAME=	rollemup-1.0
@@ -56,8 +56,8 @@ do-install:
 		${PREFIX}/${GAMES_DIR}/Rollemup
 	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
 	@(cd ${PREFIX}; \
-	  ${FIND} ${GAMES_DIR}/Rollemup -type f >> ${PLIST_SRC}; \
-	  for DIR in `${FIND} ${GAMES_DIR}/Rollemup -type d | sort -r`; do \
+	  ${FIND} ${GAMES_DIR}/Rollemup -type f -print >> ${PLIST_SRC}; \
+	  for DIR in `${FIND} ${GAMES_DIR}/Rollemup -type d -print | sort -r`; do \
 	    ${ECHO} "@dirrm $$DIR" >> ${PLIST_SRC}; \
 	  done)
 	@${CHOWN} ${ROOT_USER}:games ${PREFIX}/bin/Rollemup

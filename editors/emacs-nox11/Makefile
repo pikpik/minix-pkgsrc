@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/08/09 10:48:10 seb Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/22 08:30:30 grant Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-21.3
@@ -32,7 +32,7 @@ post-extract:
 	${CP} ${FILESDIR}/site-init.el ${WRKSRC}/lisp
 
 pre-install:
-	@${FIND} ${WRKSRC} -type f -name "*.orig" | ${XARGS} ${RM} -f
+	@${FIND} ${WRKSRC} -type f -name "*.orig" -print | ${XARGS} ${RM} -f
 
 post-install:
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/emacs

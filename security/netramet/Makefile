@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/05/02 10:14:02 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2002/03/22 03:48:18 itojun Exp $
 #
 
 DISTNAME=	NeTraMet44
@@ -14,7 +14,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--without-x
 
 post-patch:
-	for i in `${FIND} ${WRKSRC} -name Makefile.in`; do		\
+	for i in `${FIND} ${WRKSRC} -name Makefile.in -print`; do	\
 		${SED} "s,CFLAGS=,CFLAGS+=,g" $$i > $$i.done;		\
 	${MV} $$i.done $$i;						\
 	done

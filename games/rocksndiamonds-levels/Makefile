@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:19:35 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:39:20 grant Exp $
 
 DISTNAME=	rocksndiamonds-levels-1.0
 CATEGORIES=	games x11
@@ -72,7 +72,7 @@ do-install:
 	${RM} -f ${WRKDIR}/PLIST
 .for levdir in DX_Boulderdash Emerald_Mine_Club Supaplex
 	cd ${PREFIX} && \
-	${FIND} share/rocksndiamonds/levels/${levdir} -type f >>${WRKDIR}/PLIST
+	${FIND} share/rocksndiamonds/levels/${levdir} -type f -print >>${WRKDIR}/PLIST
 .endfor
 	${CHOWN} -R games:games ${SCORE_PATH}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/31 16:45:40 seb Exp $
+# $NetBSD: Makefile,v 1.16 2003/08/09 11:08:55 seb Exp $
 
 DISTNAME=	wl-2.10.0
 CATEGORIES=	mail
@@ -27,7 +27,7 @@ PLIST_SRC=	${WRKDIR}/PLIST
 post-build:
 	@{ \
 		${CAT} ${PKGDIR}/PLIST.header; \
-		${FIND} ${WRKSRC} -name '*.elc' | \
+		${FIND} ${WRKSRC} -name '*.elc' -print | \
 		while read f; do \
 			g=$$(basename $$f); \
 			echo '$${EMACS_LISPPREFIX}/wl/'$${g%.elc}.el; \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:41 reed Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/24 13:30:56 grant Exp $
 #
 
 DISTNAME=		mirrormagic-2.0.2
@@ -37,11 +37,11 @@ do-install:
 	${RM} -f ${WRKDIR}/PLIST
 .for levdir in Classic_Games
 	cd ${PREFIX} && \
-	${FIND} share/mirrormagic/levels/${levdir} -type f >>${WRKDIR}/PLIST
+	${FIND} share/mirrormagic/levels/${levdir} -type f -print >>${WRKDIR}/PLIST
 .endfor
 .for directory in graphics music sounds
 	cd ${PREFIX} && \
-	${FIND} share/mirrormagic/${directory} -type f >>${WRKDIR}/PLIST
+	${FIND} share/mirrormagic/${directory} -type f -print >>${WRKDIR}/PLIST
 .endfor
 	${CHOWN} -R games:games ${SCORE_PATH}
 

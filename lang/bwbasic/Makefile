@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:19:16 agc Exp $
 
 DISTNAME=	bwbasic-2.20
 PKGREVISION=	1
@@ -18,8 +18,8 @@ SHARE_DIR=	${PREFIX}/share/bwbasic
 post-install:
 	${INSTALL_DATA_DIR} ${SHARE_DIR}
 	${CP} -r ${WRKSRC}/bwbtest ${SHARE_DIR}
-	${FIND} ${SHARE_DIR} -type d | ${XARGS} ${CHMOD} ${BINMODE}
-	${FIND} ${SHARE_DIR} -type f | ${XARGS} ${CHMOD} ${SHAREMODE}
+	${FIND} ${SHARE_DIR} -type d -print | ${XARGS} ${CHMOD} ${BINMODE}
+	${FIND} ${SHARE_DIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE}
 	${INSTALL_MAN} ${WRKSRC}/bwbasic.doc ${PREFIX}/man/man1/bwbasic.1
 
 .include "../../mk/bsd.pkg.mk"

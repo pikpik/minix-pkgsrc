@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:26:50 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/24 15:13:20 grant Exp $
 #
 
 DISTNAME=	Xalan-C_1_0-linux
@@ -36,7 +36,7 @@ do-install:
 	    ${ECHO} creating ${PREFIX}/include/$${i}; \
 	    ${INSTALL_DATA_DIR} ${PREFIX}/include/$${i}; \
 	done; \
-	for i in `find $${XMLDIRS} -type f -name "*.hpp"`; do \
+	for i in `find $${XMLDIRS} -type f -name "*.hpp" -print`; do \
 	    ${ECHO} installing ${PREFIX}/include/$${i}; \
 	    ${INSTALL_DATA} ${WRKSRC}/$$i ${PREFIX}/include/$${i}; \
 	done

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/03 18:50:00 reed Exp $
+# $NetBSD: Makefile,v 1.22 2004/01/24 15:30:34 grant Exp $
 #
 
 DISTNAME=		rep-gtk-0.15
@@ -23,9 +23,9 @@ post-install:
 	${INSTALL_ALIASES} -c ${FILESDIR} ${REPEXECDIR}
 	${RM} -f ${PLIST_SRC}
 	cd ${PREFIX} && ${FIND} libexec/rep/${MACHINE_GNU_PLATFORM} \
-		-name "gnomelib.*" > ${PLIST_SRC}
+		-name "gnomelib.*" -print > ${PLIST_SRC}
 	cd ${PREFIX} && ${FIND} libexec/rep/${MACHINE_GNU_PLATFORM}/gui/gnome \
-		-name "lib.*" >> ${PLIST_SRC}
+		-name "lib.*" -print >> ${PLIST_SRC}
 	${CAT} ${PKGDIR}/PLIST >> ${PLIST_SRC}
 
 .include "../../devel/libglade/buildlink2.mk"
