@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/HTML/Embperl/Embperl.so
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/HTML/Embperl/Embperl.bs
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/HTML/Embperl
