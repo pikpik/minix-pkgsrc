@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/pgtclsh
+include/libpgtcl.h
+lib/libpgtcl.a
+lib/libpgtcl.so.2.0
+lib/pltcl.so
