@@ -1,8 +1,8 @@
 $NetBSD$
 
---- dlls/ntdll/cdrom.c.orig	2003-09-06 01:08:34.000000000 +0200
+--- dlls/ntdll/cdrom.c.orig	2003-10-08 04:59:22.000000000 +0200
 +++ dlls/ntdll/cdrom.c
-@@ -54,6 +54,16 @@
+@@ -61,6 +61,16 @@
  #endif
  #ifdef HAVE_LINUX_CDROM_H
  # include <linux/cdrom.h>
