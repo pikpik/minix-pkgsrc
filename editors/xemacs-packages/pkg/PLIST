@@ -811,8 +811,6 @@ lib/xemacs/xemacs-packages/lisp/mule-base/kana-keyboard.el
 lib/xemacs/xemacs-packages/lisp/mule-base/kana-keyboard.elc
 lib/xemacs/xemacs-packages/lisp/mule-base/mule-cne.el
 lib/xemacs/xemacs-packages/lisp/mule-base/mule-cne.elc
-lib/xemacs/xemacs-packages/lisp/mule-base/mule-debug.el
-lib/xemacs/xemacs-packages/lisp/mule-base/mule-debug.elc
 lib/xemacs/xemacs-packages/lisp/mule-base/mule-diag.el
 lib/xemacs/xemacs-packages/lisp/mule-base/mule-diag.elc
 lib/xemacs/xemacs-packages/lisp/mule-base/mule-keyboard.el
