@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2004/03/12 13:13:09 cjep Exp $
+# $NetBSD: Makefile,v 1.100 2004/03/30 23:21:47 xtraeme Exp $
 #
 
 COMMENT=	Editors
@@ -96,6 +96,7 @@ SUBDIR+=	xemacs-nox11
 SUBDIR+=	xemacs-packages
 SUBDIR+=	xjed
 SUBDIR+=	xvile
+SUBDIR+=	xwpe
 SUBDIR+=	yudit
 SUBDIR+=	zile
 
