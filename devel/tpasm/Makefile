@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/15 13:02:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2001/04/16 00:11:50 dmcmahill Exp $
 #
 
 DISTNAME=	tpasm1.0r
@@ -19,5 +19,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tpasm ${PREFIX}/bin
 	${INSTALL_DATA_DIR}  ${PREFIX}/libdata/tpasm
 	${INSTALL_DATA} ${WRKSRC}/include/* ${PREFIX}/libdata/tpasm/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tpasm
+	${INSTALL_DATA} ${WRKSRC}/MANUAL.TXT ${PREFIX}/share/doc/tpasm
 
 .include "../../mk/bsd.pkg.mk"
