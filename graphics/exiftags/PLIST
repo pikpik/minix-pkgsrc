@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/exifcom
+bin/exiftags
+man/man1/exifcom.1
+man/man1/exiftags.1

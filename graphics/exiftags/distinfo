@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.4 2002/12/01 13:49:39 salo Exp $
+
+SHA1 (exiftags-0.96.tar.gz) = 34a727e882b68b68d8e8b0ac7237b2b8340ff87a
+Size (exiftags-0.96.tar.gz) = 35816 bytes
+SHA1 (patch-aa) = 39bfe1b4b82e768ab7e93350ccdb31050246f17b
