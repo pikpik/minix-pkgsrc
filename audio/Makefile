@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.191 2003/12/30 17:54:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.192 2003/12/31 00:39:50 kristerw Exp $
 #
 
 COMMENT=	Audio tools
@@ -75,6 +75,7 @@ SUBDIR+=	gsm
 SUBDIR+=	gtkmserv
 SUBDIR+=	guspatches
 SUBDIR+=	icecast
+SUBDIR+=	icecast2
 SUBDIR+=	id3
 SUBDIR+=	id3ed
 SUBDIR+=	id3lib
