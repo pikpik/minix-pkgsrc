@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/11/11 17:40:16 tv Exp $
+# $NetBSD: Makefile,v 1.17 1999/11/22 00:59:42 jwise Exp $
 #
 
 DISTNAME=	pine4.21
@@ -12,7 +12,8 @@ HOMEPAGE=	http://www.washington.edu/pine/
 USE_LIBTOOL=	yes
 
 do-build:
-	cd ${WRKSRC} && ./build neb CC="${LIBTOOL} ${CC}" PREFIX=${PREFIX}
+	cd ${WRKSRC} && ./build ${BUILDNAME} CC="${LIBTOOL} ${CC}" \
+	    PREFIX=${PREFIX}
 
 do-install:
 	${LIBTOOL} --mode=install ${INSTALL_DATA} \
@@ -28,3 +29,8 @@ do-install:
 			${PREFIX}/include/pico/
 
 .include "../../mk/bsd.pkg.mk"
+.if ${OPSYS} == "SunOS"
+BUILDNAME= so5
+.else
+BUILDNAME= neb
+.endif
