@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/hypermail
 share/doc/hypermail/hypermail.gif
 share/doc/hypermail/hypermail.html
