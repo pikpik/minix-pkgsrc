@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/lcc
+libexec/bprint
+libexec/cpp
+libexec/lburg
+libexec/rcc
+share/lcc/include/stdarg.h
+share/lcc/include/sys/cdefs.h
+man/man1/lcc.1
+man/man1/bprint.1
