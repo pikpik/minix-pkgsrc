@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 20:12:06 kei Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
 #
 
 DISTNAME=	LPRng_DOC-3.6.13
+PKGNAME=	LPRng-doc-3.6.13
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.astart.com/pub/LPRng/LPRng/
 EXTRACT_SUFX=	.tgz
