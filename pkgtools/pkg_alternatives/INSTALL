@@ -1,0 +1,8 @@
+# $NetBSD$
+#
+
+case ${STAGE} in
+	POST-INSTALL)
+		@PKG_ALTERNATIVES@ -s rebuild
+		;;
+esac
