@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/03/13 17:37:18 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2002/06/23 15:15:32 kent Exp $
 #
 
 DISTNAME=	vid-1.0.1
@@ -12,6 +12,8 @@ COMMENT=	simple-minded image capture program for some USB webcams
 
 ALL_TARGET=	vid
 
+USE_BUILDLINK2=		YES
+
 DOCDIR=		share/doc/${PKGBASE}
 PLIST_SUBST+=	DOCDIR=${DOCDIR}
 
@@ -20,7 +22,5 @@ do-install:
 		${INSTALL_DATA_DIR} ${PREFIX}/${DOCDIR}
 		${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/${DOCDIR}
 
-USE_BUILDLINK_ONLY=	YES
-
-.include "../../graphics/netpbm/buildlink.mk"
+.include "../../graphics/netpbm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
