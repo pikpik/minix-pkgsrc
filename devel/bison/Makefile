@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2003/01/20 14:46:14 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2003/01/20 16:27:41 wiz Exp $
 
 DISTNAME=		bison-1.875
 PKGREVISION=		1
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		YES
 
 M4=			${LOCALBASE}/bin/gm4
 
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		bison.info
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
