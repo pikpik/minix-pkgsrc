@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/27 05:07:34 jlam Exp $
+# $NetBSD$
 #
 
 PKGNAME=	prc-tools-binutils-${PRC_TOOLS_VERS}
@@ -9,6 +9,8 @@ BASE_VERS=	2.9.1
 
 .include "../../devel/prc-tools/Makefile.common"
 
-USE_LIBINTL=	YES
+USE_BUILDLINK_ONLY=	YES
+#USE_LIBINTL=		YES
 
+.include "../../devel/gettext-lib/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
