@@ -1,6 +1,7 @@
-#	$NetBSD: Makefile,v 1.60 2000/03/25 20:15:33 jlam Exp $
+#	$NetBSD: Makefile,v 1.61 2000/06/10 11:59:48 drochner Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
+    SUBDIR += asr-manpages
     SUBDIR += astrolog
     SUBDIR += buffer
     SUBDIR += cal
