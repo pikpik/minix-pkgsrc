@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+# Wrapper script for Corel(R) WordPerfect(R)
+
+exec @PREFIX@/@WPDIR@/wpbin/xwp "$@"
