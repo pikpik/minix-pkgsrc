@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.260 2001/10/24 09:43:41 agc Exp $
+# $NetBSD: Makefile,v 1.261 2001/10/31 00:31:22 damon Exp $
 #
 
 COMMENT=	Networking tools
@@ -45,6 +45,7 @@ SUBDIR+=	dlint
 SUBDIR+=	dynipclient
 SUBDIR+=	echoping
 SUBDIR+=	eggdrop
+SUBDIR+=	etherape
 SUBDIR+=	ethereal
 SUBDIR+=	fair-identd
 SUBDIR+=	firewalk
