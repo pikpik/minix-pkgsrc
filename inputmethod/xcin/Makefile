@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/10 16:06:44 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/23 03:07:40 jlam Exp $
 #
 
 DISTNAME=	xcin-2.5.3.pre2
@@ -12,6 +12,7 @@ HOMEPAGE=	http://xcin.linux.org.tw/
 COMMENT=	Chinese XIM server
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 USE_X11BASE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
