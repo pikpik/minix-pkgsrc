@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/timestampWidget.h.orig	Sat Oct  9 20:45:22 1999
+--- src/timestampWidget.h.orig	2002-01-05 16:20:27.000000000 +0000
 +++ src/timestampWidget.h
-@@ -43,6 +43,10 @@
+@@ -44,6 +44,10 @@ typedef struct W_TimeStamp TimeStamp;
  
  /* Function Prototypes - timestampWidget.c ***********************************/
  
@@ -12,4 +12,4 @@ $NetBSD$
 +
  extern  W_Class     InitTimeStamp(WMScreen*);
  extern  TimeStamp   *CreateTimeStamp(WMWidget*);
- extern  void        SetTimeStampBlank(TimeStamp*, BOOL);
+ extern  void        SetTimeStampBlank(TimeStamp*, Bool);
