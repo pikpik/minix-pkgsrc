@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/02/14 00:54:45 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/17 11:23:45 jlam Exp $
 
 DISTNAME=		gettext-0.11.5
 PKGNAME=		gettext-m4-0.11.5
@@ -11,6 +11,8 @@ HOMEPAGE=		http://www.gnu.org/software/gettext/gettext.html
 COMMENT=		Autoconf/automake m4 files for GNU NLS library
 
 CONFLICTS=		gettext<=0.10.35nb1
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_BUILDLINK=		yes
 GNU_CONFIGURE=		yes
