@@ -1,3 +1,4 @@
+$NetBSD$
 --- ksysguard/ksysguardd/FreeBSD/CPU.c.orig	Mon Nov 26 01:14:58 2001
 +++ ksysguard/ksysguardd/FreeBSD/CPU.c	Mon Nov 26 01:15:11 2001
 @@ -19,7 +19,11 @@
