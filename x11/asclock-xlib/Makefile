@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/10/07 17:26:15 jlam Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.asclock.org/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
-CONFLICTS=	asclock-* asclock-gtk-*
+CONFLICTS=	asclock-* asclock-gtk-* gnome-core-*
 
 USE_IMAKE=	yes
 

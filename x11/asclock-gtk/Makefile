@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/10/07 17:25:05 jlam Exp $
 #
 
 DISTNAME=	asclock-gtk-2.1.10beta
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.asclock.org/
 
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 
-CONFLICTS=	asclock-* asclock-xlib-*
+CONFLICTS=	asclock-* asclock-xlib-* gnome-core-*
 
 USE_X11BASE=	yes
 
