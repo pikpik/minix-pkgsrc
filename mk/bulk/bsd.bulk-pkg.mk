@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.69 2005/01/17 08:52:50 jmmv Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.70 2005/01/19 20:58:00 tv Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>
@@ -201,8 +201,11 @@ clean-bulk-cache:
 # the pkg files; prints "1" if upto date, "0" if not.
 bulk-check-uptodate:
 	@uptodate=1; \
-	if [ "$USE_BULK_TIMESTAMPS" = "yes" ]; then \
-		if [ -f "${REF}" ]; then \
+	if [ -f "${REF}" ]; then \
+		if [ "${REF:T}" != "${PKGFILE:T}" ]; then \
+			${ECHO_MSG} >&2 "BULK> ${REF} is out of date (new version ${PKGNAME}); rebuilding..."; \
+			uptodate=0; \
+		elif [ "$USE_BULK_TIMESTAMPS" = "yes" ]; then \
 			${SHCOMMENT} "Check files of this package"; \
 			newfiles="`${FIND} . -type f -newer "${REF}" -print | ${EGREP} -v -e ./work -e COMMENT -e DESCR -e README.html -e CVS -e '^\./\.' || ${TRUE}`"; \
 			nnewfiles="`${FIND} . -type f -newer "${REF}" -print | ${EGREP} -v -e ./work -e COMMENT -e DESCR -e README.html -e CVS -e '^\./\.' | ${WC} -l`"; \
@@ -213,9 +216,11 @@ bulk-check-uptodate:
 				${ECHO_MSG} >&2 "BULK> ${REF} is up to date."; \
 			fi; \
 		else \
-			${ECHO_MSG} >&2 "BULK> Package ${PKGNAME} not built yet, packaging..."; \
-			uptodate=0; \
+			${ECHO_MSG} >&2 "BULK> ${REF} is up to date."; \
 		fi; \
+	else \
+		${ECHO_MSG} >&2 "BULK> Package ${PKGNAME} not built yet, packaging..."; \
+		uptodate=0; \
 	fi; \
 	if [ "$$uptodate" = "1" ]; then \
 		${SHCOMMENT} "Check required binary packages"; \
