@@ -1,5 +1,4 @@
-# $NetBSD: toolset.mk,v 1.1 2004/06/06 23:51:36 tv Exp $
-# Translation from PKGSRC_COMPILER to BOOST_TOOLSET.
+# $NetBSD$
 
 .include "../../mk/compiler.mk"
 
@@ -10,5 +9,5 @@ BOOST_TOOLSET=		mipspro
 .elif !empty(PKGSRC_COMPILER:Msunpro)
 BOOST_TOOLSET=		sunpro
 .else
-BROKEN+=		"unknown compiler ${PKGSRC_COMPILER} for Boost"
+BROKEN+=		"Unknown compiler ${PKGSRC_COMPILER} for Boost"
 .endif
