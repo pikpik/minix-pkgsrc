@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2004/02/12 15:58:04 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2004/03/23 04:41:01 jlam Exp $
 
 DISTNAME=       dialog-0.6z
 PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_SUNSITE:=utils/shell/}
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Display dialog boxes from shell scripts
 
 USE_BUILDLINK3=		yes

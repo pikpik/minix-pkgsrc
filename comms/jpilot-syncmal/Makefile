@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/02/14 17:21:35 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2004/04/12 01:49:02 snj Exp $
 
 DISTNAME=		jpilot-syncmal_0.71.2
 PKGNAME=		jpilot-syncmal-0.71.2
@@ -6,7 +6,7 @@ PKGREVISION=		4
 CATEGORIES=		comms
 MASTER_SITES=		http://jasonday.home.att.net/code/syncmal/
 
-MAINTAINER=		jlam@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://jasonday.home.att.net/code/syncmal/syncmal.html
 COMMENT=		MAL synchronization plugin for J-Pilot
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:48:50 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/03/29 06:36:32 snj Exp $
 
 DISTNAME=		cowsay-3.03
 PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.nog.net/pub/tony/cowsay/
 
-MAINTAINER=		jlam@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.nog.net/~tony/warez/cowsay.shtml
 COMMENT=		Configurable talking cow
 

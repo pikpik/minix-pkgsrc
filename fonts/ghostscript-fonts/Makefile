@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/02/15 16:53:59 sketch Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/22 07:10:44 snj Exp $
 
 DISTNAME=		ghostscript-fonts-6.0
 CATEGORIES=		fonts
@@ -6,7 +6,7 @@ MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=ghostscript/} \
 			ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/ 
 DISTFILES=		${GS_FONTS_STD} ${GS_FONTS_OTHER}
 
-MAINTAINER=		jlam@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gs-fonts.sourceforge.net/
 COMMENT=		Postscript fonts for Aladdin Ghostscript
 

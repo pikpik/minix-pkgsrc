@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2004/01/03 18:49:42 reed Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/14 17:21:41 jlam Exp $
 
 DISTNAME=	filmgimp-0.15
 PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=filmgimp/}
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://filmgimp.sourceforge.org/
 COMMENT=	Motion picture editing tool
 
