@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/03/11 18:03:50 xtraeme Exp $
+# $NetBSD: Makefile,v 1.36 2004/03/23 04:41:00 jlam Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp
 #
 
@@ -25,10 +25,13 @@ MAKE_FLAGS=	LOCAL_ZIP="${CFLAGS}" LFLAGS1="${_STRIPFLAG_CC}"
 CFLAGS=		-O0
 .endif
 
-.if ${OPSYS} == "SunOS"
+.include "../../mk/compiler.mk"
+
+.if !empty(CC_VERSION:Mgcc*)
 ALL_TARGET=	generic_gcc
 .else
 ALL_TARGET=	generic
+CFLAGS=		-O
 .endif
 
 .if ${OPSYS} == "Linux"
