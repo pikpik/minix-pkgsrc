@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 1999/03/15 00:11:58 tron Exp $
+# $NetBSD: Makefile,v 1.27 1999/04/04 23:34:44 tron Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
@@ -16,6 +16,7 @@
     SUBDIR += crashme
     SUBDIR += depot
     SUBDIR += fileutils
+    SUBDIR += gcombust
     SUBDIR += gmc
 #    SUBDIR += idled
     SUBDIR += logrot
