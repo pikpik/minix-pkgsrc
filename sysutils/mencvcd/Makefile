@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/01/28 09:11:13 tron Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/01 22:57:52 tron Exp $
 
 DISTNAME=	mencvcd
 PKGNAME=	${DISTNAME}-0.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://hammelmann.gmxhome.de/
 EXTRACT_SUFX=
