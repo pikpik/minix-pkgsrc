@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/07 02:03:37 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/21 15:08:53 fredb Exp $
 
 DISTNAME=		ghostscript-fonts-6.0
 CATEGORIES=		print
-MASTER_SITES+=		http://download.sourceforge.net/gs-fonts/ \
+MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=gsfonts/} \
 			ftp://ftp.cs.wisc.edu/ghost/aladdin/fonts/
 DISTFILES=		${GS_FONTS_STD} ${GS_FONTS_OTHER}
 
