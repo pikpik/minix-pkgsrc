@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.199 2003/06/23 08:48:18 jlam Exp $
+# $NetBSD: Makefile,v 1.200 2003/06/26 03:51:20 salo Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -57,6 +57,7 @@ SUBDIR+=	eblook
 SUBDIR+=	emacs-dict-client
 SUBDIR+=	eperl
 SUBDIR+=	expat
+SUBDIR+=	expatobjc
 SUBDIR+=	flyspell
 SUBDIR+=	fop
 SUBDIR+=	freepwing
