@@ -379,6 +379,10 @@ _ULIMIT_CMD+=	${ULIMIT_CMD_${__tmp__}} ;
 .  endfor
 .endif
 
+CPPFLAGS+=		${CPP_PRECOMP_FLAGS}
+DEPENDS+=		${USE_USERADD:D${_USER_DEPENDS}}
+DEPENDS+=		${USE_GROUPADD:D${_USER_DEPENDS}}
+
 # If GNU_CONFIGURE is defined, then pass LIBS to the GNU configure script.
 # also pass in a CONFIG_SHELL to avoid picking up bash
 .if defined(GNU_CONFIGURE)
@@ -386,6 +390,9 @@ CONFIG_SHELL?=		${SH}
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
 CONFIGURE_ENV+=		LIBS=${LIBS:Q}
 CONFIGURE_ENV+=		install_sh=${INSTALL:Q}
+.  if defined(USE_LIBTOOL) && defined(_OPSYS_MAX_CMDLEN)
+CONFIGURE_ENV+=		lt_cv_sys_max_cmd_len=${_OPSYS_MAX_CMDLEN}
+.  endif
 .endif
 
 #
