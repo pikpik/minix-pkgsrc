@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:22:17 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:54 jlam Exp $
 #
 
 COMMENT=	streaming multimedia plugin for Netscape (navigator)
@@ -8,7 +8,7 @@ COMMONDIR=	../ns-plugger-common
 
 DEPENDS+=	ns-plugger-common-[0-9]*:${COMMONDIR}
 
-PLIST_SRC=	${.CURDIR}/pkg/PLIST
-PKGDIR=		${.CURDIR}/${COMMONDIR}/pkg
+PLIST_SRC=	${.CURDIR}/PLIST
+PKGDIR=		${.CURDIR}/${COMMONDIR}
 
 .include "${COMMONDIR}/Makefile"
