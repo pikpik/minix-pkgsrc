@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2004/04/30 12:46:29 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/07/19 22:42:53 minskim Exp $
 
-DISTNAME=	imhangul-0.9.10
+DISTNAME=	imhangul-0.9.11
 CATEGORIES=	inputmethod korean
 MASTER_SITES=	http://download.kldp.net/imhangul/
 EXTRACT_SUFX=	.tar.bz2
