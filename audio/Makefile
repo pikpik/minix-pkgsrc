@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.122 2002/01/06 06:52:45 jmcneill Exp $
+# $NetBSD: Makefile,v 1.123 2002/02/12 14:22:13 martin Exp $
 #
 
 COMMENT=	Audio tools
@@ -64,6 +64,7 @@ SUBDIR+=	gnome-media
 SUBDIR+=	gogo
 SUBDIR+=	gqmpeg
 SUBDIR+=	gsm
+SUBDIR+=	gtkmserv
 SUBDIR+=	guspatches
 SUBDIR+=	icecast
 SUBDIR+=	id3
