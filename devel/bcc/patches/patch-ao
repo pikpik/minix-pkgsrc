@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- /dev/null	Thu Oct 25 21:25:38 2001
++++ Makefile	Thu Oct 25 21:25:39 2001
+@@ -0,0 +1,4 @@
++
++SUBDIR = ld as bcc-cc1 bcc
++
++.include <bsd.subdir.mk>
