@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- sem.c.BAK	Mon Apr  5 03:56:15 1999
++++ sem.c	Mon Apr  5 03:57:04 1999
+@@ -148,10 +148,12 @@
+ remove_sems( sem_id )
+ 	int sem_id;
+ {
++	union semun dummy;
++
+ 	if( sem_id == -1 )
+ 		return;
+ 
+-	if( semctl( sem_id, 0, IPC_RMID, NULL ) == -1 ){
++	if( semctl( sem_id, 0, IPC_RMID, dummy ) == -1 ){
+ 		report_proc();
+ 		perror( "internal error, failed to remove semaphore" );
+ 	}
