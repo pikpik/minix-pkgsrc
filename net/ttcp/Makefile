@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/20 09:20:40 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:17:20 tsarna Exp $
 #
 
 DISTNAME=	ttcp
@@ -12,11 +12,6 @@ HOMEPAGE=	http://www.ccci.com/tools/ttcp/
 
 NO_CONFIGURE=	yes
 NO_WRKSUBDIR=	yes
-
-.include "../../mk/bsd.prefs.mk"
-
-.ifdef MANZ
-MANCOMPRESSED=	yes
-.endif
+MANCOMPRESSED_IF_MANZ=	yes
 
 .include "../../mk/bsd.pkg.mk"

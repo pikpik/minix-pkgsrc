@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/06/20 09:20:39 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/07/03 23:30:10 tron Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/04/30 03:18:06 asami Exp
 #
 
@@ -12,12 +12,7 @@ MAINTAINER=	packages@netbsd.org
 
 MIRROR_DISTFILE= no
 WRKSRC=		${WRKDIR}/ls
-
-.include "../../mk/bsd.prefs.mk"
-
-.ifdef MANZ
-MANCOMPRESSED=	yes
-.endif
+MANCOMPRESSED_IF_MANZ=	yes
 
 pre-patch:
 	${CP} ${WRKSRC}/ls.1 ${WRKSRC}/colorls.1

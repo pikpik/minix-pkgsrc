@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.287 1999/07/01 14:33:36 mrg Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.288 1999/07/02 00:11:22 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -2181,7 +2181,8 @@ depend:
 tags:
 .endif
 
-# if automatic manual page compression is done, set it if MANZ is set
+# if automatic manual page compression is done by the package according
+# to MANZ's value, set MANCOMPRESSED if MANZ is set
 .if defined(MANCOMPRESSED_IF_MANZ) && defined(MANZ)
 MANCOMPRESSED=	yes
 .endif

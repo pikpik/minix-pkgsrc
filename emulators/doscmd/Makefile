@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/08/20 15:16:52 tsarna Exp $
+# $NetBSD: Makefile,v 1.4 1999/05/24 20:39:40 tv Exp $
 #
 
 DISTNAME=		doscmd-19960502-2
@@ -14,11 +14,7 @@ WRKSRC=			${WRKDIR}/doscmd
 
 MAKE_ENV=		X11BASE=${X11BASE}
 
-.include "../../mk/bsd.prefs.mk"
-
-.ifdef MANZ
-MANCOMPRESSED=
-.endif
+MANCOMPRESSED_IF_MANZ=	yes
 
 do-configure:
 	@cd ${WRKSRC} && \

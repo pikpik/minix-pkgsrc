@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/04/01 13:38:45 agc Exp $
+# $NetBSD: Makefile,v 1.7 1999/04/26 19:25:06 garbled Exp $
 #
 
 DISTNAME=	catdoc-0.35
@@ -9,11 +9,7 @@ MAINTAINER=	packages@netbsd.org
 
 DEPENDS=	tk-8.0.5:../../x11/tk80
 
-.include "../../mk/bsd.prefs.mk"
-
-.ifdef MANZ
-MANCOMPRESSED=	yes
-.endif
+MANCOMPRESSED_IF_MANZ=	yes
 
 USE_X11=	yes
 CFLAGS+=	-Dunix
