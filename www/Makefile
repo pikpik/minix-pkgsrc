@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.323 2004/05/14 20:35:15 jdolecek Exp $
+# $NetBSD: Makefile,v 1.324 2004/05/30 13:29:04 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
 
-SUBDIR+=	Mosaic
 SUBDIR+=	adzap
 SUBDIR+=	amaya
 SUBDIR+=	analog
@@ -43,7 +42,6 @@ SUBDIR+=	apache2
 SUBDIR+=	apache6
 SUBDIR+=	apachetop
 SUBDIR+=	apc-gui
-SUBDIR+=	arena
 SUBDIR+=	asWedit
 SUBDIR+=	asp2php
 SUBDIR+=	awstats
