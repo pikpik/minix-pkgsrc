@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/09/01 16:33:31 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2002/10/15 11:27:11 kei Exp $
 #
 
 DISTNAME=		plt.src.x
@@ -22,8 +22,6 @@ USE_X11=		yes
 USE_GMAKE=		yes
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-
-ONLY_FOR_PLATFORM=	NetBSD-*-i386 Linux-*-*
 
 WRKSRC=                 ${WRKDIR}/plt/src
 
