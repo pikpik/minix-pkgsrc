@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2002/05/29 14:11:24 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/07 22:34:26 seb Exp $
 #
 
-DISTNAME=	Font-TTF-0.28
+DISTNAME=	Font-TTF-0.34
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Font/}
