@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/09/10 10:42:21 jlam Exp $
 
 .if !defined(GIMP_PRINT_BUILDLINK2_MK)
 GIMP_PRINT_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=	gimp-print-lib
-BUILDLINK_DEPENDS.gimp-print-lib?=	gimp-print-lib>=4.2.1
+BUILDLINK_DEPENDS.gimp-print-lib?=	gimp-print-lib-4.2.3
 BUILDLINK_PKGSRCDIR.gimp-print-lib?=	../../print/gimp-print-lib
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gimp-print-lib=gimp-print-lib
