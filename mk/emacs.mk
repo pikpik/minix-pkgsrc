@@ -1,4 +1,4 @@
-# $NetBSD: emacs.mk,v 1.13 2003/04/11 01:23:14 uebayasi Exp $
+# $NetBSD: emacs.mk,v 1.14 2003/04/24 18:22:07 jmc Exp $
 #
 # A Makefile fragment for Emacs Lisp packages.
 #
@@ -84,7 +84,7 @@ _EMACS_VERSION_XEMACS_MINOR=	${_EMACS_VERSION_XEMACS:C/^[0-9]*\.//:C/[^0-9].*//}
 	${_EMACS_VERSION_XEMACS_MINOR} == "5"
 _EMACS_VERSION_xemacs215_INSTALLED=	yes
 .elif ${_EMACS_VERSION_XEMACS_MAJOR} == "21" && \
-	${_EMACS_VERSION_XEMACS_MINOR} == "1"
+	${_EMACS_VERSION_XEMACS_MINOR} == "4"
 _EMACS_VERSION_xemacs214_INSTALLED=	yes
 .endif
 .endif
