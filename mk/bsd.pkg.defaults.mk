@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.36 2002/02/04 10:32:01 martti Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.37 2002/02/05 04:12:07 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -950,7 +950,7 @@ PALMOS_DEFAULT_SDK?=	3.5
 
 PAPERSIZE?=	A4
 # Default paper size for packages.
-# Possible: A4, Letter, Letterdj.
+# Possible: A4, Letter.
 # Default: A4
 
 PGGROUP?=	pgsql
