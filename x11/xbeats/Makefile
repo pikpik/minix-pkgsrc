@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/09/24 00:27:35 hubertf Exp $
 #
 
 DISTNAME=	xbeats-0.4
@@ -7,6 +7,8 @@ MASTER_SITES=	http://bohemians.org/~iznogood/xbeats/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://bohemians.org/~iznogood/
+
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
 USE_X11=	yes
 GNU_CONFIGURE=	yes
