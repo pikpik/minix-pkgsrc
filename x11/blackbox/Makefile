@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/19 15:25:16 pooka Exp $
 
 DISTNAME=	blackbox-0.51.3.1
 CATEGORIES=	x11
@@ -11,7 +11,7 @@ HOMEPAGE=	http://blackbox.alug.org/
 USE_X11BASE=            yes
 GNU_CONFIGURE=          yes
 
-CONFIGURE_ARGS+=	--prefix=${X11BASE} \
+CONFIGURE_ARGS+=	--prefix=${X11PREFIX} \
 			--x-includes=${X11BASE}/include \
 			--x-libraries=${X11BASE}/lib \
 			--enable-kde
