@@ -167,6 +167,7 @@ include/gsl/gsl_sort_vector_uint.h
 include/gsl/gsl_sort_vector_ulong.h
 include/gsl/gsl_sort_vector_ushort.h
 include/gsl/gsl_specfunc.h
+include/gsl/gsl_spline.h
 include/gsl/gsl_statistics.h
 include/gsl/gsl_statistics_char.h
 include/gsl/gsl_statistics_double.h
@@ -214,6 +215,7 @@ info/gsl-ref.info-18
 info/gsl-ref.info-19
 info/gsl-ref.info-2
 info/gsl-ref.info-20
+info/gsl-ref.info-21
 info/gsl-ref.info-3
 info/gsl-ref.info-4
 info/gsl-ref.info-5
