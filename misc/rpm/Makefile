@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1998/11/05 01:34:01 mycroft Exp $
+# $NetBSD: Makefile,v 1.17 1999/01/01 22:35:25 garbled Exp $
 #
 
 DISTNAME=	rpm-2.5.4
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-2.5.x/ \
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.rpm.org/
 
-DEPENDS=	gettext-0.10.35:../../devel/gettext
+BUILD_DEPENDS+=	${LOCALBASE}/lib/libintl.a:../../devel/gettext
 
 CONFLICTS=	rpm-2.4.12 rpm-2.5.1
 
