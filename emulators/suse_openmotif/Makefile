@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/14 11:31:12 xtraeme Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/19 00:28:59 wiz Exp $
 
 DISTNAME=		openmotif
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -6,7 +6,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=xdev1/}
 EXTRACT_SUFX=		.rpm
 
-MAINTAINER=		tron@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for the Motif libraries
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/19 00:28:59 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2004/11/12 14:31:18 wiz Exp $
 
 DISTNAME=		libjpeg
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=gra1/}
 EXTRACT_SUFX=		.rpm
 
-MAINTAINER=		tron@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for the JPEG library
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/07/23 18:25:31 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2004/10/01 10:37:33 grant Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 PKGREVISION=		6
@@ -7,7 +7,7 @@ MASTER_SITES=		${MASTER_SITE_SUSE:=a1/} \
 			${MASTER_SITE_SUSE_UPD:=a1/}
 DISTFILES=		${RPMFILES}
 
-MAINTAINER=		tron@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package
 
