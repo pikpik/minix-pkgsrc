@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/03/28 22:06:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/14 21:16:42 jmmv Exp $
 
 DISTNAME=	# empty
 PKGNAME=	XFree86-${XF_VER}
@@ -6,7 +6,7 @@ CATEGORIES=	meta-pkgs x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 DISTFILES=	# empty
 
-MAINTAINER=	xfree86@blef.org
+MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://www.xfree86.org/
 COMMENT=	XFree86 meta-package
 
