@@ -1,12 +1,18 @@
 $NetBSD$
 
---- lib/write.cpp.orig	2004-08-19 01:38:57.000000000 +1200
+--- lib/write.cpp.orig	2004-03-25 22:12:43.000000000 +1200
 +++ lib/write.cpp
-@@ -898,6 +898,11 @@ bool WriteThread::diskSpaceTest(const st
+@@ -896,8 +896,17 @@ bool WriteThread::diskSpaceTest(const st
+ #else
+ //---------------------------------------------------------------------------
  
++#if defined(__NetBSD__) && (__NetBSD_Version__ >= 200040000) /* NetBSD 2.0D */
++#define HAVE_STATVFS 1
++#endif
++
  bool WriteThread::diskSpaceTest(const string &fileName, unsigned long fileSize)
  {
-+#if defined(__NetBSD__) && (__NetBSD_Version__ >= 200040000) /* NetBSD 2.0D */
++#if defined(HAVE_STATVFS)
 +#define statfs statvfs
 +#define f_bsize f_frsize
 +#endif
