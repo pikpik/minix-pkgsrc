@@ -1,8 +1,8 @@
 $NetBSD$
---- configure.orig	Mon Sep  6 16:56:09 1999
-+++ configure	Mon Sep  6 16:56:29 1999
-@@ -5222,7 +5222,7 @@
-   XFCE_DIR="$datadir/XFCE"
+--- configure.orig	Fri Mar  3 11:52:48 2000
++++ configure	Fri Mar  3 11:53:02 2000
+@@ -5508,7 +5508,7 @@
+   XFCE_DIR="$datadir/xfce"
  fi
  
 -XFCE_LOCALE_DIR="$XFCE_DIR/locale"
