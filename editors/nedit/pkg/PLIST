@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/nc
+bin/nedit
+man/man1/nc.1
+man/man1/nedit.1
+share/doc/nedit/README
+@dirrm share/doc/nedit
