@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2002/07/20 13:56:08 tron Exp $
+# $NetBSD: Makefile,v 1.45 2002/07/26 17:36:24 wiz Exp $
 #
 
 COMMENT=	communication programs
@@ -43,6 +43,7 @@ SUBDIR+=	p5-Net-AIM
 SUBDIR+=	p5-Net-AOLIM
 SUBDIR+=	p5-Net-Goofey
 SUBDIR+=	p5-Net-ICQ2000
+SUBDUR+=	psi
 SUBDIR+=	silc-client
 SUBDIR+=	silc-server
 SUBDIR+=	sirc
