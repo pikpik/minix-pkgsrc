@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2004/04/06 16:36:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.32 2004/04/13 16:39:11 sketch Exp $
 #
 
-DISTNAME=	icu-2.8
+DISTNAME=	icu-3.0
 CATEGORIES=	textproc
 #
 # The IBM site has long delays that can cause ftp to timeout.  Use the
