@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2004/11/01 23:05:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/28 02:47:50 reed Exp $
 #
 
-DISTNAME=	swapd-1.0.2
-PKGREVISION=	1
+DISTNAME=	swapd-1.0.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.rkeene.org/files/oss/swapd/source/
 
