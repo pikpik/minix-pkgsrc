@@ -1,11 +1,11 @@
 $NetBSD$
 
---- Makefile.PL.orig	Tue Jan  8 17:03:18 2002
+--- Makefile.PL.orig	Sun Oct 20 11:10:36 2002
 +++ Makefile.PL
-@@ -35,7 +35,6 @@
+@@ -35,7 +35,6 @@ WriteMakefile(
      NAME            => $PACKAGE,
      VERSION_FROM    => "lib/$PACKAGE_FILE.pm", # finds $VERSION
-     PREREQ_PM       => { },
+     PREREQ_PM       => { File::Spec => 0.6 },
 -    INSTALLDIRS     => 'perl',
  );
  
