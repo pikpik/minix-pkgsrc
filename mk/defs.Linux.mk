@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.54 2003/08/23 16:04:26 jschauma Exp $
+# $NetBSD: defs.Linux.mk,v 1.55 2003/08/25 15:47:15 reed Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -39,10 +39,9 @@ FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 .if exists(/usr/bin/make)
 GMAKE?=		/usr/bin/make
-_OPSYS_HAS_GMAKE=	yes 		# GNU make is standard
+_TOOLS_OPSYS_HAS_GNU.make+=	${MACHINE_PLATFORM}
 .else
 GMAKE?=		${LOCALBASE}/bin/gmake
-_OPSYS_HAS_GMAKE=	no		# rare, but possible
 .endif
 .if exists(/bin/grep)
 GREP?=		/bin/grep

@@ -1,4 +1,4 @@
-# $NetBSD: defs.FreeBSD.mk,v 1.20 2003/03/04 14:50:11 seb Exp $
+# $NetBSD: defs.FreeBSD.mk,v 1.21 2003/04/15 05:29:46 grant Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -118,7 +118,6 @@ IMAKE_MANNEWSUFFIX=	0
 
 _DO_SHLIB_CHECKS=	yes	# fixup PLIST for shared libs/run ldconfig
 _IMAKE_MAKE=		${MAKE}	# program which gets invoked by imake
-_OPSYS_HAS_GMAKE=	no	# GNU make is not standard
 .if exists(/usr/include/netinet6)
 _OPSYS_HAS_INET6=	yes	# IPv6 is standard
 .else
