@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/22 15:28:56 tv Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/05 19:17:17 wiz Exp $
 #
 
 DISTNAME=	fidogate-4.4.2
@@ -9,6 +9,7 @@ MAINTAINER=	tv@netbsd.org
 HOMEPAGE=	http://www.fido.de/fidogate/
 COMMENT=	FidoNet (FTN) <-> Internet mail and news gateway
 
+USE_BUILDLINK_ONLY=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
 
