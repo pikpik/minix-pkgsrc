@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/02/16 14:38:57 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2001/04/05 12:16:23 rh Exp $
 #
 
 DISTNAME=		pth-1.4.0
@@ -11,6 +11,7 @@ COMMENT=		GNU Portable Thread library
 
 CONFLICTS=		pth-current-*
 
+USE_BUILDLINK_ONLY=	YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		YES
