@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/04/04 03:12:11 itojun Exp $
+# $NetBSD: Makefile,v 1.4 2000/04/12 15:09:49 itojun Exp $
 #
 
 DISTNAME=	racoon-0.0
@@ -13,7 +13,7 @@ IGNORE+=		"requires ipsec-ready NetBSD"
 .endif
 
 # openssl is necessary for RSA libraries
-DEPENDS+=	openssl-0.9.4:../../security/openssl
+DEPENDS+=	openssl-0.9.*:../../security/openssl
 BUILD_DEPENDS+=	cvs:../../devel/cvs
 
 CONFLICTS+=	racoon-*
