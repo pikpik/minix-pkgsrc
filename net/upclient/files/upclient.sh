@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 
 pidfile=/var/run/upclient.pid
 

@@ -1,7 +1,7 @@
-#! /bin/sh
+#!/bin/sh
 #
-# $NetBSD: snmptrapd.sh,v 1.3 2002/02/27 12:52:58 tron Exp $
-
+# $NetBSD: snmptrapd.sh,v 1.4 2002/02/27 15:13:31 tron Exp $
+#
 # PID file:
 PF=/var/run/snmptrapd.pid
 
