@@ -18,13 +18,11 @@ $NetBSD$
    power,*,rhapsody) ;;
    arm,*,linux)      aspp='gcc'; asppflags='-c -DSYS_$(SYSTEM)';;
    ia64,*,linux)     asflags=-xexplicit
-@@ -601,6 +603,9 @@
+@@ -601,6 +603,7 @@
    alpha,*,digital) profiling='prof';;
    i386,*,linux_elf) profiling='prof';;
    i386,*,bsd_elf) profiling='prof';;
 +  power,*,bsd) profiling='prof';;
-+  power,*,elf) profiling='prof';;
-+  sparc,*,bsd) profiling='prof';;
    *) profiling='noprof';;
  esac
  

@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- asmcomp/i386/emit.mlp.orig
++++ asmcomp/i386/emit.mlp
+@@ -734,7 +734,7 @@
+       `	movl	%esp, %ebp\n`;
+       `	pushl	%ecx\n`;
+       `	pushl	%edx\n`;
+-      `	call	.mcount\n`;
++      `	call	__mcount\n`;
+       `	popl	%edx\n`;
+       `	popl	%ecx\n`;
+       `	popl	%eax\n`
