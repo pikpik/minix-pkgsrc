@@ -13,3 +13,12 @@ $NetBSD$
  
  # If for some reason, the user prefs stuff isn't working for you, 
  # and you can't compile, uncomment this
+@@ -67,7 +67,7 @@
+ /* 
+  * I don't like putting <X11/...> for everything, so..
+  */
+-INCLUDES = -I$(INCROOT)/X11
++INCLUDES = -I$(BUILDLINK_X11_DIR)/include/X11
+ 
+ /*
+  *  If you need to debug things, use this
