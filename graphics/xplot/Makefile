@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/06/19 23:01:28 tron Exp $
+# $NetBSD: Makefile,v 1.8 1999/01/29 20:18:28 tron Exp $
 #
 
 DISTNAME=	xplot-0.90
