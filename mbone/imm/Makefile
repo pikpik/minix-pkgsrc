@@ -1,4 +1,9 @@
-# $NetBSD: Makefile,v 1.2 1997/11/24 12:06:23 is Exp $
+# New ports collection makefile for:    imm
+# Version required:     3.6a1
+# Date created:         1997/11/24
+# Whom:                 is
+#
+# $NetBSD: Makefile,v 1.3 1997/11/24 15:04:25 is Exp $
 #
 # NetBSD "imm" package
 # The original was based on the imm-3.5a1 FreeBSD port maintained
@@ -6,10 +11,10 @@
 #
 
 DISTNAME=	imm-3.6a1
+WRKSRC=		${WRKDIR}/imm36a1.src
 CATEGORIES=	mbone tk80
 MASTER_SITES=	ftp://ftp.hawaii.edu/paccom/imm/
 DISTFILES=	imm36a1.tar.Z
-WRKSRC=		${WRKDIR}/imm36a1.src
 
 MAINTAINER=	is@netbsd.org
 
