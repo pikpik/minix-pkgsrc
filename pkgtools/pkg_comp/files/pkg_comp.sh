@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pkg_comp.sh,v 1.16 2004/01/23 09:48:53 jmmv Exp $
+# $NetBSD: pkg_comp.sh,v 1.17 2004/02/11 22:53:18 jmmv Exp $
 #
 # pkg_comp - Build packages inside a clean chroot environment
 # Copyright (c) 2002, 2003, 2004 Julio M. Merino Vidal <jmmv@NetBSD.org>
@@ -394,7 +394,7 @@ pkg_makeroot()
 
 # makeroot
 #
-#   Creates a new sandbox.  This is independant from 'makeroot' and
+#   Creates a new sandbox.  This is independent from 'makeroot' and
 #   'auto' targets.
 #
 makeroot()
