@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/30 18:32:33 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/04 23:59:15 snj Exp $
 #
 
 DISTNAME=		mod_auth_mysql.c
@@ -34,7 +34,7 @@ do-build:
 	${APXS} -c -n ${APACHE_MODULE_NAME}					\
 	    -I${BUILDLINK_PREFIX.mysql-client}/include				\
 	    -L${BUILDLINK_PREFIX.mysql-client}/lib/mysql			\
-	    -Wl,${RPATH_FLAG} -Wl,${BUILDLINK_PREFIX.mysql-client}/lib/mysql	\
+	    ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.mysql-client}/lib/mysql	\
 	    -lmysqlclient ${DISTNAME}
 
 do-install:

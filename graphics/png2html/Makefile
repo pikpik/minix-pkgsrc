@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/11 01:49:07 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/06/20 21:52:08 xtraeme Exp $
 #
 
 DISTNAME=	png2html-1.1
@@ -12,7 +12,7 @@ COMMENT=	Takes a PNG image and transforms it to a web page
 
 USE_BUILDLINK3=	YES
 FIX_RPATH+=	CFLAGS
-CFLAGS+=	-L${BUILDLINK_PREFIX.gd}/lib -Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.gd}/lib
+CFLAGS+=	-L${BUILDLINK_PREFIX.gd}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.gd}/lib
 
 do-install:
 		${INSTALL_MAN_DIR} ${PREFIX}/share/doc/png2html

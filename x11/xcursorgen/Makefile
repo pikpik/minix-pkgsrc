@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:28:28 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/04/19 05:26:33 snj Exp $
 
 DISTNAME=	xcursorgen-4.3.0
 CATEGORIES=	x11
@@ -21,6 +21,6 @@ PKG_SKIP_REASON="This package requires XFree86 4.3.0 or newer."
 
 .include "../../graphics/png/buildlink3.mk"
 
-MAKE_ENV+=       LOCAL_LDFLAGS="-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.png_DEFAULT}/lib"
+MAKE_ENV+=       LOCAL_LDFLAGS="${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.png_DEFAULT}/lib"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/19 18:50:01 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/18 07:21:49 snj Exp $
 #
 
 DISTNAME=	waste-source
@@ -26,7 +26,7 @@ NO_BIN_ON_CDROM=        ${RESTRICTED}
 
 USE_BUILDLINK3=		yes
 
-MAKE_ENV+=	LDFLAGS="-L${BUILDLINK_PREFIX.pthread}/lib -Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.pthread}/lib"
+MAKE_ENV+=	LDFLAGS="-L${BUILDLINK_PREFIX.pthread}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.pthread}/lib"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wastesrv ${PREFIX}/sbin/wastesrv

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/20 17:34:02 abs Exp $
+# $NetBSD: Makefile,v 1.2 2004/08/18 12:56:08 taya Exp $
 
 DISTNAME=	galeon-1.2.14
 CATEGORIES=	www
@@ -45,7 +45,7 @@ CONFIGURE_ARGS+= --with-mozilla-snapshot=1.7
 .include	"../../x11/gnome-libs/buildlink3.mk"
 
 MOZ_LIBDIR=     ${MOZILLA_PREFIX}/lib/mozilla
-LDFLAGS+=       -Wl,${RPATH_FLAG}${MOZ_LIBDIR}
+LDFLAGS+=       ${COMPILER_RPATH_FLAG}${MOZ_LIBDIR}
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}

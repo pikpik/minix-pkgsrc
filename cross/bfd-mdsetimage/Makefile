@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 21:27:50 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/20 12:10:55 agc Exp $
 
 DISTNAME=	bfd-mdsetimage-1.15.1
 CATEGORIES=	cross
@@ -22,7 +22,7 @@ MAKE_ENV+=	BFD_VERSION=${BFD_VERSION} \
 		LIBS="${BFD_LIBS}"
 
 FIX_RPATH+=	BFD_LIBS
-BFD_LIBS=	-L${PREFIX}/lib -Wl,${RPATH_FLAG}${PREFIX}/lib -lbfd-${BFD_VERSION} -liberty
+BFD_LIBS=	-L${PREFIX}/lib ${COMPILER_RPATH_FLAG}${PREFIX}/lib -lbfd-${BFD_VERSION} -liberty
 
 do-extract:
 	@${MKDIR} ${WRKSRC}

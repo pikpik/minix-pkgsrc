@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/02/01 01:43:28 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2004/04/11 05:02:25 snj Exp $
 #
 
 DISTNAME=	fasthenry-3.0-12Nov96
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=		default
 #>
 .  include "../../math/libffm/buildlink3.mk"
 DEPENDS+=	libffm-[0-9]*:../../math/libffm
-LIBS=		-L${LOCALBASE}/lib -Wl,${RPATH_FLAG}${LOCALBASE}/lib -lffm -lm
+LIBS=		-L${LOCALBASE}/lib ${COMPILER_RPATH_FLAG}${LOCALBASE}/lib -lffm -lm
 MAKE_ENV+=	LIBS="${LIBS}"
 .else
 LIBS=		-lm
