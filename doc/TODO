@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.2302 2004/11/03 15:55:42 adam Exp $
+$NetBSD: TODO,v 1.2303 2004/11/04 10:16:48 adam Exp $
 
 Suggested new packages
 ======================
@@ -414,7 +414,6 @@ Suggested package updates
 	o libnids-1.19
 	o libole2-2.2.8
 	o libopendaap-0.2.3
-	o libsigc++-2.0.3
 	o libtiff-3.7.0
 	o libxklavier-1.10 [breaks gnome-2.8]
 	o libxml2-2.6.15
