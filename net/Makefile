@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.451 2004/03/04 15:49:47 wiz Exp $
+# $NetBSD: Makefile,v 1.452 2004/03/06 12:05:53 grant Exp $
 #
 
 COMMENT=	Networking tools
@@ -243,6 +243,7 @@ SUBDIR+=	publicfile
 SUBDIR+=	puf
 SUBDIR+=	pure-ftpd
 SUBDIR+=	pxe
+SUBDIR+=	py-GeoIP
 SUBDIR+=	py-IP
 SUBDIR+=	py-METAR
 SUBDIR+=	py-ORBit
