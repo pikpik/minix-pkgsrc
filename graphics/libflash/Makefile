@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/28 17:33:50 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:25 wiz Exp $
 #
 
 PKGNAME=	lib${DISTNAME}
@@ -10,9 +10,9 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 USE_LIBTOOL=	yes
 
 do-build:
-		cd ${WRKSRC}/Lib && make
+		cd ${WRKSRC}/Lib && ${SETENV} ${MAKE_ENV} ${MAKE}
 
 do-install:
-		cd ${WRKSRC}/Lib && make install
+		cd ${WRKSRC}/Lib && ${SETENV} ${MAKE_ENV} ${MAKE} install
 
 .include	"Makefile.common"
