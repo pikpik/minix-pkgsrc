@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2004-10-28 03:42:36.000000000 +0000
+--- configure.orig	2004-11-13 23:12:46.000000000 +0000
 +++ configure
-@@ -26412,9 +26412,6 @@ fi
+@@ -25550,9 +25550,6 @@ fi
  # Enable building/use of libltdl if we are building shared libraries regardless
  # of whether modules are built or not.
  with_ltdl='no'
