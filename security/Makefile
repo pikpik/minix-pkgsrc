@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.151 2003/12/14 17:57:58 wiz Exp $
+# $NetBSD: Makefile,v 1.152 2003/12/18 09:47:27 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -95,6 +95,7 @@ SUBDIR+=	p5-Crypt-Rijndael
 SUBDIR+=	p5-Crypt-Twofish
 SUBDIR+=	p5-Digest
 SUBDIR+=	p5-Digest-BubbleBabble
+SUBDIR+=	p5-Digest-Hashcash
 SUBDIR+=	p5-Digest-HMAC
 SUBDIR+=	p5-Digest-MD2
 SUBDIR+=	p5-Digest-MD4
