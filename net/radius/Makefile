@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/04/24 22:44:25 tron Exp $
+# $NetBSD: Makefile,v 1.5 1999/04/24 23:19:05 tron Exp $
 #
 # Tempted to install another radius package?
 #
@@ -37,11 +37,6 @@ MAKE_ENV+=	RADLIBS="${RADLIBS} -lskey" LIBS=-lcrypt \
 #.endif
 
 .include "../../mk/bsd.prefs.mk"
-
-post-extract:
-.for FILE in ${EXTRA_FILES}
-	${GTAR} xCf ${WRKSRC} ${_DISTDIR}/${FILE}
-.endfor
 
 pre-patch:
 	@cd ${WRKSRC} ; \
