@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.154 2004/10/25 08:44:16 tron Exp $
+# $NetBSD: Makefile,v 1.155 2004/10/29 13:48:31 abs Exp $
 #
 # This pkg does not compile in mod_ssl, only the `mod_ssl EAPI' (a set of
 # code hooks that allow mod_ssl to be compiled separately later, if desired).
@@ -146,9 +146,9 @@ RCD_SCRIPTS=	apache
 MAKE_DIRS=		${PREFIX}/share/httpd
 MAKE_DIRS+=		${PREFIX}/share/httpd/htdocs
 OWN_DIRS+=		${PREFIX}/lib/httpd
-OWN_DIRS+=		/var/httpd
-OWN_DIRS+=		/var/log/httpd
-OWN_DIRS_PERMS+=	/var/httpd/proxy ${APACHE_USER} ${APACHE_GROUP} 0755
+OWN_DIRS+=		${VARBASE}/httpd
+OWN_DIRS+=		${VARBASE}/log/httpd
+OWN_DIRS_PERMS+=	${VARBASE}/httpd/proxy ${APACHE_USER} ${APACHE_GROUP} 0755
 
 PKG_GROUPS=		${APACHE_GROUP}
 PKG_USERS=		${APACHE_USER}:${APACHE_GROUP}::Apache\\ user
