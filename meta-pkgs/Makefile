@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/07/11 19:40:57 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/03 05:56:17 rh Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -9,6 +9,7 @@ SUBDIR+=	gnome
 SUBDIR+=	gnustep
 SUBDIR+=	netbsd-doc
 SUBDIR+=	netbsd-doc-print
+SUBDIR+=	netbsd-www
 SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop
 
