@@ -1,4 +1,4 @@
-#	$NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/11/01 19:35:09 itojun Exp $
 
 DISTNAME=	xscribble
 PKGNAME=	xscribble-20000616
