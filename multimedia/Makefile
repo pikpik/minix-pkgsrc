@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2005/02/16 18:43:40 reed Exp $
+# $NetBSD: Makefile,v 1.63 2005/03/22 16:38:23 jmmv Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -60,7 +60,6 @@ SUBDIR+=	mplayer-plugin-mozilla
 SUBDIR+=	mplayer-plugin-mozilla-gtk2
 SUBDIR+=	mplayer-share
 SUBDIR+=	mplex
-SUBDIR+=	nautilus-media
 SUBDIR+=	ns-flash
 SUBDIR+=	ogle
 SUBDIR+=	ogle_gui
