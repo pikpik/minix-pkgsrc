@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/08/11 23:02:37 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2000/08/16 19:04:42 jlam Exp $
 #
 
 DISTNAME=		R-1.1.1
@@ -17,7 +17,7 @@ MASTER_SITES=		http://cran.r-project.org/src/base/ \
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		jlam@netbsd.org
-HOMEPAGE=		http://cran.r-project.org/
+HOMEPAGE=		http://www.R-project.org/
 
 BUILD_DEPENDS+=		autoreconf:../../devel/autoconf
 DEPENDS+=		readline>=4.0:../../devel/readline
