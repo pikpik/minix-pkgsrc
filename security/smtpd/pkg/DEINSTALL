@@ -1,0 +1,18 @@
+#! /bin/sh
+#
+# $NetBSD$
+#
+
+case "$2" in
+        DEINSTALL) cat <<EOF
+
+=============================================================
+Note that the configuration and spool dir (/var/spool/smtpd)
+are not removed in the deinstallation process. You should
+remove those by hand, if you no longer need them.
+=============================================================
+
+EOF
+        ;;
+esac
+
