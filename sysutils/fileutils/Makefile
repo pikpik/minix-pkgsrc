@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/14 21:39:05 tron Exp $
+# $NetBSD: Makefile,v 1.6 1999/10/07 17:41:58 tron Exp $
 
 DISTNAME=		fileutils-3.16
 CATEGORIES=		sysutils
@@ -13,3 +13,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--program-prefix=g
 
 .include "../../mk/bsd.pkg.mk"
+.if ${OPSYS} == "SunOS"
+PLIST_SUBST+=	LOCALBASE=lib
+.else
+PLIST_SUBST+=	LOCALBASE=share
+.endif
