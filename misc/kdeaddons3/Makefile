@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/10/03 00:12:59 tv Exp $
+# $NetBSD: Makefile,v 1.29 2004/10/13 12:44:10 markd Exp $
 
 DISTNAME=	kdeaddons-${_KDE_VERSION}
 CATEGORIES=	misc
@@ -8,6 +8,10 @@ COMMENT=	Add ons for the KDE integrated X11 desktop
 
 USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
+
+REPLACE_PERL=		knewsticker-scripts/bbc.pl \
+			knewsticker-scripts/newsrss.pl \
+			knewsticker-scripts/stock.pl
 
 .include "../../mk/bsd.prefs.mk"
 
