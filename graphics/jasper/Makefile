@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:41:21 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 16:51:46 martti Exp $
 #
 
 DISTNAME=		jasper-1.600.0
@@ -14,7 +14,7 @@ COMMENT=		Software-based reference implementation of the JPEG-2000 codec
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--enable-shared --without-x --disable-opengl
 
 post-install:
