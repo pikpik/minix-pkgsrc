@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/07/19 09:37:49 agc Exp $
+# $NetBSD: Makefile,v 1.4 2000/10/18 05:46:57 rh Exp $
 #
 
 DISTNAME=		${PKGNAME}.src
@@ -9,6 +9,7 @@ MASTER_SITES=		ftp://cdrdao.sourceforge.net/pub/cdrdao/
 
 MAINTAINER=		David Maxwell <david@maxwell.net>
 HOMEPAGE=		http://www.ping.de/sites/daneb/cdrdao.html
+COMMENT=		Records audio or data CD-Rs in disk-at-once (DAO) mode
 
 BUILD_DEPENDS+=		antlr:../../devel/pccts
 BUILD_DEPENDS+=		dlg:../../devel/pccts

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/05 09:01:04 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/06 03:17:00 fredb Exp $
 #
 
 DISTNAME=		nut-0.44.2
@@ -8,6 +8,7 @@ MASTER_SITES=		http://www.exploits.org/nut/release/
 
 MAINTAINER=		collver@softhome.net
 HOMEPAGE=		http://www.exploits.org/nut/
+COMMENT=		Network UPS Tools CGI scripts
 
 DEPENDS+=		gd-*:../../graphics/gd
 DEPENDS+=		ups-nut-0*:../ups-nut

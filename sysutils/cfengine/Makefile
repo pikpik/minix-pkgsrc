@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/02/03 11:25:11 abs Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/02 16:43:44 abs Exp $
 #
 
 DISTNAME=	cfengine-1.5.3
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.iu.hioslo.no/pub/cfengine/ \
 
 MAINTAINER=	abs@netbsd.org
 HOMEPAGE=	http://www.iu.hioslo.no/cfengine/
+COMMENT=	Automate configuration and administration of large systems
 
 GNU_CONFIGURE=	YES
 

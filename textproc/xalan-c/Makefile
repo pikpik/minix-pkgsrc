@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/15 12:42:09 skrll Exp $
 #
 
 DISTNAME=	Xalan-C_1_0-linux
@@ -8,6 +8,7 @@ MASTER_SITES=	http://xml.apache.org/dist/xalan-c/
 
 MAINTAINER=	skrll@netbsd.org
 HOMEPAGE=	http://xml.apache.org/xalan-c/
+COMMENT=	the Apache Project's XSLT implementation
 
 DEPENDS+=	icu>=1.7:../../textproc/icu
 DEPENDS+=	xerces-c>=1.3.0:../../textproc/xerces-c

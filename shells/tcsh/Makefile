@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/11/19 21:44:06 christos Exp $
+# $NetBSD: Makefile,v 1.22 2000/11/20 15:06:36 christos Exp $
 #
 
 DISTNAME=	tcsh-6.10
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.astron.com/pub/tcsh/ \
 		ftp://ftp.funet.fi/pub/unix/shells/tcsh/
 
 MAINTAINER=	kim@tac.nyc.ny.us
+COMMENT=	Extended C-shell with many useful features
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 

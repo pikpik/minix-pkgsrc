@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/03/16 14:08:38 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/27 02:46:07 jlam Exp $
 #
 
 DISTNAME=		cdif-1.15
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
 EXTRACT_SUFX=		# empty
 
 MAINTAINER=		packages@netbsd.org
+COMMENT=		word context diff
 
 USE_PERL5=		# defined
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/12/21 10:21:32 skrll Exp $
+# $NetBSD: Makefile,v 1.4 2000/12/21 18:14:18 skrll Exp $
 #
 
 DISTNAME=	icu-1.7
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	skrll@netbsd.org
 HOMEPAGE=	http://oss.software.ibm.com/icu
+COMMENT=	Robust and full-featured unicode support
 
 WRKSRC=		${WRKDIR}/icu/source
 GNU_CONFIGURE=	YES

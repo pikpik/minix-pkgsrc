@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/10/10 19:42:48 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/02 16:40:32 dmcmahill Exp $
 
 DISTNAME=	Ted_DK
 PKGNAME=	ted-da-2.6
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/ \
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.nllgg.nl/Ted/
+COMMENT=	Danish spelling dictionary for the Ted word processor
 
 DEPENDS+=       ted>=2.6:../../textproc/ted
 

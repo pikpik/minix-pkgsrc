@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/05 09:01:04 tron Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/06 03:17:00 fredb Exp $
 #
 
 DISTNAME=		apcupsd-3.6.2
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.oasi.gpa.it/pub/apcupsd/stable/tar/
 
 MAINTAINER=		bouyer@netbsd.org
 HOMEPAGE=		http://www.sibbald.com/apcupsd/
+COMMENT=		UPS power management for APCC Products
 
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+=		msgfmt:../../devel/gettext

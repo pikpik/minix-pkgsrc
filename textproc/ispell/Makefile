@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 1999/10/19 08:59:37 agc Exp $
+# $NetBSD: Makefile,v 1.22 2000/01/02 03:50:04 wiz Exp $
 # FreeBSD Id: Makefile,v 1.21 1997/08/13 23:29:52 jmz Exp
 #
 
@@ -11,6 +11,7 @@ DISTFILES=	ispell-3.1.20.tar.gz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/ispell/ispell.html
+COMMENT=	Interactive spelling checker
 
 MAKE_FLAGS=	TMPDIR=${WRKDIR}
 SCRIPTS_ENV=	"LANG=${ISPELL_LANG}"

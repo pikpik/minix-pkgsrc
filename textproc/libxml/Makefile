@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/07/15 08:09:27 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/10/17 23:58:17 jlam Exp $
 #
 
 DISTNAME=		libxml-1.8.10
@@ -8,6 +8,7 @@ MASTER_SITES=		ftp://rpmfind.net/pub/veillard/ \
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://xmlsoft.org/
+COMMENT=		XML parser, mainly used by the GNOME project
 
 .include "../../mk/bsd.prefs.mk"
 

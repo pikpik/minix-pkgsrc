@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/27 15:44:55 hubertf Exp $
 # FreeBSD Id: ports/sysutils/daemontools/Makefile,v 1.8 2000/12/03 05:16:41 steve Exp
 
 DISTNAME=	daemontools-0.70
@@ -13,6 +13,7 @@ PATCH_DIST_STRIP=       -p1
 
 MAINTAINER=	zuntum@eik.pl
 HOMEPAGE=	http://cr.yp.to/daemontools.html
+COMMENT=	Service monitoring and logging utilities by djb
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/12/24 00:44:38 hubertf Exp $
 #
 
 DISTNAME=	procps-2.0.6
@@ -7,6 +7,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://people.redhat.com/johnsonm/procps/
 
 MAINTAINER=	hubertf@netbsd.org
+COMMENT=	Terminal version of xload
 
 do-build:
 	cd ${WRKSRC} ; \

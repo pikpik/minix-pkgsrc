@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/06/26 07:54:40 simonb Exp $
+# $NetBSD: Makefile,v 1.10 2001/01/18 11:44:56 abs Exp $
 #
 # The version number for skill does not match the @P number.
 # This is normal.
@@ -10,6 +10,7 @@ MASTER_SITES=	ftp://fast.cs.utah.edu/pub/skill/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kim@tac.nyc.ny.us
+COMMENT=	Signal processes given user names, ttys, commands, or pids
 
 .include "../../mk/bsd.prefs.mk"
 

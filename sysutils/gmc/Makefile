@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2000/06/01 17:46:15 rh Exp $
+# $NetBSD: Makefile,v 1.23 2000/10/19 23:31:15 jlam Exp $
 
 PKGNAME=		g${DISTNAME}
 CATEGORIES+=		gnome
+
+COMMENT=		GNOME version of Midnight Commander, a free Norton Commander Clone
 
 DEPENDS+=		gnome-core-*:../../x11/gnome-core
 

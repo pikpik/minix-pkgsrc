@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/08/21 21:01:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2000/12/16 18:54:41 kim Exp $
 #
 
 # Note to package maintainers:
@@ -11,6 +11,7 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		agc@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
+COMMENT=		Solaris-compatible {user,group}{add,del,mod} commands
 
 WRKSRC=			${WRKDIR}/user
 

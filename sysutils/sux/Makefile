@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/05 05:14:15 kim Exp $
 #
 
 DISTNAME=		sux-1.0
@@ -6,6 +6,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
+COMMENT=		set user id, preserving shell and environment, checking ssh agent
 
 DEPENDS+=		osname-*:../../sysutils/osname
 DEPENDS+=		sshsh-*:../../sysutils/sshsh

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/03/27 08:55:00 tron Exp $
+# $NetBSD: Makefile,v 1.22 2000/10/17 00:10:16 wiz Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/04/30 23:49:14 asami Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=   ftp://ftp.groupsys.com/pub/top/
 
 MAINTAINER=	agc@netbsd.org
 HOMEPAGE=	http://www.groupsys.com/topinfo/
+COMMENT=	The ubiquitous system monitoring utility
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/11/27 12:54:48 kei Exp $
+# $NetBSD: Makefile,v 1.36 2001/02/10 23:15:31 frueauf Exp $
 
 DISTNAME=	cdrecord-1.9
 PKGNAME=	cdrecord-1.9nb1
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.fokus.gmd.de/research/cc/glone/employees/joerg.schilling/private/cdrecord.html
+COMMENT=	This program allows you to create CD's on a CD-Recorder
 
 CONFLICTS=	mkisofs-*
 USE_GMAKE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/12/26 17:33:52 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/17 23:57:52 jlam Exp $
 
 DISTNAME=	apNetBSD
 PKGNAME=	aperture-2.0nb1
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-current/xsrc/xfree/xc/progr
 EXTRACT_SUFX=	.shar
 
 MAINTAINER=	jlam@netbsd.org
+COMMENT=	XFree86 Framebuffer "aperture" driver for NetBSD/i386
 
 DIST_SUBDIR=	${PKGNAME}
 NO_WRKSUBDIR=	# defined

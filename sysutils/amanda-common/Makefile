@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/09/03 12:03:16 veego Exp $
+# $NetBSD: Makefile,v 1.12 2001/01/16 21:59:31 cjones Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=		ftp://ftp.cs.umd.edu/pub/amanda/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.amanda.org/
+COMMENT=		Libraries and binaries used by both the client and server parts of amanda
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
