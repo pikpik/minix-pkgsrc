@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pgsql.sh,v 1.6 2001/11/26 20:38:31 jlam Exp $
+# $NetBSD: pgsql.sh,v 1.7 2002/04/04 05:21:50 jlam Exp $
 #
 # PostgreSQL database rc.d control script
 #
@@ -95,6 +95,10 @@ then
 	load_rc_config $name
 	run_rc_command "$1"
 else
+	if [ -f /etc/rc.conf ]
+	then
+		. /etc/rc.conf
+	fi
 	case "$1" in
 	initdb)
 		eval ${initdb_cmd}
