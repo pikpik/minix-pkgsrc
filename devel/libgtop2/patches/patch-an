@@ -18,7 +18,18 @@ $NetBSD$
  
  /* Init function. */
  
-@@ -101,7 +93,7 @@ glibtop_get_proc_uid_p (glibtop *server,
+@@ -94,14 +86,18 @@ glibtop_get_proc_uid_p (glibtop *server,
+ 	buf->tpgid = pinfo [0].kp_eproc.e_tpgid;
+ 
+ 	buf->nice     = pinfo [0].kp_proc.p_nice;
++#if defined(__NetBSD__) && defined(SACTIVE)
++	buf->priority = 0;
++#else
+ 	buf->priority = pinfo [0].kp_proc.p_priority;
++#endif
+ 
+ 	/* Set the flags for the data we're about to return*/
+ 	buf->flags = _glibtop_sysdeps_proc_uid;
  
  	/* Use LibGTop conditionals here so we can more easily merge this
  	 * code into the LIBGTOP_STABLE_1_0 branch. */
