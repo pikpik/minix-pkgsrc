@@ -1,12 +1,14 @@
-$NetBSD: patch-aa,v 1.2 1999/10/10 19:39:43 dmcmahill Exp $
+$NetBSD$
 
---- Ted/makefile.in.orig	Thu Sep 23 06:08:00 1999
-+++ Ted/makefile.in	Sun Oct 10 13:46:20 1999
-@@ -22,5 +22,6 @@
- 	-I../appUtil	\
+--- Ted/makefile.in.orig	Sun Apr  8 18:05:27 2001
++++ Ted/makefile.in
+@@ -27,7 +27,8 @@
+ 	-I../bitmap	\
+ 	-I../ind	\
  	-I../include	\
 -	$(DEF_PKGDIR)
 +	$(DEF_PKGDIR)	\
 +	$(DEF_INFODIR)
  
  LDFLAGS=@LDFLAGS@
+ 
