@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/10/03 00:12:54 tv Exp $
+# $NetBSD: Makefile,v 1.44 2004/12/17 07:35:56 taca Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -19,7 +19,7 @@ COMMENT=		Qualcomm's POP server for Eudora
 
 USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+
 RCD_SCRIPTS=		qpopper
 MESSAGE_SUBST+=		RCD_SCRIPTS=${RCD_SCRIPTS} \
 			RCD_SCRIPTS_DIR=${RCD_SCRIPTS_DIR}
@@ -38,5 +38,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/samples/qpopper.config		\
 		 ${PREFIX}/share/examples
 
-.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
