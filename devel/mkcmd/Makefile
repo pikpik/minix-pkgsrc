@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/10 00:46:04 epg Exp $
 #
 
 DISTNAME=		mkcmd-8.14
+PKGREVISION=		1
 CATEGORIES=		mine
 MASTER_SITES=		http://archive.progeny.com/pundits/
 EXTRACT_SUFX=		.tgz
