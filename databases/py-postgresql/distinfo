@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 2000/11/16 04:37:55 darcy Exp $
+$NetBSD$
 
-MD5 (PyGreSQL-3.1.tgz) = 6c7cef080d3c3b732ff7090dc9e051c1
+SHA1 (PyGreSQL-3.5.tgz) = b55e448540ec7a360720dfaf11d1f7d4c119a4d4
+Size (PyGreSQL-3.5.tgz) = 44884 bytes
