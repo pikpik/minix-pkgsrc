@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/02/09 00:19:22 soren Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/02/17 22:44:19 jlam Exp $
 #
 
 DISTNAME=		g2a1_linux22
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.bin
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.real.com/products/player/
+
+IGNORE=			"superseded by realplayer7 package"
 
 DEPENDS+=		suse_linux>=6.1:../../emulators/suse_linux
 
