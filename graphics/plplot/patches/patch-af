@@ -14,3 +14,26 @@ $NetBSD$
  XLIBSTR=-lX11
  
  # ----------------------------------------------------------------------------
+@@ -384,16 +384,19 @@
+     ADD_TO_LIBS($ITKLIBDIR, $ITKLIBSTR, LIBS, LIBPATH)
+ fi
+ if test "$enable_tk" = "yes"; then
+-    ADD_TO_LIBS($TKLIBDIR, $TKLIBSTR, LIBS, LIBPATH)
++    TKLIB="$TKLIBDIR -Wl,-R$TKLIBDIR"
++    ADD_TO_LIBS($TKLIB, $TKLIBSTR, LIBS, LIBPATH)
+ fi
+ if test "$enable_itcl" = "yes"; then
+     ADD_TO_LIBS($ITCLLIBDIR, $ITCLLIBSTR, LIBS, LIBPATH)
+ fi
+ if test "$enable_tcl" = "yes"; then
+-    ADD_TO_LIBS($TCLLIBDIR, $TCLLIBSTR, LIBS, LIBPATH)
++    TCLLIB="$TCLLIBDIR -Wl,-R$TCLLIBDIR"
++    ADD_TO_LIBS($TCLLIB, $TCLLIBSTR, LIBS, LIBPATH)
+ fi
+ if test "$enable_xwin" = "yes"; then
+-    ADD_TO_LIBS($XLIBDIR, $XLIBSTR, LIBS, LIBPATH)
++    XLIB="$XLIBDIR -Wl,-R$XLIBDIR"
++    ADD_TO_LIBS($XLIB, $XLIBSTR, LIBS, LIBPATH)
+ fi
+ if test ! -z "$TCL_DL_LIBS"; then
+     ADD_TO_LIBS( default, $TCL_DL_LIBS, LIBS, LIBPATH)
