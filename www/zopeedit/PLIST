@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/zopeedit
+share/doc/zopeedit/README.txt
+@dirrm share/doc/zopeedit
