@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/weblint
+share/examples/weblint/weblintrc
+man/man1/weblint.1.gz
+@dirrm share/examples/weblint
