@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.18 2004/07/11 00:48:42 grant Exp $
 #
 
-DISTNAME=	gpgme-0.4.7
+DISTNAME=	gpgme-0.9.0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/gpgme/ \
 		ftp://ftp.gnupg.org/gcrypt/alpha/gpgme/
