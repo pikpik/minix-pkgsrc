@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2000/10/26 22:34:25 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2000/11/23 13:47:36 rh Exp $
 # FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
 #
 
@@ -6,6 +6,7 @@
     SUBDIR += a2ps
     SUBDIR += acroread
     SUBDIR += acroread3
+    SUBDIR += auctex
     SUBDIR += cups
     SUBDIR += dvidvi
     SUBDIR += enscript
