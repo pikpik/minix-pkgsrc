@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- bing.c.orig	Thu Jul 20 19:45:32 1995
++++ bing.c	Sat Mar  6 14:18:36 1999
+@@ -155,7 +155,7 @@
+ #include <sys/socket.h>
+ #include <sys/file.h>
+ #include <sys/time.h>
+-#include <sys/signal.h>
++#include <signal.h>
+ 
+ #include <netinet/in_systm.h>
+ #include <netinet/in.h>
