@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2004/04/06 11:10:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/15 21:24:28 jmmv Exp $
 #
 
 .include "Makefile.common"
+
+PKGREVISION=		1
 
 COMMENT+=		base plugins
 
@@ -19,6 +21,7 @@ CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/--disable-gconftool/--enable-gconftool/}
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/--disable-x/--enable-x/}
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/--disable-xshm/--enable-xshm/}
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/--disable-xvideo/--enable-xvideo/}
+CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/gst-plugins
 
 GCONF2_SCHEMAS=		gstreamer-0.8.schemas
 
