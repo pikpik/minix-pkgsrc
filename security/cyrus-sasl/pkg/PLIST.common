@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST.common,v 1.1.1.1 2000/08/25 15:23:49 jlam Exp $
+@comment $NetBSD: PLIST.common,v 1.2 2000/12/10 09:43:38 jlam Exp $
 bin/sasl-config
-etc/rc.d/pwcheck
+etc/rc.d/sasl_pwcheck
 include/hmac-md5.h
 include/sasl.h
 include/saslplug.h
