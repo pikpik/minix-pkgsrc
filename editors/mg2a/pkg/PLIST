@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mg
+bin/mg.rc
+man/man1/mg.1
