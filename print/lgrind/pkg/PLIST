@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/lgrind
 share/texmf/tex/latex/lgrind/lgrindef
 share/texmf/doc/latex/lgrind/lgrind.dvi
