@@ -1,5 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:52:14 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/26 12:52:07 jmmv Exp $
 bin/mplex
+lib/libmplex2-1.6.so.2
+lib/libmplex2-1.6.so.2.2
+lib/libmplex2.a
+lib/libmplex2.la
+lib/libmplex2.so
 share/doc/mplex/COPYING
 share/doc/mplex/INSTRUCT
 share/doc/mplex/README
