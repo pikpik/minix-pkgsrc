@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libaudio_esd.la
+lib/libaudio_esd.so
+lib/libaudio_esd.so.0
+lib/libaudio_esd.so.0.5
