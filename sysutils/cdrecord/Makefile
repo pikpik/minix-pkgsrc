@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2000/03/03 15:22:15 scw Exp $
+# $NetBSD: Makefile,v 1.28 2000/05/22 02:00:56 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/11/05 23:55:31 asami Exp
 #
 
@@ -32,5 +32,8 @@ do-install:
 	${INSTALL_PROGRAM} ${TARGET_DIR}/cdrecord ${PREFIX}/bin; \
 	${INSTALL_MAN} cdrecord.1 ${PREFIX}/man/man1
 	${INSTALL_PROGRAM} ${WRKSRC}/misc/${TARGET_DIR}/readcd ${PREFIX}/bin
+	cd ${WRKSRC}/mkisofs; \
+	${INSTALL_PROGRAM} ${TARGET_DIR}/mkisofs ${PREFIX}/bin; \
+	${INSTALL_MAN} mkisofs.8 ${PREFIX}/man/man8
 
 .include "../../mk/bsd.pkg.mk"
