@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.12 2001/11/08 12:47:13 agc Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.13 2001/11/12 23:04:26 enami Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -868,10 +868,15 @@ MAJORDOMO_USER?= majordom
 # Possible: defined, not defined
 # Default: not defined
 
-MUTT_USE_SSL?=	YES
+#MUTT_USE_SSL?= YES
 # Enable SSL in mutt (for pop and imap connections)
 # Possible: YES, NO
 # Default: YES
+
+#MUTT_USE_SLANG?= NO
+# Use slang instead of curses in mutt
+# Possible: YES, NO
+# Default: NO
 
 NMH_EDITOR?= vi
 # default editor for use in nmh.
