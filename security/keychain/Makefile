@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2003/01/18 05:58:58 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:56 grant Exp $
 
-DISTNAME=	keychain-2.0.2
+DISTNAME=	keychain-2.0.3
 PKGNAME=	${DISTNAME}
 CATEGORIES=	security
 MASTER_SITES=	http://www.ibiblio.org/gentoo/distfiles/
@@ -18,6 +18,7 @@ NO_BUILD=	# defined
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/keychain ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/keychain.1 ${PREFIX}/man/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/keychain
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/keychain
 
