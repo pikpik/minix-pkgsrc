@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/08/18 22:46:34 hubertf Exp $
-# FreeBSD Id: Makefile,v 1.3 1996/12/08 01:11:27 max Exp
-#
+# $NetBSD: Makefile,v 1.9 2001/02/16 15:11:03 wiz Exp $
 
 DISTNAME=	xmahjongg
 PKGNAME=	xmahjongg-1.0
@@ -18,11 +16,9 @@ USE_IMAKE=	yes
 RESTRICTED=	"Restrictive copyright"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+PLIST_SUBST+=	X11BASE="${X11BASE}"
 
 post-extract:
 	@${CP} ${WRKSRC}/xmahjongg.6 ${WRKSRC}/xmahjongg.man
-
-post-install:
-	${X11BASE}/bin/mkfontdir ${X11PREFIX}/lib/X11/fonts/misc
 
 .include "../../mk/bsd.pkg.mk"
