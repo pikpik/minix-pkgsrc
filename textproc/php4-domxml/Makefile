@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/11/29 11:58:05 jdolecek Exp $
+# $NetBSD: Makefile,v 1.13 2003/11/29 12:02:22 jdolecek Exp $
 
 MODNAME=		domxml
 CATEGORIES+=		textproc
-PKGREVISION=		1
+PKGREVISION=		2
 COMMENT=		PHP4 extension for DOM support
 
 USE_BUILDLINK2=		YES

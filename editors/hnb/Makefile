@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/28 09:13:56 jlam Exp $
 #
 
 DISTNAME=	hnb-1.8.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hnb/}
 

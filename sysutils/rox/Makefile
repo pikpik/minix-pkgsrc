@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/07/13 13:53:23 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:53:46 grant Exp $
 #
 
 DISTNAME=	rox-1.2.0
-PKGREVISION=	6
+PKGREVISION=	7
 WRKSRC=		${WRKDIR}/${DISTNAME}/ROX-Filer/src
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
