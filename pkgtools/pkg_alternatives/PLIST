@@ -1,0 +1,6 @@
+@comment $NetBSD$
+man/man8/pkg_alternatives.8
+share/pkg_alternatives/wrapper.man
+share/pkg_alternatives/wrapper.sh
+sbin/pkg_alternatives
+@dirrm share/pkg_alternatives
