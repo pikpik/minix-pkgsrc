@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/html2text
+man/man1/html2text.1
+man/man5/html2textrc.5
