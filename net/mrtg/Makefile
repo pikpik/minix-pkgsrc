@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.41 2003/06/23 12:19:52 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2003/07/17 22:51:23 grant Exp $
 
-DISTNAME=	mrtg-2.9.29
-PKGREVISION=	1
+DISTNAME=	mrtg-2.10.5
 CATEGORIES=	net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		ftp://ftp.sunet.se/pub/network/monitoring/mrtg/ \
