@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/06 00:26:59 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2003/12/21 09:57:14 xtraeme Exp $
 #
 
 DISTNAME=	libgcrypt-1.1.90
@@ -35,6 +35,7 @@ CONFIGURE_ARGS+=	--without-pth
 .endif
 
 .include "../../converters/libiconv/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../security/libgpg-error/buildlink2.mk"
 
 .include "../../mk/pthread.buildlink2.mk"
