@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/xtermset
+man/man1/xtermset.1
+share/doc/xtermset/ctlseqs.ms
+share/doc/xtermset/ctlseqs.0
+share/doc/xtermset/COPYING
+share/doc/xtermset/INSTALL
+share/doc/xtermset/README
+@dirrm share/doc/xtermset
