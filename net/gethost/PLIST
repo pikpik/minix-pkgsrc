@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/gethost
+man/man1/gethost.1
