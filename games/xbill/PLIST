@@ -1,6 +1,7 @@
 @comment $NetBSD: PLIST,v 1.2 1998/09/14 20:47:35 garbled Exp $
 bin/xbill
 man/man6/xbill.6
+share/examples/xbill.scores
 share/xbill/pixmaps/about.xpm
 share/xbill/pixmaps/apple.xpm
 share/xbill/pixmaps/billA_0.xpm
