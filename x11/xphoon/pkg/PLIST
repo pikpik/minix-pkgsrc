@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xphoon
+lib/X11/doc/html/xphoon.1.html
+man/cat1/xphoon.0
