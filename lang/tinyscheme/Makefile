@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/28 09:04:02 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/06/02 01:18:52 jschauma Exp $
 
-DISTNAME=	tinyscheme-1.31
+DISTNAME=	tinyscheme-1.33
 CATEGORIES=	lang
 MASTER_SITES=	http://tinyscheme.sourceforge.net/
 
