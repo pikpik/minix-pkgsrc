@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.10 1998/08/29 19:41:59 frueauf Exp $
 
 --- makefile.unix.orig	Sun Aug 23 17:44:39 1998
 +++ makefile.unix	Fri Aug 28 23:42:40 1998
@@ -97,7 +97,7 @@ $NetBSD$
  ######## ix86/NetBSD
 -# ARCH  = netbsd_i386
 +ARCH  = netbsd
-+MACHINE  != uname -m
++MACHINE  = $(shell uname -m)
  ######## Sparc/SunOS ( no sound )
  # ARCH  = sunos
  ######## ix86/Solaris
