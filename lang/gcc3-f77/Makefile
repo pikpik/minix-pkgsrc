@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/10 15:47:09 seb Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/22 17:48:22 abs Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-f77-${GCC_VERSION}
 PKGREVISION=    1
@@ -11,6 +11,8 @@ INSTLIBS=	libf2c/libg2c.la
 .include "../../lang/gcc3/language.mk"
 
 CONFIGURE_ARGS+=	--enable-languages="f77"
+
+ONLY_FOR_COMPILER=	gcc
 
 do-build:
 	cd ${WRKSRC}/gcc && ${SETENV} ${MAKE_ENV} ${GMAKE} f77
