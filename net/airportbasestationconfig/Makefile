@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/06/30 15:02:51 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2002/07/29 22:23:26 jlam Exp $
 
 DISTNAME=	configurator_152
 PKGNAME=	${BINNAME}-1.5.2
@@ -25,7 +25,7 @@ LIBDIR=		${PREFIX}/lib/${BINNAME}
 
 # "jdk" and "kaffe" packages don't work.
 .if ${MACHINE_ARCH} == i386 || ${OPSYS} == "Darwin"
-PKG_JVM=	sun-jdk
+PKG_JVM=	sun-jdk13
 .elif ${MACHINE_ARCH} == powerpc
 PKG_JVM=	blackdown-jdk13
 .else
