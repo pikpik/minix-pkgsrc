@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/04/02 18:05:28 wennmach Exp $
+# $NetBSD: Makefile,v 1.27 2001/04/27 18:17:21 dmcmahill Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -18,6 +18,7 @@ SUBDIR+=	pkglint
 SUBDIR+=	pkgmanpages
 SUBDIR+=	pkgsurvey
 SUBDIR+=	port2pkg
+SUBDIR+=	python-mk
 SUBDIR+=	rpm2pkg
 SUBDIR+=	url2pkg
 #SUBDIR+=	xpkgwedge	# Experimental - turn on at your own risk!
