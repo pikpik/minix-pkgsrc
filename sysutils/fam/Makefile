@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/02/14 17:21:52 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2004/03/28 22:00:05 minskim Exp $
 #
 
 DISTNAME=		fam-2.7.0
@@ -18,6 +18,7 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
+USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
