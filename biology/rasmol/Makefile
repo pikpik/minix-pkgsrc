@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/09/17 19:40:00 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:08:40 agc Exp $
 
 DISTNAME=	RasMol_2.7.1
 PKGNAME=	rasmol-2.7.1
@@ -19,7 +19,7 @@ MAKE_ENV+=	DEPTHDEF="${DEPTHDEF}"
 .include "../../mk/bsd.prefs.mk"
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-USE_PKGSRC_GCC=		# defined
+GCC_REQD=		2.95.3
 .endif
 
 .if defined(RASMOL_DEPTH)
