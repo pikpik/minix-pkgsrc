@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/06/02 01:15:34 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:56:59 grant Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/12/29 00:51:27 obrien Exp
 #
 
@@ -11,7 +11,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/} \
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	X11 text viewer; useful as an add-on tool for other apps
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 
 .include "../../mk/bsd.pkg.mk"

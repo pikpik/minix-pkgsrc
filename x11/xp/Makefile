@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/03 04:17:31 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:57:01 grant Exp $
 
 DISTNAME=	xp-1.2b10
 PKGREVISION=	1
@@ -9,6 +9,6 @@ MAINTAINER=	jdc@NetBSD.org
 COMMENT=	Fast X11 text file viewer using Athena widgets
 
 USE_IMAKE=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.pkg.mk"

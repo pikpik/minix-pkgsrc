@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/24 13:30:27 kristerw Exp $
+# $NetBSD: Makefile,v 1.13 2004/02/01 01:43:30 jlam Exp $
 #
 
 DISTNAME=	xphoon.tar
@@ -14,7 +14,7 @@ MAINTAINER=	seb@pbox.org
 COMMENT=	Set the root window to the moon in its current phase
 
 WRKSRC=		${WRKDIR}/xphoon
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_IMAKE=      yes
 
 MAKE_FLAGS+=	EXTRA_LOCAL_LIBS=${EXTRA_LOCAL_LIBS}
