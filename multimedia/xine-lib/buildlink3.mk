@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/25 18:02:08 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:38 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XINE_LIB_BUILDLINK3_MK:=	${XINE_LIB_BUILDLINK3_MK}+
@@ -11,7 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxine-lib}
 BUILDLINK_PACKAGES+=	xine-lib
 
 .if !empty(XINE_LIB_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.xine-lib+=	xine-lib>=1rc0anb2
+BUILDLINK_DEPENDS.xine-lib+=	xine-lib>=1rc3a
 BUILDLINK_PKGSRCDIR.xine-lib?=	../../multimedia/xine-lib
 
 .include "../../audio/flac/buildlink3.mk"
