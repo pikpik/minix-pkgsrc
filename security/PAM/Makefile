@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/11/16 07:46:57 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2004/11/19 14:54:55 jlam Exp $
 #
 
 DISTNAME=	Linux-PAM-0.77
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.kernel.org/pub/linux/libs/pam/pre/library/ \
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.kernel.org/pub/linux/libs/pam/
 COMMENT=	Pluggable Authentication Modules (PAM)
+
+CONFLICTS+=	openpam-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
