@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/22 07:21:54 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/23 04:02:55 dmcmahill Exp $
 #
 
 DISTNAME=	geda-examples-${PKGVERSION}
@@ -18,6 +18,9 @@ CONFLICTS+=	gEDA<19991011
 
 GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
+
+pre-install:
+	${RM} -f ${WRKSRC}/config.status.overridden
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/geda

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.21 2004/02/23 04:35:19 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gsymcheck-${PKGVERSION}
 PKGNAME=		gsymcheck-${PKGVERSION}
-PKGREVISION=		2
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.geda.seul.org/pub/geda/devel/${PKGVERSION}/ \
 			ftp://ieee.ing.uniroma1.it/pub/geda/devel/${PKGVERSION}/ \

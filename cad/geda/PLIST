@@ -1,2 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2003/07/15 09:23:31 dmcmahill Exp $
 bin/geda
+bin/raw2gw
+${PKGLOCALEDIR}/locale/pt_BR/LC_MESSAGES/geda.mo
+${PKGLOCALEDIR}/locale/ru/LC_MESSAGES/geda.mo
