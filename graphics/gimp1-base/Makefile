@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/02/14 17:21:41 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 22:06:49 xtraeme Exp $
 #
 
 DISTNAME=		gimp-1.2.5
@@ -16,7 +16,7 @@ COMMENT=		GNU Image Manipulation Program (base)
 
 BUILD_USES_MSGFMT=	YES
 
-CONFLICTS+=		gimp<=1.2.3
+CONFLICTS+=		gimp<=1.2.3 gimp>=2.0.0
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
