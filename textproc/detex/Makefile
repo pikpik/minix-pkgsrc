@@ -10,10 +10,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.cs.purdue.edu/homes/trinkle/detex/
 COMMENT=	remove LaTeX commands
 
-WRKSRC=		${WRKDIR}
-
 do-install:
-	${INSTALL_PROGRAM} ${WRKDIR}/detex ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKDIR}/detex.1l ${PREFIX}/man/man1/detex.1
+	${INSTALL_PROGRAM} ${WRKSRC}/detex ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/detex.1l ${PREFIX}/man/man1/detex.1
 
 .include "../../mk/bsd.pkg.mk"
