@@ -1,8 +1,8 @@
 $NetBSD$
 
---- /dev/null	Wed Feb 28 02:22:10 2001
+--- /dev/null	Fri Mar  9 22:24:45 2001
 +++ mfhdf/ncdump/Makefile
-@@ -0,0 +1,21 @@
+@@ -0,0 +1,23 @@
 +PROG= ncdump
 +PROGNAME= hdfncdump
 +
@@ -22,5 +22,7 @@ $NetBSD$
 +LDFLAGS+= -Wl,-R${LIBDIR} ${MFHDFLIB} ${HDFLIB} ${JPEGLIB}
 +
 +CPPFLAGS+= ${MFHDFINC} @SWAP@
++
++NOGCCERROR= 1
 +
 +.include <bsd.prog.mk>

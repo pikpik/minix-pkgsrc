@@ -1,8 +1,8 @@
 $NetBSD$
 
---- /dev/null	Wed Feb 28 13:48:26 2001
+--- /dev/null	Fri Mar  9 22:24:34 2001
 +++ mfhdf/dumper/Makefile
-@@ -0,0 +1,19 @@
+@@ -0,0 +1,20 @@
 +PROG= hdp
 +
 +SRCS= hdp.c hdp_list.c hdp_sds.c hdp_util.c hdp_vd.c hdp_vg.c	\
@@ -20,5 +20,6 @@ $NetBSD$
 +CPPFLAGS+= -Dunix @SWAP@ -I${.CURDIR}/../libsrc -I${.CURDIR}/../../hdf/src
 +
 +NOMAN= 1
++NOGCCERROR= 1
 +
 +.include <bsd.prog.mk>
