@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libexec/popa3d
+share/doc/popa3d/COPYING
+share/doc/popa3d/DESIGN
+share/doc/popa3d/INSTALL
