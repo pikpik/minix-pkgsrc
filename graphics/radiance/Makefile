@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/02/17 17:54:12 jschauma Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/16 22:17:33 jschauma Exp $
 #
 
 DISTNAME=	rad3R6P1
@@ -38,6 +38,9 @@ PLIST_SUBST+=	USE_GL="@comment "
 .elif ${OPSYS} == "FreeBSD"
 PKGSRC_ARCH=	8
 PLIST_SUBST+=	USE_GL="@comment "
+.elif ${OPSYS} == "Linux"
+PLIST_SUBST+=	USE_GL="@comment "
+PKGSRC_ARCH=	6
 .elif ${OPSYS} == "IRIX"
 PKGSRC_ARCH=	3
 PLIST_SUBST+=	USE_GL=""
