@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:15:41 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/18 05:18:35 snj Exp $
 #
 
 DISTNAME=	tads23-unix
@@ -6,7 +6,7 @@ PKGNAME=	tads-3.0.5
 CATEGORIES=	games
 MASTER_SITES=	http://www.ifarchive.org/if-archive/programming/tads2/source/
 
-MAINTAINER=	dillo@giga.or.at
+MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://www.ifarchive.org/if-archive/programming/tads2/source/
 COMMENT=	TADS compiler and interpreter
 
