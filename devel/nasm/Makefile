@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/01/22 08:24:30 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/03 15:14:54 wiz Exp $
 #
 
 DISTNAME=	nasm-0.98.38
+PKGREVISION=	1
 CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nasm/}
 
