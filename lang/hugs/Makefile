@@ -1,10 +1,10 @@
 # $NetBSD: Makefile,v 1.19 2001/06/21 02:42:54 jlam Exp $
 
-DISTNAME=	hugs98-Feb2001
-PKGNAME=	hugs98-200102
-WRKSRC=		${WRKDIR}/hugs98-Feb2001/src/unix
+DISTNAME=	hugs98-Dec2001
+PKGNAME=	hugs98-200112
+WRKSRC=		${WRKDIR}/hugs98-Dec2001/src/unix
 CATEGORIES=	lang
-MASTER_SITES=	ftp://www.cse.ogi.edu/pub/pacsoft/hugs/
+MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/
 
 MAINTAINER=	nathanw@mit.edu
 HOMEPAGE=	http://www.haskell.org/hugs/
