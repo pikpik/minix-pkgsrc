@@ -1,4 +1,4 @@
-# $NetBSD: site.config.m4,v 1.1 2000/07/24 04:23:02 itojun Exp $
+# $NetBSD: site.config.m4,v 1.2 2002/06/23 11:46:04 tron Exp $
 
 # pathnames specific to pkgsrc
 #
@@ -8,5 +8,5 @@ define(`confSBINDIR', `${PREFIX}/sbin')
 define(`confUBINDIR', `${PREFIX}/bin')
 define(`confHFDIR', `${PREFIX}/share/misc')
 define(`confMANROOT', `${PREFIX}/man/cat')
-APPENDDEF(`confENVDEF', `-I${BUILDLINK_DIR}/include')
-APPENDDEF(`confLIBS', `-L${BUILDLINK_DIR}/lib')
+APPENDDEF(`confENVDEF', `-I${PREFIX}/include')
+APPENDDEF(`confLIBS', `-L${PREFIX}/lib')
