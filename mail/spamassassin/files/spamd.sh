@@ -1,8 +1,9 @@
 #!/bin/sh
 #
-#	$NetBSD$
+#	$NetBSD: spamd.sh,v 1.1 2002/08/30 10:50:52 abs Exp $
 #
 # PROVIDE: spamd
+# REQUIRE: DAEMON
 
 . /etc/rc.subr
 
