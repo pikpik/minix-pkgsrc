@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/06 19:21:29 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/07 21:02:59 wrstuden Exp $
 #
 
 DISTNAME=		netatalk-990130
@@ -14,6 +14,7 @@ CONFLICTS=		netatalk-asun-[0-9]*
 CONFLICTS+=		netatalk-19981109
 
 post-install:
+	${RM} ${PREFIX}/share/examples/netatalk/AppleVolumes.system.orig
 	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../mk/bsd.pkg.mk"
