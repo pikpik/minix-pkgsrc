@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/12/08 14:41:40 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2004/01/03 18:49:44 reed Exp $
 #
 
 DISTNAME=	tuxpaint-0.9.12
@@ -13,7 +13,7 @@ COMMENT=	Drawing program for small children
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 MANCOMPRESSED=		YES
 
 LDFLAGS+=		${_BLNK_ICONV_LDFLAGS}

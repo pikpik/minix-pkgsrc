@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/03 18:49:44 reed Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:18:17 agc Exp $
 #
 
 DISTNAME=	qiv-1.8-src
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.klografx.net/qiv/
 COMMENT=	Quick image viewer
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 USE_BUILDLINK2=	yes
 
 .include "../../graphics/imlib/buildlink2.mk"

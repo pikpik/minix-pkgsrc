@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/03 18:49:43 reed Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/24 10:54:08 jmmv Exp $
 
 DISTNAME=	mjpegtools-1.6.1.93
 CATEGORIES=	graphics
@@ -12,7 +12,7 @@ DEPENDS+=		toolame>=02l:../../audio/toolame
 BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool

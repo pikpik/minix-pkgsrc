@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/11/06 19:29:06 gavan Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:18:16 agc Exp $
 
 DISTNAME=		Hermes-1.3.3
 CATEGORIES=		graphics
@@ -17,6 +17,6 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
 CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.pkg.mk"

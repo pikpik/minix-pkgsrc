@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:42:02 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 16:51:48 martti Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}-src
@@ -14,7 +14,7 @@ COMMENT=		Portable library for handling QuickTime(TM) media files
 
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ENV+=		my_cv_comment=""

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.32 2003/06/23 14:23:18 jschauma Exp $
+# $NetBSD: Makefile.common,v 1.33 2003/07/17 21:40:44 grant Exp $
 #
 
 DISTNAME=		gdk-pixbuf-${VER}.0
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.gnome.org/
 VER=			0.22
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/12/13 00:45:24 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/03 18:49:43 reed Exp $
 #
 
 DISTNAME=		gtkglext-0.7.1
@@ -14,7 +14,7 @@ COMMENT=		OpenGL extension to GTK
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_PERL5=		build
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 

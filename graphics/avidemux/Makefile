@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/03 18:49:42 reed Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/23 21:50:45 jmmv Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -14,7 +14,7 @@ BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

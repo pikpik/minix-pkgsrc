@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/02 18:43:12 jmc Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 21:42:30 grant Exp $
 #
 
 DISTNAME=	gdchart-py-0.6
@@ -12,7 +12,7 @@ HOMEPAGE=	http://athani.pair.com/msteed/software/gdchart/
 COMMENT=	Python interface to GDChart
 
 USE_BUILDLINK2=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 MAKE_ENV=	GD_INCLUDE=${LOCALBASE}/include \
 		GDCHART_INCLUDE=${LOCALBASE}/include \
 		PYTHON_INCLUDE=${LOCALBASE}/${PYINC} \
