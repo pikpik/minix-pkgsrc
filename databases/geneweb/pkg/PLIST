@@ -1,11 +1,11 @@
-@comment $NetBSD: PLIST,v 1.4 2000/09/03 03:20:28 wulf Exp $
+@comment $NetBSD: PLIST,v 1.5 2000/09/03 03:29:59 jlam Exp $
 bin/consang
 bin/ged2gwb
 bin/gwb2ged
 bin/gwc
 bin/gwtp
 bin/gwu
-etc/rc.d/geneweb.sh
+etc/rc.d/geneweb
 libexec/gwd
 sbin/gwsetup
 share/doc/geneweb/CREDITS.htm

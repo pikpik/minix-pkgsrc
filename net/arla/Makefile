@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/10/18 04:26:53 garbled Exp $
+# $NetBSD: Makefile,v 1.10 2000/10/18 16:32:57 wennmach Exp $
 #
 
 DISTNAME=		arla-0.34.5
@@ -121,7 +121,7 @@ post-install:
 	@${INSTALL} -c -o root -g wheel -m 444                                \
 		 ${FILESDIR}/fstab ${PREFIX}/share/examples/arla
 	@${SED} -e 's|@PREFIX@|${PREFIX}|' ${FILESDIR}/arlad.sh               \
-		> ${PREFIX}/etc/rc.d/arlad.sh
+		> ${PREFIX}/etc/rc.d/arlad
 	@${ECHO} " "
 
 .include "../../mk/bsd.pkg.mk"

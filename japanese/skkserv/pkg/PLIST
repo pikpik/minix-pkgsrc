@@ -1,8 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/24 03:19:23 itohy Exp $
 bin/skkdic-expr
 bin/skkdic-sort
 bin/skkdic-count
-etc/rc.d/skkserv.sh
+etc/rc.d/skkserv
 libexec/skkserv
 share/skk/SKK-JISYO.L
 share/skk/README.skkserv
