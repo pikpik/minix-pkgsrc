@@ -1,6 +1,6 @@
 $NetBSD$
 
---- scribus/scpreview.cpp.orig	2004-05-29 00:33:28.000000000 +0200
+--- scribus/scpreview.cpp.orig	2004-10-24 23:44:51.000000000 +0200
 +++ scribus/scpreview.cpp
 @@ -11,6 +11,7 @@
  #include <qdir.h>
@@ -8,5 +8,5 @@ $NetBSD$
  #include <cstdlib>
 +#include <iostream>
  #include "missing.h"
- extern double QStodouble(QString in);
- extern int QStoInt(QString in);
+ #include "scribus.h"
+ 
