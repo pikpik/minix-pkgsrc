@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/04/26 13:57:23 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/07/27 11:23:20 wiz Exp $
 #
 
 DISTNAME=	XML-Xerces-1.3.5
@@ -17,8 +17,8 @@ USE_PERL5=	# defined
 PERL5_REQD=	5.6.0
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/XML/Xerces/.packlist
 
-MAKE_ENV+=	XERCES_LIB=/usr/pkg/lib
-MAKE_ENV+=	XERCES_INCLUDE=/usr/pkg/include
+MAKE_ENV+=	XERCES_LIB=${PREFIX}/lib
+MAKE_ENV+=	XERCES_INCLUDE=${PREFIX}/include
 
 do-build:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL && make
