@@ -2,3 +2,4 @@ $NetBSD$
 
 SHA1 (pdmenu_1.2.65.tar.gz) = d25a7cc5f0c316cbfdcd84ec22a1766ee8c50272
 Size (pdmenu_1.2.65.tar.gz) = 88453 bytes
+SHA1 (patch-aa) = 1b7027a0505e2f6eb605113f2e87ca7cac9c037e
