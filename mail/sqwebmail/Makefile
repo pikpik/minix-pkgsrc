@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2005/02/18 22:12:56 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/03/21 00:13:10 jlam Exp $
 
-DISTNAME=	sqwebmail-5.0.0
+DISTNAME=	sqwebmail-5.0.1
 PKGBASE=	${DISTNAME:C/-[^-]*$//}
-PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
