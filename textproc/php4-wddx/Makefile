@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/08/31 19:56:00 jdolecek Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/19 13:19:12 wiz Exp $
 
 MODNAME=		wddx
 CATEGORIES+=		textproc
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP4 extension for WDDX support
 
 USE_BUILDLINK2=		YES

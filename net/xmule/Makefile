@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/08/26 09:53:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/08/28 22:26:32 jmmv Exp $
 #
 
 DISTNAME=	xmule-1.6.0
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmule/}
 EXTRACT_SUFX=	.tar.bz2

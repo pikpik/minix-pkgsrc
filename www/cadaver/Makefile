@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2003/07/22 04:14:21 martti Exp $
+# $NetBSD: Makefile,v 1.23 2003/09/10 04:37:57 epg Exp $
 
 DISTNAME=		cadaver-0.21.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		www
 MASTER_SITES=		http://www.webdav.org/cadaver/
 
