@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 1999/09/01 19:45:12 tron Exp $
+# $NetBSD: Makefile,v 1.81 1999/09/01 20:26:34 tron Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -95,6 +95,7 @@
     SUBDIR += sendfile
     SUBDIR += sirc
     SUBDIR += sniffit
+    SUBDIR += snort
 #    SUBDIR += slirp
     SUBDIR += socks4
     SUBDIR += socks5
