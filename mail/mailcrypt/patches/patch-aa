@@ -11,3 +11,11 @@ $NetBSD$
  
  # Where to put the Info files
  infodir=$(prefix)/info
+@@ -27,7 +27,6 @@ INSTALL_DATA = @INSTALL_DATA@
+ INSTALL_INFO = @INSTALL_INFO@
+ 
+ # Various auxiliary programs
+-MAKEINFO=makeinfo
+ DVIPS=dvips
+ TEXI2DVI=texi2dvi
+ TEXI2HTML=texi2html
