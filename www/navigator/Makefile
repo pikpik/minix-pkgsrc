@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1999/09/04 16:38:30 jlam Exp $
+# $NetBSD: Makefile,v 1.20 1999/09/07 15:21:39 jlam Exp $
 #
 # Every effort has been made to keep the communicator and navigator
 # Makefiles as similar as possible.
@@ -118,5 +118,7 @@ do-install:
 
 	${CHOWN} -R 0:0 ${MOZILLA_HOME}
 	${CHMOD} -R go-w ${MOZILLA_HOME}
+	cd ${MOZILLA_HOME} ; patch -s < ${FILESDIR}/bookmarks.patch
+	@rm -f ${MOZILLA_HOME}/bookmark.htm.orig
 
 .include "../../mk/bsd.pkg.mk"
