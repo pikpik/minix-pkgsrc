@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- ./src/libFLAC++/stream_decoder.cpp.orig	2004-11-16 11:04:04.924224000 +0000
++++ ./src/libFLAC++/stream_decoder.cpp	2004-11-16 11:04:10.117270000 +0000
+@@ -218,5 +218,5 @@
+ 			instance->error_callback(status);
+ 		}
+ 
+-	};
++	}
+ };
