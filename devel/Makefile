@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.568 2004/11/11 23:40:09 seb Exp $
+# $NetBSD: Makefile,v 1.569 2004/11/12 00:54:08 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -163,6 +163,7 @@ SUBDIR+=	gscope
 SUBDIR+=	gtexinfo
 SUBDIR+=	gtkdiff
 SUBDIR+=	gtl
+SUBDIR+=	gtl0
 SUBDIR+=	gtoolkit-examples
 SUBDIR+=	guile-fcgi
 SUBDIR+=	guile-gtk
@@ -260,8 +261,8 @@ SUBDIR+=	lwp
 SUBDIR+=	m4
 SUBDIR+=	maketool
 SUBDIR+=	mantis
-SUBDIR+=	mkcmd
 SUBDIR+=	mk-files
+SUBDIR+=	mkcmd
 SUBDIR+=	monotone
 SUBDIR+=	mph
 SUBDIR+=	mrproject
