@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- base/Makefile.in.orig	Sun Oct 29 23:43:53 2000
++++ base/Makefile.in
+@@ -83,7 +83,5 @@
+ 	rm -f *~
+ 
+ install:
+-	$(INSTALL) -m 775 $(INSTALL_OPTS) -d $(DESTDIR)$(BINDIR)
+-	$(INSTALL) -m 774 $(INSTALL_OPTS) netsaint $(DESTDIR)$(BINDIR)
+-
++	${BSD_INSTALL_PROGRAM} netsaint $(DESTDIR)$(BINDIR)
+ 
