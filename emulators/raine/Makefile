@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/06/05 18:55:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:14:41 tv Exp $
 #
 
 DISTNAME=	raines-0.40.2
@@ -22,6 +22,7 @@ MAKEFILE=	makefile
 MAKE_ENV+=	OSTYPE=linux
 USE_PERL5=	run
 REPLACE_PERL=	makedep
+PTHREAD_OPTS+=	require
 
 # XXX Really?
 ONLY_FOR_PLATFORM=  *-*-i386
@@ -37,4 +38,5 @@ pre-install:
 
 .include "../../devel/allegro/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
