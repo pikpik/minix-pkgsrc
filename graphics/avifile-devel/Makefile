@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2002/10/09 13:05:02 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2003/02/02 21:53:25 zuntum Exp $
 #
 
 DISTNAME=	avifile-0.6.20010814
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
