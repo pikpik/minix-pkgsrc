@@ -1,5 +1,0 @@
-# $NetBSD: Makefile.Linux.i386,v 1.1.1.1 2003/12/30 22:48:32 grant Exp $
-
-DISTNAME=	MozillaFirebird-${MOZ_VER}-i686-linux-gtk2+xft
-
-MOZ_PLATFORM=	linux
