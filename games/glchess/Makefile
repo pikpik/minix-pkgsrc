@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/12 06:17:15 rh Exp $
 #
 
-DISTNAME=	glchess-0.4.6
+DISTNAME=	glchess-0.4.7
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=glchess/}
 
