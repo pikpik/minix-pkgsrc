@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.6 2000/10/31 13:10:18 jlam Exp $
+@comment $NetBSD$
 bin/W
 bin/altavista
+bin/amazon
 bin/appwatch
 bin/ask
 bin/austlii
@@ -22,6 +23,7 @@ bin/newscientist
 bin/pubmed
 bin/raging
 bin/rhyme
+bin/scaleplus
 bin/slashdot
 bin/stockquote
 bin/sundocs
