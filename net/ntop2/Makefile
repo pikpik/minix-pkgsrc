@@ -1,32 +1,33 @@
-# $NetBSD: Makefile,v 1.22 2001/11/29 01:12:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.1 2002/07/23 06:52:38 cjs Exp $
 
-DISTNAME=		ntop-2.0.99-rc2
-PKGNAME=		ntop2-2.0.99rc2
-#PKGREVISION=		0
+DISTNAME=		ntop-2.1
+PKGNAME=		ntop2-2.1
 CATEGORIES=		net
-CONFLICTS=		ntop-*
-MASTER_SITES=		http://luca.ntop.org/
-EXTRACT_SUFX=		.tgz
-WRKSRC=                 ${WRKDIR}/RC2/ntop
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ntop/}
 
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.ntop.org/
 COMMENT=		shows network usage (similar to "top" for processes)
 
-USE_GMAKE=		YES
-USE_GNU_READLINE=	YES
-USE_LIBTOOL=		YES
+CONFLICTS=		ntop-[0-9]*
+
+WRKSRC=                 ${WRKDIR}/ntop
+
+USE_GMAKE=		yes
+GNU_CONFIGURE=          yes
+# --enable-micro-ntop causes compile to fail 
+CONFIGURE_ARGS+=	--disable-mysql
+USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-USE_BUILDLINK_ONLY=     YES
+USE_BUILDLINK_ONLY=	yes
 
-GNU_CONFIGURE=          YES
-CONFIGURE_ARGS+=	--disable-mysql --disable-mt
-## --enable-micro-ntop causes compile to fail 
-#CONFIGURE_ARGS+=        --disable-mysql --disable-mt
-
-DEPENDS+=		gdchart:../../graphics/gdchart
+USE_PTHREAD=		native pth
 
 .include "../../net/libpcap/buildlink.mk"
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../databases/gdbm/buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
+.include "../../graphics/gdchart/buildlink.mk"
+.include "../../security/openssl/buildlink.mk"
+.include "../../mk/pthread.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
