@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.335 2004/02/06 10:21:23 markd Exp $
+# $NetBSD: Makefile,v 1.336 2004/02/06 12:34:35 markd Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -140,6 +140,7 @@ SUBDIR+=	libxfce4gui
 SUBDIR+=	libxfce4mcs
 SUBDIR+=	libxfce4util
 SUBDIR+=	libzvt
+SUBDIR+=	llnlxdir
 SUBDIR+=	mlterm
 SUBDIR+=	modeline
 SUBDIR+=	mowitz
