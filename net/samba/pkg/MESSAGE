@@ -1,3 +1,5 @@
+===========================================================================
+$NetBSD$
 
                     *===* Security Notes *===*
 
@@ -11,3 +13,4 @@ pkg_delete can be used for upgrading this package.  If you won't use
 this package anymore, I strongly recommend that you remove the
 smbpasswd file manually.
 
+===========================================================================
