@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/05/03 22:16:51 jtb Exp $
+# $NetBSD: Makefile,v 1.11 2002/10/02 20:56:34 dillo Exp $
 
 DISTNAME=		rlab-2.1.05
 CATEGORIES=		math
@@ -49,6 +49,8 @@ RLAB_USE_SUPERLU?=	YES
 .if (${RLAB_USE_SUPERLU} == YES)
 DEPENDS+=		superlu-[0-9]*:../../math/superlu
 CONFIGURE_ARGS+=	--enable-SUPERLU
+CPPFLAGS+=		${BUILDLINK_CPPFLAGS.superlu}
+.include "../../math/superlu/buildlink2.mk"
 .endif
 
 .if defined(RLAB_PAGER)
