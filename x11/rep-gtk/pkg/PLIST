@@ -1,0 +1,4 @@
+@comment $NetBSD$
+@comment rep/ and rep/xxx--netbsd/ are required by librep.
+libexec/rep/${MACHINE_GNU_ARCH}-${LOWER_VENDOR}-${LOWER_OPSYS}/libgtk.la
+libexec/rep/${MACHINE_GNU_ARCH}-${LOWER_VENDOR}-${LOWER_OPSYS}/libgtk.a
