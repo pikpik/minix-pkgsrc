@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1179 2003/05/04 02:59:15 rh Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1180 2003/05/11 07:06:23 jmc Exp $
 #
 # This file is in the public domain.
 #
@@ -831,7 +831,6 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnome.org/pub/GNOME/
 
 MASTER_SITE_SOURCEFORGE+=	\
-	http://belnet.dl.sourceforge.net/sourceforge/ \
 	http://cesnet.dl.sourceforge.net/sourceforge/ \
 	http://switch.dl.sourceforge.net/sourceforge/ \
 	http://telia.dl.sourceforge.net/sourceforge/ \
