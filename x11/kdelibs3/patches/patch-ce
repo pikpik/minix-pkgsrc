@@ -1,6 +1,6 @@
 $NetBSD$
 
---- kioslave/file/Makefile.in.orig	2004-01-26 08:24:45.000000000 +1300
+--- kioslave/file/Makefile.in.orig	2004-03-05 01:30:03.000000000 +1300
 +++ kioslave/file/Makefile.in
 @@ -475,7 +475,7 @@ SOURCES = $(kio_file_la_SOURCES)
  all: docs-am  all-am
