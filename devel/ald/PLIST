@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/ald
+man/man8/ald.8
+share/doc/ald/INSTALL
+share/doc/ald/README
+share/doc/ald/ChangeLog
+@dirrm share/doc/ald
