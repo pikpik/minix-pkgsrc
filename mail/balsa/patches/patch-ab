@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- libbalsa/send.c.orig	Mon Aug 28 12:03:59 2000
++++ libbalsa/send.c
+@@ -22,6 +22,9 @@
+ 
+ #include "config.h"
+ 
++#include <sys/types.h>
++#include <sys/socket.h>
++#include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <netdb.h>
+ 
