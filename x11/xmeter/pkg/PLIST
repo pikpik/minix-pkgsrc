@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xmeter
+lib/X11/app-defaults/XMeter
+man/cat1/xmeter.0
