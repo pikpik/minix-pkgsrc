@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/27 13:11:04 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/08/28 12:56:17 garbled Exp $
 
 DISTNAME=		nethack-3.2.2
 PKGNAME=		nethack-tty-3.2.2
@@ -10,7 +10,7 @@ HOMEPAGE=		http://www.win.tue.nl/games/roguelike/nethack/
 
 DEPENDS+=		nethack-lib-3.2.2:../nethack-lib
 
-WRKSRC=			../nethack-lib/work/${DISTNAME}
+WRKSRC=			../nethack-lib/${WRKDIR_BASENAME}/${DISTNAME}
 NO_CHECKSUM=		yes
 ALL_TARGET=		nethack
 INSTALL_TARGET=		binfiles
@@ -18,7 +18,7 @@ MAKE_ENV+=		GTYPE=-tty
 
 do-fetch:	#empty
 do-extract:
-	@mkdir work
+	-@mkdir ${WRKDIR_BASENAME}
 	(cd ../nethack-lib && make clean)
 	(cd ../nethack-lib && make configure)
 
