@@ -1,0 +1,12 @@
+@comment $NetBSD$
+bin/scrollz
+bin/scrollz-${PKGVERSION}
+lib/scrollz/doc/ScrollZ.doc
+lib/scrollz/help/ScrollZ.help
+@exec ${MKDIR} %D/lib/scrollz/translation
+@dirrm lib/scrollz/translation
+@exec ${MKDIR} %D/lib/scrollz/script
+@dirrm lib/scrollz/script
+@dirrm lib/scrollz/help
+@dirrm lib/scrollz/doc
+@dirrm lib/scrollz
