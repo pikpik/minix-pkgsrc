@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/11/15 00:26:44 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/06/02 01:19:06 jschauma Exp $
 
 DISTNAME=		cim-3.30
 CATEGORIES=		lang
@@ -13,8 +13,8 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		cim.info
 
 .include "../../lang/perl5/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
