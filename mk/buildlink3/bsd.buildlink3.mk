@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.90 2004/02/17 16:56:47 jlam Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.91 2004/02/18 05:23:37 jlam Exp $
 #
 # An example package buildlink3.mk file:
 #
@@ -56,11 +56,6 @@ BUILDLINK_OPSYS?=	${OPSYS}
 #
 .if empty(PREPEND_PATH:M${BUILDLINK_DIR}/bin)
 PREPEND_PATH+=	${BUILDLINK_DIR}/bin
-.  if defined(_OPSYS_DEFAULT_PATH)
-PATH:=		${BUILDLINK_DIR}/bin:${_OPSYS_DEFAULT_PATH}
-.  else
-PATH:=		${BUILDLINK_DIR}/bin:${PATH}
-.  endif
 .endif
 
 # BUILDLINK_DEPENDS contains the list of packages for which we add
