@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2001/02/27 23:40:54 jtb Exp $
+# $NetBSD: Makefile,v 1.74 2001/03/05 23:39:45 hubertf Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -12,6 +12,7 @@ SUBDIR+=	dict-server
 SUBDIR+=	docbook
 SUBDIR+=	dsssl-docbook-modular
 SUBDIR+=	eperl
+SUBDIR+=	expat
 SUBDIR+=	fop
 SUBDIR+=	glimpse
 SUBDIR+=	html
@@ -43,6 +44,7 @@ SUBDIR+=	p5-XML-Node
 SUBDIR+=	p5-XML-Parser
 SUBDIR+=	par
 SUBDIR+=	py-dtml
+SUBDIR+=	pyxml
 SUBDIR+=	rfcutil
 SUBDIR+=	rman
 SUBDIR+=	rtfm
