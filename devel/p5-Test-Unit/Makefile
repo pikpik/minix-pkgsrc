@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5tun
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
 
-MAINTAINER=	cjs@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Perl extension module for Unit Tests
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
