@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: kdc.sh,v 1.1 2004/01/10 21:59:29 jlam Exp $
 #
 # PROVIDE: kdc
 # REQUIRE: NETWORKING
@@ -13,6 +13,7 @@ fi
 name="kdc"
 rcvar=$name
 command="@PREFIX@/libexec/${name}"
+command_args="--detach"
 required_files="@PKG_SYSCONFDIR@/krb5.conf"
 
 if [ -f /etc/rc.subr ]; then
