@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/12/01 20:50:05 mjl Exp $
+# $NetBSD: Makefile,v 1.20 2002/03/28 13:05:10 grant Exp $
 #
 
 DISTNAME=	slrn-0.9.7.4
@@ -14,7 +14,8 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--without-X --disable-inews --with-slrnpull \
 		--enable-spool --enable-grouplens \
-		--disable-gen-mid --with-libdir=${PREFIX}/lib/slrn \
+		--with-gen-mid --with-libdir=${PREFIX}/lib/slrn \
+		--enable-mid-cache
 
 # the next is a workaround, as 1.3.2 install doesn't like -c and -d
 # together
