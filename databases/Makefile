@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2003/02/17 14:43:22 zuntum Exp $
+# $NetBSD: Makefile,v 1.92 2003/02/21 11:41:38 salo Exp $
 #
 
 COMMENT=	Databases
@@ -26,6 +26,7 @@ SUBDIR+=	kmysqladmin
 SUBDIR+=	kpsql
 SUBDIR+=	libgda
 SUBDIR+=	libgnomedb
+SUBDIR+=	mergeant
 SUBDIR+=	metakit-lib
 SUBDIR+=	myodbc
 SUBDIR+=	mysql-client
