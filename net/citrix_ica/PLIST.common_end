@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.post,v 1.2 2002/01/18 11:50:40 martti Exp $
+@comment $NetBSD$
 @dirrm lib/ICAClient/.config
 @dirrm lib/ICAClient/config
 @dirrm lib/ICAClient/cache/zlcache

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.pre,v 1.3 2002/08/05 00:34:56 dmcmahill Exp $
+@comment $NetBSD$
 bin/wfcmgr
 bin/wfica
 lib/ICAClient/.config/appsrv.ini

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.pre,v 1.4 2003/05/07 11:28:01 jmmv Exp $
+@comment $NetBSD$
 Acrobat5/Browsers/netscape
 Acrobat5/Browsers/${PLATFORM}/nppdf.so
 Acrobat5/Reader/AcroVersion
