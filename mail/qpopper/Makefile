@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/02/15 22:25:12 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:32 agc Exp $
 #
 
 DISTNAME=	qpopper2.41beta1
@@ -13,9 +13,6 @@ MIRROR_DISTFILE=	no
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --libexecdir=${PREFIX}/libexec --sysconfdir=${PREFIX}/etc \
 	--with-apop=/etc/apop.auth --with-apopuid=root
-
-CAT8=		qpopper.0
-MAN8=		qpopper.8 qpopauth.8
 
 # popper makefile doesn't have an install target...
 do-install:
