@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2002/09/29 14:34:00 lukem Exp $
+# $NetBSD: Makefile,v 1.44 2003/01/03 16:27:09 lukem Exp $
 
 DISTNAME=	cdrtools-2.0
 PKGNAME=	cdrecord-2.0
@@ -18,13 +18,15 @@ USE_GMAKE=		# defined
 TBL?=			tbl
 
 .if ${LOCALBASE} != "/opt/schily"
-BUILDLINK_TRANSFORM=	r:-I/opt/schily
-BUILDLINK_TRANSFORM+=	r:-L/opt/schily
+BUILDLINK_TRANSFORM=	r:/opt/schily
+BUILDLINK_TRANSFORM+=	r:/opt/schily
 .endif
 
 # avoid picking up a bad ${ARCH} during the build
 MAKE_ENV+=      ARCH=""
 MAKE_ENV+=      MAKEPROG="gmake"
+MAKE_ENV+=	COPTX="${CFLAGS}"
+MAKE_ENV+=	LDOPTX="${LDFLAGS}"
 
 do-configure:
 	cd ${WRKSRC}/RULES;						\
