@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/31 10:13:56 darcy Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/07 16:17:42 darcy Exp $
 #
 
 DISTNAME=		Pyro-3.4
@@ -16,6 +16,7 @@ PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 PLIST_SUBST+=		PYVERSSUFFIX="-${PYVERSSUFFIX}"
 MAKE_ENV+=			PKGSRC="1" PYVERSSUFFIX="-${PYVERSSUFFIX}"
+
 post-extract:
 	cd ${WRKSRC}/bin; \
 	${MV} es es-${PYVERSSUFFIX}; \
