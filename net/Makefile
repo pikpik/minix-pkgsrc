@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.401 2003/09/01 21:43:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.402 2003/09/04 08:42:51 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -182,7 +182,9 @@ SUBDIR+=	p5-IO-Socket-Multicast
 SUBDIR+=	p5-Net
 SUBDIR+=	p5-Net-DNS
 SUBDIR+=	p5-Net-Daemon
+SUBDIR+=	p5-Net-Gnats
 SUBDIR+=	p5-Net-IRC
+SUBDIR+=	p5-Net-Jabber
 SUBDIR+=	p5-Net-SNMP
 SUBDIR+=	p5-Net-Server
 SUBDIR+=	p5-Net-TFTP
