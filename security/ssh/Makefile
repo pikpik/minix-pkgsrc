@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.27 1998/06/19 17:17:04 tron Exp $
+# $NetBSD: Makefile,v 1.28 1998/06/22 13:06:18 agc Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
-DISTNAME=		ssh-1.2.25
+DISTNAME=		ssh-1.2.26
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.cs.hut.fi/pub/ssh/ \
 			ftp://ftp.funet.fi/pub/unix/security/login/ssh/
 
 MAINTAINER=		tron@netbsd.org
 
-CONFLICTS=		ssh-1.2.22 ssh-1.2.23
+CONFLICTS=		ssh-1.2.22 ssh-1.2.23 ssh-1.2.25
 
 RESTRICTED=		"Crypto; export-controlled"
 MIRROR_DISTFILE=	no
