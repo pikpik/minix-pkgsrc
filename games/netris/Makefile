@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 15:10:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/29 01:12:33 hubertf Exp $
 #
 
-DISTNAME=		netris-0.5
-PKGREVISION=		1
+DISTNAME=		netris-0.52
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.netris.org/pub/netris/
 
