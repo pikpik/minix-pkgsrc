@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/20 18:16:37 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/10 17:49:15 tsarna Exp $
 #
 
 DISTNAME=	xkbd-0.8.5
@@ -15,4 +15,5 @@ USE_BUILDLINK2=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
