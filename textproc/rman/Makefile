@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/08/18 00:22:13 fredb Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/17 17:37:41 wiz Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
@@ -13,6 +13,10 @@ HOMEPAGE=	http://polyglotman.sourceforge.net/
 COMMENT=	Produces HTML from formatted and unformatted man pages
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
+
+.if exists(${X11BASE}/bin/rman)
+IGNORE=		"Rosetta Man is included in your X distribution."
+.endif
 
 post-install:
 	strip ${PREFIX}/bin/rman
