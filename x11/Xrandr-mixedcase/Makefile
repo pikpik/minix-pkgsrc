@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2004/02/16 22:45:34 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/03/15 17:30:18 recht Exp $
 #
 
-DISTNAME=		libXrandr-1.0.1
-PKGNAME=		Xrandr-1.0.1
+DISTNAME=		libXrandr-1.0.2
+PKGNAME=		Xrandr-1.0.2
 CATEGORIES=		x11 devel
-MASTER_SITES=		http://freedesktop.org/~xlibs/dist/
+MASTER_SITES=		http://freedesktop.org/~xlibs/release/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		xtraeme@NetBSD.org
-HOMEPAGE=		http://freedesktop.org/
+HOMEPAGE=		http://xlibs.freedesktop.org/
 COMMENT=		X RandR extension (Library)
 
 USE_BUILDLINK3=		yes
