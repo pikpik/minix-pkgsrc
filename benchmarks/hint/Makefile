@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/02/10 18:49:17 explorer Exp $
+# $NetBSD: Makefile,v 1.7 1999/04/01 14:07:52 agc Exp $
 # FreeBSD: Makefile,v 1.1.1.1 1998/06/15 18:09:43 ghelmer Exp
 #
 
@@ -21,7 +21,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/hint.1 ${PREFIX}/man/man1
 
 benchmark:
-	cd ${WRKSRC} ; mkdir -p data ; ./DOUBLE | tee hint.out
+	cd ${WRKSRC} ; ${MKDIR} -p data ; ./DOUBLE | tee hint.out
 
 results:
 	-@${MKDIR} /tmp/benches/`domainname`
