@@ -1,0 +1,5 @@
+@comment $NetBSD$
+qt3/plugins/sqldrivers/libqsqlpsql.a
+qt3/plugins/sqldrivers/libqsqlpsql.la
+qt3/plugins/sqldrivers/libqsqlpsql.so
+@dirrm qt3/plugins/sqldrivers
