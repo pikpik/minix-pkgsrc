@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.2 1999/10/21 16:54:01 agc Exp $
+@comment $NetBSD: PLIST,v 1.3 1999/10/25 23:25:18 agc Exp $
 bin/catdoc
 bin/wordview
 bin/xls2csv
+bin/xlsview
 man/man1/catdoc.1
 share/catdoc/8859-1.txt
 share/catdoc/8859-2.txt
