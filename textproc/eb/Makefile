@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/11/21 01:37:36 uebayasi Exp $
+# $NetBSD: Makefile,v 1.24 2004/11/22 02:21:13 uebayasi Exp $
 # FreeBSD Id: ports/japanese/eb/Makefile,v 1.21 2000/08/21 03:39:42 kevlo Exp
 #
 
@@ -66,7 +66,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONF_FILES=		${EGDIR}/eb.conf.default ${PKG_SYSCONFDIR}/eb.conf
 
 EB_APPENDIXDIR=	${PREFIX}/share/eb/appendix
-EGDIR=		${PREFIX}/share/examples/eb/
+EGDIR=		${PREFIX}/share/examples/eb
 
 # XXX Better than having unflexible/static patches.  IMO.
 # -    ZLIBLIBS="-L$z_libdir -lz"
