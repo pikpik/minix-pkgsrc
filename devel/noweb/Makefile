@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/11/29 01:12:30 hubertf Exp $
+# $NetBSD: Makefile,v 1.24 2003/03/29 12:40:35 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/09/15 07:22:06 tg Exp
 #
 
@@ -14,8 +14,6 @@ HOMEPAGE=		http://www.cs.virginia.edu/~nr/noweb/
 COMMENT=		Simple, extensible literate-programming tool
 
 DEPENDS=		icon>=9.3:../../lang/icon
-
-ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-i386 NetBSD-*-sparc
 
 .include "../../mk/bsd.prefs.mk"
 
