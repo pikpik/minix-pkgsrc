@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2002/02/18 15:14:39 seb Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/21 23:46:56 jlam Exp $
 #
 
-DISTNAME=	fsh-1.1
+DISTNAME=	fsh-1.2
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/unix/fsh/ \
 		http://www.lysator.liu.se/fsh/
