@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/02/03 01:52:19 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19 2001/02/17 18:24:46 wiz Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/17 18:47:53 max Exp
 #
 
@@ -10,6 +10,9 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
 COMMENT=	visual mail, user and print face server
+
+LICENSE=	limited-distribution
+RESTRICTED=	"Distribution not allowed if money exchanged"
 
 WRKSRC=		${WRKDIR}/faces
 
