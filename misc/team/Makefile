@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/05/22 13:52:12 frueauf Exp $
+# $NetBSD: Makefile,v 1.11 1998/06/20 09:20:39 agc Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/04/30 03:18:06 asami Exp
 #
 
@@ -7,6 +7,8 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	packages@netbsd.org
+
+MIRROR_DISTFILE= no
 
 .include "../../mk/bsd.prefs.mk"
 

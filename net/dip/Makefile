@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/05/09 15:24:44 frueauf Exp $
+# $NetBSD: Makefile,v 1.5 1998/06/20 09:20:40 agc Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/04/30 03:18:07 asami Exp
 #
 
@@ -12,6 +12,7 @@ EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	packages@netbsd.org
 
+MIRROR_DISTFILE= no
 NO_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"

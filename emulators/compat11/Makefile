@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/24 09:20:34 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/05/08 21:33:21 tron Exp $
 #
 
 DISTNAME=	compat11
@@ -12,6 +12,7 @@ DEPENDS+=	compat12:../../emulators/compat12
 
 ONLY_FOR_ARCHS=	amiga atari hp300 i386 mac68k mvme68k pc532 sparc sun3
 
+MIRROR_DISTFILE= no
 HAS_CONFIGURE=	yes
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/usr/lib
