@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2001/01/29 04:33:01 jtb Exp $
+# $NetBSD: Makefile,v 1.112 2001/02/01 04:37:34 jtb Exp $
 #
 
     SUBDIR += CompuPic
@@ -29,6 +29,7 @@
     SUBDIR += freetype2
     SUBDIR += fujiplay
     SUBDIR += fxtv
+    SUBDIR += g2
     SUBDIR += g3d
     SUBDIR += gd
     SUBDIR += gdk-pixbuf
