@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9.2.1 2002/07/01 17:45:12 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/08/25 21:51:31 jlam Exp $
 
 DISTNAME=		enlightenment-0.16.4
 PKGREVISION=		1
@@ -11,6 +11,7 @@ COMMENT=		Window manager for X
 
 USE_BUILDLINK2=		yes
 USE_X11BASE=		yes
+USE_PKGLOCALEDIR=	yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-fsstd
