@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.108 2004/02/02 10:26:42 jlam Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.109 2004/02/04 01:13:04 jlam Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -893,6 +893,7 @@ ${_BLNK_FAKE_LA}: ${.CURDIR}/../../mk/buildlink2/fake-la
 		-e "s|@LIBTOOL@|${BUILDLINK_LIBTOOL:Q}|g"		\
 		-e "s|@MKDIR@|${MKDIR:Q}|g"				\
 		-e "s|@MV@|${MV:Q}|g"					\
+		-e "s|@PATH@|${PATH:Q}|g"				\
 		-e "s|@RM@|${RM:Q}|g"					\
 		-e "s|@SED@|${SED:Q}|g"					\
 		-e "s|@TEST@|${TEST:Q}|g"				\
