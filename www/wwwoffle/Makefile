@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/01/25 02:48:11 fredb Exp $
+# $NetBSD: Makefile,v 1.14 2000/02/16 00:24:39 itohy Exp $
 
 DISTNAME=	wwwoffle-2.5c
 CATEGORIES=	www
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gedanken.demon.co.uk/wwwoffle/
-
-DEPENDS+=	htdig>=3.1.3:../../www/htdig
 
 USE_GMAKE=	yes
 NO_CONFIGURE=	yes
