@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.524 2004/08/15 00:46:58 schmonz Exp $
+# $NetBSD: Makefile,v 1.525 2004/08/15 14:47:37 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -131,6 +131,7 @@ SUBDIR+=	gdb
 SUBDIR+=	gdb6
 SUBDIR+=	gdbada
 SUBDIR+=	gettext
+SUBDIR+=	generate
 SUBDIR+=	gettext-lib
 SUBDIR+=	gettext-m4
 SUBDIR+=	giblib
@@ -415,6 +416,7 @@ SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
 SUBDIR+=	py-distutils
 SUBDIR+=	py-expect
+SUBDIR+=	py-generate
 SUBDIR+=	py-idle
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
