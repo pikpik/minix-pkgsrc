@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/28 17:18:21 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2000/05/10 12:04:54 tron Exp $
 #
 
 DISTNAME=	qt-x11-2.1.0
@@ -24,7 +24,7 @@ USE_LIBTOOL=		yes
 CONFIGURE_ENV+=		QTDIR=${WRKSRC}
 CONFIGURE_ARGS+=	-static -sm -system-zlib \
 			-system-libpng -system-jpeg \
-			-I${LOCALBASE}/include -L${LOCALBASE}/lib \
+			-I${LOCALBASE}/include -L${LOCALBASE}/lib
 
 MAKE_ENV+=	QTDIR=${WRKSRC}
 ALL_TARGET=	src
