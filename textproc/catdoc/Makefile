@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/22 09:10:24 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/08/08 12:35:42 frueauf Exp $
 #
 
 DISTNAME=	catdoc-0.35
@@ -14,6 +14,8 @@ DEPENDS=	tk-8.0p2:../../x11/tk80
 .ifdef MANZ
 MANCOMPRESSED=	yes
 .endif
+
+CFLAGS+=	-Dunix
 
 post-install:
 	${SED} -e 's|@PREFIX@|${PREFIX}|g' < ${WRKSRC}/wordview \
