@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.48 2003/04/15 05:29:47 grant Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.49 2003/06/06 17:13:31 drochner Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -10,6 +10,10 @@ CHOWN?=		/usr/sbin/chown
 CHGRP?=		/usr/bin/chgrp
 CMP?=		/usr/bin/cmp
 CP?=		/bin/cp
+# Needed for 1.6.1 and earlier due to rpcgen bugs and paths
+.if defined(CPP) && ${CPP} == "cpp"
+CPP=		/usr/bin/cpp
+.endif
 CUT?=		/usr/bin/cut
 DATE?=		/bin/date
 DC?=		/usr/bin/dc
