@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/01/02 04:22:31 tsarna Exp $
+# $NetBSD: Makefile,v 1.8 2000/10/22 20:01:50 tsarna Exp $
 #
 
 DISTNAME=	html-2.0
@@ -17,7 +17,7 @@ NO_WRKSUBDIR=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
-HTMLDIR=	share/doc/python-html
+HTMLDIR=	share/doc/html/python
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
 do-install:
