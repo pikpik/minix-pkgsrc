@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/02/14 20:53:42 jmmv Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/05/02 11:57:00 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gnome-desktop.
 #
@@ -25,6 +25,7 @@ BUILDLINK_FILES.gnome-desktop+=	lib/libgnome-desktop-2.*
 .include "../../graphics/gnome2-pixmaps/buildlink2.mk"
 .include "../../sysutils/gnome-vfs2/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
+.include "../../x11/startup-notification/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gnome-desktop-buildlink
 
