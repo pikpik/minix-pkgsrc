@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2001/08/23 04:26:53 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/08/23 19:19:40 jlam Exp $
 
 DISTNAME=	fxtv-1.03
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz
