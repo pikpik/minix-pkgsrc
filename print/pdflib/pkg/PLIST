@@ -1,7 +1,12 @@
-@comment $NetBSD: PLIST,v 1.6 2001/01/04 15:10:54 agc Exp $
+@comment $NetBSD: PLIST,v 1.7 2001/01/15 18:09:03 drochner Exp $
+bin/pdflib-config
+include/pdflib.h
 lib/libpdf.a
 lib/libpdf.la
 lib/libpdf.so
-lib/libpdf.so.1
-lib/libpdf.so.1.1
-include/pdflib.h
+lib/libpdf.so.2
+lib/libpdf.so.2.1
+share/doc/pdflib/PDFlib-license.pdf
+share/doc/pdflib/PDFlib-manual.pdf
+share/doc/pdflib/aladdin-license.pdf
+@dirrm share/doc/pdflib
