@@ -26,9 +26,13 @@ LOCALSTATEDIR=	/var/gnome
 
 CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR} \
 			--with-glib-prefix=${LOCALBASE}
-CPPFLAGS=		-I${LOCALBASE}/include
+CPPFLAGS=		-I${LOCALBASE}/include -I${WRKDIR}
 CONFIGURE_ENV+=		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
 			LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
 			CPPFLAGS="${CPPFLAGS}"
+
+pre-configure:
+	@${MKDIR} ${WRKDIR}/sys
+	@${LN} -s /usr/include/soundcard.h ${WRKDIR}/sys
 
 .include "../../mk/bsd.pkg.mk"
