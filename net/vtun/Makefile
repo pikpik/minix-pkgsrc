@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2003/08/30 22:51:29 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2003/10/27 16:55:32 hubertf Exp $
 
 DISTNAME=	vtun-2.6
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/vtun
 CATEGORIES=	net
 MASTER_SITES=	http://vtun.sourceforge.net/
@@ -49,6 +49,8 @@ post-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vtund ${PREFIX}/sbin
 	${INSTALL_DATA_DIR} ${DOCDIR} ${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.Crypto ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.Setup ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.Shaper ${DOCDIR}
 	${INSTALL_DATA} ${WRKDIR}/vtund.conf ${EGDIR}/vtund.conf
