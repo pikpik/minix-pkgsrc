@@ -1,5 +1,4 @@
-#! /bin/sh
-#	$NetBSD$
+# $NetBSD: INSTALL,v 1.1 2002/05/31 12:59:58 seb Exp $
 
 case "$2" in
 POST-INSTALL)

@@ -1,0 +1,16 @@
+# $NetBSD: DEINSTALL,v 1.2 2003/01/21 06:02:41 lukem Exp $
+
+MYSQL_DATADIR="@MYSQL_DATADIR@"
+
+case ${STAGE} in
+POST-DEINSTALL)
+	${CAT} << EOF
+===========================================================================
+If you won't be using ${PKGNAME} any longer, you may want
+to remove the following directories:
+
+	${MYSQL_DATADIR}
+===========================================================================
+EOF
+	;;
+esac

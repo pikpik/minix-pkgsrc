@@ -1,23 +1,9 @@
-#!/bin/sh
-#
-# $NetBSD: DEINSTALL,v 1.1.1.1 2003/02/24 15:29:25 kei Exp $
+# $NetBSD: DEINSTALL,v 1.2 2003/03/15 08:26:35 kei Exp $
 
 TEXMF=@PREFIX@/share/texmf
 
 case ${STAGE} in
-PRE-DEINSTALL)
-	;;
-
-DEINSTALL)
-	;;
-
 POST-DEINSTALL)
 	@PREFIX@/bin/mktexlsr
 	;;
-
-*)
-	${ECHO} "Unexpected argument: ${STAGE}"
-	exit 1
-	;;
-
 esac
