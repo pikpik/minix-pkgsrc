@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.577 2000/09/19 19:29:11 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.578 2000/09/20 19:11:34 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -2348,6 +2348,7 @@ makesum: fetch
 	done
 .endif
 
+mps: makepatchsum
 .if !target(makepatchsum)
 makepatchsum:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
