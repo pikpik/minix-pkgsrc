@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 1999/11/24 20:31:27 rh Exp $
+# $NetBSD: Makefile,v 1.65 1999/11/25 08:18:09 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -32,6 +32,7 @@
 #    SUBDIR += giftool
     SUBDIR += giftrans
     SUBDIR += gimp
+#   SUBDIR += gimp-current		# Not built by default
     SUBDIR += giram
     SUBDIR += gnuplot
     SUBDIR += gqview
