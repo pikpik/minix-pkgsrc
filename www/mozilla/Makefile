@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.119 2003/05/22 23:41:48 taya Exp $
+# $NetBSD: Makefile,v 1.120 2003/05/29 23:14:11 grant Exp $
 
 MOZILLA=	mozilla
 MOZILLA_BIN=	mozilla-bin
-MOZ_VER=	1.3.1
+MOZ_VER=	1.4
 EXTRACT_SUFX=	.tar.bz2
 
 COMMENT=	Full featured gecko-based browser
