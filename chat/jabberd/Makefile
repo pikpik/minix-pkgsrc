@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/21 05:38:29 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/26 02:27:35 wiz Exp $
 #
 
 DISTNAME=		jabber-1.4.2
@@ -12,7 +12,7 @@ MAINTAINER=		xtraeme@NetBSD.org
 HOMEPAGE=		http://jabberd.jabberstudio.org/1.4/
 COMMENT=		Instant messaging server
 
-CONFLICTS=		jabberd2-[0-9]*:../../wip/jabberd2
+CONFLICTS=		jabberd2-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
