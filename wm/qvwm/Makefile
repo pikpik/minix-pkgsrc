@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/10 14:12:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:23 tv Exp $
 #
 
 DISTNAME=	qvwm-1.1.12
@@ -14,7 +14,7 @@ USE_X11=	yes
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
 USE_BUILDLINK3=	yes
-USE_GCC_SHLIB=	yes
+USE_LANGUAGES=	c++
 
 post-install:
 	${MV} ${PREFIX}/man/man1/qvwm.1x ${PREFIX}/man/man1/qvwm.1
