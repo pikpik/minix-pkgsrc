@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2001/11/14 14:47:54 agc Exp $
+# $NetBSD: Makefile,v 1.16 2001/11/22 04:43:23 hubertf Exp $
 #
 
-DISTNAME=	sketch-0.6.10
+DISTNAME=	sketch-0.6.12
 CATEGORIES=	graphics
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=sketch/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	uebayasi@soum.co.jp
 HOMEPAGE=	http://sketch.sourceforge.net/
 COMMENT=	Interactive drawing program
 
