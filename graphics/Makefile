@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.269 2004/01/13 11:26:15 jmmv Exp $
+# $NetBSD: Makefile,v 1.270 2004/01/22 12:41:11 xtraeme Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -148,6 +148,7 @@ SUBDIR+=	libgnomecanvas
 SUBDIR+=	libmpeg2
 SUBDIR+=	librsvg
 SUBDIR+=	librsvg2
+SUBDIR+=	librsvg2-gtk2
 SUBDIR+=	libungif
 SUBDIR+=	libvideogfx
 SUBDIR+=	libwmf
@@ -239,6 +240,7 @@ SUBDIR+=	sketch
 SUBDIR+=	smpeg-xmms
 SUBDIR+=	sodipodi
 SUBDIR+=	swfdec
+SUBDIR+=	swfdec-gtk2
 SUBDIR+=	tcm
 SUBDIR+=	tgif
 SUBDIR+=	tiff
