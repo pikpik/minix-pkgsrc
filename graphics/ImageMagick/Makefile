@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 1998/03/28 21:55:48 tron Exp $
+# $NetBSD: Makefile,v 1.16 1998/04/15 10:38:25 agc Exp $
 #
 
-DISTNAME=	ImageMagick-4.0.3
+DISTNAME=	ImageMagick-4.0.5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
