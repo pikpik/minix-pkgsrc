@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2004/06/20 21:52:08 xtraeme Exp $
+# $NetBSD: Makefile,v 1.52 2004/06/21 16:20:14 martti Exp $
 
 DISTNAME=	mrtg-2.10.14
 CATEGORIES=	net
@@ -10,7 +10,6 @@ MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		ftp://mrtg.pop-mg.com.br/pub/mrtg/pub/ \
 		ftp://ftp.130th.net/pub/mirror/mrtg/ \
 		ftp://ftp.exobit.org/pub/monitoring/mrtg/ \
-		ftp://ftp.ou.edu/mirrors/mrtg/ \
 		ftp://ftp.azc.uam.mx/mirrors/mrtg/ \
 		ftp://ftp2.cscnet.cz/pub/mirror/mrtg/ \
 		ftp://ftp.unipi.it/pub/mirror/mrtg/ \
