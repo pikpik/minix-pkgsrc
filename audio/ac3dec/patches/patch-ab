@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- output_linux.c.orig	Wed Jan  5 20:07:35 2000
++++ output_linux.c	Wed Jan  5 20:08:30 2000
+@@ -33,7 +33,7 @@
+ #include <unistd.h>
+ #include <fcntl.h>
+ #include <math.h>
+-#if defined(__OpenBSD__)
++#if defined(__NetBSD__) || defined (__OpenBSD__)
+ #include <soundcard.h>
+ #else
+ #include <sys/soundcard.h>
