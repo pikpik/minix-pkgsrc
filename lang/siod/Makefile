@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/06/22 14:00:19 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:33 agc Exp $
 
 DISTNAME=		siod
 PKGNAME=		siod-3.0
@@ -10,12 +10,13 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://people.delphi.com/gjc/siod.html
 COMMENT=		Small-footprint implementation of the Scheme programming language
 
-ONLY_FOR_PLATFORM=	SunOS-*-*	# untested on NetBSD
+DEPENDS+=		sdbm-[0-9]*:../../databases/sdbm
 
 WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile
 ALL_TARGET=		${OPSYS}
 MAKE_ENV+=		CC="${CC}"
+CPPFLAGS+=		-Dunix=1
 
 .include "../../mk/bsd.prefs.mk"
 
