@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2002/06/15 21:33:50 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2002/06/25 06:54:43 tron Exp $
 #
 
 DISTNAME=	SDL-1.2.3
@@ -9,7 +9,6 @@ MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://www.libsdl.org/
 COMMENT=	Simple DirectMedia Layer, a cross-platform multimedia library
 
-BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
 BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 
 USE_BUILDLINK_ONLY=	YES
@@ -48,9 +47,6 @@ CONFIGURE_ENV+=		SYSTEM_LIBS="${LDFLAGS}"
 
 pre-patch:
 	cd ${WRKSRC} && ${MKDIR} src/audio/netbsd
-
-pre-configure:
-	cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf --force --foreign
 
 post-configure:
 	cd ${WRKSRC}/src/audio && ${CP} *.[ch] netbsd/
