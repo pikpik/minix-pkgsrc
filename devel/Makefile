@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.137 2000/08/30 06:20:16 rh Exp $
+# $NetBSD: Makefile,v 1.138 2000/09/04 21:47:34 kim Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -106,6 +106,7 @@
     SUBDIR += p5-Term-ReadKey
     SUBDIR += p5-Time-HiRes
     SUBDIR += p5-TimeDate
+    SUBDIR += p5-perl-headers
     SUBDIR += patch
     SUBDIR += pccts
     SUBDIR += pcre
