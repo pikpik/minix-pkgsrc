@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/04 14:27:51 jmmv Exp $
 #
 
-DISTNAME=	leafpad-0.7.5
+DISTNAME=	leafpad-0.7.7
 CATEGORIES=	editors gnome
 MASTER_SITES=	http://tarot.freeshell.org/leafpad/
 
