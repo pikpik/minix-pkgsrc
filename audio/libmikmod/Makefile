@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2003/08/09 10:29:55 seb Exp $
+# $NetBSD: Makefile,v 1.22 2003/09/14 18:00:30 jmmv Exp $
 
 DISTNAME=		libmikmod-3.1.10
 CATEGORIES=		audio
-MASTER_SITES=		http://www.mikmod.org/files/libmikmod/
+MASTER_SITES=		http://www.ibiblio.org/pub/Linux/apps/sound/libs/
 
 MAINTAINER=		kuebart@mathematik.uni-ulm.de
-HOMEPAGE=		http://www.mikmod.org/
+HOMEPAGE=		http://freshmeat.net/projects/libmikmod/
 COMMENT=		MikMod Sound Library
 
 USE_GMAKE=		# defined
