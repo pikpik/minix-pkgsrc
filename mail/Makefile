@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/06/26 23:45:11 frueauf Exp $
+# $NetBSD: Makefile,v 1.16 1998/07/19 13:12:41 tron Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
@@ -11,7 +11,7 @@
     SUBDIR += exmh
     SUBDIR += faces
     SUBDIR += fetchmail
-#    SUBDIR += imap-uw
+    SUBDIR += imap-uw
 #    SUBDIR += mailagent
 #    SUBDIR += majorcool
 #    SUBDIR += majordomo
