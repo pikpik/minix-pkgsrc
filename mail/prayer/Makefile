@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/11/12 03:39:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/24 13:55:30 grant Exp $
 #
 
 DISTNAME=	prayer-1.0.8
@@ -34,7 +34,9 @@ pre-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 
 post-install:
-	${FIND} -d ${PREFIX}/share/prayer -name CVS -type d -exec ${RM} -r {} \;
+	#${FIND} -d ${PREFIX}/share/prayer -name CVS -type d -exec ${RM} -r {} \;
+	${FIND} ${PREFIX}/share/prayer -name CVS -type d -print | ${SORT} -r | \
+		${XARGS} ${RM} -r
 
 .include "../../databases/db4/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
