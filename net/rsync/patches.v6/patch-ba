@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.in-	Thu Jul  8 00:40:53 1999
++++ configure.in	Thu Jul  8 00:41:28 1999
+@@ -76,8 +76,6 @@
+ yes
+ #endif],
+ 				[ipv6type=$i;
+-				ipv6lib=inet6;
+-				ipv6libdir=/usr/local/v6/lib;
+ 				CFLAGS="-DINET6 $CFLAGS"])
+ 			;;
+ 		linux)
