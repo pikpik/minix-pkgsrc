@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.5065 2004/03/03 04:17:53 epg Exp $
+$NetBSD: CHANGES,v 1.5066 2004/03/03 10:32:16 recht Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -1127,3 +1127,4 @@ Changes to the packages collection and infrastructure in 2004:
 	Added bittorrent-gui-3.3 [recht 2004-03-03]
 	Updated py-soappy to 0.11.3 [recht 2004-03-03]
 	Updated py-google to 0.6 [recht 2004-03-03]
+	Updated xpdf to 3.00 [adam 2004-03-03]
