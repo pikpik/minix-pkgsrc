@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/23 21:50:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/26 02:27:40 wiz Exp $
 #
 
 .include "../../graphics/3DKit/Makefile.common"
@@ -12,8 +12,8 @@ DISTINFO_FILE=	${.CURDIR}/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/GlutKit
 
-.include "../../graphics/RenderKit/buildlink2.mk"
-.include "../../graphics/glut/buildlink2.mk"
-.include "../../graphics/glu/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../graphics/RenderKit/buildlink3.mk"
+.include "../../graphics/glut/buildlink3.mk"
+.include "../../graphics/glu/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
