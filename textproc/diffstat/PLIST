@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/diffstat
+man/man1/diffstat.1
