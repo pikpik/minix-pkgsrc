@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/02/09 12:26:53 markd Exp $
+# $NetBSD: Makefile,v 1.12 2004/03/26 02:27:55 wiz Exp $
 
 DISTNAME=	kdirstat-2.4.0
 PKGREVISION=	1
@@ -10,10 +10,10 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://kdirstat.sourceforge.net/
 COMMENT= 	A graphical disk usage utility
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          yes
 
-.include "../../meta-pkgs/kde3/buildlink2.mk"
-.include "../../x11/kdelibs3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/kde3.mk"
+.include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
