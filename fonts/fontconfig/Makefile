@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2004/04/27 15:09:10 adam Exp $
+# $NetBSD: Makefile,v 1.31 2004/04/28 14:33:58 dillo Exp $
 #
 
-DISTNAME=	fontconfig-2.2.2
+DISTNAME=	fontconfig-2.2.95
 CATEGORIES=	fonts gnome
 MASTER_SITES=	http://freedesktop.org/~fontconfig/release/
 
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--with-expat-includes=${BUILDLINK_PREFIX.expat}/include
 CONFIGURE_ARGS+=	--with-expat-lib=${BUILDLINK_PREFIX.expat}/lib
 CONFIGURE_ARGS+=	--with-confdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-x
-CONFIGURE_ARGS+=	--disable-docs
+CONFIGURE_ARGS+=	--enable-docs
 
 FONT_PATH=	${X11PREFIX}/lib/X11/fonts/TTF,${X11PREFIX}/lib/X11/fonts/Type1
 .if ${X11PREFIX} != ${X11BASE}
