@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/12 10:08:25 zuntum Exp $
 #
 
 DISTNAME=	loco-0.32
 CATEGORIES=	misc
 MASTER_SITES=	http://zjuul.net/~jules/loco/
 
-MAINTAINER=	zuntum@eik.pl
+MAINTAINER=	zuntum@netbsd.org
 HOMEPAGE=	http://zjuul.net/~jules/loco/
 COMMENT=	Colorize file or standard input and print on the standard output
 
