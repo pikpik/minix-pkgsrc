@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- include/btorder.h.orig	Sun Jul 19 19:28:10 1998
 +++ include/btorder.h	Sat Nov  7 14:40:40 1998
 @@ -46,7 +46,7 @@
