@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ltmain.sh.orig	Sun Oct 18 11:59:06 1998
 +++ ltmain.sh	Sun Oct 18 11:58:57 1998
 @@ -144,6 +144,8 @@
