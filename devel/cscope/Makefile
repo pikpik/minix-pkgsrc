@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/05/19 11:03:32 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/05/30 20:31:45 dmcmahill Exp $
 
 DISTNAME=	cscope-15.0bl2
 PKGNAME=	cscope-15.0.2
@@ -20,7 +20,7 @@ CURSES_GOOD?=
 .endfor
 
 .if !defined(CURSES_GOOD)
-DEPEND+=	ncurses>=5.0:../../devel/ncurses
+DEPENDS+=	ncurses>=5.0:../../devel/ncurses
 
 CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
 
