@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/08/27 13:01:35 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:11 tv Exp $
 #
 
 DISTNAME=	opencdk-0.5.5
@@ -16,6 +16,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
+
+NOT_FOR_COMPILER=	xlc
 
 REPLACE_PERL=		doc/gdoc
 

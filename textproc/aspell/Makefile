@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/10/07 16:36:47 tv Exp $
+# $NetBSD: Makefile,v 1.26 2004/11/13 22:04:53 jlam Exp $
 #
 
 DISTNAME=		aspell-0.50.5
@@ -17,6 +17,8 @@ GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
+
+NOT_FOR_COMPILER+=	xlc
 
 CONFIGURE_ARGS+=	--enable-doc-dir=${PREFIX}/share/doc/aspell
 CONFIGURE_ARGS+=	--enable-curses=ncurses
