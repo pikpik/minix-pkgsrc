@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/19 10:59:28 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/26 02:27:34 wiz Exp $
 #
 
 DISTNAME=	libcomprex-0.3.2
@@ -14,6 +14,8 @@ USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+
+CONFIGURE_ENV+=		ac_cv_lib_curl_curl_formparse=yes
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
