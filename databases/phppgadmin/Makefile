@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/21 06:46:56 snj Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/26 02:27:36 wiz Exp $
 
 DISTNAME=	phpPgAdmin_2-4-2
 PKGNAME=	phppgadmin-2.4.2
@@ -15,6 +15,7 @@ DEPENDS+=	php-pgsql>=4.1.2:../../databases/php4-pgsql
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_2-4-2//}
 NO_BUILD=	YES
+NO_BUILDLINK=	YES
 
 DOC_FILES=	BUGS ChangeLog Documentation.html \
 		INSTALL README TODO
