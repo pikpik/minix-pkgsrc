@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/08/21 15:16:00 fredb Exp $
+# $NetBSD: Makefile,v 1.17 2000/08/23 23:14:28 tron Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/03/11 03:08:12 vanilla Exp
 # 
 
@@ -23,6 +23,8 @@ GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+=--enable-japanese --enable-chinese
 CONFIGURE_ARGS+=--with-freetype-includes=${LOCALBASE}/include
+CONFIGURE_ENV+=	CXXFLAGS=${CXXFLAGS}
+MAKE_ENV+=	SED=${SED} ECHO=${ECHO}
 
 post-install:
 	${SED} 's|@@LOCALBASE@@|${LOCALBASE}|' \
