@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/23 23:14:25 tron Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 15:11:02 wiz Exp $
 #
 
 DISTNAME=		xgalaga-2.0.34
@@ -14,6 +14,8 @@ USE_XPM=		YES
 HAS_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--prefix=${X11PREFIX}/share/xgalaga
 CONFIGURE_ARGS+=	--exec-prefix=${X11PREFIX}/bin
+CFLAGS+=		-I${X11PREFIX}/include
+CONFIGURE_ENV+=		CPPFLAGS="${CFLAGS}"
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/README ${X11PREFIX}/share/xgalaga/README
