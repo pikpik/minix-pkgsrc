@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/04 16:10:15 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/05 11:43:22 jlam Exp $
 #
 
 DISTNAME=	pclock-0.13.1
 CATEGORIES=	time x11
-MASTER_SITES=	http://bnt.kourakos.com/~awk/programs/
+MASTER_SITES=	http://bnt.kourakos.com/~awk/programs/ \
+		ftp://ftp.kourakos.com/pub/pclock/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	salo@Xtrmntr.org
-HOMEPAGE=	http://www.kourakos.com/~awk/programs/pclock/
+MAINTAINER=	salo@netbsd.org
+HOMEPAGE=	http://bnt.kourakos.com/~awk/programs/pclock/
 COMMENT=	Simple analog clock designed for WindowMaker
 
 USE_BUILDLINK2=		YES
