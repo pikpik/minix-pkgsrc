@@ -1,8 +1,8 @@
 $NetBSD$
 
---- authlib/configure.in.orig	Thu Dec 27 17:26:43 2001
+--- authlib/configure.in.orig	Sat Oct 25 06:25:28 2003
 +++ authlib/configure.in
-@@ -411,8 +411,6 @@
+@@ -415,8 +415,6 @@ then
  	STATIC_LIST="authldap_info $STATIC_LIST"
  	LIBAUTH="$LIBAUTH libauth-authldap.a"
  	echo authldaprc.dist >>authconfiglist
@@ -11,7 +11,7 @@ $NetBSD$
  fi
  AC_SUBST(LDAPLIBS)
  
-@@ -670,7 +668,7 @@
+@@ -699,7 +697,7 @@ AC_PATH_PROGS(MYSQL_CONFIG, mysql_config
  if test -x "$MYSQL_CONFIG"
  then
  	MYSQL_CFLAGS="`$MYSQL_CONFIG --cflags`"
