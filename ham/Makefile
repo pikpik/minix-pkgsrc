@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/01/31 11:35:13 wulf Exp $
+# $NetBSD: Makefile,v 1.3 2000/05/15 11:00:46 wulf Exp $
 #
-    SUBDIR += dpbox
     SUBDIR += 7plus
+    SUBDIR += dpbox
     SUBDIR += tfkiss
     SUBDIR += tnt
 
