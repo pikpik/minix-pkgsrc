@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/20 12:20:04 agc Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/26 15:26:05 adam Exp $
 #
 
 DISTNAME=	blas
@@ -13,6 +13,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.netlib.org/blas/
 COMMENT=	Basic Linear Algebra Subprograms (Fortran)
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=			${WRKDIR}
 USE_BUILDLINK3=		YES
