@@ -1,8 +1,8 @@
 $NetBSD$
 
---- conf/configure.in.TclCL.orig	Sat Apr 13 00:29:31 2002
+--- conf/configure.in.TclCL.orig	2005-01-24 17:34:24.000000000 -0600
 +++ conf/configure.in.TclCL
-@@ -59,7 +59,7 @@ TCLCL_PROG_PLACES="\
+@@ -61,7 +61,7 @@ TCLCL_PROG_PLACES="\
                  /usr/src/local/Tcl \
                  /usr/src/local/Tcl-1.0 \
                  "
