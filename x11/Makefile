@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2000/08/04 03:58:10 jlam Exp $
+# $NetBSD: Makefile,v 1.171 2000/08/24 14:02:58 jwise Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -87,6 +87,7 @@
     SUBDIR += swisswatch
     SUBDIR += titrax
     SUBDIR += tix
+#    SUBDIR += tk		# tk-8.3.2; will be enabled when tcl-based packages are updated
     SUBDIR += tk80
     SUBDIR += tkcron
     SUBDIR += tkinfo
