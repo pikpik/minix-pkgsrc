@@ -1,4 +1,4 @@
-/*	$NetBSD: err.h,v 1.1 2003/07/31 22:40:27 jschauma Exp $	*/
+/*	$NetBSD: err.h,v 1.1 2003/09/03 13:35:50 jlam Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993
@@ -41,8 +41,12 @@
 #ifndef HAVE_ERR
 void    err(int, const char *, ...);
 void    errx(int, const char *, ...);
+void	verr(int, const char *, va_list);
+void	verrx(int, const char *, va_list);
 void    warn(const char *, ...);
 void    warnx(const char *, ...);
+void	vwarn(const char *, va_list);
+void	vwarnx(const char *, va_list);
 #endif
 
 #endif /* !_ERR_H_ */
