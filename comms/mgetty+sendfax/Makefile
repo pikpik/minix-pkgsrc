@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/08/30 22:51:13 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2003/09/20 16:39:33 fredb Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/07/16 06:44:37 vanilla Exp
 #
 
@@ -41,7 +41,7 @@ CONF_FILES+=		${_EXAMPLES_DIR}/${cfg} ${PKG_SYSCONFDIR}/${cfg}
 .endif
 
 PKG_GROUPS=		dialer
-PKG_USERS=		fax:dialer 
+PKG_USERS=		fax:dialer
 
 _EXAMPLES_DIR=		${PREFIX}/share/examples/mgetty+sendfax
 MAKE_DIRS_PERMS+=	/var/spool/fax ${ROOT_USER} ${ROOT_GROUP} 755

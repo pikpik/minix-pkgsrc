@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/09/30 14:43:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2003/09/30 14:57:25 jmmv Exp $
 #
 
 DISTNAME=	icecast-1.3.12
@@ -36,7 +36,7 @@ EGFILES=		groups.aut mounts.aut users.aut icecast.conf
 CONF_FILES+=		${EGDIR}/${f}.dist ${PKG_SYSCONFDIR}/${f}
 .endfor
 .undef f
-			
+
 .include "../../devel/readline/buildlink2.mk"
 .include "../../lang/python/application.mk"
 .include "../../security/tcp_wrappers/buildlink2.mk"
