@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/07/25 04:55:41 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/12/06 17:14:13 jlam Exp $
 #
 
 DISTNAME=		libungif-4.1.0
@@ -34,7 +34,8 @@ pre-configure:
 	cd ${WRKSRC} && autoreconf
 
 post-install:
-	cd ${PREFIX}; for f in libungif.a libungif.so.5.0; do \
+	cd ${PREFIX}; \
+	for f in libungif.a libungif.so libungif.so.5 libungif.so.5.0; do \
 		g=`echo $$f | ${SED} "s,libungif,libgif,"`; \
 		${LN} -sf $$f ${PREFIX}/lib/$$g; \
 	done
