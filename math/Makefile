@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2003/12/24 10:58:47 recht Exp $
+# $NetBSD: Makefile,v 1.109 2004/03/05 14:47:38 adam Exp $
 #
 
 COMMENT=	Mathematics
@@ -46,6 +46,7 @@ SUBDIR+=	guppi
 SUBDIR+=	lapack
 SUBDIR+=	libffm
 SUBDIR+=	linpack
+SUBDIR+=	mathomatic
 SUBDIR+=	mcsim
 SUBDIR+=	meschach
 SUBDIR+=	metis
