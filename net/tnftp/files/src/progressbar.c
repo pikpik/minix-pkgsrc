@@ -1,4 +1,4 @@
-/*	$NetBSD: progressbar.c,v 1.3 2003/07/31 06:18:44 lukem Exp $	*/
+/*	$NetBSD: progressbar.c,v 1.1 2004/03/11 13:01:01 grant Exp $	*/
 
 /*-
  * Copyright (c) 1997-2003 The NetBSD Foundation, Inc.
@@ -39,7 +39,7 @@
 #if 0
 #include <sys/cdefs.h>
 #ifndef lint
-__RCSID("$NetBSD: progressbar.c,v 1.3 2003/07/31 06:18:44 lukem Exp $");
+__RCSID("$NetBSD: progressbar.c,v 1.1 2004/03/11 13:01:01 grant Exp $");
 #endif /* not lint */
 #endif
 
@@ -61,7 +61,7 @@ foregroundproc(void)
 	static pid_t pgrp = -1;
 
 	if (pgrp == -1)
-#if GETPGRP_VOID
+#if GETPGRP_VOID || defined(__OPENNT)
 		pgrp = getpgrp();
 #else /* ! GETPGRP_VOID */
 		pgrp = getpgrp(0);
