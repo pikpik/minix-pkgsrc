@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:14:40 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/11/27 00:33:32 martin Exp $
 
 DISTNAME=	fMSX24.tar
 PKGNAME=	fmsx-2.4
@@ -21,8 +21,8 @@ USE_X11=	yes
 
 .include "../../mk/bsd.prefs.mk"
 USE_SUN_AUDIO?=	YES
-DEFS=		-DFontDir=\"\\\"${PREFIX}/share/fmsx/\"\\\"
-DEFS+=		-DRomDir=\"\\\"${PREFIX}/share/fmsx/\"\\\"
+DEFS=		-DFontDir="\"${PREFIX}/share/fmsx/\""
+DEFS+=		-DRomDir="\"${PREFIX}/share/fmsx/\""
 DEFS+=		-DMITSHM -D${CUR_DEPTH} -DSOUND
 .if ${USE_SUN_AUDIO} == "YES"
 DEFS+=		-DSUN_AUDIO
