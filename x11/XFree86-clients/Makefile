@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/29 06:24:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/31 15:27:14 xtraeme Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		XFree86-clients-${XF_VER}
@@ -23,14 +23,14 @@ XINSTALL_MAN_DIRS=	programs
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "Linux"
-.include "../../security/PAM/buildlink2.mk"
+.  include "../../security/PAM/buildlink2.mk"
 .endif
 
 post-configure:
 	@${MKDIR} ${WRKSRC}/exports/lib
 	@for l in fntstubs Xss FS fontenc Xau Xxf86vm Xxf86dga xkbfile \
-			Xxf86misc Xdmcp Xfontcache Xinerama Xfont; do \
-		${LN} -sf ${PREFIX}/lib/lib$${l}.a ${WRKSRC}/exports/lib/ ; \
+		Xxf86misc Xdmcp Xfontcache Xinerama Xfont; do \
+		${LN} -sf ${PREFIX}/lib/lib$${l}.a ${WRKSRC}/exports/lib/; \
 	done
 
 .include "../../fonts/Xft2/buildlink2.mk"
