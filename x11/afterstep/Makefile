@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/10/28 10:07:42 agc Exp $
+# $NetBSD: Makefile,v 1.13 2000/02/05 15:34:03 wiz Exp $
 
 DISTNAME=	AfterStep-1.6.10
 PKGNAME=	afterstep-1.6.10
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.afterstep.org/
 DEPENDS+=	asclock-1.0:../../x11/asclock
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	png-1.0.3:../../graphics/png
-DEPENDS+=	rplay-3.2.0b6:../../audio/rplay
+DEPENDS+=	rplay-3.2.*:../../audio/rplay
 DEPENDS+=	xli-1.16:../../graphics/xli
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
