@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.153 2003/04/18 15:41:38 mjl Exp $
+# $NetBSD: Makefile,v 1.154 2003/04/21 03:35:29 rh Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -48,6 +48,7 @@ SUBDIR+=	gperiodic
 SUBDIR+=	gpsd
 SUBDIR+=	gpsdrive
 SUBDIR+=	granulate
+SUBDIR+=	gstreamer
 SUBDIR+=	heyu
 SUBDIR+=	hitchhiker
 SUBDIR+=	ibutton-pdkit
