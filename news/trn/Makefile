@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 1999/08/18 09:08:10 agc Exp $
+# $NetBSD: Makefile,v 1.4 2000/02/16 18:47:15 wiz Exp $
 #
 
 DISTNAME=		trn4-test72
-PKGNAME=		trn-4.test72
+PKGNAME=		trn-4.72
 CATEGORIES=		news
 MASTER_SITES=		http://www.clari.net/~wayne/
 
