@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/12/18 06:04:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2003/12/21 10:17:30 xtraeme Exp $
 #
 
-DISTNAME=	gnutls-1.0.2
+DISTNAME=	gnutls-1.0.3
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/
 
