@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.182 2003/01/09 20:14:57 wiz Exp $
+# $NetBSD: Makefile,v 1.183 2003/01/10 19:25:32 jmmv Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -25,6 +25,7 @@ SUBDIR+=	dict-dictionaries
 SUBDIR+=	dict-server
 SUBDIR+=	diction
 SUBDIR+=	docbook
+SUBDIR+=	docbook-website
 SUBDIR+=	docbook-xml
 SUBDIR+=	docbook-xsl
 SUBDIR+=	dsssl-docbook-modular
