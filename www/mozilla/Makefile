@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/05/13 14:47:56 fvdl Exp $
+# $NetBSD: Makefile,v 1.9 1998/05/24 23:28:29 fvdl Exp $
 #
 
 DISTNAME=	unix-19980429
@@ -13,7 +13,7 @@ MAINTAINER=	fvdl@netbsd.org
 USE_X11=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 
 WRKSRC=		${WRKDIR}/19980429/mozilla
 

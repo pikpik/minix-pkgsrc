@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/03 12:50:16 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/05 10:59:57 frueauf Exp $
 # Id: Makefile,v 1.5 1998/02/19 09:43:16 obrien Exp
 #
 
@@ -14,7 +14,7 @@ MAINTAINER=     obrien@NUXI.com
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 MAN1=		ddd.1
 
 .include "../../mk/bsd.prefs.mk"
