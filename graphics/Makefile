@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.141 2001/07/07 11:33:21 rh Exp $
+# $NetBSD: Makefile,v 1.142 2001/07/08 01:49:45 garbled Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -99,6 +99,7 @@ SUBDIR+=	pgraf
 SUBDIR+=	photopc
 SUBDIR+=	pixmap
 SUBDIR+=	ploticus
+SUBDIR+=	ploticus-examples
 SUBDIR+=	plotmtv
 SUBDIR+=	plotutils
 SUBDIR+=	plplot
