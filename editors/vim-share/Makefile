@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/02/27 04:43:33 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/27 08:54:55 tron Exp $
 
 .include		"Makefile.common"
 
@@ -12,12 +12,12 @@ INSTALL_TARGET=		installvimhelp installhelplinks installmacros \
 			installtutor installtools
 
 post-configure:
-	cd ${WRKSRC}/ctags ; ${CONFIGURE_ENV} ${CONFIGURE_SCRIPT} \
+	cd ${WRKSRC}/ctags; ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} \
 			     ${CONFIGURE_ARGS}
 
 do-build:
-	cd ${WRKSRC}/ctags ; ${MAKE}
-	cd ${WRKSRC}/xxd   ; CC="${CC}" CFLAGS="${CFLAGS}" ${MAKE} \
+	cd ${WRKSRC}/ctags; ${MAKE}
+	cd ${WRKSRC}/xxd; CC="${CC}" CFLAGS="${CFLAGS}" ${MAKE} \
 		-f Makefile.unix
 
 .include "../../mk/bsd.pkg.mk"
