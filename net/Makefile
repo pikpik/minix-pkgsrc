@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2000/03/19 22:16:32 fredb Exp $
+# $NetBSD: Makefile,v 1.117 2000/03/30 15:00:12 rh Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -68,6 +68,7 @@
     SUBDIR += pload
     SUBDIR += poptop
     SUBDIR += ppp-mppe
+    SUBDIR += pptp
     SUBDIR += ra-pna-proxy
     SUBDIR += ra-rtsp-proxy
     SUBDIR += radius
