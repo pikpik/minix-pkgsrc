@@ -1,11 +1,11 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/30 02:11:06 jschauma Exp $
 bin/adjust
 bin/anomaly
 bin/build-icm
 bin/check
 bin/codon-usage
 bin/compare-lists
-bin/extract
+bin/glextract
 bin/generate
 bin/get-len
 bin/get-putative
