@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/09/27 22:06:23 cube Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:25 tv Exp $
 #
 
 DISTNAME=		libcfg+-0.6.2

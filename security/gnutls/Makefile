@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/09/06 20:39:13 danw Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:18:08 tv Exp $
 
 DISTNAME=	gnutls-1.0.20
 PKGREVISION=	2
@@ -41,5 +41,5 @@ post-install:
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "../../security/libtasn1/buildlink3.mk"
 .include "../../security/opencdk/buildlink3.mk"
-.include "../../devel/cfg+/buildlink3.mk"
+.include "../../devel/libcfg+/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2004/09/06 20:38:36 danw Exp $
 
 --- Rules.make.in.orig	Tue Feb 17 11:37:47 2004
 +++ Rules.make.in
