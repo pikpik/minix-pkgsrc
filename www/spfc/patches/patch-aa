@@ -1,3 +1,4 @@
+$NetBSD$
 --- Makefile.orig	Mon Apr 12 02:53:26 1999
 +++ Makefile	Sun Jan 23 23:16:31 2000
 @@ -64,7 +64,7 @@
