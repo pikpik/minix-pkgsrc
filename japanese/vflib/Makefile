@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/09/21 10:41:58 sakamoto Exp $
+# $NetBSD: Makefile,v 1.5 1999/12/17 11:09:58 agc Exp $
 # FreeBSD Id: Makefile,v 1.20 1999/05/03 01:58:33 steve Exp $
 
 DISTNAME=	VFlib2-2.24.2
@@ -20,7 +20,7 @@ PLIST_SUBST+=	VFLIB_VERSION=${VFLIB_VERSION} \
 USE_X11=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-freetype \
+CONFIGURE_ARGS+=--with-freetype="ttf -lintl" \
 		--with-freetype-includedir=${LOCALBASE}/include \
 		--with-freetype-libdir=${LOCALBASE}/lib
 MAKE_ENV+=	LOCAL_LDFLAGS="${LDFLAGS}"
