@@ -1,2 +1,3 @@
-$NetBSD: md5,v 1.1 1999/12/11 01:30:54 mellon Exp $
-MD5 (spruce-0.5.9.tar.gz) = a90599ac09e5811aae10e7e35dcd1ed3
+$NetBSD$
+
+MD5 (spruce-0.5.14.tar.gz) = 930b3a64a1b92e8b7426021527d7ee50
