@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/12/22 07:27:07 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/22 08:08:08 martti Exp $
 
 DISTNAME=	squirrelmail-1.4.3a
 PKGNAME=	ja-${DISTNAME}
@@ -63,8 +63,9 @@ post-patch:
 	done;								\
 
 pre-install:
-	${FIND} . \( -name "*.orig" -o -name '*.orig_dist' -o \
-			-name ".cvsignore" \) -print	\
+	cd ${WRKSRC}; \
+		${FIND} . \( -name "*.orig" -o -name '*.orig_dist' -o	\
+				-name ".cvsignore" \) -print		\
 		| ${XARGS} ${RM} -f
 	@${SED}	${FILES_SUBST_SED} ${FILESDIR}/squirrelmail.conf.dist	\
 		> ${WRKDIR}/squirrelmail.conf.dist
