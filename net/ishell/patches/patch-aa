@@ -54,6 +54,6 @@ $NetBSD$
 -	$(STRIP) ishd
 +install:
 +	${BSD_INSTALL_PROGRAM} ./ish ${PREFIX}/bin/ishell
-+	${BSD_INSTALL_PROGRAM} ./ish ${PREFIX}/sbin/ishelld
++	${BSD_INSTALL_PROGRAM} ./ishd ${PREFIX}/sbin/ishelld
  
 +.PHONY: all clean install
