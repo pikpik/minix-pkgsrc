@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2001/03/14 16:20:32 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2001/06/22 03:31:51 jlam Exp $
 
 DISTNAME=       imap-2000c
 PKGNAME=        imap-uw-2000.0.3nb1
 CATEGORIES=     mail
-MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
+MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/old/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	hubertf@netbsd.org
