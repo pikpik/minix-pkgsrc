@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/GNUstep/System/Library/Bundles/SSL.bundle/Resources/Info-gnustep.plist
+share/GNUstep/System/Library/Bundles/SSL.bundle/SSL
+share/GNUstep/System/Library/Bundles/SSL.bundle/stamp.make
+@dirrm share/GNUstep/System/Library/Bundles/SSL.bundle/Resources
+@dirrm share/GNUstep/System/Library/Bundles/SSL.bundle
