@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2004/02/19 01:49:18 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/12 23:15:01 salo Exp $
 #
 
-DISTNAME=	speex-1.0.3
+DISTNAME=	speex-1.0.4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speex.org/download/
 
@@ -12,12 +12,14 @@ COMMENT=	Open-source, patent-free voice codec
 USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+PKGCONFIG_OVERRIDE=	speex.pc.in
 
 # previous versions of the package were called Speex
 CONFLICTS=	Speex-[0-9]*
 
 CONFIGURE_ARGS+=	--with-ogg-dir="${BUILDLINK_PREFIX.libogg}"
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
 
 .include "../../mk/ossaudio.buildlink3.mk"
