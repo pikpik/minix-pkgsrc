@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.46 2003/07/25 11:29:33 dmcmahill Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.47 2003/08/08 08:51:01 grant Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@netbsd.org>
@@ -170,7 +170,7 @@ bulk-check-uptodate:
 			if [ -z "$$pkg" ]; then \
 				${ECHO_MSG} >&2 "BULK> Required binary package $$dep does not exist, rebuilding... " ; \
 				uptodate=0 ; \
-			elif [ "$$pkg" -nt "${REF}" ]; then \
+			elif [ -n "$$(find \"$$pkg\" -prune -newer \"${REF}\")" ]; then \
 				${ECHO_MSG} >&2 "BULK> Required binary package $$dep (`basename $$pkg`) is newer, rebuilding... " ; \
 				uptodate=0 ; \
 			else \
