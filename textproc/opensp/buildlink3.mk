@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/22 21:59:22 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:40 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OPENSP_BUILDLINK3_MK:=	${OPENSP_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_PACKAGES+=	opensp
 .if !empty(OPENSP_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.opensp+=	opensp>=1.5nb1
 BUILDLINK_PKGSRCDIR.opensp?=	../../textproc/opensp
+.endif	# OPENSP_BUILDLINK3_MK
 
 PTHREAD_OPTS+=          native
 
@@ -22,7 +23,5 @@ PTHREAD_OPTS+=          native
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "none")
 .  include "../../devel/unproven-pthreads/buildlink3.mk"
 .endif
-
-.endif	# OPENSP_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
