@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/03/08 19:52:51 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/20 23:36:33 minskim Exp $
 
 .include "../pdflib/Makefile.common"
 
@@ -30,7 +30,7 @@ do-install:
 		${MAKE_PROGRAM} ${MAKE_FLAGS} ${INSTALL_TARGET}
 .endfor
 
-.include "../pdflib/buildlink2.mk"
-.include "../../lang/tcl/buildlink2.mk"
+.include "../pdflib/buildlink3.mk"
+.include "../../lang/tcl/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
