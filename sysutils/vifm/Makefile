@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/29 18:22:47 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 15:06:58 grant Exp $
 #
 
 DISTNAME=	vifm-0.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://vifm.sourceforge.net/
 COMMENT=	Ncurses based file manager with vi like keybindings
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 
 INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
@@ -26,6 +26,6 @@ pre-configure:
 		${WRKSRC}/src/vifmrc0.1 > ${WRKSRC}/src/vifmrc0.1.new && \
 		${MV} ${WRKSRC}/src/vifmrc0.1.new ${WRKSRC}/src/vifmrc0.1
 
-.include "../../devel/ncurses/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
