@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libgst/Makefile.in.orig
++++ libgst/Makefile.in
+@@ -212,7 +212,6 @@
+ 
+ libgst_la_LDFLAGS = -version-info $(VERSION_INFO)
+ libgst_la_DEPENDENCIES = $(top_builddir)/lib-src/library.la $(LIBSIGSEGV) \
+-	@LIBLTDL@ @LIBSNPRINTFV@ @LIBREADLINE@ @LIBGMP@
+ 
+ 
+ libgst_la_SOURCES = \
