@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2004/10/26 22:59:44 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2004/11/27 21:59:06 jdolecek Exp $
 #
 
 COMMENT=	Communication programs
@@ -54,7 +54,6 @@ SUBDIR+=	libyahoo
 SUBDIR+=	licq-core
 SUBDIR+=	licq-gui-console
 SUBDIR+=	licq-gui-qt
-SUBDIR+=	liece
 SUBDIR+=	loudmouth
 SUBDIR+=	micq
 SUBDIR+=	mu-conference
@@ -69,6 +68,7 @@ SUBDIR+=	p5-Net-Jabber
 SUBDIR+=	pircbot
 SUBDIR+=	psi
 SUBDIR+=	quirc
+SUBDIR+=	riece
 SUBDIR+=	roxirc
 SUBDIR+=	scrollz
 SUBDIR+=	ser
