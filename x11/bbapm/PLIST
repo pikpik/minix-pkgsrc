@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/bbapm
+man/man1/bbapm.1
+share/bbtools/README.bbapm
+share/bbtools/bbapm.conf
+share/bbtools/bbapm.nobb
+share/bbtools/bbapm.style
+@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || true
