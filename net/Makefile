@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.301 2002/05/16 18:15:17 wiz Exp $
+# $NetBSD: Makefile,v 1.302 2002/05/25 12:58:27 markd Exp $
 #
 
 COMMENT=	Networking tools
@@ -92,6 +92,9 @@ SUBDIR+=	jwhois
 SUBDIR+=	kdenetwork
 SUBDIR+=	kdenetwork2
 SUBDIR+=	kmap
+SUBDIR+=	lambdamoo
+SUBDIR+=	lambdamoo-core
+SUBDIR+=	lambdamoo-doc
 SUBDIR+=	latd
 SUBDIR+=	lftp
 SUBDIR+=	libIDL
