@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.415 2003/12/03 19:11:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.416 2003/12/05 14:13:00 recht Exp $
 #
 
 COMMENT=	Networking tools
@@ -129,6 +129,7 @@ SUBDIR+=	libdnet
 SUBDIR+=	liblive
 SUBDIR+=	libnids
 SUBDIR+=	libpcap
+SUBDIR+=	libsoup
 SUBDIR+=	libsscript
 SUBDIR+=	linc
 SUBDIR+=	lopster
