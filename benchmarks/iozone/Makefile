@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/03/16 09:02:27 agc Exp $
+# $NetBSD: Makefile,v 1.7 1999/06/21 09:57:03 agc Exp $
 
 DISTNAME=		iozone
 PKGNAME=		iozone-1.14b
@@ -27,6 +27,6 @@ benchmark:
 
 results:
 	-@${MKDIR} /tmp/benches/`domainname`
-	-@cp ${WRKSRC}/iozone.out /tmp/benches/`domainname`/iozone.`uname`-`uname -m`-`uname -r`.`hostname`
+	-@${CP} ${WRKSRC}/iozone.out /tmp/benches/`domainname`/iozone.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"
