@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/11/29 08:20:00 rh Exp $
+# $NetBSD: Makefile,v 1.5 2000/05/15 21:38:42 dmcmahill Exp $
 #
 
 DISTNAME=	gdcd-0.0.2
@@ -11,7 +11,7 @@ HOMEPAGE=	http://cdcd.undergrid.net/gdcd/
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 DEPENDS+=	imlib-*:../../graphics/imlib
 DEPENDS+=	pth>=1.2.0:../../devel/pth
-DEPENDS+=	libcdaudio-0.99.1:../../audio/libcdaudio
+DEPENDS+=	libcdaudio>=0.99.1:../../audio/libcdaudio
 
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
