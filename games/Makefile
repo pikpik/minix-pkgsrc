@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.119 2001/04/27 15:28:26 agc Exp $
+# $NetBSD: Makefile,v 1.120 2001/07/26 12:38:03 zuntum Exp $
 #
 
 COMMENT=	Games
@@ -63,6 +63,7 @@ SUBDIR+=	kdegames
 SUBDIR+=	kdegames2
 SUBDIR+=	kdetoys
 SUBDIR+=	kdetoys2
+SUBDIR+=	ketm
 SUBDIR+=	knightcap
 SUBDIR+=	knightcap-brain
 SUBDIR+=	koth
