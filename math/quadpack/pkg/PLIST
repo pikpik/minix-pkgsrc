@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libquadpack.a
+lib/libquadpack.la
+lib/libquadpack.so.0.0
+share/doc/quadpack/doc
+share/doc/quadpack/readme
+@dirrm share/doc/quadpack
