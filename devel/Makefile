@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.112 2000/03/30 14:12:36 rh Exp $
+# $NetBSD: Makefile,v 1.113 2000/04/20 07:07:15 itojun Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -9,6 +9,7 @@
     SUBDIR += bison
     SUBDIR += boehm-gc
     SUBDIR += bonobo
+    SUBDIR += boost
     SUBDIR += cdecl
     SUBDIR += cdk
     SUBDIR += cervisia
