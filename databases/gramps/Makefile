@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2004/03/26 02:27:36 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/05/06 10:25:42 drochner Exp $
 #
 
-DISTNAME=		gramps-1.0.3
+DISTNAME=		gramps-1.0.4
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 
-MAINTAINER=	reed@reedmedia.net
+MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://gramps.sourceforge.net/
 COMMENT=	Genealogical Research and Analysis Management Programming System
 
