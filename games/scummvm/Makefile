@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/03/29 01:09:56 dillo Exp $
+# $NetBSD: Makefile,v 1.21 2004/03/30 09:00:41 adam Exp $
 
 DISTNAME=	scummvm-0.6.0
 CATEGORIES=	games
@@ -15,6 +15,8 @@ USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
 HAS_CONFIGURE=	yes
+
+UNLIMIT_RESOURCES=	datasize
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/scummvm
