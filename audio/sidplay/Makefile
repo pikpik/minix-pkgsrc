@@ -1,9 +1,9 @@
 # $NetBSD$
 #
 
-DISTNAME=	sidplay-1_36_32
-PKGNAME=	sidplay-1.36.32
-WRKSRC=		${WRKDIR}/sidplay-1.36.32
+DISTNAME=	sidplay-1_36_34
+PKGNAME=	sidplay-1.36.34
+WRKSRC=		${WRKDIR}/sidplay-1.36.34
 CATEGORIES=	audio
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/
 EXTRACT_SUFX=	.tgz
