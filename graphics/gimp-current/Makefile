@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2000/06/25 01:06:20 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2000/06/30 10:04:46 agc Exp $
 
-DISTNAME=		gimp-1.1.18
+DISTNAME=		gimp-1.1.24
 CATEGORIES=		graphics
-MASTER_SITES=		ftp://ftp.gimp.org/pub/gimp/unstable/v1.1.18/ \
-			ftp://ftp.ameth.org/pub/mirrors/ftp.gimp.org/gimp/unstable/v1.1.18/ \
-			ftp://ftp.fu-berlin.de/unix/X11/graphics/gimp/unstable/v1.1.18/
+MASTER_SITES=		ftp://ftp.gimp.org/pub/gimp/unstable/v1.1.24/ \
+			ftp://ftp.ameth.org/pub/mirrors/ftp.gimp.org/gimp/unstable/v1.1.24/ \
+			ftp://ftp.fu-berlin.de/unix/X11/graphics/gimp/unstable/v1.1.24/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tron@netbsd.org

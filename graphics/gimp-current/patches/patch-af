@@ -1,8 +1,8 @@
 $NetBSD$
 
---- plug-ins/libgck/gck/Makefile.in.orig	Sat Mar  4 04:10:53 2000
-+++ plug-ins/libgck/gck/Makefile.in	Tue Mar 14 00:01:17 2000
-@@ -191,7 +191,8 @@
+--- plug-ins/libgck/gck/Makefile.in.orig	Fri Jun 23 00:47:46 2000
++++ plug-ins/libgck/gck/Makefile.in	Tue Jul  4 03:57:39 2000
+@@ -189,7 +189,8 @@
  gckinclude_HEADERS =  	gck.h
  
  
