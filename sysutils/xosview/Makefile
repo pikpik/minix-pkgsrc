@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2003/10/04 01:42:36 bgrayson Exp $
+# $NetBSD: Makefile,v 1.45 2003/11/10 17:18:28 agc Exp $
 
-DISTNAME=       xosview-1.8.1alpha
+DISTNAME=	xosview-1.8.1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xosview/}
 
 MAINTAINER=	bgrayson@NetBSD.org
 HOMEPAGE=	http://xosview.sourceforge.net/
