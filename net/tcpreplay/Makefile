@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/07 20:20:25 cjep Exp $
 
-DISTNAME=	tcpreplay-1.2a
+DISTNAME=	tcpreplay-1.3.2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcpreplay/}
 
