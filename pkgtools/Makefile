@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.57 2004/06/22 20:06:11 xtraeme Exp $
+# $NetBSD: Makefile,v 1.58 2004/07/19 23:15:45 xtraeme Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
 
 SUBDIR+=	autoswc
+SUBDIR+=	binpatch
 SUBDIR+=	cdpack
 SUBDIR+=	createbuildlink
 SUBDIR+=	dfdisk
