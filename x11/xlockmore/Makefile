@@ -3,7 +3,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $NetBSD: Makefile,v 1.5 1998/01/25 00:42:14 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/01/30 03:08:42 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/10/10 09:24:38 tg Exp
 #
 
@@ -14,8 +14,8 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	tg@FreeBSD.ORG
 
-LIB_DEPENDS=	Xpm\\.4\\.:${PORTSDIR}/graphics/xpm \
-		MesaGL\\.2\\.:${PORTSDIR}/graphics/Mesa
+LIB_DEPENDS=	Xpm.4.:${PORTSDIR}/graphics/xpm \
+		MesaGL.2.:${PORTSDIR}/graphics/Mesa
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-mesagl --without-motif --without-sx \
