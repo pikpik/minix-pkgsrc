@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/08/31 03:06:37 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/11/04 14:51:16 wiz Exp $
 
 .if !defined(SDL_BUILDLINK2_MK)
 SDL_BUILDLINK2_MK=	# defined
@@ -23,7 +23,8 @@ PTHREAD_OPTS+=		require
 .  include "../../audio/nas/buildlink2.mk"
 .endif
 .include "../../audio/esound/buildlink2.mk"
-.include "../../graphics/Mesa/buildlink2.mk"
+.include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glut/buildlink2.mk"
 .include "../../graphics/aalib-x11/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
 

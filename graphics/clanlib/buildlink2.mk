@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/10/07 10:44:57 reinoud Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2003/01/19 08:48:48 tron Exp $
 
 .if !defined(CLANLIB_BUILDLINK2_MK)
 CLANLIB_BUILDLINK2_MK=	# defined
@@ -23,7 +23,8 @@ BUILDLINK_FILES.ClanLib+=	include/ClanLib/MikMod/*
 BUILDLINK_FILES.ClanLib+=	include/ClanLib/png/*
 
 .include "../../mk/pthread.buildlink2.mk"
-.include "../../graphics/Mesa/buildlink2.mk"
+.include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../graphics/hermes/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
 

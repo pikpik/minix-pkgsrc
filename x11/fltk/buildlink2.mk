@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:29 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/11/25 18:21:02 jlam Exp $
 
 .if !defined(FLTK_BUILDLINK2_MK)
 FLTK_BUILDLINK2_MK=	# defined
@@ -13,7 +13,8 @@ BUILDLINK_FILES.fltk=	include/FL/*
 BUILDLINK_FILES.fltk+=	include/Fl/*
 BUILDLINK_FILES.fltk+=	lib/libfltk.*
 
-.include "../../graphics/Mesa/buildlink2.mk"
+.include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	fltk-buildlink
 

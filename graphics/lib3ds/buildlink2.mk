@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2002/09/06 00:52:29 rh Exp $
 #
 # This Makefile fragment is included by packages that use lib3ds.
 #
@@ -37,7 +37,6 @@ BUILDLINK_FILES.lib3ds+=	include/lib3ds/viewport.h
 BUILDLINK_FILES.lib3ds+=	lib/lib3ds.*
 
 .include "../../graphics/Mesa/buildlink2.mk"
-.include "../../graphics/glut/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	lib3ds-buildlink
 
