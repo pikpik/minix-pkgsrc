@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2002/12/31 07:05:51 dsainty Exp $
+# $NetBSD: Makefile,v 1.77 2002/12/31 19:17:19 cjep Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -74,6 +74,8 @@ SUBDIR+=	uae
 SUBDIR+=	vice
 SUBDIR+=	vmware
 SUBDIR+=	vmware-module
+SUBDIR+=	vmware3
+SUBDIR+=	vmware-module3
 SUBDIR+=	wine
 SUBDIR+=	x48
 SUBDIR+=	xbeeb
