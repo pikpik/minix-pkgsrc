@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2001/02/17 18:09:10 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/09 19:08:39 agc Exp $
 #
 
 DISTNAME=	generator-0.34
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.squish.net/generator/files/
 
