@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/classpath/libgtkpeer.a
+lib/classpath/libgtkpeer.la
+lib/classpath/libgtkpeer.so
+lib/classpath/libgtkpeer.so.0
+lib/classpath/libgtkpeer.so.0.0
+@comment in classpath: @dirrm lib/classpath
