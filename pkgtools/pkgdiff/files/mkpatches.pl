@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 #
-# $NetBSD: mkpatches.pl,v 1.4 2001/03/31 17:24:03 skrll Exp $
+# $NetBSD: mkpatches.pl,v 1.5 2001/05/24 17:02:44 abs Exp $
 #
 # mkpatches: creates a set of patches patch-aa, patch-ab, ...
 #   in work/.newpatches by looking for *.orig files in and below
@@ -49,7 +49,7 @@ EOF
 
 # get WRKDIR
 
-$wrkdir=`make show-var VARNAME=WRKDIR` or
+$wrkdir=`@MAKE@ show-var VARNAME=WRKDIR` or
     die ("can't find WRKDIR -- wrong dir?");
 chomp($wrkdir);
 
@@ -64,7 +64,7 @@ create_patchdir();
 
 # get WRKSRC
 
-$wrksrc=`make show-var VARNAME=WRKSRC` or 
+$wrksrc=`@MAKE@ show-var VARNAME=WRKSRC` or 
     die ("can't find WRKSRC -- wrong dir?");
 chomp($wrksrc);
 
