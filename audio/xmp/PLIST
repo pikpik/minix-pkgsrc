@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/28 01:25:40 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:18:37 zuntum Exp $
 bin/xmp
 bin/xxmp
-etc/xmp-modules.conf
-etc/xmp.conf
 man/man1/xmp.1
 man/man1/xxmp.1
+share/examples/xmp/xmp-modules.conf
+share/examples/xmp/xmp.conf
+@dirrm share/examples/xmp
