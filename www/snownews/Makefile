@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/12/27 23:04:23 wiz Exp $
 
 DISTNAME=       snownews-1.4.2
 CATEGORIES=     www
 MASTER_SITES=   http://home.kcore.de/~kiza/software/snownews/download/
 
-MAINTAINER=     bjan+pkgsrc@bjan.net
+MAINTAINER=     pkgsrc@bjan.freeshell.org
 HOMEPAGE=	http://home.kcore.de/~kiza/software/snownews/
 COMMENT=        Small, curses based RSS feed reader
 
