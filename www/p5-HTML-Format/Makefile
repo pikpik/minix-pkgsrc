@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2004/01/18 21:48:42 heinz Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/25 05:53:15 minskim Exp $
 
-DISTNAME=		HTML-Format-2.03
+DISTNAME=		HTML-Format-2.04
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5hfo
 CATEGORIES=		www perl5
