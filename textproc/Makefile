@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.255 2004/07/09 20:44:53 salo Exp $
+# $NetBSD: Makefile,v 1.256 2004/07/13 04:37:13 erh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -130,7 +130,7 @@ SUBDIR+=	p5-Convert-ASN1
 SUBDIR+=	p5-Convert-BER
 SUBDIR+=	p5-Convert-PEM
 SUBDIR+=	p5-Cz-Cstools
-SUBDIR+=    p5-Data-FormValidator
+SUBDIR+=	p5-Data-FormValidator
 SUBDIR+=	p5-Filter
 SUBDIR+=	p5-PDF
 SUBDIR+=	p5-PDF-API2
@@ -154,6 +154,7 @@ SUBDIR+=	p5-Text-Quoted
 SUBDIR+=	p5-Text-Reform
 SUBDIR+=	p5-Text-Substitute
 SUBDIR+=	p5-Text-Template
+SUBDIR+=	p5-Text-WikiFormat
 SUBDIR+=	p5-Text-Wrapper
 SUBDIR+=	p5-XML-Checker
 SUBDIR+=	p5-XML-DOM
