@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.220 2001/05/18 23:40:49 wiz Exp $
+# $NetBSD: Makefile,v 1.221 2001/05/19 10:10:10 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -67,8 +67,10 @@ SUBDIR+=	qtarch
 SUBDIR+=	qwspritefield
 SUBDIR+=	qwt
 SUBDIR+=	rep-gtk
-SUBDIR+=	ruby-Tk
+SUBDIR+=	ruby-tcltk
+SUBDIR+=	ruby-tk
 SUBDIR+=	ruby-gtk
+#SUBDIR+=	ruby14-tk
 SUBDIR+=	rxvt
 SUBDIR+=	speyes
 SUBDIR+=	ssystem
