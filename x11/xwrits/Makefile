@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 1999/02/20 22:48:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2000/02/29 15:10:00 dmcmahill Exp $
 
-DISTNAME=	xwrits-2.11
+DISTNAME=	xwrits-2.12
 CATEGORIES=	x11
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/xwrits/
 
