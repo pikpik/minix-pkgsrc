@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2000/01/07 04:20:50 hubertf Exp $
-bin/ac3dec
-bin/extract_ac3
-share/doc/ac3dec/README
-share/doc/ac3dec/TODO
-@dirrm share/doc/ac3dec
