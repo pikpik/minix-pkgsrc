@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2004/02/28 06:04:13 grant Exp $
+# $NetBSD: Makefile,v 1.64 2004/03/26 02:38:42 wiz Exp $
 #
 
 .include "mk/bsd.prefs.mk"
@@ -41,6 +41,7 @@ SUBDIR += news
 SUBDIR += parallel
 SUBDIR += pkgtools
 SUBDIR += print
+#SUBDIR += regress
 SUBDIR += security
 SUBDIR += shells
 SUBDIR += sysutils
