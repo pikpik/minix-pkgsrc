@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.55 2002/04/29 04:17:04 lukem Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.56 2002/05/04 01:22:03 jtb Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1401,6 +1401,7 @@ XCHAT_USE_SSL?=	YES
 # Japan
 #
 #MASTER_SITE_XCONTRIB=	ftp://ftp.ring.gr.jp/pub/X/opengroup/contrib/
+#MASTER_SITE_GNOME=	ftp://ftp.ring.gr.jp/pub/X/gnome/
 #MASTER_SITE_GNU=	ftp://ftp.ring.gr.jp/pub/GNU/
 #MASTER_SITE_PERL_CPAN=	ftp://ftp.ring.gr.jp/pub/lang/perl/CPAN/modules/by-module/
 #MASTER_SITE_TEX_CTAN=	ftp://ftp.ring.gr.jp/pub/text/CTAN/
