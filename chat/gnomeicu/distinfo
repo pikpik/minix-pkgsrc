@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/26 18:43:18 wiz Exp $
+$NetBSD$
 
-MD5 (gnomeicu-0.96.tar.bz2) = e4fa4d3244095116310230fa1bce5ab7
+SHA1 (gnomeicu-0.96.tar.bz2) = 88916f2c5220617a9c1cd44b70376438a4f3543e
+Size (gnomeicu-0.96.tar.bz2) = 704025 bytes

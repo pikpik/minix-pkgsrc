@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/15 00:36:25 wiz Exp $
+$NetBSD$
 
-MD5 (tkirc1.202.tar.gz) = f00d23922764bb5091ab0e4f8a10a528
+SHA1 (tkirc1.202.tar.gz) = f3a420f46b79ff40d8cfad07780d3d956eb3d3b2
+Size (tkirc1.202.tar.gz) = 93428 bytes
