@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2004/03/11 15:42:21 seb Exp $
+@comment $NetBSD$
 bin/xaos
 man/man6/xaos.6
 share/XaoS/catalogs/README
@@ -166,9 +166,14 @@ share/XaoS/tutorial/square.xhf
 share/XaoS/tutorial/tree.xhf
 share/XaoS/tutorial/truecol.xaf
 share/XaoS/tutorial/truecol.xhf
-@dirrm share/XaoS/catalogs
-@dirrm share/XaoS/doc
-@dirrm share/XaoS/examples
-@dirrm share/XaoS/help
+${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/xaos.mo
+${PKGLOCALEDIR}/locale/de/LC_MESSAGES/xaos.mo
+${PKGLOCALEDIR}/locale/es/LC_MESSAGES/xaos.mo
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/xaos.mo
+${PKGLOCALEDIR}/locale/hu/LC_MESSAGES/xaos.mo
 @dirrm share/XaoS/tutorial
+@dirrm share/XaoS/help
+@dirrm share/XaoS/examples
+@dirrm share/XaoS/doc
+@dirrm share/XaoS/catalogs
 @dirrm share/XaoS
