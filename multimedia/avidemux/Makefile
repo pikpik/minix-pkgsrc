@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/08/28 06:05:32 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:01 tv Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -17,7 +17,7 @@ USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 
-CFLAGS+=		-DDEVOSSAUDIO=\"\\\"${DEVOSSAUDIO}\\\"\"
+CFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 LDFLAGS+=		${LIBOSSAUDIO}
 
 CONFIGURE_ARGS+=	--disable-warnings

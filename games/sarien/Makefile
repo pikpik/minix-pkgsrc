@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/11 08:45:45 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:14:46 tv Exp $
 #
 
 DISTNAME=	sarien-0.7.0
@@ -17,7 +17,7 @@ USE_GNU_TOOLS+=		make
 
 CONFIGURE_ARGS=		--with-sdl
 
-CFLAGS+=		-DPKG_SYSCONFDIR=\"\\\"${PKG_SYSCONFDIR}\\\"\"
+CFLAGS+=		-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR}\""
 EGDIR=			${PREFIX}/share/examples/sarien
 CONF_FILES=		${EGDIR}/sarien.conf ${PKG_SYSCONFDIR}/sarien.conf
 

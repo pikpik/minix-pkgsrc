@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:14:58 tv Exp $
+# $NetBSD: Makefile,v 1.22 2004/12/03 15:14:59 wiz Exp $
 
 DISTNAME=		tcm-2.01.src
 PKGNAME=		tcm-2.01
@@ -24,7 +24,7 @@ MAKE_ENV+=		MOTIF_HOME=${MOTIFBASE}
 TCM_SRC=		${WRKDIR}/tcm-2.01
 MAKE_ENV+=		TCM_HOME=${TCM_SRC}
 
-CPPFLAGS+=		-DPKG_SYSCONFDIR=\"\\\"${PKG_SYSCONFDIR}\\\"\"
+CPPFLAGS+=		-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR}\""
 CONF_FILES=		${PREFIX}/share/examples/tcm/tcm.conf \
 			${PKG_SYSCONFDIR}/tcm.conf
 
