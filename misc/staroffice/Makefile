@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/03/13 09:41:27 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2001/09/27 23:18:26 jlam Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -88,6 +88,11 @@ do-fetch:
 			  HOMEPAGE=${HOMEPAGE} SITE=${DOWNLOAD_SITE} \
 		./automate.sh ; \
 	fi
+
+post-extract:
+	cd ${WRKSRC} && \
+		unzip -qqXL setup.zip && \
+		chmod 0755 setup.bin
 
 do-configure:
 .for file in setup.ins
