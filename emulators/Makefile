@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2004/04/04 16:53:28 recht Exp $
+# $NetBSD: Makefile,v 1.97 2004/04/05 05:06:52 xtraeme Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -41,6 +41,7 @@ SUBDIR+=	mmix
 SUBDIR+=	netbsd32_compat14
 SUBDIR+=	netbsd32_compat15
 SUBDIR+=	netbsd32_compat16
+SUBDIR+=	openmsx
 SUBDIR+=	osf1_lib
 SUBDIR+=	p11
 SUBDIR+=	palmosemulator
