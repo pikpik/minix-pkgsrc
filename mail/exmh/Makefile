@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/06/02 01:18:47 jschauma Exp $
+# $NetBSD: Makefile,v 1.32 2003/07/17 21:46:00 grant Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/02/15 05:36:54 peter Exp
 #
 
@@ -25,6 +25,7 @@ TCLSH=		tclsh
 # Additionally, exmh will use the following packages if present:
 # lang/expect
 # textproc/glimpse
+# security/gnupg
 # security/pgp
 # mail/faces
 # audio/rplay
