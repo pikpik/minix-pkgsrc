@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/aewm++
+man/man1/aewm++.1
