@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xrolodex
+man/cat1/xrolodex.0
+lib/X11/app-defaults/XRolodex
