@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/03/26 02:27:54 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/08 20:21:58 jmmv Exp $
 #
 
 DISTNAME=	TkPasMan-2.2a
 PKGNAME=	${DISTNAME:S/TkPasMan/tkpasman/}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	http://www.xs4all.nl/~wbsoft/linux/projects/
 
@@ -16,6 +16,8 @@ USE_BUILDLINK3=		YES
 CONFIG_SUBST=		PREFIX="${PREFIX}"
 CONFIG_SUBST+=		SHELL="${SH}"
 CONFIG_SUBST+=		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
+CONFIG_SUBST+=		TCLSH="${BUILDLINK_PREFIX.tcl}/bin/tclsh"
+CONFIG_SUBST+=		WISH="${BUILDLINK_PREFIX.tk}/bin/wish"
 CONFIG_SUBST_SED=	${CONFIG_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}
 
 .include "../../mk/bsd.prefs.mk"
