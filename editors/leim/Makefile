@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:14:05 agc Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/22 08:30:30 grant Exp $
 
 DISTNAME=	leim-${VERSION}
 CATEGORIES=	editors
@@ -9,13 +9,13 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	Libraries of Emacs Input Methods (for emacs21)
 
-DEPENDS+=	emacs>=${VERSION}:../emacs
-
 WRKSRC=		${WRKDIR}/emacs-${VERSION}/leim
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
 
 VERSION=	21.3
+
+EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox
 
 post-extract:
 	@${ECHO} '#!/bin/sh' >${WRKSRC}/configure
@@ -28,4 +28,5 @@ post-extract:
 post-install:
 	@${CHOWN} -R ${ROOT_USER} ${PREFIX}/share/emacs/${VERSION}/leim
 
+.include "../../mk/emacs.mk"
 .include "../../mk/bsd.pkg.mk"
