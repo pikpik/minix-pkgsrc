@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.211 2003/12/29 14:07:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.212 2004/01/10 22:43:07 wiz Exp $
 
 COMMENT=	System utilities
 
@@ -79,7 +79,6 @@ SUBDIR+=	hfsutils
 SUBDIR+=	i2ocfg
 SUBDIR+=	idesk
 SUBDIR+=	isapnptools
-SUBDIR+=	kapm
 SUBDIR+=	kdirstat
 SUBDIR+=	koncd
 SUBDIR+=	lambd

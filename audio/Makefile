@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.197 2004/01/12 03:58:23 kim Exp $
+# $NetBSD: Makefile,v 1.198 2004/01/12 04:18:50 kim Exp $
 #
 
 COMMENT=	Audio tools
@@ -84,7 +84,6 @@ SUBDIR+=	id3v2
 SUBDIR+=	juke
 SUBDIR+=	kdemultimedia2
 SUBDIR+=	kdemultimedia3
-SUBDIR+=	krio
 SUBDIR+=	lame
 SUBDIR+=	liba52
 SUBDIR+=	libac3

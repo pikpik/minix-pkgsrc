@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.454 2004/01/09 19:14:15 jschauma Exp $
+# $NetBSD: Makefile,v 1.455 2004/01/12 17:12:10 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -53,7 +53,6 @@ SUBDIR+=	cbrowser
 SUBDIR+=	ccache
 SUBDIR+=	cdecl
 SUBDIR+=	cdk
-SUBDIR+=	cervisia
 SUBDIR+=	cervisia2
 SUBDIR+=	cfitsio
 SUBDIR+=	check
