@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/03/13 17:37:12 fredb Exp $
+# $NetBSD: Makefile,v 1.10 2002/07/19 08:52:31 toshii Exp $
 #
 
 DISTNAME=       mgl2-alpha-020
@@ -36,6 +36,11 @@ MGLUTILS=	kill_mgl.sh mglcons.sh set_mgl.sh
 ONLY_FOR_PLATFORM=	*-*-arm *-*-i386 *-*-mipsel
 
 .include "../../mk/bsd.prefs.mk"
+
+pre-configure:
+	${SED} -e 's|@PREFIX@|${PREFIX}|g' < ${WRKSRC}/utils/mglcons.sh \
+		> ${WRKSRC}/utils/mglcons.sh.new
+	${MV} ${WRKSRC}/utils/mglcons.sh.new ${WRKSRC}/utils/mglcons.sh
 
 post-configure:
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "mipsel"
