@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:28 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/23 16:35:55 wiz Exp $
 #
 
-DISTNAME=	Xbae-4.9.1
-PKGREVISION=	1
+DISTNAME=	xbae-4.50.99
+PKGNAME=	Xbae-4.50.99
 CATEGORIES=	x11
-#MASTER_SITES=	ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/ \
-#		${MASTER_SITE_SOURCEFORGE:=xbae/}
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xbae/}
 
 MAINTAINER=	drochner@NetBSD.org
