@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/11/28 14:37:40 itojun Exp $
+# $NetBSD: Makefile,v 1.4 1999/12/28 05:30:23 wiz Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=		devel
 # need to fetch on your own
 #MASTER_SITES=		
 EXTRACT_SUFX=		.tar
+DECOMPRESS_CMD=		${CAT}
 
 MAINTAINER=		itojun@kame.net
 HOMEPAGE=		http://www.sun.com/solaris/ipv6/
