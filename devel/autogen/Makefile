@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/14 20:26:15 kristerw Exp $
 
-DISTNAME=	autogen-5.4.7
+DISTNAME=	autogen-5.5.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=autogen/}
 
