@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/19 00:57:05 tsutsui Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/06 06:38:21 tsutsui Exp $
 #
 
 DISTVERSION=		1.3.0.0
@@ -6,6 +6,7 @@ DISTFILES=		# none
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
+COMMENT=		Cross-compile environment for NetBSD/mipseb
 
 WRKSRC=			${WRKDIR}/${EGCS_DISTNAME}
 

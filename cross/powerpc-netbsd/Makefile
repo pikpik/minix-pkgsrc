@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/01/04 22:37:32 tv Exp $
+# $NetBSD: Makefile,v 1.1 1999/01/06 01:20:28 tv Exp $
 #
 
 DISTVERSION=		1.3.0.0
@@ -6,6 +6,7 @@ DISTFILES=		# none
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
+COMMENT=		Cross-compile environment for NetBSD/powerpc
 
 WRKSRC=			${WRKDIR}/${EGCS_DISTNAME}
 

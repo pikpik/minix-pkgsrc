@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/07/13 21:39:11 bjh21 Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/05 09:00:55 tron Exp $
 #
 
 DISTVERSION=		1.3.0.0
@@ -6,6 +6,7 @@ DISTFILES=		# none
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
+COMMENT=		Cross-compile environment for NetBSD/arm26
 
 WRKSRC=			${WRKDIR}/${EGCS_DISTNAME}
 
