@@ -1,8 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2000/05/15 11:00:46 wulf Exp $
+# $NetBSD: Makefile,v 1.4 2000/10/24 10:15:15 wiz Exp $
 #
-    SUBDIR += 7plus
-    SUBDIR += dpbox
-    SUBDIR += tfkiss
-    SUBDIR += tnt
+
+
+COMMENT=	Amateur packet radio tools
+
+SUBDIR+=	7plus
+SUBDIR+=	dpbox
+SUBDIR+=	tfkiss
+SUBDIR+=	tnt
 
 .include "../mk/bsd.pkg.subdir.mk"
