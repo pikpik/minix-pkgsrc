@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.243 2004/05/25 21:51:42 wiz Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.244 2004/05/27 09:28:15 recht Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -805,6 +805,11 @@ DELIVER_SUID?=	NO
 DOVECOT_USE_GNUTLS?=	NO
 # Used by dovecot package to determine whether to use GnuTLS or OpenSSL as the
 # underlying crypto library.
+# Possible: YES, NO
+# Default: NO
+
+DOVECOT_USE_MYSQL?=	NO
+# Used by dovecot package to determive whether to enable MySQL support.
 # Possible: YES, NO
 # Default: NO
 
