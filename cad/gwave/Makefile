@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 21:25:07 grant Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/21 16:32:12 martti Exp $
 #
 
-DISTNAME=	gwave-20020122
-PKGREVISION=	2
+DISTNAME=	gwave-20030804
 CATEGORIES=	cad
 MASTER_SITES=	http://www.cs.unc.edu/~tell/dist/
 
