@@ -1,6 +1,6 @@
 $NetBSD$
 
---- test/intltest/intltest.cpp.orig	Thu Dec 21 15:38:00 2000
+--- test/intltest/intltest.cpp.orig	Tue Dec 12 19:40:58 2000
 +++ test/intltest/intltest.cpp
 @@ -411,7 +411,7 @@
              mainDirBuffer[0]='\0';

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- common/udata.c.orig	Thu Dec 21 15:37:15 2000
+--- common/udata.c.orig	Wed Dec  6 03:02:12 2000
 +++ common/udata.c
 @@ -238,7 +238,7 @@
  #   define MAP_IMPLEMENTATION MAP_WIN32
