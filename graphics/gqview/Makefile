@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/08/25 21:49:53 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2002/10/08 18:50:55 wiz Exp $
 #
 
 DISTNAME=	gqview-1.0.1
@@ -16,7 +16,7 @@ USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	ac_cv_path_GNOME_CONFIG=no
-CONFIGURE_ENV+=	PKGLOCALEDIR="${PKGLOCALEDIR}"
+MAKE_ENV+=	PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
