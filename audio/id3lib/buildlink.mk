@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/08/03 17:03:30 wiz Exp $
 #
 # This Makefile fragment is included by packages that use id3lib.
 #
@@ -32,4 +32,4 @@ BUILDLINK_TARGETS+=		${BUILDLINK_TARGETS.id3lib}
 pre-configure: ${BUILDLINK_TARGETS.id3lib}
 id3lib-buildlink: _BUILDLINK_USE
 
-.endif	# GLIB_BUILDLINK_MK
+.endif	# ID3LIB_BUILDLINK_MK
