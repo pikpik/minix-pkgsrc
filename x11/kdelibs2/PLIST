@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2001/12/19 15:29:28 tron Exp $
+@comment $NetBSD: PLIST,v 1.7 2002/03/31 08:15:08 jmc Exp $
 bin/artsc-config
 bin/artscat
 bin/artsd
@@ -2745,8 +2745,6 @@ share/kde/services/knotify.desktop
 share/kde/services/krl.kimgio
 share/kde/services/png.kimgio
 share/kde/services/pnm.kimgio
-share/kde/services/rlogin.protocol
-share/kde/services/telnet.protocol
 share/kde/services/tiff.kimgio
 share/kde/services/xbm.kimgio
 share/kde/services/xpm.kimgio
