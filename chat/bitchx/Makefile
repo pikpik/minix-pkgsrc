@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/05/30 06:03:50 grant Exp $
+# $NetBSD: Makefile,v 1.11 2002/10/13 15:49:56 wiz Exp $
 
 DISTNAME=	ircii-pana-1.0c18
 PKGNAME=	bitchx-1.0.3.18
@@ -30,6 +30,11 @@ DEPENDS+=		bzip2>=0.9:../../archivers/bzip2
 post-extract:
 	( ${FIND} ${WRKDIR}/BitchX/bitchx-docs -type d -name CVS -print \
 		| ${XARGS} ${RM} -rf ) 2>/dev/null
+
+post-patch:
+	@${MV} ${WRKSRC}/doc/BitchX.1 ${WRKSRC}/doc/BitchX.1.orig
+	@${SED} -e 's|@PREFIX@|${PREFIX}|' \
+		${WRKSRC}/doc/BitchX.1.orig > ${WRKSRC}/doc/BitchX.1
 
 # The WANT_NOTIFY_BITCHX_COM message after configure is misleading, we
 # disable this by default.
