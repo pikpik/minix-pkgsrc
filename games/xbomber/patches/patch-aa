@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.2 1998/08/07 10:40:44 agc Exp $
+$NetBSD$
 
 --- makefile.orig	Fri Jun 19 05:28:34 1998
-+++ makefile	Fri Aug 14 13:15:08 1998
++++ makefile
 @@ -11,15 +11,22 @@
  
  # Makefile user-definable variables------------------------------------------
@@ -23,7 +23,7 @@ $NetBSD: patch-aa,v 1.2 1998/08/07 10:40:44 agc Exp $
  
  # adjust according to target
 -XLIB=-L/usr/X11/lib -lX11
-+XLIB=-L$(PREFIX)/lib -lX11
++XLIB=-Wl,-R${PREFIX}/lib -L$(PREFIX)/lib -lX11
  
  # uncomment for sunos/solaris
  #XLIB=-L/usr/openwin/lib -lX11
