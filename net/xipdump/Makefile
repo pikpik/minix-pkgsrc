@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:04 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 17:11:30 martti Exp $
 #
 
 DISTNAME=	xipdump-1.5.4
@@ -10,7 +10,7 @@ MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://www.epita.fr/~lse/xipdump/
 COMMENT=	Displays IP packets using X Window System
 
-DEPENDS+=	libnet>=1.0:../../devel/libnet
+DEPENDS+=	libnet>=1.0.1bnb3:../../devel/libnet
 
 LIBNET_CONFIG=	${LOCALBASE}/bin/libnet-config
 
