@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/06/05 07:28:27 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/07/01 19:42:25 david Exp $
 
 DISTNAME=	fxtv-1.02
 CATEGORIES=	graphics
@@ -6,7 +6,7 @@ MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tron@netbsd.org
-HOMEPAGE=	http://www.ipass.net/~dbhopper/aa8vb/fxtv/
+HOMEPAGE=	http://people.freebsd.org/~rhh/fxtv/
 
 DEPENDS+=	tiff>=3.5.5:../../graphics/tiff
 DEPENDS+=	xpm-3.4[j-z]:../../graphics/xpm
