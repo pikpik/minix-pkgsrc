@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.228 2001/07/09 09:37:45 zuntum Exp $
+# $NetBSD: Makefile,v 1.229 2001/07/09 16:01:01 tv Exp $
 #
 
 COMMENT=	Development utilities
@@ -23,6 +23,7 @@ SUBDIR+=	c-cpp-reference
 SUBDIR+=	cdecl
 SUBDIR+=	cdk
 SUBDIR+=	cervisia
+SUBDIR+=	cervisia2
 SUBDIR+=	cfitsio
 SUBDIR+=	chkpt
 SUBDIR+=	cmdline
