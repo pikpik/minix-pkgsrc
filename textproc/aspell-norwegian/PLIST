@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/aspell/no.multi
+lib/aspell/no.rws
+lib/aspell/norsk.alias
+lib/aspell/norwegian.alias
+share/aspell/no.dat
