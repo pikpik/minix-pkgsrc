@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2000/12/12 01:30:48 wiz Exp $
+# $NetBSD: Makefile,v 1.107 2000/12/13 08:31:01 garbled Exp $
 #
 
     SUBDIR += abuse
@@ -77,6 +77,7 @@
     SUBDIR += plib
     SUBDIR += pysol
     SUBDIR += quake
+    SUBDIR += quake3arena
     SUBDIR += quake3arena-demo
     SUBDIR += quake6
     SUBDIR += quakedata
