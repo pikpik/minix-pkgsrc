@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/cvs
 bin/cvsbug
 bin/rcs2log

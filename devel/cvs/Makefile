@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	cvs
 # Version required:     1.9
 # Date created:		15 November 1997
