@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.6 2005/01/01 03:31:38 minskim Exp $
+# $NetBSD: Makefile.common,v 1.7 2005/01/11 11:09:27 adam Exp $
 
-ABIWORD_DIST_VERSION=	2.2.2
+ABIWORD_DIST_VERSION=	2.2.3
 DISTNAME=	abiword-${ABIWORD_DIST_VERSION}
 
 CATEGORIES=	editors
