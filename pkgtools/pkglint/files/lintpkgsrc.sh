@@ -1,7 +1,7 @@
 #!/bin/sh
-# $NetBSD$
+# $NetBSD: lintpkgsrc.sh,v 1.1 1998/08/07 22:13:43 tsarna Exp $
 
-PORTLINT=@PREFIX@/bin/portlint
+PORTLINT=@PREFIX@/bin/pkglint
 PORTLINTFLAGS="-a -b -c -v"
 
 cd @PORTSDIR@
