@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xmms/Output/libcrossfade.a
+lib/xmms/Output/libcrossfade.la
+lib/xmms/Output/libcrossfade.so
