@@ -1,8 +1,14 @@
 $NetBSD$
 
---- lib/config/Makefile.in.orig	2003-07-18 01:04:27.000000000 +0200
-+++ lib/config/Makefile.in	2003-07-18 12:09:08.000000000 +0200
-@@ -155,7 +155,7 @@
+--- lib/config/Makefile.in.orig	Fri Jul 18 11:04:27 2003
++++ lib/config/Makefile.in
+@@ -150,12 +150,12 @@ xmVer = @xmVer@
+ MAINTAINERCLEANFILES = Makefile.in
+ bin_SCRIPTS = mxmkmf
+ 
+-configdir = $(libdir)/LessTif/config
++configdir = $(libdir)/X11/config
+ 
  EXTRA_DIST = LessTif.rules LessTif.tmpl host.def Imake.tmpl
  
  # so being R5 
