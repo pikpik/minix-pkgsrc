@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2005/03/02 16:05:26 wiz Exp $
+# $NetBSD: Makefile,v 1.250 2005/03/02 21:43:48 wiz Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -204,6 +204,7 @@ SUBDIR+=	wmbiff
 SUBDIR+=	wmmail
 SUBDIR+=	xbuffy
 SUBDIR+=	xfmail
+SUBDIR+=	ximian-connector
 SUBDIR+=	xmailbox
 SUBDIR+=	xmailwatcher
 SUBDIR+=	yatsvrs
