@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xuvmstat
+share/doc/xuvmstat/LICENSE
+@dirrm share/doc/xuvmstat
