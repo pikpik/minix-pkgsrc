@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/05 04:56:56 groo Exp $
+$NetBSD$
 
-MD5 (ocaml-3.00.tar.gz) = 7156d619d8e2aea430e0df9b1bab1b52
+SHA1 (ocaml-3.00.tar.gz) = 8254b3ef50a8a4428fc71ead4a4f7461164d0519
+Size (ocaml-3.00.tar.gz) = 1502449 bytes

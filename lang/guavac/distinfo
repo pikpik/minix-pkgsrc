@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.3 1999/01/09 18:39:25 tv Exp $
+$NetBSD$
 
-MD5 (guavac-1.2.tar.gz) = 06b7391584fc6b22db7f16fc0a2f9b3e
+SHA1 (guavac-1.2.tar.gz) = 1384cc0b4fbea0a4177532a6b2a2b0a03bffc484
+Size (guavac-1.2.tar.gz) = 642113 bytes
 SHA1 (patch-aa) = bbb97b1e49a7caee0d90612b7431000542121f5b

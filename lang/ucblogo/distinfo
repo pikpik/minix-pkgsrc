@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/04/04 03:49:22 proff Exp $
+$NetBSD$
 
-MD5 (ucblogo-4.6.tar.gz) = d327af6a037e1ec0b8d06064b728e3f5
+SHA1 (ucblogo-4.6.tar.gz) = b702456377d683f194e58f8c3b1463baa79fe6cf
+Size (ucblogo-4.6.tar.gz) = 254646 bytes
 SHA1 (patch-aa) = 35e2c76c398cb7e6d4e9d86c100f1e44284510dd

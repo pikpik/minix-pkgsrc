@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/02 11:31:26 itojun Exp $
+$NetBSD$
 
-MD5 (kali-0.47.tar.gz) = a3a7b4370a8f2c630eb00b92966b6ee8
+SHA1 (kali-0.47.tar.gz) = 6f55c4b58304b337453e51c284e08e50d355fd55
+Size (kali-0.47.tar.gz) = 970455 bytes

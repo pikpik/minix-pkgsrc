@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/06 15:13:11 abs Exp $
+$NetBSD$
 
-MD5 (b105.tgz) = 4eb56f6a404af180f101227b12da991b
+SHA1 (b105.tgz) = 9daeab869d3c4d4a7c49acb919d713ebda35c775
+Size (b105.tgz) = 324977 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 02:59:34 jlam Exp $
+$NetBSD$
 
-MD5 (langspec-2.0.html.zip) = 17cc6b2513b58901649544bce7a4a424
+SHA1 (langspec-2.0.html.zip) = 665951964bc5334e7ef138af2185a4f54fbe2b13
+Size (langspec-2.0.html.zip) = 419631 bytes

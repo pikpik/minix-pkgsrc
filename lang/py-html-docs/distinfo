@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.6 2000/10/22 20:01:50 tsarna Exp $
+$NetBSD$
 
-MD5 (python/html-2.0.tar.bz2) = 7c6979e71828254b1303eadc60257961
+SHA1 (python/html-2.0.tar.bz2) = 1148935ebb34cedb03796bcca5347de1ccbd15c5
+Size (python/html-2.0.tar.bz2) = 699404 bytes

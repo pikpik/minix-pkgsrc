@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 03:00:07 jlam Exp $
+$NetBSD$
 
-MD5 (vmspec.2nded.html.tar.gz) = 62b869ca62d9a1d1f7c4df3d761ea35a
+SHA1 (vmspec.2nded.html.tar.gz) = a786d295ab344387bf5045841b34081e2f3ff1d1
+Size (vmspec.2nded.html.tar.gz) = 332308 bytes

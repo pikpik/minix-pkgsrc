@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/04/07 21:33:25 rh Exp $
+$NetBSD$
 
 SHA1 (gb-0.0.18.tar.gz) = ff0ac3e7acab74a27286dbbb2cfb01a52271bcbf
+Size (gb-0.0.18.tar.gz) = 419545 bytes
 SHA1 (patch-aa) = c4b5d5bc45f1388c4e2c6957e3612efc222f8eca

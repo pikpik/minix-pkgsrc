@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/04 23:47:35 jtb Exp $
+$NetBSD$
 
-MD5 (vslisp-4.0-1.tar.gz) = 3df4884bf783aa5a12309f0401aa88ba
+SHA1 (vslisp-4.0-1.tar.gz) = ccd21360f6bd2a7f47638797a7a5d25d2f8cb797
+Size (vslisp-4.0-1.tar.gz) = 167403 bytes
 SHA1 (patch-aa) = 5a397669bed7663ccdbd86d57e7669a70d16b5e1
 SHA1 (patch-ab) = 645d4a4ffd6949b9406083744b71676220bf19be

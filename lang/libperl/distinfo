@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2000/09/07 04:38:30 jlam Exp $
+$NetBSD$
 
-MD5 (perl-5.6.0.tar.gz) = b2940e2cc6312bcfa52355b684e70b9d
+SHA1 (perl-5.6.0.tar.gz) = a2e9da9c82116a9094cc0f92c248c4339fda89fa
+Size (perl-5.6.0.tar.gz) = 5443601 bytes
