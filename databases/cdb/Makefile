@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/09/12 20:07:11 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/17 19:40:08 grant Exp $
 
 DISTNAME=	cdb-0.75
 CATEGORIES=	databases
@@ -10,10 +10,6 @@ COMMENT=	Creates and reads constant databases
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
-
-.if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-USE_PKGSRC_GCC=		# defined
-.endif
 
 pre-build:
 	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
