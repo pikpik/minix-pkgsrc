@@ -1,4 +1,4 @@
-# $NetBSD: distcc.mk,v 1.16 2004/02/09 01:29:29 jlam Exp $
+# $NetBSD: distcc.mk,v 1.17 2004/02/18 13:32:38 jlam Exp $
 
 .if !defined(COMPILER_DISTCC_MK)
 COMPILER_DISTCC_MK=	defined
@@ -60,6 +60,13 @@ PREPEND_PATH+=	${_DISTCC_DIR}/bin
 
 # Add the dependency on distcc.
 BUILD_DEPENDS+=	distcc-[0-9]*:../../devel/distcc
+
+.if defined(DISTCC_HOSTS) && !empty(DISTCC_HOSTS)
+BUILD_ENV+=	DISTCC_HOSTS=${DISTCC_HOSTS:Q}
+.endif
+.if defined(DISTCC_SSH) && !empty(DISTCC_SSH)
+BUILD_ENV+=	DISTCC_SSH=${DISTCC_SSH:Q}
+.endif
 
 # Create symlinks for the compiler into ${WRKDIR}.
 .  if exists(${_DISTCCBASE}/bin/distcc)
