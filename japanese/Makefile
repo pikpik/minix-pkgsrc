@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2001/02/20 10:11:18 kei Exp $
+# $NetBSD: Makefile,v 1.36 2001/04/14 16:44:12 kei Exp $
 #
 
 COMMENT=	Packages with japanese language support
@@ -19,7 +19,6 @@ SUBDIR+=	ipadic
 SUBDIR+=	jhd
 SUBDIR+=	kakasi
 SUBDIR+=	kbanner
-SUBDIR+=	king
 SUBDIR+=	kinput2
 SUBDIR+=	less
 SUBDIR+=	man
