@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- WindowMaker/Defaults/Makefile.in.orig	Tue Jul  2 02:37:45 2002
++++ WindowMaker/Defaults/Makefile.in
+@@ -95,7 +95,7 @@ X_LIBRARY_PATH = @X_LIBRARY_PATH@
+ supported_locales = @supported_locales@
+ wprefsdir = @wprefsdir@
+ 
+-defsdatadir = $(sysconfdir)/WindowMaker
++defsdatadir = $(datadir)/examples/WindowMaker
+ 
+ defsdata_DATA = WMRootMenu WMWindowAttributes WindowMaker WMState WMGLOBAL
+ 
