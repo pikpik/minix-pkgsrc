@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/05/02 11:55:12 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2003/05/05 16:32:24 jmmv Exp $
 
 DISTNAME=		ClanLib-0.4.4
 PKGREVISION=		4
@@ -30,6 +30,7 @@ CONFIGURE_ARGS+=	--enable-mesa
 CONFIGURE_ARGS+=	--disable-ggi
 CONFIGURE_ARGS+=	--disable-vidmode
 
+CONFIGURE_ENV+=		perl_exec="${PERL5}"
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"
 MAKE_ENV+=		X11BASE="${X11BASE}"
 
