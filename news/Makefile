@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 1998/07/16 17:41:10 tron Exp $
+# $NetBSD: Makefile,v 1.10 1998/08/29 21:55:39 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.28 1997/06/27 23:02:54 brian Exp 
 #
 
 #    SUBDIR += cnews
 #    SUBDIR += diablo
 #    SUBDIR += dnews
-#    SUBDIR += inn
+    SUBDIR += inn
     SUBDIR += knews
 #    SUBDIR += leafnode
     SUBDIR += nn
