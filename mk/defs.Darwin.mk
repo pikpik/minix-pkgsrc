@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.45 2003/02/24 19:49:47 jschauma Exp $
+# $NetBSD: defs.Darwin.mk,v 1.46 2003/02/26 03:02:59 grant Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -29,6 +29,7 @@ GZCAT?=		/usr/bin/gzcat
 GZIP?=		-9
 GZIP_CMD?=	/usr/bin/gzip -nf ${GZIP}
 HEAD?=		/usr/bin/head
+HOSTNAME_CMD?=	/bin/hostname
 ID?=		/usr/bin/id
 LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln

@@ -1,4 +1,4 @@
-# $NetBSD: defs.FreeBSD.mk,v 1.17 2003/02/26 03:02:59 grant Exp $
+# $NetBSD: defs.FreeBSD.mk,v 1.18 2003/02/26 15:15:37 jschauma Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -33,6 +33,7 @@ GZCAT?=		/usr/bin/gzcat
 GZIP?=		-9
 GZIP_CMD?=	/usr/bin/gzip -nf ${GZIP}
 HEAD?=		/usr/bin/head
+HOSTNAME_CMD?=	/bin/hostname
 ID?=		/usr/bin/id
 LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln
