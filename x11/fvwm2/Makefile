@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1998/07/14 10:56:16 frueauf Exp $
+# $NetBSD: Makefile,v 1.14 1998/08/20 15:17:33 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -15,7 +15,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.hpc.uh.edu/fvwm/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
-RUN_DEPENDS=	xpmroot:../../x11/xpmroot
+DEPENDS+=	xpmroot-1.01:../../x11/xpmroot
 
 USE_IMAKE=	yes
 
