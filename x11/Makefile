@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.261 2002/09/07 20:29:05 jschauma Exp $
+# $NetBSD: Makefile,v 1.262 2002/09/12 04:57:20 rh Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -31,6 +31,7 @@ SUBDIR+=	gdm
 SUBDIR+=	gnome--
 SUBDIR+=	gnome-applets
 SUBDIR+=	gnome-core
+SUBDIR+=	gnome-desktop
 SUBDIR+=	gnome-gkrellm
 SUBDIR+=	gnome-libs
 SUBDIR+=	gnome-python
