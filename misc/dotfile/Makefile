@@ -3,7 +3,7 @@
 # Date created:      11/12/96
 # Whom:              oly@world.std.com
 #
-# $NetBSD: Makefile,v 1.1.1.1 1997/10/11 21:54:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1997/10/24 01:04:55 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/04/20 13:19:30 wosch Exp
 #
 
@@ -24,5 +24,5 @@ do-build:
 
 post-install:
 	@${CAT} ${PKGDIR}/MESSAGE
-	
+
 .include <bsd.port.mk>
