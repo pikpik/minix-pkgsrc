@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1998/09/01 20:04:33 mellon Exp $
+# $NetBSD: Makefile,v 1.20 1998/09/04 02:28:52 tron Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 #
 
@@ -21,7 +21,7 @@ INFO_FILES=	emacs vip viper forms gnus mh-e cl sc dired-x ediff ccmode message w
 INSTALL_PROGRAM= ${INSTALL} ${COPY} -o ${BINOWN} -g ${BINGRP} -m ${BINMODE}
 
 pre-install:
-	@find ${WRKSRC} -type f -name "*.orig" | xargs rm -f
+	@find ${WRKSRC} -type f -name "*.orig" | xargs ${RM} -f
 
 post-install:
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/emacs
