@@ -1,4 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2004/04/11 14:01:55 minskim Exp $
+# $NetBSD: Makefile,v 1.25 2004/09/21 17:10:06 jmmv Exp $
+#
+# Check the API before updating this package!  gal-2.3 and above should
+# get their own gal24 package!
 #
 
 DISTNAME=	gal-2.2.1
@@ -9,7 +12,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
-COMMENT=	Library functions that came from Gnumeric and Evolution
+COMMENT=	Library functions that came from Gnumeric and Evolution (gal-2.2 API)
 
 BUILD_USES_MSGFMT=	yes
 
