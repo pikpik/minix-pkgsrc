@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2002/11/14 03:53:37 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/11/30 13:29:21 taca Exp $
 #
 
-DISTNAME=	ddskk-20021124
+DISTNAME=	ddskk-20030629
 CATEGORIES=	japanese inputmethod
 MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,6 +15,7 @@ DEPENDS=	${PKGNAME_PREFIX}apel>=10.2:../../devel/apel
 MAKEFLAGS=	EMACS=${EMACS_BIN}
 ALL_TARGET=	elc
 
+USE_NEW_TEXINFO=YES
 INFO_FILES=	skk.info
 
 do-configure:
@@ -39,5 +40,4 @@ post-build:
 	} >${PKGDIR}/PLIST
 
 .include "../../mk/emacs.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
