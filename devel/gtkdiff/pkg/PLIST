@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/gtkdiff
+bin/gtkdiff-rcs
+man/man1/gtkdiff.1
+man/man1/gtkdiff-rcs.1
+share/gnome/apps/Utilities/gtkdiff.desktop
+share/gtkdiff/gtkdiffrc
+@dirrm share/gtkdiff
