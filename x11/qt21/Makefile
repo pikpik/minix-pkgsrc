@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/06/01 11:23:47 rh Exp $
+# $NetBSD: Makefile,v 1.5 2000/06/30 10:42:56 skrll Exp $
 #
 
 DISTNAME=	qt-x11-2.1.1
@@ -38,8 +38,9 @@ CONFIGURE_ARGS+=	-gif
 .endif
 
 .if ${OPSYS} == "SunOS"
-DEPENDS+=	egcs-1.1.2:../../lang/egcs
-CXX=		${LOCALBASE}/egcs/bin/g++
+BUILD_DEPENDS+=	${LOCALBASE}/egcs/bin/g++:../../lang/egcs
+CONFIGURE_ENV+=	CXX=${LOCALBASE}/egcs/bin/g++
+CONFIGURE_ARGS+=-platform solaris-g++
 .endif
 
 do-install:
