@@ -1,4 +1,4 @@
-# $nEtBSD: Makefile,v 1.2 2004/04/02 18:12:37 recht Exp $
+# $NetBSD$
 #
 
 DISTNAME=	evolution-data-server-0.0.93
