@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1454 2004/04/27 22:35:47 tv Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1455 2004/05/08 02:13:00 reed Exp $
 #
 # This file is in the public domain.
 #
@@ -1305,7 +1305,8 @@ HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--x-includes=${X11BASE}/include
 CONFIGURE_ARGS+=        --x-libraries=${X11BASE}/lib
 .  endif
-.  if !empty(INFO_FILES) && !defined(NO_CONFIGURE_INFODIR)
+CONFIGURE_HAS_INFODIR?=	yes
+.  if !empty(INFO_FILES) && !empty(CONFIGURE_HAS_INFODIR:M[yY][eE][sS])
 CONFIGURE_ARGS+=	--infodir=${PREFIX}/${INFO_DIR}
 .  endif
 #
