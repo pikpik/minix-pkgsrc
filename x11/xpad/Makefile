@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/02 07:19:20 xtraeme Exp $
 #
 
-DISTNAME=	xpad-1.11
+DISTNAME=	xpad-1.12
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xpad/}
 EXTRACT_SUFX=	.tar.bz2
