@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/02/10 02:56:00 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use libxslt.
 #
@@ -14,7 +14,7 @@ BUILDLINK_DEPENDS+=	libxslt
 
 .if !empty(LIBXSLT_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=			libxslt
-BUILDLINK_DEPENDS.libxslt+=		libxslt>=1.1.2nb1
+BUILDLINK_DEPENDS.libxslt+=		libxslt>=1.1.0
 BUILDLINK_PKGSRCDIR.libxslt?=		../../textproc/libxslt
 
 .include "../../textproc/libxml2/buildlink3.mk"

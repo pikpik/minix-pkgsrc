@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/02/10 02:16:02 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use libIDL.
 #
@@ -14,7 +14,7 @@ BUILDLINK_DEPENDS+=	libIDL
 
 .if !empty(LIBIDL_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=			libIDL
-BUILDLINK_DEPENDS.libIDL?=		libIDL>=0.8.3
+BUILDLINK_DEPENDS.libIDL?=		libIDL>=0.8.2
 BUILDLINK_PKGSRCDIR.libIDL?=		../../net/libIDL
 
 .include "../../devel/gettext-lib/buildlink3.mk"
