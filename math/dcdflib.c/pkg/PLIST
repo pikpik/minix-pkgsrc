@@ -1,0 +1,10 @@
+@comment $NetBSD$
+include/dcdflib.h
+lib/libdcdflib.a
+lib/libdcdflib.la
+lib/libdcdflib.so.0
+lib/libdcdflib.so.0.0
+share/doc/dcdflib.c/README
+share/doc/dcdflib.c/dcdflib.chs
+share/doc/dcdflib.c/dcdflib.fdoc
+@dirrm share/doc/dcdflib.c
