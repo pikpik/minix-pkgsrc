@@ -1,11 +1,7 @@
-$NetBSD: TODO,v 1.74 2001/12/19 23:22:38 jlam Exp $
+$NetBSD: TODO,v 1.75 2001/12/20 20:49:45 jlam Exp $
 
 packages TODO (Suggested new packages)
 ^^^^^^^^^^^^^
-	tct
-	programs to aid post-mortem after a break-in
-	http://www.porcupine.org/forensics/tct.html
-
 	compat_solaris8
 	Solaris and Intel compat libraries
 	http://www.sun.com/software/solaris/binaries/download.html
