@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:51:30 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/09 20:36:42 agc Exp $
 #
 
 DISTNAME=	pkgmanpages-19991222
@@ -19,6 +19,6 @@ PREFIX=		/usr/share
 .endif
 
 do-install:
-	${BSD_INSTALL_MAN} ${WRKSRC}/packages.7 ${PREFIX}/man/man7
+	${INSTALL_MAN} ${WRKSRC}/packages.7 ${PREFIX}/man/man7
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/18 21:38:32 sjg Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/19 16:37:49 sjg Exp $
 #
 
 DISTNAME=       mk-1.2.5
@@ -37,10 +37,10 @@ ${WRKDIR}/.PLIST_SRC:	${PKGDIR}/PLIST
 
 do-install:
 .if ${OPSYS} != "NetBSD"
-	${BSD_INSTALL_DATA} ${WRKSRC}/`uname -s`.sys.mk ${PREFIX}/share/mk/sys.mk
+	${INSTALL_DATA} ${WRKSRC}/`uname -s`.sys.mk ${PREFIX}/share/mk/sys.mk
 .endif
 	for f in ${MKFILES}; do						\
-		${BSD_INSTALL_DATA} ${WRKSRC}/$$f ${PREFIX}/share/mk/;	\
+		${INSTALL_DATA} ${WRKSRC}/$$f ${PREFIX}/share/mk/;	\
 	done
 
 .include "../../mk/bsd.pkg.mk"

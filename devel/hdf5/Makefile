@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/04/30 00:26:20 jtb Exp $
+# $NetBSD: Makefile,v 1.11 2001/05/12 05:47:25 tron Exp $
 
 DISTNAME=		hdf5-1.4.1
 CATEGORIES=		devel
@@ -17,7 +17,7 @@ USE_LIBTOOL=		#defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/bin/ltconfig
 
 pre-install:
-	${LIBTOOL} --mode=install ${BSD_INSTALL_DATA} \
+	${LIBTOOL} --mode=install ${INSTALL_DATA} \
 	  ${WRKSRC}/tools/lib/libh5tools.la ${PREFIX}/lib
 
 post-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/09/27 23:18:02 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/11/29 01:12:32 hubertf Exp $
 
 DISTNAME=		hercules-2.11
 PKGREVISION=		1
@@ -18,7 +18,7 @@ MAKE_ENV+=		HOST_ARCH=${MACHINE_ARCH}
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/hercules
-	${BSD_INSTALL_DATA} ${WRKSRC}/hercules.cnf ${PREFIX}/share/examples/hercules/
-	${BSD_INSTALL_DATA} ${WRKSRC}/zzsa.cnf ${PREFIX}/share/examples/hercules/
+	${INSTALL_DATA} ${WRKSRC}/hercules.cnf ${PREFIX}/share/examples/hercules/
+	${INSTALL_DATA} ${WRKSRC}/zzsa.cnf ${PREFIX}/share/examples/hercules/
 
 .include "../../mk/bsd.pkg.mk"

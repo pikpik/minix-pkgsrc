@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/12/28 04:41:37 taya Exp $
+# $NetBSD: Makefile,v 1.22 2001/12/29 14:39:04 abs Exp $
 
 DISTNAME=	galeon-1.0.2
 CATEGORIES=	www
@@ -54,6 +54,6 @@ post-install:
 	${CHOWN} ${BINOWN} ${PREFIX}/bin/galeon
 	${CHGRP} ${BINGRP} ${PREFIX}/bin/galeon
 	${CHMOD} ${BINMODE} ${PREFIX}/bin/galeon
-	${BSD_INSTALL_PROGRAM_DIR} ${PREFIX}/lib/galeon
+	${INSTALL_PROGRAM_DIR} ${PREFIX}/lib/galeon
 
 .include "../../mk/bsd.pkg.mk"
