@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/02/21 10:10:04 adam Exp $
+# $NetBSD: Makefile,v 1.18 2005/04/04 09:32:02 adam Exp $
 
 .include	"../nessus/Makefile.common"
 
@@ -14,20 +14,6 @@ USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
-
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-CONFIGURE_ARGS+=	--with-fetchcmd=/usr/bin/ftp
-.else
-CONFIGURE_ARGS+=	--with-fetchcmd=${PREFIX}/bin/ftp
-.endif
-
-SUBST_CLASSES+=		fetch
-SUBST_STAGE.fetch=	post-configure
-SUBST_FILES.fetch=	nessus-update-plugins
-SUBST_SED.fetch=	-e "s|fetch_args=\"\"|fetch_args=\"-o -\"|g"
-SUBST_MESSAGE.fetch=	"Fixing fetch parameters."
 
 PLIST_SRC=	${WRKDIR}/PLIST PLIST
 
