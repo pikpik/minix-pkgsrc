@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/16 17:17:56 tron Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/16 17:21:25 tron Exp $
 
 DISTNAME=	fxtv-1.02
 CATEGORIES=	graphics
@@ -19,6 +19,8 @@ USE_XAW=	yes
 USE_X11BASE=	yes
 
 .include "../../mk/bsd.prefs.mk"
+
+MAKE_ENV+=	X11PREFIX=${X11PREFIX}
 
 XAW_TYPE?=	3d
 
