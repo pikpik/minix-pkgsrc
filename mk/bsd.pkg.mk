@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1461 2004/05/19 01:27:03 jschauma Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1462 2004/05/19 03:26:09 jschauma Exp $
 #
 # This file is in the public domain.
 #
@@ -156,6 +156,7 @@ BUILDLINK_X11_DIR?=	${X11BASE}
 .endif
 
 .if defined(USE_IMAKE)
+PREPEND_PATH+=		${X11BASE}/bin
 USE_X11BASE?=		implied
 PLIST_SUBST+=          IMAKE_MAN_SOURCE_PATH=${IMAKE_MAN_SOURCE_PATH}  \
                        IMAKE_MAN_DIR=${IMAKE_MAN_DIR}                  \
