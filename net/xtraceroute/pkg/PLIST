@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xtraceroute
+share/xtraceroute/earth.tif
+share/xtraceroute/site_hosts.cache
+share/xtraceroute/site_networks.cache
