@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Wais/Wais.bs
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Wais/Wais.so
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Wais

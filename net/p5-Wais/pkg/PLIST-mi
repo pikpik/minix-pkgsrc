@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/inspect
+man/man1/inspect.1
+lib/perl5/man/man3/Wais.3
+lib/perl5/site_perl/Wais.pm
+lib/perl5/site_perl/Wais/Dict.pm
+@dirrm lib/perl5/site_perl/Wais
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Wais/.packlist
