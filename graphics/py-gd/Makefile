@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/05/03 20:25:37 tv Exp $
+# $NetBSD: Makefile,v 1.3 1999/11/01 03:34:31 jlam Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	py-gd-1.3
@@ -10,7 +10,7 @@ MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://starship.python.net/~richard/gdmodule/
 
 DEPENDS+=	python-1.5.2:../../lang/python
-DEPENDS+=	gd-1.7.3:../../graphics/gd
+DEPENDS+=	gd>=1.8.3:../../graphics/gd
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}
