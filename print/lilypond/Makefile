@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/02/18 15:14:38 seb Exp $
+# $NetBSD: Makefile,v 1.6 2002/03/13 17:37:36 fredb Exp $
 #
 
 DISTNAME=	lilypond-1.3.119
@@ -12,6 +12,7 @@ COMMENT=	GNU Music Typesetter
 
 DEPENDS+=	guile>=1.3.4:../../lang/guile
 DEPENDS+=	teTeX>=1.0.7:../../print/teTeX
+BUILD_DEPENDS+=	bison>=1.32:../../devel/bison
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
