@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/05/20 20:09:52 tron Exp $
+# $NetBSD: Makefile,v 1.8 1999/07/13 01:20:14 jlam Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -40,6 +40,8 @@ CONFIGURE_ARGS+=	--with-user=${AMANDA_USER} \
 			--with-gnutar-listdir=${AMANDA_VAR}/gnutar-lists \
 			--with-dump-honor-nodump \
 			--without-client
+
+BUILD_DEFS+=		AMANDA_USER AMANDA_SMB AMANDA_VAR
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/amanda
