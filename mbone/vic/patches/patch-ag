@@ -1,14 +1,15 @@
 $NetBSD$
 
---- configure.in.orig	Fri Jun 21 02:36:47 1996
-+++ configure.in	Wed Jan 26 17:52:18 2000
-@@ -226,7 +226,11 @@
+--- ./configure.in.orig	Fri Jun 21 08:36:47 1996
++++ ./configure.in	Wed Feb  2 13:38:58 2000
+@@ -226,7 +226,12 @@
  	;;
  *-*-netbsd*)
  	V_TARCMD="tar -h -c -f"
 -	V_LIB="$V_LIB -L/usr/local/lib"
 +	V_LIB="${LDFLAGS} $V_LIB"
 +	V_SHM=""
++	V_STATIC=""
 +	;;
 +*-*-freebsd*)
 +	V_STATIC=""
