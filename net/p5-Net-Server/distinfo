@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.1.1.1 2003/04/13 15:45:49 cjep Exp $
+$NetBSD: distinfo,v 1.2 2003/09/16 13:45:45 xtraeme Exp $
 
-SHA1 (Net-Server-0.85.tar.gz) = 27202158006fd63db1e31bd390bbaa53fb324f27
-Size (Net-Server-0.85.tar.gz) = 71056 bytes
+SHA1 (Net-Server-0.86.tar.gz) = 1b96d6803548be3f5672292f691f452fa81ec211
+Size (Net-Server-0.86.tar.gz) = 71370 bytes
