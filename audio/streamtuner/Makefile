@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/16 05:58:49 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/04 14:41:17 salo Exp $
 #
 
 DISTNAME=	streamtuner-0.9.1
@@ -6,7 +6,7 @@ CATEGORIES=	audio www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=streamtuner/}
 
 MAINTAINER=	jrp@hispabsd.org
-HOMEPAGE=	http://streamtuner.sourceforge.net/
+HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Stream directory browser
 
 USE_BUILDLINK2=	YES
