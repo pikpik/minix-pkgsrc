@@ -13,3 +13,18 @@ $NetBSD$
  
  
  #if USE_STRINGS
+@@ -47,14 +45,6 @@ extern int errno;
+ #include <string.h>
+ #endif
+ 
+-#if USE_MALLOC_H
+-#include <malloc.h>
+-#else
+-#if NEED_MALLOC_EXTERN
+-extern char *malloc(), *calloc(), *realloc();
+-#endif
+-#endif
+-
+ /* from std_version.m */
+ /* from std_help.m */
+ /* from scan.m */

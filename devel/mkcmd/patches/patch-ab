@@ -10,3 +10,18 @@ $NetBSD$
  
  #include "machine.h"
  #include "type.h"
+@@ -26,14 +27,6 @@
+ #include <string.h>
+ #endif
+ 
+-#if USE_MALLOC_H
+-#include <malloc.h>
+-#else
+-#if NEED_MALLOC_EXTERN
+-extern char *malloc(), *calloc(), *realloc();
+-#endif
+-#endif
+-
+ #if TILDEDIR
+ #include <pwd.h>
+ #endif
