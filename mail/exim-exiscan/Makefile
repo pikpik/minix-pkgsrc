@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/06/06 22:10:51 abs Exp $
+# $NetBSD: Makefile,v 1.13 2004/08/13 15:10:48 abs Exp $
 
 DISTNAME=	exim-${EXIM_VERSION}
 PKGNAME=	exim-exiscan-${EXIM_VERSION}_${EXISCAN_VERSION}
@@ -10,7 +10,7 @@ COMMENT=	The Exim mail transfer agent, with exiscan-acl patches
 
 CONFLICTS+=	exim-[0-9]*
 
-EXISCAN_VERSION=22
+EXISCAN_VERSION=27
 
 PATCH_SITES=    http://duncanthrax.net/exiscan-acl/
 PATCHFILES=     exiscan-acl-${EXIM_VERSION}-${EXISCAN_VERSION}.patch.bz2

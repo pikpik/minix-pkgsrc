@@ -1,6 +1,6 @@
 $NetBSD$
 
---- OS/Makefile-NetBSD.orig	Wed May  5 11:08:35 2004
+--- OS/Makefile-NetBSD.orig	2004-08-26 15:09:59.000000000 +0100
 +++ OS/Makefile-NetBSD
 @@ -1,7 +1,7 @@
  # Exim: OS-specific make file for NetBSD (ELF object format)
