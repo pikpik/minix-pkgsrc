@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- atk.pc.in.orig	Tue Mar  5 12:27:29 2002
++++ atk.pc.in
+@@ -7,5 +7,5 @@
+ Description: Accessibility Toolkit
+ Version: @VERSION@
+ Requires: @GLIB_PACKAGES@
+-Libs: -L${libdir} -latk-@ATK_API_VERSION@
++Libs: -L${libdir} -R${libdir} -latk-@ATK_API_VERSION@
+ Cflags: -I${includedir}/atk-1.0
