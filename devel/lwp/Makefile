@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/06/04 20:56:10 jschauma Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:13:31 tv Exp $
 #
 
 DISTNAME=	lwp-1.10
@@ -15,7 +15,7 @@ COMMENT=	Light Weight Process style threads
 # each arch. Mips has it, but it evidently needs more work.
 #
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-m68k NetBSD-*-sparc* \
-			NetBSD-*-arm NetBSD-*-arm32 Linux-*-i386
+			NetBSD-*-arm NetBSD-*-arm32 Linux-*-i386 NetBSD-*-x86_64
 
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
