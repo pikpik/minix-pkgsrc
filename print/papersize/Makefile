@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2003/06/02 01:17:28 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:52:36 grant Exp $
 #
 
-DISTNAME=	papersize-1.0.5
+DISTNAME=	papersize-1.0.6
 WRKSRC=		${WRKDIR}
 CATEGORIES=	print
 MASTER_SITES=	# empty
