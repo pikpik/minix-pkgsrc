@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.4 2004/03/08 19:55:35 minskim Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/04/09 23:37:28 danw Exp $
 bin/tclsh
 bin/tclsh8.4
 include/tcl.h
+include/tcl/generic/regex.h
 include/tcl/generic/tcl.h
 include/tcl/generic/tclCompile.h
 include/tcl/generic/tclDecls.h
