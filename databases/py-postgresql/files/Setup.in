@@ -1,0 +1,4 @@
+# $NetBSD$
+#
+*shared*
+_pg pgmodule.c -I@PGPREFIX@/include -L@PGPREFIX@/lib -lpq -lcrypt -DNO_DIRECT
