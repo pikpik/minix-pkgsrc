@@ -1,36 +1,19 @@
-# $NetBSD: Makefile,v 1.36 2001/06/27 18:06:45 jlam Exp $
-#
+# $NetBSD$
 
-COMMENT=	Communication utilities
+PKGNAME=        dl-ezkit-0.8.1
+DISTNAME=	dl-ezkit-0.8.1-bsd
+CATEGORIES=	comms
+MASTER_SITES=	http://www.ww.tu-freiberg.de/~pberg/download/Unix-sources/
 
-SUBDIR+=	binkd
-SUBDIR+=	efax
-SUBDIR+=	estic
-SUBDIR+=	fidogate
-SUBDIR+=	gkermit
-SUBDIR+=	hylafax
-SUBDIR+=	ifcico-cm
-SUBDIR+=	jpilot
-SUBDIR+=	jpilot-expense
-SUBDIR+=	jpilot-syncmal
-SUBDIR+=	jpilot-synctime
-SUBDIR+=	kermit
-SUBDIR+=	lrzsz
-SUBDIR+=	malsync
-SUBDIR+=	mgetty+sendfax
-SUBDIR+=	minicom
-SUBDIR+=	modemd
-SUBDIR+=	p5-Device-SerialPort
-SUBDIR+=	p5-pilot-link
-SUBDIR+=	pilot-link
-SUBDIR+=	pilot-link-libs
-SUBDIR+=	pilotmgr
-SUBDIR+=	plp
-SUBDIR+=	plptools
-SUBDIR+=	qpage
-SUBDIR+=	ruby-termios
-SUBDIR+=	snooper
-SUBDIR+=	tkhylafax
-SUBDIR+=	xisp
+MAINTAINER=	gmcgarry@netbsd
+HOMEPAGE=	http://www.ww.tu-freiberg.de/~pberg/download/
+COMMENT=	coff file downloader for the EZ-KIT Lite using the RS232
 
-.include "../mk/bsd.pkg.subdir.mk"
+WRKSRC=		${WRKDIR}/dl-ezkit
+MAKEFILE=	Makefile.bsd
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/dl ${PREFIX}/bin/
+
+.include "../../mk/bsd.pkg.mk"
+
