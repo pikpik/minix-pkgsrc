@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/03/31 05:02:18 grant Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/03/31 05:07:52 grant Exp $
 #
 
 .if !defined(LIBNBCOMPAT_BUILDLINK2_MK)
@@ -22,7 +22,7 @@ BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/md5.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/mtree.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/namespace.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/nbcompat.h
-BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/nb-types.h
+BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/nbtypes.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/pack_dev.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/pwcache.h
 BUILDLINK_FILES.libnbcompat+=	include/libnbcompat/rmd160.h
