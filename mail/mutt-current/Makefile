@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/03/14 13:53:11 pooka Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/30 13:31:34 pooka Exp $
 
 DISTNAME=	mutt-1.1.10i
 WRKSRC=		${WRKDIR}/mutt-1.1.10
@@ -28,6 +28,8 @@ LDFLAGS+=	-s
 
 MIRROR_DISTFILE=no
 RESTRICTED=	"Contains PGP code"
+
+IGNORE=		"Stable mutt avaiable in mail/mutt"
 
 .include "../../mk/bsd.prefs.mk"
 
