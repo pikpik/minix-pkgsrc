@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2000/08/25 16:16:50 jlam Exp $
+# $NetBSD: Makefile,v 1.135 2000/08/25 22:28:50 tron Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -90,6 +90,7 @@
     SUBDIR += p5-Date-Calc
     SUBDIR += p5-Date-Manip
     SUBDIR += p5-Devel-DProf
+    SUBDIR += p5-Devel-Peek
     SUBDIR += p5-Devel-SmallProf
     SUBDIR += p5-Devel-Symdump
     SUBDIR += p5-Expect
