@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1998/03/08 00:49:34 tron Exp $
 bin/gddemo
 bin/giftogd
 bin/webgif
@@ -9,6 +9,7 @@ include/gd/gdfontmb.h
 include/gd/gdfonts.h
 include/gd/gdfontt.h
 lib/libgd.a
+lib/libgd.so.0.0
 share/examples/gd/demoin.gif
 share/examples/gd/index.html
 @dirrm include/gd
