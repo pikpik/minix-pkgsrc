@@ -1,0 +1,10 @@
+@comment $NetBSD$
+include/mikmod.h
+lib/libmikmod.la
+lib/libmikmod.so.2.0
+lib/libmikmod.a
+@unexec install-info --delete %D/info/mikmod.info %D/info/dir
+info/mikmod.info
+@exec install-info %D/info/mikmod.info %D/info/dir
+bin/libmikmod-config
+share/aclocal/libmikmod.m4
