@@ -1,3 +1,7 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
 # PROVIDE: chronyd
 # REQUIRE: DAEMON
 
