@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/07/28 19:58:57 rh Exp $
 share/doc/phylip/main.doc
 share/doc/phylip/contchar.doc
 share/doc/phylip/discrete.doc

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/03/13 04:41:59 wiz Exp $
 bin/rasmol
 share/doc/rasmol/rasmol.hlp
 share/doc/rasmol/NOTICE
