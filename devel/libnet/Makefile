@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 21:31:37 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/08/31 10:08:24 seb Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/${DISTNAME:C/l/L/}
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
