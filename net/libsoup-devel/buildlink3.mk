@@ -11,7 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibsoup-devel}
 BUILDLINK_PACKAGES+=	libsoup-devel
 
 .if !empty(LIBSOUP_DEVEL_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.libsoup-devel+=	libsoup-devel>=2.1.8
+BUILDLINK_DEPENDS.libsoup-devel+=	libsoup-devel>=2.1.10
 BUILDLINK_PKGSRCDIR.libsoup-devel?=	../../net/libsoup-devel
 .endif	# LIBSOUP_DEVEL_BUILDLINK3_MK
 
