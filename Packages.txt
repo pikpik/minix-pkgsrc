@@ -1,4 +1,4 @@
-# $NetBSD: Packages.txt,v 1.199 2001/10/11 11:11:15 martti Exp $
+# $NetBSD: Packages.txt,v 1.200 2001/10/11 13:21:08 wiz Exp $
 ###########################################################################
 
 			==========================
@@ -371,6 +371,7 @@ policy:
     PKG_DEVELOPER?=         yes
     ACCEPTABLE_LICENSES=    shareware \
                             fee-based-commercial-use \
+			    mosaic-license \
                             no-profit \
                             no-commercial-use \
                             non-commercial-use \
