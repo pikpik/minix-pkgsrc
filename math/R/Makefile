@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/05/24 13:24:36 markd Exp $
+# $NetBSD: Makefile,v 1.35 2002/06/16 02:56:50 dmcmahill Exp $
 
 DISTNAME=		R-1.4.1
 PKGREVISION=		2
@@ -32,7 +32,7 @@ CONFIGURE_ENV+=		XMKMF="${XMKMF}"
 # Use BLAS (math/blas)
 #
 CONFIGURE_ARGS+=	--without-atlas
-CONFIGURE_ARGS+=	--with-blas
+CONFIGURE_ARGS+=	--with-blas=${BUILDLINK_DIR}/lib/libblas.a
 CONFIGURE_ARGS+=	--without-blas_risc
 CONFIGURE_ARGS+=	--without-dxml
 CONFIGURE_ARGS+=	--without-libmoto
