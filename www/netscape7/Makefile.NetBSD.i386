@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.NetBSD.i386,v 1.5 2002/10/11 20:50:42 jschauma Exp $
+# $NetBSD: Makefile.NetBSD.i386,v 1.6 2002/10/14 14:22:50 jschauma Exp $
 #
 
 DIST_DIR_NAME=		linux22
@@ -19,8 +19,8 @@ post-extract:
 
 # try to keep emul root clean
 pre-clean:
-	if [ "${INSTDIR}" != "${WRKSRC}/dest" ] && [ -d ${INSTDIR} ]; then	\
-		cd ${INSTDIR}/../../ && ${RM} -fr *;				\
+	if [ -d ${PREFIX}/emul/linux${WRKDIR} ]; then			\
+		cd ${PREFIX}/emul/linux${WRKDIR}/.. && ${RM} -fr *;	\
 	fi
 
 .include "../../emulators/suse_linux/Makefile.application"
