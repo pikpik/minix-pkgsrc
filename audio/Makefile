@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.61 2000/05/07 20:50:36 tron Exp $
+# $NetBSD: Makefile,v 1.62 2000/06/19 22:48:44 pooka Exp $
 #
 
     SUBDIR += ac3dec
     SUBDIR += amp
+    SUBDIR += aumix
     SUBDIR += bladeenc
     SUBDIR += cam
     SUBDIR += cdd
