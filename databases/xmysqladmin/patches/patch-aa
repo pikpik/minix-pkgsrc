@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.1.1.1 1999/08/05 17:20:11 bad Exp $
+$NetBSD$
 
---- Makefile.orig	Mon Dec  7 12:52:39 1998
-+++ Makefile	Thu Aug  5 19:08:30 1999
+--- Makefile.orig	Mon Dec  7 05:52:39 1998
++++ Makefile
 @@ -34,7 +34,7 @@
  # This is used by 'make install' command
  #-------------------------------------------------------
@@ -76,7 +76,7 @@ $NetBSD: patch-aa,v 1.1.1.1 1999/08/05 17:20:11 bad Exp $
  #-------------------------------------------------------
  #XFORMLIBDIR = -L/opt/local/i386/lib
 -XFORMLIBDIR = -L/usr/lib
-+XFORMLIBDIR = 
++XFORMLIBDIR = -L${LOCALBASE}/lib -Wl,-R${LOCALBASE}lib
  ########################################################
  
  
@@ -107,8 +107,9 @@ $NetBSD: patch-aa,v 1.1.1.1 1999/08/05 17:20:11 bad Exp $
  ${PROGRAM}: $(OBJS)
  	$(CC) -o ${PROGRAM} $(OBJS) $(MYSQLINC) $(XFORMINCDIR) \
  	$(XINC) $(STDLFLAGS) $(MYSQLLOAD) \
- 	$(XLOAD) $(XFORMLIBDIR) -lforms $(LIBS)
+-	$(XLOAD) $(XFORMLIBDIR) -lforms $(LIBS)
 -	./$(PROGRAM)
++	$(XLOAD) $(XFORMLIBDIR) -lforms -ljpeg $(LIBS)
  
  .c.o:
  	$(CC) $*.c $(STDCFLAGS) $(XFORMINCDIR) $(MYSQLINC) $(MYSQLDBDIR) $(XINC)
