@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/31 23:47:32 jdolecek Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/27 22:34:19 jdolecek Exp $
 
 DISTNAME=	jpgraph-1.16
 PKGNAME=	php-${DISTNAME}
@@ -51,5 +51,4 @@ do-install:
 	done
 	cd ${WRKSRC}/docs && ${PAX} -rw . ${PREFIX}/share/doc/html/php-jpgraph
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
