@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 15:25:32 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:17:55 hubertf Exp $
 
 PKGNAME=		ja-vflib-lib-${VFLIB_VERSION}
 
@@ -11,10 +11,10 @@ INSTALL_TARGET=		install-src
 
 post-build:
 .for FILE in vfontcap vfontcap.bdf
-	cd ${WRKSRC}; \
-	${MV} ${FILE} ${FILE}.orig; \
-	${SED} -e "s,/usr/local/share/fonts,${PREFIX}/share/fonts,g" \
-		< ${FILE}.orig > ${FILE}; \
+	cd ${WRKSRC};							\
+	${MV} ${FILE} ${FILE}.orig;					\
+	${SED} -e "s|/usr/local/share/fonts|${PREFIX}/share/fonts|g"	\
+		${FILE}.orig > ${FILE};					\
 	${RM} ${FILE}.orig
 .endfor
 
