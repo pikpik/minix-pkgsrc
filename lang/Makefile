@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.153 2003/06/24 13:37:28 agc Exp $
+# $NetBSD: Makefile,v 1.154 2003/07/01 19:04:22 jlam Exp $
 #
 
 COMMENT=	Programming languages
@@ -37,6 +37,12 @@ SUBDIR+=	gb
 SUBDIR+=	gcc
 SUBDIR+=	gcc-ssp
 SUBDIR+=	gcc3
+SUBDIR+=	gcc3-ada
+SUBDIR+=	gcc3-c
+SUBDIR+=	gcc3-c++
+SUBDIR+=	gcc3-f77
+SUBDIR+=	gcc3-java
+SUBDIR+=	gcc3-objc
 SUBDIR+=	gforth
 SUBDIR+=	ghc
 SUBDIR+=	gpc
