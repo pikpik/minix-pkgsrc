@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.315 2004/04/11 18:26:43 snj Exp $
+# $NetBSD: Makefile,v 1.316 2004/04/12 18:20:30 kim Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -187,6 +187,7 @@ SUBDIR+=	p5-Template-Toolkit
 SUBDIR+=	p5-URI
 SUBDIR+=	p5-VRML
 SUBDIR+=	p5-WWW-Amazon-Wishlist
+SUBDIR+=	p5-WWW-Mechanize
 SUBDIR+=	p5-libapreq
 SUBDIR+=	p5-libapreq2
 SUBDIR+=	p5-libwww
