@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/24 14:50:05 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/30 21:44:39 david Exp $
 
 DISTNAME=	freeradius-0.9.3
 CATEGORIES=	net
@@ -12,7 +12,7 @@ COMMENT=	Free RADIUS server implementation
 CONFLICTS+=	radiusd-cistron*
 USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	yes
-USE_BUILDLINK2= YES
+USE_BUILDLINK3= YES
 USE_LIBTOOL=	YES
 USE_PKGINSTALL=	YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
@@ -42,9 +42,9 @@ post-install:
 		${INSTALL_DATA} $$f ${EGDIR}/$$f; \
 	done
 
-.include "../../databases/gdbm/buildlink2.mk"
-.include "../../devel/libtool/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../databases/gdbm/buildlink3.mk"
+.include "../../devel/libtool/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "none"
 CONFIGURE_ARGS+=	--with-threads=no

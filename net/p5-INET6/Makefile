@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/12/17 14:22:30 martti Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/28 02:21:04 grant Exp $
 #
 
 DISTNAME=	INET6-2.00
@@ -10,9 +10,9 @@ MAINTAINER=	adrianp@stindustries.net
 HOMEPAGE=	http://search.cpan.org/~mondejar/INET6/
 COMMENT=	Object interface for AF_INET|AF_INET6 domain sockets
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/IO/Socket/INET6/.packlist
 
-.include "../../net/p5-Socket6/buildlink2.mk"
+.include "../../net/p5-Socket6/buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
