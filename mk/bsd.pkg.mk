@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.589 2000/10/19 02:30:05 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.590 2000/10/22 08:22:24 rh Exp $
 #
 # This file is in the public domain.
 #
@@ -2364,9 +2364,8 @@ makesum: fetch
 	done
 .endif
 
-mps: makepatchsum
 .if !target(makepatchsum)
-makepatchsum:
+makepatchsum mps:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	(${MKDIR} ${FILESDIR};						\
 	${ECHO_MSG} "${_PKGSRC_IN}> Making patch checksums";			\
