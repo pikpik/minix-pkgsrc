@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:42:04 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/28 12:34:02 seb Exp $
 #
 
 DISTNAME=	GraphViz-1.8
@@ -14,11 +14,10 @@ DEPENDS+=	p5-IPC-Run>=0.74:../../devel/p5-IPC-Run
 DEPENDS+=	p5-Math-Bezier>=0.01:../../math/p5-Math-Bezier
 DEPENDS+=	p5-Math-Bezier>=0.01:../../math/p5-Math-Bezier
 DEPENDS+=	p5-Test-Simple-[0-9]*:../../devel/p5-Test-Simple
+DEPENDS+=	graphviz-[0-9]*:../../graphics/graphviz
 
-USE_BUILDLINK2=		yes
-USE_X11=		yes
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/GraphViz/.packlist
 
-.include "../../graphics/graphviz/buildlink2.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
