@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/28 20:05:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/14 17:21:39 jlam Exp $
 #
 
 DISTNAME=	yasm-0.2.2
@@ -12,11 +12,11 @@ COMMENT=	Complete rewrite of the NASM assembler with BSD license
 
 BUILD_USES_MSGFMT=	YES
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_PERL5=		build
 
-.include "../../converters/libiconv/buildlink2.mk"
-.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

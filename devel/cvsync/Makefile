@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2004/04/09 01:06:23 gehenna Exp $
+# $NetBSD: Makefile,v 1.61 2004/04/17 03:25:47 gehenna Exp $
 #
 
 DISTNAME=	cvsync-0.24.15
@@ -9,7 +9,7 @@ MAINTAINER=	gehenna@NetBSD.ORG
 HOMEPAGE=	http://www.cvsync.org/
 COMMENT=	Portable incremental cvs repository syncer
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_GNU_TOOLS+=	make
 
@@ -25,5 +25,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/samples/cvsyncd-NetBSD.conf ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/samples/cvsyncd-OpenBSD.conf ${EGDIR}
 
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
