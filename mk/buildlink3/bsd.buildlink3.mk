@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.133 2004/03/29 06:05:10 jlam Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.134 2004/03/30 17:25:19 jlam Exp $
 #
 # An example package buildlink3.mk file:
 #
@@ -138,7 +138,6 @@ _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/--$/mm/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^PAM$/pam/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^freetype-lib$/freetype/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^gettext-lib$/gettext/}
-_BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^heimdal-lib$/heimdal/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^libaudiofile$/audiofile/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^libgetopt$/getopt/}
 _BLNK_TMP_PKGVAR:=	${_BLNK_TMP_PKGVAR:S/^libiconv$/iconv/}
