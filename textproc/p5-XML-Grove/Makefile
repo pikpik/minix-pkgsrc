@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/27 19:30:25 seb Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:54:39 grant Exp $
 #
 
 DISTNAME=	XML-Grove-0.46alpha
@@ -13,7 +13,7 @@ COMMENT=	Perl 5 module providing simple objects for parsed XML documents
 
 DEPENDS+=	p5-libxml>=0.0.7:../../textproc/p5-libxml
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/Grove/.packlist
 
 .include "../../lang/perl5/module.mk"

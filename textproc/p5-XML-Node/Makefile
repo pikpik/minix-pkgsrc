@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/10/19 14:42:47 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:54:40 grant Exp $
 #
 
 DISTNAME=	XML-Node-0.10
@@ -15,7 +15,7 @@ COMMENT=	Node-based XML parsing: an simplified interface to XML::Parser
 
 DEPENDS+=	p5-XML-Parser-2.*:../p5-XML-Parser
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/Node/.packlist
 
 post-install:

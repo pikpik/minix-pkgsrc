@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/08/09 11:27:49 seb Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/20 12:26:49 agc Exp $
 #
 
 DISTNAME=	ispell-3.1.20
@@ -26,7 +26,7 @@ INFO_FILES=	ispell.info
 CFLAGS+=	-DHAVE_INTTYPES_H
 .endif
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
