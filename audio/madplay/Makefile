@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/02/13 06:10:11 simonb Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/16 13:30:46 wiz Exp $
 #
 
 DISTNAME=	mad-0.12.5b
@@ -15,7 +15,10 @@ BUILD_DEPENDS+= msgfmt:../../devel/gettext
 
 GNU_CONFIGURE=	YES
 USE_LIBINTL=	YES
+# XXX instead, libtool should know how to build shared arm32 libs.
+.if (${MACHINE_ARCH} != "arm32")
 USE_LIBTOOL=	YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+.endif
 
 .include "../../mk/bsd.pkg.mk"
