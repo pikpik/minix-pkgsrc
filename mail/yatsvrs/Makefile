@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:47:14 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/10/05 04:25:14 taca Exp $
 #
 
 DISTNAME=		yatsvrs-5.00p6
 PKGNAME=		${DISTNAME:S/p/./}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.jone-system.com/pub/jepro/yatsvr/
 
