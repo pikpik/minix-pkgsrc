@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:08:12 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/07/04 06:43:01 mrg Exp $
 
 DISTNAME=	kttcp-${VERSION}
 CATEGORIES=	benchmarks net
@@ -12,11 +12,15 @@ VERSION=	20020711
 
 ONLY_FOR_PLATFORM=	NetBSD-1.6[B-Z]*-* NetBSD-1.[7-9]* NetBSD-[2-9]*
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	# defined
 
 WRKSRC=		${WRKDIR}
 MAKE_ENV+=	BINDIR=${LOCALBASE}/bin MANDIR=${LOCALBASE}/man
+
+INSTALLATION_DIRS=	bin
 
 post-extract:
 	@for FILE in Makefile kttcp.c					\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/03/29 12:40:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/20 12:08:12 agc Exp $
 
 DISTNAME=		linpackc
 PKGNAME=		linpack-bench-940225
@@ -9,7 +9,11 @@ EXTRACT_SUFX=		# empty
 MAINTAINER=		root@garbled.net
 COMMENT=		Collection of benchmarks for floating point
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 WRKSRC=			${WRKDIR}
+
+INSTALLATION_DIRS=	bin
 
 do-extract:
 	${MKDIR} ${WRKSRC}
