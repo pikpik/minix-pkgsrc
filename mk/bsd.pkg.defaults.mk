@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.66 2002/06/15 15:26:15 fredb Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.67 2002/06/23 02:20:08 kei Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -933,6 +933,11 @@ MPLAYER_FONT?= iso-8859-1/arial-18
 # Used by motif.buildlink.mk as the final default value for MOTIF12_TYPE.
 # Possible:  lesstif12, dt (for Solaris only)
 # Default: lesstif12, or dt (for Solaris only)
+
+#MPG123_ARM_FIXED64=YES
+# Used by mpg123 and mpg123-esound to enable ARM to use 64bit fixedpoint
+# Possible: not defined, YES
+# Default: not defined
 
 #MTOOLS_ENABLE_FLOPPYD=
 # Used by the mtools package to determine whether or not the floppyd
