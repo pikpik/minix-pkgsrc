@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2003/05/02 06:45:11 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/10/31 19:09:14 reed Exp $
 
-DISTNAME=	BSD-Resource-1.15
+DISTNAME=	BSD-Resource-1.23
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5bsd
 CATEGORIES=	devel perl5
