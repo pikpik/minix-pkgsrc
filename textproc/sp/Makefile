@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/02/09 03:26:39 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/18 13:33:41 jlam Exp $
 #
 
 DISTNAME=	sp-1.3.4
@@ -19,7 +19,7 @@ COMMENT=	SGML System Conforming to International Standard ISO 8879
 CONFLICTS+=	jade-[0-9]*
 CONFLICTS+=	opensp-[0-9]*
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	yes
 
 MAKE_ENV+=	SGML_DEFAULT_CATALOG="${SGML_DEFAULT_CATALOG}"
 

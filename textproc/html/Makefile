@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:26:49 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/23 17:18:32 jmmv Exp $
 #
 
 DISTNAME=	html-4.0b
@@ -14,7 +14,7 @@ DEPENDS+=	iso8879>=1986:../../textproc/iso8879
 
 WRKSRC=		${WRKDIR}
 NO_MTREE=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 EXTRACT_ONLY=	# empty
 NO_BUILD=	yes
 

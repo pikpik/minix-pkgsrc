@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/01/20 12:26:49 agc Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/23 17:18:32 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.9 1999/02/11 16:01:16 jfieber Exp
 #
 
@@ -15,7 +15,7 @@ COMMENT=	Character entity sets from ISO 8879:1986 (SGML)
 
 WRKSRC=		${WRKDIR}
 NO_MTREE=       yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 EXTRACT_ONLY=	# empty
 NO_BUILD=       yes
 
