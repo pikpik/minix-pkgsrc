@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.489 2004/08/27 00:22:01 reed Exp $
+# $NetBSD: Makefile,v 1.490 2004/09/01 20:16:31 schmonz Exp $
 #
 
 COMMENT=	Networking tools
@@ -88,6 +88,7 @@ SUBDIR+=	fping6
 SUBDIR+=	freenet-tools
 SUBDIR+=	freeradius
 SUBDIR+=	freewais-sf
+SUBDIR+=	ftplibpp
 SUBDIR+=	ftpproxy
 SUBDIR+=	gated
 SUBDIR+=	gethost
