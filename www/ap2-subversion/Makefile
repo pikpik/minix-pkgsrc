@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/12/03 15:40:02 epg Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/03 15:43:35 epg Exp $
 
 PKGNAME=	ap2-subversion-${SVNVER}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	WebDAV server (Apache module) for Subversion
 
 .include "../../devel/subversion/Makefile.common"
