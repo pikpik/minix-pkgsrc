@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/08/16 01:54:09 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2000/08/18 22:46:31 hubertf Exp $
 #
 
 DISTNAME=	mysql-3.22.32
@@ -16,7 +16,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--without-perl --without-debug --without-bench \
-		--without-server --with-named-curses-libs="-lcurses"
+		--without-server --with-named-curses-libs="-lcurses -ltermcap"
 
 .if exists(/usr/include/readline.h)
 CONFIGURE_ARGS+=--without-readline
