@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/09/25 19:30:39 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/09/28 10:22:55 wiz Exp $
 #
 
 DISTNAME=	automake-1.7
@@ -25,7 +25,7 @@ MAKE_ENV+=		MAKEINFOFLAGS="${MAKEINFOFLAGS}"
 INFO_FILES=		automake.info
 
 PERL5_REQD=		5.5
-TEXINFO_REQD=		4.1
+TEXINFO_REQD=		4.0
 TEXINFO_OVERRIDE=	YES
 
 .include "../../lang/perl5/buildlink2.mk"
