@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/04 10:33:10 abs Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/06 21:24:04 hubertf Exp $
 #
 
 .include "../../mk/bsd.prefs.mk"
@@ -30,6 +30,7 @@ EXTRACT_SUFX=	.tar
 
 MAINTAINER=	abs@netbsd.org
 HOMEPAGE=	http://setiathome.ssl.berkeley.edu/
+COMMENT=	Search for Extraterrestrial Intelligence - at home
 
 ONLY_FOR_PLATFORM= NetBSD-*-alpha NetBSD-*-i386 NetBSD-*-powerpc SunOS-*-sparc
 

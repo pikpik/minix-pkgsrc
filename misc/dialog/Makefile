@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/07/28 20:30:08 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2000/11/02 03:25:33 wiz Exp $
 #
 
 DISTNAME=       dialog-0.6z
@@ -6,6 +6,7 @@ CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_SUNSITE:=utils/shell/}
 
 MAINTAINER=	jlam@netbsd.org
+COMMENT=	Display dialog boxes from shell scripts
 
 NO_CONFIGURE=	# defined
 USE_GMAKE=	# defined

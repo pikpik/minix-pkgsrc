@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2000/09/03 11:16:50 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2000/11/08 15:09:36 abs Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/11/28 00:04:18 se Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
+COMMENT=	Various utilities for the KDE integrated X11 desktop
 
 DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/09/24 03:53:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2000/12/15 14:45:34 mjl Exp $
 #
 
 DISTNAME=	sci-0.5.6
@@ -7,6 +7,7 @@ MASTER_SITES=	http://linuxparts.com/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://linuxparts.com/software.html
+COMMENT=	Curses based data entry via templates
 
 GNU_CONFIGURE=	# Yupp
 

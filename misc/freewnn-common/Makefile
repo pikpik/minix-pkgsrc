@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/02/20 22:05:41 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/21 21:01:32 hubertf Exp $
 #
 
 DISTNAME=	FreeWnn-1.10
@@ -14,6 +14,7 @@ IGNORE=		"${PKGNAME} is FreeWnn base package. Use freewnn-lib/server packages"
 
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://www.freewnn.org/
+COMMENT=	base package for japanese/freewnn-*
 
 INSTALL_TARGET=	install install.man
 

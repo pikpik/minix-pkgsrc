@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/07/13 01:32:22 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/20 15:41:05 tron Exp $
 #
 
 DISTNAME=       chipmunk-1.4
@@ -7,6 +7,7 @@ MASTER_SITES=   http://www.bitwizard.nl/chipmunk/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.bitwizard.nl/chipmunk/index.html
+COMMENT=	shell-like tool for hardware debugging
 
 .if exists(/usr/include/readline.h)
 CPPFLAGS+=	-DHAVE_READLINE_H=1
