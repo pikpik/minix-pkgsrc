@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:40:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:13:29 agc Exp $
 #
 
 DISTNAME=	pccts133mr22
@@ -16,6 +16,8 @@ DIST_SUBDIR=	${PKGNAME}
 
 MAKEFILE=	makefile
 ALL_TARGET=
+
+USE_BUILDLINK3=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/antlr ${PREFIX}/bin
