@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2004/01/22 08:36:03 grant Exp $
+# $NetBSD: Makefile,v 1.32 2004/02/12 00:10:31 hubertf Exp $
 
-DISTNAME=		bochs-2.1
+DISTNAME=		bochs-2.1.1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bochs/}
 
