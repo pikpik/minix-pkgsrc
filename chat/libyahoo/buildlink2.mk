@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/09/20 09:51:44 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/09/21 06:58:41 jlam Exp $
 
 .if !defined(LIBYAHOO_BUILDLINK2_MK)
 LIBYAHOO_BUILDLINK2_MK=	# defined
@@ -12,7 +12,8 @@ BUILDLINK_PREFIX.libyahoo_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.libyahoo=		include/libyahoo/*.h
 BUILDLINK_FILES.libyahoo+=		lib/libyahoo.*
 
-BUILDLINK_TRANSFORM.libyahoo=	-e "s|include/libyahoo/|include/|g"
+BUILDLINK_CPPFLAGS.libyahoo=	-I${BUILDLINK_PREFIX.libyahoo}/include/libyahoo
+CPPFLAGS+=			${BUILDLINK_CPPFLAGS.libyahoo}
 
 BUILDLINK_TARGETS+=	libyahoo-buildlink
 
