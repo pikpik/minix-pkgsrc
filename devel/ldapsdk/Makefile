@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:38:33 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/05/17 08:38:43 abs Exp $
 
 DISTNAME=       ldapsdk_12311998
 PKGNAME=        ldapsdk-12311998
@@ -15,12 +15,10 @@ USE_GMAKE=	yes
 USE_PERL5=	yes
 WRKSRC=         ${WRKDIR}/mozilla
 
-#
-# empty target. scripts/pre-build does the actual work
 do-build:
+	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/pre-build
 
-#
-# empty target. scripts/pre-install does the actual work
 do-install:
+	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/pre-install
 
 .include "../../mk/bsd.pkg.mk"
