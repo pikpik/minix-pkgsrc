@@ -1,7 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2004/07/06 13:40:57 taya Exp $
+# $NetBSD: Makefile,v 1.5 2004/08/10 14:27:17 taya Exp $
 
 MOZILLA=	thunderbird
 
-COMMENT=	Redesign of the Mozilla mail client
+COMMENT=	Mozilla mail client
+
+MOZILLA_USE_GTK2=	# defined
+MOZILLA_USE_XFT=	YES
 
 .include "../../mail/thunderbird/Makefile-thunderbird.common"
