@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 01:21:11 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:27:55 grant Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-1.2
 PKGREVISION=		3
+WRKSRC=			${WRKDIR} # for the patch target
 CROSS_DISTFILES=
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.mingw.org/
