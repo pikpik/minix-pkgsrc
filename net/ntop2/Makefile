@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/07/23 11:36:01 agc Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/01 05:48:19 jlam Exp $
 
 DISTNAME=		ntop-2.1
 PKGNAME=		ntop2-2.1
@@ -15,6 +15,7 @@ WRKSRC=                 ${WRKDIR}/ntop
 
 USE_GMAKE=		yes
 GNU_CONFIGURE=          yes
+USE_GNU_READLINE=	yes
 # --enable-micro-ntop causes compile to fail 
 CONFIGURE_ARGS+=	--disable-mysql
 USE_LIBTOOL=		yes
