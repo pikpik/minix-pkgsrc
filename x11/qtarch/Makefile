@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/05/22 09:32:28 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/09/27 23:19:02 jlam Exp $
 #
 
 DISTNAME=	qtarch-2.1-1
@@ -18,7 +18,8 @@ USE_X11=	yes
 USE_GMAKE=	yes
 
 EVAL_PREFIX+=	QT2DIR=qt2-libs
-MAKE_ENV=	QTDIR=${QT2DIR}/qt2
+QTDIR=		${QT2DIR}/qt2
+MAKE_ENV=	QTDIR=${QTDIR}
 PATH=		${QTDIR}/bin:$$PATH
 
 do-install:
