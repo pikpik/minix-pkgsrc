@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 1999/09/25 11:18:33 frueauf Exp $
+# $NetBSD: Makefile,v 1.56 1999/10/01 10:31:57 agc Exp $
 #
 
 DISTNAME=       fetchmail-5.1.0
@@ -32,14 +32,18 @@ CONFIGURE_ARGS+=--enable-inet6
 
 FDOC=	${PREFIX}/share/doc/fetchmail
 
-.if ${OPSYS} == "NetBSD"
 post-extract:
-	${RM} -f ${WRKSRC}/md5.h
+.if ${OPSYS} == "NetBSD"
+	@${RM} -f ${WRKSRC}/md5.h
 .endif
+	@${MV} ${WRKSRC}/fetchmail.man ${WRKSRC}/fetchmail.tbl
 
 pre-configure:
 	(cd ${WRKSRC}; autoreconf)
 
+post-build:
+	tbl ${WRKSRC}/fetchmail.tbl >${WRKSRC}/fetchmail.man
+	
 post-install:
 	${INSTALL} -d -m 555 -o ${DOCOWN} -g ${DOCGRP} ${FDOC}
 	cd ${WRKSRC} && ${INSTALL_DATA} \
