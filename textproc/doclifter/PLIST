@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/doclifter
+man/man1/doclifter.1
