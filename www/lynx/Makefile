@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 1999/06/22 07:34:17 tron Exp $
+# $NetBSD: Makefile,v 1.19 1999/07/02 08:34:36 jlam Exp $
 #
 
 DISTNAME=       lynx2-8-2
@@ -28,6 +28,7 @@ INSTALL_TARGET= install install-help
 MAKEFILE=       makefile
 
 post-install:
-	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/etc/lynx_help
+	${RM} -rf ${PREFIX}/etc/lynx_doc
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/etc/lynx_help
 
 .include "../../mk/bsd.pkg.mk"
