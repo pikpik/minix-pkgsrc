@@ -1,4 +1,4 @@
-# $NetBSD: logic,v 1.1.2.1 2003/08/14 13:16:53 jlam Exp $
+# $NetBSD: logic,v 1.2 2003/09/02 07:00:00 jlam Exp $
 
 quotedarg=no
 addtocache=no
@@ -65,7 +65,7 @@ yes,yes,yes,*|yes,yes,no,no)
 		;;
 	esac
 	$cat >> $cachefile_add << EOF
-$searcharg)
+$searcharg)	# $0
 	cachearg="$cachearg"
 	$cachesettings
 	;;
