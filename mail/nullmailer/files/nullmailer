@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$NetBSD: nullmailer,v 1.1 2003/02/17 01:45:32 jtb Exp $
+#	$NetBSD: nullmailer,v 1.2 2003/02/17 02:12:44 jtb Exp $
 #
 # PROVIDE: mail
 # REQUIRE: LOGIN
