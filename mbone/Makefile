@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1997/11/18 17:21:25 is Exp $
 # Id: Makefile,v 1.5 1996/12/03 10:41:49 asami Exp
 #
 
@@ -9,7 +9,7 @@
     SUBDIR += sdr
 #    SUBDIR += speak_freely
 #    SUBDIR += vat
-#    SUBDIR += vic
+    SUBDIR += vic
 #    SUBDIR += wb
 
 .include <bsd.port.subdir.mk>
