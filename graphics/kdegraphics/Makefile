@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 1998/07/20 15:08:29 tv Exp $
+# $NetBSD: Makefile,v 1.8 1998/08/20 15:17:01 tsarna Exp $
 #
 
 DISTNAME=	kdegraphics-1.0
 CATEGORIES=	graphics kde
-MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/stable/1.0/distribution/tar/generic/source/ \
-		ftp://ftp.kde.org/pub/kde/stable/1.0/distribution/tar/generic/source/
+MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/1.0/distribution/tar/generic/source/ \
+		ftp://ftp.de.kde.org/pub/kde/stable/1.0/distribution/tar/generic/source/
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.kde.org/
