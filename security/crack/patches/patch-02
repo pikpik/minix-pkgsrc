@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/libdes/Makefile.orig	Thu Dec 19 01:29:21 1996
 +++ src/libdes/Makefile	Fri Jan 31 11:14:52 1997
 @@ -10,7 +10,7 @@
