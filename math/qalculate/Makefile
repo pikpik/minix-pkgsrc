@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/19 12:30:07 adam Exp $
 
-DISTNAME=	qalculate-0.7.0
+DISTNAME=	qalculate-0.7.1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qalculate/}
 
