@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-png1,v 1.1 1999/06/13 16:23:53 hubertf Exp $
 
 The source in this patch is available at
 http://www.mit.edu/afs/athena/contrib/graphics/src/xv/patches/png/xvpng.c

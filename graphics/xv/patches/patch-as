@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-png2-xvmisc.c,v 1.1 1999/11/14 13:26:01 rh Exp $
 
 --- xvmisc.c.orig	Sun Nov 14 14:05:45 1999
 +++ xvmisc.c	Sun Nov 14 14:05:49 1999
