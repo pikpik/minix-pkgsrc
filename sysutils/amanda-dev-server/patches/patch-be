@@ -1,0 +1,13 @@
+$NetBSD: patch-aa,v 1.4 2001/01/16 21:59:39 cjones Exp $
+
+--- changer-src/scsi-bsd.c.orig	Tue Apr 30 19:16:44 2002
++++ changer-src/scsi-bsd.c	Sun Sep 16 20:10:26 2001
+@@ -198,7 +198,7 @@
+       {
+         SCSI_OpenDevice(DeviceFD);
+       }
+-    Result = ioctl(DeviceFD, SCIOCCOMMAND, &ds);
++    Result = ioctl(pDev[DeviceFD].fd, SCIOCCOMMAND, &ds);
+     SCSI_CloseDevice(DeviceFD);
+    
+     memcpy(pRequestSense, ds.sense, RequestSenseLength);
