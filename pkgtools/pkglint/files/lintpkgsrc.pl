@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.34 2000/09/26 15:57:05 abs Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.35 2000/10/02 14:32:21 abs Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -237,8 +237,6 @@ sub get_default_makefile_vars
 	{ $default_vars->{'PKGSRCDIR'} = $opt{'P'}; }
     else
 	{ $default_vars->{'PKGSRCDIR'} = '/usr/pkgsrc'; }
-
-    $default_vars->{'PKGSRCDIR'} = '/usr/pkgsrc';
 
     my($vars);
     if (-f '/etc/mk.conf' && ($vars = &parse_makefile_vars('/etc/mk.conf')))
