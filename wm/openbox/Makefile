@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/24 06:10:27 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/26 01:48:32 wiz Exp $
 #
 
 DISTNAME=	openbox-2.2.3
@@ -9,8 +9,9 @@ MAINTAINER=	jrp@hispabsd.org
 HOMEPAGE=	http://icculus.org/openbox/
 COMMENT=	Window manager based on Blackbox
 
-DEPENDS+=	bsetroot>=0.1:../../wm/bsetroot
+DEPENDS+=	bsetroot>=0.1nb1:../../wm/bsetroot
 
+USE_BUILDLINK2=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 
