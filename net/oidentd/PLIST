@@ -1,0 +1,6 @@
+@comment $NetBSD$
+etc/rc.d/oidentd
+man/man5/oidentd.conf.5
+man/man5/oidentd_masq.conf.5
+man/man8/oidentd.8
+sbin/oidentd
