@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2000/10/22 07:35:39 rh Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/31 13:35:46 wennmach Exp $
 #
 
-DISTNAME=		oaf-0.6.0
+DISTNAME=		oaf-0.6.1
 CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/oaf/}
 
