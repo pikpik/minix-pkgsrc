@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 13:15:31 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/10/18 15:20:02 veego Exp $
 
 DISTNAME=	gzip-1.2.4a
 PKGNAME=	gzip-info-1.2.4a
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.shar
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/gzip/gzip.html
 COMMENT=	Info format documentation for the GZIP utility
-
-EXTRACT_CMD=	${SH} ${DOWNLOADED_DISTFILE}
 
 USE_GTEXINFO=	yes
 INFO_FILES=	gzip.info
