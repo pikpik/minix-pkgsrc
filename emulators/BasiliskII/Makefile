@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/05/02 11:54:48 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.8 2003/06/02 01:20:01 jschauma Exp $
 
-DISTNAME=	BasiliskII_src_31052001
-PKGNAME=	BasiliskII-0.9.1
-PKGREVISION=	2
-WRKSRC=		${WRKDIR}/BasiliskII-0.9/src/Unix
+DISTNAME=	BasiliskII_src_15012002
+PKGNAME=	BasiliskII-1.0
+WRKSRC=		${WRKDIR}/BasiliskII-1.0/src/Unix
 CATEGORIES=	emulators
 MASTER_SITES=	http://iphcip1.physik.uni-mainz.de/~cbauer/
 
