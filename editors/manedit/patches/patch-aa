@@ -2,11 +2,12 @@ $NetBSD$
 
 --- ../include/xsw_ctype.h.orig	Tue Mar 27 03:39:01 2001
 +++ ../include/xsw_ctype.h
-@@ -5,7 +5,6 @@
+@@ -1,7 +1,7 @@
+ // xsw_ctype.h
+ // This is intended as a prototype for files using the global/ctype.cpp file.
+ 
+-#ifndef __FreeBSD__
++#if !defined(__FreeBSD__) && !defined(__NetBSD__)
  # if defined(__cplusplus) || defined(c_plusplus)
  
  extern bool isblank(char c);
--extern bool isblank(int c);
- 
- #else
- 
