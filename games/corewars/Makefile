@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/04/02 18:16:18 rh Exp $
 #
 
-DISTNAME=	corewars-0.9.10
+DISTNAME=	corewars-0.9.11
 CATEGORIES=	games
 MASTER_SITES=	http://download.sourceforge.net/corewars/
 
