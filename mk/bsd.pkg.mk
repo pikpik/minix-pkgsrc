@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.695 2001/03/23 16:02:23 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.696 2001/03/23 17:11:18 skrll Exp $
 #
 # This file is in the public domain.
 #
@@ -690,7 +690,9 @@ uptodate-digest:
 			if [ -f ${DIGEST} ]; then			\
 				${MAKE} ${MAKEFLAGS} deinstall;		\
 			fi;						\
-			${MAKE} ${MAKEFLAGS} install) 			\
+			${MAKE} ${MAKEFLAGS} ${DEPENDS_TARGET};		\
+			${MAKE} ${MAKEFLAGS} clean ) 			\
+			;;						\
 		esac							\
 	fi
 
