@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: arlad,v 1.1 2001/08/09 13:48:59 wennmach Exp $
+# $NetBSD: arlad,v 1.2 2002/08/07 08:30:51 jlam Exp $
 #
 # PROVIDE: arlad
 # REQUIRE: beforemountlkm
@@ -17,6 +17,7 @@ required_files="/dev/xfs0"
 
 if [ -f /etc/rc.subr -a -d /etc/rc.d -a -f /etc/rc.d/DAEMON ]; then
 	load_rc_config $name
+	eval [ -z "\$${rcvar}" ] && eval ${rcvar}=NO
 	run_rc_command "$1"
 else
 	echo -n ' ${name}'

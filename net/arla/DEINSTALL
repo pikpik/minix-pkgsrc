@@ -1,0 +1,11 @@
+# $NetBSD$
+
+ARLA_CACHE="@ARLA_CACHE@"
+
+case ${STAGE} in
+DEINSTALL)
+	${RM} -rf ${ARLA_CACHE}
+	${RM} -f ${PKG_PREFIX}/lkm/xfs_mod
+	${RM} -f /sbin/mount_xfs
+	;;
+esac
