@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.354 2003/02/18 22:12:44 mjl Exp $
+# $NetBSD: Makefile,v 1.355 2003/02/27 05:03:27 lukem Exp $
 #
 
 COMMENT=	Networking tools
@@ -67,6 +67,7 @@ SUBDIR+=	flan
 SUBDIR+=	flow-tools
 SUBDIR+=	fmirror
 SUBDIR+=	fping
+SUBDIR+=	freeradius
 SUBDIR+=	freewais-sf
 SUBDIR+=	ftpproxy
 SUBDIR+=	gated
