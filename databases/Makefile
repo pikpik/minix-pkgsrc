@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2001/07/08 21:00:33 tron Exp $
+# $NetBSD: Makefile,v 1.60 2001/07/28 17:54:25 jlam Exp $
 #
 
 COMMENT=	Databases
@@ -15,6 +15,7 @@ SUBDIR+=	iodbc
 SUBDIR+=	java-db3
 SUBDIR+=	jdb
 SUBDIR+=	jdbc-postgresql
+SUBDIR+=	kmysqladmin
 SUBDIR+=	kpsql
 SUBDIR+=	myodbc
 SUBDIR+=	mysql-client
