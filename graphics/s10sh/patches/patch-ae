@@ -1,13 +1,14 @@
 $NetBSD$
 
---- usb.c.orig	Tue Oct 22 18:01:45 2002
-+++ usb.c	Tue Oct 22 18:04:23 2002
-@@ -103,6 +103,8 @@
+--- usb.c.orig	2001-03-13 14:46:18.000000000 +0100
++++ usb.c
+@@ -103,6 +103,9 @@ int USB_camera_init(struct usb_device **
  				case PRODUCT_ID_NEXTDIGICAM4:
  				case PRODUCT_ID_NEXTDIGICAM5:
  				case PRODUCT_ID_NEXTDIGICAM6:
 +				case PRODUCT_ID_A20:
 +				case PRODUCT_ID_S330_US:
++				case PRODUCT_ID_EOS300D:
  					*camera_dev = dev;
  					printf("Unsupported Canon digicam "
  					       "found, S10sh will try to use "
