@@ -1,5 +1,7 @@
-$NetBSD: md5,v 1.2 2000/12/14 02:07:43 jtb Exp $
+$NetBSD$
 
-MD5 (felt-3.05.src.tar.gz) = 3cadb25d7039604b862a30df55bf49f8
-MD5 (felt-3.05.ps.gz) = 6f8a50b1e4318d2519ce8a235cee16bd
+SHA1 (felt-3.05.src.tar.gz) = da3e1ced626cc1c65a570d3e6e242252c039c28b
+Size (felt-3.05.src.tar.gz) = 956901 bytes
+SHA1 (felt-3.05.ps.gz) = 10fbac9927fe20cec3884d989204fe1a92d61784
+Size (felt-3.05.ps.gz) = 626985 bytes
 SHA1 (patch-aa) = c04149bfa4161a3618971961d7b6b1b6d619bb07
