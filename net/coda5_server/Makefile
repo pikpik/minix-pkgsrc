@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.7 1999/01/27 15:36:35 rvb Exp $
 #
 
 DISTNAME=	coda-5.0.1
@@ -15,8 +15,6 @@ DEPENDS+=	readline-2.2:../../devel/readline
 DEPENDS+=	perl-5.00404:../../lang/perl5
 
 ONLY_FOR_ARCHS=	arm32 i386 ns32k
-
-LICENSE=	GPL
 
 ALL_TARGET=	coda
 INSTALL_TARGET=	server-install
