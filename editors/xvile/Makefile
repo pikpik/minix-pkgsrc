@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 1999/10/21 18:41:14 agc Exp $
+# $NetBSD: Makefile,v 1.19 1999/10/22 13:45:18 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:58:03 gj Exp
 #
 
-DISTNAME=	vile-8.3
-PKGNAME=	xvile-8.3
+DISTNAME=	vile-9.0
+PKGNAME=	xvile-9.0
 CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.clark.net/pub/dickey/vile/ \
 		ftp://id.wing.net/pub/pgf/vile/
