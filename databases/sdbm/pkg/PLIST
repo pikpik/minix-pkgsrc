@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/sdbm.h
+lib/libsdbm.a
+man/man3/sdbm.3
