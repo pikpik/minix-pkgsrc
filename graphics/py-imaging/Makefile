@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2002/01/02 10:21:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2002/01/19 17:34:24 drochner Exp $
 
-DISTNAME=	Imaging-1.1.1
-PKGNAME=	${PYPKGPREFIX}-imaging-1.1.1
+DISTNAME=	Imaging-1.1.2
+PKGNAME=	${PYPKGPREFIX}-imaging-1.1.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.pythonware.com/downloads/
 
