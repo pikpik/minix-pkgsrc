@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/11/07 14:33:39 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/11/24 22:03:40 tron Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
@@ -12,6 +12,7 @@
 #    SUBDIR += kaskade
 #    SUBDIR += magic
 #    SUBDIR += mars
+    SUBDIR += ntesla
     SUBDIR += pcb
     SUBDIR += spice
 
