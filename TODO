@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.75 2001/12/20 20:49:45 jlam Exp $
+$NetBSD: TODO,v 1.76 2002/01/03 11:02:38 agc Exp $
 
 packages TODO (Suggested new packages)
 ^^^^^^^^^^^^^
@@ -66,8 +66,6 @@ pksgrc TODO (Suggested pkgsrc features and enhancements)
 
 	o Add a default test target to mk/*.mk and override it in any pkgs
 	  that have testsuites. Use it in bulk builds/test.
-
-	o Add a USE_PTHREADS variable with ALT_PTHREADS override.
 
 	o Add a sort check to pkglint for PLISTs.
 
