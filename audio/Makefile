@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2001/09/24 15:01:44 rh Exp $
+# $NetBSD: Makefile,v 1.117 2001/10/12 09:22:36 agc Exp $
 #
 
 COMMENT=	Audio tools
@@ -56,6 +56,7 @@ SUBDIR+=	flac
 SUBDIR+=	flac-xmms
 SUBDIR+=	freezetag
 SUBDIR+=	gdcd
+SUBDIR+=	gkrellm-xmms
 SUBDIR+=	gmodplay
 SUBDIR+=	gmp3info
 SUBDIR+=	gnome-audio
