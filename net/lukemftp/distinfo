@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2000/10/27 11:11:26 agc Exp $
+$NetBSD$
 
-MD5 (lukemftp-1.5.tar.gz) = 0cd0fc2e3fca21ca56647b2e1142a01a
+SHA1 (lukemftp-1.5.tar.gz) = a8aad3c4383fd38ab42aa3f87b1f79cd78ab06a1
+Size (lukemftp-1.5.tar.gz) = 264861 bytes

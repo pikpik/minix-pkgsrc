@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1998/11/22 22:30:08 tv Exp $
+$NetBSD$
 
-MD5 (fnet.pl-1.4.tar.gz) = e3a0b08b2e5be413349e7d1b5cde5ec0
+SHA1 (fnet.pl-1.4.tar.gz) = 7c26e3a1a4115eacd2bc3bef8d09486c156abd20
+Size (fnet.pl-1.4.tar.gz) = 9548 bytes
 SHA1 (patch-aa) = 24310d7982662fb019ccbb7bf1371fe0f6fc7729

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/02/28 13:14:58 wiz Exp $
+$NetBSD$
 
-MD5 (Net-Telnet-3.02.tar.gz) = 7078ce36366e5bae7ad9c1ef13c1113a
+SHA1 (Net-Telnet-3.02.tar.gz) = a219bc2d4f522fe5180901b96b3ae9bd24841d9a
+Size (Net-Telnet-3.02.tar.gz) = 30946 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/06/07 16:48:57 rh Exp $
+$NetBSD$
 
-MD5 (sitescooper-2.2.8.tar.gz) = c264366fab5d3a06fa4dc6d8586ffefb
+SHA1 (sitescooper-2.2.8.tar.gz) = fe2c915a22a2398f0d2e98089b68e8cc67ef77fa
+Size (sitescooper-2.2.8.tar.gz) = 174821 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/01/28 01:59:03 itojun Exp $
+$NetBSD$
 
-MD5 (bind-4.9.8-REL.tar.gz) = 54af73af5b4988b23e774e6f2401625f
+SHA1 (bind-4.9.8-REL.tar.gz) = bc690813c8e8bb3569ceee3c10ebfeb52b47ad00
+Size (bind-4.9.8-REL.tar.gz) = 1972069 bytes

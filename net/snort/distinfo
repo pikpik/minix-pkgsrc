@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.7 2001/02/26 20:43:27 wiz Exp $
+$NetBSD$
 
-MD5 (snort-1.7.tar.gz) = 0eae2f987f663a2fbf236e38d1f8e960
+SHA1 (snort-1.7.tar.gz) = e2bbc55a55d53ab0dae4428ff94c0aaab7610a5f
+Size (snort-1.7.tar.gz) = 653702 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/08/31 02:26:47 kim Exp $
+$NetBSD$
 
-MD5 (srsh-1.2.tar.gz) = a6b739189fa2dff2cc243cf6213e35db
+SHA1 (srsh-1.2.tar.gz) = 5b8c70572e7a52557b3b874ec51cec9ee4e71c0d
+Size (srsh-1.2.tar.gz) = 679 bytes

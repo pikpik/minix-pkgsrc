@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/18 04:52:34 hubertf Exp $
+$NetBSD$
 
-MD5 (smb2www-980804.tar.gz) = f779e40bed232135a1ee46adecdea60c
+SHA1 (smb2www-980804.tar.gz) = 289e3d04e1b8804d28147b851b7a8865d9b2e0cd
+Size (smb2www-980804.tar.gz) = 67213 bytes
 SHA1 (patch-aa) = 6cc879bc2845dd2e9943ccc21c171652325e2913

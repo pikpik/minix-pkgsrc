@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 2000/11/13 10:26:17 abs Exp $
+$NetBSD$
 
-MD5 (vnc-3.3.3r2_unixsrc.tgz) = 6fc83e1b6153d3252649953267713f17
+SHA1 (vnc-3.3.3r2_unixsrc.tgz) = 98e9d2e2c2d0f4f9cb9cafee22d21a868189b176
+Size (vnc-3.3.3r2_unixsrc.tgz) = 2072772 bytes
 SHA1 (patch-aa) = ae04511d6993b4d765bff4f88ecb5294ceb706eb

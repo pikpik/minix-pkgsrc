@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1 2000/08/08 08:18:45 jlam Exp $
+$NetBSD$
 
-MD5 (gnapfetch-0.3.tar.gz) = 594c48df0ebe1f17bd59e904e56ec793
+SHA1 (gnapfetch-0.3.tar.gz) = 892a991ea6b9ee7d6a2fe90f1c4bad2614813765
+Size (gnapfetch-0.3.tar.gz) = 2466 bytes

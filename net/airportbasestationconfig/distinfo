@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/20 20:39:46 tron Exp $
+$NetBSD$
 
-MD5 (airportbasestationconfig-1.2.2/configurator.zip) = 02f4057cc5419f661e1032f02bed28f9
+SHA1 (airportbasestationconfig-1.2.2/configurator.zip) = 38ac3f0709036aed9b5baee87e04f72017e55646
+Size (airportbasestationconfig-1.2.2/configurator.zip) = 116768 bytes

@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/21 19:02:32 rh Exp $
+$NetBSD$
 
-MD5 (ispman-0.5.tar.gz) = 6be2cd9a4842a8198f6a06cd36ba040c
+SHA1 (ispman-0.5.tar.gz) = e42c9fd4bd5fb2f7ac97140dfafe708fceaaccf8
+Size (ispman-0.5.tar.gz) = 942170 bytes
 SHA1 (patch-aa) = 042df3691547ff22c94f70569b8b1dad87a0ee44
 SHA1 (patch-ab) = a2e4008751307bcfd893854d8a3800054b53d00d

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/27 21:09:53 jtb Exp $
+$NetBSD$
 
-MD5 (SNMP_Session-0.83.tar.gz) = d18ce3007d6b4f1cfd523c122c0653c9
+SHA1 (SNMP_Session-0.83.tar.gz) = 3773ee1962ba8c1d03b634dfb93aae33c77b2723
+Size (SNMP_Session-0.83.tar.gz) = 56784 bytes

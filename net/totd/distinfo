@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.6 2001/03/23 14:55:54 itojun Exp $
+$NetBSD$
 
 SHA1 (totd-1.2.tar.gz) = 6c035948eade7ee01fdf9da83beecc6fe3849247
+Size (totd-1.2.tar.gz) = 90264 bytes
 SHA1 (patch-aa) = 9abe77128733c7a5a3447884c1b81f6e6ec96723

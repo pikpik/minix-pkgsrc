@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/03/19 22:11:17 fredb Exp $
+$NetBSD$
 
-MD5 (bounce-0.0.tar.gz) = 202499d02ff985971650ea0c091fe4f2
+SHA1 (bounce-0.0.tar.gz) = 3b0a7306ba80b29f70131e914f344ce67b4691e4
+Size (bounce-0.0.tar.gz) = 3439 bytes
 SHA1 (patch-aa) = 06596eea5fc0975df4be0305e0ad92698d1dc246

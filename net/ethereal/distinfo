@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.25 2001/03/28 22:12:54 wennmach Exp $
+$NetBSD$
 
 SHA1 (ethereal-0.8.16.tar.gz) = 6aa6be9905072d93bbd53bb892825c05cd475dae
+Size (ethereal-0.8.16.tar.gz) = 1792953 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/01/30 11:24:01 kleink Exp $
+$NetBSD$
 
-MD5 (vtun-2.4.tar.gz) = 4403855f23b7784a7c85b96e6da1704c
+SHA1 (vtun-2.4.tar.gz) = 3ffbcc0864ca429ff37f39ffe30cb06e50144da7
+Size (vtun-2.4.tar.gz) = 82540 bytes
 SHA1 (patch-aa) = ce4bc46b05e7473cab43c062ab0b72157b438f01
