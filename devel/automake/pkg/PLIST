@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 1998/09/22 10:48:43 agc Exp $
+@comment $NetBSD: PLIST,v 1.6 1999/02/11 19:17:29 tv Exp $
 bin/aclocal
 bin/automake
 @unexec install-info --delete %D/info/automake.info %D/info/dir
@@ -80,5 +80,4 @@ share/automake/ylwrap
 share/automake/mans.am
 share/automake/java.am
 share/automake/java-clean.am
-@dirrm share/aclocal
 @dirrm share/automake
