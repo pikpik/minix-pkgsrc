@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.10 2001/11/20 16:19:20 jlam Exp $
+# $NetBSD: defs.Linux.mk,v 1.11 2001/11/21 12:42:24 agc Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -62,3 +62,5 @@ USERADD?=	/usr/sbin/useradd
 
 ROOT_USER?=	root
 ROOT_GROUP?=	wheel
+
+_IMAKE_MAKE=	${MAKE}		# program which gets invoked by imake
