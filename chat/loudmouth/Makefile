@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/02/20 13:38:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/20 14:16:18 jmmv Exp $
 #
 
 DISTNAME=	loudmouth-0.15.1
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/loudmouth/0.15/}
 EXTRACT_SUFX=	.tar.bz2
