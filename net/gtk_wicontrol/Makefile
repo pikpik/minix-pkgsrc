@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2001/07/28 21:11:25 tron Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/21 15:12:27 wiz Exp $
 
 DISTNAME=	gtk_wicontrol-0.16
 CATEGORIES=	net
-MASTER_SITES=	http://www.izawa.sh/software/gtk_wicontrol/
+MASTER_SITES=	http://www.izawa.org/software/gtk_wicontrol/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.izawa.sh/software/gtk_wicontrol/
+HOMEPAGE=	http://www.izawa.org/software/gtk_wicontrol/
 COMMENT=	GTK+-based Wavelan status meter
 
 ONLY_FOR_PLATFORM=	*BSD-*-*
