@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/12 22:36:59 wulf Exp $
 #
 
 DISTNAME=	camlp4-3.00
@@ -18,7 +18,7 @@ PLIST_SRC=      ${WRKDIR}/PLIST
 
 pre-build:
 		if ! ${TEST} -x ${LOCALBASE}/bin/ocamlc.opt; then \
-			@${ECHO} "No optimized ocaml binaries found"; \
+			${ECHO} "No optimized ocaml binaries found"; \
 			cd ${WRKSRC}/config; \
 			${MV} Makefile Makefile.orig; \
 			${SED} -e "s/\.opt//g" Makefile.orig > Makefile; \
