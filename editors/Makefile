@@ -10,7 +10,7 @@
     SUBDIR += emacs
 #    SUBDIR += gvim
 #    SUBDIR += jed
-#    SUBDIR += joe
+    SUBDIR += joe
 #    SUBDIR += jove
 #    SUBDIR += mule
 #    SUBDIR += mule-common
