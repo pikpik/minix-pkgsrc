@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2001/02/16 15:51:51 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2001/02/19 07:48:07 jun Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -17,7 +17,6 @@ SUBDIR+=	exmh
 SUBDIR+=	faces
 SUBDIR+=	fetchmail
 SUBDIR+=	fetchmailconf
-SUBDIR+=	flim
 SUBDIR+=	fromto
 SUBDIR+=	grepmail
 SUBDIR+=	imap-uw
