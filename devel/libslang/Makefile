@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/02/26 15:27:36 mjl Exp $
+# $NetBSD: Makefile,v 1.29 2001/02/26 16:42:29 tron Exp $
 #
 
 DISTNAME=      	slang-1.4.4
@@ -16,6 +16,7 @@ MAINTAINER=    	packages@netbsd.org
 HOMEPAGE=	http://www.s-lang.org/
 COMMENT=	Routines for rapid alpha-numeric terminal applications development
 
+USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE= 	yes
 USE_LIBTOOL=	yes
 
