@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.120 2004/10/31 21:46:40 jdolecek Exp $
+# $NetBSD: Makefile,v 1.121 2004/11/19 12:32:18 adam Exp $
 #
 
 COMMENT=	Mathematics
@@ -66,6 +66,7 @@ SUBDIR+=	odepack
 SUBDIR+=	otter
 SUBDIR+=	p5-Math-Bezier
 SUBDIR+=	p5-Math-BigInteger
+SUBDIR+=	p5-Math-FFT
 SUBDIR+=	p5-Math-Interpolate
 SUBDIR+=	p5-Math-MatrixReal
 SUBDIR+=	p5-Math-Pari
