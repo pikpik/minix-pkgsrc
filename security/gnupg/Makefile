@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2004/03/01 19:12:25 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2004/03/30 09:05:56 grant Exp $
 
 DISTNAME=	gnupg-1.2.4
 PKGREVISION=	1
@@ -21,7 +21,7 @@ CRYPTO=			yes
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
-USE_GNU_TOOLS+=		make sed
+USE_GNU_TOOLS+=		make
 CONFIGURE_ARGS+=	--enable-tiger --with-static-rnd=auto
 TEST_TARGET=		check
 

@@ -1,11 +1,8 @@
 $NetBSD$
 
-Parts from:
-ftp://ftp.kame.net/pub/kame/misc/gnupg-1.2.2-IPv6.diff.gz
-
---- configure.orig	Tue Dec 23 14:28:22 2003
-+++ configure
-@@ -4601,7 +4601,7 @@ extern "C" {
+--- acinclude.m4.orig	Tue Apr 15 08:16:18 2003
++++ acinclude.m4
+@@ -588,7 +588,7 @@ extern "C" {
  
  EOF
          # Now generate the symbol file.
@@ -14,8 +11,8 @@ ftp://ftp.kame.net/pub/kame/misc/gnupg-1.2.2-IPv6.diff.gz
  
          cat <<EOF >> conftest.c
  #if defined (__STDC__) && __STDC__
-@@ -4621,7 +4621,7 @@ struct {
- dld_preloaded_symbols[] =
+@@ -610,7 +610,7 @@ dld_preloaded_symbols[] =
+ changequote([,])dnl
  {
  EOF
 -        sed 's/^_\?\(.*\) _\?\(.*\)$/  {"\1", (__ptr_t) \&\2},/' < "$ac_nlist" >> conftest.c
@@ -23,12 +20,3 @@ ftp://ftp.kame.net/pub/kame/misc/gnupg-1.2.2-IPv6.diff.gz
          cat <<\EOF >> conftest.c
    {0, (__ptr_t) 0}
  };
-@@ -13579,7 +13579,7 @@ done
- 
- 
- 
--for ac_func in waitpid wait4 sigaction sigprocmask rand pipe stat
-+for ac_func in waitpid wait4 sigaction sigprocmask rand pipe stat getaddrinfo
- do
- as_ac_var=`echo "ac_cv_func_$ac_func" | $as_tr_sh`
- echo "$as_me:$LINENO: checking for $ac_func" >&5
