@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2000/11/14 14:32:13 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.29 2000/11/18 18:00:11 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
@@ -17,6 +17,7 @@
     SUBDIR += gschem
     SUBDIR += gsymcheck
     SUBDIR += gwave
+    SUBDIR += ipal-current
     SUBDIR += libgeda
     SUBDIR += ng-spice
     SUBDIR += ntesla
