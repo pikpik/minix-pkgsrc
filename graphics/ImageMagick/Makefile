@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2004/04/25 05:15:27 minskim Exp $
+# $NetBSD: Makefile,v 1.118 2004/05/19 14:11:28 adam Exp $
 
 .include "Makefile.common"
 
@@ -42,12 +42,9 @@ CFLAGS=			-O
 # Some configure_args come from Makefile.common
 CONFIGURE_ARGS+=	--without-perl
 
-# Remove the empty directory
-post-install:
-	-${RMDIR} ${PREFIX}/share/ImageMagick
-
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
+.include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../graphics/libwmf/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
