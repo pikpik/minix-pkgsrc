@@ -1,2 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/05/08 23:49:06 salo Exp $
 bin/gcelestia
+etc/gconf/schemas/celestia.schemas
+share/applications/celestia.desktop
+share/pixmaps/celestia.png
