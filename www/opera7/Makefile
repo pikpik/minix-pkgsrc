@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/04/30 05:26:00 snj Exp $
+# $NetBSD: Makefile,v 1.17 2004/05/14 21:03:47 jdolecek Exp $
 
 DISTNAME=	opera-${OPERA_PKG_VERSION}
 PKGREVISION=	# empty
@@ -25,7 +25,7 @@ USE_BUILDLINK3=	yes
 .include "../../mk/bsd.prefs.mk"
 
 # A default so lintpkgsrc is happy
-OPERA_PKG_VERSION=	7.0
+OPERA_PKG_VERSION=	7.50
 
 .if (${OPSYS} == NetBSD)
 DEPENDS+=	suse_compat>=7.3:../../emulators/${SUSE_DIR_PREFIX}_compat
