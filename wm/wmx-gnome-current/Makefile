@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/18 20:19:37 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:56 wiz Exp $
+
+.include "../../wm/wmx-current/Makefile.common"
 
 PKGNAME=	wmx-gnome-${WMX_VERS}
 CATEGORIES+=	gnome
@@ -10,4 +12,4 @@ CPPFLAGS+=	-DCONFIG_GNOME_BUTTON_COMPLIANCE=True
 CXXFLAGS+=	-DCONFIG_GNOME_COMPLIANCE=True
 CXXFLAGS+=	-DCONFIG_GNOME_BUTTON_COMPLIANCE=True
 
-.include "../../wm/wmx-current/Makefile.common"
+.include "../../mk/bsd.pkg.mk"
