@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/zsh/libzsh-${PKGVERSION}.so
