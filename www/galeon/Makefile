@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/08/27 19:19:27 tron Exp $
+# $NetBSD: Makefile,v 1.9 2001/08/29 14:02:28 taya Exp $
 
 DISTNAME=	galeon-0.12
 CATEGORIES=	www
@@ -38,7 +38,7 @@ pre-configure:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf && ${TOUCH} aclocal.m4)
 
 pre-install:
-	${X11BASE}/bin/gconftool --shutdown
+	${X11PREFIX}/bin/gconftool --shutdown
 
 post-install:
 	${SED} -e "s,@PREFIX@,${PREFIX},g" ${FILESDIR}/galeon.in > ${PREFIX}/bin/galeon
