@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2004/03/29 07:42:16 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.16 2004/04/29 15:03:47 wiz Exp $
 
-DISTNAME=	libgcrypt-1.1.92
+DISTNAME=	libgcrypt-1.2.0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/libgcrypt/ \
 		http://gd.tuwien.ac.at/privacy/gnupg/alpha/libgcrypt/
@@ -12,11 +11,9 @@ COMMENT=	GNU cryptographic library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
-USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
-
-CONFIGURE_ARGS+=	--without-pth-test
+USE_BUILDLINK3=		YES
+USE_LIBTOOL=		YES
+GNU_CONFIGURE=		YES
 
 TEST_TARGET=	check
 
@@ -32,9 +29,4 @@ CONFIGURE_ARGS+=	--disable-asm
 
 .include "../../security/libgpg-error/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-
-.if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "native")
-CONFIGURE_ARGS+=	--without-pth
-.endif
-
 .include "../../mk/bsd.pkg.mk"
