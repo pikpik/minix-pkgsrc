@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/04/27 17:17:16 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:15:35 zuntum Exp $
 bin/csound
 bin/hetro
 bin/lpanal
@@ -15,7 +15,7 @@ bin/pvlook
 bin/srconv
 bin/dnoise
 bin/sdif2ad
-share/csound/csound.txt
+share/csound/csound.xmg
 include/cscore.h
 lib/libcsound.a
 lib/libcscore.a
