@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/26 00:22:53 dmcmahill Exp $
 #
 
 DISTNAME=	xscrabble
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.belgarath.demon.co.uk/programs/
 
 MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://www.belgarath.demon.co.uk/programs/
+
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
 WRKSRC=		${WRKDIR}/xscrabble
 USE_X11BASE=	yes
