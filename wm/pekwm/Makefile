@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/17 10:53:22 jmmv Exp $
 #
 
 DISTNAME=	pekwm-0.1.2
@@ -14,4 +14,5 @@ USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
 USE_X11=	YES
 
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
