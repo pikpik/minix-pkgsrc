@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/10/03 00:18:23 tv Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/15 12:06:05 tv Exp $
 #
 
 DISTNAME=	ion-2-20040729
@@ -12,6 +12,8 @@ HOMEPAGE=	http://iki.fi/~tuomov/ion/
 COMMENT=	Keyboard friendly tiling window manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+CONFLICTS+=	pwm-[0-9]*
 
 USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
