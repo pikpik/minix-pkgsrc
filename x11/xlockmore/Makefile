@@ -1,20 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2004/01/06 15:44:10 hubertf Exp $
-
-.include "../../mk/bsd.prefs.mk"
-
-# XLOCK_LIGHT will be deprecated, but support it for a while longer
-# until users figure out to install xlockmore-lite instead of xlockmore
-#
-.if defined(XLOCK_LIGHT)
-pre-extract:
-	@${ECHO} ""
-	@${ECHO} "***************************************************"
-	@${ECHO} "*** You want to install xlockmore-lite instead. ***"
-	@${ECHO} "***************************************************"
-	@${ECHO} ""
-
-.  include "../xlockmore-lite/Makefile"
-.else
+# $NetBSD: Makefile,v 1.66 2004/11/27 00:15:22 hubertf Exp $
 
 .include "Makefile.common"
 
@@ -31,5 +15,3 @@ PLIST_SUBST+=    LITE=""
 .include "../../x11/gtk2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
-
-.endif	# XLOCK_LIGHT
