@@ -1,0 +1,17 @@
+# $NetBSD$
+#
+# @SYSBUILD_USER@ user's profile
+# Home directory is @SYSBUILD_HOMEDIR@
+#
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:@PREFIX@/bin:@PREFIX@/sbin
+PATH=${PATH}:/usr/local/bin:/usr/local/sbin
+export PATH
+
+EDITOR=vi
+export EDITOR
+PAGER=more
+export PAGER
+
+PS1="@SYSBUILD_USER@@`hostname -s`\$ "
+export PS1
