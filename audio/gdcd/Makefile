@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/06/11 06:34:17 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/09/27 23:17:44 jlam Exp $
 #
 
 DISTNAME=	gdcd-0.2.1
@@ -21,4 +21,7 @@ CPPFLAGS+=	-I${LOCALBASE}/include
 CPPFLAGS+=	-D_POSIX_THREAD_SYSCALL_SOFT=1
 LDFLAGS+=	-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib
 
+.include "../../x11/gtk/buildlink.mk"
+.include "../../graphics/imlib/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
