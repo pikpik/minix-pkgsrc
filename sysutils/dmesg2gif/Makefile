@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/10/23 12:33:58 agc Exp $
+# $NetBSD: Makefile,v 1.7 2003/11/02 19:58:00 cube Exp $
 #
 
-DISTNAME=		dmesg2gif-1.2
+DISTNAME=		dmesg2gif-1.3
 WRKSRC=			${WRKDIR}
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
