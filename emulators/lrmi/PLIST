@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/08/11 18:13:50 drochner Exp $
 bin/vbetest
+include/lrmi.h
 lib/liblrmi.a
 lib/liblrmi.so
