@@ -1,0 +1,12 @@
+$NetBSD$
+--- configure.orig	Tue Aug 18 16:06:31 1998
++++ configure	Tue Aug 18 16:06:51 1998
+@@ -1850,5 +1850,5 @@
+ 
+-cd apps/asclock
+-./configure
+-cd ../..
++#cd apps/asclock
++#./configure
++#cd ../..
+ echo ""
