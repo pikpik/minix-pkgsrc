@@ -11,6 +11,15 @@ $NetBSD$
  
  ifeq ($(WITH_LIBDEBUG),yes)
   LIBNAME=libpamd
+@@ -22,7 +22,7 @@ dummy: ../Make.Rules all
+ 
+ # ---------------------------------------------
+ 
+-CFLAGS += $(DYNAMIC) $(STATIC) $(MOREFLAGS) \
++CFLAGS += $(DYNAMIC) $(STATIC) $(LTCFLAGS) $(MOREFLAGS) \
+   -DLIBPAM_VERSION_MAJOR=$(MAJOR_REL) \
+   -DLIBPAM_VERSION_MINOR=$(MINOR_REL)
+ 
 @@ -36,6 +36,10 @@ LIBPAMFULL = $(LIBPAMNAME)$(MODIFICATION
  
  LIBPAMSTATIC = $(LIBNAME).a

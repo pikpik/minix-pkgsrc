@@ -41,7 +41,7 @@ $NetBSD$
  	$(CC) $(CFLAGS) $(STATIC) $(CPPFLAGS) $(TARGET_ARCH) -c $< -o $@
  
 +%.lo : %.c
-+	$(SHLIBTOOL) --mode=compile $(CC) $(CFLAGS) $(CPPFLAGS) -DPAM_DYNAMIC $(TARGET_ARCH) -c $<
++	$(SHLIBTOOL) --mode=compile $(CC) $(CFLAGS) $(LTCFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c $<
 +
  dummy:
  	@echo "**** This is not a top-level Makefile "

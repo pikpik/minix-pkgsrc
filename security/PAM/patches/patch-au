@@ -15,7 +15,7 @@ $NetBSD$
  	$(CC) $(CFLAGS) $(STATIC) $(CPPFLAGS) $(TARGET_ARCH) -c $< -o $@
  
 +%.lo : %.c
-+	$(SHLIBTOOL) --mode=compile $(CC) $(CFLAGS) $(INCLUDE_PAMMODUTILS) -DPAM_DYNAMIC $(TARGET_ARCH) -c $<
++	$(SHLIBTOOL) --mode=compile $(CC) $(CFLAGS) $(INCLUDE_PAMMODUTILS) $(LTCFLAGS) $(TARGET_ARCH) -c $<
 +
  ifdef DYNAMIC
  LIBSHARED = $(TITLE).so
