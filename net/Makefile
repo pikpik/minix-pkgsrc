@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.526 2005/01/03 14:32:28 wiz Exp $
+# $NetBSD: Makefile,v 1.527 2005/01/04 23:48:05 jmmv Exp $
 #
 
 COMMENT=	Networking tools
@@ -215,7 +215,7 @@ SUBDIR+=	nsca
 SUBDIR+=	nsd
 SUBDIR+=	nslint
 SUBDIR+=	ntop
-SUBDIR+=	ntop2
+SUBDIR+=	ntop1
 SUBDIR+=	ntp4
 SUBDIR+=	oidentd
 SUBDIR+=	oinkmaster
