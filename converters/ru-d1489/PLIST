@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/a2kfcnv
+bin/fromdos
+bin/fromwin
+bin/todos
+bin/towin
