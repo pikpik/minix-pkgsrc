@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2002/04/14 09:49:46 rh Exp $
+# $NetBSD: Makefile,v 1.19 2002/04/15 08:31:16 rh Exp $
 #
-
 .include "Makefile.common"
 
-.include "../../net/libpcap/buildlink.mk"
+USE_BUILDLINK2=	YES
+
+.include "../../net/libpcap/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
