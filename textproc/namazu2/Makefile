@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:20 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/15 13:09:58 taca Exp $
 # FreeBSD Id: ports/japanese/namazu2/Makefile,v 1.16 2000/10/26 20:56:25 knu Exp
 
 DISTNAME=	namazu-2.0.14
@@ -21,6 +21,7 @@ USE_PKGLOCALEDIR=	yes
 USE_PKGINSTALL=		yes
 USE_PERL5=		run
 GNU_CONFIGURE=		yes
+USE_LANGUAGE=		c
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 TEST_TARGET=		check
