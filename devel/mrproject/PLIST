@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/03/23 10:59:08 agc Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/07/12 23:17:36 mycroft Exp $
 bin/mrproject
 bin/mrproject-engine
 bin/run-mrproject
@@ -117,6 +117,7 @@ share/oaf/GNOME_MrProject_MpxFileFilter.oaf
 share/oaf/GNOME_MrProject_NetworkComponent.oaf
 share/oaf/GNOME_MrProject_ProjectEngine.oaf
 share/oaf/GNOME_MrProject_ResourceComponent.oaf
+share/oaf/GNOME_MrProject_SendComponent.oaf
 share/oaf/GNOME_MrProject_TaskDialog.oaf
 share/oaf/GNOME_MrProject_XmlFileFilter.oaf
 share/pixmaps/gnome-application-x-mrproject.png
