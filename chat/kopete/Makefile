@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/09/17 12:02:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/10/06 18:37:34 mycroft Exp $
 #
 
-DISTNAME=	kopete-0.7.2
+DISTNAME=	kopete-0.7.3
 CATEGORIES=	chat kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kopete/}
 EXTRACT_SUFX=	.tar.bz2
