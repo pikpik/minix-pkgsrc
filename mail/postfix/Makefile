@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2003/11/21 15:54:40 jlam Exp $
+# $NetBSD: Makefile,v 1.109 2003/11/21 16:07:13 jlam Exp $
 
 DISTNAME=	postfix-2.0.16
 CATEGORIES=	mail
@@ -168,8 +168,8 @@ pre-install:
 .  else
 	${ECHO} "pwcheck_method: sasldb" > ${WRKDIR}/smtpd.conf
 .  endif
-.endif
 	${INSTALL_DATA} ${WRKDIR}/smtpd.conf ${SHAREDIR}
+.endif
 	${INSTALL_SCRIPT} ${WRKSRC}/conf/post-install ${SHAREDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/conf/postfix-files ${SHAREDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/conf/postfix-script ${SHAREDIR}
