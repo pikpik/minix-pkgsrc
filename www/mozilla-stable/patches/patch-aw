@@ -1,3 +1,4 @@
+$NetBSD$
 diff -ru ../Orig/mozilla/widget/src/gtksuperwin/Makefile.in ./widget/src/gtksuperwin/Makefile.in
 --- ../Orig/mozilla/widget/src/gtksuperwin/Makefile.in	Wed Apr 10 12:35:09 2002
 +++ ./widget/src/gtksuperwin/Makefile.in	Thu Sep 12 00:26:30 2002

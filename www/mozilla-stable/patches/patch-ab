@@ -1,3 +1,4 @@
+$NetBSD$
 diff -ru ../Orig/mozilla/configure.in ./configure.in
 --- ../Orig/mozilla/configure.in	Tue Jul  2 02:52:59 2002
 +++ ./configure.in	Wed Sep 11 23:47:37 2002

@@ -1,3 +1,4 @@
+$NetBSD$
 diff -ru ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in ./xpcom/reflect/xptcall/src/md/unix/Makefile.in
 --- ../Orig/mozilla/xpcom/reflect/xptcall/src/md/unix/Makefile.in	Wed Apr 10 12:37:34 2002
 +++ ./xpcom/reflect/xptcall/src/md/unix/Makefile.in	Wed Sep 11 23:47:39 2002
