@@ -1,18 +1,20 @@
 $NetBSD$
 
---- Makefile.orig	Sun May 20 07:00:13 2001
+--- Makefile.orig	Sun Sep  2 18:32:03 2001
 +++ Makefile
-@@ -1,8 +1,8 @@
+@@ -1,10 +1,10 @@
 -CC = gcc
 -LD = gcc
 -RM = rm -f
 -CFLAGS = -c -Wall -O2 -fomit-frame-pointer
--LDFLAGS = -s
 +CC ?= gcc
 +LD = ${CC}
 +RM ?= rm -f
-+CFLAGS += -c -Wall -O2 -fomit-frame-pointer
-+LDFLAGS += -s -lcrypt
- #LDFLAGS = -s -lcrypt
- #LDFLAGS = -s -lcrypt -lpam
- 
++CFLAGS += -c -Wall -fomit-frame-pointer
+ LDFLAGS = -s
+ LIBS =
+-#LIBS += -lcrypt
++LIBS += -lcrypt
+ #LIBS += -lpam
+ #LIBS += -lwrap
+ #LIBS += -lnsl
