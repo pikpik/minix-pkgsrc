@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/03/27 03:20:19 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2001/09/27 23:18:45 jlam Exp $
 # FreeBSD Id: Makefile,v 1.17 1999/04/24 09:25:32 kuriyama Exp
 
 DISTNAME=	db157
@@ -30,7 +30,7 @@ pre-install:
 
 do-install:
 	@${CP} -Rp ${WRKDIR}/docbook/* ${INSTDIR}
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
 	@${CAT} ${FILESDIR}/install-note
