@@ -1,8 +1,8 @@
 $NetBSD$
 
---- agent/filter/logfile.c.orig	Fri Apr 18 16:20:26 1997
-+++ agent/filter/logfile.c	Fri Apr 18 16:41:06 1997
-@@ -68,6 +68,9 @@
+--- agent/filter/logfile.c.orig	Sun Mar 18 03:31:21 2001
++++ agent/filter/logfile.c	Sun Apr  8 09:10:12 2001
+@@ -71,6 +71,9 @@
  #include <sys/fcntl.h>	/* Try this one in last resort */
  #endif
  #endif
@@ -12,14 +12,3 @@ $NetBSD$
  
  #include "confmagic.h"
  
-@@ -220,8 +223,10 @@
- 	 */
- 
- #ifdef HAS_SYS_ERRLIST
-+#if !(defined(BSD) && (BSD >= 199306))
- 	extern int sys_nerr;					/* Size of sys_errlist[] */
- 	extern char *sys_errlist[];				/* Maps error code to string */
-+#endif
- #endif
- 
- #ifdef HAS_STRERROR
