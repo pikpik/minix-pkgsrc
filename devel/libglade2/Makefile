@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/23 17:18:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2004/02/11 01:23:36 xtraeme Exp $
 #
 
 DISTNAME=		libglade-2.0.1
@@ -29,6 +29,7 @@ XML_ENTRIES=	system http://glade.gnome.org/glade-2.0.dtd \
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/libglade/2.0
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/xmlcatmgr/catalogs.mk"
