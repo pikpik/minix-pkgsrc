@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.5 1999/07/18 23:34:13 tron Exp $
+$NetBSD$
 
---- configure.orig	Mon May 17 10:25:36 1999
-+++ configure	Mon May 17 10:25:41 1999
-@@ -959,20 +959,9 @@
+--- configure	Wed Jul 19 01:54:07 2000
++++ configure	Fri Sep  1 21:42:33 2000
+@@ -1019,20 +1019,9 @@
  
  
  
@@ -26,10 +26,19 @@ $NetBSD: patch-aa,v 1.5 1999/07/18 23:34:13 tron Exp $
  
  
  
-@@ -1440,7 +1429,7 @@
+@@ -1291,7 +1280,7 @@
+ 
+ 
+ RNEWSGRP=$NEWSGRP
+-RNEWSMODE=0500
++RNEWSMODE=4555
+ # Check whether --enable-uucp-rnews or --disable-uucp-rnews was given.
+ if test "${enable_uucp_rnews+set}" = set; then
+   enableval="$enable_uucp_rnews"
+@@ -1582,7 +1571,7 @@
    SET_MAKE="MAKE=${MAKE-make}"
  fi
-
+ 
 -for ac_prog in 'bison -y' byacc
 +for ac_prog in 'bison -y' byacc yacc
  do
