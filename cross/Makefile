@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/03/22 16:08:48 grant Exp $
+# $NetBSD: Makefile,v 1.29 2003/05/22 07:25:09 wiz Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -15,6 +15,7 @@ SUBDIR+=	i386-linuxglibc1
 SUBDIR+=	i386-mingw32
 SUBDIR+=	i386-msdosdjgpp
 SUBDIR+=	i386-netbsdpe
+SUBDIR+=	icdprog
 SUBDIR+=	m68k-netbsd
 SUBDIR+=	mipsEEel-netbsd
 
