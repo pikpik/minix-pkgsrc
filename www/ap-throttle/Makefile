@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/10 20:37:56 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:27:58 agc Exp $
 
 DISTNAME=	mod_throttle312
 PKGNAME=	ap-throttle-3.1.2
@@ -12,7 +12,7 @@ HOMEPAGE=	${MASTER_SITES}
 COMMENT=	Apache module for limiting bandwidth usage
 
 WRKSRC=         ${WRKDIR}/${PKGNAME_NOREV:S/ap-/mod_/}
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	yes
 
 APACHE_MODULE_NAME=	mod_throttle.so
 APACHE_MODULE_SRC=	mod_throttle.c
