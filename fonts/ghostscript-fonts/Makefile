@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:37:06 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/02/15 16:53:59 sketch Exp $
 
 DISTNAME=		ghostscript-fonts-6.0
 CATEGORIES=		fonts
 MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=ghostscript/} \
-			ftp://ftp.cs.wisc.edu/ghost/aladdin/fonts/
+			ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/ 
 DISTFILES=		${GS_FONTS_STD} ${GS_FONTS_OTHER}
 
 MAINTAINER=		jlam@NetBSD.org
