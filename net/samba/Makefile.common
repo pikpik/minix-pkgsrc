@@ -1,7 +1,7 @@
-# $NetBSD: Makefile.common,v 1.6 2003/03/16 07:57:44 martti Exp $
+# $NetBSD: Makefile.common,v 1.7 2003/03/16 16:19:04 tron Exp $
 
 DISTNAME=		samba-${SAMBA_DIST_VERS}
-SAMBA_DIST_VERS=	2.2.8
+SAMBA_DIST_VERS=	2.2.8a
 WRKSRC?=		${WRKDIR}/${DISTNAME}/source
 CATEGORIES?=		net
 MASTER_SITES=		ftp://ftp.samba.org/pub/samba/ \
