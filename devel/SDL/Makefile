@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2002/06/25 06:54:43 tron Exp $
+# $NetBSD: Makefile,v 1.35 2002/07/13 16:17:33 wiz Exp $
 #
 
 DISTNAME=	SDL-1.2.3
+PKGREVISION=	1
 CATEGORIES=	devel games
 MASTER_SITES=	http://www.libsdl.org/release/
 
@@ -47,6 +48,8 @@ CONFIGURE_ENV+=		SYSTEM_LIBS="${LDFLAGS}"
 
 pre-patch:
 	cd ${WRKSRC} && ${MKDIR} src/audio/netbsd
+	cd ${WRKSRC} && ${MKDIR} src/joystick/bsd
+	${CP} ${FILESDIR}/[MS]* ${WRKSRC}/src/joystick/bsd
 
 post-configure:
 	cd ${WRKSRC}/src/audio && ${CP} *.[ch] netbsd/
