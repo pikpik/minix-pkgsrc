@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/wmusic
+@exec ${MKDIR} %D/share/doc/wmusic
+@dirrm share/doc/wmusic
