@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: mysqld.sh,v 1.1 2003/01/21 06:02:42 lukem Exp $
 #
 
 # PROVIDE: mysqld
