@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/02/25 01:04:12 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2000/03/16 22:55:02 thorpej Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/02/16 13:32:59 andreas Exp
 #
 
@@ -21,5 +21,6 @@ PKG_MISC_TARGETS?=	benchmark results
     SUBDIR += paranoia
     SUBDIR += postmark
     SUBDIR += whetstone
+    SUBDIR += xengine
 
 .include "../mk/bsd.pkg.subdir.mk"
