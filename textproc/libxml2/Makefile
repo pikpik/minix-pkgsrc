@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2004/11/11 21:01:15 recht Exp $
+# $NetBSD: Makefile,v 1.64 2005/01/16 22:28:34 recht Exp $
 
 DISTNAME=	libxml2-2.6.17
 CATEGORIES=	textproc
@@ -35,8 +35,11 @@ MAKE_ENV+=	PAX=${PAX:Q}
 
 TEST_TARGET=	check
 
-CFLAGS+=	-DXML_SGML_DEFAULT_CATALOG=\"\\\"${SGML_DEFAULT_CATALOG}\\\"\"
-CFLAGS+=	-DXML_XML_DEFAULT_CATALOG=\"\\\"${XML_DEFAULT_CATALOG}\\\"\"
+SUBST_CLASSES+=		cat
+SUBST_STAGE.cat=	pre-configure
+SUBST_FILES.cat=	catalog.c xmlcatalog.c
+SUBST_SED.cat=	-e "s,@@SGML_DEFAULT_CATALOG@@,${SGML_DEFAULT_CATALOG},g"
+SUBST_SED.cat+=	-e "s,@@XML_DEFAULT_CATALOG@@,${XML_DEFAULT_CATALOG},g"
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
