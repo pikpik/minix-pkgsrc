@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.165 2001/11/29 09:00:00 martti Exp $
+# $NetBSD: Makefile,v 1.166 2001/12/01 00:31:35 hubertf Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -102,6 +102,8 @@ SUBDIR+=	mtv
 SUBDIR+=	ncview
 SUBDIR+=	netpbm
 SUBDIR+=	ns-flash
+SUBDIR+=	ogle
+SUBDIR+=	ogle_gui
 SUBDIR+=	opendis
 SUBDIR+=	openptc
 SUBDIR+=	p5-GD
