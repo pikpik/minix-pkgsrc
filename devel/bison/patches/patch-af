@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/getopt.c.orig	Thu Feb  3 19:23:10 2000
 +++ src/getopt.c	Thu Feb  3 19:23:25 2000
 @@ -79,6 +79,8 @@
