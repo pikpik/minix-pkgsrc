@@ -1,12 +1,12 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/27 22:05:42 jlam Exp $
 #
 
-DISTNAME=		HTML-Tagset-3.01
+DISTNAME=		HTML-Tagset-3.02
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=HTML/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		jlam@netbsd.org
 
 USE_PERL5=		# defined
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/Tagset/.packlist
