@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/aspell/cs.multi
+lib/aspell/cs.rws
+lib/aspell/czech.alias
+share/aspell/cs.dat
