@@ -1,13 +1,13 @@
 $NetBSD$
 
---- Imakefile.orig	Sat Jun  7 00:00:00 1997
-+++ Imakefile	Sun Dec 28 09:14:47 1997
+--- Imakefile.orig	Fri Jun  6 18:00:00 1997
++++ Imakefile	Tue Dec 22 01:55:12 1998
 @@ -42,7 +42,7 @@
  DEPSUBDIRS 		= doc doc/source source	/* make depend */
  INSTALLSUBDIRS		= source		/* make install */
  INCLUDESSUBDIRS 	= source		/* make includes */
 -INSTALLMANSUBDIRS 	= doc			/* make install.man */
-+INSTALLMANSUBDIRS 	= doc source		/* make install.man */
++INSTALLMANSUBDIRS 	= source		/* make install.man */
  INSTALLDOCSUBDIRS 	= doc			/* make install.doc */
  
  MakeSubdirs($(SUBDIRS))
