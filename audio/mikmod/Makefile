@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:10 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/04/22 14:22:39 agc Exp $
 #
 
 DISTNAME=	mikmod-2.14-unix
@@ -12,6 +12,8 @@ DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
 
 RESTRICTED=	"Registration required for redistribution and commercial use."
 MIRROR_DISTFILE=	no
+
+.include "../../mk/bsd.prefs.mk"
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/source
 MAN1=		mikmod.1
