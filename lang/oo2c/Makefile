@@ -22,6 +22,15 @@ GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_LIBTOOL=		yes
 
+EVAL_PREFIX+=		LIBTOOL_PREFIX=libtool-base
+LIBTOOL_PREFIX_DEFAULT=	${LOCALBASE}
+
+pre-install:
+	for f in ${WRKSRC}/rsrc/OOC/oo2crc.xml; do			\
+		${SED} -e 's,${BUILDLINK_DIR},${LIBTOOL_PREFIX},g'	\
+		$$f > $$f.tmp && ${MV} $$f.tmp $$f;			\
+	done
+
 post-install:
 	cd ${PREFIX}/share/doc/html && ${LN} -sf ${PREFIX}/lib/oo2c/oocdoc/html oo2c
 	${INSTALL_DATA_DIR} ${PREFIX}/share/emacs/site-lisp
