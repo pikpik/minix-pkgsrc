@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2001/06/09 08:18:40 pooka Exp $
+# $NetBSD: Makefile,v 1.31 2001/06/30 23:14:46 taca Exp $
 #
 
 COMMENT=	Archivers
 
 SUBDIR+=	arc
+SUBDIR+=	bicom
 SUBDIR+=	bunzip
 SUBDIR+=	bzip2
 SUBDIR+=	fastjar
