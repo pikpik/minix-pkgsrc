@@ -1,7 +1,7 @@
 $NetBSD$
 
---- docs/conf/httpd-std.conf.orig	Fri Feb 23 03:54:49 2001
-+++ docs/conf/httpd-std.conf	Fri Mar 30 23:10:10 2001
+--- docs/conf/httpd-std.conf.orig	Mon Mar 26 01:54:48 2001
++++ docs/conf/httpd-std.conf	Sun Apr  8 12:05:13 2001
 @@ -58,13 +58,13 @@
  # DISK. The PID of the main server process is automatically appended to
  # the filename. 
@@ -89,7 +89,7 @@ $NetBSD$
  
  #
  # Optionally add a line containing the server version and virtual host
-@@ -936,6 +939,6 @@
+@@ -944,6 +947,6 @@
  #    ServerAdmin webmaster@dummy-host.example.com
  #    DocumentRoot /www/docs/dummy-host.example.com
  #    ServerName dummy-host.example.com
