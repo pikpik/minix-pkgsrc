@@ -1,3 +1,4 @@
+$NetBSD$
 --- majordomo.orig	Sat Nov 27 17:28:39 1999
 +++ majordomo	Sat Nov 27 17:29:16 1999
 @@ -58,6 +58,7 @@

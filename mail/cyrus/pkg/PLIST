@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/cyradm
 bin/imtest
 cyrus/bin/arbitron
