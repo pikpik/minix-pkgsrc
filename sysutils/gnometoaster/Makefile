@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:26:15 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/24 15:06:57 grant Exp $
 #
 
 DISTNAME=	gtoaster1.0Beta5
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gnometoaster.rulez.org/
-COMMENT=	Cd recording frontend for X/Gtk
+COMMENT=	CD recording frontend for X/GTK+
 
 WRKSRC=			${WRKDIR}/gtoaster
 USE_BUILDLINK2=		YES
