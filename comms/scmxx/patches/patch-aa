@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- Makefile.orig	Fri Jan  4 21:43:54 2002
++++ Makefile	Sun Jan 13 15:29:18 2002
+@@ -1,4 +1,4 @@
+-SHELL=/bin/bash
++SHELL=/bin/sh
+ 
+ CC=gcc
+ INSTALL_DIR=$(DESTDIR)/usr/bin
+@@ -17,7 +17,7 @@
+ else
+ .PHONY: do-it-all
+ do-it-all:      depend
+-	@sleep 1s; make
++	@sleep 1s; $(MAKE)
+ endif
+ 
+ .PHONY: depend
