@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.66 2004/05/12 14:10:18 jschauma Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.67 2004/05/31 16:47:00 jschauma Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -99,7 +99,6 @@ EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,--export-dynamic
 .endif
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
-MOTIF12_TYPE_DEFAULT?=	lesstif12	# default 1.2 compatible libs type
 NOLOGIN?=		/sbin/nologin
 .if exists(${LOCALBASE}/sbin/pkg_info)
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin

@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.71 2004/05/12 14:10:18 jschauma Exp $
+# $NetBSD: defs.Linux.mk,v 1.72 2004/05/31 16:47:00 jschauma Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -139,7 +139,6 @@ DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
 GROUPADD?=		/usr/sbin/groupadd
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
-MOTIF12_TYPE_DEFAULT?=	lesstif12	# default 1.2 compatible libs type
 NOLOGIN?=		${FALSE}
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
