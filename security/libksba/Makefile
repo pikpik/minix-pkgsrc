@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2004/02/25 18:08:27 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:18:09 tv Exp $
 #
 
-DISTNAME=	libksba-0.9.4
-PKGREVISION=	1
+DISTNAME=	libksba-0.9.7
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/libksba/
 
-MAINTAINER=	kleink@NetBSD.org
+MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://www.g10code.com/p-libksba.html
 COMMENT=	X.509 library
 
