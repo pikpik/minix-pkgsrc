@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/01/23 16:05:13 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/02/20 17:56:16 wiz Exp $
 #
 
 DISTNAME=	icewm-1.0.2
@@ -16,6 +16,15 @@ CONFLICTS+=	icewm-gnome-[0-9]*
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+.if exists(/usr/include/machine/apmvar.h)
+CPPFLAGS+=	-DCONFIG_APM
+CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
+.endif
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/icewm
