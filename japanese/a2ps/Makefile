@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 15:25:10 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/09 20:36:31 agc Exp $
 # FreeBSD Id: Makefile,v 1.5 1999/04/16 04:57:06 taoka Exp $
 
 DISTNAME=	a2ps.pl-1.44
@@ -16,6 +16,7 @@ USE_PERL5=	YES
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} .
 WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
+REPLACE_PERL=	a2ps.pl-1.44
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/a2ps.pl-1.44 ${PREFIX}/bin/a2ps-j
