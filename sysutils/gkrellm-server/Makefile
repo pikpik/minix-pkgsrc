@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/02/25 08:41:56 cube Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/26 23:11:57 minskim Exp $
 .include "../../sysutils/gkrellm/Makefile.common"
 
 GKRELLM_PKGBASE=	gkrellm-server
@@ -39,5 +39,6 @@ MAKE_ENV+=		USE_GLIB12=yes
 .else
 .include "../../devel/glib2/buildlink3.mk"
 .endif
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
