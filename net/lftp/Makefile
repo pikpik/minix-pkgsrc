@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/07/13 13:52:55 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/21 17:10:47 martti Exp $
 #
 
 DISTNAME=	lftp-2.6.6
@@ -23,6 +23,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-modules
+
+CONFIGURE_ENV+=		F77=${FALSE}
 
 CONF_FILES=	${PREFIX}/share/examples/lftp/lftp.conf	\
 		${PKG_SYSCONFDIR}/lftp.conf
