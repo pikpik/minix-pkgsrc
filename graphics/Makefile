@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 1997/11/03 01:50:43 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -66,6 +66,6 @@
 #    SUBDIR += xpaint
 #    SUBDIR += xpdf
     SUBDIR += xpm
-#    SUBDIR += xv
+    SUBDIR += xv
 
 .include <bsd.port.subdir.mk>
