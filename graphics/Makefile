@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2000/12/12 01:30:48 wiz Exp $
+# $NetBSD: Makefile,v 1.110 2001/01/26 09:40:02 wiz Exp $
 #
 
     SUBDIR += CompuPic
@@ -51,6 +51,7 @@
     SUBDIR += hermes
     SUBDIR += hp2xx
     SUBDIR += imlib
+    SUBDIR += iGMT
     SUBDIR += jpeg
     SUBDIR += kdegraphics
     SUBDIR += libflash
