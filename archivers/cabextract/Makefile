@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/18 09:56:13 agc Exp $
 #
 
-DISTNAME=		cabextract-0.5
+DISTNAME=		cabextract-0.6
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.kyz.uklinux.net/downloads/
 
