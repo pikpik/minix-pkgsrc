@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/24 21:17:34 tron Exp $
+# $NetBSD: Makefile,v 1.6 1999/04/26 18:38:28 garbled Exp $
 #
 
 DISTNAME=		qnethack-3.2.2.1.0.1.src
@@ -14,7 +14,7 @@ HOMEPAGE=		http://trolls.troll.no/warwick/nethack/
 
 DEPENDS+=		nethack-lib-3.2.2:../nethack-lib
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
-DEPENDS+=		qt-1.42:../../x11/qt
+DEPENDS+=		qt-1.44:../../x11/qt
 
 WRKSRC=			${WRKDIR}/nethack-3.2.2
 
