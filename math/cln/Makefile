@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/05 14:46:23 adam Exp $
 #
 
 DISTNAME=	cln-1.1.6
@@ -21,4 +21,5 @@ PKGCONFIG_OVERRIDE=	${WRKSRC}/cln.pc.in
 
 INFO_FILES=	cln.info
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
