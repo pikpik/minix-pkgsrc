@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2003/09/19 13:26:12 agc Exp $
+# $NetBSD: Makefile,v 1.15 2003/10/02 07:13:27 martti Exp $
 #
 
 DISTNAME=	tripwire-1.2
 PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/ids/tripwire/
-EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.cerias.purdue.edu/coast/coast-library.html
