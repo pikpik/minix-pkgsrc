@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/06/12 06:59:30 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2003/06/12 19:52:26 wiz Exp $
 
 DISTNAME=	audit-packages-1.16
 WRKSRC=		${WRKDIR}
@@ -10,7 +10,6 @@ MAINTAINER=	agc@netbsd.org
 COMMENT=	tools to show vulnerabilities in installed packages
 
 NO_CHECKSUM=    yes
-NO_MTREE=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
