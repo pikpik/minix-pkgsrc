@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/07/10 17:15:18 mycroft Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/17 22:56:57 grant Exp $
 #
 
 DISTNAME=	xglobe-0.5
@@ -24,7 +24,7 @@ MAPS=		LE.400.gif Brill.400.gif mggd.gif
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 USE_X11BASE=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 EVAL_PREFIX+=	QT1DIR=qt1
 MAKE_ENV+=	QTDIR=${QT1DIR}/qt1
 

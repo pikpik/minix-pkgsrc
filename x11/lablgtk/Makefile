@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:54:26 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:56:35 grant Exp $
 
 DISTNAME=	lablgtk-1.2.5
 PKGREVISION=	3
@@ -10,7 +10,7 @@ HOMEPAGE=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
 COMMENT=	GTK+ bindings for ocaml
 
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/23 15:02:24 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2003/08/25 17:31:45 recht Exp $
 #
 
 DISTNAME=	sip-x11-gpl-3.8
@@ -18,7 +18,7 @@ BUILD_DEPENDS+=		qt3-tools-3.*:../../x11/qt3-tools
 USE_BUILDLINK2= 	# defined
 USE_X11=		# defined
 USE_LIBTOOL=		# defined
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=		make
 
 CONFIGURE_ARGS=		-q ${QTDIR} -m ${GMAKE}
 

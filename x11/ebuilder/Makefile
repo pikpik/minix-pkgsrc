@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 22:56:23 grant Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/20 12:28:26 agc Exp $
 #
 
 DISTNAME=	ebuilder-0.56d
@@ -13,7 +13,7 @@ COMMENT=	GUI builder for the Qt library
 WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_BUILDLINK2=	yes
 USE_X11=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 MAKEFILE=	GNUmakefile
 
 MAKE_ENV+=	CXXFLAGS="${CXXFLAGS}"

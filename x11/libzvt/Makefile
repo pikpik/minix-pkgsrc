@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/12/13 00:45:26 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/03 18:49:59 reed Exp $
 #
 
 DISTNAME=		libzvt-2.0.1
@@ -13,7 +13,7 @@ COMMENT=		Virtual Terminal Widget Library for GNOME2
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

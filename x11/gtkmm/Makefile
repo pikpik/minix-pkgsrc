@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/12/13 00:45:26 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/03 18:49:57 reed Exp $
 #
 
 DISTNAME=	gtkmm-2.2.8
@@ -13,7 +13,7 @@ COMMENT=	C++ interface to Gtk+ v2
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_PERL5=		YES
 USE_X11=		YES
 

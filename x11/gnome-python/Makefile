@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2003/11/12 01:31:52 salo Exp $
+# $NetBSD: Makefile,v 1.38 2004/01/03 18:49:56 reed Exp $
 
 DISTNAME=		gnome-python-1.4.4
 PKGNAME=		${PYPKGPREFIX}-gnome-1.4.4
@@ -18,7 +18,7 @@ CONFLICTS+=		gnome-python-*
 GNU_CONFIGURE=		yes
 USE_X11=		yes
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/03 18:49:59 reed Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/23 21:50:52 jmmv Exp $
 
 DISTNAME=	kmessage-0.1
 PKGREVISION=	3
@@ -10,7 +10,7 @@ HOMEPAGE=	http://soliton.wins.uva.nl/~wijnhout/kmessage/
 COMMENT= 	KMessage is an xmessage clone for KDE
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=              YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          YES
 
 .include "../../meta-pkgs/kde3/buildlink2.mk"
