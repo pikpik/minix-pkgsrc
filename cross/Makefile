@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/06/27 22:32:55 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.27 2002/10/03 19:18:36 wiz Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -16,6 +16,5 @@ SUBDIR+=	i386-msdosdjgpp
 SUBDIR+=	i386-netbsdpe
 SUBDIR+=	m68k-netbsd
 SUBDIR+=	mipsEEel-netbsd
-SUBDIR+=	zoularis
 
 .include "../mk/bsd.pkg.subdir.mk"
