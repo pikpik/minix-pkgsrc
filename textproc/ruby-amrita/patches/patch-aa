@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- install.rb.orig	2002-07-19 16:20:51.000000000 +0900
++++ install.rb
+@@ -37,7 +37,7 @@ def install(from, to)
+ 
+     st = File::lstat(path)
+     dest = path.sub(from, to)
+-    mode = 0644
++    mode = 0444
+ 
+     if st.symlink?
+       linksrc = File::readlink(path)
