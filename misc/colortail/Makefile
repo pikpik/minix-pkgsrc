@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/03/16 20:53:03 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/31 11:24:53 zuntum Exp $
 # FreeBSD Id: ports/misc/colortail/Makefile,v 1.10 2000/06/28 17:20:27 alex Exp
 
 DISTNAME=	colortail-0.3.0
@@ -14,6 +14,7 @@ CONFIGURE_ARGS+=--datadir=${PREFIX}/share/examples/colortail
 DESCR_SRC=	${WRKDIR}/.DESCR_SRC
 
 post-install:
+	${INSTALL_MAN} ${WRKSRC}/colortail.1 ${PREFIX}/man/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/colortail
 	cd ${WRKSRC}/example-conf/ && \
 	${INSTALL_DATA} conf.kernel conf.messages conf.secure \
