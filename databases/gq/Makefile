@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/26 02:27:36 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/14 16:15:21 jmmv Exp $
 #
 
 DISTNAME=	gq-1.0beta1
@@ -10,7 +10,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://biot.com/gq/
 COMMENT=	GTK-based LDAP client
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_X11=		yes
 GNU_CONFIGURE=		yes
@@ -20,8 +20,8 @@ CONFIGURE_ARGS+=	--enable-browser-dnd
 CONFIGURE_ARGS+=	--with-ssl-prefix=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	--enable-cache
 
-.include "../../security/openssl/buildlink2.mk"
-.include "../../databases/openldap/buildlink2.mk"
-.include "../../x11/gtk2/buildlink2.mk"
-.include "../../textproc/libxml2/buildlink2.mk"
+.include "../../security/openssl/buildlink3.mk"
+.include "../../databases/openldap/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
