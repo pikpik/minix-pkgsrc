@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/03/29 12:40:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2003/04/27 13:34:45 cjep Exp $
 
 DISTNAME=	plex86-20010106
 PKGNAME=	${DISTNAME:S/-/-0./}
@@ -23,8 +23,9 @@ RESTRICTED=	CPU-specific binary code
 NO_BIN_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_FTP=	${RESTRICTED}
 
-BSDSRCDIR?=	/nonexistent	# to override <bsd.own.mk>, MUST be
-				# set this way BEFORE bsd.prefs.mk
+# to override <bsd.own.mk>, MUST be set this way BEFORE bsd.prefs.mk
+BSDSRCDIR?=	/nonexistent
+
 .include "../../mk/bsd.prefs.mk"
 
 pre-extract:
