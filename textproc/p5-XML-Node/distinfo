@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/28 12:39:39 hubertf Exp $
+$NetBSD: distinfo,v 1.1 2001/04/17 11:55:12 agc Exp $
 
-MD5 (XML-Node-0.10.tar.gz) = 901719349ca99a24dcc5599e91e0a214
+SHA1 (XML-Node-0.10.tar.gz) = 94418a149f82b8dd4a295f55c797357957e817f2
+Size (XML-Node-0.10.tar.gz) = 7336 bytes
