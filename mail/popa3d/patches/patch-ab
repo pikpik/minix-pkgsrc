@@ -26,7 +26,7 @@ $NetBSD$
  # HP-UX trusted system
  #LIBS += -lsec
  # Solaris (POP_STANDALONE, POP_VIRTUAL)
-@@ -24,7 +24,7 @@
+@@ -24,7 +24,7 @@ LIBS =
  #LIBS += -lcrypto
  
  DESTDIR =

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2002/04/23 14:03:43 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2002/09/18 21:15:12 jlam Exp $
 #
 
-DISTNAME=	popa3d-0.5.1
+DISTNAME=	popa3d-0.5.9
 CATEGORIES=	mail
 MASTER_SITES=	http://www.openwall.com/popa3d/ \
 		ftp://ftp.openwall.com/pub/projects/popa3d/ \
@@ -17,7 +17,7 @@ POPA3D_GROUP?=	popa3d
 PKG_GROUPS=	${POPA3D_GROUP}
 PKG_USERS=	${POPA3D_USER}:${POPA3D_GROUP}
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=	YES
 
 FILES_SUBST+=	POPA3D_USER=${POPA3D_USER}
 FILES_SUBST+=	POPA3D_GROUP=${POPA3D_GROUP}
