@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 1999/02/20 22:48:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1999/04/14 18:00:47 bad Exp $
 #
 
 DISTNAME=       mos14src
-PKGNAME=        moscow_ml-1.43
+PKGNAME=        moscow_ml-1.44
 WRKSRC=		${WRKDIR}/mosml/src
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.dina.kvl.dk/pub/mosml/ \
