@@ -1,8 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.common,v 1.2 2003/04/14 23:15:54 hubertf Exp $
 bin/chattr
 bin/lsattr
 bin/uuidgen
-info/libext2fs.info.gz
 man/man1/chattr.1
 man/man1/lsattr.1
 man/man1/uuidgen.1
