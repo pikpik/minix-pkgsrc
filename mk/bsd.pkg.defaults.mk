@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.189 2003/10/19 07:43:24 grant Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.190 2003/11/07 13:55:02 dmcmahill Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -139,6 +139,19 @@ CROSSBASE?=	${LOCALBASE}/cross
 # on the system.
 # Possible: any path
 # Default: ${X11PREFIX} or where lesstif12 is installed
+
+#BSDSRCDIR?=	/usr/src
+# Where the NetBSD src module source tree is located
+#  used in the emulators/plex86, emulators/vmware-module{,3}, net/arla,
+#  sysutils/aperture, and sysutils/fdgw packages
+# Possible: any path
+# Default: not defined
+
+#BSDXSRCDIR?=	/usr/xsrc
+# Where the NetBSD xsrc module source tree is located
+#  used in the x11/xservers package
+# Possible: any path
+# Default: not defined
 
 DISTDIR?=	${_PKGSRCDIR}/distfiles
 # Directory where original distribution
