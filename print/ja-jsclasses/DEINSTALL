@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+case ${STAGE} in
+PRE-DEINSTALL)
+	;;
+
+DEINSTALL)
+	;;
+
+POST-DEINSTALL)
+	@PREFIX@/bin/mktexlsr
+	;;
+
+*)
+	${ECHO} "Unexpected argument: ${STAGE}"
+	exit 1
+	;;
+
+esac
