@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2003/05/05 16:59:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2003/06/07 10:34:09 jmmv Exp $
 
 DISTNAME=		ettercap-0.6.9
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security net
 MASTER_SITES=		http://ettercap.sourceforge.net/download/
 
