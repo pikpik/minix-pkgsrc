@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- include/proto.h.orig	Sun Feb  3 09:46:40 2002
++++ include/proto.h
+@@ -1813,6 +1813,7 @@
+ char *lp_deleteprinter_cmd(void);
+ char *lp_os2_driver_map(void);
+ char *lp_lockdir(void);
++char *lp_piddir(void);
+ char *lp_utmpdir(void);
+ char *lp_wtmpdir(void);
+ BOOL lp_utmp(void);
