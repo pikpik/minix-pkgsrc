@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/23 08:46:06 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:54:43 grant Exp $
 #
 
 DISTNAME=	XML-Xerces-1.7.0-3
@@ -13,7 +13,7 @@ COMMENT=	Validating XML parser API for Perl
 CONFLICTS+=	XML-Xerces-[0-9]*
 
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 PERL5_REQD=	5.6.0
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/XML/Xerces/.packlist
 

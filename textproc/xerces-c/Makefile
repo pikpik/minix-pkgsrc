@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/21 17:27:56 martti Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:26:50 agc Exp $
 #
 
 DISTNAME=	xerces-c-src1_7_0
@@ -12,7 +12,7 @@ COMMENT=	Validating C++ XML parser with DOM and SAX support
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src/xercesc
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.prefs.mk"
 .if ${LOWER_OPSYS} == "SunOS"

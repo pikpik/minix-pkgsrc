@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/01/16 12:33:55 uebayasi Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/24 02:19:20 uebayasi Exp $
 
 DISTNAME=       dictd-1.8.0
 PKGNAME=        dict-client-1.8.0
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.dict.org/
 COMMENT=	Dictionary Service Protocol client
 
 USE_BUILDLINK2=	# defined
-USE_GMAKE=	# defined
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	# defined
 
 ALL_TARGET=	dict

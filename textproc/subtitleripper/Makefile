@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/03 18:49:54 reed Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:26:50 agc Exp $
 #
 
 DISTNAME=	subtitleripper-0.3-1
@@ -15,7 +15,7 @@ DEPENDS+=	gocr-[0-9]*:../../textproc/gocr
 
 WRKSRC=			${WRKDIR}/subtitleripper
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/pgm2txt ${PREFIX}/bin
