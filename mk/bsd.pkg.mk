@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1267 2003/09/09 13:36:36 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1268 2003/09/10 02:20:50 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -4351,7 +4351,7 @@ SUBST_PLIST_REPLACEMENT1=						\
 		-e  's@${LOWER_OS_VERSION:S/./\./g}@\$${LOWER_OS_VERSION}@' \
 		-e  's@${LOWER_OPSYS}@\$${LOWER_OPSYS}@'
 SUBST_PLIST_REPLACEMENT2=						\
-		-e  's@${PKGNAME:S/./\./g}@\$${PKGNAME}@' 		\
+		-e  's@${PKGNAME_NOREV:S/./\./g}@\$${PKGNAME}@'		\
 		-e  's@${PKGVERSION:S/./\./g}@\$${PKGVERSION}@'		\
 		-e  's@${PKGLOCALEDIR}/locale@\$${PKGLOCALEDIR}/locale@'
 
