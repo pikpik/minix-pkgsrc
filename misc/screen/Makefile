@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2002/11/14 23:33:12 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2002/12/23 13:13:02 grant Exp $
 
 DISTNAME=	screen-3.9.13
 CATEGORIES=	misc
@@ -9,7 +9,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/screen/screen.html
 COMMENT=	Multi-screen window manager
 
-USE_BUILDLINK2=		# defined	
+USE_BUILDLINK2=		# defined
 INFO_FILES=		screen.info
 PLIST_SUBST=		DISTNAME=${DISTNAME}
 TEXINFO_OVERRIDE=	YES

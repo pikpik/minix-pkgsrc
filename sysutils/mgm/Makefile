@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/04/29 09:47:02 skrll Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/08 07:13:11 lukem Exp $
 
 DISTNAME=	mgm-1.1
 CATEGORIES=	sysutils
@@ -40,7 +40,7 @@ do-install:
 			${INSTALL_DATA} $$FILE ${MGM_PERL_DIR}/$$DIR; \
 		done; \
 	done
-	${INSTALL_DATA_DIR} ${MGM_DOC_DIR} 
+	${INSTALL_DATA_DIR} ${MGM_DOC_DIR}
 	for FILE in ${WRKSRC}/doc/*; do \
 		${INSTALL_DATA} $$FILE ${MGM_DOC_DIR}; \
 	done

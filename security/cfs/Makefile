@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/06/09 15:14:54 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/07/24 09:55:34 jlam Exp $
 
 DISTNAME=		cfs-1.4.1
 CATEGORIES=		security
@@ -86,7 +86,7 @@ pre-build:
 		${FILESDIR}/unansi.sh > ${WRKSRC}/unansi
 	${CHMOD} +x ${WRKSRC}/unansi
 
-do-build:                                                                       
+do-build:
 	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV}				\
 		${SH} ${CFS_BUILD_SCRIPT} ${ALL_TARGET}
 

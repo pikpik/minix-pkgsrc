@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 17:51:34 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/07/13 07:09:22 jlam Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
 #
 
@@ -57,7 +57,7 @@ FILES_SUBST+=		CHMOD=${CHMOD:Q}
 FILES_SUBST+=		CMP=${CMP:Q}
 FILES_SUBST+=		CP=${CP:Q}
 FILES_SUBST+=		RM=${RM:Q}
-FILES_SUBST+=		TRUE=${TRUE:Q}  
+FILES_SUBST+=		TRUE=${TRUE:Q}
 FILES_SUBST_SED=	${FILES_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}
 
 pre-patch:

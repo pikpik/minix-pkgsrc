@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2002/08/01 02:37:45 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2002/10/25 17:32:32 wiz Exp $
 #
 
 DISTNAME=	naim-0.11.4.9
 CATEGORIES=	chat
-MASTER_SITES=	http://www.acm.rpi.edu/~n/	
+MASTER_SITES=	http://www.acm.rpi.edu/~n/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://site.rpi-acm.org/info/naim/
