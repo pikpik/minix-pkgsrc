@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2000/02/27 22:10:35 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2000/03/08 00:20:48 wiz Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
     SUBDIR += base64
+    SUBDIR += bbcim
     SUBDIR += cbmconvert
     SUBDIR += kdesupport
     SUBDIR += latex2rtf
