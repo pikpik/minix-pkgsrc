@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.950 2002/03/17 16:44:28 fredb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.951 2002/03/20 11:31:33 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -2559,8 +2559,10 @@ CLEAR_DIRLIST?=	YES
 
 update:
 	${_PKG_SILENT}${_PKG_DEBUG}${MAKE} ${MAKEFLAGS} ${DDIR}
-	${_PKG_SILENT}${_PKG_DEBUG}					\
-		${MAKE} ${MAKEFLAGS} deinstall DEINSTALLDEPENDS=ALL
+	${_PKG_SILENT}${_PKG_DEBUG}if ${PKG_INFO} -qe ${PKGBASE}; then \
+		${MAKE} ${MAKEFLAGS} deinstall DEINSTALLDEPENDS=ALL \
+		|| (${RM} ${DDIR} && ${FALSE}); \
+	fi
 .endif
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 		${MAKE} ${MAKEFLAGS} ${UPDATE_TARGET} KEEP_WRKDIR=YES	\
