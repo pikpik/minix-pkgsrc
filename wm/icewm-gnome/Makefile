@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/08/31 21:15:07 xtraeme Exp $
+# $NetBSD: Makefile,v 1.22 2004/01/03 18:49:54 reed Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
 PKGREVISION=	1
@@ -14,6 +14,6 @@ CONFIGURE_ARGS+=	--with-gnome-menus=yes
 CONFIGURE_ARGS+=	--with-imlib=yes
 CONFIGURE_ARGS+=	--with-xpm=no
 
-.include "../../graphics/imlib/buildlink2.mk"
-.include "../../x11/gnome-libs/buildlink2.mk"
+.include "../../graphics/imlib/buildlink3.mk"
+.include "../../x11/gnome-libs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

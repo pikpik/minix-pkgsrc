@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/08/31 21:15:08 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/03 18:49:54 reed Exp $
 
 PKGNAME=	${DISTNAME:S/-/-imlib-/}
 PKGREVISION=	1
@@ -14,5 +14,5 @@ CONFIGURE_ARGS+=	--with-gnome-menus=no
 CONFIGURE_ARGS+=	--with-imlib=yes
 CONFIGURE_ARGS+=	--with-xpm=no
 
-.include "../../graphics/imlib/buildlink2.mk"
+.include "../../graphics/imlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
