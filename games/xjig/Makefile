@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/06/22 12:32:17 agc Exp $
+# $NetBSD: Makefile,v 1.6 1999/04/15 20:39:43 tron Exp $
 #
 
 DISTNAME=		xjig-2.4
@@ -12,7 +12,7 @@ USE_IMAKE=		yes
 ALL_TARGET=		xjig xjig.0
 
 post-install:
-	${INSTALL_DATA_DIR} ${X11BASE}/lib/xjig
-	${INSTALL_DATA} ${WRKSRC}/tina.gif ${X11BASE}/lib/xjig
+	${INSTALL_DATA_DIR} ${X11PREFIX}/lib/xjig
+	${INSTALL_DATA} ${WRKSRC}/tina.gif ${X11PREFIX}/lib/xjig
 
 .include "../../mk/bsd.pkg.mk"
