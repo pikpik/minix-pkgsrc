@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/02/18 00:18:48 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/04 03:58:09 taya Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -6,6 +6,7 @@ COMMENT=	Input method tools and libraries
 SUBDIR+=	Chinput
 SUBDIR+=	ami
 SUBDIR+=	anthy
+SUBDIR+=	anthy-elisp
 SUBDIR+=	canna
 SUBDIR+=	canna-canuum
 SUBDIR+=	canna-dict
@@ -30,6 +31,7 @@ SUBDIR+=	skkfep
 SUBDIR+=	skkinput
 SUBDIR+=	skkserv
 SUBDIR+=	tc
+SUBDIR+=	uim
 SUBDIR+=	unicon-im
 SUBDIR+=	xcin
 
