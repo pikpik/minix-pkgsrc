@@ -1,8 +1,8 @@
 $NetBSD$
 
---- session.c.orig	Fri Apr 16 07:47:55 2004
+--- session.c.orig	2004-08-12 14:40:25.000000000 +0200
 +++ session.c
-@@ -1272,11 +1272,13 @@ do_setusercontext(struct passwd *pw)
+@@ -1271,11 +1271,13 @@ do_setusercontext(struct passwd *pw)
  			perror("setgid");
  			exit(1);
  		}
