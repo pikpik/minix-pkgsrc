@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/10/22 14:10:44 ben Exp $
+# $NetBSD: Makefile,v 1.32 2004/11/12 06:39:20 jlam Exp $
 
 DISTNAME=		ettercap-0.6.b
 PKGREVISION=		2
@@ -19,6 +19,7 @@ USE_BUILDLINK3=		yes
 
 USE_NCURSES=		# putwin()
 PTHREAD_OPTS+=		require
+PTHREAD_AUTO_VARS=	yes
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 LIBS+=			-ldes
 

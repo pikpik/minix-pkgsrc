@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2004/11/12 06:39:21 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2004/12/04 22:19:17 jmmv Exp $
 #
 
 DISTNAME=		gtk+-2.4.14
@@ -23,6 +23,7 @@ USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
+PTHREAD_AUTO_VARS=	yes
 
 GNU_CONFIGURE=		 yes
 CONFIGURE_ARGS+=	--with-xinput=xfree

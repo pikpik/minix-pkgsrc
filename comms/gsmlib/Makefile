@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/11/12 00:04:52 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/11/12 06:39:20 jlam Exp $
 #
 
 DISTNAME=	gsmlib-1.10
@@ -20,6 +20,7 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-included-gettext
 PTHREAD_OPTS+=		require
+PTHREAD_AUTO_VARS=	yes
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/11/22 21:14:10 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/11/28 14:35:19 wiz Exp $
 #
 
 DISTNAME=		physfs-1.0.0
@@ -15,6 +15,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
 CONFIGURE_ARGS+=	--enable-pthreads
+PTHREAD_AUTO_VARS=	yes
 
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"

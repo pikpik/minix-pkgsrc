@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/19 02:26:39 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/13 18:33:44 tron Exp $
 
 DISTNAME=		kphone-4.0.5
 CATEGORIES=		net comms
@@ -18,6 +18,7 @@ USE_GNU_TOOLS+=		make
 CONFIGURE_ENV=		QTDIR="${QTDIR}"
 
 PTHREAD_OPTS+=		require
+PTHREAD_AUTO_VARS=	yes
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/kphone/kphone ${PREFIX}/bin
