@@ -11,7 +11,7 @@
 # Freely redistributable.  Absolutely no warranty.
 #
 # From Id: portlint.pl,v 1.64 1998/02/28 02:34:05 itojun Exp
-# $NetBSD: pkglint.pl,v 1.90 2003/07/24 07:54:46 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.91 2003/07/31 15:13:22 seb Exp $
 #
 # This version contains lots of changes necessary for NetBSD packages
 # done by Hubert Feyrer <hubertf@netbsd.org>,
@@ -1009,7 +1009,7 @@ EOF
 			}
 		}
 	} elsif ($tmp !~ /\nDYNAMIC_MASTER_SITES[+?]?=/) {
-		&perror("WARN: no MASTER_SITES or DYNAMIC_MASTER_SITES found.".
+		&perror("WARN: no MASTER_SITES or DYNAMIC_MASTER_SITES found. ".
 			"Is this ok?");
 	}
 
