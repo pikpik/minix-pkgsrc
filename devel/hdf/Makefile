@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/07/17 21:31:04 grant Exp $
+# $NetBSD: Makefile,v 1.17 2004/04/20 18:14:37 drochner Exp $
 
 DISTNAME=		HDF4.2r0
 PKGNAME=		hdf-4.2r0
@@ -10,7 +10,7 @@ HOMEPAGE=		http://hdf.ncsa.uiuc.edu/hdf4.html
 COMMENT=		NCSA Hierarchical Data Format
 
 USE_FORTRAN=		# defined
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-szlib
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/hdf
