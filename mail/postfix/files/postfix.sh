@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: postfix,v 1.7 2003/01/31 06:47:16 lukem Exp $
+# $NetBSD: postfix.sh,v 1.1 2004/03/07 10:13:46 grant Exp $
 #
 
 # PROVIDE: mail
@@ -18,7 +18,7 @@ start_cmd="${name} "'${rc_arg}'
 stop_cmd=$start_cmd
 reload_cmd=$start_cmd
 extra_commands="reload"
-spooletcdir="/var/spool/${name}/etc"
+spooletcdir="@POSTFIX_SPOOL@/etc"
 required_dirs=$spooletcdir
 
 postfix_precmd()
