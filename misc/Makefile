@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2000/12/18 23:35:04 tsarna Exp $
+# $NetBSD: Makefile,v 1.75 2001/01/04 01:17:06 wiz Exp $
 #
 
     SUBDIR += 9menu
@@ -26,6 +26,7 @@
     SUBDIR += gnome-utils
     SUBDIR += gperiodic
     SUBDIR += heyu
+    SUBDIR += hitchhiker
     SUBDIR += ibutton-pdkit
     SUBDIR += jitterbug
     SUBDIR += jive
