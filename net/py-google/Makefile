@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/09/14 16:43:53 recht Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/21 18:11:22 jmc Exp $
 #
 
-DISTNAME=	pygoogle-0.5.2
-PKGNAME=	${PYPKGPREFIX}-google-0.5.2
-PKGREVISION=	2
+DISTNAME=	pygoogle-0.5.3
+PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
 WRKSRC=		${WRKDIR}/pygoogle
 CATEGORIES=	net
 MASTER_SITES=	http://diveintomark.org/projects/pygoogle/
