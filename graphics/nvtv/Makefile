@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/10/05 09:16:16 cube Exp $
+# $NetBSD: Makefile,v 1.2 2003/10/05 09:27:28 cube Exp $
 
 PKGNAME=	${DISTNAME}
 .include "Makefile.common"
 
 CONFLICTS=	nvtv-gtk2-[0-9]*
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
