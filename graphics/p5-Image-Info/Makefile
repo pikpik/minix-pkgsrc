@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:42:06 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:51:49 martti Exp $
 #
 
-DISTNAME=	Image-Info-1.12
+DISTNAME=	Image-Info-1.16
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5iin
 CATEGORIES=	graphics perl5
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/Image-Info/
 COMMENT=	Perl module to extract meta information from images
 
-DEPENDS+=	p5-IO-String>=1.01:../../devel/p5-IO-String
+DEPENDS+=	p5-IO-String>=1.03:../../devel/p5-IO-String
 
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Image/Info/.packlist
