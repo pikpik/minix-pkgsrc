@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1 1998/04/27 18:06:37 bouyer Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/27 19:54:25 frueauf Exp $
 #
 
 DISTNAME=	arpwatch-2.0.2
-CATEGORIES=	sysutils
+CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/
 EXTRACT_SUFX=	.tar.Z
 
