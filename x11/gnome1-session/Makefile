@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2003/02/18 14:56:03 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/20 09:05:26 rh Exp $
 #
 
 .include "../../x11/gnome-core/Makefile.common"
@@ -18,8 +18,8 @@ CONFLICTS+=		gnome-core<1.4.2nb4
 BUILDLINK_DEPENDS.gnome-pixmaps=gnome{,2}-pixmaps>=1.4.2
 .endif
 
-DISTINFO_FILE=	"${.CURDIR}/../../x11/gnome-core/distinfo"
-PATCHDIR=	"${.CURDIR}/../../x11/gnome-core/patches"
+DISTINFO_FILE=	${.CURDIR}/../../x11/gnome-core/distinfo
+PATCHDIR=	${.CURDIR}/../../x11/gnome-core/patches
 
 BUILD_DIRS=	${WRKSRC}/gsm
 BUILD_DIRS+=	${WRKSRC}/smproxy
