@@ -1,9 +1,9 @@
-$NetBSD: patch-aj,v 1.1 1998/12/03 17:23:54 tv Exp $
+$NetBSD$
 
---- conf/httpd.conf-dist.orig	Thu Dec  3 11:05:29 1998
-+++ conf/httpd.conf-dist	Thu Dec  3 11:07:26 1998
-@@ -18,7 +18,16 @@
- # binary.
+--- conf/httpd.conf-dist.orig	Sat Nov 27 23:46:36 1999
++++ conf/httpd.conf-dist	Sat Nov 27 23:46:36 1999
+@@ -199,7 +199,16 @@
+ # the order below without expert advice.
  #
  # Example:
 -# LoadModule foo_module libexec/mod_foo.so
@@ -18,5 +18,5 @@ $NetBSD: patch-aj,v 1.1 1998/12/03 17:23:54 tv Exp $
 +AddModule mod_ssl.c
 +</IfDefine>
  
- # ServerType is either inetd, or standalone.
- 
+ #
+ # ExtendedStatus controls whether Apache will generate "full" status
