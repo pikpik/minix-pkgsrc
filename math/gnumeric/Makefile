@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2002/09/23 21:55:11 jlam Exp $
+# $NetBSD: Makefile,v 1.61 2002/10/16 11:31:24 martti Exp $
 #
 
 DISTNAME=		gnumeric-1.0.10
@@ -24,7 +24,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-guile		# needs CVS-only guile-1.5
 CONFIGURE_ARGS+=	--without-python
 CONFIGURE_ARGS+=	--without-psiconv
-CONFIGURE_ARGS+=	--localstatedir=${X11PREFIX}/var/lib
+CONFIGURE_ARGS+=	--localstatedir=${SCROLLKEEPER_DATADIR}
 LIBS+=      		-lunicode
 
 USE_LIBTOOL=		YES
