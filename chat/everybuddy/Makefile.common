@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2001/12/19 14:10:04 tron Exp $
+# $NetBSD: Makefile.common,v 1.2 2002/10/10 07:32:15 tron Exp $
 
 DISTNAME=	everybuddy-0.2.0
 CATEGORIES=	chat
@@ -26,3 +26,5 @@ post-build:
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/wrapper ${PREFIX}/bin/everybuddy
+
+.include "../../misc/gnome1-dirs/buildlink2.mk"
