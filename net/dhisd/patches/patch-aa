@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Sun Apr  1 16:05:44 2001
+--- Makefile.orig	2001-04-01 15:05:44.000000000 +0100
 +++ Makefile
 @@ -26,11 +26,11 @@
  #      DHIS(c)  Dynamic Host Information System Release 5.0
