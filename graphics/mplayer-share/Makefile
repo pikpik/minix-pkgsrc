@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/12/06 14:21:46 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/21 19:52:08 wiz Exp $
 
 .include "Makefile.common"
 
@@ -36,5 +36,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/etc/input.conf ${PREFIX}/share/mplayer
 	${CP} -R ${WRKSRC}/DOCS ${PREFIX}/share/mplayer
 	cd ${WRKDIR}; ${PAX} -rw ${FONT_FILES} ${PREFIX}/share/mplayer/fonts
+	${LN} -s ${PREFIX}/share/mplayer/fonts/font-arial-18-iso-8859-1 \
+		${PREFIX}/share/mplayer/font
 
 .include "../../mk/bsd.pkg.mk"
