@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/distalign
-bin/pdbalign
-bin/pdbdist
