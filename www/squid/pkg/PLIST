@@ -1,15 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1 1998/05/23 21:27:22 tron Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 1998/10/09 17:49:20 kim Exp $
+etc/rc.d/squid.sh
+libexec/cachemgr.cgi
+libexec/dnsserver
+libexec/pinger
+libexec/unlinkd
 sbin/RunAccel
 sbin/RunCache
-sbin/cachemgr.cgi
 sbin/client
-sbin/dnsserver
-sbin/ftpget
-sbin/pinger
 sbin/squid
-sbin/unlinkd
-etc/rc.d/squid.sh
-etc/squid/squid.conf.default
-@exec cp %F %D/etc/squid/squid.conf
-@unexec rm -f %D/etc/squid/squid.conf
-@dirrm etc/squid
