@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.10 1999/12/10 03:55:22 hubertf Exp $
 #
 
 VERSION=1.1.6
@@ -33,9 +33,7 @@ do-install:
 		-e 's|@JDK_HOME@|${JDK_HOME}|g' \
 		<${PKGDIR}/MESSAGE >${MESSAGE_FILE}
 
-
 .include "../../mk/bsd.pkg.mk"
-
 
 # This needs to be after bsd.pkg.mk 
 PREFIX:=	${JDK_HOME}
