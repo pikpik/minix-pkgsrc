@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/07/22 01:16:53 schmonz Exp $
+# $NetBSD: Makefile,v 1.14 2004/07/26 19:16:27 schmonz Exp $
 # FreeBSD Id: ports/sysutils/daemontools/Makefile,v 1.8 2000/12/03 05:16:41 steve Exp
 
 DISTNAME=	daemontools-0.76
@@ -49,7 +49,7 @@ post-build:
 
 do-install:
 	(while read cmd; do \
-	  if ${FILE_CMD} ${CMDDIR}/$$cmd | ${GREP} -q "shell script"; then \
+	  if ${FILE_CMD} ${CMDDIR}/$$cmd | ${EGREP} "(executable .* script|shell script|text)" >/dev/null 2>&1; then \
 	    ${INSTALL_SCRIPT} ${CMDDIR}/$$cmd ${PREFIX}/bin; \
 	  else \
 	    ${INSTALL_PROGRAM} ${CMDDIR}/$$cmd ${PREFIX}/bin; \
