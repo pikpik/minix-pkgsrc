@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/17 23:32:19 wiz Exp $
+$NetBSD$
 
-MD5 (sunclock-1.4.tar.gz) = 56e232a2d12fb5a38b09e8199e30dcd6
+SHA1 (sunclock-1.4.tar.gz) = 25736e88de37cc5d7fba11c9cf47d29a50c121b5
+Size (sunclock-1.4.tar.gz) = 28758 bytes
