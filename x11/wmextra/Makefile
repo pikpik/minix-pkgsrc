@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/05/02 18:04:50 rh Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/20 20:09:53 tron Exp $
 
 DISTNAME=		WindowMaker-extra-0.1
 PKGNAME=		wmextra-0.1
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://ftp.windowmaker.org/pub/beta/srcs/ \
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.windowmaker.org/
 
-DEPENDS+=		windowmaker-0.53.0:../../x11/windowmaker
+DEPENDS+=		windowmaker-0.60.0:../../x11/windowmaker
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
