@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1999/11/23 16:54:39 hubertf Exp $
+# $NetBSD: Makefile,v 1.18 1999/12/23 23:39:57 wiz Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
 #
 
@@ -22,6 +22,8 @@ NO_WRKSUBDIR=		yes
 EXTRACT_CMD=		${DOWNLOADED_DISTFILE} >/dev/null
 
 pre-extract:
+	@${ECHO} You must have COMPAT_12 enabled in your kernel,
+	@${ECHO} else extraction \(and running the program\) will fail.
 	@${CHMOD} a+x ${DISTDIR}/${DISTFILES}
 
 do-build:
