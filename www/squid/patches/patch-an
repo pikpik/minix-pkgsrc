@@ -1,7 +1,7 @@
 $NetBSD$
 
---- configure.in.orig	Wed Sep 12 18:46:43 2001
-+++ configure.in
+--- configure.in.orig	Wed Sep 12 11:46:43 2001
++++ configure.in	Sun Feb 24 12:48:39 2002
 @@ -438,7 +438,7 @@
  [ if test "$enableval" = "yes" ; then
      echo "SNMP monitoring enabled"
@@ -40,3 +40,11 @@ $NetBSD$
  		;;
  	esac
  fi
+@@ -1216,6 +1225,7 @@
+ 	setrlimit \
+ 	getrlimit \
+ 	setsid \
++	setproctitle \
+ 	sigaction \
+ 	snprintf \
+ 	srand48 \
