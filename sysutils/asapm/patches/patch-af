@@ -102,7 +102,7 @@ $NetBSD$
 +	}
 +
 +	if (state.ac_line_status != connected) {
-+		state.ac_line_status = connected ? AC_BATTERY : AC_ONLINE;
++		state.ac_line_status = connected ? AC_ONLINE : AC_BATTERY;
 +		++state.update;
 +		if ( state.ac_line_status == AC_ONLINE ) 
 +			state.flags |= CHANGE_AC_ON;
