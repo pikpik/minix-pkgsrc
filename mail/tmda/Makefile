@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2002/05/14 14:38:56 schmonz Exp $
+# $NetBSD: Makefile,v 1.7 2002/07/23 20:05:47 schmonz Exp $
 #
 
-DISTNAME=	tmda-0.58
+DISTNAME=	tmda-0.61
 CATEGORIES=	mail python
 MASTER_SITES=	http://tmda.net/releases/ \
 		http://tmda.net/releases/old/
