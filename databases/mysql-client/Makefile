@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/12/13 14:19:54 tron Exp $
+# $NetBSD: Makefile,v 1.22 2003/01/20 23:20:36 lukem Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
 PKGREVISION=		3
@@ -10,6 +10,7 @@ COMMENT=		MySQL, a free SQL database (client)
 CONFIGURE_ARGS+=	--without-server
 USE_BUILDLINK2=		YES
 
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		mysql.info
 
 post-install:
@@ -18,5 +19,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/Docs/mysql.info ${PREFIX}/info
 
 .include "../../devel/readline/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
