@@ -1,9 +1,9 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.5 2002/06/30 09:15:33 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:39:27 jlam Exp $
 
 .if !defined(PERL5_BUILDLINK2_MK)
 PERL5_BUILDLINK2_MK=  # defined
 
-USE_PERL5=	# defined
+USE_PERL5?=	run
 
 .include "../../mk/bsd.prefs.mk"
 
