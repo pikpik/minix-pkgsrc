@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/10/29 18:39:45 cube Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:13:28 agc Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.packetfactory.net/libnet/
 COMMENT=	C library for portable packet creation and injection
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/l/L/}
-USE_BUILDLINK2= # defined
+USE_BUILDLINK3= yes
 
 USE_LIBTOOL=	# defined
 GNU_CONFIGURE=	# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/10/09 12:43:40 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/21 17:10:52 martti Exp $
 
 DISTNAME=	nemesis-1.32
 CATEGORIES=	net
@@ -8,8 +8,8 @@ MAINTAINER=	xs@nitric.net
 HOMEPAGE=	http://jeff.wwti.com/nemesis/
 COMMENT=	Nemesis is a command-line UNIX network packet injection suite
 
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	yes
 GNU_CONFIGURE=  # defined
 
-.include "../../devel/libnet/buildlink2.mk"
+.include "../../devel/libnet/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
