@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:21:07 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:28:21 grant Exp $
 #
 
 DISTNAME=		MyODBC-2.50.36
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-odbc-ini=${LOCALBASE}/etc/odbc.ini
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/myodbc

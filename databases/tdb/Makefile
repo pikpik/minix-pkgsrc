@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/29 19:19:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:29:08 grant Exp $
 #
 
 DISTNAME=	tdb-1.0.6
@@ -11,7 +11,7 @@ COMMENT=	Small database system which uses files to store data
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 

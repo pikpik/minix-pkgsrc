@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2003/09/28 09:03:53 jdolecek Exp $
+# $NetBSD: Makefile,v 1.51 2003/10/05 17:55:34 martti Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 SVR4_PKGNAME=		mysqs
@@ -9,7 +9,7 @@ COMMENT=		MySQL, a free SQL database (server)
 CONFIGURE_ARGS+=	--with-libwrap
 CONFIGURE_ARGS+=	--without-berkeley-db
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 USE_PKGINSTALL=		YES
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
