@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/02/27 22:09:18 wiz Exp $
 #
 
 DISTNAME=	wv-0.5.43
@@ -18,6 +18,7 @@ MAKE_ENV+=	RM="${RM}"
 
 WRKSRC=		${WRKDIR}/wv
 GNU_CONFIGURE=	YES
+LDFLAGS+=	-Wl,-R${X11BASE}/lib
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/wv
