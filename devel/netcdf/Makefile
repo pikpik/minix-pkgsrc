@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/07/29 04:47:40 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/10 10:46:41 jlam Exp $
 #
 
 DISTNAME=	netcdf-3.4
@@ -14,6 +14,7 @@ COMMENT=	Library for array-oriented data access
 
 USE_BUILDLINK2=		# defined
 USE_FORTRAN=		# defined
+USE_CXX=		# defined
 USE_LIBTOOL=		# defined
 GNU_CONFIGURE=		# defined
 CPPFLAGS+=		-Df2cFortran -Dunix
