@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/06/26 13:37:01 uebayasi Exp $
 #
 
 DISTNAME=	star-1.4.1
@@ -11,5 +11,9 @@ COMMENT=	the fastest tar like archiver for UNIX
 
 USE_GMAKE=	# defined
 MAKE_FLAGS+=	INS_BASE=${LOCALBASE}
+
+pre-build:
+	@cd ${WRKSRC}/RULES && for i in arm; do			\
+		${LN} -s i386-netbsd-cc.rul $$i-netbsd-cc.rul; done
 
 .include "../../mk/bsd.pkg.mk"
