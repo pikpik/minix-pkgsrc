@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/26 11:32:27 jlam Exp $
 
-DISTNAME=	wmessage-0.6
+DISTNAME=	wmessage-0.7
 CATEGORIES=	x11
 MASTER_SITES=	http://www.ozemail.com.au/~crn/wmessage/
 
