@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/01/03 18:09:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/29 12:27:01 jmmv Exp $
 #
 
 DISTNAME=		pan-0.13.3
@@ -11,6 +11,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://pan.rebelbase.com/
 COMMENT=		Newsreader for GTK2
 
+DEPENDS+=		gnome2-dirs>=1.0:../../misc/gnome2-dirs
 BUILD_USES_MSGFMT=	YES
 
 USE_PERL5=		build
@@ -20,7 +21,6 @@ GNU_CONFIGURE=		YES
 LIBS=			-lcompat
 
 .include "../../converters/libiconv/buildlink2.mk"
-.include "../../misc/gnome2-dirs/buildlink2.mk"
 .include "../../textproc/gtkspell/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"
