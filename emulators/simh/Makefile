@@ -1,0 +1,15 @@
+#	$NetBSD$
+#
+
+DISTNAME=	sim_2.3c
+PKGNAME=	simh-2.3c
+CATEGORIES=	emulators
+MASTER_SITES=	ftp://minnie.cs.adfa.oz.au/pub/PDP-11/Sims/Supnik_2.3/sources/
+
+MAINTAINER=	packages@netbsd.org
+
+NO_WRKSUBDIR=	yes
+
+MAKEFILE=	${FILESDIR}/Makefile
+
+.include "../../mk/bsd.pkg.mk"
