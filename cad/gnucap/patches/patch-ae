@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- test/test.orig	Sun Feb  1 22:49:09 2004
++++ test/test
+@@ -1,5 +1,5 @@
+ #!/bin/sh
+-if [ $# == 0 ] ; then
++if [ $# -eq 0 ] ; then
+     echo "usage: ./test gnucap \"testcases\" targetdir refdir"
+     echo "usual testcases is \"\", usual refdir is =="
+     echo "example: ./test gnucap \"\" myversion =="
