@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/17 17:39:03 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:34:09 grant Exp $
 
 DISTNAME=	tet3.3h-unsup.src
 PKGNAME=	tet3-3.3h
@@ -12,7 +12,11 @@ COMMENT=	The Open Group test harness
 
 WRKSRC=		${WRKDIR}/src
 HAS_CONFIGURE=	yes
-REPLACE_PERL=	yes
+REPLACE_PERL=	../contrib/suite/src/common.pl ../contrib/NTperldemo/ts/tc1.pl
+REPLACE_PERL+=	../contrib/NTperldemo/ts/tc2.pl ../contrib/NTperldemo/ts/tc3.pl
+REPLACE_PERL+=	../contrib/tetreport/TetJournal.pl ../contrib/tetreport/TetReports.pl
+REPLACE_PERL+=	../contrib/tetreport/tetreport.pl ../contrib/templates/perl-api.pl
+REPLACE_PERL+=	perl/api.pl perl/make_tcm.pl perl/template.pl
 MAKEFILE=	makefile
 
 INTERACTIVE_STAGE=	fetch
