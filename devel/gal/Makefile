@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/16 14:38:25 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/03/18 02:12:01 mjl Exp $
 #
 
 DISTNAME=	gal-0.5
@@ -20,6 +20,7 @@ DEPENDS+=	bonobo>=0.26:../../devel/bonobo
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 USE_X11BASE=	YES
+USE_LIBINTL=	YES
 
 CONFIGURE_ARGS+=	-with-libiconv=${LOCALBASE}
 
