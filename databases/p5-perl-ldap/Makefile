@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/12/28 12:49:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/06/09 14:32:47 kleink Exp $
 #
 
 DISTNAME=     	perl-ldap-0.19
@@ -13,9 +13,10 @@ DEPENDS+=	p5-Digest-MD5-*:../../security/p5-Digest-MD5
 DEPENDS+=	p5-Convert-ASN1-*:../../textproc/p5-Convert-ASN1
 DEPENDS+=	p5-libwww-*:../../www/p5-libwww
 
-USE_PERL5=	YES
+USE_PERL5=	# defined
+PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/perl-ldap/.packlist
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/perl Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include "../../mk/bsd.pkg.mk"
