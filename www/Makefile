@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.186 2002/04/10 08:12:44 itojun Exp $
+# $NetBSD: Makefile,v 1.187 2002/04/14 13:06:03 tron Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -131,6 +131,7 @@ SUBDIR+=	py-HTMLgen
 SUBDIR+=	py-curl
 SUBDIR+=	py-pcgi
 SUBDIR+=	py-zpublisher
+SUBDIR+=	qDecoder
 SUBDIR+=	quanta
 SUBDIR+=	quanta-docs
 SUBDIR+=	ruby-htmlsplit
