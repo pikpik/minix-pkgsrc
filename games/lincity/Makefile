@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/09/23 10:03:24 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/02 16:43:49 adam Exp $
 #
 
 DISTNAME=	lincity-1.12.0
@@ -17,6 +17,12 @@ USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
+
+pre-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/lincity/help
+	${INSTALL_DATA_DIR} ${PREFIX}/share/lincity/icons
+	${INSTALL_DATA_DIR} ${PREFIX}/share/lincity/messages
+	${INSTALL_DATA_DIR} ${PREFIX}/share/lincity/opening
 
 post-install:
 	${LN} -sf lincity.6 ${PREFIX}/man/man6/xlincity.6
