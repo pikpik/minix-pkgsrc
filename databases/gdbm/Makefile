@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/11/01 00:31:18 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2003/06/02 01:21:09 jschauma Exp $
 #
 
 DISTNAME=	gdbm-1.8.3
@@ -13,13 +13,9 @@ USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		gdbm.info
-TEXINFO_OVERRIDE=	YES
 CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
 CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
-post-extract:
-	${RM} -f ${WRKSRC}/gdbm.info
-
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
