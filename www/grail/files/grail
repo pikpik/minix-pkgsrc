@@ -1,0 +1,4 @@
+#! /bin/sh
+# $NetBSD$
+exec @PREFIX@/bin/python \
+	@PREFIX@/@GRAILDIR@/grail.pyc ${1+"$@"}
