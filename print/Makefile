@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1999/05/16 17:36:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.20 1999/07/31 19:14:28 rh Exp $
 # FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
 #
 
@@ -41,6 +41,9 @@
     SUBDIR += psutils
     SUBDIR += rtf2latex
     SUBDIR += teTeX
+    SUBDIR += teTeX-bin
+    SUBDIR += teTeX-share
+    SUBDIR += teTeX-sharesrc
 #    SUBDIR += tex
 #    SUBDIR += texinfo
 #    SUBDIR += tr2latex
