@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:35 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/08/31 19:55:59 jdolecek Exp $
 
 MODNAME=		domxml
 CATEGORIES+=		textproc
@@ -14,5 +14,7 @@ CONFIGURE_ARGS+=	--with-dom=shared,${BUILDLINK_PREFIX.libxml2}
 CONFIGURE_ARGS+=	--with-zlib-dir=${BUILDLINK_PREFIX.zlib}
 
 .include "../../devel/zlib/buildlink2.mk"
+# remove the BUILDLINK_DEPENDS on next libxml2 package buildlink update
+BUILDLINK_DEPENDS.libxml2=	libxml2>=2.5.10nb1
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
