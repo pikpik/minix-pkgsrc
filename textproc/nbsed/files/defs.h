@@ -1,4 +1,4 @@
-/*	$NetBSD: defs.h,v 1.3 2003/10/16 12:04:41 grant Exp $	*/
+/*	$NetBSD: defs.h,v 1.4 2004/06/13 13:04:02 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -32,7 +32,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)defs.h	8.1 (Berkeley) 6/6/93
- *	$NetBSD$
+ *	$NetBSD: defs.h,v 1.4 2004/06/13 13:04:02 grant Exp $
  */
 
 /*-
@@ -70,7 +70,7 @@
  * SUCH DAMAGE.
  *
  *	from: @(#)defs.h	8.1 (Berkeley) 6/6/93
- *	$NetBSD: defs.h,v 1.3 2003/10/16 12:04:41 grant Exp $
+ *	$NetBSD: defs.h,v 1.4 2004/06/13 13:04:02 grant Exp $
  */
 
 /*
@@ -127,6 +127,10 @@ struct s_command {
 	u_int nonsel:1;				/* True if ! */
 	u_int inrange:1;			/* True if in range */
 };
+
+/* XXX This constant is defined by utmpx.h, although we don't need it.
+ * Undefine it to solve a namespace collision until it's better fixed. */
+#undef EMPTY
 
 /*
  * Types of command arguments recognised by the parser
