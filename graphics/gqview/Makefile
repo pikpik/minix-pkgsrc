@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/12/16 22:19:32 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2003/01/24 10:52:31 wiz Exp $
 #
 
 DISTNAME=	gqview-1.2.1
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gqview/}
 
 MAINTAINER=	wiz@netbsd.org
 HOMEPAGE=	http://gqview.sourceforge.net/
-COMMENT=	another gtk-based graphic file viewer
+COMMENT=	GTK-based graphic file viewer
 
 BUILD_USES_MSGFMT=	# defined
 
