@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/03/26 17:56:09 zuntum Exp $
+# $NetBSD: Makefile,v 1.14 2001/10/10 11:17:28 abs Exp $
 # FreeBSD Id: ports/net/djbdns/Makefile,v 1.4 2000/09/28 18:18:41 nbm Exp
 
 DISTNAME=	djbdns-1.05
@@ -45,12 +45,6 @@ post-patch:
 	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
 	${ECHO} ${CC} ${STRIPFLAG} > ${WRKSRC}/conf-ld
 	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
-
-.for i in dnscache axfrdns pickdns rbldns tinydns walldns
-	${SED} "s|usage: $i-conf acct logacct /$i|usage: $i-conf acct logacct ${PREFIX}/etc/$i|g" \
-		${WRKSRC}/$i-conf.c > ${WRKSRC}/$i-conf.c.done
-	${MV} ${WRKSRC}/$i-conf.c.done ${WRKSRC}/$i-conf.c
-.endfor
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/tinydns-log.pl ${PREFIX}/bin/tinydns-log
