@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.307 2004/04/14 09:59:26 adam Exp $
+# $NetBSD: Makefile,v 1.308 2004/04/14 12:12:16 jmmv Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -65,6 +65,7 @@ SUBDIR+=	ffmpeg
 SUBDIR+=	filmgimp
 SUBDIR+=	fly
 SUBDIR+=	fnlib
+SUBDIR+=	freeglut
 SUBDIR+=	freetype
 SUBDIR+=	freetype-lib
 SUBDIR+=	freetype-utils
