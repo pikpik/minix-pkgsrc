@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2004/01/22 08:30:30 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/23 21:50:44 jmmv Exp $
 
-DISTNAME=		kile-1.6
-PKGREVISION=		2
+DISTNAME=		kile-1.6.1
 CATEGORIES=		editors kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kile/}
 
@@ -12,8 +11,6 @@ COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
 USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
-
-CONFIGURE_ENV+=         xdg_appsdir="${KDEDIR}/share/kde/applnk/Applications"
 
 .include "../../graphics/kdegraphics3/buildlink2.mk"
 .include "../../meta-pkgs/kde3/buildlink2.mk"
