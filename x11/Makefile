@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2002/06/10 13:29:07 drochner Exp $
+# $NetBSD: Makefile,v 1.250 2002/06/15 23:36:08 cjep Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -117,6 +117,7 @@ SUBDIR+=	xautolock
 SUBDIR+=	xbanner
 SUBDIR+=	xbindkeys
 SUBDIR+=	xcb
+SUBDIR+=	xclip
 SUBDIR+=	xcolors
 SUBDIR+=	xcolorsel
 SUBDIR+=	xcruise
