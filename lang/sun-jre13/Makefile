@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/06/12 11:18:49 abs Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/12 16:31:47 skrll Exp $
 #
 
 # MASTER_SITES is very special, and must end in "=":
@@ -29,6 +29,7 @@ NO_BIN_ON_FTP=	${RESTRICTED}
 
 # Needs to be after bsd.prefs.mk
 .if ${OPSYS} != "Linux"
+DEPENDS+=	suse_compat-*:../../emulators/suse_compat
 DEPENDS+=	suse_x11-*:../../emulators/suse_x11
 .endif
 
