@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.494 2004/09/30 13:02:27 salo Exp $
+# $NetBSD: Makefile,v 1.495 2004/10/03 09:26:12 tron Exp $
 #
 
 COMMENT=	Networking tools
@@ -50,6 +50,7 @@ SUBDIR+=	coda5_server
 SUBDIR+=	coda_doc
 SUBDIR+=	coda_intro
 SUBDIR+=	connect
+SUBDIR+=	corkscrew
 SUBDIR+=	ctorrent
 SUBDIR+=	dante
 SUBDIR+=	dc_gui2
