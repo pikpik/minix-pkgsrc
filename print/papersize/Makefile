@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/06/16 17:28:25 cgd Exp $
+# $NetBSD: Makefile,v 1.3 1999/09/05 18:38:55 kim Exp $
 #
 
 DISTNAME=	papersize-1.0.2
@@ -17,7 +17,7 @@ NO_CONFIGURE=	yes
 do-build:
 	for f in setpapersize getpapersize; do			\
 		${SED} -e 's|@localbase@|${LOCALBASE}|g'	\
-		       -e 's|@x11base@|${X11BASE}|g'		\
+		       -e 's|@x11prefix@|${X11PREFIX}|g'	\
 			${FILESDIR}/$$f > ${WRKSRC}/$$f;	\
 	done
 
