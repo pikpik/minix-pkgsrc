@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.133 2003/12/05 05:33:17 reed Exp $
+# $NetBSD: bsd.prefs.mk,v 1.134 2003/12/10 13:59:07 grant Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -57,6 +57,9 @@ MACHINE_GNU_ARCH?=	${GNU_ARCH.${MACHINE_ARCH}}
 
 .if ${OPSYS} == "NetBSD"
 LOWER_OPSYS?=		netbsd
+
+.elif ${OPSYS} == "BSDOS"
+LOWER_OPSYS?=		bsdi
 
 .elif ${OPSYS} == "FreeBSD"
 LOWER_OPSYS?=		freebsd
