@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/11/14 21:20:09 itojun Exp $
+# $NetBSD: Makefile,v 1.22 2000/12/12 01:30:45 wiz Exp $
 #
 
     SUBDIR += base64
@@ -12,6 +12,7 @@
     SUBDIR += psiconv
     SUBDIR += recode
     SUBDIR += txt2html
+    SUBDIR += unix2dos
     SUBDIR += uudeview
     SUBDIR += uulib
     SUBDIR += wv
