@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- xml-config.in.orig	Mon Aug 30 07:21:21 1999
++++ xml-config.in	Sun Oct 10 20:05:51 1999
+@@ -57,7 +57,7 @@
+        	;;
+ 
+     --libs)
+-       	echo -L@libdir@ @XML_LIBS@ @LIBS@
++       	echo -Wl,-R@libdir@ -L@libdir@ @XML_LIBS@ @LIBS@
+        	;;
+ 
+     *)
