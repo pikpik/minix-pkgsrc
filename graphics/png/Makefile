@@ -1,9 +1,9 @@
-# $NetBSD$
 # New ports collection makefile for:    PNG images library
 # Version required:     0.96
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
+# $NetBSD: Makefile,v 1.2 1997/10/06 13:42:02 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/07/17 15:12:44 max Exp
 #
 
@@ -18,6 +18,6 @@ MAINTAINER=     ache@FreeBSD.org
 MAKEFILE=       makefile
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
+	${LDCONFIG} -m ${PREFIX}/lib || /usr/bin/true
 
 .include <bsd.port.mk>
