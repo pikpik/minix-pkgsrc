@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/01/11 15:21:19 uebayasi Exp $
+# $NetBSD: Makefile,v 1.6 2003/04/13 03:55:51 uebayasi Exp $
 
 DISTNAME=	semi-1.14.5
 PKGREVISION=	1
@@ -27,10 +27,13 @@ MAKEFLAGS+=     PACKAGEDIR=${EMACS_LISPPREFIX:C|/lisp$||}
 INFO_FILES=	mime-ui-en.info mime-ui-ja.info
 
 pre-build:
-	${RM} -f ${WRKSRC}/mime-ui-*.info
-	${LOCALBASE}/bin/qkc -eu ${WRKSRC}/mime-ui-*.texi
-	cd ${WRKSRC} && ${MAKEINFO} --no-validate --no-split mime-ui-en.texi
-	cd ${WRKSRC} && ${MAKEINFO} --no-validate --no-split mime-ui-ja.texi
+	@cd ${WRKSRC}; \
+	for i in mime-ui-en mime-ui-ja; do \
+		${RM} -f $${i}.info; \
+		${CP} $${i}.texi $${i}.texi.orig; \
+		${LOCALBASE}/bin/qkc -Oeu $${i}.texi.orig >$${i}.texi; \
+		${MAKEINFO} --force --no-validate --no-split $${i}.texi; \
+	done
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/mime-ui-en.info ${PREFIX}/info
