@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- lchat.pl.orig	Wed Jun  7 22:19:22 1995
 +++ lchat.pl	Wed May 12 18:10:54 1999
 @@ -79,7 +79,7 @@
