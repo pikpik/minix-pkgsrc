@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/05/05 13:46:31 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/05 12:06:12 frueauf Exp $
 #
 
 DISTNAME=			Xaw-Xpm-1.1
@@ -11,7 +11,7 @@ MAINTAINER=			root@garbled.futureone.com
 
 DEPENDS+=			xpm-3.4j:../../graphics/xpm
 
-CONFLICTS=			Xaw3d-1.3
+CONFLICTS=			Xaw3d-1.3 Xaw3d-1.5
 
 USE_IMAKE=			yes
 
