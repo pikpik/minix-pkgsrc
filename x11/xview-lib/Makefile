@@ -3,17 +3,16 @@
 #
 
 DISTNAME=		xview3.2p1-X11R6
-PKGNAME=		xview-lib-3.2.1nb1
+PKGNAME=		xview-lib-3.2.1nb2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		jlam@netbsd.org
 
-DEPENDS=		xview-config>=3.2.1nb1:../../x11/xview-config
+DEPENDS=		xview-config>=3.2.1nb2:../../x11/xview-config
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
 USE_IMAKE=		# defined
-XMKMF=			${X11PREFIX}/bin/xvmkmf -a
 
 .include "../../mk/bsd.pkg.mk"
