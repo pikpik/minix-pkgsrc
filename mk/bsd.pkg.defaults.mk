@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.60 2002/05/08 11:05:39 markd Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.61 2002/05/12 16:54:58 hubertf Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1033,6 +1033,12 @@ PILRC_USE_GTK?=	YES
 # Where audit-packages searchs for the vulnerabilities file.
 # Possible: any path
 # Default: ${DISTDIR}
+
+#POP_WITH_DRAC=
+# Used in the following packages to enable the optional DRAC support:
+# teapop
+# Possible: defined, not defined
+# Default: not defined
 
 #POPTOP_USE_MPPE=
 # Used in poptop package to specify the use of the mppe-ppp package
