@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2000/06/25 16:03:23 rh Exp $
+## $NetBSD: Makefile,v 1.23 2000/11/09 21:09:43 mycroft Exp $
 
 DISTNAME=		gnome-utils-1.2.0
 CATEGORIES=		misc x11 gnome
@@ -20,7 +20,8 @@ USE_X11BASE=		# defined
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-ncurses=${LOCALBASE}
-CONFIGURE_ENV+=		LOCALEBASE=${LOCALEBASE}
+CONFIGURE_ENV+=		CPPFLAGS=-I${LOCALBASE}/include \
+			LOCALEBASE=${LOCALEBASE}
 
 PLIST_SUBST+=		LOCALEBASE=${LOCALEBASE}
 
