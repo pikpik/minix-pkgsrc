@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/20 19:06:12 wiz Exp $
 #
 
+DISTNAME=	citrix_ica-client
 .if (${MACHINE_ARCH} == "i386")
 DISTNAME=	linuxx86
 PKGNAME=	citrix_ica-6.0.908
