@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/30 17:53:27 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/22 07:15:00 grant Exp $
 #
 
 DISTNAME=	gnome-speech-0.2.8
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-speech/0.2/}
 EXTRACT_SUFX=	.tar.bz2

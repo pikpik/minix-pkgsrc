@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:37 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/22 08:24:28 grant Exp $
 
 DISTNAME=	cervisia-1.4.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cervisia/}
 

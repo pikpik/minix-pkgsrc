@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.64 2004/01/20 12:14:05 agc Exp $
+# $NetBSD: Makefile,v 1.65 2004/01/22 08:30:30 grant Exp $
 #
 
 DISTNAME=		abiword-${DIST_VER}
-PKGREVISION=				2
+PKGREVISION=				3
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=abiword/}
 

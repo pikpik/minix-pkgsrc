@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2003/12/04 19:48:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2003/12/30 17:28:38 cjep Exp $
 #
 
 DISTNAME=	gateway-${KANNEL_VER}
 PKGNAME=	kannel-${KANNEL_VER}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	www net
 MASTER_SITES=	http://www.kannel.org/download/${KANNEL_VER}/
 

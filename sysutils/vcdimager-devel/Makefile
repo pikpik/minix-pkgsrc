@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/12/13 20:14:27 ben Exp $
+# $NetBSD: Makefile,v 1.12 2003/12/24 09:53:50 jmmv Exp $
 #
 
 DISTNAME=	vcdimager-0.7.12
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/vcdimager/
 

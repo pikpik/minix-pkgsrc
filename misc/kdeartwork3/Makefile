@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2003/12/13 19:46:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/15 11:01:07 markd Exp $
 
 DISTNAME=	kdeartwork-3.1.5
+PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Artwork for the KDE integrated X11 desktop
 

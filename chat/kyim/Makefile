@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/22 07:49:20 grant Exp $
 
 DISTNAME=	kyim-1.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kyim/}
 EXTRACT_SUFX=	.tgz
