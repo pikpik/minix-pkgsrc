@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 16:50:01 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/19 23:08:24 dent Exp $
 
 DISTNAME=		ularn
 PKGNAME=		ularn-6.12.92
 WRKSRC=			${WRKDIR}
 CATEGORIES=		games
-MASTER_SITES=		ftp://ftp.win.tue.nl/pub/games/larn/
+MASTER_SITES=		http://www.cordier.com/ularn/
 
 MAINTAINER=		collver1@comcast.net
-HOMEPAGE=		http://home-13.tiscali-business.nl/~bwaijers/larn/
+HOMEPAGE=		http://www.cordier.com/ularn/
 COMMENT=		Fantasy roguelike game based on vintage larn
 
 HAS_CONFIGURE=          # defined
