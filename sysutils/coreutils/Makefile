@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/08/09 07:45:46 heinz Exp $
+# $NetBSD: Makefile,v 1.10 2003/08/09 11:25:15 seb Exp $
 
 DISTNAME=	coreutils-5.0
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNU:=coreutils/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/coreutils/
 COMMENT=	GNU basic file, shell and text manipulation utilities
 

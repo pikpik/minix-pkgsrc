@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/06 14:37:38 wiz Exp $
 #
 
 DISTNAME=	chktex-1.6.1
 CATEGORIES=	print
 MASTER_SITES=	http://savannah.nongnu.org/download/chktex/chktex.pkg/1.6.1/
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/chktex/
 COMMENT=	LaTeX semantic checker
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/29 18:21:05 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/08/17 18:23:49 recht Exp $
 #
 
 DISTNAME=	csv-1.0
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-csv-1.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.object-craft.com.au/projects/csv/download/
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.object-craft.com.au/projects/csv/
 COMMENT=	CSV reading module for Python
 

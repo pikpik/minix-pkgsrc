@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/21 17:01:17 martti Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/30 10:06:07 wiz Exp $
 #
 # Unfortunately, some reading of the United States law (DMCA) means
 # that we are not able to provide pointers to the source or homepage
@@ -12,7 +12,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${LIBDVDCSS_MASTER_SITES}/${DISTNAME:S/libdvdcss-//}/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	${LIBDVDCSS_HOMEPAGE}
 COMMENT=	Simple library designed for accessing DVDs
 
