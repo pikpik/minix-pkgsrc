@@ -1,17 +1,14 @@
-$NetBSD: patch-ac,v 1.1.1.1 2001/03/19 19:35:52 wiz Exp $
+$NetBSD$
 
---- common/devices.cpp.orig	1998-09-28 23:59:27.000000000 +0200
+--- common/devices.cpp.orig	1998-09-28 14:59:27.000000000 -0700
 +++ common/devices.cpp
-@@ -13,8 +13,9 @@
+@@ -13,6 +13,7 @@
  #include <unistd.h>
  #include <fcntl.h>
  #include <stdio.h>
 +#include <stdlib.h>
  #include <sys/ioctl.h>
--#include <sys/soundcard.h>
-+#include <soundcard.h>
- 
- #include "modplay.h"
+ #include <sys/soundcard.h>
  
 @@ -24,13 +25,26 @@ OpenDSP(DSPInfo * DSP)
  	int val;
