@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2001/04/03 14:47:15 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2001/04/14 00:52:10 jtb Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -35,6 +35,7 @@ SUBDIR+=	p5-Font-AFM
 SUBDIR+=	papersize
 SUBDIR+=	pcps
 SUBDIR+=	pdflib
+SUBDIR+=	pnm2ppa
 SUBDIR+=	psify
 SUBDIR+=	psutils
 SUBDIR+=	py-reportlab
