@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:29 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/05/04 19:29:17 tron Exp $
 #
 
 DISTNAME=	pyth151
@@ -27,8 +27,6 @@ NOSHARED=\#
 
 post-configure:
 	${SED} -e 's/@NO64BIT@/${NO64BIT}/' -e 's/@NOSHARED@/${NOSHARED}/' \
-		-e 's/@NOREADLINE@/${NOREADLINE}/' -e 's/@NOTK@/${NOTK}/'  \
-		-e 's^@PREFIX@^${PREFIX}^g' -e 's^@X11BASE@^${X11BASE}^g'  \
 		${FILESDIR}/Setup >${WRKSRC}/Modules/Setup
 
 post-install:
