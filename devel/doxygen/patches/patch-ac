@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- configure.orig	2005-01-06 10:56:09.000000000 +0000
++++ configure
+@@ -1,2 +1,2 @@
+-#! /bin/bash
++#!/bin/sh
+ #
