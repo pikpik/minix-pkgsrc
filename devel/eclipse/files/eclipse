@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# $NetBSD: $
+#
+# start the eclipse IDE
+
+ECLIPSE_DIR=@PREFIX@/eclipse
+
+case $1 in
+	-data)  data=$2 ;;
+esac
+
+data=${data:-${HOME}}
+
+(cd ${ECLIPSE_DIR} && ./eclipse -data ${data} $@)
