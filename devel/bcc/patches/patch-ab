@@ -1,13 +1,12 @@
 $NetBSD$
 
---- as/Makefile.orig	Thu Apr 23 06:04:42 1992
+--- as/Makefile.orig	1992-04-23 14:04:42.000000000 +1000
 +++ as/Makefile
-@@ -1,27 +1,18 @@
+@@ -1,27 +1,17 @@
 -CFLAGS		=-O
 +.include "../Makefile.inc"
 +.PATH:	../ld
 +
-+CFLAGS		+=-Wall
  LDFLAGS		=
  
 -OBJS		=as.o assemble.o error.o express.o \
