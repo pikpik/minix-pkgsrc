@@ -1,6 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/02 16:41:05 rh Exp $
 bin/stroke_test
-lib/libstroke.so.0.3
 lib/libstroke.a
-lib/libstroke_tcl.so.0.3
+lib/libstroke.la
+lib/libstroke.so.0.3
 lib/libstroke_tcl.a
+lib/libstroke_tcl.la
+lib/libstroke_tcl.so.0.3
