@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2003/10/03 15:04:52 christos Exp $
+# $NetBSD: Makefile,v 1.105 2003/11/01 13:34:10 martti Exp $
 
 DISTNAME=	postfix-2.0.16
 CATEGORIES=	mail
@@ -90,8 +90,8 @@ BUILD_DEFS+=	USE_SASL
 USING_SASL=YES
 .include "../../security/cyrus-sasl2/buildlink2.mk"
 CCARGS+=	-DUSE_SASL2_AUTH
-AUXLIBS+=	-L${BUILDLINK_PREFIX.cyrus-sasl2}/lib		\
-		-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.cyrus-sasl2}/lib	\
+AUXLIBS+=	-L${BUILDLINK_PREFIX.cyrus-sasl}/lib		\
+		-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.cyrus-sasl}/lib	\
 		-lsasl2
 BUILD_DEFS+=	USE_SASL2
 .endif
