@@ -19,7 +19,7 @@ $NetBSD$
 +sock_ntop(p)
 +    struct sockaddr *p;
 +{
-+#ifndef INET6
++#ifdef INET6
 +    static char ntop_buf[INET6_ADDRSTRLEN];
 +#else
 +    static char ntop_buf[INET_ADDRSTRLEN];
