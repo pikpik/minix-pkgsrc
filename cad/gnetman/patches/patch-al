@@ -11,3 +11,12 @@ $NetBSD$
  
  noinst_LIBRARIES = libtcl.a
  
+@@ -91,7 +91,7 @@ tclwrap.c \
+ tc.h
+ 
+ 
+-INCLUDES = -I$(srcdir)/../include
++INCLUDES = @TCL_CFLAGS@ -I$(srcdir)/../include
+ subdir = src/tcl
+ mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+ CONFIG_HEADER = $(top_builddir)/config.h

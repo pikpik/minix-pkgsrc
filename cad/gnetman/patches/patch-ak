@@ -9,3 +9,9 @@ $NetBSD$
 +AM_CFLAGS= -DDDR_DEBUG
  
  noinst_LIBRARIES=libtcl.a
+@@ -12,4 +12,4 @@ tclwrap.c \
+ tc.h
+ 
+-INCLUDES=-I$(srcdir)/../include
++INCLUDES=@TCL_CFLAGS@ -I$(srcdir)/../include
+ 
