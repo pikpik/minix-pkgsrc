@@ -1,7 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2004/06/15 14:26:34 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/23 22:57:19 recht Exp $
 #
 
 PKGNAME=	python23-nth-2.3.4
+PKGREVISION=	1
+
+CONFLICTS+=	python-[0-9]*
 
 CONFIGURE_ARGS+=        --without-threads
 
