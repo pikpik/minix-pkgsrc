@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2002/10/06 01:34:17 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2002/10/19 10:54:52 rh Exp $
 
 DISTNAME=		gnome-games-1.4.0.4
 PKGREVISION=		2
@@ -41,7 +41,7 @@ post-patch:
 		< gnect/src/connect4.c.broken > gnect/src/connect4.c
 
 pre-configure:
-	cd ${WRKSRC} && ${PREFIX}/bin/libtoolize --force --copy
+	cd ${WRKSRC} && ${LOCALBASE}/bin/libtoolize --force --copy
 	cd ${WRKSRC} && ${ACLOCAL} -I macros
 	cd ${WRKSRC} && ${AUTOHEADER}
 	cd ${WRKSRC} && ${AUTOMAKE} --add-missing --gnu
