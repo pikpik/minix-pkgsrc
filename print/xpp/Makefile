@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/08 16:36:24 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/15 20:07:16 wiz Exp $
 
 DISTNAME=	xpp-0.7
 CATEGORIES=	print x11
@@ -12,6 +12,7 @@ DEPENDS+=	fltk>=1.0.9:../../x11/fltk
 
 USE_X11=	# defined
 
+USE_GMAKE=	# defined
 GNU_CONFIGURE=	# defined
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 CONFIGURE_ENV+=	LIBS="${LIBS}"
