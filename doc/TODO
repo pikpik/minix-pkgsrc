@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.211 2003/01/22 22:47:05 jmmv Exp $
+$NetBSD: TODO,v 1.212 2003/01/23 10:10:07 wiz Exp $
 
 Suggested new packages
 ======================
@@ -69,7 +69,6 @@ Suggested new packages
 Suggested package updates
 =========================
 
-	o R-1.6.2
 	o Xbae-4.50.0
 	o abiword-1.0.4
 	o adobe-cmaps-1.5 [pkg/19646]
