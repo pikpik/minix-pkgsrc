@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/X11/fonts/TrueType/cyberbit.ttf
+share/doc/cyberbit-ttf/License.wri
+share/doc/cyberbit-ttf/Orders.wri
+share/doc/cyberbit-ttf/ReadMe.htm
+share/doc/cyberbit-ttf/Readme.wri
+@dirrm share/doc/cyberbit-ttf
+@unexec ${RMDIR} -p %D/lib/X11/fonts/TrueType 2> /dev/null || true
