@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/03/29 18:45:03 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/05/09 23:59:55 wiz Exp $
 #
 
 DISTNAME=		entropy-${ENTROPY_VERSION}
@@ -17,7 +17,7 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
-ENTROPY_VERSION=	0.8.2-415
+ENTROPY_VERSION=	0.8.2-416
 
 CONFIGURE_ARGS+=	--enable-verbose --disable-posix-sem
 
