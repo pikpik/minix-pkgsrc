@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.515 2000/07/21 06:30:04 rh Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.516 2000/07/23 18:42:48 fredb Exp $
 #
 # This file is in the public domain.
 #
@@ -998,7 +998,11 @@ all: build
 .if make(package)
 DEPENDS_TARGET=	package
 .else
+.if make(update)
+DEPENDS_TARGET=	install
+.else
 DEPENDS_TARGET=	reinstall
+.endif
 .endif
 .endif
 
