@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2000/12/12 19:16:56 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/16 15:22:15 wiz Exp $
 #
 
-DISTNAME=		MesaLib-3.4
+DISTNAME=		MesaLib-3.4.1
 WRKSRC=			${WRKDIR}/${DISTNAME:S/Lib//}
 CATEGORIES=		graphics
 MASTER_SITES= 		ftp://ftp.mesa3d.org/mesa/ \
@@ -16,6 +16,7 @@ CHECK_MESA=		yes
 USE_X11BASE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+USE_GMAKE=	yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-static
