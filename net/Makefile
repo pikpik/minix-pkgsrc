@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2000/02/06 01:11:26 wiz Exp $
+# $NetBSD: Makefile,v 1.110 2000/02/07 01:38:59 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -59,6 +59,7 @@
     SUBDIR += kdenetwork
     SUBDIR += kmap
 #    SUBDIR += ldap
+    SUBDIR += lftp
     SUBDIR += libirc
     SUBDIR += libpcap
 #    SUBDIR += libsocket++
