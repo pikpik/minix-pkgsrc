@@ -3,6 +3,8 @@ bin/centericq
 bin/cicqconv
 bin/cicqsync
 man/man1/centericq.1
+man/man1/cicqconv.1
+man/man1/cicqsync.1
 share/centericq/contrib/spanish/COPYING
 share/centericq/contrib/spanish/ChangeLog
 share/centericq/contrib/spanish/FAQ
