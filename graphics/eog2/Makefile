@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2003/11/12 01:31:49 salo Exp $
+# $NetBSD: Makefile,v 1.14 2003/09/13 04:57:42 xtraeme Exp $
 #
 
-DISTNAME=		eog-2.3.4
-PKGREVISION=		2
+DISTNAME=		eog-2.4.1
 CATEGORIES=		graphics gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/eog/2.3/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/eog/2.4/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
@@ -25,6 +24,7 @@ GCONF2_SCHEMAS= 	eog.schemas
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../print/libgnomeprint/buildlink2.mk"
 .include "../../print/libgnomeprintui/buildlink2.mk"
+.include "../../devel/libbonobo/buildlink2.mk"
 .include "../../sysutils/gnome-vfs2/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/GConf2/schemas.mk"

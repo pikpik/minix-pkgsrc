@@ -1,10 +1,10 @@
-$NetBSD: patch-aa,v 1.1 2003/02/14 21:11:26 jmmv Exp $
+$NetBSD$
 
---- Makefile.in.orig	2003-01-28 09:35:03.000000000 +0100
-+++ Makefile.in
-@@ -133,7 +133,7 @@ Graphics_DATA = $(Graphics_in_files:.des
- Gladedir = $(datadir)/eog/glade
- Glade_DATA = eog.glade
+--- Makefile.in.orig	2003-12-02 05:21:47.000000000 +0000
++++ Makefile.in	2003-12-02 05:22:04.000000000 +0000
+@@ -127,7 +127,7 @@
+ gladedir = $(datadir)/eog/glade
+ glade_DATA = eog.glade
  
 -schemasdir = $(sysconfdir)/gconf/schemas
 +schemasdir = $(datadir)/gconf/schemas
