@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2004/08/04 19:41:06 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2004/08/05 03:04:34 jlam Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=	# empty
+PKGREVISION=	1
 SVR4_PKGNAME=	csasl
 COMMENT=	Simple Authentication and Security Layer
 
