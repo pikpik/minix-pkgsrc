@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2001/10/18 15:20:30 veego Exp $
+# $NetBSD: Makefile,v 1.7 2002/06/02 00:57:38 schmonz Exp $
 #
 
-DISTNAME=		lukemftp-1.5
+PKGNAME=		lukemftp-1.6beta1
+DISTNAME=		lukemftp-1.6-beta1
 SVR4_PKGNAME=		luftp
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/misc/lukemftp/
@@ -26,7 +27,7 @@ CONFIGURE_ARGS+=	--with-socks5
 
 .if ${OPSYS} == "SunOS"
 MAKE_ENV+=		CPPFLAGS=""
-.elseif ${OPSYS} == "Darwin"
+.elif ${OPSYS} == "Darwin"
 CONFIGURE_ARGS+=	--disable-ipv6
 .endif
 
