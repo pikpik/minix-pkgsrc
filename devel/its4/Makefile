@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:38:32 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/06/23 03:41:28 jlam Exp $
 #
 
 DISTNAME=	its4-1.1.1
@@ -16,9 +16,6 @@ LICENSE=        no-commercial-use
 HAS_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/its4
-
-#do-configure:
-#	cd ${WRKSRC} && ./configure ${CONFIGURE_ARGS}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/its4 ${PREFIX}/bin
