@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/02/18 15:14:33 seb Exp $
+# $NetBSD: Makefile,v 1.30 2002/03/13 17:37:24 fredb Exp $
 # FreeBSD Id: Makefile,v 1.18 1998/09/27 20:10:45 steve Exp
 
 DISTNAME=	octave-2.0.16
@@ -26,7 +26,7 @@ USE_LIBTOOL=		yes
 USE_GMAKE=		yes
 CONFIGURE_ENV+=		FFLAGS="${CFLAGS}" OBJECT_FMT="${OBJECT_FMT}"
 CPPFLAGS+=		-I${WRKDIR}/include
-LDFLAGS+=		-Wl,-R${PREFIX}/lib -L${PREFIX}/lib
+LDFLAGS+=		-Wl,${RPATH_FLAG}${PREFIX}/lib -L${PREFIX}/lib
 
 INFO_FILES=	liboctave.info octave.info
 LIBOCTAVE_INFO=	liboctave.info liboctave.info-1 liboctave.info-2 liboctave.info-3

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/07/06 01:33:43 taya Exp $
+# $NetBSD: Makefile,v 1.15 2003/01/10 19:14:14 wiz Exp $
 
 DISTNAME=	skipstone-0.8.3
 CATEGORIES=	www
@@ -17,13 +17,13 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--with-mozilla-includes=${BUILDLINK_PREFIX.mozilla}/include/mozilla \
 		--with-mozilla-libs=${BUILDLINK_PREFIX.mozilla}/lib/mozilla
-LDFLAGS+=	-Wl,-R${BUILDLINK_PREFIX.mozilla}/lib/mozilla
+LDFLAGS+=	-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.mozilla}/lib/mozilla
 
 # for mozilla-stable (1.0 series)
 #CONFIGURE_ARGS=	--prefix=${PREFIX} \
 #		--with-mozilla-includes=${BUILDLINK_PREFIX.mozilla-stable}/include/mozilla-stable \
 #		--with-mozilla-libs=${BUILDLINK_PREFIX.mozilla-stable}/lib/mozilla-stable
-#LDFLAGS+=	-Wl,-R${BUILDLINK_PREFIX.mozilla-stable}/lib/mozilla-stable
+#LDFLAGS+=	-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.mozilla-stable}/lib/mozilla-stable
 
 #.include "../../www/mozilla-stable/buildlink2.mk"
 .include "../../www/mozilla/buildlink2.mk"

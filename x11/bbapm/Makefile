@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/09/07 20:46:35 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/08 00:03:56 jschauma Exp $
 # based on
 #    FreeBSD port:
 #    ID: ports/x11-wm/bbapm/Makefile,v 1.5 2002/09/02 01:30:15 lioux Exp
@@ -14,7 +14,7 @@ HOMEPAGE=	http://bbtools.windsofstorm.net/
 COMMENT=	APM monitor for Blackbox
 
 GNU_CONFIGURE=	yes
-LDFLAGS+=	-Wl,-R${X11BASE}/lib
+USE_X11=	yes
 
 # For now:
 # We use i386/apmvar.h; other architectures will require modification

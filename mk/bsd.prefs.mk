@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.105 2003/01/15 20:55:39 jlam Exp $
+# $NetBSD: bsd.prefs.mk,v 1.106 2003/01/25 22:39:56 jschauma Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -248,6 +248,10 @@ X11PREFIX=		${X11BASE}
 XMKMF_CMD?=		${X11PREFIX}/bin/xmkmf
 .endif
 
+# RPATH_FLAG publicly exports the linker flag used to specify run-time
+# library search paths.
+#
+RPATH_FLAG?=	${_OPSYS_RPATH_NAME}
 
 .ifndef DIGEST
 DIGEST:=		${LOCALBASE}/bin/digest

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/03/13 17:37:45 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/12 21:02:26 jschauma Exp $
 
 DISTNAME=	korganizer-1.1.2
 PKGREVISION=	1
@@ -24,6 +24,9 @@ CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV=	KDEDIR=${KDEBASEDIR} \
 		QTDIR=${QT1DIR}/qt1 \
 		CXXFLAGS="${CFLAGS}" \
-		all_libraries="-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -L${X11BASE}/lib -Wl,-R${X11BASE}/lib"
+		all_libraries="${KDE_LDFLAGS}"
+
+FIX_RPATH+=	KDE_LDFLAGS
+KDE_LDFLAGS=	-L${LOCALBASE}/lib -Wl,${RPATH_FLAG}${LOCALBASE}/lib -L${X11BASE}/lib -Wl,${RPATH_FLAG}${X11BASE}/lib
 
 .include "../../mk/bsd.pkg.mk"

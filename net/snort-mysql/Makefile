@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/12 16:55:40 agc Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/10 12:23:38 wiz Exp $
 #
 
 .include "../../net/snort/Makefile.common"
@@ -20,9 +20,7 @@ DISTINFO_FILE=  ${PKGDIR}/distinfo
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${_USE_RPATH} == "yes"
-LDFLAGS+=       -Wl,-R${BUILDLINK_PREFIX.mysql-client}/lib/mysql
-.endif
+LDFLAGS+=       ${BUILDLINK_LDFLAGS.mysql-client}
 
 .include "../../databases/mysql-client/buildlink2.mk"
 .include "../../net/libpcap/buildlink2.mk"

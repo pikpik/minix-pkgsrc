@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/12/24 06:10:31 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2003/02/22 00:49:27 mycroft Exp $
 
 DISTNAME=		gnome-python-1.4.4
 PKGNAME=		${PYPKGPREFIX}-gnome-1.4.4
@@ -26,11 +26,12 @@ PYBINMODULE=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
+# XXX This doesn't quite work if _USE_RPATH=no.
 .if (${OBJECT_FMT} == a.out)
 post-configure:
 .for DIR in pygtk pygnome
 	${MV} ${WRKSRC}/${DIR}/Makefile ${WRKSRC}/${DIR}/Makefile.old
-	${SED} -e 's#-Wl,-R#-R#g' ${WRKSRC}/${DIR}/Makefile.old \
+	${SED} -e 's#-Wl,-R#${RPATH_FLAG}#g' ${WRKSRC}/${DIR}/Makefile.old \
 	  >${WRKSRC}/${DIR}/Makefile
 .endfor
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/09/20 02:51:00 grant Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/27 19:41:53 seb Exp $
 #
 
 DISTNAME=		DBD-Sybase-0.94
@@ -14,7 +14,7 @@ COMMENT=		perl DBI/DBD driver for Sybase/MS-SQL databases
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/DBD/Sybase/.packlist
 
-PERL5_LDFLAGS+=		-Wl,-R${BUILDLINK_PREFIX.freetds}/freetds/lib
+PERL5_LDFLAGS+=		-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.freetds}/freetds/lib
 MAKE_ENV+=		SYBASE=${BUILDLINK_PREFIX.freetds}/freetds
 
 .include "../../databases/freetds/buildlink2.mk"

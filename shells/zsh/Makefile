@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2003/01/28 22:04:13 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2003/02/06 04:24:12 uebayasi Exp $
 
 DISTNAME=       zsh-4.0.6
 CATEGORIES=	shells
@@ -28,7 +28,7 @@ LDFLAGS+=	-static
 .if ${OPSYS} == "SunOS"
 PLIST_SRC=	${PKGDIR}/PLIST.dynamic ${PKGDIR}/PLIST
 .else
-LDFLAGS+=	-Wl,-R${PREFIX}/lib/zsh
+LDFLAGS+=	-Wl,${RPATH_FLAG}${PREFIX}/lib/zsh
 PLIST_SRC=	${PKGDIR}/PLIST.shlibs ${PKGDIR}/PLIST.dynamic ${PKGDIR}/PLIST
 .endif
 .endif

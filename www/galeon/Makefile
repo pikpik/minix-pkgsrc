@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2003/02/17 14:34:00 taya Exp $
+# $NetBSD: Makefile,v 1.44 2003/02/18 14:56:02 jmmv Exp $
 
 DISTNAME=	galeon-1.2.8
 PKGREVISION=	2
@@ -42,7 +42,7 @@ CONFIGURE_ARGS+= --with-mozilla-snapshot=1.2
 .include	"../../x11/gnome-libs/buildlink2.mk"
 
 MOZ_LIBDIR=     ${PREFIX}/lib/mozilla
-LDFLAGS+=       -Wl,-R${MOZ_LIBDIR}
+LDFLAGS+=       -Wl,${RPATH_FLAG}${MOZ_LIBDIR}
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}

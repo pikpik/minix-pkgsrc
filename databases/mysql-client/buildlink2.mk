@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/10/08 23:00:51 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/12/13 14:19:54 tron Exp $
 
 .if !defined(MYSQL_CLIENT_BUILDLINK2_MK)
 MYSQL_CLIENT_BUILDLINK2_MK=	# defined
@@ -12,9 +12,10 @@ BUILDLINK_PREFIX.mysql-client_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.mysql-client=	include/mysql/*.h
 BUILDLINK_FILES.mysql-client+=	lib/mysql/libmysqlclient.*
 
+FIX_RPATH+=	BUILDLINK_LDFLAGS.mysql-client
 BUILDLINK_LDFLAGS.mysql-client= \
 	-L${BUILDLINK_PREFIX.mysql-client}/lib/mysql			\
-	-Wl,-R${BUILDLINK_PREFIX.mysql-client}/lib/mysql
+	-Wl,${RPATH_FLAG}${BUILDLINK_PREFIX.mysql-client}/lib/mysql
 
 .include "../../devel/zlib/buildlink2.mk"
 
