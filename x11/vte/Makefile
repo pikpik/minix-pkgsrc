@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/11/06 16:52:57 minskim Exp $
+# $NetBSD: Makefile,v 1.14 2004/11/06 17:00:11 minskim Exp $
 #
 
 DISTNAME=	vte-0.11.11
@@ -24,6 +24,7 @@ USE_X11=		yes
 CONFIGURE_ARGS+=	--disable-gtk-doc
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
+CONFIGURE_ARGS+=	--with-ft-exec-prefix=${BUILDLINK_PREFIX.freetype2}
 
 PKGCONFIG_OVERRIDE+=    vte.pc.in
 
