@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- Imakefile.orig	Sat May 13 10:01:16 2000
++++ Imakefile
+@@ -9,5 +9,3 @@
+ NormalProgramTarget(chemtool,$(OBJS), , , )
+ 
+ InstallProgram(chemtool,$(BINDIR))
+-
+-#InstallAppDefaults(Chemtool)
