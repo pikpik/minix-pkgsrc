@@ -1,8 +1,8 @@
-$NetBSD: patch-01,v 1.2 1999/12/04 16:50:11 sommerfeld Exp $
+$NetBSD$
 
---- net.c.orig	Fri Aug 13 18:46:49 1999
-+++ net.c	Sat Dec  4 11:44:33 1999
-@@ -213,7 +213,9 @@
+--- net.c.orig	Wed Mar  6 12:27:37 2002
++++ net.c
+@@ -219,7 +219,9 @@
      rv = sendto(sendsock, packet, packetsize, 0, 
  		(struct sockaddr *)&remoteaddress, sizeof(remoteaddress));
      if (rv >= 0) {
