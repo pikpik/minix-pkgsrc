@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1548 2004/12/18 00:14:04 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1549 2004/12/21 17:30:07 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -376,8 +376,6 @@ _ULIMIT_CMD+=	${ULIMIT_CMD_${__tmp__}} ;
 .endif
 
 CPPFLAGS+=		${CPP_PRECOMP_FLAGS}
-DEPENDS+=		${USE_USERADD:D${_USER_DEPENDS}}
-DEPENDS+=		${USE_GROUPADD:D${_USER_DEPENDS}}
 
 # If GNU_CONFIGURE is defined, then pass LIBS to the GNU configure script.
 # also pass in a CONFIG_SHELL to avoid picking up bash
