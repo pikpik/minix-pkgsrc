@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/gpart
+man/man8/gpart.8
