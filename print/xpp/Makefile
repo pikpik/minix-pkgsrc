@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.16.2.1 2002/07/01 17:45:07 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2002/08/25 21:50:35 jlam Exp $
 
-DISTNAME=	xpp-1.0
+DISTNAME=	xpp-1.1
 PKGREVISION=	1
 CATEGORIES=	print x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cups/}
@@ -15,9 +15,6 @@ USE_GMAKE=	# defined
 GNU_CONFIGURE=	# defined
 
 DOCDIR=		${PREFIX}/share/doc/xpp
-
-pre-configure:
-	cd ${WRKSRC}; ${TOUCH} Makefile.in aclocal.m4 configure
 
 post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
