@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2001/07/10 15:08:32 tron Exp $
+# $NetBSD: Makefile,v 1.43 2001/07/11 01:26:10 wiz Exp $
 
 DISTNAME=		openssl-0.9.6
 PKGNAME=		${DISTNAME}nb1
@@ -35,7 +35,7 @@ CONFIGURE_ENV=		CC="${CC}"
 
 .if ${OPSYS} == "NetBSD"
 PATCH_SITES=		${MASTER_SITE_LOCAL}
-PATCHFILES=		openssl-0.9.6-netbsd.patch.gz
+PATCHFILES=		openssl-0.9.6-20010830-netbsd.patch.gz
 
 MAKE_ENV=		LD_LIBRARY_PATH=${WRKSRC} MAKELIB=${FILESDIR}/makelib
 .endif
