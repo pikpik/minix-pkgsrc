@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- kmysqladmin/profile.cpp.orig	Thu Jul  5 16:46:07 2001
++++ kmysqladmin/profile.cpp	Thu Jul  5 16:48:47 2001
+@@ -33,7 +33,11 @@
+ #include <sys/stat.h>
+ #else
+ #include <iostream>
++#ifdef __NetBSD__
++#include <strstream>
++#else
+ #include <istream>
++#endif
+ #endif
+ 
+ #include "helpers.h"
