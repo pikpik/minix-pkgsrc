@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/01/23 21:50:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/24 15:23:47 grant Exp $
 
 DISTNAME=	quanta-2.0-pr2
 PKGNAME=	quanta-1.9.9.2
@@ -26,7 +26,7 @@ LTCONFIG_OVERRIDE=      ${WRKSRC}/admin/ltconfig
 
 pre-configure:
 	cd ${WRKSRC};							\
-	${ACLOCAL};							\
+	${ACLOCAL} -I .;						\
 	${AUTOHEADER};							\
 	${AUTORECONF} --force;						\
 	${AUTOMAKE} -a --gnu -i;					\
