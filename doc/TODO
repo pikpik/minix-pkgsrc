@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.226 2003/01/28 22:58:40 wiz Exp $
+$NetBSD: TODO,v 1.227 2003/01/29 13:04:00 wiz Exp $
 
 Suggested new packages
 ======================
@@ -62,7 +62,7 @@ Suggested new packages
 
 	tutos
 	the ultimate team organization software
-	http://www.tutos.org
+	http://www.tutos.org [agc is looking at this one]
 
 	vmsbackup
 	Read VMS backup tapes. [cjep is looking at this one, but
