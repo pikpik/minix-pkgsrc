@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.181 2003/10/01 20:58:52 reed Exp $
+# $NetBSD: Makefile,v 1.182 2003/10/20 17:06:40 manu Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -68,6 +68,7 @@ SUBDIR+=	kbiff
 SUBDIR+=	libesmtp
 SUBDIR+=	libmilter
 SUBDIR+=	libsieve
+SUBDIR+=	libsnert
 SUBDIR+=	mailagent
 SUBDIR+=	mailcrypt
 SUBDIR+=	maildrop
@@ -83,6 +84,7 @@ SUBDIR+=	mew-xemacs
 SUBDIR+=	mew3
 SUBDIR+=	mhonarc
 SUBDIR+=	milter-regex
+SUBDIR+=	milter-sender
 SUBDIR+=	mimedefang
 SUBDIR+=	mini_sendmail
 SUBDIR+=	msmtp
