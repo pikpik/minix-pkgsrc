@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/24 20:29:10 rh Exp $
 #
 
 DISTNAME=	plsrc13
@@ -11,7 +11,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${MANDIST}${EXTRACT_SUFX}
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.sgpr.net/
 
-DEPENDS+=	png-*:../../graphics/png
+DEPENDS+=	png>=1.0.3:../../graphics/png
 
 NO_CONFIGURE=	YES
 USE_X11=	YES
