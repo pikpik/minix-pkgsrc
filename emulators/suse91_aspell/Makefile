@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/13 10:31:14 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/31 11:48:40 jdolecek Exp $
 
 DISTNAME=		suse_aspell-${SUSE_VERSION}
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE91}
 DISTFILES=		${RPMFILES}
 
-MAINTAINER=		tron@NetBSD.org
+MAINTAINER=		jdolecek@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for Aspell library
 
