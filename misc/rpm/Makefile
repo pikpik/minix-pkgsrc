@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/09/27 23:18:26 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2001/10/24 00:26:51 lukem Exp $
 #
 
 DISTNAME=	rpm-2.5.4
@@ -24,6 +24,9 @@ INSTALL_FILE=		${WRKDIR}/INSTALL
 FILES_SUBST=		CAT=${CAT:Q}
 FILES_SUBST+=		MKDIR=${MKDIR:Q}
 FILES_SUBST_SED=	${FILES_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}
+
+post-configure:
+	cd ${WRKSRC}/po && ( mv cz.mo cs.mo; mv cz.po cs.po )
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/rpm
