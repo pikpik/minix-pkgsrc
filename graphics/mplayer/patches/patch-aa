@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.4 2002/04/30 15:10:01 veego Exp $
 
 --- configure.orig	Sun Apr 28 23:05:09 2002
 +++ configure	Mon Apr 29 09:40:55 2002
@@ -18,7 +18,7 @@ $NetBSD$
  if test "$_dvdkit" = auto ; then
   _dvdkit=no
 - if linux || freebsd ; then
-+ if linux || freebsd | netbsd ; then
++ if linux || freebsd || netbsd ; then
    test -f "./libmpdvdkit/Makefile" && _dvdkit=yes
   fi
  fi
