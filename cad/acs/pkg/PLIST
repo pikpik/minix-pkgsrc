@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/24 22:13:23 dmcmahill Exp $
 bin/acs
-bin/acs.hlp
 share/doc/acs/acs-tutorial
 share/doc/acs/man.pdf
 share/doc/acs/whatisit
