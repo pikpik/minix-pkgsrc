@@ -1,0 +1,4 @@
+$NetBSD$
+bin/btcompletedirgui.py
+bin/btdownloadgui.py
+bin/btmaketorrentgui.py
