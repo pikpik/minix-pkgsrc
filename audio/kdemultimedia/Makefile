@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2001/02/16 13:30:43 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/03/13 17:36:37 fredb Exp $
 
 DISTNAME=	kdemultimedia-1.1.2
 PKGREVISION=	1
 CATEGORIES=	audio kde
-MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
-		ftp://ftp.de.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/
+MASTER_SITES=	${MASTER_SITE_LOCAL}/kde1
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org

@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.59 2001/09/27 23:19:01 jlam Exp $
+# $NetBSD: Makefile,v 1.60 2002/03/13 17:37:58 fredb Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/27 00:25:46 se Exp
 #
 
 DISTNAME=	kdelibs-1.1.2
 PKGREVISION=	1
 CATEGORIES=	x11 kde
-MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
-		ftp://ftp.de.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/
+MASTER_SITES=	${MASTER_SITE_LOCAL}/kde1
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
