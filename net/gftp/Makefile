@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 17:26:53 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/05/15 05:27:32 zuntum Exp $
 
-DISTNAME=	gftp-2.0.7b
-PKGNAME=	gftp-2.0.7.1
+DISTNAME=	gftp-2.0.8
 CATEGORIES=	net
-MASTER_SITES=	ftp://gftp.seul.org/pub/gftp/old-releases/
+MASTER_SITES=	http://gftp.seul.org/					\
+		ftp://gftp.seul.org/pub/gftp/				\
+		ftp://gftp.seul.org/pub/gftp/old-releases/
 
 MAINTAINER=	jmcneill@invisible.yi.org
 HOMEPAGE=	http://gftp.seul.org/
