@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.22 2004/04/18 23:05:58 snj Exp $
 
 DISTNAME=	xbattbar_1.4.2
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://iplab.aist-nara.ac.jp/member/suguru/
 
