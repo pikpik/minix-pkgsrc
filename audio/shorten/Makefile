@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/05 13:19:09 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/19 08:54:27 wiz Exp $
 #
 
 DISTNAME=	shorten-3.5.1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.etree.org/shnutils/shorten/source/
 
 MAINTAINER=	collver1@comcast.net
 HOMEPAGE=	http://www.etree.org/shnutils/shorten/
-COMMENT=	lossless audio compressor
+COMMENT=	Lossless audio compressor
 
 LICENSE=	no-commercial-use
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/06/17 14:16:33 agc Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:26:41 grant Exp $
 #
 
 DISTNAME=	gkermit
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
 
 MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www.columbia.edu/kermit/gkermit.html
-COMMENT=	minimal implementation of the ``kermit'' protocol (GPL'd)
+COMMENT=	Minimal implementation of the ``kermit'' protocol (GPL'd)
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	gkermit-1.00

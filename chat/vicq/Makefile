@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/06/02 01:21:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 21:26:27 grant Exp $
 
 DISTNAME=	vicq-0.4.1
 PKGREVISION=	1
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gonzo.kiev.ua/projects/vicq/
-COMMENT=	simple icq client written in perl
+COMMENT=	Simple icq client written in perl
 
 DEPEND+=	p5-Term-ReadLine>=1.11:../../devel/p5-Term-ReadLine
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:21:07 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:28:24 grant Exp $
 #
 
 DISTNAME=	mytop-0.8
@@ -7,7 +7,7 @@ MASTER_SITES=	http://public.yahoo.com/~jzawodn/mytop/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://public.yahoo.com/~jzawodn/mytop/
-COMMENT=	console-based tool for monitoring the threads and performance of MySQL
+COMMENT=	Console-based tool for monitoring the threads and performance of MySQL
 
 DEPENDS+=	p5-DBI-[0-9]*:../../databases/p5-DBI
 DEPENDS+=	p5-Term-ReadKey-[0-9]*:../../devel/p5-Term-ReadKey

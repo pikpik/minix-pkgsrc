@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/12/24 18:55:36 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/19 08:54:27 wiz Exp $
 #
 
 DISTNAME=		SpiralSynth-0.1.7
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.pawfal.org/Software/SpiralSynth/dload/
 
 MAINTAINER=		collver1@comcast.net
 HOMEPAGE=		http://www.pawfal.org/Software/SpiralSynth/
-COMMENT=		polyphonic analogue softsynth
+COMMENT=		Polyphonic analogue softsynth
 
 # only runs correctly on little-endian machines
 ONLY_FOR_PLATFORM=	*-*-alpha *-*-arc *-*-cobalt *-*-dreamcast \

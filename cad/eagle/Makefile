@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/26 04:05:52 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:24:49 grant Exp $
 #
 
 DISTNAME=		eagle-4.09r2e
@@ -10,7 +10,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.cadsoft.de/
-COMMENT=		easy to use printed circuit board editor
+COMMENT=		Easy to use printed circuit board editor
 
 DEPENDS+=		suse_x11>=6.1:../../emulators/${SUSE_DIR_PREFIX}_x11
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2003/03/15 08:58:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.41 2003/04/10 01:28:03 grant Exp $
 
 DISTNAME=		esound-0.2.29
 PKGREVISION=		1
@@ -7,7 +7,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=sources/esound/0.2/}
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.tux.org/~ricdude/EsounD.html
-COMMENT=		the Enlightened sound daemon
+COMMENT=		The Enlightened sound daemon
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES

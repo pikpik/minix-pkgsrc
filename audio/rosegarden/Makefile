@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:21:34 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:23:16 grant Exp $
 
 DISTNAME=	rosegarden-2.1pl3
 PKGNAME=	rosegarden-2.1.3
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.cannam.demon.co.uk/rosegarden/distribution/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.all-day-breakfast.com/rosegarden/
-COMMENT=	notation editor & MIDI sequencer
+COMMENT=	Notation editor & MIDI sequencer
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES

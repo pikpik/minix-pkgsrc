@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/13 13:50:41 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 21:25:07 grant Exp $
 #
 
 DISTNAME=	gwave-20020122
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.cs.unc.edu/~tell/dist/
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.cs.unc.edu/~tell/gwave/
-COMMENT=	viewer for spice-like simulator output and other analog data
+COMMENT=	Viewer for spice-like simulator output and other analog data
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/07/13 13:50:51 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2003/07/17 21:26:44 grant Exp $
 #
 
 DISTNAME=		jpilot-0.99.5
@@ -8,7 +8,7 @@ MASTER_SITES=		http://jpilot.org/
 
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://jpilot.org/
-COMMENT=		desktop organizer application for the palm pilot
+COMMENT=		Desktop organizer application for the palm pilot
 
 BUILD_USES_MSGFMT=	YES
 DEPENDS+=		gnome-dirs>=1.0:../../misc/gnome-dirs

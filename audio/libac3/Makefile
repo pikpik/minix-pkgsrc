@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 13:30:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:22:35 grant Exp $
 #
 
 DISTNAME=	ac3dec-0.6.1
@@ -8,7 +8,7 @@ MASTER_SITES=	http://gusnet.cx/aaron/codecs/tarballs/
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://ess.engr.uvic.ca/~aholtzma/ac3/
-COMMENT=	ac3 audio (as used on DVDs) decoding library
+COMMENT=	AC3 audio (as used on DVDs) decoding library
 
 GNU_CONFIGURE=  yes
 
