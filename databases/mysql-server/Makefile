@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/09/20 10:39:07 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2002/12/13 14:19:54 tron Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 PKGREVISION=		1
@@ -15,6 +15,7 @@ CONFIGURE_ARGS+=	--with-mit-threads
 CONFIGURE_ARGS+=	--with-libwrap
 CONFIGURE_ARGS+=	--without-berkeley-db
 USE_BUILDLINK2=		YES
+USE_GMAKE=		YES
 
 # platforms on which included mit-pthreads is usable
 ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm32 NetBSD-*-i386	\
