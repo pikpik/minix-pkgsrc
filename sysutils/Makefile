@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.126 2002/03/30 16:53:28 taca Exp $
+# $NetBSD: Makefile,v 1.127 2002/04/11 19:54:17 magick Exp $
 #
 
 COMMENT=	System utilities
@@ -12,6 +12,7 @@ SUBDIR+=	amanda-server
 SUBDIR+=	apcupsd
 SUBDIR+=	aperture
 SUBDIR+=	asapm
+SUBDIR+=	bbsload
 SUBDIR+=	bchunk
 SUBDIR+=	bkpupsd
 SUBDIR+=	c++rt0
