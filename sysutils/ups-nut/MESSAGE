@@ -1,0 +1,9 @@
+======================================================================
+$NetBSD$
+
+ ${NUT_CONFDIR}/upsd.users has a new format from version 0.45.5.
+ You will need to update this before restarting upsd(8).
+ Refer to ${NUT_EGDIR}/upsd.users.sample
+ and upsd.users(5) for more information.
+
+======================================================================
