@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:35:02 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 16:44:38 martti Exp $
 #
 
 DISTNAME=	TreeText-0.3.3-src
 PKGNAME=	${DISTNAME:C/-src//}
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/treetext/treetext
 CATEGORIES=	editors
 MASTER_SITES=	http://www.ab.wakwak.com/~tino/fox/treetext/
