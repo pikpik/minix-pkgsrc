@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/21 08:36:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/22 11:27:50 agc Exp $
 #
 
 DISTNAME=	readline-2.2
@@ -15,8 +15,5 @@ SCRIPTS_ENV+=	PLIST_SRC="${PLIST_SRC}"
 do-build:
 	(cd ${WRKSRC}; make LIB=readline)
 	(cd ${WRKSRC}; make LIB=history)
-
-post-install:
-	${LDCONFIG} || ${TRUE}
 
 .include "../../mk/bsd.pkg.mk"
