@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2001/04/12 10:42:52 wennmach Exp $
+# $NetBSD: Makefile,v 1.47 2001/04/16 03:03:07 tron Exp $
 
 DISTNAME=		openssh-2.5.2p2
 CATEGORIES=		security
@@ -14,7 +14,7 @@ COMMENT=		Open Source Secure shell client and server (remote login program)
 
 CONFLICTS=		sftp-*
 
-BUILD_DEPENDS+=		perl-5.*:../../lang/perl5
+BUILD_DEPENDS+=		perl>=${PERL5_REQD}:../../lang/perl5
 BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
 
 CRYPTO=			yes

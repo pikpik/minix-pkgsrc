@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/03/27 03:20:16 hubertf Exp $
+# $NetBSD: Makefile,v 1.14 2001/04/11 21:49:16 jtb Exp $
 #
 
 DISTNAME=	pgp50i-unix-src
@@ -18,7 +18,7 @@ MAINTAINER=	mjl@netbsd.org
 HOMEPAGE=       http://www.pgpi.com/
 COMMENT=	New, international, Public-Key encryption and digital signature utility
 
-BUILD_DEPENDS=	perl-5.*:../../lang/perl5
+BUILD_DEPENDS=	perl>=${PERL5_REQD}:../../lang/perl5
 
 CONFLICTS=	pgraf-*  	# Both have a `pgps' executable
 

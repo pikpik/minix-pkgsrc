@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/03/27 03:19:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.16 2001/04/19 16:09:29 kei Exp $
 #
 
 DISTNAME=	jisx0208fonts-20010112
@@ -54,7 +54,7 @@ PLIST_SRC+=	${PKGDIR}/PLIST.shinonome
 SHINONOME_CONFIGURE_ENV=${CONFIGURE_ENV} PERL="${PERL5}"
 SHINONOME_CONFIGURE_ARGS=${CONFIGURE_ARGS} --with-fontdir=${FONTDIR} --disable-progressbar
 
-BUILD_DEPENDS+=	perl-5.*:../../lang/perl5
+BUILD_DEPENDS+=	perl>=${PERL5_REQD}:../../lang/perl5
 .endif
 
 MASTER_SITES+=	ftp://ftp.jaist.ac.jp/pub/misc/character/fonts/kappa/
