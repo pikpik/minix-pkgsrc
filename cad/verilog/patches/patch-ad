@@ -3,9 +3,9 @@ $NetBSD$
 don't use -O2 on parse.cc because of compiler bugs on sparc and pmax
 (maybe others).
 
---- Makefile.in.orig	Sat Feb  5 01:40:35 2000
-+++ Makefile.in	Tue Mar  7 12:38:25 2000
-@@ -111,4 +111,6 @@
+--- Makefile.in.orig	Fri Apr 28 12:50:53 2000
++++ Makefile.in	Sat Apr 29 08:39:00 2000
+@@ -115,4 +115,6 @@
  
  parse.o dep/parse.d: parse.cc
 +	$(CXX) -MD -c -I. $(CPPFLAGS)  $<
