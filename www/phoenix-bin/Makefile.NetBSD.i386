@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.NetBSD.i386,v 1.1.1.1 2002/10/25 14:27:48 grant Exp $
 #
 
 DEPENDS+=		suse_compat>=7.3:../../emulators/${SUSE_DIR_PREFIX}_compat
