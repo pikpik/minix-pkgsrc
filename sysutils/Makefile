@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1998/12/03 13:41:33 frueauf Exp $
+# $NetBSD: Makefile,v 1.24 1999/02/27 17:03:38 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
@@ -16,6 +16,7 @@
     SUBDIR += logrot
     SUBDIR += lsof
 #    SUBDIR += manck
+    SUBDIR += mc
 #    SUBDIR += mei
     SUBDIR += mkhybrid
     SUBDIR += mkisofs
