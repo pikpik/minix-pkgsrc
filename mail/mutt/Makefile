@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2004/03/20 23:10:23 bouyer Exp $
+# $NetBSD: Makefile,v 1.117 2004/03/26 02:27:44 wiz Exp $
 
 DISTNAME=		mutt-1.4.2.1i
 PKGNAME=                ${DISTNAME:C/i$//}
@@ -12,6 +12,8 @@ MASTER_SITES=		ftp://ftp.mutt.org/mutt/ \
 MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.mutt.org/
 COMMENT=		Text-based MIME mail client with PGP support
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILD_USES_MSGFMT=	yes
 
