@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/03/30 00:59:24 msaitoh Exp $
+# $NetBSD: Makefile,v 1.4 1999/05/01 14:37:30 tron Exp $
 
 DISTNAME=	PTL2-current-990325
 PKGNAME=	ptl2-current-990325
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.media.osaka-cu.ac.jp/pub/PTL/PTL2/PTL2-current-990325/
 MAINTAINER=	msaitoh@netbsd.org
 HOMEPAGE=	http://www.media.osaka-cu.ac.jp/~k-abe/PTL/
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/perl:${PKGSRCDIR}/lang/perl5
+BUILD_DEPENDS=	${LOCALBASE}/bin/perl:../../lang/perl5
 
 USE_GMAKE=	YES
 
