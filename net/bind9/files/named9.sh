@@ -10,7 +10,6 @@
 name="named"
 rcvar=${name}9
 command="@PREFIX@/sbin/${name}"
-pidfile="/var/run/${name}.pid"
 
 extra_commands="reload"
 

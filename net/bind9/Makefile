@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.65 2005/01/26 09:32:31 tron Exp $
+# $NetBSD: Makefile,v 1.66 2005/03/15 16:07:01 tron Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	bind-${BIND_VERSION}pl1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}/
 
@@ -44,7 +45,7 @@ PLIST_SUBST+=	IPV6H=
 .endif
 
 PLIST_SRC=	${WRKDIR}/PLIST
-RCD_SCRIPTS=	lwresd named
+RCD_SCRIPTS=	lwresd named9
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bind9
