@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/ptlib/unix/tlibthrd.cxx.orig	2003-05-16 19:40:55.000000000 +0200
-+++ src/ptlib/unix/tlibthrd.cxx	2004-10-08 17:07:19.000000000 +0200
-@@ -1032,7 +1032,9 @@
+--- src/ptlib/unix/tlibthrd.cxx.orig	2004-09-02 07:55:44.000000000 +0000
++++ src/ptlib/unix/tlibthrd.cxx
+@@ -1088,7 +1088,9 @@ void PThread::Sleep(const PTimeInterval 
      if (select(0, NULL, NULL, NULL, tval) < 0 && errno != EINTR)
        break;
  

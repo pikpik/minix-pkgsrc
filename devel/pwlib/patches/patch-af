@@ -1,8 +1,8 @@
-$NetBSD: patch-af,v 1.2 2002/12/01 18:31:42 jdolecek Exp $
+$NetBSD$
 
---- ./src/ptlib/unix/Makefile.orig	Wed Aug 14 17:18:54 2002
-+++ ./src/ptlib/unix/Makefile	Sun Aug 18 23:09:15 2002
-@@ -512,26 +512,26 @@
+--- src/ptlib/unix/Makefile.orig	2004-10-28 20:07:11.000000000 +0000
++++ src/ptlib/unix/Makefile
+@@ -716,26 +716,26 @@ alllibs:
  
  
  $(OBJDIR)/regcomp.o: $(COMMON_SRC_DIR)/regex/regcomp.c
