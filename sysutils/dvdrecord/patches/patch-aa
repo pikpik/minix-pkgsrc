@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	Wed Jan  1 23:32:41 2003
+--- Makefile.in.orig	Wed Jan  1 14:32:41 2003
 +++ Makefile.in
 @@ -133,8 +133,7 @@ target_os = @target_os@
  target_vendor = @target_vendor@
