@@ -1,4 +1,4 @@
-/*	$NetBSD: ftpio.c,v 1.60 2003/10/06 00:44:15 grant Exp $	*/
+/*	$NetBSD: ftpio.c,v 1.62 2003/12/20 03:31:56 grant Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: ftpio.c,v 1.60 2003/10/06 00:44:15 grant Exp $");
+__RCSID("$NetBSD: ftpio.c,v 1.62 2003/12/20 03:31:56 grant Exp $");
 #endif
 
 /*-
@@ -1102,7 +1102,7 @@ http_fetch(const char *url, const char *path)
 		if ((path != NULL) && (chdir(path) < 0))
 			_exit(127);
 
-		if (unpack("-", Verbose ? "-vv" : NULL, NULL) != 0) {
+		if (unpack("-", NULL) != 0) {
 			warnx("unpack failed");
 			_exit(2);
 		}
@@ -1203,7 +1203,8 @@ unpackURL(const char *url, const char *dir)
 #if 0
 		path_create(pkg_path); /* XXX */
 #endif
-		printf("setenv PKG_PATH='%s'\n",pkg_path);
+		if (Verbose)
+			printf("setenv PKG_PATH='%s'\n", pkg_path);
 	}
 
 	if (strncmp(url, "http://", 7) == 0)
