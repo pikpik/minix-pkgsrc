@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2003/05/02 11:49:47 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2003/06/02 01:20:18 jschauma Exp $
 #
 
 DISTNAME=		pth-2.0.0
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--with-fdsetsize=1024
 CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
 CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
+TEST_TARGET=		test
+
 # for PLIST
 PTH_MAJOR=		20
 PTH_MINOR=		20
@@ -36,10 +38,6 @@ pre-configure:
 CONFIGURE_ARGS+=	--enable-syscall-hard
 .  endif
 .endif
-
-test: build
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} test | \
-		tee ${WRKSRC}/test.log
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/pth/
