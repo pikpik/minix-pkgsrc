@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/10/04 10:18:12 martti Exp $
+# $NetBSD: Makefile,v 1.8 2002/03/24 19:39:08 martti Exp $
 
 .include		"Makefile.common"
 
@@ -10,7 +10,7 @@ CONFIGURE_ARGS+=	--disable-gui
 
 INSTALL_TARGET=		installruntime installmacros installtutor installtools
 
-PLIST_SUBST+=		VIM_SUBDIR="vim61"
+PLIST_SUBST+=		VIM_SUBDIR="vim62"
 
 do-build:
 	@cd ${WRKSRC}/xxd && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS}
