@@ -1,7 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/12/03 19:23:13 xtraeme Exp $
 bin/gsasl
 include/gsasl.h
-info/gsasl.info
 lib/libgsasl.a
 lib/libgsasl.la
 lib/libgsasl.so
