@@ -7,7 +7,7 @@ $NetBSD$
  exec_prefix = @exec_prefix@
  datadir = $(prefix)/@DATADIRNAME@
 -localedir = $(datadir)/locale
-+localedir = $(prefix)/share/locale
++localedir = $(prefix)/${PKGLOCALEDIR}/locale
  gnulocaledir = $(prefix)/share/locale
  gettextsrcdir = $(prefix)/share/gettext/po
  subdir = po
