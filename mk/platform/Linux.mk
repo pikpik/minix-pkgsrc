@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.6 2004/12/29 23:19:43 minskim Exp $
+# $NetBSD: Linux.mk,v 1.7 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -20,7 +20,6 @@ CUT?=		/bin/cut
 CUT?=		/usr/bin/cut
 .endif
 DATE?=		/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
 ECHO_N?=	${ECHO} -n

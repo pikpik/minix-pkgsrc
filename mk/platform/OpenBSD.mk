@@ -1,4 +1,4 @@
-# $NetBSD: OpenBSD.mk,v 1.9 2004/12/27 08:38:09 jlam Exp $
+# $NetBSD: OpenBSD.mk,v 1.10 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -12,7 +12,6 @@ CMP?=		/usr/bin/cmp
 CP?=		/bin/cp
 CUT?=		/usr/bin/cut
 DATE?=		/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
 ECHO_N?=	${ECHO} -n

@@ -1,4 +1,4 @@
-# $NetBSD: BSDOS.mk,v 1.5 2004/12/27 06:41:50 jlam Exp $
+# $NetBSD: BSDOS.mk,v 1.6 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -17,7 +17,6 @@ CXX=		/usr/bin/g++
 .endif
 CUT?=		/usr/bin/cut
 DATE?=		/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
 ECHO_N?=	${ECHO} -n

@@ -1,4 +1,4 @@
-# $NetBSD: UnixWare.mk,v 1.5 2004/12/01 09:53:01 wiz Exp $
+# $NetBSD: UnixWare.mk,v 1.6 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the UnixWare 7 operating system.
 
@@ -12,7 +12,6 @@ CMP?=		/usr/bin/cmp
 CP?=		/usr/bin/cp
 CUT?=		/usr/bin/cut
 DATE?=		/usr/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/usr/ucb/echo
 ECHO_N?=	${ECHO} -n

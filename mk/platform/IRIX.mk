@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.7 2004/12/27 06:41:50 jlam Exp $
+# $NetBSD: IRIX.mk,v 1.8 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -12,7 +12,6 @@ CMP?=		/usr/bin/cmp
 CP?=		/sbin/cp
 CUT?=		/usr/bin/cut
 DATE?=		/sbin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo			# Shell builtin
 ECHO_N?=	${ECHO} -n

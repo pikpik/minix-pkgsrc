@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: OSF1.mk,v 1.1 2004/11/20 04:37:08 grant Exp $
 #
 # Variable definitions for the OSF1 operating system.
 
@@ -20,7 +20,6 @@ CP?=		/bin/cp
 CPP?=		/usr/bin/cpp
 CUT?=		/usr/bin/cut
 DATE?=		/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/usr/bin/echo				
 ECHO_N?=	${SETENV} CMD_ENV=bsd /usr/bin/echo -n

@@ -1,4 +1,4 @@
-# $NetBSD: DragonFly.mk,v 1.7 2005/01/12 21:11:41 recht Exp $
+# $NetBSD: DragonFly.mk,v 1.8 2005/01/25 18:15:58 tv Exp $
 #
 # Variable definitions for the DragonFly operating system.
 
@@ -13,7 +13,6 @@ CMP?=		/usr/bin/cmp
 CP?=		/bin/cp
 CUT?=		/usr/bin/cut
 DATE?=		/bin/date
-DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
 ECHO_N?=	${ECHO} -n
