@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/01/04 12:52:20 cjep Exp $
+# $NetBSD: Makefile,v 1.35 2003/03/26 04:05:41 jschauma Exp $
 
 DISTNAME=	acroread	# Overridden below
 PKGNAME=	acroread-4.05
@@ -47,7 +47,7 @@ WRKSRC=		${WRKDIR}/SSOLRS.install
 PLATFORM=	sparcsolaris
 . endif
 ONLY_FOR_PLATFORM=	*-*-i386 *-1.4[L-Z]-sparc *-1.[5-9]*-sparc *-[2-9]*-sparc
-# *-*-alpha 
+# *-*-alpha
 .elif ${OPSYS} == "SunOS"
 DISTNAME=	sunsparc-rs-405
 WRKSRC=		${WRKDIR}/SSOLRS.install

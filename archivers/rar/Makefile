@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.30 2002/08/25 21:49:20 jlam Exp $
-# FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
+# $NetBSD: Makefile,v 1.31 2003/03/29 12:40:02 jmmv Exp $
+# FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp
 #
 
 DISTNAME=		rarbsd

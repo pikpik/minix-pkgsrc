@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.21 2003/01/28 22:03:04 jlam Exp $
-# FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp 
+# $NetBSD: Makefile,v 1.22 2003/03/29 12:40:09 jmmv Exp $
+# FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp
 #
 
 DISTNAME=		tracker-5.3

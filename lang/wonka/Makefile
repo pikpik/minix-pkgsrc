@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/10 13:55:59 skrll Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:41:34 jmmv Exp $
 #
 
 DISTNAME=	wonka-src-0.9.5-release
@@ -82,5 +82,5 @@ test:	install
 
 .include "../../mk/bsd.pkg.mk"
 
-# This needs to be after bsd.pkg.mk 
+# This needs to be after bsd.pkg.mk
 PREFIX=		${JVM_HOME}

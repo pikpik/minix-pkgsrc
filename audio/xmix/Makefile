@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.11 2001/08/22 17:38:57 jlam Exp $
-# FreeBSD Id: Makefile,v 1.5 1996/11/18 13:56:53 asami Exp 
+# $NetBSD: Makefile,v 1.12 2003/03/29 12:40:10 jmmv Exp $
+# FreeBSD Id: Makefile,v 1.5 1996/11/18 13:56:53 asami Exp
 #
 
 DISTNAME=		xmix-2.1

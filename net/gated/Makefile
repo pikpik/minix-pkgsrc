@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.10 2001/10/25 20:16:53 agc Exp $
-# FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp 
+# $NetBSD: Makefile,v 1.11 2003/04/10 01:28:22 grant Exp $
+# FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp
 #
 
 DISTNAME=       gated-3-5-11

@@ -1,11 +1,11 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1.1.1 2002/02/13 18:09:21 mrauch Exp $
+$NetBSD: MESSAGE,v 1.2 2002/09/24 12:30:19 wiz Exp $
 
   OpenOffice has now been installed in ${PREFIX}/OpenOffice.org641.
 
   Before using this package for the first time, each user has to run
-  a setup program, which is automatically invoked at the first start.  
-  Thereafter, OpenOffice can be started using the 
+  a setup program, which is automatically invoked at the first start. 
+  Thereafter, OpenOffice can be started using the
   ${PREFIX}/bin/soffice command.
 
   Please note that this software should be considered alpha quality

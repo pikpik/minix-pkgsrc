@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/30 17:39:26 sommerfeld Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:19 jmmv Exp $
 #
 
 DISTNAME=	zephyr-20010518
@@ -14,7 +14,7 @@ USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 USE_X11=	YES
 
-# N.B. the following assume NetBSD-only.  
+# N.B. the following assume NetBSD-only. 
 CPPFLAGS+=      -I/usr/include/kerberosIV -I/usr/include/krb5
 LDFLAGS+=       -lroken -lcrypto -lcom_err -ledit -lcurses
 CONFIGURE_ARGS+="--with-krb4"

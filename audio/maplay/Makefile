@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.8 2001/09/09 20:36:12 agc Exp $
-# FreeBSD Id: Makefile,v 1.6 1997/01/07 14:58:04 torstenb Exp 
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:40:07 jmmv Exp $
+# FreeBSD Id: Makefile,v 1.6 1997/01/07 14:58:04 torstenb Exp
 #
 
 DISTNAME=       maplay1_2

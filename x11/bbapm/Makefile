@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/08 00:03:56 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/14 19:38:04 jlam Exp $
 # based on
 #    FreeBSD port:
 #    ID: ports/x11-wm/bbapm/Makefile,v 1.5 2002/09/02 01:30:15 lioux Exp
@@ -19,7 +19,7 @@ USE_X11=	yes
 # For now:
 # We use i386/apmvar.h; other architectures will require modification
 # of the patches, probably something like ${MACHINE_ARCH}/apmvar.h in
-# patch-ak 
+# patch-ak
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 Linux-*-*
 
 post-patch:

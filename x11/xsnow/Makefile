@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.12 2002/08/25 21:52:56 jlam Exp $
-# FreeBSD Id: Makefile,v 1.7 1996/11/18 09:56:45 asami Exp 
+# $NetBSD: Makefile,v 1.13 2003/03/03 04:17:28 jschauma Exp $
+# FreeBSD Id: Makefile,v 1.7 1996/11/18 09:56:45 asami Exp
 #
 
 DISTNAME=	xsnow-1.42

@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.19 2003/01/19 09:12:06 salo Exp $
-# FreeBSD Id: Makefile,v 1.4 1997/07/15 15:00:30 cracauer Exp 
+# $NetBSD: Makefile,v 1.20 2003/01/28 22:04:12 jlam Exp $
+# FreeBSD Id: Makefile,v 1.4 1997/07/15 15:00:30 cracauer Exp
 #
 
 DISTNAME=		scsh-0.5.3

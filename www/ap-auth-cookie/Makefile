@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2003/03/24 23:15:34 jmc Exp $
+# $NetBSD: Makefile,v 1.27 2003/03/29 12:42:47 jmmv Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
-# one. 
+# one.
 
 DISTNAME=	mod_auth_cookie.c
 PKGNAME=	ap-auth-cookie-1.9

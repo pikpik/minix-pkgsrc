@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.30 2002/11/10 23:17:20 cjep Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp 
+# $NetBSD: Makefile,v 1.31 2002/12/22 16:37:30 agc Exp $
+# FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp
 #
 
 DISTNAME=	zip-2.3

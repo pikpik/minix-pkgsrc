@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2003/02/09 14:38:52 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2003/05/03 16:26:01 cjep Exp $
 #
 
 .include "mk/bsd.prefs.mk"
@@ -81,7 +81,7 @@ README.html: .PRECIOUS
 		BMAKE=${MAKE} AWK=${AWK} EXPR=${EXPR} 			\
 		./mk/scripts/mkreadme --pkgsrc ${.CURDIR} 		\
 		--packages ${PACKAGES} ${_README_TYPE_FLAG} $$MULTIARCH \
-		--prune 
+		--prune
 .else
 	@${ECHO} "ERROR:  please do not use the README.html target directly."
 	@${ECHO} "        Instead use either the \"readme\" or \"cdrom-readme\""

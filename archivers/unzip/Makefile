@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.34 2002/11/25 22:17:16 jschauma Exp $
-# FreeBSD Id: Makefile,v 1.14 1997/06/19 05:30:04 ache Exp 
+# $NetBSD: Makefile,v 1.35 2002/12/25 18:30:24 grant Exp $
+# FreeBSD Id: Makefile,v 1.14 1997/06/19 05:30:04 ache Exp
 #
 
 DISTNAME=	unzip550
