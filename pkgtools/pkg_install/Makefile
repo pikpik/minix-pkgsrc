@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/05/30 16:54:16 tron Exp $
-#
+# $NetBSD$
 
 # Note to package maintainers:
 # To update the distfile of this pkg, cd to /usr/src/usr.sbin,
@@ -9,7 +8,7 @@
 # (Use "make show-pkgtools-version" to find the correct value
 #  for YYYYMMDD)
 
-DISTNAME=		pkg_install-19990412
+DISTNAME=		pkg_install-19990819
 CATEGORIES=		pkgtools
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
