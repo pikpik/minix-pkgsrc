@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/05/26 11:14:33 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/06/19 23:15:12 xtraeme Exp $
 
 DISTNAME=	ffmpeg-0.4.8
 CATEGORIES=	multimedia net
@@ -17,7 +17,7 @@ MAKE_ENV+=	EXTRA_LIBS="${LIBGETOPT}" \
 		LOCALBASE="${LOCALBASE}"
 
 CONFIGURE_ARGS=		--cc=${CC} --disable-grab --prefix=${PREFIX}
-CONFIGURE_ARGS+=	--disable-vhook --disable-debug
+CONFIGURE_ARGS+=	--enable-pp --disable-vhook --disable-debug
 
 BUILD_DEFS+=		USE_MMX
 
