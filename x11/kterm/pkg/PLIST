@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/kterm
+lib/X11/app-defaults/KTerm
+man/cat1/kterm.0
