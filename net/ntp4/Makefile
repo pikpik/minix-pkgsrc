@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2004/05/08 07:37:40 snj Exp $
+# $NetBSD: Makefile,v 1.35 2004/06/10 20:03:11 jschauma Exp $
 #
 
 DISTNAME=	ntp-4.2.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/		\
 		http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/
@@ -10,6 +10,10 @@ MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/		\
 MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www.ntp.org/
 COMMENT=	Network Time Protocol Version 4
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+CONFLICTS+=	openntpd-[0-9]*
 
 GNU_CONFIGURE=	YES
 USE_PERL5=	build
