@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.539 2005/02/09 13:08:40 markd Exp $
+# $NetBSD: Makefile,v 1.540 2005/02/12 17:57:29 kim Exp $
 #
 
 COMMENT=	Networking tools
@@ -306,7 +306,6 @@ SUBDIR+=	py-soappy
 SUBDIR+=	py-spreadmodule
 SUBDIR+=	py-twisted
 SUBDIR+=	py-twisted-docs
-SUBDIR+=	py-xmlrpclib
 SUBDIR+=	py-zsi
 SUBDIR+=	pygopherd
 SUBDIR+=	qadsl
