@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.419 2003/08/31 19:55:23 jdolecek Exp $
+# $NetBSD: Makefile,v 1.420 2003/09/02 07:28:47 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -120,6 +120,7 @@ SUBDIR+=	glade2
 SUBDIR+=	glib
 SUBDIR+=	glib2
 SUBDIR+=	global
+SUBDIR+=	gtranslator
 SUBDIR+=	gmake
 SUBDIR+=	gmp
 SUBDIR+=	gnome-common
