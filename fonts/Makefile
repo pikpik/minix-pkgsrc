@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/04/09 13:18:07 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2002/05/20 12:43:48 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -11,6 +11,7 @@ SUBDIR+=	acroread-jpnfont
 SUBDIR+=	acroread-korfont
 SUBDIR+=	arphicttf
 SUBDIR+=	bakoma-fonts
+SUBDIR+=	dbz-ttf
 SUBDIR+=	freefonts
 SUBDIR+=	ghostscript-fonts
 SUBDIR+=	intlfonts
