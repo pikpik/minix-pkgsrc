@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+#	$NetBSD$
+#
+cd @@PREFIX@@/eagle && bin/eagle $*
