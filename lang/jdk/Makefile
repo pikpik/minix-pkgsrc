@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/03/16 18:51:07 kim Exp $
+# $NetBSD: Makefile,v 1.17 2000/08/18 22:46:37 hubertf Exp $
 #
 .include "../../mk/bsd.prefs.mk"
 
@@ -28,6 +28,7 @@ PLIST_SRC=	${PKGDIR}/PLIST-aout
 .endif
 PLIST_SRC+=	${PKGDIR}/PLIST
 
+CHECK_SHLIBS=	no
 NO_BUILD=	yes
 # since we change PREFIX:
 NO_MTREE=	yes
