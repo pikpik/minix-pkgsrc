@@ -1,9 +1,0 @@
-$NetBSD$
-
---- autoconf/make/link.mk.orig	Tue Dec  3 11:31:11 2002
-+++ autoconf/make/link.mk
-@@ -10,3 +10,3 @@ intlobjs = @INTLOBJS@
- $(package): src/main.o $(intldeps) $(intlobjs) $(objgetopt)
--	$(CC) $(FINALFLAGS) -o $@ src/main.o $(intldeps) $(intlobjs) $(objgetopt)
-+	$(CC) $(LIBS) $(FINALFLAGS) -o $@ src/main.o $(intldeps) $(intlobjs) $(objgetopt)
- 
