@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- tex2any.h.orig	Mon Jul 15 15:54:46 2002
++++ tex2any.h
+@@ -15,6 +15,7 @@
+ #include "wx/list.h"
+ #include "wx/hash.h"
+ #include "wxhlpblk.h"
++#include "stringmatch.h"
+ 
+ /*
+  * Conversion modes
