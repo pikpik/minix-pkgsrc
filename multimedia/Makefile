@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2004/05/10 13:48:31 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2004/05/16 02:08:57 xtraeme Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -21,6 +21,7 @@ SUBDIR+=	gst-player
 SUBDIR+=	gst-plugins
 SUBDIR+=	gst-plugins-dvdnav
 SUBDIR+=	gst-plugins-dvdread
+SUBDIR+=	gst-plugins-mad
 SUBDIR+=	gst-plugins-mpeg2dec
 SUBDIR+=	gst-plugins-ogg
 SUBDIR+=	gst-plugins-theora
