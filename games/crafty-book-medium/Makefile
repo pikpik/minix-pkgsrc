@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 02:08:21 jlam Exp $
 
 DISTNAME=		medium
 PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}-20000511
@@ -8,9 +8,9 @@ EXTRACT_SUFX=		.zip
 
 MAINTAINER=		jlam@netbsd.org
 
-CONFLICTS=		${CHESS_ENGINE}-book-*
-
 DEPENDS+=		crafty>=17.0:../../games/crafty
+
+CONFLICTS=		${CHESS_ENGINE}-book-*
 
 CHESS_ENGINE=		crafty
 DIST_SUBDIR=		chessbooks
