@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2001/03/27 03:20:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/05/19 12:47:05 drochner Exp $
 #
 
 DISTNAME=		${PKGNAME}.src
 PKGNAME=		cdrdao-1.1.5
 WRKSRC=			${WRKDIR}/${PKGNAME}
 CATEGORIES=		sysutils
-MASTER_SITES=		http://prdownloads.sourceforge.net/cdrdao/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdrdao/}
 
 MAINTAINER=		David Maxwell <david@maxwell.net>
 HOMEPAGE=		http://cdrdao.sourceforge.net/
