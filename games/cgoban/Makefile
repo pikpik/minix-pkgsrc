@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 1999/01/31 22:33:50 bad Exp $
+# $NetBSD: Makefile,v 1.3 1999/11/07 11:34:30 hwr Exp $
 
-DISTNAME=	cgoban-1.9.8
+DISTNAME=	cgoban-1.9.10
 CATEGORIES=	games
 MASTER_SITES=	http://www.inetarena.com/~wms/comp/cgoban/
 
