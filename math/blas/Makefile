@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/06 17:55:12 wennmach Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/02 00:23:49 jtb Exp $
 #
 
 DISTNAME=		blas
@@ -14,5 +14,8 @@ MAINTAINER=		jtb@netbsd.org
 WRKSRC=			${WRKDIR}
 NO_WRKSUBDIR=		YES
 USE_FORTRAN=		YES
+
+post-extract:
+	${CP} ${FILESDIR}/Makefile ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
