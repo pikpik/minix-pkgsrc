@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/05/15 10:07:17 dillo Exp $
+# $NetBSD: Makefile,v 1.3 2001/08/07 11:16:55 drochner Exp $
 #
 
 DISTNAME=	expat-1.95.2
@@ -9,10 +9,11 @@ MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://expat.sourceforge.net/
 COMMENT=	XML parser library written in C
 
-GNU_CONFIGURE=	YES
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=		YES
+USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/conftools/ltconfig
-USE_GMAKE=	yes
+USE_GMAKE=		YES
+USE_BUILDLINK_ONLY=	YES
 
 DOCDIR=	${PREFIX}/share/doc/html/expat
 
