@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/03/21 05:39:19 fredb Exp $
+# $NetBSD: Makefile,v 1.14 2002/05/12 10:16:52 abs Exp $
 #
 
 DISTNAME=		rep-gtk-0.15
@@ -12,7 +12,7 @@ COMMENT=		librep bindings for gtk (used by sawmill)
 
 DEPENDS+=		gtk+-1.2.*:../../x11/gtk
 DEPENDS+=		librep>=0.15.1nb1:../../lang/librep
-DEPENDS+=		libglade-0.17nb1:../../devel/libglade
+DEPENDS+=		libglade>=0.17nb1:../../devel/libglade
 DEPENDS+=		gnome-libs>=1.4.1.2nb1:../gnome-libs
 DEPENDS+=		gdk-pixbuf-gnome>=0.11.0nb1:../../graphics/gdk-pixbuf-gnome
 
