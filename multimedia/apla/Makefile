@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/01/26 15:16:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 15:32:47 jmmv Exp $
 #
 
 DISTNAME=	apla-1.0.3
@@ -6,7 +6,7 @@ PKGREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://pd37.warszawa.sdi.tpnet.pl/NetBSD/
 
-MAINTAINER=	zuntum@NetBSD.org,w.wnuk@zodiac.mimuw.edu.pl
+MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Replacement for aviplay player
 
 USE_BUILDLINK2=	YES
