@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mpage
 man/man1/mpage.1.gz
 share/mpage/CP850.PC
