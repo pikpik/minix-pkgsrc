@@ -53,7 +53,7 @@ DEPENDS+=	openldap-1.2.*:../../databases/openldap
 DEPENDS+=	db-2.7.7:../../databases/db
 .endif
 .if defined(USE_STARTTLS) && ${USE_STARTTLS} == YES
-.include "../../security/openssl/buildlink.mk"
+USE_SSL=	yes
 .endif
 
 post-patch:
