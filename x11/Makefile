@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.247 2002/06/01 08:21:39 wiz Exp $
+# $NetBSD: Makefile,v 1.248 2002/06/09 11:18:04 taca Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -99,6 +99,7 @@ SUBDIR+=	tk
 SUBDIR+=	tk-Tix
 SUBDIR+=	tkinfo
 SUBDIR+=	tkman
+SUBDIR+=	ttmkfdir
 SUBDIR+=	type1inst
 SUBDIR+=	unclutter
 SUBDIR+=	wmavgload
