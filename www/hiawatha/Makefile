@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:52 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/07/29 22:23:30 jlam Exp $
 #
 
 DISTNAME=	hiawatha
@@ -53,4 +53,5 @@ do-install:
 	${INSTALL_DATA} ${DISTDIR}/sitedrivenby.gif ${PREFIX}/share/examples/hiawatha/WEBROOT/images
 	${INSTALL_SCRIPT} ${WRKDIR}/hiawatha.sh ${PREFIX}/etc/rc.d/hiawatha
 
+.include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"
