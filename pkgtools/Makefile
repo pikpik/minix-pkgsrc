@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.52 2003/07/13 16:17:48 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2003/08/07 08:20:52 wiz Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
 
-SUBDIR+=	bsdpak
 SUBDIR+=	cdpack
 SUBDIR+=	createbuildlink
 SUBDIR+=	dfdisk
