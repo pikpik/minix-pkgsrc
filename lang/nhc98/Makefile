@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2001/12/26 01:04:54 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/01/03 13:52:48 wiz Exp $
 
-DISTNAME=		nhc98src-1.06
-PKGNAME=		nhc98-1.06
+DISTNAME=		nhc98src-1.14a
+PKGNAME=		nhc98-1.14a
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.york.ac.uk/pub/haskell/nhc98/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		kristerw@netbsd.org
 HOMEPAGE=		http://www.cs.york.ac.uk/fp/nhc98/
 COMMENT=		Portable Haskell 98 compiler
 
