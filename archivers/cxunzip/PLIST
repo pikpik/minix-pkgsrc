@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/cxunzip
+share/gnome/apps/Utilities/cxunzip.desktop
