@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/dnscache-showctl
+bin/tinydns-showctl
+share/doc/djbdns-run/README.pkgsrc
+@dirrm share/doc/djbdns-run
