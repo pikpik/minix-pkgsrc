@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/05/12 20:43:54 sakamoto Exp $
+# $NetBSD: Makefile,v 1.4 2000/05/15 11:45:20 agc Exp $
 #
 
     SUBDIR += Xg
@@ -7,6 +7,7 @@
     SUBDIR += acroread-font-share
     SUBDIR += acroread-jpnfont
     SUBDIR += acroread-korfont
+    SUBDIR += intlfonts
     SUBDIR += watanabe_vfont
 
 .include "../mk/bsd.pkg.subdir.mk"
