@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/11/12 06:39:21 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/04 23:09:07 jlam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfce-mcs-manager-${XFCE4_VERSION}
 PKGNAME=	xfce4-mcs-manager-${XFCE4_VERSION}
-PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	XFce4 settings manager
 
