@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/02/08 17:17:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/02/10 15:18:51 frueauf Exp $
 #
 
 DISTNAME=	nessus-990201
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.nessus.org/
 
-DEPENDS+=	gtk+-1.1.12:../../x11/gtk
+DEPENDS+=	gtk+-1.2.0:../../x11/gtk
 
 GNU_CONFIGURE=	YES
 
