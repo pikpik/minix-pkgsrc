@@ -1,3 +1,4 @@
+$NetBSD$
 --- Makefile.PL.old	Wed Jan  1 15:54:59 2003
 +++ Makefile.PL	Wed Jan  1 15:55:16 2003
 @@ -5,6 +5,7 @@
