@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-# $NetBSD: INSTALL,v 1.1 2001/05/02 08:22:31 jlam Exp $
+# $NetBSD: INSTALL,v 1.1 2001/11/01 00:11:53 zuntum Exp $
 
-PKGNAME=$1
-STAGE=$2
+: ${PKGNAME:=$1}
+: ${STAGE:=$2}
 
 case ${STAGE} in
 PRE-INSTALL)
