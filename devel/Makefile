@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 1999/12/20 11:59:44 rh Exp $
+# $NetBSD: Makefile,v 1.95 1999/12/28 12:10:22 simonb Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -69,6 +69,7 @@
     SUBDIR += libtool
 #    SUBDIR += linux_devel
 #    SUBDIR += linuxgdb
+    SUBDIR += lwp
     SUBDIR += m4
 #    SUBDIR += makedepend
     SUBDIR += maketool
