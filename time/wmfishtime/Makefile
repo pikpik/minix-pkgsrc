@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 22:55:06 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/21 17:28:46 martti Exp $
 #
 
 DISTNAME=	wmfishtime-1.23
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.ne.jp/asahi/linux/timecop/
 COMMENT=	Dockable clock application with clock, date and fish
 
 USE_X11BASE=	# defined
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	yes
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
