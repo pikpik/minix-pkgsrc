@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/28 15:45:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/23 20:58:41 danw Exp $
 
 DISTNAME=	minivmac-0.1.7.src
 PKGNAME=	minivmac-0.1.7
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=minivmac/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kei@NetBSD.org
-HOMEPAGE=	http://www.gryphel.com/c/minivmac/
+HOMEPAGE=	http://minivmac.sourceforge.net/
 COMMENT=	Miniature Macintosh emulator
 
 WRKSRC=		${WRKDIR}/minivmac
