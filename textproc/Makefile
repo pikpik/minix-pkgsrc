@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2001/03/05 23:39:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.75 2001/03/07 15:57:06 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -21,7 +21,9 @@ SUBDIR+=	icu
 SUBDIR+=	isearch
 SUBDIR+=	iso12083
 SUBDIR+=	iso8879
-SUBDIR+=	ispell
+SUBDIR+=	ispell-base
+SUBDIR+=	ispell-british
+SUBDIR+=	ispell-francais
 SUBDIR+=	ispell-gaeilge
 SUBDIR+=	jade
 SUBDIR+=	kdoc
