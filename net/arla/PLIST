@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.13 2003/03/05 13:10:21 wennmach Exp $
+@comment $NetBSD: PLIST,v 1.14 2004/03/08 22:36:32 seb Exp $
 bin/aklog
 bin/amon
 bin/bos
@@ -12,7 +12,6 @@ bin/unlog
 bin/up
 bin/vos
 bin/ydr
-etc/rc.d/arlad
 include/afs/cmd.h
 include/arlalib.h
 include/atypes.h

@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/nvtvd
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/10/05 09:16:16 cube Exp $
 bin/nvtv
 bin/nvtvd
 share/doc/nvtv/FAQ

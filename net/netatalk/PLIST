@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/02/23 19:18:51 fredb Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/04/28 04:07:45 fredb Exp $
 bin/achfile
 bin/acleandir.rc
 bin/add_netatalk_printer
@@ -36,10 +36,6 @@ bin/timeout
 bin/unbin
 bin/unhex
 bin/unsingle
-etc/rc.d/afpd
-etc/rc.d/atalkd
-etc/rc.d/papd
-etc/rc.d/timelord
 include/atalk/adouble.h
 include/atalk/aep.h
 include/atalk/afp.h

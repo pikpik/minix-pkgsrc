@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.4 2002/09/29 10:39:36 jlam Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/07/29 16:27:26 wiz Exp $
 bin/inews
-etc/rc.d/innd
 include/inn/config.h
 include/inn/dbz.h
 include/inn/libinn.h

@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2001/10/07 13:26:38 tron Exp $
-etc/rc.d/pppoe
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:35 zuntum Exp $
 man/man5/pppoe.conf.5
 man/man8/adsl-connect.8
 man/man8/adsl-setup.8

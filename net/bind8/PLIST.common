@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.common,v 1.1 2003/07/31 23:58:48 seb Exp $
 bin/addr
 bin/dig
 bin/dnsquery
@@ -6,7 +6,6 @@ bin/host
 bin/mkservdb
 bin/nslookup
 bin/nsupdate
-etc/rc.d/named
 include/bind/arpa/inet.h
 include/bind/arpa/nameser.h
 include/bind/arpa/nameser_compat.h

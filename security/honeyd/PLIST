@@ -1,7 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/20 09:14:43 xtraeme Exp $
 bin/honeyd
 bin/honeydctl
-etc/rc.d/honeyd
 include/honeyd/debug.h
 include/honeyd/hooks.h
 include/honeyd/plugins.h

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/06/27 12:18:11 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/08/04 06:54:13 jmc Exp $
 bin/faxalter
 bin/faxcover
 bin/faxmail
@@ -6,7 +6,6 @@ bin/faxrm
 bin/faxstat
 bin/sendfax
 bin/sendpage
-etc/rc.d/hylafax
 libdata/hylafax/faxcover.ps
 libdata/hylafax/faxcover_example_sgi.ps
 libdata/hylafax/faxmail.ps

@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/ircd
+@comment $NetBSD: PLIST,v 1.2 2003/03/01 05:22:22 grant Exp $
 man/man8/ircd.8
 sbin/ircd
 sbin/ircd-chkconf

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/03/30 18:07:18 jlam Exp $
 bin/compile_et
 bin/gss-client
 bin/kdestroy
@@ -17,8 +17,6 @@ bin/sclient
 bin/sim_client
 bin/uuclient
 bin/v5passwd
-etc/rc.d/kadmind
-etc/rc.d/kdc
 include/com_err.h
 include/gssapi/gssapi.h
 include/gssapi/gssapi_generic.h

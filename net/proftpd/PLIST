@@ -1,8 +1,7 @@
-@comment $NetBSD: PLIST,v 1.4 2003/03/22 10:15:27 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/12/07 13:53:34 martti Exp $
 bin/ftpcount
 bin/ftpwho
 bin/ftptop
-etc/rc.d/proftpd
 man/man1/ftpcount.1
 man/man1/ftptop.1
 man/man1/ftpwho.1

@@ -1,9 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:52:51 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/12/01 22:32:25 bouyer Exp $
 sbin/apcaccess
 sbin/apcnisd
 sbin/apctest
 sbin/apcupsd
-etc/rc.d/apcupsd
 man/man8/apcupsd.8
 share/doc/apcupsd/README.BackUPS
 share/doc/apcupsd/README.BackUPS-Pro

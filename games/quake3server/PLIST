@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/quake3server
+@comment $NetBSD: PLIST,v 1.2 2004/01/22 09:02:30 xtraeme Exp $
 lib/lokigames/quake3server/baseq3/pak1.pk3
 lib/lokigames/quake3server/baseq3/pak2.pk3
 lib/lokigames/quake3server/baseq3/pak3.pk3

@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/thy
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/01 05:19:03 xtraeme Exp $
 man/man7/thy-auth.7
 man/man8/thy.8
 sbin/thy

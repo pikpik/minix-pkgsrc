@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/ddclient
+@comment $NetBSD: PLIST,v 1.2 2001/12/09 19:55:35 jlam Exp $
 sbin/ddclient
 share/doc/ddclient/COPYING
 share/doc/ddclient/COPYRIGHT

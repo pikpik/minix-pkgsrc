@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.18 2004/01/27 08:09:17 grant Exp $
-etc/rc.d/apache
+@comment $NetBSD: PLIST,v 1.19 2004/03/22 19:50:16 reed Exp $
 include/httpd/ap_compat.h
 include/httpd/ap_config.h
 include/httpd/ap_config_auto.h

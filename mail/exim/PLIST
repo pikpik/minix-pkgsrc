@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2003/09/02 11:23:31 abs Exp $
-etc/rc.d/exim
+@comment $NetBSD: PLIST,v 1.8 2003/09/02 12:19:36 abs Exp $
 man/man8/exim.8
 sbin/${DISTNAME}-1
 sbin/exicyclog

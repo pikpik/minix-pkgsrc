@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:16:44 zuntum Exp $
-etc/rc.d/isakmpd
+@comment $NetBSD: PLIST,v 1.2 2002/04/04 09:46:03 martti Exp $
 sbin/certpatch
 sbin/isakmpd
 man/cat5/isakmpd.conf.0

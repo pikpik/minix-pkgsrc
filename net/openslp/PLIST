@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2001/12/14 22:30:07 jlam Exp $
 bin/slptool
-etc/rc.d/slpd
 include/slp.h
 lib/libslp.a
 lib/libslp.la

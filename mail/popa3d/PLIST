@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2002/11/07 03:48:00 dillo Exp $
-etc/rc.d/popa3d
+@comment $NetBSD: PLIST,v 1.6 2003/12/07 19:18:17 wiz Exp $
 man/man8/popa3d.8
 sbin/popa3d
 share/doc/popa3d/DESIGN

@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/25 14:12:51 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/09/26 10:11:58 xtraeme Exp $
 bin/askmara
 bin/getzone
-etc/rc.d/maradns
 man/man1/askmara.1
 man/man1/getzone.1
 man/man5/csv1.5

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2002/12/09 16:01:53 tron Exp $
+@comment $NetBSD: PLIST,v 1.8 2003/08/29 09:23:25 jmmv Exp $
 bin/wwwoffle
 bin/wwwoffle-hash
 bin/wwwoffle-ls
@@ -7,7 +7,6 @@ bin/wwwoffle-read
 bin/wwwoffle-rm
 bin/wwwoffle-tools
 bin/wwwoffle-write
-etc/rc.d/wwwoffled
 libdata/wwwoffle-spool.tar.gz
 man/man1/wwwoffle.1
 man/man5/wwwoffle.conf.5

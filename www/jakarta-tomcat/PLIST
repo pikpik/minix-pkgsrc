@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2002/12/26 22:59:32 jlam Exp $
-etc/rc.d/tomcat
+@comment $NetBSD: PLIST,v 1.5 2002/12/28 21:35:04 jlam Exp $
 tomcat/KEYS
 tomcat/LICENSE
 tomcat/RELEASE-NOTES

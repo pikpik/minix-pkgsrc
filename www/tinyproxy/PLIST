@@ -1,5 +1,4 @@
-@comment $NetBSD$
-etc/rc.d/tinyproxy
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/07 23:46:01 salo Exp $
 man/man8/tinyproxy.8
 sbin/tinyproxy
 share/doc/tinyproxy/filter-howto.txt
