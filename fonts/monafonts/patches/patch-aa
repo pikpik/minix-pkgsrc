@@ -1,13 +1,13 @@
 $NetBSD$
 
---- Makefile.orig	Sun Feb 17 05:45:54 2002
+--- Makefile.orig	Mon Jun 24 06:00:11 2002
 +++ Makefile
-@@ -16,8 +16,8 @@
- #GZIP_CMD	= compress
+@@ -17,8 +17,8 @@
  #GZIP_SUFFIX	= Z
  
+ DESTDIR		=
 -X11BINDIR	= /usr/X11R6/bin
--X11FONTDIR	= /usr/X11R6/lib/X11/fonts/local
+-X11FONTDIR	= $(DESTDIR)/usr/X11R6/lib/X11/fonts/local
 +X11BINDIR	= $(X11BASE)/bin
 +X11FONTDIR	= $(PREFIX)/lib/X11/fonts/local
  BDFTOPCF	= $(X11BINDIR)/bdftopcf
