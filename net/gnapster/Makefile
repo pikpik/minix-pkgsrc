@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2000/08/10 21:07:34 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2000/10/15 21:53:12 tron Exp $
 #
 
-DISTNAME=	gnapster-1.3.12
+DISTNAME=	gnapster-1.4.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
