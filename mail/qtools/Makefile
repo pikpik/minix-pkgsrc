@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/01/15 13:49:49 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/16 07:19:08 zuntum Exp $
 #
 
 DISTNAME=	qtools-0.56
@@ -9,7 +9,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.superscript.com/qtools/intro.html
 COMMENT=	utilities for filtering via .qmail
 
-DEPENDS+=	ezmlm-*:../../mail/ezmlm
+DEPENDS+=	ezmlm>=0.53:../../mail/ezmlm
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
