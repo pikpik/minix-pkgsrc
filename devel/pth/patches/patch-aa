@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./configure.orig	Sun Jul 11 00:35:36 1999
-+++ ./configure	Tue Jul 13 08:48:48 1999
+--- ./configure.orig	Wed Jul 14 16:05:44 1999
++++ ./configure	Fri Jul 16 10:42:32 1999
 @@ -1049,5 +1049,5 @@
  $libtool_flags --no-verify ltmain.sh $PLATFORM ||\
  { echo "configure: error: libtool configuration failed" 1>&2; exit 1; }
