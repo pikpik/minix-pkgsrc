@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1.1.1 2000/12/12 20:09:42 kei Exp $
+$NetBSD: MESSAGE,v 1.2 2000/12/28 00:13:09 jlam Exp $
 
 To activate the LPRng printing system do the following:
 
@@ -18,4 +18,5 @@ Note that LPRng uses:
 Simple example configuration files are found at:
 
 	${PREFIX}/share/examples/LPRng
+
 ===========================================================================

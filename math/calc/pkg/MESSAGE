@@ -1,4 +1,5 @@
 ============================================================================
+$NetBSD$
 
 To use calc add the following lines to your .emacs.el file.
 
