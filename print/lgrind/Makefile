@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/03/10 17:03:13 jwise Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/06 02:15:00 hubertf Exp $
 
 DISTNAME=	lgrind
 PKGNAME=	lgrind-3.5
@@ -10,6 +10,7 @@ MAINTAINER=	jwise@netbsd.org
 
 DEPENDS=	teTeX-0.4p8:../../print/teTeX
 
+USE_X11=	yes
 MIRROR_DISTFILE=no
 WRKSRC=		${WRKDIR}/lgrind/source
 NO_CONFIGURE=	yes
