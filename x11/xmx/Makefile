@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/21 17:22:40 agc Exp $
 
 DISTNAME=	xmx-2.1alpha.pl7
+PKGNAME=	xmx-2.1a7
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.brown.edu/pub/xmx/
 
