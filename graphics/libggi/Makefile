@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/11/25 20:48:42 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2003/01/02 23:54:55 jmmv Exp $
 #
 
 DISTNAME=	libggi-2.0b2.1
@@ -12,7 +12,6 @@ COMMENT=	General Graphics Interface library is a flexible drawing library
 
 USE_BUILDLINK2=		# defined
 USE_X11=		# defined
-USE_NCURSES=		not sure if this is really needed??
 
 USE_LIBTOOL=		# defined
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
