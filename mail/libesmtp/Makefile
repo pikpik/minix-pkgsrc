@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/28 18:05:52 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2003/09/24 09:12:19 xtraeme Exp $
 
 DISTNAME=	libesmtp-1.0.1
 CATEGORIES=	mail devel
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--enable-all
-CONFIGURE_ARGS+=        --disable-isoc
+CONFIGURE_ARGS+=	--disable-isoc
 
 # XXX Evil hack to deal with the openssl/des.h interface change
 # between 0.96 and 0.97
