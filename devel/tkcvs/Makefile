@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/09/28 13:17:48 agc Exp $
+# $NetBSD: Makefile,v 1.14 2000/03/16 12:31:02 wiz Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/02/24 21:43:24 jseger Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/apps/tkcvs-6.0/ \
 
 MAINTAINER=	shanee@augusta.de
 
-DEPENDS+=	tk-8.0.5:../../x11/tk80
+DEPENDS+=	tk-8.3.2:../../x11/tk
 
 NO_BUILD=	yes
 
