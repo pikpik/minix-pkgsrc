@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2003/07/17 21:40:13 grant Exp $
+# $NetBSD: Makefile,v 1.22 2003/07/21 16:51:37 martti Exp $
 #
 
-DISTNAME=		blender-2.27
+DISTNAME=		blender-2.28
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.cs.umn.edu/pub/blender.org/source/ \
 			http://download.blender.org/source/
@@ -65,6 +65,7 @@ CONFIGURE_ARGS+=	--enable-exppython
 CONFIGURE_ARGS+=	--disable-exppython
 .endif
 
+.include "../../devel/SDL/buildlink2.mk"
 .include "../../devel/libtool/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/Mesa/buildlink2.mk"
