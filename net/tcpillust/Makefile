@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/07/31 20:24:15 itojun Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/31 15:12:08 jwise Exp $
 # $FreeBSD: ports/net/tcpillust/Makefile,v 1.1.1.1 2000/07/29 06:26:00 sada Exp $
 #
 
@@ -23,15 +23,13 @@ DOCS=	README
 SAMPLES= tcpclient.log tcpserver.log
 
 post-install:
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/tcpillust
-	for i in $(DOCS); do \
+	for i in ${DOCS}; do \
 		${INSTALL_DATA} ${WRKSRC}/$$i ${PREFIX}/share/doc/tcpillust; \
 	done
 	${MKDIR} ${PREFIX}/share/doc/tcpillust/sample
-	for i in $(SAMPLES); do \
+	for i in ${SAMPLES}; do \
 		${INSTALL_DATA} ${WRKSRC}/sample/$$i ${PREFIX}/share/doc/tcpillust/sample; \
 	done
-.endif
 
 .include "../../mk/bsd.pkg.mk"
