@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.621 2005/03/21 21:39:43 tv Exp $
+# $NetBSD: Makefile,v 1.622 2005/03/21 22:35:08 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -564,6 +564,7 @@ SUBDIR+=	sgi-stl-docs
 SUBDIR+=	silc-toolkit
 SUBDIR+=	slib
 SUBDIR+=	sml-mode
+SUBDIR+=	sparsehash
 SUBDIR+=	spiff
 SUBDIR+=	splint
 SUBDIR+=	st
