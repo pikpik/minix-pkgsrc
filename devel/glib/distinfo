@@ -1,0 +1,8 @@
+$NetBSD: md5,v 1.15 2001/03/10 14:55:37 tron Exp $
+
+MD5 (glib-1.2.9.tar.gz) = 1c6ae6a0e68fbbc2d91a0c8a495238cd
+SHA1 (patch-aa) = e9c6046c3766d74919bb03f12cd8e9e32cd4f2f9
+SHA1 (patch-ab) = 56e5035d8c144733752e38e0c1e790dfe44f87b7
+SHA1 (patch-ac) = ab176e926d9fee6d463096ad3853e06718129acc
+SHA1 (patch-ad) = e6f798caeebfa2e532d9835d2a24f52865eeb372
+SHA1 (patch-ae) = 222a1f4c470fd1123deb3b4dd918b036b3607e59
