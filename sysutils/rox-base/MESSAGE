@@ -1,0 +1,8 @@
+$NetBSD$
+
+You need to set CHOICESPATH variable to let other applications such
+as ROX-Filer can find these resources, e.g.:
+
+	setenv CHOICESPATH ${PREFIX}/share/Choices
+
+or cp -R ${PREFIX}/share/Choices to your $HOME directory.
