@@ -1,5 +1,5 @@
 #!/bin/sh
-# $NetBSD: snmpd.sh,v 1.1 2001/08/30 23:31:30 wrstuden Exp $
+# $NetBSD: snmpd.sh,v 1.4 2002/02/13 16:41:41 tron Exp $
 
 # PID file:
 PF=/var/run/snmpd.pid
@@ -14,7 +14,7 @@ case $1 in
 start)
 	if [ -x @PREFIX@/sbin/snmpd ]
 	then
-	    echo -n ' snmpd'
+	    echo 'Starting snmpd.'
 	    @PREFIX@/sbin/snmpd -s -P ${PF} -A ${SNMPD_CFG}
 	fi
 	;;

@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: snmptrapd.sh,v 1.1 2001/08/30 23:31:30 wrstuden Exp $
+# $NetBSD: snmptrapd.sh,v 1.2 2002/02/13 16:41:41 tron Exp $
 
 # PID file:
 PF=/var/run/snmptrapd.pid
@@ -10,7 +10,7 @@ case $1 in
 start)
 	if [ -x @PREFIX@/sbin/snmptrapd ]
 	then
-		echo -n ' snmptrapd'
+		echo 'Starting snmptrapd.'
 		@PREFIX@/sbin/snmptrapd -s -l 1 -u ${PF}
 	fi
 	;;
