@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 1998/08/22 13:50:50 garbled Exp $
+# $NetBSD: Makefile,v 1.36 1998/08/22 20:16:19 tron Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -85,7 +85,6 @@
 #    SUBDIR += p5-TimeDate
 #    SUBDIR += p5-TraceFuncs
 #    SUBDIR += pccts
-    SUBDIR += pkglint
     SUBDIR += prcs
     SUBDIR += py-curses
     SUBDIR += rdp
