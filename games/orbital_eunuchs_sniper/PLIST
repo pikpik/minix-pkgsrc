@@ -1,5 +1,4 @@
-@comment $NetBSD$
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/23 16:07:15 wiz Exp $
 bin/snipe2d
 libexec/orbital_eunuchs_sniper/aimap.png
 libexec/orbital_eunuchs_sniper/audiooff.png
