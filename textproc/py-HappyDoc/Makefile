@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/09/18 02:43:49 jmc Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:26:50 agc Exp $
 
 DISTNAME=	HappyDoc_r2_1
 PKGNAME=	${PYPKGPREFIX}-HappyDoc-2.1
@@ -12,7 +12,7 @@ COMMENT=	Python tool to generate Python API documents
 WRKSRC=		${WRKDIR}/HappyDoc-r2_1
 PYDISTUTILSPKG=	# defined
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 post-extract:
 	${MV} ${WRKSRC}/happydoc ${WRKSRC}/happydoc${PYVERSSUFFIX}
