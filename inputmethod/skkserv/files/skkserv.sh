@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-#	$NetBSD$
+#	$NetBSD: skkserv.sh,v 1.1 2002/05/31 12:59:58 seb Exp $
 #
 # PROVIDE: skkserv
 # REQUIRE: DAEMON
