@@ -1,7 +1,7 @@
-$NetBSD: patch-ah,v 1.1.1.1 2000/08/28 17:33:50 rh Exp $
+$NetBSD$
 
---- Plugin/plugin.c.orig	Mon Jun 12 08:24:09 2000
-+++ Plugin/plugin.c	Mon Dec  3 04:43:37 2001
+--- Plugin/plugin.c.orig	Mon Jun 12 09:24:09 2000
++++ Plugin/plugin.c
 @@ -162,7 +162,11 @@
  
  		FlashSetCursorOnOffMethod(This->fh, cursorOnOff, (void*)instance);
