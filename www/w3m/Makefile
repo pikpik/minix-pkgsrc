@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/09/28 07:20:08 sakamoto Exp $
+# $NetBSD: Makefile,v 1.4 2000/03/02 15:46:44 itojun Exp $
 
 DISTNAME=	w3m-0.1.6
 CATEGORIES=	www
@@ -21,6 +21,8 @@ HELPERDIR=	lib/w3m
 
 HAS_CONFIGURE=	yes
 
+# configure will check IPv6 readiness automatically
+BUILD_DEFS+=	USE_INET6
 .include "../../mk/bsd.prefs.mk"
 
 # Set this to NO for ISO-8859-1 support (exclusive to Japanese).
