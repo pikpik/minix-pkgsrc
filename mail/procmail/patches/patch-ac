@@ -1,23 +1,15 @@
 $NetBSD$
 
-*** initmake~	Tue Feb 16 16:13:32 1999
---- initmake	Mon Apr  5 23:10:00 1999
-***************
-*** 382,389 ****
-  test -z "$MAKE" && echo "MAKE	= make"			>>_Makefile
-  test a"$cc" != a"$CC" && echo "CC	= $cc"		>>_Makefile
-  
-! echo "CFLAGS	= \$(CFLAGS1)$CFLAGS"			>>_Makefile
-! echo "LDFLAGS	= \$(LDFLAGS1)$LDFLAGS"			>>_Makefile
-  echo							>>_Makefile
-  
-  MANSS=""
---- 382,389 ----
-  test -z "$MAKE" && echo "MAKE	= make"			>>_Makefile
-  test a"$cc" != a"$CC" && echo "CC	= $cc"		>>_Makefile
-  
-! echo "CFLAGS	+= \$(CFLAGS1)$CFLAGS"			>>_Makefile
-! echo "LDFLAGS	+= \$(LDFLAGS1)$LDFLAGS"		>>_Makefile
-  echo							>>_Makefile
-  
-  MANSS=""
+--- initmake.orig	Sat Jan 29 07:52:13 2000
++++ initmake
+@@ -433,8 +433,8 @@
+ test -z "$MAKE" && echo "MAKE	= make"			>>_Makefile
+ test a"$cc" != a"$CC" && echo "CC	= $cc"		>>_Makefile
+ 
+-echo "CFLAGS	= \$(CFLAGS1)$CFLAGS"			>>_Makefile
+-echo "LDFLAGS	= $LDFLAGS"				>>_Makefile
++echo "CFLAGS	+= \$(CFLAGS1)$CFLAGS"			>>_Makefile
++echo "LDFLAGS	+= $LDFLAGS"				>>_Makefile
+ echo							>>_Makefile
+ 
+ MANSS=""
