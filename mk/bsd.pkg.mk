@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1526 2004/10/27 10:41:43 grant Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1527 2004/10/27 13:47:41 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -80,7 +80,7 @@ MAKE_ENV+=	OBJECT_FMT="${OBJECT_FMT}"
 .endif
 
 # Allow variables to be set on a per-OS basis
-OPSYSVARS+=	CFLAGS CPPFLAGS LDFLAGS LIBS
+OPSYSVARS+=	CFLAGS CXXFLAGS CPPFLAGS LDFLAGS LIBS
 .for _var_ in ${OPSYSVARS:O}
 .  if defined(${_var_}.${OPSYS})
 ${_var_}+=	${${_var_}.${OPSYS}}
@@ -474,6 +474,9 @@ MAKE_ENV+=		CXX="${CXX}"
 .endif
 .if defined(CPP) && !defined(NO_EXPORT_CPP)
 MAKE_ENV+=		CPP="${CPP}"
+.endif
+.if defined(CXXFLAGS)
+MAKE_ENV+=		CXXFLAGS="${CXXFLAGS}"
 .endif
 
 # export the flags needed to compile and link pthreaded code
