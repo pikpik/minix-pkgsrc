@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/17 03:54:46 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/19 06:35:51 salo Exp $
 #
 
 DISTNAME=	aspell-ro-0.50-2
 PKGNAME=	${DISTNAME:C/ro-(.*)-(.*)$/romanian-\1.\2/}
 CATEGORIES=	textproc
-MASTER_SITES=	${MASTER_SITE_GNU:=aspell/}
+MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/ro/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
