@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 
 .if !defined(QT3_LIBS_BUILDLINK2_MK)
 QT3_LIBS_BUILDLINK2_MK=	# defined
