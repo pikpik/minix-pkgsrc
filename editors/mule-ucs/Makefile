@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 16:44:37 martti Exp $
+# $NetBSD: Makefile,v 1.9 2003/08/29 16:20:56 taca Exp $
 
 DISTNAME=	Mule-UCS-0.84
 PKGREVISION=	4
@@ -10,7 +10,7 @@ MAINTAINER=	uebayasi@NetBSD.org
 COMMENT=	Another encoding conversion mechanism for Emacs
 
 # Mule 4.1 feature required by Mule-UCS was added to 20.7nb1.
-EMACS_VERSIONS_ACCEPTED=	emacs21 emacs20
+EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20
 BUILDLINK_DEPENDS.emacs20=	emacs>=20.7nb1
 
 do-build:

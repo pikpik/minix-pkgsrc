@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/09/12 02:49:44 minoura Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/25 03:16:25 uebayasi Exp $
 
 DISTNAME=	apel-10.6
 CATEGORIES=	devel
@@ -17,7 +17,7 @@ MAKE_FLAGS+=	EMACS=${EMACS_FLAVOR}
 MAKE_FLAGS+=	LISPDIR=${EMACS_LISPPREFIX}
 MAKE_FLAGS+=	VERSION_SPECIFIC_LISPDIR=${EMACS_LISPPREFIX}
 
-EMACS_VERSIONS_ACCEPTED=	emacs21 emacs20 xemacs214 xemacs215
+EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214 xemacs215
 
 .include "../../mk/emacs.mk"
 
