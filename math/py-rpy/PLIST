@@ -1,0 +1,6 @@
+@comment $NetBSD$
+${PYSITELIB}/rpy.py
+${PYSITELIB}/rpy.pyc
+${PYSITELIB}/io.py
+${PYSITELIB}/io.pyc
+${PYSITELIB}/_rpymodule.so
