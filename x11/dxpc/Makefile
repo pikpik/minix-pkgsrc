@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 22:56:22 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/11 07:28:39 snj Exp $
 #
 
 DISTNAME=		dxpc-3.8.1
@@ -14,11 +14,6 @@ USE_X11BASE=		yes
 USE_BUILDLINK3=		yes
 
 .include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "SunOS"
-DEPENDS+=	egcs-1.1.2:../../lang/egcs
-CONFIGURE_ENV+=	CXX=${LOCALBASE}/egcs/bin/g++
-.endif
 
 post-install:
 	@strip ${PREFIX}/bin/dxpc

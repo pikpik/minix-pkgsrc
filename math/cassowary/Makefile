@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/02/14 17:21:44 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2004/05/03 20:49:34 snj Exp $
 #
 
 DISTNAME=		cassowary-0.60
@@ -27,11 +27,6 @@ YACC=			bison -y
 UNLIMIT_RESOURCES=	datasize memorysize
 
 .include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "SunOS"
-DEPENDS+=		egcs-1.1.2:../../lang/egcs
-MAKE_ENV+=		CXX=${LOCALBASE}/egcs/bin/g++
-.endif
 
 post-install:
 	cd ${PREFIX}/lib/cassowary && ${RMDIR} -p bench
