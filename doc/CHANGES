@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.9724 2005/04/02 19:51:01 jdolecek Exp $
+$NetBSD: CHANGES,v 1.9725 2005/04/02 20:59:34 kristerw Exp $
 
 Changes to the packages collection and infrastructure in 2005:
 
@@ -1869,3 +1869,4 @@ Changes to the packages collection and infrastructure in 2005:
 	Added suse_glx-9.1 [jdolecek 2005-04-02]
 	Updated xmame to 0.95 [kristerw 2005-04-02]
 	Updated xmess to 0.95 [kristerw 2005-04-02]
+	Added ruby-syck-0.42 [minskim 2005-04-02]
