@@ -216,13 +216,13 @@ MESSAGE_SUBST+=		PERL5_SITELIB=${PERL5_SITELIB}
 # unfortunately, hardcoded in quite a few places in Perl.  So let's substitute
 # what pkgsrc said instead.
 post-patch:
-.if defined(PKGDIRMODE) && empty(PKGDIRMODE:M755)
-.  for f in installhtml installman installperl lib/ExtUtils/Install.pm
+.if ${PKGDIRMODE} != "755"
+.for f in installhtml installman installperl lib/ExtUtils/Install.pm
 	cd ${WRKSRC} && \
 		${MV} -f $f $f.dirmode && \
 		${SED} -e 's/755/${PKGDIRMODE}/g;/umask(/d' \
 		$f.dirmode >$f
-.  endfor
+.endfor
 .endif
 
 # It's tough to guess which hints file will be used, so add our modifications
