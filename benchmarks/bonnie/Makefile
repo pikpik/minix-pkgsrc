@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/06/20 09:20:38 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/08/20 15:16:41 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/26 23:09:14 jseger Exp
 #
 
@@ -21,5 +21,8 @@ MANCOMPRESSED=	yes
 
 post-extract:
 	${MV} ${WRKSRC}/Bonnie.c ${WRKSRC}/bonnie.c
+
+benchmark:
+	@${WRKSRC}/bonnie
 
 .include "../../mk/bsd.pkg.mk"
