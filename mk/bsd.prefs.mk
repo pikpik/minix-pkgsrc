@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.114 2003/07/09 08:22:22 salo Exp $
+# $NetBSD: bsd.prefs.mk,v 1.115 2003/07/09 11:38:17 abs Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -347,6 +347,14 @@ WRKDIR?=		${BUILD_DIR}/${WRKDIR_BASENAME}
 #
 .if !defined(USE_GCC3) && !defined(USE_MIPSPRO) && !defined(USE_SUNPRO)
 USE_GCC2=		YES
+.endif
+
+# Sun C++ compilers don't support passing ld flags with -Wl to CC.
+#
+.if defined(USE_SUNPRO)
+_COMPILER_LD_FLAG=		# pattern for Sun compilers
+.else
+_COMPILER_LD_FLAG=	-Wl,	# pattern for GCC and others
 .endif
 
 .endif	# BSD_PKG_MK
