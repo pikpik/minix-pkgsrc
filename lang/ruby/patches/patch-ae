@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- ext/extmk.rb.in.orig	Tue Oct 12 18:11:24 1999
++++ ext/extmk.rb.in	Tue Apr 11 14:32:34 2000
+@@ -79,5 +79,5 @@
+   cfile.print src
+   cfile.close
+-  xsystem(format(LINK, $CFLAGS, $LDFLAGS, opt, $LOCAL_LIBS))
++  xsystem(format(LINK, $CFLAGS, $DLDFLAGS, opt, $LOCAL_LIBS))
+ end
+ 
