@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2003/09/03 18:22:52 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.4 2004/01/07 21:45:18 jmmv Exp $
 bin/wx-config
 bin/wxgtk${GTKVER}-2.4-config
 include/wx/accel.h
@@ -369,6 +369,11 @@ lib/libwx_gtk${GTKVER}.la
 lib/libwx_gtk${GTKVER}.so
 lib/libwx_gtk${GTKVER}.so.0
 lib/libwx_gtk${GTKVER}.so.0.1
+lib/libwx_gtk${GTKVER}_gl-2.4.a
+lib/libwx_gtk${GTKVER}_gl-2.4.la
+lib/libwx_gtk${GTKVER}_gl-2.4.so
+lib/libwx_gtk${GTKVER}_gl-2.4.so.0
+lib/libwx_gtk${GTKVER}_gl-2.4.so.0.1
 lib/wx/include/gtk${GTKVER}-2.4/wx/setup.h
 share/aclocal/wxwin.m4
 share/doc/wx/gtk/LICENSE
