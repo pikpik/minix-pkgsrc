@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/10/05 09:24:04 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2003/12/08 14:41:38 wiz Exp $
 #
 
 DISTNAME=	easytag-0.30
@@ -15,7 +15,7 @@ DEPENDS+=	gnome1-dirs>=1.0:../../misc/gnome1-dirs
 BUILD_USES_MSGFMT=	yes	# xgettext, really
 
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_X11=		yes
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes

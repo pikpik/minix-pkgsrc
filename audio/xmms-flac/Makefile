@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/24 09:53:48 jmmv Exp $
 #
 
 DISTNAME=	flac-1.1.0
@@ -12,7 +12,7 @@ HOMEPAGE=	http://flac.sourceforge.net/
 COMMENT=	FLAC XMMS plugin
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 
 USE_LIBTOOL=		yes

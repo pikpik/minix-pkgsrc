@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/10/20 12:07:23 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/11/03 22:43:37 kim Exp $
 #
 
 DISTNAME=	cdparanoia-III-alpha9.8
@@ -13,7 +13,7 @@ COMMENT=	CDDA reading utility with extra data verification features
 
 ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-*-* Linux-*-*
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/09/28 09:13:55 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:07:41 agc Exp $
 #
 
 DISTNAME=	cmp3-2.0pre5
@@ -15,7 +15,7 @@ DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 
 WRKSRC=		${WRKDIR}/cmp3
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_NCURSES=		# MAX_FORM_COMMAND
 
 do-install:
