@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2002/11/17 09:02:01 salo Exp $
+# $NetBSD: Makefile,v 1.41 2003/01/28 22:04:13 jlam Exp $
 #
 
 DISTNAME=	tcsh-6.12.00
@@ -11,6 +11,8 @@ MASTER_SITES=	ftp://ftp.astron.com/pub/tcsh/ \
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.tcsh.org/
 COMMENT=	Extended C-shell with many useful features
+
+CONFLICTS=	static-tcsh-[0-9]*
 
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes

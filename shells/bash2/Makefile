@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2002/12/22 19:04:08 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2003/01/28 22:04:10 jlam Exp $
 #
 
 DISTNAME=	bash-2.05b
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_GNU:=bash/} \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/bash/bash.html
 COMMENT=	The GNU Bourne Again Shell
+
+CONFLICTS=	static-bash-[0-9]*
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
