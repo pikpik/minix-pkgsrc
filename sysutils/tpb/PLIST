@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/tpb
+share/doc/tpb/callback_example.sh
+share/doc/tpb/nvram.txt
+share/doc/tpb/tpbrc
+@dirrm share/doc/tpb
