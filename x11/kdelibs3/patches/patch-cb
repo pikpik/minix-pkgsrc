@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- khtml/java/kjava.policy.in.orig	Wed Nov 15 19:57:40 2000
++++ khtml/java/kjava.policy.in
+@@ -1,4 +1,4 @@
+-grant codeBase "file:@prefix@/share/apps/kjava/-"
++grant codeBase "file:@kde_datadir@/kjava/-"
+ {
+     permission java.security.AllPermission;
+-};
+\ No newline at end of file
++};
