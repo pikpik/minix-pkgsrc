@@ -1,6 +1,6 @@
-#!@PREFIX@/bin/perl
+#!@PERL@
 
-# $NetBSD: lintpkgsrc.pl,v 1.85 2003/10/06 08:50:40 grant Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.86 2003/10/11 08:03:40 wiz Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
