@@ -1,4 +1,4 @@
-/*	$NetBSD: nbcompat.h,v 1.25 2003/09/23 02:03:36 jschauma Exp $	*/
+/*	$NetBSD: nbcompat.h,v 1.1.1.5 2003/10/18 09:27:40 grant Exp $	*/
 
 /*-
  * Copyright (c) 2003 The NetBSD Foundation, Inc.
@@ -381,7 +381,9 @@ extern int	optind;
 #endif
 
 #if !HAVE_H_ERRNO_D
+#ifndef _AIX
 extern int	h_errno;
+#endif
 #endif
 #define HAVE_H_ERRNO	1		/* XXX: an assumption for now... */
 
