@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 1999/06/04 14:07:46 tron Exp $
+# $NetBSD: Makefile,v 1.24 1999/07/06 08:02:23 jlam Exp $
 
 DISTNAME=	mutt-${MUTT_VERSION}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/ \
 		ftp://ftp.gbnet.net/pub/mutt-international/ \
-		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/mutt-international/ \
+		ftp://ftp.fu-berlin.de/pub/unix/mail/mutt/ \
 		ftp://ftp.gwdg.de/pub/unix/mail/mutt/international/ \
 		ftp://ftp.uib.no/pub/mutt/
 
