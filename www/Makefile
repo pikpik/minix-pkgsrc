@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2000/10/15 02:54:35 jlam Exp $
+# $NetBSD: Makefile,v 1.102 2000/10/16 07:10:46 rh Exp $
 # FreeBSD Id: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp
 #
 
@@ -28,6 +28,7 @@
     SUBDIR += calamaris
     SUBDIR += cgilib
     SUBDIR += checkbot
+    SUBDIR += chimera
     SUBDIR += cocoon
     SUBDIR += communicator
     SUBDIR += galway
