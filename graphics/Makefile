@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.344 2004/11/07 15:11:30 minskim Exp $
+# $NetBSD: Makefile,v 1.345 2004/11/11 06:17:54 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -210,6 +210,7 @@ SUBDIR+=	plplot
 SUBDIR+=	png
 SUBDIR+=	png2html
 SUBDIR+=	pngcrush
+SUBDIR+=	potrace
 SUBDIR+=	povray
 SUBDIR+=	ppmtoxvpic
 SUBDIR+=	prag
