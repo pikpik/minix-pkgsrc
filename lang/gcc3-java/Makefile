@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/16 20:24:00 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/23 09:50:51 drochner Exp $
 #
 
 PKGNAME=		gcc3${GCC3_PKGMODIF}-java-3.3
-COMMENT=		GNU Compiler Collection, Java compiler
+COMMENT=		GNU Compiler Collection, version 3, Java compiler
 
 INFO_FILES=		gcj.info
 
