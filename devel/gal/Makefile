@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/17 17:12:24 rh Exp $
 #
 
-DISTNAME=	gal-0.1
+DISTNAME=	gal-0.2
 CATEGORIES=	gnome devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=unstable/sources/gal/}
 
