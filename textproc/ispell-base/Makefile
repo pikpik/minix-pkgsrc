@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/01/20 12:26:49 agc Exp $
+# $NetBSD: Makefile,v 1.19 2004/05/04 23:46:36 snj Exp $
 #
 
 DISTNAME=	ispell-3.1.20
@@ -11,7 +11,7 @@ PATCH_SITES=	ftp://kdstevens.com/pub/stevens/
 PATCHFILES=	ispell-patch1.gz
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://www.gnu.org/software/ispell/ispell.html
+HOMEPAGE=	http://ficus-www.cs.ucla.edu/geoff/ispell.html
 COMMENT=	Interactive spelling checker
 
 CONFLICTS+=	ispell-[0-9]*
