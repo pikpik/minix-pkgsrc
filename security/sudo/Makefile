@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2002/01/28 15:38:37 taca Exp $
+# $NetBSD: Makefile,v 1.46 2002/04/25 16:57:13 jschauma Exp $
 #
 
 DISTNAME=		sudo-1.6.6
@@ -29,7 +29,7 @@ CONFIGURE_ARGS+=	--without-skey
 .endif
 
 .if defined(KERBEROS)
-USE_KERBEROS=		# defined
+PKG_USE_KERBEROS=	# defined
 CONFIGURE_ARGS+=	--with-kerb4 --with-kerb5
 .else
 CONFIGURE_ARGS+=	--without-kerb4 --without-kerb5

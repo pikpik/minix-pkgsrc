@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.989 2002/06/10 13:28:23 schmonz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.990 2002/06/15 11:28:12 cjep Exp $
 #
 # This file is in the public domain.
 #
@@ -184,7 +184,7 @@ MAKE_PROGRAM=		${MAKE}
 .endif
 CONFIGURE_ENV+=		MAKE="${MAKE_PROGRAM}"
 
-.if defined(USE_KERBEROS)
+.if defined(PKG_USE_KERBEROS)
 RESTRICTED?=		uses Kerberos encryption code
 BUILD_DEFS+=		KERBEROS
 .endif
