@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/06/26 16:30:56 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/06/29 04:54:51 jlam Exp $
 #
 
 DISTNAME=	SDL-1.2.0
@@ -46,7 +46,7 @@ pre-patch:
 	cd ${WRKSRC} && ${MKDIR} src/audio/netbsd
 
 pre-configure:
-	cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf --force
+	cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf --force --foreign
 
 post-configure:
 	cd ${WRKSRC}/src/audio && ${CP} *.[ch] netbsd/
