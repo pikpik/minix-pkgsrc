@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/Makefile.in.orig	Mon Nov 18 20:18:53 2002
++++ src/Makefile.in
+@@ -20,7 +20,7 @@ CC = @CXX@
+ BIN_MODE = 755
+ DEFINES = -DPREFIX=\"$(prefix)\" -DDATADIR=\"$(DATADIR)\"
+ CXXFLAGS = @CXXFLAGS@ $(DEFINES)
+-LDFLAGS = @LIBS@
++LDFLAGS = @LIBS@ @LDFLAGS@
+ 
+ 
+ # Source Files
