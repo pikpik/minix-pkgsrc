@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/06/15 21:08:54 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2000/08/27 02:46:04 jlam Exp $
 #
 
 DISTNAME=	vfu-3.01
@@ -25,7 +25,7 @@ do-install:
 	cd ${WRKSRC} ; \
 	${INSTALL_PROGRAM} vfu/vfu ftparc/ftparc ${PREFIX}/bin
 	for i in rx_auto rx_deb rx_ftp rx_tar rx_zip ; do \
-		echo $$i ; \
+		${ECHO} $$i ; \
 		${SED} 's,/usr/bin/perl,${PERL5},' \
 			<${WRKSRC}/rx/$$i >${WRKSRC}/rx/$$i.new ; \
 		${INSTALL_SCRIPT} ${WRKSRC}/rx/$$i.new ${PREFIX}/bin/$$i ; \
