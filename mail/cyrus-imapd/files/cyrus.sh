@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: cyrus.sh,v 1.1 2002/07/31 15:48:32 jlam Exp $
 #
 # PROVIDE: cyrus
 # REQUIRE: DAEMON

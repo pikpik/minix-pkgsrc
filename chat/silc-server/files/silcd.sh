@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: silcd.sh,v 1.4 2002/05/03 22:02:49 hubertf Exp $
+# $NetBSD: silcd.sh,v 1.5 2002/05/24 22:15:36 hubertf Exp $
 #
 # PROVIDE: silcd
 # REQUIRE: DAEMON

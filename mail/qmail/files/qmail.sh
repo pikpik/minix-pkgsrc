@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: qmail.sh,v 1.1 2002/07/28 01:54:37 schmonz Exp $
 #
 
 # PROVIDE: mail

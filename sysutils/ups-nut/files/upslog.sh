@@ -1,6 +1,6 @@
-#! /bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: upslog.sh,v 1.3 2002/01/08 18:33:17 jlam Exp $
+# $NetBSD: upslog.sh,v 1.4 2002/02/05 06:04:41 jlam Exp $
 #
 # PROVIDE: upslog
 # REQUIRE: upsd

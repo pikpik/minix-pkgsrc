@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: rplayd.sh,v 1.4 2001/11/26 07:30:44 jlam Exp $
+# $NetBSD: rplayd.sh,v 1.5 2002/02/05 06:04:36 jlam Exp $
 #
 # PROVIDE: rplayd
 # REQUIRE: DAEMON

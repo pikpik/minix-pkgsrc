@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: thttpd.sh,v 1.7 2001/11/26 07:34:08 jlam Exp $
+# $NetBSD: thttpd.sh,v 1.8 2002/02/05 06:04:43 jlam Exp $
 #
 # PROVIDE: thttpd
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@ fi
 
 name="thttpd"
 rcvar=$name
-command=@PREFIX@/sbin/${name}
+command="@PREFIX@/sbin/${name}"
 command_args="-C @PKG_SYSCONFDIR@/${name}.conf"
 required_files="@PKG_SYSCONFDIR@/${name}.conf"
 

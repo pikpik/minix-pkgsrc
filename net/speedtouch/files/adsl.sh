@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: adsl.sh,v 1.2 2002/07/18 00:10:07 abs Exp $
+# $NetBSD: adsl.sh,v 1.3 2002/08/21 14:11:43 abs Exp $
 #
 # PROVIDE: adsl
 # REQUIRE: ipnat

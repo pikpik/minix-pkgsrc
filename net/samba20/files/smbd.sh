@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: smbd.sh,v 1.5 2001/11/21 21:38:54 jlam Exp $
+# $NetBSD: smbd.sh,v 1.6 2002/02/05 06:04:40 jlam Exp $
 #
 # PROVIDE: smbd
 # REQUIRE: DAEMON

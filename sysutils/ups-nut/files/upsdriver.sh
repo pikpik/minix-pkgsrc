@@ -1,6 +1,6 @@
-#! /bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: upsdriver.sh,v 1.4 2002/01/08 18:33:36 jlam Exp $
+# $NetBSD: upsdriver.sh,v 1.5 2002/02/05 06:04:41 jlam Exp $
 #
 # PROVIDE: upsdriver
 # REQUIRE: NETWORK syslogd mountcritremote

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: sshd.sh,v 1.8 2002/04/02 10:14:42 seb Exp $
+# $NetBSD: sshd.sh,v 1.9 2002/08/19 17:30:05 wiz Exp $
 #
 # PROVIDE: sshd
 # REQUIRE: DAEMON LOGIN

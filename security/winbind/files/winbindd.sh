@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: winbindd.sh,v 1.1.1.1 2002/07/29 04:19:00 jlam Exp $
 #
 # PROVIDE: winbindd
 # REQUIRE: nmbd

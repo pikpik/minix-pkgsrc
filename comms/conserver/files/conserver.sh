@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: conserver.sh,v 1.1.1.1 2002/05/09 16:35:25 hubertf Exp $
+# $NetBSD: conserver.sh,v 1.2 2002/06/09 20:37:54 jlam Exp $
 #
 # PROVIDE: conserver
 # REQUIRE: DAEMON

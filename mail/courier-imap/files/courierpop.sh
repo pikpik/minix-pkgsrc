@@ -1,6 +1,6 @@
-#! /bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: courierpop.sh,v 1.4 2002/01/22 22:08:53 jlam Exp $
+# $NetBSD: courierpop.sh,v 1.5 2002/02/05 06:04:38 jlam Exp $
 #
 # Courier POP services daemon
 #
