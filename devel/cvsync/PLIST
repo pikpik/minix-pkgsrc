@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/cvscan
+bin/cvsync
+bin/cvsyncd
+bin/rcscan
+bin/rcscmp
