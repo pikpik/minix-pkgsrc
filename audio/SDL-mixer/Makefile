@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/24 15:00:25 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/27 18:39:43 jlam Exp $
 #
 
 DISTNAME=		SDL_mixer-1.2.0
@@ -21,6 +21,7 @@ BUILDLINK_DEPENDS.SDL=	SDL>=1.2.2
 CPPFLAGS+=		-Dunix=1
 
 .include "../../audio/libogg/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/smpeg/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
