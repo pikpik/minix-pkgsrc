@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Tue Jul  2 10:20:03 2002
+--- Makefile.orig	Fri Apr 11 10:06:01 2003
 +++ Makefile
-@@ -3,7 +3,7 @@ MINOR=3.2
+@@ -3,7 +3,7 @@ MINOR=0rc1
  CC?=gcc
  CFLAGS?=-g -O2 -Wall 
  CFLAGS+=-I. -DVERSION=\"$(MAJOR).$(MINOR)\"
