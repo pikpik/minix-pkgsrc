@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/04/05 15:22:31 yyamano Exp $
+# $NetBSD: Makefile,v 1.12 2002/05/03 10:39:00 zuntum Exp $
 #
 
 DISTNAME=	qmail-1.03
@@ -37,7 +37,7 @@ pre-build:
 	${ECHO} ${QMAILDIR} > ${WRKSRC}/conf-qmail
 
 post-install:
-	${MKDIR} ${QMAILDIR}/alias
+	${INSTALL_DATA_DIR} ${QMAILDIR}/alias
 	cd ${QMAILDIR}/alias && 				\
 		${TOUCH} .qmail-postmaster .qmail-mailer-daemon .qmail-root
 
