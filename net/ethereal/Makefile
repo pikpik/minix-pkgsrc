@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2000/12/08 10:56:03 tron Exp $
+# $NetBSD: Makefile,v 1.40 2001/01/12 12:13:10 itojun Exp $
 #
 
 ETHEREAL_VERSION=	0.8.15
@@ -11,7 +11,7 @@ MAINTAINER=		frueauf@netbsd.org
 HOMEPAGE=		http://www.ethereal.com/
 
 DEPENDS+=		gtk+-1.2.*:../../x11/gtk
-#DEPENDS+=		ucd-snmp>=4.1.2:../../net/ucd-snmp
+DEPENDS+=		ucd-snmp>=4.1.2:../../net/ucd-snmp
 BUILD_DEPENDS+=		${PERL5}:../../lang/perl5-base
 
 USE_X11=		YES
