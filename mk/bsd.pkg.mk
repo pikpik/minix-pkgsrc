@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.246 1999/04/06 09:39:30 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.247 1999/04/06 14:11:10 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -100,7 +100,7 @@ LOCALBASE?=		${DESTDIR}/usr/local
 X11BASE?=		${DESTDIR}/usr/X11R6
 CROSSBASE?=		${LOCALBASE}/cross
 
-PKGSRCDIR=		${.CURDIR}/../..
+PKGSRCDIR=		${.CURDIR:C|/[^/]*/[^/]*$||}
 DISTDIR?=		${PKGSRCDIR}/distfiles
 _DISTDIR?=		${DISTDIR}/${DIST_SUBDIR}
 PACKAGES?=		${PKGSRCDIR}/packages
