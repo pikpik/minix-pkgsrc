@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- tela.C.orig	Mon Feb 12 08:08:40 2001
++++ tela.C
+@@ -14,7 +14,9 @@
+ #include "d.l.h"
+ #include "version.H"
+ #include <signal.h>
++#ifndef __NetBSD__
+ #include <values.h>
++#endif
+ //#include <unistd.h>
+ extern "C" {
+ #include "readline/chardefs.h"
