@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/03/24 00:13:37 jmc Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:41:38 jmmv Exp $
 
 DISTNAME=	sendmail.8.11.6
 PKGNAME=	sendmail-8.11.6
-PKGREVISION=	3
+PKGREVISION=	4
 WRKSRC=		${WRKDIR}/${PKGNAME:C/nb[0-9]+$//}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/ \
@@ -128,7 +128,8 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/libexec/sendmail
 
 post-install:
-	${INSTALL_DATA} ${WRKDIR}/mailer.conf.sendmail ${PREFIX}/etc
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/sendmail
+	${INSTALL_DATA} ${WRKDIR}/mailer.conf.sendmail ${PREFIX}/share/examples/sendmail/mailer.conf
 	${CP} -pr ${WRKSRC}/cf ${PREFIX}/share/sendmail
 	${CHOWN} -R ${BINOWN}:${BINGRP} ${PREFIX}/share/sendmail
 .if ${USE_DB2} == "YES"
