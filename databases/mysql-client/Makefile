@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.2 1999/05/20 20:09:50 tron Exp $
 #
 
-DISTNAME=	mysql-3.22.22
+DISTNAME=	mysql-3.22.27
 PKGNAME=	${DISTNAME:S/-/-client-/}
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.mysql.com/pub/mysql/Downloads/MySQL-3.22/ \
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+=--without-readline
 
 CFLAGS+=	-Dunix
 
-USE_GMAKE=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
 
