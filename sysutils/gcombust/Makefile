@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2001/01/05 19:59:49 rh Exp $
+# $NetBSD: Makefile,v 1.23 2001/02/17 17:42:13 wiz Exp $
 #
 
-DISTNAME=	gcombust-0.1.39
+DISTNAME=	gcombust-0.1.42
 CATEGORIES=	x11 sysutils
 MASTER_SITES=	${HOMEPAGE}
 
@@ -9,7 +9,6 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.abo.fi/~jmunsin/gcombust/
 COMMENT=	Graphical frontend for CD mastering (mkhybrid, cdrecord, ...)
 
-DEPENDS+=	mkhybrid-*:../mkhybrid
 DEPENDS+=	cdrecord>=1.9:../cdrecord
 DEPENDS+=	cdlabelgen-*:../../graphics/cdlabelgen
 DEPENDS+=	gv-*:../../print/gv
