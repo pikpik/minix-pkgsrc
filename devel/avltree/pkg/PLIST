@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libavltree.a
+lib/libavltree.so.1.0
+include/avltree.h
+man/man3/avltree.3.gz
