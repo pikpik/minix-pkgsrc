@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/xpdf/cyrillic/KOI8-R.unicodeMap
+@dirrm share/xpdf/cyrillic
+@unexec ${RMDIR} %D/share/xpdf 2> /dev/null || true

@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/xpdf/latin2/Latin2.unicodeMap
+@dirrm share/xpdf/latin2
+@unexec ${RMDIR} %D/share/xpdf 2> /dev/null || true

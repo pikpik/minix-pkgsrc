@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/xpdf/thai/TIS-620.unicodeMap
+share/xpdf/thai/Thai.nameToUnicode
+@dirrm share/xpdf/thai
+@unexec ${RMDIR} %D/share/xpdf 2> /dev/null || true
