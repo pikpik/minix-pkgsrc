@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -ur ../faces-DIST/scripts/addxface ./scripts/addxface
 --- ../faces-DIST/scripts/addxface	Tue Nov 19 15:05:58 1991
 +++ ./scripts/addxface	Fri Oct  1 14:32:12 1999

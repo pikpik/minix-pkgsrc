@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -ur ../faces-DIST/y.tab.h ./y.tab.h
 --- ../faces-DIST/y.tab.h	Fri Oct  1 14:36:35 1999
 +++ ./y.tab.h	Fri Oct  1 14:32:03 1999
