@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/10/26 10:03:50 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/26 04:43:33 xtraeme Exp $
 # KAME Id: Makefile,v 1.3 2000/01/21 12:34:29 itojun Exp
 #
 
@@ -28,9 +28,7 @@ BUILD_DEFS+=	USE_INET6
 CFLAGS+=	-DDO_IPV6
 .endif
 
-.if ${OPSYS} == "IRIX"
-CFLAGS+=	-DIRIX
-.endif
+CFLAGS.IRIX+=	-DIRIX
 
 post-install:
 	strip ${PREFIX}/netperf/netperf
