@@ -1,16 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/29 18:15:30 wiz Exp $
 #
 
-DISTNAME=	mkttfdir-1.0
+DISTNAME=	mkttfdir-1.1
 CATEGORIES=	fonts
-MASTER_SITES=	http://members.tripodasia.com.tw/rxg/
+MASTER_SITES=	http://residence.educities.edu.tw/rxghome/
 
 MAINTAINER=	rxg@ms25.url.com.tw
 COMMENT=	create an index of X TrueType fonts files in a directory
 
-pre-build:
-	${SED} -e 's|prefix|${PREFIX}|g' ${WRKSRC}/mkttfdir > ${WRKSRC}/mkttfdir.tmp
-	${MV} -f ${WRKSRC}/mkttfdir.tmp ${WRKSRC}/mkttfdir
+MAKE_FLAGS+=	prefix=${PREFIX} FREETYPE_BASE=${LOCALBASE}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ttfinfo ${PREFIX}/bin
