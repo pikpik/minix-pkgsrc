@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2000/06/19 22:48:44 pooka Exp $
+# $NetBSD: Makefile,v 1.63 2000/07/14 10:38:09 rh Exp $
 #
 
     SUBDIR += ac3dec
@@ -10,6 +10,7 @@
     SUBDIR += cddbd
     SUBDIR += cdparanoia
     SUBDIR += dap
+    SUBDIR += easytag
     SUBDIR += emixer
     SUBDIR += esound
     SUBDIR += festdoc
