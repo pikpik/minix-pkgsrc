@@ -1,4 +1,4 @@
-# $NetBSD: plugins.mk,v 1.1 2004/01/01 21:39:02 cube Exp $
+# $NetBSD: plugins.mk,v 1.2 2004/02/14 17:21:44 jlam Exp $
 #
 
 .include "../../mail/sylpheed-claws/Makefile.common"
@@ -27,3 +27,5 @@ CONFIGURE_ARGS+=	--disable-mathml-viewer-plugin
 
 PLIST_SRC=	${.CURDIR}/../../mail/sylpheed-claws/PLIST.plugins
 PLIST_SUBST+=	PLUGIN_NAME=${PLUGIN_NAME}
+
+MESSAGE_SRC+=	${.CURDIR}/../../mail/sylpheed-claws/MESSAGE.plugins
