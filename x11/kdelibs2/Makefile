@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/12/07 10:59:31 skrll Exp $
+# $NetBSD: Makefile,v 1.26 2001/12/18 20:23:00 jlam Exp $
 
 DISTNAME=	kdelibs-2.2.2
 CATEGORIES=	x11
@@ -41,6 +41,10 @@ PLIST_SRC=	${WRKDIR}/PLIST
 .if defined(USE_CUPS) && (${USE_CUPS} == "YES")
 .include "../../print/cups/buildlink.mk"
 BUILD_DEFS+=		USE_CUPS
+
+PLIST_SUBST+=		CUPS=
+.else
+PLIST_SUBST+=		CUPS="@comment "
 .endif
 
 # We will create the complete icon directory tree for use by other KDE2
