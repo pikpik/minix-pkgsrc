@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/10/05 18:56:33 tron Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/05 19:00:57 adrianp Exp $
 
 DISTNAME=		libpcap-0.8.3
 SVR4_PKGNAME=		lpcap
@@ -10,6 +10,9 @@ HOMEPAGE=		http://www.tcpdump.org/
 COMMENT=		System-independent interface for user-level packet capture
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+# tarball contains invalid dir entry libpcap-0.8.3/.; breaks "first" extract
+EXTRACT_ELEMENTS=	libpcap-0.8.3/./*
 
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
