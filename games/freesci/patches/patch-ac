@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/sound/midiout.c.orig	2003-01-09 23:08:18.000000000 +0100
++++ src/sound/midiout.c
+@@ -22,7 +22,7 @@
+ midiout_driver_t *midiout_driver = NULL;
+ 
+ midiout_driver_t *midiout_drivers[] = {
+-#ifdef HAVE_SYS_SOUNDCARD_H
++#if defined(HAVE_SYS_SOUNDCARD_H) && !defined(__NetBSD__)
+ 	&midiout_driver_ossseq,
+ 	&midiout_driver_ossopl3,
+ #endif /* HAVE_SYS_SOUNDCARD_H */
