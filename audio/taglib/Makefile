@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2004/08/21 11:30:28 markd Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:09 tv Exp $
 #
 
-DISTNAME=	taglib-1.2
-PKGREVISION=	1
+DISTNAME=	taglib-1.3
 CATEGORIES=	audio
 MASTER_SITES=	http://ktown.kde.org/~wheeler/files/src/
 
