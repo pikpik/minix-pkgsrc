@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/05/22 12:58:57 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/10 16:06:52 wiz Exp $
 #
 
 DISTNAME=	acidlaunch-0.5
@@ -11,9 +11,10 @@ HOMEPAGE=	http://linuxgamers.net/infoPage.php?page=acidlaunch
 COMMENT=	small, light-weight app launcher
 
 GNU_CONFIGURE=	YES
+USE_BUILDLINK2=	YES
 CONFIGURE_ARGS+=	--disable-xmltest
 CONFIGURE_ARGS+=	--disable-gdk_pixbuftest
 
-.include "../../graphics/gdk-pixbuf/buildlink.mk"
-.include "../../textproc/libxml2/buildlink.mk"
+.include "../../graphics/gdk-pixbuf/buildlink2.mk"
+.include "../../textproc/libxml2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
