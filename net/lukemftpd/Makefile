@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/09 10:14:31 lukem Exp $
 #
 
 DISTNAME=		lukemftpd-1.0
@@ -7,6 +7,9 @@ MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/misc/lukemftp/
 
 MAINTAINER=		lukem@netbsd.org
 COMMENT=		the enhanced ftp server in NetBSD
+
+CONFLICTS=		wu-ftpd-*
+CONFLICTS+=		kth-krb4-*
 
 GNU_CONFIGURE=		yes
 MANCOMPRESSED_IF_MANZ=	yes
