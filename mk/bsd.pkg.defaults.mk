@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.67 2002/06/23 02:20:08 kei Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.68 2002/06/23 08:46:22 kent Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -991,6 +991,12 @@ NMH_PAGER?= more
 #NS_USE_BSDI=	YES
 # Used to decide if i386 BSDi Netscape binary should be used in preference 
 # to linux version.
+# Possible: not defined, YES
+# Default: not defined
+
+#NS_USE_SUNOS=	YES
+# Used to decide if sparc SunOS-4.1 Netscape binary should be used in preference 
+# to the Solaris-2.5.1 version.
 # Possible: not defined, YES
 # Default: not defined
 
