@@ -1,10 +1,8 @@
-# $NetBSD$
-#
+# $NetBSD: Makefile,v 1.1.1.1 2001/08/11 13:45:43 rh Exp $
 
-DISTNAME=		bonobo-conf-0.10
+DISTNAME=		bonobo-conf-0.11
 CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/bonobo-conf/}
-EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
