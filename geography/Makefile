@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/08/22 18:37:37 gson Exp $
+# $NetBSD: Makefile,v 1.8 2004/08/27 12:32:43 drochner Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -9,6 +9,7 @@ SUBDIR+=	gpsdrive
 SUBDIR+=	gpspoint
 SUBDIR+=	gpsutils
 SUBDIR+=	mapserver
+SUBDIR+=	shapelib
 SUBDIR+=	vis5d+
 SUBDIR+=	xrmap
 SUBDIR+=	xrmap-anthems
