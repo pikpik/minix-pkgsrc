@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.247 2004/07/06 14:54:53 xtraeme Exp $
+# $NetBSD: Makefile,v 1.248 2004/08/10 06:50:29 minskim Exp $
 #
 
 COMMENT=	Audio tools
@@ -208,6 +208,7 @@ SUBDIR+=	tremor
 SUBDIR+=	tremor-tools
 SUBDIR+=	trm
 SUBDIR+=	tunesbrowser
+SUBDIR+=	tunepimp
 SUBDIR+=	ubs
 SUBDIR+=	vorbis-tools
 SUBDIR+=	wavesurfer
