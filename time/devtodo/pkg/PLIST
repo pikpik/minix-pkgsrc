@@ -1,7 +1,14 @@
 @comment $NetBSD$
-bin/todo
+bin/devtodo
 bin/tda
-bin/tdr
 bin/tdd
 bin/tde
+bin/tdr
+bin/todo
+etc/todorc
+man/man1/devtodo.1
+man/man1/tda.1
+man/man1/tdd.1
+man/man1/tde.1
+man/man1/tdr.1
 man/man1/todo.1
