@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.47 2003/09/28 09:13:56 jlam Exp $
 
 DISTNAME=	pine4.58
 PKGNAME=	pico-4.6
@@ -33,13 +33,13 @@ MAKE_ENV+=	_STRIPFLAG_INSTALL=	# debug...
 do-build:
 	cd ${WRKSRC} && \
 	${SETENV} ${MAKE_ENV} ./build ${BUILDNAME} \
-	  CC="${PKGLIBTOOL} ${BUILDLINK_CC}" \
+	  CC="${LIBTOOL} ${BUILDLINK_CC}" \
 	  PREFIX=${PREFIX} OPTIMIZE="${CFLAGS}"
 
 do-install:
-	${PKGLIBTOOL} --mode=install ${INSTALL_DATA} \
+	${LIBTOOL} --mode=install ${INSTALL_DATA} \
 	  ${WRKSRC}/pico/libpico.la ${PREFIX}/lib
-	${PKGLIBTOOL} --mode=install ${INSTALL_PROGRAM} \
+	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
 	  ${WRKSRC}/pico/pico ${WRKSRC}/pico/pilot ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/doc/pico.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/pilot.1 ${PREFIX}/man/man1
