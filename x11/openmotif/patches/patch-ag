@@ -1,8 +1,8 @@
 $NetBSD$
 
---- config/cf/host.def.orig	Sat Sep  8 01:35:59 2001
+--- config/cf/host.def.orig	Thu Jan 10 02:44:40 2002
 +++ config/cf/host.def
-@@ -1,17 +1,19 @@
+@@ -1,17 +1,20 @@
  #ifdef BeforeVendorCF
  
 -#define TopLevelProject         Motif
@@ -26,5 +26,6 @@ $NetBSD$
 +#define DebugLibMrm             NO
 +#define DebugLibUil             NO
  #define LexLib                  -lfl
++#define BuildMotifDemos         NO
  
  #endif /* BeforeVendorCF */
