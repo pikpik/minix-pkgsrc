@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.118 2000/06/26 01:10:06 wiz Exp $
+# $NetBSD: Makefile,v 1.119 2000/06/26 21:39:56 rh Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -58,7 +58,6 @@
     SUBDIR += libnet
     SUBDIR += libole2
     SUBDIR += libproplist
-    SUBDIR += librep
     SUBDIR += libscsi
     SUBDIR += libslang
     SUBDIR += libsmi
