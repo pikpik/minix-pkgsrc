@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/05/02 11:54:36 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/05/20 04:00:16 jmc Exp $
 #
 
-DISTNAME=	libgnomeui-2.2.0.1
-PKGREVISION=	1
+DISTNAME=	libgnomeui-2.2.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnomeui/2.2/}
 EXTRACT_SUFX=	.tar.bz2
@@ -30,10 +29,11 @@ PKGCONFIG_BASE=		${WRKSRC}/libgnomeui/libgnomeui-2.0.pc
 PKGCONFIG_OVERRIDE=	${PKGCONFIG_BASE}.in
 
 # Needed because part of the pc files doesn't get filled in till after 
-# configure does it's pass
+# configure does its pass
 
 post-configure:
-	${SED} ${PKGCONFIG_OVERRIDE_SED} < ${PKGCONFIG_BASE} > ${PKGCONFIG_BASE}.tmp
+	${SED} ${PKGCONFIG_OVERRIDE_SED} < ${PKGCONFIG_BASE} > \
+		${PKGCONFIG_BASE}.tmp
 	${MV} ${PKGCONFIG_BASE}.tmp ${PKGCONFIG_BASE}
 
 .include "../../audio/esound/buildlink2.mk"
