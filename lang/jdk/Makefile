@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/07/17 21:44:42 grant Exp $
+# $NetBSD: Makefile,v 1.35 2003/08/23 15:13:59 jschauma Exp $
 #
 
 VERSION=	1.1.8
@@ -88,6 +88,7 @@ do-install:
 	${RM} -f ${WRKSRC}/*.orig
 	${INSTALL_PROGRAM_DIR} ${PREFIX}
 	cd ${WRKSRC} && ${PAX} -rw . ${PREFIX}
+	${RM} -f ${PREFIX}/bin/i386/green_threads/javac.orig
 
 .include "../../mk/bsd.pkg.mk"
 
