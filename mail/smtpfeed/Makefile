@@ -3,6 +3,7 @@
 #
 
 DISTNAME=	smtpfeed-1.18
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.kyoto.wide.ad.jp/pub/mail/smtpfeed/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/mail/sendmail/ \
@@ -35,19 +36,8 @@ BUILD_DEFS+=    USE_INET6
 CONFIGURE_ARGS+=--enable-ipv6
 .endif
 
-.if (${OPSYS} == SunOS)
-NROFF?=		nroff -man
-.else
-NROFF?=		nroff -mandoc
-.endif
-
-post-build:
-	cd ${WRKSRC} && \
-	${NROFF} smtpfeed.8 > smtpfeed.cat8
-
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/smtpfeed.8 ${PREFIX}/man/man8
-	${INSTALL_MAN} ${WRKSRC}/smtpfeed.cat8 ${PREFIX}/man/cat8/smtpfeed.0
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	for i in ${DOCS}; do \
 		${INSTALL_DATA} ${WRKSRC}/$$i ${DOCDIR}; \
