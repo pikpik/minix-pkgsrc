@@ -1,8 +1,5 @@
 $NetBSD$
 
-Place(s) where this was (most probably...) in before:
-     NetBSD: patch-ap,v 1.2 1999/11/15 21:30:28 drochner Exp 
-
 diff -x *.orig -urN ./lib/Xm-2.0/Makefile.in /usr/pkgsrc/x11/lesstif/work.i386.unpatched/lesstif-0.89.4/lib/Xm-2.0/Makefile.in
 --- ./lib/Xm-2.0/Makefile.in	Fri Nov  5 21:14:38 1999
 +++ /usr/pkgsrc/x11/lesstif/work.i386.unpatched/lesstif-0.89.4/lib/Xm-2.0/Makefile.in	Wed Nov 24 17:30:54 1999

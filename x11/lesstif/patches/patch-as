@@ -1,8 +1,5 @@
 $NetBSD$
 
-Place(s) where this was (most probably...) in before:
-     NetBSD: patch-as,v 1.1 1999/11/03 04:18:48 jlam Exp 
-
 diff -x *.orig -urN ./lib/config/mxmkmf.in /usr/pkgsrc/x11/lesstif/work.i386.unpatched/lesstif-0.89.4/lib/config/mxmkmf.in
 --- ./lib/config/mxmkmf.in	Fri Sep  3 01:51:36 1999
 +++ /usr/pkgsrc/x11/lesstif/work.i386.unpatched/lesstif-0.89.4/lib/config/mxmkmf.in	Wed Nov 24 17:30:54 1999
