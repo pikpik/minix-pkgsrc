@@ -39,7 +39,6 @@
 #ifndef _GETOPT_H_
 #define _GETOPT_H_
 
-#include <sys/cdefs.h>
 #include <unistd.h>
 
 /*
@@ -64,15 +63,20 @@ struct option {
 	int val;
 };
 
-__BEGIN_DECLS
-int getopt_long __P((int, char * const *, const char *,
-    const struct option *, int *));
-
-#ifdef __INTERIX
-/* XXX this is in libc, but not in a system header */
-extern int optreset;
+#ifdef __cplusplus
+extern "C" {
 #endif
-__END_DECLS
+
+int getopt_long(int, char * const *, const char *,
+    const struct option *, int *);
+
+/* On some platforms, this is in libc, but not in a system header */
+extern int optreset;
+
+#ifdef __cplusplus
+};
+#endif
+
 #endif
  
 #endif /* !_GETOPT_H_ */
