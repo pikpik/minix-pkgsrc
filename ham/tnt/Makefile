@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/12 10:26:37 wulf Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 15:13:52 wiz Exp $
 #
 
 DISTNAME=	tnt-1.9.1
@@ -14,5 +14,7 @@ DEPENDS+=	dialog-0.6z:../../misc/dialog
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+
+INFO_FILES=	tntdoc.info
 
 .include "../../mk/bsd.pkg.mk"
