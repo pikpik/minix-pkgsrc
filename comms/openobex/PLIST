@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/openobex-config
+include/openobex/obex.h
+include/openobex/obex_const.h
+lib/libopenobex-1.0.so.1
+lib/libopenobex-1.0.so.1.0
+lib/libopenobex.a
+lib/libopenobex.la
+lib/libopenobex.so
+share/aclocal/openobex.m4
+@dirrm include/openobex
