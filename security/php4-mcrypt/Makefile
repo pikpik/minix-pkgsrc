@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2002/11/05 07:33:19 martti Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/05 09:07:23 wiz Exp $
 
 MODNAME=		mcrypt
 CATEGORIES+=		security
-PKGREVISION=		1
+PKGREVISION=		# empty
 COMMENT=		PHP4 extension for the mcrypt crypto algorithms library
 
 USE_BUILDLINK2=		YES

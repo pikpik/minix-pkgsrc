@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2002/11/05 07:33:17 martti Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/30 15:13:24 taca Exp $
 
 MODNAME=		mbstring
 CATEGORIES+=		misc
-PKGREVISION=		1
+PKGREVISION=		# empty
 COMMENT=		PHP4 extension for multibyte characters support (currently, Japanese only)
 
 USE_BUILDLINK2=		YES
