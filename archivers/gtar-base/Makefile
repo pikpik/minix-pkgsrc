@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/02/16 13:15:28 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/18 15:20:01 veego Exp $
 #
 
 DISTNAME=       tar-1.12
@@ -22,10 +22,12 @@ CONFIGURE_ARGS= --program-prefix=g --with-catgets
 .if (${OPSYS} != "NetBSD")
 PLIST_SRC=	${WRKDIR}/PLIST
 
+post-configure:
+	@${TOUCH} ${WRKSRC}/aclocal.m4 ${WRKSRC}/Makefile.in ${WRKSRC}/Makefile
+
 pre-install:
 	-${RM} -f ${WRKDIR}/PLIST
 	${CAT} ${PKGDIR}/PLIST | ${SED} -e 's/cat$$/mo/' > ${WRKDIR}/PLIST
-
 .endif
 
 post-patch:
