@@ -1,4 +1,4 @@
-#	$NetBSD: OpenBSD.pkg.dist,v 1.46 2004/09/04 16:59:58 jmmv Exp $
+#	$NetBSD: OpenBSD.pkg.dist,v 1.47 2004/09/07 15:47:16 wiz Exp $
 #
 
 /set type=dir uname=root gname=wheel mode=0755
@@ -416,6 +416,10 @@
                 ..
             ..
             am
+                LC_MESSAGES
+                ..
+            ..
+            ang
                 LC_MESSAGES
                 ..
             ..
