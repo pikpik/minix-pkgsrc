@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.267 2004/01/10 19:47:02 jschauma Exp $
+# $NetBSD: Makefile,v 1.268 2004/01/10 22:43:06 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -254,6 +254,7 @@ SUBDIR+=	win32-codecs
 SUBDIR+=	wmphoto
 SUBDIR+=	xanim
 SUBDIR+=	xart
+SUBDIR+=	xawtv
 SUBDIR+=	xbmbrowser
 SUBDIR+=	xdvipresent
 SUBDIR+=	xfce4-artwork
