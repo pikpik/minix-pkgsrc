@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/08/27 18:52:00 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:15:02 tv Exp $
 
 DISTNAME=		sather-1.2.1
 PKGREVISION=		5
@@ -21,7 +21,7 @@ INFO_FILES=		sather.info sather-tutorial.info sather-mode.info
 REPLACE_PERL=		Browser/Web/ps2gif
 
 SUBST_CLASSES+=		sather-configure
-SUBST_STAGE.sather-configure=	post-buildlink
+SUBST_STAGE.sather-configure=	post-wrapper
 SUBST_MESSAGE.sather-configure=	"Configuring sources"
 SUBST_FILES.sather-configure=			\
 	Boot/sacomp.code/Makefile		\

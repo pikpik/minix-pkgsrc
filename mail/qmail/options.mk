@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2004/08/23 23:22:29 schmonz Exp $
+# $NetBSD: options.mk,v 1.4 2004/08/27 06:29:08 jlam Exp $
 
 .if ${OPSYS} == "Darwin"
 PKG_DEFAULT_OPTIONS+=	darwin
@@ -41,7 +41,7 @@ DARWIN_PATCH=		panther.patch
 PATCHFILES+=		${DARWIN_PATCH}
 SITES_${DARWIN_PATCH}=	http://http.netdevice.com:9080/qmail/patch/
 PATCH_DIST_STRIP.${DARWIN_PATCH}=	-p1
-post-buildlink:
+post-wrapper:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	nameser8_compat_h="include/nameser8_compat.h";			\
 	if [ ! -e /usr/$${nameser8_compat_h} ]; then			\

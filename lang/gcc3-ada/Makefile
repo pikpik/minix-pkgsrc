@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/05/28 22:30:50 shannonjr Exp $
+# $NetBSD: Makefile,v 1.13 2004/07/02 15:40:01 drochner Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-ada-${GCC_VERSION}
 COMMENT=	GNU Compiler Collection, v3 - Ada compiler
@@ -54,7 +54,7 @@ post-patch:
 		${CP} $$i ${WRKSRC}/gcc/ada;				\
 	done
 
-post-buildlink:
+post-wrapper:
 	${LN} -sf ${ADA_BOOT_GNATBIND} ${BUILDLINK_DIR}/bin
 
 post-configure:

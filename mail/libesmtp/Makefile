@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/05/28 23:00:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:12:53 tv Exp $
 
 DISTNAME=	libesmtp-1.0.3r1
 PKGNAME=	${DISTNAME:S/r1//}
@@ -35,7 +35,7 @@ CONFIGURE_ARGS+=	--disable-isoc
 #    which is backward-compatible. Create a symlink to find
 #    <openssl/des.h> as <des.h>.
 #
-post-buildlink:
+post-wrapper:
 	if [ ! -f /usr/include/des.h ]; then \
 		${LN} -s ${SSLBASE}/include/openssl/des.h \
 			${BUILDLINK_DIR}/include; \
