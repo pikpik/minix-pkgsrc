@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/10/22 11:35:39 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/11/29 08:05:31 tron Exp $
 
 DISTNAME=	findutils-4.1
 PKGREVISION=	2
@@ -11,9 +11,16 @@ COMMENT=	The GNU find, xargs and locate utilities
 
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--program-prefix=g
 
 INFO_FILES=		find.info
+
+.include "../../mk/bsd.prefs.mk"
+
+.if defined(GNU_PROGRAM_PREFIX)
+CONFIGURE_ARGS=		--program-prefix=${GNU_PROGRAM_PREFIX}
+.endif
+PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
+BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/texinfo.mk"
