@@ -1,0 +1,4 @@
+@comment $NetBSD: $
+bin/shmux
+man/man1/shmux.1
+share/shmux/mcmd.sh
