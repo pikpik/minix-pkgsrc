@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/xgrid/makefile.in.orig	Sat Jan 27 04:55:11 2001
+--- src/xgrid/makefile.in.orig	Wed Oct 18 03:01:29 2000
 +++ src/xgrid/makefile.in
-@@ -19,7 +19,7 @@
+@@ -19,14 +19,14 @@
  #	Location of GMT and CDF header files
  
  CFLAGS=	$(CC_OPT) $(WIN32) -I.. -I$(NETCDF)/include @X_CFLAGS@ @CFLAGS@
@@ -11,6 +11,14 @@ $NetBSD$
  
  all:		@buildtarget@
  
+ install:	@installtarget@
+ 
+ xgridedit-install:
+-		$(INSTALL) xgridedit$(EXE) $(bindir)
++		$(LIBTOOL) --mode=install $(INSTALL_PROGRAM) xgridedit$(EXE) $(bindir)
+ 
+ uninstall:
+ 		\rm -f $(bindir)/xgridedit$(EXE)
 @@ -35,15 +35,16 @@
  		\rm -f makefile config.cache config.log config.status
  
