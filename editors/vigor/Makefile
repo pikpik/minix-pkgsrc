@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:40:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 21:35:05 grant Exp $
 #
 
 DISTNAME=	vigor-0.016
 WRKSRC=		${WRKDIR}/${DISTNAME}/build
 CATEGORIES=	editors
-MASTER_SITES=	http://www.red-bean.com:8080/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vigor/}
 
 MAINTAINER=	hubertf@NetBSD.org
-HOMEPAGE=	http://www.red-bean.com/~joelh/vigor/
+HOMEPAGE=	http://vigor.sourceforge.net/
 COMMENT=	nvi with excessive online "help"
 
 CONFLICTS+=	nvi-[0-9]*
