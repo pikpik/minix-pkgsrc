@@ -5,6 +5,7 @@
 #
 # Author:		Paul Vixie / Internet Software Consortium
 #
+# $NetBSD$
 # FreeBSD Id: Makefile,v 1.3 1997/01/06 12:13:36 jkh Exp
 #
 
