@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.5 1998/01/12 14:43:25 agc Exp $
+libexec/popper
+man/man8/popper.8
+man/cat8/popper.0
