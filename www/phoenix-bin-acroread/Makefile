@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/29 13:33:34 kei Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/07 16:29:38 kei Exp $
 
 DISTNAME= 		phoenix-bin-acroread-1.0
-PKGREVISION=		1
+PKGREVISION=		2
 
 MAINTAINER=		kei@netbsd.org
 COMMENT=		Acrobat Reader 4 plugin for phoenix-bin
