@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 1999/12/13 11:06:00 soren Exp $
+# $NetBSD: Makefile,v 1.35 2000/01/04 17:12:59 bouyer Exp $
 
 DISTNAME=	mutt-${MUTT_VERSION}
 CATEGORIES=	mail
@@ -23,7 +23,6 @@ CONFIGURE_ARGS+= --with-curses=${LOCALBASE} --with-exec-shell=/bin/ksh \
 LDFLAGS+=	-s
 
 BUILD_DEFS+=	MUTT_INTERNATIONAL MUTT_VERSION
-
 
 .include "../../mk/bsd.pkg.mk"
 
