@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2004/01/24 13:51:14 grant Exp $
+# $NetBSD: Makefile,v 1.49 2004/02/01 14:12:22 jlam Exp $
 
 GCC_VERSION=	3.3.2
 DISTNAME=	gcc3-${GCC_VERSION}
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	# empty
 DISTFILES=	# empty
