@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/09/05 16:34:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/12/15 18:51:21 salo Exp $
 #
 
 DISTNAME=	pwm-20030617
@@ -10,7 +10,9 @@ MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://modeemi.fi/~tuomov/pwm/
 COMMENT=	Window manager that frames multiple client windows in a single frame
 
-USE_BUILDLINK2=	YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_X11=	YES
 USE_GMAKE=	YES
