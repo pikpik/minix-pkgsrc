@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2000/07/14 10:54:03 agc Exp $
+# $NetBSD: Makefile,v 1.38 2000/07/27 16:11:20 jlam Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -12,7 +12,11 @@
     SUBDIR += isakmpd
     SUBDIR += kth-krb4
     SUBDIR += libident
+    SUBDIR += libnasl
     SUBDIR += nessus
+    SUBDIR += nessus-core
+    SUBDIR += nessus-libraries
+    SUBDIR += nessus-plugins
     SUBDIR += nfsbug
     SUBDIR += openssh
     SUBDIR += openssl
