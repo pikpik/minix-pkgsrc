@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/03/21 22:40:52 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/10/15 12:06:35 rh Exp $
 
 DISTNAME=		ClanLib-0.2.2
 CATEGORIES=		graphics games devel x11
@@ -33,6 +33,7 @@ CONFIGURE_ARGS+=	--disable-ggi
 
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"# CC='cc ${CFLAGS} ${LDFLAGS}'
 MAKE_ENV+=		LDFLAGS="${LDFLAGS}"
+MAKE_ENV+=		X11BASE="${X11BASE}"
 
 post-patch:
 	${CHMOD} +x ${WRKSRC}/configure
