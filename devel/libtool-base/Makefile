@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2004/02/29 10:28:24 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2004/04/22 14:40:29 tv Exp $
 #
 
 PKGNAME=	${DISTNAME:C/-/-base-/}
+PKGREVISION=	1
 SVR4_PKGNAME=	ltoob
 
 COMMENT=	Generic shared library support script (the script itself)
