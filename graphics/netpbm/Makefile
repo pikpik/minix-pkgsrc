@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2001/01/08 02:13:44 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2001/01/11 21:08:39 dent Exp $
 
 DISTNAME=	netpbm-9.7
 CATEGORIES=	graphics
@@ -15,6 +15,7 @@ USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 
 INSTALL_TARGET=	install-dev install
+MAKE_ENV+=	CC=${CC}
 MAKEFILE=	GNUmakefile
 
 .include "../../mk/bsd.prefs.mk"
