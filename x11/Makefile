@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.196 2000/12/15 23:31:15 wiz Exp $
+# $NetBSD: Makefile,v 1.197 2000/12/17 23:40:53 wiz Exp $
 #
 
     SUBDIR += 9term
@@ -7,12 +7,10 @@
     SUBDIR += Xaw3d
     SUBDIR += Xbae
     SUBDIR += XmHTML
-    SUBDIR += ascp
     SUBDIR += blt
     SUBDIR += controlcenter
     SUBDIR += dxpc
     SUBDIR += ebuilder
-    SUBDIR += econf
     SUBDIR += egtk
     SUBDIR += eterm
     SUBDIR += filerunner
@@ -71,7 +69,6 @@
     SUBDIR += unclutter
     SUBDIR += wmavgload
     SUBDIR += wmessage
-    SUBDIR += wmextra
     SUBDIR += wmfire
     SUBDIR += wmfstatus
     SUBDIR += wmweather
