@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/06/15 13:23:10 grant Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:14:44 tv Exp $
 #
 
 DISTNAME=	gltron-0.70-source
@@ -15,6 +15,7 @@ COMMENT=	3D lightcycle game inspired by the movie Tron
 WRKSRC=		${WRKDIR}/${PKGBASE}
 USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
+CONFIGURE_ARGS+= --disable-warn
 
 LIBS.SunOS+=	-lm
 
