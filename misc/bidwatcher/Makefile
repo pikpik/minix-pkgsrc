@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/10/20 02:41:29 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2002/10/27 21:54:25 tron Exp $
 
 DISTNAME=	bidwatcher-1.3.6
 CATEGORIES=	misc
@@ -10,7 +10,6 @@ COMMENT=        eBay snipe tool
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
-AUTOMAKE_OVERRIDE=	NO
 
 DOCDIR=		${PREFIX}/share/doc/bidwatcher
 HTMLDIR=	${PREFIX}/share/doc/html/bidwatcher
