@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.197 2000/12/17 23:40:53 wiz Exp $
+# $NetBSD: Makefile,v 1.198 2000/12/18 13:54:38 wiz Exp $
 #
 
     SUBDIR += 9term
@@ -35,9 +35,7 @@
     SUBDIR += kdebase
     SUBDIR += kdelibs
     SUBDIR += khostchooser
-    SUBDIR += korganizer
     SUBDIR += kterm
-    SUBDIR += kworldwatch
     SUBDIR += lesstif
     SUBDIR += lesstif12
     SUBDIR += modeline
