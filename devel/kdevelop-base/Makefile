@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.16 2002/12/24 06:09:55 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/11 13:30:43 markd Exp $
 
 DISTNAME=	kdevelop-2.1.5_for_KDE_3.1
 PKGNAME=	kdevelop-base-2.1.5
 CATEGORIES=	devel kde
 
 MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/kdevelop-2.1.5/src/ \
-                ftp://ftp.us.kde.org/pub/kde/stable/kdevelop-2.1.5/src/ \
-                ftp://ftp.de.kde.org/pub/kde/stable/kdevelop-2.1.5/src/
+		ftp://ftp.us.kde.org/pub/kde/stable/kdevelop-2.1.5/src/ \
+		ftp://ftp.de.kde.org/pub/kde/stable/kdevelop-2.1.5/src/
 HOMEPAGE=       http://www.kdevelop.org/
 COMMENT=	Base modules for IDE for Unix/X11/KDE
 
