@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/04/27 11:04:32 cjep Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:47:14 grant Exp $
 #
 
 DISTNAME=       xmailbox-2.5
@@ -9,7 +9,7 @@ MASTER_SITES=   ${MASTER_SITE_XCONTRIB:=applications/}
 MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Enhanced xbiff, with pixmap and sound support
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 MAKE_ENV+=	INSTALL_PROGRAM='${INSTALL_PROGRAM}'
@@ -22,5 +22,5 @@ post-install:
 	     5xmail1.xpm xmail1.xpm xnomail1.xpm \
 	     ${PREFIX}/share/xmailbox
 
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
