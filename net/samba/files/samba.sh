@@ -1,8 +1,14 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: samba.sh,v 1.14 2004/01/11 02:26:31 jlam Exp $
+# $NetBSD: samba.sh,v 1.15 2004/01/12 03:33:04 jlam Exp $
 #
 # KEYWORD: nostart
+#
+#	This script is intended for the end-user.
+#	It is not started by /etc/rc.
+#	It manipulates various samba services (smbd, nmbd, winbindd),
+#	which are controlled via their appropriate rc.conf(5) settings.
+#
 
 if [ -f /etc/rc.subr ]; then
 	. /etc/rc.subr
