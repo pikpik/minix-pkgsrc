@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/24 13:30:56 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/27 00:53:11 heinz Exp $
 #
 
 DISTNAME=		mirrormagic-2.0.2
@@ -13,7 +13,7 @@ COMMENT=		Nice little puzzle game with color graphics and sound
 
 CONFLICTS=		mirrormagic-[1-9]*
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 PLIST_SRC=		${WRKDIR}/PLIST PLIST
 
@@ -45,6 +45,6 @@ do-install:
 .endfor
 	${CHOWN} -R games:games ${SCORE_PATH}
 
-.include "../../audio/SDL_mixer/buildlink2.mk"
-.include "../../graphics/SDL_image/buildlink2.mk"
+.include "../../audio/SDL_mixer/buildlink3.mk"
+.include "../../graphics/SDL_image/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
