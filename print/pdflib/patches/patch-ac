@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- pdflib/Makefile.in.orig	Sat Apr 29 13:00:57 2000
++++ pdflib/Makefile.in	Sat Apr 29 13:01:26 2000
+@@ -14,7 +14,7 @@
+ OBJ		= @OBJEXT@
+ CC		= @CC@
+ RM      	= @RM@
+-LIBTOOL		= ../libtool
++LIBTOOL		= @LIBTOOL@
+ 
+ # installation directories
+ prefix = @prefix@
