@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/07/14 16:41:38 sakamoto Exp $
 #
 # This Makefile fragment is included by packages that use libnet.
 #
@@ -20,7 +20,7 @@ LIBNET_BUILDLINK_MK=	# defined
 BUILDLINK_DEPENDS.libnet?=	libnet-*
 DEPENDS+=	${BUILDLINK_DEPENDS.libnet}:../../devel/libnet
 
-BUILDLINK_PREFIX.libnet=	${LOCALBASE}
+EVAL_PREFIX+=			BUILDLINK_PREFIX.libnet=libnet
 BUILDLINK_FILES.libnet=		include/libnet.h
 BUILDLINK_FILES.libnet+=	include/libnet/*
 BUILDLINK_FILES.libnet+=	lib/libnet.*

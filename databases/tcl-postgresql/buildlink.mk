@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2001/06/23 19:26:52 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.3 2001/07/01 22:59:14 jlam Exp $
 #
 # This Makefile fragment is included by packages that use tcl-postgresql.
 #
@@ -20,7 +20,7 @@ TCL_POSTGRESQL_BUILDLINK_MK=	# defined
 BUILDLINK_DEPENDS.tcl-postgresql?=	tcl-postgresql>=7.0
 DEPENDS+=	${BUILDLINK_DEPENDS.tcl-postgresql}:../../databases/tcl-postgresql
 
-BUILDLINK_PREFIX.tcl-postgresql=	${LOCALBASE}
+EVAL_PREFIX+=	BUILDLINK_PREFIX.tcl-postgresql=tcl-postgresql
 BUILDLINK_FILES.tcl-postgresql=		include/pgsql/libpgtcl.h
 BUILDLINK_FILES.tcl-postgresql+=	lib/libpgtcl.*
 

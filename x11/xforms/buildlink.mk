@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/07/03 21:29:56 zuntum Exp $
 #
 # This Makefile fragment is included by packages that use xforms.
 #
@@ -20,7 +20,7 @@ XFORMS_BUILDLINK_MK=	# defined
 BUILDLINK_DEPENDS.xforms?=	xforms>=0.88nb1
 DEPENDS+=	${BUILDLINK_DEPENDS.xforms}:../../x11/xforms
 
-BUILDLINK_PREFIX.xforms=	${X11PREFIX}
+EVAL_PREFIX+=			BUILDLINK_PREFIX.xforms=xforms
 BUILDLINK_FILES.xforms=		include/X11/forms.h
 BUILDLINK_FILES.xforms+=	lib/libforms.*
 BUILDLINK_FILES.xforms+=	lib/libxforms.*

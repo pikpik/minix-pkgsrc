@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/06/29 22:25:06 zuntum Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/07/01 22:59:25 jlam Exp $
 #
 # This Makefile fragment is included by packages that use mpeg.
 #
@@ -20,7 +20,7 @@ MPEG_BUILDLINK_MK=	# defined
 BUILDLINK_DEPENDS.mpeg?=	mpeg>=1.2.1
 DEPENDS+=	${BUILDLINK_DEPENDS.mpeg}:../../graphics/mpeg-lib
 
-BUILDLINK_PREFIX.mpeg=		${LOCALBASE}
+EVAL_PREFIX+=			BUILDLINK_PREFIX.mpeg=mpeg
 BUILDLINK_FILES.mpeg=		include/mpeg.h
 BUILDLINK_FILES.mpeg+=		lib/libmpeg.*
 
