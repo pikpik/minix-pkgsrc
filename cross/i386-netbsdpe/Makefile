@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/04/10 20:10:15 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/04/27 13:50:09 kent Exp $
 
 DISTVERSION=		1.4.0
 CROSS_DISTFILES=		# none
@@ -22,6 +22,7 @@ GCC_CXX=		yes
 
 TARGET_ARCH=		i386-netbsdpe
 GCC_CONFIGURE_ARGS+=	--enable-threads
+CONFLICTS=		pth-[0-9]* pth-current-[0-9]* pth-syscall-[0-9]*
 
 BINUTILS_EXTRAS=	dlltool dllwrap windres
 
