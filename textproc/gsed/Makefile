@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 22:54:17 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/08/09 11:27:47 seb Exp $
 #
 
 DISTNAME=	sed-4.0.7
@@ -14,8 +14,9 @@ USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
-INFO_FILES=	sed.info
+INFO_FILES=		sed.info
 
+TEST_TARGET=		check
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(GNU_PROGRAM_PREFIX)
