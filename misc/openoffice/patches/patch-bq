@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- ../setup2/script/setupserver.orig	Fri Nov 17 11:29:29 2000
++++ ../setup2/script/setupserver
+@@ -234,6 +234,7 @@
+ sd_platform=`uname -s`
+ case $sd_platform in
+ 	SCO_SV) test=/bin/test     ;;
++	NetBSD) test=/bin/test     ;;
+   	*)      test=/usr/bin/test ;;
+ esac
+ sd_cwd="`pwd`"

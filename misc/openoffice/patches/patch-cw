@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- ../tools/inc/solar.h.orig	Fri Oct 12 15:11:03 2001
++++ ../tools/inc/solar.h
+@@ -443,6 +443,9 @@
+ #elif defined NETBSD && defined SPARC
+   #define __DLLEXTENSION "bs.so"
+   #define SYSTEM_ID 		SYSTEM_UNXBSDS
++#elif defined NETBSD && defined POWERPC
++  #define __DLLEXTENSION "bp.so"
++  #define SYSTEM_ID 		SYSTEM_UNXBSDP
+ #elif defined LINUX && defined X86
+   #define __DLLEXTENSION "li.so"
+   #define SYSTEM_ID 		SYSTEM_UNXLNXI
