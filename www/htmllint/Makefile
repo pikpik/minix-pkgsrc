@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 22:55:37 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/20 12:27:58 agc Exp $
 #
 
 DISTNAME=	htmllint
-PKGNAME=	htmllint-20030518
+PKGNAME=	htmllint-20040406
 CATEGORIES=	www japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/k16/htmllint/archives/
 EXTRACT_SUFX=	.zip
