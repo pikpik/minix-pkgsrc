@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2004/08/23 21:15:17 xtraeme Exp $
+# $NetBSD: options.mk,v 1.2 2004/11/18 23:02:01 jlam Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sudo
@@ -16,6 +16,7 @@ CONFIGURE_ARGS+=	--without-kerb5
 .if !empty(PKG_OPTIONS:Mldap)
 .  include "../../databases/openldap/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-ldap=${BUILDLINK_PREFIX.openldap}
+CONFIGURE_ARGS+=	--with-ldap-conf-file=${PKG_SYSCONFDIR}/ldap.conf
 .endif
 
 .if !empty(PKG_OPTIONS:MPAM)
