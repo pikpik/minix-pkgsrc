@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/25 18:40:23 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/25 20:01:43 wiz Exp $
 
 DISTNAME=		neon-0.23.5
 CATEGORIES=		www
@@ -15,7 +15,7 @@ USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GNU_CONFIGURE=		# defined
-CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-ssl=yes
 CONFIGURE_ARGS+=	--with-libxml1
 CONFIGURE_ARGS+=	--enable-shared
 
