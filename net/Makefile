@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.146 2000/08/12 16:39:39 perry Exp $
+# $NetBSD: Makefile,v 1.147 2000/08/12 16:41:58 tron Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -53,7 +53,6 @@
     SUBDIR += kxicq
     SUBDIR += lftp
     SUBDIR += libirc
-    SUBDIR += libnet
     SUBDIR += libnids
     SUBDIR += libpcap
     SUBDIR += libsscript
