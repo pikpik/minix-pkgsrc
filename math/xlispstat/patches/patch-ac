@@ -1,7 +1,6 @@
 $NetBSD$
-
---- Makefile.in.orig	Wed Sep 16 21:19:33 1998
-+++ Makefile.in	Mon Dec 21 11:52:05 1998
+--- Makefile.in.orig	Wed Sep 16 12:19:33 1998
++++ Makefile.in	Fri Jan  1 01:48:18 1999
 @@ -6,7 +6,8 @@
  ##############################################################################
  ##############################################################################
@@ -22,7 +21,7 @@ $NetBSD$
  BINDIR=${exec_prefix}/bin
  
  GRAPHSYS = @GRAPHSYS@
-@@ -67,7 +69,7 @@
+@@ -67,11 +69,11 @@
  .lsp.fsl:
  	echo "(compile-file \"$<\") (exit)" | ./xlisp
  
@@ -30,6 +29,11 @@ $NetBSD$
 +CFLAGS = -D${GRAPHSYS} ${UCFLAGS} ${X11INCDIR_FLAG} -Dunix
  
  LIBS = ${EXTRALIBS} -lm
+ 
+-LDFLAGS = ${ULDFLAGS}
++LDFLAGS+= ${ULDFLAGS}
+ 
+ OSOBJS = xsdynload.o xssystem.o unixprim.o
  
 @@ -118,7 +120,7 @@
  	compiler/assemble.fsl compiler/cmpfront.fsl
