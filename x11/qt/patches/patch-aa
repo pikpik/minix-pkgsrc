@@ -1,3 +1,4 @@
+$NetBSD$
 --- configs/netbsd-g++-static.orig	Fri Feb 26 18:02:07 1999
 +++ configs/netbsd-g++-static	Fri Jun  4 14:00:58 1999
 @@ -1,5 +1,6 @@
