@@ -1,7 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.15 2004/06/22 20:43:56 jwise Exp $
 
 PKGNAME=		postgresql-pltcl-${BASE_VERS}
-PKGREVISION=		3
 COMMENT=		PL/Tcl procedural language for the PostgreSQL backend
 
 DEPENDS+=		postgresql-server>=${BASE_VERS}:../../databases/postgresql-server
