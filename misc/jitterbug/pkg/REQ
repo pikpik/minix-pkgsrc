@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# $NetBSD$
 
 JB_USER=@JB_USER@
 JB_USERID=@JB_USERID@
@@ -77,3 +79,4 @@ else
 		echo " "
 	fi
 fi
+exit 0
