@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 21:41:31 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/09/10 23:27:32 dmcmahill Exp $
 #
 
 DISTNAME=		libgdgeda-2.0.15
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_BUILDLINK2=		YES
 
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../graphics/png/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
