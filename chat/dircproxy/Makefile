@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/28 02:47:41 reed Exp $
+# $NetBSD: Makefile,v 1.8 2005/01/03 00:00:21 tron Exp $
 
 DISTNAME=	dircproxy-1.0.5
 PKGREVISION=	2
@@ -13,6 +13,8 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK3=		YES
 USE_PERL5=		YES
 USE_PKGINSTALL=		YES
+
+CONFLICTS=		dircproxy-1.1.[0-9]*
 
 REPLACE_PERL=		contrib/log.pl contrib/privmsg-log.pl
 
