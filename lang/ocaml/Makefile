@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	ocaml-3.06
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/cristal/ocaml/${DISTNAME}/
 
@@ -25,7 +25,8 @@ FIX_RPATH+=		OCAML_LDFLAGS
 ALL_TARGET=	world
 
 post-build:
-	if ${TEST} ${MACHINE_ARCH} = 'i386'; then \
+	if ${TEST} ${MACHINE_ARCH} = 'i386' -o ${MACHINE_ARCH} = 'powerpc' \
+		-o ${MACHINE_ARCH} = 'sparc' ; then \
 		cd ${WRKSRC}; \
 		${GMAKE} opt; \
 		${GMAKE} ocamlc.opt; \
@@ -34,7 +35,7 @@ post-build:
 
 .include "../../mk/bsd.prefs.mk"
 
-.if (${MACHINE_ARCH} == "i386")
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")
 PLIST_SRC=	${PKGDIR}/PLIST.opt ${PKGDIR}/PLIST
 .endif
 
