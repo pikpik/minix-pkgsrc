@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/05/06 22:38:31 tron Exp $
+# $NetBSD: Makefile,v 1.23 1999/06/04 14:07:46 tron Exp $
 
 DISTNAME=	mutt-${MUTT_VERSION}
 CATEGORIES=	mail
@@ -11,14 +11,14 @@ MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/ \
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.mutt.org/
 
-DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
+DEPENDS+=	ncurses-4.2:../../devel/ncurses
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ARGS+= --with-curses=${PREFIX} --with-exec-shell=/bin/ksh \
+CONFIGURE_ARGS+= --with-curses=${LOCALBASE} --with-exec-shell=/bin/ksh \
 		 --with-docdir=${PREFIX}/share/doc/mutt \
 		 --enable-pop --enable-imap
-CONFIGURE_ENV+=	LDFLAGS=-s
+LDFLAGS+=	-s
 
 .include "../../mk/bsd.pkg.mk"
 
