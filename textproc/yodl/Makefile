@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/03/28 01:19:03 jtb Exp $
+# $NetBSD: Makefile,v 1.3 2001/03/29 22:37:45 jtb Exp $
 
 DISTNAME=	yodl-1.31.18
 CATEGORIES=	textproc
@@ -7,6 +7,8 @@ MASTER_SITES=	ftp://ftp.lilypond.org/pub/yodl/development/
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://www.xs4all.nl/~jantien/yodl/
 COMMENT=	high-level document preparation system
+
+BUILD_DEPENDS+=	bison-*:../../devel/bison
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
