@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/12/30 11:54:11 zuntum Exp $
+# $NetBSD: Makefile,v 1.29 2002/01/04 12:06:08 tron Exp $
 
 DISTNAME=	kdelibs-2.2.2
 CATEGORIES=	x11
@@ -38,7 +38,7 @@ REPLACE_PERL= \
 	${WRKSRC}/kio/useragent.pl
 
 PLIST_SRC=		${WRKDIR}/PLIST
-UNLIMIT_RESOURCES=	d
+UNLIMIT_RESOURCES=	datasize
 
 .if defined(USE_CUPS) && (${USE_CUPS} == "YES")
 .include "../../print/cups/buildlink.mk"
