@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2004/01/17 15:25:39 recht Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2004/01/17 15:32:33 recht Exp $
 #
 
 .if !defined(LIBCDDB_BUILDLINK2_MK)
@@ -12,8 +12,6 @@ EVAL_PREFIX+=	BUILDLINK_PREFIX.libcddb=libcddb
 BUILDLINK_PREFIX.libcddb_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.libcddb+=	include/cddb/*.h
 BUILDLINK_FILES.libcddb+=	lib/libcddb.*
-
-.include "../../misc/libcdio/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	libcddb-buildlink
 

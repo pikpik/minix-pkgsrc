@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:33 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/14 18:26:27 jmmv Exp $
 #
 
 DISTNAME=	libcddb-0.9.4
@@ -15,5 +15,4 @@ USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	libcddb.pc.in
 GNU_CONFIGURE=		yes
 
-.include "../../misc/libcdio/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
