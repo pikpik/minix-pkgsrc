@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/xnap
+share/doc/xnap/README
+share/xnap/xnap.jar
+@dirrm share/doc/xnap
+@dirrm share/xnap
