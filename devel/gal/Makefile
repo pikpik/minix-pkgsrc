@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/09/21 10:49:26 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2002/10/19 10:54:46 rh Exp $
 
 DISTNAME=		gal-0.19.3
 PKGREVISION=		1
@@ -16,6 +16,8 @@ GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+
+INCOMPAT_ICONV= SunOS-*-*
 
 .include "../../converters/libiconv/buildlink2.mk"
 .include "../../devel/bonobo/buildlink2.mk"
