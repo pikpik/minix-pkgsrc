@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.181 2004/05/13 04:53:03 xtraeme Exp $
+# $NetBSD: Makefile,v 1.182 2004/05/16 00:02:11 xtraeme Exp $
 #
 
 COMMENT=	Security tools
@@ -182,6 +182,7 @@ SUBDIR+=	ssldump
 SUBDIR+=	sslwrap
 SUBDIR+=	stunnel
 SUBDIR+=	sudo
+SUBDIR+=	tacshell
 SUBDIR+=	tcp_wrappers
 SUBDIR+=	tct
 SUBDIR+=	tkpasman
