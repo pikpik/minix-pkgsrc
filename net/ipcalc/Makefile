@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/21 12:52:44 zuntum Exp $
 #
 
 DISTNAME=	ipcalc.pl
-PKGNAME=	ipcalc-0.33
+PKGNAME=	ipcalc-0.34
 CATEGORIES=	net
 MASTER_SITES=	http://jodies.cx/
 EXTRACT_SUFX=	#
