@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/07/30 13:45:24 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/12/28 11:36:02 wiz Exp $
 
 DISTNAME=	gif2png-2.5.0
 CATEGORIES=	graphics converters
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.catb.org/~esr/gif2png/
 COMMENT=	Convert GIF files to PNG
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 
 post-install:
@@ -17,5 +17,5 @@ post-install:
 	${MV} ${PREFIX}/bin/web2png.done ${PREFIX}/bin/web2png
 	${CHMOD} +x ${PREFIX}/bin/web2png
 
-.include "../../graphics/png/buildlink2.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
