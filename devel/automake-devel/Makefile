@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/02/18 15:14:07 seb Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/27 20:23:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
@@ -18,6 +18,7 @@ USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV=		PERL=${PERL5}
 _STRIPFLAG_INSTALL=	# none
+M4=			${PREFIX}/bin/gm4
 
 MAKEINFOFLAGS=		--no-split
 MAKE_ENV+=		MAKEINFOFLAGS="${MAKEINFOFLAGS}"
