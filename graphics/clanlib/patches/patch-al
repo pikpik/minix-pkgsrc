@@ -11,6 +11,15 @@ $NetBSD$
  	@ln -s -f libclanlayer1.so.$(D_VERSION_MINOR) libclanlayer1.so.$(D_VERSION_MAJOR)
  	@ln -s -f libclanlayer1.so.$(D_VERSION_MAJOR) libclanlayer1.so
  
+@@ -400,7 +400,7 @@
+ 
+ libclan-sound.so: $(OBJF_SOUND_CLANSOUND)
+ 	@echo "Building dynamic library (libclan-sound.so)"
+-	@$(LINK_COMMAND) -o libclan-sound.so.$(D_VERSION_MINOR) $(OBJF_SOUND_CLANSOUND)
++	@$(LINK_COMMAND) -o libclan-sound.so.$(D_VERSION_MINOR) $(OBJF_SOUND_CLANSOUND) -lossaudio
+ 
+ libclan-input-tty.so: $(OBJF_INPUT_TTY)
+ 	@echo "Building dynamic library (libclan-input-tty.so)"
 @@ -408,7 +408,7 @@
  
  libclan-display-x11.so: $(OBJF_DISP_X11)
