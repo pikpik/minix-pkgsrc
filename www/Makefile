@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.209 2002/09/12 18:21:40 drochner Exp $
+# $NetBSD: Makefile,v 1.210 2002/09/16 07:06:19 uebayasi Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -92,6 +92,7 @@ SUBDIR+=	navigator
 SUBDIR+=	navigator3
 SUBDIR+=	neon
 SUBDIR+=	netscape
+SUBDIR+=	netscape7
 SUBDIR+=	ns-plugger-common
 SUBDIR+=	ns-plugger-communicator
 SUBDIR+=	ns-plugger-navigator
