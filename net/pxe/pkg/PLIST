@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/rc.d/pxe
+sbin/pxe
+share/examples/pxe/pxe.conf
+@dirrm share/examples/pxe
