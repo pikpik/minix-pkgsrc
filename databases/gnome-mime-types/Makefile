@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/27 11:38:54 rh Exp $
 #
 
 DISTNAME=		gnome-mime-data-1.0.7
@@ -16,4 +16,5 @@ USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
 
 .include "../../devel/gettext-lib/buildlink.mk"
+.include "../../lang/perl5/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
