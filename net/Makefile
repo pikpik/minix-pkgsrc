@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.223 2001/05/29 20:05:42 kim Exp $
+# $NetBSD: Makefile,v 1.224 2001/06/02 05:06:54 itojun Exp $
 #
 
 COMMENT=	Networking tools
@@ -32,6 +32,7 @@ SUBDIR+=	dante
 SUBDIR+=	ddclient
 SUBDIR+=	delegate
 SUBDIR+=	dhid
+SUBDIR+=	dhisd
 SUBDIR+=	dip
 SUBDIR+=	djbdns
 SUBDIR+=	dlint
