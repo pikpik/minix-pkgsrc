@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/08 05:46:34 epg Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:34:29 grant Exp $
 
 DISTNAME=	gnuserv-3.12.6
 CATEGORIES=	editors
@@ -9,6 +9,7 @@ HOMEPAGE=	http://meltin.net/hacks/emacs/
 COMMENT=	Improved version of emacsserver for GNU Emacs
 
 GNU_CONFIGURE=	YES
+USE_X11=	YES
 
 EL_FILES=	devices.el gnuserv.el gnuserv-compat.el
 post-install:
