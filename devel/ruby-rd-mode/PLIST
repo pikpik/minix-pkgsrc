@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/06/30 23:33:28 taca Exp $
-${SITE_LISP}/rd-mode.el
-${SITE_LISP}/rd-mode.elc
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:26:28 zuntum Exp $
+${EMACS_LISPPREFIX}/rd-mode/rd-mode.el
+${EMACS_LISPPREFIX}/rd-mode/rd-mode.elc
+@dirrm ${EMACS_LISPPREFIX}/rd-mode
