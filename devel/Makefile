@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.337 2002/10/16 04:47:23 rh Exp $
+# $NetBSD: Makefile,v 1.338 2002/10/16 08:59:34 rh Exp $
 #
 
 COMMENT=	Development utilities
@@ -71,6 +71,7 @@ SUBDIR+=	doc++
 SUBDIR+=	doxygen
 SUBDIR+=	eXdbm
 SUBDIR+=	eel
+SUBDIR+=	eel2
 SUBDIR+=	electricfence
 SUBDIR+=	elib
 SUBDIR+=	emacs-ilisp
