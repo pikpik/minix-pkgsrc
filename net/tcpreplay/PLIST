@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/capinfo
+bin/tcpprep
+man/man1/capinfo.1
+man/man1/tcpprep.1
+man/man8/tcpreplay.8
+sbin/tcpreplay
