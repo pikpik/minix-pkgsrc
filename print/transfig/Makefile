@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2003/03/03 02:51:04 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/09/05 10:49:39 martti Exp $
 #
 
 DISTNAME=		transfig.3.2.4
 PKGNAME=		transfig-3.2.4
 PKGREVISION=		1
 CATEGORIES=		graphics print
-MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/transfig/} \
-			ftp://epb.lbl.gov/xfig/
+MASTER_SITES=		ftp://epb.lbl.gov/xfig/
 
 MAINTAINER=		root@garbled.net
 COMMENT=		TeX document creation tool utilizing portable graphics
