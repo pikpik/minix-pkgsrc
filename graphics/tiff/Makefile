@@ -3,7 +3,7 @@
 # Date created:		27 November 1997
 # Whom:			tron
 #
-# $NetBSD: Makefile,v 1.5 1998/01/29 16:55:20 tron Exp $
+# $NetBSD: Makefile,v 1.6 1998/01/30 13:57:07 agc Exp $
 
 DISTNAME=	tiff-v3.4beta037
 PKGNAME=	tiff-3.4
@@ -52,6 +52,6 @@ CONFIGURE_ARGS+=	--noninteractive --site ${FILESDIR}
 CONFIGURE_ENV+=		PREFIX=${PREFIX}
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib || /usr/bin/true
+	${LDCONFIG} -m ${PREFIX}/lib || ${TRUE}
 
 .include <bsd.port.mk>

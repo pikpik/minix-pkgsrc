@@ -3,7 +3,7 @@
 # Date created:         30th November 1997
 # Whom:                 tron@lyssa.owl.de, soren@t.dk
 #
-# $NetBSD: Makefile,v 1.7 1998/01/24 23:58:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1998/01/29 16:52:14 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/06/19 09:33:26 asami Exp
 #
 
@@ -21,7 +21,7 @@ post-extract:
 	@(cd ${WRKSRC};ln -s .. X11)
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib || /usr/bin/true
+	${LDCONFIG} -m ${PREFIX}/lib || ${TRUE}
 	${MKDIR} ${PREFIX}/share/doc/Xaw3d
 	${CP} ${WRKSRC}/README.XAW3D ${PREFIX}/share/doc/Xaw3d
 
