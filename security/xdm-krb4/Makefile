@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/06/08 16:39:46 wennmach Exp $
+# $NetBSD: Makefile,v 1.2 2000/06/13 08:19:20 wennmach Exp $
 #
 
-DISTNAME=		xdm-krb4-3.3.6.1
+DISTNAME=		xdm-krb4-3.3.6.2
 CATEGORIES=		security x11
 MASTER_SITES=		ftp://gutemine.geo.Uni-Koeln.DE/pub/xdm-krb4/
 
