@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/05/24 00:57:04 taca Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:47:14 grant Exp $
 #
 
 DISTNAME=		yatsvrs-5.00p6
 PKGNAME=		${DISTNAME:S/p/./}
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.jone-system.com/pub/jepro/yatsvr/
 
@@ -28,6 +29,7 @@ CONFIGURE_ARGS+=	--enable-popper-xmit
 CONFIGURE_ARGS+=	--with-log-facility=${YATSVR_LOGFAC}
 CONFIGURE_ARGS+=	--with-yat-sys-dir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-yat-sys-old-dir-v4=${OLDCONFDIR}
+CONFIGURE_ARGS+=	--enable-shadow-password
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
