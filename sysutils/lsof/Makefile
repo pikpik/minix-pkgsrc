@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2002/04/15 15:23:19 christos Exp $
+# $NetBSD: Makefile,v 1.53 2002/04/24 17:48:29 atatat Exp $
 #
 
 DISTNAME=		lsof_4.63
@@ -54,7 +54,7 @@ post-extract:
 	@( cd ${WRKSRC} ; ${ECHO} "y" | ./Inventory || exit 1 )
 
 do-install:
-	${INSTALL} ${COPY} ${STRIPFLAG} -o ${BINOWN} -g ${BINGRP} -m 2755 ${REAL_GROUP} \
+	${INSTALL} ${COPY} ${_STRIPFLAG_INSTALL} -o ${BINOWN} -g ${BINGRP} -m 2755 ${REAL_GROUP} \
 		${WRKSRC}/lsof ${PREFIX}/sbin
 	${INSTALL_MAN} ${WRKSRC}/lsof.man ${PREFIX}/man/man1/lsof.1
 	@${INSTALL_DATA_DIR} ${PREFIX}/share/lsof
