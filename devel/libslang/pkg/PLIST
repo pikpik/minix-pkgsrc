@@ -1,6 +1,8 @@
-@comment $NetBSD: PLIST,v 1.12 2000/06/05 00:56:05 wiz Exp $
+@comment $NetBSD: PLIST,v 1.13 2000/12/11 23:05:33 wiz Exp $
 lib/libslang.a
 lib/libslang.la
+lib/libslang.so
+lib/libslang.so.1
 lib/libslang.so.1.4
 include/slcurses.h
 include/slang.h

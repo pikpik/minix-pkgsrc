@@ -1,6 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/10/15 11:48:44 rh Exp $
 include/GL/glut.h
 include/GL/glutf90.h
+lib/libglut.so
+lib/libglut.so.3
 lib/libglut.so.3.7
 lib/libglut.a
 lib/libglut.la

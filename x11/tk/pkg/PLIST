@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/08/29 16:16:12 jwise Exp $
+@comment $NetBSD: PLIST,v 1.2 2000/09/08 01:03:21 jwise Exp $
 bin/wish
 bin/wish8.3
 include/tk.h
@@ -31,6 +31,8 @@ include/tk/unix/tkUnixDefault.h
 include/tk/unix/tkUnixInt.h
 include/tk/unix/tkUnixPort.h
 lib/libtk83.la
+lib/libtk83.so
+lib/libtk83.so.1
 lib/libtk83.so.1.0
 lib/libtk83.a
 lib/libtkstub83.a

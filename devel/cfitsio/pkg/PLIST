@@ -1,6 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/07/31 16:47:04 tron Exp $
 lib/libcfitsio.a
 lib/libcfitsio.la
+lib/libcfitsio.so
+lib/libcfitsio.so.2
 lib/libcfitsio.so.2.0
 include/cfortran.h
 include/eval_tab.h
