@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2002/08/15 19:22:10 fredb Exp $
+# $NetBSD: Makefile,v 1.58 2002/08/19 15:17:55 wiz Exp $
 
 DISTNAME=		openssl-0.9.6g
 SVR4_PKGNAME=		ossl
@@ -56,8 +56,8 @@ PKG_SYSCONFDIR.${PKGBASE}?=	/etc/openssl
 IGNORE=			${PKGNAME} requires shared object support
 . endif
 
-# This hack goes away, once we formally de-support NetBSD-1.4.2.
-. if ${OS_VERSION:M1.4.[123]} != ""
+# This hack goes away, once we formally de-support NetBSD-1.4.x.
+. if ${OS_VERSION:M1.4.[123]*} != ""
 CONFIGURE_ARGS=		no-shared --openssldir=${PKG_SYSCONFDIR} --prefix=${PREFIX}
 PLIST_SRC=		${PLIST_RSAREF} ${PKGDIR}/PLIST.common
 
