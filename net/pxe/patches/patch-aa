@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- Makefile.in.orig	Thu Mar  7 07:53:38 2002
++++ Makefile.in	Thu Mar  7 07:53:46 2002
+@@ -1,5 +1,5 @@
+ CC		=	g++
+-CFLAGS		=	-g -ggdb -Wall
++CFLAGS		=	-Wall
+ LDFLAGS		=	@LDFLAGS@ @LIBS@
+ 
+ EXECS		=	pxe
