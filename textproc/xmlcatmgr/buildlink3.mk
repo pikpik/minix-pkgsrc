@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:41 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/09/02 11:38:07 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use xmlcatmgr.
 #
@@ -23,8 +23,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxmlcatmgr}
 BUILDLINK_PACKAGES+=	xmlcatmgr
 
 .if !empty(XMLCATMGR_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.xmlcatmgr+=		xmlcatmgr>=0.2
-BUILDLINK_RECOMMENDED.xmlcatmgr+=	xmlcatmgr>=2.0beta1
+BUILDLINK_DEPENDS.xmlcatmgr+=		xmlcatmgr>=2.0beta1
 BUILDLINK_PKGSRCDIR.xmlcatmgr?=		../../textproc/xmlcatmgr
 
 # Location of the xmlcatmgr binary program.
