@@ -1,16 +1,25 @@
 $NetBSD$
 
---- configure.orig	Mon Sep 11 22:00:51 2000
+--- configure.orig	Wed Mar 28 13:46:14 2001
 +++ configure
-@@ -4873,6 +4873,11 @@
+@@ -4007,7 +4007,7 @@
+ 
+                               
+    for ac_hdr in argz.h limits.h locale.h nl_types.h malloc.h string.h \
+-unistd.h sys/param.h
++unistd.h sys/param.h sys/wait.h
+ do
+ ac_safe=`echo "$ac_hdr" | sed 'y%./+-%__p_%'`
+ echo $ac_n "checking for $ac_hdr""... $ac_c" 1>&6
+@@ -4940,6 +4940,11 @@
  
  
  
++
 +# NetBSD: set DATADIRNAME to "share"
 +DATADIRNAME="share"
 +INTLDEPS=
 +INTLLIBS="-lintl"
-+
+ 
  for ac_hdr in dlfcn.h dl.h
  do
- ac_safe=`echo "$ac_hdr" | sed 'y%./+-%__p_%'`
