@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ltcf-cxx.sh.orig	Fri Feb 16 05:05:03 2001
+--- ltcf-cxx.sh.orig	Wed May 23 05:05:06 2001
 +++ ltcf-cxx.sh
-@@ -368,7 +368,23 @@
+@@ -383,7 +383,23 @@
      esac
      ;;
    netbsd*)
@@ -27,7 +27,7 @@ $NetBSD$
      ;;
    osf3*)
      if test "$with_gcc" = yes && test "$with_gnu_ld" = no; then
-@@ -943,6 +959,14 @@
+@@ -982,6 +998,14 @@
  
      esac
    done
