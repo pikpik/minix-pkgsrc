@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/02/14 17:21:56 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2004/04/11 23:34:29 xtraeme Exp $
 
 DISTNAME=	neXtaw-0.15.1
 CATEGORIES=	x11
@@ -19,7 +19,7 @@ EGDIR=		${PREFIX}/share/examples/${PKGBASE}
 .include "../../mk/bsd.prefs.mk"
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-*-alpha)
-USE_PKGSRC_GCC=		# defined
+GCC_REQD+=	2.95
 .endif
 
 post-install:

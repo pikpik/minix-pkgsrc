@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/02/14 17:21:56 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2004/04/15 22:13:31 snj Exp $
 
 DISTNAME=		xfce-3.8.18
 PKGREVISION=		3
@@ -20,7 +20,7 @@ USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		# defined
 
 .if ${MACHINE_ARCH} == "alpha"
-USE_PKGSRC_GCC=		# defined
+GCC_REQD+=		2.95
 .endif
 
 CONFIGURE_ARGS+=	--without-included-gettext
