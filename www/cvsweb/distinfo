@@ -2,3 +2,4 @@ $NetBSD$
 
 SHA1 (cvsweb-1.93.tar.gz) = 89e53ca7585cd626973ee2935e62598f566f2d22
 Size (cvsweb-1.93.tar.gz) = 35906 bytes
+SHA1 (patch-aa) = 02f724547cc9d72755c4b03a6d8bd2d7ef2fa04b
