@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/11/06 19:15:40 gavan Exp $
+# $NetBSD: Makefile,v 1.23 2003/12/19 16:59:22 hubertf Exp $
 #
 
 DISTNAME=	xarchon-0.60
@@ -22,7 +22,12 @@ USE_GCC_SHLIB=	YES
 CONFIGURE_ENV+=	CC="${CC}"
 .endif
 
+#HF#DEPENDS+=	glade-[0-9]*:../../devel/glade
+#HF#CONFIGURE_ENV+=	GTK_CONFIG=${X11PREFIX}/bin/gtk-config
+
 .include "../../audio/esound/buildlink2.mk"
 .include "../../graphics/xpm/buildlink2.mk"
-.include "../../x11/gtk/buildlink2.mk"
+#HF#.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/qt3-libs/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
