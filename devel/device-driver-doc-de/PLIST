@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/device-driver-doc-de/treiber_schreiben.pdf
+share/device-driver-doc-de/treiber_schreiben.ps
+@dirrm share/device-driver-doc-de
