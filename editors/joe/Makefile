@@ -5,7 +5,7 @@
 #
 # Imported into NetBSD by explorer@flame.org
 #
-# $NetBSD: Makefile,v 1.2 1997/10/29 19:56:55 explorer Exp $
+# $NetBSD: Makefile,v 1.3 1998/01/24 04:44:49 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.3 1996/11/17 07:01:28 obrien Exp
 #
 
@@ -20,5 +20,7 @@ MAINTAINER=	explorer@netbsd.org
 ALL_TARGET=	joe
 WRKSRC=		${WRKDIR}/joe
 MAN1=		joe.1
+
+CFLAGS+=	-DTERMINFO
 
 .include <bsd.port.mk>
