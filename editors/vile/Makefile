@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/11/27 10:45:04 agc Exp $
+# $NetBSD: Makefile,v 1.28 2003/03/27 12:39:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:55:09 gj Exp
 
 DISTNAME=		vile-9.3
@@ -29,9 +29,9 @@ FILTERDIR=		${PREFIX}/libexec/vile
 EGDIR=			${PREFIX}/share/examples/vile
 
 post-install:
-	@${INSTALL_SCRIPT} ${WRKSRC}/perl/vileget ${PREFIX}/bin/vileget
-	@${INSTALL_DATA_DIR} ${EGDIR}
-	@for f in filters/spell.rc filters/filters.rc		\
+	${INSTALL_SCRIPT} ${WRKSRC}/perl/vileget ${PREFIX}/bin/vileget
+	${INSTALL_DATA_DIR} ${EGDIR}
+	for f in filters/spell.rc filters/filters.rc		\
 		macros/digraphs.rc macros/pictmode.rc		\
 		macros/manpage.rc visvile/visvile.rc; do	\
 		${INSTALL_DATA} ${WRKSRC}/$$f ${EGDIR};		\
