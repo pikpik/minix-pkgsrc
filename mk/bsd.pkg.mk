@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.177 1998/10/15 10:50:38 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.178 1998/10/15 12:22:40 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1736,7 +1736,7 @@ binpkg-list:
 		;;							\
 	*)								\
 		cd ${PACKAGES}/../..;					\
-		for i in */*; do					\
+		for i in [1-9].*/*; do					\
 			if [ -f $$i/${PKGREPOSITORYSUBDIR}/${PKGNAME}${PKG_SUFX} ]; then \
 				${ECHO} $$i;				\
 			fi ;						\
