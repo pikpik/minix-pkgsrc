@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/05/24 20:39:48 tv Exp $
+# $NetBSD: Makefile,v 1.11 2000/02/05 06:04:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/07/15 15:00:30 cracauer Exp 
 #
 
@@ -7,7 +7,7 @@ CATEGORIES=		shells lang
 MASTER_SITES=		ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/
 
 MAINTAINER= 		packages@netbsd.org
-HOMEPAGE=		http://www-swiss.ai.mit.edu/scsh/
+HOMEPAGE=		http://www.swiss.ai.mit.edu/ftpdir/scsh/
 
 NOT_FOR_PLATFORM=	*-*-alpha	# Needs scheme
 
