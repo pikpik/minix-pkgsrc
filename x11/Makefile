@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.211 2001/03/26 07:10:39 fredb Exp $
+# $NetBSD: Makefile,v 1.212 2001/03/27 23:18:59 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -70,7 +70,6 @@ SUBDIR+=	rxvt
 SUBDIR+=	speyes
 SUBDIR+=	ssystem
 SUBDIR+=	swing
-SUBDIR+=	tix
 SUBDIR+=	tk
 SUBDIR+=	tkinfo
 SUBDIR+=	tkman
