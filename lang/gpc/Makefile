@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/17 18:47:15 jtb Exp $
 
 DISTNAME=		gpc-2.1
 CATEGORIES=		lang
-MASTER_SITES=		http://www.gnu-pascal.de/
+MASTER_SITES=		http://www.gnu-pascal.de/current/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=		gcc-2.95.3.tar.gz
 
