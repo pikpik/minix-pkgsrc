@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/10/18 13:49:42 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 13:30:51 wiz Exp $
 #
 
 DISTNAME=       vorbis_nightly_cvs-20000818
@@ -18,6 +18,8 @@ COMMENT=	Encoder/decoder for Ogg Vorbis audio coding format
 DEPENDS+=	libgetopt>=1.3:../../devel/libgetopt
 LDFLAGS+=	-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib -lgetopt
 .endif
+
+CONFLICTS=	vorbis-tools-*
 
 WRKSRC=		${WRKDIR}/vorbis
 GNU_CONFIGURE=	YES
