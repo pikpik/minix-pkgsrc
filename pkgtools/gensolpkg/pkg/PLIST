@@ -1,0 +1,3 @@
+@comment $NetBSD$
+sbin/gensolpkg
+man/man1/gensolpkg.1
