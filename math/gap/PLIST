@@ -1,9 +1,9 @@
 @comment $NetBSD$
 bin/gap
-bin/gap4.3nb1
+bin/gap4.3nb2
 lib/gap4.3/bin/${MACHINE_GNU_PLATFORM}-cc/gac
 lib/gap4.3/bin/${MACHINE_GNU_PLATFORM}-cc/gap
-lib/gap4.3/description3
+lib/gap4.3/description4
 lib/gap4.3/doc/ext/about.tex
 lib/gap4.3/doc/ext/document.tex
 lib/gap4.3/doc/ext/foa.tex
