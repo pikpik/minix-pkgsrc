@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: wwwoffled.sh,v 1.1 2003/08/29 09:25:41 jmmv Exp $
 #
 # PROVIDE: wwwoffled
 # REQUIRE: DAEMON network
@@ -11,6 +11,7 @@ if [ -f /etc/rc.subr ]; then
 fi
 
 name="wwwoffled"
+rcvar="${name}"
 command="@PREFIX@/sbin/${name}"
 control_prog="@PREFIX@/bin/wwwoffle"
 command_args="-c @PKG_SYSCONFDIR@/wwwoffle.conf"
