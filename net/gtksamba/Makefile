@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/04/25 08:42:00 snj Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:17:53 tv Exp $
 #
 
 DISTNAME=	gtksamba-0.3.2pl1
@@ -13,7 +13,7 @@ COMMENT=	Samba configuration tool for X Window System
 
 GNU_CONFIGURE=	yes
 USE_BUILDLINK3=	yes
-CONFIGURE_ENV+=	CFLAGS="-DPREFIX='\"${PREFIX}\"' ${CFLAGS}"
+CPPFLAGS+=	-DPREFIX='"${PREFIX}"'
 
 post-install:
 	@ ${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gtksamba
