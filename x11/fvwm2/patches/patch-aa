@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- utils/Makefile.in.orig	Wed Jan 20 06:29:27 1999
 +++ utils/Makefile.in	Mon Feb 22 03:54:05 1999
 @@ -83,10 +83,10 @@
