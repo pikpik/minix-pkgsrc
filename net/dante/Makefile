@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/12/19 22:25:30 agc Exp $
+# $NetBSD: Makefile,v 1.6 2002/07/12 14:47:03 wiz Exp $
 #
 
 DISTNAME=		dante-1.1.13
@@ -14,7 +14,7 @@ CONFLICTS=		socks4-[0-9]*
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--with-socks-conf=${PREFIX}/etc/socks.conf
 CONFIGURE_ARGS+=	--with-sockd-conf=${PREFIX}/etc/sockd.conf
 
