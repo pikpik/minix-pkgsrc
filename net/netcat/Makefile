@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.3 1999/03/07 00:40:40 kim Exp $
+# $NetBSD: Makefile,v 1.4 2000/02/05 19:52:29 wiz Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
 WRKSRC=		${WRKDIR}
 CATEGORIES=	net
-MASTER_SITES=	ftp://zippy.telcom.arizona.edu/pub/mirrors/avian.org/hacks/ \
+MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/ \
+		ftp://zippy.telcom.arizona.edu/pub/mirrors/avian.org/hacks/ \
 		ftp://ftp.sterling.com/mirrors/avian.org/src/hacks/ \
-		ftp://coast.cs.purdue.edu/pub/tools/unix/netcat/ \
 		ftp://ftp.rge.com/pub/security/coast/mirrors/avian.org/netcat/ \
 		ftp://ftp.gw.com/pub/unix/netcat/ \
 		ftp://avian.org/src/hacks/
