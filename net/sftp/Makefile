@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/12/21 22:37:51 hubertf Exp $
 #
 
 DISTNAME=	sftp-0.4
-CATEGORIES=	net
+CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.xbill.org/pub/sftp/
 
 MAINTAINER=	hubertf@netbsd.org
