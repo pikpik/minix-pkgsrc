@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/08/20 15:17:01 tsarna Exp $
+# $NetBSD: Makefile,v 1.9 1998/09/27 18:07:09 tron Exp $
 #
 
 DISTNAME=	kdegraphics-1.0
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.kde.org/
 
 DEPENDS+=	giflib-3.0:../../graphics/giflib
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
-DEPENDS+=	qt-1.40:../../x11/qt
+DEPENDS+=	qt-1.41:../../x11/qt
 DEPENDS+=	kdelibs-1.0:../../x11/kdelibs
 DEPENDS+=	kdebase-1.0:../../x11/kdebase
 
