@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Makeconf.base.orig	Thu Sep  9 11:53:24 2004
-+++ Makeconf.base
+--- Makeconf.in.orig	Thu Sep  9 16:04:09 2004
++++ Makeconf.in
 @@ -27,6 +27,8 @@ RANLIB = @RANLIB@
  STRIP = @STRIP@
  LN_S = @LN_S@
