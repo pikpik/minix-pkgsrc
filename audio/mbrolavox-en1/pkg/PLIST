@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.1 1997/11/06 09:57:40 proff Exp $
+share/festival/lib/voices/english/rab_mbrola/festvox/rab_mbrola.scm
+@dirrm share/festival/lib/voices/english/rab_mbrola/festvox
+@dirrm share/festival/lib/voices/english/rab_mbrola

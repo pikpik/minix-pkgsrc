@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- festival/config/config-dist	Mon Jan 11 20:59:22 1999
++++ festival/config/config	Thu Mar 11 02:41:30 1999
+@@ -43,6 +43,7 @@
+ # ALSO_INCLUDE += diphone
+ # ALSO_INCLUDE += clunits
+ # ALSO_INCLUDE += rjc_synthesis
++ALSO_INCLUDE+=OGIresLPC
+ 
+ ###########################################################################
+ ##
