@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/14 21:16:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/29 04:48:33 xtraeme Exp $
 
 DISTNAME=	# empty
 PKGNAME=	xorg-${XORG_VER}
@@ -28,6 +28,7 @@ NO_BUILDLINK=		# defined
 NO_CHECKSUM=		# defined
 NO_MTREE=		# defined
 NO_XORG_TARGETS=	# defined
+USE_DIRS+=		xorg-1.0
 NO_CONFIGURE=		# defined
 
 do-install:
