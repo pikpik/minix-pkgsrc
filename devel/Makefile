@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.157 2000/12/08 23:44:25 jtb Exp $
+# $NetBSD: Makefile,v 1.158 2000/12/12 01:30:46 wiz Exp $
 #
 
     SUBDIR += GConf
@@ -142,6 +142,7 @@
     SUBDIR += smpeg
     SUBDIR += stooop
     SUBDIR += swig
+    SUBDIR += tavrasm
     SUBDIR += tkcvs
     SUBDIR += tkdiff
     SUBDIR += unproven-pthreads
