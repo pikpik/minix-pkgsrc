@@ -1,8 +1,8 @@
 $NetBSD$
 
---- doc/Makefile.in.orig	Sat May 20 12:29:57 2000
-+++ doc/Makefile.in	Wed May 31 11:22:31 2000
-@@ -318,8 +318,6 @@
+--- doc/Makefile.in.orig	Sun Mar 18 01:30:34 2001
++++ doc/Makefile.in	Sun Mar 18 01:30:56 2001
+@@ -321,8 +321,6 @@
  	    echo '-- Installing '$$i ; \
  	    $(INSTALL_DATA) $$i $(DESTDIR)$(TARGET_DIR); \
  	  done; \
