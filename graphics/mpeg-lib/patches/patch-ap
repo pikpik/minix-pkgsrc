@@ -1,8 +1,8 @@
 $NetBSD$
 
 --- Makefile.in.orig	Mon Feb 26 13:12:54 1996
-+++ Makefile.in	Sun Jul 26 10:25:54 1998
-@@ -6,7 +6,7 @@
++++ Makefile.in
+@@ -6,11 +6,11 @@
  
  # Various programs and their options
  
@@ -11,6 +11,11 @@ $NetBSD$
  OPT           = @OPT@
  DEFS          = @DEFS@
  INCLUDES      = -I.
+-CFLAGS        = $(OPT) $(DEFS) $(INCLUDES)
++CFLAGS        += $(OPT) $(DEFS) $(INCLUDES)
+ AR            = @AR@
+ ARFLAGS       = ru
+ RANLIB        = @RANLIB@
 @@ -31,7 +31,7 @@
  
  # Other files of interest
