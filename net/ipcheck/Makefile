@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/11/11 09:32:27 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:22:19 agc Exp $
 #
 
 DISTNAME=	ipcheck.py
-PKGNAME=	ipcheck-0.207
+PKGNAME=	ipcheck-0.217
 CATEGORIES=	net
 MASTER_SITES=	http://ipcheck.sourceforge.net/
 
