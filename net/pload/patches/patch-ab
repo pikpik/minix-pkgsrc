@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Imakefile.orig	Thu Mar  4 08:33:03 1999
++++ Imakefile
+@@ -15,7 +15,7 @@
+ 
+ ComplexProgramTarget(pload)
+ 
+-distclean: clean	
++distclean:: clean	
+ 	$(RM) Makefile osdefs.mk core
+ 
+ tgz:	
