@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/12/30 15:34:52 cjep Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/02 15:10:06 cjep Exp $
 #
 
-DISTNAME=	bsdgrep-200312301530
-PKGNAME=	bsdgrep-devel-20031230
+DISTNAME=	bsdgrep-200405051607
+PKGNAME=	bsdgrep-devel-20040505
 CATEGORIES=	sysutils textproc
 MASTER_SITES=	http://www.fawlty.net/software/
 
