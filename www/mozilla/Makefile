@@ -30,12 +30,17 @@ USE_X11BASE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-tests \
 		--disable-debug \
-		--enable-optimize \
 		--with-jpeg=${LOCALBASE} \
 		--with-png=${LOCALBASE} \
 		--enable-mathml \
 		--enable-svg \
 		--with-extensions=cookie,irc,wallet,xmlextras,xml-rpc
+
+.if  ${MACHINE_ARCH} == "m68k"
+DBG=
+.else
+CONFIGURE_ARGS+= --enable-optimize
+.endif
 
 MOZ_LIBDIR=	${PREFIX}/lib/mozilla
 MAKE_ENV+=	LIBRUNPATH=${MOZ_LIBDIR}
