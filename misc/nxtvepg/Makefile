@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/18 19:17:24 tron Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/18 20:25:59 veego Exp $
 
-DISTNAME=	nxtvepg-0.4.3
+DISTNAME=	nxtvepg-0.4.4
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
