@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/xglobe
+lib/X11/xglobe/xglobe-markers
+lib/X11/xglobe/map.bmp
+lib/X11/xglobe/daymap.gif
+lib/X11/xglobe/nightmap.gif
+@dirrm lib/X11/xglobe
