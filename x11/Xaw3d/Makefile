@@ -15,6 +15,9 @@ MASTER_SITE_SUBDIR=	widgets/Xaw3d/R6.1
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xc/lib/Xaw3d
 
+post-extract:
+	@(cd ${WRKSRC};ln -s .. X11)
+
 post-install:
 	${LDCONFIG} -m ${PREFIX}/lib
 	${MKDIR} -p ${PREFIX}/share/doc/Xaw3d
