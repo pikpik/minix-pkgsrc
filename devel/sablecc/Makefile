@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/10/10 01:01:10 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/31 15:44:28 jlam Exp $
 #
 
 DISTNAME=	sablecc-2.16.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.sourceforge.net/sourceforge/sablecc/
 
