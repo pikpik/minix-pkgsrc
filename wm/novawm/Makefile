@@ -1,9 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/18 22:04:18 jmmv Exp $
 #
 
-DISTNAME=	novawm-0.7_alpha
-PKGNAME=	${DISTNAME:S/_alpha/rc1/}
-WRKSRC=		${WRKDIR}/${DISTNAME:S/_alpha//}
+DISTNAME=	NovaWM-0.8_alpha
+PKGNAME=	novawm-0.8
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=novawm/}
 
