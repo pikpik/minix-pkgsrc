@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/05/18 13:52:49 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2001/05/20 05:21:45 jlam Exp $
 
 DISTNAME=		perl-${PERL_VERSION}
 PKGNAME=		libperl-${PERL_VERSION}nb3
@@ -14,7 +14,7 @@ COMMENT=		Perl DynaLoader as a shared object
 USE_PERL5=		# defined
 PERL_REQD=		${PERL_VERSION}nb6
 
-DISTINFO_FILE=		${.CURDIR}/../../lang/perl5-base/distinfo
+#DISTINFO_FILE=		${.CURDIR}/../../lang/perl5-base/distinfo
 
 EXTRACT_ELEMENTS=	${DISTNAME}/ext/DynaLoader
 WRKSRC=			${WRKDIR}/${EXTRACT_ELEMENTS}
