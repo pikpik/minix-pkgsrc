@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/05/05 16:54:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/13 13:53:41 wiz Exp $
 #
 
 DISTNAME=		enlightenment-conf-0.15
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://www.rasterman.com/pub/enlightenment/enlightenment/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.enlightenment.org/
-COMMENT=		configuration tool for easily setting up Enlightenment
+COMMENT=		Configuration tool for easily setting up Enlightenment
 
 USE_BUILDLINK2=		yes
 USE_X11=		yes

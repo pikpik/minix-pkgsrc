@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/16 08:04:20 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:55:12 grant Exp $
 #
 
 DISTNAME=	fvwm-themes-${THEM_VER}
@@ -11,7 +11,7 @@ DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}	\
 
 MAINTAINER=	gendalia@NetBSD.org
 HOMEPAGE=	http://fvwm-themes.sourceforge.net
-COMMENT=	configuration framework for fvwm2 with samples
+COMMENT=	Configuration framework for fvwm2 with samples
 
 DEPENDS+=	fvwm2>=2.4.8:../../wm/fvwm2
 

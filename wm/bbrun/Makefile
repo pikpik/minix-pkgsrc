@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/02 11:56:34 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/13 13:53:40 wiz Exp $
 
 DISTNAME=	bbrun-1.3
 PKGREVISION=	2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.dwave.net/~jking/bbrun/
 
 MAINTAINER=	ptiJo@noos.fr
 HOMEPAGE=	http://www.dwave.net/~jking/bbrun/
-COMMENT=	run utility for BlackBox
+COMMENT=	Run utility for BlackBox
 
 USE_BUILDLINK2=	YES
 USE_X11=	YES
