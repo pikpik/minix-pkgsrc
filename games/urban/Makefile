@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:47 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/10 11:47:00 kristerw Exp $
 #
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	urban-1.5.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
-MASTER_SITES=	http://urban.worldonline.nl/files/linux/
+MASTER_SITES=	http://urban.bengburken.net/files/linux/
 DISTFILES=	urban-1.5.2${EXTRACT_SUFX} sound${EXTRACT_SUFX}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://urban.worldonline.nl/
+HOMEPAGE=	http://urban.bengburken.net/eng/
 COMMENT=	U.R.B.A.N The Cyborg Project
 
 USE_BUILDLINK3=		yes
