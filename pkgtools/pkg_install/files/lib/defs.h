@@ -1,4 +1,4 @@
-/* $NetBSD: defs.h,v 1.2 2002/10/08 11:20:31 agc Exp $ */
+/* $NetBSD: defs.h,v 1.1 2002/01/09 16:17:08 agc Exp $ */
 
 /*
  * Copyright (c) 1999-2000 Alistair G. Crooks.  All rights reserved.
@@ -33,12 +33,19 @@
 #ifndef DEFS_H_
 #define DEFS_H_
 
-#ifdef HAVE_ERR_H
+#include <nbcompat.h>
+#if HAVE_CONFIG_H
+#include "config.h"
+#endif
+#if HAVE_ERR_H
 #include <err.h>
 #endif
-
+#if HAVE_STDLIB_H
 #include <stdlib.h>
+#endif
+#if HAVE_STRING_H
 #include <string.h>
+#endif
 
 #define NEWARRAY(type,ptr,size,where,action) do {			\
 	if ((ptr = (type *) calloc(sizeof(type), (unsigned)(size))) == NULL) { \

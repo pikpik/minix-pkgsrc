@@ -1,4 +1,4 @@
-/*	$NetBSD: path.c,v 1.1.1.1 2002/12/20 18:14:06 schmonz Exp $	*/
+/*	$NetBSD: path.c,v 1.1.4.1 2003/07/13 09:45:28 jlam Exp $	*/
 
 /*-
  * Copyright (c)2002 YAMAMOTO Takashi,
@@ -26,18 +26,18 @@
  * SUCH DAMAGE.
  */
 
-#if 0
-#include <sys/cdefs.h>
-#ifndef lint
-__RCSID("$NetBSD: path.c,v 1.1.1.1 2002/12/20 18:14:06 schmonz Exp $");
-#endif
-#endif
-
-#ifdef HAVE_CONFIG_H
+#include <nbcompat.h>
+#if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_SYS_CDEFS_H
+#include <sys/cdefs.h>
+#endif
+#ifndef lint
+__RCSID("$NetBSD: path.c,v 1.1.4.1 2003/07/13 09:45:28 jlam Exp $");
+#endif
 
-#ifdef HAVE_ERR_H
+#if HAVE_ERR_H
 #include <err.h>
 #endif
 

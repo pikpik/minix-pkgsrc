@@ -1,10 +1,14 @@
-/*	$NetBSD: version.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $	*/
+/*	$NetBSD: version.c,v 1.1 2001/03/05 16:53:14 wiz Exp $	*/
 
-#if 0
-#include <sys/cdefs.h>
-#ifndef lint
-__RCSID("$NetBSD: version.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $");
+#include <nbcompat.h>
+#if HAVE_CONFIG_H
+#include "config.h"
 #endif
+#if HAVE_SYS_CDEFS_H
+#include <sys/cdefs.h>
+#endif
+#ifndef lint
+__RCSID("$NetBSD: version.c,v 1.1 2001/03/05 16:53:14 wiz Exp $");
 #endif
 
 /*
@@ -37,7 +41,9 @@ __RCSID("$NetBSD: version.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $");
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#if HAVE_STDIO_H
 #include <stdio.h>
+#endif
 
 #include "lib.h"
 #include "version.h"

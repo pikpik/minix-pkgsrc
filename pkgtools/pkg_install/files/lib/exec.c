@@ -1,13 +1,17 @@
-/*	$NetBSD: exec.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $	*/
+/*	$NetBSD: exec.c,v 1.9 2002/06/27 12:05:52 yamt Exp $	*/
 
-#if 0
+#include <nbcompat.h>
+#if HAVE_CONFIG_H
+#include "config.h"
+#endif
+#if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
+#endif
 #ifndef lint
 #if 0
 static const char *rcsid = "from FreeBSD Id: exec.c,v 1.6 1997/10/08 07:47:50 charnier Exp";
 #else
-__RCSID("$NetBSD: exec.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $");
-#endif
+__RCSID("$NetBSD: exec.c,v 1.9 2002/06/27 12:05:52 yamt Exp $");
 #endif
 #endif
 
@@ -30,14 +34,10 @@ __RCSID("$NetBSD: exec.c,v 1.2 2002/10/28 14:42:18 bouyer Exp $");
  * Miscellaneous system routines.
  *
  */
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
 
-#ifdef HAVE_ERR_H
+#if HAVE_ERR_H
 #include <err.h>
 #endif
-
 #include "lib.h"
 
 /*
