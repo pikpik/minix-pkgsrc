@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/02/14 17:21:37 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2004/02/14 18:26:27 jmmv Exp $
 #
 
 DISTNAME=		eel-2.4.1
@@ -10,7 +10,7 @@ EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
-COMMENT=		Eazel Extentions Library for GNOME2
+COMMENT=		Eazel Extensions Library for GNOME2
 
 BUILD_USES_MSGFMT=	YES
 DEPENDS=		gnome2-dirs>=1.0:../../misc/gnome2-dirs
