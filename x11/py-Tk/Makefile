@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/09/27 22:24:44 tsarna Exp $
+# $NetBSD: Makefile,v 1.7 1998/11/12 14:56:32 agc Exp $
 #
 
 DISTNAME=	pyth151
@@ -15,8 +15,6 @@ DEPENDS+=	tk-8.0p2:../../x11/tk80
 DEPENDS+=	tcl-8.0p2:../../lang/tcl80
 
 DIST_SUBDIR=	python
-
-NOT_FOR_ARCHS=  alpha # possibly broken
 
 WRKSRC=		${WRKDIR}/Python-1.5.1/Modules
 ALL_TARGET=	default
