@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nbc-vbi
+share/doc/nbc-vbi/README
+@dirrm share/doc/nbc-vbi
