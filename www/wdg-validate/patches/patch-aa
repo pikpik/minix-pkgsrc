@@ -1,13 +1,7 @@
-$NetBSD: patch-ab,v 1.3 2000/11/26 21:59:47 ad Exp $
+$NetBSD: patch-aa,v 1.1.1.1 2001/05/30 09:44:53 abs Exp $
 
 --- validate.netbsd.orig        Wed May 30 00:53:44 2001
 +++ validate.netbsd     Wed May 30 00:56:20 2001
-@@ -1,4 +1,4 @@
--#!/usr/bin/perl
-+#!@PREFIX@/bin/perl
- 
- #####################################################################
- #
 @@ -39,10 +39,10 @@
  my $tryHelp = qq{Try "validate --help" for more information.};
  
