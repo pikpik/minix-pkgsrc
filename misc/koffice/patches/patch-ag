@@ -2,7 +2,7 @@ $NetBSD$
 
 --- lib/kformula/elementindex.h.orig	Sun May 27 15:07:03 2001
 +++ lib/kformula/elementindex.h
-@@ -30,7 +30,52 @@
+@@ -30,7 +30,54 @@
  
  class ElementIndex;
  
@@ -48,9 +48,11 @@ $NetBSD$
 +};
 +
 +typedef auto_ptr<ElementIndex> ElementIndexPtr;
-+#endif
 +#else
  typedef std::auto_ptr<ElementIndex> ElementIndexPtr;
++#endif
++#else
++typedef std::auto_ptr<ElementIndex> ElementIndexPtr;
 +#endif
  
  
