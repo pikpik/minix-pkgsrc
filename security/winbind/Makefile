@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/11/12 03:39:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/11 00:33:03 jlam Exp $
 
 PKGNAME=		winbind-${SAMBA_DIST_VERS}
 PKGREVISION=		1
@@ -7,7 +7,7 @@ CATEGORIES=		security
 USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 
-.include "../../net/samba/Makefile.common"
+.include "../../net/samba2/Makefile.common"
 
 MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://www.samba.org/
