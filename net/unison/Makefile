@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/09/28 23:54:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2002/01/17 13:19:45 dmcmahill Exp $
 #
 
 DISTNAME=	src
-PKGNAME=	unison-2.7.7
+PKGNAME=	unison-2.9.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/latest/
 
