@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.262 1999/04/29 14:27:28 tv Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.263 1999/05/02 03:24:59 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -1302,7 +1302,7 @@ root-install:
 			${SCRIPTDIR}/post-install;	\
 	fi
 .for f in ${INFO_FILES}
-	${ECHO} "install-info --info-dir=${PREFIX}/info ${PREFIX}/info/${f}"; \
+	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} "install-info --info-dir=${PREFIX}/info ${PREFIX}/info/${f}"; \
 	install-info --remove --info-dir=${PREFIX}/info ${PREFIX}/info/${f}; \
 	install-info --info-dir=${PREFIX}/info ${PREFIX}/info/${f}
 .endfor
