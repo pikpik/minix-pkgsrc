@@ -1,8 +1,13 @@
 $NetBSD$
 
---- Makefile.in.orig	Tue May 18 22:16:06 1999
-+++ Makefile.in	Tue May  9 00:33:33 2000
-@@ -31,7 +31,7 @@
+--- Makefile.in.orig	Tue May 18 23:16:06 1999
++++ Makefile.in
+@@ -27,11 +27,11 @@
+ LIBS = @LIBS@ -lc
+ 
+ # SunOS 4 users might wish to add '-fpcc-struct-return' to CFLAGS. see INSTALL.
+-CFLAGS = -O
++CFLAGS += -O
  LDFLAGS =
  
  # Common prefix for installation directories
