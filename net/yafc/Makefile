@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/06/25 02:12:40 markd Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/25 18:40:23 wiz Exp $
 
-DISTNAME=	yafc-0.7.8
+DISTNAME=	yafc-0.7.10
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yafc/}
 EXTRACT_SUFX=	.tar.bz2
