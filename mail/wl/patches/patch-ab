@@ -1,8 +1,8 @@
 $NetBSD$
 
---- WL-ELS.orig	Tue Nov 21 01:36:15 2000
+--- WL-ELS.orig	Tue Jan 14 12:44:20 2003
 +++ WL-ELS
-@@ -78,7 +78,7 @@
+@@ -71,7 +71,7 @@
     (cons WLDIR WL-MODULES)
     (if (module-installed-p 'bbdb)
         (cons UTILSDIR (list 'bbdb-wl)))
