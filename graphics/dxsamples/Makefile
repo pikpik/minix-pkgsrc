@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 15:22:17 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/27 23:18:10 jlam Exp $
 
-DISTNAME=	dxsamples-4.0.8
+DISTNAME=	dxsamples-4.1.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.research.ibm.com/dx/srcDownload/srcArchive/
 
