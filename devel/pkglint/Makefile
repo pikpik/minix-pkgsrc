@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/06/18 15:44:13 agc Exp $
+# $NetBSD: Makefile,v 1.1 1998/08/07 22:11:40 tsarna Exp $
 #
 
 DISTNAME=		pkglint-1.65
@@ -6,7 +6,7 @@ CATEGORIES=		devel
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		frueauf@netbsd.org
+MAINTAINER=		packages@netbsd.org
 
 USE_PERL5=		YES
 
