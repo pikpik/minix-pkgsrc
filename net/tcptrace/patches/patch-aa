@@ -1,7 +1,7 @@
 $NetBSD$
---- Makefile.in.orig	Fri Apr 16 15:11:50 1999
-+++ Makefile.in	Fri Apr 16 15:12:02 1999
-@@ -170,7 +170,7 @@
+--- Makefile.in.orig	Wed Sep  8 03:31:58 1999
++++ Makefile.in	Wed Sep 15 16:40:36 1999
+@@ -179,7 +179,7 @@
  # easily.
  #
  filt_parser.c: filt_parser.y filter.h

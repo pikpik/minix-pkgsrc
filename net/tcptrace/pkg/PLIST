@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1997/12/14 22:43:10 thorpej Exp $
 bin/tcptrace
+man/man1/tcptrace.1
 share/doc/tcptrace/COPYRIGHT
 share/doc/tcptrace/README
 share/doc/tcptrace/README.tput_graphs
