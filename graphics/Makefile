@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2000/03/14 19:08:12 tron Exp $
+# $NetBSD: Makefile,v 1.76 2000/03/14 19:10:39 tron Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -65,6 +65,7 @@
     SUBDIR += py-imaging
     SUBDIR += qvplay
     SUBDIR += rayshade
+    SUBDIR += ruby-gl
     SUBDIR += sane
     SUBDIR += sketch
     SUBDIR += tgif
