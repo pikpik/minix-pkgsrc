@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/lambd
+man/man8/lambd.8
+man/cat8/lambd.0
