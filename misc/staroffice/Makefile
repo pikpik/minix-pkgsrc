@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/08/31 02:35:27 hubertf Exp $
+# $NetBSD: Makefile,v 1.14 2001/01/29 11:34:34 wiz Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -135,6 +135,6 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${file} ${PREFIX}/bin
 .endfor
 	${SED} -e 's#@@PREFIX@@#${PREFIX}#g' < ${FILESDIR}/INSTALL \
-		>$WRKDIR}/INSTALL
+		>${WRKDIR}/INSTALL
 
 .include "../../mk/bsd.pkg.mk"
