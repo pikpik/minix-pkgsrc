@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: ddclient.sh,v 1.4 2002/09/20 02:01:57 grant Exp $
+# $NetBSD: ddclient.sh,v 1.5 2004/01/16 12:55:21 jlam Exp $
 #
 # Dynamic DNS update client
 #
@@ -13,7 +13,7 @@ fi
 
 name="ddclient"
 rcvar=${name}
-command="@PERL5_PATH@"
+command="@PERL5@"
 daemon="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 required_files="${daemon} @PKG_SYSCONFDIR@/${name}.conf"
