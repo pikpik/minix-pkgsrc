@@ -1,9 +1,9 @@
 $NetBSD$
 
---- bladeenc/system.h.orig	Sat Dec 11 04:37:30 1999
-+++ bladeenc/system.h	Sat Dec 11 04:38:33 1999
-@@ -39,7 +39,7 @@
- #define			BEOS_PPC				18
+--- bladeenc/system.h.orig	Tue Feb 22 21:46:44 2000
++++ bladeenc/system.h	Mon Apr 10 20:25:50 2000
+@@ -40,7 +40,7 @@
+ #define			BEOS_X86				19
  
  #ifndef	SYSTEM
 -#	define		SYSTEM		LINUX_I386		/* Set current system here, select */
