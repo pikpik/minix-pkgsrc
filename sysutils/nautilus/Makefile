@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2004/02/10 17:59:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2004/02/11 06:30:13 xtraeme Exp $
 #
 
 DISTNAME=		nautilus-2.4.2
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus/2.4/}
 EXTRACT_SUFX=		.tar.bz2
