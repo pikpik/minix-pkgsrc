@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/05/11 09:15:43 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/19 03:56:36 jlam Exp $
 #
 
 DISTNAME=       blackdown-jdk-1.3.0.nb2
@@ -22,6 +22,7 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_SRC_ON_FTP= ${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_FTP= ${RESTRICTED}
+CHECK_SHLIBS=	NO		#This would use NetBSD ldd on Linux shlibs.
 
 .include "../../mk/bsd.prefs.mk"
 
