@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/05/11 07:49:55 abs Exp $
+# $NetBSD: Makefile,v 1.7 1999/05/24 20:39:44 tv Exp $
 #
 
 DISTNAME=		perl5.004_04
@@ -23,7 +23,7 @@ PATCHDIR=		../perl5/patches
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ENV+=		PREFIX=${PREFIX}
-CONFIGURE_SCRIPT=	Configure
+CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX} -Duseshrplib=true \
 			-Darchname=${MACHINE_ARCH}-${LOWER_OPSYS} \
 			-Dusemymalloc=false

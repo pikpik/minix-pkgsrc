@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/11/13 01:05:08 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1999/03/22 09:38:23 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/05/26 04:04:11 mph Exp
 #
 
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${BUILD_ROOT}/graphics/urt/${WRKDIR:T}/include/rle.h:../../graphi
 DEPENDS+=	urt-3.1b1:../../graphics/urt
 
 HAS_CONFIGURE=		yes
-CONFIGURE_SCRIPT=	Configure
+CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	< ${WRKDIR}/config.ans
 ALL_TARGET=
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/21 13:20:32 pooka Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/27 04:43:33 wiz Exp $
 
 .include		"Makefile.common"
 
@@ -12,7 +12,7 @@ INSTALL_TARGET=		installvimhelp installhelplinks installmacros \
 			installtutor installtools
 
 post-configure:
-	cd ${WRKSRC}/ctags ; ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} \
+	cd ${WRKSRC}/ctags ; ${CONFIGURE_ENV} ${CONFIGURE_SCRIPT} \
 			     ${CONFIGURE_ARGS}
 
 do-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/08/20 15:16:41 tsarna Exp $
+# $NetBSD: Makefile,v 1.3 1998/09/14 17:15:05 agc Exp $
 #
 
 DISTNAME=	fastcap-2.0-15Jul92
@@ -21,7 +21,7 @@ IGNOREFILES=	postscript/ug.ps.Z \
 		postscript/tcad.ps.Z
 
 HAS_CONFIGURE=		yes
-CONFIGURE_SCRIPT=	config
+CONFIGURE_SCRIPT=	./config
 CONFIGURE_ARGS=		4
 
 do-install:

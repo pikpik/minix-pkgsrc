@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/02/16 19:07:32 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2000/03/18 19:51:31 wiz Exp $
 #
 
 DISTNAME=		trn4-test72
@@ -26,7 +26,7 @@ TRN_HOSTBITS?=		0
 USE_PERL5=		yes
 
 HAS_CONFIGURE=		yes
-CONFIGURE_SCRIPT=	Configure
+CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ENV=		PREFIX=${PREFIX}
 CONFIGURE_ARGS=		-d -e -D bin=${PREFIX}/bin \
 		-D binexp=${PREFIX}/bin \

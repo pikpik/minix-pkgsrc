@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2000/01/17 03:07:09 christos Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/18 22:27:17 tron Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/07/18 06:16:44 markm Exp
 #
 
@@ -13,7 +13,7 @@ HOMEPAGE=		http://language.perl.com/index.html
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ENV+=		PREFIX=${PREFIX}
-CONFIGURE_SCRIPT=	Configure
+CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX} -Doptimize="${CFLAGS}" \
 			-Darchname=${MACHINE_ARCH}-${LOWER_OPSYS} \
 			-Dcc=gcc -Dusemymalloc=false

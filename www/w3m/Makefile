@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/03/02 15:47:35 itojun Exp $
+# $NetBSD: Makefile,v 1.6 2000/03/16 11:19:16 pooka Exp $
 
 DISTNAME=	w3m-0.1.6
 CATEGORIES=	www
@@ -65,7 +65,7 @@ do-configure:
 	@yes '' | (cd ${WRKSRC} && CC="${CC}" ac_cv_path_CC="${CC}" \
 	    INSTALL="${INSTALL_SCRIPT}"                             \
 	    CFLAGS="${CFLAGS}" INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
+	    ${CONFIGURE_ENV} ${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
 
 pre-build:
 	@(cd ${WRKSRC}; \
