@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- ../sqlite/src/attach.c.orig	2003-06-14 13:04:08.000000000 +0100
++++ ../sqlite/src/attach.c
+@@ -15,2 +15,3 @@
+ */
++#include "os.h"
+ #include "sqliteInt.h"
