@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.9 2000/06/21 02:58:23 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2000/08/06 01:11:38 fredb Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/06/14 23:34:59 jseger Exp
 #
 
 DISTNAME=		w3c-${PKGNAME}
 PKGNAME=		libwww-5.3.1
 CATEGORIES=		www devel
-MASTER_SITES=		http://www.w3.org/Library/Distribution/
+MASTER_SITES=		http://www.w3.org/Library/Distribution/ \
+			ftp://ftp.uni-hannover.de/pub/mirror/info-systems/WWW/libwww/
 
 MAINTAINER=		tv@netbsd.org
 HOMEPAGE=		http://www.w3.org/Library/
