@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/08/23 23:14:23 tron Exp $
+# $NetBSD: Makefile,v 1.24 2000/09/28 11:29:59 toshii Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 
 DISTNAME=	xemacs-21.1.9
@@ -69,7 +69,7 @@ pre-configure:
 
 post-install:
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/${DISTNAME}
-	@${LN} -s ${DISTNAME} ${PREFIX}/lib/xemacs
+	@${MKDIR} ${PREFIX}/lib/xemacs
 	@if [ "X${MANZ}" != X"" ]; then \
 		${WRKSRC}/lib-src/gzip-el.sh ${PREFIX}/lib/${DISTNAME}; \
 		GZSUFFIX=.gz; \
