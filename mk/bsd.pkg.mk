@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1333 2004/01/02 12:28:05 seb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1334 2004/01/05 07:15:39 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -174,11 +174,12 @@ USE_X11?=		implied
 #
 .if exists(${LOCALBASE}/lib/X11/config/xpkgwedge.def) ||		\
     exists(${X11BASE}/lib/X11/config/xpkgwedge.def)
-_OPSYS_NEEDS_XPKGWEDGE?=	yes
+_OPSYS_NEEDS_XPKGWEDGE=		yes
 .else
 _OPSYS_NEEDS_XPKGWEDGE?=	no
 .endif
 
+# Set the PREFIX appropriately.
 .if ${PKG_INSTALLATION_TYPE} == "overwrite"
 .  if defined(USE_X11BASE)
 .    if !empty(_OPSYS_NEEDS_XPKGWEDGE:M[yY][eE][sS])
