@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2000/06/06 11:07:19 mjl Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/14 10:53:26 agc Exp $
 #
 
 DISTNAME=	priv-1.0-beta
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	simonb@netbsd.org
 #HOMEPAGE=	
 
 GNU_CONFIGURE=	yes
