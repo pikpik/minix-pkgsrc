@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.1.1.1 2003/02/15 19:14:09 jschauma Exp $
+@comment $NetBSD: PLIST,v 1.1 2003/03/03 03:32:33 jschauma Exp $
 bin/larsclock
 bin/larsremote
 bin/larswm
@@ -7,4 +7,9 @@ ${IMAKE_MAN_DIR}/larswm.${IMAKE_MANNEWSUFFIX}
 ${IMAKE_MAN_DIR}/larsremote.${IMAKE_MANNEWSUFFIX}
 share/doc/larswm/keyboard_refcard.pdf
 share/doc/larswm/mouse_refcard.pdf
+share/examples/larswm/sample.barclock
+share/examples/larswm/sample.larswmrc
+share/examples/larswm/sample.xmodmaprc
+share/examples/larswm/sample.xsession
+@dirrm share/examples/larswm
 @dirrm share/doc/larswm
