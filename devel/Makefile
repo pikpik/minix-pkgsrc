@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2001/02/01 14:31:21 wiz Exp $
+# $NetBSD: Makefile,v 1.164 2001/02/03 05:39:48 hubertf Exp $
 #
 
     SUBDIR += GConf
@@ -65,6 +65,7 @@
     SUBDIR += kdbg
     SUBDIR += kdevelop
     SUBDIR += ldapsdk
+    SUBDIR += lclint
     SUBDIR += libavl
     SUBDIR += libctl
     SUBDIR += libg++
