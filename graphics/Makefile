@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.300 2004/03/10 18:20:10 jlam Exp $
+# $NetBSD: Makefile,v 1.301 2004/03/12 13:08:52 jmmv Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -26,7 +26,6 @@ SUBDIR+=	aalib-x11
 SUBDIR+=	aqsis
 SUBDIR+=	artist
 SUBDIR+=	autotrace
-SUBDIR+=	avi-xmms
 SUBDIR+=	aview
 SUBDIR+=	aview-x11
 SUBDIR+=	barcode
