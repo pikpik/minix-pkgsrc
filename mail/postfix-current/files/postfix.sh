@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: postfix.sh,v 1.1.1.1 2004/03/06 15:04:12 grant Exp $
+# $NetBSD: postfix.sh,v 1.4 2004/07/19 22:02:15 jlam Exp $
 #
 
 # PROVIDE: mail
@@ -12,13 +12,14 @@
 
 name="postfix"
 rcvar=$name
-required_files="@PKG_SYSCONFDIR@/main.cf"
+postfix_command="@PREFIX@/sbin/${name}"
+: ${required_files=`@PREFIX@/sbin/postconf -h config_directory`/main.cf}
 start_precmd="postfix_precmd"
-start_cmd="${name} "'${rc_arg}'
-stop_cmd=$start_cmd
-reload_cmd=$start_cmd
+start_cmd="postfix_op"
+stop_cmd="postfix_op"
+reload_cmd="postfix_op"
 extra_commands="reload"
-spooletcdir="/var/spool/${name}/etc"
+: ${spooletcdir=`@PREFIX@/sbin/postconf -h queue_directory`/etc}
 required_dirs=$spooletcdir
 
 postfix_precmd()
@@ -35,6 +36,34 @@ postfix_precmd()
 			    cp -p /etc/$f ${spooletcdir}/$f
 		fi
 	done
+}
+
+postfix_op()
+{
+	case ${rc_arg} in
+	start)
+		for _f in $required_dirs; do
+			if [ ! -d "${_f}/." ]; then
+				warn "${_f} is not a directory."
+				if [ -z $rc_force ]; then
+					return 1
+				fi
+			fi
+		done
+		for _f in $required_files; do
+			if [ ! -r "${_f}" ]; then
+				warn "${_f} is not readable."
+				if [ -z $rc_force ]; then
+					return 1
+				fi
+			fi
+		done
+		${postfix_command} ${rc_arg}
+		;;
+	*)
+		${postfix_command} ${rc_arg}
+		;;
+	esac
 }
 
 load_rc_config $name
