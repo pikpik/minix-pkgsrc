@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/22 01:06:28 itojun Exp $
 #
 
 DISTNAME=	baekmuk-2.0
@@ -9,6 +9,8 @@ MASTER_SITES+=	ftp://ftp.mizi.com/pub/baekmuk/ \
 
 MAINTAINER=	packages@netbsd.org
 COMMENT=	X11 fonts for KSX 1001 Korean standard (baekmuk foundry)
+
+LICENSE=	fee-based-commercial-use
 
 CONFLICTS+=	ksc5601fonts-[0-9]*
 
