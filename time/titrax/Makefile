@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:32:11 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/25 04:18:20 hubertf Exp $
 #
 
 DISTNAME=		titrax-1.98
@@ -12,10 +12,12 @@ COMMENT=		Little X11 tool to track project times
 USE_IMAKE=		yes
 USE_PERL5=		yes
 
+RESTRICTED=		"Do not sell for profit"
+
 post-patch:
 	${MV} ${WRKSRC}/Imakefile ${WRKSRC}/Imakefile.bak
 	${SED} -e 's|@LOCALBASE@|${LOCALBASE}|g' -e 's|@X11BASE@|${X11PREFIX}|g' \
-		< ${WRKSRC}/Imakefile.bak > ${WRKSRC}/Imakefile
+		${WRKSRC}/Imakefile.bak > ${WRKSRC}/Imakefile
 
 pre-install:
 	${INSTALL_DATA_DIR} ${X11PREFIX}/libexec/titrax
