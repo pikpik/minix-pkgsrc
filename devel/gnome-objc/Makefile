@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/15 21:38:20 veego Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:38:28 wiz Exp $
 #
 
 DISTNAME=	gnome-objc-1.0.40
@@ -17,5 +17,7 @@ USE_X11BASE=	YES
 USE_LIBTOOL=	YES
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+
+CONFIGURE_ENV+=	OBJC=${CC}
 
 .include "../../mk/bsd.pkg.mk"
