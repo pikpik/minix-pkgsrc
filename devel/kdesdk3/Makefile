@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2004/01/15 10:33:55 markd Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/23 21:50:44 jmmv Exp $
 
-DISTNAME=	kdesdk-3.1.5
-PKGREVISION=	1
+DISTNAME=	kdesdk-${_KDE_VERSION}
 CATEGORIES=	devel
 COMMENT=	Support applications and tools used by KDE developers
 
-CONFLICTS=	cervisia-[0-9]*
+CONFLICTS+=	cervisia-[0-9]*
+CONFLICTS+=	umbrello-[0-9]*
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -14,7 +14,9 @@ LTCONFIG_OVERRIDE+=	${WRKSRC}/kapptemplate/admin/ltconfig
 
 BUILD_DEPENDS+= qt3-tools>=3.1.1:../../x11/qt3-tools
 
-REPLACE_PERL=	scripts/cvs2pack \
+REPLACE_PERL=	cervisia/change_colors.pl \
+		cervisia/move_repositories.pl \
+		scripts/cvs2pack \
 		scripts/cvsblame \
 		scripts/cvscheck \
 		scripts/cvslastchange \
