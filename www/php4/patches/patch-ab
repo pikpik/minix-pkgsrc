@@ -10,6 +10,32 @@ $NetBSD$
  #include <sys/socket.h>
  #include <netinet/in.h>
  int main() {
+@@ -23088,12 +23089,7 @@
+ 
+   LIBS=$old_LIBS
+   LDFLAGS="$old_LDFLAGS"
+-  if test "$ac_cv_lib_mcrypt_init_mcrypt" = "yes"; then
+-	cat >> confdefs.h <<\EOF
+-#define HAVE_LIBMCRYPT22 1
+-EOF
+-
+-  elif test "$ac_cv_lib_mcrypt_mcrypt_module_open" = "yes"; then
++  if test "$ac_cv_lib_mcrypt_mcrypt_module_open" = "yes"; then
+     
+  case "ltdl" in
+  c|c_r|pthread*) ;;
+@@ -23110,6 +23106,11 @@
+ #define HAVE_LIBMCRYPT24 1
+ EOF
+ 
++  elif test "$ac_cv_lib_mcrypt_init_mcrypt" = "yes"; then
++	cat >> confdefs.h <<\EOF
++#define HAVE_LIBMCRYPT22 1
++EOF
++
+   else
+     { echo "configure: error: Sorry" 1>&2; exit 1; }
+   fi
 @@ -40176,6 +40177,7 @@
  fi
  
