@@ -2,3 +2,4 @@ $NetBSD$
 
 SHA1 (ami-1.0.11.tar.gz) = 3caf11b08b61b22d7d7f947198e2b18e35eb9fff
 Size (ami-1.0.11.tar.gz) = 296596 bytes
+SHA1 (patch-aa) = 7f337fa358819e9ae6327602703353ea2a9ba6a8
