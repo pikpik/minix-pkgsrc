@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/htmldoc
+man/man1/htmldoc.1
