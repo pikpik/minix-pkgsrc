@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2001/03/20 14:08:06 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2001/03/26 05:15:43 zuntum Exp $
 #
 
 COMMENT=	Security tools
@@ -37,6 +37,7 @@ SUBDIR+=	nessus-plugins
 SUBDIR+=	nfsbug
 SUBDIR+=	openssh
 SUBDIR+=	openssl
+SUBDIR+=	p0f
 SUBDIR+=	p5-Crypt-Blowfish
 SUBDIR+=	p5-Crypt-CBC
 SUBDIR+=	p5-Crypt-DES
