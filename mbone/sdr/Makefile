@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2000/09/08 18:58:05 jwise Exp $
+# $NetBSD: Makefile,v 1.29 2000/09/09 19:40:19 fredb Exp $
 #
 
 DISTNAME=	sdr-2.7
+PKGNAME=	sdr-2.7nb1
 CATEGORIES=	mbone tk
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.7/
 

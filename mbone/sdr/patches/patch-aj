@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- sdr/src/sdr.h.orig	Tue May 25 17:59:36 1999
-+++ sdr/src/sdr.h	Sat Oct  2 20:47:38 1999
++++ sdr/src/sdr.h	Wed Dec 13 01:45:53 2000
 @@ -158,7 +158,7 @@
  
  /*Missing Prototypes*/
@@ -11,3 +11,10 @@ $NetBSD$
  int gethostname(char * name, size_t namelen);
  #endif
  
+@@ -299,3 +299,6 @@
+ #undef interface
+ #endif
+ #endif
++
++int
++sdr_Tcl_Eval (Tcl_Interp *interp, char *script);
