@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.195 1998/11/19 22:59:03 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.196 1998/11/25 17:15:36 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -16,6 +16,9 @@
 #
 # NEVER override the "regular" targets unless you want to open
 # a major can of worms.
+
+# Let people know what's going on
+BSD_PKG_MK=1
 
 # Get the operating system type
 OPSYS!=	uname -s
