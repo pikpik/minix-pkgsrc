@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/11/19 12:12:28 agc Exp $
+# $NetBSD: Makefile,v 1.3 2000/02/09 17:14:27 agc Exp $
 
 DISTNAME=	tkpiechart-5.3
 CATEGORIES=	graphics
@@ -8,7 +8,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.mygale.org/~jfontain/
 
 DEPENDS+=	tk-8.0.5:../../x11/tk80
-DEPENDS+=	stooop-3.7:../../devel/stooop
+DEPENDS+=	stooop>=3.7:../../devel/stooop
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
