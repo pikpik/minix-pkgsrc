@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.245 2003/04/14 20:12:20 grant Exp $
+# $NetBSD: Makefile,v 1.246 2003/04/14 20:28:42 grant Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -167,7 +167,6 @@ SUBDIR+=	quanta3
 SUBDIR+=	ruby-htmlsplit
 SUBDIR+=	ruby-tag
 SUBDIR+=	sitecopy
-SUBDIR+=	skipstone
 SUBDIR+=	snarf
 SUBDIR+=	spfc
 SUBDIR+=	squid
