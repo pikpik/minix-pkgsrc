@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/rominfo
+share/doc/ROMInfo/rominfo.txt
+@dirrm share/doc/ROMInfo
