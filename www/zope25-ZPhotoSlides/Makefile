@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2002/11/27 15:11:16 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/02 15:18:00 wiz Exp $
 
-DISTNAME=	ZPhotoSlides-0.6
-PKGNAME=	zope25-ZPhotoSlides-0.6
+DISTNAME=	ZPhotoSlides-0.7
+PKGNAME=	zope25-ZPhotoSlides-0.7
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/p3b/ZPhotoSlides/
 EXTRACT_SUFX=	.tar
