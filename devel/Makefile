@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2000/08/27 21:34:57 jlam Exp $
+# $NetBSD: Makefile,v 1.137 2000/08/30 06:20:16 rh Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -103,6 +103,7 @@
     SUBDIR += p5-LDAP
     SUBDIR += p5-MLDBM
     SUBDIR += p5-PV
+    SUBDIR += p5-Term-ReadKey
     SUBDIR += p5-Time-HiRes
     SUBDIR += p5-TimeDate
     SUBDIR += patch
