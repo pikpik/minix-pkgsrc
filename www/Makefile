@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.169 2002/01/10 13:21:53 jlam Exp $
+# $NetBSD: Makefile,v 1.170 2002/01/13 19:29:59 agc Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -118,6 +118,7 @@ SUBDIR+=	php-FastTemplate
 SUBDIR+=	php3
 SUBDIR+=	php4
 SUBDIR+=	php4-apc
+SUBDIR+=	py-curl
 SUBDIR+=	py-pcgi
 SUBDIR+=	py-zpublisher
 SUBDIR+=	quanta
