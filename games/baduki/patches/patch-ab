@@ -1,13 +1,13 @@
 $NetBSD$
 
---- src/Makefile.in.orig	Fri Jan 15 19:46:35 1999
-+++ src/Makefile.in	Wed Jan 27 20:58:49 1999
-@@ -120,7 +120,7 @@
+--- src/Makefile.in.orig	Sat Nov 27 22:40:23 1999
++++ src/Makefile.in	Sat Nov 27 22:40:23 1999
+@@ -111,7 +111,7 @@
  DEFS = @DEFS@ -I. -I$(srcdir) -I..
  CPPFLAGS = @CPPFLAGS@
  LDFLAGS = @LDFLAGS@
 -LIBS = @LIBS@
 +LIBS = @LIBS@ -lintl
  baduki_OBJECTS =  baduki.o dialog.o gmp.o gtkgoboard.o killable.o main.o \
- patterns.o think.o utils.o xinterface.o
+ patterns.o patternsval.o think.o utils.o xinterface.o
  baduki_DEPENDENCIES = 
