@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/06/02 01:20:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:30:09 grant Exp $
 
 DISTNAME=	cvsup-static-16.1.f
 PKGNAME=	${DISTNAME:C/-static//}
@@ -33,7 +33,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/share/doc/cvsup/License \
 		${PREFIX}/share/doc/cvsup
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/cvsup
-	${INSTALL_DATA} ${FILESDIR}/supfile-cvsup.no.NetBSD.org \
+	${INSTALL_DATA} ${FILESDIR}/supfile-cvsup.no.netbsd.org \
 		${PREFIX}/share/examples/cvsup
 
 .include "../../mk/bsd.pkg.mk"
