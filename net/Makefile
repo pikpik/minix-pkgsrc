@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1998/01/23 10:00:38 agc Exp $
+# $NetBSD: Makefile,v 1.14 1998/02/17 08:26:45 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -38,7 +38,7 @@
 #    SUBDIR += mrtg
 #    SUBDIR += moxftp
 #    SUBDIR += ncftp
-#    SUBDIR += ncftp2
+    SUBDIR += ncftp2
 #    SUBDIR += netatalk
 #    SUBDIR += netcat
 #    SUBDIR += p5-Archie
