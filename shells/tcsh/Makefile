@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	tcsh
 # Version required:     6.07.02
 # Date created:		22 August 1994
