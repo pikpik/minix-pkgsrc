@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/12/16 06:31:49 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.18 2000/12/17 02:32:18 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
@@ -36,7 +36,7 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/vncserver.local ${PREFIX}/bin/vncserver
 	${MKDIR} ${PREFIX}/share/doc/vnc
 	cd ${WRKDIR}; \
-	${INSTALL_DATA} *.GIF *.css *.gif *.jpg *.htm *.html *.pdf *.xml \
+	${INSTALL_DATA} *.GIF *.css *.gif *.jpg *.htm *.html *.pdf \
 	  ${PREFIX}/share/doc/vnc
 
 .include "../../mk/bsd.pkg.mk"
