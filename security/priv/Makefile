@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:11 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:20:29 martti Exp $
 #
 
-DISTNAME=	priv-1.0-beta
-PKGNAME=	priv-1.0beta
+DISTNAME=	priv-1.0-beta2
+PKGNAME=	priv-1.0beta2
 CATEGORIES=	security
-MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITES=	ftp://ftp.thistledown.com.au/pub/simonb/
 
 MAINTAINER=	simonb@NetBSD.org
 COMMENT=	Execute commands as a different user
