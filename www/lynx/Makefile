@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.60 2003/09/28 09:13:59 jlam Exp $
+# $NetBSD: Makefile,v 1.61 2003/09/29 08:37:09 grant Exp $
 #
 
 DISTNAME=		lynx2.8.4rel.1
 PKGNAME=		lynx-2.8.4.1.4
-PKGREVISION=				1
+PKGREVISION=		2
 WRKSRC=			${WRKDIR}/lynx2-8-4
 CATEGORIES=		www
 MASTER_SITES=		http://lynx.isc.org/lynx2.8.4/ \

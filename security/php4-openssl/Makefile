@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/01 16:37:36 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2003/11/08 06:58:10 jdolecek Exp $
 
 MODNAME=		openssl
 CATEGORIES+=		security
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP4 extension for the OpenSSL library
 
 USE_BUILDLINK2=		YES

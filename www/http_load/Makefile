@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/10/25 09:33:36 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/22 04:14:23 martti Exp $
 
 DISTNAME=	http_load-04jan2002
 PKGNAME=	http_load-20020104
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/http_load/
 

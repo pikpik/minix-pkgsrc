@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2002/05/06 21:42:37 seb Exp $
+# $NetBSD: Makefile,v 1.18 2002/09/23 23:34:59 jlam Exp $
 #
 
 .include "${.CURDIR}/Makefile.common"
 
 PKGNAME=	htmldoc-${HTMLDOC_VERSION}
+PKGREVISION=	1
 COMMENT=	Converts HTML to indexed HTML, PDF and/or PostScript
 
 CONFLICTS=		htmldoc-x11-[0-9]*

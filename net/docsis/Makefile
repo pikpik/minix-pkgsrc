@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:51:07 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:10:34 martti Exp $
 #
 
 DISTNAME=	docsis-0.7.5-RELEASE
 PKGNAME=	${DISTNAME:S/-RELEASE//}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=docsis/}
 EXTRACT_SUFX=	.tgz

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/07/28 15:52:55 adam Exp $
+# $NetBSD: Makefile,v 1.12 2003/08/01 03:01:05 jmc Exp $
 
 DISTNAME=	imap-utils
 PKGNAME=	imap-uw-utils-20020102
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
