@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1129 2003/01/15 20:55:38 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1130 2003/01/17 13:55:27 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -1841,6 +1841,7 @@ AUTOMAKE_PATTERNS+=     aclocal.m4
 AUTOMAKE_PATTERNS+=     configure.in
 AUTOMAKE_PATTERNS+=     Makefile.in
 AUTOMAKE_PATTERNS+=     stamp-h.in stamp-h\[0-9\].in
+AUTOMAKE_PATTERNS+=     stamp-vti
 AUTOMAKE_PATTERNS+=     config.h.in
 AUTOMAKE_PATTERNS+=     ${CONFIGURE_SCRIPT:T}
 
