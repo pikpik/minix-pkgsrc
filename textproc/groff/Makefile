@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/11/13 22:04:53 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2004/12/17 18:53:54 wiz Exp $
 #
 
 DISTNAME=	groff-1.19.1
@@ -12,6 +12,8 @@ COMMENT=	GNU roff text processing suite
 
 DEPENDS+=	netpbm>=10.0:../../graphics/netpbm
 DEPENDS+=	psutils>=1.17:../../print/psutils
+
+NOT_FOR_PLATFORM= Interix-*-* # endless loop in build
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
