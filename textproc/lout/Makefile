@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/11/09 18:05:10 tsarna Exp $
 #
 
-DISTNAME=	lout-3.12
+DISTNAME=	lout-3.13
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.usyd.edu.au/jeff/lout/
 
