@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2001/07/18 20:26:21 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.33 2001/08/22 17:38:58 jlam Exp $
 #
 
-DISTNAME=		tgif-4.1.40
-PKGNAME=		tgif-4.1.40nb3
+DISTNAME=		tgif-4.1.41
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://bourbon.cs.umd.edu/pub/tgif/ \
 			ftp://ftp.cs.ucla.edu/pub/tgif/
@@ -18,5 +17,6 @@ post-patch::
 	@${RM} -f ${WRKSRC}/Tgif.tmpl
 	@${CP} ${WRKSRC}/Tgif.tmpl-netbsd ${WRKSRC}/Tgif.tmpl
 
+.include "../../devel/pth/buildlink.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
