@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/07/21 16:51:54 martti Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/26 21:41:27 jmmv Exp $
 #
 
-DISTNAME=		xine-lib-1-beta10
-PKGNAME=		${DISTNAME:S/-beta/.0rc/}
-PKGREVISION=		4
+DISTNAME=		xine-lib-1-rc0a
+PKGNAME=		xine-lib-1rc0a
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xine/}
 
@@ -25,6 +24,7 @@ USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 LIBTOOL_OVERRIDE+=	${WRKSRC}/libtool-nofpic
 PKGCONFIG_OVERRIDE=	${WRKSRC}/misc/libxine.pc.in
+USE_GMAKE=		yes
 
 CONFIGURE_ARGS+=	--with-w32-path='${PREFIX}/lib/win32'
 CONFIGURE_ENV+=		have_libpng="yes"
