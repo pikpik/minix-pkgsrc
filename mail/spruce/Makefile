@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/07/17 11:22:38 agc Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/01 15:38:00 salo Exp $
 #
 
 DISTNAME=       spruce-0.5.17
@@ -10,12 +10,11 @@ MAINTAINER=	mellon@isc.org
 HOMEPAGE=	http://spruce.sourceforge.net/
 COMMENT=	MIME-aware, GNOME-based email program
 
-DEPENDS+=	gnome-libs>=1.4.1.2nb1:../../x11/gnome-libs
-
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 
+.include "../../x11/gnome-libs/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
