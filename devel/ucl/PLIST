@@ -1,13 +1,9 @@
-@comment $NetBSD: PLIST,v 1.2 2003/12/31 14:58:50 cjep Exp $
+@comment $NetBSD: PLIST,v 1.3 2004/08/03 14:27:51 mycroft Exp $
 bin/uclpack
 include/ucl/ucl.h
 include/ucl/ucl_asm.h
 include/ucl/uclconf.h
-lib/libucl.a
 lib/libucl.la
-lib/libucl.so
-lib/libucl.so.1
-lib/libucl.so.1.0
 share/examples/ucl/Makefile
 share/examples/ucl/lutil.h
 share/examples/ucl/simple.c

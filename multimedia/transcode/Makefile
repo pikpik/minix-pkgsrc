@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/05/12 16:19:32 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2004/06/26 18:00:21 grant Exp $
 
 DISTNAME=	transcode-0.6.12
 PKGREVISION=	1
@@ -25,12 +25,6 @@ CONFIGURE_ARGS+=	--disable-qt
 CONFIGURE_ARGS+=	--without-libmpeg3
 CONFIGURE_ARGS+=	--with-default-xvid=xvid4
 CONFIGURE_ARGS+=	--with-ft-prefix=${BUILDLINK_PREFIX.freetype2}
-
-.if exists(${X11BASE}/lib/libXv.so)
-PLIST_SUBST+=		FILTERPV=filter_pv.so
-.else
-PLIST_SUBST+=		FILTERPV=filter_pv.a
-.endif
 
 # this used to operate on acinclude.m4 and run aclocal, but running
 # aclocal here breaks due to missing DLFCN checking

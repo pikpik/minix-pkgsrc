@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/09/26 07:28:50 ad Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:53:49 zuntum Exp $
 etc/rc.d/dptelog
 etc/rc.d/dpteng
 lib/dpt/dptcom
@@ -13,13 +13,7 @@ lib/dpt/dptmgr.rsc
 lib/dpt/dptscom
 lib/dpt/dptsig
 lib/dpt/libMrm.la
-lib/dpt/libMrm.so
-lib/dpt/libMrm.so.1
-lib/dpt/libMrm.so.1.0.2
 lib/dpt/libXm.la
-lib/dpt/libXm.so
-lib/dpt/libXm.so.1
-lib/dpt/libXm.so.1.0.2
 lib/dpt/raidutil
 lib/dpt/read.me
 man/man8/raidutil.8

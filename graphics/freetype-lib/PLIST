@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2001/05/03 04:28:25 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:50:40 zuntum Exp $
 include/freetype/freetype.h
 include/freetype/fterrid.h
 include/freetype/ftnameid.h
@@ -13,11 +13,7 @@ include/freetype/ftxopen.h
 include/freetype/ftxpost.h
 include/freetype/ftxsbit.h
 include/freetype/ftxwidth.h
-lib/libttf.a
 lib/libttf.la
-lib/libttf.so
-lib/libttf.so.4
-lib/libttf.so.4.0
 ${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/freetype.mo
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/freetype.mo
 ${PKGLOCALEDIR}/locale/es/LC_MESSAGES/freetype.mo

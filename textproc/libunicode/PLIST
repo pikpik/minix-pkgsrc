@@ -1,8 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2001/01/04 15:10:56 agc Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:57:20 zuntum Exp $
 bin/unicode-config
 include/unicode.h
-lib/libunicode.a
 lib/libunicode.la
-lib/libunicode.so
-lib/libunicode.so.0
-lib/libunicode.so.0.0

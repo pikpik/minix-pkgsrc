@@ -1,13 +1,9 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/12 04:18:18 kim Exp $
 bin/mserv
 bin/mservcmd
 bin/mservedit
 include/mservcli.h
-lib/libmservcli.a
 lib/libmservcli.la
-lib/libmservcli.so
-lib/libmservcli.so.0
-lib/libmservcli.so.0.1
 man/man1/mserv.1
 man/man1/mservcmd.1
 share/doc/mserv/INSTALL

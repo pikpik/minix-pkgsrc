@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/11 13:56:31 markd Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/03/30 22:32:43 jmc Exp $
 bin/kbiff
 lib/kbiff.la
-lib/kbiff.so
 man/man1/kbiff.1
 share/doc/kde/HTML/de/kbiff/common
 share/doc/kde/HTML/de/kbiff/index.cache.bz2

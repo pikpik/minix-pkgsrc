@@ -1,8 +1,6 @@
-@comment $NetBSD: PLIST,v 1.5 2004/06/25 08:37:57 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.6 2004/09/21 17:22:39 jmmv Exp $
 bin/rhythmbox
-lib/bonobo/librb-nautilus-context-menu.a
 lib/bonobo/librb-nautilus-context-menu.la
-lib/bonobo/librb-nautilus-context-menu.so
 lib/bonobo/servers/GNOME_Rhythmbox.server
 lib/bonobo/servers/Rhythmbox_Nautilus_Context_Menu.server
 lib/pkgconfig/rhythmbox.pc

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/07/02 15:10:56 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2004/08/21 14:44:47 markd Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
 CATEGORIES=	multimedia
@@ -32,14 +32,6 @@ LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 PTHREAD_OPTS+=	require
 
 UNLIMIT_RESOURCES+=	datasize
-
-.if !exists(${X11BASE}/lib/libXv.so)
-PLIST_SUBST+=		XV_WORKAROUND="@comment "
-PLIST_SUBST+=		XV_SUFFIX="a"
-.else
-PLIST_SUBST+=		XV_WORKAROUND=""
-PLIST_SUBST+=		XV_SUFFIX="so"
-.endif
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../audio/arts/buildlink3.mk"

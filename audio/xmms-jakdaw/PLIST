@@ -1,4 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/02/14 23:56:39 hubertf Exp $
-lib/xmms/Visualization/libjakdaw.a
+@comment $NetBSD: PLIST,v 1.2 2003/02/15 00:56:48 hubertf Exp $
 lib/xmms/Visualization/libjakdaw.la
-lib/xmms/Visualization/libjakdaw.so

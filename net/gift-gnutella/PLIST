@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/05/08 02:05:30 xtraeme Exp $
 lib/giFT/libGnutella.la
-lib/giFT/libGnutella.so
 share/giFT/Gnutella/Gnutella.conf
 share/giFT/Gnutella/Gnutella.conf.template
 share/giFT/Gnutella/gwebcaches

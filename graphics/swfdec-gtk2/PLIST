@@ -1,5 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/22 12:50:15 jmmv Exp $
-lib/gtk-2.0/2.4.0/loaders/swf_loader.a
+@comment $NetBSD: PLIST,v 1.2 2004/04/01 18:37:33 jmmv Exp $
 lib/gtk-2.0/2.4.0/loaders/swf_loader.la
-lib/gtk-2.0/2.4.0/loaders/swf_loader.so
 @comment in gtk2: @dirrm lib/gtk-2.0/2.4.0/loaders

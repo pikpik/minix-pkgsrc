@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.3 2004/04/02 18:09:56 recht Exp $
 include/soup-2.0/libsoup/soup-address.h
 include/soup-2.0/libsoup/soup-context.h
 include/soup-2.0/libsoup/soup-error.h
@@ -12,11 +12,7 @@ include/soup-2.0/libsoup/soup-server.h
 include/soup-2.0/libsoup/soup-socket.h
 include/soup-2.0/libsoup/soup-uri.h
 include/soup-2.0/libsoup/soup.h
-lib/libsoup-2.0.a
 lib/libsoup-2.0.la
-lib/libsoup-2.0.so
-lib/libsoup-2.0.so.0
-lib/libsoup-2.0.so.0.0
 lib/pkgconfig/soup-2.0.pc
 @dirrm include/soup-2.0/libsoup
 @dirrm include/soup-2.0

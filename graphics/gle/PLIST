@@ -1,10 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:51:10 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/01/22 14:13:09 adam Exp $
 include/GL/gle.h
-lib/libgle.a
 lib/libgle.la
-lib/libgle.so
-lib/libgle.so.4
-lib/libgle.so.4.0
 man/man3/gle.3
 man/man3/gleExtrusion.3
 man/man3/gleHelicoid.3

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2004/01/07 11:08:53 is Exp $
 include/pqxx/all.h
 include/pqxx/binarystring
 include/pqxx/binarystring.hxx
@@ -62,9 +62,6 @@ include/pqxx/trigger.hxx
 include/pqxx/util
 include/pqxx/util.h
 include/pqxx/util.hxx
-lib/${PKGNAME}.so
-lib/libpqxx.a
 lib/libpqxx.la
-lib/libpqxx.so
 lib/pkgconfig/libpqxx.pc
 @dirrm include/pqxx

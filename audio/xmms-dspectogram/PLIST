@@ -1,7 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/08/16 02:26:21 hubertf Exp $
-lib/xmms/Visualization/libdspectogram.so
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:18:30 zuntum Exp $
 lib/xmms/Visualization/libdspectogram.la
-lib/xmms/Visualization/libdspectogram.a
 share/xmms/dspectogram_themes/bg_gtk.xpm
 share/xmms/dspectogram_themes/bg_xmms.xpm
 share/xmms/dspectogram_themes/bg_xmms1.xpm

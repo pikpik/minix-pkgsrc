@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2001/10/15 22:46:14 skrll Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:53:30 zuntum Exp $
 bin/kabalone
 bin/kasteroids
 bin/katomic
@@ -34,14 +34,8 @@ include/kchatbase.h
 include/kgamemisc.h
 include/khighscore.h
 include/kstdgameaction.h
-lib/kbackgammon.a
 lib/kbackgammon.la
-lib/kbackgammon.so
-lib/libkdegames.a
 lib/libkdegames.la
-lib/libkdegames.so
-lib/libkdegames.so.1
-lib/libkdegames.so.1.1
 share/doc/kde/HTML/en/kabalone/common
 share/doc/kde/HTML/en/kabalone/index.cache.bz2
 share/doc/kde/HTML/en/kabalone/index.docbook

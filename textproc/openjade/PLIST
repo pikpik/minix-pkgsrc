@@ -1,20 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:57:28 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/09/23 08:35:52 wiz Exp $
 bin/openjade
-lib/libogrove.a
 lib/libogrove.la
-lib/libogrove.so
-lib/libogrove.so.0
-lib/libogrove.so.0.1
-lib/libospgrove.a
 lib/libospgrove.la
-lib/libospgrove.so
-lib/libospgrove.so.0
-lib/libospgrove.so.0.1
-lib/libostyle.a
 lib/libostyle.la
-lib/libostyle.so
-lib/libostyle.so.0
-lib/libostyle.so.0.1
 share/doc/openjade/doc/archform.htm
 share/doc/openjade/doc/build.htm
 share/doc/openjade/doc/catalog.htm

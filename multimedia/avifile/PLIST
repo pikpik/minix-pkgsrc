@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:50:17 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/26 15:11:46 jmmv Exp $
 bin/avifile-config
 include/avifile/audiodecoder.h
 include/avifile/audioencoder.h
@@ -44,11 +44,7 @@ include/avifile/wine/winestring.h
 include/avifile/wine/winnt.h
 include/avifile/wine/winreg.h
 include/avifile/wine/winuser.h
-lib/libaviplay.a
 lib/libaviplay.la
-lib/libaviplay.so
-lib/libaviplay.so.0
-lib/libaviplay.so.0.0
 share/avifile/about.ppm
 share/avifile/open.ppm
 share/avifile/pause.ppm

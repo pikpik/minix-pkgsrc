@@ -1,14 +1,10 @@
-@comment $NetBSD: PLIST,v 1.2 2003/01/11 04:24:31 rh Exp $
+@comment $NetBSD: PLIST,v 1.3 2003/05/30 16:20:03 jmmv Exp $
 bin/gnomecal
 bin/gnomecard
 etc/CORBA/servers/gnomecal.gnorba
 etc/CORBA/servers/gnomecard.gnorba
-lib/gnome-pilot/conduits/libaddress_conduit.a
 lib/gnome-pilot/conduits/libaddress_conduit.la
-lib/gnome-pilot/conduits/libaddress_conduit.so
-lib/gnome-pilot/conduits/libcalendar_conduit.a
 lib/gnome-pilot/conduits/libcalendar_conduit.la
-lib/gnome-pilot/conduits/libcalendar_conduit.so
 share/gnome-pilot/conduits/gnomecal.conduit
 share/gnome-pilot/conduits/gnomecard.conduit
 share/gnome/apps/Applications/gncal.desktop

@@ -1,22 +1,10 @@
-@comment $NetBSD: PLIST,v 1.6 2004/02/26 16:25:52 cube Exp $
+@comment $NetBSD: PLIST,v 1.7 2004/04/21 15:01:28 jmmv Exp $
 bin/anjuta
 bin/anjuta_import.sh
 bin/anjuta_launcher
-lib/anjuta/libanjuta_clsGen.a
 lib/anjuta/libanjuta_clsGen.la
-lib/anjuta/libanjuta_clsGen.so
-lib/anjuta/libanjuta_clsGen.so.0
-lib/anjuta/libanjuta_clsGen.so.0.0
-lib/anjuta/libanjuta_patch.a
 lib/anjuta/libanjuta_patch.la
-lib/anjuta/libanjuta_patch.so
-lib/anjuta/libanjuta_patch.so.0
-lib/anjuta/libanjuta_patch.so.0.0
-lib/anjuta/libanjuta_sample1.a
 lib/anjuta/libanjuta_sample1.la
-lib/anjuta/libanjuta_sample1.so
-lib/anjuta/libanjuta_sample1.so.0
-lib/anjuta/libanjuta_sample1.so.0.0
 man/man1/anjuta.1
 man/man1/anjuta_launcher.1
 share/anjuta/README.stock_libs

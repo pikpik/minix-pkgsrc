@@ -1,11 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:25:21 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/05/13 22:06:04 minskim Exp $
 bin/tclhelp
 bin/wishx
-lib/libtkx83.a
 lib/libtkx83.la
-lib/libtkx83.so
-lib/libtkx83.so.1
-lib/libtkx83.so.1.0
 lib/tcl/tclX8.3/help/Tk.brf
 lib/tcl/tclX8.3/help/tk/control/bell
 lib/tcl/tclX8.3/help/tk/control/bind

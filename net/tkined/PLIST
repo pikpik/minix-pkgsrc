@@ -1,12 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:59:33 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/11/25 17:53:23 jwise Exp $
 bin/tkined1.4.11
 bin/tkined
 man/man1/tkined.1
-lib/libtkined.so
-lib/libtkined.so.1
-lib/libtkined.so.1.0
 lib/libtkined.la
-lib/libtkined.a
 lib/tcl/tkined1.4.11/pkgIndex.tcl
 lib/tcl/tkined1.4.11/tkined.defaults
 lib/tcl/tkined1.4.11/library/Editor.tcl

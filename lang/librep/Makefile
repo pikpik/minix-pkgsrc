@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.37 2004/09/05 16:59:28 danw Exp $
 #
 
 DISTNAME=		librep-0.17
@@ -25,8 +25,6 @@ CONFIG_STATUS_OVERRIDE=	# empty
 
 USE_MAKEINFO=	YES
 INFO_FILES=	librep.info
-
-PLIST_SUBST+=		REP_VERS=${REP_VERS}
 
 post-install:
 	${RM} -f ${REP_LIBTOOL}

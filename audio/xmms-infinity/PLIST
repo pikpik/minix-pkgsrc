@@ -1,5 +1,3 @@
-@comment $NetBSD: PLIST,v 1.2 2003/02/15 00:56:47 hubertf Exp $
-lib/xmms/Visualization/libinfinite.a
+@comment $NetBSD: PLIST,v 1.3 2004/03/10 04:53:24 snj Exp $
 lib/xmms/Visualization/libinfinite.la
-lib/xmms/Visualization/libinfinite.so
 share/xmms/infinite_states
