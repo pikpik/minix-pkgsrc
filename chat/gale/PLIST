@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/02/06 18:26:54 lukem Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:06:25 zuntum Exp $
 bin/gale-config
 bin/gale-install
 bin/galed
@@ -57,4 +57,3 @@ sbin/gksign
 @dirrm etc/gale/auth/private
 @dirrm etc/gale/auth/trusted
 @dirrm etc/gale/auth
-@dirrm etc/gale
