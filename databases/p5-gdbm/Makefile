@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/03/03 00:06:53 kim Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/01 14:07:53 agc Exp $
 
 DISTNAME=		perl5.004_04
 PKGNAME=		p5-gdbm-5.4.4
@@ -12,7 +12,7 @@ USE_PERL5=		YES
 DEPENDS+=		gdbm-1.7.3:../../databases/gdbm
 
 EXTRACT_ELEMENTS=	perl5.004_04/ext/GDBM_File
-WRKSRC=			${WRKDIR}/${EXTRACT_AFTER_ARGS}
+WRKSRC=			${WRKDIR}/${EXTRACT_ELEMENTS}
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/perl Makefile.PL
