@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/newmail
+man/man1/newmail.1
