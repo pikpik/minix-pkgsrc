@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/11/30 11:46:06 salo Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/02 22:17:36 jlam Exp $
 #
 
 DISTNAME=	normalize-0.7.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cs.columbia.edu/~cvaill/normalize/
 
@@ -20,7 +20,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-mad
 
 #.include "../../audio/libaudiofile/buildlink2.mk"
-.include "../../audio/mad/buildlink2.mk"
+.include "../../audio/libmad/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
