@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/09/17 22:58:45 markd Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/08 22:56:26 wiz Exp $
 
 DISTNAME=	kde-3.1.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	meta-pkgs x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -10,7 +10,7 @@ MAINTAINER=	skrll@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	"meta-package" for the KDE integrated X11 desktop
 
-DEPENDS+=	kdeartwork-3.1.4nb1:../../misc/kdeartwork3
+DEPENDS+=	kdeartwork-3.1.4nb2:../../misc/kdeartwork3
 DEPENDS+=	kdeaddons-3.1.4nb1:../../misc/kdeaddons3
 DEPENDS+=	kdeadmin-3.1.4nb1:../../misc/kdeadmin3
 DEPENDS+=	kdeedu-3.1.4nb1:../../misc/kdeedu3
