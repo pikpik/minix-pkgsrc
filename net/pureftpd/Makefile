@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/03/26 08:24:54 martti Exp $
+# $NetBSD: Makefile,v 1.4 2002/05/07 23:12:05 hubertf Exp $
 #
 
 DISTNAME=	pure-ftpd-1.0.11
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://belnet.dl.sourceforge.net/sourceforge/pureftpd/ \
 		${MASTER_SITE_SOURCEFORGE:=pureftpd/}
@@ -25,4 +26,11 @@ LDFLAGS+=	-L${LOCALBASE}/lib/mysql -Wl,-R${LOCALBASE}/lib/mysql
 BUILD_DEFS+=	PURE_FTPD_USE_MYSQL
 .endif
 
+post-build:
+	${SED} ${FILES_SUBST_SED} ${FILESDIR}/pure_ftpd > ${WRKDIR}/pure_ftpd
+
+post-install:
+	${INSTALL_SCRIPT} ${WRKDIR}/pure_ftpd ${PREFIX}/etc/rc.d/pure_ftpd
+
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
