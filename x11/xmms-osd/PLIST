@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/General/libxmms_osd.a
+lib/xmms/General/libxmms_osd.la
+lib/xmms/General/libxmms_osd.so
+@comment in xmms: @dirrm lib/xmms/General
