@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile.in,v 1.1.1.1 2003/03/31 08:51:32 grant Exp $
+#	$NetBSD: Makefile.in,v 1.2 2003/04/01 03:48:52 grant Exp $
 
 srcdir	= @srcdir@
 prefix	= @prefix@
@@ -11,7 +11,7 @@ CFLAGS	= -I$(srcdir) -I. -I$(prefix)/include/libnbcompat @INCLUDES@ @CFLAGS@
 CPPFLAGS= @CPPFLAGS@
 DEFS	= @DEFS@
 INSTALL	= @INSTALL@
-LDFLAGS	= @LDFLAGS@
+LDFLAGS	= @LDFLAGS@ -L$(prefix)/lib
 LIBS	= @LIBS@ -lnbcompat
 
 LINK=	$(CCLD) $(CFLAGS) $(LDFLAGS) -o $@
