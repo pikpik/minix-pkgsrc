@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2004/01/22 10:11:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.45 2004/01/22 10:16:19 jmmv Exp $
 #
 
 DISTNAME=	gdm-2.4.4.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdm/2.4/} \
 		${MASTER_SITE_LOCAL}
