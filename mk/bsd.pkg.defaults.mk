@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.68 2002/06/23 08:46:22 kent Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.69 2002/06/30 19:07:27 dmcmahill Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -329,7 +329,7 @@ PRE_ROOT_CMD?=	${TRUE}
 # Possible: any shell commands
 # Default: none
 
-SU_CMD?= su - root -c
+SU_CMD?= ${ROOT_CMD}
 # Command to perform before "make install", if the user does not have
 # an effective uid of 0.  A possible substitute is "sudo sh -c"
 # Possible: su, sudo, or priv, with appropriate arguments
