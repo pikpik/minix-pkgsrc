@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/03/10 20:21:57 jdolecek Exp $
+# $NetBSD: Makefile,v 1.15 2002/07/24 19:45:29 jlam Exp $
 #
 
 DISTNAME=	csacek-2.1.9
@@ -12,8 +12,7 @@ MAINTAINER=	jdolecek@netbsd.org
 HOMEPAGE=	http://www.csacek.cz/
 COMMENT=	on-fly code set recoder
 
-DEPENDS+=	apache{,6}-1.3*:../../www/apache
-USE_PERL5=	build	# for "apxs"
+USE_BUILDLINK2=	YES
 
 HAS_CONFIGURE=	yes
 
@@ -27,4 +26,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/templates/whichcode_template.html \
 		${PREFIX}/share/csacek/
 
+.include "../../devel/zlib/buildlink2.mk"
+.include "../../www/apache/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
