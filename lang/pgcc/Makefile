@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/03/27 03:20:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/29 15:25:00 jlam Exp $
 
 DISTNAME=		gcc-2.95.2
 PKGNAME=		pgcc-2.95.2.1
@@ -59,8 +59,8 @@ WRKSRC=			${WRKDIR}/objdir
 CONFIGURE_ARGS+=	--with-gnu-as --with-gnu-ld
 GCC_PREFIX=		${LOCALBASE}/${PKGNAME}
 .if ${MACHINE_PLATFORM:MNetBSD-*-sparc}
-PLIST_SRC=		${PKGDIR}/PLIST
-PLIST_SRC+=		${PKGDIR}/PLIST.NetBSD-sparc
+PLIST_SRC=		${PKGDIR}/PLIST.NetBSD-sparc
+PLIST_SRC+=		${PKGDIR}/PLIST
 .endif
 .else
 .if (${CC} != gcc)
