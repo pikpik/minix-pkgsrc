@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/20 05:58:34 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/12/20 21:50:46 soren Exp $
 
 DISTNAME=	bfd-mdsetimage-1.0
 CATEGORIES=	cross
@@ -7,7 +7,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	sakamoto@netbsd.org
 
-DEPENDS=	cross-binutils-2.9.1.1:../binutils
+DEPENDS=	cross-binutils>=2.9.1.1:../binutils
 
 EXTRACT_ONLY=	# empty
 NO_WRKSUBDIR=	yes
