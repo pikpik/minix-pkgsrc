@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.395 2003/06/03 17:00:08 jschauma Exp $
+# $NetBSD: Makefile,v 1.396 2003/06/04 19:33:05 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -15,6 +15,7 @@ SUBDIR+=	SDLmm
 SUBDIR+=	aap
 SUBDIR+=	acme
 SUBDIR+=	acunia-jam
+SUBDIR+=	adocman
 SUBDIR+=	aegis
 SUBDIR+=	ald
 SUBDIR+=	anjuta
