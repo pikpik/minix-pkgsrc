@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/01/28 22:04:28 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/21 18:15:28 jmmv Exp $
 #
 
 DISTNAME=	dillo-0.7.1.2
@@ -13,7 +13,6 @@ COMMENT=	Very small and fast graphical web-browser
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 USE_X11=	yes
-USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
 EGDIR=		${PREFIX}/share/examples/dillo
