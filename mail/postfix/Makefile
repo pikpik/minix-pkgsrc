@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2005/03/22 10:40:08 cjs Exp $
+# $NetBSD: Makefile,v 1.158 2005/03/22 10:43:50 cjs Exp $
 
 DISTNAME=	postfix-2.2.1
 CATEGORIES=	mail
@@ -119,10 +119,6 @@ post-build:
 .if !empty(PKG_OPTIONS:Msasl)
 	${ECHO} "pwcheck_method: ${PWCHECK_METHOD}" > ${WRKDIR}/smtpd.conf
 .endif
-
-POSTFIX_EXAMPLE_FILES=	LICENSE access aliases canonical header_checks	\
-			main.cf main.cf.default makedefs.out master.cf	\
-			postfix-files relocated transport virtual
 
 do-install:
 	${INSTALL_DATA_DIR} ${LIBEXECDIR}
