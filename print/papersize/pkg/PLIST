@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/getpapersize
-bin/setpapersize
-man/man1/getpapersize.1
-man/man1/setpapersize.1

@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/disol
-bin/fmtest
-bin/kban
-bin/ktest
-bin/vfperf
-bin/vftest

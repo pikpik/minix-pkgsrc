@@ -1,8 +1,0 @@
-@comment $NetBSD: refling $
-bin/pcps
-man/man1/pcps.1
-share/doc/pcps/pcps.man
-share/doc/pcps/license.doc
-share/doc/pcps/register.doc
-@dirrm share/doc/pcps
-@unexec rm -f %D/bin/pcps.cfg
