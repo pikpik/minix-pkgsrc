@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/07/18 15:20:59 agc Exp $
-#
+# $NetBSD: Makefile,v 1.12 2001/02/16 15:22:18 wiz Exp $
 
 DISTNAME=	fly-1.6.5
 CATEGORIES=	graphics www

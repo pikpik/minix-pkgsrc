@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/01/20 12:13:43 rh Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/16 15:22:21 wiz Exp $
 #
 
 DISTNAME=	gif2png-2.4.0
@@ -10,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.tuxedo.org/~esr/gif2png/
 COMMENT=	convert GIF files to PNG
 
-DEPENDS+=	png>=1.0.6:../../graphics/png
+DEPENDS+=	png>1.0.9:../../graphics/png
 
 GNU_CONFIGURE=	YES
 MAKE_ENV+=	INCLUDES="-I${PREFIX}/include"
