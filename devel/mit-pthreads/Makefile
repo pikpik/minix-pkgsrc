@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1997/10/13 11:36:19 agc Exp $
+# $NetBSD: Makefile,v 1.3 1997/11/13 14:47:23 agc Exp $
 # New ports collection makefile for:	MIT pthreads
 # Version required:     1.60beta6
 # Date created:		10th October 1997
@@ -14,7 +14,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}/pthreads
 
 pre-install:
-	mkdir ${PREFIX}/pthreads
+	-mkdir ${PREFIX}/pthreads
 
 post-install:
 	find ${PREFIX}/pthreads/include -type f -print|xargs chmod 644
