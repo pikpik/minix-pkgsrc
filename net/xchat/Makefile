@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 1999/08/29 12:48:59 rh Exp $
+# $NetBSD: Makefile,v 1.4 1999/09/08 10:42:17 tron Exp $
 
 DISTNAME=	xchat-1.2.0
 CATEGORIES=	net x11 gnome
 MASTER_SITES=	${HOMEPAGE}/files/v1.2/
 
 MAINTAINER=	tron@netbsd.org
-HOMEPAGE=	http://xchat.linuxpower.org/
+HOMEPAGE=	http://xchat.org/
 
 DEPENDS+=	gnome-core-1.0.9:../../x11/gnome-core
 
