@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2002/10/10 09:42:58 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2002/11/24 21:31:20 hubertf Exp $
 #
 
 DISTNAME=	cvs-1.11.2
@@ -43,6 +43,7 @@ pre-fetch:
 CONFIGURE_ENV+=	perl_path=${PERL5}
 
 INFO_FILES=	cvs.info cvsclient.info
+TEXINFO_REQD?=		4.2
 TEXINFO_OVERRIDE=	YES
 
 .include "../../devel/zlib/buildlink2.mk"
