@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1 2002/05/31 13:00:10 seb Exp $
-${RUBY_SITEARCHLIBDIR}/uconv.so
+@comment $NetBSD: PLIST,v 1.2 2004/11/28 14:42:07 taca Exp $
+${RUBY_SITEARCHLIBDIR}/uconv.${RUBY_DLEXT}
 ${RUBY_DOCDIR}/uconv/README
 ${RUBY_DOCDIR}/uconv/README.ja
 @dirrm ${RUBY_DOCDIR}/uconv

@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:50 zuntum Exp $
-${RUBY_SITEARCHLIBDIR}/postgres.so
+@comment $NetBSD: PLIST,v 1.2 2002/01/19 11:03:20 taca Exp $
+${RUBY_SITEARCHLIBDIR}/postgres.${RUBY_DLEXT}
 ${RUBY_DOCDIR}/postgresql/README
 ${RUBY_DOCDIR}/postgresql/README.ja
 ${RUBY_DOCDIR}/postgresql/postgres.html

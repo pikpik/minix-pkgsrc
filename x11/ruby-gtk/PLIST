@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:11:34 zuntum Exp $
-${RUBY_SITEARCHLIBDIR}/gtk.so
+@comment $NetBSD: PLIST,v 1.2 2004/11/28 05:57:21 taca Exp $
+${RUBY_SITEARCHLIBDIR}/gtk.${RUBY_DLEXT}
 ${RUBY_EXAMPLESDIR}/gtk/calendar.rb
 ${RUBY_EXAMPLESDIR}/gtk/doc/rbbr.rb
 @dirrm ${RUBY_EXAMPLESDIR}/gtk/doc
