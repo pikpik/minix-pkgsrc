@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.302 1999/07/24 23:23:04 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.303 1999/07/26 16:46:43 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -554,9 +554,15 @@ MASTER_SITES?=
 PATCH_SITES?=
 
 # The primary backup site.
+.if defined(DIST_SUBDIR)
 MASTER_SITE_BACKUP?=	\
 	ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/${DIST_SUBDIR}/ \
 	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/${DIST_SUBDIR}/
+.else
+MASTER_SITE_BACKUP?=	\
+	ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/ \
+	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/
+.endif
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \
