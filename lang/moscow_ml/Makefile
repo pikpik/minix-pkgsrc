@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 1999/04/14 18:00:47 bad Exp $
-#
+# $NetBSD$
 
-DISTNAME=       mos14src
-PKGNAME=        moscow_ml-1.44
+DISTNAME=       mos20src
+PKGNAME=        moscow_ml-2.00
 WRKSRC=		${WRKDIR}/mosml/src
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.dina.kvl.dk/pub/mosml/ \
@@ -16,15 +15,9 @@ BUILD_DEPENDS+=	${LOCALBASE}/bin/perl:../../lang/perl5
 ALL_TARGET=	clean world
 
 post-install:
-	${TOUCH} ${WRKDIR}/mosml/examples/helpsigs/htmlsigs/.keep_me
-	${MKDIR} ${PREFIX}/share/doc/moscow_ml
 	${MKDIR} ${PREFIX}/share/examples/moscow_ml
-	${CP} ${WRKDIR}/mosml/copyrght/* ${PREFIX}/share/doc/moscow_ml
-	${CP} -R ${WRKDIR}/mosml/doc/* ${PREFIX}/share/doc/moscow_ml
 	${CP} -R ${WRKDIR}/mosml/examples/* ${PREFIX}/share/examples/moscow_ml
-	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/moscow_ml
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/examples/moscow_ml
-	${CHMOD} -R ugo+r ${PREFIX}/share/doc/moscow_ml
 	${CHMOD} -R ugo+r ${PREFIX}/share/examples/moscow_ml
 
 .include "../../mk/bsd.pkg.mk"
