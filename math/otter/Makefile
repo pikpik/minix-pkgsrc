@@ -1,4 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/25 18:19:19 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:22:33 wiz Exp $
+#
+#  XXX  Otter doesn't respect CFLAGS because -O2 optimization causes
+#	the program to malfunction (-O is fine).
 
 DISTNAME=	otter-3.0.6
 CATEGORIES=	math
@@ -6,7 +9,7 @@ MASTER_SITES=	ftp://info.mcs.anl.gov/pub/Otter/
 
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://www.mcs.anl.gov/AR/otter/
-COMMENT=	theorem-proving program
+COMMENT=	Automated Deduction System
 
 WRKSRC=		${WRKDIR}/${PKGNAME}/source
 
