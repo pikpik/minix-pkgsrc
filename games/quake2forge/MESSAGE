@@ -1,0 +1,9 @@
+==========================================================================
+$NetBSD$
+
+To run Quake 2(TM), you must place the .pak files from your Quake 2
+CD into:
+
+    ${PREFIX}/share/quake2/baseq2
+
+==========================================================================
