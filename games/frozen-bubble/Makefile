@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:45 wiz Exp $
 #
 
 DISTNAME=	frozen-bubble-1.0.0
@@ -7,7 +7,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://people.mandrakesoft.com/~gc/fb/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	salo@netbsd.org
+MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.frozen-bubble.org/
 COMMENT=	Pop the frozen bubbles
 

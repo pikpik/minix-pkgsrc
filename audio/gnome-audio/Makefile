@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2001/04/07 11:17:03 rh Exp $
+# $NetBSD: Makefile,v 1.7 2002/10/19 10:54:42 rh Exp $
 #
 
 DISTNAME=	gnome-audio-1.4.0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-audio/1.4/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Set of audio files for GNOME
 

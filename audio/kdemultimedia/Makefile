@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/06/02 01:21:38 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/13 17:56:58 wiz Exp $
 
 DISTNAME=	kdemultimedia-1.1.2
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_LOCAL}/kde1
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	KDE audio tools
 

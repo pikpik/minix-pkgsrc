@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2001/11/01 12:21:38 tron Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/20 13:45:31 wiz Exp $
 #
 
 DISTNAME=		xcopilot-0.6.6
 CATEGORIES=		emulators
 MASTER_SITES=		http://xcopilot.cuspy.com/build/
 
-MAINTAINER=		nathanw@netbsd.org
+MAINTAINER=		nathanw@NetBSD.org
 HOMEPAGE=		http://xcopilot.cuspy.com/
 COMMENT=		PalmPilot emulator for X
 

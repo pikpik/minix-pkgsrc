@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/12/08 03:50:14 salo Exp $
+# $NetBSD: Makefile,v 1.10 2003/02/18 17:43:06 jlam Exp $
 
 DISTNAME=	SNNSv4.2
 PKGNAME=	snns-4.2
 CATEGORIES=	misc
 MASTER_SITES=	http://www-ra.informatik.uni-tuebingen.de/downloads/SNNS/
 
-MAINTAINER=	wulf@netbsd.org
+MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://www-ra.informatik.uni-tuebingen.de/SNNS/
 COMMENT=	Software simulator for neural networks
 

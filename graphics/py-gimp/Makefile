@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:19:16 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:52:14 wiz Exp $
 #
 
 DISTNAME=	pygimp-1.2
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/pygimp/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.daa.com.au/~james/pygimp/
 COMMENT=	Python interface to the GIMP
 

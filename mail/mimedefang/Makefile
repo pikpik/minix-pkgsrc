@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2003/05/02 11:55:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/03 11:16:26 markd Exp $
 
 DISTNAME=		mimedefang-2.35
 CATEGORIES=		mail
 MASTER_SITES=		http://www.roaringpenguin.com/mimedefang/
 
-MAINTAINER=		markd@netbsd.org
+MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://www.roaringpenguin.com/mimedefang/
 COMMENT=		To inspect/modify e-mail as it passes through your mail relay
 

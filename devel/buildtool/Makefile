@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2003/04/12 10:14:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/06/20 10:22:56 jmmv Exp $
 #
 
 DISTNAME=	buildtool-0.11
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=buildtool/}
 
-MAINTAINER=	jmmv@netbsd.org
+MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://buildtool.sourceforge.net/
 COMMENT=	Portable BSD-like build infrastructure
 

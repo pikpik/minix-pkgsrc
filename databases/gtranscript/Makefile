@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/06/02 01:21:08 jschauma Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/13 13:50:56 wiz Exp $
 #
 
 DISTNAME=	gtranscript-0.0.1
@@ -14,7 +14,7 @@ MASTER_SITES=	http://gtranscript.linuxbox.com/ \
 		ftp://ftp.univie.ac.at/systems/linux/linuxberg/files/gnome/office/ \
 		ftp://ftp.sunsite.auc.dk/disk2/linuxberg.com/files/gnome/office/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gtranscript.linuxbox.com/
 COMMENT=	SQL Database Client with GNOME frontend
 

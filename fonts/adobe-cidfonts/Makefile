@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/13 22:32:59 jlam Exp $
 
 DISTNAME=	adobe-cidfonts-20000901
 CATEGORIES=	fonts
 MASTER_SITES=	ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/samples/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 COMMENT=	Adobe CID-keyed O'Reilly fonts for CJK
 
 DIST_SUBDIR=	${PKGBASE}

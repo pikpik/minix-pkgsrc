@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2003/07/07 13:42:37 seb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/07 13:56:27 seb Exp $
 #
 
 DISTNAME=		japhar-0.08
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.japhar.org/pub/hungry/japhar/source/
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.japhar.org/
 COMMENT=		Java Virtual Machine, currently JDK 1.1.5-level
 

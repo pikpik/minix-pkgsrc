@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/05 19:05:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:50:38 wiz Exp $
 #
 
 DISTNAME=	vismsa-xmms-plugin-0.2
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://a.godau.org/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://a.godau.org/
 COMMENT=	vis plugin similar to the Spectrum Analyser from Open Cubic Player
 

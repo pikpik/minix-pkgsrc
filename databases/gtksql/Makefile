@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/06/02 01:21:08 jschauma Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/13 13:50:56 wiz Exp $
 #
 
 DISTNAME=		gtksql-0.3
@@ -9,7 +9,7 @@ MASTER_SITES=		http://www.multimania.com/bbrox/GtkSQL/ \
 			ftp://ftp.infodrom.north.de/pub/unix/gtkbuffet/apps/gtksql/ \
 			ftp://ftp.loxinfo.co.th/pub/unix/database/
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.multimania.com/bbrox/GtkSQL/
 COMMENT=		Query tool for PostgreSQL written with GTK
 

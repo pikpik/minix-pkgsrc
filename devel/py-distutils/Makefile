@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/01/17 11:22:43 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/29 19:12:33 drochner Exp $
 #
 
 DISTNAME=	Distutils-1.0.2
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-distutils-1.0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.python.org/sigs/distutils-sig/download/
 
-MAINTAINER=	drochner@netbsd.org
+MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.python.org/sigs/distutils-sig/
 COMMENT=	Distribution Utilities for Python
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/11 10:43:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/13 13:51:19 wiz Exp $
 #
 
 DISTNAME=	libgnomeui-2.2.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnomeui/2.2/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jmmv@netbsd.org
+MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Core GNOME2 graphical libraries
 

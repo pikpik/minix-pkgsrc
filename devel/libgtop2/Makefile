@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/06/23 11:27:51 seb Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/13 13:51:20 wiz Exp $
 
 DISTNAME=		libgtop-2.0.0
 PKGNAME=		${DISTNAME:S/-/2-/}
@@ -7,7 +7,7 @@ CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgtop/2.0/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		library to retrieve system information, used in GNOME2
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/21 12:22:21 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:41:12 jmmv Exp $
 #
 
 DISTNAME=	xscrabble
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}/xscrabble
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.belgarath.demon.co.uk/programs/
 
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.belgarath.demon.co.uk/programs/
 COMMENT=	X version of the popular board game, for 1 to 4 players
 

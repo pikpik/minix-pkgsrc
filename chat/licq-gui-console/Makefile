@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/12 12:05:01 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/13 13:50:47 wiz Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -8,7 +8,7 @@ CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=licq/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.licq.org/
 COMMENT=	Curses GUI for licq
 

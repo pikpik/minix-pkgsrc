@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/10 08:45:31 adam Exp $
+# $NetBSD: Makefile,v 1.19 2003/07/13 13:50:27 wiz Exp $
 #
 
 DISTNAME=	madplay-0.15.0b
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mad/} \
 		ftp://ftp.mars.org/pub/mpeg/
 
-MAINTAINER=	simonb@netbsd.org
+MAINTAINER=	simonb@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/mad/
 COMMENT=	High-quality MPEG audio decoder
 

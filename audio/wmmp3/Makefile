@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1 2002/06/13 09:42:44 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 00:59:26 jlam Exp $
 
 DISTNAME=	wmmp3-0.12
 CATEGORIES=	audio
 MASTER_SITES= 	http://www.dotfiles.com/software/wmmp3/
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://www.dotfiles.com/software/wmmp3/
 COMMENT=	front-end for mpg123 in a Window Maker dockapp
 

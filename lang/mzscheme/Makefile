@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/09/11 18:46:31 joda Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:41:27 jmmv Exp $
 
 DISTNAME=		mzscheme.src.unix
 PKGNAME=		mzscheme-200
@@ -8,7 +8,7 @@ MASTER_SITES=		http://download.plt-scheme.org/bundles/200/mzscheme/
 DIST_SUBDIR=		${PKGNAME_NOREV}
 PKGREVISION=		1
 
-MAINTAINER=		pooka@netbsd.org
+MAINTAINER=		pooka@NetBSD.org
 HOMEPAGE=		http://www.plt-scheme.org/software/mzscheme/
 COMMENT=		R5RS-compliant scheme
 

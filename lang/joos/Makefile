@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/15 02:22:32 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/26 20:52:11 jlam Exp $
 #
 
 DISTNAME=	joos-0.2
@@ -6,7 +6,7 @@ CATEGORIES=     lang
 MASTER_SITES=	ftp://netbsd.stevens-tech.edu/pub/NetBSD/packages/distfiles/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jschauma@netbsd.org
+MAINTAINER=	jschauma@NetBSD.org
 HOMEPAGE=	http://www.brics.dk/~mis/dOvs/index.html
 COMMENT=	Java Object Oriented Subset
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.36 2002/08/25 18:39:02 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2003/06/23 09:53:10 adam Exp $
 #
 
 DISTNAME=       gd-2.0.15
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.boutell.com/gd/http/
 
-MAINTAINER=	adam@netbsd.org
+MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.boutell.com/gd/
 COMMENT=	graphics library for fast PNG creation
 

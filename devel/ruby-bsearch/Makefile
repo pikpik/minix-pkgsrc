@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2003/02/17 15:28:00 dillo Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/28 21:14:16 wiz Exp $
 
 DISTNAME=	ruby-bsearch-${VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}bsearch-${VERSION}
 CATEGORIES=	devel
 MASTER_SITES=	http://namazu.org/~satoru/ruby-bsearch/
 
-MAINTAINER=	taca@netbsd.org
+MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://namazu.org/~satoru/ruby-bsearch/
 COMMENT=	Binary search library for Ruby
 

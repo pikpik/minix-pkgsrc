@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/04/28 22:31:20 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:07 jmmv Exp $
 #
 
 DISTNAME=	mp3asm-0.1.3
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3asm/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://mp3asm.sourceforge.net/
 COMMENT=	mpeg 1/2/2.5 audio layer 1,2,3 frame level editor
 

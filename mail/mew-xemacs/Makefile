@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/24 20:29:29 magick Exp $
 
 DISTNAME=	mew-2.2
 PKGNAME=	mew-xemacs-2.2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.mew.org/
 COMMENT=	Messaging in the XEmacs World
 

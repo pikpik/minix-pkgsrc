@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/01/10 18:46:32 nathanw Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/29 12:41:25 jmmv Exp $
 #
 
 DISTNAME=		plt.src.x
@@ -12,7 +12,7 @@ MASTER_SITES=		http://download.plt-scheme.org/bundles/202/plt/ \
 			ftp://archive.informatik.uni-tuebingen.de/unix/language/plt/202/plt/ \
 			ftp://morpheus.wish.com.mx/pub/plt/202/plt/
 
-MAINTAINER=		groo@netbsd.org
+MAINTAINER=		groo@NetBSD.org
 HOMEPAGE=		http://www.drscheme.org
 COMMENT=		R4RS-compilant and nearly R5RS-compliant scheme tailored for teaching
 

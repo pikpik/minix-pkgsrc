@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/05/31 08:58:28 dent Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/28 21:14:16 wiz Exp $
 #
 
 DISTNAME=	tkdiff-3.05.tcl.txt
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.accurev.com/pub/free/tkdiff/
 EXTRACT_SUFX=	# Nothing
 
-MAINTAINER=	sakamoto@netbsd.org
+MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://www.accurev.com/free/tkdiff/
 COMMENT=	Graphical 2-way diff/merge tool
 

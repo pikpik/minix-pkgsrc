@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:33 wiz Exp $
 
 DISTNAME=		kile-1.32
 PKGREVISION=		2
 CATEGORIES=		editors kde
 MASTER_SITES=		http://perso.club-internet.fr/pascal.brachet/kile/
 
-MAINTAINER=		markd@netbsd.org
+MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://perso.club-internet.fr/pascal.brachet/kile/index.html
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
 

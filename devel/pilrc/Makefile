@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/05/05 19:05:10 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/13 13:51:25 wiz Exp $
 #
 
 DISTNAME=	pilrc-2.9p9
@@ -19,7 +19,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFFIX}
 #PATCHFILES=	pilrc-2.9p10.diff
 #PATCH_DIST_STRIP+=-p1
 
-MAINTAINER=	dillo@netbsd.org
+MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://www.ardiri.com/index.cfm?redir=palm&cat=pilrc
 COMMENT=	generate resources for PalmOS applications from textual description
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/09/21 22:40:57 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/19 10:54:53 rh Exp $
 #
 
 DISTNAME=		gnome-core-1.4.2
@@ -7,7 +7,7 @@ CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-core/1.4/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		rh@netbsd.org
+MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Pixmaps for gnome-core
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/06/25 05:13:27 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:13 jmmv Exp $
 #
 
 DISTNAME=	randread-0.1
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	benchmarks
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=randread/}
 
-MAINTAINER=	grant@netbsd.org
+MAINTAINER=	grant@NetBSD.org
 HOMEPAGE=	http://randread.sourceforge.net/
 COMMENT=	program to help benchmark random disk read performance
 

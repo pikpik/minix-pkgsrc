@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/02 11:55:51 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/13 13:52:40 wiz Exp $
 #
 
 DISTNAME=	kanjipad-1.2.1
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.gtk.org/pub/users/otaylor/kanjipad/
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gtk.org/~otaylor/kanjipad/index.html
 COMMENT=	Japanese handwriting recognition with GTK interface
 

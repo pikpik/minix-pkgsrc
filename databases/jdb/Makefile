@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2001/11/28 05:20:44 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/15 00:35:20 jlam Exp $
 
 DISTNAME=	jdb-1.7
 CATEGORIES=	databases
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/JDB/
 
-MAINTAINER=	bad@netbsd.org
+MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://www.isi.edu/~johnh/SOFTWARE/JDB/index.html
 COMMENT=	commands for manipulating flat-ASCII databases
 

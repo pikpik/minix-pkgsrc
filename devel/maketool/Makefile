@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/05/02 11:54:39 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/13 13:51:22 wiz Exp $
 #
 
 DISTNAME=	maketool-0.7
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.alphalink.com.au/~gnb/maketool/
 EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	fredb@netbsd.org
+MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www.alphalink.com.au/~gnb/maketool/
 COMMENT=	Graphical front end to GNU make
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/05/02 11:53:43 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/13 13:50:26 wiz Exp $
 #
 
 VERS=		3.93.1
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} \
 		http://hive.me.gu.edu.au/not_lame/ \
 		http://telia.dl.sourceforge.net/lame/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.mp3dev.org/mp3/
 COMMENT=	Fast, high quality MP3 encoder
 

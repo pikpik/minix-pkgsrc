@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/05 19:05:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:50:38 wiz Exp $
 #
 
 DISTNAME=	tv_scope-0.0.2
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	xmms audio
 MASTER_SITES=	http://staff.xmms.org/zinx/xmms/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://staff.xmms.org/zinx/xmms/
 COMMENT=	3D Representation of a waveform
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.27 2003/05/02 11:54:52 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2003/07/13 13:51:41 wiz Exp $
 
 DISTNAME=	baduki-0.2.9
 PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://soback.kornet21.net/~artist/baduk/
 
-MAINTAINER=	bad@netbsd.org
+MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://soback.kornet21.net/~artist/baduk/baduki.html
 COMMENT=	Go playing program based on xamigo
 

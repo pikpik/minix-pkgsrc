@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/17 15:27:58 dillo Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/16 16:37:05 taca Exp $
 #
 
 DISTNAME=	Jcode-0.83
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	p5jco
 CATEGORIES=	converters japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/Jcode/
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://openlab.ring.gr.jp/Jcode/index.html
 COMMENT=	perl5 module for handling various Japanese charsets
 

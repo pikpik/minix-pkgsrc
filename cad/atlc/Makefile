@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/13 12:42:59 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2003/02/01 15:16:24 dmcmahill Exp $
 #
 
 DISTNAME=	atlc-4.2.10
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=atlc/}
 
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://atlc.sourceforge.net
 COMMENT=	Calculates the impedance of arbitrary cross section transmission lines
 

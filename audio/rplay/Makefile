@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2003/06/06 10:31:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.41 2003/06/26 16:39:45 seb Exp $
 #
 
 DISTNAME=	rplay-3.3.2
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://rplay.doit.org/pub/rplay/ \
 		http://rplay.doit.org/dist/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://rplay.doit.org/
 COMMENT=	Network audio player
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2002/10/24 12:37:48 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/18 22:34:30 tsarna Exp $
 
 DISTNAME=	Pyrex-0.5
 PKGNAME=	${PYPKGPREFIX}-pyrex-0.5
 CATEGORIES=	lang
 MASTER_SITES=	http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.cosc.canterbury.ac.nz/~greg/python/Pyrex/
 COMMENT=	A Language for Writing Python Extension Modules
 

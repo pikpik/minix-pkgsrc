@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/05/02 11:53:44 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/05/02 13:02:19 wiz Exp $
 #
 
 DISTNAME=	rio500-0.7
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rio500/}
 
-MAINTAINER=	ad@netbsd.org
+MAINTAINER=	ad@NetBSD.org
 HOMEPAGE=	http://rio500.sourceforge.net/
 COMMENT=	Utilities to manage your Diamond Rio 500 MP3 player
 

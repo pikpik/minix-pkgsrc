@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/06/02 01:19:36 jschauma Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/13 13:51:52 wiz Exp $
 
 DISTNAME=	omega-0.90-pa4
 PKGNAME=	omega-0.90.4
@@ -6,9 +6,9 @@ PKGREVISION=			1
 WRKSRC=		${WRKDIR}/omega
 CATEGORIES=	games
 #MASTER_SITES=	http://dolphin.openprojects.net/Omega/Downloads/Prealphas/
-MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/
+MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/proff/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	http://dolphin.openprojects.net/Omega/
 HOMEPAGE=	http://www.win.tue.nl/games/roguelike/omega
 COMMENT=	Complex rogue-like game of exploration with a sense of humor

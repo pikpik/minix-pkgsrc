@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/05 11:51:10 markd Exp $
+# $NetBSD: Makefile,v 1.2 2003/06/12 22:48:49 jmc Exp $
 
 DISTNAME=	ess-5.1.24
 CATEGORIES=	math
 MASTER_SITES=	http://software.biostat.washington.edu/ess/
 
-MAINTAINER=	markd@netbsd.org
+MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://software.biostat.washington.edu/statsoft/ess/
 COMMENT=	Emacs Speaks Statistics
 

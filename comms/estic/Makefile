@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/03/29 12:40:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/06/18 09:22:16 agc Exp $
 
 DISTNAME=	estic-1.61
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV:C/-.*//}
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.gwdg.de/pub/misc/isdn/linux/estic/
 EXTRACT_SUFX=	.zip
 DISTFILES=	${EXTRACT_ONLY} ${ESTICPATCH}
 
-MAINTAINER=	tron@netbsd.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://www.von-bassewitz.de/uz/estic/estic.html
 COMMENT=	German language configuration tool for ISTEC 1003/1008 ISDN systems
 

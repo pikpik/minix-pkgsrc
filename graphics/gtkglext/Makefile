@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 03:14:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/13 13:52:07 wiz Exp $
 #
 
 DISTNAME=		gtkglext-0.7.1
@@ -7,7 +7,7 @@ CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtkglext/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gtkglext.sourceforge.net/
 COMMENT=		OpenGL extension to GTK
 

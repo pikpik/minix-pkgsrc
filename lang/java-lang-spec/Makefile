@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/09 20:36:32 agc Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:26 jmmv Exp $
 
 DISTNAME=		langspec-2.0.html
 PKGNAME=		java-lang-spec-2.0
@@ -7,7 +7,7 @@ CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.javasoft.com/docs/specs/
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://java.sun.com/docs/books/jls/index.html
 COMMENT=		The Java(TM) Language Specification (HTML)
 

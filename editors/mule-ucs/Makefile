@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2003/04/16 23:20:50 kei Exp $
+# $NetBSD: Makefile,v 1.6 2003/04/17 01:11:10 uebayasi Exp $
 
 DISTNAME=	Mule-UCS-0.84
 PKGREVISION=	4
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/Mule-UCS/
 
-MAINTAINER=	uebayasi@netbsd.org
+MAINTAINER=	uebayasi@NetBSD.org
 #HOMEPAGE=	
 COMMENT=	another encoding conversion mechanism for Emacs
 

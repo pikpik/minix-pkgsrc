@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/09/25 12:32:00 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/29 12:41:02 jmmv Exp $
 
 DISTNAME=		crafty-18.15
 WRKSRC=			${WRKDIR}
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/v18/ \
 DISTFILES=		${CRAFTY_DISTFILES}
 DISTFILES+=		${CRAFTY_STARTPGN} ${CRAFTY_DOCFILES}
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 COMMENT=		chess engine
 
 USE_BUILDLINK2=		YES

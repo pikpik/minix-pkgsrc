@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2003/01/24 15:38:43 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:40:54 jmmv Exp $
 #
 
 DISTNAME=	jpnfont
 WRKSRC=		${WRKDIR}/JPNKIT
 CATEGORIES=	fonts japanese
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (Japanese)
 
 DEPENDS+=	acroread-font-share-4.0:../../fonts/acroread-font-share

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/05/31 15:19:58 seb Exp $
+# $NetBSD: Makefile,v 1.7 2003/04/27 13:47:14 cjep Exp $
 #
 
 DISTNAME=	sl
@@ -11,7 +11,7 @@ PATCH_SITES=	http://ecssg.ec.tmit.ac.jp/~izumi/sl/
 PATCHFILES=	sl5.patch
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	minoura@netbsd.org
+MAINTAINER=	minoura@NetBSD.org
 HOMEPAGE=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/
 COMMENT=	Animated SL that runs across the terminal when you type `sl'
 

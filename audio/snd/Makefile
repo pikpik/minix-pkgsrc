@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2002/09/21 01:02:04 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2003/03/29 12:40:09 jmmv Exp $
 #
 
 DISTNAME=		snd
@@ -7,7 +7,7 @@ WRKSRC=			${WRKDIR}
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
-MAINTAINER=		hubertf@netbsd.org
+MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://ccrma-www.stanford.edu/CCRMA/Software/snd/snd.html
 COMMENT=		X based sound editor
 

@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/17 21:51:35 thorpej Exp $
 
 DISTNAME=	nttcp-1.47
 CATEGORIES=	benchmarks net
 MASTER_SITES=	http://www.leo.org/~elmar/nttcp/
 
-MAINTAINER=	thorpej@netbsd.org
+MAINTAINER=	thorpej@NetBSD.org
 HOMEPAGE=	http://www.leo.org/~elmar/nttcp/
 COMMENT=	New TCP testing and performance measuring tool
 

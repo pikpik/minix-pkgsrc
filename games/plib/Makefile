@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/20 13:03:27 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/09 19:46:53 jschauma Exp $
 #
 
 DISTNAME=	plib-1.2.0
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://plib.sourceforge.net/dist/
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://plib.sourceforge.net/
 COMMENT=	libraries for writing portable games/realtime interactive apps
 

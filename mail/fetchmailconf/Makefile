@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2003/06/02 01:18:46 jschauma Exp $
+# $NetBSD: Makefile,v 1.49 2003/07/13 17:39:25 wiz Exp $
 
 DISTNAME=	fetchmail-6.2.2
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/ \
 		http://www.tuxedo.org/~esr/fetchmail/ \
 		http://sunsite.unc.edu/pub/Linux/system/mail/pop/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.tuxedo.org/~esr/fetchmail/
 COMMENT=	Configuration tool for fetchmail
 

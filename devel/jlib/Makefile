@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2000/11/11 17:49:24 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:38:32 wiz Exp $
 #
 
 DISTNAME=	jlib-1.0.6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jlib/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://jlib.sourceforge.net/
 COMMENT=	library of C++ utility classes
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2002/02/28 17:45:45 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2002/06/10 09:11:31 sakamoto Exp $
 #
 
 PKGNAME=	ja-FreeWnn-dict-1.10
 PKGREVISION=	1
 CATEGORIES=	japanese inputmethod
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.freewnn.org/
 COMMENT=	Japanese/Chinese/Korean input method (Japanese dictionary)
 

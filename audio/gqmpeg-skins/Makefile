@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/12 19:38:46 hubertf Exp $
 #
 
 DISTNAME=	bla
@@ -75,7 +75,7 @@ DISTFILES+=	\
 		yelojckt.tar.gz \
 		zoom-information.tar.gz
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://gqmpeg.sourceforge.net/
 COMMENT=	Skins for gqmpeg
 

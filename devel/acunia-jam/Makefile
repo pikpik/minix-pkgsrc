@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/06/27 08:15:14 skrll Exp $
 #
 
 DISTNAME=	acunia-jam-1.0
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/jam
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	skrll@netbsd.org
+MAINTAINER=	skrll@NetBSD.org
 HOMEPAGE=	http://wonka.acunia.com/
 COMMENT=	Acunia version of the program construction tool, like make(1)
 

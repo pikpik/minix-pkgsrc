@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/06/02 01:21:32 jschauma Exp $
+# $NetBSD: Makefile,v 1.25 2003/06/26 17:16:53 seb Exp $
 # FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp
 #
 
@@ -9,7 +9,7 @@ CATEGORIES=		audio
 MASTER_SITES=		# empty
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 COMMENT=		MOD player
 
 RESTRICTED=		"Non-redistributable beta"

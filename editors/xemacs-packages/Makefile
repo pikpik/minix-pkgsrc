@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2003/06/30 11:24:54 seb Exp $
+# $NetBSD: Makefile,v 1.38 2003/07/07 12:51:44 uebayasi Exp $
 
 DISTNAME=	xemacs-packages
 PKGNAME=	xemacs-packages-1.12
@@ -122,7 +122,7 @@ DISTFILES=	\
 		zenirc-1.13-pkg.tar.gz
 ### DISTFILES
 
-MAINTAINER=	magick@netbsd.org
+MAINTAINER=	magick@NetBSD.org
 HOMEPAGE=	http://www.xemacs.org/
 COMMENT=	Common elisp packages for xemacs 21
 

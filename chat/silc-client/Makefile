@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/05/02 11:54:06 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2003/07/13 13:50:48 wiz Exp $
 #
 
 DISTNAME=		${SILC_CLIENT_DISTNAME}
@@ -11,7 +11,7 @@ MASTER_SITES=		http://www.silcnet.org/download/client/sources/ \
 			http://www.at.silcnet.org/download/client/sources/
 EXTRACT_SUFX=		${SILC_CLIENT_EXTRACT_SUFX}
 
-MAINTAINER=		salo@netbsd.org
+MAINTAINER=		salo@NetBSD.org
 HOMEPAGE=		http://www.silcnet.org/
 COMMENT=                Client for the Secure Internet Live Conferencing (SILC) protocol
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2002/10/13 13:35:01 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:26 jlam Exp $
 #
 
 PKGNAME=	ja-FreeWnn-server-bin-1.10
 PKGREVISION=	1
 CATEGORIES=	japanese inputmethod
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.freewnn.org/
 COMMENT=	Japanese/Chinese/Korean input method (Japanese server binary)
 

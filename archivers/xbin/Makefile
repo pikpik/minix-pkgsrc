@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/08/25 21:49:27 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:40:04 jmmv Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -8,7 +8,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	ftp://sunsite.unc.edu/pub/packages/TeX/tools/xbin/
 DISTFILES=	${DISTNAME}.c ${PRGNAME}.man
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 COMMENT=	convert mailable BinHex format into binary
 
 RESTRICTED=	"May not be sold without permission"

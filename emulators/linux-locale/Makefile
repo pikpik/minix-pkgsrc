@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/03/26 04:05:51 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/28 21:14:17 wiz Exp $
 
 DISTNAME=	locales-2.1-1mdk
 PKGNAME=	linux-locale-2.1.1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.linuxi18n.org/locales/
 EXTRACT_SUFX=	.noarch.rpm
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	sakamoto@netbsd.org
+MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://www.linuxi18n.org/locales/
 COMMENT=	Locales for Linux
 

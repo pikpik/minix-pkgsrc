@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/08/04 02:00:12 grant Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/26 04:05:50 jschauma Exp $
 
 DISTNAME=		suse_libjpeg-${SUSE_VERSION}
 PKGREVISION=		1
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://ftp.suse.com/pub/suse/discontinued/i386/update/${SUSE_VERSI
 
 DISTFILES=		${RPMFILES}
 
-MAINTAINER=		hubertf@netbsd.org
+MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for jpeg binary
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2002/09/14 02:44:36 uebayasi Exp $
+# $NetBSD: Makefile,v 1.4 2003/01/11 09:28:47 uebayasi Exp $
 
 DISTNAME=	apel-10.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/apel/
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/APEL/
 COMMENT=	Portable Emacs Library
 

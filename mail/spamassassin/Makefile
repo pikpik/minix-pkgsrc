@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/05/22 11:41:02 abs Exp $
+# $NetBSD: Makefile,v 1.22 2003/06/08 01:11:38 heinz Exp $
 
 DISTNAME=	Mail-SpamAssassin-2.55
 PKGNAME=	spamassassin-2.55
@@ -8,7 +8,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}			\
 		http://www.spamassassin.org/released/
 
-MAINTAINER=	heinz-sa@netbsd.org
+MAINTAINER=	heinz-sa@NetBSD.org
 HOMEPAGE=	http://www.spamassassin.org/
 COMMENT=	mail filter to identify spam
 

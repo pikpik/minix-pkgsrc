@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2002/07/17 20:53:23 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/26 04:05:51 jschauma Exp $
 
 DISTNAME=		ymessenger-0.93.0
 CATEGORIES=		chat
 MASTER_SITES=		http://download.yahoo.com/dl/unix/linux/
 DISTFILES=		${DISTNAME}-1.i386.rpm
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://messenger.yahoo.com/
 COMMENT=		Yahoo! instant messaging client
 

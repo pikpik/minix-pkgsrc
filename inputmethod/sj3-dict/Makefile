@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/06/16 09:54:30 kei Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/29 01:32:43 seb Exp $
 #
 
 DISTNAME=	sj3-2.0.1.20
@@ -8,7 +8,7 @@ CATEGORIES=	japanese inputmethod
 MASTER_SITES=	ftp://ftp.sony.co.jp/pub/unsupported/src/	\
 		ftp://ftp.cs.titech.ac.jp/pub/japanese/sj3/
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Japanese input method (dictionary)
 
 BUILD_DEPENDS+=	sj3-server-bin>=2.0.1.20nb1:../sj3-server-bin

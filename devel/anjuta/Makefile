@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/06/02 01:20:58 jschauma Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/13 13:51:01 wiz Exp $
 #
 
 DISTNAME=		anjuta-1.0.1
@@ -6,7 +6,7 @@ PKGREVISION=		4
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=anjuta/}
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.anjuta.org/
 COMMENT=		Gnome based IDE for C and C++
 

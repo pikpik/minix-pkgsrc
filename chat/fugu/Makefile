@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2002/12/08 02:17:45 salo Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/14 19:37:32 jlam Exp $
 #
 
 DISTNAME=	fugu-1.0
 CATEGORIES=	chat
 MASTER_SITES=	http://fugu.gale.org/dist/
 
-MAINTAINER=	lukem@netbsd.org
+MAINTAINER=	lukem@NetBSD.org
 HOMEPAGE=	http://fugu.gale.org
 COMMENT=	graphical client for the gale secure instant messaging system
 

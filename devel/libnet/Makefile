@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/03/22 04:43:17 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/29 12:40:34 jmmv Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME:C/l/L/}
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 
-MAINTAINER=	sakamoto@netbsd.org
+MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://www.packetfactory.net/libnet/
 COMMENT=	C library for portable packet creation and injection
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/11/29 01:12:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2002/11/11 23:41:06 seb Exp $
 
 DISTNAME=	sirc-2.211
 PKGREVISION=	1
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.iagora.com/~espel/sirc/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}	\
 		${SIRC_SCRIPTS}
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.iagora.com/~espel/sirc/sirc.html
 COMMENT=	IRC client written and programmable in perl
 

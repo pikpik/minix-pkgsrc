@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7.2.2 2002/06/21 23:04:51 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/08/25 21:49:22 jlam Exp $
 #
 
 DISTNAME=	unace-1.2b
@@ -6,7 +6,7 @@ PKGNAME=	unace-1.2.2
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=utils/compress/}
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.winace.com/
 COMMENT=	Extract, list and test files in ACE archives
 

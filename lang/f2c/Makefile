@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2002/08/25 19:23:02 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2002/08/27 17:32:09 jlam Exp $
 
 DISTNAME=	f2c-20001205
 PKGREVISION=	5
@@ -19,7 +19,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 #
 #   mv f2c.tar f2c-yyyymmdd.tar
 #   gzip f2c-yyyymmdd.tar
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.netlib.org/f2c/index.html
 COMMENT=	Fortran to C compiler including a script to emulate f77
 

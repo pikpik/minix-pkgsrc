@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/11/30 13:29:21 taca Exp $
+# $NetBSD: Makefile,v 1.7 2003/06/29 13:37:45 uebayasi Exp $
 #
 
 DISTNAME=	ddskk-20030629
@@ -6,7 +6,7 @@ CATEGORIES=	japanese inputmethod
 MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://openlab.ring.gr.jp/skk/index.html
 COMMENT=	Japanese input methods for Emacs
 

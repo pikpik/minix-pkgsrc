@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/11/28 14:25:49 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/11/15 00:23:48 jlam Exp $
 #
 
 DISTNAME=	minami-1.0.2
@@ -6,7 +6,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.guru.gr.jp/pub/minami/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	kei@netbsd.org
+MAINTAINER=	kei@NetBSD.org
 HOMEPAGE=	http://www.guru.gr.jp/~issei/minami/
 COMMENT=	Text adventure
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/17 11:33:41 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/21 23:46:45 jlam Exp $
 #
 
 DISTNAME=	CDDB-1.3
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-cddb-1.3
 CATEGORIES=	audio
 MASTER_SITES=	http://ftp1.sourceforge.net/cddb-py/
 
-MAINTAINER=	drochner@netbsd.org
+MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://cddb-py.sourceforge.net/
 COMMENT=	python module to access the CDDB online database
 

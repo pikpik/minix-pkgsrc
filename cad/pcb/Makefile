@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/02/26 03:40:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.20 2003/06/27 12:09:39 seb Exp $
 # FreeBSD Id: Makefile,v 1.19 1998/10/31 18:05:31 jseger Exp
 #
 
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tgz
 DISTFILES=	pcb-1.6.3.tgz \
 		pcb-docs-1.6.3.tar.gz
 
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://bach.ece.jhu.edu/~haceaton/pcb/
 COMMENT=	X11 interactive printed circuit board layout system
 

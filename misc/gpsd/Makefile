@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/05 16:52:45 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2003/06/06 09:42:45 jmmv Exp $
 
 DISTNAME=	gpsd-1.07
 CATEGORIES=	misc
 MASTER_SITES=	http://www.pygps.org/gpsd/
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.pygps.org/gpsd/
 COMMENT=	GPS information daemon
 

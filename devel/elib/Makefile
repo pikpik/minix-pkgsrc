@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/04 21:42:52 seb Exp $
+# $NetBSD: Makefile,v 1.7 2003/06/23 10:43:35 seb Exp $
 #
 
 DISTNAME=	elib-1.0
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://jde.sunsite.dk/
 
-MAINTAINER=	cjones@netbsd.org
+MAINTAINER=	cjones@NetBSD.org
 COMMENT=	Library of utility functions for Emacs
 
 .include "../../mk/emacs.mk"

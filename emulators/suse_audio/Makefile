@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/11/25 11:01:13 schmonz Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/26 04:05:48 jschauma Exp $
 
 DISTNAME=		audiofile
 PKGNAME=		suse_audio-${SUSE_VERSION}
@@ -6,7 +6,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=snd1/}
 EXTRACT_SUFX=		.rpm
 
-MAINTAINER=		tron@netbsd.org
+MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for audio libraries
 

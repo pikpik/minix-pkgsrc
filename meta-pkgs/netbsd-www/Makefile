@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/22 17:17:50 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/26 08:08:28 jmmv Exp $
 #
 
 DISTNAME=	netbsd-www-1.0
@@ -6,7 +6,7 @@ CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	grant@netbsd.org
+MAINTAINER=	grant@NetBSD.org
 COMMENT=	meta-pkg including all packages to convert DocBook/XML -> HTML
 
 DEPENDS+=	docbook-website>=2.3nb3:../../textproc/docbook-website

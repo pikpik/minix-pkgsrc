@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2003/06/25 22:28:10 seb Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:51:02 wiz Exp $
 
 DISTNAME=	autogen-5.5.3
 PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=autogen/}
 
-MAINTAINER=	kristerw@netbsd.org
+MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://autogen.sourceforge.net/
 COMMENT=	The Automated Program Generator
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2002/10/10 00:05:41 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/02/23 03:19:54 salo Exp $
 #
 
 DISTNAME=	yudit-2.7.2
 CATEGORIES=	editors
 MASTER_SITES=	http://yudit.org/download/
 
-MAINTAINER=	wulf@netbsd.org
+MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://yudit.org/
 COMMENT=	Unicode Text Editor
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/07/19 08:52:31 toshii Exp $
+# $NetBSD: Makefile,v 1.11 2003/06/07 15:04:21 jmmv Exp $
 #
 
 DISTNAME=       mgl2-alpha-020
@@ -8,7 +8,7 @@ CATEGORIES=     graphics
 MASTER_SITES=   http://at.sakura.ne.jp/~suz/arc/
 
 MAINTAINER=     fk200329@fsinet.or.jp
-HOMEPAGE=	http://www.netbsd.org/Ports/hpcmips/mgl2.html
+HOMEPAGE=	http://www.NetBSD.org/Ports/hpcmips/mgl2.html
 COMMENT=	Graphics library for NEC Mobilegear/PocketBSD, NetBSD/hpcmips
 
 DEPENDS+= 	jpeg-6b:../../graphics/jpeg

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/06/23 10:17:53 seb Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/14 19:01:35 fredb Exp $
 #
 
 DISTNAME=	binutils-2.14
@@ -6,7 +6,7 @@ PKGNAME=	binutils-2.14.0.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=binutils/}
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/directory/binutils.html
 COMMENT=	GNU binary utilities
 

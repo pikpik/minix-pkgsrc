@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/04/10 01:28:17 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/31 10:17:48 cjep Exp $
 #
 
 DISTNAME=		nighthawk-2.1
@@ -11,7 +11,7 @@ PATCH_SITES=		${MASTER_SITES}
 PATCHFILES=		nighthawk-2.1a.patch
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=		hubertf@netbsd.org
+MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://jsno.arafuraconnect.com.au/proj_linux/nighthawk.html
 COMMENT=		C=64 Paradroid clone
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.42 2003/03/15 16:16:37 hubertf Exp $
+# $NetBSD: Makefile,v 1.43 2003/04/09 21:04:08 grant Exp $
 
 DISTNAME=	screen-3.9.15
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.uni-erlangen.de/pub/utilities/screen/ \
 		${MASTER_SITE_GNU:=screen/}
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/screen/screen.html
 COMMENT=	Multi-screen window manager
 

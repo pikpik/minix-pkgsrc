@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/06 18:14:10 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2003/06/06 19:39:04 drochner Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -9,7 +9,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.0.1/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 

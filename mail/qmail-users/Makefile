@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:37 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:38 jmmv Exp $
 #
 
 DISTNAME=	qmail-users-1.0
@@ -7,7 +7,7 @@ CATEGORIES=	mail
 MASTER_SITES=   #
 DISTFILES=	#
 
-MAINTAINER=	zuntum@netbsd.org
+MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://www.qmail.org/
 COMMENT=	Users required to build & run qmail package
 

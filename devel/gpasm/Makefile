@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/24 13:22:36 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2001/07/05 14:32:33 dmcmahill Exp $
 
 DISTNAME=	gpasm-0.9.7
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/gpasm/
 
-MAINTAINER=	wulf@netbsd.org
+MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=       http://gpasm.sourceforge.net/
 COMMENT=	assembler for Microchip's PIC micro-processors
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/03/29 12:40:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2003/04/10 01:28:14 grant Exp $
 #
 
 DISTNAME=	ZMySQLDA-1.1.3-nonbin
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}/lib
 CATEGORIES=	databases www
 MASTER_SITES=   http://www.zope.org/Members/MikeP/ZMySQLDA/
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.zope.org/Members/MikeP/ZMySQLDA
 COMMENT=	Zope Database Adaptor for MySQL
 

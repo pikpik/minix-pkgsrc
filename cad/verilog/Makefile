@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2002/02/08 01:48:31 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/15 01:57:12 dmcmahill Exp $
 #
 
 DISTNAME=	verilog-0.7
 CATEGORIES=	cad
 MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v0.7/
 
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://icarus.com/eda/verilog/index.html
 COMMENT=	Verilog simulation and synthesis tool (stable release version)
 

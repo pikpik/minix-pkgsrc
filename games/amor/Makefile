@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/03/12 21:02:26 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/13 17:37:02 wiz Exp $
 #
 
 DISTNAME=	amor-0.6
@@ -7,7 +7,7 @@ CATEGORIES=	games kde
 MASTER_SITES=	http://www.powerup.com.au/~mjones/amor/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.powerup.com.au/~mjones/amor/index.html
 COMMENT=	Small blob that sits on top of your active window
 

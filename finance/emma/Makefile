@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/05/02 11:54:50 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2003/07/13 13:51:40 wiz Exp $
 #
 
 DISTNAME=       emma-0.8.2
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	finance
 MASTER_SITES=   ${HOMEPAGE}emma/packages/
 
-MAINTAINER=	tron@netbsd.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://rainbow.mimuw.edu.pl/~la181249/
 COMMENT=	Money management program
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2003/02/21 12:25:22 mycroft Exp $
+# $NetBSD: Makefile,v 1.17 2003/06/23 11:02:22 seb Exp $
 #
 
 DISTNAME=		gmp-4.1.2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=gmp/}
 
-MAINTAINER=		hubertf@netbsd.org
+MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/gmp/gmp.html
 COMMENT=		Library for arbitrary precision arithmetic
 

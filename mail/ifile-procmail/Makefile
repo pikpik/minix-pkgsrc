@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/13 09:46:55 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:41:35 jmmv Exp $
 #
 
 DISTNAME=	ifile.procmail-0.3
@@ -8,7 +8,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://Xtrmntr.org/ORBman/download/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	salo@netbsd.org
+MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://Xtrmntr.org/ORBman/ifile.procmail.html
 COMMENT=	Set of scripts for ifile used in procmail environment
 

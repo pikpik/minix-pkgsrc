@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/21 14:45:44 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:40:18 jmmv Exp $
 #
 
 DISTNAME=	icb.2.1.4
@@ -9,7 +9,7 @@ CATEGORIES=	chat x11
 MASTER_SITES=	ftp://shoshin.armory.com/pub/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://www.icb.net/
 COMMENT=	TK interface to the ICB chat system
 

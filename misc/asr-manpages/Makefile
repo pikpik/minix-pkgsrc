@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/07 02:22:47 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:08:50 wiz Exp $
 #
 
 DISTNAME=	asr.pages
@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.winternet.com/users/eric/
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.winternet.com/~eric/sysadmin/manpages.html
 COMMENT=	alt.sysadmin.recovery man page distribution
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/16 15:40:33 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:41:43 jmmv Exp $
 #
 
 DISTNAME=	newmat10
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	math devel
 MASTER_SITES=	http://www.robertnz.net/ftp/
 
-MAINTAINER=	jschauma@netbsd.org
+MAINTAINER=	jschauma@NetBSD.org
 HOMEPAGE=	http://www.robertnz.net/ol_doc.htm
 COMMENT=	Newmat C++ Matrix Library
 

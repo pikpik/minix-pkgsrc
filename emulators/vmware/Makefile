@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/26 04:05:45 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/05/05 17:58:54 grant Exp $
 
 DISTNAME=	VMware-2.0.4-1142
 PKGNAME=	vmware-2.0.4
@@ -13,7 +13,7 @@ MASTER_SITES=   http://www4.vmware.com/software/ \
 		ftp://vmware.wespe.de/pub/software/ \
 		ftp://mirror.aarnet.edu.au/pub/vmware/software/
 
-MAINTAINER=	veego@netbsd.org
+MAINTAINER=	veego@NetBSD.org
 HOMEPAGE=	http://www.vmware.com/
 COMMENT=	VMware 2.x emulator
 

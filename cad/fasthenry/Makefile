@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/06/02 14:05:02 abs Exp $
+# $NetBSD: Makefile,v 1.14 2003/06/11 20:50:51 abs Exp $
 #
 
 DISTNAME=	fasthenry-3.0-12Nov96
@@ -8,7 +8,7 @@ CATEGORIES=	cad
 MASTER_SITES=	ftp://rle-vlsi.mit.edu/pub/fasthenry/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dmcmahill@netbsd.org
+MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://kontiki.mit.edu/rle/research/info_research_proj.html
 COMMENT=	Three-dimensional inductance extraction program
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2003/05/30 16:19:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.53 2003/07/13 13:51:47 wiz Exp $
 
 DISTNAME=		gnome-games-1.4.0.4
 PKGREVISION=		7
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}			\
 			${DISTNAME:S/s-/s-html-/}${EXTRACT_SUFX}
 
-MAINTAINER=		tron@netbsd.org
+MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME games collection
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:42 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:28 wiz Exp $
 
 DISTNAME=	uml-1.0.3-1
 PKGNAME=	uml-1.0.3
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=uml/}
 
-MAINTAINER=	wulf@netbsd.org
+MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=       http://uml.sourceforge.net/
 COMMENT=	UML Modelling tool
 

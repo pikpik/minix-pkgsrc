@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/05/31 11:48:24 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/01/19 07:13:49 salo Exp $
 #
 # NetBSD "imm" package
 # The original was based on the imm-3.5a1 FreeBSD port maintained
@@ -12,7 +12,7 @@ CATEGORIES=	mbone tk
 MASTER_SITES=	ftp://ftp.hawaii.edu/paccom/imm/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	is@netbsd.org
+MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://tonnant.itd.nrl.navy.mil/ipresearch/imm.html
 COMMENT=	Internet Image(or other data) Multicaster (and receiver)
 

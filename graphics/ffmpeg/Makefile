@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/12/23 01:42:08 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:41:15 jmmv Exp $
 
 DISTNAME=	ffmpeg-0.4.5
 PKGREVISION=	2
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/ffmpeg
 CATEGORIES=	graphics net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ffmpeg/}
 
-MAINTAINER=	tron@netbsd.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://ffmpeg.sourceforge.net/
 COMMENT=	MPEG decoding, encoding and streaming software
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/03/29 12:41:25 jmmv Exp $
+# $NetBSD: Makefile,v 1.29 2003/07/13 14:34:48 dillo Exp $
 
 DISTNAME=		clisp-2.30
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
@@ -6,7 +6,7 @@ CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clisp/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		mjl@netbsd.org
+MAINTAINER=		mjl@NetBSD.org
 HOMEPAGE=		http://clisp.cons.org/
 COMMENT=		CLISP, a Common Lisp implementation
 

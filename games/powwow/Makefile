@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/02/13 18:43:38 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2002/02/13 18:45:55 jdolecek Exp $
 #
 
 DISTNAME=	powwow-1.2.4
@@ -6,7 +6,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=games/muds/}	\
 		ftp://Linuz.sns.it/pub/Linux/max/powwow/
 
-MAINTAINER=	jdolecek@netbsd.org
+MAINTAINER=	jdolecek@NetBSD.org
 HOMEPAGE=	http://Linuz.sns.it/~max/powwow.html
 COMMENT=	Client to play MUDs
 

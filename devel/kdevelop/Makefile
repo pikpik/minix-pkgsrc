@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/03/11 13:30:42 markd Exp $
+# $NetBSD: Makefile,v 1.36 2003/05/02 11:54:33 wiz Exp $
 
 DISTNAME=	kdevelop-2.1.5
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	devel kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	skrll@netbsd.org
+MAINTAINER=	skrll@NetBSD.org
 HOMEPAGE=       http://www.kdevelop.org/
 COMMENT=	Integrated Development Enviroment for Unix/X11/KDE
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/27 22:32:16 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/02 11:54:06 wiz Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
@@ -8,7 +8,7 @@ CATEGORIES=	chat
 MASTER_SITES=	http://www.irssi.org/files/plugins/icb/
 DISTFILES=	${DISTNAME}.tar.gz ${SILC_CLIENT_DISTFILE}
 
-MAINTAINER=	salo@netbsd.org
+MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.silcnet.org/
 COMMENT=	silc-client plugin to access ICB networks
 

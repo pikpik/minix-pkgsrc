@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/05/05 02:38:00 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2001/05/12 16:17:45 wiz Exp $
 #
 
 DISTNAME=	compupic-5.1.1063-i386-netbsd
@@ -6,7 +6,7 @@ PKGNAME=	CompuPic-5.1.1063
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.photodex.com/files/unix/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://beta.compupic.com/
 COMMENT=	Tool for managing graphics and multimedia files
 

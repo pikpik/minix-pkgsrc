@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/03/29 12:40:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/06/17 08:18:37 wiz Exp $
 #
 
 DISTNAME=	arch1.0pre25
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src/=build
 CATEGORIES=	devel
 MASTER_SITES=	http://regexps.srparish.net/src/arch/
 
-MAINTAINER=	schmonz@netbsd.org
+MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://arch.fifthvision.net/bin/view/Arch/WebHome
 COMMENT=	revision control system ideal for widely distributed development
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/05/05 16:27:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2003/07/13 13:51:54 wiz Exp $
 
 DISTNAME=		xpuyopuyo-0.9.1
 PKGREVISION=		3
@@ -6,7 +6,7 @@ CATEGORIES=		games x11
 MASTER_SITES=		http://chaos2.org/xpuyopuyo/ \
 			http://lenin.dabney.caltech.edu./~justins/xpuyopuyo/
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://chaos2.org/xpuyopuyo/
 COMMENT=		Tetris-like puzzle game
 

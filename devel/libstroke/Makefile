@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/16 14:38:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/29 01:12:29 hubertf Exp $
 #
 
 DISTNAME=		libstroke-0.3
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.etla.net/libstroke/
 
-MAINTAINER=		rh@netbsd.org
+MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.etla.net/libstroke/
 COMMENT=		Stroke translation library
 

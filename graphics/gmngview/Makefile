@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/05 19:05:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/06/02 01:19:27 jschauma Exp $
 #
 
 DISTNAME=	libmng-1.0.5
@@ -10,7 +10,7 @@ MASTER_SITES=	http://www.3-t.com/libmng/download/ \
 		${MASTER_SITE_SOURCEFORGE:=libmng/} \
 		http://www.libmng.com/download/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	
 COMMENT=	simple GTK-based MNG viewer
 

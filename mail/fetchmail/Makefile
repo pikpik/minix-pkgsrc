@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.126 2003/03/22 05:18:42 wiz Exp $
+# $NetBSD: Makefile,v 1.127 2003/07/13 13:52:26 wiz Exp $
 
 DISTNAME=	fetchmail-6.2.2
 PKGREVISION=	1
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/ \
 		http://www.tuxedo.org/~esr/fetchmail/ \
 		http://sunsite.unc.edu/pub/Linux/system/mail/pop/
 
-MAINTAINER=	frueauf@netbsd.org
+MAINTAINER=	frueauf@NetBSD.org
 HOMEPAGE=	http://www.tuxedo.org/~esr/fetchmail/
 COMMENT=	batch mail retrieval/forwarding utility for pop2, pop3, apop, imap
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/23 03:00:01 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:23 jmmv Exp $
 #
 
 DISTNAME=	libtabe-0.2.5
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/libtabe
 CATEGORIES=	chinese inputmethod
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/devel/
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://libtabe.sourceforge.net/
 COMMENT=	library for Chinese language processing
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2003/06/19 23:46:43 seb Exp $
+# $NetBSD: Makefile,v 1.38 2003/07/12 08:42:35 wiz Exp $
 #
 
 DISTNAME=	automake-1.7.6
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=automake/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html
 COMMENT=	GNU Standards-compliant Makefile generator
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.45 2003/06/03 22:35:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.46 2003/06/23 10:20:19 seb Exp $
 #
 
 DISTNAME=	ddd-3.3.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=ddd/}
 
-MAINTAINER=     frueauf@netbsd.org
+MAINTAINER=     frueauf@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/ddd/
 COMMENT=	Data Display Debugger -- a common graphical front-end for GDB/DBX/XDB
 

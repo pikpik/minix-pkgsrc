@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/06/07 17:39:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.26 2003/07/03 18:47:58 seb Exp $
 #
 
 DISTNAME=		plotutils-2.4.1
@@ -6,7 +6,7 @@ PKGREVISION=		2
 CATEGORIES=		devel graphics x11
 MASTER_SITES=		${MASTER_SITE_GNU:=plotutils/}
 
-MAINTAINER=		dmcmahill@netbsd.org
+MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/plotutils/plotutils.html
 COMMENT=		Programs and library for plotting scientific data
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/19 14:05:17 zuntum Exp $
 
 DISTNAME=	ve-1.0
 CATEGORIES=	editors
@@ -6,7 +6,7 @@ MASTER_SITES=	ftp://freebsd.ntu.edu.tw/FreeBSD/woju/source/ \
 		ftp://freebsd.csie.nctu.edu.tw/pub/taiwan/NTU/woju/source/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 COMMENT=	NTHU-CS Maple BBS 2.36 BBS-like editor
 
 post-patch:

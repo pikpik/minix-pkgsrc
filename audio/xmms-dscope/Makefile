@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/05/05 19:05:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/13 13:50:33 wiz Exp $
 #
 
 DISTNAME=	dscope-1.2
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://hem.passagen.se/joakime/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://hem.passagen.se/joakime/linuxapp.html
 COMMENT=	XMMS plugin for dual scope
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/14 19:37:42 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2003/06/23 10:49:09 adam Exp $
 #
 
 DISTNAME=	png2html-1.1
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	graphics www
 MASTER_SITES=	http://www.engr.mun.ca/~holden/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.engr.mun.ca/~holden/png2html.html
 COMMENT=	Takes a PNG image and transforms it to a web page
 

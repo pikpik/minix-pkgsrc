@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/05 13:25:44 seb Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/12 11:38:31 jtb Exp $
 
 DISTNAME=		gpc-2.1
 PKGREVISION=		3
@@ -9,7 +9,7 @@ MASTER_SITES=		http://www.gnu-pascal.de/current/ \
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=		gcc-2.95.3.tar.gz
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnu-pascal.de
 COMMENT=		GNU Pascal Compiler
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/19 16:44:07 wiz Exp $
 #
 
 DISTNAME=	majesty_demo
@@ -8,7 +8,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://demos.linuxgamepublishing.com/majesty/
 EXTRACT_SUFX=	.run
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://majesty.linuxgamepublishing.com/
 COMMENT=	fantasy kingdom simulation (demo)
 

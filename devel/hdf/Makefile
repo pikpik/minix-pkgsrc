@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2003/06/02 01:20:44 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/12 13:19:03 dillo Exp $
 
 DISTNAME=		HDF4.1r5
 PKGNAME=		hdf-4.1r5
 CATEGORIES=		devel
 MASTER_SITES=		ftp://hdf.ncsa.uiuc.edu/HDF/HDF4.1r5/tar/
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://hdf.ncsa.uiuc.edu/hdf4.html
 COMMENT=		NCSA Hierarchical Data Format
 

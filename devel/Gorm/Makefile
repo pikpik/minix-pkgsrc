@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:18 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:01 wiz Exp $
 #
 
 DISTNAME=	Gorm-0.2.6
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=dev-apps/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Graphical user interface builder for GNUstep
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/07/10 18:26:52 tron Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 14:40:51 wiz Exp $
 
 DISTNAME=       mg2a
 PKGNAME=	mg2a-1.11
@@ -6,7 +6,7 @@ CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.wustl.edu/languages/c/unix-c/editors/
 EXTRACT_SUFX=   .tar.Z
 
-MAINTAINER=	tron@netbsd.org
+MAINTAINER=	tron@NetBSD.org
 COMMENT=	Small, fast, public domain EMACS style editor
 
 post-extract:

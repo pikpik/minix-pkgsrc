@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.32 2003/03/29 12:40:47 jmmv Exp $
+# $NetBSD: Makefile.common,v 1.33 2003/06/02 07:27:25 martti Exp $
 
 VIM_VERSION=		6.2
 VIM_PATCHLEVEL=		0
@@ -18,7 +18,7 @@ EXTRACT_SUFX=		.tar.bz2
 ##PATCHFILES:=		${PATCHFILES:N${VIM_VERSION}.${p}}
 ##.endif
 
-MAINTAINER=		martti@netbsd.org
+MAINTAINER=		martti@NetBSD.org
 HOMEPAGE=		http://www.vim.org/
 
 CONFLICTS+=		vim-kde-[0-9]*

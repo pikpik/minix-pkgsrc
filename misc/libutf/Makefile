@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/12/23 08:03:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/28 22:03:44 jlam Exp $
 #
 
 DISTNAME=	libutf-2.10
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
-MAINTAINER=	agc@netbsd.org
+MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://www.westley.demon.co.uk/software.html
 COMMENT=	UTF-8 character set support library, including regular expressions
 

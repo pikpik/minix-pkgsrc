@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/05/12 15:13:15 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/09 00:51:47 schmonz Exp $
 #
 
 DISTNAME=	Net-AIM-1.22
@@ -6,7 +6,7 @@ PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	chat perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
-MAINTAINER=	schmonz@netbsd.org
+MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://www.aryeh.net/Net-AIM/
 COMMENT=	implementation of the AOL Instant Messenger TOC protocol
 

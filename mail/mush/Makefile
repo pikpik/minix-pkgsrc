@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/03/12 23:17:19 jmc Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:41:36 jmmv Exp $
 
 DISTNAME=	mush-7.2.5
 PKGNAME=	mush-7.2.6.b4.pl1
@@ -17,7 +17,7 @@ PATCHFILES=	patch-7.2.6-alpha-1 \
 		patch-7.2.6-beta-3 \
 		patch-7.2.6-beta-4
 
-MAINTAINER=	christos@netbsd.org
+MAINTAINER=	christos@NetBSD.org
 COMMENT=	text-based mail client
 
 LICENSE=	mush-license

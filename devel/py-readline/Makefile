@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2002/10/25 18:31:33 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/10 15:08:20 drochner Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
 CATEGORIES=	devel misc
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/tut/interacting.html
 COMMENT=	line editing support for Python
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2003/06/29 22:24:32 jtb Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 08:55:20 skrll Exp $
 
 DISTNAME=	ftnchek-3.2.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dsm.fordham.edu/~ftnchek/download/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dsm.fordham.edu/~ftnchek/
 COMMENT=	Static analyzer for Fortran programs
 

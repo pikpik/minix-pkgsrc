@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/09/21 00:26:53 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/28 21:22:53 jschauma Exp $
 #
 
 DISTNAME=	xsqlmenu-2.10
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.jlab.org/~saw/xsqlmenu/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.jlab.org/~saw/xsqlmenu/
 COMMENT=	X based GUI for MySQL
 

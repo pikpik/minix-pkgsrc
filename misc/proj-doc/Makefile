@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/12 12:21:35 jtb Exp $
 
 DISTNAME=		proj-pdf-docs
 PKGNAME=		proj-doc-1.0
 CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.remotesensing.org/pub/proj/
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.remotesensing.org/proj/
 COMMENT=		PDF documentation for the PROJ cartographic projection software
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/06/13 14:54:22 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/06/27 11:25:38 zuntum Exp $
 #
 
 DISTNAME=	poppy-3.1
 CATEGORIES=	mail
 MASTER_SITES=	http://home.sprynet.com/~cbagwell/
 
-MAINTAINER=	zuntum@netbsd.org
+MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://home.sprynet.com/~cbagwell/projects.html
 COMMENT=	client to perform simple tasks with a POP3/IMAP server
 

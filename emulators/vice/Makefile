@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2003/06/30 12:06:08 seb Exp $
+# $NetBSD: Makefile,v 1.33 2003/07/13 13:51:39 wiz Exp $
 #
 
 DISTNAME=		vice-1.12
@@ -12,7 +12,7 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
 			kernal.4064.901246-01.bin \
 			kernal.sx.251104-04.bin
 
-MAINTAINER=		kristerw@netbsd.org
+MAINTAINER=		kristerw@NetBSD.org
 HOMEPAGE=		http://viceteam.bei.t-online.de/
 COMMENT=		Emulator for C64, C128, CBM-II, PET, and VIC20
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 01:20:45 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/06/23 11:06:23 seb Exp $
 #
 
 DISTNAME=	gperf-2.7.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=gperf/}
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	GNU perfect hash function generator
 
 GNU_CONFIGURE=	yes

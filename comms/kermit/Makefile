@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/04/11 11:49:53 darcy Exp $
+# $NetBSD: Makefile,v 1.45 2003/07/02 20:37:34 kim Exp $
 # $FreeBSD Id: Makefile,v 1.17 1997/11/26 23:16:51 jseger Exp
 #
 
@@ -9,7 +9,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.columbia.edu/kermit/
 COMMENT=	Network and serial communication, file transfer, and scripting utility
 

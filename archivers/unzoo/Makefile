@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/23 01:56:43 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:04 jmmv Exp $
 #
 
 DISTNAME=	unzoo.c
@@ -8,7 +8,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.math.rwth-aachen.de/pub/gap/gap4/util/
 EXTRACT_SUFX=	# defined
 
-MAINTAINER=	cjep@netbsd.org
+MAINTAINER=	cjep@NetBSD.org
 COMMENT=	Extract zoo archives
 
 USE_BUILDLINK2=	YES

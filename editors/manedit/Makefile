@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/06/02 01:20:07 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/13 13:51:34 wiz Exp $
 #
 
 DISTNAME=	manedit-0.5.6
@@ -8,7 +8,7 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://wolfpack.twu.net/users/wolfpack/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://wolfpack.twu.net/ManEdit/
 COMMENT=	UNIX Manual (man, manpage) page editor, viewer, and browser for X11
 
