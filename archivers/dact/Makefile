@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/22 07:18:43 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/11 18:03:49 xtraeme Exp $
 #
 
 DISTNAME=	dact-0.8.3
@@ -15,6 +15,7 @@ GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ENV+=		ac_cv_lib_mcrypt_main=no
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/dact
