@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2004/03/11 18:03:50 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:04 tv Exp $
 #
 
-DISTNAME=	Compress-Bzip2-1.01
+DISTNAME=	Compress-Bzip2-1.02
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	archivers perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/Z/ZO/ZOOVY/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/K/KC/KCARNUT/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Compress-Bzip2/
