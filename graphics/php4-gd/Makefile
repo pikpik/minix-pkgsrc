@@ -1,9 +1,13 @@
-# $NetBSD: Makefile,v 1.11 2002/09/22 10:19:57 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/14 06:21:11 martti Exp $
 
 MODNAME=		gd
 CATEGORIES+=		graphics
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP4 extension for GD graphics library
+
+PATCHFILES+=		php-4.2.3-gd-2.0.8.patch
+PATCH_DIST_STRIP=	-p3
+SITES_php-4.2.3-gd-2.0.8.patch=	http://www.boutell.com/gd/
 
 USE_BUILDLINK2=		YES
 USE_X11=		YES
