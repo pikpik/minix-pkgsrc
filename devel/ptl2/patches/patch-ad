@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/spec.h.orig	Thu Mar  2 07:06:39 2000
 +++ src/spec.h	Fri Jul 13 16:44:17 2001
 @@ -201,7 +201,7 @@
