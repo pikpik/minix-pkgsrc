@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/04 22:05:49 groo Exp $
+# $NetBSD: Makefile,v 1.3 2002/03/13 17:36:48 fredb Exp $
 
 DISTNAME=		doxygen-1.2.10.src
 PKGNAME=		doxygen-1.2.10
@@ -19,7 +19,7 @@ HAS_CONFIGURE=		yes
 CONFIGURE_ARGS=		--make ${GMAKE} --prefix ${LOCALBASE}
 CONFIGURE_ARGS+=	--docdir ${LOCALBASE}/share/doc
 
-WRKSRC=			${WRKDIR}/${PKGNAME}
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 post-install:
 	cd ${WRKSRC}; ${GMAKE} install_docs
