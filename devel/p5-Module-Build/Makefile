@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/21 16:15:38 kim Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/29 11:53:39 grant Exp $
 #
 
-DISTNAME=	Module-Build-0.20
+DISTNAME=	Module-Build-0.21
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5mob
 CATEGORIES=	devel perl5
