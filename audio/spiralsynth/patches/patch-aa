@@ -1,22 +1,22 @@
-$NetBSD: patch-aa,v 1.3 2002/09/21 00:56:03 jlam Exp $
+$NetBSD$
 
---- Makefile.in.orig	Sun Nov 26 08:06:47 2000
+--- Makefile.in.orig	Thu Jun 13 14:56:01 2002
 +++ Makefile.in
 @@ -9,12 +9,12 @@
  
  CC	=	gcc
  CXX	=	g++
--CFLAGS	=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused
--CXXFLAGS=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused
+-CFLAGS	=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused -g
+-CXXFLAGS=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused -g 
 -INCPATH	=	-I/usr/X11R6/include
 -LINK	=	g++
-+CFLAGS	+=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused
-+CXXFLAGS+=	-pipe -Wall -O3 -ffast-math -DNO_DEBUG -Wno-unused
-+INCPATH	=
++CFLAGS+=	-pipe -Wall -DNO_DEBUG -Wno-unused -g
++CXXFLAGS+=	-pipe -Wall -DNO_DEBUG -Wno-unused -g 
++INCPATH	=	
 +LINK	=	g++ ${LDFLAGS}
  LFLAGS	=	
--LIBS	=   -L/usr/X11R6/lib -lfltk -lGL -lXext -lX11 -lm 
-+LIBS	=	-lfltk -lGL -lXext -lX11 -lm ${LIBOSSAUDIO}
+-LIBS	=   -L/usr/X11R6/lib -lfltk -lGL -lXext -lX11 -lm -lpthread
++LIBS	=   -lfltk -lGL -lXext -lX11 -lm -lpthread ${LIBOSSAUDIO}
  MOC	=	moc
+ UIC	=	
  
- TAR	=	tar -cf
