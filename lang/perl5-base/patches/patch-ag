@@ -1,3 +1,4 @@
+$NetBSD$
 --- hints/netbsd.sh.orig	Sun Feb  6 15:57:09 2000
 +++ hints/netbsd.sh	Sat Apr  7 22:23:39 2001
 @@ -20,9 +20,13 @@
