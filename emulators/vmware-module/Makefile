@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/01/16 12:26:23 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/23 14:32:58 wiz Exp $
 
-DISTNAME=	vmware-netbsd-1.0
-PKGNAME=	vmware-module-1.0
-PKGREVISION=	1
+DISTNAME=	vmware-netbsd-1.1
+PKGNAME=	vmware-module-1.1
 CATEGORIES=	emulators
-MASTER_SITES=   # on ftp.netbsd.org and mirrors only
+MASTER_SITES=   ftp://ftp.netbsd.org/pub/NetBSD/misc/vmware/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	veego@netbsd.org
