@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/x2x
+man/cat1/x2x.0
+man/man1/x2x.1
