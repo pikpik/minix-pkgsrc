@@ -21,11 +21,11 @@ $NetBSD$
  clean:
  	rm -f *~ *.o a.out xfreecell libns.a
 -	make -C widget clean
-+	gmake -C widget clean
++	${GMAKE} -C widget clean
  
  lib:
 -	make -C widget lib
-+	gmake -C widget lib
++	${GMAKE} -C widget lib
  
  install: all
 -	install xfreecell $(DESTDIR)/usr/local/bin
