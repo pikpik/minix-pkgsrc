@@ -1,3 +1,4 @@
+@comment $NetBSD$
 sbin/certpatch
 sbin/isakmpd
 man/cat5/isakmpd.conf.0
