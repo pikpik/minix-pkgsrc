@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/06/22 13:04:37 agc Exp $
+# $NetBSD: Makefile,v 1.13 1998/07/02 14:04:53 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/02/15 21:24:42 steve Exp
 #
 
@@ -47,8 +47,5 @@ pre-configure:
 		${ECHO} "slightly larger margins for DeskJets.";	\
 		${FALSE}; 						\
 	fi)
-
-post-install:
-	${LDCONFIG} || ${TRUE}
 
 .include "../../mk/bsd.pkg.mk"
