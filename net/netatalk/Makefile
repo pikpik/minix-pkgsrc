@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/12/28 02:47:47 reed Exp $
+# $NetBSD: Makefile,v 1.34 2005/01/04 12:57:03 markd Exp $
 
 DISTNAME=	netatalk-2.0.2
 CATEGORIES=	net print
@@ -14,6 +14,7 @@ USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 USE_PERL5=	YES
 USE_LIBTOOL=	YES
+USE_OLD_DES_API=YES
 
 USE_PKGINSTALL=	YES
 PKG_SYSCONFSUBDIR=	netatalk
@@ -43,7 +44,6 @@ CONFIGURE_ARGS+=	--enable-netbsd \
 			--with-bdb=${BUILDLINK_PREFIX.db4} \
 			--with-gssapi --enable-krbV-uam
 CONFIGURE_ENV+=	GSSAPI_LIBS="-lkrb5 -lroken -lasn1 -lcrypto -lcom_err"
-LIBS+=-ldes
 
 post-patch:
 	mv ${WRKSRC}/etc/psf/etc2ps.sh ${WRKSRC}/etc/psf/etc2ps.sh.tmp
