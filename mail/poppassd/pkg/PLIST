@@ -1,4 +1,0 @@
-@comment $NetBSD$
-libexec/poppassd
-man/man8/poppassd.8
-share/doc/poppassd.License

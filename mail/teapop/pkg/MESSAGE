@@ -1,7 +1,0 @@
-======================================================================
-$NetBSD$
-
-  teapop.password file is expected in /etc, you may want to install
-  one from ${PREFIX}/share/examples/teapop
-
-======================================================================

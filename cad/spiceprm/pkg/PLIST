@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/spiceprm
-share/doc/spiceprm/README
-share/examples/spiceprm/EXAMPLES
-@dirrm share/doc/spiceprm
-@dirrm share/examples/spiceprm

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/KnightCap
-share/doc/knightcap/README
-@dirrm share/doc/knightcap

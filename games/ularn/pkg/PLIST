@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/Ularn
-share/Ularn/Uhelp
-share/Ularn/Umaps
-share/Ularn/Ufortune
-@dirrm share/Ularn

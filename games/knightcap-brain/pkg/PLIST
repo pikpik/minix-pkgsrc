@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/newbrain
-share/examples/knightcap/brain.dat
-@dirrm share/examples/knightcap

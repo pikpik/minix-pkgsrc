@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/gmk_sym
-bin/convert_sym
-bin/smash_megafile
-bin/sarlacc_schem
-bin/sarlacc_sym

@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1998/07/10 18:46:00 tron Exp $
-bin/mush
-man/man1/mush.1
-share/misc/Mushrc
-share/misc/cmd_help

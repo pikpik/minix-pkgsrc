@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.5 2000/08/18 20:37:28 hubertf Exp $
-libexec/qpopper
-man/man8/qpopper.8
-man/man8/qpopauth.8
-sbin/qpopauth
-share/doc/qpopper.License
-share/examples/qpopper.config

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/netris
-share/doc/netris/README
-share/doc/netris/FAQ
-share/doc/netris/robot_desc
-@dirrm share/doc/netris

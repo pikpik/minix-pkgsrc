@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/wmbiff
-man/man1/wmbiff.1
-man/man5/wmbiffrc.5
-share/examples/wmbiff/sample.wmbiffrc
-@dirrm share/examples/wmbiff

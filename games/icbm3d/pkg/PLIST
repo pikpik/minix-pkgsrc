@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/icbm3d
-share/doc/icbm3d/README.txt
-@dirrm share/doc/icbm3d

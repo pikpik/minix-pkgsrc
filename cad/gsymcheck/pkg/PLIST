@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/gsymcheck
-man/man1/gsymcheck.1
-share/gEDA/system-gsymcheckrc

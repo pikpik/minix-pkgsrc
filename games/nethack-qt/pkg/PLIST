@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2000/03/29 00:29:54 dmcmahill Exp $
-bin/nethack-qt
-share/nethackdir/tiles.xpm

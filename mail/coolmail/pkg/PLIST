@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/coolmail
-lib/X11/app-defaults/Coolmail
-man/man1/coolmail.1

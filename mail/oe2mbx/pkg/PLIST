@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/oe2mbx
-include/liboe.h
-lib/liboe.so

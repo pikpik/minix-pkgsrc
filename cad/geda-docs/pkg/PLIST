@@ -1,6 +1,0 @@
-@comment $NetBSD$
-share/doc/gEDA/README
-share/doc/gEDA/fileformats.html
-share/doc/gEDA/keymapping.html
-share/doc/gEDA/symbols.html
-@dirrm share/doc/gEDA

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/pacman
-share/pacman/pacman.dat
-@dirrm share/pacman

@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/01/07 00:36:33 frueauf Exp $
-bin/xskat
-man/cat1/xskat.0
-man/cat1/xskat-de.0

@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.2 2001/05/02 16:32:42 jlam Exp $
+bin/civclient-gtk

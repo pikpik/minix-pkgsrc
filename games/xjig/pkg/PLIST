@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/04/21 00:46:59 hubertf Exp $
-bin/xjig
-man/cat1/xjig.0
-lib/xjig/tina.gif
