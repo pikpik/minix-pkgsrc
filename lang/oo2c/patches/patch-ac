@@ -2,15 +2,18 @@ $NetBSD$
 
 --- lib/src/RT0.c.orig
 +++ lib/src/RT0.c
-@@ -13,9 +13,9 @@
+@@ -13,9 +13,13 @@
  #endif
  #define MAX_BACKTRACE_LEVELS 20  /* max number of backtraced procedure calls */
  
 -#if defined(HAVE_LIBGC) && defined(HAVE_GC_GC_H)
-+#if defined(HAVE_LIBGC) && defined(HAVE_GC_H)
++#if defined(HAVE_LIBGC)
  #  define USE_BOEHM_GC
--#  include <gc/gc.h>
++#if defined(HAVE_GC_GC_H)
+ #  include <gc/gc.h>
++#elif defined(HAVE_GC_H)
 +#  include <gc.h>
++#endif
  #else
  #  define GC_MALLOC malloc
  #  define GC_MALLOC_ATOMIC malloc
