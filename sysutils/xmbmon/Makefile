@@ -1,15 +1,17 @@
-# $NetBSD: Makefile,v 1.4 2004/04/07 13:59:40 recht Exp $
+# $NetBSD: Makefile,v 1.5 2004/07/19 10:10:30 recht Exp $
 #
 
 .include "../../sysutils/mbmon/Makefile.common"
 
-PKGNAME=	xmbmon-204
+PKGNAME=	xmbmon-205
 
 COMMENT=	X11-based motherboard monitoring utility
 
 USE_X11=	yes
 
 ALL_TARGET=	xmbmon
+
+LDFLAGS+=	-Wl,-R${X11BASE}/lib
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmbmon ${PREFIX}/bin
