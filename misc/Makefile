@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.128 2002/05/31 19:18:37 kei Exp $
+# $NetBSD: Makefile,v 1.129 2002/06/01 08:19:37 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -22,6 +22,7 @@ SUBDIR+=	cstream
 SUBDIR+=	cuecat
 SUBDIR+=	dgpsip
 SUBDIR+=	dialog
+SUBDIR+=	dnetc
 SUBDIR+=	dotfile
 SUBDIR+=	dsbr100
 SUBDIR+=	dt
