@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/07/30 14:55:59 markd Exp $
+# $NetBSD: Makefile,v 1.25 2003/08/05 13:35:26 drochner Exp $
 
 DISTNAME=	kdemultimedia-3.1.3
 PKGREVISION=	1
@@ -33,6 +33,12 @@ FOO_MAIN_FILES= \
 	kmix/kmix_main.cpp \
 	kmix/kmixctrl_main.cpp \
 	noatun/noatun_main.cpp
+
+.if !exists(${X11BASE}/lib/libXv.so)
+PLIST_SUBST+=		XV_WORKAROUND="@comment "
+.else
+PLIST_SUBST+=		XV_WORKAROUND=""
+.endif
 
 .include "../../meta-pkgs/kde3/Makefile.foo_main"
 
