@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.6 1998/06/18 16:06:37 agc Exp $
+# $NetBSD: Makefile,v 1.7 1999/05/22 20:11:32 tv Exp $
 
-DISTNAME=       lha-114c
-PKGNAME=        lha-1.14c
+DISTNAME=       lha-114f
 CATEGORIES=	archivers
-MASTER_SITES=   ftp://ftp.leo.chubu.ac.jp/pub/tools/
-EXTRACT_SUFX=   .tgz
+MASTER_SITES=   http://www2m.biglobe.ne.jp/~dolphin/lha/prog/ \
+		ftp://ftp.win.ne.jp/pub/misc/
 
 MAINTAINER=     packages@netbsd.org
 
