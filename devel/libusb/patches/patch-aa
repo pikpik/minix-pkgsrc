@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sun Nov 17 13:45:22 2002
++++ configure
+@@ -5406,7 +5406,7 @@ EOF
+ 
+     
+     os_support=bsd
+-    echo "$ac_t""FreeBSD" 1>&6
++    echo "$ac_t""NetBSD" 1>&6
+     OSLIBS=""
+     ;;
+   *-darwin*)
