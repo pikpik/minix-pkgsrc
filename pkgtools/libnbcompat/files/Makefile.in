@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.in,v 1.18 2003/09/13 17:07:47 jlam Exp $
+# $NetBSD: Makefile.in,v 1.19 2003/09/14 07:38:12 itohy Exp $
 #
 
 srcdir=		@srcdir@
@@ -85,4 +85,4 @@ clean:
 
 distclean: clean
 	rm -f Makefile config.log config.status configure.lineno
-	rm -f nbcompat/nbconfig.h
+	rm -f nbcompat/config.h nbcompat/nbconfig.h
