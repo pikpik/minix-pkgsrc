@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- mp3_check_misc.c.orig	Sat Sep 16 05:36:01 2000
++++ mp3_check_misc.c
+@@ -631,6 +631,8 @@
+ 	int	error_count = 0;
+ 	int	found_file = FALSE;
+ 
++	fp = NULL;
++	filename = NULL;
+ 
+ 	do {
+ 		if (*argv) {
