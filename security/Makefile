@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2001/03/10 14:18:54 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2001/03/13 13:20:18 zuntum Exp $
 #
 
 COMMENT=	Security tools
@@ -54,6 +54,7 @@ SUBDIR+=	rc5des
 SUBDIR+=	rid
 SUBDIR+=	rsaref
 SUBDIR+=	scanssh
+SUBDIR+=	smimemsg
 SUBDIR+=	smtpd
 SUBDIR+=	sniff
 SUBDIR+=	srp_client
