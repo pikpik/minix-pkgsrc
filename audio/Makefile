@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.200 2004/01/15 08:15:52 wiz Exp $
+# $NetBSD: Makefile,v 1.201 2004/01/17 15:26:52 recht Exp $
 #
 
 COMMENT=	Audio tools
@@ -185,6 +185,8 @@ SUBDIR+=	xcdplayer
 SUBDIR+=	xfce4-mixer
 SUBDIR+=	xfce4-xmms-plugin
 SUBDIR+=	xhippo
+SUBDIR+=	xine-arts
+SUBDIR+=	xine-esound
 SUBDIR+=	xmcd
 SUBDIR+=	xmix
 SUBDIR+=	xmmix
