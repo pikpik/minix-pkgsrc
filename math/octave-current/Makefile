@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/09/11 21:47:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.33 2004/09/23 13:03:41 adam Exp $
 #
 
 DISTNAME=	octave-${OCTAVE_VER}
@@ -31,6 +31,7 @@ USE_GNU_TOOLS+=		make
 USE_GNU_READLINE=	yes
 USE_MAKEINFO=		yes
 USE_LIBTOOL=		yes
+USE_PERL5=		build
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++ fortran
 GCC_REQD=		3.0
