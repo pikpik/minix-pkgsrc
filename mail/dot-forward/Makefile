@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/07/21 23:49:28 schmonz Exp $
+# $NetBSD: Makefile,v 1.11 2004/08/22 00:23:55 schmonz Exp $
 #
 
 DISTNAME=		dot-forward-0.71
@@ -14,7 +14,7 @@ DEPENDS+=		qmail>=1.03nb7:../../mail/qmail
 
 USE_BUILDLINK3=		yes
 
-ALL_TARGET=		it
+ALL_TARGET=		it install instcheck
 INSTALL_TARGET=		setup check
 
 RESTRICTED=		"modified source and binaries may not be distributed"
