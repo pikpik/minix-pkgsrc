@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/07/28 21:40:21 shannonjr Exp $
+# $NetBSD: Makefile,v 1.6 2004/08/01 10:20:30 shannonjr Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -147,7 +147,7 @@ do-test:
 	(cd ${WRKDIR}/obj/gcc && ${GMAKE} check-ada)
 
 do-install:
-	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} ${INSTALL} \
+	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} install \
 	 && ${TEST} -f ${GCC_PREFIX}/bin/cc || ${LN} -f ${GCC_PREFIX}/bin/gcc ${GCC_PREFIX}/bin/cc)
 	(SPECPATH=`${GCC_PREFIX}/bin/gcc -print-file-name=specs` && \
 	for EXPANDEDSPECPATH in $${SPECPATH} ; do \
