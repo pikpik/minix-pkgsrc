@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 1999/09/23 16:28:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.12 2000/01/10 01:39:04 wiz Exp $
 
 DISTNAME=	sirc-2.211
 CATEGORIES=	net
-MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/sirc/ \
-		http://www.eleves.ens.fr:8080/home/espel/sirc/scripts/
+MASTER_SITES=	http://www.iagora.com/~espel/sirc/ \
+		http://www.iagora.com/~espel/sirc/scripts/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}	\
 		${SIRC_SCRIPTS}
 
