@@ -1,6 +1,6 @@
 $NetBSD$
 
---- mail/main.c.orig	Tue Dec 18 02:21:53 2001
+--- mail/main.c.orig	Sat Sep 14 02:53:20 2002
 +++ mail/main.c
 @@ -36,6 +36,26 @@
  #include "mail.h"
@@ -29,14 +29,14 @@ $NetBSD$
  /*#define DO_MCHECK*/
  
  #ifdef DO_MCHECK
-@@ -152,6 +172,10 @@ main (int argc, char *argv [])
- 		g_mutex_free (gdk_threads_mutex);
- 		gdk_threads_mutex = NULL;
- 	}
-+
+@@ -156,6 +176,10 @@ main (int argc, char *argv [])
+ 	
+ 	g_print ("Evolution Mail ready and running.\n");
+ 	
 +#ifdef _PTH_PTHREAD_H_
 +	gtk_timeout_add (200, pth_nbschedule, NULL);
 +#endif
- 
++
  	GDK_THREADS_ENTER ();
  	bonobo_main ();
+ 	
