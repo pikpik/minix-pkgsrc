@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2000/05/16 19:36:46 abs Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/27 07:11:24 jlam Exp $
 #
 
-DISTNAME=	checkbot-1.60
+DISTNAME=	checkbot-1.62
 CATEGORIES=	www net perl5
-MASTER_SITES=	http://www.xs4all.nl/~graaff/checkbot/
+MASTER_SITES=	http://degraaff.org/checkbot/
 
-MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.xs4all.nl/~graaff/checkbot/
+MAINTAINER=	abs@netbsd.org
+HOMEPAGE=	http://degraaff.org/checkbot/
 
 DEPENDS+= 	p5-MailTools-*:../../mail/p5-MailTools
 DEPENDS+= 	p5-Net-*:../../net/p5-Net
