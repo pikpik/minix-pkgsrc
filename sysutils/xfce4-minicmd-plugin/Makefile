@@ -2,9 +2,10 @@
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.3.0
+XFCE4_VERSION=	0.2.0
 
 DISTNAME=	xfce4-minicmd-plugin-${XFCE4_VERSION}
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.berlios.de/xfce-goodies/
 COMMENT=	XFce4 command plugin
