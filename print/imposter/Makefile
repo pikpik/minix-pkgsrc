@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/28 21:12:53 xtraeme Exp $
 #
 
-DISTNAME=	imposter-0.1
+DISTNAME=	imposter-0.2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=imposter/}
 
