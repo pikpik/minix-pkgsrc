@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2001/02/10 18:35:52 tron Exp $
+# $NetBSD: Makefile,v 1.33 2001/02/16 15:51:47 wiz Exp $
 #
 
 COMMENT=	Communication utilities
@@ -10,7 +10,9 @@ SUBDIR+=	gkermit
 SUBDIR+=	hylafax
 SUBDIR+=	ifcico-cm
 SUBDIR+=	jpilot
-SUBDIR+=	jpilot-libplugin
+SUBDIR+=	jpilot-expense
+SUBDIR+=	jpilot-syncmal
+SUBDIR+=	jpilot-synctime
 SUBDIR+=	kermit
 SUBDIR+=	lrzsz
 SUBDIR+=	malsync
