@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/xmms/Output/libartsout.la
+lib/xmms/Output/libartsout.so
+lib/xmms/Output/libartsout.so.0
+lib/xmms/Output/libartsout.so.0.0
+@comment in xmms: @dirrm lib/xmms/Output
