@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:32:19 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:37 martti Exp $
 #
 
-DISTNAME=		Devel-StackTrace-1.02
+DISTNAME=		Devel-StackTrace-1.03
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5dst
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Devel/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
-#HOMEPAGE=	
+HOMEPAGE=		http://search.cpan.org/author/DROLSKY/Devel-StackTrace-1.03/
 COMMENT=		Perl5 module for stack trace and stack trace frame objects
 
 USE_BUILDLINK2=		YES
