@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/10 14:06:31 bouyer Exp $
+# $NetBSD: Makefile,v 1.2 2002/04/20 18:46:08 fredb Exp $
 
 DISTNAME=	sdig-0.11
 PKGREVISION=	1
@@ -10,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.exploits.org/sdig/
 COMMENT=	Switch Digger finds port assignment for hosts on a switched Ethernet
 
-DEPENDS=	ucd-snmp>=4.2.4*:../../net/ucd-snmp
+DEPENDS=	ucd-snmp-4.2.4*:../../net/ucd-snmp
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
