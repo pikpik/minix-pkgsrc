@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/snobol4
+man/man1/snobol4.1
+lib/snobol4/snolib.a
+lib/snobol4/bq.sno
+share/doc/snobol4/load.doc
+share/doc/snobol4/design.doc
+@dirrm lib/snobol4
+@dirrm share/doc/snobol4
