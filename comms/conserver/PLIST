@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/console
+etc/conserver.cf.example
+etc/conserver.passwd.example
+etc/rc.d/conserver
+man/man1/console.1
+man/man5/conserver.cf.5
+man/man5/conserver.passwd.5
+man/man8/conserver.8
+sbin/conserver
