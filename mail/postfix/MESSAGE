@@ -1,11 +1,11 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.4 2003/05/01 14:07:56 jmmv Exp $
+$NetBSD: MESSAGE,v 1.5 2004/03/06 06:28:22 grant Exp $
 
 To activate postfix:
 
 - Check the configuration files in ${PKG_SYSCONFDIR}
-   (see ${SHAREDIR})
-- Modify /etc/mailer.conf (see ${SHAREDIR}/mailer.conf)
+   (see ${EXAMPLEDIR})
+- Modify /etc/mailer.conf (see ${EXAMPLEDIR}/mailer.conf)
 - Set postfix=YES in /etc/rc.conf
 
 ===========================================================================
