@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/07 19:36:01 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/02 01:18:57 jschauma Exp $
 #
 
 DISTNAME=	Python-2.1.3
@@ -20,6 +20,7 @@ PTHREAD_OPTS=	require
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth
 .endif
+MAKE_ENV+=	LINK_ALL_LIBGCC_HACK=${LINK_ALL_LIBGCC_HACK:Q}
 
 INSTALL_TARGET=	altinstall
 
