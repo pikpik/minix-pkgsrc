@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/10 11:56:38 wulf Exp $
 
-DISTNAME=	Test-Cmd-1.01
+DISTNAME=	Test-Cmd-1.03
 PKGNAME=        p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	http://www.baldmt.com/Test-Cmd/
