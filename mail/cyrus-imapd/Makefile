@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2002/12/06 12:53:51 chris Exp $
+# $NetBSD: Makefile,v 1.38 2003/01/28 22:03:30 jlam Exp $
 
 DISTNAME=		cyrus-imapd-2.0.17
+PKGREVISION=		1
 SVR4_PKGNAME=		cimap
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
@@ -110,6 +111,8 @@ post-install:
 	cd ${WRKSRC}/master/conf; ${INSTALL_DATA} *.conf ${EGDIR}
 	${INSTALL_DATA_DIR} ${HTMLDIR}
 	cd ${WRKSRC}/doc; ${INSTALL_DATA} *.html cyrusv2.mc ${HTMLDIR}
+	${INSTALL_DATA_DIR} ${HTMLDIR}/man
+	cd ${WRKSRC}/doc/man; ${INSTALL_DATA} *.html ${HTMLDIR}/man
 
 .include "../../databases/db3/buildlink2.mk"
 .include "../../lang/perl5/module.mk"
