@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/09/15 18:56:20 jlam Exp $
 #
 
 DISTNAME=	isect-1.0
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://home.netcom.com/pub/users/tgagne/
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://home.netcom.com/~tgagne/
 
-DEPENDS+=	libwww-5.1m1:../../www/libwww
+DEPENDS+=	libwww-5.*:../../www/libwww
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
