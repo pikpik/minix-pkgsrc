@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/05/28 07:25:41 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/08/23 16:42:00 recht Exp $
 #
 
 .include "../../sysutils/mbmon/Makefile.common"
@@ -8,7 +8,6 @@ PKGNAME=	xmbmon-203
 COMMENT=	X11-based motherboard monitoring utility
 
 USE_X11=	yes
-USE_BUILDLINK2=	yes
 
 ALL_TARGET=	xmbmon
 
