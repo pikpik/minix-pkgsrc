@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 1999/08/30 23:11:14 tron Exp $
+# $NetBSD: Makefile,v 1.6 1999/09/03 07:21:26 rh Exp $
 #
 
-DISTNAME=	gnome-print-0.4
+DISTNAME=	gnome-print-0.7
 CATEGORIES=	print gnome
 MASTER_SITES=	http://gd.tuwien.ac.at/hci/gnome.org/GNOME/sources/gnome-print/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.levien.com/gnome/print-arch.html
 
 DEPENDS+=	gnome-libs-1.0.16:../../x11/gnome-libs
