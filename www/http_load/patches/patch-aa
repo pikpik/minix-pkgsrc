@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2002/05/05 22:07:10 rh Exp $
 
 --- Makefile.orig	Fri Jan  4 05:54:43 2002
 +++ Makefile
@@ -10,7 +10,7 @@ $NetBSD$
 -#SSL_DEFS =	-DUSE_SSL
 -#SSL_INC =	-I$(SSL_TREE)/include
 -#SSL_LIBS =	-L$(SSL_TREE)/lib -lssl -lcrypto
-+SSL_TREE =	/usr
++SSL_TREE =	${SSLBASE}
 +SSL_DEFS =	-DUSE_SSL
 +SSL_INC =	-I$(SSL_TREE)/include
 +SSL_LIBS =	-L$(SSL_TREE)/lib -lssl -lcrypto
