@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2004/01/24 14:11:10 grant Exp $
+# $NetBSD: Makefile,v 1.46 2004/05/03 20:56:35 mrauch Exp $
 
 DISTNAME=		openoffice-1.1.1
 CATEGORIES=		misc
@@ -23,7 +23,7 @@ DISTFILES+=		gpc231.tar.Z
 DISTFILES+=		ooo_addons_111.tar.bz2
 SITES_gpc231.tar.Z= 	ftp://ftp.cs.man.ac.uk/pub/toby/gpc/
 SITES_ooo_addons_111.tar.bz2=http://www.fs.tum.de/~mrauch/OpenOffice/download/\
-			ftp://ftp.NetBSD.org/pub/NetBSD/misc/mrauch/ 
+			ftp://ftp.NetBSD.org/pub/NetBSD/misc/mrauch/
 
 MAINTAINER=		mrauch@NetBSD.org
 HOMEPAGE=		http://www.openoffice.org/

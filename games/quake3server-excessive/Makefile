@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/22 12:01:35 xtraeme Exp $
 
 DISTNAME=	excessive_q3_server_003
 PKGNAME=	quake3server-excessive-003
@@ -21,5 +21,5 @@ Q3MODDIR=	${Q3ROOTDIR}/excessive
 do-install:
 	${INSTALL_DATA_DIR} ${Q3MODDIR}
 	cd ${WRKSRC}/excessive && ${PAX} -rwppm . ${Q3MODDIR}
-	
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2004/03/26 02:27:57 wiz Exp $
+# $NetBSD: Makefile,v 1.71 2004/05/06 19:19:40 wiz Exp $
 #
 
 DISTNAME=	lynx2.8.5
@@ -114,7 +114,7 @@ CONFIGURE_ARGS+=       --enable-ipv6
 
 post-install:
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/lynx
-	# gets created when applying 2.8.5.2 patch -- remove on 
+	# gets created when applying 2.8.5.2 patch -- remove on
 	# patchless update
 	${RM} ${PREFIX}/share/lynx/lynx_doc/CHANGES.orig_dist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2004/04/14 11:31:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.48 2004/04/19 00:28:59 wiz Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 PKGREVISION=		5
@@ -39,7 +39,7 @@ RPMIGNOREPATH=		tmp usr/tmp var
 
 LINUX_LDD=		${PREFIX}/${EMULSUBDIR}/usr/bin/ldd
 
-.include "../../mk/bsd.prefs.mk" 
+.include "../../mk/bsd.prefs.mk"
 
 do-build:
 	@for FILE in ${PKGDIR}/PLIST ${FILESDIR}/*.sh; do \

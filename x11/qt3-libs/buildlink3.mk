@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/04/16 14:30:45 recht Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/04/24 00:12:14 recht Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 QT3_LIBS_BUILDLINK3_MK:=	${QT3_LIBS_BUILDLINK3_MK}+
@@ -16,7 +16,7 @@ BUILDLINK_PKGSRCDIR.qt3-libs?=	../../x11/qt3-libs
 
 BUILDLINK_INCDIRS.qt3-libs+=	qt3/include
 BUILDLINK_LIBDIRS.qt3-libs+=	qt3/lib
-                                                                                
+
 .endif	# QT3_LIBS_BUILDLINK3_MK
 
 QTDIR=	${BUILDLINK_PREFIX.qt3-libs}/qt3
