@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/05/01 06:07:45 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2000/05/12 15:22:26 is Exp $
 
 DISTNAME=		magicpoint-1.07a
 CATEGORIES=		x11 graphics
@@ -7,7 +7,8 @@ MASTER_SITES=		ftp://ftp.mew.org/pub/MagicPoint/
 MAINTAINER=		itojun@itojun.org
 HOMEPAGE=		http://www.Mew.org/mgp/
 
-DEPENDS=		freetype-lib-*:../../graphics/freetype-lib
+DEPENDS+=		freetype-lib-*:../../graphics/freetype-lib
+DEPENDS+=		png>=1.0.6:../../graphics/png
 
 CONFLICTS=		mgp-*
 
