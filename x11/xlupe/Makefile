@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/20 22:29:32 pooka Exp $
 #
 
 DISTNAME=	xlupe-1.1
@@ -9,7 +9,8 @@ MAINTAINER=	coto@core.de
 HOMEPAGE=	http://core.de/~coto/xlupe/
 COMMENT=	magnifier for X
 
+USE_BUILDLINK2=	yes
 USE_IMAKE=	yes
-USE_XPM=	yes
 
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
