@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/06/02 01:15:46 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 22:56:22 grant Exp $
 #
 
 DISTNAME=		dxpc-3.8.1
@@ -11,7 +11,7 @@ COMMENT=		Differential X Protocol Compressor
 
 GNU_CONFIGURE=		yes
 USE_X11BASE=		yes
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -23,5 +23,5 @@ CONFIGURE_ENV+=	CXX=${LOCALBASE}/egcs/bin/g++
 post-install:
 	@strip ${PREFIX}/bin/dxpc
 
-.include "../../archivers/liblzo/buildlink2.mk"
+.include "../../archivers/liblzo/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
