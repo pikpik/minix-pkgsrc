@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/antiword
+share/doc/antiword/COPYING
+share/doc/antiword/Changes
+share/doc/antiword/History
+share/doc/antiword/QandA
+share/doc/antiword/ReadMe
+@dirrm share/doc/antiword
