@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2003/10/28 14:11:47 fredb Exp $
+# $NetBSD: Makefile,v 1.37 2003/12/18 19:09:31 sketch Exp $
 
 DISTNAME=	nas-1.6.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -54,7 +54,6 @@ pre-configure:
 			$${file} >> $${file}.fixed;			\
 		${MV} -f $${file}.fixed $${file};			\
 	done
-
 
 PLIST_SRC=	${PKGDIR}/PLIST.clients
 .if (${MACHINE_ARCH} == "i386") || \
