@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/09/04 09:28:04 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/10/15 20:43:43 tv Exp $
 #
 
 #SUBDIR+= ftp
@@ -6,6 +6,7 @@
 #SUBDIR+= pkg_install
 SUBDIR+= pkglibtool
 SUBDIR+= pkglint
+SUBDIR+= url2pkg
 #SUBDIR+= xpkgwedge
 
 .include "../mk/bsd.pkg.subdir.mk"
