@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.14 1999/04/15 20:39:47 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/03 14:10:42 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
-DISTNAME=	teTeX-1.0
+DISTNAME=	teTeX-texmfsrc-1.0
 PKGNAME=	teTeX-sharesrc-1.0
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/unix/teTeX/1.0/distrib/sources/}
-DISTFILES=	teTeX-texmfsrc-1.0.tar.gz
 
 MAINTAINER=	hubertf@netbsd.org
 
