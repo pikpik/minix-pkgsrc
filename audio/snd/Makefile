@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 1998/04/24 09:20:33 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/05/08 23:05:24 hubertf Exp $
 #
 
 DISTNAME=		snd
 PKGNAME=		snd-19980212
 NO_WRKSUBDIR=		YES
 CATEGORIES=		audio
-MASTER_SITES=		ftp://ccrma-ftp.stanford.edu/pub/Lisp/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		hubertf@netbsd.org
 
