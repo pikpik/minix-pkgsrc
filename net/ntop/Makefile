@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/06/11 06:34:46 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2001/06/20 04:50:23 jlam Exp $
 
 DISTNAME=		ntop-1.1
 PKGNAME=		ntop-1.1nb1
@@ -15,6 +15,12 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-threads=no
 
 INSTALL_TARGET=		install install-man
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "Linux"
+DEPENDS+=	libpcap>=0.4:../../net/libpcap
+.endif
 
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
