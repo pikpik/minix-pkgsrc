@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/06/07 00:09:21 jtb Exp $
+# $NetBSD: Makefile,v 1.4 2001/06/30 09:45:48 zuntum Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -19,4 +19,5 @@ CONFIGURE_ENV=	CFLAGS="-DHAVE_X11_EXTENSIONS_SHAPE_H=1 -O" \
 		X_PRE_LIBS="-Wl,-R${X11BASE}/lib" \
 		X_EXTRA_LIBS="-lXt"
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

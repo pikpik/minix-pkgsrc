@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:49 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/30 10:17:53 zuntum Exp $
 
 DISTNAME=	wm2-4
 PKGNAME=	wm2-4.0
@@ -13,9 +13,11 @@ ALL_TARGET=	depend wm2
 
 USE_BUILDLINK_ONLY=	YES
 USE_X11BASE=		YES
+MAKE_ENV+=	CCC="${CXX}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wm2 ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/man/cat1/wm2.0
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2001/06/26 16:30:58 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2001/06/29 04:54:56 jlam Exp $
 
 DISTNAME=		gnome-libs-1.2.13
 CATEGORIES=		x11 gnome
@@ -71,4 +71,5 @@ post-install:
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../net/ORBit/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/04/28 11:07:34 zuntum Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/26 13:40:43 zuntum Exp $
 
 DISTNAME=		Eterm-0.8.10
 PKGNAME=		eterm-0.8.10
@@ -42,4 +42,5 @@ post-install:
 .endif
 
 .include "../../graphics/imlib/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/06/07 02:01:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/06/30 09:24:56 zuntum Exp $
 #
 
 DISTNAME=	blackbox-0.61.1
@@ -15,4 +15,5 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--enable-kde
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

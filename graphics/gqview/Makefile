@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/06/23 19:26:56 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2001/06/29 04:54:55 jlam Exp $
 #
 
 DISTNAME=	gqview-0.10.1
@@ -22,4 +22,5 @@ BUILDLINK_DEPENDS.gdk-pixbuf=	gdk-pixbuf>=0.9.0
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../graphics/gdk-pixbuf/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

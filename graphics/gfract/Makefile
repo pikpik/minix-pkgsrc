@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/12 22:07:50 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/08/23 19:45:42 jlam Exp $
 #
 
 DISTNAME=	gfract-0.21
@@ -37,4 +37,5 @@ do-install:
 
 .include "../../graphics/png/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

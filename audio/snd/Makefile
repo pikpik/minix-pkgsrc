@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/06/30 21:14:10 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/07/16 19:50:50 nra Exp $
 #
 
 DISTNAME=		snd
@@ -27,4 +27,5 @@ do-install:
 
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

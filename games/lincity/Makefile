@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/05/01 07:01:56 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/30 10:39:06 zuntum Exp $
 #
 
 DISTNAME=		lincity-1.11
@@ -24,4 +24,5 @@ pre-build:
 post-install:
 	${LN} -sf lincity.6 ${PREFIX}/man/man6/xlincity.6
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/08/10 04:50:08 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2001/08/17 21:16:50 jlam Exp $
 #
 # According to AbiSource's explanation of their trademark rights,
 # compilations/distributions of AbiWord not provided by AbiSource must
@@ -65,4 +65,5 @@ post-install:
 .include "../../graphics/png/buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

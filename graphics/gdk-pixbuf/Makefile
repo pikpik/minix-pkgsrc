@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/06/18 20:49:01 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/06/26 16:30:57 jlam Exp $
 #
 
 PKGNAME=	${DISTNAME}
@@ -24,4 +24,5 @@ post-install:
 		${LOCALBASE}/share/aclocal/gdk-pixbuf.m4
 	${RM} ${PREFIX}/lib/gnomecanvaspixbufConf.sh
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

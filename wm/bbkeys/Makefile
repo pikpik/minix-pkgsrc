@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/26 20:48:20 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/26 20:55:37 jlam Exp $
 #
 
 .include "Makefile.common"
@@ -9,4 +9,5 @@ COMMENT=	General X Window keygrabber
 GNU_CONFIGURE=		YES
 USE_BUILDLINK_ONLY=	YES
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

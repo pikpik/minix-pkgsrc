@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/17 17:06:35 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/06/30 19:08:22 jlam Exp $
 
 .include "../../x11/lesstif/Makefile.common"
 
@@ -21,4 +21,5 @@ CONFIGURE_ARGS+=	--enable-default-12
 post-install:
 	${RMDIR} -p ${PREFIX}/share/doc/html/lesstif 2> /dev/null || ${TRUE}
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/06/20 23:37:01 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2001/08/23 04:26:51 jlam Exp $
 
 DISTNAME=		felt-3.05.src
 PKGNAME=		felt-3.05
@@ -38,4 +38,5 @@ post-install:
 
 .include "../../devel/readline/buildlink.mk"
 .include "../../mk/xaw.buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
