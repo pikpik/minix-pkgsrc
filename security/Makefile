@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2000/11/10 11:35:49 itojun Exp $
+# $NetBSD: Makefile,v 1.50 2000/11/23 13:16:43 rh Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -16,6 +16,7 @@
     SUBDIR += gnupg
     SUBDIR += isakmpd
     SUBDIR += kth-krb4
+    SUBDIR += libbf
     SUBDIR += libcrack
     SUBDIR += libdes
     SUBDIR += libident
