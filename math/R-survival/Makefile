@@ -1,7 +1,7 @@
 # $NetBSD$
 
 R_PKGNAME=	survival
-R_PKGVER=	2.8-2
+R_PKGVER=	2.9-4
 
 MAINTAINER=	markd@netbsd.org
 COMMENT=	Survival analysis, including penalised likelihood.

@@ -1,7 +1,7 @@
 # $NetBSD$
 
 R_PKGNAME=	mgcv
-R_PKGVER=	0.7-1
+R_PKGVER=	0.8-1
 
 MAINTAINER=	markd@netbsd.org
 COMMENT=	Multiple smoothing parameter estimation and GAMs by GCV

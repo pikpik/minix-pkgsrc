@@ -1,7 +1,7 @@
 # $NetBSD$
 
 R_PKGNAME=	cluster
-R_PKGVER=	1.4-0
+R_PKGVER=	1.4-2
 
 MAINTAINER=	markd@netbsd.org
 COMMENT=	Functions for clustering (by Rousseeuw et al.)

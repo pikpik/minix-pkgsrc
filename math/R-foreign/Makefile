@@ -1,7 +1,7 @@
 # $NetBSD$
 
 R_PKGNAME=	foreign
-R_PKGVER=	0.4-9
+R_PKGVER=	0.5-5
 
 MAINTAINER=	markd@netbsd.org
 COMMENT=	Read data stored by Minitab, S, SAS, SPSS, Stata, ...
