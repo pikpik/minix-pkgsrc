@@ -1,11 +1,11 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/10/27 18:00:07 bouyer Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2002/11/15 11:32:38 jlam Exp $
 
 .if !defined(XPM_BUILDLINK2_MK)
 XPM_BUILDLINK2_MK=	# defined
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILDLINK_DEPENDS.xpm?=		xpm-3.4k
+BUILDLINK_DEPENDS.xpm?=		xpm>=3.4k
 BUILDLINK_PKGSRCDIR.xpm?=	../../graphics/xpm
 
 # Check if we got Xpm distributed with XFree86 4.x or Solaris 9 or if we need
