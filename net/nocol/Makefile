@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/06/02 01:17:52 jschauma Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/17 22:51:29 grant Exp $
 #
 
 DISTNAME=		nocol-4.3.1
@@ -16,8 +16,8 @@ CONFIGURE_ARGS+=	< ${WRKSRC}/answers
 
 USE_PERL5=		yes
 USE_LIBTOOL=		yes
-LTCONFIG_OVERRIDE=	${WRKSRC}/cmu-snmp/snmp/ltconfig \
-			${WRKSRC}/cmu-snmp/snmpapps/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/cmu-snmp/snmp/libtool \
+			${WRKSRC}/cmu-snmp/snmpapps/libtool
 
 INSTALL_TARGET=		install root
 
