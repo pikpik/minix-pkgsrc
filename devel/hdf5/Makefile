@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/24 20:42:59 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/25 19:18:08 jtb Exp $
 #
 
 DISTNAME=	hdf5-1.2.2
@@ -13,7 +13,7 @@ DEPENDS+=	jpeg-[0-9]*:../../graphics/jpeg
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
-LIBTOOL_OVERRIDE= ${WRKSRC}/libtool
+LTCONFIG_OVERRIDE= ${WRKSRC}/bin/ltconfig
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/hdf5
