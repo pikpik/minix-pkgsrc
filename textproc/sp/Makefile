@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/12/23 10:40:46 sketch Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/23 17:18:32 jmmv Exp $
 #
 
 DISTNAME=	sp-1.3.4
@@ -34,10 +34,10 @@ post-install:
 .include "../../mk/bsd.prefs.mk"
 
 post-patch:
-.if !empty(CC_VERSION:Megcs*)
-	@cd ${WRKSRC};
-	for FILE in ${PATCHDIR}/egcs-patch-*; do \
-	  ${PATCH} ${PATCH_ARGS} <$$FILE; \
+.if !empty(CC_VERSION:Mgcc-2.8.1)
+	@cd ${WRKSRC};							\
+	for FILE in ${PATCHDIR}/egcs-patch-*; do			\
+		${PATCH} ${PATCH_ARGS} < $$FILE;			\
 	done
 .endif
 
