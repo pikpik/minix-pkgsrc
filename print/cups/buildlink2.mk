@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.3 2002/06/21 23:00:37 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:39:42 jlam Exp $
 
 .if !defined(CUPS_BUILDLINK2_MK)
 CUPS_BUILDLINK2_MK=	# defined
@@ -12,6 +12,9 @@ BUILDLINK_PREFIX.cups_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.cups=	include/cups/*
 BUILDLINK_FILES.cups+=	lib/libcups.*
 BUILDLINK_FILES.cups+=	lib/libcupsimage.*
+
+.include "../../graphics/png/buildlink2.mk"
+.include "../../graphics/tiff/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	cups-buildlink
 
