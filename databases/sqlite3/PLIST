@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/sqlite3
+include/sqlite3.h
+lib/libsqlite3.la
+lib/pkgconfig/sqlite3.pc
+man/man1/sqlite3.1
