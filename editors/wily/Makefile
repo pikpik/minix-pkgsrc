@@ -1,8 +1,9 @@
-# $NetBSD$
 # New ports collection makefile for:    wily
 # Version required:     		0.13.36
 # Date created:         		Tue Oct 21 16:06:30 BST 1997
 # Whom:                 		agc@netbsd.org (Alistair Crooks)
+#
+# $NetBSD: Makefile,v 1.1.1.1 1997/10/24 09:49:55 agc Exp $
 #
 
 DISTNAME=	wily-0.13.36
