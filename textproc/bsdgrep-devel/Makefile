@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/14 15:15:17 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/30 15:34:52 cjep Exp $
 #
 
 DISTNAME=	bsdgrep-200312301530
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.fawlty.net/software/
 
 MAINTAINER=	cjep@NetBSD.org
 HOMEPAGE=	# none
-COMMENT=	BSD version of grep as in NetBSD othersrc
+COMMENT=	BSD version of grep as in NetBSD src/usr.bin/grep
 
 post-patch:
 	@${SED} -e 's|grep|bgrep|g' ${WRKSRC}/grep.1 > ${WRKSRC}/bgrep.1
