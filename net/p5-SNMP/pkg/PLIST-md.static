@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/site_perl/${MACHINE_ARCH}-netbsd/auto/SNMP/SNMP.a
+lib/perl5/site_perl/${MACHINE_ARCH}-netbsd/auto/SNMP/extralibs.ld
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-netbsd/auto/SNMP
