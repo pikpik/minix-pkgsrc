@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.4 2001/11/19 16:23:15 jlam Exp $
+# $NetBSD: Makefile.php,v 1.5 2001/11/26 07:34:07 jlam Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -42,6 +42,7 @@ PHP4_CONFIGURE_ARGS?=	# empty
 CONFIGURE_ARGS+=	${PHP4_CONFIGURE_ARGS}
 
 CONFIGURE_ENV+=		ac_cv_lib_pam_pam_start=no
+CONFIGURE_ENV+=		EXTENSION_DIR="${PREFIX}/${PHP_EXTENSION_DIR}"
 
 post-configure: create-shlibtool
 
