@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xbuffy
+man/man1/xbuffy.1
+lib/X11/app-defaults/XBuffy
