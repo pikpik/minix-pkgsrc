@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/01/01 15:26:29 darcy Exp $
+# $NetBSD: Makefile,v 1.14 2005/02/19 00:22:10 wiz Exp $
 #
 
 DISTNAME=	website-2.5.0
@@ -15,7 +15,7 @@ DEPENDS=	docbook-xsl>=1.58:../../textproc/docbook-xsl
 USE_BUILDLINK3=	yes
 USE_LANGUAGES=	# empty
 NO_BUILD=	# defined
-NO_CONFIGURE=	# defined
+NO_CONFIGURE=	YES
 
 DOCDIR=		${PREFIX}/share/doc/docbook-website
 DTDDIR=		${PREFIX}/share/xml/website
