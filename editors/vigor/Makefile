@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2001/05/05 19:51:14 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/09/27 23:18:01 jlam Exp $
 #
 
-DISTNAME=	vigor-0.010
+DISTNAME=	vigor-0.016
 CATEGORIES=	editors
 MASTER_SITES=	http://www.red-bean.com:8080/
 
