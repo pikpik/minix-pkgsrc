@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mwm
 bin/mxmkmf
 bin/uil
