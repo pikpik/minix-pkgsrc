@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/extract_targets
+bin/maketool
+share/locale/la/LC_MESSAGES/maketool.mo
+@dirrm share/locale/la/LC_MESSAGES
+@dirrm share/locale/la
+share/maketool/COPYING
+share/maketool/COPYRIGHT
+@dirrm share/maketool
