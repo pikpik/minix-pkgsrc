@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1204 2003/07/08 09:20:30 chris Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1205 2003/07/08 11:48:37 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -2120,7 +2120,7 @@ automake-post-override:
 
 # By adding this target, it makes sure the the above PREREQ's work.
 pre-configure-override: ${_CONFIGURE_PREREQ}
-	${DO_NADA}
+	@${DO_NADA}
 
 .if !target(do-configure)
 do-configure: 
