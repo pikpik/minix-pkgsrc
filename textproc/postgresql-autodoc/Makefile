@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2002/11/26 22:20:36 mjl Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:39 jmmv Exp $
 #
 
 VERS=		1.01
 DISTNAME=	postgresql_autodoc-${VERS}
 WRKSRC=         ${WRKDIR}
-CATEGORIES=	textproc database
+CATEGORIES=	textproc databases
 MASTER_SITES=	http://www.rbt.ca/autodoc/
 
 MAINTAINER=	packages@netbsd.org
