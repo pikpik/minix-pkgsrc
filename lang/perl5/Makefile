@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.34 2001/04/12 18:14:16 manu Exp $
+# $NetBSD: Makefile,v 1.35 2001/04/22 06:28:30 jlam Exp $
 
-DISTNAME=		perl-5.6.0nb5
+DISTNAME=		perl-5.6.0nb6
 CATEGORIES=		lang devel perl5
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -9,7 +9,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://language.perl.com/index.html
 COMMENT=		Practical Extraction and Report Language
 
-DEPENDS+=		perl-base>=5.6.0nb1:../../lang/perl5-base
+DEPENDS+=		perl-base>=5.6.0nb2:../../lang/perl5-base
 DEPENDS+=		p5-Data-Dumper>=2.101:../../devel/p5-Data-Dumper
 DEPENDS+=		p5-Devel-DProf>=19990108:../../devel/p5-Devel-DProf
 DEPENDS+=		p5-Devel-Peek>=1.0001:../../devel/p5-Devel-Peek
