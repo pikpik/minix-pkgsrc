@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.162 2001/11/12 09:18:34 jlam Exp $
+# $NetBSD: Makefile,v 1.163 2001/11/13 21:36:49 jlam Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -48,6 +48,7 @@ SUBDIR+=	galeon
 SUBDIR+=	galway
 SUBDIR+=	glibwww
 SUBDIR+=	grail
+SUBDIR+=	gtkasp2php
 SUBDIR+=	gtkhtml
 SUBDIR+=	haskell-cgi
 SUBDIR+=	hiawatha
