@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.200 2004/10/19 16:42:03 adrianp Exp $
+# $NetBSD: Makefile,v 1.201 2004/10/23 13:31:57 shannonjr Exp $
 #
 
 COMMENT=	Security tools
@@ -38,6 +38,7 @@ SUBDIR+=	cyrus-sasl2
 SUBDIR+=	cyrus-saslauthd
 SUBDIR+=	ddos-scan
 SUBDIR+=	destroy
+SUBDIR+=	dirmngr
 SUBDIR+=	dropbear
 SUBDIR+=	dsniff
 SUBDIR+=	egd
@@ -50,6 +51,7 @@ SUBDIR+=	fsh
 SUBDIR+=	gnome-keyring
 SUBDIR+=	gnu-crypto
 SUBDIR+=	gnupg
+SUBDIR+=	gnupg-devel
 SUBDIR+=	gnustep-ssl
 SUBDIR+=	gnutls
 SUBDIR+=	gpa
