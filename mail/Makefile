@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.211 2004/05/08 08:50:34 uebayasi Exp $
+# $NetBSD: Makefile,v 1.212 2004/06/05 21:45:20 reed Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -68,6 +68,7 @@ SUBDIR+=	imp
 SUBDIR+=	incm
 SUBDIR+=	isync
 SUBDIR+=	ja-mh
+SUBDIR+=	ja-squirrelmail
 SUBDIR+=	jchkmail
 SUBDIR+=	kbiff
 SUBDIR+=	libesmtp
