@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.129 2003/03/19 21:11:03 jlam Exp $
+# $NetBSD: Makefile,v 1.130 2003/03/19 22:29:30 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -124,6 +124,7 @@ SUBDIR+=	ssh
 SUBDIR+=	ssh-askpass
 SUBDIR+=	ssh-ip-tunnel
 SUBDIR+=	ssh2
+SUBDIR+=	ssh2-nox11
 SUBDIR+=	ssldump
 SUBDIR+=	sslwrap
 SUBDIR+=	stunnel
