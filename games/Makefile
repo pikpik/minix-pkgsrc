@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 1999/01/03 17:07:20 tron Exp $
+# $NetBSD: Makefile,v 1.42 1999/01/07 00:38:26 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -40,6 +40,7 @@
     SUBDIR += lincity
     SUBDIR += maelstrom
     SUBDIR += mirrormagic
+    SUBDIR += moria
     SUBDIR += nethack
     SUBDIR += nethack-lib
     SUBDIR += nethack-qt
