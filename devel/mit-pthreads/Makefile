@@ -3,7 +3,7 @@
 # Date created:		10th October 1997
 # Whom:			Alistair Crooks (agc@netbsd.org)
 #
-# $NetBSD: Makefile,v 1.5 1998/01/24 04:22:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/02/02 11:17:54 frueauf Exp $
 #
 
 DISTNAME=       pthreads-1_60_beta6
@@ -14,8 +14,8 @@ ONLY_FOR_ARCHS=	alpha arm32 bebox i386 mips pc532 powerpc sparc vax
 
 MAINTAINER=	agc@netbsd.org
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX}/pthreads
+GNU_CONFIGURE=	yes
+MAKE_ENV+=	NOLINT=1
 
 pre-install:
 	-mkdir ${PREFIX}/pthreads
