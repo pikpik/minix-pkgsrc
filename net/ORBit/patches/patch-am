@@ -1,13 +1,13 @@
-$NetBSD: patch-am,v 1.1 1999/04/14 20:34:38 garbled Exp $
+$NetBSD$
 
---- src/services/event/Makefile.in.orig	Fri Aug  4 14:32:36 2000
-+++ src/services/event/Makefile.in	Fri Aug  4 14:32:45 2000
-@@ -138,7 +138,7 @@
- 	$(top_builddir)/src/IIOP/libIIOP.la				\
- 	$(top_builddir)/src/ORBitutil/libORBitutil.la			\
- 	@GLIB_LIBS@ 							\
--	-lm
-+	-lm -lwrap
+--- src/services/event/Makefile.in.orig	Thu Oct 12 12:07:09 2000
++++ src/services/event/Makefile.in
+@@ -115,7 +115,7 @@
+ DEPS = $(top_builddir)/src/orb/libORBit.la					$(top_builddir)/src/ORBitutil/libORBitutil.la				$(top_builddir)/src/IIOP/libIIOP.la
  
  
- event_consumer_SOURCES = event-consumer.c				\
+-LDADDS =  	$(top_builddir)/src/orb/libORBit.la					$(top_builddir)/src/IIOP/libIIOP.la					$(top_builddir)/src/ORBitutil/libORBitutil.la				@GLIB_LIBS@ 								-lm
++LDADDS =  	$(top_builddir)/src/orb/libORBit.la					$(top_builddir)/src/IIOP/libIIOP.la					$(top_builddir)/src/ORBitutil/libORBitutil.la				@GLIB_LIBS@ 								-lm @LIB_WRAP@
+ 
+ 
+ event_consumer_SOURCES = event-consumer.c					CosEventComm-skels.c	 						CosEventChannel-common.c 						CosEventChannel-stubs.c
