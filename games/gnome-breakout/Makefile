@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/04/02 19:49:19 rh Exp $
 #
 
-DISTNAME=	gnome-breakout-0.2
+DISTNAME=	gnome-breakout-0.3
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.tuial.com/~alcaron/software/
 
