@@ -1,0 +1,16 @@
+$NetBSD: README,v 1.11 2000/07/23 18:02:33 fredb Exp $
+
+This file will eventually hold a current 'TODO' list for people
+working on pkgsrc.
+
+packages TODO (Suggested new packages)
+^^^^^^^^^^^^^
+    figfonts		More fonts for figlet
+    ftp://ftp.plig.org/pub/figlet/fonts/contributed/
+
+    compat_solaris8	Solaris and Intel compat libraries
+    http://www.sun.com/software/solaris/binaries/download.html
+
+
+pksgrc TODO (Suggested pkgsrc features and enhancements)
+^^^^^^^^^^^
