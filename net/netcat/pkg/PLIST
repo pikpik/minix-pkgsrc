@@ -1,0 +1,5 @@
+@comment $NetBSD$
+sbin/nc
+sbin/nc-data
+sbin/nc-rservice
+sbin/nc-xor
