@@ -1,9 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/05/01 21:58:42 jlam Exp $
+@comment $NetBSD: PLIST,v 1.2 2000/05/12 18:28:27 sakamoto Exp $
 bin/bdfindex
 bin/fwindex
 bin/ttindex
 include/VF.h
 lib/libVFlib2.a
+lib/libVFlib2.la
 lib/libVFlib2.so.${VFLIB_SO_VERSION}
 share/VFlib/${VFLIB_VERSION}/COPYING
 share/VFlib/${VFLIB_VERSION}/COPYING.LIB
