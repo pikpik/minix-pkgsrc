@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1390 2004/02/12 13:30:04 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1391 2004/02/12 13:39:57 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1295,7 +1295,7 @@ GNU_CONFIGURE_PREFIX?=	${PREFIX}
 CONFIGURE_ARGS+=	--host=${MACHINE_GNU_PLATFORM}
 CONFIGURE_ARGS+=	--prefix=${GNU_CONFIGURE_PREFIX}
 HAS_CONFIGURE=		yes
-.  if ${X11PREFIX} == ${LOCALBASE}
+.  if defined(USE_X11)
 CONFIGURE_ARGS+=	--x-includes=${X11BASE}/include
 CONFIGURE_ARGS+=        --x-libraries=${X11BASE}/lib
 .  endif
