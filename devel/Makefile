@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2000/02/18 15:01:40 wiz Exp $
+# $NetBSD: Makefile,v 1.103 2000/02/22 22:45:10 jlam Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -53,6 +53,7 @@
 #    SUBDIR += ilu
     SUBDIR += ipv6socket_scrub
     SUBDIR += isect
+    SUBDIR += its4
     SUBDIR += kdbg
     SUBDIR += kdevelop
 #    SUBDIR += lclint
