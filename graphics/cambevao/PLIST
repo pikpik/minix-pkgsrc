@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/cambevao
+share/doc/cambevao.README
+share/examples/cambevao/cambevao.xml
+@dirrm share/examples/cambevao
