@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/06/15 21:22:10 itojun Exp $
+# $NetBSD: Makefile,v 1.6 1999/06/16 16:18:30 itojun Exp $
 
 DISTNAME=		magicpoint-1.04a
 # question is for localized (i.e. Japanese) version
@@ -10,6 +10,8 @@ MAINTAINER=		itojun@itojun.org
 HOMEPAGE=		http://www.Mew.org/mgp/
 
 DEPENDS=		freetype-1.1:${.CURDIR}/../../print/freetype
+
+CONFLICTS=		mgp-*
 
 GNU_CONFIGURE=		yes
 USE_IMAKE=		yes
