@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2000/01/06 04:18:38 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/21 01:30:55 wiz Exp $
 #
 
-DISTNAME=	pth-1.3a4
+DISTNAME=	pth-1.3a5
 PKGNAME=	${DISTNAME:S/-/-current-/}
 CATEGORIES=	devel
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/pth/
@@ -14,5 +14,10 @@ CONFLICTS=	pth-*
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--enable-pthread
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/pth/
+	${INSTALL_DATA} ${WRKSRC}/pthread.ps ${PREFIX}/share/doc/pth/
+	${INSTALL_DATA} ${WRKSRC}/rse-pmt.ps ${PREFIX}/share/doc/pth/
 
 .include "../../mk/bsd.pkg.mk"
