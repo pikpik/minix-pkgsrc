@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/rox/Archive/AppIcon.xpm
+share/rox/Archive/AppRun
+share/rox/Archive/Help/COPYING
+share/rox/Archive/Help/README
+@dirrm share/rox/Archive/Help
+@dirrm share/rox/Archive
