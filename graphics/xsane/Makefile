@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/08/19 19:36:48 mycroft Exp $
+# $NetBSD: Makefile,v 1.34 2002/09/22 21:55:03 wiz Exp $
 #
 
 DISTNAME=	xsane-0.86
@@ -19,7 +19,6 @@ COMMENT=	New improved frontend for SANE
 
 BUILD_USES_MSGFMT=	yes
 
-USE_LIBINTL=	YES
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 USE_X11BASE=	YES
