@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.177 2003/09/22 14:47:04 manu Exp $
+# $NetBSD: Makefile,v 1.178 2003/09/24 09:27:55 tron Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -47,6 +47,7 @@ SUBDIR+=	faces
 SUBDIR+=	fastforward
 SUBDIR+=	fetchmail
 SUBDIR+=	fetchmailconf
+SUBDIR+=	fix-mime-charset
 SUBDIR+=	fromto
 SUBDIR+=	getmail
 SUBDIR+=	gnus
