@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- ../hash.cc.orig	Wed Oct 17 07:40:48 2001
++++ ../hash.cc
+@@ -39,7 +39,7 @@
+ #include "hash.h"
+ #include "ptree-core.h"
+ #ifndef DONT_GC
+-#include "gc/gc.h"
++#include <gc.h>
+ #endif
+ 
+ struct HashTableEntry {
