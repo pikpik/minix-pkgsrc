@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:48 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/02 01:15:56 jschauma Exp $
 
-DISTNAME=	CMFPlone1.0.1
-PKGREVISION=	1
-PKGNAME=	zope25-CMFPlone-1.0.1
+DISTNAME=	CMFPlone1.0.2
+PKGNAME=	zope25-CMFPlone-1.0.2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/plone/}
-WRKSRC=		${WRKDIR}/CMFPlone-1.0.1
+WRKSRC=		${WRKDIR}/CMFPlone-1.0.2
 
 MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.plone.org/
