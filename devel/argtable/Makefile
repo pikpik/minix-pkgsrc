@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:38:17 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/04/19 18:12:57 jlam Exp $
 
 DISTNAME=	argtable-1.2
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://metalab.unc.edu/pub/Linux/devel/argtable.html
 COMMENT=	library for parsing command line arguments of a C/C++ program
 
-USE_BUILDINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 
 post-install:
