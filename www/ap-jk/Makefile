@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 22:55:25 grant Exp $
+# $NetBSD: Makefile,v 1.19 2003/08/23 15:26:25 jschauma Exp $
 
 DISTNAME=	jakarta-tomcat-${TOMCAT_VERSION}-src
 PKGNAME=	ap-jk-${TOMCAT_VERSION}
@@ -24,7 +24,6 @@ EXTRACT_ELEMENTS=	${DISTNAME}/src/native
 APACHE_MODULE_NAME=	mod_jk.so
 APACHE_MODULE_SRC=	*.c ../jk/*.c
 CPPFLAGS+=		-I../jk ${BUILDLINK_CPPFLAGS.${PKG_JVM}}
-
 
 .include "../../www/apache/module.mk"
 .include "../../mk/java-vm.mk"

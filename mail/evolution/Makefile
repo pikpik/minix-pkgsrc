@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2003/11/12 03:39:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.45 2004/01/04 21:37:09 rh Exp $
 
 DISTNAME=		evolution-1.4.5
 CATEGORIES=		mail time gnome
@@ -54,7 +54,6 @@ pre-configure:
 		 -e 's|^\(lib.*_la_LIBADD.*\)$$|\1 ../../libcamel.la|' &&\
 		${MV} $$i.fixed $$i ;					\
 	done
-
 
 .include "../../databases/db3/buildlink2.mk"
 .include "../../databases/openldap/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:47:06 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/30 12:31:42 gavan Exp $
 #
 
 DISTNAME=	sympa-3.4.2
@@ -25,7 +25,6 @@ DEPENDS+=	p5-perl-ldap>=0.10:../../databases/p5-perl-ldap
 DEPENDS.SunOS+=	p5-DB_File-[0-9]*:../../databases/p5-DB_File
 
 OPSYSVARS+=	DEPENDS
-
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
