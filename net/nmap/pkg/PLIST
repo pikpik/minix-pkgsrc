@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nmap
+lib/nmap-os-fingerprints
+man/man1/nmap.1
