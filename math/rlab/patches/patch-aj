@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- main.c.orig	Wed Jan 31 02:08:34 2001
++++ main.c
+@@ -239,7 +239,7 @@
+  * ************************************************************** */
+ 
+ #ifdef HAVE_GC
+-#include "gc_private.h"
++#include "gc_priv.h"
+ 
+ int real_main (int argc, char *argv[]);
+ 
