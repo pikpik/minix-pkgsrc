@@ -1,19 +1,20 @@
-# $NetBSD: Makefile,v 1.4 1999/10/28 14:29:20 agc Exp $
+# $NetBSD: Makefile,v 1.5 1999/11/05 21:44:13 soren Exp $
 #
 
-DISTNAME=	t1lib-0.9.2
+DISTNAME=	t1lib-1.0
 CATEGORIES=	textproc devel graphics
-MASTER_SITES=	${MASTER_SITE_SUNSITE:=libs/graphics/}
+MASTER_SITES=	${MASTER_SITE_SUNSITE:=libs/graphics/} \
+		ftp://ftp.neuroinformatik.ruhr-uni-bochum.de/pub/software/t1lib/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.neuroinformatik.ruhr-uni-bochum.de/ini/PEOPLE/rmz/t1lib.html
+HOMEPAGE=	http://www.neuroinformatik.ruhr-uni-bochum.de/ini/PEOPLE/rmz/t1lib/t1lib.html
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_X11BASE=	yes
 
-WRKSRC=		${WRKDIR}/T1-0.9.2
+WRKSRC=		${WRKDIR}/T1-1.0
 MESSAGE_FILE=	${WRKDIR}/MESSAGE
 ALL_TARGET=	without_doc
 
