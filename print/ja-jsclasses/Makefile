@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2003/03/31 06:24:21 jmc Exp $
+# $NetBSD: Makefile,v 1.4 2003/06/15 11:34:52 kei Exp $
 
-DISTNAME=	jsclasses
-PKGNAME=	ja-jsclasses-0.0.0.20030529
+DISTNAME=	jsclasses-030624
+PKGNAME=	ja-${DISTNAME}
 WRKSRC=		${WRKDIR}/jsclasses
 CATEGORIES=	print japanese
 MASTER_SITES=	http://www.matsusaka-u.ac.jp/~okumura/jsclasses/
