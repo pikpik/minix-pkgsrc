@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/13 20:14:27 ben Exp $
+# $NetBSD: Makefile,v 1.10 2003/12/24 09:53:50 jmmv Exp $
 #
 
 DISTNAME=		memtest86-2.9
@@ -12,7 +12,7 @@ COMMENT=		Thorough, stand alone memory test for x86 arch
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 post-patch:
 	${CP} ${FILESDIR}/linkage.h ${WRKSRC}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:53:17 wiz Exp $
 
 DISTNAME=	grun-0.9.2
 PKGREVISION=	2
@@ -12,7 +12,7 @@ COMMENT=	GTK+ based Run dialog
 USE_BUILDLINK2=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 PTHREAD_OPTS+=		require
 
 post-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/05/02 13:28:16 bouyer Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/25 19:29:00 wiz Exp $
 #
 
 PKGNAME=		amanda-server-${VERS}
@@ -7,7 +7,7 @@ COMMENT=		Server part of Amanda, a network backup system
 
 USE_BUILDLINK2=		yes
 USE_PERL5=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../sysutils/amanda-dev-common/Makefile.common"

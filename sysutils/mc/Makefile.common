@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.20 2003/07/17 22:53:41 grant Exp $
+# $NetBSD: Makefile.common,v 1.21 2003/09/19 02:27:12 hubertf Exp $
 
 DISTNAME=		mc-4.5.51
 CATEGORIES+=		sysutils
@@ -16,7 +16,7 @@ PATCHDIR=		${.CURDIR}/../../sysutils/mc/patches
 
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--without-included-gettext

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/13 13:53:14 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/03 18:49:52 reed Exp $
 #
 
 DISTNAME=	FSViewer.app-0.2.3
@@ -19,7 +19,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 # when the application gets updated for windowmaker>=0.64.0
 CFLAGS+=	-I${BUILDLINK_PREFIX.windowmaker}/include/WINGs
 
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 USE_X11=		yes
 USE_BUILDLINK2=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/06/02 01:16:57 jschauma Exp $
+# $NetBSD: Makefile,v 1.25 2003/07/17 22:53:26 grant Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -14,7 +14,7 @@ COMMENT=		Server part of Amanda, a network backup system
 
 USE_PERL5=		yes
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../sysutils/amanda-common/Makefile.common"
