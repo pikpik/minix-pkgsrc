@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/12/13 00:45:26 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2003/12/28 23:37:07 jmmv Exp $
 #
 
 DISTNAME=	bluefish-0.12
@@ -27,7 +27,7 @@ GNU_CONFIGURE=		# defined
 
 CONFIGURE_ARGS+=	--with-autocomplet
 CONFIGURE_ARGS+=	--with-icon-path=${PREFIX}/share/pixmaps
-CONFIGURE_ARGS+=	--with-gnome2-menu=${PREFIX}/share/applications	
+CONFIGURE_ARGS+=	--with-gnome2-menu=${PREFIX}/share/applications
 
 .include "../../sysutils/gnome-vfs2/buildlink2.mk"
 .include "../../devel/pcre/buildlink2.mk"
