@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2002/11/14 12:48:28 wiz Exp $
+# $NetBSD: Makefile,v 1.76 2002/12/31 07:05:51 dsainty Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -18,6 +18,7 @@ SUBDIR+=	freebsd_lib
 SUBDIR+=	generator
 SUBDIR+=	gnuboy
 SUBDIR+=	gpsim
+SUBDIR+=	hatari
 SUBDIR+=	hercules
 SUBDIR+=	hercules-images
 SUBDIR+=	ia64sim
