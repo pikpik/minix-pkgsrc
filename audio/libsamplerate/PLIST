@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/sndfile-resample
+include/samplerate.h
+lib/libsamplerate.a
+lib/libsamplerate.la
+lib/libsamplerate.so
+lib/libsamplerate.so.0
+lib/libsamplerate.so.0.11
+lib/pkgconfig/samplerate.pc
+@unexec ${RMDIR} %D/lib/pkgconfig 2>/dev/null || ${TRUE}
