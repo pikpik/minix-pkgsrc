@@ -1,4 +1,0 @@
-# $NetBSD$
-#
-# Cfengine
-7,37 * * * * * /usr/pkg/sbin/cfexecd -F
