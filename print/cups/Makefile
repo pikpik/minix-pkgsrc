@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2002/01/06 19:41:28 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2002/01/30 03:33:29 jlam Exp $
 
 DISTNAME=		cups-${DIST_VERS}-source
 PKGNAME=		cups-${VERS}
-BASE_VERS=		1.1.12
+BASE_VERS=		1.1.13
 DIST_VERS=		${BASE_VERS}
 VERS=			${DIST_VERS:S/-/./g}
 WRKSRC=			${WRKDIR}/cups-${BASE_VERS}
