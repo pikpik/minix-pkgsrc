@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/03/07 16:31:59 rh Exp $
+# $NetBSD: Makefile,v 1.11 1999/12/27 12:13:04 rh Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/12/24 17:45:28 ache Exp
 #
 
@@ -32,6 +32,13 @@ CONFLICTS+=	wu-ftpd-vr-* beroftpd-*
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--enable-quota --enable-noop --enable-skey
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD" && make(do-configure)
+CFLAGS+=	-DHAVE_SYS_MOUNT
+.endif
+
 MAKE_ENV+=	INSTALL="${INSTALL}"
 MAKE_ENV+=	INSTALL_PROGRAM="${INSTALL_PROGRAM}"
 MAKE_ENV+=	INSTALL_DATA="${INSTALL_DATA}"
