@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/23 11:55:57 martti Exp $
+# $NetBSD: Makefile,v 1.5 2001/11/30 11:58:31 martti Exp $
 
 DISTNAME=	db-3.3.11
 PKGNAME=	java-db3-3.11.2
@@ -17,7 +17,7 @@ DISTINFO_FILE?=		${.CURDIR}/../db3/distinfo
 PATCHDIR?=		${.CURDIR}/../db3/patches
 
 USE_JAVA=		yes
-JDK_BASE=		${JAVA_HOME}
+JDK_BASE=		${PKG_JAVA_HOME}
 JAVAC=			${JDK_BASE}/bin/javac
 JAR=			${JDK_BASE}/bin/jar
 JAVACABS=		${JAVAC}
