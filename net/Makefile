@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.291 2002/04/21 11:07:44 rh Exp $
+# $NetBSD: Makefile,v 1.292 2002/04/23 12:18:10 rh Exp $
 #
 
 COMMENT=	Networking tools
@@ -90,6 +90,7 @@ SUBDIR+=	kdenetwork2
 SUBDIR+=	kmap
 SUBDIR+=	latd
 SUBDIR+=	lftp
+SUBDIR+=	libIDL
 SUBDIR+=	libnids
 SUBDIR+=	libpcap
 SUBDIR+=	libsscript
