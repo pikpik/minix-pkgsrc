@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2000/12/11 02:25:35 kei Exp $
+# $NetBSD: Makefile,v 1.57 2000/12/12 01:30:52 wiz Exp $
 #
 
     SUBDIR += balsa
@@ -25,7 +25,6 @@
     SUBDIR += mhonarc
     SUBDIR += mush
     SUBDIR += mutt
-#    SUBDIR += mutt-current	# mutt is newer
     SUBDIR += nmh
     SUBDIR += p5-IMAP-Admin
     SUBDIR += p5-MIME-tools
