@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/18 22:33:40 cjep Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/11/19 07:15:14 cjep Exp $
 
 DISTNAME=	grep-0.16
 PKGNAME=	bsdgrep-0.16
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.wam.umd.edu/~howardjp/software/grep/
+MASTER_SITES=	http://www.vocito.com/downloads/software/grep/ \
+		ftp://ftp.vocito.com/pub/vocito.com/software/grep/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.wam.umd.edu/~howardjp/software/grep/
+HOMEPAGE=	http://www.vocito.com/downloads/software/grep/
 COMMENT=	BSD version of grep
 
 post-patch:
