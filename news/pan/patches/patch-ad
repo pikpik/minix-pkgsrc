@@ -1,6 +1,6 @@
 $NetBSD$
 
---- pan/base/Makefile.in.orig	Fri Aug 17 05:29:12 2001
+--- pan/base/Makefile.in.orig	Thu Oct 18 06:43:59 2001
 +++ pan/base/Makefile.in
 @@ -134,7 +134,7 @@
  DEFS = @DEFS@ -I. -I$(srcdir) -I../..
@@ -9,5 +9,5 @@ $NetBSD$
 -LIBS = @LIBS@
 +LIBS = @LIBS@ -lcompat
  libpanbase_a_LIBADD = 
- libpanbase_a_OBJECTS =  acache.o article.o article-thread.o base-prefs.o \
- decode.o debug.o file-grouplist.o file-headers.o fnmatch.o gnksa.o \
+ libpanbase_a_OBJECTS =  acache.o argset.o article.o article-thread.o \
+ base-prefs.o decode.o debug.o file-grouplist.o file-headers.o fnmatch.o \
