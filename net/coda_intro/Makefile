@@ -1,8 +1,8 @@
 # $NetBSD$
 #
 
-DISTNAME=	coda-intro-4.6.5-1
-PKGNAME=	coda-intro-4.6.5.1
+DISTNAME=	coda-intro-4.6.5-2
+PKGNAME=	coda-intro-4.6.5.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/doc/
 EXTRACT_SUFX=	.tgz
