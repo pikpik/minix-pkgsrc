@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.229 2005/03/18 05:26:05 taca Exp $
+# $NetBSD: Makefile,v 1.230 2005/03/22 01:07:32 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -218,6 +218,7 @@ SUBDIR+=	sslwrap
 SUBDIR+=	steghide
 SUBDIR+=	stunnel
 SUBDIR+=	sudo
+SUBDIR+=	systrace-policies
 SUBDIR+=	tacshell
 SUBDIR+=	tcl-tls
 SUBDIR+=	tcp_wrappers
