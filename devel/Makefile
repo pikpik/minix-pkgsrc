@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.384 2003/03/06 09:10:13 martin Exp $
+# $NetBSD: Makefile,v 1.385 2003/03/19 16:11:11 jschauma Exp $
 #
 
 COMMENT=	Development utilities
@@ -383,6 +383,7 @@ SUBDIR+=	unproven-pthreads
 SUBDIR+=	w32api
 SUBDIR+=	xdelta
 SUBDIR+=	xxgdb
+SUBDIR+=	z80-asm
 SUBDIR+=	zlib
 
 .include "../mk/bsd.pkg.subdir.mk"
