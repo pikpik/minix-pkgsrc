@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/09 09:35:37 zuntum Exp $
 #
 
-DISTNAME=	pardiff-0.9.3
+DISTNAME=	pardiff-0.9.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pardiff/}
 

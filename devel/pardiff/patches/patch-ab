@@ -1,8 +1,0 @@
-$NetBSD$
-
---- pardiff/diffp.orig	Sat Jan  8 05:34:47 2000
-+++ pardiff/diffp
-@@ -1,2 +1,2 @@
--#/bin/sh
-+#!/bin/sh
- diff $1 $2 | pardiff | ${PAGER:=more}
