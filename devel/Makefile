@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.284 2002/04/27 08:58:46 rh Exp $
+# $NetBSD: Makefile,v 1.285 2002/04/30 12:37:11 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -116,6 +116,7 @@ SUBDIR+=	lcc
 SUBDIR+=	lclint
 SUBDIR+=	ldapsdk
 SUBDIR+=	libavl
+SUBDIR+=	libbegemot
 SUBDIR+=	libctl
 SUBDIR+=	libdockapp
 SUBDIR+=	libetm
