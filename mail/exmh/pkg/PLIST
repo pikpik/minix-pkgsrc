@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/exmh
 bin/exmh-async
 bin/exmh-bg
