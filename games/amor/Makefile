@@ -9,6 +9,9 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.powerup.com.au/~mjones/amor/index.html
 
+DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
+DEPENDS+=	nmap-2.12:../../net/nmap
+
 USE_X11BASE=		yes	# To get this near KDE
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt \
