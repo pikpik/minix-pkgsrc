@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/04/24 22:46:11 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2004/04/26 04:37:38 snj Exp $
 
 DISTNAME=		srp-1.4.4
 PKGNAME=		srp-client-1.4.4
@@ -28,7 +28,7 @@ CONFIGURE_ARGS+=	--with-krb4
 
 SED_PATTERN=	-e "s,include/kerberos,include/kerberosIV,"
 .if ${MACHINE_PLATFORM:MNetBSD-[01].[0-4]*-i386} == ""
-SED_PATTERN+=	-e "s,-ldes,-ldes -lroken -lcom_err,"
+SED_PATTERN+=	-e "s,-ldes,-ldes -lroken -lcom_err -lcrypt,"
 .else
 SED_PATTERN+=	-e "s,-ldes,-ldes -lcom_err,"
 .endif
