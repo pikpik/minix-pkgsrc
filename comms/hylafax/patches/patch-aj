@@ -1,8 +1,8 @@
 $NetBSD$
 
---- faxd/Getty.c++.orig	Sun Jun 13 08:41:03 1999
+--- faxd/Getty.c++.orig	Sat Sep 16 12:13:48 2000
 +++ faxd/Getty.c++
-@@ -218,7 +218,7 @@
+@@ -219,7 +219,7 @@
      // NB: this is executed in the parent
      fxStr device = fxStr::format("%s/" | line, _PATH_DEV);
      Sys::chown(device, UUCPLock::getUUCPUid(), UUCPLock::getUUCPGid());

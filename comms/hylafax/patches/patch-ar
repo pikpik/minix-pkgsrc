@@ -1,10 +1,10 @@
 $NetBSD$
 
---- util/typerules.orig	Mon Oct 12 21:47:48 1998
+--- util/typerules.orig	Mon Sep  4 06:57:44 2000
 +++ util/typerules
-@@ -128,6 +128,11 @@
+@@ -129,6 +129,11 @@
  >15     string          ascii		ps	%F/textfmt -B -f Courier-Bold\
- 						    -p 11 -s %s >%o <%i
+ 						-Ml=0.4in -p 11 -s %s >%o <%i
  #
 +# Japanization (should help other iso-2022 variants too)
 +#

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- hfaxd/User.c++.orig	Sun Jun 13 08:41:16 1999
+--- hfaxd/User.c++.orig	Thu Sep 21 09:38:00 2000
 +++ hfaxd/User.c++
 @@ -218,7 +218,7 @@
      if (id == uid)				// user currently logged in

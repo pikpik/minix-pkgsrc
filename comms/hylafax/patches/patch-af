@@ -1,6 +1,6 @@
 $NetBSD$
 
---- defs.in.orig	Mon Jan  4 09:17:09 1999
+--- defs.in.orig	Sun Feb 11 03:29:06 2001
 +++ defs.in
 @@ -44,6 +44,7 @@
  # to insufficient; you are better off rerunning the
@@ -10,7 +10,7 @@ $NetBSD$
  SPOOL		= @SPOOL@
  SBIN		= @SBIN@
  BIN		= @BIN@
-@@ -255,7 +256,7 @@
+@@ -256,7 +257,7 @@
  LDOPTS		= ${VLDOPTS} ${LLDOPTS} ${GLDOPTS}
  LDLIBS		= ${VLDLIBS} ${LLDLIBS} ${GLDLIBS}
  

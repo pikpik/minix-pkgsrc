@@ -1,8 +1,8 @@
 $NetBSD$
 
---- config/Makefile.in.orig	Mon Oct 12 21:47:47 1998
+--- config/Makefile.in.orig	Fri Jun 23 08:58:41 2000
 +++ config/Makefile.in
-@@ -95,6 +95,7 @@
+@@ -100,6 +100,7 @@
  PUTSERVER=${INSTALL} -idb ${PRODUCT}.sw.server
  
  install: default ${CONFIGFILES}

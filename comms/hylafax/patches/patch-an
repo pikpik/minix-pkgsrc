@@ -1,6 +1,6 @@
 $NetBSD$
 
---- util/Makefile.in.orig	Thu Aug  5 10:46:06 1999
+--- util/Makefile.in.orig	Sun Sep  3 04:39:34 2000
 +++ util/Makefile.in
 @@ -154,7 +154,7 @@
  PUTCLIENT	= ${INSTALL} -idb ${PRODUCT}.sw.client
