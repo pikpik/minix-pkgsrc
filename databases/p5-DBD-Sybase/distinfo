@@ -1,4 +1,5 @@
-$NetBSD: distinfo,v 1.2 2001/04/18 16:11:00 agc Exp $
+$NetBSD: distinfo,v 1.3 2002/07/02 23:57:21 hubertf Exp $
 
 SHA1 (DBD-Sybase-0.94.tar.gz) = e11d85b31751253a0da3ccee5336504b1edc59de
 Size (DBD-Sybase-0.94.tar.gz) = 98551 bytes
+SHA1 (patch-aa) = 602a87a00c60fd7230463239815d91991a94efc1
