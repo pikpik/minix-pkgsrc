@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.411 2003/08/03 23:57:52 wulf Exp $
+# $NetBSD: Makefile,v 1.412 2003/08/22 13:48:52 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -368,6 +368,7 @@ SUBDIR+=	ruby-ri
 SUBDIR+=	ruby-strscan
 SUBDIR+=	ruby-textbuf
 SUBDIR+=	ruby-unit
+SUBDIR+=	ruby-zlib
 SUBDIR+=	rvm
 SUBDIR+=	rx
 SUBDIR+=	sablecc
