@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2001/02/12 15:26:39 jlam Exp $
+# $NetBSD: Makefile,v 1.118 2001/02/16 15:51:54 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -42,6 +42,7 @@ SUBDIR+=	haskell-cgi
 SUBDIR+=	horde
 SUBDIR+=	htdig
 SUBDIR+=	htmldoc
+SUBDIR+=	htmllint
 SUBDIR+=	hypermail
 SUBDIR+=	ijb
 SUBDIR+=	jakarta-tomcat
