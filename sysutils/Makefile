@@ -14,6 +14,7 @@
     SUBDIR += bchunk
     SUBDIR += cdrdao
     SUBDIR += cdrecord
+#    SUBDIR += cdrecord-current		# disabled by default
     SUBDIR += cfengine
     SUBDIR += cpogm
     SUBDIR += crashme
