@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2000/09/03 15:14:41 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2000/09/03 18:36:06 martin Exp $
 
 DISTNAME=	mozilla-source-M17
 PKGNAME=	mozilla-1.0m17
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.mozilla.org/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/perl:../../lang/perl5
 BUILD_DEPENDS+=	autoconf:../../devel/autoconf
+BUILD_DEPENDS+= zip:../../archivers/zip
 DEPENDS+=	gtk+>=1.2.8:../../x11/gtk
 DEPENDS+=	ORBit>=0.5.1:../../net/ORBit
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
