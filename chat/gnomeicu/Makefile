@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/04/14 19:30:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/04/26 05:36:31 snj Exp $
 
 DISTNAME=	gnomeicu-0.96
 PKGREVISION=	11
@@ -6,7 +6,7 @@ CATEGORIES=	chat gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnomeicu/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gnomeicu.sourceforge.net/
 COMMENT=	GNOME ICQ client
 
