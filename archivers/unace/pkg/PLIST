@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/unace
-share/doc/unace/readme.txt
-@dirrm share/doc/unace

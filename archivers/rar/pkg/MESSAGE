@@ -1,7 +1,0 @@
-======================================================================
-$NetBSD$
-
-You must have COMPAT_12 as well as a.out support
-compiled into your kernel to use this program.
-
-======================================================================

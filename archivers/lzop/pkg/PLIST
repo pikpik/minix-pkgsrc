@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/lzop
-man/man1/lzop.1
