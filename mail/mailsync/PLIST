@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/mailsync
+man/man1/mailsync.1
+share/doc/mailsync/README
+share/doc/mailsync/WHATSNEW
+share/examples/mailsync/dot.mailsync
+@dirrm share/examples/mailsync
+@dirrm share/doc/mailsync
