@@ -1,0 +1,15 @@
+$NetBSD$
+
+Build shared libintl
+
+--- configure.orig	Fri Jun 23 04:15:24 2000
++++ configure	Fri Jun 23 04:15:36 2000
+@@ -3958,7 +3958,7 @@
+    fi
+    
+ 
+-      l=
++      l=l
+    
+ 
+          test -d po || mkdir po
