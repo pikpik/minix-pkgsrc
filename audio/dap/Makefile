@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/02/16 13:30:34 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/03/05 20:30:33 wiz Exp $
 
 DISTNAME=		dap-2.1.1
 CATEGORIES=		audio
@@ -12,6 +12,8 @@ COMMENT=		Digital audio recording and processing package
 DEPENDS+=		xforms>=0.88nb1:../../x11/xforms
 
 MAKEFILE=		Makefile.netbsd
+
+MAKE_ENV+=		X11PREFIX=${X11PREFIX}
 
 USE_X11BASE=		YES
 USE_XPM=		YES
