@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1498 2004/09/15 15:26:10 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1499 2004/09/21 15:01:38 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -4509,7 +4509,11 @@ _PRINT_PLIST_LIBTOOLIZE_FILTER?=					\
 		esac;							\
 		${ECHO} "$$file";					\
 	  done > $$fileslist;						\
-	  ${GREP} -hvxF "`${SORT} -u $$libslist`" "$$fileslist";	\
+	  if ${TEST} -f "$$libslist"; then				\
+	  	${GREP} -hvxF "`${SORT} -u $$libslist`" "$$fileslist";	\
+	  else								\
+	  	${CAT} "$$fileslist";					\
+	  fi;								\
 	  ${RM} -f "$$fileslist" "$$libslist";				\
 	)
 .else
