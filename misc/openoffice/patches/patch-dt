@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- ../basctl/source/basicide/makefile.mk.orig	Wed Oct 10 16:23:05 2001
++++ ../basctl/source/basicide/makefile.mk
+@@ -150,7 +150,7 @@
+ .ELSE
+ .IF "$(GUI)"=="UNX"
+ 	$(RM) $@
+-        echo #define DLL_NAME \"libbasctl$(UPD)$(DLLPOSTFIX)$(DLLPOST)\" >$@
++        echo '#define DLL_NAME "libbasctl$(UPD)$(DLLPOSTFIX)$(DLLPOST)"' >$@
+ .ELSE
+         echo #define DLL_NAME "basctl$(UPD)$(DLLPOSTFIX)$(DLLPOST)" >$@
+ .ENDIF
