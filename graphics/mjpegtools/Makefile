@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/09/03 13:23:32 adam Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/23 12:18:56 recht Exp $
 
 DISTNAME=	mjpegtools-1.6.1.90
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mjpeg/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://sourceforge.net/projects/mjpeg
+HOMEPAGE=	http://mjpeg.sourceforge.net/
 COMMENT=	Programs for compressing video streams
 
 DEPENDS+=		toolame>=02l:../../audio/toolame
@@ -31,5 +31,6 @@ CONFIGURE_ARGS+=	--without-avifile
 .include "../../graphics/ImageMagick/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
+.include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
