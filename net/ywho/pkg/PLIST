@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/yuptime
+bin/yusers
+bin/ywho
+man/man1/yuptime.1
+man/man1/yusers.1
+man/man1/ywho.1
