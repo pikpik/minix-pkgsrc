@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/03/26 02:27:35 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2004/03/29 07:45:27 xtraeme Exp $
 #
 
 DISTNAME=	centericq-4.9.9
@@ -15,7 +15,6 @@ USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GCC_SHLIB=		yes
 USE_GNU_TOOLS+=		make
-USE_NCURSES=		yes
 USE_LANGUAGES=		c c++
 
 GNU_CONFIGURE=		yes
