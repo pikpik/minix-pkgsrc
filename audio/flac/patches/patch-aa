@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- doc/Makefile.in.orig	Wed Sep  4 01:49:17 2002
++++ doc/Makefile.in
+@@ -128,7 +128,7 @@ AUTOMAKE_OPTIONS = foreign
+ 
+ SUBDIRS = . images ru
+ 
+-docdir = $(datadir)/doc/$(PACKAGE)-$(VERSION)
++docdir = $(datadir)/doc/html/$(PACKAGE)
+ 
+ doc_DATA = \
+ 	comparison.html \
