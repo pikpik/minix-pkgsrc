@@ -1,7 +1,7 @@
 $NetBSD$
 
---- nls/Makefile.orig	Mon Aug  6 19:48:45 2001
-+++ nls/Makefile	Sun Sep  2 21:48:46 2001
+--- nls/Makefile.orig	Tue Aug  7 00:48:45 2001
++++ nls/Makefile
 @@ -1,5 +1,5 @@
  
 -SUBDIRS=	C et finnish french german greek italian ja pl russian \
