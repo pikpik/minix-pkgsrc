@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PERL5_SITELIB}/Text/WikiFormat.pm
+lib/perl5/site_perl/man/man3/Text::WikiFormat.3
+@unexec ${RMDIR} %D/${PERL5_SITELIB}/Text 2>/dev/null || ${TRUE}
