@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.19 2000/06/01 11:23:37 rh Exp $
+# $NetBSD: Makefile,v 1.20 2000/08/14 23:37:56 wiz Exp $
 # FreeBSD Id: Makefile,v 1.21 1997/08/27 23:01:53 cwt Exp
 #
 
 DISTNAME=	scotty-2.1.8
 CATEGORIES=	net tk80
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
+
+BROKEN=		This package has not yet been updated to work with tcl-8.3.2.
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://wwwhome.cs.utwente.nl/~schoenw/scotty/

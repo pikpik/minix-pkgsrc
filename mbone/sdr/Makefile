@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.25 2000/03/15 07:17:39 bouyer Exp $
+# $NetBSD: Makefile,v 1.26 2000/08/18 22:46:42 hubertf Exp $
 #
 
 DISTNAME=	sdr-2.7
 CATEGORIES=	mbone tk80
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.7/
+
+BROKEN=		This package has not yet been updated to work with tcl-8.3.2.
 
 MAINTAINER=	is@netbsd.org
 HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/

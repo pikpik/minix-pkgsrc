@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 1999/08/06 09:50:01 agc Exp $
+# $NetBSD: Makefile,v 1.19 2000/08/31 02:11:41 jwise Exp $
 # FreeBSD Id: Makefile,v 1.29 1998/01/27 01:11:47 fenner Exp
 #
 
@@ -6,6 +6,8 @@ DISTNAME=	expect
 PKGNAME=	expect-5.25
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_BACKUP}
+
+BROKEN=		This package has not yet been updated to work with tcl-8.3.2.
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://expect.nist.gov/
