@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/04/07 23:55:25 tron Exp $
+# $NetBSD: Makefile,v 1.14 1999/05/07 08:09:06 ross Exp $
 #
 
 DISTNAME=       mkisofs-1.11.3
@@ -7,6 +7,9 @@ MASTER_SITES=   ftp://ftp.cdrom.com/pub/linux/tsx-11/packages/mkisofs/
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://andante.jic.com/mkisofs.html
+
+IGNORE=		"is now part of the cdrecord(-current) package" \
+		"(someone maybe split mkisofs out from cdrecord)."
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	World
