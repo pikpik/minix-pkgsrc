@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: url2pkg,v 1.25 2003/07/25 09:25:00 cjep Exp $
+# $NetBSD: url2pkg,v 1.26 2004/04/11 00:48:51 rh Exp $
 #
 # url2pkg
 # (c) 1999-2002 Hubert Feyrer <hubert@feyrer.de>
@@ -189,6 +189,10 @@ echo "Fixing up Makefile."
 
 		echo ""
 		echo '.include "../../devel/GConf2/schemas.mk"'
+	fi
+
+	if [ -d $wsrcdir/libltdl ]; then
+		echo '.include "../../devel/libltdl/convenience.mk"'
 	fi
 
 	echo '.include "../../mk/bsd.pkg.mk"'
