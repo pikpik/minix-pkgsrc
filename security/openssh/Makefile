@@ -1,12 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2001/02/05 09:01:03 tron Exp $
+# $NetBSD: Makefile,v 1.37 2001/02/06 03:17:00 fredb Exp $
 
 DISTNAME=		openssh-2.3.0p1
 CATEGORIES=		security
-MASTER_SITES=		http://the.wiretapped.net/security/cryptography/ssh/OpenSSH/files/ \
-			http://www.firedrake.org/openssh/files/ \
-			ftp://thermo.stat.ncsu.edu/pub/openssh/files/ \
-			ftp://sunsite.cnlab-switch.ch/mirror/OpenSSH/files/ \
-			ftp://gd.tuwien.ac.at/OpenBSD/OpenSSH/portable/ \
+MASTER_SITES=		ftp://gd.tuwien.ac.at/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/old/
 # Don't delete the last entry -- it's there if the pkgsrc version is not
