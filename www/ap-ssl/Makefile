@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.79 2004/05/13 11:40:14 taca Exp $
+# $NetBSD: Makefile,v 1.80 2004/05/30 10:29:00 grant Exp $
 
-DISTNAME=		mod_ssl-2.8.18-1.3.31
-PKGNAME=		ap-ssl-2.8.18
+DISTNAME=		mod_ssl-2.8.19-1.3.31
+PKGNAME=		ap-ssl-2.8.19
 CATEGORIES=		www security
 MASTER_SITES=		http://www.modssl.org/source/ \
 			ftp://ftp.pca.dfn.de/pub/tools/net/mod_ssl/source/ \
