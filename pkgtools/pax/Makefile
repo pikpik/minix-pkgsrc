@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 1998/09/03 11:55:21 agc Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/23 13:37:24 hubertf Exp $
 #
 
-DISTNAME=		pax-19990423
+DISTNAME=		pax-19980903
+PKGNAME=		pax-19990423
 CATEGORIES=		pkgtools
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
@@ -21,7 +22,7 @@ MANCOMPRESSED=		yes
 .endif
 
 post-extract: 
-	${CP} ${FILESDIR}/pwcache.c ${WRKSRC}
+	${GREP} -v __RCSID ${FILESDIR}/pwcache.c >${WRKSRC}/pwcache.c
 	${CP} ${FILESDIR}/pwcache.h ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
