@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/02/17 18:38:14 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/05/07 12:51:25 dmcmahill Exp $
 #
 
 DISTNAME=		compat13-${MACHINE_ARCH}${PKGMINOR}
@@ -37,6 +37,8 @@ COMPAT_LIBDIR=		lib
 PLIST_SRC+=		${PKGDIR}/PLIST
 PLIST_SRC+=		${PKGDIR}/PLIST.alpha
 PKGMINOR=		nb1
+.else
+PKGMINOR=
 .endif
 
 PLIST_SUBST+=		COMPAT_LIBDIR=${COMPAT_LIBDIR}
