@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/cjpeg
 bin/djpeg
 bin/jpegtran

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/dotfile
 bin/dotfile-2.0
 man/man1/dotfile.1.gz

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/chord
 bin/a2crd
 man/man1/chord.1.gz

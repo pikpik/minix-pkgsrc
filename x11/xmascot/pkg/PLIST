@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xmascot
 lib/X11/xmascot/pin.mag
 lib/X11/xmascot/chain.mag

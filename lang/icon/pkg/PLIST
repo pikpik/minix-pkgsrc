@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/iconc
 bin/icont
 bin/iconx

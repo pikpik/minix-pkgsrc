@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mikmod
 bin/mikcvt
 man/man1/mikmod.1.gz

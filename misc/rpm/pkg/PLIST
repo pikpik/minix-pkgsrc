@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/gendiff
 bin/rpm
 bin/find-requires

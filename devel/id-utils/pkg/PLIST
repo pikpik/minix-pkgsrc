@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mkid
 bin/lid
 bin/fid

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/freeze
 bin/melt
 bin/unfreeze

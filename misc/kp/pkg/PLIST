@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/kp
 lib/kp/cursor.tcl
 lib/kp/bit_saddy.h

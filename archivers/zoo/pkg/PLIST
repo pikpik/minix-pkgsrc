@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/fiz
 bin/zoo
 man/man1/fiz.1.gz

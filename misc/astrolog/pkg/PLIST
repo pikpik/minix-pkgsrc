@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/astrolog
 share/doc/astrolog/Helpfile.530
 share/doc/astrolog/README.530

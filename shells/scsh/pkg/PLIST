@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/scsh
 man/man1/scsh.1.gz
 lib/scsh/big/array.scm

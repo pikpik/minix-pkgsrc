@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/sxpm
 lib/libXpm.a
 lib/libXpm.so.4.10

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/scheme48
 include/scheme48.h
 man/man1/scheme48.1.gz

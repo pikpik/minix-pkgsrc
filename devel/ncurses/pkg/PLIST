@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tic
 bin/toe
 bin/infocmp

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 pthreads/bin/pgcc
 pthreads/bin/pg++
 pthreads/lib/libpthread.a

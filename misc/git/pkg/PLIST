@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/git
 bin/gitps
 bin/gitview

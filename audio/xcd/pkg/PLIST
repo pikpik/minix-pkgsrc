@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/cdplayer
 bin/xcd
 lib/xcd/eject.xbm    

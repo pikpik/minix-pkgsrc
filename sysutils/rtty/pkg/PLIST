@@ -1,3 +1,4 @@
+@comment $NetBSD$
 rtty/bin/ttysrv
 rtty/bin/rtty
 rtty/bin/locbrok

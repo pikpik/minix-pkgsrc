@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/utf.h
 include/ure.h
 lib/libutf.a

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/xpns/pns
 lib/xpns/pns.hlp
 lib/xpns/pns.shell

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tracker
 bin/randomize
 etc/compression_methods

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/bzip
 bin/bunzip
 man/man1/bzip.1.gz

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 etc/rc.d/rplayd.sh
 etc/rplay.hosts
 bin/rplay

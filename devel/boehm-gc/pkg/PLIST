@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/gc.h
 include/gc_cpp.h
 lib/libgc.a

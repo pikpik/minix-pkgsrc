@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/GL/FooMesa.h
 include/GL/dosmesa.h
 include/GL/gl.h

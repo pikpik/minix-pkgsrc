@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/toast
 @exec ln -fs %f %B/untoast
 @exec ln -fs %f %B/untoastt

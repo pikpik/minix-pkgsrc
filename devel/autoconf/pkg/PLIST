@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/autoconf
 bin/autoheader
 bin/autoreconf

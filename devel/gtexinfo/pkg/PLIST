@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/makeinfo
 bin/info
 bin/texindex

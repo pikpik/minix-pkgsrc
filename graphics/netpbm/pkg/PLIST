@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/anytopnm
 bin/asciitopgm
 bin/atktopbm

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xvile
 bin/vile-manfilt
 bin/vile-c-filt

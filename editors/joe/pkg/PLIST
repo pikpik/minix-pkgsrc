@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/joe
 bin/jmacs
 bin/jstar

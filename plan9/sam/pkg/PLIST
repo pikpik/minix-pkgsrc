@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/sam
 bin/samterm
 bin/samsave

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/htmltoc
 bin/nodefs
 bin/noindex

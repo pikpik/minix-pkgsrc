@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/unzip
 @exec ln -sf %f %B/zipinfo
 @unexec rm -f %B/zipinfo

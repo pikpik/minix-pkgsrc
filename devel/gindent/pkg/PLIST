@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/indent
 man/man1/indent.1.gz
 info/indent.info

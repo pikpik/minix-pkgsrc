@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/mirror
 bin/do_unlinks
 bin/pkgs_to_mmin

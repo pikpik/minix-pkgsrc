@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/cddbd
 share/xmcd/cddbd/access
 share/xmcd/cddbd/motd

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/rc
 bin/history
 bin/-

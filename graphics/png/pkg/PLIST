@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/png.h
 include/pngconf.h
 lib/libpng.a

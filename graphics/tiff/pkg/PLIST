@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/fax2tiff
 bin/gif2tiff
 bin/pal2rgb

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/linuxls
 bin/dircolors
 bin/dir

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/timidity
 bin/bag
 bin/wav2pat

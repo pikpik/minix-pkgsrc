@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/gdbm.h
 @unexec %D/bin/install-info --delete %D/info/gdbm.info %D/info/dir
 info/gdbm.info

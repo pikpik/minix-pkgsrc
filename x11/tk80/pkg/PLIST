@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/wish8.0
 include/tk8.0/tk.h
 include/tk8.0/unix/tkUnixDefault.h

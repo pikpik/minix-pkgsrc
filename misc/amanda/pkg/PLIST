@@ -1,3 +1,4 @@
+@comment $NetBSD$
 libexec/amanda/amandad
 libexec/amanda/sendsize
 libexec/amanda/calcsize

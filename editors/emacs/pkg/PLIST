@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/etags
 bin/ctags
 bin/emacsclient

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/figlet
 bin/chkfont
 bin/figlist

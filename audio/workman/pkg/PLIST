@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/workman
 lib/help/workman.info
 man/man1/workman.1.gz

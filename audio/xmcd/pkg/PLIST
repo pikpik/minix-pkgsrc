@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xmcd
 bin/cda
 bin/wm2xmcd

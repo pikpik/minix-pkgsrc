@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/perl5/man/man3/Locale::Country.3.gz
 lib/perl5/man/man3/Locale::Language.3.gz
 lib/perl5/site_perl/Locale/Country.pm
