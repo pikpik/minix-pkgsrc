@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.195 2002/06/09 11:11:36 taca Exp $
+# $NetBSD: Makefile,v 1.196 2002/06/18 06:38:37 thorpej Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -76,6 +76,7 @@ SUBDIR+=	jssi
 SUBDIR+=	kannel
 SUBDIR+=	libghttp
 SUBDIR+=	libwww
+SUBDIR+=	lhs
 SUBDIR+=	links
 SUBDIR+=	lynx
 SUBDIR+=	lynx-current
