@@ -1,13 +1,13 @@
-$NetBSD: patch-ao,v 1.1 2000/05/07 13:36:49 wulf Exp $
+$NetBSD$
 
---- configure.orig	Thu Sep 14 15:27:47 2000
-+++ configure	Tue Dec  5 20:58:00 2000
-@@ -1708,7 +1708,7 @@
- LIBTOOL_DEPS="$ac_aux_dir/ltconfig $ac_aux_dir/ltmain.sh"
+--- configure.orig	Thu Feb 22 12:02:16 2001
++++ configure
+@@ -2217,8 +2217,6 @@ echo "$ac_t""$rd_cv_gcc_opt" 1>&6
+          CFLAGS=$oCFLAGS
+   fi
+ fi
+-
+-CFLAGS="$CFLAGS "`grep pic_flag= libtool | sed -e 's/.*pic_flag=//' -e 's/"//g'`
  
- # Always use our own libtool.
--LIBTOOL='$(SHELL) $(top_builddir)/libtool'
-+# LIBTOOL='$(SHELL) $(top_builddir)/libtool'
- 
- # Redirect the config.log output again, so that the ltconfig log is not
- # clobbered by the next message.
+ case $target_os in
+ *hpux*)
