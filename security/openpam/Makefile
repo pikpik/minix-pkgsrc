@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2005/01/17 16:55:21 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/22 16:22:25 jlam Exp $
 
-DISTNAME=	openpam-20040210
-PKGREVISION=	1
+DISTNAME=	openpam-20050201
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openpam/}
 
@@ -18,6 +17,9 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--without-pam-su
 CONFIGURE_ARGS+=	--with-pam-unix
 CONFIGURE_ARGS+=	--with-modules-dir=${PREFIX}/lib/security
+
+USE_PKGINSTALL=		yes
+OWN_DIRS=		${PKG_SYSCONFDIR}/pam.d
 
 .include "../../mk/dlopen.buildlink3.mk"
 
