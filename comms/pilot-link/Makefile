@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/06/20 09:26:33 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/07/06 18:46:07 nathanw Exp $
 #
 
 DISTNAME=	pilot-link.0.8.13
@@ -18,8 +18,5 @@ do-configure:
 	@(cd ${WRKSRC} && CC="${CC}" ac_cv_path_CC="${CC}" CFLAGS="${CFLAGS}" \
 	    INSTALL="/usr/bin/install -c -o ${BINOWN} -g ${BINGRP}" \
 	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
-
-post-install:
-	${LDCONFIG} || ${TRUE}
 
 .include "../../mk/bsd.pkg.mk"
