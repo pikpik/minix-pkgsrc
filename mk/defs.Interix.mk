@@ -1,4 +1,4 @@
-# $NetBSD: defs.Interix.mk,v 1.26 2004/08/23 23:34:45 tv Exp $
+# $NetBSD: defs.Interix.mk,v 1.27 2004/08/27 06:29:09 jlam Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -169,10 +169,6 @@ CPPFLAGS+=		-D_ALL_SOURCE
 .ifdef GNU_CONFIGURE
 CONFIGURE_ENV+=		ac_cv_header_poll_h=no ac_cv_func_poll=no
 .endif
-
-# Interix gcc "PIC" is broken, but non-"PIC" is shlib linkable.
-# We need to AVOID -fpic/-fPIC options to gcc.
-BUILDLINK_TRANSFORM+=	S:-fpic: S:-fPIC:
 
 # check for maximum command line length and set it in configure's environment,
 # to avoid a test required by the libtool script that takes forever.

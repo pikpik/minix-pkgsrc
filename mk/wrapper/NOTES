@@ -1,0 +1,31 @@
+$NetBSD$
+
+
+    ==>  {"$@"}        ,-->  {argbuf}    ,-->  {cmdbuf}
+                       |                 |
+           ^ |         |        |        |        |
+           | `------.  |        |        |        |
+           |        |  |        |        |        |
+           v        v  |        |        |        |
+                                |                 |
+        [scan]   [arg-source]   `-->  [logic]     `-->  [cmd-sink]
+
+                                       ^ ^ ^                ^
+                                       | | |                |
+                     ,-----------------' | |                |
+                     |           ,-------' `---.            |
+                     |           |             |            |
+                     v           v             v            v
+
+                  [cache] [transform.sed] [transform]   [buildcmd]
+
+                                                            |
+                                            ,--  {cmd}   <--|
+                                 {cmd}  <===|               |
+                                            `--  {libs}  <--'
+
+                                                   ^
+                                                   |
+                                                   v
+
+                                             [reorderlibs]
