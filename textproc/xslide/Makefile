@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/03 14:55:00 wiz Exp $
 #
 
 DISTNAME=		xslide-0.2.2
@@ -9,7 +9,7 @@ MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://xslide.sourceforge.net/
 COMMENT=		XSL major mode for emacs
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 
 .include "../../mk/emacs.mk"
 
