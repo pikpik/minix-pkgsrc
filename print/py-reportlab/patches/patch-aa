@@ -1,9 +1,0 @@
-$NetBSD$
-
-Build shared modules, not a new python interpreter!
-
---- Setup.in.orig	Mon Aug 21 17:14:57 2000
-+++ Setup.in	Mon Aug 21 17:15:12 2000
-@@ -1 +1,2 @@
-+*shared*
- _pdfmetrics	_pdfmetrics.c
