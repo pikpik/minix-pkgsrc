@@ -42,3 +42,12 @@ $NetBSD$
  }
  
  static int get_time (void)
+@@ -508,7 +509,7 @@ static char *magic_get (char *filename)
+ 	if (! inited)
+ 	{
+ 		inited = 1;
+-		ret = system ("file -i /dev/zero");
++		ret = system ("file -i /dev/zero >/dev/null");
+ 		if (ret == 0)
+ 		{
+ 			mime_supported = 1;
