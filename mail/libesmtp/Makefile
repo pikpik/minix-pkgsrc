@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/28 19:19:52 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/11 00:13:54 jlam Exp $
 
 DISTNAME=	libesmtp-1.0.3r1
 PKGNAME=	${DISTNAME:S/r1//}
@@ -21,6 +21,12 @@ GNU_CONFIGURE=	yes
 USE_OLD_DES_API=	yes
 CONFIGURE_ARGS+=	--enable-all
 CONFIGURE_ARGS+=	--disable-isoc
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(LOWER_OPSYS:Mirix5*)
+CONFIGURE_ARGS+=	--enable-emulate-getaddrinfo
+.endif
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
