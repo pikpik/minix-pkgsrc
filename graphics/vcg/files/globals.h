@@ -17,7 +17,7 @@
 /*                                                                    */
 /*--------------------------------------------------------------------*/
 
-/* $Id: globals.h,v 1.1.1.1 1999/06/13 12:47:19 sakamoto Exp $ */
+/* $Id: globals.h,v 1.2 1999/06/13 12:54:19 sakamoto Exp $ */
 
 /*
  *   Copyright (C) 1993--1995 by Georg Sander, Iris Lemke, and
