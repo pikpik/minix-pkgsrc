@@ -1,9 +1,11 @@
 $NetBSD$
---- bozohttpd.8.orig	Fri Aug 25 03:17:05 2000
-+++ bozohttpd.8	Sun Aug 27 02:02:10 2000
-@@ -112,3 +112,4 @@
+--- bozohttpd.8.in.orig	Fri Aug 25 03:17:05 2000
++++ bozohttpd.8.in	Thu Aug 31 05:08:12 2000
+@@ -112,3 +112,6 @@
  entry would be:
 -.Dl www stream tcp nowait httpd /usr/pkg/libexec/httpd httpd /var/www
-+.Dl www stream tcp  nowait httpd /usr/pkg/libexec/httpd httpd /var/www
-+.Dl www stream tcp6 nowait httpd /usr/pkg/libexec/httpd httpd /var/www
++.Bd -literal
++www stream tcp  nowait httpd @PREFIX@/libexec/bozohttpd bozohttpd /var/www
++www stream tcp6 nowait httpd @PREFIX@/libexec/bozohttpd bozohttpd /var/www
++.Ed
  .Pp
