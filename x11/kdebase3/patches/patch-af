@@ -14,15 +14,23 @@ $NetBSD$
  	int ok;
  
  	if (!pipe) {
-@@ -312,7 +316,11 @@ bool GetInfo_Partitions (QListView *lbox
+@@ -312,11 +316,19 @@ bool GetInfo_Partitions (QListView *lbox
  			flags = "";
  		}
  
 +#ifdef ST_RDONLY
 +		if (statvfs(mountpoint, &sfs) == 0) {
++			tsz = ((1LL * sfs.f_blocks * sfs.f_frsize / 1024) + 513)
++					/ 1024;
++			fsz = ((1LL * sfs.f_bfree * sfs.f_frsize / 1024) + 513)
++					/ 1024;
 +#else
  		if (statfs(mountpoint, &sfs) == 0) {
-+#endif
  			tsz = ((1LL * sfs.f_blocks * sfs.f_bsize / 1024) + 513)
  					/ 1024;
  			fsz = ((1LL * sfs.f_bfree * sfs.f_bsize / 1024) + 513)
+ 					/ 1024;
++#endif
+ 			ok = 1;
+ 		} else {
+ 			tsz = fsz = 0;
