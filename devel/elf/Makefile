@@ -20,6 +20,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/elf ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/doc/elf.1 ${PREFIX}/man/man1
 
-.include "../../mk/curses.buildlink2.mk"
+.include "../../devel/ncurses/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
