@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- src/todoterm.cc.orig	Mon Apr 30 23:24:56 2001
++++ src/todoterm.cc
+@@ -4,7 +4,11 @@
+ #ifdef USETERMCAP
+ #include <string>
+ #include <stdexcept>
++#ifdef __NetBSD__
++#include <termcap.h>
++#else
+ #include <term.h>
++#endif
+ 
+ static char info[2048];
+ 
