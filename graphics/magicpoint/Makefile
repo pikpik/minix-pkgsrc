@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/05/12 15:22:26 is Exp $
+# $NetBSD: Makefile,v 1.15 2000/06/15 05:57:56 itojun Exp $
 
 DISTNAME=		magicpoint-1.07a
 CATEGORIES=		x11 graphics
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 USE_IMAKE=		yes
 CONFIGURE_ARGS=		--disable-vflib --enable-freetype-charset16 \
 			--enable-locale
-MAKE_ENV+=		LOCAL_LDFLAGS="${LDFLAGS}"
+CONFIGURE_ENV+=		LIBS="-lintl"		# needed so -lttf works
 
 # We need to perform the steps normally done by ``xmkmf -a'' since some
 # files need to be created before ``make depend''.
