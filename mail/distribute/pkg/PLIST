@@ -1,2 +1,4 @@
-sbin/distribute
-sbin/archive
+@comment $NetBSD$
+libexec/distribute
+libexec/archive
+man/man1/distribute.1
