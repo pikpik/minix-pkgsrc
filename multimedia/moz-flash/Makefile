@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/24 22:25:31 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:03 tv Exp $
 #
 
 .include "../../multimedia/libflash/Makefile.common"
@@ -17,7 +17,7 @@ USE_X11=	YES
 USE_LIBTOOL=	YES
 
 BUILD_DIRS=	${WRKSRC}/Plugin
-CPPFLAGS+=	-DDEV_DSP=\\\"${DEVOSSSOUND}\\\"
+CPPFLAGS+=	-DDEV_DSP="\"${DEVOSSSOUND}\""
 MAKE_ENV+=	SHLIBTOOL="${SHLIBTOOL}"
 MAKE_ENV+=	MOZ_PLUGDIR="${MOZ_PLUGDIR}"
 
