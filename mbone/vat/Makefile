@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.24 1999/05/24 20:39:45 tv Exp $
+# $NetBSD: Makefile,v 1.25 1999/06/04 15:11:27 mycroft Exp $
 #
 
-DISTNAME=		vat-4.0b2
+DISTNAME=		vatsrc-4.0b2
+PKGNAME=		${DISTNAME:S/src//}
+WRKSRC=			${WRKDIR}/${PKGNAME}
 CATEGORIES=		mbone
 MASTER_SITES=		ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
-DISTFILES=		vatsrc-4.0b2.tar.gz
 
 MAINTAINER=		mycroft@netbsd.org
 HOMEPAGE=		http://www-nrg.ee.lbl.gov/vat/
