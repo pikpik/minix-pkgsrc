@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.24 2000/10/27 02:20:54 tron Exp $
+# $NetBSD: Makefile.common,v 1.25 2000/12/17 13:21:55 tron Exp $
 #
 # Common include file for communicator and navigator packages
 
@@ -141,6 +141,6 @@ do-install:
 	${CHOWN} -R 0:0 ${MOZILLA_HOME}
 	${CHMOD} -R go-w ${MOZILLA_HOME}
 	cd ${MOZILLA_HOME} ; ${PATCH} -s < ${FILESDIR}/bookmarks.patch
-	@${RM} -f ${MOZILLA_HOME}/bookmark.htm.orig
+	@${RM} -f ${MOZILLA_HOME}/bookmark.htm.orig -f ${MOZILLA_HOME}/bookmark.htm~
 
 .endif
