@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2005/03/04 12:05:13 wiz Exp $
 
 --- src/rominfo.c.orig	2005-02-28 19:17:24.000000000 +0100
 +++ src/rominfo.c

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2005/03/04 12:05:13 wiz Exp $
 
 --- src/zipident.c.orig	2005-02-13 14:07:40.000000000 +0100
 +++ src/zipident.c
