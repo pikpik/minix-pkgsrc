@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/12/24 09:53:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/22 08:02:16 grant Exp $
 #
 
-DISTNAME=		pxtools-0.0.19
-PKGREVISION=		1
+DISTNAME=		pxtools-0.0.20
 CATEGORIES=		databases
 MASTER_SITES=		http://jan.kneschke.de/projects/pxtools/download/
 
