@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2004/01/10 14:25:42 recht Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/22 08:24:30 grant Exp $
 
-DISTNAME=		rapidsvn-0.4.0
-PKGREVISION=		4
+DISTNAME=		rapidsvn-0.5.0
 CATEGORIES=		devel x11
 MASTER_SITES=		http://www.rapidsvn.org/download/
 
@@ -19,7 +18,7 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--with-svn-include=${BUILDLINK_DIR}/include
 CONFIGURE_ARGS+=	--with-svn-lib=${BUILDLINK_DIR}/lib
 
-BUILDLINK_DEPENDS.subversion-base=	subversion-base>=0.35.0
+BUILDLINK_DEPENDS.subversion-base=	subversion-base>=0.36.0
 BUILDLINK_DEPENDS.wxGTK=	wxGTK>=2.4.0
 
 .include "../../devel/apr/buildlink2.mk"
