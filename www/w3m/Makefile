@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2001/11/29 01:12:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.30 2002/03/02 00:08:15 kei Exp $
 #
 
 DISTNAME=	w3m-0.2.5-m17n-20020216
 PKGNAME=	w3m-0.2.5
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www2u.biglobe.ne.jp/~hsaka/w3m/patch/
 
