@@ -1,11 +1,18 @@
-# $NetBSD: builtin.mk,v 1.2 2004/03/13 18:39:16 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2004/03/29 05:43:30 jlam Exp $
 
 .if !defined(_BLNK_LIBREADLINE_FOUND)
+_READLINE_H=		/usr/include/readline.h
+_READLINE_READLINE_H=	/usr/include/readline/readline.h
+
 _BLNK_LIBREADLINE_FOUND!=	\
 	if [ "`${ECHO} /usr/lib/libreadline.*`" = "/usr/lib/libreadline.*" ]; then \
 		${ECHO} "no";						\
 	else								\
-		${ECHO} "yes";						\
+		if [ "`${ECHO} ${_READLINE_H}* ${_READLINE_READLINE_H}*`" = "${_READLINE_H}* ${_READLINE_READLINE_H}*" ]; then \
+			${ECHO} "no";					\
+		else							\
+			${ECHO} "yes";					\
+		fi							\
 	fi
 BUILDLINK_VARS+=	_BLNK_LIBREADLINE_FOUND
 .endif
@@ -19,9 +26,6 @@ _BLNK_LIBEDIT_FOUND!=	\
 	fi
 BUILDLINK_VARS+=	_BLNK_LIBEDIT_FOUND
 .endif
-
-_READLINE_H=		/usr/include/readline.h
-_READLINE_READLINE_H=	/usr/include/readline/readline.h
 
 .if !defined(IS_BUILTIN.readline)
 IS_BUILTIN.readline=	no
