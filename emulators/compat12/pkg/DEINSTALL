@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+PKGNAME=$1
+STAGE=$2
+
+case ${STAGE} in
+DEINSTALL)
+	;;
+POST-DEINSTALL)
+	COMPAT_LIBDIR=@COMPAT_LIBDIR@
+
+	rmdir -p ${PKG_PREFIX}/${COMPAT_LIBDIR} 2>/dev/null || true
+	;;
+*)
+	echo "Unexpected argument: ${STAGE}"
+	exit 1
+	;;
+esac
+exit 0
