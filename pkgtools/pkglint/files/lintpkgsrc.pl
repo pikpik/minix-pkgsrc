@@ -1,6 +1,6 @@
 #!@PERL@
 
-# $NetBSD: lintpkgsrc.pl,v 1.96 2005/02/05 15:39:44 wiz Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.97 2005/03/07 22:21:15 abs Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -1337,10 +1337,10 @@ sub scan_pkgsrc_distfiles_vs_distinfo
 		{
 		foreach my $file (@{$sumfiles{$sum}})
 		    {
-		    if (! -f $file || -S $file != $distfiles{$_}{sum})
+		    if (! -f $file || -S $file != $distfiles{$file}{sum})
 			{
 			print $file, " (Size)\n";
-			$bad_distfiles{$_} = 1;
+			$bad_distfiles{$file} = 1;
 			}
 		    }
 		next;
