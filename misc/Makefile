@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2001/03/14 16:41:56 skrll Exp $
+# $NetBSD: Makefile,v 1.92 2001/03/22 13:23:15 skrll Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -59,6 +59,7 @@ SUBDIR+=	p5-File-MMagic
 SUBDIR+=	p5-Locale-Codes
 SUBDIR+=	p5-Search
 SUBDIR+=	pdmenu
+SUBDIR+=	pinfo
 SUBDIR+=	proj
 SUBDIR+=	pty-redir
 SUBDIR+=	py-readline
