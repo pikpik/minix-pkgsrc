@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2004/06/27 17:28:58 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/20 17:34:02 abs Exp $
 
 DISTNAME=	galeon-1.2.14
 CATEGORIES=	www
@@ -29,7 +29,7 @@ CONFIGURE_ARGS+=	--with-mozilla-includes=${BUILDLINK_PREFIX.mozilla}/include/moz
 			--disable-werror \
 			--sysconfdir=${PREFIX}/etc \
 			MOZILLA_CONFIG=${MOZ_LIBDIR}/mozilla-config
-CONFIGURE_ARGS+= --with-mozilla=1.7
+CONFIGURE_ARGS+= --with-mozilla-snapshot=1.7
 
 .include	"../../converters/libiconv/buildlink3.mk"
 .include	"../../devel/GConf/buildlink3.mk"
