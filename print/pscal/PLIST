@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pscal
+share/doc/pscal/README
+@dirrm share/doc/pscal
