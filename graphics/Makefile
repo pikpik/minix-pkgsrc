@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.313 2004/05/10 13:48:31 wiz Exp $
+# $NetBSD: Makefile,v 1.314 2004/06/01 21:40:41 kristerw Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -222,6 +222,7 @@ SUBDIR+=	scigraphica
 SUBDIR+=	scrot
 SUBDIR+=	skencil
 SUBDIR+=	smpeg-xmms
+SUBDIR+=	snx101view
 SUBDIR+=	sodipodi
 SUBDIR+=	swfdec
 SUBDIR+=	swfdec-gtk2
