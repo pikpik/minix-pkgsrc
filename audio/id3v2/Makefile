@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:22:28 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/02/04 22:23:47 abs Exp $
 
 DISTNAME=	id3v2-0.1.9
 CATEGORIES=	audio
@@ -9,7 +9,7 @@ HOMEPAGE=	http://id3v2.sourceforge.net/
 COMMENT=	Command line editor for id3v2 tags
 
 USE_LANGUAGES=	c c++
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
-.include "../../audio/id3lib/buildlink2.mk"
+.include "../../audio/id3lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
