@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/06/10 12:47:32 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2003/06/14 19:12:40 atatat Exp $
 #
 
 DISTNAME=	pkgdiff-0.111
@@ -40,6 +40,7 @@ do-build:
 		> ${WRKSRC}/${FILE}
 .endfor
 	${SED} -e 's|@DIFF@|${DIFF}|g'			\
+		-e 's|@SH@|${SH}|g'			\
 		< ${FILESDIR}/pkgdiff			\
 		> ${WRKSRC}/pkgdiff
 	${CP} ${FILESDIR}/pkgvi ${WRKSRC}
