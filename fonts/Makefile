@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2003/03/22 17:34:21 jmmv Exp $
+# $NetBSD: Makefile,v 1.54 2003/03/23 14:51:27 jmmv Exp $
 #
 
 COMMENT=	Fonts
@@ -81,6 +81,7 @@ SUBDIR+=	ttf2pt1
 SUBDIR+=	ttftot42
 SUBDIR+=	ttmkfdir
 SUBDIR+=	type1inst
+SUBDIR+=	vera-ttf
 SUBDIR+=	vfontcap-kochi
 SUBDIR+=	watanabe_vfont
 SUBDIR+=	xmbdfed
