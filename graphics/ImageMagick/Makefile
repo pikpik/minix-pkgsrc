@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.104 2003/09/17 19:51:35 grant Exp $
+# $NetBSD: Makefile,v 1.105 2003/09/26 20:21:25 recht Exp $
 
 .include "Makefile.common"
 
 PKGNAME=		ImageMagick-${DISTVERSION}
-PKGREVISION=		1
 CATEGORIES=		graphics
 
 MAINTAINER=		tron@NetBSD.org
