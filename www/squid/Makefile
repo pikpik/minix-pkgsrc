@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2000/11/02 10:31:38 jdolecek Exp $
+# $NetBSD: Makefile,v 1.36 2000/11/27 14:39:49 taca Exp $
 
 DISTNAME=	squid-2.3.STABLE4-src
-PKGNAME=	squid-2.3s4nb1
+PKGNAME=	squid-2.3s4nb2
 CATEGORIES=	www
 MASTER_SITES=	\
 	http://www.squid-cache.org/Versions/v2/2.3/ \
