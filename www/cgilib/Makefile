@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/05/05 17:40:26 fredb Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/10 13:59:33 skrll Exp $
 #
 
 DISTNAME=	cgilib-0.5
@@ -13,5 +13,11 @@ COMMENT=	Common gateway interface library
 USE_LIBTOOL=	yes
 
 USE_RMAN=	yes
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${OPSYS} == "SunOS")
+MAKE_FLAGS+=	NROFF="man -l"
+.endif
 
 .include "../../mk/bsd.pkg.mk"
