@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2003/09/12 20:07:33 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/09/17 19:41:23 grant Exp $
 
-DISTNAME=	neXtaw-0.14.1
+DISTNAME=	neXtaw-0.15.1
 CATEGORIES=	x11
 MASTER_SITES=	http://siag.nu/pub/neXtaw/
 
