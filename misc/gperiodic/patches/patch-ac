@@ -1,8 +1,8 @@
 $NetBSD$
 
---- gperiodic.c.orig	Fri Jul 25 09:15:29 2003
+--- gperiodic.c.orig	2003-10-13 13:43:49.000000000 +0200
 +++ gperiodic.c
-@@ -414,7 +414,7 @@ void main_prog(void)
+@@ -415,7 +415,7 @@ void main_prog(void)
  
  
  int main(int argc, char** argv) {
