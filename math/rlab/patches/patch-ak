@@ -11,3 +11,12 @@ $NetBSD$
  RLABEXE="$RROOT/bin/rlab-$RLAB_VER"    # The rlab executable.
  
  #
+@@ -50,7 +50,7 @@
+ # The RLaB2 help directory
+ #
+ 
+-RLAB2_HELP_DIR="$RD/doc/help"
++RLAB2_HELP_DIR="$RD/help"
+ 
+ #
+ # The pager to use.
