@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2000/10/21 22:21:23 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2000/10/26 12:41:21 veego Exp $
 #
 
 DISTNAME=	cvs-1.11
@@ -15,7 +15,7 @@ USE_GTEXINFO=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "SunOS"
+.if (${OPSYS} == "SunOS") && !exists(/usr/lib/libz.so)
 DEPENDS+=	zlib-*:../../devel/zlib
 CFLAGS+=	-I${PREFIX}/include		# zlib.h
 .endif
