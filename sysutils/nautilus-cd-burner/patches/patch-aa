@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.2 2004/09/21 17:15:35 jmmv Exp $
+$NetBSD$
 
---- Makefile.in.orig	2004-12-06 22:14:37.000000000 +0100
+--- Makefile.in.orig	2005-03-07 18:55:51.000000000 +0000
 +++ Makefile.in
-@@ -243,12 +243,12 @@ CLEANFILES = $(desktop_in_files:.desktop
+@@ -251,12 +251,12 @@ CLEANFILES = $(desktop_in_files:.desktop
  
  DISTCLEANFILES = intltool-extract intltool-merge intltool-update
  
