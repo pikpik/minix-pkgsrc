@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/05 07:31:15 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/04 17:42:04 wiz Exp $
 #
 
 DISTNAME=		apcupsd-3.6.2
@@ -25,6 +25,8 @@ CONFIGURE_ARGS+=	--enable-http		# include http support
 
 CONFIGURE_ARGS+=	--with-catgets		# use catgets functions
 CONFIGURE_ARGS+=	--enable-nls		# i18n support
+
+CONFIGURE_ENV+=		CPFLAGS="${CPPFLAGS}"	# make sure libintl.h is found
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf --force
