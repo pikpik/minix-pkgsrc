@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/07/17 00:14:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/09/20 17:13:06 adrianp Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 CATEGORIES=	devel
@@ -40,7 +40,7 @@ APU_CONFIGURE_ARGS= \
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILD_DEFS+=		APR_USE_OPENLDAP
+BUILD_DEFS+=		APR_USE_OPENLDAP APR_USE_DB4
 
 .if !empty(APR_USE_DB4:M[Yy][Ee][Ss])
 APU_CONFIGURE_ARGS+=\
