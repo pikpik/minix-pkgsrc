@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2001/03/01 04:03:09 itojun Exp $
+@comment $NetBSD: PLIST,v 1.11 2001/04/14 19:42:54 kim Exp $
 bin/dbmmanage
 bin/htdigest
 bin/htpasswd
@@ -411,4 +411,3 @@ share/httpd/icons/world2.gif
 @dirrm share/examples/httpd
 @dirrm include/httpd/xml
 @dirrm include/httpd
-@unexec rmdir %D/libexec/cgi-bin 2>/dev/null || true
