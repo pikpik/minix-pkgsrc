@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.27 1999/01/23 03:56:56 mellon Exp $
+#	$NetBSD: Makefile,v 1.28 1999/01/26 23:28:01 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += amanda
@@ -37,6 +37,7 @@
     SUBDIR += p5-Business-CreditCard
     SUBDIR += p5-Locale-Codes
     SUBDIR += p5-Search
+    SUBDIR += plan
     SUBDIR += py-readline
     SUBDIR += qterm
     SUBDIR += rpm
