@@ -1,2 +1,3 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1997/11/06 10:03:10 agc Exp $
 bin/tkinfo
+man/man1/tkinfo.1
