@@ -1,7 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2003/01/11 08:56:33 uebayasi Exp $
-info/semantic.info
-info/semantic.info-1
-info/semantic.info-2
+@comment $NetBSD: PLIST,v 1.4 2003/06/25 12:32:41 seb Exp $
 ${EMACS_LISPPREFIX}/semantic/document-vars.el
 ${EMACS_LISPPREFIX}/semantic/document-vars.elc
 ${EMACS_LISPPREFIX}/semantic/document.el
