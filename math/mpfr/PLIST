@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/mpf2mpfr.h
+include/mpfr.h
+info/mpfr.info
+lib/libmpfr.a
