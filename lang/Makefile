@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/03 21:04:00 tv Exp $
+# $NetBSD: Makefile,v 1.12 1998/06/07 19:33:44 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -24,7 +24,7 @@
 #    SUBDIR += idl4
 #    SUBDIR += itcl
 #    SUBDIR += javac_netscape
-#    SUBDIR += jdk
+    SUBDIR += jdk
     SUBDIR += kaffe
 #    SUBDIR += lcc
 #    SUBDIR += logo
