@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2001/03/03 14:07:19 scw Exp $
+# $NetBSD: Makefile,v 1.5 2002/02/06 16:58:15 jlam Exp $
 #
 
 DISTNAME=       tits-1.0.2
 CATEGORIES=	sysutils
-MASTER_SITES=   http://www.wee-eck.demon.co.uk/tits/
+MASTER_SITES=   http://www.mctavish.co.uk/tits/
 
 MAINTAINER=	scw@netbsd.org
 COMMENT=	server which provides telnet(1) access to one or more tty ports
