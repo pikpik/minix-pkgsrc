@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2003/03/29 12:41:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2003/05/02 11:55:56 wiz Exp $
 # FreeBSD Id: ports/astro/kstars/Makefile,v 1.7 2002/03/31 06:52:00 pat Exp
 
 DISTNAME=	kstars-0.9.kde2
-PKGREVISION=	1
 PKGNAME=	kstars-0.9
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kstars/}

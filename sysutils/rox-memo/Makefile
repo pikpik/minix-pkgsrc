@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:28 wiz Exp $
 #
 
 DISTNAME=	Memo-1.0.0
-PKGREVISION=	1
 PKGNAME=	rox-memo-1.0.0
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/Memo
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
