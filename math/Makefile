@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/12/05 12:36:18 frueauf Exp $
+# $NetBSD: Makefile,v 1.10 1998/12/13 00:31:37 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.38 1998/04/13 00:51:58 jseger Exp
 #
 
@@ -39,6 +39,7 @@
 #    SUBDIR += xgraph
     SUBDIR += xldlas
     SUBDIR += xlispstat
+    SUBDIR += xmgr
 #    SUBDIR += xplot
 #    SUBDIR += xspread
 
