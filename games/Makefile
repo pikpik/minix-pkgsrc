@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2000/10/30 14:27:56 wiz Exp $
+# $NetBSD: Makefile,v 1.103 2000/11/08 03:05:38 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -118,6 +118,7 @@
     SUBDIR += xscrabble
     SUBDIR += xskat
     SUBDIR += xsoldier
+    SUBDIR += xtux
     SUBDIR += xworm
     SUBDIR += xzip
     SUBDIR += zombies
