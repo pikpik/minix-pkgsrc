@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/09/16 07:59:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2003/11/12 01:31:51 salo Exp $
 #
 
 DISTNAME=		tsclient-0.124
@@ -14,6 +14,9 @@ DEPENDS+=       	rdesktop-[0-9]*:../../net/rdesktop
 DEPENDS+=       	vncviewer-[0-9]*:../../net/vncviewer
 DEPENDS+=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 BUILD_USES_MSGFMT=	yes
+
+# this is because they modified the distfile without changing the number
+DIST_SUBDIR=		${PKGNAME_NOREV}
 
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes
