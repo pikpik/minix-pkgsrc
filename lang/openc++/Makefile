@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:19:17 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/24 13:51:14 grant Exp $
 #
 
 DISTNAME=	opencxx2512
@@ -17,7 +17,7 @@ MAKE_FLAGS+=	CXXFLAGS=-I${PREFIX}/include
 MAKE_FLAGS+=	GCLIBDIR=${BUILDLINK_DIR}
 
 WRKSRC=		${WRKDIR}/openc++2.5.12/src/Unix
-USE_BUILDLINK2= YES
+USE_BUILDLINK3= YES
 
 OPENCXX_SHAREDIR=	${PREFIX}/share/openc++
 
@@ -37,5 +37,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/../../html/* ${OPENCXX_SHAREDIR}/doc/html
 	${INSTALL_DATA} ${WRKSRC}/../../reference.pdf ${OPENCXX_SHAREDIR}/doc
 
-.include "../../devel/boehm-gc/buildlink2.mk"
+.include "../../devel/boehm-gc/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
