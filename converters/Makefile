@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/05/22 18:10:18 tv Exp $
+# $NetBSD: Makefile,v 1.12 1999/08/16 18:19:16 rh Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
@@ -12,6 +12,7 @@
     SUBDIR += mpack
 #    SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
+    SUBDIR += psiconv
     SUBDIR += recode
 #    SUBDIR += trans
     SUBDIR += uudeview
