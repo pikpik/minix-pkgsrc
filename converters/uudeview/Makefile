@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/04/22 14:22:40 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/06/03 12:13:24 agc Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/02/18 22:19:58 hoek Exp
 #
 
@@ -14,8 +14,6 @@ DEPENDS+=	uulib-0.5.13:../../converters/uulib
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--enable-inews=inews --disable-tcl
 CONFIGURE_ENV=	LDFLAGS=-s
-
-MAN1=		uudeview.1 uuenview.1
 
 PORTDOCDIR?=	share/doc/uudeview
 
