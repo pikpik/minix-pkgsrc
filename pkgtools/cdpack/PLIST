@@ -2,4 +2,3 @@
 bin/cdpack
 libexec/cdgen.awk
 man/man1/cdpack.1
-man/cat1/cdpack.0
