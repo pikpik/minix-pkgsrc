@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:26:06 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/08/09 10:33:29 seb Exp $
 
-DISTNAME=	navi2ch-1.6.1
+DISTNAME=	navi2ch-1.7.1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=navi2ch/}
 
