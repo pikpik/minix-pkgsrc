@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/21 22:38:58 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/10/27 02:24:52 hubertf Exp $
 #
 
 DISTNAME=	heretic2-demo-x86
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.run
 
 MAINTAINER=	abs@netbsd.org
 HOMEPAGE=	http://www.lokigames.com/products/heretic2/demo.php3
-
-MIRROR_DISTFILE=no
 
 NO_CONFIGURE=	yes
 NO_WRKSUBDIR=	yes
