@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.434 2003/12/03 19:21:37 xtraeme Exp $
+# $NetBSD: Makefile,v 1.435 2003/12/04 04:53:48 gson Exp $
 #
 
 COMMENT=	Development utilities
@@ -220,6 +220,7 @@ SUBDIR+=	m4
 SUBDIR+=	maketool
 SUBDIR+=	mit-pthreads
 SUBDIR+=	mk-files
+SUBDIR+=	mph
 SUBDIR+=	mrproject
 SUBDIR+=	nana
 SUBDIR+=	nasm
