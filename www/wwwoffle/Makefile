@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/11/26 06:09:00 itohy Exp $
+# $NetBSD: Makefile,v 1.11 1999/11/26 06:30:10 itohy Exp $
 
 DISTNAME=	wwwoffle-2.5b
 CATEGORIES=	www
@@ -23,6 +23,10 @@ BUILD_DEFS+=	USE_INET6
 # IPv6 support
 .if defined(USE_INET6) && ${USE_INET6} == YES
 PATCHDIR=       ${WRKDIR}/.patches
+.endif
+
+.if ${OPSYS} == "SunOS"
+MAKE_ENV+=	LIBRARY="-lnsl -lsocket"
 .endif
 
 pre-patch:
