@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/03/13 17:36:41 fredb Exp $
+# $NetBSD: Makefile,v 1.7 2002/09/13 06:53:31 jlam Exp $
 
 DISTNAME=	xcircuit-2.2.0
 PKGREVISION=	1
@@ -10,9 +10,9 @@ HOMEPAGE=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/
 COMMENT=	Drawing program for X11 (especially for circuits)
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
+
+USE_BUILDLINK2=	yes
 USE_IMAKE=	yes
-USE_X11BASE=	yes
-USE_XPM=	yes
 
 post-extract:
 	${RM} -fr ${WRKSRC}/examples/CVS
@@ -23,5 +23,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/xcircuit/
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/xcircuit/
 
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/ghostscript.mk"
+
 .include "../../mk/bsd.pkg.mk"
