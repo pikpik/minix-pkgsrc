@@ -5,7 +5,6 @@ man/man5/micqrc.5
 man/man7/micq.7
 share/micq/C.i18n
 share/micq/bg.i18n
-share/micq/br.i18n
 share/micq/de.i18n
 share/micq/de@fun.i18n
 share/micq/de_CH.i18n
@@ -21,6 +20,7 @@ share/micq/ja.UTF-8.i18n
 share/micq/ja.i18n
 share/micq/nl.i18n
 share/micq/pl.i18n
+share/micq/pt.i18n
 share/micq/ro.i18n
 share/micq/ru.i18n
 share/micq/se.i18n
