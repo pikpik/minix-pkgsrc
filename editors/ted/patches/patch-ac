@@ -1,11 +1,12 @@
 $NetBSD$
---- appUtil/configure.orig	Sun Mar  3 23:24:16 2002
-+++ appUtil/configure	Tue Apr  9 12:13:56 2002
-@@ -787,7 +787,6 @@
- 
-     # Includes
-     for ac_dir in		\
--	/usr/include		\
- 	/usr/local/include	\
- 	/usr/pkg/include	\
- 	/usr/local/include/zlib	\
+
+--- appUtil/configure.orig	Sat Apr  5 00:46:49 2003
++++ appUtil/configure
+@@ -1745,7 +1745,6 @@ EOF
+     then
+ 	# Includes
+ 	for ac_dir in		\
+-	    /usr/include		\
+ 	    /usr/local/include	\
+ 	    /usr/pkg/include	\
+ 	    /usr/local/include/zlib	\

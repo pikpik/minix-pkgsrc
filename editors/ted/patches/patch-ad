@@ -1,11 +1,12 @@
 $NetBSD$
---- bitmap/configure.orig	Sun Mar  3 23:24:16 2002
-+++ bitmap/configure	Tue Apr  9 12:14:17 2002
-@@ -1825,7 +1825,6 @@
- 
-     # Includes
-     for ac_dir in		\
--	/usr/include		\
- 	/usr/local/include	\
- 	/usr/pkg/include	\
- 	/usr/local/include/zlib	\
+
+--- bitmap/configure.orig	Sat Apr  5 00:46:50 2003
++++ bitmap/configure
+@@ -3274,7 +3274,6 @@ EOF
+     then
+ 	# Includes
+ 	for ac_dir in		\
+-	    /usr/include		\
+ 	    /usr/local/include	\
+ 	    /usr/pkg/include	\
+ 	    /usr/local/include/zlib	\

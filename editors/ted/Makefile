@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2002/04/21 23:19:54 markd Exp $
+# $NetBSD: Makefile,v 1.11 2002/10/08 12:48:55 jlam Exp $
 
-DISTNAME=	ted-2.11.src
-PKGNAME=	ted-2.11
-WRKSRC=		${WRKDIR}/Ted-2.11
+DISTNAME=	ted-2.14.src
+PKGNAME=	ted-2.14
+WRKSRC=		${WRKDIR}/Ted-2.14
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/	\
 		ftp://metalab.unc.edu/pub/packages/editors/ted/
