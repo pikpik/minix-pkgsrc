@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/12/07 02:38:57 schmonz Exp $
+# $NetBSD: Makefile,v 1.27 2003/03/02 19:47:27 jschauma Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	1
@@ -16,10 +16,13 @@ USE_IMAKE=	# defined
 .include "../../mk/bsd.prefs.mk"
 
 # Check if we got Xpm distributed with XFree86 4.x or Solaris 9.
-.if (${OPSYS} != SunOS)
+.if ${OPSYS} != "SunOS"
 .if exists(${X11BASE}/include/X11/xpm.h) && \
     exists(${X11BASE}/lib/X11/config/X11.tmpl)
 _IS_BUILTIN_XPM!=	${EGREP} -c NormalLibXpm ${X11BASE}/lib/X11/config/X11.tmpl || ${TRUE}
+.  if ${OPSYS} == "IRIX"
+_IS_BUILTIN_XPM=	1
+.  endif
 .else
 _IS_BUILTIN_XPM=	0
 .endif
