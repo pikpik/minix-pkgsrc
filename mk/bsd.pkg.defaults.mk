@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.181 2003/09/06 12:04:09 jlam Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.182 2003/09/12 13:35:28 salo Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -883,6 +883,12 @@ IMAP_UW_CCLIENT_MBOX_FMT?=	unix
 #
 # Possible: mbox, mbx, mh, mmdf, mtx, mx, news, phile, tenex, unix
 # Default: unix
+
+#IMAP_UW_MAILSPOOLHOME=.MailBox
+# To default user mailboxes to their home directory,
+# specify the name of the mailbox file.
+# Possible: Any valid filename, not defined
+# Default: not defined
 
 #IMAP_UW_NO_CLEARTEXT?=	YES
 # Used in imap-uw to disallow plaintext passwords except when SSL or TLS
