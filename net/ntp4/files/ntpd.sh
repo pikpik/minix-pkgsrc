@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: ntpd,v 1.6.2.3 2002/06/18 23:49:36 lukem Exp $
+# $NetBSD: ntpd.sh,v 1.1 2004/03/11 20:39:40 reed Exp $
 #
 
 # PROVIDE: ntpd
@@ -12,7 +12,7 @@
 
 name="ntpd"
 rcvar=$name
-command="@PREFIX@/${name}"
+command="@PREFIX@/bin/${name}"
 pidfile="/var/run/${name}.pid"
 start_precmd="ntpd_precmd"
 required_files="@PKG_SYSCONFDIR@/ntp.conf"
