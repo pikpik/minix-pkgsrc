@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/05/20 20:09:51 tron Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/18 08:28:10 agc Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -14,7 +14,7 @@ HOMEPAGE=		http://www.amanda.org/
 
 .if ${OPSYS} == "NetBSD"
 DEPENDS+=		addnerd-1.6:../../sysutils/addnerd
-ADDUSER_PROG=		addnerd
+ADDUSER_PROG=		${PREFIX}/sbin/addnerd
 AMANDA_GROUP=		operator
 .elif ${OPSYS} == "SunOS"
 ADDUSER_PROG=		useradd
