@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.8 2004/02/12 02:35:06 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.9 2004/03/27 22:07:32 tron Exp $
 #
 # This Makefile fragment is included by packages that use libmilter.
 #
@@ -9,6 +9,7 @@ LIBMILTER_BUILDLINK2_MK=	# defined
 .include "../../mk/bsd.prefs.mk"
 
 BUILDLINK_DEPENDS.libmilter?=		libmilter>=8.12.9nb1
+BUILDLINK_DEPMETHOD.libmilter?=		build
 BUILDLINK_PKGSRCDIR.libmilter?=		../../mail/libmilter
 BUILDLINK_DEPMETHOD.libmilter?=		build
 
