@@ -1,8 +1,9 @@
-# $NetBSD: buildlink2.mk,v 1.3 2003/03/19 11:51:09 drochner Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2003/08/11 22:07:17 recht Exp $
 
 .if !defined(SOAPPY_BUILDLINK2_MK)
 SOAPPY_BUILDLINK2_MK=	# defined
 
+PYTHON_VERSIONS_ACCEPTED=	23pth 22pth 21pth
 .include "../../lang/python/pyversion.mk"
 
 BUILDLINK_PACKAGES+=			SOAPpy
