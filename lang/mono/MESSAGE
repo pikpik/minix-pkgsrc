@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+If you want to use the System.Drawing APIs then you have to install
+graphics/libgdiplus as well.
+
+===========================================================================
