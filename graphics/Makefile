@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.317 2004/06/10 20:06:55 agc Exp $
+# $NetBSD: Makefile,v 1.318 2004/06/26 18:05:45 grant Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -220,7 +220,6 @@ SUBDIR+=	sane-frontends
 SUBDIR+=	scigraphica
 SUBDIR+=	scrot
 SUBDIR+=	skencil
-SUBDIR+=	smpeg-xmms
 SUBDIR+=	snx101view
 SUBDIR+=	sodipodi
 SUBDIR+=	swfdec
