@@ -10,3 +10,12 @@ $NetBSD$
  			break;
  #else
  			error(1, "CGI is not enabled");
+@@ -1734,7 +1735,7 @@
+ 	int savederrno;
+ 	
+ 	/* only log if the level is low enough */
+-	if (level < dflag)
++	if (dflag < level)
+ 		return;
+ 
+ 	savederrno = errno;
