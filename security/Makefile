@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.64 2001/03/13 13:20:18 zuntum Exp $
+# $NetBSD: Makefile,v 1.65 2001/03/14 03:11:47 jun Exp $
 #
 
 COMMENT=	Security tools
 
+SUBDIR+=	AiSSLtelnet
 SUBDIR+=	PAM
 SUBDIR+=	aide
 SUBDIR+=	amavis
