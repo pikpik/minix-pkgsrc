@@ -1,4 +1,4 @@
-# $NetBSD: module.mk,v 1.2 2002/09/26 12:31:28 seb Exp $
+# $NetBSD: module.mk,v 1.3 2002/12/23 14:36:29 wiz Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install perl5 modules.
@@ -28,6 +28,8 @@
 
 .if !defined(_PERL5_MODULE_MK)
 _PERL5_MODULE_MK=	# defined
+
+BUILDLINK_DEPENDS.perl+=	full
 
 .include "../../lang/perl5/buildlink2.mk"
 
