@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2004/11/14 23:38:20 taya Exp $
+@comment $NetBSD$
 bin/${MOZILLA}
 @comment begin PROGRAMS
 lib/${MOZILLA}/${MOZILLA_BIN}
@@ -1552,6 +1552,7 @@ include/${MOZILLA}/msgbase/nsSubscribableServer.h
 include/${MOZILLA}/msgbase/nsSubscribeDataSource.h
 include/${MOZILLA}/msgbase/nsUrlListenerManager.h
 include/${MOZILLA}/msgbaseutil/nsAdapterEnumerator.h
+include/${MOZILLA}/msgbaseutil/nsImapMoveCoalescer.h
 include/${MOZILLA}/msgbaseutil/nsLocalFolderSummarySpec.h
 include/${MOZILLA}/msgbaseutil/nsMsgDBFolder.h
 include/${MOZILLA}/msgbaseutil/nsMsgGroupRecord.h
