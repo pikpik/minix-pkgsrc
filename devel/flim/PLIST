@@ -1,6 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/06/23 10:46:21 seb Exp $
-info/mime-en.info
-info/mime-ja.info
+@comment $NetBSD: PLIST,v 1.5 2003/08/18 13:14:33 minoura Exp $
 ${FOR_xemacs214}${EMACS_LISPPREFIX}/flim/auto-autoloads.el
 ${FOR_xemacs214}${EMACS_LISPPREFIX}/flim/auto-autoloads.elc
 ${FOR_xemacs214}${EMACS_LISPPREFIX}/flim/custom-load.el
