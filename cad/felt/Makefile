@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/05/24 08:53:54 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/10 00:08:42 jlam Exp $
 
 DISTNAME=		felt-3.05.src
 PKGNAME=		felt-3.05
@@ -24,9 +24,6 @@ MAKE_ENV+=		SH="${SH}"
 USE_GNU_READLINE=	# uses remove_history() and history_list()
 
 .include "../../devel/readline/buildlink.mk"
-
-CFLAGS+=		-I${BUILDLINK_INCDIR}
-LDFLAGS+=		-L${BUILDLINK_LIBDIR}
 
 post-extract:
 	@${GZCAT} ${DISTDIR}/felt-3.05.ps.gz > ${WRKSRC}/felt.ps

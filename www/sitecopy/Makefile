@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/05/24 08:53:58 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/06/10 00:08:49 jlam Exp $
 
 DISTNAME=		sitecopy-0.10.15
 CATEGORIES=		www
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--enable-libxml
 
 .include "../../devel/libgetopt/buildlink.mk"
 
-CFLAGS+=		-I${BUILDLINK_INCDIR} ${CPPFLAGS}
+CFLAGS+=		${CPPFLAGS}
 
 # The build process doesn't correctly find the header for GNU fnmatch, which
 # is provided in ${WRKSRC}/lib.  Help the compiler by linking the header

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/05/28 06:19:10 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/10 00:08:45 jlam Exp $
 #
 
 DISTNAME=		librep-${REP_VERS}
@@ -22,14 +22,11 @@ CONFIGURE_ARGS+=	--with-readline
 CONFIGURE_ARGS+=	--with-gmp
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
+PLIST_SUBST+=		REP_VERS=${REP_VERS}
+
 .include "../../databases/gdbm/buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/gmp/buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
-
-CPPFLAGS+=		-I${BUILDLINK_INCDIR}
-LDFLAGS+=		-L${BUILDLINK_LIBDIR}
-
-PLIST_SUBST+=		REP_VERS=${REP_VERS}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/05/26 16:32:37 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2001/06/10 00:08:47 jlam Exp $
 
 DISTNAME=		cups-${VERS}-source
 PKGNAME=		cups-${VERS}
@@ -45,10 +45,6 @@ PLIST_SRC+=		${PKGDIR}/PLIST
 CONFIGURE_ARGS+=	--disable-pam
 PLIST_SRC=		${PKGDIR}/PLIST
 .endif
-
-CFLAGS+=		-I${BUILDLINK_INCDIR}
-CXXFLAGS+=		-I${BUILDLINK_INCDIR}
-LDFLAGS+=		-L${BUILDLINK_LIBDIR}
 
 # CUPS_USER	username of the CUPS administrator
 # CUPS_GROUP	group of the CUPS administrator

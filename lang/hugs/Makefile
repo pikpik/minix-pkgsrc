@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/05/24 08:53:57 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/06/10 00:08:45 jlam Exp $
 
 DISTNAME=	hugs98-Feb2000
 PKGNAME=	hugs98-200002
@@ -21,8 +21,6 @@ CONFIGURE_ENV+=		ac_cv_lib_ncurses_main=no
 # The only function it uses is readline().
 #
 .include "../../devel/readline/buildlink.mk"
-
-LDFLAGS+=		-L${BUILDLINK_LIBDIR}
 
 do-build:
 	@cd ${WRKSRC}/.. && ${SETENV} ${MAKE_ENV} \
