@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/kaffe
 bin/kaffeh
 bin/appletviewer
