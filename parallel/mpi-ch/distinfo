@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.4 2001/03/21 15:28:57 wennmach Exp $
+$NetBSD$
 
-MD5 (mpich-1.2.1.tar.gz) = d5efae9f23df2aa6f0f28492a7697c35
+SHA1 (mpich-1.2.1.tar.gz) = 98b6ce50ad7ad5d514e8405d25cd89082738cd30
+Size (mpich-1.2.1.tar.gz) = 9322225 bytes
 SHA1 (patch-aa) = 00d28f9b6bf45ecab975a15dc589afda420b01d0
 SHA1 (patch-ak) = 8ad7340a9a95087649a96c823e5d0965922e209b
 SHA1 (patch-al) = 57c5d8249aeff57e82956314828aeadcdf95cd89
