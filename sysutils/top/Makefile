@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 1998/03/04 07:56:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 1998/04/15 10:38:50 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/04/30 23:49:14 asami Exp
 #
 
 DISTNAME=       top-3.5beta7
+PKGNAME=	top-3.5b7
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.groupsys.com/pub/top/
 
