@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.14 1998/06/22 13:09:51 agc Exp $
+# $NetBSD: Makefile,v 1.15 1998/08/20 15:17:28 tsarna Exp $
 #
 
 DISTNAME=       xosview-1.6.0
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.ece.utexas.edu/~bgrayson/xosview/ \
 		http://lore.ece.utexas.edu/~bgrayson/xosview/
+
+NOT_FOR_ARCHS=	alpha	# 1.6.2a fixes this, no need to get upset.
 
 MAINTAINER=	bgrayson@ece.utexas.edu
 HOMEPAGE=	http://lore.ece.utexas.edu/~bgrayson/xosview.html
