@@ -70,7 +70,7 @@ $NetBSD$
 +      }
 +   }
 +#else
-+   gCpuCaps.hasSSE = 0
++   gCpuCaps.hasSSE = 0;
 +   mp_msg(MSGT_CPUDETECT,MSGL_WARN, "No OS support for SSE, disabling to be safe.\n" );
 +#endif
  #elif defined(__linux__)
