@@ -1,0 +1,2 @@
+@comment $NetBSD$
+bin/ip6_int
