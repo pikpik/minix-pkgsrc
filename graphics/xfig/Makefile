@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.16 1998/10/15 19:51:07 agc Exp $
+# $NetBSD: Makefile,v 1.17 1999/02/20 22:48:31 hubertf Exp $
 #
 
 DISTNAME=		xfig.3.2.2
 PKGNAME=		xfig-3.2.2
 WRKSRC=			${WRKDIR}/xfig.3.2.2
 CATEGORIES=		graphics
-MASTER_SITES=		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	applications/drawing_tools/xfig
+MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/xfig}
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://epb1.lbl.gov/BVSmith/xfig/

@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.10 1998/08/27 13:46:00 garbled Exp $
+# $NetBSD: Makefile,v 1.11 1999/02/20 22:48:42 hubertf Exp $
 #
 
 DISTNAME=		transfig.3.2.1
 PKGNAME=		transfig-3.2.1
 WRKSRC=			${WRKDIR}/transfig.3.2.1
 CATEGORIES=		graphics print
-MASTER_SITES=		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	applications/drawing_tools/transfig
+MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/transfig/}
 
 MAINTAINER=		root@garbled.net
 

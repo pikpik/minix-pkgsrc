@@ -1,10 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/01/14 15:48:29 frueauf Exp $
 #
 
 DISTNAME=		fort77-1.14a
 CATEGORIES=		lang
-MASTER_SITES=		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	devel/lang/fortran
+MASTER_SITES=		${MASTER_SITE_SUNSITE:=devel/lang/fortran/}
 
 MAINTAINER=		packages@netbsd.org
 

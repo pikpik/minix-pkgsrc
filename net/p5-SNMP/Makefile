@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.1 1998/05/24 12:33:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1998/09/15 17:05:06 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/06/27 01:53:13 jfitz Exp
 #
 
 DISTNAME=	SNMP-1.7
 PKGNAME=	p5-SNMP-1.7
 CATEGORIES=	net perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	SNMP
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SNMP/}
 
 MAINTAINER=	packages@netbsd.org
 

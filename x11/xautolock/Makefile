@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.7 1998/06/22 13:21:03 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/04/05 22:46:27 mjl Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/11/18 09:55:42 asami Exp
 #
 
 DISTNAME=	xautolock-pl15
 PKGNAME=	xautolock-1.15
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	applications
+MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eblood@cs.unr.edu

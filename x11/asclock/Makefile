@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.11 1999/01/30 23:18:55 agc Exp $
+# $NetBSD: Makefile,v 1.12 1999/02/20 22:48:47 hubertf Exp $
 #
 
 DISTNAME=		asclock
 PKGNAME=		asclock-11
 CATEGORIES=		x11
-MASTER_SITES=		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	X11/clocks
+MASTER_SITES=		${MASTER_SITE_SUNSITE:=X11/clocks/}
 
 MAINTAINER=		hubertf@netbsd.org
 

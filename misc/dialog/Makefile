@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.1 1998/05/26 22:07:19 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/22 12:52:31 agc Exp $
 #
 
 DISTNAME=       dialog-0.6z
 CATEGORIES=	misc
-MASTER_SITES=   ${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	utils/shell
+MASTER_SITES=   ${MASTER_SITE_SUNSITE:=utils/shell/}
 
 MAINTAINER=	lamj@stat.cmu.edu
 

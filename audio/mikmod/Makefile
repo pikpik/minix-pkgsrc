@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.14 1999/02/20 22:48:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 1999/04/13 15:31:04 agc Exp $
 #
 
 DISTNAME=	mikmod-3.0.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.freenet.tlh.fl.us/~amstpi/	\
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	apps/sound/players
+		${MASTER_SITE_SUNSITE:=apps/sound/players/}
 
 MAINTAINER=	mycroft@NetBSD.ORG
 HOMEPAGE=	http://www.freenet.tlh.fl.us/~amstpi/mikmod.html

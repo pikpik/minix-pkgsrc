@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 1998/11/09 21:20:18 garbled Exp $
+# $NetBSD: Makefile,v 1.4 1999/01/30 23:18:48 agc Exp $
 #
 
 DISTNAME=		mirrormagic-1.3
 CATEGORIES=		games x11
-MASTER_SITES=		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	games
+MASTER_SITES=		${MASTER_SITE_XCONTRIB:=games/}
 
 MAINTAINER=		root@garbled.net
 

@@ -1,10 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/12/08 14:11:00 hwr Exp $
 #
 
 DISTNAME=		titrax-1.98
 CATEGORIES=		x11
-MASTER_SITES=		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	office
+MASTER_SITES=		${MASTER_SITE_XCONTRIB:=office/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.alvestrand.no/domen/titrax/TimeTracker.html

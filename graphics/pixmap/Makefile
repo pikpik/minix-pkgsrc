@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.7 1998/06/22 12:39:47 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/07/04 09:19:00 mycroft Exp $
 # FreeBSD: Makefile,v 1.8 1996/11/18 09:53:36 asami Exp
 #
 
 DISTNAME=		pixmap2.6
 PKGNAME=		pixmap-2.6
 CATEGORIES=		graphics
-MASTER_SITES=		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	applications/pixmap
+MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/pixmap/}
 
 MAINTAINER=		packages@netbsd.org
 
