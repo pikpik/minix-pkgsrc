@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/28 14:59:04 ad Exp $
 #
 
 DISTNAME=	rio500-0.7
@@ -7,6 +7,8 @@ MASTER_SITES=	http://download.sourceforge.net/rio500/
 
 MAINTAINER=	ad@netbsd.org
 HOMEPAGE=	http://rio500.sourceforge.net/
+
+DEPENDS+=	glib>=1.2.0:../../devel/glib
 
 USE_GMAKE=	yes
 
