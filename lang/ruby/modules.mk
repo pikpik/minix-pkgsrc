@@ -1,4 +1,4 @@
-# $NetBSD: modules.mk,v 1.3 2004/12/16 07:11:55 taca Exp $
+# $NetBSD: modules.mk,v 1.4 2005/03/06 16:46:05 taca Exp $
 
 .if !defined(_RUBY_MODULE_MK)
 _RUBY_MODULE_MK=	# defined
@@ -8,7 +8,7 @@ _RUBY_MODULE_MK=	# defined
 .if empty(USE_BUILDLINK3:M[nN][oO])
 .include "../../lang/ruby/buildlink3.mk"
 .elif !empty(RUBY_NOVERSION:M[nN][oO])
-DEPENDS+= ruby${RUBY_VER}-base>=${RUBY_REQD}:${RUBY_SRCDIR}
+DEPENDS+= ruby${RUBY_VER}-base>=${RUBY_REQD}:../../lang/ruby${RUBY_VER}-base
 .endif
 
 CONFIGURE_ENV+=		RUBY=${RUBY} RDOC=${RDOC}
