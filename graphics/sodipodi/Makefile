@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2003/11/12 01:31:50 salo Exp $
+# $NetBSD: Makefile,v 1.19 2003/12/13 00:45:24 wiz Exp $
 #
 
-DISTNAME=	sodipodi-0.31
-PKGREVISION=	5
+DISTNAME=	sodipodi-0.33
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sodipodi/}
 
@@ -17,16 +16,21 @@ USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
-USE_X11BASE=		YES
+USE_X11=		YES
+
+REPLACE_PERL=		extensions/*.pl
 
 # force usage of Xft
 CONFIGURE_ARGS+=	--with-xft
+CONFIGURE_ARGS+=	--without-gnome-print
 # needed by configure script for Xft detection
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.freetype2}/include/freetype2
 
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
+.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../devel/popt/buildlink2.mk"
 .include "../../graphics/libart2/buildlink2.mk"
-.include "../../print/libgnomeprintui/buildlink2.mk"
+.include "../../textproc/libxml2/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
