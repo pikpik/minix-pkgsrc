@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2003/07/11 22:57:08 zuntum Exp $
+# $NetBSD: Makefile,v 1.176 2003/07/13 22:27:41 wiz Exp $
 #
 
 COMMENT=	Games
@@ -149,6 +149,7 @@ SUBDIR+=	sirius
 SUBDIR+=	sjeng
 SUBDIR+=	sl
 SUBDIR+=	spellcast
+SUBDIR+=	spider
 SUBDIR+=	svb
 SUBDIR+=	tanked
 SUBDIR+=	tileworld
