@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ba,v 1.2 2004/02/01 22:37:19 tron Exp $
 
 --- pgp.c.orig	Wed Jan  9 16:39:28 2002
 +++ pgp.c	Sun Feb  1 23:32:50 2004
