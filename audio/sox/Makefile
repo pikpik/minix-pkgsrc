@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.11 1999/09/29 23:48:14 hubertf Exp $
+# $NetBSD: Makefile,v 1.12 1999/10/26 01:31:01 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/02/04 10:32:34 max Exp 
 #
 
-DISTNAME=	sox-12.16
+DISTNAME=	sox-12.17.1
 CATEGORIES=	audio
-MASTER_SITES=	http://metalab.unc.edu/pub/Linux/apps/sound/convert/
+MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/sound/convert/} \
+		${MASTER_SITE_SOURCEFORGE:=sox/} \
+		http://home.sprynet.com/~cbagwell/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://home.sprynet.com/~cbagwell/sox.html
