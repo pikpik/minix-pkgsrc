@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/07/30 23:25:08 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/09/21 17:38:53 xtraeme Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fontsMisc-${XORG_VER}
@@ -14,6 +14,7 @@ DEPENDS+=	xorg-fontsEncodings>=${XORG_VER}:../../fonts/xorg-fontsEncodings
 
 XBUILD_DIRS=	fonts/encodings fonts/bdf/misc
 XINSTALL_DIRS=	fonts/bdf/misc
+XEXTRACTS=	${XBUILD_DIRS} extras/fonts
 
 FILESDIR=	${.CURDIR}/../../fonts/xorg-fontsEncodings/files
 
