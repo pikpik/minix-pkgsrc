@@ -1,5 +1,5 @@
 =============================================================================
-$NetBSD: MESSAGE,v 1.6 2001/01/29 11:34:45 wiz Exp $
+$NetBSD$
 
 You will need to generate certificates and keys for your server before
 Apache will start with mod_ssl support.  Please read

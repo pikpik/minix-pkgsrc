@@ -1,11 +1,10 @@
 =============================================================================
-$NetBSD: MESSAGE,v 1.5 2001/09/18 20:51:52 hubertf Exp $
+$NetBSD$
 
-In order to enable mod_perl in your Apache installation, you need to add
-the following to your httpd.conf file:
+In order to use this module in your Apache installation, you need to
+add the following to your httpd.conf file:
 
   LoadModule perl_module lib/httpd/mod_perl.so
-  AddModule mod_perl.c
   <Files ~ "\.pl$">
      PerlHandler         Apache::Registry
      PerlSendHeader      On

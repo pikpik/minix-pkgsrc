@@ -1,13 +1,13 @@
 =============================================================================
 $NetBSD$
 
-You will need to edit ${PREFIX}/etc/httpd/httpd.conf and add the following
-lines in order to use this module.
+In order to use this module in your Apache installation, you need to
+add the following to your httpd.conf file:
 
-LoadModule layout_module lib/httpd/mod_layout.so
-AddModule mod_layout.c
+  LoadModule layout_module lib/httpd/mod_layout.so
 
-Also see ${PREFIX}/share/httpd/htdocs/manual/mod/mod_layout/faq.html
-for more information.
+For more information, see
+
+	${PREFIX}/share/httpd/htdocs/manual/mod/mod_layout/faq.html
 
 =============================================================================

@@ -1,18 +1,16 @@
 ===========================================================================
 $NetBSD$
 
-Please edit your apache.conf or httpd.conf to enable and
-setup this module, and you might also need to create an
-htpasswd file, if you introduce basic authentication.
+In order to use this module in your Apache installation, you need to
+add the following to your httpd.conf file:
 
-You can always refer to the useful documents held in
-${PREFIX}/share/doc/ruby/mod_ruby.
+  LoadModule ruby_module lib/httpd/mod_ruby.so
 
-When it's done, do the following to take effect:
+You may also need to create a htpasswd file, if you introduce basic
+authentication.
 
-  apachectl configtest	(and correct any errors reported)
-  apachectl restart
+For more information, see
 
-Enjoy!
+	${PREFIX}/share/doc/ruby/mod_ruby
 
 ===========================================================================
