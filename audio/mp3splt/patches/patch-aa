@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- ogg.c.orig	2004-07-17 16:28:01.000000000 +0200
++++ ogg.c
+@@ -57,7 +57,7 @@
+ #define ftello ftell
+ #endif
+ 
+-#include <values.h>
++#include <limits.h>
+ 
+ static v_packet *save_packet(ogg_packet *packet)
+ {
