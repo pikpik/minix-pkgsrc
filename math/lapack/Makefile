@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/05/05 20:53:02 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2002/05/03 22:44:04 jtb Exp $
 
 DISTNAME=		lapack
 PKGNAME=		lapack-20010201
@@ -17,9 +17,10 @@ COMMENT=		Linear Algebra PACKage
 DIST_SUBDIR=		lapack-20010201
 WRKSRC=			${WRKDIR}/LAPACK
 USE_FORTRAN=		yes
+USE_BUILDLINK2=		yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/liblapack.a ${PREFIX}/lib
 
-.include "../../math/blas/buildlink.mk"
+.include "../../math/blas/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
