@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.2 1999/07/24 19:02:40 fredb Exp $
+# $NetBSD: Makefile,v 1.3 1999/07/24 21:23:52 tron Exp $
 #
 
-DISTNAME=	ntp-4.0.94a
+DISTNAME=	ntp-4.0.94b
 CATEGORIES=	net
-MASTER_SITES=	http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ \
+MASTER_SITES=	http://www.eecis.udel.edu/~ntp/ntp_spool/testing/ \
+		http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ \
+		ftp://ftp.udel.edu/pub/ntp/testing/ \
 		ftp://ftp.udel.edu/pub/ntp/ntp4/
 
 MAINTAINER=	fb@enteract.com
@@ -11,7 +13,6 @@ HOMEPAGE=	http://www.ntp.org/
 
 GNU_CONFIGURE=	YES
 
-WRKSRC=		${WRKDIR}/ntp-4.0.94
 DOCDIR=		${PREFIX}/share/doc
 
 post-configure:
