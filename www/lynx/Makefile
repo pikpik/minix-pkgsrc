@@ -4,21 +4,22 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $NetBSD: Makefile,v 1.2 1997/11/26 15:00:59 agc Exp $
+# $NetBSD: Makefile,v 1.3 1997/12/23 11:06:50 drochner Exp $
 # FreeBSD Id: Makefile,v 1.71 1997/11/24 19:35:30 ache Exp
 #
 
 DISTNAME=       lynx2.7.1ac-0.102
 PKGNAME=        lynx-2.7.1ac-0.102
+WRKSRC=         ${WRKDIR}/lynx2-7-1
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	ache@FreeBSD.ORG
 
-WRKSRC=         ${WRKDIR}/lynx2-7-1
-GNU_CONFIGURE=  YES
 LIB_DEPENDS=	ncurses\\.3\\.4:${PORTSDIR}/devel/ncurses
+
 CONFIGURE_ARGS= --with-screen=ncurses --with-zlib --libdir="${PREFIX}/etc"
+GNU_CONFIGURE=  YES
 MAKEFILE=       makefile
 MAN1=		lynx.1
 
