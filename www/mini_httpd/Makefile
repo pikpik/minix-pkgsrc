@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/04/19 04:54:59 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:18:26 tv Exp $
 
 DISTNAME=	mini_httpd-1.19
 PKGREVISION=	2
@@ -11,7 +11,14 @@ COMMENT=	Small, forking webserver with IPv6 and SSL support
 
 USE_BUILDLINK3=	yes
 MAKE_ENV+=	PKG_CFLAGS="${CFLAGS}"
-LDFLAGS+=	-lssl -lcrypto -lcrypt -lutil
+
+.include "../../mk/bsd.prefs.mk"
+
+LDFLAGS+=	-lssl -lcrypto -lcrypt
+
+.if ${OPSYS} != "IRIX"
+LDFLAGS+=	-lutil
+.endif
 
 do-install:
 	for FILE in mini_httpd.8 htpasswd.1; do \
