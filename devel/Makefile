@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.548 2004/10/21 04:22:31 xtraeme Exp $
+# $NetBSD: Makefile,v 1.549 2004/10/23 00:23:20 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -233,6 +233,7 @@ SUBDIR+=	liboop
 SUBDIR+=	libosip
 SUBDIR+=	libportlib
 SUBDIR+=	libproplist
+SUBDIR+=	librfuncs
 SUBDIR+=	librsync
 SUBDIR+=	libscsi
 SUBDIR+=	libsigc++
