@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/08/25 21:51:16 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/10 15:30:24 cjep Exp $
 #
 
 DISTNAME=	ispell-3.1.20
@@ -25,7 +25,6 @@ INFO_FILES=	ispell.info
 .if exists(/usr/include/inttypes.h)
 CFLAGS+=	-DHAVE_INTTYPES_H
 .endif
-
 
 USE_BUILDLINK2=	yes
 
