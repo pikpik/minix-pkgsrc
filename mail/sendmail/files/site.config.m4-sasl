@@ -1,0 +1,5 @@
+# $NetBSD$
+
+# enable SASL
+APPENDDEF(`confENVDEF', `-DSASL -D_FFR_UNSAFE_SASL')
+APPENDDEF(`conf_sendmail_LIBS', `-lsasl')
