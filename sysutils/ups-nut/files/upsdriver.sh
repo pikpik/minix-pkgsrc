@@ -1,12 +1,12 @@
 #! /bin/sh
 #
-# $NetBSD: upsdriver.sh,v 1.2 2001/11/21 20:39:40 jlam Exp $
+# $NetBSD: upsdriver.sh,v 1.3 2001/11/21 21:38:55 jlam Exp $
 #
 # PROVIDE: upsdriver
 # REQUIRE: NETWORK syslogd mountcritremote
 #
-# You will need to set some variables in /etc/rc.conf to start upslog
-# properly, e.g.
+# You will need to set some variables in /etc/rc.conf to start the UPS
+# driver(s) properly, e.g.
 #
 # upsdriver=YES
 #	upsdriver_type="newapc"
