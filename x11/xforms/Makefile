@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:57 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/05/08 14:22:04 frueauf Exp $
 #
 
 DISTNAME=		bxform-088
@@ -17,7 +17,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		lamj@stat.cmu.edu
 
-ONLY_FOR_ARCHS=		arm32 i386 m68k sparc
+ONLY_FOR_ARCHS=		arm32 i386 m68k sparc pc532
 
 DIST_SUBDIR=		xforms/${MASTER_SITE_SUBDIR}
 
