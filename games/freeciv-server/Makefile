@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2001/08/15 19:50:31 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/23 10:02:49 jlam Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 COMMENT=		Freeciv game server
 
-DEPENDS+=		freeciv-share-${FC_VERS}:../../games/freeciv-share
+DEPENDS+=		freeciv-share>=${FC_VERS}:../../games/freeciv-share
 
 CONFIGURE_ARGS+=	--enable-client=no
 CONFIGURE_ARGS+=	--disable-make-data
