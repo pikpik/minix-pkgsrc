@@ -1,8 +1,8 @@
 # $NetBSD$
 #
 
-DISTNAME=	ttf-alee_0.3
-PKGNAME=	alee-ttf-0.3
+DISTNAME=	ttf-alee_0.4
+PKGNAME=	alee-ttf-0.4
 CATEGORIES=	fonts korean
 MASTER_SITES=	http://ftp.debian.org/debian/pool/main/t/ttf-alee/
 
@@ -14,7 +14,7 @@ USE_X11BASE=    YES
 NO_CONFIGURE=   YES
 NO_BUILD=       YES
 
-WRKSRC?=	${WRKDIR}/ttf-alee-0.3
+WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}
 FONTS_TTF_DIRS= ${PREFIX}/lib/X11/fonts/TTF
 DOCDIR=         ${PREFIX}/share/doc/alee-ttf
 
