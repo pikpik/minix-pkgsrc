@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/08/09 11:21:56 seb Exp $
+# $NetBSD: Makefile,v 1.27 2003/11/12 03:39:42 jschauma Exp $
 #
 
 DISTNAME=		krb4-1.2.1
@@ -18,6 +18,7 @@ COMMENT=		Kerberos IV distribution from KTH
 
 CONFLICTS+=		wu-ftpd-[0-9]*
 CONFLICTS+=		lukemftp-[0-9]*
+CONFLICTS+=		tnftp-[0-9]*
 CONFLICTS+=		zephyr-[0-9]*
 CONFLICTS+=		libdes-[0-9]*
 
