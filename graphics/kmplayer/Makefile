@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/08 10:53:20 jmmv Exp $
 #
 
-DISTNAME=	kmplayer-0.8.2rc3
+DISTNAME=	kmplayer-0.8.2rc5
 WRKSRC=		${WRKDIR}/kmplayer
 CATEGORIES=	graphics kde
 MASTER_SITES=	http://www.xs4all.nl/~jjvrieze/
