@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/07/14 11:48:19 agc Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/14 12:39:30 agc Exp $
 #
 
-DISTNAME=	priv-1.0-beta
+DISTNAME=	priv-1.0beta
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
