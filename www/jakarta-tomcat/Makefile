@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/01/28 22:04:29 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2003/03/29 12:42:49 jmmv Exp $
 
 DISTNAME=	jakarta-tomcat-${TOMCAT_VERSION}-src
 PKGNAME=	${DISTNAME:S/-src$//}
@@ -13,7 +13,7 @@ HOMEPAGE=	http://jakarta.apache.org/
 COMMENT=	the Apache Project's Java Servlet 2.2 and JSP 1.1 server
 
 DEPENDS+=	jakarta-servletapi-[0-9]*:../../www/jakarta-servletapi
-DEPENDS+=	jakarta-ant>=1.4.1:../../devel/jakarta-ant
+DEPENDS+=	apache-ant>=1.4.1:../../devel/apache-ant
 
 USE_BUILDLINK2=	yes
 MAKEFILE=	build.xml
