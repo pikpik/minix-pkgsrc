@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.1.1 2001/05/16 21:18:37 jtb Exp $
 
 --- /dev/null	Thu May 10 17:42:02 2001
 +++ libVU/Makefile
@@ -13,7 +13,7 @@ $NetBSD$
 +CPPFLAGS+= -I${.CURDIR}/../../include -I${X11BASE}/include
 +CPPFLAGS+= -DVSIP_PERFORMANCE_MODE
 +
-+LDADD+= --rpath ${X11BASE}/lib -L${X11BASE}/lib -lX11 -lm
++LDADD+= -R${X11BASE}/lib -L${X11BASE}/lib -lX11 -lm
 +
 +NOLINT= 1
 +
