@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.202 2003/09/08 14:28:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.203 2003/09/26 10:37:10 martti Exp $
 
 COMMENT=	System utilities
 
@@ -37,6 +37,7 @@ SUBDIR+=	cpuid
 SUBDIR+=	crashme
 SUBDIR+=	daemontools
 SUBDIR+=	depot
+SUBDIR+=	dmesg2gif
 SUBDIR+=	dog
 SUBDIR+=	dptutil
 SUBDIR+=	dvd+rw-tools
