@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2003/06/02 14:05:04 abs Exp $
+# $NetBSD: Makefile,v 1.98 2003/06/30 06:45:01 tron Exp $
 
 .include "Makefile.common"
 
@@ -12,7 +12,7 @@ COMMENT=		Package for display and interactive manipulation of images
 
 DEPENDS+=		mpeg2codec-1.2:../../graphics/mpeg2codec
 
-CONFLICTS=		geomview-[0-9]*    # both have a program named 'animate'
+CONFLICTS=		geomview<1.8.1nb2  # used to have a program named 'animate'
 
 USE_BUILDLINK2=		YES
 USE_X11=		YES
