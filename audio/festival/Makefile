@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/11/17 16:29:07 martin Exp $
+# $NetBSD: Makefile,v 1.19 2002/08/31 14:35:59 wiz Exp $
 
 DISTNAME=	festival-1.4.1
 WRKSRC=		${WRKDIR}
@@ -19,6 +19,7 @@ COMMENT=	Festival is an advanced multi-lingual speech synthesis system
 
 USE_BUILDLINK2=	yes
 USE_GMAKE=	yes
+USE_X11=	yes
 
 SPEECHTOOLS=	${WRKSRC}/speech_tools
 FESTIVAL=	${WRKSRC}/festival
