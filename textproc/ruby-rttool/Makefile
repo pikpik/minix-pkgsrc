@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2002/03/16 03:38:10 taca Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:54:50 grant Exp $
 
 DISTNAME=	rttool-${VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.ruby-lang.org/~rubikitch/archive/
+MASTER_SITES=	http://www.rubyist.net/~rubikitch/computer/rt/
 
 MAINTAINER=	taca@NetBSD.org
-HOMEPAGE=	http://www.ruby-lang.org/~rubikitch/computer/rt.html
+HOMEPAGE=	http://www.rubyist.net/~rubikitch/archive/
 COMMENT=	RT to HTML (and hopefully LaTeX in future) table converter
 
 DEPENDS+=	${RUBY_PKGNAMEPREFIX}optparse>=0.7:../../devel/ruby-optparse
