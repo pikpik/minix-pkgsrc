@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.397 2003/08/13 07:27:46 itojun Exp $
+# $NetBSD: Makefile,v 1.398 2003/08/23 13:31:14 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -121,6 +121,7 @@ SUBDIR+=	lambdamoo
 SUBDIR+=	lambdamoo-core
 SUBDIR+=	lambdamoo-doc
 SUBDIR+=	latd
+SUBDIR+=	lft
 SUBDIR+=	lftp
 SUBDIR+=	libIDL
 SUBDIR+=	libares
