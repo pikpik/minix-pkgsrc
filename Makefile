@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2000/12/17 23:40:54 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2001/02/27 20:23:59 hubertf Exp $
 #
 
 .include "mk/bsd.prefs.mk"
@@ -133,7 +133,7 @@ readme-ipv6:
 
 README-IPv6.html:
 	@grep -l '^BUILD_DEFS.*=.*USE_INET6' */*/Makefile \
-	 | sed s,.Makefile,, >$@.pkgs
+	 | sed s,Makefile,, >$@.pkgs
 	@fgrep -f $@.pkgs README-all.html | sort -t/ +1 >$@.trs
 	@cat templates/README.ipv6 \
 	| ${SED} \
