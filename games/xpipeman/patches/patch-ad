@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- main.c.orig	Fri Sep 13 22:32:10 1991
 +++ main.c	Mon Aug 17 00:20:12 1998
 @@ -138,9 +138,7 @@

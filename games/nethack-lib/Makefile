@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/27 12:58:51 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/09/24 16:53:20 garbled Exp $
 #
 
 DISTNAME=		nethack-3.2.2
@@ -16,7 +16,7 @@ INSTALL_TARGET=		manpages install-dat
 
 post-patch:
 	@${MV} ${WRKSRC}/include/config.h ${WRKSRC}/foo
-	@${SED} -e 's@XXXLOCALBASEXXX@$(LOCALBASE)@g' <${WRKSRC}/foo> ${WRKSRC}/include/config.h
+	@${SED} -e 's@XXXLOCALBASEXXX@${LOCALBASE}@g' <${WRKSRC}/foo> ${WRKSRC}/include/config.h
 	@${RM} -f ${WRKSRC}/foo
 
 .include "../../mk/bsd.pkg.mk"
