@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/07/07 11:33:10 seb Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:18:19 tv Exp $
 #
 
 DISTNAME=	sed-4.1.1
@@ -17,6 +17,9 @@ USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIG_STATUS_OVERRIDE=	# empty
+
+# at least Solaris-2.9 has issues with grep/egrep
+USE_GNU_TOOLS+=		grep
 
 INFO_FILES=		sed.info
 
