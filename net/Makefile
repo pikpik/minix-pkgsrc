@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 1998/07/24 13:38:45 agc Exp $
+# $NetBSD: Makefile,v 1.35 1998/08/07 22:33:18 kim Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -92,7 +92,7 @@
 #    SUBDIR += xipmsg
 #    SUBDIR += yale-tftpd
 #    SUBDIR += ytalk
-#    SUBDIR += zircon
+    SUBDIR += zircon
     SUBDIR += zephyr
 
 .include "../mk/bsd.pkg.subdir.mk"
