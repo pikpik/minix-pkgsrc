@@ -1,6 +1,7 @@
-# $NetBSD: Makefile.common,v 1.5 2003/09/08 04:47:51 epg Exp $
+# $NetBSD: Makefile.common,v 1.6 2003/12/03 15:20:44 epg Exp $
 
 DISTNAME=		subversion-${SVNVER}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=   	http://svn.collab.net/tarballs/
 
