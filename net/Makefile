@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.416 2003/12/05 14:13:00 recht Exp $
+# $NetBSD: Makefile,v 1.417 2003/12/05 22:54:56 xtraeme Exp $
 #
 
 COMMENT=	Networking tools
@@ -181,6 +181,7 @@ SUBDIR+=	openh323
 SUBDIR+=	openslp
 SUBDIR+=	overnet
 SUBDIR+=	p5-DNS-ZoneParse
+SUBDIR+=	p5-INET6
 SUBDIR+=	p5-IO-Interface
 SUBDIR+=	p5-IO-Socket-Multicast
 SUBDIR+=	p5-Net
