@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2000/06/29 14:26:37 jwise Exp $
+# $NetBSD: Makefile,v 1.9 2000/08/30 15:51:36 jwise Exp $
 #
 
 DISTNAME=	icb.2.1.4
-PKGNAME=	tkicb-2.1.4
+PKGNAME=	tkicb-2.1.4nb1
 CATEGORIES=	net x11
 MASTER_SITES=	ftp://shoshin.armory.com/pub/
 EXTRACT_SUFX=	.tar.Z
