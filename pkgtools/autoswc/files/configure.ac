@@ -1,4 +1,4 @@
-dnl $NetBSD: configure.ac,v 1.3 2004/02/29 17:49:09 jmmv Exp $
+dnl $NetBSD: configure.ac,v 1.4 2004/10/21 21:30:45 tv Exp $
 
 dnl -----------------------------------------------------------------------
 
@@ -160,8 +160,6 @@ AC_CHECK_FUNCS([__argz_count \
                 getegid \
                 geteuid \
                 getgid \
-                gethostbyname \
-                gethostname \
                 getmode \
                 getprogname \
                 getrlimit \

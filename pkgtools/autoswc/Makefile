@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2004/10/15 20:00:57 tv Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/21 21:30:45 tv Exp $
 
-DISTNAME=		autoswc-1.4
+DISTNAME=		autoswc-1.5
 CATEGORIES=		pkgtools sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty
