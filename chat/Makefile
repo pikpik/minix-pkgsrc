@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/10/20 22:21:49 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2001/10/21 21:38:22 seb Exp $
 #
 
 COMMENT=	communication programs
@@ -11,6 +11,7 @@ SUBDIR+=	epic4
 SUBDIR+=	fugu
 SUBDIR+=	gaim
 SUBDIR+=	gale
+SUBDIR+=	gtkyahoo
 SUBDIR+=	gnomeicu
 SUBDIR+=	icb
 SUBDIR+=	icqlib
