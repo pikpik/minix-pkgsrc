@@ -11,17 +11,21 @@ HOMEPAGE=	http://cscope.sourceforge.net/
 GNU_CONFIGURE=	YES
 USE_CURSES=	YES
 
+post-extract: cscope-post-extract
+
 .include "../../mk/bsd.pkg.mk"
 
 .if ${NEED_NCURSES} == "YES"
 CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
 
-post-extract:
+cscope-post-extract:
+.for FILE in command.c display.c edit.c exec.c find.c help.c input.c main.c
 	@cd ${WRKSRC}/src;						\
-	for f in command.c display.c edit.c exec.c find.c help.c	\
-			input.c main.c; do				\
-		${MV} $$f $$f.orig;					\
-		${SED} "s/^#include <curses.h>/#include <ncurses.h>/" 	\
-			$$f.orig > $$f;					\
-	done
+	${MV} ${FILE} ${FILE}.orig;					\
+	${SED} "s/^#include <curses.h>/#include <ncurses.h>/" 		\
+		< ${FILE}.orig > ${FILE}
+.endfor
+.else
+cscope-post-extract:
+	${TRUE}
 .endif
