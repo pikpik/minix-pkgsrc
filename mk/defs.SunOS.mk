@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.46 2002/12/16 09:18:57 salo Exp $
+# $NetBSD: defs.SunOS.mk,v 1.47 2002/12/18 06:18:15 schmonz Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -149,5 +149,7 @@ ZOULARISBASE:=		${LOCALBASE}
 .endif
 .if exists(${LOCALBASE}/sbin/pkg_info)
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
+.elseif exists(${ZOULARISBASE}/sbin/pkg_info)
+PKG_TOOLS_BIN?=		${ZOULARISBASE}/sbin
 .endif
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/bin
