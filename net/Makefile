@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.167 2000/11/20 20:41:11 tron Exp $
+# $NetBSD: Makefile,v 1.168 2000/11/30 09:13:19 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -29,6 +29,7 @@
     SUBDIR += dhid
     SUBDIR += dip
     SUBDIR += dlint
+    SUBDIR += echoping
     SUBDIR += eggdrop
     SUBDIR += ethereal
     SUBDIR += fping
