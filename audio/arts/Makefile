@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2003/05/02 11:53:37 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/05/22 03:05:38 markd Exp $
 
 DISTNAME=	arts-1.1.2
+PKGREVISION=	1
 CATEGORIES=	audio
 COMMENT=	Analog Real-Time Synthesizer
 
@@ -18,6 +19,8 @@ CONFIGURE_ENV+=		ac_cv_path_PKG_CONFIG=no
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
 .include "../../audio/libaudiofile/buildlink2.mk"
+.include "../../audio/libogg/buildlink2.mk"
+.include "../../audio/libvorbis/buildlink2.mk"
 .include "../../x11/kde3/buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
