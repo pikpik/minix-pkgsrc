@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/X11/fonts/local/jisksp14.pcf.Z
 lib/X11/fonts/local/jisksp16-1990.pcf.Z
 lib/X11/fonts/local/jisksp40.pcf.Z
