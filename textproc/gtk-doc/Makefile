@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/31 08:13:06 martti Exp $
 #
 
-DISTNAME=	gtk-doc-0.8
+DISTNAME=	gtk-doc-0.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.1/docs/rdp/
 
