@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2001/09/27 23:17:47 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/10/24 12:27:11 dmcmahill Exp $
 #
 
-DISTNAME=	verilog-20011020
-PKGNAME=	verilog-current-20011020
+DISTNAME=	verilog-20011209
+PKGNAME=	verilog-current-20011209
 CATEGORIES=	cad
 MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/snapshots/
 
