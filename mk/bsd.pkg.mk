@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1606 2005/03/31 21:02:28 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1607 2005/04/05 03:18:00 minskim Exp $
 #
 # This file is in the public domain.
 #
@@ -928,9 +928,7 @@ USE_LANGUAGES?=		# empty
 
 .include "../../mk/tools.mk"
 
-.if !defined(NO_BUILD)
-.  include "../../mk/wrapper/bsd.wrapper.mk"
-.endif
+.include "../../mk/wrapper/bsd.wrapper.mk"
 
 .if defined(RECOMMENDED)
 .  if !empty(IGNORE_RECOMMENDED:M[nN][oO])
