@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/ruby/1.3/${MACHINE_ARCH}-${LOWER_OPSYS}/libruby.a
+@dirrm lib/ruby/1.3/${MACHINE_ARCH}-${LOWER_OPSYS}
+@dirrm lib/ruby/1.3/site_ruby/${MACHINE_ARCH}-${LOWER_OPSYS}
+@dirrm lib/ruby/1.3/site_ruby
+@dirrm lib/ruby/1.3
+@dirrm lib/ruby
