@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2000/10/15 12:41:10 rh Exp $
+# $NetBSD: Makefile,v 1.21 2000/11/12 15:17:33 tron Exp $
 #
 
-DISTNAME=	gcombust-0.1.36
+DISTNAME=	gcombust-0.1.39
 CATEGORIES=	x11 sysutils
 MASTER_SITES=	${HOMEPAGE}
 
