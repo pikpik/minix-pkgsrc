@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.1.1.1 2002/10/16 16:40:26 dillo Exp $
+$NetBSD$
 
---- src/Makefile.orig	Fri Aug  9 02:27:19 2002
+--- src/Makefile.orig	Thu May 15 16:17:53 2003
 +++ src/Makefile
-@@ -136,31 +136,38 @@ testcc: lablgladecc lablgtktop
+@@ -137,32 +137,39 @@ testcc: lablgladecc lablgtktop
  	rm -f testcc.ml
  
  install:
@@ -27,7 +27,9 @@ $NetBSD: patch-aa,v 1.1.1.1 2002/10/16 16:40:26 dillo Exp $
 +	${BSD_INSTALL_SCRIPT} varcc $(INSTALLDIR)
 +	if test -f lablgtktop_t; then ${BSD_INSTALL_PROGRAM} lablgtktop_t $(INSTALLDIR); fi
  	if test -f lablgtk.cmxa; then $(MAKE) installopt; fi
++	${BSD_INSTALL_DATA_DIR} $(DLLDIR)
  	if test -f dlllablgtk.so; then \
+-	   if test -d $(DLLDIR); then : ; else mkdir -p $(DLLDIR); fi; \
 -	   cp $(CLIBS:lib%.a=dll%.so) $(DLLDIR) || \
 -	   echo "Couldn't install dlls in default location"; \
 +	   for F in $(CLIBS:lib%.a=dll%.so); \
