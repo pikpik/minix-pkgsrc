@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 1999/08/26 00:31:28 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.58 1999/10/01 16:08:17 drochner Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -66,6 +66,7 @@
     SUBDIR += tanked
 #    SUBDIR += tksol
     SUBDIR += wormz
+    SUBDIR += xarchon
 #    SUBDIR += xasteroids
 #    SUBDIR += xbat
 #    SUBDIR += xbattle
