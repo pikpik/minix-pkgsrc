@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/05/05 15:57:17 salo Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/16 09:49:14 grant Exp $
 #
 
 DISTNAME=	libmatroska-0.7.0
@@ -9,12 +9,15 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.matroska.org/
 COMMENT=	Extensible open standard Audio/Video container format
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_LANGUAGES=	c++
 
 NO_CONFIGURE=	yes
-MAKEFLAGS+=	prefix="${PREFIX}"
+MAKEFLAGS+=	prefix=${PREFIX:Q}
+MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:Q} RANLIB=${RANLIB:Q}
 BUILD_DIRS=	${WRKDIR}/${DISTNAME}/make/linux
 
 ONLY_FOR_COMPILER=	gcc
