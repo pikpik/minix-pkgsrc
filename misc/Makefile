@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2004/12/25 19:34:21 wiz Exp $
+# $NetBSD: Makefile,v 1.222 2004/12/26 15:56:21 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -150,6 +150,7 @@ SUBDIR+=	pinfo
 SUBDIR+=	proj
 SUBDIR+=	proj-doc
 SUBDIR+=	pty-redir
+SUBDIR+=	qbrew
 SUBDIR+=	qterm
 SUBDIR+=	reed
 SUBDIR+=	root
