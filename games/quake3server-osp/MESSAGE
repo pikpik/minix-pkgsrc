@@ -1,0 +1,12 @@
+===========================================================================
+$NetBSD$
+
+To start an OSP Quake3 server, add this to your /etc/rc.conf:
+
+	quake3server="YES"
+	quake3server_flags="+set fs_game osp +set dedicated 1
+			    +exec <gamestyle>.cfg &"
+
+gamestyle can be "instagib", "freezetag", ...
+
+===========================================================================
