@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/28 17:47:05 martti Exp $
 
 DISTNAME=	cgicc-3.1.5
 CATEGORIES=	www
@@ -16,4 +16,5 @@ INFO_FILES=	cgicc.info
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/support/ltconfig ${WRKSRC}/example/ltconfig
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.orig	Wed May 16 13:40:27 2001
++++ Makefile
+@@ -21,7 +21,6 @@
+ LOADPATH=
+ misc_AUX=INSTALL NEWS
+ info_TEXINFOS=semantic.texi
+-MAKEINFO=makeinfo
+ aux_AUX=c.bnf make.bnf java.bnf scheme.bnf
+ VERSION=1.4beta5
+ DISTDIR=semantic-$(VERSION)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/14 21:38:26 thorpej Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/27 23:17:49 jlam Exp $
 #
 
 DISTNAME=	zenirc-2.112
@@ -12,7 +12,7 @@ COMMENT=	IRC client for Emacs
 # XXX Someone who cares can make this work with Xemacs.
 DEPENDS+=	emacs-[0-9]*:../../editors/emacs
 
-USE_GTEXINFO=	YES
 GNU_CONFIGURE=	YES
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/01/20 01:32:55 mjl Exp $
+# $NetBSD: Makefile,v 1.8 2002/01/31 14:08:58 mjl Exp $
 #
 
 DISTNAME=	smalltalk-1.95.10
@@ -26,4 +26,5 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 .include "../../devel/readline/buildlink.mk"
 .include "../../lang/tcl/buildlink.mk"
 .include "../../x11/tk/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/10/22 02:23:53 mycroft Exp $
+# $NetBSD: Makefile,v 1.18 2001/10/23 03:37:44 mycroft Exp $
 #
 
 DISTNAME=		librep-${REP_VERS}
@@ -22,6 +22,8 @@ GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-readline
 CONFIGURE_ARGS+=	--with-gmp
 CONFIGURE_ARGS+=	--enable-static
+TEXINFO_OVERRIDE=	YES
+TEXINFO_PATTERNS+=	Makedefs.in
 
 PLIST_SUBST+=		REP_VERS=${REP_VERS}
 
@@ -29,4 +31,5 @@ PLIST_SUBST+=		REP_VERS=${REP_VERS}
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/gmp/buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

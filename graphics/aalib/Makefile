@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/08 20:56:20 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/01/30 11:56:08 agc Exp $
 #
 
 DISTNAME=	aalib-1.4rc4
@@ -20,4 +20,5 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 CONFIGURE_ARGS+=	--with-x11-driver=no
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

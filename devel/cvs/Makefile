@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2001/12/09 20:10:16 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2002/01/11 12:47:23 skrll Exp $
 #
 
 DISTNAME=	cvs-1.11
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.cvshome.org/
 COMMENT=	Concurrent Versions System
 
 GNU_CONFIGURE=	yes
-USE_GTEXINFO=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -45,6 +44,8 @@ pre-fetch:
 CONFIGURE_ENV+=	perl_path=${PERL5}
 
 INFO_FILES=	cvs.info cvsclient.info
+TEXINFO_OVERRIDE=	YES
 
 .include "../../devel/zlib/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

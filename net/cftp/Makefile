@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/09/11 23:07:57 dillo Exp $
+# $NetBSD: Makefile,v 1.6 2001/12/10 16:05:26 dillo Exp $
 #
 
 DISTNAME=	cftp-0.11
@@ -21,4 +21,5 @@ post-install:
 	cd ${WRKSRC} && ${INSTALL_MAN} README bindings.desc \
 		${PREFIX}/share/doc/cftp
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/11/01 09:41:13 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2002/01/10 14:07:07 wiz Exp $
 
 DISTNAME=		gcc-2.95.2
 PKGNAME=		pgcc-2.95.2.1
@@ -101,6 +101,7 @@ post-install:
 	${INSTALL_DATA} ${WRKDIR}/gcc.mk ${PREFIX}/etc/${PKGNAME}.mk
 .endif
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
 
 # Make bootstrap with compiler != gcc possible.

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/14 23:08:58 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/04/16 15:32:27 jtb Exp $
 
 DISTNAME=	sml-mode-3.9.5
 CATEGORIES=	devel editors
@@ -19,4 +19,5 @@ do-install:
 		ChangeLog ${PREFIX}/share/emacs/site-lisp/sml-mode
 	${INSTALL_DATA} ${WRKSRC}/sml-mode.info ${PREFIX}/info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

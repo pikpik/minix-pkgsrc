@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/09 15:24:36 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:01 jlam Exp $
 #
 
 DISTNAME=	speedbar-0.13a
@@ -42,4 +42,5 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} ${IMAGES} ${PREFIX}/${LISPDIR}
 	cd ${WRKSRC} && ${INSTALL_DATA} ${INFO_FILES} ${PREFIX}/info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

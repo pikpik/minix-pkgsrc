@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/02/16 14:38:26 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2001/07/17 10:05:05 jlam Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/08/29 09:20:00 obrien Exp
 #
 
@@ -17,4 +17,5 @@ CONFIGURE_ARGS=		--program-prefix=g
 
 INFO_FILES=	indent.info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

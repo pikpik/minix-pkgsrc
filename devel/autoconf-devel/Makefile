@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/11/30 21:22:25 jmc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/03 14:02:27 agc Exp $
 
 DISTNAME=		autoconf-2.52
 PKGNAME=		autoconf-devel-2.52
@@ -22,4 +22,5 @@ M4=			${PREFIX}/bin/gm4
 INFO_FILES=		autoconf.info standards.info
 
 .include "../../lang/perl5/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

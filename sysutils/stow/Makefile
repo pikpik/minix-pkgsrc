@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:42:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/11/30 17:33:31 jlam Exp $
 #
 
 DISTNAME=	stow-1.3.2
@@ -15,4 +15,5 @@ GNU_CONFIGURE=		YES
 INFO_FILES=	stow.info
 
 .include "../../lang/perl5/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

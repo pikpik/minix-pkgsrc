@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:22:15 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/04/14 21:43:50 jtb Exp $
 
 DISTNAME=	calc-2.02f
 CATEGORIES=	math
@@ -29,4 +29,5 @@ do-install:
 	${WRKSRC}/calccard.tex ${PREFIX}/${SITE_LISP}/calc
 	${INSTALL_DATA} ${WRKSRC}/calc.info* ${PREFIX}/info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

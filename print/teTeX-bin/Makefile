@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2001/11/29 01:12:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.33 2002/01/28 15:25:13 drochner Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
@@ -69,4 +69,5 @@ post-install:
 	texconfig font vardir /var/spool/texfonts
 	texconfig font options appendonlydir varfonts
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

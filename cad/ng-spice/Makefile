@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/10/24 22:10:47 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/01/26 02:38:30 dmcmahill Exp $
 #
 
 DISTNAME=	ng-spice-rework-14
@@ -22,4 +22,5 @@ USE_BUILDLINK_ONLY=	YES
 .include "../../devel/libgetopt/buildlink.mk"
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

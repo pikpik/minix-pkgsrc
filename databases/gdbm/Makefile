@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/04/26 23:26:49 jtb Exp $
+# $NetBSD: Makefile,v 1.23 2001/06/21 02:47:27 jlam Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/01/28 08:11:23 asami Exp 
 #
 
@@ -15,8 +15,10 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 INFO_FILES=		gdbm.info
+TEXINFO_OVERRIDE=	YES
 
 post-extract:
 	${RM} -f ${WRKSRC}/gdbm.info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

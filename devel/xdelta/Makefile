@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.18 2001/08/01 17:28:26 wiz Exp $
 #
 
 DISTNAME=		xdelta-1.1.1
@@ -16,4 +16,5 @@ GNU_CONFIGURE=		yes
 
 .include "../../devel/glib/buildlink.mk"
 .include "../../devel/zlib/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST.emacs,v 1.1.1.1 2000/12/01 06:18:16 jtb Exp $
-@unexec install-info --delete --info-dir=%D/info %D/info/w3-faq.info
-@unexec install-info --delete --info-dir=%D/info %D/info/w3.info
+@comment $NetBSD: PLIST.emacs,v 1.1 2001/11/01 02:27:01 zuntum Exp $
+@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/w3-faq.info
+@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/w3.info
 info/w3-faq.info
 info/w3.info
 info/w3.info-1
@@ -8,8 +8,8 @@ info/w3.info-2
 info/w3.info-3
 info/w3.info-4
 info/w3.info-5
-@exec install-info --info-dir=%D/info %D/info/w3-faq.info
-@exec install-info --info-dir=%D/info %D/info/w3.info
+@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/w3-faq.info
+@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/w3.info
 share/default.css
 share/emacs/site-lisp/w3/auto-autoloads.el
 share/emacs/site-lisp/w3/auto-autoloads.elc

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/07/02 08:46:51 agc Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 09:07:04 agc Exp $
 #
 
 DISTNAME=		egcs-1.1.2
@@ -21,4 +21,5 @@ ALL_TARGET=		bootstrap
 
 INFO_FILES=		cpp.info g77.info gcc.info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

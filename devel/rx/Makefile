@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 14:39:01 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/06/29 23:02:11 zuntum Exp $
 
 DISTNAME=	rx-1.5
 CATEGORIES=	devel
@@ -25,4 +25,5 @@ MAKE_ENV+=	RX_MAJOR="${RX_MAJOR}" RX_MINOR="${RX_MINOR}"
 post-install:
 	cd ${WRKSRC}/doc; ${INSTALL_DATA} ${INFO_FILES} ${PREFIX}/info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

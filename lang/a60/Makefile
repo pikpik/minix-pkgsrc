@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/15 21:21:45 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/06/11 06:34:39 jlam Exp $
 
 DISTNAME=	a60-0.20a
 CATEGORIES=	lang
@@ -27,4 +27,5 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} a60.ps RRA60.ps			\
 		${PREFIX}/share/doc/a60/
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

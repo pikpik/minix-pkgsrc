@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/02/17 18:09:03 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/25 04:18:02 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:54:39 asami Exp
 #
 
@@ -23,4 +23,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc
 	${MV} ${PREFIX}/lib/git/html ${PREFIX}/share/doc/git
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

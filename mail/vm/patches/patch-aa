@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Fri Dec 15 20:05:39 2000
+--- Makefile.orig	Sun Oct 28 02:35:41 2001
 +++ Makefile
 @@ -2,24 +2,24 @@
  # prior to 19.14 for XEmacs are unsupported.
@@ -33,12 +33,12 @@ $NetBSD$
  
  ############## no user servicable parts beyond this point ###################
  
-@@ -131,7 +131,7 @@
+@@ -134,7 +134,7 @@
  
  vm.info:	vm.texinfo
  	@echo "making vm.info..."
 -	@$(EMACS) $(BATCHFLAGS) -insert vm.texinfo -l texinfmt -f texinfo-format-buffer -f save-buffer
-+	makeinfo vm.texinfo
++	$(MAKEINFO) vm.texinfo
  
  vm-autoload.elc:	$(SOURCES)
  	@echo scanning sources to build autoload definitions...

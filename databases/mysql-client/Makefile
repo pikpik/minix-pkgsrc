@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/10/18 15:20:05 veego Exp $
+# $NetBSD: Makefile,v 1.16 2001/11/02 02:57:28 jlam Exp $
 #
 
 .include "Makefile.common"
@@ -20,4 +20,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/Docs/mysql.info ${PREFIX}/info
 
 .include "../../devel/readline/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

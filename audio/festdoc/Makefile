@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/07/14 12:37:45 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/07/18 15:19:35 wiz Exp $
 
 DISTNAME=	festdoc-1.4.0.1
 PKGNAME=	festival-doc-1.4.0.1
@@ -33,4 +33,5 @@ do-install:
 		${RMDIR} festival/info
 	${RM} ${PREFIX}/info/festival.info.orig
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

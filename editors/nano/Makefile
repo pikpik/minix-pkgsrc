@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/12/19 06:53:19 martti Exp $
+# $NetBSD: Makefile,v 1.7 2002/01/26 07:16:59 martti Exp $
 
 DISTNAME=	nano-1.0.8
 CATEGORIES=	editors
@@ -13,4 +13,5 @@ USE_BUILDLINK_ONLY=	yes
 
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/ncurses/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/11/25 19:43:58 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/12/02 06:56:42 jlam Exp $
 #
 
 DISTNAME=		jwhois-3.0.1
@@ -27,4 +27,5 @@ post-install:
 
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../mk/bsd.pkg.install.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

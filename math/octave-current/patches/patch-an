@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- doc/faq/Makefile.in.orig	Sun Feb 17 16:26:40 2002
++++ doc/faq/Makefile.in
+@@ -39,7 +39,7 @@
+ .PHONY: all
+ 
+ Octave-FAQ.info: Octave-FAQ.texi
+-	-makeinfo -I$(srcdir) $(srcdir)/Octave-FAQ.texi
++	-$(MAKEINFO) -I$(srcdir) $(srcdir)/Octave-FAQ.texi
+ 
+ Octave-FAQ.dvi: Octave-FAQ.texi
+ 	-TEXINPUTS="$(srcdir):$(srcdir)/..:$(TEXINPUTS):"; \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/07/02 08:46:51 agc Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:38:25 wiz Exp $
 #
 
 DISTNAME=       gdb-4.18
@@ -19,4 +19,5 @@ INSTALL_TARGET=	install install-info
 do-configure:
 	cd ${WRKSRC}; ./configure --prefix=${PREFIX}
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.1 1998/04/09 13:58:52 tv Exp $
+#	$NetBSD: Makefile,v 1.2 1998/05/18 14:05:44 tv Exp $
 # Makefile for libg++ add-on for NetBSD.  Requires libstdc++ shlib v1.x.
 
 LIB=g++
@@ -67,7 +67,7 @@ genclass: libg++/genclass/genclass.sh
 	sed -e "s,<VERSION>,${GXXVERSION},;s,^PROTODIR.*,PROTODIR=${PREFIX}/include/g++/gen," ${.ALLSRC} >${.TARGET}
 
 libg++.info: libg++/libg++.texi
-	makeinfo --no-split -I libg++/texinfo -o libg++.info libg++/libg++.texi
+	${MAKEINFO} --no-split -I libg++/texinfo -o libg++.info libg++/libg++.texi
 
 .PATH: libg++/src librx
 

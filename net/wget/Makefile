@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2001/10/26 21:53:01 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2001/12/04 06:15:00 jlam Exp $
 
 DISTNAME=	wget-1.7
 CATEGORIES=	net
@@ -36,4 +36,5 @@ CONFIGURE_ARGS+=        --disable-ipv6
 .endif
 
 .include "../../devel/gettext-lib/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

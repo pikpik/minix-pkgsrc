@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/05/22 09:32:20 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2001/09/27 23:18:12 jlam Exp $
 #
 
 DISTNAME=	hp2xx-3.4.0
@@ -20,4 +20,5 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/sources
 post-extract:
 	${CP} ${WRKSRC}/../makes/generic.mak ${WRKSRC}/Makefile
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/09/27 23:17:50 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2001/10/26 14:10:00 agc Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/07/16 06:44:37 vanilla Exp
 #
 
@@ -44,4 +44,5 @@ post-install:
 	    ${PAX} -r -w -pe -k * ${MGETTY_CONFDIR}
 
 .include "../../graphics/netpbm/buildlink.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

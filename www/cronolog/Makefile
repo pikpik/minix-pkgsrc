@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/01 20:37:30 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/11/14 06:18:08 zuntum Exp $
 #
 
 DISTNAME=	cronolog-1.6.1
@@ -20,4 +20,5 @@ post-install:
 	${MV} ${PREFIX}/man/man1/cronolog.1m ${PREFIX}/man/man8/cronolog.8
 	${MV} ${PREFIX}/man/man1/cronosplit.1m ${PREFIX}/man/man8/cronosplit.8
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

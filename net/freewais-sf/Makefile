@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/03/27 03:20:10 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2001/04/30 04:16:10 jlam Exp $
 #
 
 DISTNAME=	freeWAIS-sf-2.2.12
@@ -24,9 +24,10 @@ INSTALL_TARGET=	install install.man
 INFO_FILES=	fwsf.info
 
 post-build:
-	cd ${WRKSRC}/doc/SF; makeinfo fwsf.texi
+	cd ${WRKSRC}/doc/SF; ${MAKEINFO} fwsf.texi
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/SF/fwsf.info* ${PREFIX}/info
 
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
