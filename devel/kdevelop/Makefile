@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2000/08/16 01:33:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.20 2000/08/29 17:10:35 tron Exp $
 
-DISTNAME=	kdevelop-1.2
+DISTNAME=	kdevelop-1.3
 CATEGORIES=	devel kde
 MASTER_SITES=	ftp://ftp.e-technik.fh-muenchen.de/pub/unix/ide/KDevelop/
 EXTRACT_SUFX=	.tar.bz2
