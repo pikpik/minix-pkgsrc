@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2002/02/28 06:18:24 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/11/05 07:33:17 martti Exp $
 
 MODNAME=		ftp
 CATEGORIES+=		net
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP4 extension for FTP access
 
 USE_BUILDLINK2=		YES
+DISTINFO_FILE=		${.CURDIR}/distinfo
 
 .include "../../www/php4/Makefile.module"
 
