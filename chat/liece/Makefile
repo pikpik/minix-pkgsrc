@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/17 07:09:51 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/19 06:55:07 minoura Exp $
 
-DISTNAME=	liece-1.4.8
+DISTNAME=	liece-1.4.10
 CATEGORIES=	chat
 MASTER_SITES=	http://www.unixuser.org/~ueno/liece/dist/
 
