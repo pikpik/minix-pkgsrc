@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/07/25 04:19:59 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:18:08 tv Exp $
 
 DISTNAME=		fressh-0.8.1
 PKGREVISION=		2
@@ -11,6 +11,9 @@ HOMEPAGE=		http://www.fressh.org/
 COMMENT=		New, free, rewritten implementation of the SSH communication protocol
 
 USE_BUILDLINK3=		yes
+
+# Some versions of the openssl header files gives warnings.
+BUILDLINK_TRANSFORM+=	rm:-Wstrict-prototypes
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
