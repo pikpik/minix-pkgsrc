@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- tools/asnparser/Makefile.orig	Tue Feb 19 03:50:29 2002
++++ tools/asnparser/Makefile	Tue Feb 19 03:48:02 2002
+@@ -50,6 +50,8 @@
+ 
+ include $(PWLIBDIR)/make/ptlib.mak
+ 
++CFLAGS=-O0
++
+ asn_grammar.cxx: asn_grammar.y
+ 	@if [ ! -d $(OBJDIR) ] ; then mkdir $(OBJDIR) ; fi
+ 	bison -t -v -d -o $* $<
