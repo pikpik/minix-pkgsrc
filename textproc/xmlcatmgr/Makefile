@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:54:56 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/08 12:26:20 jmmv Exp $
 #
 
-DISTNAME=	xmlcatmgr-1.0
+DISTNAME=	xmlcatmgr-1.1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlcatmgr/}
 
