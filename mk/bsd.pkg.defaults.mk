@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.143 2003/05/05 06:06:56 grant Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.144 2003/05/05 21:45:41 seb Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1087,7 +1087,7 @@ MPLAYER_ENABLE_RUNTIME_CPU_DETECTION?= YES
 # this option set to NO will only run reliably on a machine of the same
 # CPU type.
 # Possible: YES, NO
-# Default: NO
+# Default: YES
 
 MPLAYER_USE_REALMEDIA?= NO
 # Used by mplayer to enable realmedia support by using the realplayer
