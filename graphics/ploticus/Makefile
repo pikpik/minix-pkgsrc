@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/12/03 15:14:59 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2005/02/08 09:40:35 adam Exp $
 
 DISTNAME=	pl231src
 PKGNAME=	ploticus-2.31
@@ -20,7 +20,6 @@ PREFABSRC=	${WRKDIR}/${DISTNAME}/prefabs
 
 DOCDST=		${PREFIX}/share/doc/ploticus
 PREFABDST=	${PREFIX}/share/ploticus
-NROFF?=		nroff -mandoc
 
 MAKE_ENV+=	XLIBS="-L${X11BASE}/lib -lX11"
 MAKE_ENV+=	XINCLUDEDIR="-I${X11BASE}/include"
