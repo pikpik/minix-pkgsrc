@@ -2,8 +2,8 @@ $NetBSD$
 
 --- /dev/null
 +++ config/netbsd/Makedefs
-@@ -0,0 +1,18 @@
-+#  Makefile definitions from config/unix/intel_netbsd
+@@ -0,0 +1,19 @@
++#  Makefile definitions from config/netbsd
 +
 +#  CC       C compiler
 +#  CFLAGS   flags for building C files
@@ -21,3 +21,4 @@ $NetBSD$
 +XLIBS = -Wl,-R$(X11BASE)/lib -L$(X11BASE)/lib -lX11
 +XPMDEFS = -DZPIPE -I$(X11BASE)/include
 +GDIR= xpm
++TLIBS= -lpthread
