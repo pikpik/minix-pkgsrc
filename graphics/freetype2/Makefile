@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/09/15 08:48:41 adam Exp $
+# $NetBSD: Makefile,v 1.24 2003/12/19 13:45:59 adam Exp $
 #
 
 DISTNAME=	freetype-2.1.5
@@ -17,7 +17,9 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.freetype.org/
 COMMENT=	Font rendering engine and library API
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_DIRS=		${WRKSRC}/builds/unix
@@ -36,5 +38,5 @@ post-configure:
 	${MKDIR} ${WRKSRC}/.libs
 .endif
 
-.include "../../devel/zlib/buildlink2.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
