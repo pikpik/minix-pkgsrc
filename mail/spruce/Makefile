@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/03/13 16:25:58 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/03/13 22:30:35 tron Exp $
 #
 
 DISTNAME=       spruce-0.5.17
@@ -6,7 +6,7 @@ CATEGORIES=	mail
 MASTER_SITES=   http://www.xtorshun.org/spruce/
 
 MAINTAINER=	mellon@isc.org
-HOMEPAGE=	http://www.xtorshun.org/spruce/main.html
+HOMEPAGE=	http://www.xtorshun.org/spruce/
 
 DEPENDS+=	gnome-libs>=1.0.56:../../x11/gnome-libs
 
