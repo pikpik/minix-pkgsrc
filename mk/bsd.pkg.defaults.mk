@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.211 2004/01/31 23:46:18 snj Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.212 2004/02/05 07:19:34 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -804,6 +804,12 @@ ELK_GUI?=	none
 # Used by elk to determine which GUI API modules are enabled.
 # Possible: none, or some combination of xaw and/or motif
 # Default: none
+
+EMACS_TYPE?=	emacs21
+# Used by emacs.mk to determine which emacs version should be installed and
+# emacs lisp packages should be built for.
+# Possible: emacs21, emacs21nox, emacs20, xemacs214, xemacs215
+# Default: emacs21
 
 EMACS_USE_POP?= yes
 # Used by emacs package to determine whether pop support is enabled or not.
