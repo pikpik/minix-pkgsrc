@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.2 1999/08/02 11:28:36 sakamoto Exp $
 
 --- server/main.c.orig	Mon Mar 23 19:48:03 1998
 +++ server/main.c	Mon Aug  2 19:26:45 1999
