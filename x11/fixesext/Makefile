@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/09 13:24:03 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/08/05 22:18:57 recht Exp $
 #
 
 DISTNAME=		fixesext-2.0.1
@@ -7,7 +7,7 @@ MASTER_SITES=		http://freedesktop.org/~xlibs/release/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.freedesktop.org/Software/xlibs
+HOMEPAGE=		http://www.freedesktop.org/Software/FixesExt
 COMMENT=		X Fixes extension headers and specification
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
