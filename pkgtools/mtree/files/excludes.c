@@ -1,4 +1,4 @@
-/*	$NetBSD: excludes.c,v 1.2 2003/09/05 04:38:47 grant Exp $	*/
+/*	$NetBSD: excludes.c,v 1.13 2004/06/20 22:20:18 jmc Exp $	*/
 
 /*
  * Copyright 2000 Massachusetts Institute of Technology
@@ -32,13 +32,17 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
+
 #include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 
 #if defined(__RCSID) && !defined(lint)
-__RCSID("$NetBSD: excludes.c,v 1.2 2003/09/05 04:38:47 grant Exp $");
+__RCSID("$NetBSD: excludes.c,v 1.13 2004/06/20 22:20:18 jmc Exp $");
 #endif
 
 #if HAVE_SYS_TYPES_H

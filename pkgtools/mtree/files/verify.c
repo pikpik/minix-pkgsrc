@@ -1,4 +1,4 @@
-/*	$NetBSD: verify.c,v 1.2 2003/09/05 04:38:48 grant Exp $	*/
+/*	$NetBSD: verify.c,v 1.38 2004/07/22 16:51:45 lukem Exp $	*/
 
 /*-
  * Copyright (c) 1990, 1993
@@ -32,6 +32,10 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
+
 #include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
@@ -40,7 +44,7 @@
 #if 0
 static char sccsid[] = "@(#)verify.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: verify.c,v 1.2 2003/09/05 04:38:48 grant Exp $");
+__RCSID("$NetBSD: verify.c,v 1.38 2004/07/22 16:51:45 lukem Exp $");
 #endif
 #endif /* not lint */
 
@@ -51,7 +55,7 @@ __RCSID("$NetBSD: verify.c,v 1.2 2003/09/05 04:38:48 grant Exp $");
 #include <sys/stat.h>
 #endif
 
-#if !HAVE_CONFIG_H
+#if ! HAVE_NBTOOL_CONFIG_H
 #if HAVE_DIRENT_H
 #include <dirent.h>
 #endif
@@ -211,7 +215,7 @@ miss(NODE *p, char *tail)
 
 		create = 0;
 		if (!(p->flags & F_VISIT) && uflag) {
-			if (Wflag || p->type == F_LINK)
+			if (mtree_Wflag || p->type == F_LINK)
 				goto createit;
 			if (!(p->flags & (F_UID | F_UNAME)))
 			    printf(
@@ -227,7 +231,7 @@ miss(NODE *p, char *tail)
 			switch (p->type) {
 			case F_BLOCK:
 			case F_CHAR:
-				if (Wflag)
+				if (mtree_Wflag)
 					continue;
 				if (!(p->flags & F_DEV))
 					printf(
@@ -278,7 +282,7 @@ miss(NODE *p, char *tail)
 		} else
 			putchar('\n');
 
-		if (!create || Wflag)
+		if (!create || mtree_Wflag)
 			continue;
 		if ((p->flags & (F_UID | F_UNAME)) &&
 		    (p->flags & (F_GID | F_GNAME)) &&

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2004/04/11 02:01:55 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/08/14 02:33:32 jlam Exp $
 #
 
-DISTNAME=		mtree-20031220
+DISTNAME=		mtree-20040722
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty

@@ -1,4 +1,4 @@
-/*	$NetBSD: compare.c,v 1.2 2003/09/05 04:38:46 grant Exp $	*/
+/*	$NetBSD: compare.c,v 1.45 2004/07/22 16:51:45 lukem Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993
@@ -32,6 +32,10 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
+
 #include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
@@ -40,7 +44,7 @@
 #if 0
 static char sccsid[] = "@(#)compare.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: compare.c,v 1.2 2003/09/05 04:38:46 grant Exp $");
+__RCSID("$NetBSD: compare.c,v 1.45 2004/07/22 16:51:45 lukem Exp $");
 #endif
 #endif /* not lint */
 
@@ -176,16 +180,18 @@ compare(NODE *s, FTSENT *p)
 		if (!S_ISLNK(p->fts_statp->st_mode))
 			goto typeerr;
 		break;
+#ifdef S_ISSOCK
 	case F_SOCK:
-		if (!S_ISSOCK(p->fts_statp->st_mode)) {
- typeerr:		LABEL;
-			printf("\ttype (%s, %s)\n",
-			    nodetype(s->type), inotype(p->fts_statp->st_mode));
-			return (label);
-		}
+		if (!S_ISSOCK(p->fts_statp->st_mode))
+			goto typeerr;
 		break;
+#endif
+typeerr:		LABEL;
+		printf("\ttype (%s, %s)\n",
+		    nodetype(s->type), inotype(p->fts_statp->st_mode));
+		return (label);
 	}
-	if (Wflag)
+	if (mtree_Wflag)
 		goto afterpermwhack;
 #if HAVE_FILE_FLAGS
 	if (iflag && !uflag) {
@@ -311,7 +317,7 @@ compare(NODE *s, FTSENT *p)
 		struct stat *ps = p->fts_statp;
 		time_t smtime = s->st_mtimespec.tv_sec;
 
-#ifdef BSD4_4
+#if defined(BSD4_4) && !defined(HAVE_NBTOOL_CONFIG_H)
 		time_t pmtime = ps->st_mtimespec.tv_sec;
 
 		TIMESPEC_TO_TIMEVAL(&tv[0], &s->st_mtimespec);
