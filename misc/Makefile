@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.188 2004/02/07 17:50:18 wiz Exp $
+# $NetBSD: Makefile,v 1.189 2004/02/11 23:08:39 jmmv Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -124,6 +124,7 @@ SUBDIR+=	p5-Geography-Countries
 SUBDIR+=	p5-Locale-Codes
 SUBDIR+=	p5-Mac-Macbinary
 SUBDIR+=	p5-Msgcat
+SUBDIR+=	p5-Scalar-List-Utils
 SUBDIR+=	p5-Search
 SUBDIR+=	parchive
 SUBDIR+=	pdmenu
