@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.67 2003/12/04 14:59:22 grant Exp $
+# $NetBSD: Makefile.common,v 1.68 2004/01/27 02:28:51 tacha Exp $
 #
 # Common include file for communicator and navigator packages
 
@@ -240,7 +240,7 @@ NS_NEED_LINUX=	yes
 .endif
 
 .if ${BINNAME} != "netscape"
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	yes
 .  if defined(NS_NEED_LINUX)
 .    include "../../emulators/suse_linux/Makefile.application"
 .  endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/10/24 18:18:59 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 22:55:34 grant Exp $
 #
 
 DISTNAME=	grail-0.6
@@ -17,7 +17,7 @@ NO_BUILD=       yes
 GRAILDIR=	share/misc/grail-0.6
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 PYTHON_VERSIONS_ACCEPTED= 15
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 do-install:
 	${CAT} ${PKGDIR}/PLIST.pre >${PLIST_SRC}
@@ -34,5 +34,5 @@ do-install:
 	${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
 .include "../../lang/python/application.mk"
-.include "../../x11/py-Tk/buildlink2.mk"
+.include "../../x11/py-Tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
