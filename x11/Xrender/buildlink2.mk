@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/01/14 09:16:36 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/09/19 17:22:15 wiz Exp $
 
 .if !defined(XRENDER_BUILDLINK2_MK)
 XRENDER_BUILDLINK2_MK=	# defined
@@ -65,10 +65,10 @@ BUILDLINK_DEPENDS.Xrender=	Xrender>=0.8.3
 .include "../../x11/render/buildlink2.mk"
 .else
 BUILDLINK_PREFIX.Xrender=	${X11BASE}
-BUILDLINK_FILES.Xrender+=      include/X11/extensions/extutil.h
-BUILDLINK_FILES.Xrender+=      include/X11/extensions/region.h
-BUILDLINK_FILES.Xrender+=      include/X11/extensions/render.h
-BUILDLINK_FILES.Xrender+=      include/X11/extensions/renderproto.h
+BUILDLINK_FILES.Xrender+=	include/X11/extensions/extutil.h
+BUILDLINK_FILES.Xrender+=	include/X11/extensions/region.h
+BUILDLINK_FILES.Xrender+=	include/X11/extensions/render.h
+BUILDLINK_FILES.Xrender+=	include/X11/extensions/renderproto.h
 .endif
 
 USE_X11=			# defined
