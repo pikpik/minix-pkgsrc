@@ -1,4 +1,4 @@
-#	$NetBSD: cross.mk,v 1.25 2002/10/03 19:12:47 wiz Exp $
+#	$NetBSD: cross.mk,v 1.26 2003/09/30 22:46:42 kristerw Exp $
 
 # Shared definitions for building a cross-compile environment.
 
@@ -154,7 +154,7 @@ PLIST_PRE+=		${COMMON_DIR}/PLIST-egcs
 CROSS_DISTFILES+=	${EGCS_DISTNAME}.tar.gz ${EGCS_PATCHBUNDLE}
 MASTER_SITES+=		ftp://egcs.cygnus.com/pub/egcs/${EGCS_DISTDIR}/ \
 			${MASTER_SITE_LOCAL}
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 CC_FOR_TARGET=		${EGCS_WRKSRC}/gcc/xgcc -B${EGCS_WRKSRC}/gcc/ ${CFLAGS_FOR_TARGET}
 CXX_FOR_TARGET=		${CC_FOR_TARGET}
