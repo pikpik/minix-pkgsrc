@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/16 19:56:50 jtb Exp $
 
 DISTNAME=	libxml-perl-0.07
 PKGNAME=	p5-libxml-0.07
+SVR4_PKGNAME=	p5lxm
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.55 2001/09/27 05:12:54 itojun Exp $
+# $NetBSD: Makefile,v 1.56 2001/09/27 23:18:39 jlam Exp $
 
 DISTNAME=		openssh-2.9.9p2
+SVR4_PKGNAME=		ossh
 CATEGORIES=		security
 MASTER_SITES=		ftp://gd.tuwien.ac.at/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/ \

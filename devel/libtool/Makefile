@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.32 2001/02/16 14:38:40 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2001/02/27 08:20:24 skrll Exp $
 #
 
 DISTFILES=	# empty
 .include "Makefile.common"
 
 PKGNAME=	${PKGPFX}${PKGREV}
+SVR4_PKGNAME=	ltool
 
 DEPENDS+=	${PKGPFX:C/-/-base-/}${PKGREV}:../libtool-base
 DEPENDS+=	${PKGPFX:C/-/-info-/}${PKGREV}:../libtool-info

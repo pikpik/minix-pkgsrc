@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2001/06/10 05:41:25 explorer Exp $
+# $NetBSD: Makefile,v 1.1 2001/06/10 06:11:28 explorer Exp $
 
 DISTNAME=	Event-0.81
 PKGNAME=	p5-${DISTNAME}
+SVR4_PKGNAME=	p5eve
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/J/JP/JPRIT/}
 

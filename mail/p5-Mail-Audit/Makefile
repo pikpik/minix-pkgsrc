@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2001/09/27 07:34:00 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/27 07:36:12 jlam Exp $
 
 DISTNAME=	Mail-Audit-1.11
 PKGNAME=	p5-${DISTNAME}
+SVR4_PKGNAME=	p5mau
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/05 20:42:11 jtb Exp $
 
 DISTNAME=		Net-IRC-0.70
 PKGNAME=		p5-${DISTNAME}
+SVR4_PKGNAME=		p5nir
 CATEGORIES=		net perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/16 03:30:51 jlam Exp $
 
 DISTNAME=		gettext-0.10.35
 PKGNAME=		gettext-m4-0.10.35
+SVR4_PKGNAME=		gttm4
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=gettext/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:13 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:25:28 wiz Exp $
 #
 
 DISTNAME=	nkf-1.7
 PKGNAME=	p5-nkf-1.7
+SVR4_PKGNAME=	p5nkf
 CATEGORIES=	japanese converters
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/cmd/nkf/
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:22 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/28 13:06:57 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/06/27 18:38:15 jfitz Exp
 #
 
 DISTNAME=	Net-SNMP-3.60
 PKGNAME=	p5-Net-SNMP-3.60
+SVR4_PKGNAME=	p5nsn
 WRKSRC=		${WRKDIR}/Net-SNMP-3.6
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/05/09 02:13:41 lukem Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/27 23:18:28 jlam Exp $
 #
 
 DISTNAME=		lukemftpd-1.1
+SVR4_PKGNAME=		luftd
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/misc/lukemftp/
 

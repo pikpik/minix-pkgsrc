@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2001/05/02 08:22:30 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/07/08 13:59:16 bad Exp $
 #
 
 .include "../../databases/mysql-client/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
+SVR4_PKGNAME=		mysqs
 COMMENT=		MySQL, a free SQL database (server)
 
 DEPENDS+=		${DISTNAME:S/-/-client-/}:../../databases/mysql-client

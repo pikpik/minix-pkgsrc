@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/29 10:18:26 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2001/04/28 14:43:29 drochner Exp $
 #
 
 DISTNAME=	Audio-CD-0.04-disc-cover-1.1.0
 PKGNAME=	p5-Audio-CD-0.04-disc-cover-1.1.0
+SVR4_PKGNAME=	p5acd
 CATEGORIES=	audio
 MASTER_SITES=	http://www.liacs.nl/~jvhemert/disc-cover/download/libraries/
 

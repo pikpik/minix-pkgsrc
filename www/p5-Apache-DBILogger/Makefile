@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 20:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:55 jlam Exp $
 #
 
 DISTNAME=	Apache-DBILogger-0.93
 PKGNAME=	p5-${DISTNAME}
+SVR4_PKGNAME=	p5adl
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
 

@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/09/15 22:08:48 mjl Exp $
 #
 
 DISTNAME=	FreezeThaw-0.41
 PKGNAME=	p5-${DISTNAME}
+SVR4_PKGNAME=	p5frt
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=FreezeThaw/}
 

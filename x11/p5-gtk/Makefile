@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2001/02/28 14:01:14 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/03 18:12:32 jlam Exp $
 #
 
 DISTNAME=		Gtk-Perl-0.7008
 PKGNAME=		p5-gtk-0.7008
+SVR4_PKGNAME=		p5gtk
 WRKSRC=			${WRKDIR}/${DISTNAME}/Gtk
 CATEGORIES=		x11 perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Gtk/} \
