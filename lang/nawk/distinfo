@@ -1,4 +1,5 @@
-$NetBSD: distinfo,v 1.7 2003/09/06 13:59:18 cjep Exp $
+$NetBSD: distinfo,v 1.8 2004/02/09 14:47:34 cjep Exp $
 
 SHA1 (nawk-20040207/awk.tar.gz) = 4586c56e0dd37b0499f1eb6b7274c7ba5e1813da
+RMD160 (nawk-20040207/awk.tar.gz) = 8884857e282a798704e69730f813fc2af285846a
 Size (nawk-20040207/awk.tar.gz) = 85779 bytes
