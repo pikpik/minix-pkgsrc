@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xipdump
+lib/X11/app-defaults/Xipdump.ad
+man/man8/xipdump.8
