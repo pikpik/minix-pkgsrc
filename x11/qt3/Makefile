@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/04/16 14:30:44 recht Exp $
+# $NetBSD: Makefile,v 1.25 2004/05/01 18:31:36 snj Exp $
 
 DISTNAME=	qt3-${QTVERSION}
 CATEGORIES=	x11
@@ -9,7 +9,7 @@ COMMENT=	"meta-package" for the QT GUI C++ toolkit
 
 .include "./Makefile.common"
 
-DEPENDS+=	qt3-libs-${QTVERSION}:../../x11/qt3-libs
+DEPENDS+=	qt3-libs-${QTVERSION}nb1:../../x11/qt3-libs
 DEPENDS+=	qt3-tools-${QTVERSION}:../../x11/qt3-tools
 DEPENDS+=	qt3-docs-${QTVERSION}:../../x11/qt3-docs
 
