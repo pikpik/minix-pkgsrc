@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ../gcc-2.95.3/gcc/config/arm/netbsd.h.orig	Mon Jan 11 14:33:58 1999
-+++ ../gcc-2.95.3/gcc/config/arm/netbsd.h	Thu Jan  3 20:37:53 2002
+--- ../gcc-2.95.3/gcc/config/arm/netbsd.h.orig 2000/07/26 00:18:16 1.1.1.1
++++ ../gcc-2.95.3/gcc/config/arm/netbsd.h 2001/06/18 16:09:21 1.2
 @@ -1,4 +1,4 @@
 -/* NetBSD/arm (RiscBSD) version.
 +/* NetBSD/arm32 version.

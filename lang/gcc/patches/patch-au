@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ../gcc-2.95.3/gcc/config/sh/sh.h.orig	Mon Aug  2 07:02:55 1999
-+++ ../gcc-2.95.3/gcc/config/sh/sh.h	Thu Jan  3 20:37:53 2002
+--- ../gcc-2.95.3/gcc/config/sh/sh.h.orig 2000/07/26 00:18:49 1.1.1.1
++++ ../gcc-2.95.3/gcc/config/sh/sh.h 2001/12/16 18:56:45 1.4
 @@ -1681,7 +1681,7 @@
     it uses this information.  Hence, the general register <-> floating point
     register information here is not used for SFmode.  */
