@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.78 2001/12/27 15:02:36 taya Exp $
+# $NetBSD: Makefile,v 1.77 2001/11/22 16:25:36 taya Exp $
 
-MOZ_VER=	0.9.8
+MOZ_VER=	0.9.9
 DISTNAME=	mozilla-source-${MOZ_VER}
 PKGNAME=	mozilla-${MOZ_VER}
 WRKSRC=		${WRKDIR}/mozilla
@@ -26,7 +26,6 @@ CONFIGURE_ARGS=	--disable-tests \
 		--enable-mathml \
 		--enable-crypto
 SHAREMODE?=	644
-#ALL_TARGET=	default
 ALL_TARGET=
 
 .include	"../../x11/gtk/buildlink.mk"
