@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/17 18:09:03 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/03/16 18:32:47 wiz Exp $
 #
 
 DISTNAME=	FreeWnn-1.10
@@ -72,8 +72,8 @@ post-patch:
 post-build:
 	@${SED} -e 's|$${WNNOWNER}|${WNNOWNER}|g'	\
 		${INSTALL_SRC} > ${INSTALL_FILE}
-	@${SED} -e 's|@PREFIX@|${PREFIX}|g' ${FILESDIR}/ja-freewnn \
-		> ${WRKDIR}/ja-freewnn
+	@${SED} -e 's|@PREFIX@|${PREFIX}|g' ${FILESDIR}/ja_freewnn \
+		> ${WRKDIR}/ja_freewnn
 
 pre-install:
 	@${SETENV} ${SH} ${INSTALL_FILE} ${PKGNAME} PRE-INSTALL
@@ -81,7 +81,7 @@ pre-install:
 post-install:
 	@${LN} -s ${DICT_DIR}/wnn/${WNN_LANG} \
 		${PREFIX}/share/wnn/${WNN_LANG}/dic
-	@${INSTALL_SCRIPT} ${WRKDIR}/ja-freewnn ${PREFIX}/etc/rc.d/ja-freewnn
+	@${INSTALL_SCRIPT} ${WRKDIR}/ja_freewnn ${PREFIX}/etc/rc.d/ja_freewnn
 .endif
 
 .include "../../mk/bsd.pkg.mk"
