@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.467 2004/02/22 01:59:37 minskim Exp $
+# $NetBSD: Makefile,v 1.468 2004/02/23 16:26:15 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -289,6 +289,7 @@ SUBDIR+=	p5-File-Spec
 SUBDIR+=	p5-File-Temp
 SUBDIR+=	p5-FileKGlob
 SUBDIR+=	p5-FreezeThaw
+SUBDIR+=	p5-Getopt-Simple
 SUBDIR+=	p5-Graph
 SUBDIR+=	p5-Heap
 SUBDIR+=	p5-IO-Null
