@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.9 2000/10/19 23:31:18 jlam Exp $
 
 --- configure.orig	Mon Jul  3 10:31:57 2000
 +++ configure
@@ -6,8 +6,8 @@ $NetBSD$
  
  
  
-+# Set DATADIRNAME to "${LOCALEBASE}"
-+DATADIRNAME="${LOCALEBASE}"
++# Set DATADIRNAME to "${LOCALEDIR}"
++DATADIRNAME="${LOCALEDIR}"
 +INTLDEPS=
 +INTLLIBS="-lintl"
 +

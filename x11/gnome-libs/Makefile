@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2000/11/27 10:51:08 itojun Exp $
+# $NetBSD: Makefile,v 1.55 2000/11/29 02:37:43 mycroft Exp $
 
 DISTNAME=		gnome-libs-1.2.8
 CATEGORIES=		x11 gnome
@@ -33,6 +33,7 @@ LDFLAGS+=       	-L${LOCALBASE}/lib
 
 LOCALSTATEDIR=		/var/gnome
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE} \
+			LOCALEDIR=${LOCALEDIR} \
 			LOCALSTATEDIR=${LOCALSTATEDIR}
 
 .include "../../mk/bsd.prefs.mk"
