@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 1998/06/22 13:09:50 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/08/20 15:17:26 tsarna Exp $
 #
 
-DISTNAME=	addnerd-1.5
+DISTNAME=	addnerd-1.6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
