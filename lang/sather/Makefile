@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/09 14:36:49 agc Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/23 09:54:03 jlam Exp $
 
 DISTNAME=		sather-1.2.1
 CATEGORIES=		lang
@@ -13,6 +13,7 @@ USE_X11=		# defined
 USE_GMAKE=		# defined
 
 ALL_TARGET=		full optional
+MAKE_ENV+=		_OPSYS_RPATH_NAME=${_OPSYS_RPATH_NAME}
 
 INFO_FILES=		sather.info sather-tutorial.info sather-mode.info
 
