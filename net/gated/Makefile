@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/06/18 19:40:27 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 22:51:11 grant Exp $
 # FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp
 #
 
@@ -19,13 +19,16 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
+USE_BUILDLINK3=		yes
+USE_PKGINSTALL=		yes
+RCD_SCRIPTS=		gated
+RCD_SCRIPT_SRC.gated=	${FILESDIR}/gated
+
 ALL_TARGET=	gated
 
 post-extract:
 	@${SED} -e 's#@PREFIX@#${PREFIX}#' <${FILESDIR}/configuration \
 	    >${WRKSRC}/src/configs/netbsd
-	${SED} -e "s,@PREFIX@,${PREFIX}," ${FILESDIR}/gated \
-		> ${WRKDIR}/gated
 
 do-configure:
 	cd ${WRKSRC}/src; 						\
@@ -39,6 +42,5 @@ post-install:
 	cd ${WRKSRC}/doc && ${PAX} -rw -pe . ${PREFIX}/share/doc/gated
 	${CHOWN} -R ${SHAREOWN} ${PREFIX}/share/doc/gated
 	${CHGRP} -R ${SHAREGRP} ${PREFIX}/share/doc/gated
-	${INSTALL_SCRIPT} ${WRKDIR}/gated ${PREFIX}/etc/rc.d
 
 .include "../../mk/bsd.pkg.mk"
