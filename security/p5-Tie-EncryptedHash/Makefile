@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2001/10/01 15:17:58 mcr Exp $
 #
 
 DISTNAME=		Tie-EncryptedHash-1.1
@@ -10,9 +10,9 @@ MAINTAINER=		packages@netbsd.org
 #HOMEPAGE=	
 COMMENT=		perl5 module for hashes with encrypting fields
 
-DEPENDS+=		p5-Crypt-CBC-*:../../security/p5-Crypt-CBC
-DEPENDS+=		p5-Crypt-Blowfish-*:../../security/p5-Crypt-Blowfish
-DEPENDS+=		p5-Crypt-DES-*:../../security/p5-Crypt-DES
+DEPENDS+=		p5-Crypt-CBC-[0-9]*:../../security/p5-Crypt-CBC
+DEPENDS+=		p5-Crypt-Blowfish-[0-9]*:../../security/p5-Crypt-Blowfish
+DEPENDS+=		p5-Crypt-DES-[0-9]*:../../security/p5-Crypt-DES
 
 USE_PERL5=		# defined
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Tie/EncryptedHash/.packlist
