@@ -1,25 +1,18 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: arlad,v 1.2 2002/08/07 08:30:51 jlam Exp $
+# $NetBSD$
 #
 # PROVIDE: arlad
 # REQUIRE: beforemountlkm
+# KEYWORD: shutdown
 
-if [ -f /etc/rc.subr ]; then
-	. /etc/rc.subr
-fi
+. /etc/rc.subr
 
 name="arlad"
 rcvar=$name
-command="@PREFIX@/libexec/${name}"
-command_args="-z /dev/xfs0"
-required_files="/dev/xfs0"
+command="/usr/pkg/libexec/${name}"
+command_args="-z /dev/nnpfs0"
+required_files="/dev/nnpfs0"
 
-if [ -f /etc/rc.subr -a -d /etc/rc.d -a -f /etc/rc.d/DAEMON ]; then
-	load_rc_config $name
-	eval [ -z "\$${rcvar}" ] && eval ${rcvar}=NO
-	run_rc_command "$1"
-else
-	echo -n ' ${name}'
-	${command} ${arlad_flags} ${command_args}
-fi
+load_rc_config $name
+run_rc_command "$1"
