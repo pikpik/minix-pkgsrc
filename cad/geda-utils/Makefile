@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2003/05/02 11:53:56 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/03/09 06:18:24 dmcmahill Exp $
 #
 
 DISTNAME=		geda-utils-${PKGVERSION}
-PKGREVISION=		2
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.geda.seul.org/pub/geda/devel/${PKGVERSION}/ \
 			ftp://ieee.ing.uniroma1.it/pub/geda/devel/${PKGVERSION}/ \
@@ -18,7 +17,7 @@ CONFLICTS+=		gEDA<19991011
 BUILD_DEPENDS+=		geda-symbols>=${PKGVERSION}:../../cad/geda-symbols
 
 DIST_SUBDIR=		geda
-PKGVERSION=		20030223
+PKGVERSION=		20030525
 
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES

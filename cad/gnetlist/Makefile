@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2003/05/02 11:53:56 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/03/09 22:00:54 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gnetlist-${PKGVERSION}
 PKGNAME=		gnetlist-${PKGVERSION}
-PKGREVISION=		3
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.geda.seul.org/pub/geda/devel/${PKGVERSION}/ \
 			ftp://ieee.ing.uniroma1.it/pub/geda/devel/${PKGVERSION}/ \
@@ -15,7 +14,7 @@ HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Netlist generation program
 
 DIST_SUBDIR=		geda
-PKGVERSION=		20030223
+PKGVERSION=		20030525
 
 DEPENDS+=		geda-symbols-${PKGVERSION}:../../cad/geda-symbols
 # needs GNU m4 for the PCBboard netlister
