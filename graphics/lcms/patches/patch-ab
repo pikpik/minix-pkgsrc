@@ -9,9 +9,5 @@ $NetBSD$
 @@ -250,3 +251,3 @@
  #ifdef USE_INT64
 -       __int64 l = (__int64) a * b + 0x8000i64;
-+       u_int64_t l = (u_int64_t) a * b + (u_int64_t)0x8000;
++       uint64_t l = (uint64_t) a * b + (uint64_t)0x8000;
         return (Fixed32) (l >> 16);
-@@ -711,2 +712,2 @@
-        VEC3scaleAndCut(&r -> v[2], &v -> v[2], d);
--}
-+}
