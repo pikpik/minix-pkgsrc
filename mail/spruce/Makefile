@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/12/30 14:05:48 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2002/03/13 17:37:22 fredb Exp $
 #
 
 DISTNAME=       spruce-0.5.17
@@ -15,5 +15,7 @@ DEPENDS+=	gnome-libs>=1.4.1.2nb1:../../x11/gnome-libs
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+
+MAKE_ENV+=	PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 .include "../../mk/bsd.pkg.mk"
