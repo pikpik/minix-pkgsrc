@@ -1,14 +1,12 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2003/05/18 13:09:02 cjep Exp $
 bin/gist
 bin/yorick
-@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/yorick.info
 info/yorick.info
 info/yorick.info-1
 info/yorick.info-2
 info/yorick.info-3
 info/yorick.info-4
 info/yorick.info-5
-@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/yorick.info
 man/man1/gist.1
 man/man1/yorick.1
 lib/yorick/1.5/Make.cfg
