@@ -1,0 +1,4 @@
+# $NetBSD$
+
+*shared*
+gd gdmodule.c -I@PREFIX@/include/gd -L@PREFIX@/lib -R@PREFIX@/lib -lgd
