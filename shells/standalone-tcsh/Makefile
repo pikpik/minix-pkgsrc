@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/11/17 09:02:01 salo Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:42:26 jmmv Exp $
 #
 
 NO_MTREE=		YES
@@ -10,7 +10,7 @@ PKG_SHELL=		/bin/tcsh
 
 .include "../../shells/tcsh/Makefile"
 
-COMMENT:=		Standalone version of the ${COMMENT}
+COMMENT:=		Standalone version of the Extended C-shell
 
 LDFLAGS+=		-static
 LOCALBASE=		/
