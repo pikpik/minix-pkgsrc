@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/gsx11
+man/man1/gsx11.1
