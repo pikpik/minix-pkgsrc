@@ -21,5 +21,7 @@ MAKE_ENV+=		LDFLAGS="${LDFLAGS}" CPPFLAGS="${CFLAGS}"
 
 pre-configure:
 	cd ${WRKSRC} && autoconf
+	${SED} -e 's@/usr/share@${PREFIX}/share@' < ${WRKSRC}/Sources/config.h.in > ${WRKSRC}/foo
+	${MV} ${WRKSRC}/foo ${WRKSRC}/Sources/config.h.in
 
 .include "../../mk/bsd.pkg.mk"
