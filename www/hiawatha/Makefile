@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/09 20:36:52 agc Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:52 jlam Exp $
 #
 
 DISTNAME=	hiawatha
@@ -20,7 +20,7 @@ NO_CONFIGURE=
 NO_BUILD=
 WRKSRC=		${WRKDIR}
 
-USE_JAVA=	yes
+USE_JAVA=	run
 DIST_SUBDIR=	${PKGNAME}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_CMD=	unzip -aq ${DOWNLOADED_DISTFILE}

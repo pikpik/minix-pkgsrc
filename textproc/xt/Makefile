@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/11/14 14:47:56 agc Exp $
+# $NetBSD: Makefile,v 1.7 2002/04/03 21:17:54 jwise Exp $
 #
 
 DISTNAME=	xt
@@ -15,7 +15,7 @@ DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	XP-[0-9]*:../../textproc/xp
 
 EXTRACT_ONLY=
-USE_JAVA=	yes
+USE_JAVA=	run
 NO_PATCH=
 NO_CONFIGURE=
 NO_BUILD=

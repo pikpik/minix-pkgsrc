@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/03/31 20:25:04 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.12 2002/06/30 15:02:51 schmonz Exp $
 
 DISTNAME=	configurator_152
 PKGNAME=	${BINNAME}-1.5.2
@@ -10,7 +10,7 @@ MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://edge.mcs.drexel.edu/GICL/people/sevy/airport/
 COMMENT=	Configuration program for Apple's Airport Base Station
 
-USE_JAVA=	YES
+USE_JAVA=	run
 
 PLIST_SUBST+=	BINNAME=${BINNAME} JARNAME=${JARNAME}
 
