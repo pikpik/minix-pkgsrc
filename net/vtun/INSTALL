@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: INSTALL,v 1.1 2001/05/13 19:02:48 kim Exp $
+# $NetBSD: INSTALL,v 1.1 2001/10/31 22:59:45 zuntum Exp $
 
 PKGNAME=$1
 STAGE=$2
@@ -10,7 +10,7 @@ CHMOD="@CHMOD@"
 CP="@CP@"
 MKDIR="@MKDIR@"
 
-CONFDIR="@VTUN_SYSCONFDIR@"
+CONFDIR="@PKG_SYSCONFDIR@"
 SAMPLECONFDIR=${PKG_PREFIX}/share/examples/vtun
 CONFFILES="vtund.conf"
 LOCKDIR=/var/lock/vtund
