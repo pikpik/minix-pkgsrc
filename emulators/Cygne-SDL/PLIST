@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/Cygne-SDL
+share/Cygne-SDL/Wondersnake.txt
+share/Cygne-SDL/Wondersnake.zip
+share/doc/Cygne-SDL/README
+@dirrm share/doc/Cygne-SDL
