@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2001/10/15 22:46:20 skrll Exp $
 
 --- libkcal/Makefile.in.orig	Sat Sep  8 01:48:15 2001
 +++ libkcal/Makefile.in
-@@ -598,10 +598,10 @@
+@@ -589,10 +589,10 @@
  
  
  $(srcdir)/parseholiday.c: parseholiday.y

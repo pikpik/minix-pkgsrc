@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aj,v 1.1.1.1 2001/03/14 16:14:05 skrll Exp $
 
 --- mpeglib/lib/util/audio/audioIO_Linux.cpp.orig	Thu Jul 27 16:24:55 2000
 +++ mpeglib/lib/util/audio/audioIO_Linux.cpp
@@ -20,7 +20,7 @@ $NetBSD$
  
  // declare these static to effectively isolate the audio device 
  
-@@ -132,7 +132,7 @@
+@@ -147,7 +147,7 @@
      exit(0);
    }
    

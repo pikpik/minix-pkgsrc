@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ar,v 1.2 2001/10/15 22:46:22 skrll Exp $
 
 --- kdecore/kstddirs.cpp.orig	Wed Jan 24 22:29:38 2001
 +++ kdecore/kstddirs.cpp
-@@ -652,33 +652,33 @@
+@@ -690,33 +690,33 @@
  
  QString KStandardDirs::kde_default(const char *type) {
      if (!strcmp(type, "data"))

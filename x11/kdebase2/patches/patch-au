@@ -1,6 +1,6 @@
 $NetBSD$
 
---- kcontrol/kcontrol/kcontrol_main.cpp.orig	Tue Oct  2 17:50:31 2001
+--- kcontrol/kcontrol/kcontrol_main.cpp.orig	Mon Dec  3 10:00:43 2001
 +++ kcontrol/kcontrol/kcontrol_main.cpp
 @@ -0,0 +1,28 @@
 +/*

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2001/10/15 22:45:55 skrll Exp $
+# $NetBSD: Makefile,v 1.7 2001/11/13 21:11:54 jlam Exp $
 
-DISTNAME=	kdemultimedia-2.2.1
+DISTNAME=	kdemultimedia-2.2.2
 CATEGORIES=	audio
 COMMENT=	KDE audio tools
 
