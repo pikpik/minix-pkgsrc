@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2000/10/15 18:05:25 rh Exp $
+# $NetBSD: Makefile,v 1.97 2000/10/16 12:25:52 abs Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -51,6 +51,7 @@
     SUBDIR += knightcap
     SUBDIR += knightcap-brain
     SUBDIR += koth
+    SUBDIR += lbreakout
     SUBDIR += lincity
     SUBDIR += maelstrom
     SUBDIR += mirrormagic
