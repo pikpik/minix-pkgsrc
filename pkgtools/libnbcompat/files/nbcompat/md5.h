@@ -1,4 +1,4 @@
-/*	$NetBSD: md5.h,v 1.1.1.1 2003/03/04 13:18:57 grant Exp $	*/
+/*	$NetBSD: md5.h,v 1.1.1.1 2003/03/31 05:02:55 grant Exp $	*/
 
 /*
  * This file is derived from the RSA Data Security, Inc. MD5 Message-Digest
