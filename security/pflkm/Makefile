@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 15:05:30 peter Exp $
 
-DISTNAME=		pflkm-20041025
+DISTNAME=		pflkm-20041204
 CATEGORIES=		security ipv6
 MASTER_SITES=		http://nedbsd.nl/~ppostma/pf/
 
