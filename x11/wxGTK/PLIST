@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:11:52 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/03/31 17:44:21 jmmv Exp $
 bin/wx-config
 bin/wxgtk-2.4-config
 include/wx/accel.h
@@ -91,6 +91,7 @@ include/wx/fs_zip.h
 include/wx/gauge.h
 include/wx/gdicmn.h
 include/wx/gdiobj.h
+include/wx/quantize.h
 include/wx/generic/accel.h
 include/wx/generic/calctrl.h
 include/wx/generic/caret.h
