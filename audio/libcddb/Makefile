@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/09/20 23:43:20 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:07 tv Exp $
 #
 
 DISTNAME=	libcddb-0.9.5
@@ -21,4 +21,5 @@ GCC_REQD+=		2.95
 
 TEST_TARGET=		check
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
