@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/lftp
 bin/lftpget
 etc/lftp.conf
