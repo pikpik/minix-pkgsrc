@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- progs/gluperf/Makefile~	Thu Sep 11 13:50:55 1997
++++ progs/gluperf/Makefile	Sat Feb 28 07:24:26 1998
+@@ -2,3 +2,3 @@
+ SRCS    = gluperf.c
+-LIBS    = -lm -lglunix -lsocket -lnsl
++LIBS    = -lm -lglunix
+ 
