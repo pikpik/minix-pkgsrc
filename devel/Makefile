@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.402 2003/07/06 15:36:55 taca Exp $
+# $NetBSD: Makefile,v 1.403 2003/07/13 20:03:24 dillo Exp $
 #
 
 COMMENT=	Development utilities
@@ -169,6 +169,7 @@ SUBDIR+=	libctl
 SUBDIR+=	libdockapp
 SUBDIR+=	libetm
 SUBDIR+=	libevent
+SUBDIR+=	libffi
 SUBDIR+=	libg++
 SUBDIR+=	libgetopt
 SUBDIR+=	libglade
