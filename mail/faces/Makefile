@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/10/03 00:12:52 tv Exp $
+# $NetBSD: Makefile,v 1.40 2004/12/04 04:43:12 tron Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	3
@@ -31,6 +31,10 @@ MAKE_ENV+=	SVR4LIBS="-lnsl -lsocket -lgen"
 MAKE_ENV+=	SYSV=-DSYSV32
 MAKE_ENV+=	CC=gcc
 MAKE_ENV+=	CPPFLAGS=
+.endif
+
+.if ${OPSYS} != "Interix"
+MAKE_ENV+=	NISLOOKUP=-DNISLOOKUP
 .endif
 
 REPLACE_PERL=	scripts/addxface scripts/deepen scripts/facesaddr \
