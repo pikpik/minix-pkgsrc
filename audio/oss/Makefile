@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2002/10/21 06:26:05 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/19 14:51:41 jlam Exp $
 
+DISTNAME=	oss-${OSS_VERSION}	# Overridden below
 PKGNAME=	oss-${OSS_VERSION}
 CATEGORIES=	audio sysutils
 MASTER_SITES=	ftp://ftp.opensound.com/pub/oss/netbsd/
