@@ -1,8 +1,8 @@
 $NetBSD$
 
---- modules/pam_unix/unix_chkpwd.c.orig	Sat Oct 21 14:30:41 2000
+--- modules/pam_unix/unix_chkpwd.c.orig	Sun Feb 11 01:33:53 2001
 +++ modules/pam_unix/unix_chkpwd.c
-@@ -26,8 +26,11 @@
+@@ -22,8 +22,11 @@
  #include <syslog.h>
  #include <unistd.h>
  #include <sys/types.h>
@@ -14,7 +14,7 @@ $NetBSD$
  #include <signal.h>
  
  #define MAXPASS		200	/* the maximum length of a password */
-@@ -98,6 +101,9 @@
+@@ -94,6 +97,9 @@
  	pwd = getpwnam(name);	/* Get password file entry... */
  	endpwent();
  	if (pwd != NULL) {
@@ -24,7 +24,7 @@ $NetBSD$
  		if (strcmp(pwd->pw_passwd, "x") == 0) {
  			/*
  			 * ...and shadow password file entry for this user,
-@@ -124,6 +130,7 @@
+@@ -120,6 +126,7 @@
  				salt = x_strdup(pwd->pw_passwd);
  			}
  		}
