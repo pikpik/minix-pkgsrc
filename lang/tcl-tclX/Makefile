@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/10/07 02:01:37 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2004/11/04 00:35:54 minskim Exp $
 #
 
 DISTNAME=	tclx8.3.5-src
@@ -27,7 +27,7 @@ TEST_TARGET=		test
 
 .include "../../mk/bsd.prefs.mk"
 
-PKGSRC_TCL_SRC_DIR=	${PKGSRCDIR}/lang/tcl/${WRKDIR:T}/tcl8.4.7
+PKGSRC_TCL_SRC_DIR=	${PKGSRCDIR}/lang/tcl/${WRKDIR:T}/tcl8.4.8
 CONFIGURE_ENV+=		PKGSRC_TCL_SRC_DIR="${PKGSRC_TCL_SRC_DIR}"
 
 MAKE_ENV+=		GTAR=${GTAR} CHOWN=${CHOWN} CHMOD=${CHMOD} \
