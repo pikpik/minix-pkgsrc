@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 15:46:03 zuntum Exp $
 #
 
-DISTNAME=	qmHandle-0.4.1
+DISTNAME=	qmHandle-0.5.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.io.com/~mick/soft/
 
