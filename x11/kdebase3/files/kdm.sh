@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: kdm.sh,v 1.1 2004/01/15 10:15:14 markd Exp $
+# $NetBSD: kdm.sh,v 1.2 2004/05/01 11:14:41 xtraeme Exp $
 #
 
 # PROVIDE: kdm
@@ -15,7 +15,8 @@ name="kdm"
 rcvar=$name
 command="@PREFIX@/bin/${name}"
 pidfile="/var/run/kdm.pid"
-required_files="@PREFIX@/share/kde/config/kdm/kdmrc"
+required_files="@PKG_SYSCONFDIR@/kdm/kdmrc"
+command_args="-config ${required_files}"
 
 if [ -f /etc/rc.subr ]; then
 	load_rc_config $name
