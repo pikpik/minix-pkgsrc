@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/12/03 15:14:56 wiz Exp $
-
-.include		"../vim-share/Makefile.common"
+# $NetBSD: Makefile,v 1.11 2005/01/06 20:40:38 adrianp Exp $
 
 PKGNAME=		vim-gtk2-${VIM_VERSION}.${VIM_PATCHLEVEL}
+PKGREVISION=		1
 
 COMMENT=		Vim editor (vi clone) with X11 GTK2 GUI
+
+.include		"../vim-share/Makefile.common"
 
 DEPENDS+=		vim-share-${VIM_VERSION}.${VIM_PATCHLEVEL}:../vim-share
 CONFLICTS+=		vim-[0-9]* vim-gtk-[0-9]* vim-motif-[0-9]*

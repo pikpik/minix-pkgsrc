@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2003/06/02 07:27:25 martti Exp $
-
-.include		"Makefile.common"
+# $NetBSD: Makefile,v 1.10 2004/06/21 08:23:48 martti Exp $
 
 PKGNAME=		vim-share-${VIM_VERSION}.${VIM_PATCHLEVEL}
 
 COMMENT=		Data files for the vim editor (vi clone)
+
+.include		"Makefile.common"
 
 CONFIGURE_ARGS+=	--disable-gui
 
