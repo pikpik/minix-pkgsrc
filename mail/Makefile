@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2003/03/11 13:58:13 markd Exp $
+# $NetBSD: Makefile,v 1.162 2003/03/26 18:55:57 agc Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -10,6 +10,7 @@ SUBDIR+=	autorespond
 SUBDIR+=	balsa
 SUBDIR+=	bbmail
 SUBDIR+=	bmf
+SUBDIR+=	bogofilter
 SUBDIR+=	bulk_mailer
 SUBDIR+=	clamav
 SUBDIR+=	coolmail
