@@ -1,3 +1,4 @@
+$NetBSD$
 --- media-info/media-info.c.orig	Tue Aug 12 16:04:06 2003
 +++ media-info/media-info.c	Tue Feb 10 07:55:54 2004
 @@ -258,10 +258,12 @@
