@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/04 14:39:38 salo Exp $
+# $NetBSD: Makefile,v 1.6 2003/09/23 13:54:25 salo Exp $
 #
 
 DISTNAME=		dovecot-0.99.10
@@ -23,7 +23,7 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=/var
-CONFIGURE_ARGS+=	--with-ssldir=/etc/openssl
+CONFIGURE_ARGS+=	--with-ssldir=${SSLCERTS}
 
 .include "../../mk/bsd.prefs.mk"
 
