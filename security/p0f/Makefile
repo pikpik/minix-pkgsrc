@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/01/17 23:15:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2003/02/02 21:32:11 jmmv Exp $
 #
 
-DISTNAME=	p0f-1.8.2
-PKGREVISION=	1
+DISTNAME=	p0f-1.8.3
 CATEGORIES=	security net
 MASTER_SITES=	http://www.stearns.org/p0f/
 EXTRACT_SUFX=	.tgz
