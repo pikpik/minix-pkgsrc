@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.7 2001/06/11 06:34:31 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/20 03:31:22 jlam Exp $
 #
 
-DISTNAME=	bvi-1.2.0.src
-PKGNAME=	bvi-1.2.0
+DISTNAME=	bvi-1.3.0.src
+PKGNAME=	bvi-1.3.0
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	editors
-MASTER_SITES=	http://bvi.linuxave.net/download/
+MASTER_SITES=	http://prdownloads.sourceforge.net/bvi/
 
 MAINTAINER=	sakamoto@netbsd.org
-HOMEPAGE=	http://bvi.linuxave.net/
-COMMENT=	Display-oriented editor for binary files, based on the vi editor
+HOMEPAGE=	http://bvi.sourceforge.net/
+COMMENT=	Vi-like editor for binary files
 
 USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
