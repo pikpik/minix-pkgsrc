@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/05/18 18:08:40 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/14 09:59:30 rh Exp $
 #
 
 DISTNAME=		geda-utils-${PKGVERSION}
@@ -12,14 +12,18 @@ MAINTAINER=		dmcmahill@netbsd.org
 HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Set of utilites for gEDA
 
-DEPENDS+=		libgeda-${PKGVERSION}:../../cad/libgeda
-
 CONFLICTS+=		gEDA<19991011
 
 DIST_SUBDIR=		geda
-PKGVERSION=		20020414
+PKGVERSION=		20021103
 
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
+USE_BUILDLINK2=		YES
+USE_PERL5=		YES
+REPLACE_PERL+=		scripts/gschupdate \
+			scripts/gsymupdate \
+			scripts/sarlacc_sym
 
+.include "../../cad/libgeda/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,12 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/02 22:20:52 rh Exp $
-bin/gmk_sym
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:48:10 zuntum Exp $
 bin/convert_sym
-bin/smash_megafile
+bin/gmk_sym
+bin/gschemdoc
+bin/gschlas
+bin/gschupdate
+bin/gsymupdate
+bin/olib
 bin/sarlacc_schem
 bin/sarlacc_sym
+bin/smash_megafile
+share/gEDA/system-gschlasrc
