@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/08/13 02:17:37 tv Exp $
+# $NetBSD: Makefile,v 1.13 1998/09/06 06:53:52 garbled Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -24,6 +24,7 @@
 #    SUBDIR += stella
 #    SUBDIR += tkhfs
 #    SUBDIR += vgb
+    SUBDIR += vice
 #    SUBDIR += vmsbackup
     SUBDIR += wine
 #    SUBDIR += x48
