@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/10/24 22:10:48 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/13 21:12:44 jlam Exp $
 
 DISTNAME=	kyahoo-0.7
 CATEGORIES=	chat kde
@@ -10,7 +10,6 @@ HOMEPAGE=	http://kyahoo.sourceforge.net/
 COMMENT=	Yahoo! client for KDE
 
 USE_BUILDLINK_ONLY=	YES
-AUTOMAKE_OVERRIDE=	YES
 USE_GMAKE=              YES
 
 GNU_CONFIGURE=          YES

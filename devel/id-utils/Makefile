@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/11/03 09:59:35 seb Exp $
+# $NetBSD: Makefile,v 1.20 2001/11/22 17:50:22 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1996/11/18 10:22:47 asami Exp
 #
 
@@ -15,7 +15,6 @@ USE_BUILDLINK_ONLY=	yes
 
 INFO_FILES=	id-utils.info
 GNU_CONFIGURE=	yes
-AUTOMAKE_OVERRIDE=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/12/02 18:52:52 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/12/03 16:16:31 jlam Exp $
 
 DISTNAME=	quanta-2.0-pr2
 PKGNAME=	quanta-1.9.9.2
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=	perl>=${PERL5_REQD}:../../lang/perl5
 
 BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK_ONLY=	YES
-AUTOMAKE_OVERRIDE=	YES
 
 USE_GMAKE=              YES
 GNU_CONFIGURE=          YES

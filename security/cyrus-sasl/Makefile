@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/11/29 01:12:46 hubertf Exp $
+# $NetBSD: Makefile,v 1.23 2001/12/02 06:56:43 jlam Exp $
 
 DISTNAME=		cyrus-sasl-1.5.24
 PKGREVISION=		3
@@ -13,7 +13,6 @@ COMMENT=		Simple Authentication and Security Layer
 
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
 
-AUTOMAKE_OVERRIDE=	YES
 USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
