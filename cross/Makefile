@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/01/24 12:14:07 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2001/02/16 15:51:48 wiz Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -17,6 +17,7 @@ SUBDIR+=	i386-netbsdelf
 SUBDIR+=	i386-netbsdpe
 SUBDIR+=	m68k-netbsd
 SUBDIR+=	m68k-netbsdelf
+SUBDIR+=	mipsEEel-netbsd
 SUBDIR+=	mipseb-netbsd
 SUBDIR+=	mipsel-netbsd
 SUBDIR+=	powerpc-netbsd
