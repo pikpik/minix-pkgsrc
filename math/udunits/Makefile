@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:22:45 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/04/14 21:43:57 jtb Exp $
 
 DISTNAME=		udunits
 PKGNAME=		udunits-1.11.7
@@ -14,7 +14,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME}/src
 DIST_SUBDIR=		${PKGNAME}
 GNU_CONFIGURE=		yes
 CPPFLAGS+=		-Df2cFortran -Dunix
-CONFIGURE_ENV+=		"CPPFLAGS=${CPPFLAGS}"
+CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 USE_PERL5=		yes
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/UDUNITS/.packlist
 

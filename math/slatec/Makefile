@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 18:22:43 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/04/14 21:43:56 jtb Exp $
 
 DISTNAME=	slatec_src
 PKGNAME=	slatec-4.1
@@ -17,7 +17,6 @@ WRKSRC=		${WRKDIR}/src
 USE_FORTRAN=	YES
 
 post-extract:
-	${CP} ${FILESDIR}/d1mach.f ${FILESDIR}/i1mach.f ${FILESDIR}/r1mach.f \
-	${FILESDIR}/Makefile ${WRKSRC}
+	cd ${FILESDIR} && ${CP} d1mach.f i1mach.f r1mach.f Makefile ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
