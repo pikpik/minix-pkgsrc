@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/autoexpect
 bin/autopasswd
 bin/cryptdir
