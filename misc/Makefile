@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2001/09/02 20:15:15 wiz Exp $
+# $NetBSD: Makefile,v 1.104 2001/09/19 10:39:44 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -7,6 +7,7 @@ SUBDIR+=	9menu
 SUBDIR+=	ascii
 SUBDIR+=	asr-manpages
 SUBDIR+=	astrolog
+SUBDIR+=	bidwatcher
 SUBDIR+=	bottlerocket
 SUBDIR+=	buffer
 SUBDIR+=	chipmunk
