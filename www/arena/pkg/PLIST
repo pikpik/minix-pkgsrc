@@ -1,1 +1,5 @@
+@comment $NetBSD$
 bin/arena
+man/man1/arena.1
+share/Arena/arenarc
+@dirrm share/Arena
