@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/11/29 14:31:45 uebayasi Exp $
+# $NetBSD: Makefile,v 1.60 2004/11/30 02:42:11 uebayasi Exp $
 
 DISTNAME=	mew-4.1
 CATEGORIES=	mail
@@ -24,7 +24,7 @@ MAKE_FLAGS+=	elispdir=${EMACS_LISPPREFIX}/mew
 MAKE_FLAGS+=	etcdir=${PREFIX}/share/mew
 
 SUBST_CLASSES=		local
-SUBST_STAGE.local=	post-patch
+SUBST_STAGE.local=	post-configure
 SUBST_FILES.local=	Makefile bin/configure info/Makefile
 SUBST_SED.local=	-e 's|/usr/local|${PREFIX}|g'
 
