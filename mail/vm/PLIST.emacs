@@ -1,13 +1,8 @@
-@comment $NetBSD: PLIST.emacs,v 1.5 2002/12/09 16:01:32 tron Exp $
+@comment $NetBSD: PLIST.emacs,v 1.6 2003/07/31 16:12:09 seb Exp $
 bin/base64-decode
 bin/base64-encode
 bin/qp-decode
 bin/qp-encode
-info/vm.info
-info/vm.info-1
-info/vm.info-2
-info/vm.info-3
-info/vm.info-4
 share/emacs/site-lisp/vm/pixmaps/audio_stamp-colorful.xpm
 share/emacs/site-lisp/vm/pixmaps/audio_stamp-simple.xpm
 share/emacs/site-lisp/vm/pixmaps/autofile-dn.xbm
