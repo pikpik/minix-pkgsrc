@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2004/01/14 15:03:53 wiz Exp $
+# $NetBSD: Makefile,v 1.84 2004/01/18 14:23:02 tron Exp $
 #
 
 COMMENT=	Communication programs
@@ -45,7 +45,6 @@ SUBDIR+=	irssi
 SUBDIR+=	irssi-icb
 SUBDIR+=	jabberd
 SUBDIR+=	kmess
-SUBDIR+=	kopete
 SUBDIR+=	kyim
 SUBDIR+=	libicq2000
 SUBDIR+=	libirc
