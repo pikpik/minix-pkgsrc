@@ -8,8 +8,8 @@ $NetBSD: patch-aa,v 1.2 1998/08/07 11:09:29 agc Exp $
 -LIB_DIRS = -L/usr/X11R5/lib
 -BINDIR   = /usr/local/bin
 -MANDIR   = /usr/local/man/man1
-+INCLUDES = -I$(PREFIX)/include
-+LIB_DIRS = -L$(PREFIX)/lib -Wl,-R$(PREFIX)/lib
++INCLUDES = -I$(X11BASE)/include
++LIB_DIRS = -L$(X11BASE)/lib -Wl,-R$(X11BASE)/lib
 +BINDIR   = $(PREFIX)/bin
 +MANDIR   = $(PREFIX)/man/man1
  
