@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+echo \
+"===========================================
+When deinstallation is complete, please run
+
+	${PKG_PREFIX}/bin/texconfig rehash
+
+as root to rebuild the teTeX ls-R database.
+==========================================="
