@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 13:46:31 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/04/14 21:43:38 jtb Exp $
 
 DISTNAME=	xcircuit-2.2.0
 CATEGORIES=	cad graphics
@@ -14,6 +14,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_IMAKE=	yes
 USE_X11BASE=	yes
 USE_XPM=	yes
+
+GS_PREFIX_DEFAULT=	${LOCALBASE}
 EVAL_PREFIX+=	GS_PREFIX=ghostscript
 
 post-extract:
@@ -23,9 +25,6 @@ post-extract:
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/xcircuit/
-	@for f in ${WRKSRC}/examples/*; do \
-		c="${INSTALL_DATA} $$f ${PREFIX}/share/examples/xcircuit/"; \
-		${ECHO} $$c; $$c; \
-	done
+	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/xcircuit/
 
 .include "../../mk/bsd.pkg.mk"
