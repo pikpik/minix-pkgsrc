@@ -1,0 +1,6 @@
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:57:06 zuntum Exp $
+share/aspell/gaeilge.dat
+share/aspell/gaeilge_phonet.dat
+lib/aspell/gaeilge
+@unexec ${RMDIR} %D/share/aspell 2>/dev/null || ${TRUE}
+@unexec ${RMDIR} %D/lib/aspell 2>/dev/null || ${TRUE}
