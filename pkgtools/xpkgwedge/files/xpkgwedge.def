@@ -1,4 +1,4 @@
-/*	$NetBSD: xpkgwedge.def,v 1.10 2004/01/03 23:34:21 jlam Exp $	*/
+/*	$NetBSD: xpkgwedge.def,v 1.11 2004/04/30 19:44:21 tv Exp $	*/
 
 #ifdef BeforeVendorCF
 
@@ -89,6 +89,7 @@ X11_ROOT = ProjectRoot
  * X11 root, and one for the user-set prefix.
  */
 #define X11ProjectRoot $(X11_ROOT)
+#define ExtraLoadFlags @X11TYPEFLAGS@
 
 /* 
  * InstallAppDefaultsLong - general rule to install application default file
