@@ -1,13 +1,14 @@
 $NetBSD$
 
---- netbsd-1.4/sha_locl.h.orig	Wed Dec  8 14:56:15 1999
-+++ netbsd-1.4/sha_locl.h	Wed Dec  8 14:56:26 1999
-@@ -56,8 +56,6 @@
+--- netbsd-1.4/sha_locl.h.orig	Sat Sep  2 21:30:08 2000
++++ netbsd-1.4/sha_locl.h
+@@ -56,9 +56,6 @@
   * [including the GNU Public Licence.]
   */
  
 -#include <stdlib.h>
 -#include <string.h>
- 
+-
  #include <openssl/opensslconf.h>
+ #include <openssl/sha.h>
  
