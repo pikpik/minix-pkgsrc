@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/12 13:07:14 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/12/14 12:49:59 skrll Exp $
 #
 
     SUBDIR += 9wm
@@ -7,6 +7,7 @@
     SUBDIR += blackbox
     SUBDIR += ctwm
     SUBDIR += enlightenment
+    SUBDIR += ethemes
     SUBDIR += flwm
     SUBDIR += fvwm1
     SUBDIR += fvwm2
@@ -22,6 +23,8 @@
     SUBDIR += uwm
     SUBDIR += windowmaker
     SUBDIR += wm2
+    SUBDIR += wmakerconf
+    SUBDIR += wmthemes
     SUBDIR += wmx
 
 .include "../mk/bsd.pkg.subdir.mk"

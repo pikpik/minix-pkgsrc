@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.194 2000/12/14 21:26:24 itojun Exp $
+# $NetBSD: Makefile,v 1.195 2000/12/14 22:21:16 itojun Exp $
 #
 
     SUBDIR += 9term
@@ -21,7 +21,6 @@
     SUBDIR += egtk
     SUBDIR += emiclock
     SUBDIR += eterm
-    SUBDIR += ethemes
     SUBDIR += filerunner
     SUBDIR += fltk
     SUBDIR += fvwm-wharf
@@ -82,7 +81,6 @@
     SUBDIR += tkman
     SUBDIR += type1inst
     SUBDIR += unclutter
-    SUBDIR += wmakerconf
     SUBDIR += wmavgload
     SUBDIR += wmcalclock
     SUBDIR += wmessage
@@ -90,7 +88,6 @@
     SUBDIR += wmfire
     SUBDIR += wmfstatus
     SUBDIR += wmmoonclock
-    SUBDIR += wmthemes
     SUBDIR += wmtime
     SUBDIR += wmweather
     SUBDIR += wterm
