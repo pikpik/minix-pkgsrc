@@ -1,9 +1,17 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/01/25 15:53:56 tv Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/10/25 17:32:32 wiz Exp $
 bin/naim
+bin/nirc
+bin/sendim.sh
 lib/naim/libnsocket.a
 lib/naim/libnsocket.la
 lib/naim/libnsocket.so
 lib/naim/libnsocket.so.0
 lib/naim/libnsocket.so.0.0
 man/man1/naim.1
+man/man1/nirc.1
+share/doc/naim/COLORS
+share/doc/naim/FAQ
+share/doc/naim/commands.txt
+share/doc/naim/keyboard.txt
+@dirrm share/doc/naim
 @dirrm lib/naim
