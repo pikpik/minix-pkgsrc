@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/22 08:24:30 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/02/14 17:21:39 jlam Exp $
 #
 
 DISTNAME=	rvm-1.8
@@ -10,7 +10,7 @@ MAINTAINER=	phil@cs.wwu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 COMMENT=	Recoverable Virtual Memory
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 
@@ -23,5 +23,5 @@ pre-build:
 		${LN} -sf $${file} `${BASENAME} $${file} .c`_lwp.c;	\
 	done
 
-.include "../../devel/lwp/buildlink2.mk"
+.include "../../devel/lwp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
