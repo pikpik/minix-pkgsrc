@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/05/17 15:03:00 abs Exp $
+# $NetBSD: Makefile,v 1.6 2001/05/19 03:56:37 jlam Exp $
 #
 
 # MASTER_SITES is very special, and must end in "=":
@@ -58,5 +58,13 @@ do-install:
 
 .include "../../mk/bsd.pkg.mk"
 
-# This needs to be after bsd.pkg.mk 
+# These need to be after bsd.pkg.mk 
+
+.if ${OPSYS} == "Linux"
+# No patches on linux
+PATCHDIR=	${WRKDIR}/.patches
+pre-patch:
+	${MKDIR} ${PATCHDIR}
+.endif
+
 PREFIX:=	${JDK_HOME}

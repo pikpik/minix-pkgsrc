@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/05/17 15:20:50 abs Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/19 03:56:37 jlam Exp $
 #
 
 # MASTER_SITES is very special, and must end in "=":
@@ -55,8 +55,15 @@ do-install:
 
 # These need to be after bsd.pkg.mk 
 
-.if ${OPSYS} != "Linux"
+.if ${OPSYS} == "Linux"
+# No patches on linux
+PATCHDIR=	${WRKDIR}/.patches
+pre-patch:
+	${MKDIR} ${PATCHDIR}
+
+.else
 DEPENDS=	suse_x11-*:../../emulators/suse_x11
+
 .endif
 
 PREFIX:=	${JDK_HOME}
