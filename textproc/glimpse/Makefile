@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/08/20 15:17:28 tsarna Exp $
+# $NetBSD: Makefile,v 1.7 1998/12/03 12:39:42 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/07/17 19:29:07 andreas Exp
 #
 
@@ -15,7 +15,7 @@ NO_CDROM=	"Restrictive copyright (don't sell for profit)"
 GNU_CONFIGURE=	yes
 
 pre-configure:
-	chmod ugo+x ${WRKSRC}/configure
+	${CHMOD} ugo+x ${WRKSRC}/configure
 
 post-configure:
 	${CP} -f ${FILESDIR}/autoconf.h \
