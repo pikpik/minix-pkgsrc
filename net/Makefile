@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.517 2004/11/19 16:44:07 wiz Exp $
+# $NetBSD: Makefile,v 1.518 2004/11/19 16:53:57 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -260,6 +260,7 @@ SUBDIR+=	pchar
 SUBDIR+=	pconsole
 SUBDIR+=	pear-Net_DIME
 SUBDIR+=	pear-Net_Socket
+SUBDIR+=	pear-Net_SMTP
 SUBDIR+=	pear-Net_URL
 SUBDIR+=	pear-SOAP
 SUBDIR+=	pen
