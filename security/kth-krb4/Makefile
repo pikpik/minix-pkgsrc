@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2002/09/24 00:17:51 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2002/10/02 18:59:50 wiz Exp $
 #
 
-DISTNAME=		krb4-1.1.1
-PKGNAME=		kth-krb4-1.1.1 
+DISTNAME=		krb4-1.2.1
+PKGNAME=		kth-krb4-1.2.1 
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/krb/src/
 
@@ -64,4 +64,5 @@ post-install:
 # Enable line below once it's needed
 #.include "../../mk/automake.mk"
 .include "../../mk/texinfo.mk"
+.include "../../security/openssl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
