@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/vbetest
+lib/liblrmi.a
+lib/liblrmi.so
