@@ -1,8 +1,7 @@
 ======================================================================
-$NetBSD: MESSAGE,v 1.4 2001/01/29 11:34:29 wiz Exp $
+$NetBSD: MESSAGE,v 1.1 2001/11/01 00:23:16 zuntum Exp $
 
-To use ${PKGNAME} invoke "${MAKE}" like this:
-
-${MAKE} MAKECONF=${PREFIX}/etc/${PKGNAME}.mk [...]
+To use ${PKGNAME} include "${PREFIX}/etc/${PKGNAME}.mk" in your
+BSD style makefile.
 
 ======================================================================
