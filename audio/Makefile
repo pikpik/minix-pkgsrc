@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2001/05/19 13:14:05 drochner Exp $
+# $NetBSD: Makefile,v 1.97 2001/05/23 20:18:13 rh Exp $
 #
 
 COMMENT=	Audio tools
@@ -95,6 +95,7 @@ SUBDIR+=	py-cddb
 SUBDIR+=	realplayer
 SUBDIR+=	rio
 SUBDIR+=	rio500
+SUBDIR+=	rosegarden
 SUBDIR+=	rplay
 SUBDIR+=	shorten
 SUBDIR+=	sidplay
