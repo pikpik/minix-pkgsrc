@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2000/11/27 10:30:45 itojun Exp $
+# $NetBSD: Makefile,v 1.42 2000/12/31 12:19:45 rh Exp $
 #
 
 DISTNAME=		ORBit-0.5.6
@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.gnome.org/
 
 DEPENDS+=		glib>=1.2.7:../../devel/glib
 DEPENDS+=		gindent-*:../../devel/gindent
+BUILD_DEPENDS+=		autoconf:../../devel/autoconf
 BUILD_DEPENDS+=		msgfmt:../../devel/gettext
 
 USE_LIBINTL=		YES
@@ -24,5 +25,8 @@ CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 CPPFLAGS+=		-I${LOCALBASE}/include		# libintl.h
 
 INFO_FILES=		libIDL.info
+
+pre-configure:
+	cd ${WRKSRC}/popt && autoconf
 
 .include "../../mk/bsd.pkg.mk"
