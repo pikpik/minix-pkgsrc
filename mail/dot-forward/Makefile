@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/16 07:19:06 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2002/01/21 19:02:33 zuntum Exp $
 #
 
 DISTNAME=		dot-forward-0.71
@@ -26,7 +26,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 
 post-patch:
 	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${STRIPFLAG} > ${WRKSRC}/conf-ld
+	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 	${ECHO} ${QMAILDIR} > ${WRKSRC}/conf-qmail
 
 .include "../../mk/bsd.pkg.mk"
