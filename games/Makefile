@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 1999/10/01 16:08:17 drochner Exp $
+# $NetBSD: Makefile,v 1.59 1999/10/14 23:33:53 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -58,6 +58,7 @@
     SUBDIR += pacman
 #    SUBDIR += qcc
 #    SUBDIR += quakeserver
+    SUBDIR += rollemup
 #    SUBDIR += sokoban
     SUBDIR += spellcast
 #    SUBDIR += spider
