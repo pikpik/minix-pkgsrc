@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2002/09/15 06:24:21 uebayasi Exp $
+# $NetBSD: Makefile,v 1.49 2003/01/11 15:26:07 uebayasi Exp $
 
 DISTNAME=	mew-2.3
 CATEGORIES=	mail
@@ -24,7 +24,6 @@ post-patch:
 	while read f; do \
 		${MV} $$f $${f}.orig; \
 		${SED} -e 's|/usr/local|${PREFIX}|g' $${f}.orig >$$f; \
-		${RM} -f $$f; \
 	done
 
 post-install:
