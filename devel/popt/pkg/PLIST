@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libpopt.a
+include/popt.h
+share/locale/ro/LC_MESSAGES/rpm.mo
