@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/06 20:57:20 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/09/22 16:13:33 tsarna Exp $
 #
 
 DISTNAME=	pyth151
@@ -13,6 +13,8 @@ HOMEPAGE=	http://www.python.org/doc/lib/module-gdbm.html
 
 DEPENDS+=	python-1.5.1:../../lang/python	\
 		gdbm-1.7.3:../../databases/gdbm
+
+NOT_FOR_ARCHS=	alpha # possibly broken
 
 WRKSRC=		${WRKDIR}/Python-1.5.1/Modules
 ALL_TARGET=	default

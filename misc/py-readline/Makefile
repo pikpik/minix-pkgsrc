@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/06 22:01:08 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/09/22 16:13:34 tsarna Exp $
 #
 
 DISTNAME=	pyth151
@@ -13,6 +13,8 @@ HOMEPAGE=	http://www.python.org/doc/tut/interacting.html
 
 DEPENDS+=	python-1.5.1:../../lang/python
 DEPENDS+=	readline-2.2:../../devel/readline
+
+NOT_FOR_ARCHS=  alpha # possibly broken
 
 WRKSRC=		${WRKDIR}/Python-1.5.1/Modules
 ALL_TARGET=	default
