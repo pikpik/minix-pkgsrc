@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 1999/02/10 04:25:30 nathanw Exp $
+# $NetBSD: Makefile,v 1.82 1999/03/14 17:15:59 rh Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -24,6 +24,7 @@
     SUBDIR += emiclock
 #    SUBDIR += emu
     SUBDIR += enlightenment
+    SUBDIR += eterm
 #    SUBDIR += etlfonts
 #    SUBDIR += explorer
 #    SUBDIR += fbsd-icons
