@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2000/03/18 18:32:16 jlam Exp $
+# $NetBSD: Makefile,v 1.1 2000/03/20 02:25:30 itojun Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -13,7 +13,7 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.cs.hut.fi/ssh/
 
-CONFLICTS=		openssh-[0-9]* ssh-*
+CONFLICTS=		openssh-[0-9]* ssh-[0-9]*
 
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 RESTRICTED=		"Crypto; export-controlled"
