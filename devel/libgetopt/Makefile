@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2000/08/21 21:01:30 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2000/10/18 11:16:57 wiz Exp $
 #
 
-VERS=		1.2
+VERS=		1.3
 DISTNAME=	libgetopt-${VERS}
 CATEGORIES=	pkgtools sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL}
