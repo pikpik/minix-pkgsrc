@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/11/20 20:39:46 tron Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:54:47 zuntum Exp $
 bin/${BINNAME}
-lib/${BINNAME}/${BINNAME}.jar
+lib/${BINNAME}/${JARNAME}
 share/doc/${BINNAME}/AUTHORS
 share/doc/${BINNAME}/COPYING
 share/doc/${BINNAME}/README
