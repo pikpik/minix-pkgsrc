@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/07/10 17:20:30 kristerw Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:14:47 tv Exp $
 #
 
 DISTNAME=		mapserver-4.0
@@ -7,7 +7,7 @@ CATEGORIES=		geography www
 MASTER_SITES=		http://cvs.gis.umn.edu/dist/
 
 MAINTAINER=		hdp@cs.msu.edu
-HOMEPAGE=		http://mapserver.gis.umn.edu/dist/
+HOMEPAGE=		http://mapserver.gis.umn.edu/
 COMMENT=		Environment for building spatially enabled Internet apps
 
 USE_BUILDLINK3=		yes
