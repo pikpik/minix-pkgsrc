@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/14 23:56:38 hubertf Exp $
 #
 
 DISTNAME=	FunTimeDancer-0.1
@@ -16,6 +16,7 @@ USE_BUILDLINK2=	yes
 
 post-install:
 		cd ${WRKSRC}/../FunTimeDancer ; \
+		${MKDIR} ${PREFIX}/lib/xmms/Visualization/FunTimeDancer ; \
 		${PAX} -rw -pe . ${PREFIX}/lib/xmms/Visualization/FunTimeDancer
 
 .include "../../audio/xmms/buildlink2.mk"
