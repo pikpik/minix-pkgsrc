@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gxvattr
+bin/xvattr
+man/man1/xvattr.1
