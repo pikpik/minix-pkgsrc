@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:    libXg
 # Version required:     ????? arbitrarily picked 1.0 for version
 # Date created:         Sun Aug 13 12:36:14 CDT 1995

@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:    sam
 # Version required:     4.3
 # Date created:         Sun Aug 13 12:36:14 CDT 1995

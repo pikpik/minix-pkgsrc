@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:    9term
 # Version required:     1.6.3
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
