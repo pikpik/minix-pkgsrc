@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/04/24 22:46:13 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2004/10/03 00:18:27 tv Exp $
 
 DISTNAME=		sitecopy-0.13.4
 PKGREVISION=		5
@@ -16,7 +16,7 @@ USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	# defined
 
 GNU_CONFIGURE=		# defined
-CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-ssl
 CONFIGURE_ARGS+=	--with-included-neon
 CONFIGURE_ARGS+=	--with-libxml2
 
