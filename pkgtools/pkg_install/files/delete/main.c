@@ -184,11 +184,9 @@ main(int argc, char **argv)
 		warnx("missing package name(s)");
 		usage();
 	}
-#ifndef __INTERIX
 	if (!Fake && getuid() != 0) {
 		warnx("not running as root - trying to delete anyways");
 	}
-#endif
 	if (OnlyDeleteFromPkgDB) {
 		/* Only delete the given packages' files from pkgdb, do not
 		 * touch the pkg itself. Used by "make reinstall" in

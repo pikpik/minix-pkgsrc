@@ -720,13 +720,9 @@ ignore_replace_depends_check:
 	if (!NoRecord && !Fake) {
 		char    contents[FILENAME_MAX];
 
-#ifdef __INTERIX
-		umask(002);
-#else
 		umask(022);
 		if (getuid() != 0)
 			warnx("not running as root - trying to record install anyway");
-#endif
 		if (!PkgName) {
 			warnx("no package name! can't record package, sorry");
 			errc = 1;
