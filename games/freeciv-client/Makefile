@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/03/28 00:35:25 jlam Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
 
 DEPENDS+=		freeciv-share-1.10.0:../../games/freeciv-share
-DEPENDS+=		xpm-*:../../x11/xpm
+DEPENDS+=		xpm-*:../../graphics/xpm
 
 CONFLICTS=		freeciv-client-gtk-*
 
