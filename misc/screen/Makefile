@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/05/21 17:57:03 tron Exp $
+# $NetBSD: Makefile,v 1.32 2002/05/31 08:40:24 uebayasi Exp $
 
 DISTNAME=	screen-3.9.11
 CATEGORIES=	misc
@@ -15,7 +15,8 @@ PLIST_SUBST=		DISTNAME=${DISTNAME}
 USE_BUILDLINK_ONLY=	yes
 TEXINFO_OVERRIDE=	YES
 
-CONFIGURE_ARGS+=--with-sys-screenrc=${PKG_SYSCONFDIR}/screenrc
+CONFIGURE_ARGS+=--with-sys-screenrc=${PKG_SYSCONFDIR}/screenrc \
+		--enable-telnet
 
 .include "../../mk/bsd.prefs.mk"
 .if (${OPSYS} == SunOS)
