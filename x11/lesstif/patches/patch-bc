@@ -1,7 +1,7 @@
 $NetBSD$
 
---- lib/Makefile.am.orig	Tue Jan 16 13:18:52 2001
-+++ lib/Makefile.am	Wed Mar 28 14:31:30 2001
+--- lib/Makefile.am.orig	Tue Jan 16 07:18:52 2001
++++ lib/Makefile.am
 @@ -4,14 +4,20 @@
  
  MAINTAINERCLEANFILES=Makefile.in

@@ -19,10 +19,11 @@ $NetBSD$
  xm_HEADERS = $(xm_both_h)
  #
  # Note Xm.h is built by configure, therefore it's not necessarily in
-@@ -91,17 +90,4 @@
+@@ -90,18 +89,4 @@
+ # tree which may be elsewhere.
  #
  xm_DATA = Xm.h
- 
+-
 -else
 -#
 -# Not Version_1_2
