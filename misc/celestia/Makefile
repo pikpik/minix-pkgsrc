@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/05/08 23:47:03 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/09 00:23:56 salo Exp $
 #
 
 .include "../../misc/celestia/Makefile.common"
@@ -6,7 +6,6 @@
 COMMENT=	Free real-time 3D space simulator
 
 USE_PKGINSTALL=	YES
-USE_GMAKE=	YES
 
 CONFIGURE_ARGS+=	--without-gtk
 CONFIGURE_ARGS+=	--without-kde
