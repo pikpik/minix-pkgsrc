@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/04/10 17:58:07 salo Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/17 21:39:39 grant Exp $
 #
 
 DISTNAME=	xmahjongg-3.6.1
@@ -12,5 +12,6 @@ COMMENT=	The Chinese game of Mah Jongg for X11
 USE_BUILDLINK2=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
+USE_GCC_SHLIB=	YES
 
 .include "../../mk/bsd.pkg.mk"
