@@ -1,17 +1,17 @@
 $NetBSD$
 
---- nidentd.sh.orig	Tue Mar 26 13:20:06 2002
+--- nidentd.sh.orig	Thu Mar 28 13:54:38 2002
 +++ nidentd.sh
-@@ -21,7 +21,7 @@
+@@ -25,7 +25,7 @@
  #
  # Path to LSOF !
  
--lsof="/usr/pkg/sbin/lsof"
-+lsof="@LOCALBASE@/sbin/lsof -Di"
+-lsof="/usr/pkg/sbin/lsof -P -n -i -Di"
++lsof="@LOCALBASE@/sbin/lsof -P -n -i -Di"
  
  # Protocol independent
  
-@@ -38,7 +38,7 @@
+@@ -42,7 +42,7 @@
  masqip=`/usr/sbin/ipnat -l | grep MAP | egrep " $qlport " | egrep " $qrport" | awk '{ print $2 }' | tr -c -d '.1234567890'`
  lport=`/usr/sbin/ipnat -l | grep MAP | egrep " $qlport " | egrep " $qrport" | awk '{ print $7 }'`
  rport=`/usr/sbin/ipnat -l | grep MAP | egrep " $qlport " | egrep " $qrport" | awk '{ print $9 }' | tr -d ] `
