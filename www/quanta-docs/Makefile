@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/04/02 20:06:16 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/13 21:35:26 jlam Exp $
 
 DISTNAME=	quanta-docs-1.0
 CATEGORIES=	www
@@ -15,7 +15,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://quanta.sourceforge.net/
 COMMENT= 	documentation collection for Quanta, the KDE web editor
 
-DEPENDS+=	quanta>=1.9.9.2:../../www/quanta-docs
+DEPENDS+=	quanta>=1.9.9.2:../../www/quanta
 
 BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK_ONLY=	YES
