@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.103 2003/09/17 19:51:09 grant Exp $
+# $NetBSD: Makefile,v 1.104 2003/09/17 19:51:35 grant Exp $
 
 .include "Makefile.common"
 
 PKGNAME=		ImageMagick-${DISTVERSION}
-
+PKGREVISION=		1
 CATEGORIES=		graphics
 
 MAINTAINER=		tron@NetBSD.org
@@ -19,6 +19,8 @@ USE_X11=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	Magick++/lib/ImageMagick++.pc.in
+PKGCONFIG_OVERRIDE+=	magick/ImageMagick.pc.in
 
 GCC_REQD=		2.95.3
 
