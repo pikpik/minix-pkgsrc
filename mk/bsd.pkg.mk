@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1260 2003/09/05 11:34:26 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1261 2003/09/05 15:00:10 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1020,7 +1020,7 @@ MASTER_SITE_SUSE+=	\
 
 MASTER_SITE_MOZILLA+=	\
 	ftp://ftp.mozilla.org/pub/mozilla/releases/ \
-	ftp://ftp.fu-berlin.de/pub/unix/network/www/mozilla/releases/ \
+	ftp://ftp.fu-berlin.de/unix/network/www/mozilla/releases/ \
 	ftp://sunsite.utk.edu/pub/netscape-source/ \
 	ftp://ftp.informatik.uni-bonn.de/pub/www/mozilla/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.mozilla.org/pub/ \
