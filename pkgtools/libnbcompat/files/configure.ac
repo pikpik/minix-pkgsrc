@@ -1,4 +1,4 @@
-dnl $NetBSD: configure.ac,v 1.33 2003/12/10 07:21:20 grant Exp $
+dnl $NetBSD: configure.ac,v 1.34 2003/12/19 22:45:14 grant Exp $
 
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
@@ -216,7 +216,7 @@ if test $pkg_use_nbcompat_statfs = yes; then
 	AC_LIBOBJ(statfs)
 fi
 
-if test $ac_cv_type_long_long = yes -a $ac_cv_sizeof_off_t -ge 8; then
+if test $ac_cv_type_long_long = yes; then
 
 dnl		We assume that if sprintf() supports %lld or %qd,
 dnl		then all of *printf() does. If not, disable long long
