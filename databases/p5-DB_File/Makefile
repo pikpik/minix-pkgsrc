@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/14 18:38:54 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/08/27 06:29:07 jlam Exp $
 
 DISTNAME=	DB_File-1.806
 PKGNAME=	p5-${DISTNAME}
@@ -24,10 +24,6 @@ PERL5_LDFLAGS+=		-L${BUILDLINK_PREFIX.db}/lib
 MAKE_ENV+=		DB_CPPFLAGS=${BUILDLINK_CPPFLAGS.db}
 .if ${BDB_TYPE} == "db2"
 MAKE_ENV+=		DB_FILE_COMPAT185=1
-.else
-# We assume that DB 1 is provided by the system and perl5 package picked
-# it up.
-PKG_SKIP_REASON+=	"The perl package already provides DB_File"
 .endif
 
 .include "../../lang/perl5/module.mk"
