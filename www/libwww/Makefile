@@ -14,7 +14,6 @@ HOMEPAGE=		http://www.w3.org/Library/
 USE_GMAKE=		yes
 USE_LIBTOOL=		yes
 USE_SSL=		yes
-USE_PERL5=		yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--with-zlib --with-regex --without-x
