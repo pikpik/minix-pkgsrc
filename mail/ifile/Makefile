@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/25 15:25:12 salo Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/24 13:55:30 grant Exp $
 #
 
 DISTNAME=	ifile-1.3.2
@@ -9,6 +9,7 @@ MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/ifile/
 COMMENT=	Intelligent mail filtering system
 
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 
