@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mknmz-wwwoffle
+man/man1/mknmz-wwwoffle.1
+share/namazu/filter/wwwofflecache.pl
