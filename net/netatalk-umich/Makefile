@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2001/11/29 01:12:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.1 2002/05/25 12:25:51 markd Exp $
 #
+# XXX do not use -- see ../netatalk instead
 
 DISTNAME=		netatalk-990130
 PKGNAME=		netatalk-umich-19990130
