@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/10/28 18:12:10 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1999/03/30 08:02:01 garbled Exp $
 #
 
     SUBDIR += ja-less
     SUBDIR += micq
+    SUBDIR += nkf
 
 .include "../mk/bsd.pkg.subdir.mk"
