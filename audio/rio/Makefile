@@ -20,5 +20,7 @@ do-install:
 	${BSD_INSTALL_PROGRAM} ${WRKSRC}/rio ${PREFIX}/bin
 	${MKDIR} -p ${PREFIX}/share/rio
 	${BSD_INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/rio
+	${SED} -e 's|@AWK@|${AWK}|g' ${FILESDIR}/find-lpt-port > ${PREFIX}/bin/find-lpt-port
+	${CHMOD} 755 ${PREFIX}/bin/find-lpt-port
 
 .include "../../mk/bsd.pkg.mk"
