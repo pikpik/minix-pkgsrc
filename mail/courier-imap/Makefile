@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/05/28 15:07:03 yyamano Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/18 21:15:10 jlam Exp $
 
 DISTNAME=	courier-imap-1.4.2
 PKGREVISION=	1
@@ -60,12 +60,6 @@ pre-configure:
 	done
 
 post-install:
-	@for file in ${RCD_SCRIPTS}; do					\
-		${SED} ${FILES_SUBST_SED} ${FILESDIR}/$${file}.sh	\
-			> ${WRKDIR}/$${file}.sh;			\
-		${INSTALL_SCRIPT} ${WRKDIR}/$${file}.sh			\
-			${PREFIX}/etc/rc.d/$${file};			\
-	done
 	${INSTALL_DATA_DIR} ${EGDIR} ${DOCDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/sysconftool ${SYSCONFTOOL}
 	${INSTALL_DATA} ${WRKSRC}/imap/BUGS				\
