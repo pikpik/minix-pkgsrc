@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/07/30 19:44:11 tron Exp $
+# $NetBSD: Makefile,v 1.24 2000/08/03 21:22:10 jlam Exp $
 
 DISTNAME=		enlightenment-0.16.4
 CATEGORIES=		x11 gnome
@@ -26,9 +26,9 @@ post-install:
 	for FILE in `${GREP} "\.directory$$" ${PKGDIR}/PLIST`; do \
 	  ${TOUCH} ${PREFIX}/$${FILE}; \
 	done
-	find ${PREFIX}/share/enlightenment/themes -type d | \
+	${FIND} ${PREFIX}/share/enlightenment/themes -type d | \
 	xargs ${CHMOD} ${BINMODE}
-	find ${PREFIX}/share/enlightenment/themes -type f | \
+	${FIND} ${PREFIX}/share/enlightenment/themes -type f | \
 	xargs ${CHMOD} ${NONBINMODE}
 
 .include "../../mk/bsd.pkg.mk"
