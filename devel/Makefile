@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.209 2001/05/17 01:19:17 jtb Exp $
+# $NetBSD: Makefile,v 1.210 2001/05/22 16:56:35 mjl Exp $
 #
 
 COMMENT=	Development utilities
@@ -112,6 +112,7 @@ SUBDIR+=	lwp
 SUBDIR+=	m4
 SUBDIR+=	maketool
 SUBDIR+=	mit-pthreads
+SUBDIR+=	mk-files
 SUBDIR+=	nana
 SUBDIR+=	nasm
 SUBDIR+=	ncurses
