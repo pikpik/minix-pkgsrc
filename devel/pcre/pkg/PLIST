@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pgrep
+include/pcre.h
+lib/libpcre.a
