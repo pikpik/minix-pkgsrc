@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.am.orig	Tue Oct 14 13:36:34 2003
+--- Makefile.am.orig	Wed Mar 10 10:51:35 2004
 +++ Makefile.am
 @@ -68,7 +68,7 @@ else 
  INSTALLOSX = 
@@ -8,6 +8,6 @@ $NetBSD$
  
 -SUBDIRS=include sasldb plugins lib utils doc man $(PWC) $(SAM) $(JAV) $(SAD)
 +SUBDIRS=include sasldb plugins lib utils doc man $(PWC) $(SAM) $(JAV)
- EXTRA_DIST=config cmulocal win32 mac dlcompat-20010505
+ EXTRA_DIST=config cmulocal win32 mac dlcompat-20010505 NTMakefile
  
  dist-hook:
