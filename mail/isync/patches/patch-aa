@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sat Dec  7 13:58:13 2002
++++ configure
+@@ -1386,7 +1386,7 @@ else
+ #line 1387 "configure"
+ #include "confdefs.h"
+ #define DB_DBM_HSEARCH 1
+-#include <db.h>
++#include <ndbm.h>
+ int main() {
+ dbm_open(0,0,0);
+ ; return 0; }
