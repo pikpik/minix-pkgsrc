@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: distccd.sh,v 1.1 2004/05/02 19:11:38 xtraeme Exp $
 #
 
 # PROVIDE: distccd
