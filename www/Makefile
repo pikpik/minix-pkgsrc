@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.277 2003/12/04 15:33:06 grant Exp $
+# $NetBSD: Makefile,v 1.278 2003/12/04 16:09:04 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -80,6 +80,7 @@ SUBDIR+=	glibwww
 SUBDIR+=	grail
 SUBDIR+=	gtkasp2php
 SUBDIR+=	gtkhtml
+SUBDIR+=	gtkhtml3
 SUBDIR+=	haskell-cgi
 SUBDIR+=	hiawatha
 SUBDIR+=	horde
