@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/06/28 13:19:56 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2001/10/19 14:24:51 wiz Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
+
+CONFLICTS+=	python20-*
 
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
