@@ -1,0 +1,4 @@
+@comment $NetBSD$
+
+bin/gattrib
+share/gEDA/system-gattribrc
