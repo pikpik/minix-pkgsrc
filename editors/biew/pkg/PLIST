@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/biew
-share/biew/biew.hlp
-share/biew/standard.skn
-share/biew/assembly.skn
-@dirrm share/biew
-share/doc/biew/biew_en.txt
-@dirrm share/doc/biew
