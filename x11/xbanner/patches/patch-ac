@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- xres.c.orig	Thu May 15 22:38:25 1997
 +++ xres.c	Wed Aug 19 00:18:07 1998
 @@ -1196,7 +1196,7 @@
