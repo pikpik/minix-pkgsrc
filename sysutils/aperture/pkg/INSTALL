@@ -10,7 +10,7 @@ POST-INSTALL)
 ===========================================================================
 Add the following line to /etc/lkm.conf:
 
-    ${PKG_PREFIX}/lkm/xf86.o    - -  ${PKG_PREFIX}/lkm/xf86_mod_install - -
+    ${PREFIX}/lkm/xf86.o    - -  ${PREFIX}/lkm/xf86_mod_install - AFTERMOUNT
 
 and set:
 
