@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	jpeg
 # Version required:     6a
 # Date created:		6 November 1994
