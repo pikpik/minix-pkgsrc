@@ -20,8 +20,6 @@ USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-USE_PTHREAD=		native pth
-
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OBJECT_FMT} == "ELF"
@@ -58,9 +56,9 @@ post-configure:
 	cd ${WRKSRC}/src/audio && ${CP} *.[ch] netbsd/
 
 .include "../../audio/esound/buildlink.mk"
+.include "../../devel/pth/buildlink.mk"
 .include "../../graphics/Mesa/buildlink.mk"
 .include "../../graphics/aalib-x11/buildlink.mk"
 .include "../../mk/ossaudio.buildlink.mk"
-.include "../../mk/pthread.buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

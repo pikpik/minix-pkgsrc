@@ -26,8 +26,6 @@ BUILDLINK_FILES.SDL=	include/SDL/*
 BUILDLINK_FILES.SDL+=	lib/libSDL.*
 BUILDLINK_FILES.SDL+=	lib/libSDLmain.*
 
-USE_PTHREAD=		native pth
-
 .include "../../mk/bsd.prefs.mk"
 
 REPLACE_BUILDLINK_SED+=	\
@@ -37,9 +35,9 @@ REPLACE_BUILDLINK_SED+=	\
 .include "../../audio/nas/buildlink.mk"
 .endif
 .include "../../audio/esound/buildlink.mk"
+.include "../../devel/pth/buildlink.mk"
 .include "../../graphics/Mesa/buildlink.mk"
 .include "../../graphics/aalib-x11/buildlink.mk"
-.include "../../mk/pthread.buildlink.mk"
 
 BUILDLINK_TARGETS.SDL=		SDL-buildlink
 BUILDLINK_TARGETS.SDL+=		SDL-buildlink-config-wrapper
