@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2002/05/25 06:39:10 tron Exp $
+# $NetBSD: Makefile,v 1.44 2002/05/25 08:04:51 tron Exp $
 
 DISTNAME=	ucd-snmp-4.2.4
 CATEGORIES=	net
@@ -89,7 +89,7 @@ post-install:
 CFLAGS+=	-Dnetbsd1
 .endif
 
-.include "../../security/openssl/buildlink.mk"	# USE_SSL=	yes
+.include "../../security/openssl/buildlink.mk"
 .include "../../security/tcp_wrappers/buildlink.mk"
 
 .include "../../mk/bsd.pkg.mk"
