@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.7 2003/05/30 16:19:53 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.8 2003/12/14 22:17:36 xtraeme Exp $
 lib/pkgconfig/gnome-mime-data-2.0.pc
-man/man5/gnome-vfs-mime.5
 share/application-registry/gnome-vfs.applications
 share/examples/gnome-mime-data/gnome-vfs-mime-magic
 ${PKGLOCALEDIR}/locale/am/LC_MESSAGES/gnome-mime-data.mo
