@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2003/11/19 02:57:44 jschauma Exp $
+# $NetBSD: Makefile,v 1.85 2004/01/05 22:39:11 jlam Exp $
 
 DISTNAME=		openssl-0.9.6l
 SVR4_PKGNAME=		ossl
@@ -52,6 +52,7 @@ CONFIGURE_ARGS+=	irix64-mips4-cc
 
 CONFIGURE_ARGS+=	${CFLAGS} ${LDFLAGS}
 CONFIGURE_ENV+=		PERL="${PERL5}"
+CONFIGURE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 PLIST_SRC=		${PKGDIR}/PLIST.${LOWER_OPSYS:C/([.0-9]*)$//}
 PLIST_SRC+=		${PLIST_RSAREF}
