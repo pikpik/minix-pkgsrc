@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/02/17 18:19:31 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2001/03/04 03:26:51 assar Exp $
 #
 # Tempted to install another radius package?
 #
@@ -19,6 +19,8 @@ DISTFILES=	${DISTNAME}.basic.tar.gz \
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.merit.edu/aaa/
 COMMENT=	Standard authentication protocol server
+
+BROKEN=		Package is vulnerable to remote buffer overflow.
 
 DIST_SUBDIR=	radius
 
