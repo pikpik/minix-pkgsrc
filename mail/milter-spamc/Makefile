@@ -2,7 +2,6 @@
 #
 
 DISTNAME=		milter-spamc-0.10
-PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://www.snert.com/Software/download/
 EXTRACT_SUFX=		.tgz

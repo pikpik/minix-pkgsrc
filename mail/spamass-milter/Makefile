@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	spamass-milter-0.1.3a
-PKGREVISION=	4
+PKGREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://savannah.nongnu.org/download/spamass-milt/
 

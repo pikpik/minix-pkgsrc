@@ -9,7 +9,6 @@ LIBMILTER_BUILDLINK2_MK=	# defined
 .include "../../mk/bsd.prefs.mk"
 
 BUILDLINK_DEPENDS.libmilter?=		libmilter>=8.12.9nb1
-BUILDLINK_DEPMETHOD.libmilter?=		build
 BUILDLINK_PKGSRCDIR.libmilter?=		../../mail/libmilter
 BUILDLINK_DEPMETHOD.libmilter?=		build
 

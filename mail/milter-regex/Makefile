@@ -2,7 +2,6 @@
 #
 
 DISTNAME=	milter-regex-1.2
-PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 

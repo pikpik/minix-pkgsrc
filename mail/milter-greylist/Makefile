@@ -2,7 +2,6 @@
 #
 
 DISTNAME=	milter-greylist-1.0.2
-PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.espci.fr/pub/milter-greylist/
 EXTRACT_SUFX=	.tgz

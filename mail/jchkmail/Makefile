@@ -2,7 +2,6 @@
 #
 
 DISTNAME=		jchkmail-1.3.1a
-PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://j-chkmail.ensmp.fr/download/
 
