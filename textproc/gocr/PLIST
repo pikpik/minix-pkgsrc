@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gocr
+include/gocr.h
+lib/libPgm2asc.a
+man/man1/gocr.1
