@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/Makefile.orig	Fri Jul  9 15:13:56 1999
-+++ src/Makefile	Tue Feb 29 12:05:03 2000
-@@ -121,7 +121,7 @@
+--- src/Makefile.orig	Mon Mar 19 20:18:57 2001
++++ src/Makefile
+@@ -132,7 +132,7 @@
  endif
  
  # The generic target
