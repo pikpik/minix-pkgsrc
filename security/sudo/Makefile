@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2001/11/19 17:27:23 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2001/11/25 18:59:47 jlam Exp $
 #
 
 DISTNAME=		sudo-1.6.3p7
@@ -48,7 +48,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/sudoers ${EGDIR}/sudoers
 	${INSTALL_DATA} ${WRKSRC}/sample.sudoers ${EGDIR}/sudoers.sample
-	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

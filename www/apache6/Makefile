@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2001/11/25 18:59:48 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2001/11/29 01:12:51 hubertf Exp $
 #
 # This package does not compile in mod_ssl support hooks, as it conflicts
 # with IPv6-enable patch.
@@ -156,7 +156,6 @@ post-install:
 	${INSTALL_DATA} ${DISTDIR}/sitedrivenby.gif ${PREFIX}/share/httpd/htdocs
 	${INSTALL_SCRIPT} ${WRKDIR}/apache.sh ${PREFIX}/etc/rc.d/apache
 	${CHOWN} -R ${DOCOWN}:${DOCGRP} ${PREFIX}/share/httpd
-	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../textproc/expat/buildlink.mk"
 .include "../../mk/bsd.pkg.install.mk"

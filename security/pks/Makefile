@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/11/21 15:44:23 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/25 18:59:47 jlam Exp $
 
 DISTNAME=		pks-0.9.4
 CATEGORIES=		security www
@@ -36,7 +36,6 @@ pre-install:
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/pksd.sh ${PREFIX}/etc/rc.d/pksd
-	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../databases/db/buildlink.mk"
 .include "../../mk/bsd.pkg.install.mk"

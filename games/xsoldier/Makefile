@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/09/14 03:48:06 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/19 23:33:03 jlam Exp $
 #
 
 DISTNAME=		xsoldier-0.96
@@ -20,9 +20,6 @@ SUPPORT_FILES_PERMS=	${PREFIX}/share/xsoldier/xsoldier.score.dist	\
 
 post-patch:
 	${TOUCH} ${WRKSRC}/xsoldier.man
-
-post-install:
-	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/bsd.pkg.install.mk"
