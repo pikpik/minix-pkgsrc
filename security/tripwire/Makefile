@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2003/10/02 07:13:27 martti Exp $
+# $NetBSD: Makefile,v 1.16 2003/12/03 21:18:09 ben Exp $
 #
 
 DISTNAME=	tripwire-1.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/ids/tripwire/
 
