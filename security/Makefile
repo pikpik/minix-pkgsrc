@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2002/06/09 19:24:17 jlam Exp $
+# $NetBSD: Makefile,v 1.108 2002/06/20 16:29:07 agc Exp $
 #
 
 COMMENT=	Security tools
@@ -101,6 +101,7 @@ SUBDIR+=	scanssh
 SUBDIR+=	seahorse
 SUBDIR+=	smimemsg
 SUBDIR+=	smtpd
+SUBDIR+=	snortsnarf
 SUBDIR+=	sniff
 SUBDIR+=	srp_client
 SUBDIR+=	ssh
