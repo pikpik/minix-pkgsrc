@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 1999/11/14 18:49:52 tron Exp $
+# $NetBSD: Makefile,v 1.27 1999/12/20 11:56:31 rh Exp $
 
 DISTNAME=		libgtop-1.0.5
 CATEGORIES=		devel gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=gnome-1.0.53/sources/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=stable/releases/gnome-1.0.53/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.home-of-linux.org/gnome/libgtop/

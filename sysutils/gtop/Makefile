@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/01 22:52:28 tron Exp $
 
 DISTNAME=		gtop-1.0.5
 CATEGORIES=		sysutils gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=gnome-1.0.53/sources/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=stable/releases/gnome-1.0.53/}
 
 MAINTAINER=		tron@netbsd.org
 
