@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2003/07/17 22:55:38 grant Exp $
+# $NetBSD: Makefile,v 1.38 2003/07/22 04:14:24 martti Exp $
 
 DISTNAME=	jakarta-tomcat-${TOMCAT_VERSION}-src
 PKGNAME=	${DISTNAME:S/-src$//}
@@ -25,9 +25,9 @@ PKG_SYSCONFDIR.jakarta-tomcat=	${SAMPLECONFDIR}
 
 USE_PKGINSTALL=	yes
 OWN_DIRS=	${PREFIX}/tomcat
-MAKE_DIRS=	${PREFIX}/tomcat/conf
-MAKE_DIRS=	${PREFIX}/tomcat/logs
-MAKE_DIRS=	${PREFIX}/tomcat/webapps
+OWN_DIRS+=	${PREFIX}/tomcat/conf
+OWN_DIRS+=	${PREFIX}/tomcat/logs
+OWN_DIRS+=	${PREFIX}/tomcat/webapps
 CFILES=		server.xml web.xml tomcat-users.xml jni_server.xml
 CFILES+=	tomcat.policy workers.properties
 
