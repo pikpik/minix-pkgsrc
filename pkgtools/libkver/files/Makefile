@@ -1,11 +1,12 @@
-#	$NetBSD: Makefile,v 1.1.1.1 2003/07/11 14:50:37 seb Exp $
+#	$NetBSD: Makefile,v 1.2 2003/07/20 15:37:47 seb Exp $
 
 SUBDIR=		lib
 
+.ifndef(LDD_SYSCTL)
 LDD_SYSCTL!=	ldd /sbin/sysctl 2>&1
+.endif
 .if empty(LDD_SYSCTL:M*libc*)
 SUBDIR+=	sysctl
 .endif
 
 .include <bsd.subdir.mk>
-.include "${.CURDIR}/Makefile.inc"
