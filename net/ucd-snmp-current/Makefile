@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/09/11 01:33:22 wrstuden Exp $
+# $NetBSD: Makefile,v 1.14 2001/09/24 15:06:20 tron Exp $
 
 DISTNAME=	ucd-snmp-4.2.1
 CATEGORIES=	net
@@ -51,7 +51,14 @@ post-extract:
 	@${LN} ${WRKSRC}/s/netbsd.h ${WRKSRC}/s/netbsdelf.h
 
 pre-configure:
-	cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf
+	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf)
+.if ${OPSYS} == SunOS
+# Adapt for the fact that the default I've seen of ac_max_sed_cmds=90
+#will not work w/ built-in sed on Solaris.
+	(cd ${WRKSRC} && ${SED} \
+		's/ac_max_sed_cmds=[0-9][0-9]*/ac_max_sed_cmds=10/' \
+		configure > tmp && cp tmp configure && rm tmp)
+.endif
 
 post-build:
 	${SED} 's,@PREFIX@,${PREFIX},g' < ${FILESDIR}/snmpd.sh > ${WRKDIR}/snmpd
