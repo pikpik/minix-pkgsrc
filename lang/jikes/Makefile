@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2000/10/16 20:38:20 tv Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/17 09:07:16 agc Exp $
 #
 
-DISTNAME=	jikes-1.12
+DISTNAME=	jikes-1.14
 CATEGORIES=	lang
-MASTER_SITES=	http://oss.software.ibm.com/developerworks/opensource/jikes/project/pub/
+MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www10.software.ibm.com/developerworks/opensource/jikes/
