@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/03/29 12:42:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/20 12:22:59 agc Exp $
 
 DISTNAME=		pvm3.4.4
 PKGNAME=		pvm-3.4.4
@@ -18,7 +18,7 @@ PVM_SSH?=		${LOCALBASE}/bin/ssh
 .endif
 
 WRKSRC=			${WRKDIR}/pvm3
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_FORTRAN=		yes
 USE_X11=		yes
 
