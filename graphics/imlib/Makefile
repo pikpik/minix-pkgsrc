@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/09/14 06:37:01 garbled Exp $
+# $NetBSD: Makefile,v 1.3 1998/10/04 19:20:44 tron Exp $
 #
 
 DISTNAME=	imlib-1.7
@@ -24,5 +24,8 @@ CONFIGURE_ARGS+=	--with-gtk-prefix=${X11BASE}
 CONFIGURE_ENV+=		CPPFLAGS='-I${LOCALBASE}/include -I${LOCALBASE}/include/giflib'
 
 WRKSRC=		${WRKDIR}/imlib
+
+post-extract:
+	${RM} ${WRKSRC}/config/imrc
 
 .include "../../mk/bsd.pkg.mk"
