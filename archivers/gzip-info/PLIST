@@ -1,4 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:24:28 zuntum Exp $
-@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/gzip.info
+@comment $NetBSD: PLIST,v 1.2 2002/02/18 15:14:01 seb Exp $
 info/gzip.info
-@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/gzip.info
