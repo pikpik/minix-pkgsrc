@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/11/22 08:49:12 tron Exp $
+# $NetBSD: Makefile,v 1.23 1999/11/25 20:20:32 tron Exp $
 
 DISTNAME=		vim-5.5
 CATEGORIES=		editors
@@ -31,6 +31,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/src
 DEPENDS=		ncurses-4.2:../../devel/ncurses
 .endif
 
+XAW_TYPE?=		standard
 .if (${XAW_TYPE} == "standard")
 MAKE_ENV+=		XAW_LIB=Xaw
 .else
