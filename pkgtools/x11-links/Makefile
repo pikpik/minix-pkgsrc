@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2003/07/17 22:52:19 grant Exp $
+# $NetBSD: Makefile,v 1.34 2003/07/21 17:14:10 martti Exp $
 #
 # NOTE:	If you update this package, then you'll likely need to also update
 #	the x11-links dependency in mk/buildlink2/bsd.buildlink2.mk to the
@@ -22,8 +22,6 @@ NO_MTREE=	# defined
 USE_X11=	# defined
 
 USE_X11_LINKS=			NO
-_REQUIRE_BUILTIN_MESALIB=	YES
-_REQUIRE_BUILTIN_GLU=		YES
 _REQUIRE_BUILTIN_FREETYPE2=	YES
 _REQUIRE_BUILTIN_XPM=		YES
 _REQUIRE_BUILTIN_XRENDER=	YES
