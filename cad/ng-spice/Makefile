@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.19 2003/09/28 09:13:55 jlam Exp $
 #
 
 DISTNAME=	ng-spice-rework-14
@@ -8,7 +8,7 @@ CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngspice/}
 
 MAINTAINER=	dmcmahill@NetBSD.org
-HOMEPAGE=	http://ngspice.sourceforge.net
+HOMEPAGE=	http://ngspice.sourceforge.net/
 COMMENT=	Next generation circuit simulation program
 
 CONFLICTS=	spice-[0-9]*

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/06/06 14:27:03 manu Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:25:37 grant Exp $
 #
 
 DISTNAME=	emech-2.8.4
@@ -6,7 +6,7 @@ CATEGORIES=	chat
 MASTER_SITES=	http://www.energymech.net/files/
 
 MAINTAINER=	manu@NetBSD.org
-HOMEPAGE=	http://www.energymech.net
+HOMEPAGE=	http://www.energymech.net/
 COMMENT=	IRC bot written in C
 
 HAS_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/09/27 17:07:36 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/09/28 09:13:57 jlam Exp $
 
 DISTNAME=		zile-1.6.2
 PKGREVISION=		1
@@ -6,7 +6,7 @@ CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=zile/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://zile.sourceforge.net
+HOMEPAGE=		http://zile.sourceforge.net/
 COMMENT=		Emacs-like text editor
 
 GNU_CONFIGURE=		yes
