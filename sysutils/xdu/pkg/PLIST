@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xdu
+lib/X11/app-defaults/XDu
