@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.303 2004/03/28 20:01:28 xtraeme Exp $
+# $NetBSD: Makefile,v 1.304 2004/03/29 22:11:37 xtraeme Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -113,6 +113,7 @@ SUBDIR+=	gtkam
 SUBDIR+=	gtkglext
 SUBDIR+=	gtksee
 SUBDIR+=	hermes
+SUBDIR+=	hicolor-icon-theme
 SUBDIR+=	hp2xx
 SUBDIR+=	iGMT
 SUBDIR+=	imlib
