@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/22 18:29:17 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/23 02:02:08 cjep Exp $
 #
 
 DISTNAME=	lag-2.1
 PKGNAME=	gp-lag-2.1
+SVR4_PKGNAME=	gplag
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/share/
 EXTRACT_SUFX=	.zoo
