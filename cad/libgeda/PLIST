@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/03/09 06:18:23 dmcmahill Exp $
-bin/libgeda-config
+@comment $NetBSD$
 include/libgeda/colors.h
 include/libgeda/defines.h
 include/libgeda/funcs.h
@@ -10,22 +9,12 @@ include/libgeda/prototype.h
 include/libgeda/struct.h
 info/libgedadoc.info
 info/libgedadoc.info-1
-info/libgedadoc.info-10
-info/libgedadoc.info-11
-info/libgedadoc.info-12
-info/libgedadoc.info-13
-info/libgedadoc.info-14
 info/libgedadoc.info-2
 info/libgedadoc.info-3
-info/libgedadoc.info-4
-info/libgedadoc.info-5
-info/libgedadoc.info-6
-info/libgedadoc.info-7
-info/libgedadoc.info-8
-info/libgedadoc.info-9
 lib/libgeda.a
 lib/libgeda.la
 lib/libgeda.so
-lib/libgeda.so.18
-lib/libgeda.so.18.0
+lib/libgeda.so.19
+lib/libgeda.so.19.0
+lib/pkgconfig/libgeda.pc
 @dirrm include/libgeda

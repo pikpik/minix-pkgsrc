@@ -1,13 +1,16 @@
-@comment $NetBSD: PLIST,v 1.2 2002/12/13 05:19:48 dmcmahill Exp $
+@comment $NetBSD$
 bin/convert_sym
 bin/gmk_sym
+bin/gsch2pcb
 bin/gschemdoc
 bin/gschlas
 bin/gschupdate
 bin/gsymupdate
 bin/olib
+bin/pads_backannotate
 bin/refdes_renum
 bin/sarlacc_schem
 bin/sarlacc_sym
 bin/smash_megafile
+bin/tragesym
 share/gEDA/system-gschlasrc
