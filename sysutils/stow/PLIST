@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:53:50 zuntum Exp $
+@comment $NetBSD$
 bin/stow
-@unexec ${INSTALL_INFO} --delete %D/info/stow.info %D/info/dir
+@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/stow.info
 info/stow.info
-@exec ${INSTALL_INFO} %D/info/stow.info %D/info/dir
+@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/stow.info
+man/man8/stow.8
