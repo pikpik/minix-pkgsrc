@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/bbpager
+share/bbtools/README.bbpager
+share/bbtools/bbpager.bb
+share/bbtools/bbpager.nobb
+@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || true
