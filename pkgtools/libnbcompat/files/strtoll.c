@@ -1,4 +1,4 @@
-/*	$NetBSD: strtoll.c,v 1.6 2003/10/27 00:12:42 lukem Exp $	*/
+/*	$NetBSD: strtoll.c,v 1.5 2004/08/23 03:32:12 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -39,7 +39,7 @@
 #if 0
 static char sccsid[] = "from: @(#)strtoq.c	8.1 (Berkeley) 6/4/93";
 #else
-__RCSID("$NetBSD: strtoll.c,v 1.6 2003/10/27 00:12:42 lukem Exp $");
+__RCSID("$NetBSD: strtoll.c,v 1.5 2004/08/23 03:32:12 jlam Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 
@@ -74,7 +74,7 @@ __weak_alias(strtoll, _strtoll)
  */
 /* LONGLONG */
 long long int
-#ifdef _LIBC && 0
+#if defined(_LIBC) && 0
 _strtoll(nptr, endptr, base)
 #else
 strtoll(nptr, endptr, base)
