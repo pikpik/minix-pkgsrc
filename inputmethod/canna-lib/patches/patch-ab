@@ -1,18 +1,21 @@
-$NetBSD: patch-ab,v 1.2.2.1 2002/06/23 18:47:21 jlam Exp $
-
---- ./Imakefile.orig	Wed Nov 27 16:01:34 1996
-+++ ./Imakefile	Fri Jul 30 19:17:44 1999
-@@ -61,5 +61,5 @@
+$NetBSD$
+--- Imakefile.orig	Thu Dec  5 22:39:41 2002
++++ Imakefile	Thu Dec  5 22:40:03 2002
+@@ -60,7 +60,7 @@
+ 	for i in $(SERVERDIR) ;\
  	do \
  		(cd $$i ; echo "installing" "in $(CURRENT_DIR)/$$i..."; \
 -		$(MAKE) $(MFLAGS) DESTDIR='$(DESTDIR)' install); \
 +		$(MAKE) $(MFLAGS) DESTDIR='$(DESTDIR)' install install.man); \
  	done
  
-@@ -69,5 +69,5 @@
+ instclient::
+@@ -68,7 +68,7 @@
+ 	for i in $(CLIENTDIR) ;\
  	do \
  		(cd $$i ; echo "installing" "in $(CURRENT_DIR)/$$i..."; \
 -		$(MAKE) $(MFLAGS) DESTDIR='$(DESTDIR)' install); \
 +		$(MAKE) $(MFLAGS) DESTDIR='$(DESTDIR)' install install.man); \
  	done
  
+ instsgs::
