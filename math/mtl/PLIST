@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/04/29 23:52:26 jtb Exp $
 include/mtl/abs.h
 include/mtl/array2D.h
 include/mtl/banded_indexer.h
