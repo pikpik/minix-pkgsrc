@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.228 2005/03/10 10:05:31 wiz Exp $
+# $NetBSD: Makefile,v 1.229 2005/03/18 05:26:05 taca Exp $
 #
 
 COMMENT=	Security tools
@@ -42,6 +42,7 @@ SUBDIR+=	destroy
 SUBDIR+=	dirmngr
 SUBDIR+=	dropbear
 SUBDIR+=	dsniff
+SUBDIR+=	dsniff-nox11
 SUBDIR+=	egd
 SUBDIR+=	flawfinder
 SUBDIR+=	fprot-workstation-bin
