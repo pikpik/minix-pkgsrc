@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1997/11/21 15:10:58 agc Exp $
+# $NetBSD: Makefile,v 1.7 1997/11/23 22:28:40 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -63,7 +63,7 @@
 #    SUBDIR += strobe
 #    SUBDIR += sup
 #    SUBDIR += tac_plus
-#    SUBDIR += tcptrace
+    SUBDIR += tcptrace
 #    SUBDIR += telnetx
 #    SUBDIR += tintin++
 #    SUBDIR += tinyfugue
