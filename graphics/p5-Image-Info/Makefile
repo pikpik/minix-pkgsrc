@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 16:51:49 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/02/08 21:21:10 kim Exp $
 #
 
 DISTNAME=	Image-Info-1.16
@@ -13,7 +13,9 @@ COMMENT=	Perl module to extract meta information from images
 
 DEPENDS+=	p5-IO-String>=1.03:../../devel/p5-IO-String
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Image/Info/.packlist
 
 .include "../../lang/perl5/module.mk"
