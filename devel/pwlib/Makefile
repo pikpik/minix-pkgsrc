@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2002/12/01 18:31:41 jdolecek Exp $
+# $NetBSD: Makefile,v 1.16 2002/12/01 21:01:18 jdolecek Exp $
 #
 
 DISTNAME=		pwlib_1.4.4
 PKGNAME=		pwlib-1.4.4
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.openh323.org/bin/
 COUNTRY_MIRRORS=	at us1 us2 ru de cz
