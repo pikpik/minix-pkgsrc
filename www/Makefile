@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2001/03/27 18:07:38 itojun Exp $
+# $NetBSD: Makefile,v 1.125 2001/03/30 02:42:08 jwise Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -23,6 +23,7 @@ SUBDIR+=	ap-php4
 SUBDIR+=	ap-ssl
 SUBDIR+=	apache
 SUBDIR+=	apache6
+SUBDIR+=	apache-current
 SUBDIR+=	arena
 SUBDIR+=	asp2php
 SUBDIR+=	asWedit
