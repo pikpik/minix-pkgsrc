@@ -1,19 +1,20 @@
-# $NetBSD: Makefile,v 1.10 1998/08/20 15:17:11 tsarna Exp $
+# $NetBSD: Makefile,v 1.11 1998/10/02 06:47:29 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/10/15 20:35:20 fenner Exp 
 #
 
-DISTNAME=	sdr.V2.4a7n
-PKGNAME=	sdr-2.4a7mmrz
+DISTNAME=	sdr-2.5.8
 CATEGORIES=	mbone tk80
-MASTER_SITES=	http://north.east.isi.edu/sdr/
+MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.5.8/
 
 MAINTAINER=	is@netbsd.org
 HOMEPAGE=	http://north.east.isi.edu/sdr/
 
 DEPENDS+=	tk-8.0p2:../../x11/tk80
 
+CONFLICTS=	sdr-2.4a7mmrz
+
 MIRROR_DISTFILE=	no
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}/sdr
 USE_GMAKE=	yes
 USE_X11=	yes
 
