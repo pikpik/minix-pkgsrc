@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/21 17:28:38 martti Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:27:16 agc Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -12,9 +12,8 @@ COMMENT=	Dockable clock and calendar with themes for X11
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
 WRKSRC=		${WRKDIR}/asclock-xlib
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
-USE_X11BASE=	YES
 
 PLIST_SRC=	${PKGDIR}/PLIST \
 		${PKGDIR}/PLIST.themes
@@ -33,5 +32,5 @@ post-install:
 	${CP} -R ${WRKSRC}/themes/* ${PREFIX}/share/asclock-xlib
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/asclock-xlib
 
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
