@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2002/02/01 22:44:27 bouyer Exp $
+# $NetBSD$
 
-DISTNAME=	imp-3.0
+DISTNAME=	imp-3.2.1
 CATEGORIES=	mail www
 MASTER_SITES=	ftp://ftp.horde.org/pub/imp/tarballs/
 
@@ -8,7 +8,7 @@ MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://www.horde.org/imp/
 COMMENT=	Internet Messaging Program
 
-DEPENDS+=	horde-2.0:../../www/horde
+DEPENDS+=	horde-2.2.1:../../www/horde
 DEPENDS+=	php-imap>4.0.0:../../mail/php4-imap
 
 DOCDIR=		${PREFIX}/share/doc/imp
