@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2001/06/11 06:34:31 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2001/12/07 00:36:26 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:55:09 gj Exp
 
 DISTNAME=		vile-9.0
 CATEGORIES=		editors
 MASTER_SITES=		ftp://ftp.clark.net/pub/dickey/vile/ \
-			ftp://ftp.uni-trier.de/pub/unix/editor/vile/ \
 			ftp://ftp.phred.org/pub/vile/
 EXTRACT_SUFX=		.tgz
 
