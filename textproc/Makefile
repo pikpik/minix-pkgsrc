@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2001/06/26 12:46:21 wiz Exp $
+# $NetBSD: Makefile,v 1.108 2001/06/29 11:47:32 rh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -71,6 +71,7 @@ SUBDIR+=	rfcutil
 SUBDIR+=	rman
 SUBDIR+=	rtf-tools
 SUBDIR+=	rtfm
+SUBDIR+=	ruby-rdtool
 SUBDIR+=	sablotron
 SUBDIR+=	saxon
 SUBDIR+=	scrollkeeper
