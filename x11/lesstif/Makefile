@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2004/02/14 17:21:56 jlam Exp $
+# $NetBSD: Makefile,v 1.70 2004/03/20 00:48:36 snj Exp $
 
 DISTNAME=	lesstif-0.93.94
 CATEGORIES=	x11
@@ -11,7 +11,7 @@ COMMENT=	API compatible clone of the OSF/Motif toolkit
 
 CONFLICTS+=	openmotif-[0-9]*
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
