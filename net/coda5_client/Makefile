@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 1998/10/05 23:06:15 rvb Exp $
+# $NetBSD$
 #
 
-DISTNAME=	coda-4.6.6
-PKGNAME=	coda-client-4.6.6.1
+DISTNAME=	coda-5.0.1
+PKGNAME=	coda-client-5.0.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/
 EXTRACT_SUFX=	.tgz
@@ -13,6 +13,10 @@ HOMEPAGE=	http://www.coda.cs.cmu.edu/
 DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
 DEPENDS+=	readline-2.2:../../devel/readline
 DEPENDS+=	perl-5.00404:../../lang/perl5
+
+ONLY_FOR_ARCHS=	arm32 i386 ns32k
+
+LICENSE=	GPL
 
 ALL_TARGET=	coda
 INSTALL_TARGET=	client-install
