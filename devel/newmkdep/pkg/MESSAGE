@@ -1,4 +1,9 @@
-To use "newmkdep" either use "make MKDEP=newmkdep ..." or add an assignment
-like this to "/etc/mk.conf":
+======================================================================
+$NetBSD$
+
+To use "newmkdep" either use "make MKDEP=newmkdep ..." or add an
+assignment like this to "/etc/mk.conf":
 
 MKDEP = newmkdep
+
+======================================================================
