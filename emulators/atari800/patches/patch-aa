@@ -1,8 +1,8 @@
 $NetBSD$
 
---- sound.c.orig	Sun Feb  9 22:24:12 2003
+--- sound.c.orig	2003-02-24 09:33:10.000000000 +0000
 +++ sound.c
-@@ -21,7 +21,7 @@
+@@ -44,7 +44,7 @@
  
  #define DEFDSPRATE 22050
  
