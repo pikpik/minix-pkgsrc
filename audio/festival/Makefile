@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2002/08/31 14:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2002/12/02 11:34:14 markd Exp $
 
 DISTNAME=	festival-1.4.1
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/ \
