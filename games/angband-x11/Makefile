@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/09/27 23:18:04 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/12/15 20:25:36 agc Exp $
 #
 
 DISTNAME=		angband-283
@@ -19,9 +19,6 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/src
 MAKEFILE=		Makefile.std
 ALL_TARGET=		angband
 USE_X11=		yes
-
-PATCHFILES+=		${_PKGSRCDIR}/games/angband-tty/patches/patch-*
-ALLFILES=		${DISTFILES}	# don't checksum shared patches
 
 SPOILERFILE=		angband-spoilers.tar.gz
 
