@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2004/07/25 06:15:24 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/08/27 13:16:16 drochner Exp $
 
 DISTNAME=	gnutls-1.0.20
+PKGREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/ \
 		ftp://ftp.gnupg.org/gcrypt/alpha/gnutls/ \
