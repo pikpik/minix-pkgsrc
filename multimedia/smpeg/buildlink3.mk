@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/03/05 19:25:12 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/03/18 09:12:11 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SPMEG_BUILDLINK3_MK:=	${SPMEG_BUILDLINK3_MK}+

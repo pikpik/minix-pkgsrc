@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2004/06/20 19:32:24 agc Exp $
+# $NetBSD: Makefile,v 1.49 2004/06/25 07:00:04 sekiya Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -61,6 +61,7 @@ SUBDIR+=	ogmtools
 SUBDIR+=	openquicktime
 SUBDIR+=	realplayer
 SUBDIR+=	realplayer-codecs
+SUBDIR+=	smpeg
 SUBDIR+=	transcode
 SUBDIR+=	trplayer
 SUBDIR+=	vlc
