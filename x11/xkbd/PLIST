@@ -1,0 +1,14 @@
+@comment $NetBSD$
+bin/xkbd
+share/xkbd/img/backspace.xpm
+share/xkbd/img/kbd.xpm
+share/xkbd/img/return.xpm
+share/xkbd/img/shift.xpm
+share/xkbd/img/tab.xpm
+share/xkbd/kbdconfig
+share/xkbd/kbdconfig.tiny
+share/xkbd/kbdconfig.fitaly
+share/xkbd/kbdconfig.us
+man/man1/xkbd.1
+@dirrm share/xkdb/img
+@dirrm share/xkdb
