@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/02 03:38:32 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/01/31 21:10:28 drochner Exp $
 
 DISTNAME=	dxsamples-4.0.8
 CATEGORIES=	graphics
@@ -6,6 +6,7 @@ MASTER_SITES=	http://www.research.ibm.com/dx/srcDownload/srcArchive/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.research.ibm.com/dx/
+COMMENT=	Sample data for Open Visualization Data Explorer
 
 DEPENDS+=	dx-*:../../graphics/dx
 

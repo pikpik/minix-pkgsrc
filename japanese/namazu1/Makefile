@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/01/27 02:45:21 taca Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/27 08:42:42 veego Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1999/03/31 11:52:07 flathill Exp $
 
 DISTNAME=	namazu-1.3.0.11
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.namazu.org/stable/
 
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://www.namazu.org/index.html.en
+COMMENT=	Namazu is a search engine software intended for easy use
 
 DEPENDS=	kakasi>=2.3.1:../../japanese/kakasi
 DEPENDS+=	nkf-1.7:../../japanese/nkf

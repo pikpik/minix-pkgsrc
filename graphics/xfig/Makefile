@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/07/27 14:01:00 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2000/08/23 23:14:28 tron Exp $
 #
 
 DISTNAME=		xfig.3.2.3a
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/drawing_tools/xfig/}
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://epb1.lbl.gov/BVSmith/xfig/
+COMMENT=		CAD-like drawing tool.  Good for simple colorful scale drawings & ISO's
 
 DEPENDS+=		transfig-3.2.3:../../print/transfig
 DEPENDS+=		jpeg-6b:../../graphics/jpeg

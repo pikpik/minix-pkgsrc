@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/11/09 05:14:27 itohy Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/29 11:34:28 wiz Exp $
 
 DISTNAME=	skkfep0.86c
 PKGNAME=	skkfep-0.86c
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/skkfep/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://ei5nazha.yz.yamagata-u.ac.jp/~aito/aito-soft.html
+COMMENT=	Terminal based SKK-like Kana-to-Kanji FrontEnd Processor
 
 BUILD_DEFS+=	USE_INET6
 

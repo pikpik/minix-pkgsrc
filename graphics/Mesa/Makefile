@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/10/15 11:57:17 rh Exp $
+# $NetBSD: Makefile,v 1.36 2000/12/12 17:22:38 drochner Exp $
 #
 
 DISTNAME=	Mesa-3.4
@@ -8,6 +8,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ssec.wisc.edu/~brianp/Mesa.html
+COMMENT=	Graphics library meta package, similar to SGI's OpenGL
 
 DEPENDS+=	glu-3.4:../../graphics/glu
 DEPENDS+=	glut-3.4:../../graphics/glut

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/27 07:11:12 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2000/11/29 00:57:03 david Exp $
 #
 
 DISTNAME=	GD-1.32
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=GD/}
 
 MAINTAINER=	damon@brodiefamily.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/GD/GD.html
+COMMENT=	Perl5 interface to gd graphics library
 
 DEPENDS+=	gd>=1.8.3:../../graphics/gd
 

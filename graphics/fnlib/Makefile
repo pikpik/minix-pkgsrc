@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2000/06/01 11:23:27 rh Exp $
+# $NetBSD: Makefile,v 1.9 2000/06/21 01:02:10 jlam Exp $
 
 DISTNAME=		fnlib-0.5
 CATEGORIES=		x11 graphics
 MASTER_SITES=		ftp://ftp.enlightenment.org/pub/e/enlightenment/libs/
 
 MAINTAINER=		root@garbled.net
+COMMENT=		color font rendering library for X11R6
 
 DEPENDS+=		imlib-*:../../graphics/imlib
 

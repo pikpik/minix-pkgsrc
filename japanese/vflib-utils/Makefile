@@ -1,6 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/01 22:00:15 jlam Exp $
 
 PKGNAME=		ja-vflib-utils-${VFLIB_VERSION}
+
+COMMENT=		Utilities for manipulating VFlib vector font files
 
 DEPENDS+=		ja-vflib-lib-${VFLIB_VERSION}:../../japanese/vflib-lib
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/04 00:48:03 hubertf Exp $
 #
 
 DISTNAME=	sgif1122
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://ion.le.ac.uk/~mar5/giftrans.html
+COMMENT=	Manipulate GIF89a images' transparency, comment, ..
 
 WRKSRC=		${WRKDIR}/usr/src/${PKGNAME}
 

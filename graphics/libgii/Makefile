@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/24 02:31:30 hubertf Exp $
 #
 
 DISTNAME=	libgii-0.6
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.ggi-project.org/pub/ggi/ggi/current/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.ggi-project.org/
+COMMENT=	General Input Interface - API for all possible input sources
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--enable-mutexes=int \

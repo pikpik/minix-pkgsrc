@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/27 07:27:53 kei Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/07 13:47:47 taca Exp $
 
 DISTNAME=		Text-ChaSen-1.03
 PKGNAME=		p5-${DISTNAME}nb1
@@ -10,6 +10,7 @@ PATCH_SITES=		http://www.daionet.gr.jp/~knok/chasen/
 
 MAINTAINER=		kei@netbsd.org
 HOMEPAGE=		http://www.daionet.gr.jp/~knok/chasen/
+COMMENT=		perl5 module to use ChaSen
 
 DEPENDS+=		chasen>=2.0:../../japanese/chasen
 

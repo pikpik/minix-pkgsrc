@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/17 02:09:55 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/27 19:33:09 mycroft Exp $
 
 DISTNAME=		dia-0.86
 CATEGORIES=		devel
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/dia/}
 
 MAINTAINER=		jmcneill@invisible.yi.org
 HOMEPAGE=		http://www.lysator.liu.se/~alla/dia/
+COMMENT=		program for creating diagrams of all kinds
 
 DEPENDS+=		gnome-libs>=1.2.3:../../x11/gnome-libs
 DEPENDS+=		gnome-print>=0.20:../../print/gnome-print

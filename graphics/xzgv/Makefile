@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/11/25 19:02:27 jtb Exp $
 
 DISTNAME=	xzgv-0.6
 CATEGORIES=	graphics
@@ -7,6 +7,7 @@ MASTER_SITES=	http://xzgv.browser.org/ \
 
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://xzgv.browser.org/
+COMMENT=	Image viewer
 
 DEPENDS+=	gtk+>=1.2.0:../../x11/gtk
 DEPENDS+=	glib-[0-9]*:../../devel/glib

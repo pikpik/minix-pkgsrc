@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/27 07:11:12 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/11/29 00:47:42 david Exp $
 #
 
 DISTNAME=	GDGraph-1.33
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=GD/}
 
 MAINTAINER=	damon@brodiefamily.org
 HOMEPAGE=	http://theoryx5.uwinnipeg.ca/CPAN/data/GDGraph/Graph.html
+COMMENT=	GDGraph is a package to generate charts, using Lincoln Stein's GD.pm
 
 DEPENDS+=       p5-GDTextUtil>=0.75:../../graphics/p5-GDTextUtil
 

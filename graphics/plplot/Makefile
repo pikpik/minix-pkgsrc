@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/05 09:00:59 tron Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/14 11:19:16 jtb Exp $
 
 DISTNAME=	plplot-5.0.2
 CATEGORIES=	graphics
@@ -6,6 +6,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=plplot/}
 
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://www.plplot.org/
+COMMENT=	Scientific plotting package
 
 DEPENDS+=	tcl>=8.3.0:../../lang/tcl
 DEPENDS+= 	tk>=8.3.0:../../x11/tk

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/09 03:26:59 jtb Exp $
 
 DISTNAME=		geomview-1.8.0
 CATEGORIES=		graphics math
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=geomview/}
 
 MAINTAINER=		jtb@netbsd.org
 HOMEPAGE=		http://www.geomview.org
+COMMENT=		Interactive geometry viewing program
 
 GNU_CONFIGURE=		YES
 USE_X11=		YES

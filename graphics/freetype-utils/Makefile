@@ -1,6 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/01 06:03:36 jlam Exp $
 
 PKGNAME=		freetype-utils-${FT_VERS}
+
+COMMENT=		Utilities for manipulating TrueType fonts
 
 DEPENDS+=		freetype-lib-${FT_VERS}:../../graphics/freetype-lib
 

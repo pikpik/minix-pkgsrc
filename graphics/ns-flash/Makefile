@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/08/31 02:35:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2000/09/09 19:40:18 fredb Exp $
 #
 
 PKGNAME=		ns-flash-4.0r12
@@ -24,6 +24,7 @@ MASTER_SITES=		http://download.macromedia.com/pub/shockwave/flash/${SUB}/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.flash.com/
+COMMENT=		MacroMedia Flash Player Netscape plugin
 
 RESTRICTED=             "Redistribution not permitted"
 NO_SRC_ON_FTP=		${RESTRICTED}

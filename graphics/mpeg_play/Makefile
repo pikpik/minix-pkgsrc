@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/10/07 02:13:10 tv Exp $
+# $NetBSD: Makefile,v 1.3 1999/10/07 01:22:10 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/10/05 03:13:32 steve Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://bmrc.berkeley.edu/projects/mpeg/mpeg_play.html
+COMMENT=	Program to play mpeg movies on X displays
 
 WRKSRC=		${WRKDIR}/mpeg_play
 USE_IMAKE=	yes

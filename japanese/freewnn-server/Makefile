@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/08/02 05:50:55 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/09/03 04:31:45 sakamoto Exp $
 #
 
 PKGNAME=	ja-FreeWnn-server-1.10
 CATEGORIES=	japanese
 DEPENDS+=	ja-FreeWnn-lib-1.10:../../japanese/freewnn-lib
+
+COMMENT=	Japanese/Chinese/Korean input method (Japanese server)
 
 WNNDIR=		Wnn
 WNN_TARGET=	SERVER

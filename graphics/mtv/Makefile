@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2000/08/31 02:35:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.27 2000/12/16 22:37:33 tron Exp $
 
 DISTNAME=		mtv-1.1.4
 CATEGORIES=		graphics
@@ -7,6 +7,7 @@ DISTFILES=		${DISTNAME}-1.i386.rpm SDL-1.1.2-1.i386.rpm
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.mpegtv.com/
+COMMENT=		MPEG Video+Audio and VCD Player
 
 DEPENDS+=		suse_audio>=6.3:../../emulators/suse_audio
 DEPENDS+=		suse_xforms>=6.3:../../emulators/suse_xforms

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/02/15 09:26:21 agc Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/29 11:34:28 wiz Exp $
 
 DISTNAME=	NetBSD1.3I-jman-19990531
 PKGNAME=	ja-man-19990531
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.spa.is.uec.ac.jp/pub/NetBSD/jman/archives/
 
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	ftp://ftp.spa.is.uec.ac.jp/pub/NetBSD/jman/index.html
+COMMENT=	Japanese on-line manual pages of NetBSD
 
 DEPENDS=	ja-less-332:../../japanese/less
 DEPENDS+=	ja-groff-0.99:../../japanese/groff

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/06/01 11:23:30 rh Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/14 19:14:40 wiz Exp $
 #
 
 DISTNAME=		libgdgeda-1.6
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.geda.seul.org/pub/geda/devel/support/
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.geda.seul.org/
+COMMENT=		Modified version of the gd packages for use with gEDA
 
 DEPENDS+=		png>=1.0.6:../../graphics/png
 

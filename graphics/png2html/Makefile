@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/23 17:06:37 hubertf Exp $
 #
 
 DISTNAME=	png2html-1.1
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.engr.mun.ca/~holden/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.engr.mun.ca/~holden/png2html.html
+COMMENT=	Takes a PNG image and transforms it to a web page
 
 DEPENDS+=	png-1.*:../../graphics/png
 DEPENDS+=	gd>=1.8.3:../../graphics/gd

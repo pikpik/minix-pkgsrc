@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/26 05:12:18 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/29 22:02:48 jlam Exp $
 #
 
 DISTNAME=	get_ds7_1.2.4
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.yk.rim.or.jp/~mamo/Computer/DS-7/index-e.html
+COMMENT=	Read pictures from a FUJIFILM DS-7(DS series) digital camera
 
 USE_PERL5=	# defined
 

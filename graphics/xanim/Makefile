@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/08/18 22:46:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.18 2000/11/30 18:03:55 agc Exp $
 #
 
 DISTNAME=	xanim2801
@@ -19,6 +19,7 @@ DISTFILES=	${EXTRACT_ONLY} ${EXTRA_FILES}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://xanim.va.pubnix.com/
+COMMENT=	play most popular animation formats and show pictures
 
 EXTRACT_ONLY=   ${DISTNAME}.tar.gz
 

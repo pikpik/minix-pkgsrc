@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/11/30 15:48:09 itojun Exp $
+# $NetBSD: Makefile,v 1.6 2000/12/15 03:27:03 itojun Exp $
 #
 
 DISTNAME=	Canna35b2
@@ -13,6 +13,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://www.nec.co.jp/japanese/product/computer/soft/canna/
+COMMENT=	Kana-Kanji conversion system (library)
 
 INSTALL_TARGET=	install install.man
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/06/01 11:23:31 rh Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/14 19:23:43 wiz Exp $
 
 DISTNAME=		OpenPTC-x11-1.0.0-2
 PKGNAME=		OpenPTC-X11-1.0.02
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.cs.ucl.ac.uk/students/c.nentwich/ptc/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.cs.ucl.ac.uk/students/c.nentwich/ptc/
+COMMENT=		Prometheus Truecolour for X11
 
 DEPENDS+=		Hermes>=1.2.5:../../graphics/hermes
 

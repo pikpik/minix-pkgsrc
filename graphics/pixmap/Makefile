@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/08/23 23:14:27 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/12/13 19:21:42 hubertf Exp $
 # FreeBSD: Makefile,v 1.8 1996/11/18 09:53:36 asami Exp
 #
 
@@ -13,6 +13,7 @@ PATCHFILES=		pixmap_2.6.patch1.gz \
 			pixmap_2.6.patch4.gz
 
 MAINTAINER=		packages@netbsd.org
+COMMENT=		Pixmap editor based on XPM library
 
 BUILD_DEPENDS+=		rman:../../textproc/rman
 
