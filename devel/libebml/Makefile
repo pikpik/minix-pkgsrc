@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/05 15:56:45 salo Exp $
+# $NetBSD: Makefile,v 1.7 2004/05/16 09:30:18 grant Exp $
 #
 
 DISTNAME=	libebml-0.7.0
@@ -8,6 +8,8 @@ MASTER_SITES=	http://dl.matroska.org/downloads/libebml/
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.sourceforge.net/projects/ebml/
 COMMENT=	Extensible Binary Meta Language support library
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make

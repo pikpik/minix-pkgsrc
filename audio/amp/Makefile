@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/21 16:30:33 martti Exp $
+# $NetBSD: Makefile,v 1.16 2004/03/11 18:19:08 xtraeme Exp $
 #
 
 DISTNAME=	amp-0.7.6
@@ -13,8 +13,12 @@ COMMENT=	Another mp3 player
 
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/amp ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2004/03/21 07:41:57 snj Exp $
+# $NetBSD: Makefile,v 1.56 2004/03/26 02:27:57 wiz Exp $
 
 DISTNAME=		w3c-libwww-5.4.0
 PKGNAME=		libwww-5.4.0
@@ -12,6 +12,8 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} libwww-configure-5.4.0nb1.gz
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.w3.org/Library/
 COMMENT=		The W3C Reference Library
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 SITES_libwww-configure-5.4.0nb1.gz=	${MASTER_SITE_LOCAL}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/04/25 12:07:12 dillo Exp $
+# $NetBSD: Makefile,v 1.21 2004/05/03 22:19:08 snj Exp $
 #
 
 DISTNAME=	libsndfile-1.0.9
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.mega-nerd.com/libsndfile/
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.mega-nerd.com/libsndfile/
 COMMENT=	Library for reading and writing audio files
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/24 13:58:23 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/19 11:11:31 wiz Exp $
 
 DISTNAME=		fftw-2.1.5
 PKGNAME=		fftw2-2.1.5
@@ -9,6 +9,8 @@ MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/ \
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.fftw.org/
 COMMENT=		Collection of fast C routines to compute DFTs
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-shared
