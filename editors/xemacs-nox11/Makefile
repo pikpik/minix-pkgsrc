@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/02/09 07:16:13 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/02/15 02:58:46 minskim Exp $
 
 .include "../../editors/xemacs/Makefile.common"
 
-PKGNAME=	xemacs-nox11-21.4.15
+PKGNAME=	${DISTNAME:S/xemacs/xemacs-nox11/}
 
 MAINTAINER=	magick@NetBSD.org
 
