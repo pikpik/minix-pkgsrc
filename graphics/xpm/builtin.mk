@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.1 2004/03/10 17:57:14 jlam Exp $
+# $NetBSD: builtin.mk,v 1.2 2004/03/29 05:43:32 jlam Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -65,3 +65,7 @@ USE_BUILTIN.xpm!=							\
 .    endfor
 .  endif
 .endif	# USE_BUILTIN.xpm
+
+.if !empty(USE_BUILTIN.xpm:M[yY][eE][sS])
+BUILDLINK_PREFIX.xpm=	${X11BASE}
+.endif
