@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/10/07 17:41:53 tron Exp $
+# $NetBSD: Makefile,v 1.25 1999/10/09 20:14:08 jlam Exp $
 #
 
 DISTNAME=	kdegraphics-1.1.2
@@ -11,7 +11,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 
 DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
-DEPENDS+=	libungif-*:../../graphics/libungif
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
