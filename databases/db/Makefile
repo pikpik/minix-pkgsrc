@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9.2.1 2002/06/30 06:24:06 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/08/25 18:38:20 jlam Exp $
 
 DISTNAME=	db-2.7.7
 CATEGORIES=	databases
-MASTER_SITES=	http://www.sleepycat.com/update/2.7.7/ \
+MASTER_SITES=	http://www.sleepycat.com/update/snapshot/ \
 		ftp://ftp.cdrom.com/pub/perl/CPAN/src/misc/ \
 		ftp://ftp.gwdg.de/pub/languages/perl/CPAN/src/misc/
 
