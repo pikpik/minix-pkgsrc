@@ -1,4 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:52 agc Exp $
+# $NetBSD: Makefile,v 1.7 2001/09/27 23:18:49 jlam Exp $
+
+#
+# There is no distinfo file since the files change contents so often on the
+# master site
+#
 
 DISTNAME=	wmthemes-0.62nb1
 CATEGORIES=	x11 wm

@@ -1,4 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/25 04:18:20 hubertf Exp $
+
+#
+# There is no distinfo file since the files change contents so often on the
+# master site
+#
 
 DISTNAME=	ethemes-0.1
 CATEGORIES=	x11 wm
