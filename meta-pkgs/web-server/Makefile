@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/11/21 22:12:57 tron Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/13 12:38:21 wiz Exp $
 #
 
 DISTNAME=	web-server-1.1
@@ -7,6 +7,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	provides some useful tools for a web server
 
 DEPENDS+=	apache-1.3.*:../../www/apache
 DEPENDS+=	lynx>=2.8.2:../../www/lynx
