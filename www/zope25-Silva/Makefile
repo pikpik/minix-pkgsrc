@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/04 15:01:49 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/12 18:16:51 drochner Exp $
 
-DISTNAME=	Silva-0.8.3
-PKGNAME=	zope25-Silva-0.8.3
+DISTNAME=	Silva-0.8.5
+PKGNAME=	zope25-Silva-0.8.5
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/faassen/Silva/
 EXTRACT_SUFX=	.tgz
