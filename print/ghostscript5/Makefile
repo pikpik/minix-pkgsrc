@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $NetBSD: Makefile,v 1.3 1997/11/24 11:14:46 augustss Exp $
+# $NetBSD: Makefile,v 1.4 1997/11/27 11:35:37 explorer Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/10/13 11:22:43 asami Exp
 #
 
@@ -46,7 +46,7 @@ HP850_DRV=	hp850.zip
 CFLAGS+=	-DA4
 .endif
 
-pre-fetch:
+pre-extract:
 .if !defined(A4)
 	@${ECHO_MSG} "Type \"make A4=yes\" if you want -DA4 for compilation."
 	@${ECHO_MSG} "(Doing so makes the default paper size be A4,"
