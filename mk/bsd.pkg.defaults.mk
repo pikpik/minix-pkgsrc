@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.70 2002/07/15 16:24:01 schmonz Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.71 2002/07/20 12:42:35 tron Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1103,6 +1103,11 @@ PILRC_USE_GTK?=	YES
 
 #POSTFIX_USE_PCRE=YES
 # Add support for Perl Compatible Regular Expressions.
+# Possible: YES, not defined
+# Default: not defined
+
+#POSTFIX_USE_TLS=YES
+# Add support for TLS.
 # Possible: YES, not defined
 # Default: not defined
 
