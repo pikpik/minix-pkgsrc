@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/12/03 19:25:30 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/05 04:37:26 grant Exp $
 #
 
 DISTNAME=	Net-Server-0.86
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://seamons.com/net_server.html
 COMMENT=	Perl5 modules for network services engine
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Net/Server/.packlist
 
 .include "../../lang/perl5/module.mk"
