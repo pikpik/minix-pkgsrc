@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2004/05/22 16:31:04 cl Exp $
 #
 
 DISTNAME=		xeno-1.2-src-040418
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.tgz
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=		cl@NetBSD.org
-HOMEPAGE=		http://www.netbsd.org/Ports/xen/
+HOMEPAGE=		http://www.NetBSD.org/Ports/xen/
 COMMENT=		Xen Virtual Machine Monitor
 
 ONLY_FOR_PLATFORM=	*-*-i386
