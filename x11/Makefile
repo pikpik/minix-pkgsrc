@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 1999/02/04 02:47:25 hubertf Exp $
+# $NetBSD: Makefile,v 1.81 1999/02/10 04:25:30 nathanw Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -38,7 +38,8 @@
     SUBDIR += gnome-core
     SUBDIR += gnome-libs
     SUBDIR += gtk
-#    SUBDIR += gtk10
+    SUBDIR += gtk10
+    SUBDIR += gtk--
     SUBDIR += gtkglarea
 #    SUBDIR += gwm
 #    SUBDIR += iv
