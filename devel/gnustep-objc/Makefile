@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/27 10:44:47 rh Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/21 12:41:26 rh Exp $
 #
 
-DISTNAME=	gnustep-objc-1.2.2
-PKGREVISION=	1
+DISTNAME=	gnustep-objc-1.2.3
 CATEGORIES=	devel gnustep
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/libs/
 
