@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/09/27 23:18:16 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/10/05 01:22:07 groo Exp $
 #
 
 DISTNAME=		plt.src.x
@@ -68,5 +68,6 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/plt/collects
 	${CP} -R ${WRKDIR}/plt/collects/* ${PREFIX}/lib/plt/collects
 	${CP} -R ${WRKDIR}/plt/teachpack ${PREFIX}/lib/plt
+	${CP} -R ${WRKDIR}/plt/notes ${PREFIX}/lib/plt
 
 .include "../../mk/bsd.pkg.mk"
