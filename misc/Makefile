@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.135 2002/07/21 19:22:22 wiz Exp $
+# $NetBSD: Makefile,v 1.136 2002/08/04 16:25:21 jschauma Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -115,6 +115,7 @@ SUBDIR+=	team
 SUBDIR+=	ttyrec
 SUBDIR+=	vera
 SUBDIR+=	vfu
+SUBDIR+=	visual-regexp
 SUBDIR+=	vttest
 SUBDIR+=	watch
 SUBDIR+=	xjdic
