@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:08 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/10 20:34:24 minskim Exp $
 
-DISTNAME=		ncmpc-0.11.0
-PKGREVISION=	1
+DISTNAME=		ncmpc-0.11.1
 CATEGORIES=		audio
 MASTER_SITES=		http://hem.bredband.net/kaw/ncmpc/files/ \
 			http://mercury.chem.pitt.edu/~shank/
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://hem.bredband.net/kaw/ncmpc/
-COMMENT=		curses client for Music Player Daemon
+COMMENT=		Curses client for Music Player Daemon
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
