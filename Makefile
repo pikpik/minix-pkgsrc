@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/03/05 09:09:55 mellon Exp $
+# $NetBSD: Makefile,v 1.8 1998/03/08 14:26:26 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
@@ -6,7 +6,7 @@ SUBDIR += archivers
 #SUBDIR += astro
 SUBDIR += audio
 SUBDIR += benchmarks
-#SUBDIR += cad
+SUBDIR += cad
 #SUBDIR += chinese
 SUBDIR += comms
 SUBDIR += converters
@@ -21,7 +21,7 @@ SUBDIR += graphics
 #SUBDIR += korean
 SUBDIR += lang
 SUBDIR += mail
-#SUBDIR += math
+SUBDIR += math
 SUBDIR += mbone
 SUBDIR += misc
 SUBDIR += net
