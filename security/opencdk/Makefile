@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2004/02/25 15:53:17 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/25 18:20:06 minskim Exp $
 #
 
-DISTNAME=	opencdk-0.5.3
-PKGREVISION=	2
+DISTNAME=	opencdk-0.5.4
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/opencdk/
 
