@@ -491,6 +491,8 @@ BUILD_DIR?=		${.CURDIR}
 .endif # WRKOBJDIR
 
 # If OBJHOSTNAME is set, use first component of hostname in directory name
+# If OBJOSMACHINE is set, use ${OPSYS}-${OS_VERSION}-${MACHINE_ARCH} in
+# working directory name
 # If OBJMACHINE is set, use ${MACHINE_ARCH} in the working directory name
 .if defined(OBJHOSTNAME)
 .  if !defined(_HOSTNAME)
@@ -498,6 +500,8 @@ _HOSTNAME!= ${UNAME} -n
 MAKEFLAGS+= _HOSTNAME=${_HOSTNAME}
 .  endif
 WRKDIR_BASENAME?=	work.${_HOSTNAME:C|\..*||}
+.elif defined(OBJOSMACHINE)
+WRKDIR_BASENAME?=	work.${OPSYS}-${OS_VERSION}-${MACHINE_ARCH}
 .elif defined(OBJMACHINE)
 WRKDIR_BASENAME?=	work.${MACHINE_ARCH}
 .else
