@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bvedit
+bin/bvi
+bin/bview
+man/man1/bvi.1
