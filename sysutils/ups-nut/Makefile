@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2002/10/02 22:38:59 dillo Exp $
+# $NetBSD: Makefile,v 1.25 2002/12/13 04:23:17 lukem Exp $
 #
 
 DISTNAME=		nut-1.2.1
 PKGNAME=		ups-nut-1.2.1
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.exploits.org/nut/release/1.2/
 
