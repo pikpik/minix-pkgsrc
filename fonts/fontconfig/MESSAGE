@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+You will need to run 'fc-cache' as root to build the X11
+font cache before attempting to use applications which
+use ${PKGNAME}.
+
+===========================================================================
