@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/posh
+man/man1/posh.1
+share/doc/posh/ChangeLog
+share/doc/posh/NEWS
+share/doc/posh/README
+@dirrm share/doc/posh
