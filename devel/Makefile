@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 1998/11/26 19:06:21 bad Exp $
+# $NetBSD: Makefile,v 1.43 1998/12/01 23:30:48 garbled Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -77,6 +77,7 @@
 #    SUBDIR += p5-Include
 #    SUBDIR += p5-IniConf
 #    SUBDIR += p5-Ioctl
+    SUBDIR += p5-MLDBM
     SUBDIR += p5-PV
 #    SUBDIR += p5-Penguin
 #    SUBDIR += p5-Penguin-Easy
