@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.176 2001/03/04 16:10:43 tron Exp $
+# $NetBSD: Makefile,v 1.177 2001/03/04 17:55:45 tron Exp $
 #
 
 COMMENT=	Development utilities
@@ -106,6 +106,7 @@ SUBDIR+=	nqc
 SUBDIR+=	oaf
 SUBDIR+=	p5-AtExit
 SUBDIR+=	p5-Bit-Vector
+SUBDIR+=	p5-Compress-Zlib
 SUBDIR+=	p5-Curses
 SUBDIR+=	p5-Data-Dumper
 SUBDIR+=	p5-Data-ShowTable
