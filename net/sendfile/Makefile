@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/26 11:34:54 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/05 20:13:00 wiz Exp $
 #
 
 DISTNAME=	sendfile-2.1a
@@ -10,12 +10,15 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.belwue.de/aktivitaeten/projekte/saft/
 COMMENT=	Implementation of the Simple asynchronous file transfer protocol
 
-WRKSRC=	${WRKDIR}/${DISTNAME}
+WRKSRC=		${WRKDIR}/${DISTNAME}
 
 post-patch:
 	cd ${WRKSRC} && \
 	${SED} -e 's,@PREFIX@,${PREFIX},' < makeconfig > makeconfig.new; \
 	${MV} makeconfig.new makeconfig; \
 	${CHMOD} +x makeconfig
+
+post-configure:
+	cd ${WRKSRC} && ${MAKE} config
 
 .include "../../mk/bsd.pkg.mk"
