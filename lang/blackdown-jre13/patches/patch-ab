@@ -1,8 +1,8 @@
 $NetBSD$
 
---- bin/realpath.orig	Sat Mar 16 07:18:50 2002
-+++ bin/realpath
-@@ -28,6 +28,9 @@ case "`uname -m`" in
+--- bin/.java_wrapper.orig	Sat Mar 16 07:18:50 2002
++++ bin/.java_wrapper
+@@ -31,6 +31,9 @@ case "`uname -m`" in
      sparc*)
          proc=sparc
          ;;
