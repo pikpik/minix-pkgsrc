@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.3 2004/01/03 18:49:55 reed Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2004/01/05 12:24:14 tron Exp $
 
 .if !defined(GTKHTML_BUILDLINK2_MK)
 GTKHTML_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gtkhtml
-BUILDLINK_DEPENDS.gtkhtml?=		gtkhtml3>=3.0.9nb2
+BUILDLINK_DEPENDS.gtkhtml?=		gtkhtml3>=3.0.9nb5
 BUILDLINK_PKGSRCDIR.gtkhtml?=		../../www/gtkhtml3
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gtkhtml=gtkhtml
@@ -17,6 +17,7 @@ BUILDLINK_FILES.gtkhtml+=	lib/libgtkhtml-a11y-3.0.*
 
 .include "../../devel/gail/buildlink2.mk"
 .include "../../devel/gal2/buildlink2.mk"
+.include "../../devel/libbonobo/buildlink2.mk"
 .include "../../net/libsoup/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gtkhtml-buildlink
