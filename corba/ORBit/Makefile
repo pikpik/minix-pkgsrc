@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1999/04/15 21:33:04 tron Exp $
+# $NetBSD: Makefile,v 1.15 1999/04/16 19:24:35 tron Exp $
 #
 
 DISTNAME=	ORBit-0.4.3
@@ -20,5 +20,8 @@ CONFIGURE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 
 LIBTOOL_FLAGS=	--install-la
 INFO_FILES=	libIDL.info
+
+post-extract:
+	@find ${WRKDIR} -name "*.idl" -type f | xargs ${TOUCH}
 
 .include "../../mk/bsd.pkg.mk"
