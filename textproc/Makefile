@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/12/05 16:14:22 tv Exp $
+# $NetBSD: Makefile,v 1.12 1999/03/02 20:21:38 jwise Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -22,7 +22,7 @@
 #    SUBDIR += pilot_makedoc
     SUBDIR += rman
 #    SUBDIR += sgmlformat
-#    SUBDIR += sp
+    SUBDIR += sp
     SUBDIR += t1lib
     SUBDIR += t1libx
     SUBDIR += texi2html
