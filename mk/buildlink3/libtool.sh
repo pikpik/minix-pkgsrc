@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: libtool.sh,v 1.16 2004/03/13 03:41:13 uebayasi Exp $
+# $NetBSD: libtool.sh,v 1.17 2004/03/30 17:25:19 jlam Exp $
 
 Xsed='@SED@ -e 1s/^X//'
 sed_quote_subst='s/\([\\`\\"$\\\\]\)/\\\1/g'
@@ -102,7 +102,7 @@ cmd="@WRAPPEE@"
 ldflags=
 libs=
 case $mode in
-install)
+execute|install)
 	#
 	# We're doing libtool installation, so just quote all of the
 	# command-line arguments and append them to $cmd.  We don't worry
