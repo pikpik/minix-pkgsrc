@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.PL.orig	2004-01-01 03:47:07.000000000 +1100
++++ Makefile.PL
+@@ -11,7 +11,7 @@ require './util/config.pl';
+ my $sattr = &config();
+ my $written_pwd_file = 'PWD';
+ 
+-configPwd();
++# configPwd();
+ 
+ my $linktype = defined($$sattr{LINKTYPE}) ? $$sattr{LINKTYPE} : 'dynamic';
+ 
