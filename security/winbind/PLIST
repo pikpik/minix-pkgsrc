@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/wbinfo
+etc/rc.d/winbindd
+lib/libnss_winbind.so
+lib/security/pam_winbind.so
+sbin/winbindd
