@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.29 2004/11/13 22:04:53 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2005/01/30 23:18:38 jmmv Exp $
 #
 
 DISTNAME=	jikes-1.22
 PKGREVISION=	2
 CATEGORIES=	lang java
-MASTER_SITES=	http://oss.software.ibm.com/pub/${DISTNAME:S,-,/,}/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jikes/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://www10.software.ibm.com/developerworks/opensource/jikes/
+HOMEPAGE=	http://jikes.sourceforge.net/
 COMMENT=	Java source to byte-code compiler
 
 USE_BUILDLINK3=		yes
