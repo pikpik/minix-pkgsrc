@@ -1,13 +1,13 @@
 $NetBSD$
 
---- po/Makefile.in.in.orig	Fri Apr 14 21:51:21 2000
-+++ po/Makefile.in.in	Thu May 25 11:58:06 2000
+--- po/Makefile.in.in.orig	Fri Apr 28 15:49:43 2000
++++ po/Makefile.in.in	Thu Aug  3 19:29:01 2000
 @@ -19,7 +19,7 @@
  prefix = @prefix@
  exec_prefix = @exec_prefix@
  datadir = $(prefix)/@DATADIRNAME@
 -localedir = $(datadir)/locale
-+localedir = $(prefix)/share/locale
++localedir = @localedir@
  gnulocaledir = $(prefix)/share/locale
  gettextsrcdir = $(prefix)/share/gettext/po
  subdir = po
