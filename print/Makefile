@@ -9,6 +9,7 @@ SUBDIR+=	LPRng-doc
 SUBDIR+=	a2ps
 SUBDIR+=	acroread
 SUBDIR+=	acroread3
+SUBDIR+=	acroread5
 SUBDIR+=	apsfilter
 SUBDIR+=	auctex
 SUBDIR+=	bg5pdf
