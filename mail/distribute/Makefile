@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/07/02 10:55:22 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/07/02 11:36:24 agc Exp $
 # FreeBSD: ports/mail/distribute/Makefile,v 1.2 1999/08/25 06:50:06 obrien Exp
 #
 
@@ -13,7 +13,7 @@ PATCHFILES=	patch.20.gz patch.21e.gz patch.22e.gz patch.23e.gz \
 
 MAINTAINER=	itojun@itojun.org
 # in japanese
-HOMEPAGE=	http://www.foretune.co.jp/distribute/
+HOMEPAGE=	http://www.foretune.co.jp/people/shigeya/distribute/
 COMMENT=	Mail dispatcher for mailing list.  Fits nicely with majordomo
 
 USE_PERL5=	YES
