@@ -1,3 +1,4 @@
+$NetBSD$
 --- crossedit/Cnv/Makefile.in.orig	Tue Dec  5 23:34:36 2000
 +++ crossedit/Cnv/Makefile.in	Tue Dec  5 23:34:56 2000
 @@ -13,7 +13,7 @@
