@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/10/03 00:13:07 tv Exp $
+# $NetBSD: Makefile,v 1.37 2004/11/22 14:40:49 adam Exp $
 
 DISTNAME=	mikmod-3.2.1
 CATEGORIES=	audio
@@ -7,6 +7,8 @@ MASTER_SITES=	http://mikmod.raphnet.net/files/
 MAINTAINER=	mycroft@NetBSD.org
 HOMEPAGE=	http://mikmod.raphnet.net/
 COMMENT=	MOD player for UNI IT XM S3M MOD MTM STM DSM MED FAR ULT 669 files
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
