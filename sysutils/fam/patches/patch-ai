@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- fam/InternalClient.c++.orig	Tue Dec 18 11:03:37 2001
++++ fam/InternalClient.c++
+@@ -35,8 +35,8 @@
+ {
+     assert(filename);
+     assert(h);
+-    assert(filename[0] == '/');
+     Log::debug("%s watching %s", name(), filename);
++    assert(filename[0] == '/');
+     interest = new File(filename, this, Request(0), Cred::SuperUser);
+ }
+ 
