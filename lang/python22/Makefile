@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/06/02 01:18:56 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/06/06 17:31:18 drochner Exp $
 #
 
 DISTNAME=	Python-2.2.3
@@ -32,7 +32,6 @@ PLIST_SUBST+=	PY_PLATNAME=${LOWER_OPSYS}${OS_VERSION:C/\..*//}
 # -stack size too small in main thread
 CONFIGURE_ARGS+=	--without-threads
 .endif
-MAKE_ENV+=	LINK_ALL_LIBGCC_HACK=${LINK_ALL_LIBGCC_HACK:Q}
 
 INSTALL_TARGET=	altinstall
 
