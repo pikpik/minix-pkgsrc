@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2004/03/11 08:06:56 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/05/13 17:40:52 kristerw Exp $
 
-DISTNAME=	pnet-0.6.2
-PKGREVISION=	1
+DISTNAME=	pnet-0.6.4
 CATEGORIES=	lang
 MASTER_SITES=	http://www.southern-storm.com.au/download/
 
@@ -14,6 +13,7 @@ BUILD_DEPENDS=	treecc>=0.2.6:../../devel/treecc
 CONFLICTS=	mono-[0-9]*
 
 USE_GNU_TOOLS+=	make
+USE_LIBTOOL=	yes
 USE_MAKEINFO=	yes
 GNU_CONFIGURE=	yes
 USE_BUILDLINK3=	yes
@@ -22,6 +22,6 @@ INFO_FILES=	pnettools.info
 
 PTHREAD_OPTS+=	require native
 
-.include "../../mk/pthread.buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
