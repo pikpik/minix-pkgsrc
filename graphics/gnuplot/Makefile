@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/06/07 17:39:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/07/03 14:14:03 seb Exp $
 #
 
 DISTNAME=		gnuplot-3.7.3
@@ -13,7 +13,7 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://sourceforge.net/projects/gnuplot/
 COMMENT=		gnuplot is a nice plotting utility
 
-CONFLICTS+=             ${DISTNAME:C/-[0-9].*//}
+CONFLICTS+=             gnuplot-nox11-[0-9]*
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
