@@ -1,7 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1998/03/02 00:35:28 tron Exp $
 bin/uuwish
 bin/xdeview
-man/man1/xdeview.1.gz
-share/doc/xdeview/HOWTO
-share/doc/xdeview/porting.notes
-@dirrm share/doc/xdeview
+man/man1/xdeview.1

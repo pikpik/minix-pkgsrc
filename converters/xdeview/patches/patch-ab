@@ -1,9 +1,9 @@
 $NetBSD$
 
---- tcl/Makefile.in.orig	Thu Jun  6 13:09:05 1996
-+++ tcl/Makefile.in	Wed Apr  2 00:06:10 1997
+--- tcl/Makefile.in.orig	Mon Jun  4 18:26:57 2001
++++ tcl/Makefile.in
 @@ -95,8 +95,8 @@
- 	rm -f uuwish [Xx]deview gif2gfp
+ 	rm -f uuwish
  	make all
  
 -uuwish:		$(OBJ) ../uulib/libuu.a
@@ -11,5 +11,5 @@ $NetBSD$
 +uuwish:		$(OBJ)
 +	$(CC) -o $@ $(OBJ) -luu $(LIBS)
  
- xdeview:	xdeview.head tk_MFSbox.tcl xdeview.tail
- 	rm -f $@
+ xdeview:
+ 	chmod 755 $@
