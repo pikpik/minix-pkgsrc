@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/06 20:09:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/10 19:12:51 cjep Exp $
 
 DISTNAME=	ezm3-1.1
 CATEGORIES=	lang
@@ -47,8 +47,8 @@ do-configure:
 
 do-build:
 	${RM} -rf ${WRKSRC}/${TARGET}
-	cd ${WRKSRC} && ${SU_CMD} '${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
-		${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET}'
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} \
+		${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET}
 
 do-install:
 	for i in ${PROGS}; do strip ${EZM3ROOT}/$$i; done
