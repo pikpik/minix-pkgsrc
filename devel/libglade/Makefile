@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2000/06/27 00:29:08 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2000/07/31 04:14:06 jlam Exp $
 #
 
-DISTNAME=	libglade-0.13
+DISTNAME=	libglade-0.14
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/libglade/}
 
