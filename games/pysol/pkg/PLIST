@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/pysol
 share/pysol/cardset-aisleriot/01c.gif
 share/pysol/cardset-aisleriot/01d.gif
