@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2004/07/15 13:29:40 mrg Exp $
+# $NetBSD: Makefile,v 1.21 2004/07/24 14:43:12 mrg Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.09
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/5.x/
+MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/acrobatreader/unix/5.x/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.adobe.com/prodindex/acrobat/readstep.html
