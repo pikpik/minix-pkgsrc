@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:46:01 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 16:56:44 martti Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
@@ -10,5 +10,11 @@ HOMEPAGE=	http://cr.yp.to/ezmlm.html
 COMMENT=	Easy-to-use, high-speed mailing list manager for qmail
 
 CONFLICTS=	ezmlm-idx-[0-9]*
+
+.include "../../mk/compiler.mk"
+
+.if !empty(CC_VERSION:Mgcc-*)
+CFLAGS+=	-fno-builtin-log
+.endif
 
 .include "../../mk/bsd.pkg.mk"
