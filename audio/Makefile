@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.214 2004/02/22 16:33:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.215 2004/02/24 22:47:42 cube Exp $
 #
 
 COMMENT=	Audio tools
@@ -133,6 +133,7 @@ SUBDIR+=	musicbox
 SUBDIR+=	musicbrainz
 SUBDIR+=	nas
 SUBDIR+=	normalize
+SUBDIR+=	nosefart
 SUBDIR+=	nspmod
 SUBDIR+=	oggasm
 SUBDIR+=	openal
