@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/09 10:37:17 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/19 18:10:11 cjep Exp $
 
 DISTNAME=	nail-10.4
 CATEGORIES=	mail
 MASTER_SITES=	http://omnibus.ruf.uni-freiburg.de/~gritter/archive/nail/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	cjep@netbsd.org
 HOMEPAGE=	http://omnibus.ruf.uni-freiburg.de/~gritter/
 COMMENT=	BSD mail utility with MIME extensions
 
