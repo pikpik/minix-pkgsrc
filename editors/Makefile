@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1999/12/21 13:27:51 pooka Exp $
+# $NetBSD: Makefile,v 1.26 1999/12/28 14:22:43 tron Exp $
 # FreeBSD Id: Makefile,v 1.44 1997/09/13 20:19:28 chuckr Exp
 #
 
@@ -30,6 +30,7 @@
 #    SUBDIR += uzap
     SUBDIR += vile
     SUBDIR += vilearn
+    SUBDIR += vigor
     SUBDIR += vim
     SUBDIR += vim-gtk
     SUBDIR += vim-share
