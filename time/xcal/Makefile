@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:32:14 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/01 18:58:52 jlam Exp $
 #
 
 DISTNAME=		xcal41
 PKGNAME=		xcal-4.1
+PKGREVISION=		1
 CATEGORIES=		x11 time
 MASTER_SITES=		ftp://ftp.hillside.co.uk/xcal/
 EXTRACT_SUFX=		.tar.Z
