@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.74 2004/05/06 06:32:22 adam Exp $
+# $NetBSD: defs.Darwin.mk,v 1.75 2004/05/12 14:10:18 jschauma Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -59,6 +59,9 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
+# XXX: default from bsd.pkg.defaults.mk.  Verify/corerct for this platform
+# and remove this comment.
+RSH?=		/usr/bin/rsh
 SED?=		/usr/bin/sed
 SETENV?=	/usr/bin/env
 SH?=		/bin/sh

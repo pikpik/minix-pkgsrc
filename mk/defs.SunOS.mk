@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.84 2004/04/19 20:19:46 jmmv Exp $
+# $NetBSD: defs.SunOS.mk,v 1.85 2004/05/12 14:10:18 jschauma Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -65,6 +65,9 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/usr/bin/rm
 RMDIR?=		/usr/bin/rmdir
+# XXX: default from bsd.pkg.defaults.mk.  Verify/corerct for this platform
+# and remove this comment.
+RSH?=		/usr/bin/rsh
 .if exists(${LOCALBASE}/bin/nbsed)
 SED?=		${LOCALBASE}/bin/nbsed
 .else

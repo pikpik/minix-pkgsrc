@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.70 2004/04/30 04:16:37 reed Exp $
+# $NetBSD: defs.Linux.mk,v 1.71 2004/05/12 14:10:18 jschauma Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -96,6 +96,9 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
+# XXX: default from bsd.pkg.defaults.mk.  Verify/corerct for this platform
+# and remove this comment.
+RSH?=		/usr/bin/rsh
 .if exists(/bin/sed)
 SED?=		/bin/sed
 .elif exists(/usr/bin/sed)

@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.65 2004/05/12 01:04:00 jschauma Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.66 2004/05/12 14:10:18 jschauma Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -57,6 +57,7 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
+RSH?=		/usr/bin/rsh
 SED?=		/usr/bin/sed
 SETENV?=	/usr/bin/env
 SH?=		/bin/sh

@@ -1,4 +1,4 @@
-# $NetBSD: defs.AIX.mk,v 1.8 2004/04/27 13:43:05 tv Exp $
+# $NetBSD: defs.AIX.mk,v 1.9 2004/05/12 14:10:18 jschauma Exp $
 #
 # Variable definitions for the AIX operating system.
 
@@ -74,6 +74,9 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
+# XXX: default from bsd.pkg.defaults.mk.  Verify/corerct for this platform
+# and remove this comment.
+RSH?=		/usr/bin/rsh
 .if exists(${LOCALBASE}/bin/nbsed)
 SED?=		${LOCALBASE}/bin/nbsed
 .else
