@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.172 2003/12/27 23:01:32 salo Exp $
+# $NetBSD: Makefile,v 1.173 2003/12/29 17:50:03 xtraeme Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -15,6 +15,7 @@ SUBDIR+=	blackbook
 SUBDIR+=	blccc
 SUBDIR+=	bottlerocket
 SUBDIR+=	brs
+SUBDIR+=	bsdiff
 SUBDIR+=	buffer
 SUBDIR+=	celestia
 SUBDIR+=	celestia-gnome
@@ -36,6 +37,7 @@ SUBDIR+=	dotfile
 SUBDIR+=	dsbr100
 SUBDIR+=	dt
 SUBDIR+=	dync
+SUBDIR+=	edict
 SUBDIR+=	elizatalk
 SUBDIR+=	fd
 SUBDIR+=	fep
@@ -69,6 +71,7 @@ SUBDIR+=	ja-man
 SUBDIR+=	jhd
 SUBDIR+=	jitterbug
 SUBDIR+=	jive
+SUBDIR+=	kanjidic
 SUBDIR+=	kanjipad
 SUBDIR+=	kdeaddons2
 SUBDIR+=	kdeaddons3
