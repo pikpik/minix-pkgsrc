@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2001/02/24 20:43:55 tv Exp $
+# $NetBSD: Makefile,v 1.7 2001/08/19 04:48:36 jlam Exp $
 #
 
 DISTNAME=	ifcico-3.0.cm.alpha-4.1
 PKGNAME=	ifcico-cm-3.0a4.1
 CATEGORIES=	comms
-MASTER_SITES=	http://www.cosy.sbg.ac.at/~cmeer/files/
+MASTER_SITES=	http://cmeerw.org/files/
 
 MAINTAINER=	tv@netbsd.org
-HOMEPAGE=	http://www.cosy.sbg.ac.at/~cmeer/ifcico/
+HOMEPAGE=	http://cmeerw.org/ifcico/
 COMMENT=	FidoNet transport program using FTS protocols via dial or TCP
 
 USE_BUILDLINK_ONLY=	# defined
