@@ -35,6 +35,7 @@ SUBDIR+=	qvwm
 SUBDIR+=	ratpoison
 SUBDIR+=	sawfish
 SUBDIR+=	sawfish-replibs
+SUBDIR+=	sawfish-themes
 SUBDIR+=	tvtwm
 SUBDIR+=	uwm
 SUBDIR+=	windowmaker
