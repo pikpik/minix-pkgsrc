@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/05/31 13:49:16 skrll Exp $
 
-DISTNAME=	kdetoys-3.0.1
+DISTNAME=	kdetoys-3.0.2
 CATEGORIES=	games
 COMMENT=	Toys for the KDE integrated X11 desktop
 

@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/05/31 13:20:58 skrll Exp $
 
-DISTNAME=	kdeedu-3.0.1
+DISTNAME=	kdeedu-3.0.2
 CATEGORIES=	misc
 COMMENT=	Edu{tainment,cation} tools for the KDE integrated X11 desktop
 

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- konsole/konsole/main.cpp.orig	Wed May  8 19:22:40 2002
+--- konsole/konsole/main.cpp.orig	Mon Jun 24 12:57:09 2002
 +++ konsole/konsole/main.cpp
-@@ -110,7 +110,9 @@
+@@ -112,7 +112,9 @@
  
  
  /* --| main |------------------------------------------------------ */
