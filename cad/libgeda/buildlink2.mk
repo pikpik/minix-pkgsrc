@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.4 2003/07/15 09:23:37 dmcmahill Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/09/10 23:43:37 dmcmahill Exp $
 #
 # This Makefile fragment is included by packages that use libgeda.
 #
@@ -9,7 +9,7 @@
 LIBGEDA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			libgeda
-BUILDLINK_DEPENDS.libgeda?=		libgeda>=20030901
+BUILDLINK_DEPENDS.libgeda?=		libgeda-20030901{,nb[0-9]*}
 BUILDLINK_PKGSRCDIR.libgeda?=		../../cad/libgeda
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.libgeda=libgeda
