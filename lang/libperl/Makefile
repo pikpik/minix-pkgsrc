@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/02/17 09:07:18 agc Exp $
+# $NetBSD: Makefile,v 1.15 2001/05/11 14:52:21 jlam Exp $
 
 DISTNAME=		perl-${PERL_VERSION}
 PKGNAME=		libperl-${PERL_VERSION}nb2
@@ -21,8 +21,8 @@ HAS_CONFIGURE=		# defined
 CONFIGURE_ENV+=		PREFIX=${PREFIX}
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX} -Doptimize="${CFLAGS}" \
-                        -Darchname=${MACHINE_ARCH}-${LOWER_OPSYS} \
-                        -Dcc=gcc -Dusemymalloc=false
+			-Darchname=${MACHINE_ARCH}-${LOWER_OPSYS} \
+			-Dcc=gcc -Dusemymalloc=false
 CONFIGURE_ARGS+=	-Duseshrplib=true
 MAKE_ENV+=              LD_LIBRARY_PATH=${WRKSRC}
 ALL_TARGET=		lib/Config.pm libperl.so
