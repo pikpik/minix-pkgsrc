@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/09/27 17:07:37 grant Exp $
+# $NetBSD: Makefile,v 1.4 2003/09/28 09:13:57 jlam Exp $
 
 DISTNAME=		yabasic-2.722
 PKGREVISION=		1
@@ -6,7 +6,7 @@ CATEGORIES=		lang
 MASTER_SITES=		http://www.yabasic.de/download/
 
 MAINTAINER=		david@netbsd-fr.org
-HOMEPAGE=		http://www.yabasic.de
+HOMEPAGE=		http://www.yabasic.de/
 COMMENT=		Yet another Basic for Unix and Windows
 
 USE_X11=		YES

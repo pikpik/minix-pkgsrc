@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:48:43 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/11/07 15:30:09 gavan Exp $
 #
 
 DISTNAME=	bbappconf-0.0.2
@@ -7,7 +7,7 @@ CATEGORIES=	misc x11 wm
 MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
 
 MAINTAINER=	jschauma@NetBSD.org
-HOMEPAGE=	http://bbtools.windsofstorm.net
+HOMEPAGE=	http://bbtools.windsofstorm.net/
 COMMENT=	Configure the behaviour of an application under Blackbox
 
 USE_BUILDLINK2=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/09/27 17:07:37 grant Exp $
+# $NetBSD: Makefile,v 1.18 2003/09/28 09:13:58 jlam Exp $
 
 DISTNAME=		pari-2.1.5
 PKGREVISION=		1
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://www.gn-50uma.de/gn/gn-50uma.de/pari-2.1/ \
 			http://www.gn-50uma.de/ftp/pari-2.1/
 
 MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.parigp-home.de
+HOMEPAGE=		http://www.parigp-home.de/
 COMMENT=		Software package for computer-aided number theory
 
 BUILD_DEPENDS+= 	teTeX-[0-9]*:../../print/teTeX
