@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.321 2002/07/23 08:16:11 cjs Exp $
+# $NetBSD: Makefile,v 1.322 2002/07/23 11:37:41 agc Exp $
 #
 
 COMMENT=	Networking tools
@@ -57,6 +57,7 @@ SUBDIR+=	ettercap
 SUBDIR+=	fair-identd
 SUBDIR+=	firewalk
 SUBDIR+=	firewalk-gtk
+SUBDIR+=	flow-tools
 SUBDIR+=	fmirror
 SUBDIR+=	fping
 SUBDIR+=	freewais-sf
