@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/12/02 17:35:24 abs Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/16 23:34:36 abs Exp $
 #
 
-DISTNAME=	mserv_irman-0.19
+DISTNAME=	mserv_irman-0.20
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mono.org/abs/tools/mserv_irman/
 EXTRACT_SUFX=   .tbz
