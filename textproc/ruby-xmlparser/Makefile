@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/28 04:51:38 taca Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/28 14:08:02 taca Exp $
 #
 
 DISTNAME=	xmlparser-0.6.8
 PKGNAME=	${RUBY_PKGPREFIX}-xmlparser-0.6.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.yoshidam.net/
 

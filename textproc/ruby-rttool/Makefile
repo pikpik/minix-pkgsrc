@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/03/16 02:01:11 taca Exp $
+# $NetBSD: Makefile,v 1.9 2004/11/28 04:48:25 taca Exp $
 
 DISTNAME=	rttool-${VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.rubyist.net/~rubikitch/archive/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:18:27 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/28 05:45:05 taca Exp $
 
 DISTNAME=		ruby-fcgi-${VER}
 PKGNAME=		${RUBY_PKGPREFIX}-fcgi-${VER}
+PKGREVISION=		1
 CATEGORIES=		www devel ruby
 MASTER_SITES=   	http://www.moonwolf.com/ruby/archive/
 

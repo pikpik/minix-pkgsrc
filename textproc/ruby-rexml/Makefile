@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2005/01/30 04:51:10 taca Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/20 16:19:12 taca Exp $
 #
 
 DISTNAME=	rexml_${VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-rexml-${VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.germane-software.com/archives/
 EXTRACT_SUFX=	.tgz

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/11/27 16:26:09 taca Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/28 14:08:01 taca Exp $
 # FreeBSD: ports/math/ruby-bitvector/Makefile,v 1.1 2000/11/23 14:13:41 knu Exp
 
 DISTNAME=	bitvector-0.1.7
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	math ruby
 MASTER_SITES=	ftp://ftp.ruby-lang.org/pub/ruby/contrib/
 

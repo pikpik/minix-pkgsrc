@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2004/03/16 02:01:11 taca Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/28 04:22:48 taca Exp $
 # FreeBSD: ports/textproc/ruby-amrita/Makefile,v 1.5 2003/02/18 05:38:23 knu Exp
 #
 
 DISTNAME=	amrita-1.0.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc ruby www
 MASTER_SITES=	http://www.brain-tokyo.jp/research/amrita/
 

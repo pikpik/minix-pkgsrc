@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/10/29 05:59:24 jdolecek Exp $
+# $NetBSD: Makefile,v 1.7 2004/11/27 15:40:20 taca Exp $
 
 DISTNAME=	ruby-dbi-all-${RUBY_DBI_VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-DBD-mysql-${RUBY_DBI_VERSION}
+PKGREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
 

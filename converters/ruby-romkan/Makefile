@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2004/03/16 02:01:10 taca Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/27 15:36:43 taca Exp $
 
 DISTNAME=	ruby-romkan-0.4
 PKGNAME=	${RUBY_PKGPREFIX}-romkan-0.4
+PKGREVISION=	1
 CATEGORIES=	converters japanese ruby
 MASTER_SITES=	http://namazu.org/~satoru/ruby-romkan/
 
