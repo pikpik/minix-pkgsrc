@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/10/10 23:13:07 abs Exp $
 sbin/cfd
 sbin/cfdoc
 sbin/cfengine
@@ -21,3 +21,4 @@ share/cfengine/cfengine.conf.example
 share/cfengine/cfmail
 share/cfengine/cfrc.example
 share/cfengine/cfwrap
+@dirrm share/cfengine
