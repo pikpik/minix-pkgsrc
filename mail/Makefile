@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.218 2004/07/08 14:46:55 xtraeme Exp $
+# $NetBSD: Makefile,v 1.219 2004/07/14 20:08:39 jlam Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -16,6 +16,7 @@ SUBDIR+=	bmf
 SUBDIR+=	bogofilter
 SUBDIR+=	bulk_mailer
 SUBDIR+=	clamav
+SUBDIR+=	clamsmtp
 SUBDIR+=	columba
 SUBDIR+=	coolmail
 SUBDIR+=	courier-auth
