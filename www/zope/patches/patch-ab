@@ -1,9 +1,8 @@
 $NetBSD$
 
---- lib/python/AccessControl/SecurityManagement.py.orig	Thu May 11 14:54:13 2000
-+++ lib/python/AccessControl/SecurityManagement.py	Sun Oct 22 18:58:29 2000
-@@ -89,7 +89,9 @@
- __version__='$Revision: 1.1 $'[11:-2]
+--- lib/python/AccessControl/SecurityManagement.py.orig	Fri Nov 17 15:33:58 2000
++++ lib/python/AccessControl/SecurityManagement.py
+@@ -90,5 +90,7 @@
  
  import SpecialUsers
 -from thread import get_ident
@@ -12,4 +11,3 @@ $NetBSD$
 +else: get_ident=thread.get_ident
  from SecurityManager import SecurityManager
  
- _managers={}
