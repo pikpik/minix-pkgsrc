@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:21 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/24 09:20:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/01/03 10:58:40 obrien Exp
 #
 
@@ -7,7 +7,7 @@ PKGNAME=	minicom-1.78
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/software/
 
-MAINTAINER=     packages@netbsd.org
+MAINTAINER=     tron@netbsd.org
 
 RUN_DEPENDS=	lrz:../../comms/lrzsz \
 		lsz:../../comms/lrzsz \
