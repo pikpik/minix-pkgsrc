@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: distccd.sh,v 1.2 2004/05/02 19:31:48 xtraeme Exp $
+# $NetBSD: distccd.sh,v 1.3 2004/07/07 12:38:39 martti Exp $
 #
 
 # PROVIDE: distccd
@@ -13,8 +13,8 @@ fi
 name="distccd"
 rcvar="${name}"
 command="@PREFIX@/bin/${name}"
-command_args="--daemon --pid-file /var/run/${name}.pid --user nobody"
-pidfile="/var/run/${name}.pid"
+pidfile="/tmp/${name}.pid"
+command_args="--daemon --pid-file ${pidfile} --user nobody"
 
 if [ -f /etc/rc.subr -a -f /etc/rc.conf -a -f /etc/rc.d/DAEMON ]; then
 	load_rc_config $name
