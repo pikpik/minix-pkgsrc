@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:51:39 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/15 22:34:16 jlam Exp $
 
 DISTNAME=	all-com-ppds
 PKGNAME=	cupsomatic-ppds-20010515
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/cupsomatic-ppd
 CATEGORIES=	print
 
@@ -27,7 +28,7 @@ CONFLICTS+=	cupsomatic-200012??
 
 DIST_SUBDIR=	${PKGNAME}
 
-DEPENDS+=	cups>=1.1.1:../../print/cups
+DEPENDS+=	cups>=1.1.14nb1:../../print/cups
 DEPENDS+=	cupsomatic-[0-9]*:../../print/cupsomatic
 
 NO_CONFIGURE=	# defined

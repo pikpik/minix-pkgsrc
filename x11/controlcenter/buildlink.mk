@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/10/06 13:09:52 rh Exp $
 #
 # This Makefile fragment is included by packages that use controlcenter.
 #
@@ -17,7 +17,7 @@ CONTROLCENTER_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.controlcenter?=	control-center>=1.4
+BUILDLINK_DEPENDS.controlcenter?=	control-center>=1.4.0.1nb1
 DEPENDS+=	${BUILDLINK_DEPENDS.controlcenter}:../../x11/controlcenter
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.controlcenter=controlcenter

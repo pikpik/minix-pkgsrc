@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/30 13:24:58 damon Exp $
+# $NetBSD: Makefile,v 1.2 2001/11/01 15:32:28 damon Exp $
 
 DISTNAME=	gkrellweather-0.2.7
 PKGNAME=	gkrellm-weather-0.2.7
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.cse.unsw.edu.au/~flam/repository/c/gkrellm/
 

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.4 2001/10/06 11:47:31 rh Exp $
+# $NetBSD: buildlink.mk,v 1.5 2001/10/09 12:30:23 rh Exp $
 #
 # This Makefile fragment is included by packages that use libglade.
 #
@@ -17,7 +17,7 @@ LIBGLADE_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.libglade?=	libglade>=0.17
+BUILDLINK_DEPENDS.libglade?=	libglade>=0.17nb1
 DEPENDS+=	${BUILDLINK_DEPENDS.libglade}:../../devel/libglade
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.libglade=libglade

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/11/25 18:59:49 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/12/02 06:56:46 jlam Exp $
 
 DISTNAME=	apc_gui-1.0.3
 PKGNAME=	${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://apc.neuropeans.com/download/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/05/22 09:32:26 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/26 14:14:53 zuntum Exp $
 #
 
 DISTNAME=	chimera-2.0a19
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/
 

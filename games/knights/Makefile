@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/12/02 18:53:23 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/12/04 06:14:59 jlam Exp $
 
 DISTNAME=	knights-0.4.6
+PKGREVISION=	1
 CATEGORIES=	games kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=knights/}
 EXTRACT_SUFX=	.tar.gz

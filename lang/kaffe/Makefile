@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2001/09/27 23:18:17 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2002/02/27 03:02:35 tv Exp $
 #
 
 DISTNAME=		kaffe-1.0.6
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.kaffe.org/pub/kaffe/
 

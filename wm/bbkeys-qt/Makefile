@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/10 20:00:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2001/06/26 21:01:59 jlam Exp $
 #
 
 .include "../bbkeys/Makefile.common"
 
 PKGNAME=	bbkeys-qt-1.2
+PKGREVISION=	1
 COMMENT=	Qt-based configuration utility for bbkeys
 
 DEPENDS+=	bbkeys-0.3.5:../bbkeys

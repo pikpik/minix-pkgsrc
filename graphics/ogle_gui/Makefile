@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/12/10 20:58:55 veego Exp $
+# $NetBSD: Makefile,v 1.2 2001/12/12 01:32:33 enami Exp $
 
 DISTNAME=	ogle_gui-0.8.2
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.dtek.chalmers.se/groups/dvd/dist/
 
@@ -14,7 +15,7 @@ DEPENDS+=	ogle>=0.8.2:../../graphics/ogle
 # buildlink file for libglade would also link it with libxml1.
 # This would result in an core dump. Thats why ogle_gui dlopens
 # libglade.
-DEPENDS+=	libglade>=0.17:../../devel/libglade
+DEPENDS+=	libglade>=0.17nb1:../../devel/libglade
 
 CONFIGURE_ARGS+=--bindir=${PREFIX}/lib/ogle
 

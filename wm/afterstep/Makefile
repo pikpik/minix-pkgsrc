@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2001/10/24 22:11:08 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2002/03/04 19:16:05 fredb Exp $
 
 DISTNAME=	AfterStep-1.8.11
 PKGNAME=	afterstep-1.8.11
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	ftp://ftp.afterstep.org/stable/ \
 		ftp://ftp.digex.net/pub/X11/window-managers/afterstep/AfterStep/stable/

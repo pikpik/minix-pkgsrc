@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2000/11/08 15:09:36 abs Exp $
+# $NetBSD: Makefile,v 1.36 2001/02/16 15:22:25 wiz Exp $
 #
 
 DISTNAME=	kdegraphics-1.1.2
+PKGREVISION=	1
 CATEGORIES=	graphics kde
 MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
 		ftp://ftp.de.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/
@@ -11,7 +12,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	Graphics programs for the KDE integrated X11 desktop
 
-DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
+DEPENDS+=	kdebase-1.1.2nb1:../../x11/kdebase
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes

@@ -1,16 +1,17 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/07 08:09:16 skrll Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
 
 PKGNAME=		qt3-tools-${QTVERSION}
+PKGREVISION=		1
 COMMENT=		QT GUI (WYSIWYG) builder and other tools
 
 CONFIGURE_ARGS+=	-I${BUILDLINK_QTDIR}/include \
 			-L${BUILDLINK_QTDIR}/lib
 
 USE_BUILDLINK_ONLY=		yes
-BUILDLINK_DEPENDS.qt3-libs=	qt3-libs-${QTVERSION}
+BUILDLINK_DEPENDS.qt3-libs=	qt3-libs-${QTVERSION}nb1
 
 ALL_TARGET=		sub-tools
 

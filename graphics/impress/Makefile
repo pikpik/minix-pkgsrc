@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/13 14:38:05 manu Exp $
 #
 
 DISTNAME=	imp1.1b9
 PKGNAME=	impress-1.1b9
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.ntlug.org/~ccox/impress/
 

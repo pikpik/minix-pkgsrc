@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 18:01:22 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:29 jlam Exp $
 #
 
 DISTNAME=	nsca-1.1.0
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2000/08/10 17:50:04 pooka Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/16 15:10:55 wiz Exp $
 
 .include	"../nethack-lib/Makefile.common"
 
 DISTNAME=	nethack-all-${NETHACK_VERSION}
+PKGREVISION=	1
 CATEGORIES+=	x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/31 15:48:05 agc Exp $
+# $NetBSD: Makefile,v 1.2 2002/01/21 14:01:23 dmcmahill Exp $
 
 DISTNAME=	xtide-2.4
 PKGNAME=	${DISTNAME}
+PKGREVISION=	1
 CATEGORIES= 	misc x11
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/
 DISTFILES=	${XTIDE_SRC} harmonics.txt.gz offsets.xml.gz
@@ -10,7 +11,7 @@ MAINTAINER=	paul@whooppee.com
 HOMEPAGE=	http://www.flaterco.com/
 COMMENT=	X11 tide predictor
 
-DEPENDS+=	png>0.96:../../graphics/png
+DEPENDS+=	png>=1.2.1:../../graphics/png
 
 EXTRACT_ONLY=	${XTIDE_SRC}
 XTIDE_SRC=	${DISTNAME}${EXTRACT_SUFX}

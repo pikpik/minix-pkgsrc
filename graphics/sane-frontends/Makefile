@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2001/10/16 13:23:56 tron Exp $
+# $NetBSD: Makefile,v 1.7 2002/02/10 00:52:18 rh Exp $
 
 .include "../../graphics/sane-backends/Makefile.common"
 
 DISTNAME=       sane-frontends-${SANE_VERSION}
+PKGREVISION=	1
 
 COMMENT=	Frontends for access to scanners, digitals camera, frame grabbers etc
 

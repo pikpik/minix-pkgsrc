@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/19 13:02:23 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:42 jlam Exp $
 #
 
 DISTNAME=		cdrdao-1.1.5.src
 PKGNAME=		gcdmaster-1.1.5
+PKGREVISION=		1
 WRKSRC=			${WRKDIR}/cdrdao-1.1.5
 CATEGORIES=		sysutils
 MASTER_SITES=		http://prdownloads.sourceforge.net/cdrdao/
@@ -14,8 +15,8 @@ COMMENT=		GUI for cdrdao with some editing capability
 BUILD_DEPENDS+=		pccts-1.33.22:../../devel/pccts
 DEPENDS+=		cdrdao-1.1.5:../../sysutils/cdrdao
 DEPENDS+=		gtk---[0-9]*:../../x11/gtk--
-DEPENDS+=		gnome---[0-9]*:../../x11/gnome--
-DEPENDS+=		libglade-[0-9]*:../../devel/libglade
+DEPENDS+=		gnome---1.1.19nb1:../../x11/gnome--
+DEPENDS+=		libglade-0.17nb1:../../devel/libglade
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		YES

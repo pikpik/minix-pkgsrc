@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2001/11/13 21:12:44 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/12/04 06:14:58 jlam Exp $
 
 DISTNAME=	kyahoo-0.7
+PKGREVISION=	1
 CATEGORIES=	chat kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kyahoo/}
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2001/10/03 22:36:41 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2001/12/08 11:36:26 jmc Exp $
 #
 
 DISTNAME=		wxGTK-2.2.7
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
 

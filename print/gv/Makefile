@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2001/08/23 16:59:09 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2002/01/28 05:18:41 jlam Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/07/13 18:49:29 max Exp
 #
 
 DISTNAME=	gv-3.5.8
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/
 

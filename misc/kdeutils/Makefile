@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.43 2000/11/08 15:09:36 abs Exp $
+# $NetBSD: Makefile,v 1.44 2001/02/17 18:09:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/11/28 00:04:18 se Exp
 #
 
 DISTNAME=	kdeutils-1.1.2
+PKGREVISION=	1
 CATEGORIES=	misc kde
 MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
 		ftp://ftp.de.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/
@@ -12,7 +13,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	Various utilities for the KDE integrated X11 desktop
 
-DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
+DEPENDS+=	kdebase-1.1.2nb1:../../x11/kdebase
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:29 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/02/01 17:06:02 skrll Exp $
 #
 
 DISTNAME=	netsaint-plugins-1.2.8-4
 PKGNAME=	netsaint-plugin-snmp-1.2.8.4
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netsaintplug/}
 

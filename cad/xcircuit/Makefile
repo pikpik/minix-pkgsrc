@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/04/14 21:43:38 jtb Exp $
+# $NetBSD: Makefile,v 1.5 2001/05/03 22:02:59 jtb Exp $
 
 DISTNAME=	xcircuit-2.2.0
+PKGREVISION=	1
 CATEGORIES=	cad graphics
 MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
 

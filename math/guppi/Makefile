@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2002/01/25 02:00:11 rh Exp $
+# $NetBSD: Makefile,v 1.13 2002/01/28 09:36:52 drochner Exp $
 
 DISTNAME=	Guppi-0.40.0
 PKGNAME=	${DISTNAME:S/G/g/}
+PKGREVISION=	1
 CATEGORIES=	math graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/Guppi/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,9 +12,9 @@ HOMEPAGE=	http://www.gnome.org/guppi/
 COMMENT=	Plot program with integrated statistics capabilities
 
 DEPENDS+=	gnumeric>=0.75:../../math/gnumeric0
-BUILDLINK_DEPENDS.gnome-core=		gnome-core>=1.4
-BUILDLINK_DEPENDS.gdk-pixbuf=		gdk-pixbuf>=0.11.0
-BUILDLINK_DEPENDS.gdk-pixbuf-gnome=	gdk-pixbuf-gnome>=0.11.0
+BUILDLINK_DEPENDS.gnome-core=		gnome-core>=1.4.0.4nb1
+BUILDLINK_DEPENDS.gdk-pixbuf=		gdk-pixbuf>=0.11.0nb1
+BUILDLINK_DEPENDS.gdk-pixbuf-gnome=	gdk-pixbuf-gnome>=0.11.0nb1
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES

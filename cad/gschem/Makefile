@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 13:46:22 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/07/17 03:01:09 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gschem-${PKGVERSION}
 PKGNAME=		gschem-${PKGVERSION}
+PKGREVISION=		1
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.geda.seul.org/pub/geda/devel/${PKGVERSION}/ \
 			ftp://ieee.ing.uniroma1.it/pub/geda/devel/${PKGVERSION}/ \
@@ -13,7 +14,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Schematic capture tool
 
-DEPENDS+=		libgeda-${PKGVERSION}:../../cad/libgeda
+DEPENDS+=		libgeda-${PKGVERSION}nb1:../../cad/libgeda
 DEPENDS+=		geda-symbols-${PKGVERSION}:../../cad/geda-symbols
 
 CONFLICTS+=		gEDA<19991011

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2002/01/25 16:21:00 skrll Exp $
+# $NetBSD: Makefile,v 1.18 2002/01/30 10:44:21 zuntum Exp $
 
 DISTNAME=	MPlayer-0.60
 PKGNAME=	mplayer-0.60
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://mp.dev.hu/MPlayer/releases/
 EXTRACT_SUFX=	.tar.bz2
