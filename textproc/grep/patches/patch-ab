@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/dfa.c.orig	Wed Sep 26 18:57:55 2001
++++ src/dfa.c
+@@ -44,7 +44,7 @@ extern void free();
+ # include <locale.h>
+ #endif
+ 
+-#if defined HAVE_WCTYPE_H && defined HAVE_WCHAR_H && defined HAVE_MBRTOWC
++#if defined HAVE_WCTYPE_H && defined HAVE_WCHAR_H && defined HAVE_MBRTOWC && defined HAVE_WCTYPE
+ /* We can handle multibyte string.  */
+ # define MBS_SUPPORT
+ #endif
