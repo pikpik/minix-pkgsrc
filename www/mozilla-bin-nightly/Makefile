@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/09/05 05:59:48 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/10/19 08:47:42 grant Exp $
 #
 
 DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
@@ -38,7 +38,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/mozilla.sh ${PREFIX}/bin/mozilla-${PLATFORM}
 	@${FIND} ${MOZILLA_LIB} -type f -print \
 		| ${XARGS} ${CHMOD} a+r
-	@${FIND} ${MOZILLA_LIB} \( -type f -o -perm +x \) -print \
+	@${FIND} ${MOZILLA_LIB} \( -type f -o -perm -u+x \) -print \
 		| ${XARGS} ${CHMOD} a+rx
 	@${FIND} ${MOZILLA_LIB} -type d -print \
 		| ${XARGS} ${CHMOD} a+rx
