@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/10/28 18:12:10 garbled Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/07/17 20:36:13 steve Exp
 #
 
 DISTNAME=       less-332
 PKGNAME=        ja-less-332
 CATEGORIES=     japanese
-MASTER_SITES=   ${MASTER_SITE_GNU}
+MASTER_SITES=   ${MASTER_SITE_GNU:=/less/}
 
 PATCH_SITES=    ftp://ftp.big.or.jp/pub/usr2/jam/less/
 PATCHFILES=     less-332-iso242.patch.gz \

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.25 1999/02/20 22:48:27 hubertf Exp $
+# $NetBSD: Makefile,v 1.26 1999/02/25 17:08:33 sommerfe Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 #
 
 DISTNAME=	emacs-20.3
 CATEGORIES=	editors
-MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_GNU:=/emacs/}
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html

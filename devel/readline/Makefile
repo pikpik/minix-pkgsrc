@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 1998/07/14 15:55:38 agc Exp $
+# $NetBSD: Makefile,v 1.10 1999/03/08 10:53:56 agc Exp $
 #
 
 DISTNAME=	readline-2.2
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_GNU:=/readline/}
 
 MAINTAINER=	packages@netbsd.org
 
