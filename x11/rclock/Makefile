@@ -1,4 +1,5 @@
 # ex:ts=8
+# $NetBSD$
 # Ports collection Makefile for:  rclock
 # Version required:		  2.19
 # Date created:			  24th Feburary 1997

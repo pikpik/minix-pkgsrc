@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	tk8.0
 # Version required:	tk8.0
 # Date created:		19 August 1997

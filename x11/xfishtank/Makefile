@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:   xfishtank
 # Version required:    2.2
 # Date created:        24th April 1997
