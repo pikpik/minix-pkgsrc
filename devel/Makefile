@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.267 2002/03/01 02:34:51 abs Exp $
+# $NetBSD: Makefile,v 1.268 2002/03/07 12:20:20 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -229,6 +229,7 @@ SUBDIR+=	py-curses
 SUBDIR+=	py-distutils
 SUBDIR+=	py-expect
 SUBDIR+=	py-idle
+SUBDIR+=	py-readline
 SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
 SUBDIR+=	ratfor

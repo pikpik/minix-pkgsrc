@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2001/12/20 19:32:27 tron Exp $
+# $NetBSD: Makefile,v 1.19 2002/01/28 09:24:38 drochner Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
-CATEGORIES=	misc
+CATEGORIES=	devel misc
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.python.org/doc/tut/interacting.html
