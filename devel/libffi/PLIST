@@ -1,0 +1,8 @@
+@comment $NetBSD$
+include/ffi.h
+include/ffi_mips.h
+include/fficonfig.h
+lib/libffi-2.00-beta.so
+lib/libffi.a
+lib/libffi.la
+lib/libffi.so
