@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libswigpl.a
+lib/libswigpl.la
+lib/libswigpl.so
