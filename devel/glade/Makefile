@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/02/18 14:55:57 jmmv Exp $
-#
+# $NetBSD: Makefile,v 1.35 2003/02/20 23:19:01 salo Exp $
 
 DISTNAME=	glade-0.6.4
 CATEGORIES=	devel
@@ -10,6 +9,7 @@ HOMEPAGE=	http://glade.gnome.org/
 COMMENT=	User interface builder for GTK+
 
 GNU_CONFIGURE=		yes
+USE_GMAKE=		yes
 USE_X11BASE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
