@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/05/11 02:07:08 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 18:22:21 wiz Exp $
 
 DISTNAME=		fftw-2.1.3
 CATEGORIES=		math
@@ -16,9 +16,5 @@ CONFIGURE_ARGS+=	--enable-i386-hacks
 USE_FORTRAN=		yes
 USE_GMAKE=		yes
 INFO_FILES=		fftw.info
-
-post-install:
-	@${RM} -f ${LOCALBASE}/lib/librfftw.la
-	@${RM} -f ${LOCALBASE}/lib/libfftw.la
 
 .include "../../mk/bsd.pkg.mk"
