@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1998/11/04 08:01:31 garbled Exp $
+@comment $NetBSD$
 bin/esd
 bin/esd-config
 bin/esdcat
@@ -9,7 +9,8 @@ bin/esdloop
 bin/esdplay
 bin/esdrec
 bin/esdsample
+etc/esd.conf
 include/esd.h
 lib/libesd.a
-lib/libesd.so.2.8
+lib/libesd.so.2.15
 share/aclocal/esd.m4
