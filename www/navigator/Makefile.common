@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.11 2000/05/11 21:35:04 abs Exp $
+# $NetBSD: Makefile.common,v 1.12 2000/07/25 06:27:33 tron Exp $
 #
 # Common include file for communicator and navigator packages
 
@@ -102,7 +102,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${file} ${MOZILLA_HOME}/java/classes
 .endfor
 	cd ${MOZILLA_HOME} ; ${GTAR} xpzf ${WRKSRC}/nethelp-v${NS_VERS_SHORT}.nif
-	cd ${MOZILLA_HOME} ; ${GTAR} xpzf ${WRKSRC}/netscape-v${NS_VERS_SHORT}.nif
+	cd ${MOZILLA_HOME} ; ${GTAR} --exclude '*dynMotif*' -xpzf ${WRKSRC}/netscape-v${NS_VERS_SHORT}.nif
 .if (${BINNAME} == "communicator")
 	cd ${MOZILLA_HOME} ; ${GTAR} xpzf ${WRKSRC}/spellchk-v${NS_VERS_SHORT}.nif
 	${RM} -f ${PREFIX}/bin/netscape
