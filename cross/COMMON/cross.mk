@@ -1,4 +1,4 @@
-#	$NetBSD: cross.mk,v 1.17 2001/01/09 13:24:46 itojun Exp $
+#	$NetBSD: cross.mk,v 1.18 2001/01/29 10:25:07 abs Exp $
 
 # Shared definitions for building a cross-compile environment.
 
@@ -12,6 +12,7 @@ HOMEPAGE?=		http://egcs.cygnus.com/
 TARGET_DIR=		${PREFIX}/${TARGET_ARCH}
 COMMON_DIR=		${PKGSRCDIR}/cross/COMMON
 PLIST_PRE?=		${PKGDIR}/PLIST
+MESSAGE_SUBST+=		CROSSBASE=${CROSSBASE}
 
 pre-install: pre-install-dirs
 pre-install-dirs:
