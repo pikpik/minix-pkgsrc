@@ -1,0 +1,10 @@
+#!@SH@
+#
+# $NetBSD$
+
+case "${STAGE}" in
+POST-INSTALL)
+	${PREFIX}/bin/htfuzzy -v synonyms
+	${PREFIX}/bin/htfuzzy -v endings
+	;;
+esac
