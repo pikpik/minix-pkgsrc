@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/parseinfo.c.orig	Mon Mar 13 20:15:31 2000
+--- src/parseinfo.c.orig	Fri Aug 24 19:47:02 2001
 +++ src/parseinfo.c
-@@ -335,6 +335,14 @@
+@@ -340,6 +340,14 @@
  		goto error_return;
  	    }
  	}

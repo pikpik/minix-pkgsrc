@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/checkout.c.orig	Wed Jun 28 06:15:47 2000
+--- src/checkout.c.orig	Thu Jul 19 18:35:32 2001
 +++ src/checkout.c
-@@ -179,7 +179,7 @@
+@@ -191,7 +191,7 @@
  	    case 'p':
  		pipeout = 1;
  		run_module_prog = 0;	/* don't run module prog when piping */

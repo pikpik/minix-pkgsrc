@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/commit.c.orig	Wed Jul 26 21:29:01 2000
+--- src/commit.c.orig	Fri Aug 24 19:47:02 2001
 +++ src/commit.c
-@@ -996,7 +996,9 @@
+@@ -982,7 +982,9 @@
  		  xmalloc (sizeof (struct logfile_info)));
  	    li->type = status;
  	    li->tag = xstrdup (vers->tag);
@@ -13,7 +13,7 @@ $NetBSD$
  	    li->rev_new = NULL;
  	    p->data = (char *) li;
  	    (void) addnode (ulist, p);
-@@ -1497,7 +1499,7 @@
+@@ -1489,7 +1491,7 @@
  		run_print (stdout);
  		cvs_output ("'\n", 0);
  		cvs_flushout ();
