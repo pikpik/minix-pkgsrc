@@ -1,4 +1,4 @@
-# $NetBSD: NetBSD.mk,v 1.8 2005/03/18 18:16:35 tv Exp $
+# $NetBSD: NetBSD.mk,v 1.9 2005/03/22 15:40:06 tv Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -39,7 +39,11 @@ GZIP_CMD?=	/usr/bin/gzip -nf ${GZIP}
 HEAD?=		/usr/bin/head
 HOSTNAME_CMD?=	/bin/hostname
 ID?=		/usr/bin/id
+.if exists(/sbin/ldconfig)
 LDCONFIG?=	/sbin/ldconfig
+.else
+LDCONFIG?=	true
+.endif
 LN?=		/bin/ln
 LS?=		/bin/ls
 M4?=		/usr/bin/m4
