@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/ntping
 bin/straps
 bin/scotty
