@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pico
+lib/libpico.a
+man/man1/pico.1
