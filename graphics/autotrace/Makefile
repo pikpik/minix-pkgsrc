@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/09/03 12:25:07 adam Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/03 18:49:41 reed Exp $
 #
 
 DISTNAME=	autotrace-0.31.1
@@ -13,6 +13,8 @@ COMMENT=	Convert bitmap to vector graphics
 USE_BUILDLINK2=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
+USE_LIBTOOL=		YES
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 PKGCONFIG_OVERRIDE=	${WRKSRC}/autotrace.pc.in
 
