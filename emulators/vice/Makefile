@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/08/09 10:49:07 seb Exp $
+# $NetBSD: Makefile,v 1.36 2003/09/28 10:41:21 kristerw Exp $
 #
 
 DISTNAME=		vice-1.13
@@ -30,6 +30,7 @@ USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
+USE_GCC_SHLIB=		YES
 
 INFO_FILES=		vice.info
 
