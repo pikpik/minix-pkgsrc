@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2004/03/07 14:37:02 minskim Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/06 09:17:56 adam Exp $
 
-DISTNAME=	libmng-1.0.7
+DISTNAME=	libmng-1.0.8
 PKGNAME=	${DISTNAME:S/lib//}
 CATEGORIES=	graphics
 MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE:=libmng/} \
