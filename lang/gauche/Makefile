@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/03/29 09:34:26 kei Exp $
+# $NetBSD: Makefile,v 1.20 2004/05/09 14:23:55 grant Exp $
 #
 
 DISTNAME=	Gauche-0.7.4.2
@@ -41,10 +41,8 @@ INFO_FILES=		gauche-refe.info gauche-refj.info
 CONFIGURE_ARGS+=	--enable-multibyte=${GAUCHE_MULTIBYTE}
 .endif
 
-.if ${OPSYS} == "Darwin"
-.  include "../../devel/dlcompat/buildlink3.mk"
-.endif
 .include "../../devel/boehm-gc/buildlink3.mk"
+.include "../../devel/dlcompat/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 
