@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.192 2002/06/05 08:59:32 skrll Exp $
+# $NetBSD: Makefile,v 1.193 2002/06/17 11:40:13 grant Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -129,6 +129,7 @@ SUBDIR+=	p5-GDGraph
 SUBDIR+=	p5-GDGraph3d
 SUBDIR+=	p5-GDTextUtil
 SUBDIR+=	p5-GIFgraph
+SUBDIR+=	p5-Image-Info
 SUBDIR+=	p5-Image-Size
 SUBDIR+=	p5-PerlMagick
 SUBDIR+=	pgraf
