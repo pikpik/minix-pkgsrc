@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.260 2002/08/07 13:47:46 he Exp $
+# $NetBSD: Makefile,v 1.261 2002/09/07 20:29:05 jschauma Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -41,6 +41,7 @@ SUBDIR+=	gtk--
 SUBDIR+=	gtk-engines
 SUBDIR+=	gtk10
 SUBDIR+=	gtk2
+SUBDIR+=	gtk2-engines
 SUBDIR+=	gtkglarea
 SUBDIR+=	gtkstep
 SUBDIR+=	hanterm
