@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 1998/11/23 21:40:19 tv Exp $
+# $NetBSD: Makefile,v 1.42 1998/11/24 04:12:49 tv Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -38,6 +38,7 @@
 #    SUBDIR += irc
     SUBDIR += ircII
 #    SUBDIR += ircii-epic
+    SUBDIR += ircu
 #    SUBDIR += isc-dhcp
 #    SUBDIR += ivs
    SUBDIR += kdenetwork
