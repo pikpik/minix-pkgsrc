@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2003/09/02 07:25:41 xtraeme Exp $
+# $NetBSD: Makefile,v 1.48 2003/09/05 19:48:11 jmmv Exp $
 #
 
 COMMENT=	Window managers (for X)
@@ -55,8 +55,8 @@ SUBDIR+=	uwm
 SUBDIR+=	waimea
 SUBDIR+=	wampager
 SUBDIR+=	whiteBOX
-SUBDIR+=	windowmaker
 SUBDIR+=	windowlab
+SUBDIR+=	windowmaker
 SUBDIR+=	wm2
 SUBDIR+=	wmakerconf
 SUBDIR+=	wmextra
