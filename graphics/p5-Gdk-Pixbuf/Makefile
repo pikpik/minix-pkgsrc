@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/03 18:49:44 reed Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/26 02:27:42 wiz Exp $
 #
 
 .include "../../x11/p5-gtk/Makefile.common"
@@ -14,5 +14,5 @@ PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Gtk/Gdk/Pixbuf/.packlist
 
 SUBPACKAGE=	GdkPixbuf
 
-.include "../../www/gtkhtml/buildlink2.mk"
+.include "../../www/gtkhtml/buildlink3.mk"
 .include "../../x11/p5-gtk/Makefile.subpackage"
