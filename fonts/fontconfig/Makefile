@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 21:37:02 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/08/31 19:19:12 wiz Exp $
 #
 
 DISTNAME=	fontconfig-2.2.1
@@ -36,6 +36,7 @@ CONF_FILES=	${EGDIR}/fonts.conf ${PKG_SYSCONFDIR}/fonts.conf
 CONF_FILES+=	${EGDIR}/fonts.dtd ${PKG_SYSCONFDIR}/fonts.dtd
 CONF_FILES+=	${EGDIR}/local.conf ${PKG_SYSCONFDIR}/local.conf
 
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../textproc/expat/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
