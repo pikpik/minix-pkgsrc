@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/31 10:54:21 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:35 jmmv Exp $
 #
 
 DISTNAME=	biblook
@@ -13,7 +13,7 @@ COMMENT=	indexing and searching tools for BibTeX bibliography databases
 
 .include "../../mk/bsd.prefs.mk"
 
-MAKE_FLAGS=     CC=${CC}
+MAKE_FLAGS=     CC="${CC}"
 
 # override definitions in the package's Makefile via command line
 .if ${OPSYS} == "NetBSD"
