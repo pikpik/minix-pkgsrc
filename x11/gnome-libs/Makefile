@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.27 1999/06/19 15:19:13 tron Exp $
+# $NetBSD: Makefile,v 1.28 1999/07/14 20:45:27 tron Exp $
 #
 
 DISTNAME=		gnome-libs-1.0.10
 CATEGORIES=		x11 gnome
-MASTER_SITES=		ftp://ftp.gnome.org/pub/GNOME/gnome-1.0/sources/ \
-			ftp://ftp.sunet.se/pub/X11/GNOME/gnome-1.0/sources/ \
-			ftp://ftp.informatik.uni-bonn.de/pub/os/unix/gnome/gnome-1.0/sources/
+MASTER_SITES=		${MASTER_SITE_GNOME:=gnome-1.0/sources/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
