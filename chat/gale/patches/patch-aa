@@ -1,3 +1,4 @@
+$NetBSD$
 --- lib/term.c.orig	Wed Feb  7 10:32:09 2001
 +++ lib/term.c	Wed Feb  7 10:32:43 2001
 @@ -10,9 +10,11 @@

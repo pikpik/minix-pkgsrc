@@ -1,3 +1,4 @@
+$NetBSD$
 --- ../thotlib/Makefile.in.orig	Sun Jan 14 12:26:38 2001
 +++ ../thotlib/Makefile.in	Sun Jan 14 12:27:45 2001
 @@ -301,7 +301,7 @@

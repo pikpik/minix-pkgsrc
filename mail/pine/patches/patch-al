@@ -1,3 +1,4 @@
+$NetBSD$
 --- build.orig	Thu Jan  4 20:13:11 2001
 +++ build	Fri Feb 16 10:33:44 2001
 @@ -201,7 +201,7 @@
