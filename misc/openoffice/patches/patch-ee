@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- ../connectivity/source/parse/sqlnode.cxx.orig	Mon Oct  1 11:24:22 2001
++++ ../connectivity/source/parse/sqlnode.cxx
+@@ -67,7 +67,7 @@
+ #include <internalnode.hxx>
+ #endif
+ #define YYBISON	  1
+-#include <connectivity/sqlbison.hxx>
++#include <sqlbison.hxx>
+ #ifndef _CONNECTIVITY_SQLPARSE_HXX
+ #include <connectivity/sqlparse.hxx>
+ #endif

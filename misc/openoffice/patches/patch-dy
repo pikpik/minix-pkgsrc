@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- ../rsc/source/parser/rscicpx.cxx.orig	Thu Jul 19 12:37:37 2001
++++ ../rsc/source/parser/rscicpx.cxx
+@@ -86,7 +86,7 @@
+ #endif
+ 
+ #include "rsclex.hxx"
+-#include <rscyacc.yxx.h>
++#include <yyrscyacc.hxx>
+ 
+ /*************************************************************************
+ |*	  RscTypCont::InsWinBit()
