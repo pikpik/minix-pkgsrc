@@ -1,7 +1,5 @@
-# $NetBSD: Makefile,v 1.6 2000/08/18 22:46:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/21 21:01:33 hubertf Exp $
 #
-
-BROKEN=			"broken by PF_KEY API change"
 
 DISTNAME=		isakmpd-000220
 PKGNAME=		isakmpd-20000220
@@ -15,6 +13,8 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		itojun@kame.net
 
 RESTRICTED=		"Crypto; export-controlled"
+
+BROKEN=			"broken by PF_KEY API change"
 
 # this is not compatible with cross build - there's no other way
 .if !exists(/usr/include/netinet6/ipsec.h)
