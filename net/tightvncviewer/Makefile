@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/03/03 02:45:51 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/29 12:42:05 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
@@ -34,5 +34,8 @@ post-install:
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
+.if defined(USE_GCC3)
+.  include "../../lang/gcc3/buildlink2.mk"
+.endif
 
 .include "../../mk/bsd.pkg.mk"
