@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.539 2000/08/13 09:07:45 veego Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.540 2000/08/16 01:23:31 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -1734,7 +1734,7 @@ check-shlibs:
 		shlibs=""; \
 	fi ; \
 	for i in $${bins} $${shlibs} ; do \
-		err=`( ldd $$i 2>&1 || true ) | ( grep "not found" || true )`; \
+		err=`( ldd ${PREFIX}/$$i 2>&1 || true ) | ( grep "not found" || true )`; \
 		if [ "${PKG_VERBOSE}" != "" ]; then \
 			echo "ldd $$i" ; \
 		fi ; \
