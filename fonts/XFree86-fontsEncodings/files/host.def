@@ -1,8 +1,4 @@
-/*
- * $NetBSD$
- *
- * XFree86 packages for pkgsrc system
- */
+/* $NetBSD$ */
 
 #define ProjectRoot @PREFIX@
 
