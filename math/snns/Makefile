@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/02 21:42:37 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/21 12:33:35 wiz Exp $
 
 DISTNAME=	SNNSv4.2
 PKGNAME=	snns-4.2
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www-ra.informatik.uni-tuebingen.de/SNNS/
 COMMENT=	Software simulator for neural networks
 
 USE_BUILDLINK2=	YES
+USE_X11=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS= --enable-global --prefix=${LOCALBASE}
 
