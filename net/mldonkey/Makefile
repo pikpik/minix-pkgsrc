@@ -3,8 +3,6 @@
 
 .include "Makefile.common"
 
-PKGREVISION=		4
-
 USE_PKGINSTALL=		YES
 
 CONFIGURE_ARGS+=	--disable-gui
