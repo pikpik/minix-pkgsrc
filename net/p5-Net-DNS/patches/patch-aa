@@ -1,24 +1,19 @@
 $NetBSD$
 
---- Makefile.PL.orig	Sat Aug 10 06:06:27 2002
-+++ Makefile.PL
-@@ -24,17 +24,13 @@
- 
- 	print <<EOT;
- 
--You appear to be directly connected to the Internet.  I have some tests
--that try to query live nameservers.
-+You appear to be directly connected to the Internet. 
-+I will enable some tests that try to query live nameservers.
+--- Makefile.PL.orig	Thu Jun  5 19:42:58 2003
++++ Makefile.PL	Sat Sep 13 07:53:49 2003
+@@ -97,12 +97,8 @@
  
  EOT
  
 -	if (prompt("Do you want to enable these tests?", "y") =~ /^y/i) {
- 		open(ENABLED, ">t/online.enabled") || die "Can't touch ./t/online.enabled $!";
- 		close(ENABLED);
+-		open(ENABLED, ">t/online.enabled") || die "Can't touch ./t/online.enabled $!";
+-		close(ENABLED);
 -	} else {
 -		unlink("t/online.enabled"); # just to be shure...
 -	}
++	open(ENABLED, ">t/online.enabled") || die "Can't touch ./t/online.enabled $!";
++	close(ENABLED);
+ } else {
+ 	unlink("t/online.enabled"); # just to be shure...
  }
- 
- 
