@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/02/16 14:38:29 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:31:01 grant Exp $
 
 DISTNAME=		GTL-0.3.3
 PKGNAME=		gtl-0.3.3
@@ -11,6 +11,10 @@ COMMENT=		C++ graph data structure library based on the STL
 
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
+USE_BUILDLINK2=		# defined
+USE_GCC_SHLIB=		# defined
 
 LICENSE=		no-commercial-use
 
