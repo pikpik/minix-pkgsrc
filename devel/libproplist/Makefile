@@ -1,18 +1,17 @@
-# $NetBSD: Makefile,v 1.3 1999/04/22 04:08:50 jlam Exp $
+# $NetBSD: Makefile,v 1.4 1999/10/05 20:18:32 tron Exp $
 
-DISTNAME=	libPropList-0.9.1
-PKGNAME=	libproplist-0.9.1
+DISTNAME=	libPropList-0.10.0
+PKGNAME=	libproplist-0.10.0
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.windowmaker.org/pub/libs/ \
-		ftp://ftp.gnome.org/pub/libPropList/
+MASTER_SITES=	ftp://ftp.windowmaker.org/pub/beta/srcs/
 
 MAINTAINER=	jlam@netbsd.org
 
-GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	# defined
+USE_LIBTOOL=	# defined
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libPropList
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/libPropList
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libproplist
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/libproplist
 
 .include "../../mk/bsd.pkg.mk"
