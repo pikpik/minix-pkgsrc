@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/04/15 10:38:19 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/04/17 09:37:23 agc Exp $
 #
 
 DISTNAME=       cvs-1.9
@@ -18,7 +18,7 @@ MAKE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 MAN1=		cvs.1
 MAN5=		cvs.5
 MAN8=		cvsbug.8
-INFO_FILES=	cvs cvsclient
+INFO_FILES=	cvs.info cvsclient.info
 
 post-install:
 	${RM} -f ${PREFIX}/bin/cvs

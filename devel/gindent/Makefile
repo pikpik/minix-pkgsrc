@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:20 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/04/17 09:37:23 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/08/29 09:20:00 obrien Exp
 #
 
@@ -11,7 +11,7 @@ MAINTAINER=	kchowksey@hss.hns.com
 GNU_CONFIGURE=	yes
 
 MAN1=		indent.1
-INFO_FILES=	indent
+INFO_FILES=	indent.info
 
 MAKEFILE=	makefile
 
