@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/08/30 11:15:13 fredb Exp $
+# $NetBSD: Makefile,v 1.10 1999/11/14 05:23:26 fredb Exp $
 #
 
 DISTNAME=	ntp-4.0.98f
@@ -22,7 +22,7 @@ post-build:
 
 post-install:
 	cd ${WRKSRC}; \
-	    ${RM} html/.cvsignore* 2> /dev/null || true; \
+	    ${RM} html/.cvsignore* 2> /dev/null || ${TRUE}; \
 	    ${PAX} -r -w -s "/html/ntp4/" html ${DOCDIR}; \
 	    ${PAX} -r -w -s "/conf/ntp4/" conf ${EXAMPLESDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${DOCDIR}/ntp4 ${EXAMPLESDIR}/ntp4
