@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/yabasic
+man/man1/yabasic.1
+share/doc/html/yabasic/yabasic.htm
+@dirrm share/doc/html/yabasic
