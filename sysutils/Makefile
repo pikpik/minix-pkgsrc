@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2000/10/04 15:13:38 hubertf Exp $
+# $NetBSD: Makefile,v 1.73 2000/10/17 16:48:09 abs Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
@@ -52,6 +52,7 @@
     SUBDIR += socket
     SUBDIR += sshsh
     SUBDIR += sux
+    SUBDIR += sysgen
     SUBDIR += sysinfo
     SUBDIR += tkcron
     SUBDIR += tload
