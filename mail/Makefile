@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.231 2004/09/21 17:18:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.232 2004/09/25 00:33:58 grant Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -83,6 +83,7 @@ SUBDIR+=	libmilter812
 SUBDIR+=	libsieve
 SUBDIR+=	libsnert
 SUBDIR+=	libspf-alt
+SUBDIR+=	mail-notification
 SUBDIR+=	mailagent
 SUBDIR+=	mailcrypt
 SUBDIR+=	maildrop
