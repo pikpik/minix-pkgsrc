@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.291 2002/06/08 17:34:09 cjep Exp $
+# $NetBSD: Makefile,v 1.292 2002/06/09 11:20:56 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -91,6 +91,7 @@ SUBDIR+=	gnome-objc
 SUBDIR+=	gobo-eiffel
 SUBDIR+=	gpasm
 SUBDIR+=	gperf
+SUBDIR+=	gscope
 SUBDIR+=	gtexinfo
 SUBDIR+=	gtkdiff
 SUBDIR+=	gtl
