@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2004/11/25 18:50:31 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/28 23:18:21 reed Exp $
 
-DISTNAME=		gthumb-2.6.1
-PKGREVISION=		1
+DISTNAME=		gthumb-2.6.2
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gthumb/}
 
