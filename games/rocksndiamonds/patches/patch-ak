@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/libgame/system.c.orig	Sat Aug 10 15:09:49 2002
+--- src/libgame/system.c.orig	2003-08-04 23:01:27.000000000 +0200
 +++ src/libgame/system.c
-@@ -874,10 +874,16 @@
+@@ -1163,10 +1163,16 @@ inline void InitJoysticks()
    return;	/* joysticks generally deactivated by compile-time directive */
  #endif
  
