@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/07/29 00:09:59 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2000/08/23 23:14:32 tron Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/05/27 08:44:56 dburr Exp
 #
 
@@ -30,7 +30,7 @@ EVAL_PREFIX=		XPMDIR=xpm
 
 CPPFLAGS+=		-I${MOTIFBASE}/include
 CPPFLAGS+=		-I${X11BASE}/include
-CPPFLAGS+=		-I${LOCALBASE}/include 
+CPPFLAGS+=		-I${LOCALBASE}/include
 CPPFLAGS+=		-I${XPMDIR}/include
 CPPFLAGS+=		-Dunix
 
