@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2002/06/09 22:46:38 jlam Exp $
+# $NetBSD: Makefile,v 1.62 2002/07/01 17:25:59 toshii Exp $
 
 DISTNAME=		ethereal-0.9.5
 CATEGORIES=		net
@@ -9,7 +9,7 @@ MAINTAINER=		frueauf@netbsd.org
 HOMEPAGE=		http://www.ethereal.com/
 COMMENT=		Network protocol analyzer
 
-BUILD_DEPENDS+=		perl>=${PERL5_REQD}:../../lang/perl5
+USE_PERL5=		build
 
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
