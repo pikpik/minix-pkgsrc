@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/01/13 19:19:04 tv Exp $
+# $NetBSD: Makefile,v 1.32 2001/02/17 17:42:22 wiz Exp $
 #
 
 DISTNAME=       xosview-1.7.0.b
@@ -21,7 +21,7 @@ USE_XPM=	YES
 .if ${OPSYS} == "NetBSD"
 BUILD_DEFS=	UVM
 .elif ${OPSYS} == "SunOS"
-BUILD_DEPENDS+=	${LOCALBASE}/egcs/bin/g++:../../lang/egcs
+BUILD_DEPENDS+=	egcs-1.1.2:../../lang/egcs
 CONFIGURE_ENV+=	CXX=${LOCALBASE}/egcs/bin/g++
 CONFIGURE_ENV+= CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include"
 CONFIGURE_ENV+= LIBS="${LIBS} -lsocket -lnsl"

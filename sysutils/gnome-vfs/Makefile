@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/06 12:09:00 fredb Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 17:42:13 wiz Exp $
 #
 
 DISTNAME=	gnome-vfs-0.4.1
@@ -9,8 +9,8 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME Virtual File System
 
-BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
-BUILD_DEPENDS+=	${LOCALBASE}/bin/automake:../../devel/automake
+BUILD_DEPENDS+=	autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=	automake-1.4:../../devel/automake
 DEPENDS+=	GConf>=0.11:../../devel/GConf
 
 USE_X11BASE=	YES

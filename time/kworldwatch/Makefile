@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/01/05 01:40:38 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:32:05 wiz Exp $
 #
 
 DISTNAME=	kworldwatch-0.6
@@ -9,7 +9,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	hubertf@netbsd.org
 COMMENT=	Revolving world map indicating the time in each part of the world
 
-BUILD_DEPENDS+=	msgfmt:../../devel/gettext
+BUILD_USES_MSGFMT=	yes
+
 DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
 
 CONFLICTS+=	kdetoys-*

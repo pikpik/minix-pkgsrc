@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 05:44:04 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 09:07:01 agc Exp $
 
 DISTNAME=		cim-3.30
 CATEGORIES=		lang
@@ -8,7 +8,7 @@ MAINTAINER=		jtb@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/cim/cim.html
 COMMENT=		Simula compiler based on the C programming language
 
-BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 14:38:28 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/23 14:15:28 wiz Exp $
 #
 
 DISTNAME=		gmp-3.1.1
@@ -9,7 +9,7 @@ MAINTAINER=		hubertf@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/gmp/gmp.html
 COMMENT=		Library for arbitrary precision arithmetic
 
-BUILD_DEPENDS+=		${PREFIX}/bin/gm4:../../devel/m4
+BUILD_DEPENDS+=		m4-1.4:../../devel/m4
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

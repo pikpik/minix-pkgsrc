@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/03/11 13:46:11 martin Exp $
+# $NetBSD: Makefile,v 1.5 2001/03/11 19:20:50 martin Exp $
 #
 
 DISTNAME=		nut-0.44.3-pre5
@@ -33,7 +33,7 @@ GROUPDEL=		groupdel
 WRKSRC=			${WRKDIR}/nut-0.44.3
 DEINSTALL_FILE=         ${WRKDIR}/DEINSTALL
 INSTALL_FILE=           ${WRKDIR}/INSTALL
-BUILD_DEPENDS+=		autoreconf:../../devel/autoconf
+BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
 
 GNU_CONFIGURE=		yes
 NUT_DOCDIR=		${LOCALBASE}/share/doc/nut

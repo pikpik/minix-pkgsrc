@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 18:09:21 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/25 04:18:02 hubertf Exp $
 
 DISTNAME=		root_v2.23.08.source
 PKGNAME=		root-2.23
@@ -10,7 +10,7 @@ MAINTAINER=		drochner@netbsd.org
 HOMEPAGE=		http://root.cern.ch/
 COMMENT=		OO framework for data analysis and visualisation
 
-BUILD_DEPENDS+=		cint:../../lang/cint
+BUILD_DEPENDS+=		cint-5.14.40:../../lang/cint
 
 USE_GMAKE=		YES
 USE_XPM=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/25 04:17:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/16 12:52:31 wiz Exp $
 #
 
 DISTNAME=	eawpats-full-10
@@ -11,7 +11,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.stardate.bc.ca/eawpatches/
 COMMENT=	Eric A. Welsh' patches (audio samples) for TiMidity
 
-BUILD_DEPENDS=  unrar:../../archivers/unrar
+BUILD_DEPENDS=  unrar-*:../../archivers/unrar
 
 CONFLICTS=	guspatches-*
 

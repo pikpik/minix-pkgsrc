@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 15:22:18 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/04 09:06:11 tron Exp $
 
 DISTNAME=	fly-1.6.5
 CATEGORIES=	graphics www
@@ -8,7 +8,7 @@ MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://www.unimelb.edu.au/fly/fly.html
 COMMENT=	command-file interface for creating and modifying PNG images
 
-BUILD_DEPENDS+=	${LOCALBASE}/bin/gif2png:../../graphics/gif2png
+BUILD_DEPENDS+=	gif2png-2.4.2:../../graphics/gif2png
 DEPENDS+=	gd>=1.8.1:../../graphics/gd
 
 EVAL_PREFIX+=	XPMDIR=xpm

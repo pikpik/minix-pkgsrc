@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/06/06 03:10:20 minoura Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 15:10:58 wiz Exp $
 #
 
 DISTNAME=	sl
@@ -15,7 +15,7 @@ MAINTAINER=	minoura@netbsd.org
 HOMEPAGE=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/
 COMMENT=	Animated SL that runs across the terminal when you type `sl' instead of `ls'
 
-BUILD_DEPENDS=	nkf:../../japanese/nkf
+BUILD_DEPENDS=	nkf-1.7:../../japanese/nkf
 
 post-build:
 	nkf -e ${WRKSRC}/sl.1 > ${WRKSRC}/sl.1.euc

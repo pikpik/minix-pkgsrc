@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/03/13 12:37:23 is Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/25 11:34:57 simonb Exp $
 #
 
 DISTNAME=	mad-0.12.5b
@@ -11,7 +11,7 @@ MAINTAINER=	simonb@netbsd.org
 HOMEPAGE=	http://sourceforge.net/projects/mad/
 COMMENT=	High-quality MPEG audio decoder
 
-BUILD_DEPENDS+= msgfmt:../../devel/gettext
+BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=	YES
 USE_LIBINTL=	YES

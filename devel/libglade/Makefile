@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/02/16 14:38:35 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2001/03/18 00:40:50 mjl Exp $
 #
 
 DISTNAME=	libglade-0.16
@@ -9,7 +9,8 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.daa.com.au/~james/gnome/
 COMMENT=	Runtime interpreter for GLADE gui files
 
-BUILD_DEPENDS+=	msgfmt:../../devel/gettext
+BUILD_USES_MSGFMT=	yes
+
 # do not remove esound pre-requisite
 DEPENDS+=	esound>=0.2.18:../../audio/esound
 DEPENDS+=	gnome-libs>=1.2.1:../../x11/gnome-libs

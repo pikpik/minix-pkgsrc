@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/08/30 23:56:03 jwise Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 17:06:12 wiz Exp $
 
 DISTNAME=		XF86Setup-3.3.6
 CATEGORIES=		x11
@@ -9,8 +9,8 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.xfree86.org/
 COMMENT=		Graphical configuration tool for XFree86
 
-BUILD_DEPENDS= 		${TCLLIB}:../../lang/tcl
-BUILD_DEPENDS+=		${TKLIB}:../../x11/tk
+BUILD_DEPENDS= 		tcl-8.3.2nb1:../../lang/tcl
+BUILD_DEPENDS+=		tk-8.3.2:../../x11/tk
 
 ONLY_FOR_PLATFORM=	*-*-i386
 

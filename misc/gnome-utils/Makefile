@@ -1,4 +1,4 @@
-## $NetBSD: Makefile,v 1.30 2001/02/17 18:09:04 wiz Exp $
+## $NetBSD: Makefile,v 1.31 2001/02/26 20:19:47 tron Exp $
 
 DISTNAME=		gnome-utils-1.2.0
 CATEGORIES=		misc x11 gnome
@@ -8,9 +8,9 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Set of useful GNOME utilities and applications
 
-BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
-BUILD_DEPENDS+=		${LOCALBASE}/bin/automake:../../devel/automake
-BUILD_DEPENDS+=		bison:../../devel/bison
+BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		automake-1.4:../../devel/automake
+BUILD_DEPENDS+=		bison-*:../../devel/bison
 DEPENDS+=		gnome-core>=1.2.0:../../x11/gnome-core
 DEPENDS+=		libgtop>=1.0.9:../../devel/libgtop
 DEPENDS+=		libglade>=0.13:../../devel/libglade

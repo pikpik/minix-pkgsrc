@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2001/03/26 14:23:04 simonb Exp $
+# $NetBSD: Makefile,v 1.30 2001/03/27 02:58:39 fredb Exp $
 #
 
 DISTNAME=		lynx2.8.4dev.19
@@ -13,7 +13,7 @@ MAINTAINER=		fredb@netbsd.org
 HOMEPAGE=		http://lynx.browser.org/
 COMMENT=		Alphanumeric display oriented World-Wide Web Client
 
-BUILD_DEPENDS+=		msgfmt:../../devel/gettext
+BUILD_USES_MSGFMT=	yes
 
 WRKSRC=			${WRKDIR}/lynx2-8-4
 

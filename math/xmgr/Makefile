@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/23 23:14:29 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 18:22:49 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/12/12 22:27:21 jseger Exp
 #
 
@@ -15,7 +15,7 @@ MAINTAINER=		packages@NetBSD.org
 HOMEPAGE=		http://plasma-gate.weizmann.ac.il/Xmgr/
 COMMENT=		Powerful XY plotting tool for workstations or X-terminals using X
 
-BUILD_DEPENDS=		bison:../../devel/bison
+BUILD_DEPENDS=		bison-*:../../devel/bison
 DEPENDS+=		netcdf-3.4:../../devel/netcdf
 
 USE_FORTRAN=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/12/19 16:36:52 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 13:46:24 wiz Exp $
 #
 
 DISTNAME=	ipal-20001210
@@ -10,7 +10,7 @@ MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://www.icarus.com/eda/ipal/index.html
 COMMENT=	Libs and utils for manipulating PAL designs (development version)
 
-BUILD_DEPENDS+= bison:../../devel/bison
+BUILD_DEPENDS+= bison-*:../../devel/bison
 DEPENDS+=       gtk+>=1.2.7:../../x11/gtk
 
 GNU_CONFIGURE=	YES

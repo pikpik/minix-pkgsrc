@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/09/05 09:33:16 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 17:21:43 wiz Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
@@ -17,7 +17,7 @@ COMMENT=	Cookie-based authentication for Apache
 
 DEPENDS+=	apache-1.3.*:../../www/apache
 # For "apxs":
-BUILD_DEPENDS=	${PERL5}:../../lang/perl5-base
+BUILD_DEPENDS=	perl-5.*:../../lang/perl5
 
 EXTRACT_CMD=	${DO_NADA}
 

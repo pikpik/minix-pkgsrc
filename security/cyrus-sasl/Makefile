@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/17 17:49:41 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/04 03:26:51 assar Exp $
 
 DISTNAME=		cyrus-sasl-1.5.24
 PKGNAME=		${DISTNAME}nb3
@@ -10,7 +10,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://asg2.web.cmu.edu/sasl/
 COMMENT=		Simple Authentication and Security Layer
 
-BUILD_DEPENDS+=		${LOCALBASE}/bin/automake:../../devel/automake
+BUILD_DEPENDS+=		automake-1.4:../../devel/automake
 
 GNU_CONFIGURE=		# defined
 USE_SSL=		# defined

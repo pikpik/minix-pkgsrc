@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/13 23:04:37 tron Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 18:19:04 wiz Exp $
 
 DISTNAME=		libpcap-0.6.1
 CATEGORIES=		net
@@ -8,8 +8,8 @@ MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.tcpdump.org/
 COMMENT=		System-independent interface for user-level packet capture
 
-BUILD_DEPENDS+=		bison:../../devel/bison
-BUILD_DEPENDS+=		flex:../../devel/flex
+BUILD_DEPENDS+=		bison-*:../../devel/bison
+BUILD_DEPENDS+=		flex-*:../../devel/flex
 
 ONLY_FOR_PLATFORM=	SunOS-*-*	# in NetBSD base system
 

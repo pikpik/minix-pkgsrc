@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2001/02/06 06:06:32 itojun Exp $
+# $NetBSD: Makefile,v 1.37 2001/02/17 17:22:13 wiz Exp $
 #
 
 DISTNAME=		lynx2.8.3rel.1
@@ -28,7 +28,7 @@ MAINTAINER=		fb@enteract.com
 HOMEPAGE=		http://lynx.browser.org/
 COMMENT=		Alphanumeric display oriented World-Wide Web Client
 
-BUILD_DEPENDS+=		msgfmt:../../devel/gettext
+BUILD_USES_MSGFMT=	yes
 
 USE_LIBINTL=		yes
 

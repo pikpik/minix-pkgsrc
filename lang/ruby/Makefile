@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/02/17 09:07:27 agc Exp $
+# $NetBSD: Makefile,v 1.19 2001/02/25 04:17:56 hubertf Exp $
 #
 
 DISTNAME=	ruby-1.4.6
@@ -15,7 +15,7 @@ MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://www.ruby-lang.org/
 COMMENT=	the Object-Oriented Script Language
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/bison:../../devel/bison
+BUILD_DEPENDS=	bison-*:../../devel/bison
 DEPENDS+=	gdbm>=1.7.3:../../databases/gdbm
 DEPENDS+=	readline>=4.0:../../devel/readline
 

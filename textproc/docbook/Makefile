@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 17:37:20 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/25 04:18:16 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.4 1998/06/27 05:19:35 asami Exp
 #
 
@@ -16,7 +16,7 @@ MAINTAINER=	rh@NetBSD.ORG
 HOMEPAGE=	http://www.ora.com/davenport/
 COMMENT=	SGML DTD designed for computer documentation
 
-BUILD_DEPENDS=	unzip:../../archivers/unzip
+BUILD_DEPENDS=	unzip-*:../../archivers/unzip
 DEPENDS+=	iso8879-1986:../../textproc/iso8879
 
 NO_MTREE=       yes
