@@ -1,9 +1,10 @@
+# $NetBSD$
+
 SHELL=/bin/sh
 INSTALL_PROGRAM=${BSD_INSTALL_PROGRAM}
 INSTALL_MAN=${BSD_INSTALL_MAN}
 INSTALL_DATA=${BSD_INSTALL_DATA}
 LD=cc -s
-PREFIX?=/usr/local
 # if your compiler needs -o option for creating .o files uncomment this line:
 #OOPT = -o $@
 #
