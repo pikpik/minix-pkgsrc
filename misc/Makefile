@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2002/07/14 10:06:38 wiz Exp $
+# $NetBSD: Makefile,v 1.135 2002/07/21 19:22:22 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -7,6 +7,7 @@ SUBDIR+=	9menu
 SUBDIR+=	ascii
 SUBDIR+=	asr-manpages
 SUBDIR+=	astrolog
+SUBDIR+=	bbappconf
 SUBDIR+=	bbweather
 SUBDIR+=	bidwatcher
 SUBDIR+=	bottlerocket
