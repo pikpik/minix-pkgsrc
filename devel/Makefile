@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.446 2003/12/29 17:48:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.447 2003/12/30 04:30:56 grant Exp $
 #
 
 COMMENT=	Development utilities
@@ -45,6 +45,7 @@ SUBDIR+=	bonobo
 SUBDIR+=	bonobo-activation
 SUBDIR+=	bonobo-conf
 SUBDIR+=	boost
+SUBDIR+=	buddy
 SUBDIR+=	buildtool
 SUBDIR+=	buildtool-doc
 SUBDIR+=	c-cpp-reference
@@ -211,6 +212,7 @@ SUBDIR+=	libstash
 SUBDIR+=	libstree
 SUBDIR+=	libstroke
 SUBDIR+=	libtar
+SUBDIR+=	libtecla
 SUBDIR+=	libtool
 SUBDIR+=	libtool-base
 SUBDIR+=	libtool-info
