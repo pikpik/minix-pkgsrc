@@ -2,6 +2,11 @@
 #
 # $NetBSD: navigator.sh,v 1.2 1999/06/18 23:14:17 abs Exp $
 #
+
+# Avoid multi user problems caused by debug code in 4.76
+rm -f /tmp/ndebug 2>/dev/null
+ln -s /dev/null /tmp/ndebug 2>/dev/null
+
 MOZILLA_HOME=@@MOZILLA_HOME@@ ;	export MOZILLA_HOME
 NS_PLUGINS_DIR=@@NS_PLUGINS_DIR@@;	export NS_PLUGINS_DIR
 XNLSPATH=${MOZILLA_HOME}/nls ;		export XNLSPATH
