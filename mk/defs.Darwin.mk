@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.17 2002/01/19 21:29:41 agc Exp $
+# $NetBSD: defs.Darwin.mk,v 1.18 2002/02/27 04:41:22 yyamano Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -20,7 +20,7 @@ FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 GMAKE?=		/usr/bin/make
 GREP?=		/usr/bin/grep
-GTAR?=		/usr/bin/tar
+GTAR?=		/usr/bin/gnutar	
 GUNZIP_CMD?=	/usr/bin/gunzip -f
 GZCAT?=		/usr/bin/gzcat
 GZIP?=		-9
