@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2001/02/22 07:43:08 tron Exp $
+# $NetBSD: Makefile,v 1.30 2001/02/25 04:18:12 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
 #
 
@@ -55,6 +55,12 @@ ASMFLAG=
 .else
 OBJS_EXT=
 ASMFLAG=	-DPORTABLE -DMPORTABLE
+.endif
+
+.include "../../mk/endian.mk"
+
+.if (${MACHINE_ENDIAN} == "big")
+CFLAGS+=        -DHIGHFIRST
 .endif
 
 BUILD_DEFS+=	USE_RSAREF2 M68060 ASMFLAG
