@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/08/22 13:44:19 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:54:48 wiz Exp $
 #
 
-DISTNAME=	NewsCache-0.99.15
+DISTNAME=	NewsCache-0.99.17
 CATEGORIES=	news
 MASTER_SITES=	http://www.infosys.tuwien.ac.at/NewsCache/download/
 
