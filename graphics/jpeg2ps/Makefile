@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/04 16:31:39 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/21 16:51:47 martti Exp $
 #
 
 DISTNAME=	jpeg2ps-1.9
@@ -9,7 +9,7 @@ MAINTAINER=	dillo@giga.or.at
 HOMEPAGE=	http://www.pdflib.com/jpeg2ps/
 COMMENT=	Convert jpeg images to PostScript level 2 or 3
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
 RESTRICTED=	may not be sold
 NO_SRC_ON_CD=	${RESTRICTED}
