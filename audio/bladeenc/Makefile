@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 1999/09/20 09:30:18 agc Exp $
+# $NetBSD: Makefile,v 1.9 1999/12/12 00:06:38 mjl Exp $
 #
 
-DISTNAME=		bladeenc-0.90-src-stable
-PKGNAME=		bladeenc-0.90.0
+DISTNAME=		bladeenc-0.92.0-src-stable
+PKGNAME=		bladeenc-0.92.0
 CATEGORIES=		audio
 MASTER_SITES=		http://bladeenc.mp3.no/source/
 
