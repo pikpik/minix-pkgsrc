@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- configure.orig	2004-02-09 18:00:00.000000000 -0500
++++ configure
+@@ -3213,6 +3213,7 @@ else
+ echo "${ECHO_T}no" >&6
+ fi;
+ 
++CPPFLAGS="$CPPFLAGS -DSYSCONFDIR=\\\"$sysconfdir\\\""
+ 
+ echo "$as_me:$LINENO: checking whether to build example version of /bin/su" >&5
+ echo $ECHO_N "checking whether to build example version of /bin/su... $ECHO_C" >&6
