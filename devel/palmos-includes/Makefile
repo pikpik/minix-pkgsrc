@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/15 23:08:59 dillo Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 07:56:59 jmc Exp $
 #
 
 DISTNAME=       sdk50-win
@@ -25,7 +25,7 @@ SITES_sdk35-update1.tar.gz=http://www.palmos.com/cgi-bin/sdk35.cgi
 
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
-EXTRACT_CMD.zip=	${LOCALBASE}/bin/unzip -aqo $${extract_file}
+EXTRACT_CMD_OPTS.zip=	-aqo
 
 RESTRICTED=	Redistribution not permitted
 NO_SRC_ON_CDROM=${RESTRICTED}
