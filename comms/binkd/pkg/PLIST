@@ -1,0 +1,4 @@
+@comment $NetBSD$
+etc/binkd.cfg
+man/man8/binkd.8
+sbin/binkd
