@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.19 2003/08/04 21:48:02 drochner Exp $
+# $NetBSD: buildlink2.mk,v 1.20 2003/08/05 13:46:58 drochner Exp $
 
 .if !defined(KDELIBS3_BUILDLINK2_MK)
 KDELIBS3_BUILDLINK2_MK=	# defined
@@ -18,7 +18,6 @@ BUILDLINK_FILES_CMD.kdelibs3= \
 KDEDIR=				${BUILDLINK_PREFIX.kdelibs3}
 
 BUILDLINK_DEPENDS.audiofile=	libaudiofile>=0.2.3nb1
-USE_OPENSSL_VERSION=		${OPENSSL_VERSION_096}
 
 .include "../../audio/libaudiofile/buildlink2.mk"
 .include "../../audio/arts/buildlink2.mk"
