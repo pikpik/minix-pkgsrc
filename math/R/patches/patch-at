@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- src/modules/X11/dataentry.c.orig
++++ src/modules/X11/dataentry.c
+32c32
+< #define NeedFunctionPrototypes 0
+---
+> /* #define NeedFunctionPrototypes 0 */
