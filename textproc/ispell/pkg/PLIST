@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/buildhash
 bin/findaffix
 bin/icombine
