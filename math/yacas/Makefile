@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/12 13:23:05 dillo Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:48:22 grant Exp $
 #
 
 DISTNAME=	yacas-1.0.48
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.xs4all.nl/~apinkus/yacas.html
 COMMENT=	Yet Another Computer Algebra System
 
 GNU_CONFIGURE=	YES
+USE_GCC_SHLIB=	YES
 
 TEST_TARGET=	test
 
