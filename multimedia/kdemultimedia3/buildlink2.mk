@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2004/02/05 07:43:30 markd Exp $
 #
 # This Makefile fragment is included by packages that use kdemultimedia.
 #
@@ -9,7 +9,7 @@
 KDEMULTIMEDIA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			kdemultimedia
-BUILDLINK_DEPENDS.kdemultimedia?=		kdemultimedia>=3.2.0
+BUILDLINK_DEPENDS.kdemultimedia?=		kdemultimedia>=3.2.0nb1
 BUILDLINK_PKGSRCDIR.kdemultimedia?=		../../multimedia/kdemultimedia3
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.kdemultimedia=kdemultimedia
