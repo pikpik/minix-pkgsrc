@@ -1,8 +1,8 @@
 $NetBSD$
 
---- agent/snmp_agent.c.orig	Sat Mar 15 02:37:08 2003
+--- agent/snmp_agent.c.orig	2004-03-15 23:52:08.000000000 +0000
 +++ agent/snmp_agent.c
-@@ -74,6 +74,10 @@ SOFTWARE.
+@@ -92,6 +92,10 @@ SOFTWARE.
  #include <net-snmp/agent/net-snmp-agent-includes.h>
  #include <net-snmp/library/snmp_assert.h>
  
