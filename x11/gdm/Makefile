@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2004/01/22 12:56:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.47 2004/01/23 21:50:50 jmmv Exp $
 #
 
 DISTNAME=	gdm-2.4.4.7
@@ -12,6 +12,7 @@ MAINTAINER=	mjl@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Gnome Display Manager - a re-implementation of the xdm program
 
+BUILDLINK_DEPENDS.libart2=libart2>=2.3.11
 BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
