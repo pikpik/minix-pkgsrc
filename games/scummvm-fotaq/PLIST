@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/fotaq
+share/games/fotaq/queen.1
+@dirrm share/games/fotaq
