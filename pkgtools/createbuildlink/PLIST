@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/createbuildlink
+man/man8/createbuildlink.8
