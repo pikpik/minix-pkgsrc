@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2000/10/16 05:57:44 rh Exp $
+# $NetBSD: Makefile,v 1.20 2000/10/20 14:54:29 wennmach Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
     SUBDIR += base64
     SUBDIR += bbcim
     SUBDIR += cbmconvert
+    SUBDIR += ish
     SUBDIR += kdesupport
     SUBDIR += latex2rtf
     SUBDIR += mpack
