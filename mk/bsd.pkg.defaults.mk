@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.276 2004/08/09 22:37:34 seb Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.277 2004/08/10 05:59:45 schmonz Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -118,6 +118,15 @@ PKGSRC_SHOW_BUILD_DEFS?=yes
 # built and behave)
 # Possible: "yes", not "yes"
 # Default: "yes"
+
+.if defined(PKG_DEVELOPER)
+PKGSRC_SHOW_PATCH_ERRORMSG?=no
+.else
+PKGSRC_SHOW_PATCH_ERRORMSG?=yes
+.endif
+# Print a potentially helpful error message when the "patch" stage fails
+# Possible: "yes", not "yes"
+# Default: "no" if PKG_DEVELOPER is defined, "yes" otherwise
 
 PKGSRC_RUN_TEST?=	no
 # Run test target before install
