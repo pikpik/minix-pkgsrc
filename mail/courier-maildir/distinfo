@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2004/02/21 14:45:22 jlam Exp $
+
+SHA1 (courier-0.45.6.tar.bz2) = 0d8e36211af42e7b539cf53fe1f596e1ecb15117
+Size (courier-0.45.6.tar.bz2) = 4310616 bytes
+SHA1 (patch-aa) = 2c44b5cdff95ecff28f08469a11663957ce76cb5
