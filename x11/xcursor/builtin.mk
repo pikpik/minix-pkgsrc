@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: builtin.mk,v 1.1 2004/03/10 17:57:15 jlam Exp $
 
 _X11_XCURSOR_XCURSOR_H=	${X11BASE}/include/X11/Xcursor/Xcursor.h
 
@@ -56,7 +56,9 @@ BUILDLINK_DEPENDS.xcursor+=	xcursor>=1.1.1
 BUILDLINK_DEPENDS.Xrender+=	Xrender>=0.8
 .  for _mkfile_ in buildlink3.mk builtin.mk
 .    if exists(../../x11/Xfixes/${_mkfile_})
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 .      include "../../x11/Xfixes/${_mkfile_}"
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
 .    endif
 .  endfor
 .endif
