@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/06/05 14:39:00 rh Exp $
+# $NetBSD: Makefile,v 1.36 2000/06/08 16:42:42 wennmach Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -21,6 +21,7 @@
     SUBDIR += pgp2
     SUBDIR += pgp5
     SUBDIR += portsentry
+    SUBDIR += priv
     SUBDIR += py-crypto
     SUBDIR += racoon
     SUBDIR += rc5des
