@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sun Dec  3 19:44:54 1995
++++ configure
+@@ -3581,6 +3581,8 @@
+   CATALOGS="$new_CATALOGS"
+ fi
+ 
++DATADIRNAME=${PKGLOCALEDIR}
++
+ 
+ 
+ trap '' 1 2 15
