@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/gist
 bin/yorick
 @unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/yorick.info
