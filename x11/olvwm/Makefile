@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/09/13 22:50:35 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2000/10/16 06:39:27 jlam Exp $
 #
 
 DISTNAME=	olvwm4.src4
@@ -15,7 +15,6 @@ DEPENDS+=	xview-clients>=3.2.1nb1:../xview-clients
 USE_X11BASE=	# defined
 USE_XPM=	# defined
 USE_IMAKE=	# defined
-XMKMF=		${X11PREFIX}/bin/xvmkmf -a
 
 NO_WRKSUBDIR=	# defined
 
