@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.50 2001/09/23 21:25:49 tron Exp $
+# $NetBSD: Makefile,v 1.51 2001/09/24 09:51:09 tron Exp $
 
-DISTNAME=		ethereal-0.8.19
+DISTNAME=		ethereal-0.8.20
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ethereal.com/pub/ethereal/ \
 			ftp://ftp.sunet.se/pub/network/monitoring/ethereal/
