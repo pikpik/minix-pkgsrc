@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/04/22 22:58:47 jtb Exp $
+# $NetBSD: Makefile,v 1.9 2001/04/22 23:49:55 jtb Exp $
 
 DISTNAME=	octave-2.1.33
 PKGNAME=	octave-2.1.34
@@ -43,7 +43,7 @@ OCTAVE_DOC=	faq/Octave-FAQ.ps interpreter/octave.ps \
 		liboctave/liboctave.ps refcard/refcard-a4.ps \
 		refcard/refcard-legal.ps  refcard/refcard-letter.ps
 OCTAVE_HTML=	faq/Octave-FAQ_toc.html interpreter/octave_*.html \
-		liboctave/liboctave_*.html
+		interpreter/octave.html liboctave/liboctave_*.html
 
 post-patch:
 	@cd ${WRKSRC}/libcruft/misc && ${RM} -f xstopx.f dostop.c
