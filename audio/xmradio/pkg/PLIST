@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xmradio
+lib/X11/app-defaults/XMradio
+share/doc/xmradio/README
+@dirrm share/doc/xmradio
