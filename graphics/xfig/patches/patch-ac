@@ -1,13 +1,22 @@
-$NetBSD: patch-ac,v 1.1 1999/01/05 21:37:55 frueauf Exp $
+$NetBSD$
 
---- Fig.ad.orig	Thu Jan 20 04:48:58 2000
-+++ Fig.ad	Thu Jun 22 00:52:08 2000
-@@ -16,7 +16,7 @@
+--- f_util.c.orig	Fri Mar 30 10:22:37 2001
++++ f_util.c
+@@ -102,7 +102,7 @@
+ get_directory(direct)
+     char	   *direct;
+ {
+-#if defined(SYSV) || defined(SVR4) || defined(_POSIX_SOURCE)
++#if defined(SYSV) || defined(SVR4) || defined(_POSIX_SOURCE) || defined(__NetBSD__)
+     extern char	   *getcwd();
  
- ! pdfviewer - put your favorite pdf viewer here.  
- !		This is for viewing the xfig how-to guide and man pages
--Fig.pdfviewer:			acroread %f
-+Fig.pdfviewer:			gv %f
+ #else
+@@ -110,7 +110,7 @@
  
- ! Spell check program - put your favorite spelling check program here.
- !		It must write the misspelled words to standard output.
+ #endif
+ 
+-#if defined(SYSV) || defined(SVR4) || defined(_POSIX_SOURCE)
++#if defined(SYSV) || defined(SVR4) || defined(_POSIX_SOURCE) || defined(__NetBSD__)
+     if (getcwd(direct, PATH_MAX) == NULL) {	/* get current working dir */
+ 	put_msg("Can't get current directory");
+ 	beep();
