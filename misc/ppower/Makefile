@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/05 03:31:25 dsainty Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/26 13:09:11 dsainty Exp $
 #
 
 DISTNAME=	ppower-0.1.5
@@ -13,8 +13,6 @@ COMMENT=	X10 controller software for the CM11A interface
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK3=		YES
-#USE_GNU_TOOLS+=		make
-#USE_PKGLOCALEDIR=	YES
 
 CONFIGURE_ARGS+=	--sysconfdir="${PKG_SYSCONFDIR}"
 
