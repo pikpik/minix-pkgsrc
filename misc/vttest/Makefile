@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/06/10 11:40:10 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:09:28 wiz Exp $
 #
 
-DISTNAME=	vttest-20000208
+DISTNAME=	vttest-20020422
 CATEGORIES=	misc benchmarks
 MASTER_SITES=	ftp://dickey.his.com/vttest/
 EXTRACT_SUFX=	.tgz
