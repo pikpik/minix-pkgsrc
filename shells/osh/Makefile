@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2004/06/11 10:01:35 cjep Exp $
-#
+# $NetBSD: Makefile,v 1.9 2004/12/27 21:13:01 wiz Exp $
 
-DISTNAME=	osh-041028
+DISTNAME=	osh-050131
 CATEGORIES=	shells
 MASTER_SITES=	http://jneitzel.sdf1.org/osh/src/
 
@@ -11,9 +10,9 @@ COMMENT=	Implementation of the UNIX 6th Edition shell
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
-USE_PKGINSTALL=	yes
-PKG_SHELL=	${PREFIX}/bin/osh
+USE_BUILDLINK3=		yes
+USE_PKGINSTALL=		yes
+PKG_SHELL=		${PREFIX}/bin/osh
 
 TEST_TARGET=	check
 
