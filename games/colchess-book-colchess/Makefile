@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/24 20:12:17 jlam Exp $
 
 DISTNAME=		colchess
-PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}
+PKGNAME=		${CHESS_ENGINE}-book-${DIST_SUBDIR}
 WRKSRC=			${WRKDIR}/ColChess
 CATEGORIES=		games
 MASTER_SITES=		http://www.ast.cam.ac.uk/~cmf/chess/
