@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2001/07/26 09:47:38 abs Exp $
-#
+# $NetBSD: Makefile,v 1.5 2001/08/06 13:22:08 taya Exp $
 
-DISTNAME=	galeon-0.12pre1
+DISTNAME=	galeon-0.11.5
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=galeon/}
 
@@ -36,8 +35,7 @@ LDFLAGS+=       -Wl,-R${MOZ_LIBDIR}
 LDFLAGS+=	-export-dynamic
 
 pre-configure:
-	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf && ${TOUCH} aclocal.m4 && \
-		./setup-gconf-source ${PREFIX}/etc)
+	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf && ${TOUCH} aclocal.m4)
 
 post-install:
 	${SED} -e "s,@PREFIX@,${PREFIX},g" ${FILESDIR}/galeon.in > ${PREFIX}/bin/galeon
@@ -45,6 +43,5 @@ post-install:
 	${CHGRP} ${BINGRP} ${PREFIX}/bin/galeon
 	${CHMOD} ${BINMODE} ${PREFIX}/bin/galeon
 	${BSD_INSTALL_PROGRAM_DIR} ${PREFIX}/lib/galeon
-	${BSD_INSTALL_SCRIPT} ${WRKSRC}/setup-gconf-source ${PREFIX}/lib/galeon
 
 .include "../../mk/bsd.pkg.mk"
