@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2003/01/25 04:58:35 hubertf Exp $
+# $NetBSD: Makefile,v 1.96 2003/02/23 05:01:09 kei Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -22,6 +22,7 @@ SUBDIR+=	cupsomatic
 SUBDIR+=	cupsomatic-ppds
 SUBDIR+=	dvidvi
 SUBDIR+=	dvipdfm
+SUBDIR+=	dvipdfmx
 SUBDIR+=	enscript
 SUBDIR+=	foomatic-gswrapper
 SUBDIR+=	ggv
