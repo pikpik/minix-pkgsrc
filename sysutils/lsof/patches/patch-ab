@@ -1,0 +1,15 @@
+$NetBSD: patch-aa,v 1.4 1998/09/28 10:57:39 frueauf Exp $
+
+*** dialects/n+obsd/dproc.c.orig	Thu Oct 22 13:57:22 1998
+--- dialects/n+obsd/dproc.c	Thu Oct 22 13:55:52 1998
+***************
+*** 411,416 ****
+--- 411,418 ----
+   * Read the vm_map structure.  Search its vm_map_entry structure list.
+   */
++ #if	!defined(UVM)
+  	if (!vmsp.vm_map.is_main_map)
+  	    return;
++ #endif
+  	for (i = 0; i < vmsp.vm_map.nentries; i++) {
+  
