@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.67 2000/07/31 01:56:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.68 2000/08/05 03:11:45 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
-    SUBDIR += addnerd
     SUBDIR += amanda
     SUBDIR += amanda-client
     SUBDIR += amanda-common
