@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.620 2005/03/06 17:04:16 taca Exp $
+# $NetBSD: Makefile,v 1.621 2005/03/21 21:39:43 tv Exp $
 #
 
 COMMENT=	Development utilities
@@ -317,6 +317,7 @@ SUBDIR+=	p5-Bit-Vector
 SUBDIR+=	p5-Cache-Cache
 SUBDIR+=	p5-Cache-Simple-TimedExpiry
 SUBDIR+=	p5-Carp-Assert
+SUBDIR+=	p5-Carp-Clan
 SUBDIR+=	p5-Class-Accessor
 SUBDIR+=	p5-Class-Autouse
 SUBDIR+=	p5-Class-Container
