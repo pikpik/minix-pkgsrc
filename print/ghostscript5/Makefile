@@ -5,6 +5,7 @@ DISTNAME=	ghostscript-5.50
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
 		ftp://ftp.cs.wisc.edu/ghost/aladdin/fonts/ \
+		http://www.erdw.ethz.ch/~bonk/ftp/gs-driver-distrib/ \
 		http://www.ozemail.com.au/~geoffk/pdfencrypt/ \
 		ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
