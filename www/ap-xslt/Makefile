@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/07/24 19:45:30 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/10 16:06:51 wiz Exp $
 
 DISTNAME=	modxslt
 PKGNAME=	ap-xslt-1.1
@@ -10,12 +10,11 @@ MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://modxslt.sourceforge.net/
 COMMENT=	Simple, fast XSLT transformations for apache
 
-DEPENDS+=	apache{,6}-1.3.*:../../www/apache
-DEPENDS+=	sablotron>=0.71nb1:../../textproc/sablotron
+USE_BUILDLINK2=	YES
 
-USE_PERL5=	build	# for "apxs"
+APACHE_MODULE_NAME=	mod_xslt.so
+APACHE_MODULE_SRC=	*.c
 
-do-install:
-		${LOCALBASE}/sbin/apxs -i ${WRKSRC}/mod_xslt.so
-
+.include "../../textproc/sablotron/buildlink2.mk"
+.include "../../www/apache/module.mk"
 .include "../../mk/bsd.pkg.mk"
