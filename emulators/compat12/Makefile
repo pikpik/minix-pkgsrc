@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/03/26 17:35:39 tv Exp $
+# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:23 agc Exp $
 #
 
 DISTNAME=	compat12
@@ -8,18 +8,14 @@ EXTRACT_SUFX=	_${ARCH}.tgz
 
 MAINTAINER=	tv@netbsd.org
 
+ONLY_FOR_ARCHS=	amiga atari hp300 i386 mac68k mvme68k pc532 sparc sun3
+
 HAS_CONFIGURE=	yes
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/usr/lib
 PLIST_SRC=	${WRKSRC}/.PLIST
 
-pre-fetch:
-	@case ${ARCH} in \
-		amiga|atari|hp300|i386|mac68k|mvme68k|pc532|sparc|sun3) ;; \
-		*) ${ECHO_MSG} "This package cannot be built on ${ARCH}."; exit 1;; \
-	esac
-
-pre-configure:
+post-extract:
 	@${INSTALL} -c -m 755 ${FILESDIR}/configure ${WRKSRC}
 
 post-install:
