@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/08/25 13:37:36 agc Exp $
+# $NetBSD: Makefile,v 1.10 1999/08/29 21:50:21 jlam Exp $
 
 DISTNAME=       siag-3.1.20
 CATEGORIES=     misc textproc math
@@ -28,6 +28,6 @@ XAW_TYPE?=	3d
 
 post-install:
 	${MV} ${PREFIX}/doc/siag ${PREFIX}/share/doc/siag
-	${RMDIR} ${PREFIX}/doc
+	-${RMDIR} ${PREFIX}/doc
 
 .include "../../mk/bsd.pkg.mk"
