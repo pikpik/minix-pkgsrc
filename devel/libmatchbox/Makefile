@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/30 11:25:58 agc Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:30 tv Exp $
 #
 
 DISTNAME=	libmatchbox-1.4
@@ -15,6 +15,7 @@ USE_X11=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 
