@@ -28,3 +28,13 @@ $NetBSD$
   
  
  for ac_func in getcwd getwd
+@@ -44218,9 +44221,6 @@
+ 
+     $SHELL $srcdir/ltconfig --output=shlibtool --disable-static --srcdir=$srcdir --cache-file=./config.cache $srcdir/ltmain.sh
+     SHARED_LIBTOOL='$(SHELL) $(top_builddir)/shlibtool'
+-  else
+-    PHP_COMPILE='$(COMPILE) -c $< && touch $@'
+-    CXX_PHP_COMPILE='$(CXX_COMPILE) -c $< && touch $@'
+   fi
+ fi
+ 
