@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.13 2001/01/04 15:10:46 agc Exp $
+@comment $NetBSD$
 kaffe/bin/appletviewer
 kaffe/bin/install-jar
 kaffe/bin/jar
@@ -72,15 +72,15 @@ kaffe/share/kaffe/rmi.jar
 kaffe/share/kaffe/servlet.jar
 kaffe/share/kaffe/tools.jar
 kaffe/share/license.terms
-@dirrm kaffe/bin
-@dirrm kaffe/include/kaffe
-@dirrm kaffe/include
+@dirrm kaffe/share/kaffe
+@dirrm kaffe/share
+@dirrm kaffe/man/man1
+@dirrm kaffe/man
+@dirrm kaffe/libexec
 @dirrm kaffe/lib/kaffe/security
 @dirrm kaffe/lib/kaffe
 @dirrm kaffe/lib
-@dirrm kaffe/libexec
-@dirrm kaffe/man/man1
-@dirrm kaffe/man
-@dirrm kaffe/share/kaffe
-@dirrm kaffe/share
+@dirrm kaffe/include/kaffe
+@dirrm kaffe/include
+@dirrm kaffe/bin
 @dirrm kaffe
