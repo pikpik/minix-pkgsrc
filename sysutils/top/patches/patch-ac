@@ -1,24 +1,8 @@
-$NetBSD: patch-ac,v 1.4 1999/02/10 15:20:06 frueauf Exp $
+$NetBSD$
 
-Add UVM definition for NetBSD
-Correct the install commands
-
---- Makefile.X.orig	Wed Nov 20 02:19:24 1996
-+++ Makefile.X	Wed Mar 17 10:21:02 1999
-@@ -55,6 +55,12 @@
- TERMCAP = %termcap%
- 
- CFLAGS = %cflgs% $(CDEFS)
-+.ifndef UVM
-+UVM=	
-+.endif
-+.if ${UVM} != ""
-+CFLAGS+=        -DUVM
-+.endif
- LINTFLAGS = -x $(CDEFS)
- 
- all: Makefile top.local.h top
-@@ -100,10 +106,10 @@
+--- ./Makefile.X.orig	Wed Nov 20 03:19:24 1996
++++ ./Makefile.X	Sat Feb 19 03:34:17 2000
+@@ -100,10 +100,10 @@
  install: top top.1 install-top install-$(MANSTY)
  
  install-top:
