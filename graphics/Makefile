@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2000/07/31 01:56:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.86 2000/08/03 19:21:44 rh Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -91,7 +91,6 @@
     SUBDIR += xli
     SUBDIR += xpaint
     SUBDIR += xpdf
-    SUBDIR += xpdf-crypto
     SUBDIR += xplot
     SUBDIR += xpm
     SUBDIR += xsane
