@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/knews
 lib/X11/app-defaults/Knews
 man/cat1/knews.0
