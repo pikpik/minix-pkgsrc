@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+Please install inetd.conf(5)'s entry like bellow.
+
+ ftp stream tcp nowait nobody ${LOCALBASE}/libexec/ftp.proxy ftp.proxy -e -l -m
+
+You may consider to select your own port other than standard ftp.
+
+===========================================================================
