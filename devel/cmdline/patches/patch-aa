@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Config.mk.orig	Thu Jan  2 13:33:36 1997
+--- Config.mk.orig	Thu Jan  2 18:33:36 1997
 +++ Config.mk
 @@ -13,7 +13,7 @@
  ###^^#####################################################################
@@ -47,7 +47,7 @@ $NetBSD$
  #
     ## name of C++ compiler
 -CC=CC
-+CC=$(LIBTOOL) g++
++CC=$(LIBTOOL) $(CXX)
  
     ## option to specify other include directories to search
  INC=-I

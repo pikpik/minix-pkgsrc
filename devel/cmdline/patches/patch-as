@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/lib/Makefile.orig	Thu Jan  2 13:33:31 1997
+--- src/lib/Makefile.orig	Thu Jan  2 18:33:31 1997
 +++ src/lib/Makefile
 @@ -70,20 +70,25 @@
  test: cmdtest$(EXECEXT)
@@ -15,7 +15,7 @@ $NetBSD$
  	$(RANLIB) $@
  
 +lib$(LIBNAME).la: $(OBJS)
-+	$(LIBTOOL) g++ -o lib$(LIBNAME).la $(OBJS:.o=.lo) \
++	$(LIBTOOL) $(CXX) -o lib$(LIBNAME).la $(OBJS:.o=.lo) \
 +		-rpath $(PREFIX)/lib -version-info 0:0
 +
  ###
