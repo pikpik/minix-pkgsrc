@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.Linux.i386,v 1.1.1.1 2002/09/19 22:33:49 jschauma Exp $
+# $NetBSD: Makefile.Linux.i386,v 1.2 2002/09/20 13:54:53 jschauma Exp $
 #
 
 DIST_DIR_NAME=		linux22
 
 DEPENDS+=		gtk+>=1.2.10:../../x11/gtk
-PLIST_SRC=		PLIST PLIST.linux
+PLIST_SRC+=		${FILESDIR}/PLIST.linux
 
 post-extract:
 	${MKDIR} ${WRKSRC}/dest
