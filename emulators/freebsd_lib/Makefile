@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/09/02 20:57:02 explorer Exp $
+# $NetBSD: Makefile,v 1.2 1998/09/04 12:06:13 explorer Exp $
 #
 
 DISTNAME=		freebsd_lib-2.2.7
 CATEGORIES=		emulators
-MASTER_SITES=		${MASTER_SITE_LOCAL} http://www.flame.org/NetBSD/
+MASTER_SITES=		http://www.flame.org/NetBSD/
 ONLY_FOR_ARCHS=		i386
 
 MAINTAINER=		packages@netbsd.org
