@@ -1,0 +1,14 @@
+@comment $NetBSD$
+bin/libgdgeda-config
+include/gdgeda/gd.h
+include/gdgeda/gd_io.h
+include/gdgeda/gdfontg.h
+include/gdgeda/gdfontl.h
+include/gdgeda/gdfontmb.h
+include/gdgeda/gdfonts.h
+include/gdgeda/gdfontt.h
+include/gdgeda/mtables.h
+include/gdgeda/gdcache.h
+lib/libgdgeda.a
+lib/libgdgeda.so.3.0
+@dirrm include/gdgeda
