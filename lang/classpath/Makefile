@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2002/10/04 08:59:34 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/24 13:36:43 agc Exp $
 
 DISTNAME=		classpath-0.05
 CATEGORIES=		devel
 MASTER_SITES=		ftp://alpha.gnu.org/gnu/classpath/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/classpath
 COMMENT=		Class libraries for Java VM
 
