@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2004/08/22 19:32:51 jlam Exp $
+# $NetBSD: options.mk,v 1.4 2004/10/22 05:43:29 xtraeme Exp $
 
 .if defined(DSPAM_DELIVERY_AGENT) && !empty(DSPAM_DELIVERY_AGENT:Mcustom)
 DSPAM_DELIVERY_AGENT:=	${DSPAM_DELIVERY_AGENT_ARGS}
@@ -99,7 +99,7 @@ CONFIGURE_ARGS+=	--enable-preferences-extension
 ### Tells DSPAM to create virtual user ids.  Use this if your users are
 ### not system users.
 ###
-.if !empty(PKG_OPTIONS:Mvirtualusers) 
+.if !empty(PKG_OPTIONS:Mvirtualusers)
 CONFIGURE_ARGS+=	--enable-virtual-users
 .endif
 
