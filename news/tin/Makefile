@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/05/21 00:28:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2001/05/23 13:15:34 dillo Exp $
 # $FreeBSD Id: Makefile,v 1.17 1997/06/16 06:39:51 max Exp
 
 DISTNAME=	tin-1.4.5
@@ -16,6 +16,9 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.tin.org/
 COMMENT=	TIN newsreader (termcap based)
+
+LICENSE=	tin-license
+RESTRICTED=	"Profit from use, sale, trade, or reproduction disallowed"
 
 GNU_CONFIGURE=	yes
 
