@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2004/04/28 05:25:54 jlam Exp $
+# $NetBSD: Makefile,v 1.135 2004/04/28 05:26:39 jlam Exp $
 
 DISTNAME=		openssh-3.8p1
 PKGNAME=		openssh-3.8.1
@@ -99,6 +99,9 @@ CONFIGURE_ARGS+=	--disable-libutil
 .endif
 .if (${OPSYS} == "SunOS") && (${OS_VERSION} == "5.8" || ${OS_VERSION} == "5.9")
 CONFIGURE_ARGS+=	--disable-utmp --disable-wtmp
+.endif
+.if ${OPSYS} == "Linux"
+CONFIGURE_ARGS+=	--enable-md5-password
 .endif
 
 # The ssh-askpass program is in ${X11BASE}/bin or ${X11PREFIX}/bin depending
