@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/13 21:10:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/13 21:14:19 xtraeme Exp $
 
 DISTNAME=		obconf-1.5
 CATEGORIES=		wm
@@ -12,7 +12,7 @@ USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 
 .include "../../devel/libglade2/buildlink2.mk"
-.include "../../wm/openbox3/buildlink2.mk"
+.include "../../wm/openbox/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
