@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.204 2001/03/14 16:42:12 skrll Exp $
+# $NetBSD: Makefile,v 1.205 2001/03/20 14:19:12 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -20,6 +20,7 @@ SUBDIR+=	bounce
 SUBDIR+=	cftp
 SUBDIR+=	choparp
 SUBDIR+=	cia
+SUBDIR+=	citrix_ica
 SUBDIR+=	coda5_client
 SUBDIR+=	coda5_server
 SUBDIR+=	coda_client
