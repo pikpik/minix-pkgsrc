@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.533 2000/08/01 12:00:48 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.534 2000/08/03 15:45:42 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -2468,7 +2468,7 @@ package-noinstall:
 # Dependency checking
 ################################################################
 
-.if !target(depends)
+.if !target(install-depends)
 install-depends: install-run-depends install-build-depends
 
 install-build-depends:
