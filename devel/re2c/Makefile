@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/29 16:17:41 agc Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/22 08:24:30 grant Exp $
 
 DISTNAME=	re2c-0.9.1
 CATEGORIES=	devel
@@ -9,10 +9,11 @@ HOMEPAGE=	http://www.tildeslash.org/
 COMMENT=	Deterministic Finite State Automaton generator
 
 USE_GNU_TOOLS+=	make
+USE_LANGUAGES=	c c++
 ALL_TARGET=	default
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/re2c ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/re2c.1 ${PREFIX}/man/man1/
+	${INSTALL_PROGRAM} ${WRKSRC}/re2c ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/re2c.1 ${PREFIX}/man/man1
 
 .include "../../mk/bsd.pkg.mk"
