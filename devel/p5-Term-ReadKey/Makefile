@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:20:22 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:32:50 grant Exp $
 #
 
 VERS=		2.21
@@ -12,7 +12,9 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/TermReadKey/
 COMMENT=	Change terminal modes and perform non-blocking reads
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Term/ReadKey/.packlist
 
 .include "../../lang/perl5/module.mk"
