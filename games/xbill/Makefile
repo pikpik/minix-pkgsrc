@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/12/29 16:23:33 pooka Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/23 23:14:25 tron Exp $
 #
 
 DISTNAME=		xbill-2.0
@@ -8,6 +8,8 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.xbill.org/
+
+CONFLICT=		gnome-games-*
 
 USE_IMAKE=		YES
 USE_XPM=		YES
