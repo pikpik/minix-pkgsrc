@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/rc.d/bpalogin
+sbin/bpalogin
+share/examples/bpalogin/bpalogin.conf
+@dirrm share/examples/bpalogin
