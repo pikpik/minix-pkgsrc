@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.7 2003/12/24 09:53:47 jmmv Exp $
 #
 
 DISTNAME=		cabextract-0.6
@@ -11,6 +11,6 @@ COMMENT=		Microsoft cabinet (.CAB) file extractor
 
 USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.pkg.mk"

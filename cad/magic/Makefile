@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/02/09 14:38:53 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:25:10 grant Exp $
 #
 
 DISTNAME=	magic-7.1
@@ -10,7 +10,7 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://vlsi.cornell.edu/magic/
 COMMENT=	Integrated circuit layout system
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 USE_X11=	YES
 USE_BUILDLINK2=	YES
 MAKE_ENV+=	MAGIC_HOME=${PREFIX}
