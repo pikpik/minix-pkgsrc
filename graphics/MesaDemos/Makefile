@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/10 18:55:00 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/18 20:54:39 wiz Exp $
 
 PKGNAME=		MesaDemos-${MESA_VERSION}
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
@@ -7,8 +7,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME:S/Lib//}
 MAINTAINER=		jschauma@netbsd.org
 COMMENT=		OpenGL examples and Demos
 
-# XXX:
-BROKEN=			"This package not available until Mesa is updated to 5.0!"
+MESA_REQD=		5.0
 
 .include "../Mesa/Makefile.common"
 
