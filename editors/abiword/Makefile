@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.86 2005/02/10 19:27:32 wiz Exp $
+# $NetBSD: Makefile,v 1.87 2005/02/24 09:55:34 adam Exp $
 
 .include "Makefile.common"
 PKGNAME=	abiword-${ABIWORD_VERSION}
@@ -18,8 +18,8 @@ PKG_SUPPORTED_OPTIONS=	gucharmap
 .include "../../mk/bsd.options.mk"
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(PKG_OPTIONS:Mgucharmap)
-CONFIGURE_ARGS+=	--enable-gucharmap
+.if empty(PKG_OPTIONS:Mgucharmap)
+CONFIGURE_ARGS+=	--disable-gucharmap
 .endif
 CONFIGURE_ARGS+=	--with-sys-wv
 .if ${OPSYS} == "Darwin"
