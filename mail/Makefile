@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 1997/11/19 16:07:51 agc Exp $
+# $NetBSD: Makefile,v 1.4 1997/11/23 16:17:56 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
 #    SUBDIR += bulk_mailer
 #    SUBDIR += cucipop
 #    SUBDIR += cyrus
-#    SUBDIR += elm
+    SUBDIR += elm
 #    SUBDIR += exim
     SUBDIR += exmh
 #    SUBDIR += faces
