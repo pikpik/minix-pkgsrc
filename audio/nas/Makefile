@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2003/10/26 00:02:05 grant Exp $
+# $NetBSD: Makefile,v 1.34 2003/10/26 00:03:42 grant Exp $
 
 DISTNAME=	nas-1.6.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	audio
 MASTER_SITES=	http://radscan.com/nas/ \
