@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2002/11/29 20:18:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.77 2003/01/13 21:24:02 magick Exp $
 #
 
 COMMENT=	Editors
@@ -32,6 +32,7 @@ SUBDIR+=	kile
 SUBDIR+=	leim
 SUBDIR+=	leim21
 SUBDIR+=	manedit
+SUBDIR+=	matlab-mode
 SUBDIR+=	mg2a
 SUBDIR+=	mule
 SUBDIR+=	mule-ucs
