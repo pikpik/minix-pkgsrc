@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/02/19 01:02:14 tv Exp $
+# $NetBSD: Makefile,v 1.21 1999/02/20 22:48:38 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/02/15 21:24:42 steve Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www-inf.enst.fr/~demaille/ftp/a2ps/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www-inf.enst.fr/~demaille/a2ps/
 
-DEPENDS=	papersize-1.0:../../print/papersize
+DEPENDS=	papersize-1.0.1:../../print/papersize
 
 STRIP=
 GNU_CONFIGURE=	yes

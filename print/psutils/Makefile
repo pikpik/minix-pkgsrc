@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/11/10 14:08:16 agc Exp $
+# $NetBSD: Makefile,v 1.13 1999/02/20 22:48:42 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/01/08 18:52:13 fenner Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.dcs.ed.ac.uk/pub/ajcd/
 
 MAINTAINER=	packages@netbsd.org
 
-DEPENDS+=	papersize-1.0:../../print/papersize
+DEPENDS+=	papersize-1.0.1:../../print/papersize
 
 WRKSRC=		${WRKDIR}/psutils
 USE_PERL5=	yes

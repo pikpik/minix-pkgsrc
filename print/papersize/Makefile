@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/11/09 17:55:22 agc Exp $
 #
 
-DISTNAME=	papersize-1.0
+DISTNAME=	papersize-1.0.1
 CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty
