@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/qmail-qfilter
+share/examples/qmail-qfilter/block-long-dates
+share/examples/qmail-qfilter/deny-filetypes
+share/examples/qmail-qfilter/rename-filetypes
+@dirrm share/examples/qmail-qfilter
