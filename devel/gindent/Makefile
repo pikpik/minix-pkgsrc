@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2002/08/25 21:49:39 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2002/08/31 00:29:59 wiz Exp $
 #
 
 DISTNAME=	indent-2.2.8a
@@ -16,6 +16,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--program-prefix=g
 
 INFO_FILES=	indent.info
+
+MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/texinfo.mk"
