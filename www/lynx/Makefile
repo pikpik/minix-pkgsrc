@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2000/11/15 03:29:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.33 2000/11/17 14:26:00 wiz Exp $
 #
 
 DISTNAME=		lynx2.8.3rel.1
-PKGNAME=		lynx-2.8.3rel.1
+PKGNAME=		lynx-2.8.3.1
 CATEGORIES=		www
 MASTER_SITES=		http://lynx.isc.org/current/ \
 			http://lynx.isc.org/po/ \
