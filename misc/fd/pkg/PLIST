@@ -1,4 +1,8 @@
 @comment $NetBSD$
 bin/fd
-man/ja_JP.EUC/man1/fd.1.gz
-etc/fdrc
+bin/fd-unicd.tbl
+share/doc/fd/FAQ
+share/doc/fd/HISTORY
+share/doc/fd/README
+share/doc/fd/ToAdmin
+@dirrm share/doc/fd
