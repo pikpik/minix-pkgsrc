@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/26 02:27:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/30 18:32:33 jlam Exp $
 #
 
 DISTNAME=		mod_auth_mysql.c
@@ -18,7 +18,7 @@ DIST_SUBDIR=		ap2-auth-mysql
 EXTRACT_ONLY=		${DISTNAME}.gz
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 NO_CONFIGURE=		yes
 
 APACHE_MODULE_NAME=	mod_auth_mysql
@@ -43,7 +43,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${DOC_DIR}
 	${INSTALL_DATA} ${WRKSRC}/mysql-group-auth.txt ${DOC_DIR}
 
-.include "../../www/apache2/buildlink2.mk"
-.include "../../databases/mysql-client/buildlink2.mk"
+.include "../../www/apache2/buildlink3.mk"
+.include "../../databases/mysql-client/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
