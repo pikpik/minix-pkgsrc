@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/06/20 04:41:45 grant Exp $
+# $NetBSD: Makefile,v 1.40 2002/06/26 03:50:49 kent Exp $
 #
 
 COMMENT=	communication programs
@@ -18,6 +18,7 @@ SUBDIR+=	everybuddy
 SUBDIR+=	everybuddy-gnome
 SUBDIR+=	fugu
 SUBDIR+=	gaim
+SUBDIR+=	gaim-gnome
 SUBDIR+=	gale
 SUBDIR+=	gnomeicu
 SUBDIR+=	goofey
