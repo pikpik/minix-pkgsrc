@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/27 18:33:38 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/29 06:43:00 jlam Exp $
 #
 
 DISTNAME=		libwmf-0.1.17
@@ -10,7 +10,7 @@ HOMEPAGE=		http://www.csn.ul.ie/~caolan/docs/libwmf.html
 
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 DEPENDS+=		freetype-*:../../graphics/freetype
-DEPENDS+=		png>=1.0.3:../../graphics/png
+DEPENDS+=		png>=1.0.6:../../graphics/png
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 # uses own gd, which has some extra functionality

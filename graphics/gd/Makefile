@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/02/09 20:20:54 tron Exp $
+# $NetBSD: Makefile,v 1.13 2000/03/17 21:05:19 he Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/02/14 07:55:45 asami Exp
 #
 
@@ -10,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.boutell.com/gd/
 
 DEPENDS+=	freetype-*:../../graphics/freetype
-DEPENDS+=	png>=1.0.3:../../graphics/png
+DEPENDS+=	png>=1.0.6:../../graphics/png
 DEPENDS+=	xpm-*:../../graphics/xpm
 DEPENDS+=	jpeg-*:../../graphics/jpeg
 
