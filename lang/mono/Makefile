@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/01 13:11:44 jmmv Exp $
 #
 
-DISTNAME=	mono-0.21
+DISTNAME=	mono-0.23
 CATEGORIES=	lang
 MASTER_SITES=	http://www.go-mono.org/archive/
 
