@@ -69,11 +69,13 @@
  * SUCH DAMAGE.
  */
 
-#include <nbcompat.h>
-
 #ifdef MAKE_BOOTSTRAP
 static char rcsid[] = "$NetBSD: hash.c,v 1.3 2003/08/07 10:04:37 agc Exp $";
 #else
+#if HAVE_CONFIG_H
+#include "config.h"
+#endif
+#include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif

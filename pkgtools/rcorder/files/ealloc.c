@@ -68,8 +68,10 @@
  * SUCH DAMAGE.
  */
 
+#if HAVE_CONFIG_H
+#include "config.h"
+#endif
 #include <nbcompat.h>
-
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif

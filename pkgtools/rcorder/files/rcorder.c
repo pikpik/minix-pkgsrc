@@ -58,8 +58,10 @@
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#if HAVE_CONFIG_H
+#include "config.h"
+#endif
 #include <nbcompat.h>
-
 #if HAVE_SYS_TYPES_H
 #include <sys/types.h>
 #endif
