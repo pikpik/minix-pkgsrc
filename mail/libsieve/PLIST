@@ -1,0 +1,9 @@
+@comment $NetBSD$
+include/sieve/sieve_err.h
+include/sieve/sieve_interface.h
+lib/libsieve.a
+lib/libsieve.la
+lib/libsieve.so
+lib/libsieve.so.1
+lib/libsieve.so.1.0
+@dirrm include/sieve
