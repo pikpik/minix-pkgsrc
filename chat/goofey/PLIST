@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/goofey
+man/man1/goofey.1
