@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.489 2004/04/19 18:14:28 xtraeme Exp $
+# $NetBSD: Makefile,v 1.490 2004/04/27 17:15:20 kristerw Exp $
 #
 
 COMMENT=	Development utilities
@@ -352,6 +352,7 @@ SUBDIR+=	p5-Test-Unit
 SUBDIR+=	p5-Tie-IxHash
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-gettext
+SUBDIR+=	p5-glib2
 SUBDIR+=	p5-perl-headers
 SUBDIR+=	p5-subversion
 SUBDIR+=	palmos-includes
