@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/08 14:41:40 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/28 14:39:37 recht Exp $
 #
 
 DISTNAME=	ogmtools-1.2
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.bunkus.org/videotools/ogmtools/
 COMMENT=	Ogg Media files manipulation tools
 
 USE_BUILDLINK2=	YES
+USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+=	--with-dvdread-includes=${BUILDLINK_DIR}
