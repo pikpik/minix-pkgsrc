@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/23 13:47:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1999/07/02 08:37:28 agc Exp $
 #
 
 DISTNAME=		pax-19980903
@@ -16,7 +16,7 @@ NO_PKG_REGISTER=	yes
 NO_PACKAGE=		No package registration is done
 MANCOMPRESSED_IF_MANZ=	yes
 
-post-extract: 
+post-extract:
 	${GREP} -v __RCSID ${FILESDIR}/pwcache.c >${WRKSRC}/pwcache.c
 	${CP} ${FILESDIR}/pwcache.h ${WRKSRC}
 
