@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.266 2003/07/31 19:24:08 wiz Exp $
+# $NetBSD: Makefile,v 1.267 2003/08/11 15:32:49 drochner Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
 
 SUBDIR+=	Mosaic
+SUBDIR+=	MozillaFirebird
 SUBDIR+=	adzap
 SUBDIR+=	amaya
 SUBDIR+=	analog
@@ -154,7 +155,6 @@ SUBDIR+=	p5-VRML
 SUBDIR+=	p5-WWW-Amazon-Wishlist
 SUBDIR+=	p5-libapreq
 SUBDIR+=	p5-libwww
-SUBDIR+=	phoenix
 SUBDIR+=	phoenix-bin
 SUBDIR+=	phoenix-bin-acroread
 SUBDIR+=	phoenix-bin-acroread3
