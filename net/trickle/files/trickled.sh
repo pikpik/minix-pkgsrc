@@ -1,6 +1,6 @@
-#!@RCS_SCRIPTS_SHELL@
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: trickled.sh,v 1.1.1.1 2003/09/25 14:19:42 xtraeme Exp $
 #
 # PROVIDE: trickled
 # REQUIRE: DAEMON

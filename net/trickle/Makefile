@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/25 14:19:41 xtraeme Exp $
 #
 
 DISTNAME=	trickle-1.06
@@ -20,6 +20,8 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 EGDIR=		${PREFIX}/share/examples/trickle
 CONF_FILES=	${EGDIR}/trickled.conf ${PKG_SYSCONFDIR}/trickled.conf
+
+RCD_SCRIPTS=	trickled
 
 pre-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
