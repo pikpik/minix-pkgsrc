@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/22 08:30:30 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/27 00:53:12 heinz Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-21.3
@@ -30,6 +30,7 @@ INFO_FILES+=	reftex sc speedbar vip viper widget woman
 
 post-extract:
 	${CP} ${FILESDIR}/site-init.el ${WRKSRC}/lisp
+	${CP} ${FILESDIR}/amd64.h ${WRKSRC}/src/m
 
 pre-install:
 	@${FIND} ${WRKSRC} -type f -name "*.orig" -print | ${XARGS} ${RM} -f
