@@ -1,8 +1,8 @@
 $NetBSD$
 
---- NetBSD/xps.c.orig	1999-05-22 15:56:46.000000000 -0500
-+++ NetBSD/xps.c
-@@ -162,8 +162,10 @@ GetStatus(ProcInfo *p)
+--- src/NetBSD/os.c.orig	2003-04-24 00:21:29.000000000 +0000
++++ src/NetBSD/os.c
+@@ -166,8 +166,10 @@ GetStatus(ProcInfo *p)
  
    if (proc->kp_proc.p_pid == MyPid && !cmd_options.me_too)
      pstat = SSLEEP;
