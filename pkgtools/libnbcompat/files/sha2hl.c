@@ -1,4 +1,4 @@
-/* $NetBSD: sha2hl.c,v 1.1.1.1 2003/03/31 05:02:57 grant Exp $	 */
+/* $NetBSD: sha2hl.c,v 1.2 2003/09/01 15:31:20 jlam Exp $	 */
 
 /*
  * sha2hl.c
@@ -41,13 +41,13 @@
  */
 
 #if HAVE_CONFIG_H
-#include "nbconfig.h"
+#include "nbcompat/nbconfig.h"
 #endif
 
-#include <nbtypes.h>
+#include "nbcompat/nbtypes.h"
 
 #ifndef lint
-__RCSID("$NetBSD: sha2hl.c,v 1.1.1.1 2003/03/31 05:02:57 grant Exp $");
+__RCSID("$NetBSD: sha2hl.c,v 1.2 2003/09/01 15:31:20 jlam Exp $");
 #endif				/* not lint */
 
 

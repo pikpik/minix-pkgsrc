@@ -1,4 +1,4 @@
-/*	$NetBSD: md5c.c,v 1.1.1.1 2003/03/31 05:02:45 grant Exp $	*/
+/*	$NetBSD: md5c.c,v 1.2 2003/09/01 15:31:17 jlam Exp $	*/
 
 /*
  * This file is derived from the RSA Data Security, Inc. MD5 Message-Digest
@@ -30,10 +30,10 @@
  */
 
 #if HAVE_CONFIG_H
-#include "nbconfig.h"
+#include "nbcompat/nbconfig.h"
 #endif
 
-#include <nbtypes.h>
+#include "nbcompat/nbtypes.h"
 
 #if defined(_KERNEL) || defined(_STANDALONE)
 #include <lib/libkern/libkern.h>

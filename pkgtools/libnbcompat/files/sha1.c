@@ -1,4 +1,4 @@
-/*	$NetBSD: sha1.c,v 1.1.1.1 2003/03/31 05:02:50 grant Exp $	*/
+/*	$NetBSD: sha1.c,v 1.2 2003/09/01 15:31:20 jlam Exp $	*/
 /*	$OpenBSD: sha1.c,v 1.9 1997/07/23 21:12:32 kstailey Exp $	*/
 
 /*
@@ -16,10 +16,10 @@
  */
 
 #if HAVE_CONFIG_H
-#include "nbconfig.h"
+#include "nbcompat/nbconfig.h"
 #endif
 
-#include <nbtypes.h>
+#include "nbcompat/nbtypes.h"
 
 #define SHA1HANDSOFF		/* Copies data before messing with it. */
 

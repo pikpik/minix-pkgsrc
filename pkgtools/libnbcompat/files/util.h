@@ -1,4 +1,4 @@
-/*	$NetBSD: util.h,v 1.2 2003/09/01 15:31:21 jlam Exp $	*/
+/*	$NetBSD: util.h,v 1.3 2003/09/03 03:28:29 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1995
@@ -36,7 +36,7 @@
 #ifndef _UTIL_H_
 #define _UTIL_H_
 
-#include <nbconfig.h>
+#include <nbcompat.h>
 
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
