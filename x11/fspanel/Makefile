@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/05/31 16:47:48 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/06/05 21:05:58 reed Exp $
 #
 
 DISTNAME=	fspanel-0.8beta1
@@ -17,6 +17,8 @@ USE_X11=	YES
 HAS_CONFIGURE=	YES
 
 CFLAGS+=	-DHAVE_XPM -DXFT
+
+LIBS.SunOS+=	-lX11
 
 INSTALLATION_DIRS=	bin
 
