@@ -1,0 +1,15 @@
+$NetBSD$
+
+Yet another Solaris-only fix
+
+--- kdm-config.h.orig   Wed Sep 29 22:34:24 1999
++++ kdm-config.h        Wed Sep 29 22:36:27 1999
+@@ -95,3 +95,8 @@
+ #ifdef __cplusplus
+ }
+ #endif
++
++
++#ifdef SVR4
++#define NeedVarargsPrototypes  1
++#endif
