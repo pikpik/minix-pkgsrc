@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/09/22 10:16:16 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/29 07:21:43 jlam Exp $
 
 DISTNAME=	ogle_gui-0.8.5
 PKGREVISION=	1
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.dtek.chalmers.se/groups/dvd/
 COMMENT=	GUI for the Ogle DVD player
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 USE_GMAKE=		yes
 
