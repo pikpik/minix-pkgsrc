@@ -10,7 +10,7 @@ $NetBSD$
 +libkdesktop_main_la_LIBADD   = $(top_builddir)/libkonq/libkonq.la $(top_builddir)/kcontrol/background/libbgnd.la 
  kdesktop_la_LDFLAGS  = $(all_libraries) -lkdesu -module -avoid-version
 -kdesktop_la_LIBADD   = $(top_builddir)/libkonq/libkonq.la $(top_builddir)/kcontrol/background/libbgnd.la 
-+kdesktop_la_LIBADD   = $(top_builddir)/libkonq/libkonq.la $(top_builddir)/kcontrol/background/libbgnd.la
++kdesktop_la_LIBADD   = libkdesktop_main.la
  kdesktop_LDFLAGS  = $(KDE_RPATH) $(all_libraries)
 -kdesktop_LDADD    = kdesktop.la
 +kdesktop_LDADD    = libkdesktop_main.la
