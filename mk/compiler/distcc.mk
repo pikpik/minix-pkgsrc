@@ -1,4 +1,4 @@
-# $NetBSD: distcc.mk,v 1.9 2004/02/03 20:38:39 jlam Exp $
+# $NetBSD: distcc.mk,v 1.10 2004/02/05 03:35:20 jlam Exp $
 
 .if !defined(COMPILER_DISTCC_MK)
 COMPILER_DISTCC_MK=	one
@@ -52,7 +52,7 @@ _DISTCC_LINKS+=	CXX
 # The following section is included only if we're not being included by
 # bsd.prefs.mk.
 #
-.if empty(BSD_PREFS_MK:M+*)
+.if empty(BSD_PREFS_MK)
 .  if empty(COMPILER_DISTCC_MK:Mtwo)
 COMPILER_DISTCC_MK+=	two
 
