@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/26 18:38:28 garbled Exp $
+# $NetBSD: Makefile,v 1.4 2000/01/02 03:20:07 wiz Exp $
 #
 
 DISTNAME=		angband-283
@@ -7,6 +7,7 @@ CATEGORIES=		games x11
 MASTER_SITES=		ftp://export.andrew.cmu.edu/angband/Source/
 
 MAINTAINER=		root@garbled.net
+HOMEPAGE=		http://www.phial.com/angband/
 
 CONFLICTS=		angband-tty-*
 
