@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/03/01 18:16:36 tron Exp $
+# $NetBSD: Makefile,v 1.12 1998/04/15 10:38:55 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/10/01 09:20:31 tg Exp
 #
 
@@ -7,7 +7,7 @@ PKGNAME=	tk-8.0p2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.sunlabs.com/pub/tcl/
 
-MAINTAINER=	jkh@Freebsd.ORG
+MAINTAINER=	packages@netbsd.org
 
 LIB_DEPENDS=	tcl80.1.:${PORTSDIR}/lang/tcl80
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/02/04 22:46:06 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1998/04/15 10:38:37 agc Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/04/30 03:18:06 asami Exp
 #
 
@@ -6,7 +6,7 @@ DISTNAME=	team-3.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	joerg@FreeBSD.org
+MAINTAINER=	packages@netbsd.org
 
 MAN1=		team.1
 CAT1=		team.0

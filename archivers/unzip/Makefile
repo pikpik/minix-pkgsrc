@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/03/07 21:24:05 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/15 10:38:09 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/06/19 05:30:04 ache Exp 
 #
 
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.cdrom.com/pub/infozip/src/
 DISTFILES=      unzip532.tar.gz
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     packages@netbsd.org
 
 MAKEFILE=       unix/Makefile
 ALL_TARGET=     bsd

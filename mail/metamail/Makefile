@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/01/24 20:29:42 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:31 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:27:26 asami Exp
 #
 
@@ -8,7 +8,7 @@ CATEGORIES=	mail
 MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	torstenb@FreeBSD.ORG
+MAINTAINER=	packages@netbsd.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAN1= 		audiocompose.1 audiosend.1 extcompose.1 \

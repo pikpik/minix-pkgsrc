@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1997/11/01 00:56:26 augustss Exp $
+# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:11 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/08/09 23:37:33 fenner Exp 
 #
 
@@ -7,8 +7,7 @@ CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players/
 
-# FreeBSD maintainer
-MAINTAINER=		junker@jazz.snu.ac.kr
+MAINTAINER=		packages@netbsd.org
 
 GNU_CONFIGURE=		yes
 

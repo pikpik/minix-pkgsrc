@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/02/09 00:33:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:09 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/08/10 22:31:36 fenner Exp 
 #
 
@@ -7,7 +7,7 @@ PKGNAME=	zoo-2.10.1
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 
-MAINTAINER=	jmz@FreeBSD.org
+MAINTAINER=	packages@netbsd.org
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=     bsdansi

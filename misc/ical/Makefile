@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/02/17 19:33:47 tron Exp $
+# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:35 agc Exp $
 # $FreeBSD Id: Makefile,v 1.15 1998/02/07 22:59:16 hoek Exp
 #
 
@@ -6,7 +6,7 @@ DISTNAME=	ical-2.2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.research.digital.com/SRC/personal/Sanjay_Ghemawat/ical/icalbins/
 
-MAINTAINER=	erich@FreeBSD.ORG
+MAINTAINER=	packages@netbsd.org
 
 LIB_DEPENDS=    tk80.1:${PORTSDIR}/x11/tk80
 

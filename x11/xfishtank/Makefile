@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.3 1998/01/25 00:30:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:57 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/06/17 07:45:12 asami Exp
 #
 
-DISTNAME=      xfishtank-2.2
-CATEGORIES=    x11
-MASTER_SITES=  ftp://ftp.uni-koeln.de/windows/xcontrib/
+DISTNAME=		xfishtank-2.2
+CATEGORIES=		x11
+MASTER_SITES=		ftp://ftp.uni-koeln.de/windows/xcontrib/
 
-MAINTAINER=    jacs@gnome.co.uk
+MAINTAINER=		packages@netbsd.org
 
-USE_IMAKE=     yes
-WRKSRC=                ${WRKDIR}/xfishtank2.0
-NO_INSTALL_MANPAGES=yes
+USE_IMAKE=		yes
+WRKSRC=			${WRKDIR}/xfishtank2.0
+NO_INSTALL_MANPAGES=	yes
 
 post-patch:
-	cd  ${WRKDIR}/xfishtank2.0; make clean
+	cd ${WRKDIR}/xfishtank2.0; ${MAKE} clean
 
 .include "../../mk/bsd.pkg.mk"

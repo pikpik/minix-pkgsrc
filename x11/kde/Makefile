@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/14 11:41:54 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/15 10:38:54 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/11/27 00:47:46 se Exp
 #
 
@@ -7,7 +7,7 @@ CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	se@freebsd.org
+MAINTAINER=	packages@netbsd.org
 
 LIB_DEPENDS=	kdecore.0.90:${PORTSDIR}/x11/kdelibs
 RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/03/24 23:18:40 tron Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:53 agc Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/sources/2.0.x/ \
 		ftp://ftp.hpc.uh.edu/pub/fvwm/version-2/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm-users-jp-kits.97Oct04.tar.gz
 
-MAINTAINER=	matusita@jp.freebsd.org
+MAINTAINER=	packages@netbsd.org
 
 LIB_DEPENDS=	Xpm.4.:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	xpmroot:${PORTSDIR}/x11/xpmroot

@@ -1,5 +1,5 @@
-# $NetBSD: Makefile,v 1.2 1998/02/27 23:53:08 tron Exp $
-# $FreeBSD Id: Makefile,v 1.24 1997/05/14 14:40:34 ache Exp
+# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:31 agc Exp $
+# FreeBSD Id: Makefile,v 1.24 1997/05/14 14:40:34 ache Exp
 #
 
 DISTNAME=       procmail-3.11pre7
@@ -7,7 +7,7 @@ PKGNAME=        procmail-3.11p7
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/procmail/
 
-MAINTAINER=     ache@FreeBSD.ORG
+MAINTAINER=     packages@netbsd.org
 
 INSTALL_TARGET= install-suid install.man
 
