@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/01/19 16:06:39 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2002/01/24 19:24:03 wiz Exp $
 #
 
 DISTNAME=	scigraphica-0.8.0
@@ -16,6 +16,7 @@ CONFIGURE_ENV+=		PYTHONBIN=${PYTHONBIN}
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 PY_PATCHPLIST=		YES
+USE_GNU_READLINE=	yes
 
 .include "../../devel/readline/buildlink.mk"
 .include "../../graphics/imlib/buildlink.mk"
