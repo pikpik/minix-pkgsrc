@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/05/25 08:15:28 rh Exp $
+# $NetBSD: Makefile,v 1.7 2000/10/02 13:28:45 agc Exp $
 #
 
 PKGNAME=	php-mysql-${PHP_VERSION}
@@ -19,6 +19,5 @@ do-build:
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/functions/mysql.so ${PREFIX}/lib/php3/
 	${SED} -e 's|@PREFIX@|${PREFIX}|g' ${PKGDIR}/MESSAGE >${MESSAGE_FILE}
-
 
 .include "../php3/Makefile"
