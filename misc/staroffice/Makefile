@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/02/06 10:36:31 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 18:09:26 wiz Exp $
 #
 
 DISTNAME=		so51a_lnx_${LANGNO}
@@ -70,7 +70,6 @@ LANGSUB=		51AA9999
 
 PLIST_SUBST+=		LANGNO=${LANGNO}
 PLIST_SRC=		${WRKDIR}/PLIST
-INSTALL_FILE=		${WRKDIR}/INSTALL
 
 do-fetch:
 	@${MKDIR} ${WRKDIR}
@@ -135,7 +134,5 @@ post-install:
 		>${WRKDIR}/${file}
 	${INSTALL_SCRIPT} ${WRKDIR}/${file} ${PREFIX}/bin
 .endfor
-	${SED} -e 's#@@PREFIX@@#${PREFIX}#g' < ${PKGDIR}/INSTALL \
-		>${WRKDIR}/INSTALL
 
 .include "../../mk/bsd.pkg.mk"
