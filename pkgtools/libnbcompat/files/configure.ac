@@ -382,6 +382,10 @@ AH_BOTTOM([
 #include <sys/byteorder.h>
 #endif
 
+#if HAVE_LIMITS_H
+#include <limits.h>
+#endif
+
 #ifndef LITTLE_ENDIAN
 # define LITTLE_ENDIAN 1234
 #endif
