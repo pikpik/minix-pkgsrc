@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/02/22 08:38:51 rh Exp $
+# $NetBSD: Makefile,v 1.14 2001/02/16 13:46:19 wiz Exp $
 #
 
 DISTNAME=	gEDA-${PKGVERSION}
@@ -14,7 +14,7 @@ DEPENDS+=	gschem-${PKGVERSION}:../../cad/gschem
 DEPENDS+=	gnetlist-${PKGVERSION}:../../cad/gnetlist
 DEPENDS+=	gsymcheck-${PKGVERSION}:../../cad/gsymcheck
 DEPENDS+=	geda-utils-${PKGVERSION}:../../cad/geda-utils
-DEPENDS+=	geda-docs-${PKGVERSION}:../../cad/geda-docs
+DEPENDS+=	geda-docs-20010304:../../cad/geda-docs
 
 USE_X11BASE=	yes
 EXTRACT_ONLY=	# empty
@@ -23,7 +23,7 @@ NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
-PKGVERSION=	20000220
+PKGVERSION=	20010708
 
 do-install:	# empty
 
