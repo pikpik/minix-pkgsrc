@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/12/09 01:20:36 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/22 07:21:54 grant Exp $
 #
 
 DISTNAME=	covered-0.2.2
@@ -9,8 +9,11 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://covered.sourceforge.net/
 COMMENT=	Verilog code coverage analyzer (stable release version)
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	yes
 BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
-BUILD_DEPENDS+=	gperf-2.7.2:../../devel/gperf
+BUILD_DEPENDS+=	gperf>=2.7.2:../../devel/gperf
 DEPENDS+=	verilog{,-current}-[0-9]*:../../cad/verilog
 
 CONFLICTS+=	covered-current-[0-9]*
@@ -24,5 +27,9 @@ TEST_TARGET=	iverilog
 
 post-patch:
 	${CHMOD} 755 ${WRKSRC}/missing
+
+pre-install:
+	${INSTALL_PROGRAM_DIR} ${PREFIX}/bin
+	${INSTALL_MAN_DIR} ${PREFIX}/man/man1
 
 .include "../../mk/bsd.pkg.mk"
