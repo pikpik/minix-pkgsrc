@@ -1,0 +1,7 @@
+# $NetBSD$
+#
+
+DISTNAME=	mozilla-i686-pc-linux-gnu
+
+PLATFORM=	linux
+PHOENIX_LIB=    ${PREFIX}/lib/mozilla-${PLATFORM}
