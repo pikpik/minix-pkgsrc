@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/02/04 17:12:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.16 2004/03/07 01:47:01 minskim Exp $
 #
 
 DISTNAME=	buildtool-0.15
@@ -18,7 +18,7 @@ TEST_TARGET=		test
 
 PKG_SYSCONFSUBDIR=	buildtool
 
-CONFIGURE_ARGS=		-p ${LOCALBASE}
+CONFIGURE_ARGS=		-p ${PREFIX}
 CONFIGURE_ARGS+=	-c ${PKG_SYSCONFDIR}
 CONFIGURE_ENV+=		SH="${SH}"
 
