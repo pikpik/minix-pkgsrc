@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2004/05/02 20:04:36 xtraeme Exp $
+# $NetBSD: Makefile,v 1.26 2004/06/20 20:57:17 xtraeme Exp $
 #
 
 DISTNAME=	grub-0.95
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/grub/
 
