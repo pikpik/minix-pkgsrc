@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/01/08 13:23:54 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/16 14:40:54 wiz Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -34,7 +34,6 @@ post-install:
 CONFIGURE_ARGS+=	--with-tlib=ncurses
 CPPFLAGS+=		-I${LOCALBASE}/include	# for ncurses' termcap.h
 LDFLAGS+=		-L${LOCALBASE}/lib	# for -lncurses
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 .else
 CONFIGURE_ARGS+=	--with-tlib=curses
 .endif

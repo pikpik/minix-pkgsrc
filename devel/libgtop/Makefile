@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2001/04/06 21:52:11 rh Exp $
+# $NetBSD: Makefile,v 1.52 2001/04/30 04:16:08 jlam Exp $
 
 DISTNAME=		libgtop-1.0.12
 CATEGORIES=		devel gnome
@@ -49,6 +49,5 @@ CONFIGURE_ARGS+=	--with-libgtop-guile --with-catgets
 CONFIGURE_ENV+=		AWK="${AWK}"
 CONFIGURE_ENV+=		LN_S="${LN} -s"
 CONFIGURE_ENV+=		PERL="${PERL5}"
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
 .include "../../mk/bsd.pkg.mk"

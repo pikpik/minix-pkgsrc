@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 17:13:21 rh Exp $
 #
 
 DISTNAME=		medusa-0.5.1
@@ -19,6 +19,6 @@ USE_LIBTOOL=		YES
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${LOCALBASE}/include"
+CPPFLAGS+=		-I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"

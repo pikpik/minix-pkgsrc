@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/03/26 00:41:59 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/02 20:05:03 wiz Exp $
 #
 
 DISTNAME=		pinfo-0.6.0
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_LIBINTL=		yes
 
 CPPFLAGS+=		-DDFLT_INFOPATH='\"/usr/share/info:${X11BASE}/info:${LOCALBASE}/info:/usr/local/info\"'
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/src/pinforc ${PREFIX}/share/examples/

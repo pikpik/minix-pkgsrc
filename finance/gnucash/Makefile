@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/05/11 14:42:32 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/05/26 01:35:54 mjl Exp $
 #
 
 DISTNAME=		gnucash-1.4.12
@@ -34,7 +34,6 @@ CONFIGURE_ARGS+=	--without-motif --without-included-gettext
 CONFIGURE_ARGS+=	--with-perl-includes=${PERL5_ARCHLIB}
 
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 CPPFLAGS+=		-I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"

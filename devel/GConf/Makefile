@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/04/06 22:00:06 rh Exp $
+# $NetBSD: Makefile,v 1.14 2001/04/19 13:04:02 wiz Exp $
 #
 
 DISTNAME=	GConf-1.0.0
@@ -19,7 +19,7 @@ USE_LIBINTL=	YES
 USE_LIBTOOL=	YES
 
 LTCONFIG_OVERRIDE=${WRKSRC}/ltconfig
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${X11PREFIX}/include"
+CPPFLAGS+=	-I${X11PREFIX}/include
 PLIST_SUBST+=	LOCALBASE=${LOCALBASE}
 
 post-install:

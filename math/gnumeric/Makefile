@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/03/19 13:23:43 tron Exp $
+# $NetBSD: Makefile,v 1.29 2001/03/27 03:20:06 hubertf Exp $
 #
 
 DISTNAME=		gnumeric-0.64
@@ -24,7 +24,7 @@ USE_PERL5=		YES
 LDFLAGS+=      		-L${LOCALBASE}/lib
 LDFLAGS+=      		-Wl,-R${LOCALBASE}/lib
 LDFLAGS+=      		-lunicode
-CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
+CPPFLAGS+=		-I${LOCALBASE}/include
 CONFIGURE_ARGS=		--without-bonobo
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 

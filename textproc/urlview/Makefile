@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/07/04 16:07:21 tron Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:37:55 wiz Exp $
 
 DISTNAME=	urlview-0.9
 CATEGORIES=	textproc
@@ -16,7 +16,6 @@ DEPENDS+=	ncurses>=5.0:../../devel/ncurses
 #REPLACE_NCURSES=	${WRKSRC}/configure ${WRKSRC}/enter.h ${WRKSRC}/urlview.c
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 CPPFLAGS=	-I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"

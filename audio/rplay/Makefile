@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/05/01 07:16:14 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2001/05/22 04:33:12 jlam Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
 #
 
@@ -19,7 +19,6 @@ DEPENDS+=	rx-1.5:../../devel/rx
 USE_LIBTOOL=	# defined
 GNU_CONFIGURE=	# defined
 CONFIGURE_ENV+=	RPLAY_TARGET=generic	# XXX generic, or oss, or sun?
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
 CPPFLAGS+=	-I${LOCALBASE}/include	# for gsm.h and rxposix.h
 

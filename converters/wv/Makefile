@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/11/16 18:26:09 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/16 13:59:31 wiz Exp $
 #
 
 DISTNAME=		wv-0.6.0
@@ -27,13 +27,11 @@ CONFIGURE_ARGS+=	--with-png=${LOCALBASE}
 CONFIGURE_ARGS+=	--with-ttf=${LOCALBASE}
 CONFIGURE_ARGS+=	--with-wmf=${LOCALBASE}
 CONFIGURE_ARGS+=	--with-xpm=${XPMDIR}
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 MAKE_ENV+=		RM="${RM} -f"
 
 CPPFLAGS+=		-I${LOCALBASE}/include
 CPPFLAGS+=		-I${LOCALBASE}/include/magick
 CPPFLAGS+=		-I${LOCALBASE}/include/libwmf
-MAKE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
 pre-patch:
 	${FIND} ${WRKSRC} -name "*.orig" -exec ${RM} {} \;

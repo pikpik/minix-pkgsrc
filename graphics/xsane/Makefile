@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/03/27 03:20:02 hubertf Exp $
+# $NetBSD: Makefile,v 1.26 2001/05/22 09:32:23 wiz Exp $
 #
 
 DISTNAME=	xsane-0.72
@@ -31,8 +31,7 @@ USE_GMAKE=	YES
 USE_X11BASE=	YES
 
 LDFLAGS+=	-L${PREFIX}/lib/sane -Wl,-R${PREFIX}/lib/sane
-INCLUDES=	-I${PREFIX}/include -I${LOCALBASE}/include
-CPPFLAGS+=	${INCLUDES}
-CONFIGURE_ENV+=	CPPFLAGS="${INCLUDES}" LIBS="-lintl"
+CPPFLAGS+=	-I${PREFIX}/include -I${LOCALBASE}/include
+CONFIGURE_ENV+=	LIBS="-lintl"
 
 .include "../../mk/bsd.pkg.mk"

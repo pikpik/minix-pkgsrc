@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/16 13:30:41 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/14 17:09:14 rh Exp $
 #
 
 DISTNAME=	gdcd-0.2.1
@@ -15,7 +15,6 @@ DEPENDS+=	libcdaudio>0.99.4:../../audio/libcdaudio
 
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
 # for pth and libcdaudio
 CPPFLAGS+=	-I${LOCALBASE}/include

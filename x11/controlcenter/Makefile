@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/03/27 03:20:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.29 2001/04/06 22:08:09 rh Exp $
 
 DISTNAME=		control-center-1.4.0.1
 CATEGORIES=		x11 gnome
@@ -26,7 +26,6 @@ LOCALSTATEDIR=		/var/gnome
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR}
 CONFIGURE_ARGS+=	--with-glib-prefix=${LOCALBASE}
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 CPPFLAGS+=		-I${LOCALBASE}/include 		# libintl.h
 
 post-patch:

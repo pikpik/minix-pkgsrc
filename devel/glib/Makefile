@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2001/04/26 17:38:28 rh Exp $
+# $NetBSD: Makefile,v 1.30 2001/04/27 11:46:34 tron Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/08/06 14:55:12 vanilla Exp
 #
 
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/glib
-CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
+CPPFLAGS+=		-I${LOCALBASE}/include
 
 INFO_FILES=		glib.info
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/04/12 14:58:09 wennmach Exp $
+# $NetBSD: Makefile,v 1.13 2001/06/04 20:49:31 jtb Exp $
 
 DISTNAME=		cyrus-imapd-1.6.24
 PKGNAME=		${DISTNAME}nb1
@@ -54,7 +54,6 @@ CONFIGURE_ARGS+=	--with-auth=unix
 CONFIGURE_ARGS+=	--without-krb
 .endif
 
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 CONFIGURE_ENV+=		LIBS="${LIBS}"
 LIBS+=			`sasl-config --libs`
 

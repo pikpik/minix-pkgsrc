@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:39 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/23 13:36:17 wiz Exp $
 
 DISTNAME=	bfd-crunchide-1.1
 CATEGORIES=	cross
@@ -18,8 +18,8 @@ NO_CONFIGURE=	yes
 
 USE_CROSSBASE=	yes
 BFD_VERSION=	2.9.1
+CPPFLAGS+=	-I${PREFIX}/include
 MAKE_ENV+=	BFD_VERSION=${BFD_VERSION} \
-		CPPFLAGS="-I${PREFIX}/include" \
 		LIBS="-L${PREFIX}/lib -Wl,-R${PREFIX}/lib -lbfd-${BFD_VERSION} -liberty"
 
 do-extract:

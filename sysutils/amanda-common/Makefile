@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/02/17 17:42:09 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/05/29 16:01:57 jlam Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -27,7 +27,7 @@ ADDUSER=		${LOCALBASE}/sbin/useradd
 ADDGROUP=		${LOCALBASE}/sbin/groupadd
 .endif
 .elif ${OPSYS} == "SunOS"
-MAKE_ENV+=		CPPFLAGS=-D_LARGEFILE64_SOURCE
+CPPFLAGS+=		-D_LARGEFILE64_SOURCE
 ADDUSER=		useradd
 ADDGROUP=		groupadd
 .endif

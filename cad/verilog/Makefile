@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/03/27 03:19:47 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2001/04/11 13:36:19 wennmach Exp $
 #
 
 DISTNAME=	verilog-0.4
@@ -19,6 +19,5 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 # to find ipal.h:
 CPPFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" LDFLAGS+="${LDFLAGS}"
 
 .include "../../mk/bsd.pkg.mk"

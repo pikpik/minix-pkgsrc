@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/03/27 03:20:07 hubertf Exp $
+# $NetBSD: Makefile,v 1.27 2001/04/07 19:23:54 rh Exp $
 #
 
 DISTNAME=		gnome-pim-1.4.0
@@ -17,7 +17,7 @@ USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 
 GNU_CONFIGURE=		YES
-CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
+CPPFLAGS+=		-I${LOCALBASE}/include
 CONFIGURE_ENV+=		LOCALEDIR=${LOCALEDIR}
 
 .include "../../mk/bsd.prefs.mk"

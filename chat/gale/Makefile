@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/06 19:56:38 lukem Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 13:51:23 wiz Exp $
 #
 
 DISTNAME=	gale-0.99a
@@ -40,7 +40,7 @@ INSTALL_FILE=	${WRKDIR}/INSTALL
 GNU_CONFIGURE= 	YES
 USE_LIBTOOL=	YES
 LTCONFIG_OVERRIDE=${WRKSRC}/ltconfig
-CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include/rsaref -I${LOCALBASE}/include/w3c-libwww"
+CPPFLAGS+=	-I${LOCALBASE}/include/rsaref -I${LOCALBASE}/include/w3c-libwww
 
 GALE_USER=	gale
 GALE_GROUP=	gale

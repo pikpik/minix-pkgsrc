@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/01/07 02:25:35 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 18:19:18 wiz Exp $
 
 DISTNAME=		ntop-1.1
 PKGNAME=		ntop-1.1nb1
@@ -22,7 +22,6 @@ INSTALL_TARGET=		install install-man
 .if ${NEED_NCURSES} == "YES"
 CPPFLAGS+=		-I${LOCALBASE}/include	# for ncurses.h
 LDFLAGS+=		-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib
-MAKE_ENV+=		CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
 .endif
 
 .include "../../mk/bsd.pkg.mk"

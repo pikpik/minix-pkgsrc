@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:06 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/26 20:53:50 wiz Exp $
 
 DISTNAME=	nap-1.4.4
 CATEGORIES=	net
@@ -11,7 +11,7 @@ COMMENT=	Terminal based Napster client similar to ircII
 DEPENDS+=	ncurses>=5.0:../../devel/ncurses
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ENV+=	CPPFLAGS=-I${LOCALBASE}/include
+CPPFLAGS+=	-I${LOCALBASE}/include
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/nap ${PREFIX}/share/examples/nap

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/05/02 04:02:05 fredb Exp $
+# $NetBSD: Makefile,v 1.14 2001/05/16 02:27:52 fredb Exp $
 #
 
 DISTNAME=	Squeak-3.0pre2
@@ -22,7 +22,6 @@ USE_LIBTOOL=	yes
 USE_X11=	yes
 
 CPPFLAGS+=	-DNETBSD_OSS_HACK
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 DIST_SUBDIR=	squeak
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 WRKSRC=		${WRKDIR}/Squeak-3.0/build

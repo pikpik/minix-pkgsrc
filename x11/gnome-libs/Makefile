@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2001/03/27 03:20:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.60 2001/04/06 21:47:04 rh Exp $
 
 DISTNAME=		gnome-libs-1.2.13
 CATEGORIES=		x11 gnome
@@ -25,8 +25,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR} \
 			--with-glib-prefix=${LOCALBASE} \
 			--with-kde-datadir=${X11PREFIX}/share/kde
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}" \
-			LOCALBASE=${LOCALBASE} \
+CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE} \
 			X11BASE=${X11BASE}
 
 CPPFLAGS+=		-I${LOCALBASE}/include

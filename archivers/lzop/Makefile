@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/12/22 19:44:49 rh Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 13:15:33 wiz Exp $
 #
 
 DISTNAME=	lzop-1.00
@@ -12,6 +12,6 @@ COMMENT=	Fast file compressor similar to gzip, using the LZO library
 DEPENDS=	liblzo-*:../../archivers/liblzo
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${PREFIX}/include"
+CPPFLAGS+=	-I${PREFIX}/include
 
 .include "../../mk/bsd.pkg.mk"

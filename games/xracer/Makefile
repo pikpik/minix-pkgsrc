@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/03/27 03:19:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2001/04/02 20:06:13 wiz Exp $
 #
 
 DISTNAME=		xracer-0.96.9
@@ -25,7 +25,6 @@ USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 GNU_CONFIGURE=		# defined
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
 CPPFLAGS+=		-I${LOCALBASE}/include
 CPPFLAGS+=		-I${X11BASE}/include

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/08 16:09:09 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 14:40:49 wiz Exp $
 #
 
 DISTNAME=	bvi-1.2.0.src
@@ -20,8 +20,8 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 .include "../../mk/bsd.prefs.mk"
 
 .if ${NEED_NCURSES} == "YES"
-CONFIGURE_ENV+=	CFLAGS="-I${LOCALBASE}/include" \
-		CPPFLAGS="-I${LOCALBASE}/include"
+CFLAGS+=	-I${LOCALBASE}/include
+CPPFLAGS+=	-I${LOCALBASE}/include
 .endif
 
 .include "../../mk/bsd.pkg.mk"

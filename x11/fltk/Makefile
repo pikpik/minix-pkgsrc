@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/06/10 00:08:49 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/06/11 02:05:16 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME}-source
@@ -25,7 +25,6 @@ USE_LIBTOOL=	# defined
 
 GNU_CONFIGURE=	# defined
 CONFIGURE_ARGS=	--enable-libtool=${LIBTOOL}
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
 .include "../../graphics/Mesa/buildlink.mk"
 

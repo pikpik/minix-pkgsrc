@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/17 17:21:58 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/06/10 05:31:18 mrg Exp $
 #
 
 DISTNAME=	bozohttpd-5.07
@@ -16,7 +16,6 @@ BUILD_DEFS+=	USE_INET6
 
 .if defined(USE_INET6) && (${USE_INET6} == "YES")
 CPPFLAGS+=	-DINET6
-MAKE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 .endif
 
 pre-patch:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/08/14 18:08:14 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/16 14:39:06 wiz Exp $
 #
 
 DISTNAME=		xdelta-0.22
@@ -15,7 +15,7 @@ DEPENDS+=		gdbm>=1.7.3:../../databases/gdbm
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes
-LDFLAGS+=		"-L${LOCALBASE}/lib"
-CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
+LDFLAGS+=		-L${LOCALBASE}/lib
+CPPFLAGS+=		-I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"

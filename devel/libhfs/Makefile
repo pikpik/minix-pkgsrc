@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/14 17:38:56 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 14:38:36 wiz Exp $
 #
 
 DISTNAME=	hfsutils-3.2.6
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.mars.org/home/rob/proj/hfs/
 COMMENT=	library for accessing HFS (Apple Macintosh) volumes
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS=-I./
+CPPFLAGS=	-I.
 
 USE_LIBTOOL=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/03/04 09:06:21 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/22 09:32:29 wiz Exp $
 #
 
 DISTNAME=		wxGTK-2.2.3
@@ -24,7 +24,6 @@ CONFIGURE_ARGS+=	--with-zlib=sys
 CONFIGURE_ARGS+=	--with-libpng=sys
 CONFIGURE_ARGS+=	--with-libtiff=sys
 CONFIGURE_ARGS+=	--disable-threads
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 
 CPPFLAGS+=		-I${LOCALBASE}/include
 

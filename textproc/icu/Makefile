@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:37:25 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/22 08:18:40 skrll Exp $
 #
 
 DISTNAME=	icu-1.7
@@ -20,8 +20,6 @@ PLIST_SRC=	${WRKSRC}/PLIST
 CONFIGURE_ARGS+= --disable-threads
 
 CPPFLAGS+=	-I${LOCALBASE}/include
-
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
 pre-configure:
 	${CHMOD} u+rx ${WRKSRC}/configure

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/26 18:43:18 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/26 21:21:18 tron Exp $
 
 DISTNAME=	gnomeicu-0.96
 CATEGORIES=	chat gnome
@@ -18,7 +18,6 @@ USE_X11BASE=	YES
 USE_GMAKE=	YES
 USE_LIBINTL=	YES
 
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBS+=		-liconv
 
