@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2001/02/02 18:25:33 jlam Exp $
+# $NetBSD: Makefile,v 1.116 2001/02/05 14:33:07 itojun Exp $
 #
 
     SUBDIR += Mosaic
@@ -37,6 +37,7 @@
     SUBDIR += grail
     SUBDIR += gtkhtml
     SUBDIR += haskell-cgi
+    SUBDIR += horde
     SUBDIR += htdig
     SUBDIR += htmldoc
     SUBDIR += hypermail
