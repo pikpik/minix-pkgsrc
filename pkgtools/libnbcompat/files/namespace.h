@@ -1,4 +1,4 @@
-/*	$NetBSD: namespace.h,v 1.2 2003/09/01 15:31:18 jlam Exp $	*/
+/*	$NetBSD: namespace.h,v 1.3 2003/09/03 13:11:14 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1997-2002 The NetBSD Foundation, Inc.
@@ -42,6 +42,7 @@
 #include <sys/cdefs.h>
 #endif
 
+#if 0
 #define brk		_brk
 #define catclose	_catclose
 #define catgets		_catgets
@@ -622,5 +623,6 @@
 #define dladdr			__dladdr
 #define fmtcheck		__fmtcheck
 #endif /* __weak_alias */
+#endif
 
 #endif /* _NAMESPACE_H_ */
