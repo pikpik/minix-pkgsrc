@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/31 17:07:59 itojun Exp $
+# $NetBSD: Makefile,v 1.3 2000/11/16 02:40:13 wiz Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -17,6 +17,7 @@ CONFIGURE_ARGS+=	--with-included-gettext
 
 PATCHDIR=		${.CURDIR}/../../devel/gettext/patches
 PATCH_SUM_FILE=		${.CURDIR}/../../devel/gettext/files/patch-sum
+INSTALL_TARGET=		install-exec
 
 makepatchsum::
 

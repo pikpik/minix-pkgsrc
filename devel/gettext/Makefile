@@ -27,4 +27,7 @@ post-patch:
 post-configure:
 	${RM} -f ${WRKSRC}/intl/libintl.h
 
+post-install:
+	cd ${WRKSRC}/intl; ${MAKE_PROGRAM} install-data
+
 .include "../../mk/bsd.pkg.mk"
