@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2001/02/17 18:09:01 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/02/25 04:18:01 hubertf Exp $
 # FreeBSD: ports/misc/fd/Makefile,v 1.14 1999/08/25 07:21:37 obrien Exp
 #
 
-DISTNAME=	FD-1.03o
-PKGNAME=	fd-1.03o
+DISTNAME=	FD-1.03r
+PKGNAME=	fd-1.03r
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/FDclone/ \
 		http://hp.vector.co.jp/authors/VA012337/soft/fd/
