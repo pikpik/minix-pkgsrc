@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2004/04/14 16:15:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2004/04/23 12:05:58 markd Exp $
 
-DISTNAME=		kile-1.6.2
+DISTNAME=		kile-1.6.3
 CATEGORIES=		editors kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kile/}
 
