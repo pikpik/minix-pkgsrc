@@ -1,3 +1,5 @@
+# $NetBSD$
+#
 # make configuration file for @@PKGNAME@@
 
 CC=	@@PREFIX@@/@@PKGNAME@@/bin/cc
