@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2000/06/01 14:53:15 fredb Exp $
+# $NetBSD: Makefile,v 1.23 2000/07/25 08:02:56 jlam Exp $
 
 DISTNAME=	AfterStep-1.8.0
 PKGNAME=	afterstep-1.8.0
@@ -19,7 +19,7 @@ DEPENDS+=		asclock-[0-9]*:../../x11/asclock
 DEPENDS+=		xp-*:../../x11/xp
 
 GNU_CONFIGURE=		yes
-USE_PKGLIBTOOL=		yes
+USE_LIBTOOL=		yes
 USE_PERL=		yes
 USE_X11=		yes
 
