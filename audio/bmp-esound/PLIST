@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/bmp/Output/libesdout.a
+lib/bmp/Output/libesdout.la
+lib/bmp/Output/libesdout.so
+@comment in bmp: @dirrm lib/bmp/Output
