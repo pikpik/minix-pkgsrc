@@ -1,6 +1,0 @@
-@comment $NetBSD$
-${PLUGINSDIR}/libsynctime.a
-${PLUGINSDIR}/libsynctime.la
-${PLUGINSDIR}/libsynctime.so
-${PLUGINSDIR}/libsynctime.so.1
-${PLUGINSDIR}/libsynctime.so.1.1

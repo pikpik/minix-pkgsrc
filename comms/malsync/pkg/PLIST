@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/malsync
-share/doc/malsync/README_avantgo
-share/doc/malsync/README_malsync
-@dirrm share/doc/malsync
