@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2004/12/10 06:06:23 markd Exp $
+# $NetBSD: Makefile,v 1.27 2005/02/27 11:39:33 markd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGNAME=	kdelibdocs-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	x11 devel
 
 COMMENT=	KDE library documentation
@@ -25,7 +24,7 @@ pre-install:
 
 post-install:
 	cd ${WRKSRC};							\
-	DOCDIRS="arts dcop interfaces kabc kate kdecore kdefx kdeprint kdeui khtml kio kjs kmdi knewstuff kparts kresources kutils kwallet libkmid"; \
+	DOCDIRS="arts dcop dnssd interfaces kabc kate kdecore kdefx kdeprint kdeui khtml kio kjs kmdi knewstuff kparts kresources kutils kwallet libkmid"; \
 	for d in $${DOCDIRS}; do					\
 		(cd $${d}; ${GMAKE} install-apidox);			\
 	done
