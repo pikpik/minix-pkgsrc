@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/01/28 22:03:08 jlam Exp $
-# FreeBSD Id: ports/comms/conserver-com/Makefile,v 1.1 2001/12/09 14:40:12 kur iyama Exp
+# $NetBSD: Makefile,v 1.6 2003/02/05 15:50:10 dmcmahill Exp $
+#
 
-DISTNAME=      conserver-7.2.1
+DISTNAME=      conserver-7.2.7
 CATEGORIES=    comms
 MASTER_SITES=  ftp://ftp.conserver.com/conserver/
 
