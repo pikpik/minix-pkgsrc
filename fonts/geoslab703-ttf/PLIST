@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/X11/fonts/TrueType/geo703l.ttf
+lib/X11/fonts/TrueType/geo703li.ttf
+@unexec ${RMDIR} -p %D/lib/X11/fonts/TrueType 2> /dev/null || true
