@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/04/17 04:56:34 uebayasi Exp $
+# $NetBSD: Makefile,v 1.9 2003/04/23 16:59:51 jmc Exp $
 
 DISTNAME=	flim-1.14.5
 PKGREVISION=	2
@@ -20,9 +20,11 @@ INSTALL_TARGET= install
 .else   # ${EMACS_FLAVOR} == "xemacs"
 ALL_TARGET=     package
 INSTALL_TARGET= install-package
-MAKEFLAGS+=     PACKAGEDIR=${EMACS_LISPPREX:C|/lisp$||}
+MAKEFLAGS+=     PACKAGEDIR=${EMACS_LISPPREFIX:C|/lisp$||}
 .endif
 
+USE_NEW_TEXINFO=	YES
+USE_MAKEINFO=	YES
 INFO_FILES=	mime-en.info mime-ja.info
 TEXINFO_REQD=	4.5
 
@@ -38,5 +40,4 @@ pre-build:
 pre-install:
 	${INSTALL_DATA} ${WRKSRC}/mime-*.info ${PREFIX}/info
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
