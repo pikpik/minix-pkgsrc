@@ -1,7 +1,5 @@
-@comment $NetBSD: PLIST,v 1.3 2003/09/10 22:35:53 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.4 2004/11/18 15:57:37 adam Exp $
 bin/povray
-etc/povray/3.6/povray.conf
-etc/povray/3.6/povray.ini
 man/man1/povray.1.gz
 share/doc/${POVRAY}/AUTHORS
 share/doc/${POVRAY}/ChangeLog
