@@ -1,0 +1,2 @@
+@comment $NetBSD$
+@unexec cd ${QMAILDIR} && rm -rf bin boot doc man
