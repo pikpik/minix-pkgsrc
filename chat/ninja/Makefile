@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/28 20:05:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/22 07:49:20 grant Exp $
 #
 
 DISTNAME=	ninja-1.5.8.1
@@ -9,7 +9,7 @@ MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://ninja.qoop.org/
 COMMENT=	Another IRC client based on ircII
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 
