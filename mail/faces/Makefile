@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/01/30 23:18:51 agc Exp $
+# $NetBSD: Makefile,v 1.12 1999/12/05 22:06:19 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/17 18:47:53 max Exp
 #
 
@@ -13,6 +13,8 @@ MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 WRKSRC=		${WRKDIR}/faces
 
 USE_X11=	yes
+
+MAKE_ENV+=	MKLINT=no
 
 post-configure:
 	@for f in ${WRKSRC}/Makefile ${WRKSRC}/faces.h ${WRKSRC}/x11.c; do \
