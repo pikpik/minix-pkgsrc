@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.2 1999/10/25 14:13:35 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 1999/10/25 14:38:39 hubertf Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://ftp.ozone.fmi.fi/KEH/ \
 			ftp://ftp.ibp.fr/pub/unix/mail/elm-me/
 
 MAINTAINER=		packages@netbsd.org
-HOMEPAGE=		http://www.myxa.com/old/elm/
+HOMEPAGE=		http://www.myxa.com/old/elm.html
 
 HAS_CONFIGURE=		Yes
 CONFIGURE_SCRIPT=	Configure
