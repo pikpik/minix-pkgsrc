@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/gerbv
+man/man1/gerbv.1
+share/gerbv/scheme/gerb-ps.scm
+@dirrm share/gerbv/scheme
+@dirrm share/gerbv
