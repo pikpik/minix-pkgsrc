@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.themes,v 1.3 1999/10/28 19:05:43 jlam Exp $
+@comment $NetBSD: PLIST.themes,v 1.1.1.1 2000/12/17 23:32:15 wiz Exp $
 share/asclock-xlib/Freeamp/beats.xpm
 share/asclock-xlib/Freeamp/clock.xpm
 share/asclock-xlib/Freeamp/config
