@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/13 10:47:02 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/25 13:47:56 mjl Exp $
 #
 
 NAME=		textpos
@@ -19,7 +19,6 @@ DISTFILES=	textpos.ins LICENCE README textpos.dtx VERSION
 DEPENDS+=	teTeX-bin-[0-9]*:../../print/teTeX-bin
 
 NO_CONFIGURE=	yes
-NO_PATCH=	yes
 NO_BUILD=	yes
 
 do-extract:

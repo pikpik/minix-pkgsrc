@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/20 20:28:23 kim Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/21 04:47:08 simonb Exp $
 #
 
 DISTNAME=	anomy-sanitizer-1.49
@@ -15,7 +15,6 @@ DEPENDS+=	p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 .include "../../mk/bsd.prefs.mk"
 
 NO_CONFIGURE=	# defined
-NO_PATCH=	# defined
 USE_PERL5=	# defined
 
 WRKSRC=		${WRKDIR}/anomy

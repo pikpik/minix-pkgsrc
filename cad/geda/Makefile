@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/03/09 06:18:26 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/12 21:03:59 jschauma Exp $
 #
 
 DISTNAME=	gEDA-${PKGVERSION}
@@ -19,7 +19,6 @@ DEPENDS+=	geda-docs-${PKGVERSION}:../../cad/geda-docs
 USE_X11BASE=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/25 19:21:20 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/06/28 20:50:14 agc Exp $
 #
 
 DISTNAME=	arphic-ttf-2.11
@@ -18,7 +18,6 @@ CONFLICTS=	arphicttf-*
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

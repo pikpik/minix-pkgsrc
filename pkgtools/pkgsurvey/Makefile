@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/01 12:58:33 agc Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:51:31 wiz Exp $
 #
 
 DISTNAME=	pkgsurvey-0.0
@@ -11,7 +11,6 @@ COMMENT=	utility to collate pkg information, and mail to central census site
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    yes
-NO_PATCH=       yes
 NO_CONFIGURE=   yes
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2003/03/09 19:04:52 jschauma Exp $
+# $NetBSD: Makefile,v 1.47 2003/03/24 18:23:25 jschauma Exp $
 #
 
 PKGNAME=	Mesa-${MESA_VERSION}
@@ -16,7 +16,6 @@ USE_BUILDLINK2=	yes
 
 USE_X11BASE=	yes
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 EXTRACT_ONLY=	# empty

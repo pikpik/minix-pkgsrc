@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2002/03/13 17:37:57 fredb Exp $
+# $NetBSD: Makefile,v 1.29 2002/11/02 00:24:17 wiz Exp $
 #
 
 DISTNAME=	kde-1.1.2
@@ -22,7 +22,6 @@ DEPENDS+=	korganizer-1.1.2nb1:../../time/korganizer
 USE_X11=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

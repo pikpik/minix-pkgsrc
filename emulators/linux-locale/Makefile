@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/04/05 09:36:44 tron Exp $
+# $NetBSD: Makefile,v 1.16 2003/03/26 04:05:51 jschauma Exp $
 
 DISTNAME=	locales-2.1-1mdk
 PKGNAME=	linux-locale-2.1.1
@@ -32,7 +32,6 @@ ONLY_FOR_PLATFORM=NetBSD-*-i386
 DEPENDS=	suse_base>=6.3:../../emulators/${SUSE_DIR_PREFIX}_base
 
 EXTRACT_ONLY=	# empty
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

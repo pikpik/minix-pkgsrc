@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5.2.2 2002/06/21 23:04:44 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/25 21:49:09 jlam Exp $
 
 DISTNAME=	gzip-1.2.4a
 CATEGORIES=	archivers
@@ -16,7 +16,6 @@ USE_BUILDLINK2=	yes
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

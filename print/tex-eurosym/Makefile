@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/04 14:51:50 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/03/13 17:37:39 fredb Exp $
 #
 
 DISTNAME=	eurosym-1.0
@@ -15,7 +15,6 @@ COMMENT=	Euro symbols for LaTeX
 DEPENDS+=	teTeX-bin-[0-9]*:../../print/teTeX-bin
 
 NO_CONFIGURE=	yes
-NO_PATCH=	yes
 NO_BUILD=	yes
 
 do-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/11/02 00:24:18 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/05 12:25:14 tron Exp $
 
 DISTNAME=	kde-2.2.2
 PKGREVISION=	5
@@ -25,7 +25,6 @@ EXTRACT_ONLY=	# empty
 USE_X11BASE=	yes
 USE_BUILDLINK2=	yes
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

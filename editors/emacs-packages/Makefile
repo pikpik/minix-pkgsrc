@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/15 21:48:55 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/16 05:45:29 uebayasi Exp $
 
 DISTNAME=	emacs-packages-0.2
 CATEGORIES=	meta-pkgs editors
@@ -67,7 +67,6 @@ DEPENDS+=	zenirc-[0-9]*:../../chat/zenirc
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

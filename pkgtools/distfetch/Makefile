@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/30 08:37:13 martti Exp $
 
 DISTNAME=	distfetch-20020930
 CATEGORIES=	pkgtools
@@ -12,7 +12,6 @@ COMMENT=	Script to fetch only required distribution files
 EXTRACT_ONLY=	# defined
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	# defined
-NO_PATCH=	# defined
 NO_CONFIGURE=	# defined
 
 .include "../../mk/bsd.prefs.mk"

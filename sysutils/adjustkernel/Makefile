@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/01 01:32:13 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/25 19:05:47 wiz Exp $
 
 DISTNAME=	adjustkernel-1.5
 CATEGORIES=	sysutils
@@ -10,7 +10,6 @@ COMMENT=	Generate a kernel config
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    yes
-NO_PATCH=       yes
 NO_BUILD=	yes
 NO_MTREE=	yes
 

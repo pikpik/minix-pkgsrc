@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/10/30 03:33:56 rh Exp $
+# $NetBSD: Makefile,v 1.21 2002/12/12 14:40:07 abs Exp $
 #
 
 DISTNAME=	url2pkg-1.20
@@ -13,7 +13,6 @@ EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
-NO_PATCH=	yes
 EXTRACT_CMD=	${ECHO}
 
 do-install:

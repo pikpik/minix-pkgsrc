@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/07/11 19:44:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/15 16:44:51 wiz Exp $
 #
 
 DISTNAME=	netbsd-doc-1.2
@@ -19,7 +19,6 @@ DEPENDS+=	html>=4.0:../../textproc/html
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

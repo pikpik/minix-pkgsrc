@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/17 17:07:03 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/17 08:32:14 abs Exp $
 
 DISTNAME=	xdaemon-1.0
 CATEGORIES=	games x11
@@ -19,7 +19,6 @@ PIX=	xdaemon_bw.xbm		xdaemon2_bw.xbm \
 	xdaemon_icon.xbm	xdaemon2_icon.xbm \
 	xdaemon_mask.xbm	xdaemon2_mask.xbm
 WRKSRC=		${WRKDIR}
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 NO_MTREE=	yes

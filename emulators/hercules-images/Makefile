@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/22 16:45:49 agc Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/25 04:17:45 hubertf Exp $
 
 DISTNAME=		mftr33
 PKGNAME=		hercules-images-20010222
@@ -11,7 +11,6 @@ COMMENT=		Images to IPL the Hercules emulator
 
 NO_BUILD=		yes
 NO_CONFIGURE=		yes
-NO_PATCH=		yes
 EXTRACT_ONLY=
 WRKSRC=			${WRKDIR}
 

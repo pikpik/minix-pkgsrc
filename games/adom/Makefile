@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/06/16 21:26:21 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/26 04:05:45 jschauma Exp $
 #
 
 DISTNAME=	adom-100-elf
@@ -14,7 +14,6 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386 Linux-*-i386
 
 WRKSRC=		${WRKDIR}/adom
 NO_BUILD=	YES
-NO_PATCH=	YES
 NO_CONFIGURE=	YES
 CHECK_SHLIBS=	NO
 

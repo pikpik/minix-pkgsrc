@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/30 09:49:31 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2002/03/13 17:37:46 fredb Exp $
 
 #
 # There is no distinfo file since the files change contents so often on the
@@ -21,7 +21,6 @@ DIST_SUBDIR=	ethemes
 USE_X11BASE=	yes
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
-NO_PATCH=	yes
 NO_CHECKSUM=	yes
 EXTRACT_ONLY=
 

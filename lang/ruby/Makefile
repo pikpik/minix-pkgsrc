@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2002/03/21 04:23:37 fredb Exp $
+# $NetBSD: Makefile,v 1.25 2003/03/24 15:01:59 taca Exp $
 # FreeBSD: ports/lang/ruby/Makefile,v 1.40 2001/01/18 19:53:38 knu Exp
 
 DISTNAME=	ruby-${RUBY_VERSION}
@@ -20,7 +20,6 @@ DEPENDS+=	${RUBY_PKGNAMEPREFIX}tk>=${RUBY_VERSION}:../../x11/${RUBY_PKGNAMEPREFI
 RUBY_VER=	1.6
 
 NO_CHECKSUM=	# defined
-NO_PATCH=	# defined
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined
 

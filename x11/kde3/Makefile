@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/01/02 09:12:32 skrll Exp $
+# $NetBSD: Makefile,v 1.15 2003/03/11 13:10:15 markd Exp $
 
 DISTNAME=	kde-3.1
 CATEGORIES=	x11 kde
@@ -26,7 +26,6 @@ EXTRACT_ONLY=	# empty
 USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

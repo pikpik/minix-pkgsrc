@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/01/08 10:45:55 tron Exp $
+# $NetBSD: Makefile,v 1.14 2003/02/04 18:06:49 skrll Exp $
 
 DISTNAME=	qt3-${QTVERSION}
 CATEGORIES=	x11
@@ -17,7 +17,6 @@ USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/01/08 17:45:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2003/01/28 22:04:18 jlam Exp $
 #
 
 DISTNAME=	sysbuild-1.9
@@ -11,7 +11,6 @@ COMMENT=	Automate NetBSD system and kernel unprivileged builds
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}
 CHECK_SHLIBS=	no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/05/14 00:51:24 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/11 19:44:27 wiz Exp $
 #
 
 DISTNAME=	fxtv-capture-1.0
@@ -17,7 +17,6 @@ DEPENDS+=	mplex>=1.1:../../graphics/mplex
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
-NO_PATCH=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

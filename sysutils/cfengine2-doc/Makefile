@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/22 13:08:59 seb Exp $
 #
 
 PKGNAME=	cfengine-doc-${CFENGINE_VERSION}
@@ -7,7 +7,6 @@ PKGNAME=	cfengine-doc-${CFENGINE_VERSION}
 
 COMMENT=	Documentation for cfengine
 
-NO_PATCH=       yes
 NO_CONFIGURE=   yes
 NO_BUILD=       yes
 
