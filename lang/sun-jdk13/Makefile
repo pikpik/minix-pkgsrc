@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/09/22 04:12:37 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/09/27 23:18:18 jlam Exp $
 #
 
 # MASTER_SITES is very special, and must end in "=":
@@ -44,7 +44,7 @@ post-fetch:
 	@${CHMOD} +x ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}
 
 post-extract:
-	@${RM} -rf ${WRKSRC}/jre
+	@${RM} -rf ${WRKSRC}/jre ${WRKSRC}/bin/java
 
 post-patch:
 	@${FIND} ${WRKSRC} -name '*.orig' -print | ${XARGS} ${RM} -f
