@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/08/10 02:59:09 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/08/10 11:44:45 agc Exp $
 #
 
 DISTNAME=	tkdiff-3.03m.tcl.txt
@@ -23,7 +23,5 @@ EXTRACT_CMD=	${CAT} ${DISTDIR}/${DISTNAME} |				\
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${CMDNAME} ${LOCALBASE}/bin/${CMDNAME}
-	${RM} -f ${LOCALBASE}/bin/tkdiff
-	${LN} -s ${LOCALBASE}/bin/${CMDNAME} ${LOCALBASE}/bin/tkdiff
 
 .include "../../mk/bsd.pkg.mk"
