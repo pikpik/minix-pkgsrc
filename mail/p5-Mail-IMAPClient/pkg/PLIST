@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/perl5/site_perl/Mail/IMAPClient.pm
+lib/perl5/man/man3/Mail::IMAPClient.3
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Mail/IMAPClient/.packlist
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Mail/IMAPClient
