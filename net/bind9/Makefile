@@ -17,6 +17,10 @@ DIST_SUBDIR=	bind/${BIND_VERSION}
 BUILD_DEFS+=	USE_INET6
 # No need to set USE_INET6, will auto-detect.
 
+USE_LIBTOOL=		yes
+LIBTOOL_OVERRIDE+=	${WRKSRC}/libtool
+LIBTOOL_OVERRIDE+=	${WRKSRC}/lib/bind/libtool
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--disable-threads	# Until we have real threads
 CONFIGURE_ARGS+=--with-libtool=yes \
