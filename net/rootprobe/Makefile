@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/05/15 00:11:36 itojun Exp $
 #
 
 DISTNAME=	rootprobe
-PKGNAME=	rootprobe-200204
+PKGNAME=	rootprobe-200301
 CATEGORIES=	net
 MASTER_SITES=	http://mawi.wide.ad.jp/mawi/dnsprobe/
 
