@@ -11,7 +11,6 @@ COMMENT=	Preboot eXecution Environment (PXE) daemon
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--with-log=/var/log/pxe.log
-CONFIGURE_ARGS+=--with-config=${PREFIX}/etc/pxe.conf
 
 post-configure:
 	${SED} -e 's|@@PREFIX@@|${PREFIX}|g' < ${FILESDIR}/pxe > ${WRKDIR}/pxe
