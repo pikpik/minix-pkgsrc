@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/11/22 15:37:19 agc Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/11 13:42:14 skrll Exp $
 #
 
 DISTNAME=		cheesetracker-0.2.2
@@ -11,6 +11,9 @@ COMMENT=		impulse tracker clone
 
 DEPENDS+=		gtk-->=1.2:../../x11/gtk--
 
+# Compiler bugs
+NOT_FOR_PLATFORM=	NetBSD-*-macppc NetBSD-*-powerpc NetBSD-*-prep \
+			NetBSD-*-bebox NetBSD-*-amigappc NetBSD-*-sandpoint
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CXXFLAGS="-O -Dusleep=pth_usleep -Dwrite=__pthread_write"
 
