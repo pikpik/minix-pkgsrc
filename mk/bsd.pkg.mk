@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1225 2003/07/28 20:01:54 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1226 2003/07/30 15:04:21 jmmv Exp $
 #
 # This file is in the public domain.
 #
@@ -549,7 +549,9 @@ PLIST_SUBST+=	PERL5_ARCHLIB=${PERL5_ARCHLIB:S/^${LOCALBASE}\///}
 .endif
 
 .if defined(USE_NEW_TEXINFO)
-.  if defined(INFO_FILES)
+INFO_FILES?=
+USE_MAKEINFO?=	no		# default to not using makeinfo
+.  if !empty(INFO_FILES) || empty(USE_MAKEINFO:M[nN][oO])
 .    include "../../mk/texinfo.mk"
 .  endif
 .endif
