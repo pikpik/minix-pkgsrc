@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/rdesktop
+man/man1/rdesktop.1
