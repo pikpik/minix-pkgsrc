@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.79 2002/08/12 09:47:34 agc Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.80 2002/08/12 12:15:12 agc Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -612,6 +612,14 @@ IMAP_UW_CCLIENT_MBOX_FMT?=	unix
 #IMAP_UW_NO_CLEARTEXT?=	YES
 # Used in imap-uw to disallow plaintext passwords except when SSL or TLS
 # is used. This effectively disallows cleartext passwords.
+#
+# Possible: not defined, YES
+# Default: not defined
+
+#IMAP_UW_NO_SSL?= YES
+# Used in imap-uw to build without any SSL or TLS support at all. Note that
+# it doesn't make any sense to enable this together with IMAP_UW_NO_CLEARTEXT,
+# nor is is it fully supported in pkgsrc for all clients.
 #
 # Possible: not defined, YES
 # Default: not defined
