@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.4 2001/07/13 06:16:02 jlam Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.5 2001/07/15 12:40:03 jlam Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -50,3 +50,15 @@ TRUE?=		true				# Shell builtin
 TYPE?=		type				# Shell builtin
 WC?=		/usr/bin/wc
 XARGS?=		/usr/bin/xargs
+
+.if exists(/usr/sbin/user)
+USERADD?=	/usr/sbin/useradd
+GROUPADD?=	/usr/sbin/groupadd
+.else
+USERADD?=	${LOCALBASE}/sbin/useradd
+GROUPADD?=	${LOCALBASE}/sbin/groupadd
+.endif
+.if defined(USE_USERADD) || defined(USE_GROUPADD)
+DEPENDS+=	user>=20000313:../../sysutils/user
+.endif
+NOLOGIN?=	/sbin/nologin
