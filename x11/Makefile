@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.191 2000/12/12 02:10:17 wiz Exp $
+# $NetBSD: Makefile,v 1.192 2000/12/13 17:42:19 jlam Exp $
 #
 
+    SUBDIR += 9term
     SUBDIR += XF86Setup
     SUBDIR += Xaw-Xpm
     SUBDIR += Xaw3d
