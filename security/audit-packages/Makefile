@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2003/12/11 17:10:21 agc Exp $
+# $NetBSD: Makefile,v 1.37 2003/12/12 15:08:21 agc Exp $
 
 DISTNAME=	audit-packages-1.27
 WRKSRC=		${WRKDIR}
@@ -15,7 +15,7 @@ DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "SunOS"
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "AIX"
 # This doesn't create readable manual pages. "mandoc" should be added
 # to zoularis.
 NROFF=		nroff -man
