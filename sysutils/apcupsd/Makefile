@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/08/01 16:55:38 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/08/27 14:35:14 tron Exp $
 
 DISTNAME=		apcupsd-3.6.2
 CATEGORIES=		sysutils
@@ -15,10 +15,11 @@ USE_GMAKE=		# defined
 #USE_LIBINTL=		# defined
 
 GNU_CONFIGURE=		# defined
-CONFIGURE_ARGS+=	--enable-http		# include http support
 
-# Thread support is needed to compile powerflute, which has a curses interface
+# Thread support is needed to for http support, and to compile powerflute,
+# which has a curses interface
 #
+#CONFIGURE_ARGS+=	--enable-http		# include http support
 #DEPENDS+=		ncurses-*:../../devel/ncurses
 #CONFIGURE_ARGS+=	--enable-threads	# compile threading code
 #CONFIGURE_ARGS+=	--enable-powerflute	# compile powerflute program
