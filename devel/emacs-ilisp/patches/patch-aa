@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.orig	Wed May 16 22:18:21 2001
++++ Makefile
+@@ -20,7 +20,7 @@
+ # Use whichever you like most
+ #EMACS = xemacs
+ #EMACS = /usr/local/bin/emacs
+-EMACS = emacs
++#EMACS = emacs
+ 
+ # If your operating system does not support file links (e.g. Windows),
+ # change this to an ordinary copy command
