@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/03/22 04:12:39 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:41:49 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/11/11 05:49:31 obrien Exp
 #
 
@@ -18,5 +18,11 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 MANCOMPRESSED=	yes
+
+pre-build:
+	cd ${WRKSRC} && \
+		for i in *.[ch]; do ${SED} "s,#endif lint,#endif /* lint */,g" $${i} > $${i}.new && \
+			${MV} -f $${i}.new $${i}; \
+		done
 
 .include "../../mk/bsd.pkg.mk"
