@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/ypost
+bin/yencode
+bin/ydecode
+man/man1/yencode.1
+man/man1/ydecode.1
+man/man1/ypost.1
+man/man5/ypostrc.5
