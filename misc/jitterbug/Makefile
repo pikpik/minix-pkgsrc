@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2001/04/09 11:45:35 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2001/12/05 15:00:47 agc Exp $
 
 DISTNAME=	jitterbug-1.6.2
-WRKSRC=		${WRKDIR}/${PKGNAME}/source
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/source
 CATEGORIES=	misc
 MASTER_SITES=	ftp://jitterbug.samba.org/pub/jitterbug/
 
@@ -21,8 +21,8 @@ ADDGROUP=		${LOCALBASE}/sbin/groupadd
 PLIST_SRC=	${WRKDIR}/PLIST-src
 INSTALL_FILE=	${WRKDIR}/INSTALL
 DEINSTALL_FILE=	${WRKDIR}/DEINSTALL
-CONFIGDIR=	${WRKDIR}/${PKGNAME}/config
-DOCSDIR=	${WRKDIR}/${PKGNAME}/docs
+CONFIGDIR=	${WRKDIR}/${PKGNAME_NOREV}/config
+DOCSDIR=	${WRKDIR}/${PKGNAME_NOREV}/docs
 CGIBINDIR=	libexec/cgi-bin
 
 .include "../../mk/bsd.prefs.mk"

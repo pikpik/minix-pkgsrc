@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/01 05:58:49 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:30 jmmv Exp $
 #
 
 DISTNAME=	c4
 PKGNAME=	${DISTNAME}-1.6
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.perforce.com/perforce/utils/c4/
 

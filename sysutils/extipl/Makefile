@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/07/10 13:05:32 agc Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:27 jmmv Exp $
 #
 
 DISTNAME=	extipl-5.04
-WRKSRC=		${WRKDIR}/${PKGNAME}/src
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/src
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tsden.org/takamiti/extipl/archs/
 

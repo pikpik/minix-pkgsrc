@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2002/05/12 10:16:46 abs Exp $
+# $NetBSD: Makefile,v 1.11 2002/10/25 17:33:59 wiz Exp $
 #
 
 DISTNAME=	bvi-1.3.0.src
 PKGNAME=	bvi-1.3.0
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bvi/}
 

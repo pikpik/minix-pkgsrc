@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/16 05:31:10 lukem Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:05 jmmv Exp $
 
 DISTNAME=	cd-discid_0.7.orig
 PKGNAME=	cd-discid-0.7
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	audio
 MASTER_SITES=	http://frantica.lly.org/~rcw/cd-discid/
 

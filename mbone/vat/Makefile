@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.41 2001/08/27 14:35:11 tron Exp $
+# $NetBSD: Makefile,v 1.42 2002/10/02 22:57:14 wiz Exp $
 #
 
 DISTNAME=		vatsrc-4.0b2
 PKGNAME=		${DISTNAME:S/src//}
-WRKSRC=			${WRKDIR}/${PKGNAME}
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=		mbone
 MASTER_SITES=		ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2003/03/29 12:42:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2003/06/02 01:16:26 jschauma Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
 DISTNAME=	rman
 PKGNAME=	rman-3.0.9
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://polyglot.sourceforge.net/pub/polyglotman/ \
 		http://polyglotman.sourceforge.net/

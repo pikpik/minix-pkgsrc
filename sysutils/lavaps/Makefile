@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2002/07/24 19:45:27 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/03/29 12:42:28 jmmv Exp $
 #
 
 DISTNAME=	lavaps-1.20
 PKGNAME=	lavaps-1.20
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 

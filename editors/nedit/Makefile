@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2003/03/29 12:40:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2003/06/02 01:20:07 jschauma Exp $
 
 VERS=		5.3
 DISTNAME=	nedit-${VERS}-source
 PKGNAME=	nedit-${VERS}
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	editors
 MASTER_SITES=	http://www.nedit.org/ftp/v${VERS:S/./_/g}/ \
 		http://www.au.nedit.org/ftp/v${VERS:S/./_/g}/ \

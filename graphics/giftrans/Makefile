@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/03/08 10:20:32 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:16 jmmv Exp $
 #
 
 DISTNAME=	sgif1122
 PKGNAME=	giftrans-1.12.2
-WRKSRC=		${WRKDIR}/usr/src/${PKGNAME}
+WRKSRC=		${WRKDIR}/usr/src/${PKGNAME_NOREV}
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/Linux/woven/html/
 EXTRACT_SUFX=	.tgz
