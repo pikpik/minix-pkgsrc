@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2001/09/12 18:58:57 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2001/09/17 18:04:42 tron Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -31,7 +31,8 @@ CONFIGURE_ARGS+=	-Uinstallusrbinperl
 MKPIC?=			yes
 
 # Nail down the needed libraries for each platform here to avoid hidden
-# dependencies.
+# dependencies.  If this isn't defined, then use the perl defaults for the
+# particular operating system.
 #
 LIBSWANTED.NetBSD=	m crypt
 LIBSWANTED.SunOS=	m crypt socket nsl
