@@ -5,6 +5,26 @@
 #
 SFILES+=	content-types.properties
 SFILES+=	flavormap.properties
+SFILES+=	fontconfig.RedHat.2.1.bfc
+SFILES+=	fontconfig.RedHat.2.1.properties.src
+SFILES+=	fontconfig.RedHat.3.bfc
+SFILES+=	fontconfig.RedHat.3.properties.src
+SFILES+=	fontconfig.RedHat.8.0.bfc
+SFILES+=	fontconfig.RedHat.8.0.properties.src
+SFILES+=	fontconfig.RedHat.bfc
+SFILES+=	fontconfig.RedHat.properties.src
+SFILES+=	fontconfig.SuSE.bfc
+SFILES+=	fontconfig.SuSE.properties.src
+SFILES+=	fontconfig.Sun.2003.bfc
+SFILES+=	fontconfig.Sun.2003.properties.src
+SFILES+=	fontconfig.Sun.bfc
+SFILES+=	fontconfig.Sun.properties.src
+SFILES+=	fontconfig.Turbo.8.0.bfc
+SFILES+=	fontconfig.Turbo.8.0.properties.src
+SFILES+=	fontconfig.Turbo.bfc
+SFILES+=	fontconfig.Turbo.properties.src
+SFILES+=	fontconfig.bfc
+SFILES+=	fontconfig.properties.src
 SFILES+=	i386/jvm.cfg
 SFILES+=	images/cursors/cursors.properties
 SFILES+=	javaws/messages.properties
