@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.44 2004/04/11 16:17:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.45 2004/04/17 22:48:06 minskim Exp $
 
 DISTNAME=	nas-1.6.src
 PKGNAME=	${DISTNAME:S/.src//}
 PKGREVISION=	3
 CATEGORIES=	audio
-MASTER_SITES=	http://radscan.com/nas/ \
+MASTER_SITES=	http://nas.codebrilliance.com/nas/ \
 		ftp://ftp.uni-duisburg.de/Sound/NAS/ \
 
 MAINTAINER=	tech-pkg@NetBSD.org
