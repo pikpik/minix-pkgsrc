@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.3838 2003/11/18 14:55:37 xtraeme Exp $
+$NetBSD: CHANGES,v 1.3839 2003/11/18 16:14:18 jschauma Exp $
 
 Changes to the packages collection and infrastructure in 2003:
 
@@ -4618,3 +4618,6 @@ Changes to the packages collection and infrastructure in 2003:
 	Updated MesaLib to 5.0.2nb2 [jschauma 2003-11-18]
 	Updated glu to 5.0.2nb2 [jschauma 2003-11-18]
 	Updated glut to 5.0.2nb2 [jschauma 2003-11-18]
+	Added emacs20-elib-1.0 [cube 2003-11-18]
+	Updated elib to 1.0nb2 [cube 2003-11-18]
+	Updated pcl-cvs to 2.9.9nb1 [cube 2003-11-18]
