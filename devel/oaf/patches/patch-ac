@@ -1,8 +1,8 @@
 $NetBSD$
 
---- liboaf/Makefile.in.orig	Tue Aug 29 17:07:06 2000
-+++ liboaf/Makefile.in
-@@ -242,7 +242,7 @@
+--- liboaf/Makefile.in.orig	Sat May 18 12:22:48 2002
++++ liboaf/Makefile.in	Sat May 18 12:23:02 2002
+@@ -270,7 +270,7 @@
  maintainer-clean-libtool:
  
  liboaf.la: $(liboaf_la_OBJECTS) $(liboaf_la_DEPENDENCIES)
