@@ -1,0 +1,2 @@
+@comment $NetBSD$
+share/mk/bsd.python.mk
