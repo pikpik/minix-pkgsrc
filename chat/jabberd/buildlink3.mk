@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3,v 1.1 2004/02/11 03:22:37 xtraeme Exp $
+# $NetBSD$
 #
 # This Makefile fragment is included by packages that use jabberd.
 #
@@ -14,10 +14,9 @@ BUILDLINK_DEPENDS+=	jabberd
 
 .if !empty(JABBERD_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=			jabberd
-BUILDLINK_DEPENDS.jabberd+=		jabberd>=1.4.3nb1
+BUILDLINK_DEPENDS.jabberd+=		jabberd>=1.4.2
 BUILDLINK_PKGSRCDIR.jabberd?=		../../chat/jabberd
 
-.include "../../devel/pth/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 
 .endif # JABBERD_BUILDLINK3_MK

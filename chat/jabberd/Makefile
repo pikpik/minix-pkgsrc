@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2004/02/02 01:37:09 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/22 07:49:20 grant Exp $
 #
 
-DISTNAME=		jabberd-1.4.3
-PKGREVISION=		1
+DISTNAME=		jabber-1.4.2
+PKGNAME=		jabberd-1.4.2
 CATEGORIES=		chat
-MASTER_SITES=		http://jabberd.jabberstudio.org/1.4/dist/
+MASTER_SITES=		http://jabberd.jabberstudio.org/downloads/ \
+			http://jabberd.jabberstudio.org/1.4/dist/
 
 MAINTAINER=		xtraeme@NetBSD.org
 HOMEPAGE=		http://jabberd.jabberstudio.org/1.4/
@@ -82,6 +83,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/jabberd/lib/lib.h ${INCDIR}/lib
 	${INSTALL_DATA} ${WRKSRC}/jabberd/lib/xmlparse.h ${INCDIR}/lib
 
-.include "../../devel/pth/buildlink3.mk"
+#.include "../../devel/pth/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
