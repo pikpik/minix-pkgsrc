@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.75 2004/01/08 14:53:06 grant Exp $
+# $NetBSD: defs.SunOS.mk,v 1.76 2004/01/10 07:31:07 grant Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -67,7 +67,7 @@ PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/usr/bin/rm
 RMDIR?=		/usr/bin/rmdir
-SED?=		/usr/xpg4/bin/sed
+SED?=		${LOCALBASE}/bin/nbsed
 SETENV?=	/usr/bin/env
 SH?=		/bin/ksh
 SHLOCK=		${LOCALBASE}/bin/shlock
