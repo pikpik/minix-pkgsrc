@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2001/03/30 22:06:01 itojun Exp $
 
 --- config.layout-	Fri Mar 30 20:15:06 2001
 +++ config.layout	Fri Mar 30 20:18:04 2001
@@ -9,7 +9,7 @@ $NetBSD$
 +
 +#   NetBSD Layout
 +<Layout NetBSD>
-+    prefix:        /usr/pkg
++    prefix:        PKG_PREFIX
 +    exec_prefix:   $prefix
 +    bindir:        $prefix/bin
 +    sbindir:       $prefix/sbin
