@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/14 05:11:17 jun Exp $
 #
 
-DISTNAME=	AiSSLtelnet-0.142
+DISTNAME=	AiSSLtelnet-0.15
+WRKSRC=         ${WRKDIR}/AiSSLtelnet
 CATEGORIES=	security
 MASTER_SITES=	http://mars.elcom.nitech.ac.jp/security/
 
