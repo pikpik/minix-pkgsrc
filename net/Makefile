@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 1998/04/26 17:20:45 tron Exp $
+# $NetBSD: Makefile,v 1.27 1998/04/28 07:54:27 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -70,7 +70,7 @@
     SUBDIR += tcptrace
 #    SUBDIR += telnetx
 #    SUBDIR += tintin++
-#    SUBDIR += tinyfugue
+    SUBDIR += tinyfugue
 #    SUBDIR += traceroute
 #    SUBDIR += trafshow
     SUBDIR+= ttcp
