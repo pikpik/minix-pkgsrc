@@ -1,22 +1,31 @@
-# $NetBSD: Makefile,v 1.5 1998/10/16 21:08:26 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1999/02/20 22:48:38 hubertf Exp $
 #
 
-DISTNAME=	suck-3.10.1
+DISTNAME=	suck-4.2.2
 CATEGORIES=	news
-MASTER_SITES=	http://home.att.net/~bobyetman/
-MASTER_SITES+=	ftp://sunsite.unc.edu/pub/Linux/system/news/transport/
-MASTER_SITES+=	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/
+MASTER_SITES=	http://home.att.net/~bobyetman/ \
+		ftp://sunsite.unc.edu/pub/Linux/system/news/transport/ \
+		ftp://tsx-11.mit.edu/pub/linux/sources/sbin/
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	drankin@bohemians.lexington.ky.us
 HOMEPAGE=	http://home.att.net/~bobyetman/
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS= --prefix=${LOCALBASE}
+GNU_CONFIGURE=	yes
+
+.include "../../mk/bsd.prefs.mk"
+
+# Include SOCKS firewall support
+.if defined(USE_SOCKS) && (${USE_SOCKS} == 4 || ${USE_SOCKS} == 5)
+.if ${USE_SOCKS} == 4
+DEPENDS+=		socks4-2.2:../../net/socks4
+.else
+DEPENDS+=		socks5-1.0.2:../../net/socks5
+.endif
+.endif
 
 post-patch:
-	@${CAT} ${WRKSRC}/Makefile.in | ${SED} \
-		-e 's+%%%HISTORY%%%+'${LOCALBASE}'/etc/news/history+g' \
-		>${WRKSRC}/Makefile.tmp
+	${SED} -e 's|%%%HISTORY%%%|${LOCALBASE}/etc/news/history|g' \
+		${WRKSRC}/Makefile.in >${WRKSRC}/Makefile.tmp
 	@${MV} ${WRKSRC}/Makefile.tmp ${WRKSRC}/Makefile.in
 
 post-install:
