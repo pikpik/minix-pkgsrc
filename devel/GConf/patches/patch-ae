@@ -1,8 +1,8 @@
 $NetBSD$
 
---- gconf/Makefile.in.orig	Tue Oct 30 04:55:38 2001
+--- gconf/Makefile.in.orig	Fri Mar 15 05:18:42 2002
 +++ gconf/Makefile.in
-@@ -597,7 +597,7 @@
+@@ -615,7 +615,7 @@
  
  install-data-local:
  	-mkdir -p $(DESTDIR)$(sysconfdir)/gconf/$(MAJOR_VERSION)
