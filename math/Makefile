@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2002/10/18 21:57:47 abs Exp $
+# $NetBSD: Makefile,v 1.86 2002/11/02 10:26:46 rh Exp $
 #
 
 COMMENT=	Mathematics
@@ -77,6 +77,7 @@ SUBDIR+=	sc
 SUBDIR+=	scilab
 SUBDIR+=	slatec
 SUBDIR+=	snns
+SUBDIR+=	statist
 SUBDIR+=	superlu
 SUBDIR+=	tasp-vsipl
 SUBDIR+=	tela
