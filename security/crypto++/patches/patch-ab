@@ -1,7 +1,8 @@
 $NetBSD$
---- config.h.orig	2004-04-14 01:13:37.000000000 +0100
-+++ config.h	2004-04-14 01:13:41.000000000 +0100
-@@ -194,7 +194,7 @@
+
+--- config.h.orig	2004-07-21 19:09:46.000000000 +0200
++++ config.h
+@@ -201,7 +201,7 @@ NAMESPACE_END
  #define CRYPTOPP_WIN32_AVAILABLE
  #endif
  
