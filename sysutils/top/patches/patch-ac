@@ -1,8 +1,16 @@
-$NetBSD: patch-ac,v 1.6 2000/02/19 02:40:35 wiz Exp $
+$NetBSD$
 
---- ./Makefile.X.orig	Wed Nov 20 03:19:24 1996
-+++ ./Makefile.X	Sat Feb 19 03:34:17 2000
-@@ -100,10 +100,10 @@
+--- Makefile.X.orig	Wed Nov 20 13:19:24 1996
++++ Makefile.X
+@@ -11,7 +11,6 @@
+ # Executables (these should be obvious):
+ 
+ SHELL   = %shell%
+-CC      = %cc%
+ AWK     = %awk%
+ INSTALL = %install%
+ 
+@@ -100,10 +99,10 @@ veryclean: clean
  install: top top.1 install-top install-$(MANSTY)
  
  install-top:
