@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.14 2000/08/23 23:14:29 tron Exp $
+# $NetBSD: Makefile,v 1.15 2000/09/10 20:31:33 wiz Exp $
 #
 
-DISTNAME=		libwmf-0.1.17
-PKGNAME=		libwmf-0.1.17nb1
+DISTNAME=		libwmf-0.1.20
 CATEGORIES=		graphics devel
-MASTER_SITES=		http://www.csn.ul.ie/~caolan/publink/libwmf/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wvware/}
 
 MAINTAINER=		packages@netbsd.org
-HOMEPAGE=		http://www.csn.ul.ie/~caolan/docs/libwmf.html
+HOMEPAGE=		http://www.wvware.com/libwmf.html
 
 DEPENDS+=		freetype-lib>=1.3.1:../../graphics/freetype-lib
 DEPENDS+=		png>=1.0.6:../../graphics/png
