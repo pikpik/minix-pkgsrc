@@ -47,9 +47,9 @@ $NetBSD$
  	    esac;;
 +  netbsd)   case "`uname -m`" in
 +	    alpha)      arch=alpha;;
-+	    hp300)      arch=hppa;;
 +	    i386)       arch=ix86;;
 +	    sun3)       arch=m68k;;
++	    *68k)       arch=m68k;;
 +	    *)          arch=none;;
 +	    esac;;
    sunos)    case "$3" in 5*) osname=solaris;; esac
