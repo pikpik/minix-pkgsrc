@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2000/08/18 22:46:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.23 2000/08/28 09:14:51 jlam Exp $
 #
 
 DISTNAME=		openssh-2.1.1p4
@@ -35,7 +35,7 @@ SSLBASE=		${LOCALBASE}
 SSLBASE=		/usr
 .endif
 .else
-DEPENDS+=		openssl>=0.9.5a:../../security/openssl
+DEPENDS+=		openssl-0.9.5a:../../security/openssl
 SSLBASE=		${LOCALBASE}
 .endif
 
