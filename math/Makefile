@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2001/03/07 15:54:26 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2001/03/07 20:58:25 jtb Exp $
 #
 
 COMMENT=	Mathematics
@@ -30,6 +30,7 @@ SUBDIR+=	metis
 SUBDIR+=	minpack
 SUBDIR+=	ntl
 SUBDIR+=	octave
+SUBDIR+=	octave-current
 SUBDIR+=	odepack
 SUBDIR+=	otter
 SUBDIR+=	pari
