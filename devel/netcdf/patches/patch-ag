@@ -1,9 +1,9 @@
 $NetBSD$
 
---- ncdump/Makefile.orig	Thu Feb 27 13:28:14 2003
+--- ncdump/Makefile.orig	2004-12-18 18:08:01.000000000 +0000
 +++ ncdump/Makefile
 @@ -16,7 +16,7 @@ PACKING_LIST	= $(c_sources) $(headers) d
- 		  test0.cdl ncdump.1 Makefile
+ 		  test0.cdl ncdump.1 Makefile install-sh
  MANUAL		= ncdump.1
  
 -lib_netcdf	= ../libsrc/libnetcdf.a
