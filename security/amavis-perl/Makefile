@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/22 11:27:16 martti Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/17 16:17:53 manu Exp $
 #
 
 DISTNAME=	amavisd-${VERSION}
@@ -61,7 +61,7 @@ CONFIGURE_ARGS+=--enable-all
 CONFIGURE6ARGS+=--with-amavisuser=amavis
 
 .if defined(USE_MILTER) && ${USE_MILTER} == "YES"
-CONFIGURE_ARGS+=--enable-milter 
+CONFIGURE_ARGS+=--enable-milter
 CONFIGURE_ARGS+=--with-milter-libs=${PREFIX}/lib
 CONFIGURE_ARGS+=--with-milter-includes=${PREFIX}/include
 .else
