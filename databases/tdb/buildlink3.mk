@@ -1,9 +1,4 @@
-# $NetBSD$
-#
-# This Makefile fragment is included by packages that use tdb.
-#
-# This file was created automatically using createbuildlink-3.1.
-#
+# $NetBSD: buildlink3.mk,v 1.1 2004/02/19 11:28:21 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 TDB_BUILDLINK3_MK:=	${TDB_BUILDLINK3_MK}+
@@ -12,11 +7,12 @@ TDB_BUILDLINK3_MK:=	${TDB_BUILDLINK3_MK}+
 BUILDLINK_DEPENDS+=	tdb
 .endif
 
+BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ntdb}
+BUILDLINK_PACKAGES+=	tdb
+
 .if !empty(TDB_BUILDLINK3_MK:M+)
-BUILDLINK_PACKAGES+=		tdb
 BUILDLINK_DEPENDS.tdb+=		tdb>=1.0.6
 BUILDLINK_PKGSRCDIR.tdb?=	../../databases/tdb
-
-.endif # TDB_BUILDLINK3_MK
+.endif	# TDB_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
