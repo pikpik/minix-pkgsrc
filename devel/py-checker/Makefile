@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/27 14:16:34 drochner Exp $
-#
+# $NetBSD: Makefile,v 1.4 2002/12/26 14:25:47 shell Exp $
 
-DISTNAME=		pychecker-0.8.12
-CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pychecker/}
+DISTNAME=	pychecker-0.8.12
+PKGNAME=	${PYPKGPREFIX}-checker-0.8.12
+CATEGORIES=	devel
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pychecker/}
 
-MAINTAINER=		tech-pkg@netbsd.org
-HOMEPAGE=		http://pychecker.sourceforge.net/
-COMMENT=		tool for finding bugs in python source code
+MAINTAINER=	shell@netbsd.org
+HOMEPAGE=	http://pychecker.sourceforge.net/
+COMMENT=	python code checker
 
-USE_BUILDLINK2=		yes
-PYDISTUTILSPKG=	yes
-PLIST_SUBST+= PYVERSSUFFIX=${PYVERSSUFFIX}
+USE_BUILDLINK2=	yes
+PYDISTUTILSPKG=	# defined
+PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX}
+PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 
 .include "../../lang/python/extension.mk"
-.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"
