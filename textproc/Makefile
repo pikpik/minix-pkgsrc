@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.129 2001/12/19 13:23:46 abs Exp $
+# $NetBSD: Makefile,v 1.130 2001/12/31 23:34:43 jlam Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -81,6 +81,7 @@ SUBDIR+=	p5-libxml
 SUBDIR+=	p5-libxml-enno
 SUBDIR+=	par
 SUBDIR+=	php4-wddx
+SUBDIR+=	php4-xslt
 SUBDIR+=	php4-xml
 SUBDIR+=	py-dtml
 SUBDIR+=	pyxml
