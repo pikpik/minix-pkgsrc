@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/07 15:23:39 wiz Exp $
 #
 
 DISTNAME=		tuxpaint-config-0.0.5
@@ -12,7 +12,6 @@ COMMENT=		Configuration program for tuxpaint
 USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		YES
-MANCOMPRESSED=		YES
 
 post-install:
 	-${FIND} ${PREFIX}/share/tuxpaint-config -name CVS -exec ${RM} -r {} \; 2>/dev/null
