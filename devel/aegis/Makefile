@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/08 11:47:49 mrg Exp $
+# $NetBSD: Makefile,v 1.2 2003/11/27 16:13:55 recht Exp $
 #
 
 DISTNAME=	aegis-4.15
@@ -9,7 +9,7 @@ MAINTAINER=	Matthew@Aldous.com
 HOMEPAGE=	http://aegis.sourceforge.net/
 COMMENT=	Aegis is a transaction base software configuration management system
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_PKGLOCALEDIR=	yes
 CONFIGURE_ARGS=		--with-nlsdir=${_PKGLOCALEDIR}
