@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/24 15:00:22 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/06/21 18:27:47 drochner Exp $
 
 DISTNAME=	dropbear-0.42
 CATEGORIES=	security
@@ -9,9 +9,11 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://matt.ucc.asn.au/dropbear/dropbear.html
 COMMENT=	SSH2 server, aimed at embedded market
 
+USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
 
 MAKEFLAGS+=	ROOT_USER=${ROOT_USER} ROOT_GROUP=${ROOT_GROUP}
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
