@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/09/15 13:58:37 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2003/09/17 19:40:23 grant Exp $
 #
 
 DISTNAME=	angband-3.0.3
@@ -36,5 +36,5 @@ post-install:
 	${CHOWN} -R bin:games ${PREFIX}/share/games/angband
 	${FIND} ${PREFIX}/share/games/angband -name delete.me -exec ${RM} {} \;
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:29:55 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:17 martti Exp $
 #
 
 DISTNAME=	cmake-1.6.6
@@ -20,5 +20,5 @@ post-patch:
 	${SED} 's;@prefix@;${PREFIX};g' ${WRKSRC}/Modules/FindCurses.cmake.bak > \
 		${WRKSRC}/Modules/FindCurses.cmake
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

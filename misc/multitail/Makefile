@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:49:32 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 17:01:19 martti Exp $
 #
 
 DISTNAME=	multitail-2.4
@@ -17,5 +17,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/multitail ${PREFIX}/bin/
 	${INSTALL_MAN} ${WRKSRC}/multitail.1 ${PREFIX}/man/man1/
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

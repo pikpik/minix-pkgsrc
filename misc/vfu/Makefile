@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/07/14 10:07:10 jmmv Exp $
+# $NetBSD: Makefile,v 1.31 2003/07/17 21:50:01 grant Exp $
 #
 
 DISTNAME=	vfu-3.04
@@ -36,6 +36,6 @@ post-install:
 	cd ${WRKSRC};							\
 	${INSTALL_DATA} ${WRKSRC}/vfu.conf ${EGDIR}/vfu.conf
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../lang/perl5/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

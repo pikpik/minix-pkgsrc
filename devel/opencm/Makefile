@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:32:02 grant Exp $
+# $NetBSD: Makefile,v 1.19 2003/08/09 10:44:47 seb Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-1-src
@@ -31,7 +31,7 @@ CPPFLAGS+=	-D__unix__
 MAKE_ENV+=	GZIP_CMD=${GZIP_CMD:Q}
 
 .include "../../devel/boehm-gc/buildlink2.mk"
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../devel/readline/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2003/09/16 15:12:51 agc Exp $
+# $NetBSD: Makefile,v 1.102 2003/09/25 08:36:16 grant Exp $
 
 DISTNAME=		mutt-1.4.1i
 PKGNAME=                ${DISTNAME:C/i$//}
@@ -36,7 +36,7 @@ CONFIGURE_ARGS+=	--with-slang=${BUILDLINK_PREFIX.libslang}
 . if ${MUTT_USE_NCURSES} == YES
 USE_NCURSES=		yes
 . endif
-. include "../../devel/ncurses/buildlink2.mk"
+. include "../../mk/curses.buildlink2.mk"
 CONFIGURE_ARGS+=	--with-curses=${BUILDLINK_PREFIX.ncurses}
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/20 16:48:53 seb Exp $
+# $NetBSD: Makefile,v 1.16 2003/08/09 11:25:13 seb Exp $
 #
 
 DISTNAME=	grub-0.93
@@ -42,5 +42,5 @@ CONFIGURE_ARGS+=	${GRUB_SCAN_ARGS}
 .endif
 
 .include "../../devel/binutils/buildlink2.mk"
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

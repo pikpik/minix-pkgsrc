@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/07/13 13:52:46 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2003/07/17 21:49:55 grant Exp $
 #
 
 DISTNAME=       siag-3.5.7
@@ -35,7 +35,7 @@ CONFIGURE_ARGS+=--with-xawm=neXtaw
 CONFIGURE_ARGS+=--with-xawm=Xaw
 .endif
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../lang/guile14/buildlink2.mk"
 .include "../../graphics/xpm/buildlink2.mk"
 .include "../../x11/mowitz/buildlink2.mk"

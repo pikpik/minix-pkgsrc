@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:34:40 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 16:44:37 martti Exp $
 #
 
 DISTNAME=	mined-2000.7
@@ -15,5 +15,5 @@ USE_BUILDLINK2=	yes
 
 MAKEFILE=	makefile.bsd
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

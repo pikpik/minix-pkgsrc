@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/26 16:14:14 jmc Exp $
+# $NetBSD: Makefile,v 1.11 2003/08/29 16:18:16 jmmv Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
@@ -29,7 +29,7 @@ CONFIGURE_ARGS+=	--with-tlib=ncurses
 post-configure:
 	${TOUCH} ${WRKSRC}/auto/configure ${WRKSRC}/auto/config.mk
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../x11/kdebase3/buildlink2.mk"
 

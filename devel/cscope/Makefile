@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/07/21 16:43:17 martti Exp $
+# $NetBSD: Makefile,v 1.27 2003/08/02 18:17:44 kristerw Exp $
 #
 
 DISTNAME=	cscope-15.4
@@ -27,5 +27,5 @@ LEX=			${LOCALBASE}/bin/flex
 
 CONFIGURE_ENV+=		LEX=${LEX}
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/02 14:09:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/13 13:51:54 wiz Exp $
 #
 
 DISTNAME=	vms-empire-1.4
@@ -16,5 +16,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vms-empire ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/vms-empire.6 ${PREFIX}/man/man6/vms-empire.6
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

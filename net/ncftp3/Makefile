@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/13 13:52:58 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 22:51:25 grant Exp $
 
 DISTNAME=	ncftp-3.0.3-src
 PKGNAME=	ncftp3-3.0.3
@@ -19,5 +19,5 @@ post-patch:
 	@${SED} -e "s:/etc/ncftp.firewall:${PREFIX}/etc/ncftp.firewall:" \
 		< ${WRKSRC}/ncftp/pref.h.in > ${WRKSRC}/ncftp/pref.h
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

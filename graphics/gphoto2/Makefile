@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 21:41:05 grant Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/21 16:51:44 martti Exp $
 #
 
 DISTNAME=	gphoto2-2.1.1
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--without-readline
 
 .include "../../devel/cdk/buildlink2.mk"
 .include "../../devel/libgphoto2/buildlink2.mk"
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../devel/popt/buildlink2.mk"
 .include "../../graphics/aalib/buildlink2.mk"

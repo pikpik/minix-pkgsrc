@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/16 18:27:30 dillo Exp $
 #
 
 DISTNAME=		freesci-0.3.4a
@@ -21,7 +21,7 @@ post-install:
 
 .include "../../devel/SDL/buildlink2.mk"
 .include "../../devel/readline/buildlink2.mk"
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 #.include "../../mk/motif.buildlink2.mk"
 #.include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

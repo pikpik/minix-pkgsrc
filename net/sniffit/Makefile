@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/13 13:53:00 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 22:51:52 grant Exp $
 #
 
 DISTNAME=		sniffit.0.3.5
@@ -23,5 +23,5 @@ do-install:
 	${INSTALL_MAN}     ${WRKSRC}/sniffit.5 ${PREFIX}/man/man5
 	${INSTALL_MAN}     ${WRKSRC}/sniffit.8 ${PREFIX}/man/man8
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

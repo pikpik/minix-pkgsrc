@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/13 13:51:29 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 21:34:21 grant Exp $
 #
 
 DISTNAME=	bvi-1.3.0.src
@@ -16,5 +16,5 @@ USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 MAKE_ENV+=	SHELL=${SH}
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

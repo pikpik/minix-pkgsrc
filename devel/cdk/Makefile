@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/06/18 09:22:17 agc Exp $
+# $NetBSD: Makefile,v 1.20 2003/07/13 13:51:03 wiz Exp $
 #
 
 DISTNAME=		latestCDK
@@ -30,6 +30,6 @@ post-install:
 		${INSTALL_DATA} $${file} ${PREFIX}/share/examples/cdk/; \
 	done
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/autoconf.mk"
 .include "../../mk/bsd.pkg.mk"

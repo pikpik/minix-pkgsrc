@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:52:48 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:51:03 grant Exp $
 
 DISTNAME=	chrony-1.17
 PKGREVISION=	1
@@ -33,5 +33,5 @@ post-install:
 	done
 
 .include "../../devel/readline/buildlink2.mk"
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/04 16:22:06 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/13 13:53:00 wiz Exp $
 #
 
 DISTNAME=	slurm-0.2.1
@@ -19,5 +19,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/slurm ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/slurm.1 ${PREFIX}/man/man1
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
