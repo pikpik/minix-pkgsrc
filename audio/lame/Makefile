@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/07/13 13:50:26 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2003/07/17 21:22:32 grant Exp $
 #
 
 VERS=		3.93.1
@@ -12,8 +12,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} \
 MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.mp3dev.org/mp3/
 COMMENT=	Fast, high quality MP3 encoder
-
-LICENSE=	fee-based-commercial-use
 
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes
