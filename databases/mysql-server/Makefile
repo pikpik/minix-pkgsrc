@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/07/12 17:41:58 bad Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/03 20:30:41 bad Exp $
 #
 
 DISTNAME=		mysql-3.22.22
@@ -14,6 +14,8 @@ HOMEPAGE=		http://www.mysql.com/
 DEPENDS=		${DISTNAME:S/-/-client-/}:../../databases/mysql-client
 
 NO_CDROM=		"Restrictive license."
+
+EXTRACT_USING_PAX=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
