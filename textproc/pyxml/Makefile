@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/01/16 21:06:44 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2002/01/17 11:22:43 drochner Exp $
 #
 
-DISTNAME=	PyXML-0.6.6
-PKGNAME=	${PYPKGPREFIX}-xml-0.6.6
+DISTNAME=	PyXML-0.7
+PKGNAME=	${PYPKGPREFIX}-xml-0.7
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyxml/}
 
