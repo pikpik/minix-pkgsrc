@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/08/02 17:45:32 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/27 23:17:42 jlam Exp $
 #
 
 DISTNAME=	audacity-src-0.96
@@ -22,6 +22,11 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--without-xaudio --with-libmpeg3
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include"
 USE_GMAKE=	yes
+
+# XXX Internal compiler error with -O2
+.if (${MACHINE_ARCH} == alpha)
+CFLAGS=		-O
+.endif
 
 post-patch:
 	${SED} "s|XXXHELPDIRXXX|${PREFIX}/share|" \
