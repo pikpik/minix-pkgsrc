@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/05/18 13:06:42 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:50:00 grant Exp $
 #
 
 DISTNAME=	utftools-1.6
@@ -10,7 +10,7 @@ MAINTAINER=	agc@NetBSD.org
 COMMENT=	UTF-aware wc, fmt, expand, and unexpand
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
-.include "../../misc/libutf/buildlink2.mk"
+.include "../../misc/libutf/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
