@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2001/03/27 03:20:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.91 2001/03/30 15:08:42 mycroft Exp $
 #
 
 DISTNAME=       fetchmail-5.7.7
@@ -21,6 +21,7 @@ CONFIGURE_ARGS+=--without-hesiod
 CONFIGURE_ENV+=  LDFLAGS="${CFLAGS}"
 
 BUILD_DEFS+=	USE_INET6
+CFLAGS+=	${CPPFLAGS}
 
 .include "../../mk/bsd.prefs.mk"
 
