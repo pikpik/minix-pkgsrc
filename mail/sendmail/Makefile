@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/01/21 05:58:50 itojun Exp $
+# $NetBSD: Makefile,v 1.28 2001/01/29 11:34:31 wiz Exp $
 
 DISTNAME=	sendmail.8.11.2
 PKGNAME=	sendmail-8.11.2
@@ -87,7 +87,6 @@ post-build:
 	${SED} -e 's#@@PREFIX@@#${PREFIX}#g' \
 	  <${FILESDIR}/mailer.conf >${WRKDIR}/mailer.conf.sendmail
 	${CAT} ${PKGDIR}/PLIST.common ${PKGDIR}/PLIST.${LOWER_OPSYS} > ${PLIST_SRC}
-test-build:
 	${CP} ${PKGDIR}/MESSAGE ${MESSAGE_SRC}
 .if ${USE_DB2} == YES
 	${ECHO} "" >> ${MESSAGE_SRC}
