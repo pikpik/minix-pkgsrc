@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/08/08 11:14:37 shannonjr Exp $
+# $NetBSD: Makefile,v 1.8 2004/08/11 22:45:00 shannonjr Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -14,7 +14,7 @@ COMMENT=	This is the gcc 3.4 Ada compiler
 
 BUILD_USES_MSGFMT=	YES
 
-GCC_VERSION=		3.4.1
+GCC_VERSION=		3.4.2
 
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
