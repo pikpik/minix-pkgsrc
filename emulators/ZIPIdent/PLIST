@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/zipident
+share/doc/ZIPIdent/zipident.txt
+@dirrm share/doc/ZIPIdent

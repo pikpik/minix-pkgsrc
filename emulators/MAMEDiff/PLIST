@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mamediff
+share/doc/MAMEDiff/mamediff.txt
+@dirrm share/doc/MAMEDiff
