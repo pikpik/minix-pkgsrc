@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/18 22:46:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2000/09/11 15:39:10 jwise Exp $
 # STOP!  Don't update this to a later version of this software.
 # The JSDK and Apache Jakarta projects have merged, making the
 # jakarta-tomcat package the current version of this software.
@@ -37,7 +37,7 @@ TEMPFILE!=echo ${TEMPDIR}/jsdk20.location.$$$$
 pre-fetch:
 	@if [ ! -x ${LOCALBASE}/bin/urlget ];\
 	then \
-		${ECHO} '==> Installing urlget to fetch swing' ; \
+		${ECHO} '==> Installing urlget to fetch jsdk20' ; \
 		(cd ../../www/urlget && make install) ; \
 	fi
 
