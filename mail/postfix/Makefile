@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1999/05/29 20:57:17 christos Exp $
+# $NetBSD: Makefile,v 1.2 1999/05/30 03:47:43 christos Exp $
 
 PKGNAME=	postfix-19990317pl05
 DISTNAME=	postfix-19990317-pl05
@@ -26,5 +26,11 @@ pre-install:
 	${MKDIR} ${PREFIX}/share/postfix ${PREFIX}/libexec/postfix
 	chown root.wheel ${PREFIX}/share/postfix ${PREFIX}/libexec/postfix
 	chmod 755 ${PREFIX}/share/postfix ${PREFIX}/libexec/postfix
+
+.include "../../mk/bsd.prefs.mk"
+
+.ifdef MANZ
+MANCOMPRESSED=  yes
+.endif
 
 .include "../../mk/bsd.pkg.mk"
