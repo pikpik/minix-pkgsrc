@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 13:30:35 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/25 04:17:36 hubertf Exp $
 #
 
 DISTNAME=	eawpats-full-10
@@ -15,8 +15,6 @@ BUILD_DEPENDS=  unrar:../../archivers/unrar
 
 CONFLICTS=	guspatches-*
 
-# setting NO_EXTRACT to yes instead make 'extract' fail because of a
-# missing WRKDIR
 EXTRACT_ONLY=	# empty
 NO_PATCH=	yes
 NO_CONFIGURE=	yes
