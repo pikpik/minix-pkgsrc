@@ -1,4 +1,4 @@
-## $NetBSD: Makefile,v 1.32 2001/03/27 03:20:07 hubertf Exp $
+## $NetBSD: Makefile,v 1.33 2001/04/07 20:52:44 rh Exp $
 
 DISTNAME=		gnome-utils-1.4.0
 CATEGORIES=		misc x11 gnome
@@ -29,16 +29,6 @@ pre-configure:
 	cd ${WRKSRC} && ${SETENV} ${AUTOGEN_ENV} ${SH} macros/autogen.sh
 
 .include "../../mk/bsd.prefs.mk"
-
-# The directory in which locale files are found is:
-#
-#	${PREFIX}/${LOCALEDIR}/locale/<lang>/LC_MESSAGES
-#
-.if ${OPSYS} == "SunOS"
-LOCALEDIR=		lib
-.else
-LOCALEDIR=		share
-.endif
 
 .if ${NEED_NCURSES} == "YES"
 CONFIGURE_ARGS+=	--with-ncurses=${LOCALBASE}
