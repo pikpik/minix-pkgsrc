@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/19 04:55:16 hubertf Exp $
 #
 
 DISTNAME=	vigor-0.009
@@ -11,6 +11,8 @@ HOMEPAGE=	http://www.red-bean.com/~joelh/vigor/
 DEPENDS+=	tk-8.0.*:../../x11/tk80
 
 CONFLICTS+=	nvi-*
+
+USE_X11=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/build
 GNU_CONFIGURE=	yes
