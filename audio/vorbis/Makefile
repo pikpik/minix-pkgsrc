@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/19 07:50:01 itojun Exp $
+# $NetBSD: Makefile,v 1.5 2000/10/06 03:17:09 dmcmahill Exp $
 #
 
 DISTNAME=       vorbis_nightly_cvs-20000818
@@ -14,7 +14,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.vorbis.com/
 
 .if !exists(/usr/include/getopt.h)
-DEPENDS+=	libgetopt-1.1:../../devel/libgetopt
+DEPENDS+=	libgetopt>=1.3:../../devel/libgetopt
 LDFLAGS+=	-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib -lgetopt
 .endif
 
