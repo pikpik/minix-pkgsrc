@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/07/31 04:53:55 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2000/10/12 17:21:53 jlam Exp $
 
 DISTNAME=		GTL-0.3.3
 PKGNAME=		gtl-0.3.3
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.fmi.uni-passau.de/Graphlet/GTL/
 
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+
+LICENSE=		no-commercial-use
 
 .include "../../mk/bsd.prefs.mk"
 
