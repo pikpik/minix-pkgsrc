@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.189 2002/05/05 22:08:10 rh Exp $
+# $NetBSD: Makefile,v 1.190 2002/05/06 21:50:41 seb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -153,6 +153,7 @@ SUBDIR+=	urlget
 SUBDIR+=	w3
 SUBDIR+=	w3c-httpd
 SUBDIR+=	w3m
+SUBDIR+=	w3m-img
 SUBDIR+=	wApua
 SUBDIR+=	waplet
 SUBDIR+=	wdg-validate
