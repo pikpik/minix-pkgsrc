@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/naim
+share/examples/naim/dot.naimrc
+@dirrm share/examples/naim
