@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/12/28 03:42:56 wiz Exp $
+# $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
 
 DISTNAME=	festival-1.4.0
 WRKSRC=		${WRKDIR}
@@ -15,7 +15,7 @@ DISTFILES=	${DISTNAME}.tar.gz \
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
 
-DEPENDS+=	nas-1.2.5:../nas
+DEPENDS+=	nas>=1.2.5:../../audio/nas
 
 USE_GMAKE=	yes
 
