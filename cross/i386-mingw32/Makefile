@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 21:27:55 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/11/05 23:03:54 seb Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-1.2
 PKGREVISION=		3
@@ -66,7 +66,7 @@ bu-configure:
 		--prefix=${PREFIX} --target=${TARGET_ARCH} --disable-nls
 gcc-configure:
 	-${MKDIR} ${GCC_WRKSRC}/${TARGET_ARCH}
-	cd ${GCC_WRKSRC}/${TARGET_ARCH} && ${SETENV} ${CONFIUGRE_ENV} ../configure \
+	cd ${GCC_WRKSRC}/${TARGET_ARCH} && ${SETENV} ${CONFIGURE_ENV} ../configure \
 		--prefix=${PREFIX} --target=${TARGET_ARCH} \
 		--with-gnu-as --with-gnu-ld --disable-multilib --disable-nls
 	-${MKDIR} ${GCC_WRKSRC}/${TARGET_ARCH}/${TARGET_ARCH}/libiberty
