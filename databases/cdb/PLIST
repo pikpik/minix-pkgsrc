@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/cdbdump
+bin/cdbget
+bin/cdbmake
+bin/cdbmake-12
+bin/cdbmake-sv
+bin/cdbstats
+bin/cdbtest
+include/cdb.h
+lib/libcdb.a
