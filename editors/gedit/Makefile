@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2003/11/12 01:31:49 salo Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/21 16:44:35 martti Exp $
 #
 
-DISTNAME=		gedit-2.2.1
-PKGREVISION=		5
+DISTNAME=		gedit-2.4.1
 CATEGORIES=		editors gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gedit/2.2/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gedit/2.4/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
@@ -25,6 +24,9 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GCONF2_SCHEMAS=		gedit.schemas
 
+CONFIGURE_ARGS+=	--enable-schemas-install
+
+.if 0
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../print/libgnomeprintui/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
@@ -32,4 +34,6 @@ GCONF2_SCHEMAS=		gedit.schemas
 .include "../../devel/libgnomeui/buildlink2.mk"
 .include "../../devel/eel2/buildlink2.mk"
 .include "../../devel/popt/buildlink2.mk"
+.include "../../x11/gtksourceview/buildlink2.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"
