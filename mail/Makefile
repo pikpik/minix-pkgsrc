@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2003/04/03 12:08:02 manu Exp $
+# $NetBSD: Makefile,v 1.164 2003/04/03 14:47:02 manu Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -8,6 +8,7 @@ SUBDIR+=	Pantomime
 SUBDIR+=	anomy-sanitizer
 SUBDIR+=	autorespond
 SUBDIR+=	balsa
+SUBDIR+=	balsa2
 SUBDIR+=	bbmail
 SUBDIR+=	bmf
 SUBDIR+=	bogofilter
