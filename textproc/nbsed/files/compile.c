@@ -1,4 +1,4 @@
-/*	$NetBSD: compile.c,v 1.2 2004/06/12 05:18:31 minskim Exp $	*/
+/*	$NetBSD: compile.c,v 1.3 2004/06/13 13:04:02 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992, 1993
@@ -77,7 +77,7 @@
 #if 0
 static char sccsid[] = "@(#)compile.c	8.2 (Berkeley) 4/28/95";
 #else
-__RCSID("$NetBSD: compile.c,v 1.2 2004/06/12 05:18:31 minskim Exp $");
+__RCSID("$NetBSD: compile.c,v 1.3 2004/06/13 13:04:02 grant Exp $");
 #endif
 #endif /* not lint */
 
@@ -606,6 +606,7 @@ compile_flags(char *p, struct s_subst *s)
 			gn = 1;
 			/* XXX Check for overflow */
 			s->n = (int)strtol(p, &p, 10);
+			p--;
 			break;
 		case 'w':
 			p++;
@@ -670,7 +671,7 @@ compile_tr(char *p, char **transtab)
 		return (NULL);
 	}
 	/* We assume characters are 8 bits */
-	lt = xmalloc(UCHAR_MAX);
+	lt = xmalloc(UCHAR_MAX+1);
 	for (i = 0; i <= UCHAR_MAX; i++)
 		lt[i] = (char)i;
 	for (op = old, np = new; *op; op++, np++)
