@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/04 03:38:12 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/28 13:38:56 wiz Exp $
 #
 
 DISTNAME=	fltk-1.0.9-source
@@ -17,9 +17,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.fltk.org/
 
-DEPENDS+=	Mesa-*:../../graphics/Mesa
-
 USE_X11BASE=	# defined
+USE_MESA=	# defined
 USE_GMAKE=	# defined
 USE_LIBTOOL=	# defined
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2000/07/15 20:39:26 agc Exp $
+# $NetBSD: Makefile,v 1.20 2000/07/18 15:21:00 agc Exp $
 
 DISTNAME=		gtkglarea-1.2.1
 CATEGORIES=		x11 graphics
@@ -7,10 +7,10 @@ MASTER_SITES=		http://www.student.oulu.fi/~jlof/gtkglarea/download/
 MAINTAINER=		hubertf@netbsd.org
 HOMEPAGE=		http://www.student.oulu.fi/~jlof/gtkglarea/
 
-DEPENDS+=		Mesa-*:../../graphics/Mesa
 DEPENDS+=		gtk+-1.2.*:../../x11/gtk
 
 USE_X11BASE=		# defined
+USE_MESA=		# defined
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
