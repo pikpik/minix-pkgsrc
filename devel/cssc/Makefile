@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2004/10/18 18:49:39 seb Exp $
+# $NetBSD: Makefile,v 1.16 2004/11/13 22:04:52 jlam Exp $
 #
 
-DISTNAME=	CSSC-1.00
-PKGNAME=	cssc-1.00
+DISTNAME=	CSSC-1.0.1
+PKGNAME=	cssc-1.0.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cssc/}
 
