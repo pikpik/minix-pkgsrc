@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2003/11/11 09:11:30 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/20 12:24:29 agc Exp $
 #
 
 DISTNAME=	xpdf-cyrillic-2003-jun-28
 PKGNAME=	xpdf-cyrillic-20030628
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
+MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
+		http://gd.tuwien.ac.at/publishing/xpdf/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
