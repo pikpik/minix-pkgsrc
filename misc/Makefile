@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2002/12/13 17:28:15 cjep Exp $
+# $NetBSD: Makefile,v 1.144 2002/12/26 20:56:00 tsarna Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -32,6 +32,7 @@ SUBDIR+=	dync
 SUBDIR+=	fd
 SUBDIR+=	fep
 SUBDIR+=	figlet
+SUBDIR+=	fooseti
 SUBDIR+=	git
 SUBDIR+=	gkrellm-moon
 SUBDIR+=	gkrellm-weather
