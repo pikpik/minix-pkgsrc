@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/23 19:27:12 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/27 17:24:08 atatat Exp $
 #
 
-DISTNAME=	graphopt-0.1
-PKGREVISION=	1
+DISTNAME=	graphopt-0.3
 CATEGORIES=	math graphics
 MASTER_SITES=	http://switch.dl.sourceforge.net/sourceforge/graphopt/
 EXTRACT_SUFX=	.tgz
