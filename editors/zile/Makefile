@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:51:38 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:35:17 grant Exp $
 
 DISTNAME=		zile-1.6.2
 PKGREVISION=		1
@@ -12,7 +12,6 @@ COMMENT=		Emacs-like text editor
 GNU_CONFIGURE=		yes
 USE_NCURSES=		# KEY_RESIZE (also uses stdscr->_delay directly)
 USE_BUILDLINK2= 	yes
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		zile.info
 

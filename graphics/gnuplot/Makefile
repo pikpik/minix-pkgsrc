@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/07/03 15:33:04 seb Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/21 16:51:43 martti Exp $
 #
 
 DISTNAME=		gnuplot-3.7.3
@@ -21,7 +21,6 @@ USE_BUILDLINK2=		YES
 USE_GNU_READLINE=	YES
 USE_X11=		YES
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	gnuplot.info
 
 CONFIGURE_ARGS+=	--with-pdf

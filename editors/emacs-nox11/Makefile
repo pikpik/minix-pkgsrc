@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/29 23:38:41 seb Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:34:24 grant Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-21.3
@@ -24,7 +24,6 @@ DISTINFO_FILE=	${PKGDIR}/../emacs/distinfo
 
 CONFIGURE_ARGS+=--without-x
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	ada-mode autotype ccmode cl dired-x ebrowse ediff efaq emacs
 INFO_FILES+=	emacs-mime eshell eudc forms gnus idlwave message mh-e pcl-cvs
 INFO_FILES+=	reftex sc speedbar vip viper widget woman
