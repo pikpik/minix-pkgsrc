@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/09/27 23:18:13 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/01/15 18:40:06 drochner Exp $
 #
 
 DISTNAME=	sg-0.7.0
@@ -20,6 +20,7 @@ USE_X11=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--without-gnome
+CONFIGURE_ENV+=	PYTHONBIN=${PYTHONBIN}
 USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 PY_PATCHPLIST=	yes
