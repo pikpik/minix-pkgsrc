@@ -541,7 +541,7 @@ DISTFILES?=		${DISTNAME}${EXTRACT_SUFX}
 PKGNAME?=		${DISTNAME}
 
 # Latest version of pkgtools required for this file.
-PKGTOOLS_REQD=		19990529
+PKGTOOLS_REQD=		19990412
 
 # Check that we're using up-to-date pkg_* tools with this file.
 uptodate-pkgtools:
