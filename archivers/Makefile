@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2002/12/14 10:47:31 cjep Exp $
+# $NetBSD: Makefile,v 1.57 2002/12/23 01:57:04 cjep Exp $
 #
 
 COMMENT=	Archivers
@@ -13,6 +13,7 @@ SUBDIR+=	cabextract
 SUBDIR+=	cxunzip
 SUBDIR+=	dact
 SUBDIR+=	fastjar
+SUBDIR+=	file-roller
 SUBDIR+=	freeze
 SUBDIR+=	gcpio
 SUBDIR+=	gsharutils
