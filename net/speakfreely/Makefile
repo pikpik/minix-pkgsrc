@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/07/29 03:12:19 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/18 22:46:46 hubertf Exp $
 #
 
 DISTNAME=		speak_freely-7.2
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.fourmilab.ch/speakfree/unix/
 
 DEPENDS+=		gsm-1.0.10:../../audio/gsm
 
-USE_PERL=		# defined
+USE_PERL5=		# defined
 PERL_PATH=		${LOCALBASE}/bin/perl
 
 RESTRICTED=		Source includes crypto code
