@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.in.orig	Sat Apr  6 13:07:24 2002
++++ Makefile.in
+@@ -7,5 +7,7 @@ BINDIR=@BINDIR@
+ RCDIR=@RCDIR@
+ SPOOLDIR=@SPOOLDIR@
+ MANDIR=@MANDIR@
++prefix=@prefix@
++DATADIR=@datadir@
+ 
+ @make_presets@
