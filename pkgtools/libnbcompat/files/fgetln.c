@@ -1,4 +1,4 @@
-/*	$NetBSD: fgetln.c,v 1.1.1.1 2003/03/31 05:02:43 grant Exp $	*/
+/*	$NetBSD: fgetln.c,v 1.2 2004/08/23 03:32:12 jlam Exp $	*/
 
 /*-
  * Copyright (c) 1998 The NetBSD Foundation, Inc.
@@ -37,39 +37,9 @@
  */
 
 #include <nbcompat.h>
-#include <nbcompat/cdefs.h>
-#if defined(LIBC_SCCS) && !defined(lint)
-#if 0
-static char sccsid[] = "@(#)fgetline.c  8.1 (Berkeley) 6/4/93";
-#else
-__RCSID("$NetBSD: fgetln.c,v 1.14 2004/05/10 16:47:11 drochner Exp $");
-#endif
-#endif /* LIBC_SCCS and not lint */
-
-#if 0
-#include "namespace.h"
-#endif
-
 #include <nbcompat/stdio.h>
+#include <nbcompat/stdlib.h>
 
-#if 0
-#include "reentrant.h"
-#include "local.h"
-#endif
-
-#if 0
-#ifdef __weak_alias
-__weak_alias(fgetln,_fgetln)
-#endif
-#endif
-
-/*
- * Get an input line.  The returned pointer often (but not always)
- * points into a stdio buffer.  Fgetline does not alter the text of
- * the returned line (which is thus not a C string because it will
- * not necessarily end with '\0'), but does allow callers to modify
- * it if they wish.  Thus, we set __SMOD in case the caller does.
- */
 char *
 fgetln(fp, len)
 	FILE *fp;
@@ -78,7 +48,6 @@ fgetln(fp, len)
 	static char *buf = NULL;
 	static size_t bufsiz = 0;
 	char *ptr;
-
 
 	if (buf == NULL) {
 		bufsiz = BUFSIZ;
@@ -103,8 +72,12 @@ fgetln(fp, len)
 		} else
 			buf = nbuf;
 
-		*len = bufsiz;
-		if (fgets(&buf[bufsiz], BUFSIZ, fp) == NULL)
+		/*
+		 * We need to overwrite the '\0' written by the last call
+		 * to fgets().
+		 */
+		*len = bufsiz - 1;
+		if (fgets(&buf[bufsiz - 1], BUFSIZ + 1, fp) == NULL)
 			return buf;
 
 		bufsiz = nbufsiz;
