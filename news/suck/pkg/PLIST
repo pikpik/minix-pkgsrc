@@ -1,0 +1,17 @@
+@comment $NetBSD$
+bin/suck
+bin/rpost
+bin/testhost
+bin/lmove
+man/man1/rpost.1
+man/man1/suck.1
+man/man1/testhost.1
+man/man1/lmove.1
+share/examples/suck/get.news.innxmit
+share/examples/suck/get.news.rnews
+share/examples/suck/killprg_child.c
+share/examples/suck/put.news
+share/examples/suck/suckkillfile.sample
+share/examples/suck/sucknewsrc.sample
+share/examples/suck/suckothermsgs.sample
+@dirrm share/examples/suck
