@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/10/10 08:44:44 cube Exp $
+# $NetBSD: Makefile,v 1.10 2003/10/28 16:57:00 cube Exp $
 # $FreeBSD: ports/net/libnids/Makefile,v 1.5 2000/04/24 07:42:58 kris Exp $
 #
 
@@ -12,6 +12,9 @@ COMMENT=	Network monitoring library with TCP/IP reassembly
 
 USE_BUILDLINK2=	yes
 GNU_CONFIGURE=	yes
+
+CONFIG_GUESS_OVERRIDE=		${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE=		${WRKSRC}/config.sub
 
 BUILDLINK_DEPMETHOD.libnet=	build
 BUILDLINK_DEPMETHOD.libpcap=	build
