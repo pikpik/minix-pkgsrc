@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- frontend/audio.c.orig	Thu Jul 25 14:42:54 2002
++++ frontend/audio.c
+@@ -52,7 +52,7 @@ audio_file *open_audio_file(char *infile
+         break;
+     }
+     aufile->sfinfo.channels = channels;
+-    aufile->sfinfo.samples  = 0;
++    aufile->sfinfo.frames  = 0;
+ #ifdef _WIN32
+     if(infile[0] == '-')
+     {
