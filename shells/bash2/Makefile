@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/08/25 21:50:50 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2002/09/26 22:06:29 jlam Exp $
 #
 
 DISTNAME=	bash-2.05
@@ -16,6 +16,8 @@ USE_BUILDLINK2=		no
 
 GNU_CONFIGURE=		yes
 MAKE_ENV+=		INSTALL_SCRIPT='${INSTALL_SCRIPT}'
+
+PKG_SHELL=		${PREFIX}/bin/bash
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -57,11 +59,8 @@ pre-configure:
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/bash.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/bashbug.1 ${PREFIX}/man/man1
-	${TOUCH} /etc/shells
-	${CP} /etc/shells /etc/shells.bak
-	(${GREP} -v ${PREFIX}/bin/bash /etc/shells.bak || ${TRUE}; ${ECHO} ${PREFIX}/bin/bash) >/etc/shells
-	${RM} /etc/shells.bak
 
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
 
 CPPFLAGS:=	-I${GETTEXTDIR}/include ${CPPFLAGS}
