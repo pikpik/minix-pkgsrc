@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/28 21:54:31 tron Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:10:01 agc Exp $
 
 DISTNAME=	estic-1.61
 CATEGORIES=	comms
@@ -17,7 +17,7 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV:C/-.*//}
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	# defined
 USE_X11=	# defined
 
 ALL_TARGET=	depend all
