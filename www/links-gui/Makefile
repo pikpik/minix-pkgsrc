@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/05/10 08:14:35 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/06/20 15:11:21 jschauma Exp $
 #
 
 PKGNAME=	links-gui-2.0
@@ -11,3 +11,4 @@ CONFIGURE_ARGS+=	--enable-graphics
 .include "../../graphics/png/buildlink.mk"
 .include "../../graphics/tiff/buildlink.mk"
 .include "../../www/links/Makefile.common"
+.include "../../mk/x11.buildlink.mk"
