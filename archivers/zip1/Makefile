@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/04/01 14:07:52 agc Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/18 09:20:01 agc Exp $
 #
 
 DISTNAME=	zip1-1.1
@@ -38,7 +38,7 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_MAN} zip.1 ${PREFIX}/man/man1/zip1.1
 .if defined(ZIP_ENCRYPTION)
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} zipcloak ${PREFIX}/bin/zipcloak1
-	ln -fs zip1.1 ${PREFIX}/man/man1/zipcloak1.1
+	${LN} -fs zip1.1 ${PREFIX}/man/man1/zipcloak1.1
 	@${ECHO} >>${PLIST_SRC} "bin/zipcloak1"
 	@${ECHO} >>${PLIST_SRC} "man/man1/zipcloak1.1"
 .endif
