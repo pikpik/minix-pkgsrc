@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/05/15 12:14:24 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/05/17 13:30:41 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
@@ -24,6 +24,7 @@ SUBDIR += lang
 SUBDIR += mail
 SUBDIR += math
 SUBDIR += mbone
+SUBDIR += meta-pkgs
 SUBDIR += misc
 SUBDIR += net
 SUBDIR += news
