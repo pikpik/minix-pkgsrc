@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/08/20 15:16:44 tsarna Exp $
+# $NetBSD: Makefile,v 1.3 1998/09/06 20:57:20 frueauf Exp $
 #
 
 DISTNAME=	pyth151
@@ -20,7 +20,7 @@ EXTRACT_AFTER_ARGS=	Python-1.5.1/Modules/gdbmmodule.c
 
 PYTHON_CONFIGDIR=	${LOCALBASE}/lib/python1.5/config/
 
-.if ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "mips" || ${MACHINE_ARCH} == "alpha"
+.if ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "mips" || ${MACHINE_ARCH} == "vax"
 IGNORE="Needs dynamic loading"
 .endif
 
