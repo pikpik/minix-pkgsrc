@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/04/01 16:35:10 mjl Exp $
+# $NetBSD: Makefile,v 1.14 2001/05/03 17:50:28 wiz Exp $
 #
 
 DISTNAME=		slrn-0.9.7.0a
@@ -23,5 +23,8 @@ CONFIGURE_ARGS+=	--without-X --disable-inews \
 # the next is a workaround, as 1.3.2 install doesn't like -c and -d
 # together
 CONFIGURE_ENV+=		INSTALL=/usr/bin/install
+
+post-build:
+	cd ${WRKSRC} && make slrnpull
 
 .include "../../mk/bsd.pkg.mk"
