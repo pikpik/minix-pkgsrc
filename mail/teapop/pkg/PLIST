@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libexec/teapop
+man/man8/teapop.8
+share/examples/teapop/teapop.passwd
+@dirrm share/examples/teapop
