@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/mscompress
+bin/msexpand
+man/man1/mscompress.1
+man/man1/msexpand.1
