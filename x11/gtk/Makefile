@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2000/09/05 09:33:18 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2000/11/14 22:43:34 jdolecek Exp $
 
 DISTNAME=		gtk+-1.2.8
 CATEGORIES=		x11
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.gtk.org/
 
 DEPENDS+=		glib>=1.2.8:../../devel/glib
 BUILD_DEPENDS+=		${PERL5}:../../lang/perl5-base
+BUILD_DEPENDS+=		msgfmt:../../devel/gettext
 
 USE_LIBINTL=		yes
 USE_LIBTOOL=		yes
