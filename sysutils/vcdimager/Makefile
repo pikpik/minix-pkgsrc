@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/19 08:54:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 17:24:43 martti Exp $
 #
 
 DISTNAME=	vcdimager-0.6.2
@@ -13,8 +13,9 @@ COMMENT=	Mastering suite for Video CDs
 USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
 GNU_CONFIGURE=	YES
+USE_NEW_TEXINFO=	YES
+INFO_FILES=	vcdimager.info
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
