@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.362 2003/03/31 15:55:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.363 2003/03/31 20:59:19 jmmv Exp $
 #
 
 COMMENT=	Networking tools
@@ -291,6 +291,7 @@ SUBDIR+=	wistumbler
 SUBDIR+=	wminet
 SUBDIR+=	wmnet
 SUBDIR+=	wmpload
+SUBDIR+=	wol
 SUBDIR+=	wu-ftpd
 SUBDIR+=	x2vnc
 SUBDIR+=	xarchie
