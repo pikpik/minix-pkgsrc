@@ -1,0 +1,12 @@
+@comment $NetBSD$
+lib/python2.2/plat-linux2/CDROM.py
+lib/python2.2/plat-linux2/CDROM.pyc
+lib/python2.2/plat-linux2/CDROM.pyo
+lib/python2.2/plat-linux2/DLFCN.py
+lib/python2.2/plat-linux2/DLFCN.pyc
+lib/python2.2/plat-linux2/DLFCN.pyo
+lib/python2.2/plat-linux2/TYPES.py
+lib/python2.2/plat-linux2/TYPES.pyc
+lib/python2.2/plat-linux2/TYPES.pyo
+lib/python2.2/lib-dynload/linuxaudiodev.so
+
