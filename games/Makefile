@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2003/02/15 08:17:52 salo Exp $
+# $NetBSD: Makefile,v 1.161 2003/02/17 15:00:33 zuntum Exp $
 #
 
 COMMENT=	Games
@@ -52,6 +52,7 @@ SUBDIR+=	freeciv-client-gtk
 SUBDIR+=	freeciv-manual
 SUBDIR+=	freeciv-server
 SUBDIR+=	freeciv-share
+SUBDIR+=	freeciv-sounds
 SUBDIR+=	frotz
 SUBDIR+=	frozen-bubble
 SUBDIR+=	galaxa
