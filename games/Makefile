@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.239 2005/01/12 15:51:55 adam Exp $
+# $NetBSD: Makefile,v 1.240 2005/01/14 22:19:02 wiz Exp $
 #
 
 COMMENT=	Games
@@ -43,6 +43,7 @@ SUBDIR+=	crimsonfields
 SUBDIR+=	criticalmass
 SUBDIR+=	crossfire-cli
 SUBDIR+=	crossfire-srv
+SUBDIR+=	cube
 SUBDIR+=	d2x
 SUBDIR+=	dd2
 SUBDIR+=	defendguin
