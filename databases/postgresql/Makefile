@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2001/12/03 08:06:25 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2002/04/04 07:48:18 jlam Exp $
 
 PKGNAME=	postgresql-${BASE_VERS}
 COMMENT=	Robust, next generation, object-relational DBMS
@@ -10,6 +10,7 @@ DEPENDS+=	postgresql-docs>=${BASE_VERS}:../../databases/postgresql-docs
 .include "../../databases/postgresql/Makefile.common"
 
 EXTRACT_ONLY=	# empty
+USE_BUILDLINK2=	YES
 NO_CHECKSUM=	YES
 NO_PATCH=	YES
 NO_CONFIGURE=	YES
