@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Fri Feb 15 15:47:09 2002
+--- Makefile.orig	Fri Feb 15 10:47:09 2002
 +++ Makefile
 @@ -1,12 +1,12 @@
  ################## Configuration parameters
@@ -15,7 +15,7 @@ $NetBSD$
 +BINDIR=${PREFIX}/bin
  # A replacement for /lib/cpp
 -CPP=gcc -E -P -x c
-+#CPP=gcc -E -P -x c
++CPP=${M4}
  ############### End of configuration parameters
  SUF=
  #DIR=/usr/bin/
