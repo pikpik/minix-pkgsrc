@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:46 reed Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/23 21:50:46 jmmv Exp $
 #
 
 DISTNAME=	gnustep-1.6.0
@@ -24,6 +24,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+NO_MTREE=	yes
 
 do-install:	# empty
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/05/02 11:55:45 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/21 16:58:14 martti Exp $
 #
 
 DISTNAME=	edesktop-1.0
@@ -29,6 +29,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+NO_MTREE=	yes
 
 do-install:	# empty
 
