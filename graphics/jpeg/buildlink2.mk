@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.3 2002/06/21 23:00:31 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:39:13 jlam Exp $
 
 .if !defined(JPEG_BUILDLINK2_MK)
 JPEG_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		jpeg
-BUILDLINK_DEPENDS.jpeg?=	jpeg-6b
+BUILDLINK_DEPENDS.jpeg?=	jpeg>=6b
 BUILDLINK_PKGSRCDIR.jpeg?=	../../graphics/jpeg
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.jpeg=jpeg
