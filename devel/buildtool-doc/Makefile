@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/25 10:05:15 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2004/06/12 02:19:32 grant Exp $
 #
 
 DISTNAME=	buildtool-doc-0.15
@@ -23,6 +23,7 @@ BUILDLINK_DEPMETHOD.xmlcatmgr?=	build
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${DISTNAME}
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/html/buildtool
 
 .include "../../devel/buildtool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
