@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/12/18 20:09:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.36 2002/12/18 22:04:56 jmmv Exp $
 #
 
 COMMENT=	window managers (for X)
@@ -44,6 +44,7 @@ SUBDIR+=	sawfish-themes
 SUBDIR+=	tvtwm
 SUBDIR+=	uwm
 SUBDIR+=	waimea
+SUBDIR+=	wampager
 SUBDIR+=	whiteBOX
 SUBDIR+=	windowmaker
 SUBDIR+=	wm2
