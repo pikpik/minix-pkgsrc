@@ -1,0 +1,11 @@
+@comment $NetBSD$
+${MCALCBASE}/README
+${MCALCBASE}/copying.html
+${MCALCBASE}/erinfo.html
+${MCALCBASE}/index.html
+${MCALCBASE}/mstrip.gif
+${MCALCBASE}/rghinfo.html
+${MCALCBASE}/rhoinfo.html
+${MCALCBASE}/tmetinfo.html
+${MCALCBASE}/verinfo.html
+@dirrm ${MCALCBASE}
