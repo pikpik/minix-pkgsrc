@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.145 2004/07/30 21:05:41 jlam Exp $
+# $NetBSD: Makefile,v 1.146 2004/08/05 02:31:24 jlam Exp $
 
 DISTNAME=	fetchmail-6.2.5
 PKGREVISION=	2
@@ -38,7 +38,7 @@ post-extract:
 .endif
 
 .if defined(REPLACE_KERBEROS_LIBS)
-post-configure:
+pre-configure:
 	cd ${WRKSRC} && \
 	for F in configure.in configure; do \
 		${SED} -e "s/-lkrb -ldes/-lkrb -ldes -lcom_err -lroken/" \
