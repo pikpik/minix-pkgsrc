@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/monotone
+info/monotone.info
+man/man1/monotone.1
