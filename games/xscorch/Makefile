@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/26 12:36:54 zuntum Exp $
 #
 
 DISTNAME=	xscorch-0.1.13a
@@ -17,5 +17,6 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-gnome
 
 .include "../../audio/libmikmod/buildlink.mk"
+.include "../../graphics/xpm/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
