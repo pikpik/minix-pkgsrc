@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/upclient
+etc/rc.d/upclient.sh
+share/doc/upclient/CHANGES
+share/doc/upclient/COPYING
+share/doc/upclient/README
+etc/upclient.conf.example
