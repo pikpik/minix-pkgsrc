@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.263 2003/07/24 20:15:20 wiz Exp $
+# $NetBSD: Makefile,v 1.264 2003/07/28 15:16:15 drochner Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -45,6 +45,7 @@ SUBDIR+=	apc-gui
 SUBDIR+=	arena
 SUBDIR+=	asWedit
 SUBDIR+=	asp2php
+SUBDIR+=	awstats
 SUBDIR+=	bins
 SUBDIR+=	bkedit
 SUBDIR+=	bluefish
