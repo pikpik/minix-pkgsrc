@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- testing/Makefile.in.orig	Tue Aug 24 19:49:21 1999
++++ testing/Makefile.in	Wed Sep 22 09:56:46 1999
+@@ -5,7 +5,7 @@
+ TARG		= etest ktest misctest stest
+ 
+ USELIBS		= ../snmplib/libsnmp.$(SHLIB_EXTENSION)$(SHLIB_VERSION)
+-LIBS		= -L../snmplib $(CC_RUNTIME_ARG) -lsnmp @LIBS@
++LIBS		= -L../snmplib -lsnmp $(CC_RUNTIME_ARG) @LIBS@
+ 
+ PARSEOBJS	=
+ 
