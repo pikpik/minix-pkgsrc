@@ -7,9 +7,6 @@ MASTER_SITES=	ftp://ftp.gphoto.org/projects/gphoto/pub/tar/0.4/
 MAINTAINER=	jmcm@cs.cmu.edu
 HOMEPAGE=	http://www.gphoto.org/
 
-DEPENDS+=	jpeg-6b:../../graphics/jpeg
-DEPENDS+=	gtk+-1.2.6:../../x11/gtk
-DEPENDS+=	glib-1.2.6:../../devel/glib
 DEPENDS+=	imlib-1.9.8:../../graphics/imlib
 
 USE_X11BASE=		yes
