@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2004/09/22 08:09:46 jlam Exp $
+# $NetBSD: Makefile,v 1.107 2004/10/03 00:17:48 tv Exp $
 #
 
 DISTNAME=		ORBit-0.${ORBIT_MAJOR}.${ORBIT_MINOR}
@@ -30,8 +30,6 @@ CONFIGURE_ENV+=	LIB_WRAP="-lwrap"
 PKGCONFIG_OVERRIDE+=	ORBit.pc.in
 PKGCONFIG_OVERRIDE+=	libIDL/libIDL.pc.in
 
-CPPFLAGS+=		-D_POSIX_THREAD_SYSCALL_SOFT=1
-
 # for DISTNAME, PKGNAME
 ORBIT_MAJOR=		5
 ORBIT_MINOR=		15
@@ -42,5 +40,9 @@ INFO_FILES=		libIDL.info
 .include "../../devel/glib/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
+
+.if ${PTHREAD_TYPE} != "native"
+CPPFLAGS+=		-D_POSIX_THREAD_SYSCALL_SOFT=1
+.endif
 
 .include "../../mk/bsd.pkg.mk"

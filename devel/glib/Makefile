@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2004/10/04 11:19:40 grant Exp $
+# $NetBSD: Makefile,v 1.74 2004/10/05 12:12:57 minskim Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/08/06 14:55:12 vanilla Exp
 #
 
@@ -31,7 +31,6 @@ INFO_FILES=		glib.info
 TEST_TARGET=		check
 
 PTHREAD_OPTS+=		require
-CFLAGS.FreeBSD+=	${PTHREAD_CFLAGS}
 
 .include "../../mk/bsd.prefs.mk"
 
