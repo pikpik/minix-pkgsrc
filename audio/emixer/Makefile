@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/13 02:48:41 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/15 18:46:23 jlam Exp $
 #
 
-DISTNAME=	emixer-0.05.3
-PKGNAME=	emixer-0.5.3
+DISTNAME=	emixer-0.05.5
+PKGNAME=	emixer-0.5.5
 CATEGORIES=	audio
 MASTER_SITES=	http://emixer.linuxbox.com/
 
