@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/10/09 18:34:58 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/06/02 01:20:44 jschauma Exp $
 
 DISTNAME=		HDF4.1r5
 PKGNAME=		hdf-4.1r5
@@ -26,7 +26,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/mfhdf/fortran/netcdf.inc 	\
 		${PREFIX}/include/hdf
 
-test:	build
+do-test:
 	@cd ${WRKSRC}/hdf/test && ${SETENV} ${MAKE_ENV} ${MAKE}
 	@cd ${WRKSRC}/hdf/test && ./testhdf
 	@cd ${WRKSRC}/hdf/test && ./fortest
