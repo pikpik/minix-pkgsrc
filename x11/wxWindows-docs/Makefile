@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/13 17:41:20 jlam Exp $
 
 DISTNAME=		wxHTML22
 PKGNAME=		wxWindows-docs-2.2
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.freiburg.linux.de/~wxxt/docs.html
 NO_CONFIGURE=		# defined
 NO_BUILD=		# defined
 
-HTMLDIR=		${PREFIX}/share/doc/html/wx/
+HTMLDIR=		${PREFIX}/share/doc/html/wx
 
 do-install:
 	${INSTALL_DATA_DIR} ${HTMLDIR}
