@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.242 2003/03/26 12:55:41 grant Exp $
+# $NetBSD: Makefile,v 1.243 2003/04/06 12:30:12 hubertf Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -97,6 +97,7 @@ SUBDIR+=	make_album
 SUBDIR+=	mknmz-wwwoffle
 SUBDIR+=	moz-linux-plugger
 SUBDIR+=	mozilla
+SUBDIR+=	mozilla-flash-bin
 SUBDIR+=	mozilla-linux
 SUBDIR+=	mozilla-stable
 SUBDIR+=	navigator
