@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/08/20 03:55:31 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/12/03 08:06:26 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -36,7 +36,6 @@ post-install:
 	${SED} -e "s|^#.*||" ${FILESDIR}/exclude			\
 		| ${GTAR} zxCXf ${PREFIX}/man - ${WRKSRC}/doc/man.tar.gz
 
-.include "../../devel/libgetopt/buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
 .include "../../devel/zlib/buildlink.mk"
 .include "../../databases/postgresql-lib/buildlink.mk"
