@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.1 2004/03/09 15:55:17 hamajima Exp $
+
+If you are not able to probe a camera, you should apply following kernel patch.
+
+	http://www2.starcat.ne.jp/~takam/bsd/ov51x-1.65-1.11-mark-bsd-0.00.patch.gz
+
+===========================================================================
