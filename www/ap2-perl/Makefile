@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/02/03 20:18:03 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2003/02/04 08:54:28 jlam Exp $
 #
 # NOTE: This package is *BETA*.  If it doesn't work, then check the
 #	modperl-2.0 mailing lists for help.
@@ -11,6 +11,8 @@ MASTER_SITES=		http://perl.apache.org/dist/
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://perl.apache.org/
 COMMENT=		Module that embeds a Perl interpreter into Apache
+
+CONFLICTS=		ap-perl-[0-9]*
 
 USE_BUILDLINK2=		# defined
 APACHE_MODULE=		# defined
