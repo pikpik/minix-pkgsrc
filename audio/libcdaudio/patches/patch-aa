@@ -1,3 +1,4 @@
+$NetBSD$
 --- source/cdaudio.c.orig	Fri Jul  5 12:15:13 2002
 +++ source/cdaudio.c	Fri Jul  5 12:16:25 2002
 @@ -306,6 +306,7 @@
