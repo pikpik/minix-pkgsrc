@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/12/22 19:51:49 fredb Exp $
+# $NetBSD: Makefile,v 1.28 2001/12/30 11:39:08 zuntum Exp $
 #
 
 COMMENT=	communication programs
@@ -14,8 +14,8 @@ SUBDIR+=	everybuddy-gnome
 SUBDIR+=	fugu
 SUBDIR+=	gaim
 SUBDIR+=	gale
-SUBDIR+=	gtkyahoo
 SUBDIR+=	gnomeicu
+SUBDIR+=	gtkyahoo
 SUBDIR+=	icb
 SUBDIR+=	icqlib
 SUBDIR+=	ircII
