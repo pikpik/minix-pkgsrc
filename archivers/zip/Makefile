@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2003/06/01 01:57:16 grant Exp $
+# $NetBSD: Makefile,v 1.34 2003/07/17 21:21:49 grant Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp
 #
 
@@ -35,7 +35,7 @@ ALL_TARGET=	generic
 CFLAGS+=	-DHAVE_DIRENT_H
 .endif
 
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	# defined
 
 post-extract:
 	@cd ${WRKSRC} && ${LOCALBASE}/bin/unzip -qo ${DISTDIR}/zcrypt29.zip

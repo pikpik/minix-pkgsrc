@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/03/29 12:40:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2004/01/20 12:07:06 agc Exp $
 
 DISTNAME=		macutil2.0b3
 PKGNAME=		macutil-2.0b3
@@ -13,7 +13,7 @@ MAKEFILE=		makefile
 MAKE_ENV+=		CF="${CFLAGS}"
 
 WRKSRC=			${WRKDIR}/macutil
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		# defined
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/macunpack/macunpack \

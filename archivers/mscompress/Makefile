@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/13 20:14:26 ben Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/24 09:53:47 jmmv Exp $
 #
 
 DISTNAME=		mscompress-0.3
@@ -10,7 +10,7 @@ MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		ftp://ftp.penguin.cz/pub/users/mhi/mscompress/
 COMMENT=		Microsoft "compress.exe/expand.exe" compatible (de)compressor
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 
 do-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/19 12:57:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/29 13:00:57 grant Exp $
 #
 
 DISTNAME=	nomarch-1.3
@@ -9,7 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://rus.members.beeb.net/nomarch.html
 COMMENT=	Free replacement for the arc program
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 MAKE_FLAGS+=	PREFIX=${PREFIX}
 MAKE_FLAGS+=	CC="${CC}"
 MAKE_FLAGS+=	CFLAGS="${CFLAGS}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/20 12:07:07 agc Exp $
+# $NetBSD: Makefile,v 1.12 2004/02/08 04:03:15 jlam Exp $
 
 DISTNAME=	undms-1.3.c
 PKGNAME=	undms-1.3
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Converts .dms Amiga disk images to uncompressed .adf images
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK2=	# defined
+USE_BUILDLINK3=	# defined
 
 do-build:
 	cd ${WRKSRC} && ${CC} ${CFLAGS} -o undms undms-1.3.c
