@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/03/16 20:53:03 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2001/04/19 16:31:45 zuntum Exp $
 #
 
-DISTNAME=	getmail-2.0.19
+DISTNAME=	getmail-2.0.20
 CATEGORIES=	mail
 MASTER_SITES=	http://www.qcc.sk.ca/~charlesc/software/getmail-2.0/
 
