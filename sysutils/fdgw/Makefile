@@ -2,6 +2,7 @@
 #
 
 DISTNAME=	fdgw-20011216
+PKGREVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	ftp://ftp.fml.org/pub/fdgw/source/
 
@@ -21,7 +22,7 @@ IGNORE=                 "${PKGNAME} requires the 'lndir' command, and hence X11"
 
 .if (${MACHINE_ARCH} != "i386")
 IGNORE=  "Sorry, fdgw is currently only available for i386 machines."
-IGNORE+= "Please report ${MAINTAINER} if you succeed to port fdgw to other architectures"
+IGNORE+= "Please report to ${MAINTAINER} if you succeed to port fdgw to other architectures"
 .endif
 
 # we need NetBSD source tree.
@@ -30,6 +31,14 @@ IGNORE= "${PKGNAME} requires the NetBSD source tree in BSDSRCDIR (${BSDSRCDIR})"
 .endif
 
 ALL_TARGET=	dist-build
+
+pre-fetch:
+	@ ${ECHO} "";
+	@ ${ECHO} "************************************";
+	@ ${ECHO} "Please note: The install stage of fdgw requires a kernel"
+	@ ${ECHO} "             with 'pseudo-device vnd 4' enabled.";
+	@ ${ECHO} "************************************";
+	@ ${ECHO} "";
 
 pre-install:
 	(cd ${WRKSRC} && ${MAKE} dist-image)
