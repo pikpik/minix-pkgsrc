@@ -7,7 +7,7 @@ $NetBSD$
  INCLUDE=-I../utils
  CFLAGS= -Wall -g -O2
 -CC=g++ $(CFLAGS) $(INCLUDE)
-+CC=$(LIBTOOL) --mode=compile g++ $(CFLAGS) $(INCLUDE)
++CC=$(LIBTOOL) --mode=compile $(REALCXX) $(CFLAGS) $(INCLUDE)
  
  # Linker and flags
 -LIBDIR=-L../utils
@@ -19,7 +19,7 @@ $NetBSD$
 -# Archiver
 -AR=ar -cr
 +LIBS=../utils/libplputils.la
-+LD=$(LIBTOOL) --mode=link g++
++LD=$(LIBTOOL) --mode=link $(REALCXX)
  
  #######################################
  # You shouldn't need to look any further..
