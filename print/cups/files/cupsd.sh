@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: cupsd.sh,v 1.1 2000/12/07 20:33:05 jlam Exp $
 #
 # PROVIDE: cupsd
 # REQUIRE: DAEMON
@@ -14,13 +14,13 @@ cmd=${1:-start}
 
 case ${cmd} in
 start|restart)
-	if [ "$pid" != "" ]
+	if [ "$pid" = "" -a -x ${command} ]
 	then
-		echo "Restarting ${name}."
-		kill -HUP $pid
-	else
 		echo "Starting ${name}."
 		${command}
+	else
+		echo "Restarting ${name}."
+		kill -HUP $pid
 	fi
 	;;
 
