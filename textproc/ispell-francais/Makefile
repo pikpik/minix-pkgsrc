@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/02/17 17:37:28 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/14 12:14:02 agc Exp $
 #
 
 DISTNAME=	francais-IREQ-1.4
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.gnu.org/software/ispell/ispell.html
 COMMENT=	French dictionary for interactive spelling checker
 
 DEPENDS+=	ispell-base-3.1.20:../../textproc/ispell-base
-
-CONFLICTS+=	ispell-[0-9]*
 
 WRKSRC=		${WRKDIR}
 
