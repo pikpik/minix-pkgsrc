@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/05/15 09:46:37 agc Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:53:58 zuntum Exp $
 bin/xwin32
 bin/rc
 man/man1/rc.1
@@ -23,9 +23,6 @@ lib/libadvapi32.so
 lib/libmsvcrt.so
 lib/libolesvr.so
 lib/libolecli.so
-lib/libreadline.a
-lib/libdebug.so
-lib/libpe32.so
 lib/libmmsystem.so
 lib/libtwin32.so
 include/LZExpand.h
