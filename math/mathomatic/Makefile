@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2004/06/04 03:38:29 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2004/06/26 21:23:43 minskim Exp $
 #
 
-DISTNAME=		mathomatic-11.2c
+DISTNAME=		mathomatic-11.2d
 CATEGORIES=		math
 MASTER_SITES=		http://www.panix.com/~gesslein/
 EXTRACT_SUFX=		.tgz
@@ -26,5 +26,8 @@ INSTALLATION_DIRS=	bin man/man1
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/am ${PREFIX}/bin/am_mathomatic
 	${INSTALL_MAN} ${WRKSRC}/am.1 ${PREFIX}/man/man1/am_mathomatic.1
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/*.htm ${WRKSRC}/readme.txt	\
+		${PREFIX}/share/doc/${PKGBASE}
 
 .include "../../mk/bsd.pkg.mk"
