@@ -11,3 +11,12 @@ $NetBSD$
    a1 = 35;
  	a2 = 325;
  	_type = DOTLIN;
+@@ -40,7 +40,7 @@ unsigned char rr,gg,bb;
+ 	int dam = damage();
+ 	if (dam & FL_DAMAGE_ALL)
+ 	{
+-		int col = parent()->color();
++		int col = color();
+ 		fl_color(col);
+ 		fl_rectf(ox,oy,side,side);
+ 		Fl::get_color((Fl_Color)col,rr,gg,bb);
