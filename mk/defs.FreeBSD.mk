@@ -1,4 +1,4 @@
-# $NetBSD: defs.FreeBSD.mk,v 1.1 2002/11/17 15:11:40 grant Exp $
+# $NetBSD: defs.FreeBSD.mk,v 1.2 2002/11/17 15:14:18 grant Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -106,3 +106,7 @@ _STRIPFLAG_INSTALL?=	-s	# install(1) option to strip
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 SERIAL_DEVICES?=	/dev/null
 
+# check for kqueue(2) support
+.if exists(/usr/include/sys/event.h)
+PKG_HAVE_KQUEUE=	# defined
+.endif
