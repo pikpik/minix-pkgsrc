@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2000/06/01 11:23:40 rh Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/15 00:54:19 wiz Exp $
 #
 
-DISTNAME=		pdflib-3.0
+DISTNAME=		pdflib-3.03
 CATEGORIES=		print
 MASTER_SITES=		http://www.pdflib.com/pdflib/download/
 
@@ -15,7 +15,8 @@ DEPENDS+=	png-*:../../graphics/png
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--with-tifflib=${PREFIX} \
-			--with-pnglib=${PREFIX}
+			--with-pnglib=${PREFIX} \
+			--enable-shared-pdflib
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/config/ltconfig
 
