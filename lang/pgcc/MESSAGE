@@ -1,8 +1,8 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1 2001/11/01 00:23:16 zuntum Exp $
+$NetBSD$
 
-To use ${PKGNAME} invoke "${MAKE}" like this:
-
-${MAKE} MAKECONF=${PREFIX}/etc/${PKGNAME}.mk [...]
+To use ${PKGNAME} include
+"${PREFIX}/share/examples/${PKGNAME_NOREV}/mk.conf"
+in your BSD style makefile.
 
 ===========================================================================

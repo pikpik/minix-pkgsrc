@@ -1,9 +1,7 @@
-# make configuration file for @@PKGNAME@@
+# $NetBSD$
+#
+# make configuration file for @PKGNAME_NOREV@
 
-CC=	@@PREFIX@@/@@PKGNAME@@/bin/cc
-CPP=	@@PREFIX@@/@@PKGNAME@@/bin/cpp
-CXX=	@@PREFIX@@/@@PKGNAME@@/bin/c++
-
-.if exists(/etc/mk.conf)
-.include "/etc/mk.conf"
-.endif
+CC=	@GCC_PREFIX@/bin/cc
+CPP=	@GCC_PREFIX@/bin/cpp
+CXX=	@GCC_PREFIX@/bin/c++
