@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/cygaudiofile-0.dll
+bin/cygesd-0.dll
+emul/cygwin/bin/esd.exe
