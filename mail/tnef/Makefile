@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.5 2001/08/16 08:13:43 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/19 10:54:26 rh Exp $
 #
 
-DISTNAME=	tnef-1.1.1
+DISTNAME=	tnef-1.1.2
 CATEGORIES=	mail
-MASTER_SITES=	http://world.std.com/~damned/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tnef/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://world.std.com/~damned/software.html
 COMMENT=	decode MS-TNEF MIME attachments
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 
+.include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
