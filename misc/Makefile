@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.177 2004/01/10 22:43:06 wiz Exp $
+# $NetBSD: Makefile,v 1.178 2004/01/17 14:39:24 recht Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -91,7 +91,6 @@ SUBDIR+=	koffice
 SUBDIR+=	koffice-devel
 SUBDIR+=	koffice11
 SUBDIR+=	kp
-SUBDIR+=	kstars
 SUBDIR+=	ktail
 SUBDIR+=	less
 SUBDIR+=	libcdio
