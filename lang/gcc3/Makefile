@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/07/03 16:16:30 drochner Exp $
+# $NetBSD: Makefile,v 1.29 2003/07/03 18:04:23 drochner Exp $
 #
 
 DISTNAME=		gcc-3.3
@@ -32,12 +32,13 @@ MESSAGE_SUBST+=		PKGNAME_NOREV=${DISTNAME}
 
 TEXINFO_REQD=		4.2
 
+.include "../../mk/bsd.prefs.mk"
+
 INFO_FILES=		cpp.info g77.info gcc.info
 .if defined(PKG_GCC3_JAVA)
 INFO_FILES+=		fastjar.info gcj.info
 .endif
 
-.include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "NetBSD" && exists(/usr/include/pthread.h)
 CONFIGURE_ARGS+=	--host=${MACHINE_GNU_ARCH}--netbsdelf2.0
 PTHREAD_OPTS+=		require native
