@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2002/02/18 15:14:29 seb Exp $
+# $NetBSD: Makefile,v 1.7 2003/04/29 22:48:45 jtb Exp $
 
+.if (${MACHINE_ARCH} == "powerpc")
+DISTNAME=		fftw-3.0-fma
+.else
+DISTNAME=		fftw-3.0
+.endif
 PKGNAME=		fftw-3.0
 CATEGORIES=		math
 MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/ \
 			http://www.fftw.org/
-
-.if (${MACHINE_ARCH} == "i386")
-DISTNAME=		fftw-3.0
-.else
-DISTNAME=		fftw-3.0-fma
-.endif
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.fftw.org/
