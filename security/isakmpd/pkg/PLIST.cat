@@ -1,0 +1,5 @@
+@comment $NetBSD$
+man/cat5/isakmpd.conf.0
+man/cat5/isakmpd.policy.0
+man/cat8/certpatch.0
+man/cat8/isakmpd.0
