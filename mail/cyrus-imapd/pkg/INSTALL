@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: INSTALL,v 1.2 2000/08/25 13:33:11 veego Exp $
+# $NetBSD$
 
 PKGNAME=$1
 STAGE=$2
