@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/06/09 15:31:42 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2001/12/17 00:07:01 wiz Exp $
 #
 
 DISTNAME=		a2ps-4.13b
@@ -23,6 +23,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/auxdir/ltconfig
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ENV+=		LPR=lpr
+CONFIGURE_ARGS+=	--with-medium="${PAPERSIZE}"
 
 INFO_FILES=		a2ps.info ogonkify.info regex.info
 
