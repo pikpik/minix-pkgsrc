@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/13 13:52:59 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 22:51:49 grant Exp $
 
 DISTNAME=		samba-2.0.10
 PKGREVISION=				1
@@ -16,6 +16,7 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 .include "../../mk/bsd.prefs.mk"
 

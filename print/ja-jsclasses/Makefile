@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:16:23 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/30 10:41:25 jmmv Exp $
 
 DISTNAME=	jsclasses-030624
 PKGNAME=	ja-${DISTNAME}
@@ -13,7 +13,9 @@ COMMENT=	New document class files for pLaTeX
 
 DEPENDS+=	ja-ptex-bin>=2.1.3:../../print/ja-ptex-bin
 
-USE_PKGINSTALL=	YES
+USE_PKGINSTALL=		YES
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 PLATEX_DIR=	${PREFIX}/share/texmf.local/ptex/platex
 NO_BUILD=	YES

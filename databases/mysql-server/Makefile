@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2003/08/24 02:00:59 taca Exp $
+# $NetBSD: Makefile,v 1.41 2003/08/30 20:05:13 seb Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 PKGREVISION=		4
@@ -10,8 +10,11 @@ COMMENT=		MySQL, a free SQL database (server)
 CONFIGURE_ARGS+=	--with-libwrap
 CONFIGURE_ARGS+=	--without-berkeley-db
 USE_BUILDLINK2=		YES
-USE_PKGINSTALL=		YES
 USE_GMAKE=		YES
+
+USE_PKGINSTALL=		YES
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 ONLY_FOR_PLATFORM=	SunOS-*-sparc Linux-*-*
 

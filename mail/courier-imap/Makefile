@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/10/08 23:16:00 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2003/01/28 22:03:29 jlam Exp $
 
 DISTNAME=	courier-imap-1.4.2
 PKGREVISION=	1
@@ -8,9 +8,10 @@ HOMEPAGE=	http://www.inter7.com/courierimap/
 DEPENDS+=	courier-auth>=0.37.1:../../mail/courier-auth
 DEPENDS+=	courier-maildirmake>=0.37.1nb1:../../mail/courier-maildirmake
 
-USE_PKGINSTALL=		yes
 USE_PERL5=		yes
 REPLACE_PERL=		sysconftool
+USE_PKGINSTALL=		yes
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 .include "../../mail/courier-auth/Makefile.common"
 

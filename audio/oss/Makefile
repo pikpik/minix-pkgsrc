@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/17 21:23:05 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/23 21:52:29 jmc Exp $
 
 DISTNAME=	oss-${OSS_VERSION}	# Overridden below
 PKGNAME=	oss-${OSS_VERSION}
@@ -33,6 +33,9 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 NO_CONFIGURE=		yes
+
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 .if ${OPSYS} == "NetBSD"
 MODSTAT=		/usr/bin/modstat

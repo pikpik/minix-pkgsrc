@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:17:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:51:26 grant Exp $
 
 DISTNAME=	net-snmp-5.0.6
 CATEGORIES=	net
@@ -23,6 +23,8 @@ NET_SNMP_MIBDIRS?=		\$$HOME/.snmp/mibs:${PREFIX}/share/snmp/mibs
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
+
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 

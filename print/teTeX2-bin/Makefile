@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/09 11:20:38 seb Exp $
+# $NetBSD: Makefile,v 1.11 2003/08/30 20:02:05 jlam Exp $
 
 DISTNAME=	tetex-src-${TETEX_BIN_VERS}
 PKGNAME=	teTeX2-bin-${TETEX_BIN_VERS}
@@ -20,6 +20,8 @@ INFO_FILES=	latex.info dvips.info web2c.info kpathsea.info
 
 REPLACE_PERL=	texk/xdvik/t1mapper \
 		texk/oxdvik/t1mapper
+
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 .include "../../mk/bsd.prefs.mk"
 # sysutils/coreutils installs a 'readlink' program, so conflict with it if

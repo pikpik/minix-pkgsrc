@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/01/28 22:03:50 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:51:04 grant Exp $
 
 DISTNAME=	ddclient-3.6.2
 CATEGORIES=	net
@@ -10,6 +10,7 @@ COMMENT=	Client to update dynamic DNS entries
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 DOCDIR=			${PREFIX}/share/doc/ddclient
 EGDIR=			${PREFIX}/share/examples/ddclient

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/07/12 17:26:15 taca Exp $
+# $NetBSD: Makefile,v 1.20 2003/07/17 22:52:01 grant Exp $
 
 DISTNAME=	vtun-2.6
 WRKSRC=		${WRKDIR}/vtun
@@ -11,6 +11,9 @@ COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
+INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
+
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--localstatedir=/var
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2003/07/17 21:22:20 grant Exp $
+# $NetBSD: Makefile,v 1.74 2003/08/30 20:22:50 jlam Exp $
 
 DISTNAME=		gqmpeg-0.20.0
 PKGREVISION=		2
@@ -20,6 +20,8 @@ USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
+
+DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 .include "../../mk/bsd.prefs.mk"
 
