@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.256 2004/08/26 18:26:21 wennmach Exp $
+# $NetBSD: Makefile,v 1.257 2004/08/27 05:55:24 lukem Exp $
 
 COMMENT=	System utilities
 
@@ -114,6 +114,7 @@ SUBDIR+=	mtools
 SUBDIR+=	mtoolsfm
 SUBDIR+=	nautilus
 SUBDIR+=	nautilus-cd-burner
+SUBDIR+=	news
 SUBDIR+=	nrg2iso
 SUBDIR+=	osname
 SUBDIR+=	p5-Sys-Hostname-Long
