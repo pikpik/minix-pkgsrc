@@ -8,7 +8,7 @@ $NetBSD$
      char ignorevec[512];
 -    uint32 mode, ino, nlink, uid, gid, size;
 +    uint32 mode, ino, nlink, uid, gid;
-+    off_t size;
++    long long size;
      int entrynum;
      int nfields;
  
@@ -18,7 +18,7 @@ $NetBSD$
      static char structstat_fill_string[512];
 -    uint32        mode, ino, nlink, uid, gid, size;
 +    uint32        mode, ino, nlink, uid, gid;
-+    off_t size;
++    long long size;
      int entrynum;
      char vec64_a[50], vec64_m[50], vec64_c[50];
  
