@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/7z
+share/doc/p7zip/README
+@dirrm share/doc/p7zip
