@@ -1,9 +1,15 @@
-# $NetBSD: Makefile,v 1.202 2002/09/27 11:14:26 wiz Exp $
+# $NetBSD: Makefile,v 1.203 2002/09/29 00:15:58 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
 
+SUBDIR+=	3DKit
 SUBDIR+=	CompuPic
+SUBDIR+=	GeometryKit
+SUBDIR+=	GLXKit
+SUBDIR+=	GlutKit
+SUBDIR+=	RenderKit
+SUBDIR+=	SDLKit
 SUBDIR+=	GMT
 SUBDIR+=	GUIlib
 SUBDIR+=	ImageMagick
