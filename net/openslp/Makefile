@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/02/17 19:13:53 reed Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/06 04:28:55 minskim Exp $
 
 DISTNAME=	openslp-1.2.0
 PKGREVISION=	1
@@ -13,7 +13,7 @@ COMMENT=	Open-source implementation of the Service Location Protocol
 # PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
-USE_GNU_TOOLS+=		yacc
+USE_GNU_TOOLS+=		yacc lex
 USE_PKGINSTALL=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
