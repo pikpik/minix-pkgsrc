@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:20 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:06 hubertf Exp $
 #
 
 DISTNAME=	openh323_1.1beta3
@@ -32,7 +32,7 @@ pre-build:
 		-${MKDIR} ${WRKSRC}/lib; cd ${WRKSRC}/lib; ${LN} -s ${PREFIX}/lib/libpt.la
 
 do-build:
-		cd ${WRKSRC}; ${GMAKE} opt
+		cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${GMAKE} opt
 
 post-install:
 		cd ${WRKSRC}/include; for f in \*.h ; \
