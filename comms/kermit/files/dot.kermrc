@@ -1,4 +1,5 @@
 # .kermit -- typical ckermit init file
+# $NetBSD$
 
 set send packet 9024		# packet size send 
 set receive packet 9024		# packet size receive

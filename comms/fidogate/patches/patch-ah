@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/toss/Makefile.orig	Thu Jul 16 10:50:11 1998
 +++ src/toss/Makefile	Thu Jul 16 10:54:04 1998
 @@ -42,19 +42,19 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- misc.tcl.orig	Fri Mar 29 04:19:49 1996
 +++ misc.tcl	Sat Mar  7 14:17:27 1998
 @@ -207,7 +207,7 @@

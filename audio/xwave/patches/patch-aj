@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- orig/xwave/src/riff.c	Mon Nov 25 13:35:17 1996
 +++ src/riff.c	Sat Sep 13 04:29:02 1997
 @@ -33,7 +33,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Sat Jul  4 02:20:57 1998
 +++ build-mikmod.netbsd.sh	Sat Jul  4 02:28:22 1998
 @@ -0,0 +1,13 @@

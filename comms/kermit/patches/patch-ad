@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ckutio.c.orig	Mon Nov 25 01:20:49 1996
 +++ ckutio.c	Sat Jun 20 22:44:33 1998
 @@ -7174,9 +7174,9 @@

@@ -1,5 +1,7 @@
 #!/bin/sh -
 #
+# $NetBSD$
+#
 #	pre-install script for Minicom port to FreeBSD 2.x
 
 echo ""

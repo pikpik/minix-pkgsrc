@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ckucmd.c.orig	Mon Nov 25 01:20:49 1996
 +++ ckucmd.c	Fri Jun 19 22:52:29 1998
 @@ -3648,6 +3648,9 @@

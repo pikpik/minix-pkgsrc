@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- cddbd.h.orig	Sun Jun 14 06:41:32 1998
 +++ cddbd.h	Sun Jun 14 06:42:05 1998
 @@ -261,3 +261,3 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- incoming/modemd.c.orig      Thu Jun 18 16:50:31 1998
 +++ incoming/modemd.c   Thu Jun 18 16:51:08 1998
 @@ -50,2 +50,5 @@

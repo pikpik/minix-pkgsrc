@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/bin/sconvert.c.orig	Tue Aug 19 17:44:17 1997
 --- src/bin/sconvert.c	Tue Aug 19 17:47:11 1997
 ***************

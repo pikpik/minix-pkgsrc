@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/io.c	Mon Feb  2 14:59:54 1998
 +++ io.c	Sun Feb 22 02:06:44 1998
 @@ -399,7 +399,7 @@

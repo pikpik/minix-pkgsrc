@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- rwconf.c.orig	Fri Sep  5 11:01:53 1997
 +++ rwconf.c	Wed Feb 11 22:57:07 1998
 @@ -71,14 +71,14 @@

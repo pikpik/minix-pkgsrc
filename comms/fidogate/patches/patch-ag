@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/tick/Makefile.orig	Thu Jul 16 10:49:56 1998
 +++ src/tick/Makefile	Thu Jul 16 10:50:07 1998
 @@ -26,8 +26,8 @@

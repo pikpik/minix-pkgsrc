@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/snd.h	Thu Feb 12 15:36:40 1998
 +++ snd.h	Sun Feb 22 02:19:27 1998
 @@ -21,17 +21,21 @@

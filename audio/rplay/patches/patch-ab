@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** rplayd/Makefile.in.orig	Fri Feb  2 03:13:57 1996
 --- rplayd/Makefile.in	Fri Jun 13 19:31:38 1997
 ***************

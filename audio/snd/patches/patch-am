@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/snd-xmenu.c	Thu Feb  5 15:01:39 1998
 +++ snd-xmenu.c	Sun Feb 22 02:15:33 1998
 @@ -2900,7 +2900,7 @@

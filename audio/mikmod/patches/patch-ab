@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- usercode/mikmodux.c.orig	Sat Mar 21 14:52:24 1998
 +++ usercode/mikmodux.c	Sat Jul  4 02:12:26 1998
 @@ -33,10 +33,10 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- unix/Makefile.orig	Wed Nov 19 18:47:29 1997
 +++ unix/Makefile	Wed Nov 19 18:47:43 1997
 @@ -560,7 +560,7 @@

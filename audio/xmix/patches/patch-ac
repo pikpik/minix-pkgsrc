@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -u ../../work/xmix/xmix.c ./xmix.c
 --- ../../work/xmix/xmix.c	Thu Oct 30 01:23:01 1997
 +++ ./xmix.c	Thu Oct 30 01:25:53 1997

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Sat Mar  7 13:11:05 1998
 +++ sgi_a.c	Sat Mar  7 13:30:25 1998
 @@ -0,0 +1,161 @@

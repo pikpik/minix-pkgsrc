@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/snd-clm.c	Thu Feb 12 15:37:13 1998
 +++ snd-clm.c	Sun Feb 22 02:20:40 1998
 @@ -753,7 +753,11 @@

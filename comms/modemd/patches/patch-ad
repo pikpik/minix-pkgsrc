@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- incoming/Makefile.orig	Tue Sep 10 03:08:00 1996
 +++ incoming/Makefile	Tue Mar  3 17:19:06 1998
 @@ -5,7 +5,7 @@

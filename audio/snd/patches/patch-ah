@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/snd-file.c	Tue Feb 10 15:42:41 1998
 +++ snd-file.c	Sun Feb 22 02:11:57 1998
 @@ -15,6 +15,11 @@

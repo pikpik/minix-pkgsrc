@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/snd-xmain.c	Mon Feb  2 15:00:56 1998
 +++ snd-xmain.c	Sun Feb 22 02:14:56 1998
 @@ -42,7 +42,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Mon Nov 24 22:32:47 1997
 +++ scsi.h	Mon Nov 24 23:35:25 1997
 @@ -0,0 +1,86 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- modemcap/Makefile.orig	Tue Sep 10 03:08:00 1996
 +++ modemcap/Makefile	Tue Mar  3 17:21:39 1998
 @@ -1,6 +1,9 @@

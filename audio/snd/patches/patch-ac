@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- snd.orig/cmus_prototypes.h	Thu Feb 12 15:36:33 1998
 +++ cmus_prototypes.h	Sun Feb 22 02:05:30 1998
 @@ -208,7 +208,7 @@

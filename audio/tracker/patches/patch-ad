@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -u -r ../../work/tracker/Arch/PCux/audio.c ./Arch/PCux/audio.c
 --- ../../work/tracker/Arch/PCux/audio.c	Thu Oct 30 00:58:14 1997
 +++ ./Arch/PCux/audio.c	Thu Oct 30 00:46:12 1997

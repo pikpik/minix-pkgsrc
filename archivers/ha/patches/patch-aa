@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** nix/machine.c.bak	Thu Jan 12 09:53:00 1995
 --- nix/machine.c	Tue Jan 24 19:38:07 1995
 ***************

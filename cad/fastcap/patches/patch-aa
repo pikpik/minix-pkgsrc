@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/Makefile.4.orig	Wed May  6 19:07:58 1998
 +++ src/Makefile.4	Wed May  6 19:08:20 1998
 @@ -66,5 +66,5 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/mulSetup.c.orig	Wed May  6 19:48:32 1998
 +++ src/mulSetup.c	Wed May  6 19:55:09 1998
 @@ -36,6 +36,16 @@

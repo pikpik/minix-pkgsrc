@@ -1,4 +1,6 @@
-# FreeBSD config exception file
+# FreeBSD/NetBSD config exception file
+# $NetBSD$
+
 
 MAKE		= /usr/bin/make
 INTERFACE_OPTS  = -DWANT_X11

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/toss/rununpack.sh.orig	Thu Jul 16 18:36:08 1998
 +++ src/toss/rununpack.sh	Thu Jul 16 18:38:09 1998
 @@ -17,7 +17,7 @@

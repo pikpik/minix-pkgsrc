@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/gate/Makefile.orig	Thu Jul 16 10:49:22 1998
 +++ src/gate/Makefile	Thu Jul 16 10:53:10 1998
 @@ -27,11 +27,11 @@

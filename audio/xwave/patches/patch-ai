@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- orig/xwave/src/record_dialog.c	Tue Nov 19 15:24:36 1996
 +++ src/record_dialog.c	Sat Sep 13 04:28:58 1997
 @@ -498,7 +498,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- install.sh.orig	Sat Dec 21 21:49:54 1996
 +++ install.sh	Fri Apr 18 15:12:25 1997
 @@ -37,11 +37,25 @@

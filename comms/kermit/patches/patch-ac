@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ckcdeb.h.orig	Mon Nov 25 01:20:48 1996
 +++ ckcdeb.h	Sat Jun 20 23:20:14 1998
 @@ -908,10 +908,10 @@

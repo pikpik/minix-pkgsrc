@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Sat Jul  4 02:20:57 1998
 +++ playercode/makefile.netbsd	Sat Jul  4 02:31:51 1998
 @@ -0,0 +1,41 @@

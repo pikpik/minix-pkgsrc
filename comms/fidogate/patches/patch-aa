@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- config.make.orig	Sat Oct 11 17:24:15 1997
 +++ config.make	Thu Jul 16 11:07:46 1998
 @@ -14,35 +14,35 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- minicom.c.orig	Sat Sep 27 17:03:30 1997
 +++ minicom.c	Fri Jan  9 19:59:13 1998
 @@ -530,7 +530,8 @@

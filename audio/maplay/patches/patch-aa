@@ -1,3 +1,5 @@
+$NetBSD$
+
 Only in maplay.new: .extract_done
 diff -c -r maplay/all.h maplay.new/all.h
 *** maplay/all.h	Thu Jun 23 12:14:39 1994

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/toss/rundf.sh.orig	Thu Jul 16 19:31:38 1998
 +++ src/toss/rundf.sh	Thu Jul 16 19:32:02 1998
 @@ -9,9 +9,9 @@
