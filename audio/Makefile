@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.257 2004/10/25 09:05:53 xtraeme Exp $
+# $NetBSD: Makefile,v 1.258 2004/11/03 03:21:44 sekiya Exp $
 #
 
 COMMENT=	Audio tools
@@ -124,6 +124,9 @@ SUBDIR+=	libsamplerate
 SUBDIR+=	libshout
 SUBDIR+=	libsidplay
 SUBDIR+=	libsndfile
+SUBDIR+=	libvisual
+SUBDIR+=	libvisual-bmp
+SUBDIR+=	libvisual-plugins
 SUBDIR+=	libvorbis
 SUBDIR+=	liteamp
 SUBDIR+=	liveice
