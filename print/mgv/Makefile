@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/06/02 01:17:28 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:52:35 grant Exp $
 
 DISTNAME=		mgv-3.1.5
 PKGREVISION=		1
@@ -11,7 +11,7 @@ COMMENT=		Motif/LessTif user interface for Ghostscript
 
 GNU_CONFIGURE=		yes
 USE_X11BASE=		yes
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 
 CONFIGURE_ARGS+=	--with-motif-includes=${MOTIFBASE}/include
 CONFIGURE_ARGS+=	--with-motif-libs=${MOTIFBASE}/lib
@@ -21,8 +21,8 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/html
 	${LN} -fs ${PREFIX}/share/mgv/3.1.5/help ${PREFIX}/share/doc/html/mgv
 
-.include "../../graphics/xpm/buildlink2.mk"
-.include "../../mk/motif.buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"
