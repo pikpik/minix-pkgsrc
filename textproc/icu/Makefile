@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2003/12/02 23:11:30 recht Exp $
+# $NetBSD: Makefile,v 1.24 2003/12/03 16:52:48 recht Exp $
 #
 
 DISTNAME=	icu-2.6.1
 WRKSRC=		${WRKDIR}/${PKGBASE}/source
 CATEGORIES=	textproc
-EXTRACT_SUFX=	.tgz
-
 #
 # The IBM site has long delays that can cause ftp to timeout.  Use the
 # backup FTP repositories in preference to the IBM one.
