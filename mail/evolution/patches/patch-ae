@@ -1,6 +1,6 @@
 $NetBSD$
 
---- camel/camel-remote-store.c.orig	Tue Apr 24 17:56:15 2001
+--- camel/camel-remote-store.c.orig	Tue Jul 17 23:22:19 2001
 +++ camel/camel-remote-store.c
 @@ -23,6 +23,11 @@
   *
@@ -11,6 +11,6 @@ $NetBSD$
 +#endif
 +#define	_POSIX_THREAD_SYSCALL_SOFT	0
 +
+ #ifdef HAVE_CONFIG_H
  #include <config.h>
- 
- #include <sys/time.h>
+ #endif
