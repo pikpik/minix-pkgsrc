@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gardump
+bin/garload
+man/man1/gardump.1
+man/man1/garload.1
