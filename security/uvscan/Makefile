@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/09/18 21:15:18 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2003/01/28 22:04:08 jlam Exp $
 
 DISTNAME=		vlnx416e
 PKGNAME=		uvscan-4.16.0
@@ -76,3 +76,4 @@ do-install:
 	done
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

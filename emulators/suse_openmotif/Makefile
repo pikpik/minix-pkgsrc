@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/04/15 12:00:23 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/11/25 11:01:16 schmonz Exp $
 
 DISTNAME=		openmotif
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -21,3 +21,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 RPMFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

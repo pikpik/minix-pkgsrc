@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/09/21 15:14:55 tron Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/05 04:27:10 rh Exp $
 
 DISTNAME=		plugger-4.0-linux-x86-glibc
 PKGNAME=		ns-${PLUGGERNAME}-${BINNAME}-${PLUGGERVERS}
@@ -53,3 +53,5 @@ do-install:
 .if ${BINNAME} != common
 NSNAME!=	${PKG_INFO} -e ${BINNAME} || ${ECHO}
 .endif
+
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2002/07/02 11:38:38 agc Exp $
+# $NetBSD: Makefile,v 1.25 2002/07/03 16:32:49 agc Exp $
 
 DISTNAME=		so51a_lnx_${LANGNO}
 PKGNAME=		staroffice-${LANGUAGE}-5.1a
@@ -146,3 +146,4 @@ post-install:
 .endfor
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

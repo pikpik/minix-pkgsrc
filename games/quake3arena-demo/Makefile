@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/02/24 17:03:24 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2002/04/04 12:29:47 tron Exp $
 
 DISTNAME=	linuxq3ademo-1_11-6_x86_gz
 PKGNAME=	quake3arena-demo-1.11.6
@@ -56,4 +56,4 @@ do-install:
 	${MV} ${SHAREDIR}/Help ${SHAREDIR}/quake3arena-Help
 
 .include "../../emulators/suse_linux/Makefile.application"
-
+.include "../../mk/bsd.pkg.mk"

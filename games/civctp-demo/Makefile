@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/02/07 11:39:52 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/04/04 12:29:47 tron Exp $
 
 DISTNAME=	civctp-demo-10251999
 PKGNAME=	civctp-demo-19991025
@@ -53,3 +53,4 @@ do-install:
 	cd ${WRKSRC} ; ${PAX} -rw appstr.txt civpaths.txt ctp_data ${LIBDIR}
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/14 13:05:18 tron Exp $
 
 DISTNAME=	opera-plugins-1.0
 CATEGORIES=	www
@@ -39,3 +39,4 @@ do-install:
 		done
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

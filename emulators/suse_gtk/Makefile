@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/04/04 09:47:00 tron Exp $
+# $NetBSD: Makefile,v 1.8 2002/11/25 11:01:14 schmonz Exp $
 
 DISTNAME=		suse_gtk-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -21,3 +21,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 RPMFILES=		glib.rpm gtk.rpm
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

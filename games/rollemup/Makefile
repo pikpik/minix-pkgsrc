@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/12/05 15:00:46 agc Exp $
+# $NetBSD: Makefile,v 1.19 2002/04/04 12:29:48 tron Exp $
 
 DISTNAME=	Rollemup
 PKGNAME=	rollemup-1.0
@@ -68,3 +68,4 @@ do-install:
 	@${CHMOD} 664 ${PREFIX}/${GAMES_DIR}/Rollemup/Rollemup.ini
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/08/25 21:49:50 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/11/25 11:01:15 schmonz Exp $
 
 DISTNAME=		libpng
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -22,3 +22,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 RPMFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

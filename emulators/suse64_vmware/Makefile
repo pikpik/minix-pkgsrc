@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/04 10:07:58 tron Exp $
+# $NetBSD: Makefile,v 1.2 2002/04/04 10:29:51 tron Exp $
 
 DISTNAME=		suse_vmware-${SUSE_VERSION}
 PKGREVISION=		1
@@ -36,3 +36,4 @@ post-install:
 	  >>${PLIST_SRC}
 
 .include "../suse64_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

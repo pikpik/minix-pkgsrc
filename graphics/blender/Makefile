@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/12/07 02:38:56 schmonz Exp $
+# $NetBSD: Makefile,v 1.16 2002/12/16 14:10:14 schmonz Exp $
 
 PKGNAME=	blender-2.11
 PKGREVISION=	5
@@ -64,3 +64,4 @@ do-install:
 	${LN} -sf ../lib/blender/blender ${PREFIX}/bin/blender
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

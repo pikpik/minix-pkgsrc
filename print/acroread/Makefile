@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/12/07 02:39:02 schmonz Exp $
+# $NetBSD: Makefile,v 1.34 2003/01/04 12:52:20 cjep Exp $
 
 DISTNAME=	acroread	# Overridden below
 PKGNAME=	acroread-4.05
@@ -92,3 +92,4 @@ post-install:
 .endif
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

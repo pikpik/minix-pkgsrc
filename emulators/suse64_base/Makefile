@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/12/09 21:34:58 tron Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/22 01:22:29 dillo Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 PKGREVISION=		8
@@ -57,3 +57,4 @@ do-install:
 	@${SETENV} PKG_PREFIX="${PREFIX}" ${SH} ${INSTALL_FILE} - POST-INSTALL
 
 .include "../suse64_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

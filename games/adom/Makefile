@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/06/16 21:26:21 wiz Exp $
 #
 
 DISTNAME=	adom-100-elf
@@ -30,3 +30,4 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/adom ${PREFIX}/bin
 
 .include "../../emulators/suse_linux/Makefile.application"
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/04 10:07:58 tron Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/02 15:36:51 grant Exp $
 
 DISTNAME=		suse_devel-${SUSE_VERSION}
 PKGREVISION=		1
@@ -23,3 +23,4 @@ RPMFILES=		bin86.rpm binutils.rpm g77.rpm gcc.rpm gpp.rpm \
 			libc-2.1.3-204.i386.rpm linclude.rpm make.rpm
 
 .include "../suse64_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

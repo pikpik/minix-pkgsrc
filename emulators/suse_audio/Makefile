@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/04/04 09:46:51 tron Exp $
+# $NetBSD: Makefile,v 1.7 2002/11/25 11:01:13 schmonz Exp $
 
 DISTNAME=		audiofile
 PKGNAME=		suse_audio-${SUSE_VERSION}
@@ -21,3 +21,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 RPMFILES=		${DISTNAME}${EXTRACT_SUFX}
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/26 21:24:24 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/04 10:07:58 tron Exp $
 
 DISTNAME=		compat
 PKGNAME=		suse_compat-${SUSE_VERSION}
@@ -24,3 +24,4 @@ post-install:
 	${ECHO} "${EMULSUBDIR}/usr/lib/libncurses.so.2.1" >>${PLIST_SRC}
 
 .include "../suse64_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

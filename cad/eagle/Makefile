@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/04/04 12:29:46 tron Exp $
+# $NetBSD: Makefile,v 1.6 2002/09/13 21:35:17 rh Exp $
 #
 
 DISTNAME=		eagle-4.09r2e
@@ -35,4 +35,4 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/eagle ${PREFIX}/bin
 
 .include "../../emulators/suse_linux/Makefile.application"
-
+.include "../../mk/bsd.pkg.mk"

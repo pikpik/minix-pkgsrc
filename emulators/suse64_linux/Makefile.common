@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.2 2002/08/02 15:36:54 grant Exp $
+# $NetBSD: Makefile.common,v 1.3 2002/12/09 21:16:59 tron Exp $
 
 SUSE_VERSION=		6.4
 
@@ -44,5 +44,3 @@ do-install:
 
 show-shlib-type:
 	@${ECHO} linux-${MACHINE_ARCH}
-
-.include "../../mk/bsd.pkg.mk"

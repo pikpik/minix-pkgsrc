@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/01/16 19:52:46 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2002/04/04 09:47:08 tron Exp $
 
 DISTNAME=		fileutils-4.1-154.i386
 PKGNAME=		suse_vmware-${SUSE_VERSION}
@@ -36,3 +36,4 @@ post-install:
 	  >>${PLIST_SRC}
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/10/14 14:35:23 jschauma Exp $
+# $NetBSD: Makefile,v 1.21 2002/11/25 11:01:17 schmonz Exp $
 
 DISTNAME=		suse_x11-${SUSE_VERSION}
 PKGREVISION=		2
@@ -46,3 +46,4 @@ post-install:
 	done
 
 .include "../suse_linux/Makefile.common"
+.include "../../mk/bsd.pkg.mk"
