@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/05/02 11:55:03 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/05/05 19:05:12 jmmv Exp $
 #
 
 DISTNAME=	Maelstrom-3.0.5
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.devolution.com/~slouken/Maelstrom/src/
 
 MAINTAINER=	Benjamin.Wong@cc.gatech.edu
 HOMEPAGE=	http://www.devolution.com/~slouken/Maelstrom/
-COMMENT=	Incredible, fast moving, high resolution version of asteroids (SDL version)
+COMMENT=	High resolution version of Asteroids (SDL version)
 
 CONFLICTS=		maelstrom-x11-[0-9]* maelstrom-[0-9]*
 

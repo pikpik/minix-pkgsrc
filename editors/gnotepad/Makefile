@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/12/24 06:09:59 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/05/02 11:54:45 wiz Exp $
 
 DISTNAME=	gnotepad+-1.3.3
 PKGNAME=	${DISTNAME:S/+//}
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnotepad/}
 
 MAINTAINER=	jmcneill@invisible.yi.org
 HOMEPAGE=	http://gnotepad.sourceforge.net/
-COMMENT=	easy-to-use, yet fairly feature-rich, simple HTML and text editor for X11
+COMMENT=	easy-to-use, yet feature-rich, simple HTML/text editor for X11
 
 BUILD_USES_MSGFMT=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/09/27 23:17:43 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2003/04/10 01:28:07 grant Exp $
 
 DISTNAME=	festvox_kedlpc16k
 PKGNAME=	festvox-ked16-1.4.0
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/ \
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
-COMMENT=	16khz American English male voice for the festival speech synthesis system
+COMMENT=	16khz American English male voice for festival
 
 DEPENDS+=	festival>=1.4.0:../festival
 DEPENDS+=	festlex-poslex>=1.4.0:../festlex-poslex
