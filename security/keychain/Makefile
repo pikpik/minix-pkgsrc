@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2003/07/18 03:59:49 martti Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/29 03:29:46 schmonz Exp $
 
-DISTNAME=	keychain-2.0.3
-PKGNAME=	${DISTNAME}
+DISTNAME=	keychain-2.3.4
 CATEGORIES=	security
 MASTER_SITES=	http://www.ibiblio.org/gentoo/distfiles/
 EXTRACT_SUFX=	.tar.bz2
@@ -16,7 +15,7 @@ DEPENDS+=	openssh-[0-9]*:../../security/openssh
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_BUILD=	# defined
+NO_BUILD=		# defined
 
 INSTALLATION_DIRS=	bin man/man1 share/doc/${PKGBASE}
 
