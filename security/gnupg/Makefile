@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2000/02/27 04:16:55 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2000/03/02 08:21:31 wiz Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
 #
 
-DISTNAME=	gnupg-1.0.1
+DISTNAME=	gnupg-1.0.2
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/gnupg/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} gpg.1.gz
