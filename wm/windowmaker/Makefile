@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/08/25 18:40:15 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2002/08/25 21:50:49 mjl Exp $
 
 VERS=			0.80.1
 DISTNAME=		WindowMaker-${VERS}
@@ -23,6 +23,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-usermenu \
 			--with-nlsdir=${PREFIX}/${PKGLOCALEDIR}/locale
 CONFIGURE_ENV+=		LINGUAS=yes
+CONFIGURE_ENV+=		CPP_PATH="${CPP_PATH}"
+CPP_PATH=		${CC} -E
 
 INSTALL_TARGET=		install-strip
 
