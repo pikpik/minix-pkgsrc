@@ -1,12 +1,20 @@
 $NetBSD$
 
---- src/install.c.orig	Fri Sep 24 14:00:03 1999
-+++ src/install.c
-@@ -153,6 +153,7 @@
-                      FatalError("Redefinition of basic system variable");
-                      }
-                   strcpy(VNETMASK,value);
-+		  AddNetworkClass(VNETMASK);
-                   break;
+--- src/image.c.orig	Thu Feb 15 07:23:22 2001
++++ src/image.c
+@@ -206,9 +206,12 @@
+    DeleteItemList(namecache);
+    }
+  
+-DeleteCompressedArray(ip->inode_cache);
+-
+-ip->inode_cache = NULL;
++	/* Only flush when exiting initial call to RecursiveImage() */
++if (strcmp(from,ip->path) == 0)
++   {
++   DeleteCompressedArray(ip->inode_cache);
++   ip->inode_cache = NULL;
++   }
  
- 
+ cfclosedir(dirh);
+ }
