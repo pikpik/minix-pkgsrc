@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/01/16 21:41:08 jwise Exp $
+# $NetBSD: Makefile,v 1.7 2000/05/14 23:35:26 jwise Exp $
 
 DISTNAME=	jakarta-tomcat.src
 PKGNAME=	jakarta-tomcat-3.1
@@ -13,7 +13,6 @@ HOMEPAGE=	http://jakarta.apache.org/
 USE_JAVA=	yes
 
 WRKSRC=		${WRKDIR}/jakarta-tomcat
-NO_MTREE=
 
 JAKARTA_HOME=	${PREFIX}/jakarta
 MAKE_ENV+=	JAVA_HOME=${JAVA_HOME}
