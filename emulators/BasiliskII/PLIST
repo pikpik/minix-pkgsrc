@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/BasiliskII
+man/man1/BasiliskII.1
+share/BasiliskII/keycodes
+share/BasiliskII/fbdevices
+@dirrm share/BasiliskII
