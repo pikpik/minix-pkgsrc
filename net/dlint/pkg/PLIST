@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/dlint
+bin/digparse
+man/man1/dlint.1
