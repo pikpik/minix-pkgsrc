@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.241 2004/03/28 23:24:06 minskim Exp $
+# $NetBSD: Makefile,v 1.242 2004/03/29 18:54:28 tv Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -247,6 +247,7 @@ SUBDIR+=	xhtml
 SUBDIR+=	xml-i18n-tools
 SUBDIR+=	xml2doc
 SUBDIR+=	xmlcatmgr
+SUBDIR+=	xmlindent
 SUBDIR+=	xp
 SUBDIR+=	xslide
 SUBDIR+=	xt
