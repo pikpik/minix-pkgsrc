@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2002/08/25 21:50:02 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2002/08/30 23:50:34 wiz Exp $
 #
 
-DISTNAME=	mtr-0.51
+DISTNAME=	mtr-0.52
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
