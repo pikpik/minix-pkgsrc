@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/25 16:11:14 mjl Exp $
 #
 
 DISTNAME=	openh323_1.1beta3
@@ -17,6 +17,8 @@ MASTER_SITES=	http://www.openh323.org/bin/ \
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.openh323.org/
+
+DEPENDS=	pwlib-1.1pl17:../../devel/pwlib
 
 WRKSRC=		${WRKDIR}/openh323
 
