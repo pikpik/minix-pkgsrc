@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2001/02/16 15:10:56 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/19 03:56:35 jlam Exp $
 #
 
 DISTNAME=		nighthawk-2.1
 WRKSRC=			${WRKDIR}/nighthawk
 CATEGORIES=		x11 games
-MASTER_SITES=		http://www.downunder.net.au/~jsno/rel/unix_projects/
+MASTER_SITES=		http://jsno.downunder.net.au/proj_linux/nighthawk.html
 EXTRACT_SUFX=		.tgz
 
 PATCH_SITES=		${MASTER_SITES}
