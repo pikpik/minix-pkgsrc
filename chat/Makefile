@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/12/30 11:39:08 zuntum Exp $
+# $NetBSD: Makefile,v 1.29 2001/12/30 14:46:59 wiz Exp $
 #
 
 COMMENT=	communication programs
@@ -29,6 +29,7 @@ SUBDIR+=	kyahoo
 SUBDIR+=	libirc
 SUBDIR+=	libyahoo
 SUBDIR+=	micq
+SUBDIR+=	naim
 SUBDIR+=	p5-Net-ICQ2000
 SUBDIR+=	silc-client
 SUBDIR+=	silc-server
