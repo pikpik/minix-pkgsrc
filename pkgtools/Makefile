@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/12/09 00:44:26 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2001/01/25 08:59:09 tron Exp $
 #
 
     SUBDIR += bsdpak
@@ -10,6 +10,7 @@
     SUBDIR += pkgdiff
     SUBDIR += pkglint
     SUBDIR += pkgmanpages
+    SUBDIR += pkgsurvey
     SUBDIR += port2pkg
     SUBDIR += rpm2pkg
     SUBDIR += url2pkg
