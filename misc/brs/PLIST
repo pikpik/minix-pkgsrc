@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bible
+lib/bible.data
+lib/bible.data.conc
+man/man1/bible.1
