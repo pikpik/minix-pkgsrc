@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/05/30 12:53:43 markd Exp $
+# $NetBSD: Makefile,v 1.20 2003/07/08 06:58:00 skrll Exp $
 
 DISTNAME=	kdemultimedia-3.1.2
 PKGREVISION=	1
@@ -10,6 +10,8 @@ COMMENT=	Audio tools for the KDE integrated X11 desktop
 DEPENDS+=	xanim>=2.80.0:../../graphics/xanim
 
 USE_BUILDLINK2=		YES
+
+REPLACE_PERL=		kscd/workman2cddb.pl`
 
 .include "../../mk/bsd.prefs.mk"
 .if defined(USE_OSS)
