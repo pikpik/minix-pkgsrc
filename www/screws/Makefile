@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/20 17:27:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2005/03/20 17:52:20 jmmv Exp $
 #
 
 DISTNAME=	screws-0.56
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.nopcode.org/prj/screws/
 
 MAINTAINER=	pancake@phreaker.net
 HOMEPAGE=	http://www.nopcode.org/?t=screws
-COMMENT=	SCRipt Enhaced Web Server
+COMMENT=	SCRipt Enhanced Web Server
 
 USE_PERL5=	YES
 USE_BUILDLINK3=	YES
