@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2004/04/14 16:15:21 jmmv Exp $
+# $NetBSD: Makefile,v 1.24 2004/10/03 00:13:19 tv Exp $
 #
 
-DISTNAME=		mergeant-0.12.1
-PKGREVISION=		12
+DISTNAME=		mergeant-0.52
 CATEGORIES=		databases gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/mergeant/0.12/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/mergeant/0.52/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
@@ -18,6 +17,7 @@ USE_X11=		YES
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
+CONFIGURE_ARGS+=	--disable-gtk-doc
 USE_LIBTOOL=		YES
 
 .include "../../databases/libgda/buildlink3.mk"
