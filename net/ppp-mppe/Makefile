@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/05/07 23:48:49 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2002/08/10 17:34:42 kim Exp $
 
 DISTNAME=	ppp-2.3.9
 PKGNAME=	ppp-mppe-2.3.9
@@ -43,6 +43,8 @@ pre-install:
 
 pre-clean:
 	cd ../../security/openssl && ${MAKE} clean
+
+.include "../../mk/bsd.prefs.mk"
 
 SYSDIR?=	/sys
 MAKE_ENV+=	SYSDIR="${SYSDIR}"
