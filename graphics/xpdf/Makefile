@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/08/21 06:49:13 fredb Exp $
+# $NetBSD: Makefile,v 1.14 2000/08/21 09:24:03 tron Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/03/11 03:08:12 vanilla Exp
 # 
 
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=--with-freetype-includes=${LOCALBASE}/include
 post-install:
 	${SED} 's|@@LOCALBASE@@|${LOCALBASE}|' \
 		< ${FILESDIR}/xpdf-app-defaults \
-		> ${X11BASE}/lib/X11/app-defaults/Xpdf
+		> ${X11PREFIX}/lib/X11/app-defaults/Xpdf
 
 .include "../../mk/bsd.prefs.mk"
 
