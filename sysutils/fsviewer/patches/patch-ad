@@ -39,3 +39,12 @@ $NetBSD$
      attributes.extra_flags = GSFullKeyboardEventsFlag;
      attributes.flags =
  	(GSWindowStyleAttr | GSWindowLevelAttr | GSExtraFlagsAttr);
+@@ -417,7 +417,7 @@
+     if ((fsViewer->wmpixmap = WMCreatePixmapFromRImage(fsViewer->scr, 
+ 						       fsViewer->image, 0)))
+     {
+-        WMSetApplicationIconImage(fsViewer->scr, fsViewer->wmpixmap);
++        WMSetApplicationIconPixmap(fsViewer->scr, fsViewer->wmpixmap);
+     }
+ }
+ 

@@ -17,3 +17,14 @@ $NetBSD$
  	attributes.extra_flags = GSFullKeyboardEventsFlag;
  	attributes.flags = (GSWindowStyleAttr | GSWindowLevelAttr |
  			    GSExtraFlagsAttr);
+@@ -444,8 +444,8 @@
+                               WMViewSizeDidChangeNotification,
+                               WMWidgetView(fView->fileBrowserF));
+ 
+-    WMSetWindowMiniwindowImage(fView->fileView, 
+-			       WMGetApplicationIconImage(fView->scr));
++    WMSetWindowMiniwindowPixmap(fView->fileView, 
++			       WMGetApplicationIconPixmap(fView->scr));
+ 
+     array = WMGetUDObjectForKey(defaultsDB, "SHELF");
+     if(array && PLIsArray(array))

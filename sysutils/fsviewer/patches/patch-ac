@@ -19,3 +19,14 @@ $NetBSD$
      attributes.extra_flags = GSFullKeyboardEventsFlag;
      attributes.flags = (GSWindowStyleAttr | GSWindowLevelAttr |
  			GSExtraFlagsAttr);
+@@ -172,8 +172,8 @@
+                               WMTextDidEndEditingNotification, 
+ 			      finder->searchField);
+ 
+-    WMSetWindowMiniwindowImage(finder->win, 
+-			       WMGetApplicationIconImage(finder->scr));
++    WMSetWindowMiniwindowPixmap(finder->win, 
++			       WMGetApplicationIconPixmap(finder->scr));
+ 
+     return finder;
+ }
