@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2002/08/04 16:55:13 jdolecek Exp $
+# $NetBSD: Makefile,v 1.47 2002/08/08 13:09:30 wiz Exp $
 #
 
 COMMENT=	communication programs
@@ -28,7 +28,7 @@ SUBDIR+=	icb
 SUBDIR+=	icqlib
 SUBDIR+=	ircII
 SUBDIR+=	ircd-hybrid
-SUBDIR+=	irchat
+SUBDIR+=	irchat-pj
 SUBDIR+=	ircu
 SUBDIR+=	iroffer
 SUBDIR+=	irssi
