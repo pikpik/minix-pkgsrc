@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: url2pkg,v 1.22 2003/04/21 23:31:15 rh Exp $
+# $NetBSD: url2pkg,v 1.23 2003/04/22 00:35:09 rh Exp $
 #
 # url2pkg
 # (c) 1999-2002 Hubert Feyrer <hubert@feyrer.de>
@@ -40,8 +40,8 @@ if [ ! -f w*/.extract_done ]; then
 	fi
 
 	sourceforge="http://prdownloads.sourceforge.net/"
-	if [ `expr "$url" : "$sourceforge"` -gt 0 ]; then
-		DISTNAME=`expr "$url" : '.*/\([^/]*\)?'`
+	if [ `expr "$url" : "$sourceforge.*"` -gt 0 ]; then
+		DISTNAME=`expr "$url" : '.*/\([^/?]*\)'`
 		sfname=`expr "$url" : "${sourceforge}\(.*\)/[^/]*\$"`
 		MASTER_SITES='${MASTER_SITE_SOURCEFORGE:='"$sfname"'/}'
 		HOMEPAGE="http://$sfname.sourceforge.net/"
