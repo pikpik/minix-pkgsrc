@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2000/05/29 22:46:44 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/13 18:25:33 jlam Exp $
 
-CXX=		c++
+CXX?=		c++
 
 LIB=		libboost.la
 
@@ -10,7 +10,7 @@ SRCS=		libs/timer/prg_display.cpp \
 OBJS=		${SRCS:.cpp=.lo}
 LOBJS=		${OBJS:T}
 
-CXXFLAGS=	# empty
+CXXFLAGS+=	# empty
 CPPFLAGS+=	-I${.CURDIR} -I${LOCALBASE}/include/sgi-stl
 
 all:	${LIB}
