@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/02/16 15:11:03 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/10/14 16:20:24 tron Exp $
 
 DISTNAME=	xmahjongg
 PKGNAME=	xmahjongg-1.0
@@ -20,5 +20,8 @@ PLIST_SUBST+=	X11BASE="${X11BASE}"
 
 post-extract:
 	@${CP} ${WRKSRC}/xmahjongg.6 ${WRKSRC}/xmahjongg.man
+
+post-install:
+	${X11BASE}/bin/mkfontdir ${X11PREFIX}/lib/X11/fonts/misc
 
 .include "../../mk/bsd.pkg.mk"
