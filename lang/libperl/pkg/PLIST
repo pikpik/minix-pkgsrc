@@ -1,2 +1,2 @@
-@comment $NetBSD$
-@comment This file is empty.
+@comment $NetBSD: PLIST,v 1.1 2000/08/30 19:04:04 jlam Exp $
+${PERL5_ARCHLIB}/DynaLoader_pic.o
