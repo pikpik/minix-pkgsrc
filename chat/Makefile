@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2001/02/08 13:33:37 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 15:51:47 wiz Exp $
 #
 
 COMMENT=	communication programs
 
 SUBDIR+=	bitchx
 SUBDIR+=	epic4
+SUBDIR+=	fugu
 SUBDIR+=	gaim
 SUBDIR+=	gale
 SUBDIR+=	icb
