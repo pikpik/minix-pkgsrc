@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2002/09/11 18:38:14 jlam Exp $
+# $NetBSD: Makefile,v 1.84 2002/09/11 19:06:06 jlam Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -44,6 +44,7 @@ SUBDIR+=	ja-vflib-utils
 SUBDIR+=	ja-vfxdvik
 SUBDIR+=	lgrind
 SUBDIR+=	libgnomeprint
+SUBDIR+=	libgnomeprintui
 SUBDIR+=	lilypond
 SUBDIR+=	lyx
 SUBDIR+=	magicfilter
