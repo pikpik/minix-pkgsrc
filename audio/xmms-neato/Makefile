@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/24 22:10:46 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/11/29 13:46:10 wiz Exp $
 #
 
 DISTNAME=	neato
@@ -15,7 +15,6 @@ USE_BUILDLINK_ONLY=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
-CPPFLAGS+=	-D_POSIX_THREAD_SYSCALL_SOFT=1
 
 GNU_CONFIGURE=	YES
 
