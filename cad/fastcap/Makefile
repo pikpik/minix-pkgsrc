@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/14 17:15:05 agc Exp $
+# $NetBSD: Makefile,v 1.4 2000/03/27 08:54:53 tron Exp $
 #
 
 DISTNAME=	fastcap-2.0-15Jul92
@@ -11,7 +11,7 @@ DISTFILES=	fastcap-2.0-15Jul92.tar.Z \
 		postscript/mtt.ps.Z \
 		postscript/tcad.ps.Z
 
-MAINTAINER=	mcmahill@alum.mit.edu
+MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://kontiki.mit.edu/rle/research/info_research_proj.html
 
 DIST_SUBDIR=	fastcap

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 1999/08/28 09:43:12 rh Exp $
+# $NetBSD: Makefile,v 1.3 1999/10/24 16:42:30 tron Exp $
 #
 
 DISTNAME=	grpn-1.1.0
 CATEGORIES=	math
 MASTER_SITES=	ftp://wilkins.ne.mediaone.net/pub/
 
-MAINTAINER=	mcmahill@alum.mit.edu
+MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://wilkins.ne.mediaone.net/grpn.html
 
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
