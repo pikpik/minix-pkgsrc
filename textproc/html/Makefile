@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/12/25 14:46:06 uebayasi Exp $
+# $NetBSD: Makefile,v 1.12 2005/02/21 20:26:14 hubertf Exp $
 #
 
 DISTNAME=	html-4.01
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/distfiles/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2004/11/25 20:47:00 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/10 21:55:40 minskim Exp $
 
 DISTNAME=	db2latex-xsl-0.8pre1
 PKGNAME=	${DISTNAME:S/xsl-//}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=db2latex/}
 
