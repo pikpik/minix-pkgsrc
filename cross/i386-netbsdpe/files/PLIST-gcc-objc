@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/gcc-lib/${TARGET_ARCH}/${GCC_INTVERSION}/cc1obj
