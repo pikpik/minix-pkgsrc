@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2002/09/25 06:35:48 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2002/11/09 11:41:44 cjep Exp $
 #
 
-DISTNAME=	star-1.4.1
+DISTNAME=	star-1.4.2
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/star/
 
