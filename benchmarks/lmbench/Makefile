@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/11/08 10:13:40 abs Exp $
+# $NetBSD: Makefile,v 1.10 2000/11/16 02:32:17 wiz Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
@@ -8,6 +8,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.bitmover.com/lm/lmbench/
+COMMENT=		Complete benchmark that gives a large amount of information
 
 ALL_TARGET=		build
 USE_GMAKE=		yes

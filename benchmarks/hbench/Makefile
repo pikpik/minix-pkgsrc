@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/12/28 04:26:18 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2000/10/18 04:26:53 garbled Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.eecs.harvard.edu/pub/hbench-OS/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.eecs.harvard.edu/vino/perf/hbench/
+COMMENT=		Suite of portable benchmarks to measure the OS and the hardware
 
 DEPENDS+=		gnuplot-3.7:../../graphics/gnuplot
 
