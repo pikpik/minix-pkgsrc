@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/11/07 23:56:59 epg Exp $
+# $NetBSD: Makefile,v 1.7 2004/11/09 00:56:47 epg Exp $
 
 DISTNAME=	SVK-0.25
 PKGNAME=	${DISTNAME:S/SVK/svk/}
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=OurNet/CLKAO/}
 MAINTAINER=	epg@NetBSD.org
 HOMEPAGE=	http://svk.elixus.org/
 COMMENT=	A decentralized version control system built on Subversion
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/SVK/.packlist
