@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2003/04/10 20:10:20 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/05/01 21:47:42 jmmv Exp $
 #
 
-DISTNAME=       tripwire-1.2
+DISTNAME=	tripwire-1.2
 PKGREVISION=	1
 CATEGORIES=	security
-MASTER_SITES=   ftp://coast.cs.purdue.edu/pub/tools/unix/ids/tripwire/
+MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/ids/tripwire/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
