@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/02/11 01:46:30 abs Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/31 16:47:47 minskim Exp $
 #
 
 DISTNAME=	mp3info-0.2.16
 CATEGORIES=	audio
-MASTER_SITES=	ftp://bimbo.hive.no/pub/mp3info/
+MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/sound/editors/}
 
 MAINTAINER=	simonb@NetBSD.org
 COMMENT=	MP3 header and tag information tool
