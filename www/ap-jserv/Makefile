@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/02/17 17:21:49 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/03/27 03:20:22 hubertf Exp $
 
 DISTNAME=	ApacheJServ-1.1.2
 PKGNAME=	ap-jserv-1.1.2
@@ -7,7 +7,7 @@ MASTER_SITES=	http://java.apache.org/jserv/dist/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://java.apache.org/
-COMMENT=	Servlet engine for Apache Server
+COMMENT=	older Java Servlet engine for Apache Server
 
 DEPENDS+=	apache>=1.3.9:../../www/apache
 # yes, this needs _exactly_ version 2.0
