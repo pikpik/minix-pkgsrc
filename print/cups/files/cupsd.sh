@@ -1,11 +1,11 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: cupsd.sh,v 1.15 2003/01/23 23:05:11 jlam Exp $
+# $NetBSD: cupsd.sh,v 1.16 2003/05/28 09:01:02 jlam Exp $
 #
 # Common UNIX Printing System daemon
 #
 # PROVIDE: cupsd
-# REQUIRE: DAEMON
+# REQUIRE: DAEMON slpd
 #
 # You will need to set some variables in /etc/rc.conf to start cupsd:
 #
