@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/12/03 01:27:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1998/12/26 15:59:55 garbled Exp $
 
 DISTNAME=		benchfft-2.0
 CATEGORIES=		benchmarks math
@@ -15,9 +15,9 @@ do-configure:
 	(cd ${WRKDIR}/fftw-2.0.1 && ./configure)
 
 do-build:
-	(cd ${WRKDIR}/fftw-2.0.1 && gmake)
+	(cd ${WRKDIR}/fftw-2.0.1 && ${GMAKE})
 	(cd ${WRKSRC} && ./configure)
-	(cd ${WRKSRC} && gmake)
+	(cd ${WRKSRC} && ${GMAKE})
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bench ${PREFIX}/bin/bench-fft
