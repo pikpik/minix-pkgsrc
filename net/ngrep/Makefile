@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2004/06/02 22:06:01 recht Exp $
+# $NetBSD: Makefile,v 1.17 2004/06/02 22:19:20 recht Exp $
 #
 
 DISTNAME=	ngrep-1.42
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngrep/}
 EXTRACT_SUFX=	.tar.bz2
