@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: ja_freewnn,v 1.2.2.1 2002/06/23 18:47:38 jlam Exp $
+# $NetBSD: ja_freewnn,v 1.3 2002/08/25 19:22:57 jlam Exp $
 #
 # PROVIDE: freewnn
 # REQUIRE: DAEMON
