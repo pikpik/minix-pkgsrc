@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Fri May 31 09:01:49 2002
++++ Makefile.in
+@@ -66,7 +66,7 @@ LIBBASE=libXft.so
+ LIBFILE=$(LIBBASE).@PACKAGE_MAJOR@.@PACKAGE_MINOR@
+ LIBMAJOR=$(LIBBASE).@PACKAGE_MAJOR@
+ 
+-LIBS=@LIBS@
++LIBS=@LIBS@ @LDFLAGS@
+ 
+ SRCS=xftcolor.c \
+      xftcore.c \

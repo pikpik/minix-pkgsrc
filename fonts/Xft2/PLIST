@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xft-config
+lib/libXft.so.2.0
+lib/libXft.so.2
+lib/pkgconfig/xft.pc
