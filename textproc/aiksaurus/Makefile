@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/14 18:26:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/07 02:30:26 minskim Exp $
 #
 
 DISTNAME=	aiksaurus-1.0.1
@@ -13,6 +13,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
+USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=		--without-gtk
 PKGCONFIG_OVERRIDE=	base/aiksaurus-1.0.pc.in
