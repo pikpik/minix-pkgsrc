@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2000/10/29 22:56:31 frueauf Exp $
+# $NetBSD: Makefile,v 1.12 2000/11/15 17:21:49 tron Exp $
 
-DISTNAME=	fetchmail-5.5.6
+DISTNAME=	fetchmail-5.6.0
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/ \
