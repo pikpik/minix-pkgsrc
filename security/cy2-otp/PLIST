@@ -1,0 +1,5 @@
+@comment $NetBSD: PLIST,v 1.7 2004/08/08 04:04:53 taca Exp $
+lib/sasl2/libotp.la
+lib/sasl2/libotp.so
+lib/sasl2/libotp.so.2
+lib/sasl2/libotp.so.2.19
