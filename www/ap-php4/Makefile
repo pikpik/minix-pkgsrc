@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.17 2001/10/19 09:55:31 veego Exp $
+# $NetBSD: Makefile,v 1.18 2001/12/03 08:31:04 jlam Exp $
 
-.include "../php4/Makefile.php"
+.include "../../www/php4/Makefile.php"
 
 PKGNAME=		ap-php-${PHP_BASE_VERS}
 PKGREVISION=		# empty
 COMMENT=		Apache module for PHP4
 
-DEPENDS+=		php>=${PHP_BASE_VERS}:../php4
+DEPENDS+=		php>=${PHP_BASE_VERS}:../../www/php4
 DEPENDS+=		apache{,6}>=1.3:../../www/apache
 
 # For "apxs":
