@@ -1,7 +1,16 @@
 $NetBSD$
 
 --- configure.orig	Mon Mar 20 18:20:42 2000
-+++ configure
++++ configure	Thu May  3 14:15:41 2001
+@@ -486,7 +486,7 @@
+ 
+ checkCompiler()
+ {
+-    compiler=$1
++    compiler="$*"
+     if isGNU $compiler; then
+ 	ISGCC=yes
+     else
 @@ -512,7 +512,7 @@
      $RM dummy dummy.o
      capture $compiler -o dummy ${C_ANSI} dummy.c && {
