@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/05/05 19:05:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/19 08:54:30 wiz Exp $
 #
 
 DISTNAME=		nethack_source_331_jtp_193
 PKGNAME=		falcons-eye-1.9.3
-PKGREVISION=		1
+PKGREVISION=		2
 WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=falconseye/}

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:38:14 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:49:42 martti Exp $
 #
 
 DISTNAME=		crimson-0.3.4
 PKGNAME=		${DISTNAME:S/crimson/crimsonfields/}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games
 MASTER_SITES=		http://www.lanipage.de/jens/crimson/
 EXTRACT_SUFX=		.tar.bz2
