@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.7 2003/01/29 11:13:30 jlam Exp $
+# $NetBSD: Makefile.common,v 1.8 2003/02/05 03:37:45 jlam Exp $
 
 CATEGORIES=	lang
 EXTRACT_SUFX=	.bin
@@ -43,7 +43,7 @@ do-build:	# nothing
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${PREFIX}
-	cd ${WRKSRC} && ${PAX} -rw . ${PREFIX}
+	cd ${WRKSRC} && ${PAX} -rwp ma . ${PREFIX}
 
 .if ${OPSYS} != "NetBSD"
 .  include "../../mk/bsd.pkg.mk"
