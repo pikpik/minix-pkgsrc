@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/05/31 15:32:44 itojun Exp $
+# $NetBSD: Makefile,v 1.13 2000/06/15 04:56:50 itojun Exp $
 #
 
 DISTNAME=		openssh-2.1.1p1
@@ -66,6 +66,11 @@ post-install:
 		${ECHO} "Generating a secret host key..."; \
 		${PREFIX}/bin/ssh-keygen \
 			-f ${SSH_CONF_DIR}/ssh_host_key -N ""; \
+	fi
+	if [ ! -f ${SSH_CONF_DIR}/ssh_host_dsa_key ]; then \
+		${ECHO} "Generating a DSA secret host key..."; \
+		${PREFIX}/bin/ssh-keygen \
+			-d -f ${SSH_CONF_DIR}/ssh_host_dsa_key -N ""; \
 	fi
 	${INSTALL_SCRIPT} ${WRKDIR}/sshd.sh ${PREFIX}/etc/rc.d/sshd.sh
 
