@@ -17,6 +17,8 @@ ${PYSITELIB}/dns/message.py
 ${PYSITELIB}/dns/message.pyc
 ${PYSITELIB}/dns/name.py
 ${PYSITELIB}/dns/name.pyc
+${PYSITELIB}/dns/namedict.py
+${PYSITELIB}/dns/namedict.pyc
 ${PYSITELIB}/dns/node.py
 ${PYSITELIB}/dns/node.pyc
 ${PYSITELIB}/dns/opcode.py
@@ -103,10 +105,16 @@ ${PYSITELIB}/dns/rdtypes/mxbase.py
 ${PYSITELIB}/dns/rdtypes/mxbase.pyc
 ${PYSITELIB}/dns/rdtypes/nsbase.py
 ${PYSITELIB}/dns/rdtypes/nsbase.pyc
+${PYSITELIB}/dns/renderer.py
+${PYSITELIB}/dns/renderer.pyc
 ${PYSITELIB}/dns/resolver.py
 ${PYSITELIB}/dns/resolver.pyc
+${PYSITELIB}/dns/rrset.py
+${PYSITELIB}/dns/rrset.pyc
 ${PYSITELIB}/dns/tokenizer.py
 ${PYSITELIB}/dns/tokenizer.pyc
+${PYSITELIB}/dns/set.py
+${PYSITELIB}/dns/set.pyc
 ${PYSITELIB}/dns/tsig.py
 ${PYSITELIB}/dns/tsig.pyc
 ${PYSITELIB}/dns/tsigkeyring.py
