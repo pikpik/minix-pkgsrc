@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2002/02/15 01:11:41 hubertf Exp $
+# $NetBSD: Makefile,v 1.125 2002/02/23 07:49:59 rxg Exp $
 #
 
 COMMENT=	Audio tools
@@ -104,6 +104,7 @@ SUBDIR+=	nas
 SUBDIR+=	normalize
 SUBDIR+=	nspmod
 SUBDIR+=	p5-Audio-CD-disc-cover
+SUBDIR+=	p5-MP3-Info
 SUBDIR+=	p5-MP3-Tag
 SUBDIR+=	py-cddb
 SUBDIR+=	realplayer
