@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/gtkhtml.c.orig	Mon Jul 30 22:49:12 2001
++++ src/gtkhtml.c
+@@ -63,6 +63,8 @@
+ #include "math.h"
+ #include <libgnome/gnome-util.h>
+ 
++int allow_severity, deny_severity;
++
+ 
+ static GtkLayoutClass *parent_class = NULL;
+ 
