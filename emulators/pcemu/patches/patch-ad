@@ -1,4 +1,4 @@
-# $NetBSD$
+$NetBSD: patch-ad,v 1.1.1.1 1999/03/31 06:34:07 garbled Exp $
 *** main.c.orig	Wed Jun 22 16:24:50 1994
 --- main.c	Tue Jan 24 18:37:18 1995
 ***************

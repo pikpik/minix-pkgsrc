@@ -1,4 +1,4 @@
-# $NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 1999/03/31 06:34:07 garbled Exp $
 *** cpu.c.orig	Wed Jun 22 16:24:50 1994
 --- cpu.c	Tue Jan 24 18:37:17 1995
 ***************

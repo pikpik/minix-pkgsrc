@@ -1,4 +1,4 @@
-# $NetBSD$
+$NetBSD: patch-ae,v 1.1.1.1 1999/03/31 06:34:07 garbled Exp $
 *** programs/config.sys.orig	Mon Mar 27 21:27:23 1995
 --- programs/config.sys	Mon Mar 27 22:19:26 1995
 ***************
