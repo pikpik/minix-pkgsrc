@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/03 18:49:41 reed Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/05 22:44:04 jlam Exp $
 #
 
 DISTNAME=		SDL_image-1.2.3
@@ -26,6 +26,14 @@ INSTALLATION_DIRS=	bin
 post-install:
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} ${WRKSRC}/showimage \
 		${PREFIX}/bin
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "FreeBSD"
+PLIST_SUBST+=		AVAILABLE="@comment "
+.else
+PLIST_SUBST+=		AVAILABLE=
+.endif
 
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
