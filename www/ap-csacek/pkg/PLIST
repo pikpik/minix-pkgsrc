@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_csacek.so
+share/csacek/whichcode_template.html
+@dirrm share/csacek
