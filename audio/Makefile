@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.230 2004/05/02 04:01:26 grant Exp $
+# $NetBSD: Makefile,v 1.231 2004/05/02 04:30:35 grant Exp $
 #
 
 COMMENT=	Audio tools
@@ -143,6 +143,7 @@ SUBDIR+=	mserv
 SUBDIR+=	mserv-devel
 SUBDIR+=	mserv_irman
 SUBDIR+=	mstream
+SUBDIR+=	muse
 SUBDIR+=	musicbox
 SUBDIR+=	musicbrainz
 SUBDIR+=	musicpd
