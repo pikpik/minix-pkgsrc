@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:33:31 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/11/08 08:59:45 xtraeme Exp $
 #
 
 DISTNAME=	python-mode-4.6
@@ -19,7 +19,7 @@ EMACS_VERSIONS_ACCEPTED= emacs21 emacs21nox emacs20
 .include "../../mk/emacs.mk"
 
 do-extract:
-	${CP} ${DISTDIR}/python-mode.el ${WRKDIR}; done
+	${CP} ${DISTDIR}/python-mode.el ${WRKDIR}
 
 do-build:
 	${EMACS_BIN} --no-init-file -batch 		\
