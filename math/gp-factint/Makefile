@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:47:36 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:20:04 agc Exp $
 #
 
 DISTNAME=	factint-1.3
@@ -14,7 +14,7 @@ COMMENT=	Integer factorization routines for GAP
 
 WRKSRC=		${WRKDIR}/factint
 NO_BUILD=	YES
-USE_BUILDLINK2=	YES
+NO_BUILDLINK=	YES
 GAP_PKG_NAME=	factint
 
 do-install:
