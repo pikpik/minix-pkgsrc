@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: snmptrapd.sh,v 1.1 2001/08/30 23:31:30 wrstuden Exp $
 
 # PID file:
 PF=/var/run/snmptrapd.pid
