@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/povfront
 bin/giram
 Giram/plug-ins/Rotate
