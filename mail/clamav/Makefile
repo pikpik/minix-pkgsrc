@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/07/27 11:49:11 simonb Exp $
+# $NetBSD: Makefile,v 1.21 2004/08/01 04:35:33 jlam Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -57,9 +57,9 @@ INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} CFGINST=${EGDIR} DBINST=${EGDIR}
 
 # Global and legacy options
 .if defined(USE_MILTER)
-.  if !defined(PKG_OPTIONS.milter)
+.  if !defined(PKG_OPTIONS.clamav)
 .    if defined(USE_MILTER) && !empty(USE_MILTER:M[yY][eE][sS])
-PKG_OPTIONS.milter+=	milter
+PKG_OPTIONS.clamav+=	milter
 .    endif
 .  endif
 .endif
