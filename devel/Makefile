@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.502 2004/06/03 11:18:20 shannonjr Exp $
+# $NetBSD: Makefile,v 1.503 2004/06/03 21:44:30 shannonjr Exp $
 #
 
 COMMENT=	Development utilities
@@ -440,6 +440,7 @@ SUBDIR+=	semi
 SUBDIR+=	sfio
 SUBDIR+=	sgi-stl
 SUBDIR+=	sgi-stl-docs
+SUBDIR+=	silc-toolkit
 SUBDIR+=	slib
 SUBDIR+=	sml-mode
 SUBDIR+=	smpeg
