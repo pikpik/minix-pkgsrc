@@ -1,23 +1,21 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:14:48 tv Exp $
-#
+# $NetBSD: Makefile,v 1.17 2004/12/28 23:18:20 reed Exp $
 
-DISTNAME=		SDL_image-1.2.3
-PKGREVISION=		3
-CATEGORIES=		graphics devel
-MASTER_SITES=		http://www.libsdl.org/projects/SDL_image/release/
+DISTNAME=	SDL_image-1.2.4
+CATEGORIES=	graphics devel
+MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 
-MAINTAINER=		ben@NetBSD.org
-HOMEPAGE=		http://www.libsdl.org/projects/SDL_image/
-COMMENT=		Load images as SDL surfaces
+MAINTAINER=	ben@NetBSD.org
+HOMEPAGE=	http://www.libsdl.org/projects/SDL_image/
+COMMENT=	Load images as SDL surfaces
 
 CONFLICTS=		SDL-image-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
+USE_LIBTOOL=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
-USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--enable-tif
 
