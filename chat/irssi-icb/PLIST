@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/irssi/modules/libfe_icb.la
+lib/irssi/modules/libfe_icb.so
+lib/irssi/modules/libicb_core.la
+lib/irssi/modules/libicb_core.so
+share/doc/irssi/README.icb
