@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/21 12:13:17 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/24 15:46:43 grant Exp $
 
 DISTNAME=	compface-1.4
 CATEGORIES=	graphics
@@ -10,7 +10,7 @@ COMMENT=	48x48x1 image compression and decompression (X-face utility)
 
 CONFLICTS=	faces-[0-9]*
 
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		# defined
 GNU_CONFIGURE=		# defined
 USE_GNU_TOOLS+=		make
 
