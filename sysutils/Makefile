@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2001/03/13 19:54:06 zuntum Exp $
+# $NetBSD: Makefile,v 1.92 2001/03/14 10:39:23 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -34,6 +34,7 @@ SUBDIR+=	gnome-vfs
 SUBDIR+=	gpart
 SUBDIR+=	gtop
 SUBDIR+=	hfsutils
+SUBDIR+=	i2ocfg
 SUBDIR+=	kapm
 SUBDIR+=	kdf
 SUBDIR+=	klavg
