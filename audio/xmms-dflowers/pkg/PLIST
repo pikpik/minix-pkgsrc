@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libdflowers.so
+lib/xmms/Visualization/libdflowers.la
+lib/xmms/Visualization/libdflowers.a
