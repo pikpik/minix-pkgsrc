@@ -7,6 +7,15 @@ $NetBSD$
  
  CC = gcc
  
+@@ -12,7 +11,7 @@ CFLAGS = -g -O2 -Wall \
+ #LIBS = `gtk-config --libs` \
+ #	-L$(LIBMNG_PREFIX)/lib -lmng -ljpeg -lz
+ LIBS = `gdk-pixbuf-config --libs` \
+-	-L$(LIBMNG_PREFIX)/lib -lmng -ljpeg -llcms -lz
++	-L$(LIBMNG_PREFIX)/lib -lmng -ljpeg -llcms -lz -lm
+ 
+ OBJ = dummy.o \
+       gtk-mng-view.o
 @@ -29,7 +28,7 @@ $(EXE_BASENAME): $(OBJ)
  $(EXE_BASENAME)-static: $(OBJ)
  	$(CC) -static -o $(EXE_BASENAME)-static $(OBJ) $(LIBS)
