@@ -16,7 +16,17 @@ $NetBSD$
  #ifdef __FreeBSD__
  #include <stdio.h>
  #include <machine/soundcard.h>
-@@ -320,13 +327,21 @@
+@@ -76,6 +83,9 @@
+ #ifdef LINUX_SECOND_DEVICE
+   "Linux 2nd dsp device", 'D',
+   "/dev/dsp1",
++#elif defined(__NetBSD__)
++  "NetBSD audio device", 'd',
++  "/dev/audio",
+ #else
+   "Linux dsp device", 'd',
+   "/dev/dsp",
+@@ -320,13 +330,21 @@
  static void flush_output(void)
  {
    output_data(0, 0);
