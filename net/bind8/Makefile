@@ -1,5 +1,5 @@
 #
-# $NetBSD: Makefile,v 1.20 2003/05/07 09:51:20 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/31 23:58:48 seb Exp $
 #
 # FreeBSD Id: Makefile,v 1.12 1999/06/28 21:25:07 billf Exp
 #
@@ -41,7 +41,7 @@ post-extract:
 		${RM} -f *.lst* *~ *.BAK *.CKP *.orig
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bind8
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/html/bind8
 	cd ${WRKDIR}/doc/html && 					\
 		${PAX} -rw * ${PREFIX}/share/doc/html/bind8
 
