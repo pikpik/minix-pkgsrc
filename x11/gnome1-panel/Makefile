@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:38:27 martti Exp $
+# $NetBSD: Makefile,v 1.6 2003/11/12 01:31:52 salo Exp $
 #
 
 .include "../../x11/gnome-core/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-core/-panel/}
-PKGREVISION=		3
+PKGREVISION=		4
 
 COMMENT=		Gnome-panel component split out from gnome-core
 
 DEPENDS+=		gnome1-dirs>=1.0:../../misc/gnome1-dirs
 DEPENDS+=		gnome-session>=1.4.2:../../x11/gnome1-session
-DEPENDS+=		xscreensaver-gnome>=3.25nb1:../xscreensaver-gnome
+DEPENDS+=		xscreensaver-gnome>=4.14:../xscreensaver-gnome
 BUILD_DEPENDS+=		gtk-doc>=0.9:../../textproc/gtk-doc
 
 CONFLICTS+=		gnome-core<1.4.2nb4
