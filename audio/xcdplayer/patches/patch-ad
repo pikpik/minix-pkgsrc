@@ -1,7 +1,7 @@
-$NetBSD
+$NetBSD$
 
 --- button_setup.c.orig	Tue Jan 12 19:59:47 1993
-+++ button_setup.c	Mon Sep  6 18:22:06 1999
++++ button_setup.c	Mon Sep  6 18:37:05 1999
 @@ -20,6 +20,9 @@
  # include <X11/Xaw/Toggle.h>
  

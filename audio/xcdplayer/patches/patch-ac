@@ -1,7 +1,7 @@
-$NetBSD
+$NetBSD$
 
---- app.h.orig	Mon Sep  6 18:22:07 1999
-+++ app.h	Mon Sep  6 18:22:07 1999
+--- app.h.orig	Mon Sep  6 18:37:04 1999
++++ app.h	Mon Sep  6 18:37:04 1999
 @@ -0,0 +1,29 @@
 +/*
 + * Copyright (C) 1990 Regents of the University of California.

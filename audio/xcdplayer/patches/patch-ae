@@ -1,7 +1,7 @@
-$NetBSD
+$NetBSD$
 
 --- cdrom_callb.c.orig	Tue Jan 12 19:59:48 1993
-+++ cdrom_callb.c	Mon Sep  6 18:22:06 1999
++++ cdrom_callb.c	Mon Sep  6 18:37:05 1999
 @@ -22,6 +22,9 @@
  
  # include "debug.h"
