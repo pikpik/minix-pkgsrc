@@ -18,7 +18,7 @@
 #    SUBDIR += gcl
 #    SUBDIR += gnat
     SUBDIR += guavac
-#    SUBDIR += guile-iii
+    SUBDIR += guile
     SUBDIR += hugs
     SUBDIR += icon
 #    SUBDIR += idl4
