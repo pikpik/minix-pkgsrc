@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/09/02 21:56:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/03 00:18:22 tv Exp $
 #
 
 DISTNAME=	fluxbox-0.9.10
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=	--enable-kde
 FLUXBOX_USE_GNOME?=	NO
 .if !empty(FLUXBOX_USE_GNOME:M[Yy][Ee][Ss])
 CONFIGURE_ARGS+=	--enable-gnome
-.elseif
+.else
 CONFIGURE_ARGS+=	--disable-gnome
 .endif
 
@@ -39,7 +39,7 @@ FLUXBOX_USE_XFT?=	YES
 .if !empty(FLUXBOX_USE_XFT:M[Yy][Ee][Ss])
 CONFIGURE_ARGS+=	--enable-xft
 .include "../../fonts/Xft2/buildlink3.mk"
-.elseif
+.else
 CONFIGURE_ARGS+=	--disable-xft
 .endif
 
