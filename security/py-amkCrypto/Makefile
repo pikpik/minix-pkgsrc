@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/05/14 16:22:36 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/17 13:02:44 drochner Exp $
 #
 
 DISTNAME=	amkCrypto-0.1.3
@@ -11,7 +11,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.amk.ca/python/code/crypto.html
 COMMENT=	cryptographic and hash functions for Python
 
-USE_SSL=	YES
 PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 
@@ -22,5 +21,6 @@ do-configure:
 		${WRKSRC}/setup.py > ${WRKSRC}/setup.py.tmp
 	${MV} -f ${WRKSRC}/setup.py.tmp ${WRKSRC}/setup.py
 
+.include "../../security/openssl/buildlink.mk"
 .include "../../lang/python/extension.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
