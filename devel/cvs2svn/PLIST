@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/cvs2svn
+${PYSITELIB}/rcsparse/__init__.py
+${PYSITELIB}/rcsparse/common.py
+${PYSITELIB}/rcsparse/compat.py
+${PYSITELIB}/rcsparse/debug.py
+${PYSITELIB}/rcsparse/default.py
+${PYSITELIB}/rcsparse/texttools.py
+share/doc/cvs2svn/README
+@dirrm share/doc/cvs2svn
+@dirrm ${PYSITELIB}/rcsparse
