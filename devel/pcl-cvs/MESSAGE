@@ -1,0 +1,7 @@
+$NetBSD$
+
+To automatically load pcl-cvs when starting emacs, add the following 
+(or similar) to your .emacs.el file.
+
+(add-to-list 'load-path "${PREFIX}/${LISPDIR}")
+(load "pcl-cvs-startup")
