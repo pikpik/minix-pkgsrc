@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 22:56:48 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/08/30 22:24:31 jmmv Exp $
 
 DISTNAME=		wdm-1.25
 CATEGORIES=		x11 windowmaker
@@ -61,5 +61,4 @@ pre-install:
 .include "../../graphics/tiff/buildlink2.mk"
 .include "../../wm/windowmaker/buildlink2.mk"
 
-.include "../../mk/subst.mk"
 .include "../../mk/bsd.pkg.mk"
