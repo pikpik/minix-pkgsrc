@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/10/03 00:13:08 tv Exp $
+# $NetBSD: Makefile,v 1.28 2004/12/31 20:31:19 minskim Exp $
 #
 
 DISTNAME=	mserv-0.35
@@ -12,6 +12,7 @@ COMMENT=	Local centralised music server environment
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+CONFLICTS+=             mserv-devel-[0-9]*
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/mserv
 CONFIGURE_ENV+=		MY_LIBS="-lvorbisfile -lvorbis"
