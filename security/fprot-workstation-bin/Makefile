@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/11/16 14:52:57 ben Exp $
+# $NetBSD: Makefile,v 1.15 2004/11/23 00:33:47 ben Exp $
 #
 
 DISTNAME=		#defined
-PKGNAME=		fprot-workstation-bin-4.4.8
+PKGNAME=		fprot-workstation-bin-4.5.3
 CATEGORIES=		security
 
 MAINTAINER=		ben@NetBSD.org
@@ -56,7 +56,7 @@ MASTER_SITES=		ftp://ftp.f-prot.com/pub/solaris/
 DISTNAME=		fp-solaris-sparc-ws-${PKGVERSION}
 .endif
 
-DIST_SUBDIR=		${DISTNAME}-20041116
+DIST_SUBDIR=		${DISTNAME}
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	"Configuring default paths."
