@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2003/03/28 21:14:35 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/03/29 12:42:27 jmmv Exp $
 
-DISTNAME=	etcupdate-20030204
+DISTNAME=	etcupdate-20030305
 WRKSRC=		${WRKDIR}
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
