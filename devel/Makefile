@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 1999/09/03 06:27:51 sakamoto Exp $
+# $NetBSD: Makefile,v 1.74 1999/09/03 17:22:28 kim Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -54,6 +54,7 @@
     SUBDIR += libproplist
     SUBDIR += libscsi
     SUBDIR += libslang
+    SUBDIR += libsmi
     SUBDIR += libtool
 #    SUBDIR += linux_devel
 #    SUBDIR += linuxgdb
