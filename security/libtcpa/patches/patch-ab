@@ -5,7 +5,8 @@ $NetBSD$
 @@ -1,10 +1,8 @@
 -AR = ar 
 -RM = rm 
- CC = gcc -g -Wall -I. 
+-CC = gcc -g -Wall -I. 
++CC = gcc -g -Wall -I. ${CFLAGS}
  OBJS = tcpa.o transmit.o owner.o oiaposap.o hmac.o buildbuff.o keys.o seal.o \
         pcrs.o signature.o
  
