@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2003/01/20 10:03:40 skrll Exp $
+@comment $NetBSD$
 bin/artsc-config
 bin/artscat
 bin/artsd
@@ -134,6 +134,10 @@ lib/libmcop.la
 lib/libmcop.so
 lib/libmcop.so.1
 lib/libmcop.so.1.0
+lib/libmcop_mt.la
+lib/libmcop_mt.so
+lib/libmcop_mt.so.1
+lib/libmcop_mt.so.1.0
 lib/libqtmcop.la
 lib/libqtmcop.so
 lib/libqtmcop.so.1

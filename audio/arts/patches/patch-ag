@@ -1,4 +1,4 @@
-$NetBSD: patch-ag,v 1.1 2002/10/03 10:22:35 jlam Exp $
+$NetBSD: patch-ag,v 1.2 2003/03/11 13:33:46 markd Exp $
 
 --- configure.orig	Sat Jan  4 06:07:20 2003
 +++ configure
@@ -11,12 +11,3 @@ $NetBSD: patch-ag,v 1.1 2002/10/03 10:22:35 jlam Exp $
  fi
  
  
-@@ -31509,7 +31509,7 @@
- 
- 
- 
--DO_NOT_COMPILE="$DO_NOT_COMPILE CVS debian bsd-port admin"
-+DO_NOT_COMPILE="$DO_NOT_COMPILE CVS debian bsd-port admin mcop_mt"
- 
- if test ! -s $srcdir/subdirs; then
-     TOPSUBDIRS=""
