@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/10 12:38:26 wulf Exp $
 #
 
-DISTNAME=       bluefish-0.4pre11
+DISTNAME=       bluefish-0.4
 CATEGORIES=     www
 MASTER_SITES=   http://bluefish.openoffice.nl/download/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=     wulf@ping.net.au
 HOMEPAGE=       http://bluefish.openoffice.nl/
@@ -19,6 +20,7 @@ USE_GMAKE=      yes
 GNU_CONFIGURE=  yes
 
 CFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ENV=  CPPFLAGS="${CFLAGS}"
+LDFLAGS+=	-lz -lm -ljpeg -lungif -ltiff -lpng
+CONFIGURE_ENV+=  CPPFLAGS="${CFLAGS}"
 
 .include "../../mk/bsd.pkg.mk"
