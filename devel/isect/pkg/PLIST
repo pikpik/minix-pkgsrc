@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/09/15 18:56:21 jlam Exp $
 bin/isdcfgck
 bin/isdclient
 bin/isdeat
@@ -12,8 +12,10 @@ include/tabfuncs.h
 info/isect.info
 @exec	install-info %D/info/isect.info %D/info/dir
 lib/libisdio.a
+lib/libisdio.la
 lib/libisdio.so.0.0
 lib/libisect.a
+lib/libisect.la
 lib/libisect.so.0.0
 sbin/isdexecd
 sbin/isectd
