@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/06/29 14:53:34 zuntum Exp $
+# $NetBSD: Makefile,v 1.13 2002/10/09 18:38:11 wiz Exp $
 #
 
 DISTNAME=		cqcam-0.45a
@@ -15,6 +15,7 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-alpha
 LICENSE=		no-profit
 
 USE_BUILDLINK2=		YES
+USE_X11BASE=		YES
 
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../x11/tk/buildlink2.mk"
