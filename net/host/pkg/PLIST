@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/host
+bin/mxlookup
+bin/rblookup
+man/man1/host.1
