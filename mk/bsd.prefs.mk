@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: bsd.prefs.mk,v 1.1 1998/06/03 11:15:29 agc Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -17,3 +17,9 @@ OPSYS!= /usr/bin/uname -s
 .include "/etc/mk.conf"
 .endif
 
+.if defined(PREFIX)
+.BEGIN:
+	@${ECHO_MSG} "You can NOT set PREFIX manually or in mk.conf.  Set LOCALBASE or X11BASE"
+	@${ECHO_MSG} "depending on your needs.  See the pkg system documentation for more info."
+	@${FALSE}
+.endif
