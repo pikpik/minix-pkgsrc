@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 13:06:19 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/02/17 17:51:33 wiz Exp $
 #
 
 DISTNAME=	url2pkg-1.15
@@ -14,7 +14,7 @@ NO_WRKSUBDIR=	yes
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
 NO_PATCH=	yes
-EXTRACT_CMD=	${ECHO_CMD}
+EXTRACT_CMD=	${ECHO}
 
 do-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/${DISTNAME:C/-.*$//} ${LOCALBASE}/bin/${DISTNAME:C/-.*$//}
