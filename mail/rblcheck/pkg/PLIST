@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/rblcheck
 share/doc/rblcheck/BUGS
 share/doc/rblcheck/CHANGES
