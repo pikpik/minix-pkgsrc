@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.34 2004/07/28 02:47:35 minskim Exp $
+# $NetBSD: Makefile,v 1.35 2004/07/31 03:48:30 xtraeme Exp $
 #
 
 DISTNAME=	unrarsrc-3.3.6
 PKGNAME=	${DISTNAME:S/src//}
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.rarlab.com/rar/
+MASTER_SITES=	http://www.rarlab.com/rar/ \
+		ftp://ftp.rarlab.com/rar/
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.rarlab.com/
