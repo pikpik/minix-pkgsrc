@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/02/11 10:55:49 recht Exp $
+# $NetBSD: Makefile,v 1.11 2004/02/14 17:21:44 jlam Exp $
 
 DISTNAME=	clamav-0.66
 CATEGORIES=	mail
@@ -45,6 +45,7 @@ post-install:
 
 .include "../../archivers/bzip2/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
+.include "../../devel/gmp/buildlink2.mk"
 
 .include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
