@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/10/15 12:06:42 rh Exp $
+# $NetBSD: Makefile,v 1.16 2000/11/02 01:53:57 itojun Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.14
@@ -17,6 +17,7 @@ DEPENDS+=	tiff-*:../../graphics/tiff
 USE_X11=	yes
 USE_MESA=	yes
 GNU_CONFIGURE=	yes
+USE_LIBINTL=	yes
 
 EVAL_PREFIX+=	GTKDIR=gtk+
 CONFIGURE_ARGS+= --with-gtk-prefix="${GTKDIR}"
