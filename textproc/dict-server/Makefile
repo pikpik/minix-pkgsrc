@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/03/28 21:43:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/04 23:46:36 snj Exp $
 
 DISTNAME=       dictd-1.8.0
 PKGNAME=	dict-server-1.8.0
@@ -41,5 +41,5 @@ post-install:
 		${WRKSRC}/dictd.conf >${EGDIR}/dictd.conf
 	${INSTALL_DATA_DIR} ${PREFIX}/share/dictd
 
-.include "../../devel/libtool/buildlink3.mk"
+.include "../../devel/libltdl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
