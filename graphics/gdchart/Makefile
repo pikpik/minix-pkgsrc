@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/10/07 20:12:00 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/01/17 13:49:07 jmmv Exp $
 #
 
 DISTNAME=	gdchart0.10.1dev
 PKGNAME=	gdchart-0.10.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.fred.net/brv/chart/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
@@ -41,5 +41,4 @@ do-install:
 		${PREFIX}/share/examples/gdchart
 
 .include "../../graphics/gd/buildlink2.mk"
-.include "../../graphics/jpeg/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
