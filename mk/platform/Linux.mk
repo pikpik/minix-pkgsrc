@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.7 2005/01/25 18:15:58 tv Exp $
+# $NetBSD: Linux.mk,v 1.8 2005/01/28 21:05:59 jlam Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -67,7 +67,11 @@ HEAD?=		/bin/head
 HEAD?=		/usr/bin/head
 .endif
 HOSTNAME_CMD?=	/bin/hostname
+.if exists(/bin/id)
+ID?=		/bin/id
+.else
 ID?=		/usr/bin/id
+.endif
 IMAKE?=		${X11BASE}/bin/imake ${IMAKEOPTS}
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
 LDCONFIG?=	/sbin/ldconfig
