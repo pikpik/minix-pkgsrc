@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.gnu.org/software/ed/ed.html
 COMMENT=		GNU version of line-oriented text editor
 
 GNU_CONFIGURE=		YES
+NO_CONFIGURE_INFODIR=	YES
 MAKE_ENV+=		INFO_DIR=${INFO_DIR}
 
 .include "../../mk/bsd.prefs.mk"
