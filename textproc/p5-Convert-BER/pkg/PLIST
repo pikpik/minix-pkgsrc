@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/perl5/site_perl/Convert/BER.pod
+lib/perl5/site_perl/Convert/BER.pm
+lib/perl5/man/man3/Convert::BER.3
+lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Convert/BER/.packlist
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Convert/BER
+@dirrm lib/perl5/site_perl/${MACHINE_ARCH}-${LOWER_OPSYS}/auto/Convert
+@dirrm lib/perl5/site_perl/Convert
