@@ -1,7 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/13 19:33:41 jschauma Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/01/11 21:02:20 tv Exp $
 bin/tor
+bin/tor-resolve
 bin/torify
 man/man1/tor.1
+man/man1/tor-resolve.1
 man/man1/torify.1
 share/examples/tor/tor-tsocks.conf
 share/examples/tor/torrc.sample
