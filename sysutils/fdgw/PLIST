@@ -1,0 +1,5 @@
+@comment $NetBSD$
+fdgw/i386/natbox.img
+fdgw/i386/adslrouter.img
+@dirrm fdgw/i386
+@dirrm fdgw
