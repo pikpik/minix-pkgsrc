@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/12 20:41:05 sakamoto Exp $
+$NetBSD$
 
-MD5 (chtfont.tar.gz) = 217527b540ac0d5bda2160df22a26352
+SHA1 (chtfont.tar.gz) = d1cd35ca07675d843151e159f899407ae53d639e
+Size (chtfont.tar.gz) = 11641895 bytes

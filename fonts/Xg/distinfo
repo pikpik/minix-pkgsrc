@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:27:33 agc Exp $
+$NetBSD$
 
-MD5 (libXg.utf.fonts.tar.gz) = fb964c78dbda974ac52fca53a878a812
+SHA1 (libXg.utf.fonts.tar.gz) = 9c2088486cd8644a3771cc97e818a8ac43ce6f22
+Size (libXg.utf.fonts.tar.gz) = 1147674 bytes
 SHA1 (patch-aa) = 70c7a74c9c5078657f92d9d639eb589ce46546a5

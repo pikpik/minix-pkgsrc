@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/01 16:19:40 hubertf Exp $
+$NetBSD$
 
-MD5 (fontkit-nobdf.tar.gz) = 6036cedc6e51012ee5143ac2e3eb957c
+SHA1 (fontkit-nobdf.tar.gz) = b61c5b0cecb5ae6f77741d358dace1f58c37d570
+Size (fontkit-nobdf.tar.gz) = 629152 bytes
 SHA1 (patch-aa) = 8ceafe8ddf66603464ac02e0f83ad64c678134a0

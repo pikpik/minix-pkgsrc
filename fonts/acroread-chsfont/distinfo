@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/12 20:40:18 sakamoto Exp $
+$NetBSD$
 
-MD5 (chsfont.tar.gz) = c9eb945a62b490f45c68f639d0c91d17
+SHA1 (chsfont.tar.gz) = a04f7d19d55fb67e305b15df1ca331531b28f05b
+Size (chsfont.tar.gz) = 10234682 bytes

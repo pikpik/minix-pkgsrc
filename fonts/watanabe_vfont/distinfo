@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/12 18:39:35 sakamoto Exp $
+$NetBSD$
 
-MD5 (watanabe-vf.tar.gz) = 2c89986bf284c722d0510663bbd4cd32
+SHA1 (watanabe-vf.tar.gz) = 2b72ce6f9454afbbd5b158d9ed0d717edccaefc1
+Size (watanabe-vf.tar.gz) = 1593813 bytes
