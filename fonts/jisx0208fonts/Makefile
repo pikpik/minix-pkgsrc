@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 14:46:06 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/02/25 04:17:47 hubertf Exp $
 #
 
 DISTNAME=	jisx0208fonts-20010112
@@ -90,7 +90,7 @@ post-extract:
 
 # for do-patch
 .if ${USE_KANAME} != YES
-PATCHDIR=	${.CURDIR}/NO-EXIST
+NO_PATCH=	YES
 .endif
 
 pre-install:
