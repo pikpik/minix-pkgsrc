@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/asclock
+share/doc/asclock/README.THEMES
+@dirrm share/doc/asclock
