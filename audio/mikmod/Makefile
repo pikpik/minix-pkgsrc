@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2000/01/15 18:46:23 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2000/04/02 16:32:34 pooka Exp $
 #
 
 DISTNAME=	mikmod-3.1.6-a
 PKGNAME=	mikmod-3.1.6a
 CATEGORIES=	audio
-MASTER_SITES=	http://mikmod.darkorb.net/libmikmod/
+MASTER_SITES=	http://mikmod.darkorb.net/mikmod/
 
 MAINTAINER=	mycroft@NetBSD.ORG
 HOMEPAGE=	http://mikmod.darkorb.net/
