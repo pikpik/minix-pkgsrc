@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.188 2004/08/16 17:13:54 minskim Exp $
+# $NetBSD: Makefile,v 1.189 2004/08/18 21:14:58 minskim Exp $
 #
 
 COMMENT=	Programming languages
@@ -55,7 +55,6 @@ SUBDIR+=	gforth
 SUBDIR+=	ghc
 SUBDIR+=	gpc
 SUBDIR+=	gprolog
-SUBDIR+=	guavac
 SUBDIR+=	guile
 SUBDIR+=	guile14
 SUBDIR+=	hugs
