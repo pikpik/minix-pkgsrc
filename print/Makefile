@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2003/03/15 20:15:28 kei Exp $
+# $NetBSD: Makefile,v 1.101 2003/03/23 10:12:20 jmmv Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -99,6 +99,7 @@ SUBDIR+=	texfamily
 SUBDIR+=	texfamily-share
 SUBDIR+=	transfig
 SUBDIR+=	xpdf
+SUBDIR+=	xpdf-arabic
 SUBDIR+=	xpdf-chinese-simplified
 SUBDIR+=	xpdf-chinese-traditional
 SUBDIR+=	xpdf-cyrillic
