@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/10 11:33:59 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:49:50 wiz Exp $
 
 DISTNAME=	libmcrypt-2.4.7
 CATEGORIES=	security devel
@@ -9,6 +9,7 @@ HOMEPAGE=	http://mcrypt.hellug.gr/
 COMMENT=	crypto algorithms library
 
 USE_LIBTOOL=	yes
+USE_LTDL=	yes
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.pkg.mk"
