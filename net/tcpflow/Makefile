@@ -2,6 +2,7 @@
 #
 
 DISTNAME=	tcpflow-0.20
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	http://www.circlemud.org/pub/jelson/tcpflow/
 
