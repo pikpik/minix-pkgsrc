@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xmame
+lib/mame/xmamerc
+@dirrm lib/mame
+man/man6/xmame.6
