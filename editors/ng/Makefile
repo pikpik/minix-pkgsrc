@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2001/02/25 04:17:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2001/03/18 01:16:50 jun Exp $
 
 DISTNAME=	ng-1.4.3
 CATEGORIES=     editors japanese
-MASTER_SITES=   http://ha3.seikyou.ne.jp/home/amura/archives/ng/
+MASTER_SITES=   http://tt.sakura.ne.jp/~amura/archives/ng/
 
 MAINTAINER=     fk200329@fsinet.or.jp
-HOMEPAGE=	http://ha3.seikyou.ne.jp/home/amura/ng/
+HOMEPAGE=	http://tt.sakura.ne.jp/~amura/ng/
 COMMENT=	Very light Emacs-clone with japanese support
 
 .include "../../mk/bsd.prefs.mk"	# for USE_CANNA
