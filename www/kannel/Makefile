@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/30 12:46:19 rh Exp $
 #
 
 DISTNAME=	gateway-0.8
 PKGNAME=	kannel-0.8
-CATEGORIES=	FILLTHISINPLEASE
+CATEGORIES=	www net
 MASTER_SITES=	http://www.kannel.org/download/0.8/
 
 MAINTAINER=	rh@netbsd.org
