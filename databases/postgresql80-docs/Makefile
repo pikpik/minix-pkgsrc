@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/07/24 22:44:12 recht Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/06 12:32:05 jdolecek Exp $
 
 PKGNAME=		postgresql80-docs-${BASE_VERS}
 COMMENT=		PostgreSQL database system documentation
 
-.include "../../wip/postgresql80/Makefile.common"
+.include "../../databases/postgresql80/Makefile.common"
 
 NO_BUILD=	yes
 NO_BUILDLINK=	yes

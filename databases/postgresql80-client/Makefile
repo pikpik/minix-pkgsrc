@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2004/10/10 07:30:23 jdolecek Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/06 12:32:05 jdolecek Exp $
 
 PKGNAME=		postgresql80-client-${BASE_VERS}
 PKGREVISION=		# empty
 COMMENT=		PostgreSQL database client programs
 
-.include "../../wip/postgresql80/Makefile.common"
+.include "../../databases/postgresql80/Makefile.common"
 
 # XXX work around core dumps with the native libedit
 USE_GNU_READLINE=	yes
