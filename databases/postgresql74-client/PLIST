@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/19 00:03:25 recht Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/06/27 16:38:32 recht Exp $
 bin/clusterdb
 bin/createdb
 bin/createlang
@@ -9,7 +9,6 @@ bin/dropuser
 bin/initdb
 bin/initlocation
 bin/ipcclean
-bin/pg_config
 bin/pg_controldata
 bin/pg_ctl
 bin/pg_dump
