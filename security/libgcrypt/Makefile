@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/07/02 13:14:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:18:09 tv Exp $
 
 DISTNAME=	libgcrypt-1.2.0
 PKGREVISION=	2
@@ -28,6 +28,7 @@ INFO_FILES=		gcrypt.info
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../security/libgpg-error/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
