@@ -1,4 +1,4 @@
-/*	$NetBSD: sha1.h,v 1.2 1998/05/29 22:55:44 thorpej Exp $	*/
+/*	$NetBSD: sha1.h,v 1.1.1.1 2002/09/19 10:44:29 agc Exp $	*/
 
 /*
  * SHA-1 in C
@@ -8,8 +8,6 @@
 
 #ifndef _SYS_SHA1_H_
 #define	_SYS_SHA1_H_
-
-#include <sys/types.h>
 
 typedef struct {
 	u_int32_t state[5];

@@ -1,4 +1,4 @@
-/*	$NetBSD: rmd160hl.c,v 1.1.1.1 2001/03/06 11:21:05 agc Exp $	*/
+/*	$NetBSD: rmd160hl.c,v 1.1.1.1 2002/09/19 10:44:29 agc Exp $	*/
 
 /* rmd160hl.c
  * ----------------------------------------------------------------------------
@@ -11,22 +11,32 @@
  * from OpenBSD: rmd160hl.c,v 1.2 1999/08/17 09:13:12 millert Exp $
  */  
 
-#include <sys/cdefs.h>
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
+#include <digest-types.h>
+
 #ifndef lint
-__RCSID("$NetBSD: rmd160hl.c,v 1.1.1.1 2001/03/06 11:21:05 agc Exp $");
+__RCSID("$NetBSD: rmd160hl.c,v 1.1.1.1 2002/09/19 10:44:29 agc Exp $");
 #endif	/* not lint */
 
-#include <sys/types.h>
 
 /* #include "namespace.h" */
 
 #include <assert.h>
+#ifdef HAVE_ERRNO_H
 #include <errno.h>
+#endif
+#ifdef HAVE_FCNTL_H
 #include <fcntl.h>
+#endif
 #include <rmd160.h>
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef HAVE_UNISTD_H
 #include <unistd.h>
+#endif
 
 #ifndef _DIAGASSERT
 #define _DIAGASSERT(cond)	assert(cond)
