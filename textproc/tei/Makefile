@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:26:50 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/23 17:18:32 jmmv Exp $
 
 DISTNAME=	dtd
 PKGNAME=	tei-4
@@ -14,6 +14,7 @@ COMMENT=	DTD of the Text Encoding Initiative
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
+USE_BUILDLINK3=	YES
 
 DTDDIR=		${LOCALBASE}/share/xml/tei
 
