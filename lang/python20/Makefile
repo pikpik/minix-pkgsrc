@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/27 18:55:30 abs Exp $
+# $NetBSD: Makefile,v 1.16 2004/03/26 02:27:42 wiz Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -75,5 +75,6 @@ post-install:
 	${RM} ${PREFIX}/bin/python2.0
 	${INSTALL_PROGRAM} ${WRKSRC}/python ${PREFIX}/bin/python2.0
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
