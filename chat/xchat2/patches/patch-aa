@@ -1,3 +1,4 @@
+$NetBSD$
 # Fix broken Socks5 traversal in xchat <= 2.0.8
 
 http://mail.nl.linux.org/xchat-announce/2004-04/msg00000.html

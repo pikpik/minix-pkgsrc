@@ -1,3 +1,4 @@
+$NetBSD$
 --- include/private/gcconfig.h.orig	Tue Jun 17 04:01:23 2003
 +++ include/private/gcconfig.h	Fri Apr  2 23:43:18 2004
 @@ -85,7 +85,7 @@

@@ -1,3 +1,4 @@
+$NetBSD$
 --- disasm.h.orig	Sat Mar 13 00:52:10 2004
 +++ disasm.h	Sat Mar 13 00:52:18 2004
 @@ -32,7 +32,7 @@

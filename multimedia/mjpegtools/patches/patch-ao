@@ -1,3 +1,4 @@
+$NetBSD$
 --- ./yuvdenoise/Makefile.in.orig	2004-02-04 07:58:33.000000000 +0900
 +++ ./yuvdenoise/Makefile.in	2004-04-17 10:57:01.000000000 +0900
 @@ -228,7 +228,7 @@

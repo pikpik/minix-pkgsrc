@@ -1,3 +1,4 @@
+@comment $NetBSD$
 @dirrm share/libgphoto2/${PKGVERSION}/konica
 @dirrm share/libgphoto2/${PKGVERSION}
 @dirrm share/libgphoto2
