@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+To use OSS, you will need a kernel built with the LKM option enabled, e.g.
+GENERIC, GENERIC_LAPTOP.
+
+You should also initially run "soundconf" as root to detect and configure
+and system soundcard(s), and to install a permanent license for OSS.
+===========================================================================
