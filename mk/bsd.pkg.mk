@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.705 2001/04/02 20:58:01 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.706 2001/04/03 12:06:31 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -219,9 +219,9 @@ CONFIGURE_ENV+=	LIBS="${LIBS} -L${LOCALBASE}/lib -lintl"
 
 .if defined(USE_LIBTOOL)
 LIBTOOL=		${LOCALBASE}/bin/libtool
-BUILD_DEPENDS+=		libtool>=1.4.20010219nb4:../../devel/libtool
+BUILD_DEPENDS+=		libtool>=1.4.20010219nb5:../../devel/libtool
 .if defined(USE_LTDL)
-DEPENDS+=		libtool>=1.4.20010219nb4:../../devel/libtool
+DEPENDS+=		libtool>=1.4.20010219nb5:../../devel/libtool
 .endif
 CONFIGURE_ENV+=		LIBTOOL="${LIBTOOL} ${LIBTOOL_FLAGS}"
 MAKE_ENV+=		LIBTOOL="${LIBTOOL} ${LIBTOOL_FLAGS}"
