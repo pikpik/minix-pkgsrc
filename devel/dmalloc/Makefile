@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/04 21:16:36 thorpej Exp $
+# $NetBSD: Makefile,v 1.2 2002/02/18 15:14:09 seb Exp $
 
 DISTNAME=		dmalloc-4.8.2
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dmalloc/}
 EXTRACT_SUFX=		.tgz
@@ -10,6 +11,7 @@ HOMEPAGE=		http://www.dmalloc.com/
 COMMENT=		Run-time configurable debugging malloc library
 
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--enable-shlib
 
 INSTALL_TARGET=		install installinfo
 
