@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/22 05:46:50 martti Exp $
 
 DISTNAME=		Archive-Zip-0.11
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5zip
 CATEGORIES=		archivers perl5
-MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Archive}
+MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Archive/}
 
 MAINTAINER=		packages@netbsd.org
 COMMENT=		perl5 module interface to manipulate zip files
