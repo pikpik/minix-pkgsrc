@@ -1,0 +1,13 @@
+===========================================================================
+$NetBSD$
+
+You may want to add
+
+(setq load-path 
+      (cons (expand-file-name "${PREFIX}/share/emacs/site-lisp/dictionary")
+	    load-path))
+(load "dictionary-init")
+
+to your .emacs
+
+===========================================================================
