@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2001/03/05 20:21:19 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/04/04 07:08:48 simonb Exp $
 #
 
-DISTNAME=	adzap-20010227
+DISTNAME=	adzap-20010403
 CATEGORIES=	www perl5
 MASTER_SITES=	http://www.zip.com.au/~cs/adzap/
 
