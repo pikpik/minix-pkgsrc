@@ -1,8 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2001/05/03 13:40:33 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2001/05/03 14:31:00 jlam Exp $
 
 .include "../../www/php4/Makefile.common"
 
-PKGNAME=		ap-php-${PHP_BASE_VERS}nb1
+PKGNAME=		ap-php-${PHP_MODULE_VERS}
+
+PHP_PKG_VERS=		# empty
+PHP_MODULE_VERS=	${PHP_BASE_VERS}${PHP_PKG_VERS}
 
 COMMENT=		PHP4: Hypertext Preprocessor (Apache module)
 
