@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.324 2002/09/18 10:47:06 agc Exp $
+# $NetBSD: Makefile,v 1.325 2002/09/19 01:52:47 uebayasi Exp $
 #
 
 COMMENT=	Development utilities
@@ -286,6 +286,8 @@ SUBDIR+=	rcs
 SUBDIR+=	rdp
 SUBDIR+=	readline
 SUBDIR+=	rpc2
+SUBDIR+=	rt-mysql
+SUBDIR+=	rt-pgsql
 SUBDIR+=	ruby-amstd
 SUBDIR+=	ruby-bsearch
 SUBDIR+=	ruby-byaccr
