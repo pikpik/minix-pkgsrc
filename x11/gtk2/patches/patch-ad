@@ -1,6 +1,6 @@
 $NetBSD$
 
---- demos/gtk-demo/Makefile.am.orig	Tue Mar  5 16:03:51 2002
+--- demos/gtk-demo/Makefile.am.orig	Fri Mar  8 01:36:21 2002
 +++ demos/gtk-demo/Makefile.am
 @@ -41,6 +41,7 @@
  	$(top_builddir)/gtk/@gtktargetlib@

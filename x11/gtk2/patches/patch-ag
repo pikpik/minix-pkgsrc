@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gdk-pixbuf/Makefile.am.orig	Tue Mar  5 16:04:01 2002
+--- gdk-pixbuf/Makefile.am.orig	Fri Mar  8 01:36:26 2002
 +++ gdk-pixbuf/Makefile.am
 @@ -227,7 +227,7 @@
  @STRIP_END@

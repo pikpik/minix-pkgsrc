@@ -1,12 +1,15 @@
 $NetBSD$
 
---- demos/Makefile.in.orig	Fri Mar 29 18:51:32 2002
+--- demos/Makefile.in.orig	Tue Apr  2 06:50:48 2002
 +++ demos/Makefile.in
-@@ -193,6 +193,7 @@
+@@ -180,7 +180,9 @@
+ DEPS =  	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@ 					$(top_builddir)/gtk/@gtktargetlib@
  
  
- LDADDS = @STRIP_BEGIN@ 							\
-+	@LDFLAGS@							\
- 	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la	\
- 	$(top_builddir)/gdk/@gdktargetlib@        			\
- 	$(top_builddir)/gtk/@gtktargetlib@ 				\
+-LDADDS = @STRIP_BEGIN@ 								$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@        				$(top_builddir)/gtk/@gtktargetlib@ 				@STRIP_END@
++LDADDS = @STRIP_BEGIN@ \
++	@LDFLAGS@ \
++	$(top_builddir)/gdk-pixbuf/libgdk_pixbuf-$(GTK_API_VERSION).la		$(top_builddir)/gdk/@gdktargetlib@        				$(top_builddir)/gtk/@gtktargetlib@ 				@STRIP_END@
+ 
+ 
+ noinst_PROGRAMS =  	testpixbuf 			testpixbuf-drawable 		testanimation 			testpixbuf-save			testpixbuf-scale 		pixbuf-demo

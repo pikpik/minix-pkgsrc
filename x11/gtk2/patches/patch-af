@@ -1,6 +1,6 @@
 $NetBSD$
 
---- demos/gtk-demo/main.c.orig	Sat Mar  2 23:16:18 2002
+--- demos/gtk-demo/main.c.orig	Sun Mar  3 00:25:09 2002
 +++ demos/gtk-demo/main.c
 @@ -87,7 +87,7 @@
    int n_read = 0;

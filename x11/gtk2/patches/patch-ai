@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gdk/Makefile.am.orig	Thu Mar  7 18:27:00 2002
+--- gdk/Makefile.am.orig	Fri Mar  8 01:36:23 2002
 +++ gdk/Makefile.am
 @@ -68,6 +68,7 @@
  # since automake doesn't support conditionalized libsomething_la_LDFLAGS
