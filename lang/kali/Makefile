@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/02 11:31:26 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 09:07:17 agc Exp $
 
 DISTNAME=	kali-0.47
 CATEGORIES=	lang
@@ -10,5 +10,7 @@ COMMENT=	Distributed implementation of Scheme
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	# empty
+
+NOT_FOR_PLATFORM=       *-*-alpha
 
 .include "../../mk/bsd.pkg.mk"
