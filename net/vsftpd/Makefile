@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/05/09 00:29:22 salo Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:01 tv Exp $
 #
 
 DISTNAME=	vsftpd-1.2.2
@@ -26,11 +26,11 @@ PKG_USERS=	${VSFTPD_USER}:${VSFTPD_GROUP}::vsftpd\\ user
 DOCDIR=		${PREFIX}/share/doc/vsftpd
 EGDIR=		${PREFIX}/share/examples/vsftpd
 
-CFLAGS=		-DPKG_SYSCONFDIR=\"\\\"${PKG_SYSCONFDIR}\\\"\"
+CFLAGS+=	-DPKG_SYSCONFDIR=\"\\\"${PKG_SYSCONFDIR}\\\"\"
 
 CONF_FILES=	${EGDIR}/vsftpd.conf.default ${PKG_SYSCONFDIR}/vsftpd.conf
-MAKE_DIRS=	/var/chroot
-OWN_DIRS=	/var/chroot/vsftpd
+MAKE_DIRS=	${VARBASE}/chroot
+OWN_DIRS=	${VARBASE}/chroot/vsftpd
 
 # XXX: This package doesn't work on non-IPv6 enabled operating systems.
 #
