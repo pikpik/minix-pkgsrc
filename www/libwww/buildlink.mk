@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.6 2001/08/17 21:14:15 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.7 2001/10/03 20:56:54 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libwww.
 #
@@ -50,7 +50,6 @@ BUILDLINK_FILES.libwww+=	lib/libxmlparse.*
 BUILDLINK_FILES.libwww+=	lib/libxmltok.*
 
 .include "../../devel/zlib/buildlink.mk"
-.include "../../security/openssl/buildlink.mk"
 
 BUILDLINK_TARGETS.libwww=	libwww-buildlink
 BUILDLINK_TARGETS.libwww+=	libwww-buildlink-config-wrapper
