@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/15 03:10:45 dmcmahill Exp $
 #
 
-DISTNAME=	mcalc-1.4
+DISTNAME=	mcalc-1.5
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcalc/}
 
