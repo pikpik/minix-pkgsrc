@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2002/06/21 14:13:36 abs Exp $
+# $NetBSD: Makefile,v 1.42 2002/07/28 05:38:46 schmonz Exp $
 
 DISTNAME=       imap-2001a
 PKGNAME=        imap-uw-2001.1
@@ -61,7 +61,7 @@ ALL_TARGET+=	EXTRACFLAGS="${CFLAGS}"
 ALL_TARGET+=	EXTRALDFLAGS="${LDFLAGS}"
 .if defined(IMAP_UW_NO_CLEARTEXT) && ${IMAP_UW_NO_CLEARTEXT} == "YES"
 ALL_TARGET+=	SSLTYPE="nopwd"
-.else
+.elif !defined(IMAP_UW_NO_SSL) || ${IMAP_UW_NO_SSL} != "YES"
 ALL_TARGET+=	SPECIALAUTHENTICATORS="ssl"
 ALL_TARGET+=	SSLTYPE="unix"
 .endif
@@ -116,5 +116,7 @@ do-install:
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${DOC_DIR}
 	${CHMOD} -R a=rX ${DOC_DIR}
 
+.if !defined(IMAP_UW_NO_SSL) || ${IMAP_UW_NO_SSL} != "YES"
 .include "../../security/openssl/buildlink.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"
