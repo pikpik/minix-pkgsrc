@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.5 2001/10/01 15:18:36 mcr Exp $
 #
 
 DISTNAME=		Convert-ASN1-0.14
 PKGNAME=		p5-${DISTNAME}
-CATEGORIES=		converters perl5
+CATEGORIES=		converters perl5 textproc
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Convert/}
 
 MAINTAINER=		packages@netbsd.org
