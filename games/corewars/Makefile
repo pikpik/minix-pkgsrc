@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:38:06 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/21 16:49:37 martti Exp $
 #
 
 DISTNAME=	corewars-0.9.11
@@ -12,7 +12,7 @@ COMMENT=	Programs on a virtual machine, fighting each other
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

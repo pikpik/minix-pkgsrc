@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/09/27 17:07:36 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/09/28 09:13:57 jlam Exp $
 
 DISTNAME=		dopewars-1.5.9
 PKGREVISION=		2
@@ -15,7 +15,7 @@ USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_PKGLOCALEDIR=	YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-ncurses

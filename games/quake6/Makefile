@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/11/30 22:58:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/20 12:15:41 agc Exp $
 
 DISTNAME=	quake-v6-bsd-kame
 PKGNAME=	quake6-0.0
@@ -20,7 +20,7 @@ post-extract:
 	cd ${WRKSRC}; ${FIND} . -name \*.o -exec ${RM} {} \;
 	cd ${WRKSRC}; ${RM} config.cache
 
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	yes
 
 # This pkg can be built on USE_INET6 platform only

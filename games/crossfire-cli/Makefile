@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/05/02 11:54:54 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/13 13:51:43 wiz Exp $
 #
 
 DISTNAME=	crossfire-client-1.0.0
@@ -23,7 +23,7 @@ CF_RAW=		client-0.95.2-raw-sounds.tgz
 USE_BUILDLINK2=	yes
 USE_PERL5=	yes
 USE_X11=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	yes
 SCRIPTS_ENV+=	${SCRIPTSDIR}
 CONFIGURE_ARGS+=	--with-includes=-I${LOCALBASE}/include

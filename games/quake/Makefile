@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/11/30 22:58:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.28 2004/01/20 12:15:41 agc Exp $
 
 DISTNAME=	q1source
 PKGNAME=	quake-2.30
@@ -18,7 +18,7 @@ ONLY_FOR_PLATFORM=	*-*-i386
 
 WRKSRC=		${WRKDIR}
 USE_BUILDLINK2=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 MAKE_ENV+=	MAINDIR=${WRKSRC}
 
 USE_X11=	yes

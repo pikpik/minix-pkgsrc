@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/17 21:39:10 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:15:41 agc Exp $
 #
 
 DISTNAME=		nighthawk-2.1
@@ -16,7 +16,7 @@ COMMENT=		C=64 Paradroid clone
 
 WRKSRC=			${WRKDIR}/nighthawk
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_X11=		YES
 
 post-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/30 10:52:35 kleink Exp $
+# $NetBSD: Makefile,v 1.18 2003/08/09 10:51:13 seb Exp $
 
 DISTNAME=		xconq-7.4.1
 CATEGORIES=		games x11
@@ -11,7 +11,7 @@ COMMENT=		Xconq is a general strategy game system
 
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-alternate-scoresdir=/var/games/xconq/scores
 CONFIGURE_ARGS+=	--with-tclconfig="${BUILDLINK_PREFIX.tcl}/lib"

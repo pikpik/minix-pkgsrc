@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/11/29 01:12:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2003/08/13 23:46:49 wiz Exp $
 #
 
 DISTNAME=		netris-0.52
@@ -14,7 +14,7 @@ MAINTAINER=		uebs@gmx.at
 HOMEPAGE=		http://www.netris.org/
 COMMENT=		Everybody's darling T*tris in a networked version
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./Configure
 

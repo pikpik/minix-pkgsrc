@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/03 18:49:41 reed Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/23 21:50:45 jmmv Exp $
 
 DISTNAME=	knights-0.4.6
 PKGREVISION=	5
@@ -10,7 +10,7 @@ HOMEPAGE=	http://knights.sourceforge.net/
 COMMENT=	Chess interface for KDE
 
 USE_BUILDLINK2=		YES
-USE_GMAKE=              YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          YES
 USE_LIBTOOL=            YES
 LTCONFIG_OVERRIDE=      ${WRKSRC}/admin/ltconfig
