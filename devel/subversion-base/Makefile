@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/07 01:21:03 epg Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/08 00:15:53 minskim Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
 COMMENT=	Version control system, base programs and libraries
@@ -6,6 +6,9 @@ COMMENT=	Version control system, base programs and libraries
 PLIST_SUBST+=   INSTALL_INFO=${INSTALL_INFO}
 
 .include "../subversion/Makefile.common"
+
+CONFIGURE_ARGS+=	--without-apache
+CONFIGURE_ARGS+=	--without-apxs
 
 post-patch:
 	${SED} -e 's|@BUILDLINK_PREFIX.db4@|${BUILDLINK_PREFIX.db4}|g' \
