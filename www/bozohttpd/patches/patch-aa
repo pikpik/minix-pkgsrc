@@ -11,3 +11,11 @@ $NetBSD$
  	debug((DEBUG_FAT, "process_cgi: going exec %s, %s %s %s",
  	    path, argv[0], strornull(argv[1]), strornull(argv[2])));
  
+@@ -2291,6 +2289,7 @@ static struct content_map content_map[] 
+ 	{ ".ppt",	"application/powerpoint",	"",		"", NULL },
+ 	{ ".rtf",	"application/rtf",		"",		"", NULL },
+ 	{ ".bcpio",	"application/x-bcpio",		"",		"", NULL },
++	{ ".torrent",	"application/x-bittorrent",	"",		"", NULL },
+ 	{ ".vcd",	"application/x-cdlink",		"",		"", NULL },
+ 	{ ".cpio",	"application/x-cpio",		"",		"", NULL },
+ 	{ ".csh",	"application/x-csh",		"",		"", NULL },
