@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.72 2000/10/15 12:06:43 rh Exp $
+# $NetBSD: Makefile,v 1.73 2000/10/15 13:33:27 wiz Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/11/27 00:35:27 se Exp
 
 DISTNAME=	kdebase-1.1.2
 CATEGORIES=	x11 kde
-MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/stable/1.1.2/distribution/tar/generic/source/bz2/ \
-		ftp://ftp.de.kde.org/pub/kde/stable/1.1.2/distribution/tar/generic/source/bz2/ \
+MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
+		ftp://ftp.de.kde.org/pub/kde/Attic/old/1.1.2/distribution/tar/generic/source/bz2/ \
 		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} Daemon.png Daemon.README
