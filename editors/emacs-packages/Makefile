@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.12 2003/09/04 13:50:59 minoura Exp $
 
-DISTNAME=	emacs-packages-0.6
+DISTNAME=	emacs-packages-0.5
 CATEGORIES=	meta-pkgs editors
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -34,10 +34,9 @@ DEPENDS+=	haskell-mode-[0-9]*:../../devel/haskell-mode
 DEPENDS+=	iiimecf-[0-9]*:../../inputmethod/iiimecf
 DEPENDS+=	irchat-pj-[0-9]*:../../chat/irchat-pj
 DEPENDS+=	ispell-emacs-[0-9]*:../../textproc/ispell-emacs
-# XXX Exclude this temporarily while JDE is broken.  ---uebayasi
-#.if defined(_EMACS_VERSION_EMACS_MAJOR) && ${_EMACS_VERSION_EMACS_MAJOR} == "21"
-#DEPENDS+=	jde-[0-9]*:../../editors/jde
-#.endif
+.if defined(_EMACS_VERSION_EMACS_MAJOR) && ${_EMACS_VERSION_EMACS_MAJOR} == "21"
+DEPENDS+=	jde-[0-9]*:../../editors/jde
+.endif
 DEPENDS+=	liece-[0-9]*:../../chat/liece
 DEPENDS+=	lookup-[0-9]*:../../misc/lookup
 DEPENDS+=	mailcrypt-[0-9]*:../../mail/mailcrypt
