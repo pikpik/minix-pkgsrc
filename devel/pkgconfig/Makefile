@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/05 20:52:10 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/14 17:21:39 jlam Exp $
 #
 
 DISTNAME=	pkgconfig-0.15.0
@@ -15,6 +15,13 @@ USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 CONFIGURE_ARGS+=	--disable-threads
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "IRIX"
+# configure bails out in subdir after re-parsing the cache
+CONFIGURE_ARGS+=	--cache-file=/dev/null
+.endif
 
 TEST_TARGET=		check
 
