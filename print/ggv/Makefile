@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2001/10/06 17:20:05 rh Exp $
+# $NetBSD: Makefile,v 1.23 2002/03/13 17:37:34 fredb Exp $
 #
 
-DISTNAME=	ggv-1.0.1
-PKGREVISION=	1
+DISTNAME=	ggv-1.0.2
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/ggv/}
 
@@ -13,6 +12,7 @@ COMMENT=	GNOME frontend for GhostScript
 DEPENDS+=	ghostscript-[6-9]*:../../print/ghostscript
 
 GNU_CONFIGURE=	YES
+USE_GMAKE=	YES
 USE_LIBTOOL=	YES
 USE_X11BASE=	YES
 
