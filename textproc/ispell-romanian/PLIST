@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/romanian.aff
+lib/romanian.hash
+lib/romanian-signs.aff
+lib/romanian-signs.hash
