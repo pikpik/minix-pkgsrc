@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 1999/10/28 23:50:58 jlam Exp $
+# $NetBSD: Makefile,v 1.16 1999/11/08 21:17:52 tron Exp $
 
 DISTNAME=		enlightenment-0.16.2
-CATEGORIES=		x11
+CATEGORIES=		x11 gnome
 MASTER_SITES=		ftp://ftp.enlightenment.org/pub/e/enlightenment/
 
 MAINTAINER=		packages@netbsd.org
