@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:11 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/14 18:45:11 minskim Exp $
 #
 
 DISTNAME=		modplugxmms-2.05
@@ -20,7 +20,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	libtool-disable-static
 
-CFLAGS+=		-DDEVICE_NAME="\"\\\"${DEVOSSSOUND}\\\"\""
+CFLAGS+=		-DDEVICE_NAME="\"${DEVOSSSOUND}\""
 USE_LANGUAGES=		c c++
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

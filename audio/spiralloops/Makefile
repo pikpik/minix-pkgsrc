@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/04/14 15:03:40 ben Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:13:09 tv Exp $
 #
 
 DISTNAME=		SpiralLoops-2.0.0
@@ -22,7 +22,7 @@ USE_X11=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 MAKE_ENV+=		CXXFLAGS="${CXXFLAGS}"
-CXXFLAGS+=		-DDEVOSSAUDIO="\"\\\"$(DEVOSSAUDIO)\\\"\""
+CXXFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 CXXFLAGS+=		-DFLTK_1_0_COMPAT
 
 do-install:
