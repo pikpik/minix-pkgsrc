@@ -1,0 +1,5 @@
+@comment $NetBSD$
+sbin/tac_plus
+man/man8/tac_plus.8
+share/doc/tacacs/users_guide
+@dirrm share/doc/tacacs
