@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/safetynet
+etc/safetynet.conf.sample
+share/doc/safetynet/README
+@dirrm share/doc/safetynet
