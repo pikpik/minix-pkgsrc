@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/04/22 20:25:10 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2003/06/02 01:20:46 jschauma Exp $
 
 DISTNAME=	make-3.80
 PKGNAME=	gmake-3.80
@@ -13,8 +13,10 @@ COMMENT=	GNU version of 'make' utility
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
-TEXINFO_OVERRIDE=	YES
+USE_NEW_TEXINFO=	YES
+USE_MAKEINFO=		YES
 TEXINFO_REQD=		4.0
+INFO_FILES=		make.info
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -46,5 +48,4 @@ test: build
 		tee ${WRKDIR}/tests.log
 
 .include "../../devel/gettext-lib/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
