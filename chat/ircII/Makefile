@@ -1,10 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2001/09/27 23:17:48 jlam Exp $
-# FreeBSD Id: Makefile,v 1.14 1997/05/14 10:35:13 torstenb Exp
-#
+# $NetBSD: Makefile,v 1.11 2001/12/10 13:38:29 mrg Exp $
 
 DISTNAME=		ircii-20011210
 PKGNAME=		ircII-20011210
-WRKSRC=			${WRKDIR}/ircii-20011210
 CATEGORIES=		chat
 MASTER_SITES=		ftp://ircii.warped.com/pub/ircII/ \
 			ftp://ircftp.au.eterna.com.au/pub/ircII/
@@ -24,6 +21,7 @@ CONFIGURE_ARGS+=	--with-default-server=${DEFAULT_IRC_SERVER}
 .endif
 
 BUILD_DEFS+=		USE_INET6
+WRKSRC=			${WRKDIR}/ircii-20011210
 
 # Note: this pkg auto-detects IPv6 without regarding USE_INET6.
 # (Leave the above line in to still get it into the README-IPv6.html!)
