@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/08/30 08:16:49 rh Exp $
+# $NetBSD: Makefile,v 1.3 1999/10/08 21:12:47 jlam Exp $
 #
 
 DISTNAME=	hylafax-4.1beta2
@@ -22,7 +22,7 @@ CONFLICTS=	mgetty-*
 FAXUSER?=	uucp
 FAXGROUP?=	dialer
 
-USE_GMAKE=	YES
+#USE_GMAKE=	YES
 HAS_CONFIGURE=	YES
 CONFIGURE_ENV=	PREFIX="${PREFIX}" FAXUID="${FAXUSER}" FAXGID="${FAXGROUP}"
 CONFIGURE_ARGS=	--with-MAKE=${MAKE_PROGRAM} --with-INSTALL=""
