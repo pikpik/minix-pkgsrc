@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/01/27 00:53:11 heinz Exp $
+# $NetBSD: Makefile,v 1.17 2004/03/10 03:16:47 snj Exp $
 #
 
 DISTNAME=	pysol-4.81
@@ -13,7 +13,7 @@ COMMENT=	Solitaire game, written in Python
 
 NO_BUILD=	yes
 PLIST_SRC=	${WRKDIR}/PLIST.src
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 CARDSETS=	pysol-cardsets-4.40
 
@@ -39,5 +39,5 @@ post-install:
 	  done)
 
 .include "../../lang/python/application.mk"
-.include "../../x11/py-Tk/buildlink2.mk"
+.include "../../x11/py-Tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
