@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/01 12:02:57 taca Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:26:22 zuntum Exp $
 ${RUBY_SITELIBDIR}/mutexm.rb
-${RUBY_DOCDIR}/mutexm/ja/mutexm.rd.ja
-@dirrm ${RUBY_DOCDIR}/mutexm/ja
+${RUBY_DOCDIR}/mutexm/mutexm.rd.ja
 @dirrm ${RUBY_DOCDIR}/mutexm
