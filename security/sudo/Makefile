@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.43 2002/01/18 11:44:14 taca Exp $
+# $NetBSD: Makefile,v 1.44 2002/01/24 16:01:02 taca Exp $
 #
 
 DISTNAME=		sudo-1.6.5p2
-PKGNAME=		${DISTNAME:S/p1/.2/}
+PKGNAME=		${DISTNAME:S/p/./}
 CATEGORIES=		security
 MASTER_SITES=		http://www.courtesan.com/sudo/dist/ \
 			ftp://ftp.courtesan.com/pub/sudo/ \
