@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/07/26 09:02:35 grant Exp $
+# $NetBSD: Makefile,v 1.4 2002/07/29 08:10:49 grant Exp $
 
-DISTNAME=	sylpheed-0.8.0claws
-PKGNAME=	sylpheed-claws-0.8.0
+DISTNAME=	sylpheed-0.8.1claws
+PKGNAME=	sylpheed-claws-0.8.1
 CATEGORIES=	mail news x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sylpheed-claws/}
 EXTRACT_SUFX=	.tar.bz2
