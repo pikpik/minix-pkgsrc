@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2001/08/16 02:24:09 hubertf Exp $
 
 --- Makefile.orig	Sat Jan 20 15:18:28 2001
 +++ Makefile
@@ -14,7 +14,7 @@ $NetBSD$
 -CFLAGS = $(OPT) -Wall -fPIC `gtk-config --cflags gthread`
 -LFLAGS = -shared -fPIC -L/usr/local/lib
 -OBJ = dscope.o
-+CFLAGS+= $(OPT) -Wall -fPIC `gtk-config --cflags gthread`
++CFLAGS+= $(OPT) -Wall -fPIC `${GTK_CONFIG} --cflags gthread`
 +#LFLAGS = -shared -fPIC -L/usr/local/lib
 +OBJ = dscope.lo
  INSTALL-DIR=`xmms-config --visualization-plugin-dir`

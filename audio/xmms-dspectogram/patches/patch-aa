@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2001/08/16 02:26:21 hubertf Exp $
 
 --- Makefile.orig	Sat Jan 20 15:20:49 2001
 +++ Makefile
@@ -14,7 +14,7 @@ $NetBSD$
 -CFLAGS = $(OPT) -Wall -fPIC `gtk-config --cflags gthread`
 -LFLAGS = -shared -fPIC -L/usr/local/lib
 -OBJ = dspectogram.o
-+CFLAGS+= $(OPT) -Wall -fPIC `gtk-config --cflags gthread`
++CFLAGS+= $(OPT) -Wall -fPIC `${GTK_CONFIG} --cflags gthread`
 +#LFLAGS = -shared -fPIC -L/usr/local/lib
 +OBJ = dspectogram.lo
  INSTALL-DIR=`xmms-config --visualization-plugin-dir`
