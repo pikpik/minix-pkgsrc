@@ -1,6 +1,6 @@
-#! /bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: apcupsd,v 1.2 2000/10/07 16:19:17 mason Exp $
+# $NetBSD: smokeping.sh,v 1.1.1.1 2003/03/24 15:24:39 bouyer Exp $
 #
 # PROVIDE: smokeping
 # REQUIRE: DAEMON
