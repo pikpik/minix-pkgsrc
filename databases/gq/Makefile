@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/10/27 15:20:40 kleink Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/08 22:45:03 jlam Exp $
 #
 
 DISTNAME=	gq-0.3.0
+PKGREVISION=	1
 CATEGORIES=	databases net
 MASTER_SITES=	http://biot.com/gq/download/ \
 		${MASTER_SITE_SOURCEFORGE:=gqclient/}
@@ -15,6 +16,7 @@ USE_X11=	YES
 GNU_CONFIGURE=	YES
 
 .include "../../databases/openldap/buildlink2.mk"
+.include "../../misc/gnome1-dirs/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
