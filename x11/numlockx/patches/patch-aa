@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	2004-11-29 14:40:39.000000000 +0000
++++ Makefile.in	2004-11-29 14:40:44.000000000 +0000
+@@ -81,7 +81,7 @@
+ numlockx_LDFLAGS = @X_LDFLAGS@
+ INCLUDES = @X_INCLUDES@
+ 
+-CFLAGS = @CFLAGS@ -Wall -pedantic
++#CFLAGS = @CFLAGS@ -Wall -pedantic
+ 
+ EXTRA_DIST = AUTHORS LICENSE ChangeLog INSTALL README TODO 
+ 
