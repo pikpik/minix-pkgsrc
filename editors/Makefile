@@ -74,6 +74,7 @@ SUBDIR+=	wily
 SUBDIR+=	xcoral
 SUBDIR+=	xemacs
 SUBDIR+=	xemacs-current
+SUBDIR+=	xemacs-nox11
 SUBDIR+=	xemacs-packages
 SUBDIR+=	xjed
 SUBDIR+=	xvile
