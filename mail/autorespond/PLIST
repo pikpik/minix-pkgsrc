@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/autorespond
+share/doc/autorespond.README
