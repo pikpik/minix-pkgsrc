@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 15:10:52 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:27 agc Exp $
 #
 
 DISTNAME=	heretic2-demo-x86
@@ -18,9 +18,7 @@ WRKSRC=		${WRKDIR}
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 								${GTAR} xzf -
 
-.if !make(fetch)
 ONLY_FOR_PLATFORM=*-*-i386
-.endif
 
 DISTBINNAME=	heretic2_demo.x86
 BINNAME=	heretic2-demo
