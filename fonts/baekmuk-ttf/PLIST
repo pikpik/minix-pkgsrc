@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.2 2002/12/09 16:01:22 tron Exp $
+@comment $NetBSD$
 lib/X11/fonts/TTF/batang.ttf
 lib/X11/fonts/TTF/dotum.ttf
 lib/X11/fonts/TTF/gulim.ttf
 lib/X11/fonts/TTF/hline.ttf
 share/doc/baekmuk-ttf/COPYRIGHT
+share/doc/baekmuk-ttf/COPYRIGHT.ks
 @dirrm share/doc/baekmuk-ttf
