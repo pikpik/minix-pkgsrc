@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2004/10/15 12:22:14 tv Exp $
+# $NetBSD: Makefile,v 1.19 2004/10/30 00:50:46 xtraeme Exp $
 #
 
-DISTNAME=	feh-1.2.7
+DISTNAME=	feh-1.2.9
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
