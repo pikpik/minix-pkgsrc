@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/02/18 13:33:41 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2004/03/07 01:02:59 danw Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -266,7 +266,7 @@ post-install:
 	${INSTALL_PROGRAM_DIR} ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC_PERL5} ${PREFIX}/bin/perl${PERL5_VERS}
 	${LN} -f ${PREFIX}/bin/perl${PERL5_VERS} ${PREFIX}/bin/perl
-.if !empty(_STRIPFLAG_INSTALL)
+.if defined(_STRIPFLAG_INSTALL) && !empty(_STRIPFLAG_INSTALL)
 	if [ -x ${PREFIX}/bin/a2p ]; then				\
 		strip ${PREFIX}/bin/a2p;				\
 	fi
