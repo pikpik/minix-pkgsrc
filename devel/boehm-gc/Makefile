@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	boehm-gc
 # Version required:	4.10
 # Date created:		15 November 1996
