@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/06/20 07:28:09 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/10/30 17:41:19 drochner Exp $
 #
 
 DISTNAME=		libiconv-1.7
@@ -21,5 +21,8 @@ LIBTOOL_OVERRIDE+=	${WRKSRC}/libcharset/libtool
 .if (${OPSYS} == SunOS)
 PLIST_SRC=		${PKGDIR}/PLIST.${OPSYS}
 .endif
+
+test: build
+	cd ${WRKSRC} && ${MAKE_ENV} ${MAKE_PROGRAM} check |& tee ${WRKDIR}/check.log
 
 .include "../../mk/bsd.pkg.mk"
