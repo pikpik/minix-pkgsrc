@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/01/04 23:34:05 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/01/05 11:05:45 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 DLCOMPAT_BUILDLINK3_MK:=	${DLCOMPAT_BUILDLINK3_MK}+
@@ -9,7 +9,7 @@ BUILDLINK_DEPENDS+=	dlcompat
 
 .if !empty(DLCOMPAT_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=		dlcompat
-BUILDLINK_DEPENDS.dlcompat?=	dlcompat>=20020606
+BUILDLINK_DEPENDS.dlcompat+=	dlcompat>=20020606
 BUILDLINK_PKGSRCDIR.dlcompat?=	../../devel/dlcompat
 .endif  # DLCOMPAT_BUILDLINK3_MK
 
