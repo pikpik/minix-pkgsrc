@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/catdoc
+bin/wordview
+man/man1/catdoc.1
+man/cat1/catdoc.0
