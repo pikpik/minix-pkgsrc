@@ -1,0 +1,15 @@
+$NetBSD$
+
+Remove this patch when/if ncurses becomes standard
+
+--- cursesmodule.c.orig	Tue Aug 11 19:47:48 1998
++++ cursesmodule.c	Tue Aug 11 19:48:01 1998
+@@ -40,7 +40,7 @@
+ /* Includes */
+ 
+ #include "Python.h"
+-#include <curses.h>
++#include <ncurses.h>
+ 
+ #ifdef __sgi__
+  /* No attr_t type is available */
