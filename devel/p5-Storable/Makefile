@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2002/06/19 07:36:27 skrll Exp $
+# $NetBSD: Makefile,v 1.10 2002/10/13 22:22:47 seb Exp $
 
-DISTNAME=	Storable-2.04
+DISTNAME=	Storable-2.06
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5sto
 CATEGORIES=	devel perl5
