@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/man/man3/Time::HiRes.3
+lib/perl5/site_perl/Time/HiRes.pm
+lib/perl5/site_perl/${MACHINE_ARCH}-netbsd/auto/Time/HiRes/.packlist
