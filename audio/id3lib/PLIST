@@ -1,12 +1,14 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/31 14:28:00 drochner Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:16:53 zuntum Exp $
 bin/id3convert
 bin/id3cp
 bin/id3info
 bin/id3tag
 include/id3.h
 include/id3/field.h
-include/id3/frame.h
 include/id3/globals.h
+include/id3/id3lib_frame.h
+include/id3/id3lib_streams.h
+include/id3/id3lib_strings.h
 include/id3/misc_support.h
 include/id3/reader.h
 include/id3/readers.h
