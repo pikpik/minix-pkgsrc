@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: qpopper.sh,v 1.1 2004/05/06 13:46:23 taca Exp $
+# $NetBSD: qpopper.sh,v 1.2 2004/12/18 03:54:54 grant Exp $
 #
 
 # PROVIDE: qpopper
@@ -13,6 +13,7 @@ name=qpopper
 rcvar=$name
 command="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
+extra_commands="reload"
 
 load_rc_config $name
 run_rc_command "$1"
