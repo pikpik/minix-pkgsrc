@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.441 2004/02/18 02:01:44 minskim Exp $
+# $NetBSD: Makefile,v 1.442 2004/02/18 18:50:02 minskim Exp $
 #
 
 COMMENT=	Networking tools
@@ -62,6 +62,7 @@ SUBDIR+=	docsis
 SUBDIR+=	driftnet
 SUBDIR+=	dynipclient
 SUBDIR+=	echoping
+SUBDIR+=	ed2k-gtk-gui
 SUBDIR+=	edonkey2k
 SUBDIR+=	etherape
 SUBDIR+=	ethereal
