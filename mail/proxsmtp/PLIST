@@ -1,0 +1,8 @@
+@comment $NetBSD$
+man/man5/proxsmtpd.conf.5
+man/man8/proxsmtpd.8
+sbin/proxsmtpd
+share/examples/proxsmtp/add_header.sh
+share/examples/proxsmtp/proxsmtpd.conf
+share/examples/proxsmtp/spamassassin.sh
+@dirrm share/examples/proxsmtp
