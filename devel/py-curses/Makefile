@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/09/27 22:24:43 tsarna Exp $
+# $NetBSD: Makefile,v 1.6 1998/12/18 00:42:40 tsarna Exp $
 #
 
 DISTNAME=	cursesmodule-1.5b1
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://starship.skyport.net/pub/crew/andrich/Unsupported/
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://starship.skyport.net/crew/amk/howto/curses/curses.html
 
-DEPENDS+=	python-1.5.1:../../lang/python
+DEPENDS+=	python-1.5.2:../../lang/python
 DEPENDS+=       ncurses-1.9.9g:../../devel/ncurses
 
 WRKSRC=		${WRKDIR}/cursesmodule
@@ -17,7 +17,7 @@ ALL_TARGET=	default
 
 PYTHON_CONFIGDIR=	${LOCALBASE}/lib/python1.5/config/
 
-.if ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "mips" || ${MACHINE_ARCH} == "vax"
+.if ${MACHINE_ARCH} == "sparc64"
 IGNORE="Needs dynamic loading"
 .endif
 
