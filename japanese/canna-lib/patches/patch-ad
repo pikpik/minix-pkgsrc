@@ -1,3 +1,4 @@
+$NetBSD$
 --- server/misc.c~	Fri Jul 29 12:03:54 1994
 +++ server/misc.c	Fri Jun 30 10:16:39 2000
 @@ -788,12 +788,19 @@
