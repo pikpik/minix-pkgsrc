@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/03 17:49:25 rh Exp $
 #
 
 DISTNAME=	yorick-1.4
@@ -12,8 +12,8 @@ GNU_CONFIGURE=  YES
 USE_X11=        YES
 
 post-install:
-	(cd ${WRKSRC}; ${INSTALL_MAN} yorick.1 ${PREFIX}/man/man1)
-	(cd ${WRKSRC}; ${INSTALL_MAN} gist.1 ${PREFIX}/man/man1)
-	(cd ${WRKSRC}/Yorick; ${PREFIX}/bin/yorick -batch check.i)
+	cd ${WRKSRC} && ${INSTALL_MAN} yorick.1 ${PREFIX}/man/man1
+	cd ${WRKSRC} && ${INSTALL_MAN} gist.1 ${PREFIX}/man/man1
+	cd ${WRKSRC}/Yorick && ${PREFIX}/bin/yorick -batch check.i
 
 .include "../../mk/bsd.pkg.mk"
