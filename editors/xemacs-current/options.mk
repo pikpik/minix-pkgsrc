@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.1 2004/11/25 21:42:59 xtraeme Exp $
+# $NetBSD: options.mk,v 1.2 2004/12/22 21:46:25 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xemacs
-PKG_SUPPORTED_OPTIONS=	esoundd ldap xface canna
+PKG_SUPPORTED_OPTIONS=	esound ldap xface canna
 
 .include "../../mk/bsd.options.mk"
 
