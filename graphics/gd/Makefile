@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2003/07/17 21:40:41 grant Exp $
+# $NetBSD: Makefile,v 1.40 2003/07/21 16:51:40 martti Exp $
 #
 
 DISTNAME=       gd-2.0.15
@@ -14,6 +14,7 @@ USE_LIBTOOL=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 REPLACE_PERL=		bdftogd
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
