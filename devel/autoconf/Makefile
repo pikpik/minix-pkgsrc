@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/02/01 17:09:35 skrll Exp $
+# $NetBSD: Makefile,v 1.32.2.2 2002/06/21 23:05:04 jlam Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/06/13 20:00:47 max Exp
 #
 
@@ -14,8 +14,7 @@ DEPENDS=	m4-1.4:../../devel/m4
 
 CONFLICTS=		autoconf-devel-[0-9]*
 
-USE_BUILDLINK_ONLY=	YES
-
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		AWK="${AWK}"
 M4=			${PREFIX}/bin/gm4
@@ -23,6 +22,6 @@ M4=			${PREFIX}/bin/gm4
 INFO_FILES=		autoconf.info standards.info
 TEXINFO_OVERRIDE=	YES
 
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/buildlink2.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

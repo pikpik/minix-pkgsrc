@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:19:44 wiz Exp $
+# $NetBSD: Makefile,v 1.3.2.1 2002/07/01 17:45:04 jlam Exp $
 
 DISTNAME=		tcpdump-3.7.1
 CATEGORIES=		net
@@ -11,12 +11,13 @@ COMMENT=		network monitoring tool
 ONLY_FOR_PLATFORM=	SunOS-*-*	# in NetBSD base system
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 
 .if exists(/usr/include/netinet/ip6.h)
 CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
-.include "../../net/libpcap/buildlink.mk"
-.include "../../security/openssl/buildlink.mk"
+.include "../../net/libpcap/buildlink2.mk"
+.include "../../security/openssl/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,2 +1,2 @@
-@comment $NetBSD: PLIST,v 1.8 2002/07/01 17:16:21 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.6.2.2 2002/08/25 21:19:54 jlam Exp $
 bin/gaim

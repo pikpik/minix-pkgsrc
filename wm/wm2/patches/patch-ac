@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.2.1 2002/06/23 19:03:17 jlam Exp $
 
 --- General.h.orig	Fri Mar 21 12:12:30 1997
 +++ General.h

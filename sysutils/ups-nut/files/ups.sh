@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: ups.sh,v 1.7 2002/02/05 06:04:41 jlam Exp $
+# $NetBSD: ups.sh,v 1.7.2.1 2002/06/23 19:01:12 jlam Exp $
 #
 # KEYWORD: nostart
 

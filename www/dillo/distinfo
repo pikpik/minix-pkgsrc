@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.8 2002/05/21 11:13:30 wiz Exp $
+$NetBSD: distinfo,v 1.7.2.2 2002/08/25 21:22:26 jlam Exp $
 
 SHA1 (dillo-0.6.6.tar.gz) = 6ff27fe122f53f2e554a5377b67258d2df7ec381
 Size (dillo-0.6.6.tar.gz) = 310331 bytes

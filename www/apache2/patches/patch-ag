@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.4.2.1 2002/06/23 19:03:31 jlam Exp $
 
 --- support/Makefile.in.orig	Sat Jun 15 13:41:52 2002
 +++ support/Makefile.in	Wed Jun 19 07:39:51 2002

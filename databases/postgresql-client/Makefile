@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.11 2001/12/31 20:53:53 jlam Exp $
+# $NetBSD: Makefile,v 1.12.2.2 2002/06/21 23:05:03 jlam Exp $
 
 PKGNAME=		postgresql-client-${BASE_VERS}
 COMMENT=		PostgreSQL database client programs
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 
 .include "../../databases/postgresql/Makefile.common"
 
-CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_DIR}
+CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	--enable-readline
 MAKE_ENV+=		INSTALLED_LIBPQ=1
 
@@ -34,7 +34,7 @@ post-install:
 	${SED} -e "s|^#.*||" ${FILESDIR}/exclude			\
 		| ${GTAR} zxCXf ${PREFIX}/man - ${WRKSRC}/doc/man.tar.gz
 
-.include "../../databases/postgresql-lib/buildlink.mk"
-.include "../../devel/readline/buildlink.mk"
-.include "../../devel/zlib/buildlink.mk"
+.include "../../databases/postgresql-lib/buildlink2.mk"
+.include "../../devel/readline/buildlink2.mk"
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

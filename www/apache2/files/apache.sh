@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: apache.sh,v 1.19 2002/07/02 11:57:19 wiz Exp $
+# $NetBSD: apache.sh,v 1.3.2.1 2002/08/25 21:22:08 jlam Exp $
 #
 # PROVIDE: apache
 # REQUIRE: DAEMON

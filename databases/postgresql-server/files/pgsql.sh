@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pgsql.sh,v 1.10 2002/07/18 02:38:11 cjs Exp $
+# $NetBSD: pgsql.sh,v 1.9.2.1 2002/08/25 21:20:01 jlam Exp $
 #
 # PostgreSQL database rc.d control script
 #

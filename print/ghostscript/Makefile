@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/03/13 17:37:34 fredb Exp $
+# $NetBSD: Makefile,v 1.9.2.2 2002/06/21 23:05:38 jlam Exp $
 
 PKGNAME=	ghostscript-${GS_VERS}
 PKGREVISION=	4
@@ -6,7 +6,8 @@ COMMENT=	Aladdin Postscript interpreter
 
 CONFLICTS=	ghostscript{,-x11,-nox11}-[0-9]*
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=	YES
+USE_X11=	YES
 
 .include "../../print/ghostscript-nox11/Makefile.common"
 
@@ -14,7 +15,6 @@ MAKEFRAGS+=		${FILESDIR}/devs.x11
 GS_DISPLAY_DEVICE=	x11.dev
 XLIBS=			Xt SM ICE Xext X11
 
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
 
 # arm32 compiler has an optimizer problem

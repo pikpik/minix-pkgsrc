@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2002/07/01 17:16:21 hubertf Exp $
+@comment $NetBSD: PLIST.common,v 1.1.4.1 2002/08/25 21:19:55 jlam Exp $
 lib/gaim/autorecon.so
 lib/gaim/chatlist.so
 lib/gaim/iconaway.so

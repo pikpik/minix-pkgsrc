@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2002/04/21 12:07:45 shell Exp $
+# $NetBSD: Makefile,v 1.18.2.3 2002/06/23 19:03:39 jlam Exp $
 
 DISTNAME=	curl-7.9.7
 CATEGORIES=	www
@@ -13,16 +13,11 @@ COMMENT=	client that groks URLs
 # list it into IPv6-ready packages
 BUILD_DEFS+=	USE_INET6
 
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_DIR}
-
-# This causes curl-config not to be regenerated during build-time as it was
-# already created at configure-time.
-#
-AUTOMAKE_POST_PATTERNS+=	curl-config
+CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/curl
@@ -37,5 +32,5 @@ post-install:
 	${SED} '/php/d' ${WRKSRC}/docs/examples/README >		\
 		${PREFIX}/share/examples/curl/README
 	
-.include "../../security/openssl/buildlink.mk"
+.include "../../security/openssl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2002/07/13 15:38:15 wiz Exp $
+# $NetBSD: buildlink.mk,v 1.2.2.1 2002/08/25 21:21:24 jlam Exp $
 #
 # This Makefile fragment is included by packages that use gkrellm.
 #

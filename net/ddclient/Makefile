@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/12/09 19:55:35 jlam Exp $
+# $NetBSD: Makefile,v 1.7.2.1 2002/07/01 17:44:58 jlam Exp $
 
 DISTNAME=	ddclient-3.6.2
 CATEGORIES=	net
@@ -8,7 +8,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://burry.ca:4141/ddclient/
 COMMENT=	Client to update dynamic DNS entries
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 
 DOCDIR=			${PREFIX}/share/doc/ddclient
 EGDIR=			${PREFIX}/share/examples/ddclient
@@ -50,6 +50,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/README.cisco ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/sample-* ${EGDIR}
 
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2002/05/10 06:27:22 kei Exp $
+# $NetBSD: Makefile,v 1.35.2.1 2002/06/23 19:04:46 jlam Exp $
 #
 
 PKGNAME=	w3m-${W3M_BASE_VERS}

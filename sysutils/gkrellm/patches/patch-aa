@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.6.2.1 2002/06/23 19:00:13 jlam Exp $
 
 --- Makefile.top_enable_nls.orig	Wed Dec  5 08:41:15 2001
 +++ Makefile.top_enable_nls

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/05/17 18:06:19 zuntum Exp $
+# $NetBSD: Makefile,v 1.1.2.2 2002/06/30 04:00:45 jlam Exp $
 #
 
 DISTNAME=	elinks-0.3.0
@@ -13,7 +13,7 @@ COMMENT=	Extended/Enhanced Links (elinks)
 CONFLICTS=	links-[0-9]* links-gui-[0-9]*
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=	YES
 
-.include "../../security/openssl/buildlink.mk"
+.include "../../security/openssl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/04/12 14:12:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.12.2.2 2002/08/25 21:20:03 jlam Exp $
 #
 
 DISTNAME=		gmp-4.1
@@ -11,7 +11,7 @@ COMMENT=		Library for arbitrary precision arithmetic
 
 BUILD_DEPENDS+=		m4-1.4:../../devel/m4
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-cxx --without-readline
 USE_LIBTOOL=		YES

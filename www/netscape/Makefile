@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/09/27 23:18:53 jlam Exp $
+# $NetBSD: Makefile,v 1.7.2.2 2002/06/21 23:05:49 jlam Exp $
 #
 
 COMMENT=	Open new communicator, navigator, or mozilla window
@@ -20,6 +20,8 @@ DEPENDS+= {communicator,navigator,mozilla}-[0-9]*:../../www/communicator
 
 DISTFILES=	# empty
 MASTER_SITES=	# empty
+
+USE_BUILDLINK2=	# defined
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}

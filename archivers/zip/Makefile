@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/04/18 16:42:30 yyamano Exp $
+# $NetBSD: Makefile,v 1.27.2.3 2002/08/21 22:42:04 jlam Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp 
 #
 
@@ -27,7 +27,7 @@ ALL_TARGET=	generic_gcc
 ALL_TARGET=	generic
 .endif
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=	# defined
 
 post-extract:
 	@cd ${WRKSRC} && unzip -qo ${DISTDIR}/zcrypt29.zip

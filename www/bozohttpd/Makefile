@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/08/21 02:43:45 grant Exp $
+# $NetBSD: Makefile,v 1.15.2.2 2002/08/25 21:22:15 jlam Exp $
 #
 
 DISTNAME=	bozohttpd-5.14
@@ -12,7 +12,7 @@ COMMENT=	bozotic HTTP server; small and secure
 
 BUILD_DEFS+=	USE_INET6
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=	YES
 
 MAKE_ENV+=	BINDIR=${PREFIX}/libexec MANDIR=${PREFIX}/man
 
@@ -23,10 +23,10 @@ CPPFLAGS+=	-DINET6
 .endif
 
 pre-patch:
-	${MV} ${WRKSRC}/bozohttpd.8 ${WRKSRC}/bozohttpd.8.in
+	${MV} -f ${WRKSRC}/bozohttpd.8 ${WRKSRC}/bozohttpd.8.in
 
 post-patch:
-	${SED} -e "s,@PREFIX@,${PREFIX},g" <${WRKSRC}/bozohttpd.8.in \
-	    >${WRKSRC}/bozohttpd.8
+	${SED}	-e "s,@PREFIX@,${PREFIX},g"				\
+		${WRKSRC}/bozohttpd.8.in > ${WRKSRC}/bozohttpd.8
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/06/21 22:36:54 jlam Exp $
+# $NetBSD$
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -9,9 +9,9 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://sourceware.cygnus.com/bzip2/
 COMMENT=	Block-sorting file compressor
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 USE_LIBTOOL=		# defined
-MAKE_ENV+=		REALCC="${CC}"
+MAKE_ENV+=		REALCC="${BUILDLINK_CC}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bzip2 ${PREFIX}/bin

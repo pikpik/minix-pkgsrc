@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2002/06/22 21:31:30 jlam Exp $
+@comment $NetBSD: PLIST,v 1.6.2.2 2002/08/25 21:20:30 jlam Exp $
 bin/findsmb
 bin/make_printerdef
 bin/make_smbcodepage

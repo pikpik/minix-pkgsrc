@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.2.2.1 2002/06/23 19:03:33 jlam Exp $
 
 --with-randomdev=foo does not work.
 

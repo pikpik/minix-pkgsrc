@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/12/21 21:04:23 jlam Exp $
+# $NetBSD: Makefile,v 1.14.2.2 2002/08/25 21:20:36 jlam Exp $
 
 DISTNAME=	vtun-2.5
 CATEGORIES=	net
@@ -8,14 +8,14 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://vtun.sourceforge.net/
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--localstatedir=/var
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ARGS+=	--with-ssl-headers=${BUILDLINK_DIR}/include/openssl
-CONFIGURE_ARGS+=	--with-ssl-lib=${BUILDLINK_DIR}/lib
-CONFIGURE_ARGS+=	--with-lzo-headers=${BUILDLINK_DIR}/include
-CONFIGURE_ARGS+=	--with-lzo-lib=${BUILDLINK_DIR}/lib
+CONFIGURE_ARGS+=	--with-ssl-headers=${SSLBASE}/include/openssl
+CONFIGURE_ARGS+=	--with-ssl-lib=${SSLBASE}/lib
+CONFIGURE_ARGS+=	--with-lzo-headers=${BUILDLINK_PREFIX.liblzo}/include
+CONFIGURE_ARGS+=	--with-lzo-lib=${BUILDLINK_PREFIX.liblzo}/lib
 ALL_TARGET=		vtund
 
 WRKSRC=			${WRKDIR}/vtun
@@ -48,8 +48,9 @@ do-install:
 	${RM} -f ${PREFIX}/man/man8/vtun.8
 	${LN} -s vtund.8 ${PREFIX}/man/man8/vtun.8
 
-.include "../../archivers/liblzo/buildlink.mk"
-.include "../../devel/zlib/buildlink.mk"
-.include "../../security/openssl/buildlink.mk"
+.include "../../archivers/liblzo/buildlink2.mk"
+.include "../../devel/zlib/buildlink2.mk"
+.include "../../security/openssl/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

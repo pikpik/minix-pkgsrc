@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/06/29 23:51:30 jschauma Exp $
+# $NetBSD: Makefile,v 1.6.2.2 2002/08/25 21:21:40 jlam Exp $
 #
 
 DISTNAME=	ispell-3.1.20
@@ -26,7 +26,7 @@ INFO_FILES=	ispell.info
 CFLAGS+=	-DHAVE_INTTYPES_H
 .endif
 
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=	yes
 
 do-configure:
 	cd ${WRKSRC};							\

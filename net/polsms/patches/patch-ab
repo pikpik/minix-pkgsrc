@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2.2.1 2002/06/23 18:56:41 jlam Exp $
 
 --- main.cc.orig	Thu Feb  7 00:35:33 2002
 +++ main.cc

@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.4 2002/05/10 05:06:22 fredb Exp $
+$NetBSD: distinfo,v 1.3.2.2 2002/08/25 21:20:05 jlam Exp $
 
 SHA1 (gmp-4.1.tar.gz) = 6385fdfda2da9bd8c47256f5766b917f767c181b
 Size (gmp-4.1.tar.gz) = 2145387 bytes

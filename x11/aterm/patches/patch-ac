@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.2.1 2002/06/23 19:04:55 jlam Exp $
 
 --- src/utmp.c.orig	Sat May  4 08:40:45 2002
 +++ src/utmp.c

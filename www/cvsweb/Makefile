@@ -1,5 +1,5 @@
 #
-# $NetBSD: Makefile,v 1.12 2002/07/24 11:38:47 martti Exp $
+# $NetBSD: Makefile,v 1.9.2.2 2002/08/25 21:22:23 jlam Exp $
 #
 
 DISTNAME=		cvsweb-2.0.5
@@ -10,7 +10,7 @@ MAINTAINER=		lukem@netbsd.org
 HOMEPAGE=		http://www.freebsd.org/projects/cvsweb.html
 COMMENT=		Web interface for browsing a CVS repository
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 
 PKG_SYSCONFSUBDIR?=	httpd
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
@@ -56,6 +56,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${DOCDIR}/${f}
 .endfor
 
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

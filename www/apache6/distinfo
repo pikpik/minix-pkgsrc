@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.11 2002/01/01 06:22:54 jlam Exp $
+$NetBSD: distinfo,v 1.11.2.1 2002/06/23 19:03:35 jlam Exp $
 
 SHA1 (apache_1.3.26.tar.gz) = c8ab59541267c3e570592115b280e6cb2fb2b30f
 Size (apache_1.3.26.tar.gz) = 2303147 bytes

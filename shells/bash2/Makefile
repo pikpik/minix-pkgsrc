@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.33 2002/08/23 01:28:27 jlam Exp $
 #
 
 V=		2.05

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/07/14 07:42:55 jlam Exp $
+# $NetBSD: Makefile,v 1.11.2.2 2002/06/21 23:05:42 jlam Exp $
 
 DISTNAME=		psmisc-20.1
 CATEGORIES=		sysutils
@@ -10,7 +10,7 @@ COMMENT=		miscellaneous procfs tools: killall, pidof, and pstree
 
 CONFLICTS+=		pstree-[0-9]*
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 LIBS+=			${LIBGETOPT}
 
@@ -19,5 +19,5 @@ post-install:
 	${RM} -f ${PREFIX}/bin/pidof
 	${LN} -f ${PREFIX}/bin/killall ${PREFIX}/bin/pidof
 
-.include "../../devel/libgetopt/buildlink.mk"
+.include "../../devel/libgetopt/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

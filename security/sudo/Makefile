@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2002/06/16 20:20:18 wiz Exp $
+# $NetBSD: Makefile,v 1.46.2.4 2002/06/23 18:59:30 jlam Exp $
 #
 
 DISTNAME=		sudo-1.6.6
@@ -14,7 +14,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.courtesan.com/sudo/
 COMMENT=		Allow others to run commands as root
 
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 
 .include "../../mk/bsd.prefs.mk"

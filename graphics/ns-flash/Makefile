@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/07/02 12:47:47 wiz Exp $
+# $NetBSD: Makefile,v 1.15.2.3 2002/08/25 21:20:14 jlam Exp $
 
 DISTNAME=		flash_${DISTUNAME}
 CATEGORIES=		graphics www
@@ -42,6 +42,7 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
+USE_BUILDLINK2=		yes
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
 CHECK_SHLIBS=		no

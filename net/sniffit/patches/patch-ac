@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.6.2.1 2002/06/23 18:57:06 jlam Exp $
 
 --- sn_data.h.orig	Fri Apr 18 05:33:58 1997
 +++ sn_data.h	Sat May 25 15:04:03 2002

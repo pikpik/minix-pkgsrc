@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2002/06/19 13:51:17 uebayasi Exp $
+@comment $NetBSD: PLIST,v 1.4.2.1 2002/06/23 19:06:42 jlam Exp $
 bin/mlclient
 bin/mlterm
 etc/mlterm/aafont

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/03/13 17:37:34 fredb Exp $
+# $NetBSD: Makefile,v 1.6.2.2 2002/06/21 23:05:38 jlam Exp $
 
 PKGNAME=	ghostscript-nox11-${GS_VERS}
 PKGREVISION=	4
@@ -6,7 +6,7 @@ COMMENT=	Aladdin Postscript interpreter without X11 drivers
 
 CONFLICTS=	ghostscript{,-x11}-[0-9]*
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=	YES
 
 .include "../../print/ghostscript-nox11/Makefile.common"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/02/03 16:45:35 jlam Exp $
+# $NetBSD: Makefile,v 1.3.2.2 2002/06/21 23:05:14 jlam Exp $
 
 DISTNAME=		ghostscript-fonts-6.0
 CATEGORIES=		fonts
@@ -24,6 +24,7 @@ CONFLICTS=		ghostscript-[0-5]* ghostscript-x11-[0-5]*
 
 DIST_SUBDIR=		ghostscript
 EXTRACT_ONLY=		# empty
+USE_BUILDLINK2=		# defined
 NO_PATCH=		# defined
 NO_CONFIGURE=		# defined
 NO_BUILD=		# defined
