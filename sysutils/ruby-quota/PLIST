@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITEARCHLIBDIR}/quota.so
+${RUBY_DOCDIR}/quota/ChangeLog
+${RUBY_DOCDIR}/quota/README
+@dirrm ${RUBY_DOCDIR}/quota
