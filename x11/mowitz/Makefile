@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:56:37 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/14 17:21:56 jlam Exp $
 
 DISTNAME=	Mowitz-0.2.2
 CATEGORIES=	x11
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://siag.nu/mowitz/
 COMMENT=	"More widgets" library
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 USE_X11=	yes
@@ -25,6 +25,6 @@ CONFIGURE_ARGS+=--with-xawm=neXtaw
 CONFIGURE_ARGS+=--with-xawm=Xaw
 .endif
 
-.include "../../graphics/xpm/buildlink2.mk"
-.include "../../mk/xaw.buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
