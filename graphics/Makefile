@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.239 2003/04/19 07:56:20 rh Exp $
+# $NetBSD: Makefile,v 1.240 2003/04/19 08:09:18 salo Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -206,6 +206,7 @@ SUBDIR+=	scrot
 SUBDIR+=	sketch
 SUBDIR+=	smpeg-xmms
 SUBDIR+=	sodipodi
+SUBDIR+=	swfdec
 SUBDIR+=	tcm
 SUBDIR+=	tgif
 SUBDIR+=	tiff
