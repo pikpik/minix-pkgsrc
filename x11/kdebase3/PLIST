@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2003/04/01 12:27:12 markd Exp $
+@comment $NetBSD: PLIST,v 1.11 2003/05/22 02:42:45 markd Exp $
 bin/appletproxy
 bin/chooser
 bin/drkonqi
@@ -64,6 +64,7 @@ bin/kwrited
 bin/kxkb
 bin/startkde
 etc/ksysguarddrc
+etc/rc.d/kdm
 include/KBackgroundIface.h
 include/KDesktopIface.h
 include/KScreensaverIface.h
