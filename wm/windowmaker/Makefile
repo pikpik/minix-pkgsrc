@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/08/18 18:13:27 tron Exp $
+# $NetBSD: Makefile,v 1.16 2001/08/21 19:41:56 tron Exp $
 
 DISTNAME=		WindowMaker-0.65.1
 PKGNAME=		windowmaker-0.65.1
@@ -11,7 +11,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.windowmaker.org/
 COMMENT=		GNUStep-compliant NEXTSTEP(tm) window manager clone
 
-BUILD_DEPENDS+=		automake-1.4:../../devel/automake
+BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
 BUILD_USES_MSGFMT=	yes
 
 USE_BUILDLINK_ONLY=	YES
