@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.11 1999/01/06 00:43:23 tron Exp $
+# $NetBSD: Makefile,v 1.12 1999/01/16 02:38:43 tron Exp $
 #
 
 DISTNAME=	imlib-1.9.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gnome.org/pub/imlib/TAR/ \
-		ftp://ftp.jimpick.com/pub/mirrors/gnome/sources/imlib/
+		ftp://ftp.jimpick.com/pub/mirrors/gnome/sources/imlib/ \
+		ftp://ftp.cdrom.com/pub/png/src/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PNG_DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	packages@netbsd.org
