@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/01/27 21:18:55 abs Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/18 12:38:14 hubertf Exp $
 #
 
 DISTNAME=	fmlinux
@@ -22,8 +22,7 @@ DEPENDS+=        suse_linux>=6.1:../../emulators/suse_linux
 MIRROR_DISTFILE=NO
 
 NO_CONFIGURE=	YES
-NO_PACKAGE=
-NO_CDROM=
+NO_CDROM=	Distributed only by Adobe Inc.
 
 DIST_SUBDIR=	framemaker
 
