@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.7 2001/10/23 03:04:27 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:10:55 zuntum Exp $
 bin/gtkmm-config
-bin/gtkmmconvert
 include/gdk--.h
 include/gdk--/bitmap.h
 include/gdk--/color.h
