@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/xdelta
+man/man1/xdelta.1
+include/xdelta.h
+include/xdeltaconfig.h
+include/fakeglib.h
+lib/libxdelta.so.0.22.0
+lib/libxdelta.a
