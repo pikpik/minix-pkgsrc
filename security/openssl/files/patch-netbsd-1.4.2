@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.6 2002/08/10 04:50:33 fredb Exp $
+
+Revert the addition of strlcpy() and strlcat(), for NetBSD-1.4.2.
 
 --- crypto/rand/randfile.c.orig	Fri Aug  9 22:31:54 2002
 +++ crypto/rand/randfile.c
