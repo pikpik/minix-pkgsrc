@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/03/21 22:40:57 tron Exp $
+# $NetBSD: Makefile,v 1.18 2000/03/27 16:36:13 fredb Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/05/27 08:44:56 dburr Exp
 #
 
@@ -11,14 +11,14 @@ MASTER_SITES=		ftp://ftp.ncsa.uiuc.edu/Web/Mosaic/Unix/source/
 MAINTAINER=		tv@netbsd.org
 HOMEPAGE=		http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/
 
-DEPENDS=		jpeg-6b:../../graphics/jpeg
+DEPENDS+=		jpeg-6b:../../graphics/jpeg
+DEPENDS+=		lesstif12-*:../../x11/lesstif12
 DEPENDS+=		png>=1.0.6:../../graphics/png
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 NOT_FOR_PLATFORM=	*-*-alpha	#LP64 problems
 
 USE_X11BASE=		yes
-USE_MOTIF=		yes
 
 GNU_CONFIGURE=		yes
 
