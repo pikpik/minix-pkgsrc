@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/02/15 08:02:23 itojun Exp $
+@comment $NetBSD: PLIST,v 1.6 2004/06/02 06:56:07 itojun Exp $
 bin/chicken
 bin/chicken-config
 bin/chicken-profile
@@ -73,5 +73,7 @@ share/doc/chicken/README
 share/doc/chicken/chicken.html
 share/doc/chicken/chicken.pdf
 share/doc/chicken/format.txt
+@exec ${MKDIR} %D/lib/chicken
+@dirrm lib/chicken
 @dirrm share/doc/chicken
 @dirrm share/chicken
