@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/10/03 02:51:12 jlam Exp $
 
 .if !defined(OSS_BUILDLINK2_MK)
 OSS_BUILDLINK2_MK=	# defined
@@ -29,6 +29,7 @@ BUILDLINK_TARGETS+=	oss-buildlink
 
 LIBOSSAUDIO=		# empty
 DEVOSSAUDIO=		/dev/dsp
+DEVOSSSOUND=		${DEVOSSAUDIO}
 
 oss-buildlink: _BUILDLINK_USE
 
