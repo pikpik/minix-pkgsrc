@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.183 2003/09/13 18:32:08 kim Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.184 2003/09/14 18:01:11 jmmv Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -15,6 +15,11 @@
 # security exploits
 # Possible: defined, not defined
 # Default: not defined
+
+MANINSTALL?= maninstall catinstall
+# Specify manpage installation types.
+# Possible: maninstall, catinstall, both types or empty
+# Default: maninstall catinstall
 
 #MANZ=
 # gzip manual pages at installation time
