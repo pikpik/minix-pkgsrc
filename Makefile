@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2000/02/09 03:51:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.31 2000/02/25 01:04:11 wiz Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
@@ -130,7 +130,8 @@ readme-ipv6:
 	fi
 
 README-IPv6.html:
-	@grep -l USE_INET6 */*/Makefile | sed s,.Makefile,, >$@.pkgs
+	@grep -l '^BUILD_DEFS.*=.*USE_INET6' */*/Makefile \
+	 | sed s,.Makefile,, >$@.pkgs
 	@fgrep -f $@.pkgs README-all.html | sort -t/ +1 >$@.trs
 	@cat templates/README.ipv6 \
 	| ${SED} \
