@@ -1,5 +1,5 @@
 #!/bin/sh
-# $NetBSD: cdpack.sh,v 1.7 2002/09/18 02:42:20 dmcmahill Exp $
+# $NetBSD: cdpack.sh,v 1.8 2003/02/05 15:01:57 dmcmahill Exp $
 #
 # Copyright (c) 2001, 2002, 2003 Dan McMahill, All rights reserved.
 #
@@ -420,10 +420,10 @@ fi
 cat <<EOF > $readme
 This $what collection contains NetBSD binary packages.  For
 information on the NetBSD package collection, please visit
-http://www.netbsd.org/Documentation/software/packages.html.
+http://www.NetBSD.org/Documentation/software/packages.html.
 
 For more information about the NetBSD project, visit the
-project homepage at http://www.netbsd.org
+project homepage at http://www.NetBSD.org
 
 EOF
 
@@ -492,7 +492,7 @@ cat <<EOF >> $readme
 This README, along with the $what layout was created using the
 cdpack program which is available as part of the NetBSD
 packages collection at 
-ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/pkgtools/cdpack
+ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/pkgtools/cdpack
 .
 
 EOF
