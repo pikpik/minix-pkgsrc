@@ -1,5 +1,5 @@
 #!/bin/sh
-# $NetBSD:$
+# $NetBSD: pre-install,v 1.1.1.1 1999/05/18 21:22:27 hwr Exp $
 
 cd ${WRKSRC}
 cd dist
@@ -19,4 +19,3 @@ cp etc/ldapfilter.conf          ${LOCALBASE}/etc/
 cp etc/ldapsearchprefs.conf	${LOCALBASE}/etc/
 cp etc/ldapfriendly             ${LOCALBASE}/etc/
 cp etc/ldaptemplates.conf	${LOCALBASE}/etc/
-
