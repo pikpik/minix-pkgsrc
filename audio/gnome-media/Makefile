@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/07/26 09:17:05 rh Exp $
+# $NetBSD: Makefile,v 1.15 2002/07/26 15:01:51 wiz Exp $
 
 DISTNAME=	gnome-media-1.2.3
 PKGREVISION=	3
@@ -22,4 +22,5 @@ CONFIGURE_ENV+=	XGETTEXT="${LOCALBASE}/bin/xgettext"
 
 .include "../../www/libghttp/buildlink.mk"
 .include "../../x11/gnome-libs/buildlink.mk"
+.include "../../textproc/scrollkeeper/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
