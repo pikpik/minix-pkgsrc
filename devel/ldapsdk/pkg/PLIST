@@ -1,0 +1,9 @@
+@comment $NetBSD:$
+etc/ldapfilter.conf
+etc/ldapsearchprefs.conf
+etc/ldapfriendly
+etc/ldaptemplates.conf
+lib/libldap.a
+lib/liblber.a
+lib/libldap.so.1.0
+lib/liblber.so.1.0
