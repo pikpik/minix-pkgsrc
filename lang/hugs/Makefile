@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 1998/08/26 14:50:06 tsarna Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/18 03:17:20 nathanw Exp $
 
 DISTNAME=	Hugs98-May1999
 CATEGORIES=	lang
 MASTER_SITES=	http://www.cse.ogi.edu/~mpj/Hugs98/
-EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	nathanw@mit.edu
 HOMEPAGE=	http://www.haskell.org/hugs/
