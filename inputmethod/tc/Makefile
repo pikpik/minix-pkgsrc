@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 13:41:27 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/24 13:42:22 grant Exp $
 #
 
-DISTNAME=	tc-2.3
+DISTNAME=	tc-2.3.1
 CATEGORIES=	japanese inputmethod
 MASTER_SITES=	http://openlab.ring.gr.jp/tcode/resources/soft/
 
