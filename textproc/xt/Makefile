@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/07/29 22:23:29 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/10/18 21:42:10 jlam Exp $
 #
 
 DISTNAME=	xt
@@ -13,8 +13,9 @@ COMMENT=	James Clark's Java implementation of XSLT
 
 DEPENDS+=	XP-[0-9]*:../../textproc/xp
 
-EXTRACT_ONLY=
+EXTRACT_ONLY=	# empty
 USE_JAVA=	run
+USE_BUILDLINK2=
 NO_PATCH=
 NO_CONFIGURE=
 NO_BUILD=
@@ -32,4 +33,5 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/java/xt
 	cd ${WRKDIR}/demo && ${PAX} -rwpp . ${PREFIX}/share/examples/java/xt
 
+.include "../../mk/java.mk"
 .include "../../mk/bsd.pkg.mk"
