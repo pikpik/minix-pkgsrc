@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.23 2002/02/27 04:41:22 yyamano Exp $
+# $NetBSD: defs.Linux.mk,v 1.24 2002/03/14 02:28:23 lukem Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -35,6 +35,7 @@ MTREE?=		${ZOULARISBASE}/bin/mtree
 MV?=		/bin/mv
 PATCH?=		/usr/bin/patch
 PAX?=		${ZOULARISBASE}/bin/pax
+PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 RM?=		/bin/rm

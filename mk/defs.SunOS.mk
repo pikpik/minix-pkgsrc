@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.21 2002/02/27 04:41:23 yyamano Exp $
+# $NetBSD: defs.SunOS.mk,v 1.22 2002/03/14 02:28:23 lukem Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -46,6 +46,7 @@ PATCH?=		/usr/bin/gpatch -b
 PATCH?=		${LOCALBASE}/bin/patch -b
 .endif
 PAX?=		/bin/pax
+PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	lib
 PS?=		/bin/ps
 RM?=		/usr/bin/rm

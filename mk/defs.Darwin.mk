@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.19 2002/03/11 12:48:52 yyamano Exp $
+# $NetBSD: defs.Darwin.mk,v 1.20 2002/03/14 02:28:23 lukem Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -35,6 +35,7 @@ MTREE?=		/usr/sbin/mtree
 MV?=		/bin/mv
 PATCH?=		/usr/bin/patch
 PAX?=		/bin/pax
+PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 RM?=		/bin/rm
