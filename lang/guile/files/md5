@@ -1,3 +1,3 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:24:57 agc Exp $
+$NetBSD$
 
-MD5 (guile-1.3.tar.gz) = f5bb26483e76bd45eb6e445e1b660a6f
+MD5 (guile-1.3.2.tar.gz) = 2cd260b85772ed6bee4898cf92ba711b
