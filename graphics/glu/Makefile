@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/23 12:36:54 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2001/04/12 20:38:26 hubertf Exp $
 #
 
 .include "../Mesa/Makefile.common"
@@ -6,8 +6,7 @@
 DISTNAME=		MesaLib-${MESA_VERSION}
 PKGNAME=		${DISTNAME:C/MesaLib/glu/}
 CATEGORIES=		graphics
-MASTER_SITES= 		ftp://ftp.mesa3d.org/mesa/ \
-			${MASTER_SITE_SOURCEFORGE:=mesa3d/}
+MASTER_SITES= 		${MASTER_SITE_SOURCEFORGE:=mesa3d/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		rh@netbsd.org
