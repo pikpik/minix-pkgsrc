@@ -15,8 +15,9 @@ WRKSRC=		${WRKDIR}/jasmin
 NO_BUILD=	yes
 
 post-patch:
-	${MV} ${WRKSRC}/bin/jasmin ${WRKSRC}/bin/jasmin.patch && \
-		${SED} -e 's|@PREFIX@|${PREFIX}|g' ${WRKSRC}/bin/jasmin.patch > ${WRKSRC}/bin/jasmin && \
+	${MV} ${WRKSRC}/bin/jasmin ${WRKSRC}/bin/jasmin.patch && 	\
+		${SED} -e 's|@PREFIX@|${PREFIX}|g' 			\
+		${WRKSRC}/bin/jasmin.patch > ${WRKSRC}/bin/jasmin && 	\
 		${CHMOD} 755 ${WRKSRC}/bin/jasmin
 	${CHMOD} -R ugo+rX ${WRKSRC}/
 	${RM} ${WRKSRC}/bin/jasmin.patch
@@ -26,4 +27,5 @@ do-install:
 	cd ${WRKSRC} && ${PAX} -rw . ${PREFIX}/jasmin
 	${LN} -s ${PREFIX}/jasmin/bin/jasmin ${PREFIX}/bin/jasmin
 
+.include "../../mk/java.mk"
 .include "../../mk/bsd.pkg.mk"
