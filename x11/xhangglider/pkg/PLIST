@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xhangglider
+share/xhangglider/hg_standard.dat
+share/xhangglider/glider.def
