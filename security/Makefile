@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.194 2004/08/27 13:22:30 drochner Exp $
+# $NetBSD: Makefile,v 1.195 2004/09/04 14:13:11 seb Exp $
 #
 
 COMMENT=	Security tools
@@ -144,6 +144,7 @@ SUBDIR+=	p5-SHA
 SUBDIR+=	p5-SSLeay
 SUBDIR+=	p5-Tie-EncryptedHash
 SUBDIR+=	pakemon
+SUBDIR+=	pam-dbm
 SUBDIR+=	pam-ldap
 SUBDIR+=	pam-smbpass
 SUBDIR+=	pgp2
