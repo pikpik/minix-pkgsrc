@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.227 2001/08/05 17:25:31 sakamoto Exp $
+# $NetBSD: Makefile,v 1.228 2001/08/06 21:45:20 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -22,6 +22,7 @@ SUBDIR+=	filerunner
 SUBDIR+=	fltk
 SUBDIR+=	fox
 SUBDIR+=	fvwm-wharf
+SUBDIR+=	gdkxft
 SUBDIR+=	gdm
 SUBDIR+=	gnome
 SUBDIR+=	gnome--
