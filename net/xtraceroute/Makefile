@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/10/21 15:18:13 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2003/03/09 19:23:09 jschauma Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.14
@@ -14,9 +14,10 @@ COMMENT=	Graphical version of traceroute, which traces the route IP packets go
 
 BUILD_USES_MSGFMT=	yes
 
-USE_X11=	yes
-GNU_CONFIGURE=	yes
-USE_BUILDLINK2=	yes
+USE_X11=		yes
+GNU_CONFIGURE=		yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+= --with-gtk-prefix="${BUILDLINK_PREFIX.gtk}"
 # XXX Actually, Mesa's in X11PREFIX too, but as our tiff is in LOCALBASE

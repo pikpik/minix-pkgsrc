@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/01/29 12:22:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/02/05 05:06:36 jlam Exp $
 
 DISTNAME=	gftp-2.0.8
 PKGREVISION=	2
@@ -13,8 +13,9 @@ COMMENT=	multithreaded ftp client for *NIX based machines running X11R6
 
 DEPENDS+=	gnome1-dirs>=1.0:../../misc/gnome1-dirs
 
-USE_BUILDLINK2=	YES
-GNU_CONFIGURE=	YES
+USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
+GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=	CFLAGS="-I${LOCALBASE}/include -D_POSIX_THREAD_SYSCALL_SOFT=1 ${CFLAGS}"
 
 .include "../../devel/gettext-lib/buildlink2.mk"

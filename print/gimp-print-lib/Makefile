@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/11/27 16:12:36 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2003/04/23 17:33:00 drochner Exp $
 #
 
 DISTNAME=	gimp-print-4.2.5
@@ -12,6 +12,7 @@ COMMENT=	drivers for Canon, Epson, Lexmark, and PCL printers
 
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes
+USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
