@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 1999/07/19 11:44:45 jlam Exp $
+# $NetBSD: Makefile,v 1.76 1999/07/24 19:28:19 fredb Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -105,6 +105,7 @@
     SUBDIR += tinyfugue
     SUBDIR += tkicb
     SUBDIR += tkirc
+    SUBDIR += tn5250
 #    SUBDIR += traceroute
 #    SUBDIR += trafshow
     SUBDIR+= ttcp
