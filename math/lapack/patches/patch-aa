@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.orig	Wed May 17 17:33:22 2000
++++ Makefile
+@@ -6,7 +6,7 @@
+ 
+ include make.inc
+ 
+-all: install lib testing blas_testing timing blas_timing
++all: install lapacklib
+ 
+ lib: lapacklib tmglib
+ #lib: blaslib lapacklib tmglib
