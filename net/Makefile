@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.472 2004/05/15 21:02:35 itojun Exp $
+# $NetBSD: Makefile,v 1.473 2004/06/01 21:49:08 kristerw Exp $
 #
 
 COMMENT=	Networking tools
@@ -61,6 +61,7 @@ SUBDIR+=	dnstop
 SUBDIR+=	dnstracer
 SUBDIR+=	docsis
 SUBDIR+=	driftnet
+SUBDIR+=	dtcp
 SUBDIR+=	dynipclient
 SUBDIR+=	echoping
 SUBDIR+=	ed2k-gtk-gui
