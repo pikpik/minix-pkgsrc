@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2003/05/02 11:55:58 wiz Exp $
+# $NetBSD: Makefile,v 1.86 2003/05/05 16:59:01 jmmv Exp $
 #
 
 DISTNAME=		ORBit-0.${ORBIT_MAJOR}.${ORBIT_MINOR}
@@ -14,7 +14,7 @@ USE_BUILDLINK2=		YES
 
 .include "../../mk/bsd.prefs.mk"
 
-.if (${OPSYS} != "NetBSD") && (${OPSYS} != "Linux")
+.if ${OPSYS} != "NetBSD" && ${OPSYS} != "Linux"
 DEPENDS+=		gindent-[0-9]*:../../devel/gindent
 .endif
 
