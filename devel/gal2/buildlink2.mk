@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2002/11/02 05:45:30 rh Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/12/24 06:09:53 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gal2.
 #
@@ -27,7 +27,6 @@ BUILDLINK_FILES.gal2+=	lib/pkgconfig/gal-2.0.pc
 .include "../../graphics/libgnomecanvas/buildlink2.mk"
 .include "../../print/libgnomeprintui/buildlink2.mk"
 .include "../../converters/libiconv/buildlink2.mk"
-.include "../../textproc/gtk-doc/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../devel/libgnomeui/buildlink2.mk"
 .include "../../devel/libglade2/buildlink2.mk"
