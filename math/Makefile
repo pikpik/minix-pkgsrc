@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.50 2001/02/10 04:22:56 jtb Exp $
+# $NetBSD: Makefile,v 1.51 2001/02/10 04:31:30 jtb Exp $
 #
 
     SUBDIR += R
     SUBDIR += abacus
     SUBDIR += abs
+    SUBDIR += admesh
     SUBDIR += aribas
     SUBDIR += blas
     SUBDIR += calc
