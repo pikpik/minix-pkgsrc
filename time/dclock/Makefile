@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/27 18:32:34 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/22 13:25:49 tron Exp $
 #
 
 DISTNAME=	dclock
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.shar.Z
 MAINTAINER=	packages@netbsd.org
 COMMENT=	Digital clock for X
 
-CONFLICTS+	ivtools-*
+CONFLICTS+=	ivtools-*
 
 USE_X11BASE=	yes
 WRKSRC=		${WRKDIR}
