@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.3020 2005/02/14 08:58:04 xtraeme Exp $
+$NetBSD: TODO,v 1.3021 2005/02/14 09:21:36 xtraeme Exp $
 
 Suggested new packages
 ======================
@@ -1160,7 +1160,6 @@ Suggested package updates
 	o xrn-9.02
 	o xscreensaver-4.19
 	o xskat-4.0
-	o xterm-200
 	o xtide-2.8.1
 	o xtraceroute-0.9.1
 	o xtux-20030306
