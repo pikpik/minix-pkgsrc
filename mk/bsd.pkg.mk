@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-#	$NetBSD: bsd.pkg.mk,v 1.68 1998/04/20 08:24:58 frueauf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.69 1998/04/20 10:16:24 agc Exp $
 #
 #	This file is derived from bsd.port.mk - 940820 Jordan K. Hubbard.
 #	This file is in the public domain.
@@ -1202,7 +1202,7 @@ do-configure:
 	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
 .endif
 .if defined(USE_IMAKE)
-	@(cd ${WRKSRC} && ${XMKMF})
+	@(cd ${WRKSRC} && ${SETENV} ${SCRIPTS_ENV} XPROJECTROOT=${X11BASE} ${XMKMF})
 .endif
 .endif
 
