@@ -16,7 +16,7 @@ $NetBSD$
  ################################################################
  
 -all: $(OBJS)
-+all: $(OBJS) bin info
++all: $(OBJS) bin
  	@echo 'Compiling EL files of Mew ... '
  	@echo 'PLEASE IGNORE WARNINGS IF DISPLAYED. TAKE IT EASY!'
  	$(EMACS) -batch -q -no-site-file -l ./$(TEMPFILE) -f mew-compile
@@ -25,7 +25,7 @@ $NetBSD$
  ################################################################
  
 -install: $(OBJS)
-+install: $(OBJS) install-bin install-info install-etc
++install: $(OBJS) install-bin install-etc
  	-@if [ ! -d $(elispdir) ]; then \
  		$(MKDIR) $(elispdir); \
  	fi
