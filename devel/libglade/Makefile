@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/08/25 19:22:31 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2002/09/06 12:09:08 wiz Exp $
 #
 
 DISTNAME=		libglade-0.17
@@ -22,8 +22,8 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-.include "../../databases/db/buildlink2.mk"
-CPPFLAGS+=		-I${BUILDLINK_DIR}/include/db2
+.  include "../../databases/db/buildlink2.mk"
+CPPFLAGS+=		-I${BUILDLINK_PREFIX.db}/include/db2
 .endif
 
 pre-configure:
