@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.4 2001/05/03 14:23:36 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/05/05 17:40:26 fredb Exp $
 #
 
 DISTNAME=	cgilib-0.5
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.infodrom.north.de/pub/people/joey/cgilib/
 
 MAINTAINER=	wulf@ping.net.au
 HOMEPAGE=	http://www.infodrom.north.de/cgilib/
 COMMENT=	Common gateway interface library
+
+USE_LIBTOOL=	yes
 
 USE_RMAN=	yes
 
