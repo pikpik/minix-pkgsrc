@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.383 2000/01/09 04:43:20 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.384 2000/01/10 12:33:58 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -2454,7 +2454,7 @@ print-pkg-size:
 		<${PLIST} ;						\
 	${SHCOMMENT} "Any depending pkgs' files" ;			\
 	if [ "${SIZEDEPENDS}" != "" ]; then				\
-		for p in ${DEPENDS:C/:.*//} "" ; do			\
+		for p in ${DEPENDS:C/:.*//:Q} "" ; do			\
 			if [ "X$$p" = "X" ]; then continue; fi;		\
 			${SHCOMMENT} direct depends ;			\
 			pkg_info -qL "$$p" ;				\
