@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/02/12 03:59:10 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/05/25 16:38:06 drochner Exp $
 #
 
 DISTNAME=	Xbae-4.8.1
@@ -9,7 +9,7 @@ MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://www.lesstif.org/Xbae.html
 
 USE_MOTIF=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--disable-build-12 \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2000/03/21 22:40:53 tron Exp $
+# $NetBSD: Makefile,v 1.34 2000/05/30 19:16:27 drochner Exp $
 #
 
 DISTNAME=	imlib-1.9.8.1
@@ -16,7 +16,7 @@ DEPENDS+=	png>=1.0.6:../../graphics/png
 DEPENDS+=	tiff-*:../../graphics/tiff
 
 USE_X11BASE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 PLIST_SUBST+=	LOCALBASE=${LOCALBASE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/02/06 03:33:51 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2000/05/30 19:20:12 drochner Exp $
 
 DISTNAME=	esound-0.2.18
 CATEGORIES=	audio
@@ -10,6 +10,6 @@ HOMEPAGE=	http://www.tux.org/~ricdude/EsounD.html
 DEPENDS+=	libaudiofile-*:../../audio/libaudiofile
 
 GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 .include "../../mk/bsd.pkg.mk"

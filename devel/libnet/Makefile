@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/08 08:25:00 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/12/28 05:28:26 wiz Exp $
 #
 
 DISTNAME=	libnet-1.0
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://www.packetfactory.net/libnet/
 
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	LIBNET_CONFIG_CFLAGS="-I${PREFIX}/include" \
 		LIBNET_CONFIG_LIBS="${LDFLAGS}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/02 18:02:43 tron Exp $
+# $NetBSD: Makefile,v 1.4 2000/01/15 12:32:16 tron Exp $
 
 DISTNAME=	gtk-engines-0.8
 CATEGORIES=	x11
@@ -11,6 +11,6 @@ DEPENDS+=	imlib-*:../../graphics/imlib
 
 GNU_CONFIGURE=	yes
 USE_X11BASE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2000/05/12 09:22:46 agc Exp $
+# $NetBSD: Makefile,v 1.30 2000/05/30 19:13:16 drochner Exp $
 #
 
 DISTNAME=	ORBit-0.5.1
@@ -13,7 +13,7 @@ DEPENDS+=	gindent-*:../../devel/gindent
 DEPENDS+=	gettext-0.10.*:../../devel/gettext
 
 GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 USE_GMAKE=	yes
 
 LIBTOOL_FLAGS=	--install-la

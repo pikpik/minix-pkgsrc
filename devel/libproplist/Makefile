@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/04/06 22:36:56 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2000/04/07 17:44:42 tron Exp $
 
 DISTNAME=	libPropList-0.10.1
 PKGNAME=	libproplist-0.10.1
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.windowmaker.org/pub/beta/srcs/
 MAINTAINER=	jlam@netbsd.org
 
 GNU_CONFIGURE=	# defined
-USE_LIBTOOL=	# defined
+USE_PKGLIBTOOL=	# defined
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libproplist

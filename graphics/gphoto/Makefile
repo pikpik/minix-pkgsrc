@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/11/30 01:31:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/19 17:36:51 tron Exp $
 
 DISTNAME=	gphoto-0.4.2
 CATEGORIES=	graphics
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.gphoto.org/
 DEPENDS+=	imlib-1.9.8:../../graphics/imlib
 
 USE_X11BASE=		yes
-USE_LIBTOOL=		yes
+USE_PKGLIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CPPFLAGS+=		-I${LOCALBASE}/include
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1999/03/22 16:08:31 bad Exp $
+# $NetBSD: Makefile,v 1.15 1999/04/14 21:39:01 tron Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/01/28 08:11:23 asami Exp 
 #
 
@@ -10,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/gdbm/gdbm.html
 
 GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 INFO_FILES=	gdbm.info
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2000/03/23 11:58:32 agc Exp $
+# $NetBSD: Makefile,v 1.41 2000/03/28 00:12:31 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/11/05 04:19:54 asami Exp
 #
 
@@ -20,7 +20,7 @@ NOT_FOR_PLATFORM=	*-*-alpha	# LP64/ELF problems
 
 USE_X11BASE=		yes
 USE_GMAKE=		yes
-USE_LIBTOOL=		yes
+USE_PKGLIBTOOL=		yes
 LIBTOOL_FLAGS=		--cplusplus --install-la
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		"--datadir=${PREFIX}/share/kde" \

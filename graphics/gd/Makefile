@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/03/21 22:40:52 tron Exp $
+# $NetBSD: Makefile,v 1.15 2000/05/01 06:07:44 jlam Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/02/14 07:55:45 asami Exp
 #
 
@@ -14,7 +14,7 @@ DEPENDS+=	png>=1.0.6:../../graphics/png
 DEPENDS+=	xpm-*:../../graphics/xpm
 DEPENDS+=	jpeg-*:../../graphics/jpeg
 
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 USE_X11=	yes
 
 NO_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2000/01/15 18:39:28 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2000/02/12 05:00:38 wiz Exp $
 
 DISTNAME=		ncurses-5.0
 CATEGORIES=		devel
@@ -9,7 +9,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.clark.net/pub/dickey/ncurses/ncurses.html
 
 GNU_CONFIGURE=		yes
-USE_LIBTOOL=		yes
+USE_PKGLIBTOOL=		yes
 CONFIGURE_ARGS+=	--with-normal --enable-bsdpad \
 			--without-shared --without-debug --without-profile \
 			--without-gpm --without-ada \

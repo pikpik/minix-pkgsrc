@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/06/22 15:52:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.25 1999/09/05 18:37:48 kim Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/02/15 21:24:42 steve Exp
 #
 
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	LPR=lpr
 USE_PERL5=	yes
 USE_GTEXINFO=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 INFO_FILES=	a2ps.info ogonkify.info regex.info
 
 pre-build:

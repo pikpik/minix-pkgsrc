@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/08/24 12:22:35 agc Exp $
+# $NetBSD: Makefile,v 1.7 1999/10/28 00:27:38 jlam Exp $
 
 DISTNAME=		fnlib-0.5
 CATEGORIES=		x11 graphics
@@ -9,7 +9,7 @@ MAINTAINER=		root@garbled.net
 DEPENDS+=		imlib-*:../../graphics/imlib
 
 USE_X11BASE=		yes
-USE_LIBTOOL=		yes
+USE_PKGLIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 post-install:

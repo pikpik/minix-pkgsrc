@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2000/04/27 13:14:47 tron Exp $
+# $NetBSD: Makefile,v 1.48 2000/05/25 15:25:43 drochner Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/08 08:34:13 tg Exp
 #
 
@@ -16,7 +16,7 @@ HOMEPAGE=		http://www.lesstif.org/
 
 BUILD_DEPENDS+=		lynx:../../www/lynx
 
-USE_LIBTOOL=		yes
+USE_PKGLIBTOOL=		yes
 USE_X11BASE=		yes
 
 GNU_CONFIGURE=		yes

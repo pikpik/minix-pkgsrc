@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/02/09 20:20:58 tron Exp $
+# $NetBSD: Makefile,v 1.13 2000/03/21 22:40:58 tron Exp $
 #
 
 DISTNAME=       XmHTML-1.1.7
@@ -15,7 +15,7 @@ DEPENDS+=	png>=1.0.6:../../graphics/png
 USE_X11=	yes
 USE_MOTIF=	yes
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 NO_CONFIGURE=	yes
 

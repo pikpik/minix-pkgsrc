@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/10 01:04:26 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/12 22:34:52 tron Exp $
 #
 
 DISTNAME=	libirc-0.2
@@ -11,6 +11,6 @@ HOMEPAGE=	http://www.cs.kau.se/~jorgen/software/
 DEPENDS+=	glib>=1.2.6:../../devel/glib
 
 GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 .include "../../mk/bsd.pkg.mk"

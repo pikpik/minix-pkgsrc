@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/04/01 10:20:07 agc Exp $
+# $NetBSD: Makefile,v 1.25 1999/04/01 13:36:57 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/10/01 09:20:31 tg Exp
 #
 
@@ -18,7 +18,7 @@ GNU_CONFIGURE=	yes
 USE_X11=	yes
 
 # let libtool look after shared libraries
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 CONFIGURE_ARGS+=	--disable-shared
 
 test:

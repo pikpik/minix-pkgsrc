@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/02/16 20:56:05 rh Exp $
 #
 
 DISTNAME=		oregano-0.11
@@ -14,7 +14,7 @@ DEPENDS+=		libglade-*:../../devel/libglade
 
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
-USE_LIBTOOL=		YES
+USE_PKGLIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../mk/bsd.pkg.mk"

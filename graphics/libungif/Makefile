@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/22 10:45:46 wulf Exp $
+# $NetBSD: Makefile,v 1.3 2000/02/26 01:11:54 jlam Exp $
 #
 
 DISTNAME=	libungif-4.1.0
@@ -10,7 +10,7 @@ HOMEPAGE=	http://prtr-13.ucsc.edu/~badger/software/libungif/index.shtml
 
 CONFLICTS=	giflib-*
 
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-x

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/04/05 03:56:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1999/11/23 22:04:26 dmcmahill Exp $
 #
 
 DISTNAME=	netcdf-3.4
@@ -14,7 +14,7 @@ HOMEPAGE=	http://www.unidata.ucar.edu/packages/netcdf/index.html
 CONFIGURE_ENV+=	CPPFLAGS="-Df2cFortran -Dunix"
 
 USE_FORTRAN=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.pkg.mk"

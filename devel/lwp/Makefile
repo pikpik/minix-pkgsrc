@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/12/30 09:58:16 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2000/02/03 12:58:43 fredb Exp $
 #
 
 DISTNAME=	lwp-1.1
@@ -10,7 +10,7 @@ MAINTAINER=	fb@enteract.com
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 
 GNU_CONFIGURE=	YES
-USE_LIBTOOL=	YES
+USE_PKGLIBTOOL=	YES
 
 LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
 

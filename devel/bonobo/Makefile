@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/01/02 15:15:16 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/05/12 14:17:29 tron Exp $
 #
 
 DISTNAME=		bonobo-0.4
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.gnome.org/
 DEPENDS+=		bison-*:../../devel/bison
 DEPENDS+=		gdk-pixbuf-*:../../graphics/gdk-pixbuf
 
-USE_LIBTOOL=		YES
+USE_PKGLIBTOOL=		YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 

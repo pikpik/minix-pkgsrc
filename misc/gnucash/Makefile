@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/05/13 06:21:01 rh Exp $
+# $NetBSD: Makefile,v 1.11 2000/05/30 09:12:24 rh Exp $
 #
 
 DISTNAME=       gnucash-1.3.7
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+= --with-guile-config=${LOCALBASE}/bin/guile-config \
 CONFIGURE_ENV+=	"LOCALBASE=${LOCALBASE}"
 USE_GMAKE=	yes
 USE_PERL=	yes
-USE_LIBTOOL=	yes
+USE_PKGLIBTOOL=	yes
 
 ALL_TARGET=	gnome
 
