@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/02/16 21:55:14 itojun Exp $
+# $NetBSD: Makefile,v 1.19 2004/02/16 22:51:23 wiz Exp $
 
 DISTNAME=	nsd-2.0.0
 PKGREVISION=	1
@@ -35,7 +35,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/${FILE} ${PREFIX}/share/nsd
 .endfor
 .for FILE in README build-nsdzones.pl build-nsdzones.pl.README example-plugin.c
-	${INSTALL_DATA} ${WRKSRC}/${FILE} ${PREFIX}/share/nsd/contrib
+	${INSTALL_DATA} ${WRKSRC}/contrib/${FILE} ${PREFIX}/share/nsd/contrib
 .endfor
 
 .include "../../security/tcp_wrappers/buildlink2.mk"
