@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/21 21:01:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2000/09/09 05:28:44 fredb Exp $
 #
 
 DISTNAME=	dt-1.1.7
@@ -35,6 +35,6 @@ post-install:
 #	GER	German
 #	DV	Dvorak
 #
-DT_LAYOUT?=	FI
+DT_LAYOUT?=	US
 
 .include "../../mk/bsd.pkg.mk"
