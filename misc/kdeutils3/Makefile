@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2003/01/28 22:03:44 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/11 13:22:30 markd Exp $
 
-DISTNAME=	kdeutils-3.1
+DISTNAME=	kdeutils-3.1.1
 COMMENT=	Utilities for the KDE integrated X11 desktop
 
 CONFLICTS=	efax-[0-9]*
