@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/simage-config
+include/simage.h
+lib/libsimage.la
+share/Coin/conf/simage-default.cfg
+share/aclocal/simage.m4
+@dirrm share/Coin/conf
+@dirrm share/Coin
