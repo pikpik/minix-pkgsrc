@@ -1,15 +1,15 @@
-$NetBSD$
+$NetBSD: patch-ar,v 1.1 1999/05/30 18:18:32 tron Exp $
 
---- pipe/Makefile.orig	Sun May 30 18:49:13 1999
-+++ pipe/Makefile	Sun May 30 18:49:13 1999
+--- pipe/Makefile.orig	Wed Apr 26 20:25:54 2000
++++ pipe/Makefile	Wed Apr 26 20:38:43 2000
 @@ -0,0 +1,12 @@
-+#	$NetBSD: patch-aa,v 1.1 1999/05/29 20:57:19 christos Exp $
++#	$NetBSD: patch-ar,v 1.1 1999/05/30 18:18:32 tron Exp $
 +.include "../conf/main.cf"
 +PROG=	pipe
 +BINDIR=${daemon_directory}
 +
 +DPADD+= ${LIBPMASTER} ${LIBPGLOBAL} ${LIBPUTIL}
-+LDADD+= ${LIBPMASTER} ${LIBPGLOBAL} ${LIBPUTIL}
++LDADD+= ${LIBPMASTER} ${LIBPGLOBAL} ${LIBPUTIL} ${AUXLIBS}
 +
 +# XXX
 +NOMAN=1
