@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2001/02/25 04:17:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2001/09/27 23:17:44 jlam Exp $
 #
 
 DISTNAME=	dgguspat
 PKGNAME=	guspatches-1.0
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.zip
