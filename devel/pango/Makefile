@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/01/28 22:03:16 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2003/02/15 10:38:17 wiz Exp $
 #
 
 DISTNAME=		pango-1.2.1
@@ -10,8 +10,6 @@ MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v2.2/ \
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.pango.org
 COMMENT=		Library for layout and rendering of text
-
-BUILDLINK_DEPENDS.freetype2?=	freetype2>=2.0.9
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
