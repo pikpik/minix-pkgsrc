@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- makefile.orig	Thu Jul 22 22:03:13 1999
++++ makefile	Thu Jul 22 22:21:59 1999
+@@ -7,10 +7,10 @@
+              LN = g++
+             OPT = -O2
+ 
+-   INCLUDE_PATH = -I/usr/local/X11R6/include
+-       LIB_PATH = -L/usr/local/X11R6/lib
++   INCLUDE_PATH = -I/usr/X11R6/include
++       LIB_PATH = -L/usr/X11R6/lib
+ 
+-           LIBS = -lglut -lGLU -lGL -lXext -lXmu -lX11 -lm
++           LIBS = -lglut -lGLU -lGL -lXext -lXmu -lXt -lSM -lICE -lXi -lX11 -lm
+ 
+ #                 for Mesa
+ #          LIBS = -lglut -lMesatk -lMesaGLU -lMesaGL -lXi -lXext -lXmu -lX11 -lm
