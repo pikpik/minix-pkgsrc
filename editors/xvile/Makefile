@@ -1,9 +1,4 @@
-# New ports collection makefile for:    xvile
-# Version required:     		7.3
-# Date created:         		Wed Nov 26, 1996
-# Whom:                 		pgf
-#
-# $NetBSD: Makefile,v 1.3 1997/12/19 11:25:31 agc Exp $
+# $NetBSD: Makefile,v 1.4 1997/12/22 07:45:42 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:58:03 gj Exp
 #
 
@@ -37,4 +32,4 @@ post-install:
 	@echo "And also take a look at README.MENU !"
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:    rsync
-# Version required:     1.6.9
-# Date created:         Sat Aug 3, 1996
-# Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
-#
-# $NetBSD: Makefile,v 1.2 1998/02/01 02:10:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1998/02/02 21:02:12 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/01/03 10:14:21 obrien Exp
 #
 
@@ -26,4 +21,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tech_report.tex ${PREFIX}/share/doc/rsync
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

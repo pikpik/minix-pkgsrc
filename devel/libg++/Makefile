@@ -1,9 +1,4 @@
-# New ports collection makefile for:	libg++
-# Version required:	2.8.1.1a
-# Date created:		8 April 1998
-# Whom:			tv@netbsd.org
-#
-# $NetBSD: Makefile,v 1.1 1998/04/09 13:58:51 tv Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/12 23:16:16 tv Exp $
 #
 
 GXXVERSION=	2.8.1.1a	# used by internal Makefile
@@ -39,4 +34,4 @@ post-install:
 		/bin/ls 2>/dev/null -1d lib/libg++*.a lib/libg++.so*) \
 		>${PLIST_SRC}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

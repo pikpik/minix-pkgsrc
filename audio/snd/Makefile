@@ -1,9 +1,4 @@
-# New ports collection makefile for:	snd
-# Version required:			12-Feb-98
-# Date created:				1998-02-22
-# Whom:					hubertf@netbsd.org
-#
-# $NetBSD: Makefile,v 1.1 1998/02/22 23:20:20 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1998/03/05 15:32:52 hubertf Exp $
 #
 
 DISTNAME=		snd
@@ -28,4 +23,4 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/snd
 	cd ${WRKSRC} ; ${INSTALL_DATA} *.gif *.html *.txt README.Snd ${PREFIX}/share/doc/snd
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for: cddbd
-# Version required:                  1.3.1 patch 1
-# Date created:                      18 Apr 1997
-# Whom:                              Brent J. Nordquist <bjn@visi.com>
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1998/02/02 20:53:31 frueauf Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
@@ -29,4 +24,4 @@ do-install:
 	  BINPERM=${BINMODE} BINOWNER=${BINOWN} BINGROUP=${BINGRP} \
 	  sh install.sh )
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,10 +1,4 @@
-# ex:ts=8
-# New ports collection makefile for:    minicom
-# Version required:     1.74
-# Date created:         Fri Dec 01, 1995
-# Whom:                 obrien@cs.ucdavis.edu
-#
-# $NetBSD: Makefile,v 1.2 1998/02/11 22:04:29 tron Exp $
+# $NetBSD: Makefile,v 1.3 1998/02/17 23:54:23 tron Exp $
 # $FreeBSD Id: Makefile,v 1.13 1998/01/03 10:58:40 obrien Exp
 #
 
@@ -30,4 +24,4 @@ pre-install:
 	${SH} ${SCRIPTDIR}/create-dev-link
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,7 +1,4 @@
-# Makefile for:		xanim
-# Version required:     2.70.6.4
-#
-# $NetBSD: Makefile,v 1.7 1998/02/15 21:47:47 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/03/20 06:15:38 mycroft Exp $
 #
 
 DISTNAME=       xanim27064
@@ -40,4 +37,4 @@ post-extract:
 	  ${GUNZIP_CMD} ${WRKSRC}/$$file; \
 	done
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

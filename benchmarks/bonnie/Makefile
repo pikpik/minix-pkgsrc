@@ -1,9 +1,4 @@
-# New ports collection makefile for:    bonnie
-# Version required:     1.0
-# Date created:         26 September 1994
-# Whom:                 se
-#
-# $NetBSD: Makefile,v 1.4 1998/03/07 13:58:27 tron Exp $
+# $NetBSD: Makefile,v 1.5 1998/03/20 22:04:08 frueauf Exp $
 # $FreeBSD Id: Makefile,v 1.5 1997/11/26 23:09:14 jseger Exp
 #
 
@@ -23,4 +18,4 @@ NO_CONFIGURE=	yes
 post-extract:
 	${MV} ${WRKSRC}/Bonnie.c ${WRKSRC}/bonnie.c
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

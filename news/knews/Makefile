@@ -1,9 +1,4 @@
-# New ports collection Makefile for: knews
-# Version required:	0.9.8
-# Date created:         30th November 1997
-# Whom:                 tron
-#
-# $NetBSD: Makefile,v 1.4 1998/01/29 16:51:27 tron Exp $
+# $NetBSD: Makefile,v 1.5 1998/01/30 13:57:34 agc Exp $
 #
 
 DISTNAME=	knews-0.9.8
@@ -33,4 +28,4 @@ post-patch:
 	"#define DOMAIN_NAME \"${DOMAIN_NAME}\""
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:	xfig
-# Version required:			3.2
-# Date Created:				30 January 1998
-# Whom:					root@garbled.futureone.com
-#
-# $NetBSD: Makefile,v 1.3 1998/02/11 07:21:19 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1998/03/10 14:04:55 frueauf Exp $
 #
 
 DISTNAME=		xfig.3.2
@@ -28,4 +23,4 @@ post-install:
 	${CP} ${WRKSRC}/Examples/* ${X11BASE}/share/examples/xfig
 	${CP} ${WRKSRC}/Doc/xfig.ps.gz ${X11BASE}/share/doc/xfig
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

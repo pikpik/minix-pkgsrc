@@ -1,9 +1,4 @@
-# New ports collection makefile for:	rplay - Network audio player   
-# Version required:     3.2.0b6
-# Date created:		16 March 1995  
-# Whom:			rmallory@csusb.edu
-#
-# $NetBSD: Makefile,v 1.4 1998/01/24 03:13:01 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1998/01/30 13:56:55 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
 #
 
@@ -50,4 +45,4 @@ post-install:
 	install-info ${PREFIX}/info/rplay.info ${PREFIX}/info/dir
 	install-info ${PREFIX}/info/librplay.info ${PREFIX}/info/dir
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

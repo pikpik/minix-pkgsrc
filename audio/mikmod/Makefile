@@ -1,7 +1,4 @@
-# Makefile for:		mikmod
-# Version required:	2.14
-#
-# $NetBSD: Makefile,v 1.5 1998/03/11 18:09:38 mycroft Exp $
+# $NetBSD: Makefile,v 1.6 1998/03/20 07:08:43 mycroft Exp $
 #
 
 DISTNAME=	mikmod-2.14-unix
@@ -29,4 +26,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

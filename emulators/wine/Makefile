@@ -1,9 +1,4 @@
-# New packages collection makefile for:		wine
-# Version required:	980215
-# Date created:		15 March 1998
-# Whom:			mycroft
-#
-# $NetBSD: Makefile,v 1.3 1998/03/16 07:02:05 mycroft Exp $
+# $NetBSD: Makefile,v 1.4 1998/03/16 11:20:24 frueauf Exp $
 
 DISTNAME=	wine980215
 PKGNAME=	wine-980215
@@ -23,4 +18,4 @@ MAN1=		wine.1
 post-install:
 	${LDCONFIG} || ${TRUE}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

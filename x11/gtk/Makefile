@@ -1,9 +1,4 @@
-# New ports collection makefile for:	gtk
-# Version required:			1.0.0
-# Date created:				29 January 1998
-# Whom:					bsieker@techfak.uni-bielefeld.de
-#
-# $NetBSD: Makefile,v 1.5 1998/03/10 16:33:33 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/14 23:15:59 tron Exp $
 
 DISTNAME=	gtk+-1.0.0
 CATEGORIES=	x11
@@ -28,4 +23,4 @@ pre-install:
 	 fi
 	@${SED} -e 's|\$${LOCALBASE}|'${LOCALBASE}'|g' < ${PKGDIR}/PLIST > ${PLIST_SRC}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:	vat
-# Version required:	4.0b2
-# Date created:		2 November 1996
-# Whom:			fenner
-#
-# $NetBSD: Makefile,v 1.6 1998/01/26 07:24:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 1998/03/16 08:01:58 mycroft Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/09/11 03:54:43 fenner Exp 
 #
 
@@ -32,4 +27,4 @@ MAN1=		vat.1
 post-install:
 	@strip ${PREFIX}/bin/vat
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

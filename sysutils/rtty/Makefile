@@ -1,11 +1,4 @@
-# New ports collection makefile for:    rtty
-# Version required:     3.2
-# Date created:         24 Aug 1996
-# Whom:                 jkh
-#
-# Author:		Paul Vixie / Internet Software Consortium
-#
-# $NetBSD: Makefile,v 1.3 1997/10/29 11:28:00 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/01/24 23:33:13 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/01/06 12:13:36 jkh Exp
 #
 
@@ -26,4 +19,4 @@ pre-configure:
 	done
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

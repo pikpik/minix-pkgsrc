@@ -1,9 +1,4 @@
-# New ports collection makefile for:	automake
-# Version required:	1.3
-# Date created:		14 April 1998
-# Whom:			Hubert Feyrer <hubert.feyrer@rz.uni-regensburg.de>
-#
-# $NetBSD: Makefile,v 1.9 1998/02/10 22:13:50 frueauf Exp $
+# $NetBSD: Makefile,v 1.10 1998/04/14 01:51:06 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
@@ -27,4 +22,4 @@ pre-install:
 	  ${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/info/dir; \
 	 fi
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:	gcpio
-# Version required:     2.4.2
-# Date created:		1 March 1998
-# Whom:			tv@netbsd.org
-#
-# $NetBSD: Makefile,v 1.1.1.1 1998/03/04 14:51:38 tv Exp $
+# $NetBSD: Makefile,v 1.2 1998/03/05 20:09:46 tv Exp $
 #
 
 DISTNAME=       cpio-2.4.2
@@ -27,4 +22,4 @@ MAN1=	gcpio.1
 post-install:
 	install-info --info-dir=${PREFIX}/info ${PREFIX}/info/cpio.info
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

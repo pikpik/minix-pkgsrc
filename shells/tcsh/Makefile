@@ -1,9 +1,4 @@
-# New ports collection makefile for:	tcsh
-# Version required:     6.07.02
-# Date created:		22 August 1994
-# Whom:			jkh
-#
-# $NetBSD: Makefile,v 1.6 1998/03/05 14:28:32 tv Exp $
+# $NetBSD: Makefile,v 1.7 1998/03/07 21:24:23 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.17 1996/12/17 05:18:09 asami Exp
 #
 
@@ -38,4 +33,4 @@ post-install:
 	cd ${WRKSRC}; ${INSTALL_DATA} tcsh.greek.cat ${PREFIX}/share/nls/el_GR.ISO_8859-7/tcsh.cat
 	${ECHO} "updating /etc/shells"; ${CP} /etc/shells /etc/shells.bak; (grep -v ${PREFIX}/bin/tcsh /etc/shells.bak; ${ECHO} ${PREFIX}/bin/tcsh) >/etc/shells
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

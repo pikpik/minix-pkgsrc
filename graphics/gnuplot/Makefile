@@ -1,9 +1,4 @@
-# New ports collection makefile for:	gnuplot
-# Version required:			3.5
-# Date Created:				30 January 1998
-# Whom:					root@garbled.futureone.com
-#
-# $NetBSD: Makefile,v 1.1 1998/01/31 23:49:32 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/02/08 23:59:20 hubertf Exp $
 #
 
 DISTNAME=	gnuplot-3.5
@@ -20,4 +15,4 @@ MAN1=		gnuplot.1
 post-patch:
 	${RM} ${WRKSRC}/docs/makefile
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

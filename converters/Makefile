@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/03/02 00:08:39 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/03/02 00:40:59 tron Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
@@ -17,4 +17,4 @@
     SUBDIR += uulib
     SUBDIR += xdeview
 
-.include <bsd.port.subdir.mk>
+.include "../mk/bsd.pkg.subdir.mk"

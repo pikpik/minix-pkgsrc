@@ -1,9 +1,4 @@
-# New ports collection makefile for:	cvs
-# Version required:     1.9
-# Date created:		15 November 1997
-# Whom:			lamj@stat.cmu.edu
-#
-# $NetBSD: Makefile,v 1.6 1998/02/14 16:47:46 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 1998/03/25 17:50:15 tv Exp $
 #
 
 DISTNAME=       cvs-1.9
@@ -34,4 +29,4 @@ post-install:
 	install-info --info-dir=${PREFIX}/info ${PREFIX}/info/cvsclient.info
 	${SH} ${PKGDIR}/INSTALL ${DISTNAME} POST-INSTALL
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

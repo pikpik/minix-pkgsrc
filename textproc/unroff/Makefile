@@ -1,9 +1,4 @@
-# New ports collection makefile for:	unroff
-# Version required:	1.0
-# Date created:		18 Feb 1996
-# Whom:			Thomas Gellekum <tg@freebsd.org>
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1998/03/31 13:00:52 agc Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/04/27 00:11:48 asami Exp
 #
 
@@ -42,4 +37,4 @@ pre-patch:
 post-patch:
 	@(cd ${WRKSRC} && find . -name '*.orig' -print | xargs rm -f)
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

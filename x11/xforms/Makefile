@@ -1,9 +1,4 @@
-# New ports collection makefile for:	xforms
-# Version required:	0.88
-# Date created:		24 January 1998
-# Whom:			lamj@stat.cmu.edu
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/02/27 21:50:44 frueauf Exp $
 #
 
 DISTNAME=		bxform-088
@@ -41,4 +36,4 @@ post-patch:
 post-install:
 	${LDCONFIG} || ${TRUE}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

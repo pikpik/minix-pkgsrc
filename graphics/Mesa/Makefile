@@ -1,7 +1,4 @@
-# New packages collection makefile for:	Mesa
-# Version required:     		2.6
-#
-# $NetBSD: Makefile,v 1.12 1998/03/24 22:55:45 tron Exp $
+# $NetBSD: Makefile,v 1.13 1998/03/26 22:54:40 frueauf Exp $
 #
 
 DISTNAME=       MesaLib-2.6
@@ -51,4 +48,4 @@ do-install:
 	chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/examples/Mesa
 	${LDCONFIG} || ${TRUE}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

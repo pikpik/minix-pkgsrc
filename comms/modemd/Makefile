@@ -1,9 +1,4 @@
-# New ports collection makefile for:	modemd
-# Version required:	970221
-# Date created:		12 December 1997
-# Whom:			tsarna@endicor.com
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/03/20 11:05:17 frueauf Exp $
 
 DISTNAME=	modemd-970221
 CATEGORIES=	comms
@@ -17,4 +12,4 @@ MAINTAINER=	tsarna@endicor.com
 pre-install:
 	${MKDIR} ${PREFIX}/share/examples/modemd
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

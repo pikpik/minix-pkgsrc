@@ -1,9 +1,4 @@
-# New ports collection makefile for:   kdebase
-# Version required:    Beta3
-# Date created:        28 October 1997
-# Whom:                Stefan Eßer <se@freebsd.org>
-#
-# $NetBSD: Makefile,v 1.5 1998/02/23 23:36:46 tron Exp $
+# $NetBSD: Makefile,v 1.6 1998/03/21 01:54:04 tron Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/11/27 00:35:27 se Exp
 #
 
@@ -54,4 +49,4 @@ post-install:
 	@find ${PLIST_DIRS} -type d | sort -r | \
 	    ${SED} "s/${PREFIX:S/\//\\\//g}\//\@dirrm /g" >>${PLIST_SRC}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:    scheme48
-# Version required:     0.46
-# Date created:         25 Aug 1997
-# Whom:                 jmacd
-#
-# $NetBSD: Makefile,v 1.4 1998/01/24 20:23:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1998/02/09 00:19:34 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/08/27 19:31:37 jmacd Exp
 #
 
@@ -19,4 +14,4 @@ CONFIGURE_ARGS+= --prefix=${PREFIX}
 ALL_TARGET = 	enough
 MAN1=		scheme48.1
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

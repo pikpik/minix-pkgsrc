@@ -1,9 +1,4 @@
-# New ports collection makefile for:	netpbm
-# Version required:	1mar1994
-# Date created:		20 December 1997
-# Whom:			jmz (original), asami@FreeBSD.ORG, tron
-#
-# $NetBSD: Makefile,v 1.11 1998/01/30 13:57:06 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/02/25 01:40:47 tron Exp $
 #
 
 DISTNAME=	netpbm
@@ -82,4 +77,4 @@ post-extract:
 	${MV} ../*pcx*.? ppm;\
 	${MV} ../*rle*.? ../*png*.? pnm
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

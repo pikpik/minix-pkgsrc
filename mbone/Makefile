@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1997/12/11 18:03:48 is Exp $
+# $NetBSD: Makefile,v 1.6 1998/03/19 14:20:10 frueauf Exp $
 # Id: Makefile,v 1.5 1996/12/03 10:41:49 asami Exp
 #
 
@@ -13,4 +13,4 @@
     SUBDIR += vic
 #    SUBDIR += wb
 
-.include <bsd.port.subdir.mk>
+.include "../mk/bsd.pkg.subdir.mk"

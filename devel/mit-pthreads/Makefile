@@ -1,9 +1,4 @@
-# New ports collection makefile for:	MIT pthreads
-# Version required:     1.60beta6
-# Date created:		10th October 1997
-# Whom:			Alistair Crooks (agc@netbsd.org)
-#
-# $NetBSD: Makefile,v 1.6 1998/02/02 11:17:54 frueauf Exp $
+# $NetBSD: Makefile,v 1.7 1998/03/10 21:35:14 agc Exp $
 #
 
 DISTNAME=       pthreads-1_60_beta6
@@ -24,4 +19,4 @@ post-install:
 	find ${PREFIX}/pthreads/include -type f -print|xargs chmod 644
 	find ${PREFIX}/pthreads/include -type d -print|xargs chmod 755
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:	teTeX
-# Version required:	0.4
-# Date created:		5 December 1996
-# Whom:			Bernd Rosauer <br@schiele-ct.de>
-#
-# $NetBSD: Makefile,v 1.5 1998/01/24 22:42:49 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1998/03/02 20:13:00 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
@@ -63,4 +58,4 @@ post-install:
 		-type d -print | xargs chmod 1777
 	@${SETENV} PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

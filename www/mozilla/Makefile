@@ -1,9 +1,4 @@
-# New packages collection Makefile for:	mozilla
-# Version required:	5.0b1 (3/31/98)
-# Date created:		08 Apr 1998
-# Whom:			fvdl
-#
-# $NetBSD: Makefile,v 1.5 1998/04/10 09:34:52 tron Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/11 00:07:21 fvdl Exp $
 #
 
 DISTNAME=	unix_19980408
@@ -35,4 +30,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/dist/${MOZ_OBJDIR}/bin/*.so* ${MOZ_LIBDIR}
 	${INSTALL_DATA} ${WRKSRC}/dist/${MOZ_OBJDIR}/lib/*.so* ${MOZ_LIBDIR}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

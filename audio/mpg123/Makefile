@@ -1,9 +1,4 @@
-# New ports collection makefile for:	mpg123
-# Version required:     mpg123-0.59k
-# Date created:		97-10-25
-# Whom:			augustss@cs.chalmers.se
-#
-# $NetBSD: Makefile,v 1.4 1998/02/26 20:01:53 augustss Exp $
+# $NetBSD: Makefile,v 1.5 1998/03/07 13:55:38 mycroft Exp $
 #
 
 DISTNAME=       mpg123-0.59o
@@ -22,4 +17,4 @@ ALL_TARGET=	netbsd
 
 MAKE_FLAGS+=	PREFIX="${PREFIX}"
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection Makefile for:    exmh2
-# Version required:		2.0.1
-# Date created:			1 Jan 97
-# Whom:				Peter Wemm <peter@freebsd.org>
-#
-# $NetBSD: Makefile,v 1.4 1998/02/25 12:08:07 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/02/28 10:37:39 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/02/15 05:36:54 peter Exp
 #
 
@@ -61,4 +56,4 @@ do-install:
 	@cd ${WRKSRC} && ${SETENV} PREFIX=${PREFIX} \
 		WRKSRC=${WRKSRC} ${SH} ${SCRIPTDIR}/install
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

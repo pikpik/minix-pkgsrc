@@ -1,9 +1,4 @@
-# New ports collection makefile for:	tkman
-# Version required:     1.8
-# Date created:         27 Dec 1994
-# Whom:                 thomas Gellekum <tg@freebsd.org>
-#
-# $NetBSD: Makefile,v 1.7 1998/01/30 13:57:45 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/03/10 16:44:47 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.28 1997/12/08 15:51:20 tg Exp
 #
 
@@ -21,4 +16,4 @@ RUN_DEPENDS=		rman:${PORTSDIR}/textproc/rman \
 NO_CDROM=		"Don't sell for profit"
 MIRROR_DISTFILE=	no
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,4 @@
-# New ports collection makefile for:	pilot-link
-# Version required:	0.8.11
-# Date created:		13 March 1998
-# Whom:			sommerfeld@alum.mit.edu
-#
-# $NetBSD: Makefile,v 1.4 1998/03/19 02:24:45 sommerfe Exp $
+# $NetBSD: Makefile,v 1.5 1998/03/19 10:57:54 frueauf Exp $
 #
 
 DISTNAME=	pilot-link.0.8.11
@@ -29,4 +24,4 @@ do-configure:
 post-install:
 	${LDCONFIG} || ${TRUE}
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

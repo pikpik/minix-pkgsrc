@@ -1,7 +1,4 @@
-# Makefile for:		zephyr
-# Version required:	2.0.4
-#
-# $NetBSD: Makefile,v 1.5 1998/03/20 06:38:24 mycroft Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/09 19:49:16 sommerfe Exp $
 #
 
 DISTNAME=	zephyr-2.0.4
@@ -40,4 +37,4 @@ post-install:
 	    done
 .endif
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

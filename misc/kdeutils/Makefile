@@ -1,9 +1,4 @@
-# New ports collection makefile for:   kdeutils
-# Version required:    Beta3
-# Date created:        28 October 1997
-# Whom:                Stefan Eßer <se@freebsd.org>
-#
-# $NetBSD: Makefile,v 1.6 1998/03/21 01:54:30 tron Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/11 22:13:07 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/11/28 00:04:18 se Exp
 #
 
@@ -43,4 +38,4 @@ CONFIGURE_ENV=	INSTALL_DATA="${INSTALL_DATA}" \
 
 WRKSRC=		${WRKDIR}/kdeutils
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"

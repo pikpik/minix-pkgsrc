@@ -1,10 +1,4 @@
-#
-# New packages collection makefile for:	xpmroot
-# Version required:	2.0.46
-# Date created:		24 Mar 1998
-# Whom:			tron@netbsd.org
-#
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/03/24 22:45:21 tron Exp $
 #
 
 DISTNAME=	fvwm-2.0.46
@@ -23,4 +17,4 @@ CAT1= 		xpmroot.0
 
 WRKSRC=		${WRKDIR}/fvwm-2.0.46/xpmroot
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"
