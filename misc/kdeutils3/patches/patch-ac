@@ -1,8 +1,8 @@
 $NetBSD$
 
---- kcalc/kcalc.cpp.orig	Fri Jan  3 18:07:36 2003
+--- kcalc/kcalc.cpp.orig	Wed May  7 23:48:58 2003
 +++ kcalc/kcalc.cpp
-@@ -2320,7 +2320,9 @@ bool QtCalculator::eventFilter(QObject *
+@@ -2324,7 +2324,9 @@ bool QtCalculator::eventFilter(QObject *
  //-------------------------------------------------------------------------
  // Name: main(int argc, char *argv[])
  //-------------------------------------------------------------------------
@@ -12,4 +12,4 @@ $NetBSD$
 +int kdemain(int argc, char *argv[])
  {
          QString precisionStatement;
-         
+ 
