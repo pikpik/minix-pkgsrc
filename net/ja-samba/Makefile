@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.82 2002/05/05 16:57:10 taca Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/25 23:22:13 jlam Exp $
 
 DISTNAME=		samba-2.2.2-ja-1.1
 PKGNAME=		ja-samba-2.2.2.1.1
+PKGREVISION=		1
 WRKSRC=			${WRKDIR}/${DISTNAME}/source
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.samba.gr.jp/pub/samba-jp/samba-2.2.2-ja/ \
