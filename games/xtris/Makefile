@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/25 17:47:18 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2002/03/18 20:24:06 wiz Exp $
 #
 
 DISTNAME=	xtris-1.15
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.iagora.com/~espel/xtris/
 COMMENT=	Multi-player version of a popular game for the X Window system
 
 WRKSRC=		${WRKDIR}/xtris
-USE_X11=	yes
+USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
 
 BUILD_DEFS+=	USE_INET6
@@ -30,5 +30,4 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/xtbot.6 ${PREFIX}/man/man6/xtbot.6
 	${INSTALL_MAN} ${WRKSRC}/xtserv.6 ${PREFIX}/man/man6/xtserv.6
 
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
