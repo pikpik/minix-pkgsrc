@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- lib/common/Makefile.am.orig	Thu Jun  7 22:36:21 2001
++++ lib/common/Makefile.am
+@@ -13,4 +13,4 @@
+  ldt_keeper.cpp \
+  mmx.cpp 
+ 
+-CXXFLAGS = -g -O2
++CXXFLAGS+= -g -O2 -I${X11BASE}/include
