@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/libspectrum.h
+lib/libspectrum.a
+lib/libspectrum.la
+lib/libspectrum.so
+lib/libspectrum.so.2
+lib/libspectrum.so.2.0
