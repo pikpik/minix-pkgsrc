@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.181 2003/01/13 10:13:08 wiz Exp $
+$NetBSD: TODO,v 1.182 2003/01/13 19:40:09 kristerw Exp $
 
 Suggested new packages
 ======================
@@ -179,7 +179,6 @@ Suggested package updates
 	o mysql-3.23.54
 	o naim-0.11.5
 	o napshare-1.2
-	o nasm-0.98.35
 	o ncurses-5.3
 	o netpbm-10.8
 	o netscape-7.01
