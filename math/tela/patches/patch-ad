@@ -28,7 +28,7 @@ $NetBSD$
 -	$(INSTALL_PROGRAM) tela $(INSTALL_BINDIR)
 +	$(INSTALL_PROGRAM) ctpp ${PREFIX}/bin
 +	$(INSTALL_PROGRAM) tela ${PREFIX}/bin
-+	sed -e 's@^CTTP="$BINDIR@CTTP="${PREFIX}/bin@g'	\
++	sed -e 's@$$*BINDIR/ctpp@${PREFIX}/bin/ctpp@g'	\
 +		<telakka > telakka.1
  	sed -e 's@^BINDIR=.*$$@BINDIR=$(INSTALL_BINDIR)@' \
  		-e 's@^INCLUDEDIR=.*$$@INCLUDEDIR=$(INSTALL_LIBDIR)/include@' \
