@@ -1,0 +1,13 @@
+@comment $NetBSD$
+bin/cftp
+@unexec install-info --delete %D/info/cftp.info %D/info/dir
+info/cftp.info
+@exec install-info %D/info/cftp.info %D/info/dir
+share/doc/cftp/AUTHORS
+share/doc/cftp/COPYING
+share/doc/cftp/NEWS
+share/doc/cftp/README
+share/doc/cftp/THANKS
+share/doc/cftp/TODO
+share/doc/cftp/bindings.desc
+@dirrm share/doc/cftp
