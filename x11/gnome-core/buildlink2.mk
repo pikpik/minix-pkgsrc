@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:29 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/10 16:06:52 wiz Exp $
 
 .if !defined(GNOME_CORE_BUILDLINK2_MK)
 GNOME_CORE_BUILDLINK2_MK=	# defined
@@ -16,6 +16,9 @@ BUILDLINK_FILES.gnome-core+=	lib/libfish_applet.*
 BUILDLINK_FILES.gnome-core+=	lib/libgen_util_applet.*
 BUILDLINK_FILES.gnome-core+=	lib/libpanel_applet.*
 BUILDLINK_FILES.gnome-core+=	lib/libpanel_status.*
+BUILDLINK_FILES.gnome-core+=	share/idl/Terminal.idl
+BUILDLINK_FILES.gnome-core+=	share/idl/gnome-panel.idl
+BUILDLINK_FILES.gnome-core+=	share/idl/help-browser.idl
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/libglade/buildlink2.mk"
