@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:11 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/10 16:06:49 wiz Exp $
 
 .if !defined(LIBXML2_BUILDLINK2_MK)
 LIBXML2_BUILDLINK2_MK=	# defined
@@ -11,7 +11,6 @@ EVAL_PREFIX+=	BUILDLINK_PREFIX.libxml2=libxml2
 BUILDLINK_PREFIX.libxml2_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.libxml2=	include/libxml2/libxml/*
 BUILDLINK_FILES.libxml2+=	lib/libxml2.*
-BUILDLINK_FILES.libxml2+=	lib/xml2Conf.sh
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../converters/libiconv/buildlink2.mk"
