@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/bbrun
+share/doc/bbrun/README
+@dirrm share/doc/bbrun
