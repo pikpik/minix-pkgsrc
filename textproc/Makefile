@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.144 2002/04/13 20:59:34 jwise Exp $
+# $NetBSD: Makefile,v 1.145 2002/05/05 21:56:58 rh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -33,6 +33,7 @@ SUBDIR+=	html
 SUBDIR+=	html2text
 SUBDIR+=	html2wml
 SUBDIR+=	icu
+SUBDIR+=	intltool
 SUBDIR+=	isearch
 SUBDIR+=	iso12083
 SUBDIR+=	iso8879
