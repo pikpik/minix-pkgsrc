@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/modules.c.orig	Thu Jun 21 23:23:09 2001
+--- src/modules.c.orig	Sat Apr 26 20:30:13 2003
 +++ src/modules.c
-@@ -745,7 +745,8 @@
+@@ -697,7 +697,8 @@ module `%s' is a request for a file in a
  		    cvs_output ("'\n", 0);
  		    cvs_flushout ();
  		}

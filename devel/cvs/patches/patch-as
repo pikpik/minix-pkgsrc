@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/tag.c.orig	Wed Jun  6 21:43:04 2001
+--- src/tag.c.orig	Fri Jan 31 21:15:13 2003
 +++ src/tag.c
-@@ -1295,7 +1295,7 @@
+@@ -1300,7 +1300,7 @@ Numeric tag %s contains characters other
  	/* The tags is valid but not mentioned in val-tags.  Add it.  */
  	datum value;
  
