@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/29 05:59:24 jdolecek Exp $
 
 DISTNAME=		sqlrelay-0.33.1
 PKGREVISION=		1
@@ -11,10 +11,9 @@ COMMENT=		Enables pooling and sharing of database connections
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK3=		YES
-USE_GCC_SHLIB=		YES
+USE_LANGUAGES=		c c++
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
-USE_PKGLOCALEDIR=	YES
 
 #SQLRELAY_DATABASES+=	mysql postgresql
 SQLRELAY_DATABASES?=	# empty
