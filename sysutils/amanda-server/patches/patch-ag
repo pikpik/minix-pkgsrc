@@ -1,17 +1,18 @@
-$NetBSD: patch-af,v 1.4 2001/01/16 21:59:40 cjones Exp $
+$NetBSD$
 
---- common-src/Makefile.in.orig	2004-01-08 10:22:20.000000000 -0800
-+++ common-src/Makefile.in	2004-02-23 14:11:45.000000000 -0800
-@@ -536,25 +536,19 @@
+--- common-src/Makefile.in.orig	2004-10-22 15:12:39.000000000 +0200
++++ common-src/Makefile.in	2004-11-08 01:05:05.000000000 +0100
+@@ -624,25 +624,18 @@
  	done
  check-am: all-am
  check: check-am
 -all-am: Makefile $(LTLIBRARIES) $(HEADERS)
 +all-am: Makefile genversion.h
- 
  installdirs:
--	$(mkinstalldirs) $(DESTDIR)$(libdir)
- 
+-	for dir in "$(DESTDIR)$(libdir)"; do \
+-	  test -z "$$dir" || $(mkdir_p) "$$dir"; \
+-	done
++
  install: install-am
  install-exec: install-exec-am
  install-data: install-data-am
@@ -24,13 +25,13 @@ $NetBSD: patch-af,v 1.4 2001/01/16 21:59:40 cjones Exp $
  installcheck: installcheck-am
  install-strip:
 -	$(MAKE) $(AM_MAKEFLAGS) INSTALL_PROGRAM="$(INSTALL_STRIP_PROGRAM)" \
--	  INSTALL_STRIP_FLAG=-s \
+-	  install_sh_PROGRAM="$(INSTALL_STRIP_PROGRAM)" INSTALL_STRIP_FLAG=-s \
 -	  `test -z '$(STRIP)' || \
 -	    echo "INSTALL_PROGRAM_ENV=STRIPPROG='$(STRIP)'"` install
  mostlyclean-generic:
  
  clean-generic:
-@@ -587,7 +581,7 @@
+@@ -678,7 +671,7 @@
  
  install-data-am:
  
