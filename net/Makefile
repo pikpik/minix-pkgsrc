@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.231 2001/07/01 14:32:39 taca Exp $
+# $NetBSD: Makefile,v 1.232 2001/07/01 16:46:14 itojun Exp $
 #
 
 COMMENT=	Networking tools
@@ -6,6 +6,7 @@ COMMENT=	Networking tools
 SUBDIR+=	6to4
 SUBDIR+=	6tunnel
 SUBDIR+=	ORBit
+SUBDIR+=	SDL_net
 SUBDIR+=	adns
 SUBDIR+=	airportbasestationconfig
 SUBDIR+=	archie
