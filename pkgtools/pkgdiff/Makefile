@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2002/08/25 19:43:33 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2002/11/04 23:07:37 wiz Exp $
 #
 
 DISTNAME=	pkgdiff-0.107
@@ -20,7 +20,7 @@ NO_CONFIGURE=	yes
 
 USE_BUILDLINK2=	yes
 
-MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR}
+MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/26 05:40:48 atatat Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/29 16:25:24 atatat Exp $
 #
 
 DISTNAME=	pkgdepgraph-1.2
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 
-MAKE_ENV=	PKG_DBDIR=${PKG_DBDIR}
+MAKE_ENV=	PKG_DBDIR=${PKG_DBDIR:Q}
 
 DISTVER=	${DISTNAME:S/pkgdepgraph-//}
 
