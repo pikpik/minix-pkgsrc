@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2001/02/17 18:18:30 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2001/03/02 17:35:14 wiz Exp $
 #
 
 DISTNAME=		ORBit-0.5.6
@@ -33,7 +33,7 @@ INFO_FILES=		libIDL.info
 .include "../../mk/bsd.prefs.mk"
 
 .if (${OPSYS} == SunOS)
-DEPENDS+=		tcp_wrappers>=7.6:../../security/tcp_wrappers
+DEPENDS+=		tcp_wrappers>=7.6.1nb1:../../security/tcp_wrappers
 .endif
 
 pre-configure:
