@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:21 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/22 14:22:40 agc Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/24 21:43:45 jseger Exp
 #
 
@@ -25,6 +25,8 @@ MAN1=		xdeview.1
 
 PORTDOCDIR?=	share/doc/xdeview
 DOCFILES=	${FILESDIR}/porting.notes ${WRKSRC}/HOWTO
+
+.include "../../mk/bsd.prefs.mk"
 
 post-install:
 .if !defined(NOPORTDOCS)
