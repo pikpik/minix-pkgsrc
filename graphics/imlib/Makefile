@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2001/06/11 06:34:37 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2001/06/16 19:57:12 jlam Exp $
 #
 
 DISTNAME=		imlib-1.9.8.1
@@ -18,6 +18,8 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE}
 USE_GMAKE=		yes
+
+USE_BUILDLINK_ONLY=	yes
 USE_CONFIG_WRAPPER=	yes
 
 .include "../../mk/bsd.prefs.mk"
