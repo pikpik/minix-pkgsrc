@@ -1,5 +1,7 @@
 #! /bin/sh
 #
+# $NetBSD$
+#
 # Service Location Protocol daemon
 #
 # PROVIDE: slpd
