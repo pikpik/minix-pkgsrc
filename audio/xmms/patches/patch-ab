@@ -1,13 +1,13 @@
 $NetBSD$
 
---- Makefile.in.orig	Mon Jan 31 19:44:29 2000
-+++ Makefile.in	Tue Mar  7 23:25:17 2000
-@@ -125,7 +125,7 @@
+--- Makefile.in.orig	Tue Nov 28 01:55:55 2000
++++ Makefile.in
+@@ -152,7 +152,7 @@
  sidplay_library = @sidplay_library@
  xmmsdir = @xmmsdir@
  
--SUBDIRS = libxmms xmms Output Input Effect General Visualization wmxmms gnomexmms
-+SUBDIRS = libxmms xmms Output Input Effect General Visualization wmxmms
+-SUBDIRS = intl libxmms xmms Output Input Effect General Visualization wmxmms gnomexmms po
++SUBDIRS = intl libxmms xmms Output Input Effect General Visualization wmxmms po
  
  bin_SCRIPTS = xmms-config
  
