@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/18 17:13:05 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/22 11:05:01 agc Exp $
 #
 
 DISTNAME=       cpio-2.4.2
@@ -12,7 +12,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --program-prefix=g
 LDFLAGS=	-lgnumalloc
 
-MAN1=		gcpio.1
 INFO_FILES=	cpio.info
 
 .include "../../mk/bsd.pkg.mk"
