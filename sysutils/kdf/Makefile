@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/07/17 13:58:22 agc Exp $
+# $NetBSD: Makefile,v 1.11 2000/07/31 04:14:10 jlam Exp $
 #
 
 DISTNAME=	kdf-0.5.1
@@ -9,9 +9,10 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.edu.uni-klu.ac.at/~mkropfbe
 
-DEPENDS+=	gettext>=0.10.35nb1:../../devel/gettext
+BUILD_DEPENDS+=	msgfmt:../../devel/gettext
 DEPENDS+=	kde-1.1.2:../../x11/kde
 
+USE_LIBINTL=	YES
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
 
