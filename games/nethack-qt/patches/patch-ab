@@ -1,0 +1,8 @@
+$NetBSD$
+--- sys/unix/Makefile.dat.orig	Sat Aug  8 06:57:06 1998
++++ sys/unix/Makefile.dat	Sat Aug  8 06:57:14 1998
+@@ -17,3 +17,3 @@
+ ../util/tile2x11:
+-	(cd ../util ; make tile2x11)
++	(cd ../util ; gmake tile2x11)
+ 
