@@ -1,0 +1,6 @@
+$NetBSD: md5,v 1.2 2000/07/31 20:24:18 itojun Exp $
+
+MD5 (tcpillust-1.0a.tar.gz) = 9c5cfc176a28fe83e0c647230ca497ec
+SHA1 (patch-aa) = 2ef369a732d2f4403ce293282853d743461cd7ad
+SHA1 (patch-ab) = b674343b8036c8ffbe0d2cce371f40f3ed8ee0c0
+SHA1 (patch-ac) = 8c1a77f8b123fddefc5db0482839768f292a59d7

@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.1.1.1 2001/01/09 06:32:42 itojun Exp $
+
+MD5 (pakemon-0.3.1.tar.gz) = 985ca6fcab2064374750c370e58d65cb
+SHA1 (patch-aa) = 22155e703130a28ba4bf34922b3926411cb917b8
+SHA1 (patch-ab) = d35a76ae3ef96d51526f20d9973d1743c038cf81

@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.2 1999/12/16 14:59:13 bouyer Exp $
+
+MD5 (textutils-2.0.tar.gz) = 61e0eeb09be094069182632335f71b1b
+SHA1 (patch-ab) = 73318127866d2026ed70ff7dda60b56e3734ef1f

@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.2 1999/12/27 23:53:44 hubertf Exp $
+
+MD5 (sftp-0.5.tar.gz) = 8070983234f1a872b969f8eebe24b84d
+SHA1 (patch-aa) = ae15d542a80aa1715027db38c248bcec94017901
+SHA1 (patch-ab) = 59750348382485ed043e2a0738bb4553bf31b812

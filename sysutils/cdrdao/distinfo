@@ -1,0 +1,6 @@
+$NetBSD: md5,v 1.2 2000/10/18 05:46:57 rh Exp $
+
+MD5 (cdrdao-1.1.4.src.tar.gz) = b6e00b9b93f0406e76fedf421eae44ad
+SHA1 (patch-aa) = 11d6db5db716aab3b9a0296be625dbec8b8825b3
+SHA1 (patch-ab) = 071fedfbc598400d9d41e050aa01c5902e97caaa
+SHA1 (patch-ac) = ed3062bb78ade3c60fe8dfcc922c8a3f261408ab

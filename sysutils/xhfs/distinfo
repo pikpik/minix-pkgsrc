@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.1.1.1 1999/10/17 04:35:55 fredb Exp $
+
+MD5 (hfsutils-3.2.6.tar.gz) = fa572afd6da969e25c1455f728750ec4
+SHA1 (patch-aa) = 1fd9844c74a980ae1348c551750c4e4a5aa5c29f
+SHA1 (patch-ab) = ad0a03015ce1a0d484505f373b3d1bcc5412b432
