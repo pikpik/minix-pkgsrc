@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/22 19:50:16 reed Exp $
+# $NetBSD: Makefile,v 1.18 2004/07/16 23:21:50 xtraeme Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 CATEGORIES=	devel
@@ -68,6 +68,7 @@ post-install:
 # Enable OpenLDAP support
 .if !empty(APR_USE_OPENLDAP:M[Yy][Ee][Ss])
 APU_CONFIGURE_ARGS+=	--with-ldap
+APR_CONFIGURE_ARGS+=	--with-ldap
 .include "../../databases/openldap/buildlink3.mk"
 .endif
 
