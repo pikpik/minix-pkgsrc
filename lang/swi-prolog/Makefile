@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.14 2002/03/18 06:16:37 fredb Exp $
+# $NetBSD: Makefile,v 1.15 2002/04/01 15:09:44 dmcmahill Exp $
 
-DISTNAME=		pl-lite-4.0.9
-PKGNAME=		swi-prolog-4.0.9
+DISTNAME=		pl-lite-5.0.5
+PKGNAME=		swi-prolog-5.0.5
 CATEGORIES=		lang
-MASTER_SITES=		http://www.swi.psy.uva.nl/cgi-bin//nph-download/SWI-Prolog/
+MASTER_SITES=		ftp://ftp.swi.psy.uva.nl/SWI-Prolog/
 
 MAINTAINER=		packages@netbsd.org
-HOMEPAGE=		http://www.swi.psy.uva.nl/projects/SWI-Prolog/
+HOMEPAGE=		http://www.swi-prolog.org
 COMMENT=		ISO/Edinburgh-style Prolog compiler
 
 WRKSRC=			${WRKDIR}/${DISTNAME:S,-lite,,}
