@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:53:32 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:54:16 grant Exp $
 #
 
 DISTNAME=	grep-2.5.1
@@ -17,6 +17,8 @@ BUILD_USES_MSGFMT=	YES
 TEXINFO_REQD=		4.0
 
 GNU_CONFIGURE=		YES
+
+CONFIGURE_ARGS+=	--disable-perl-regexp
 
 .include "../../mk/bsd.prefs.mk"
 
