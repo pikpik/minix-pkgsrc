@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	Mon Oct 16 22:34:46 2000
+--- Makefile.in.orig	2001-11-12 00:29:39.000000000 -0800
 +++ Makefile.in
 @@ -68,8 +68,8 @@ x_libraries = @x_libraries@
  bin_PROGRAMS = fkiss
@@ -12,4 +12,4 @@ $NetBSD$
 +LDADD = -lX11 $(LIBOSSAUDIO)
  INCLUDES = -I@x_includes@
  
- EXTRA_DIST = fkiss.man fkissrc.smp  english.sed japanese.sed README.euc README.sjis  kissgs.doc fkissex.doc fkissex1.doc fkissex2.doc fkissex3.doc  frkismi4.lzh
+ EXTRA_DIST = fkiss.man fkissrc.smp  english.sed japanese.sed fkiss.doc README.euc README.sjis  kissgs.doc fkissex.doc fkissex1.doc fkissex2.doc fkissex3.doc  frkismi4.lzh
