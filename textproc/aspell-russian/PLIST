@@ -1,6 +1,9 @@
 @comment $NetBSD$
+lib/aspell/ru-ye.multi
+lib/aspell/ru-ye.rws
+lib/aspell/ru-yeyo.multi
+lib/aspell/ru-yo.multi
+lib/aspell/ru-yo.rws
 lib/aspell/ru.multi
-lib/aspell/ru.rws
-lib/aspell/russian.alias
 share/aspell/ru.dat
-share/aspell/ru_phonet.dat
+share/aspell/ru_affix.dat
