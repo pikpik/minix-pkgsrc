@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/15 10:12:35 skrll Exp $
+@comment $NetBSD: PLIST,v 1.3 2002/12/09 16:01:19 tron Exp $
 bin/libtool
 bin/libtoolize
+${SHLIBTOOL}bin/shlibtool
 include/ltdl.h
 lib/libltdl.a
 lib/libltdl.la

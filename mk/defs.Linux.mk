@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.41 2002/12/16 09:18:57 salo Exp $
+# $NetBSD: defs.Linux.mk,v 1.42 2002/12/18 06:18:14 schmonz Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -95,7 +95,6 @@ _OPSYS_HAS_INET6=	no	# IPv6 is not standard
 _OPSYS_HAS_JAVA=	no	# Java is not standard
 _OPSYS_HAS_MANZ=	no	# no MANZ for gzipping of man pages
 _OPSYS_HAS_OSSAUDIO=	no	# libossaudio is available
-_OPSYS_LIBTOOL_REQD=	1.4.20010614nb9 # base version of libtool required
 _OPSYS_PERL_REQD=		# no base version of perl required
 _OPSYS_RPATH_NAME=	-R	# name of symbol in rpath directive to linker 
 _PATCH_CAN_BACKUP=	yes	# native patch(1) can make backups
