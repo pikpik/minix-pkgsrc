@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2002/06/04 16:44:55 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/08 13:44:20 jlam Exp $
 # FreeBSD Id: ports/x11-fm/xfm/Makefile,v 1.20 2001/02/05 21:00:55 olgeni Exp
 
 DISTNAME=	xfm-1.4.3
+PKGREVISION=	1
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://www.musikwissenschaft.uni-mainz.de/~ag/xfm/
 
