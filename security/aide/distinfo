@@ -1,5 +1,6 @@
-$NetBSD: distinfo,v 1.3 2002/11/13 22:58:20 jschauma Exp $
+$NetBSD: distinfo,v 1.4 2004/12/01 16:42:53 wiz Exp $
 
 SHA1 (aide-0.10.tar.gz) = e1a65a96ea66742290b3e445d98c543008057938
+RMD160 (aide-0.10.tar.gz) = b3b63b018f3358f1d03cbc76270e5ea6ff9df943
 Size (aide-0.10.tar.gz) = 234184 bytes
 SHA1 (patch-aa) = 22f4be852c82a9252b29150cf73ce3b938d2f982
