@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.15 2002/01/28 09:30:08 drochner Exp $
+# $NetBSD: Makefile,v 1.16 2002/09/21 23:46:47 jlam Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-gdbm-0
+PKGREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	dolecek@ics.muni.cz
 HOMEPAGE=	http://www.python.org/doc/lib/module-gdbm.html
 COMMENT=	Python interface to gdbm - GNU database manager
 
-DEPENDS+=	gdbm>=1.7.3:../../databases/gdbm
+DEPENDS+=	gdbm>=1.8.3:../../databases/gdbm
 EVAL_PREFIX+=	GDBMDIR=gdbm
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/gdbmmodule.c

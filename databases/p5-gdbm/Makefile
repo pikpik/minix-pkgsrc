@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2001/11/26 06:49:42 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2002/10/10 00:39:24 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
 PKGNAME=		p5-gdbm-1.05
+PKGREVISION=		1
 SVR4_PKGNAME=		p5gdm
 CATEGORIES+=		perl5
 
