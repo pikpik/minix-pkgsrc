@@ -75,7 +75,7 @@ $NetBSD$
  		}
  	}
  }
-@@ -1194,6 +1213,7 @@ RTFFont	*fp;
+@@ -1194,6 +1201,7 @@ RTFFont	*fp;
  char	buf[rtfBufSiz], *bp;
  int	old = -1;
  char	*fn = "ReadFontTbl";
@@ -83,7 +83,7 @@ $NetBSD$
  
  	for (;;)
  	{
-@@ -1311,11 +1331,30 @@ char	*fn = "ReadFontTbl";
+@@ -1311,11 +1319,30 @@ char	*fn = "ReadFontTbl";
  				RTFPanic ("%s: missing \"}\"", fn);
  		}
  	}
@@ -116,7 +116,28 @@ $NetBSD$
  	RTFRouteToken ();	/* feed "}" back to router */
  }
  
-@@ -2260,6 +2299,7 @@ static RTFKey	rtfKey[] =
+@@ -1375,6 +1402,7 @@ ReadStyleSheet ()
+ RTFStyle	*sp;
+ RTFStyleElt	*sep, *sepLast;
+ char		buf[rtfBufSiz], *bp;
++char		*bs;
+ char		*fn = "ReadStyleSheet";
+ 
+ 	for (;;)
+@@ -1507,8 +1535,10 @@ char		*fn = "ReadStyleSheet";
+ 			RTFPanic ("%s: missing style name", fn);
+ 		if (sp->rtfSNum < 0)
+ 		{
+-			if (strncmp (buf, "Normal", 6) != 0
+-				&& strncmp (buf, "Standard", 8) != 0)
++			/* skip leading spaces */
++			for (bs = buf; *bs == ' '; bs++);
++			if (strncmp (bs, "Normal", 6) != 0
++				&& strncmp (bs, "Standard", 8) != 0)
+ 				RTFPanic ("%s: missing style number", fn);
+ 			sp->rtfSNum = rtfNormalStyleNum;
+ 		}
+@@ -2260,6 +2290,7 @@ static RTFKey	rtfKey[] =
  
  	rtfCharSet,	rtfMacCharSet,		"mac",		0,
  	rtfCharSet,	rtfAnsiCharSet,		"ansi",		0,
