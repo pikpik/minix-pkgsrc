@@ -1,29 +1,18 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: icecast.sh,v 1.1.1.1 2004/01/08 19:39:42 xtraeme Exp $
 #
+
 # PROVIDE: icecast
-# REQUIRE: DAEMON LOGIN network
-
-
-name="icecast"
-command="@PREFIX@/bin/${name}"
-mainconfigfile="@PKG_SYSCONFDIR@/${name}.conf"
-icecast_flags="-c ${mainconfigfile} -d @PKG_SYSCONFDIR@ -b"
-sig_stop="KILL"
-
+# REQUIRE: DAEMON LOGIN
 
 . /etc/rc.subr
 
-
-pidfile="/var/run/${name}.pid"
-required_files="${mainconfigfile}"
-
+name="icecast"
+rcvar=$name
+command="@PREFIX@/bin/${name}"
+command_args="-b -c @PKG_SYSCONFDIR@/$name.xml 1>2& >/dev/null"
+required_files="@PKG_SYSCONFDIR@/$name.xml"
 
 load_rc_config $name
 run_rc_command "$1"
-
-
-if [ "$1" != "stop" ]; then
-	echo $(check_process $command) > $pidfile
-fi
