@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/12/28 10:42:20 rh Exp $
 #
 
-DISTNAME=	html2text-1.2.1
+DISTNAME=	html2text-1.2.2
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.gmrs.de/
 
