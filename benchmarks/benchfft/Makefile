@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/11/07 20:28:23 skrll Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/16 13:37:44 wiz Exp $
 
 DISTNAME=		benchfft-2.0
 CATEGORIES=		benchmarks math
@@ -45,7 +45,7 @@ benchmark:
 .endif
 
 results:
-	-@${MKDIR} /tmp/benches/`domainname`
+	@${MKDIR} /tmp/benches/`domainname`
 	-@${CP} ${WRKSRC}/submit.txt /tmp/benches/`domainname`/fft.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"

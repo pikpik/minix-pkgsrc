@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 13:37:48 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/31 10:09:04 zuntum Exp $
 
 DISTNAME=		flops
 PKGNAME=		flops-2.0
@@ -29,7 +29,7 @@ benchmark:
 	-@${WRKSRC}/flops | tee ${WRKSRC}/flops.out
 
 results:
-	-@${MKDIR} /tmp/benches/`domainname`
+	@${MKDIR} /tmp/benches/`domainname`
 	-@${CP} ${WRKSRC}/flops.out /tmp/benches/`domainname`/flops.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 13:37:50 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/22 13:27:27 wiz Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
@@ -57,7 +57,7 @@ benchmark:
 	${MAKE} run
 
 results:
-	-@${MKDIR} /tmp/benches/`domainname`
+	@${MKDIR} /tmp/benches/`domainname`
 	-@cd ${WRKSRC} ; \
 	tar -cf /tmp/benches/`domainname`/hbench.`uname`-`uname -m`-`uname -r`.`hostname`.tar results conf
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/16 13:37:56 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/03/31 10:09:05 zuntum Exp $
 
 DISTNAME=		paranoia
 PKGNAME=		paranoia-960101
@@ -22,7 +22,7 @@ benchmark:
 	@(cd ${WRKSRC}; ./paranoia < ${FILESDIR}/paranoia.run | tee paranoia.out)
 
 results:
-	-@${MKDIR} /tmp/benches/`domainname`
+	@${MKDIR} /tmp/benches/`domainname`
 	-@${CP} ${WRKSRC}/paranoia.out /tmp/benches/`domainname`/paranoia.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"
