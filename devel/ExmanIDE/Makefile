@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/19 03:07:36 minskim Exp $
 
 DISTNAME=	ExmanIDE-0.9.4
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://exmanide.kldp.net/
 COMMENT=	Integrated development environment for Python
 
-DEPENDS+=	${PYPKGPREFIX}-wxWindows>=2.4.2:../../py-wxWindows
+DEPENDS+=	${PYPKGPREFIX}-wxWindows>=2.4.2:../../x11/py-wxWindows
 
 WRKSRC=		${WRKDIR}/${PKGBASE}
 USE_BUILDLINK3=	yes
