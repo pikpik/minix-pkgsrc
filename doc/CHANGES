@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.5380 2004/03/30 21:04:52 tron Exp $
+$NetBSD: CHANGES,v 1.5381 2004/03/30 22:44:44 xtraeme Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -1621,3 +1621,4 @@ Changes to the packages collection and infrastructure in 2004:
 	Updated streamtuner to 0.12.1 [xtraeme 2004-03-30]
 	Updated streamtuner-live365 to 0.3.4 [xtraeme 2004-03-30]
 	Updated streamtuner-local to 0.4.0 [xtraeme 2004-03-30]
+	Added poedit-1.2.5 [xtraeme 2004-03-30]
