@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/29 22:57:14 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:54:19 grant Exp $
 
 DISTNAME=	hevea-1.06
 CATEGORIES=	textproc
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://para.inria.fr/~maranget/hevea/
 COMMENT=	LaTeX to HTML translator
 
-DEPENDS+=	ocaml>=3.00:../../lang/ocaml
+BUILD_DEPENDS+=	ocaml>=3.00:../../lang/ocaml
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")
 MAKE_ENV+=	TARGET=opt
