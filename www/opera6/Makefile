@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/04/04 11:56:47 tron Exp $
+# $NetBSD: Makefile,v 1.7 2002/04/08 12:24:53 wiz Exp $
 
 DISTNAME=	opera-${OPERA_PKG_VERSION}
 CATEGORIES=	www
@@ -36,9 +36,9 @@ DEPENDS+=	suse_libpng>=6.4:../../emulators/${SUSE_DIR_PREFIX}_libpng
 DEPENDS+=	suse_x11>=6.3:../../emulators/${SUSE_DIR_PREFIX}_x11
 
 OPERA_ARCH=		i386
-OPERA_DIR=		600/beta1
-OPERA_DIST_VERSION=	6.0-20020218.1-static-qt
-OPERA_PKG_VERSION=	5.999.1
+OPERA_DIR=		600/beta2
+OPERA_DIST_VERSION=	6.0-20020412.1-static-qt
+OPERA_PKG_VERSION=	5.999.2
 .endif
 
 RPMFILES=	${DISTFILES}
