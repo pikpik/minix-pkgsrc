@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/04/21 00:46:57 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/22 14:22:43 agc Exp $
 #
 
 DISTNAME=       xart19980415
@@ -16,6 +16,7 @@ DEPENDS+=	png-0.96:../../graphics/png
 
 WRKSRC=		${WRKDIR}/19980415
 USE_IMAKE=      yes
+CAT1=		xart.0
 
 post-extract:
 	find ${WRKSRC} -type d -print | xargs chmod 755
