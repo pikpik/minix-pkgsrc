@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: apache.sh,v 1.21 2002/08/25 18:40:18 jlam Exp $
+# $NetBSD: apache.sh,v 1.22 2002/09/20 02:02:01 grant Exp $
 #
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -33,9 +33,9 @@ reload_cmd="apache_doit reload"
 #	/etc/rc.conf.d/apache,
 #
 # in order of increasing precedence.  Its possible values are "start"
-# and "startssl", and defaults to "start".
+# and "startssl", and defaults to "start" unless it's already set.
 #
-apache_start=start
+: ${apache_start:=start}
 if [ -f @PKG_SYSCONFDIR@/apache_start.conf ]
 then
 	. @PKG_SYSCONFDIR@/apache_start.conf
