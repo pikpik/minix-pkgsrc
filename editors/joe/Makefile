@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 21:34:31 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:14:05 agc Exp $
 #
 
 DISTNAME=	joe2.8
@@ -15,5 +15,11 @@ WRKSRC=		${WRKDIR}/joe
 ALL_TARGET=	joe
 
 CFLAGS+=	-DTERMINFO
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Interix"
+CPPFLAGS+=	-Dsetpgrp=setpgid
+.endif
 
 .include "../../mk/bsd.pkg.mk"
