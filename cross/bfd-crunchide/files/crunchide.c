@@ -1,4 +1,4 @@
-/* $NetBSD: crunchide.c,v 1.1.1.1 1999/12/20 05:57:40 sakamoto Exp $ */
+/* $NetBSD: crunchide.c,v 1.2 2001/03/23 13:36:18 wiz Exp $ */
 /* NetBSD: crunchide.c,v 1.9 1999/01/11 22:40:00 kleink Exp 	 */
 
 /*
@@ -63,7 +63,7 @@
 
 #include <sys/cdefs.h>
 #ifndef lint
-__RCSID("$NetBSD: crunchide.c,v 1.1.1.1 1999/12/20 05:57:40 sakamoto Exp $");
+__RCSID("$NetBSD: crunchide.c,v 1.2 2001/03/23 13:36:18 wiz Exp $");
 #endif
 
 #include <unistd.h>
@@ -425,7 +425,7 @@ copy_section(ibfd, isection, arg)
 	}
 
 	isection->_cooked_size = isection->_raw_size;
-	isection->reloc_done = true;
+	isection->reloc_done = 1;
 
 	if (bfd_get_section_flags(ibfd, isection) & SEC_HAS_CONTENTS) {
 		memhunk = (PTR)malloc((unsigned int)size);
