@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/02 17:33:02 rh Exp $
+$NetBSD$
 
-MD5 (libgdgeda-1.6.tar.gz) = 6e2110d40e15c0455d581683ec111362
+SHA1 (libgdgeda-1.6.tar.gz) = 3fab4775bca5e4ea0d37259b7091d297edc97782
+Size (libgdgeda-1.6.tar.gz) = 327181 bytes

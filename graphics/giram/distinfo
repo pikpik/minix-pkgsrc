@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 1999/09/09 07:55:19 sakamoto Exp $
+$NetBSD$
 
-MD5 (Giram-0.1.2.tar.gz) = 8530b1391ad0c9c12bd8333cb4c58192
+SHA1 (Giram-0.1.2.tar.gz) = d0758b5bdc51d41c868ae68cf3ce1352b16b68ea
+Size (Giram-0.1.2.tar.gz) = 452540 bytes
 SHA1 (patch-ak) = 5a85fadb7debb6b341b6647ca34da279500572ad

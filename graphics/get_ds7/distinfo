@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/11/23 04:20:23 hubertf Exp $
+$NetBSD$
 
-MD5 (get_ds7_1.2.4.tar) = a10d8bd9d00d94acffd495d42cffc5d7
+SHA1 (get_ds7_1.2.4.tar) = 0f755b5e39fc577360204eb4f53217d9b63eff97
+Size (get_ds7_1.2.4.tar) = 51200 bytes
 SHA1 (patch-aa) = 15c75da504a229ee67b3f6235a0b37f2d60bfc17

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/07/04 00:48:04 hubertf Exp $
+$NetBSD$
 
-MD5 (sgif1122.tgz) = 87021191568840215e2397b1e44aeeef
+SHA1 (sgif1122.tgz) = 7080d835f1fe507c0f561756f669e9484e6f6af8
+Size (sgif1122.tgz) = 15960 bytes
 SHA1 (patch-aa) = 91b5de007a2644f00b5a083a6b782edd40b2b94a

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.12 2001/02/21 20:18:49 veego Exp $
+$NetBSD$
 
-MD5 (xsane-0.72.tar.gz) = 30e35e4d17e59270a839eb9f81293ade
+SHA1 (xsane-0.72.tar.gz) = aeecfbe4108720344e5be6374037a3f07db09fee
+Size (xsane-0.72.tar.gz) = 1174266 bytes

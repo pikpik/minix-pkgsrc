@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.5 2000/05/12 15:22:28 is Exp $
+$NetBSD$
 
-MD5 (magicpoint-1.07a.tar.gz) = 11a5d1a56de56ba8a334b3f14e0f6f50
+SHA1 (magicpoint-1.07a.tar.gz) = 952de711444cef2b97073c66844579bb6cd9ad95
+Size (magicpoint-1.07a.tar.gz) = 659770 bytes

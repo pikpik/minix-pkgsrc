@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/21 20:12:29 veego Exp $
+$NetBSD$
 
-MD5 (sane-frontends-1.0.4.tar.gz) = f8d1d0afba88f1d1604c67e14738b74d
+SHA1 (sane-frontends-1.0.4.tar.gz) = b071e7ec9c40dc6847efa8f2f2e55c8d1dbb70d6
+Size (sane-frontends-1.0.4.tar.gz) = 145797 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/01 15:04:46 tron Exp $
+$NetBSD$
 
-MD5 (alevt-1.6.0.tar.gz) = 3826d99d14d0a8f70f8d3625b2d06d03
+SHA1 (alevt-1.6.0.tar.gz) = ac7d71e738e77fc485c59221171011673e239bbe
+Size (alevt-1.6.0.tar.gz) = 116646 bytes
 SHA1 (patch-aa) = 86e57806c89cdcf55be6125c0c3af6c136c76022

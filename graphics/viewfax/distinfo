@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/08/17 12:28:36 rh Exp $
+$NetBSD$
 
-MD5 (viewfax-2.4.tar.gz) = 908fc11a026969e1114d22fa27e66af4
+SHA1 (viewfax-2.4.tar.gz) = 97162d138010acae67801a3ce3923095b8f3889c
+Size (viewfax-2.4.tar.gz) = 55892 bytes
 SHA1 (patch-aa) = fce838fb1e79a557065b5821f564e91c1f4e4f07

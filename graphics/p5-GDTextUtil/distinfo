@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/11/28 00:51:10 david Exp $
+$NetBSD$
 
-MD5 (GDTextUtil-0.80.tar.gz) = 3569b86f250ad28bdb771cbc6c83d0aa
+SHA1 (GDTextUtil-0.80.tar.gz) = 5e642eb0a83b1f3eeb858200daa3bc42ac622f43
+Size (GDTextUtil-0.80.tar.gz) = 36855 bytes

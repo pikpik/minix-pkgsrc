@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/11/29 00:47:43 david Exp $
+$NetBSD$
 
-MD5 (GDGraph-1.33.tar.gz) = 7ad74a355a46fdad0ebdc686efd1f1c8
+SHA1 (GDGraph-1.33.tar.gz) = 8956761f803297d1bc6911024c94785813c2bbb0
+Size (GDGraph-1.33.tar.gz) = 113158 bytes
