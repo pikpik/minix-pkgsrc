@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/qgreylist
+bin/qgreylist-info
+share/doc/qgreylist/README
+@dirrm share/doc/qgreylist
