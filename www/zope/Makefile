@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/12/12 17:28:23 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 1998/12/18 00:39:02 tsarna Exp $
 #
 
-DISTNAME=	Zope-1.9.0b3-src
-PKGNAME=	zope-1.9.0b3
+DISTNAME=	Zope-1.9.0-src
+PKGNAME=	zope-1.9.0
 CATEGORIES=	www
-MASTER_SITES=   http://www.zope.org/Download/Releases/Zope-1.9.0b3/
+MASTER_SITES=   http://www.zope.org/Download/Releases/Zope-1.9.0/
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.zope.org/
