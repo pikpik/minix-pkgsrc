@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2001/02/08 13:34:55 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2001/02/16 15:51:49 wiz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -12,6 +12,7 @@ SUBDIR+=	darcnes
 SUBDIR+=	doscmd
 SUBDIR+=	fmsx
 SUBDIR+=	freebsd_lib
+SUBDIR+=	hercules
 SUBDIR+=	ia64sim
 SUBDIR+=	linux-locale
 SUBDIR+=	linuxppc_lib
