@@ -70,9 +70,6 @@ LOWER_VENDOR?=		unknown
 .  endif
 
 .elif ${OPSYS} == "SunOS"
-LOWER_OPSYS?=		solaris
-LOWER_ARCH!=		${UNAME} -p
-MAKEFLAGS+=		LOWER_ARCH=${LOWER_ARCH}
 .  if ${MACHINE_ARCH} == "sparc"
 SPARC_TARGET_ARCH?=	sparcv7
 .  elif ${MACHINE_ARCH} == "sun4"
@@ -80,8 +77,14 @@ MACHINE_ARCH=		sparc
 SPARC_TARGET_ARCH?=	sparcv7
 .  elif ${MACHINE_ARCH} == "i86pc"
 MACHINE_ARCH=		i386
+.  elif ${MACHINE_ARCH} == "unknown"
+.    if !defined(LOWER_ARCH)
+LOWER_ARCH!=		${UNAME} -p
+.    endif	# !defined(LOWER_ARCH)
+MAKEFLAGS+=		LOWER_ARCH=${LOWER_ARCH}
 .  endif
 LOWER_VENDOR?=		sun
+LOWER_OPSYS?=		solaris
 
 .elif ${OPSYS} == "Linux"
 LOWER_OPSYS?=		linux
