@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/08/23 11:39:27 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/31 14:11:45 wiz Exp $
 #
 
-DISTNAME=	libsndfile-1.0.0
+DISTNAME=	libsndfile-1.0.1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.zipworld.com.au/~erikd/libsndfile/
 
