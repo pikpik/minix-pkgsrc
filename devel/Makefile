@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.404 2003/07/18 12:40:31 agc Exp $
+# $NetBSD: Makefile,v 1.405 2003/07/22 17:35:34 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -44,6 +44,7 @@ SUBDIR+=	bonobo-activation
 SUBDIR+=	bonobo-conf
 SUBDIR+=	boost
 SUBDIR+=	buildtool
+SUBDIR+=	buildtool-doc
 SUBDIR+=	c-cpp-reference
 SUBDIR+=	c4
 SUBDIR+=	cbrowser
