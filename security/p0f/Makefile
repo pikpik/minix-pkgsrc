@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/09/06 04:56:28 itojun Exp $
+# $NetBSD: Makefile,v 1.7 2003/10/01 23:13:13 recht Exp $
 #
 
 DISTNAME=	p0f
@@ -15,6 +15,8 @@ USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 
 CONF_FILES=	${PREFIX}/share/examples/p0f/p0f.fp ${PKG_SYSCONFDIR}/p0f.fp
+
+DIST_SUBDIR=	${PKGNAME}
 
 PKG_SYSCONFSUBDIR=     p0f
 
