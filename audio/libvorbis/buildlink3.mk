@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/03/05 19:25:08 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2004/03/18 09:12:08 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBVORBIS_BUILDLINK3_MK:=	${LIBVORBIS_BUILDLINK3_MK}+
@@ -15,6 +15,6 @@ BUILDLINK_DEPENDS.libvorbis+=	libvorbis>=1.0.1
 BUILDLINK_PKGSRCDIR.libvorbis?=	../../audio/libvorbis
 .endif	# LIBVORBIS_BUILDLINK3_MK
 
-.include "../../audio/libogg/buildlink3.mk"
+.include "../../multimedia/libogg/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

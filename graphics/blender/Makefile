@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/03/26 02:27:41 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2004/04/12 02:41:45 snj Exp $
 #
 
 DISTNAME=		blender-2.32
@@ -35,7 +35,7 @@ DEPENDS+=		blender-doc:../../graphics/blender-doc
 
 .if defined(BLENDER_USE_OGG)
 CONFIGURE_ARGS+=	--with-ogg=${PREFIX}
-.include "../../audio/libogg/buildlink3.mk"
+.include "../../multimedia/libogg/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-ogg --disable-oggtest
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/02/20 00:41:16 abs Exp $
+# $NetBSD: Makefile,v 1.22 2004/04/11 17:39:05 xtraeme Exp $
 #
 
 DISTNAME=	mserv-0.35
@@ -38,7 +38,7 @@ post-install:
 		${WRKSRC}/webclient/* \
 		${PREFIX}/share/mserv/webclient
 
-.include "../../audio/libogg/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
+.include "../../multimedia/libogg/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

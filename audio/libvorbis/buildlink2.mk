@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:38:17 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/12/08 14:39:40 wiz Exp $
 
 .if !defined(LIBVORBIS_BUILDLINK2_MK)
 LIBVORBIS_BUILDLINK2_MK=	# defined
@@ -14,7 +14,7 @@ BUILDLINK_FILES.libvorbis+=	lib/libvorbis.*
 BUILDLINK_FILES.libvorbis+=	lib/libvorbisenc.*
 BUILDLINK_FILES.libvorbis+=	lib/libvorbisfile.*
 
-.include "../../audio/libogg/buildlink2.mk"
+.include "../../multimedia/libogg/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	libvorbis-buildlink
 
