@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/06/29 08:37:38 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2003/03/19 17:25:10 jschauma Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -21,6 +21,7 @@ SUBDIR+=	linpack-bench
 SUBDIR+=	lmbench
 SUBDIR+=	netio
 SUBDIR+=	netpipe
+SUBDIR+=	nettest
 SUBDIR+=	nsieve
 SUBDIR+=	nttcp
 SUBDIR+=	paranoia

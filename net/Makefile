@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.366 2003/04/06 11:06:47 hubertf Exp $
+# $NetBSD: Makefile,v 1.367 2003/04/10 17:10:59 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -154,6 +154,7 @@ SUBDIR+=	netsaint-base
 SUBDIR+=	netsaint-plugin-cluster
 SUBDIR+=	netsaint-plugin-snmp
 SUBDIR+=	netsaint-plugins
+SUBDIR+=	nettest
 SUBDIR+=	ngrep
 SUBDIR+=	nidentd
 SUBDIR+=	nmap
