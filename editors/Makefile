@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2001/10/28 08:53:01 jmc Exp $
+# $NetBSD: Makefile,v 1.54 2001/11/29 18:09:47 wiz Exp $
 #
 
 COMMENT=	Editors
@@ -22,6 +22,7 @@ SUBDIR+=	nano
 SUBDIR+=	ne
 SUBDIR+=	nedit
 SUBDIR+=	ng
+SUBDIR+=	nvi
 SUBDIR+=	nvi-m17n
 SUBDIR+=	pico
 SUBDIR+=	sam
