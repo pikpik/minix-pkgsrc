@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/07/29 14:24:46 bouyer Exp $
+# $NetBSD: Makefile,v 1.11 2001/07/29 14:34:38 bouyer Exp $
 
 DISTNAME=	horde-1.2.6
 CATEGORIES=	www
@@ -9,7 +9,7 @@ HOMEPAGE=	http://www.horde.org/
 COMMENT=	PHP application framework
 
 DEPENDS+=	php>3.0.17:../../www/php4
-DEPENDS+=	php-pcre>3.0.17:../../www/php4-pcre
+DEPENDS+=	php-pcre>3.0.17:../../devel/php4-pcre
 
 NO_CONFIGURE=	# defined
 
