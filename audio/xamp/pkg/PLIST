@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xamp
+man/man1/xamp.1.gz
