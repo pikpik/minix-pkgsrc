@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/06 14:01:52 tv Exp $
+# $NetBSD: Makefile,v 1.10 2004/04/24 23:05:46 snj Exp $
 #
 
 DISTNAME=	spamass-milter-0.1.3a
@@ -15,7 +15,7 @@ DEPENDS+=	spamassassin>=2.44:../../mail/spamassassin
 USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_PKGINSTALL=	YES
-USE_GCC_SHLIB=	YES
+USE_LANGUAGES=	c++
 
 RCD_SCRIPTS=	spamass-milter
 
