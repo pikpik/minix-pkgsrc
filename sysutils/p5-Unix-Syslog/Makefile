@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2001/10/23 19:27:31 veego Exp $
+# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:19 jlam Exp $
 
-DISTNAME=		Syslog-0.95
+DISTNAME=		Syslog-0.97
 PKGNAME=		p5-Unix-${DISTNAME}
 SVR4_PKGNAME=		p5sl
 CATEGORIES=		sysutils perl5
