@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/03/13 17:37:45 fredb Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/21 15:27:16 wiz Exp $
 #
 
 DISTNAME=	kworldwatch-0.6
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+=--datadir=${BUILDLINK_PREFIX.kdebase}/share/kde \
 		--with-qt-dir=${QTDIR} \
 		--with-qt-libraries='${QTDIR}/lib -L${LOCALBASE}/lib' \
 		--enable-path-check
-#CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV=	KDEDIR=${BUILDLINK_PREFIX.kdebase} \
 		CXXFLAGS="${CFLAGS}" \
 		all_libraries="-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -L${X11BASE}/lib -Wl,-R${X11BASE}/lib"
