@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/05/04 20:38:07 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/13 13:51:06 wiz Exp $
 #
 
 DISTNAME=	elf-0.5.3
@@ -20,6 +20,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/elf ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/doc/elf.1 ${PREFIX}/man/man1
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../mk/curses.buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
