@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/12/13 21:10:20 xtraeme Exp $
 
 DISTNAME=		obconf-1.5
-CATEGORIES=		x11 wm
+CATEGORIES=		wm
 MASTER_SITES=		http://icculus.org/openbox/obconf/
 
 MAINTAINER=		snj@pobox.com
