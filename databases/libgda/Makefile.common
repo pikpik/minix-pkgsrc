@@ -1,8 +1,7 @@
-# $NetBSD: Makefile.common,v 1.22 2004/10/03 00:13:18 tv Exp $
+# $NetBSD: Makefile.common,v 1.23 2005/02/05 16:56:40 jmmv Exp $
 #
 
 DISTNAME=		libgda-1.0.4
-PKGREVISION=		2
 CATEGORIES=		databases gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgda/1.0/}
 EXTRACT_SUFX=		.tar.bz2
