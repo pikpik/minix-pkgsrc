@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/07/08 01:40:14 tron Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/13 23:45:27 tron Exp $
 #
 
 DISTNAME=	gnome-pim-1.0.7
@@ -20,7 +20,7 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/bison:../../devel/bison
-DEPENDS+=	gnome-core-1.0.5:../../x11/gnome-core
+DEPENDS+=	gnome-core-1.0.5:../../x11/gnome-libs
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
