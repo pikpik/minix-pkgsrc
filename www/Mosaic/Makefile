@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/01/30 23:18:54 agc Exp $
+# $NetBSD: Makefile,v 1.10 1999/04/13 01:00:46 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.15 1998/05/27 08:44:56 dburr Exp
 #
 
@@ -24,7 +24,7 @@ GNU_CONFIGURE=	yes
 
 LDFLAGS+=	-L${X11BASE}/lib
 
-CONFIGURE_ENV= CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include"
+CONFIGURE_ENV= CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include -Dunix"
 CONFIGURE_ARGS=	--with-zdir=/usr --with-jpegdir=${LOCALBASE} --with-pngdir=${LOCALBASE}
 
 do-install:
