@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tty.c.orig	Sat Feb 10 21:45:49 2001
+--- tty.c.orig	Sun Mar 30 22:57:59 2003
 +++ tty.c
-@@ -92,7 +92,12 @@
+@@ -93,7 +93,12 @@ struct sgttyb oldsb, newsb;
  #endif
  struct termio oldsb, newsb;
  #else

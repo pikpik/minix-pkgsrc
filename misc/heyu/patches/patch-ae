@@ -1,8 +1,8 @@
-$NetBSD: patch-ae,v 1.1 2002/07/02 14:03:53 wiz Exp $
+$NetBSD$
 
---- Configure.orig	Mon Apr 16 07:24:14 2001
+--- Configure.orig	Mon Mar 31 08:58:14 2003
 +++ Configure
-@@ -15,9 +15,9 @@
+@@ -15,9 +15,9 @@ EoF
  
  # paths:
  cat >> Makefile <<EoF
@@ -13,9 +13,9 @@ $NetBSD: patch-ae,v 1.1 2002/07/02 14:03:53 wiz Exp $
 +MAN = ${PREFIX}/man/man1
 +MAN5 = ${PREFIX}/man/man5
  GROUP = sys
- OWNER = bin
+ OWNER = root
  
-@@ -111,7 +111,7 @@
+@@ -117,7 +117,7 @@ EoF
  	;;
      netbsd)
  	cat >> Makefile <<-EoF

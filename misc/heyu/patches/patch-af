@@ -1,9 +1,9 @@
 $NetBSD$
 
---- xwrite.c.orig	Wed Apr 11 06:46:26 2001
+--- xwrite.c.orig	Sun Mar 30 22:30:31 2003
 +++ xwrite.c
-@@ -47,7 +47,7 @@
- #    endif
+@@ -48,7 +48,7 @@
+ #include <sys/ioctl.h>
  #endif
  
 -#ifdef OSF
