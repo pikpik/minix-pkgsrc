@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2000/12/27 15:46:16 hubertf Exp $
+# $NetBSD: Makefile,v 1.84 2000/12/28 16:12:20 martin Exp $
 #
 
     SUBDIR += amanda
@@ -18,6 +18,7 @@
     SUBDIR += crashme
     SUBDIR += daemontools
     SUBDIR += depot
+    SUBDIR += dog
     SUBDIR += e2fsprogs
     SUBDIR += fileutils
     SUBDIR += findutils
