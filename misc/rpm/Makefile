@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/07/31 04:14:09 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2000/09/10 12:02:48 wiz Exp $
 #
 
 DISTNAME=	rpm-2.5.4
@@ -9,10 +9,11 @@ MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-2.5.x/ \
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.rpm.org/
 
-DEPENDS+=	gettext>=0.10.35nb1:../../devel/gettext
+BUILD_DEPENDS+=	msgfmt:../../devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_LIBINTL=	yes
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/rpm
