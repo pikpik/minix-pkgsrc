@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2004/08/27 06:29:08 jlam Exp $
+# $NetBSD: Makefile,v 1.86 2004/10/01 20:52:25 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -178,7 +178,7 @@ WRKSRC_PERL5=		${WRKSRC}/perl
 STATIC_WRKDIR=		${WRKDIR}/static
 STATIC_MAKEFLAGS=	MKPIC=no STATIC_PERL=NO
 STATIC_MAKEFLAGS+=	WRKDIR=${STATIC_WRKDIR}
-STATIC_MAKEFLAGS+=	ALL_TARGET=perl
+STATIC_MAKEFLAGS+=	BUILD_TARGET=perl
 WRKSRC_PERL5=		${STATIC_WRKDIR}/${WRKSRC:T}/perl
 
 post-build:
