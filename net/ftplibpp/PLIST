@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/ftplib.h
+lib/libftp.so
+lib/libftp.so.1
+lib/libftp.so.1.0
+share/doc/ftplibpp/ftplibpp.html
+@dirrm share/doc/ftplibpp
