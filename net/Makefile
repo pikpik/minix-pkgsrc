@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.298 2002/05/07 22:25:25 hubertf Exp $
+# $NetBSD: Makefile,v 1.299 2002/05/09 16:22:30 taca Exp $
 #
 
 COMMENT=	Networking tools
@@ -183,6 +183,7 @@ SUBDIR+=	rdesktop
 SUBDIR+=	rdist6
 SUBDIR+=	ripe-whois
 SUBDIR+=	ripe-whois-tools
+SUBDIR+=	rootprobe
 SUBDIR+=	rp-pppoe
 SUBDIR+=	rsync
 SUBDIR+=	ruby-drb
