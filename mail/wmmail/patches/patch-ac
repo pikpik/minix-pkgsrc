@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sat Jan 30 15:00:13 1999
++++ configure	Sat Jan 30 15:06:55 1999
+@@ -2459,7 +2459,7 @@
+  s/@@/%@/; s/@@/@%/; s/@g\$/%g/' > conftest.subs <<\\CEOF
+ $ac_vpsub
+ $extrasub
+-s%@CFLAGS@%$CFLAGS%g
++s%@CFLAGS@%$CFLAGS -DPREFIX=\\"$prefix\\"%g
+ s%@CPPFLAGS@%$CPPFLAGS%g
+ s%@CXXFLAGS@%$CXXFLAGS%g
+ s%@DEFS@%$DEFS%g
