@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2003/06/09 17:01:25 frueauf Exp $
+@comment $NetBSD: PLIST,v 1.10 2004/04/23 22:07:58 reed Exp $
 bin/nessus
 bin/nessus-mkcert-client
 bin/nessus-mkrand
@@ -27,5 +27,5 @@ sbin/nessusd
 @unexec ${RMDIR} %D/lib/nessus 2>/dev/null || ${TRUE}
 @exec ${MKDIR} %D/etc/nessus
 @unexec ${RMDIR} %D/etc/nessus 2>/dev/null || ${TRUE}
-@exec ${MKDIR} /var/nessus
-@unexec ${RMDIR} /var/nessus 2>/dev/null || ${TRUE}
+@exec ${MKDIR} ${VARBASE}/nessus
+@unexec ${RMDIR} ${VARBASE}/nessus 2>/dev/null || ${TRUE}
