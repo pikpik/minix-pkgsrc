@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/02 09:03:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/02 22:24:50 jmmv Exp $
 #
 
 DISTNAME=		bitlbee-0.80
 CATEGORIES=		chat
 MASTER_SITES=		http://www.lintux.cx/downloads/
 
-MAINTAINER=		jrp@hispabsd.org
+MAINTAINER=		xtraeme@NetBSD.org
 HOMEPAGE=		http://www.lintux.cx/bitlbee.html
 COMMENT=		IRC to other chat networks gateway
 

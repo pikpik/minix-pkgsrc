@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/02 11:53:45 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/13 13:50:28 wiz Exp $
 #
 
 DISTNAME=	streamtuner-local-0.2.1
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	audio www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=streamtuner/}
 
-MAINTAINER=	jrp@hispabsd.org
+MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Streamtuner plugin providing access to your local MP3 repository
 

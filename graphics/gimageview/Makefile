@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2003/07/12 11:29:43 zuntum Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/13 13:52:02 wiz Exp $
 
 DISTNAME=	gimageview-0.2.23
 PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmmviewer/}
 
-MAINTAINER=	jrp@hispabsd.org
+MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://gtkmmviewer.sourceforge.net/
 COMMENT=	GTK+ based image viewer with tabbed browsing
 

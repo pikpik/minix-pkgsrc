@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2003/07/13 13:50:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/23 11:21:52 jmmv Exp $
 #
 
 DISTNAME=	streamtuner-0.10.0
 CATEGORIES=	audio www
 MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/streamtuner.pkg/0.10.0/
 
-MAINTAINER=	jrp@hispabsd.org
+MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Stream directory browser
 
