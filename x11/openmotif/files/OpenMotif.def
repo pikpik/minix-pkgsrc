@@ -1,0 +1,13 @@
+/*	$NetBSD$	*/
+
+#ifndef TopLevelProject
+# defined TopLevelProject	OpenMotif
+#endif
+
+#ifndef ProjectRulesFile
+# define ProjectRulesFile	<OpenMotif.rules>
+#endif
+
+#ifndef ProjectTmplFile
+# define ProjectTmplFile	<OpenMotif.tmpl>
+#endif

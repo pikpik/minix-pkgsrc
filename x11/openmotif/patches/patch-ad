@@ -1,13 +1,13 @@
-$NetBSD: patch-config-cf-Imakefile,v 1.1.1.1 2000/10/29 16:17:13 mjl Exp $
+$NetBSD$
 
---- config/cf/Imakefile.orig	Sun Oct 29 15:17:58 2000
-+++ config/cf/Imakefile	Sun Oct 29 15:19:49 2000
-@@ -121,7 +121,7 @@
- QNX.cf \
- xfree86.cf
+--- config/cf/Imakefile.orig	Sat Sep  8 00:39:50 2001
++++ config/cf/Imakefile
+@@ -123,6 +123,8 @@
  
--INSTFILES = $(RULEFILES) $(TMPLFILES) $(DEFFILES) $(CFFILES) $(LOCALFILES)
-+INSTFILES = Motif.rules Motif.tmpl host.def
+ INSTFILES = $(RULEFILES) $(TMPLFILES) $(DEFFILES) $(CFFILES) $(LOCALFILES)
  
++#include <NoInstall.rules>
++
  all::
  
+ InstallMultipleDestFlags(install,$(INSTFILES),$(CONFIGDIR),$(INSTDATFLAGS))
