@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/01/26 21:48:00 seb Exp $
+@comment $NetBSD$
 bin/dnet-config
 include/dnet.h
 include/dnet/addr.h
@@ -15,7 +15,7 @@ include/dnet/rand.h
 include/dnet/route.h
 include/dnet/tcp.h
 include/dnet/udp.h
-lib/libdnet.a
+lib/libdnet.la
 man/man3/dnet.3
 man/man8/dnet.8
 sbin/dnet
