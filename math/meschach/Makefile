@@ -1,4 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/02/25 21:40:21 jtb Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/27 18:42:05 jtb Exp $
+#
+#  XXX The tests run during configuration should not be compiled 
+#      with optimization as they determine machine parameters and
+#      may give incorrect results if optimized.
 
 DISTNAME=		mesch12b
 PKGNAME=		meschach-1.2b
@@ -18,8 +22,8 @@ pre-patch:
 	${CP} ${FILESDIR}/makefile.in ${WRKSRC}
 
 post-patch:
-	${SED} -e 's:@PREFIX@:'${PREFIX}':g' <				\
-	${FILESDIR}/makefile.test > ${WRKSRC}/Makefile
+	${SED} -e 's:@PREFIX@:'${PREFIX}':g' ${FILESDIR}/makefile.test \
+	> ${WRKSRC}/Makefile
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/meschach
