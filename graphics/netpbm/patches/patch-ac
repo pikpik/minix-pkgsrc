@@ -1,8 +1,8 @@
 $NetBSD$
 
---- shhopt/Makefile.orig	Sat May 19 20:39:03 2001
+--- shhopt/Makefile.orig	Tue Jan 29 04:49:21 2002
 +++ shhopt/Makefile
-@@ -63,7 +63,7 @@
+@@ -58,7 +58,7 @@
  		-L. -I. -L$(INSTLIBDIR) -I$(INSTINCDIR) -lshhopt
  
  .c.o:
