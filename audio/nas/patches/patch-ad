@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.8 2002/10/18 14:02:13 jlam Exp $
+$NetBSD$
 
---- server/dda/voxware/auvoxware.c.orig	Thu Jul 25 12:42:28 2002
+--- server/dda/voxware/auvoxware.c.orig	2004-10-22 21:44:47.000000000 +0000
 +++ server/dda/voxware/auvoxware.c
-@@ -238,8 +238,13 @@
+@@ -242,8 +242,13 @@ SndStat sndStatIn =
  	256,			/* fragSize */
  	3,			/* minFrags */
  	32,			/* maxFrags */
@@ -16,7 +16,7 @@ $NetBSD: patch-ad,v 1.8 2002/10/18 14:02:13 jlam Exp $
  #if defined(__CYGWIN__)
  	O_RDONLY,		/* howToOpen */
  #else
-@@ -260,7 +265,11 @@
+@@ -264,7 +269,11 @@ SndStat sndStatIn =
  	256,			/* fragSize */
  	3,			/* minFrags */
  	32,			/* maxFrags */
