@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/01/20 12:15:42 agc Exp $
-#
+# $NetBSD: Makefile,v 1.17 2004/03/09 23:26:15 snj Exp $
 
 DISTNAME=		incoming		# yes, really!
 PKGNAME=		xgalaga-2.0.34
@@ -9,7 +8,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xgalaga/}
 EXTRACT_SUFX=		# empty
 
 MAINTAINER=		root@garbled.net
-HOMEPAGE=		http://sourceforge.net/projects/xgalaga/
 COMMENT=		Very fast true-to-the-original port of galaga for X11
 
 WRKSRC=			${WRKDIR}/${PKGNAME:C,nb${PKGREVISION},,}
