@@ -1,3 +1,5 @@
+$NetBSD$
+
 Index: regexp.c
 ===================================================================
 RCS file: /home/siren/src/tvtwm/regexp.c,v
