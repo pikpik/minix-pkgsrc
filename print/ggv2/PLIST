@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/11/03 09:17:01 rh Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/02/14 21:12:49 jmmv Exp $
 bin/ggv
 lib/bonobo/servers/GNOME_GGV.server
 libexec/ggv-postscript-viewer
@@ -60,6 +60,7 @@ share/pixmaps/ggv/zoom.xpm
 share/pixmaps/gnome-ghostview.png
 @dirrm share/pixmaps/ggv
 @dirrm share/omf/ggv
+@comment in scrollkeeper: @dirrm share/omf
 @dirrm share/gnome/help/ggv/C/figures
 @dirrm share/gnome/help/ggv/C
 @dirrm share/gnome/help/ggv

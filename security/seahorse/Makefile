@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/01/10 07:49:51 cjep Exp $
+# $NetBSD: Makefile,v 1.6 2003/02/15 11:03:42 jmmv Exp $
 
 DISTNAME=	seahorse-0.7.0
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=seahorse/}
 
@@ -24,5 +25,5 @@ GCONF2_SCHEMAS= 	seahorse.schemas
 .include "../../devel/libglade2/buildlink2.mk"
 .include "../../devel/libgnomeui/buildlink2.mk"
 .include "../../security/gpgme/buildlink2.mk"
-.include "../../textproc/scrollkeeper/buildlink2.mk"
+.include "../../textproc/scrollkeeper/omf.mk"
 .include "../../mk/bsd.pkg.mk"
