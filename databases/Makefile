@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.154 2004/12/04 17:26:19 taca Exp $
+# $NetBSD: Makefile,v 1.155 2004/12/21 00:09:21 he Exp $
 #
 
 COMMENT=	Databases
@@ -127,6 +127,7 @@ SUBDIR+=	py-postgresql73
 SUBDIR+=	py-psycopg
 SUBDIR+=	py-sqlite
 SUBDIR+=	py-sybase
+SUBDIR+=	py-table
 SUBDIR+=	quicklist
 SUBDIR+=	rdb
 SUBDIR+=	rrdtool
