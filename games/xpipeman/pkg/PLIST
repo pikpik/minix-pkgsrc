@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/xpipeman
+man/man6/xpipeman.6
+share/xpipeman/xpipescores
+@unexec rm -f %D/share/xpipeman/xpipescores
+@dirrm share/xpipeman
