@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2000/03/11 06:02:45 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2000/05/05 04:59:54 groo Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -6,6 +6,7 @@
     SUBDIR += bwbasic
     SUBDIR += cint
     SUBDIR += clisp
+    SUBDIR += drscheme
     SUBDIR += egcs
     SUBDIR += elisp-manual
     SUBDIR += elk
