@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/17 07:09:51 uebayasi Exp $
 
 DISTNAME=	liece-1.4.8
 CATEGORIES=	chat
@@ -8,7 +8,7 @@ MAINTAINER=	uebayasi@netbsd.org
 HOMEPAGE=	http://www.unixuser.org/~ueno/liece/
 COMMENT=	IRC client for Emacs/XEmacs
 
-DEPENDS=	apel>=10.3:../../devel/apel
+DEPENDS=	${PKGNAME_PREFIX}apel>=10.3:../../devel/apel
 
 .include "../../mk/emacs.mk"
 

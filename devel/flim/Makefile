@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/07/06 02:00:11 jun Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/14 02:45:25 uebayasi Exp $
 
 DISTNAME=	flim-1.14.3
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 HOMEPAGE=	http://www.m17n.org/FLIM/
 COMMENT=	Emacs lisp library for message representation/encoding
 
-DEPENDS+=	apel-10.*:../../devel/apel
+DEPENDS+=	${PKGNAME_PREFIX}apel-10.*:../../devel/apel
 
 .include "../../mk/emacs.mk"
 
