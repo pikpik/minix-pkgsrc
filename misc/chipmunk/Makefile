@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/06/23 18:18:53 drochner Exp $
+# $NetBSD: Makefile,v 1.2 1999/07/13 01:32:22 jlam Exp $
 #
 
 DISTNAME=       chipmunk-1.4
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.bitwizard.nl/chipmunk/index.html
 CPPFLAGS+=	-DHAVE_READLINE_H=1
 LIBREADLINE=	edit
 .else
-DEPENDS+=	readline-4.0:../../devel/readline
+DEPENDS+=	readline>=4.0:../../devel/readline
 CPPFLAGS+=	-I${LOCALBASE}/include
 LIBREADLINE=	readline
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2000/05/02 15:24:08 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2000/05/17 09:22:28 veego Exp $
 
 DISTNAME=		samba-2.0.7
 WRKSRC=			${WRKDIR}/${DISTNAME}/source
@@ -13,7 +13,7 @@ HOMEPAGE=		http://www.samba.org/
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 
 .if !exists(/usr/include/readline.h)
-DEPENDS+=		readline-4.0:../../devel/readline
+DEPENDS+=		readline>=4.0:../../devel/readline
 .endif
 
 GNU_CONFIGURE=		# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/12/28 04:29:52 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2000/07/11 09:19:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/06/08 09:21:37 tg Exp
 #
 
@@ -11,7 +11,7 @@ EXTRACT_SUFX=   .tar.Z
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://infopad.eecs.berkeley.edu/~icdesign/SPICE/
 
-DEPENDS+=	readline-4.0:../../devel/readline
+DEPENDS+=	readline>=4.0:../../devel/readline
 
 # documentation in ftp://ic.eecs.berkeley.edu/pub/Spice3/um.3f3.ps
 
