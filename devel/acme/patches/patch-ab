@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- platform/std.c.orig	Thu Mar 22 15:17:38 2001
++++ platform/std.c
+@@ -27,7 +27,7 @@
+     psLibPath = (char *) ALLOC_PROCESS(c + 1);
+     strcpy(psLibPath, pPathname);
+   } else {
+-    psLibPath = NULL;
++    psLibPath = DEFAULT_ACME_LIB "/";
+   }
+ }
+ 
