@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/12/30 17:21:55 cjep Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/03 18:49:39 reed Exp $
 
 DISTNAME=		kile-1.6
 PKGREVISION=		1
@@ -10,7 +10,7 @@ HOMEPAGE=		http://kile.sourceforge.net/
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
 
 USE_BUILDLINK2=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ENV+=         xdg_appsdir="${KDEDIR}/share/kde/applnk/Applications"

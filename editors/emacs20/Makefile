@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:34:26 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/08/09 10:48:10 seb Exp $
 
 DISTNAME=	emacs-20.7
 PKGREVISION=	2
@@ -24,7 +24,7 @@ CONFLICTS=	mule-[0-9]*
 
 USE_BUILDLINK2=	yes
 GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
 GNU_ARCH.mipsbe= mips
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/09/28 09:13:56 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/04 19:48:25 xtraeme Exp $
 #
 
 DISTNAME=	hnb-1.8.1
@@ -14,7 +14,7 @@ INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]* NetBSD-1.6[A-U]-*
 
 GNU_CONFIGURE=	yes
 USE_BUILDLINK2=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"

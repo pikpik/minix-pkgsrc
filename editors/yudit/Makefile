@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:35:16 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/10/05 12:46:57 wiz Exp $
 #
 
 DISTNAME=	yudit-2.7.6
@@ -10,7 +10,7 @@ HOMEPAGE=	http://yudit.org/
 COMMENT=	Unicode Text Editor
 
 USE_BUILDLINK2=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 
