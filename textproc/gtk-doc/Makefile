@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/02/19 16:49:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/26 10:34:09 recht Exp $
 #
 
 DISTNAME=	gtk-doc-1.2
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtk-doc/1.2/}
 
