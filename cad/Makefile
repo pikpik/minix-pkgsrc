@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/02/16 20:56:41 rh Exp $
+# $NetBSD: Makefile,v 1.22 2000/02/25 01:04:12 wiz Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
@@ -13,6 +13,7 @@
     SUBDIR += gnetlist
     SUBDIR += gschem
     SUBDIR += gsymcheck
+    SUBDIR += gwave
     SUBDIR += libgeda
     SUBDIR += ntesla
     SUBDIR += oregano
