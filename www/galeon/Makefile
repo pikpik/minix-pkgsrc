@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2001/10/06 16:48:24 taya Exp $
+# $NetBSD: Makefile,v 1.15 2001/10/17 06:10:08 tron Exp $
 
-DISTNAME=	galeon-0.12.3
+DISTNAME=	galeon-0.12.5
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=galeon/}
 
@@ -9,7 +9,7 @@ HOMEPAGE=	http://galeon.sourceforge.net/
 COMMENT=	GNOME web browser based on gecko (mozilla rendering engine)
 
 BUILD_DEPENDS+=	xml-i18n-tools>=0.8.1:../../textproc/xml-i18n-tools
-DEPENDS+=	mozilla>=0.9.4:../mozilla
+DEPENDS+=	mozilla>=0.9.5:../mozilla
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
