@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/01 15:59:17 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/06/02 01:21:22 jschauma Exp $
 #
 
-DISTNAME=	linuxsms-0.64
+DISTNAME=	linuxsms-0.65
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=linuxsms/}
 
