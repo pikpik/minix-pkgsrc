@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.3 1999/04/14 04:50:22 proff Exp $
+# $NetBSD: Makefile,v 1.4 1999/06/09 17:05:33 agc Exp $
 
-DISTNAME=	festvox-el11-1.3.1
+DISTNAME=	festvox-el11-1.4.0
 WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.3.1/
+MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.0/
 DISTFILES=	festvox_ellpc11k.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
 
-DEPENDS+=	festival-1.3.1:../festival
+DEPENDS+=	festival-1.4.0:../festival
 
 LICENSE=	no-commercial-use
 
