@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/02/08 12:07:15 jdolecek Exp $
+# $NetBSD: Makefile,v 1.6 2000/02/09 22:17:44 tron Exp $
 
 DISTNAME=	q1source
 PKGNAME=	quake-2.30
@@ -13,8 +13,8 @@ HOMEPAGE=	http://www.idsoftware.com/
 
 BUILD_DEPENDS+=	${UNZIP}:../../archivers/unzip
 DEPENDS+=	Mesa-*:../../graphics/Mesa
+DEPENDS+=	quakedata-*:../../games/quakedata
 
-ONLY_FOR_PLATFORMS=	NetBSD-1.4.[1-9]-i386
 USE_GMAKE=	yes
 EXTRACT_CMD=	${UNZIP} -q ${DISTDIR}/${EXTRACT_ONLY}
 MAKE_ENV+=	MAINDIR=${WRKSRC}
