@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/24 04:32:55 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/01/06 16:50:39 wiz Exp $
 #
 
 DISTNAME=		enchant-1.1.5
@@ -14,6 +14,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	enchant.pc.in
 GNU_CONFIGURE=		yes
+CFLAGS.SunOS+=		-D__EXTENSIONS__
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
