@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/07/23 15:08:56 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:12:53 tv Exp $
 #
 
 DISTNAME=	gmime-2.1.7
@@ -28,4 +28,5 @@ BUILD_DEFS+=		USE_INET6
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
