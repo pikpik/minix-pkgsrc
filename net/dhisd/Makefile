@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/05 23:39:27 hubertf Exp $
 #
 
 DISTNAME=	dhisd-5.0
@@ -30,7 +30,7 @@ do-install:
 		${INSTALL_PROGRAM} \
 			${WRKSRC}/genkeys \
 			${PREFIX}/bin/dhisd-genkeys
-		${CHOWN} root \
+		${CHOWN} ${ROOT_USER} \
 			${PREFIX}/bin/dhisd-genkeys \
 			${PREFIX}/bin/dhisd
 		${CHMOD} 700 \

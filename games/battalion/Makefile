@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/02/16 15:10:43 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2001/02/25 04:17:48 hubertf Exp $
 #
 
 DISTNAME=		battalion
@@ -19,7 +19,7 @@ USE_X11BASE=		yes
 USE_MESA=		yes
 
 do-install:
-	${INSTALL} -c -s -o root -g games -m 2755 ${WRKSRC}/battalion ${PREFIX}/bin
+	${INSTALL} -c -s -o ${ROOT_USER} -g games -m 2755 ${WRKSRC}/battalion ${PREFIX}/bin
 	cd ${WRKDIR} && \
 	    ${GZCAT} ${DISTDIR}/battalionSUN4.tar.gz | ${GTAR} xmf -
 	${INSTALL_DATA_DIR} ${PREFIX}/share/battalion/HELP
