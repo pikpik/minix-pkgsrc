@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/03/30 06:50:16 uebayasi Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:26 tv Exp $
 #
 
 VERS=		0.51b3
-DISTNAME=	${PKGNAME}-portable
+DISTNAME=	elfsh-${VERS}-portable
 PKGNAME=	elfsh-${VERS}
 PKGREVISION=	1
 CATEGORIES=	devel
