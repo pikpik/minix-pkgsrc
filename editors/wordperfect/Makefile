@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/09/08 13:33:15 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:40:55 wiz Exp $
 
 DISTNAME=		wordperfect-personal-8
 CATEGORIES=		editors
@@ -13,7 +13,6 @@ COMMENT=		Corel(R) WordPerfect(R) for Linux: Personal Edition
 DEPENDS+=		suse_libc5>=6.1:../../emulators/suse_libc5
 
 LICENSE=		no-commercial-use
-MIRROR_DISTFILE=	no
 RESTRICTED=		"No re-distribution without agreement from Corel(R)"
 NO_SRC_ON_FTP=          ${RESTRICTED}
 NO_SRC_ON_CDROM=        ${RESTRICTED}
