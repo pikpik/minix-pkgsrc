@@ -1,4 +1,4 @@
-<!-- $NetBSD: fixes.xml,v 1.1.1.1 2004/10/21 14:27:40 grant Exp $ -->
+<!-- $NetBSD: fixes.xml,v 1.2 2004/10/22 00:24:48 hubertf Exp $ -->
 
 <chapter id="fixes"> <?dbhtml filename="fixes.html"?>
   <title>Notes on fixes for packages</title>
@@ -1423,3 +1423,9 @@ pre-configure:
     <para> Support the idea of free software! </para>
   </sect1>
 </chapter>
+
+<!--
+Local Variables:
+sgml-parent-document: ("pkgsrc.xml" "book" "sect1")
+End:
+-->
