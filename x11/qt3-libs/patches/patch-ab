@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Fri Nov 30 15:27:49 2001
++++ configure
+@@ -121,7 +121,7 @@
+     fi
+ 
+     touch .test.qt.
+-    if [ '!' -f ${QTDIR}/.test.qt. ]
++    if [ '!' -f .test.qt. ]
+     then
+ 	rm -f .test.qt.
+ 	echo
