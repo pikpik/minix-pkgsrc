@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/03/16 11:59:16 pooka Exp $
+# $NetBSD: Makefile,v 1.15 2000/06/20 21:47:20 jlam Exp $
 # FreeBSD Id: Makefile,v 1.1 1996/11/16 01:51:25 jdp Exp
 #
 
@@ -22,6 +22,10 @@ INSTALL_TARGET=		BSD-pkg-install
 .include "../../mk/bsd.prefs.mk"
 .if defined(EXTRACT_USING_PAX)
 EXTRACT_ELEMENTS=	-u
+.endif
+
+.if ${MACHINE_ARCH} == "mipsel"
+CFLAGS+=		-D__MIPSEL__
 .endif
 
 post-extract:
