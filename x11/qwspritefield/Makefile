@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/08/06 16:37:02 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/13 14:08:51 skrll Exp $
 
 DISTNAME=	QwSpriteField1.6
 PKGNAME=	qwspritefield-1.6
@@ -6,6 +6,7 @@ CATEGORIES=	x11 graphics
 MASTER_SITES=	ftp://ftp.troll.no/contrib/
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	Efficiently redrawn sprites in the Qt GUI Toolkit
 
 DEPENDS+=	qt1-1.44:../../x11/qt1
 

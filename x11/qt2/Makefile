@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2001/01/13 12:41:38 skrll Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/06 09:26:11 skrll Exp $
 #
 
 DISTNAME=	qt2-${QTVERSION}
 CATEGORIES=	x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
+
+COMMENT=	"meta-package" for the QT GUI C++ toolkit
 
 .include "Makefile.common"
 

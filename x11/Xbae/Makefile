@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/06/19 11:19:36 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/15 18:11:51 drochner Exp $
 #
 
 DISTNAME=	Xbae-4.8.4
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/
 
 MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://www.lesstif.org/Xbae.html
+COMMENT=	Three Motif compatible widgets: XbaeMatrix, XbaeCaption, XbaeInput
 
 USE_MOTIF=	yes
 USE_LIBTOOL=	yes

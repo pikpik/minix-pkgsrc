@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2000/11/29 17:25:40 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2001/02/13 11:47:07 tron Exp $
 
 DISTNAME=		gnome-core-1.2.4
 CATEGORIES=		x11 gnome
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-core/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		Base component of GNU Network Object Management Environment
 
 DEPENDS+=		gdk-pixbuf-gnome>=0.9.0nb1:../../graphics/gdk-pixbuf-gnome
 DEPENDS+=		libghttp>=1.0.4:../../www/libghttp

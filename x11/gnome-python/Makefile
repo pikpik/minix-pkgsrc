@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/11/20 14:38:27 mycroft Exp $
+# $NetBSD: Makefile,v 1.15 2000/11/20 14:41:18 mycroft Exp $
 
 DISTNAME=		gnome-python-1.0.53
 CATEGORIES=		x11 gnome
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-python/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.daa.com.au/~james/gnome/
+COMMENT=		Python Bindings for the GNU Network Object Model Environment
 
 DEPENDS+=		gnome-core>=1.2.0:../gnome-core
 DEPENDS+=		gtkglarea-*:../../x11/gtkglarea

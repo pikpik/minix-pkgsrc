@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2001/01/11 17:55:56 skrll Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/13 12:33:01 skrll Exp $
 #
 
 PKGNAME=	qt2-docs-${QTVERSION}
+
+COMMENT=	Documentation for the QT C++ X GUI toolkit
 
 .include "../qt2-libs/Makefile.common"
 

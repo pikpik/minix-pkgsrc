@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/05 22:54:01 hubertf Exp $
 
 DISTNAME=	xteddy-2.0.1
 CATEGORIES=	x11 games
@@ -6,6 +6,7 @@ MASTER_SITES=	http://www.ITN.LiU.SE/~stegu/xteddy/
 
 MAINTAINER=	johnam@mail.kemper.org
 HOMEPAGE=	http://www.ITN.LiU.SE/~stegu/xteddy
+COMMENT=	Teddy bear for your desktop
 
 DEPENDS+=	imlib-1.9.*:../../graphics/imlib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/18 03:01:16 fredb Exp $
+# $NetBSD: Makefile,v 1.2 2000/10/18 16:01:17 fredb Exp $
 #
 
 DISTNAME=	xmountains_2.5
@@ -11,6 +11,7 @@ PATCHFILES=	vroot.h
 
 MAINTAINER=	fredb@netsd.org
 HOMEPAGE=	http://www.epcc.ed.ac.uk/~spb/xmountains/
+COMMENT=	fractal terrain generator
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

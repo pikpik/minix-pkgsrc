@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/04/15 20:39:48 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/23 23:14:32 tron Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=libs/X/}
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.zip.com.au/~bb/XawXpm/
+COMMENT=		Enhanced 3-D widgets based on the Athena Widget set and Xaw3d
 
 CONFLICTS=		Xaw3d-*
 

@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.8 2001/01/05 20:24:05 is Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/23 15:51:25 dmcmahill Exp $
 # FreeBSD Id: Makefile,v 1.7 1996/11/18 09:56:45 asami Exp 
 #
 
 DISTNAME=	xsnow-1.41
 CATEGORIES=	x11
 MASTER_SITES=	http://www.euronet.nl/~rja/Xsnow/
-HOMEPAGE=	http://www.euronet.nl/~rja/Xsnow/
 
 MAINTAINER=	is@netbsd.org
+HOMEPAGE=	http://www.euronet.nl/~rja/Xsnow/
+COMMENT=	Create a snowy and Santa-y desktop
 
 USE_IMAKE=	yes
 USE_XPM=	yes

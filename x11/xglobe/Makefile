@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/07/14 16:04:30 agc Exp $
+# $NetBSD: Makefile,v 1.15 2000/07/15 20:39:28 agc Exp $
 #
 
 DISTNAME=	xglobe-0.5
@@ -15,6 +15,7 @@ DISTFILES+=	${MAPS} ${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.uni-karlsruhe.de/~uddn/xglobe/
+COMMENT=	Displays the earth as seen from space, similar to xearth
 
 DEPENDS+=	qt1-1.44:../../x11/qt1
 

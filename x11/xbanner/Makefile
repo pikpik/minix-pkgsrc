@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/07/11 10:55:32 agc Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/23 23:14:33 tron Exp $
 
 DISTNAME=		XBanner1.31
 PKGNAME=		xbanner-1.31
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.digital.com/pub/linux/XBanner/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://chaos.fullerton.edu/XBanner/
+COMMENT=		Make XDM login screen look pretty
 
 USE_IMAKE=		YES
 USE_XPM=		YES

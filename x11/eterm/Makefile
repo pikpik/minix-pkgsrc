@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/06/01 11:23:44 rh Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/16 00:41:13 wiz Exp $
 
 DISTNAME=		Eterm-0.8.9
 PKGNAME=		eterm-0.8.9
@@ -11,6 +11,7 @@ DISTFILES=		${ETERM_SRCS} ${PIXMAP_FILES}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.eterm.org/
+COMMENT=		Enlightened terminal emulator for the X Window System
 
 DEPENDS+=		imlib-*:../../graphics/imlib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/06/01 11:23:45 rh Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/16 02:12:30 hubertf Exp $
 
 DISTNAME=	gtk+-1.0.6
 PKGNAME=	gtk10-1.0.6
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.0/ \
 
 MAINTAINER=	bsieker@techfak.uni-bielefeld.de
 HOMEPAGE=	http://www.gtk.org/
+COMMENT=	Gimp toolkit. Libraries for building X11 user interfaces
 
 CONFLICTS=	gtk+-1.0.*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/12/22 15:37:13 sakamoto Exp $
+# $NetBSD: Makefile,v 1.4 2000/02/04 15:55:46 minoura Exp $
 #
 
 DISTNAME=	xcruise-0.24
@@ -7,6 +7,7 @@ MASTER_SITES=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
 
 MAINTAINER=	minoura@netbsd.org
 HOMEPAGE=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
+COMMENT=	Navigate through a three-dimensional view of a file system
 
 # LICENSE=	GPL
 

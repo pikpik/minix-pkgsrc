@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/15 14:17:44 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2000/10/17 23:47:01 jlam Exp $
 
 DISTNAME=		gtk-engines-0.10
 CATEGORIES=		x11
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gtk-engines/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		Theme engines for GTK+
 
 DEPENDS+=		imlib-*:../../graphics/imlib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2000/11/29 02:37:43 mycroft Exp $
+# $NetBSD: Makefile,v 1.56 2001/02/13 11:47:08 tron Exp $
 
 DISTNAME=		gnome-libs-1.2.8
 CATEGORIES=		x11 gnome
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-libs/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		Libaries for the GNU Network Object Model Environment
 
 DEPENDS+=		ORBit-*:../../net/ORBit
 DEPENDS+=		esound>=0.2.18:../../audio/esound

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/10/22 20:01:51 tsarna Exp $
+# $NetBSD: Makefile,v 1.16 2000/10/26 19:24:45 jwise Exp $
 #
 
 DISTNAME=	${PY_DISTNAME}
@@ -8,6 +8,7 @@ MASTER_SITES=	${PY_MASTER_SITES}
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.python.org/topics/tkinter/
+COMMENT=	Tkinter -- Python interface to Tcl/Tk
 
 DEPENDS+=	tk>=8.3.2:../../x11/tk
 

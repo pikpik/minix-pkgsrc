@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/04/15 20:39:49 tron Exp $
+# $NetBSD: Makefile,v 1.10 2000/07/11 10:47:19 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/11/18 09:55:42 asami Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eblood@cs.unr.edu
+COMMENT=	Activate xlock after a user defined time of inactivity
 
 USE_IMAKE=	yes
 
