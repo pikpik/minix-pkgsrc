@@ -1,0 +1,12 @@
+# $NetBSD$
+
+ANTHY_VERSION=	5900
+DISTNAME=	anthy-${ANTHY_VERSION}
+CATEGORIES=	inputmethod
+MASTER_SITES=	http://downloads.sourceforge.jp/anthy/12071/
+DISTFILES=	${DISTNAME}.tar.gz
+
+DISTINFO_FILE=	${.CURDIR}/../../inputmethod/anthy/distinfo
+PATCHDIR=	${.CURDIR}/../../inputmethod/anthy/patches
+
+HOMEPAGE=	http://anthy.sourceforge.jp/
