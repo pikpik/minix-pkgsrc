@@ -1,10 +1,14 @@
-# $NetBSD$
+# $NetBSD: dirs.mk,v 1.1 2004/04/14 21:15:01 jmmv Exp $
 #
 
 .if !defined(DIRS_XFREE86_MK)
 DIRS_XFREE86_MK=	# defined
 
-.include "../../misc/XFree86-dirs/Makefile.common"
+oldval:=		${XFREE86_ONLY_DIRS}
+XFREE86_ONLY_DIRS:=	YES
+.include "../../meta-pkgs/XFree86/Makefile.common"
+XFREE86_ONLY_DIRS:=	${oldval}
+.undef oldval
 
 XFREE86_DIRS=		bin
 XFREE86_DIRS+=		include
