@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/26 05:57:22 rh Exp $
 #
 
 DISTNAME=		evolution-0.9
@@ -6,7 +6,7 @@ CATEGORIES=		mail time gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=unstable/sources/evolution/}
 
 MAINTAINER=		rh@netbsd.org
-HOMEPAGE=		http://www.helixcode.com/apps/evolution.php3
+HOMEPAGE=		http://www.ximian.com/apps/evolution.php3
 COMMENT=		GNOME mailer, calendar, contact manager, and communications tool
 
 DEPENDS+=		gal>=0.4.1:../../devel/gal
