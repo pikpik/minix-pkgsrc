@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/03/13 17:36:41 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/10 16:06:33 wiz Exp $
 
 .include "../everybuddy/Makefile.common"
 
@@ -7,7 +7,8 @@ PKGREVISION=	2
 CONFLICTS+=	everybuddy-[0-9]*
 COMMENT+=	with GNOME support
 
-CONFIGURE_ARGS+= --enable-panel
+USE_BUILDLINK2=		yes
+CONFIGURE_ARGS+=	--enable-panel
 
-.include "../../x11/gnome-core/buildlink.mk"
+.include "../../x11/gnome-core/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
