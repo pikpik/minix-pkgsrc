@@ -4,7 +4,7 @@
 # Date Created:				02 February 1998
 # Whom:					tron
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/02/02 10:48:30 tron Exp $
 
 DISTNAME=	mutt-0.89.1i
 CATEGORIES=	mail
@@ -23,7 +23,7 @@ MIRROR_DISTFILE= no
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-curses=${PREFIX}
 
-MAN1=		man/man1/mutt.1
+MAN1=		mutt.1
 
 post-install:
 	strip ${PREFIX}/bin/mutt
