@@ -2,7 +2,7 @@
 #
 # start of header
 #
-# $NetBSD: header,v 1.16 2002/10/08 11:32:34 jlam Exp $
+# $NetBSD: header,v 1.17 2002/11/17 08:58:50 salo Exp $
 
 PKGNAME=$1
 STAGE=$2
@@ -36,6 +36,7 @@ SED="@SED@"
 SH="@SH@"
 SORT="@SORT@"
 SU="@SU@"
+TEST="@TEST@"
 TOUCH="@TOUCH@"
 TR="@TR@"
 TRUE="@TRUE@"
