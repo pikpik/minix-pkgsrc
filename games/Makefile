@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2002/03/08 16:47:47 wiz Exp $
+# $NetBSD: Makefile,v 1.135 2002/03/08 19:20:38 wiz Exp $
 #
 
 COMMENT=	Games
@@ -78,6 +78,7 @@ SUBDIR+=	knights
 SUBDIR+=	koth
 SUBDIR+=	kulki
 SUBDIR+=	lbreakout
+SUBDIR+=	lbreakout2
 SUBDIR+=	lincity
 SUBDIR+=	maelstrom
 SUBDIR+=	minami
