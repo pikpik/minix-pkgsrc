@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/06/12 11:26:25 itojun Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/18 22:46:48 hubertf Exp $
 #
 
 BROKEN=			"broken by PF_KEY API change"
@@ -18,7 +18,7 @@ RESTRICTED=		"Crypto; export-controlled"
 
 # this is not compatible with cross build - there's no other way
 .if !exists(/usr/include/netinet6/ipsec.h)
-IGNORE+=		"requires ipsec-ready NetBSD"
+IGNORE+=		"${PKGNAME} requires ipsec-ready NetBSD"
 .endif
 
 # if PATENTEDOPENSSLSRC is defined, then we assume that

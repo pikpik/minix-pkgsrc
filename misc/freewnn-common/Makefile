@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/09/06 08:19:55 sakamoto Exp $
+# $NetBSD: Makefile,v 1.5 2000/02/20 22:05:41 wiz Exp $
 #
 
 DISTNAME=	FreeWnn-1.10
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.freewnn.org/pub/FreeWnn/	\
 		ftp://ftp.tomo.gr.jp/pub/FreeWnn/
 
 .if !defined(PKGNAME)
-IGNORE=		"is FreeWnn base package. Use freewnn-lib/server packages"
+IGNORE=		"${PKGNAME} is FreeWnn base package. Use freewnn-lib/server packages"
 .endif
 
 MAINTAINER=	tech-pkg-ja@jp.netbsd.org

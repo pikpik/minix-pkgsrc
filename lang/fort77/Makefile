@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/12/16 14:56:37 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.5 2000/01/09 01:19:10 wiz Exp $
 #
 
 DISTNAME=		fort77-1.14a
@@ -18,7 +18,7 @@ F2CPKGHASNOSHAREDLIB=
 .endif
 
 .if exists(/usr/bin/fort77)
-IGNORE=			"is part of your NetBSD distribution"
+IGNORE=			"${PKGNAME} is part of your NetBSD distribution"
 .endif
 
 ALL_TARGET=		test

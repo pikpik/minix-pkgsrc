@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/04/26 19:30:27 garbled Exp $
+# $NetBSD: Makefile,v 1.12 1999/06/29 01:48:56 sakamoto Exp $
 #
 
 DISTNAME=	py152
@@ -25,7 +25,7 @@ EXTRACT_ELEMENTS=	Python-1.5.2/Modules/_tkinter.c \
 PYTHON_CONFIGDIR=	${LOCALBASE}/lib/python1.5/config
 
 .if ${MACHINE_ARCH} == "sparc64"
-IGNORE="Needs dynamic loading"
+IGNORE="${PKGNAME} needs dynamic loading"
 .endif
 
 do-configure:

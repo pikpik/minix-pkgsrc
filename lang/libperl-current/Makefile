@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/15 01:05:13 jlam Exp $
 
 DISTNAME=		libperl-${PERL_VERSION}
 PERL_VERSION=		5.6.0
@@ -20,7 +20,7 @@ NO_BUILD=		# defined
 
 .if ${OPSYS} == "NetBSD"
 .if !exists(/usr/libexec/ld.elf_so) && !exists(/usr/libexec/ld.so)
-IGNORE=			needs shared objects
+IGNORE=			${PKGNAME} needs shared objects
 .endif
 .endif
 
