@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.netbsd-sparc,v 1.1 1999/08/13 21:24:12 abs Exp $
+@comment $NetBSD: PLIST.bsdi-i386,v 1.1 2000/05/09 13:23:20 abs Exp $
 lib/netscape/${BINNAME}-${NS_VERS}/nls/C
 lib/netscape/${BINNAME}-${NS_VERS}/nls/nls.dir
 @dirrm lib/netscape/${BINNAME}-${NS_VERS}/nls

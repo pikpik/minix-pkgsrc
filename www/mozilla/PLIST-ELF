@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST-ELF,v 1.16 2001/10/16 15:52:10 taya Exp $
 bin/mozilla
 @comment begin PROGRAMS
 lib/mozilla/mozilla-bin

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.post,v 1.6 1999/09/04 16:37:54 jlam Exp $
+@comment $NetBSD: PLIST.post,v 1.7 2000/05/09 13:23:20 abs Exp $
 @dirrm lib/netscape/${BINNAME}-${NS_VERS}/spell
 @dirrm lib/netscape/${BINNAME}-${NS_VERS}/plugins
 @dirrm lib/netscape/${BINNAME}-${NS_VERS}/nethelp/netscape/trouble
