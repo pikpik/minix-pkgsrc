@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2003-10-29 23:49:52.000000000 +1100
-+++ configure
-@@ -166,13 +166,6 @@ echo "  includes  $xdir/include"
+--- configure.orig	2004-01-24 14:14:38.000000000 +0100
++++ configure	2004-01-24 14:18:23.000000000 +0100
+@@ -166,13 +166,6 @@
  echo "  libraries $xdir/lib"
  echo
  
@@ -16,7 +16,7 @@ $NetBSD$
  targets="$targets rdesktop"
  
  #withoutopenssl not currently supported
-@@ -205,12 +198,6 @@ targets="$targets rdesktop"
+@@ -205,12 +198,6 @@
      
      	echo "CRYPTOBJ    =" >>Makeconf
      
@@ -29,7 +29,7 @@ $NetBSD$
      	cflags="$cflags -DWITH_OPENSSL"
      	ldflags="$ldflags -lcrypto"
      fi
-@@ -259,7 +246,7 @@ fi
+@@ -259,7 +246,7 @@
  
  # Check for OSS sound support
  
@@ -38,7 +38,7 @@ $NetBSD$
      echo Sound support enabled: Open Sound System
      echo
      echo "SOUNDOBJ    = rdpsnd.o rdpsnd_oss.o" >>Makeconf
-@@ -283,16 +270,13 @@ rpath=`echo $rpath |sed 's/^://'`
+@@ -283,10 +270,7 @@
  
  case `uname -s` in
    SunOS)
@@ -48,6 +48,9 @@ $NetBSD$
 -    ldflags="$ldflags -Wl,-rpath,$rpath"
 +    ldflags="$ldflags -lsocket -lnsl"
      ;;
+   HP-UX)
+     cflags="$cflags -D_XOPEN_SOURCE_EXTENDED"
+@@ -294,8 +278,8 @@
  esac
  
  
