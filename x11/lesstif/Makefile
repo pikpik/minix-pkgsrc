@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.58 2001/08/29 22:41:29 jlam Exp $
+# $NetBSD: Makefile,v 1.59 2001/09/09 03:37:02 jlam Exp $
 
 COMMENT=	API compatible clone of the OSF/Motif toolkit
+
+CONFLICTS+=	openmotif-[0-9]*
 
 USE_BUILDLINK_ONLY=	# defined
 
