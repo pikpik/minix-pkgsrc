@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2001/01/13 16:21:20 tron Exp $
+# $NetBSD: Makefile,v 1.17 2001/01/13 16:23:04 tron Exp $
 #
 
-DISTNAME=	xpkgwedge-1.0
+DISTNAME=	xpkgwedge-1.1
 CATEGORIES=	pkgtools devel x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
