@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 1998/06/22 10:55:21 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/23 11:09:33 agc Exp $
 #
 
-DISTNAME=	mysql-3.21.31
+DISTNAME=	mysql-3.21.32a
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.digex.net/pub/database/mysql/Downloads/MySQL-3.21/ \
 		ftp://ftp.netcasting.net/pub/mysql/Downloads/MySQL-3.21/
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://ftp.digex.net/pub/database/mysql/Downloads/MySQL-3.21/ \
 MAINTAINER=	tsarna@endicor.com
 
 ONLY_FOR_ARCH=	i386 alpha
+
+CONFLICTS=	mysql-3.21.31
 
 NO_CDROM=	"Restrictive license."
 
