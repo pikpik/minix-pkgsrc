@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/ccache
+man/man1/ccache.1
