@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/armul-arc
+share/arcem/ROM
+share/arcem/HardImage1
+share/arcem/dot.arcemrc
+share/arcem/hexcmos
+share/arcem/hexcmos.2
+share/arcem/README
+share/arcem/README.OrElse
+@dirrm share/arcem
