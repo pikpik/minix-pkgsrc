@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/scheme
+lib/vscm/scheme-boot
+@dirrm lib/vscm
+@dirrm share/examples/vscm
