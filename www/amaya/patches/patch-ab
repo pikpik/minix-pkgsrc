@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ../Makefile.in.orig	Wed Feb 28 02:34:16 2001
+--- ../Makefile.in.orig	Mon Jun 25 07:14:52 2001
 +++ ../Makefile.in
-@@ -186,8 +186,9 @@
+@@ -180,8 +180,9 @@
  	  cd $(LIBWWW) ; unset LANG; \
  	  if [ ! -f Makefile -o ! -f wwwconf.h ] ; then \
  	  	$$libwwwdir/configure \
