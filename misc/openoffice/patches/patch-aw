@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- ../cppuhelper/source/makefile.mk.orig	Tue Jan  1 14:09:04 2002
++++ ../cppuhelper/source/makefile.mk
+@@ -149,8 +149,8 @@
+ SHL1TARGET=$(TARGET)$(UDK_MAJOR)$(COM)
+ 
+ SHL1STDLIBS= \
+-		$(CPPULIB)		\
+-		$(SALLIB)
++		$(SALLIB)		\
++		$(CPPULIB)
+ 
+ SHL1DEPN=
+ SHL1IMPLIB=i$(TARGET)

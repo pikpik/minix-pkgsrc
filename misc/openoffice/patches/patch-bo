@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- ../sal/util/sal.map.orig	Tue Sep 25 08:49:38 2001
++++ ../sal/util/sal.map
+@@ -478,6 +478,15 @@
+         rtl_tres_destroy;
+ 		osl_getProcessLocale;
+ 		osl_setProcessLocale;
++
++       readdir_r;
++       gethostbyname_r;
++       getpwnam_r;
++       getpwuid_r;
++       gmtime_r;
++       localtime_r;
++       fcvt;
++
+     local:
+         *;
+ };
