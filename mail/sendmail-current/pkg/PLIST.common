@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.common,v 1.1.1.1 2001/04/15 01:20:01 itojun Exp $
 bin/newaliases
 bin/mailq
 bin/hoststat
@@ -7,6 +7,7 @@ bin/vacation
 etc/mailer.conf.sendmail
 libexec/sendmail/sendmail
 libexec/sendmail/smrsh
+sbin/editmap
 sbin/mailstats
 sbin/makemap
 sbin/praliases
