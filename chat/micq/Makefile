@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2002/10/13 15:03:32 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/20 03:09:07 shell Exp $
 
-DISTNAME=	micq-0.4.9.4
+DISTNAME=	micq-0.4.10.1
 CATEGORIES=	chat
-MASTER_SITES=	http://micq.ukeer.de/source/
+MASTER_SITES=	http://www.micq.org/source/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	shell@netbsd.org
-HOMEPAGE=	http://micq.ukeer.de/
+HOMEPAGE=	http://www.micq.org/
 COMMENT=	text-mode ICQ client
 
 USE_BUILDLINK2=	YES
