@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- setup.py.orig	2004-07-18 18:47:24.000000000 -0400
++++ setup.py
+@@ -37,8 +37,9 @@ for (pos, arg) in enumerate(args):
+ 
+ GETMAILDOCDIR = os.path.join(
+     datadir or prefix,
++    'share',
+     'doc',
+-    'getmail-%s' % __version__
++    'getmail'
+ )
+ 
+ GETMAILMANDIR = os.path.join(
