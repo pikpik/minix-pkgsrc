@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2001/10/08 07:18:33 lukem Exp $
+# $NetBSD: Makefile,v 1.112 2001/10/11 09:57:50 agc Exp $
 #
 
 COMMENT=	System utilities
@@ -57,6 +57,7 @@ SUBDIR+=	mkhybrid
 SUBDIR+=	mksunbootcd
 SUBDIR+=	mtools
 SUBDIR+=	osname
+SUBDIR+=	p5-Unix-Syslog
 SUBDIR+=	pcvt-utils
 SUBDIR+=	psmisc
 SUBDIR+=	pstree
