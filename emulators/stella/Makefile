@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/06/06 20:26:35 cjep Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:40:51 jmmv Exp $
 
 DISTNAME=	stella-1.1-src
 PKGNAME=	stella-1.1
@@ -27,11 +27,12 @@ post-build:
 	@cd ${WRKSRC}/../ui/sound && ${MAKE} oss
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/xstella ${PREFIX}/bin/
-	${INSTALL_PROGRAM} ${WRKSRC}/../ui/sound/stella-sound ${PREFIX}/bin/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/stella ${PREFIX}/share/doc/stella
-	${INSTALL_DATA} ${WRKSRC}/../../games/ROMS/* ${PREFIX}/share/stella/
-	${INSTALL_DATA} ${WRKSRC}/../../games/docs/* ${PREFIX}/share/doc/stella/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/stella
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/stella
+	${INSTALL_PROGRAM} ${WRKSRC}/xstella ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/../ui/sound/stella-sound ${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/../../games/ROMS/* ${PREFIX}/share/stella
+	${INSTALL_DATA} ${WRKSRC}/../../games/docs/* ${PREFIX}/share/doc/stella
 	${INSTALL_DATA} ${WRKSRC}/../../docs/Stella.pdf ${PREFIX}/share/doc/stella/stella.pdf
 
 .include "../../mk/bsd.pkg.mk"
