@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/X11/fonts/TTF/Eunjin.ttf
+lib/X11/fonts/TTF/Hmfs.ttf
+lib/X11/fonts/TTF/Ongdalsam.ttf
+share/doc/alee-ttf/Copyright
+@dirrm share/doc/alee-ttf
