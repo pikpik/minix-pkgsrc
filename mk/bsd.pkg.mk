@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.761 2001/06/16 04:11:30 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.762 2001/06/18 21:23:35 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1054,7 +1054,7 @@ IGNORE+= "${PKGNAME} is not available for ${MACHINE_PLATFORM}"
 # Now print some error messages that we know we should ignore the pkg
 #
 .if defined(IGNORE)
-fetch checksum extract patch configure all build install deinstall package \
+fetch checksum extract patch configure all build install package \
 install-depends check-depends:
 .if defined(IGNORE_SILENT)
 	@${DO_NADA}
