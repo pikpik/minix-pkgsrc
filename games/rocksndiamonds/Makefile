@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 21:39:20 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/08/05 15:12:45 adam Exp $
 #
 
-DISTNAME=		rocksndiamonds-3.0.0
+DISTNAME=		rocksndiamonds-3.0.2
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.artsoft.org/RELEASES/unix/rocksndiamonds/
 
