@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/02/17 16:47:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.38 2004/02/18 13:42:00 jmmv Exp $
 
 DISTNAME=	libxslt-1.1.3
 PKGNAME=	${DISTNAME}
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://xmlsoft.org/XSLT/
 COMMENT=	XSLT parser library from the GNOME project
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
