@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/10/13 05:54:07 explorer Exp $
+# $NetBSD: Makefile,v 1.6 1999/10/13 05:58:22 explorer Exp $
 #
 
 #
@@ -20,7 +20,7 @@ CONFLICTS=	lame-*
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(LAME_USE_GTK) && ${LAME_USE_GTK} != NO
+.if !defined(LAME_USE_GTK) || ${LAME_USE_GTK} == YES
 DEPENDS+=	gtk+-1.2.4:../../x11/gtk
 .endif
 
