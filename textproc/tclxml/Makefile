@@ -11,6 +11,8 @@ HOMEPAGE=	http://www.zveno.com/zm.cgi/in-tclxml/
 NO_CONFIGURE=
 NO_BUILD=
 
+DEPENDS+=       tcl-8.0.5:../../lang/tcl80
+
 do-install:
 	${MKDIR} ${PREFIX}/lib/TclXML
 	${INSTALL_DATA} ${WRKSRC}/pkgIndex.tcl ${PREFIX}/lib/TclXML
