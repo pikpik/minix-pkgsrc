@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/04 16:52:40 recht Exp $
 #
 
-DISTNAME=	winelib-0.1
+DISTNAME=	winelib-0.2
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.go-mono.com/archive/
+MASTER_SITES=	http://www.go-mono.com/archive/beta1/
 
 MAINTAINER=	recht@NetBSD.com
 HOMEPAGE=	http://www.go-mono.com/
