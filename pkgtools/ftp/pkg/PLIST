@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/09/03 11:44:01 agc Exp $
-bin/ftp
-share/man/man1/ftp.1
-share/man/cat1/ftp.0
