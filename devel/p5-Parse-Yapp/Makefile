@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/10/18 15:20:18 veego Exp $
+# $NetBSD: Makefile,v 1.3 2001/11/26 06:49:53 jlam Exp $
 #
 
-DISTNAME=      	Parse-Yapp-1.04
+DISTNAME=      	Parse-Yapp-1.05
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p6pya
 CATEGORIES=	devel perl5
