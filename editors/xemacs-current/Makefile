@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.16 2003/02/25 09:07:10 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2003/02/25 09:13:07 uebayasi Exp $
 
-DISTNAME=	xemacs-21.5.10
+DISTNAME=	xemacs-21.5.11
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS:=xemacs-21.5/}
 
 MAINTAINER=	magick@netbsd.org
 HOMEPAGE=	http://www.xemacs.org/
-COMMENT=	*BETA* XEmacs text editor version 21.5.10
+COMMENT=	*BETA* XEmacs text editor version 21.5.11
 
 USE_BUILDLINK2=	YES
 USE_X11=	YES
 
-PLIST_SUBST+=	EMACSVER=xemacs-21.5-b10
-MESSAGE_SUBST+=	EMACSVER=xemacs-21.5-b10
+PLIST_SUBST+=	EMACSVER=xemacs-21.5-b11
+MESSAGE_SUBST+=	EMACSVER=xemacs-21.5-b11
 
 .if (${MACHINE_ARCH} == "arm32")
 .  include "../../lang/gcc/buildlink2.mk"
