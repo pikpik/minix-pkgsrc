@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/09/06 23:50:28 garbled Exp $
+# $NetBSD: Makefile,v 1.15 1998/10/31 00:22:32 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -29,6 +29,7 @@
 #    SUBDIR += vmsbackup
     SUBDIR += wine
 #    SUBDIR += x48
+   SUBDIR += xcopilot
 #    SUBDIR += xgs
    SUBDIR += xmame
    SUBDIR += xmess
