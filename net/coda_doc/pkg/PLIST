@@ -1,5 +1,4 @@
-@owner bin
-@group bin
+@comment $NetBSD$
 man/man1/cfs.1
 man/man1/clog.1
 man/man1/cmon.1
