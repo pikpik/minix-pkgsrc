@@ -1,4 +1,4 @@
-/*	$NetBSD: kver.c,v 1.1.1.1 2003/07/11 14:50:37 seb Exp $	*/
+/*	$NetBSD: kver.c,v 1.2 2003/09/30 19:13:30 seb Exp $	*/
 
 #include <sys/types.h>
 #include <sys/param.h>
@@ -31,6 +31,9 @@
 #elif _KVER_OSREVISION == 106000100
 #  define _KVER_OSRELEASE "1.6.1";
 #  define _KVER_DATE "Mon Apr 21 00:00:00 UTC 2003"
+#elif _KVER_OSREVISION == 106000200
+#  define _KVER_OSRELEASE "1.6.2";
+#  define _KVER_DATE "Tue Jan 19 00:00:00 UTC 2038"
 #else
 #error You must define _KVER_OSREVISION
 #endif
