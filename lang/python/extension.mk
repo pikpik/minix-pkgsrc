@@ -1,4 +1,4 @@
-# $NetBSD: extension.mk,v 1.2 2002/12/07 02:38:58 schmonz Exp $
+# $NetBSD: extension.mk,v 1.3 2003/05/09 09:24:17 jdolecek Exp $
 
 # derive a python version from the package name if possible
 .if defined(PKGNAME_REQD)
@@ -22,11 +22,11 @@ PYSETUPSUBDIR?=		#empty
 
 do-build:
 	(cd ${WRKSRC}/${PYSETUPSUBDIR} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} \
-	 ${PYSETUP} ${PYSETUPBUILDARGS} build)
+	 ${PYSETUP} build ${PYSETUPBUILDARGS})
 
 do-install:
 	(cd ${WRKSRC}/${PYSETUPSUBDIR} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} \
-	 ${PYSETUP} ${PYSETUPINSTALLARGS} install)
+	 ${PYSETUP} install ${PYSETUPINSTALLARGS})
 .endif
 
 .if defined(PY_PATCHPLIST)
