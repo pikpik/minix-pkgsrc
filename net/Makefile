@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2000/01/05 23:10:31 rh Exp $
+# $NetBSD: Makefile,v 1.104 2000/01/17 16:05:19 jlam Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -145,6 +145,7 @@
     SUBDIR += xchat
     SUBDIR += xipdump
 #    SUBDIR += xipmsg
+    SUBDIR += xspeakfree
     SUBDIR += xtraceroute
 #    SUBDIR += yale-tftpd
     SUBDIR += ytalk
