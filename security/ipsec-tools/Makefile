@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/09 22:42:20 manu Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/10 08:43:44 xtraeme Exp $
 #
 
 DISTNAME=		ipsec-tools-0.5.pre20041109
@@ -17,8 +17,6 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-libradius --enable-natt
 CONFIGURE_ARGS+=	--enable-frag --enable-hybrid
-
-BUILDLINK_DEPMETHOD.libradius-linux?=	build
 
 SAMPLE_DIR=	${WRKSRC}/src/racoon/samples
 EXAMPLE_DIR=	${PREFIX}/share/examples/ipsec-tools
