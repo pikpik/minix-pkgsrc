@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Sun Jan 14 23:31:06 2001
 +++ lib/taskbar/bsd-daemon.xpm	Fri Feb 20 05:22:16 1998
 @@ -0,0 +1,169 @@
