@@ -18,8 +18,7 @@ BUILDLINK_PACKAGES:=	xorg-libs ${BUILDLINK_PACKAGES}
 
 .if !empty(XORG_LIBS_BUILDLINK3_MK:M+)
 
-BUILDLINK_DEPENDS.xorg-libs+=	xorg-libs>=6.7.0
-BUILDLINK_RECOMMENDED.xorg-libs+=	xorg-libs>=6.7.0nb2
+BUILDLINK_DEPENDS.xorg-libs+=	xorg-libs>=6.8.1
 BUILDLINK_PKGSRCDIR.xorg-libs?=	../../x11/xorg-libs
 BUILDLINK_TRANSFORM.xorg-libs+=	-e "s|/${X11ROOT_PREFIX}/|/|"
 

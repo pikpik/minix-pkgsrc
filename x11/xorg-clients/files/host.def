@@ -1,10 +1,14 @@
-/* $NetBSD: host.def,v 1.1.1.1 2004/07/29 04:52:04 xtraeme Exp $ */
+/* $NetBSD: host.def,v 1.2 2004/07/30 23:20:06 xtraeme Exp $ */
 
 #define ProjectRoot @PREFIX@
 #define BuildHtmlManPages NO
 
 #define MakeCmd @MAKE@
+
+#ifndef LinuxArchitecture
 #define HasGnuMake      NO
+#endif
+
 #define ImakeCmd @IMAKE@
 #define RmanCmd @RMAN@
 #define HtmlIndexCmd @MKHTMLINDEX@
