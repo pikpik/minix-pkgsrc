@@ -1,5 +1,0 @@
-@comment $NetBSD$
-include/icq.h
-lib/libicq.a
-lib/libicq.la
-lib/libicq.so.1.0
