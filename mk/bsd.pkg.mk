@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.984 2002/05/29 14:52:14 yyamano Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.985 2002/05/29 21:30:30 schmonz Exp $
 #
 # This file is in the public domain.
 #
@@ -268,6 +268,8 @@ LIBS+=		-L${LOCALBASE}/lib -lintl
 .    endif
 .  endif
 .endif
+
+CPPFLAGS+=	${CPP_PRECOMP_FLAGS}
 
 # If GNU_CONFIGURE is defined, then pass LIBS to the GNU configure script.
 # also pass in a CONFIG_SHELL to avoid picking up bash

@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.24 2002/03/14 02:28:23 lukem Exp $
+# $NetBSD: defs.Linux.mk,v 1.25 2002/04/09 22:15:41 jlam Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -59,6 +59,7 @@ TYPE?=		type
 WC?=		/usr/bin/wc
 XARGS?=		/usr/bin/xargs -r
 
+CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 GROUPADD?=		/usr/sbin/groupadd
