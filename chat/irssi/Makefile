@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2002/06/20 03:29:28 hubertf Exp $
+# $NetBSD: Makefile,v 1.14 2002/09/25 17:26:04 wiz Exp $
 
 DISTNAME=		irssi-0.8.5
+PKGREVISION=		1
 WRKSRC=			${WRKDIR}/irssi-0.8.5
 CATEGORIES=		chat
 MASTER_SITES=		http://real.irssi.org/files/
@@ -18,7 +19,11 @@ USE_BUILDLINK2=		yes
 
 CONFIGURE_ARGS+=	--with-terminfo \
 			--enable-ipv6 \
-			--without-ncurses
+			--without-ncurses \
+			--sysconfdir=${PKG_SYSCONFDIR}
+
+EGDIR=		${PREFIX}/share/examples/irssi
+CONF_FILES=	${EGDIR}/irssi.conf ${PKG_SYSCONFDIR}/irssi.conf
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -37,4 +42,5 @@ CONFIGURE_ARGS+=	--with-perl=no
 .endif
 
 .include "../../devel/glib/buildlink2.mk"
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
