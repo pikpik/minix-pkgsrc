@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/08/27 15:33:33 abs Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/08/28 14:49:11 abs Exp $
 #
 # This Makefile fragment is included by packages that use librsync.
 #
@@ -9,7 +9,7 @@
 LIBRSYNC_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			librsync
-BUILDLINK_DEPENDS.librsync?=		librsync>=0.9.6
+BUILDLINK_DEPENDS.librsync?=		librsync>=0.9.6nb2
 BUILDLINK_PKGSRCDIR.librsync?=		../../devel/librsync
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.librsync=librsync

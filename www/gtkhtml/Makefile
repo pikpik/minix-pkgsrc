@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2003/07/17 22:55:34 grant Exp $
+# $NetBSD: Makefile,v 1.33 2003/09/13 21:01:29 tron Exp $
 
 DISTNAME=		gtkhtml-1.1.10
+PKGREVISION=		1
 CATEGORIES=		www gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtkhtml/1.1/}
 EXTRACT_SUFX=		.tar.bz2

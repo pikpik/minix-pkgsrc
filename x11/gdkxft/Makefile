@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2003/07/21 17:38:26 martti Exp $
+# $NetBSD: Makefile,v 1.15 2003/10/30 12:29:30 grant Exp $
 #
 
 DISTNAME=		gdkxft-1.5
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gdkxft/}
 

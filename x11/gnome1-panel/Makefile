@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2003/07/13 13:53:57 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:38:27 martti Exp $
 #
 
 .include "../../x11/gnome-core/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-core/-panel/}
-PKGREVISION=		2
+PKGREVISION=		3
 
 COMMENT=		Gnome-panel component split out from gnome-core
 

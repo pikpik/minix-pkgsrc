@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/09/27 17:07:37 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/28 09:13:58 jlam Exp $
 #
 
 DISTNAME=		gnome-utils-2.2.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		misc gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-utils/2.2/}
 EXTRACT_SUFX=		.tar.bz2
