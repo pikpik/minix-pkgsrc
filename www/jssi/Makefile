@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/17 17:22:11 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/25 04:18:23 hubertf Exp $
 
 DISTNAME=	ApacheJSSI-1.1.2
 PKGNAME=	jssi-1.1.2
@@ -33,4 +33,4 @@ do-install:
 .include "../../mk/bsd.pkg.mk"
 
 # This must be after bsd.pkg.mk is brought in
-CLASSPATH:=${CLASSPATH}:${PREFIX}/lib/java/jsdk.jar:.
+CLASSPATH:=${CLASSPATH}:${PREFIX}/lib/java/jsdk.jar:${JAVA_HOME}/lib/classes.zip:${JAVA_HOME}/lib/tools.jar
