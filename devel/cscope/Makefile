@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/07/17 21:29:59 grant Exp $
+# $NetBSD: Makefile,v 1.26 2003/07/21 16:43:17 martti Exp $
 #
 
 DISTNAME=	cscope-15.4
@@ -11,6 +11,8 @@ HOMEPAGE=	http://cscope.sourceforge.net/
 COMMENT=	Interactive C program browser
 
 GNU_CONFIGURE=		YES
+CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 USE_BUILDLINK2=		YES
 
 CONFIGURE_ARGS+=	--with-ncurses=${BUILDLINK_PREFIX.ncurses}
