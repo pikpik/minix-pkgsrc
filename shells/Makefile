@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2001/08/14 12:47:05 agc Exp $
+# $NetBSD: Makefile,v 1.15 2002/08/20 20:53:04 cjep Exp $
 #
 
 COMMENT=	Shells
 
 SUBDIR+=	bash2
+SUBDIR+=	bash2-doc
 SUBDIR+=	es
 SUBDIR+=	esh
 SUBDIR+=	osh
