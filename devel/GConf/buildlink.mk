@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/10/01 11:57:11 rh Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/10/03 20:56:43 jlam Exp $
 #
 # This Makefile fragment is included by packages that use gconf.
 #
@@ -22,7 +22,7 @@ DEPENDS+=	${BUILDLINK_DEPENDS.gconf}:../../devel/GConf
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.gconf=gconf
 BUILDLINK_PREFIX.gconf_DEFAULT=	${X11PREFIX}
-BUILDLINK_FILES.gconf=		include/gconf/*
+BUILDLINK_FILES.gconf=		include/gconf/1/gconf/*
 BUILDLINK_FILES.gconf+=		lib/libgconf-*
 
 .include "../../devel/gettext-lib/buildlink.mk"
