@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 22:51:01 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:22:18 agc Exp $
 #
 
 DISTNAME=	bind-4.9.11-REL
@@ -12,9 +12,7 @@ COMMENT=	The BIND name server, version 4, as an alternative to BIND 8
 
 WRKSRC=		${WRKDIR}
 
-.if !exists(/usr/sbin/named-bootconf)
-PKG_FAIL_REASON= "${PKGNAME} is intended for NetBSD 1.4 or higher"
-.endif
+NOT_FOR_PLATFORM=	NetBSD-0.*-* NetBSD-1.[0123]*-*
 
 post-extract:
 	@${RM} -f ${WRKSRC}/compat/include/sys/cdefs.h
