@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/05 17:54:35 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/06/02 01:19:55 jschauma Exp $
 
 DISTNAME=	stella-1.1-src
 PKGNAME=	stella-1.1
@@ -15,10 +15,8 @@ USE_X11=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	unix-x
 
-.if (${MACHINE_ARCH} == arm32 || ${MACHINE_ARCH} == arm)
-.if (${CXXFLAGS:M-O2} == "-O2")
-CXXFLAGS:=        ${CXXFLAGS:S/-O2/-O0/}
-.endif
+.if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
+.  include "../../mk/gcc.buildlink2.mk"
 .endif
 
 MAKE_ENV=	CXXFLAGS="${CXXFLAGS} -fno-rtti"

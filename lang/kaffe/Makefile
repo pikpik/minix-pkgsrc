@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2003/01/29 10:58:50 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2003/06/02 01:19:00 jschauma Exp $
 #
 
 DISTNAME=		kaffe-1.0.7
@@ -17,7 +17,8 @@ USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 TEST_TARGET=		check
 
-ONLY_FOR_PLATFORM=	*-*-arm32 *-*-i386 *-*-m68k *-*-mips* *-*-sparc *-*-powerpc
+ONLY_FOR_PLATFORM=	*-*-arm *-*-arm32 *-*-i386 *-*-m68k *-*-mips*	\
+			*-*-sparc *-*-powerpc
 
 GNU_CONFIGURE=		yes
 CPPFLAGS+=		-Dunix

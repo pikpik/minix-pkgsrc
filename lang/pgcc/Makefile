@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/05/14 14:01:33 yyamano Exp $
+# $NetBSD: Makefile,v 1.20 2003/03/29 12:41:29 jmmv Exp $
 
 DISTNAME=		gcc-2.95.2
 PKGNAME=		pgcc-2.95.2.1
@@ -18,8 +18,8 @@ BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 
 # 'Pentium GCC' is optimized for the Intel Pentium processor, but should
 # work on all platforms on which GCC works.
-ONLY_FOR_PLATFORM=	NetBSD-*-arm32 NetBSD-*-i386 NetBSD-*-m68k \
-			NetBSD-*-sparc SunOS-*-*
+ONLY_FOR_PLATFORM=	NetBSD-*-arm NetBSD-*-arm32 NetBSD-*-i386	\
+			NetBSD-*-m68k NetBSD-*-sparc SunOS-*-*
 
 USE_GMAKE=		YES
 HAS_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/12/14 02:51:00 schmonz Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/29 21:55:19 salo Exp $
 # FreeBSD Id: ports/net/djbdns/Makefile,v 1.4 2000/09/28 18:18:41 nbm Exp
 #
 
@@ -37,10 +37,9 @@ INSTALL_TARGET=	setup check
 
 MANVERSION=	20021211
 
-.if (${MACHINE_ARCH} == "arm32" || ${MACHINE_ARCH} == "arm")
-.if (${CFLAGS:M-O2} == "-O2")
-CFLAGS:=        ${CFLAGS:S/-O2/-O0/}
-.endif
+.if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
+USE_GCC3=YES
+.  include "../../mk/gcc.buildlink2.mk"
 .endif
 
 post-extract:

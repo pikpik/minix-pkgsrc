@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/09/29 05:11:01 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/06/02 14:05:02 abs Exp $
 #
 
 DISTNAME=	fastcap-2.0-15Jul92
@@ -24,7 +24,7 @@ HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./config
 CONFIGURE_ARGS=		4
 
-.if (${MACHINE_ARCH} == arm32)
+.if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
 .  include "../../mk/gcc.buildlink2.mk"
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/06/23 03:44:49 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2002/07/18 09:08:27 agc Exp $
 #
 
 DISTNAME=		pthreads-1_60_beta6
@@ -10,8 +10,9 @@ MAINTAINER=		agc@netbsd.org
 HOMEPAGE=		http://www.mit.edu:8001/people/proven/pthreads.html
 COMMENT=		Chris Provenzano's (MIT) POSIX threads library
 
-ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm32 NetBSD-*-i386 \
-			NetBSD-*-sparc NetBSD-*-m68k NetBSD-*-powerpc
+ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm NetBSD-*-arm32 \
+			NetBSD-*-i386 NetBSD-*-sparc NetBSD-*-m68k \
+			NetBSD-*-powerpc
 CONFLICTS+=             unproven-pthreads-[0-9]*
 
 GNU_CONFIGURE=		yes

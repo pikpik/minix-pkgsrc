@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/02 11:54:37 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/06/02 01:20:39 jschauma Exp $
 
 DISTNAME=		libgtop-2.0.0
 PKGNAME=		${DISTNAME:S/-/2-/}
@@ -18,7 +18,8 @@ OSVERSION_SPECIFIC=	YES
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == NetBSD
-. if (${MACHINE_ARCH} != alpha) && (${MACHINE_ARCH} != arm32) && \
+. if (${MACHINE_ARCH} != alpha) && \
+     (${MACHINE_ARCH} != arm) && (${MACHINE_ARCH} != arm32) && \
      (${MACHINE_ARCH} != i386) && (${MACHINE_ARCH} != m68k) && \
      (${MACHINE_ARCH} != mipsel) && (${MACHINE_ARCH} != powerpc) && \
      (${MACHINE_ARCH} != sparc) && (${MACHINE_ARCH} != sparc64)
