@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2000/07/22 12:03:38 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/18 22:46:32 hubertf Exp $
 
 DISTNAME=	Atari800-0.9.9a
 PKGNAME=	atari800-0.9.9a
 CATEGORIES=	emulators
-MASTER_SITES=	http://cas3.zlin.vutbr.cz/~stehlik/a800/ \
+MASTER_SITES=	ftp://ftp.sophics.cz/pub/Atari800/src/pre-1.0/ \
 		http://www.signus.demon.co.uk/Software/Portable/Atari800e/
 DISTFILES=	a800s099a.zip xf25.zip
 
