@@ -1,10 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/15 01:07:25 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/05 02:54:22 wiz Exp $
 #
 
 DISTNAME=		aspell-.33.7.1
 PKGNAME=		${DISTNAME:S/-./-0./}
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=aspell/}
+
+PATCHFILES=		aspell-.33-fix2.diff
+PATCH_SITES=		${MASTER_SITES}
 
 MAINTAINER=		wiz@netbsd.org
 HOMEPAGE=		http://aspell.sourceforge.net/
