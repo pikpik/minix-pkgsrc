@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/03/16 14:11:37 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/31 15:31:24 jdolecek Exp $
 #
 
 DISTNAME=	csacek-2.1.4
@@ -17,6 +17,7 @@ HAS_CONFIGURE=	yes
 
 CONFIGURE_ARGS+= --with-templatedir=${PREFIX}/share/csacek \
 		--with-target=Apache
+MAKE_ENV+=	LOCALBASE=${LOCALBASE}
 
 do-install:
 	@${INSTALL_DATA} ${WRKSRC}/mod_csacek.so ${PREFIX}/lib/httpd/
