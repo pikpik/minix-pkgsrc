@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/02 16:41:05 rh Exp $
 #
 
 DISTNAME=		libstroke-0.3
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.etla.net/libstroke/
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.etla.net/libstroke/
 
-DEPENGS+=		tcl-8.0.5:../../lang/tcl80
+DEPENDS+=		tcl-8.0.5:../../lang/tcl80
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
