@@ -4,7 +4,7 @@
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $NetBSD: Makefile,v 1.1.1.1 1997/10/11 21:54:24 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1997/10/24 01:24:33 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/04/02 07:58:25 obrien Exp
 #
 
@@ -21,6 +21,5 @@ MAN1=		jive.1
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/jive ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${MAN1} ${PREFIX}/man/man1
-
 
 .include <bsd.port.mk>
