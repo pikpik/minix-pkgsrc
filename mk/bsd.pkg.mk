@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1594 2005/02/22 21:01:10 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1595 2005/02/25 13:05:52 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -107,11 +107,14 @@ PLIST_SRC+=		${PKGDIR}/PLIST.common
 .  endif
 .  if exists(${PKGDIR}/PLIST.${OPSYS})
 PLIST_SRC+=		${PKGDIR}/PLIST.${OPSYS}
-.  elif exists(${PKGDIR}/PLIST.${MACHINE_ARCH:C/i[3-6]86/i386/g})
+.  endif
+.  if exists(${PKGDIR}/PLIST.${MACHINE_ARCH:C/i[3-6]86/i386/g})
 PLIST_SRC+=		${PKGDIR}/PLIST.${MACHINE_ARCH:C/i[3-6]86/i386/g}
-.  elif exists(${PKGDIR}/PLIST.${OPSYS}-${MACHINE_ARCH:C/i[3-6]86/i386/g})
+.  endif
+.  if exists(${PKGDIR}/PLIST.${OPSYS}-${MACHINE_ARCH:C/i[3-6]86/i386/g})
 PLIST_SRC+=		${PKGDIR}/PLIST.${OPSYS}-${MACHINE_ARCH:C/i[3-6]86/i386/g}
-.  elif exists(${PKGDIR}/PLIST)
+.  endif
+.  if exists(${PKGDIR}/PLIST)
 PLIST_SRC+=		${PKGDIR}/PLIST
 .  endif
 .  if exists(${PKGDIR}/PLIST.common_end)
