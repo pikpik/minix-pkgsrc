@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.subdir.mk,v 1.36 2000/05/29 00:54:25 hubertf Exp $
+#	$NetBSD: bsd.pkg.subdir.mk,v 1.37 2000/06/03 15:25:16 mycroft Exp $
 #	Derived from: FreeBSD Id: bsd.port.subdir.mk,v 1.19 1997/03/09 23:10:56 wosch Exp 
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
 #
@@ -50,7 +50,7 @@ STRIPFLAG?=	-s
 
 AWK?=		/usr/bin/awk
 BASENAME?=	/usr/bin/basename
-ECHO?=		/bin/echo
+ECHO?=		echo
 ECHO_MSG?=	${ECHO}
 MV?=		/bin/mv
 RM?=		/bin/rm
