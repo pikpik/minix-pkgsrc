@@ -2,13 +2,7 @@ $NetBSD$
 
 --- configure.in.orig	Mon Jul  2 17:48:55 2001
 +++ configure.in
-@@ -48,12 +48,12 @@
- ])
- 
- 
-+# configure's patch is hand-trimmed after regen from patched configure.in
-+
- dnl === BEGIN aclocal REPLACEMENT MACROS
+@@ -52,8 +52,6 @@
  dnl 
  # ACNU_PROG_LEX fm AC_PROG_LEX 
  # -----------  
@@ -17,7 +11,7 @@ $NetBSD$
  AC_DEFUN(ACNU_PROG_LEX,[
  dnl   autoconf-2.14a
  dnl    AH_CHECK_LIB(fl)dnl
-@@ -65,9 +65,7 @@
+@@ -65,9 +63,7 @@
        flex*) ac_lib=fl ;;
        *) ac_lib=l ;;
        esac
