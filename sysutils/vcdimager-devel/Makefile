@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2004/10/03 00:18:16 tv Exp $
+# $NetBSD: Makefile,v 1.21 2004/11/15 09:01:05 markd Exp $
 #
 
 DISTNAME=	vcdimager-0.7.20
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.vcdimager.org/pub/vcdimager/vcdimager-0.7_UNSTABLE/
 
