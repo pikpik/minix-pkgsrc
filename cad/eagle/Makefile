@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2001/06/05 16:49:09 dillo Exp $
+# $NetBSD: Makefile,v 1.5 2002/04/04 12:29:46 tron Exp $
 #
 
-DISTNAME=		eagle-4.03e
-PKGNAME=		eagle-4.03
+DISTNAME=		eagle-4.09r2e
+PKGNAME=		eagle-4.09r2
 WRKSRC=			${WRKDIR}/${DISTNAME:C/.$//}
 CATEGORIES=		cad
-MASTER_SITES=		ftp://ftp.cadsoft.de/pub/program/4.03/
+MASTER_SITES=		ftp://ftp.cadsoft.de/pub/program/4.09r2/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		rh@netbsd.org
