@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/lout
+bin/c2lout
+man/man1/lout.1
+man/man1/c2lout.1
+
