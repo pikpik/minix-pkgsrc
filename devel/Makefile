@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.386 2003/03/20 19:35:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.387 2003/04/09 16:00:49 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -83,6 +83,7 @@ SUBDIR+=	eclipse
 SUBDIR+=	eel
 SUBDIR+=	eel2
 SUBDIR+=	electricfence
+SUBDIR+=	elf
 SUBDIR+=	elib
 SUBDIR+=	emacs-ilisp
 SUBDIR+=	exctags
