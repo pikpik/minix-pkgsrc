@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.235 1999/03/30 09:46:27 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.236 1999/03/31 09:04:18 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1469,7 +1469,7 @@ SU_CMD?=	${SU} - root -c
 pkg-su-install:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	if [ `${ID} -u` = 0 ]; then					\
-		{MAKE} ${.MAKEFLAGS} root-install;			\
+		${MAKE} ${.MAKEFLAGS} root-install;			\
 	else								\
 		if [ "X${BATCH}" != X"" ]; then                         \
 			${ECHO_MSG} "Warning: Batch mode, not superuser, can't run mtree."; \
