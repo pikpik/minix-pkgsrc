@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gmp3info
+bin/mp3info
+man/man1/mp3info.1
