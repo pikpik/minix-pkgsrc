@@ -1,6 +1,6 @@
 $NetBSD$
 
---- params.h.orig	Sun Sep  8 11:49:24 2002
+--- params.h.orig	Sat Apr 12 16:16:01 2003
 +++ params.h
 @@ -13,7 +13,7 @@
  /*
@@ -20,7 +20,7 @@ $NetBSD$
  
  #if DAEMON_LIBWRAP
  /*
-@@ -143,8 +143,8 @@
+@@ -144,8 +144,8 @@
   *
   * Note that there's no built-in password aging support.
   */
@@ -30,8 +30,8 @@ $NetBSD$
 +#define AUTH_SHADOW			0
  #define AUTH_PAM			0
  #define AUTH_PAM_USERPASS		0
- 
-@@ -196,8 +196,8 @@
+ #define USE_LIBPAM_USERPASS		0
+@@ -198,8 +198,8 @@
   *
   * *BSDs use flock(2), others typically use fcntl(2).
   */
