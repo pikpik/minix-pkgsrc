@@ -1,10 +1,13 @@
 $NetBSD$
 
---- src/Makefile.in.orig	Mon Apr  9 16:03:48 2001
+--- src/Makefile.in.orig	Tue May 22 20:54:34 2001
 +++ src/Makefile.in
-@@ -71,6 +71,7 @@
+@@ -69,8 +69,9 @@
+ CWFLAGS=@CWFLAGS@
+ CIFLAGS=@CIFLAGS@
  CMFLAGS=@CMFLAGS@
- CFLAGS=	$(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
+-CFLAGS=	$(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
++CFLAGS+= $(CWFLAGS) $(COFLAGS) $(CIFLAGS) $(CMFLAGS)
  LDFLAGS=@LDFLAGS@
 +CPPFLAGS=@CPPFLAGS@
  

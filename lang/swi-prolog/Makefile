@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2001/05/22 01:21:16 jtb Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/11 06:34:40 jlam Exp $
 
-DISTNAME=		pl-lite-4.0.5
-PKGNAME=		swi-prolog-4.0.5
+DISTNAME=		pl-lite-4.0.7
+PKGNAME=		swi-prolog-4.0.7
 CATEGORIES=		lang
 MASTER_SITES=		http://www.swi.psy.uva.nl/cgi-bin//nph-download/SWI-Prolog/
 
