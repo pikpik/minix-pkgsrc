@@ -19,6 +19,12 @@ POSTFIX_SPOOL=	/var/spool/postfix
 
 .include "../../mk/bsd.prefs.mk"
 
+.if defined(POSTFIX_USE_INET6) && ${POSTFIX_USE_INET6} == "YES"
+PATCHFILES+=	postfix-20010228pl04-v6-20010809a.diff.gz
+PATCH_SITES+=	ftp://ftp.kame.net/pub/kame/misc/
+BUILD_DEFS+=	POSTFIX_USE_INET6
+.endif
+
 .if defined(POSTFIX_USE_PCRE) && ${POSTFIX_USE_PCRE} == "YES"
 DEPENDS+=	pcre>=2.08:../../devel/pcre
 CCARGS+=	-DHAS_PCRE -I${LOCALBASE}/include
