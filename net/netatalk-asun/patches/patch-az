@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libatalk/atp/atp_rsel.c.orig	Thu Feb  4 07:36:30 1999
++++ libatalk/atp/atp_rsel.c	Mon Jul 31 18:53:38 2000
+@@ -10,6 +10,7 @@
+ #include <sys/errno.h>
+ #include <sys/uio.h>
+ #include <signal.h>
++#include <string.h>
+ 
+ #include <netatalk/endian.h>
+ #include <netatalk/at.h>
