@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2000/07/07 07:05:40 rh Exp $
+@comment $NetBSD: PLIST,v 1.5 2000/07/08 16:18:34 rh Exp $
 bin/tgif
+lib/X11/doc/html/tgif.1.html
 lib/X11/tgif/eq4-2x.sym
 lib/X11/tgif/eq4-epstool.sym
 lib/X11/tgif/eq4-ps2epsi.sym
