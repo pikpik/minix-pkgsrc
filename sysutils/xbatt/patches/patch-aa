@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Imakefile.orig	Tue Oct 26 03:09:57 1999
-+++ Imakefile	Tue Oct 26 03:10:22 1999
-@@ -9,6 +9,9 @@
+--- Imakefile.orig	Fri Sep 11 13:50:44 1998
++++ Imakefile
+@@ -9,8 +9,11 @@
  #ifdef FreeBSDArchitecture
  INSTALLFLAGS=-c -g operator -m 2755
  #endif
@@ -12,3 +12,6 @@ $NetBSD$
  #ifdef LinuxArchitecture
  INSTALLFLAGS=-c -m 2755
  #endif
+ 
+-ComplexProgramTarget(xbatt)
++ComplexProgramTargetNoMan(xbatt)
