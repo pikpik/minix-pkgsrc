@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.4 2003/05/02 11:56:03 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/07/13 13:52:52 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gnet.
 #
@@ -15,7 +15,6 @@ BUILDLINK_PREFIX.gnet_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.gnet+=	include/gnet-2.0/*.h
 BUILDLINK_FILES.gnet+=	lib/gnet-2.0/include/gnetconfig.h
 BUILDLINK_FILES.gnet+=	lib/libgnet-2.0.*
-BUILDLINK_FILES.gnet+=	lib/pkgconfig/gnet-2.0.pc
 
 .include "../../devel/glib2/buildlink2.mk"
 
