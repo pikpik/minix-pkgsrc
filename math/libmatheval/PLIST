@@ -1,0 +1,8 @@
+@comment $NetBSD$
+include/matheval.h
+info/libmatheval.info
+lib/libmatheval.a
+lib/libmatheval.la
+lib/libmatheval.so
+lib/libmatheval.so.1
+lib/libmatheval.so.1.0
