@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/01 17:44:43 tv Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/24 19:45:29 jlam Exp $
 #
 
 DISTNAME=	mod_gzip.c
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.remotecommunications.com/apache/mod_gzip/src/${VERSION}
 EXTRACT_SUFX=	.gz
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} changes.txt commands.txt samples.txt
 
-MAINTAINER=	tv@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.remotecommunications.com/apache/mod_gzip/
 COMMENT=	On-the-fly GZIP compression for Apache 1.3.x
 

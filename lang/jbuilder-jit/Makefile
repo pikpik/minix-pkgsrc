@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/10/31 14:32:58 tv Exp $
+# $NetBSD: Makefile,v 1.7 2002/07/31 19:33:20 schmonz Exp $
 #
 
 DISTNAME=	unix_jb35foundation
@@ -6,7 +6,7 @@ PKGNAME=	jbuilder-jit-1.2.15
 CATEGORIES=     lang
 MASTER_SITES=	http://www.vit.edu.tw/borland/JBuilder35Foundation/
 
-MAINTAINER=	tv@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.inprise.com/jbuilder/foundation/linux.html
 COMMENT=	Just-In-Time compiler for Linux Java Virtual Machine
 
