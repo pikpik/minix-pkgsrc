@@ -1,11 +1,12 @@
 #!/bin/sh
 #
-# $NetBSD: DEINSTALL,v 1.1 2001/06/20 07:10:59 jlam Exp $
+# $NetBSD: DEINSTALL,v 1.2 2001/07/12 06:05:28 tron Exp $
 
 PKGNAME=$1
 STAGE=$2
 
 CAT="@CAT@"
+CMP="@CMP@"
 RM="@RM@"
 
 SAMPLECONFDIR=${PKG_PREFIX}/share/doc/mutt/samples
@@ -22,7 +23,7 @@ DEINSTALL)
 	do
 		FILE=${CONFDIR}/${file}
 		SAMPLEFILE=${SAMPLECONFDIR}/${file}
-		if cmp -s ${FILE} ${SAMPLEFILE}
+		if ${CMP} -s ${FILE} ${SAMPLEFILE}
 		then
 			${RM} -f ${FILE}
 		fi

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/07/02 21:03:02 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2001/07/10 00:58:32 hubertf Exp $
 #
 
 DISTNAME=	xpkgwedge-1.6
@@ -18,19 +18,10 @@ NO_CHECKSUM=	# defined
 DEINSTALL_FILE=	${WRKDIR}/DEINSTALL
 INSTALL_FILE=	${WRKDIR}/INSTALL
 
-.include "../../mk/bsd.prefs.mk"
-
-.if (${OPSYS} == SunOS)
-DEPENDS+=	diffutils>=2.7:../../devel/diffutils
-DIFF=		${LOCALBASE}/bin/gdiff
-.else
-DIFF=		/usr/bin/diff
-.endif
-
 FILES_SUBST=		X11BASE=${X11BASE}
 FILES_SUBST+=		PREFIX=${PREFIX}
+FILES_SUBST+=		CMP=${CMP:Q}
 FILES_SUBST+=		CP=${CP:Q}
-FILES_SUBST+=		DIFF=${DIFF:Q}
 FILES_SUBST+=		GREP=${GREP:Q}
 FILES_SUBST+=		RM=${RM:Q}
 FILES_SUBST+=		RMDIR=${RMDIR:Q}
