@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 # installation script for astrolog
 if [ "$2" != "POST-INSTALL" ]; then
   exit 0

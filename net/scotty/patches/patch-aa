@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Makefile.in~	Fri Sep 13 07:42:06 1996
 +++ Makefile.in	Fri Sep 13 09:28:45 1996
 @@ -469,7 +469,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/runtime/fload.r.orig	Fri Jul 29 21:22:51 1994
 --- src/runtime/fload.r	Sun Apr 16 14:02:26 1995
 ***************

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libguile/stime.c.orig	Sun Nov  2 14:40:38 1997
 +++ libguile/stime.c	Sun Nov  2 14:44:52 1997
 @@ -81,7 +81,9 @@

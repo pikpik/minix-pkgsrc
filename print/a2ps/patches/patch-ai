@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- contrib/Makefile.in.orig	Thu Jun 25 16:25:28 1998
 +++ contrib/Makefile.in	Thu Jul  9 13:34:49 1998
 @@ -74,7 +74,7 @@

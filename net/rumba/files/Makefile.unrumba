@@ -1,3 +1,6 @@
+#
+# $NetBSD$
+#
 PROG=unrumba
 NOMAN=sorry
 

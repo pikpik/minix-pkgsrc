@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- runtime/mosml.c.orig	Sun Jul 27 15:35:09 1997
 +++ runtime/mosml.c	Mon Feb 16 21:41:07 1998
 @@ -1,5 +1,13 @@

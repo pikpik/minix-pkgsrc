@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -rc2 popper.8 popper.8
 *** popper.8	Wed Nov 19 13:20:38 1997
 --- popper.8	Thu Feb 12 15:24:04 1998

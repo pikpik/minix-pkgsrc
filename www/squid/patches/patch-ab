@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/unlinkd.c.dist	Tue Apr 29 02:14:17 1997
 +++ src/unlinkd.c	Sun Jul  6 00:58:56 1997
 @@ -148,7 +148,7 @@

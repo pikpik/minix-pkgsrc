@@ -1,3 +1,5 @@
+# $NetBSD$
+
 set wish !!WISH!!
 set exmh(version) {version !!VERSION!! !!DATE!!}
 set exmh(name) exmh

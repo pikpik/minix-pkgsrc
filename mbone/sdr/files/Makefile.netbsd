@@ -1,3 +1,6 @@
+#
+# $NetBSD$
+#
 CC=cc
 INCLUDES=-I${LOCALBASE}/include/tk8.0 -I${LOCALBASE}/include/tcl8.0 -I${X11BASE}/include
 LIB_DIR=${LOCALBASE}/lib

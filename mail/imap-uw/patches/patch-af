@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/imapd/imapd.8c.orig	Sun Jul 19 11:09:19 1998
 +++ src/imapd/imapd.8c	Sun Jul 19 11:09:44 1998
 @@ -3,7 +3,7 @@

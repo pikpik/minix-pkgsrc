@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- fig2dev/Imakefile.orig	Wed Jul  1 01:52:50 1998
 +++ fig2dev/Imakefile	Fri Jul  3 13:34:01 1998
 @@ -31,7 +31,7 @@

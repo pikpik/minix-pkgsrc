@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/ipopd/Makefile.orig	Sun Jul 19 10:53:35 1998
 +++ src/ipopd/Makefile	Sun Jul 19 10:53:43 1998
 @@ -32,7 +32,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/qfdes/qfDES-memory.c~	Wed Sep  4 09:16:14 1996
 --- src/qfdes/qfDES-memory.c	Thu Mar  5 18:07:36 1998
 ***************

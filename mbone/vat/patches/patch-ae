@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- configure.in.tk.freebsd	Thu Nov 20 13:22:35 1997
 +++ configure.in.tk	Fri Nov 21 13:35:46 1997
 @@ -8,23 +8,23 @@

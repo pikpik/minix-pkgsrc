@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- toolssrc/Makefile.orig	Wed Oct 23 10:35:44 1996
 +++ toolssrc/Makefile	Tue Feb 17 00:08:55 1998
 @@ -34,7 +34,7 @@

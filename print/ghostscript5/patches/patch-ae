@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- devs.mak.org	Sun May 18 19:17:33 1997
 +++ devs.mak	Sun May 18 19:19:06 1997
 @@ -676,8 +676,13 @@

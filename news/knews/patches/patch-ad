@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/thread.c.orig	Fri Jan  9 18:16:23 1998
 +++ src/thread.c	Thu Apr 23 00:52:42 1998
 @@ -1108,6 +1108,7 @@

@@ -1,6 +1,8 @@
 #!/bin/sh
 #
-# $Id: configure,v 1.1.1.1 1997/10/27 05:01:31 hubertf Exp $
+# $NetBSD$
+#
+# Id: configure,v 1.1.1.1 1997/10/27 05:01:31 hubertf Exp
 #
 
 mv ${WRKSRC}/mirror.pl ${WRKSRC}/mirror.pl.bak

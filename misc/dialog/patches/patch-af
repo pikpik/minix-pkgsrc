@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- menubox.c.orig	Fri Jan 23 17:37:12 1998
 +++ menubox.c	Fri Jan 23 18:15:46 1998
 @@ -53,12 +53,32 @@

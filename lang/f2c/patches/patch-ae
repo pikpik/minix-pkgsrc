@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libF77/makefile.orig	Sun Jul 19 22:58:11 1998
 +++ libF77/makefile	Sun Jul 19 23:11:54 1998
 @@ -2,5 +2,5 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/runtime/rmisc.r	1997/10/02 09:28:35	1.1
 +++ src/runtime/rmisc.r	1997/10/02 09:30:08
 @@ -123,14 +123,15 @@

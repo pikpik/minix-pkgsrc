@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- cucipop.8.orig	Mon May 11 17:35:19 1998
 +++ cucipop.8	Tue Jul 21 11:17:48 1998
 @@ -48,12 +48,12 @@

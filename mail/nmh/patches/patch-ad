@@ -1,3 +1,5 @@
+$NetBSD$
+
 # Do this patch after acconfig.h to avoid having autoconf regenerate the
 # config.h.in file in case end user has autoconf...
 diff -ur config.h.in-dist config.h.in

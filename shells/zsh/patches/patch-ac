@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Doc/zsh.texi.orig	Thu Dec 19 09:00:10 1996
 +++ Doc/zsh.texi	Mon Jun 16 20:35:02 1997
 @@ -2,6 +2,10 @@

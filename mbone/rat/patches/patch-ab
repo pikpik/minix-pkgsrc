@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/ui.c.orig	Thu May 22 09:31:59 1997
 +++ src/ui.c	Thu Apr 23 10:21:20 1998
 @@ -202,7 +202,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/Makefile.template.orig	Thu Oct 31 14:35:42 1996
 +++ src/Makefile.template	Thu Oct 31 14:36:23 1996
 @@ -168,13 +168,13 @@

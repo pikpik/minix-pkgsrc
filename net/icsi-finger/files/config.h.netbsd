@@ -3,7 +3,8 @@
  *	Included in the cpp-Makefile, this file contains defines which control
  *	the making of GNU Finger.
  *
- * $Id: config.h.netbsd,v 1.1 1998/07/22 12:08:23 is Exp $ ICSI (Berkeley)
+ * Id: config.h.netbsd,v 1.1 1998/07/22 12:08:23 is Exp ICSI (Berkeley)
+ * $NetBSD$
  */
 #ifndef _CONFIG_H_
 #define _CONFIG_H_

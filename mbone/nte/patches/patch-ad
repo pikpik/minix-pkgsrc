@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** /dev/null	Thu Mar  5 20:41:40 1998
 --- netbsd/Makefile.netbsd	Thu Mar  5 18:23:50 1998
 ***************

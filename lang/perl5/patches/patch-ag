@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- doio.c.orig	Mon Jul 28 21:08:11 1997
 +++ doio.c	Thu Apr 23 08:09:19 1998
 @@ -1333,7 +1333,7 @@

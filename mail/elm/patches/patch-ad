@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/pgp.c.orig	Sat May 17 20:30:00 1997
 +++ src/pgp.c	Thu Apr 16 23:13:29 1998
 @@ -117,7 +117,7 @@

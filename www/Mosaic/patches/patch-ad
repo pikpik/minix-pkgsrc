@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./src/xresources.h.org	Tue Apr  9 21:41:26 1996
 +++ ./src/xresources.h	Tue Apr  9 21:43:12 1996
 @@ -94,7 +94,7 @@

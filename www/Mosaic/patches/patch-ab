@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** libwww2/HTTCP.c.orig	Mon Aug  7 17:12:22 1995
 --- libwww2/HTTCP.c	Mon Aug  7 17:12:28 1995
 ***************

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./Makefile.org	Tue Apr 25 00:04:52 1995
 +++ ./Makefile	Tue Apr 25 00:14:57 1995
 @@ -9,14 +9,14 @@

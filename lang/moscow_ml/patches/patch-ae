@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- mosmllib/Makefile.orig	Thu Jul 17 17:33:44 1997
 +++ mosmllib/Makefile	Tue Feb 17 00:07:02 1998
 @@ -27,14 +27,14 @@

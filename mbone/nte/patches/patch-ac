@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/canvas_ext.c~	Wed Sep  4 06:54:02 1996
 --- src/canvas_ext.c	Thu Mar  5 19:30:28 1998
 ***************

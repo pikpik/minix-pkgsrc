@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Complete.c.orig	Fri Oct 18 07:10:31 1996
 +++ Complete.c	Fri Feb 20 14:47:06 1998
 @@ -241,7 +241,11 @@

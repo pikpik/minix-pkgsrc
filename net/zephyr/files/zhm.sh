@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 PREFIX=${PREFIX-@prefix@}
 
 if [ -x ${PREFIX}/sbin/zhm -a -f ${PREFIX}/etc/zephyr/server.list ] ; then

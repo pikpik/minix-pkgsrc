@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/load-dl.c	Sun Dec 17 15:45:40 1995
 --- src/load-dl.c	Sun Dec 17 15:46:22 1995
 ***************

@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -ru ../original/src/Makefile.template ./src/Makefile.template
 --- ../original/src/Makefile.template	Tue Oct  1 16:53:30 1996
 +++ ./src/Makefile.template	Tue Nov 18 15:06:29 1997

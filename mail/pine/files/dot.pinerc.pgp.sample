@@ -1,3 +1,5 @@
+# $NetBSD$
+#
 # List of features; see Pine's Setup/options menu for the current set.
 # e.g. feature-list= select-without-confirm, signature-at-bottom
 # Default condition for all of the features is no-.

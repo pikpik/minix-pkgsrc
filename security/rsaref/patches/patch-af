@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ../source/rsaref.h.orig	Fri Mar 25 14:01:49 1994
 +++ ../source/rsaref.h	Tue Jul 14 13:20:12 1998
 @@ -8,9 +8,9 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/error.c	Fri Jun  2 15:16:00 1995
 --- src/error.c	Mon Feb 12 18:53:17 1996
 ***************

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/dlg.c.orig      Tue Sep 16 23:54:31 1997
 +++ src/dlg.c   Sat Jan 24 17:08:46 1998
 @@ -21,5 +21,5 @@

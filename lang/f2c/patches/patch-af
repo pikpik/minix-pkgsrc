@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libF77/libF77.xsum.orig	Thu Jul  9 08:25:14 1998
 +++ libF77/libF77.xsum	Thu Jul  9 08:25:31 1998
 @@ -75,5 +75,4 @@

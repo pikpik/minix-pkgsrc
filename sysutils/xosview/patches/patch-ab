@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Xrm.cc.orig	Fri May 29 04:34:30 1998
 +++ Xrm.cc	Fri May 29 04:39:30 1998
 @@ -156,7 +156,7 @@

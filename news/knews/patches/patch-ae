@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- knews.tmpl.orig	Fri Jan  9 18:16:12 1998
 +++ knews.tmpl	Thu Apr 23 01:07:29 1998
 @@ -23,11 +23,10 @@

@@ -1,3 +1,5 @@
+/* $NetBSD$ */
+
 /*
  *      This version is for FreeBSD 2.1
  *      Done by "Andrey A. Chernov" <ache@astral.msk.su>

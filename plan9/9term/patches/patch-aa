@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libtext/Makefile.orig	Thu Jun  2 03:01:19 1994
 +++ libtext/Makefile	Fri Sep 26 16:44:27 1997
 @@ -5,14 +5,15 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** cdrecord/scsi-bsd.c.orig	Wed Nov 12 23:41:37 1997
 --- cdrecord/scsi-bsd.c	Wed Nov 12 23:46:55 1997
 ***************

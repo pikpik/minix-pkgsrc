@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/procs.c.orig	Fri Jan  9 18:16:22 1998
 +++ src/procs.c	Thu Apr 23 00:52:42 1998
 @@ -66,7 +66,10 @@

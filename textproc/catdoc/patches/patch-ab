@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- catdoc.1.orig	Mon Jun  8 08:57:49 1998
 +++ catdoc.1	Sat Jun 20 00:54:18 1998
 @@ -13,14 +13,14 @@

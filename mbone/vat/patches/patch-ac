@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- main.cc.orig	Tue Sep  9 11:17:10 1997
 +++ main.cc	Tue Sep  9 11:17:31 1997
 @@ -162,7 +162,7 @@

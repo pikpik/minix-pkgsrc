@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- afm/Makefile.in.orig	Thu Jun 25 16:25:16 1998
 +++ afm/Makefile.in	Wed Jul  1 22:14:37 1998
 @@ -78,7 +78,7 @@

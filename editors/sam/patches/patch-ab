@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** libframe/Makefile.orig	Fri Jul 28 14:08:32 1995
 --- libframe/Makefile	Fri Jul 21 15:02:32 1995
 ***************

@@ -1,2 +1,5 @@
+#
+# $NetBSD$
+#
 all install clean:
 	cd netbsd; $(MAKE) $@

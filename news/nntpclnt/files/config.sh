@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 # config.sh
 # This file was produced by running the Configure script
 # (and manually bashed on by tv@netbsd.org)

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- name.c.orig	Thu Apr 10 04:41:48 1997
 +++ name.c	Wed Oct 29 12:11:01 1997
 @@ -58,6 +58,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- tkStripchart.c.orig	Tue Sep  9 11:00:42 1997
 +++ tkStripchart.c	Tue Sep  9 10:52:30 1997
 @@ -148,7 +148,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- imap/Makefile.orig	Sat Jul 18 22:13:09 1998
 +++ imap/Makefile	Sat Jul 18 22:13:27 1998
 @@ -274,8 +274,6 @@

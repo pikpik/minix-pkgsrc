@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -1 -uBbNr commands.c commands.c
 --- commands.c	Tue Aug 27 16:13:57 1996
 +++ commands.c	Sat Oct  4 03:25:02 1997

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /usr/local/pkgsrc//mbone/vic/work/vic-2.8/grabber-spigot.cc	Sat Jan 13 22:35:28 1996
 +++ grabber-spigot.cc	Tue Nov 18 13:16:25 1997
 @@ -202,11 +202,14 @@

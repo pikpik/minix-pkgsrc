@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- sitebox.cc.orig	Tue Sep  9 11:24:41 1997
 +++ sitebox.cc	Tue Sep  9 11:24:43 1997
 @@ -112,7 +112,7 @@

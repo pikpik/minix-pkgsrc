@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- pine/osdep/os-neb.h.orig	Sun Jul 19 01:11:15 1998
 +++ pine/osdep/os-neb.h	Sun Jul 19 01:11:25 1998
 @@ -223,7 +223,7 @@

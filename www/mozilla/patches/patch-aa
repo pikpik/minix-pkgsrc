@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** cmd/stubfe/Makefile.orig	Tue Aug  4 02:37:20 1998
 --- cmd/stubfe/Makefile	Tue Aug  4 11:29:40 1998
 ***************

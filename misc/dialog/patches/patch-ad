@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- guage.c.orig	Fri Jan 23 17:37:12 1998
 +++ guage.c	Fri Jan 23 17:37:12 1998
 @@ -38,6 +38,11 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- build.orig	Sat Jul 18 22:14:00 1998
 +++ build	Sat Jul 18 22:14:35 1998
 @@ -258,20 +258,12 @@

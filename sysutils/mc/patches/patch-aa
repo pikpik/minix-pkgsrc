@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** configure.orig	Tue Jun 17 09:51:22 1997
 --- configure	Fri Jun 20 00:03:50 1997
 *************** ac_configure=$ac_aux_dir/configure # Thi

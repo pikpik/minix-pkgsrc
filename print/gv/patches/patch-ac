@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- config.Unix.orig	Sun Nov 30 00:39:51 1997
 +++ config.Unix	Sun Nov 30 00:44:34 1997
 @@ -110,7 +110,7 @@

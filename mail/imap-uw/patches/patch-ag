@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/ipopd/ipopd.8c.orig	Sun Jul 19 11:09:53 1998
 +++ src/ipopd/ipopd.8c	Sun Jul 19 11:10:15 1998
 @@ -3,9 +3,9 @@

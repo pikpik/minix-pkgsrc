@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** src/h/sys.h.orig	Fri Jul 29 21:24:57 1994
 --- src/h/sys.h	Wed Mar  1 15:43:55 1995
 ***************

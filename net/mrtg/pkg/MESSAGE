@@ -1,5 +1,7 @@
 =============================================================================
 
+$NetBSD$
+
 The Multi Router Traffic Grapher is now installed.  Do note that three
 programs have changed names to more readily reflect their MRTG-specific
 function; make sure to prefix them with "mrtg":

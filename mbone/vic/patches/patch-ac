@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /usr/local/pkgsrc//mbone/vic/work/vic-2.8/grabber-qcam.cc	Fri Jun 21 06:39:36 1996
 +++ grabber-qcam.cc	Tue Nov 18 13:16:25 1997
 @@ -84,6 +84,11 @@

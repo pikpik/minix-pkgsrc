@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** Makefile.in.orig	Tue Jun 24 01:26:06 1997
 --- Makefile.in	Tue Jun 24 01:26:22 1997
 *************** config.h.in: configure.in acconfig.h

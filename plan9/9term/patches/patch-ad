@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libtext/scroll.c.orig	Fri Nov 19 08:14:25 1993
 +++ libtext/scroll.c	Wed Oct 29 10:33:41 1997
 @@ -6,7 +6,9 @@

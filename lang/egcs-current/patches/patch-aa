@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- gcc/config/arm/netbsd.h.orig	Tue May 19 11:13:23 1998
 +++ gcc/config/arm/netbsd.h	Sun May 31 19:01:51 1998
 @@ -145,3 +145,12 @@

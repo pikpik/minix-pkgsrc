@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- man/procmail.man-orig	Fri Apr 11 12:28:59 1997
 +++ man/procmail.man	Thu Jul  9 13:04:00 1998
 @@ -215,11 +215,11 @@

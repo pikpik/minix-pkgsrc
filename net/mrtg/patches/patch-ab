@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- mrtg.orig	Mon Jul 13 13:17:55 1998
 +++ mrtg	Mon Jul 13 13:19:52 1998
 @@ -54,7 +54,7 @@

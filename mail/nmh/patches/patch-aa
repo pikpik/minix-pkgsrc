@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -ur nmh-0.14-dist/acconfig.h nmh-0.14/acconfig.h
 --- acconfig.h-dist	Wed Apr 16 21:25:42 1997
 +++ acconfig.h	Tue May 20 18:59:52 1997

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- check.c.orig        Sat Nov 29 23:32:37 1997
 +++ check.c     Sat Nov 29 23:32:51 1997
 @@ -733,7 +733,7 @@

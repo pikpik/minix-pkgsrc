@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- rsaglue.c.orig	Tue Jan 20 07:24:08 1998
 +++ rsaglue.c	Tue Feb 17 12:30:15 1998
 @@ -71,8 +71,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- signals.c.orig	Tue Mar 28 21:32:06 1995
 +++ signals.c	Sun Jul 19 14:07:51 1998
 @@ -2,14 +2,18 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Common.mk.in.orig	Sun Nov 30 00:19:08 1997
 +++ Common.mk.in	Sat Mar  7 22:59:30 1998
 @@ -101,7 +101,7 @@

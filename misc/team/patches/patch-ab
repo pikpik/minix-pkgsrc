@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- team.c-orig	Fri May 22 15:35:25 1998
 +++ team.c	Fri May 22 15:35:59 1998
 @@ -58,8 +58,8 @@

@@ -1,4 +1,7 @@
 #! /bin/sh
+#
+# $NetBSD$
+#
 
 case "$2" in
   ""|POST-INSTALL) cat <<EOF

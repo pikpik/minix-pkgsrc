@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- sudo.man.orig	Tue Jan 13 06:00:17 1998
 +++ sudo.man	Wed Jul  1 20:11:51 1998
 @@ -195,10 +195,11 @@

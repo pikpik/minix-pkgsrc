@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- nntpclnt.c.orig	Thu Aug 11 23:37:51 1994
 +++ nntpclnt.c	Fri May 22 10:20:49 1998
 @@ -199,7 +199,7 @@

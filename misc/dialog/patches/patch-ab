@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- checklist.c.orig	Fri Jan 23 17:37:12 1998
 +++ checklist.c	Fri Jan 23 18:15:04 1998
 @@ -64,7 +64,7 @@

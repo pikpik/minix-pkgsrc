@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- config/unix/Config/runtime.make.orig	Fri Jun 19 04:54:30 1998
 +++ config/unix/Config/runtime.make	Fri Jun 19 04:54:37 1998
 @@ -40,3 +40,3 @@

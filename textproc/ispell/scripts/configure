@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 
 if [ "`echo a|sed -e P`" = "aa" ]; then
   echo You need a newer version of sed. Use sed from -current or gnu sed
