@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+* The OUTGOINGMAIL variable has been renamed MAIL_TRANSPORT, and its
+  default value has also been changed from 'smtp' to 'sendmail'.
+
+* Future versions of ${PKGNAME} will no longer support ~/.tmdarc so
+  considering renaming it to ~/.tmda/config now.
+
+===========================================================================
