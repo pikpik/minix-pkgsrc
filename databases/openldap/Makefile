@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2004/02/21 01:48:38 jlam Exp $
+# $NetBSD: Makefile,v 1.72 2004/02/21 01:55:14 jlam Exp $
 
 DISTNAME=		openldap-2.1.25
 SVR4_PKGNAME=		oldap
@@ -20,6 +20,8 @@ USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 TEST_TARGET=		test
+
+USE_DB185=		YES
 
 PKG_SYSCONFSUBDIR=	openldap
 
