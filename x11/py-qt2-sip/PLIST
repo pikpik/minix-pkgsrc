@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/sip${PYVERSSUFFIX}
+${PYINC}/sip.h
+${PYINC}/sipQt.h
+${PYSITELIB}/libsip.a
+${PYSITELIB}/libsip.la
+${PYSITELIB}/libsip.so
+${PYSITELIB}/libsip.so.8
+${PYSITELIB}/libsip.so.8.0
