@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- snortsnarf.pl.orig	Sun Jul  7 02:09:26 2002
++++ snortsnarf.pl
+@@ -77,3 +77,3 @@
+ 
+-use lib qw(./include);
++use lib qw(@@PREFIX@@/share/snortsnarf/);
+ use Cwd;
+@@ -455,2 +455,2 @@ OPTION is one of the following:
+ >>
+-}
+\ No newline at end of file
++}
