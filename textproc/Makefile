@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.152 2002/07/19 12:43:47 wiz Exp $
+# $NetBSD: Makefile,v 1.153 2002/07/22 11:32:52 agc Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -64,7 +64,6 @@ SUBDIR+=	libxslt
 SUBDIR+=	lout
 SUBDIR+=	lq-sp
 SUBDIR+=	makeztxt
-SUBDIR+=	mminstance
 SUBDIR+=	namazu1
 SUBDIR+=	namazu2
 SUBDIR+=	ndtpd
