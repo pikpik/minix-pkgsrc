@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/02 20:21:31 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/21 11:30:59 jlam Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-21.2
@@ -14,6 +14,7 @@ CONFLICTS=	mule-[0-9]*
 USE_BUILDLINK2=		yes
 USE_X11=		yes
 USE_GMAKE=		yes
+USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-x
