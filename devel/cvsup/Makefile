@@ -1,21 +1,22 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/13 11:28:19 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/04/27 21:01:03 wiz Exp $
 
-DISTNAME=	cvsup-netbsd-ix86-elf-16.1
-PKGNAME=	cvsup-16.1
+DISTNAME=	cvsup-bin-nogui-16.1d
+PKGNAME=	cvsup-16.1.d
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/cvsupd/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 COMMENT=	cvsup daemon and client
 
-WRKSRC=		${WRKDIR}/cvsup-bin-16.1
+WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 ONLY_FOR_PLATFORM=	NetBSD-1.5*-i386
 USE_X11=	yes
 
 do-install:
-	for i in cvpasswd cvsup cvsup.nogui; do \
+	for i in cvpasswd cvsup ; do \
 		${INSTALL_PROGRAM} ${WRKSRC}/bin/$$i ${PREFIX}/bin; \
 	done
 	for i in cvsupd; do \
