@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/unify
+bin/unipatch
+man/man1/unify.1
