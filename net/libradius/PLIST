@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/libradius.a
 include/radlib.h
 man/man3/libradius.3
