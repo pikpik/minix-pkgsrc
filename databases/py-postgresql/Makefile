@@ -24,12 +24,8 @@ PGUSER?=	pgsql
 PGPREFIX=	${LOCALBASE}/${PGUSER}	# PostgreSQL home directory
 
 do-configure:
-	if echo __ELF__ | ${CC} -E - | grep -q __ELF__; \
-	then ${SED}	-e "s+@PGPREFIX@+${PGPREFIX}+g;s+@WLFLAG@++g" \
-		${FILESDIR}/Setup.in > ${WRKSRC}/Setup.in; \
-	else ${SED}	-e "s+@PGPREFIX@+${PGPREFIX}+g;s+@WLFLAG@+-Wl,+" \
-		${FILESDIR}/Setup.in > ${WRKSRC}/Setup.in; \
-	fi
+	${SED}	-e "s,@PGPREFIX@,${PGPREFIX},g" \
+		${FILESDIR}/Setup.in > ${WRKSRC}/Setup.in
 	${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}
 	cd ${WRKSRC}; ${MAKE} -f Makefile.pre.in boot
 
