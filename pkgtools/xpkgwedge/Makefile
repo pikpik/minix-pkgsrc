@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/10/23 17:32:07 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/01/13 16:21:20 tron Exp $
 #
 
 DISTNAME=	xpkgwedge-1.0
@@ -21,8 +21,8 @@ MESSAGE_FILE=	${WRKDIR}/MESSAGE
 .include "../../mk/bsd.prefs.mk"
 
 .if (${OPSYS} == SunOS)
-DEPENDS+=	diffutils>=2.7:../../textproc/diffutils
-DIFF=		${LOCALBASE}/bin/giff
+DEPENDS+=	diffutils>=2.7:../../devel/diffutils
+DIFF=		${LOCALBASE}/bin/gdiff
 .else
 DIFF=		/usr/bin/diff
 .endif
