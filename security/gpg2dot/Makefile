@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/02/24 13:49:29 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/04 22:16:59 hubertf Exp $
 #
 
-DISTNAME=	gpg2dot-1.3
-WRKSRC=		${WRKDIR}
+DISTNAME=	gpg2dot-1.4
 CATEGORIES=	security
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -19,6 +18,7 @@ NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 
 DISTVER=	${DISTNAME:S/gpg2dot-//}
+WRKSRC=		${WRKDIR}
 
 .include "../../mk/bsd.prefs.mk"
 
