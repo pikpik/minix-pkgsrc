@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/20 20:28:23 kim Exp $
 #
 
 DISTNAME=	anomy-sanitizer-1.49
@@ -10,6 +10,7 @@ HOMEPAGE=	http://mailtools.anomy.net/
 COMMENT=	Mail message filter and sanitizer
 
 DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
+DEPENDS+=	p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 
 .include "../../mk/bsd.prefs.mk"
 
