@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/12/29 12:51:35 recht Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:02:31 jmmv Exp $
 #
 
 DISTNAME=	win32codecs
@@ -16,6 +16,8 @@ DISTFILES+=	qtextras.tar.bz2 rp9win32codecs.tar.bz2
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://mplayerhq.hu/MPlayer/releases/codecs/
 COMMENT=	Huge compilation of Win32 binary codecs
+
+USE_LANGUAGES=	# empty
 
 ONLY_FOR_PLATFORM=	*-*-i386
 
