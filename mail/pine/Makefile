@@ -6,7 +6,7 @@ DISTNAME=       pine4.21
 PKGNAME=        pine-4.21
 CATEGORIES=     mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
-		ftp://ftp.fu-berlin.de/pub/unix/mail/pine/
+		ftp://ftp.fu-berlin.de/unix/mail/pine/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.washington.edu/pine/

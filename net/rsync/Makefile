@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://rsync.samba.org/pub/rsync/ \
 		ftp://sunsite.auc.dk/pub/unix/rsync/  \
 		ftp://ftp0.sunet.se/pub/unix/admin/rsync/  \
-		ftp://ftp.fu-berlin.de/pub/unix/network/rsync/
+		ftp://ftp.fu-berlin.de/unix/network/rsync/
 
 MAINTAINER=     mycroft@netbsd.org
 HOMEPAGE=	http://samba.anu.edu.au/rsync/
