@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/01/10 22:33:12 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2000/04/09 03:58:13 jlam Exp $
 
-DISTNAME=	AuthPG-1.1b1
-PKGNAME=	ap-auth-postgresql-1.1b1
+DISTNAME=	AuthPG-1.2b2
+PKGNAME=	ap-auth-postgresql-1.2b2
 CATEGORIES=	www databases
 MASTER_SITES=	http://home.bawi.org/~minskim/authpg/
 
