@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2002/03/13 17:37:18 fredb Exp $
+# $NetBSD: Makefile,v 1.27 2002/10/09 13:11:20 wiz Exp $
 #
 
 DISTNAME=       xart19980415
 PKGNAME=	xart-19980415
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/19980415
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://linux01.gwdg.de/~rhohen/linux/

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2002/03/14 05:23:03 fredb Exp $
+# $NetBSD: Makefile,v 1.15 2002/10/09 13:22:27 wiz Exp $
 
 DISTNAME=	xli-1.16
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 DISTFILES=	xli.1.16.tar.gz \
