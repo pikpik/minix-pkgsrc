@@ -1,4 +1,4 @@
-# $NetBSD: tools.mk,v 1.35 2004/06/15 13:41:43 grant Exp $
+# $NetBSD: tools.mk,v 1.36 2004/07/21 19:55:11 jlam Exp $
 #
 # This Makefile creates a ${TOOLS_DIR} directory and populates the bin
 # subdir with tools that hide the ones outside of ${TOOLS_DIR}.
@@ -391,7 +391,7 @@ _TOOLS_PROGNAME.tbl=	/usr/bin/tbl
 BUILD_DEPENDS+=		groff>=1.19nb4:../../textproc/groff
 _TOOLS_PROGNAME.tbl=	${LOCALBASE}/bin/tbl
 .  endif
-.  if exists(_TOOLS_PROGNAME.tbl)
+.  if exists(${_TOOLS_PROGNAME.tbl})
 TBL:=			${_TOOLS_PROGNAME.tbl}
 .  endif
 
