@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.27 2002/06/21 17:28:44 abs Exp $
+# $NetBSD: defs.Linux.mk,v 1.28 2002/07/15 16:24:01 schmonz Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -71,6 +71,9 @@ ROOT_CMD?=		${SU} - root -c
 ROOT_GROUP?=		wheel
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
+ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
+ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
+ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
 USERADD?=		/usr/sbin/useradd
 ZOULARISBASE?=		/usr/pkg
 
