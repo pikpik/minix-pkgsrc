@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/09/19 11:29:36 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 1999/10/10 19:43:52 dmcmahill Exp $
 
 DISTNAME=	Ted_S
 PKGNAME=	ted-sv-2.6
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/ \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.nllgg.nl/Ted/
 
-DEPENDS+=       ted-2.6:../../textproc/ted
+DEPENDS+=       ted>=2.6:../../textproc/ted
 
 USE_X11BASE=	YES
 
