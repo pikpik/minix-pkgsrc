@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2002/06/25 05:15:13 grant Exp $
+# $NetBSD: Makefile,v 1.150 2002/07/03 09:27:59 dmcmahill Exp $
 #
 
 COMMENT=	System utilities
@@ -100,7 +100,7 @@ SUBDIR+=	sh-utils
 SUBDIR+=	skill
 SUBDIR+=	socket
 SUBDIR+=	sshsh
-#SUBDIR+=	storage-manager		# Requires manual intervention
+SUBDIR+=	storage-manager
 SUBDIR+=	stow
 SUBDIR+=	su2
 SUBDIR+=	sux
