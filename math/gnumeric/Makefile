@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/02/17 18:22:23 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2001/03/18 03:05:07 mjl Exp $
 #
 
 DISTNAME=		gnumeric-0.64
@@ -17,6 +17,7 @@ DEPENDS+=		libole2>=0.1.7:../../devel/libole2
 DEPENDS+=		oaf>=0.6.0:../../devel/oaf
 
 GNU_CONFIGURE=		YES
+USE_LIBINTL=		YES
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 USE_PERL5=		YES
