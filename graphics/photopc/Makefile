@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2000/04/17 02:44:55 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:22:30 wiz Exp $
 #
 
 DISTNAME=	photopc-3.04
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.average.org/pub/photopc/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=photopc/}
 
 MAINTAINER=	hubertf@netbsd.org
-HOMEPAGE=	http://www.average.org/digicam/
+HOMEPAGE=	http://photopc.sourceforge.net/
 COMMENT=	Manipulate digital still cameras
 
 GNU_CONFIGURE=	YES
