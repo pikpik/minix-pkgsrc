@@ -30,6 +30,12 @@ CCARGS+=	-DDEF_DAEMON_DIR=\"${LIBEXECDIR}\"
 
 .include "../../mk/bsd.prefs.mk"
 
+# NetBSD 1.5 and above has /etc/rc.d/postfix already which is
+# suitable.
+.if empty(MACHINE_PLATFORM:MNetBSD-1.[5-9]*-*)
+RCD_SCRIPTS=	postfix
+.endif
+
 FIX_RPATH+=	AUXLIBS
 
 BUILD_DEFS+=	POSTFIX_USE_INET6
