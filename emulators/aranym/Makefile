@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/07/06 07:31:56 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/09 14:38:52 xtraeme Exp $
 #
 
 DISTNAME=		aranym-0.8.9beta
@@ -22,7 +22,6 @@ BUILD_DEFS+=		FIXED_FASTRAM
 
 FIXED_FASTRAM?=		64 # Default value
 
-CONFIGURE_ARGS+=	--enable-opengl
 CONFIGURE_ARGS+=	--enable-fullmmu
 CONFIGURE_ARGS+=	--enable-dsp-disasm
 CONFIGURE_ARGS+=	--enable-blitsdlblit
