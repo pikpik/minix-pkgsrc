@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:20:05 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/04/11 09:04:54 snj Exp $
 
 DISTNAME=	yorick-1.5.12
 CATEGORIES=	math
 MASTER_SITES=   ftp://ftp-icf.llnl.gov/pub/Yorick/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	refling@comet.lbl.gov
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	ftp://ftp-icf.llnl.gov/pub/Yorick/doc/index.html
 COMMENT=	Numerical algebra system (similar to Matlab)
 
