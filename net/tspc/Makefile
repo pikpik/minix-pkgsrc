@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:51:57 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:11:26 martti Exp $
 #
 
-DISTNAME=	freenet6-0.9.7
-PKGNAME=	${DISTNAME:S/freenet6/tspc/}
+DISTNAME=	freenet6-client-1.0
+PKGNAME=	${DISTNAME:S/freenet6-client/tspc/}
 CATEGORIES=	net
 MASTER_SITES=	# empty
 EXTRACT_SUFX=	.tgz
