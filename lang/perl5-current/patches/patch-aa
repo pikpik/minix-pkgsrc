@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- Configure.orig	Wed Mar 22 15:36:37 2000
-+++ Configure	Mon Aug 14 18:27:04 2000
++++ Configure
 @@ -70,7 +70,7 @@
  fi
  
