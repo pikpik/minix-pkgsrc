@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: quake3server.sh,v 1.1 2004/01/22 09:02:30 xtraeme Exp $
 #
 
 # PROVIDE: quake3server
