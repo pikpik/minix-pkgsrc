@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/dict
+bin/dictfmt
+bin/dictzip
+sbin/dictd
+man/man1/dict.1
+man/man1/dictzip.1
+man/man8/dictd.8
