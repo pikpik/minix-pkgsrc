@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 1998/07/10 18:47:21 tron Exp $
+# $NetBSD: Makefile,v 1.3 1998/08/20 15:17:26 tsarna Exp $
 
 DISTNAME=		fileutils-3.16
 CATEGORIES=		sysutils
-MASTER_SITES=		${MASTER_SITE_GNU}
+MASTER_SITES=		${MASTER_SITE_GNU:=/fileutils/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/fileutils/fileutils.html
