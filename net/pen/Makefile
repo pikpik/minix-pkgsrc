@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/21 12:00:14 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/13 15:09:38 rh Exp $
 #
 
-DISTNAME=	pen-0.4.0
+DISTNAME=	pen-0.10.0
 CATEGORIES=	net
 MASTER_SITES=	http://siag.nu/pub/pen/					\
 		ftp://siag.nu/pub/pen/
@@ -18,7 +18,7 @@ post-install:
 #		${INSTALL_MAN} ${WRKSRC}/${prg}.1 ${PREFIX}/man/man8/${prg}.8
 #.endfor
 		${INSTALL_DATA_DIR} ${PREFIX}/share/doc/pen
-.for doc in COPYING ChangeLog README
+.for doc in CONTROL COPYING ChangeLog HOWTO README
 		${INSTALL_DATA} ${WRKSRC}/${doc} ${PREFIX}/share/doc/pen
 .endfor
 
