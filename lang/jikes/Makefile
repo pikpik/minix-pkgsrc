@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 09:07:16 agc Exp $
+# $NetBSD: Makefile,v 1.6 2001/05/16 10:05:35 agc Exp $
 #
 
-DISTNAME=	jikes-1.14
+DISTNAME=	jikes-1.15
 CATEGORIES=	lang
 MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/
 

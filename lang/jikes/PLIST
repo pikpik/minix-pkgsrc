@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2001/05/16 10:05:36 agc Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:23:54 zuntum Exp $
 bin/jikes
+include/jikesapi.h
 man/man1/jikes.1
 share/doc/html/jikes/license.htm
 @dirrm share/doc/html/jikes
