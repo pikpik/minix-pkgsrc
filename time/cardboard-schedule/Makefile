@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:54:58 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 17:28:39 martti Exp $
 #
 
 DISTNAME=	cs113ins
@@ -8,7 +8,7 @@ MASTER_SITES=	http://cardboard.nu/downloads/
 EXTRACT_SUFX=	.exe
 
 MAINTAINER=	jwise@NetBSD.org
-HOMEPAGE=	http://cardboard.nu/download.shtml
+HOMEPAGE=	http://cardboard.nu/downloads/
 COMMENT=	Project and resource management software implemented in Java/Swing
 
 USE_X11BASE=	yes
