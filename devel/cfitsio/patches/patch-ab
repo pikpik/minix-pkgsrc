@@ -1,8 +1,8 @@
 $NetBSD$
 
---- fitsio2.h.orig	Tue Jan 11 17:12:13 2000
+--- fitsio2.h.orig	2004-07-30 20:54:15.000000000 +0200
 +++ fitsio2.h
-@@ -68,6 +68,12 @@
+@@ -95,6 +95,12 @@
  #define BYTESWAPPED TRUE
  #define LONGSIZE 64
  
