@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2000/12/18 23:53:03 tsarna Exp $
+# $NetBSD: Makefile,v 1.161 2000/12/27 17:38:57 jlam Exp $
 #
 
     SUBDIR += GConf
@@ -122,6 +122,7 @@
     SUBDIR += patch
     SUBDIR += pccts
     SUBDIR += pcre
+    SUBDIR += pedisassem
     SUBDIR += popt
     SUBDIR += prcs
     SUBDIR += pth
