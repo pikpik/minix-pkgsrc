@@ -1,18 +1,20 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:47 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 13:06:18 agc Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/11/12 03:24:41 obrien Exp
 #
 
-DISTNAME=	cu-sudo.v1.5.3
-PKGNAME=	sudo-1.5.3
+DISTNAME=	cu-sudo.v1.5.4p1
+PKGNAME=	sudo-1.5.4p1
 CATEGORIES=	security
 MASTER_SITES=	ftp://freestuff.cs.colorado.edu/pub/sysadmin/sudo/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	erich@rrnet.com
+MAINTAINER=	packages@netbsd.org
+
+CONFLICTS=	sudo-1.5.3
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--with-C2 --with-skey --with-fbsdops
-WRKSRC=		${WRKDIR}/sudo.v1.5.3
+CONFIGURE_ARGS+=--with-C2 --with-skey --with-fbsdops
+WRKSRC=		${WRKDIR}/sudo.v1.5.4p1
 
 post-install:
 	cd ${WRKSRC} ; ${CP} sample.sudoers ${PREFIX}/etc/sudoers.example
