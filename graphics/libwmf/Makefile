@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/03/05 08:14:13 tron Exp $
+# $NetBSD: Makefile,v 1.22 2001/05/22 09:32:21 wiz Exp $
 #
 
 DISTNAME=		libwmf-0.1.21
@@ -9,17 +9,10 @@ MAINTAINER=		kei@netbsd.org
 HOMEPAGE=		http://www.wvware.com/libwmf.html
 COMMENT=		library for reading and converting WMF (Windows Meta Files)
 
-DEPENDS+=		freetype-lib>=1.3.1:../../graphics/freetype-lib
-DEPENDS+=		png>=1.0.11:../../graphics/png
-
+USE_BUILDLINK_ONLY=	YES
 USE_X11=		YES
-USE_XPM=		YES
 GNU_CONFIGURE=		YES
-EVAL_PREFIX+=		XPMDIR=xpm
 CONFIGURE_ARGS+=	--includedir="${PREFIX}/include/libwmf"
-CONFIGURE_ARGS+=	--with-png="${LOCALBASE}"
-CONFIGURE_ARGS+=	--with-ttf="${LOCALBASE}"
-CONFIGURE_ARGS+=	--with-xpm="${XPMDIR}"
 
 INCLUDEDIR=		${PREFIX}/include/libwmf
 HTMLDIR=		${PREFIX}/share/doc/html/libwmf
@@ -40,4 +33,7 @@ post-install:
 	cd ${WRKSRC}; ${INSTALL_DATA} doc/pics/weave.jpg \
 		${HTMLDIR}/pics
 
+.include "../../graphics/freetype-lib/buildlink.mk"
+.include "../../graphics/png/buildlink.mk"
+.include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
