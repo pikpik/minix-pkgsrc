@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- error.3.orig	1998-06-15 06:53:16.000000000 -0400
++++ error.3
+@@ -3,8 +3,8 @@
+ error \- syscall error codes
+ .SH SYNTAX
+ .B #include <error.h>
+-
+-extern int \fBerrno\fP;
++.br
++.B #include <errno.h>
+ 
+ extern int \fBerror_intr\fP;
+ .br
