@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/04/18 07:36:34 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/12 16:42:49 drochner Exp $
 #
 
-DISTNAME=		xine-ui-0.99.1
+DISTNAME=		xine-ui-0.99.2
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xine/}
 
