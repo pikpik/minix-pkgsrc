@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-#       $NetBSD: pure_ftpd,v 1.1 2002/05/08 00:35:14 hubertf Exp $
+#       $NetBSD: pure_ftpd,v 1.2 2002/09/23 15:02:07 grant Exp $
 #
 # PROVIDE: pure-ftpd
 # REQUIRE: DAEMON
