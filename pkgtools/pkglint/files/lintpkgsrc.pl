@@ -1,6 +1,6 @@
 #!@PERL@
 
-# $NetBSD: lintpkgsrc.pl,v 1.87 2004/01/10 22:31:51 wiz Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.88 2004/01/14 23:18:46 wiz Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -1564,8 +1564,10 @@ sub store
     {
     my $self = shift;
     my $data;
-    print("\$pkgver = \$pkglist->add(\"$self->{_pkg}\", \"$self->{_ver}\"); ");
-    print("__pkgcount(1);\n");
+    ($data = $self->{_pkg}) =~ s/([\\\$\@\%\"])/\\$1/g;
+    print("\$pkgver = \$pkglist->add(\"$data\", \"");
+    ($data = $self->{_ver}) =~ s/([\\\$\@\%\"])/\\$1/g;
+    print("$data\"); __pkgcount(1);\n");
     foreach ($self->vars)
 	{
 	($data = $self->{$_}) =~ s/([\\\$\@\%\"])/\\$1/g;
