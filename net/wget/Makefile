@@ -5,6 +5,10 @@ PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNU:=wget/}
 
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCHFILES=	wget-17-v6-20010716a.diff.gz
+PATCH_DIST_STRIP=-p1
+
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/wget/wget.html
 COMMENT=	Retrieve files from the 'net via HTTP and FTP
@@ -30,10 +34,7 @@ BUILD_DEFS+=    USE_INET6
 .include "../../mk/bsd.prefs.mk"
 
 # IPv6 support
-.if defined(USE_INET6) && ${USE_INET6} == YES
-PATCH_SITES=		ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=		wget-17-v6-20010716a.diff.gz
-PATCH_DIST_STRIP=	-p1
+.if (${OPSYS} != SunOS) && defined(USE_INET6) && ${USE_INET6} == YES
 CONFIGURE_ARGS+=        --enable-ipv6
 .else
 CONFIGURE_ARGS+=        --disable-ipv6
