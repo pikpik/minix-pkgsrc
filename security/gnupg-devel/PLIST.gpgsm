@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/gpg2
 bin/gpgsm
 bin/gpgv2
@@ -7,3 +8,5 @@ bin/sc-investigate
 bin/scdaemon
 lib/gnupg/pcsc-wrapper
 share/gnupg/gpg-conf.skel
+@dirrm share/gnupg
+@dirrm lib/gnupg
