@@ -1,8 +1,8 @@
 $NetBSD$
 
---- pear/Makefile.in.orig	Tue May 15 06:17:21 2001
+--- pear/Makefile.in.orig	Wed Dec 26 14:50:18 2001
 +++ pear/Makefile.in
-@@ -157,6 +157,7 @@
+@@ -168,6 +168,7 @@
  	/ \
  	Zend \
  	TSRM \
