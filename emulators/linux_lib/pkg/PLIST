@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/bash
 etc/host.conf
 etc/ld.so.conf
@@ -272,4 +273,3 @@ usr/openwin/lib/libolgx.so.3
 @dirrm var/X11R6/lib
 @dirrm var/X11R6
 @dirrm var
-
