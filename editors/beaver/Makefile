@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:14:05 agc Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/08 19:40:37 jmmv Exp $
 #
 
 DISTNAME=	beaver-0.2.6
@@ -13,9 +13,9 @@ COMMENT=	Lightweight GTK+ text editor with syntax highlighting
 DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_X11=	YES
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
