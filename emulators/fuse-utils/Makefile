@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/02/25 16:09:46 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/25 18:50:03 minskim Exp $
 #
 
 DISTNAME=	fuse-utils-0.6.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fuse-emulator/}
 
@@ -14,6 +14,11 @@ USE_BUILDLINK3=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 
+LIBS+=			-lgcrypt
+LIBS+=			-lgpg-error
+
 .include "../../emulators/libspectrum/buildlink3.mk"
+.include "../../security/libgcrypt/buildlink3.mk"
+.include "../../security/libgpg-error/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
