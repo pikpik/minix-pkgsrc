@@ -3,7 +3,7 @@
 # Date created:		20 April 1997
 # Whom:			doconnor@ist.flinders.edu.au
 #
-# $NetBSD: Makefile,v 1.3 1998/01/19 00:57:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1998/01/22 10:26:36 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/09/05 17:40:54 max Exp 
 #
 
@@ -15,7 +15,7 @@ MASTER_SITES=	http://www.chiark.greenend.org.uk/~stevem/mikmod/
 # FreeBSD maintainer
 MAINTAINER=	doconnor@ist.flinders.edu.au
 
-BUILD_DEPENDS=	${PREFIX}/lib/libncurses.a:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS=	ncurses.3.4:${PORTSDIR}/devel/ncurses
 
 RESTRICTED=	"Registration required for redistribution and commercial use."
 MIRROR_DISTFILE=	no
