@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Makefile.orig	Sat Jul 21 21:58:03 2001
-+++ Makefile
+--- Makefile.orig	Sun Jul 22 05:58:03 2001
++++ Makefile	Wed Oct 17 18:31:16 2001
 @@ -8,7 +8,7 @@
  # must be equal to DEBUG or NDEBUG
  DB	= NDEBUG
@@ -36,9 +36,9 @@ $NetBSD$
 +		${BSD_INSTALL_DATA} Docs/${file} ${PREFIX}/share/doc/antiword
 +.endfor
 +		${BSD_INSTALL_MAN} Docs/antiword.1 ${PREFIX}/man/man1/antiword.1
-+		${BSD_INSTALL_DATA_DIR} ${PREFIX}/share/examples/antiword
++		${BSD_INSTALL_DATA_DIR} ${PREFIX}/share/antiword
 +		for i in Resources/* ; do				\
-+			${BSD_INSTALL_DATA} $$i ${PREFIX}/share/examples/antiword ; \
++			${BSD_INSTALL_DATA} $$i ${PREFIX}/share/antiword ; \
 +		done
  
  clean:

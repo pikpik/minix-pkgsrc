@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/06/13 00:12:10 simonb Exp $
+# $NetBSD: Makefile,v 1.5 2001/10/17 06:22:38 rh Exp $
 #
 
 DISTNAME=	antiword-0.32
@@ -9,5 +9,11 @@ MASTER_SITES=	http://www.winfield.demon.nl/linux/
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.winfield.demon.nl/index.html
 COMMENT=	free converter MS Word to text and Postscript converter
+
+post-patch:
+	cd ${WRKSRC} ; \
+	    ${MV} antiword.h antiword.h.orig ; \
+	    ${SED} -e "s|@@ANTIWORD_DIR@@|${PREFIX}/share/antiword|g" \
+		antiword.h.orig > antiword.h
 
 .include "../../mk/bsd.pkg.mk"
