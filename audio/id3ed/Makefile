@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/06/05 23:54:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/06/10 00:49:15 hubertf Exp $
 #
 
-DISTNAME=	id3ed-1.7
+DISTNAME=	id3ed-1.9
 CATEGORIES=	audio
 MASTER_SITES=	http://www.azstarnet.com/~donut/id3ed/
 
