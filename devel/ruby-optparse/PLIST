@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:26:24 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/12/30 17:09:14 taca Exp $
 ${RUBY_SITELIBDIR}/optparse.rb
 ${RUBY_DOCDIR}/optparse/ChangeLog
 ${RUBY_DOCDIR}/optparse/FIRSTSTEP.ja.html
@@ -17,4 +17,4 @@ ${RUBY_EXAMPLESDIR}/optparse/time.rb
 ${RUBY_EXAMPLESDIR}/optparse/uri.rb
 ${RUBY_EXAMPLESDIR}/optparse/opttest.rb
 @dirrm ${RUBY_EXAMPLESDIR}/optparse
-man/man1/optparse.1
+man/man3/optparse.3
