@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/08/08 12:35:42 frueauf Exp $
+# $NetBSD: Makefile,v 1.7 1998/08/20 15:17:40 tsarna Exp $
 #
 
 DISTNAME=	xscreensaver-2.26
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.jwz.org/xscreensaver/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 DEPENDS+=	Xaw3d-1.5:../../x11/Xaw3d
-DEPENDS+=	Mesa-2.6:../../graphics/Mesa
+DEPENDS+=	Mesa-3.0:../../graphics/Mesa
 
 CONFLICTS=	xscreensaver-2.23 xscreensaver-2.24
 
