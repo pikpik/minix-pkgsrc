@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2001/05/09 11:37:35 agc Exp $
-# FreeBSD Id: Makefile,v 1.4 1999/05/19 09:41:06 tg Exp $
+# $NetBSD: Makefile,v 1.13 2001/05/09 13:11:26 agc Exp $
+#
 
-DISTNAME=	sketch-0.6.3
+DISTNAME=	sketch-0.6.10
 CATEGORIES=	graphics
-MASTER_SITES=   ${MASTER_SITE_BACKUP}
+MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=sketch/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://sketch.sourceforge.net/
