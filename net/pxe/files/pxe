@@ -1,8 +1,7 @@
 #!/bin/sh
 #
-#	$NetBSD$
+# $NetBSD: pxe,v 1.2 2001/11/06 05:55:05 cjs Exp $
 #
-
 # PROVIDE: pxe
 # REQUIRE: DAEMON
 
