@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/08/30 22:51:38 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2003/12/28 19:29:21 jmmv Exp $
 
 DISTNAME=	xcdroast-0.98alpha15
 PKGNAME=	xcdroast-0.98a15
@@ -54,6 +54,7 @@ post-install:
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/pcre/buildlink2.mk"
+.include "../../devel/pkg-config/buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
 
