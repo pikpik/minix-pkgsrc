@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/sasl2/libsql.la
+lib/sasl2/libsql.so
+lib/sasl2/libsql.so.2
+lib/sasl2/libsql.so.2.18
