@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 1999/06/07 22:50:18 tron Exp $
+# $NetBSD: Makefile,v 1.45 1999/06/13 12:55:00 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -23,6 +23,7 @@
 #    SUBDIR += giftool
 #    SUBDIR += giftrans
     SUBDIR += gimp
+    SUBDIR += giram
     SUBDIR += gnuplot
     SUBDIR += gqview
 #    SUBDIR += hobbes-icons-xpm
