@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.519 2000/07/25 16:21:25 fredb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.520 2000/07/26 12:36:49 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -3105,4 +3105,13 @@ ${DESCR}: ${DESCR_SRC}
 	${ECHO}			>>${DESCR} ; \
 	${ECHO} "Homepage:"	>>${DESCR} ; \
 	${ECHO} '${HOMEPAGE}'	>>${DESCR}	
+.endif
+
+
+#
+# For bulk build targets (bulk-install, bulk-package), the
+# BATCH variabole must be set in /etc/mk.conf:
+#
+.if defined(BATCH)
+.include "../../mk/bulk/bsd.bulk-pkg.mk"
 .endif
