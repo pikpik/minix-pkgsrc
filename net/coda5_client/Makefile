@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2001/06/19 03:48:01 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2002/06/20 19:28:25 jlam Exp $
 
 PKGNAME=	coda-client-${DIST_VERS}
 COMMENT=	client programs for a replicated high-performance network file system
-
-USE_BUILDLINK_ONLY=	yes
 
 .include "../../net/coda5_server/Makefile.common"
 
