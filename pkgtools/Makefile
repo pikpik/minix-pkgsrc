@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2002/09/30 08:37:52 martti Exp $
+# $NetBSD: Makefile,v 1.44 2002/11/07 23:18:37 atatat Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -9,6 +9,7 @@ SUBDIR+=	createbuildlink
 SUBDIR+=	digest
 SUBDIR+=	distfetch
 SUBDIR+=	gensolpkg
+#SUBDIR+=	libnbcompat	# Only for non-NetBSD systems
 #SUBDIR+=	pax		# Only needed on 1.3 systems
 SUBDIR+=	pkg_comp
 #SUBDIR+=	pkg_install	# Only install on demand of bsd.pkg.mk
