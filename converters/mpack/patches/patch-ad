@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- unixunpk.man.orig	Thu Feb 16 16:39:50 1995
++++ unixunpk.man
+@@ -107,7 +107,7 @@
+ .SH ENVIRONMENT
+ .TP
+ .B TMPDIR
+-Directory to store temporary files.  Default is /usr/tmp.
++Directory to store temporary files.  Default is /var/tmp.
+ .SH FILES
+ .TP
+ .B $TMPDIR/m-prts-$USER/
