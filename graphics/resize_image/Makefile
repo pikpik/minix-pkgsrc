@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/10 21:44:46 itojun Exp $
 #
 
 DISTNAME=	resize_image-0.6
@@ -9,6 +9,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://lab.erasme.org/resize_image/
 COMMENT=	Fast image resizing tool
 
+USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
 CFLAGS+=	-DUNIX
 
