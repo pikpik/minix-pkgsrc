@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2 2004/01/11 16:55:49 cjep Exp $
 
 --- printsession.cc.orig	1999-04-05 17:25:46.000000000 +0100
 +++ printsession.cc
@@ -9,7 +9,7 @@ $NetBSD$
 +#include <unistd.h>
  #include "printsession.h"
  #include "utility.h"
-+#include <stdlib.h>
++#include <cstdlib>
  
  PrintSession::PrintSession()
  {
