@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:27:21 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:36:13 martti Exp $
 
-DISTNAME=		Convert-TNEF-0.12
+DISTNAME=		Convert-TNEF-0.17
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5tnf
 CATEGORIES=		sysutils perl5
