@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1997/11/23 16:17:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1998/01/23 13:22:15 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
@@ -17,8 +17,7 @@
     SUBDIR += metamail
 #    SUBDIR += mew
 #    SUBDIR += mh
-#    SUBDIR += mutt
-#    SUBDIR += mutt.with_pgp
+    SUBDIR += mutt
     SUBDIR += nmh
 #    SUBDIR += p5-Mail-Folder
 #    SUBDIR += p5-Mail-POP3Client
