@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2004/02/14 13:49:25 tron Exp $
+# $NetBSD: Makefile,v 1.53 2004/03/02 14:46:33 drochner Exp $
 
 GCC_VERSION=	3.3.3
 DISTNAME=	gcc3-${GCC_VERSION}
@@ -24,6 +24,7 @@ NO_BUILDLINK=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
+do-patch:	# empty
 do-install:	# empty
 
 .include "../../mk/bsd.pkg.mk"

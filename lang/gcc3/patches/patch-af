@@ -1,4 +1,4 @@
-$NetBSD: patch-af,v 1.1 2003/07/26 17:37:07 martin Exp $
+$NetBSD: patch-af,v 1.1 2003/07/29 09:05:56 martin Exp $
 
 --- gcc/cppspec.c	Wed Jul 23 02:40:54 2003
 +++ gcc/cppspec.c	Fri Jul 25 17:57:41 2003

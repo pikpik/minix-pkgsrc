@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1 2003/12/08 18:33:53 drochner Exp $
 
 --- gcc/ada/cstreams.c.orig	2003-12-01 15:24:51.000000000 -0700
 +++ gcc/ada/cstreams.c

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2004/02/13 15:13:01 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/02 14:46:33 drochner Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-objc-${GCC_VERSION}
 COMMENT=	GNU Compiler Collection, v3 - Objective C compiler
 
 INSTLIBS=	libobjc/libobjc.la
 
-.include "../gcc3-c/language.mk"
+.include "../../lang/gcc3/language.mk"
 
 CONFIGURE_ARGS+=	--enable-languages="objc"
 
