@@ -1,3 +1,4 @@
+@comment $NetBSD$
 @comment this list changes by some files if gdbm is installed - hubertf
 bin/a2p
 bin/c2ph
