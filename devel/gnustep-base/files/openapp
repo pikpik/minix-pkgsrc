@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+#	$NetBSD$
+#
+# GNUstep openapp wrapper
+. @PREFIX@/share/GNUstep/System/Makefiles/GNUstep.sh
+@PREFIX@/share/GNUstep/System/Tools/openapp "$@"
