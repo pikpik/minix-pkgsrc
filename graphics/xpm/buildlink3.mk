@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2004/01/05 11:05:46 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2004/01/21 11:24:38 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XPM_BUILDLINK3_MK:=	${XPM_BUILDLINK3_MK}+
@@ -85,6 +85,7 @@ BUILDLINK_DEPENDS+=	xpm
 .  if !empty(BUILDLINK_USE_BUILTIN.xpm:M[yY][eE][sS])
 BUILDLINK_PREFIX.xpm=	${X11BASE}
 .  endif
+USE_X11=		yes
 .endif	# XPM_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
