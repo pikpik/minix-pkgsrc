@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/11/20 16:00:35 uebayasi Exp $
+# $NetBSD: Makefile,v 1.23 2004/11/21 01:37:36 uebayasi Exp $
 # FreeBSD Id: ports/japanese/eb/Makefile,v 1.21 2000/08/21 03:39:42 kevlo Exp
 #
 
@@ -58,6 +58,7 @@ USE_PKGINSTALL=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+USE_PERL5=		build
 
 CONFIGURE_ARGS+=	--with-zlib
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
