@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.188 2002/05/20 14:45:03 wiz Exp $
+# $NetBSD: Makefile,v 1.189 2002/05/22 21:31:22 agc Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -102,6 +102,7 @@ SUBDIR+=	librsvg
 SUBDIR+=	libungif
 SUBDIR+=	libwmf
 SUBDIR+=	magicpoint
+SUBDIR+=	mencoder
 SUBDIR+=	mgl
 SUBDIR+=	mng
 SUBDIR+=	moz-flash
@@ -109,6 +110,7 @@ SUBDIR+=	mpeg-lib
 SUBDIR+=	mpeg2codec
 SUBDIR+=	mpeg_encode
 SUBDIR+=	mpeg_play
+SUBDIR+=	mplayer-share
 SUBDIR+=	mplayer
 SUBDIR+=	mplex
 SUBDIR+=	mtv
