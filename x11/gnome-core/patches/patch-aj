@@ -1,11 +1,11 @@
 $NetBSD$
 
---- gsm/manager.c.orig	Wed Mar  7 20:20:48 2001
+--- gsm/manager.c.orig	Sun Mar 17 09:48:39 2002
 +++ gsm/manager.c
-@@ -321,7 +321,7 @@
-       if (restart_info)
+@@ -330,7 +330,7 @@ run_command (Client* client, const gchar
  	g_free (restart_info);
  
+ #if 0
 -      if (errno)
 +      if (pid < 0)
  	{
