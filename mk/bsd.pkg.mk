@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.205 1999/01/26 22:03:18 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.206 1999/01/30 23:18:59 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1428,7 +1428,8 @@ distclean: pre-distclean clean
 	@${ECHO_MSG} "===>  Dist cleaning for ${PKGNAME}"
 	@(if [ -d ${_DISTDIR} ]; then \
 		cd ${_DISTDIR} && \
-		${RM} -f ${DISTFILES} ${PATCHFILES}; \
+		test -z "${DISTFILES}" || ${RM} -f ${DISTFILES}; \
+		test -z "${PATCHFILES}" || ${RM} -f ${PATCHFILES}; \
 	fi)
 .if defined(DIST_SUBDIR)
 	-@${RMDIR} ${_DISTDIR}  
