@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1117 2002/12/27 06:53:45 uebayasi Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1118 2002/12/28 23:49:02 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -1987,7 +1987,9 @@ do-configure: ${_CONFIGURE_PREREQ}
 .    endfor
 .  endif
 .  if defined(USE_IMAKE)
-	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC} && ${SETENV} ${SCRIPTS_ENV} XPROJECTROOT=${X11BASE} ${XMKMF}
+.    for DIR in ${CONFIGURE_DIRS}
+	${_PKG_SILENT}${_PKG_DEBUG}cd ${DIR} && ${SETENV} ${SCRIPTS_ENV} XPROJECTROOT=${X11BASE} ${XMKMF}
+.    endfor
 .  endif
 .endif
 
