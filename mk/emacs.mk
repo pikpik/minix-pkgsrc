@@ -1,4 +1,4 @@
-# $NetBSD: emacs.mk,v 1.9 2002/12/17 16:54:13 drochner Exp $
+# $NetBSD: emacs.mk,v 1.10 2002/12/23 11:24:40 seb Exp $
 #
 # A Makefile fragment for Emacs Lisp packages.
 #
@@ -151,8 +151,8 @@ FOR.xemacs215=		""
 EMACS_DEPENDENCY=	${BUILDLINK_DEPENDS.xemacs211}:../../editors/xemacs
 FOR.xemacs211=		""
 .else
-PKG_FAIL_REASON+=	"Accepted versions are: ${EMACS_VERSIONS_ACCEPTED}"
-PKG_FAIL_REASON+=	"No valid Emacs version installed found"
+PKG_SKIP_REASON+=	"Accepted versions are: ${EMACS_VERSIONS_ACCEPTED}"
+PKG_SKIP_REASON+=	"No valid Emacs version installed found"
 .endif
 .if defined(EMACS_FOR_BUILD_ONLY)
 BUILD_DEPENDS+=	${EMACS_DEPENDENCY}
