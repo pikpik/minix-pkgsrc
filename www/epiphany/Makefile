@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/05 17:34:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/06 22:48:11 jmmv Exp $
 #
 
 DISTNAME=	epiphany-1.0.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/epiphany/1.0/}
 
