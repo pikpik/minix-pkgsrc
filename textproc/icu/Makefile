@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.35 2004/11/01 10:51:30 recht Exp $
+# $NetBSD: Makefile,v 1.36 2005/03/23 15:47:17 wiz Exp $
 #
 
-DISTNAME=	icu-3.0
+DISTNAME=	icu-3.2
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.software.ibm.com/software/globalization/icu/${PKGVERSION}/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://ibm.com/software/globalization/icu
+HOMEPAGE=	http://ibm.com/software/globalization/icu/
 COMMENT=	Robust and full-featured Unicode services
 
 WRKSRC=			${WRKDIR}/${PKGBASE}/source
