@@ -1,8 +1,8 @@
-# $NetBSD: srcdist.mk,v 1.4 2002/08/20 20:00:14 drochner Exp $
+# $NetBSD: srcdist.mk,v 1.5 2002/10/15 16:16:34 tsarna Exp $
 
 .include "../../lang/python/pyversion.mk"
 
-.if ${_PYTHON_VERSION} == "22"
+.if ${_PYTHON_VERSION} == "22" || ${_PYTHON_VERSION} == "22pth"
 
 DISTNAME=	Python-2.2.2
 EXTRACT_SUFX=	.tgz
