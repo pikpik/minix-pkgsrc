@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2004/01/13 17:45:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.24 2004/03/23 04:41:00 jlam Exp $
 
 DISTNAME=	zlib-1.2.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
 		http://www.libpng.org/pub/png/src/ \
