@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/10 05:44:32 jtb Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/21 04:49:44 jtb Exp $
 
 DISTNAME=	libctl-1.3
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://ab-initio.mit.edu/libctl/
 
 DEPENDS+=	guile-[0-9]*:../../lang/guile
-BUILD_DEPENDS+=	autoreconf:../../devel/autoconf
+BUILD_DEPENDS+=	${LOCALBASE}/bin/autoremake:../../devel/autoconf
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 GNU_CONFIGURE=	YES

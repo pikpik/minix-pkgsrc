@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/06 03:15:14 minoura Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/30 03:08:56 minoura Exp $
 #
 
 DISTVERSION=		1.1.2
@@ -39,9 +39,9 @@ post-patch:
 	for i in patches/binutils-*; do \
 		${PATCH} -d ${BINUTILS_WRKSRC} --forward --quiet -E < $$i; \
 	done
-	cd ${BINUTILS_WRKSRC}/bfd && autoconf
-	cd ${BINUTILS_WRKSRC}/gas && autoconf
-	cd ${WRKDIR}/${GCC_DISTNAME}/gcc && autoconf
+	cd ${BINUTILS_WRKSRC}/bfd && ${LOCALBASE}/bin/autoconf
+	cd ${BINUTILS_WRKSRC}/gas && ${LOCALBASE}/bin/autoconf
+	cd ${WRKDIR}/${GCC_DISTNAME}/gcc && ${LOCALBASE}/bin/autoconf
 	cd ${WRKDIR} && /usr/bin/tar zxf ${_DISTDIR}/${PTHREAD_DISTFILE}
 	cd ${WRKDIR}/${GCC_DISTNAME}/gcc && \
 		${LN} -s ../../${PTHREAD_DISTNAME}/include/pthread.h . && \

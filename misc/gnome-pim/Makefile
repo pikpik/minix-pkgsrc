@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2000/11/09 20:14:48 mycroft Exp $
+# $NetBSD: Makefile,v 1.20 2001/01/01 05:54:22 wiz Exp $
 #
 
 DISTNAME=		gnome-pim-1.2.0
@@ -8,8 +8,8 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-pim/}
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 
-BUILD_DEPENDS+=		autoreconf:../../devel/autoconf
-BUILD_DEPENDS+=		automake:../../devel/automake
+BUILD_DEPENDS+=		${LOCALBASE}/bin/autoremake:../../devel/autoconf
+BUILD_DEPENDS+=		${LOCALBASE}/bin/automake:../../devel/automake
 BUILD_DEPENDS+=		bison:../../devel/bison
 DEPENDS+=		gnome-core-*:../../x11/gnome-core
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2000/11/22 16:09:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.62 2001/01/10 13:26:32 tron Exp $
 
 DISTNAME=	mutt-1.2.5i
 CATEGORIES=	mail
@@ -10,8 +10,8 @@ MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/ \
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.mutt.org/
 
-BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
-BUILD_DEPENDS+=	${LOCALBASE}/bin/automake:../../devel/automake
+BUILD_DEPENDS+=	${LOCALBASE}/bin/${LOCALBASE}/bin/autoconf:../../devel/autoconf
+BUILD_DEPENDS+=	${LOCALBASE}/bin/${LOCALBASE}/bin/automake:../../devel/automake
 BUILD_DEPENDS+=	msgfmt:../../devel/gettext
 
 USE_LIBINTL=	YES

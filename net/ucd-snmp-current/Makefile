@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/03/17 19:28:37 kim Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/26 05:21:47 hubertf Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -18,7 +18,7 @@ MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.ece.ucdavis.edu/ucd-snmp/
 
-BUILD_DEPENDS+=	autoconf:../../devel/autoconf
+BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-defaults

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/26 05:56:46 itojun Exp $
+# $NetBSD: Makefile,v 1.8 2000/09/07 00:10:24 dmcmahill Exp $
 
 DISTNAME=	quake-v6-bsd-kame
 PKGNAME=	quake6-0.0
@@ -13,7 +13,7 @@ MAINTAINER=	itojun@kame.net
 HOMEPAGE=	http://www.viagenie.qc.ca/en/ipv6-quake.shtml
 
 DEPENDS=	quakedata-*:../../games/quakedata
-BUILD_DEPENDS=	autoreconf:../../devel/autoconf
+BUILD_DEPENDS=	${LOCALBASE}/bin/autoremake:../../devel/autoconf
 
 WRKSRC=		${WRKDIR}/quakeforge
 

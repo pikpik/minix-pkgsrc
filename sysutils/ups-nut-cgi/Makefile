@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/28 16:07:51 martin Exp $
 #
 
 DISTNAME=		nut-0.44.2
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.exploits.org/nut/
 
 DEPENDS+=		gd-*:../../graphics/gd
 DEPENDS+=		ups-nut-0*:../ups-nut
-BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf
+BUILD_DEPENDS+=		${LOCALBASE}/bin/${LOCALBASE}/bin/autoremake:../../devel/autoconf
 
 WRKSRC=			${WRKDIR}/nut-0.44.2
 

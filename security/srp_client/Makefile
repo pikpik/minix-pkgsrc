@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/09/09 20:02:27 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2000/09/09 20:23:49 fredb Exp $
 #
 
 DISTNAME=		srp-1.4.4
@@ -9,8 +9,8 @@ MASTER_SITES=		ftp://ftp.win.or.jp/pub/network/security/srp/
 MAINTAINER=		jlam@netbsd.org
 #HOMEPAGE=		http://srp.stanford.edu/srp/
 
-BUILD_DEPENDS+=		autoconf:../../devel/autoconf
-BUILD_DEPENDS+=		automake:../../devel/automake
+BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
+BUILD_DEPENDS+=		${LOCALBASE}/bin/automake:../../devel/automake
 DEPENDS+=		gmp>=2.0.2:../../devel/gmp
 
 CRYPTO=			yes

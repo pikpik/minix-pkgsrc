@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/02/16 22:02:31 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/14 16:51:35 mjl Exp $
 #
 
 DISTNAME=	Squeak2.7-src
@@ -10,7 +10,7 @@ DISTFILES=	Squeak2.7-src.tar.gz Squeak2.7.image.gz Squeak2.7.changes.gz SqueakV2
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.squeak.org/
 
-BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
+BUILD_DEPENDS+=	${LOCALBASE}/bin/${LOCALBASE}/bin/autoconf:../../devel/autoconf
 
 DIST_SUBDIR=	squeak
 EXTRACT_ONLY=	Squeak2.7-src.tar.gz
