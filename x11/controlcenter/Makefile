@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2002/08/25 19:23:27 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2002/08/29 08:42:50 jlam Exp $
 
 DISTNAME=		control-center-1.4.0.4
 CATEGORIES=		x11 gnome
@@ -17,7 +17,7 @@ USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-LOCALSTATEDIR=		${X11PREFIX}/var/gnome
+LOCALSTATEDIR=		${X11PREFIX}/var
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR}
