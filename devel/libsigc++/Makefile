@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 14:38:38 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/24 19:36:23 rh Exp $
 
 DISTNAME=		libsigc++-1.0.3
 CATEGORIES=		devel
@@ -11,6 +11,7 @@ COMMENT=		libsigc++ is provides a callback system for C++ programs
 GNU_CONFIGURE=		YES
 CONFIGURE_ARG=		--disable-threads
 
+USE_BUILDLINK_ONLY=	YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/scripts/ltconfig
 
