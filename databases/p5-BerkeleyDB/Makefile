@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/11/29 14:48:02 he Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/20 11:30:56 grant Exp $
 #
 
 DISTNAME=	BerkeleyDB-0.26
@@ -19,7 +19,7 @@ BDB_ACCEPTED=		db4 db3 db2
 PERL5_REQD+=		5.6.0
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/BerkeleyDB/.packlist
 
-MAKE_ENV+=	BERKELEYDB_INCLUDE="${BDBBASE}/include"
+MAKE_ENV+=	BERKELEYDB_INCLUDE="${BDBBASE}/include/${BDB_TYPE}"
 MAKE_ENV+=	BERKELEYDB_LIB="${BDBBASE}/lib"
 MAKE_ENV+=	BERKELEYDB_NAME="${BDB_LIBS}"
 
