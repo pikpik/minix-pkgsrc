@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/11/26 14:25:33 minoura Exp $
-bin/xcruise
-lib/X11/app-defaults/XCruise
-share/doc/xcruise/README
-share/doc/xcruise/README.jp
-share/doc/xcruise/TODO
-@dirrm share/doc/xcruise

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xcb
-lib/X11/app-defaults/Xcb
-man/cat1/xcb.0

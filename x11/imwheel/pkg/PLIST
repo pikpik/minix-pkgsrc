@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/imwheel
-man/man1/imwheel.1
-share/examples/imwheel/imwheelrc
-@dirrm share/examples/imwheel

@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/xmove
-bin/xmovectrl
-man/cat1/xmove.0.gz
-man/cat1/xmovectrl.0.gz
-share/doc/xmove/features.txt
-share/doc/xmove/limitations.txt
-share/doc/xmove/using_xmove.txt
-@dirrm share/doc/xmove

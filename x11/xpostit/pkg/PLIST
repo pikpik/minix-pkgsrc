@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/xpostit
-man/cat1/xpostit.0
-lib/X11/app-defaults/XPostit
-lib/X11/app-defaults/XPostit-color

@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/05 05:03:25 hubertf Exp $
-bin/xdaemon
-bin/xdaemon2
-share/xteddy/xdaemon.png
-share/xteddy/xdaemon2.png
-share/doc/xdaemon.README

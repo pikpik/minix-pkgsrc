@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/wmfstatus
-share/doc/wmfstatus/HINTS
-share/doc/wmfstatus/README
-@dirrm share/doc/wmfstatus

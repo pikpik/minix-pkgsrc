@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/03/24 22:45:22 tron Exp $
-bin/xpmroot
-man/man1/xpmroot.1

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/wmWeather
-bin/GrabWeather
-man/man1/wmWeather.1

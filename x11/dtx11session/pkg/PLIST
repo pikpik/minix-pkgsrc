@@ -1,5 +1,0 @@
-@comment $NetBSD$
-appconfig/icons/C/X11.bm
-appconfig/icons/C/X11.pm
-config/C/Xresources.d/Xresources.X11
-config/Xsession.X11

@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/18 14:27:31 nra Exp $
-bin/xphoon
-man/cat1/xphoon.0

@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1998/01/20 11:18:16 agc Exp $
-bin/xautolock
-man/cat1/xautolock.0
-man/man1/xautolock.1
