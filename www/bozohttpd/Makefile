@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2000/05/24 14:52:49 mrg Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/23 12:24:41 jlam Exp $
 #
 
-DISTNAME=	bozohttpd-5.05
-PKGNAME=	${DISTNAME}nb1
+DISTNAME=	bozohttpd-5.06
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 		
@@ -10,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.eterna.com.au/bozohttpd/
+
+BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
 
