@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.11 2001/07/29 05:38:40 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/01 20:54:06 jlam Exp $
 
 .include "../pdflib/Makefile.common"
 
-PKGNAME=		tcl-pdflib-${PDFLIB_VERS}
-PDFLIB_PKG_VERS=	# empty
+PKGNAME=		tcl-pdflib-${PDFLIB_BASE_VERS}
 COMMENT=		Tcl interface to PDFlib for generating PDF files
 
 USE_BUILDLINK_ONLY=		YES
-BUILDLINK_DEPENDS.pdflib=	pdflib>=${PDFLIB_DIST_VERS}
+BUILDLINK_DEPENDS.pdflib=	pdflib>=${PDFLIB_BASE_VERS}
 
 CONFIGURE_ARGS+=	--with-tcl=${TCLSH}
 CONFIGURE_ARGS+=        --with-tclincl="${BUILDLINK_DIR}/include"
