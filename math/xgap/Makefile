@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:48:19 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:20:05 agc Exp $
 #
 
 DISTNAME=	xgap4r16
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.gap-system.org/Share/xgap.html
 COMMENT=	GUI for GAP
 
 WRKSRC=         ${WRKDIR}/${GAP_PKG_NAME}
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 ALL_TARGET=	default
