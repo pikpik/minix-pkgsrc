@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/07 11:59:29 seb Exp $
+# $NetBSD: Makefile,v 1.5 2003/08/09 10:55:28 seb Exp $
 #
 
 DISTNAME=	tc-2.3
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=--with-emacs=xemacs
 CONFIGURE_ARGS+=--with-lispdir=${EMACS_LISPPREFIX}/tc
 .endif
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 INFO_FILES=	tc.info
 
