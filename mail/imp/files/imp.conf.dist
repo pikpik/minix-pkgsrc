@@ -1,0 +1,27 @@
+# $NetBSD$
+#
+# IMP configuration file fragment for Apache
+
+# For security, don't serve pages from the IMP configuration and library
+# directories.
+#
+<Directory "@IMPDIR@/config">
+    Order deny,allow
+    Deny from all
+</Directory>
+<Directory "@IMPDIR@/lib">
+    Order deny,allow
+    Deny from all
+</Directory>
+<Directory "@IMPDIR@/locale">
+    Order deny,allow
+    Deny from all
+</Directory>
+<Directory "@IMPDIR@/scripts">
+    Order deny,allow
+    Deny from all
+</Directory>
+<Directory "@IMPDIR@/templates">
+    Order deny,allow
+    Deny from all
+</Directory>
