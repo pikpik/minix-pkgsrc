@@ -1,8 +1,8 @@
-$NetBSD: patch-ab,v 1.1.1.1 2000/11/01 19:35:09 itojun Exp $
+$NetBSD$
 
---- Imakefile.orig	Mon Jun 12 23:20:11 2000
-+++ Imakefile	Fri Jun  1 12:19:53 2001
-@@ -9,7 +9,7 @@
+--- Imakefile.orig	Mon Jun 12 18:20:11 2000
++++ Imakefile
+@@ -9,11 +9,10 @@ LOCAL_LIBRARIES = XkbClientLibs XawClien
             SRCS = xscribble.c Scribble.c
             OBJS = xscribble.o Scribble.o
          HEADERS = ScribbleP.h Scribble.h
@@ -11,8 +11,8 @@ $NetBSD: patch-ab,v 1.1.1.1 2000/11/01 19:35:09 itojun Exp $
         INCLUDES = -Ilirec -Irecman
  
  MakeSubdirs($(SUBDIRS))
-@@ -17,3 +17,4 @@
+ DependSubdirs($(SUBDIRS))
  
- ComplexProgramTarget(xscribble)
- 
-+xscribble.man::
+-ComplexProgramTarget(xscribble)
+-
++ComplexProgramTargetNoMan(xscribble)
