@@ -67,6 +67,11 @@ struct option {
 __BEGIN_DECLS
 int getopt_long __P((int, char * const *, const char *,
     const struct option *, int *));
+
+#ifdef __INTERIX
+/* XXX this is in libc, but not in a system header */
+extern int optreset;
+#endif
 __END_DECLS
 #endif
  
