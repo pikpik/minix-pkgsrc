@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/25 16:24:07 is Exp $
 #
 
-DISTNAME=		vs
+DISTNAME=		vs232
 PKGNAME=		sr-examples-2.3.2
 CATEGORIES=		lang parallel
 MASTER_SITES=		ftp://ftp.cs.arizona.edu/sr/
