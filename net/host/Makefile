@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:17:58 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:51:14 grant Exp $
 
 DISTNAME=	host_991529
 PKGNAME=	host-991529
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.nikhef.nl/user/e07/
-COMMENT=	powerful DNS query and testing tool
+COMMENT=	Powerful DNS query and testing tool
 
 .include "../../mk/bsd.prefs.mk"
 

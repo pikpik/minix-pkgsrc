@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/06/02 01:17:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.36 2003/07/17 22:52:35 grant Exp $
 
 DISTNAME=	magicfilter-1.2
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/printing/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-COMMENT=	customizable, extensible automatic printer filter
+COMMENT=	Customizable, extensible automatic printer filter
 
 # Any version will do:
 #

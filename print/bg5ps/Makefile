@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/04/22 13:19:52 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:52:24 grant Exp $
 
 DISTNAME=	bg5ps-1.3.0
 CATEGORIES=	print converters
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.shellhung.org/pub/OpenBSD/packages/chinese/bg5ps/ \
 
 MAINTAINER=	shell@NetBSD.org
 HOMEPAGE=	http://students.washington.edu/cschin/bg5ps/
-COMMENT=	convert Big5/GB encoded files to postscript
+COMMENT=	Convert Big5/GB encoded files to postscript
 
 DEPENDS+=	arphic-ttf>=2.11:../../fonts/arphic-ttf
 

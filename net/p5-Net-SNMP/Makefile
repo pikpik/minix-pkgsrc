@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 01:17:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 22:51:33 grant Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/06/27 18:38:15 jfitz Exp
 #
 
@@ -10,7 +10,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/libnet/FAQ.html
-COMMENT=	perl5 module for SNMP queries
+COMMENT=	Perl5 module for SNMP queries
 
 DEPENDS+=	p5-Crypt-DES>=2.03:../../security/p5-Crypt-DES
 DEPENDS+=	p5-Digest-MD5>=2.11:../../security/p5-Digest-MD5

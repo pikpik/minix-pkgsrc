@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:17:23 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 22:52:47 grant Exp $
 #
 
 DISTNAME=	xpdf-latin2
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
-COMMENT=	xpdf support files for Latin-2
+COMMENT=	Xpdf support files for Latin-2
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 

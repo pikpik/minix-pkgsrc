@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/25 16:40:48 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:52:31 grant Exp $
 
 DISTNAME=	jsclasses-030624
 PKGNAME=	ja-${DISTNAME}
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	kei@NetBSD.org
 HOMEPAGE=	http://www.matsusaka-u.ac.jp/~okumura/jsclasses/
-COMMENT=	new document class files for pLaTeX
+COMMENT=	New document class files for pLaTeX
 
 DEPENDS+=	ja-ptex-bin>=2.1.3:../../print/ja-ptex-bin
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:17:49 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:51:34 grant Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/06/27 18:38:15 jfitz Exp
 #
 
@@ -10,7 +10,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-COMMENT=	perl5 module for TFTP transfers
+COMMENT=	Perl5 module for TFTP transfers
 
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Net/TFTP/.packlist

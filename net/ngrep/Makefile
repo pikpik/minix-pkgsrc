@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/03/29 12:42:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 22:51:27 grant Exp $
 #
 
 DISTNAME=	ngrep-1.39
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngrep/}
 
 MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://ngrep.sourceforge.net/
-COMMENT=	network grep
+COMMENT=	Network grep
 
 USE_BUILDLINK2=	yes
 GNU_CONFIGURE=	yes

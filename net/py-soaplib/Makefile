@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/03/29 12:42:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:51:43 grant Exp $
 #
 
 DISTNAME=	soaplib-0.8-20000621
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.pythonware.com/products/soap/index.htm
-COMMENT=	implementation of the SOAP 1.1 protocol
+COMMENT=	Implementation of the SOAP 1.1 protocol
 
 NO_BUILD=	yes
 

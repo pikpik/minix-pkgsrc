@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/11 18:37:09 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:52:30 grant Exp $
 
 DISTNAME=	ijs-0.34
 CATEGORIES=	print
@@ -6,7 +6,7 @@ MASTER_SITES=	http://www.linuxprinting.org/ijs/download/
 
 MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.linuxprinting.org/ijs/
-COMMENT=	protocol library for raster page transmission
+COMMENT=	Protocol library for raster page transmission
 
 USE_BUILDLINK2=		# defined
 USE_GMAKE=		# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/07/20 13:56:25 seb Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/20 15:37:46 seb Exp $
 
 DISTNAME=		libkver-${VERSION}
 CATEGORIES=		pkgtools
@@ -7,7 +7,7 @@ DISTFILES=		# empty
 
 MAINTAINER=	seb@NetBSD.org
 #HOMEPAGE=
-COMMENT=	shared library and sysctl(1) replacement to override system version
+COMMENT=	Shared library and sysctl(1) replacement to override system version
 
 USE_BUILDLINK2=		# defined
 

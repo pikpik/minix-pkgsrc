@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/06/02 01:17:49 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 22:51:34 grant Exp $
 #
 
 DISTNAME=	Net-Z3950-0.32
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://perl.z3950.org
-COMMENT=	perl interface to the Z39.50 information retrieval protocol
+COMMENT=	Perl interface to the Z39.50 information retrieval protocol
 
 DEPENDS+=	p5-MARC>=1.15:../../databases/p5-MARC
 DEPENDS+=	p5-Event>=0.77:../../devel/p5-Event

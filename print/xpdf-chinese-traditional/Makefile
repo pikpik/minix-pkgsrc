@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:17:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:45 grant Exp $
 #
 
 DISTNAME=	xpdf-chinese-traditional
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
-COMMENT=	xpdf support files for Chinese (Traditional)
+COMMENT=	Xpdf support files for Chinese (Traditional)
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 

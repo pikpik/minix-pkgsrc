@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/04/10 01:28:23 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 22:52:38 grant Exp $
 #
 
 DISTNAME=	ReportLab_1_16
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.reportlab.com/
-COMMENT=	powerful PDF-generating toolkit for Python
+COMMENT=	Powerful PDF-generating toolkit for Python
 
 PYBINMODULE= yes
 PYDISTUTILSPKG=	yes

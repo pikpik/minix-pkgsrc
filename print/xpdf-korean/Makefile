@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:17:23 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:46 grant Exp $
 #
 
 DISTNAME=	xpdf-korean
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
-COMMENT=	xpdf support files for Korean
+COMMENT=	Xpdf support files for Korean
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 

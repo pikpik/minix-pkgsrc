@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/13 16:15:34 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:52:15 grant Exp $
 #
 
 DISTNAME=		pkg_filecheck-0.1
@@ -9,7 +9,7 @@ DISTFILES=		# empty
 
 MAINTAINER=		dillo@NetBSD.org
 #HOMEPAGE=		http://www.NetBSD.org/Documentation/netbsd/Packages.txt
-COMMENT=		check for files not owned by any package
+COMMENT=		Check for files not owned by any package
 
 USE_PERL5=	run
 

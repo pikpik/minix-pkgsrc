@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/03/29 22:22:53 kim Exp $
+# $NetBSD: Makefile,v 1.8 2001/09/27 23:18:31 jlam Exp $
 #
 
 DISTNAME=		sdist-1.6
@@ -6,7 +6,7 @@ CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
-COMMENT=		invoke rdist to distribute files to a set of hosts
+COMMENT=		Invoke rdist to distribute files to a set of hosts
 
 DEPENDS+=		netname-[0-9]*:../../net/netname
 DEPENDS+=		osname-[0-9]*:../../sysutils/osname

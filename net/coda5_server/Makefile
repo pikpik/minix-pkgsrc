@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2003/04/10 01:28:21 grant Exp $
+# $NetBSD: Makefile,v 1.37 2003/04/10 20:10:18 grant Exp $
 
 PKGNAME=	coda-server-${DIST_VERS}
-COMMENT=	server programs for a replicated high-performance network file system
+COMMENT=	Server programs for a replicated high-performance network file system
 
 .include "Makefile.common"
 
