@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2002/02/26 21:28:49 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/04 19:41:07 fredb Exp $
 #
 
 DISTNAME=	jpnfont
 CATEGORIES=	fonts japanese
 
+MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (Japanese)
 
 DEPENDS+=	acroread-font-share-4.0:../../fonts/acroread-font-share
