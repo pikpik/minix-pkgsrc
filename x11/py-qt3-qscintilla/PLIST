@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${PYSITELIB}/libqtextcmodule.a
+${PYSITELIB}/libqtextcmodule.la
+${PYSITELIB}/libqtextcmodule.so
+${PYSITELIB}/libqtextcmodule.so.1
+${PYSITELIB}/libqtextcmodule.so.1.0
+${PYSITELIB}/qtext.py
