@@ -1,5 +1,9 @@
-@comment $NetBSD: PLIST,v 1.2 1999/09/06 01:43:54 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:53:48 zuntum Exp $
 bin/koth
 bin/koths
 bin/kmoron-ai
 bin/kclever-ai
+share/doc/koth/README
+share/examples/koth/koth.cfg
+@dirrm share/examples/koth
+@dirrm share/doc/koth
