@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/07/27 06:06:32 phil Exp $
+$NetBSD$
 
-MD5 (rvm-1.1.tar.gz) = 0e50aa56c2816ee465dafb17169f0b36
+SHA1 (rvm-1.1.tar.gz) = 77f36d3182b0a2b79c489c713f4fc661cfa40ec1
+Size (rvm-1.1.tar.gz) = 329050 bytes

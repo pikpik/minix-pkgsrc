@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/07/05 07:21:58 sakamoto Exp $
+$NetBSD$
 
-MD5 (nasm-0.98.tar.gz) = fc334b4b05b5f57fe3fc867c42320ef9
+SHA1 (nasm-0.98.tar.gz) = c18adc9a543d785fa3b950dd2980a350a3eff772
+Size (nasm-0.98.tar.gz) = 468600 bytes

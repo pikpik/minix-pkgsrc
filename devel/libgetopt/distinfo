@@ -1,4 +1,6 @@
-$NetBSD: md5,v 1.4 2000/10/18 13:47:08 wiz Exp $
+$NetBSD$
 
-MD5 (getopt_long.c-1.3) = eab3f616397818ee04618153001e52a6
-MD5 (getopt_long.3-1.3) = 4537afd980993e2a36da8d9c20dcbf59
+SHA1 (getopt_long.c-1.3) = 1cacfb054f19ae8c7ad713caf0ccd02eeb1a4524
+Size (getopt_long.c-1.3) = 12789 bytes
+SHA1 (getopt_long.3-1.3) = 29379706e3537a3a323d16c8ebea8dc9a2bd9ccf
+Size (getopt_long.3-1.3) = 8281 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/05/19 11:03:33 wiz Exp $
+$NetBSD$
 
-MD5 (cscope-15.0bl2.tar.gz) = dff40f905bb8709fb6a2ec4365b0bbcc
+SHA1 (cscope-15.0bl2.tar.gz) = 982802507baf30ea6efa3f93cc1513fb9d1e39e0
+Size (cscope-15.0bl2.tar.gz) = 131713 bytes

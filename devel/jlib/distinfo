@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 17:16:05 rh Exp $
+$NetBSD$
 
-MD5 (jlib-1.0.6.tar.gz) = d7f537a4e8950f1b0a70b49029163920
+SHA1 (jlib-1.0.6.tar.gz) = f4dee54461d2ecc691fb7266c517e7780c95af35
+Size (jlib-1.0.6.tar.gz) = 148161 bytes
 SHA1 (patch-aa) = 41a81a4edc5817acd9f4567f50407b3774725062
 SHA1 (patch-ab) = cf37743298a993077255683f252b0ba4bd7abd3a

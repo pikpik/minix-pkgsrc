@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/27 12:20:35 mjl Exp $
+$NetBSD$
 
-MD5 (avl-1.4.0.tar.gz) = 28f175eed15a6ca52f626cb04964ee12
+SHA1 (avl-1.4.0.tar.gz) = 44bf7e95a7fb0d6231dd698b0c32616cf4953011
+Size (avl-1.4.0.tar.gz) = 128589 bytes
 SHA1 (patch-aa) = 1020d5ef34f3f6090e5800db4266902c99988b42

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/07/08 13:30:04 bjh21 Exp $
+$NetBSD$
 
-MD5 (asm.8051.Z) = 7aab6e56db580269b7913631db02dbda
+SHA1 (asm.8051.Z) = f0f5f6c627a7c532aa6149a358d334775a085147
+Size (asm.8051.Z) = 36129 bytes
 SHA1 (patch-aa) = d215f0e5df78c2972c5a6e73bc1ca0675492e87e

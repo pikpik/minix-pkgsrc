@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/12 17:10:35 wiz Exp $
+$NetBSD$
 
 SHA1 (libdockapp-0.4.0.tar.gz) = 796b2791e779eed04ff9de2865633d43d728a607
+Size (libdockapp-0.4.0.tar.gz) = 108566 bytes
 SHA1 (patch-aa) = 7459a075e01e6708c7becace6cad4976db62cf9b

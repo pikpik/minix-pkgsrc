@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/06/10 15:30:30 bad Exp $
+$NetBSD$
 
-MD5 (Data-ShowTable-3.3.tar.gz) = e8a3060790803bdf9f0fcb73bb4e71c4
+SHA1 (Data-ShowTable-3.3.tar.gz) = f8adb78d8eb3c012fe692632b08518ece513fb4d
+Size (Data-ShowTable-3.3.tar.gz) = 94369 bytes
 SHA1 (patch-aa) = 6970446aaedd817df35bd3ec4b15fe741be0c5db

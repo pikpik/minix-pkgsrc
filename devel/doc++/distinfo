@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/03/07 19:04:00 jlam Exp $
+$NetBSD$
 
-MD5 (doc++-3.3.13.tar.gz) = 14374542e1589b5a13c5d0af1fe46ac7
+SHA1 (doc++-3.3.13.tar.gz) = 2eab3f610debf2fb8c8bdb7f5ba41a0240d476a7
+Size (doc++-3.3.13.tar.gz) = 177656 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/10/14 02:11:32 jlam Exp $
+$NetBSD$
 
-MD5 (gobo15.zip) = 7dfa9952177e03b7667090a0c6cc72bc
+SHA1 (gobo15.zip) = 09226a32804a5f513a99a3d241543e30c54061ea
+Size (gobo15.zip) = 1249787 bytes

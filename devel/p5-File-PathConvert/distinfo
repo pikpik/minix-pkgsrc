@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/03 17:15:27 kim Exp $
+$NetBSD$
 
-MD5 (File-PathConvert-0.85.tar.gz) = 274d736de31d3804f0a6cae1009aafe8
+SHA1 (File-PathConvert-0.85.tar.gz) = 5edcb84c53b8530a2b466847d17fd1dd7a470a02
+Size (File-PathConvert-0.85.tar.gz) = 22974 bytes

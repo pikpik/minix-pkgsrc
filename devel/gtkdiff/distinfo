@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/10/15 13:02:57 rh Exp $
+$NetBSD$
 
-MD5 (gtkdiff-1.6.0.tar.gz) = 97e3f4d47fe57eec3b0be07b195e4d32
+SHA1 (gtkdiff-1.6.0.tar.gz) = 75772ed4d7d729355a883f8a651796c2bde86f6e
+Size (gtkdiff-1.6.0.tar.gz) = 256054 bytes

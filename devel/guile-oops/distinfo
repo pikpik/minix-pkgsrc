@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/29 18:28:30 wiz Exp $
+$NetBSD$
 
-MD5 (guile-oops-0.9.0.tar.gz) = 42112e023e2f05d713bf27e35a24986c
+SHA1 (guile-oops-0.9.0.tar.gz) = c5d1473f2e555002c710751db6b5149b3877f339
+Size (guile-oops-0.9.0.tar.gz) = 448313 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/12 18:55:01 bad Exp $
+$NetBSD$
 
-MD5 (AtExit-2.01.tar.gz) = da5139adaef86963d5eb7a4aaf0fce94
+SHA1 (AtExit-2.01.tar.gz) = dd79c76470696a72f69428d897980fad4d7cf077
+Size (AtExit-2.01.tar.gz) = 8081 bytes

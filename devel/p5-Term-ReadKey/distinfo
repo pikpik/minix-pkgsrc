@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/09/04 21:45:27 kim Exp $
+$NetBSD$
 
-MD5 (TermReadKey-2.14.tar.gz) = d8ed4c533350c2e8724c70c103a1a01f
+SHA1 (TermReadKey-2.14.tar.gz) = 5ff88732d1d303fa352eb44cb8b6a9c7e3167750
+Size (TermReadKey-2.14.tar.gz) = 31704 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/02/11 21:40:43 hubertf Exp $
+$NetBSD$
 
-MD5 (cvslock-0.2.tar.gz) = eec3f03e0cb490a4a73f838eb0d25959
+SHA1 (cvslock-0.2.tar.gz) = e6e48ca58c57bccaee55d853ba73bc9f68900fa2
+Size (cvslock-0.2.tar.gz) = 39237 bytes

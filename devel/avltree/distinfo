@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/20 01:40:10 hubertf Exp $
+$NetBSD$
 
-MD5 (avltree-1.1.tar.gz) = 45a5dafb8de20059b450ce3137860c53
+SHA1 (avltree-1.1.tar.gz) = b0568fa59d4115297043ce580abf904143c2d6f1
+Size (avltree-1.1.tar.gz) = 11698 bytes
 SHA1 (patch-aa) = 2e479b2e8956b6e2f626de5e9d6481d7286f685d
 SHA1 (patch-ab) = ec7010335ac0475b2df7fc9d232d7a49075440c9

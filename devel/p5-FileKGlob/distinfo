@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/08/27 07:11:06 jlam Exp $
+$NetBSD$
 
-MD5 (p5-FileKGlob-1.2/FileKGlob.tar.gz) = d56bd5397f0835cc083b9fa78a1a2275
+SHA1 (p5-FileKGlob-1.2/FileKGlob.tar.gz) = 3b959d9b75cf44f0faa3167ece70e08b2e7795b6
+Size (p5-FileKGlob-1.2/FileKGlob.tar.gz) = 7653 bytes

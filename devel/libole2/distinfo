@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.4 2001/04/07 21:41:06 rh Exp $
+$NetBSD$
 
 SHA1 (libole2-0.2.1.tar.gz) = dd8e3a81006dfb71649e7a1e9736a5293ce6b69d
+Size (libole2-0.2.1.tar.gz) = 195959 bytes
 SHA1 (patch-aa) = 4ca5adb36c42c7f492dc6a1505978388bed9399a

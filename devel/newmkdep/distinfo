@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1 1998/08/22 20:15:09 tron Exp $
+$NetBSD$
 
-MD5 (newmkdep-1.0.tar.gz) = 4f1155c041b8b37686a80879d50b91ca
+SHA1 (newmkdep-1.0.tar.gz) = 2048730f005e95d8fa908ffabfdc6bd739a3be15
+Size (newmkdep-1.0.tar.gz) = 2831 bytes

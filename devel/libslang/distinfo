@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.13 2001/02/26 15:27:37 mjl Exp $
+$NetBSD$
 
-MD5 (slang-1.4.4.tar.gz) = 111f8d2b8d7bc9bbb4d0593538553618
+SHA1 (slang-1.4.4.tar.gz) = 4b6421929053edabee56d64b42ab46f25ae7e49b
+Size (slang-1.4.4.tar.gz) = 749227 bytes
 SHA1 (patch-aa) = 002d7fddcfa067cbfebdf92a80a682633c2f4625
 SHA1 (patch-ac) = 6b7c1a1aa90899af42e8df9c72c88e5bdb2111a9

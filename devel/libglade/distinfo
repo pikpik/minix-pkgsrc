@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.8 2001/03/18 00:40:50 mjl Exp $
+$NetBSD$
 
 SHA1 (libglade-0.16.tar.gz) = adf05907866c81e436d5e5c57d62a61bd501efb3
+Size (libglade-0.16.tar.gz) = 345147 bytes
 SHA1 (patch-aa) = 0144305b76987773b49234091a7da6708da27d3c
 SHA1 (patch-ab) = b7832173e36810c9e5e29aace918c8169de6f5ad

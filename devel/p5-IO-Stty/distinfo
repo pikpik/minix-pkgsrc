@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/07/16 00:39:58 thorpej Exp $
+$NetBSD$
 
-MD5 (IO-Stty-.02.tar.gz) = db2919cf267fce93682f0f854359f04e
+SHA1 (IO-Stty-.02.tar.gz) = 54373d8f416a44c5f3bd37fb9aeafd21762e5c69
+Size (IO-Stty-.02.tar.gz) = 7019 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/12/06 08:34:24 rh Exp $
+$NetBSD$
 
-MD5 (Devel-Symdump-2.00.tar.gz) = 494a075c640e5338205b334262814582
+SHA1 (Devel-Symdump-2.00.tar.gz) = 07a4cc8a9db59f9381b0fe951a31b21b9396bfdc
+Size (Devel-Symdump-2.00.tar.gz) = 9525 bytes

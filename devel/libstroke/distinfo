@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 2000/08/29 20:19:24 jwise Exp $
+$NetBSD$
 
-MD5 (libstroke-0.3.tar.gz) = f9c2f637cca0abfb4c45c8367364dc90
+SHA1 (libstroke-0.3.tar.gz) = b73271d838d1fe5a9ca9308107051351688047cd
+Size (libstroke-0.3.tar.gz) = 92516 bytes
 SHA1 (patch-aa) = f24f9ba49e8b5e13bc53b49d5a918da0c8b4327d

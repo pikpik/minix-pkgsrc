@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 2000/07/12 20:22:43 jlam Exp $
+$NetBSD$
 
-MD5 (sgi-stl-3.3/stl.tar.gz) = e0a19469085fb82912cd815a05390797
+SHA1 (sgi-stl-3.3/stl.tar.gz) = ecb0c82dc97bddd5db73cd2e57e0fcae155153db
+Size (sgi-stl-3.3/stl.tar.gz) = 167463 bytes
 SHA1 (patch-aa) = f9432931c74dbdd02f78e2b6f3831592d624c728
 SHA1 (patch-ab) = 8b281b1d68026caf0cb7ab128928f0bb433b4c64

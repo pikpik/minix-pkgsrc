@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/27 22:29:30 jtb Exp $
+$NetBSD$
 
-MD5 (Make-1.00.tar.gz) = ee5233f89630451dd2c24e5e0d7d3336
+SHA1 (Make-1.00.tar.gz) = 621c3848812790ed170b03cbdc0e22c767577148
+Size (Make-1.00.tar.gz) = 12425 bytes

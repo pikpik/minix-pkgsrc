@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/31 13:33:12 wennmach Exp $
+$NetBSD$
 
-MD5 (popt-1.2.tar.gz) = 53ab7f622fd6adf493e172ade16701ee
+SHA1 (popt-1.2.tar.gz) = cf25aa77dfc2eef941293ac10f0761d6aaf690bc
+Size (popt-1.2.tar.gz) = 294172 bytes
 SHA1 (patch-aa) = 97906976871d32c9ce0c54f952b18efe2655c89d

@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.14 2000/11/14 02:30:13 msaitoh Exp $
+$NetBSD$
 
-MD5 (PTL-2.1.7.tar.gz) = be1cb4c41b576cc2d3f722c19db18da0
+SHA1 (PTL-2.1.7.tar.gz) = ff3b9526977a28f61cf2ced521fd79648c67948b
+Size (PTL-2.1.7.tar.gz) = 678274 bytes
 SHA1 (patch-aa) = 284228c992244b9465b68741b8e6ad68567c254c
 SHA1 (patch-ab) = 501fa5218757f9e47cc8d9b78f33082019517dcb

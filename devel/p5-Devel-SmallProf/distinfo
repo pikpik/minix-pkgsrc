@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/01/26 09:54:37 abs Exp $
+$NetBSD$
 
-MD5 (Devel-SmallProf-0.9.tar.gz) = c9e50df36a3ad48fe01071813768d975
+SHA1 (Devel-SmallProf-0.9.tar.gz) = 7175e5b6f3a36cc6300b9e614de2079854c8038a
+Size (Devel-SmallProf-0.9.tar.gz) = 8214 bytes

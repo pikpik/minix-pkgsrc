@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/12/03 08:47:25 rh Exp $
+$NetBSD$
 
-MD5 (TimeDate-1.08.tar.gz) = d89840e268c92693ed428368892b0079
+SHA1 (TimeDate-1.08.tar.gz) = 305d0ebf7cc2e4f77bd2587786bc6cc65badbbf2
+Size (TimeDate-1.08.tar.gz) = 13378 bytes
