@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ac3dec
+bin/extract_ac3
+bin/verify_ac3
