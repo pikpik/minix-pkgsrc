@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.197 2001/03/04 15:59:54 hubertf Exp $
+# $NetBSD: Makefile,v 1.198 2001/03/04 16:44:29 itojun Exp $
 #
 
 COMMENT=	Networking tools
@@ -91,6 +91,7 @@ SUBDIR+=	ORBit
 SUBDIR+=	p5-ispman
 SUBDIR+=	p5-Net
 SUBDIR+=	p5-Net-DNS
+SUBDIR+=	p5-Net-IRC
 SUBDIR+=	p5-Net-SNMP
 SUBDIR+=	p5-Net-TFTP
 SUBDIR+=	p5-Net-Telnet
