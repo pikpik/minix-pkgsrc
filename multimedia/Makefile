@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2004/06/20 19:26:41 agc Exp $
+# $NetBSD: Makefile,v 1.48 2004/06/20 19:32:24 agc Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -9,6 +9,7 @@ SUBDIR+=	avidemux
 SUBDIR+=	avifile
 SUBDIR+=	dirac
 SUBDIR+=	divxplayer
+SUBDIR+=	dvdauthor
 SUBDIR+=	dvdrip
 SUBDIR+=	ffmpeg
 SUBDIR+=	flashplayer
