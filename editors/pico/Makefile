@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/27 03:29:04 tv Exp $
+# $NetBSD: Makefile,v 1.4 1998/07/19 03:37:46 tv Exp $
 #
 
 DISTNAME=	pine4.00
@@ -10,7 +10,7 @@ MAINTAINER=	root@garbled.net
 
 BUILD_DEPENDS=	${PREFIX}/bin/libtool:../../devel/libtool
 
-CONFLICTS=	pico-2.9
+CONFLICTS=	pico-2.9 pine-3.96
 
 do-build:
 	cd ${WRKSRC} && ./build neb CC="${PREFIX}/bin/libtool ${CC}" PREFIX=${PREFIX}
