@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/07/14 12:37:54 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2001/09/27 23:18:11 jlam Exp $
 #
 
 DISTNAME=		giflib-4.1.0
@@ -30,13 +30,6 @@ MAKE_ENV+=		CC="${CC} -I${LOCALBASE}/include"
 
 post-patch:
 	${RM} ${WRKSRC}/doc/gif2x11.html
-
-# We patch configure.in, so touch the Makefile.in files to prevent automake
-# from regenerating them.
-#
-pre-build:
-	${TOUCH} ${WRKSRC}/aclocal.m4
-	${FIND} ${WRKSRC} -name "Makefile.in" -print | ${XARGS} ${TOUCH}
 
 post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
