@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/glib-config
+include/glib/glib.h
+include/glib/glibconfig.h
+lib/libglib11.a
+lib/libglib11.la
+lib/libglib11.so.0.2
+share/aclocal/glib.m4
+@dirrm include/glib
