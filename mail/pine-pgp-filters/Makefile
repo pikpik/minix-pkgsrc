@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/05 21:42:36 reed Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/04 10:32:30 abs Exp $
 #
 
 DISTNAME=		pine-pgp-filters-1.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security mail
 MASTER_SITES=		http://dougbarton.net/FreeBSD/Downloads/
 
