@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/06/20 20:57:17 xtraeme Exp $
+# $NetBSD: Makefile,v 1.27 2004/08/02 16:47:40 recht Exp $
 #
 
 DISTNAME=	grub-0.95
@@ -18,7 +18,7 @@ USE_BUILDLINK3=		YES
 
 INFO_FILES=		grub.info multiboot.info
 
-BUILDLINK_TRANSFORM+=	S:-fno-builtin:-ffreestanding:
+BUILDLINK_TRANSFORM+=	rename:-fno-builtin:-ffreestanding
 
 .include "../../mk/bsd.prefs.mk"
 

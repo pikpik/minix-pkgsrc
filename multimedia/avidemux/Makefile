@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/05 18:41:14 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/07/19 23:56:21 xtraeme Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -22,7 +22,7 @@ LDFLAGS+=		${LIBOSSAUDIO}
 
 CONFIGURE_ARGS+=	--disable-warnings
 
-BUILDLINK_TRANSFORM+=   S:-O3:
+BUILDLINK_TRANSFORM+=   rm:-O3
 
 .include "../../mk/bsd.prefs.mk"
 

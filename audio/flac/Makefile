@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/04/12 23:15:01 salo Exp $
+# $NetBSD: Makefile,v 1.23 2004/05/15 14:39:54 grant Exp $
 #
 
 DISTNAME=		flac-1.1.0
@@ -32,7 +32,7 @@ NOT_FOR_COMPILER=	sunpro
 #
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Mmipspro)
-BUILDLINK_TRANSFORM+=	S:-O3:
+BUILDLINK_TRANSFORM+=	rm:-O3
 .endif
 
 .include "../../multimedia/libogg/buildlink3.mk"
