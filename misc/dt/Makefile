@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2001/02/17 18:08:59 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/11 06:34:44 jlam Exp $
 #
 
 DISTNAME=	dt-1.1.7
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_LOCAL}
 
-MAINTAINER=	fb@enteract.com
+MAINTAINER=	fredb@netbsd.org
 COMMENT=	Virtual consoles for NetBSD/mac68k (and macppc?)
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL

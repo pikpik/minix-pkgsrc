@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 13:56:13 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:17:38 hubertf Exp $
 #
 
 DISTNAME=	gkermit
@@ -6,7 +6,7 @@ PKGNAME=	gkermit-1.00
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
 
-MAINTAINER=	fb@enteract.com
+MAINTAINER=	fredb@netbsd.org
 HOMEPAGE=	http://www.columbia.edu/kermit/gkermit.html
 COMMENT=	minimal implementation of the ``kermit'' protocol (GPL'd)
 
