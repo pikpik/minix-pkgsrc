@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.200 2002/06/26 17:27:22 grant Exp $
+# $NetBSD: Makefile,v 1.201 2002/06/28 07:41:57 jlam Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -75,9 +75,9 @@ SUBDIR+=	jakarta-tomcat
 SUBDIR+=	jsdk20
 SUBDIR+=	jssi
 SUBDIR+=	kannel
+SUBDIR+=	lhs
 SUBDIR+=	libghttp
 SUBDIR+=	libwww
-SUBDIR+=	lhs
 SUBDIR+=	links
 SUBDIR+=	links-gui
 SUBDIR+=	lynx
