@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nut
+share/nut/abbrev.txt
+@dirrm share/nut
