@@ -1,0 +1,22 @@
+$NetBSD$
+--- doc/Makefile.SH.orig	Wed Mar 24 23:13:56 1999
++++ doc/Makefile.SH	Mon Jul 16 02:12:05 2001
+@@ -101,6 +101,7 @@
+ SUFFIX		=	$suffix
+ PACKED		=	$packed
+ PACKER		=	$packer
++MKDIR		=	mkdir
+ 
+ !GROK!THIS!
+ 
+@@ -277,8 +278,8 @@
+ 	fi
+ 
+ I_DELETE = $(TEST) ! -f $@ || $(RM) $@
+-INST_444 = $(I_DELETE) ; $(CP) $? $@ ; $(CHMOD) 444 $@
+-INST_644 = $(I_DELETE) ; $(CP) $? $@ ; $(CHMOD) 644 $@
++INST_444 = $(I_DELETE) ; $(MKDIR) -p `dirname $@` ; $(CP) $? $@ ; $(CHMOD) 444 $@
++INST_644 = $(I_DELETE) ; $(MKDIR) -p `dirname $@` ; $(CP) $? $@ ; $(CHMOD) 644 $@
+ INST_LINK = $(I_DELETE) ; $(LN) $? $@
+ 
+ #	Dependencies and rules for installing man pages and lib files
