@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/06/29 21:31:40 zuntum Exp $
+# $NetBSD: Makefile,v 1.5 2001/07/04 03:33:26 jlam Exp $
 
 DISTNAME=	ted-2.10.src
 PKGNAME=	ted-2.10
@@ -11,7 +11,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.nllgg.nl/Ted/
 COMMENT=	X11 based WordPad-like word processor
 
-USE_X11=	YES
+USE_X11BASE=	YES
 
 AFMDIR=		${PREFIX}/share/Ted/afm
 INDDIR=		${PREFIX}/share/Ted/ind
