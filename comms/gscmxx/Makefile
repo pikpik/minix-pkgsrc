@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/22 11:22:01 salo Exp $
 #
 
 DISTNAME=	gscmxx-0.4.1
 CATEGORIES=	comms x11 perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gscmxx/}
 
-MAINTAINER=	salo@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gscmxx.sourceforge.net/
 COMMENT=	Gtk+ frontend for scmxx
 
