@@ -1,4 +1,12 @@
-@comment $NetBSD: PLIST,v 1.4 2001/03/31 21:24:50 tron Exp $
+@comment $NetBSD$
 bin/xpaint
 man/cat1/xpaint.0.gz
 lib/X11/app-defaults/XPaint
+lib/X11/app-defaults/XPaint_fr
+share/xpaint/help/Help
+share/xpaint/help/Help_fr
+share/xpaint/messages/Messages
+share/xpaint/messages/Messages_fr
+@dirrm share/xpaint/messages
+@dirrm share/xpaint/help
+@dirrm share/xpaint
