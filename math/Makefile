@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2002/12/10 12:41:31 markd Exp $
+# $NetBSD: Makefile,v 1.91 2002/12/22 18:30:06 cjep Exp $
 #
 
 COMMENT=	Mathematics
@@ -77,6 +77,7 @@ SUBDIR+=	tochnog
 SUBDIR+=	udunits
 SUBDIR+=	vista
 SUBDIR+=	xeukleides
+SUBDIR+=	xgap
 SUBDIR+=	xldlas
 SUBDIR+=	xlife
 SUBDIR+=	xlispstat
