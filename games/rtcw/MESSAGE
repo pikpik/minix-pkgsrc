@@ -1,0 +1,14 @@
+===========================================================================
+$NetBSD$
+
+To play Return to Castle Wolfenstein, you need to copy the following files
+from the retail version to ${PREFIX}/lib/lokigames/rtcw/main :
+
+	mp_pak0.pk3
+	mp_pak1.pk3
+	mp_pak2.pk3
+	pak0.pk3
+	sp_pak1.pk3
+	sp_pak2.pk3
+
+===========================================================================
