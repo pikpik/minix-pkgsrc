@@ -1,7 +1,7 @@
 $NetBSD$
 
---- analog.cfg.orig	Wed Nov 25 22:49:33 1998
-+++ analog.cfg	Tue Jan 19 21:24:09 1999
+--- analog.cfg.orig	Fri Nov 12 17:24:29 1999
++++ analog.cfg	Fri Nov 12 17:24:29 1999
 @@ -8,7 +8,8 @@
  # REQINCLUDE pages
  #
@@ -11,4 +11,4 @@ $NetBSD$
 +LOGFILE /var/log/httpd-access.log
  HOSTNAME "[my organisation]"
  LINKINCLUDE pages
- UNCOMPRESS *.gz,*.Z "gzip -cd"
+ REFLINKINCLUDE pages
