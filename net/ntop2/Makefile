@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/02/14 17:21:46 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2004/03/26 02:27:48 wiz Exp $
 
 DISTNAME=		ntop-2.2
 PKGNAME=		ntop2-2.2
@@ -15,7 +15,7 @@ CONFLICTS=		ntop-[0-9]*
 
 WRKSRC=                 ${WRKDIR}/${DISTNAME}/ntop
 USE_X11=		yes
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=          yes
 USE_LIBTOOL=		yes
@@ -40,10 +40,10 @@ pre-configure:
 	cd ${WRKSRC} && ${AUTOMAKE} -a --foreign -i
 	cd ${WRKSRC} && ${AUTOCONF}
 
-.include "../../databases/gdbm/buildlink2.mk"
-.include "../../graphics/gdchart/buildlink2.mk"
-.include "../../net/libpcap/buildlink2.mk"
-.include "../../security/openssl/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../databases/gdbm/buildlink3.mk"
+.include "../../graphics/gdchart/buildlink3.mk"
+.include "../../net/libpcap/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/automake.mk"
 .include "../../mk/bsd.pkg.mk"
