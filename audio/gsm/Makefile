@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/06/18 16:15:10 agc Exp $
+# $NetBSD: Makefile,v 1.11 1998/07/15 11:51:57 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/07/17 15:12:39 max Exp 
 #
 
@@ -7,6 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cs.tu-berlin.de/pub/local/kbs/tubmik/gsm/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://kbs.cs.tu-berlin.de/~jutta/toast.html
 
 MAKE_FLAGS=	PREFIX="${PREFIX}"
 
