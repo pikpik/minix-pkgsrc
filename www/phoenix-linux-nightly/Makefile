@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/26 12:55:04 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:53 jmmv Exp $
 #
 
 DISTNAME=		phoenix-i686-pc-linux-gnu
@@ -29,7 +29,7 @@ post-build:
 
 do-install:
 	${INSTALL_DATA_DIR} ${PHOENIX_LIB}
-	cd ${WRKSRC}; && ${CP} -r . ${PHOENIX_LIB}
+	cd ${WRKSRC} && ${CP} -r . ${PHOENIX_LIB}
 	${INSTALL_SCRIPT} ${WRKDIR}/phoenix.sh ${PREFIX}/bin/phoenix-linux
 
 post-install:
