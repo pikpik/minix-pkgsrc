@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/png2html
+share/doc/png2html/COPYING
+share/doc/png2html/CHANGES
+share/doc/png2html/README
