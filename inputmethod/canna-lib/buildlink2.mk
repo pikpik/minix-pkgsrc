@@ -1,9 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.4 2003/05/31 08:28:34 uebayasi Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/06/03 00:58:10 uebayasi Exp $
 
 .if !defined(CANNA_BUILDLINK2_MK)
 CANNA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		canna
+BUILDLINK_PKGBASE.canna?=	Canna-lib
 BUILDLINK_DEPENDS.canna?=	Canna-lib>=3.6pl3
 BUILDLINK_PKGSRCDIR.canna?=	../../inputmethod/canna-lib
 

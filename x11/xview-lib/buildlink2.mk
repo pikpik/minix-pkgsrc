@@ -1,9 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/24 06:02:11 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:50 jlam Exp $
 
 .if !defined(XVIEW_BUILDLINK2_MK)
 XVIEW_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		xview
+BUILDLINK_PKGBASE.xview?=	xview-lib
 BUILDLINK_DEPENDS.xview?=	xview-lib>=3.2.1
 BUILDLINK_PKGSRCDIR.xview?=	../../x11/xview-lib
 

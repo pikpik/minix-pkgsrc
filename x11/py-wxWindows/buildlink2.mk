@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1 2003/05/09 18:06:13 drochner Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2004/03/26 02:28:02 wiz Exp $
 
 .if !defined(PYWXWINDOWS_BUILDLINK2_MK)
 PYWXWINDOWS_BUILDLINK2_MK=	# defined
@@ -6,7 +6,8 @@ PYWXWINDOWS_BUILDLINK2_MK=	# defined
 .include "../../lang/python/pyversion.mk"
 
 BUILDLINK_PACKAGES+=			pywxWindows
-BUILDLINK_DEPENDS.pywxWindows?=		${PYPKGPREFIX}-wxWindows-*
+BUILDLINK_PKGBASE.pywxWindows?=		${PYPKGPREFIX}-wxWindows
+BUILDLINK_DEPENDS.pywxWindows?=		${PYPKGPREFIX}-wxWindows-[0-9]*
 BUILDLINK_RECOMMENDED.pywxWindows?=	${PYPKGPREFIX}-wxWindows>=2.4.2.4nb4
 BUILDLINK_PKGSRCDIR.pywxWindows?=	../../x11/py-wxWindows
 

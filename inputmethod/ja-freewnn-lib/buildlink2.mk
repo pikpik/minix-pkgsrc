@@ -1,9 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:29 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:57 jlam Exp $
 
 .if !defined(JA_FREEWNN_BUILDLINK2_MK)
 JA_FREEWNN_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			ja-freewnn
+BUILDLINK_PKGBASE.ja-freewnn?=		ja-FreeWnn-lib
 BUILDLINK_DEPENDS.ja-freewnn?=		ja-FreeWnn-lib>=1.10
 BUILDLINK_PKGSRCDIR.ja-freewnn?=	../../inputmethod/ja-freewnn-lib
 BUILDLINK_DEPMETHOD.ja-freewnn?=	build
