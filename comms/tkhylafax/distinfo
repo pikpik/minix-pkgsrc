@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.2 1999/08/11 06:21:28 rh Exp $
+MD5 (tkhylafax-3.1.tar.gz) = 99535cf7a8cee6433ab9bcbe539cc534
+SHA1 (patch-aa) = 52ec8fc2fcd0b065c1623878962bfe8404335ceb
+SHA1 (patch-ab) = 5e0603062d97086fd0df469eb838c8f6342839c6

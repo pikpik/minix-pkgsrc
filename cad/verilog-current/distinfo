@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.13 2001/04/14 14:47:31 dmcmahill Exp $
+
+SHA1 (verilog-20010407.tar.gz) = 2659fe99a6faa6e838399b1213cad3b044625e93
+SHA1 (patch-aa) = 375c8896af276cb1f66f8bf4ca9ff641181d8bc6
+SHA1 (patch-ad) = ebd01d8ffbc55d8cd98682e07c22d2e30218d285
