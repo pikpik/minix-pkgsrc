@@ -11,7 +11,7 @@ $NetBSD$
    int   i;                      /* Looping var */
    int   fd;                     /* File descriptor */
    char  device[255];            /* Device filename */
-@@ -407,6 +407,22 @@
+@@ -407,6 +407,21 @@
    for (i = 0; i < 3; i ++)
    {
      sprintf(device, "/dev/unlpt%d", i);
@@ -21,7 +21,6 @@ $NetBSD$
 +      printf("direct usb:%s \"Unknown\" \"USB Port #%d\"\n", device, i + 1);
 +    }
 +  }
-+#endif
 +#elif defined(__NetBSD__) || defined(__OpenBSD__)
 +  int   i;                      /* Looping var */
 +  int   fd;                     /* File descriptor */
