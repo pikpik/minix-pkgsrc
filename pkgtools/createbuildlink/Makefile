@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/01/20 12:23:57 agc Exp $
+# $NetBSD: Makefile,v 1.24 2004/02/02 10:06:22 jlam Exp $
 #
 
 DISTNAME=	createbuildlink-3.0
@@ -25,8 +25,8 @@ INSTALLATION_DIRS=	bin man/man8
 
 do-configure:
 .for scr in ${SCRIPT}
-	${SED}	-e 's/@PKGVERSION@/${PKGVERSION}/'		\
-		-e 's/@MAKE@/${MAKE}/'				\
+	${SED}	-e 's|@PKGVERSION@|${PKGVERSION}|'		\
+		-e 's|@MAKE@|${MAKE}|'				\
 		< ${FILESDIR}/${scr} > ${WRKSRC}/${scr}
 .endfor
 
