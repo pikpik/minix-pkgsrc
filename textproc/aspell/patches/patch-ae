@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- util/Makefile.in.orig	Mon Aug 20 05:44:46 2001
++++ util/Makefile.in
+@@ -86,7 +86,7 @@
+ pkgdatadir = @pkgdatadir@
+ pkgdocdir = @pkgdocdir@
+ 
+-INCLUDES = -I$(includedir)
++INCLUDES =
+ 
+ noinst_LTLIBRARIES = libaspell-util.la
+ 
