@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kile/syntax/Makefile.in.orig	2004-10-18 03:08:56.000000000 +1300
++++ kile/syntax/Makefile.in
+@@ -291,7 +291,7 @@ xdg_appsdir = @xdg_appsdir@
+ xdg_directorydir = @xdg_directorydir@
+ xdg_menudir = @xdg_menudir@
+ syntaxdir = $(kde_datadir)/katepart/syntax
+-syntax_DATA = latex.xml bibtex.xml
++syntax_DATA = bibtex.xml
+ #>- all: all-am
+ #>+ 1
+ all: docs-am  all-am
