@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/12/07 14:11:36 is Exp $
+# $NetBSD: Makefile,v 1.21 2001/02/14 14:28:58 is Exp $
 #
 
 DISTNAME=	mtools-3.9.7
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ftp.tux.org/pub/tux/knaff/mtools/
 
 MAINTAINER=	is@netbsd.org
 HOMEPAGE=	http://www.tux.org/pub/knaff/mtools/
+
+NOT_FOR_PLATFORM = *-*-alpha *-*-sparc64	# LP64 problem
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
