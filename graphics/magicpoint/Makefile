@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/09/30 05:11:57 itojun Exp $
+# $NetBSD: Makefile,v 1.29 2002/03/13 17:37:12 fredb Exp $
 
 DISTNAME=		magicpoint-1.09a
 PKGREVISION=		1
@@ -47,5 +47,5 @@ post-install:
 .include "../../graphics/libungif/buildlink.mk"
 .include "../../graphics/mng/buildlink.mk"
 .include "../../graphics/png/buildlink.mk"
-.include "../../japanese/vflib-lib/buildlink.mk"
+.include "../../print/ja-vflib-lib/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
