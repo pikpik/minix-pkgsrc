@@ -46,6 +46,7 @@ bin/filerepair
 bin/hoard
 bin/logbandwidth
 bin/logcmls
+bin/logprogress
 bin/logreintegration
 bin/parser
 bin/removeinc
