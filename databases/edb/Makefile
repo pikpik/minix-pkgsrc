@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:28:03 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 16:39:05 martti Exp $
 #
 
 DISTNAME=		edb-1.0.3
@@ -13,6 +13,7 @@ COMMENT=		Database abstraction layer to Berkeley databases
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_BUILDLINK2=		YES
+USE_GCC_SHLIB=		YES
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--enable-cxx
