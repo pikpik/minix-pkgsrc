@@ -1,0 +1,11 @@
+@comment $NetBSD$
+lib/gtk/themes/engines/libstep.a
+lib/gtk/themes/engines/libstep.so.0.0
+share/themes/Step/ICON.png
+share/themes/Step/README.html
+share/themes/Step/gtk/gtkrc
+@dirrm share/themes/Step/gtk
+@dirrm share/themes/Step
+@dirrm lib/gtk/themes/engines
+@dirrm lib/gtk/themes
+@dirrm lib/gtk
