@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/24 23:57:36 hubertf Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -14,4 +14,5 @@ COMMENT=	ICQ client with plugin support
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 
+.include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
