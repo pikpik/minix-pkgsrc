@@ -1,11 +1,11 @@
 ===========================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.2 2001/11/11 06:17:28 hubertf Exp $
 
 Note that some stuff that comes with the standard Ruby 1.6
 distribution is provided as separate package:
 
 	databases/ruby-gdbm:		GDBM module
-	security/ruby-md5:		MD5 module
+	security/ruby-digest:		message digest module
 	devel/ruby-readline:		readline module
 	x11/ruby-tcltklib:		Tcl/Tk libraries
 	x11/ruby-tk:			Tk modules

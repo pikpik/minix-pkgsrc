@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- lib/irb/locale.rb.orig	Fri Jun 29 17:25:29 2001
++++ lib/irb/locale.rb
+@@ -135,6 +135,7 @@
+       end
+       lc_file.close
+       toplevel_load lc_file.path, priv
++      lc_file.close(true)
+     end
+     private :real_load
+ 
