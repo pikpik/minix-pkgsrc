@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/File/Find.pm.orig	Fri Apr 23 12:41:39 2004
-+++ lib/File/Find.pm	Fri Apr 23 12:42:19 2004
-@@ -1212,6 +1212,7 @@
+--- lib/File/Find.pm.orig	Fri Feb 27 11:31:34 2004
++++ lib/File/Find.pm	Mon Apr 26 00:34:04 2004
+@@ -1221,6 +1221,7 @@
  
  $File::Find::dont_use_nlink = 1
      if $^O eq 'os2' || $^O eq 'dos' || $^O eq 'amigaos' || $^O eq 'MSWin32' ||
