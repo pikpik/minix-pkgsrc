@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2002/03/25 11:26:30 drochner Exp $
+# $NetBSD: Makefile,v 1.126 2002/03/30 16:53:28 taca Exp $
 #
 
 COMMENT=	System utilities
@@ -42,6 +42,7 @@ SUBDIR+=	gmc
 SUBDIR+=	gnome-vfs
 SUBDIR+=	gnometoaster
 SUBDIR+=	gpart
+SUBDIR+=	grub
 SUBDIR+=	grun
 SUBDIR+=	gtop
 SUBDIR+=	hfsutils
