@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 1998/11/08 11:04:50 frueauf Exp $
+# $NetBSD: Makefile,v 1.28 1998/11/11 11:58:55 frueauf Exp $
 #
 
 DISTNAME=	ghostscript-5.50
@@ -79,5 +79,8 @@ pre-install:
 
 post-install:
 	strip ${PREFIX}/bin/gs
+
+pre-clean:
+	@cd ../../graphics/jpeg && ${MAKE} clean
 
 .include "../../mk/bsd.pkg.mk"
