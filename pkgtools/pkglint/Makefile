@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.110 2001/09/09 20:50:16 wiz Exp $
+# $NetBSD: Makefile,v 1.111 2001/10/30 18:53:01 wiz Exp $
 #
 
-DISTNAME=		pkglint-3.09
-CATEGORIES=		pkgtools devel
-MASTER_SITES=		# empty
-DISTFILES=		# empty
+DISTNAME=	pkglint-3.09
+CATEGORIES=	pkgtools devel
+MASTER_SITES=	# empty
+DISTFILES=	# empty
 
-MAINTAINER=		hubertf@netbsd.org
-HOMEPAGE=		ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/Packages.txt
-COMMENT=		Verifier for NetBSD packages and complete pkgsrc tree
+MAINTAINER=	hubertf@netbsd.org
+HOMEPAGE=	ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/Packages.txt
+COMMENT=	Verifier for NetBSD packages and complete pkgsrc tree
 
-DEPENDS+=		digest-2001*:../../pkgtools/digest
+DEPENDS+=	digest-2001*:../../pkgtools/digest
 
-USE_PERL5=		YES
+USE_PERL5=	YES
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
