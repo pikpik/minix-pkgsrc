@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/07/31 03:23:06 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/27 15:09:00 chris Exp $
 
 DISTNAME=		cyrus-sasl-2.1.9
 SVR4_PKGNAME=		csasl
@@ -13,7 +13,6 @@ COMMENT=		Simple Authentication and Security Layer
 USE_BUILDLINK2=		YES
 AUTOMAKE_REQD=		1.4
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/config/ltconfig
 
@@ -81,7 +80,7 @@ post-extract:
 
 pre-configure:
 	cd ${WRKSRC} && ${AUTOHEADER}
-	cd ${WRKSRC} && ${AUTOMAKE} --gnu
+	cd ${WRKSRC} && ${AUTOMAKE} --gnu -i
 	cd ${WRKSRC} && ${AUTOCONF}
 
 post-install:
