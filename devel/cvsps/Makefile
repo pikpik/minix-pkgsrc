@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/12/10 18:24:10 martti Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/22 00:13:14 schmonz Exp $
 #
 
-DISTNAME=	cvsps-1.3
+DISTNAME=	cvsps-1.3.2
 CATEGORIES=	devel
-MASTER_SITES=	http://www.cobite.com/cvsps/
+MASTER_SITES=	${HOMEPAGE}
 
 MAINTAINER=	schmonz@netbsd.org
 HOMEPAGE=	http://www.cobite.com/cvsps/
