@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/08 23:44:00 ben Exp $
 #
 
 DISTNAME=	ppmdi1
@@ -15,6 +15,7 @@ MAKEFILE=	makefile.gmk
 ALL_TARGET=	ppmd
 
 WRKSRC=		${WRKDIR}
+USE_LANGUAGES=	c++
 
 post-extract:
 	cd ${WRKSRC} && for i in *; do \
