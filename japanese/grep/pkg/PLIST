@@ -1,5 +1,7 @@
-bin/grep
-bin/egrep
-bin/fgrep
+@comment $NetBSD$
+bin/jgrep
+bin/jegrep
+bin/jfgrep
+man/man1/jgrep.1
 share/doc/ja-grep/README.MB
 @dirrm share/doc/ja-grep

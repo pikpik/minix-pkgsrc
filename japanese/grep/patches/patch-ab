@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- grep-2.0/Makefile.in.orig	Tue Apr  4 02:25:58 1995
 +++ grep-2.0/Makefile.in	Tue Apr  4 02:27:57 1995
 @@ -74,7 +74,7 @@
