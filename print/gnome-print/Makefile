@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.59 2004/01/03 18:49:51 reed Exp $
-#
+# $NetBSD: Makefile,v 1.60 2004/02/14 17:21:50 jlam Exp $
 
 DISTNAME=		gnome-print-0.36
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		print gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-print/0.36/}
 
@@ -21,6 +20,7 @@ CONFIGURE_ARGS+=	--without-admin		# currently unstable
 # override HOME to avoid trying to install ${HOME}/.gnome
 MAKE_ENV+=		HOME=${WRKSRC}
 
+.include "../../databases/db4/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf-gnome/buildlink2.mk"
 .include "../../textproc/libunicode/buildlink2.mk"
