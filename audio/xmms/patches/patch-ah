@@ -1,8 +1,16 @@
-$NetBSD: patch-ah,v 1.4 2001/08/11 20:48:46 fredb Exp $
+$NetBSD$
 
---- libxmms/util.c.orig	Fri Jun  1 08:07:49 2001
-+++ libxmms/util.c
-@@ -72,7 +76,7 @@
+--- libxmms/util.c.orig	Sun Oct  5 12:46:32 2003
++++ libxmms/util.c	Sun Oct  5 12:47:21 2003
+@@ -11,6 +11,7 @@
+ #endif
+ 
+ #ifdef __FreeBSD__
++#include <sys/types.h>
+ #include <sys/sysctl.h>
+ #endif
+ 
+@@ -72,7 +73,7 @@
  
  gboolean xmms_check_realtime_priority(void)
  {
