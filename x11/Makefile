@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.343 2004/03/12 13:11:33 cjep Exp $
+# $NetBSD: Makefile,v 1.344 2004/04/02 11:53:56 jmmv Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -236,6 +236,7 @@ SUBDIR+=	xdialog
 SUBDIR+=	xdm3d
 SUBDIR+=	xearth
 SUBDIR+=	xephem
+SUBDIR+=	xextensions
 SUBDIR+=	xfce
 SUBDIR+=	xfce4-clipman-plugin
 SUBDIR+=	xfce4-desktop
