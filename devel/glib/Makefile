@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2002/10/19 10:54:47 rh Exp $
+# $NetBSD: Makefile,v 1.51 2002/10/30 03:09:30 rh Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/08/06 14:55:12 vanilla Exp
 #
 
@@ -7,7 +7,6 @@ PKGREVISION=		3
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v1.2/ \
 			ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \
-			http://www.ameth.org/gimp/pub/gtk/v1.2/ \
 			${MASTER_SITE_GNOME:=sources/glib/1.2/}
 
 MAINTAINER=		tron@netbsd.org
