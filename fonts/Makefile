@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2004/03/29 22:05:05 recht Exp $
+# $NetBSD: Makefile,v 1.69 2004/05/08 01:55:57 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -24,6 +24,7 @@ SUBDIR+=	acroread5-jpnfont
 SUBDIR+=	acroread5-korfont
 SUBDIR+=	adobe-cidfonts
 SUBDIR+=	adobe-cmaps
+SUBDIR+=	alee-ttf
 SUBDIR+=	arphic-ttf
 SUBDIR+=	artwiz-fonts
 SUBDIR+=	baekmuk-ttf
