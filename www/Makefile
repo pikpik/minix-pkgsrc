@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 1999/07/07 15:30:40 bouyer Exp $
+# $NetBSD: Makefile,v 1.42 1999/07/21 23:09:56 garbled Exp $
 # FreeBSD Id: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp
 #
 
@@ -10,6 +10,7 @@
     SUBDIR += ap-perl
     SUBDIR += ap-php3
     SUBDIR += apache
+    SUBDIR += apache6
 #    SUBDIR += apache-current
     SUBDIR += arena
 #    SUBDIR += ashe           # requires Motif
