@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gcalctool
+man/man1/calctool.1
+share/gcalctool/calctool.gif
+@dirrm share/gcalctool
