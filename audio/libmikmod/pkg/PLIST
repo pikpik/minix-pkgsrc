@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/10 01:33:28 hubertf Exp $
 include/mikmod.h
-lib/libmikmod.la
 lib/libmikmod.so.2.0
 lib/libmikmod.a
 @unexec install-info --delete %D/info/mikmod.info %D/info/dir
