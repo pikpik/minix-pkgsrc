@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/01/15 12:42:26 skrll Exp $
 lib/libxalan-c1_0.so
 bin/testXSLT
 bin/testXPath
+man/man1/testXSLT.1
 include/DOMSupport/DOMServices.hpp
 include/DOMSupport/DOMSupport.hpp
 include/DOMSupport/DOMSupportDefault.hpp
