@@ -1,13 +1,13 @@
 $NetBSD$
 
---- cf/sysconf.in.orig	Sun Jan 28 21:59:55 2001
-+++ cf/sysconf.in
-@@ -78,7 +78,7 @@
- 
- # Defaults
- 
--M4=m4
-+M4=gm4
- 
- # Double precision
- # Note that because there is no standard way to invoke double
+--- bindings/tk/Makefile.in.orig
++++ bindings/tk/Makefile.in
+@@ -144,7 +144,7 @@
+ LIBLTDL = @LIBLTDL@
+ LIBOBJS = @LIBOBJS@
+ LIBRARY_VERSION = @LIBRARY_VERSION@
+-LIBS = @LIBS@
++LIBS = @LIBS@ -lX11
+ LIBTOOL = @LIBTOOL@
+ LIB_DIR = @LIB_DIR@
+ LIB_TAG = @LIB_TAG@
