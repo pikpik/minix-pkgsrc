@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/python1.5/site-packages/ts_regex.py
+lib/python1.5/site-packages/ts_regex.pyc
+lib/python1.5/site-packages/ts_regex.pyo
