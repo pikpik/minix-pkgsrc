@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/15 18:36:55 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/19 21:27:39 adrianp Exp $
 
-DISTNAME=	cgiirc-0.5.5
+DISTNAME=	cgiirc-0.5.6
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cgiirc/}
 
