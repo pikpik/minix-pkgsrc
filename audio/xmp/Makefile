@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/01/28 22:03:05 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/22 07:15:01 grant Exp $
 # FreeBSD: ports/audio/xmp/Makefile,v 1.5 2000/04/08 21:24:59 mharo Exp
 #
 
@@ -21,6 +21,7 @@ CONFIGURE_ARGS+=--disable-alsa \
 
 USE_X11=	yes
 USE_GNU_TOOLS+=	make
+USE_BUILDLINK3=	yes
 
 EGDIR=		${PREFIX}/share/examples/xmp
 CONF_FILES=	${EGDIR}/xmp-modules.conf ${PKG_SYSCONFDIR}/xmp-modules.conf
