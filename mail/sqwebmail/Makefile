@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/03/10 18:07:16 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2004/03/26 18:48:52 jlam Exp $
 
 DISTNAME=	sqwebmail-3.6.2
 CATEGORIES=	www
@@ -19,9 +19,6 @@ INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 .include "../courier-auth/Makefile.common"
 
-.if defined(_STRIPFLAG_INSTALL) && !empty(_STRIPFLAG_INSTALL:M-s)
-INSTALL_TARGET=         install-strip
-.endif
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR}
 
 SQWEBMAIL_STATEDIR=	/var/sqwebmail
