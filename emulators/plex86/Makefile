@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2000/12/16 12:43:13 fvdl Exp $
-#
+# $NetBSD: Makefile,v 1.11 2000/12/17 17:43:18 tron Exp $
 
-DISTNAME=	plex86-20001216
-PKGNAME=	plex86-0.20001216
+DISTNAME=	plex86-20001225
+PKGNAME=	${DISTNAME:S/-/-0./}
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_LOCAL}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.plex86.org/
