@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- scripts/build.orig	Mon Jun 26 16:04:26 1995
++++ scripts/build
+@@ -30,10 +30,7 @@
+ 	chmod +x \$@
+ 
+ install: \$(FILES)
+-	-@if [ ! -d $install_dir/lib ]; then \\
+-	    echo mkdir $install_dir/lib; \\
+-	    mkdir $install_dir/lib; \\
+-	fi
++	-@mkdir -p $install_dir/lib
+ 	cp linkscheme $install_dir/lib
+ 	cp makedl $install_dir/lib
+ 	cp ldflags $install_dir/lib

@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/main.c.orig	Thu Mar 28 10:31:30 1996
++++ src/main.c
+@@ -196,7 +196,7 @@
+ 
+     stkbase = &foo;
+     Stack_Grows_Down = Check_Stack_Grows_Down ();
+-    ALIGN(stkbase);
++    ELK_ALIGN(stkbase);
+     Make_Heap (heap);
+     Init_Everything ();
+ #ifdef ATEXIT
