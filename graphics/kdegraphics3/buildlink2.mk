@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/05/22 03:01:00 markd Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2003/07/13 13:52:09 wiz Exp $
 #
 # This Makefile fragment is included by packages that use kdegraphics.
 #
@@ -7,7 +7,7 @@
 KDEGRAPHICS_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			kdegraphics
-BUILDLINK_DEPENDS.kdegraphics?=		kdegraphics>=3.1.2nb1
+BUILDLINK_DEPENDS.kdegraphics?=		kdegraphics>=3.1.3
 BUILDLINK_PKGSRCDIR.kdegraphics?=		../../graphics/kdegraphics3
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.kdegraphics=kdegraphics
@@ -30,7 +30,7 @@ BUILDLINK_FILES.kdegraphics+=	lib/libkviewerpart.*
 BUILDLINK_FILES.kdegraphics+=	lib/libkviewpart.*
 
 .include "../../graphics/imlib/buildlink2.mk"
-.include "../../x11/kde3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../x11/kdebase3/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	kdegraphics-buildlink
