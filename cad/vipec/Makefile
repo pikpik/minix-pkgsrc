@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/08/16 02:08:52 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2000/08/28 19:52:33 dmcmahill Exp $
 #
 
 DISTNAME=	vipec-2.0.4
@@ -16,8 +16,11 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 USE_X11=	yes
 
 EVAL_PREFIX+=	QT2DIR=qt21
+# make sure configure finds png
+CPPFLAGS+=              -I${LOCALBASE}/include
 CONFIGURE_ENV+=	"QTDIR=${QT2DIR}/qt21" \
-		all_libraries="-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib -Wl,-R${X11BASE}/lib -L${X11BASE}/lib"
+		USER_LDFLAGS="-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib -Wl,-R${X11BASE}/lib -L${X11BASE}/lib" \
+		CFLAGS="${CFLAGS}" CPPFLAGS="${CPPFLAGS}"
 CONFIGURE_ARGS+=	"--with-qt-dir=${QT2DIR}/qt21"
 
 post-patch:
