@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2004/01/07 21:46:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/10 14:25:42 recht Exp $
 #
 
 DISTNAME=	BitTorrent-3.3
 PKGNAME=	${DISTNAME:S/BitT/bitt/}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://bitconjurer.org/BitTorrent/
 
@@ -15,6 +15,10 @@ PYDISTUTILSPKG=	YES
 USE_BUILDLINK2=	YES
 
 PYTHON_VERSIONS_ACCEPTED=	23pth 22pth
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bittorrent
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${PREFIX}/share/doc/bittorrent
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
