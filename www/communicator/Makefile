@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/06/21 08:44:29 jlam Exp $
+# $NetBSD: Makefile,v 1.14 1999/06/25 00:09:22 abs Exp $
 #
 # Every effort has been made to keep the communicator and navigator
 # Makefiles as similar as possible.
@@ -83,6 +83,7 @@ do-install:
 	${SED} -e 's#@@MOZILLA_HOME@@#${MOZILLA_HOME}#g' \
 	    <${FILESDIR}/${BINNAME}.sh >${WRKDIR}/${BINNAME}.sh
 	${INSTALL_SCRIPT} ${WRKDIR}/${BINNAME}.sh ${PREFIX}/bin/${PKGNAME}
+	${LN} -sf ${PKGNAME} ${PREFIX}/bin/${BINNAME}
 	${LN} -sf ${PKGNAME} ${PREFIX}/bin/netscape
 
 .if (${MACHINE_ARCH} == "sparc")
