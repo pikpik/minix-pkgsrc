@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:39 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/04 13:08:36 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/10/23 15:17:43 max Exp
 #
 
-DISTNAME=	samba-1.9.18p7
+DISTNAME=	samba-1.9.18p8
 CATEGORIES=	net
 MASTER_SITES=	ftp://samba.anu.edu.au/pub/samba/
 
