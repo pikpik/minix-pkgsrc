@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/09/29 17:37:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/03 11:24:33 wiz Exp $
 #
 
-DISTNAME=	dctc-0.83.5
+DISTNAME=	dctc-0.83.6
 CATEGORIES=	net
 MASTER_SITES=	http://www.ac2i.tzo.com/dctc/
 
