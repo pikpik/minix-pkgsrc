@@ -1,13 +1,13 @@
 $NetBSD$
 
---- orbit-config.in.orig	Fri Oct  8 06:49:07 1999
-+++ orbit-config.in	Tue May 30 16:23:19 2000
+--- orbit-config.in.orig	Thu Sep 20 03:09:00 2001
++++ orbit-config.in
 @@ -87,7 +87,7 @@
         	;;
  
      client|server)
 -	the_libs="$the_libs -L$libdir -lORBit -lIIOP -lORBitutil `glib-config --libs` @LIBS@ -lm"
 +	the_libs="$the_libs -L$libdir -Wl,-R$libdir -lORBit -lIIOP -lwrap -lORBitutil `glib-config --libs` @LIBS@ -lm"
- 	the_flags="$the_flags `glib-config --cflags` -I$includedir "
- 	;;
- 
+         the_flags="$the_flags `glib-config --cflags` "
+         test "x$includedir" = "x/usr/include" \
+           || the_flags="$the_flags -I$includedir "

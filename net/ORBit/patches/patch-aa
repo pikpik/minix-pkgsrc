@@ -1,6 +1,6 @@
 $NetBSD$
 
---- popt/configure.orig	Tue Aug 28 19:21:53 2001
+--- popt/configure.orig	Mon Jan  7 19:10:01 2002
 +++ popt/configure
 @@ -2277,13 +2277,6 @@
  	echo "$ac_t""no" 1>&6
