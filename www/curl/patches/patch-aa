@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Thu Nov 29 09:53:06 2001
++++ configure
+@@ -12402,7 +12402,7 @@
+ #line 12402 "configure"
+ #include "confdefs.h"
+ #include <sys/types.h>
+-#include <sys/socket.h>,
++#include <sys/socket.h>
+ #include <arpa/inet.h>
+ 
+ int
