@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/02/17 17:42:19 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2002/05/29 14:33:35 yyamano Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/04/30 23:49:14 asami Exp
 #
 
@@ -26,7 +26,7 @@ MAKE_ENV+=		CPPFLAGS=
 CONFIGURE_ARGS+=	${CONF}
 
 .if exists(/usr/bin/top)
-IGNORE=			"${PKGNAME} is part of your NetBSD distribution"
+PKG_SKIP_REASON=	"${PKGNAME} is part of your ${OPSYS} distribution"
 .endif
 
 MAKE_ENV+=	INSTALL_MAN="${INSTALL_MAN}" \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/03/20 00:10:08 fredb Exp $
+# $NetBSD: Makefile,v 1.18 2001/05/03 13:53:10 jlam Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
@@ -17,7 +17,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 .include "../../mk/bsd.prefs.mk"
 
 .if exists(${X11BASE}/bin/rman)
-IGNORE=		"Rosetta Man is included in your X distribution."
+PKG_SKIP_REASON= "${PKGNAME} is part of your X11 distribution"
 .endif
 
 post-install:

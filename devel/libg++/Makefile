@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/08/01 02:37:44 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2002/11/06 06:52:00 sjg Exp $
 #
 
 DISTNAME=	libg++-${GXXVERSION}
@@ -9,7 +9,7 @@ MAINTAINER=	packages@netbsd.org
 COMMENT=	GNU C++ Class Library
 
 .if !exists(/usr/lib/libstdc++.so.2.0) && !exists(/usr/lib/libstdc++.so)
-IGNORE=		'${PKGNAME} is designed for NetBSD>=1.4. NetBSD 1.3(.x) comes with this in-tree'
+PKG_SKIP_REASON= '${PKGNAME} is part of your NetBSD-1.3.x distribution. This is designed for NetBSD>=1.4.'
 .endif
 
 # used by internal Makefile

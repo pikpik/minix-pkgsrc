@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/07/22 22:03:34 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2002/11/15 00:33:04 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -27,7 +27,7 @@ MKPIC=		no
 .endif
 
 .if ${MKPIC} == "no"
-IGNORE=		${PKGNAME} needs shared objects.
+PKG_FAIL_REASON= "${PKGNAME} needs shared objects"
 .endif
 
 do-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.inc,v 1.2 2001/05/30 04:59:36 jlam Exp $
+# $NetBSD: Makefile.inc,v 1.1 2002/01/22 18:04:55 drochner Exp $
 #
 
 PY_VERSION=	2.0
@@ -24,7 +24,7 @@ DEPENDS+=	python20-${PY_VERSION}*:../../lang/python20
 ALL_TARGET?=	default
 
 .if ${MACHINE_ARCH} == "sparc64"
-IGNORE="${PKGNAME} needs dynamic loading"
+PKG_FAIL_REASON= "${PKGNAME} needs dynamic loading"
 .endif
 
 # Set PY_SETUP_SUBST to substitute "${variable}" for "@value@" in Setup.in.

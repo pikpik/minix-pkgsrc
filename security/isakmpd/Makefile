@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2002/10/25 10:00:57 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2002/11/18 12:07:41 martti Exp $
 #
 
 DISTNAME=		isakmpd-20021118
@@ -10,7 +10,7 @@ COMMENT=		OpenBSD IKE daemon
 
 # this is not compatible with cross build - there's no other way
 .if !exists(/usr/include/netinet6/ipsec.h)
-IGNORE+=		"${PKGNAME} requires ipsec-ready NetBSD"
+PKG_FAIL_REASON+=	"${PKGNAME} requires ipsec-ready ${OPSYS}"
 .endif
 
 ALL_TARGET=		depend all
