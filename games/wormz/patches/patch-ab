@@ -1,7 +1,18 @@
 $NetBSD$
---- include/Compat.hh.orig	Tue Jul  7 14:02:01 1998
-+++ include/Compat.hh	Wed Nov  4 23:57:19 1998
-@@ -22,7 +22,9 @@
+
+--- ./include/Compat.hh.orig	Tue Jul  7 23:02:01 1998
++++ ./include/Compat.hh	Sat Feb  5 18:55:12 2000
+@@ -14,7 +14,8 @@
+ 
+ #ifndef Linux
+ 
+-#include <bool.h>
++#define TRUE 1
++#define FALSE 0
+ #include <string.h>
+ 
+ inline void bzero(void * data, int size)
+@@ -22,7 +23,9 @@
  	memset(data, 0, size);
  }
  
@@ -11,7 +22,7 @@ $NetBSD$
  
  inline int byteswap(int old)
  {
-@@ -34,12 +36,15 @@
+@@ -34,12 +37,15 @@
  
  inline int byteswapshort(unsigned short old)
  {
