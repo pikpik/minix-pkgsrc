@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.430 2003/10/09 06:21:59 thorpej Exp $
+# $NetBSD: Makefile,v 1.431 2003/11/18 16:28:13 cube Exp $
 #
 
 COMMENT=	Development utilities
@@ -22,7 +22,6 @@ SUBDIR+=	anjuta
 SUBDIR+=	apache-ant
 SUBDIR+=	apel
 SUBDIR+=	apr
-SUBDIR+=	arch
 SUBDIR+=	argtable
 SUBDIR+=	as31
 SUBDIR+=	asm2html
@@ -409,6 +408,7 @@ SUBDIR+=	tcl-tclcl
 SUBDIR+=	tet3
 SUBDIR+=	tkcvs
 SUBDIR+=	tkdiff
+SUBDIR+=	tla
 SUBDIR+=	tmake
 SUBDIR+=	tpasm
 SUBDIR+=	trio
