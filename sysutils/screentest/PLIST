@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/screentest
+share/doc/screentest/AUTHORS
+share/doc/screentest/ChangeLog
+share/doc/screentest/NEWS
+share/doc/screentest/README
+@dirrm share/doc/screentest
