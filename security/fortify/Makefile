@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:52:54 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:20:08 martti Exp $
 #
 
 DISTNAME=	Fortify-1.4.6-unix-src
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.fortify.net/pub/Fortify/ \
 		ftp://ftp.linux.hr/pub/fortify/ \
 		ftp://ftp.funet.fi/pub/crypt/mirrors/fortify/ \
 		ftp://ftp.win.or.jp/pub/network/security/fortify/ \
-		http://www.hensa.ac.uk/mirrors/ftp.fortify.net/pub/Fortify/
+		http://www.mirror.ac.uk/sites/ftp.fortify.net/pub/Fortify/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.fortify.net/
