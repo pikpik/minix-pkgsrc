@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/22 16:48:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:52:22 wiz Exp $
 #
 
 DISTNAME=	mono-0.24
@@ -6,9 +6,11 @@ PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://www.go-mono.org/archive/
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.go-mono.org/
 COMMENT=	Open source implementation of the .NET Development Framework
+
+BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 
 # XXX: Is this really true?  As seen in the website, mono should work on
 # other platforms; please test.
