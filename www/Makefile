@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.335 2004/07/29 15:28:21 xtraeme Exp $
+# $NetBSD: Makefile,v 1.336 2004/07/30 13:00:59 cube Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -157,6 +157,7 @@ SUBDIR+=	p5-Apache-Gallery
 SUBDIR+=	p5-Apache-Reload
 SUBDIR+=	p5-Apache-SSI
 SUBDIR+=	p5-Apache-Session
+SUBDIR+=	p5-Apache-Test
 SUBDIR+=	p5-Apache-ePerl
 SUBDIR+=	p5-CGI
 SUBDIR+=	p5-CGI-Application
