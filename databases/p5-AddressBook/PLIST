@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/examples/p5-AddressBook/SyncAbook.pm
+share/examples/p5-AddressBook/abook.palm
+share/examples/p5-AddressBook/ldap-abook.conf
+share/examples/p5-AddressBook/phonelist.cgi
+@dirrm share/examples/p5-AddressBook
