@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 1999/04/06 20:24:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.63 1999/04/07 12:55:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -114,7 +114,7 @@
 #    SUBDIR += xipmsg
     SUBDIR += xtraceroute
 #    SUBDIR += yale-tftpd
-#    SUBDIR += ytalk
+    SUBDIR += ytalk
     SUBDIR += zenicb
     SUBDIR += zircon
     SUBDIR += zephyr
