@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.1170 2003/01/20 01:43:31 chris Exp $
+$NetBSD: CHANGES,v 1.1171 2003/01/20 07:14:43 fredb Exp $
 
 Changes to the packages collection and infrastructure in 2003:
 
@@ -339,3 +339,4 @@ Changes to the packages collection and infrastructure in 2003:
 	Updated mplayer to 0.90rc3 [fredb 2003-01-20]
 	Updated gmplayer to 0.90rc3 [fredb 2003-01-20]
 	Updated mencoder to 0.90rc3 [fredb 2003-01-20]
+	Updated grepmail to 4.91 [wiz 2003-01-20]
