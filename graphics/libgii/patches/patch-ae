@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2003-12-28 20:15:31.000000000 +0100
-+++ configure	2003-12-28 20:15:49.000000000 +0100
-@@ -15565,7 +15565,7 @@
+--- configure.orig	2004-09-14 21:29:33.000000000 +0200
++++ configure
+@@ -17503,7 +17503,7 @@ cat >>confdefs.h <<_ACEOF
  _ACEOF
  
  cat >>confdefs.h <<_ACEOF
