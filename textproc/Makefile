@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.219 2003/12/04 15:28:00 epg Exp $
+# $NetBSD: Makefile,v 1.220 2003/12/06 19:43:29 recht Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -43,6 +43,7 @@ SUBDIR+=	cdif
 SUBDIR+=	chasen
 SUBDIR+=	chasen-base
 SUBDIR+=	crimson
+SUBDIR+=	db2latex
 SUBDIR+=	detex
 SUBDIR+=	dict-client
 SUBDIR+=	dict-dictionaries
@@ -50,10 +51,12 @@ SUBDIR+=	dict-server
 SUBDIR+=	diction
 SUBDIR+=	diffstat
 SUBDIR+=	docbook
+SUBDIR+=	docbook-simple
 SUBDIR+=	docbook-website
 SUBDIR+=	docbook-xml
 SUBDIR+=	docbook-xsl
 SUBDIR+=	dsssl-docbook-modular
+SUBDIR+=	dtdparse
 SUBDIR+=	eb
 SUBDIR+=	eblook
 SUBDIR+=	emacs-dict-client
