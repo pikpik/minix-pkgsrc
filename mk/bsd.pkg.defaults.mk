@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.130 2003/02/16 23:56:12 seb Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.131 2003/02/22 05:47:01 uebayasi Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1599,6 +1599,11 @@ USE_OPENLDAP?=	NO
 
 #USE_SASL=YES
 # Used to specify optional support for SASL authentication
+# Possible: YES, not defined
+# Default: not defined
+
+#USE_SASL2=YES
+# Used to specify optional support for SASL authentication version 2.*
 # Possible: YES, not defined
 # Default: not defined
 
