@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/23 12:13:35 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:26 jmmv Exp $
 
 DISTNAME=	phpPgAdmin_2-4-2
 PKGNAME=	phppgadmin-2.4.2
@@ -12,7 +12,6 @@ HOMEPAGE=	http://phppgadmin.sourceforge.net/
 COMMENT=	Set of PHP-scripts to adminster PostgreSQL over the WWW
 
 DEPENDS+=	php-pgsql>=4.1.2:../../databases/php4-pgsql
-DEPENDS+=	php-pcre>=4.1.2:../../devel/php4-pcre
 
 NO_BUILD=	YES
 
