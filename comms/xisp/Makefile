@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1998/12/03 15:08:53 frueauf Exp $
 #
 
 DISTNAME=		xisp-2.5p4
@@ -11,6 +11,8 @@ MAINTAINER=		lamj@stat.cmu.edu
 HOMEPAGE=		http://users.hol.gr/~dbouras/
 
 DEPENDS+=		xforms-0.88:../../x11/xforms
+
+ONLY_FOR_ARCHS=		arm32 i386 m68k sparc ns32k
 
 USE_X11=		yes
 
