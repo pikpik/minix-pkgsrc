@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 1999/05/24 08:21:26 sakamoto Exp $
+# $NetBSD: Makefile,v 1.5 1999/05/29 17:57:52 sakamoto Exp $
 
-DISTNAME=	xps-3.10
+DISTNAME=	xps-3.12
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.netwinder.org/users/r/rocky/
 
@@ -9,13 +9,10 @@ HOMEPAGE=	http://www.netwinder.org/~rocky/xps-home/
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/perl:${PKGSRCDIR}/lang/perl5
 
-USE_GMAKE=	yes
-USE_X11BASE=	yes
-USE_MOTIF=	yes
+USE_GMAKE=	YES
+USE_X11BASE=	YES
+USE_MOTIF=	YES
 
-GNU_CONFIGURE=	yes
-
-post-extract:
-	@${TOUCH} ${WRKSRC}/configure
+GNU_CONFIGURE=	YES
 
 .include "../../mk/bsd.pkg.mk"
