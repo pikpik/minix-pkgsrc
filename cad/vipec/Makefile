@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/08/30 16:19:42 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19 2000/10/19 08:06:09 skrll Exp $
 #
 
 DISTNAME=	vipec-2.0.4
@@ -15,7 +15,7 @@ USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 USE_X11=	yes
 
-EVAL_PREFIX+=	QT2DIR=qt2
+EVAL_PREFIX+=	QT2DIR=qt2-libs
 # make sure configure finds png
 CPPFLAGS+=              -I${LOCALBASE}/include
 CONFIGURE_ENV+=	"QTDIR=${QT2DIR}/qt2" \
