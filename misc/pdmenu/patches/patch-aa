@@ -2,6 +2,15 @@ $NetBSD$
 
 --- autoconf/makeinfo.in.orig	Sat Aug 28 05:27:37 1999
 +++ autoconf/makeinfo.in
+@@ -33,7 +33,7 @@
+ 
+ all: pdmenu
+ pdmenu: .dep $(OBJFILES)
+-	${CC} -o pdmenu $(OBJFILES) $(CFLAGS) $(LIBS)
++	${CC} -o pdmenu -Wl,-R${LOCALBASE}/lib $(OBJFILES) $(CFLAGS) $(LIBS)
+ 
+ 
+ depend: .dep
 @@ -68,11 +68,6 @@
  	$(INSTALL) -s pdmenu $(INSTALL_PREFIX)/$(BINDIR)
  	$(INSTALL) doc/pdmenu.man $(INSTALL_PREFIX)/$(MANDIR)/man1/pdmenu.1 -m 0644
