@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2001/01/04 16:13:18 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:37:39 wiz Exp $
 #
 
 DISTNAME=	XML-Node-0.10
-PKGNAME=	p5-${DISTNAME}
+PKGNAME=	p5-${DISTNAME}nb1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	http://belmont-shores.ics.uci.edu/pub/ \
 		${MASTER_SITE_PERL_CPAN:=XML/}
@@ -18,5 +18,13 @@ PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/XML/Node/.packlist
 
 do-configure:
 		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+
+post-install:
+		${INSTALL_DATA} \
+			${WRKSRC}/orders.xml \
+			${WRKSRC}/test.xml \
+			${WRKSRC}/foo.xml \
+			${WRKSRC}/README \
+			${PERL5_SITELIB}/XML
 
 .include "../../mk/bsd.pkg.mk"
