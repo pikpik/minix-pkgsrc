@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 1999/03/13 03:47:49 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.4 1999/05/30 16:53:30 tron Exp $
 sbin/pkg_add
 sbin/pkg_admin
 sbin/pkg_create

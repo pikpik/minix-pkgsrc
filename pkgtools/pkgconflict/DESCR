@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: DESCR,v 1.1.1.1 2001/04/02 18:04:04 wennmach Exp $
 
 pkgconflict is a script that searches for conflicting packages.
 
