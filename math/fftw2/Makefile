@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2002/02/18 15:14:29 seb Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/05 20:50:29 wiz Exp $
 
-DISTNAME=		fftw-2.1.3
-PKGNAME=		fftw2-2.1.3
+DISTNAME=		fftw-2.1.5
+PKGNAME=		fftw2-2.1.5
 CATEGORIES=		math
-MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/
+MASTER_SITES=		ftp://ftp.fftw.org/pub/fftw/ \
+			http://www.fftw.org/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.fftw.org/
