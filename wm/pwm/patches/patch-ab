@@ -1,6 +1,6 @@
 $NetBSD$
 
---- event.c.orig	Sat Jul  1 13:37:50 2000
+--- event.c.orig	Sat Jul  1 12:37:50 2000
 +++ event.c
 @@ -6,6 +6,7 @@
   */

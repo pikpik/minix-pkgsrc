@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	Sat Jul  1 16:48:50 2000
+--- Makefile.orig	Sat Jul  1 15:48:50 2000
 +++ Makefile
 @@ -12,7 +12,7 @@
  INCLUDES += -I./libtu/include $(X11_INCLUDES)
