@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.8 2003/05/27 07:01:56 grant Exp $
+# $NetBSD: buildlink2.mk,v 1.9 2003/05/27 08:40:19 grant Exp $
 
 .if !defined(GCC2_BUILDLINK2_MK)
 GCC2_BUILDLINK2_MK=	# defined
@@ -76,7 +76,7 @@ BUILDLINK_WRAPPER_ENV+=	\
 	COMPILER_PATH="${BUILDLINK_DIR}/bin"; export COMPILER_PATH
 .endif	# _NEED_PKGSRC_GCC == YES
 
-# These file are from gcc>=2.95.3.
+# These files are from gcc>=2.95.3.
 BUILDLINK_FILES.gcc=	${_GCC_SUBPREFIX}include/g++-3/*
 BUILDLINK_FILES.gcc+=	${_GCC_SUBPREFIX}include/g++-3/*/*
 BUILDLINK_FILES.gcc+=	${_GCC_SUBPREFIX}${_GCC_ARCHSUBDIR}/include/*
