@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 1998/04/22 14:22:44 agc Exp $
+# $NetBSD: Makefile,v 1.11 1998/06/03 13:07:08 agc Exp $
 # FreeBSD Id: Makefile,v 1.29 1998/01/27 01:11:47 fenner Exp
 #
 
 DISTNAME=	expect
 PKGNAME=	expect-5.25
 CATEGORIES=	lang
-MASTER_SITES=	http://expect.nist.gov/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	packages@netbsd.org
 
