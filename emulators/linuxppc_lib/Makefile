@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/23 22:28:44 manu Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:38:19 wiz Exp $
 
 DISTNAME=		linuxppc_lib-2000.q4.1
 CATEGORIES=		emulators
@@ -68,7 +68,7 @@ do-install:
 		fi; \
 		if [ "x$$files" != "x" ] ; then \
 			${ECHO} "$$files" ; \
-			${INSTALL} -c -o root -g wheel -m 644 $$files $$target/ ; \
+			${INSTALL_DATA} $$files $$target/ ; \
 			${ECHO} $$files | ${SED} 's|${WRKSRC}|${EMUL_LINUX}|g' | \
 				${TR} ' ' '\n' >> ${WRKDIR}/PLIST_DYNAMIC ; \
 		fi; \
@@ -95,14 +95,14 @@ do-install:
 		fi; \
 		if [ "x$$files" != "x" ] ; then \
 			${ECHO} "$$files" ; \
-			${INSTALL} -c -o root -g wheel -m 755 $$files $$target/ ; \
+			${INSTALL_SCRIPT} $$files $$target/ ; \
 			${ECHO} $$files | ${SED} 's|${WRKSRC}|${EMUL_LINUX}|g' | \
 				${TR} ' ' '\n' >> ${WRKDIR}/PLIST_DYNAMIC ; \
 		fi ; \
 		${ECHO} $$target | ${SED} 's|${PREFIX}/|@dirrm |' >> \
 			${WRKDIR}/PLIST_DYNAMIC ; \
 	done;
-	${INSTALL} -c -o root -g wheel -m 755 ${WRKSRC}/sbin/ldconfig \
+	${INSTALL_SCRIPT} ${WRKSRC}/sbin/ldconfig \
 		${PREFIX}/sbin/ldconfig-linux
 	${ECHO} "sbin/ldconfig-linux" >> ${WRKDIR}/PLIST_DYNAMIC
 	${TOUCH} ${PREFIX}/${EMUL_LINUX}/etc/ld.so.cache~
