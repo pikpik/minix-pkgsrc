@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2004/01/24 14:50:05 grant Exp $
+# $NetBSD: Makefile.common,v 1.5 2004/04/27 04:29:17 snj Exp $
 
 DISTNAME?=		coda-${DIST_VERS}
 DIST_VERS?=		5.3.20
@@ -27,6 +27,11 @@ CONFIGURE_ARGS+=	--without-openssl
 
 PKG_SYSCONFSUBDIR?=	coda
 EGDIR=			${PREFIX}/share/examples/coda
+
+.include "../../mk/compiler.mk"
+.if !empty(CC_VERSION:Mgcc-3.3*)
+PKG_FAIL_REASON= "coda5 cannot be built with ${CC_VERSION}"
+.endif
 
 pre-install: install-egdir
 
