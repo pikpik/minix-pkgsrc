@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/06/27 20:28:53 kristerw Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/05 14:44:22 minskim Exp $
 #
 
 DISTNAME=		p7zip_0.80
@@ -12,6 +12,8 @@ HOMEPAGE=		http://p7zip.sourceforge.net/
 COMMENT=		File archiver with high compression
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+NOT_FOR_PLATFORM=	*-*-m68* *-*-mipseb* *-*-powerpc* *-*-sparc*
 
 USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
