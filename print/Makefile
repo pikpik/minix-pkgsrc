@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/03/10 17:04:54 jwise Exp $
+# $NetBSD: Makefile,v 1.17 1999/03/11 12:28:30 hwr Exp $
 # FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
 #
 
@@ -10,6 +10,7 @@
 #    SUBDIR += bibcard
 #    SUBDIR += bibview
 #    SUBDIR += c2ps
+    SUBDIR += cdlabelgen
 #    SUBDIR += detex
 #    SUBDIR += dvi2tty
 #    SUBDIR += dvi2xx
