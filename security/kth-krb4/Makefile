@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2002/12/23 16:29:02 cjep Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/17 22:52:56 grant Exp $
 #
 
 DISTNAME=		krb4-1.2.1
@@ -29,6 +29,9 @@ CONFIGURE_ARGS=		--includedir=${PREFIX}/include/kerberosIV
 
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
+USE_NEW_TEXINFO=	YES
+INFO_FILES=		kth-krb.info
 
 EXAMPLEDIR=		${PREFIX}/share/examples/kth-krb4
 
@@ -63,6 +66,5 @@ post-install:
 
 # Enable line below once it's needed
 #.include "../../mk/automake.mk"
-.include "../../mk/texinfo.mk"
 .include "../../security/openssl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
