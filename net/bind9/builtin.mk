@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.3 2004/07/18 12:59:02 markd Exp $
+# $NetBSD: builtin.mk,v 1.5 2004/07/19 04:08:13 markd Exp $
 
 .if !defined(IS_BUILTIN.bind)
 IS_BUILTIN.bind=	no
@@ -28,3 +28,7 @@ USE_BUILTIN.bind!=							\
 .    endfor
 .  endif
 .endif	# USE_BUILTIN.bind
+
+.if !empty(USE_BUILTIN.bind:M[nN][oO])
+BUILDLINK_LDADD.bind?=		-lbind
+.endif
