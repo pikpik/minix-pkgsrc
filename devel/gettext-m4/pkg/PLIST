@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/aclocal/gettext.m4
+share/aclocal/lcmessage.m4
+share/aclocal/progtest.m4
