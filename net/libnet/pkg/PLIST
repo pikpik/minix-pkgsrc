@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/libnet-config
 include/libnet.h
 include/libnet/libnet-asn1.h

@@ -1,3 +1,4 @@
+@comment $NetBSD$
 sbin/arpredirect
 sbin/dsniff
 sbin/filesnarf
