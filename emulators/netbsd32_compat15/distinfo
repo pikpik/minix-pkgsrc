@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/04 07:15:59 mrg Exp $
+$NetBSD: distinfo,v 1.1 2001/04/17 11:06:22 agc Exp $
 
-MD5 (compat15-sparc.tar.gz) = 2a1279e118acdb46469dcaf8a0c42302
+SHA1 (compat15-sparc.tar.gz) = 1abd33e4de7127e27da0b64d915cb7ba53cff2a9
+Size (compat15-sparc.tar.gz) = 2562164 bytes
