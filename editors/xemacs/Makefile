@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2003/02/26 00:33:48 uebayasi Exp $
+# $NetBSD: Makefile,v 1.59 2003/02/26 10:17:32 tron Exp $
 
 DISTNAME=	xemacs-21.4.12
 PKGREVISION=	2
@@ -101,7 +101,9 @@ CONFIGURE_ARGS+=	${MACHINE_GNU_PLATFORM}
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--with-clash-detection
 CONFIGURE_ARGS+=	--with-mule=yes
+.if ${OPSYS} != "Linux"
 CONFIGURE_ARGS+=	--with-ncurses=no
+.endif
 CONFIGURE_ARGS+=	--with-msw=no
 CONFIGURE_ARGS+=	${WITH_DIALOGS} ${WITH_LDAP} ${WITH_XFACE} ${WITH_CANNA}
 CONFIGURE_ARGS+=	--infopath="${INFOPATH}"
