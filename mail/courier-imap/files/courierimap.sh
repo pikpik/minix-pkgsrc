@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: courierimap.sh,v 1.6 2002/09/20 02:01:56 grant Exp $
+# $NetBSD: courierimap.sh,v 1.7 2004/02/22 03:13:07 jlam Exp $
 #
 # Courier IMAP services daemon
 #
@@ -25,8 +25,20 @@ courier_doit()
 {
 	action=$1
 	case ${action} in
-	start)	@ECHO@ "Starting ${name}." ;;
-	stop)	@ECHO@ "Stopping ${name}." ;;
+	start)
+		for f in $required_files; do
+			if [ ! -r "$f" ]; then
+				@ECHO@ "$0: WARNING: $f is not readable"
+				if [ -z $rc_force ]; then
+					return 1
+				fi
+			fi
+		done
+		@ECHO@ "Starting ${name}."
+		;;
+	stop)
+		@ECHO@ "Stopping ${name}."
+		;;
 	esac
 
 	${ctl_command} ${action}
