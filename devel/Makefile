@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1997/11/18 16:23:01 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1997/11/30 21:54:27 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -15,6 +15,7 @@
 #    SUBDIR += crosssco
 #    SUBDIR += cs
 #    SUBDIR += cutils
+     SUBDIR += cvs
 #    SUBDIR += cxref
 #    SUBDIR += ddd
 #    SUBDIR += dmake
