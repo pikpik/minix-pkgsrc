@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:57:05 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/12/30 03:39:28 hubertf Exp $
 bin/xmahjongg
-man/cat6/xmahjongg.0
+${IMAKE_MAN_SOURCE_PATH}6/xmahjongg.${IMAKE_MANNEWSUFFIX}
 lib/X11/xmahjongg/bridge
 lib/X11/xmahjongg/default
 lib/X11/xmahjongg/wedges

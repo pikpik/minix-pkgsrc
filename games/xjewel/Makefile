@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2000/09/02 06:42:47 jdc Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 15:11:02 wiz Exp $
 
 DISTNAME=	xjewel-1.6
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:S/contrib/R5contrib/}
 EXTRACT_SUFX=	.tar.z

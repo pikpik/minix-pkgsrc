@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 15:11:00 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/05/05 19:51:14 jlam Exp $
 #
 
 DISTNAME=		xblast-2.6.beta-sound
 PKGNAME=		xblast-2.6b
+PKGREVISION=		1
 WRKSRC=			${WRKDIR}/XBlast-2.2
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.ikp.uni-koeln.de/~vogel/archive/
