@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/23 21:50:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/11 00:53:57 xtraeme Exp $
 #
 
 .include "../../devel/GConf2/Makefile.common"
@@ -10,11 +10,6 @@ CONFIGURE_ENV+=	PKG_USE_GTK=yes
 
 BUILD_DIRS=	${WRKSRC}/gconf
 BUILD_TARGETS=	GConfX.h gconf-sanity-check-2
-
-#do-build:
-#	@cd ${WRKSRC}/gconf && \
-#		${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} \
-#		-f Makefile GConfX.h gconf-sanity-check-2
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gconf/.libs/gconf-sanity-check-2 \
