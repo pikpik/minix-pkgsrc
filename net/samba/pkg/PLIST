@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/smbclient
 bin/smbrun
 bin/smbstatus

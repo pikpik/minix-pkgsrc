@@ -3,6 +3,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
+# $NetBSD$
 # FreeBSD Id: Makefile,v 1.17 1997/10/23 15:03:20 max Exp
 #
 
