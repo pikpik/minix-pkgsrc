@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/11/26 22:02:59 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/24 20:21:19 schmonz Exp $
 #
 
 DISTNAME=	rioutil-1.3.3
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rioutil/}
 
