@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2001/03/01 13:57:53 hubertf Exp $
+# $NetBSD: Makefile,v 1.33 2001/03/24 03:55:15 fredb Exp $
 #
 
 DISTNAME=		openssl-0.9.5a
@@ -56,7 +56,7 @@ pre-patch:
 	${MKDIR} ${WRKDIR}/.patches
 	@${CP} ${.CURDIR}/patches/patch-* ${WRKDIR}/.patches
 .if ${OPSYS} == "NetBSD"
-	for FILE in ${.CURDIR}/patches/patch.netbsd-*; do \
+	for FILE in ${.CURDIR}/patches/patch_netbsd-*; do \
 		${CP} $$FILE ${PATCHDIR}/patch-$${FILE##*-}; \
 	done
 .endif
