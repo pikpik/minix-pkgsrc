@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: cupsd.sh,v 1.9 2002/02/05 06:04:40 jlam Exp $
+# $NetBSD: cupsd.sh,v 1.10 2002/03/20 22:46:58 jlam Exp $
 #
 # Common UNIX Printing System daemon
 #
@@ -21,6 +21,7 @@ extra_commands="reload"
 if [ -f /etc/rc.subr ]
 then
 	load_rc_config $name
+	eval [ -z "\$${rcvar}" ] && eval ${rcvar}=NO
 	run_rc_command "$1"
 else
 	@ECHO@ -n " ${name}"
