@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/01/15 18:46:29 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2000/04/16 08:56:15 mycroft Exp $
 #
 
 DISTNAME=	pspp-0.3.0
@@ -16,7 +16,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/pspp/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
-DEPENDS+=	gettext-0.10.*:../../devel/gettext
+DEPENDS+=	gettext>=0.10.35nb1:../../devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_GTEXINFO=	yes
