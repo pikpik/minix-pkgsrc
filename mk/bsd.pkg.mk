@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.148 1998/08/25 16:26:09 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.149 1998/08/26 16:50:53 tsarna Exp $
 #
 # This file is in the public domain.
 #
@@ -1750,7 +1750,7 @@ SED_LICENSE_EXPR=       -e 's|%%LICENSE%%||'
 
 # set up the "more info URL" information as a sed expression
 .ifdef HOMEPAGE
-SED_HOMEPAGE_EXPR=       -e 's|%%HOMEPAGE%%|<p><a HREF="${HOMEPAGE}">This package has a home page.</a></p>|'
+SED_HOMEPAGE_EXPR=       -e 's|%%HOMEPAGE%%|<p>This package has a home page at <a HREF="${HOMEPAGE}">${HOMEPAGE}</a>.</p>|'
 .else
 SED_HOMEPAGE_EXPR=       -e 's|%%HOMEPAGE%%||'
 .endif
