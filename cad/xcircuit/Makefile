@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/02 13:59:54 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/19 23:24:33 jtb Exp $
 
 DISTNAME=	xcircuit-2.2.0
 CATEGORIES=	cad graphics
@@ -6,6 +6,7 @@ MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
 
 MAINTAINER=	jtb@netbsd.org
 HOMEPAGE=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/
+COMMENT=	Drawing program for X11 (especially for circuits)
 
 DEPENDS+=	ghostscript-[0-9]*:../../print/ghostscript
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/04/15 20:39:40 tron Exp $
+# $NetBSD: Makefile,v 1.3 2000/05/12 16:07:35 dmcmahill Exp $
 #
 
 DISTNAME=		ntesla-1.7
@@ -7,6 +7,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/circuits/}
 
 MAINTAINER=		dmcmahill@netbsd.org
 HOMEPAGE=		http://www.nic.funet.fi/pub/sci/electrical/tesla/
+COMMENT=		tesla coil design program
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ntesla ${PREFIX}/bin

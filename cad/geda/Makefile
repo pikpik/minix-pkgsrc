@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/01/02 23:09:49 rh Exp $
+# $NetBSD: Makefile,v 1.13 2000/02/22 08:38:51 rh Exp $
 #
 
 DISTNAME=	gEDA-${PKGVERSION}
@@ -8,6 +8,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.geda.seul.org/
+COMMENT=	Toolset for automating electronic design
 
 DEPENDS+=	gschem-${PKGVERSION}:../../cad/gschem
 DEPENDS+=	gnetlist-${PKGVERSION}:../../cad/gnetlist
