@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.4 2001/12/24 14:10:55 abs Exp $
 
 --- port/netbsd/Makefile.set.orig	Thu Mar 19 19:50:33 1998
 +++ port/netbsd/Makefile.set
@@ -16,7 +16,7 @@ $NetBSD$
 +'DESTINC=${PREFIX}/include/bind'
 +'DESTSBIN=${PREFIX}/sbin'
 +'DESTEXEC=${PREFIX}/libexec'
-+'DESTMAN=${PREFIX}/share/man'
++'DESTMAN=${PREFIX}/man'
 +'DESTHELP=${PREFIX}/share/doc/bind8'
 +'DESTETC=${PREFIX}/etc'
  'DESTRUN=/var/run'
