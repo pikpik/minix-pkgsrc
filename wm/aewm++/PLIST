@@ -1,3 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/12 03:21:37 jschauma Exp $
 bin/aewm++
 man/man1/aewm++.1
+share/doc/aewm++/README
+@dirrm share/doc/aewm++
