@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:19 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/05/28 03:16:44 jlam Exp $
 
 PKGNAME=		freetype-utils-${FT_VERS}
-
 COMMENT=		Utilities for manipulating TrueType fonts
 
-FREETYPE_REQD=		${FT_VERS}
+BUILDLINK_DEPENDS.freetype=	freetype>=${FT_VERS}
 
 USE_X11=		# defined
 CONFIGURE_ARGS+=	--with-x
