@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2001/11/28 05:20:46 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2001/11/29 01:12:28 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
@@ -8,7 +8,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=automake/}
 
-MAINTAINER=	fujimoto@oscar.elec.waseda.ac.jp
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html
 COMMENT=	GNU Standards-compliant Makefile generator
 
