@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2003/01/19 06:59:52 salo Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/29 12:41:16 jmmv Exp $
 
-DISTNAME=		Hermes-1.3.2
-PKGREVISION=		1
-WRKSRC=			${WRKDIR}/Hermes-1.3.2
+DISTNAME=		Hermes-1.3.3
+WRKSRC=			${WRKDIR}/Hermes-1.3.3
 CATEGORIES=		graphics
-MASTER_SITES=		http://dark.x.dtu.dk/~mbn/clanlib/download/
+MASTER_SITES=		http://www.clanlib.org/download/files/
+EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.clanlib.org/hermes/
