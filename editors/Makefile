@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/12/21 13:22:25 pooka Exp $
+# $NetBSD: Makefile,v 1.25 1999/12/21 13:27:51 pooka Exp $
 # FreeBSD Id: Makefile,v 1.44 1997/09/13 20:19:28 chuckr Exp
 #
 
@@ -15,6 +15,7 @@
     SUBDIR += jed
     SUBDIR += joe
     SUBDIR += jove
+    SUBDIR += leim
 #    SUBDIR += mule
 #    SUBDIR += mule-common
     SUBDIR += ne
