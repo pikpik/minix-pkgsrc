@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/types.c.orig	Tue Aug 28 18:36:47 2001
+--- src/types.c.orig	Wed Jan 30 22:24:40 2002
 +++ src/types.c
-@@ -359,7 +359,7 @@
+@@ -354,7 +354,7 @@
  
  	if(file_list == NULL)
  		return;
