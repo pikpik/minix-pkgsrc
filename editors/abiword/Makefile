@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2003/01/10 00:51:24 mycroft Exp $
+# $NetBSD: Makefile,v 1.51 2003/01/28 13:57:52 martti Exp $
 #
 # According to AbiSource's explanation of their trademark rights,
 # compilations/distributions of AbiWord not provided by AbiSource must
@@ -23,7 +23,7 @@ ABIWORD_VERS=	1.0.4
 USE_BUILDLINK2=	# defined
 USE_X11=	# defined
 USE_GMAKE=	# defined
-HAS_CONFIGURE=	# defined
+GNU_CONFIGURE=	# defined
 MAKEFILE=	GNUmakefile
 
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
