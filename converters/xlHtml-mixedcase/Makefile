@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/11/29 19:46:10 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/12/10 16:03:44 taca Exp $
 #
 
 DISTNAME=		xlhtml-0.4
+PKGREVISION=		1
 CATEGORIES=		converters
 MASTER_SITES=		http://www.xlHtml.org/
 
