@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/12/13 00:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/03 18:49:54 reed Exp $
 #
 
 DISTNAME=		gDeskCal-0_55
@@ -26,6 +26,6 @@ do-install:
 	${LN} -s ${PREFIX}/lib/gdeskcal/gdeskcal ${PREFIX}/bin
 
 .include "../../x11/py-gtk2/buildlink2.mk"
-.include "../../textproc/pyxml/buildlink2.mk"
+.include "../../textproc/py-xml/buildlink2.mk"
 .include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"
