@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/xpdf
+bin/pdftops
+bin/pdftotext
+man/man1/xpdf.1
+man/man1/pdftops.1
+man/man1/pdftotext.1
+man/cat1/xpdf.0
+man/cat1/pdftops.0
+man/cat1/pdftotext.0
+
