@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 1999/08/08 22:56:13 tron Exp $
+# $NetBSD: Makefile,v 1.19 2000/01/15 18:46:24 jlam Exp $
 #
 
-DISTNAME=	xmcd-2.5
+DISTNAME=	xmcd-2.6
 CATEGORIES=	audio
 MASTER_SITES=	http://metalab.unc.edu/tkan/download/xmcd/src/
 
