@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:14 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/10 16:06:50 wiz Exp $
 
 .if !defined(SABLOTRON_BUILDLINK2_MK)
 SABLOTRON_BUILDLINK2_MK=	# defined
@@ -9,7 +9,9 @@ BUILDLINK_PKGSRCDIR.sablotron?=	../../textproc/sablotron
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.sablotron=sablotron
 BUILDLINK_PREFIX.sablotron_DEFAULT=	${LOCALBASE}
-BUILDLINK_FILES.sablotron=	include/sablot.h
+BUILDLINK_FILES.sablotron=	include/sabcfg.h
+BUILDLINK_FILES.sablotron+=	include/sabdbg.h
+BUILDLINK_FILES.sablotron+=	include/sablot.h
 BUILDLINK_FILES.sablotron+=	include/sdom.h
 BUILDLINK_FILES.sablotron+=	include/shandler.h
 BUILDLINK_FILES.sablotron+=	include/sxpath.h
