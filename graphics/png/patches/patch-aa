@@ -35,7 +35,7 @@ $NetBSD$
 -	ar rc $@  $(OBJS)
 -	$(RANLIB) $@
 +libpng.la: $(OBJS)
-+	${LIBTOOL} --mode=link cc -o $@ ${OBJS:.o=.lo} -rpath ${PREFIX}/lib -version-info 1:1
++	${LIBTOOL} --mode=link cc -o $@ ${OBJS:.o=.lo} -rpath ${PREFIX}/lib -version-info 1:2
  
 -pngtest: pngtest.o libpng.a
 -	$(CC) -o pngtest $(CFLAGS) pngtest.o $(LDFLAGS)
