@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/02/05 07:38:14 nathanw Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:24 tron Exp $
 #
 
 DISTNAME=		xcopilot-0.6.6
@@ -7,8 +7,6 @@ MASTER_SITES=		http://xcopilot.cuspy.com/build/
 
 MAINTAINER=		nathanw@netbsd.org
 HOMEPAGE=		http://xcopilot.cuspy.com/
-
-DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 NOT_FOR_PLATFORM=	*-*-alpha	# suspected LP64 bugs
 
