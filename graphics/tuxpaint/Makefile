@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2003/01/01 19:24:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/01/28 22:03:26 jlam Exp $
 #
 
-DISTNAME=	tuxpaint-2002.10.26
-PKGREVISION=	2
+DISTNAME=	tuxpaint-0.9.10
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/tuxpaint/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxpaint/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.newbreedsoftware.com/tuxpaint/
