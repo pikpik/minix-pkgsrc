@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.657 2001/01/31 00:34:41 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.658 2001/02/02 04:53:31 jtb Exp $
 #
 # This file is in the public domain.
 #
@@ -3110,11 +3110,11 @@ print-PLIST:
 		}							\
 		{ 							\
 		  if (/\.info$$/) {					\
-		    print "\@unexec install-info --delete --info-dir=%D/info %D/" $$1; \
-		    print $$1;						\
-		    print "\@exec install-info --info-dir=%D/info %D/" $$1; \
+		    print "\@unexec install-info --delete --info-dir=%D/info %D/" $$0; \
+		    print $$0;						\
+		    print "\@exec install-info --info-dir=%D/info %D/" $$0; \
 		  } else if (!/^info\/dir$$/) {				\
-		    print $$1;						\
+		    print $$0;						\
 		  }							\
 		}'
 	@for i in `${FIND} ${PREFIX}/. -newer ${EXTRACT_COOKIE} -type d	\
