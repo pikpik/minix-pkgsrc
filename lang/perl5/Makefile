@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2004/07/03 14:13:06 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2004/08/27 06:29:08 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -56,14 +56,6 @@ CONFIGURE_ARGS+=	-Dinstallsiteman1dir="${VIEWBASE}/man/man1"
 .include "../../mk/compiler.mk"
 
 MKPIC?=			yes
-
-.if !empty(PKGSRC_COMPILER:Mmipspro*)
-.  if ${ABI} == "32"
-CONFIGURE_ARGS+=        -Dcc='cc -n32'
-.  elif ${ABI} == "64"
-CONFIGURE_ARGS+=        -Dcc='cc -64'
-.  endif
-.endif
 
 .if ${OPSYS} == "IRIX" && ${ABI} == "64"
 CONFIGURE_ARGS+=	-Duse64bitint
