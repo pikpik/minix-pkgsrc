@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:09:26 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/04/16 14:41:01 kei Exp $
 #
 
 DISTNAME=	tds-1.4.2
@@ -9,7 +9,7 @@ MAINTAINER=	kei@netbsd.org
 HOMEPAGE=	http://tds.dive-in.to/
 COMMENT=	web diary system
 
-USE_PERL=	YES
+USE_PERL5=	YES
 GNU_CONFIGURE=	YES
 
 NO_BUILD=	YES
