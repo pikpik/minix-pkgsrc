@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 1999/01/25 14:54:46 kleink Exp $
+# $NetBSD: Makefile,v 1.11 1999/05/22 18:10:18 tv Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/16 22:45:25 jseger Exp
 #
 
+    SUBDIR += base64
 #    SUBDIR += btoa
 #    SUBDIR += c2html
     SUBDIR += cbmconvert
