@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/26 21:48:00 seb Exp $
 #
 
-DISTNAME=	libdnet-1.5
+DISTNAME=	libdnet-1.7
 CATEGORIES=	devel net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libdnet/}
 
@@ -11,5 +11,7 @@ COMMENT=	C interface to several low-level networking routines
 
 GNU_CONFIGURE=	yes
 USE_BUILDLINK2=	yes
+
+BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.pkg.mk"
