@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- process_view.cc.orig	Thu Feb 19 01:24:04 2004
++++ process_view.cc	Thu Feb 19 01:24:25 2004
+@@ -22,6 +22,7 @@
+ #include "config.h"
+ 
+ #include <stdio.h>  // snprintf
++#include <assert.h>
+ 
+ #include "main.hh"
+ #include "process_view.hh"

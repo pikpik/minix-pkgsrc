@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- tcl_blob.cc.orig	Thu Feb 19 01:25:34 2004
++++ tcl_blob.cc	Thu Feb 19 01:25:31 2004
+@@ -22,6 +22,7 @@
+ #ifdef USE_TCL_BLOB
+ 
+ #include <stdlib.h>  // atoi
++#include <assert.h>
+ #include <tcl.h>
+ #include <iostream.h>
+ 
