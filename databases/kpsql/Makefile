@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 14:17:28 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/10 12:14:07 wulf Exp $
 #
 
 DISTNAME=	kpsql-1.0
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.mutinybaysoftware.com/kpsql.html
 COMMENT=	Interactive Query Tool for PostgreSQL
 
 DEPENDS+=	kdebase>=1.1:../../x11/kdebase
-DEPENDS+=	postgresql>=6.4:../../databases/postgresql
+DEPENDS+=	postgresql-{6.5.3*,7.0*,lib-*}:../../databases/postgresql-lib
 
 #
 # PostgreSQL is currently not supported by all platforms
