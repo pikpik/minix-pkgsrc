@@ -1,5 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2001/04/18 14:33:56 agc Exp $
 
 SHA1 (imm36a1.tar.Z) = a3c0bd042ebed930739f22ebfec2bf28080a88f6
 Size (imm36a1.tar.Z) = 87695 bytes
-SHA1 (patch-ad) = e1fe10593d29a0b16bc808d8ab8ce0e8e5d281a2
+SHA1 (patch-ad) = dc9bc795bc177f5e0087b1bb2bcb2f5d654bdb66
