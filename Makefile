@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1997/10/03 08:58:23 agc Exp $
+# $NetBSD: Makefile,v 1.4 1997/11/27 00:01:23 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
@@ -21,7 +21,7 @@ SUBDIR += graphics
 #SUBDIR += korean
 SUBDIR += lang
 SUBDIR += mail
-SUBDIR += math
+#SUBDIR += math
 SUBDIR += mbone
 SUBDIR += misc
 SUBDIR += net
