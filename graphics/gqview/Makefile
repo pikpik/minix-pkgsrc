@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2003/07/17 21:41:06 grant Exp $
+# $NetBSD: Makefile,v 1.41 2004/02/21 07:59:52 snj Exp $
 #
 
 DISTNAME=	gqview-1.4.0
@@ -16,6 +16,7 @@ GNU_CONFIGURE=		# defined
 USE_PKGLOCALEDIR=	# defined
 CONFIGURE_ENV+=		ac_cv_path_GNOME_CONFIG=no
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
