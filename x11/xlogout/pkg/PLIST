@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xlogout
+lib/X11/app-defaults/XLogout
+man/cat1/xlogout.0
