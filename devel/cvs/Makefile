@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/02/20 22:48:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.21 1999/08/17 19:02:52 thorpej Exp $
 #
 
 DISTNAME=       cvs-1.10
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.cyclic.com/cvs/info.html
 
 GNU_CONFIGURE=	yes
 USE_GTEXINFO=	yes
+
+BUILD_DEFS+=	USE_KERBEROS4 USE_KERBEROS5 RCS_LOCALID
 
 .include "../../mk/bsd.prefs.mk"
 
