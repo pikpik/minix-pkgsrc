@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/12/29 15:31:24 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/02 19:15:07 reed Exp $
 # Based on KAME Id: Makefile,v 1.1.2.1.2.1.10.2 1999/01/05 11:03:50 itojun Exp
 #
 
@@ -16,6 +16,7 @@ USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
+USE_PERL5=		build
 
 PKG_SYSCONFSUBDIR?=	zebra
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
