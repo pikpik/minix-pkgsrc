@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2004/03/02 21:01:17 heinz Exp $
+# $NetBSD: Makefile,v 1.115 2004/03/23 19:53:33 tron Exp $
 
 .include "Makefile.common"
 
@@ -42,7 +42,7 @@ CONFIGURE_ARGS+=	--without-perl
 
 # Remove the empty directory
 post-install:
-	${RMDIR} ${PREFIX}/share/ImageMagick
+	-${RMDIR} ${PREFIX}/share/ImageMagick
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
