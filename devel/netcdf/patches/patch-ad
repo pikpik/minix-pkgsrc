@@ -14,7 +14,15 @@ $NetBSD$
  		ncdump/all	\
  		ncgen/all	\
  		cxx/all
-@@ -64,7 +63,7 @@ distclean:	libsrc/distclean \
+@@ -43,7 +42,6 @@ check:		test
+ 
+ install:	libsrc/install \
+ 		fortran/install \
+-		f90/install \
+ 		ncdump/install \
+ 		ncgen/install \
+ 		cxx/install
+@@ -64,7 +62,7 @@ distclean:	libsrc/distclean \
  		nctest/distclean nc_test/distclean \
  		fortran/distclean f90/distclean nf_test/distclean \
  		ncdump/distclean ncgen/distclean cxx/distclean \
@@ -23,7 +31,7 @@ $NetBSD$
  
  clean_macros:
  	-cp macros.make.def macros.make
-@@ -162,7 +161,7 @@ subdir_target:
+@@ -162,7 +160,7 @@ subdir_target:
  	@echo "Returning to directory `pwd`"
  	@echo ""
  
@@ -32,7 +40,7 @@ $NetBSD$
  whatis:		$(MANDIR)/$(WHATIS)
  $(MANDIR)/$(WHATIS):	$(MANDIR)
  	$(MAKEWHATIS_CMD)
-@@ -189,7 +188,7 @@ check_system:	FORCE
+@@ -189,7 +187,7 @@ check_system:	FORCE
  	*) exit 0;; \
  	esac
  
@@ -41,7 +49,7 @@ $NetBSD$
  # directory.
  #
  tar.Z:		check_system FORCE
-@@ -225,10 +224,10 @@ ftp:		check_system FORCE
+@@ -225,10 +223,10 @@ ftp:		check_system FORCE
  
  $(FTPDIR)/$(PACKAGE)-$(VERSION).tar.Z:	$(PACKAGE)-$(VERSION).tar.Z
  	rm -f $@
