@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/12/01 17:23:24 cube Exp $
+# $NetBSD: Makefile,v 1.25 2004/03/31 10:24:50 cube Exp $
 
 DISTNAME=	ppp-2.3.9
 PKGNAME=	ppp-mppe-2.3.9
@@ -25,7 +25,7 @@ MANCOMPRESSED_IF_MANZ=	yes
 BUILD_DEFS+=	MANINSTALL
 
 post-extract:
-	if [ ! -e ${OPENSSL_SRC}/crypto/rc4 ]; then			\
+	if [ ! -r ${OPENSSL_SRC}/crypto/rc4 ]; then			\
 		cd ../../security/openssl && ${MAKE} extract;		\
 	fi
 	@${LN} -sf ${OPENSSL_SRC}/include/openssl ${WRKSRC}/pppd/openssl
