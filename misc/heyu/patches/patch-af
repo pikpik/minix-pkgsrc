@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- xwrite.c.orig	Wed Apr 11 06:46:26 2001
++++ xwrite.c
+@@ -47,7 +47,7 @@
+ #    endif
+ #endif
+ 
+-#ifdef OSF
++#if (defined(OSF) || defined(NETBSD))
+ #include <sys/ioctl.h>
+ #endif
+ 

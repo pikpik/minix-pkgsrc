@@ -1,5 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/07/15 06:50:36 rh Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:28:17 zuntum Exp $
 bin/heyu
 man/man1/heyu.1
 man/man5/x10config.5
 man/man5/x10sched.5
+share/examples/heyu/x10config
+@dirrm share/examples/heyu
