@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Fri May 14 12:10:46 2004
-+++ configure	Fri May 14 12:11:26 2004
-@@ -2435,7 +2435,8 @@
+--- configure.orig	2001-10-05 18:18:03.000000000 +0000
++++ configure
+@@ -6198,7 +6198,8 @@ else
  #include <stdio.h>
  #include <stdlib.h>
  #include <string.h>
