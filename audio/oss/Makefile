@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/01/05 20:50:01 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2004/01/20 12:07:43 agc Exp $
 
 DISTNAME=	oss-${OSS_VERSION}	# Overridden below
 PKGNAME=	oss-${OSS_VERSION}
@@ -16,7 +16,7 @@ OSVERSION_SPECIFIC=	yes
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 DISTNAME=		oss${OSS_VERSION:S/.//g}-netbsd-v1.6.1
-OSS_VERSION=		3.9.8b
+OSS_VERSION=		3.9.8d
 
 RESTRICTED=		"No re-distribution."
 NO_SRC_ON_CDROM=	${RESTRICTED}
