@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 1999/02/20 22:48:25 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 1999/03/05 00:25:09 tron Exp $
 #
 
 DISTNAME=	ORBit-0.4.0
 CATEGORIES=	corba
-MASTER_SITES=	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-1.0/sources/ \
+MASTER_SITES=	ftp://ftp.gnome.org/pub/GNOME/gnome-1.0/sources/ \
 		ftp://ftp.jimpick.com/pub/mirrors/gnome/gnome-1.0/sources/ \
 		ftp://ftp.informatik.uni-bonn.de/pub/os/unix/gnome/gnome-1.0/sources/
 
