@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/09 08:29:42 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/09 11:17:03 cjep Exp $
 #
 
 DISTNAME=	driftnet-0.1.6
-CATEGORIES=	graphics network
+CATEGORIES=	graphics net
 MASTER_SITES=	http://www.ex-parrot.com/~chris/driftnet/
 
 MAINTAINER=	hubertf@netbsd.org
