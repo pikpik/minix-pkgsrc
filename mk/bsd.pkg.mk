@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.198 1998/11/26 23:39:15 hubertf Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.199 1998/12/29 17:23:39 garbled Exp $
 #
 # This file is in the public domain.
 #
@@ -1185,7 +1185,7 @@ _PORT_USE: .USE
 	fi)
 	@cd ${.CURDIR} && ${MAKE} ${.MAKEFLAGS} ${PLIST}
 	@(sos=`/usr/bin/egrep -h 					\
-		'^([^/]*/)*lib/lib[^.]+\.so\.[0-9]+\.[0-9]+$$'		\
+		'^([^/]*/)*lib/lib.+\.so\.[0-9]+\.[0-9]+$$'		\
 		${PLIST} || /usr/bin/true`;				\
 	if [ X"$$sos" != X"" ]; then					\
 		case ${SHLIB_TYPE} in					\
