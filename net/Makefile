@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.175 2000/12/27 16:04:15 hubertf Exp $
+# $NetBSD: Makefile,v 1.176 2000/12/27 16:22:49 hubertf Exp $
 #
 
+    SUBDIR += adns
     SUBDIR += airportbasestationconfig
     SUBDIR += archie
     SUBDIR += arla
