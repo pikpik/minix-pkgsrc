@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2001/11/26 20:38:31 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/12/02 06:56:39 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
 
-PKGNAME=		postgresql-server-${PG_VERS}
-PG_PKG_VERS=		# empty
+PKGNAME=		postgresql-server-${PG_BASE_VERS}
 COMMENT=		PostgreSQL database server programs
 
 USE_BUILDLINK_ONLY=			# defined
