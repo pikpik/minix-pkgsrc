@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:29 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/07 00:09:21 jtb Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -12,6 +12,7 @@ COMMENT=	X window manager with Amiga look and feel
 
 LICENSE=	amiwm-license
 
+USE_BUILDLINK_ONLY=	YES
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="-DHAVE_X11_EXTENSIONS_SHAPE_H=1 -O" \
