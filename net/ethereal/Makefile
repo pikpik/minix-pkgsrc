@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2003/06/13 03:18:19 itojun Exp $
+# $NetBSD: Makefile,v 1.78 2003/06/24 06:45:46 grant Exp $
 #
 
 DISTNAME=		ethereal-0.9.13
@@ -32,12 +32,8 @@ CONFIGURE_ARGS+=	--with-net-snmp=${BUILDLINK_PREFIX.net-snmp}
 CONFIGURE_ARGS+=	--with-pcap=${BUILDLINK_PREFIX.libpcap}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 
-.include "../../mk/bsd.prefs.mk"
-
-# It really wants gnu sed or xpg4/bin/sed on solaris.
-.if ${OPSYS} == "SunOS"
-.  include "../../textproc/gsed/buildlink2.mk"
-.endif
+# we need a working sed
+.include "../../textproc/gsed/buildlink2.mk"
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../net/libpcap/buildlink2.mk"
