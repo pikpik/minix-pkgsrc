@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.144 2002/06/21 15:34:56 agc Exp $
+# $NetBSD: Makefile,v 1.145 2002/06/22 17:58:21 kent Exp $
 #
 
 COMMENT=	Audio tools
@@ -167,5 +167,6 @@ SUBDIR+=	xmp
 SUBDIR+=	xmradio
 SUBDIR+=	xsidplay
 SUBDIR+=	xwave
+SUBDIR+=	yamt
 
 .include "../mk/bsd.pkg.subdir.mk"
