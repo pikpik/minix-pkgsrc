@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/03 15:14:56 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/01/08 07:46:15 schmonz Exp $
 #
 
 .include "Makefile.common"
@@ -14,5 +14,5 @@ INSTALL_TARGET=		install man-install
 
 INSTALLATION_DIRS=	bin man/man1
 
-.include "../../devel/ncurses/buildlink3.mk"
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
