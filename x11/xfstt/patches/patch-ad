@@ -8,8 +8,8 @@ $NetBSD$
  // Change these if you don't like being FHS complient
 -#define TTFONTDIR	"/usr/share/fonts/truetype"
 -#define TTCACHEDIR      "/var/cache/xfstt"
-+#define TTFONTDIR	"@X11BASE@/lib/X11/fonts/TrueType"
-+#define TTCACHEDIR      "@X11BASE@/lib/X11/fonts/TrueType"
++#define TTFONTDIR	"@PREFIX@/lib/X11/fonts/TrueType"
++#define TTCACHEDIR      "@PREFIX@/lib/X11/fonts/TrueType"
  
  #define TTINFO_LEAF     "ttinfo.dir"
  #define TTNAME_LEAF     "ttname.dir"

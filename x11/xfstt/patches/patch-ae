@@ -7,7 +7,7 @@ $NetBSD$
  Change xfstt's font directory.
  The default directory is
 -.IR /usr/share/fonts/truetype .
-+.IR @X11BASE@/lib/X11/fonts/TrueType .
++.IR @PREFIX@/lib/X11/fonts/TrueType .
  .TP
  .I "\-\-res value"
  Force the resolution for underspecified fonts to value (typically 96 or 120).
