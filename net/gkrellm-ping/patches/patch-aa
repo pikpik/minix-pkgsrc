@@ -2,14 +2,15 @@ $NetBSD$
 
 --- Makefile.orig	Sat May 19 17:40:38 2001
 +++ Makefile
-@@ -1,5 +1,5 @@
+@@ -1,13 +1,13 @@
  # Modify INCLUDE to point to gkrellm.h (if it's not in /usr/local/include)
 -INCLUDE	=
-+INCLUDE	=${PREFIX}/include
++INCLUDE	=${LOCALBASE}/include
  
  CC	= gcc
- CFLAGS	= -Wall -O2 -fPIC -I$(INCLUDE)					\
-@@ -7,7 +7,7 @@
+-CFLAGS	= -Wall -O2 -fPIC -I$(INCLUDE)					\
++CFLAGS	+= -fPIC -I$(INCLUDE)					\
+ 	  `gtk-config --cflags` `imlib-config --cflags-gdk`
  LDFLAGS	=
  TARGET	= gkrellmPing
  
