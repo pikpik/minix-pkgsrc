@@ -1,9 +1,9 @@
-/*	$NetBSD: pkgdb.c,v 1.5 2003/01/07 06:39:58 grant Exp $	*/
+/*	$NetBSD: pkgdb.c,v 1.3 2003/01/07 06:42:28 grant Exp $	*/
 
 #if 0
 #include <sys/cdefs.h>
 #ifndef lint
-__RCSID("$NetBSD: pkgdb.c,v 1.5 2003/01/07 06:39:58 grant Exp $");
+__RCSID("$NetBSD: pkgdb.c,v 1.3 2003/01/07 06:42:28 grant Exp $");
 #endif
 #endif
 
@@ -95,9 +95,9 @@ pkgdb_open(int mode)
 	pkgdbp = (DB *) dbopen(_pkgdb_getPKGDB_FILE(cachename, sizeof(cachename)),
 	    (mode == ReadOnly) ? O_RDONLY : O_RDWR | O_CREAT,
 	    0644, DB_BTREE, (void *) &info);
-	return (pkgdbp == NULL) ? -1 : 0;
+	return (pkgdbp != NULL);
 #else
-	return 1;
+	return -1;
 #endif /* HAVE_DBOPEN */
 }
 
