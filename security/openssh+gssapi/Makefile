@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/03/26 02:27:53 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/23 22:07:58 reed Exp $
 
 # NOTE:  This package is modeled on ../openssh, but does not share
 # files with it as that package may update faster than the gssapi
@@ -141,10 +141,6 @@ MESSAGE_SUBST+=		OPENSSH_USER=${OPENSSH_USER}
 MESSAGE_SUBST+=		OPENSSH_GROUP=${OPENSSH_GROUP}
 
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
-
-.if defined(UPDATE_INTREE_OPENSSH)
-.  include "Makefile.intree"
-.endif
 
 pre-configure:
 	cd ${WRKSRC} && ${AUTORECONF}
