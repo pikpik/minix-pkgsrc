@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/09/10 16:06:44 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2002/10/05 02:48:33 wiz Exp $
 #
 
 DISTNAME=	balsa-1.4.0
@@ -15,6 +15,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_X11BASE=		yes
 USE_BUILDLINK2=		yes
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--disable-more-warnings --without-esmtp \
 			--enable-pcre 
