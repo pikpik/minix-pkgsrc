@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2004/01/09 19:47:39 jlam Exp $
+# $NetBSD: Makefile,v 1.159 2004/01/10 14:57:21 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -60,6 +60,7 @@ SUBDIR+=	libmcrypt
 SUBDIR+=	libnasl
 SUBDIR+=	libtasn1
 SUBDIR+=	logcheck
+SUBDIR+=	lsh
 SUBDIR+=	mcrypt
 SUBDIR+=	mhash
 SUBDIR+=	mirrordir
