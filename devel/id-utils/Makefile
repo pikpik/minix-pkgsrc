@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.21 2001/12/04 06:14:59 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2002/02/18 15:14:12 seb Exp $
 # FreeBSD Id: Makefile,v 1.4 1996/11/18 10:22:47 asami Exp
 #
 
 DISTNAME=	id-utils-3.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=id-utils/}
+
+PKGREVISION=	1
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/idutils/idutils.html
