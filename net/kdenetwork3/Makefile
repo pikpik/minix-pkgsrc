@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/12/24 06:10:18 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/02 09:12:29 skrll Exp $
 
 DISTNAME=	kdenetwork-3.0.5a
 CATEGORIES=	net
@@ -8,6 +8,12 @@ COMMENT=	Network modules for the KDE integrated X11 desktop
 
 USE_BUILDLINK2=		yes
 PTHREAD_OPTS+=		require
+
+FOO_MAIN_FILES= \
+	ksirc/ksirc_main.cpp \
+	kxmlrpc/kxmlrpcd_main.cpp
+
+.include "../../x11/kde3/Makefile.foo_main"
 
 .include "../../converters/uulib/buildlink2.mk"
 .include "../../databases/gdbm/buildlink2.mk"
