@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.i386,v 1.1 1999/06/04 18:07:41 thorpej Exp $
 lib/netscape/navigator-${NS_VERS}/dynfonts/libTrueDoc.so
 lib/netscape/navigator-${NS_VERS}/plugins/libnullplugin.so
 lib/netscape/navigator-${NS_VERS}/netscape-dynMotif
 lib/netscape/navigator-${NS_VERS}/libnullplugin-dynMotif.so
+@dirrm lib/netscape/navigator-${NS_VERS}/dynfonts
