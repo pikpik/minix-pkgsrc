@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/03/13 17:37:30 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:04 wiz Exp $
 
 DISTNAME=	gnubile-0.20
 PKGREVISION=	2
@@ -9,11 +9,11 @@ MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://gnutella.wego.com/
 COMMENT=	Unix Gnutella client for GNOME
 
-DEPENDS+=	gnome-core>=1.4.0.4nb5:../../x11/gnome-core
-
+USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
-USE_X11=	YES
 GNU_CONFIGURE=	YES
 CPPFLAGS+=	`xml-config --cflags`
 
+.include "../../textproc/libxml/buildlink2.mk"
+.include "../../x11/gnome-libs/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
