@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.268 2002/01/21 15:43:30 agc Exp $
+# $NetBSD: Makefile,v 1.269 2002/01/27 15:32:20 taca Exp $
 #
 
 COMMENT=	Networking tools
@@ -154,6 +154,7 @@ SUBDIR+=	pptp
 SUBDIR+=	proftpd
 SUBDIR+=	publicfile
 SUBDIR+=	pxe
+SUBDIR+=	py-IP
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-xmlrpclib
 SUBDIR+=	ra-pna-proxy
