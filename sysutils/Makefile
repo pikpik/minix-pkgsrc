@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.184 2003/03/09 10:54:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.185 2003/04/10 13:19:35 wiz Exp $
 
 COMMENT=	System utilities
 
@@ -45,7 +45,6 @@ SUBDIR+=	extipl
 SUBDIR+=	fakeroot
 SUBDIR+=	fam
 SUBDIR+=	fdgw
-SUBDIR+=	fileutils
 SUBDIR+=	findutils
 SUBDIR+=	fix4SA110rev2
 SUBDIR+=	fsviewer
@@ -116,7 +115,6 @@ SUBDIR+=	screentest
 SUBDIR+=	scsiinfo
 SUBDIR+=	service-config
 SUBDIR+=	setquota
-SUBDIR+=	sh-utils
 SUBDIR+=	skill
 SUBDIR+=	socket
 SUBDIR+=	sshsh
