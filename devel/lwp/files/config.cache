@@ -1,3 +1,0 @@
-# $NetBSD$
-
-ac_cv_lib_pthread_pthread_create=${ac_cv_lib_pthread_pthread_create='no'}
