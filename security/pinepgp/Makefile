@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/08 17:44:49 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/09 06:48:40 snj Exp $
 #
 
 DISTNAME=		pinepgp-0.18.0
@@ -24,7 +24,7 @@ PINEPGP_USEPGP5?=	yes
 DEPENDS+=		gnupg>=1.2.3:../../security/gnupg
 .endif
 
-.if !empty(PINEPGP_USEGPG:M[yY][eE][sS])
+.if !empty(PINEPGP_USEPGP5:M[yY][eE][sS])
 DEPENDS+=		pgp5>=5.0:../../security/pgp5
 .endif
 
