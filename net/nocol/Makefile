@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 1998/08/20 15:17:17 tsarna Exp $
+# $NetBSD: Makefile,v 1.4 1999/10/27 09:18:29 agc Exp $
 #
 
-DISTNAME=	nocol-4.2beta6
-PKGNAME=	nocol-4.2b6
+DISTNAME=	nocol-4.2.2beta4
+PKGNAME=	nocol-4.2.2b4
 CATEGORIES=	net
 MASTER_SITES= 	ftp://ftp.navya.com/pub/vikas/
 
