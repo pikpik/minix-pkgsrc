@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/04/09 15:21:50 itojun Exp $
+# $NetBSD: Makefile,v 1.3 2000/05/27 14:33:59 agc Exp $
 #
 
 DISTNAME=	jisx0213fonts-0.0
@@ -8,6 +8,7 @@ DISTFILES=	${BDF:C/bdf$/bdf.gz/}
 
 MAINTAINER=	itojun@itojun.org
 HOMEPAGE=	ftp://ftp.m17n.org/pub/character/fonts/imamura/jisx0213/
+COMMENT=	X11 fonts for JIS X0213 standard
 
 USE_X11BASE=	yes
 

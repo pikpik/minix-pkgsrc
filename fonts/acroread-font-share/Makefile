@@ -1,9 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/12 20:39:12 sakamoto Exp $
 #
 
 DISTNAME=	font-share
 CATEGORIES=	fonts
 DISTFILES=	korfont${EXTRACT_SUFX}
+
+COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (common base)
 
 WRKSRC=		${WRKDIR}/KORKIT
 TAR_FILE=	${WRKSRC}/LANGCOM.TAR

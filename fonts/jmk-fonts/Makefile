@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/05/27 14:52:07 agc Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/29 11:34:27 wiz Exp $
 #
 
 DISTNAME=	jmk-x11-fonts-3.0
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE:=X11/fonts/}
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.ntrnet.net/~jmknoble/fonts/
+COMMENT=	Jim Knoble's font collection for X11
 
 USE_IMAKE=	yes
 
