@@ -2,7 +2,7 @@ $NetBSD$
 
 --- Makefile.orig	Thu Apr 22 08:31:43 1999
 +++ Makefile
-@@ -1,17 +1,17 @@
+@@ -1,24 +1,24 @@
  
  # Your C compiler.
  
@@ -25,3 +25,11 @@ $NetBSD$
  
  # Flags to the compiler: 
  #
+ # -DMEM_DEBUG          Check for memory leaks.
+ #
+ 
+-CFLAGS=-g -Wall -DMEM_DEBUG $(INC) -pg
++CFLAGS+=-Wall $(INC)
+ 
+ # No need to change this stuff.
+ 
