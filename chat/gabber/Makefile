@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/09/26 19:32:25 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/29 03:29:47 jlam Exp $
 
 DISTNAME=	gabber-0.8.7
 PKGREVISION=	2
@@ -10,6 +10,7 @@ HOMEPAGE=	http://gabber.sourceforge.net/
 COMMENT=	Gnome Jabber Client
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_GMAKE=		YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
