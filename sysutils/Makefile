@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2002/06/25 05:04:17 grant Exp $
+# $NetBSD: Makefile,v 1.149 2002/06/25 05:15:13 grant Exp $
 #
 
 COMMENT=	System utilities
@@ -109,6 +109,7 @@ SUBDIR+=	sysinfo
 SUBDIR+=	tdir
 SUBDIR+=	tits
 SUBDIR+=	tkcron
+SUBDIR+=	tkdesk
 SUBDIR+=	tload
 SUBDIR+=	top
 SUBDIR+=	toshutils
