@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/04/06 20:09:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/21 01:35:40 hubertf Exp $
 #
 
-DISTNAME=	upclient-4.07
+DISTNAME=	upclient-4.08
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.uptimes.net/pub/uptimes/ \
 		http://www.uptimes.net/download/
