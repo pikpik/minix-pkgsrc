@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/mainmenu_callbacks.c.orig	2004-01-07 18:25:32.000000000 +0100
+--- src/mainmenu_callbacks.c.orig	2004-04-08 06:15:31.000000000 +0200
 +++ src/mainmenu_callbacks.c
 @@ -24,7 +24,9 @@
  #include <unistd.h>
