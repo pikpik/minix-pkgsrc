@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 1998/08/20 15:17:20 tsarna Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 18:19:45 wiz Exp $
 # FreeBSD Id: Makefile,v 1.8 1998/04/11 04:21:19 jseger Exp
 #
 
-DISTNAME=	tf-40a6
-PKGNAME=	tf-4.0a6
+DISTNAME=	tf-40s1
+PKGNAME=	tf-4.0s1
 CATEGORIES=	net games
 MASTER_SITES=	ftp://tf.tcp.com/pub/tinyfugue/ \
 		ftp://laurel.actlab.utexas.edu/pub/tinyfugue/
