@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/06 15:25:50 taca Exp $
 #
 
 DISTNAME=	webrick-1.2.3
@@ -13,6 +13,7 @@ COMMENT=	Ruby library to build HTTP servers
 DEPENDS+=	ruby-openssl:../../security/ruby-openssl
 DEPENDS+=	ruby-erb:../../textproc/ruby-erb
 
+DIST_SUBDIR=	ruby
 USE_RUBY=	yes
 NO_BUILD=	yes
 
