@@ -1,9 +1,9 @@
-# $NetBSD$
-#
 # New ports collection makefile for:	xearth
 # Version required:    			1.0
 # Date created:				Mon Jan 19 14:34:50 GMT 1998
 # Whom:					agc@netbsd.org
+#
+# $NetBSD: Makefile,v 1.1 1998/02/05 15:39:59 agc Exp $
 #
 
 DISTNAME=	xearth-1.0
