@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.2 1999/11/23 09:57:07 tron Exp $
+
+MD5 (db-2.7.7.tar.gz) = 20256735091ee382c6601117d82d749a
+SHA1 (patch-aa) = 7156cc27b2a968ce4fe08e0902f0735492359148

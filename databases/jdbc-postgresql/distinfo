@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.10 2000/12/07 08:29:00 mjl Exp $
+
+MD5 (postgresql-7.0.3.tar.gz) = b416c04e6c91967160dfde866293ee6f
+SHA1 (patch-aa) = 84cd2e3ef3b9aa6b65c8cf21891b372cfc473821

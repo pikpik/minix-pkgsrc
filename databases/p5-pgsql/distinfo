@@ -1,0 +1,4 @@
+$NetBSD: md5,v 1.2 2001/03/05 20:07:48 jtb Exp $
+
+MD5 (pgsql_perl5-1.9.0.tar.gz) = ec20b8e1596022f8f354550147259d56
+SHA1 (patch-aa) = 0e87750d181e72757f5ba4e2f06702481a7dfbd0
