@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libgnomevfs/gnome-vfs-i18n.c.orig	2003-04-14 19:53:02.000000000 +0200
++++ libgnomevfs/gnome-vfs-i18n.c
+@@ -104,6 +104,7 @@ unalias_lang (char *lang)
+ 
+   if (!alias_table)
+     {
++      read_aliases (PREFIX "/" PKGLOCALEDIR "/locale/locale.alias");
+       read_aliases ("/usr/share/locale/locale.alias");
+       read_aliases ("/usr/local/share/locale/locale.alias");
+       read_aliases ("/usr/lib/X11/locale/locale.alias");
