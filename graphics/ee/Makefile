@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/02/13 11:47:01 tron Exp $
+# $NetBSD: Makefile,v 1.19 2001/02/16 15:22:17 wiz Exp $
 
 DISTNAME=		ee-0.3.12
 CATEGORIES=		x11 gnome
@@ -22,8 +22,6 @@ CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR} \
 			--with-glib-prefix=${LOCALBASE}
 CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}
 CONFIGURE_ENV+=		LOCALEDIR=${LOCALEDIR}
-
-PLIST_SUBST+=		LOCALEDIR=${LOCALEDIR}
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 17:21:44 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/25 04:18:21 hubertf Exp $
 #
 
 PKGNAME=		sawfish-${SF_VERS}
@@ -13,7 +13,6 @@ CONFIGURE_ENV+=		LOCALEDIR=${LOCALEDIR}
 MAKE_ENV+=		LOCALEDIR=${LOCALEDIR}
 
 PLIST_SUBST+=		SF_VERS=${SF_VERS}
-PLIST_SUBST+=		LOCALEDIR=${LOCALEDIR}
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/02/16 14:38:26 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2001/02/25 04:17:41 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/11/18 17:35:16 vanilla Exp
 #
 
@@ -18,8 +18,6 @@ USE_X11BASE=	yes
 
 CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
 CONFIGURE_ENV+=	LOCALEDIR=${LOCALEDIR}
-
-PLIST_SUBST+=	LOCALEDIR=${LOCALEDIR}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/glade

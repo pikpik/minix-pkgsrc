@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/02/13 11:47:00 tron Exp $
+# $NetBSD: Makefile,v 1.27 2001/02/16 14:38:25 wiz Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -19,7 +19,7 @@ CONFIGURE_ENV+=		LIBS="-L${LOCALBASE}/lib" \
 			CPPFLAGS="-I${LOCALBASE}/include"
 
 INFO_FILES=		gettext.info
-PLIST_SUBST+=		LOCALEDIR=${LOCALEDIR}
+
 post-patch:
 	${RM} -f ${WRKSRC}/intl/libgettext.h
 	${RM} -f ${WRKSRC}/intl/libintl.h

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/13 11:47:06 tron Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 17:37:53 wiz Exp $
 # FreeBSD Id: ports/textproc/textutils/Makefile,v 1.7 1999/09/18 17:46:30 steve Exp
 
 DISTNAME=	textutils-2.0
@@ -12,8 +12,6 @@ COMMENT=	GNU text utilities
 USE_GMAKE=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--program-prefix=g
-
-PLIST_SUBST+=	LOCALEDIR="${LOCALEDIR}"
 
 post-install:
 	install-info ${PREFIX}/info/textutils.info ${PREFIX}/info/dir

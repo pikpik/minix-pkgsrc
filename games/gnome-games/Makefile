@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/02/13 11:47:01 tron Exp $
+# $NetBSD: Makefile,v 1.21 2001/02/16 15:10:50 wiz Exp $
 
 DISTNAME=		gnome-games-1.2.0
 CATEGORIES=		games gnome
@@ -30,7 +30,6 @@ CONFIGURE_ARGS+=	--localstatedir=/var
 CFLAGS+=		-I${LOCALBASE}/include
 
 INSTALL_FILE=		${WRKDIR}/INSTALL
-PLIST_SUBST+=		LOCALEDIR=${LOCALEDIR}
 
 AUTOGEN_ENV=		NOCONFIGURE=1
 AUTOGEN_ENV+=		srcdir=${WRKSRC}
