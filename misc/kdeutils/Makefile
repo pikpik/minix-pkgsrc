@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1999/01/30 23:18:53 agc Exp $
+# $NetBSD: Makefile,v 1.24 1999/02/15 21:36:05 tron Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/11/28 00:04:18 se Exp
 #
 
@@ -12,8 +12,6 @@ MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 
 DEPENDS+=	kdebase-1.1:../../x11/kdebase
-
-CONFLICTS=	kdeutils-*
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
