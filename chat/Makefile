@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2000/12/27 16:49:21 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/02 02:11:14 jun Exp $
 #
 
     SUBDIR += bitchx
     SUBDIR += epic4
     SUBDIR += gaim
+    SUBDIR += gale
     SUBDIR += icb
     SUBDIR += icqlib
     SUBDIR += irchat
