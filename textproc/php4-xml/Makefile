@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/16 06:58:34 jlam Exp $
-
-.include "../../www/php4/Makefile.module"
+# $NetBSD: Makefile,v 1.3 2001/12/03 08:31:04 jlam Exp $
 
 MODNAME=		xml
 CATEGORIES+=		textproc
@@ -8,6 +6,9 @@ PKGREVISION=		# empty
 COMMENT=		PHP4 extension for parsing XML
 
 USE_BUILDLINK_ONLY=	YES
+
+.include "../../www/php4/Makefile.module"
+
 CONFIGURE_ARGS+=	--enable-${MODNAME}
 CONFIGURE_ARGS+=	--with-expat-dir=shared,${BUILDLINK_DIR}
 
