@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.57 2001/12/03 17:52:25 wiz Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.58 2001/12/03 18:20:49 abs Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -642,7 +642,8 @@ sub parse_makefile_pkgsrc
 	}
     if (defined $pkgname)
 	{
-	if (defined $vars->{PKGREVISION})
+	if (defined $vars->{PKGREVISION}
+	    and not $vars->{PKGREVISION} =~ /^\s*$/ )
 	    {
 	    $pkgname .= "nb";
 	    $pkgname .= $vars->{PKGREVISION};
