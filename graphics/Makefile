@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 1999/08/17 12:29:31 rh Exp $
+# $NetBSD: Makefile,v 1.56 1999/09/03 17:23:24 kim Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -51,6 +51,7 @@
 #    SUBDIR += mplex
     SUBDIR += mtv
     SUBDIR += netpbm
+    SUBDIR += ns-flash
     SUBDIR += openptc
     SUBDIR += p5-GD
     SUBDIR += p5-Image-Size
