@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/02/25 04:18:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.17 2001/03/27 18:03:27 dmcmahill Exp $
 
 PKGNAME=	acroread3-3.01
 CATEGORIES=	print
@@ -71,7 +71,7 @@ do-install:
 
 post-install:
 	@cd ${PREFIX}/Acrobat3/bin && \
-	  ${PATCH} --quiet < ${FILESDIR}/acroread.diff && \
+	  ${PATCH} ${_PATCH_BACKUP_ARG} .orig --quiet < ${FILESDIR}/acroread.diff && \
 	  ${INSTALL_SCRIPT} ${PREFIX}/Acrobat3/bin/acroread \
 	     ${PREFIX}/bin/acroread3 && ${RM} acroread.orig
 	@${CHMOD} +x ${PREFIX}/bin/acroread3
