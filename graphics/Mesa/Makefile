@@ -1,13 +1,14 @@
 # Makefile for:		Mesa
 # Version required:     2.6
 #
-# $NetBSD: Makefile,v 1.10 1998/03/05 20:56:25 mycroft Exp $
+# $NetBSD: Makefile,v 1.11 1998/03/20 06:19:05 mycroft Exp $
 #
 
 DISTNAME=       MesaLib-2.6
 PKGNAME=	Mesa-2.6
 CATEGORIES=	graphics
 MASTER_SITES= 	ftp://iris.ssec.wisc.edu/pub/Mesa/ \
+		ftp://ftp.fu-berlin.de/unix/X11/graphics/Mesa \
 		ftp://iris.ssec.wisc.edu/pub/Mesa/old-versions/
 DISTFILES=	MesaLib-${MESA_VERSION}${EXTRACT_SUFX} \
 		MesaDemos-${MESA_VERSION}${EXTRACT_SUFX}
@@ -23,7 +24,7 @@ GLUT_LIBS=	libglut
 GLUT_VERSION=	3.6
 
 post-extract:
-	chmod +r ${WRKSRC}/demos/*
+	@chmod +r ${WRKSRC}/demos/*
 
 do-install:
 .for file in ${MESA_LIBS}
