@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/07/04 07:50:09 mycroft Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:16:39 tsarna Exp $
 #
 
 DISTNAME=	mikmod-3.0.3
@@ -10,9 +10,10 @@ MASTER_SITE_SUBDIR=	apps/sound/players
 MAINTAINER=	mycroft@NetBSD.ORG
 HOMEPAGE=	http://www.freenet.tlh.fl.us/~amstpi/mikmod.html
 
+DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
+
 CONFLICTS=	mikmod-2.14
 
-DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
 USE_GMAKE=	yes
 
 .include "../../mk/bsd.prefs.mk"
