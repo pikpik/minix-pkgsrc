@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/rio
+share/rio/README
+@dirrm share/rio
