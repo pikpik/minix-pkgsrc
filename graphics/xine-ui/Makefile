@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/08/10 03:15:30 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/09/05 10:00:50 drochner Exp $
 #
 
 DISTNAME=		xine-ui-0.9.22
@@ -25,4 +25,5 @@ GNU_CONFIGURE=		YES
 .include "../../graphics/xine-lib/buildlink2.mk"
 .include "../../www/curl/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
+.include "../../devel/ncurses/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
