@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.262 2004/11/05 23:10:08 wiz Exp $
+# $NetBSD: Makefile,v 1.263 2004/11/06 23:15:42 dillo Exp $
 #
 
 COMMENT=	Audio tools
@@ -25,7 +25,6 @@ SUBDIR+=	cddbd
 SUBDIR+=	cdparanoia
 SUBDIR+=	cmp3
 SUBDIR+=	cs4235
-SUBDIR+=	csound-bath
 SUBDIR+=	csound-dev
 SUBDIR+=	csound-manual
 SUBDIR+=	daapd
