@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 17:01:16 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/09 23:46:53 wiz Exp $
 #
 
 DISTNAME=	kdrill5.11.6
@@ -16,7 +16,6 @@ DEPENDS+=	kanjidic-[0-9]*:../../misc/kanjidic
 
 USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
-USE_X11=	yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/kdrill
