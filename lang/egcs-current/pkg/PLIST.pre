@@ -1,3 +1,4 @@
+@comment $NetBSD$
 ${MACHINE_GNU_ARCH}--netbsd/include/_G_config.h
 ${MACHINE_GNU_ARCH}--netbsd/lib/libiberty.a
 @dirrm ${MACHINE_GNU_ARCH}--netbsd/include
