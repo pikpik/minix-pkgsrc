@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/modules/standard/mod_include.c.orig	Mon Jan 15 12:05:42 2001
+--- src/modules/standard/mod_include.c.orig	Fri Feb 23 11:37:26 2001
 +++ src/modules/standard/mod_include.c
 @@ -93,7 +93,11 @@
  #include "http_log.h"
@@ -54,7 +54,7 @@ $NetBSD$
              rr = ap_sub_req_lookup_file(tag_val, r);
  
              if (rr->status == HTTP_OK && rr->finfo.st_mode != 0) {
-@@ -2160,6 +2168,16 @@
+@@ -2162,6 +2170,16 @@
      }
  }
  
@@ -71,7 +71,7 @@ $NetBSD$
  
  
  /* -------------------------- The main function --------------------------- */
-@@ -2284,6 +2302,13 @@
+@@ -2286,6 +2304,13 @@
              }
  #endif
              else {
