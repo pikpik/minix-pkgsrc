@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2000/04/07 17:01:51 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.10 2000/06/08 22:37:02 jlam Exp $
 bin/tcat
 bin/toast
 bin/untoast
@@ -14,3 +14,4 @@ man/man3/gsm.3
 man/man3/gsm_explode.3
 man/man3/gsm_option.3
 man/man3/gsm_print.3
+@dirrm include/gsm
