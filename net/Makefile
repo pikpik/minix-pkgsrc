@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.229 2001/06/19 11:34:14 zuntum Exp $
+# $NetBSD: Makefile,v 1.230 2001/06/23 22:00:52 frueauf Exp $
 #
 
 COMMENT=	Networking tools
@@ -135,6 +135,8 @@ SUBDIR+=	rdist6
 SUBDIR+=	ripe-whois-tools
 SUBDIR+=	rp-pppoe
 SUBDIR+=	rsync
+SUBDIR+=	ruby-drb
+SUBDIR+=	ruby-icmp
 SUBDIR+=	samba
 SUBDIR+=	sdist
 SUBDIR+=	sendfile
