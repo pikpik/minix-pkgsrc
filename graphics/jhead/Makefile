@@ -1,18 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2001/09/09 20:36:30 agc Exp $
+# $NetBSD: Makefile,v 1.4 2001/12/23 04:38:05 toshii Exp $
 #
 
-DISTNAME=	jhead
-PKGNAME=	jhead-1.5
+DISTNAME=	jhead-1.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.sentex.net/~mwandel/jhead/
-EXTRACT_SUFX=	.zip
 
 MAINTAINER=	veego@netbsd.org
 HOMEPAGE=	http://www.sentex.net/~mwandel/jhead/
 COMMENT=	Extract EXIF header from JPEG image
 
-DIST_SUBDIR=	${PKGNAME}
-WRKSRC=		${WRKDIR}
+WRKSRC=		${WRKDIR}/${DISTNAME:S/-//}
 
 LIBS=		-lm
 
