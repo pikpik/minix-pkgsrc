@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 1999/06/09 00:45:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1999/07/13 01:20:12 jlam Exp $
 #
 
-DISTNAME=	R-0.64.1
+DISTNAME=	R-0.64.2
 CATEGORIES=	math
 MASTER_SITES=	http://lib.stat.cmu.edu/R/CRAN/src/base/ \
 		ftp://ftp.biostat.washington.edu/mirrors/R/CRAN/src/base/ \
