@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/09/02 20:13:28 wiz Exp $
 
 DISTNAME=	reed-4.6
 CATEGORIES=	misc
@@ -12,4 +12,5 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK_ONLY=	YES
 REPLACE_PERL=		scripts/breed scripts/wrap
 
+.include "../../devel/ncurses/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
