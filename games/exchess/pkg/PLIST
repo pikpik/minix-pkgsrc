@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/exchess
+lib/exchess/search.par
+share/doc/exchess/readme.txt
+@dirrm share/doc/exchess
+@dirrm lib/exchess
