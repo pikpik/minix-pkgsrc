@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/02/25 02:55:22 grant Exp $
+# $NetBSD: Makefile,v 1.2 2002/07/24 19:45:30 jlam Exp $
 #
 
-DISTNAME=	mod_layout-3.0.4
-PKGNAME=	ap-layout-3.0.4
+DISTNAME=	mod_layout-3.2
+PKGNAME=	ap-layout-3.2
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tangent.org/pub/apache/ \
 		http://software.tangent.org/download/
