@@ -1,11 +1,11 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/04/24 13:22:37 wulf Exp $
 bin/gpasm
 bin/gpdasm
 bin/gpvc
+bin/gpvo
 share/doc/gpasm/gpasm.lyx
 share/doc/gpasm/gpasm.pdf
 share/doc/gpasm/gpasm.ps
-share/gpasm/special.inc
 share/gpasm/header/memory.inc
 share/gpasm/header/p12c508.inc
 share/gpasm/header/p12c508a.inc
