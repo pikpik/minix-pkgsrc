@@ -3,7 +3,7 @@
 # Date created:		14 November 1997
 # Whom:			lamj@stat.cmu.edu
 #
-# $NetBSD: Makefile,v 1.2 1997/12/14 23:09:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1998/01/24 04:13:35 hubertf Exp $
 #
 
 DISTNAME=       texinfo-3.11
@@ -14,6 +14,7 @@ MASTER_SITES=   ${MASTER_SITE_GNU}
 MAINTAINER=	lamj@stat.cmu.edu
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=	--with-catgets
 
 post-install:
 	${PREFIX}/bin/install-info --info-dir=${PREFIX}/info ${PREFIX}/info/texinfo
