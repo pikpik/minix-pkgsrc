@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2001/09/27 23:18:50 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/02/28 18:32:18 jlam Exp $
 
-DISTNAME=	jakarta-tomcat-3.2.1-src
-PKGNAME=	ap-jk-3.2.1
+DISTNAME=	jakarta-tomcat-3.2.4-src
+PKGNAME=	ap-jk-3.2.4
 CATEGORIES=	www
-MASTER_SITES=	http://jakarta.apache.org/builds/tomcat/release/v3.2.1/src/
+MASTER_SITES=	http://jakarta.apache.org/builds/tomcat/release/v3.2.4/src/
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://jakarta.apache.org/
