@@ -1,11 +1,11 @@
 $NetBSD$
 
---- src/todoterm.cc.orig	Mon Apr 30 23:24:56 2001
+--- src/todoterm.cc.orig	2001-11-08 11:51:20.000000000 +0100
 +++ src/todoterm.cc
-@@ -4,7 +4,11 @@
- #ifdef USETERMCAP
+@@ -5,7 +5,11 @@
  #include <string>
  #include <stdexcept>
+ #include <curses.h>
 +#ifdef __NetBSD__
 +#include <termcap.h>
 +#else
