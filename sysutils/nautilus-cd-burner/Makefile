@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/01 19:07:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/14 16:15:28 jmmv Exp $
 #
 
 DISTNAME=	nautilus-cd-burner-2.6.0
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/nautilus-cd-burner/2.6/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	CD burner view for Nautilus
 

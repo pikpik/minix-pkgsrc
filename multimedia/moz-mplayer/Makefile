@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/04/05 18:41:14 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/24 22:43:49 wiz Exp $
 #
 
 DISTNAME=	mplayerplug-in-1.0
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	multimedia www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mplayerplug-in/}
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://mplayerplug-in.sourceforge.net/
 COMMENT=	Embedded video player for Mozilla
 

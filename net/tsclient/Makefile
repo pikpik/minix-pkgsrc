@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/26 02:27:50 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2004/04/14 16:15:26 jmmv Exp $
 #
 
 DISTNAME=		tsclient-0.132
@@ -6,7 +6,7 @@ PKGREVISION=		8
 CATEGORIES=		net
 MASTER_SITES=		http://www.gnomepro.com/tsclient/
 
-MAINTAINER=		xtraeme@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnomepro.com/tsclient/
 COMMENT=		GNOME2 Frontend for rdesktop
 

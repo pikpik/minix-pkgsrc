@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 20:29:23 xtraeme Exp $
 #
 
 DISTNAME=		vls-0.5.6
 CATEGORIES=		net
 MASTER_SITES=		http://download.videolan.org/pub/videolan/vls/0.5.6/
 
-MAINTAINER=		xtraeme@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
 COMMENT=		VideoLAN Server
 

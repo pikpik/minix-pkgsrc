@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/14 16:15:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/02 13:40:59 kristerw Exp $
 #
 
 DISTNAME=	xpad-1.12
@@ -7,7 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xpad/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://xpad.sourceforge.net/
 COMMENT=	Sticky notes application in GTK 2
 

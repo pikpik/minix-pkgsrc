@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/14 17:21:39 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/11 08:17:01 snj Exp $
 #
 
 DISTNAME=	lpe-1.2.6
@@ -7,7 +7,7 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.sasknow.com/pub/ \
 		ftp://ftp.twu.net/users/cdsmith/lpe/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://cdsmith.twu.net/professional/opensource/lpe.html
 COMMENT=	Small and efficient programmer's editor for UNIX systems
 

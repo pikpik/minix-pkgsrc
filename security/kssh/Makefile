@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/03/26 02:27:52 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/23 12:13:07 markd Exp $
 #
 
 DISTNAME=	kssh-0.7
@@ -6,7 +6,7 @@ PKGREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kssh/}
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://kssh.sourceforge.net/
 COMMENT=	KDE Front-end to SSH
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2004/03/08 20:27:13 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2004/03/12 06:07:12 minskim Exp $
 #
 
 DISTNAME=	quirc-0.9.84
 CATEGORIES=	chat
 MASTER_SITES=	http://quirc.org/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://quirc.org/
 COMMENT=	Stable and powerful graphical IRC client
 

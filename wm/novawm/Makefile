@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/24 15:18:32 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/26 09:02:43 xtraeme Exp $
 #
 
 DISTNAME=	NovaWM-0.8_alpha
@@ -6,7 +6,7 @@ PKGNAME=	novawm-0.8
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=novawm/}
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://novawm.sourceforge.net/
 COMMENT=	Nova window manager
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/02/14 17:21:43 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/12 05:25:41 snj Exp $
 #
 
 DISTNAME=	smpeg-xmms-0.3.5
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.xmms.org/xmms/plugins/smpeg-xmms/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.xmms.org/
 COMMENT=	MPEG video plugin using SDL/smpeg as the backend
 

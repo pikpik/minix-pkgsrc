@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/20 22:58:57 xtraeme Exp $
 #
 
 DISTNAME=	acidrip-0.12
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=acidrip/}
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://acidrip.thirtythreeandathird.net/
 COMMENT=	Gtk2::Perl application for ripping and encoding DVDs
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2004/03/26 02:27:34 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2004/03/30 22:42:47 xtraeme Exp $
 #
 
 DISTNAME=	streamtuner-local-0.4.0
 CATEGORIES=	audio www
 MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Streamtuner plugin providing access to your local MP3 repository
 

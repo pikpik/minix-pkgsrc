@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/05 18:41:14 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/14 16:15:25 jmmv Exp $
 #
 
 DISTNAME=	gmencoder-0.1.0
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gmencoder/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gmencoder.sourceforge.net/
 COMMENT=	GNOME2 frontend to mencoder
 

@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/18 05:02:52 xtraeme Exp $
 #
 
 DISTNAME=	neverball-1.2.2
 CATEGORIES=	games
 MASTER_SITES=	http://www.icculus.org/neverball/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.icculus.org/neverball/
 COMMENT=	Part puzzle game, part action game and with SDL graphics
 
