@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/08/28 11:17:55 rh Exp $
+# $NetBSD: Makefile,v 1.3 2002/03/13 17:37:05 fredb Exp $
 #
 
-DISTNAME=	feh-1.1.0
-PKGREVISION=	1
+DISTNAME=	feh-1.2.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
@@ -11,7 +10,8 @@ HOMEPAGE=	http://www.linuxbrit.co.uk/feh/
 COMMENT=	advanced image viewer
 
 GNU_CONFIGURE=	YES
+USE_BUILDLINK2=	YES
 USE_X11BASE=	YES
 
-.include "../../graphics/imlib2/buildlink.mk"
+.include "../../devel/giblib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
