@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.63 2001/04/30 03:46:34 jlam Exp $
+# $NetBSD: Makefile,v 1.62 2001/04/02 16:39:53 taya Exp $
 
-MOZ_VER=	0.8.1
+MOZ_VER=	0.9
 DISTNAME=	mozilla-source-${MOZ_VER}
 PKGNAME=	mozilla-${MOZ_VER}
 WRKSRC=		${WRKDIR}/mozilla
@@ -17,6 +17,7 @@ BUILD_DEPENDS+=	perl>=${PERL5_REQD}:../../lang/perl5
 BUILD_DEPENDS+=	autoconf-2.13:../../devel/autoconf
 BUILD_DEPENDS+=	zip>=2.3:../../archivers/zip
 DEPENDS+=	gtk+>=1.2.8:../../x11/gtk
+DEPENDS+=	gdk-pixbuf>=0.10.1:../../graphics/gdk-pixbuf
 DEPENDS+=	ORBit>=0.5.3:../../net/ORBit
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	png>1.0.9:../../graphics/png
@@ -35,7 +36,8 @@ CONFIGURE_ARGS=	--disable-tests \
 		--enable-mathml \
 		--enable-svg \
 		--with-extensions=cookie,irc,wallet,xmlextras,xml-rpc \
-		--without-pthreads
+		--without-pthreads \
+		--enable-modules=all,psm2
 
 .if  ${MACHINE_ARCH} == "m68k"
 DBG=
@@ -69,8 +71,8 @@ pre-configure:
 	(cd ${WRKSRC}/nsprpub && ${LOCALBASE}/bin/autoconf)
 
 do-build:
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS}
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} BUILD_MODULES=psm
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} BUILD_MODULES=all
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} BUILD_MODULES=psm2
 
 post-build:
 	${ECHO} skin,install,select,classic/1.0 >> ${WRKSRC}/dist/bin/chrome/installed-chrome.txt
