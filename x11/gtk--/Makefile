@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/01/25 03:08:47 grant Exp $
+# $NetBSD: Makefile,v 1.34 2004/02/14 17:21:55 jlam Exp $
 #
 
 DISTNAME=		gtkmm-1.2.10
@@ -14,7 +14,7 @@ COMMENT=		C++ wrapper for GTK+
 
 USE_X11BASE=		YES
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_PERL5=		build
 USE_GNU_TOOLS+=		m4 make
@@ -28,6 +28,6 @@ post-install:
 	${LN} -fs ${PREFIX}/share/aclocal/gtk--.m4 \
 		${LOCALBASE}/share/aclocal/gtk--.m4
 
-.include "../../devel/libsigc++10/buildlink2.mk"
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../devel/libsigc++10/buildlink3.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
