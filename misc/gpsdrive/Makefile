@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/26 19:55:01 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/05 17:26:00 tsarna Exp $
 
 DISTNAME=	gpsdrive-1.31
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://gpsdrive.kraftvoll.at/
 
