@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2004/10/01 00:09:17 xtraeme Exp $
-#
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:14:40 tv Exp $
 
-DISTNAME=	dosbox-0.62
-PKGREVISION=	1
+DISTNAME=	dosbox-0.63
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dosbox/}
 
@@ -10,9 +8,9 @@ MAINTAINER=	cube@cubidou.net
 HOMEPAGE=	http://dosbox.sourceforge.net/
 COMMENT=	Multi-platform DOS emulator using SDL
 
-USE_BUILDLINK3=	YES
-USE_LANGUAGES=	c c++
-GNU_CONFIGURE=	YES
+USE_BUILDLINK3=		yes
+USE_LANGUAGES=		c c++
+GNU_CONFIGURE=		yes
 
 SUBST_CLASSES=		fixme
 SUBST_STAGE.fixme=	post-patch
