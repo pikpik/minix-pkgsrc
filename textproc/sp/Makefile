@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/01/29 21:43:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/12/23 10:40:46 sketch Exp $
 #
 
 DISTNAME=	sp-1.3.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=   ftp://ftp.jclark.com/pub/sp/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.jclark.com/pub/sp/ \

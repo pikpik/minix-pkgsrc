@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 22:54:13 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/20 12:26:49 agc Exp $
 # FreeBSD Id: Makefile,v 1.17 1999/04/24 09:25:32 kuriyama Exp
 
 DISTNAME=	db157
 PKGNAME=	dsssl-docbook-modular-1.57
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://nwalsh.com/docbook/dsssl/
 DISTFILES=	db157.zip db157d.zip
