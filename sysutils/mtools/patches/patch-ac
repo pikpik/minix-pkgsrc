@@ -1,7 +1,8 @@
 $NetBSD$
---- floppyd.c.orig	Sun May 28 13:20:30 2000
-+++ floppyd.c	Wed Feb 14 13:42:45 2001
-@@ -574,7 +574,7 @@
+
+--- floppyd.c.orig	2002-11-02 10:55:24.000000000 +0000
++++ floppyd.c
+@@ -583,7 +583,7 @@ static uid_t getuserid(char *user)
  		}
  	else
  		{
@@ -9,8 +10,8 @@ $NetBSD$
 +			uid = getuserid("nobody");
  		}
  
- #ifdef DEBUG
-@@ -600,7 +600,7 @@
+ #if DEBUG
+@@ -609,7 +609,7 @@ static uid_t getgroupid(uid_t uid)
  		}
  	else
  		{
@@ -18,4 +19,4 @@ $NetBSD$
 +			gid = getgroupid(uid);
  		}
  
- #ifdef DEBUG
+ #if DEBUG

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- devices.c.orig	2000-05-28 12:20:54.000000000 +0200
-+++ devices.c	2003-05-22 17:35:16.000000000 +0200
-@@ -798,7 +798,7 @@
+--- devices.c.orig	2002-05-01 10:17:50.000000000 +0000
++++ devices.c
+@@ -799,7 +799,7 @@ struct device devices[] = {
  #endif /* __FreeBSD__ */
   
  /*** /jes -- for ALR 486 DX4/100 ***/
