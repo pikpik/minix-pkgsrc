@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/10/20 10:55:46 adam Exp $
+# $NetBSD: Makefile,v 1.18 2005/01/05 12:20:37 adam Exp $
 
 DISTNAME=	SDL_mixer-1.2.6
 CATEGORIES=	audio
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=        --enable-music-ogg
 
 CPPFLAGS=		-Dunix=1
-CFLAGS=			-DPREFIX=\"\\\"${PREFIX}\\\"\"
+CFLAGS=			-DPREFIX="\"${PREFIX}\""
 
 INSTALLATION_DIRS=	bin
 

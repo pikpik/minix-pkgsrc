@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/16 13:30:50 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/31 17:35:14 minskim Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/05/25 08:58:43 andreas Exp
 #
 
@@ -13,7 +13,7 @@ COMMENT=	Read CD digital audio data through the SCSI bus
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
-CPPFLAGS+=	-DDEVOSSAUDIO=\\\"${DEVOSSAUDIO}\\\"
+CPPFLAGS+=	-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 
 INSTALLATION_DIRS=	bin/man/man1
 
