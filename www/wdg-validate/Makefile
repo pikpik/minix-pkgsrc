@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2001/05/30 13:38:52 abs Exp $
+# $NetBSD: Makefile,v 1.3 2001/11/28 23:59:29 jlam Exp $
 #
 
 DISTNAME=	validate
-PKGNAME=	wdg-validate-1.0.2
+PKGNAME=	wdg-validate-1.0.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.htmlhelp.com/tools/validator/offline/
 DISTFILES=	validate sgml-lib.tar.gz README
