@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gtk-2.0/immodules/im-hangul.a
+lib/gtk-2.0/immodules/im-hangul.la
+lib/gtk-2.0/immodules/im-hangul.so
+@dirrm lib/gtk-2.0/immodules
