@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bbmail
+man/man1/bbmail.1
+share/bbtools/bbmail.bb
+@dirrm share/bbtools
