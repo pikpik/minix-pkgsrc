@@ -1,8 +1,9 @@
-# $NetBSD$
 # New ports collection makefile for:	ssam
 # Version required:			1.9
 # Date created:				Thu Oct 23 21:00:32 BST 1997
 # Whom:					Alistair Crooks (agc@netbsd.org)
+#
+# $NetBSD: Makefile,v 1.1.1.1 1997/10/23 20:18:01 agc Exp $
 #
 
 DISTNAME=	ssam-1.9
