@@ -1,3 +1,4 @@
+$NetBSD$
 --- contrib.mak.orig	Wed Jun  2 15:39:42 1999
 +++ contrib.mak	Wed Jun  2 15:40:24 1999
 @@ -432,6 +432,9 @@
