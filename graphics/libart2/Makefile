@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/09/02 14:51:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2003/09/08 15:28:38 adam Exp $
 
 DISTNAME=		libart_lgpl-2.3.15
 PKGNAME=		${DISTNAME:S/_lgpl/2/}
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libart_lgpl/2.3/}
 EXTRACT_SUFX=		.tar.bz2
@@ -16,5 +17,6 @@ USE_X11=		YES
 
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	libart-2.0.pc.in
 
 .include "../../mk/bsd.pkg.mk"
