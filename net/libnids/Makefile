@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2004/02/14 00:54:45 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/25 04:25:11 snj Exp $
 # $FreeBSD: ports/net/libnids/Makefile,v 1.5 2000/04/24 07:42:58 kris Exp $
 #
 
 DISTNAME=	libnids-1.18
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libnids/}
 
