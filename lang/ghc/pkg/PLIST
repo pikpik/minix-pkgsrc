@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/ghc
 bin/ghc-4.04
 bin/hp2ps
