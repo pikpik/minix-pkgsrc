@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/03/11 10:38:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/12 19:59:13 snj Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://fixounet.free.fr/avidemux/
 
