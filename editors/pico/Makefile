@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/12/15 08:31:08 martti Exp $
+# $NetBSD: Makefile,v 1.29 2002/01/13 21:52:31 hubertf Exp $
 #
 
 DISTNAME=	pine4.44
@@ -23,7 +23,7 @@ BUILDNAME= so5
 BUILDNAME= neb
 .endif
 
-MAKE_ENV+=	STRIPFLAG=	# debug...
+MAKE_ENV+=	_STRIPFLAG_INSTALL=	# debug...
 
 do-build:
 	cd ${WRKSRC} && ./build ${BUILDNAME} CC="${LIBTOOL} ${CC}" \
