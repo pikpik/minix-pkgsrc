@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_access_referer.so
+share/doc/html/mod_access_referer/mod_access_referer.html
+@dirrm share/doc/html/mod_access_referer
