@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/07/13 13:51:21 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:31:47 grant Exp $
 #
 
 DISTNAME=	libwnck-2.2.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libwnck/2.2/}
 EXTRACT_SUFX=	.tar.bz2

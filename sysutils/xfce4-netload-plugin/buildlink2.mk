@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.2 2003/09/27 06:57:16 martti Exp $
 #
 # This Makefile fragment is included by packages that use xfce4-netload-plugin.
 #
@@ -9,7 +9,7 @@
 XFCE4_NETLOAD_PLUGIN_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			xfce4-netload-plugin
-BUILDLINK_DEPENDS.xfce4-netload-plugin?=		xfce4-netload-plugin>=0.2.0pre6
+BUILDLINK_DEPENDS.xfce4-netload-plugin?=		xfce4-netload-plugin>=0.2.2nb1
 BUILDLINK_PKGSRCDIR.xfce4-netload-plugin?=		../../sysutils/xfce4-netload-plugin
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.xfce4-netload-plugin=xfce4-netload-plugin
