@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/09/05 16:41:18 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/19 10:54:43 rh Exp $
 #
 
 DISTNAME=		gnome-mime-data-2.0.1
@@ -10,11 +10,12 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		MIME and Application database for GNOME2
 
-CONFLICTS=		gnome-vfs-1*
-
 BUILD_USES_MSGFMT=	YES
 
+CONFLICTS=		gnome-vfs-1*
+
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_PERL5=		build
 GNU_CONFIGURE=		YES
 
