@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2004/02/13 19:41:05 minskim Exp $
+# $NetBSD: Makefile,v 1.116 2004/02/13 21:31:54 minskim Exp $
 #
 
 COMMENT=	Databases
@@ -108,6 +108,7 @@ SUBDIR+=	ruby-mysql
 SUBDIR+=	ruby-postgresql
 SUBDIR+=	ruby-vapor
 SUBDIR+=	sdbm
+SUBDIR+=	shared-mime-info
 SUBDIR+=	sqlite
 SUBDIR+=	sqsh
 SUBDIR+=	tcl-fbsql
