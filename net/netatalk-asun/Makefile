@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/17 18:19:12 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/25 14:32:09 kei Exp $
 
 DISTNAME=	netatalk-1.4b2+asun2.1.3
 PKGNAME=	netatalk-asun-2.1.3nb4
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.umich.edu/~rsug/netatalk/
 COMMENT=	Netatalk appletalk file and print services, enhanced by Adrian Sun
 
 CONFLICTS=	netatalk-[0-9]*
+CONFLICTS+=	netatalk-umich-*
 
 post-extract:
 		@${MV} ${WRKSRC}/man/man8/papd.8 ${WRKSRC}/man/man8/papd.tbl
