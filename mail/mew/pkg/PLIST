@@ -129,6 +129,8 @@ share/emacs/site-lisp/mew/mew-summary.elc
 share/emacs/site-lisp/mew/mew-syntax.el
 share/emacs/site-lisp/mew/mew-syntax.elc
 share/emacs/site-lisp/mew/mew-temacs.el
+share/emacs/site-lisp/mew/mew-theme.el
+share/emacs/site-lisp/mew/mew-theme.elc
 share/emacs/site-lisp/mew/mew-thread.el
 share/emacs/site-lisp/mew/mew-thread.elc
 share/emacs/site-lisp/mew/mew-unix.el
