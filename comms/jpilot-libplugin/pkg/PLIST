@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/libplugin.a
+lib/libplugin.la
+lib/libplugin.so.0.0
+include/jpilot/libplugin.h
+include/jpilot/prefs.h
+include/jpilot/utils.h
+@dirrm include/jpilot
