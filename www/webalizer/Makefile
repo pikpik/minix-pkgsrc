@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/05/03 20:25:37 tv Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/26 20:25:43 mjl Exp $
 #
 
 DISTNAME=	webalizer-1.30-04-src
@@ -12,7 +12,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	mjl@emsi.priv.at
 HOMEPAGE=	http://www.mrunix.net/webalizer/
 
-DEPENDS=	gd-1.3p1:../../graphics/gd
+DEPENDS=	gd-1.6.3:../../graphics/gd
 
 WRKSRC=		${WRKDIR}/webalizer-1.30-04
 
