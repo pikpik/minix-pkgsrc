@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.4 1999/06/24 23:40:13 abs Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.5 1999/08/01 18:34:41 abs Exp $
 
 # (Somewhat quickly) Written by David Brownlee <abs@netbsd.org>.
 # Caveats:
@@ -16,6 +16,8 @@ use strict;
 use File::Find;
 use vars qw($opt_P $opt_d $opt_h $opt_i $opt_l $opt_m $opt_o $opt_p $opt_r);
 my(%pkg2dir,@oldprebuiltpackages);
+
+$ENV{PATH}.=':/usr/sbin';
 
 if (! &Getopts('P:dhilmopr') || $opt_h ||
 	! ( defined($opt_d) || defined($opt_i) || defined($opt_l) ||
