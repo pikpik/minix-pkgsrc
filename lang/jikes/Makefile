@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2002/10/30 06:46:07 skrll Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/30 07:22:09 skrll Exp $
 #
 
-DISTNAME=	jikes-1.17
+DISTNAME=	jikes-1.18
 CATEGORIES=	lang
-MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/1.17/
+MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/1.18/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
