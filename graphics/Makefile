@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2000/07/16 20:25:21 rh Exp $
+# $NetBSD: Makefile,v 1.84 2000/07/18 07:53:02 itohy Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -30,8 +30,8 @@
     SUBDIR += giflib
     SUBDIR += giftrans
     SUBDIR += gimp
-#   SUBDIR += gimp-current		# Not built by default
-#   SUBDIR += gimp-helpbrowser		# Not built by default
+    SUBDIR += gimp-current
+    SUBDIR += gimp-helpbrowser
     SUBDIR += giram
     SUBDIR += gnuplot
     SUBDIR += gphoto

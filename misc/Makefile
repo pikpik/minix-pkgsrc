@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.63 2000/07/15 06:54:12 rh Exp $
+#	$NetBSD: Makefile,v 1.64 2000/07/15 07:17:24 rh Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += asr-manpages
@@ -20,7 +20,7 @@
     SUBDIR += fd
     SUBDIR += fep
     SUBDIR += figlet
-#    SUBDIR += freewnn-common		# base package only
+#   SUBDIR += freewnn-common	# base package for japanese/freewnn-*
     SUBDIR += git
     SUBDIR += gnofin
     SUBDIR += gnome-pim
