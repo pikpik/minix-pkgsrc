@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/12/03 08:30:58 jlam Exp $
-
-.include "../../www/php4/Makefile.module"
+# $NetBSD: Makefile,v 1.3 2001/12/31 23:55:19 jlam Exp $
 
 MODNAME=		zlib
 CATEGORIES+=		archivers
@@ -8,6 +6,9 @@ PKGREVISION=		# empty
 COMMENT=		PHP4 extension for zlib compression
 
 USE_BUILDLINK_ONLY=	YES
+
+.include "../../www/php4/Makefile.module"
+
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${BUILDLINK_DIR}
 
 post-extract:
