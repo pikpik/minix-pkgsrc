@@ -1,3 +1,4 @@
+@comment $NetBSD$
 netperf/netperf
 netperf/netserver
 netperf/tcp_range_script
