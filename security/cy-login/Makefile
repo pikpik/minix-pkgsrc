@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/26 02:27:52 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:07 wiz Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy-login/}
 PKGREVISION=	1
@@ -15,7 +15,7 @@ CONFIGURE_ARGS+=	--enable-plain		# PLAIN
 .if defined(USE_PAM)
 .  include "../../security/PAM/buildlink3.mk"
 BUILD_DEFS+=		USE_PAM
-CONFIGURE_ARGS+=	--with-pam=${BUILDLINK_PREFIX.pam}
+CONFIGURE_ARGS+=	--with-pam=${BUILDLINK_PREFIX.linux-pam}
 .endif
 
 BUILD_DIRS=	${WRKSRC}/plugins
