@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ai,v 1.9 2001/08/02 03:37:40 jlam Exp $
 
 --- systemv/Makefile.orig	Thu Jul  5 11:58:47 2001
 +++ systemv/Makefile
@@ -13,9 +13,9 @@ $NetBSD$
 +	$(RM) $(SBINDIR)/reject
 +	$(LN) accept $(SBINDIR)/reject
 +	$(RM) $(BINDIR)/enable
-+	$(LN) accept $(BINDIR)/enable
++	$(LN) $(SBINDIR)/accept $(BINDIR)/enable
 +	$(RM) $(BINDIR)/disable
-+	$(LN) accept $(BINDIR)/disable
++	$(LN) $(SBINDIR)/accept $(BINDIR)/disable
  	$(INSTALL_BIN) -m 4755 -o $(CUPS_USER) -g $(CUPS_GROUP) lppasswd $(BINDIR)
  
  
