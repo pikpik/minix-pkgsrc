@@ -1,24 +1,26 @@
-# $NetBSD: Makefile,v 1.2 2000/05/12 14:17:29 tron Exp $
+# $NetBSD: Makefile,v 1.3 2000/06/01 11:23:20 rh Exp $
 #
 
-DISTNAME=		bonobo-0.4
+DISTNAME=		bonobo-0.15
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=/unstable/sources/bonobo/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 
-DEPENDS+=		bison-*:../../devel/bison
+BUILD_DEPENDS+=		${LOCALBASE}/bin/bison:../../devel/bison
 DEPENDS+=		gdk-pixbuf-*:../../graphics/gdk-pixbuf
+DEPENDS+=		oaf-*:../../devel/oaf
+DEPENDS+=		gnome-print>=0.16:../../print/gnome-print
 
-USE_PKGLIBTOOL=		YES
+USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include"
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"
 CONFIGURE_ENV+=		X11BASE="${X11BASE}"
-LDFLAGS+=		"-L${LOCALBASE}/lib"
+LDFLAGS+=		-Wl,-R${LOCALBASE}/lib -L${LOCALBASE}/lib
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
