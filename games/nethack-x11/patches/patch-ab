@@ -1,44 +1,133 @@
-$NetBSD: patch-ab,v 1.5 2001/06/26 19:11:04 jlam Exp $
+$NetBSD$
 
---- sys/unix/Makefile.src.orig	Sat Aug  5 13:52:57 2000
-+++ sys/unix/Makefile.src	Thu Aug 10 19:28:31 2000
-@@ -144,8 +144,8 @@
- # flags for debugging:
- # CFLAGS = -g -I../include
+--- sys/unix/Makefile.top.orig	Fri Mar 22 17:15:28 2002
++++ sys/unix/Makefile.top	Fri Mar 22 17:24:57 2002
+@@ -14,18 +14,17 @@
+ # MAKE = make
  
--CFLAGS = -O -I../include
--LFLAGS =
-+CFLAGS += -I../include -I${BUILDLINK_X11_DIR}/include
-+LFLAGS = ${LDFLAGS}
+ # make NetHack
+-PREFIX	 = /usr
+ GAME     = nethack
+ # GAME     = nethack.prg
+-GAMEUID  = games
+-GAMEGRP  = bin
++GAMEUID  = root
++GAMEGRP  = games
  
- # The Qt and Be window systems are written in C++, while the rest of
- # NetHack is standard C.  If using Qt, uncomment the LD line here to get
-@@ -203,8 +203,8 @@
+ # Permissions - some places use setgid instead of setuid, for instance
+ # See also the option "SECURE" in include/config.h
+-GAMEPERM = 04755
+-FILEPERM = 0644
++GAMEPERM = 2755
++FILEPERM = 0664
+ EXEPERM  = 0755
+-DIRPERM  = 0755
++DIRPERM  = 0775
  
- #
- #
--WINSRC = $(WINTTYSRC)
--WINOBJ = $(WINTTYOBJ)
-+WINSRC = $(WINX11SRC)
-+WINOBJ = $(WINX11OBJ)
+ # GAMEDIR also appears in config.h as "HACKDIR".
+ # VARDIR may also appear in unixconf.h as "VAR_PLAYGROUND" else GAMEDIR
+@@ -35,12 +34,12 @@
+ # therefore there should not be anything in GAMEDIR that you want to keep
+ # (if there is, you'll have to do the installation by hand or modify the
+ # instructions)
+-GAMEDIR  = $(PREFIX)/games/lib/$(GAME)dir
++GAMEDIR  = $(PREFIX)/share/$(GAME)dir
+ VARDIR  = $(GAMEDIR)
+-SHELLDIR = $(PREFIX)/games
++SHELLDIR = $(PREFIX)/bin
  
- # on some systems the termcap library is in -ltermcap or -lcurses
- # on 386 Xenix, the -ltermlib tputs() seems not to work; use -lcurses instead
-@@ -224,7 +224,7 @@
- #
- # libraries for X11
- # If USE_XPM is defined in config.h, you will also need -lXpm here.
--WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11
-+WINX11LIB = -lXaw -lXmu -lXext -lXt -lX11 -lXpm
- # WINX11LIB = -lXaw -lXmu -lXt -lX11
- # WINX11LIB = -lXaw -lXmu -lXext -lXt -lXpm -lX11 -lm
- # WINX11LIB = -lXaw -lXmu -lXpm -lXext -lXt -lX11 -lSM -lICE -lm # BSD/OS 2.0
-@@ -244,7 +244,7 @@
- # libraries for BeOS 
- WINBELIB = -lbe
+ # per discussion in Install.X11 and Install.Qt
+-VARDATND = 
++VARDATND =  pet_mark.xbm rip.xpm
+ # VARDATND = x11tiles pet_mark.xbm
+ # VARDATND = x11tiles pet_mark.xbm rip.xpm
+ # for Atari/Gem
+@@ -87,9 +86,12 @@
+ $(GAME):
+ 	( cd src ; $(MAKE) )
  
--WINLIB = $(WINTTYLIB)
-+WINLIB = $(WINX11LIB)
+-all:	$(GAME) Guidebook $(VARDAT) dungeon spec_levs check-dlb
++all:	$(GAME) datastuff
+ 	@echo "Done."
  
- # any other strange libraries your system needs (for Sysunix only -- the more
- # specialized targets should already be right)
++datastuff: Guidebook $(VARDAT) dungeon spec_levs check-dlb recover
++	@echo "Data Sets Built."
++
+ # Note: many of the dependencies below are here to allow parallel make
+ # to generate valid output
+ 
+@@ -102,6 +104,9 @@
+ data: $(GAME)
+ 	( cd dat ; $(MAKE) data )
+ 
++recover:
++	( cd util ; $(MAKE) recover )
++
+ rumors: $(GAME)
+ 	( cd dat ; $(MAKE) rumors )
+ 
+@@ -164,6 +169,11 @@
+ 	( cd util ; $(MAKE) dlb )
+ 	( cd dat ; ../util/dlb cf nhdat $(DATDLB) )
+ 
++binfiles: $(GAME)
++	cp src/$(GAME) $(SHELLDIR)/$(GAME)$(GTYPE)
++	-( cd $(GAMEDIR) ; $(CHOWN) $(GAMEUID) $(SHELLDIR)/$(GAME)$(GTYPE) ; \
++		$(CHGRP) $(GAMEGRP) $(SHELLDIR)/$(GAME)$(GTYPE) )
++	 chmod $(GAMEPERM) $(SHELLDIR)/$(GAME)$(GTYPE)
+ 
+ dofiles:
+ 	target=`sed -n					\
+@@ -173,16 +183,13 @@
+ 		-e '}' 					\
+ 	  	-e '$$s/.*/nodlb/p' < dat/options` ;	\
+ 	$(MAKE) dofiles-$${target-nodlb}
+-	cp src/$(GAME) $(GAMEDIR)
+ 	-rm -f $(SHELLDIR)/$(GAME)
+ 	sed -e 's;/usr/games/lib/nethackdir;$(GAMEDIR);' \
+ 		-e 's;HACKDIR/nethack;HACKDIR/$(GAME);' \
++		-e 's;XXXPREFIXXXX;$(PREFIX);' \
+ 		< sys/unix/nethack.sh \
+ 		> $(SHELLDIR)/$(GAME)
+ # set up their permissions
+-	-( cd $(GAMEDIR) ; $(CHOWN) $(GAMEUID) $(GAME) ; \
+-			$(CHGRP) $(GAMEGRP) $(GAME) )
+-	chmod $(GAMEPERM) $(GAMEDIR)/$(GAME)
+ 	-$(CHOWN) $(GAMEUID) $(SHELLDIR)/$(GAME)
+ 	$(CHGRP) $(GAMEGRP) $(SHELLDIR)/$(GAME)
+ 	chmod $(EXEPERM) $(SHELLDIR)/$(GAME)
+@@ -218,16 +225,16 @@
+ # and a reminder
+ 	@echo You may also want to install the man pages via the doc Makefile.
+ 
+-install: $(GAME) $(VARDAT) dungeon spec_levs
++install-dat: $(VARDAT) dungeon spec_levs
+ # set up the directories
+ # not all mkdirs have -p; those that don't will create a -p directory
+ 	-mkdir -p $(SHELLDIR)
+-	-rm -rf $(GAMEDIR) $(VARDIR)
+ 	-mkdir -p $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+ 	-rmdir ./-p
+ 	-$(CHOWN) $(GAMEUID) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+ 	$(CHGRP) $(GAMEGRP) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
+-	chmod $(DIRPERM) $(GAMEDIR) $(VARDIR) $(VARDIR)/save
++	chmod $(DIRPERM) $(GAMEDIR) $(VARDIR)
++	chmod 770 $(VARDIR)/save
+ # set up the game files
+ 	( $(MAKE) dofiles )
+ # set up some additional files
+@@ -235,6 +242,14 @@
+ 	-( cd $(VARDIR) ; $(CHOWN) $(GAMEUID) perm record logfile ; \
+ 			$(CHGRP) $(GAMEGRP) perm record logfile ; \
+ 			chmod $(FILEPERM) perm record logfile )
++	-mkdir -p $(PREFIX)/share/doc/nethack
++	cp doc/Guidebook $(PREFIX)/share/doc/nethack
++	chown $(GAMEUID):$(GAMEGRP) $(PREFIX)/share/doc/nethack/Guidebook
++	chmod $(FILEPERM) $(PREFIX)/share/doc/nethack/Guidebook
++	cp util/recover $(PREFIX)/bin/recover
++	chown 0:0 $(PREFIX)/bin/recover
++	chmod 755 $(PREFIX)/bin/recover
++
+ # and a reminder
+ 	@echo You may also want to reinstall the man pages via the doc Makefile.
+ 
