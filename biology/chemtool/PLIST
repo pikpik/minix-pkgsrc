@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 21:27:56 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/05/03 22:03:08 jtb Exp $
 bin/chemtool
 bin/cht
 man/man1/chemtool.1
@@ -29,10 +29,10 @@ share/examples/chemtool/reaction.cht
 share/examples/chemtool/rutamycin_b.cht
 share/examples/chemtool/tcdd.cht
 share/examples/chemtool/viagra.cht
-share/locale/cs/LC_MESSAGES/chemtool.mo
-share/locale/de/LC_MESSAGES/chemtool.mo
-share/locale/fr/LC_MESSAGES/chemtool.mo
-share/locale/pl/LC_MESSAGES/chemtool.mo
-share/locale/ru/LC_MESSAGES/chemtool.mo
+${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/chemtool.mo
+${PKGLOCALEDIR}/locale/de/LC_MESSAGES/chemtool.mo
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/chemtool.mo
+${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/chemtool.mo
+${PKGLOCALEDIR}/locale/ru/LC_MESSAGES/chemtool.mo
 @dirrm share/examples/chemtool
 @dirrm share/doc/chemtool
