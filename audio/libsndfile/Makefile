@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2002/10/18 13:26:12 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/14 17:30:31 jmmv Exp $
 #
 
-DISTNAME=	libsndfile-1.0.3
+DISTNAME=	libsndfile-1.0.4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.zipworld.com.au/~erikd/libsndfile/
 
@@ -12,7 +12,7 @@ COMMENT=	library for reading and writing audio files
 USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../mk/bsd.prefs.mk"
 
