@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/11/15 13:52:58 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/16 13:30:43 wiz Exp $
 #
 
 VERS=		3.87
@@ -6,7 +6,7 @@ DISTNAME=	lame${VERS}beta
 PKGNAME=	lame-${VERS}
 WRKSRC=		${WRKDIR}/lame${VERS}
 CATEGORIES=	audio
-MASTER_SITES=	http://lame.sourceforge.net/download/beta/
+MASTER_SITES=	ftp://lame.sourceforge.net/pub/lame/src/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.mp3dev.org/mp3/
