@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/12/21 18:14:18 skrll Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/17 17:37:25 wiz Exp $
 #
 
 DISTNAME=	icu-1.7
@@ -14,6 +14,9 @@ WRKSRC=		${WRKDIR}/icu/source
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 
+PLIST_INIT=	${PKGDIR}/PLIST
+PLIST_SRC=	${WRKSRC}/PLIST
+
 CONFIGURE_ARGS+= --disable-threads
 
 CPPFLAGS+=	-I${LOCALBASE}/include
@@ -25,5 +28,9 @@ pre-configure:
 
 test: build
 	cd ${WRKSRC} && ${MAKE_PROGRAM} check
+
+post-install:
+	@${CP} ${PLIST_INIT} ${PLIST_SRC}
+	@(cd ${PREFIX} && ls lib/icu/1.7/libicudt17[lb].so >> ${PLIST_SRC})
 
 .include "../../mk/bsd.pkg.mk"
