@@ -1,6 +1,6 @@
 $NetBSD$
 
---- archive/msg2archive.c.orig	Thu Feb 20 18:04:00 2003
+--- archive/msg2archive.c.orig	2003-02-21 04:04:00.000000000 +1100
 +++ archive/msg2archive.c
 @@ -21,7 +21,6 @@
  #include <ctype.h>
