@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.274 2005/02/13 12:30:08 grant Exp $
+# $NetBSD: Makefile,v 1.275 2005/02/20 15:00:22 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -133,8 +133,6 @@ SUBDIR+=	libsidplay
 SUBDIR+=	libsndfile
 SUBDIR+=	libvisual
 SUBDIR+=	libvisual-bmp
-SUBDIR+=	libvisual-gforce
-SUBDIR+=	libvisual-nebulus
 SUBDIR+=	libvisual-plugins
 SUBDIR+=	libvisual-xmms
 SUBDIR+=	libvorbis
