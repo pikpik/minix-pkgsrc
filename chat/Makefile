@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2005/02/22 14:35:21 minskim Exp $
+# $NetBSD: Makefile,v 1.108 2005/02/25 18:48:36 reed Exp $
 #
 
 COMMENT=	Communication programs
@@ -25,6 +25,7 @@ SUBDIR+=	fugu
 SUBDIR+=	gabber
 SUBDIR+=	gaim
 SUBDIR+=	gaim-encryption
+SUBDIR+=	gaim-otr
 SUBDIR+=	gale
 SUBDIR+=	gg2
 SUBDIR+=	gnomeicu
@@ -50,6 +51,7 @@ SUBDIR+=	jabberd2
 SUBDIR+=	kadu
 SUBDIR+=	kmess
 SUBDIR+=	libirc
+SUBDIR+=	libotr
 SUBDIR+=	libtlen
 SUBDIR+=	libyahoo
 SUBDIR+=	licq-core
