@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2002/05/12 16:54:45 hubertf Exp $
 
 DISTNAME=		solid-pop3d-0.15
 CATEGORIES=		mail
@@ -18,6 +18,8 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--enable-logextend	\
 			--enable-statistics
+
+BUILD_DEFS+=		USE_INET6
 
 .if defined(SPOP3D_ENABLE_APOP)
 CONFIGURE_ARGS+=	--enable-apop

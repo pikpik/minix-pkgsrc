@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2003/12/23 16:43:56 fredb Exp $
+# $NetBSD: Makefile,v 1.49 2004/01/24 15:23:47 grant Exp $
 
 DISTNAME=	wwwoffle-2.7f
 PKGREVISION=	2
@@ -24,6 +24,8 @@ PLIST_SUBST+=		GTAR="${GTAR}"
 INSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
 
 RCD_SCRIPTS=		wwwoffled
+
+BUILD_DEFS+=		USE_INET6
 
 post-build:
 	cd ${WRKSRC}/cache/search/htdig/scripts; \

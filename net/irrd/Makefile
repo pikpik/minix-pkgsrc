@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/20 12:22:19 agc Exp $
+# $NetBSD: Makefile,v 1.22 2004/03/26 02:27:48 wiz Exp $
 
 DISTNAME=	irrd2.1.5
 PKGNAME=	irrd-2.1.5
@@ -23,6 +23,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-gdbm
 CONFIGURE_ARGS+=--disable-thread
 CONFIGURE_ENV+=	YACC=bison
+
+BUILD_DEFS+=	USE_INET6
 
 CPPFLAGS+=	-I${LOCALBASE}/include
 CFLAGS+=	-g

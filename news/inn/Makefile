@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2004/05/23 14:40:00 tron Exp $
+# $NetBSD: Makefile,v 1.57 2004/06/02 11:43:55 tron Exp $
 
 DISTNAME=		inn-2.4.1
 CATEGORIES=		news
@@ -13,6 +13,7 @@ COMMENT=		The public release of InterNet News (INN)
 CONFLICTS+=		nntpclnt-[0-9]*
 
 .include "Makefile.common"
+BUILD_DEFS+=		USE_INET6
 BUILD_DEFS+=		INN_DATA_DIR INN_USER INN_GROUP
 FILES_SUBST+=		INN_DATA_DIR=${INN_DATA_DIR}
 
