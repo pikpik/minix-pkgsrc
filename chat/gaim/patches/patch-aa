@@ -1,10 +1,10 @@
 $NetBSD$
 
---- configure.orig	Thu Sep 20 14:07:04 2001
+--- configure.orig	Sun Feb 17 15:03:26 2002
 +++ configure
-@@ -9514,8 +9514,6 @@
+@@ -9644,8 +9644,6 @@
+ 
  fi
- done
  
 -CFLAGS="$CFLAGS -I/usr/local/include -I/opt/include -I\$(top_srcdir)"
 -
