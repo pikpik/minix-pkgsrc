@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/02/16 15:25:14 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/23 15:04:54 taca Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
+PKGNAME=		chasen-${CHASEN_VERSION}${CHASEN_NBVERSION}
 CATEGORIES=		japanese
 MASTER_SITES=		# empty
 DISTFILES=		# empty
