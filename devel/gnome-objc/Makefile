@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 17:11:59 rh Exp $
 #
 
 DISTNAME=	gnome-objc-1.0.40
 CATEGORIES=	devel lang gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/gnome-objc}
+MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/gnome-objc/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/
