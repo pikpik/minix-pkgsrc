@@ -1,13 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/22 17:26:12 hubertf Exp $
 #
 
 DISTNAME=	${PKGNAME}-source
 PKGNAME=	htmldoc-1.4
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.easysw.com/pub/htmldoc/
-HOMEPAGE=	http://www.easysw.com/~mike/htmldoc/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.easysw.com/~mike/htmldoc/
 
 GNU_CONFIGURE=	YES
 WRKSRC=		${WRKDIR}/${PKGNAME}
