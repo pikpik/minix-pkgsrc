@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/24 21:44:37 jtb Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/30 17:27:31 cjep Exp $
 
 DISTNAME=	lua-4.0.1
 PKGNAME=	lua4-4.01
@@ -20,7 +20,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.lua.org/
 COMMENT=	Powerful light-weight language for extending applications
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 BUILD_DIRS=	${WRKSRC}/objdir
 
