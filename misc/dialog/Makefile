@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/01/15 18:46:30 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2000/07/28 20:30:08 jlam Exp $
 #
 
 DISTNAME=       dialog-0.6z
@@ -21,8 +21,10 @@ post-install:
 	${RM} ${WRKSRC}/samples/${file}.tmp
 .endfor
 
-.include "../../mk/bsd.pkg.mk"
+.include "../../mk/bsd.prefs.mk"
 
 .if defined(NEED_NCURSES) && ${NEED_NCURSES} == "YES"
 MAKE_ENV+=	HAVE_TRUE_NCURSES=true
 .endif
+
+.include "../../mk/bsd.pkg.mk"
