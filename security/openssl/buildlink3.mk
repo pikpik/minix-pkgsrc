@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.17 2004/03/18 09:12:14 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.18 2004/03/26 02:22:38 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OPENSSL_BUILDLINK3_MK:=	${OPENSSL_BUILDLINK3_MK}+
@@ -25,7 +25,9 @@ SSLBASE=	${BUILDLINK_PREFIX.openssl}
 BUILD_DEFS+=	SSLBASE
 .endif	# OPENSSL_BUILDLINK3_MK
 
-.if defined(USE_RSAREF2) && !empty(USE_RSAREF2:M[yY][eE][sS])
+PKG_OPTIONS.openssl?=	${PKG_DEFAULT_OPTIONS}
+
+.if !empty(PKG_OPTIONS.openssl:Mrsaref)
 .  include "../../security/rsaref/buildlink3.mk"
 .endif
 
