@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:24:40 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:45:45 grant Exp $
 #
 
 DISTNAME=	bulk_mailer-1.13
@@ -10,6 +10,8 @@ COMMENT=	Assist in delivery of mail to large numbers of recipients
 
 HAS_CONFIGURE=	YES
 ALL_TARGET=	bulk_mailer
+
+CPPFLAGS.SunOS+=	-DPIPECOMMAND=\"/usr/sbin/sendmail -bs %s\"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bulk_mailer ${PREFIX}/bin/bulk_mailer
