@@ -1,3 +1,4 @@
+$NetBSD$
 --- ./configs/solaris-g++-static.orig	Wed Apr 12 14:26:52 2000
 +++ ./configs/solaris-g++-static	Wed Jun 14 22:39:39 2000
 @@ -1,31 +1,32 @@
