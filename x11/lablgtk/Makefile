@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:36 tv Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/24 17:21:01 jmmv Exp $
 
 DISTNAME=	lablgtk-1.2.6
 PKGREVISION=	3
@@ -11,6 +11,7 @@ COMMENT=	GTK+ bindings for ocaml
 
 USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
+USE_X11=	YES
 
 BUILDLINK_DEPMETHOD.ocaml=	full
 
