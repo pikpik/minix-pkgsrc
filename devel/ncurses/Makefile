@@ -10,8 +10,7 @@ HOMEPAGE=		http://www.gnu.org/software/ncurses/ncurses.html
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-CONFIGURE_ARGS+=	--with-normal --enable-bsdpad \
-			--without-debug --without-cxx
+CONFIGURE_ARGS+=	--with-normal --without-debug --enable-bsdpad
 MAKE_ENV+=		NCURSES_MAJOR="${NCURSES_MAJOR}" \
 			NCURSES_MINOR="${NCURSES_MINOR}"
 
