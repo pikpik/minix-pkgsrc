@@ -1,0 +1,7 @@
+@comment $NetBSD$
+etc/rc.d/rtspd.sh
+man/man8/rtspd.8
+sbin/rtspd
+share/doc/rtspd/README
+share/doc/rtspd/license.txt
+@dirrm share/doc/rtspd
