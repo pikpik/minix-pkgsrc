@@ -1,7 +1,7 @@
 $NetBSD$
 
---- etc/papd/Makefile.orig	Tue May 20 18:35:42 1997
-+++ etc/papd/Makefile
+--- etc/papd/Makefile.orig	Tue May 20 10:35:42 1997
++++ etc/papd/Makefile	Thu Apr 12 00:01:30 2001
 @@ -20,6 +20,7 @@
  	fi; \
          ${MAKE} ${MFLAGS} CC="${CC}" ADDLIBS="${ADDLIBS}" DEFS="${DEFS}" \
@@ -10,3 +10,12 @@ $NetBSD$
  	    SBINDIR="${SBINDIR}" BINDIR="${BINDIR}" RESDIR="${RESDIR}" \
  	    ETCDIR="${ETCDIR}" LIBDIR="${LIBDIR}" INCDIR="${INCDIR}" \
  	    KRBLIBS="$${KRBLIBS}" KRBLIBDIRS="$${KRBLIBDIRS}" \
+@@ -56,7 +57,7 @@
+ 	    ${CPPFLAGS} -c main.c
+ 
+ install : all
+-	${INSTALL} -c papd ${SBINDIR}
++	${INSTALL} -c papd ${LIBEXECDIR}
+ 
+ clean :
+ 	rm -f a.out core* *.o *.bak *[Ee]rrs tags

@@ -1,7 +1,7 @@
 $NetBSD$
 
---- etc/afpd/Makefile.orig	Sat Feb  6 20:02:31 1999
-+++ etc/afpd/Makefile
+--- etc/afpd/Makefile.orig	Sat Feb  6 12:02:31 1999
++++ etc/afpd/Makefile	Wed Apr 11 23:59:46 2001
 @@ -72,6 +72,7 @@
  	fi; \
  	${MAKE} ${MFLAGS} CC="${CC}" ADDLIBS="${ADDLIBS}" DEFS="${DEFS}" \
@@ -18,7 +18,7 @@ $NetBSD$
  	    SBINDIR="${SBINDIR}" BINDIR="${BINDIR}" RESDIR="${RESDIR}" \
  	    ETCDIR="${ETCDIR}" LIBDIR="${LIBDIR}" INCDIR="${INCDIR}"
  
-@@ -119,6 +121,7 @@
+@@ -119,17 +121,19 @@
  	for i in ${SUBDIRS}; \
  	do (cd $$i; ${MAKE} ${MFLAGS} CC="${CC}" \
  		ADDLIBS="${ADDLIBS}" DEFS="${DEFS}" OPTOPTS="${OPTOPTS}" \
@@ -26,7 +26,12 @@ $NetBSD$
  	        SBINDIR="${SBINDIR}" BINDIR="${BINDIR}" RESDIR="${RESDIR}" \
  	        ETCDIR="${ETCDIR}" LIBDIR="${LIBDIR}" INCDIR="${INCDIR}" \
  		DESTDIR="${DESTDIR}" INSTALL="${INSTALL}" \
-@@ -130,6 +133,7 @@
+ 		install); \
+ 	done
+-	${INSTALL} -c afpd ${SBINDIR}
++	${INSTALL} -c afpd ${LIBEXECDIR}
+ 
+ clean :
  	for i in ${SUBDIRS}; \
  	do (cd $$i; ${MAKE} ${MFLAGS} CC="${CC}" \
  		ADDLIBS="${ADDLIBS}" DEFS="${DEFS}" OPTOPTS="${OPTOPTS}" \
