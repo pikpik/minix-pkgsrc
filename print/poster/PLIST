@@ -1,0 +1,3 @@
+@comment $NetBSD: $
+bin/poster
+man/man1/poster.1
