@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/13 09:11:53 frueauf Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/25 09:51:51 wiz Exp $
 #
 
 DISTNAME=	nessus-libraries-${VERS}
@@ -10,7 +10,7 @@ USE_BUILDLINK2=	yes
 USE_LIBTOOL=	yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-DEPENDS+=	bison-[0-9]*:../../devel/bison
+BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
 
 WRKSRC=		${WRKDIR}/nessus-libraries
 
