@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/addnerd
+share/addnerd.defaults
+man/man1/addnerd.1
