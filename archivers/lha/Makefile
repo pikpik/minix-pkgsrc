@@ -3,7 +3,7 @@
 # Date created:         26 Dec 1994
 # Whom:                 ache
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1997/10/27 03:22:14 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.9 1996/12/15 02:05:58 max Exp 
 #
 
@@ -14,6 +14,8 @@ MASTER_SITES=   ftp://ftp.leo.chubu.ac.jp/pub/tools/
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=     ache@FreeBSD.ORG
+
+MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP} BINMODE=${BINMODE}
 
 MANLANG=	ja_JP.EUC
 MAN1=		lha.1
