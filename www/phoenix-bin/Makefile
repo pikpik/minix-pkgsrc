@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2003/04/14 19:56:28 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/14 22:59:31 grant Exp $
 #
 
-#DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
+DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
 PKGNAME=		phoenix-bin-0.5
 WRKSRC=			${WRKDIR}/phoenix
 CATEGORIES=		www
