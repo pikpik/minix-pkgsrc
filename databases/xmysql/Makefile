@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/02/15 05:54:19 bad Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/23 23:14:23 tron Exp $
 #
 
 DISTNAME=	xmysql-1.10
@@ -9,7 +9,7 @@ MAINTAINER=	bad@netbsd.org
 HOMEPAGE=	http://web.wt.net/~dblhack
 
 DEPENDS=	mysql-client-3.22.32:../../databases/mysql-client
-DEPENDS+=	xforms-0.88:../../x11/xforms
+DEPENDS+=	xforms>=0.88nb1:../../x11/xforms
 
 USE_X11=	YES
 USE_XPM=	YES
