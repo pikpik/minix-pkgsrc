@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.449 2004/02/29 03:33:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.450 2004/03/03 10:05:40 recht Exp $
 #
 
 COMMENT=	Networking tools
@@ -321,6 +321,7 @@ SUBDIR+=	tkined
 SUBDIR+=	tn5250
 SUBDIR+=	tnftp
 SUBDIR+=	tnftpd
+SUBDIR+=	torrentutils
 SUBDIR+=	totd
 SUBDIR+=	traceroute-as
 SUBDIR+=	trafshow
