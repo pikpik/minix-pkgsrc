@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/02/28 17:45:45 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2002/06/10 09:13:31 sakamoto Exp $
 #
 
 PKGNAME=	ja-FreeWnn-server-bin-1.10
@@ -17,5 +17,15 @@ FILESDIR=	${.CURDIR}/../ja-freewnn-lib/files
 DISTINFO_FILE=	${.CURDIR}/../ja-freewnn-lib/distinfo
 PATCHDIR=	${.CURDIR}/../ja-freewnn-lib/patches
 
+.include "../../mk/bsd.prefs.mk"
+
+FREEWNN_USER?=	wnn
+FREEWNN_GROUP?=	jserver
+BUILD_DEFS+=	FREEWNN_USER FREEWNN_GROUP
+
+PKG_GROUPS=	${FREEWNN_GROUP}
+PKG_USERS=	${FREEWNN_USER}:${FREEWNN_GROUP}::Freewnn\\ user
+
+.include "../../mk/bsd.pkg.install.mk"
 .include "../ja-freewnn-lib/buildlink.mk"
 .include "../ja-freewnn-lib/Makefile.common"
