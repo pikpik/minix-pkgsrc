@@ -2,6 +2,15 @@ $NetBSD$
 
 --- configure.in.orig	Wed Jan  3 12:44:40 2001
 +++ configure.in
+@@ -534,7 +534,7 @@
+ AC_SUBST(INITDDIR)
+ 
+ dnl Setup default locations...
+-CUPS_SERVERROOT='${sysconfdif}/cups'
++CUPS_SERVERROOT='${sysconfdir}/cups'
+ CUPS_LOGDIR='${localstatedir}/log/cups'
+ CUPS_REQUESTS='${localstatedir}/spool/cups'
+ 
 @@ -591,8 +591,8 @@
  AC_SUBST(CUPS_DATADIR)
  
