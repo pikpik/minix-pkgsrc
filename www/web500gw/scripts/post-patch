@@ -1,5 +1,0 @@
-#!/bin/sh
-# $NetBSD:$
-cd ${WRKSRC}
-mv -f Makefile Makefile.pre
-sed -e "s|@PREFIX@|${PREFIX}|g" < Makefile.pre > Makefile
