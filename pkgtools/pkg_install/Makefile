@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2004/11/02 00:10:15 erh Exp $
+# $NetBSD: Makefile,v 1.106 2004/12/09 21:29:06 erh Exp $
 
 # Notes to package maintainers:
 #
@@ -61,7 +61,7 @@ VERSION!=		${AWK} -F '"' '/PKGTOOLS_VERSION/ {print $$2}' \
 			${FILESDIR}/lib/version.h
 
 do-extract:
-	@${CP} -Rp ${FILESDIR} ${WRKSRC}
+	@${CP} -R ${FILESDIR} ${WRKSRC}
 
 post-install:
 	if [ ! -f ${PKG_DBDIR}/pkgdb.byfile.db ]; then			\

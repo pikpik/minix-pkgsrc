@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/08/21 08:39:54 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2004/08/27 03:45:08 jlam Exp $
 
 DISTNAME=		nbsed-20040821
 CATEGORIES=		textproc pkgtools
@@ -23,6 +23,6 @@ CONFIGURE_ARGS+=	--program-transform-name="s,sed,nbsed,"
 .endif
 
 do-extract:
-	@${CP} -Rp ${FILESDIR} ${WRKSRC}
+	@${CP} -R ${FILESDIR} ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"

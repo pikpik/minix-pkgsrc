@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/07 02:01:38 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/14 16:11:05 ben Exp $
 
 DISTNAME=	pkgclean-20041014
 CATEGORIES=	pkgtools
@@ -19,7 +19,7 @@ INSTALLATION_DIRS=	bin man/cat1 man/man1
 NROFF=		nroff -mandoc
 
 do-extract:
-	@${CP} -Rp ${FILESDIR} ${WRKSRC}
+	@${CP} -R ${FILESDIR} ${WRKSRC}
 
 do-build:
 	${CC} ${CFLAGS} -o ${WRKSRC}/pkgclean ${WRKSRC}/pkgclean.c

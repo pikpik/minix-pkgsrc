@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/07/27 10:25:24 grant Exp $
+# $NetBSD: Makefile,v 1.10 2005/01/04 23:48:06 lukem Exp $
 #
 
 DISTNAME=		tnftp-20050103
@@ -40,6 +40,6 @@ OPSYSVARS+=		MAKE_ENV
 MAKE_ENV.SunOS+=	CPPFLAGS=""
 
 do-extract:
-	@${CP} -Rp ${FILESDIR} ${WRKSRC}
+	@${CP} -R ${FILESDIR} ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
