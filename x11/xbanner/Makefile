@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1 1998/08/18 21:54:39 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/08/18 22:29:22 tron Exp $
 
 DISTNAME=		XBanner1.31
 PKGNAME=		xbanner-1.31
-CATEGORIES=		games x11
+CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.digital.com/pub/linux/XBanner/
 
 MAINTAINER=		root@garbled.net
