@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/22 11:02:12 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/25 00:20:25 jlam Exp $
 #
 
 DISTNAME=		plugger-3.2-linux-x86-glibc
@@ -33,7 +33,7 @@ PLUGGERVERS=		${PLUGGERFULL:C/.*-//}
 PLUGGERNAME=		${PLUGGERFULL:C/-.*//}
 NS_PLUGINS_DIR=		${PREFIX}/lib/netscape/plugins
 
-LDD?=			${TRUE}
+CHECK_SHLIBS=		no
 
 do-install:
 .if ${BINNAME} != common
