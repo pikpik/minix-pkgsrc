@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.3 1999/04/14 04:50:22 proff Exp $
+# $NetBSD: Makefile,v 2.0 1999/06/09 17:05:34 agc Exp $
 
-DISTNAME=	festvox-jph-1.4
+DISTNAME=	festvox-jph-2.0
 WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
-DISTFILES=	voice_jph-1.4.tar.gz
+DISTFILES=	voice_jph_di-2.0.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts
 
-DEPENDS+=	festival-1.3.1:../festival \
-		festlex-ogi-1.4:../festlex-ogi
+DEPENDS+=	festival-1.4.0:../festival \
+		festlex-ogi-2.0:../festlex-ogi
 
 LICENSE=	no-commercial-use
 

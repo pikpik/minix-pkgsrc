@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.3 1999/04/14 04:50:21 proff Exp $
+# $NetBSD: Makefile,v 1.4 1999/06/09 17:05:33 agc Exp $
 
-DISTNAME=	festogi-spanish-1.4
+DISTNAME=	festogi-spanish-2.0
 WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
-DISTFILES=	OGIspanish-1.4.tar.gz
+DISTFILES=	OGIspanish-2.0.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts
 
-DEPENDS+=	festival-1.3.1:../festival
+DEPENDS+=	festival-1.4.0:../festival
 
 LICENSE=	no-commercial-use
 

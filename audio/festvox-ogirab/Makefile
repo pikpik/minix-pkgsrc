@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.3 1999/04/14 04:50:25 proff Exp $
+# $NetBSD: Makefile,v 2.0 1999/06/09 17:05:35 agc Exp $
 
-DISTNAME=	festvox-ogirab-1.4
+DISTNAME=	festvox-ogirab-2.0
 WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
-DISTFILES=	voice_ogirab-1.4.tar.gz
+DISTFILES=	voice_ogirab_di-2.0.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts
 
-DEPENDS+=	festival-1.3.1:../festival \
-		festlex-ogi-1.4:../festlex-ogi
+DEPENDS+=	festival-1.4.0:../festival \
+		festlex-ogi-2.0:../festlex-ogi
 
 LICENSE=	no-commercial-use
 
