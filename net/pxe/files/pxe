@@ -10,7 +10,7 @@
 
 name="pxe"
 command="@@PREFIX@@/sbin/${name}"
-required_files="@@PREFIX@@/etc/${name}.conf"
+required_files="/etc/${name}.conf"
 
 load_rc_config $name
 run_rc_command "$1"
