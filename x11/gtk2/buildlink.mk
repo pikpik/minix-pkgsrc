@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1.1.1 2002/03/24 20:34:37 dmcmahill Exp $
 #
 # This Makefile fragment is included by packages that use gtk2.
 #
@@ -21,7 +21,7 @@ BUILDLINK_DEPENDS.gtk2?=	gtk2+>=2.0.0
 DEPENDS+=		${BUILDLINK_DEPENDS.gtk2}:../../x11/gtk2
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.gtk2=gtk2
-BUILDLINK_PREFIX.gtk2_DEFAULT=	${X11PREFIX}
+BUILDLINK_PREFIX.gtk2_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.gtk2=	include/gtk-2.0/*/*
 BUILDLINK_FILES.gtk2+=	include/gtk-2.0/*
 BUILDLINK_FILES.gtk2+=	lib/gtk-2.0/*/*/*
