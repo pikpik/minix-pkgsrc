@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/09/27 23:18:58 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2001/11/06 10:58:04 jlam Exp $
 #
 
 DISTNAME=	surfraw-1.0.5
@@ -20,6 +20,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${SURFRAW_SYSCONFDIR}
 # in ${EGDIR}.
 #
 MAKE_FLAGS+=		sysconfdir=${EGDIR}
+MAKE_ENV+=		AM_MAKEFLAGS="${MAKE_FLAGS}"
 
 SURFRAW_SYSCONFDIR?=	${PREFIX}/etc
 DOCDIR=			${PREFIX}/share/doc/surfraw
