@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/08/25 21:49:11 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2003/03/29 12:40:01 jmmv Exp $
 
 DISTNAME=       hpack79src
 PKGNAME=        hpack-0.79
@@ -34,7 +34,8 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hpack ${PREFIX}/bin/
 	${INSTALL_PROGRAM} ${WRKSRC}/keycvt/keycvt ${PREFIX}/bin/
 	${INSTALL_MAN} ${WRKSRC}/docs/hpack.1 ${PREFIX}/man/man1/
-	${INSTALL_DATA_DIR} ${PREFIX}/share/hpack ${PREFIX}/share/doc/hpack
+	${INSTALL_DATA_DIR} ${PREFIX}/share/hpack
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/hpack
 	${INSTALL_DATA} ${WRKSRC}/language.dat ${PREFIX}/share/hpack/
 	${INSTALL_DATA} ${WRKSRC}/docs/hpack.cfg ${PREFIX}/share/hpack/hpack.cfg.example
 	${INSTALL_DATA} ${WRKSRC}/docs/hpackext.doc ${PREFIX}/share/doc/hpack/
