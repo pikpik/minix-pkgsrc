@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:52:15 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:14:08 martti Exp $
 #
 
 DISTNAME=		pkg_install-info-${VERSION}
@@ -19,6 +19,8 @@ NO_CHECKSUM=		# defined
 # Don't change this unless the sources are updated from GNU Texinfo.
 # Otherwise use PKGREVISION if you need to change this package version.
 VERSION=		4.5
+
+MAKE_ENV+=		BINOWN=${BINOWN} BINGRP=${BINGRP}
 
 do-extract:
 	@${CP} -Rp ${FILESDIR} ${WRKSRC}
