@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/28 06:05:32 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:59 tv Exp $
 #
 
 DISTNAME=	xdx-1.1
@@ -17,5 +17,6 @@ USE_PKGLOCALEDIR=yes
 
 BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
