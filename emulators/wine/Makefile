@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/06/18 23:48:52 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/19 17:27:36 tron Exp $
 
 DISTNAME=		Wine-980614
 PKGNAME=		wine-980614
@@ -16,7 +16,6 @@ DEPENDS+=       xpm-3.4j:../../graphics/xpm
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-dll
-#USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 post-install:
