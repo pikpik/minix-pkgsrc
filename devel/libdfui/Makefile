@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/09 05:41:35 xtraeme Exp $
 #
 
 DISTNAME=	libdfui-3.0
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.bsdinstaller.org/distfiles/
 
