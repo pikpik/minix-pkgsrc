@@ -18,7 +18,7 @@ $NetBSD$
  	rm -f $@
 -	$(AR) rc $@ $(OBJS) $(AMREXTRALIBS)
 -	$(RANLIB) $@
-+	$(LIBTOOL) --mode=link $(CC) -o $(LIB:.a=.la) $(OBJS:.o=.lo) -rpath $(prefix)/lib
++	$(LIBTOOL) --mode=link $(CC) -o $(LIB:.a=.la) $(OBJS:.o=.lo) -rpath $(prefix)/lib $(EXTRALIBS) $(AMREXTRALIBS)
 +
  
  $(SLIB): $(OBJS)
