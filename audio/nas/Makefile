@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/09/15 08:46:25 grant Exp $
+# $NetBSD: Makefile,v 1.32 2003/09/17 19:39:58 grant Exp $
 
 DISTNAME=	nas-1.6.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -24,6 +24,12 @@ USE_GNU_TOOLS+=		make
 PKG_SYSCONFSUBDIR=	nas
 
 REPLACE_PERL=		clients/audio/auscope/auscope
+
+post-patch:
+	@for f in `${FIND} ${WRKSRC} -name '*.[ch]'`; do		\
+		${SED} -e "s|<malloc.h>|<stdlib.h>|g" $$f > $$f.patch	\
+		&& ${MV} $$f.patch $$f;					\
+	done
 
 pre-configure:
 	cd ${WRKSRC}; for file in					\
