@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.8402 2004/12/22 12:53:43 drochner Exp $
+$NetBSD: CHANGES,v 1.8403 2004/12/22 12:56:21 mjl Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -6469,3 +6469,5 @@ Changes to the packages collection and infrastructure in 2004:
 	Updated xine-lib to 1-rc8 [drochner 2004-12-22]
 	Updated gibgsf to 1.11.1 [drochner 2004-12-22]
 	Added gnumeric-1.4.1 [drochner 2004-12-22]
+	Updated rconfig to 0.42 [abs 2004-12-22]
+
