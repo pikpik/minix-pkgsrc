@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:40:35 grant Exp $
+# $NetBSD: Makefile,v 1.19 2003/07/21 16:51:40 martti Exp $
 #
 
 DISTNAME=	freetype-2.1.4
@@ -27,8 +27,13 @@ CONFIGURE_ENV+=		RPATH_FLAG="${RPATH_FLAG}"
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/builds/unix/libtool
 
+.include "../../mk/bsd.prefs.mk"
+
 post-configure:
 	cd ${WRKSRC} && ${LN} -s builds/unix/unix.mk config.mk
+.if ${OPSYS} == "IRIX"
+	${MKDIR} ${WRKSRC}/.libs
+.endif
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
