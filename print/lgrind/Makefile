@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/26 19:25:06 garbled Exp $
+# $NetBSD: Makefile,v 1.4 1999/08/14 14:23:55 drochner Exp $
 
 DISTNAME=	lgrind
 PKGNAME=	lgrind-3.5
@@ -26,5 +26,8 @@ pre-build:
 pre-install:
 	-mkdir ${PREFIX}/share/texmf/tex/latex/lgrind
 	-mkdir ${PREFIX}/share/texmf/doc/latex/lgrind
+
+post-install:
+	${PREFIX}/bin/texconfig rehash
 
 .include <../../mk/bsd.pkg.mk>
