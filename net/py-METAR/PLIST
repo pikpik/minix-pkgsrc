@@ -1,5 +1,12 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/12/03 19:34:58 drochner Exp $
-bin/pymet${PYVERSSUFFIX}
+@comment $NetBSD$
+bin/weather-${PYVERSSUFFIX}.py
 ${PYSITELIB}/pymetar.py
 ${PYSITELIB}/pymetar.pyc
 ${PYSITELIB}/pymetar.pyo
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/COPYING
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/README
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/THANKS
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/TODO
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/example.py
+share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}/librarydoc.txt
+@dirrm share/doc/pymetar-${PYVERSSUFFIX}-${PKGVERSION}
