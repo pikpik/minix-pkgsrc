@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- pear/scripts/phpize.in.orig	Wed Jan 10 02:01:59 2001
++++ pear/scripts/phpize.in
+@@ -25,7 +25,11 @@ sed \
+ 
+ touch install-sh mkinstalldirs missing
+ 
+-aclocal
+-autoconf
+-autoheader
++if [ -z "$ACLOCAL" ]; then ACLOCAL=aclocal; fi
++if [ -z "$AUTOCONF" ]; then AUTOCONF=autoconf; fi
++if [ -z "$AUTOHEADER" ]; then AUTOHEADER=autoheader; fi
++
++$ACLOCAL
++$AUTOCONF
++$AUTOHEADER
+ libtoolize -f -c
