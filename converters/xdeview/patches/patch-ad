@@ -1,3 +1,4 @@
+$NetBSD$
 --- tcl/uuwish.c.orig	Thu Jun  6 15:41:11 1996
 +++ tcl/uuwish.c	Wed Aug 30 13:24:05 2000
 @@ -79,17 +79,20 @@
