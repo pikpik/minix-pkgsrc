@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/update.c.orig	Tue Nov 11 02:20:12 2003
+--- src/update.c.orig	Mon Mar 22 18:20:26 2004
 +++ src/update.c
-@@ -1338,11 +1338,18 @@ VERS: ", 0);
+@@ -1349,11 +1349,18 @@ VERS: ", 0);
  		    xchmod (finfo->file, 1);
  		else
  		{
