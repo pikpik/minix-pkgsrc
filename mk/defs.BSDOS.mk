@@ -1,4 +1,4 @@
-# $NetBSD: defs.BSDOS.mk,v 1.5 2004/01/27 16:11:47 agc Exp $
+# $NetBSD: defs.BSDOS.mk,v 1.6 2004/03/11 22:57:22 agc Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -20,6 +20,7 @@ DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
+ECHO_N?=	${ECHO} -n
 EGREP?=		/bin/egrep
 EXPR?=		/bin/expr
 FALSE?=		false				# Shell builtin

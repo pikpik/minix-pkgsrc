@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.67 2004/03/12 16:02:33 danw Exp $
+# $NetBSD: defs.Darwin.mk,v 1.68 2004/04/01 03:04:13 danw Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -15,6 +15,7 @@ DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
+ECHO_N?=	${ECHO} -n
 EGREP?=		/usr/bin/egrep
 EXPR?=		/bin/expr
 FALSE?=		false				# Shell builtin

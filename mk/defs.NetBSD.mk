@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.60 2004/01/31 16:52:16 xtraeme Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.61 2004/03/11 22:57:22 agc Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -19,6 +19,7 @@ DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
+ECHO_N?=	${ECHO} -n
 EGREP?=		/usr/bin/egrep
 EXPR?=		/bin/expr
 FALSE?=		false				# Shell builtin

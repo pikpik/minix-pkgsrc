@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.65 2004/01/31 16:52:16 xtraeme Exp $
+# $NetBSD: defs.Linux.mk,v 1.66 2004/03/11 22:57:22 agc Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -23,6 +23,7 @@ DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/bin/echo
+ECHO_N?=	${ECHO} -n
 .if exists(/bin/egrep)
 EGREP?=		/bin/egrep
 .elif exists(/usr/bin/egrep)

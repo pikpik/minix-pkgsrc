@@ -1,4 +1,4 @@
-# $NetBSD: defs.IRIX.mk,v 1.40 2004/01/27 16:11:47 agc Exp $
+# $NetBSD: defs.IRIX.mk,v 1.41 2004/03/11 22:57:22 agc Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -15,6 +15,7 @@ DATE?=		/sbin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		/sbin/echo
+ECHO_N?=	${ECHO} -n
 EGREP?=		/bin/grep
 EXPR?=		/bin/expr
 FALSE?=		/usr/bin/false

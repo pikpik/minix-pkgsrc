@@ -1,4 +1,4 @@
-# $NetBSD: defs.OpenBSD.mk,v 1.28 2004/01/27 16:11:47 agc Exp $
+# $NetBSD: defs.OpenBSD.mk,v 1.29 2004/03/11 22:57:22 agc Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -15,6 +15,7 @@ DATE?=		/bin/date
 DC?=		/usr/bin/dc
 DIRNAME?=	/usr/bin/dirname
 ECHO?=		echo				# Shell builtin
+ECHO_N?=	${ECHO} -n
 EGREP?=		/usr/bin/egrep
 EXPR?=		/bin/expr
 FGREP?=		/usr/bin/fgrep

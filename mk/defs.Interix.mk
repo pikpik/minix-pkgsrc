@@ -1,4 +1,4 @@
-# $NetBSD: defs.Interix.mk,v 1.7 2004/03/29 02:27:44 tv Exp $
+# $NetBSD: defs.Interix.mk,v 1.8 2004/03/30 15:29:26 tv Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -15,6 +15,7 @@ DATE?=		/bin/date
 DC?=		/bin/dc
 DIRNAME?=	/bin/dirname
 ECHO?=		echo				# Shell builtin
+ECHO_N?=	/bin/printf %s			# does not support "echo -n"
 EGREP?=		/bin/egrep
 EXPR?=		/bin/expr
 FALSE?=		false				# Shell builtin
