@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- idea.c.orig	Sun Sep 16 22:50:43 2001
++++ idea.c	Sun Sep 16 22:50:08 2001
+@@ -5,7 +5,7 @@
+ 
+ #include "idea.h"
+ 
+-#include <endian.h>
++#include <sys/endian.h>
+ 
+ #define KEYS_PER_ROUND	6
+ #define ROUNDS			8 
