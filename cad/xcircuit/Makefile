@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2003/07/10 08:03:57 jtb Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 21:25:31 grant Exp $
 
-DISTNAME=	xcircuit-3.1.16
+DISTNAME=	xcircuit-3.1.19
 WRKSRC=		${WRKDIR}/${DISTNAME}
 CATEGORIES=	cad graphics
 MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
