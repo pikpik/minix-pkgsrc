@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2002/07/03 09:27:59 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.151 2002/07/03 12:07:51 agc Exp $
 #
 
 COMMENT=	System utilities
@@ -68,7 +68,6 @@ SUBDIR+=	medusa
 SUBDIR+=	memconf
 SUBDIR+=	memtest86
 SUBDIR+=	mgm
-#SUBDIR+=	mkisofs			# currently part of cdrecord
 SUBDIR+=	mksunbootcd
 SUBDIR+=	mtools
 SUBDIR+=	mtoolsfm
