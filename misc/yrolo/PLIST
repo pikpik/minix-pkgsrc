@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/yrolo
+lib/X11/app-defaults/YRolo
+man/cat1/yrolo.0
