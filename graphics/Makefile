@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2001/02/14 11:52:58 jtb Exp $
+# $NetBSD: Makefile,v 1.117 2001/02/16 15:51:50 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -43,7 +43,6 @@ SUBDIR+=	gif320
 SUBDIR+=	giflib
 SUBDIR+=	giftrans
 SUBDIR+=	gimp
-SUBDIR+=	gimp-current
 SUBDIR+=	giram
 SUBDIR+=	glu
 SUBDIR+=	glut
