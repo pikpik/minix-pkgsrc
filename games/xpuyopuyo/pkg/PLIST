@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xpuyopuyo
+man/man1/xpuyopuyo.1
