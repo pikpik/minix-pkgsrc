@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 1999/09/23 07:58:28 tron Exp $
+# $NetBSD: Makefile,v 1.30 1999/11/10 07:54:45 soren Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
@@ -13,6 +13,7 @@
     SUBDIR += doscmd
 #    SUBDIR += fmsx
 #    SUBDIR += hfs
+    SUBDIR += ia64sim
 #    SUBDIR += ines
 #    SUBDIR += macutils
 #    SUBDIR += mastergear
