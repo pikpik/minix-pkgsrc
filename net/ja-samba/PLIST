@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.5 2003/05/27 15:59:08 taca Exp $
+@comment $NetBSD: PLIST,v 1.6 2003/06/04 16:25:33 taca Exp $
 bin/findsmb
-bin/make_nftable
 bin/make_printerdef
 bin/make_smbcodepage
 bin/make_unicodemap
