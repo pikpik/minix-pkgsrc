@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/03/08 10:53:56 agc Exp $
+# $NetBSD: Makefile,v 1.14 1999/06/26 23:04:50 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/09/06 19:55:09 gj Exp
 #
 
@@ -17,7 +17,11 @@ USE_PERL5=	yes
 INSTALL_TARGET=	install install-perl
 
 post-install:
-	@echo "You might want to copy the *.rc files from the source tree before"
-	@echo "doing \`${MAKE} clean'."
+	-@${MKDIR} -p ${PREFIX}/share/examples/vile
+	@for f in filters/spell.rc filters/filters.rc		\
+		macros/digraphs.rc macros/pictmode.rc		\
+		macros/manpage.rc visvile/visvile.rc; do	\
+		${BSD_INSTALL_DATA} ${WRKSRC}/$$f ${PREFIX}/share/examples/vile; \
+	done
 
 .include "../../mk/bsd.pkg.mk"
