@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/modules/standard/mod_include.c.orig	Fri Feb 23 11:37:26 2001
+--- src/modules/standard/mod_include.c.orig	Thu Sep 20 23:51:54 2001
 +++ src/modules/standard/mod_include.c
 @@ -93,7 +93,11 @@
  #include "http_log.h"
@@ -71,7 +71,7 @@ $NetBSD$
  
  
  /* -------------------------- The main function --------------------------- */
-@@ -2286,6 +2304,13 @@
+@@ -2300,6 +2318,13 @@
              }
  #endif
              else {
