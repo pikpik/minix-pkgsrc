@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/19 11:43:20 grant Exp $
 #
 
-DISTNAME=	roxirc-1.72
+DISTNAME=	roxirc-1.8
 CATEGORIES=	chat
 MASTER_SITES=	http://roxirc.lighter.net/download/
 
