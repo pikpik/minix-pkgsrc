@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.168 2004/03/11 16:03:30 cjep Exp $
+# $NetBSD: Makefile,v 1.169 2004/03/28 20:35:22 jmmv Exp $
 #
 
 COMMENT=	Programming languages
@@ -119,6 +119,9 @@ SUBDIR+=	rexx-imc
 SUBDIR+=	rexx-regina
 SUBDIR+=	ruby
 SUBDIR+=	ruby-base
+SUBDIR+=	sablevm
+SUBDIR+=	sablevm-classpath
+SUBDIR+=	sablevm-classpath-gui
 SUBDIR+=	sather
 SUBDIR+=	scheme48
 SUBDIR+=	scm
