@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 22:52:58 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/21 17:20:10 martti Exp $
 
-DISTNAME=	libmcrypt-2.5.6
+DISTNAME=	libmcrypt-2.5.7
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://mcrypt.hellug.gr/pub/mcrypt/libmcrypt/ \
 		ftp://mcrypt.hellug.gr/pub/mcrypt/libmcrypt/old/ \
