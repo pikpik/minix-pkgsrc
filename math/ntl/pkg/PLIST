@@ -89,6 +89,10 @@ include/NTL/vector.h
 include/NTL/version.h
 include/NTL/xdouble.h
 lib/libntl.a
+lib/libntl.la
+lib/libntl.so
+lib/libntl.so.0
+lib/libntl.so.0.0
 share/doc/NTL/GF2.txt
 share/doc/NTL/GF2E.txt
 share/doc/NTL/GF2EX.txt
