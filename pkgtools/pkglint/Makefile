@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.150 2003/01/24 15:16:31 wiz Exp $
+# $NetBSD: Makefile,v 1.151 2003/01/27 17:59:01 atatat Exp $
 #
 
-DISTNAME=	pkglint-3.45
+DISTNAME=	pkglint-3.46
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,7 +18,7 @@ WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 
-MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR}
+MAKE_ENV=	PKGSRCDIR=${_PKGSRCDIR:Q}
 
 DISTVER=	${DISTNAME:S/pkglint-//}
 
