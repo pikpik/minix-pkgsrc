@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+The local state directory is now explictily defined as ${VARBASE}/nessus
+for nessus components. 
+
+===========================================================================
