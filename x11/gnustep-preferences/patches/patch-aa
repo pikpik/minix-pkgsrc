@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2003/04/01 08:07:47 rh Exp $
 
 --- GNUmakefile.preamble.orig	Tue Feb 12 14:35:17 2002
 +++ GNUmakefile.preamble
@@ -7,7 +7,7 @@ $NetBSD$
  
  # Additional flags to pass to the Objective-C compiler
 -ADDITIONAL_OBJCFLAGS += -Wall -Werror
-+ADDITIONAL_OBJCFLAGS += -Wall -Wno-import -Werror
++ADDITIONAL_OBJCFLAGS += -Wall -Wno-import
  
  # Additional flags to pass to the C compiler
 -ADDITIONAL_CFLAGS += -Wall -Werror
