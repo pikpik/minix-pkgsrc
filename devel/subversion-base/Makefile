@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2004/03/29 18:08:33 epg Exp $
+# $NetBSD: Makefile,v 1.14 2004/07/20 01:10:20 epg Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
 COMMENT=	Version control system, base programs and libraries
-
-PLIST_SUBST+=   INSTALL_INFO=${INSTALL_INFO}
 
 .include "../subversion/Makefile.common"
 
