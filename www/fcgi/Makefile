@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:55:33 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/26 15:29:05 drochner Exp $
 
 DISTNAME=		fcgi-2.4.0
 CATEGORIES=		www devel
@@ -9,6 +9,7 @@ HOMEPAGE=		http://fastcgi.com/
 COMMENT=		FastCGI application development kit
 
 USE_BUILDLINK2=		YES
+USE_GCC_SHLIB=		YES
 GNU_CONFIGURE=		YES
 PTHREAD_OPTS+=		require
 
