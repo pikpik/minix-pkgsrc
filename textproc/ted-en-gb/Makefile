@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 1999/10/10 19:43:02 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/03/02 16:40:34 dmcmahill Exp $
 
-DISTNAME=	Ted_GB
-PKGNAME=	ted-en-gb-2.6
+DISTNAME=	Ted_en_GB
+PKGNAME=	ted-en-gb-2.8
 WRKSRC=		${WRKDIR}
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/ \
