@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/01/05 18:02:18 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/05 07:11:47 wiz Exp $
 
 DISTNAME=	apNetBSD
 PKGNAME=	aperture-2.0
@@ -16,6 +16,9 @@ NO_CONFIGURE=	yes
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
 .BEGIN:
 	@if [ ! -f /sys/lib/libkern/libkern.h ]; then \
 	    ${ECHO_MSG} "==================================================="; \
@@ -31,6 +34,7 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386
 	    ${ECHO_MSG} "==================================================="; \
 	    ${FALSE}; \
 	fi
+.endif
 
 .include "../../mk/bsd.pkg.mk"
 
