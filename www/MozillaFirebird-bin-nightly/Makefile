@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/09/05 05:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2003/09/27 14:13:08 grant Exp $
 #
 
 DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
@@ -40,7 +40,7 @@ post-build:
 do-install:
 	${INSTALL_DATA_DIR} ${MOZILLA_LIB}
 	cd ${WRKSRC} && ${PAX} -rw -pm . ${MOZILLA_LIB}
-	${INSTALL_SCRIPT} ${WRKDIR}/MozillaFirebird.sh > \
+	${INSTALL_SCRIPT} ${WRKDIR}/MozillaFirebird.sh \
 		${PREFIX}/bin/MozillaFirebird-${PLATFORM}
 	@${FIND} ${MOZILLA_LIB} -type f -print \
 		| ${XARGS} ${CHMOD} a+r
