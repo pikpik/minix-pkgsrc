@@ -1,0 +1,6 @@
+@comment $NetBSD:$
+bin/blackbook
+@exec ${MKDIR} %D/share/icons
+share/icons/book64.xpm
+share/icons/book48.xpm
+@unexec ${RMDIR} %D/share/icons 2>/dev/null || ${TRUE}
