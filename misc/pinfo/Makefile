@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/04/18 19:56:54 snj Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:13:00 tv Exp $
 #
 
 DISTNAME=		pinfo-0.6.1
@@ -19,7 +19,7 @@ USE_PKGINSTALL=		yes
 
 INFO_FILES=	pinfo.info
 
-CPPFLAGS=		-DDFLT_INFOPATH='\"/usr/share/info:${X11BASE}/info:${LOCALBASE}/info:/usr/local/info\"'
+CPPFLAGS=		-DDFLT_INFOPATH="\"/usr/share/info:${X11BASE}/info:${LOCALBASE}/info:/usr/local/info\""
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
