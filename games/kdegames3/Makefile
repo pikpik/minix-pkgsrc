@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2002/08/28 07:15:27 skrll Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/03 22:26:13 markd Exp $
 
-DISTNAME=	kdegames-3.0.3
+DISTNAME=	kdegames-3.0.4
 CATEGORIES=	games
 COMMENT=	Games for the KDE integrated X11 desktop
 

@@ -1,6 +1,6 @@
-$NetBSD: patch-bv,v 1.1.2.1 2002/06/23 19:06:40 jlam Exp $
+$NetBSD$
 
---- mimetypes/application/x-core.desktop.orig	Wed May  8 19:28:25 2002
+--- mimetypes/application/x-core.desktop.orig	Tue Oct  1 17:40:02 2002
 +++ mimetypes/application/x-core.desktop
 @@ -2,7 +2,7 @@
  Encoding=UTF-8
@@ -10,4 +10,4 @@ $NetBSD: patch-bv,v 1.1.2.1 2002/06/23 19:06:40 jlam Exp $
 +Patterns=*.core;
  MimeType=application/x-core
  Comment=Program crash data
- Comment[af]=program omval data
+ Comment[af]=Program omval data

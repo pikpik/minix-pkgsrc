@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2002/08/28 07:15:37 skrll Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/05 13:11:27 jlam Exp $
 
-DISTNAME=	kdenetwork-3.0.3
+DISTNAME=	kdenetwork-3.0.4
 CATEGORIES=	net
 COMMENT=	Network modules for the KDE integrated X11 desktop
 
