@@ -1,10 +1,10 @@
-# $NetBSD: options.mk,v 1.3 2004/08/22 19:32:51 jlam Exp $
+# $NetBSD: options.mk,v 1.4 2004/11/17 19:56:49 xtraeme Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.fetchmail
 PKG_SUPPORTED_OPTIONS=	inet6 kerberos4 ssl
 
 .if !defined(PKG_OPTIONS.fetchmail)
-PKG_DEFAULT_OPTIONS+=	inet6 ssl
+PKG_DEFAULT_OPTIONS+=	ssl
 .endif
 
 .include "../../mk/bsd.options.mk"
