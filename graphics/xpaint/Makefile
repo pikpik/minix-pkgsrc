@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/05/28 22:16:18 tron Exp $
+# $NetBSD: Makefile,v 1.7 1998/06/22 12:39:48 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/08/29 12:17:50 tg Exp
 #
 
@@ -10,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 
 DEPENDS+=	xpm-3.4j:../../graphics/xpm
 DEPENDS+=	tiff-3.4:../../graphics/tiff
-DEPENDS+=	jpeg-6a:../../graphics/jpeg
+DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	png-0.96:../../graphics/png
 
 WRKSRC=		${WRKDIR}/xpaint
