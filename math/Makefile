@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2003/06/05 20:51:35 wiz Exp $
+# $NetBSD: Makefile,v 1.104 2003/07/07 23:35:39 jtb Exp $
 #
 
 COMMENT=	Mathematics
@@ -16,6 +16,7 @@ SUBDIR+=	cassowary
 SUBDIR+=	dcdflib.c
 SUBDIR+=	dcdflib.f
 SUBDIR+=	dfftpack
+SUBDIR+=	djbfft
 SUBDIR+=	eispack
 SUBDIR+=	ess
 SUBDIR+=	eukleides
