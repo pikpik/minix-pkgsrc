@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/03/13 17:37:42 fredb Exp $
+# $NetBSD: Makefile,v 1.18 2002/05/02 20:45:35 fredb Exp $
 #
 
 DISTNAME=	gkrellm-1.2.11
@@ -10,6 +10,7 @@ MAINTAINER=	anthony.mallet@ficus.yi.org
 HOMEPAGE=	http://gkrellm.net/
 COMMENT=	GTK based system monitor
 
+BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK_ONLY=	YES
 USE_GMAKE=		YES
 
