@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/03/23 04:41:01 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/01/06 05:32:29 tv Exp $
 #
 
 DISTNAME=		pkg_install-info-${VERSION}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
