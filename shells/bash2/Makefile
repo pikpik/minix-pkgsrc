@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2002/11/20 08:38:16 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2002/11/25 04:18:47 schmonz Exp $
 #
 
 DISTNAME=	bash-2.05b
@@ -68,8 +68,12 @@ post-install:
 
 CPPFLAGS:=	-I${GETTEXTDIR}/include ${CPPFLAGS}
 CFLAGS:=	-I${GETTEXTDIR}/include ${CFLAGS}
-LDFLAGS=	-L${GETTEXTDIR}/lib
+LDFLAGS=	# empty
+LIBINTL_LIST!=	set ${GETTEXT_PREFIX}/lib/libintl.*; ${ECHO} $$1
+.if ${LIBINTL_LIST} != "${GETTEXT_PREFIX}/lib/libintl.*"
+LDFLAGS+=	-L${GETTEXTDIR}/lib
 .if ${_USE_RPATH} == "yes"
 LDFLAGS+=	-Wl,-R${GETTEXT_PREFIX}/lib
 .endif
 LIBS+=		${LDFLAGS} -lintl
+.endif
