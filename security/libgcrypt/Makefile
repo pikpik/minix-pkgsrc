@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/08/09 11:21:57 seb Exp $
+# $NetBSD: Makefile,v 1.8 2003/11/02 19:57:51 hubertf Exp $
 #
 
-DISTNAME=	libgcrypt-1.1.12
-PKGREVISION=	1
+DISTNAME=	libgcrypt-1.1.90
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/libgcrypt/ \
 		http://gd.tuwien.ac.at/privacy/gnupg/alpha/libgcrypt/
@@ -29,5 +28,12 @@ INFO_FILES=		gcrypt.info
 CONFIGURE_ARGS+=	--disable-asm
 LIBTOOL_OVERRIDE+=	${WRKSRC}/libtool
 .endif
+
+.if exists(/usr/include/pthread.h)
+CONFIGURE_ARGS+=	--without-pth
+.endif
+
+.include "../../mk/pthread.buildlink2.mk"
+.include "../../security/libgpg-error/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
