@@ -1,2 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:40 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/04/04 07:41:04 jlam Exp $
+bin/pltcl_delmod
+bin/pltcl_listmod
+bin/pltcl_loadmod
 lib/postgresql/pltcl.so
+share/postgresql/unknown.pltcl

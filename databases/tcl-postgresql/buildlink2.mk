@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:05 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:12 jlam Exp $
 
 .if !defined(TCL_POSTGRESQL_BUILDLINK2_MK)
 TCL_POSTGRESQL_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			tcl-postgresql
-BUILDLINK_DEPENDS.tcl-postgresql?=	tcl-postgresql>=7.0
+BUILDLINK_DEPENDS.tcl-postgresql?=	tcl-postgresql>=7.3.1
 BUILDLINK_PKGSRCDIR.tcl-postgresql?=	../../databases/tcl-postgresql
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.tcl-postgresql=tcl-postgresql

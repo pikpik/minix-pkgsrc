@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2002/04/04 07:41:01 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/19 03:03:50 jlam Exp $
 
 PKGNAME=		postgresql-docs-${BASE_VERS}
 COMMENT=		PostgreSQL database system documentation
 
-USE_BUILDLINK2=		# defined
-
-.include "../../databases/postgresql/Makefile.common"
+.include "../postgresql/Makefile.common"
 
 BUILD_DIRS=		${WRKSRC}/doc
 DOCDIR=			${PREFIX}/share/doc/postgresql
