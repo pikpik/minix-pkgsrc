@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:40 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2001/07/15 15:34:57 wulf Exp $
 #
 
 DISTNAME=	geneweb-4.02
@@ -61,6 +61,6 @@ do-install:
 		${TOUCH} ${PREFIX}/share/geneweb/gwtp_tmp/gwtp.log
 		${CHMOD} 600 ${PREFIX}/share/geneweb/gwtp_tmp/passwd
 		${CHMOD} 600 ${PREFIX}/share/geneweb/gwtp_tmp/gwtp.log
-		${CHOWN} -R nobody.wheel ${PREFIX}/share/geneweb
+		${CHOWN} -R nobody.${ROOT_GROUP} ${PREFIX}/share/geneweb
 
 .include "../../mk/bsd.pkg.mk"
