@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/08/24 11:24:55 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.7 2002/08/31 04:34:21 dmcmahill Exp $
 #
 
 DISTNAME=	bins-1.1.15
@@ -10,7 +10,7 @@ MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://bins.sautret.org/
 COMMENT=	static HTML photo album generator
 
-DEPENDS+=	p5-Text-Iconv-1.1:../../converters/p5-Text-Iconv
+DEPENDS+=	p5-Text-Iconv>=1.1:../../converters/p5-Text-Iconv
 DEPENDS+=	p5-Storable>=2.04:../../devel/p5-Storable
 DEPENDS+=	p5-Image-Info>=1.10:../../graphics/p5-Image-Info
 DEPENDS+=	p5-Image-Size>=2.980:../../graphics/p5-Image-Size
