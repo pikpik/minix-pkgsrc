@@ -1,3 +1,5 @@
 @comment $NetBSD$
 bin/scummvm
 man/man6/scummvm.6
+share/doc/scummvm/README
+@dirrm share/doc/scummvm
