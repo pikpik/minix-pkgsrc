@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/26 21:41:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/28 16:03:19 wiz Exp $
 #
 
 DISTNAME=		nethack_source_331_jtp_193
@@ -9,7 +9,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=falconseye/}
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		collver1@comcast.net
+MAINTAINER=		ben@netbsd.org
 HOMEPAGE=		http://falconseye.sourceforge.net/
 COMMENT=		Falcon's Eye NetHack
 
