@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.216 2004/05/28 15:13:57 xtraeme Exp $
+# $NetBSD: Makefile,v 1.217 2004/05/29 01:05:22 xtraeme Exp $
 #
 
 COMMENT=	Games
@@ -137,7 +137,6 @@ SUBDIR+=	newvox
 SUBDIR+=	nighthawk
 SUBDIR+=	omega
 SUBDIR+=	openmortal
-SUBDIR+=	pacman
 SUBDIR+=	pag
 SUBDIR+=	plib
 SUBDIR+=	powermanga
