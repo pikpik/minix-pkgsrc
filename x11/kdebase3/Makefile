@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/01/28 22:04:35 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2003/03/11 13:10:16 markd Exp $
 
 DISTNAME=	kdebase-3.1
 CATEGORIES=	x11
@@ -140,6 +140,7 @@ post-install:
 .endif
 
 .include "../../databases/openldap/buildlink2.mk"
+.include "../../fonts/fontconfig/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../x11/qt3-tools/buildlink2.mk"
 .include "../../x11/kde3/buildlink2.mk"
