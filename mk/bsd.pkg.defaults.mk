@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.78 2002/08/07 12:46:49 veego Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.79 2002/08/12 09:47:34 agc Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1410,6 +1410,11 @@ USE_WNN4?= YES
 # (pkgsrc/mail/face)
 # Possible: not defined, YES
 # Default: not defined
+
+USERPPP_GROUP?=	network
+# Used in the userppp package to specify the default group.
+# Possible: any group name
+# Default: network
 
 #VIM_EXTRA_OPTS=
 # Used in vim package to build with non-gui extra options
