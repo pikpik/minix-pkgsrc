@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.47 2001/07/03 02:20:38 mjl Exp $
+# $NetBSD: bsd.prefs.mk,v 1.48 2001/07/05 21:11:07 abs Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -200,7 +200,8 @@ HAVE_BUILTIN_FREETYPE2=	YES
 # depend on the Xpm package.
 .if (defined(CHECK_XPM) || defined(USE_XPM))
 X11BASE?=		/usr/X11R6
-.if exists(${X11BASE}/include/X11/xpm.h)
+.if exists(${X11BASE}/include/X11/xpm.h) && \
+    exist(${X11BASE}/lib/X11/config/X11.tmpl
 __BUILTIN_XPM!=		${EGREP} -c NormalLibXpm ${X11BASE}/lib/X11/config/X11.tmpl || ${TRUE}
 .else
 __BUILTIN_XPM=		0
