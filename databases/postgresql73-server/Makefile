@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/18 15:59:55 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/28 02:47:43 reed Exp $
 
 PKGNAME=		postgresql73-server-${BASE_VERS}
 PKGREVISION=		3
@@ -25,7 +25,7 @@ BUILD_DIRS+=		${WRKSRC}/src/backend/utils/mb/conversion_procs
 .include "../../mk/dlopen.buildlink3.mk"
 
 .if defined(USE_PAM)
-.  include "../../security/PAM/buildlink3.mk"
+.  include "../../mk/pam.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pam
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2004/11/18 23:02:00 jlam Exp $
+# $NetBSD: options.mk,v 1.4 2004/11/29 17:59:11 xtraeme Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.jabberd2
@@ -31,5 +31,5 @@ CONFIGURE_ARGS+=        --enable-ldap
 
 .if !empty(PKG_OPTIONS:MPAM)
 CONFIGURE_ARGS+=        --enable-pam
-.  include "../../security/PAM/buildlink3.mk"
+.  include "../../mk/pam.buildlink3.mk"
 .endif

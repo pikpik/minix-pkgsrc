@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/12/13 06:56:18 martti Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/28 02:47:47 reed Exp $
 
 DISTNAME=	proftpd-1.2.10
 PKGREVISION=	1
@@ -40,7 +40,7 @@ PKG_OPTIONS_VAR       = PKG_OPTIONS.proftpd
 
 .if !empty(PKG_OPTIONS:MPAM)
 CONFIGURE_ARGS+=	--enable-auth-pam
-.include "../../security/PAM/buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mwrap)
