@@ -1,5 +1,5 @@
-=============================================================================
-$NetBSD: MESSAGE,v 1.2 1998/09/05 03:31:18 kim Exp $
+===========================================================================
+$NetBSD: MESSAGE,v 1.1 2001/11/01 01:22:53 zuntum Exp $
 
     Set up the master source repository.  See the "Setting up the repository"
     section of cvs.info for details; the one-line summary is (if you are
@@ -23,4 +23,4 @@ $NetBSD: MESSAGE,v 1.2 1998/09/05 03:31:18 kim Exp $
     in your current shell, set them now (or source the login script you
     just edited).
 
-=============================================================================
+===========================================================================
