@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/06/06 19:31:42 frueauf Exp $
 sbin/tfkiss
 share/tfkiss/doc/alas.eng
 share/tfkiss/doc/alas.txt

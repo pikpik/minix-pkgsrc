@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/01/31 11:32:49 wulf Exp $
 
 bin/7plus
 share/doc/7plus/7plus_g.txt
