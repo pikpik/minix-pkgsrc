@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gpgme/Makefile.in.orig	2003-11-19 09:55:10.000000000 +0100
+--- gpgme/Makefile.in.orig	2003-11-19 02:55:10.000000000 -0600
 +++ gpgme/Makefile.in
 @@ -175,9 +175,9 @@ bin_SCRIPTS = gpgme-config
  m4datadir = $(datadir)/aclocal
@@ -95,7 +95,7 @@ $NetBSD$
  	  if test -f "$$p"; then d=; else d="$(srcdir)/"; fi; \
  	  if test -f $$d$$p; then \
 -	    f=`echo "$$p" | sed 's|^.*/||;$(transform)'`; \
-+	    f=`echo "$$p" | sed -e 's|^.*/||' -e 's|gpgme|gpgme03|`; \
++	    f=`echo "$$p" | sed -e 's|^.*/||' -e 's|gpgme|gpgme03|'`; \
  	    echo " $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f"; \
  	    $(binSCRIPT_INSTALL) $$d$$p $(DESTDIR)$(bindir)/$$f; \
  	  else :; fi; \
