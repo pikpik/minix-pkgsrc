@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.804 2001/08/27 15:05:54 tv Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.805 2001/09/09 20:36:07 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -484,6 +484,8 @@ WRKDIR?=		${BUILD_DIR}/${WRKDIR_BASENAME}
 	@${ECHO_MSG} 'NO_WRKSUBDIR has been deprecated - please replace it with an explicit'
 	@${ECHO_MSG} 'assignment of WRKSRC= $${WRKDIR}'
 	@${FALSE}
+.else # NO_WRKSUBDIR
+WRKSRC?=		${WRKDIR}/${DISTNAME}
 .endif # NO_WRKSUBDIR
 
 # A few aliases for *-install targets
