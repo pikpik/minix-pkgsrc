@@ -1,0 +1,11 @@
+@comment $NetBSD$
+${PYSITELIB}/pygoogle.pth
+${PYSITELIB}/pygoogle/google.py
+${PYSITELIB}/pygoogle/google.pyc
+${PYSITELIB}/pygoogle/googletest.py
+${PYSITELIB}/pygoogle/googletest.pyc
+${PYSITELIB}/pygoogle/testclient.py
+${PYSITELIB}/pygoogle/testclient.pyc
+${PYSITELIB}/pygoogle/testserver.py
+${PYSITELIB}/pygoogle/testserver.pyc
+@dirrm ${PYSITELIB}/pygoogle
