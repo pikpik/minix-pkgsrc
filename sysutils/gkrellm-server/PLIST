@@ -1,5 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/02/24 22:30:25 cube Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/04/23 22:07:59 reed Exp $
 bin/gkrellmd
+include/gkrellm2/gkrellmd.h
 man/man1/gkrellmd.1
 share/examples/gkrellm-server/gkrellmd.conf
+@unexec ${RMDIR} %D/include/gkrellm2 2>/dev/null || ${TRUE}
 @dirrm share/examples/gkrellm-server
