@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/01/22 08:36:04 grant Exp $
+# $NetBSD: Makefile,v 1.29 2004/02/18 13:33:40 jlam Exp $
 
 DISTNAME=	uae-0.8.22
 PKGNAME=	${DISTNAME}
@@ -11,7 +11,7 @@ COMMENT=	The UAE Amiga Emulator
 
 DEPENDS=	unzip>=5.40:../../archivers/unzip
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
 GNU_CONFIGURE=	yes
