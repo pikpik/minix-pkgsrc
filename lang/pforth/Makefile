@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/19 22:26:59 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 09:07:25 agc Exp $
 
 DISTNAME=		pfthunix19
 PKGNAME=		pforth-19
@@ -6,7 +6,7 @@ CATEGORIES=		lang
 MASTER_SITES=		http://www.softsynth.com/pforth/
 EXTRACT_SUFX=		.tar.Z
 
-MAINTAINER=		jtb@netbsd.org
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.softsynth.com/pforth/
 COMMENT=		Portable ANS-like Forth
 

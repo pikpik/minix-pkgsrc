@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:27 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/04/06 21:00:33 jtb Exp $
 
 DISTNAME=		ncview-1.92c
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://cirrus.ucsd.edu/pub/ncview/
 
-MAINTAINER=		jtb@netbsd.org
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://meteora.ucsd.edu/~pierce/ncview_home_page.html
 COMMENT=		Visual browser for netCDF format files
 

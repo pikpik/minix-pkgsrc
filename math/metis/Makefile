@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/02/10 04:18:37 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:22:29 wiz Exp $
 
 DISTNAME=		metis-4.0
 CATEGORIES=		math
 MASTER_SITES=		http://www-users.cs.umn.edu/~karypis/metis/metis/files/
 
-MAINTAINER=		jtb@netbsd.org
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www-users.cs.umn.edu/~karypis/metis/
 COMMENT=		Unstructured graph partitioning and sparse matrix ordering system
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/25 17:52:11 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:23 wiz Exp $
 #
 
 DISTNAME=	grap-1.10
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lunabase.org/~faber/Vault/software/grap/
 
-MAINTAINER=	jtb@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.lunabase.org/~faber/Vault/software/grap/
 COMMENT=	Language for typesetting graphs
 

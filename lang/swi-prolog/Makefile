@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2001/03/27 03:20:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/11 20:11:12 jtb Exp $
 
 DISTNAME=		pl-lite-4.0.0
 PKGNAME=		swi-prolog-4.0.0
 CATEGORIES=		lang
 MASTER_SITES=		http://www.swi.psy.uva.nl/cgi-bin//nph-download/SWI-Prolog/
 
-MAINTAINER=		jtb@netbsd.org
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.swi.psy.uva.nl/projects/SWI-Prolog/
 COMMENT=		ISO/Edinburgh-style Prolog compiler
 
