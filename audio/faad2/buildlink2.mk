@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2002/09/05 17:49:42 dillo Exp $
 
 .if !defined(FAAD2_BUILDLINK2_MK)
 FAAD2_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			faad2
-BUILDLINK_DEPENDS.faad2?=		faad2>=1.1
+BUILDLINK_DEPENDS.faad2?=		faad2>=2.0
 BUILDLINK_PKGSRCDIR.faad2?=	../../audio/faad2
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.faad2=faad2
