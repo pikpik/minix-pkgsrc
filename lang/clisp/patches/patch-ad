@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ../ffcall/callback/vacall_r/Makefile.in.orig	Tue Jun 12 07:31:01 2001
-+++ ../ffcall/callback/vacall_r/Makefile.in	Thu Mar 14 07:13:43 2002
-@@ -118,11 +118,12 @@
+--- .././ffcall/callback/vacall_r/Makefile.in.orig	Sun Mar 24 19:51:37 2002
++++ .././ffcall/callback/vacall_r/Makefile.in
+@@ -121,11 +121,12 @@ vacall-rs6000.lo : $(srcdir)/vacall-rs60
  	  aix3*) syntax=aix.old;; \
  	  aix*) syntax=aix.new;; \
  	  linux*) syntax=linux;; \
