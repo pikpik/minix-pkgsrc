@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.66 2000/08/13 22:04:06 wiz Exp $
+#	$NetBSD: Makefile,v 1.67 2000/11/25 18:42:24 jtb Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += ascii
@@ -44,6 +44,7 @@
     SUBDIR += most
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Business-CreditCard
+    SUBDIR += p5-File-MMagic
     SUBDIR += p5-Locale-Codes
     SUBDIR += p5-Search
     SUBDIR += plan
