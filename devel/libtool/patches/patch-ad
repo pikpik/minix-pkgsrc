@@ -15,7 +15,7 @@ $NetBSD$
  	file_magic_cmd="$(file_magic_cmd)" \
  	$(SHELL) $(srcdir)/ltconfig $(LIBTOOL_FLAGS) --srcdir=$(srcdir) \
  	  --output=$@T $(srcdir)/ltmain.sh $(host_triplet)
-+	AR="$(AR)" CC="$(CXX)" CFLAGS="$(CXXFLAGS)" CPPFLAGS="$(CPPFLAGS)" \
++	AR="$(AR)" CC="$(CC)" CFLAGS="$(CFLAGS)" CPPFLAGS="$(CPPFLAGS)" \
 +	LTCC="$(CC)" FILE="$(FILE)" LD="$(LD)" LDFLAGS="$(LDFLAGS)" \
 +	LIBS="$(LIBS)" LN_S="$(LN_S)" NM="$(NM)" RANLIB="$(RANLIB)" \
 +	STRIP="$(STRIP)" AS="$(AS)" DLLTOOL="$(DLLTOOL)" \
