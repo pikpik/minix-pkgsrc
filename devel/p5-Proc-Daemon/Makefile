@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2004/04/25 03:27:08 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/29 14:18:58 sketch Exp $
 #
 
-DISTNAME=	Proc-Daemon-0.02
+DISTNAME=	Proc-Daemon-0.03
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5prd
 CATEGORIES=	devel perl5
