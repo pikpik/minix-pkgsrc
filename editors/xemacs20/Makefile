@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 1998/09/22 06:11:36 garbled Exp $
+# $NetBSD: Makefile,v 1.36 1998/11/12 23:03:40 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 #
 
@@ -25,7 +25,7 @@ DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
 
 CONFLICTS+=	xemacs-20.3
 
-NOT_FOR_ARCHS=	alpha	#fails purespace dumping
+NOT_FOR_ARCHS=	alpha mips	#fails purespace dumping
 
 HAS_CONFIGURE=	yes
 
