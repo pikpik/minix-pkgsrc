@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/07/28 02:47:35 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/09/18 14:01:53 uebayasi Exp $
 #
 
 DISTNAME=	star-1.4.3
@@ -14,7 +14,9 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_GNU_TOOLS+=	make
 MAKE_FLAGS+=	INS_BASE=${PREFIX}
 
-.if "${OPSYS}" == "NetBSD" && "${MACHINE_ARCH}" == "x86_64"
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD" && ${MACHINE_ARCH} == "x86_64"
 post-extract:
 	${LN} -s ${WRKSRC}/RULES/i386-netbsd-cc.rul \
 	    ${WRKSRC}/RULES/x86_64-netbsd-cc.rul
