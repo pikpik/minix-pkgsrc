@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/05/23 17:33:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2000/06/15 12:06:21 hubertf Exp $
 
 DISTNAME=	cdrecord-1.9a01
 CATEGORIES=	sysutils
@@ -12,6 +12,8 @@ USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME:C/a.*//}
 TARGET_ARCH=	${MACHINE_ARCH}-netbsd-cc
 TARGET_DIR=	OBJ/${TARGET_ARCH}
+#override ARCH to avoid picking up a bad ${ARCH} during the build
+MAKE_ENV+=      ARCH=""
 
 do-configure:
 	${MKDIR} ${WRKSRC}/include/sys
