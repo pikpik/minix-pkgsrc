@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.370 2004/11/25 11:44:25 wiz Exp $
+# $NetBSD: Makefile,v 1.371 2004/11/27 14:54:24 taca Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -159,6 +159,7 @@ SUBDIR+=	mowitz
 SUBDIR+=	multi-aterm
 SUBDIR+=	multi-gnome-terminal
 SUBDIR+=	neXtaw
+SUBDIR+=	numlockx
 SUBDIR+=	oneko
 SUBDIR+=	openmotif
 SUBDIR+=	p5-Tk
