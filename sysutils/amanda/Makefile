@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.26 1999/04/26 19:25:06 garbled Exp $
+# $NetBSD: Makefile,v 1.27 1999/09/06 18:17:27 bad Exp $
 #
 
 DISTNAME=	amanda-2.4.1p1
-PKGNAME=	amanda-all-2.4.1p1
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
