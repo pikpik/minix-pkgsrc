@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mp3asm
+share/doc/mp3asm/README
+@dirrm share/doc/mp3asm
