@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/09/01 12:36:53 tron Exp $
+# $NetBSD: Makefile,v 1.36 2003/10/08 05:12:08 martti Exp $
 
 DISTNAME=	squirrelmail-1.4.2
 CATEGORIES=	mail www
@@ -58,7 +58,8 @@ pre-install:
 		> ${WRKDIR}/squirrelmail.conf.dist
 
 do-install:
-	${INSTALL_DATA_DIR} ${EGDIR} ${SMDIR}
+	${INSTALL_DATA_DIR} ${EGDIR}
+	${INSTALL_DATA_DIR} ${SMDIR}
 	cd ${WRKDIR}; ${INSTALL_DATA} squirrelmail.conf.dist		\
 		${EGDIR}/squirrelmail.conf
 	${CP} -R ${WRKSRC}/* ${SMDIR}
