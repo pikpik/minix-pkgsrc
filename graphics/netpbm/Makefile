@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2004/01/03 18:49:43 reed Exp $
+# $NetBSD: Makefile,v 1.84 2004/01/22 10:59:39 jlam Exp $
 
 DISTNAME=	netpbm-10.11.8
 PKGREVISION=	1
@@ -28,7 +28,7 @@ STAGEDIR=	${WRKDIR}/staging
 .include "../../mk/bsd.prefs.mk"
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-USE_PKGSRC_GCC=		# defined
+GCC_REQD=		2.95.3
 .endif
 
 .if (${OPSYS} == SunOS)
