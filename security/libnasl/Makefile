@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:25:34 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/26 02:27:52 wiz Exp $
 
 DISTNAME=	libnasl-${VERS}
 PKGREVISION=	1
@@ -8,7 +8,7 @@ COMMENT=	Nessus Attack Scripting Language library
 
 WRKSRC=		${WRKDIR}/libnasl
 GNU_CONFIGURE=	yes
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
-.include "../nessus-libraries/buildlink2.mk"
+.include "../nessus-libraries/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/02/14 17:21:52 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2004/03/26 02:27:52 wiz Exp $
 #
 
 DISTNAME=	nessus-libraries-${VERS}
@@ -8,7 +8,7 @@ PKGREVISION=	2
 COMMENT=	Libs required by the Nessus Network security scanner
 
 WRKSRC=		${WRKDIR}/nessus-libraries
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 
 BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
@@ -18,6 +18,6 @@ CONFIGURE_ENV+=	CPP=${CPP}
 CONFIGURE_ARGS+=--enable-zlib=${BUILDLINK_PREFIX.zlib}/lib \
 		--localstatedir=/var
 
-.include "../../devel/zlib/buildlink2.mk"
-.include "../../security/openssl/buildlink2.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
