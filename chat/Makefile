@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/11/28 12:29:27 martti Exp $
+# $NetBSD: Makefile,v 1.24 2001/11/29 16:18:57 hubertf Exp $
 #
 
 COMMENT=	communication programs
@@ -28,6 +28,7 @@ SUBDIR+=	libyahoo
 SUBDIR+=	micq
 SUBDIR+=	p5-Net-ICQ2000
 SUBDIR+=	silc-client
+SUBDIR+=	silc-server
 SUBDIR+=	sirc
 SUBDIR+=	tik
 SUBDIR+=	tirc
