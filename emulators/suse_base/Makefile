@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2002/08/25 21:49:48 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2002/10/09 07:14:26 grant Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 CATEGORIES=		emulators
 PKGREVISION=		1
 MASTER_SITES=		${MASTER_SITE_SUSE:=a1/} \
-			ftp://ftp.suse.com/pub/suse/i386/update/${SUSE_VERSION}/a1/
+			${MASTER_SITE_SUSE_UPD:=a1/}
 DISTFILES=		${RPMFILES}
 
 MAINTAINER=		tron@netbsd.org
