@@ -1,12 +1,13 @@
 $NetBSD$
 
---- doc/Manual.txt.orig	Wed Jan 13 13:29:59 1999
-+++ doc/Manual.txt	Tue Feb 23 15:56:56 1999
-@@ -1,8 +1,3 @@
-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HALF DONE (^_^; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+--- doc/Manual.txt.orig	Wed Jun  2 05:31:41 1999
++++ doc/Manual.txt	Sun Aug 22 17:05:59 1999
+@@ -1,9 +1,3 @@
 -
 -((((((( ``DeleGate Home Page'' is at http://wall.etl.go.jp/delegate/ )))))))
+-(((((((      Read http://wall.etl.go.jp/delegate/tutorial/ first.    )))))))
 -
+->>>>>>>>>>>>>>>>>>>>>>>>>>>>>> HALF DONE (^_^; <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 -
  DELEGATED(8)              MAINTENANCE COMMANDS                 DELEGATED(8)
  
