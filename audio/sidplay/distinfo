@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.5 2001/04/14 10:30:38 pooka Exp $
+$NetBSD$
 
 SHA1 (sidplay-base-1.0.4.tgz) = 7d7940b0f1d65c8f2b0409241ea07abdf588ad68
+Size (sidplay-base-1.0.4.tgz) = 118157 bytes
 SHA1 (patch-aa) = 227b2205953a9f2d3ebf2d686c78d955ff8cd29c
 SHA1 (patch-ab) = 70669b794d225a3179ac7e78f7858579c6b3e7d8

@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:56 agc Exp $
+$NetBSD$
 
-MD5 (tosha-0.05.tar.gz) = a8de61c231018cd6044270a3936c3e08
+SHA1 (tosha-0.05.tar.gz) = b567f452843b544b082c88403d74ad1ca07f6820
+Size (tosha-0.05.tar.gz) = 17859 bytes
 SHA1 (patch-aa) = b549c7ae682ce14cae981d2311ed32e9b0ca6d48
 SHA1 (patch-ab) = 9b4b43d6cb0fe2871cfd0e7e76ffdbd19123573a
 SHA1 (patch-ac) = 26feb1151d4fb02c5831762447c7bb264517f4d6

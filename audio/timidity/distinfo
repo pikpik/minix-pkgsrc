@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.3 2000/12/17 01:37:40 wiz Exp $
+$NetBSD$
 
-MD5 (TiMidity++-2.10.2.tar.bz2) = 2f2003fff6ee4eec80c17cf5af377c5a
+SHA1 (TiMidity++-2.10.2.tar.bz2) = ec97271f5137c0a59c8fdd8bd1e382467d4aa9c2
+Size (TiMidity++-2.10.2.tar.bz2) = 867158 bytes
 SHA1 (patch-aa) = 6c5019f99759ca9050f149eab74f5361f554f560

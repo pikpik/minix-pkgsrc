@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/10/11 16:02:30 proff Exp $
+$NetBSD$
 
-MD5 (us1-980512.zip) = 1b21560b45c5566cf4672e8eb7393490
+SHA1 (us1-980512.zip) = 3cf707fc1039cb86c96423e75588119f8b167ce0
+Size (us1-980512.zip) = 6562915 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/10/11 14:00:34 proff Exp $
+$NetBSD$
 
-MD5 (mbr301h.zip) = 0520ccf7303441232e7ebbf39752c6ee
+SHA1 (mbr301h.zip) = 33c1a808b0b746378403b808d5ce617c62badc9f
+Size (mbr301h.zip) = 51771 bytes

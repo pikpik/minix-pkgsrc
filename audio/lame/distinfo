@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.7 2000/11/15 13:52:59 wiz Exp $
+$NetBSD$
 
-MD5 (lame3.87beta.tar.gz) = 0c0f6f4aab5963be12509657d5dccd5c
+SHA1 (lame3.87beta.tar.gz) = d1c23fddf6418249fb7f843572cc4a13df7b563c
+Size (lame3.87beta.tar.gz) = 470753 bytes
 SHA1 (patch-aa) = 7971f9979571f5206c4c24508fea003b0964933e

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/05 22:35:10 perry Exp $
+$NetBSD$
 
-MD5 (libcdaudio-0.99.4.tar.gz) = 1e673579fc377f2240d993a558a048be
+SHA1 (libcdaudio-0.99.4.tar.gz) = 00ee00d4e6dcff71b28be377b972c91f0277e273
+Size (libcdaudio-0.99.4.tar.gz) = 161900 bytes
