@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.365 2005/01/22 17:52:03 adrianp Exp $
+# $NetBSD: Makefile,v 1.366 2005/01/22 18:04:42 adrianp Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -188,6 +188,7 @@ SUBDIR+=	nvtv-gtk2
 SUBDIR+=	opendis
 SUBDIR+=	openexr
 SUBDIR+=	openptc
+SUBDIR+=	ov519view
 SUBDIR+=	p5-Chart
 SUBDIR+=	p5-Chart-ThreeD
 SUBDIR+=	p5-GD
