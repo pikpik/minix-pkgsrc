@@ -1,10 +1,10 @@
 $NetBSD$
 
---- tools/gnome-doc/Makefile.in.orig	Thu Oct 12 23:03:18 2000
+--- tools/gnome-doc/Makefile.in.orig	Fri Jan 25 09:58:04 2002
 +++ tools/gnome-doc/Makefile.in
-@@ -146,7 +146,7 @@
+@@ -148,7 +148,7 @@
  
- EXTRA_DIST = gnome-doc.el gnome-doc mkstub
+ EXTRA_DIST = gnome-doc.el gnome-doc mkstub $(man_MANS)
  
 -docdir = $(datadir)/doc
 +docdir = $(datadir)/doc/gnome-libs
