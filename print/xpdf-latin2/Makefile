@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/08/06 14:04:34 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/06 14:50:23 wiz Exp $
 #
 
 DISTNAME=	xpdf-latin2
@@ -29,6 +29,6 @@ do-install:
 		${X11PREFIX}/share/xpdf/latin2
 
 post-install:
-	${CAT} ${WRKSRC}/add-to-xpdfrc >> ${X11PREFIX}/etc/xpdfrc
+	${CAT} ${WRKSRC}/add-to-xpdfrc >> ${PKG_SYSCONFDIR}/xpdfrc
 
 .include "../../mk/bsd.pkg.mk"
