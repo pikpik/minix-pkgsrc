@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/01/10 01:27:42 mjl Exp $
+# $NetBSD: Makefile,v 1.21 2003/06/11 20:50:54 abs Exp $
 
 DISTNAME=	fxtv-1.03
 PKGREVISION=	2
@@ -32,7 +32,7 @@ XAW_TYPE=	3d
 post-extract:
 	@${RM} -f ${WRKSRC}/videolib/videolib.o
 
-post-patch:
+pre-configure:
 	cd ${WRKSRC}; for file in app_rsrc.h Fxtv; do			\
 		${SED}	-e "s,/dev/dsp,${DEVOSSAUDIO},g"		\
 			$${file} > $${file}.fixed;			\
