@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/05/07 14:08:13 seb Exp $
+# $NetBSD: Makefile,v 1.12 2004/05/15 14:55:38 seb Exp $
 #
 
 DISTNAME=	source-highlight-1.9
@@ -12,6 +12,8 @@ COMMENT=	Highlight syntax of various languages source into HTML document
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK3=	YES
+
+TEST_TARGET=	check
 
 .include "../../mk/bsd.prefs.mk"
 
