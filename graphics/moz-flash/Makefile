@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2003/05/23 09:23:05 salo Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 21:41:45 grant Exp $
 #
 
-.include "../../graphics/libflash/Makefile.common"
+.include "../../multimedia/libflash/Makefile.common"
 
 PKGNAME=	moz-flash-1.0
 PKGREVISION=	4
@@ -27,6 +27,6 @@ do-install:
 	cd ${WRKSRC}/Plugin && \
 		${INSTALL_PROGRAM} .libs/npflash.so ${MOZ_PLUGDIR}
 
-.include "../../graphics/libflash/buildlink2.mk"
+.include "../../multimedia/libflash/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
