@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2000/07/10 11:49:55 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.14 2000/08/21 21:01:31 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.15 1997/09/01 12:28:30 tg Exp
 #
 
 DISTNAME=		elk-3.0
 PKGNAME=		elk-3.0.2
 CATEGORIES=		lang
-MASTER_SITES=		ftp://ftp.uni-bremen.de/pub/programming/languages/scheme/elk/
+MASTER_SITES=		http://www-rn.informatik.uni-bremen.de/software/elk/dist/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www-rn.informatik.uni-bremen.de/software/elk/
