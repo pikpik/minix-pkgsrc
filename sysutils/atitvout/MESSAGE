@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+ Try running the ${PREFIX}/share/atitvout/test.sh program to find
+ out if this program works with your video card.  It will cycle
+ through all available settings with pauses.
+
+===========================================================================
