@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/04/27 06:14:47 taca Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/22 14:12:06 taca Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
@@ -16,6 +16,7 @@ COMMENT=		ChaSen, Japanese Morphological Analysis System
 
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
+USE_BUILDLINK_ONLY=	# defined
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
