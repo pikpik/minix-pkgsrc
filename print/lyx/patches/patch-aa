@@ -20,3 +20,12 @@ $NetBSD$
  else
    echo "$ac_t""no" 1>&6
  echo $ac_n "checking for fl_initialize in -lxforms""... $ac_c" 1>&6
+@@ -9764,7 +9764,7 @@
+   cat conftest.$ac_ext >&5
+   rm -rf conftest*
+   CATOBJEXT=.mo
+-		   DATADIRNAME=lib
++		   DATADIRNAME=share
+ fi
+ rm -f conftest*
+ 		INSTOBJEXT=.mo
