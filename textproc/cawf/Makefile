@@ -1,5 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2005/01/20 18:23:55 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/20 19:01:12 tv Exp $
 #
+# Possible TODOs:
+# - set CH based on manual page section number, and real OS name
+# - add -mdoc implementation and/or translator
+# - use system getopt(3)?
+# - use system regex support?
 
 DISTNAME=		cawf
 PKGNAME=		cawf-4.10
