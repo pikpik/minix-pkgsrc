@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/02/06 10:54:17 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.7 2003/02/06 11:50:01 dmcmahill Exp $
 #
 
-DISTNAME=		gnustep-make-1.5.1
-PKGREVISION=		1
+DISTNAME=		gnustep-make-1.6.0
 CATEGORIES=		devel gnustep
 MASTER_SITES=		ftp://ftp.gnustep.org/pub/gnustep/core/
 
