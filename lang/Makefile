@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/02/10 15:49:19 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/02/17 10:19:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -55,6 +55,7 @@
 #    SUBDIR += tcl75
 #    SUBDIR += tcl76
     SUBDIR += tcl80
+    SUBDIR += tclX80
 #    SUBDIR += xpl
 
 .include <bsd.port.subdir.mk>
