@@ -4,7 +4,7 @@
 # Date created:         15 May 1996
 # Whom:                 ache
 #
-# $NetBSD: Makefile,v 1.3 1997/11/18 12:43:40 agc Exp $
+# $NetBSD: Makefile,v 1.4 1997/12/13 21:31:00 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
 #
 
@@ -25,7 +25,7 @@ EXTRACT_CMD=
 EXTRACT_BEFORE_ARGS=
 CAT1=		rar.1
 
-post-fetch:
+pre-extract:
 	chmod a+x ${DISTDIR}/${DISTFILES}
 
 do-build:
