@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.448 2004/02/26 22:56:56 agc Exp $
+# $NetBSD: Makefile,v 1.449 2004/02/29 03:33:06 xtraeme Exp $
 #
 
 COMMENT=	Networking tools
@@ -28,6 +28,7 @@ SUBDIR+=	bind8
 SUBDIR+=	bind9
 SUBDIR+=	bing
 SUBDIR+=	bittorrent
+SUBDIR+=	bittorrent-gui
 SUBDIR+=	bounce
 SUBDIR+=	bpalogin
 SUBDIR+=	bridged
