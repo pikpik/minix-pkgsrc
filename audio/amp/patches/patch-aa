@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- audioIO.c.old	Sun Oct 26 10:55:27 1997
++++ audioIO.c	Sun Oct 26 10:56:03 1997
+@@ -18,7 +18,7 @@
+   #include "audioIO_HPUX.c"
+ #endif
+ 
+-#ifdef OS_SunOS
++#if defined(OS_SunOS) || defined(OS_NetBSD)
+   #include "audioIO_SunOS.c"
+ #endif
+
