@@ -12,39 +12,3 @@ $NetBSD$
  # Make sure we can run config.sub.
  $ac_config_sub sun4 >/dev/null 2>&1 ||
    { { echo "$as_me:$LINENO: error: cannot run $ac_config_sub" >&5
-@@ -22005,7 +22002,7 @@ cat >>conftest.$ac_ext <<_ACEOF
- 		#include <openssl/md5.h>
- 		#include <openssl/sha.h>
- 		#define OPENSSL_DES_LIBDES_COMPATIBILITY
--		#include <openssl/des.h>
-+		#include <openssl/des_old.h>
- 		#include <openssl/rc4.h>
- 		#include <openssl/rand.h>
- 		#else
-@@ -22101,7 +22098,7 @@ cat >>conftest.$ac_ext <<_ACEOF
- 		#include <openssl/md5.h>
- 		#include <openssl/sha.h>
- 		#define OPENSSL_DES_LIBDES_COMPATIBILITY
--		#include <openssl/des.h>
-+		#include <openssl/des_old.h>
- 		#include <openssl/rc4.h>
- 		#include <openssl/rand.h>
- 		#else
-@@ -22197,7 +22194,7 @@ cat >>conftest.$ac_ext <<_ACEOF
- 		#include <openssl/md5.h>
- 		#include <openssl/sha.h>
- 		#define OPENSSL_DES_LIBDES_COMPATIBILITY
--		#include <openssl/des.h>
-+		#include <openssl/des_old.h>
- 		#include <openssl/rc4.h>
- 		#include <openssl/rand.h>
- 		#else
-@@ -22324,7 +22321,7 @@ cat >>conftest.$ac_ext <<_ACEOF
- 		#include <openssl/md5.h>
- 		#include <openssl/sha.h>
- 		#define OPENSSL_DES_LIBDES_COMPATIBILITY
--		#include <openssl/des.h>
-+		#include <openssl/des_old.h>
- 		#include <openssl/rc4.h>
- 		#include <openssl/rand.h>
- 		#else
