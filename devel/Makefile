@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.198 2001/04/16 21:31:48 jtb Exp $
+# $NetBSD: Makefile,v 1.199 2001/04/24 14:36:31 wulf Exp $
 #
 
 COMMENT=	Development utilities
@@ -183,6 +183,7 @@ SUBDIR+=	swig
 SUBDIR+=	tavrasm
 SUBDIR+=	tkcvs
 SUBDIR+=	tkdiff
+SUBDIR+=	tmake
 SUBDIR+=	tpasm
 SUBDIR+=	unproven-pthreads
 SUBDIR+=	w32api
