@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/04/14 10:34:29 pooka Exp $
+# $NetBSD: Makefile,v 1.6 2001/06/26 18:04:59 jlam Exp $
 #
 
 DISTNAME=	libsidplay-1.36.47
@@ -17,6 +17,7 @@ USE_GMAKE=		yes
 USE_BUILDLINK_ONLY=	yes
 
 USE_LIBTOOL=		yes
+LDFLAGS+=		-lstdc++ -lm
 LTCONFIG_OVERRIDE=	${WRKSRC}/scripts/ltconfig
 
 .include "../../mk/bsd.pkg.mk"
