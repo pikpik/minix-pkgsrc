@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/11/02 16:49:44 grant Exp $
+# $NetBSD: Makefile,v 1.12 2002/11/18 20:22:53 jlam Exp $
 
 DISTNAME=	db-2.7.7
 PKGREVISION=	1
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.sleepycat.com/
 COMMENT=	Sleepycat Software's Berkeley DB version 2
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/build_unix
+
+NO_PKGTOOLS_REQD_CHECK=	# defined (needed for pkgtools/pkg_install)
 
 USE_BUILDLINK2=		yes
 USE_LIBTOOL=		yes
