@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:12:49 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/03 14:19:05 jdolecek Exp $
 
 DISTNAME=		fbsql.c
 PKGNAME=		tcl-fbsql-1.05
@@ -25,7 +25,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fbsql.so ${TCL_DIR}
 
 .include "../../databases/mysql-client/buildlink2.mk"
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
 
 .ifmake do-install

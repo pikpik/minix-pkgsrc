@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/19 12:04:20 sketch Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:28:27 agc Exp $
 # FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.21 2000/10/20 19:56:04 knu Exp
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -11,7 +11,7 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.ruby-lang.org/en/
 COMMENT=	Ruby interface to Tcl/Tk libraries
 
-DEPENDS+=	tcl>=8.3:../../lang/tcl
+DEPENDS+=	tcl>=8.3:../../lang/tcl83
 DEPENDS+=	tk>=8.3:../../x11/tk
 
 WRKSRC=		${RUBY_WRKSRC}/ext/tcltklib

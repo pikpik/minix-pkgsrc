@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/01/12 09:46:04 cjep Exp $
+# $NetBSD: Makefile,v 1.33 2004/01/22 07:51:12 grant Exp $
 #
 
 .include "../../comms/pilot-link/Makefile.common"
@@ -36,7 +36,7 @@ post-patch:
 .include "../../devel/readline/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
 .include "../../lang/perl5/buildlink2.mk"
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 .include "../../x11/tk/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"

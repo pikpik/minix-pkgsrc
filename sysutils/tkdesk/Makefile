@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:24:41 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/27 00:53:10 heinz Exp $
 #
 
 DISTNAME=	tkdesk-1.2
@@ -21,7 +21,7 @@ pre-install:
 	${FIND} ${WRKSRC}/tcldesk -type f -name '*.orig' -print | ${XARGS} ${RM} -rf
 	${FIND} ${WRKSRC}/tcldesk -name '*' -exec ${TOUCH} {} ';'
 
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 .include "../../lang/tcl-itcl/buildlink2.mk"
 .include "../../x11/blt/buildlink2.mk"
 .include "../../x11/tk/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/08/31 02:02:30 jtb Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:09:10 agc Exp $
 
 DISTNAME=	xcircuit-3.1.19
 CATEGORIES=	cad graphics
@@ -32,6 +32,6 @@ post-install:
 
 .include "../../graphics/xpm/buildlink2.mk"
 .include "../../x11/tk/buildlink2.mk"
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 .include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"

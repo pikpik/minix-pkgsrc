@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/12/13 03:21:38 dmcmahill Exp $
 #
 # This Makefile fragment is included by packages that use libstroke.
 #
@@ -17,7 +17,7 @@ BUILDLINK_PREFIX.libstroke_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.libstroke+=	lib/libstroke.*
 BUILDLINK_FILES.libstroke+=	lib/libstroke_tcl.*
 
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	libstroke-buildlink
 

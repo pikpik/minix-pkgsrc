@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:21:26 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:25:36 grant Exp $
 #
 
 DISTNAME=	eggdrop1.6.15
@@ -66,7 +66,7 @@ do-install-program:
 	cd ${WRKSRC}/scripts && ${INSTALL_DATA} CONTENTS *.tcl autobotchk \
 		 botchk weed ${PREFIX}/share/eggdrop/scripts/
 
-.include "../../lang/tcl/buildlink2.mk"
+.include "../../lang/tcl83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
 
 .if defined(NOPIC)
