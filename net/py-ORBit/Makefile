@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/05/09 16:33:38 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/13 13:52:59 wiz Exp $
 #
 
-DISTNAME=	pyorbit-1.99.4
+DISTNAME=	pyorbit-1.99.6
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/pyorbit/ORBit/}
-PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pyorbit/1.99/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	marc@informatik.uni-bremen.de
+MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python bindings for ORBit2
 
