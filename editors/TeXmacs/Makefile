@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/01/30 00:08:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/03/14 19:37:37 jlam Exp $
 
 DISTNAME=	TeXmacs-1.0.1-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -41,5 +41,4 @@ post-install:
 	         ${PREFIX}/share/${PKGNAME_NOREV}/doc
 
 .include "../../lang/guile14/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
