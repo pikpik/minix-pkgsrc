@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/11/20 06:24:39 jwise Exp $
+# $NetBSD: Makefile,v 1.2 1998/11/20 09:43:57 frueauf Exp $
 #
 
 DISTNAME=	icb.2.1.4
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://shoshin.armory.com/pub/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jwise@netbsd.org
+HOMEPAGE=	http://www.icb.net/
 
 DEPENDS=	tk-8.0p2:../../x11/tk80
 
