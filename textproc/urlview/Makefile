@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:37:55 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/11 06:34:52 jlam Exp $
 
 DISTNAME=	urlview-0.9
 CATEGORIES=	textproc
@@ -10,12 +10,9 @@ MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/contrib/ \
 MAINTAINER=	tron@netbsd.org
 COMMENT=	extract URLs from text files and display them in a menu
 
-DEPENDS+=	ncurses>=5.0:../../devel/ncurses
+GNU_CONFIGURE=		yes
+USE_NCURSES=		yes
+USE_BUILDLINK_ONLY=	yes
 
-#USE_CURSES=	yes
-#REPLACE_NCURSES=	${WRKSRC}/configure ${WRKSRC}/enter.h ${WRKSRC}/urlview.c
-
-GNU_CONFIGURE=	yes
-CPPFLAGS=	-I${LOCALBASE}/include
-
+.include "../../devel/ncurses/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
