@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.9 2004/02/24 23:12:37 cube Exp $
 #
 
 DISTNAME=		gkrellmoon-0.6
@@ -13,5 +13,6 @@ COMMENT=		GKrellM2 moonclock plugin
 USE_BUILDLINK3=		yes
 ALL_TARGET=		gkrellmoon.so
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../sysutils/gkrellm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
