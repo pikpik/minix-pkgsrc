@@ -1,1 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/28 14:20:42 tron Exp $
+bin/qwsv
+bin/qwcl.x11
+bin/glqwcl.glx
+bin/glquake.glx
+bin/quake.x11
