@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.122 2004/11/27 12:53:15 gson Exp $
+# $NetBSD: Makefile,v 1.123 2004/12/23 10:49:51 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -31,7 +31,6 @@ SUBDIR+=	gcalctool
 SUBDIR+=	geg
 SUBDIR+=	glpk
 SUBDIR+=	gnumeric
-SUBDIR+=	gnumeric0
 SUBDIR+=	gnumeric14
 SUBDIR+=	gp-autpgrp
 SUBDIR+=	gp-factint
