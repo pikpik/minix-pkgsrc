@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gstreamer-0.8/libgstesd.a
+lib/gstreamer-0.8/libgstesd.la
+lib/gstreamer-0.8/libgstesd.so
+@comment in gst-plugins: @dirrm lib/gstreamer-0.8
