@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.512 2004/07/04 14:01:06 drochner Exp $
+# $NetBSD: Makefile,v 1.513 2004/07/05 12:37:03 recht Exp $
 #
 
 COMMENT=	Development utilities
@@ -203,10 +203,13 @@ SUBDIR+=	libgail-gnome
 SUBDIR+=	libgetopt
 SUBDIR+=	libglade
 SUBDIR+=	libglade2
+SUBDIR+=	libglademm20
 SUBDIR+=	libglademm24
 SUBDIR+=	libgnome
+SUBDIR+=	libgnomemm20
 SUBDIR+=	libgnomemm26
 SUBDIR+=	libgnomeui
+SUBDIR+=	libgnomeuimm20
 SUBDIR+=	libgnomeuimm26
 SUBDIR+=	libgphoto2
 SUBDIR+=	libgsf
