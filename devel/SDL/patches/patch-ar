@@ -1,11 +1,11 @@
 $NetBSD$
 
---- src/Makefile.am.orig	Wed Feb 28 07:06:11 2001
-+++ src/Makefile.am
-@@ -20,7 +20,6 @@
- 
+--- src/Makefile.am.orig	2004-04-10 14:48:03.000000000 -0700
++++ src/Makefile.am	2004-04-10 14:48:08.000000000 -0700
+@@ -21,7 +21,6 @@ lib_LTLIBRARIES = libSDL.la
  libSDL_la_SOURCES = $(GENERAL_SRCS)
  libSDL_la_LDFLAGS = 		\
+ 	-no-undefined		\
 -        -release $(LT_RELEASE)	\
  	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
  libSDL_la_LIBADD =		\
