@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2003/07/21 17:10:53 martti Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/25 08:26:40 snj Exp $
 #
 
 DISTNAME=		netsaint-0.0.7
 PKGNAME=		${DISTNAME:S/-/-base-/}
-PKGREVISION=		3
+PKGREVISION=		4
 MASTER_SITES=		http://www.netsaint.org/download/
 
 MAINTAINER=		murray@river-styx.org

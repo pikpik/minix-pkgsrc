@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2004/03/08 20:27:14 minskim Exp $
+# $NetBSD: Makefile,v 1.35 2004/05/09 00:45:45 snj Exp $
 
 DISTNAME=		plplot-5.2.1
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=plplot/}
 
