@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.286 2002/04/08 20:25:37 hubertf Exp $
+# $NetBSD: Makefile,v 1.287 2002/04/12 08:21:42 rh Exp $
 #
 
 COMMENT=	Networking tools
@@ -131,6 +131,8 @@ SUBDIR+=	ntop
 SUBDIR+=	ntp4
 SUBDIR+=	openh323
 SUBDIR+=	openslp
+SUBDIR+=	p5-IO-Interface
+SUBDIR+=	p5-IO-Socket-Multicast
 SUBDIR+=	p5-Net
 SUBDIR+=	p5-Net-DNS
 SUBDIR+=	p5-Net-Daemon
