@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Imakefile.orig	Thu Jan  9 18:29:36 1997
-+++ Imakefile	Sat Mar 28 11:11:19 1998
+--- Imakefile.orig	Fri Jan 10 02:29:36 1997
++++ Imakefile
 @@ -6,7 +6,7 @@
  SHIPS       = 5
  
