@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mp3splt
+bin/oggsplt
+man/man1/mp3splt.1
