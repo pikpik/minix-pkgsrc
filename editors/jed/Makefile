@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/11/12 16:30:44 agc Exp $
+# $NetBSD: Makefile,v 1.4 1999/06/03 08:27:21 agc Exp $
 #
 
 DISTNAME=		jed0.98-7
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://space.mit.edu/pub/davis/jed/v0.98/ \
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://space.mit.edu/%7Edavis/jed.html
 
-DEPENDS+=		libslang-1.2.2:../../devel/libslang
+DEPENDS+=		libslang-1.3.7:../../devel/libslang
 
 CONFIGURE_ARGS+=	--without-X --prefix=${PREFIX}
 GNU_CONFIGURE=		yes
