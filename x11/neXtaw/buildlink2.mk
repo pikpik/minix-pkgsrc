@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/09/23 08:29:59 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/03/03 14:22:41 seb Exp $
 
 .if !defined(NEXTAW_BUILDLINK2_MK)
 NEXTAW_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		neXtaw
-BUILDLINK_DEPENDS.neXtaw?=	neXtaw>=0.12
+BUILDLINK_DEPENDS.neXtaw?=	neXtaw>=0.14.0
 BUILDLINK_PKGSRCDIR.neXtaw?=	../../x11/neXtaw
 
 .include "../../mk/bsd.prefs.mk"
