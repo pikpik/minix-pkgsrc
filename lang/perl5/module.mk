@@ -1,4 +1,4 @@
-# $NetBSD: module.mk,v 1.25 2003/11/25 19:30:21 jlam Exp $
+# $NetBSD: module.mk,v 1.26 2003/11/27 04:11:40 jlam Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install perl5 modules.
@@ -48,6 +48,13 @@ PERL5_CONFIGURE_DIRS?=	${CONFIGURE_DIRS}
 # directories.
 #
 MAKE_PARAMS+=		INSTALLDIRS=site
+
+.if ${OPSYS} == "AIX"
+# Perl doesn't like building with gcc on AIX
+CC=/usr/bin/cc
+MAKE_PARAMS+=  CC="${CC}"
+.undef USE_GCC3
+.endif
 
 .PHONY: perl5-configure
 perl5-configure:
