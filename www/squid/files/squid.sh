@@ -1,7 +1,8 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: squid.sh,v 1.6 2001/02/04 20:46:14 tron Exp $
 #
+# PROVIDE: squid
 # REQUIRE: DAEMON
 
 name="squid"
