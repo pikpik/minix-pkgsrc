@@ -1,6 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/26 10:58:24 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
+
+XFCE4_VERSION=	4.0.0
 
 DISTNAME=	xfce4-themes-${XFCE4_VERSION}
 CATEGORIES=	x11
