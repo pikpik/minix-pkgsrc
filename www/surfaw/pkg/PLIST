@@ -1,0 +1,19 @@
+@comment $NetBSD$
+bin/altavista
+bin/ask
+bin/austlii
+bin/cite
+bin/currency
+bin/deja
+bin/google
+bin/ircsearch
+bin/raging
+bin/rhyme
+bin/slashdot
+bin/surfaw
+bin/xxx
+bin/yahoo
+etc/surfaw.conf
+etc/surfaw_elvi.list
+share/doc/surfaw/README
+@dirrm share/doc/surfaw
