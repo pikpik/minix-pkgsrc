@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/24 19:09:14 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/28 11:25:26 wiz Exp $
 #
 
 DISTNAME=       sane-frontends-1.0.4
@@ -27,6 +27,8 @@ USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=${WRKSRC}/ltconfig
 
 # -O to work around a bug with -O2 and egcs.
-CFLAGS=		-O -I${LOCALBASE}/include
+CFLAGS=		-O
+# to find gimp includes
+CPPFLAGS=	-I${LOCALBASE}/include
 
 .include "../../mk/bsd.pkg.mk"
