@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/sysinfo
 man/man1/sysinfo.1
 man/man5/sysinfo.cf.5
