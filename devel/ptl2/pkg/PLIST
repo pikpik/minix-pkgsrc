@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/ptlgcc
+lib/libPTL.a
+lib/libPTL.so
+lib/libPTL.so.1.1
+@exec mkdir -p %D/libdata/PTL
+@dirrm libdata/PTL
