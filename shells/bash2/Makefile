@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2002/09/26 22:06:29 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2002/11/17 09:02:00 salo Exp $
 #
 
 DISTNAME=	bash-2.05
@@ -52,8 +52,11 @@ pre-build:
 pre-configure:
 	cd ${GETTEXT_PREFIX};						\
 	for file in include/libintl.h lib/libintl.*; do			\
-		${MKDIR} ${GETTEXTDIR}/`${DIRNAME} $${file}`;		\
-		${LN} -sf ${GETTEXT_PREFIX}/$${file} ${GETTEXTDIR}/$${file}; \
+		if [ -f "$${file}" ]; then				\
+			${MKDIR} ${GETTEXTDIR}/`${DIRNAME} $${file}`;	\
+			${LN} -sf ${GETTEXT_PREFIX}/$${file}		\
+				${GETTEXTDIR}/$${file};			\
+		fi;							\
 	done
 
 post-install:
