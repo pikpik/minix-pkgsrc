@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.201 2003/08/30 16:11:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.202 2003/09/08 14:28:11 jmmv Exp $
 
 COMMENT=	System utilities
 
@@ -161,6 +161,13 @@ SUBDIR+=	xbatt
 SUBDIR+=	xbattbar
 SUBDIR+=	xcdroast
 SUBDIR+=	xdu
+SUBDIR+=	xfce4-fm
+SUBDIR+=	xfce4-fm-icons
+SUBDIR+=	xfce4-minicmd-plugin
+SUBDIR+=	xfce4-netload-plugin
+SUBDIR+=	xfce4-showdesktop-plugin
+SUBDIR+=	xfce4-systemload-plugin
+SUBDIR+=	xfce4-systray
 SUBDIR+=	xfe
 SUBDIR+=	xfm
 SUBDIR+=	xhfs
