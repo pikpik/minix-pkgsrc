@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/09/22 10:06:00 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/03/14 19:37:41 jlam Exp $
 
 .if !defined(OGLE_BUILDLINK2_MK)
 OGLE_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		ogle
-BUILDLINK_DEPENDS.ogle?=	ogle>=0.8.5
+BUILDLINK_DEPENDS.ogle?=	ogle>=0.9.1
 BUILDLINK_PKGSRCDIR.ogle?=	../../graphics/ogle
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.ogle=ogle
