@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/11/01 03:37:35 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/02/07 16:44:13 tron Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/12/16 19:42:17 vanilla Exp
 #
 
@@ -23,6 +23,15 @@ USE_X11=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+= --with-gd-inc=${LOCALBASE}/include \
 		--with-gd-lib=${LOCALBASE}/lib
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ARGS+=	--with-z-lib=${LOCALBASE}/lib
+CONFIGURE_ARGS+=	--with-z-inc=${LOCALBASE}/include
+CONFIGURE_ARGS+=	--with-png-lib=${LOCALBASE}/lib
+CONFIGURE_ARGS+=	--with-png-inc=${LOCALBASE}/include
+.endif
 
 post-build:
 	${SED} s#@PREFIX@#${PREFIX}#g <${FILESDIR}/mrtg.conf.example \
