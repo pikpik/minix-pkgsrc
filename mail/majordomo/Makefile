@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/03/27 11:53:17 agc Exp $
+# $NetBSD: Makefile,v 1.13 2001/04/13 01:42:32 itojun Exp $
 
 DISTNAME=		majordomo-1.94.5
 CATEGORIES=		mail
@@ -9,6 +9,8 @@ EXTRACT_SUFX=   	.tgz
 MAINTAINER=		packages@biology.nmsu.edu
 HOMEPAGE=		http://www.greatcircle.com/majordomo/
 COMMENT=		The Majordomo mailing list manager
+
+LICENSE=		majordomo-license
 
 .if exists(/usr/sbin/user)
 ADDUSER=		/usr/sbin/useradd
