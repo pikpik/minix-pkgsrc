@@ -13,6 +13,7 @@ lib/libmusicbrainz.a
 lib/libmusicbrainz.la
 lib/libmusicbrainz.so
 lib/libmusicbrainz.so.2
-lib/libmusicbrainz.so.2.0
+lib/libmusicbrainz.so.2.1
+lib/pkgconfig/libmusicbrainz.pc
 @dirrm include/musicbrainz/bitzi
 @dirrm include/musicbrainz
