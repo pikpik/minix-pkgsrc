@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2000/10/13 18:16:00 kim Exp $
+# $NetBSD: Makefile,v 1.23 2000/11/05 11:07:57 veego Exp $
 # FreeBSD Id: Makefile,v 1.18 1998/04/06 20:50:31 andreas Exp
 #
 
 DISTNAME=	ucd-snmp-4.1.2
 CATEGORIES=	net
-MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
+MASTER_SITES=	ftp://download.sourceforge.net/net-snmp/ \
+		ftp://ucd-snmp.ucdavis.edu/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/ucd-snmp/ \
 		ftp://ftp.win.or.jp/pub/network/snmp/ucd-snmp/
 
@@ -13,7 +14,7 @@ MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
 #PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://ucd-snmp.ucdavis.edu/
+HOMEPAGE=	http://net-snmp.sourceforge.net/
 
 BUILD_DEPENDS+=	autoreconf:../../devel/autoconf
 
