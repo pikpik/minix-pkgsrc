@@ -2,8 +2,12 @@ $NetBSD$
 
 --- Makefile.orig	Mon Dec 16 04:50:45 1996
 +++ Makefile
-@@ -32,7 +32,7 @@
- EMACS    = emacs
+@@ -29,10 +29,10 @@
+ 
+ 
+ # Programs.
+-EMACS    = emacs
++#EMACS    = xemacs
  TEX      = tex
  TEXINDEX = texindex
 -MAKEINFO = makeinfo
