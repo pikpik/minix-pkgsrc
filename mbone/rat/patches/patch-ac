@@ -1,12 +1,10 @@
 $NetBSD$
 
---- src/gsm_code.c.orig	Sat Nov 27 23:38:15 1999
-+++ src/gsm_code.c	Sat Nov 27 23:38:16 1999
-@@ -7,6 +7,7 @@
- /* $Header: /archive/NetBSD-CVS/pkgsrc/mbone/rat/patches/patch-ac,v 1.3 1999/11/27 22:41:18 rh Exp $ */
+--- src/gsm_code.c.orig	Sun Dec 12 09:18:04 1999
++++ src/gsm_code.c	Sun Dec 12 09:18:04 1999
+@@ -8,4 +8,5 @@
  
  #include	<stdlib.h>
 +#include	<string.h>
  #include	"gsm.h"
  
- /* 
