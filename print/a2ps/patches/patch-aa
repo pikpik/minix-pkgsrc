@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- contrib/emacs/Makefile.in.orig	Thu Feb 18 16:25:36 1999
++++ contrib/emacs/Makefile.in	Tue Sep 21 05:28:37 1999
+@@ -58,7 +58,7 @@
+ includedir = @includedir@
+ oldincludedir = /usr/include
+ 
+-DESTDIR =
++DESTDIR = @prefix@/share/emacs/site-lisp
+ 
+ pkgdatadir = $(datadir)/@PACKAGE@
+ pkglibdir = $(libdir)/@PACKAGE@
