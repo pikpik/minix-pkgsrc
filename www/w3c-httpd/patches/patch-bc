@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Daemon/Implementation/HTPasswd.c.orig	Sun Sep 25 06:48:03 1994
 +++ Daemon/Implementation/HTPasswd.c	Sat Mar  8 10:02:19 1997
 @@ -77,6 +77,7 @@

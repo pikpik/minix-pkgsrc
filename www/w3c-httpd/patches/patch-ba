@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** Daemon/Implementation/CommonMakefile.orig	Mon Dec 30 17:25:30 1996
 --- Daemon/Implementation/CommonMakefile	Mon Dec 30 17:27:26 1996
 ***************

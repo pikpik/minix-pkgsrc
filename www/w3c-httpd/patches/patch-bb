@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** All/freebsd/Makefile.include.orig	Mon Dec 30 17:18:49 1996
 --- All/freebsd/Makefile.include	Mon Dec 30 17:19:46 1996
 ***************
