@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 1998/04/22 14:22:50 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/04/24 09:20:39 agc Exp $
 # FreeBSD Id: Makefile,v 1.28 1997/12/08 15:51:20 tg Exp
 #
 
-DISTNAME=		tkman-2.0.4
+DISTNAME=		tkman-2.0.6
 CATEGORIES=		misc tk80
 MASTER_SITES=		ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
 EXTRACT_SUFX=		.tar.Z
