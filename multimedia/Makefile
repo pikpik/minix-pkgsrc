@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/02/22 16:33:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2004/02/24 21:51:04 jmmv Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -40,6 +40,7 @@ SUBDIR+=	nautilus-media
 SUBDIR+=	ns-flash
 SUBDIR+=	ogle
 SUBDIR+=	ogle_gui
+SUBDIR+=	openquicktime
 SUBDIR+=	realplayer
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	trplayer
