@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/06/04 08:47:45 uebayasi Exp $
+# $NetBSD: Makefile,v 1.5 2002/06/10 10:24:25 sakamoto Exp $
 #
 
 COMMENT=	Input method tools and libraries
 
+SUBDIR+=	Chinput
 SUBDIR+=	canna-dict
 SUBDIR+=	canna-lib
 SUBDIR+=	canna-server
@@ -21,6 +22,7 @@ SUBDIR+=	sj3-server-bin
 SUBDIR+=	skkfep
 SUBDIR+=	skkinput
 SUBDIR+=	skkserv
+SUBDIR+=	unicon-im
 SUBDIR+=	xcin
 
 .include "../mk/bsd.pkg.subdir.mk"
