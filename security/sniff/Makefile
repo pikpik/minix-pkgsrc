@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/03/13 13:59:14 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/13 14:14:40 zuntum Exp $
 #
 
 DISTNAME=	sniff-2.0
@@ -8,6 +8,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	zuntum@netbsd.org
 COMMENT=	Program to sniff logins and passwords
 
-MAKE_ENV+=	"CC=${CC}" "PREFIX=${PREFIX}"
+MAKE_ENV+=	CC="${CC}" PREFIX="${PREFIX}"
 
 .include "../../mk/bsd.pkg.mk"
