@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/08 16:36:24 jlam Exp $
 
 DISTNAME=	xpp-0.7
 CATEGORIES=	print x11
@@ -8,7 +8,7 @@ MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://cups.sourceforge.net/xpp/index.html
 
 DEPENDS+=	cups>=1.1.1:../../print/cups
-DEPENDS+=	fltk>=1.0.9:../../graphics/fltk
+DEPENDS+=	fltk>=1.0.9:../../x11/fltk
 
 USE_X11=	# defined
 
