@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2000/08/27 02:46:05 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 00:36:30 wiz Exp $
 
 DISTNAME=	sirc-2.211
+PKGNAME=	sirc-2.211nb1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.iagora.com/~espel/sirc/ \
 		http://www.iagora.com/~espel/sirc/scripts/
