@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/10/15 14:50:07 tv Exp $
+# $NetBSD: Makefile,v 1.44 2004/12/04 16:22:39 wiz Exp $
 
 DISTNAME=	Guppi-0.40.3
 PKGNAME=	${DISTNAME:S/G/g/}
@@ -10,6 +10,10 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/guppi/
 COMMENT=	Plot program with integrated statistics capabilities
+
+# guppi is no longer maintained, see e.g.
+# http://mail.gnome.org/archives/guppi-list/2004-June/msg00001.html
+# only left here for gnucash
 
 # works only with gnumeric-1.0.x (gnome1 based)
 CONFIGURE_ARGS=		--disable-gnumeric
