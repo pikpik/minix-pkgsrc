@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/focal
+share/doc/focal/focal.doc
+share/doc/focal/queens.foc
+share/doc/focal/sieve.foc
+@dirrm share/doc/focal
