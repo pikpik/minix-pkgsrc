@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/02 03:20:12 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/03/16 12:57:13 wiz Exp $
 
 DISTNAME=		um5.5.2
 PKGNAME=		moria-5.5.2
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://ftp.funet.fi/pub/unix/games/moria/source/
 EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		simonb@netbsd.org
-HOMEPAGE=		http://www.math.lsa.umich.edu/~grabiner/moria.html
+HOMEPAGE=		http://www-math.bgsu.edu/~grabine/moria.html
 
 WRKSRC=			${WRKDIR}/umoria
 
