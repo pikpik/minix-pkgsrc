@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.PL.orig	Thu Jun  5 19:42:58 2003
-+++ Makefile.PL	Sat Sep 13 07:53:49 2003
-@@ -97,12 +97,8 @@
+--- Makefile.PL.orig	Sun Oct 26 06:36:09 2003
++++ Makefile.PL
+@@ -101,12 +101,8 @@ that try to query live nameservers.
  
  EOT
  
