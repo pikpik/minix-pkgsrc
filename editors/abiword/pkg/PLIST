@@ -1,9 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/09/11 18:27:49 jlam Exp $
 bin/AbiWord
 bin/abiword
 libexec/AbiSuite/AbiWord
 libexec/AbiSuite/AbiWord_d
-libexec/AbiSuite/AbiWord_s
 share/AbiSuite/COPYING
 share/AbiSuite/readme.txt
 share/AbiSuite/AbiWord/readme.txt
