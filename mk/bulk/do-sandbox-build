@@ -1,5 +1,5 @@
 #!/bin/sh
-#	$NetSBD$
+#	$NetBSD$
 
 #
 # Script to start a sandbox build
