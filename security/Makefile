@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2001/10/01 15:25:40 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2001/10/16 06:07:11 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -8,6 +8,7 @@ SUBDIR+=	AiSSLtelnet
 SUBDIR+=	PAM
 SUBDIR+=	aide
 SUBDIR+=	amavis
+SUBDIR+=	amavis-perl
 SUBDIR+=	apg
 SUBDIR+=	audit-packages
 SUBDIR+=	cfs
