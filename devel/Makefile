@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.463 2004/02/20 04:15:53 minskim Exp $
+# $NetBSD: Makefile,v 1.464 2004/02/20 04:21:21 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -222,7 +222,6 @@ SUBDIR+=	libtool-info
 SUBDIR+=	libts
 SUBDIR+=	libusb
 SUBDIR+=	libwnck
-SUBDIR+=	loudmouth
 SUBDIR+=	lwp
 SUBDIR+=	m4
 SUBDIR+=	maketool
