@@ -1,9 +1,9 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1 1999/05/30 18:18:31 tron Exp $
 
 --- Makefile.inc.orig	Sun May 30 18:49:12 1999
 +++ Makefile.inc	Sun May 30 18:49:12 1999
 @@ -0,0 +1,32 @@
-+#	$NetBSD: patch-aa,v 1.1 1999/05/29 20:57:19 christos Exp $
++#	$NetBSD: patch-ab,v 1.1 1999/05/30 18:18:31 tron Exp $
 +
 +WARNS?=	0
 +
@@ -19,7 +19,7 @@ $NetBSD$
 +UOBJDIR!=cd $(.CURDIR)/../util; \
 +	printf "xxx: .MAKE\n\t@echo \$${.OBJDIR}\n" | ${MAKE} -s -f-
 +
-+CPPFLAGS+= -Wno-comment -DNETBSD1 -I${.CURDIR}/ \
++CPPFLAGS+= -Wno-comment -D@OPSYS@ -I${.CURDIR}/ \
 +	-I${.CURDIR}/../master -I${.CURDIR}/../global -I${.CURDIR}/../util \
 +	-I${.CURDIR}/../dns
 +
