@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/01 10:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 22:54:16 grant Exp $
 #
 
 DISTNAME=	groff-1.19
@@ -32,5 +32,4 @@ CONFIGURE_ENV+=	PAGE=${PAPERSIZE}
 .endif
 
 .include "../../mk/ghostscript.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
