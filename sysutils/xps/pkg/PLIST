@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xps
-lib/X11/app-defaults/Xps
-man/man1/xps.1

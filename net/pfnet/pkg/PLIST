@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1998/11/22 22:30:08 tv Exp $
-bin/pfnet
-${PERL5_SITELIB}/CMDLINE.pm
-${PERL5_SITELIB}/FNET.pm

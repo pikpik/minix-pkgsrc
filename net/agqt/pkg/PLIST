@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/ag
-bin/am
-share/doc/agqt/README
-share/doc/agqt/ChangeLog
-share/doc/agqt/agrc.sample
-@dirrm share/doc/agqt

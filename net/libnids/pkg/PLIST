@@ -1,4 +1,0 @@
-@comment $NetBSD$
-include/nids.h
-lib/libnids.a
-man/man3/libnids.3

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/skill
-bin/snice
-man/man1/skill.1
-man/man1/snice.1

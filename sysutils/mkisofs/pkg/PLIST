@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/mkisofs
-man/man8/mkisofs.8.gz

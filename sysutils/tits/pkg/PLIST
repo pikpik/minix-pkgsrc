@@ -1,5 +1,0 @@
-@comment $NetBSD$
-share/examples/tits.conf
-sbin/tits
-man/man8/tits.8
-man/cat8/tits.0

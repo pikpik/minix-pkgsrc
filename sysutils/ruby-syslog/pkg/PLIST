@@ -1,4 +1,0 @@
-@comment $NetBSD$
-${RUBY_SITEARCHLIBDIR}/syslog.so
-${RUBY_DOCDIR}/syslog/0README
-@dirrm ${RUBY_DOCDIR}/syslog

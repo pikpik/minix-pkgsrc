@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/dynipadmin
-bin/dynipclient
-man/man1/dynipadmin.1
-man/man1/dynipclient.1

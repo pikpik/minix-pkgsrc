@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/batchftp
-share/doc/batchftp/batchftp.doc
-@dirrm share/doc/batchftp

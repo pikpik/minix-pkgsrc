@@ -1,5 +1,0 @@
-@comment $NetBSD$
-${RUBY_SITEARCHLIBDIR}/icmpmodule.so
-${RUBY_SITELIBDIR}/icmp.rb
-${RUBY_EXAMPLESDIR}/icmp/ping.rb
-@dirrm ${RUBY_EXAMPLESDIR}/icmp

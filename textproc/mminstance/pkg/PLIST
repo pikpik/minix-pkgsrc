@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/mmafm
-bin/mmpfb
-man/man1/mmafm.1
-man/man1/mmpfb.1

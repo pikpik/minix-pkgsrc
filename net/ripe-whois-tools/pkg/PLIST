@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/ripe-whois
-bin/ripe-networkupdate
-bin/ripe-cryptpw
-man/man1/ripe-whois.1

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-sbin/6to4
-etc/6to4.conf-example
-share/doc/6to4.html
-man/man8/6to4.8

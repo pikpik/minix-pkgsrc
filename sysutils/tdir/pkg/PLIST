@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/tdir
-share/doc/tdir/tdir-license.txt
-@dirrm share/doc/tdir

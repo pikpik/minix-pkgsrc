@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/bibindex
-bin/biblook
-man/man1/bibindex.1
-man/man1/biblook.1

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xarchie
-lib/X11/app-defaults/Xarchie
-man/cat1/xarchie.0

@@ -1,3 +1,0 @@
-@comment $NetBSD$
-sbin/tcpslice
-man/man1/tcpslice.1

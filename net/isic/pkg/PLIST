@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/isic
-bin/tcpsic
-bin/udpsic
-bin/icmpsic
-bin/esic
-share/doc/isic.README

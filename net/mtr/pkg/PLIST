@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1999/12/04 16:50:12 sommerfeld Exp $
-man/man8/mtr.8
-sbin/mtr
-share/doc/mtr/SECURITY
-@dirrm share/doc/mtr

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-libexec/named4-xfer
-man/man8/named4.8
-sbin/named4
-sbin/ndc4

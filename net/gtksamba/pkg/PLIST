@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/gtksamba
-share/doc/gtksamba/COPYING
-share/doc/gtksamba/README
-share/doc/gtksamba/TODO
-share/doc/gtksamba/ChangeLog
-@dirrm share/doc/gtksamba

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-mdec/memtest.bin
-share/doc/memtest/README
-@dirrm mdec
-@dirrm share/doc/memtest

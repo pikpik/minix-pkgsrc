@@ -1,9 +1,0 @@
-@comment $NetBSD$
-etc/nsca.cfg.sample
-etc/send_nsca.cfg.sample
-sbin/nsca
-sbin/send_nsca
-share/doc/nsca/Changelog
-share/doc/nsca/README
-share/doc/nsca/SECURITY
-@dirrm share/doc/nsca

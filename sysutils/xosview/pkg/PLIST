@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xosview
-lib/X11/app-defaults/XOsview
-man/man1/xosview.1.gz

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/nap
-share/doc/nap/README
-share/examples/nap/nap.conf
-@dirrm share/examples/nap
-@dirrm share/doc/nap

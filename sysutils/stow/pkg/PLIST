@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/10/23 15:51:20 agc Exp $
-bin/stow
-@unexec install-info --delete %D/info/stow.info %D/info/dir
-info/stow.info
-@exec install-info %D/info/stow.info %D/info/dir

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/htc
-bin/hts
-man/man1/hts.1
-man/man1/htc.1
