@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/xpdf/turkish/ISO-8859-9.unicodeMap
+@dirrm share/xpdf/turkish
+@unexec ${RMDIR} %D/share/xpdf 2> /dev/null || true
