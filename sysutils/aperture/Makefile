@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2002/09/13 07:18:42 tron Exp $
+# $NetBSD: Makefile,v 1.21 2002/09/14 08:14:22 tron Exp $
 
 DISTNAME=	apNetBSD
 PKGNAME=	aperture-2.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils x11
 EXTRACT_SUFX=	.shar
 
