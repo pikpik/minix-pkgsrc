@@ -1,0 +1,6 @@
+# $NetBSD$
+
+-Wl,*)
+	skipcache=yes
+	;;
+esac

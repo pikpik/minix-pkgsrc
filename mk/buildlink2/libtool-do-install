@@ -1,0 +1,17 @@
+# $NetBSD$
+
+cmd="$cmd $arg"
+while $test $# -gt 0; do
+	arg="$1"; shift
+	case $arg in
+	*[\`\"\$\\]*)
+		arg=`$echo "X$arg" | $Xsed -e "$sed_quote_subst"`
+		;;
+	esac
+	case $arg in
+	*[\[\~\#\^\&\*\(\)\{\}\|\;\<\>\?\'\ \	]*|*]*|"")
+		arg="\"$arg\""
+		;;
+	esac
+	cmd="$cmd $arg"
+done
