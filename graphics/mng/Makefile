@@ -30,9 +30,9 @@ pre-configure:
 	cd ${WRKSRC};				\
 	${RM} -f configure.in && ${LN} -sf makefiles/configure.in .;	\
 	${RM} -f Makefile.am && ${LN} -sf makefiles/Makefile.am .;	\
-	${ACLOCAL};				\
+	${SETENV} AUTOM4TE=${LOCALBASE}/bin/autom4te ${ACLOCAL};	\
 	${LOCALBASE}/bin/libtoolize --automake;	\
-	${AUTOMAKE} -a --foreign -i;		\
+	${SETENV} AUTOCONF=${AUTOCONF} ${AUTOMAKE} -a --foreign -i;	\
 	${AUTOCONF}
 
 post-install:
