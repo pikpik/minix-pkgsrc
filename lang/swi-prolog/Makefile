@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.28 2004/05/09 02:26:14 snj Exp $
+# $NetBSD: Makefile,v 1.29 2004/05/20 11:18:37 hubertf Exp $
 
-.include "../swi-prolog-lite/Makefile"
+.include "../swi-prolog-lite/Makefile.common"
 
 PKGNAME=		swi-prolog-${SWIPLVERS}
 CATEGORIES=		lang
