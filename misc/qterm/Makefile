@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 1998/08/20 15:17:15 tsarna Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 18:09:21 wiz Exp $
 #
 
 DISTNAME=	qterm-ac-1.0
 PKGNAME=	qterm-1.0
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
@@ -12,4 +13,10 @@ COMMENT=	utility to recognise terminal type automatically
 
 GNU_CONFIGURE=	yes
 
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+
+EGDIR=		${PREFIX}/share/examples/qterm
+CONF_FILES=	${EGDIR}/qtermtab ${PKG_SYSCONFDIR}/qtermtab
+
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
