@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/08 19:40:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/08 22:15:30 jmmv Exp $
 #
 
 DISTNAME=		aMule-1.2.6
@@ -23,6 +23,8 @@ USE_X11=		yes
 GNU_CONFIGURE=		yes
 
 LIBS+=			-lm
+
+UNLIMIT_RESOURCES+=	datasize
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
