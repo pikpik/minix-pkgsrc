@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/05/02 11:53:43 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2003/05/22 03:05:39 markd Exp $
 
 DISTNAME=	kdemultimedia-3.1.2
 CATEGORIES=	audio
@@ -14,6 +14,9 @@ USE_BUILDLINK2=		YES
 .if defined(USE_OSS)
 CONFIGURE_ARGS+=	--enable-audio=oss
 .endif
+
+CONFIGURE_ARGS+=	--disable-cdparanoia
+CONFIGURE_ARGS+=	--with-vorbis=${BUILDLINK_PREFIX.libvorbis}
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
