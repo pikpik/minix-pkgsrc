@@ -1,6 +1,6 @@
 $NetBSD$
---- build.xml.orig	Sun May 14 17:16:26 2000
-+++ build.xml	Sun May 14 17:17:45 2000
+--- build.xml.orig	Tue Dec 12 14:50:46 2000
++++ build.xml	Tue Dec 12 18:53:17 2000
 @@ -6,7 +6,7 @@
      <property name="ant.home" value="../jakarta-ant" />
      <property name="build.compiler" value="classic"/>
