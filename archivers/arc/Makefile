@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2004/03/11 18:03:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/10 23:51:36 minskim Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:09 fenner Exp
 #
 
 DISTNAME=       arc521e.pl8
 PKGNAME=        arc-5.21e
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=   .tar.Z
