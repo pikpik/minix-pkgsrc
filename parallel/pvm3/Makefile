@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/09/27 23:18:35 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2002/02/07 10:49:07 seb Exp $
 
 DISTNAME=		pvm3.4.3
 PKGNAME=		pvm-3.4.3
@@ -28,6 +28,10 @@ ALL_TARGET=		all install
 PLIST_SRC=		${WRKDIR}/PLIST-src
 
 PVM_DIR=		${PREFIX}/pvm3
+
+# avoid installing this file
+post-patch:
+	${RM} -f ${WRKSRC}/lib/pvmgetarch.orig
 
 do-install:
 	PVM_ARCH=`${PVM_ROOT}/lib/pvmgetarch` ; export PVM_ARCH ;\
