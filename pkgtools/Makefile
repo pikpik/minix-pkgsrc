@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2001/02/20 16:27:06 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2001/03/06 11:22:12 agc Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -10,6 +10,7 @@ SUBDIR+=	gensolpkg
 SUBDIR+=	perl-mk
 #SUBDIR+=	pkg_install	# Only install on demand of bsd.pkg.mk
 SUBDIR+=	pkg_tarup
+SUBDIR+=	pkgconflict
 SUBDIR+=	pkgdep
 SUBDIR+=	pkgdiff
 SUBDIR+=	pkglint
