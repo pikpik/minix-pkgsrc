@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/08/26 01:27:14 mjl Exp $
+# $NetBSD: Makefile,v 1.5 2002/03/13 17:37:04 fredb Exp $
 
 DISTNAME=		dia-0.88.1
 PKGREVISION=		1
@@ -23,6 +23,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gnome --enable-gnome-print
 
+.include "../../print/gnome-print/buildlink.mk"
 .include "../../graphics/gdk-pixbuf/buildlink.mk"
 .include "../../x11/gnome-libs/buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
