@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/03/28 18:17:57 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2001/03/29 15:26:31 jlam Exp $
 
 DISTNAME=		crafty-18.9
 CATEGORIES=		games
@@ -50,6 +50,7 @@ CRAFTYRC=		${WRKDIR}/.craftyrc
 
 post-extract:
 	${CP} ${DISTDIR}/${DIST_SUBDIR}/${CRAFTY_STARTPGN} ${WRKDIR}
+	${MV} ${WRKSRC}/Sparc.s ${WRKSRC}/Sparc.S
 
 post-build:
 	${RM} -f ${CRAFTYRC}
