@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2001/10/18 15:20:09 veego Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/26 06:49:42 jlam Exp $
 #
 
-DISTNAME=	SQL-Statement-0.1020
+DISTNAME=	SQL-Statement-0.1021
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5sqs
 CATEGORIES=	databases perl5
