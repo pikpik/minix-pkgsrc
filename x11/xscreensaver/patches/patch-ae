@@ -1,7 +1,7 @@
-$NetBSD: patch-ae,v 1.2 2000/07/26 18:15:04 frueauf Exp $
+$NetBSD$
 
---- driver/xscreensaver.kss.orig	Wed Jan 31 19:06:02 2001
-+++ driver/xscreensaver.kss	Wed Feb  7 23:31:02 2001
+--- driver/xscreensaver.kss.orig	Thu Feb  1 02:06:02 2001
++++ driver/xscreensaver.kss
 @@ -1,4 +1,4 @@
 -#!/bin/bash -
 +#!/bin/sh -
