@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2004/01/03 10:45:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/06 19:49:24 jmmv Exp $
 
-DISTNAME=	pkg_comp-1.13
+DISTNAME=	pkg_comp-1.14
 WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
