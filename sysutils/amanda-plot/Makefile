@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/01/16 21:59:32 cjones Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 17:42:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -21,6 +21,6 @@ USE_X11=		yes
 
 CONFIGURE_ARGS+=	--without-client --without-restore \
 			--without-restore --without-amrecover
-CONFIGURE_ENV+=		GNUPLOT="${LOCALBASE}/gnuplot"
+CONFIGURE_ENV+=		GNUPLOT="${LOCALBASE}/bin/gnuplot"
 
 .include "../../mk/bsd.pkg.mk"
