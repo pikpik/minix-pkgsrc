@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Sat Sep  7 14:19:08 2002
++++ Makefile.in	Sat Sep  7 14:19:16 2002
+@@ -91,7 +91,7 @@
+ VERSION = @VERSION@
+ ms_librarian = @ms_librarian@
+ 
+-SUBDIRS = libgail-util gail tests docs
++SUBDIRS = libgail-util gail docs
+ 
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = gail.pc
