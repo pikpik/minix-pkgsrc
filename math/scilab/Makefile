@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2004/02/01 01:43:29 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2004/02/14 17:21:44 jlam Exp $
 #
 
 DISTNAME=	${SCIBASE}.src
@@ -91,5 +91,5 @@ do-test:
 		tee ${WRKDIR}/examples.log
 
 .include "../../parallel/pvm3/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

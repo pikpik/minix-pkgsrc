@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/27 00:53:11 heinz Exp $
+# $NetBSD: Makefile,v 1.16 2004/03/07 09:29:04 seb Exp $
 
 DISTNAME=		sather-1.2.1
 PKGREVISION=		3
@@ -90,6 +90,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/Emacs/*.el ${PREFIX}/share/emacs/site-lisp
 
 .include "../../devel/boehm-gc/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/06/02 01:19:31 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 21:40:17 grant Exp $
 #
 
 DISTNAME=		cqcam-0.45a
@@ -18,5 +18,5 @@ USE_BUILDLINK2=		YES
 USE_X11=		YES
 
 .include "../../graphics/jpeg/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

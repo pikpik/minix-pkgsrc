@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:26:21 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:09:35 agc Exp $
 #
 
 DISTNAME=	icb.2.1.4
@@ -38,5 +38,5 @@ do-install:
 		${WRKSRC}/lib/servers ${PREFIX}/libdata/tkicb/lib
 	${INSTALL_SCRIPT} ${WRKSRC}/lib/* ${PREFIX}/libdata/tkicb/lib
 
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/31 23:04:42 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/14 00:54:45 grant Exp $
 
 DISTNAME=	otcl-1.0a8
 PKGNAME=	tcl-${DISTNAME:S/a/rc/}
@@ -36,5 +36,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/${_file_} ${DOCDIR}
 .endfor
 
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

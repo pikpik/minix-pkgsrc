@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/17 14:58:44 jmmv Exp $
 #
 
 .include "../../textproc/catdoc/Makefile.common"
@@ -17,5 +17,5 @@ CONFIGURE_ENV+=		enable_wordview=yes
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/src/wordview ${PREFIX}/bin/wordview
 
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:55:13 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:27:35 agc Exp $
 
 DISTNAME=	icewmconf-2.1.0
 CATEGORIES=	wm
@@ -24,5 +24,5 @@ post-patch:
 do-install:
 	${INSTALL_SCRIPT} ${FILENAME} ${PREFIX}/bin/
 
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

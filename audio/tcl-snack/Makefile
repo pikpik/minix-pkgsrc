@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:23:28 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:07:43 agc Exp $
 
 DISTNAME=	snack2.2
 PKGNAME=	tcl-snack-2.2
@@ -15,5 +15,5 @@ USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 USE_X11=	YES
 
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

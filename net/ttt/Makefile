@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:57 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/13 23:35:38 xtraeme Exp $
 #
 
 DISTNAME=	ttt-1.8
@@ -17,5 +17,5 @@ INSTALL_TARGET=	install install-man
 
 .include "../../net/libpcap/buildlink2.mk"
 .include "../../x11/blt/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

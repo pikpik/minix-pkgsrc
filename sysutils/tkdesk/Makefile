@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/27 00:53:10 heinz Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/08 19:52:51 minskim Exp $
 #
 
 DISTNAME=	tkdesk-1.2
@@ -24,5 +24,5 @@ pre-install:
 .include "../../lang/tcl83/buildlink2.mk"
 .include "../../lang/tcl-itcl/buildlink2.mk"
 .include "../../x11/blt/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

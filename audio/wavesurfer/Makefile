@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:23:41 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/09/10 20:44:18 jmmv Exp $
 
 DISTNAME=	wavesurfer-1.4.6
 CATEGORIES=	audio
@@ -16,5 +16,5 @@ do-install:
 	${CP} -R ${WRKSRC}/wsurf1.4 ${PREFIX}/lib/
 
 .include "../../audio/tcl-snack/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

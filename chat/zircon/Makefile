@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/07/02 11:30:43 agc Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:26:34 grant Exp $
 #
 
 DISTNAME=	zircon-1.18.245
@@ -9,7 +9,7 @@ MAINTAINER=	frueauf@NetBSD.org
 HOMEPAGE=	http://catless.ncl.ac.uk/Programs/Zircon/
 COMMENT=	X11 interface to Internet Relay Chat
 
-DEPENDS+=	tk>=8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk83
 
 INTERACTIVE_STAGE=	install
 NO_BUILD=	yes

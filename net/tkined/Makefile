@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/12/18 09:52:32 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:22:22 agc Exp $
 #
 
 DISTNAME=	scotty-2.1.11
@@ -10,7 +10,7 @@ MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://wwwhome.cs.utwente.nl/~schoenw/scotty/
 COMMENT=	Graphical network discovery and monitoring tool based on scotty
 
-DEPENDS+=	tk>=8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk83
 DEPENDS+=	tcl-scotty>=2.1.11:../../net/tcl-scotty
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/06/11 06:34:51 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:53:58 grant Exp $
 #
 
 DISTNAME=	hfsutils-3.2.6
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.mars.org/home/rob/proj/hfs/
 COMMENT=	Tk GUI + Tcl Shell for accessing HFS volumes
 
 DEPENDS=	libhfs-3.2.6:../../devel/libhfs
-DEPENDS+=	tk>=8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk83
 
 USE_X11=	yes
 

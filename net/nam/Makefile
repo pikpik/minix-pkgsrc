@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/25 11:01:18 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/25 17:32:45 wiz Exp $
 
 DISTNAME=	nam-src-1.9
 PKGNAME=	${DISTNAME:S/-src//}
@@ -29,5 +29,5 @@ post-install:
 .include  "../../devel/zlib/buildlink2.mk"
 .include  "../../lang/tcl-otcl/buildlink2.mk"
 .include  "../../devel/tcl-tclcl/buildlink2.mk"
-.include "../../x11/tk/buildlink2.mk"
+.include "../../x11/tk83/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

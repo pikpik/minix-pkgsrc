@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/09/25 22:01:26 recht Exp $
+# $NetBSD: Makefile,v 1.20 2003/09/26 10:53:54 jmmv Exp $
 # $FreeBSD Id: Makefile,v 1.12 1998/02/24 21:43:11 jseger Exp
 #
 
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.cd.chalmers.se/~hch/filerunner.html
 COMMENT=	Filemanager with FTP capabilities. Uses Tcl/Tk
 
-DEPENDS+=	tk>=8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk83
 
 USE_X11BASE=	yes
 
