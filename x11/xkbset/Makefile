@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/23 15:39:46 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/25 10:23:44 hubertf Exp $
 #
 
 DISTNAME=	xkbset-0.3
@@ -10,6 +10,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.math.missouri.edu/~stephen/software/#xkbset
 COMMENT=	Manages XKB features of the X window system
 
+USE_PERL5=	build
 USE_X11BASE=	yes
 REPLACE_PERL=	mskacc-gui
 
