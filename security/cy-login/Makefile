@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/14 00:08:46 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/01/14 05:15:39 jlam Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy-login/}
 PKGREVISION=	1
@@ -12,9 +12,13 @@ SASL_PLUGIN=	YES
 #
 CONFIGURE_ARGS+=	--enable-login		# LOGIN
 CONFIGURE_ARGS+=	--enable-plain		# PLAIN
-.if defined(USE_PAM)
+
+PKG_OPTIONS_VAR=	PKG_OPTIONS.cy-login
+PKG_SUPPORTED_OPTIONS=	PAM
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:MPAM)
 .  include "../../mk/pam.buildlink3.mk"
-BUILD_DEFS+=		USE_PAM
 CONFIGURE_ARGS+=	--with-pam=${PAMBASE}
 .endif
 

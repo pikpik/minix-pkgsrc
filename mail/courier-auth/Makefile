@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/07/14 21:37:09 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2004/12/28 02:47:44 reed Exp $
 
 PKGNAME=	courier-auth-${BASE_VERS}
 PKGREVISION=	1
@@ -14,6 +14,8 @@ REPLACE_PERL=		sysconftool
 USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
+
+PKG_OPTION_VAR=		PKG_OPTIONS.courier-auth
 
 .include "../courier-auth/Makefile.authdaemond"
 

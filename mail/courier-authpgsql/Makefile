@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/07/14 21:43:48 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2004/07/24 22:45:15 recht Exp $
 
 PKGNAME=	courier-authpgsql-${BASE_VERS}
 COMMENT=	Courier PostgreSQL authentication module
 
 DEPENDS+=	courier-auth-${BASE_VERS}{,nb*}:../../mail/courier-auth
+
+PKG_OPTION_VAR=	PKG_OPTIONS.courier-authpgsql
 
 .include "../courier-auth/Makefile.authdaemond"
 
