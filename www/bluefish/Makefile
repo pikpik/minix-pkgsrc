@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/02/22 14:57:41 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2001/03/27 03:20:23 hubertf Exp $
 #
 
 DISTNAME=	bluefish-0.6
@@ -17,7 +17,6 @@ COMMENT=	GTK HTML editor for the experienced web designer
 
 BUILD_DEPENDS+=	autoconf-2.13:../../devel/autoconf
 BUILD_USES_MSGFMT=	yes
-
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
 DEPENDS+=	imlib-*:../../graphics/imlib
 DEPENDS+=	weblint-*:../../www/weblint

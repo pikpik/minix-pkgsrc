@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/02/17 17:07:06 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/03/27 03:20:28 hubertf Exp $
 
 DISTNAME=		xfce-3.6.3
 CATEGORIES=		x11
@@ -9,7 +9,6 @@ HOMEPAGE=		http://www.xfce.org/
 COMMENT=		Lightweight desktop environment with a look and feel similar to CDE
 
 BUILD_USES_MSGFMT=	yes
-
 DEPENDS+=		gtk+-1.2.*:../../x11/gtk
 DEPENDS+=		imlib-1.9.*:../../graphics/imlib
 

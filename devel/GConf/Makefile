@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/02/16 14:38:16 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/03/27 03:19:50 hubertf Exp $
 #
 
 DISTNAME=	GConf-0.11
@@ -9,11 +9,10 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://advogato.org/proj/GConf/
 COMMENT=	configuration database system used by GNOME
 
+BUILD_USES_MSGFMT=	yes
 DEPENDS+=	gnome-core>=1.2.0:../../x11/gnome-core
 DEPENDS+=	oaf-*:../../devel/oaf
 DEPENDS+=	guile>=1.3.4:../../lang/guile
-
-BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
