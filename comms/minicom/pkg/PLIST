@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/minicom
 bin/xminicom
 bin/runscript
