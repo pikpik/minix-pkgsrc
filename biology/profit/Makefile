@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/27 23:18:26 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:08:40 agc Exp $
 #
 
 DISTNAME=		profit
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.rubic.rdg.ac.uk/~andrew/bioinf.org/software/profit/index.h
 COMMENT=		Performs least squares fits of two protein structures
 
 ALL_TARGET=		${DISTNAME}
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 WRKSRC=			${WRKDIR}/ProFitV2.2/src
 
 do-install:

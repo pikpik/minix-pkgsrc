@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/27 23:46:55 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:08:40 agc Exp $
 #
 
 DISTNAME=		stride
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www-db.embl-heidelberg.de/jss/servlet/de.embl.bk.wwwTools.Grou
 COMMENT=		Protein secondary structure assignment from atomic coordinates
 
 WRKSRC=			${WRKDIR}
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/stride ${PREFIX}/bin
