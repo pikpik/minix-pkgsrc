@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/01/23 21:50:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 13:55:30 grant Exp $
 
-DISTNAME=	kbiff-3.6.3
-PKGREVISION=	6
-CATEGORIES=	devel
+DISTNAME=	kbiff-3.7
+CATEGORIES=	devel kde
 MASTER_SITES=	http://devel-home.kde.org/~granroth/kbiff/
 EXTRACT_SUFX=	.tar.bz2
 
