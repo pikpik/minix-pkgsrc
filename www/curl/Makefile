@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2001/06/29 03:48:41 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/08/13 18:36:13 nra Exp $
 
-DISTNAME=	curl-7.8
+DISTNAME=	curl-7.8.1
 CATEGORIES=	www
 MASTER_SITES=	http://curl.haxx.se/download/
 
@@ -15,6 +15,7 @@ GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_DIR}
 
 .include "../../security/openssl/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
