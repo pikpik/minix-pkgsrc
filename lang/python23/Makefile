@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/12/08 21:13:56 recht Exp $
+# $NetBSD: Makefile,v 1.12 2003/12/23 17:24:42 recht Exp $
 #
 
 DISTNAME=	Python-2.3.3
@@ -17,7 +17,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-threads
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	OPT="${CFLAGS}"
-UNLIMIT_RESOURCES+=	stacksize
 
 INSTALL_TARGET=	altinstall
 TEST_TARGET=	test
