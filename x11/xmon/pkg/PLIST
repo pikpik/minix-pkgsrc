@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/xmond
+bin/xmonui
+man/cat1/xmon.0
+man/cat1/xmond.0
+man/cat1/xmonui.0
