@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/inews
+lib/libnntpclnt.a
+@exec mkdir -p %D/etc/nntp
+@dirrm etc/nntp
+man/man3/nntpclnt.3.gz
