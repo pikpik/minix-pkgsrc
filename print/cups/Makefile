@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2003/03/20 18:49:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.61 2003/05/28 02:33:59 jlam Exp $
 #
 # The CUPS author is very good about taking back changes into the main
 # CUPS distribution.  The correct place to send patches or bug-fixes is:
@@ -31,6 +31,7 @@ USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GMAKE=		yes
+INSTALL_TARGET=		installcups
 
 USE_LIBTOOL=		yes
 LIBTOOL_FLAGS+=		--preserve-dup-deps
