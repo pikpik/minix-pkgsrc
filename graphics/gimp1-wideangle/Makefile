@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/24 15:46:43 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 22:08:14 xtraeme Exp $
 #
 
 DISTNAME=	wideangleFeb03
@@ -18,6 +18,6 @@ USE_GNU_TOOLS+=	make
 
 ALL_TARGET=	wideangle
 
-.include "../../graphics/gimp-base/buildlink2.mk"
+.include "../../graphics/gimp1-base/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"

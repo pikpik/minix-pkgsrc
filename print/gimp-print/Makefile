@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/02/14 17:21:50 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/02 14:56:07 drochner Exp $
 #
 
 DISTNAME=	gimp-print-4.2.6
@@ -22,5 +22,5 @@ USE_BUILDLINK2=	yes
 USE_X11=	yes
 
 .include "../../print/gimp-print-lib/buildlink2.mk"
-.include "../../graphics/gimp-base/buildlink2.mk"
+.include "../../graphics/gimp1-base/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:42 reed Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 22:07:33 xtraeme Exp $
 #
 
 DISTNAME=	gimp-data-extras-1.2.0
@@ -20,5 +20,5 @@ USE_BUILDLINK2=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 
-.include "../../graphics/gimp-base/buildlink2.mk"
+.include "../../graphics/gimp1-base/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
