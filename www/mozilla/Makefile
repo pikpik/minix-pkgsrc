@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.88 2002/06/06 02:05:57 taya Exp $
+# $NetBSD: Makefile,v 1.89 2002/06/12 00:48:32 dmcmahill Exp $
 
 MOZ_VER=	1.0
 DISTNAME=	mozilla-source-${MOZ_VER}
 PKGNAME=	mozilla-${MOZ_VER}
 WRKSRC=		${WRKDIR}/mozilla
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/mozilla${MOZ_VER}/src/ \
-		ftp://ftp.fu-berlin.de/pub/unix/network/www/mozilla/releases/mozilla${MOZ_VER}/src/
+MASTER_SITES=	${MASTER_SITE_MOZILLA:=mozilla${MOZ_VER}/src/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	taya@netbsd.org
