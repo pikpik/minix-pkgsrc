@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.297 2003/07/15 15:55:50 drochner Exp $
+# $NetBSD: Makefile,v 1.298 2003/07/22 17:28:27 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -27,6 +27,7 @@ SUBDIR+=	fbdesk
 SUBDIR+=	filerunner
 SUBDIR+=	fltk
 SUBDIR+=	fox
+SUBDIR+=	fspanel
 SUBDIR+=	fvwm-wharf
 SUBDIR+=	gdkxft
 SUBDIR+=	gdm
