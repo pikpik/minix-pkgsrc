@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.195 2001/02/28 15:31:26 hubertf Exp $
+# $NetBSD: Makefile,v 1.196 2001/03/01 13:46:43 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -49,6 +49,7 @@ SUBDIR+=	gtksamba
 SUBDIR+=	gtm
 SUBDIR+=	httptunnel
 SUBDIR+=	icsi-finger
+SUBDIR+=	ipv6calc
 SUBDIR+=	irrd
 SUBDIR+=	isic
 SUBDIR+=	ispman
