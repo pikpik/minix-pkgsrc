@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/03/23 21:27:40 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2000/03/28 00:09:19 dmcmahill Exp $
 #
 
 DISTNAME=	qt-1.44
@@ -28,7 +28,7 @@ do-configure:
 	@cd ${WRKSRC} && ${MAKE} QTDIR=${WRKSRC} ${LOWER_OPSYS}-g++-static
 
 .if defined(USE_GIF)
-pre-build:
+post-patch:
 	cd ${WRKSRC} && ${PATCH} <${FILESDIR}/enablegif.patch
 .endif
 
