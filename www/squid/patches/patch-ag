@@ -1,7 +1,7 @@
 $NetBSD$
 
---- configure.orig	Fri Nov 12 17:22:01 1999
-+++ configure	Fri Nov 12 17:22:01 1999
+--- configure.orig	Thu Sep 23 02:06:48 1999
++++ configure	Fri Nov 12 22:15:48 1999
 @@ -644,11 +644,11 @@
  REGEXLIB=''	# -lregex
  LIBREGEX=''	# libregex.a
@@ -19,3 +19,12 @@ $NetBSD$
  
  case "$host_os" in
  cygwin32|os2)
+@@ -1204,7 +1204,7 @@
+ #define SQUID_SNMP 1
+ EOF
+ 
+-    SNMPLIB='-L../snmplib -lsnmp'
++    SNMPLIB='../snmplib/libsnmp.a'
+     SNMP_OBJS='$(SNMP_OBJS)'
+     SNMP_MAKEFILE=./snmplib/Makefile
+     makesnmplib=snmplib

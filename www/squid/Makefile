@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 1999/10/07 17:41:59 tron Exp $
+# $NetBSD: Makefile,v 1.19 1999/11/12 16:25:30 rh Exp $
 
-DISTNAME=	squid-2.2.STABLE4-src
-PKGNAME=	squid-2.2s4
+DISTNAME=	squid-2.2.STABLE5-src
+PKGNAME=	squid-2.2s5
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://squid.nlanr.net/pub/squid-2/STABLE/ \
@@ -25,10 +25,7 @@ CONFIGURE_ARGS+=	--enable-icmp
 CONFIGURE_ARGS+=	--enable-ipf-transparent
 CONFIGURE_ARGS+=	--enable-snmp
 
-CPPFLAGS=		-I/usr/include/netinet
-CFLAGS+=		${CPPFLAGS}
-CONFIGURE_ENV+=		CPPFLAGS=${CPPFLAGS} \
-			PERL=${LOCALBASE}/bin/perl
+CONFIGURE_ENV+=		PERL=${LOCALBASE}/bin/perl
 
 MAKEFILE=	makefile
 MAKE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}" PKG_PREFIX="${PREFIX}"
