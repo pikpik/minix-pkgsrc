@@ -5,6 +5,6 @@ include/rio.h
 lib/librioutil.a
 lib/librioutil.la
 lib/librioutil.so
-lib/librioutil.so.1
-lib/librioutil.so.1.2
+lib/librioutil.so.4
+lib/librioutil.so.4.2
 man/man1/rioutil.1
