@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/31 22:39:45 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2000/10/22 20:01:55 tsarna Exp $
 #
 
 DISTNAME=	ReportLab_1_01
@@ -38,4 +38,3 @@ do-install:
 
 .include "../../lang/python/Makefile.inc"
 .include "../../mk/bsd.pkg.mk"
-
