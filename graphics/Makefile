@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2002/01/10 13:07:35 jlam Exp $
+# $NetBSD: Makefile,v 1.171 2002/01/24 16:15:19 tron Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -12,6 +12,7 @@ SUBDIR+=	MesaLib
 SUBDIR+=	Ngraph
 SUBDIR+=	SDL-image
 SUBDIR+=	aalib
+SUBDIR+=	aalib-x11
 SUBDIR+=	alevt
 SUBDIR+=	apla
 SUBDIR+=	artist
