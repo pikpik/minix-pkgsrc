@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/01/27 00:38:56 jmc Exp $
+# $NetBSD: Makefile,v 1.13 2002/10/21 00:52:29 wiz Exp $
 
 DISTNAME=		stalin-0.9
 CATEGORIES=		lang
@@ -13,6 +13,13 @@ COMMENT=		Aggressively optimizing Scheme compiler
 ONLY_FOR_PLATFORM=	*-*-i386 *-*-sparc *-*-alpha *-*-mips
 
 USE_BUILDLINK2=		yes
+UNLIMIT_RESOURCES=	stacksize datasize
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${MACHINE_ARCH} == "sparc")
+CFLAGS:=		${CFLAGS:C/-O[0-9]*/-O0/}
+.endif
 
 post-patch:
 	${SED} -e 's:@PREFIX@:${PREFIX}:g'			\
