@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/05/17 22:12:03 tron Exp $
 
 DISTNAME=	suse_linux-6.1
 CATEGORIES=	emulators
@@ -9,6 +9,7 @@ ONLY_FOR_ARCHS=	i386
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.suse.com/
 
+DEPENDS+=	suse_compat-6.1:../suse_compat
 DEPENDS+=	suse_libc5-6.1:../suse_libc5
 DEPENDS+=	suse_xforms-6.1:../suse_xforms
 
