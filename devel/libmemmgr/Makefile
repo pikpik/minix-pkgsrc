@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/12/24 09:53:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:13:28 agc Exp $
 #
 
 DISTNAME=		MemMgr-1.04
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.snake.net/software/MemMgr/
 MAINTAINER=		ben@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Simple memory manager library
-
-BUILD_DEPENDS+=		libetm-1.09:../../devel/libetm
 
 WRKSRC=			${WRKDIR}/memmgr-1.04
 
@@ -26,4 +24,5 @@ do-install:
 	groff -Tascii -ms ${WRKSRC}/memmgr.ms \
 		>${PREFIX}/share/doc/libmemmgr/memmgr.txt
 
+.include "../../devel/libetm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
