@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/02/17 18:20:01 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2001/02/25 04:18:10 hubertf Exp $
 #
 
 DISTNAME=	zephyr-2.0.4
@@ -11,7 +11,7 @@ COMMENT=	Zephyr Messaging Service
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(KERBEROS) && ${KERBEROS} == 4
+.if defined(KERBEROS)
 USE_KERBEROS=	yes
 CONFIGURE_ARGS+="--with-krb4"
 CONFIGURE_ENV+=	CPPFLAGS=-I/usr/include/kerberosIV

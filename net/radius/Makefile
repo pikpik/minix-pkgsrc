@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/01/29 11:34:38 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 18:19:31 wiz Exp $
 #
 # Tempted to install another radius package?
 #
@@ -26,7 +26,7 @@ DIST_SUBDIR=	radius
 
 CFLAGS+=	-DHAVE_SETVBUF -DNOSHADOW
 
-.if defined(KERBEROS) && ${KERBEROS} == 4
+.if defined(KERBEROS)
 USE_KERBEROS=	yes
 CFLAGS+=	-DM_KERB -I/usr/include/kerberosIV
 RADLIBS=	-lkrb -ldes
