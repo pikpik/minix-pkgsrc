@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/09 09:44:55 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:27:59 agc Exp $
 
 DISTNAME=	micro_httpd_14dec2001
 PKGNAME=	micro_httpd-20011214
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/micro_httpd/
 
-MAINTAINER=	bjan+pkgsrc@bjan.freeshell.org
+MAINTAINER=	pkgsrc@bjan.freeshell.org
 HOMEPAGE=	http://www.acme.com/software/micro_httpd/
 COMMENT=	Really small HTTP server than runs from inetd(8)
 
