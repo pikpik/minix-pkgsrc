@@ -6,6 +6,7 @@ ${PKGLOCALEDIR}/locale/es/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/hu/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/it/LC_MESSAGES/xchm.mo
+${PKGLOCALEDIR}/locale/lv/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/pt/LC_MESSAGES/xchm.mo
 ${PKGLOCALEDIR}/locale/ro/LC_MESSAGES/xchm.mo
