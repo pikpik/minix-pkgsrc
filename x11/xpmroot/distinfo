@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.6 2001/03/13 20:57:22 wiz Exp $
+
+SHA1 (fvwm-2.2.5.tar.gz) = 2cb0c6dbd1a361987a301956315d9f3b9a68f78b
+SHA1 (patch-aa) = 0942aa827c56def48c44e71f81f7678db6ff8192
+SHA1 (patch-ab) = 593f24232ab61531ac8797e79a672ae8bdc12632

@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.2 2000/02/25 17:58:01 jlam Exp $
+
+MD5 (eGTK_0.3.4.tar.gz) = bfdd61c536383dbebd6f69ebd1136ecd
+SHA1 (patch-aa) = 33a882df75c297b7dadc28fc33c3da0b4de523b9
+SHA1 (patch-ab) = 145e74f4e349474535e0a564b33204bf06e85bd8
