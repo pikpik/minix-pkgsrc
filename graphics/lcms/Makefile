@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/09/01 15:15:37 kim Exp $
+# $NetBSD: Makefile,v 1.6 2003/05/01 12:34:38 agc Exp $
 # FreeBSD: ports/graphics/lcms/Makefile,v 1.2 2000/12/19 15:36:26 sobomax Exp
 
 DISTNAME=	lcms-1.06
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.littlecms.com/ \
 		http://www.abaforum.es/martim/
 
-MAINTAINER=	packages@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.littlecms.com/
 COMMENT=	Light Color Management System -- a color management library
 
