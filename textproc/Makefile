@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2001/06/25 17:28:21 wiz Exp $
+# $NetBSD: Makefile,v 1.107 2001/06/26 12:46:21 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -39,6 +39,7 @@ SUBDIR+=	latex2html
 SUBDIR+=	libpspell
 SUBDIR+=	libunicode
 SUBDIR+=	libxml
+SUBDIR+=	libxml2
 SUBDIR+=	lout
 SUBDIR+=	lq-sp
 SUBDIR+=	makeztxt
