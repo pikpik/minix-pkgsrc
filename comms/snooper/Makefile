@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2003/07/21 16:35:16 martti Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/20 12:10:01 agc Exp $
 # FreeBSD Id: Makefile,v 1.3 1998/08/13 09:20:41 itojun Exp $
 
 DISTNAME=	snooper-19991202
 CATEGORIES=	comms
-MASTER_SITES=   ftp://ftp.foretune.co.jp/pub/tools/snooper/
+MASTER_SITES=   ftp://ftp.foretune.co.jp/pub/tools/snooper/ \
+		ftp://lkbreth.foretune.co.jp/pub/tools/snooper/
 
 MAINTAINER=	itojun@itojun.org
 COMMENT=	Serial line protocol analyzer (need two serial interfaces)
