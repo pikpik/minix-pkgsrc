@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/19 12:16:14 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/31 01:10:46 salo Exp $
 #
 
 DISTNAME=	xaric-0.12.1
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.xaric.org/pub/xaric/	\
 
 MAINTAINER=	jrp@hispabsd.org
 HOMEPAGE=	http://www.xaric.org/
-COMMENT=	UNIX irc client similer to BitchX or ircII
+COMMENT=	IRC client similar to BitchX and ircII
 
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
