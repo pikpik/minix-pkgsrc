@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2004/07/20 00:07:37 schmonz Exp $
+# $NetBSD: Makefile,v 1.12 2004/07/21 22:58:10 schmonz Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
 
 DISTNAME=		${EZMLM_VERS}
+PKGREVISION=		1
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/ezmlm.html
@@ -22,6 +23,9 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
 INSTALLATION_DIRS=	bin man man/man1 man/man5 man/cat1 man/cat5
+
+.include "../../mk/bsd.prefs.mk"
+.include "options.mk"
 
 .include "../../mk/compiler.mk"
 
