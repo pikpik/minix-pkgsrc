@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.37 2004/10/03 00:13:00 tv Exp $
+# $NetBSD: Makefile,v 1.38 2004/11/12 06:39:20 jlam Exp $
 
-DISTNAME=	nxtvepg-2.6.0
+DISTNAME=	nxtvepg-2.7.2
 PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nxtvepg/}
