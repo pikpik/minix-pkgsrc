@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2.2.1 2002/06/23 18:43:28 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/25 19:22:08 jlam Exp $
 #
 
 DISTNAME=	openldap-1.2.13
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--enable-shell
 CONFIGURE_ARGS+=	--enable-wrappers
 .endif
 
-.if ${OPSYS} == "SunOS"
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "Linux"
 .include "../../databases/db/buildlink.mk"
 CPPFLAGS+=	-I${BUILDLINK_DIR}/include/db2
 LIBS=		-ldb2 -lpthread -lrt
