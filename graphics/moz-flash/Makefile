@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:10 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/12/01 00:30:34 hubertf Exp $
 #
 
 PKGNAME=	moz-flash-1.0
@@ -13,7 +13,7 @@ PATCHDIR=	${.CURDIR}/${LIBFLASHDIR}/patches
 FILESDIR=	${.CURDIR}/${LIBFLASHDIR}/files
 DISTINFO_FILE=	${.CURDIR}/${LIBFLASHDIR}/distinfo
 
-DEPENDS+=	mozilla-[0-9]*:../mozilla
+DEPENDS+=	mozilla-[0-9]*:../../www/mozilla
 
 USE_X11BASE=	yes
 
