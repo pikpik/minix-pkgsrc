@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./Makefile.orig	Sun Aug 29 20:38:35 1999
-+++ ./Makefile	Thu Sep 30 06:27:09 1999
+--- Makefile.orig	Mon Aug 30 02:38:35 1999
++++ Makefile
 @@ -1,19 +1,18 @@
 -PREFIX = /usr/local
 +#PREFIX = /usr/local
