@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.156 2001/10/16 05:21:09 jlam Exp $
+# $NetBSD: Makefile,v 1.157 2001/10/16 18:28:35 jwise Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -106,6 +106,7 @@ SUBDIR+=	p5-URI
 SUBDIR+=	p5-VRML
 SUBDIR+=	p5-libapreq
 SUBDIR+=	p5-libwww
+SUBDIR+=	php-FastTemplate
 SUBDIR+=	php3
 SUBDIR+=	php3-gd
 SUBDIR+=	php3-ldap
