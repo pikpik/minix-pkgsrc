@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/06/21 06:06:11 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.2.0
+XFCE4_VERSION=	0.2.2
 
 DISTNAME=	xfce4-cpugraph-plugin-${XFCE4_VERSION}
 CATEGORIES=	sysutils
