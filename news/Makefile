@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2000/02/25 01:04:15 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2000/12/12 01:31:02 wiz Exp $
 #
 
     SUBDIR += inn
     SUBDIR += knews
     SUBDIR += newscache
+    SUBDIR += newsfetch
     SUBDIR += nn
     SUBDIR += nntpcache
     SUBDIR += nntpclnt
