@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2002/04/14 14:08:56 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2002/06/10 09:54:59 sakamoto Exp $
 #
 
 DISTNAME=	canuum-1.0
+PKGREVISION=	1
 CATEGORIES=	japanese inputmethod
 MASTER_SITES=	ftp://ftp.nec.co.jp/pub/Canna/Canna35/
 DISTFILES=	Uum4.109.tar.gz Canna35b2.tar.gz
