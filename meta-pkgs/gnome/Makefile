@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2003/11/12 01:31:50 salo Exp $
+# $NetBSD: Makefile,v 1.21 2004/01/03 18:49:46 reed Exp $
 
 DISTNAME=	gnome-1.4.2.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	meta-pkgs x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -24,7 +24,7 @@ DEPENDS+=	gnome-media>=1.2.3nb3:../../audio/gnome-media
 DEPENDS+=	gnome-pim>=1.4.6:../../misc/gnome-pim
 DEPENDS+=	gnome-users-guide>=1.2:../../x11/gnome-users-guide
 DEPENDS+=	gnome-utils>=1.4.1.2:../../misc/gnome-utils
-DEPENDS+=	evolution>=1.2.1:../../mail/evolution
+DEPENDS+=	evolution>=1.2.1:../../mail/evolution12
 .if exists(/usr/include/wctype.h)
 DEPENDS+=	gnumeric>=0.75nb5:../../math/gnumeric
 .else
