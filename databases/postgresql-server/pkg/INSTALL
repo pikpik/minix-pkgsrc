@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: INSTALL,v 1.4 2001/03/25 11:29:37 wennmach Exp $
+# $NetBSD: INSTALL,v 1.1.1.1 2001/05/14 14:50:25 jlam Exp $
 
 PKGNAME=$1
 STAGE=$2
@@ -65,12 +65,6 @@ EOF
 	;;
 
 POST-INSTALL)
-	${CAT} << EOF
-------------------------------------------------------------------
-Initializing PostgreSQL Databases - this may take a few minutes...
-------------------------------------------------------------------
-EOF
-        ${SU} -m ${USER} -c "${PKG_PREFIX}/bin/initdb -D ${PGHOME}/data"
 	;;
 
 *)
