@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1440 2004/04/12 20:48:07 jmmv Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1441 2004/04/14 15:26:41 jmmv Exp $
 #
 # This file is in the public domain.
 #
@@ -1385,7 +1385,8 @@ NO_BUILDLINK=		# defined
 
 .include "../../mk/tools.mk"
 
-.if defined(USE_DIRS) && !empty(USE_DIRS)
+.if defined(USE_DIRS) && !empty(USE_DIRS) && \
+    ${PKG_INSTALLATION_TYPE} == "overwrite"
 .  include "../../mk/dirs.mk"
 .endif
 
