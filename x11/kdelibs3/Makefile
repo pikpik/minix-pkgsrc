@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/05/29 23:14:12 grant Exp $
+# $NetBSD: Makefile,v 1.30 2003/06/02 14:05:08 abs Exp $
 
 DISTNAME=	kdelibs-3.1.2
 CATEGORIES=	x11
@@ -14,6 +14,7 @@ USE_OPENSSL_VERSION=	${OPENSSL_VERSION_096}
 
 CONFIGURE_ARGS+=	--with-ssl-dir="${BUILDLINK_PREFIX.openssl}"
 
+
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
@@ -24,7 +25,8 @@ KDEDIR=			${PREFIX}
 
 REPLACE_PERL= \
 	kio/proxytype.pl \
-	kio/useragent.pl
+	kio/useragent.pl \
+	kdeui/preparetips
 
 PLIST_SRC=		${WRKDIR}/PLIST
 UNLIMIT_RESOURCES=	datasize memorysize
