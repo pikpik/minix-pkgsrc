@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/01/09 20:35:03 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/21 12:12:13 jlam Exp $
 
 .include "Makefile.common"
 
@@ -26,7 +26,6 @@ CONFIGURE_ARGS+=	--with-devrandom=/dev/urandom
 .endif
 
 .if defined(SASL_USE_GSSAPI) && !empty(SASL_USE_GSSAPI:M[yY][eE][sS])
-BUILDLINK_DEPENDS.heimdal=	heimdal>=0.6
 .  include "../../mk/krb5.buildlink3.mk"
 CONFIGURE_ARGS+=	--enable-gssapi=${KRB5BASE}	# GSSAPI
 LIBS+=			-lcrypto
