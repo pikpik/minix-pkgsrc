@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/12/17 03:27:17 simonb Exp $
+# $NetBSD: Makefile,v 1.13 2003/12/18 23:38:53 grant Exp $
 #
 
 DISTNAME=		xmms-mad-0.5.5
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xmms-mad/}
 
@@ -13,6 +14,8 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 
 CPPFLAGS.NetBSD+=	-DHAVE_NANOSLEEP=1
+
+BUILDLINK_DEPENDS.libmad=	libmad>=0.15.0bnb1
 
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../audio/libid3tag/buildlink2.mk"
