@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/graphopt
+share/doc/graphopt/README
+@dirrm share/doc/graphopt
