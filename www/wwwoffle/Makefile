@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.43 2002/08/21 02:43:45 grant Exp $
+# $NetBSD: Makefile,v 1.44 2002/09/05 16:56:54 fredb Exp $
 
-DISTNAME=	wwwoffle-2.7e
+DISTNAME=	wwwoffle-2.7f
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/www/servers/} \
 		ftp://ftp.demon.co.uk/pub/unix/httpd/ \
