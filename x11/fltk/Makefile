@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2000/11/11 17:49:29 tron Exp $
+# $NetBSD: Makefile,v 1.11 2001/01/02 22:11:17 jlam Exp $
 #
 
-DISTNAME=	fltk-1.0.10-source
-PKGNAME=	${DISTNAME:S/-source//}
+DISTNAME=	${PKGNAME}-source
+PKGNAME=	fltk-1.0.10
 VERS=		${PKGNAME:S/fltk-//}
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	x11
