@@ -2,7 +2,6 @@
 bin/pan
 share/gnome/apps/Internet/pan.desktop
 ${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/pan.mo
-${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/pan.mo
 ${PKGLOCALEDIR}/locale/da/LC_MESSAGES/pan.mo
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/pan.mo
 ${PKGLOCALEDIR}/locale/el/LC_MESSAGES/pan.mo
@@ -33,3 +32,4 @@ ${PKGLOCALEDIR}/locale/tr/LC_MESSAGES/pan.mo
 ${PKGLOCALEDIR}/locale/uk/LC_MESSAGES/pan.mo
 ${PKGLOCALEDIR}/locale/zh_CN/LC_MESSAGES/pan.mo
 share/pixmaps/pan.png
+share/pixmaps/pan_druid.xpm
