@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/02/16 21:37:49 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/15 17:30:18 recht Exp $
 
 DISTNAME=		randrext-1.0
 CATEGORIES=		x11 devel
@@ -7,7 +7,7 @@ EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		xtraeme@NetBSD.org
 HOMEPAGE=		http://freedesktop.org/
-COMMENT=		RandR extension (Headers and documentation files)
+COMMENT=		X RandR extension (Headers and documentation files)
 
 USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
