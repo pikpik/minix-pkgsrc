@@ -1983,24 +1983,24 @@ ${PLIST}: ${PLIST_SRC}
 		${ECHO} "No ${PKGDIR}/PLIST, and no ${PKGDIR}/PLIST-{mi,md.shared,md.static}" ; \
 		${ECHO} "Package must care for making ${PLIST} by setting PLIST_SRC!" ; \
 	fi
-			-e '/man\/${MANLANG}\/man.*[^g][^z]$$/s/$$/.gz/' \
-			-e '/man\/${MANLANG}\/cat.*[^g][^z]$$/s/$$/.gz/' \
 .if defined(MANZ)
 	@if [ ! -z "${PLIST_SRC}" ] ; then \
 		${CAT} ${PLIST_SRC} | ${SED} \
 			-e '/man\/man.*[^g][^z]$$/s/$$/.gz/' \
 			-e '/man\/cat.*[^g][^z]$$/s/$$/.gz/' \
+			-e '/man\/${MANLANG}\/man.*[^g][^z]$$/s/$$/.gz/' \
+			-e '/man\/${MANLANG}\/cat.*[^g][^z]$$/s/$$/.gz/' \
 			-e 's/<\$$ARCH>/'${ARCH}'/g' \
 			-e 's/\$${MACHINE_ARCH}/'${MACHINE_ARCH}'/g' \
 			>${PLIST} ; \
 	fi
-			-e '/man\/${MANLANG}\/man.*[^g][^z]$$/s/$$/.gz/' \
-			-e '/man\/${MANLANG}\/cat.*[^g][^z]$$/s/$$/.gz/' \
 .else   # !MANZ
 	@if [ ! -z "${PLIST_SRC}" ] ; then \
 		${CAT} ${PLIST_SRC} | ${SED} \
 			-e '/man\/man/s/\.gz$$//' \
 			-e '/man\/cat/s/\.gz$$//' \
+			-e '/man\/${MANLANG}\/man/s/\.gz$$//' \
+			-e '/man\/${MANLANG}\/cat/s/\.gz$$//' \
 			-e 's/<\$$ARCH>/'${ARCH}'/g' \
 			-e 's/\$${MACHINE_ARCH}/'${MACHINE_ARCH}'/g' \
 			>${PLIST} ; \
