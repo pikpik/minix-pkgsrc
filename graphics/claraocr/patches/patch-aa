@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.2 2002/05/04 23:45:44 wiz Exp $
 
 --- Makefile.orig	Sat May  4 03:45:07 2002
 +++ Makefile
@@ -24,8 +24,8 @@ $NetBSD$
  #
 -INCLUDE = -I/usr/X11R6/include
 -LIBPATH = -L/usr/X11R6/lib
-+INCLUDE = -I${BUILDLINK_DIR}/include
-+LIBPATH = -L${BUILDLINK_DIR}/lib
++INCLUDE = -I${X11BASE}/include -I${LOCALBASE}/include
++LIBPATH = -L${X11BASE}/lib -L${LOCALBASE}/include
  CC = gcc
  
  #
