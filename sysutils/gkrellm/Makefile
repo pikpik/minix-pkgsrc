@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/03/26 02:27:54 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2004/03/29 06:47:30 cube Exp $
 .include "Makefile.common"
 
 PKGREVISION=		# defined
@@ -23,6 +23,7 @@ SPECIAL_PERMS+=		${PREFIX}/bin/gkrellm ${ROOT_USER} kmem 2711
 NOT_FOR_PLATFORM=	IRIX-*
 
 MAKE_ENV+=		MODULES=src LINK_FLAGS=${EXPORT_SYMBOLS_LDFLAGS}
+MAKE_ENV+=		BINOWNER=${BINOWN} BINGROUP=${BINGRP}
 
 SUBST_STAGE.gkprefix=	post-patch
 SUBST_FILES.gkprefix=	${WRKSRC}/src/gkrellm.h
