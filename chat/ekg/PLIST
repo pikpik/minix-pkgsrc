@@ -1,6 +1,5 @@
 @comment $NetBSD$
 bin/ekg
-bin/ekl.pl
 man/man1/ekg.1
 share/ekg/themes/emers.theme
 share/ekg/themes/feeg.theme
