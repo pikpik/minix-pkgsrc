@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/tvtwm
+bin/xsetroot
+lib/X11/twm/system.tvtwmrc
+man/cat1/tvtwm.0
