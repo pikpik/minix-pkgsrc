@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2001/01/18 11:44:56 abs Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/17 17:42:18 wiz Exp $
 #
 # The version number for skill does not match the @P number.
 # This is normal.
 
 DISTNAME=	skill-4.0
-WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://fast.cs.utah.edu/pub/skill/
 EXTRACT_SUFX=	.tgz
