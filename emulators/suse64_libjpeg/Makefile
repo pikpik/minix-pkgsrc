@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/26 04:05:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:35:53 grant Exp $
 
 DISTNAME=		suse_libjpeg-${SUSE_VERSION}
 PKGREVISION=		1
@@ -17,6 +17,7 @@ ONLY_FOR_PLATFORM=      NetBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		yes
+LIBTOOLIZE_PLIST=	NO
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		libjpeg-6.2.0-62.i386.rpm
