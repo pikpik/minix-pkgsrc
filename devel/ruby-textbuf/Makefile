@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/03/16 02:01:10 taca Exp $
+# $NetBSD: Makefile,v 1.6 2004/11/28 06:04:55 taca Exp $
 # FreeBSD: ports/devel/ruby-textbuf/Makefile,v 1.1 2001/01/19 06:16:46 knu Exp
 
 DISTNAME=	textbuf-0.3.8
@@ -10,8 +10,9 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.loveruby.net/en/textbuf.html
 COMMENT=	Gapped text buffer extension for Ruby
 
-RUBY_VERSION=	${RUBY16_VERSION}
-USE_RUBY_SETUP=	yes
+RUBY_HAS_ARCHLIB=	yes
+RUBY_VERSION=		${RUBY16_VERSION}
+USE_RUBY_SETUP=		yes
 
 DOCS=		README.en README.ja
 

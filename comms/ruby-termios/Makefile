@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/03/16 02:01:09 taca Exp $
+# $NetBSD: Makefile,v 1.10 2004/11/27 15:34:29 taca Exp $
 #
 
 DISTNAME=	ruby-termios-0.9.4
 PKGNAME=	${RUBY_PKGPREFIX}-termios-0.9.4
+PKGREVISION=	1
 CATEGORIES=	comms ruby
 MASTER_SITES=	http://arika.org/archive/
 
@@ -10,6 +11,7 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://arika.org/ruby/termios
 COMMENT=	Ruby extension to termios library
 
+RUBY_HAS_ARCHLIB=	yes
 USE_BUILDLINK3=		yes
 USE_RUBY_EXTCONF=	yes
 

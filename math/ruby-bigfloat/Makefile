@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/16 02:01:11 taca Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/27 16:20:25 taca Exp $
 # FreeBSD: ports/math/ruby-bigfloat/Makefile,v 1.8 2000/10/02 14:57:26 knu Exp
 
 DISTNAME=	bigfloat-1.2.1
@@ -10,6 +10,7 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.tinyforest.gr.jp/ruby/bigfloat_en.html
 COMMENT=	Variable precision floating library for Ruby
 
+RUBY_HAS_ARCHLIB=	yes
 USE_RUBY_EXTCONF=	yes
 WRKSRC=			${WRKDIR}
 INSTALL_TARGET=		site-install
