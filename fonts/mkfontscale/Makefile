@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/20 12:30:29 wiz Exp $
 #
 
-DISTNAME=	mkfontscale-20020418
+DISTNAME=	mkfontscale-20020524
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.pps.jussieu.fr/~jch/software/files/
 
@@ -13,5 +13,4 @@ USE_IMAKE=	yes
 
 WRKSRC=		${WRKDIR}/mkfontscale
 
-.include "../../graphics/freetype2/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
