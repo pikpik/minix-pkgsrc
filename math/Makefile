@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.98 2003/03/22 18:27:49 kristerw Exp $
+# $NetBSD: Makefile,v 1.99 2003/03/22 20:16:03 kristerw Exp $
 #
 
 COMMENT=	Mathematics
@@ -44,6 +44,7 @@ SUBDIR+=	mcsim
 SUBDIR+=	meschach
 SUBDIR+=	metis
 SUBDIR+=	minpack
+SUBDIR+=	mtl
 SUBDIR+=	newmat
 SUBDIR+=	ntl
 SUBDIR+=	octave
