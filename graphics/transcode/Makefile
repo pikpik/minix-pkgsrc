@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/23 21:50:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/24 15:46:44 grant Exp $
 
 DISTNAME=	transcode-0.6.11
 PKGREVISION=	2
@@ -52,10 +52,10 @@ post-install:
 #.include "../../graphics/avifile/buildlink2.mk"
 .include "../../graphics/ImageMagick/buildlink2.mk"
 .include "../../graphics/mjpegtools/buildlink2.mk"
-.include "../../graphics/xvidcore/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../misc/libdvdread/buildlink2.mk"
+.include "../../multimedia/xvidcore/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
