@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2002/12/03 21:21:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.91 2003/01/28 22:03:34 jlam Exp $
 
 DISTNAME=		mutt-1.4i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -17,7 +17,6 @@ BUILD_USES_MSGFMT=	yes
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
-USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR} \
