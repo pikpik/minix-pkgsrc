@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2002/01/29 22:37:44 jlam Exp $
+# $NetBSD: Makefile,v 1.102 2002/02/14 00:43:38 abs Exp $
 #
 
 COMMENT=	Security tools
@@ -22,6 +22,7 @@ SUBDIR+=	fressh
 SUBDIR+=	fsh
 SUBDIR+=	gnupg
 SUBDIR+=	gpa
+SUBDIR+=	gpgme
 SUBDIR+=	isakmpd
 SUBDIR+=	john
 SUBDIR+=	keychain
