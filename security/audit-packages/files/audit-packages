@@ -1,10 +1,10 @@
 #! @SH@
 
-# $NetBSD: audit-packages,v 1.10 2003/05/21 14:07:45 seb Exp $
+# $NetBSD: audit-packages,v 1.11 2003/09/02 10:20:28 agc Exp $
 
 : ${PKGVULNDIR=@PKGVULNDIR@}
 
-if [ ! -f ${PKGVULNDIR}/vulnerabilities ]; then
+if [ ! -f ${PKGVULNDIR}/pkg-vulnerabilities ]; then
 	echo "** Missing ${PKGVULNDIR}/pkg-vulnerabilities" 1>&2
 	echo "** run download-vulnerability-list" 1>&2
 	exit 1
