@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2003/10/03 15:38:46 salo Exp $
+# $NetBSD: Makefile,v 1.49 2004/01/03 18:33:24 reed Exp $
 
 DISTNAME=	tiff-v3.6.1
 PKGNAME=	tiff-3.6.1
@@ -23,7 +23,9 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 
 BUILD_DEFS+=	USE_GIF
 
-USE_BUILDLINK2=	yes
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--noninteractive --site=${FILESDIR} --prefix=${PREFIX}
@@ -52,6 +54,8 @@ CPPFLAGS+=	-Dunix
 CONFIGURE_ENV+=	PREFIX="${PREFIX}"
 CONFIGURE_ENV+=	ENVOPTS="${CFLAGS} ${CPPFLAGS}"
 
+INSTALLATION_DIRS=	share/doc/html
+
 post-patch:
 	# reference correct relative man page when using .so
 	#
@@ -66,6 +70,6 @@ post-patch:
 	${SED}	-e "s,\(\$${CC} -o\),\$${LIBTOOL} \1,g" \
 		${WRKSRC}/tools/Makefile.in.in  > ${WRKSRC}/tools/Makefile.in
 
-.include "../../devel/zlib/buildlink2.mk"
-.include "../../graphics/jpeg/buildlink2.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/jpeg/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
