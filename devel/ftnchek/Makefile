@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2001/04/25 23:24:45 jtb Exp $
+# $NetBSD: Makefile,v 1.7 2001/06/17 14:27:27 jtb Exp $
 
-DISTNAME=	ftnchek-3.1.1
+DISTNAME=	ftnchek-3.1.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=devel/lang/fortran/}
 
