@@ -1,8 +1,8 @@
 $NetBSD$
 
---- demos/gtk-demo/Makefile.am.orig	Fri Mar  8 01:36:21 2002
+--- demos/gtk-demo/Makefile.am.orig	Sun Sep 29 23:43:06 2002
 +++ demos/gtk-demo/Makefile.am
-@@ -41,6 +41,7 @@
+@@ -42,6 +42,7 @@ DEPS = \
  	$(top_builddir)/gtk/@gtktargetlib@
  
  LDADDS = @STRIP_BEGIN@ 							\
