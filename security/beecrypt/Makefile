@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/08/03 20:58:17 jmmv Exp $
-#
+# $NetBSD: Makefile,v 1.3 2004/02/14 17:21:50 jlam Exp $
 
 DISTNAME=	beecrypt-3.0.0
 CATEGORIES=	security
@@ -10,10 +9,10 @@ HOMEPAGE=	http://www.virtualunlimited.com/products/beecrypt/
 COMMENT=	Multipurpose cryptographic library
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 
 CONFIGURE_ARGS+=	--without-javaglue
 
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
