@@ -1,3 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1 2004/10/23 14:41:53 shannonjr Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/11/05 22:12:17 jmmv Exp $
 bin/dirmngr
+bin/dirmngr-client
+libexec/dirmngr_ldap
+sbin/runDirmngr
+share/examples/rc.d/dirmngr
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/dirmngr.mo
+@exec ${MKDIR} %D/libdata/dirmngr/extra-certs
+@dirrm libdata/dirmngr/extra-certs
+@dirrm libdata/dirmngr
