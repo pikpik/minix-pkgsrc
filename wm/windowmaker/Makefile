@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2003/01/28 22:04:24 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2003/04/26 09:49:37 jmmv Exp $
 
-VERS=			0.80.2
-DISTNAME=		WindowMaker-${VERS}
-PKGNAME=		windowmaker-${VERS}
+DISTNAME=		WindowMaker-0.80.2
+PKGNAME=		windowmaker-0.80.2
 PKGREVISION=		1
 CATEGORIES=		x11 wm windowmaker
 MASTER_SITES=		ftp://ftp.windowmaker.org/pub/source/release/ \
@@ -18,6 +17,7 @@ BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
 USE_X11BASE=		YES
+USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		YES
