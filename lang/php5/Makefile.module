@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.module,v 1.1.1.1 2004/10/29 20:31:54 jdolecek Exp $
+# $NetBSD: Makefile.module,v 1.2 2004/10/30 05:46:21 grant Exp $
 
 .include "../../lang/php5/Makefile.common"
 
@@ -52,5 +52,14 @@ do-module-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${PHP_EXTENSION_DIR}
 	${INSTALL_DATA} ${MODULESDIR}/${PKGMODNAME}.so	\
 	    ${PREFIX}/${PHP_EXTENSION_DIR}
+
+.if defined(USE_PHP_EXT_PATCHES)
+PATCHDIR=		${PKGDIR}/../../lang/php5/patches
+do-patch:
+	cd ${WRKSRC}; \
+	for p in `${EGREP} -l '^\+\+\+ ext/${MODNAME}/' ${PATCHDIR}/patch-*`;do\
+		${SED} -e 's,^+++ ext/${MODNAME}/,+++ ,' $$p | ${PATCH}; \
+	done
+.endif
 
 .include "../../lang/php5/buildlink3.mk"
