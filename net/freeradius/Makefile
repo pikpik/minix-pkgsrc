@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2004/12/22 10:07:21 adrianp Exp $
+# $NetBSD: Makefile,v 1.22 2004/12/28 02:47:46 reed Exp $
 
 DISTNAME=	freeradius-1.0.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/ \
 		ftp://ftp.Awfulhak.org/pub/radius/
@@ -31,7 +31,7 @@ FILES_SUBST+=		ROOT_GROUP=${ROOT_GROUP}
 
 CONFIGURE_ARGS+=	--with-logdir=${VARBASE}/log
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
-CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/etc
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR}
 CONFIGURE_ARGS+=	--disable-ltdl-install
 CONFIGURE_ARGS+=	--with-ltdl-lib=${PREFIX}/lib
 CONFIGURE_ARGS+=	--with-ltdl-include=${PREFIX}/include
