@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/09/18 16:25:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/20 18:19:23 abs Exp $
 
 DISTNAME=		shlibs5
 PKGNAME=		suse_libc5-${SUSE_VERSION}
@@ -12,7 +12,7 @@ COMMENT=		Linux compatibility package for libc5 binaries
 
 DEPENDS+=		suse_compat>=${SUSE_VERSION}:../../emulators/suse_compat
 
-ONLY_FOR_PLATFORM=      NetBSD-*-i386
+ONLY_FOR_PLATFORM=      NetBSD-*-i386 FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES

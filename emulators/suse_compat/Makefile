@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 21:36:05 grant Exp $
+# $NetBSD: Makefile,v 1.18 2003/09/18 16:25:21 jmmv Exp $
 
 DISTNAME=		compat
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -12,7 +12,7 @@ COMMENT=		Linux compatibility package with old shared libraries
 
 DEPENDS+=		suse_base>=${SUSE_VERSION}:../../emulators/suse_base
 
-ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc
+ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc FreeBSD-*-i386
 
 USE_BUILDLINK2=		# defined
 EXTRACT_ONLY=		# empty

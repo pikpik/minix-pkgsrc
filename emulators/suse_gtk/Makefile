@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:36:09 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/09/18 16:25:23 jmmv Exp $
 
 DISTNAME=		suse_gtk-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -12,7 +12,7 @@ COMMENT=		Linux compatibility package for GTK binaries
 
 DEPENDS+=		suse_x11>=${SUSE_VERSION}:../../emulators/suse_x11
 
-ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc
+ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
