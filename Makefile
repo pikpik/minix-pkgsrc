@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1998/08/28 12:26:50 agc Exp $
+# $NetBSD: Makefile,v 1.17 1998/10/13 23:37:03 garbled Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
@@ -20,7 +20,7 @@ SUBDIR += emulators
 SUBDIR += games
 #SUBDIR += german
 SUBDIR += graphics
-#SUBDIR += japanese
+SUBDIR += japanese
 #SUBDIR += korean
 SUBDIR += lang
 SUBDIR += mail
