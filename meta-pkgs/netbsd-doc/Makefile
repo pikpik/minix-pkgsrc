@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:59:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/02 17:07:02 hubertf Exp $
 #
 
 DISTNAME=	netbsd-doc-1.2
@@ -7,7 +7,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	hubertf@netbsd.org
-COMMENT=	Meta-pkg including all pkgs to convert SGML->HTML
+COMMENT=	meta-package including all packages to convert SGML->HTML
 
 DEPENDS+=	opensp>=1.4:../../textproc/opensp
 DEPENDS+=	jade>=1.2.1nb3:../../textproc/jade
