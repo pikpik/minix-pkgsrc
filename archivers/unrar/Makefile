@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/05/20 15:26:47 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:21:44 grant Exp $
 #
 
 DISTNAME=	unrarsrc-3.2.2
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.rarlab.com/rar/
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.rarlab.com/
 COMMENT=	Extract, view & test RAR archives
+
+USE_GCC_SHLIB=	# defined
 
 MAKEFILE=	makefile.unix
 
