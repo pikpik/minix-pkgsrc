@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- common/config_unix.h.orig	Sat Oct  2 20:58:55 1999
 +++ common/config_unix.h	Sat Oct  2 20:58:28 1999
 @@ -73,7 +73,7 @@

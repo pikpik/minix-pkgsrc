@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- sdr/src/polluted.c.orig	Sat Oct  2 20:39:08 1999
 +++ sdr/src/polluted.c	Sat Oct  2 20:45:03 1999
 @@ -1,3 +1,6 @@
