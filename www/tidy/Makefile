@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/01/24 15:23:47 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/02/17 01:13:57 minskim Exp $
 #
 
-DISTNAME=	tidy_src_031002
-PKGNAME=	tidy-20031002
+DISTNAME=	tidy_src_040811
+PKGNAME=	tidy-20040811
 CATEGORIES=	www
 MASTER_SITES=	http://tidy.sourceforge.net/src/ \
 		http://tidy.sourceforge.net/docs/ \
