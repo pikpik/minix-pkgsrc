@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2003/07/17 21:48:02 grant Exp $
+# $NetBSD: Makefile,v 1.33 2003/09/14 17:43:53 recht Exp $
 
 DISTNAME=	Numeric-23.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -9,7 +9,7 @@ MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.pfdubois.com/numpy/
 COMMENT=	Adds multidimensional numeric arrays to Python
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
