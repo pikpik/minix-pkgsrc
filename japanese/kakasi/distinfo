@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.6 2001/01/25 12:29:51 taca Exp $
+$NetBSD$
 
-MD5 (kakasi-2.3.3.tar.gz) = b197f38a42d015523d7ad046450f4853
+SHA1 (kakasi-2.3.3.tar.gz) = cd4a9bb53e7c426b55fda9566e6ea186b1599532
+Size (kakasi-2.3.3.tar.gz) = 1061886 bytes
 SHA1 (patch-aa) = 257f94f008b8e4f136df3f0e1d009f5313ae31d8
 SHA1 (patch-ab) = c99e099cf3dc801442eab1b26dbad43b32f16e64

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/06/09 10:53:18 sakamoto Exp $
+$NetBSD$
 
-MD5 (jhd-2.3.tar.gz) = 75537a0771369f968ca714b524e6ce93
+SHA1 (jhd-2.3.tar.gz) = 6df8f56185b5a079eb624cc6e16eabc767e94d47
+Size (jhd-2.3.tar.gz) = 7310 bytes

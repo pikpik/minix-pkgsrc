@@ -1,4 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/10 03:46:12 sakamoto Exp $
+$NetBSD$
 
-MD5 (nkf-1.7.tar.gz) = 153c6917384a7cff635f5eed576dc563
-MD5 (nkf.patch.txt) = c6a465c1f51ac3ea369a6bdc15894179
+SHA1 (nkf-1.7.tar.gz) = 2116864c1acc8e6f80d4c59dc63c73eb37c9e80c
+Size (nkf-1.7.tar.gz) = 28222 bytes
+SHA1 (nkf.patch.txt) = f7b0a640be331a707584ba34d083f5e2361c3969
+Size (nkf.patch.txt) = 3558 bytes

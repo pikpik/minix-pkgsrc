@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1999/08/02 11:41:13 sakamoto Exp $
+$NetBSD$
 
-MD5 (kinput2-v3.tar.gz) = 3b3b6470879b5071c651bcdc84d52f3e
+SHA1 (kinput2-v3.tar.gz) = a9e2be1fe4da4c5f4921a1d753f58d20f1ef3693
+Size (kinput2-v3.tar.gz) = 462281 bytes
 SHA1 (patch-aa) = c41b2baa5de117c031c266afbff0e947340ab708

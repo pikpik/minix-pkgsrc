@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/20 10:09:02 kei Exp $
+$NetBSD$
 
-MD5 (mknmz-wwwoffle-0.7.0.tar.gz) = 8da721d3873cd758bd3274eda017e1fa
+SHA1 (mknmz-wwwoffle-0.7.0.tar.gz) = e1afdf5f753ff1daed51c2b961357b73268e707a
+Size (mknmz-wwwoffle-0.7.0.tar.gz) = 45777 bytes

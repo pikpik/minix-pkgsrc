@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1999/06/07 07:18:37 sakamoto Exp $
+$NetBSD$
 
-MD5 (a2ps.pl-1.44) = 7c08e3d260d4cb6cf2d0403486421cf4
+SHA1 (a2ps.pl-1.44) = 7adc79f6b11e4aa729facad1739ed0d2ebe84ffe
+Size (a2ps.pl-1.44) = 27804 bytes
 SHA1 (patch-aa) = fc75d3addf053afda6a67941e6d3ac6ad5b550c1

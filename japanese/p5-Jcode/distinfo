@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2001/01/06 16:30:26 taca Exp $
+$NetBSD$
 
-MD5 (Jcode-0.68.tar.gz) = 3fa12e82521881279aecf05c3deb3239
+SHA1 (Jcode-0.68.tar.gz) = 314e152beed7359e55c1bec0f5b45349648cdf31
+Size (Jcode-0.68.tar.gz) = 187885 bytes
 SHA1 (patch-aa) = 7cb79e482edc5ea12b9fe1501487d7211c0c8a21
