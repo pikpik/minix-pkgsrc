@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/05/13 15:00:02 yyamano Exp $
+# $NetBSD: Makefile,v 1.9 2002/10/06 14:56:59 taca Exp $
 # FreeBSD Id: ports/lang/ruby/Makefile,v 1.39 2000/10/20 19:56:03 knu Exp
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 WRKSRC=		${RUBY_WRKSRC}
 CONFIGURE_ARGS=	--enable-shared
 MLINKS=		ruby${_RUBY_SUFFIX}.1 ruby.1
+TEST_TARGET=	test
 
 DOCS=		ChangeLog README README.EXT README.EXT.ja README.ja ToDo \
 		doc/NEWS doc/forwardable.rd doc/forwardable.rd.ja \
@@ -97,8 +98,5 @@ post-install:
 .for f in ${DOCS} ${EXT_DOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${f:C/^(doc|ext)\///}
 .endfor
-
-test:
-	@(cd ${WRKSRC}; make test)
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/12/22 19:04:08 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2003/01/10 08:44:19 jlam Exp $
 #
 
 .include "../libtool/Makefile.common"
@@ -10,8 +10,7 @@ COMMENT=	Generic shared library support script (the script itself)
 
 CONFLICTS+=	libtool<=1.3.5nb11
 
-test: build
-	cd ${WRKSRC} && ${MAKE} check
+TEST_TARGET=	check
 
 .include "../../mk/bsd.prefs.mk"
 

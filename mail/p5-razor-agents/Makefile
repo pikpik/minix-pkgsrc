@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/12 10:16:48 abs Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/06 04:10:24 heinz Exp $
 
 DISTNAME=	razor-agents-2.14
 PKGNAME=	p5-${DISTNAME}
@@ -19,12 +19,10 @@ DEPENDS+=	p5-URI-[0-9]*:../../www/p5-URI
 # because Net::Ping, Getopt::Long, File::Copy are needed
 BUILDLINK_DEPENDS.perl=	perl>=5.6.0
 USE_BUILDLINK2=		YES
+TEST_TARGET=		test
 
 PERL5_CONFIGURE=	YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/razor-agents/.packlist
-
-test: build
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKEFLAGS} test
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
