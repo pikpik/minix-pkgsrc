@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2002/07/30 17:04:04 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/21 10:52:05 jlam Exp $
 # FreeBSD Id: Makefile,v 1.17 1999/04/24 09:25:32 kuriyama Exp
 
 DISTNAME=	db157
 PKGNAME=	dsssl-docbook-modular-1.57
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://nwalsh.com/docbook/dsssl/
 DISTFILES=	db157.zip db157d.zip
@@ -32,8 +33,11 @@ pre-install:
 do-install:
 	@${CP} -Rp ${WRKDIR}/docbook/* ${INSTDIR}
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
+	${PREFIX}/bin/xmlcatmgr -c ${PREFIX}/share/sgml/catalog add \
+		CATALOG ${INSTDIR}/catalog
 
 post-install:
 	@${CAT} ${FILESDIR}/install-note
 
+.include "../../textproc/xmlcatmgr/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
