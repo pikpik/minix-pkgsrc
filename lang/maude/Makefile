@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/20 11:57:41 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/20 12:01:25 wiz Exp $
 #
 
 DISTNAME=	maude-linux
 PKGNAME=	maude-1.0.5
 CATEGORIES=	lang
-MASTER_SITES=	http://maude.csl.sri.com/system/
+MASTER_SITES=	http://maude.csl.sri.com/current/system/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
