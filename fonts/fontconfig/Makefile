@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2003/08/31 19:19:12 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/09/02 07:12:15 martti Exp $
 #
 
 DISTNAME=	fontconfig-2.2.1
+PKGREVISION=	1
 CATEGORIES=	fonts gnome
 MASTER_SITES=	http://fontconfig.org/release/
 
@@ -20,6 +21,7 @@ USE_PKGINSTALL=		YES
 USE_GMAKE=		YES
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+PKGCONFIG_OVERRIDE=	${WRKSRC}/fontconfig.pc.in
 
 PKG_SYSCONFSUBDIR=	fontconfig
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/07/30 15:15:43 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/09/19 17:22:14 wiz Exp $
 
 DISTNAME=	xrender-0.8.3
 PKGNAME=	Xrender-0.8.3
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://pdx.freedesktop.org/software/fontconfig/releases/
 
@@ -15,6 +16,7 @@ USE_X11=		YES
 #USE_LIBTOOL=		YES
 #LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		YES
+PKGCONFIG_OVERRIDE=	${WRKSRC}/xrender.pc.in
 
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../x11/render/buildlink2.mk"
