@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/29 10:12:48 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/28 21:22:55 jschauma Exp $
 
 DISTNAME=	lyx-${LYX_VERS}
 PKGNAME=	cjk-${DISTNAME}
@@ -24,6 +24,7 @@ DEPENDS+=	ispell-base-[0-9]*:../../textproc/ispell-base
 DEPENDS+=	teTeX-bin>=1.0.7nb1:../../print/teTeX-bin
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 USE_PERL5=		yes
 USE_X11=		yes
 USE_CXX=		yes

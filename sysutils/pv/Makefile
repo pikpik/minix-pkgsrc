@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/04 11:56:35 agc Exp $
 #
 
 DISTNAME=		pv-0.4.0
@@ -13,6 +13,7 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 
 INFO_FILES=		pv.info
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/12/16 14:36:28 tron Exp $
+# $NetBSD: Makefile,v 1.34 2002/12/24 06:10:13 wiz Exp $
 
 DISTNAME=		gnome-pim-1.4.0
 PKGREVISION=		3
@@ -12,6 +12,7 @@ COMMENT=		Personal Information Manager for GNOME
 BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES

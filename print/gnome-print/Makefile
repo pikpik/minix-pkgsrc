@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2002/10/19 10:54:56 rh Exp $
+# $NetBSD: Makefile,v 1.53 2002/12/24 06:10:22 wiz Exp $
 #
 
 DISTNAME=		gnome-print-0.36
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.levien.com/gnome/print-arch.html
 COMMENT=		Prototype implementation of the Gnome Printing Architecture
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

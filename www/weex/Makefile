@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/29 08:36:06 martti Exp $
 
 DISTNAME=	weex-2.6.1
 CATEGORIES=	www
@@ -8,7 +8,9 @@ MAINTAINER=	tech-pkg-jp@jp.netbsd.org
 HOMEPAGE=	http://www.enjoy.ne.jp/~gm/program/weex/index.html
 COMMENT=	non-interactive ftp client
 
-GNU_CONFIGURE=	yes
+GNU_CONFIGURE=		yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 
 WEEX_DOCS=	AUTHORS BUGS BUGS.ja COPYING COPYING.ja \
 		ChangeLog ChangeLog.ja FAQ FAQ.ja README README.ja \

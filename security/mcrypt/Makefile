@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5.2.1 2002/07/01 17:45:09 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/08/25 21:50:39 jlam Exp $
 
 DISTNAME=	mcrypt-2.5.10
 CATEGORIES=	security devel
@@ -10,6 +10,7 @@ HOMEPAGE=	http://mcrypt.hellug.gr/
 COMMENT=	replacement to crypt(1), supports many crypto algorithms
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/19 14:39:27 grant Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/24 06:10:05 wiz Exp $
 #
 
 DISTNAME=	gimageview-0.2.10
@@ -11,6 +11,7 @@ HOMEPAGE=	http://gtkmmviewer.sourceforge.net/
 COMMENT=	GTK+ based image viewer with tabbed browsing
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES

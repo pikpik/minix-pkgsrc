@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18.2.2 2002/07/01 17:45:00 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2002/08/25 21:49:59 jlam Exp $
 #
 
 DISTNAME=		jwhois-3.2.0
@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.gnu.org/software/jwhois/
 COMMENT=		Configurable WHOIS client
 
 USE_BUILDLINK2=		# defined
+USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=/var/db

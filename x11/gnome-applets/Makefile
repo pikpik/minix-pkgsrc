@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2002/11/02 02:42:05 rh Exp $
+# $NetBSD: Makefile,v 1.24 2002/12/24 06:10:30 wiz Exp $
 #
 
 DISTNAME=		gnome-applets-1.4.0.4
@@ -14,6 +14,7 @@ COMMENT=		Applets for GNOME
 BUILD_DEPENDS+=		xml-i18n-tools-[0-9]*:../../textproc/xml-i18n-tools
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_GMAKE=		YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
