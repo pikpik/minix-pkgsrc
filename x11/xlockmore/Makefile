@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/01/26 14:38:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.48 2002/05/16 22:19:54 jschauma Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/10/10 09:24:38 tg Exp
 #
 
@@ -17,7 +17,7 @@ CHECK_MESA=	YES
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(XLOCK_LIGHT)
-CONFIGURE_ARGS+=--without-gltt --without-ttf --without-opengl --without-mesagl \
+CONFIGURE_ARGS+=--without-gltt --without-ttf --without-opengl --without-mesa \
 		--without-xpm # --without-cxx XXX doesn't work
 CONFIGURE_ENV+= CXX="${CC}"	# no dependency on libstdc++
 .else
