@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2002/11/20 08:46:18 tron Exp $
+# $NetBSD: Makefile,v 1.176 2002/11/21 15:03:39 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -133,6 +133,7 @@ SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-docutils
 SUBDIR+=	py-dtml
 SUBDIR+=	py-expat
+SUBDIR+=	py-xmltools
 SUBDIR+=	pyDict
 SUBDIR+=	pyxml
 SUBDIR+=	qsubst
