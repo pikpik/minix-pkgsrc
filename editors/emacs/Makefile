@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2002/02/18 15:14:17 seb Exp $
+# $NetBSD: Makefile,v 1.46 2002/05/29 14:45:56 yyamano Exp $
 # FreeBSD Id: Makefile,v 1.30 1997/12/14 02:03:53 asami Exp
 
 DISTNAME=	emacs-20.7
@@ -30,10 +30,10 @@ CONFIGURE_ARGS+=--with-x=${EMACS_USE_X}
 .if defined(EMACS_USE_X_TOOLKIT)
 CONFIGURE_ARGS+=--with-x-toolkit=${EMACS_USE_X_TOOLKIT}
 .endif
-.if (defined(USE_INET6) && ${USE_INET6} == NO)
-CONFIGURE_ARGS+=--without-ipv6
-.else
+.if defined(USE_INET6) && ${USE_INET6} == YES
 CONFIGURE_ARGS+=--with-ipv6
+.else
+CONFIGURE_ARGS+=--without-ipv6
 .endif
 MAKE_ENV+=	INSTALL_STRIP=${_STRIPFLAG_INSTALL}
 INFO_FILES=	emacs vip viper forms gnus mh-e cl sc dired-x ediff \
