@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/08 03:12:09 hubertf Exp $
 #
 
 DISTNAME=	lame-3.13
@@ -6,6 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://hive.me.gu.edu.au/not_lame/
 DISTFILES=	dist10.tar.gz.a dist10.tar.gz.b
 PATCHFILES=	lame3.13.patch.gz
+PATCH_SITES=	${MASTER_SITES}
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://hive.me.gu.edu.au/not_lame/
