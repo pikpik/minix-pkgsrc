@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/05/22 22:32:03 tron Exp $
+# $NetBSD: Makefile,v 1.13 1999/05/22 22:38:30 tron Exp $
 # FreeBSD Id: Makefile,v 1.39 1998/01/31 17:49:48 jseger Exp
 #
 
@@ -14,7 +14,7 @@ GNU_CONFIGURE=  yes
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
+DEPENDS+=	ncurses-4.2:../../devel/ncurses
 .endif
 DEPENDS+=	readline-2.2:../../devel/readline
 
