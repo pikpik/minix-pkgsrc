@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 18:22:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/04/02 02:01:23 dmcmahill Exp $
 #
 
 DISTNAME=	grpn-1.1.0
 PKGREVISION=	1
 CATEGORIES=	math
-MASTER_SITES=	ftp://wilkins.ne.mediaone.net/pub/
+MASTER_SITES=	ftp://lashwhip.com/pub/ \
+		http://lashwhip.com/grpn/
 
 MAINTAINER=	dmcmahill@netbsd.org
-HOMEPAGE=	http://wilkins.ne.mediaone.net/grpn.html
+HOMEPAGE=	http://lashwhip.com/grpn.html
 COMMENT=	Graphical reverse polish notation (RPN) calculator
 
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
