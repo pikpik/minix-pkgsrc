@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.215 2001/05/14 17:27:40 rh Exp $
+# $NetBSD: Makefile,v 1.216 2001/05/14 18:02:15 rh Exp $
 #
 
 COMMENT=	Networking tools
@@ -79,6 +79,7 @@ SUBDIR+=	mtr
 SUBDIR+=	nap
 SUBDIR+=	ncftp2
 SUBDIR+=	ncftp3
+SUBDIR+=	neat
 SUBDIR+=	netatalk
 SUBDIR+=	netatalk-asun
 SUBDIR+=	netcat
