@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2003/09/20 14:15:27 salo Exp $
+@comment $NetBSD$
 bin/nmap
 man/man1/nmap.1
 share/nmap/nmap-mac-prefixes
@@ -7,4 +7,6 @@ share/nmap/nmap-protocols
 share/nmap/nmap-rpc
 share/nmap/nmap-service-probes
 share/nmap/nmap-services
+share/nmap/nmap.dtd
+share/nmap/nmap.xsl
 @dirrm share/nmap
