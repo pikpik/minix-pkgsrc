@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2000/09/04 21:50:44 kim Exp $
+# $NetBSD: Makefile,v 1.54 2000/09/07 11:32:22 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -30,6 +30,7 @@
     SUBDIR += p5-Convert-BER
     SUBDIR += p5-Filter
     SUBDIR += p5-Text-DelimMatch
+    SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-Parser
     SUBDIR += par
     SUBDIR += py-dtml
