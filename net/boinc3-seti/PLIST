@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/boinc3-seti/app_info.xml
+lib/boinc3-seti/${CLIENTBINNAME}
+@dirrm lib/boinc3-seti
