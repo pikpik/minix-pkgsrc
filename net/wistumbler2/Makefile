@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 19:11:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/13 00:45:25 wiz Exp $
 
 DISTNAME=	wistumbler2.00-pre3
 PKGNAME=	${DISTNAME:S/wistumbler/wistumbler-/}
@@ -15,7 +15,7 @@ USE_X11=	YES
 GNU_CONFIGURE=	YES
 MANCOMPRESSED=	YES
 
-NOT_FOR_PLATFORM=	NetBSD-[01].[012345]*-* 
+NOT_FOR_PLATFORM=	NetBSD-[01].[012345]*-*
 ONLY_FOR_PLATFORM=	NetBSD-*-* FreeBSD-*-*
 
 WISTUMBLER2_USES_GTK?=	yes
@@ -26,7 +26,7 @@ BUILD_DEFS+=		WISTUMBLER2_USES_GTK
 
 .if !empty(WISTUMBLER2_USES_GTK:M[Yy][Ee][Ss])
 .include "../../x11/gtk2/buildlink2.mk"
-.else	
+.else
 CONFIGURE_ENV+=		USE_GTK=0
 .endif
 
