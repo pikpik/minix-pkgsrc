@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/21 09:33:29 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2003/09/21 09:37:53 jmc Exp $
 
 DISTNAME=	piddle-1.0.15
 PKGREVISION=	1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://piddle.sf.net/
 COMMENT=	Python Plug In Drawing, Does Little Else
 
 PYDISTUTILSPKG=	# defined
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 NO_CONFIGURE=	YES
 
