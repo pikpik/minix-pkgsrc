@@ -1,0 +1,9 @@
+# $NetBSD$
+#
+
+DISTNAME=	mozilla-sparc-sun-solaris2.7
+
+DEPENDS+=	gtk+>=1.2:../../x11/gtk
+
+PLATFORM=	${LOWER_OPSYS}
+MOZILLA_LIB=	${PREFIX}/lib/mozilla-${PLATFORM}
