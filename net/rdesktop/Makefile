@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/25 12:45:59 agc Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/30 11:15:19 rh Exp $
 #
 
 DISTNAME=		rdesktop-1.1.0
 CATEGORIES=		net
-MASTER_SITES=		http://prdownloads.sourceforge.net/rdesktop/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=rdesktop/}
 
 MAINTAINER=		grant@grunta.com
-HOMEPAGE=		http://rdesktop.sourceforge.net/
+HOMEPAGE=		http://www.rdesktop.org/
 COMMENT=		Open-source Remote Desktop Protocol client
 
 HAS_CONFIGURE=		yes
