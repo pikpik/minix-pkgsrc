@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2003/04/17 12:32:32 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2003/06/02 01:17:13 jschauma Exp $
 
 DISTNAME=		openssl-0.9.6g
 PKGREVISION=		2
@@ -26,7 +26,7 @@ CONFIGURE_SCRIPT=	config
 CONFIGURE_ARGS=		shared --openssldir=${PKG_SYSCONFDIR} --prefix=${PREFIX}
 CONFIGURE_ENV=		CC="${CC}" PERL="${PERL5}"
 
-PLIST_SRC=		${PKGDIR}/PLIST.${LOWER_OPSYS}
+PLIST_SRC=		${PKGDIR}/PLIST.${LOWER_OPSYS:C/([.0-9]*)$//}
 PLIST_SRC+=		${PLIST_RSAREF}
 PLIST_SRC+=		${PKGDIR}/PLIST.common
 
