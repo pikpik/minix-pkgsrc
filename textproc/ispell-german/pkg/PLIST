@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/german.aff
+lib/german.hash
