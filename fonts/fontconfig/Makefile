@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.28 2004/02/16 19:15:21 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2004/04/19 17:37:19 minskim Exp $
 #
 
-DISTNAME=	fontconfig-2.2.1
-PKGREVISION=	3
+DISTNAME=	fontconfig-2.2.2
 CATEGORIES=	fonts gnome
 MASTER_SITES=	http://pdx.freedesktop.org/software/fontconfig/releases/
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://fontconfig.org/
+HOMEPAGE=	http://freedesktop.org/software/fontconfig/
 COMMENT=	Library for configuring and customizing font access
 
 # This can use 2.0.5 but things which use it (ala pango) require 2.0.9 so make
