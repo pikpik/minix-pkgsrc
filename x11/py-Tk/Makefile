@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/04/01 13:36:57 agc Exp $
+# $NetBSD: Makefile,v 1.10 1999/04/14 06:15:57 tsarna Exp $
 #
 
 DISTNAME=	py152
@@ -16,6 +16,7 @@ DEPENDS+=	tcl-8.0.5:../../lang/tcl80
 
 DIST_SUBDIR=	python
 
+USE_X11=	yes
 WRKSRC=		${WRKDIR}/Python-1.5.2/Modules
 ALL_TARGET=	default
 EXTRACT_ELEMENTS=	Python-1.5.2/Modules/_tkinter.c \

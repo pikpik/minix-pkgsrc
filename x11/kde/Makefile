@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 1999/02/19 21:55:42 tron Exp $
+# $NetBSD: Makefile,v 1.19 1999/02/20 00:08:20 tron Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/11/27 00:47:46 se Exp
 #
 
@@ -15,6 +15,7 @@ DEPENDS+=	kdenetwork-1.1:../../net/kdenetwork
 DEPENDS+=	kdegraphics-1.1:../../graphics/kdegraphics
 DEPENDS+=	kdegames-1.1:../../games/kdegames
 
+USE_X11=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_PATCH=	yes

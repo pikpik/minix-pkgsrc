@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/04/12 17:57:23 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 1999/04/16 20:16:42 tron Exp $
 #
 
 DISTNAME=		Gtk-0.5120
@@ -11,6 +11,7 @@ MAINTAINER=		root@garbled.net
 DEPENDS+=		gtk+-1.2.1:../../x11/gtk
 
 USE_PERL5=		yes
+USE_X11=		yes
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PREFIX}/bin/perl Makefile.PL
