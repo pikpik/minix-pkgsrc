@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/08/20 15:17:32 tsarna Exp $
+# $NetBSD: Makefile,v 1.1 1998/12/19 22:23:55 christos Exp $
 #
 
 DISTNAME=	xpaint-2.5.6
@@ -17,6 +17,5 @@ post-patch:
 	@${MV} ${WRKSRC}/Local.config ${WRKSRC}/Local.config.dist
 	@${SED} -e 's#@LOCALBASE@#${LOCALBASE}#' < ${WRKSRC}/Local.config.dist \
 	> ${WRKSRC}/Local.config
-
 
 .include "../../mk/bsd.pkg.mk"
