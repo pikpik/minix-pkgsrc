@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:50:47 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/06/23 09:53:10 adam Exp $
 bin/annotate
 bin/bdftogd
 bin/gd2copypal
@@ -17,6 +17,7 @@ include/gdfontl.h
 include/gdfontmb.h
 include/gdfonts.h
 include/gdfontt.h
+include/gdfx.h
 lib/libgd.a
 lib/libgd.la
 lib/libgd.so
