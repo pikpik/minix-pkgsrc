@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.34 2002/01/21 17:31:02 zuntum Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.35 2002/01/31 21:18:37 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1022,6 +1022,11 @@ PILRC_USE_GTK?=	YES
 
 #POSTFIX_VERP=YES
 # Add support for Variable Envelope Return Paths.
+# Possible: YES, not defined
+# Default: not defined
+
+#SAMBA_USE_LDAP=YES
+# Add support for LDAP.
 # Possible: YES, not defined
 # Default: not defined
 
