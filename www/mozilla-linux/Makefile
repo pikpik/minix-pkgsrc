@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/18 07:17:31 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/18 07:21:39 grant Exp $
 #
 
 DISTNAME=		mozilla-i686-pc-linux-gnu-1.3
@@ -47,7 +47,6 @@ ARCH=${MACHINE_ARCH:C/i[3-6]86/i386/g}
 
 .if exists(Makefile.${OPSYS}.${ARCH})
 .  include "Makefile.${OPSYS}.${ARCH}"
-.else
-.  include "../../mk/bsd.pkg.mk"
 .endif
 
+.include "../../mk/bsd.pkg.mk"
