@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/03/28 20:16:09 mycroft Exp $
+# $NetBSD: Makefile,v 1.16 2004/04/25 12:07:12 dillo Exp $
 #
 
 DISTNAME=	faad2-2.0
@@ -17,6 +17,7 @@ WRKSRC=		${WRKDIR}/faad2
 USE_BUILDLINK3=		YES
 USE_GCC_SHLIB=		YES
 USE_GNU_TOOLS+=		make
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 
 AUTOMAKE_REQD=		1.4
