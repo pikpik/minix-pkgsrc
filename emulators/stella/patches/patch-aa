@@ -20,10 +20,10 @@ $NetBSD$
  
    /* Open the sound device for writing */
 -  if((fd = open("/dev/dsp", O_WRONLY, 0)) == -1)
-+  if((fd = open("/dev/mixer", O_WRONLY, 0)) == -1)
++  if((fd = open("/dev/sound", O_WRONLY, 0)) == -1)
    {
 -    printf("stella-sound: Unable to open /dev/dsp device!\n");
-+    printf("stella-sound: Unable to open /dev/mixer device!\n");
++    printf("stella-sound: Unable to open /dev/sound device!\n");
      return 1;
    }
  
