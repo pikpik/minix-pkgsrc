@@ -7,16 +7,7 @@ $NetBSD$
  static void
  SIGSEGV_Handler(int sig, siginfo_t * si)
 -#elif defined(M_ix86_bsd)
-+#elif defined(M_ix86_bsd) || defined(M_powerpc_bsd)
++#elif defined(M_ix86_bsd) || defined(M_powerpc_bsd) || defined(M_sparc_bsd)
  
  static void
  SIGSEGV_Handler(int sig, int code, struct sigcontext *scp)
-@@ -528,7 +528,7 @@
- 
-   WamWord *addr = (WamWord *) si->si_addr;
- 
--#elif defined(M_ix86_bsd)
-+#elif defined(M_ix86_bsd) || defined(M_powerpc_bsd)
- 
-   WamWord *addr = (WamWord *) scp->sc_err;
- 
