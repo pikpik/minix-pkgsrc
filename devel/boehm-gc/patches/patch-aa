@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Makefile.orig	Thu Apr 13 15:00:20 2000
-+++ Makefile	Tue Jun 20 04:02:12 2000
+--- Makefile.orig	Thu Apr 13 12:00:20 2000
++++ Makefile
 @@ -10,8 +10,8 @@
  ABI_FLAG= 
  CC=cc $(ABI_FLAG)
