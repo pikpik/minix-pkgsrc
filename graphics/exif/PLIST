@@ -1,3 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/10/01 05:57:05 itojun Exp $
+@comment $NetBSD$
 bin/exif
 man/man1/exif.1
+${PKGLOCALEDIR}/locale/de/LC_MESSAGES/exif.mo
+${PKGLOCALEDIR}/locale/es/LC_MESSAGES/exif.mo
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/exif.mo
