@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2002/01/14 20:48:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.51 2002/02/04 17:04:10 rxg Exp $
 # FreeBSD Id: Makefile,v 1.6 1998/12/28 01:02:05 vanilla Exp
 
 DISTNAME=		gqmpeg-0.12.1
@@ -20,6 +20,9 @@ USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-included-gettext \
 			--datadir=${PREFIX}/${PKGLOCALEDIR}
+
+.include "../../mk/bsd.prefs.mk"
+
 .if !defined(GQMPEG_NO_JAPANESE)
 CONFIGURE_ARGS+=	--enable-japanese
 .endif
