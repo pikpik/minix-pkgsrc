@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 07:07:59 jlam Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		sockets
 CATEGORIES+=		net
-PHP_PKG_VERS=		# empty
+PKGREVISION=		# empty
 COMMENT=		PHP4 extension for sockets support
 
 USE_BUILDLINK_ONLY=	YES

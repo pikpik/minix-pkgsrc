@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 06:23:08 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2001/10/16 06:58:34 jlam Exp $
 
 .include "../../www/php4/Makefile.module"
 
 MODNAME=		sablot
 CATEGORIES+=		textproc
-PHP_PKG_VERS=		# empty
+PKGREVISION=		# empty
 
 MAINTAINER=		uithuis@dds.nl
 COMMENT=		PHP4 XSLT functions using Sablotron
