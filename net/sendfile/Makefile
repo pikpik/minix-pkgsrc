@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/10/17 19:18:01 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/05/01 15:44:43 jmmv Exp $
 #
 
 DISTNAME=	sendfile-20010216
@@ -15,6 +15,7 @@ COMMENT=	Implementation of the Simple asynchronous file transfer protocol
 USE_BUILDLINK2=	yes
 USE_PKGINSTALL=	yes
 
+PKG_SYSCONFSUBDIR=	sendfile
 EGDIR=		${PREFIX}/share/examples/sendfile
 CONF_FILES=	${EGDIR}/sendfile.cf ${PKG_SYSCONFDIR}/sendfile.cf
 CONF_FILES+=	${EGDIR}/sendfile.deny ${PKG_SYSCONFDIR}/sendfile.deny
