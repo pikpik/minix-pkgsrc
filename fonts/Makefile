@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2003/12/05 14:31:00 agc Exp $
+# $NetBSD: Makefile,v 1.60 2003/12/14 01:23:56 xtraeme Exp $
 #
 
 COMMENT=	Fonts
@@ -79,6 +79,7 @@ SUBDIR+=	p5-Font-AFM
 SUBDIR+=	p5-Font-TTF
 SUBDIR+=	pcf2bdf
 SUBDIR+=	pfaedit
+SUBDIR+=	profont
 SUBDIR+=	sgi-fonts
 SUBDIR+=	t1lib
 SUBDIR+=	t1utils
