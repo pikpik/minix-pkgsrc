@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2004/01/23 21:50:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/13 13:40:15 adam Exp $
 
-DISTNAME=	fuse-0.6.2
+DISTNAME=	fuse-0.6.2.1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fuse-emulator/}
 
