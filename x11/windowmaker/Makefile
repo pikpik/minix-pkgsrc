@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 1999/06/21 04:46:52 jlam Exp $
+# $NetBSD: Makefile,v 1.31 1999/06/21 05:13:57 jlam Exp $
 
 DISTNAME=		WindowMaker-0.60.0
 PKGNAME=		windowmaker-0.60.0
@@ -87,8 +87,6 @@ post-install:
 	    if [ -f ${WRKSRC}/WPrefs.app/po/$${lang}.mo ]; then \
 		${ECHO} share/locale/$${lang}/LC_MESSAGES/WPrefs.mo; \
 	    fi; \
-	    ${ECHO} @dirrm share/locale/$${lang}/LC_MESSAGES; \
-	    ${ECHO} @dirrm share/locale/$${lang}; \
 	done) >>${PLIST_SRC}
 .endif
 
