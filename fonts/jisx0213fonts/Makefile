@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/26 08:37:24 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/31 06:15:59 taca Exp $
 #
 
 DISTNAME=	jisx0213fonts-0.0
@@ -16,11 +16,11 @@ FONTS=		K14-1 K14-2 jiskan16-2000-1 jiskan16-2000-2
 FONTDIR=	${PREFIX}/lib/X11/fonts/local
 FONTS_X11_DIRS=	${FONTDIR}
 
-WRKSRC=	${WRKDIR}
+WRKSRC=		${WRKDIR}
 
 do-extract:
 	@for f in ${FONTS}; do \
-		${GUNZIP_CMD} -c ${DISTDIR}/$${f}.bdf.gz >${WRKSRC}/$${f}.bdf; \
+		${GZCAT} ${DISTDIR}/$${f}.bdf.gz >${WRKSRC}/$${f}.bdf; \
 	done
 
 do-build:
