@@ -1,0 +1,2 @@
+@comment $NetBSD$
+@unexec cd /var/qmail/bin && rm -f qmail-conf qmail-pop3d-conf qmail-qmqpd-conf qmail-qmtpd-conf qmail-smtpd-conf
