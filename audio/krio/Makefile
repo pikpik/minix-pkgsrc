@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/02/05 18:17:18 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/11/17 13:09:54 agc Exp $
 #
 
 DISTNAME=	Krio-19990721
@@ -11,7 +11,7 @@ HOMEPAGE=       http://kyle.13th-floor.org/2.0/krio
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
-USE_X11=	yes
+USE_X11BASE=	yes
 
 RIODIR=		${PKGSRCDIR}/audio/rio/${WRKDIR:T}/rio107
 
