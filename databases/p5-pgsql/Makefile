@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/08/27 10:37:02 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/29 20:48:12 jlam Exp $
 #
 
 DISTNAME=	pgsql_perl5-1.8.1
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Pg/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.pobox.com/~gbarr/perl-ldap/
+COMMENT=	Perl interface class for PostgreSQL
 
 DEPENDS+=	postgresql-*:../../databases/postgresql
 

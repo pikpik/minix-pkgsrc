@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/06/01 11:23:18 rh Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/14 16:56:04 wiz Exp $
 
 DISTNAME=	db-3.0.55
 PKGNAME=	db3-0.55
@@ -7,6 +7,7 @@ MASTER_SITES=	http://www.sleepycat.com/update/3.0.55/
 
 MAINTAINER=	wrstuden@netbsd.org
 HOMEPAGE=	http://www.sleepycat.com/
+COMMENT=	Sleepycat Software's Berkeley DB version 3
 
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKDIR}/${DISTNAME}/dist/ltconfig

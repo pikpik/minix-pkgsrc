@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 14:17:39 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/27 00:18:09 wulf Exp $
 #
 
 DISTNAME=	kpsql-1.0
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wulf@netbsd.org
 HOMEPAGE=	http://www.mutinybaysoftware.com/kpsql.html
+COMMENT=	Interactive Query Tool for PostgreSQL
 
 DEPENDS+=	kdebase>=1.1:../../x11/kdebase
 DEPENDS+=	postgresql>=6.4:../../databases/postgresql

@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2000/06/15 11:31:40 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2000/12/28 14:53:52 wiz Exp $
 
 DISTNAME=	oraedit-0.1.3
 CATEGORIES=	databases
 MASTER_SITES=	http://www.ics.muni.cz/~dolecek/projects/python/oraedit/
 
 MAINTAINER=	jdolecek@netbsd.org
+COMMENT=	editor of PL/SQL source stored in Oracle database
 
 DEPENDS=	python>=1.5:../../lang/python
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/08/14 16:35:31 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2000/12/11 19:19:42 jlam Exp $
 #
 
 DISTNAME=	openldap-1.2.11
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.OpenLDAP.org/
+COMMENT=	Lightweight directory access protocol server and client package
 
 # for the moment without threads and thus without slurpd and ldapd
 #DEPENDS+=	../../devel/mit-pthreads

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/16 01:03:47 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/07 20:32:26 skrll Exp $
 
 DISTNAME=	freetds-0.50
 CATEGORIES=	databases
@@ -7,6 +7,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://www.freetds.org/
+COMMENT=	LGPL'd implementation of Sybase's db-lib/ct-lib/ODBC libs
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}/freetds

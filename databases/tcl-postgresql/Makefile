@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2000/09/01 14:20:17 jwise Exp $
+# $NetBSD: Makefile,v 1.4 2000/12/11 16:43:12 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 
 PKGNAME=		tcl-${DISTNAME}
+
+COMMENT=		Tcl interface to PostgreSQL
 
 DEPENDS+=		postgresql-${PG_VERS}:../../databases/postgresql
 DEPENDS+=		tcl>=8.3.2:../../lang/tcl
