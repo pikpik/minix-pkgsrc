@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:45 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/03 15:14:57 wiz Exp $
 #
 
 DISTNAME=		Magnetic22Src
@@ -23,11 +23,13 @@ WRKSRC=			${WRKDIR}/Gtk
 LIBS.SunOS+=		-lCrun
 .endif
 
+.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../multimedia/smpeg/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gtkmagnetic ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gtkmagnetic
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gtkmagnetic
 
-.include "../../multimedia/smpeg/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
