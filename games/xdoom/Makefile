@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/09/27 23:18:09 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/11/29 01:12:33 hubertf Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -28,8 +28,8 @@ post-extract:
 	(cd ${WRKDIR}; ${GTAR} xzf sndserv.tgz)
 
 do-build:
-	cd ${WRKSRC}/${DISTNAME} ; ${GMAKE}
-	cd ${WRKSRC}/sndserv ; ${GMAKE}
+	cd ${WRKSRC}/${DISTNAME} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS}
+	cd ${WRKSRC}/sndserv && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME}/linux/linuxxdoom ${PREFIX}/bin/xdoom
