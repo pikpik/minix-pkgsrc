@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.464 2004/04/11 23:49:34 minskim Exp $
+# $NetBSD: Makefile,v 1.465 2004/04/12 00:00:38 minskim Exp $
 #
 
 COMMENT=	Networking tools
@@ -98,6 +98,7 @@ SUBDIR+=	gnet
 SUBDIR+=	gnet1
 SUBDIR+=	gnetcat
 SUBDIR+=	gnome-netstatus
+SUBDIR+=	gnome-vfs2-smb
 SUBDIR+=	gnubile
 SUBDIR+=	gopher
 SUBDIR+=	gtk-gnutella
