@@ -1,3 +1,4 @@
+@comment $NetBSD$
 include/audio/Afuncproto.h
 include/audio/Afuncs.h
 include/audio/Amd.h

@@ -1,3 +1,4 @@
+# $NetBSD$
 # FreeBSD ID: Makefile,v 1.8 1997/01/06 12:04:12 jkh Exp
 #
 
