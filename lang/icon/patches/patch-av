@@ -1,12 +1,12 @@
 $NetBSD$
 
---- src/icont/Makefile.orig	Wed Jun  6 20:14:41 2001
+--- src/icont/Makefile.orig	Mon Jan 14 21:03:05 2002
 +++ src/icont/Makefile
-@@ -21,7 +21,6 @@
+@@ -21,7 +21,6 @@ COBJS =		../common/long.o ../common/geto
  icont:		$(OBJS) $(COBJS)
  		$(CC) $(CFLAGS) $(LDFLAGS) -o icont $(OBJS) $(COBJS)
  		cp icont ../../bin
 -		strip ../../bin/icont
+ 		(cd ../../bin; rm -f icon; ln -s icont icon)
  
  $(OBJS):	$(HFILES) tproto.h
- 

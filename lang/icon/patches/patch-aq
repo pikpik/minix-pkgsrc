@@ -1,9 +1,0 @@
-$NetBSD$
-
---- /dev/null	Sun Jun 24 10:51:40 2001
-+++ config/unix/netbsd/define.h.alpha
-@@ -0,0 +1,4 @@
-+#define IntBits 32
-+#define WordBits 64
-+#define Double
-+#define StackAlign 8
