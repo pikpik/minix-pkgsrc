@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/06/02 11:29:28 agc Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/02 14:39:59 hubertf Exp $
 # Id: Makefile,v 1.5 1998/02/19 09:43:16 obrien Exp
 #
 
@@ -16,6 +16,8 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 REQUIRES_MOTIF=	yes
 MAN1=		ddd.1
+
+.include "../../mk/bsd.prefs.mk"
 
 post-patch:
 	@case ${PAPERSIZE} in					\
