@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.16 2003/07/17 21:22:42 grant Exp $
+# $NetBSD: Makefile,v 1.17 2003/09/12 17:55:51 recht Exp $
+#
 
 DISTNAME=	libogg-1.0
 PKGNAME=	libogg-1.0.0.8
