@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/09/16 07:08:57 uebayasi Exp $
+# $NetBSD: Makefile,v 1.39 2002/09/16 08:42:08 jlam Exp $
 #
 
 COMMENT=	Fonts
@@ -38,9 +38,9 @@ SUBDIR+=	dbz-ttf
 SUBDIR+=	efont-unicode
 SUBDIR+=	freefonts
 SUBDIR+=	geoslab703-ttf
-SUBDIR+=	ghostscript-fonts
 SUBDIR+=	ghostscript-cidfonts
 SUBDIR+=	ghostscript-cmaps
+SUBDIR+=	ghostscript-fonts
 SUBDIR+=	intlfonts
 SUBDIR+=	jisx0208fonts
 SUBDIR+=	jisx0212fonts
