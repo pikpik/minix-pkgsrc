@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/01/26 07:16:59 martti Exp $
+# $NetBSD: Makefile,v 1.8 2002/02/18 15:14:17 seb Exp $
 
 DISTNAME=	nano-1.0.8
 CATEGORIES=	editors
@@ -9,9 +9,9 @@ HOMEPAGE=	http://www.nano-editor.org/
 COMMENT=	small and friendly text editor (a free replacement for Pico)
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=		yes
 
-.include "../../devel/gettext-lib/buildlink.mk"
-.include "../../devel/ncurses/buildlink.mk"
+.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../devel/ncurses/buildlink2.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
