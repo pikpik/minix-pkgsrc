@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.467 2004/04/20 09:37:19 xtraeme Exp $
+# $NetBSD: Makefile,v 1.468 2004/04/20 10:04:52 xtraeme Exp $
 #
 
 COMMENT=	Networking tools
@@ -85,6 +85,11 @@ SUBDIR+=	gated
 SUBDIR+=	gethost
 SUBDIR+=	gftp
 SUBDIR+=	gftp-gtk1
+SUBDIR+=	gift
+SUBDIR+=	gift-fasttrack
+SUBDIR+=	gift-gnutella
+SUBDIR+=	gift-openft
+SUBDIR+=	giftcurs
 SUBDIR+=	gini
 SUBDIR+=	gkrellm-multiping
 SUBDIR+=	gkrellm-ping
