@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.13 1999/09/18 15:33:55 kim Exp $
+# $NetBSD: bsd.prefs.mk,v 1.14 2000/01/24 07:04:28 itojun Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -93,7 +93,8 @@ MAKE_ENV+=		EXTRA_SYS_MK_INCLUDES="<bsd.own.mk>"
 .endif
 
 # if the system is IPv6-ready NetBSD, compile with IPv6 support turned on.
-.if (${OPSYS} == "NetBSD") && exists(/sbin/ping6)
+.if (${OPSYS} == "NetBSD") && !defined(USE_SOCKS) && \
+    exists(/usr/include/netinet6)
 USE_INET6?=		YES
 .endif
 
