@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2000/11/16 19:14:12 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/19 12:35:21 agc Exp $
 
 DISTNAME=		hercules-2.11
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.conmicro.cx/hercules/
 
 MAINTAINER=		packages@netbsd.org
-HOMEPAGE=		http://www.snes9x.com/
+HOMEPAGE=		http://www.conmicro.cx/hercules/
 COMMENT=		s370 emulator
 
 DEPENDS=		pth-*:../../devel/pth
