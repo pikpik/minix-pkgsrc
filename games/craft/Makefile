@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/01/30 23:18:47 agc Exp $
+# $NetBSD: Makefile,v 1.3 1999/08/11 22:01:46 tron Exp $
 
 DISTNAME=	craftcc35
 PKGNAME=	craft-3.5
@@ -9,12 +9,13 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://borneo.gmd.de/~hua/
 
-WRKSRC=		${WRKDIR}
 USE_GMAKE=	yes
 USE_X11BASE=	yes
+WRKSRC=		${WRKDIR}
 
 post-extract:
 	@find ${WRKSRC} -type f -name '*~' | xargs ${RM} -f
+	@${LN} -fs ${FILESDIR}/Makefile ${WRKSRC}
 
 post-patch:
 	${RM} -f ${WRKSRC}/hcc/hcc
