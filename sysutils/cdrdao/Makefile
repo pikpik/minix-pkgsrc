@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/06/20 19:05:25 dillo Exp $
+# $NetBSD: Makefile,v 1.18 2004/06/27 19:15:37 wiz Exp $
 #
 
 DISTNAME=		cdrdao-1.1.9
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdrdao/}
 MAINTAINER=		david@maxwell.net
 HOMEPAGE=		http://cdrdao.sourceforge.net/
 COMMENT=		Records audio or data CD-Rs in disk-at-once (DAO) mode
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
 USE_GNU_TOOLS+=		make
