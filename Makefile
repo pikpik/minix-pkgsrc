@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 1998/10/28 18:16:50 garbled Exp $
+# $NetBSD: Makefile,v 1.19 1999/02/21 21:25:02 agc Exp $
 # FreeBSD Id: Makefile,v 1.35 1997/08/19 07:10:01 fenner Exp
 #
 
-.include "mk/bsd.prefs.mk"
+.include "mk/bsd.pkg.subdir.mk"
 
 .ifdef SPECIFIC_PKGS
 SUBDIR+=	${SITE_SPECIFIC_PKGS}
@@ -53,8 +53,6 @@ SUBDIR += x11
 .endif
 
 PKGSRCTOP=	yes
-
-.include "mk/bsd.pkg.subdir.mk"
 
 index:
 	@rm -f ${.CURDIR}/INDEX
