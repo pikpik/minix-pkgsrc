@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/03/09 11:42:31 agc Exp $
 #
 
-DISTNAME=       zoularis-19990309
+DISTNAME=       zoularis-19990315
 CATEGORIES=	cross
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
