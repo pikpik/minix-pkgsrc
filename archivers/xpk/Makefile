@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/28 21:32:37 snj Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:04 tv Exp $
 # FreeBSD Id: ports/archivers/xpk/Makefile,v 1.7 2002/10/18 07:58:00 adamw Exp
 
 DISTNAME=	xpk-0.1.4
@@ -17,4 +17,5 @@ USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
