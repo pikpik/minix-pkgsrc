@@ -1,7 +1,7 @@
 $NetBSD$
  
 --- /dev/null	Mon Nov  1 14:10:37 1999
-+++ ./conf/NETBSDALPHA.def	Mon Nov  1 16:54:59 1999
++++ ./conf/NETBSDNS32K.def	Mon Nov  1 16:55:23 1999
 @@ -0,0 +1,10 @@
 +ARCHCFLAGS	=	-DSOCKADHASLEN -DRSHCOMMAND=\"${LOCALBASE}/bin/ssh\" \
 +				-DHASERRORVARS -DNOREXEC -DNEEDMENDIAN -DSYSERRISCONST
@@ -10,6 +10,6 @@ $NetBSD$
 +ARCHLIB		=
 +HASRANLIB	=	t
 +AR			=	ar
-+PVM_ARCH	=	NETBSDALPHA
++PVM_ARCH	=	NETBSDNS32K
 +MAKE		=	make
 +#MAKE		=	gmake
