@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/services/event/Makefile.in.orig	Thu Oct 12 12:07:09 2000
+--- src/services/event/Makefile.in.orig	Wed Mar 20 15:46:29 2002
 +++ src/services/event/Makefile.in
-@@ -115,7 +115,7 @@
+@@ -113,7 +113,7 @@
  DEPS = $(top_builddir)/src/orb/libORBit.la					$(top_builddir)/src/ORBitutil/libORBitutil.la				$(top_builddir)/src/IIOP/libIIOP.la
  
  
