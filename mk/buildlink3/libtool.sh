@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: libtool.sh,v 1.15 2004/02/12 20:29:34 jlam Exp $
+# $NetBSD: libtool.sh,v 1.16 2004/03/13 03:41:13 uebayasi Exp $
 
 Xsed='@SED@ -e 1s/^X//'
 sed_quote_subst='s/\([\\`\\"$\\\\]\)/\\\1/g'
@@ -30,9 +30,12 @@ updatecache="${BUILDLINK_UPDATE_CACHE-yes}"
 cacheall="${BUILDLINK_CACHE_ALL-no}"
 reorder="${BUILDLINK_REORDER-no}"
 
+basename="@BASENAME@"
 cat="@CAT@"
+dirname="@DIRNAME@"
 echo="@ECHO@"
 expr="@EXPR@"
+pwd="@PWD_CMD@"
 test="@TEST@"
 
 BUILDLINK_DIR="@BUILDLINK_DIR@"
