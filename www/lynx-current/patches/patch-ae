@@ -1,4 +1,4 @@
-$NetBSD: patch-ae,v 1.1 2001/02/06 07:07:44 itojun Exp $
+$NetBSD: patch-ae,v 1.1 2001/12/21 03:55:50 fredb Exp $
 
 --- WWW/Library/Implementation/HTParse.c.orig	Wed Oct 25 11:35:28 2000
 +++ WWW/Library/Implementation/HTParse.c	Tue Feb  6 15:26:57 2001
