@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/08/26 15:05:16 tron Exp $
+# $NetBSD: Makefile,v 1.21 2000/03/02 20:58:23 wiz Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/07/13 18:49:29 max Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://wwwthep.physik.uni-mainz.de/~plass/gv/
 
-DEPENDS+=	ghostscript-5.50:../../print/ghostscript5
+DEPENDS+=	ghostscript-x11-5.50:../../print/ghostscript5-x11
 
 USE_IMAKE=	yes
 USE_XAW=	yes
