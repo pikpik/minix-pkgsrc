@@ -1,9 +1,12 @@
-@comment $NetBSD: PLIST,v 1.7 2000/08/28 13:26:52 rh Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:54:07 zuntum Exp $
 bin/tgif
+lib/X11/tgif/Copyright
+lib/X11/tgif/License
 lib/X11/tgif/eq4-2x.sym
 lib/X11/tgif/eq4-epstool.sym
 lib/X11/tgif/eq4-ps2epsi.sym
 lib/X11/tgif/eq4.sym
+lib/X11/tgif/eq4xpm.sym
 lib/X11/tgif/keys.obj
 lib/X11/tgif/tangram.sym
 lib/X11/tgif/tgif.Xdefaults
