@@ -1,9 +1,10 @@
 $NetBSD$
---- other/sample.xfce3rc.in.orig	Mon Sep  6 19:22:55 1999
-+++ other/sample.xfce3rc.in	Mon Sep  6 19:24:24 1999
+
+--- other/sample.xfce3rc.in.orig	Thu Sep 23 23:11:41 1999
++++ other/sample.xfce3rc.in	Fri Nov 12 16:49:20 1999
 @@ -63,7 +63,7 @@
  	xcalc
- 	xterm
+ 	xfterm
  	xfmouse -i
 -	netscape
 +	communicator
