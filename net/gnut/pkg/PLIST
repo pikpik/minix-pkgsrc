@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gnut
+share/doc/gnut/TUTORIAL
+share/doc/gnut/gnutrc.sample
+@dirrm share/doc/gnut
