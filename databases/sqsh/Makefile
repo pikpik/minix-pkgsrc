@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/06/11 02:05:09 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/06/21 02:04:59 jlam Exp $
 
 DISTNAME=	sqsh-1.7-src
 PKGNAME=	sqsh-1.7
@@ -23,6 +23,10 @@ LDFLAGS+=		-Wl,-R${LOCALBASE}/${SYBASE}/lib
 
 CONFIGURE_ENV+=		INCDIRS="${BUILDLINK_DIR}/include"
 CONFIGURE_ENV+=		LIBDIRS="${BUILDLINK_DIR}/lib"
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/sqsh ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/doc/sqsh.1 ${PREFIX}/man/man1/sqsh.1
 
 .include "../../databases/freetds/buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
