@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:54:59 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:27:16 agc Exp $
 #
 
 DISTNAME=	dclock
@@ -14,6 +14,7 @@ CONFLICTS+=	ivtools-*
 
 WRKSRC=		${WRKDIR}
 USE_X11BASE=	yes
+USE_BUILDLINK3=	yes
 
 MAKE_ENV+=	CC="${CC}"
 
