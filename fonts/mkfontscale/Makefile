@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/31 15:33:07 uebayasi Exp $
-#
+# $NetBSD: Makefile,v 1.3 2002/07/17 18:13:48 wiz Exp $
 
 DISTNAME=	mkfontscale-20020524
 CATEGORIES=	fonts
@@ -9,7 +8,7 @@ MAINTAINER=	rxg@netbsd.org
 HOMEPAGE=	http://www.pps.jussieu.fr/~jch/software/files/
 COMMENT=	create an index of scalable font files for X
 
-USE_IMAKE=	yes
+USE_IMAKE=	YES
 
 WRKSRC=		${WRKDIR}/mkfontscale
 
@@ -19,5 +18,4 @@ WRKSRC=		${WRKDIR}/mkfontscale
 IGNORE=		"Needs the fontenc.h header file, which comes with newer XFree versions."
 .endif
 
-.include "../../graphics/freetype2/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
