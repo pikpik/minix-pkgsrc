@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 1999/02/20 22:48:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.35 1999/03/03 18:45:08 tron Exp $
 #
 
 DISTNAME=	ImageMagick-4.2.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.wizards.dupont.com/cristy/ImageMagick.html
 
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	mpeg2codec-1.2:../../graphics/mpeg2codec
-DEPENDS+=	png-1.0.2:../../graphics/png
+DEPENDS+=	png-1.0.3:../../graphics/png
 DEPENDS+=	tiff-3.4:../../graphics/tiff
 
 pre-configure:
