@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/10 09:11:34 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/10 16:44:51 manu Exp $
 #
 
 DISTNAME=		ipsec-tools-0.5.pre20041109
@@ -22,6 +22,10 @@ CONFIGURE_ARGS+=	--with-libradius --enable-frag --enable-hybrid
 
 SAMPLE_DIR=	${WRKSRC}/src/racoon/samples
 EXAMPLE_DIR=	${PREFIX}/share/examples/ipsec-tools
+
+pre-configure:
+	${RM} ${WRKSRC}/src/racoon/cfparse.c
+	${RM} ${WRKSRC}/src/racoon/cftoken.c
 
 post-install:
 	${INSTALL_DATA_DIR} ${EXAMPLE_DIR}
