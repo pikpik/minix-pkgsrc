@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/01/30 23:18:58 agc Exp $
+# $NetBSD: Makefile,v 1.4 1999/08/21 04:02:44 hubertf Exp $
 #
 
 DISTNAME=	xtermset-0.4
@@ -11,7 +11,7 @@ HOMEPAGE=	http://xtermset.netpedia.net/
 USE_X11BASE=	YES
 
 post-extract:
-	cd ${WRKSRC} ; gunzip xtermset.1.gz
+	cd ${WRKSRC} ; ${GUNZIP_CMD} xtermset.1.gz
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xtermset
