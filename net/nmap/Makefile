@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/12/05 16:05:27 veego Exp $
+# $NetBSD: Makefile,v 1.14 2001/02/17 18:19:17 wiz Exp $
 #
 
 DISTNAME=	nmap-2.53
@@ -15,9 +15,9 @@ CONFIGURE_ENV+=	INSTALL=${INSTALL}
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "SunOS"
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "Linux"
 MAKE_ENV+=	CPPFLAGS=""
-DEPENDS+=	libpcap-0.4:../../net/libpcap
+DEPENDS+=	libpcap>=0.4:../../net/libpcap
 CONFIGURE_ARGS+=--with-libpcap=${LOCALBASE}
 .else
 CONFIGURE_ARGS+=--with-libpcap
