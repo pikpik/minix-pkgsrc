@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/08/25 18:39:15 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2003/06/02 01:19:22 jschauma Exp $
 #
 
 DISTNAME=	libungif-4.1.0b1
@@ -22,6 +22,8 @@ USE_BUILDLINK2=		# defined
 
 DOCDIR=			${PREFIX}/share/doc/libungif
 HTMLDIR=		${PREFIX}/share/doc/html/libungif
+
+REPLACE_PERL=		util/gifburst
 
 post-patch:
 	${RM} ${WRKSRC}/doc/gif2x11.html
