@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/osdep/unix/env_unix.c.orig	Fri Aug 18 00:13:00 2000
+--- src/osdep/unix/env_unix.c.orig	Wed Oct 25 01:40:48 2000
 +++ src/osdep/unix/env_unix.c
-@@ -1226,7 +1226,7 @@
+@@ -1211,7 +1211,7 @@
    FILE *f = fopen (file,"r");
  				/* no file or ill-advised usage */
    if (!(f && (s = fgets (tmp,MAILTMPLEN,f)) && (t = strchr (s,'\n')) &&
