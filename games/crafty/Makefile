@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2001/01/14 04:42:43 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/08 17:23:46 jlam Exp $
 
-DISTNAME=		crafty-18.2
+DISTNAME=		crafty-18.3
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/v18/ \
 			ftp://ftp.cis.uab.edu/pub/hyatt/ \
