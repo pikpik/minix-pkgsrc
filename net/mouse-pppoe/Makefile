@@ -1,21 +1,22 @@
-# $NetBSD: Makefile,v 1.2 2000/02/08 23:46:14 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2000/07/11 21:22:06 tron Exp $
 
-DISTNAME=		mouse_pppoe
-PKGNAME=		${DISTNAME}-20000202
+DISTNAME=		pppoe.20000912
+PKGNAME=		mouse_${DISTNAME:S/./-/}
 CATEGORIES=		net
-MASTER_SITES=		ftp://ftp.styx.org/pub/mouse_pppoe/
+MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/misc/mouse/pppoe/
 
 MAINTAINER=		mouse@netbsd.org
 
 CONFLICTS+=		rp-pppoe-*
 
-DIST_SUBDIR=		${PKGNAME}
-WRKSRC=			${WRKDIR}/${DISTNAME}
+NO_WRKSUBDIR=		yes
 
 do-build:
 	(cd ${WRKSRC} ; ${CC} -O2 -o pppoe pppoe.c)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pppoe ${PREFIX}/sbin
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/mouse_pppoe
+	${INSTALL_DATA} ${WRKSRC}/pppoe.readme ${PREFIX}/share/doc/mouse_pppoe
 
 .include "../../mk/bsd.pkg.mk"
