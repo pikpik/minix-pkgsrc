@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1 2004/01/24 08:13:14 grant Exp $
+# $NetBSD: Makefile.common,v 1.2 2004/01/25 16:06:47 recht Exp $
 #
 
 DISTNAME=	Python-2.2.3
@@ -10,6 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 
+USE_GCC_SHLIB=		YES
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
