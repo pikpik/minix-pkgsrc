@@ -11,3 +11,13 @@ $NetBSD$
  			s->swap_buffer[i]   = ((char *) output_samples)[i+1];
  			s->swap_buffer[i+1] = ((char *) output_samples)[i];
  		}
+@@ -297,6 +297,9 @@
+ 
+ ERR:
+ 	close(s->fd);
++	free(s->output_file);
++	if (s->byte_swap)
++		free(s->byte_swap);
+ 	free(s);
+ }
+ 
