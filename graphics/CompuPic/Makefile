@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/08/26 02:09:20 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/16 15:22:13 wiz Exp $
 #
 
 DISTNAME=	compupic-5.1.1063-i386-netbsd
@@ -21,7 +21,7 @@ NO_BIN_ON_CDROM=${RESTRICTED}
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_FTP=	${RESTRICTED}
 NO_SRC_ON_FTP=	${RESTRICTED}
-EXTRACT_CMD=	# empty
+EXTRACT_CMD=	true 
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/libexec/compupic
