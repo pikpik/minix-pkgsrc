@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/Imakefile.orig	Tue Apr  2 11:27:04 2002
++++ lib/Imakefile
+@@ -167,7 +167,7 @@
+ 		  -Ibitmaps \
+ 		  -I. \
+ 		  -Ifd \
+-		  -I/usr/local/include \
++		  -I${BUILDLINK_DIR}/include \
+ 		  /* Do not remove this line */
+ 
+ EXTRA_DEFINES	= \
