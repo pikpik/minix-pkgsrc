@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/12/31 14:25:30 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/14 18:00:48 bad Exp $
 #
 
 DISTNAME=	pgp50i-unix-src
-PKGNAME=	pgp-5.0i
+PKGNAME=	pgp5-5.0i
 WRKSRC=		${WRKDIR}/pgp50i/src
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.pgpi.com/pub/pgp/5.0/unix/ \
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.pgpi.com/pub/pgp/5.0/unix/ \
 		ftp://ftp.ch.pgpi.com/pub/pgp/5.0/unix/ \
 		ftp://ftp.au.pgpi.com/pub/pgp/5.0/unix/
 
-MAINTAINER=	mjl@emsi.priv.at
+MAINTAINER=	mjl@netbsd.org
 HOMEPAGE=       http://www.pgpi.com/
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/perl:../../lang/perl5
