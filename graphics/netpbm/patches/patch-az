@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./ppm/ppmmerge.c.orig	Mon Jan 31 11:44:31 1994
-+++ ./ppm/ppmmerge.c	Sat Aug 12 23:51:35 1995
+--- ppm/ppmmerge.c.orig	Mon Jan 31 17:44:31 1994
++++ ppm/ppmmerge.c	Sun Jan 10 23:48:41 1999
 @@ -29,6 +29,10 @@
  	{
  	++argv;
