@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.426 2003/09/21 16:24:32 kim Exp $
+# $NetBSD: Makefile,v 1.427 2003/09/25 16:05:05 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -192,6 +192,7 @@ SUBDIR+=	libmm
 SUBDIR+=	libmpeg3
 SUBDIR+=	libnet
 SUBDIR+=	libole2
+SUBDIR+=	liboop
 SUBDIR+=	libportlib
 SUBDIR+=	libproplist
 SUBDIR+=	librsync
