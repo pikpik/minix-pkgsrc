@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2004/09/21 16:46:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.33 2004/10/03 00:13:29 tv Exp $
 #
 
 DISTNAME=	libgnome-2.8.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnome/2.8/}
 EXTRACT_SUFX=	.tar.bz2
@@ -26,6 +26,7 @@ USE_PKGINSTALL=		YES
 PKGCONFIG_OVERRIDE=	libgnome/libgnome-2.0.pc.in
 
 CONFIGURE_ARGS= 	--enable-gtk-doc=no
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR}
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
