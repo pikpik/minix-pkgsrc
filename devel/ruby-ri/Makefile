@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 14:41:20 taca Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:39 jmmv Exp $
 #
 
-DISTNAME=	ri-0.7a
+DISTNAME=	ri-0.8a
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
 WRKSRC=		${WRKDIR}/ri
 CATEGORIES=	devel
