@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/07/17 22:55:12 grant Exp $
+# $NetBSD: Makefile,v 1.36 2003/10/13 15:21:19 martti Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -18,7 +18,7 @@ DEPENDS+=	xpmroot-2.*:../../x11/xpmroot
 
 CONFLICTS=	fvwm1-* fvwm>=1
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
-FVWM_VER=	2.4.17
+FVWM_VER=	2.4.18
 
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
