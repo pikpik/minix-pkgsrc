@@ -1,0 +1,12 @@
+@comment $NetBSD$
+bin/fkiss
+man/man6/fkiss.6
+share/doc/fkiss/fkissex.doc
+share/doc/fkiss/fkissex1.doc
+share/doc/fkiss/fkissex2.doc
+share/doc/fkiss/fkissex3.doc
+share/doc/fkiss/kissgs.doc
+share/examples/fkiss/fkissrc
+share/examples/fkiss/frkismi4.lzh
+@dirrm share/doc/fkiss
+@dirrm share/examples/fkiss
