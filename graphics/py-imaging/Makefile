@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/03/08 10:53:56 agc Exp $
+# $NetBSD: Makefile,v 1.4 1999/04/14 15:54:46 tsarna Exp $
 
 DISTNAME=	Imaging-1.0b1
 PKGNAME=	py-imaging-1.0b1
@@ -16,7 +16,7 @@ DIST_SUBDIR=    python
 PLIST_SRC=      ${WRKDIR}/.PLIST_SRC
 
 do-configure:
-	(cd ${WRKSRC}/libImaging; CC="cc -fPIC" ./configure)
+	(cd ${WRKSRC}/libImaging; CC="cc -fPIC" LIBS="${LDFLAGS}" ./configure)
 	${SED} -e 's,@PREFIX@,${PREFIX},g' ${FILESDIR}/Setup.in \
 		>${WRKSRC}/Setup.in
 	(cd ${WRKSRC}; ${MAKE} -f Makefile.pre.in boot)
