@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2001/02/14 11:48:59 jtb Exp $
+# $NetBSD: Makefile,v 1.85 2001/02/16 15:51:51 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -45,6 +45,7 @@ SUBDIR+=	linuxls
 SUBDIR+=	logsurfer
 SUBDIR+=	lv
 SUBDIR+=	most
+SUBDIR+=	nxtvepg
 SUBDIR+=	p5-Array-PrintCols
 SUBDIR+=	p5-Business-CreditCard
 SUBDIR+=	p5-ControlX10-CM11
