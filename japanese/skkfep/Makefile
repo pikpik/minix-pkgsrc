@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/12/24 03:21:09 itohy Exp $
 
 DISTNAME=	skkfep0.86c
 PKGNAME=	skkfep-0.86c
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/skkfep/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://ei5nazha.yz.yamagata-u.ac.jp/~aito/aito-soft.html
+
+BUILD_DEFS+=	USE_INET6
 
 NO_CONFIGURE=
 MAKE_ENV=	MAKE_FLAGS='EXECBASE=${LOCALBASE} CC=${CC}'
