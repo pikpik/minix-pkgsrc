@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2003/01/19 06:52:55 salo Exp $
+# $NetBSD: Makefile,v 1.16 2003/02/25 09:07:10 wiz Exp $
 
 DISTNAME=	xemacs-21.5.10
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.xemacs.org/pub/xemacs/xemacs-21.5/ \
-		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/xemacs-21.5/ \
-		ftp://ftp.lab.kdd.co.jp/xemacs/xemacs-21.5/
+MASTER_SITES=	${MASTER_SITE_XEMACS:=xemacs-21.5/}
 
 MAINTAINER=	magick@netbsd.org
 HOMEPAGE=	http://www.xemacs.org/
