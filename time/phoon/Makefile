@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:28:44 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:27:16 agc Exp $
 #
 
 DISTNAME=	phoon_01apr1995
@@ -11,5 +11,12 @@ HOMEPAGE=	http://www.acme.com/software/phoon/
 COMMENT=	Show phase of the moon on ASCII terminal
 
 WRKSRC=		${WRKDIR}/phoon
+
+.include "../../mk/bsd.prefs.mk"
+
+# doesn't have tm_gmtoff
+.if ${OPSYS} == "Interix"
+MAKE_FLAGS+=	DEFINES=-DSYSV
+.endif
 
 .include "../../mk/bsd.pkg.mk"
