@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/coq-interface.opt
+bin/coqtop.opt
+bin/parser
+man/man1/coqtop.opt.1
+man/man1/parser.1
