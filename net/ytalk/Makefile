@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/04/10 21:08:48 tron Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/14 21:36:14 tron Exp $
 
 DISTNAME=       ytalk-3.1
 CATEGORIES=	net
@@ -9,5 +9,6 @@ MAINTAINER=	mike@ethmoid.org
 HOMEPAGE=	http://www.eleves.ens.fr:8080/home/espel/ytalk/
 
 GNU_CONFIGURE=	yes
+LDFLAGS+= -Wl,-R${X11BASE}/lib
 
 .include "../../mk/bsd.pkg.mk"
