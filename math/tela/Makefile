@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/05/03 01:06:32 jtb Exp $
+# $NetBSD: Makefile,v 1.10 2002/05/03 23:32:12 jtb Exp $
 
 DISTNAME=		tela-1.34
 CATEGORIES=		math
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		# defined
 USE_FORTRAN=		# defined
 USE_X11=		# defined
 USE_BUILDLINK_ONLY=	# defined
-#USE_GNU_READLINE=	# defined
+REPLACE_BUILDLINK=	${WRKSRC}/telakka
 
 INSTALL_TARGET= 	install installdocs
 
