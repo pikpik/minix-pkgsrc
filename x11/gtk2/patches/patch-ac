@@ -1,8 +1,8 @@
 $NetBSD$
 
---- demos/gtk-demo/Makefile.in.orig	Fri Mar 29 18:51:33 2002
-+++ demos/gtk-demo/Makefile.in
-@@ -214,6 +214,7 @@
+--- demos/Makefile.in.orig	Fri Mar 29 18:51:32 2002
++++ demos/Makefile.in
+@@ -193,6 +193,7 @@
  
  
  LDADDS = @STRIP_BEGIN@ 							\
