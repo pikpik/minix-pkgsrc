@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2002/04/20 18:18:50 cjep Exp $
+# $NetBSD: Makefile,v 1.33 2002/06/23 04:00:50 jlam Exp $
 
 DISTNAME=		inn-2.3.2
 CATEGORIES=		news
@@ -31,6 +31,9 @@ CONFIGURE_ARGS+=	--enable-setgid-inews \
 			--with-run-dir=${INN_DATA_DIR}/run \
 			--with-spool-dir=${INN_DATA_DIR}/spool
 CONFIGURE_ENV+=		_PATH_PERL=${PERL5}
+
+PKG_USERS=		news:news::Internet\\ News:${INN_DATA_DIR}:${SH}
+PKG_GROUPS=		news
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -90,4 +93,5 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/innd.sh ${PREFIX}/etc/rc.d/innd
 	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
