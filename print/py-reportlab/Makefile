@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2002/09/21 23:46:55 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/10/23 18:05:23 drochner Exp $
 #
 
-DISTNAME=	ReportLab_1_15
-PKGNAME=	${PYPKGPREFIX}-reportlab-1.15
+DISTNAME=	ReportLab_1_16
+PKGNAME=	${PYPKGPREFIX}-reportlab-1.16
 CATEGORIES=	print
 MASTER_SITES=   ftp://ftp.reportlab.com/
 EXTRACT_SUFX=	.tgz
