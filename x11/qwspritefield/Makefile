@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/17 17:06:44 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/09 16:10:22 agc Exp $
 
 DISTNAME=	QwSpriteField1.6
 PKGNAME=	qwspritefield-1.6
@@ -15,7 +15,6 @@ CONFLICTS=	kdesupport-1.0
 USE_X11BASE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-LIBTOOL_FLAGS+=	--tag=CXX
 WRKSRC=		${WRKDIR}/QwSpriteField
 
 QW_INCLUDES=	Pix.h QwCluster.h QwPublicList.h QwSpriteField.h
@@ -23,7 +22,7 @@ QW_INCLUDES=	Pix.h QwCluster.h QwPublicList.h QwSpriteField.h
 EVAL_PREFIX+=	QT1DIR=qt1
 PATH:=		${QT1DIR}/qt1/bin:${PATH}
 
-MAKE_ENV+=	"QTDIR=${QT1DIR}/qt1"
+MAKE_ENV+=	CXX="${CXX}" "QTDIR=${QT1DIR}/qt1"
 
 do-install:
 	@${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/libQwSpriteField.la \
