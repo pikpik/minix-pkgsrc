@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- lib/Mrm/Makefile.am.orig	Fri Oct 22 08:49:34 1999
-+++ lib/Mrm/Makefile.am	Tue Jul 25 08:18:13 2000
++++ lib/Mrm/Makefile.am
 @@ -24,22 +24,3 @@
  			lookup.h misc.h uil.h
  

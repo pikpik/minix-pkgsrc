@@ -1,14 +1,14 @@
 $NetBSD$
 
 --- doc/Makefile.am.orig	Fri Jan  7 11:57:44 2000
-+++ doc/Makefile.am	Tue Jul 25 08:18:13 2000
++++ doc/Makefile.am
 @@ -6,8 +6,7 @@
  
  SUBDIRS	= www.lesstif.org lessdox
  
 -rootdir=	$(exec_prefix)/LessTif/doc
 -root_DATA=	All.html Clipboard.txt DragAndDrop.txt Form.txt \
-+doc_DATA=	All.html Clipboard.txt DragAndDrop.txt Form.txt \
++html_DATA=	All.html Clipboard.txt DragAndDrop.txt Form.txt \
  		GeoUtils.txt Geometry.html SyntheticResources.txt \
  		UIL.txt XmStrings.txt thread.html INSTALL.html
  

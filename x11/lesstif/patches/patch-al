@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- include/Motif-2.0/Mrm/Makefile.am.orig	Sun Jan  2 08:22:55 2000
-+++ include/Motif-2.0/Mrm/Makefile.am	Tue Jul 25 08:18:13 2000
++++ include/Motif-2.0/Mrm/Makefile.am
 @@ -11,7 +11,7 @@
  # Lets put the headers in a sub directory to avoid
  # poluting /usr/local with more directories for default installs.

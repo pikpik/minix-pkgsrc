@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2000/06/21 05:31:43 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/25 14:44:48 jlam Exp $
 
 PKGNAME=		lesstif12-${LESSTIF_VERSION}
 
@@ -11,6 +11,7 @@ CONFIGURE_ARGS+=	--disable-build-20
 CONFIGURE_ARGS+=	--enable-default-12
 
 post-install:
+	${RMDIR} -p ${PREFIX}/share/doc/html/lesstif 2> /dev/null || ${TRUE}
 	${RMDIR} -p ${PREFIX}/share/doc/lesstif 2> /dev/null || ${TRUE}
 
 .include "../../x11/lesstif/Makefile.common"
