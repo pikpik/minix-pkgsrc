@@ -1,0 +1,17 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+case $2 in
+        DEINSTALL) cat << EOF
+
+	=============================================================
+	The records, log, settings and savegames were not wiped out
+	by this deletion process. If you don't want them around,
+	please remove ${PKG_PREFIX}/share/falcons-eye-dir.
+	=============================================================
+
+EOF
+	;;
+esac
