@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/06/11 06:34:31 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/06/20 20:03:04 jlam Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -13,7 +13,6 @@ DISTFILES+=		${DISTNAME}-rt${EXTRACT_SUFX}
 
 USE_X11=		yes
 USE_BUILDLINK_ONLY=	yes
-USE_CONFIG_WRAPPER=	yes
 
 CONFIGURE_ARGS+=	--enable-gui=gtk
 CONFIGURE_ARGS+=	--with-tlib=ncurses
