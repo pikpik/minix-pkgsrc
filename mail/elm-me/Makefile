@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/08/13 22:10:21 kim Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/23 00:07:07 jlam Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
@@ -39,6 +39,8 @@ post-install:
 post-configure:
 	${TOUCH} ${WRKSRC}/config.sh
 	${TOUCH} ${WRKSRC}/config.h
+	${TOUCH} ${WRKSRC}/Makefile
+	${TOUCH} ${WRKSRC}/*/Makefile
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.install.mk"
