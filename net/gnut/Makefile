@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/02/24 23:48:57 christos Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/25 04:18:05 hubertf Exp $
 #
 
 DISTNAME=	gnut-0.4.20
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.gnutelladev.com/source/gnut/
 
 MAINTAINER=	deberg@netbsd.org
-HOMEPAGE=	http://www.mrob.com/gnut/
+HOMEPAGE=	http://www.gnutelliums.com/linux_unix/gnut/
 COMMENT=	Text-mode Gnutella client
 
 #BUILD_DEPENDS+=	${LOCALBASE}/bin/autoreconf:../../devel/autoconf
