@@ -93,7 +93,7 @@ HELP_W3M=			-w3m
 CONFIGURE_ENV+= use_menu=y use_matrix=n ansi_color=y
 CONFIGURE_ENV+= ded=vi dmail=Mail dbrowser=
 CONFIGURE_ENV+= dcc="${CC}" dtermlib="-ltermcap"
-CONFIGURE_ENV+= dldflags="-Wl,-rpath,${LOCALBASE}/lib -L${LOCALBASE}/lib"
+CONFIGURE_ENV+= dldflags="-Wl,-rpath,${LOCALBASE}/lib"
 CONFIGURE_ENV+= dmodel=6
 CONFIGURE_ENV+= LOCALBASE="${LOCALBASE}"
 CONFIGURE_ARGS+= --yes
