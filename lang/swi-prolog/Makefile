@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/20 20:03:53 jtb Exp $
 
 DISTNAME=		pl-lite-4.0.0
 PKGNAME=		swi-prolog-4.0.0
@@ -26,7 +26,7 @@ CPPFLAGS+=		-D__unix__=1
 CONFIGURE_ENV+=		"CPPFLAGS=${CPPFLAGS}"
 
 PLIST_SUBST+=		SWIPL=${SWIPL}
-PLIST_SUBST+=		SWILIBDIR=${DISTNAME:S,pl,'${SWIPL}',}
+PLIST_SUBST+=		SWILIBDIR=${DISTNAME:S,pl-lite,'${SWIPL}',}
 
 pre-configure:
 	cd ${WRKSRC}/src && ${LOCALBASE}/bin/autoconf
