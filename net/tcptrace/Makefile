@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:40 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/20 11:56:30 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/07/19 19:43:36 fenner Exp
 #
 
@@ -14,6 +14,8 @@ GNU_CONFIGURE=	yes
 ALL_TARGET=	tcptrace
 
 DOCFILES=	COPYRIGHT README README.tput_graphs
+
+.include "../../mk/bsd.prefs.mk"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tcptrace ${PREFIX}/bin

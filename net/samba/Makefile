@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/02/21 21:20:09 frueauf Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:39 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/10/23 15:17:43 max Exp
 #
 
@@ -20,6 +20,8 @@ SAMPLE_CONFIG=	${PREFIX}/etc/smb.conf.sample
 SAMBA_SPOOL=	/var/spool/samba
 SAMBA_LOGDIR=	/var/log
 SAMBA_PRIVATE=	${PREFIX}/private
+
+.include "../../mk/bsd.prefs.mk"
 
 post-install:
 .if !defined(NOPORTDOCS)
