@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2004/11/26 12:07:26 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/25 20:03:53 wiz Exp $
 #
 
 .include "../../net/bittornado/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/Tornado/Tornado-gui/}
-PKGREVISION=	1
 
 COMMENT+=	(wxGTK GUI)
 
 CONFLICTS=	bittorrent-gui-[0-9]*
 
-DEPENDS+=	BitTornado>=0.3.7:../../net/bittornado
+DEPENDS+=	BitTornado>=0.3.10:../../net/bittornado
 
 NO_BUILD=	# defined
 
