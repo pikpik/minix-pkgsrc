@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/09/02 19:45:19 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/09/09 02:51:40 jlam Exp $
 
 DISTNAME=	ppp-2.3.9
 PKGNAME=	ppp-mppe-2.3.9
@@ -15,7 +15,6 @@ BUILD_DEPENDS= ${OPENSSL_SRC}/crypto/rc4:../../security/openssl:extract
 
 HAS_CONFIGURE=  yes
 MANCOMPRESSED_IF_MANZ=	yes
-
 
 post-extract:
 	@${LN} -sf ${OPENSSL_SRC}/include/openssl ${WRKSRC}/pppd/openssl
