@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/02/26 16:47:35 adam Exp $
+# $NetBSD: Makefile,v 1.29 2004/03/29 16:20:16 adam Exp $
 #
 
 DISTNAME=	octave-${OCTAVE_VER}
@@ -33,6 +33,8 @@ USE_MAKEINFO=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 GNU_CONFIGURE=		yes
+USE_LANGUAGES=		c c++ fortran
+GCC_REQD=		3.0
 
 INFO_FILES=	octave.info liboctave.info
 LIBOCTAVE_INFO=	liboctave.info liboctave.info-1 \
