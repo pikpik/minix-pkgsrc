@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/11/13 22:35:58 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1999/02/08 21:27:09 hubertf Exp $
 #
 
 DISTNAME=		xwave2
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.funet.fi/~kouhia/
 
 MAINTAINER=		hubertf@netbsd.org
 
-DEPENDS+=		xpm-*:../../graphics/xpm
+DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 USE_IMAKE=		yes
 
