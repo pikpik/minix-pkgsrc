@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Sat Feb 16 20:19:43 2002
++++ Makefile.in	Sat Feb 16 20:26:18 2002
+@@ -674,7 +674,7 @@
+ 
+ info-am:
+ 
+-install-data-am: install-pkgincludeHEADERS install-pythonPYTHON
++install-data-am: install-pythonPYTHON
+ 
+ install-exec-am: install-pyexecLTLIBRARIES
+ 
