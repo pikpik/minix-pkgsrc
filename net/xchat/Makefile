@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2000/03/13 10:46:45 tron Exp $
+# $NetBSD: Makefile,v 1.13 2000/07/31 07:58:55 tron Exp $
 
-DISTNAME=	xchat-1.5.6
+DISTNAME=	xchat-1.5.7
 CATEGORIES=	net x11 gnome
-MASTER_SITES=	${HOMEPAGE}/files/source/1.4/
+MASTER_SITES=	${HOMEPAGE}/files/source/1.5/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tron@netbsd.org
