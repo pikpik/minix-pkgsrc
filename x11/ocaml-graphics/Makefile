@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/12/24 17:17:49 jmmv Exp $
 
 .include "../../lang/ocaml/Makefile.common"
 
@@ -24,7 +24,17 @@ PLIST_SUBST+=		OPT=
 PLIST_SUBST+=		OPT='@comment '
 .endif
 
+PLIST_SRC=	${WRKDIR}/.PLIST_SRC
+
+.if ${OPSYS} == "Darwin"
+PLIST_SRC+=	${PKGDIR}/PLIST.stub
+.endif
+
 BUILDLINK_DEPMETHOD.ocaml=	full
 
 .include "../../lang/ocaml/buildlink3.mk"
+
+post-build:
+	@${CP} ${PKGDIR}/PLIST ${WRKDIR}/.PLIST_SRC
+
 .include "../../mk/bsd.pkg.mk"
