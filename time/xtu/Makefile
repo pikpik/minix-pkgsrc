@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/02/27 21:24:58 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/14 19:37:58 jlam Exp $
 #
 
-DISTNAME=		xtu-1.1
+DISTNAME=		xtu-1.2
 CATEGORIES=		time
-MASTER_SITES=		http://core.de/~coto/xtu/
+MASTER_SITES=		http://core.de/~coto/projects/xtu/
 
 MAINTAINER=		sketch@rd.bbc.co.uk
-HOMEPAGE=		http://core.de/~coto/xtu/
+HOMEPAGE=		http://core.de/~coto/projects/xtu/
 COMMENT=		Small configurable X11 analog clock
 
 USE_X11=		yes
