@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:46 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/05 07:15:12 jlam Exp $
 
 DISTNAME=		Sablot-0.60
 PKGNAME=		sablotron-0.60
@@ -15,5 +15,6 @@ USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/tools/ltconfig
 
+.include "../../converters/libiconv/buildlink.mk"
 .include "../../textproc/expat/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
