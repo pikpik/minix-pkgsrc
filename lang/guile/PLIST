@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2002/02/18 15:14:25 seb Exp $
+@comment $NetBSD: PLIST,v 1.4 2002/08/26 20:06:57 tron Exp $
 bin/guile
 bin/guile-config
 bin/guile-snarf
@@ -148,4 +148,4 @@ share/guile/guile-procedures.txt
 @dirrm include/libguile
 @dirrm include/guile-readline
 @dirrm include/guile
-@unexec ${RMDIR} %D/share/aclocal 2>/dev/null || true
+@unexec ${RMDIR} %D/share/aclocal 2>/dev/null || ${TRUE}
