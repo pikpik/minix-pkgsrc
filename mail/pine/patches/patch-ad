@@ -1,3 +1,4 @@
+$NetBSD$
 --- pine/signals.c.orig	Mon Jul  8 14:27:47 2002
 +++ pine/signals.c	Mon Jul  8 14:28:13 2002
 @@ -108,7 +108,9 @@

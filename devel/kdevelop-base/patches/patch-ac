@@ -1,3 +1,4 @@
+$NetBSD$
 --- kdevelop/Makefile.am.orig	Tue Jul  9 15:49:58 2002
 +++ kdevelop/Makefile.am	Tue Jul  9 15:51:37 2002
 @@ -5,7 +5,7 @@
