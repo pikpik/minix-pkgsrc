@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/09/03 13:07:40 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 17:51:56 wiz Exp $
 #
 
 DISTNAME=	teTeX-texmf-1.0.2
@@ -25,7 +25,7 @@ do-install:
 	@${ECHO} "  ** Get yourself a shower and a big mug of coffee,"
 	@${ECHO} "  ** this will take _very_ long!"
 	@${ECHO} ""
-	${MKDIR} ${PREFIX}/share/texmf
+	${INSTALL_DATA_DIR} ${PREFIX}/share/texmf
 	${GTAR} -plzx \
 		-C ${PREFIX}/share/texmf \
 		-X ${FILESDIR}/exclude \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/02/06 03:16:59 fredb Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 18:19:47 wiz Exp $
 # $FreeBSD: ports/net/trafshow/Makefile,v 1.14 2000/06/28 12:53:15 alex Exp $
 #
 
@@ -22,7 +22,7 @@ pre-configure:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/trafshow ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/trafshow.1 ${PREFIX}/man/man1
-	${MKDIR} ${PREFIX}/share/examples/trafshow
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/trafshow
 	${INSTALL_DATA} ${WRKSRC}/.trafshow \
 		${PREFIX}/share/examples/trafshow/trafshow
 

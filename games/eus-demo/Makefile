@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/24 01:59:52 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:10:47 wiz Exp $
 #
 
 DISTNAME=	eus-demo
@@ -47,8 +47,8 @@ do-build:
 
 # The executable must be in the same directory as the data.
 do-install:
-	${MKDIR} ${LIBDIR}
-	${MKDIR} ${SHAREDIR}
+	${INSTALL_DATA_DIR} ${LIBDIR}
+	${INSTALL_DATA_DIR} ${SHAREDIR}
 	${INSTALL_SCRIPT} ${WRKDIR}/${BINNAME}.sh ${PREFIX}/bin/${BINNAME}
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${BINTYPE}/${DISTBINNAME} ${LIBDIR}/${BINNAME}
 	${INSTALL_DATA} ${WRKSRC}/README ${SHAREDIR}/${BINNAME}-README

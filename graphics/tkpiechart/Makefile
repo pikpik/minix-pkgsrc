@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/30 21:04:51 jwise Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 15:22:34 wiz Exp $
 
 DISTNAME=	tkpiechart-5.4
 CATEGORIES=	graphics
@@ -24,7 +24,7 @@ post-patch:
 	${CHMOD} a+x ${WRKSRC}/instapkg.tcl
 
 do-install:
-	${MKDIR} ${PREFIX}/lib/tcl/tkpiechart
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/tcl/tkpiechart
 	cd ${WRKSRC}; ./instapkg.tcl ${PREFIX}/lib/tcl/tkpiechart
 
 .include "../../mk/bsd.pkg.mk"

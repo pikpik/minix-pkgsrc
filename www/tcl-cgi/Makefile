@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/24 18:44:59 he Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 17:22:40 wiz Exp $
 #
 
 DISTNAME=	cgi.tcl
@@ -18,8 +18,8 @@ DIST_SUBDIR=	${PKGNAME}
 GNU_CONFIGURE=	yes
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/tcl/cgi-tcl
-	${MKDIR} ${PREFIX}/share/examples/tcl/cgi-tcl
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tcl/cgi-tcl
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/tcl/cgi-tcl
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/tcl/cgi-tcl
 	${INSTALL_DATA} ${WRKSRC}/example/* ${PREFIX}/share/examples/tcl/cgi-tcl
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/30 00:41:54 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 14:40:49 wiz Exp $
 #
 
 DISTNAME=	biew-520
@@ -18,7 +18,7 @@ USE_GMAKE=	YES
 MAKEFILE=	makefile
 
 do-install:
-	${MKDIR} ${PREFIX}/share/biew/ ${PREFIX}/share/doc/biew/
+	${INSTALL_DATA_DIR} ${PREFIX}/share/biew/ ${PREFIX}/share/doc/biew/
 	${INSTALL_PROGRAM} ${WRKSRC}/biew ${PREFIX}/bin/
 	${INSTALL_DATA} ${WRKSRC}/bin_rc/biew.hlp ${PREFIX}/share/biew/
 	${INSTALL_DATA} ${WRKSRC}/bin_rc/standard.skn ${PREFIX}/share/biew/

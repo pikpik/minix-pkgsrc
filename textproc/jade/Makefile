@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/03/15 08:48:15 rh Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:37:29 wiz Exp $
 # FreeBSD Id: Makefile,v 1.15 1999/01/31 11:15:57 dirk Exp
 #
 
@@ -23,7 +23,7 @@ post-install:
 .for i in jade nsgmls sgmlnorm spam spent sx
 	strip ${PREFIX}/bin/$i
 .endfor
-	${MKDIR} ${PREFIX}/include/sp
+	${INSTALL_DATA_DIR} ${PREFIX}/include/sp
 	${INSTALL_DATA} ${WRKSRC}/include/* ${PREFIX}/include/sp
 	${MKDIR} ${PREFIX}/share/doc/jade
 	${INSTALL_DATA} ${WRKSRC}/doc/*.htm ${PREFIX}/share/doc/jade

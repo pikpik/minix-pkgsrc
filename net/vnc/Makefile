@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2000/12/19 10:30:23 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.20 2001/02/17 18:19:52 wiz Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
@@ -35,7 +35,7 @@ post-install:
 		< ${WRKSRC}/vncserver \
 		> ${WRKSRC}/vncserver.local
 	${INSTALL_SCRIPT} ${WRKSRC}/vncserver.local ${PREFIX}/bin/vncserver
-	${MKDIR} ${PREFIX}/share/doc/vnc
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/vnc
 	cd ${WRKDIR}; \
 	${INSTALL_DATA} *.GIF *.css *.gif *.jpg *.htm *.html *.pdf \
 	  ${PREFIX}/share/doc/vnc

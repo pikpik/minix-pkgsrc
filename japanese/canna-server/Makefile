@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/01/26 05:21:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/16 15:25:12 wiz Exp $
 
 DISTNAME=	Canna35b2
 PKGNAME=	Canna-server-3.5b2
@@ -65,7 +65,7 @@ post-build:
 post-install:
 	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
 	@${INSTALL_SCRIPT} ${STARTUP_SCRIPT_SRC} ${PREFIX}/${STARTUP_SCRIPT}
-	@${MKDIR} ${CANNA_SPOOL}
+	@${INSTALL_DATA_DIR} ${CANNA_SPOOL}
 	@${CHMOD} ${CANNA_MODE} ${CANNA_SPOOL}
 	@${CHOWN} ${CANNAOWNER}:${CANNAGROUP} ${CANNA_SPOOL}
 

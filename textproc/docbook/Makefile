@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/09/03 13:34:42 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/17 17:37:20 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1998/06/27 05:19:35 asami Exp
 #
 
@@ -28,7 +28,7 @@ INSTDIR=	${PREFIX}/share/sgml/docbook
 ISOCAT=		${PREFIX}/share/sgml/iso8879/catalog
 
 pre-install:
-	@[ -d ${INSTDIR}/2.4.1 ] || ${MKDIR} ${INSTDIR}/2.4.1
+	${INSTALL_DATA_DIR} ${INSTDIR}/2.4.1
 	@[ -d ${INSTDIR}/3.0 ] || ${MKDIR} ${INSTDIR}/3.0
 	@[ -d ${INSTDIR}/3.1 ] || ${MKDIR} ${INSTDIR}/3.1
 	@[ -d ${INSTDIR}/4.0 ] || ${MKDIR} ${INSTDIR}/4.0

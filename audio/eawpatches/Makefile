@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 01:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 13:30:35 wiz Exp $
 #
 
 DISTNAME=	eawpats-full-10
@@ -24,7 +24,7 @@ NO_BUILD=	yes
 
 do-install:
 	if [ ! -d ${PREFIX}/share/timidity ]; then \
-		${MKDIR} ${PREFIX}/share/timidity; \
+		${INSTALL_DATA_DIR} ${PREFIX}/share/timidity; \
 	fi
 	cd ${PREFIX}/share/timidity && \
 	unrar x -o+ -inul ${DISTDIR}/${DISTNAME}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/02/17 18:18:55 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/02/24 23:48:57 christos Exp $
 #
 
 DISTNAME=	gnut-0.4.20
@@ -43,7 +43,7 @@ GNUTDOCS=	TUTORIAL \
 		gnut.html
 
 post-install:
-	${MKDIR} ${GNUTDOCDIR}
+	${INSTALL_DATA_DIR} ${GNUTDOCDIR}
 	for i in ${GNUTDOCS}; do \
 	    ${INSTALL_DATA} ${WRKSRC}/doc/$$i ${GNUTDOCDIR}; \
 	done

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/08/23 23:14:32 tron Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/17 17:06:12 wiz Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
@@ -17,10 +17,10 @@ USE_IMAKE=		YES
 USE_XPM=		YES
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/Xaw-Xpm
-	${MKDIR} ${PREFIX}/share/pixmaps
-	${CP} ${WRKSRC}/README-XPM ${PREFIX}/share/doc/Xaw-Xpm
-	${CP} ${WRKSRC}/defaults-XawXpm ${PREFIX}/share/doc/Xaw-Xpm
-	${CP} ${WRKSRC}/pixmaps/*.xpm ${PREFIX}/share/pixmaps
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/Xaw-Xpm
+	${INSTALL_DATA_DIR} ${PREFIX}/share/pixmaps
+	${INSTALL_DATA} ${WRKSRC}/README-XPM ${PREFIX}/share/doc/Xaw-Xpm
+	${INSTALL_DATA} ${WRKSRC}/defaults-XawXpm ${PREFIX}/share/doc/Xaw-Xpm
+	${INSTALL_DATA} ${WRKSRC}/pixmaps/*.xpm ${PREFIX}/share/pixmaps
 
 .include "../../mk/bsd.pkg.mk"

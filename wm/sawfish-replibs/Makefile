@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:49 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:45 wiz Exp $
 #
 
 PKGNAME=	sawfish-replibs-${SF_VERS}
@@ -10,7 +10,7 @@ do-build:
 		${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} client.la
 
 do-install:
-	${MKDIR} ${PREFIX}/libexec/rep/${MACHINE_GNU_PLATFORM}/sawfish
+	${INSTALL_DATA_DIR} ${PREFIX}/libexec/rep/${MACHINE_GNU_PLATFORM}/sawfish
 	cd ${WRKSRC}/src && \
 		${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} install-client-la
 

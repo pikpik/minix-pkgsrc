@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/28 09:14:52 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/17 17:06:51 wiz Exp $
 #
 
 DISTNAME=		type1inst-0.6.1
@@ -25,7 +25,7 @@ do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/type1inst ${X11PREFIX}/bin
 	@${INSTALL_SCRIPT} ${WRKSRC}/t1embed ${X11PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/type1inst.man ${X11PREFIX}/man/man1/type1inst.1
-	@${MKDIR} ${X11PREFIX}/share/doc/type1inst
+	@${INSTALL_DATA_DIR} ${X11PREFIX}/share/doc/type1inst
 	@${INSTALL_DATA} ${WRKSRC}/README ${X11PREFIX}/share/doc/type1inst
 
 .include "../../mk/bsd.pkg.mk"

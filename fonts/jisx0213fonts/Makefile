@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/05/27 14:33:59 agc Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 14:46:07 wiz Exp $
 #
 
 DISTNAME=	jisx0213fonts-0.0
@@ -31,7 +31,7 @@ do-build:
 	done)
 
 do-install:
-	${MKDIR} ${FONTDIR}
+	${INSTALL_DATA_DIR} ${FONTDIR}
 	for i in ${PCFGZ}; do \
 		${INSTALL_DATA} ${WRKSRC}/$$i ${FONTDIR}; \
 	done

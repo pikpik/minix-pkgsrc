@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/08 14:43:56 kei Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/17 17:22:07 wiz Exp $
 #
 
 DISTNAME=	htdig-3.1.5
@@ -24,7 +24,7 @@ post-install:
 	fi
 	${PREFIX}/bin/htfuzzy -v synonyms
 	${PREFIX}/bin/htfuzzy -v endings
-	${MKDIR} /var/db/htdig
+	${INSTALL_DATA_DIR} /var/db/htdig
 
 .include "../../mk/bsd.prefs.mk"
 .if defined(EXTRACT_USING_PAX)

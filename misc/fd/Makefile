@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/01/29 11:34:34 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/17 18:09:01 wiz Exp $
 # FreeBSD: ports/misc/fd/Makefile,v 1.14 1999/08/25 07:21:37 obrien Exp
 #
 
@@ -21,7 +21,7 @@ do-configure:
 	${SED} 's/\(distributor = \)NULL/\1"${MAINTAINER}"/' $$v.orig > $$v
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/doc/fd
+	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/fd
 	@for i in ${DOCS}; do \
 		${INSTALL_DATA} ${WRKSRC}/$$i ${PREFIX}/share/doc/fd; \
 	done

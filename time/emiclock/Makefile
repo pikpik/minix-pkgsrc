@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:17 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:32:02 wiz Exp $
 #
 
 DISTNAME=	emiclock-2.0.2
@@ -23,7 +23,7 @@ post-patch:
 .endif
 
 post-install:
-	${MKDIR} ${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults
 	${INSTALL_DATA} ${WRKSRC}/resources/R6/EUC/EmiClock.ad \
 			${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults/EmiClock
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/15 02:20:24 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:21:36 wiz Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -34,8 +34,8 @@ post-extract:
 		<${WRKSRC}/modules/GoodStuff/Imakefile.orig >${WRKSRC}/modules/GoodStuff/Imakefile
 
 post-install:
-	@${MKDIR} ${PREFIX}/lib/X11/fvwm/pixmaps
-	@${MKDIR} ${PREFIX}/lib/X11/fvwm/bitmaps
+	@${INSTALL_DATA_DIR} ${PREFIX}/lib/X11/fvwm/pixmaps
+	@${INSTALL_DATA_DIR} ${PREFIX}/lib/X11/fvwm/bitmaps
 	${INSTALL_DATA} ${WRKSRC}/fvwm_icons/*.xpm \
 		${PREFIX}/lib/X11/fvwm/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/fvwm_icons/*.xbm \

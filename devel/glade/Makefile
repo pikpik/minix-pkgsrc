@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/02/13 11:47:00 tron Exp $
+# $NetBSD: Makefile,v 1.20 2001/02/16 14:38:26 wiz Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/11/18 17:35:16 vanilla Exp
 #
 
@@ -22,16 +22,16 @@ CONFIGURE_ENV+=	LOCALEDIR=${LOCALEDIR}
 PLIST_SUBST+=	LOCALEDIR=${LOCALEDIR}
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/TODO ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/developer.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/file_format.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/generic.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/manual.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/notes.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/portability.txt ${PREFIX}/share/doc/glade
-	${INSTALL_MAN} ${WRKSRC}/doc/source_code.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/TODO ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/developer.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/file_format.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/generic.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/manual.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/notes.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/portability.txt ${PREFIX}/share/doc/glade
+	${INSTALL_DATA} ${WRKSRC}/doc/source_code.txt ${PREFIX}/share/doc/glade
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/11/01 15:20:03 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:22:15 wiz Exp $
 
 DISTNAME=	alevt-1.6.0
 CATEGORIES=	graphics
@@ -18,6 +18,6 @@ USE_X11BASE=	YES
 USE_GMAKE=	YES
 
 pre-install:
-	${MKDIR} ${PREFIX}/share/pixmaps
+	${INSTALL_DATA_DIR} ${PREFIX}/share/pixmaps
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/01/29 11:34:46 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/02/17 17:22:09 wiz Exp $
 
 DISTNAME=	jakarta-tomcat.src
 PKGNAME=	jakarta-tomcat-3.1.1
@@ -36,7 +36,7 @@ do-build:
 	cd ${WRKSRC} && ${SH} ./build.sh
 
 do-install:
-	${MKDIR} ${JAKARTA_HOME}/tomcat
+	${INSTALL_DATA_DIR} ${JAKARTA_HOME}/tomcat
 	cd ${WRKSRC} && ${SH} ./build.sh dist
 	${CHMOD} +x ${JAKARTA_HOME}/tomcat/bin/*.sh
 	${RM} ${JAKARTA_HOME}/tomcat/bin/*.bat

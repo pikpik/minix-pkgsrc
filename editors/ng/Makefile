@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/21 22:27:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:40:52 wiz Exp $
 
 DISTNAME=	ng-1.4
 CATEGORIES=     editors japanese
@@ -33,7 +33,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ng ${PREFIX}/bin/
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/ng
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ng
 	${INSTALL_DATA} ${WRKSRC}/docs/Ng.FAQ ${PREFIX}/share/doc/ng/Ng.FAQ.euc-jp
 	${INSTALL_DATA} ${WRKSRC}/docs/Ng.doc ${PREFIX}/share/doc/ng/Ng.doc.euc-jp
 	${INSTALL_DATA} ${WRKSRC}/docs/Ng.ref ${PREFIX}/share/doc/ng/Ng.ref.euc-jp

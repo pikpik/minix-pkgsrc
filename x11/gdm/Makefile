@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2000/11/19 19:42:59 rh Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/17 17:06:22 wiz Exp $
 
 DISTNAME=	gdm-2.0beta4
 PKGNAME=	gdm-2.0b4
@@ -99,7 +99,7 @@ post-install:
 	  fi; \
 	fi; \
 	TARGET=${GDMCFGDIR}/${FILE:C/.*://}; \
-	${MKDIR} `dirname $$TARGET`; \
+	${INSTALL_DATA_DIR} `dirname $$TARGET`; \
 	${ECHO} "installing $$SOURCE as $$TARGET"; \
 	if [ -x $$SOURCE ]; then \
 	  ${INSTALL_SCRIPT} $$SOURCE $$TARGET; \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/24 02:09:28 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/24 18:08:35 manu Exp $
 
 DISTNAME=		linuxppc_lib-2000.q4.2
 CATEGORIES=		emulators
@@ -44,7 +44,7 @@ do-build:	#do nothing
 
 do-install:
 	${RM} -f ${WRKDIR}/PLIST_DYNAMIC
-	${MKDIR} ${PREFIX}/${EMUL_LINUX}
+	${INSTALL_DATA_DIR} ${PREFIX}/${EMUL_LINUX}
 	${RPM2PKG} -d ${PREFIX} -f ${WRKDIR}/PLIST_DYNAMIC -p emul/linux ${RPMARGS}
 	${TOUCH} ${PREFIX}/${EMUL_LINUX}/etc/ld.so.cache~
 	${CP} ${FILESDIR}/ld.so.conf ${PREFIX}/${EMUL_LINUX}/etc/ld.so.conf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/01/28 13:44:16 tron Exp $
+# $NetBSD: Makefile,v 1.34 2001/02/17 18:19:33 wiz Exp $
 
 DISTNAME=	rsync-2.4.6
 CATEGORIES=	net
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=	--disable-ipv6
 
 post-install:
 	@strip ${PREFIX}/bin/rsync
-	@${MKDIR} ${PREFIX}/share/doc/rsync
+	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/rsync
 	${INSTALL_DATA} ${WRKSRC}/tech_report.tex ${PREFIX}/share/doc/rsync
 
 .include "../../mk/bsd.pkg.mk"

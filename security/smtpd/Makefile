@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/01/29 11:34:41 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 17:50:08 wiz Exp $
 #
 
 DISTNAME=	smtpd-2.0
@@ -14,7 +14,7 @@ COMMENT=	Store and forward SMTP proxy
 SPOOL=		/var/spool/smtpd
 
 pre-install:
-		-${MKDIR} ${SPOOL}/etc
+		-${INSTALL_DATA_DIR} ${SPOOL}/etc
 		for f in antirelay_check_rules_example antispam_check_rules.example smtpd_check_rules.example ; do ${INSTALL_DATA} ${WRKSRC}/$$f ${SPOOL}/etc; done
 		${CHOWN} -R uucp.mail ${SPOOL}
 		${CHMOD} -R g=,o= ${SPOOL}

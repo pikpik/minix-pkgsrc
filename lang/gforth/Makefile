@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/11/13 23:58:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 09:07:09 agc Exp $
 
 DISTNAME=		gforth-0.5.0
 CATEGORIES=		lang
@@ -26,6 +26,6 @@ post-build:
 	${SED} -e "s/@KERNEL_FI@/$$k/g" <${PKGDIR}/PLIST >${PLIST_SRC}
 
 pre-install:
-	${MKDIR} ${PREFIX}/share/emacs/site-lisp
+	${INSTALL_DATA_DIR} ${PREFIX}/share/emacs/site-lisp
 
 .include "../../mk/bsd.pkg.mk"

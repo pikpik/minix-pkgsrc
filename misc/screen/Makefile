@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/09/11 14:43:14 itojun Exp $
+# $NetBSD: Makefile,v 1.24 2001/02/17 18:09:23 wiz Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/06/16 06:39:51 max Exp
 #
 
@@ -16,7 +16,7 @@ INFO_FILES=	screen.info
 PLIST_SUBST=	DISTNAME=${DISTNAME}
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/examples/screen
+	@${INSTALL_DATA_DIR} ${PREFIX}/share/examples/screen
 	${INSTALL_DATA} ${WRKSRC}/etc/etcscreenrc ${PREFIX}/share/examples/screen/screenrc
 
 .include "../../mk/bsd.pkg.mk"

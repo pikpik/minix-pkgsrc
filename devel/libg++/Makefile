@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/08/21 21:01:30 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2001/02/16 14:38:35 wiz Exp $
 #
 
 DISTNAME=	libg++-${GXXVERSION}
@@ -23,7 +23,7 @@ do-configure:
 	@${CP} ${FILESDIR}/Makefile ${WRKSRC}
 
 pre-install:
-	${MKDIR} ${PREFIX}/include/g++/gen
+	${INSTALL_DATA_DIR} ${PREFIX}/include/g++/gen
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/genclass ${PREFIX}/bin/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/08/18 22:46:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2001/02/16 13:30:51 wiz Exp $
 # FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp 
 #
 
@@ -31,7 +31,7 @@ pre-install:
 	${RM} -f tracker.info *.orig
 
 post-install:
-	-${MKDIR} ${PREFIX}/share/doc/tracker
+	-${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tracker
 	${CP} -R ${WRKSRC}/Docs/* ${PREFIX}/share/doc/tracker
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/05/05 15:25:16 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 15:11:06 wiz Exp $
 # FreeBSD Id: Makefile,v 1.3 1998/08/05 09:31:04 asami Exp
 #
 
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/XWorm
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/xworm ${PREFIX}/bin
-	@ ${MKDIR} ${PREFIX}/share/xworm
+	@ ${INSTALL_DATA_DIR} ${PREFIX}/share/xworm
 .for file in font grid raw
 	${INSTALL_DATA} ${WRKSRC}/xworm.${file} ${PREFIX}/share/xworm
 .endfor

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/01/12 12:21:04 dent Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/17 18:22:47 wiz Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/09/26 23:18:07 steve Exp
 #
 
@@ -23,7 +23,7 @@ USE_X11BASE=		yes
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xldlas ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/xldlas.1 ${PREFIX}/man/man1
-	${MKDIR} ${PREFIX}/share/xldlas
+	${INSTALL_DATA_DIR} ${PREFIX}/share/xldlas
 	${CP} -R ${WRKSRC}/help ${PREFIX}/share/xldlas
 
 .include "../../mk/bsd.pkg.mk"

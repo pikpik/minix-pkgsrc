@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/11/03 00:16:36 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/02/16 14:38:19 wiz Exp $
 
 DISTNAME=		boost_all
 PKGNAME=		boost-1.18.1
@@ -54,7 +54,7 @@ post-build:
 do-install:
 	cd ${WRKSRC}; ${LIBTOOL} ${INSTALL_DATA} libboost.la ${LIBDIR}
 	${CP} -R ${WRKSRC}/boost ${PREFIX}/include
-	${MKDIR} ${HTMLDIR}
+	${INSTALL_DATA_DIR} ${HTMLDIR}
 	${INSTALL_DATA} \
 		${WRKSRC}/c++boost.gif \
 		${WRKSRC}/index.htm \

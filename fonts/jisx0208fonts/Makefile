@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/01 21:55:07 itojun Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/16 14:46:06 wiz Exp $
 #
 
 DISTNAME=	jisx0208fonts-20010112
@@ -94,10 +94,10 @@ PATCHDIR=	${.CURDIR}/NO-EXIST
 .endif
 
 pre-install:
-	[ -d ${FONTDIR} ] || ${MKDIR} ${FONTDIR}
+	[ -d ${FONTDIR} ] || ${INSTALL_DATA_DIR} ${FONTDIR}
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/jisx0208fonts
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/jisx0208fonts
 	${INSTALL_DATA} ${WRKDIR}/knj10-1.1/README \
 		${PREFIX}/share/doc/jisx0208fonts/README.naga10-1.1
 	${INSTALL_DATA} ${FILESDIR}/README.kappa20 \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/30 19:47:13 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:37:44 wiz Exp $
 #
 
 DISTNAME=	TclDOM-1.6
@@ -19,11 +19,11 @@ NO_CONFIGURE=
 NO_BUILD=
 
 do-install:
-	${MKDIR} ${PREFIX}/lib/tcl/TclDOM
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/tcl/TclDOM
 	${INSTALL_DATA} ${WRKSRC}/pkgIndex.tcl ${PREFIX}/lib/tcl/TclDOM
 	${INSTALL_DATA} ${WRKSRC}/dom.tcl ${PREFIX}/lib/tcl/TclDOM
 	${INSTALL_DATA} ${WRKSRC}/dommap.tcl ${PREFIX}/lib/tcl/TclDOM
-	${MKDIR} ${PREFIX}/share/doc/tcl/TclDOM
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tcl/TclDOM
 	${INSTALL_DATA} ${WRKSRC}/docs/reference.html ${PREFIX}/share/doc/tcl/TclDOM
 	${INSTALL_DATA} ${WRKSRC}/changes ${PREFIX}/share/doc/tcl/TclDOM
 

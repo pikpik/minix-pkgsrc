@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/08/23 23:14:23 tron Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/16 14:40:52 wiz Exp $
 
 DISTNAME=	nedit-5.1.1-src
 PKGNAME=	nedit-5.1.1
@@ -22,7 +22,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/source/${PROGRAM} ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/${PROGRAM}.man ${PREFIX}/man/man1/${PROGRAM}.1
 .endfor
-	${MKDIR} ${PREFIX}/share/doc/nedit
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/nedit
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/nedit
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/04/14 21:39:02 tron Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/16 14:38:41 wiz Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/06/16 08:22:35 max Exp
 #
 
@@ -14,7 +14,7 @@ CONFIGURE_ARGS= --program-prefix=g
 INFO_FILES=	m4.info
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/examples/gm4
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gm4
 	${INSTALL_DATA} ${WRKSRC}/examples/*.m4 ${PREFIX}/share/examples/gm4
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/29 09:00:45 itojun Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 14:46:08 wiz Exp $
 #
 
 DISTNAME=	ksc5601fonts-20001029
@@ -91,7 +91,7 @@ post-build:
 .endif
 
 pre-install:
-	[ -d ${FONTDIR} ] || ${MKDIR} ${FONTDIR}
+	[ -d ${FONTDIR} ] || ${INSTALL_DATA_DIR} ${FONTDIR}
 
 post-install:
 	(cd ${FONTDIR}; mkfontdir)

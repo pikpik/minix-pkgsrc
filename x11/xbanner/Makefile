@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/23 23:14:33 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 17:06:59 wiz Exp $
 
 DISTNAME=		XBanner1.31
 PKGNAME=		xbanner-1.31
@@ -15,7 +15,7 @@ USE_XPM=		YES
 NO_INSTALL_MANPAGES=	YES
 
 post-install:
-	@${MKDIR} ${X11PREFIX}/share/doc/xbanner
+	@${INSTALL_DATA_DIR} ${X11PREFIX}/share/doc/xbanner
 	for f in Changes.txt Credits.txt Resource_Reference.html	\
 		XBanner_Users_Manual.html email.gif fonttips.html	\
 		index.html red_line.gif rnd_doc.html stars.gif		\

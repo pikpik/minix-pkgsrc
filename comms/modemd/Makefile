@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/07/02 08:37:22 agc Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 13:56:18 wiz Exp $
 
 DISTNAME=	modemd-970221
 PKGNAME=	modemd-19970221
@@ -11,6 +11,6 @@ COMMENT=	Replacement getty for dialup ttys and a modem server
 MANCOMPRESSED_IF_MANZ=	yes
 
 pre-install:
-	${MKDIR} ${PREFIX}/share/examples/modemd
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/modemd
 
 .include "../../mk/bsd.pkg.mk"

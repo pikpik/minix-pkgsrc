@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/07/07 23:35:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 18:38:31 wiz Exp $
 
 DISTNAME=	swarm-0.26
 CATEGORIES=	emulators
@@ -12,7 +12,7 @@ WRKSRC=		${WRKDIR}/swarm/src
 
 do-install:
 	${BSD_INSTALL_PROGRAM} ${WRKSRC}/swarm ${PREFIX}/bin
-	${MKDIR} ${PREFIX}/share/doc/swarm
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/swarm
 	${BSD_INSTALL_DATA} ${WRKSRC}/../doc/swarm.pdf ${PREFIX}/share/doc/swarm
 
 .include "../../mk/bsd.pkg.mk"

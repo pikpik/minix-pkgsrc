@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/16 00:29:01 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/17 17:06:44 wiz Exp $
 
 DISTNAME=	qwtlib-0.2
 CATEGORIES=	x11
@@ -23,7 +23,7 @@ do-configure:
 do-install:
 	@${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/src/libqwt.la \
 	  ${PREFIX}/lib
-	${MKDIR} ${PREFIX}/include/qwt
+	${INSTALL_DATA_DIR} ${PREFIX}/include/qwt
 	${INSTALL_DATA} ${WRKSRC}/include/* ${PREFIX}/include/qwt
 	${INSTALL_DATA} ${WRKSRC}/doc/man/* ${PREFIX}/man/man3
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:15 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:31:59 wiz Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -27,7 +27,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/asclock-xlib
 	cd ${WRKSRC}; ${INSTALL_DATA} COPYING README.THEMES \
 		${PREFIX}/share/doc/asclock-xlib
-	${MKDIR} ${PREFIX}/share/asclock-xlib
+	${INSTALL_DATA_DIR} ${PREFIX}/share/asclock-xlib
 	${CP} -R ${WRKSRC}/themes/* ${PREFIX}/share/asclock-xlib
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/asclock-xlib
 

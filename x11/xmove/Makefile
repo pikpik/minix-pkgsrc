@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/07/10 10:40:43 agc Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/17 17:07:19 wiz Exp $
 #
 
 DISTNAME=	xmove.2.0beta2
@@ -20,7 +20,7 @@ pre-configure:
 	${CP} ${WRKSRC}/man/man1/xmovectrl.1 ${WRKSRC}/xmovectrl/xmovectrl.man
 
 post-install:
-	@${MKDIR} ${XMOVEDOCDIR}
+	@${INSTALL_DATA_DIR} ${XMOVEDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/features.txt ${XMOVEDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/limitations.txt ${XMOVEDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/using_xmove.txt ${XMOVEDOCDIR}

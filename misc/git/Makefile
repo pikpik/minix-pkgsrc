@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/04/14 21:39:04 tron Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/17 18:09:03 wiz Exp $
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:54:39 asami Exp
 #
 
@@ -20,7 +20,7 @@ pre-install:
 	(cd ${WRKSRC}/term ; ${PATCH} --quiet -p0 <${FILESDIR}/gitrc.cons25.patch )
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc
 	${MV} ${PREFIX}/lib/git/html ${PREFIX}/share/doc/git
 
 .include "../../mk/bsd.pkg.mk"
