@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/01/28 22:03:44 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 21:49:25 grant Exp $
 #
 
 DISTNAME=	libutf-2.10
@@ -14,6 +14,7 @@ USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 ALL_TARGET=	tst
+USE_BUILDLINK3=	yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
