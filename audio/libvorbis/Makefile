@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/10/04 03:49:54 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/11/29 19:46:10 jlam Exp $
 
 DISTNAME=	libvorbis-1.0rc2
 PKGNAME=	libvorbis-1.0.0.6
@@ -19,6 +19,14 @@ USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 PLIST_SUBST+=		DISTNAME=${DISTNAME}
+
+.if (${MACHINE_ARCH} == "arm32")
+ARM32_COMPILER_WORKAROUND!=gcc -v 2>&1 | awk '/egcs-2.91.66/{print $$3}'
+.ifdef ${ARM32_COMPILER_WORKAROUND}
+post-configure:
+	printf '\nfloor1.lo:\n\t$$(LIBTOOL) --mode=compile $$(COMPILE) -O0 -c $$<\n\n' >> ${WRKSRC}/lib/Makefile
+.endif
+.endif
 
 .include "../../audio/libogg/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
