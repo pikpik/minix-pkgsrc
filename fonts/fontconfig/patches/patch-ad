@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/Makefile.in.orig	Thu Aug  1 17:57:26 2002
++++ src/Makefile.in
+@@ -26,7 +26,7 @@ TOPDIR=..
+ 
+ include $(TOPDIR)/config/Makedefs
+ 
+-LIBS=@LIBS@
++LIBS=@LIBS@ @LDFLAGS@
+ 
+ SRCS=fcatomic.c \
+      fcblanks.c \
