@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/08/25 00:20:24 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/31 02:35:28 hubertf Exp $
 #
 
 DISTNAME=		${PKGNAME}-i386.linux
@@ -14,7 +14,7 @@ MASTER_SITES=		http://www.advasoft.com/asWedit/ \
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.advasoft.com/asWedit.html
 
-DEPENDS+=		suse_linux>=6.1:../../emulators/suse_linux
+DEPENDS+=		suse_libc5>=6.1:../../emulators/suse_libc5
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
