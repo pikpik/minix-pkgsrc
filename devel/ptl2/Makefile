@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2000/06/21 08:57:04 tron Exp $
+# $NetBSD: Makefile,v 1.22 2000/07/17 03:35:44 msaitoh Exp $
 
 DISTNAME=		PTL-2.1.4
 PKGNAME=		ptl-2.1.4
@@ -14,8 +14,6 @@ BUILD_DEPENDS=		${LOCALBASE}/bin/perl:../../lang/perl5
 
 MAKE_ENV=		INSTALL_PROGRAM="${INSTALL_SCRIPT}"
 PLIST_SRC=		${WRKDIR}/PLIST
-
-NOT_FOR_PLATFORM=	*-*-alpha
 
 post-install:
 	@${CHOWN} -R ${BINOWN}:${BINGRP} ${PREFIX}/PTL/include
