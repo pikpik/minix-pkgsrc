@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/02/10 11:53:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.31 2004/02/22 16:38:01 jmmv Exp $
 
 DISTNAME=	gnome-2.4.2
 PKGREVISION=	2
@@ -36,11 +36,11 @@ DEPENDS+=	nautilus-media>=0.3.3.1:../../multimedia/nautilus-media
 DEPENDS+=	vera-ttf>=1.10:../../fonts/vera-ttf
 
 USE_X11=	yes
-USE_BUILDLINK2=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+NO_BUILDLINK=	yes
 
 do-install:	# empty
 
