@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/09/11 18:11:43 jwise Exp $
+# $NetBSD: Makefile,v 1.9 2000/10/16 17:21:35 hubertf Exp $
 
 DISTNAME=	swing1_1_1
 PKGNAME=	swing-1.1.1
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://www.javasoft.com/products/jfc/
+
+BUILD_DEPENDS+=        ${LOCALBASE}/bin/urlget:../../www/urlget
 
 RESTRICTED=	"Read license before redistributing the Java(tm) Foundation Classes"
 NO_SRC_ON_FTP=	${RESTRICTED}
@@ -36,7 +38,6 @@ ROOT_GROUP?=	wheel
 TEMPDIR?=	/tmp
 TEMPFILE!=echo ${TEMPDIR}/swing.location.$$$$
 
-BUILD_DEPENDS+=        ${LOCALBASE}/bin/urlget:../../www/urlget
 pre-fetch:
 	if [ ! -x ${LOCALBASE}/bin/urlget ]; \
 	then \
