@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2002/08/25 19:22:05 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/20 00:08:34 grant Exp $
 
 DISTNAME=	freetds-0.53
 CATEGORIES=	databases
-PKGREVISION=	1
+PKGREVISION=	2
 MASTER_SITES=	ftp://ftp.metalab.unc.edu/pub/Linux/ALPHA/freetds/
 EXTRACT_SUFX=	.tgz
 

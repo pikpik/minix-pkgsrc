@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/09/20 00:15:56 grant Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/09/22 10:06:01 jlam Exp $
 
 .if !defined(FREETDS_BUILDLINK2_MK)
 FREETDS_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		freetds
-BUILDLINK_DEPENDS.freetds?=	freetds>=0.53nb1
+BUILDLINK_DEPENDS.freetds?=	freetds>=0.53nb2
 BUILDLINK_PKGSRCDIR.freetds?=	../../databases/freetds
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.freetds=freetds
