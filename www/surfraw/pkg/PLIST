@@ -8,10 +8,13 @@ bin/cnn
 bin/currency
 bin/deja
 bin/excite
+bin/freshmeat
 bin/ftpsearch
 bin/google
 bin/ircsearch
 bin/linuxdoc
+bin/newscientist
+bin/pubmed
 bin/raging
 bin/rhyme
 bin/slashdot
@@ -23,7 +26,7 @@ bin/weather
 bin/webster
 bin/xxx
 bin/yahoo
-etc/surfraw_elvi.list
 etc/surfraw.conf
+etc/surfraw_elvi.list
 share/doc/surfraw/README
 @dirrm share/doc/surfraw

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2000/08/05 08:22:36 proff Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/05 18:01:18 jlam Exp $
 #
 
-DISTNAME=	surfraw-0.5.5
+DISTNAME=	surfraw-0.5.6
 CATEGORIES=	www
 MASTER_SITES=	http://download.sourceforge.net/surfraw/
-DISTFILES=	${DISTNAME}-1${EXTRACT_SUFX}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://surfraw.sourceforge.net/
