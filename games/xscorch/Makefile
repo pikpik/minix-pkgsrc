@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2004/04/17 20:47:57 zuntum Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/17 20:51:30 snj Exp $
 
-DISTNAME=	xscorch-0.1.16
+DISTNAME=	xscorch-0.2.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.xscorch.org/releases/
 
