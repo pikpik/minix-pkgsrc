@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/lbrate
+share/doc/lbrate/COPYING
+share/doc/lbrate/ChangeLog
+share/doc/lbrate/README
+share/doc/lbrate/TODO
+@dirrm share/doc/lbrate
