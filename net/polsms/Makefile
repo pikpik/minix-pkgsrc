@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/23 22:11:24 zuntum Exp $
 #
 
-DISTNAME=	sms-1.8.8c
-PKGNAME=	polsms-1.8.8c
+DISTNAME=	sms-1.8.8d
+PKGNAME=	polsms-1.8.8d
 CATEGORIES=	net
 MASTER_SITES=	http://www.ceti.pl/~miki/komputery/download/sms/
 
