@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.9 2003/12/14 19:46:25 jmmv Exp $
+# $NetBSD: buildlink2.mk,v 1.10 2003/12/15 00:42:37 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use libbonobo.
 #
@@ -9,7 +9,7 @@
 LIBBONOBO_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		libbonobo
-BUILDLINK_DEPENDS.libbonobo?=	libbonobo>=2.4.2
+BUILDLINK_DEPENDS.libbonobo?=	libbonobo>=2.6.0
 BUILDLINK_PKGSRCDIR.libbonobo?=	../../devel/libbonobo
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.libbonobo=libbonobo
