@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/03/19 14:11:42 frueauf Exp $
+# $NetBSD: Makefile,v 1.15 1998/03/20 13:28:42 tv Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -7,6 +7,7 @@
     SUBDIR += autoconf
     SUBDIR += automake
 #    SUBDIR += bcc
+    SUBDIR += bison
     SUBDIR += boehm-gc
 #    SUBDIR += cflow
 #    SUBDIR += crossgo32
