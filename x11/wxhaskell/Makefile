@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2004/11/21 17:46:02 augustss Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/25 21:20:29 wiz Exp $
 
-DISTNAME=		wxhaskell-src-0.8
+DISTNAME=		wxhaskell-src-0.9
 PKGNAME=		${DISTNAME:S/-src//}
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wxhaskell/}
