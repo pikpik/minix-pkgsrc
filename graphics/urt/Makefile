@@ -19,6 +19,7 @@ DEPENDS+=	netpbm-9.*:../netpbm
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
+USE_LIBTOOL=	yes
 USE_X11=	yes
 NO_WRKSUBDIR=   yes
 CONFIGURE_SCRIPT=./Configure
