@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 1999/04/26 19:30:28 garbled Exp $
+# $NetBSD: Makefile,v 1.4 1999/09/28 20:40:06 soren Exp $
 #
 
 DISTNAME=	xview3.2p1-X11R6
-PKGNAME=	xview-all-3.2.1
+PKGNAME=	xview-3.2.1
 CATEGORIES=	x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
