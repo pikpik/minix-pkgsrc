@@ -1,3 +1,6 @@
+===========================================================================
+$NetBSD$
+
 If you are upgrading from mhonarc 2.4.9 or earlier, please note
 the following changes
 
@@ -7,3 +10,5 @@ the following changes
   is not backward compatible with the previous API.
 
 * The default value of DEFRCNAME is now ".mhonarc.mrc"
+
+===========================================================================

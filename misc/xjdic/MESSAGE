@@ -1,4 +1,6 @@
 ===========================================================================
+$NetBSD$
+
 
   Copy ${PREFIX}/share/doc/xjdic/.xjdicrc to your $HOME/.xjdicrc !
 
