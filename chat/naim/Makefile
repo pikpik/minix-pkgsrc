@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/25 15:53:56 tv Exp $
+# $NetBSD: Makefile,v 1.2 2002/01/25 22:45:50 simonb Exp $
 #
 
-PKGNAME=	naim-0.11.2.20020125
-DISTNAME=	naim-0.11.2-2002-01-25-0900
+PKGNAME=	naim-0.11.2.20020204
+DISTNAME=	naim-0.11.2-2002-02-04-0919
 CATEGORIES=	chat
 MASTER_SITES=	http://dev.n.ml.org/
 
