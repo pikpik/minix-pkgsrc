@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: silcd.sh,v 1.2 2001/12/17 00:43:11 hubertf Exp $
+# $NetBSD: silcd.sh,v 1.3 2002/01/26 14:43:17 hubertf Exp $
 #
 # PROVIDE: silcd
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ rcvar=$name
 confdir="@PKG_SYSCONFDIR@"
 required_files="$confdir/silcd.conf"
 required_dirs="/var/log/silcd"
-pidfile="/var/run/${name}.pid"
+pidfile="/var/log/silcd/${name}.pid"
 command="@PREFIX@/sbin/silcd"
 start_precmd="silcd_precmd"
 stop_cmd="silcd_stop"
