@@ -1,8 +1,8 @@
 $NetBSD$
 
---- webalizer.c.orig	Tue Mar 23 21:50:47 1999
-+++ webalizer.c	Tue Mar 23 21:51:26 1999
-@@ -201,8 +201,8 @@
+--- webalizer.c.orig	Thu Aug 26 21:34:36 1999
++++ webalizer.c	Thu Aug 26 21:35:27 1999
+@@ -248,8 +248,8 @@
     /* check for default config file */
     if (!access("webalizer.conf",F_OK))
        get_config("webalizer.conf");
