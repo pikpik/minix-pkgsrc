@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/13 13:51:12 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:30:53 grant Exp $
 #
 
 DISTNAME=	gnustep-examples-0.9.7
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 
@@ -10,11 +10,11 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Some GUI programming examples for GNUstep
 
-USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
-USE_X11=	YES
-MAKEFILE=	GNUmakefile
-NO_CONFIGURE=	YES
+USE_BUILDLINK2=		YES
+USE_GMAKE=		YES
+USE_X11=		YES
+MAKEFILE=		GNUmakefile
+NO_CONFIGURE=		YES
 
 .include "../../x11/gnustep-back/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
