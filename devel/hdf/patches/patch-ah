@@ -1,8 +1,8 @@
-$NetBSD: patch-ah,v 1.4 2001/03/25 01:09:50 jtb Exp $
+$NetBSD$
 
---- /dev/null	Sun Mar 25 00:38:33 2001
-+++ mfhdf/dumper/Makefile
-@@ -0,0 +1,22 @@
+--- /dev/null	Wed May  1 14:04:01 2002
++++ mfhdf/dumper/Makefile	Wed May  1 14:10:17 2002
+@@ -0,0 +1,23 @@
 +PROG= hdp
 +
 +SRCS= hdp.c hdp_list.c hdp_sds.c hdp_util.c hdp_vd.c hdp_vg.c	\
@@ -17,7 +17,8 @@ $NetBSD: patch-ah,v 1.4 2001/03/25 01:09:50 jtb Exp $
 +
 +LDFLAGS+= -L${.CURDIR}/../libsrc
 +LDFLAGS+= -L${.CURDIR}/../../hdf/src
-+LDFLAGS+= -Wl,-R${JPEGBASE}/lib -L${JPEGBASE}/lib
++LDFLAGS+= -Wl,-R${BUILDLINK_PREFIX.jpeg}/lib
++LDFLAGS+= -Wl,-R${BUILDLINK_PREFIX.zlib}/lib
 +
 +LDADD+= -lmfhdf -ldf -ljpeg -lz -lm
 +
