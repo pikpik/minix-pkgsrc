@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/24 14:25:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/11/01 10:36:31 jmmv Exp $
 #
 
 DISTNAME=	xmmsarts-0.4
 PKGNAME=	${DISTNAME:S/xmms/xmms-/}
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	audio kde
 MASTER_SITES=	http://stukach.com/hosted/m.i.a/xmmsarts/

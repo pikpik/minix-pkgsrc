@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2003/08/05 13:38:35 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2003/11/27 13:45:25 markd Exp $
 #
 
 .include "../../misc/celestia/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-kde-/}
-PKGREVISION=	3
+PKGREVISION=	4
 
 COMMENT=	KDE frontend for free real-time 3D space simulator
 

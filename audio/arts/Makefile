@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2003/08/01 05:58:20 grant Exp $
+# $NetBSD: Makefile,v 1.20 2003/09/17 23:01:45 markd Exp $
 
 DISTNAME=	arts-1.1.4
 CATEGORIES=	audio
 COMMENT=	Analog Real-Time Synthesizer
+PKGREVISION=	1
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

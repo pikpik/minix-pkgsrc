@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/02 11:04:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/08/28 20:05:20 xtraeme Exp $
 #
 
 DISTNAME=		gini-0.5.1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gini/}
 EXTRACT_SUFX=		.tar.bz2
