@@ -1,9 +1,9 @@
 # $NetBSD: Makefile,v 1.22 2004/02/23 01:09:14 xtraeme Exp $
 #
 
-DISTNAME=	jikes-1.19
+DISTNAME=	jikes-1.18
 CATEGORIES=	lang java
-MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/1.19/
+MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/1.18/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
