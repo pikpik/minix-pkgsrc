@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.453 2004/01/09 16:59:28 xtraeme Exp $
+# $NetBSD: Makefile,v 1.454 2004/01/09 19:14:15 jschauma Exp $
 #
 
 COMMENT=	Development utilities
@@ -438,6 +438,7 @@ SUBDIR+=	tkdiff
 SUBDIR+=	tla
 SUBDIR+=	tmake
 SUBDIR+=	tpasm
+SUBDIR+=	treecc
 SUBDIR+=	trio
 SUBDIR+=	tvision
 SUBDIR+=	ucl
