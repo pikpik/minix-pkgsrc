@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 17:37:24 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/02/25 04:18:16 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/07/17 19:29:07 andreas Exp
 #
 
@@ -12,6 +12,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://glimpse.cs.arizona.edu/
 COMMENT=	Text search engine
 
+LICENSE=	glimpse-license
 RESTRICTED=	"Restrictive copyright (don't sell for profit)"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
