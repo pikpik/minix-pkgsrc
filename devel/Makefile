@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.285 2002/04/30 12:37:11 wiz Exp $
+# $NetBSD: Makefile,v 1.286 2002/05/16 16:06:16 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -56,6 +56,7 @@ SUBDIR+=	cxref
 SUBDIR+=	ddd
 SUBDIR+=	dejagnu
 SUBDIR+=	diffutils
+SUBDIR+=	dlcompat
 SUBDIR+=	dmake
 SUBDIR+=	dmalloc
 SUBDIR+=	doc++
