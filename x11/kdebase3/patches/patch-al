@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-al,v 1.9 2005/03/30 12:17:51 markd Exp $
 
 --- kdm/config.def.orig	2005-02-24 00:25:59.000000000 +1300
 +++ kdm/config.def
@@ -7,7 +7,7 @@ $NetBSD$
  # define DEF_SERVER_CMD XBINDIR "/X"
  #endif
 +
-+#ifdef __NetBSD__
++#if defined(__NetBSD__) && !defined(__powerpc__)
 +# define DEF_SERVER_ARGS "-nolisten tcp vt05"
 +#else
 +# define DEF_SERVER_ARGS "-nolisten tcp"
