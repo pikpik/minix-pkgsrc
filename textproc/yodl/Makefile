@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/26 22:43:57 jtb Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/28 01:19:03 jtb Exp $
 
 DISTNAME=	yodl-1.31.18
 CATEGORIES=	textproc
@@ -11,6 +11,8 @@ COMMENT=	high-level document preparation system
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 MAKEFILE=	GNUmakefile
+
+USE_LIBINTL=	YES
 
 do-build:
 	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} LDFLAGS="${LDFLAGS}"
