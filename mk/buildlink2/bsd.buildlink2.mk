@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.83 2003/05/02 08:32:26 agc Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.84 2003/05/06 17:42:02 jmmv Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -934,6 +934,7 @@ ${_BLNK_FAKE_LA}: ${.CURDIR}/../../mk/buildlink2/fake-la
 		-e "s|@BUILDLINK_DIR@|${BUILDLINK_DIR}|g"		\
 		-e "s|@BUILDLINK_X11_DIR@|${BUILDLINK_X11_DIR}|g"	\
 		-e "s|@BUILDLINK_SHELL@|${BUILDLINK_SHELL}|g"		\
+		-e "s|@AWK@|${AWK:Q}|g"					\
 		-e "s|@BASENAME@|${BASENAME:Q}|g"			\
 		-e "s|@CC@|${BUILDLINK_CC:Q}|g"				\
 		-e "s|@CP@|${CP:Q}|g"					\
