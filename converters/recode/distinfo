@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/01/10 20:54:27 rh Exp $
+$NetBSD$
 
-MD5 (recode-3.5.tar.gz) = 5f2c54592e9f7af31a11e62c7babc81c
+SHA1 (recode-3.5.tar.gz) = c2c74a7fa1e63e712d1f9f16ec9dbec25e9a71bb
+Size (recode-3.5.tar.gz) = 879673 bytes

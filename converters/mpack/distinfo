@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:17:03 agc Exp $
+$NetBSD$
 
-MD5 (mpack-1.5-src.tar.Z) = f41f8aa2ae92d90e1ac03291973e65e4
+SHA1 (mpack-1.5-src.tar.Z) = 1c5081edd9c7152d2a8c4585af2c5a3fc9f17d60
+Size (mpack-1.5-src.tar.Z) = 285360 bytes
 SHA1 (patch-aa) = aabaef05e76afdfdc4480251627fbd886c847b96
 SHA1 (patch-ab) = a5cc4244eb774455eef73c87753ea23fe5591804

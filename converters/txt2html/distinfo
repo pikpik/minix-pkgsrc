@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/20 14:53:08 wennmach Exp $
+$NetBSD$
 
-MD5 (txt2html-1.28.tar.gz) = 7604cfb7456851bbaffbc48ab4444349
+SHA1 (txt2html-1.28.tar.gz) = 1f6ce65f00e5f3c416d0a0303061439a4f181f26
+Size (txt2html-1.28.tar.gz) = 23222 bytes
 SHA1 (patch-aa) = 37ff5ebad1f1d5a305f7173d6b25760ca86e89d0

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/27 14:09:26 hubertf Exp $
+$NetBSD$
 
-MD5 (unix2dos-1.2.tar.gz) = ccdb6364c86177ac18cc44674a842aaf
+SHA1 (unix2dos-1.2.tar.gz) = dac757c1686340058edd1c8a3e9c800dc01aff0b
+Size (unix2dos-1.2.tar.gz) = 1848 bytes
