@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/bbsload
+share/bbtools/README.bbsload
+share/bbtools/bbsload.bb
+share/bbtools/bbsload.nobb
+@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || true
