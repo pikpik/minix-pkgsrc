@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2000/02/16 17:59:20 rh Exp $
+# $NetBSD: Makefile,v 1.102 2000/02/18 15:01:40 wiz Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -80,6 +80,7 @@
     SUBDIR += mit-pthreads
 #    SUBDIR += mkmf
 #    SUBDIR += mprof
+    SUBDIR += nana
     SUBDIR += nasm
     SUBDIR += ncurses
     SUBDIR += netcdf
