@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/MD5/MD5.so
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/MD5/MD5.bs
+@dirrm lib/perl5/site_perl/<$ARCH>-netbsd/auto/MD5
