@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- lib/buildmap.c	Thu Feb 27 18:17:01 1992
++++ lib/buildmap.c	Sat Sep 16 12:11:12 1995
+@@ -26,6 +26,7 @@
+  */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include "rle.h"
+ #include <math.h>
+ 
