@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.20 2003/07/17 22:55:42 grant Exp $
+# $NetBSD: Makefile.common,v 1.21 2003/07/29 15:09:09 mrg Exp $
 
 MOZ_DIST_VER?=	${MOZ_VER}
 DISTNAME?=	mozilla-source-${MOZ_DIST_VER}
@@ -73,7 +73,7 @@ SO_SUFFIX=	so.1.0
 .endif
 PLIST_SUBST+=	SO_SUFFIX=${SO_SUFFIX}
 
-.if ${OPSYS} == "SunOS"
+.if (${OPSYS} == "SunOS" && ${MACHINE_ARCH} == "sparc")
 SUNOSLIB=
 .else
 SUNOSLIB=	"@comment "
