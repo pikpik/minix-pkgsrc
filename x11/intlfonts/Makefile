@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/09/07 22:13:06 tron Exp $
 
 DISTNAME=	intlfonts-1.1
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_GNU:=intlfonts/}
+MASTER_SITES=	${MASTER_SITE_GNU:=intlfonts/intlfonts-1.1-split/}
 DISTFILES=	${FONT_SETS:S/$/${EXTRACT_SUFX}/} ${MISC_FILES}
 
 MAINTAINER=	packages@netbsd.org
