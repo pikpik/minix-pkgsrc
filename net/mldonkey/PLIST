@@ -1,9 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/31 15:19:49 jmmv Exp $
-bin/mldonkey
-libexec/mldonkey/mlchat
-libexec/mldonkey/mlgui
-libexec/mldonkey/mlguistarter
-libexec/mldonkey/mlim
+@comment $NetBSD: PLIST,v 1.2 2003/05/19 12:52:58 wiz Exp $
 libexec/mldonkey/mlnet
-libexec/mldonkey/mlnet+gui
-@dirrm libexec/mldonkey
+@unexec ${RMDIR} %D/libexec/mldonkey >/dev/null 2>&1 || ${TRUE}
