@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.279 2002/04/08 17:08:15 kent Exp $
+# $NetBSD: Makefile,v 1.280 2002/04/17 20:49:45 tsarna Exp $
 #
 
 COMMENT=	Development utilities
@@ -101,6 +101,7 @@ SUBDIR+=	ipv6socket_scrub
 SUBDIR+=	isect
 SUBDIR+=	its4
 SUBDIR+=	jakarta-ant
+SUBDIR+=	jam
 SUBDIR+=	javadeps
 SUBDIR+=	jlib
 SUBDIR+=	kdbg
