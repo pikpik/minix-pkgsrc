@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/10/25 19:34:44 agc Exp $
+# $NetBSD: Makefile,v 1.18 2002/03/14 17:43:41 wiz Exp $
 #
 
 DISTNAME=		jed-B0.99-15
@@ -11,6 +11,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://space.mit.edu/~davis/jed.html
 COMMENT=		Text editor with many features, extensible through S-Lang functions
 
+USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-X
 
@@ -25,5 +26,5 @@ post-install:
 	${RM} -f ${PREFIX}/share/jed/doc/jed.1 ${PREFIX}/share/jed/doc/rgrep.1
 	${RMDIR} ${PREFIX}/share/jed/bin
 
-.include "../../devel/libslang/buildlink.mk"
+.include "../../devel/libslang/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
