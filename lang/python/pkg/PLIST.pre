@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/python
+bin/python1.5
+man/man1/python.1

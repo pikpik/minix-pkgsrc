@@ -1,2 +1,0 @@
-@comment $NetBSD$
-@unexec rm -rf %D/lib/python1.5
