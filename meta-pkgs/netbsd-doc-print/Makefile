@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/07/09 19:27:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/07/10 03:35:58 hubertf Exp $
 #
 
 DISTNAME=	netbsd-doc-print-1.0
@@ -8,7 +8,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	hubertf@netbsd.org
 
-DEPENDS+=	jadetex>=2.20:../../print/jadetex/html
+DEPENDS+=	jadetex>=2.20:../../print/jadetex
 DEPENDS+=	ghostscript-[0-9]*:../../print/ghostscript
 DEPENDS+=	netbsd-doc-1.1:../netbsd-doc
 
