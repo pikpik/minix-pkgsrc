@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.176 2003/09/19 09:24:55 wiz Exp $
+# $NetBSD: Makefile,v 1.177 2003/09/22 14:47:04 manu Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -129,6 +129,7 @@ SUBDIR+=	safecat
 SUBDIR+=	sendmail
 SUBDIR+=	sendmail811
 SUBDIR+=	sigrot
+SUBDIR+=	sma
 SUBDIR+=	smtpfeed
 SUBDIR+=	solid-pop3d
 SUBDIR+=	spamass-milter
