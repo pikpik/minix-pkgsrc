@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2002/05/30 10:30:40 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2002/08/31 03:38:44 wiz Exp $
 #
 
-DISTNAME=	disc-cover-1.3.2
+DISTNAME=	disc-cover-1.4.0
 CATEGORIES=	audio
 MASTER_SITES=	http://home.wanadoo.nl/~jano/files/
 
