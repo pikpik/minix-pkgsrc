@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/24 14:51:52 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/04/21 21:09:33 cube Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/01 03:04:11 itojun Exp
 #
 
@@ -27,7 +27,7 @@ DEPENDS+=		pgp-2.*:../../security/pgp2
 BUILD_DEFS+=		USE_OPENLDAP NNTP_USE_PGP
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--localstatedir=/var/spool
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/spool
 CONFIGURE_ENV+=		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 USE_GNU_TOOLS+=		make
 

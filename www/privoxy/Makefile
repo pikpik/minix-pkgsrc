@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/18 20:58:30 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/28 02:47:50 reed Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
@@ -41,7 +41,7 @@ PTHREAD_AUTO_VARS=	yes
 PTHREAD_OPTS+=		require
 
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--localstatedir=/var
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--sysconfdir=${EGDIR}
 CONFIGURE_ARGS+=	--with-user=${PRIVOXY_USER}
 CONFIGURE_ARGS+=	--with-group=${PRIVOXY_GROUP}

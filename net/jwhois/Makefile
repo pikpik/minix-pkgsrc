@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/11/30 10:37:55 kleink Exp $
+# $NetBSD: Makefile,v 1.44 2004/12/16 12:21:34 kleink Exp $
 #
 
 DISTNAME=		jwhois-3.2.2
@@ -15,7 +15,7 @@ USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ARGS+=	--localstatedir=/var/db
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/db
 
 LIBS.SunOS+=		-lnsl -lsocket
 
