@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/01/14 19:26:44 salo Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/18 14:40:35 salo Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
 PKGNAME=	${DISTNAME:S/irssi/silc-client/}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	chat
 MASTER_SITES=	http://www.irssi.org/files/plugins/icb/
 DISTFILES=	${DISTNAME}.tar.gz ${SILC_CLIENT_DISTFILE}
