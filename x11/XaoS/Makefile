@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/08/25 21:52:26 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/17 22:56:20 grant Exp $
 #
 
 DISTNAME=		XaoS-3.0
@@ -13,6 +13,8 @@ USE_BUILDLINK2=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-curses-driver=no
+USE_NEW_TEXINFO=	YES
+INFO_FILES=		xaos.info
 
 .include "../../graphics/png/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
