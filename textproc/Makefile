@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.235 2004/02/23 08:40:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.236 2004/02/23 08:59:21 xtraeme Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -185,6 +185,7 @@ SUBDIR+=	psgml-mode
 SUBDIR+=	py-FourSuite
 SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-Lupy
+SUBDIR+=	py-Reverend
 SUBDIR+=	py-SimpleParse
 SUBDIR+=	py-csv
 SUBDIR+=	py-docutils
