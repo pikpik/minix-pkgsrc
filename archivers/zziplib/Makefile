@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/11 06:45:55 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/02 22:28:52 danw Exp $
 #
 
 DISTNAME=	zziplib-0.10.82
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://zziplib.sourceforge.net/
 COMMENT=	Library for ZIP archive handling
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
