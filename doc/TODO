@@ -1,10 +1,13 @@
-$NetBSD: TODO,v 1.1906 2004/07/07 12:03:29 xtraeme Exp $
+$NetBSD: TODO,v 1.1907 2004/07/07 19:41:10 schmonz Exp $
 
 Suggested new packages
 ======================
 
 	any unresolved PRs (if you have commit access)
 	http://www.netbsd.org/Gnats/category/pkg.html
+
+	any complete, polished packages in pkgsrc-wip (ditto)
+	http://pkgsrc-wip.sourceforge.net/
 
 	figfonts
 	More fonts for figlet.
