@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.2 2002/01/04 19:59:10 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/04 20:05:53 fredb Exp $
 #
 
 DISTNAME=	par-v1.1
+PKGNAME=	par-1.1
 CATEGORIES=	misc archivers
 MASTER_SITES=	http://telia.dl.sourceforge.net/parchive/
 
