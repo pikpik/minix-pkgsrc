@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.10 2003/12/14 23:25:56 xtraeme Exp $
+# $NetBSD: buildlink2.mk,v 1.11 2004/01/03 18:49:56 reed Exp $
 #
 # This Makefile fragment is included by packages that use gnome2-control-center.
 #
@@ -25,14 +25,18 @@ BUILDLINK_FILES.gnome2-control-center+=	share/idl/GNOME_SettingsDaemon.idl
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/GConf2/buildlink2.mk"
 .include "../../devel/libbonobo/buildlink2.mk"
-.include "../../devel/libglade2/buildlink2.mk"
 .include "../../devel/libbonoboui/buildlink2.mk"
+.include "../../devel/libglade2/buildlink2.mk"
 .include "../../devel/libgnomeui/buildlink2.mk"
+.include "../../fonts/fontconfig/buildlink2.mk"
+.include "../../fonts/Xft2/buildlink2.mk"
 .include "../../sysutils/gnome-vfs2/buildlink2.mk"
 .include "../../sysutils/nautilus/buildlink2.mk"
+.include "../../textproc/libxml2/buildlink2.mk"
 .include "../../wm/metacity/buildlink2.mk"
-.include "../../x11/gtk2/buildlink2.mk"
 .include "../../x11/gnome-desktop/buildlink2.mk"
+.include "../../x11/gtk2/buildlink2.mk"
+.include "../../x11/startup-notification/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gnome2-control-center-buildlink
 
