@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2001/07/08 17:32:02 mjl Exp $
+# $NetBSD: Makefile,v 1.59 2001/07/08 21:00:33 tron Exp $
 #
 
 COMMENT=	Databases
@@ -12,6 +12,7 @@ SUBDIR+=	gq
 SUBDIR+=	gtksql
 SUBDIR+=	gtranscript
 SUBDIR+=	iodbc
+SUBDIR+=	java-db3
 SUBDIR+=	jdb
 SUBDIR+=	jdbc-postgresql
 SUBDIR+=	kpsql
