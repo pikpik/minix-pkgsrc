@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/04/20 15:47:01 cjep Exp $
+# $NetBSD: Makefile,v 1.7 2002/09/29 07:09:33 jlam Exp $
 
 DISTNAME=		ncview-1.92c
 CATEGORIES=		graphics
@@ -18,7 +18,7 @@ CONFIGURE_ARGS+=	--with-udunits_incdir=${BUILDLINK_PREFIX.udunits}/include
 CONFIGURE_ARGS+=	--with-udunits_libdir=${BUILDLINK_PREFIX.udunits}/lib
 
 .if (${MACHINE_ARCH} == "arm32")
-. include "../../lang/gcc/Makefile.gcc"
+. include "../../lang/gcc/buildlink2.mk"
 .endif
 
 .include "../../devel/netcdf/buildlink2.mk"
