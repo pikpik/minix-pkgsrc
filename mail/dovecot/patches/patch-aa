@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Thu Jun 19 00:21:59 2003
-+++ Makefile.in	Thu Jun 19 16:06:04 2003
-@@ -91,7 +91,7 @@
+--- Makefile.in.orig	2004-07-30 20:04:57.000000000 -0400
++++ Makefile.in
+@@ -101,7 +101,7 @@ ssldir = @ssldir@
  SUBDIRS = src doc
  
  confdir = $(sysconfdir)
