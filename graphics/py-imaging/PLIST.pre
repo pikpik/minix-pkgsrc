@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST.pre,v 1.1 2001/10/31 23:58:13 zuntum Exp $
-${PYSITELIB}/PIL.pth
-${PYSITELIB}/PIL/_imaging.so
