@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/05/19 03:56:35 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:41:01 jmmv Exp $
 
 DISTNAME=	craftcc35
 PKGNAME=	craft-3.5
@@ -17,6 +17,9 @@ USE_X11BASE=	yes
 post-extract:
 	@${FIND} ${WRKSRC} -type f -name '*~' | ${XARGS} ${RM} -f
 	@${LN} -fs ${FILESDIR}/Makefile ${WRKSRC}
+	for FILE in `find ${WRKSRC} -name "*.hc" -type f`; do	\
+	  echo >>$$FILE "";					\
+	done
 
 post-patch:
 	${RM} -f ${WRKSRC}/hcc/hcc
