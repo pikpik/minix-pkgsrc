@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.10 2001/02/17 17:49:41 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/02/25 04:18:12 hubertf Exp $
 # FreeBSD Id: ports/security/crack/Makefile,v 1.11 1999/09/04 19:24:50 obrien Exp
 
 DISTNAME=	crack5.0
 PKGNAME=	crack-5.0
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.win.tue.nl/pub/security/  \
-		ftp://ftp.ox.ac.uk/pub/comp/security/software/crackers/  \
-		ftp://ftp.auscert.org.au/pub/coast/mirrors/cert.org/tools/crack/ \
-		ftp://ftp.riken.go.jp/pub/net/cert_security_tools/crack/
+MASTER_SITES=	ftp://ftp.task.gda.pl/mirror/ftp.cert.org/pub/tools/crack/ \
+		ftp://ftp.cs.umn.edu/mirror00/ftp.win.tue.nl/pub/security/ \
+		ftp://ftp.nask.pl/pub/CERT_NASK/CERTCC_tools/crack/
 
 MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://www.users.dircon.co.uk/~crypto/
