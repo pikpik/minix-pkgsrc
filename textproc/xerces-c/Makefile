@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2004/02/11 04:06:04 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2004/02/11 12:20:03 jlam Exp $
 #
 
 DISTNAME=	xerces-c-src_2_3_0
 PKGNAME=	${DISTNAME:S/-src_/-/:S/_/./g}
 CATEGORIES=	textproc
-MASTER_SITES=	http://archive.apache.org/dist/xml/xerces-c/
+MASTER_SITES=	http://xml.apache.org/dist/xerces-c/stable/archives/Xerces-C_2_3_0/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://xml.apache.org/xerces-c/
