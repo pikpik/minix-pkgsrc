@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/22 08:38:29 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/27 00:53:11 heinz Exp $
 
 DISTNAME=	t1lib-1.3.1
 CATEGORIES=	fonts devel graphics
@@ -8,7 +8,9 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE:=libs/graphics/} \
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Library for generating bitmaps from Adobe Type 1 fonts
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
