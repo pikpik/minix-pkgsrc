@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/07/04 05:11:14 mycroft Exp $
+# $NetBSD: Makefile,v 1.13 1998/07/06 15:38:00 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/03 07:37:08 asami Exp
 #
 
@@ -20,7 +20,7 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 
 USE_IMAKE=	yes
 
-LICENCE=	shareware
+LICENSE=	shareware
 
 .include "../../mk/bsd.prefs.mk"
 
