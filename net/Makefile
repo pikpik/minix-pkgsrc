@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.346 2002/12/29 04:38:42 hubertf Exp $
+# $NetBSD: Makefile,v 1.347 2002/12/30 18:05:10 sommerfeld Exp $
 #
 
 COMMENT=	Networking tools
@@ -53,6 +53,7 @@ SUBDIR+=	djbdns
 SUBDIR+=	dlint
 SUBDIR+=	dnstop
 SUBDIR+=	docsis
+SUBDIR+=	driftnet
 SUBDIR+=	dynipclient
 SUBDIR+=	echoping
 SUBDIR+=	edonkey2k
