@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- libatalk/asp/asp_getsess.c.orig	Sat Aug 16 19:20:31 1997
++++ libatalk/asp/asp_getsess.c	Thu Feb 18 20:19:39 1999
+@@ -6,7 +6,7 @@
+ #include <sys/errno.h>
+ #include <sys/time.h>
+ #include <sys/types.h>
+-#include <sys/signal.h>
++#include <signal.h>
+ #include <sys/uio.h>
+ #include <sys/wait.h>
+ #include <sys/syslog.h>
