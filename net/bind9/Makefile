@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.49 2003/09/17 14:28:51 itojun Exp $
+# $NetBSD: Makefile,v 1.50 2003/09/20 12:50:24 itojun Exp $
 #
 
-DISTNAME=	bind-${BIND_VERSION}-P2
-PKGNAME=	bind-${BIND_VERSION}p2
+DISTNAME=	bind-${BIND_VERSION}-P3
+PKGNAME=	bind-${BIND_VERSION}p3
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}-P2/
+MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}-P3/
 
 MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.isc.org/products/BIND/
