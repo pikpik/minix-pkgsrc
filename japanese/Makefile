@@ -25,6 +25,7 @@
     SUBDIR += nkf
     SUBDIR += p5-jcode
     SUBDIR += p5-nkf
+    SUBDIR += samba
     SUBDIR += sed
     SUBDIR += sj3-lib
     SUBDIR += sj3-server
