@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/21 14:01:06 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/12 13:10:31 jlam Exp $
 
 DISTNAME=	cyrus-sasl-2.1.17
 PKGNAME=	${DISTNAME:S/sasl/saslauthd/}
@@ -42,6 +42,7 @@ CONFIGURE_ARGS+=	--with-pam=${BUILDLINK_PREFIX.pam}
 
 .if defined(USE_LDAP)
 .  include "../../databases/openldap/buildlink3.mk"
+.  include "../../security/cyrus-sasl2/buildlink3.mk"
 .  include "../../security/openssl/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-ldap=${BUILDLINK_PREFIX.openldap}
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
