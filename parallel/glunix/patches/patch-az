@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- progs/glustat/Makefile~	Sun Dec  1 16:23:04 1996
++++ progs/glustat/Makefile	Sat Feb 28 07:27:52 1998
+@@ -2,3 +2,3 @@
+ SRCS    = glustat.c
+-LIBS    = -lglunix -lsocket -lnsl
++LIBS    = -lglunix
+ 

@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- progs/glurun/Makefile~	Fri Dec  6 17:19:24 1996
++++ progs/glurun/Makefile	Sat Feb 28 07:26:45 1998
+@@ -2,3 +2,3 @@
+ SRCS    = glurun.c
+-LIBS    = -lglunix -lsocket -lnsl
++LIBS    = -lglunix
+ 
