@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.164 2000/06/22 16:50:42 rh Exp $
+# $NetBSD: Makefile,v 1.165 2000/07/01 04:14:45 danw Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -57,6 +57,7 @@
     SUBDIR += kterm
     SUBDIR += kworldwatch
     SUBDIR += lesstif
+    SUBDIR += lesstif12
     SUBDIR += lwm
     SUBDIR += olvwm
     SUBDIR += oneko
