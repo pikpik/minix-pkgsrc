@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.147 2001/07/13 14:39:09 manu Exp $
+# $NetBSD: Makefile,v 1.148 2001/07/22 01:41:32 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -50,6 +50,7 @@ SUBDIR+=	get_ds7
 SUBDIR+=	gif2png
 SUBDIR+=	gif320
 SUBDIR+=	giflib
+SUBDIR+=	gifsicle
 SUBDIR+=	giftrans
 SUBDIR+=	gimp
 SUBDIR+=	giram
