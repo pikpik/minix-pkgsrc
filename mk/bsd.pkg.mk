@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.355 1999/10/14 05:31:22 fredb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.356 1999/10/19 12:04:45 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1349,7 +1349,7 @@ root-install:
 		done;							\
 	fi)
 	${_PKG_SILENT}${_PKG_DEBUG}cd ${.CURDIR} && ${MAKE} ${.MAKEFLAGS} ${PLIST}
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "SunOS"
 	${_PKG_SILENT}(${_PKG_DEBUG}sos=`${EGREP} -h 			\
 		'.*/lib[^/]+\.so\.[0-9]+\.[0-9]+$$'			\
 		${PLIST} || ${TRUE}`;					\
