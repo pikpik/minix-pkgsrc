@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.275 2005/01/16 17:59:19 cube Exp $
+# $NetBSD: Makefile,v 1.276 2005/01/19 09:33:29 adam Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -39,6 +39,7 @@ SUBDIR+=	bsdgrep-devel
 SUBDIR+=	btparse
 SUBDIR+=	catdoc
 SUBDIR+=	catdoc-tk
+SUBDIR+=	cawf
 SUBDIR+=	cdif
 SUBDIR+=	chasen
 SUBDIR+=	chasen-base
