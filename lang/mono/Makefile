@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2004/06/26 20:19:16 recht Exp $
+# $NetBSD: Makefile,v 1.27 2004/07/03 23:02:50 recht Exp $
 #
 
 DISTNAME=	mono-1.0
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://mono2.ximian.com/archive/1.0/
 
