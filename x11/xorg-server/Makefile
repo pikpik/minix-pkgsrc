@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/27 17:26:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.13 2005/01/07 16:57:36 reed Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		xorg-server-${XORG_VER}
@@ -49,11 +49,8 @@ SUBST_MESSAGE.stubs=	"Fixing stubs Makefile."
 USE_PERL5=	build # Yeah, we need this :-)
 .endif
 
-.if !empty(MACHINE_PLATFORM:MNetBSD-*-x86_64)
-PLIST_SUBST+=		NOT_X86_64="@comment "
-.else
-PLIST_SUBST+=		NOT_X86_64=""
-.endif
+BUILDLINK_FILES.xorg-libs+=	${X11ROOT_PREFIX}/lib/X11/config/*
+.include "options.mk"
 
 post-install:
 	${CHMOD} a+r ${X11ROOT}/bin/Xorg
