@@ -25,3 +25,5 @@ bin/xxx
 bin/yahoo
 etc/surfraw_elvi.list
 etc/surfraw.conf
+share/doc/surfraw/README
+@dirrm share/doc/surfraw

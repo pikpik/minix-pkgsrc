@@ -11,4 +11,6 @@ HOMEPAGE=	http://surfraw.sourceforge.net/
 
 GNU_CONFIGURE=	yes
 
-.include "../../mk/bsd.pkg.mk"
+post-install:
+        ${INSTALL_DATA_DIR} ${PREFIX}/share/doc/surfraw
+        ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/surfraw
