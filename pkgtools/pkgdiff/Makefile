@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2003/07/16 01:38:26 grant Exp $
+# $NetBSD: Makefile,v 1.39 2003/07/17 22:52:17 grant Exp $
 #
 
-DISTNAME=	pkgdiff-0.112
+DISTNAME=	pkgdiff-0.113
 WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
