@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.129 2002/04/21 11:25:46 rh Exp $
+# $NetBSD: Makefile,v 1.130 2002/04/21 11:28:50 rh Exp $
 #
 
 COMMENT=	System utilities
@@ -9,6 +9,11 @@ SUBDIR+=	amanda-client
 SUBDIR+=	amanda-common
 SUBDIR+=	amanda-plot
 SUBDIR+=	amanda-server
+SUBDIR+=	amanda-dev
+SUBDIR+=	amanda-dev-client
+SUBDIR+=	amanda-dev-common
+SUBDIR+=	amanda-dev-plot
+SUBDIR+=	amanda-dev-server
 SUBDIR+=	apcupsd
 SUBDIR+=	aperture
 SUBDIR+=	asapm
