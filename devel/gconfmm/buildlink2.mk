@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2003/12/13 00:45:22 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2004/01/03 18:49:38 reed Exp $
 #
 # This Makefile fragment is included by packages that use gconfmm.
 #
@@ -24,7 +24,6 @@ BUILDLINK_FILES.gconfmm+=	lib/pkgconfig/gconfmm-2.0.pc
 
 .include "../../devel/GConf2/buildlink2.mk"
 .include "../../devel/libsigc++/buildlink2.mk"
-.include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../x11/gtkmm/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	gconfmm-buildlink

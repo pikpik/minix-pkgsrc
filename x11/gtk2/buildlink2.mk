@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.9 2003/12/13 00:45:26 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.10 2004/01/03 18:49:57 reed Exp $
 
 .if !defined(GTK2_BUILDLINK2_MK)
 GTK2_BUILDLINK2_MK=	# defined
@@ -23,7 +23,6 @@ USE_X11=	YES
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/glib2/buildlink2.mk"
 .include "../../devel/pango/buildlink2.mk"
-.include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
