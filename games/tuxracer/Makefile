@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:55:05 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/13 13:51:53 wiz Exp $
 #
 
 DISTNAME=	tuxracer-0.61
@@ -31,6 +31,7 @@ post-install:
 		${FIND} . -type f -exec ${CHMOD} 444 {} \;
 
 .include "../../audio/SDL_mixer/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../lang/tcl/buildlink2.mk"
 
 .include "../../mk/pthread.buildlink2.mk"
