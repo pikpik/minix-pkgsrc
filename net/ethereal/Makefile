@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2001/03/27 03:20:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.45 2001/04/30 04:16:10 jlam Exp $
 #
 
-ETHEREAL_VERSION=	0.8.16
+ETHEREAL_VERSION=	0.8.18
 DISTNAME=		ethereal-${ETHEREAL_VERSION}
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ethereal.com/pub/ethereal/ \
