@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/12/12 01:30:39 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2001/02/16 15:51:47 wiz Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -20,6 +20,7 @@ SUBDIR+=	lmbench
 SUBDIR+=	nsieve
 SUBDIR+=	paranoia
 SUBDIR+=	postmark
+SUBDIR+=	ttcp
 SUBDIR+=	whetstone
 SUBDIR+=	xengine
 

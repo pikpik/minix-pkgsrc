@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2001/01/27 11:29:48 enami Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/17 18:19:48 wiz Exp $
 
 DISTNAME=	ttcp
 PKGNAME=	${DISTNAME}-1.12
-CATEGORIES=	net benchmarks
+CATEGORIES=	benchmarks net
 MASTER_SITES=	http://www.ccci.com/tools/ttcp/
 EXTRACT_SUFX=	.tar.Z
 
