@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1998/08/20 15:17:21 tsarna Exp $
+# $NetBSD: Makefile,v 1.14 1998/09/28 10:05:05 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/05/22 07:53:29 tg Exp
 #
 
@@ -15,3 +15,6 @@ GNU_CONFIGURE=	yes
 INFO_FILES=	wget.info
 
 .include "../../mk/bsd.pkg.mk"
+
+foo:
+	echo ${DISTFILES}
