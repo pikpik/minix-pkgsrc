@@ -1,3 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/09/30 10:26:10 seb Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:23:24 zuntum Exp $
 bin/exctags
+bin/exetags
+include/readtags.h
+lib/readtags.o
 man/man1/exctags.1
+man/man1/exetags.1
