@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.9 2003/06/23 14:23:17 jschauma Exp $
+# $NetBSD: Makefile.common,v 1.10 2003/07/17 21:44:12 grant Exp $
 #
 
 DISTNAME=		gwydion-dylan-${DYLAN_VERSION}
@@ -15,7 +15,7 @@ MASTER_SITES=		ftp://berlin.ccc.de/pub/gd/src/	\
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gwydiondylan.org/
-COMMENT=		functional language
+COMMENT=		Functional language
 
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes
