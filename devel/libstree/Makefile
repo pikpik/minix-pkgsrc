@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/04 04:52:46 gson Exp $
+# $NetBSD: Makefile,v 1.2 2004/06/12 04:32:12 grant Exp $
 #
 
-DISTNAME=	libstree-0.3.0
+DISTNAME=	libstree-0.4.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cl.cam.ac.uk/~cpk25/downloads/
 
