@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.511 2004/06/30 11:25:38 shannonjr Exp $
+# $NetBSD: Makefile,v 1.512 2004/07/04 14:01:06 drochner Exp $
 #
 
 COMMENT=	Development utilities
 
+SUBDIR+=	ArX
 SUBDIR+=	GConf
 SUBDIR+=	GConf2
 SUBDIR+=	GConf2-ui
@@ -135,8 +136,8 @@ SUBDIR+=	gindent
 SUBDIR+=	glade
 SUBDIR+=	glade2
 SUBDIR+=	glib
-SUBDIR+=	glibmm24
 SUBDIR+=	glib2
+SUBDIR+=	glibmm24
 SUBDIR+=	global
 SUBDIR+=	gmake
 SUBDIR+=	gmp
@@ -201,8 +202,8 @@ SUBDIR+=	libg++
 SUBDIR+=	libgail-gnome
 SUBDIR+=	libgetopt
 SUBDIR+=	libglade
-SUBDIR+=	libglademm24
 SUBDIR+=	libglade2
+SUBDIR+=	libglademm24
 SUBDIR+=	libgnome
 SUBDIR+=	libgnomemm26
 SUBDIR+=	libgnomeui
