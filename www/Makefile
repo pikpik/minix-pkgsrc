@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.127 2001/04/01 20:39:59 zuntum Exp $
+# $NetBSD: Makefile,v 1.128 2001/04/15 02:43:08 jwise Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -112,6 +112,7 @@ SUBDIR+=	urlget
 SUBDIR+=	w3
 SUBDIR+=	w3c-httpd
 SUBDIR+=	w3m
+SUBDIR+=	w3m-m17n
 SUBDIR+=	waplet
 SUBDIR+=	web500gw
 SUBDIR+=	webalizer
