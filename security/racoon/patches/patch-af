@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1 2001/08/02 12:44:18 itojun Exp $
+
+make it compile on 1.5.x
 
 --- ../libipsec/pfkey_dump.c-	Thu Aug  2 21:38:21 2001
 +++ ../libipsec/pfkey_dump.c	Thu Aug  2 21:38:34 2001
