@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/04/22 10:32:24 salo Exp $
+# $NetBSD: Makefile,v 1.21 2003/04/27 11:42:13 salo Exp $
 #
 
 DISTNAME=	nmap-3.26
@@ -6,7 +6,7 @@ CATEGORIES=	net security
 MASTER_SITES=	http://www.insecure.org/nmap/dist/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	salo@netbsd.org
 HOMEPAGE=	http://www.insecure.org/nmap/
 COMMENT=	Network/port scanner with OS detection
 
