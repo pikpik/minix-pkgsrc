@@ -1,4 +1,4 @@
-$NetBDS$
+$NetBSD$
 
 --- plug-ins/common/Makefile.in.orig	Thu Nov 25 21:32:25 1999
 +++ plug-ins/common/Makefile.in	Tue Nov 30 15:27:38 1999
