@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.13 1999/08/02 11:35:28 sakamoto Exp $
+# $NetBSD: Makefile,v 1.14 1999/08/02 11:41:38 sakamoto Exp $
 #
 
     SUBDIR += a2ps
     SUBDIR += ack
     SUBDIR += canna-lib
     SUBDIR += canna-server
+    SUBDIR += canuum
     SUBDIR += chasen
     SUBDIR += freewnn-lib
     SUBDIR += freewnn-server
