@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aw,v 1.1 1999/12/25 05:28:36 kim Exp $
 
 --- canohost.c.orig	Wed May 12 07:19:24 1999
 +++ canohost.c	Fri Dec 24 21:50:38 1999

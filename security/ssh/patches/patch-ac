@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Makefile.in.orig	Wed May 12 13:19:31 1999
-+++ Makefile.in	Sun Jan 23 00:22:03 2000
+--- Makefile.in-	Wed May 12 20:19:31 1999
++++ Makefile.in	Mon Mar 20 09:41:02 2000
 @@ -264,7 +264,7 @@
  CFLAGS 		= @CFLAGS@
  LDFLAGS		= @LDFLAGS@
