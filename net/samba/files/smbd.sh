@@ -1,18 +1,18 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: smbd.sh,v 1.1 2001/02/04 15:29:59 tron Exp $
 #
 # PROVIDE: smbd
 # REQUIRE: nmbd
 
 name="smbd"
 command="@PREFIX@/sbin/${name}"
-command_args="-D"
+smbd_flags="-D"
 
 if [ ! -d /etc/rc.d ]
 then
 	@ECHO@ -n ' ${name}'
-	exec ${command} ${command_args}
+	exec ${command} ${smbd_flags} ${command_args}
 fi
 
 . /etc/rc.subr
