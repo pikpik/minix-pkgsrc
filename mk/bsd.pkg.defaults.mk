@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.35 2002/01/31 21:18:37 jlam Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.36 2002/02/04 10:32:01 martti Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1123,11 +1123,6 @@ SDIST_PAWD?= pwd
 # Used in squid to set the configuration directory.
 # Possible: any valid directory
 # Default: ${PREFIX}/etc/squid
-
-SSH_CONF_DIR?= /etc
-# Used in ssh and openssh to set the configuration directory.
-# Possible: any valid directory
-# Default: /etc
 
 SSH_RSHPATH?= /usr/bin/rsh
 # Used in ssh to specify standard rsh path
