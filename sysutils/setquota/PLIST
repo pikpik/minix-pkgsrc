@@ -1,0 +1,5 @@
+@comment $NetBSD$
+man/man8/getquota.8
+man/man8/setquota.8
+sbin/getquota
+sbin/setquota
