@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 1998/01/19 01:16:33 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.4 1998/01/24 03:16:52 hubertf Exp $
 bin/tracker
 bin/randomize
 etc/compression_methods
@@ -89,3 +89,5 @@ share/doc/tracker/splitmod.readme
 share/doc/tracker/readme
 share/doc/tracker/protracker.fmt
 share/doc/tracker/FAQ
+@dirrm share/doc/tracker/Html
+@dirrm share/doc/tracker
