@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/08/31 10:38:49 rh Exp $
+# $NetBSD: Makefile,v 1.8 2000/08/31 23:21:44 jwise Exp $
 # FreeBSD Id: Makefile,v 1.6 1998/08/07 23:56:12 asami Exp
 #
 
@@ -10,6 +10,7 @@ MASTER_SITES=	ftp://ftp.sgi.com/sgi/fax/contrib/tkhylafax/ \
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.elgro.demon.co.uk/resources.html
+COMMENT=	Tcl/tk interface to Sam Leffler's fax package
 
 DEPENDS+=	hylafax>=4.1b2:../../comms/hylafax
 DEPENDS+=	tk-8.3.2:../../x11/tk

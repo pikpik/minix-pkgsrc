@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/11/08 17:47:14 itojun Exp $
+# $NetBSD: Makefile,v 1.11 2000/11/09 14:17:06 itojun Exp $
 #
 
 DISTNAME=		jpilot-0.98.1
@@ -7,6 +7,7 @@ MASTER_SITES=		http://jpilot.linuxave.net/
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://jpilot.linuxave.net/
+COMMENT=		desktop organizer application for the palm pilot
 
 BUILD_DEPENDS+=		msgfmt:../../devel/gettext
 DEPENDS+=		gtk+>=1.2.0:../../x11/gtk

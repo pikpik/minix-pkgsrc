@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/07 19:05:20 skrll Exp $
 #
 
 DISTNAME=       bbcim095-5
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.nvg.ntnu.no/bbc/util/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	skrll@netbsd.org
+COMMENT=	file and diskimage conversion utility for BBC Micro software
 
 BUILD_DEPENDS+=	unzip:../../archivers/unzip
 

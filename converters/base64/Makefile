@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/16 18:18:19 rh Exp $
 #
 
 DISTNAME=	base64
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.fourmilab.ch/webtools/base64/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.fourmilab.ch/webtools/base64/
+COMMENT=	encode and decode base64 files
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/base64 ${PREFIX}/bin

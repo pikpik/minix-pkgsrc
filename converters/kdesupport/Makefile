@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/08/25 08:26:07 tron Exp $
+# $NetBSD: Makefile,v 1.36 2000/11/08 15:09:36 abs Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/11/05 04:19:46 asami Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.kde.org/
+COMMENT=	Mime library for the KDE integrated X11 desktop
 
 USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/admin/ltconfig

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/04/01 13:38:43 agc Exp $
+# $NetBSD: Makefile,v 1.14 2000/08/30 19:06:40 jwise Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/24 21:43:45 jseger Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	http://www.informatik.uni-frankfurt.de/~fp/uudeview/Apps/frank/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.informatik.uni-frankfurt.de/~fp/uudeview/
+COMMENT=	X11 program for uu/xx/Base64/BinHex de-/encoding
 
 DEPENDS+=	tk-8.3.2:../../x11/tk
 DEPENDS+=	uulib-0.5.13:../../converters/uulib

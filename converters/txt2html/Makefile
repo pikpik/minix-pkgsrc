@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/20 14:53:08 wennmach Exp $
 
 DISTNAME=	txt2html-1.28
 CATEGORIES=	converters www
@@ -6,6 +6,7 @@ MASTER_SITES=	http://www.aigeek.com/txt2html/
 
 MAINTAINER=	wennmach@netbsd.org
 HOMEPAGE=	http://www.aigeek.com/txt2html/index.html
+COMMENT=	Text to HTML converter
 
 NO_BUILD=	# defined
 USE_PERL5=	# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/11/11 17:49:24 tron Exp $
+# $NetBSD: Makefile,v 1.8 2000/11/16 18:26:09 wiz Exp $
 #
 
 DISTNAME=		wv-0.6.0
@@ -7,6 +7,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wvware/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.wvWare.com/
+COMMENT=		Microsoft Word 6, 7, and 8 (95/97/2000) doc to HTML/LaTeX converter
 
 DEPENDS+=		libwmf>=0.1.17nb1:../../graphics/libwmf
 DEPENDS+=		ImageMagick>=5.2.2:../../graphics/ImageMagick

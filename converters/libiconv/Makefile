@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/01/01 17:29:20 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/12 19:24:39 tron Exp $
 #
 
 DISTNAME=		libiconv-1.5
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.ilog.fr/pub/Users/haible/gnu/
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://clisp.cons.org/~haible/packages-libiconv.html
+COMMENT=		character set conversion library
 
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/04/14 21:39:01 tron Exp $
+# $NetBSD: Makefile,v 1.7 2000/01/10 20:54:26 rh Exp $
 #
 
 DISTNAME=		recode-3.5
@@ -7,6 +7,7 @@ MASTER_SITES=		${MASTER_SITE_GNU:=recode/}
 
 MAINTAINER=		kleink@netbsd.org
 HOMEPAGE=		http://www.gnu.org/software/recode/recode.html
+COMMENT=		Convert files between character sets and usages
 
 GNU_CONFIGURE=		yes
 
