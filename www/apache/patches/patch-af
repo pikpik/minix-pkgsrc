@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- src/modules/standard/mod_include.c.orig	Thu Sep 24 10:06:42 1998
-+++ src/modules/standard/mod_include.c	Thu Dec  3 17:24:12 1998
++++ src/modules/standard/mod_include.c	Fri Dec  4 10:51:50 1998
 @@ -92,7 +92,11 @@
  #include "http_log.h"
  #include "http_main.h"
@@ -42,7 +42,7 @@ $NetBSD$
 +    char cmdbuf[40] = "include::";
 +
 +    strncat(cmdbuf, cmd, 30);
-+    ap_hook_configure(cmdbuf, AP_HOOK_SIG4(int,ptr,ptr,ptr), AP_HOOK_DECLINE(-32767));
++    ap_hook_configure(cmdbuf, AP_HOOK_SIG5(int,ptr,ptr,ptr,ptr), AP_HOOK_DECLINE(-32767));
 +    ap_hook_register(cmdbuf, func, NULL);
 +
 +    return 0;
@@ -57,7 +57,7 @@ $NetBSD$
 +		char cmdbuf[40] = "include::";
 +
 +		strncat(cmdbuf, directive, 30);
-+		if (ap_hook_call(cmdbuf, &ret, f, r, error) == TRUE)
++		if (ap_hook_call(cmdbuf, &ret, f, r, error, timefmt) == TRUE)
 +		    continue;
 +
                  ap_log_rerror(APLOG_MARK, APLOG_NOERRNO|APLOG_ERR, r,
