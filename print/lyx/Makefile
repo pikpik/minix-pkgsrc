@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/04/22 14:22:47 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/24 09:20:37 agc Exp $
 # FreeBSD Id: Makefile,v 1.14 1998/02/14 16:46:50 andreas Exp
 #
 
@@ -19,7 +19,5 @@ ONLY_FOR_ARCHS=	arm32 i386 m68k sparc
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-extra-lib=${X11BASE}/lib --with-extra-inc="${X11BASE}/include ${X11BASE}/include/X11"
-
-MAN1=		lyx.1
 
 .include "../../mk/bsd.pkg.mk"

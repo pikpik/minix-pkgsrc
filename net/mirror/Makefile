@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:39 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:29 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.6 1996/12/01 01:22:54 obrien Exp 
 #
 
@@ -12,7 +12,6 @@ USE_PERL5=	yes
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
-MAN1=		mirror.1 mirrormaster.1
 
 post-configure:
 	cd ${WRKSRC} ; ${SED} \

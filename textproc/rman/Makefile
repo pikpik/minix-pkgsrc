@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/20 11:56:34 frueauf Exp $
+# $NetBSD: Makefile,v 1.8 1998/05/06 09:51:02 agc Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
@@ -11,7 +11,6 @@ MAINTAINER=		packages@netbsd.org
 
 NO_CDROM=		"License required"
 MIRROR_DISTFILE=	no
-MAN1=			rman.1
 
 post-install:
 	@strip ${PREFIX}/bin/rman

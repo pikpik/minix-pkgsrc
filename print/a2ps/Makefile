@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/05/09 01:51:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 1998/05/09 12:01:57 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.12 1998/02/15 21:24:42 steve Exp
 #
 
@@ -10,7 +10,6 @@ MASTER_SITES=	http://www-inf.enst.fr/~demaille/ftp/a2ps/
 MAINTAINER=	packages@netbsd.org
 
 GNU_CONFIGURE=	yes
-MAN1=		a2ps.1 ogonkify.1
 
 STRIP=
 CONFIGURE_ARGS+=	--with-medium=${PAPERSIZE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/04/27 19:54:25 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 1998/05/14 09:23:58 pk Exp $
 #
 
 DISTNAME=	arpwatch-2.0.2
@@ -9,7 +9,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	bouyer@netbsd.org
 
 GNU_CONFIGURE=	yes
-MAN8=		arpwatch.8 arpsnmp.8
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/arpwatch.8 ${PREFIX}/man/man8
