@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:40 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/14 18:26:28 jmmv Exp $
 #
 
 DISTNAME=	cairo-0.1.17
@@ -19,6 +19,7 @@ GNU_CONFIGURE=		yes
 BUILDLINK_DEPENDS.freetype2=  freetype2>=2.1.5
 .include "../../graphics/freetype2/buildlink3.mk"
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/libpixman/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
