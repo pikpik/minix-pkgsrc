@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.114 2002/06/15 21:20:01 cjep Exp $
+# $NetBSD: Makefile,v 1.115 2002/06/17 10:33:52 wiz Exp $
 
-DISTNAME=	fetchmail-5.9.11
+DISTNAME=	fetchmail-5.9.13
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/ \
 		http://www.tuxedo.org/~esr/fetchmail/ \
