@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/12/22 17:27:28 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/01/09 17:07:55 cjep Exp $
 #
 
 DISTNAME=	textutils-2.0
@@ -26,5 +26,6 @@ BUILD_DEFS+=	GNU_PROGRAM_PREFIX
 post-install:
 	${INSTALL_INFO} ${PREFIX}/info/textutils.info ${PREFIX}/info/dir
 
+.include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
