@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/30 10:49:25 grant Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/05 09:29:11 simonb Exp $
 
-DISTNAME=		mpc-0.10.3
+DISTNAME=		mpc-0.11.1
 CATEGORIES=		audio
 MASTER_SITES=		http://mercury.chem.pitt.edu/~shank/
 
