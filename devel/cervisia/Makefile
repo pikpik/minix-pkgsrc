@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2000/07/14 16:04:20 agc Exp $
+# $NetBSD: Makefile,v 1.8 2000/07/15 20:39:16 agc Exp $
 #
 
 DISTNAME=	cervisia-0.5.0
 CATEGORIES=	kde devel
-MASTER_SITES=	ftp://linde.physik.hu-berlin.de/pub/bernd/cervisia/ \
+MASTER_SITES=	http://download.sourceforge.net/cervisia/ \
+		ftp://ftp.sourceforge.net/pub/cervisia/ \
+		ftp://linde.physik.hu-berlin.de/pub/bernd/cervisia/ \
 		ftp://ftp.kde.org/pub/kde/unstable/apps/utils/
 
 MAINTAINER=	hubertf@netbsd.org
