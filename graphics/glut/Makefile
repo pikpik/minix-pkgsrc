@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/05/31 05:54:46 tron Exp $
+# $NetBSD: Makefile,v 1.8 2001/07/06 00:49:06 fredb Exp $
 #
 
 .include "../Mesa/Makefile.common"
@@ -18,6 +18,7 @@ COMMENT=		GLUT Graphics library similar to SGI's OpenGL
 CONFLICTS+=		Mesa-glx-*
 CONFLICTS+=		Mesa<3.2.1
 
+USE_BUILDLINK_ONLY=	yes
 USE_X11BASE=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
