@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/05/29 20:08:41 salo Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:52:00 grant Exp $
 #
 
-DISTNAME=	vsftpd-1.2.0
+DISTNAME=	vsftpd-1.2.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://vsftpd.beasts.org/users/cevans/
 
@@ -12,9 +12,10 @@ COMMENT=	FTP server that aims to be very secure
 USE_BUILDLINK2=	YES
 USE_PKGINSTALL=	YES
 
-ALL_TARGET=		vsftpd
 PKG_SYSCONFSUBDIR=	vsftpd
-RCD_SCRIPTS=		vsftpd
+
+ALL_TARGET=	vsftpd
+RCD_SCRIPTS=	vsftpd
 
 VSFTPD_USER?=	vsftpd
 VSFTPD_GROUP?=	vsftpd
