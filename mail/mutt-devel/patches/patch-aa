@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- intl/Makefile.in.orig	Thu Jun  7 22:00:05 2001
++++ intl/Makefile.in	Sun Jul 22 16:58:54 2001
+@@ -31,7 +31,7 @@
+ libdir = @libdir@
+ includedir = @includedir@
+ datadir = @datadir@
+-localedir = $(datadir)/locale
++localedir = $(prefix)/$(PKGLOCALEDIR)/locale
+ gettextsrcdir = $(datadir)/gettext/intl
+ aliaspath = $(localedir)
+ subdir = intl
