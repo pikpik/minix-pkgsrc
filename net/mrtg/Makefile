@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.36 2002/11/28 10:18:14 tron Exp $
+# $NetBSD: Makefile,v 1.37 2003/04/08 09:50:22 martti Exp $
 
 DISTNAME=	mrtg-2.9.28
 PKGNAME=	mrtg-2.9.28
 CATEGORIES=	net
-MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/ \
+MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		http://gd.tuwien.ac.at/infosys/network/tools/mrtg/pub/ \
 		ftp://mrtg.hdl.com/ \
 		ftp://ftp.sunet.se/pub/network/monitoring/mrtg/ \
@@ -20,7 +20,7 @@ DEPENDS=	gd>=1.8.4nb1:../../graphics/gd
 
 USE_BUILDLINK2=	YES
 USE_PERL5=	YES
-PERL5_REQD=	5.6.0
+PERL5_REQD=	5.6.1
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS= --with-gd-inc=${LOCALBASE}/include \
