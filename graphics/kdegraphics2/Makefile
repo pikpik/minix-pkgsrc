@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/23 21:50:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/26 02:27:42 wiz Exp $
 
 DISTNAME=	kdegraphics-2.2.2
 PKGREVISION=	7
@@ -11,15 +11,15 @@ BUILD_DEPENDS+=	qt2-designer-kde>=2.3.1nb2:../../x11/qt2-designer-kde
 #DEPENDS+=	gPhoto2
 #DEPENDS+=	gpio
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 CONFIGURE_ARGS+=	--without-kamera	# requires gPhoto2, gpio
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
-.include "../../graphics/tiff/buildlink2.mk"
-.include "../../x11/kde2/buildlink2.mk"
-.include "../../x11/kdebase2/buildlink2.mk"
+.include "../../graphics/tiff/buildlink3.mk"
+.include "../../x11/kde2/kde2.mk"
+.include "../../x11/kdebase2/buildlink3.mk"
 .include "../../mk/ghostscript.mk"
 
 .include "../../mk/bsd.pkg.mk"
