@@ -1,2 +1,4 @@
-You might have a look at /usr/pkg/share/jed/lib/* and install a
+$NetBSD$
+
+You might want to have a look at @PREFIX@/share/jed/lib/* and install a
 file defaults.sl for site defaults there.
