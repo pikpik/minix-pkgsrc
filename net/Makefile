@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.295 2002/04/25 15:20:36 tron Exp $
+# $NetBSD: Makefile,v 1.296 2002/04/28 22:15:48 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -133,6 +133,7 @@ SUBDIR+=	nsd
 SUBDIR+=	nslint
 SUBDIR+=	ntop
 SUBDIR+=	ntp4
+SUBDIR+=	openag
 SUBDIR+=	openh323
 SUBDIR+=	openslp
 SUBDIR+=	p5-IO-Interface
