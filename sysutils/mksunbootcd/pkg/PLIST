@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/mksunbootcd
+man/man8/mksunbootcd.8
+man/cat8/mksunbootcd.0
