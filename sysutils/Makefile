@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.196 2003/06/26 03:49:54 salo Exp $
+# $NetBSD: Makefile,v 1.197 2003/06/27 12:02:23 agc Exp $
 
 COMMENT=	System utilities
 
@@ -32,6 +32,7 @@ SUBDIR+=	checkpassword
 SUBDIR+=	coreutils
 SUBDIR+=	cpogm
 SUBDIR+=	cpuburn
+SUBDIR+=	cpuid
 SUBDIR+=	crashme
 SUBDIR+=	daemontools
 SUBDIR+=	depot
