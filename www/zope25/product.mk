@@ -1,4 +1,4 @@
-# $NetBSD: product.buildlink.mk,v 1.1 2002/09/04 14:50:43 drochner Exp $
+# $NetBSD: product.mk,v 1.1 2002/09/12 11:01:37 drochner Exp $
 
 DIST_SUBDIR=	zope
 DEPENDS+=	zope-2.5.*:../../www/zope25
@@ -29,4 +29,4 @@ do-install: ${ZOPE_COPYPRODUCT}
 	 ${PYTHONBIN} ${ZOPEDIR}/inst/compilezpy.py || true)
 .endfor
 
-.include "../../lang/python/application.buildlink.mk"
+.include "../../lang/python/application.mk"
