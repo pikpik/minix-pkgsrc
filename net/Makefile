@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.477 2004/06/26 11:02:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.478 2004/07/03 01:00:50 minskim Exp $
 #
 
 COMMENT=	Networking tools
@@ -114,6 +114,7 @@ SUBDIR+=	gtksamba
 SUBDIR+=	gtm
 SUBDIR+=	hesiod
 SUBDIR+=	hf6to4
+SUBDIR+=	hlfl
 SUBDIR+=	host
 SUBDIR+=	howl
 SUBDIR+=	hping
