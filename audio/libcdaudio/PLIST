@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:17:05 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/01/04 18:26:17 xtraeme Exp $
 bin/libcdaudio-config
 include/cdaudio.h
 lib/libcdaudio.a
@@ -6,4 +6,5 @@ lib/libcdaudio.la
 lib/libcdaudio.so
 lib/libcdaudio.so.1
 lib/libcdaudio.so.1.0
+lib/pkgconfig/libcdaudio.pc
 share/aclocal/libcdaudio.m4
