@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/02/09 15:22:35 tron Exp $
+# $NetBSD: Makefile,v 1.8 2000/02/09 20:20:53 tron Exp $
 
 DISTNAME=		ClanLib-0.2.2
 CATEGORIES=		graphics games devel x11
@@ -29,6 +29,7 @@ CONFIGURE_ARGS+=	--enable-clansound
 CONFIGURE_ARGS+=	--enable-dyn
 CONFIGURE_ARGS+=	--enable-network
 CONFIGURE_ARGS+=	--enable-mesa
+CONFIGURE_ARGS+=	--disable-ggi
 
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"# CC='cc ${CFLAGS} ${LDFLAGS}'
 MAKE_ENV+=		LDFLAGS="${LDFLAGS}"
