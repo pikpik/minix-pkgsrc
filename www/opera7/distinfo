@@ -2,3 +2,5 @@ $NetBSD: distinfo,v 1.4 2003/10/24 22:00:08 jdolecek Exp $
 
 SHA1 (./opera-7.22-20031103.1-static-qt.i386-en.rpm) = a7985aad2f063e503b76604b945bb6971f452098
 Size (./opera-7.22-20031103.1-static-qt.i386-en.rpm) = 5133873 bytes
+SHA1 (opera-7.22-20031103.1-static-qt-sol8-sparc-local-en.tar.bz2) = 3a52330de60b716c163a7c9033d75c463b7abac3
+Size (opera-7.22-20031103.1-static-qt-sol8-sparc-local-en.tar.bz2) = 5845800 bytes
