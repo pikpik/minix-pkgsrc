@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/02/05 16:11:47 adrianp Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/02 13:38:31 wiz Exp $
 #
 
 DISTNAME=	xipdump-1.5.4
@@ -18,8 +18,10 @@ PLIST_SRC=	${WRKDIR}/PLIST
 
 USE_X11BASE=	yes
 GNU_CONFIGURE=	yes
-CFLAGS+=	-I${PREFIX}/include ${LIBNET_CFLAGS}
+CFLAGS+=	-I${PREFIX}/include ${LIBNET_CFLAGS_CMD:sh}
 LIBS=		-L${PREFIX}/lib -Wl,-R${PREFIX}/lib -lnet
+
+LIBNET_CFLAGS_CMD= ${BUILDLINK_PREFIX.libnet}/bin/libnet-config --defines
 
 post-build:
 	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
@@ -31,5 +33,3 @@ post-build:
 
 .include "../../devel/libnet/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
-
-LIBNET_CFLAGS!=	${LOCALBASE}/bin/libnet-config --defines
