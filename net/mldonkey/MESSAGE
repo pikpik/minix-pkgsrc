@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+This package provides a wrapper to ease mldonkey's startup. You should use
+it to run mldonkey: ${PREFIX}/bin/mldonkey
+
+Do NOT run this program as root.
+
+===========================================================================
