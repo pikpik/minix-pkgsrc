@@ -1,3 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/05 19:07:51 nathanw Exp $
 bin/daapd
 man/man8/daapd.8
+share/examples/daapd/daapd.conf
+@dirrm share/examples/daapd
