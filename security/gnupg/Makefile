@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2003/08/15 07:02:22 itojun Exp $
+# $NetBSD: Makefile,v 1.52 2003/08/25 21:25:24 itojun Exp $
 
 DISTNAME=	gnupg-1.2.3
 CATEGORIES=	security
@@ -24,6 +24,8 @@ USE_PKGLOCALEDIR=	yes
 USE_GMAKE=		yes
 CONFIGURE_ARGS+=	--enable-tiger --with-static-rnd=auto
 TEST_TARGET=		check
+
+USE_GNU_TOOLS+=		sed
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
