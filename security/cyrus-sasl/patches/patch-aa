@@ -32,3 +32,13 @@ $NetBSD$
  
    if test "$with_des" = no; then
      dnl if openssl is around, we might be able to use that for des
+@@ -694,6 +700,9 @@
+ 
+ LTLIBOBJS=`echo "$LIBOBJS" | sed 's/\.o/.lo/g'`
+ AC_SUBST(LTLIBOBJS)
++
++dnl Check for /dev/urandom
++AC_CHECK_FILE(/dev/urandom, AC_DEFINE_UNQUOTED(SASL_DEV_RANDOM, "/dev/urandom"))
+ 
+ AC_CHECK_HEADERS(getopt.h unistd.h crypt.h pwd.h shadow.h paths.h)
+ AC_C_CONST
