@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/06/08 18:01:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:13 tv Exp $
 #
 
 DISTNAME=	tkgate-1.6i
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://gadoid.ices.cmu.edu/pub/tkgate/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://www-2.cs.cmu.edu/~hansen/tkgate/
+HOMEPAGE=	http://www.tkgate.org/
 COMMENT=	Tcl/Tk based digital circuit editor and simulator
 
 BUILD_DEPENDS+=		bison>=1.35:../../devel/bison
