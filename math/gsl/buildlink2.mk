@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.4 2003/02/17 01:01:38 jtb Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/08/30 21:51:00 jtb Exp $
 
 .if !defined(GSL_BUILDLINK2_MK)
 GSL_BUILDLINK2_MK=              # defined
@@ -6,7 +6,6 @@ GSL_BUILDLINK2_MK=              # defined
 BUILDLINK_PACKAGES+=		gsl
 BUILDLINK_DEPENDS.gsl?=		gsl>=1.4
 BUILDLINK_PKGSRCDIR.gsl?=	../../math/gsl
-BUILDLINK_DEPMETHOD.gsl?=	build
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.gsl=gsl
 BUILDLINK_PREFIX.gsl_DEFAULT=	${LOCALBASE}
