@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2001/08/02 13:28:47 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:52:05 zuntum Exp $
 include/mpeg.h
 lib/libmpeg_lib.a
 lib/libmpeg_lib.la
