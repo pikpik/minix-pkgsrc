@@ -1,11 +1,8 @@
 $NetBSD$
 
-work around a c++ -O2 bug which is present on at least sparc 
-and pmax using egcs-1.1.1 
-
---- Makefile.in.orig	Sun Jan 26 16:15:58 2003
-+++ Makefile.in
-@@ -174,7 +174,17 @@
+--- Makefile.in.orig	2003-06-25 03:48:39.000000000 +0200
++++ Makefile.in	2003-07-12 19:11:41.000000000 +0200
+@@ -170,7 +170,17 @@
  
  lexor.o: lexor.cc parse.h
  
@@ -21,5 +18,5 @@ and pmax using egcs-1.1.1
 +	$(CXX_NOOPT) $(CPPFLAGS_NOOPT) $(CXXFLAGS_NOOPT) -MD -c $< -o $*.o
 +	mv $*.d dep/$*.d
  
- parse.h parse.cc: $(srcdir)/parse.y
+ parse.cc: $(srcdir)/parse.y
  	$(YACC) --verbose -t -p VL -d -o parse.cc $(srcdir)/parse.y
