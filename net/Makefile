@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.501 2004/10/20 22:59:40 manu Exp $
+# $NetBSD: Makefile,v 1.502 2004/10/28 17:01:21 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -244,6 +244,7 @@ SUBDIR+=	p5-Net-TFTP
 SUBDIR+=	p5-Net-Telnet
 SUBDIR+=	p5-Net-Telnet-Cisco
 SUBDIR+=	p5-Net-Z3950
+SUBDIR+=	p5-NetAddr-IP
 SUBDIR+=	p5-NetPacket
 SUBDIR+=	p5-RADIUS
 SUBDIR+=	p5-SNMP
