@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 1999/08/27 09:06:37 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/11/01 03:38:18 jlam Exp $
 #
 
 DISTNAME=	webalizer-1.30-04-src
 PKGNAME=	webalizer-1.30.04
 CATEGORIES=	www
-MASTER_SITES=	ftp://www.mrunix.net/webalizer/ \
+MASTER_SITES=	ftp://ftp.mrunix.net/webalizer/ \
 		ftp://webalizer.dexa.org/pub/webalizer/ \
 		http://gd.tuwien.ac.at/infosys/logeval/webalizer/
 EXTRACT_SUFX=	.tgz
