@@ -9,8 +9,11 @@ MAINTAINER=	packages@netbsd.org
 #HOMEPAGE=
 COMMENT=	front-end to CVS for emacs
 
-DEPENDS+= 	emacs-[0-9]*:../../editors/emacs
+DEPENDS+= 	emacs-20.*:../../editors/emacs
 DEPENDS+=	elib>=1.0:../../devel/elib
+
+CONFLICTS=	emacs-21.*
+CONFLICTS+=	emacs21
 
 .include "../../mk/bsd.prefs.mk"
 
