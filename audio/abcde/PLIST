@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/08/16 06:12:57 lukem Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:15:13 zuntum Exp $
 bin/abcde
 bin/cddb-tool
-etc/abcde.conf
+share/examples/abcde/abcde.conf
+@dirrm share/examples/abcde
 man/man1/abcde.1
 man/man1/cddb-tool.1
