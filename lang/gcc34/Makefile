@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/09/21 13:32:40 shannonjr Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/30 12:06:59 shannonjr Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -81,6 +81,7 @@ CONFIGURE_ARGS+=	--with-system-zlib
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-__cxa_atexit
 CONFIGURE_ARGS+=	--enable-long-long
+CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX}
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}
 MAKE_ENV+=		ICONVPREFIX=${BUILDLINK_PREFIX.iconv}
 
