@@ -1,6 +1,10 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/12/29 00:22:02 abs Exp $
 bin/BasiliskII
 man/man1/BasiliskII.1
 share/BasiliskII/keycodes
 share/BasiliskII/fbdevices
+share/doc/BasiliskII/README
+share/doc/BasiliskII/TECH
+share/doc/BasiliskII/TODO
+@dirrm share/doc/BasiliskII
 @dirrm share/BasiliskII

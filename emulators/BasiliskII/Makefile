@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2002/08/01 05:48:11 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/06 12:30:10 wiz Exp $
 #
 
 DISTNAME=	BasiliskII_src_31052001
 PKGNAME=	BasiliskII-0.9.1
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://iphcip1.physik.uni-mainz.de/~cbauer/
 
@@ -17,6 +18,12 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X11=	yes
 PTHREAD_OPTS+=	require
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/BasiliskII
+	${INSTALL_DATA} ${WRKSRC}/../../README ${PREFIX}/share/doc/BasiliskII/
+	${INSTALL_DATA} ${WRKSRC}/../../TECH ${PREFIX}/share/doc/BasiliskII/
+	${INSTALL_DATA} ${WRKSRC}/../../TODO ${PREFIX}/share/doc/BasiliskII/
 
 .include "../../audio/esound/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
