@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2003/10/29 11:55:27 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/03/29 08:16:38 snj Exp $
 
 DISTNAME=	getmail-3.2.2
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.qcc.ca/~charlesc/software/getmail-3.0/ \
 		http://www.qcc.ca/~charlesc/software/getmail-3.0/old-versions/
@@ -9,7 +10,6 @@ MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://www.qcc.ca/~charlesc/software/getmail-3.0/
 COMMENT=	POP3 mail retriever with reliable Maildir and command delivery
 
-NO_CONFIGURE=	YES
 NO_BUILD=	YES
 
 USE_PKGINSTALL=	YES
