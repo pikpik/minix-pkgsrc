@@ -1,1 +1,7 @@
-@comment $NetBSD: PLIST.solaris,v 1.2 2000/09/03 14:51:55 wiz Exp $
+@comment $NetBSD: PLIST.solaris,v 1.1 2001/11/01 01:22:32 zuntum Exp $
+lib/libcrypto.so
+lib/libcrypto.so.300
+lib/libcrypto.so.300.0
+lib/libssl.so
+lib/libssl.so.300
+lib/libssl.so.300.0
