@@ -1,4 +1,4 @@
-# $NetBSD: bsd.sites.mk,v 1.26 2004/12/15 14:38:53 tron Exp $
+# $NetBSD: bsd.sites.mk,v 1.27 2004/12/25 03:20:33 jlam Exp $
 #
 # Default MASTER_SITES
 
@@ -48,7 +48,7 @@ MASTER_SITE_GNUSTEP+=   \
 	ftp://ftp.easynet.nl/mirror/GNUstep/ \
 	http://ftp.easynet.nl/mirror/GNUstep/
 
-CPAN_MODULE_PATH?=	modules/by-module
+CPAN_MODULE_DIR?=	modules/by-module
 MASTER_SITE_PERL_CPAN+= \
 	ftp://cpan.pair.com/${CPAN_MODULE_PATH}/ \
 	ftp://mirrors.cloud9.net/mirrors/CPAN/${CPAN_MODULE_PATH}/ \
