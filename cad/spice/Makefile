@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/18 11:07:04 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/20 09:22:43 agc Exp $
 # FreeBSD Id: Makefile,v 1.10 1998/06/08 09:21:37 tg Exp
 #
 
@@ -33,7 +33,7 @@ do-build:
 	cd ${WRKSRC} ; util/build NetBSD default
 
 do-install:
-	cd ${WRKSRC} ; util/build NetBSD install 
+	cd ${WRKSRC} ; util/build NetBSD install
 	chmod a+rx ${PREFIX}/bin/spice3 ${PREFIX}/bin/nutmeg \
 	  ${PREFIX}/bin/sconvert ${PREFIX}/bin/help	\
 	  ${PREFIX}/bin/proc2mod ${PREFIX}/bin/multidec
