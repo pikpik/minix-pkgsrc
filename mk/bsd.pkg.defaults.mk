@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.275 2004/08/07 21:03:59 minskim Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.276 2004/08/09 22:37:34 seb Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -906,16 +906,6 @@ EXIM_USER?=	mail
 # Used in the exim package to specify the server user.
 # Possible: any user name
 # Default: mail
-
-EZMLM_IDX_USE_MYSQL?=	NO
-# Enable MySQL support in ezmlm-idx.
-# Possible: YES, NO
-# Default: NO
-
-EZMLM_IDX_USE_PGSQL?=	NO
-# Enable PostgreSQL support in ezmlm-idx.
-# Possible: YES, NO
-# Default: NO
 
 #FLUXBOX_USE_XINERAMA?=	NO
 # Compile flukebox with xinerama extensions
