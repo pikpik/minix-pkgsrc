@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/02/21 06:30:43 snj Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/01 20:09:35 tron Exp $
 
 DISTNAME=	xmradio-1.2
 CATEGORIES=	audio
@@ -14,14 +14,14 @@ ONLY_FOR_PLATFORM=	NetBSD-1.4[Y-Z]-* NetBSD-1.4Z[A-Z]-i386 \
 			NetBSD-1.5_ALPHA-i386 NetBSD-1.[5-9]*-* \
 			NetBSD-[2-9]*.*-*
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xmradio
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xmradio
 
-.include "../../graphics/xpm/buildlink2.mk"
-.include "../../mk/motif.buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
