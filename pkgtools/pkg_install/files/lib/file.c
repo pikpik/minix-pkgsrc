@@ -1,4 +1,4 @@
-/*	$NetBSD: file.c,v 1.1.1.1 2002/12/20 18:14:00 schmonz Exp $	*/
+/*	$NetBSD: file.c,v 1.2 2003/01/06 04:34:17 jschauma Exp $	*/
 
 #if 0
 #include <sys/cdefs.h>
@@ -6,7 +6,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: file.c,v 1.29 1997/10/08 07:47:54 charnier Exp";
 #else
-__RCSID("$NetBSD: file.c,v 1.1.1.1 2002/12/20 18:14:00 schmonz Exp $");
+__RCSID("$NetBSD: file.c,v 1.2 2003/01/06 04:34:17 jschauma Exp $");
 #endif
 #endif
 #endif
@@ -589,7 +589,11 @@ format_cmd(char *buf, size_t size, char *fmt, char *dir, char *name)
 
 	for (bufp = buf; (int) (bufp - buf) < size && *fmt;) {
 		if (*fmt == '%') {
-			switch (*++fmt) {
+			if (*++fmt != 'D' && name == NULL) {
+				cleanup(0);
+				errx(2, "no last file available for '%s' command", buf);
+			}
+			switch (*fmt) {
 			case 'F':
 				strnncpy(bufp, size - (int) (bufp - buf), name, strlen(name));
 				bufp += strlen(bufp);
