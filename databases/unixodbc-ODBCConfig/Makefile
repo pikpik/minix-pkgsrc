@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2002/09/20 21:36:11 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:16 wiz Exp $
 
 PKGNAME=		unixodbc-ODBCConfig-${ODBC_BASE_VERS}
 PKGREVISION=		2
 COMMENT=		GUI tool for unixODBC driver configuration
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_X11=		YES
 
 .include "../../databases/unixodbc/Makefile.common"
@@ -40,7 +40,7 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ODBCConfig/ODBCConfig ${PREFIX}/bin
 
-.include "../../databases/unixodbc/buildlink2.mk"
-.include "../../x11/qt2-libs/buildlink2.mk"
+.include "../../databases/unixodbc/buildlink3.mk"
+.include "../../x11/qt2-libs/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
