@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/28 17:09:21 uebayasi Exp $
 #
 
 DISTNAME=	acpica-unix-${ACPI_IASL_VERSION}
@@ -12,7 +12,7 @@ COMMENT=	Compiler of Intel ACPI CA - Unix Build Environment
 
 DEPENDS+=	bison-[0-9]*:../../devel/bison
 
-ACPI_IASL_VERSION=	20031203
+ACPI_IASL_VERSION=	20040311
 
 USE_GNU_TOOLS=	make
 
