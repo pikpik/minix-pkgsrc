@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2001/06/10 01:14:58 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/06/21 22:36:54 jlam Exp $
 #
 
-DISTNAME=	bzip2-1.0.1
+DISTNAME=	bzip2-1.0.2
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://sourceware.cygnus.com/pub/bzip2/v100/
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/bzip2/v102/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://sourceware.cygnus.com/bzip2/
