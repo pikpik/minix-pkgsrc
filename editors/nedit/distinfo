@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.3 2000/05/19 11:24:47 mjl Exp $
+$NetBSD$
 
-MD5 (nedit-5.1.1-src.tar.gz) = dba0970c60debada237ca852b5f57ec8
+SHA1 (nedit-5.1.1-src.tar.gz) = 29332e39f0d5b3beb62323ea54218571c3b75960
+Size (nedit-5.1.1-src.tar.gz) = 617036 bytes
 SHA1 (patch-aa) = 7387fb085a9a4cf19f033ecc73d79d3c29899e36
 SHA1 (patch-ab) = 1d566822879aa6519bea91acb03cdba139edd250

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:21:27 agc Exp $
+$NetBSD$
 
-MD5 (ssam-1.9.tar.gz) = 00d4b81c8c95e8bbad94b041203cd0d7
+SHA1 (ssam-1.9.tar.gz) = 6fee1e64d3cbf6bef72fe60798cc8ad7eab9260e
+Size (ssam-1.9.tar.gz) = 41186 bytes
 SHA1 (patch-aa) = 63872a665c11feaa03567115a64888f973c77c3e

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 2001/03/18 01:16:51 jun Exp $
+$NetBSD$
 
-MD5 (ng-1.4.3.tar.gz) = abf49d8472cdfc9187bb97a4fababc55
+SHA1 (ng-1.4.3.tar.gz) = b5200da6c41f0e4d1d232a1a0c9548f8a37a96e2
+Size (ng-1.4.3.tar.gz) = 586587 bytes
 SHA1 (patch-aa) = bae8b0302e29fb5fb828207616b69c8faa8bc3f0
