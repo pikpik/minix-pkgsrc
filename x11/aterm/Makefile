@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 17:06:15 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/07/09 22:17:12 zuntum Exp $
 #
 
-DISTNAME=	aterm-0.4.0
+DISTNAME=	aterm-0.4.2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aterm/}
 
