@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:14:54 tv Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/15 12:22:13 tv Exp $
 #
 
 DISTNAME=	kphotools-0.2.1
@@ -22,6 +22,9 @@ SUBST_MESSAGE.kphotools=	"Fixing /usr/share path."
 SUBST_FILES.kphotools=	src/GalleryThrd.cpp src/LogoWid.cpp src/LogoWid.ui src/StyleWid.ui.h
 SUBST_SED.kphotools=	-e 's|@kphotoolsdir@|${KDEDIR}/share/kde/apps/kphotools|'
 SUBST_STAGE.kphotools=	post-patch
+
+post-configure:
+	${_PKG_DEBUG}${_PKG_SILENT}${LN} -s ${FILESDIR}/pkgsrc_fixes.h ${BUILDLINK_DIR}/include/
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/imlib2/buildlink3.mk"
