@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2004/01/01 04:39:22 salo Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/02 20:17:44 salo Exp $
 #
 
-DISTNAME=	vsftpd-1.2.1
+DISTNAME=	vsftpd-1.2.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://vsftpd.beasts.org/users/cevans/
 
-MAINTAINER=	salo@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://vsftpd.beasts.org/
 COMMENT=	FTP server that aims to be very secure
 
@@ -31,9 +31,9 @@ CONF_FILES=	${EGDIR}/vsftpd.conf.default ${PKG_SYSCONFDIR}/vsftpd.conf
 MAKE_DIRS=	/var/chroot
 OWN_DIRS=	/var/chroot/vsftpd
 
-.if defined(USE_INET6) && !empty(USE_INET6:M[Yy][Ee][Ss])
+# XXX: This package doesn't work on non-IPv6 enabled operating systems.
+#
 BUILD_DEFS+=	USE_INET6
-.endif
 
 post-patch:
 	@cd ${WRKSRC} && \
