@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/11/27 04:08:32 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.2 1999/12/04 11:54:31 tron Exp $
 bin/gimp
 bin/gimptool
 include/libgimp/gimp.h
@@ -53,7 +53,6 @@ lib/gimp/1.1/plug-ins/faxg3
 lib/gimp/1.1/plug-ins/fits
 lib/gimp/1.1/plug-ins/flame
 lib/gimp/1.1/plug-ins/fp
-lib/gimp/1.1/plug-ins/helpbrowser
 lib/gimp/1.1/plug-ins/gap_plugins
 lib/gimp/1.1/plug-ins/gap_filter
 lib/gimp/1.1/plug-ins/gdyntext
