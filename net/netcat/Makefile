@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2001/01/12 00:44:23 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 18:19:13 wiz Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/ \
