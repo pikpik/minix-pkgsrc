@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2003/07/13 13:50:26 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2003/07/14 08:22:09 wiz Exp $
 
-DISTNAME=	kdemultimedia-3.1.2
-PKGREVISION=	2
+DISTNAME=	kdemultimedia-3.1.3
 CATEGORIES=	audio
 COMMENT=	Audio tools for the KDE integrated X11 desktop
 
-.include "../../x11/kde3/Makefile.kde3"
+.include "../../meta-pkgs/kde3/Makefile.kde3"
 
 DEPENDS+=	xanim>=2.80.0:../../graphics/xanim
 
@@ -34,11 +33,11 @@ FOO_MAIN_FILES= \
 	kmix/kmixctrl_main.cpp \
 	noatun/noatun_main.cpp
 
-.include "../../x11/kde3/Makefile.foo_main"
+.include "../../meta-pkgs/kde3/Makefile.foo_main"
 
 .include "../../audio/arts/buildlink2.mk"
 .include "../../graphics/xine-lib/buildlink2.mk"
-.include "../../x11/kde3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../x11/kdebase3/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/ossaudio.buildlink2.mk"
