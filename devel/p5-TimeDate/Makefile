@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/12/28 05:34:23 wiz Exp $
+# $NetBSD: Makefile,v 1.3 1999/12/28 12:51:27 wiz Exp $
 #
 
 DISTNAME=      	TimeDate-1.08
@@ -8,9 +8,10 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}
 
 MAINTAINER=	packages@netbsd.org
 
-USE_PERL5=	YES
+USE_PERL5=	# defined
+PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/TimeDate/.packlist
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/perl Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include "../../mk/bsd.pkg.mk"

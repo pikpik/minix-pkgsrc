@@ -1,4 +1,1 @@
-@comment $NetBSD$
-lib/perl5/site_perl/Business/CreditCard-0.1.pm
-lib/perl5/site_perl/Business/CreditCard.pm
-@dirrm lib/perl5/site_perl/Business
+@comment $NetBSD: PLIST,v 1.2 1997/11/06 10:02:33 agc Exp $

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/04/15 20:39:47 tron Exp $
+# $NetBSD: Makefile,v 1.9 1999/12/02 14:50:41 rh Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/06/24 18:43:23 jfitz Exp
 #
 
@@ -12,9 +12,10 @@ HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/MD5/MD5.html
 
 CONFLICTS+=		p5-Digest-MD5-*
 
-USE_PERL5=		YES
+USE_PERL5=		# defined
+PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/MD5/.packlist
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/perl Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include "../../mk/bsd.pkg.mk"
