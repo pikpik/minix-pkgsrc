@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1537 2004/11/14 07:23:07 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1539 2004/11/16 18:04:00 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -306,7 +306,17 @@ USE_PERL5:=		run
 _PERL5_DEPMETHOD=	DEPENDS
 .  endif
 _PERL5_DEPENDS=		{perl>=${_PERL5_REQD},perl-thread>=${_PERL5_REQD}}
+#
+# On platforms that have native pthreads, default to installing the
+# threaded perl.  This can be overridden by explicitly setting
+# PERL5_USE_THREADS.
+#
+.  if exists(/usr/include/pthread.h) && \
+      !empty(PREFER_NATIVE_PTHREADS:M[yY][eE][sS])
+PERL5_PKGSRCDIR?=	../../lang/perl58-thread
+.  else
 PERL5_PKGSRCDIR?=	../../lang/perl58
+.  endif
 .  if !defined(BUILDLINK_DEPENDS.perl)
 ${_PERL5_DEPMETHOD}+=	${_PERL5_DEPENDS}:${PERL5_PKGSRCDIR}
 .  endif
