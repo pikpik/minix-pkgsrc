@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:06 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:13 jlam Exp $
 
 .if !defined(UNIXODBC_BUILDLINK2_MK)
 UNIXODBC_BUILDLINK2_MK=	# defined
@@ -25,7 +25,7 @@ BUILDLINK_FILES.unixodbc+=		lib/libodbcextras.*
 BUILDLINK_FILES.unixodbc+=		lib/libodbcinst.*
 
 .include "../../devel/libtool/buildlink2.mk"
-.include "../../devel/pth/buildlink2.mk"
+.include "../../mk/pthread.buildlink2.mk"
 
 BUILDLINK_TARGETS+=	unixodbc-buildlink
 

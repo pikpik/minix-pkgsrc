@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/24 06:10:05 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.3 2003/01/10 07:40:12 cjep Exp $
 
 DISTNAME=	gimageview-0.2.10
 PKGREVISION=	1
@@ -26,7 +25,7 @@ CONFIGURE_ARGS+=	--disable-xinetest
 
 .include "../../graphics/imlib2/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
-.include "../../devel/pth/buildlink2.mk"
+.include "../../mk/pthread.buildlink2.mk"
 .include "../../x11/gtk2/buildlink2.mk"
 .include "../../graphics/mng/buildlink2.mk"
 .include "../../graphics/librsvg2/buildlink2.mk"
