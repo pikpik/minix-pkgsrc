@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/22 23:52:13 wiz Exp $
 #
 
 DISTNAME=	icewm-1.0.1
 CATEGORIES=	x11
-MASTER_SITES=	http://download.sourceforge.net/icewm/
+MASTER_SITES=	http://download.sourceforge.net/icewm/ \
+		ftp://ftp.fu-berlin.de/unix/X11/window-managers/icewm/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	wiz@netbsd.org
