@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/11/24 12:39:20 chris Exp $
+# $NetBSD: Makefile,v 1.26 2002/11/24 13:31:56 chris Exp $
 
 DISTNAME=	sylpheed-0.8.6
 PKGREVISION=	1
@@ -15,6 +15,7 @@ BUILD_USES_MSGFMT=	yes
 CONFLICTS=	sylpheed-claws-[0-9]*
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 USE_X11BASE=		yes
 USE_GMAKE=		yes
 
