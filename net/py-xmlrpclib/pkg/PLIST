@@ -1,0 +1,4 @@
+@comment $NetBSD$
+PYSITELIB/xmlrpclib.py
+PYSITELIB/xmlrpcserver.py
+PYSITELIB/xmlrpc_handler.py
