@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 1998/11/04 16:37:11 agc Exp $
+# $NetBSD: Makefile,v 1.19 1998/11/04 16:58:09 agc Exp $
 #
 
 DISTNAME=       xosview-1.6.2.a
@@ -16,11 +16,10 @@ BUILD_DEFS=	UVM
 
 # On arm32, with UVM, pmap.h contains a C++ keyword. Workaround this.
 pre-build:
-	mach=`/usr/bin/uname -m`;				\
-	if [ $$mach = "arm32" -a ! -z "${UVM}" ]; then		\
-		${MKDIR} -p ${WRKSRC}/include/machine;		\
+	@if [ ${MACHINE} = "arm32" -a ! -z "${UVM}" ]; then		\
+		${MKDIR} -p ${WRKSRC}/include/machine;			\
 		${SED} -e 's|virtual|virt|' /usr/include/machine/pmap.h \
-			> ${WRKSRC}/include/machine/pmap.h; 	\
+			> ${WRKSRC}/include/machine/pmap.h; 		\
 	fi
 
 .include "../../mk/bsd.pkg.mk"
