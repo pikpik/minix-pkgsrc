@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/22 17:43:49 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/23 02:02:08 cjep Exp $
 #
 
 DISTNAME=	grape4r1
@@ -18,7 +18,7 @@ ALL_TARGET=	bsd-gcc
 GAP_PKG_NAME=	grape
 
 do-configure:
-	(cd ${WRKSRC} && ${SH} configure ${GAP_DIRECTORY} )
+	cd ${WRKSRC} && ${SH} configure ${GAP_DIRECTORY}
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${GAP_PKG_DIRECTORY}
