@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/08/14 04:56:43 grant Exp $
+# $NetBSD: Makefile,v 1.19 2004/02/14 01:03:29 grant Exp $
 
 DISTNAME=	ns-remote
 PKGNAME=	ns-remote-1.9
@@ -16,11 +16,7 @@ DIST_SUBDIR=	netscape
 USE_BUILDLINK2=	# defined
 USE_X11=	# defined
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "SunOS"
-LDFLAGS+=	-lsocket -lnsl
-.endif
+LDFLAGS.SunOS=	-lsocket -lnsl
 
 do-extract:
 	${MKDIR} ${WRKSRC}
