@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.135 2004/07/18 23:42:48 jlam Exp $
+# $NetBSD: Makefile,v 1.136 2004/07/19 02:33:31 jlam Exp $
 
 DISTNAME=	postfix-2.1.3
 CATEGORIES=	mail
@@ -174,8 +174,6 @@ CONF_FILES_PERMS+=	${EXAMPLEDIR}/${confscr} ${PKG_SYSCONFDIR}/${confscr} \
 			${ROOT_USER} ${ROOT_GROUP} 755
 .endfor
 .undef confscr
-
-INSTALL_EXTRA_TMPL+=	${PKGDIR}/INSTALL
 
 pre-configure:
 	@for i in ${POSTFIX_CONF_FILES}; do				\
