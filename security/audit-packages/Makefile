@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.37 2003/12/12 15:08:21 agc Exp $
+# $NetBSD: Makefile,v 1.38 2003/12/12 21:40:32 erh Exp $
 
-DISTNAME=	audit-packages-1.27
+DISTNAME=	audit-packages-1.28
 WRKSRC=		${WRKDIR}
 CATEGORIES=	security pkgtools
 MASTER_SITES=	# empty
