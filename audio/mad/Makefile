@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/27 21:29:49 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/12/14 09:20:18 toshii Exp $
 #
 
 DISTNAME=	mad-0.14.2b
@@ -14,12 +14,13 @@ BUILD_USES_MSGFMT=	YES
 
 CONFLICTS=	madplay-[0-9]*
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-.include "../../audio/esound/buildlink.mk"
-.include "../../devel/gettext-lib/buildlink.mk"
-.include "../../devel/zlib/buildlink.mk"
+.include "../../audio/esound/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../devel/zlib/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.mk"
