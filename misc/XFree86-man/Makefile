@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/24 09:07:03 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/29 06:22:46 xtraeme Exp $
 
 DISTNAME=	X430src-1
 PKGNAME=	XFree86-man-${XF_VER}
@@ -13,6 +13,7 @@ COMMENT=	XFree86 Manuals
 
 BUILD_DEPENDS=	imake>=4.3.0:../../x11/imake
 
+USE_IMAKE=		yes
 USE_BUILDLINK2=		yes
 
 NO_XFREE86_TARGETS=	# defined
