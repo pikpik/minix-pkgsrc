@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/04/13 01:05:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2000/04/24 14:14:13 tron Exp $
 #
 
 DISTNAME=	kworldwatch-0.6
@@ -16,13 +16,13 @@ CONFLICTS+=	kdetoys-*
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--datadir=${X11BASE}/share/kde \
-		--with-qt-dir=${X11BASE}/qt1 \
-		--with-qt-libraries='${X11BASE}/qt1/lib -L${LOCALBASE}/lib' \
+		--with-qt-dir=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1 \
+		--with-qt-libraries='`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1/lib -L${LOCALBASE}/lib' \
 		--enable-path-check
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV=	KDEDIR=${PREFIX} \
-		MOC=${X11BASE}/qt1/bin/moc \
-		QTDIR=${X11BASE}/qt1 \
+		MOC=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1/bin/moc \
+		QTDIR=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1 \
 		CXXFLAGS="${CFLAGS}" \
 		all_libraries="-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -L${X11BASE}/lib -Wl,-R${X11BASE}/lib"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 1999/10/22 01:06:12 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2000/03/28 00:12:30 dmcmahill Exp $
 #
 
 DISTNAME=	kdegraphics-1.1.2
@@ -16,7 +16,7 @@ USE_X11BASE=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	"--datadir=${PREFIX}/share/kde" \
-		"--with-qt-dir=${X11BASE}/qt1" 
+		"--with-qt-dir=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1" 
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV=  KDEDIR=${PREFIX} \
 		CXXFLAGS="${CFLAGS}" \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/11/24 11:45:27 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2000/04/13 00:43:17 dmcmahill Exp $
 
 DISTNAME=	korganizer-1.1.2
 CATEGORIES=	kde
@@ -15,10 +15,10 @@ USE_X11BASE=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	"--datadir=${PREFIX}/share/kde" \
-		"--with-qt-dir=${X11BASE}/qt1" 
+		"--with-qt-dir=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1" 
 CFLAGS+=	-I${LOCALBASE}/include
 CONFIGURE_ENV=	KDEDIR=${PREFIX} \
-		QTDIR=${X11BASE}/qt1 \
+		QTDIR=`${PKG_INFO} -qp qt1 | ${AWK} '{ print $$2 }'`/qt1 \
 		CXXFLAGS="${CFLAGS}" \
 		all_libraries="-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -L${X11BASE}/lib -Wl,-R${X11BASE}/lib"
 
