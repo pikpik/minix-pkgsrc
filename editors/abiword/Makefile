@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2001/07/02 08:07:08 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2001/08/10 04:50:08 jlam Exp $
 #
 # According to AbiSource's explanation of their trademark rights,
 # compilations/distributions of AbiWord not provided by AbiSource must
@@ -37,8 +37,6 @@ XLDFLAGS=	${LDFLAGS} -liconv
 
 MAKE_ENV+=	OS_CFLAGS="${OS_CFLAGS}"
 MAKE_ENV+=	XLDFLAGS="${XLDFLAGS}"
-MAKE_ENV+=	GLIB_CONFIG="${BUILDLINK_CONFIG_WRAPPER.glib}"
-MAKE_ENV+=	GTK_CONFIG="${BUILDLINK_CONFIG_WRAPPER.gtk}"
 
 MAKE_FLAGS+=	ABI_BUILD_VERSION="${ABIWORD_VERS}"
 MAKE_FLAGS+=	UNIX_CAN_BUILD_STATIC=0

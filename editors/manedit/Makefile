@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/06/11 20:58:32 zuntum Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/26 12:37:16 zuntum Exp $
 #
 
 DISTNAME=	${PKGNAME:S,manedit-,manedit,}
@@ -15,7 +15,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/manedit
 
 USE_BUILDLINK_ONLY=	YES
 
-MAKE_ENV+=	CPP="${CXX}" GTK_CONFIG="${BUILDLINK_CONFIG_WRAPPER.gtk}"
+MAKE_ENV+=	CPP="${CXX}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/manedit ${PREFIX}/bin

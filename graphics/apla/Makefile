@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/06/27 11:19:34 zuntum Exp $
+# $NetBSD: Makefile,v 1.6 2001/07/26 15:13:04 zuntum Exp $
 #
 
 DISTNAME=	apla-1.0.3
@@ -9,10 +9,6 @@ MAINTAINER=	zuntum@netbsd.org,w.wnuk@zodiac.mimuw.edu.pl
 COMMENT=	replacement for aviplay player
 
 USE_BUILDLINK_ONLY=	YES
-
-MAKE_ENV+=	SDL_CONFIG="${BUILDLINK_CONFIG_WRAPPER.SDL}"
-MAKE_ENV+=	AVIFILE_CONFIG="${BUILDLINK_CONFIG_WRAPPER.avifile-devel}"
-MAKE_ENV+=	FREETYPE_CONFIG="${BUILDLINK_CONFIG_WRAPPER.freetype2}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/apla ${PREFIX}/bin
