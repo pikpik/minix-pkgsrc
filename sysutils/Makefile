@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.258 2004/09/20 21:17:03 jschauma Exp $
+# $NetBSD: Makefile,v 1.259 2004/09/21 17:05:02 jmmv Exp $
 
 COMMENT=	System utilities
 
@@ -152,6 +152,7 @@ SUBDIR+=	screentest
 SUBDIR+=	scsiinfo
 SUBDIR+=	service-config
 SUBDIR+=	setquota
+SUBDIR+=	shc
 SUBDIR+=	shmux
 SUBDIR+=	skill
 SUBDIR+=	slay
