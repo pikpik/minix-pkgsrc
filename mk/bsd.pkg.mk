@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1417 2004/03/09 19:22:24 reed Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1418 2004/03/11 19:37:20 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -3077,6 +3077,8 @@ show-shlib-type:
 	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} "dylib"
 .  elif ${OPSYS} == "AIX"
 	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} "aixlib"
+.  elif ${OPSYS} == "Interix"
+	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} "ELF" # not really, but acts like it
 .  else
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	cd ${WRKDIR} &&							\
