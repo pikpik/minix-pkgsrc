@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+Please note that Ghostscript is required if you want to convert Xfig
+drawings to Postscript, PDF, or related formats.  You need to install
+one of the Ghostscript packages (see pkgsrc/print/ghostscript*) for
+this.
+===========================================================================
