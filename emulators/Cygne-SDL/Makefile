@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/23 19:01:40 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:14:40 tv Exp $
 #
 
 DISTNAME=		Cygne-SDL-0.1-src
@@ -18,6 +18,9 @@ WRKSRC=			${WRKDIR}/Cygne-SDL-0.1/src
 USE_BUILDLINK3=		yes
 MAKEFILE=		Makefiles/Makefile.unix
 NO_CONFIGURE=		yes
+
+# Uses i386 assembly code
+ONLY_FOR_PLATFORM=	*-*-i386
 
 post-build:
 	cd ${WRKSRC}/../WonderSnake && \
