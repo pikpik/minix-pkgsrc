@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- readconf.c.orig	Mon Mar  8 06:12:36 2004
++++ readconf.c
+@@ -186,7 +186,9 @@ static struct {
+ #endif
+ 	{ "clearallforwardings", oClearAllForwardings },
+ 	{ "enablesshkeysign", oEnableSSHKeysign },
++#ifndef __INTERIX
+ 	{ "verifyhostkeydns", oVerifyHostKeyDNS },
++#endif /* __INTERIX */
+ 	{ "nohostauthenticationforlocalhost", oNoHostAuthenticationForLocalhost },
+ 	{ "rekeylimit", oRekeyLimit },
+ 	{ "connecttimeout", oConnectTimeout },
