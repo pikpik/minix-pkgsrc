@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.181 2002/12/27 02:44:30 uebayasi Exp $
+# $NetBSD: Makefile,v 1.182 2003/01/09 20:14:57 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -177,6 +177,7 @@ SUBDIR+=	xerces-c
 SUBDIR+=	xerces-j
 SUBDIR+=	xerces-p
 SUBDIR+=	xml-i18n-tools
+SUBDIR+=	xmlcatmgr
 SUBDIR+=	xp
 SUBDIR+=	xt
 SUBDIR+=	yodl
