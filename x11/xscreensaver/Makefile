@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.38 2000/02/01 00:50:45 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2000/02/01 02:00:12 wiz Exp $
 #
 
 DISTNAME=	xscreensaver-3.23
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
-MAINTAINER=	frueauf@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.jwz.org/xscreensaver/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
