@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/02/14 17:21:38 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/14 18:26:27 jmmv Exp $
 #
 
 DISTNAME=		libidn-0.3.3
 CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_GNU:=libidn/} \
+MASTER_SITES=		ftp://alpha.gnu.org/pub/gnu/libidn/ \
 			http://josefsson.org/libidn/releases/
 
 MAINTAINER=		xtraeme@NetBSD.org
