@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2001/12/02 06:56:47 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2001/12/04 06:15:01 jlam Exp $
 #
 
-DISTNAME=	surfraw-1.0.5
+DISTNAME=	surfraw-1.0.7
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/proff/
 
