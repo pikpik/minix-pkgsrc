@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/10/01 20:45:55 reed Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/27 07:41:06 reed Exp $
 #
 
 DISTNAME=       ripmime-1.4.0.2
@@ -12,5 +12,7 @@ COMMENT=	Extract the attached files out of a MIME encoded email package
 PKGMANDIR?=	man
 MAKE_ENV+=	PKGMANDIR=${PKGMANDIR}
 INSTALLATION_DIRS=	bin ${PKGMANDIR}
+
+USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.pkg.mk"
