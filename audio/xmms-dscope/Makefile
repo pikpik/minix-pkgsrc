@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/16 02:24:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2001/08/16 03:02:51 hubertf Exp $
 #
 
 DISTNAME=	dscope-1.2
@@ -17,5 +17,4 @@ pre-build:
 		cd ${WRKSRC} ; ${MAKE} clean
 
 .include "../../audio/xmms/buildlink.mk"
-.include "../../x11/gtk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

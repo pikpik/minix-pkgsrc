@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/08/16 02:26:21 hubertf Exp $
 #
 
 DISTNAME=	dspectogram-1.2
@@ -19,5 +19,4 @@ pre-build:
 		cd ${WRKSRC} ; ${MAKE} clean
 
 .include "../../audio/xmms/buildlink.mk"
-.include "../../x11/gtk/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
