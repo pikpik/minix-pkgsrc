@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:21:59 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:07:41 agc Exp $
 
-DISTNAME=	cd-discid_0.7.orig
-PKGNAME=	cd-discid-0.7
+DISTNAME=	cd-discid_0.9.orig
+PKGNAME=	cd-discid-0.9
 CATEGORIES=	audio
-MASTER_SITES=	http://frantica.lly.org/~rcw/cd-discid/
+MASTER_SITES=	http://lly.org/~rcw/cd-discid/
 
 MAINTAINER=	lukem@NetBSD.org
 COMMENT=	Read CD to obtain CDDB discid information
