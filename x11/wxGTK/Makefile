@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2001/05/22 09:32:29 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/06/11 06:34:58 jlam Exp $
 #
 
-DISTNAME=		wxGTK-2.2.3
-WRKSRC=			${WRKDIR}/wxGTK
+DISTNAME=		wxGTK-2.2.7
 CATEGORIES=		x11
 MASTER_SITES=		ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
 
