@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/11 05:51:24 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/04/11 16:08:55 snj Exp $
 #
 
 DISTNAME=	ircd-hybrid-6.2
@@ -139,7 +139,6 @@ post-build:
 		> ${WRKDIR}/pkg-setup.txt
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/ircd-hybrid ${PREFIX}/etc/rc.d/ircd-hybrid
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ircd-hybrid
 	${INSTALL_DATA} ${WRKDIR}/pkg-setup.txt ${PREFIX}/share/doc/ircd-hybrid/pkg-setup.txt
 	for f in operguide.txt opermyth.txt; do \

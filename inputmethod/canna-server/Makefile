@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/05 19:09:22 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/23 04:41:01 jlam Exp $
 #
 .include "../canna/Makefile.common"
 
@@ -34,9 +34,6 @@ post-patch:
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${XMKMF}
-
-post-install:
-	@${INSTALL_SCRIPT} ${WRKDIR}/canna ${PREFIX}/etc/rc.d/canna
 
 .include "../../devel/nbitools/buildlink3.mk"
 .include "../../inputmethod/canna-lib/buildlink3.mk"
