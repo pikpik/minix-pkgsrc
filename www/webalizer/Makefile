@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2002/08/25 21:52:25 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2003/01/28 22:04:33 jlam Exp $
 #
 
-DISTNAME=	webalizer-2.01-09-src
-PKGNAME=	webalizer-2.1.9
-PKGREVISION=	1
+DISTNAME=	webalizer-2.01-10-src
+PKGNAME=	webalizer-2.1.10
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
 		ftp://webalizer.dexa.org/pub/webalizer/ \
