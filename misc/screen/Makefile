@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/02/18 15:14:34 seb Exp $
+# $NetBSD: Makefile,v 1.31 2002/05/21 17:57:03 tron Exp $
 
 DISTNAME=	screen-3.9.11
 CATEGORIES=	misc
@@ -14,6 +14,8 @@ INFO_FILES=		screen.info
 PLIST_SUBST=		DISTNAME=${DISTNAME}
 USE_BUILDLINK_ONLY=	yes
 TEXINFO_OVERRIDE=	YES
+
+CONFIGURE_ARGS+=--with-sys-screenrc=${PKG_SYSCONFDIR}/screenrc
 
 .include "../../mk/bsd.prefs.mk"
 .if (${OPSYS} == SunOS)
