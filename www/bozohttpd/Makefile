@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2000/08/27 09:04:31 itojun Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/31 12:12:58 itojun Exp $
 #
 
 DISTNAME=	bozohttpd-5.06
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}
-		
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	packages@netbsd.org
