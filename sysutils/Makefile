@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2001/03/27 19:24:57 zuntum Exp $
+# $NetBSD: Makefile,v 1.95 2001/04/27 11:29:26 agc Exp $
 #
 
 COMMENT=	System utilities
@@ -12,6 +12,7 @@ SUBDIR+=	apcupsd
 SUBDIR+=	aperture
 SUBDIR+=	asapm
 SUBDIR+=	bchunk
+SUBDIR+=	bkpupsd
 SUBDIR+=	c++rt0
 SUBDIR+=	cdrdao
 SUBDIR+=	cdrecord
@@ -54,13 +55,13 @@ SUBDIR+=	psmisc
 SUBDIR+=	pstree
 SUBDIR+=	roller
 SUBDIR+=	rtty
+SUBDIR+=	safetynet
 SUBDIR+=	sarah
 SUBDIR+=	sh-utils
 SUBDIR+=	skill
 SUBDIR+=	socket
 SUBDIR+=	sshsh
 SUBDIR+=	stow
-SUBDIR+=	safetynet
 SUBDIR+=	sux
 SUBDIR+=	sysgen
 SUBDIR+=	sysinfo
