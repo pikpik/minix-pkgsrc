@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 16:30:48 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:07:43 agc Exp $
 #
 
 DISTNAME=	wmmixer-1.0-beta1
@@ -12,12 +12,12 @@ HOMEPAGE=	http://www.geocities.com/SiliconValley/Vista/2471/
 COMMENT=	Mixer designed for WindowMaker (dockapp)
 
 WRKSRC=			${WRKDIR}/wmmixer
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_IMAKE=		YES
 NO_INSTALL_MANPAGES=	YES
 
 pre-build:
 	${TOUCH} ${WRKSRC}/wmmixer.man
 
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
