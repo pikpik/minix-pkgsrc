@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2000/07/19 09:31:44 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2001/02/16 14:39:00 wiz Exp $
 #
 
 DISTNAME=	readline-4.1
@@ -9,12 +9,13 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/readline/
 COMMENT=	GNU library which can recall and edit previous input
 
-GNU_CONFIGURE=	# defined
-USE_LIBTOOL=	# defined
-USE_GTEXINFO=	# defined
+GNU_CONFIGURE=		# defined
+USE_LIBTOOL=		# defined
+USE_GTEXINFO=		# defined
+USE_BUILDLINK_ONLY=	# defined
 
-READLINE_MAJOR=	4
-READLINE_MINOR=	1
+READLINE_MAJOR=		4
+READLINE_MINOR=		1
 
 MAKE_ENV+=	READLINE_MAJOR=${READLINE_MAJOR}
 MAKE_ENV+=	READLINE_MINOR=${READLINE_MINOR}
