@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2004/03/30 15:13:12 tv Exp $
+# $NetBSD: Makefile,v 1.64 2004/04/08 20:58:32 wiz Exp $
 
 DISTNAME=	gnupg-1.2.4
 PKGREVISION=	1
@@ -23,6 +23,7 @@ USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make
 CONFIGURE_ARGS+=	--enable-tiger --with-static-rnd=auto
+CONFIGURE_ARGS+=	--with-mailprog=/usr/sbin/sendmail
 TEST_TARGET=		check
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
