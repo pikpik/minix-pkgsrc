@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tkcvs
 bin/tkdiff
 share/doc/tkcvs/README.tkcvs
