@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/06/08 17:51:27 bad Exp $
 bin/approve
 bin/bounce
 bin/medit
@@ -64,3 +64,4 @@ share/examples/majordomo/majordomo.cf
 @unexec echo "If you are removing majordomo permanently, you may wish to"
 @unexec echo "  - remove @HOME@/@MAJORDOMO_USER@"
 @unexec echo "  - remove majordomo aliases from /etc/sendmail.cf and run newaliases"
+@unexec echo "  - remove group majordom from /etc/group"
