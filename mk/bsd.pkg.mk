@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.379 1999/12/29 16:04:18 bad Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.380 2000/01/05 16:55:32 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -1866,7 +1866,7 @@ fetch-list:
 fetch-list-recursive:
 	@${MAKE} fetch-list-one-pkg
 .if ${RECURSIVE_FETCH_LIST} != "NO"
-	@for dir in `${ECHO} ${BUILD_DEPENDS} ${DEPENDS} ${RUN_DEPENDS} | ${TR} '\040' '\012' | ${SED} -e 's/^[^:]*://' -e 's/:.*//' | sort -u` ; do \
+	@for dir in `${ECHO} "${BUILD_DEPENDS} ${DEPENDS} ${RUN_DEPENDS}" | ${TR} '\040' '\012' | ${SED} -e 's/^[^:]*://' -e 's/:.*//' | sort -u` ; do \
 		(cd $$dir && ${MAKE} fetch-list-recursive; );		\
 	done
 .endif # ${RECURSIVE_FETCH_LIST} != "NO"
