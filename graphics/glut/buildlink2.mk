@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.6 2003/07/15 23:31:23 jschauma Exp $
+# $NetBSD: buildlink2.mk,v 1.7 2003/08/26 01:43:50 jschauma Exp $
 
 .if !defined(GLUT_BUILDLINK2_MK)
 GLUT_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		glut
-BUILDLINK_DEPENDS.glut?=	glut>=${MESA_VERSION}
+BUILDLINK_DEPENDS.glut?=	glut>=6.0
 BUILDLINK_PKGSRCDIR.glut?=	../../graphics/glut
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.glut=glut
