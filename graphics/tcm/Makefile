@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/24 01:29:53 jtb Exp $
 
 DISTNAME=		tcm-2.01.src
 PKGNAME=		tcm-2.01
@@ -26,7 +26,7 @@ post-extract:
 	${RM} -f ${TCM_SRC}/lib/COPYING ${TCM_SRC}/lib/CHANGELOG
 
 do-configure:
-	${SH} ${SCRIPTDIR}/configure
+	${CONFIGURE_SCRIPT} ${WRKSRC}
 
 do-install:
 	@for f in tcm tcmd tcmt text2ps; do				\
