@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2003/05/29 09:37:08 jklos Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/07/09 08:09:04 itojun Exp $
 #
 
 .if !defined(APR_BUILDLINK2_MK)
@@ -19,6 +19,7 @@ BUILDLINK_FILES.apr+=	lib/aprutil.exp
 BUILDLINK_FILES.apr+=	lib/libapr-0.*
 BUILDLINK_FILES.apr+=	lib/libaprutil-0.*
 
+.include "../../databases/db4/buildlink2.mk"
 .include "../../textproc/expat/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	apr-buildlink
