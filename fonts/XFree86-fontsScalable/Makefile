@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/02/02 14:19:02 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/28 22:06:15 xtraeme Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	XFree86-fontsScalable-${XF_VER}
@@ -16,6 +16,7 @@ NO_BUILD=		yes
 NO_BUILDLINK=		# defined
 USE_LANGUAGES=		# empty
 NO_XFREE86_TARGETS=	# defined
+CHECK_X11_TYPE=		# defined
 
 FONT_TYPES=		Speedo TTF Type1
 
