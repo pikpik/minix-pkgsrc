@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/04/14 21:31:44 tron Exp $
+# $NetBSD: Makefile,v 1.13 1999/04/22 20:39:17 mycroft Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/01/03 10:58:40 obrien Exp
 #
 
@@ -19,6 +19,9 @@ USE_GMAKE=	yes
 NO_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/${PKGNAME}/src
+
+# for BATCH !
+.include "../../mk/bsd.prefs.mk"
 
 .if !defined(BATCH)
 pre-install:
