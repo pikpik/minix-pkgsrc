@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:54:00 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:24:49 martti Exp $
 #
 
 DISTNAME=	${PKGNAME:S/-//}
-PKGNAME=	xuvmstat-20010220
+PKGNAME=	xuvmstat-20030810
 WRKSRC=		${WRKDIR}/xuvmstat
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.NetBSD.org/~chuck/gz/
