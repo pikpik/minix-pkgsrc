@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/Xvnc
 bin/vncviewer
 bin/vncpasswd
