@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/01/31 07:36:19 martti Exp $
+# $NetBSD: Makefile,v 1.32 2002/03/10 11:02:16 hubertf Exp $
 #
 
 COMMENT=	communication programs
@@ -45,6 +45,7 @@ SUBDIR+=	tkirc2
 SUBDIR+=	vicq
 SUBDIR+=	xchat
 SUBDIR+=	ymessenger
+SUBDIR+=	ysm
 SUBDIR+=	zenicb
 SUBDIR+=	zenirc
 SUBDIR+=	zircon
