@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/07/24 10:39:01 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/08/29 22:41:01 jlam Exp $
 #
 
 DISTNAME=	WSoundServer-0.4.0
@@ -35,6 +35,7 @@ post-install:
 
 .include "../../audio/libaudiofile/buildlink.mk"
 .include "../../devel/libdockapp/buildlink.mk"
+.include "../../devel/libproplist/buildlink.mk"
 .include "../../wm/windowmaker/buildlink.mk"
 .include "../../mk/ossaudio.buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
