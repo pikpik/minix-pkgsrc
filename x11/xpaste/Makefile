@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/16 20:21:01 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/01/27 18:32:35 jlam Exp $
 #
 
 DISTNAME=	xpaste-1.1
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}
 EXTRACT_SUFX=	.shar.gz

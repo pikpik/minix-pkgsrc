@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/06/14 14:42:18 mrg Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:12:17 zuntum Exp $
 bin/xlogout
 lib/X11/app-defaults/XLogout
-man/cat1/xlogout.0
+${IMAKE_MAN_DIR}/xlogout.${IMAKE_MANNEWSUFFIX}

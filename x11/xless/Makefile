@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2001/02/17 17:07:13 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/30 22:21:36 jlam Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/12/29 00:51:27 obrien Exp
 #
 
 DISTNAME=	xless-1.7
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/} \
 		ftp://ftp.cs.berkeley.edu/ucb/people/dglo/xless/

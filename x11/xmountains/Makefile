@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/19 11:30:00 grant Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/19 13:57:37 grant Exp $
 #
 
 DISTNAME=	xmountains_2.6
 PKGNAME=	${DISTNAME:C/_/-/}
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.epcc.ed.ac.uk/~spb/xmountains/
 

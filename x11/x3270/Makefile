@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2000/10/30 11:55:01 mjl Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/17 17:06:58 wiz Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/10/15 20:23:40 max Exp
 #
 
 DISTNAME=	x3270-3213
 PKGNAME=	x3270-3.2.13
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Peaks/7814/
 EXTRACT_SUFX=	.tgz

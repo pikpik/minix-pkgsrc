@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:07:20 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/31 15:24:08 wiz Exp $
 
 DISTNAME=	xp-1.2b10
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.ncl.ac.uk/pub/users/ngmt/X11/
 
