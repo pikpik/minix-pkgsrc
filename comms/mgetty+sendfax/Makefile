@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2002/02/18 15:14:04 seb Exp $
+# $NetBSD: Makefile,v 1.20 2002/03/06 19:19:02 fredb Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/07/16 06:44:37 vanilla Exp
 #
 
-DISTNAME=	mgetty1.1.26-Apr16
-PKGNAME=	mgetty-1.1.26
+DISTNAME=	mgetty1.1.28-Jan10
+PKGNAME=	mgetty-1.1.28
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.leo.org/pub/comp/os/unix/networking/mgetty/ \
 		ftp://alpha.greenie.net/pub/mgetty/source/1.1/
