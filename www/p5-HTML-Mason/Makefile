@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/11/26 06:50:34 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/04/17 10:46:04 shell Exp $
 
 DISTNAME=		HTML-Mason-1.04
 PKGNAME=		p5-${DISTNAME}
@@ -14,11 +14,8 @@ DEPENDS+=               p5-MLDBM>=2.0:../../databases/p5-MLDBM
 DEPENDS+=		p5-gdbm-[0-9]*:../../databases/p5-gdbm
 DEPENDS+=               p5-Params-Validate>=0.04:../../devel/p5-Params-Validate
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/Mason/.packlist
 
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
-
-.include "../../lang/perl5/buildlink.mk"
+.include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
