@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/04/14 16:15:25 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/20 13:13:42 markd Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
 CATEGORIES=	multimedia
 COMMENT=	Multimedia tools for the KDE integrated X11 desktop
-
-CONFLICTS=	timidity-[0-9]*
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
