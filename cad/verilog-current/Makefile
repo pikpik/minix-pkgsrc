@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/06/07 01:09:50 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.41 2004/09/02 01:55:47 dmcmahill Exp $
 #
 
 DISTNAME=	verilog-${SNAPDATE}
@@ -17,7 +17,7 @@ CONFLICTS+=	verilog-[0-9]*
 USE_BUILDLINK3=	yes
 BUILD_DEPENDS+= bison-[0-9]*:../../devel/bison
 
-SNAPDATE=	20040828
+SNAPDATE=	20040915
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	lex make
 CONFIGURE_ARGS+=	--without-ipal
