@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/05/08 21:00:38 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 1998/05/18 09:07:32 tron Exp $
 #
 
 DISTNAME=       xosview-1.6.0
@@ -8,7 +8,8 @@ MASTER_SITES=   http://www.ece.utexas.edu/~bgrayson/xosview/ \
 
 MAINTAINER=	bgrayson@ece.utexas.edu
 
-GNU_CONFIGURE=	yes
+HAS_CONFIGURE=	yes
+CONFIGURE_ARGS+= --prefix=${PREFIX}
 USE_X11=	yes
 MAN1=		xosview.1
 
