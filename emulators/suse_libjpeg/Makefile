@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/09 13:03:11 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/19 23:15:48 hubertf Exp $
 
 DISTNAME=		suse_libjpeg-6.4
 CATEGORIES=		emulators
@@ -18,4 +18,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		libjpeg.rpm
 
-.include "../suse_linux/suse.mk"
+.include "../suse_linux/Makefile.common"

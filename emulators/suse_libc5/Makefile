@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/01/09 07:11:10 tls Exp $
+# $NetBSD: Makefile,v 1.13 2000/05/31 05:02:56 dmcmahill Exp $
 
 DISTNAME=		shlibs5
 PKGNAME=		suse_libc5-6.3
@@ -19,4 +19,4 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		${DISTNAME}${EXTRACT_SUFX}
 
-.include "../suse_linux/suse.mk"
+.include "../suse_linux/Makefile.common"

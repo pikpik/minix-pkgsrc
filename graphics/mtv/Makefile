@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2000/08/29 12:43:42 tron Exp $
+# $NetBSD: Makefile,v 1.26 2000/08/31 02:35:26 hubertf Exp $
 
 DISTNAME=		mtv-1.1.4
 CATEGORIES=		graphics
@@ -37,4 +37,4 @@ post-install:
 .endfor
 	${CHMOD} +x ${PREFIX}/emul/linux/usr/doc/mtv
 
-.include "../../emulators/suse_linux/suse.mk"
+.include "../../emulators/suse_linux/Makefile.common"

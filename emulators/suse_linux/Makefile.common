@@ -1,4 +1,4 @@
-# $NetBSD: suse.mk,v 1.6 2000/08/25 00:20:22 jlam Exp $
+# $NetBSD$
 
 MASTER_SITE_SUSE=	ftp://ftp.suse.com/pub/suse/i386/6.3/suse/
 
