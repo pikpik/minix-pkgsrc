@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.6 2001/06/10 00:09:30 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.7 2001/06/11 01:59:34 jlam Exp $
 #
 # This Makefile fragment is included by packages that use getopt_long().
 #
@@ -25,7 +25,6 @@ BUILDLINK_FILES.getopt+=	lib/libgetopt.*
 BUILDLINK_FILES.getopt+=	lib/libgetopt_pic.a
 
 .if defined(GNU_CONFIGURE)
-CONFIGURE_ENV+=			LIBS="${LIBS}"
 LIBS+=				-lgetopt
 .endif
 .endif
