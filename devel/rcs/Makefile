@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/06/02 01:20:16 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 21:33:33 grant Exp $
 #
 
 DISTNAME=		rcs-5.7
@@ -15,7 +15,7 @@ ONLY_FOR_PLATFORM=	SunOS-*-* Darwin-*-*	# in NetBSD base system
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-DEPENDS=		diffutils-2.7:../../devel/diffutils
+DEPENDS=		diffutils>=2.7:../../devel/diffutils
 CONFIGURE_ARGS+=	--with-diffutils=gdiff
 .endif
 
