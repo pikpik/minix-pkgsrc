@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/pconsole
+bin/pconsole.sh
+bin/ssh.sh
+share/doc/pconsole/README.pconsole
+@dirrm share/doc/pconsole
