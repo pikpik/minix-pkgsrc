@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/sasl/libkerberos4.a
+lib/sasl/libkerberos4.la
+lib/sasl/libkerberos4.so.1.15
