@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/02/17 17:51:41 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2001/04/07 06:22:10 rh Exp $
 #
 
 DISTNAME=	ggv-1.0
@@ -17,4 +17,5 @@ USE_LIBTOOL=	YES
 USE_X11BASE=	YES
 CONFIGURE_ARGS+=--disable-bonobotest
 
+.include "../../devel/bonobo/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
