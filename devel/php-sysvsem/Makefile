@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/24 23:25:23 xtraeme Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/31 19:30:30 jdolecek Exp $
 
 MODNAME=		sysvsem
 CATEGORIES+=		devel
@@ -7,7 +7,8 @@ COMMENT=		PHP extension for SysV semaphore support
 
 USE_BUILDLINK3= 	YES
 
+.include "../../lang/php/ext.mk"
+
 CONFIGURE_ARGS+=	--enable-${MODNAME}=shared,${BUILDLINK_DIR}
 
-.include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"

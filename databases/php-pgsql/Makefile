@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/07/24 22:45:15 recht Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/31 19:30:30 jdolecek Exp $
 
 MODNAME=		pgsql
 PKGREVISION=		# empty
@@ -7,8 +7,9 @@ COMMENT=		PHP extension for PostgreSQL databases
 
 USE_BUILDLINK3=		YES
 
+.include "../../lang/php/ext.mk"
+
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${PGSQL_PREFIX}
 
-.include "../../lang/php/ext.mk"
 .include "../../mk/pgsql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

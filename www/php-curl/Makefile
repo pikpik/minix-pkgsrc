@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/07/06 19:52:01 jdolecek Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/31 19:30:30 jdolecek Exp $
 
 MODNAME=		curl
 PKGREVISION=		# empty
@@ -7,8 +7,9 @@ COMMENT=		PHP extension for curl functions
 
 USE_BUILDLINK3=		YES
 
+.include "../../lang/php/ext.mk"
+
 CONFIGURE_ARGS+=	--with-curl=shared,${BUILDLINK_PREFIX.curl}
 
-.include "../../lang/php/ext.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
