@@ -1,3 +1,4 @@
+$NetBSD$
 --- pl/tcl/Makefile.orig	Mon May 22 22:12:44 2000
 +++ pl/tcl/Makefile	Fri Sep  1 09:41:04 2000
 @@ -56,10 +56,11 @@
