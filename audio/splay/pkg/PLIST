@@ -1,2 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1997/11/06 09:58:23 agc Exp $
 bin/splay
+man/man1/splay.1
+man/man1/xsplay.1
