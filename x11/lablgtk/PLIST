@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/10/16 16:40:25 dillo Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/10/16 17:24:46 dillo Exp $
 bin/lablgtk
 lib/ocaml/lablgtk/gBin.cmi
 lib/ocaml/lablgtk/gBin.cmx
@@ -149,8 +149,10 @@ lib/ocaml/lablgtk/gtkThInit.cmo
 lib/ocaml/lablgtk/gtkThInit.ml
 lib/ocaml/lablgtk/gtkThread.cmi
 lib/ocaml/lablgtk/gtkThread.cmo
+${NATIVE_THREADS}lib/ocaml/lablgtk/gtkThread.cmx
 lib/ocaml/lablgtk/gtkThread.ml
 lib/ocaml/lablgtk/gtkThread.mli
+${NATIVE_THREADS}lib/ocaml/lablgtk/gtkThread.o
 lib/ocaml/lablgtk/gtkTree.cmi
 lib/ocaml/lablgtk/gtkTree.cmx
 lib/ocaml/lablgtk/gtkTree.ml
