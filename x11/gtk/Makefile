@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/04/17 09:37:25 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/20 21:54:59 tron Exp $
 
 DISTNAME=	gtk+-1.0.4
 CATEGORIES=	x11
@@ -12,9 +12,9 @@ CONFLICTS=	gtk+-1.0.0
 
 GNU_CONFIGURE=  yes
 USE_X11=	yes
-USE_GTEXINFO=	yes
 
 CFLAGS=		-pipe -O2
+INFO_FILES=	gdk.info glib.info gtk.info
 
 PLIST_SRC=	${WRKDIR:T}/.PLIST-src
 
