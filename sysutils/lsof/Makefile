@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.61 2003/05/03 16:55:28 atatat Exp $
+# $NetBSD: Makefile,v 1.62 2003/05/04 10:28:30 salo Exp $
 #
 
-DISTNAME=		lsof_4.67
+DISTNAME=		lsof_4.68
 PKGNAME=		${DISTNAME:S/_/-/}
-PKGREVISION=		2
 WRKSRC=			${WRKDIR}/${DISTNAME}/${SRCBALL_NAME}
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof/  \
