@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/09/14 16:43:48 recht Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/29 06:30:10 xtraeme Exp $
 #
 
 DISTNAME=	sybase-0.36
@@ -14,7 +14,7 @@ PYTHON_VERSIONS_ACCEPTED=	21pth 22pth 23pth
 
 BUILDLINK_DEPENDS.freetds=	freetds-0.61*
 PYSETUPBUILDARGS=	build_ext -D HAVE_FREETDS=61 -U WANT_BULKCOPY
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 PYDISTUTILSPKG=		yes
 
 SYBASE=		${BUILDLINK_PREFIX.freetds}/freetds
@@ -25,6 +25,6 @@ post-patch:
 		<${WRKSRC}/setup.py >${WRKSRC}/setup.py.tmp
 	${MV} ${WRKSRC}/setup.py.tmp ${WRKSRC}/setup.py
 
-.include "../../databases/freetds/buildlink2.mk"
+.include "../../databases/freetds/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
