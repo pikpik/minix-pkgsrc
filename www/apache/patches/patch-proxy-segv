@@ -1,3 +1,5 @@
+$NetBSD$
+
 This patch fixes a segmentation violation in mod_proxy when a
 response is non-cachable.  Problem reported by Doug Bloebaum.
 
