@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- mit-pthreads/Makefile.orig	Thu Apr 11 06:31:43 2002
++++ mit-pthreads/Makefile
+@@ -54,4 +54,7 @@
+ #install : install-bin install-include
+ install:
+ 
++# Ditto for NetBSD-1.6
++libinstall:
++
+ .include <bsd.lib.mk>
