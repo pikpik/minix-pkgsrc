@@ -1,0 +1,4 @@
+#!/bin/sh
+# $NetBSD$
+
+(cd $WRKSRC; $PREFIX/bin/python ../Tools/compile.py)
