@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2000/08/10 18:28:30 fredb Exp $
+# $NetBSD: Makefile,v 1.27 2000/08/10 18:31:36 fredb Exp $
 #
 
 DISTNAME=		lynx2.8.3rel.1
@@ -33,6 +33,7 @@ RESTRICTED=		"Crypto, export-controlled"
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 
+DIST_SUBDIR=		lynx
 EXTRACT_ONLY=		${DISTFILES:M*.tar.bz2}
 WRKSRC=			${WRKDIR}/lynx2-8-3
 
