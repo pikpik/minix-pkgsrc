@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: gen-transform.sh,v 1.8 2004/01/06 21:39:07 jlam Exp $
+# $NetBSD: gen-transform.sh,v 1.9 2004/01/07 07:10:05 jlam Exp $
 
 transform="@_BLNK_TRANSFORM_SEDFILE@"
 untransform="@_BLNK_UNTRANSFORM_SEDFILE@"
@@ -220,7 +220,7 @@ EOF
 	esac
 }
 
-for arg; do
+for arg do
 	case $arg in
 	transform:*)
 		gen transform "${arg#transform:}"

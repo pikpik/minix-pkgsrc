@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: libtool.sh,v 1.8 2003/11/25 14:43:23 jlam Exp $
+# $NetBSD: libtool.sh,v 1.9 2003/11/26 12:52:30 jlam Exp $
 
 Xsed='@SED@ -e 1s/^X//'
 sed_quote_subst='s/\([\\`\\"$\\\\]\)/\\\1/g'
@@ -45,7 +45,7 @@ mode=link
 prevopt=
 nonopt=
 lafile=
-for arg; do
+for arg do
 	case $arg in
 	-*=*)	optarg=`$echo "X$arg" | $Xsed -e 's/[-_a-zA-Z0-9]*=//'` ;;
 	*)	optarg= ;;
