@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.236 2004/02/23 08:59:21 xtraeme Exp $
+# $NetBSD: Makefile,v 1.237 2004/02/27 02:28:21 minskim Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -134,6 +134,7 @@ SUBDIR+=	p5-PDF
 SUBDIR+=	p5-PDF-API2
 SUBDIR+=	p5-PDF-Create
 SUBDIR+=	p5-Pod-POM
+SUBDIR+=	p5-Regexp-Common
 SUBDIR+=	p5-String-CRC32
 SUBDIR+=	p5-String-ShellQuote
 SUBDIR+=	p5-Text-Autoformat
