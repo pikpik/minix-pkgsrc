@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/xfce4/panel-plugins/libcpugraph.a
+lib/xfce4/panel-plugins/libcpugraph.la
+lib/xfce4/panel-plugins/libcpugraph.so
