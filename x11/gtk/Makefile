@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2000/01/10 19:11:10 hubertf Exp $
+# $NetBSD: Makefile,v 1.40 2000/03/12 22:30:05 tron Exp $
 
 DISTNAME=	gtk+-1.2.7
 CATEGORIES=	x11
@@ -19,7 +19,8 @@ USE_X11BASE=	yes
 USE_GMAKE=	yes
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" X_LDFLAGS="${X_LDFLAGS}"
+CONFIGURE_ARGS+=--with-xinput=xfree
+CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" X_LDFLAGS="${X_LDFLAGS}"
 
 INFO_FILES=	gdk.info gtk.info
 
