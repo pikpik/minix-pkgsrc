@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/08/30 22:51:28 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:22:21 agc Exp $
 #
 
 DISTNAME=	sendfile-20010216
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.belwue.de/aktivitaeten/projekte/saft/
 COMMENT=	Implementation of the Simple asynchronous file transfer protocol
 
 WRKSRC=		${WRKDIR}/sendfile-2.1a
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_PKGINSTALL=	yes
 
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
