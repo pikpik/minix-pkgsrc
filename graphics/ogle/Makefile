@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/01/23 21:50:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.31 2004/01/24 15:46:44 grant Exp $
 
 DISTNAME=	ogle-0.9.2
 PKGREVISION=	1
@@ -33,6 +33,6 @@ GCC_REQD=		2.95.3
 .include "../../devel/binutils/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
-.include "../../misc/libdvdread/buildlink2.mk"
+.include "../../multimedia/libdvdread/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
