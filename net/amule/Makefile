@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/03/17 19:15:41 martti Exp $
+# $NetBSD: Makefile,v 1.12 2004/03/26 02:27:47 wiz Exp $
 #
 
 DISTNAME=		aMule-1.2.6
@@ -17,8 +17,9 @@ BUILD_USES_MSGFMT=	yes
 
 CONFLICTS=		xmule-[0-9]*
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
+USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
@@ -27,10 +28,12 @@ LIBS+=			-lm
 
 UNLIMIT_RESOURCES+=	datasize
 
-.include "../../devel/gettext-lib/buildlink2.mk"
-.include "../../devel/zlib/buildlink2.mk"
-.include "../../www/curl/buildlink2.mk"
-.include "../../x11/wxGTK/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../www/curl/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/wxGTK/buildlink3.mk"
 
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
