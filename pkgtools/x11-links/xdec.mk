@@ -1,0 +1,3 @@
+# $NetBSD$
+
+FILES_LIST=	${FILESDIR}/xdec
