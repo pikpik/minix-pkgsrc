@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/01 19:10:22 jtb Exp $
+# $NetBSD: Makefile,v 1.7 2001/03/04 18:05:23 jtb Exp $
 
 DISTNAME=		hdf5-1.4.0
 CATEGORIES=		devel
@@ -9,7 +9,7 @@ MAINTAINER=		jtb@netbsd.org
 HOMEPAGE=		http://hdf.ncsa.uiuc.edu/HDF5/
 COMMENT=		Hierarchical Data Format (version 5)
 
-DEPENDS+=		jpeg>=6:../../graphics/jpeg
+DEPENDS+=		jpeg-6b:../../graphics/jpeg
 
 GNU_CONFIGURE=		#defined
 USE_LIBTOOL=		#defined
