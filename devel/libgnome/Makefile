@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2005/01/23 21:57:43 hira Exp $
+# $NetBSD: Makefile,v 1.35 2005/02/22 19:55:42 jmmv Exp $
 #
 
-DISTNAME=	libgnome-2.8.1
+DISTNAME=	libgnome-2.10.0
 CATEGORIES=	devel gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnome/2.8/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnome/2.10/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	jmmv@NetBSD.org
@@ -54,6 +54,7 @@ GCONF2_SCHEMAS+=	desktop_gnome_thumbnailers.schemas
 GCONF2_SCHEMAS+=	desktop_gnome_typing_break.schemas
 
 .include "../../audio/esound/buildlink3.mk"
+.include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/GConf2/schemas.mk"
