@@ -1,3 +1,4 @@
+$NetBSD$
 --- vcd_read.c.orig	Tue Jun 12 10:53:32 2001
 +++ vcd_read.c	Mon Jul 30 21:23:54 2001
 @@ -8,6 +8,7 @@
