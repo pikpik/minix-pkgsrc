@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/03 18:49:52 reed Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/08 08:11:41 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -7,6 +7,5 @@ DISTNAME=	xfprint-${XFCE4_VERSION}
 CATEGORIES=	print
 COMMENT=	XFce4 print dialog
 
-.include "../../devel/pkgconfig/buildlink2.mk"
-.include "../../x11/xfce4-mcs-plugins/buildlink2.mk"
+.include "../../x11/xfce4-mcs-plugins/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
