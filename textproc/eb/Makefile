@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/02/14 17:21:53 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2004/03/19 15:59:16 uebayasi Exp $
 # FreeBSD Id: ports/japanese/eb/Makefile,v 1.21 2000/08/21 03:39:42 kevlo Exp
 #
 
@@ -49,7 +49,7 @@ EB_APPENDICES=	\
 		ruigigo-1.0.tar.gz \
 		superdic98-1.0.tar.gz
 EXTRACT_ONLY=	${EB_DISTFILES}
-DIST_SUBDIR=	eb
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
