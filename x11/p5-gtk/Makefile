@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 1999/01/16 05:49:56 tron Exp $
+# $NetBSD: Makefile,v 1.5 1999/03/04 09:30:45 tron Exp $
 #
 
-DISTNAME=		Gtk-0.4
-PKGNAME=		p5-gtk-0.4
+DISTNAME=		Gtk-0.5120
+PKGNAME=		p5-gtk-0.5120
 CATEGORIES=		x11 perl5
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/perl/
 
