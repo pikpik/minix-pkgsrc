@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/05/25 08:08:30 rh Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/27 10:37:00 jlam Exp $
 #
 
 DISTNAME=		Msql-Mysql-modules-1.2214
@@ -26,7 +26,7 @@ MAKE_ENV+=		IN_MYSQL_DISTRIBUTION=1
 
 MAKE_PARAMS+=		--noprompt
 MAKE_PARAMS+=		--mysql-install
-MAKE_PARAMS+=		--nomsql-install --nomsql1-install 
+MAKE_PARAMS+=		--nomsql-install --nomsql1-install
 MAKE_PARAMS+=		--mysql-incdir=${MYSQL_HEADERDIR}
 MAKE_PARAMS+=		--mysql-libdir=${MYSQL_LIBDIR}
 
