@@ -1,17 +1,17 @@
-# $NetBSD: Makefile,v 1.10 2001/09/27 23:18:56 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/10 13:04:15 jlam Exp $
 
 MODNAME=		pgsql
 CATEGORIES+=		databases
 PKGREVISION=		# empty
 COMMENT=		PHP3 extension for PostgreSQL database access
 
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=		yes
 
 .include "../../www/php3/Makefile.module"
 
-CONFIGURE_ARGS+=	--with-pgsql=${BUILDLINK_DIR}
-MOD_CPPFLAGS+=		-I${BUILDLINK_DIR}/include/pgsql
+CONFIGURE_ARGS+=	--with-pgsql=${BUILDLINK_PREFIX.postgresql-lib}
+MOD_CPPFLAGS+=		-I${BUILDLINK_PREFIX.postgresql-lib}/include/pgsql
 MOD_LIBS+=		-lpq -lcrypt
 
-.include "../../databases/postgresql-lib/buildlink.mk"
+.include "../../databases/postgresql-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

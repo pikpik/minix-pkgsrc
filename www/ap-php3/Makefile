@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/01/10 13:18:06 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/02/28 15:07:16 jlam Exp $
 #
 
 PKGNAME=		ap-php-${BASE_VERS}
 PKGREVISION=		1
 COMMENT=		Apache module for PHP3
 
-USE_BUILDLINK_ONLY=	yes
+USE_BUILDLINK2=		yes
 
 .include "../../www/php3/Makefile.common"
 
@@ -17,5 +17,5 @@ CPPFLAGS+=		-DPHP_INTERNAL_FUNCS
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libphp3.so ${PREFIX}/lib/httpd/mod_php3.so
 
-.include "../../www/apache/buildlink.mk"
+.include "../../www/apache/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
