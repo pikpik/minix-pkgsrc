@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/07/07 14:39:33 he Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:18:00 tv Exp $
 #
 
 DISTNAME=	scotty-${DIST_VERS}
@@ -26,7 +26,6 @@ CONFIGURE_ARGS+=--with-tcl-config=${BUILDLINK_PREFIX.tcl}/lib	\
 CONFIGURE_ENV+=	TARGET=scotty
 
 USE_LIBTOOL=	yes
-NO_EXPORT_CPP=	yes
 
 .include "../../lang/tcl/buildlink3.mk"
 
