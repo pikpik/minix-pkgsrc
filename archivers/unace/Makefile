@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/10/31 14:44:42 tv Exp $
+# $NetBSD: Makefile,v 1.6 2001/11/06 22:10:21 jlam Exp $
 #
 
 DISTNAME=	unace-1.2b
+PKGNAME=	unace-1.2.2
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=utils/compress/}
 
