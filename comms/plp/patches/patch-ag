@@ -1,8 +1,8 @@
 $NetBSD$
 
---- rfsv/rfsv16.cc.orig	Wed Nov  3 00:01:01 1999
-+++ rfsv/rfsv16.cc	Tue Oct 10 15:06:29 2000
-@@ -113,7 +113,7 @@
+--- rfsv/rfsv16.cc.orig	1999-11-02 23:01:01.000000000 +0100
++++ rfsv/rfsv16.cc
+@@ -113,7 +113,7 @@ int rfsv16::dir(const char* dirName, buf
        if (version != 2) return 1;
        int status = a.getWord(2);
        long size = a.getDWord(4);
@@ -11,3 +11,12 @@ $NetBSD$
        const char *s = a.getString(16);
        a.discardFirstBytes(17+strlen(s));
  
+@@ -238,7 +238,7 @@ int rfsv16::write(const char* localName,
+   }
+   unsigned char * buff = new unsigned char [RFSV_SENDLEN];
+   while (ip &&!ip.eof()) {
+-    ip.read(buff, RFSV_SENDLEN);
++    ip.read((char *)buff, RFSV_SENDLEN);
+     bufferStore tmp(buff, ip.gcount());
+     if (tmp.getLen() == 0) break;
+     bufferStore a;

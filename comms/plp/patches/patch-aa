@@ -1,6 +1,6 @@
 $NetBSD$
 
---- defaults.h.orig	Tue Nov  2 20:51:01 1999
+--- defaults.h.orig	1999-11-02 21:51:01.000000000 +0100
 +++ defaults.h
 @@ -19,7 +19,7 @@
  
