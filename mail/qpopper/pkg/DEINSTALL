@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+PKGNAME=$1
+STAGE=$2
+
+QPOPPER_USER=@QPOPPER_USER@
+
+case "${STAGE}" in
+DEINSTALL)
+	cat <<EOF
+===========================================================================
+
+If you won't be using ${PKGNAME} any longer, you may want to remove
+user "${QPOPPER_USER}".
+
+===========================================================================
+EOF
+	;;
+esac
