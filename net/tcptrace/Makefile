@@ -1,4 +1,4 @@
-#	$NetBSD$
+#	$NetBSD: Makefile,v 1.2 1997/12/14 22:42:57 thorpej Exp $
 #
 # New ports collection makefile for:	tcptrace
 # Version required:	4.1.3
@@ -22,7 +22,7 @@ ALL_TARGET=	tcptrace
 
 DOCFILES=	COPYRIGHT README README.tput_graphs
 
-install:
+post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tcptrace ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/tcptrace
