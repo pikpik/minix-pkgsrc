@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/01/29 21:45:43 jtb Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 18:22:31 wiz Exp $
 
 DISTNAME=		ntl-5.0c
 CATEGORIES=		math devel
@@ -11,11 +11,12 @@ COMMENT=		C++ library for doing number theory
 DEPENDS+=		gmp>=3.1.1:../../devel/gmp
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-NO_CONFIGURE=		YES
+
+NO_CONFIGURE=		#defined
+
 MAKEFILE=		makefile
+
 EVAL_PREFIX+=		GMP_PREFIX=gmp
-MAKE_ENV+=		"INSTALL_DATA=${INSTALL_DATA}"
-MAKE_ENV+=		"INSTALL_DATA_DIR=${INSTALL_DATA_DIR}"
 
 .include "../../mk/bsd.pkg.mk"
 
