@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/06/26 17:56:58 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/08/29 22:41:11 jlam Exp $
 #
 
 DISTNAME=	kulki-1.01
@@ -29,6 +29,6 @@ do-install:
 	cd ${PREFIX}/share/kulki &&				\
 		( ${GUNZIP_CMD} -c ${WRKSRC}/images.tgz | ${GTAR} xf - )
 
-.include "../../x11/qt2-libs/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../x11/qt2-libs/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

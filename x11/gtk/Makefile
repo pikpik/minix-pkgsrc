@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2001/08/29 22:41:29 jlam Exp $
+# $NetBSD: Makefile,v 1.66 2001/10/03 22:36:41 jlam Exp $
 
 DISTNAME=		gtk+-1.2.10
 CATEGORIES=		x11
@@ -62,7 +62,7 @@ post-install:
 	${LN} -fs ${PREFIX}/share/aclocal/gtk.m4 \
 	  ${LOCALBASE}/share/aclocal/gtk.m4
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/glib/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

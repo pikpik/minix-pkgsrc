@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2001/09/08 19:55:39 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2001/09/09 20:36:13 agc Exp $
 #
 
 DISTNAME=		snd
@@ -25,7 +25,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${HTMLDIR}
 	cd ${WRKSRC} ; ${INSTALL_DATA} *.gif *.html *.txt README.Snd ${HTMLDIR}
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/motif.buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

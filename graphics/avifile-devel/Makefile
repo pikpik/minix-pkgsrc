@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/08/29 22:41:15 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2001/09/15 13:47:49 zuntum Exp $
 #
 
 DISTNAME=	avifile-0.6.20010814
@@ -62,6 +62,6 @@ CONFIGURE_ARGS+=	--with-qt-dir="${BUILDLINK_DIR}/qt2"
 pre-configure:
 	cd ${WRKSRC} && ${SH} autogen.sh
 
-.include "../../devel/SDL/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../devel/SDL/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

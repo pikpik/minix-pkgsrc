@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/06/11 06:34:28 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2001/10/04 19:20:05 rh Exp $
 #
 
 DISTNAME=		libglade-0.17
@@ -23,9 +23,9 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 pre-configure:
 	${RM} ${WRKSRC}/libgladeConf.sh
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
 .include "../../x11/gnome-libs/buildlink.mk"
 .include "../../audio/esound/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

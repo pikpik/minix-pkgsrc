@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/07/09 15:43:14 zuntum Exp $
+# $NetBSD: Makefile,v 1.7 2001/08/29 22:41:32 jlam Exp $
 
 DISTNAME=	xteddy-1.1
 CATEGORIES=	x11 games
@@ -15,6 +15,6 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy/pixmaps
 
-.include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../graphics/xpm/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/09/27 23:18:01 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2001/10/04 10:18:11 martti Exp $
 
 .include		"../vim-share/Makefile.common"
 
@@ -27,7 +27,7 @@ post-install:
 		${LN} -s vim ${PREFIX}/bin/$$f;				\
 	done
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

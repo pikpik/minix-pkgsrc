@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/29 04:54:56 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/08/29 22:41:22 jlam Exp $
 
 DISTNAME=	amaterus-0.34.1
 CATEGORIES=	wm
@@ -16,7 +16,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/amaterus
 	${INSTALL_DATA} ${WRKSRC}/README.en ${PREFIX}/share/doc/amaterus
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

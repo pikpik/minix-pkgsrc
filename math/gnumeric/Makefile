@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2001/10/04 19:28:42 rh Exp $
+# $NetBSD: Makefile,v 1.37 2001/10/20 18:48:39 rh Exp $
 #
 
 DISTNAME=		gnumeric-0.71
@@ -32,6 +32,7 @@ pre-configure:
 		${MV} $$i.fixed $$i ;					\
 	done
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
 .include "../../devel/libglade/buildlink.mk"
@@ -39,5 +40,4 @@ pre-configure:
 .include "../../devel/oaf/buildlink.mk"
 .include "../../devel/gal/buildlink.mk"
 .include "../../lang/gb/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

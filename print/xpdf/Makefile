@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/09/27 23:18:14 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/04 11:58:37 wiz Exp $
 # 
 
 DISTNAME=	xpdf-0.92
@@ -37,8 +37,8 @@ post-install:
 		${FILESDIR}/xpdf-app-defaults				\
 		> ${X11PREFIX}/lib/X11/app-defaults/Xpdf
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../graphics/freetype-lib/buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
 .include "../../textproc/t1lib/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

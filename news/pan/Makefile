@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/15 07:24:38 rh Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/19 11:35:59 rh Exp $
 #
 
 DISTNAME=		pan-0.10.0.93
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		LOCALEDIR="${PKGLOCALEDIR}"
 CPPFLAGS+=		-D_POSIX_THREAD_SYSCALL_SOFT=1
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../x11/gnome-core/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

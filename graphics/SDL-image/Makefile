@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/07 11:32:23 rh Exp $
+# $NetBSD: Makefile,v 1.2 2001/08/29 22:41:15 jlam Exp $
 #
 
 DISTNAME=		SDL_image-1.2.0
@@ -16,8 +16,8 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 USE_BUILDLINK_ONLY=	YES
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../graphics/png/buildlink.mk"
 .include "../../devel/SDL/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/06/29 04:54:51 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/08/29 22:41:08 jlam Exp $
 
 DISTNAME=		gcvs-1.0a7
 CATEGORIES=		devel
@@ -22,7 +22,7 @@ post-patch:
 	${MV} -f ${WRKSRC}/configure.done ${WRKSRC}/configure
 	${CHMOD} +x ${WRKSRC}/configure
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../lang/tcl/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

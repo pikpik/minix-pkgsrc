@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/10/05 13:33:28 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/10/05 21:49:30 tron Exp $
 
 DISTNAME=	wterm-6.2.9
 CATEGORIES=	x11
@@ -25,6 +25,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/wtermthai.tiff \
 		${PREFIX}/share/WindowMaker/Icons
 
-.include "../../wm/windowmaker/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../wm/windowmaker/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/08/23 04:26:51 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2001/08/29 22:41:04 jlam Exp $
 
 DISTNAME=		felt-3.05.src
 PKGNAME=		felt-3.05
@@ -36,7 +36,7 @@ post-install:
 		COPYING CHANGELOG TODO ${PREFIX}/share/doc/felt
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/felt
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/readline/buildlink.mk"
 .include "../../mk/xaw.buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

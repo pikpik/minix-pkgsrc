@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:15 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/09/12 03:06:04 jlam Exp $
 #
 
 DISTNAME=	Ngraph-6.3.06-src
@@ -24,6 +24,6 @@ post-extract:
 post-install:
 	${GTAR} -C ${PREFIX}/libexec/Ngraph -xzf ${DISTDIR}/Ngraph-6.3-doc.tar.gz
 
-.include "../../mk/motif.buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/08/29 22:41:20 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/10/15 05:31:46 kei Exp $
 
 DISTNAME=		sylpheed-0.6.3
 CATEGORIES=		mail news x11
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--enable-nls
 CONFIGURE_ARGS+=	--enable-ipv6
 CONFIGURE_ARGS+=	--enable-ssl
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../security/openssl/buildlink.mk"
 .include "../../x11/gtk/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

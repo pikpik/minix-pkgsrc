@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/06/28 20:02:56 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2001/08/29 22:41:16 jlam Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/02/14 07:55:45 asami Exp
 #
 
@@ -31,10 +31,10 @@ GD_MAJOR=	1
 GD_MINOR=	9
 MAKE_ENV+=	GD_MAJOR="${GD_MAJOR}" GD_MINOR="${GD_MINOR}" COMPILER="${CC}"
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/zlib/buildlink.mk"
 .include "../../graphics/freetype-lib/buildlink.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../graphics/png/buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

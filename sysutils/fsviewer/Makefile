@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/07/22 17:42:08 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/05 14:16:04 wiz Exp $
 #
 
 DISTNAME=	FSViewer.app-0.2.3
@@ -26,6 +26,6 @@ post-install:
 	cd ${PREFIX}/GNUstep/Apps/FSViewer.app && \
 		${PAX} -zrf ${_DISTDIR}${DISTSUBDIR}/icons.tar.gz *.xpm *.tif
 
-.include "../../wm/windowmaker/buildlink.mk"
 .include "../../mk/x11.buildlink.mk"
+.include "../../wm/windowmaker/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

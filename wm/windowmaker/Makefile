@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2001/10/05 12:18:57 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2001/10/07 13:08:32 rh Exp $
 
 DISTNAME=		WindowMaker-0.70.0
 PKGNAME=		windowmaker-0.70.0
@@ -79,6 +79,7 @@ post-install:
 		FAQ FAQ.I18N \
 		${PREFIX}/share/doc/WindowMaker
 
+.include "../../mk/x11.buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../graphics/hermes/buildlink.mk"
 .include "../../graphics/libungif/buildlink.mk"
@@ -86,5 +87,4 @@ post-install:
 .include "../../graphics/png/buildlink.mk"
 .include "../../graphics/tiff/buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
