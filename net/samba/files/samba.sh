@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# $NetBSD: samba.sh,v 1.8 2001/11/22 00:58:24 lukem Exp $
+# $NetBSD: samba.sh,v 1.9 2002/01/10 12:01:37 jlam Exp $
 #
 # KEYWORD: nostart
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	. /etc/rc.subr
 fi
@@ -40,7 +40,7 @@ reload_cmd="forward_commands"
 status_cmd="forward_commands"
 extra_commands="reload status"
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	run_rc_command "$1"
 else

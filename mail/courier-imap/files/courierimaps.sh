@@ -1,13 +1,13 @@
 #! /bin/sh
 #
-# $NetBSD: courierimaps.sh,v 1.3 2002/01/02 22:19:39 jlam Exp $
+# $NetBSD: courierimaps.sh,v 1.4 2002/01/22 22:08:52 jlam Exp $
 #
 # Courier IMAP/SSL services daemon
 #
 # PROVIDE: courierimaps
 # REQUIRE: authdaemond
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	. /etc/rc.subr
 fi
@@ -34,7 +34,7 @@ courier_doit()
 	${ctl_command} ${action}
 }
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	load_rc_config $name
 	run_rc_command "$1"

@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $NetBSD: smbd.sh,v 1.4 2001/11/21 17:17:44 jlam Exp $
+# $NetBSD: smbd.sh,v 1.5 2001/11/21 21:38:54 jlam Exp $
 #
 # PROVIDE: smbd
 # REQUIRE: DAEMON
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	. /etc/rc.subr
 fi
@@ -18,7 +18,7 @@ extra_commands="reload"
 command_args="-D"		# _must_ start as daemon from rc.d;
 				# add more flags through ${${name}_flags}
 
-if [ -e /etc/rc.subr ]
+if [ -f /etc/rc.subr ]
 then
 	load_rc_config $name
 	run_rc_command "$1"
