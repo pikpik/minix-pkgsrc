@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:01:25 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:21:02 agc Exp $
 #
 
 DISTNAME=		Msgcat-1.01
@@ -12,7 +12,7 @@ HOMEPAGE=
 COMMENT=		Perl5 module to use the message catalog functions
 
 WRKSRC=			${WRKDIR}/Msgcat
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Locale/Msgcat/.packlist
 
 .include "../../lang/perl5/module.mk"

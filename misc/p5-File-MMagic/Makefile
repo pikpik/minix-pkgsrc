@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/08/01 21:04:20 jdolecek Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/21 17:22:05 taca Exp $
 
 DISTNAME=		File-MMagic-1.22
 PKGNAME=		p5-${DISTNAME}
@@ -10,7 +10,7 @@ MAINTAINER=		kei@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/author/KNOK/
 COMMENT=		Perl5 module to guess file types
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/File/MMagic/.packlist
 
 .include "../../lang/perl5/module.mk"

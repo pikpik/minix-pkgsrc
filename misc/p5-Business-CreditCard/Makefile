@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/21 17:01:22 martti Exp $
+# $NetBSD: Makefile,v 1.16 2003/09/18 18:51:37 wiz Exp $
 #
 
 DISTNAME=		Business-CreditCard-0.27
@@ -11,7 +11,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/Business-CreditCard/CreditCard.html
 COMMENT=		Perl5 module to validate/generate credit card checksums/names
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Business/CreditCard/.packlist
 
 pre-configure:

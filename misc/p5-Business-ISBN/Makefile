@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:49:38 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:01:22 martti Exp $
 #
 
 DISTNAME=		Business-ISBN-1.60
@@ -11,7 +11,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/Business-ISBN/ISBN.html
 COMMENT=		Perl5 module to work with International Standard Book Numbers (ISBNs)
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Business/ISBN/.packlist
 
 .include "../../lang/perl5/module.mk"
