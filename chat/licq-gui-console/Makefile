@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/09/28 09:13:56 jlam Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -14,12 +14,15 @@ COMMENT=	Curses GUI for licq
 
 DEPENDS+=	licq-core-[0-9]*:../licq-core
 
-USE_BUILDLINK2=	YES
-GNU_CONFIGURE=	YES
-WRKSRC=		${WRKDIR:=/${DISTNAME}/plugins/console}
+USE_BUILDLINK3=		YES
+GNU_CONFIGURE=		YES
+USE_LANGUAGES=		c c++
+USE_LIBTOOL=		YES
+SHLIBTOOL_OVERRIDE=	libtool
+WRKSRC=			${WRKDIR:=/${DISTNAME}/plugins/console}
 
 INCOMPAT_CURSES=	NetBSD-1.4*-* NetBSD-1.5*-* NetBSD-1.6[-_.]*-* NetBSD-1.6[A-Q]-*
 
-.include "../../devel/ncurses/buildlink2.mk"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
