@@ -1,0 +1,4 @@
+comment $NetBSD: $
+bin/xcolors
+lib/X11/app-defaults/Xcolors
+man/man1/xcolors.1.gz
