@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.613 2005/02/21 15:37:55 taca Exp $
+# $NetBSD: Makefile,v 1.614 2005/02/22 00:35:52 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -480,6 +480,7 @@ SUBDIR+=	physfs
 SUBDIR+=	pilrc
 SUBDIR+=	pkgconfig
 SUBDIR+=	ply
+SUBDIR+=	pmccabe
 SUBDIR+=	popt
 SUBDIR+=	prc-tools
 SUBDIR+=	prcs
