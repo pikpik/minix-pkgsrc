@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.264 2004/10/11 15:57:02 minskim Exp $
+# $NetBSD: Makefile,v 1.265 2004/10/11 17:47:45 jmmv Exp $
 
 COMMENT=	System utilities
 
@@ -170,6 +170,7 @@ SUBDIR+=	storage-manager
 SUBDIR+=	stow
 SUBDIR+=	su2
 SUBDIR+=	sux
+SUBDIR+=	swapd
 SUBDIR+=	sysgen
 SUBDIR+=	sysinfo
 SUBDIR+=	tcx
