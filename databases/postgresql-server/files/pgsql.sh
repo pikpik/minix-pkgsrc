@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: pgsql.sh,v 1.15 2002/10/19 19:01:52 jlam Exp $
+# $NetBSD: pgsql.sh,v 1.16 2002/10/19 21:02:53 jlam Exp $
 #
 # PostgreSQL database rc.d control script
 #
@@ -90,7 +90,7 @@ pgsql_doit()
 	case ${action} in
 	start|restart)
 		if [ -n "${pgsql_flags}" ]; then
-			start_command_args="${start_command_args} -o \"${pgsql_flags}\""
+			start_command_args="${start_command_args} -o \\\"${pgsql_flags}\\\""
 		fi
 		command_args="${common_args} ${start_command_args} ${command_args}"
 		;;
