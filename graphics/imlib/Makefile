@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/01/18 19:35:30 tron Exp $
+# $NetBSD: Makefile,v 1.14 1999/01/30 23:18:50 agc Exp $
 #
 
 DISTNAME=	imlib-1.9.0
@@ -15,8 +15,6 @@ DEPENDS+=	gtk+-1.1.12:../../x11/gtk
 DEPENDS+=	tiff-3.4:../../graphics/tiff
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	giflib-3.0:../../graphics/giflib
-
-CONFLICTS=	imlib-*
 
 USE_X11BASE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1998/11/30 19:42:02 tv Exp $
+# $NetBSD: Makefile,v 1.23 1999/01/10 23:52:15 tron Exp $
 #
 
 DISTNAME=	netpbm
@@ -17,8 +17,6 @@ MAINTAINER=	tron@netbsd.org
 DEPENDS+=	tiff-3.4:../../graphics/tiff
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	png-1.0.2:../../graphics/png
-
-CONFLICTS=	netpbm-*
 
 WRKSRC=		${WRKDIR}/netpbm
 MAKE_ENV +=	PREFIX=${PREFIX} MANCP="${INSTALL_MAN}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/06/22 12:58:33 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/11/04 17:25:12 mycroft Exp $
 #
 
 DISTNAME=	arpwatch-2.1a4
@@ -7,8 +7,6 @@ MASTER_SITES=	ftp://ftp.ee.lbl.gov/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	bouyer@netbsd.org
-
-CONFLICTS=	arpwatch-2.0.2
 
 GNU_CONFIGURE=	yes
 

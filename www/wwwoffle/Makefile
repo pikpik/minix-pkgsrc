@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/07/13 18:20:08 tron Exp $
+# $NetBSD: Makefile,v 1.4 1998/08/20 15:17:32 tsarna Exp $
 
 DISTNAME=	wwwoffle-2.2
 CATEGORIES=	www
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	magick@bundy.lip.owl.de
 HOMEPAGE=	http://www.gedanken.demon.co.uk/wwwoffle/
-
-CONFLICTS=	wwwoffle-2.1c
 
 USE_GMAKE=	yes
 NO_CONFIGURE=	yes

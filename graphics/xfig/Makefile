@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/09/13 19:35:06 garbled Exp $
+# $NetBSD: Makefile,v 1.16 1998/10/15 19:51:07 agc Exp $
 #
 
 DISTNAME=		xfig.3.2.2
@@ -15,8 +15,6 @@ DEPENDS+=		transfig-3.2.1:../../print/transfig
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 DEPENDS+=		jpeg-6b:../../graphics/jpeg
 DEPENDS+=		Xaw3d-1.5:../../x11/Xaw3d
-
-CONFLICTS=		xfig-3.2
 
 USE_IMAKE=		yes
 

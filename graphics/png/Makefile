@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/07/24 01:57:00 tv Exp $
+# $NetBSD: Makefile,v 1.11 1998/08/20 15:17:01 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/07/17 15:12:44 max Exp
 #
 
@@ -11,8 +11,6 @@ MAINTAINER=     packages@netbsd.org
 HOMEPAGE=	http://www.cdrom.com/pub/png/
 
 USE_LIBTOOL=	yes
-
-CONFLICTS=	png-0.96
 
 MAKEFILE=       scripts/makefile.std
 

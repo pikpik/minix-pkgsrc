@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 1999/01/04 09:30:46 frueauf Exp $
+# $NetBSD: Makefile,v 1.38 1999/01/20 16:56:00 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 #
 
@@ -22,8 +22,6 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	Xaw3d-1.5:../../x11/Xaw3d
 DEPENDS+=	png-1.0.2:../../graphics/png
 DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
-
-CONFLICTS+=	xemacs-20.3
 
 NOT_FOR_ARCHS=	alpha mips	#fails purespace dumping
 

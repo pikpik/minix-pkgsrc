@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/01/06 12:27:33 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 1999/02/03 13:00:18 frueauf Exp $
 #
 
 DISTNAME=	zircon-1.18.210
@@ -9,8 +9,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://catless.ncl.ac.uk/Programs/Zircon/
 
 DEPENDS+=	tk-8.0p2:../../x11/tk80
-
-CONFLICTS=	zircon-*
 
 IS_INTERACTIVE=	yes
 NO_BUILD=	yes

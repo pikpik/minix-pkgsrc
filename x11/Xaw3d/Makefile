@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1998/07/04 09:37:30 mycroft Exp $
+# $NetBSD: Makefile,v 1.17 1998/07/15 10:45:35 agc Exp $
 #
 
 DISTNAME=	Xaw3d-1.5
@@ -8,7 +8,7 @@ MASTER_SITE_SUBDIR=	widgets/Xaw3d/R6.3
 
 MAINTAINER=	tron@netbsd.org
 
-CONFLICTS=	Xaw-Xpm-1.1 Xaw3d-1.3
+CONFLICTS=	Xaw-Xpm-*
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xc/lib/Xaw3d

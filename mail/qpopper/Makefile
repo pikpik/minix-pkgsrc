@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/08/20 15:17:10 tsarna Exp $
+# $NetBSD: Makefile,v 1.12 1998/09/08 22:15:21 tron Exp $
 #
 
 DISTNAME=		qpopper2.53
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		mellon@fugue.com
 HOMEPAGE=		http://eudora.qualcomm.com/freeware/qpop.html
-
-CONFLICTS=		qpopper2.41beta1 qpopper-2.5 qpopper-2.52
 
 MIRROR_DISTFILE=	no
 

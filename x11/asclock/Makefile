@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/08/17 21:17:17 tron Exp $
+# $NetBSD: Makefile,v 1.11 1999/01/30 23:18:55 agc Exp $
 #
 
 DISTNAME=		asclock
@@ -10,8 +10,6 @@ MASTER_SITE_SUBDIR=	X11/clocks
 MAINTAINER=		hubertf@netbsd.org
 
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
-
-CONFLICTS=		asclock-10
 
 # Choose language from:
 # 1) english [DEFAULT]

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1999/01/08 00:41:41 tron Exp $
+# $NetBSD: Makefile,v 1.18 1999/02/12 18:32:38 tron Exp $
 
 DISTNAME=	mutt-${MUTT_VERSION}
 CATEGORIES=	mail
@@ -12,8 +12,6 @@ MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.mutt.org/
 
 DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
-
-CONFLICTS=	mutt-*
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-curses=${PREFIX} --with-exec-shell=/bin/ksh \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/12/04 11:09:46 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/12/07 11:11:40 frueauf Exp $
 #
 
 DISTNAME=       mos14src
@@ -12,8 +12,6 @@ MAINTAINER=	lamj@stat.cmu.edu
 HOMEPAGE=	http://www.dina.kvl.dk/~sestoft/mosml.html
 
 BUILD_DEPENDS+=	perl:../../lang/perl5
-
-CONFLICTS=	moscow_ml-1.42
 
 ALL_TARGET=	clean world
 
