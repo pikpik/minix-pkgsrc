@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:57 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/11/22 12:06:45 agc Exp $
 
-DISTNAME=	asp2php-0.75.24
+DISTNAME=	asp2php-0.75.25
 CATEGORIES=	www
 MASTER_SITES=	http://home.swbell.net/mikekohn/asp2php/
 
