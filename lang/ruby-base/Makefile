@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/20 12:19:17 agc Exp $
+# $NetBSD: Makefile,v 1.23 2004/02/20 15:32:52 taca Exp $
 # FreeBSD Id: ports/lang/ruby/Makefile,v 1.39 2000/10/20 19:56:03 knu Exp
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.ruby-lang.org/en/
 COMMENT= 	Base installation of Ruby
 
 WRKSRC=		${RUBY_WRKSRC}
+USE_BUILDLINK3=	yes
 DIST_SUBDIR=	ruby
 USE_RUBY=	yes
 RUBY_DEPENDS=	no
@@ -106,5 +107,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${f:C/^(doc|ext)\///}
 .endfor
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
