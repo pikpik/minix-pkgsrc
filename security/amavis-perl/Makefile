@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/06/09 09:36:20 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:52:50 grant Exp $
 
 DISTNAME=	amavisd-${VERSION}
 PKGNAME=	amavis-perl-${VERSION}
@@ -111,5 +111,5 @@ do-install:
 
 .include "../../mk/bsd.pkg.mk"
 .if defined(USE_MILTER) && ${USE_MILTER} == "YES"
-.include "../../mk/pthread.buildlink2.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .endif
