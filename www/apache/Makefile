@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 1998/06/22 13:14:31 agc Exp $
+# $NetBSD: Makefile,v 1.14 1998/07/21 21:34:09 cjs Exp $
 #
 
-DISTNAME=       apache_1.3.0
-PKGNAME=        apache-1.3.0
+DISTNAME=       apache_1.3.1
+PKGNAME=        apache-1.3.1
 CATEGORIES=	www
 MASTER_SITES=   http://www.apache.org/dist/
 
