@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/01/18 14:37:20 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2002/03/13 17:36:43 fredb Exp $
 
 DISTNAME=	xchat-1.8.7
 PKGREVISION=	1
@@ -35,13 +35,11 @@ CONFIGURE_ARGS+=	--enable-ipv6
 CONFIGURE_ARGS+=	--enable-openssl=${BUILDLINK_DIR}
 .endif
 
-# Prevent invokation of "auto*" which caused build failures due to insufficient
-# arguments and environment.
+# XXX
+# Is this needed?
 pre-configure:
 	@cd ${WRKSRC} && \
-	${RM} -f po/zh_TW.Big5.po && \
-	${TOUCH} aclocal.m4 stamp-h.in configure && \
-	${FIND} . -name Makefile.in | ${XARGS} ${TOUCH}
+	${RM} -f po/zh_TW.Big5.po
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xchat
