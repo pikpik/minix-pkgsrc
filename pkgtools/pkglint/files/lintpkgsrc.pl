@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.72 2002/11/14 04:01:56 wiz Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.73 2003/01/02 22:17:46 atatat Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -226,7 +226,7 @@ if ($opt{D} && @ARGV)
 		    }
 		print "\n";
 		}
-	    print "\nRunning 'make fetch-list | sh' for each package:\n";
+	    print "\nRunning '@MAKE@ fetch-list | sh' for each package:\n";
 	    foreach my $pkgver (@update)
 		{
 		my($pkgdir);
@@ -236,7 +236,7 @@ if ($opt{D} && @ARGV)
 		    { fail('Unable to determine '.$pkgver->pkg.' directory'); }
 		print "$pkgsrcdir/$pkgdir\n";
 		safe_chdir("$pkgsrcdir/$pkgdir");
-		system('make fetch-list | sh');
+		system('@MAKE@ fetch-list | sh');
 		}
 	    }
 	}
@@ -716,7 +716,7 @@ sub parse_makefile_pkgsrc
 	{
 	# invoke make here as a last resort
 	my($pkgsrcdir) = ($file =~ m:(/.*)/:);
-	my($makepkgname) = `cd $pkgsrcdir ; make show-vars VARNAMES=PKGNAME`;
+	my($makepkgname) = `cd $pkgsrcdir ; @MAKE@ show-vars VARNAMES=PKGNAME`;
 	if ($makepkgname =~ /(.*)-(\d.*)/)
 	    { $pkgname = $makepkgname; }
 	}
