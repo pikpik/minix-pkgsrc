@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/03/27 08:54:55 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/04/14 14:06:52 pooka Exp $
 #
 
 DISTNAME=		nethack-3.3.0
@@ -16,16 +16,23 @@ INSTALL_TARGET=		manpages install-dat
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+MAKE_FLAGS+=     	CC=gcc
+.endif
+
 pre-configure:
 	@${CHMOD} 755 ${WRKSRC}/sys/unix/setup.sh
 
 post-patch:
-	@${MV} ${WRKSRC}/include/config.h ${WRKSRC}/foo
-	@${SED} -e 's@XXXPREFIXXXX@${PREFIX}@g' <${WRKSRC}/foo> ${WRKSRC}/include/config.h
-	@${RM} -f ${WRKSRC}/foo
+	@${MV} ${WRKSRC}/include/config.h ${WRKSRC}/config.h-pre
+	@${SED} -e 's@XXXPREFIXXXX@${PREFIX}@g'				\
+		-e 's|@GZIP_PROGRAM@|'`${ECHO} ${GZIP_CMD} | ${AWK} '{ print $$1 }'`'|g' \
+		${WRKSRC}/config.h-pre > ${WRKSRC}/include/config.h
+	@${RM} -f ${WRKSRC}/config.h-pre
 
 post-build:
-	@cd ${PKGDIR} ; \
-	${SED} -e 's#@PREFIX@#${PREFIX}#' < DEINSTALL > ${DEINSTALL_FILE}
+	${SED} -e 's|@PREFIX@|${PREFIX}|' ${PKGDIR}/DEINSTALL > ${DEINSTALL_FILE}
 
 .include "../../mk/bsd.pkg.mk"
