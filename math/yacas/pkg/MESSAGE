@@ -1,4 +1,6 @@
-Note:  For proper operation, your terminal setting must have "-extproc"
+ $NetBSD$
+
+ Note:  For proper operation, your terminal setting must have "-extproc"
  set.  This can be checked with "stty -a".  Alternatively, you can run
  the script "yacas.sh" instead of directly running the binary program 
  "yacas".
