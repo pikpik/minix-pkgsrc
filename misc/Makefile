@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.24 1998/12/04 03:49:30 hubertf Exp $
+#	$NetBSD: Makefile,v 1.25 1998/12/05 15:53:43 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += amanda
@@ -18,7 +18,6 @@
     SUBDIR += fd
     SUBDIR += fep
     SUBDIR += figlet
-    SUBDIR += gettext
     SUBDIR += git
     SUBDIR += ical
     SUBDIR += jive
