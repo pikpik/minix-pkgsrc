@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.938 2002/03/04 11:47:25 seb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.939 2002/03/04 11:56:54 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -3645,7 +3645,7 @@ fake-pkg: ${PLIST} ${DESCR} ${MESSAGE}
 	else								\
 		files="";						\
 	fi;								\
-	${GREP} '\$$NetBSD' $$files ${PKGDIR}/* | ${SED} -e 's|^${_PKGSRCDIR}/||' > ${BUILD_VERSION_FILE}; \
+	${GREP} '\$$NetBSD' $$files ${PKGDIR}/* 2> /dev/null | ${SED} -e 's|^${_PKGSRCDIR}/||' > ${BUILD_VERSION_FILE}; \
 	files="";							\
 	if [ -f ${DISTINFO_FILE} ]; then				\
 		for f in `${AWK} 'NF == 4 && $$3 == "=" { gsub("[()]", "", $$2); print $$2 }' < ${DISTINFO_FILE}`; do \
