@@ -1,4 +1,4 @@
-/*	$NetBSD: cpio.c,v 1.2 2003/09/05 18:40:50 jlam Exp $	*/
+/*	$NetBSD: cpio.c,v 1.17 2003/10/27 00:12:41 lukem Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -36,15 +36,19 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
+
 #include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-#if defined(__RCSID) && !defined(lint)
+#if !defined(lint)
 #if 0
 static char sccsid[] = "@(#)cpio.c	8.1 (Berkeley) 5/31/93";
 #else
-__RCSID("$NetBSD: cpio.c,v 1.2 2003/09/05 18:40:50 jlam Exp $");
+__RCSID("$NetBSD: cpio.c,v 1.17 2003/10/27 00:12:41 lukem Exp $");
 #endif
 #endif /* not lint */
 

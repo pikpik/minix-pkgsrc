@@ -1,4 +1,4 @@
-/*	$NetBSD: pax.h,v 1.6 2004/04/12 12:34:16 heinz Exp $	*/
+/*	$NetBSD: pax.h,v 1.24 2004/05/11 17:12:26 christos Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -37,14 +37,10 @@
 
 #if HAVE_CONFIG_H
 #include "config.h"
-#else
-#define HAVE_LUTIMES 1
-#define HAVE_STRUCT_STAT_ST_FLAGS 1
-#define HAVE_SYS_MTIO_H 1
 #endif
 
 /* Tape support only available if one of the following is available. */
-#if (HAVE_SYS_MTIO_H || HAVE_SYS_TAPE_H) && ! defined(UNIXWARE)
+#if (HAVE_SYS_MTIO_H || HAVE_SYS_TAPE_H) && !defined(UNIXWARE)
 #define SUPPORT_TAPE 1
 #endif
 

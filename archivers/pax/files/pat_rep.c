@@ -1,4 +1,4 @@
-/*	$NetBSD: pat_rep.c,v 1.2 2003/09/05 18:40:54 jlam Exp $	*/
+/*	$NetBSD: pat_rep.c,v 1.21 2003/10/27 00:12:41 lukem Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -36,15 +36,19 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if HAVE_NBTOOL_CONFIG_H
+#include "nbtool_config.h"
+#endif
+
 #include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-#if defined(__RCSID) && !defined(lint)
+#if !defined(lint)
 #if 0
 static char sccsid[] = "@(#)pat_rep.c	8.2 (Berkeley) 4/18/94";
 #else
-__RCSID("$NetBSD: pat_rep.c,v 1.2 2003/09/05 18:40:54 jlam Exp $");
+__RCSID("$NetBSD: pat_rep.c,v 1.21 2003/10/27 00:12:41 lukem Exp $");
 #endif
 #endif /* not lint */
 
