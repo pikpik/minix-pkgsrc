@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2002/08/21 08:11:03 cjep Exp $
+# $NetBSD: Makefile,v 1.82 2002/08/28 19:18:14 seb Exp $
 #
 
 COMMENT=	Mathematics
@@ -9,6 +9,8 @@ SUBDIR+=	R-VR
 SUBDIR+=	R-boot
 SUBDIR+=	R-cluster
 SUBDIR+=	R-foreign
+SUBDIR+=	R-grid
+SUBDIR+=	R-lattice
 SUBDIR+=	R-mgcv
 SUBDIR+=	R-nlme
 SUBDIR+=	R-recommended
