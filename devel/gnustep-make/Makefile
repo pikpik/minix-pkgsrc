@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/12/08 15:31:40 adam Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/22 08:24:29 grant Exp $
 #
 
 DISTNAME=	gnustep-make-1.8.0
@@ -9,6 +9,9 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	GNUstep makefile package
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		YES
 MAKEFILE=		GNUmakefile
