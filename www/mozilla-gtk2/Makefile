@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/12/25 15:39:42 taya Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/24 14:08:28 taya Exp $
 
 MOZILLA=	mozilla-gtk2
 MOZILLA_BIN=	mozilla-bin
@@ -18,5 +18,6 @@ BUILD_CALENDAR=	# defined
 
 MOZILLA_USE_GTK2=	# defined
 MOZILLA_USE_XFT=	YES
+CONFIGURE_ARGS+=	--disable-gnomevfs
 
 .include	"../../www/mozilla/Makefile.common"
