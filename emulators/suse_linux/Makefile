@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 1999/05/21 01:00:58 tron Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/24 20:39:41 tv Exp $
 
 DISTNAME=		suse_linux-6.1
 CATEGORIES=		emulators
 MASTER_SITES=		# empty
 DISTFILES=		# empty
+ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.suse.com/

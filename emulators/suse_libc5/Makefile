@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/05/21 00:48:45 tron Exp $
+# $NetBSD: Makefile,v 1.7 1999/05/24 20:39:41 tv Exp $
 
 DISTNAME=		shlibs5
 PKGNAME=		suse_libc5-6.1
@@ -6,6 +6,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		ftp://ftp.suse.com/pub/suse/i386/6.1/suse/a1/ \
 			ftp://ftp.cs.unm.edu/mirrors/SuSE61/suse/a1/
 EXTRACT_SUFX=		.rpm
+ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.suse.com/
