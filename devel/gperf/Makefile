@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/11/03 17:59:28 gavan Exp $
+# $NetBSD: Makefile,v 1.15 2003/12/03 15:56:16 adam Exp $
 #
 
 DISTNAME=	gperf-3.0.1
@@ -9,6 +9,9 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gperf/gperf.html
 COMMENT=	GNU perfect hash function generator
 
+PKG_INSTALLATION_TYPES= overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 USE_GCC_SHLIB=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--mandir="${PREFIX}/man"
