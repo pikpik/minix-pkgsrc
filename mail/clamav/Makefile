@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/20 01:27:17 chris Exp $
+# $NetBSD: Makefile,v 1.5 2003/09/28 23:39:24 chris Exp $
 
 DISTNAME=	clamav-0.60
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=clamav/}
 
 MAINTAINER=	david@netbsd-fr.org
-HOMEPAGE=	http://clamav.elektrapro.com/
+HOMEPAGE=	http://www.clamav.net/
 COMMENT=	Anti-virus toolkit
 
 AUTOCONF_REQD=		2.53	# clamav used 2.53
