@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.228 2004/04/02 12:20:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.229 2004/04/06 09:49:22 jmmv Exp $
 
 COMMENT=	System utilities
 
@@ -168,6 +168,7 @@ SUBDIR+=	ups-nut
 SUBDIR+=	ups-nut-cgi
 SUBDIR+=	usbutil
 SUBDIR+=	user
+SUBDIR+=	user_darwin
 SUBDIR+=	vcdimager
 SUBDIR+=	vcdimager-devel
 SUBDIR+=	vidc-tools
