@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/11 14:02:53 agc Exp $
 #
 
 DISTNAME=		tik-0.90
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tik/}
 
-MAINTAINER=		grant@grunta.com
+MAINTAINER=		grant@netbsd.org
 HOMEPAGE=		http://tik.sourceforge.net/
 COMMENT=		Tcl/Tk AOL Instant Messenger client
 
