@@ -50,6 +50,7 @@ ${PKGLOCALEDIR}/locale/it/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/ja/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/ko/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/lt/LC_MESSAGES/gail.mo
+${PKGLOCALEDIR}/locale/mi/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/mn/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/ms/LC_MESSAGES/gail.mo
 ${PKGLOCALEDIR}/locale/nl/LC_MESSAGES/gail.mo
