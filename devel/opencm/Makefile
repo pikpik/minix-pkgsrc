@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/02/14 22:50:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:40:36 jmmv Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-1-src
@@ -17,6 +17,7 @@ USE_BUILDLINK2=	YES
 USE_PKGINSTALL=	YES
 USE_GMAKE=	YES
 GNU_CONFIGURE=	YES
+CONFIGURE_ARGS+=	--infodir=${PREFIX}/info
 
 OPENCM_VERSION=	opencm-0.1.2alpha4
 
