@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/spice3
 bin/nutmeg
 bin/sconvert
