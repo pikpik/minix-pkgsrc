@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/03 15:07:23 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:51:15 zuntum Exp $
 bin/gnome-iconedit
 etc/CORBA/servers/gnome-iconedit.gnorba
 share/gnome/apps/Graphics/gnome-iconedit.desktop
@@ -30,4 +30,4 @@ share/pixmaps/gnome-iconedit/selector.png
 @dirrm share/pixmaps/gnome-iconedit
 @dirrm share/gnome/help/gnome-iconedit/C
 @dirrm share/gnome/help/gnome-iconedit
-@unexec rmdir -p share/gnome/apps/Graphics 2>/dev/null || true
+@unexec ${RMDIR} -p share/gnome/apps/Graphics 2>/dev/null || true

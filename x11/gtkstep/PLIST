@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2000/11/27 18:23:03 mycroft Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:10:58 zuntum Exp $
 lib/gtk/themes/engines/libstep.la
 lib/gtk/themes/engines/libstep.a
 lib/gtk/themes/engines/libstep.so
@@ -7,4 +7,4 @@ share/themes/Step/README.html
 share/themes/Step/gtk/gtkrc
 @dirrm share/themes/Step/gtk
 @dirrm share/themes/Step
-@unexec rmdir %D/lib/gtk/themes/engines %D/lib/gtk/themes %D/lib/gtk 2>/dev/null || true
+@unexec ${RMDIR} %D/lib/gtk/themes/engines %D/lib/gtk/themes %D/lib/gtk 2>/dev/null || true
