@@ -1,1 +1,2 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/04 22:35:40 agc Exp $
+bin/gramofile
