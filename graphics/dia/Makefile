@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/09/01 00:38:08 mjl Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/15 21:43:17 jmcneill Exp $
 
 DISTNAME=		dia-0.90
 # PKGREVISION=		1
@@ -10,8 +10,6 @@ HOMEPAGE=		http://www.lysator.liu.se/~alla/dia/
 COMMENT=		program for creating diagrams of all kinds
 
 BUILD_DEPENDS+=		bison>=1.35:../../devel/bison
-BUILDLINK_DEPENDS.gnome_libs=	gnome-libs>=1.4.1.2nb1:../../x11/gnome-libs
-BUILDLINK_DEPENDS.gdk-pixbuf=	gdk-pixbuf>=0.7.0:../../graphics/gdk-pixbuf
 
 USE_X11=	yes
 USE_GMAKE=	yes
