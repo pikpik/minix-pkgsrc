@@ -1,17 +1,18 @@
 $NetBSD$
 
 --- libguile/gc_os_dep.c.orig	Sat Dec  7 23:41:31 2002
-+++ libguile/gc_os_dep.c	Fri Dec  5 22:55:46 2003
++++ libguile/gc_os_dep.c	Sat Dec  6 14:16:54 2003
 @@ -93,12 +93,27 @@
  #    define OPENBSD
  #    define mach_type_known
  # endif
+-# if defined(__NetBSD__) && defined(m68k)
 +# if defined(__NetBSD__) && defined(__powerpc__)
 +#    define POWERPC
 +#    define NETBSD
 +#    define mach_type_known
 +# endif
- # if defined(__NetBSD__) && defined(m68k)
++# if defined(__NetBSD__) && (defined(m68k) || defined(__m68k__))
  #    define M68K
  #    define NETBSD
  #    define mach_type_known
