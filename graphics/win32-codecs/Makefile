@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/23 11:43:17 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/23 11:44:50 jmmv Exp $
 #
 
 DISTNAME=	win32codecs
@@ -13,6 +13,8 @@ HOMEPAGE=	http://mplayerhq.hu/MPlayer/releases/codecs/
 COMMENT=	Huge compilation of Win32 binary codecs
 
 ONLY_FOR_PLATFORM=	*-*-i386
+
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 NO_BUILD=	YES
 
