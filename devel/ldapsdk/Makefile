@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/05/18 21:22:26 hwr Exp $
+# $NetBSD: Makefile,v 1.2 1999/05/26 16:02:44 tv Exp $
 
 DISTNAME=       ldapsdk_12311998
 PKGNAME=        ldapsdk-12311998
@@ -10,7 +10,8 @@ HOMEPAGE=	http://www.mozilla.org/directory/
 
 CONFLICTS+=	openldap*
 
-USE_GMAKE=
+USE_GMAKE=	yes
+USE_PERL5=	yes
 WRKSRC=         ${WRKDIR}/mozilla
 
 #
