@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2004/06/25 17:41:47 abs Exp $
+# $NetBSD: Makefile,v 1.48 2004/08/27 06:29:08 jlam Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -154,6 +154,7 @@ LIBSWANTED.NetBSD+=	pthread
 # operating system.
 #
 SYSLIBPATH.Darwin=	/usr/lib
+SYSLIBPATH.FreeBSD=	/usr/lib
 SYSLIBPATH.NetBSD=	/usr/lib
 SYSLIBPATH.SunOS=	/usr/lib
 
