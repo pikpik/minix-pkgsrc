@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 1998/06/06 20:40:53 tron Exp $
+# $NetBSD: Makefile,v 1.37 1998/06/26 16:40:14 tv Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -113,7 +113,7 @@
 #    SUBDIR += xpostit
 #    SUBDIR += xpostitPlus
 #    SUBDIR += xprompt
-#    SUBDIR += xscreensaver
+    SUBDIR += xscreensaver
     SUBDIR += xsnow
 #    SUBDIR += xtacy
 #    SUBDIR += xtestpicture
