@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/06/11 02:05:15 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2001/06/11 06:34:52 jlam Exp $
 #
 
 DISTNAME=		libxml-1.8.13
@@ -10,6 +10,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://xmlsoft.org/
 COMMENT=		XML parser, mainly used by the GNOME project
 
+USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
