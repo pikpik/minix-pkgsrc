@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2001/01/15 12:44:49 skrll Exp $
+# $NetBSD: Makefile,v 1.69 2001/01/17 23:36:54 hubertf Exp $
 #
 
     SUBDIR += antiword
@@ -26,6 +26,7 @@
     SUBDIR += libunicode
     SUBDIR += libxml
     SUBDIR += lout
+    SUBDIR += makeztxt
     SUBDIR += mminstance
     SUBDIR += opensp
     SUBDIR += p5-Convert-ASN1
