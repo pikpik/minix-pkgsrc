@@ -1,7 +1,12 @@
 @comment $NetBSD$
-share/GNUstep/Local/Headers/SDLKit/G3DSDLCamera.h
-share/GNUstep/Local/Headers/SDLKit/G3DSDLEventHandler.h
-share/GNUstep/Local/Headers/SDLKit/G3DSDLKit.h
-share/GNUstep/Local/Libraries/${GNUSTEP_HOST_CPU}/${LOWER_OPSYS}${APPEND_ELF}/gnu-gnu-gnu/libSDLKit.so
-share/GNUstep/Local/Libraries/${GNUSTEP_HOST_CPU}/${LOWER_OPSYS}${APPEND_ELF}/gnu-gnu-gnu/libSDLKit.so.0.4.0
+share/GNUstep/Local/Library/Headers/SDLKit/G3DSDLCamera.h
+share/GNUstep/Local/Library/Headers/SDLKit/G3DSDLEventHandler.h
+share/GNUstep/Local/Library/Headers/SDLKit/G3DSDLKit.h
+share/GNUstep/Local/Library/Libraries/libSDLKit.so
+share/GNUstep/Local/Library/Libraries/libSDLKit.so.0.4.0
+@comment in gnustep-make: @dirrm share/GNUstep/Local/Library/Libraries
+@dirrm share/GNUstep/Local/Library/Headers/SDLKit
+@comment in gnustep-make: @dirrm share/GNUstep/Local/Library/Headers
+@exec ${MKDIR} %D/share/GNUstep/Local/Headers/SDLKit
 @dirrm share/GNUstep/Local/Headers/SDLKit
+@comment in gnustep-make: @dirrm share/GNUstep/Local/Headers
