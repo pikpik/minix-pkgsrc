@@ -1,0 +1,6 @@
+# $NetBSD$
+grep -v 'libwcsmbs\.so' ${EMULPRELOAD} > /tmp/.ld.so.preload.save 2> /dev/null
+mv /tmp/.ld.so.preload.save ${EMULPRELOAD}
+if [ ! -s ${EMULPRELOAD} ]; then
+	rm -f ${EMULPRELOAD}
+fi
