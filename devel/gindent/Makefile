@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 1999/08/20 06:12:57 kim Exp $
+# $NetBSD: Makefile,v 1.17 1999/10/01 22:54:16 jlam Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/08/29 09:20:00 obrien Exp
 #
 
-DISTNAME=	indent-2.2.2
-PKGNAME=	gindent-2.2.2
+DISTNAME=	indent-2.2.4
+PKGNAME=	g${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=indent/}
 
