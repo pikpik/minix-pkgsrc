@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2002/07/10 10:48:03 mrg Exp $
+# $NetBSD: Makefile,v 1.18 2002/07/30 13:40:52 wiz Exp $
 #
 
-DISTNAME=	bozohttpd-5.11
+DISTNAME=	bozohttpd-5.13
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
@@ -13,6 +13,8 @@ COMMENT=	bozotic HTTP server; small and secure
 BUILD_DEFS+=	USE_INET6
 
 USE_BUILDLINK_ONLY=	YES
+
+MAKE_ENV+=	BINDIR=${PREFIX}/libexec MANDIR=${PREFIX}/man
 
 .include "../../mk/bsd.prefs.mk"
 
