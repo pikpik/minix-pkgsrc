@@ -1,17 +1,17 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/09/29 17:20:47 rvb Exp $
+# $NetBSD$
 #
 
 DISTNAME=	coda-4.6.5
-PKGNAME=	coda-server-4.6.5
+PKGNAME=	coda-server-4.6.5.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	coda@cs.cmu.edu
+MAINTAINER=	rvb@cs.cmu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 
-DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
-DEPENDS+=	readline-2.2:../../devel/readline
+DEPENDS+=	gdbm-*:../../databases/gdbm
+DEPENDS+=	readline-*:../../devel/readline
 
 ALL_TARGET=	coda
 INSTALL_TARGET=	server-install

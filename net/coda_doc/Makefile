@@ -2,11 +2,12 @@
 #
 
 DISTNAME=	coda-doc-4.6.5-3
+PKGNAME=	coda-doc-4.6.5.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/doc/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	coda@cs.cmu.edu
+MAINTAINER=	rvb@cs.cmu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 
 #NO_DEPENDS=
