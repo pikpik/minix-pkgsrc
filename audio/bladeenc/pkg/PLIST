@@ -1,3 +1,4 @@
 @comment $NetBSD$
 bin/bladeenc
-share/doc/bladeenc.html
+share/doc/bladeenc/bladeenc.html
+@dirrm share/doc/bladeenc
