@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.243 2004/06/20 20:42:52 agc Exp $
+# $NetBSD: Makefile,v 1.244 2004/06/24 22:55:02 ben Exp $
 #
 
 COMMENT=	Audio tools
@@ -81,6 +81,7 @@ SUBDIR+=	gqmpeg
 SUBDIR+=	gqmpeg-skins
 SUBDIR+=	gsm
 SUBDIR+=	gst-plugins-artsd
+SUBDIR+=	gst-plugins-cdparanoia
 SUBDIR+=	gst-plugins-esound
 SUBDIR+=	gst-plugins-flac
 SUBDIR+=	gst-plugins-lame
