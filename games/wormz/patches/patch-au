@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Game/Record.cc.orig	Wed Feb 18 23:38:26 2004
++++ Game/Record.cc	Wed Feb 18 23:38:57 2004
+@@ -1,6 +1,6 @@
+ #include "Record.hh"
+ 
+-void Record::NewRound(int sX=-1, int sY=-1, int sA=-1)
++void Record::NewRound(int sX, int sY, int sA)
+ {
+   Worm::NewRound(sX, sY, sA);
+   lCount = 0;
