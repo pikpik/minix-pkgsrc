@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/05 23:21:03 hubertf Exp $
 #
 
-DISTNAME=	apg-1.2.12
+DISTNAME=	apg-1.2.13
 CATEGORIES=	security
 MASTER_SITES=	http://www.adel.nursat.kz/apg/download/
 
-MAINTAINER=	zuntum@eik.pl
+MAINTAINER=	zuntum@netbsd.org
 HOMEPAGE=	http://www.adel.nursat.kz/apg/
 COMMENT=	Tool set for random password generation
 
