@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1997/10/16 12:43:24 agc Exp $
+# $NetBSD: Makefile,v 1.5 1997/11/07 23:46:16 hubertf Exp $
 # New ports collection makefile for:	netpbm
 # Version required:	1mar1994
 # Date created:		?
@@ -71,6 +71,9 @@ MAN1=	atktopbm.1 g3topbm.1 brushtopbm.1 cmuwmtopbm.1 \
 	pnmsmooth.1 tifftopnm.1 pnmtotiff.1
 MAN3=	libpbm.3 libpgm.3 libppm.3 libpnm.3
 MAN5=	pbm.5 pgm.5 ppm.5 pnm.5
+
+post-extract:
+	chmod -R +w ${WRKSRC}
 
 pre-configure:
 	for f in `find ${WRKDIR} -type f -print|xargs grep -l '/usr/local'`; do \
