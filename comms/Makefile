@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1997/11/22 03:13:22 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.26 1997/10/13 04:41:06 max Exp
 #
 
@@ -6,7 +6,7 @@
 #    SUBDIR += ecu
 #    SUBDIR += hylafax
 #    SUBDIR += kermit
-#    SUBDIR += lrzsz
+    SUBDIR += lrzsz
 #    SUBDIR += mgetty+sendfax
 #    SUBDIR += minicom
 #    SUBDIR += qpage
