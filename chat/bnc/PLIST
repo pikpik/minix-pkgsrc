@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/03/06 18:39:51 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:06:18 zuntum Exp $
 bin/bnc
 bin/bncchk
 bin/bncmkpasswd
 bin/bncsetup
 share/doc/bnc/README
-share/examples/bnc.conf.sample
+share/examples/bnc/bnc.conf.sample
+@dirrm share/examples/bnc
 @dirrm share/doc/bnc
