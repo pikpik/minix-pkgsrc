@@ -1,6 +1,6 @@
 $NetBSD$
 
---- configure.orig	Mon May 14 00:16:50 2001
+--- configure.orig	Sun May 13 18:16:50 2001
 +++ configure
 @@ -3506,8 +3506,8 @@
  
@@ -26,3 +26,14 @@ $NetBSD$
  ; return 0; }
  EOF
  if { (eval echo configure:3530: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+@@ -3932,8 +3932,8 @@
+       fi
+    fi
+ 
+-      CFLAGS="$CFLAGS `glib-config --cflags`"
+-   LDFLAGS="$LDFLAGS `glib-config --libs`"
++      CFLAGS="$CFLAGS `$GLIB_CONFIG --cflags`"
++   LDFLAGS="$LDFLAGS `$GLIB_CONFIG --libs`"
+ 
+       GUI_SERVER="no"
+ 
