@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/09/24 09:08:16 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/12/26 15:59:56 garbled Exp $
 
 DISTNAME=		paranoia
 PKGNAME=		paranoia-960101
@@ -14,7 +14,7 @@ EXTRACT_BEFORE_ARGS=	#empty
 EXTRACT_AFTER_ARGS=	${WRKSRC}
 
 do-build:
-	(cd ${WRKSRC} ; cc -o paranoia paranoia.c -lm)
+	(cd ${WRKSRC} ; ${CC} -ffloat-store -o paranoia paranoia.c -lm)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/paranoia ${PREFIX}/bin
