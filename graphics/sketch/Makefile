@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.5 1999/12/02 03:03:30 sakamoto Exp $
+# $NetBSD: Makefile,v 1.6 2000/01/02 03:36:53 wiz Exp $
 # FreeBSD Id: Makefile,v 1.4 1999/05/19 09:41:06 tg Exp $
 
 DISTNAME=	sketch-0.6.3
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.online.de/home/sketch/
+MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=sketch/}
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://www.online.de/home/sketch/
+HOMEPAGE=	http://sketch.sourceforge.net/
 
 DEPENDS+=	py-imaging-1.0b1:../../graphics/py-imaging
 DEPENDS+=	py-Tk-1.5.2:../../x11/py-Tk
