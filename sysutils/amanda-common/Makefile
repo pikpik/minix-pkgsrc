@@ -1,15 +1,10 @@
-# $NetBSD: Makefile,v 1.27 2003/07/17 22:53:25 grant Exp $
+# $NetBSD: Makefile,v 1.28 2004/05/04 03:40:50 snj Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
-DISTNAME=		amanda-2.4.2p2
-PKGNAME=		amanda-common-2.4.2p2
+PKGNAME=		amanda-common-${VERS}
 SVR4_PKGNAME=		amaco
-CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.cs.umd.edu/pub/amanda/
 
-MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.amanda.org/
 COMMENT=		Common libraries and binaries for Amanda
 
 USE_BUILDLINK3=		YES
