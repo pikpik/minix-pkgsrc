@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/12/31 15:44:28 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/05 19:27:16 wiz Exp $
 #
 
 DISTNAME=	sablecc-2.16.2
 PKGREVISION=	1
-CATEGORIES=	devel
+CATEGORIES=	devel java
 MASTER_SITES=	http://dl.sourceforge.net/sourceforge/sablecc/
 
 MAINTAINER=	hag@linnaean.org

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/04/10 01:28:15 grant Exp $
 #
 
 DISTNAME=	javadeps-1.1
 WRKSRC=		${WRKDIR}/JavaDeps-1.1
-CATEGORIES=	devel
+CATEGORIES=	devel java
 MASTER_SITES=	http://www.vet.com.au/java/javadeps/
 EXTRACT_SUFX=	.zip
 
