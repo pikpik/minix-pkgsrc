@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.507 2000/07/15 21:36:22 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.508 2000/07/18 08:21:41 rh Exp $
 #
 # This file is in the public domain.
 #
@@ -1902,12 +1902,14 @@ root-deinstall:
 
 .if exists(${DDIR})
 RESUMEUPDATE?=	YES
+CLEAR_DIRLIST?=	NO
 
 update:
 	${_PKG_SILENT}${_PKG_DEBUG}${ECHO_MSG}				\
 		"${_PKGSRC_IN}> Resuming update for ${PKGNAME}"
 .else
 RESUMEUPDATE?=	NO
+CLEAR_DIRLIST?=	YES
 
 update:
 	${_PKG_SILENT}${_PKG_DEBUG}${MAKE} ${MAKEFLAGS} ${DDIR}
@@ -1954,7 +1956,7 @@ clean-update:
 			fi) ;						\
 		done ;							\
 	fi
-.ifdef CLEAR_DIRLIST
+.if ${CLEAR_DIRLIST} != "NO"
 	${_PKG_SILENT}${_PKG_DEBUG}${MAKE} ${MAKEFLAGS} clean
 .else
 	${_PKG_SILENT}${_PKG_DEBUG}					\
