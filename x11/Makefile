@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.328 2004/01/21 21:06:29 kristerw Exp $
+# $NetBSD: Makefile,v 1.329 2004/01/24 08:51:15 xtraeme Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -242,6 +242,7 @@ SUBDIR+=	xfce4-desktop
 SUBDIR+=	xfce4-gtk2-engines
 SUBDIR+=	xfce4-mcs-manager
 SUBDIR+=	xfce4-mcs-plugins
+SUBDIR+=	xfce4-menueditor
 SUBDIR+=	xfce4-notes-plugin
 SUBDIR+=	xfce4-panel
 SUBDIR+=	xfce4-themes
