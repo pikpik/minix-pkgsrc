@@ -1,0 +1,13 @@
+$NetBSD: patch-aa,v 1.4 2002/05/02 16:18:49 martti Exp $
+
+--- filters/Makefile.in.orig	Thu Jul 25 17:08:08 2002
++++ filters/Makefile.in	Thu Jul 25 17:08:40 2002
+@@ -37,7 +37,7 @@
+ 
+ OPT=		@OPT@
+ CFLAGS=		$(OPT) $(DEFS)
+-FILTERSDIR= 	$(var_prefix)/filters
++FILTERSDIR= 	$(prefix)/support
+ 
+ SHELL=		/bin/sh
+ 
