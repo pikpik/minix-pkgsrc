@@ -1,8 +1,8 @@
 $NetBSD$
 
---- php.h.orig	Sun May  2 15:38:36 1999
-+++ php.h	Sun May  2 15:49:49 1999
-@@ -309,6 +309,24 @@
+--- php.h.orig	Mon Apr 10 12:29:36 2000
++++ php.h
+@@ -326,6 +326,24 @@
  # endif
  #endif
  
