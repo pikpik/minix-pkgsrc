@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2001/09/09 20:36:32 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/19 10:49:06 drochner Exp $
 #
 
-DISTNAME=	html-2.2.1
-PKGNAME=	py22-html-docs-2.2.1
+DISTNAME=	html-2.2.2
+PKGNAME=	py22-html-docs-2.2.2
 CATEGORIES=	lang
-MASTER_SITES=	http://www.python.org/ftp/python/doc/2.2.1/
+MASTER_SITES=	http://www.python.org/ftp/python/doc/2.2.2/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tsarna@netbsd.org
