@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2001/08/04 06:58:23 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2001/08/30 13:56:27 mrg Exp $
 #
 
 V=		2.05
@@ -39,8 +39,9 @@ post-patch:
 	done
 
 post-install:
+	${TOUCH} /etc/shells
 	${CP} /etc/shells /etc/shells.bak
-	(${GREP} -v ${PREFIX}/bin/bash /etc/shells.bak; ${ECHO} ${PREFIX}/bin/bash) >/etc/shells
+	(${GREP} -v ${PREFIX}/bin/bash /etc/shells.bak || ${TRUE}; ${ECHO} ${PREFIX}/bin/bash) >/etc/shells
 	${RM} /etc/shells.bak
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bash
 	${INSTALL_MAN}  \
