@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/08/30 10:45:46 tron Exp $
+# $NetBSD: Makefile,v 1.3 2000/09/08 01:03:21 jwise Exp $
 
 DISTNAME=	tk8.3.2
 PKGNAME=	tk-8.3.2
@@ -20,6 +20,7 @@ USE_X11=	yes
 USE_LIBTOOL=	yes
 
 post-install:
+	${RM} -f ${PREFIX}/bin/wish
 	cd ${PREFIX}/bin && ${LN} -s wish8.3 wish
 	${MKDIR} ${PREFIX}/include/tk
 	${MKDIR} ${PREFIX}/include/tk/generic
