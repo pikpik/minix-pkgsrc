@@ -1,2 +1,1 @@
-@comment $NetBSD$
-lib/python2p3/lib-dynload/bsddb185.so
+@comment $NetBSD: PLIST.NetBSD,v 1.1 2003/08/18 20:57:14 recht Exp $

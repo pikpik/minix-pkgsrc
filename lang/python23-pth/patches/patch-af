@@ -1,8 +1,8 @@
 $NetBSD$
 
 --- Lib/test/test_fcntl.py.orig	2002-07-23 21:03:51.000000000 +0200
-+++ Lib/test/test_fcntl.py	2003-08-03 12:50:25.000000000 +0200
-@@ -24,7 +24,7 @@
++++ Lib/test/test_fcntl.py
+@@ -24,7 +24,7 @@ if sys.platform in ('netbsd1', 'Darwin1.
                      'freebsd2', 'freebsd3', 'freebsd4', 'freebsd5',
                      'bsdos2', 'bsdos3', 'bsdos4',
                      'openbsd', 'openbsd2', 'openbsd3'):
