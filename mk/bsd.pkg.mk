@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1185 2003/05/29 11:39:22 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1186 2003/05/29 23:08:01 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -1443,7 +1443,9 @@ do-fetch:
 			${FALSE} ;;					\
 		esac;							\
 	else								\
-		${ECHO_MSG} "${_PKGSRC_IN}> *** No ${PKGVULNDIR}/vulnerabilities file found - skipping vulnerability checks ***"; \
+		${ECHO_MSG} "${_PKGSRC_IN}> *** No ${PKGVULNDIR}/vulnerabilities file found,"; \
+		${ECHO_MSG} "${_PKGSRC_IN}> *** skipping vulnerability checks. To fix, install"; \
+		${ECHO_MSG} "${_PKGSRC_IN}> *** pkgsrc/security/audit-packages and run 'download-vulnerability-list'."; \
 	fi
 .  endif
 .  if !empty(_ALLFILES)
