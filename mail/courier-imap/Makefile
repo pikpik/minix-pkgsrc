@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/02/22 16:43:27 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2004/02/23 23:23:31 jlam Exp $
 
 DISTNAME=	courier-imap-2.2.1
 COMMENT=	IMAP server for access to Maildir-style mailboxes
@@ -43,6 +43,9 @@ CONF_FILES_PERMS+=	${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}	\
 .endfor
 RCD_SCRIPTS=		courierimap courierimaps courierpop courierpops
 
+.if ${OPSYS} == "SunOS"
+.  include "../../databases/db/buildlink3.mk"
+.endif
 .include "../../security/openssl/buildlink3.mk"
 
 pre-configure:
