@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/09/10 22:14:46 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2000/12/14 14:39:44 kei Exp $
 
 DISTNAME=		bochs-2000_0325a
 PKGNAME=		bochs-2000.03.25a
@@ -7,8 +7,6 @@ MASTER_SITES=		ftp://bochs.com/bochs/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.bochs.com/
-
-NOT_FOR_PLATFORM=	*-*-alpha	#runs, SEGV.
 
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
