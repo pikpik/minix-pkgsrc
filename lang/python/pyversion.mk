@@ -1,11 +1,11 @@
-# $NetBSD: pyversion.mk,v 1.14 2002/10/09 11:11:51 jlam Exp $
+# $NetBSD: pyversion.mk,v 1.15 2002/10/25 10:52:24 drochner Exp $
 
 .if !defined(PYTHON_PYVERSION_MK)
 PYTHON_PYVERSION_MK=	defined
 
 .include "../../mk/bsd.prefs.mk"
 
-PYTHON_VERSION_DEFAULT?=	21
+PYTHON_VERSION_DEFAULT?=	22
 PYTHON_VERSIONS_ACCEPTED?=	22 21 20
 
 BUILDLINK_DEPENDS.python15?=		python15>=1.5
