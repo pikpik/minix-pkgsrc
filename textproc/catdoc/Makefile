@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/06/19 23:38:17 frueauf Exp $
 #
 
 DISTNAME=	catdoc-0.35
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.dlr.de/fresh/unix/src/contrib/
+MASTER_SITES=	http://www.go.dlr.de/fresh/unix/src/contrib/
 
 MAINTAINER=	frueauf@netbsd.org
 
