@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/21 18:57:04 rh Exp $
 #
 
 DISTNAME=		ispman-0.5
 PKGNAME=		p5-${DISTNAME}
 WRKSRC=			${WRKDIR}/ispman/Modules/ISPMan
 CATEGORIES=		net perl5
-MASTER_SITES=		http://download.sourceforge.net/ispman/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ispman/}
 
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.ispman.org/

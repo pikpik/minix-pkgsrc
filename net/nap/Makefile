@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/17 22:21:03 tron Exp $
 
 DISTNAME=	nap-1.4.3
 CATEGORIES=	net
-MASTER_SITES=	http://download.sourceforge.net/nap/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nap/}
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://www.gis.net/~nite/

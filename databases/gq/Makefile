@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 18:07:07 rh Exp $
 #
 
 DISTNAME=	gq-0.3.0
 CATEGORIES=	databases net
 MASTER_SITES=	http://biot.com/gq/download/ \
-		http://download.sourceforge.net/gqclient/
+		${MASTER_SITE_SOURCEFORGE:=gqclient/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://biot.com/gq/

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/31 07:04:25 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/06/04 17:09:40 rh Exp $
 #
 
 DISTNAME=	waplet
 PKGNAME=	waplet-0.01
 CATEGORIES=	www net
-MASTER_SITES=	http://download.sourceforge.net/waplet/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=waplet/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rh@netbsd.org

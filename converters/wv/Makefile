@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2000/10/16 15:14:22 rh Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/17 05:47:19 rh Exp $
 #
 
 DISTNAME=		wv-0.6.0
 CATEGORIES=		converters
-MASTER_SITES=		http://download.sourceforge.net/wvware/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wvware/}
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.wvWare.com/

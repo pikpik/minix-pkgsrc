@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/02 18:16:18 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/04/13 11:10:48 rh Exp $
 #
 
 DISTNAME=	corewars-0.9.11
 CATEGORIES=	games
-MASTER_SITES=	http://download.sourceforge.net/corewars/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=corewars/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://corewars.sourceforge.net/

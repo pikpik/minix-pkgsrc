@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 1999/05/06 23:38:37 tv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/25 19:34:29 tsarna Exp $
 
 DISTNAME=	python-ldap-1.10alpha3-src
 PKGNAME=	py-ldap-1.10a3
 CATEGORIES=	databases
-MASTER_SITES=	http://download.sourceforge.net/python-ldap/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=python-ldap/}
 
 MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://sourceforge.net/projects/python-ldap/

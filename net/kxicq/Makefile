@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2000/07/15 20:39:23 agc Exp $
+# $NetBSD: Makefile,v 1.6 2000/07/17 13:58:22 agc Exp $
 
 DISTNAME=		kxicq-03132000
 CATEGORIES=		net kde
-MASTER_SITES=		http://download.sourceforge.net/kxicq/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kxicq/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.kxicq.org/

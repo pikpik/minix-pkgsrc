@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/31 20:30:41 tron Exp $
 
 DISTNAME=		icqlib-1.0.0
 CATEGORIES=		net
-MASTER_SITES=		http://download.sourceforge.net/icqlib/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=icqlib/}
 
 MAINTAINER=		magick@bundy.lib.owl.de
 HOMEPAGE=		http://kicq.sourceforge.net/

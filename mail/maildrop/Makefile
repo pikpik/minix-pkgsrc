@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/23 13:34:58 rh Exp $
 #
 
 DISTNAME=	maildrop-1.2.2
 CATEGORIES=	mail
-MASTER_SITES=	http://download.sourceforge.net/courier/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.flounder.net/~mrsam/maildrop/

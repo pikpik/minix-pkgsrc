@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/23 17:20:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2000/06/07 22:14:18 hubertf Exp $
 #
 
 DISTNAME=	OpenSP-1.4
 PKGNAME=	opensp-1.4
 CATEGORIES=	textproc
-MASTER_SITES=	http://download.sourceforge.net/openjade/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openjade/}
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://openjade.sourceforge.net/doc-1.4/index.htm
