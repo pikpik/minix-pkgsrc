@@ -11,7 +11,7 @@ $NetBSD$
  
  # Define your optimization flags.  Most compilers understand -O and -O2,
  # Standard (note: Solaris on UltraSparc using gcc 2.8.x might not like this.)
-@@ -10,46 +10,46 @@
+@@ -10,42 +10,42 @@
  #-malign-jumps=2
  
  # Define where you want Frotz to be installed.  Usually this is /usr/local
@@ -62,13 +62,7 @@ $NetBSD$
 +LIB = -L${BUILDLINK_DIR}/lib -Wl,-R${PREFIX}/lib
  
  # One of these must be uncommented, use ncurses if you have it. 
--CURSES = -lncurses	# Linux always uses ncurses.
--#CURSES = -lcurses
-+#CURSES = -lncurses	# Linux always uses ncurses.
-+CURSES = -lcurses
- 
- # Comment this out if you're not using ncurses.
- CURSES_DEF = -DUSE_NCURSES_H
+ CURSES = -lncurses	# Linux always uses ncurses.
 @@ -85,11 +85,12 @@
  COMP_DEFS = $(OPT_DEFS) $(COLOR_DEFS) $(SOUND_DEFS) $(SOUNDCARD) \
  	$(MEMMOVE_DEF)
