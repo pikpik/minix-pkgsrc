@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2002/06/15 15:42:08 fredb Exp $
+# $NetBSD: Makefile,v 1.82 2002/08/25 23:06:15 jlam Exp $
 
 DISTNAME=		mutt-1.4i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -57,6 +57,11 @@ MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 EGDIR=			${PREFIX}/share/doc/mutt/samples
 CONF_FILES=		${EGDIR}/Muttrc ${PKG_SYSCONFDIR}/Muttrc
 SUPPORT_FILES=		${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
+
+pre-configure:
+	${ECHO} "#!${SH}" >${BUILDLINK_DIR}/bin/top_srcdir
+	${ECHO} "exec ${ECHO} ${WRKSRC}" >>${BUILDLINK_DIR}/bin/top_srcdir
+	${CHMOD} +x ${BUILDLINK_DIR}/bin/top_srcdir
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/Muttrc ${PREFIX}/share/doc/mutt/samples
