@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.61 2001/02/16 15:51:52 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2001/03/05 23:21:34 hubertf Exp $
 #
 
 COMMENT=	Security tools
 
 SUBDIR+=	PAM
 SUBDIR+=	aide
-SUBDIR+=	apg
 SUBDIR+=	amavis
+SUBDIR+=	apg
 SUBDIR+=	audit-packages
 SUBDIR+=	crack
 SUBDIR+=	cyrus-sasl
@@ -40,6 +40,7 @@ SUBDIR+=	p5-Crypt-CBC
 SUBDIR+=	p5-Digest-MD5
 SUBDIR+=	p5-MD5
 SUBDIR+=	p5-SHA
+SUBDIR+=	p5-SSLeay
 SUBDIR+=	pakemon
 SUBDIR+=	pam-ldap
 SUBDIR+=	pgp2
