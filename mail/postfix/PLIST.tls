@@ -1,0 +1,4 @@
+@comment $NetBSD$
+libexec/postfix/tlsmgr
+man/man8/tlsmgr.8
+share/postfix/sample-tls.cf
