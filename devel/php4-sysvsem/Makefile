@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2001/12/03 08:31:01 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/02/28 06:17:49 jlam Exp $
 
 MODNAME=		sysvsem
 CATEGORIES+=		devel
 PKGREVISION=		# empty
 COMMENT=		PHP4 extension for SysV semaphore support
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2= 	YES
 
 .include "../../www/php4/Makefile.module"
 

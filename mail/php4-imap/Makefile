@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/10/08 23:22:07 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/11/02 00:05:03 elric Exp $
 
 MODNAME=		imap
 CATEGORIES+=		mail
 PKGREVISION=		1
 COMMENT=		PHP4 extension for IMAP (Internet Mailbox Access Protocol)
 
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK2=		YES
 
 .include "../../www/php4/Makefile.module"
 
