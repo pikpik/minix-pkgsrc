@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.341 2002/10/19 17:03:42 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.342 2002/10/21 08:17:30 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -291,6 +291,7 @@ SUBDIR+=	py-plex
 SUBDIR+=	py-readline
 SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
+SUBDIR+=	python-mode
 SUBDIR+=	ratfor
 SUBDIR+=	rcs
 SUBDIR+=	rdp
