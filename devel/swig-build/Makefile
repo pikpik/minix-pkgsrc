@@ -1,7 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/25 08:52:37 epg Exp $
 
 PKGNAME=	swig-build-${SWIG_VERSION}
 COMMENT=	Simplified Wrapper and Interface Generator, base build files
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "Makefile.common"
 
