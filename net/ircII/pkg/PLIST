@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.2 1997/11/09 22:12:45 hubertf Exp $
-bin/irc-2.9beta2
+@comment $NetBSD: PLIST,v 1.3 1997/11/27 09:46:40 explorer Exp $
+bin/irc-4.4
 @exec 	ln -f %B/%f %B/irc
 @unexec	rm -f %B/irc
 bin/ircbug
