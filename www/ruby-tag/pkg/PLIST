@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITELIBDIR}/tag.rb
+${RUBY_DOCDIR}/tag/ja/tag.html
+@dirrm ${RUBY_DOCDIR}/tag/ja
+@dirrm ${RUBY_DOCDIR}/tag
