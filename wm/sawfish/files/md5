@@ -1,3 +1,3 @@
-$NetBSD: md5,v 1.4 2000/11/30 08:56:19 mycroft Exp $
+$NetBSD$
 
-MD5 (sawfish-0.33.1.tar.gz) = a2b99f3f9deae419c43504dba16554f0
+SHA1 (sawfish-0.38.tar.gz) = fe572192af508da93443ef67cea984024d148fe4
