@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/15 11:35:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/15 15:38:15 soren Exp $
 #
 
 DISTNAME=		qemu-0.6.1
@@ -24,7 +24,7 @@ SUBST_CLASSES+=		snd
 SUBST_STAGE.snd=	post-patch
 SUBST_FILES.snd=	audio/ossaudio.c
 SUBST_SED.snd=		-e "s,/dev/dsp,${DEVOSSAUDIO},g"
-SUBST_MESSAGE.snd=	"Fixing harcoded audio device."
+SUBST_MESSAGE.snd=	"Fixing hardcoded audio device."
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
