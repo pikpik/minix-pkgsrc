@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/10/23 13:14:52 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2001/10/24 22:10:55 jlam Exp $
 
 DISTNAME=	baduki-0.2.9
 CATEGORIES=	games
@@ -8,13 +8,14 @@ MAINTAINER=	bad@netbsd.org
 HOMEPAGE=	http://soback.kornet21.net/~artist/baduk/baduki.html
 COMMENT=	Go playing program based on xamigo
 
-USE_BUILDLINK_ONLY=	YES
-GNU_CONFIGURE=		YES
 BUILD_USES_MSGFMT=	YES
+USE_BUILDLINK2=		YES
+USE_X11=		YES
 
+GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-included-gettext
 
-.include "../../devel/gettext-lib/buildlink.mk"
-.include "../../x11/gtk/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
+.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../x11/gtk/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.mk"
