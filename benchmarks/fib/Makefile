@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/10/22 05:55:46 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/12/26 15:59:55 garbled Exp $
 
 DISTNAME=		fib.c
 PKGNAME=		fib-980203
@@ -15,7 +15,7 @@ do-extract:
 	${CP} ${DISTDIR}/fib.c ${WRKSRC}/fib.c
 
 do-build:
-	(cd ${WRKSRC} ; cc -O2 -DUNIX -o fib fib.c -lm)
+	(cd ${WRKSRC} ; ${CC} -O2 -DUNIX -o fib fib.c -lm)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fib ${PREFIX}/bin
