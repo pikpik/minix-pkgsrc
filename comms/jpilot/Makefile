@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/16 13:56:15 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/03/01 20:38:14 jlam Exp $
 #
 
 DISTNAME=		jpilot-0.99
@@ -13,6 +13,8 @@ BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+=		msgfmt:../../devel/gettext
 DEPENDS+=		gtk+>=1.2.0:../../x11/gtk
 DEPENDS+=		pilot-link>=0.9.3:../../comms/pilot-link
+
+CONFLICTS+=		jpilot-libplugin-*
 
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
