@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/03/17 15:57:05 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use openal.
 #
@@ -9,7 +9,7 @@
 OPENAL_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			openal
-BUILDLINK_DEPENDS.openal?=		openal>=20030125
+BUILDLINK_DEPENDS.openal?=		openal>=20030125nb1
 BUILDLINK_PKGSRCDIR.openal?=		../../audio/openal
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.openal=openal

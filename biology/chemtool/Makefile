@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2002/09/21 01:23:56 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2002/11/30 15:31:59 salo Exp $
 
 DISTNAME=		chemtool-1.4.1
+PKGREVISION=		1
 CATEGORIES=		biology
 MASTER_SITES=		http://www.uni-ulm.de/~s_tvolk/chemtool/src/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/08/20 12:11:11 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/11 18:18:20 wiz Exp $
 #
 
 DISTNAME=	qiv-1.8-src
+PKGREVISION=	1
 PKGNAME=	qiv-1.8
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	graphics

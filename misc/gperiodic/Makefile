@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2002/09/24 10:20:19 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2002/12/01 16:25:57 salo Exp $
 #
 
 DISTNAME=	gperiodic-1.2.6
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/gperiodic
 CATEGORIES=	misc x11
 MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/

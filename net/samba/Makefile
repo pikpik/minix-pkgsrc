@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.95 2003/03/16 07:57:43 martti Exp $
+# $NetBSD: Makefile,v 1.96 2003/04/10 11:58:55 uebayasi Exp $
 
 .include "Makefile.common"
+PKGREVISION=		1
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.samba.org/

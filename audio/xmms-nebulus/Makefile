@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/14 23:56:39 hubertf Exp $
 #
 
 DISTNAME=	xmms-nebulus-0.3.0
+PKGREVISION=	1
 CATEGORIES=	xmms audio
 MASTER_SITES=	http://nebulus.tuxfamily.org/
 

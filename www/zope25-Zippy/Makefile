@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/01 17:53:32 drochner Exp $
 #
 
 DISTNAME=	Zippy
+PKGREVISION=	1
 PKGNAME=	zope25-Zippy-0
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/michel/Products/Zippy/

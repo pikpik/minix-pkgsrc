@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/02/05 05:06:36 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/04/27 14:39:12 cjep Exp $
 
 DISTNAME=	gftp-2.0.8
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://gftp.seul.org/					\
 		ftp://gftp.seul.org/pub/gftp/				\

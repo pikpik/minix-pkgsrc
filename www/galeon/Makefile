@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2003/03/18 03:25:29 taya Exp $
+# $NetBSD: Makefile,v 1.47 2003/04/24 13:03:17 taya Exp $
 
 DISTNAME=	galeon-1.2.10
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=galeon/}
 

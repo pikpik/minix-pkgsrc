@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/11/28 12:45:02 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/02 15:18:00 wiz Exp $
 
 DISTNAME=	XMLWidgets-0.8.3
+PKGREVISION=	1
 PKGNAME=	zope25-XMLWidgets-0.8.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/faassen/XMLWidgets/

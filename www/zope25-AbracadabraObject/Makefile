@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/14 15:46:35 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/11/27 16:22:59 drochner Exp $
 
 DISTNAME=	AbracadabraObject-1.5.0
+PKGREVISION=	1
 PKGNAME=	zope25-AbracadabraObject-1.5.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/mjablonski/AbracadabraObject/

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/12/17 08:19:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/18 20:37:05 wiz Exp $
 #
 
 DISTNAME=		whiteBOX-0.5
-PKGREVISION=		1
+PKGREVISION=	2
 CATEGORIES=		wm x11
 MASTER_SITES=		http://whitebox.sourceforge.net/dist/
 

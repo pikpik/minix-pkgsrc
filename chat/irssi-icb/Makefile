@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/02 12:23:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:17 jmmv Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${IRSSI_DISTNAME}/${DISTNAME}
 CATEGORIES=	chat
 MASTER_SITES=	http://www.irssi.org/files/plugins/icb/

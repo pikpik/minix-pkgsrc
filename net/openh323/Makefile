@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2003/01/28 22:03:54 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2003/03/29 12:42:01 jmmv Exp $
 #
 
 DISTNAME=	openh323_1.10.4
+PKGREVISION=	1
 PKGNAME=	openh323-1.10.4
 WRKSRC=		${WRKDIR}/openh323
 CATEGORIES=	net

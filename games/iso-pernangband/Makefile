@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2002/08/27 18:54:32 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/24 18:55:39 wiz Exp $
 #
 
 DISTNAME=		iso-pern_src-0_2_6
+PKGREVISION=	1
 PKGNAME=		iso-pernangband-0.2.6
 WRKSRC=			${WRKDIR}/iso-pern_src/src
 CATEGORIES=		games

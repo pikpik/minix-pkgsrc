@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/26 18:55:17 agc Exp $
 
 DISTNAME=	clamav-0.54
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://clamav.elektrapro.com/stable/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2002/10/09 17:58:39 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2003/01/28 22:03:06 jlam Exp $
 #
 
 DISTNAME=	gale-0.99a
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://download.gale.org/
 

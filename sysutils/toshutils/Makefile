@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2000/01/16 11:09:18 abs Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:42:20 wiz Exp $
 #
 
 DISTNAME=	toshutils-991217
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.ne426pd.in2home.co.uk/
 
@@ -9,7 +10,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.buzzard.org.uk/toshiba/
 COMMENT=	NetBSD port of the Toshiba(tm) Linux Utilities
 
-DEPENDS+=	gtk+-1.2.*:../../x11/gtk
+DEPENDS+=	gtk+>=1.2.10nb4:../../x11/gtk
 
 ONLY_FOR_PLATFORM= *-*-i386
 GNU_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/01/11 02:56:25 rh Exp $
 #
 # This Makefile fragment is included by packages that use gnome-pilot.
 #
@@ -9,7 +9,7 @@
 GNOME_PILOT_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gnome-pilot
-BUILDLINK_DEPENDS.gnome-pilot?=		gnome-pilot>=0.1.71
+BUILDLINK_DEPENDS.gnome-pilot?=		gnome-pilot>=0.1.71nb2
 BUILDLINK_PKGSRCDIR.gnome-pilot?=		../../comms/gnome-pilot
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gnome-pilot=gnome-pilot

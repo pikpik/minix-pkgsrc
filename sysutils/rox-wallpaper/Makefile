@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/11/14 13:25:23 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:31 jmmv Exp $
 #
 
 DISTNAME=	Wallpaper-0.1.1
+PKGREVISION=	1
 PKGNAME=	rox-wallpaper-0.1.1
 WRKSRC=		${WRKDIR}/Wallpaper
 CATEGORIES=	sysutils

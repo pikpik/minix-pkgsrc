@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/09/23 02:02:46 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/01/19 08:48:49 tron Exp $
 
 .if !defined(UNICON_IM_BUILDLINK2_MK)
 UNICON_IM_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			unicon-im
-BUILDLINK_DEPENDS.unicon-im?=		unicon-im>=1.2
+BUILDLINK_DEPENDS.unicon-im?=		unicon-im>=1.2nb2
 BUILDLINK_PKGSRCDIR.unicon-im?=		../../inputmethod/unicon-im
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.unicon-im=unicon-im

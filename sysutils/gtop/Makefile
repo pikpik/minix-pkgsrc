@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2002/12/24 06:10:25 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2003/01/10 07:51:59 cjep Exp $
 
 DISTNAME=		gtop-1.0.13
-PKGREVISION=		2
+PKGREVISION=	3
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtop/1.0/}
 

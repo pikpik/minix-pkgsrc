@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/11 21:09:25 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/24 13:36:20 wiz Exp $
 #
 
 DISTNAME=	vifm-0.1
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vifm/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/11/14 13:25:23 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:30 jmmv Exp $
 #
 
 DISTNAME=	Memo-1.0.0
+PKGREVISION=	1
 PKGNAME=	rox-memo-1.0.0
 WRKSRC=		${WRKDIR}/Memo
 CATEGORIES=	sysutils

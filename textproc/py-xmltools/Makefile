@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/04 12:49:17 drochner Exp $
 #
 
 DISTNAME=	xmltools-1.3.7
+PKGREVISION=	1
 PKGNAME=	${PYPKGPREFIX}-xmltools-1.3.7
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.logilab.org/ftp/pub/xmltools/

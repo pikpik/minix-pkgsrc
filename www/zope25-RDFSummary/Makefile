@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/01 17:59:42 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/16 17:03:12 drochner Exp $
 #
 
 DISTNAME=	RDFSummary-2.3
+PKGREVISION=	1
 PKGNAME=	zope25-RDFSummary-2.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/EIONET/RDFSummary/

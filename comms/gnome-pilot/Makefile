@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/04/20 14:12:20 rh Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/27 12:53:25 cjep Exp $
 #
 
 DISTNAME=		gnome-pilot-0.1.71
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		comms gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-pilot/0.1/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/17 15:57:04 jmmv Exp $
 #
 
 DISTNAME=	openal-20030125
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${DISTNAME}fbsd/linux
 CATEGORIES=	audio
 MASTER_SITES=	http://math.smsu.edu/~erik/files/fbsd/ \

@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/12/24 06:09:55 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/02/13 19:28:34 jmmv Exp $
 
 .if !defined(LIBBONOBO_BUILDLINK2_MK)
 LIBBONOBO_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		libbonobo
-BUILDLINK_DEPENDS.libbonobo?=	libbonobo>=2.2.0
+BUILDLINK_DEPENDS.libbonobo?=	libbonobo>=2.2.0nb1
 BUILDLINK_PKGSRCDIR.libbonobo?=	../../devel/libbonobo
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.libbonobo=libbonobo

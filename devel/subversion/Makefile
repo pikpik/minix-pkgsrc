@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/02/03 20:19:00 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2003/04/15 16:23:22 salo Exp $
 #
 
 DISTNAME=	subversion-0.20.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://subversion.tigris.org/files/documents/15/3440/
 

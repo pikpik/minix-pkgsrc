@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/09/11 22:30:37 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/03/01 14:11:52 jmmv Exp $
 
 .if !defined(GTKMM_BUILDLINK2_MK)
 GTKMM_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		gtkmm
-BUILDLINK_DEPENDS.gtkmm?=	gtk-->=1.2.10
+BUILDLINK_DEPENDS.gtkmm?=	gtk-->=1.2.10nb2
 BUILDLINK_PKGSRCDIR.gtkmm?=	../../x11/gtk--
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.gtkmm=gtkmm

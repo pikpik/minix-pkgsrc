@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:36 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:10 jlam Exp $
 
 .if !defined(SDL_NET_BUILDLINK2_MK)
 SDL_NET_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		SDL_net
-BUILDLINK_DEPENDS.SDL_net?=	SDL_net>=1.2.0
+BUILDLINK_DEPENDS.SDL_net?=	SDL_net>=1.2.3nb1
 BUILDLINK_PKGSRCDIR.SDL_net?=	../../net/SDL_net
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.SDL_net=SDL_net

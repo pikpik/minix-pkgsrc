@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/11/28 05:20:41 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/09/21 07:00:33 jlam Exp $
 
 DISTNAME=	gtkyahoo-0.18.2
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkyahoo/} \
 		http://www.unixtools.org/gtkyahoo/dist/

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2003/02/16 16:35:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.28 2003/04/27 12:47:00 cjep Exp $
 
 DISTNAME=		gtkhtml-1.1.7
-PKGREVISION=		1
+PKGREVISION=	2
 CATEGORIES=		www gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtkhtml/1.1/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Lightweight HTML rendering/printing/editing engine
-
-BUILDLINK_DEPENDS.gal?=	gal>=0.21
 
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES

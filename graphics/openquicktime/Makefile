@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/23 10:06:54 rh Exp $
 #
 
 DISTNAME=		${PKGNAME}-src
+PKGREVISION=	1
 PKGNAME=		openquicktime-1.0
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=openquicktime/}

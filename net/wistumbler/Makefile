@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2002/09/09 18:09:57 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:42:07 jmmv Exp $
 
 DISTNAME=	wistumbler-20020811-2
+PKGREVISION=	1
 PKGNAME=	wistumbler-20020811.2
 WRKSRC=		${WRKDIR}/wistumbler
 CATEGORIES=	net

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2000/06/21 03:04:36 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/17 17:06:30 wiz Exp $
 
 DISTNAME=		gtkstep-1.10
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://ulli.linuxave.net/gtkstep/
 EXTRACT_SUFX=		.tar.bz2
@@ -9,7 +10,7 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://ulli.linuxave.net/gtkstep/index.html
 COMMENT=		GTK theme-engine to yield a NEXTSTEP(tm) look and feel
 
-DEPENDS+=		gtk+-1.2.*:../../x11/gtk
+DEPENDS+=		gtk+>=1.2.10nb4:../../x11/gtk
 
 GNU_CONFIGURE=		# defined
 USE_X11BASE=		# defined

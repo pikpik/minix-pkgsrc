@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/08 00:44:43 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/13 11:36:48 wiz Exp $
 #
 
 DISTNAME=	glickomania-1.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://hibase.cs.hut.fi/~cessu/glickomania/
 

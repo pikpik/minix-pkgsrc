@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/28 15:37:37 jmmv Exp $
 #
 
 DISTNAME=	fooseti-0.6.6
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www-personal.engin.umich.edu/~agorski/fooseti/
 

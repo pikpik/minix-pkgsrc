@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2003/01/23 16:12:43 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2003/01/28 22:04:20 jlam Exp $
 
 DISTNAME=	xcdroast-0.98alpha13
+PKGREVISION=	1
 PKGNAME=	xcdroast-0.98a13
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xcdroast/}

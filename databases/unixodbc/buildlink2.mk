@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:13 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/01/19 08:48:48 tron Exp $
 
 .if !defined(UNIXODBC_BUILDLINK2_MK)
 UNIXODBC_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		unixodbc
-BUILDLINK_DEPENDS.unixodbc?=	unixodbc>=2.0.11
+BUILDLINK_DEPENDS.unixodbc?=	unixodbc>=2.0.11nb1
 BUILDLINK_PKGSRCDIR.unixodbc?=	../../databases/unixodbc
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.unixodbc=unixodbc

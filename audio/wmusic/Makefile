@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2002/06/19 13:06:01 agc Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 02:12:00 jlam Exp $
 
 DISTNAME=	wmusic-1.4.7
+PKGREVISION=	1
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://hadess.net/files/
 

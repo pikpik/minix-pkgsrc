@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/19 07:32:05 salo Exp $
 #
 
 DISTNAME=	mplayerplug-in_v0.71
+PKGREVISION=	1
 PKGNAME=	moz-mplayer-0.71
 WRKSRC=         ${WRKDIR}/mplayerplug-in
 CATEGORIES=	graphics www

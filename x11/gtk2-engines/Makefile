@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/01/04 23:17:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/18 10:49:33 jmmv Exp $
 #
 
 DISTNAME=		gtk-engines-2.2.0
+PKGREVISION=	1
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtk-engines/2.2/}

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2003/04/23 13:15:34 gehenna Exp $
+# $NetBSD: Makefile,v 1.26 2003/04/28 00:50:00 gehenna Exp $
 #
 
 DISTNAME=	cvsync-0.20.0
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.daemon-systems.org/cvsync/
 

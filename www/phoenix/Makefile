@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/02/02 13:44:51 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/31 02:39:48 grant Exp $
 
 MOZILLA=	phoenix
 MOZILLA_BIN=	phoenix-bin
-PKGREVISION=	5
+PKGREVISION=	6
 MOZ_VER=	0.5
 EXTRACT_SUFX=	.tar.bz2
 DISTNAME=       mozilla-phoenix-${MOZ_VER}

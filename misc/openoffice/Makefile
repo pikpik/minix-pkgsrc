@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2003/01/22 22:46:34 rh Exp $
+# $NetBSD: Makefile,v 1.34 2003/03/14 19:37:51 jlam Exp $
 
 DISTNAME=		openoffice-0.0.0.641
-PKGREVISION=		1
+PKGREVISION=	2
 WRKSRC=			${WRKDIR}/oo_641_src/config_office
 CATEGORIES=		misc
 MASTER_SITES=		http://sf1.mirror.openoffice.org/641b/		\

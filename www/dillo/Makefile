@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2003/03/21 18:15:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/04/11 20:26:30 jmmv Exp $
 #
 
 DISTNAME=	dillo-0.7.1.2
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/dillo-0.7.1
 CATEGORIES=	www
 MASTER_SITES=	http://dillo.auriga.wearlab.de/download/

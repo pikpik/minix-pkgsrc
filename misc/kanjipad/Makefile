@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2002/07/24 19:45:25 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/13 11:38:16 wiz Exp $
 #
 
 DISTNAME=	kanjipad-1.2.1
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.gtk.org/pub/users/otaylor/kanjipad/
 

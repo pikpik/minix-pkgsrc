@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2002/09/20 12:04:53 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:42:54 jmmv Exp $
 
 DISTNAME=	quanta-docs-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quanta/}

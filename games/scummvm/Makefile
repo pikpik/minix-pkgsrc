@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/12/10 12:48:46 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:08 jmmv Exp $
 
 DISTNAME=	scummvm_0.3.0b-src
+PKGREVISION=	1
 PKGNAME=	scummvm-0.3.0
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	games

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2002/09/20 21:26:30 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/01/28 22:03:13 jlam Exp $
 
 PKGNAME=		unixodbc-${ODBC_BASE_VERS}
-PKGREVISION=		1
+PKGREVISION=		2
 COMMENT=		ODBC 2.x/3.x driver manager
 
 CONFLICTS+=		iodbc-[0-9]*

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2002/10/19 10:54:48 rh Exp $
+# $NetBSD: Makefile,v 1.11 2002/11/30 23:21:36 salo Exp $
 #
 
 DISTNAME=	gnome-objc-1.0.40
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel lang gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-objc/1.0/}
 

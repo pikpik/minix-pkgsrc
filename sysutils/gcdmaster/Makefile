@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2002/10/29 16:50:14 drochner Exp $
+# $NetBSD: Makefile,v 1.8 2002/11/10 00:35:08 grant Exp $
 #
 
 DISTNAME=		cdrdao-1.1.7.src
+PKGREVISION=	1
 PKGNAME=		gcdmaster-1.1.7
 WRKSRC=			${WRKDIR}/cdrdao-1.1.7
 CATEGORIES=		sysutils

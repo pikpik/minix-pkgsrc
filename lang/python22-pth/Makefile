@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/25 10:48:48 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/25 16:57:43 grant Exp $
 #
 
 DISTNAME=	Python-2.2.2
+PKGREVISION=	1
 PKGNAME=	python22-pth-2.2.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.2.2/

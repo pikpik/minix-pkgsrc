@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/12/30 15:39:30 tron Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/03/12 22:07:29 jschauma Exp $
 
 .if !defined(GTKGLAREA_BUILDLINK2_MK)
 GTKGLAREA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gtkglarea
-BUILDLINK_DEPENDS.gtkglarea?=		gtkglarea>=1.2.2
+BUILDLINK_DEPENDS.gtkglarea?=		gtkglarea>=1.2.2nb2
 BUILDLINK_PKGSRCDIR.gtkglarea?=		../../x11/gtkglarea
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gtkglarea=gtkglarea

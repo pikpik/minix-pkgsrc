@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2002/08/01 05:48:14 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/23 02:39:34 jlam Exp $
 
 DISTNAME=	Chinput-3.0
+PKGREVISION=	1
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://download.linuxbyte.net/Chinese/Input/
 

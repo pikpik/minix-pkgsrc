@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2002/03/21 04:37:43 fredb Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/29 12:43:09 jmmv Exp $
 # FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.16 2000/10/15 15:45:59 knu Exp
 
 DISTNAME=	ruby-gtk-0.25
 PKGNAME=	${RUBY_PKGNAMEPREFIX}gtk-0.25
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/${DISTNAME:S/ruby-//}
 CATEGORIES=	x11
 MASTER_SITES=	http://www.ruby-lang.org/gtk/download/
@@ -19,7 +19,7 @@ USE_RUBY_EXTCONF= yes
 
 INSTALL_TARGET=	site-install
 
-DEPENDS+=	imlib>=1.9.11nb1:../../graphics/imlib
+DEPENDS+=	imlib>=1.9.14nb3:../../graphics/imlib
 
 DOCS_EN=	README README.EXT doc/rbbr.rb
 DOCS_JA=	README.ja README.EXT.ja

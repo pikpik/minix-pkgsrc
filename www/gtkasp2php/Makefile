@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/06/10 02:16:23 shell Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/13 11:44:31 wiz Exp $
 
 DISTNAME=	asp2php-0.76.10
+PKGREVISION=	1
 PKGNAME=	gtk${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://65.108.58.129/asp2php/

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/23 17:17:54 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/02 15:17:59 wiz Exp $
 
 DISTNAME=	DocumentLibrary-1.0rc1
+PKGREVISION=	1
 PKGNAME=	zope25-DocumentLibrary-1.0rc1
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/Kaivo/DocumentLibrary/

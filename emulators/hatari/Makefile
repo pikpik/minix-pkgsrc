@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/31 19:16:53 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:49 jmmv Exp $
 #
 
 DISTNAME=	hatari-0.25
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/hatari-0.25/src
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hatari/}

@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/09/11 10:15:33 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/09/23 09:22:15 jlam Exp $
 
 .if !defined(GDK_PIXBUF_BUILDLINK2_MK)
 GDK_PIXBUF_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gdk-pixbuf
-BUILDLINK_DEPENDS.gdk-pixbuf?=		gdk-pixbuf>=0.17.0
+BUILDLINK_DEPENDS.gdk-pixbuf?=		gdk-pixbuf>=0.22.0nb1
 BUILDLINK_PKGSRCDIR.gdk-pixbuf?=	../../graphics/gdk-pixbuf
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gdk-pixbuf=gdk-pixbuf

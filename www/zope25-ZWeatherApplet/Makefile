@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/03 19:36:49 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/23 15:57:55 drochner Exp $
 
 DISTNAME=	ZWeatherApplet-1.51
+PKGREVISION=	1
 PKGNAME=	zope25-ZWeatherApplet-1.51
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/zweatherapplet/}

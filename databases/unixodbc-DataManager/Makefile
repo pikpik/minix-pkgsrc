@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/03/13 17:36:45 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/20 21:32:05 jlam Exp $
 
 PKGNAME=		unixodbc-DataManager-${ODBC_BASE_VERS}
-PKGREVISION=		1
+PKGREVISION=		2
 COMMENT=		GUI tool for unixODBC data source management
 
 USE_BUILDLINK2=		YES

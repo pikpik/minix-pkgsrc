@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2001/10/24 22:10:45 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/21 01:46:52 jlam Exp $
 #
 
 DISTNAME=	dspectogram-1.2
+PKGREVISION=	1
 PKGNAME=	xmms-${DISTNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://hem.passagen.se/joakime/

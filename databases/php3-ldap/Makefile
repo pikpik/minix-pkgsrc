@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/10 13:03:15 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/09 11:55:53 wiz Exp $
 
 MODNAME=		ldap
 CATEGORIES+=		databases
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP3 extension for LDAP database access
 
 USE_BUILDLINK2=		yes

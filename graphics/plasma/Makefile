@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/11 08:25:10 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/27 19:17:57 jlam Exp $
 #
 
 DISTNAME=	plasma-1.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/plasma/src/
 

@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/11 13:56:31 markd Exp $
 
 DISTNAME=	kbiff-3.6.3
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://devel-home.kde.org/~granroth/kbiff/
 EXTRACT_SUFX=	.tar.bz2

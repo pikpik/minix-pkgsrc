@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:51 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:30 jlam Exp $
 
 .if !defined(GTKEXTRA_BUILDLINK2_MK)
 GTKEXTRA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		gtkextra
-BUILDLINK_DEPENDS.gtkextra?=	gtk+extra>=0.99.17
+BUILDLINK_DEPENDS.gtkextra?=	gtk+extra>=0.99.17nb1
 BUILDLINK_PKGSRCDIR.gtkextra?=	../../x11/gtk+extra
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.gtkextra=gtk+extra

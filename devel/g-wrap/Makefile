@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2003/01/19 04:43:38 uebayasi Exp $
+# $NetBSD: Makefile,v 1.15 2003/02/24 20:50:19 jschauma Exp $
 
 DISTNAME=	g-wrap-1.3.4
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnucash.org/pub/g-wrap/source/
 

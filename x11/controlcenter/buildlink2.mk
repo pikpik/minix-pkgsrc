@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/09/23 09:22:15 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2002/09/23 19:57:30 jlam Exp $
 
 .if !defined(CONTROLCENTER_BUILDLINK2_MK)
 CONTROLCENTER_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			controlcenter
-BUILDLINK_DEPENDS.controlcenter?=	control-center>=1.4.0.4
+BUILDLINK_DEPENDS.controlcenter?=	control-center>=1.4.0.4nb2
 BUILDLINK_PKGSRCDIR.controlcenter?=	../../x11/controlcenter
 DEPENDS+=	${BUILDLINK_DEPENDS.controlcenter}:../../x11/controlcenter
 

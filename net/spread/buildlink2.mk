@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1 2003/02/22 23:37:14 mjl Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/03/28 21:24:25 wiz Exp $
 
 .if !defined(SPREAD_BUILDLINK2_MK)
 SPREAD_BUILDLINK2_MK=		# defined
 
 BUILDLINK_PACKAGES+=		spread
-BUILDLINK_DEPENDS.spread?=	spread>=3.17.0
+BUILDLINK_DEPENDS.spread?=	spread>=3.17.0nb1
 BUILDLINK_PKGSRCDIR.spread?=	../../net/spread
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.spread=spread

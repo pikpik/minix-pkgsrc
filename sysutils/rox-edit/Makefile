@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/11/14 13:25:22 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:30 jmmv Exp $
 #
 
 DISTNAME=	Edit-0.1.2
+PKGREVISION=	1
 PKGNAME=	rox-edit-0.1.2
 WRKSRC=		${WRKDIR}/Edit
 CATEGORIES=	sysutils

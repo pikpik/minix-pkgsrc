@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/27 09:30:22 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/27 19:14:46 jlam Exp $
 #
 
 DISTNAME=	GUIlib-1.1.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/GUIlib/src/
 

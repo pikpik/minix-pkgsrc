@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/01/19 08:48:49 tron Exp $
+# $NetBSD: Makefile,v 1.6 2003/04/18 13:39:37 kei Exp $
 
 DISTNAME=	unicon-1.2
 PKGNAME=	unicon-im-1.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://www.opencjk.org/~yumj/download/
 

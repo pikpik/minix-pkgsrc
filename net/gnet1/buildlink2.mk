@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/04/15 11:49:02 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/04/15 12:17:19 wiz Exp $
 #
 # This Makefile fragment is included by packages that use gnet1.
 #
@@ -9,7 +9,7 @@
 GNET1_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gnet1
-BUILDLINK_DEPENDS.gnet1?=		gnet1>=1.1.7nb1
+BUILDLINK_DEPENDS.gnet1?=		gnet1>=1.1.8nb1
 BUILDLINK_PKGSRCDIR.gnet1?=		../../net/gnet1
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gnet1=gnet1

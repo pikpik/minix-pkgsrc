@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2002/09/23 13:03:31 markd Exp $
 #
 # This Makefile fragment is included by packages that use libmilter.
 #
@@ -7,7 +7,7 @@
 LIBMILTER_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			libmilter
-BUILDLINK_DEPENDS.libmilter?=		libmilter>=8.12.6
+BUILDLINK_DEPENDS.libmilter?=		libmilter>=8.12.9nb1
 BUILDLINK_PKGSRCDIR.libmilter?=		../../mail/libmilter
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.libmilter=libmilter

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/05 01:51:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2002/03/13 17:37:16 fredb Exp $
 #
 
 PKGNAME=	ppmtoxvpic-0.99.9
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 
 MAINTAINER=	hubertf@netbsd.org

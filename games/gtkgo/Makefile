@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/10 09:18:26 rh Exp $
 #
 
 DISTNAME=	gtkgo-0_0_10
+PKGREVISION=	1
 PKGNAME=	${DISTNAME:S/_/./g}
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	games gnome

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/12/24 06:09:59 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/01/29 03:40:55 markd Exp $
 
 DISTNAME=		kile-1.32
+PKGREVISION=		1
 CATEGORIES=		editors kde
 MASTER_SITES=		http://perso.club-internet.fr/pascal.brachet/kile/
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/29 06:15:34 rh Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/01 09:46:08 rh Exp $
 #
 
 .include "../../graphics/3DKit/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/3DKit/GLXKit/}
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${DISTNAME}/GLXKit
 
 COMMENT=	3DKit GLX backend

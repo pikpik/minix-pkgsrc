@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2003/03/07 21:58:01 salo Exp $
+# $NetBSD: Makefile,v 1.36 2003/03/22 13:47:56 chris Exp $
 
 DISTNAME=	sylpheed-0.8.11
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail news x11
 MASTER_SITES=	http://sylpheed.good-day.net/sylpheed/
 EXTRACT_SUFX=	.tar.bz2
@@ -29,8 +29,6 @@ CONFIGURE_ARGS+=	--enable-compface
 
 PKG_SYSCONFSUBDIR=	sylpheed
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-
-BUILDLINK_DEPENDS.gpgme=	gpgme>=0.3.10
 
 .include "../../mk/bsd.prefs.mk"
 BUILD_DEFS+=		USE_INET6 USE_OPENLDAP

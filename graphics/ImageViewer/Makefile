@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/29 09:29:56 rh Exp $
 #
 
 DISTNAME=	ImageViewer-0.6.0
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/ImageViewer
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://www.nice.ch/~phip/

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/08/28 07:58:51 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2003/04/03 08:25:36 wiz Exp $
 #
 
 DISTNAME=	ltris-1.0.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
