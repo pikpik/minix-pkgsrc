@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2002/01/15 20:10:51 agc Exp $
+# $NetBSD: Makefile,v 1.109 2002/01/15 20:17:09 agc Exp $
 #
 
 COMMENT=	Programming languages
@@ -68,7 +68,9 @@ SUBDIR+=	pgcc
 SUBDIR+=	py-extclass
 SUBDIR+=	py-html-docs
 SUBDIR+=	python
+SUBDIR+=	python20
 SUBDIR+=	python21
+SUBDIR+=	python22
 SUBDIR+=	ruby
 SUBDIR+=	ruby-base
 SUBDIR+=	ruby14-base
