@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2000/07/11 01:46:30 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.22 2001/04/08 16:25:27 dmcmahill Exp $
 #
 
 DISTNAME=	scilab-2.6.src
-PKGNAME=	scilab-2.6
-WRKSRC=		${WRKDIR}/${PKGNAME}
+PKGNAME=	scilab-2.6nb1
+WRKSRC=		${WRKDIR}/${DISTNAME:.src=}
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/Meta2/Scilab/distributions/
 
