@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 
 PREFIX=%%PREFIX%%
 
