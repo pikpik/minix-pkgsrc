@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/22 04:14:34 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/26 02:27:58 wiz Exp $
 #
 
 DISTNAME=	WWW-Amazon-Wishlist-0.65
@@ -14,7 +14,9 @@ COMMENT=	Perl5 module to get details from your Amazon wishlist
 
 DEPENDS+=	p5-libwww-*:../../www/p5-libwww
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/WWW/Amazon/Wishlist/.packlist
 
 .include "../../lang/perl5/module.mk"
