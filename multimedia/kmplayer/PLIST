@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/08 10:53:20 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/26 12:10:14 jmmv Exp $
 bin/kmplayer
 bin/kxineplayer
 lib/kde3/kmplayer.la
@@ -23,7 +23,6 @@ share/kde/mimelnk/application/x-kmplayer.desktop
 share/kde/mimelnk/application/x-mplayer2.desktop
 share/kde/mimelnk/audio/x-ms-wma.desktop
 share/kde/mimelnk/video/x-ms-wmp.desktop
-share/kde/mimelnk/video/x-ms-wmv.desktop
 share/kde/services/kmplayer_component.desktop
 @comment in kdelibs3: @dirrm share/kde/services
 @comment in kdelibs3: @dirrm share/kde/mimelnk/video
