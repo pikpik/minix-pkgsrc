@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 13:46:20 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/07/17 03:05:01 dmcmahill Exp $
 #
 
 DISTNAME=	geda-symbols-${PKGVERSION}
@@ -15,7 +15,7 @@ COMMENT=	Library of symbols for gEDA
 CONFLICTS+=	gEDA<19991011
 
 DIST_SUBDIR=	geda
-PKGVERSION=	20010708
+PKGVERSION=	20020414
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
