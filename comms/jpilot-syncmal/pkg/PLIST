@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PLUGINSDIR}/libsyncmal.so
