@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2002/09/21 02:15:57 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/11/30 11:46:07 salo Exp $
 
 DISTNAME=	yamt-0.5
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yamt/}
 
@@ -16,5 +17,6 @@ USE_X11BASE=		yes
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
 
+.include "../../misc/gnome1-dirs/buildlink2.mk"
 .include "../../x11/gnome-libs/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

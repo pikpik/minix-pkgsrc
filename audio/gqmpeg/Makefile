@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.63 2002/09/11 09:48:46 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2002/11/30 11:46:04 salo Exp $
 #
 
 DISTNAME=		gqmpeg-0.19.0
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gqmpeg/}
 
@@ -37,5 +38,6 @@ pre-install:
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
+.include "../../misc/gnome1-dirs/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
