@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.2.2.1 2002/06/23 19:06:47 jlam Exp $
+$NetBSD$
 
---- Makefile.orig	Thu May 30 09:42:36 2002
+--- Makefile.orig	2003-08-03 12:45:14.000000000 +0100
 +++ Makefile
-@@ -47,7 +47,7 @@
+@@ -52,7 +52,7 @@ tools-uninstall: .qmake.cache
  	cd tools && $(MAKE) uninstall
  tools-install: sub-tools
  	cd tools && $(MAKE) install
@@ -10,4 +10,4 @@ $NetBSD: patch-aa,v 1.2.2.1 2002/06/23 19:06:47 jlam Exp $
 +sub-tools: FORCE
  	cd tools && $(MAKE)
  
- #qmake
+ #plugins
