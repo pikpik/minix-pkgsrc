@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- include/pthread.h.orig	Mon Jul 10 19:23:14 2000
++++ include/pthread.h
+@@ -71,11 +71,10 @@
+ 	abort();
+ }
+ 
+-#include "pthread/machdep.h"
+-
+ #endif
+ 
+ #include <pthread/version.h>
++#include <pthread/machdep.h>
+ #include <pthread/cleanup.h>
+ #include <pthread/kernel.h>
+ #include <pthread/prio_queue.h>
