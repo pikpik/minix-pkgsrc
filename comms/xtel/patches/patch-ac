@@ -1,0 +1,15 @@
+$NetBSD: patch-aa,v 1.4 1999/11/14 22:53:22 frueauf Exp $
+
+--- global.h.orig	Sat Jan 12 17:55:27 2002
++++ global.h	Sat Jan 12 17:55:44 2002
+@@ -204,8 +204,10 @@
+  * Variables 
+  */
+ #ifndef __FreeBSD__
++#ifndef __NetBSD__
+ #ifndef __GLIBC__
+ extern char *sys_errlist[];
++#endif
+ #endif
+ #endif
+ 
