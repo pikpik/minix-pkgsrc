@@ -1,5 +1,5 @@
 ==========================================================================
-$NetBSD: MESSAGE,v 1.1.1.1 1998/11/24 20:37:40 tv Exp $
+$NetBSD: MESSAGE,v 1.1.1.1 2000/12/15 00:36:32 wiz Exp $
 
 The ${PREFIX}/etc/ircd directory where ircd's configuration files live is
 currently owned by root with world-readable permissions.
