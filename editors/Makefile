@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2001/08/03 22:16:48 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2001/08/05 17:20:13 sakamoto Exp $
 #
 
 COMMENT=	Editors
@@ -47,6 +47,7 @@ SUBDIR+=	vigor
 SUBDIR+=	vile
 SUBDIR+=	vilearn
 SUBDIR+=	vim
+SUBDIR+=	vim-devel
 SUBDIR+=	vim-gtk
 SUBDIR+=	vim-share
 SUBDIR+=	vim-xaw
