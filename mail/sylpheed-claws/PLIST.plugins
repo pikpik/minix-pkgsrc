@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/sylpheed/plugins/${PLUGIN_NAME}.a
+lib/sylpheed/plugins/${PLUGIN_NAME}.la
+lib/sylpheed/plugins/${PLUGIN_NAME}.so
+@unexec ${RMDIR} %D/lib/sylpheed/plugins 2>/dev/null || ${TRUE}
