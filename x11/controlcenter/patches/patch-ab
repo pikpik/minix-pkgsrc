@@ -1,4 +1,4 @@
-$NetBSD: patch-ab,v 1.4 2002/04/09 21:39:24 jlam Exp $
+$NetBSD: patch-ab,v 1.5 2002/08/29 08:42:52 jlam Exp $
 
 --- configure.orig	Sun Feb 10 16:36:55 2002
 +++ configure
@@ -18,7 +18,7 @@ $NetBSD: patch-ab,v 1.4 2002/04/09 21:39:24 jlam Exp $
 +# NetBSD: set DATADIRNAME to "share"
 +DATADIRNAME="share"
 +INTLDEPS=
-+INTLLIBS="-lintl"
++INTLLIBS="${INTLLIBS}"
 +
  for ac_hdr in dlfcn.h dl.h
  do
