@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- daemon/gdm.c.orig	Tue Mar 20 02:55:01 2001
 +++ daemon/gdm.c	Tue Mar 20 02:55:20 2001
 @@ -27,6 +27,7 @@
