@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2000/01/08 20:23:42 rh Exp $
+# $NetBSD: Makefile,v 1.12 2000/02/01 16:46:12 rh Exp $
 #
 
-DISTNAME=	gcombust-0.1.28
+DISTNAME=	gcombust-0.1.29
 CATEGORIES=	x11 sysutils
 MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 
@@ -12,7 +12,7 @@ DEPENDS+=	mkhybrid-*:../mkhybrid
 DEPENDS+=	cdrecord-*:../cdrecord
 DEPENDS+=	cdlabelgen-*:../../graphics/cdlabelgen
 DEPENDS+=	gv-*:../../print/gv
-DEPENDS+=	gtk+-1.2.*:../../x11/gtk
+DEPENDS+=	gtk+>=1.2.4:../../x11/gtk
 
 GNU_CONFIGURE=	YES
 
