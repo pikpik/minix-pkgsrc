@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.6 2001/01/04 15:10:45 agc Exp $
+@comment $NetBSD: PLIST,v 1.7 2001/01/25 12:29:52 taca Exp $
 bin/atoc_conv
 bin/kakasi
+bin/kakasi-config
 bin/mkkanwa
 bin/rdic_conv
 bin/wx2_conv
