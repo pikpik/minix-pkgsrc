@@ -33,10 +33,10 @@
 #ifndef DEFS_H_
 #define DEFS_H_
 
-#include <nbcompat.h>
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#include <nbcompat.h>
 #if HAVE_ERR_H
 #include <err.h>
 #endif

@@ -1,9 +1,9 @@
 /*	$NetBSD: global.c,v 1.6 1999/08/24 00:48:39 hubertf Exp $	*/
 
-#include <nbcompat.h>
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif

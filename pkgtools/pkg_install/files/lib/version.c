@@ -1,9 +1,9 @@
 /*	$NetBSD: version.c,v 1.1 2001/03/05 16:53:14 wiz Exp $	*/
 
-#include <nbcompat.h>
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif

@@ -1,14 +1,14 @@
-/*	$NetBSD: main.c,v 1.28.2.4 2003/08/21 22:13:07 jlam Exp $	*/
+/*	$NetBSD: main.c,v 1.37 2003/09/02 07:34:51 jlam Exp $	*/
 
-#include <nbcompat.h>
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#include <nbcompat.h>
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: main.c,v 1.28.2.4 2003/08/21 22:13:07 jlam Exp $");
+__RCSID("$NetBSD: main.c,v 1.37 2003/09/02 07:34:51 jlam Exp $");
 #endif
 
 /*
