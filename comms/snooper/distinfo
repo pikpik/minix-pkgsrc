@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 1999/12/02 03:34:50 itojun Exp $
+$NetBSD$
 
-MD5 (snooper-19991202.tar.gz) = a735dc4a3c685493e0e3d77ddfa2c6db
+SHA1 (snooper-19991202.tar.gz) = d6aba20cd14449d7b126f393cdb219fd627b7777
+Size (snooper-19991202.tar.gz) = 38239 bytes

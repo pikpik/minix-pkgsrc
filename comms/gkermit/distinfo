@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/04 11:21:58 fredb Exp $
+$NetBSD$
 
-MD5 (gkermit.tar.gz) = 1c10dca56fdf74a7bea1448815db2bc3
+SHA1 (gkermit.tar.gz) = 31e62ea8bb77db82de479cd1c5720147b5e52173
+Size (gkermit.tar.gz) = 62458 bytes

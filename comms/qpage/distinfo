@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/02/02 15:19:42 agc Exp $
+$NetBSD$
 
-MD5 (qpage-3.3.tar.Z) = 11aa64fa71d3a356bbcc0b85754680bc
+SHA1 (qpage-3.3.tar.Z) = bc2e220853f40bbea2e684c6cd02898b21c5be8e
+Size (qpage-3.3.tar.Z) = 225689 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/18 23:04:26 tsarna Exp $
+$NetBSD$
 
-MD5 (Device-SerialPort-0.070.tar.gz) = b538dc1d996e4ecd5c5b2495461b021d
+SHA1 (Device-SerialPort-0.070.tar.gz) = f5bb56453b838cd5220f7ded8981e0286c215ddf
+Size (Device-SerialPort-0.070.tar.gz) = 60085 bytes
 SHA1 (patch-aa) = 5fcf0ee6d8124ba4da2f1572a70178a064e3b9dc

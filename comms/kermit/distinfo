@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.7 2000/01/08 04:36:06 fredb Exp $
+$NetBSD$
 
-MD5 (cku196.tar.gz) = 5ab767ecc5887aef37c40a282d7bf7db
+SHA1 (cku196.tar.gz) = baabebe8231d04814eaffd26dd43acaaa2fbf165
+Size (cku196.tar.gz) = 2487276 bytes
