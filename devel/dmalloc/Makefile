@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2003/08/09 10:44:39 seb Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/11 01:46:30 abs Exp $
 
-DISTNAME=		dmalloc-5.2.1
+DISTNAME=		dmalloc-5.3.0
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dmalloc/}
 EXTRACT_SUFX=		.tgz
@@ -16,7 +16,10 @@ CONFIGURE_ARGS+=	--enable-shlib
 CFLAGS+=		-fPIC -DPIC
 CONFIGURE_ARGS+=	--enable-threads
 
-INSTALL_TARGET=		install installinfo
+# XXX the "installinfo" target is broken
+#INSTALL_TARGET=	install installinfo
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/docs/dmalloc.info ${PREFIX}/info
 
 INFO_FILES=		dmalloc.info
 
