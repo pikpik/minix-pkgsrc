@@ -1,4 +1,4 @@
-@comment $NetBDS$
+@comment $NetBSD$
 bin/mgp
 bin/mgp2ps
 bin/mgpnet
