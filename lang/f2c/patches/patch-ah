@@ -1,5 +1,7 @@
 $NetBSD$
 
+Omit pkgsrc-modified files from distributed checksum
+
 --- libI77/libI77.xsum.orig	Thu Jul  9 08:26:43 1998
 +++ libI77/libI77.xsum	Thu Jul  9 08:27:14 1998
 @@ -22,5 +22,4 @@

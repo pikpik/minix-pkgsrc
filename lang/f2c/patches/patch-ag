@@ -1,5 +1,8 @@
 $NetBSD$
 
+Set optimisation level appropriately, and omit modified
+files from distributed checksum
+
 --- libI77/makefile.orig	Sun Jul 19 22:58:35 1998
 +++ libI77/makefile	Sun Jul 19 23:13:08 1998
 @@ -1,5 +1,5 @@

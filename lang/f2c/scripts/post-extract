@@ -24,3 +24,5 @@ cd src
 rm index.html
 mv .depend depend.orig
 gunzip *.gz
+
+exit 0

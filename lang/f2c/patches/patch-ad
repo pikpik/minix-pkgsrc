@@ -1,5 +1,7 @@
 $NetBSD$
 
+Name libraries correctly
+
 --- f2c.1t.orig	Sat May 16 17:16:53 1998
 +++ f2c.1t	Thu Jul  9 07:54:55 1998
 @@ -333,12 +333,15 @@
