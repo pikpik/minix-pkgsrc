@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.7 2004/05/09 20:31:07 danw Exp $
+# $NetBSD: builtin.mk,v 1.8 2004/08/28 06:05:31 jlam Exp $
 
 .if !defined(_BLNK_LIBINTL_FOUND)
 _BLNK_LIBINTL_FOUND!=	\
@@ -49,7 +49,7 @@ BUILDLINK_VARS+=	IS_BUILTIN.gettext
 
 .if !defined(USE_BUILTIN.gettext)
 USE_BUILTIN.gettext?=	${IS_BUILTIN.gettext}
-PREFER.getext?=		pkgsrc
+PREFER.gettext?=		pkgsrc
 
 .  if defined(BUILTIN_PKG.gettext)
 USE_BUILTIN.gettext=	yes
