@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 1999/05/23 22:16:57 hwr Exp $
+# $NetBSD: Makefile,v 1.3 1999/07/09 18:50:02 thorpej Exp $
 #
 
-DISTNAME=	mswordview-0.5.9
+DISTNAME=	mswordview-0.5.14
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.csn.ul.ie/~caolan/publink/mswordview/
 

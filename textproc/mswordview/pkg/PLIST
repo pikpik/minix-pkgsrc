@@ -1,5 +1,9 @@
-@comment $NetBSD: PLIST,v 1.3 1999/06/15 12:19:22 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.4 1999/06/15 12:37:47 hubertf Exp $
 bin/mswordview
+bin/wv-libconfig
+bin/wv-incconfig
+include/wv.h
+share/libwv.a
 share/mswordview/symbolfont/100.gif
 share/mswordview/symbolfont/101.gif
 share/mswordview/symbolfont/102.gif
