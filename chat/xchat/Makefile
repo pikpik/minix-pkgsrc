@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/05 15:30:22 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/16 13:51:34 wiz Exp $
 
 DISTNAME=	xchat-1.6.2
 CATEGORIES=	chat x11 gnome
@@ -22,7 +22,7 @@ pre-configure:
 	@${TOUCH} ${WRKSRC}/stamp-h.in
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/xchat
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xchat
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/xchat
 
 .include "../../mk/bsd.pkg.mk"

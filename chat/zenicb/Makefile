@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 00:36:35 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 13:51:36 wiz Exp $
 #
 
 DISTNAME=		zenicb-19981202
@@ -36,7 +36,7 @@ do-build:
 
 do-install:
 .if defined(USE_XEMACS)
-	@${MKDIR} ${PREFIX}/${ELISPDIR}
+	@${INSTALL_DATA_DIR} ${PREFIX}/${ELISPDIR}
 .endif
 	@for file in ${WRKSRC}/src/*.el; do \
 		j="${INSTALL_DATA} $$file ${PREFIX}/${ELISPDIR}/"; \
