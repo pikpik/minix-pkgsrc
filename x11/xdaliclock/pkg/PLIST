@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xdaliclock
+lib/X11/app-defaults/XDaliClock
+man/cat1/xdaliclock.0
