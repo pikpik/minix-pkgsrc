@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/05/14 11:24:49 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/14 11:34:28 grant Exp $
 
 DISTNAME=	${PKGBASE}
 PKGNAME=	xterm-188
@@ -35,5 +35,4 @@ post-install:
 	${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 .endif
 
-.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
