@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/03/16 12:16:52 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2000/05/02 15:17:45 pooka Exp $
 
 DISTNAME=		iozone3_9
 PKGNAME=		iozone-3.09
@@ -23,5 +23,7 @@ MAKEFILE=		makefile
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/iozone ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/iozone.1 ${PREFIX}/man/man1
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/IOzone
+	${INSTALL_DATA} ${WRKDIR}/docs/IOzone_ps.gz ${PREFIX}/share/doc/IOzone
 
 .include "../../mk/bsd.pkg.mk"
