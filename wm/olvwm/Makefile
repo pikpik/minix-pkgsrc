@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/12 02:03:48 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:43 wiz Exp $
 #
 
 DISTNAME=	olvwm4.src4
@@ -17,6 +17,6 @@ USE_X11BASE=	# defined
 USE_XPM=	# defined
 USE_IMAKE=	# defined
 
-NO_WRKSUBDIR=	# defined
+WRKSRC=		${WRKDIR}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 15:10:57 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/03/28 10:28:28 wiz Exp $
 #
 
 DISTNAME=	linuxq3ademo-1_11-6_x86_gz
@@ -18,7 +18,7 @@ DEPENDS+=	suse_glx-6.4:../../emulators/suse_glx
 CONFLICTS=	quake3arena-*
 
 NO_CONFIGURE=	yes
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 								${GTAR} xzf -
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/09/02 15:35:37 veego Exp $
 #
 
 DISTNAME=	jhead
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.sentex.net/~mwandel/jhead/
 COMMENT=	Extract EXIF header from JPEG image
 
 DIST_SUBDIR=	${DISTNAME}
-NO_WRKSUBDIR=	YES
+WRKSRC=		${WRKDIR}
 
 LIBS=		-lm
 

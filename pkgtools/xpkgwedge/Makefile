@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/07/10 00:58:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.28 2001/07/13 07:09:22 jlam Exp $
 #
 
 DISTNAME=	xpkgwedge-1.6
@@ -12,7 +12,7 @@ COMMENT=	allows X11 pkgs to be built and used outside of /usr/X11R6
 
 EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	# defined
-NO_WRKSUBDIR=	# defined
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	# defined
 
 DEINSTALL_FILE=	${WRKDIR}/DEINSTALL

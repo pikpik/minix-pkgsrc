@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 22:29:38 jtb Exp $
 
 DISTNAME=		linpackc
 PKGNAME=		linpack-bench-940225
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		# empty
 MAINTAINER=		root@garbled.net
 COMMENT=		Collection of benchmarks for floating point
 
-NO_WRKSUBDIR=		yes
+WRKSRC=			${WRKDIR}
 
 do-extract:
 	${MKDIR} ${WRKSRC}

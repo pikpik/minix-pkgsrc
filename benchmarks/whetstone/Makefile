@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/03/31 10:09:05 zuntum Exp $
+# $NetBSD: Makefile,v 1.10 2001/04/09 11:45:39 wiz Exp $
 
 DISTNAME=		whetstone
 PKGNAME=		whetstone-1.2
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.c
 MAINTAINER=		root@garbled.net
 COMMENT=		Benchmark for processors that gives you a MIPS rating
 
-NO_WRKSUBDIR=		yes
+WRKSRC=			${WRKDIR}
 EXTRACT_CMD=		${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 do-build:

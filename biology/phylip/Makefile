@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/08/18 22:46:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 13:41:30 wiz Exp $
 
 DISTNAME=	phylip
 PKGNAME=	phylip-3.573c
-NO_WRKSUBDIR=	yes
 CATEGORIES=	biology
 MASTER_SITES=	ftp://evolution.genetics.washington.edu/pub/phylip/ \
 		ftp://ftp.bioss.sari.ac.uk/pub/phylogeny/phylip/
@@ -15,6 +14,8 @@ COMMENT=	Phylogeny Inference Package
 RESTRICTED=		"No commercial distribution without a royalty agreement with the author"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+
+WRKSRC=		${WRKDIR}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/phylip

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/02/17 17:51:33 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/04/13 18:13:34 hubertf Exp $
 #
 
 DISTNAME=	url2pkg-1.15
@@ -10,7 +10,7 @@ MAINTAINER=	hubertf@netbsd.org
 COMMENT=	Shellscript to help with the first steps to build a package
 
 EXTRACT_ONLY=	# empty
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
 NO_PATCH=	yes

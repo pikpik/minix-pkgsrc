@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/31 10:09:04 zuntum Exp $
+# $NetBSD: Makefile,v 1.7 2001/04/09 11:45:36 wiz Exp $
 
 DISTNAME=		fib.c
 PKGNAME=		fib-980203
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		#empty
 MAINTAINER=		root@garbled.net
 COMMENT=		Mathematical benchmark
 
-NO_WRKSUBDIR=		yes
+WRKSRC=			${WRKDIR}
 
 do-extract:
 	${MKDIR} ${WRKSRC}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 18:24:49 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/06/22 03:52:25 jlam Exp $
 
 DISTNAME=	imap-utils
 PKGNAME=	imap-uw-utils-20001220
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.washington.edu/imap/
 COMMENT=	UW IMAP mailbox utilities
 
 DIST_SUBDIR=		${PKGNAME}
-NO_WRKSUBDIR=		# defined
+WRKSRC=			${WRKDIR}
 USE_BUILDLINK_ONLY=	# defined
 
 SRCDIRS=	chkmail dmail icat ifrom imapcopy imapxfer \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:54:53 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:11 hubertf Exp $
 #
 
 DISTNAME=	9.01
@@ -14,7 +14,7 @@ COMMENT=	Usenet News reader for the X window system
 DIST_SUBDIR=	xrn
 
 USE_IMAKE=	yes
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 
 pre-install:
 	${INSTALL_DATA_DIR} ${X11PREFIX}/share/doc/xrn

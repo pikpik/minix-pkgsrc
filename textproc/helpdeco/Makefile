@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/23 15:47:43 agc Exp $
 #
 
 DISTNAME=		helpdc21
@@ -11,7 +11,7 @@ MAINTAINER=		collver@linuxfreemail.com
 HOMEPAGE=		http://www.simtel.net/pub/pd/23694.shtml
 COMMENT=		windows .hlp to .rtf converter
 
-NO_WRKSUBDIR=		yes
+WRKSRC=			${WRKDIR}
 
 LICENSE=		no-commercial-use
 

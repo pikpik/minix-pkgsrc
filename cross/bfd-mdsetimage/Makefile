@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/23 13:02:39 sakamoto Exp $
+# $NetBSD: Makefile,v 1.7 2001/06/11 06:34:23 jlam Exp $
 
 DISTNAME=	bfd-mdsetimage-1.15.1
 CATEGORIES=	cross
@@ -11,7 +11,7 @@ COMMENT=	mdsetimage using libbfd. Used for cross-building distributions
 DEPENDS=	cross-binutils>=2.9.1.1:../binutils
 
 EXTRACT_ONLY=	# empty
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_PATCH=	yes
 NO_CONFIGURE=	yes

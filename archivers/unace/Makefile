@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 13:15:37 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/07/16 10:21:15 jlam Exp $
 #
 
 DISTNAME=	unacepub
@@ -16,7 +16,7 @@ USE_BUILDLINK_ONLY=	yes
 USE_GMAKE=		yes
 
 DIST_SUBDIR=	unace-1.2
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 MAKEFILE=	unix/makefile
 
 do-install:

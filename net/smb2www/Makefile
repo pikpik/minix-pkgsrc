@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/18 04:52:34 hubertf Exp $
 #
 
 DISTNAME=	smb2www-980804
@@ -15,7 +15,7 @@ DEPENDS+=	samba-[0-9]*:../../net/samba
 DEPENDS+=	perl-[0-9]*:../../lang/perl5
 DEPENDS+=	apache{,6}-[0-9]*:../../www/apache
 
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}
 
 SMB2WWW_MASTER_BROWSER_SERVER?=		# set for non-empty
 APACHE_USER?=	nobody

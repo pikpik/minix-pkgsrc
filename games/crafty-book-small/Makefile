@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/10/21 22:36:35 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:10:46 wiz Exp $
 
 DISTNAME=		small
 PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}-20000511
@@ -15,7 +15,7 @@ CONFLICTS=		${CHESS_ENGINE}-book-*
 
 CHESS_ENGINE=		crafty
 DIST_SUBDIR=		chessbooks
-NO_WRKSUBDIR=		# defined
+WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		# defined
 
 PLIST_SUBST+=		CHESS_ENGINE=${CHESS_ENGINE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/04/28 23:59:18 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2001/05/06 00:08:29 jtb Exp $
 
 DISTNAME=		haskell-mode
 PKGNAME=		haskell-mode-20001129
@@ -10,7 +10,7 @@ HOMEPAGE=		http://www.haskell.org/haskell-mode/
 COMMENT=		Haskell mode for Emacs
 
 DIST_SUBDIR=		${PKGNAME}
-NO_WRKSUBDIR=		# defined
+WRKSRC=			${WRKDIR}
 
 .include "../../mk/bsd.prefs.mk"
 

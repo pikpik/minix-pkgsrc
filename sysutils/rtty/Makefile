@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/02/17 17:42:17 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2001/05/19 03:56:40 jlam Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/01/06 12:13:36 jkh Exp
 #
 
@@ -10,7 +10,7 @@ MASTER_SITES=   ftp://ftp.vix.com/pub/vixie/
 MAINTAINER=	packages@netbsd.org
 COMMENT=	multiuser "tip"/"cu" replacement with logging
 
-NO_WRKSUBDIR=   yes
+WRKSRC=		${WRKDIR}
 
 pre-configure:
 	${CHMOD} -R u+w ${WRKDIR}

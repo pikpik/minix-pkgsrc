@@ -1,8 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/09 08:17:44 pooka Exp $
 
 DISTNAME=		stuffit-5.2.0.603-linux
 PKGNAME=		stuffit-5.2.0.603
-NO_WRKSUBDIR=		YES
 CATEGORIES=		archivers
 MASTER_SITES=		ftp://ftp.aladdinsys.com/pub/linux/StuffIt_for_Linux/ \
 			ftp://ftp2.aladdinsys.com/pub/linux/StuffIt_for_Linux/
@@ -13,6 +12,7 @@ COMMENT=		Stuffit Archive Creator and Expander
 
 DEPENDS+=		suse_base>=6:../../emulators/suse_base
 
+WRKSRC=			${WRKDIR}
 RESTRICTED=		"Redistribution not permitted"
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
