@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/01 08:02:48 mrg Exp $
 #
 
 DISTNAME=	rp8codecs${RP_ARCH}
-PKGNAME=	realplayer-codecs
+PKGNAME=	realplayer-codecs-8
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://mplayerhq.hu/MPlayer/releases/
 EXTRACT_SUFX=	.tar.bz2
