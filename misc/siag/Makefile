@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/10/21 15:15:01 agc Exp $
+# $NetBSD: Makefile,v 1.14 1999/11/11 02:07:19 hubertf Exp $
 
 DISTNAME=       siag-3.1.20
 CATEGORIES=     misc textproc math
@@ -25,7 +25,7 @@ STRIPFLAG=
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-DEPENDS+=	ncurses-4.2:../../devel/ncurses
+DEPENDS+=	ncurses>=4.2:../../devel/ncurses
 .endif
 
 XAW_TYPE?=	3d

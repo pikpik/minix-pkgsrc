@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/08 09:05:40 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/11/12 15:32:48 agc Exp $
 #
 
 DISTNAME=	bvi-1.2.0.src
@@ -19,7 +19,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-DEPENDS+=	ncurses-4.2:../../devel/ncurses
+DEPENDS+=	ncurses>=4.2:../../devel/ncurses
 .endif
 
 .include "../../mk/bsd.pkg.mk"

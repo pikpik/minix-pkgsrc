@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/15 20:39:44 tron Exp $
+# $NetBSD: Makefile,v 1.4 1999/07/06 08:04:14 jlam Exp $
 #
 
 DISTNAME=       dialog-0.6z
@@ -7,7 +7,7 @@ MASTER_SITES=   ${MASTER_SITE_SUNSITE:=utils/shell/}
 
 MAINTAINER=	jlam@netbsd.org
 
-DEPENDS+=	ncurses-4.2:../../devel/ncurses
+DEPENDS+=	ncurses>=4.2:../../devel/ncurses
 
 NO_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/01/04 17:12:59 bouyer Exp $
+# $NetBSD: Makefile,v 1.36 2000/01/09 01:28:34 wiz Exp $
 
 DISTNAME=	mutt-${MUTT_VERSION}
 CATEGORIES=	mail
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.mutt.org/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+=	${LOCALBASE}/bin/automake:../../devel/automake
-DEPENDS+=	ncurses-4.2:../../devel/ncurses
+DEPENDS+=	ncurses>=4.2:../../devel/ncurses
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

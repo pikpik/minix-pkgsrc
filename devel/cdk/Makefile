@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/08/29 15:29:40 jlam Exp $
+# $NetBSD: Makefile,v 1.5 1999/11/10 10:48:29 agc Exp $
 #
 
 DISTNAME=		latestCDK
@@ -23,7 +23,7 @@ ALL_TARGET=		default
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-DEPENDS+=		ncurses-4.2:../../devel/ncurses
+DEPENDS+=		ncurses>=4.2:../../devel/ncurses
 .elif ${OPSYS} == "SunOS"
 MAKE_ENV+=		CPPFLAGS=
 .endif

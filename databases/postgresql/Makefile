@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 1999/12/02 01:47:05 darcy Exp $
+# $NetBSD: Makefile,v 1.44 1999/12/28 04:56:09 wiz Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
@@ -19,7 +19,7 @@ BUILD_DEPENDS+=		${LOCALBASE}/bin/bison:../../devel/bison
 # Evil stuff follows: I haven't figured out how to add flags to configure to
 # nicely disable the ncurses and readline checks in the configure script, yet.
 .if exists(${LOCALBASE}/include/ncurses.h)
-DEPENDS+=		ncurses-4.2:../../devel/ncurses
+DEPENDS+=		ncurses>=4.2:../../devel/ncurses
 .endif
 .if exists(${LOCALBASE}/include/readline.h)
 DEPENDS+=		readline-4.0:../../devel/readline
