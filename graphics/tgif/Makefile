@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:27 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/06/22 12:39:47 agc Exp $
 
-DISTNAME=	tgif-3.0-p16
+DISTNAME=	tgif-3.0p16
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications/tgif

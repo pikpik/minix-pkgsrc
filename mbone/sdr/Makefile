@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 1998/04/22 14:22:45 agc Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/18 10:45:54 is Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/10/15 20:35:20 fenner Exp 
 #
 
 DISTNAME=	sdr.V2.4a7n
-PKGNAME=	sdr-2.4a7-mmrz
+PKGNAME=	sdr-2.4a7mmrz
 CATEGORIES=	mbone tk80
 MASTER_SITES=	http://north.east.isi.edu/sdr/
 
