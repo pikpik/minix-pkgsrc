@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/dbench
+bin/tbench
+bin/tbench_srv
+share/dbench/client.txt
+@dirrm share/dbench
