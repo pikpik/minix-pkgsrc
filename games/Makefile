@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.126 2001/11/13 21:34:31 jlam Exp $
+# $NetBSD: Makefile,v 1.127 2001/12/22 21:17:44 hubertf Exp $
 #
 
 COMMENT=	Games
@@ -36,6 +36,7 @@ SUBDIR+=	eus-demo
 SUBDIR+=	exchess
 SUBDIR+=	exchess-book-medium
 SUBDIR+=	exchess-book-small
+SUBDIR+=	falcons-eye
 SUBDIR+=	finalbattle
 SUBDIR+=	fire
 SUBDIR+=	freeciv-client
