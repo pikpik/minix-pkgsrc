@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/03/29 12:42:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2003/04/05 19:23:25 wiz Exp $
 
 DISTNAME=	etcupdate-20030305
 WRKSRC=		${WRKDIR}
@@ -14,8 +14,6 @@ EXTRACT_ONLY=	# defined
 NO_CHECKSUM=	# defined
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined
-
-.include "../../mk/bsd.prefs.mk"
 
 do-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/etcupdate ${PREFIX}/bin/etcupdate
