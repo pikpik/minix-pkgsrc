@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/doc/${PKGBASE}/README
+share/examples/${PKGBASE}/getkeyset.pl
+share/examples/${PKGBASE}/key2ds
+share/examples/${PKGBASE}/make-signed-keyset
