@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/03/15 00:00:42 jschauma Exp $
+# $NetBSD: Makefile,v 1.25 2003/04/10 18:17:48 mjl Exp $
 #
 
 DISTNAME=	slrn-0.9.7.4
@@ -18,14 +18,14 @@ MAINTAINER=	mjl@netbsd.org
 HOMEPAGE=	http://slrn.sourceforge.net/
 COMMENT=	Highly customizable threaded newsreader
 
-USE_BUILDLINK2=	yes
-GNU_CONFIGURE=	yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=--without-X --disable-inews --with-slrnpull \
 		--enable-spool --enable-grouplens \
 		--with-gen-mid --with-libdir=${PREFIX}/lib/slrn \
 		--enable-mid-cache \
 		--with-localedir=${PREFIX}/${PKGLOCALEDIR}/locale
-
 
 .include "../../mk/bsd.prefs.mk"
 
