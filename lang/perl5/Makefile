@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2001/10/02 06:46:43 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2001/10/14 19:55:47 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -36,7 +36,7 @@ MKPIC?=			yes
 # particular operating system.
 #
 LIBSWANTED.NetBSD=	m crypt
-LIBSWANTED.SunOS=	m crypt socket nsl
+LIBSWANTED.SunOS=	m crypt dl socket nsl
 
 # Nail down the directories in which the system libraries may be found.
 # If this isn't defined, then use the perl defaults for the particular
