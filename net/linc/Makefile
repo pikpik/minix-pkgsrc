@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/02/14 18:26:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/03/26 02:27:48 wiz Exp $
 #
 
 DISTNAME=		linc-1.1.1
@@ -13,7 +13,7 @@ COMMENT=		Network client/server library
 
 CONFLICTS=		ORBit2>=2.8
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
@@ -23,8 +23,8 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
 CONFIGURE_ARGS+=	--with-openssl
 
-.include "../../devel/glib2/buildlink2.mk"
-.include "../../devel/pkgconfig/buildlink2.mk"
-.include "../../security/openssl/buildlink2.mk"
+.include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
