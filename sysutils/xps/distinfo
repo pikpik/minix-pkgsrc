@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.5 1999/07/13 01:42:44 sakamoto Exp $
+$NetBSD$
 
-MD5 (xps-3.14.tar.gz) = 7742d25006be765a0ec69815b6837e9e
+SHA1 (xps-3.14.tar.gz) = 0c21a13b99f3375d8fc1b94b9bdabec2dd232a59
+Size (xps-3.14.tar.gz) = 168772 bytes
 SHA1 (patch-aa) = 6b8ad36ce378490a5e5cd4a7ccac0910ae2b6ecb

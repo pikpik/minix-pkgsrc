@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/08/05 03:10:59 hubertf Exp $
+$NetBSD$
 
-MD5 (e2fsprogs-1.19.tar.gz) = 670dafc419fca17bfb92c9c467904b19
+SHA1 (e2fsprogs-1.19.tar.gz) = a5f0c8fb7b2a232b1e20e07748a286ebb9076be0
+Size (e2fsprogs-1.19.tar.gz) = 957756 bytes
 SHA1 (patch-aa) = 6cf31cd25801b975474fccd0400fee74f1ba064d

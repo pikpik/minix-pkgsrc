@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.1.1.1 2000/09/01 16:10:28 veego Exp $
+$NetBSD$
 
-MD5 (gpart-0.1g.tar.gz) = 7a4f1debf68b33b9668d2cdcd5af3946
+SHA1 (gpart-0.1g.tar.gz) = 6104e23b64bc6f1c0fd160f62196924facab313b
+Size (gpart-0.1g.tar.gz) = 47302 bytes
 SHA1 (patch-aa) = 7f02c5a076714b65ec45296829d06eb764f454ae
 SHA1 (patch-ab) = 3bcd187ebc9ee98bf5bda01a11cadf5be774763c
 SHA1 (patch-ac) = 759b7a9c61d05448fb96ee35619be99d963a70b5

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.6 2000/05/09 11:16:00 agc Exp $
+$NetBSD$
 
-MD5 (user-20000509.tar.gz) = 97597bfcbacc11e7a83e78f3bf6a4688
+SHA1 (user-20000509.tar.gz) = 7bdd54a7150c20432dd81fde8d086cd52b3f2fe4
+Size (user-20000509.tar.gz) = 17755 bytes
 SHA1 (patch-aa) = bb47a90980043726052e472f1be21d1a63962b5f

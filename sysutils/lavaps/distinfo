@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.3 2000/10/15 02:33:14 jlam Exp $
+$NetBSD$
 
-MD5 (lavaps-1.15.tar.gz) = 36ad2964f9462a6f8194a9ced31680fc
+SHA1 (lavaps-1.15.tar.gz) = bb3fa1b59f65fcf8b898533898b14aa4dc94e1c9
+Size (lavaps-1.15.tar.gz) = 153336 bytes
 SHA1 (patch-aa) = 3be933a17396c051d79d8d3695f91f459fb29d3a

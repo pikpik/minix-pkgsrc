@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/02/21 16:45:32 pooka Exp $
+$NetBSD$
 
-MD5 (bchunk-1.0.0.tar.gz) = 09ee48d87a4643dcaefe471f7ca4becb
+SHA1 (bchunk-1.0.0.tar.gz) = 48e34142fa4ce1afe73db3c12003f7416c27881e
+Size (bchunk-1.0.0.tar.gz) = 14850 bytes
 SHA1 (patch-aa) = c19fef146f0bddd685fc07b3da15191b3a14dd20

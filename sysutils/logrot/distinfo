@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 1999/07/27 15:49:54 lukem Exp $
+$NetBSD$
 
-MD5 (logrot-1.5.tar.gz) = d8d43ac65a9eeda218e8d30af6ac5846
+SHA1 (logrot-1.5.tar.gz) = 0a2b87cff099ba724f7911e5c55287243fde5384
+Size (logrot-1.5.tar.gz) = 34837 bytes

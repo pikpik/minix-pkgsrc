@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 1999/11/06 15:57:41 hubertf Exp $
+$NetBSD$
 
-MD5 (klavg-1.1.tar.gz) = 569781a3e20f87d7b97cd99ab3b8520e
+SHA1 (klavg-1.1.tar.gz) = 9eb8eb8296aee655aa7a007676aae2d4611806c4
+Size (klavg-1.1.tar.gz) = 15225 bytes
 SHA1 (patch-aa) = 7a027f64e30892199cce3203eaae6f0bf0b596ef
 SHA1 (patch-ab) = 5a023d20eb73ba9f0eb8181423e70bdcf36bc706

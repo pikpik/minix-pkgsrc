@@ -1,4 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/17 16:47:23 abs Exp $
+$NetBSD$
 
-MD5 (fix4SA110rev2.c) = 9df0fdaac8e39126e865a2ebd9de0990
-MD5 (fix4SA110rev2.README) = 0bdb136e9d27f0334042725bdb5920d0
+SHA1 (fix4SA110rev2.c) = c7043743e482087322b4dce346649af5b221ae36
+Size (fix4SA110rev2.c) = 8170 bytes
+SHA1 (fix4SA110rev2.README) = 7ffd9c6dc9c311c4cc47d7544fb2e89961108f3a
+Size (fix4SA110rev2.README) = 2724 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/19 23:00:32 wrstuden Exp $
+$NetBSD$
 
-MD5 (hfsutils-3.2.6.tar.gz) = fa572afd6da969e25c1455f728750ec4
+SHA1 (hfsutils-3.2.6.tar.gz) = 6d71dfb2c93c0d8082972d39f3f75ae53a438d5d
+Size (hfsutils-3.2.6.tar.gz) = 207697 bytes
 SHA1 (patch-aa) = bcd686f431220aafb994b4870974ae3157287b46
