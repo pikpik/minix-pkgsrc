@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/upx
+share/doc/upx/upx.doc
+share/doc/upx/upx.html
