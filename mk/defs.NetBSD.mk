@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.5 2001/07/15 12:40:03 jlam Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.6 2001/11/19 16:17:51 jlam Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -62,3 +62,6 @@ GROUPADD?=	${LOCALBASE}/sbin/groupadd
 DEPENDS+=	user>=20000313:../../sysutils/user
 .endif
 NOLOGIN?=	/sbin/nologin
+
+ROOT_USER?=	root
+ROOT_GROUP?=	wheel
