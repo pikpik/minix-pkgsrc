@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/apache/mod_auth_cookie.so
