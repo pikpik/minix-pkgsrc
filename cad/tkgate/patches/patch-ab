@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Mon Oct 28 23:11:21 2002
++++ configure	Mon Oct 28 23:11:43 2002
+@@ -70,7 +70,7 @@
+ #
+ LPATH=""
+ IPATH=""
+-LIBS=""
++LIBS="-lm ${BUILDLINK_LDFLAGS}"
+ TCLTKOK=1
+ 
+ ##################################################################
