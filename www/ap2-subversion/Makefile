@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/08/06 20:25:38 seb Exp $
+# $NetBSD: Makefile,v 1.8 2003/12/03 15:40:02 epg Exp $
 
 PKGNAME=	ap2-subversion-${SVNVER}
 PKGREVISION=	1
@@ -14,7 +14,7 @@ APACHE_MODULE=		YES
 ALL_TARGET=		apache-mod
 INSTALL_TARGET=		install-mods-shared
 
-BUILDLINK_DEPENDS.apache?=	apache>=2.0.47
+BUILDLINK_DEPENDS.apache?=	apache>=2.0.48
 
 .include "../../devel/subversion/buildlink2.mk"
 .include "../../www/apache2/buildlink2.mk"
