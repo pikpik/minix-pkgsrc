@@ -1,4 +1,5 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 1998/09/05 03:21:11 garbled Exp $
+
 --- Makefile.global.in.orig	Fri Aug 28 12:34:15 1998
 +++ Makefile.global.in	Fri Aug 28 12:29:51 1998
 @@ -34,7 +34,7 @@
