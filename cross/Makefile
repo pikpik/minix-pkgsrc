@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2000/09/07 13:13:47 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2000/11/06 03:17:48 minoura Exp $
 
     SUBDIR += arm-netbsd
     SUBDIR += armv2-netbsd
     SUBDIR += bfd-crunchide
     SUBDIR += bfd-mdsetimage
     SUBDIR += binutils
+    SUBDIR += i386-cygwin32
     SUBDIR += i386-linux
     SUBDIR += i386-linuxglibc1
     SUBDIR += i386-msdosdjgpp
