@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/06/27 08:50:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:28 grant Exp $
 #
 
 DISTNAME=	nidentd-1.0
+PKGREVISION=	1
 CATEGORIES=	net sysutils
 MASTER_SITES=	ftp://ftp.tgr.lubin.edu.pl/pub/NetBSD/nidentd/
 EXTRACT_SUFX=	.tgz
