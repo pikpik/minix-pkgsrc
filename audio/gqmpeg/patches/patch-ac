@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- src/io_ogg123.c.orig	Fri Feb 16 03:53:18 2001
++++ src/io_ogg123.c
+@@ -52,10 +52,15 @@
+ 
+ static const gchar *ogg123_output_devices[] =
+ {
++#ifdef __NetBSD__
++	"sun",
++#endif
+ 	"oss",
+ 	"esd",
+ 	"irix",
++#ifndef __NetBSD__
+ 	"solaris",
++#endif
+ 	"wav",
+ 	NULL
+ };
