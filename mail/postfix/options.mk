@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.options,v 1.8 2004/07/31 05:07:19 jlam Exp $
+# $NetBSD: Makefile.options,v 1.9 2004/08/04 20:49:43 jlam Exp $
 
 # Global and legacy options
 #

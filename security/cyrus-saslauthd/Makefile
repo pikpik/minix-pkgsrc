@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/08/01 19:43:45 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2004/08/04 20:08:38 jlam Exp $
 
 DISTNAME=	cyrus-sasl-2.1.19
 PKGNAME=	${DISTNAME:S/sasl/saslauthd/}
@@ -32,7 +32,7 @@ FILES_SUBST+=		SASLSOCKETDIR=${SASLSOCKETDIR}
 CONFIGURE_ARGS+=	--with-saslauthd="${SASLSOCKETDIR}"
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
 
-.include "Makefile.options"
+.include "options.mk"
 
 USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL=	${PKGDIR}/DEINSTALL

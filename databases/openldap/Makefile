@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2004/07/30 21:05:41 jlam Exp $
+# $NetBSD: Makefile,v 1.81 2004/08/04 19:45:02 jlam Exp $
 
 DISTNAME=		openldap-2.2.13
 SVR4_PKGNAME=		oldap
@@ -26,7 +26,7 @@ OPENLDAP_VARDIR=	${VARBASE}/openldap
 FILES_SUBST+=		OPENLDAP_ETCDIR=${OPENLDAP_ETCDIR}
 
 .include "../../mk/bsd.prefs.mk"
-.include "Makefile.options"
+.include "options.mk"
 
 CPPFLAGS.Darwin+=	-DBIND_8_COMPAT
 

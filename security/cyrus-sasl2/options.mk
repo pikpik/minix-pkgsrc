@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.options,v 1.1 2004/07/30 21:05:41 jlam Exp $
 
 # Global and legacy options
 .if defined(KERBEROS) || defined(SASL_USE_GSSAPI)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.options,v 1.1 2004/07/30 21:05:42 jlam Exp $
+# $NetBSD: Makefile.options,v 1.2 2004/08/01 19:43:45 jlam Exp $
 
 # Global and legacy options
 .if defined(KERBEROS) || defined(USE_PAM) || defined(USE_OPENLDAP) || \
