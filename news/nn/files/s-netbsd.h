@@ -1,4 +1,4 @@
-/* $NetBSD$ */
+/* $NetBSD: s-netbsd.h,v 1.2 1998/08/07 11:11:10 agc Exp $ */
 
 /*
  *      This version is for FreeBSD 2.1
@@ -15,6 +15,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>   /* for S_IFREG */
 #include <fcntl.h>      /* for O_RDONLY */
+#include <paths.h>	/* for _PATH_SENDMAIL */
 
 #define HAVE_STDLIB_H
 #define HAVE_STRING_H
@@ -158,7 +159,3 @@ typedef struct dirent Direntry;		/* POSIX */
 #define HAVE_8BIT_CTYPE
 
 #define HAVE_WORKING_COLLATE
-
-#define PREFIX		"@@PREFIX@@"
-#define BINOWN		"@@BINOWN@@"
-#define BINGRP		"@@BINGRP@@"
