@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/06 23:53:32 garbled Exp $
 
 DISTNAME=	ethemes-0.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://themes.org/pub/themes/e/
 DIST_SUBDIR=	ethemes
-DISTFILES=	${THEME_FILES}
+DISTFILES=	${E_THEMES}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://e.themes.org/
