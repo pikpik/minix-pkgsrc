@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/types.c.orig	Tue Aug 28 18:36:47 2001
++++ src/types.c
+@@ -359,7 +359,7 @@
+ 
+ 	if(file_list == NULL)
+ 		return;
+-	if((temp_name = tmpnam(NULL)) == NULL)
++	if((temp_name = mkdtemp(NULL)) == NULL)
+ 		return;
+ 
+ 	if(pipe(fd) == 0)
