@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/12/13 14:19:54 tron Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/03/14 19:37:34 jlam Exp $
 
 .if !defined(MYSQL_CLIENT_BUILDLINK2_MK)
 MYSQL_CLIENT_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			mysql-client
-BUILDLINK_DEPENDS.mysql-client?=	mysql-client>=3.23.49nb2
+BUILDLINK_DEPENDS.mysql-client?=	mysql-client>=3.23.51nb1
 BUILDLINK_PKGSRCDIR.mysql-client?=	../../databases/mysql-client
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.mysql-client=mysql-client
