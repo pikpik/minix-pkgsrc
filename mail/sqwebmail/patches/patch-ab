@@ -1,8 +1,8 @@
 $NetBSD$
 
---- authlib/Makefile.in.orig	Sat Nov 15 13:33:23 2003
-+++ authlib/Makefile.in
-@@ -1279,7 +1279,7 @@ info: info-am
+--- authlib/Makefile.in.orig	Tue Jul 13 13:46:52 2004
++++ authlib/Makefile.in	Tue Jul 13 13:47:14 2004
+@@ -1311,7 +1311,7 @@
  
  info-am:
  
