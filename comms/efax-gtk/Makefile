@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:16 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/03 15:14:52 wiz Exp $
 
 DISTNAME=		efax-gtk-1.0.1b.src
 PKGNAME=		efax-gtk-1.0.1b
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK3= 	YES
 USE_PKGINSTALL=		YES
 
-CONFIGURE_ARGS+=	--with-spooldir=/var/spool/efax
+CONFIGURE_ARGS+=	--with-spooldir=${VARBASE}/spool/efax
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 EGDIR=			${PREFIX}/share/examples/efax-gtk
