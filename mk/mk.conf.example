@@ -30,11 +30,6 @@
 # Possible: defined, not defined
 # Default: not defined
 
-#MKCRYPTO= no
-# Don't fetch, build or install any package in the "crypto" category.
-# Possible: not defined, YES, defined
-# Default: not defined (same as YES)
-
 #OBJMACHINE=
 # use machine-specific object directories, e.g.  work.i386, work.sparc
 # Possible: defined, not defined

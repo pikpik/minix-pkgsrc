@@ -18,7 +18,6 @@ SUBDIR += cad
 SUBDIR += comms
 SUBDIR += converters
 SUBDIR += cross
-SUBDIR += crypto
 SUBDIR += databases
 SUBDIR += devel
 SUBDIR += editors
