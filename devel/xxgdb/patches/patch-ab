@@ -1,6 +1,6 @@
 $NetBSD$
 
---- XDbx.ad.orig	Fri Feb 11 18:24:06 1994
+--- XDbx.ad.orig	1994-02-12 04:24:06.000000000 +1100
 +++ XDbx.ad
 @@ -2,11 +2,11 @@
  ! Xdbx 2.1 Application defaults file
