@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- sim/ucsim/doc/Makefile.in.orig	Tue Apr 10 01:10:59 2001
++++ sim/ucsim/doc/Makefile.in	Tue Apr 10 01:11:44 2001
+@@ -22,7 +22,7 @@
+ man2dir         = $(mandir)/man2
+ infodir         = @infodir@
+ srcdir          = @srcdir@
+-docdir		= $(prefix)/doc/ucsim
++docdir		= $(prefix)/share/doc/ucsim
+ 
+ 
+ # Compiling entire program or any subproject
