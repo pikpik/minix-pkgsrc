@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 1999/04/15 20:39:42 tron Exp $
+# $NetBSD: Makefile,v 1.11 1999/08/13 13:57:49 bouyer Exp $
 #
 
 DISTNAME=       xdemineur-2.1.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.agm-ita.ensta.fr/pub/babafou/ \
+MASTER_SITES=	ftp://ftp.babafou.eu.org/pub/babafou/ \
 		${MASTER_SITE_XCONTRIB:=games/}
 
 MAINTAINER=	bouyer@netbsd.org
