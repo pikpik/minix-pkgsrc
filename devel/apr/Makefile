@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/11/10 18:09:07 epg Exp $
+# $NetBSD: Makefile,v 1.28 2004/11/17 19:30:12 xtraeme Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 PKGREVISION=	1
@@ -19,9 +19,9 @@ USE_LIBTOOL=		YES
 WRKSRC=			${WRKDIR}/${DISTNAME}/srclib
 BUILD_DIRS=		${WRKSRC}/apr ${WRKSRC}/apr-util
 
-CONFIGURE_ENV+=		CFLAGS="${CFLAGS}" LIBS="${LDFLAGS}"
-
-LDFLAGS.SunOS+=		-lnsl
+GNU_CONFIGURE=		YES
+CONFIGURE_ENV+=		LIBS="${LIBS}"
+LIBS.SunOS+=		-lnsl
 
 APR_CONFIGURE_ARGS= \
 		--prefix=${PREFIX} \
