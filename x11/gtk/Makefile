@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2003/08/08 09:33:13 grant Exp $
+# $NetBSD: Makefile,v 1.90 2003/08/09 11:34:09 seb Exp $
 
 DISTNAME=		gtk+-1.2.10
 PKGREVISION=		5
@@ -20,6 +20,7 @@ USE_GMAKE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 PKGCONFIG_OVERRIDE=	${WRKSRC}/gdk.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gtk+.pc.in
 
