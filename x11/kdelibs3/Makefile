@@ -27,7 +27,7 @@ KDEDIR=			${PREFIX}
 REPLACE_PERL= \
 	kio/proxytype.pl \
 	kio/useragent.pl \
-	bin/preparetips
+	kdeui/preparetips
 
 PLIST_SRC=		${WRKDIR}/PLIST
 UNLIMIT_RESOURCES=	datasize memorysize
