@@ -1,0 +1,5 @@
+# $NetBSD$
+*shared*
+_mysql _mysqlmodule.c -L@PREFIX@/lib/mysql -R@PREFIX@/lib/mysql \
+	-I@PREFIX@/include/mysql -lmysqlclient
+
