@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.198 2004/03/16 15:19:55 uebayasi Exp $
+# $NetBSD: Makefile,v 1.199 2004/03/28 21:04:59 martin Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -113,6 +113,7 @@ SUBDIR+=	p5-Mail-SPF-Query
 SUBDIR+=	p5-Mail-Sendmail
 SUBDIR+=	p5-MailTools
 SUBDIR+=	p5-Sendmail-AccessDB
+SUBDIR+=	p5-Sendmail-PMilter
 SUBDIR+=	p5-User-Identity
 SUBDIR+=	p5-razor-agents
 SUBDIR+=	php4-imap
