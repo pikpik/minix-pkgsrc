@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/25 03:55:12 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/20 11:31:00 grant Exp $
 #
 
 DISTNAME=	FileKGlob
@@ -17,7 +17,7 @@ WRKSRC=			${WRKDIR}/File
 USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/File/KGlob/.packlist
 
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 pre-configure:
 	${CP} ${FILESDIR}/Makefile.PL ${WRKSRC}/Makefile.PL
