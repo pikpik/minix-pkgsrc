@@ -1,9 +1,10 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: adsl.sh,v 1.3 2002/08/21 14:11:43 abs Exp $
+# $NetBSD: adsl.sh,v 1.4 2002/09/20 02:01:59 grant Exp $
 #
 # PROVIDE: adsl
-# REQUIRE: ipnat
+# REQUIRE: NETWORKING
+# BEFORE: ipnat
 #
 # On systems with rc.d you will need to copy this to /etc/rc.d and set
 # 'adsl=YES' in /etc/rc.conf
