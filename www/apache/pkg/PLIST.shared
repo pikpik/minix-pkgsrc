@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_proxy.so
+lib/httpd/httpd.exp
+@dirrm lib/httpd
