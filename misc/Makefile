@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.59 2000/03/01 01:42:59 jwise Exp $
+#	$NetBSD: Makefile,v 1.60 2000/03/25 20:15:33 jlam Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += astrolog
@@ -59,6 +59,7 @@
     SUBDIR += tclticker
     SUBDIR += team
     SUBDIR += vfu
+    SUBDIR += vttest
     SUBDIR += watch
     SUBDIR += xfinans
     SUBDIR += xinvest
