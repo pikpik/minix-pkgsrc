@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/26 12:40:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:23 jmmv Exp $
 #
 
 DISTNAME=	john-1.6
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
+PKGREVISION=	1
 CATEGORIES=	security textproc
 MASTER_SITES=	http://www.openwall.com/john/
 
