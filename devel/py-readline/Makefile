@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/03/14 17:58:49 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 23:46:49 jlam Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -10,14 +10,12 @@ COMMENT=	line editing support for Python
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/readline.c
 
+USE_BUILDLINK2=		# defined
 USE_GNU_READLINE=	# defined
-
-.include "../../devel/readline/buildlink.mk"
 
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
 PY_PATCHPLIST=	yes
-PY_SETUP_SUBST+= RLPREFIX=${BUILDLINK_DIR}
 PY_SETUP_SUBST+= RLRTPREFIX=${BUILDLINK_PREFIX.readline}
 
 # ignore errors due to missing files (EXTRACT_ELEMENTS!)
@@ -27,6 +25,7 @@ do-patch:
 	${PATCH} --batch <$$f || true; \
 	done)
 
+.include "../../devel/readline/buildlink2.mk"
 .include "../../lang/python/srcdist.mk"
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
