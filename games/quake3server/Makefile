@@ -16,6 +16,8 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386
 EXTRACT_CMD=    ${SED} '1,265d' ${DOWNLOADED_DISTFILE} | ${GTAR} xzf -
 WRKSRC=		${WRKDIR}
 BASEDOCDIR=	${PREFIX}/share/doc/lokigames/quake3server
+USE_PKGINSTALL=	YES
+RCD_SCRIPTS=	quake3server
 
 do-install:
 	${INSTALL_DATA_DIR} ${Q3ROOTDIR}/pb ${Q3ROOTDIR}/baseq3 \
