@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/09 15:29:41 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/10 11:58:29 grant Exp $
 #
 
 DISTNAME=		tcl8.3.4
@@ -43,6 +43,10 @@ CONFIGURE_ENV+=		TCL_PACKAGE_PATH="${VIEWBASE}/lib/tcl"
 #
 .if (${MACHINE_PLATFORM:MNetBSD-1.5*-m68k} != "")
 CONFIGURE_ENV+=		COMPILER_OPTIMIZATION_BUG=YES
+.endif
+
+.if !empty(ABI) && ${ABI} == "64"
+CONFIGURE_ARGS+=	--enable-64bit
 .endif
 
 # Modify mkLinks script to remove the short-filename manpage if it was
