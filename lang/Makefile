@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.206 2004/12/29 06:34:54 minskim Exp $
+# $NetBSD: Makefile,v 1.207 2005/01/23 22:58:08 recht Exp $
 #
 
 COMMENT=	Programming languages
@@ -67,7 +67,6 @@ SUBDIR+=	japhar
 SUBDIR+=	jasmin
 SUBDIR+=	java-lang-spec
 SUBDIR+=	java-vm-spec
-SUBDIR+=	java-wrapper
 SUBDIR+=	jbuilder-jit
 SUBDIR+=	jdk
 SUBDIR+=	jdk-openjit
