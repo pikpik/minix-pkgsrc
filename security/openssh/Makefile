@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2002/06/15 21:20:04 cjep Exp $
+# $NetBSD: Makefile,v 1.73 2002/06/25 02:13:11 itojun Exp $
 
 DISTNAME=		openssh-3.3p1
 PKGNAME=		openssh-3.3.0.1
@@ -43,7 +43,7 @@ SSH_PID_DIR=		${SSH_PID_DIR.${OPSYS}}
 
 USE_BUILDLINK_ONLY=	yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}/ssh
 CONFIGURE_ARGS+=	--with-pid-dir=${SSH_PID_DIR}
 CONFIGURE_ARGS+=	--with-ssl-dir=${BUILDLINK_DIR}
 CONFIGURE_ARGS+=	--with-tcp-wrappers=${BUILDLINK_DIR}
