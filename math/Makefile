@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2001/01/30 02:03:40 jtb Exp $
+# $NetBSD: Makefile,v 1.42 2001/01/31 07:31:42 jtb Exp $
 #
 
     SUBDIR += R
@@ -18,6 +18,7 @@
     SUBDIR += grace
     SUBDIR += grpn
     SUBDIR += gsl
+    SUBDIR += lapack
     SUBDIR += libffm
     SUBDIR += mcsim
     SUBDIR += meschach
