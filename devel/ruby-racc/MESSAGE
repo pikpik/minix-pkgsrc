@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+ruby-racc-runtime package has gone since it is included in Ruby 1.8 and
+lator.  Please use racc with "-E" option prior to Ruby 1.8 release.
+
+===========================================================================
