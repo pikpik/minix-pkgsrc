@@ -1,16 +1,15 @@
 $NetBSD$
 
---- Makefile.inc.orig	2004-01-23 05:13:29.000000000 -0700
+--- Makefile.inc.orig	2004-03-07 14:41:07.000000000 -0700
 +++ Makefile.inc
 @@ -1,8 +1,6 @@
 -CC = gcc
 -MAKE = make
--INSTALL = install
+ INSTALL = install
 -PREFIX = /usr/local
 -LOCALEPATH = $(PREFIX)/share/locale
-+MAKE = $(GMAKE)
 +PREFIX = $(LOCALBASE)
 +LOCALEPATH = $(PREFIX)/$(PKGLOCALEDIR)/locale
- DISTFILES = AUTHOR COPYING CREDITS Changelog README README.de README.colors INSTALL INSTALL.solaris INSTALL.FreeOpenNetBSD TODO opml2snow \
+ DISTFILES = AUTHOR COPYING CREDITS Changelog README README.de README.colors README.patching INSTALL INSTALL.solaris INSTALL.FreeOpenNetBSD opml2snow \
  	Makefile Makefile.inc Makefile.solaris \
- 	doc po \
+ 	doc po scripts \
