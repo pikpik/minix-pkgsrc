@@ -1,8 +1,8 @@
 $NetBSD$
 
---- mfs.c.orig	1994-06-22 16:24:51.000000000 +0200
+--- mfs.c.orig	1994-06-22 09:24:51.000000000 -0500
 +++ mfs.c
-@@ -319,7 +319,9 @@ TODO:
+@@ -319,17 +319,24 @@ TODO:
  #include <errno.h>
  #include <sys/param.h>
  #include <stdlib.h>
@@ -10,9 +10,10 @@ $NetBSD$
  #include <malloc.h>
 +#endif
  
- #ifdef SOLARIS
+-#ifdef SOLARIS
++#if defined(SOLARIS) || (defined(__NetBSD__) && __NetBSD_Version__ >= 200040000)
  #include <fcntl.h>
-@@ -327,9 +329,14 @@ TODO:
+ #include <sys/statvfs.h>
  #endif
  
  #if defined(SGI) || defined(RS6000)
@@ -29,3 +30,12 @@ $NetBSD$
  #endif
  
  
+@@ -768,7 +775,7 @@ get_unix_attr(int mode, int attr)
+ int
+ get_disk_space(char *cwd, int *free, int *total)
+ {
+-#ifdef SOLARIS
++#if defined(SOLARIS) || (defined(__NetBSD__) && __NetBSD_Version__ >= 200040000)
+     struct statvfs fsbuf;
+     if (statvfs(cwd, &fsbuf) >= 0)
+ #else
