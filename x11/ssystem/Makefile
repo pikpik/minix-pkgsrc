@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/06/28 10:28:58 agc Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/20 13:29:17 wiz Exp $
 #
 
 DISTNAME=	ssystem-1.6
+PKGREVISION=	1
 CATEGORIES=	x11 graphics
 MASTER_SITES=	${HOMEPAGE}			# ${HOMEPAGE}/hires/
 

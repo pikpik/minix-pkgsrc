@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2002/08/25 18:40:42 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2003/02/05 23:13:10 dmcmahill Exp $
 
 PKGNAME=	qt2-libs-${QTVERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 COMMENT=	C++ X GUI toolkit
 
 USE_BUILDLINK2=	yes
@@ -27,7 +27,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/include/* ${QTPREFIX}/include
 
 .include "../../devel/zlib/buildlink2.mk"
-.include "../../graphics/Mesa/buildlink2.mk"
+.include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../graphics/mng/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
