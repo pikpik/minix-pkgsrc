@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2000/10/10 17:25:57 jmcneill Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/17 02:09:55 hubertf Exp $
 
 DISTNAME=		dia-0.86
 CATEGORIES=		devel
@@ -14,6 +14,9 @@ DEPENDS+=		gdk-pixbuf>=0.8.0nb1:../../graphics/gdk-pixbuf
 
 USE_X11=		yes
 USE_GMAKE=		yes
+USE_LIBTOOL=		YES
+LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gnome --enable-gnome-print
 
