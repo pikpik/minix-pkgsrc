@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/06/29 04:16:11 sakamoto Exp $
+# $NetBSD: Makefile,v 1.4 1999/10/11 13:00:42 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.13 1999/01/27 07:41:14 fenner Exp $
 
 DISTNAME=	gawk-3.0.4
@@ -16,7 +16,6 @@ HOMEPAGE=	http://www.gnu.org/software/gawk/gawk.html
 INFO_FILES=	gawk.info
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	bsd44
 
 post-install:
 	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ja-gawk
