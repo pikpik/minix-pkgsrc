@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- mimeinstall.sh.orig	Wed Aug  9 15:53:59 2000
 +++ mimeinstall.sh	Tue Aug 15 02:20:41 2000
 @@ -12,9 +12,12 @@
