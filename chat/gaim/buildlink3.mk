@@ -1,4 +1,4 @@
-# $NetBSD: $
+# $NetBSD: buildlink3.mk,v 1.1 2005/02/02 20:46:47 jschauma Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GAIM_BUILDLINK3_MK:=	${GAIM_BUILDLINK3_MK}+
@@ -17,4 +17,3 @@ BUILDLINK_PKGSRCDIR.gaim?=	../../chat/gaim
 .endif  # GAIM_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
-
