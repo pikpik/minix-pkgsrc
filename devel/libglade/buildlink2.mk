@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:13 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:31 jlam Exp $
 
 .if !defined(LIBGLADE_BUILDLINK2_MK)
 LIBGLADE_BUILDLINK2_MK=	# defined
@@ -23,6 +23,6 @@ CPPFLAGS+=	-I${BUILDLINK_PREFIX.libglade}/include/libglade-1.0
 
 BUILDLINK_TARGETS+=	libglade-buildlink
 
-pre-configure: ${BUILDLINK_TARGETS.libglade}
+libglade-buildlink: _BUILDLINK_USE
 
 .endif	# LIBGLADE_BUILDLINK2_MK
