@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:51:29 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:10:56 martti Exp $
 #
 
 DISTNAME=	nsca-1.1.0
@@ -13,7 +13,7 @@ COMMENT=	Submit passive NetSaint checks results to another server
 DEPENDS+=	netsaint-base-[0-9]*:../../net/netsaint-base
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
 EGDIR=		${PREFIX}/share/examples/nsca
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/09/17 19:37:08 cube Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:22:20 agc Exp $
 #
 
 DISTNAME=	pptpd-1.1.3-20030409
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.poptop.org/
 COMMENT=	PPTP server with support for Microsoft VPN clients
 
 WRKSRC=		${WRKDIR}/poptop
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+=	--with-libwrap

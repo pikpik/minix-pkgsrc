@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:08 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/30 12:01:26 jmmv Exp $
 #
 
 DISTNAME=	dynip_3.00
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dynip.com/
 COMMENT=	Client for the dynip.com dynamic DNS service
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 
 RCD_SCRIPTS=	dynipclient
