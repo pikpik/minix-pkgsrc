@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:19:16 agc Exp $
 #
 
 DISTNAME=       b110
@@ -7,7 +7,7 @@ CATEGORIES=     lang
 MASTER_SITES=   http://www.argonet.co.uk/users/dave_daniels/
 EXTRACT_SUFX=   .tgz
 
-MAINTAINER=     abs
+MAINTAINER=     abs@NetBSD.org
 HOMEPAGE=       http://www.argonet.co.uk/users/dave_daniels/
 COMMENT=	Brandy Basic V interpreter - Acorn ARM Computers BASIC dialect
 
