@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/12 05:32:07 ben Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/12 05:43:42 ben Exp $
 #
 
 DISTNAME=		llnlxdir2_1_2
 PKGNAME=		llnlxdir-2.1.2
 WRKSRC=         	${WRKDIR}/llnlxdir2_1_2/sources
-CATEGORIES=		x11
+CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.llnl.gov/pub/ia/llnlxdir/source/
 EXTRACT_SUFX=		.tar.Z
 
