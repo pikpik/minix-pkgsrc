@@ -1,4 +1,4 @@
-# $NetBSD: defs.IRIX.mk,v 1.56 2004/08/27 06:29:09 jlam Exp $
+# $NetBSD: defs.IRIX.mk,v 1.57 2004/09/27 14:42:09 tv Exp $
 #
 # Variable definitions for the IRIX operating system.
 

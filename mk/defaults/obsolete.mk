@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.obsolete.mk,v 1.16 2004/08/18 06:27:23 jlam Exp $
+# $NetBSD: bsd.pkg.obsolete.mk,v 1.17 2004/08/22 19:10:26 jlam Exp $
 #
 # This file holds make(1) logic to allow obsolete or deprecated variables
 # still to be used.  These may eventually disappear over time as the contents

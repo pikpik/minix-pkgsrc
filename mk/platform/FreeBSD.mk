@@ -1,13 +1,14 @@
-# $NetBSD: defs.OpenBSD.mk,v 1.36 2004/07/21 21:50:41 xtraeme Exp $
+# $NetBSD: defs.FreeBSD.mk,v 1.43 2004/08/27 06:29:09 jlam Exp $
 #
-# Variable definitions for the OpenBSD operating system.
+# Variable definitions for the FreeBSD operating system.
 
 AWK?=		/usr/bin/awk
 BASENAME?=	/usr/bin/basename
+BRANDELF?=	/usr/bin/brandelf		# used by linux compat layer
 CAT?=		/bin/cat
 CHMOD?=		/bin/chmod
 CHOWN?=		/usr/sbin/chown
-CHGRP?=		/bin/chgrp
+CHGRP?=		/usr/bin/chgrp
 CMP?=		/usr/bin/cmp
 CP?=		/bin/cp
 CUT?=		/usr/bin/cut
@@ -18,14 +19,14 @@ ECHO?=		echo				# Shell builtin
 ECHO_N?=	${ECHO} -n
 EGREP?=		/usr/bin/egrep
 EXPR?=		/bin/expr
-FGREP?=		/usr/bin/fgrep
 FALSE?=		false				# Shell builtin
+FGREP?=		/usr/bin/fgrep
 FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 GMAKE?=		${LOCALBASE}/bin/gmake
 GREP?=		/usr/bin/grep
-.if exists(/bin/tar)
-GTAR?=		/bin/tar
+.if exists(${LOCALBASE}/bin/tar)
+GTAR?=		${LOCALBASE}/bin/tar
 .else
 GTAR?=		/usr/bin/tar
 .endif
@@ -36,35 +37,43 @@ GZIP_CMD?=	/usr/bin/gzip -nf ${GZIP}
 HEAD?=		/usr/bin/head
 HOSTNAME_CMD?=	/bin/hostname
 ID?=		/usr/bin/id
+IMAKE?=		${X11BASE}/bin/imake ${IMAKEOPTS}
+IMAKEOPTS+=	-DBuildHtmlManPages=NO
 LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln
 LS?=		/bin/ls
 M4?=		/usr/bin/m4
 MAIL_CMD?=	/usr/bin/mail
 MKDIR?=		/bin/mkdir -p
+.if exists(${LOCALBASE}/sbin/mtree)
+MTREE?=		${LOCALBASE}/sbin/mtree
+.else
 MTREE?=		/usr/sbin/mtree
+.endif
 MV?=		/bin/mv
 NICE?=		/usr/bin/nice
 PATCH?=		/usr/bin/patch
+.if exists(${LOCALBASE}/bin/pax)
+PAX?=		${LOCALBASE}/bin/pax
+.else
 PAX?=		/bin/pax
+.endif
 PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 PWD_CMD?=	/bin/pwd	# needs to print physical path
 RM?=		/bin/rm
 RMDIR?=		/bin/rmdir
-# XXX: default from bsd.pkg.defaults.mk.  Verify/corerct for this platform
-# and remove this comment.
 RSH?=		/usr/bin/rsh
 SED?=		/usr/bin/sed
 SETENV?=	/usr/bin/env
 SH?=		/bin/sh
-SHLOCK=		${LOCALBASE}/bin/shlock
+SHLOCK=		/usr/bin/shlock
 SORT?=		/usr/bin/sort
 SU?=		/usr/bin/su
 TAIL?=		/usr/bin/tail
-.if exists(/bin/tar)
-TAR?=		/bin/tar
+.if exists(${LOCALBASE}/bin/tar)
+TAR?=		${LOCALBASE}/bin/tar
 .else
 TAR?=		/usr/bin/tar
 .endif
@@ -107,15 +116,18 @@ ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
 
 # imake installs manpages in weird places
-# these values from /usr/X11R6/lib/X11/config/OpenBSD.cf
-IMAKE_MAN_SOURCE_PATH=	man/cat
+IMAKE_MAN_SOURCE_PATH=	man/man
 IMAKE_MAN_SUFFIX=	1
 IMAKE_LIBMAN_SUFFIX=	3
+IMAKE_KERNMAN_SUFFIX=	4
 IMAKE_FILEMAN_SUFFIX=	5
+IMAKE_MISCMAN_SUFFIX=	7
 IMAKE_MAN_DIR=		${IMAKE_MAN_SOURCE_PATH}1
 IMAKE_LIBMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}3
+IMAKE_KERNMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}4
 IMAKE_FILEMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}5
-IMAKE_MANNEWSUFFIX=	0
+IMAKE_MISCMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}7
+IMAKE_MANNEWSUFFIX=	${IMAKE_MAN_SUFFIX}
 
 _DO_SHLIB_CHECKS=	yes	# fixup PLIST for shared libs/run ldconfig
 _IMAKE_MAKE=		${MAKE}	# program which gets invoked by imake
@@ -131,11 +143,7 @@ _OPSYS_PERL_REQD=		# no base version of perl required
 _OPSYS_PTHREAD_AUTO=	no	# -lpthread needed for pthreads
 _OPSYS_SHLIB_TYPE=	ELF/a.out	# shared lib type
 _PATCH_CAN_BACKUP=	yes	# native patch(1) can make backups
-.if ${OS_VERSION} >= 3.4
-_PATCH_BACKUP_ARG?=	-V simple -z 	# switch to patch(1) for backup suffix
-.else
 _PATCH_BACKUP_ARG?=	-V simple -b 	# switch to patch(1) for backup suffix
-.endif
 _PREFORMATTED_MAN_DIR=	cat	# directory where catman pages are
 _USE_GNU_GETTEXT=	no	# Don't use GNU gettext
 _USE_RPATH=		yes	# add rpath to LDFLAGS
@@ -150,25 +158,12 @@ _STRIPFLAG_CC?=		-s	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	-s	# install(1) option to strip
 .endif
 
-.if (${MACHINE_ARCH} == alpha)
-DEFAULT_SERIAL_DEVICE?=	/dev/ttyC0
-SERIAL_DEVICES?=	/dev/ttyC0 \
-			/dev/ttyC1
-.elif (${MACHINE_ARCH} == "i386")
-DEFAULT_SERIAL_DEVICE?=	/dev/tty00
-SERIAL_DEVICES?=	/dev/tty00 \
-			/dev/tty01
-.elif (${MACHINE_ARCH} == m68k)
-DEFAULT_SERIAL_DEVICE?=	/dev/tty00
-SERIAL_DEVICES?=	/dev/tty00 \
-			/dev/tty01
-.elif (${MACHINE_ARCH} == "sparc")
-DEFAULT_SERIAL_DEVICE?=	/dev/ttya
-SERIAL_DEVICES?=	/dev/ttya \
-			/dev/ttyb
-.else
-DEFAULT_SERIAL_DEVICE?=	/dev/null
-SERIAL_DEVICES?=	/dev/null
+DEFAULT_SERIAL_DEVICE?=	/dev/cuaa0
+SERIAL_DEVICES?=	/dev/cuaa0
+
+# check for kqueue(2) support
+.if exists(/usr/include/sys/event.h)
+PKG_HAVE_KQUEUE=	# defined
 .endif
 
 # check for maximum command line length and set it in configure's environment,
@@ -182,9 +177,8 @@ CONFIGURE_ENV+=		lt_cv_sys_max_cmd_len=${_OPSYS_MAX_CMDLEN}
 # (it defaults to 'no' as per bsd.pkg.defaults.mk).
 # Set the group and mode to meaningful values in that case (defaults to
 # BINOWN, BINGRP and BINMODE as per bsd.pkg.defaults.mk).
-# FIXME: Adjust to work on this system and enable the lines below.
-#.if !(empty(SETGIDGAME:M[yY][eE][sS]))
-#GAMEOWN=		games
-#GAMEGRP=		games
-#GAMEMODE=		2555
-#.endif
+.if !(empty(SETGIDGAME:M[yY][eE][sS]))
+GAMEOWN=		games
+GAMEGRP=		games
+GAMEMODE=		2555
+.endif
