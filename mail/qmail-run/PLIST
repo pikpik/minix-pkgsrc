@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/qmail-qread-client
+share/doc/qmail-run/README.pkgsrc
+share/examples/qmail-run/mailer.conf
+@dirrm share/examples/qmail-run
+@dirrm share/doc/qmail-run
