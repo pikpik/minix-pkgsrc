@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/08/11 22:20:56 tron Exp $
+# $NetBSD: Makefile,v 1.5 1999/08/11 22:42:22 tron Exp $
 
 DISTNAME=	craftcc35
 PKGNAME=	craft-3.5
@@ -14,7 +14,7 @@ USE_X11BASE=	yes
 WRKSRC=		${WRKDIR}
 
 post-extract:
-	@find ${WRKSRC} -type f -name '*~' | xargs ${RM} -f
+	@${FIND} ${WRKSRC} -type f -name '*~' | xargs ${RM} -f
 	@${LN} -fs ${FILESDIR}/Makefile ${WRKSRC}
 
 post-patch:

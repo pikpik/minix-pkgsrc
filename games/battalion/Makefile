@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/05/24 20:39:42 tv Exp $
+# $NetBSD: Makefile,v 1.14 1999/09/29 22:58:43 tron Exp $
 #
 
 DISTNAME=		battalion
@@ -34,9 +34,7 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/battalionSUN4/battalion.data/battalion.sho ${PREFIX}/share/battalion/battalion.data
 	${INSTALL_MAN} ${WRKDIR}/battalionSUN4/battalion.man ${PREFIX}/man/man6/battalion.6
 	${INSTALL_DATA} ${WRKDIR}/battalionSUN4/HELP/* ${PREFIX}/share/battalion/HELP
-	@cat /dev/null >>/var/games/battalion_hiscore
-	chown bin:games /var/games/battalion_hiscore
-	chmod 664 /var/games/battalion_hiscore
+	${INSTALL} -o bin -g games -m 664 /dev/null /var/games/battalion_hiscore
 
 pre-clean:
 	@${RM} -rf ${WRKDIR}/battalionSUN4
