@@ -1,0 +1,6 @@
+@comment $NetBSD$
+sbin/fresshd
+bin/fressh-keygen
+bin/fressh
+bin/fressh-agent
+bin/fressh-add
