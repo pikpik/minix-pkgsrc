@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/06/08 16:38:58 mjl Exp $
+# $NetBSD: Makefile,v 1.5 2004/08/04 05:44:12 jlam Exp $
 #
 
 DISTNAME=	BerkeleyDB-0.25
@@ -14,6 +14,7 @@ COMMENT=	Access Berkeley DB
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
+BDB_ACCEPTED=		db4 db3 db2
 PERL5_REQD+=		5.6.0
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/BerkeleyDB/.packlist
 
