@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:12:52 tv Exp $
+# $NetBSD: Makefile,v 1.22 2004/10/26 05:41:41 snj Exp $
 
 DISTNAME=	bogofilter-0.92.8
 CATEGORIES=	mail
@@ -23,6 +23,7 @@ CONF_FILES=		${EGDIR}/bogofilter.cf ${PKG_SYSCONFDIR}/bogofilter.cf
 REPLACE_PERL=		src/bogoupgrade
 
 USE_DB185=		YES
+BDB_ACCEPTED=		db4
 
-.include "../../databases/db4/buildlink3.mk"
+.include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
