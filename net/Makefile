@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.423 2004/01/03 23:24:17 tron Exp $
+# $NetBSD: Makefile,v 1.424 2004/01/06 00:28:47 grant Exp $
 #
 
 COMMENT=	Networking tools
@@ -14,6 +14,7 @@ SUBDIR+=	adns
 SUBDIR+=	airport2basestationconfig
 SUBDIR+=	airportbasestationconfig
 SUBDIR+=	airportmodemutility
+SUBDIR+=	amule
 SUBDIR+=	archie
 SUBDIR+=	arla
 SUBDIR+=	arpd
