@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/04 02:03:26 jtb Exp $
 
 DISTNAME=		efax-gtk-1.0.1b.src
 PKGNAME=		efax-gtk-1.0.1b
+PKGREVISION=		1
 CATEGORIES=		comms
 MASTER_SITES=		http://www.cvine.freeserve.co.uk/efax-gtk/
 EXTRACT_SUFX=		.tgz

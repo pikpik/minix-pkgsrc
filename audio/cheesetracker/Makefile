@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2002/08/01 05:48:02 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2002/08/08 16:17:05 jlam Exp $
 #
 
 DISTNAME=		cheesetracker-0.5.5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		audio
 MASTER_SITES=		http://www.reduz.com.ar/cheesetracker/
 
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.reduz.com.ar/cheesetracker/
 COMMENT=		impulse tracker clone
 
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
-DEPENDS+=		gtk-->=1.2:../../x11/gtk--
+DEPENDS+=		gtk-->=1.2.10:../../x11/gtk--
 
 GCC_VERSION!=           gcc --version
 .if (${GCC_VERSION:C/-.*$$//} == egcs)
