@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2000/12/08 16:57:58 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2000/12/12 01:31:03 wiz Exp $
 #
 
     SUBDIR += LPRng
+    SUBDIR += LPRng-core
+    SUBDIR += LPRng-doc
     SUBDIR += a2ps
     SUBDIR += acroread
     SUBDIR += acroread3
