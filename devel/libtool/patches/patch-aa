@@ -11,7 +11,16 @@ $NetBSD$
    need_lib_prefix=no
    need_version=no
    library_names_spec='${libname}${release}.so$versuffix ${libname}${release}.so$major $libname.so'
-@@ -1282,7 +1282,7 @@
+@@ -1236,6 +1236,8 @@
+   shlibpath_var=LD_LIBRARY_PATH
+   shlibpath_overrides_runpath=yes
+   hardcode_into_libs=yes
++  sys_lib_dlsearch_path_spec="/usr/lib"
++  sys_lib_search_path_spec="/usr/lib"
+   ;;
+ 
+ newsos6)
+@@ -1282,7 +1284,7 @@
    ;;
  
  solaris*)
