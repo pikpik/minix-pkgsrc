@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2000/08/31 03:38:46 itohy Exp $
+# $NetBSD: Makefile,v 1.36 2000/10/15 12:06:44 rh Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/10/10 09:24:38 tg Exp
 #
 
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://ftp.tux.org/pub/tux/bagleyd/xlockmore/ \
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.tux.org/~bagleyd/xlockmore.html
+
+CHECK_MESA=	YES
 
 .include "../../mk/bsd.prefs.mk"
 
