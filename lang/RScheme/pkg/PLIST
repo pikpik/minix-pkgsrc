@@ -1,8 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/11/30 04:56:23 jtb Exp $
 bin/RScheme
-bin/RSchemec
-bin/rscheme
-bin/rschemec
 lib/RScheme/bin/lssctl
 lib/RScheme/bin/rs
 lib/RScheme/bin/rsc
