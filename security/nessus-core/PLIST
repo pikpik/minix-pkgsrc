@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.7 2002/12/09 16:01:42 tron Exp $
+@comment $NetBSD: PLIST,v 1.8 2002/12/19 18:30:14 frueauf Exp $
 bin/nessus
 bin/nessus-mkcert-client
 bin/nessus-mkrand
+etc/rc.d/nessusd
 include/nessus/config.h
 include/nessus/includes.h
 include/nessus/nessus-devel.h
