@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/27 21:38:42 reed Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/27 22:30:01 reed Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		XFree86-libs-${XF_VER}
@@ -23,7 +23,7 @@ BUILD_DEPENDS=		imake>=4.4.0:../../x11/imake
 .include "../../meta-pkgs/XFree86/Makefile.common"
 
 .if ${X11ROOT} == ${LOCALBASE}
-CONFLICTS+=		MesaLib-[0-9]*
+CONFLICTS+=		MesaLib-[0-9]* glu-[0-9]*
 .endif
 
 USE_BUILDLINK3=			yes
