@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/22 19:26:57 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/23 02:02:09 cjep Exp $
 #
 
 DISTNAME=	xgap4r16
 PKGNAME=	xgap-4.16
 CATEGORIES=	math x11
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/share/
-DISTFILES=	${DISTNAME}.zoo						\
+EXTRACT_SUFX=	.zoo
 
 MAINTAINER=	cjep@netbsd.org
 HOMEPAGE=	http://www.gap-system.org/Share/xgap.html
