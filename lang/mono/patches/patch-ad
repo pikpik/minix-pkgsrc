@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- mono/dis/dump.c.orig	Wed Mar 30 23:26:14 2005
++++ mono/dis/dump.c
+@@ -18,8 +18,10 @@
+ #include "mono/metadata/loader.h"
+ #include "mono/metadata/class.h"
+ 
++#ifndef HAVE_ISINF
+ #ifdef HAVE_IEEEFP_H
+ extern int isinf (double);
++#endif
+ #endif
+ 
+ void
