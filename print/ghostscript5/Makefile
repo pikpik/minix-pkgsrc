@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1998/07/04 05:31:38 mycroft Exp $
+# $NetBSD: Makefile,v 1.21 1998/07/15 11:45:52 tv Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/10/13 11:22:43 asami Exp
 #
 
@@ -58,7 +58,7 @@ post-extract:
 	${TOUCH} ${WRKSRC}/deflate.o
 	${TOUCH} ${WRKSRC}/trees.o
 	${LN} -s ${PKGSRCDIR}/graphics/jpeg/${WRKDIR:T}/jpeg-6b ${WRKSRC}/jpeg-6b
-	${LN} -s ${PKGSRCDIR}/graphics/png/${WRKDIR:T}/libpng-0.96 ${WRKSRC}/libpng
+	${LN} -s ${PKGSRCDIR}/graphics/png/${WRKDIR:T}/libpng-1.0.2 ${WRKSRC}/libpng
 	cd ${WRKSRC} && unzip -La ${DISTDIR}/${HP850_DRV}
 	${CP} ${DISTDIR}/${PDF_SEC} ${WRKSRC}
 
