@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- /dev/null	Thu Oct 25 21:39:38 2001
++++ Makefile.inc	Thu Oct 25 21:42:36 2001
+@@ -0,0 +1,5 @@
++#
++# Makefile.inc
++#
++
++LOCALPREFIX = ${PREFIX}
