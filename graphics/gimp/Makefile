@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2000/02/09 20:20:54 tron Exp $
+# $NetBSD: Makefile,v 1.45 2000/03/02 02:12:06 hubertf Exp $
 
 DISTNAME=		gimp-1.0.4
 CATEGORIES=		graphics
@@ -34,8 +34,14 @@ CONFIGURE_ENV=		CPPFLAGS="${CPPFLAGS}"
 INFO_FILES=		pdb.info
 
 CPPFLAGS=		-I${LOCALBASE}/include
-LDFLAGS+=		-L${LOCALBASE}/lib -Wl,-E
+LDFLAGS+=		-L${LOCALBASE}/lib
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${OBJECT_FMT} == ELF)
+LDFLAGS+=		-Wl,-E
+.endif
 
 post-configure:
 	@${ECHO_MSG} "--> now configuring in ${GIMP_DATA}"
