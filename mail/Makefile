@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.166 2003/05/02 08:04:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.167 2003/05/14 04:21:09 salo Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -46,6 +46,7 @@ SUBDIR+=	fetchmail
 SUBDIR+=	fetchmailconf
 SUBDIR+=	fromto
 SUBDIR+=	getmail
+SUBDIR+=	gnus
 SUBDIR+=	grepmail
 SUBDIR+=	hypermail
 SUBDIR+=	ifile
