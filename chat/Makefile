@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.98 2004/10/22 10:34:39 adam Exp $
+# $NetBSD: Makefile,v 1.99 2004/10/26 22:59:44 wiz Exp $
 #
 
 COMMENT=	Communication programs
@@ -68,7 +68,6 @@ SUBDIR+=	p5-Net-ICQ2000
 SUBDIR+=	p5-Net-Jabber
 SUBDIR+=	pircbot
 SUBDIR+=	psi
-SUBDIR+=	psi-ssl
 SUBDIR+=	quirc
 SUBDIR+=	roxirc
 SUBDIR+=	scrollz
