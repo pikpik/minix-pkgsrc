@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.394 2003/05/25 09:54:35 epg Exp $
+# $NetBSD: Makefile,v 1.395 2003/06/03 17:00:08 jschauma Exp $
 #
 
 COMMENT=	Development utilities
@@ -322,6 +322,7 @@ SUBDIR+=	pwlib
 SUBDIR+=	py-Checker
 SUBDIR+=	py-Optik
 SUBDIR+=	py-curses
+SUBDIR+=	py-cursespanel
 SUBDIR+=	py-distutils
 SUBDIR+=	py-expect
 SUBDIR+=	py-idle
