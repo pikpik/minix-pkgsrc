@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/08/01 05:48:17 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2002/08/02 15:13:47 jdolecek Exp $
 
 DISTNAME=		openoffice-0.0.0.641
 PKGREVISION=		1
@@ -40,7 +40,10 @@ ONLY_FOR_PLATFORM=	NetBSD-1.5.3*-i386 NetBSD-1.5Z?-i386 \
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+= 	--with-stlport4-home=${PREFIX}
-CONFIGURE_ARGS+= 	--with-jdk-home=${PREFIX}/java
+CONFIGURE_ARGS+= 	--with-jdk-home=${_JAVA_HOME}
+
+# Needed for sun-jdk 1.4 javac
+UNLIMIT_RESOURCES=	datasize
 
 TEMP?=			${WRKSRC}
 
