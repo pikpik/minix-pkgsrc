@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/mkpatches
+bin/patchdiff
+bin/pkgdiff
+man/cat1/mkpatches.0
+man/cat1/patchdiff.0
+man/cat1/pkgdiff.0
+man/man1/mkpatches.1
+man/man1/patchdiff.1
+man/man1/pkgdiff.1
