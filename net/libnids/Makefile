@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:51:20 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/10/10 08:44:44 cube Exp $
 # $FreeBSD: ports/net/libnids/Makefile,v 1.5 2000/04/24 07:42:58 kris Exp $
 #
 
-DISTNAME=	libnids-1.17
+DISTNAME=	libnids-1.18
 CATEGORIES=	net security
-MASTER_SITES=	http://www.avet.com.pl/~nergal/libnids/dist/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libnids/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://www.avet.com.pl/~nergal/libnids/
+MAINTAINER=	cube@NetBSD.org
+HOMEPAGE=	http://libnids.sourceforge.net/
 COMMENT=	Network monitoring library with TCP/IP reassembly
 
 USE_BUILDLINK2=	yes
