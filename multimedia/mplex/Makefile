@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/01/24 15:46:44 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:52:07 jmmv Exp $
 
 DISTNAME=	mjpegtools-1.6.0
 PKGNAME=	mplex-1.6.0
-CATEGORIES=	graphics
+CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mjpeg/}
 
 MAINTAINER=	ben@NetBSD.org
