@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/03/29 19:34:18 jwise Exp $
 
 DISTNAME=	jakarta-tomcat-3.2.1-src
 PKGNAME=	ap-jk-3.2.1
@@ -10,8 +10,6 @@ HOMEPAGE=	http://jakarta.apache.org/
 COMMENT=	improved connector for accessing Jakarta Tomcat or JServ from Apache
 
 DEPENDS+=	apache-*:../../www/apache
-
-DIGEST_FILE=    ${PKGSRCDIR}/www/jakarta-tomcat/files/md5
 
 USE_JAVA=	yes
 USE_PERL=	yes
