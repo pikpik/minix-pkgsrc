@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: config.NetBSD.sh,v 1.3 1999/09/20 18:52:06 kim Exp $
 #
 # config.sh
 # This file was produced by running the Configure script
@@ -49,7 +49,7 @@ strncasecmp='define'
 strcasecmp='define'
 seteuid='define'
 sitename=''
-hostfile='@PREFIX@/etc/nntp/domainname'
+hostfile='@PKGSYSCONFDIR@/domainname'
 domain=''
 isadmin='undef'
 newsadmin='root'
@@ -71,11 +71,11 @@ gethostname='undef'
 douname='undef'
 phostname='undef'
 hostcmd=''
-serverfile='@PREFIX@/etc/nntp/server'
+serverfile='@PKGSYSCONFDIR@/server'
 auth='define'
 authsimple='define'
 authold='define'
-passfile='@PREFIX@/etc/nntp/server.auth'
+passfile='@PKGSYSCONFDIR@/server.auth'
 decnet='undef'
 datakit='undef'
 CONFIG=true
