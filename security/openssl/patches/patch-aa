@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.11 2002/08/25 19:23:18 jlam Exp $
+$NetBSD$
 
---- config.orig	Sun Jun 16 05:32:14 2002
+--- config.orig	Thu Nov 14 17:30:29 2002
 +++ config
-@@ -577,8 +577,8 @@
+@@ -588,8 +588,8 @@ EOF
    *-freebsd[3-9]*) OUT="FreeBSD-elf" ;;
    *-freebsd[1-2]*) OUT="FreeBSD" ;;
    *86*-*-netbsd) OUT="NetBSD-x86" ;;
