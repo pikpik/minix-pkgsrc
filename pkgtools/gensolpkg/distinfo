@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.10 2001/01/21 23:43:14 veego Exp $
+$NetBSD$
 
-MD5 (gensolpkg-1.9.tar.gz) = 92c3101cea58b1883f7af4a9dc4185e9
+SHA1 (gensolpkg-1.9.tar.gz) = 38a3805833bdd94d90e161a529bd77e4d633aeec
+Size (gensolpkg-1.9.tar.gz) = 8194 bytes
