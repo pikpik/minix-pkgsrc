@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2000/02/21 16:46:14 pooka Exp $
+# $NetBSD: Makefile,v 1.57 2000/02/25 01:04:16 wiz Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
@@ -14,7 +14,6 @@
     SUBDIR += bchunk
     SUBDIR += cdrdao
     SUBDIR += cdrecord
-#    SUBDIR += cdrecord-current		# disabled by default
     SUBDIR += cfengine
     SUBDIR += cpogm
     SUBDIR += crashme
