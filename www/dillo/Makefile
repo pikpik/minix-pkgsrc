@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.18 2004/03/14 01:26:55 xtraeme Exp $
+# $NetBSD: Makefile,v 1.19 2004/05/26 08:06:56 adam Exp $
 
-DISTNAME=	dillo-0.8.1
+DISTNAME=	dillo-0.8.2
 CATEGORIES=	www
 MASTER_SITES=	http://dillo.auriga.wearlab.de/download/
 EXTRACT_SUFX=	.tar.bz2
