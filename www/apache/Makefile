@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2001/05/17 16:32:26 abs Exp $
+# $NetBSD$
 #
 # This pkg does not compile in mod_ssl, only the `mod_ssl EAPI' (a set of
 # code hooks that allow mod_ssl to be compiled separately later, if desired).
@@ -34,7 +34,7 @@ CONFIGURE_ARGS+=	--enable-rule=EAPI				\
 			--disable-module=ssl
 CONFIGURE_ARGS+=	--with-perl=${PERL5}
 CONFIGURE_ARGS+=	--with-port=80
-CONFIGURE_ENV+=		OPTIM="${OPTIM}"
+CONFIGURE_ENV+=		OPTIM="${APACHE_CUSTOM_CFLAGS}"
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -65,9 +65,11 @@ CONFIGURE_ARGS+=	--disable-shared=define
 
 PLIST_SRC+=		${PKGDIR}/PLIST
 
+APACHE_CUSTOM_CFLAGS?=	# empty
+
 .if defined(APACHE_PERF_TUNING) && ${APACHE_PERF_TUNING} == YES
-OPTIM+=			-DBUFFERED_LOGS
-CFLAGS+=		-O6 -fomit-frame-pointer -fexpensive-optimizations
+APACHE_CUSTOM_CFLAGS+=	-DBUFFERED_LOGS
+APACHE_CUSTOM_CFLAGS+=	-O6 -fomit-frame-pointer -fexpensive-optimizations
 .endif
 
 .if (${OPSYS} == "SunOS")
@@ -78,7 +80,9 @@ CONFIGURE_ENV+=		INCLUDES="-I${LOCALBASE}/include/db2"
 CONFIGURE_ENV+=		LIBS="-ldbm -ldb2"
 .endif
 
-BUILD_DEFS+=		APACHE_PERF_TUNING APACHE_SUEXEC
+BUILD_DEFS+=		APACHE_CUSTOM_CFLAGS
+BUILD_DEFS+=		APACHE_PERF_TUNING
+BUILD_DEFS+=		APACHE_SUEXEC
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
