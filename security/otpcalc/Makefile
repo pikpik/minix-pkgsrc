@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/04 15:05:05 hubertf Exp $
 #
 
 DISTNAME=		otpCalc-0.96
@@ -11,7 +11,7 @@ COMMENT=		OTP and S/Key calculator for X
 
 GNU_CONFIGURE=		YES
 USE_GMAKE=		YES
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 
 ALL_TARGET=		otpCalc otpCalc.1
 
