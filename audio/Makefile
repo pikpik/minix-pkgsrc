@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.239 2004/06/05 19:08:47 nathanw Exp $
+# $NetBSD: Makefile,v 1.240 2004/06/06 07:21:46 agc Exp $
 #
 
 COMMENT=	Audio tools
@@ -112,6 +112,7 @@ SUBDIR+=	libid3tag
 SUBDIR+=	libmad
 SUBDIR+=	libmikmod
 SUBDIR+=	libmodplug
+SUBDIR+=	libopendaap
 SUBDIR+=	libsamplerate
 SUBDIR+=	libshout
 SUBDIR+=	libsidplay
