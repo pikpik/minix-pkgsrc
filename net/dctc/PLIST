@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/GDLjoiner
+bin/dctc
+bin/hublist
+man/man1/dctc.1
