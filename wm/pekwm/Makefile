@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/24 15:18:32 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/26 09:02:43 xtraeme Exp $
 #
 
 DISTNAME=	pekwm-0.1.3
@@ -17,7 +17,7 @@ USE_GNU_TOOLS+=	make
 USE_X11=	YES
 USE_PERL5=	run
 USE_PKGINSTALL=	YES
-USE_GCC_SHLIB=	YES
+USE_LANGUAGES+=	c++
 
 .include "../../mk/bsd.prefs.mk"
 
