@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/08/16 10:46:58 rh Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:11:38 zuntum Exp $
 bin/edb-config
 bin/edb_ed
 bin/edb_gtk_ed
@@ -7,4 +7,4 @@ lib/libedb.a
 lib/libedb.la
 lib/libedb.so
 lib/libedb.so.1
-lib/libedb.so.1.2
+lib/libedb.so.1.3
