@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- makedat/Makefile.in.orig	Fri Jan 18 22:04:44 2002
++++ makedat/Makefile.in
+@@ -281,6 +281,10 @@
+ 	$(MAKE) $(AM_MAKEFLAGS) all-recursive
+ 
+ install-exec-am:
++	$(mkinstalldirs) $(DESTDIR)$(libexecdir)
++	rm -f $(DESTDIR)$(libexecdir)/makedatprog
++	$(INSTALL_PROGRAM) makedatprog $(DESTDIR)$(libexecdir)/makedatprog
++
+ install-exec: install-exec-am
+ 
+ install-data-am:
