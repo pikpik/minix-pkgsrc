@@ -1,0 +1,10 @@
+======================================================================
+$NetBSD$
+
+Some games, especially encrypted newer Neo-Geo games, require lots
+of memory to decrypt the graphic ROMs.  In case the graphics look
+garbled, try doing
+	ulimit -d unlimited
+before running xmame.
+
+======================================================================
