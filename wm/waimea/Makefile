@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/20 19:04:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/24 06:10:27 wiz Exp $
 #
 
 DISTNAME=	waimea-0.4.0
@@ -38,7 +38,7 @@ REPLACE_PERL = \
 	${WRKSRC}/data/scripts/stylesdir.pl.in
 
 .include "../../devel/pkgconfig/buildlink2.mk"
-.include "../../fonts/Xft2/buildlink2.mk"
+.include "../../fonts/fontconfig/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../graphics/imlib2/buildlink2.mk"
 .include "../../lang/perl5/buildlink2.mk"
