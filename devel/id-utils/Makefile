@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/04/24 09:20:34 agc Exp $
+# $NetBSD: Makefile,v 1.7 1998/08/20 15:16:48 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.4 1996/11/18 10:22:47 asami Exp
 #
 
@@ -16,6 +16,7 @@ OPSYS!=		uname -s
 BUILD_DEPENDS=	emacs:../../editors/emacs
 .endif
 
+INFO_FILES=	id-utils.info
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
