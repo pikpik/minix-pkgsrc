@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2001/06/21 01:48:43 jlam Exp $
+# $NetBSD: Makefile,v 1.71 2001/06/21 01:59:07 jlam Exp $
 
 DISTNAME=		ImageMagick-5.2.8
 CATEGORIES=		graphics
@@ -27,6 +27,7 @@ CFLAGS=			-O
 .endif
 
 .include "../../mk/bsd.prefs.mk"
+.include "../../archivers/bzip2/buildlink.mk"
 .include "../../graphics/jpeg/buildlink.mk"
 .include "../../graphics/png/buildlink.mk"
 .include "../../graphics/tiff/buildlink.mk"
