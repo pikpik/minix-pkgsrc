@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2002/09/10 16:06:37 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2002/09/11 11:23:14 wiz Exp $
 #
 
 DISTNAME=		wv-0.7.2
+PKGREVISION=		1
 CATEGORIES=		converters
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wvware/}
 
@@ -17,6 +18,7 @@ USE_X11=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
 MAKE_ENV+=		RM="${RM} -f"
+CONFIGURE_ARGS+=	--with-libwmf=${BUILDLINK_PREFIX.libwmf}
 
 post-install:
 	${TOUCH} ${PREFIX}/share/wv/ttf/.directory
