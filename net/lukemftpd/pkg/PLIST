@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libexec/ftpd
+man/man5/ftpd.conf.5
+man/man5/ftpusers.5
+man/man8/ftpd.8
