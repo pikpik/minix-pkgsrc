@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2002/12/22 18:30:06 cjep Exp $
+# $NetBSD: Makefile,v 1.92 2002/12/22 19:27:25 cjep Exp $
 #
 
 COMMENT=	Mathematics
@@ -27,6 +27,7 @@ SUBDIR+=	glpk
 SUBDIR+=	gnumeric
 SUBDIR+=	gnumeric0
 SUBDIR+=	gp-autpgrp
+SUBDIR+=	gp-factint
 SUBDIR+=	gp-grape
 SUBDIR+=	gp-lag
 SUBDIR+=	grace
