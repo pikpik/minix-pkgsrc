@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/03/06 14:09:39 is Exp $
+# $NetBSD: Makefile,v 1.6 2000/03/16 12:25:49 wiz Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
@@ -15,9 +15,11 @@ HOMEPAGE=		http://www.sun.com/solaris/ipv6/
 DECOMPRESS_CMD=		${CAT}
 EXTRACT_BEFORE_ARGS=	-xf
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-NO_CDROM=		"not redistributable"
-NO_PACKAGE=		"not redistributable"
 RESTRICTED=		"not redistributable, license agreement required"
+NO_BIN_ON_CDROM=	${RESTRICTED}
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_SRC_ON_FTP=		${RESTRICTED}
 MIRROR_DISTFILES=	no
 
 do-fetch:

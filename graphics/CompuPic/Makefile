@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/01/13 11:15:10 soren Exp $
+# $NetBSD: Makefile,v 1.6 2000/04/02 02:56:26 wiz Exp $
 #
 
 DISTNAME=	compupic-5.0.1033-i386-netbsd
@@ -16,8 +16,10 @@ LICENSE=	fee-based-commercial-use
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
 RESTRICTED=	"Commercial product, purchase at http://www.photodex.com/ordering/order.html"
-NO_PACKAGE=	${RESTRICTED}
-NO_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=${RESTRICTED}
+NO_SRC_ON_CDROM=${RESTRICTED}
+NO_BIN_ON_FTP=	${RESTRICTED}
+NO_SRC_ON_FTP=	${RESTRICTED}
 EXTRACT_CMD=	# empty
 
 do-install:

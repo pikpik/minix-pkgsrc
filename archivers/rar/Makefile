@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/02/05 18:17:51 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2000/05/12 18:20:17 drochner Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
 #
 
@@ -15,8 +15,8 @@ HOMEPAGE=		http://www.rarsoft.com/
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 RESTRICTED=		Only unmodified original package can be distributed
-NO_PACKAGE=		${RESTRICTED}
-NO_CDROM=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
 
 NO_WRKSUBDIR=		yes
 EXTRACT_CMD=		${DOWNLOADED_DISTFILE} >/dev/null
