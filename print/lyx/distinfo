@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.8 2001/01/15 18:16:26 drochner Exp $
+$NetBSD$
 
-MD5 (lyx-1.1.6.tar.gz) = 07358580d2d5b8ff2cba85da7dc3d17a
+SHA1 (lyx-1.1.6.tar.gz) = 7e059e7d89e28e2b7faf580c91c0e6bdba6ab3a7
+Size (lyx-1.1.6.tar.gz) = 4860189 bytes
