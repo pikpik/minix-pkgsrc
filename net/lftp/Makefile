@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2003/02/06 14:22:16 seb Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/06 08:46:31 wiz Exp $
 #
 
-DISTNAME=	lftp-2.6.5
+DISTNAME=	lftp-2.6.6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/net/ftp/client/lftp/ \
 		ftp://ftp.yars.free.net/pub/software/unix/net/ftp/client/lftp/old/
