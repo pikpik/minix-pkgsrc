@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/squeak
+share/squeak/Squeak2.6.changes
+share/squeak/Squeak2.6.image
+@dirrm share/squeak
