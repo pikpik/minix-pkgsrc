@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2002/06/20 15:18:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.12 2002/06/30 04:02:54 jlam Exp $
 #
 
-PKGNAME=	links-2.0
+PKGNAME=	links-2.1.0.2
 
 COMMENT=	Lynx-like text WWW browser
 
