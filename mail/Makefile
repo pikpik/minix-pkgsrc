@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.153 2002/12/13 09:49:12 salo Exp $
+# $NetBSD: Makefile,v 1.154 2002/12/27 12:55:26 abs Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -68,6 +68,7 @@ SUBDIR+=	mdfrm
 SUBDIR+=	metamail
 SUBDIR+=	mew
 SUBDIR+=	mew-xemacs
+SUBDIR+=	mew3
 SUBDIR+=	mhonarc
 SUBDIR+=	mimedefang
 SUBDIR+=	mush
