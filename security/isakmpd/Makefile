@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/04/25 19:10:11 thorpej Exp $
+# $NetBSD: Makefile,v 1.4 2000/04/27 14:55:54 itojun Exp $
 #
 
 DISTNAME=		isakmpd-000220
@@ -11,6 +11,9 @@ PATCHFILES=		isakmpd-20000220-20000427a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		itojun@kame.net
+
+RESTRICTED=		"Crypto; export-controlled"
+IGNORE=			"broken by PF_KEY API change"
 
 # this is not compatible with cross build - there's no other way
 .if !exists(/usr/include/netinet6/ipsec.h)
