@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/weechat-curses
+man/man1/weechat.1
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/weechat.mo
