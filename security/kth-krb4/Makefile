@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/18 22:46:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2000/09/09 19:40:21 fredb Exp $
 #
 
 DISTNAME=		krb4-1.0.1
@@ -8,8 +8,6 @@ MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/krb/src/
 
 MAINTAINER=		wennmach@netbsd.org
 HOMEPAGE=		http://www.pdc.kth.se/kth-krb/
-
-CONFLICTS+=		openssl-*
 
 CRYPTO=			yes
 GNU_CONFIGURE=		yes
