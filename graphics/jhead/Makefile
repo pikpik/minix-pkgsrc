@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	jhead
-PKGNAME=	jhead-1.4
+PKGNAME=	jhead-1.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.sentex.net/~mwandel/jhead/
 EXTRACT_SUFX=	.zip
