@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2001/02/16 14:04:55 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2001/02/28 10:47:47 wiz Exp $
 #
 # GNU binutils configured to hold `as many targets as the cross system is
 # capable of using'.  Configures and builds everything except gas, which
@@ -47,6 +47,12 @@ ENABLE_TARGETS+=	alpha-netbsd arm-netbsd \
 post-patch:
 	${FIND} ${WRKSRC} -name configure -print | xargs ${TOUCH}
 	${FIND} ${WRKSRC} -name Makefile.in -print | xargs ${TOUCH}
+
+# check that path does not contain cwd
+pre-configure:
+	@if ${ECHO} ${PATH} | ${EGREP} '(^\.?:|:\.?$$|:\.?:)'; then	\
+		${ECHO} "Warning - \".\" is present in your path \"${PATH}\". Configuration step will fail"; \
+	fi
 
 # we use MKDIR, not INSTALL_PROGRAM_DIR, deliberately.
 do-install:
