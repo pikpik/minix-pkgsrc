@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pfnet
+lib/perl5/site_perl/CMDLINE.pm
+lib/perl5/site_perl/FNET.pm
