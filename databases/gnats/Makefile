@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 18:05:35 seb Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/22 08:02:15 grant Exp $
 
 DISTNAME=	gnats-3.113.1
 CATEGORIES=	devel
@@ -8,11 +8,9 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gnats/
 COMMENT=	Cygnus GNATS bug tracking system
 
-BUILD_DEPENDS+=	m4-*:../../devel/m4
-
 USE_PKGINSTALL=	YES
 GNU_CONFIGURE=	YES
-USE_GNU_TOOLS+=	make
+USE_GNU_TOOLS+=	m4 make
 USE_BISON=	yes
 
 USE_MAKEINFO=	YES
