@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2004/08/26 13:19:32 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2004/10/03 00:18:08 tv Exp $
 
 DISTNAME=	gnupg-1.2.6
 PKGREVISION=	1
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnupg.org/
-COMMENT=	Privacy Guard, public-Key encryption and digital signatures
+COMMENT=	GNU Privacy Guard, public-Key encryption and digital signatures
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
