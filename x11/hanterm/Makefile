@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/30 03:02:23 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 17:06:31 wiz Exp $
 
-DISTNAME=	hanterm-3.1.3
+DISTNAME=	hanterm-3.1.4
 CATEGORIES=	x11
-MASTER_SITES=	ftp://elf.kaist.ac.kr/pub/hanterm/ \
+MASTER_SITES=	http://quagga.kaist.ac.kr/hanterm/download/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	packages@netbsd.org
-HOMEPAGE=	http://elf.kaist.ac.kr/hanterm/
+HOMEPAGE=	http://quagga.kaist.ac.kr/hanterm/
 COMMENT=	X11R6-based xterm hacked for managing Korean languages
 
 USE_IMAKE=	YES
