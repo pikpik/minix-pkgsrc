@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1998/05/31 13:24:06 frueauf Exp $
+# $NetBSD: Makefile,v 1.25 1998/06/03 12:55:56 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 #
 
@@ -46,9 +46,6 @@ CONFIGURE_ARGS+=${MACHINE_GNU_ARCH}--netbsd --prefix=${PREFIX} \
 		${WITH_MULE} ${WITH_DIALOGS}
 
 MAKE_ENV+=	INSTALL_MAN="${INSTALL_MAN}" INSTALL_SCRIPT="${INSTALL_SCRIPT}"
-
-MAN1=		gnuattach.1 gnuclient.1 gnudoit.1 gnuserv.1 xemacs.1 \
-		xemacs-ctags.1 xemacs-etags.1
 
 PLIST_SRC=	${WRKDIR}/PLIST.tmp
 

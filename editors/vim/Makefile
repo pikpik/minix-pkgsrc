@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:23 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/21 22:08:14 tron Exp $
 
 DISTNAME=	vim-5.1
 CATEGORIES=	editors
@@ -11,8 +11,5 @@ MAINTAINER=	tron@netbsd.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=	yes
-
-MAN1=	ex.1 gview.1 gvim.1 rgview.1 rgvim.1 rview.1 rvim.1 view.1 vim.1 \
-	xxd.1 vim-ctags.1 vim-etags.1
 
 .include "../../mk/bsd.pkg.mk"
