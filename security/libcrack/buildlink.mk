@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.3 2001/07/01 22:59:28 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.4 2001/07/20 01:54:50 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libcrack.
 #
@@ -21,6 +21,7 @@ BUILDLINK_DEPENDS.libcrack?=	libcrack>=2.7
 DEPENDS+=	${BUILDLINK_DEPENDS.libcrack}:../../security/libcrack
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.libcrack=libcrack
+BUILDLINK_PREFIX.libcrack_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.libcrack=	include/cracklib/*
 BUILDLINK_FILES.libcrack+=	lib/libcrack.*
 

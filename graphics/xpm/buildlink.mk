@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.8 2001/07/07 06:24:12 tron Exp $
+# $NetBSD: buildlink.mk,v 1.9 2001/07/20 01:54:47 jlam Exp $
 #
 # This Makefile fragment is included by packages that use xpm.
 #
@@ -36,6 +36,7 @@ _NEED_XPM=		NO
 .if ${_NEED_XPM} == "YES"
 DEPENDS+=		${BUILDLINK_DEPENDS.xpm}:../../graphics/xpm
 EVAL_PREFIX+=		BUILDLINK_PREFIX.xpm=xpm
+BUILDLINK_PREFIX.xpm_DEFAULT=	${X11PREFIX}
 .else
 BUILDLINK_PREFIX.xpm=	${X11BASE}
 .endif

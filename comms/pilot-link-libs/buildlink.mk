@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.3 2001/07/01 22:59:12 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.4 2001/07/20 01:54:34 jlam Exp $
 #
 # This Makefile fragment is included by packages that use pilot-link-libs.
 #
@@ -21,6 +21,7 @@ BUILDLINK_DEPENDS.pilot-link-libs?=	pilot-link-libs>=0.9.5
 DEPENDS+=	${BUILDLINK_DEPENDS.pilot-link-libs}:../../comms/pilot-link-libs
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.pilot-link-libs=pilot-link-libs
+BUILDLINK_PREFIX.pilot-link-libs_DEFAULT=	${LOCALBASE}
 BUILDLINK_FILES.pilot-link-libs=	include/pi-*.*
 BUILDLINK_FILES.pilot-link-libs+=	lib/libpicc.*
 BUILDLINK_FILES.pilot-link-libs+=	lib/libpisock.*
