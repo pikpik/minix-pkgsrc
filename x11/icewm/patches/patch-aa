@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- sysdep.in.orig	Mon Nov  8 06:45:52 1999
++++ sysdep.in	Fri Mar  3 02:21:51 2000
+@@ -2,5 +2,5 @@
+ LD = @CXX_LINK@
+ SYS_CFLAGS = @CXXFLAGS@ @DEFS@
+ SYS_INCDIRS =
+-SYS_LIBDIRS =
++SYS_LIBDIRS = @LDFLAGS@
+ SYS_LIBS = @LIBS@
