@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2005/02/21 15:37:55 taca Exp $
+# $NetBSD: Makefile,v 1.164 2005/03/06 17:03:55 taca Exp $
 #
 
 COMMENT=	Databases
@@ -150,6 +150,7 @@ SUBDIR+=	sdbm
 SUBDIR+=	shared-mime-info
 SUBDIR+=	sqlite
 SUBDIR+=	sqlite3
+SUBDIR+=	sqlite3-tcl
 SUBDIR+=	sqlitemanager
 SUBDIR+=	sqlrelay
 SUBDIR+=	sqsh
