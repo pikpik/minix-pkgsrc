@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2003/06/02 01:18:23 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:48:09 grant Exp $
+#
 
 DISTNAME=	slatec_src
 PKGNAME=	slatec-4.1
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/src
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.netlib.org/slatec/ \
@@ -11,12 +13,15 @@ MASTER_SITES=	ftp://ftp.netlib.org/slatec/ \
 		ftp://ftp.zib.de/netlib/slatec/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	adam@NetBSD.org
+HOMEPAGE=	http://www.netlib.org/slatec/
 COMMENT=	Library of mathematical and statistical Fortran 77 subroutines
 
-USE_FORTRAN=	YES
+USE_BUILDLINK2=		YES
+USE_FORTRAN=		YES
+USE_LIBTOOL=		YES
 
 post-extract:
-	cd ${FILESDIR} && ${CP} d1mach.f i1mach.f r1mach.f Makefile ${WRKSRC}
+	cd ${FILESDIR} && ${CP} d1mach.f i1mach.f r1mach.f ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
