@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.15 2004/03/09 12:19:12 kent Exp $
 
 DISTVERSION=		3.3.3
 MAINTAINER=		peace-sacrifice@hauN.org
 HOMEPAGE=		http://chiharu.hauN.org/peace/
+MASTER_SITES=		http://chiharu.hauN.org/peace/dist/
 COMMENT=		Cross-compile environment for PEACE/i386
 # Need NetBSD headers in /usr/include
 ONLY_FOR_PLATFORM=	NetBSD-1.6[Q-Z]*-* NetBSD-[2-9]*-*
