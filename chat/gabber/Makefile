@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/22 07:49:20 grant Exp $
 
 DISTNAME=	gabber-0.8.8
 PKGREVISION=	3
@@ -16,7 +16,7 @@ USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-GCC_REQD=		2.95.3
+GCC_REQD+=		2.95.3
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--disable-xmms --disable-sigctest

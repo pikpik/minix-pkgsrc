@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:14:41 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/22 08:36:04 grant Exp $
 
 DISTNAME=		VisualBoyAdvance-src-1.6a
 PKGNAME=		vba-1.6.0.1
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-c-core
 CONFIGURE_ARGS+=	--without-mmx
 
-GCC_REQD=		3.0.0
+GCC_REQD+=		3.0.0
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/TestEmu ${PREFIX}/bin

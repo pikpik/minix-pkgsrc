@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/01/05 20:52:56 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2004/01/10 05:42:50 jlam Exp $
 
 DISTNAME=	libogg-1.1
 CATEGORIES=	devel audio
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-GCC_REQD=		2.95.3
+GCC_REQD+=		2.95.3
 
 PLIST_SUBST+=		DISTNAME=${DISTNAME}
 

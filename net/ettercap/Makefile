@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/12/18 03:01:38 xtraeme Exp $
+# $NetBSD: Makefile,v 1.23 2004/01/23 23:38:13 wiz Exp $
 
 DISTNAME=		ettercap-0.6.b
 CATEGORIES=		security net
@@ -25,7 +25,7 @@ BUILD_DIRS=		${WRKSRC} ${WRKSRC}/plugins
 INSTALL_DIRS=		${WRKSRC} ${WRKSRC}/plugins
 
 .if ${MACHINE_ARCH} == "alpha"
-GCC_REQD=		3.0
+GCC_REQD+=		3.0
 .endif
 
 post-buildlink:

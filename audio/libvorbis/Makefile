@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/09/25 13:00:18 grant Exp $
+# $NetBSD: Makefile,v 1.27 2003/12/08 14:39:39 wiz Exp $
 
 DISTNAME=	libvorbis-1.0.1
 CATEGORIES=	devel audio
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-GCC_REQD=		2.95.3
+GCC_REQD+=		2.95.3
 
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/vorbis.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/vorbisenc.pc.in
