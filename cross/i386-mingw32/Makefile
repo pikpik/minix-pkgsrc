@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2002/01/24 11:36:10 kent Exp $
+# $NetBSD: Makefile,v 1.6 2002/01/24 16:10:35 kent Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-1.2
-PKGREVISION=		2
+PKGREVISION=		3
 CROSS_DISTFILES=
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.mingw.org/
@@ -15,7 +15,7 @@ TARGET_DIR=		${PREFIX}/${TARGET_ARCH}
 MASTER_SITES+=		http://prdownloads.sourceforge.net/mingw/
 CROSS_DISTFILES+=	binutils-2.11.92-20011113-src.tar.gz
 BINUTILS_WRKSRC=	${WRKDIR}/binutils-2.11.92-20011113
-BINUTILS_EXTRAS=	dlltool windres
+BINUTILS_EXTRAS=	dlltool dllwrap windres
 CROSS_DISTFILES+=	gcc-2.95.3-20011106-src.tar.gz
 GCC_WRKSRC=		${WRKDIR}/gcc-2.95.3-20011106
 GCC_VERSION=		2.95.3-7
