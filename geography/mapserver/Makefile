@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/03 18:49:41 reed Exp $
+# $NetBSD: Makefile,v 1.3 2004/05/09 02:30:53 snj Exp $
 #
 
 DISTNAME=		mapserver-4.0
@@ -14,6 +14,7 @@ USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
+USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	--with-gd=${PREFIX}				\
 			--with-libiconv=${PREFIX}			\
