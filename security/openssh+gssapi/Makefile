@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/24 21:01:23 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/24 21:06:26 jwise Exp $
 
 # NOTE:  This package is modeled on ../openssh, but does not share
 # files with it as that package may update faster than the gssapi
@@ -35,6 +35,7 @@ USE_PERL5=		build
 USE_OPENSSL_VERSION=	${OPENSSL_VERSION_096}
 
 CRYPTO=			yes
+KERBEROS=		yes
 
 # retain the following line, for IPv6-ready pkgsrc webpage
 BUILD_DEFS+=		USE_INET6
