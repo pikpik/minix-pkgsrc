@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/08/09 11:11:38 seb Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:20:05 agc Exp $
 
 DISTNAME=	yorick-1.5.12
 CATEGORIES=	math
@@ -10,7 +10,7 @@ HOMEPAGE=	ftp://ftp-icf.llnl.gov/pub/Yorick/doc/index.html
 COMMENT=	Numerical algebra system (similar to Matlab)
 
 WRKSRC=		${WRKDIR}/yorick-1.5
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_X11=        yes
 BUILD_DIRS=	${WRKSRC} ${WRKSRC}/doc
 INSTALL_DIRS=	${WRKSRC}
