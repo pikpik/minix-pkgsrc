@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.110 2002/12/05 21:52:33 jmmv Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.111 2002/12/06 14:25:07 wiz Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1589,6 +1589,11 @@ WGET_USE_SSL?=	YES
 # Enable SSL in wget (for https connections)
 # Possible: YES, NO
 # Default: YES
+
+#WDM_MANAGERS?=
+# Is a space-separated list of window managers for x11/wdm to support.
+# Possible: any space-separated list of window managers
+# Default: not defined
 
 WINDOWMAKER_OPTIONS?= gnome kde openlook
 # Options for building windowmaker package. Used to add support for
