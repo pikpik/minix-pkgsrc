@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2000/02/25 01:04:13 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2000/03/26 14:46:57 jlam Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -15,7 +15,10 @@
     SUBDIR += crossfire
     SUBDIR += dopewars
     SUBDIR += finalbattle
-    SUBDIR += freeciv
+    SUBDIR += freeciv-client
+    SUBDIR += freeciv-client-gtk
+    SUBDIR += freeciv-server
+    SUBDIR += freeciv-share
     SUBDIR += frotz
     SUBDIR += galaxa
     SUBDIR += gemdropx
