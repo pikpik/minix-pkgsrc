@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/05/24 20:39:47 tv Exp $
+# $NetBSD: Makefile,v 1.11 1999/07/25 00:36:31 hubertf Exp $
 #
 
 DISTNAME=		sniffit.0.3.5
@@ -9,9 +9,10 @@ MASTER_SITES=		http://reptile.rug.ac.be/~coder/sniffit/files/
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://reptile.rug.ac.be/~coder/sniffit/sniffit.html
 
+DEPENDS=		ncurses-4.2:../../devel/ncurses
+
 NOT_FOR_PLATFORM=	*-*-alpha	# severe LP64 loss
 
-DEPENDS=		ncurses-4.2:../../devel/ncurses
 HAS_CONFIGURE=		YES
 CONFIGURE_ENV+=		NCURSES_LOCATION=$(LOCALBASE)/include/ncurses.h
 ALL_TARGET=

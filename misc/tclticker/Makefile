@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/04/26 19:30:28 garbled Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1999/12/21 12:47:29 agc Exp $
 #
 
 DISTNAME=	tclticker-1.1
@@ -20,9 +20,9 @@ post-patch:
 	done
 
 do-install:
-	${BSD_INSTALL_SCRIPT} ${WRKSRC}/tclticker ${PREFIX}/bin
-	${BSD_INSTALL_SCRIPT} ${WRKSRC}/mailquote ${PREFIX}/bin
-	-${MKDIR} -p ${PREFIX}/share/tclticker
+	${INSTALL_SCRIPT} ${WRKSRC}/tclticker ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/mailquote ${PREFIX}/bin
+	${INSTALL_DATA_DIR} ${PREFIX}/share/tclticker
 	cd ${WRKSRC}/lib ; ${GTAR} cf - . | (cd ${PREFIX}/share/tclticker ; ${GTAR} xvf - )
 
 .include "../../mk/bsd.pkg.mk"

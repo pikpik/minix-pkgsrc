@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/03/03 23:28:52 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 1999/05/20 18:30:27 tron Exp $
 
 DISTNAME=	glunix-release-1-0a
 PKGNAME=	glunix-1.0a
@@ -48,7 +48,7 @@ pre-configure:
 # On arm32, with UVM, pmap.h contains a C++ keyword. Workaround this.
 pre-build:
 	@if [ ${MACHINE} = "arm32" -a ! -z "${UVM}" ]; then		\
-		${MKDIR} -p ${WRKSRC}/glunix/include/machine;		\
+		${MKDIR} ${WRKSRC}/glunix/include/machine;		\
 		${SED} -e 's|virtual|virt|' /usr/include/machine/pmap.h \
 			> ${WRKSRC}/glunix/include/machine/pmap.h; 	\
 	fi
