@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/26 02:27:48 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2004/04/25 08:31:32 snj Exp $
 #
 
 DISTNAME=		netsaint-plugins-1.2.9-4
@@ -13,7 +13,7 @@ COMMENT=		NetSaint plugins
 
 DEPENDS+=		netsaint-base-[0-9]*:../../net/netsaint-base
 .if !exists(/usr/bin/ssh)
-DEPENDS+=		{ssh{,6}-[0-9]*,openssh-[0-9]*}:../../security/ssh
+DEPENDS+=		{ssh{,6}-[0-9]*,openssh-[0-9]*}:../../security/openssh
 .endif
 
 USE_BUILDLINK3=		YES
