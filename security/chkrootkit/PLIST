@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${WTMPX}bin/check_wtmpx
+bin/chkdirs
+bin/chklastlog
+bin/chkproc
+bin/chkwtmp
+bin/ifpromisc
+bin/strings-static
