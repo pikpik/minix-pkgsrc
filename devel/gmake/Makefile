@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/08/25 21:49:40 jlam Exp $
-# FreeBSD Id: Makefile,v 1.16 1997/06/13 20:00:47 max Exp
-#
+# $NetBSD: Makefile,v 1.32 2002/10/16 00:21:21 dmcmahill Exp $
 
 DISTNAME=       make-3.80
 PKGNAME=        gmake-3.80
@@ -12,6 +10,7 @@ HOMEPAGE=	http://www.gnu.org/software/make/make.html
 COMMENT=	GNU version of 'make' utility
 
 USE_BUILDLINK2=		YES
+USE_GNU_GETTEXT=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--program-prefix="g"
 CONFIGURE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
