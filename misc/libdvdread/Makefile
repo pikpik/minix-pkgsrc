@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/12/10 20:26:38 veego Exp $
+# $NetBSD: Makefile,v 1.2 2001/12/12 01:32:32 enami Exp $
 
-DISTNAME=	libdvdread-0.9.2
+DISTNAME=	libdvdread-0.9.3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.dtek.chalmers.se/groups/dvd/dist/
 
