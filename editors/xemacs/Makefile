@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1999/10/08 21:12:48 jlam Exp $
+# $NetBSD: Makefile,v 1.15 1999/12/06 14:24:01 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/09/03 19:27:57 gj Exp
 
 DISTNAME=	xemacs-21.1.6
@@ -16,7 +16,7 @@ HOMEPAGE=	http://www.xemacs.org/
 USE_XAW=	yes
 
 DEPENDS+=	gdbm-1.7.3:../../databases/gdbm
-DEPENDS+=	png-1.0.3:../../graphics/png
+DEPENDS+=	png-*:../../graphics/png
 DEPENDS+=	tiff-*:../../graphics/tiff
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 

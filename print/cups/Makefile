@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/29 02:18:53 jlam Exp $
 #
 
 DISTNAME=	cups-1.0.2-source
@@ -17,7 +17,7 @@ MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.cups.org/
 
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
-DEPENDS+=	png-1.0.3:../../graphics/png
+DEPENDS+=	png-*:../../graphics/png
 DEPENDS+=	tiff-*:../../graphics/tiff
 
 USE_LIBTOOL=	yes

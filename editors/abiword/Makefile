@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/09/14 02:19:14 jlam Exp $
+# $NetBSD: Makefile,v 1.3 1999/10/23 00:05:16 tron Exp $
 #
 
 DISTNAME=	abi-${ABIWORD_VERS}
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.abisource.com/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/unzip:../../archivers/unzip
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk
-DEPENDS+=	png-1.0.3:../../graphics/png
+DEPENDS+=	png-*:../../graphics/png
 
 USE_X11=	yes
 USE_GMAKE=	yes

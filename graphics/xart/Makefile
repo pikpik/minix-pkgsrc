@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/10/08 21:12:50 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2000/01/02 03:36:53 wiz Exp $
 #
 
 DISTNAME=       xart19980415
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.cqi.com/~humbubba/linux.html
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	tiff-*:../../graphics/tiff
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
-DEPENDS+=	png-1.0.3:../../graphics/png
+DEPENDS+=	png-*:../../graphics/png
 
 WRKSRC=		${WRKDIR}/19980415
 USE_IMAKE=      yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/01/15 18:46:33 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2000/02/05 20:03:01 wiz Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
@@ -15,7 +15,7 @@ DEPENDS+=	teTeX-share-1.0:../teTeX-share
 DEPENDS+=	dialog-0.6z:../../misc/dialog
 DEPENDS+=	libwww-5.2.8:../../www/libwww
 DEPENDS+=	ncurses>=4.2:../../devel/ncurses
-DEPENDS+=	png-1.0.3:../../graphics/png
+DEPENDS+=	png-*:../../graphics/png
 
 CONFLICTS+=	omega-*
 
