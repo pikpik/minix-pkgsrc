@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 1999/08/22 22:02:33 tron Exp $
+# $NetBSD: Makefile,v 1.9 1999/08/29 12:48:59 rh Exp $
 #
 
-DISTNAME=	gnome-utils-1.0.1
+DISTNAME=	gnome-utils-1.0.12
 CATEGORIES=	misc x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=gnome-1.0/sources/}
 
