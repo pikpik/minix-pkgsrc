@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/ical
 bin/ical-2.2
 lib/ical/v2.2/actions.tcl
