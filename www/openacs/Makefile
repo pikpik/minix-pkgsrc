@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:54 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/02/26 21:28:49 fredb Exp $
 #
 
 DISTNAME=		openacs-3.2.5
@@ -27,15 +27,6 @@ _FETCH_MESSAGE= \
 	    ${ECHO} "Please fetch ${DISTFILES} into ${DISTDIR}" ; \
 	    ${ECHO} "from ${HOMEPAGE} ." ; \
 	    ${ECHO} "==============================================================="
-
-do-fetch:
-	@if [ ! -f ${DISTDIR}/${DISTFILES} ] ; then \
-		${_FETCH_MESSAGE}; \
-		exit 1 ; \
-	fi
-
-fetch-list-one-pkg:
-	@${ECHO} ${_FETCH_MESSAGE:Q}
 
 SEDFILES=${WRKSRC}/parameters/ad.tcl \
 	${WRKSRC}/bin/aolserver-errors.pl \

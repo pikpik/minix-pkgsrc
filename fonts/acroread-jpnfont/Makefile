@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:46:04 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/02/26 21:28:49 fredb Exp $
 #
 
 DISTNAME=	jpnfont
@@ -19,14 +19,5 @@ _FETCH_MESSAGE= \
 	${ECHO} "  to ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} from"; \
 	${ECHO} "    http://www.adobe.com/prodindex/acrobat/readstep.html"; \
 	${ECHO} "======================================================="
-
-do-fetch:
-	@if [ ! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ]; then \
-		${_FETCH_MESSAGE}; \
-		${FALSE}; \
-	 fi
-
-fetch-list-one-pkg:
-	@${ECHO} ${_FETCH_MESSAGE:Q}
 
 .include "../acroread-font-share/Makefile.common"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/02/05 05:36:29 jmc Exp $
+# $NetBSD: Makefile,v 1.7 2002/02/26 21:28:49 fredb Exp $
 #
 
 DISTNAME=		mod_aolserver-1.1
@@ -28,15 +28,6 @@ _FETCH_MESSAGE= \
 	${ECHO} "  Please fetch ${DISTFILES} into ${DISTDIR}" ; \
 	${ECHO} "  from ${HOMEPAGE} ." ; \
 	${ECHO} "===================================================================="
-
-do-fetch:
-	@if [ ! -f ${DISTDIR}/${DISTFILES} ] ; then \
-		${_FETCH_MESSAGE}; \
-		exit 1 ; \
-	fi
-
-fetch-list-one-pkg:
-	@${ECHO} ${_FETCH_MESSAGE:Q}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/mod_aolserver
