@@ -22,7 +22,7 @@ $NetBSD$
    "/dev/dsp1",
 +#elif defined(__NetBSD__)
 +  "NetBSD audio device", 'd',
-+  "/dev/audio",
++  "/dev/sound",
  #else
    "Linux dsp device", 'd',
    "/dev/dsp",
