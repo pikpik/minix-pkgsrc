@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/28 07:25:41 agc Exp $
 #
 
 .include "../../sysutils/mbmon/Makefile.common"
 
-PKGNAME=	xmbmon-201
+PKGNAME=	xmbmon-203
 
 COMMENT=	X11-based motherboard monitoring utility
 
