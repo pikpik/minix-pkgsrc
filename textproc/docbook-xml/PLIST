@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/11/04 22:46:58 seb Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/08/22 11:22:04 martti Exp $
 share/xml/catalog
 share/xml/docbook/README
 share/xml/docbook/calstblx.dtd
@@ -31,4 +31,4 @@ share/xml/docbook/ent/iso-tech.ent
 share/xml/docbook/soextblx.dtd
 @dirrm share/xml/docbook/ent
 @dirrm share/xml/docbook
-@unexec ${RMDIR} %D/share/xml 2>/dev/null || true
+@unexec ${RMDIR} %D/share/xml 2>/dev/null || ${TRUE}
