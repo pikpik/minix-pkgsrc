@@ -1,4 +1,4 @@
-# $NetBSD: defs.OpenBSD.mk,v 1.30 2004/04/07 14:26:51 tv Exp $
+# $NetBSD: defs.OpenBSD.mk,v 1.31 2004/04/19 20:19:46 jmmv Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -81,9 +81,9 @@ GROUPADD?=	/usr/sbin/groupadd
 .else
 USERADD?=	${LOCALBASE}/sbin/useradd
 GROUPADD?=	${LOCALBASE}/sbin/groupadd
-.if defined(USE_USERADD) || defined(USE_GROUPADD)
-DEPENDS+=	user>=20000313:../../sysutils/user
-.endif
+_USER_DEPENDS=	user>=20000313:../../sysutils/user
+DEPENDS+=	${USE_USERADD:D${_USER_DEPENDS}}
+DEPENDS+=	${USE_GROUPADD:D${_USER_DEPENDS}}
 .endif
 
 CPP_PRECOMP_FLAGS?=	# unset
