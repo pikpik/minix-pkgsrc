@@ -1,0 +1,4 @@
+@comment $NetBSD$
+GNUstep/Apps/WMMail.app/WMMail
+share/WindowMaker/Defaults/WWMail
+@dirrm GNUstep/Apps/WMMail.app
