@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2003/12/12 23:10:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2003/12/21 09:49:25 jmmv Exp $
 
-DISTNAME=		distcc-2.12
+DISTNAME=		distcc-2.12.1
 CATEGORIES=		devel
 MASTER_SITES=		http://distcc.samba.org/ftp/distcc/
 EXTRACT_SUFX=		.tar.bz2
