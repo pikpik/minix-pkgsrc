@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/01/20 20:40:54 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2003/08/28 20:05:22 xtraeme Exp $
 #
 
 DISTNAME=	NovaWM-0.8_alpha
@@ -12,7 +12,7 @@ COMMENT=	Nova window manager
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 USE_X11=	YES
 
 .include "../../graphics/xpm/buildlink2.mk"

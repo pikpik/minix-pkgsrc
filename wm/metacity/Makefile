@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/01/03 18:49:54 reed Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/23 21:50:49 jmmv Exp $
 #
 
 DISTNAME=	metacity-2.6.3
@@ -17,7 +17,7 @@ DEPENDS=		gnome2-dirs>=1.0:../../misc/gnome2-dirs
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
