@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.62 2004/11/08 10:07:02 xtraeme Exp $
+# $NetBSD: Makefile,v 1.63 2004/11/27 01:31:19 kristerw Exp $
 #
 
-DISTNAME=		xmame-0.88
-PKGNAME=		xmess-0.88
+DISTNAME=		xmame-0.89
+PKGNAME=		xmess-0.89
 CATEGORIES=		emulators games x11
 MASTER_SITES=		http://x.mame.net/download/
 EXTRACT_SUFX=		.tar.bz2
@@ -109,5 +109,6 @@ do-install:
 	${INSTALL_DATA_DIR} ${ROMPATH}
 	${INSTALL_DATA} ${WRKSRC}/doc/${TARGET}rc ${ROMPATH}/${TARGET}rc
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
