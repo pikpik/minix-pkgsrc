@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/10/26 13:57:59 skrll Exp $
+# $NetBSD: Makefile,v 1.19 2001/11/13 21:09:07 jlam Exp $
 
 DISTNAME=	kdelibs-2.2.1
 CATEGORIES=	x11
@@ -31,6 +31,7 @@ MAKE_FLAGS+=		QT_INCLUDES="-I${BUILDLINK_QTDIR}/include"
 # ${XML_CONFIG}, not as ${XML2_CONFIG} like it's supposed to.
 #
 CONFIGURE_ENV+=		XML_CONFIG="${XML2_CONFIG}"
+KDEDIR=			${PREFIX}
 
 REPLACE_PERL= \
 	${WRKSRC}/kio/proxytype.pl \
