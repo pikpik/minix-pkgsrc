@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/04/17 16:27:20 rh Exp $
+# $NetBSD: Makefile,v 1.12 2001/05/05 13:47:12 rh Exp $
 #
 
 DISTNAME=	SDL-1.2.0
@@ -28,6 +28,12 @@ USE_LIBTOOL=	YES
 NASMFLAGS=	-f elf
 .else
 NASMFLAGS=	-f aoutb
+.endif
+
+.ifdef SDL_USE_NAS
+DEPENDS+=		nas>=1.4:../../audio/nas
+.else
+CONFIGURE_ARGS+=	--disable-nas
 .endif
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
