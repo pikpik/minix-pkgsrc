@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/02/27 21:50:44 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:57 agc Exp $
 #
 
 DISTNAME=		bxform-088
@@ -23,6 +23,8 @@ DIST_SUBDIR=		xforms/${MASTER_SITE_SUBDIR}
 
 ## Define OBJMACHINE so WRKDIR is defined to be ${MACHINE_ARCH}-specific.
 OBJMACHINE=		yes
+
+NO_BUILD=		yes
 
 USE_X11=		yes
 
