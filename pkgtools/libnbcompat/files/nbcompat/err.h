@@ -1,4 +1,4 @@
-/*	$NetBSD: fts.h,v 1.1.1.1 2003/03/31 05:02:44 grant Exp $	*/
+/*	$NetBSD: err.h,v 1.1 2003/07/31 22:40:27 jschauma Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993
