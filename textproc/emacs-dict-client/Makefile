@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/20 08:39:22 tron Exp $
+# $NetBSD: Makefile,v 1.2 2002/11/20 08:45:48 tron Exp $
 
 DISTNAME=	dictionary-1.8.2
 PKGNAME=	${DISTNAME:S/dictionary/emacs-dict-client/}
@@ -9,7 +9,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://me.in-berlin.de/~myrkr/dictionary/
 COMMENT=	Emacs package for talking to a dictionary server
 
-DEPENDS+=	emacs>=21.2:../../editors/emacs21
+DEPENDS+=	emacs>=21.2:../../editors/emacs
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/emacs/site-lisp/dictionary
