@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/id3tag.h
+lib/libid3tag.a
+lib/libid3tag.la
+lib/libid3tag.so
+lib/libid3tag.so.2
+lib/libid3tag.so.2.0
