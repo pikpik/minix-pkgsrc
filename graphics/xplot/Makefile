@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/01/29 20:19:10 tron Exp $
+# $NetBSD: Makefile,v 1.10 1999/01/30 23:18:51 agc Exp $
 #
 
 DISTNAME=	xplot-0.90
@@ -13,14 +13,10 @@ GNU_CONFIGURE=	yes
 DOCFILES=	ANNOUNCE README README.tcp_plots demo.0 demo.1 demo.2 \
 		demo.3 demo.4 demo.5 demo.6 demo.7
 
-.include "../../mk/bsd.prefs.mk"
-
 post-install:
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/xplot
 .for file in ${DOCFILES}
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/xplot
 .endfor
-.endif
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/22 12:58:36 agc Exp $
+# $NetBSD: Makefile,v 1.12 1998/08/20 15:17:22 tsarna Exp $
 #
 
 DISTNAME=	zephyr-2.0.4
@@ -25,11 +25,9 @@ post-install:
 	${MKDIR} ${ZEPHYR_RCDIR}
 	${SED} -e 's|@prefix@|'${PREFIX}'|g' < ${FILESDIR}/zhm.sh > ${WRKDIR}/zhm.sh
 	${INSTALL_SCRIPT} ${WRKDIR}/zhm.sh ${ZEPHYR_RCDIR}
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${ZEPHYR_DOCDIR}
 	for file in ${ZEPHYR_DOCS} ; do \
 	    ${INSTALL_DATA} ${WRKSRC}/$$file ${ZEPHYR_DOCDIR} ; \
 	    done
-.endif
 
 .include "../../mk/bsd.pkg.mk"
