@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/03/05 20:16:53 mrauch Exp $
+# $NetBSD: Makefile,v 1.9 2002/04/08 13:25:00 mrauch Exp $
 
 DISTNAME=		openoffice-0.0.0.641
 PKGREVISION=		1
@@ -23,7 +23,7 @@ GCC_VERSION!=		${CC} --version
 .endif
 BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 BUILD_DEPENDS+=		gmake-[0-9]*:../../devel/gmake
-BUILD_DEPENDS+=		tcsh-[0-9]*:../../shells/tcsh
+BUILD_DEPENDS+=		{standalone-tcsh,tcsh}-[0-9]*:../../shells/tcsh
 BUILD_DEPENDS+=		zip-[0-9]*:../../archivers/zip
 BUILD_DEPENDS+=		stlport>=4.0nb1:../../devel/stlport
 BUILD_DEPENDS+=		sun-jdk>=1.3.0:../../lang/sun-jdk13
