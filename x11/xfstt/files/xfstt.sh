@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: xfstt.sh,v 1.3 2002/09/27 14:47:06 grant Exp $
+# $NetBSD: xfstt.sh,v 1.4 2002/09/29 12:58:37 wiz Exp $
 #
 # PROVIDE: xfstt
 # REQUIRE: DAEMON
@@ -8,6 +8,7 @@
 . /etc/rc.subr
 
 name="xfstt"
+rcvar=$name
 command="@PREFIX@/bin/${name}"
 command_args="--user nobody --notcp --daemon"
 pidfile="/var/run/${name}.pid"
