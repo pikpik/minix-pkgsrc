@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/11/13 21:08:56 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/11/14 13:06:25 jlam Exp $
 #
 # This Makefile fragment is included by packages that use the KDE2
 # configure-and-build process.
@@ -54,6 +54,8 @@ KDE2_BUILDLINK_MK=	# defined
 # forces all KDE2 packages to have a common installation prefix.
 #
 USE_X11BASE=		YES
+
+.include "../../mk/bsd.prefs.mk"
 
 .if !defined(USE_BUILDLINK_ONLY)
 #
