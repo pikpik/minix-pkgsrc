@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2002/03/18 20:25:57 skrll Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/16 09:55:13 adam Exp $
 
-DISTNAME=	fuse-0.6.1
+DISTNAME=	fuse-0.6.1.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.srcf.ucam.org/~pak21/spectrum/
 
