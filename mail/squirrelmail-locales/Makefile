@@ -16,6 +16,8 @@ VER=		1.4.4
 NO_CONFIGURE=	# defined
 USE_BUILDLINK3=	# defined
 
+WRKSRC=		${WRKDIR}
+
 do-build:
 	cd ${WRKDIR}/help && ${RM} -rf en_US
 
