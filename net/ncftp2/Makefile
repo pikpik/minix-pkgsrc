@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/07/13 12:20:19 tron Exp $
+# $NetBSD: Makefile,v 1.17 1999/08/16 09:41:24 agc Exp $
 # FreeBSD Id: Makefile,v 1.39 1998/01/31 17:49:48 jseger Exp
 #
 
@@ -11,6 +11,8 @@ HOMEPAGE=		http://www.ncftp.com/ncftp/
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-extra-dirs
+
+BUILD_DEFS+=		USE_SOCKS
 
 .include "../../mk/bsd.prefs.mk"
 
