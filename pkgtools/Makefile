@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2003/04/17 11:15:05 jmmv Exp $
+# $NetBSD: Makefile,v 1.48 2003/06/19 08:36:38 wiz Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -26,6 +26,7 @@ SUBDIR+=	pkglint
 SUBDIR+=	pkgmanpages
 SUBDIR+=	pkgsurvey
 SUBDIR+=	port2pkg
+SUBDIR+=	rc.subr
 SUBDIR+=	rpm2pkg
 SUBDIR+=	shlock
 SUBDIR+=	url2pkg
