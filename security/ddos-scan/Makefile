@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/11 10:47:16 agc Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/14 16:23:31 agc Exp $
 #
 
 DISTNAME=	ddos_scan
-PKGNAME=	ddos-scan-20000211
-CATEGORIES=	net security x11
+PKGNAME=	ddos-scan-20000325
+CATEGORIES=	net security
 MASTER_SITES=	http://staff.washington.edu/dittrich/misc/
 EXTRACT_SUFX=	.tar
 
