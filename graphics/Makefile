@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2001/05/14 23:07:27 hubertf Exp $
+# $NetBSD: Makefile,v 1.137 2001/05/17 16:02:45 hubertf Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -11,6 +11,7 @@ SUBDIR+=	Mesa-glx
 SUBDIR+=	MesaLib
 SUBDIR+=	Ngraph
 SUBDIR+=	alevt
+SUBDIR+=	apla
 SUBDIR+=	autotrace
 SUBDIR+=	avifile
 SUBDIR+=	blender
