@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2003/10/05 12:03:12 martti Exp $
+# $NetBSD: Makefile,v 1.9 2003/12/12 23:10:57 jmmv Exp $
 
-DISTNAME=		distcc-2.11.2
+DISTNAME=		distcc-2.12
 CATEGORIES=		devel
 MASTER_SITES=		http://distcc.samba.org/ftp/distcc/
 EXTRACT_SUFX=		.tar.bz2
@@ -13,7 +13,8 @@ USE_BUILDLINK2=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
 
-CONFIGURE_ARGS=		--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS=		--enable-rfc2553
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 PKG_SYSCONFSUBDIR=	distcc
 
