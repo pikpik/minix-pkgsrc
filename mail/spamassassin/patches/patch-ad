@@ -6,3 +6,17 @@ $NetBSD$
 -#! /bin/sh
 +#!@RCD_SCRIPTS_SHELL@
  #
+@@ -13,2 +13,3 @@
+ # BEFORE: mail
++# KEYWORD: shutdown
+ 
+@@ -34,6 +35,6 @@
+ # default values, may be overridden by setting them in /etc/rc.conf
+-spamd_flags="-H -c -a"
+-spamd=NO
++spamd_flags=${spamd_flags-"-H -c -a"}
++spamd=${spamd:-NO}
+ 
+-INTERPRETER_SUPPORT=@INTERPRETER_SUPPORT@
++INTERPRETER_SUPPORT=@INTERPRETER_SUPPORT@ # set during package build
+ 
