@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.648 2001/01/22 22:43:10 dmcmahill Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.649 2001/01/25 10:43:21 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -1349,7 +1349,7 @@ show-downlevel:
 	${_PKG_SILENT}${_PKG_DEBUG}${DO_NADA}
 .else
 	${_PKG_SILENT}${_PKG_DEBUG}					\
-	found="`${PKG_INFO} -e \"${PKGBASE}<${PKGVERSION}\" || ${TRUE}`";\
+	found="`${PKG_INFO} -e \"${PKGBASE}\" || ${TRUE}`";		\
 	if [ "X$$found" != "X" -a "X$$found" != "X${PKGNAME}" ]; then	\
 		${ECHO} "${PKGBASE} package: $$found installed, pkgsrc version ${PKGNAME}"; \
 	fi
