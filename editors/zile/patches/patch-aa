@@ -1,9 +1,9 @@
 $NetBSD$
 
---- doc/zile.info.orig	Thu Apr 25 14:08:45 2002
-+++ doc/zile.info	Thu Apr 25 14:08:34 2002
+--- doc/zile.info.orig
++++ doc/zile.info
 @@ -1,5 +1,10 @@
- This is zile.info, produced by makeinfo version 4.0 from zile.texi.
+ This is zile.info, produced by makeinfo version 4.2 from zile.texi.
  
 +INFO-DIR-SECTION Editors
 +START-INFO-DIR-ENTRY
