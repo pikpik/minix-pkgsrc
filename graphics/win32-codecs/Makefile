@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:13 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/01/21 21:47:47 wiz Exp $
 #
 
 DISTNAME=	w32codec-0.60
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	zuntum@netbsd.org
 COMMENT=	huge compilation of Win32 binary codecs
 
+USE_BUILDLINK2=	yes
 NO_BUILD=	yes
 
 ONLY_FOR_PLATFORM= NetBSD-*-i386
