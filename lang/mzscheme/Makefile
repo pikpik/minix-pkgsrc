@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/29 12:41:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:44:57 grant Exp $
 
 DISTNAME=		mzscheme.src.unix
 PKGNAME=		mzscheme-200
@@ -18,6 +18,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	../configure
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
+ONLY_FOR_PLATFORM+=	Linux-*-i386
 
 post-patch:
 	@for patchee in ${WRKDIR}/plt/man/man1/mzscheme.1 \
