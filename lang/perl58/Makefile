@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2005/01/06 06:46:26 tv Exp $
+# $NetBSD: Makefile,v 1.73 2005/01/17 20:21:44 jschauma Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tar.bz2
 .if empty(PERL5_SNAPSHOT) && empty(PERL5_RC_VERS)
 DISTNAME=	perl-${PERL5_VERS}
 PKGNAME=	perl-${PERL5_VERS}
-PKGREVISION=	1
+PKGREVISION=	2
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:S,/modules/by-module/$,/src/,}
 .else
 .  if !empty(PERL5_SNAPSHOT)
