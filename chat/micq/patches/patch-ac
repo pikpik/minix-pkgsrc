@@ -1,13 +1,13 @@
 $NetBSD$
 
---- sendmsg.c.orig	Tue Jan 23 11:49:05 2001
-+++ sendmsg.c	Wed Jan 24 22:02:47 2001
-@@ -977,7 +977,7 @@
+--- src/sendmsg.c.orig	Thu Nov 22 00:32:01 2001
++++ src/sendmsg.c
+@@ -1087,7 +1087,7 @@
  {
-    char buf[450];
-    
--   sprintf( buf, "%s\xFE%s", url, description );
-+   snprintf( buf, sizeof(buf), "%s\xFE%s", url, description );
-    icq_sendmsg( sok, uin, buf, URL_MESS );
+     char buf[450];
+ 
+-    sprintf (buf, "%s\xFE%s", url, description);
++    snprintf (buf, sizeof(buf), "%s\xFE%s", url, description);
+     icq_sendmsg (sok, uin, buf, URL_MESS);
  }
  
