@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2002/10/12 01:17:11 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/25 18:32:43 wiz Exp $
 
-DISTNAME=		sqlite-2.2.5
+DISTNAME=		sqlite-2.8.0
 CATEGORIES=		databases
 MASTER_SITES=		http://www.hwaci.com/sw/sqlite/
 
