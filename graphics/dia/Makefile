@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/10/19 10:54:52 rh Exp $
+# $NetBSD: Makefile,v 1.11 2002/12/01 13:49:38 salo Exp $
 
 DISTNAME=		dia-0.90
 # PKGREVISION=		1
@@ -20,8 +20,6 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-gnome
-
-BROKEN=			segfaults on start-up
 
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
 .include "../../x11/gnome-libs/buildlink2.mk"
