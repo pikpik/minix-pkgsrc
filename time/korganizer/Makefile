@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/09/03 13:49:08 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/21 15:03:46 wiz Exp $
 
 DISTNAME=	korganizer-1.1.2
 CATEGORIES=	kde time
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://www.kde.org/
+COMMENT=	Organizer application for the KDE integrated X11 desktop
 
 DEPENDS+=	kdebase-1.1.2:../../x11/kdebase
 

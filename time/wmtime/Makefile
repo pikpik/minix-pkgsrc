@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/25 20:38:16 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:21 wiz Exp $
 #
 
 DISTNAME=	wmtime-1.0b2
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.alpha.alt.ru/pub/UNIX/X11/WMaker/ \
 		http://www.netbsd.org/~ad/distfiles/
 
 MAINTAINER=	ad@netbsd.org
+COMMENT=	Time/Date applet for WindowMaker
 
 USE_IMAKE=	YES
 USE_XPM=	YES

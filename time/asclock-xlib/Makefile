@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/08/23 23:14:35 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:15 wiz Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -9,6 +9,7 @@ MASTER_SITES=	http://www.asclock.org/tar/
 
 MAINTAINER=	jlam@netbsd.org
 HOMEPAGE=	http://www.asclock.org/
+COMMENT=	dockable clock and calendar with themes for X11
 
 USE_IMAKE=	YES
 USE_XPM=	YES

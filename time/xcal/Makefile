@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/27 06:46:44 kim Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:22 wiz Exp $
 #
 
 DISTNAME=		xcal41
@@ -8,6 +8,7 @@ MASTER_SITES=		ftp://ftp.hillside.co.uk/xcal/
 EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		kim@tac.nyc.ny.us
+COMMENT=		calendar with alarms and a notebook for X11
 
 USE_IMAKE=		yes
 #USE_XAW=		yes

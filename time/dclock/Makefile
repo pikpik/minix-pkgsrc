@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/10/20 11:01:17 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:16 wiz Exp $
 #
 
 DISTNAME=	dclock
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:S/contrib/R5contrib/}
 EXTRACT_SUFX=	.shar.Z
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	Digital clock for X
 
 USE_X11BASE=	yes
 EXTRACT_CMD=	${GZCAT} ${DOWNLOADED_DISTFILE} | ${SH} -

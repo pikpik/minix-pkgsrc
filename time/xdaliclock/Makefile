@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/01/18 16:13:48 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 23:32:22 wiz Exp $
 #
 
 DISTNAME=		xdaliclock-2.18
@@ -8,6 +8,7 @@ MASTER_SITES=		http://www.jwz.org/xdaliclock/ \
 
 MAINTAINER=		nathanw@netbsd.org
 HOMEPAGE=		http://www.jwz.org/xdaliclock/
+COMMENT=		Animated digital clock
 
 GNU_CONFIGURE=		yes
 USE_X11=		yes
