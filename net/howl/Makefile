@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/06/05 19:03:12 nathanw Exp $
 
 DISTNAME=		howl-0.9.5
 CATEGORIES=		net
@@ -13,4 +13,5 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 .include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
