@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/04/09 21:39:24 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2002/07/16 13:11:13 agc Exp $
 
 DISTNAME=		control-center-1.4.0.4
 CATEGORIES=		x11 gnome
@@ -37,6 +37,9 @@ post-patch:
                 ${MV} -f $${file}.fixed $${file};			\
         done
 	@${ECHO} >>${WRKSRC}/control-center/cappletConf.sh.in ""
+
+post-install:
+	${MKDIR} ${PREFIX}/share/control-center/capplets
 
 .include "../../devel/popt/buildlink.mk"
 .include "../../devel/gettext-lib/buildlink.mk"
