@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2002/03/17 13:34:32 uebayasi Exp $
+# $NetBSD: Makefile,v 1.104 2002/04/12 19:00:12 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -98,6 +98,7 @@ SUBDIR+=	ruby-openssl
 SUBDIR+=	ruby-sha1
 SUBDIR+=	ruby-tcpwrap
 SUBDIR+=	scanssh
+SUBDIR+=	seahorse
 SUBDIR+=	smimemsg
 SUBDIR+=	smtpd
 SUBDIR+=	sniff
