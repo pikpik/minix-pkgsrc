@@ -1,13 +1,16 @@
-#	$NetBSD: Makefile,v 1.2 1997/12/11 22:08:44 agc Exp $
-#
 # Packages collection Makefile for: xplot
 # Version required: 0.90
 # Date created: 10 December 1997
 # Whom: thorpej
+#
+# $NetBSD: Makefile,v 1.3 1997/12/14 22:55:11 thorpej Exp $
+#
 
 DISTNAME=	xplot-0.90
 CATEGORIES=	x11
 MASTER_SITES=	ftp://mercury.lcs.mit.edu/pub/shep/
+
+MAINTAINER=	thorpej@netbsd.org
 
 GNU_CONFIGURE=	yes
 
