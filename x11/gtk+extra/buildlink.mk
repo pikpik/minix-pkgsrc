@@ -1,6 +1,6 @@
-# $NetBSD: buildlink.mk,v 1.11 2001/10/03 20:56:55 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.1 2002/01/09 14:46:51 drochner Exp $
 #
-# This Makefile fragment is included by packages that use gtk.
+# This Makefile fragment is included by packages that use gtk+extra.
 #
 # To use this Makefile fragment, simply:
 #
