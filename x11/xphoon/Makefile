@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/03 04:17:30 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:43:14 jmmv Exp $
 #
 
 DISTNAME=	xphoon.tar
@@ -22,7 +22,7 @@ MAKE_FLAGS+=	EXTRA_LOCAL_LIBS=${EXTRA_LOCAL_LIBS}
 .include "../../mk/bsd.prefs.mk"
 
 .if ${MACHINE_ARCH} == arm32
-.  include "../../lang/gcc/buildlink2.mk"
+.  include "../../mk/gcc.buildlink2.mk"
 .endif
 
 .if ${OPSYS} == "NetBSD"

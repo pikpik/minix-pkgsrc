@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/11/24 01:42:18 cjep Exp $
+# $NetBSD: Makefile,v 1.7 2003/05/05 22:17:58 seb Exp $
 #
 
 DISTNAME=	prc-tools-2.2
@@ -58,7 +58,7 @@ pre-patch:
 		&& ${PATCH} --quiet -p0 < ${WRKSRC}/${DIST_GDB}.palmos.diff
 
 .include "../../mk/autoconf.mk"
-.include "../../lang/gcc/buildlink2.mk"
+.include "../../mk/gcc.buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"

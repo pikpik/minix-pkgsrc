@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1 2003/01/09 11:21:42 uebayasi Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/05/02 11:55:55 wiz Exp $
 #
 # This Makefile fragment is included by packages that use koffice.
 #
@@ -170,7 +170,7 @@ BUILDLINK_FILES.koffice+=	lib/libkwmf.*
 BUILDLINK_FILES.koffice+=	lib/libkwordexportfilters.*
 BUILDLINK_FILES.koffice+=	lib/straight_connector.ksp
 
-.include "../../lang/gcc/buildlink2.mk"
+.include "../../mk/gcc.buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../textproc/libxslt/buildlink2.mk"
 .include "../../graphics/libart2/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2003/04/15 11:11:50 mjl Exp $
+# $NetBSD: Makefile,v 1.96 2003/04/16 13:27:21 mjl Exp $
 
 .include "./Makefile.common"
 
@@ -29,7 +29,7 @@ PLIST_SUBST+=		IM_MAJOR_LIB_VER=${IM_MAJOR_LIB_VER}
 NOT_FOR_PLATFORM=	NetBSD-*-sparc64
 
 # NetBSD 1.5's gcc is too old to compile this pkg
-.include "../../lang/gcc/buildlink2.mk"
+.include "../../mk/gcc.buildlink2.mk"
 GCC_REQD=		2.95.3
 
 # Avoid compiler bug on "mipsel" (cobalt?)

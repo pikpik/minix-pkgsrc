@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/05/02 11:55:27 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2003/06/02 01:19:19 jschauma Exp $
 
 DISTNAME=	ogle-0.9.1
 PKGREVISION=	1
@@ -30,7 +30,7 @@ CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 .include "../../devel/binutils/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
-.include "../../lang/gcc/buildlink2.mk"
 .include "../../misc/libdvdread/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
+.include "../../mk/gcc.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/09/30 20:27:42 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2003/03/29 12:40:24 jmmv Exp $
 
 DISTNAME=		gcc-core-3.1
 PKGNAME=		cross-h8300-hms-gcc-3.1
@@ -42,5 +42,5 @@ post-install:
 		${LN} -s ${H8300_PREFIX}/bin/$$f ${PREFIX}/bin/$$f ; \
 	done
 
-.include "../../lang/gcc/buildlink2.mk"
+.include "../../mk/gcc.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

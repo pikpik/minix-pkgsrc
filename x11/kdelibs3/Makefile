@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/05/22 02:42:40 markd Exp $
+# $NetBSD: Makefile,v 1.29 2003/05/29 23:14:12 grant Exp $
 
 DISTNAME=	kdelibs-3.1.2
 CATEGORIES=	x11
@@ -107,7 +107,7 @@ post-install:
 	) > ${PLIST_SRC}
 
 .if ${MACHINE_ARCH} == "alpha"
-.  include "../../lang/gcc/buildlink2.mk"
+.  include "../../mk/gcc.buildlink2.mk"
 .endif
 .include "../../archivers/bzip2/buildlink2.mk"
 .include "../../audio/arts/buildlink2.mk"
