@@ -3,7 +3,7 @@
 # Date created:		Jun 23 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $NetBSD: Makefile,v 1.1.1.1 1997/10/28 23:18:21 augustss Exp $
+# $NetBSD: Makefile,v 1.2 1997/10/28 23:41:14 augustss Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/09/03 08:35:30 max Exp 
 #
 
@@ -16,7 +16,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	vanilla@MinJe.com.TW
 
 GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
 
 MAN1=		amp.1
 
