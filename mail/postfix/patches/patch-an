@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- man/Makefile.orig	Sun May 30 18:49:13 1999
++++ man/Makefile	Sun May 30 18:49:13 1999
+@@ -0,0 +1,5 @@
++#	$NetBSD: patch-aa,v 1.1 1999/05/29 20:57:19 christos Exp $
++
++SUBDIR+=man1 man5 man8
++
++.include <bsd.subdir.mk>

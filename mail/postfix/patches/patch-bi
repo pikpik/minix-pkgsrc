@@ -1,0 +1,21 @@
+$NetBSD$
+
+--- trivial-rewrite/Makefile.orig	Sun May 30 18:49:14 1999
++++ trivial-rewrite/Makefile	Sun May 30 18:49:14 1999
+@@ -0,0 +1,16 @@
++#	$NetBSD: patch-aa,v 1.1 1999/05/29 20:57:19 christos Exp $
++.include "../conf/main.cf"
++PROG=	trivial-rewrite
++BINDIR=${daemon_directory}
++
++SRCS	= trivial-rewrite.c rewrite.c resolve.c transport.c
++
++DPADD+= ${LIBPMASTER} ${LIBPGLOBAL} ${LIBPUTIL}
++LDADD+= ${LIBPMASTER} ${LIBPGLOBAL} ${LIBPUTIL}
++
++# XXX
++NOMAN=1
++
++.include <bsd.prog.mk>
++
++
