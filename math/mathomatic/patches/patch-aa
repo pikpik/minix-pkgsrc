@@ -1,6 +1,6 @@
 $NetBSD$
 
---- makefile.orig	Mon Oct  4 20:55:33 2004
+--- makefile.orig	Mon Feb 21 10:43:31 2005
 +++ makefile
 @@ -1,14 +1,14 @@
  # Makefile for compiling Mathomatic for UNIX or Linux or Mac OS X.
@@ -21,4 +21,4 @@ $NetBSD$
 +prefix		= ${PREFIX}
  bindir		= $(prefix)/bin
  mandir		= $(prefix)/man
- 
+ docdir		= $(prefix)/doc
