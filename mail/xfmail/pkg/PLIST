@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 1998/06/26 23:44:25 frueauf Exp $
 bin/xfmail
 man/man1/xfmail.1
 share/doc/xfmail/Copyright
+@dirrm share/doc/xfmail
