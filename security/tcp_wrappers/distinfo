@@ -2,4 +2,4 @@ $NetBSD$
 
 SHA1 (tcp_wrappers_7.6-ipv6.1.tar.gz) = d0b70d4f0c0ac0375d8283a18ec2b6d602f82fde
 Size (tcp_wrappers_7.6-ipv6.1.tar.gz) = 144708 bytes
-SHA1 (patch-aa) = fa9764d666fe59baa495e0b8487d2beef0f96a83
+SHA1 (patch-aa) = af0ec390df43dbd621df8d15877f5cde6851ebf7
