@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2004/03/29 05:05:46 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2004/05/17 21:32:34 seb Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APACHE_BUILDLINK3_MK:=	${APACHE_BUILDLINK3_MK}+
@@ -26,6 +26,10 @@ APXS?=		${BUILDLINK_PREFIX.apache}/sbin/apxs
 .if defined(GNU_CONFIGURE)
 CONFIGURE_ARGS+=	--with-apxs="${APXS}"
 .endif
+
+# required because httpd/os.h includes <dlfcn.h> when it is found by
+# Apache's configure script.
+.include "../../mk/dlopen.buildlink3.mk"
 
 .endif	# APACHE_BUILDLINK3_MK
 
