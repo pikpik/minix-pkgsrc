@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/30 14:22:56 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/03 13:36:36 wiz Exp $
 #
 
 DISTNAME=		xmlto-0.0.18
@@ -25,4 +25,5 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xmlto/format/docbook
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xmlto/format/fo
 
+.include "../../textproc/libxslt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
