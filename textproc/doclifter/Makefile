@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/17 01:07:14 recht Exp $
 #
 
-DISTNAME=	doclifter-1.6
+DISTNAME=	doclifter-1.7
 CATEGORIES=	textproc
 MASTER_SITES=	http://catb.org/~esr/doclifter/
 
