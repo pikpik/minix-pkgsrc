@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/30 05:35:58 uebayasi Exp $
 
 DISTNAME=	db-4.0.14
 PKGNAME=	db4-4.0.14
 CATEGORIES=	databases
-MASTER_SITES=	http://www.sleepycat.com/update/4.0.14/
+MASTER_SITES=	http://www.sleepycat.com/update/snapshot/
 
 MAINTAINER=	dolemite@wuli.nu
 HOMEPAGE=	http://www.sleepycat.com/
