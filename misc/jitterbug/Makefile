@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/11/03 14:44:30 wennmach Exp $
+# $NetBSD: Makefile,v 1.6 1999/12/17 11:11:10 agc Exp $
 
 DISTNAME=	jitterbug-1.6.2
 WRKSRC=		${WRKDIR}/${PKGNAME}/source
@@ -42,12 +42,8 @@ JB_CONFIGDIR=	${JB_USER}/config
 JB_LOCALMAIL?=	${JB_PACKAGE}-bugs
 
 .if !defined(JB_FQHOSTNAME)
-<<<<<<< Makefile
 JB_HOSTNAME!=	/bin/hostname
 JB_FQHOSTNAME!=	${NSLOOKUP} ${JB_HOSTNAME} | /usr/bin/awk '/^Name: / { print $$2; exit }'
-=======
-JB_FQHOSTNAME!=	(${HOSTCMD} `/bin/hostname` 2>/dev/null || echo totally.unknown.domain) | /usr/bin/awk '{ print $$1; exit }'
->>>>>>> 1.5
 .endif
 JB_EMAIL?=	${JB_LOCALMAIL}@${JB_FQHOSTNAME}
 
