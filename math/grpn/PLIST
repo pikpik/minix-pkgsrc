@@ -1,2 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/06/08 14:34:48 frueauf Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:30 zuntum Exp $
 bin/grpn
+man/man1/grpn.1
