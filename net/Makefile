@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.228 2001/06/14 14:45:49 tron Exp $
+# $NetBSD: Makefile,v 1.229 2001/06/19 11:34:14 zuntum Exp $
 #
 
 COMMENT=	Networking tools
@@ -115,6 +115,7 @@ SUBDIR+=	p5-Socket6
 SUBDIR+=	p5-Wais
 SUBDIR+=	p5-ispman
 SUBDIR+=	pchar
+SUBDIR+=	pconsole
 SUBDIR+=	pfnet
 SUBDIR+=	pim6dd
 SUBDIR+=	pim6sd
