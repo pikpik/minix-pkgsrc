@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-posix-io.adb,v 1.1.1.1 2004/06/03 10:07:27 shannonjr Exp $
 
 --- posix-io.adb.orig	2002-10-24 02:03:52.000000000 -0600
 +++ posix-io.adb
