@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2001/10/23 13:15:05 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/10/24 22:11:09 jlam Exp $
 
 PKGNAME=		${DISTNAME:S/-/-gnome-/}
-COMMENT=		small, fast and light-weight window manager (GNOME version)
+COMMENT=		Small, fast and light-weight window manager (GNOME version)
 
 CONFLICTS+=		icewm-[0-9]*
 
