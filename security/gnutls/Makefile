@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/12/21 10:17:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.8 2003/12/22 23:08:03 jmmv Exp $
 #
 
-DISTNAME=	gnutls-1.0.3
+DISTNAME=	gnutls-1.0.4
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/
 
@@ -31,6 +31,4 @@ post-install:
 .include "../../security/libgcrypt/buildlink2.mk"
 .include "../../security/libtasn1/buildlink2.mk"
 .include "../../security/opencdk/buildlink2.mk"
-.include "../../security/openssl/buildlink2.mk"
-
 .include "../../mk/bsd.pkg.mk"
