@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2003/06/24 01:49:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.58 2003/07/21 16:36:11 martti Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -14,6 +14,7 @@ SUBDIR+=	cn2jp
 SUBDIR+=	code2html
 SUBDIR+=	doc2html
 SUBDIR+=	dvi2tty
+SUBDIR+=	fondu
 SUBDIR+=	hztty
 SUBDIR+=	ish
 SUBDIR+=	ja-dvi2tty
