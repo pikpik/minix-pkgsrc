@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xart
+man/cat1/xart.0
+lib/X11/app-defaults/XArt
