@@ -1,0 +1,7 @@
+@comment $NetBSD$
+sbin/postgrey
+${DOCDIR}/COPYING
+${DOCDIR}/Changes
+${DOCDIR}/README
+${EGDIR}/postgrey_whitelist_clients
+${EGDIR}/postgrey_whitelist_recipients
