@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.591 2004/12/29 13:02:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.592 2004/12/30 11:57:12 rh Exp $
 #
 
 COMMENT=	Development utilities
@@ -471,6 +471,7 @@ SUBDIR+=	pvs
 SUBDIR+=	pwlib
 SUBDIR+=	py-InlineEgg
 SUBDIR+=	py-Optik
+SUBDIR+=	py-Pyro
 SUBDIR+=	py-TPG
 SUBDIR+=	py-checker
 SUBDIR+=	py-curses
