@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.253 2004/06/22 23:53:52 xtraeme Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.254 2004/06/26 06:03:41 grant Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1909,6 +1909,12 @@ SILC_CLIENT_WITH_PERL?=	YES
 #          --enable-icmp
 #          --enable-ipf-transparent
 #          --enable-snmp
+
+SUN_JRE14_USE_JCE?= NO
+# Whether to include the Java Cryptography Extension (JCE) Unlimited Strength
+# Jurisdiction Policy Files in the sun-jre14 package
+# Possible: YES or NO.
+# Default: NO
 
 SSH_RSHPATH?= ${RSH}
 # Used in ssh to specify standard rsh path
