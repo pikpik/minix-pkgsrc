@@ -1,0 +1,12 @@
+$NetBSD$
+--- tests/gpg/t-decrypt-verify.c.orig	Tue Jan 29 17:47:41 2002
++++ tests/gpg/t-decrypt-verify.c	Tue Jan 29 17:48:00 2002
+@@ -24,7 +24,7 @@
+ #include <string.h>
+ #include <assert.h>
+ #include <errno.h>
+-#include <mcheck.h>
++/*#include <mcheck.h>*/
+ 
+ #include <gpgme.h>
+ 
