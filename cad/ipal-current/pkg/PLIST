@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/ipaledit
+bin/ipalrev
+include/ipal.h
+include/jedec.h
+lib/libipal.a
+lib/libjedec.a
+share/ipal/pal22v10.pa
+@dirrm share/ipal
