@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/12/24 09:53:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:10:29 agc Exp $
 
 DISTNAME=		tex2rtf164_source
 PKGNAME=		tex2rtf-164
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://www.remstar.com/pub/wxwin/tex2rtf/	\
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		ben@NetBSD.org
-HOMEPAGE=		http://web.ukonline.co.uk/julian.smart/tex2rtf/
+HOMEPAGE=		http://www.wxwindows.org/tex2rtf/index.htm
 COMMENT=		LaTex-to-RTF translator
 
 WRKSRC=			${WRKDIR}/src
