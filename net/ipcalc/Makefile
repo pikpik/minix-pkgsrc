@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/02/10 22:11:36 zuntum Exp $
+# $NetBSD: Makefile,v 1.6 2002/05/08 11:09:25 tron Exp $
 
 DISTNAME=	ipcalc
 PKGNAME=	${DISTNAME}-0.35
@@ -15,7 +15,7 @@ EXTRACT_CMD=    ${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 WRKSRC=         ${WRKDIR}
 
 USE_PERL5=	YES
-REPLACE_PERL=	${WRKSRC}/ipcalc.pl
+REPLACE_PERL=	ipcalc.pl
 NO_BUILD=	YES
 
 do-install:

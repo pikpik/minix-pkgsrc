@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/02 21:38:01 dillo Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/09 19:02:24 wiz Exp $
 
 DISTNAME=		gri-2.8.7
 CATEGORIES=		graphics
@@ -17,7 +17,7 @@ USE_GMAKE=		# defined
 USE_BUILDLINK2=	 	# defined
 INFO_FILES=		gri.info
 USE_PERL5=		build
-REPLACE_PERL=		${WRKSRC}/gri_merge ${WRKSRC}/gri_unpage
+REPLACE_PERL=		gri_merge gri_unpage
 
 .include "../../devel/netcdf/buildlink2.mk"
 .include "../../mk/ghostscript.mk"

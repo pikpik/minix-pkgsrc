@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/11/16 18:45:32 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.15 2002/12/06 11:00:30 skrll Exp $
 
 DISTNAME=	kdelibs-3.0.4
 PKGREVISION=	1
@@ -26,8 +26,8 @@ LIBS+=			${EXPORT_SYMBOLS_LDFLAGS}
 KDEDIR=			${PREFIX}
 
 REPLACE_PERL= \
-	${WRKSRC}/kio/proxytype.pl \
-	${WRKSRC}/kio/useragent.pl
+	kio/proxytype.pl \
+	kio/useragent.pl
 
 PLIST_SRC=		${WRKDIR}/PLIST
 UNLIMIT_RESOURCES=	datasize memorysize
