@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Library/src/Makefile.am.orig	Tue Jun 20 06:01:34 2000
++++ Library/src/Makefile.am
+@@ -379,7 +379,6 @@
+ libwwwsql_la_LDFLAGS = -rpath $(libdir)
+ 
+ INCLUDES = \
+-	-I/usr/local/include \
+ 	-I${top_srcdir}/modules/md5 \
+ 	-I${top_srcdir}/modules/expat/xmlparse
+ 
