@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/applerecords
+lib/applerecords/applerecords.jar
+@dirrm lib/applerecords
