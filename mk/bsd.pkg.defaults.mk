@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.13 2001/11/12 23:04:26 enami Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.14 2001/11/22 21:40:19 tron Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1079,6 +1079,11 @@ SDIST_PAWD?= pwd
 #          --enable-icmp
 #          --enable-ipf-transparent
 #          --enable-snmp
+
+#SQUID_SYSCONF_DIR=
+# Used in squid to set the configuration directory.
+# Possible: any valid directory
+# Default: ${PREFIX}/etc/squid
 
 SSH_CONF_DIR?= /etc
 # Used in ssh and openssh to set the configuration directory.
