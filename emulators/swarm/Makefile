@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 18:38:31 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/02/25 04:17:47 hubertf Exp $
+#
 
-DISTNAME=	swarm-0.26
+DISTNAME=	swarm-0.57
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.dcs.gla.ac.uk/~michael/phd/bin/
 
