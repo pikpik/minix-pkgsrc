@@ -1,3 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2004/10/23 13:30:10 shannonjr Exp $
 bin/pinentry-curses
-info/pinentry.info
+${USE_GTK}bin/pinentry-gtk
+${USE_QT}bin/pinentry-qt
