@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/rice.h
+include/ricehdf.h
+include/szip_adpt.h
+include/szlib.h
+lib/libsz.a
