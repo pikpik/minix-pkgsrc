@@ -77,6 +77,12 @@ CONFIGURE_ARGS+=	--disable-suid-ssh
 CFLAGS+=		-DLIBWRAP_FWD
 .endif
 
+# be more effective on M68060 machines
+.if defined(M68060)
+CONFIGURE_ARGS+=	--disable-asm
+CFLAGS+=		-m68060
+.endif
+
 PKGDIR=		${WRKDIR}/pkg
 
 pre-patch:
