@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2001/12/07 18:13:41 skrll Exp $
+# $NetBSD: Makefile,v 1.35 2002/03/13 17:37:58 fredb Exp $
 
 DISTNAME=	kdebase-2.2.2
 PKGREVISION=	1
@@ -115,6 +115,14 @@ post-install:
 	${SED} -e 's|^#\(LogoPixmap\)=.*|\1=${PREFIX}/${ICONDIR}/Daemon.png|' \
 		kdmrc > ${WRKDIR}/kdmrc.ad;				\
 	${CP} -f ${WRKDIR}/kdmrc.ad kdmrc
+.  if ${OS_VERSION:M1.5.[12]*} || ${OS_VERSION:M1.[0-4]*}
+	cd ${PREFIX}/bin;						\
+	${SED}								\
+		-e '1{x;s/^/kded/;x;}'					\
+		-e '/LD_BIND_NOW=true/{ s:kdeinit:& --no-kded:;G; }'	\
+		startkde > ${WRKDIR}/startkde.fix;			\
+	${CP} -f ${WRKDIR}/startkde.fix startkde
+.  endif
 .endif
 
 .include "../../databases/openldap/buildlink.mk"
