@@ -11,6 +11,15 @@ $NetBSD$
  #endif
  
             CBRT =
+@@ -99,7 +99,7 @@ RCMANDIR = $(MANDIR)
+ #endif
+ 
+ 
+-#if defined(i386SVR4Architecture) || defined(__FreeBSD__) || defined(FreeBSDArchitecture) || defined(LinuxArchitecture) || defined(i386BsdArchitecture) || defined(USLArchitecture) || defined(cygwinArchitecture)
++#if defined(i386SVR4Architecture) || defined(NetBSDArchitecture) || defined(__FreeBSD__) || defined(FreeBSDArchitecture) || defined(LinuxArchitecture) || defined(i386BsdArchitecture) || defined(USLArchitecture) || defined(cygwinArchitecture)
+ # define CanBuildAuServer	YES
+ 
+ # if defined(LinuxArchitecture)
 @@ -224,6 +224,7 @@ clean::
  	$(RM) $(ALL)
  
