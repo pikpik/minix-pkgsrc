@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/zope/import/KnowledgeKit-1.6.7.zexp
+lib/zope/import/KnowledgeKit_Example.zexp
