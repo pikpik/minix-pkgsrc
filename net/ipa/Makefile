@@ -1,9 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2002/06/30 03:47:53 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/09/19 08:46:09 jlam Exp $
 
-DISTNAME=	ipa-1.2.7
+DISTNAME=	ipa-1.2.8
 CATEGORIES=	net sysutils
 MASTER_SITES=	http://www.simon.org.ua/ipa/ \
-		http://www.mirrors.wiretapped.net/security/network-monitoring/ipa/
+		http://www.mirrors.wiretapped.net/security/network-monitoring/ipa/ \
+		ftp://ftp.mirrors.wiretapped.net/pub/security/network-monitoring/ipa/ \
+		http://www.outloud.org/ipa/ \
+		http://ipa.it-ss.be/
 
 MAINTAINER=	simon@simon.org.ua
 HOMEPAGE=	http://www.simon.org.ua/ipa/
