@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/05/31 22:22:08 tron Exp $
+# $NetBSD: Makefile,v 1.16 1999/06/02 20:09:02 christos Exp $
 #
 
 DISTNAME=	mtools-3.9.5
@@ -27,7 +27,7 @@ post-patch:
 	@${RM} ${WRKSRC}/mtools
 
 post-install:
-	@if [ -e ${PREFIX}/bin/floppyd ]; then \
+	@if [ -x ${PREFIX}/bin/floppyd ]; then \
 	  ${CP} ${PKGDIR}/PLIST ${PLIST_SRC}; \
 	else \
 	  ${ECHO} ${RM} -f ${PREFIX}/man/man1/floppyd.1; \
