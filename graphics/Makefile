@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.333 2004/09/17 20:45:49 hubertf Exp $
+# $NetBSD: Makefile,v 1.334 2004/09/26 00:15:41 seb Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -133,6 +133,7 @@ SUBDIR+=	jpeg2ps
 SUBDIR+=	jpeg_ls
 SUBDIR+=	jpeginfo
 SUBDIR+=	jpegoptim
+SUBDIR+=	kbarcode
 SUBDIR+=	kdegraphics2
 SUBDIR+=	kdegraphics3
 SUBDIR+=	kphotobook
