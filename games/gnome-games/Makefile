@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2001/09/09 23:47:25 mycroft Exp $
+# $NetBSD: Makefile,v 1.30 2001/09/27 23:18:06 jlam Exp $
 
-DISTNAME=		gnome-games-1.4.0.2
+DISTNAME=		gnome-games-1.4.0.3
 CATEGORIES=		games gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-games/}
+EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
@@ -10,7 +11,6 @@ COMMENT=		GNOME games collection
 
 BUILD_DEPENDS+=		autoconf>=2.13:../../devel/autoconf
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
-DEPENDS+=		gnome-core>1.4.0:../../x11/gnome-core
 # Required for ports which don't build "libgtop".
 DEPENDS+=		guile-[0-9]*:../../lang/guile
 BUILD_USES_MSGFMT=	YES
@@ -57,4 +57,5 @@ LOCALEDIR=		share
 CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
 .endif
 
+.include "../../x11/gnome-core/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
