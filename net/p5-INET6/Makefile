@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2004/05/08 07:37:40 snj Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/20 11:31:06 grant Exp $
 #
 
-DISTNAME=	INET6-2.00
+DISTNAME=	INET6-2.01
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IO/}
 
-MAINTAINER=	adrianp@stindustries.net
+MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~mondejar/INET6/
 COMMENT=	Object interface for AF_INET|AF_INET6 domain sockets
 
