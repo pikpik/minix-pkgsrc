@@ -1,16 +1,12 @@
 $NetBSD$
 
---- info/customize~	Mon Sep 15 03:56:06 1997
-+++ info/customize	Fri Aug 28 22:11:30 1998
-@@ -1,6 +1,11 @@
- This is Info file ../info/customize, produced by Makeinfo version 1.68
- from the input file customize.texi.
+--- src/config.in.orig	Mon Apr 26 14:19:44 1999
++++ src/config.in	Fri Dec 17 14:32:45 1999
+@@ -234,6 +234,7 @@
+ #undef HAVE_GETCWD
+ #undef HAVE_SHUTDOWN
+ #undef HAVE_STRFTIME
++#undef HAVE_GETADDRINFO
  
-+INFO-DIR-SECTION Editors
-+START-INFO-DIR-ENTRY
-+* Customize: (customize).	The GNU Emacs customization tool.
-+END-INFO-DIR-ENTRY
-+
- Distribution
- ************
- 
+ #undef LOCALTIME_CACHE
+ #undef HAVE_INET_SOCKETS
