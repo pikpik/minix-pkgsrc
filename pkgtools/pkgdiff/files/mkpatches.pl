@@ -1,6 +1,6 @@
 #!@PREFIX@/bin/perl
 #
-# $NetBSD: mkpatches.pl,v 1.1.1.1 2000/06/28 01:42:42 wiz Exp $
+# $NetBSD: mkpatches.pl,v 1.2 2000/07/01 02:38:56 wiz Exp $
 #
 # mkpatches: creates a set of patches patch-aa, patch-ab, ...
 #   in work/.newpatches by looking for *.orig files in and below
@@ -77,7 +77,7 @@ open(handle, "find . -type f -name \\\*.orig |");
 
 # create patches
 
-while(<handle>) {
+foreach (sort <handle>) {
     my $path, $complete;
     chomp();
     $path = $_;
