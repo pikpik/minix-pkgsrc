@@ -1,9 +1,9 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.4 2001/02/06 14:24:04 wiz Exp $
+$NetBSD: MESSAGE,v 1.1 2001/11/01 00:16:43 zuntum Exp $
 
 If you want other skins, you can download them from
 
-	http://www.netpedia.net/hosting/gqview/mpeg-skin.html
+	http://gqmpeg.sourceforge.net/mpeg-skin-index.html
 
 Unpack them into the directory $HOME/.gqmpeg/skins, then type
 
