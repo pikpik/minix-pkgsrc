@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- torture.c.orig	Mon Dec 12 20:01:07 1994
++++ torture.c
+@@ -32,7 +32,7 @@
+ 
+ #include	<stdio.h>
+-#include	"matrix2.h"
++#include	<meschach/matrix2.h>
+ #include	<math.h>
+-#include        "matlab.h"
++#include        <meschach/matlab.h>
+ 
+ #define	errmesg(mesg)	printf("Error: %s error: line %d\n",mesg,__LINE__)
