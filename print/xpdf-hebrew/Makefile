@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/08 10:08:59 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/25 14:06:55 salo Exp $
 #
 
 DISTNAME=	xpdf-hebrew
@@ -12,7 +12,6 @@ COMMENT=	xpdf support files for Hebrew
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_X11=	yes
 USE_PKGINSTALL=	yes
 
 DIST_SUBDIR=	${PKGNAME_NOREV}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/11/08 10:15:27 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/25 14:07:00 salo Exp $
 #
 
 DISTNAME=	xpdf-latin2
@@ -13,7 +13,6 @@ COMMENT=	xpdf support files for Latin-2
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_X11=	yes
 USE_PKGINSTALL=	yes
 
 DIST_SUBDIR=	${PKGNAME_NOREV}

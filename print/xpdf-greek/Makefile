@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/19 19:21:39 kei Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/25 14:06:54 salo Exp $
 #
 
 DISTNAME=	xpdf-greek
@@ -12,7 +12,6 @@ COMMENT=	xpdf support files for Greek
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_X11=	yes
 USE_PKGINSTALL=	yes
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
