@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.840 2001/10/31 18:05:48 zuntum Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.841 2001/11/01 20:37:17 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -536,6 +536,9 @@ PLIST_SUBST+=	OPSYS=${OPSYS}						\
 		PKGLOCALEDIR=${PKGLOCALEDIR}				\
 		PKGVERSION=${PKGVERSION:C/nb[0-9]*$//}			\
 		SVR4_PKGNAME=${SVR4_PKGNAME}				\
+		CHGRP=${CHGRP:Q}					\
+		CHMOD=${CHMOD:Q}					\
+		CHOWN=${CHOWN:Q}					\
 		MKDIR=${MKDIR:Q}					\
 		RMDIR=${RMDIR:Q}					\
 		TRUE=${TRUE:Q}
