@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1147 2003/02/25 15:23:55 tron Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1148 2003/02/28 03:41:39 jschauma Exp $
 #
 # This file is in the public domain.
 #
@@ -284,7 +284,7 @@ LDFLAGS+=		${X11_LDFLAGS}
 .if ${_USE_RPATH} == "yes"
 LDFLAGS+=		-Wl,${_OPSYS_RPATH_NAME}${LOCALBASE}/lib
 .else
-.  if empty(USE_BUILDLINK2:M[nN][oO])
+.  if !empty(USE_BUILDLINK2:M[nN][oO])
 LDFLAGS:=		${LDFLAGS:N*-Wl,-R*:N*-rpath*}
 .  endif
 .endif
