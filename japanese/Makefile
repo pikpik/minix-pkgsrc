@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.9 1999/06/09 02:34:32 sakamoto Exp $
+# $NetBSD: Makefile,v 1.10 1999/06/09 10:54:32 sakamoto Exp $
 #
 
     SUBDIR += a2ps
     SUBDIR += ack
+    SUBDIR += canna-lib
+    SUBDIR += canna-server
     SUBDIR += chasen
     SUBDIR += gawk
     SUBDIR += grep
@@ -11,6 +13,7 @@
     SUBDIR += kakasi
     SUBDIR += less
     SUBDIR += man
+    SUBDIR += mh
     SUBDIR += micq
     SUBDIR += namazu
     SUBDIR += nkf
