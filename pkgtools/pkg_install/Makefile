@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/03/30 12:52:36 hubertf Exp $
+# $NetBSD: Makefile,v 1.16 1999/04/16 10:50:12 rh Exp $
 #
 
 # Note to package maintainers:
@@ -6,8 +6,8 @@
 # "tar pzvcf pkg_install-YYYYMMDD.tar.gz pkg_install" and upload
 # that file to ${MASTER_SITE_LOCAL}.
 # Also, check PKGTOOLS_REQD value in pkgsrc/mk/bsd.pkg.mk
-# (Use "make print-pkgtools_ver" to find the correct value for
-#  YYYYMMDD)
+# (Use "make show-pkgtools-version" to find the correct value
+#  for YYYYMMDD)
 
 DISTNAME=		pkg_install-19990119
 CATEGORIES=		pkgtools
