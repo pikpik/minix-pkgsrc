@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:25 agc Exp $
+# $NetBSD: Makefile,v 1.1 1998/04/28 15:00:51 bouyer Exp $
 #
 
 DISTNAME=       fly-1.6.0
-CATEGORIES=	www
+CATEGORIES=	graphics www
 MASTER_SITES=   ftp://www.unimelb.edu.au/pub/www/tools/unix/fly/
 
 MAINTAINER=	bouyer@netbsd.org
