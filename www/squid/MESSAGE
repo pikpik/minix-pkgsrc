@@ -1,0 +1,10 @@
+=============================================================================
+$NetBSD$
+
+You DO need running nameservice to start and run ${PKGNAME}.
+
+Use the ${PKGNAME} proxy and caching WWW Server by
+configuring your WWW Navigator (Netscape, Mosaic, ...)
+to use it as a proxy server.
+
+=============================================================================
