@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2003/02/13 06:35:45 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2003/03/08 08:16:58 grant Exp $
 
 DISTNAME=	cdrtools-2.0
 PKGNAME=	cdrecord-2.0
@@ -28,6 +28,12 @@ MAKE_ENV+=      ARCH=""
 MAKE_ENV+=      MAKEPROG="gmake"
 MAKE_ENV+=	COPTX="${CFLAGS}"
 MAKE_ENV+=	LDOPTX="${LDFLAGS}"
+
+# if we're using a gcc which is named gcc, we need to set CCOM=gcc
+# in MAKE_ENV so the make infrastructure picks the right options.
+.if !empty(CC:M*gcc*)
+MAKE_ENV+=	CCOM="gcc"
+.endif
 
 # allow us to override the default /etc/default/cdrecord by patching
 # the documentation appropriately. Additionally, we also provide a
