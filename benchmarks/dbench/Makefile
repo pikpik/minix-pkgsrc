@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2004/07/30 15:50:37 minskim Exp $
-#
+# $NetBSD: Makefile,v 1.6 2004/10/28 16:43:14 wiz Exp $
 
-DISTNAME=	dbench-1.3
+DISTNAME=	dbench-2.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://samba.org/ftp/tridge/dbench/
 
@@ -10,8 +9,6 @@ HOMEPAGE=	http://samba.org/ftp/tridge/dbench/README
 COMMENT=	Simulation of the Ziff-Davis netbench benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
-WRKSRC=		${WRKDIR}/dbench
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -26,6 +23,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tbench ${PREFIX}/bin/tbench
 	${INSTALL_PROGRAM} ${WRKSRC}/tbench_srv ${PREFIX}/bin/tbench_srv
 	${INSTALL_DATA_DIR} ${PREFIX}/share/dbench
-	${INSTALL_DATA} ${WRKSRC}/client.txt ${PREFIX}/share/dbench/client.txt
+	${INSTALL_DATA} ${WRKSRC}/client_*.txt ${PREFIX}/share/dbench/
 
 .include "../../mk/bsd.pkg.mk"

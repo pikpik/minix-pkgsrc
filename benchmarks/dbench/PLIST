@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/07/17 15:11:44 agc Exp $
 bin/dbench
 bin/tbench
 bin/tbench_srv
-share/dbench/client.txt
+share/dbench/client_oplocks.txt
+share/dbench/client_plain.txt
 @dirrm share/dbench
