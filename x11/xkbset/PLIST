@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xkbset
+bin/mskacc-gui
+man/man1/xkbset.1
