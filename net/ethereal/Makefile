@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2000/07/11 14:53:43 agc Exp $
+# $NetBSD: Makefile,v 1.28 2000/07/14 16:04:24 agc Exp $
 #
 
 DISTNAME=		ethereal-0.8.10
@@ -13,6 +13,8 @@ BUILD_DEPENDS+=		${LOCALBASE}/bin/perl:../../lang/perl5
 
 USE_X11=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-gtk-prefix="`${SHOW_PREFIX1} gtk+ ${SHOW_PREFIX2}`"
+
+EVAL_PREFIX+=		GTKDIR=gtk+
+CONFIGURE_ARGS+=	--with-gtk-prefix="${GTKDIR}"
 
 .include "../../mk/bsd.pkg.mk"

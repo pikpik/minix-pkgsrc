@@ -14,8 +14,9 @@ DEPENDS+=	gtar-1.12:../../archivers/gtar
 DEPENDS+=	readline-4.0:../../devel/readline
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
+EVAL_PREFIX+=	GTKDIR=gtk+
 CONFIGURE_ARGS+=	--with-guile-prefix=${LOCALBASE}	\
-			--with-gtk-prefix="`${SHOW_PREFIX1} gtk+ ${SHOW_PREFIX2}`" \
+			--with-gtk-prefix="${GTKDIR}"		\
 			--enable-multibyte
 
 USE_X11BASE=	yes
