@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- setup.py.orig	Tue Jan 15 17:42:07 2002
++++ setup.py	Tue Jan 15 17:42:30 2002
+@@ -784,7 +784,7 @@
+           ext_modules=[Extension('struct', ['structmodule.c'])],
+ 
+           # Scripts to install
+-          scripts = ['Tools/scripts/pydoc']
++          scripts = ['Tools/scripts/pydoc2.2']
+         )
+ 
+ # --install-platlib
