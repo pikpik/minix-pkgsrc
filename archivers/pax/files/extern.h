@@ -1,4 +1,4 @@
-/*	$NetBSD: extern.h,v 1.3 2003/09/05 18:40:51 jlam Exp $	*/
+/*	$NetBSD: extern.h,v 1.4 2003/12/20 04:45:04 grant Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -151,6 +151,7 @@ int bcpio_wr(ARCHD *);
  * file_subs.c
  */
 extern char *gnu_name_string, *gnu_link_string;
+extern char *xtmp_name;
 int file_creat(ARCHD *);
 void file_close(ARCHD *, int);
 int lnk_creat(ARCHD *);
@@ -202,6 +203,7 @@ int getoldopt(int, char **, const char *, struct option *, int *);
  */
 extern FSUB fsub[];
 extern int ford[];
+extern int sep;
 void options(int, char **);
 OPLIST * opt_next(void);
 int opt_add(const char *);
@@ -258,7 +260,7 @@ extern int docrc;
 extern int to_stdout;
 extern char *dirptr;
 extern char *ltmfrmt;
-extern char *argv0;
+extern const char *argv0;
 extern FILE *listf;
 extern char *tempfile;
 extern char *tempbase;
