@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/09/25 20:20:14 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2002/10/15 02:23:18 jschauma Exp $
 #
 
 DISTNAME=		jini-${SUN_VERSION}-src
@@ -58,5 +58,5 @@ do-install:
 cleandir: clean
 	${RM} -fr ${JINI_HOME}
 
-.include "../../mk/java.mk"
+.include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"

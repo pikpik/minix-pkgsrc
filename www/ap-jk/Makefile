@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/10/10 01:01:11 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/18 21:54:08 jlam Exp $
 
 DISTNAME=	jakarta-tomcat-3.2.4-src
 PKGNAME=	ap-jk-3.2.4
@@ -25,5 +25,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/mod_jk.so ${PREFIX}/lib/httpd
 
 .include "../../www/apache/buildlink2.mk"
-.include "../../mk/java.mk"
+.include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2002/10/18 21:24:55 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2002/12/18 22:14:29 schmonz Exp $
 
 DISTNAME=	configurator_152-128
 PKGNAME=	${BINNAME}-1.5.2
@@ -48,5 +48,5 @@ do-install:
 	${INSTALL_DATA} ReadMe.txt ${DOCDIR}/README && \
 	${INSTALL_DATA} mainscreen.jpg manual.html ${DOCDIR}
 
-.include "../../mk/java.mk"
+.include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"
