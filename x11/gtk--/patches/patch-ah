@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gtk--/Makefile.in.orig	Sat May 20 14:51:35 2000
-+++ src/gtk--/Makefile.in	Sat Jul 15 04:28:44 2000
-@@ -133,7 +133,7 @@
+--- src/gtk--/Makefile.in.orig	Tue Apr  9 14:34:18 2002
++++ src/gtk--/Makefile.in	Tue May 28 14:00:01 2002
+@@ -142,7 +142,7 @@
  
  # This builds the library
  libgtkmm_la_SOURCES = $(gtkmmc) gtk--.cc proxy.cc base.cc marshal.cc
