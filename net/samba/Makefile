@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.36 2000/09/03 09:17:00 kei Exp $
+# $NetBSD: Makefile,v 1.37 2000/09/03 12:53:51 wiz Exp $
 
-DISTNAME=		samba-2.0.7-ja-1.2a
-PKGNAME=		samba-2.0.7.1.2a
+DISTNAME=		samba-2.0.7-ja-1.3
+PKGNAME=		samba-2.0.7.1.3
 WRKSRC=			${WRKDIR}/${DISTNAME}/source
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.samba.gr.jp/pub/samba-jp/samba-2.0.7-ja/
-EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.samba.org/
