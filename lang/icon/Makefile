@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/06/25 18:29:21 jtb Exp $
+# $NetBSD: Makefile,v 1.20 2001/07/06 13:11:04 jtb Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/02/12 08:39:15 tg Exp
 #
 
@@ -42,7 +42,7 @@ do-configure:
 	cd ${WRKSRC}; ${MAKE} ${CONFIGURE_TARGET} name=netbsd
 
 do-install:
-	cd ${WRKSRC}; ${MAKE} dest=${PREFIX} Install
+	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} dest=${PREFIX} Install
 
 .include "../../mk/bsd.pkg.mk"
 
