@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/10/27 03:22:52 reinoud Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:21:02 agc Exp $
 #
 
 DISTNAME=		UDFclient.0.1p2
@@ -9,7 +9,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		buzztoh@13thmonkey.org
 HOMEPAGE=		http://www.13thmonkey.org/udfclient/
-COMMENT=		UDF disc reader for CD-ROM's, CD-RW's and DVD's
+COMMENT=		UDF disc reader for CD-ROMs, CD-RWs and DVDs
 
 WRKSRC=			${WRKDIR}/UDFclient
 MAKEFILE=		makefile
