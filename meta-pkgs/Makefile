@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/23 14:05:38 martti Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/24 08:53:08 xtraeme Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -7,7 +7,7 @@ SUBDIR+=	XFree86
 SUBDIR+=	edesktop
 SUBDIR+=	fxtv-capture
 SUBDIR+=	gnome
-SUBDIR+=	gnome2
+SUBDIR+=	gnome1
 SUBDIR+=	gnustep
 SUBDIR+=	kde3
 SUBDIR+=	netbsd-doc
