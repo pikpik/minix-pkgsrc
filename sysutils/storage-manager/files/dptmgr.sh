@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+DPTMGR_HOME=@PREFIX@/lib/dpt
+LD_LIBRARY_PATH=$DPTMGR_HOME:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH
+exec ${DPTMGR_HOME}/dptmgr "$@"
