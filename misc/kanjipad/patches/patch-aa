@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- Makefile.orig	Wed Mar 31 09:36:32 1999
++++ Makefile
+@@ -1,10 +1,10 @@
+ OPTIMIZE=-g -Wall
+ #OPTIMIZE=-O2 
+ 
+-GTKLIBS=`gtk-config --libs`
+-GTKINC=`gtk-config --cflags`
++GTKLIBS=`${GTK_CONFIG} --libs`
++GTKINC=`${GTK_CONFIG} --cflags`
+ 
+-PREFIX=/usr/local
++#PREFIX=/usr/local
+ DATADIR=$(PREFIX)/share
+ 
+ # location in which binaries are installed
