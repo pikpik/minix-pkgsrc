@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/09/24 01:00:03 fredb Exp $
+# $NetBSD: Makefile,v 1.4 1999/10/28 14:29:20 agc Exp $
 #
 
 DISTNAME=	t1lib-0.9.2
@@ -24,6 +24,7 @@ post-install:
 	${MKDIR} ${PREFIX}/share/t1lib
 	cd ${WRKSRC}; \
 	  ${PAX} -r -w Fonts ${PREFIX}/share/t1lib; \
+	  ${CHMOD} go+r ${PREFIX}/share/t1lib/Fonts/enc/IsoLatin2.enc; \
 	  ${PAX} -r -w -s "/doc/t1lib/" doc ${PREFIX}/share/doc
 	${MKDIR} ${PREFIX}/share/examples/t1lib
 	cd ${WRKSRC}/examples; \
