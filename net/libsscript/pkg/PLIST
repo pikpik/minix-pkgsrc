@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/libsscript/sscript.h
+lib/libsscript.a
+lib/libsscript.so.2.0
+share/doc/libsscript/sscript-lib.doc
+@dirrm share/doc/libsscript
+@dirrm include/libsscript
