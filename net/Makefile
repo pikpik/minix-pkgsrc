@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.245 2001/09/16 22:52:57 zuntum Exp $
+# $NetBSD: Makefile,v 1.246 2001/09/24 23:16:39 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -140,6 +140,7 @@ SUBDIR+=	py-xmlrpclib
 SUBDIR+=	ra-pna-proxy
 SUBDIR+=	ra-rtsp-proxy
 SUBDIR+=	radius
+SUBDIR+=	rdesktop
 SUBDIR+=	rdist6
 SUBDIR+=	ripe-whois-tools
 SUBDIR+=	rp-pppoe
