@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/10 04:13:02 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/09/03 13:54:21 wiz Exp $
 
-DISTNAME=		Xdialog-1.4.1
-PKGNAME=		xdialog-1.4.1
+DISTNAME=		Xdialog-1.4.6
+PKGNAME=		xdialog-1.4.6
 CATEGORIES=		misc x11
 MASTER_SITES=		http://xdialog.free.fr/
 EXTRACT_SUFX=		.tar.bz2
