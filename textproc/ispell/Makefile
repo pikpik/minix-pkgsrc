@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/08/18 08:34:32 agc Exp $
+# $NetBSD: Makefile,v 1.21 1999/10/19 08:59:37 agc Exp $
 # FreeBSD Id: Makefile,v 1.21 1997/08/13 23:29:52 jmz Exp
 #
 
@@ -57,8 +57,5 @@ british:
 french:
 	@${ECHO} "Okay, making a french/english version of ispell...."
 	@${MAKE} ${.MAKEFLAGS} ISPELL_FR=yes
-
-pre-install:
-	@${MKDIR} ${PREFIX}/share/emacs/site-lisp
 
 .include "../../mk/bsd.pkg.mk"
