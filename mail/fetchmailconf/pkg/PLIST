@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/fetchmailconf
+@unexec rm %D/man/man1/fetchmailconf.1
+@exec ln %D/man/man1/fetchmail.1  %D/man/man1/fetchmailconf.1
