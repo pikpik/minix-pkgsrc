@@ -1,5 +1,0 @@
-@comment $NetBSD$
-man/man5/bootptab.5
-man/man5/dhcpd.conf.5
-man/man8/dhcpd.8
-sbin/cmu-dhcpd
