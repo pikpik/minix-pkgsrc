@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/04/06 19:23:35 dillo Exp $
+# $NetBSD: Makefile,v 1.21 2004/04/25 02:53:46 snj Exp $
 #
 
 DISTNAME=	pilrc-2.9p9
@@ -51,7 +51,8 @@ pre-patch:
 	cd ${WRKSRC} && ${TR} -d '\015' < ${DISTDIR}/${DIFFS} \
 		| ${PATCH} --quiet -p1
 post-install:
-	${INSTALL_DATA_DIR} ${DOCDIR} ${DOCDIR}/images
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA_DIR} ${DOCDIR}/images
 	cd ${WRKSRC}/doc &&						\
 		${INSTALL_DATA} archive.html download.html index.html	\
 		contrib.html history.html manual.html ${DOCDIR}
