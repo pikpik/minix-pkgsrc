@@ -1,11 +1,15 @@
-# $NetBSD: Makefile,v 1.17 2001/02/17 09:07:02 agc Exp $
+# $NetBSD: Makefile,v 1.18 2001/03/23 13:53:37 agc Exp $
 
 DISTNAME=		clisp-2000-03-06
-PKGNAME=		clisp-20000306
+PKGNAME=		clisp-20000306nb1
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp2.cons.org/pub/lisp/clisp/source/ \
 			ftp://ftp.tu-darmstadt.de/pub/programming/languages/lisp/clisp/source/
 EXTRACT_SUFX=		.tar.bz2
+
+PATCHFILES=		clisp-2000-03-06-bugfix1.diff
+PATCH_SITES=		${MASTER_SITES}
+PATCH_DIST_STRIP=	-p2
 
 MAINTAINER=		mjl@netbsd.org
 HOMEPAGE=		http://clisp.cons.org/
