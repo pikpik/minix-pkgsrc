@@ -99,6 +99,9 @@ lib/aap/Exec-${PKGVERSION}/__init__.py
 lib/aap/Exec-${PKGVERSION}/__init__.pyc
 lib/aap/Exec-${PKGVERSION}/__init__.pyo
 lib/aap/Exec-${PKGVERSION}/aap
+lib/aap/Exec-${PKGVERSION}/aap.py
+lib/aap/Exec-${PKGVERSION}/aap.pyc
+lib/aap/Exec-${PKGVERSION}/aap.pyo
 lib/aap/Exec-${PKGVERSION}/aapnetrc.py
 lib/aap/Exec-${PKGVERSION}/aapnetrc.pyc
 lib/aap/Exec-${PKGVERSION}/aapnetrc.pyo
