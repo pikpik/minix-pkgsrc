@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/03/10 18:07:16 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2004/03/26 02:27:43 wiz Exp $
 
 DISTNAME=	courier-imap-2.2.1
 PKGREVISON=	1
@@ -11,7 +11,6 @@ DEPENDS+=	courier-maildirmake>=${BASE_VERS}:../../mail/courier-maildirmake
 
 USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
-USE_DB185=		yes
 USE_PERL5=		yes
 REPLACE_PERL=		sysconftool
 
