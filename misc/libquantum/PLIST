@@ -1,0 +1,5 @@
+@comment $NetBSD: $
+lib/libquantum.la
+include/quantum.h
+bin/quobprint
+bin/quobdump
