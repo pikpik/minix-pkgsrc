@@ -1,4 +1,4 @@
-# $NetBSD: compiler.mk,v 1.29 2004/05/08 15:09:31 grant Exp $
+# $NetBSD: compiler.mk,v 1.30 2004/05/08 16:36:55 grant Exp $
 #
 # This Makefile fragment implements handling for supported C/C++/Fortran
 # compilers.
@@ -101,7 +101,7 @@ PKGSRC_COMPILER?=	mipspro
 PKGSRC_COMPILER?=	gcc
 .endif
 
-_COMPILERS=		gcc mipspro sunpro
+_COMPILERS=		gcc mipspro mipspro-ucode sunpro
 _PSEUDO_COMPILERS=	ccache distcc
 
 .if defined(NOT_FOR_COMPILER) && !empty(NOT_FOR_COMPILER)
