@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/12/04 06:15:00 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/03/13 17:37:44 fredb Exp $
 
 DISTNAME=	koncd-0.7.1
 PKGREVISION=	1
@@ -12,10 +12,10 @@ COMMENT=	Frontend to the fabulous cdrecord and mkisofs programs
 BUILD_DEPENDS+=	qt2-designer-kde>=2.3.1nb2:../../x11/qt2-designer-kde
 DEPENDS+=	cdrecord>=1.9:../../sysutils/cdrecord
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 
-.include "../../x11/kde2/buildlink.mk"
-.include "../../x11/kdebase2/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
+.include "../../x11/kde2/buildlink2.mk"
+.include "../../x11/kdebase2/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.mk"
