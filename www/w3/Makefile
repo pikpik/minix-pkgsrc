@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/01 06:18:15 jtb Exp $
 
 DISTNAME=		w3-4.0pre.46
+PKGNAME=		w3-4.0b46
 CATEGORIES=		www
 MASTER_SITES=		ftp://ftp.xemacs.org/pub/xemacs/emacs-w3/
 
