@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/06/02 01:20:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/06/29 22:24:32 jtb Exp $
 
 DISTNAME=	ftnchek-3.2.2
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SUNSITE:=devel/lang/fortran/}
+MASTER_SITES=	http://www.dsm.fordham.edu/~ftnchek/download/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@netbsd.org
