@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/01/06 21:24:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 18:09:24 wiz Exp $
 #
 
 .include "../../mk/bsd.prefs.mk"
@@ -19,6 +19,8 @@ DISTNAME=	${PKGNAME}.powerpc-unknown-netbsd1.4
 .elif (${MACHINE_ARCH} == "sparc")
 DISTNAME=	${PKGNAME}.sparc-unknown-netbsd1.4
 #
+.else
+DISTNAME=	${PKGNAME}
 .endif
 #
 PKGNAME=	setiathome-3.03
