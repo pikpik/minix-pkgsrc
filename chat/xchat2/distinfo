@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.1.1.1 2003/02/16 16:00:24 jmmv Exp $
+$NetBSD: distinfo,v 1.2 2003/03/22 01:34:00 wiz Exp $
 
-SHA1 (xchat-2.0.1.tar.bz2) = 68b7c4ebae8b36fabcbf21f0548a9665428afc90
-Size (xchat-2.0.1.tar.bz2) = 718064 bytes
+SHA1 (xchat-2.0.2.tar.bz2) = de599e19c084faa12b170b1ae0c272d07592d194
+Size (xchat-2.0.2.tar.bz2) = 749398 bytes
