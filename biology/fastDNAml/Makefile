@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/16 13:41:29 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/20 12:08:40 agc Exp $
 
 DISTNAME=	fastDNAml_1.2.1
 PKGNAME=	fastDNAml-1.2.1
@@ -14,11 +14,16 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
+ALL_TARGET=	fastDNAml
 
-do-build :
-	@ cd ${WRKSRC}/source && ${MAKE} LDFLAGS=-lm fastDNAml
+MAKE_FLAGS+=	CC="${CC}"
+MAKE_FLAGS+=	LDFLAGS=-lm
 
-do-install :
+do-build:
+	@cd ${WRKSRC}/source && \
+		${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${ALL_TARGET}
+
+do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/source/fastDNAml ${PREFIX}/bin
 .for SCRIPT in ae2dnaml bootstrap categories categories_file		\
 		checkpoint_summary clean_checkpoints clean_jumbles	\
