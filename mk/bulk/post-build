@@ -1,5 +1,5 @@
 #!/usr/pkg/bin/perl
-# $NetBSD: post-build,v 1.45 2004/07/15 11:57:26 grant Exp $
+# $NetBSD: post-build,v 1.46 2004/11/16 18:34:12 jlam Exp $
 #
 # Collect stuff after a pkg bulk build
 #
@@ -132,7 +132,7 @@ writeReport();
 	{
 		local $/;
 		undef $/;
-		$perlfiles = `pkg_info -qL perl`;
+		$perlfiles = `pkg_info -qL perl*`;
 	}
 	($perlfiles_pattern = $perlfiles) =~ s/\n/|/g;
 	$perlfiles_pattern =~ s/|$//;
