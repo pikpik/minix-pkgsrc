@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2001/06/23 21:02:22 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.3 2001/06/26 17:45:27 jlam Exp $
 #
 # This Makefile fragment is included by packages that use qt2-libs.
 #
@@ -37,6 +37,7 @@ CONFIGURE_ENV+=			QTDIR="${BUILDLINK_QTDIR}"
 CONFIGURE_ENV+=			MOC="${BUILDLINK_QTDIR}/bin/moc"
 MAKE_ENV+=			QTDIR="${BUILDLINK_QTDIR}"
 MAKE_ENV+=			MOC="${BUILDLINK_QTDIR}/bin/moc"
+LDFLAGS+=			-Wl,-R${QTDIR}/lib
 
 BUILDLINK_TARGETS.qt2-libs=	qt2-libs-buildlink
 BUILDLINK_TARGETS+=		${BUILDLINK_TARGETS.qt2-libs}
