@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: apache.sh,v 1.4 2000/09/12 14:50:51 jlam Exp $
+# $NetBSD: apache.sh,v 1.5 2000/09/13 20:06:24 jlam Exp $
 #
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -26,6 +26,11 @@ start)
 		echo "Starting ${name}."
 		${command} ${apache_start}
 	fi
+	;;
+restart)
+	( $0 stop )
+	sleep 1
+	$0 start
 	;;
 *)
 	if [ -x ${command} ]; then
