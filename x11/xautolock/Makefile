@@ -1,9 +1,9 @@
-# Port makefile for:	oneko
+# Port makefile for:	xautolock
 # Version required:	1pl10
 # Date created:		20 Jul 1996
 # Whom:			Eric Blood <eblood@cs.unr.edu>
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1997/12/29 04:25:29 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/11/18 09:55:42 asami Exp
 #
 
@@ -19,6 +19,6 @@ MAINTAINER=	eblood@cs.unr.edu
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xautolock.pl10
 
-MAN1=		xautolock.1
+CAT1=		xautolock.0
 
 .include <bsd.port.mk>
