@@ -7,7 +7,7 @@ DISTFILES=	${PIX} Daemon.README
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.netbsd.org/
-COMMENT=	The BSD Daemon sticking on your desktop (like xteddy)
+COMMENT=	BSD Daemon sticking on your desktop (like xteddy)
 
 DEPENDS+=	xteddy-1.*:../xteddy
 
