@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.3 2002/09/09 19:28:50 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2002/09/10 16:06:38 wiz Exp $
 
 .if !defined(BONOBO_ACTIVATION_BUILDLINK2_MK)
 BONOBO_ACTIVATION_BUILDLINK2_MK=	# defined
@@ -27,7 +27,6 @@ BUILDLINK_FILES.bonobo-activation+=	lib/bonobo/servers/broken.server
 BUILDLINK_FILES.bonobo-activation+=	lib/bonobo/servers/empty.server
 BUILDLINK_FILES.bonobo-activation+=	lib/bonobo/servers/plugin.server
 BUILDLINK_FILES.bonobo-activation+=	lib/libbonobo-activation.*
-BUILDLINK_FILES.bonobo-activation+=	lib/pkgconfig/bonobo-activation-2.0.pc
 BUILDLINK_FILES.bonobo-activation+=	share/idl/bonobo-activation-2.0/*
 
 .include "../../textproc/libxml2/buildlink2.mk"

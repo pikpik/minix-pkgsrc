@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2002/09/11 23:57:02 rh Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/09/15 05:35:27 rh Exp $
 
 .if !defined(LIBBONOBOUI_BUILDLINK2_MK)
 LIBBONOBOUI_BUILDLINK2_MK=	# defined
@@ -13,7 +13,6 @@ BUILDLINK_FILES.libbonoboui+=	include/libbonoboui-2.0/bonobo/*
 BUILDLINK_FILES.libbonoboui+=	include/libbonoboui-2.0/*
 BUILDLINK_FILES.libbonoboui+=	lib/libbonoboui-2.*
 BUILDLINK_FILES.libbonoboui+=	lib/libglade/2.0/libbonobo.*
-BUILDLINK_FILES.libbonoboui+=	lib/pkgconfig/libbonoboui-2.0.pc
 
 .include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../devel/GConf2/buildlink2.mk"

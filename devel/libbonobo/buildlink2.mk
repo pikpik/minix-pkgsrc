@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1 2002/09/07 00:38:38 rh Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/09/10 16:06:39 wiz Exp $
 
 .if !defined(LIBBONOBO_BUILDLINK2_MK)
 LIBBONOBO_BUILDLINK2_MK=	# defined
@@ -15,7 +15,6 @@ BUILDLINK_FILES.libbonobo+=	lib/bonobo/monikers/*
 BUILDLINK_FILES.libbonobo+=	lib/bonobo/servers/*
 BUILDLINK_FILES.libbonobo+=	lib/libbonobo-2.*
 BUILDLINK_FILES.libbonobo+=	lib/orbit-2.0/Bonobo_module.*
-BUILDLINK_FILES.libbonobo+=	lib/pkgconfig/libbonobo-2.0.pc
 BUILDLINK_FILES.libbonobo+=	share/idl/bonobo-2.0/*
 
 .include "../../devel/pkgconfig/buildlink2.mk"
