@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/12/14 17:20:33 wennmach Exp $
+# $NetBSD: Makefile,v 1.10 1999/12/14 20:03:42 tron Exp $
 
 DISTNAME=	kdevelop-1.0
 CATEGORIES=	devel kde
@@ -19,9 +19,8 @@ USE_X11BASE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-qt-dir=${PREFIX} \
-		--with-qt-includes=${PREFIX}/include/qt
+CONFIGURE_ARGS=	--with-qt-dir=${X11BASE}/qt1 
 CFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ENV=	KDEDIR=${PREFIX}
+CONFIGURE_ENV=	"KDEDIR=${PREFIX} QTDIR=${X11BASE}/qt1"
 
 .include "../../mk/bsd.pkg.mk"
