@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.55 2004/05/27 21:21:41 lukem Exp $
+# $NetBSD: Makefile,v 1.56 2004/05/30 02:19:16 snj Exp $
 
 DISTNAME=	cdrtools-2.00.3
 PKGNAME=	cdrecord-2.00.3
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/
 
