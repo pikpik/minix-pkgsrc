@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/06/28 22:05:27 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/29 04:54:54 jlam Exp $
 #
 
 DISTNAME=	dumpmpeg-0.6
 CATEGORIES=	graphics
-MASTER_SITES=	http://prdownloads.sourceforge.net/dumpmpeg/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dumpmpeg/}
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://sourceforge.net/projects/dumpmpeg

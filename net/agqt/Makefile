@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/29 01:12:58 hubertf Exp $
 #
 
 DISTNAME=	agqt-0.5
 CATEGORIES=	audio net
-MASTER_SITES=	http://prdownloads.sourceforge.net/agqt/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qgqt/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	hubertf@netbsd.org

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2001/06/20 03:31:22 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/10/24 07:05:37 cjs Exp $
 #
 
 DISTNAME=	bvi-1.3.0.src
 PKGNAME=	bvi-1.3.0
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	editors
-MASTER_SITES=	http://prdownloads.sourceforge.net/bvi/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bvi/}
 
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://bvi.sourceforge.net/

@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/21 21:26:51 seb Exp $
 #
 
 DISTNAME=	ircd-hybrid-6.2
 CATEGORIES=	chat
-MASTER_SITES=	http://prdownloads.sourceforge.net/ircd-hybrid/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ircd-hybrid/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	seb@pbox.org
