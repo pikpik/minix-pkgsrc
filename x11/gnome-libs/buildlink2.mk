@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:31 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/23 19:57:31 jlam Exp $
 
 .if !defined(GNOME_LIBS_BUILDLINK2_MK)
 GNOME_LIBS_BUILDLINK2_MK=	# defined
@@ -44,5 +44,10 @@ BUILDLINK_FILES.gnome-libs+=	share/idl/name-service.idl
 BUILDLINK_TARGETS+=		gnome-libs-buildlink
 
 gnome-libs-buildlink: _BUILDLINK_USE
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+.include "../../databases/db/buildlink2.mk"
+.endif
 
 .endif	# GNOME_LIBS_BUILDLINK2_MK
