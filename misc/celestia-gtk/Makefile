@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/10/03 00:12:58 tv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/10 16:40:56 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gtk-/}
 
-COMMENT=	GNOME frontend for free real-time 3D space simulator
+COMMENT=	GTK frontend for free real-time 3D space simulator
 
 DEPENDS=	celestia-${CELESTIA_VERS}*:../../misc/celestia
 
