@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/10 11:33:59 itojun Exp $
+$NetBSD$
 
-MD5 (libmcrypt-2.4.7.tar.gz) = ab5e6e4178252f0c78501462454199f9
+SHA1 (libmcrypt-2.4.7.tar.gz) = 83927b8c838e8a3d6d76e75c645f001f8396a10d
+Size (libmcrypt-2.4.7.tar.gz) = 296829 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/29 11:26:45 rh Exp $
+$NetBSD$
 
-MD5 (libbf-0.8.2b.tar.gz) = 04fd639841110df96ba06b19c654eaa4
+SHA1 (libbf-0.8.2b.tar.gz) = 46b4ae98937ee82dbeaeaf3e446dbabe755934d1
+Size (libbf-0.8.2b.tar.gz) = 40210 bytes
 SHA1 (patch-aa) = 406a6ba0d5a21d3c01816ac2b0a396c3c3085cdd

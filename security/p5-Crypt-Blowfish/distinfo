@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1 2001/01/18 18:25:19 explorer Exp $
+$NetBSD$
 
-MD5 (Crypt-Blowfish-2.06.tar.gz) = c95ccdf2ee05bba0e4a140428def03bd
+SHA1 (Crypt-Blowfish-2.06.tar.gz) = 4b970861ff5046e96ddffde99866f74e183d98b3
+Size (Crypt-Blowfish-2.06.tar.gz) = 16415 bytes

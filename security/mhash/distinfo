@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/10 11:34:22 itojun Exp $
+$NetBSD$
 
-MD5 (mhash-0.8.3.tar.gz) = 1cb607808273744b1affbcf8a75bf13b
+SHA1 (mhash-0.8.3.tar.gz) = 3a256d99e105db25906b1b95db275f1a650c27b8
+Size (mhash-0.8.3.tar.gz) = 218355 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/14 05:11:17 jun Exp $
+$NetBSD$
 
-MD5 (AiSSLtelnet-0.142.tar.gz) = 442d324bae2f27be594d8d20212a315e
+SHA1 (AiSSLtelnet-0.142.tar.gz) = dd6a55c03c1885f0c52bc51cc841f68a5e9c874b
+Size (AiSSLtelnet-0.142.tar.gz) = 650435 bytes

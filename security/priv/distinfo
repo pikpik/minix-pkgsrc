@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/07/14 10:53:26 agc Exp $
+$NetBSD$
 
-MD5 (priv-1.0-beta.tar.gz) = 4760081c78e0da77a223bfa7c52b5f64
+SHA1 (priv-1.0-beta.tar.gz) = 0df065a2d60408d600ec227bda4cea4145e540ee
+Size (priv-1.0-beta.tar.gz) = 33877 bytes

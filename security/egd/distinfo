@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/15 17:26:24 itojun Exp $
+$NetBSD$
 
-MD5 (egd-0.8.tar.gz) = 07776186d3105f565b606e59aa896c82
+SHA1 (egd-0.8.tar.gz) = 9316b05796f0447094132c8647e36e6ce97b6ad3
+Size (egd-0.8.tar.gz) = 34976 bytes

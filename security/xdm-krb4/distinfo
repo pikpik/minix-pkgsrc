@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.3 2000/10/12 13:49:45 wennmach Exp $
+$NetBSD$
 
-MD5 (xdm-krb4-3.3.6.2.tar.gz) = e655f9288b18e5ef434835f2001107bd
+SHA1 (xdm-krb4-3.3.6.2.tar.gz) = e2fe8a64a7e06d839cb734e08c0eef7bfa0fcccc
+Size (xdm-krb4-3.3.6.2.tar.gz) = 119224 bytes

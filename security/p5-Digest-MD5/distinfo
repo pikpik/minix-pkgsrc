@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/10/15 02:30:35 jlam Exp $
+$NetBSD$
 
-MD5 (Digest-MD5-2.12.tar.gz) = 91225a9ea3b708db6557d0559b509af5
+SHA1 (Digest-MD5-2.12.tar.gz) = 5384947e6c424a12792db0c48bd0e8f998e1e928
+Size (Digest-MD5-2.12.tar.gz) = 91384 bytes

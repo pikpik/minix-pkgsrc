@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/16 23:26:01 jun Exp $
+$NetBSD$
 
-MD5 (AiCA-0.71.1.tar.gz) = 6955391e62cbd904a24ad23f4a40aff2
+SHA1 (AiCA-0.71.1.tar.gz) = e38627414f9938975b710d008e9b376142ac1242
+Size (AiCA-0.71.1.tar.gz) = 488560 bytes

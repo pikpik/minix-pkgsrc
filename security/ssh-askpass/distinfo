@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/08/11 05:22:58 jlam Exp $
+$NetBSD$
 
-MD5 (x11-ssh-askpass-1.0.tar.gz) = 4485c03811899be7d905960f1ad5b877
+SHA1 (x11-ssh-askpass-1.0.tar.gz) = 7800ad1c2924f3ce897b781ff1b945ce049d49bf
+Size (x11-ssh-askpass-1.0.tar.gz) = 17105 bytes
 SHA1 (patch-aa) = 950c953e0f20f113d1b3998acebbd07990132968

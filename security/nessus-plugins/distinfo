@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.6 2001/03/10 18:53:40 frueauf Exp $
+$NetBSD$
 
-MD5 (nessus-plugins-1.0.7a.tar.gz) = bbf5962d1f81cc4ddba2b72af012fdd9
+SHA1 (nessus-plugins-1.0.7a.tar.gz) = 31cd9b44a034849d023a3da7719b242b85e369fa
+Size (nessus-plugins-1.0.7a.tar.gz) = 451995 bytes

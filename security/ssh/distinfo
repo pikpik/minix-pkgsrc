@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.13 1999/12/25 05:31:50 kim Exp $
+$NetBSD$
 
-MD5 (ssh-1.2.27.tar.gz) = c22bc000bee0f7d6f4845eab72a81395
+SHA1 (ssh-1.2.27.tar.gz) = 0e7d59c6a62b094bd51818599ae24f7de3462d14
+Size (ssh-1.2.27.tar.gz) = 1022546 bytes
 SHA1 (patch-aa) = 6cf6e5043e1cd230064b73620ce7c86bf5673649
 SHA1 (patch-ab) = 24f370975088dd33551df39ebc1e5cc204c5d7cb
 SHA1 (patch-ac) = ab483a57f0dac564c046f4ec534c247c8dbec136
