@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2003/05/22 07:25:09 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2003/05/28 16:12:22 tsarna Exp $
 #
 
 COMMENT=	Cross-platform development utilities
 
 #SUBDIR+=	COMMON	# not a real package
+SUBDIR+=	avr-binutils
 SUBDIR+=	bfd-crunchide
 SUBDIR+=	bfd-mdsetimage
 SUBDIR+=	binutils
