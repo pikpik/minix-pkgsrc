@@ -21,17 +21,17 @@ NO_WRKSUBDIR=	yes
 MANCOMPRESSED=	yes
 .endif
 
-PLIST_SRC=	${PKGDIR}/PLIST ${WRKSRC}/PLIST.man
+PLIST_SRC=	${WRKDIR}/PLIST
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/kermit
 	${INSTALL_DATA} ${FILESDIR}/dot.kermrc ${PREFIX}/share/examples/kermit
-	@${CP} /dev/null ${WRKDIR}/PLIST.man
-	@for i in ${MANINSTALL} x; do \
-	    case $$i in \
-	    catinstall) ${ECHO} man/cat1/kermit.0 >> ${WRKDIR}/PLIST.man;; \
-	    maninstall) ${ECHO} man/man1/kermit.1 >> ${WRKDIR}/PLIST.man;; \
-	    esac; \
+	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
+	@for OPT in ${MANINSTALL} x; do \
+	  case $$OPT in \
+	    catinstall) ${ECHO} man/cat1/kermit.0 >>${PLIST_SRC};; \
+	    maninstall) ${ECHO} man/man1/kermit.1 >>${PLIST_SRC};; \
+	  esac; \
 	done
 
 .include "../../mk/bsd.pkg.mk"
