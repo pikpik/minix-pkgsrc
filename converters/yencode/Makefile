@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/13 13:50:54 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:27:47 grant Exp $
 #
 
 DISTNAME=	yencode-0.45
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.yencode.org/
 COMMENT=	yenc format encoder and decoder
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 
-.include "../../devel/gettext-lib/buildlink2.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
