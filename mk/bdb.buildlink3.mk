@@ -1,4 +1,4 @@
-# $NetBSD: bdb.buildlink3.mk,v 1.3 2004/03/18 09:12:13 jlam Exp $
+# $NetBSD: bdb.buildlink3.mk,v 1.4 2004/03/26 18:48:52 jlam Exp $
 #
 # This Makefile fragment is meant to be included by packages that
 # require a Berkeley DB implementation.  db.buildlink3.mk will:
@@ -124,7 +124,7 @@ BDBBASE=	${BUILDLINK_PREFIX.db4}
 .  elif ${BDB_TYPE} == "db3"
 BDBBASE=	${BUILDLINK_PREFIX.db3}
 .    include "../../databases/db3/buildlink3.mk"
-.  elif ${BDB_TYPE} == "db"
+.  elif ${BDB_TYPE} == "db2"
 BDBBASE=	${BUILDLINK_PREFIX.db2}
 .    include "../../databases/db/buildlink3.mk"
 .  endif
