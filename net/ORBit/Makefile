@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2001/10/03 22:36:40 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2001/10/04 19:25:25 rh Exp $
 #
 
 DISTNAME=		ORBit-0.${ORBIT_MAJOR}.${ORBIT_MINOR}
@@ -34,6 +34,5 @@ INFO_FILES=		libIDL.info
 
 .include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/glib/buildlink.mk"
-.include "../../devel/pth/buildlink.mk"
 .include "../../security/tcp_wrappers/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
