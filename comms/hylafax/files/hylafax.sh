@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: hylafax.sh,v 1.1 2000/08/30 09:50:45 abs Exp $
+# $NetBSD: hylafax.sh,v 1.2 2000/09/20 05:14:11 jlam Exp $
 #
 # PROVIDE: hylafax
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@ command=${1:-start}
 
 case ${command} in
 start)
-	if [ -x @PREFIX@/libexec/hfaxd -a -f /var/spool/fax/etc/config ] ; then
+	if [ -x @PREFIX@/libexec/hfaxd -a -f /var/spool/hylafax/etc/config ] ; then
 	    echo -n 'Starting hfaxd'
 	    @PREFIX@/libexec/hfaxd -i 4559 -o 4557 -s 444 
 
