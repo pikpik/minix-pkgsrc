@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/25 13:28:41 jdolecek Exp $
 #
 
-DISTNAME=	php-4.0.1pl2
+DISTNAME=	php-4.0.3pl1
 PKGNAME=	ap-${DISTNAME}
 CATEGORIES=	www lang
 # Note the http address is written this way by purpose, so that bsd.pkg.mk DTRT
