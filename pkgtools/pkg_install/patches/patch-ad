@@ -1,7 +1,7 @@
 $NetBSD: $
 
---- lib/Makefile.orig	Sat Nov 23 17:40:45 2002
-+++ lib/Makefile	Sat Nov 23 17:42:52 2002
+--- lib/Makefile.orig	Sat Nov 23 17:59:40 2002
++++ lib/Makefile	Sat Nov 23 18:01:12 2002
 @@ -1,17 +1,41 @@
  # $NetBSD: Makefile,v 1.19 2002/09/18 13:31:55 lukem Exp $
  # Original from FreeBSD, no rcs id.
