@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.PL.orig	Sat Jan 19 14:58:08 2002
++++ Makefile.PL
+@@ -116,7 +116,7 @@
+     $script .= <<"INSTALL";
+ 
+ install_sax_driver :
+-\t\@\$(PERL) -MXML::SAX -e "XML::SAX->add_parser(q(XML::LibXML::SAX::Parser))->save_parsers()"
++#\t\@\$(PERL) -MXML::SAX -e "XML::SAX->add_parser(q(XML::LibXML::SAX::Parser))->save_parsers()"
+  
+ INSTALL
+  
