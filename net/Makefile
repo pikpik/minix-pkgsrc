@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2000/01/05 15:25:37 agc Exp $
+# $NetBSD: Makefile,v 1.103 2000/01/05 23:10:31 rh Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -114,7 +114,6 @@
     SUBDIR += socks4
     SUBDIR += socks5
     SUBDIR += speakfreely
-    SUBDIR += speakfreely-crypto
     SUBDIR += spegla
     SUBDIR += srsh
     SUBDIR += ssync
