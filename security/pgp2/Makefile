@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/01/20 12:25:34 agc Exp $
+# $NetBSD: Makefile,v 1.37 2004/08/27 06:29:10 jlam Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
 #
 
@@ -38,7 +38,7 @@ CFLAGS=
 FIX_RPATH+=	RSALIBS
 
 PGPLIB=		${PREFIX}/share/pgp
-CFLAGS+=	-DPGP_SYSTEM_DIR=\\\"${PGPLIB}/\\\"
+CFLAGS+=	-DPGP_SYSTEM_DIR="\"${PGPLIB}/\""
 
 .if (${MACHINE_ARCH} == "i386")
 OBJS_EXT=	_80386.o _zmatch.o
