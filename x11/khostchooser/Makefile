@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/08/23 23:14:34 tron Exp $
+# $NetBSD: Makefile,v 1.11 2000/09/03 13:48:21 wiz Exp $
 #
 
 DISTNAME=	khostchooser-0.3
@@ -23,6 +23,7 @@ EVAL_PREFIX+=	QT1DIR=qt1
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/kde \
 		--with-qt-dir=${QT1DIR}/qt1
 CFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-Wl,-R${QT1DIR}/qt1/lib
 CONFIGURE_ENV=	KDEDIR=${PREFIX} \
 		QTDIR=${QT1DIR}/qt1 \
 		MOC=${QT1DIR}/qt1/bin/moc \
