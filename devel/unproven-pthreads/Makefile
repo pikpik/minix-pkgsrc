@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/07/18 09:17:26 agc Exp $
+# $NetBSD: Makefile,v 1.31 2002/08/16 20:13:10 jdolecek Exp $
 #
 
 DISTNAME=		unproven-pthreads-0.17
@@ -29,6 +29,9 @@ post-extract:
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/pthreads
+
+do-install:
+	unset MAKEOBJDIRPREFIX; cd ${WRKSRC} && ${MAKE} install
 
 post-install:
 	@${RM} -f ${PREFIX}/pthreads/lib/libpthread_pic.a
