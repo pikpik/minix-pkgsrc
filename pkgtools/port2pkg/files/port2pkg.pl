@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# $NetBSD: port2pkg.pl,v 1.6 2000/12/15 14:58:44 wiz Exp $
+# $NetBSD: port2pkg.pl,v 1.7 2001/01/04 20:22:47 sommerfeld Exp $
 #
 
 require 'getopts.pl';
@@ -239,6 +239,14 @@ sub conv_Makefile {
 				}
 			}
 			close(DESCR);
+			open(COMMENT, "$pkgdir/pkg/COMMENT")
+				|| die "$pkgdir/pkg/COMMENT: $!\n";
+			while (<COMMENT>) {
+				chomp;
+				print PKG "COMMENT=\t$1\n";
+			}
+			close(COMMENT);
+			unlink("$pkgdir/pkg/COMMENT");
 		} elsif ($noportdocs || /^\.if.*NOPORTDOCS/) {
 			if (/^\.if/) {
 				$noportdocs++;
