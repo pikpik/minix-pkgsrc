@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 1999/02/27 17:14:55 kim Exp $
+# $NetBSD: Makefile,v 1.59 1999/03/07 16:42:42 rh Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -68,7 +68,7 @@
     SUBDIR += pfnet
     SUBDIR += pload
 #    SUBDIR += pmf
-#    SUBDIR += radius
+#    SUBDIR += radius		# Kerberos problems (ask kim)
 #    SUBDIR += ratoolset
     SUBDIR += rdist6
 #    SUBDIR += ripetools
