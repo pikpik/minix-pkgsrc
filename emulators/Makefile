@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2003/04/19 07:14:39 rh Exp $
+# $NetBSD: Makefile,v 1.81 2003/04/28 23:18:18 jdolecek Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -12,6 +12,7 @@ SUBDIR+=	compat13
 SUBDIR+=	compat14
 SUBDIR+=	compat14-crypto
 SUBDIR+=	darcnes
+SUBDIR+=	dosbox
 SUBDIR+=	doscmd
 SUBDIR+=	fmsx
 SUBDIR+=	freebsd_lib
