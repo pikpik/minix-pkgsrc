@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/01/03 09:07:28 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/17 22:51:38 grant Exp $
 #
 
 DISTNAME=	pload-0.9.4
@@ -10,7 +10,10 @@ MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.engr.utk.edu/~mdsmith/pload/
 COMMENT=	PPP monitor for X11, monitoring totals and current in/out rates
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 HAS_CONFIGURE=	YES
+USE_BUILDLINK3=	YES
 USE_X11BASE=	YES
 INSTALL_TARGET=	install install.man
 
