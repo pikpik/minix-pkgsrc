@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+echo "Running post-extract script"
+
+cd ${WRKSRC}
+rm -f mc68k/custom.c
