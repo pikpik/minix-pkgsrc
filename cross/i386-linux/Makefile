@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/01/04 22:54:44 tv Exp $
+# $NetBSD: Makefile,v 1.5 1999/03/28 17:16:45 hubertf Exp $
 #
 
 DISTVERSION=		2.0.7.1
@@ -11,6 +11,7 @@ MAINTAINER=		packages@netbsd.org
 BUILD_DEPENDS+=		rpm2cpio:../../misc/rpm
 BUILD_DEPENDS+=		autoheader:../../devel/autoconf
 
+CHECK_SHLIBS=		no
 WRKSRC=			${WRKDIR}
 
 USE_CROSS_BINUTILS=	yes
