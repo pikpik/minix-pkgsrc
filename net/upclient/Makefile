@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/07/17 22:51:59 grant Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/30 17:56:42 jmmv Exp $
 #
 
 DISTNAME=	upclient-4.2.1.23
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://uptimes.atomicvoid.net/files/
 
 MAINTAINER=	hubertf@NetBSD.org
-HOMEPAGE=	http://uptimes.wonko.com/
+HOMEPAGE=	http://uptimes.hostingwired.com/
 COMMENT=	Keeps track of your server uptime, and compares it to other hosts
 
 USE_BUILDLINK2=	YES
