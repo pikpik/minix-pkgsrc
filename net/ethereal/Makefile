@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2003/09/16 21:01:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.85 2003/11/04 12:49:25 adam Exp $
 #
 
 DISTNAME=		ethereal-0.9.16
@@ -33,6 +33,7 @@ CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=	--with-net-snmp=${BUILDLINK_PREFIX.net-snmp}
 CONFIGURE_ARGS+=	--with-pcap=${BUILDLINK_PREFIX.libpcap}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
+CONFIGURE_ENV+=		ac_cv_func_pcap_compile_nopcap=no
 
 PTHREAD_OPTS=		require
 
