@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/09/14 02:27:35 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/10/25 18:52:04 kleink Exp $
 #
 # This Makefile fragment is included by packages that use openldap.
 #
@@ -33,10 +33,14 @@ BUILDLINK_FILES.openldap+=	include/srchpref.h
 BUILDLINK_FILES.openldap+=	lib/liblber.*
 BUILDLINK_FILES.openldap+=	lib/libldap.*
 
+USE_PTHREAD=		native pth
+
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == SunOS
 .include "../../databases/db/buildlink.mk"
 .endif
+
+.include "../../mk/pthread.buildlink.mk"
 
 BUILDLINK_TARGETS.openldap=	openldap-buildlink
 BUILDLINK_TARGETS+=		${BUILDLINK_TARGETS.openldap}
