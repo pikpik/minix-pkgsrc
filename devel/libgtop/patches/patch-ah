@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ah,v 1.1.1.1 1998/10/07 13:11:35 agc Exp $
 
 --- sysdeps/bsd/sem_limits.c	1998/10/06 17:11:38	1.1
 +++ sysdeps/bsd/sem_limits.c	1998/10/06 17:12:15

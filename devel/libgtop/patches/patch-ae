@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.1.1.1 1998/10/07 13:11:35 agc Exp $
 
 Most of this file was taken from the xosview swapinternal.cc file.
 

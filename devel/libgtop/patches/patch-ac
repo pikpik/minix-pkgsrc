@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.1.1 1998/10/07 13:11:35 agc Exp $
 
 <osreldate.h> is not available on NetBSD.
 
