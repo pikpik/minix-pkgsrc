@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/04/04 19:23:10 recht Exp $
+# $NetBSD: Makefile,v 1.24 2004/05/11 17:33:42 recht Exp $
 #
 
 DISTNAME=	mono-0.91
@@ -27,6 +27,8 @@ USE_LIBTOOL=		yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-gc=included
+CONFIGURE_ARGS+=	--with-ikvm-jni=no
+CONFIGURE_ARGS+=	--with-jdk=no
 CONFIGURE_ARGS+=	--sysconfdir="${PKG_SYSCONFDIR}"
 
 PKGCONFIG_OVERRIDE=	mint.pc.in
@@ -79,6 +81,16 @@ PLIST_SUBST+=  GC=
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--with-sigaltstack=no
 .endif
+
+# Global Assembly Cache files are handled during (de)installation.
+PRINT_PLIST_AWK+=	/^lib\/mono\/gac\// { next; }
+PRINT_PLIST_AWK+=	/^@dirrm lib\/mono\/gac\// { next; }
+
+# GC files are only installed if GC was enabled.
+PRINT_PLIST_AWK+=	/^include\/mono\/private\/libgc/ \
+				{ print "$${GC}" $$0; next; }
+PRINT_PLIST_AWK+=	/^@dirrm include\/mono\/private/ \
+				{ print "$${GC}" $$0; next; }
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
