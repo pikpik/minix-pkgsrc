@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/05/15 08:04:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1999/05/15 20:02:55 hubertf Exp $
 #
 
-DISTNAME=	gcombust-0.1.12
+DISTNAME=	gcombust-0.1.15
 CATEGORIES=	x11 sysutils
 MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 
