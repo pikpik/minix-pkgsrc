@@ -123,7 +123,7 @@ $NetBSD$
 +	interix3*)	LDSHARED='${CC} -shared'
 +			LDFLAGS="-Wl,-E"
 +			# use special random-slot linkage in 0x[56]XXXXXXX
-+			DLDFLAGS="$DLDFLAGS "'-Wl,-h,$(.TARGET) -Wl,--image-base,$$(($$RANDOM %%4096/2*262144+1342177280))'
++			DLDFLAGS="$DLDFLAGS "'-Wl,-h,$(.TARGET) -Wl,--image-base,$$(($$RANDOM %4096/2*262144+1342177280))'
 +			LIBPATHFLAG=' -L%1$-s'
 +			RPATHFLAG=' -Wl,-R%1$-s'
 +			rb_cv_dlopen=yes ;;
