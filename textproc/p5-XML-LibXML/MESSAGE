@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+You also need to config the XML parser yourself, here is a example
+of ${PREFIX}/libdata/perl5/site_perl/XML/SAX/ParserDetails.ini :
+
+[XML::LibXML::SAX::Parser]
+http://xml.org/sax/features/namespaces = 1
+
+===========================================================================
