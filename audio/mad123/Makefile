@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/06/02 12:38:45 is Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/03 08:32:07 agc Exp $
 #
 
-DISTNAME=	mad123-0.7
+DISTNAME=	mad123-0.7.1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mctavish.co.uk/mad123/
 
