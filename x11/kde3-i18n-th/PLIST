@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/12 11:14:19 markd Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/04/01 12:27:24 markd Exp $
 share/kde/locale/th/LC_MESSAGES/aktion.mo
 share/kde/locale/th/LC_MESSAGES/alsaplayerui.mo
 share/kde/locale/th/LC_MESSAGES/amor.mo
@@ -185,6 +185,7 @@ share/kde/locale/th/LC_MESSAGES/kfmclient.mo
 share/kde/locale/th/LC_MESSAGES/kfmexec.mo
 share/kde/locale/th/LC_MESSAGES/kfontviewpart.mo
 share/kde/locale/th/LC_MESSAGES/kfouleggs.mo
+share/kde/locale/th/LC_MESSAGES/kget.mo
 share/kde/locale/th/LC_MESSAGES/kghostview.mo
 share/kde/locale/th/LC_MESSAGES/khelpcenter.mo
 share/kde/locale/th/LC_MESSAGES/khexedit.mo
