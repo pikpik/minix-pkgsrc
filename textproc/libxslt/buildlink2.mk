@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:13 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2002/09/10 16:06:49 wiz Exp $
 
 .if !defined(LIBXSLT_BUILDLINK2_MK)
 LIBXSLT_BUILDLINK2_MK=	# defined
@@ -15,7 +15,6 @@ BUILDLINK_FILES.libxslt+=	include/libxslt/*
 BUILDLINK_FILES.libxslt+=	lib/libexslt.*
 BUILDLINK_FILES.libxslt+=	lib/libxslt.*
 BUILDLINK_FILES.libxslt+=	lib/libxsltbreakpoint.*
-BUILDLINK_FILES.libxslt+=	lib/xsltConf.sh
 
 .include "../../textproc/libxml2/buildlink2.mk"
 

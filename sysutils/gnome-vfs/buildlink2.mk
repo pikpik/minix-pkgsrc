@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:41 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:23 jlam Exp $
 
 .if !defined(GNOME_VFS_BUILDLINK2_MK)
 GNOME_VFS_BUILDLINK2_MK=	# defined
@@ -13,7 +13,6 @@ BUILDLINK_FILES.gnome-vfs=	include/gnome-vfs-1.0/*/*
 BUILDLINK_FILES.gnome-vfs+=	lib/gnome-vfs-1.0/include/*
 BUILDLINK_FILES.gnome-vfs+=	lib/libgnomevfs-pthread.*
 BUILDLINK_FILES.gnome-vfs+=	lib/libgnomevfs.*
-BUILDLINK_FILES.gnome-vfs+=	lib/vfsConf.sh
 
 .include "../../devel/GConf/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
