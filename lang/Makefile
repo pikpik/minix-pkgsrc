@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.145 2003/03/01 13:15:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.146 2003/03/10 13:16:15 skrll Exp $
 #
 
 COMMENT=	Programming languages
@@ -99,7 +99,7 @@ SUBDIR+=	scheme48
 SUBDIR+=	siod
 SUBDIR+=	smalleiffel
 SUBDIR+=	smalltalk
-SUBDIR+=	sml-nj
+SUBDIR+=	smlnj
 SUBDIR+=	snobol
 SUBDIR+=	squeak
 SUBDIR+=	stalin
