@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.268 2004/07/27 15:59:31 xtraeme Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.269 2004/07/30 07:48:56 xtraeme Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1881,11 +1881,6 @@ QMAILDIR?= /var/qmail
 # change this.
 # Possible: any valid location
 # Default: /var/qmail (intentionally not ${VARBASE}/qmail)
-
-QMAIL_AUTOCONFIG?= YES
-# Whether the package should automatically create basic config files.
-# Possible: YES, NO
-# Default: YES
 
 QMAIL_QUEUE_DIR?= ${VARBASE}/spool/qmail
 # The directory for qmail's queue.
