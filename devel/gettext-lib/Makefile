@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/10/18 15:20:10 veego Exp $
+# $NetBSD: Makefile,v 1.11 2001/11/29 01:12:29 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -19,6 +19,8 @@ USE_BUILDLINK_ONLY=	yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--with-included-gettext
+CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 PATCHDIR=		${.CURDIR}/../../devel/gettext/patches
 DISTINFO_FILE=		${.CURDIR}/../../devel/gettext/distinfo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/11/29 01:12:29 hubertf Exp $
+# $NetBSD: Makefile,v 1.34 2002/02/18 15:14:10 seb Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -17,6 +17,8 @@ USE_BUILDLINK_ONLY=	yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub
 
 INFO_FILES=		gettext.info
 TEXINFO_OVERRIDE=	YES
