@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 18:24:52 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/03/27 11:53:17 agc Exp $
 
-DISTNAME=		majordomo-1.94.4
-PKGNAME=		${DISTNAME}nb1
+DISTNAME=		majordomo-1.94.5
 CATEGORIES=		mail
-MASTER_SITES=		ftp://ftp.sgi.com/other/majordomo/1.94.4/ \
-			ftp://ftp-europe.sgi.com/other/majordomo/1.94.4/
+MASTER_SITES=		ftp://ftp.sgi.com/other/majordomo/1.94.5/ \
+			ftp://ftp-europe.sgi.com/other/majordomo/1.94.5/
 EXTRACT_SUFX=   	.tgz
 
 MAINTAINER=		packages@biology.nmsu.edu
