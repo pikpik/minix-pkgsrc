@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2003/02/21 12:03:30 mycroft Exp $
+# $NetBSD: Makefile,v 1.40 2003/06/02 01:19:02 jschauma Exp $
 
 DISTNAME=		guile-1.6.3
 #PKGREVISION=		1
@@ -22,10 +22,11 @@ LIBTOOL_OVERRIDE+=	${WRKSRC}/libltdl/libtool
 
 USE_GNU_READLINE=	YES
 
-INFO_FILES=		guile.info
+USE_NEW_TEXINFO=	YES
+USE_MAKEINFO=		YES
+INFO_FILES=		guile.info guile-tut.info goops.info r5rs.info
 
 .include "../../devel/libtool/buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../devel/readline/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
