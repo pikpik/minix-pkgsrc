@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2002/10/28 09:05:10 agc Exp $
+# $NetBSD: Makefile,v 1.137 2002/10/30 07:32:07 skrll Exp $
 #
 
 COMMENT=	Programming languages
@@ -115,5 +115,6 @@ SUBDIR+=	ucblogo
 SUBDIR+=	umb-scheme
 SUBDIR+=	vscm
 SUBDIR+=	vslisp
+SUBDIR+=	wonka
 
 .include "../mk/bsd.pkg.subdir.mk"
