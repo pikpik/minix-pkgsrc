@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- agent/filter/logfile.c.orig	Fri Apr 18 16:20:26 1997
 +++ agent/filter/logfile.c	Fri Apr 18 16:41:06 1997
 @@ -68,6 +68,9 @@
