@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:29:07 zuntum Exp $
 include/wnn/commonhd.h
 include/wnn/config.h
 include/wnn/cplib.h
