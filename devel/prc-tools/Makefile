@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: Makefile,v 1.15 2003/09/28 09:13:56 jlam Exp $
 #
 
 DISTNAME=	prc-tools-2.2
@@ -8,7 +8,7 @@ MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=prc-tools/}
 DISTFILES=	${DISTNAME}.tar.gz ${DIST_BINUTILS}.tar.bz2
 DISTFILES+=	${DIST_GCC}.tar.gz ${DIST_GDB}.tar.bz2
 
-MAINTAINER=	dillo@giga.or.at
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://prc-tools.sourceforge.net/
 COMMENT=	GNU tool chain for Palm cross development
 
