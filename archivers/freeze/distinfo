@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:50 agc Exp $
+$NetBSD$
 
-MD5 (freeze-2.5.tar.gz) = 2bc3c88ad87eca6b2df2a40b2fae626c
+SHA1 (freeze-2.5.tar.gz) = 07b94508fcd95d35236a4090257aa402fd623812
+Size (freeze-2.5.tar.gz) = 36402 bytes

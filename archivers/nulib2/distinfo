@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2001/03/11 03:01:02 tv Exp $
+$NetBSD$
 
-MD5 (nulibdist.tar.gz) = ec6035d364ff1b652ec0e291e8d683a2
+SHA1 (nulibdist.tar.gz) = c3b351663444c20cd5e2f82763e1522298033280
+Size (nulibdist.tar.gz) = 280311 bytes
 SHA1 (patch-aa) = c6f629810a94376cf5150b3bff233e37bcb2bc44
 SHA1 (patch-ab) = f2f689417c06f28bb6b781ac609785a9e7e7eb4f

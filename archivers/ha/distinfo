@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:51 agc Exp $
+$NetBSD$
 
-MD5 (ha0999.tgz) = 77f3266a451712bec55d60df67f61486
+SHA1 (ha0999.tgz) = 8dd106748619772f988ee0bce59937a4de1677ed
+Size (ha0999.tgz) = 44271 bytes
 SHA1 (patch-aa) = 0d25173f4c8236157cb8784826ba681ae8e13f64

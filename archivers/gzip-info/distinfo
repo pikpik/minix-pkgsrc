@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/09/18 16:16:07 kim Exp $
+$NetBSD$
 
-MD5 (gzip-1.2.4a.shar) = fd82b686a19b04946972da16e468d688
+SHA1 (gzip-1.2.4a.shar) = 1e1e513f48be32ecfe24c06b609329963d5a5288
+Size (gzip-1.2.4a.shar) = 832431 bytes

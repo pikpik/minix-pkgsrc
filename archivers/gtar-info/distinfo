@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/18 15:08:50 kim Exp $
+$NetBSD$
 
-MD5 (tar-1.12.shar.gz) = 2de18b48856dac3c76863d6eb2b7e5f9
+SHA1 (tar-1.12.shar.gz) = 4cab31f6be9c6803679213a46bb3432670a151fc
+Size (tar-1.12.shar.gz) = 1258219 bytes

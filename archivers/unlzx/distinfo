@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/22 21:11:07 tv Exp $
+$NetBSD$
 
-MD5 (unlzx.c.Z) = 897f018f175b0e9f5d2b9d75eadd4fa8
+SHA1 (unlzx.c.Z) = c6d43253f73fb7aea98b9e5dadbd524d3eaf04d6
+Size (unlzx.c.Z) = 15135 bytes

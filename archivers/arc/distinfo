@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:49 agc Exp $
+$NetBSD$
 
-MD5 (arc521e.pl8.tar.Z) = a6eca0eb9d8cfb8d9bb62753c85759cb
+SHA1 (arc521e.pl8.tar.Z) = 34210f9aeaac39a15b34e6aa400b38127b6a2a20
+Size (arc521e.pl8.tar.Z) = 100821 bytes
 SHA1 (patch-aa) = 62324f346559b2997eba56698b1c0c1c29a328c3
 SHA1 (patch-ab) = 607c5fd0f5083c573a59d2b1fafbf982dc282ae4

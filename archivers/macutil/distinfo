@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:51 agc Exp $
+$NetBSD$
 
-MD5 (macutil2.0b3.shar.Z) = 2994c01ce0cf86ef6e76e0d88b6c0f3f
+SHA1 (macutil2.0b3.shar.Z) = 820e4dd278fe8d043306134aaafccab10b832218
+Size (macutil2.0b3.shar.Z) = 167565 bytes
 SHA1 (patch-aa) = 5fc09feeb2f808cca1742f8964f31e3b19e82382

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/05/22 20:57:43 tv Exp $
+$NetBSD$
 
-MD5 (t20-squsq-3.3.tar.gz) = 93a82c7fd5b1f283913f54147565b21c
+SHA1 (t20-squsq-3.3.tar.gz) = f27ab585803e97f17aa778893606c140ca26ed8b
+Size (t20-squsq-3.3.tar.gz) = 14654 bytes
