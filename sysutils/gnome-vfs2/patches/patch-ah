@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libgnomevfs/Makefile.in.orig	Thu Apr 15 07:48:59 2004
++++ libgnomevfs/Makefile.in
+@@ -284,7 +284,6 @@ libgnomevfs_2_la_LIBADD = \
+ libgnomevfs_2_la_LDFLAGS = \
+ 	-version-info $(LIBGNOMEVFS_CURRENT):$(LIBGNOMEVFS_REVISION):$(LIBGNOMEVFS_AGE) \
+ 	-export-symbols-regex "^[^_].*" \
+-	-no-undefined \
+ 	$(NULL)
+ 
+ 

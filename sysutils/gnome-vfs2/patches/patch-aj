@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- monikers/Makefile.in.orig	Thu Apr 15 08:20:36 2004
++++ monikers/Makefile.in
+@@ -239,7 +239,7 @@ libmoniker_gnome_vfs_std_la_LIBADD = \
+ 
+ 
+ libmoniker_gnome_vfs_std_la_LDFLAGS = \
+-	-module -avoid-version -no-undefined
++	-module -avoid-version
+ 
+ subdir = monikers
+ mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
