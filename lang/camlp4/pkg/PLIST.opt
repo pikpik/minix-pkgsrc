@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.opt,v 1.1.1.1 2000/06/12 22:36:59 wulf Exp $
 bin/camlp4o.opt
-bin/camlp4r
 bin/camlp4r.opt
 lib/camlp4/gramext.cmx
 lib/camlp4/gramlib.a

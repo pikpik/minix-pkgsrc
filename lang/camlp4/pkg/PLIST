@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/06/12 22:36:59 wulf Exp $
+@comment $NetBSD: PLIST,v 1.2 2000/08/22 03:08:27 wiz Exp $
 bin/camlp4
 bin/camlp4o
+bin/camlp4r
 bin/mkcamlp4
 bin/ocpp
 bin/odyl
