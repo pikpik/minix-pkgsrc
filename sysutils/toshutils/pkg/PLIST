@@ -1,11 +1,10 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/20 03:05:14 hubertf Exp $
 bin/fan
 bin/alarm
 bin/dispswitch
 bin/tdocked
 bin/thotswap
 bin/hotkey
-bin/wmtuxtime
 bin/tuxtime-conf
 man/man1/fan.1
 man/man1/svpw.1
