@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.266 2004/01/08 10:53:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.267 2004/01/10 19:47:02 jschauma Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -128,7 +128,6 @@ SUBDIR+=	jhead
 SUBDIR+=	jpeg
 SUBDIR+=	jpeg2ps
 SUBDIR+=	jpeg_ls
-SUBDIR+=	kdegraphics
 SUBDIR+=	kdegraphics2
 SUBDIR+=	kdegraphics3
 SUBDIR+=	kmplayer

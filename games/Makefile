@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.190 2003/12/03 23:09:37 xtraeme Exp $
+# $NetBSD: Makefile,v 1.191 2004/01/04 18:41:38 xtraeme Exp $
 #
 
 COMMENT=	Games
@@ -95,10 +95,8 @@ SUBDIR+=	icebreaker
 SUBDIR+=	imaze
 SUBDIR+=	iso-pernangband
 SUBDIR+=	jetpack
-SUBDIR+=	kdegames
 SUBDIR+=	kdegames2
 SUBDIR+=	kdegames3
-SUBDIR+=	kdetoys
 SUBDIR+=	kdetoys2
 SUBDIR+=	kdetoys3
 SUBDIR+=	ketm

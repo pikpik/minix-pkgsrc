@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2004/01/06 15:36:54 wiz Exp $
+# $NetBSD: Makefile,v 1.176 2004/01/10 09:48:31 jmmv Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -83,7 +83,6 @@ SUBDIR+=	kdeartwork3
 SUBDIR+=	kdeedu3
 SUBDIR+=	kdepim2
 SUBDIR+=	kdepim3
-SUBDIR+=	kdeutils
 SUBDIR+=	kdeutils2
 SUBDIR+=	kdeutils3
 SUBDIR+=	kdrill

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.210 2003/12/29 00:51:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.211 2003/12/29 14:07:32 xtraeme Exp $
 
 COMMENT=	System utilities
 
@@ -80,9 +80,7 @@ SUBDIR+=	i2ocfg
 SUBDIR+=	idesk
 SUBDIR+=	isapnptools
 SUBDIR+=	kapm
-SUBDIR+=	kdf
 SUBDIR+=	kdirstat
-SUBDIR+=	klavg
 SUBDIR+=	koncd
 SUBDIR+=	lambd
 SUBDIR+=	lavaps

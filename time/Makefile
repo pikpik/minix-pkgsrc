@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/12/17 19:10:10 jdolecek Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/09 13:42:28 wennmach Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications
@@ -21,8 +21,6 @@ SUBDIR+=	gnyaclock
 SUBDIR+=	grdc
 SUBDIR+=	ical
 SUBDIR+=	jday
-SUBDIR+=	korganizer
-SUBDIR+=	kworldwatch
 SUBDIR+=	lmclock
 SUBDIR+=	logtime
 SUBDIR+=	p5-Time
