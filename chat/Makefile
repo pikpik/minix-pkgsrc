@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/10/15 15:17:10 agc Exp $
+# $NetBSD: Makefile,v 1.20 2001/10/20 22:21:49 jlam Exp $
 #
 
 COMMENT=	communication programs
@@ -15,6 +15,7 @@ SUBDIR+=	gnomeicu
 SUBDIR+=	icb
 SUBDIR+=	icqlib
 SUBDIR+=	ircII
+SUBDIR+=	ircd-hybrid
 SUBDIR+=	irchat
 SUBDIR+=	ircu
 SUBDIR+=	irssi
