@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/read_cuecat
+share/doc/cuecat/README
+@dirrm share/doc/cuecat
