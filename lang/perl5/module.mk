@@ -131,6 +131,15 @@ PERL5_GENERATE_PLIST=	${PERL5_PLIST_COMMENT}; \
 GENERATE_PLIST+=	${PERL5_GENERATE_PLIST};
 .endif
 
+# Skip appending to perllocal.pod.  We don't keep this consistent anyway
+# with binary packages.
+#
+# XXX We should be adding to and removing from perllocal.pod in
+# XXX VIEW-{INSTALL,DEINSTALL} actions from the INSTALL/DEINSTALL
+# XXX scripts.
+#
+INSTALL_TARGET?=	pure_install
+
 # Default test target for perl5 modules
 TEST_TARGET?=	test
 
