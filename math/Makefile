@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2002/04/23 01:49:34 markd Exp $
+# $NetBSD: Makefile,v 1.77 2002/05/04 01:10:45 jtb Exp $
 #
 
 COMMENT=	Mathematics
@@ -26,6 +26,7 @@ SUBDIR+=	dcdflib.c
 SUBDIR+=	dcdflib.f
 SUBDIR+=	dfftpack
 SUBDIR+=	eispack
+SUBDIR+=	euler
 SUBDIR+=	fftpack
 SUBDIR+=	fftw
 SUBDIR+=	geg
