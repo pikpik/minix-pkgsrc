@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2000/05/21 15:27:29 kim Exp $
+# $NetBSD: Makefile,v 1.28 2000/08/10 17:00:39 thorpej Exp $
 #
 
 DISTNAME=       cvs-1.10
@@ -40,7 +40,7 @@ CONFIGURE_ARGS+=	--with-krb4=no
 CFLAGS+=	-DLOCALID=\"\\\"${RCS_LOCALID}\\\"\"
 .endif
 
-CONFIGURE_ENV+=	perl_path=${LOCALBASE}/bin/perl
+CONFIGURE_ENV+=	perl_path=${PERL5}
 
 INFO_FILES=	cvs.info cvsclient.info
 
