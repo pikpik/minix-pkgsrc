@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/10/30 06:32:20 simonb Exp $
+# $NetBSD: Makefile,v 1.5 2002/02/03 05:28:51 mjl Exp $
 # 
 
 DISTNAME=	xpdf-1.00
@@ -18,8 +18,6 @@ USE_BUILDLINK_ONLY=	YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 
-CONFIGURE_ARGS+=	--enable-japanese
-CONFIGURE_ARGS+=	--enable-chinese
 CONFIGURE_ARGS+=	--with-freetype-includes=${BUILDLINK_DIR}/include
 CONFIGURE_ARGS+=	--with-t1-includes=${BUILDLINK_DIR}/include
 CONFIGURE_ENV+=		CXXFLAGS="${CXXFLAGS}"
