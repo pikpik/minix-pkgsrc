@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libswigpy.a
+lib/libswigpy.la
+lib/libswigpy.so
