@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 1999/09/17 00:49:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.45 1999/10/01 16:10:00 drochner Exp $
 #
 
     SUBDIR += amp
@@ -42,7 +42,7 @@
     SUBDIR += libaudiofile
     SUBDIR += libcdaudio
     SUBDIR += maplay
-    SUBDIR += mbrola-linux
+    SUBDIR += mbrola
     SUBDIR += mbrolavox-en1
     SUBDIR += mikmod
     SUBDIR += mp3info
