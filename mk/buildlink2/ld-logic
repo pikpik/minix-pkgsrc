@@ -1,0 +1,10 @@
+# $NetBSD: pre-cache,v 1.3 2002/08/29 22:29:03 jlam Exp $
+
+case $arg in
+-Wl,*)
+	newarg=`@ECHO@ "X$arg" | $Xsed \
+		-e "s|^-Wl,||g" -e "s|,| |g" \
+	`
+	arg="$newarg"
+	;;
+esac
