@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2001/05/02 15:37:21 jtb Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/27 12:08:06 agc Exp $
 #
 
-DISTNAME=	pstree-2.16
+DISTNAME=	pstree-2.17
 CATEGORIES=	sysutils
-PKGREVISION=	1
+# PKGREVISION=	1
 MASTER_SITES=	http://www.go.dlr.de/fresh/unix/src/misc/
 
 MAINTAINER=	packages@netbsd.org
