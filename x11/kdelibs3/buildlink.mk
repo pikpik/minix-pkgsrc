@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1.2.2 2002/08/22 11:13:40 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.4 2002/08/25 19:23:50 jlam Exp $
 #
 # This Makefile fragment is included by packages that use kdelibs3.
 #
@@ -17,7 +17,7 @@ KDELIBS3_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.kdelibs3?=	kdelibs>=3.0.2nb1
+BUILDLINK_DEPENDS.kdelibs3?=	kdelibs>=3.0.3nb1
 DEPENDS+=	${BUILDLINK_DEPENDS.kdelibs3}:../../x11/kdelibs3
 
 .include "../../mk/bsd.prefs.mk"

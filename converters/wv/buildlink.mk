@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/08/06 13:55:18 wiz Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/08/23 17:47:55 jlam Exp $
 #
 # This Makefile fragment is included by packages that use wv.
 #
@@ -17,7 +17,7 @@ WV_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.wv?=	wv>=0.6.5
+BUILDLINK_DEPENDS.wv?=	wv>=0.7.0nb2
 BUILD_DEPENDS+=		${BUILDLINK_DEPENDS.wv}:../../converters/wv
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.wv=wv

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15.2.2 2002/08/25 21:20:17 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2002/08/25 21:49:58 jlam Exp $
 #
 
 DISTNAME=		gtk-gnutella-0.90
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtk-gnutella/}
 

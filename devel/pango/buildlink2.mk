@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.2 2002/08/22 21:04:23 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:36 jlam Exp $
 
 .if !defined(PANGO_BUILDLINK2_MK)
 PANGO_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		pango
-BUILDLINK_DEPENDS.pango?=	pango>=1.0.3
+BUILDLINK_DEPENDS.pango?=	pango>=1.0.4nb1
 BUILDLINK_PKGSRCDIR.pango?=	../../devel/pango
 
 EVAL_PREFIX+=		BUILDLINK_PREFIX.pango=pango

@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:00 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:00 jlam Exp $
 
 .if !defined(PILOT_LINK_LIBS_BUILDLINK2_MK)
 PILOT_LINK_LIBS_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			pilot-link-libs
-BUILDLINK_DEPENDS.pilot-link-libs?=	pilot-link-libs>=0.9.5
+BUILDLINK_DEPENDS.pilot-link-libs?=	pilot-link-libs>=0.9.5nb3
 BUILDLINK_PKGSRCDIR.pilot-link-libs?=	../../comms/pilot-link-libs
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.pilot-link-libs=pilot-link-libs

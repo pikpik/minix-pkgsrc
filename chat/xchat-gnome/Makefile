@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/26 17:31:34 wiz Exp $
 
 .include "../xchat/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
+PKGREVISION=	1
 CONFLICTS+=	xchat-[0-9]*
 COMMENT+=	and GNOME libraries
 

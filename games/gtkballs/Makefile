@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/04/19 05:17:53 jmc Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/30 23:16:27 wiz Exp $
 #
 
 DISTNAME=	gtkballs-3.0.1
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.antex.ru/pub/unix/dfo/gtkballs/ \
 		http://gtkballs.antex.ru/dist/

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2002/08/12 19:43:20 tron Exp $
+# $NetBSD: Makefile,v 1.18 2002/08/12 19:45:37 tron Exp $
 
 DISTNAME=	Guppi-0.40.3
 PKGNAME=	${DISTNAME:S/G/g/}
+PKGREVISION=	1
 CATEGORIES=	math graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/Guppi/}
 EXTRACT_SUFX=	.tar.bz2

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2002/01/22 22:21:41 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/07/24 19:45:30 jlam Exp $
 
 DISTNAME=	modxslt
 PKGNAME=	ap-xslt-1.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	http://download.sourceforge.net/modxslt/
 
@@ -11,7 +11,7 @@ HOMEPAGE=	http://modxslt.sourceforge.net/
 COMMENT=	Simple, fast XSLT transformations for apache
 
 DEPENDS+=	apache{,6}-1.3.*:../../www/apache
-DEPENDS+=	sablotron-*:../../textproc/sablotron
+DEPENDS+=	sablotron>=0.71nb1:../../textproc/sablotron
 
 USE_PERL5=	build	# for "apxs"
 

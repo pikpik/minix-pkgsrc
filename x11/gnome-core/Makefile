@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.74 2002/03/24 20:03:34 rh Exp $
+# $NetBSD: Makefile,v 1.75 2002/04/11 01:31:34 jlam Exp $
+#
 
 DISTNAME=		gnome-core-1.4.0.6
+PKGREVISION=		1
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-core/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,8 +1,9 @@
-# $NetBSD$
-# FreeBSD: ports/converters/ruby-iconv/Makefile,v 1.12 2000/11/29 11:46:39 sobomax Exp
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 11:21:12 taca Exp $
+#
 
 DISTNAME=	iconv-0.4.4
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	http://member.nifty.ne.jp/nokada/archive/
 

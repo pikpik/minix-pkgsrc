@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2002/07/22 22:00:52 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2002/08/23 11:52:51 mjl Exp $
+#
 
 DISTNAME=		gnucash-1.6.8
-# PKGREVISION=		2
+PKGREVISION=		1
 CATEGORIES=		finance
 MASTER_SITES=		http://www.linas.org/pub/gnucash/gnucash/sources/stable/ \
 			ftp://ftp.gnucash.org/pub/gnucash/sources/stable/ \

@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:02 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:03 jlam Exp $
 
 .if !defined(WV_BUILDLINK2_MK)
 WV_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		wv
-BUILDLINK_DEPENDS.wv?=		wv>=0.6.5
+BUILDLINK_DEPENDS.wv?=		wv>=0.7.0nb2
 BUILDLINK_PKGSRCDIR.wv?=	../../converters/wv
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.wv=wv
