@@ -1,7 +1,7 @@
-## $NetBSD: Makefile,v 1.44 2002/03/13 17:37:26 fredb Exp $
+## $NetBSD: Makefile,v 1.45 2002/07/17 13:46:49 rh Exp $
 
 DISTNAME=		gnome-utils-1.4.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		misc x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-utils/}
 
