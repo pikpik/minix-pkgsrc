@@ -1,10 +1,10 @@
-# $NetBSD: buildlink.mk,v 1.2 2001/10/03 20:56:43 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.3 2001/10/05 07:39:03 rh Exp $
 #
 # This Makefile fragment is included by packages that use gconf.
 #
 # To use this Makefile fragment, simply:
 #
-# (1) Optionally define BUILDLINK_DEPENDS.gconf to the dependency patthern
+# (1) Optionally define BUILDLINK_DEPENDS.gconf to the dependency pattern
 #     for the version of gconf desired.
 # (2) Include this Makefile fragment in the package Makefile,
 # (3) Add ${BUILDLINK_DIR}/include to the front of the C preprocessor's header

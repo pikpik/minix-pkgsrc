@@ -1,10 +1,10 @@
-# $NetBSD: buildlink.mk,v 1.7 2001/08/17 21:14:14 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.1 2001/09/30 21:03:22 rh Exp $
 #
 # This Makefile fragment is included by packages that use popt.
 #
 # To use this Makefile fragment, simply:
 #
-# (1) Optionally define BUILDLINK_DEPENDS.popt to the dependency patthern
+# (1) Optionally define BUILDLINK_DEPENDS.popt to the dependency pattern
 #     for the version of popt desired.
 # (2) Include this Makefile fragment in the package Makefile,
 # (3) Add ${BUILDLINK_DIR}/include to the front of the C preprocessor's header
