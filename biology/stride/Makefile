@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:08:40 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/04/11 04:10:37 snj Exp $
 #
 
 DISTNAME=		stride
@@ -7,7 +7,7 @@ CATEGORIES=		biology
 MASTER_SITES=		ftp://ftp.ebi.ac.uk/pub/software/unix/stride/src/
 
 MAINTAINER=		hdp@cs.nmsu.edu
-HOMEPAGE=		http://www-db.embl-heidelberg.de/jss/servlet/de.embl.bk.wwwTools.GroupLeftEMBL/argos/stride/stride_info.html
+HOMEPAGE=		http://wolf.bi.umist.ac.uk/unix/stride.html
 COMMENT=		Protein secondary structure assignment from atomic coordinates
 
 WRKSRC=			${WRKDIR}
