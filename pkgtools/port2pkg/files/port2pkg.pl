@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# $NetBSD: port2pkg.pl,v 1.1.1.1 1999/07/27 11:33:06 sakamoto Exp $
+# $NetBSD: port2pkg.pl,v 1.2 1999/09/03 04:37:36 sakamoto Exp $
 #
 
 require 'getopts.pl';
@@ -99,8 +99,8 @@ sub conv_Makefile {
 	while (<PORTS>) {
 		if (! /^\#/) {last;}
 
-		if (/\$FreeBSD:( .*) \$/ || /\$Id: port2pkg.pl,v 1.2 1999/09/03 04:37:36 sakamoto Exp $/) {
-			print PKG "\# FreeBSD Id:$1\n";
+		if (/\$FreeBSD(: .*) \$/ || /\$Id(: .*) \$/) {
+			print PKG "\# FreeBSD Id$1\n";
 		} else {
 			print;
 		}
