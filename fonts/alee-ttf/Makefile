@@ -1,8 +1,8 @@
 # $NetBSD$
 #
 
-DISTNAME=	ttf-alee_1.3
-PKGNAME=	alee-ttf-1.3
+DISTNAME=	ttf-alee_1.4
+PKGNAME=	alee-ttf-1.4
 CATEGORIES=	fonts korean
 MASTER_SITES=	http://ftp.debian.org/debian/pool/main/t/ttf-alee/
 

@@ -1,6 +1,6 @@
 @comment $NetBSD$
+lib/X11/fonts/TTF/09t@quark.ttf
 lib/X11/fonts/TTF/Eunjin.ttf
-lib/X11/fonts/TTF/Hmfs.ttf
 lib/X11/fonts/TTF/Ongdalsam.ttf
 share/doc/alee-ttf/COPYING
 @dirrm share/doc/alee-ttf
