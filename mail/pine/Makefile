@@ -31,6 +31,14 @@ BUILDFILE=	lnx
 BUILDNAME=	osx
 BUILDFILE=	osx
 LIBS+=		-lcurses
+.elif ${OPSYS} == "IRIX"
+.  if ${OS_VERSION} >= 6.5
+BUILDNAME=	sg6
+.  else
+BUILDNAME=	sgi
+CFLAGS+=	-Dvfork=fork
+.  endif
+BUILDFILE=	sgi
 .else
 BUILDNAME=	neb
 BUILDFILE=	neb
