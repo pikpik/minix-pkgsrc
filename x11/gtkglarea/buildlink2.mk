@@ -12,6 +12,9 @@ BUILDLINK_PREFIX.gtkglarea_DEFAULT=	${X11PREFIX}
 BUILDLINK_FILES.gtkglarea+=	include/gtkgl/*
 BUILDLINK_FILES.gtkglarea+=	lib/libgtkgl.*
 
+.include "../../graphics/Mesa/buildlink2.mk"
+.include "../../x11/gtk/buildlink2.mk"
+
 BUILDLINK_TARGETS+=	gtkglarea-buildlink
 
 gtkglarea-buildlink: _BUILDLINK_USE
