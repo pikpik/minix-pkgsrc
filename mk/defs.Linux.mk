@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.53 2003/06/06 19:07:42 jschauma Exp $
+# $NetBSD: defs.Linux.mk,v 1.54 2003/08/23 16:04:26 jschauma Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -132,7 +132,7 @@ MOTIF12_TYPE_DEFAULT?=	lesstif12	# default 1.2 compatible libs type
 NOLOGIN?=		${FALSE}
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
-ROOT_GROUP?=		wheel
+ROOT_GROUP?=		root
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
