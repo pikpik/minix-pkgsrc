@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/09/21 16:45:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.39 2004/09/22 21:27:24 tron Exp $
 #
 
 PKGCONFIG_OVERRIDE=	gnome-vfs-2.0.pc.in
@@ -21,6 +21,8 @@ GCONF2_SCHEMAS+=	desktop_gnome_url_handlers.schemas
 GCONF2_SCHEMAS+=	system_dns_sd.schemas
 GCONF2_SCHEMAS+=	system_http_proxy.schemas
 GCONF2_SCHEMAS+=	system_smb.schemas
+
+CFLAGS.Darwin+=		-flat_namespace -undefined suppress -lresolv
 
 .include "Makefile.common"
 
