@@ -1,18 +1,20 @@
 $NetBSD$
---- scripts/phpize.in.orig	2003-08-30 22:28:44.000000000 +0200
-+++ scripts/phpize.in	2003-08-30 22:29:39.000000000 +0200
-@@ -54,10 +54,15 @@
+
+--- scripts/phpize.in.orig	2003-08-27 19:57:32.000000000 +0200
++++ scripts/phpize.in	2003-11-07 21:44:48.000000000 +0100
+@@ -54,11 +54,15 @@
  
  touch install-sh mkinstalldirs missing
  
 -aclocal || exit 1
 -autoconf || exit 1
 -autoheader || exit 1
--libtoolize -f -c || exit 1
+-libtoolize=`$builddir/build/shtool path glibtoolize libtoolize`
+-$libtoolize -f -c || exit 1
 +if [ -z "$ACLOCAL" ]; then ACLOCAL=aclocal; fi
 +if [ -z "$AUTOCONF" ]; then AUTOCONF=autoconf; fi
 +if [ -z "$AUTOHEADER" ]; then AUTOHEADER=autoheader; fi
-+if [ -z "$LIBTOOLIZE" ]; then LIBTOOLIZE=libtoolize; fi
++if [ -z "$LIBTOOLIZE" ]; then LIBTOOLIZE=`$builddir/build/shtool path glibtoolize libtoolize`; fi
 +
 +$ACLOCAL || exit 1
 +$AUTOCONF || exit 1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/31 19:55:57 jdolecek Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/09/01 16:37:36 jdolecek Exp $
 
 MODNAME=		openssl
 CATEGORIES+=		security
@@ -10,6 +10,13 @@ USE_BUILDLINK2=		YES
 .include "../../www/php4/Makefile.module"
 
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${BUILDLINK_PREFIX.openssl}
+
+# the config test for -lssl fails to link in -lcrypto; just force it
+# to succeed
+CONFIGURE_ENV+=		ac_cv_lib_ssl_SSL_CTX_set_ssl_version=yes
+
+post-extract:
+	cd ${WRKSRC} && ln -s config0.m4 config.m4
 
 .include "../../security/openssl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

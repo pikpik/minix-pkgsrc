@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2003/06/29 16:30:32 grant Exp $
+# $NetBSD: Makefile,v 1.34 2003/08/31 19:56:05 jdolecek Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 CATEGORIES+=		lang
@@ -13,8 +13,6 @@ USE_PKGINSTALL=		YES
 USE_GMAKE=		YES
 
 .include "Makefile.php"
-
-CONFIGURE_ARGS+=	--enable-cli
 
 CGIDIR=			${PREFIX}/libexec/cgi-bin
 EGDIR=			${PREFIX}/share/examples/php
