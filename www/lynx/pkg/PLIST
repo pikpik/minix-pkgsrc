@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/lynx
 etc/lynx.cfg
 man/man1/lynx.1.gz
