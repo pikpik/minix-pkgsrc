@@ -1,9 +1,9 @@
 # New ports collection makefile for:    fep
-# Version required:     
+# Version required:     1.0
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $NetBSD: Makefile,v 1.1.1.1 1997/10/11 21:54:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1997/10/24 01:13:48 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.2 1996/11/11 05:49:31 obrien Exp
 #
 
