@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- Makefile.orig	Thu Apr 22 09:31:43 1999
++++ Makefile
+@@ -7,11 +7,11 @@
+ # You can compile with a hacked replacement of readline instead by
+ # doing this:
+ 
+-#INC=-Ifake-readline/
+-#LIB=fake-readline/readline.c
++INC=-Ifake-readline/
++LIB=fake-readline/readline.c
+ 
+-INC=-I/usr/include/readline
+-LIB=-lreadline
++#INC=-I/usr/include/readline
++#LIB=-lreadline
+ 
+ # Flags to the compiler: 
+ #
