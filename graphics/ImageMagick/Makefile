@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2001/10/23 13:14:55 jlam Exp $
+# $NetBSD: Makefile,v 1.80 2001/10/24 22:10:58 jlam Exp $
 
 DISTNAME=		ImageMagick-5.3.9
 CATEGORIES=		graphics
@@ -19,6 +19,9 @@ USE_BUILDLINK_ONLY=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+
+# c++ broken as of 'gcc version 2.95.3 20010315 (release) (NetBSD nb1)'
+NOT_FOR_PLATFORM=	NetBSD-*-sparc64
 
 .include "../../mk/bsd.prefs.mk"
 
