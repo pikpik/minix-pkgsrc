@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/emiclock
+lib/X11/app-defaults/EmiClock
+man/cat1/emiclock.0
