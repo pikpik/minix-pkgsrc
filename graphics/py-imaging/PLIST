@@ -1,4 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1 2002/09/03 20:31:02 drochner Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/09/04 13:06:54 drochner Exp $
+${PYINC}/PIL/ImConfig.h
+${PYINC}/PIL/ImPlatform.h
+${PYINC}/PIL/Imaging.h
 ${PYSITELIB}/PIL.pth
 ${PYSITELIB}/PIL/ArgImagePlugin.py
 ${PYSITELIB}/PIL/ArgImagePlugin.pyc
