@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- imap/cvt_cyrusdb.c.orig	Sun Nov 28 15:09:29 2004
++++ imap/cvt_cyrusdb.c	Sun Nov 28 15:10:33 2004
+@@ -60,7 +60,9 @@
+ #include <syslog.h>
+ 
+ #include <sys/ipc.h>
++#if !defined(__APPLE__)
+ #include <sys/msg.h>
++#endif
+ 
+ #include "acl.h"
+ #include "assert.h"
