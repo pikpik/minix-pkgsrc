@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.280 2005/02/22 00:31:08 wiz Exp $
+# $NetBSD: Makefile,v 1.281 2005/02/25 23:47:11 rh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -71,6 +71,7 @@ SUBDIR+=	fop
 SUBDIR+=	freepwing
 SUBDIR+=	gdome2
 SUBDIR+=	glimpse
+SUBDIR+=	gnome-doc-utils
 SUBDIR+=	gnome-spell
 SUBDIR+=	gocr
 SUBDIR+=	grep
