@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/09/20 21:16:06 jschauma Exp $
 #
 
-DISTNAME=		news-0.1
+DISTNAME=		news-0.2
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.netmeister.org/apps/
 
