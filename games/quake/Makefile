@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/10/20 13:14:03 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2003/03/09 19:46:53 jschauma Exp $
 
 DISTNAME=	q1source
 PKGNAME=	quake-2.30
@@ -57,4 +57,5 @@ post-install:
 	@ ${ECHO} =====================================================================
 
 .include "../../graphics/MesaLib/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
