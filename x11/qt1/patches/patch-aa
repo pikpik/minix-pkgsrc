@@ -56,7 +56,7 @@ $NetBSD$
 -				 $(SYSCONF_AR) $(DESTDIR)$(SYSCONF_LINK_TARGET_STATIC) $(OBJECTS) $(OBJMOC) 
 +SYSCONF_LINK_TARGET = lib$(TARGET).la
 +SYSCONF_LINK_LIB	= rm -f $(SYSCONF_LINK_TARGET) ; \
-+	$(LIBTOOL) --mode=link g++ -rpath $(QTPREFIX)/lib -version-info $(VER_MAJ):$(VER_MIN) \
++	$(LIBTOOL) --mode=link c++ -rpath $(QTPREFIX)/lib -version-info $(VER_MAJ):$(VER_MIN) \
 +	-o $(SYSCONF_LINK_TARGET) $(OBJECTS:.o=.lo) $(OBJMOC:.o=.lo) 
  # Compiling application source
  SYSCONF_CXXFLAGS	= -O2 -fno-strength-reduce
