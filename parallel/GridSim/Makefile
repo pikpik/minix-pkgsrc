@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2003/07/17 22:52:11 grant Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/21 17:12:22 martti Exp $
 #
 
 DISTNAME=		gridsimtoolkit-2.1
 PKGNAME=		GridSim-2.1
-CATEGORIES=		parallel devel
+CATEGORIES=		parallel devel java
 MASTER_SITES=		http://www.cs.mu.oz.au/~raj/grids/gridsim/gridsim2.1/
 
 MAINTAINER=		jschauma@NetBSD.org

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/12/31 15:44:29 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/02 18:28:42 jmmv Exp $
 #
 
 DISTNAME=	xnap-2.0
-CATEGORIES=	net
+CATEGORIES=	net java
 MASTER_SITES=	http://telia.dl.sourceforge.net/xnap/
 
 MAINTAINER=	Benjamin.Wong@cc.gatech.edu
