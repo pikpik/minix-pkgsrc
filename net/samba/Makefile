@@ -10,6 +10,8 @@ MASTER_SITES=		ftp://ftp.samba.org/pub/samba/ \
 MAINTAINER=		bouyer@netbsd.org
 HOMEPAGE=		http://www.samba.org/
 
+CONFLICTS+=		samba-2.0.7-ja-*
+
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoreconf:../../devel/autoconf
 
 .if !exists(/usr/include/readline.h)
