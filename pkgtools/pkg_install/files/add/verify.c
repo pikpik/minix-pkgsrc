@@ -1,4 +1,4 @@
-/* $NetBSD: verify.c,v 1.5 2004/04/06 05:56:07 agc Exp $ */
+/* $NetBSD: verify.c,v 1.6 2004/12/29 11:34:59 agc Exp $ */
 
 /*
  * Copyright (c) 2001 Alistair G. Crooks.  All rights reserved.
@@ -41,7 +41,7 @@
 #ifndef lint
 __COPYRIGHT("@(#) Copyright (c) 1999 \
 	        The NetBSD Foundation, Inc.  All rights reserved.");
-__RCSID("$NetBSD: verify.c,v 1.5 2003/09/23 13:22:38 grant Exp $");
+__RCSID("$NetBSD: verify.c,v 1.6 2004/12/29 11:34:59 agc Exp $");
 #endif
 
 #if HAVE_SYS_TYPES_H
@@ -91,7 +91,7 @@ do_verify(const char *pkgname, const char *cmd1, const char *cmd2, const char *c
 	struct stat	st;
 	const char    *const *ep;
 	char		buf[BUFSIZ];
-	char		f[FILENAME_MAX];
+	char		f[MaxPathSize];
 	int		ret;
 	int		i;
 

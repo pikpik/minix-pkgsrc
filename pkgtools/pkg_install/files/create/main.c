@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.26 2003/09/02 07:34:53 jlam Exp $	*/
+/*	$NetBSD: main.c,v 1.27 2004/12/29 11:35:00 agc Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: main.c,v 1.17 1997/10/08 07:46:23 charnier Exp";
 #else
-__RCSID("$NetBSD: main.c,v 1.26 2003/09/02 07:34:53 jlam Exp $");
+__RCSID("$NetBSD: main.c,v 1.27 2004/12/29 11:35:00 agc Exp $");
 #endif
 #endif
 
@@ -53,7 +53,7 @@ char   *SizeAll = NULL;
 char   *Preserve = NULL;
 char   *SrcDir = NULL;
 char   *realprefix = NULL;
-char    PlayPen[FILENAME_MAX];
+char    PlayPen[MaxPathSize];
 size_t  PlayPenSize = sizeof(PlayPen);
 int	update_pkgdb = 1;
 int	create_views = 0;
