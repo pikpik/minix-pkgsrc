@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 1999/06/21 05:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.32 1999/06/21 07:38:29 tron Exp $
 
 DISTNAME=		WindowMaker-0.60.0
 PKGNAME=		windowmaker-0.60.0
@@ -37,6 +37,8 @@ LDFLAGS+=		-L${LOCALBASE}/lib	# for libintl.a
 WINDOWMAKER_OPTIONS?=	gnome kde
 
 PLIST_SRC=		${WRKDIR}/.PLIST_SRC_WM
+
+BUILD_DEFS+=		WINDOWMAKER_OPTIONS
 
 .include "../../mk/bsd.prefs.mk"
 
