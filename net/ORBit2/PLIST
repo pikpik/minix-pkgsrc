@@ -1,8 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2002/04/23 12:24:48 rh Exp $
 bin/ior-decode-2
-bin/name-client-2
 bin/orbit-idl-2
-bin/orbit-name-server-2
 bin/orbit2-config
 bin/typelib-dump
 include/orbit-2.0/ORBitservices/CosNaming.h
