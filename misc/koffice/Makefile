@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/07/13 13:52:43 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/17 21:49:19 grant Exp $
 
 DISTNAME=	koffice-1.2.1
 PKGREVISION=	3
@@ -41,7 +41,7 @@ post-install:
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../textproc/libxslt/buildlink2.mk"
 .include "../../graphics/libart2/buildlink2.mk"
-.include "../../x11/kde3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../x11/kdebase3/buildlink2.mk"
 .include "../../mk/gcc.buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
