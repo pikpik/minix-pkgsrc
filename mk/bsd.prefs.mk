@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.156 2004/03/09 20:39:50 recht Exp $
+# $NetBSD: bsd.prefs.mk,v 1.157 2004/03/11 17:53:16 tv Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -319,7 +319,7 @@ CROSSBASE?=		${LOCALBASE}/cross
     exists(${X11BASE}/lib/X11/config/xpkgwedge.def)
 USE_XPKGWEDGE=  yes
 .else
-USE_XPKGWEDGE?=	no
+USE_XPKGWEDGE?=	yes
 .endif
 
 .if defined(_OPSYS_NEEDS_XPKGWEDGE) && \
