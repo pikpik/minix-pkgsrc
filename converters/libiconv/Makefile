@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/05 11:17:10 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2004/02/14 17:21:35 jlam Exp $
 #
 
 DISTNAME=		libiconv-1.9.1
@@ -21,6 +21,8 @@ TEST_TARGET=		check
 
 EGDIR=			${PREFIX}/share/examples/libiconv
 SUPPORT_FILES=		${EGDIR}/charset.alias ${PREFIX}/lib/charset.alias
+
+MAKE_ENV+=		CP=${CP}
 
 # remove any existing charset.alias; if it already exists, libiconv does
 # not overwrite it, and older versions of libiconv wrote incorrect
