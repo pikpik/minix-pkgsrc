@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/02/14 17:21:34 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2004/03/28 01:14:04 snj Exp $
 
 DISTNAME=	naim-0.11.6.7
 CATEGORIES=	chat
@@ -12,9 +12,11 @@ COMMENT=	Ncurses-based AIM, ICQ, IRC and Lily client
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
-USE_NCURSES=		# assertion "COLOR_PAIRS >= (COLORS*COLORS)" failed: file "./win.c", line 250, function "wsetup_colors"
 
 CONFIGURE_ARGS+=	--mandir=${PREFIX}/man
+
+INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
+INCOMPAT_CURSES+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-K]*
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
