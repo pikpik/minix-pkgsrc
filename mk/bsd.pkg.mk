@@ -2643,11 +2643,9 @@ ${DDIR}: ${DLIST}
 		fi ;							\
 	done
 
-${DLIST}:
-	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} -p ${WRKDIR}
+${DLIST}: ${WRKDIR}
 	${_PKG_SILENT}${_PKG_DEBUG}					\
-	{ ${PKG_INFO} -R "${PKGWILDCARD}" || ${TRUE}; } |		\
-		${TAIL} -n +4 >${DLIST}
+	{ ${PKG_INFO} -qR "${PKGWILDCARD}" || ${TRUE}; } > ${DLIST}
 
 # The 'info' target can be used to display information about a package.
 info: uptodate-pkgtools
