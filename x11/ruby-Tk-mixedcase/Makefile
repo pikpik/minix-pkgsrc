@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/08/22 02:22:26 sakamoto Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/31 22:09:43 jwise Exp $
 # FreeBSD Id: ports/x11-toolkits/rubytk/Makefile,v 1.3 1999/08/31 02:59:34 peter Exp
 
 DISTNAME=	ruby-1.4.6
@@ -29,7 +29,6 @@ CONFIGURE_ARGS+=--with-tcllib="${TCL_LIB}" --with-tklib="${TK_LIB}" \
 		--with-tcl-include="${LOCALBASE}/include" \
 		--with-tk-include="${LOCALBASE}/include" \
 		--with-X11-dir="${X11BASE}"
-
 
 RUBY=		${LOCALBASE}/bin/ruby
 PLIST_SUBST=	RUBY_VERSION=1.4
