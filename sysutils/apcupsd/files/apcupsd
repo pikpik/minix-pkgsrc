@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD$
+# $NetBSD: apcupsd,v 1.1 2000/08/05 07:31:16 jlam Exp $
 #
 # PROVIDE: apcupsd
 # REQUIRE: DAEMON
@@ -39,5 +39,5 @@ status)
 		echo "${name} is not running."
 	fi
 	;;
-esac)
+esac
 exit 0
