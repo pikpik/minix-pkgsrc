@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2003/04/09 21:04:08 grant Exp $
+# $NetBSD: Makefile,v 1.44 2003/07/17 21:49:54 grant Exp $
 
 DISTNAME=	screen-3.9.15
 CATEGORIES=	misc
@@ -11,9 +11,9 @@ COMMENT=	Multi-screen window manager
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
+USE_NEW_TEXINFO=	YES
 INFO_FILES=		screen.info
 PLIST_SUBST=		DISTNAME=${DISTNAME}
-TEXINFO_OVERRIDE=	YES
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-sys-screenrc=${PKG_SYSCONFDIR}/screenrc
@@ -38,5 +38,4 @@ post-install:
 		/usr/5bin/tic screeninfo.src
 .endif
 
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
