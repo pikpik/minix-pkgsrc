@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xbindkeys
+bin/xbindkeys_show
+man/man1/xbindkeys.1
+man/man1/xbindkeys_show.1
