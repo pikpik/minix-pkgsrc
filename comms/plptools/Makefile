@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/14 05:41:47 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/07/14 15:52:27 sakamoto Exp $
 #
 
 DISTNAME=	plptools-0.3
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp.to.com/pub/psion/
 
 MAINTAINER=	sakamoto@netbsd.org
 
-DEPENDS=	readline-2.2:../../devel/readline
+DEPENDS=	readline-4.0:../../devel/readline
 
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
