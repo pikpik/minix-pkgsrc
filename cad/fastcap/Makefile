@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 13:46:18 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/05/22 23:24:51 wiz Exp $
 #
 
 DISTNAME=	fastcap-2.0-15Jul92
@@ -22,6 +22,11 @@ EXTRACT_ONLY=	fastcap-2.0-15Jul92.tar.Z
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./config
 CONFIGURE_ARGS=		4
+
+.if (${MACHINE_ARCH} == arm32)
+.include "../../lang/gcc/Makefile.gcc"
+MAKE_FLAGS+=		CC=${CC}
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/fastcap ${PREFIX}/bin
