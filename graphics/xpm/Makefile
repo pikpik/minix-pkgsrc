@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/03/23 04:41:01 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2004/03/29 05:43:31 jlam Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	1
@@ -9,6 +9,8 @@ MASTER_SITES=	http://koala.ilog.fr/ftp/pub/xpm/ \
 MAINTAINER=	mycroft@NetBSD.org
 HOMEPAGE=	http://www.inria.fr/koala/lehors/xpm.html
 COMMENT=	The X Pixmap library
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
 USE_IMAKE=	# defined
