@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.281 2003/01/14 09:17:07 jlam Exp $
+# $NetBSD: Makefile,v 1.282 2003/01/16 05:41:31 uebayasi Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -23,6 +23,7 @@ SUBDIR+=	dxpc
 SUBDIR+=	ebuilder
 SUBDIR+=	egtk
 SUBDIR+=	eterm
+SUBDIR+=	fbdesk
 SUBDIR+=	filerunner
 SUBDIR+=	fltk
 SUBDIR+=	fox
