@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2003/04/27 12:48:58 cjep Exp $
+# $NetBSD: Makefile,v 1.44 2003/07/13 13:53:49 wiz Exp $
 #
 
 DISTNAME=		lynx2.8.5dev.7
@@ -12,7 +12,7 @@ MASTER_SITES=		http://lynx.isc.org/current/ \
 			ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/WWW/lynx/current/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		fredb@netbsd.org
+MAINTAINER=		fredb@NetBSD.org
 HOMEPAGE=		http://lynx.browser.org/
 COMMENT=		Alphanumeric display oriented World-Wide Web Client
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/05/31 12:57:31 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/13 13:53:46 wiz Exp $
 
 DISTNAME=	modxslt-1.1
 PKGNAME=	ap-xslt-1.1
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/modxslt
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=modxslt/}
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://modxslt.sourceforge.net/
 COMMENT=	Simple, fast XSLT transformations for apache
 

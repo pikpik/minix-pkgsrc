@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/28 23:37:09 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/26 14:34:38 jwise Exp $
 #
 
 DISTNAME=	TclExpat-1.1
@@ -6,7 +6,7 @@ PKGNAME=	tcl-expat-1.1
 CATEGORIES=	textproc www tcl
 MASTER_SITES=	http://www.zveno.com/in-tclxml/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://www.zveno.com/zm.cgi/in-tclxml/
 COMMENT=	XML parser implemented entirely in Tcl
 

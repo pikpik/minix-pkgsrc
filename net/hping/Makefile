@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/04/04 17:02:30 atatat Exp $
 #
 
 DISTNAME=		hping2.0.0-rc1
@@ -7,7 +7,7 @@ WRKSRC=			${WRKDIR}/hping2
 CATEGORIES=		net
 MASTER_SITES=		http://www.hping.org/
 
-MAINTAINER=		atatat@netbsd.org
+MAINTAINER=		atatat@NetBSD.org
 HOMEPAGE=		http://www.hping.org/
 COMMENT=		Traceroute and ping using TCP and UDP as well as ICMP
 

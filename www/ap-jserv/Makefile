@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2002/10/10 01:01:12 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2002/12/31 15:44:30 jlam Exp $
 
 DISTNAME=	ApacheJServ-1.1.2
 PKGNAME=	ap-jserv-1.1.2
 CATEGORIES=	www
 MASTER_SITES=	http://java.apache.org/jserv/dist/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://java.apache.org/
 COMMENT=	older Java Servlet engine for Apache Server
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/06/23 13:23:36 adam Exp $
+# $NetBSD: Makefile,v 1.19 2003/06/24 08:16:32 adam Exp $
 
 DISTNAME=		ntop-2.2
 PKGNAME=		ntop2-2.2
@@ -8,7 +8,7 @@ CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ntop/}
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		adam@netbsd.org
+MAINTAINER=		adam@NetBSD.org
 HOMEPAGE=		http://www.ntop.org/
 COMMENT=		shows network usage (similar to "top" for processes)
 

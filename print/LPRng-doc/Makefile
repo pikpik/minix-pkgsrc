@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/04/10 20:10:18 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/04/16 18:02:00 jmc Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
 #
 
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.astart.com/pub/LPRng/LPRng/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.lprng.com/
 COMMENT=	LPRng documentation in dvi, text, html and ps formats
 

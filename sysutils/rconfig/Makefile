@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2003/03/06 22:00:00 abs Exp $
+# $NetBSD: Makefile,v 1.11 2003/04/01 15:19:30 abs Exp $
 
 DISTNAME=	rconfig-0.17
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.mono.org/abs/tools/rconfig/
 
-MAINTAINER=	abs@netbsd.org
+MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.mono.org/abs/tools/rconfig/
 COMMENT=	Manage configurations for many machines via rdist trees
 

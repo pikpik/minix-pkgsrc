@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/12/08 02:13:30 salo Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:43:08 jmmv Exp $
 #
 
 DISTNAME=	Pmw.0.8.5
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/Pmw
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pmw/}
 
-MAINTAINER=	lukem@netbsd.org
+MAINTAINER=	lukem@NetBSD.org
 HOMEPAGE=	http://pmw.sourceforge.net/
 COMMENT=	python meta widgets
 

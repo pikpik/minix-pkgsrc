@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:37:33 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/11/01 00:52:29 uwe Exp $
 #
 
 DISTNAME=	lout-3.21
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.usyd.edu.au/jeff/lout/
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.ptc.spbu.ru/~uwe/lout/lout.html
 COMMENT=	Basser Lout, a TeX/troff-like formatter with PostScript/PDF output
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/29 12:42:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 17:58:33 wiz Exp $
 #
 
 DISTNAME=	klavg-1.1
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/klavg
 CATEGORIES=	kde sysutils
 MASTER_SITES=	ftp://ftp.crocodile.org/pub/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.crocodile.org/software.html
 COMMENT=	Xload for the KDE panel
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/06/02 01:17:58 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/13 13:52:53 wiz Exp $
 #
 
 DISTNAME=		gtk-gnutella-0.91.1
@@ -6,7 +6,7 @@ PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtk-gnutella/}
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gtk-gnutella.sourceforge.net/
 COMMENT=		GTk-based gnutella client
 

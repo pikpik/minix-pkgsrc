@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/02/18 15:14:41 seb Exp $
+# $NetBSD: Makefile,v 1.27 2003/05/22 16:16:03 salo Exp $
 #
 
 DISTNAME=	mtools-3.9.7
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.tux.org/pub/tux/knaff/mtools/
 
-MAINTAINER=	is@netbsd.org
+MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://www.tux.org/pub/knaff/mtools/
 COMMENT=	FAT (MS-DOS, Atari) disk access tools
 

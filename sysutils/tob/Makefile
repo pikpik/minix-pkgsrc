@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/27 12:01:12 agc Exp $
 
 DISTNAME=	tob-0.25
 CATEGORIES=	sysutils
 MASTER_SITES=	http://tinyplanet.ca/projects/tob/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://tinyplanet.ca/projects/tob/
 COMMENT=	general driver for making and maintaining backups
 

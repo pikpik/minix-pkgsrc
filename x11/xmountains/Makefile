@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/03 04:17:32 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:43:13 jmmv Exp $
 #
 
 DISTNAME=	xmountains_2.6
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	x11
 MASTER_SITES=	http://www.epcc.ed.ac.uk/~spb/xmountains/
 
-MAINTAINER=	fredb@netbsd.org
+MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www.epcc.ed.ac.uk/~spb/xmountains/
 COMMENT=	Fractal terrain generator for X11
 

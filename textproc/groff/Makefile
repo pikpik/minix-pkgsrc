@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/06/05 03:31:00 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/01 10:12:54 wiz Exp $
 #
 
 DISTNAME=	groff-1.19
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=groff/}
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/groff/groff.html
 COMMENT=	GNU roff text processing suite
 

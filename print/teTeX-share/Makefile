@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/03/29 12:42:17 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2003/04/10 20:10:19 grant Exp $
 #
 
 DISTNAME=	teTeX-texmf-1.0.2
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/unix/teTeX/1.0/distrib/sources/}
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Machine-independent part of teTeX
 

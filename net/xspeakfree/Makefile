@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 18:19:58 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/05/05 19:51:18 jlam Exp $
 
 DISTNAME=	xspeakfree-0.8.1
 CATEGORIES=	net audio x11
 MASTER_SITES=	http://www.spearce.org/projects/xspeakfree/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.spearce.org/projects/xspeakfree/
 COMMENT=	Tcl/Tk (wish) frontend to Speak Freely
 

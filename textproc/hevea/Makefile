@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2003/06/25 21:01:47 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2003/06/29 22:57:14 jtb Exp $
 
 DISTNAME=	hevea-1.06
 CATEGORIES=	textproc
 MASTER_SITES=	http://para.inria.fr/~maranget/hevea/distri/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://para.inria.fr/~maranget/hevea/
 COMMENT=	LaTeX to HTML translator
 

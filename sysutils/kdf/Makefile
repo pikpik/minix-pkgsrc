@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/03/14 19:37:56 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/13 13:53:18 wiz Exp $
 #
 
 DISTNAME=	kdf-0.5.1
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils kde
 MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/stable/1.1.2/apps/utils/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.edu.uni-klu.ac.at/~mkropfbe
 COMMENT=	Shows disk usage graphically and lets you mount/umount devices
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1 2002/06/15 09:21:43 shell Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/23 23:30:25 jlam Exp $
 
 DISTNAME=	dic
 PKGNAME=	stardic-1.31
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.linuxbyte.net/Chinese/dictionary/
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 COMMENT=	English-Chinese dictionary
 
 DIST_SUBDIR=	${PKGNAME}

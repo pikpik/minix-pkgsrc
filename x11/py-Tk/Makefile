@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2002/09/21 23:47:01 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2002/09/23 22:55:30 jlam Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-Tk-0
 CATEGORIES=	x11
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/topics/tkinter/
 COMMENT=	Tkinter -- Python interface to Tcl/Tk
 

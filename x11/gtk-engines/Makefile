@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2003/05/05 14:41:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/13 13:54:02 wiz Exp $
 
 DISTNAME=		gtk-engines-0.12
 PKGREVISION=		4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtk-engines/0.12/}
 
-MAINTAINER=		tron@netbsd.org
+MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Theme engines for GTK+
 

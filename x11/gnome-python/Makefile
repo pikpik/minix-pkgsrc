@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/05/02 11:57:02 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2003/07/13 13:53:57 wiz Exp $
 
 DISTNAME=		gnome-python-1.4.4
 PKGNAME=		${PYPKGPREFIX}-gnome-1.4.4
@@ -6,7 +6,7 @@ PKGREVISION=		2
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-python/1.4/}
 
-MAINTAINER=		drochner@netbsd.org
+MAINTAINER=		drochner@NetBSD.org
 HOMEPAGE=		http://www.daa.com.au/~james/gnome/
 COMMENT=		Python Bindings for the GNU Network Object Model Environment
 

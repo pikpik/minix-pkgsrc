@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2003/06/24 14:09:53 tron Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:54:26 wiz Exp $
 
 DISTNAME=	lablgtk-1.2.5
 PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/
 
-MAINTAINER=	dillo@netbsd.org
+MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
 COMMENT=	GTK+ bindings for ocaml
 

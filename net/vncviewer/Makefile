@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/08/21 02:12:16 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:42:06 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
@@ -14,7 +14,7 @@ PATCH_SITES=		ftp://ftp.kame.net/pub/kame/misc/
 PATCHFILES=		vnc-3.3.3r2-v6-20010421.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	 	abs@netbsd.org
+MAINTAINER=	 	abs@NetBSD.org
 HOMEPAGE=		http://www.uk.research.att.com/vnc/
 COMMENT=		Viewer for remote X and Win32 VNC servers
 

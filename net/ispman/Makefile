@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/03/08 15:46:18 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/08 23:49:25 wiz Exp $
 #
 
 DISTNAME=	ispman-0.5
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/ispman
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ispman/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.ispman.org/
 COMMENT=	ISP management software written in perl
 

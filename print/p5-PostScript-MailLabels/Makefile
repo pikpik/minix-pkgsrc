@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/11/26 06:50:13 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/06 22:31:09 seb Exp $
 
 DISTNAME=	PostScript-MailLabels-1.01
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5psm
 CATEGORIES=	print perl5
 MASTER_SITES=	http://www.oplnk.net/~ajackson/software/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.oplnk.net/~ajackson/software/maillabels/
 COMMENT=	create PostScript for printing on mailing label stock
 

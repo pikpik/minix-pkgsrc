@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 14:26:16 taca Exp $
+# $NetBSD: Makefile,v 1.2 2002/01/19 09:30:32 taca Exp $
 # FreeBSD: ports/net/ruby-icmp/Makefile,v 1.2 2000/11/02 19:06:06 knu Exp
 
 DISTNAME=	icmp-0.2.1
@@ -6,7 +6,7 @@ PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
 CATEGORIES=	net
 MASTER_SITES=	http://www.notwork.org/~gotoyuzo/ruby/src/
 
-MAINTAINER=	taca@netbsd.org
+MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	# not available
 COMMENT=	Ruby module for handling ICMP packets
 

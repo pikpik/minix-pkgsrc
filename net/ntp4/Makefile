@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/07/16 14:57:08 fredb Exp $
+# $NetBSD: Makefile,v 1.22 2003/04/10 01:28:22 grant Exp $
 #
 
 DISTNAME=	ntp-4.1.1a
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/ \
 		http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/
 
-MAINTAINER=	fredb@netbsd.org
+MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www.ntp.org/
 COMMENT=	Network Time Protocol Version 4
 

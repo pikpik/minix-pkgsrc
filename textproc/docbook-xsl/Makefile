@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2003/04/10 01:28:25 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/05/27 08:18:44 wiz Exp $
 #
 
 DISTNAME=	docbook-xsl-1.61.2
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=docbook/}
 
-MAINTAINER=	jmmv@netbsd.org
+MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://docbook.sourceforge.net/
 COMMENT=	Docbook XSL modular stylesheet
 

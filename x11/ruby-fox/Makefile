@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/03/29 12:43:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/13 13:54:29 wiz Exp $
 
 DISTNAME=	FXRuby-0.99.174
 PKGNAME=	${RUBY_PKGNAMEPREFIX}fox-0.99.174
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIST}/ext/fox
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fxruby/}
 
-MAINTAINER=	sakamoto@netbsd.org
+MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://fxruby.sourceforge.net/
 COMMENT=	Ruby interface to FOX GUI library
 

@@ -1,12 +1,12 @@
 #
-# $NetBSD: Makefile,v 1.15 2002/09/29 12:46:41 martti Exp $
+# $NetBSD: Makefile,v 1.16 2003/01/28 22:04:28 jlam Exp $
 #
 
 DISTNAME=		cvsweb-2.0.6
 CATEGORIES=		www
 MASTER_SITES=		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/scop/
 
-MAINTAINER=		lukem@netbsd.org
+MAINTAINER=		lukem@NetBSD.org
 HOMEPAGE=		http://www.freebsd.org/projects/cvsweb.html
 COMMENT=		Web interface for browsing a CVS repository
 

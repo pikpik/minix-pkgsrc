@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/01/18 22:36:36 mjl Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/20 17:46:03 seb Exp $
 
 DISTNAME=		CGI-Application-2.1
 PKGNAME=		p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=		p5cga
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 COMMENT=		perl5 module to create sophisticated, reusable web-based applications
 
 DEPENDS+=		{p5-CGI>=2.66,perl>=5.6.1nb2}:../../www/p5-CGI

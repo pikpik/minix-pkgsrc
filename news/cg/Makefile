@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.2.2 2002/07/01 17:45:05 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/25 21:50:27 jlam Exp $
 #
 
 DISTNAME=	cg-0.4
 CATEGORIES=	news
 MASTER_SITES=	http://ftp.giga.or.at/pub/nih/cg/
 
-MAINTAINER=	wiz@netbsd.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://ftp.giga.or.at/pub/nih/cg/
 COMMENT=	semi-automatic newsgroup binary downloader
 

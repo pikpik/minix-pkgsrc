@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/23 04:59:20 kei Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/15 08:17:07 kei Exp $
 
 DISTNAME=	teTeX2-2.0.2
 PKGREVISION=	# empty
@@ -6,7 +6,7 @@ CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	kei@netbsd.org
+MAINTAINER=	kei@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Thomas Esser's TeX distribution for UNIX compatible systems, version 2
 

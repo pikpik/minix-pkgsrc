@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 1998/12/27 17:28:19 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:07:07 wiz Exp $
 #
 
 DISTNAME=	xflame-1.1.1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.owlnet.rice.edu/~rahul/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 COMMENT=	Draws a flame on the screen
 
 USE_IMAKE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/12/31 22:47:05 lukem Exp $
+# $NetBSD: Makefile,v 1.27 2003/01/28 22:04:19 jlam Exp $
 #
 
 DISTNAME=		nut-1.2.1
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.exploits.org/nut/release/1.2/
 
-MAINTAINER=		lukem@netbsd.org
+MAINTAINER=		lukem@NetBSD.org
 HOMEPAGE=		http://www.exploits.org/nut/
 COMMENT=		Network UPS Tools
 

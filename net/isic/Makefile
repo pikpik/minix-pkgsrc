@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/09 16:33:57 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/28 20:32:18 wiz Exp $
 #
 
 DISTNAME=	isic-0.05
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://expert.cc.purdue.edu/~frantzen/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://expert.cc.purdue.edu/~frantzen/
 COMMENT=	Ip Stack Integrity Checker (IP, TCP, UDP, ICMP et. al.)
 

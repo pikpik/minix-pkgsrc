@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2002/08/25 18:40:37 jlam Exp $
+# $NetBSD: Makefile,v 1.63 2002/12/05 19:10:42 drochner Exp $
 
 DISTNAME=		lesstif-0.93.36
 CATEGORIES=		x11
@@ -9,7 +9,7 @@ MASTER_SITES=		ftp://ftp.hungry.com/pub/hungry/lesstif/srcdist/ \
 			http://gd.tuwien.ac.at/hci/lesstif/srcdist/ \
 			http://www.damtp.cam.ac.uk/mirror/ftp.hungry.com/pub/hungry/lesstif/srcdist/
 
-MAINTAINER=		jlam@netbsd.org
+MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://www.lesstif.org/
 COMMENT=	API compatible clone of the OSF/Motif toolkit
 

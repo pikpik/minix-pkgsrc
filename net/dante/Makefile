@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2002/09/09 21:51:52 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2002/09/10 06:10:04 jlam Exp $
 #
 
 DISTNAME=		dante-1.1.13
 CATEGORIES=		net security
 MASTER_SITES=		ftp://ftp.inet.no/pub/socks/
 
-MAINTAINER=		rh@netbsd.org
+MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.inet.no/dante/
 COMMENT=		BSD-licensed socks 4/5 proxy suite
 

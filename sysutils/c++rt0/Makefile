@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:42:11 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/28 21:14:34 wiz Exp $
 #
 
 DISTNAME=	c++rt0-1.0
 CATEGORIES=	sysutils
-MASTER_SITES+=	ftp://ftp.netbsd.org/pub/NetBSD/arch/sparc/c++rt0/
+MASTER_SITES+=	ftp://ftp.NetBSD.org/pub/NetBSD/arch/sparc/c++rt0/
 DISTFILES=	c++rt0.o.PIC c++rt0.o.pic README
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 COMMENT=	1.4.x/sparc PIC c++rt0.o file
 
 DIST_SUBDIR=	c++rt0

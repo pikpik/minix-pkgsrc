@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/08/01 09:40:37 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/05 20:14:34 jlam Exp $
 #
 
 DISTNAME=		openacs-3.2.5
@@ -7,7 +7,7 @@ CATEGORIES=		www
 MASTER_SITES=		# none
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		cjones@netbsd.org
+MAINTAINER=		cjones@NetBSD.org
 HOMEPAGE=		http://www.openacs.org/
 COMMENT=		TCL-based web programming environment
 

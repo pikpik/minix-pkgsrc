@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/23 21:52:07 frueauf Exp $
 #
 
 DISTNAME=	pconsole-1.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.heiho.net/pconsole/
 
-MAINTAINER=	frueauf@netbsd.org
+MAINTAINER=	frueauf@NetBSD.org
 HOMEPAGE=	http://www.heiho.net/pconsole/
 COMMENT=	parallel console tool to access several host via one input tty
 

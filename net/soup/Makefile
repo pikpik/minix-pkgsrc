@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/02 01:17:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:53:00 wiz Exp $
 #
 
 DISTNAME=		soup-0.7.10
@@ -7,7 +7,7 @@ CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/soup/0.7/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		callback-based mechanism for sending and servicing SOAP requests
 

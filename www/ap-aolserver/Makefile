@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/10/25 12:56:58 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2003/01/05 20:14:32 jlam Exp $
 #
 
 DISTNAME=		mod_aolserver-1.1
@@ -7,7 +7,7 @@ PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
-MAINTAINER=		cjones@netbsd.org
+MAINTAINER=		cjones@NetBSD.org
 HOMEPAGE=		http://www.arsdigita.com/acs-repository/one-version?version_id=601
 COMMENT=		Module that emulates AOLServer in Apache
 

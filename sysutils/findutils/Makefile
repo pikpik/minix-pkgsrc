@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/12/25 17:56:46 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:53:14 wiz Exp $
 
 DISTNAME=	findutils-4.1
 PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNU:=findutils/}
 
-MAINTAINER=	bouyer@netbsd.org
+MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/findutils/findutils.html
 COMMENT=	The GNU find, xargs and locate utilities
 

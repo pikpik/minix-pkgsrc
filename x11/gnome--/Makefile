@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/06/02 01:15:45 jschauma Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/13 13:53:55 wiz Exp $
 #
 
 DISTNAME=	gnomemm-1.2.2
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmm/}
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gtkmm.sourceforge.net/
 COMMENT=	C++ binding for the GNOME libraries
 

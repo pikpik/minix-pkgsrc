@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/10/10 13:29:37 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/29 12:42:00 jmmv Exp $
 #
 
 DISTNAME=	ngrep-1.39
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/ngrep
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngrep/}
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://ngrep.sourceforge.net/
 COMMENT=	network grep
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/23 07:36:15 mrg Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/13 13:53:14 wiz Exp $
 #
 
 VERS=		0.50.13
@@ -8,7 +8,7 @@ PKGREVISION=	1
 CATEGORIES=	x11 sysutils
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Video/}
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.exit1.org/dvdrip/
 COMMENT=	Graphical frontend for DVD ripping
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/09/21 23:47:00 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2002/10/24 18:18:59 drochner Exp $
 #
 
 DISTNAME=	grail-0.6
@@ -6,7 +6,7 @@ CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=grail/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://grail.sourceforge.net/
 COMMENT=	Grail(TM) is a web browser written in Python
 

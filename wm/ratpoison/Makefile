@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2002/10/25 13:16:18 agc Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/12 01:37:55 zuntum Exp $
 #
 
 DISTNAME=	ratpoison-1.2.2
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ratpoison/}
 
-MAINTAINER=	zuntum@netbsd.org
+MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://ratpoison.sourceforge.net/
 COMMENT=	Simple window manager with no fat library dependencies
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/03/29 12:42:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2003/04/10 01:28:29 grant Exp $
 
 DISTNAME=	ApacheJSSI-1.1.2
 PKGNAME=	jssi-1.1.2
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/ApacheJSSI-1.1.2/src/java
 CATEGORIES=	www
 MASTER_SITES=	http://java.apache.org/jservssi/dist/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://java.apache.org/
 COMMENT=	Java Server-Side Include engine as a JSDK-2.0 servlet
 

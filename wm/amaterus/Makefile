@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:16:16 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/13 13:53:40 wiz Exp $
 
 DISTNAME=	amaterus-0.34.1
 PKGREVISION=	2
 CATEGORIES=	wm
 MASTER_SITES=	http://www.taiyaki.org/src/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.taiyaki.org/
 COMMENT=	GTK+ window manager
 

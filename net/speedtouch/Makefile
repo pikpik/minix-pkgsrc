@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/01/28 22:03:56 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/19 08:25:11 wiz Exp $
 #
 
 DISTNAME=	speedtouch-1.1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.xsproject.org/speedtouch/files/ \
 		http://www.alcatel.com/consumer/dsl/
 DISTFILES=	${DISTNAME}.tar.bz2 speedmgmt.tar.gz
 
-MAINTAINER=	abs@netbsd.org
+MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.xsproject.org/speedtouch/
 COMMENT=	Alcatel SpeedTouch USB ADSL modem driver
 

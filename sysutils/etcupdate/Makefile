@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/04/06 03:53:23 grant Exp $
+# $NetBSD: Makefile,v 1.24 2003/05/09 08:03:08 martti Exp $
 
 DISTNAME=	etcupdate-20030509
 WRKSRC=		${WRKDIR}
@@ -6,8 +6,8 @@ CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	martti@netbsd.org
-HOMEPAGE=	http://www.netbsd.org/Documentation/current/
+MAINTAINER=	martti@NetBSD.org
+HOMEPAGE=	http://www.NetBSD.org/Documentation/current/
 COMMENT=	Script to update the configuration and startup files in /etc
 
 EXTRACT_ONLY=	# defined

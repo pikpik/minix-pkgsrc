@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/06/05 05:01:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:47 wiz Exp $
 #
 
 DISTNAME=	galway-0.33
@@ -7,7 +7,7 @@ CATEGORIES=	www x11 gnome
 MASTER_SITES=	http://erin.netpedia.net/download/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://erin.netpedia.net/galway.html
 COMMENT=	Web editor programmed in Scheme
 

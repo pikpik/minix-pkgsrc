@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2003/01/28 22:04:22 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/07 01:25:09 salo Exp $
 #
 
 DISTNAME=	ion-20020207
 CATEGORIES=	x11 wm
 MASTER_SITES=	http://modeemi.cs.tut.fi/~tuomov/dl/
 
-MAINTAINER=	daniel@codefactory.se,zuntum@netbsd.org
+MAINTAINER=	daniel@codefactory.se,zuntum@NetBSD.org
 HOMEPAGE=	http://modeemi.cs.tut.fi/~tuomov/ion/
 COMMENT=	keyboard friendly tiling window manager
 

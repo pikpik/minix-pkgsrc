@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/05 20:16:05 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/06/18 09:22:25 agc Exp $
 #
 
 DISTNAME=	${PKGNAME}b-src
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}b
 CATEGORIES=	textproc converters
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gutenpalm/}
 
-MAINTAINER=	rh@netbsd.org
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://gutenpalm.sourceforge.net/makeztxt.php
 COMMENT=	ASCII text to Palm zTXT database converter
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/03 22:08:39 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/05 19:05:19 jmmv Exp $
 #
 
 DISTNAME=	Archive-0.1.2
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://rox.sourceforge.net/
 COMMENT=	simple archiver
 

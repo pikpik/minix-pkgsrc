@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/04/13 01:29:42 salo Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:53:34 wiz Exp $
 #
 
 DISTNAME=	ndtpd-3.1.4
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	textproc japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/ndtpd/
 
-MAINTAINER=	uebayasi@netbsd.org
+MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.sra.co.jp/people/m-kasahr/ndtpd/
 COMMENT=	Server for accessing CD-ROM books with NDTP
 

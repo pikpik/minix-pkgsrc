@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2003/06/15 22:19:46 abs Exp $
+# $NetBSD: Makefile,v 1.162 2003/07/14 15:36:27 martti Exp $
 #
 
 DISTNAME=	pkglint-3.56
@@ -7,8 +7,8 @@ CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	hubertf@netbsd.org
-HOMEPAGE=	ftp://ftp.netbsd.org/pub/NetBSD/packages/pkgsrc/Packages.txt
+MAINTAINER=	hubertf@NetBSD.org
+HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/Packages.txt
 COMMENT=	Verifier for NetBSD packages and complete pkgsrc tree
 
 DEPENDS+=	digest>=20010101:../../pkgtools/digest

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/05 19:05:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:21 wiz Exp $
 #
 
 DISTNAME=	ROX-Lib-0.1.4
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rxg@netbsd.org
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://rox.sourceforge.net/
 COMMENT=	Shared code for ROX applications
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/08/25 19:24:02 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/28 21:14:42 wiz Exp $
 #
 
 DISTNAME=	xview3.2p1-X11R6
@@ -7,7 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 COMMENT=	OpenLook Toolkit meta-package
 
 DEPENDS+=	xview-config>=3.2.1:../xview-config

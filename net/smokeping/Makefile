@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.36 2002/11/28 10:18:14 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/24 15:24:39 bouyer Exp $
 
 DISTNAME=	smokeping-1.19
 CATEGORIES=	net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/pub/
 
-MAINTAINER=	bouyer@netbsd.org
+MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/index.en.html
 COMMENT=	latency/packet loss monitoring/graphing tool
 

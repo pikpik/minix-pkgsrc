@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2003/03/29 12:42:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.36 2003/06/03 17:02:47 jschauma Exp $
 
 DISTNAME=	jakarta-tomcat-${TOMCAT_VERSION}-src
 PKGNAME=	${DISTNAME:S/-src$//}
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://jakarta.apache.org/builds/jakarta-tomcat/release/v${TOMCAT_VERSION}/src/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://jakarta.apache.org/
 COMMENT=	the Apache Project's Java Servlet 2.2 and JSP 1.1 server
 

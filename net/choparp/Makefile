@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2002/07/30 12:41:25 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/11/09 02:23:22 itojun Exp $
 #
 
 DISTNAME=	choparp-20021107
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=choparp/}
 
-MAINTAINER=	dbj@netbsd.org
+MAINTAINER=	dbj@NetBSD.org
 HOMEPAGE=	http://choparp.sf.net/
 COMMENT=	Simple proxy arp daemon
 

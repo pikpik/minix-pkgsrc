@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2002/10/05 04:01:44 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2002/10/19 19:17:13 soren Exp $
 
 DISTNAME=		pchar-1.4
 CATEGORIES=		net
 MASTER_SITES=		http://www.employees.org/~bmah/Software/pchar/
 
-MAINTAINER=		soren@netbsd.org
+MAINTAINER=		soren@NetBSD.org
 HOMEPAGE=		http://www.employees.org/~bmah/Software/pchar/
 COMMENT=		Tool for measuring Internet path characteristics
 

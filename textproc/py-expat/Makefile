@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/16 16:45:56 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/10 15:08:19 drochner Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-expat-0
 CATEGORIES=	textproc
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Python interface to expat
 

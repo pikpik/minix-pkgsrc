@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6.2.1 2002/06/24 06:02:09 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/08/25 21:53:01 jlam Exp $
 #
 
 DISTNAME=	xtermset-0.4
 CATEGORIES=	x11
 MASTER_SITES=	http://xtermset.netpedia.net/src/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://xtermset.netpedia.net/
 COMMENT=	Change things like foreground color, size etc. on an xterm
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/01/29 21:15:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:42:37 jmmv Exp $
 #
 
 DISTNAME=	html-4.0b
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.w3.org/TR/REC-html40/
 COMMENT=	SGML DTDs for the Hypertext Markup Language
 

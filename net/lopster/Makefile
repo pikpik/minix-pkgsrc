@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/02 13:49:38 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/13 13:52:56 wiz Exp $
 #
 
 DISTNAME=	lopster-1.2.0
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lopster/}
 
-MAINTAINER=	ad@netbsd.org
+MAINTAINER=	ad@NetBSD.org
 HOMEPAGE=	http://lopster.sourceforge.net/
 COMMENT=	Yet another Gtk+ Napster clone
 

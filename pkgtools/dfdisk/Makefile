@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/17 11:15:40 jmmv Exp $
 #
 
 DISTNAME=	dfdisk-1.0
@@ -7,7 +7,7 @@ CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jmmv@netbsd.org
+MAINTAINER=	jmmv@NetBSD.org
 COMMENT=	Fetch distfiles from multiple locations
 
 NO_CHECKSUM=	yes

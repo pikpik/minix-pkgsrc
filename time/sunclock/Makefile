@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/25 21:51:25 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/03 03:23:24 jschauma Exp $
 #
 
 DISTNAME=	sunclock-1.4
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 
-MAINTAINER=	perry@netbsd.org
+MAINTAINER=	perry@NetBSD.org
 COMMENT=	Show which portion of the Earth's surface is illuminated by the Sun
 
 USE_BUILDLINK2=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/04/10 01:28:28 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/06/18 09:22:27 agc Exp $
 
 DISTNAME=	Cocoon-1.8.2
 PKGNAME=	cocoon-1.8.2
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	www
 MASTER_SITES=	http://xml.apache.org/dist/cocoon/cocoon1/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://xml.apache.org/cocoon/
 COMMENT=	the Apache Project's XML/XSL based web publishing system
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/28 03:36:16 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:53 jmmv Exp $
 
 DISTNAME=	FastTemplate-1_1_0
 PKGNAME=	php-FastTemplate-1.1.0
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.thewebmasters.net/php/
 PATCHFILES=	php4.diff
 PATCH_SITES=	http://www.thewebmasters.net/php/FastTemplate/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.thewebmasters.net/php/FastTemplate.phtml
 COMMENT=	PHP extension for managing templates and variable interpolation
 

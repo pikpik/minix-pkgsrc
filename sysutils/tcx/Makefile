@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.44 2003/04/22 20:25:10 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/23 13:55:24 agc Exp $
 
 DISTNAME=	tcx-linux
 PKGNAME=	tcx-19940124
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ibiblio.unc.edu/pub/Linux/utils/compress/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	packages@NetBSD.org
 #HOMEPAGE=	
 COMMENT=	transparently compress executables
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/05/03 16:38:57 cjep Exp $
+# $NetBSD: Makefile,v 1.9 2003/05/05 12:22:40 cjep Exp $
 
 DISTNAME=		leafnode-1.9.39.rel
 PKGNAME=		leafnode-1.9.39
@@ -8,7 +8,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=leafnode/}
 
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		cjep@netbsd.org
+MAINTAINER=		cjep@NetBSD.org
 HOMEPAGE=		http://www.leafnode.org/
 COMMENT=		NNTP server for small (dialup) sites
 

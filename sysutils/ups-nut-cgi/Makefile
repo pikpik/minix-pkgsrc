@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/02/05 18:36:47 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.25 2003/06/23 11:18:42 adam Exp $
 
 DISTNAME=		nut-1.2.1
 PKGREVISION=		2
@@ -6,7 +6,7 @@ PKGNAME=		ups-nut-cgi-1.2.1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.exploits.org/nut/release/1.2/
 
-MAINTAINER=		lukem@netbsd.org
+MAINTAINER=		lukem@NetBSD.org
 HOMEPAGE=		http://www.exploits.org/nut/
 COMMENT=		Network UPS Tools CGI scripts
 

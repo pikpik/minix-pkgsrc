@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/03/03 04:17:39 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:43:11 jmmv Exp $
 #
 
 DISTNAME=	xcolorsel-1.1a-src
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}/xcolorsel
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}
 
-MAINTAINER=	perry@netbsd.org
+MAINTAINER=	perry@NetBSD.org
 COMMENT=	Browse and select named X colors from rgb.txt
 
 USE_BUILDLINK2=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2003/02/07 01:10:32 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.29 2003/03/26 04:05:39 jschauma Exp $
 
 DISTNAME=	opera-5.0.1
 CATEGORIES=	www
@@ -7,7 +7,7 @@ MASTER_SITES=	http://opera.online.no/${OPERA_DIR}/ \
 		ftp://ftp.tuwien.ac.at/infosys/browsers/opera/${OPERA_DIR}/
 DISTFILES=	${OPERAFILE}
 
-MAINTAINER=	tron@netbsd.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://www.opera.com/
 COMMENT=	Small, fast and customizable WWW client
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2003/04/27 12:48:17 cjep Exp $
+# $NetBSD: Makefile,v 1.56 2003/07/13 13:53:49 wiz Exp $
 #
 
 DISTNAME=		lynx2.8.4rel.1
@@ -20,7 +20,7 @@ PATCHFILES=		lynx2.8.4rel.1a.patch lynx2.8.4rel.1b.patch \
 			lynx2.8.4rel.1c.patch lynx2.8.4rel.1d.patch
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=		fredb@netbsd.org
+MAINTAINER=		fredb@NetBSD.org
 HOMEPAGE=		http://lynx.browser.org/
 COMMENT=		Alphanumeric display oriented World-Wide Web Client
 

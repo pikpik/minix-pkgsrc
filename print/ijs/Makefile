@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2002/09/11 00:08:32 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/11 18:37:09 jlam Exp $
 
 DISTNAME=	ijs-0.34
 CATEGORIES=	print
 MASTER_SITES=	http://www.linuxprinting.org/ijs/download/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	jlam@NetBSD.org
 HOMEPAGE=	http://www.linuxprinting.org/ijs/
 COMMENT=	protocol library for raster page transmission
 

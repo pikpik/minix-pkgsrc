@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.31 2003/01/28 22:03:48 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2003/03/05 13:10:21 wennmach Exp $
 
 DISTNAME=		arla-0.35.12
 #PKGREVISION=
 CATEGORIES=		net security
 MASTER_SITES=		ftp://ftp.stacken.kth.se/pub/arla/
 
-MAINTAINER=		wennmach@netbsd.org
+MAINTAINER=		wennmach@NetBSD.org
 HOMEPAGE=		http://www.stacken.kth.se/project/arla/
 COMMENT=		Free AFS implementation from KTH
 

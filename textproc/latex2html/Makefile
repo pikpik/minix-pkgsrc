@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/12/08 22:32:07 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/04/08 09:26:20 wiz Exp $
 
 DISTNAME=	latex2html-2002-2-1
 PKGNAME=	latex2html-2002.2.1
 CATEGORIES=	textproc converters
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=support/latex2html/}
 
-MAINTAINER=	wennmach@netbsd.org
+MAINTAINER=	wennmach@NetBSD.org
 HOMEPAGE=	http://www.latex2html.org
 COMMENT=	LaTeX to HTML converter
 

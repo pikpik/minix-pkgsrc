@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2003/07/02 13:03:25 grant Exp $
+# $NetBSD: Makefile,v 1.74 2003/07/12 13:25:23 dillo Exp $
 
 DISTNAME=		openssl-0.9.6g
 PKGREVISION=		2
@@ -6,7 +6,7 @@ SVR4_PKGNAME=		ossl
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.openssl.org/source/
 
-MAINTAINER=		tech-pkg@netbsd.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.openssl.org/
 COMMENT=		Secure Socket Layer and cryptographic library
 

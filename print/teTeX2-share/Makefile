@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/04/10 20:10:19 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/06/05 11:37:29 markd Exp $
 
 DISTNAME=	tetex-texmf-2.0.2
 PKGNAME=	teTeX2-share-2.0.2
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/unix/teTeX/2.0/distrib/}
 
-MAINTAINER=	kei@netbsd.org
+MAINTAINER=	kei@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Machine-independent part of teTeX, version 2
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/08/25 21:50:47 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2003/01/18 08:33:42 martti Exp $
 
 DISTNAME=		stunnel-4.04
 CATEGORIES=		security
@@ -6,7 +6,7 @@ MASTER_SITES=		ftp://ftp.fu-berlin.de/pub/unix/security/stunnel/ \
 			ftp://stunnel.mirt.net/stunnel/ \
 			http://www.stunnel.org/download/stunnel/src/
 
-MAINTAINER=		martti@netbsd.org
+MAINTAINER=		martti@NetBSD.org
 HOMEPAGE=		http://www.stunnel.org/
 COMMENT=		Universal SSL tunnel
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/12/07 02:39:05 schmonz Exp $
+# $NetBSD: Makefile,v 1.26 2003/01/19 09:39:06 salo Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/04/30 23:49:14 asami Exp
 #
 
@@ -7,7 +7,7 @@ PKGNAME=	top-3.5b9
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.groupsys.com/pub/top/
 
-MAINTAINER=	agc@netbsd.org
+MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://www.groupsys.com/topinfo/
 COMMENT=	The ubiquitous system monitoring utility
 

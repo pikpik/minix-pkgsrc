@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/03/28 21:14:25 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:41:52 jmmv Exp $
 #
 
 DISTNAME=		6to4-1.3
@@ -7,8 +7,8 @@ CATEGORIES=		net
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		hubertf@netbsd.org
-HOMEPAGE=		http://www.netbsd.org/packages/net/6to4/files/6to4.html
+MAINTAINER=		hubertf@NetBSD.org
+HOMEPAGE=		http://www.NetBSD.org/packages/net/6to4/files/6to4.html
 COMMENT=		Enables 6to4 IPv6 automatic tunnels
 
 USE_PERL5=		YES

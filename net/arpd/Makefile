@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3.2.1 2002/07/01 17:44:58 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/25 21:49:55 jlam Exp $
 #
 
 DISTNAME=	arpd
@@ -6,7 +6,7 @@ PKGNAME=	arpd-1.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://subzero.campus.luth.se/pub/arpd/
 
-MAINTAINER=	hubertf@netbsd.org
+MAINTAINER=	hubertf@NetBSD.org
 COMMENT=	arp daemon
 
 USE_BUILDLINK2=	yes
