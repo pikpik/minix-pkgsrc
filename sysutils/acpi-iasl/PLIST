@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/acpi-iasl
+share/doc/acpi-iasl/README
+share/doc/acpi-iasl/LICENSE
+@dirrm share/doc/acpi-iasl
