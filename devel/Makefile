@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 1998/10/27 04:07:09 garbled Exp $
+# $NetBSD: Makefile,v 1.39 1998/11/01 23:25:34 tron Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -93,6 +93,7 @@
     SUBDIR += readline
 #    SUBDIR += sawt
 #    SUBDIR += scogdb
+    SUBDIR += sfio
 #    SUBDIR += tclcheck
     SUBDIR += tkcvs
 #    SUBDIR += tvision
