@@ -1,0 +1,17 @@
+@comment $NetBSD$
+etc/exim/configure
+etc/rc.d/exim.sh
+sbin/exicyclog
+sbin/exigrep
+sbin/exim
+sbin/exim_dbmbuild
+sbin/exim_dumpdb
+sbin/exim_fixdb
+sbin/exim_lock
+sbin/exim_tidydb
+sbin/eximstats
+sbin/exinext
+sbin/exiqsumm
+sbin/exiwhat
+sbin/mailq
+@unexec rmdir %D/etc/exim /var/log/exim 2>/dev/null || true

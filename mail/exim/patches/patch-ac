@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- scripts/os-type.orig	Tue Sep  7 13:36:03 1999
++++ scripts/os-type	Tue Sep  7 13:36:13 1999
+@@ -54,6 +54,7 @@
+ BSD_OS)     os=BSDI;;
+ dgux)       os=DGUX;;
+ freebsd*)   os=FreeBSD;;
++netbsd*)    os=NetBSD;;
+ gnu)        os=GNU;;
+ Irix5)	    os=IRIX;;
+ Irix6)	    os=IRIX6;;
