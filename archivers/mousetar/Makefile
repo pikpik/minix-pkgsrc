@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/07/29 21:47:09 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2004/07/30 14:53:43 minskim Exp $
 #
 
 DISTNAME=	mousetar-20021217
@@ -19,6 +19,10 @@ USE_BUILDLINK3=	yes
 
 .if ${MACHINE_PLATFORM:MNetBSD-[2-9].*-*} != ""
 CPPFLAGS+=	-DTAR_INODE_INTERNAL
+.endif
+
+.if ${OPSYS} == "Linux"
+CPPFLAGS+=	-DLINUX_NAMLEN
 .endif
 
 INSTALLATION_DIRS=	bin man/man1
