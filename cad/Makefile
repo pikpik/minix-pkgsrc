@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2000/12/12 01:30:41 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2001/02/16 15:51:47 wiz Exp $
 #
 
 COMMENT=	CAD tools
@@ -25,6 +25,7 @@ SUBDIR+=	ng-spice
 SUBDIR+=	ntesla
 SUBDIR+=	oregano
 SUBDIR+=	pcb
+SUBDIR+=	qcad
 SUBDIR+=	spice
 SUBDIR+=	spiceprm
 SUBDIR+=	verilog
