@@ -1,6 +1,6 @@
-#!@RCS_SCRIPTS_SHELL@
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: maradns.sh,v 1.1.1.1 2003/09/25 14:12:51 xtraeme Exp $
 #
 
 # PROVIDE: maradns
