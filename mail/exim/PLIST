@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2002/12/09 11:38:04 ad Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/08/02 17:00:08 jmmv Exp $
 etc/rc.d/exim
+man/man8/exim.8
 sbin/exicyclog
 sbin/exigrep
 sbin/exim
@@ -9,7 +10,6 @@ sbin/exim_dbmbuild
 sbin/exim_dumpdb
 sbin/exim_fixdb
 sbin/exim_lock
-sbin/exim_newaliases
 sbin/exim_tidydb
 sbin/eximstats
 sbin/exinext
