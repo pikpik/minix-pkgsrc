@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2003/07/17 21:28:26 grant Exp $
+# $NetBSD: Makefile,v 1.57 2003/09/18 05:37:15 markd Exp $
 
 DISTNAME=	openldap-2.1.22
 SVR4_PKGNAME=	oldap
@@ -30,6 +30,8 @@ CONFIGURE_ARGS+=	--enable-ldbm
 CONFIGURE_ARGS+=	--enable-crypt
 
 PKG_SYSCONFSUBDIR=	openldap
+# XXX use PKG_SYSCONFBASE without PKG_SYSCONFSUBDIR, because
+# XXX openldap build automatically appends "/openldap"
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--localstatedir=/var/openldap
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.db4}/include/db4
