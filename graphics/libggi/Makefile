@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/01/20 12:18:16 agc Exp $
+# $NetBSD: Makefile,v 1.27 2004/02/14 17:21:42 jlam Exp $
 #
 
 DISTNAME=	libggi-2.0.4.src
@@ -14,7 +14,7 @@ HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Graphics Interface library is a flexible drawing library
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 USE_X11=		yes
 USE_LIBTOOL=		yes
@@ -41,7 +41,7 @@ PLIST_SRC=              ${PKGDIR}/PLIST.dga
 PLIST_SRC+=             ${PKGDIR}/PLIST
 .endif
 
-.include "../../devel/ncurses/buildlink2.mk"
-.include "../../graphics/libgii/buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
+.include "../../graphics/libgii/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
