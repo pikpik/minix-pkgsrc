@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2002/10/09 14:09:28 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/19 10:55:03 rh Exp $
 
 DISTNAME=		gtk-engines-0.12
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtk-engines/0.12/}
 
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		# defined
 USE_BUILDLINK2=		# defined
 USE_X11BASE=		# defined
 USE_LIBTOOL=		# defined
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 BUILDLINK_DEPENDS.gtk=	gtk+>=1.2.9
 
