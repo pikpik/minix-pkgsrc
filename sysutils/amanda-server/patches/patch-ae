@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- changer-src/Makefile.in.old	Tue Feb 23 11:55:44 1999
 +++ changer-src/Makefile.in	Tue Feb 23 11:57:09 1999
 @@ -83,7 +83,7 @@

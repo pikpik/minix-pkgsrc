@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- example/chg-scsi.conf.old	Tue Feb 23 16:44:39 1999
 +++ example/chg-scsi.conf	Tue Feb 23 16:46:38 1999
 @@ -2,6 +2,8 @@
