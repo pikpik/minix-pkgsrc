@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/31 06:59:52 dsainty Exp $
 #
 
 DISTNAME=	emulator_src_${PKGVERSION}
@@ -34,7 +34,6 @@ USE_GMAKE=	YES
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--with-fltk=${BUILDLINK_PREFIX.fltk}
-CONFIGURE_ARGS+=	--enable-debug
 CONFIGURE_ENV+=		PACKAGE_SKINS_DIR=${POSE_SKINS_DIR}
 
 do-install:
