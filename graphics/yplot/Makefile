@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2002/04/28 18:08:27 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/21 23:46:52 jlam Exp $
 
 DISTNAME=		yplot-1.1.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=yplot/}
 
@@ -9,7 +9,7 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://yplot.sourceforge.net/
 COMMENT=		Yorick interface to PLplot
 
-DEPENDS+=		yorick-1.4*:../../math/yorick
+DEPENDS+=		yorick-1.5*:../../math/yorick
 DEPENDS+=		plplot>=5.0.3:../../graphics/plplot
 BUILD_DEPENDS+=		teTeX>=1.0:../../print/teTeX
 
@@ -20,7 +20,7 @@ BROKEN=			Compiling hangs, needs attention.
 EVAL_PREFIX+=		PLPLOT_PREFIX=plplot
 CONFIGURE_ENV+=		PLPLOT_PREFIX=${PLPLOT_PREFIX}
 EVAL_PREFIX+=		YORICK_PREFIX=yorick
-CONFIGURE_ENV+=		YORICK_CONTRIB_PREFIX=${YORICK_PREFIX}/lib/yorick/1.4
+CONFIGURE_ENV+=		YORICK_CONTRIB_PREFIX=${YORICK_PREFIX}/lib/yorick/1.5
 
 GNU_CONFIGURE=		yes
 MAKEFILE=		Makefile.build
