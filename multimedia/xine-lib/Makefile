@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/01/06 12:04:08 tron Exp $
+# $NetBSD: Makefile,v 1.17 2005/01/06 17:04:42 drochner Exp $
 
 .include "Makefile.common"
 
@@ -42,6 +42,5 @@ PLIST_SUBST+=		OPENGL_PLUGIN='@comment '
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../misc/libcdio/buildlink3.mk"
-.include "../../multimedia/xvidcore/buildlink3.mk"
 .include "../../sysutils/vcdimager-devel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
