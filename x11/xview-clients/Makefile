@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/09/14 14:07:49 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/10/16 06:39:28 jlam Exp $
 # $FreeBSD Id: Makefile,v 1.11 1996/11/16 10:49:52 asami Exp
 #
 
@@ -10,9 +10,8 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MAINTAINER=		jlam@netbsd.org
 
 DEPENDS+=		xview-lib>=3.2.1:../../x11/xview-lib
-
 # Need the following for xvmkmf
-DEPENDS+=		xview-config>=3.2.1nb1:../../xview-config
+DEPENDS+=		xview-config>=3.2.1nb1:../../x11/xview-config
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
@@ -29,6 +28,6 @@ post-patch:
 			-e "s,@X11BASE@,${X11BASE},g"	\
 			< $${file}.tmp > $${file};	\
 		${RM} -f $${file}.tmp;			\
-	done 
+	done
 
 .include "../../mk/bsd.pkg.mk"
