@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/libmpeg.a
+lib/libmpeg_p.a
+lib/libmpeg_pic.a
+lib/libmpeg.so.1.2
+@exec /sbin/ldconfig -m %B || true
+@unexec /sbin/ldconfig -m %B || true
+include/mpeg.h
