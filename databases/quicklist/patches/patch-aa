@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.2 2000/04/28 00:35:00 garbled Exp $
 --- doc/Makefile.in.orig	Tue Apr 25 17:35:41 2000
 +++ doc/Makefile.in	Tue Apr 25 17:36:18 2000
 @@ -89,7 +89,7 @@
