@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1059 2002/09/27 10:36:53 rh Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1060 2002/09/29 01:38:32 rh Exp $
 #
 # This file is in the public domain.
 #
@@ -79,10 +79,10 @@ PKG_JVM?=		sun-jdk
 PKG_JVM?=		kaffe
 .    endif
 .  endif
-.  if (${USE_JAVA} == "run")
-_JDK_DEPMETHOD=		_UNUSED_DEPENDS
-.  else
+.  if (${USE_JAVA} == "build")
 _JDK_DEPMETHOD=		BUILD_DEPENDS
+.  else
+_JDK_DEPMETHOD=		_UNUSED_DEPENDS
 .  endif
 .  if ${PKG_JVM} == "jdk"
 _JAVA_PKGBASE=		jdk
