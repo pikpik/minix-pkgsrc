@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.238 2004/05/22 05:36:37 sekiya Exp $
+# $NetBSD: Makefile,v 1.239 2004/06/05 19:08:47 nathanw Exp $
 #
 
 COMMENT=	Audio tools
@@ -10,6 +10,7 @@ SUBDIR+=	SDL_mixer
 SUBDIR+=	SDL_sound
 SUBDIR+=	abcde
 SUBDIR+=	amp
+SUBDIR+=	applerecords
 SUBDIR+=	arts
 SUBDIR+=	audacity
 SUBDIR+=	aumix
