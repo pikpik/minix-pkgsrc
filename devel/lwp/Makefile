@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/04/27 19:00:36 phil Exp $
+# $NetBSD: Makefile,v 1.10 2001/05/31 22:51:17 jlam Exp $
 #
 
 DISTNAME=	lwp-1.6
@@ -14,12 +14,9 @@ COMMENT=	Light Weight Process style threads
 # each arch. Mips has it, but it evidently needs more work.
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-m68k NetBSD-*-sparc*
 
-GNU_CONFIGURE=	YES
-USE_LIBTOOL=	YES
-
-LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
-
-# Don't even to try to use pthreaded version.
-CONFIGURE_ENV+=	ac_cv_lib_pthread_pthread_create=no
+GNU_CONFIGURE=		YES
+USE_LIBTOOL=		YES
+USE_BUILDLINK_ONLY=	YES
+LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../mk/bsd.pkg.mk"
