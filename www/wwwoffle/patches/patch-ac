@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- sockets6.c.orig	Mon Aug 13 23:16:47 2001
++++ sockets6.c
+@@ -507,9 +507,12 @@
+  struct sigaction action;
+  static char _host[NI_MAXHOST],_ip[46],_port[12];
+ 
+- *host="(unknown)";
+- *ip="(unknown)";
+- *port="0";
++ if(host)
++   *host="(unknown)";
++ if(ip)
++   *ip="(unknown)";
++ if(port)
++   *port="0";
+ 
+ start:
+ 
