@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- lisp/mail/mh-funcs.el.orig	Wed Feb 25 06:35:14 1998
 +++ lisp/mail/mh-funcs.el	Wed Feb 25 15:10:45 1998
 @@ -211,7 +211,7 @@

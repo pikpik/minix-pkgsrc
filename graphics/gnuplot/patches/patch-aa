@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- readline.c.orig	Fri Jan 30 07:58:22 1998
 +++ readline.c	Fri Jan 30 08:08:56 1998
 @@ -119,3 +119,3 @@

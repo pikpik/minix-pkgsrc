@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- info/filesys.h.orig	Mon Aug  4 22:21:35 1997
 +++ info/filesys.h	Wed May  6 23:00:23 1998
 @@ -71,7 +71,7 @@

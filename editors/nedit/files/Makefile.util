@@ -1,3 +1,6 @@
+# $NetBSD$
+#
+
 CC=cc
 AR=ar
 

@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
  
 echo "Running post-extract script"
 

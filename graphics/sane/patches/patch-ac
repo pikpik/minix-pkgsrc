@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- frontend/Makefile.in.orig	Fri May 15 08:18:10 1998
 +++ frontend/Makefile.in	Thu Aug  6 22:51:32 1998
 @@ -28,7 +28,7 @@

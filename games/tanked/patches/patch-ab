@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- server/maps.list.orig	Fri Jul 31 03:32:10 1998
 +++ server/maps.list	Fri Jul 31 03:32:29 1998
 @@ -1,8 +1,8 @@

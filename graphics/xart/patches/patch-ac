@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Local.config.orig	Tue Apr 21 01:10:02 1998
 +++ Local.config	Tue Apr 21 01:28:13 1998
 @@ -62,8 +62,8 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** ld/Makefile.orig	Sat Feb 19 23:32:12 1994
 --- ld/Makefile	Sun Mar 26 12:31:37 1995
 ***************

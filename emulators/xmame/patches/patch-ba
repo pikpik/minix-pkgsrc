@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/drivers/1942.c.orig	Wed Jun 17 04:28:50 1998
 +++ src/drivers/1942.c	Sun Jul  5 07:42:45 1998
 @@ -849,7 +849,7 @@

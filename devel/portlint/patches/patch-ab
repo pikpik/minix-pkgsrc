@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- lintpkgsrc.sh-orig	Sat Apr 25 13:37:27 1998
 +++ lintpkgsrc.sh	Sat Apr 25 13:36:10 1998
 @@ -0,0 +1,30 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Fri Jul 31 02:54:09 1998
 +++ Makefile	Fri Jul 31 04:12:51 1998
 @@ -0,0 +1,12 @@

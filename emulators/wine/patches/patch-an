@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- multimedia/mixer.c.orig	Sun May 31 18:14:57 1998
 +++ multimedia/mixer.c	Fri Jun 19 00:36:57 1998
 @@ -14,11 +14,15 @@

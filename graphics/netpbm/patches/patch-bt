@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./ppm/ppmmerge.c.orig	Mon Jan 31 11:44:31 1994
 +++ ./ppm/ppmmerge.c	Sat Aug 12 23:51:35 1995
 @@ -29,6 +29,10 @@

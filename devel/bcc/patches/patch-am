@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- as/readsrc.c.orig	Thu Jul 16 20:28:47 1998
 +++ as/readsrc.c	Thu Jul 16 22:30:18 1998
 @@ -220,7 +220,7 @@

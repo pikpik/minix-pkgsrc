@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./Makefile.in.org	Wed Nov 22 10:09:44 1995
 +++ ./Makefile.in	Thu Mar 28 23:02:49 1996
 @@ -131,15 +131,15 @@

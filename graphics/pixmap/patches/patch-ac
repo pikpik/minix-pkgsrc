@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./Imakefile.org	Fri May 13 04:04:38 1994
 +++ ./Imakefile	Mon Feb 27 16:31:46 1995
 @@ -27,10 +27,9 @@

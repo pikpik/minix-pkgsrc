@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./ppm/ppmtoxpm.c.orig	Mon Jan 31 02:44:41 1994
 +++ ./ppm/ppmtoxpm.c	Fri Aug 18 05:30:36 1995
 @@ -27,11 +27,25 @@

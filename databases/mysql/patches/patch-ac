@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- client/get_password.c.orig	Sun Jun 14 16:26:27 1998
 +++ client/get_password.c	Sun Jun 14 19:25:24 1998
 @@ -18,8 +18,8 @@

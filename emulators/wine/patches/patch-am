@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- multimedia/init.c.orig	Sat May 30 17:29:48 1998
 +++ multimedia/init.c	Fri Jun 19 00:52:52 1998
 @@ -29,6 +29,7 @@

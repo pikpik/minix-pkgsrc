@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Makeflags.orig	Mon Jul 14 20:32:13 1997
 +++ Makeflags	Mon Aug  3 00:50:27 1998
 @@ -1,12 +1,42 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- plist-clash.pl.orig	Sat Apr 25 15:32:11 1998
 +++ plist-clash.pl	Sat Apr 25 15:33:16 1998
 @@ -0,0 +1,96 @@

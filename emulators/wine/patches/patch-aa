@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Make.rules.in.orig	Sun Jan 18 12:50:38 1998
 +++ Make.rules.in	Sun Mar 15 23:30:47 1998
 @@ -33,6 +33,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- include/global.h.orig	Fri Feb 20 03:46:32 1998
 +++ include/global.h	Fri Feb 20 03:46:32 1998
 @@ -50,3 +50,3 @@

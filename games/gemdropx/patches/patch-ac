@@ -1,3 +1,5 @@
+$NetBSD$
+
 Fixes typo reported in PR pkg/5864 by
 Mason Loring Bliss <mason@acheron.middleboro.ma.us>
 

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./ppm/ppmtoicr.1.orig	Mon Oct  4 05:12:38 1993
 +++ ./ppm/ppmtoicr.1	Sat Jul 20 21:54:58 1996
 @@ -83,7 +83,7 @@

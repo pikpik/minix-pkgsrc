@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./pnm/pnmarith.1.orig	Sun Aug 13 00:08:22 1995
 +++ ./pnm/pnmarith.1	Sun Aug 13 00:08:46 1995
 @@ -4,7 +4,7 @@

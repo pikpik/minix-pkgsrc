@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- util.c.orig	Fri Jan 30 08:11:09 1998
 +++ util.c	Fri Jan 30 08:11:28 1998
 @@ -52,3 +52,3 @@

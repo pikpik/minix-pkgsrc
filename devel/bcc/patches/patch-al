@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- as/pops.c.orig	Thu Jul 16 20:24:45 1998
 +++ as/pops.c	Thu Jul 16 20:25:42 1998
 @@ -72,7 +72,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./pnm/pnmmerge.c.orig	Mon Jan 31 06:31:47 1994
 +++ ./pnm/pnmmerge.c	Thu Oct 16 11:08:33 1997
 @@ -30,6 +30,10 @@

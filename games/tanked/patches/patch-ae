@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- server/database.c.orig	Fri Jul 31 03:40:24 1998
 +++ server/database.c	Fri Jul 31 03:42:28 1998
 @@ -33,3 +33,3 @@

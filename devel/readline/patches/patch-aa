@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- display.c.old	Sat Jan 10 16:57:37 1998
 +++ display.c	Sat Jan 10 17:06:06 1998
 @@ -622,7 +622,7 @@

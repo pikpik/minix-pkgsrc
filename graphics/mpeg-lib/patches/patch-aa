@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- wrapper.c.orig	Tue Oct 10 14:08:39 1995
 +++ wrapper.c	Sat Jun 20 00:48:55 1998
 @@ -54,2 +54,7 @@

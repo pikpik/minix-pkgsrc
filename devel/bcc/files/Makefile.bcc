@@ -1,3 +1,6 @@
+# $NetBSD$
+#
+
 .include "../Makefile.inc"
 
 .PATH:	../bcc-cc1

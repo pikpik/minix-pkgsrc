@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- scsi.c.orig	Sat Jun 20 02:30:03 1998
 +++ scsi.c	Sat Jun 20 03:00:07 1998
 @@ -353,2 +353,11 @@

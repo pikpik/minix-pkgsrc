@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- /dev/null	Thu Oct 16 09:27:24 1997
 +++ ./pnm/pnmsmooth.orig	Mon Oct  4 05:11:56 1993
 @@ -0,0 +1,20 @@

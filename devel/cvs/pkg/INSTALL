@@ -1,5 +1,7 @@
 #! /bin/sh
 #
+# $NetBSD$
+#
 # Installation script for cvs
 #
 

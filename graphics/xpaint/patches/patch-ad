@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- dynPenOp.c.orig	Wed Aug 13 16:10:00 1997
 +++ dynPenOp.c	Fri Aug 29 14:08:48 1997
 @@ -28,6 +28,11 @@

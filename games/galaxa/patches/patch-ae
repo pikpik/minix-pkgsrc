@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- soundmgr.c.orig	Fri Jul 24 03:28:18 1998
 +++ soundmgr.c	Fri Jul 24 03:53:56 1998
 @@ -38,3 +38,3 @@

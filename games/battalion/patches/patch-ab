@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- battalion.c.orig	Thu Jan 16 09:31:59 1997
 +++ battalion.c	Sat Jul 25 08:58:02 1998
 @@ -2876,7 +2876,12 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/Makefile.in.orig	Fri Apr 24 02:17:04 1998
 +++ src/Makefile.in	Thu Jul 16 13:57:13 1998
 @@ -2,9 +2,9 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- ./xvpcd.c.org	Wed Jul  2 23:59:27 1997
 +++ ./xvpcd.c	Thu Jul  3 00:17:25 1997
 @@ -623,7 +623,7 @@

@@ -1,4 +1,7 @@
 #!/usr/pkg/bin/perl
+#
+# $NetBSD$
+#
 open (FILE,"XXXLOCALBASEXXX/etc/rplay.conf");
 open (OUT,">tmp");
 @data = <DATA>;

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- doc/xmessrc.dist.orig	Tue Jun  9 08:14:22 1998
 +++ doc/xmessrc.dist	Thu Jul  9 08:11:39 1998
 @@ -21,7 +21,7 @@

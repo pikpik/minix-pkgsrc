@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- util/texindex.c.orig	Mon Mar  9 08:48:33 1998
 +++ util/texindex.c	Mon Mar  9 08:48:45 1998
 @@ -1683,7 +1683,8 @@
