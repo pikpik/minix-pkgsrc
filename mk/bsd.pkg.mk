@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.227 1999/03/16 09:50:28 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.228 1999/03/16 15:28:37 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -233,7 +233,7 @@ TOUCH?=			/usr/bin/touch
 TOUCH_FLAGS?=	-f
 
 .if (${OPSYS} == "SunOS")
-PATCH?=			${LOCALBASE}/bin/patch
+PATCH?=			${LOCALBASE}/bin/patch -b
 .else
 PATCH?=			/usr/bin/patch
 .endif
