@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.5295 2004/03/24 11:56:35 wiz Exp $
+$NetBSD: CHANGES,v 1.5296 2004/03/24 20:35:09 xtraeme Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -1514,3 +1514,6 @@ Changes to the packages collection and infrastructure in 2004:
 	Updated acpi-iasl to 20040311 [xtraeme 2004-03-23]
 	Updated XaoS to 3.0nb1 [wiz 2004-03-24]
 	Updated xchat2 to 2.0.8 [xtraeme 2004-03-24]
+	Updated ghostscript-gnu to 7.07 [wiz 2004-03-24]
+	Updated ghostscript-gnu-x11 to 7.07 [wiz 2004-03-24]
+	Updated ghostscript-gnu-nox11 to 7.07 [wiz 2004-03-24]
