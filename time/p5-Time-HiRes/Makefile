@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/10/18 15:20:20 veego Exp $
+# $NetBSD: Makefile,v 1.7 2001/11/26 06:49:55 jlam Exp $
 #
 
 DISTNAME=		Time-HiRes-01.20

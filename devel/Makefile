@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.293 2002/06/19 13:01:31 agc Exp $
+# $NetBSD: Makefile,v 1.294 2002/06/26 07:54:14 cjs Exp $
 #
 
 COMMENT=	Development utilities
@@ -215,8 +215,6 @@ SUBDIR+=	p5-Test-Harness
 SUBDIR+=	p5-Test-Simple
 SUBDIR+=	p5-Test-Unit
 SUBDIR+=	p5-Tie-IxHash
-SUBDIR+=	p5-Time-HiRes
-SUBDIR+=	p5-TimeDate
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-perl-headers
 SUBDIR+=	palmos-includes
