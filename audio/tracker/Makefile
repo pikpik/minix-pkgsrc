@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/06/26 17:16:53 seb Exp $
+# $NetBSD: Makefile,v 1.26 2003/07/17 21:23:34 grant Exp $
 # FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp
 #
 
@@ -28,7 +28,6 @@ USE_PKGINSTALL=	yes
 EGDIR=		${PREFIX}/share/examples/tracker
 CONF_FILES=	${EGDIR}/compression_methods ${PKG_SYSCONFDIR}/compression_methods
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=	YES
 INFO_FILES=	tracker.info
 

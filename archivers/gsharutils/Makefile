@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/07/13 13:50:20 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2003/07/17 21:21:13 grant Exp $
 
 DISTNAME=	sharutils-4.2.1
 PKGNAME=	g${DISTNAME}
@@ -17,7 +17,6 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
 INSTALL_TARGET=		install install-man
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		remsync.info sharutils.info
 

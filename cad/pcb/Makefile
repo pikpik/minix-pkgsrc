@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/06/27 12:09:39 seb Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:25:17 grant Exp $
 # FreeBSD Id: Makefile,v 1.19 1998/10/31 18:05:31 jseger Exp
 #
 
@@ -27,7 +27,6 @@ EGDIR=			${PREFIX}/share/examples/pcb
 INFODIR=		${PREFIX}/info
 M4DIR=			${PREFIX}/lib/X11/pcb/m4
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	pcb.info
 CONF_FILES=	${EGDIR}/local.inc ${PKG_SYSCONFDIR}/local.inc
 

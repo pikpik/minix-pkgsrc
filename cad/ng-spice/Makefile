@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/13 13:50:42 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/17 21:25:13 grant Exp $
 #
 
 DISTNAME=	ng-spice-rework-14
@@ -22,7 +22,6 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--disable-debug
 LIBS+=			${LIBGETOPT}
 
-USE_NEW_TEXINFO=	YES
 INFO_FILES=	ngspice.info
 
 .include "../../devel/libgetopt/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/10/16 23:43:06 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2003/06/26 13:34:05 seb Exp $
 
 DISTNAME=		libmikmod-3.1.10
 CATEGORIES=		audio
@@ -12,7 +12,6 @@ USE_GMAKE=		# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
 USE_BUILDLINK2=		# defined
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		mikmod.info
 

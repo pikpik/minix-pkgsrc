@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/15 09:23:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:25:04 grant Exp $
 #
 
 DISTNAME=		geda-gschem-${PKGVERSION}
@@ -24,7 +24,6 @@ GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
-USE_NEW_TEXINFO=	YES
 INFO_FILES=		gschemdoc.info
 
 .include "../../cad/libgeda/buildlink2.mk"

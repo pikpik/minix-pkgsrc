@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/06/29 11:13:49 seb Exp $
+# $NetBSD: Makefile,v 1.30 2003/07/17 21:28:05 grant Exp $
 #
 
 DISTNAME=	gdbm-1.8.3
@@ -13,7 +13,6 @@ USE_BUILDLINK2=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-USE_NEW_TEXINFO=	YES
 INFO_FILES=		gdbm.info
 CONFIG_GUESS_OVERRIDE=	${WRKSRC}/config.guess
 CONFIG_SUB_OVERRIDE=	${WRKSRC}/config.sub

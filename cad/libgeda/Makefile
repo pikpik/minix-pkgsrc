@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/15 09:23:37 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19 2003/07/17 21:25:08 grant Exp $
 #
 
 DISTNAME=		libgeda-${PKGVERSION}
@@ -21,7 +21,6 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
-USE_NEW_TEXINFO=	YES
 
 INFO_FILES=		libgedadoc.info
 

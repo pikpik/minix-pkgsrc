@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/07/21 16:32:10 martti Exp $
+# $NetBSD: Makefile,v 1.25 2003/08/08 15:42:15 seb Exp $
 #
 
 DISTNAME=	dinotrace-9.1k
@@ -13,7 +13,6 @@ USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 USE_PERL5=		build
-USE_NEW_TEXINFO=	YES
 INFO_FILES=		dinotrace.info
 
 .include "../../mk/motif.buildlink2.mk"

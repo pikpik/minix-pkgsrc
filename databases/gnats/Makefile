@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/06/29 12:54:57 seb Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:28:08 grant Exp $
 
 DISTNAME=	gnats-3.113.1
 CATEGORIES=	devel
@@ -15,7 +15,6 @@ GNU_CONFIGURE=	YES
 USE_GMAKE=	yes
 USE_BISON=	yes
 
-USE_NEW_TEXINFO=	YES
 USE_MAKEINFO=	YES
 INFO_FILES=	gnats.info send-pr.info
 
