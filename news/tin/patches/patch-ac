@@ -1,9 +1,9 @@
 $NetBSD$
 
---- src/mail.c.orig	Mon Jul  3 13:17:46 2000
-+++ src/mail.c	Tue May 22 14:22:33 2001
-@@ -62,6 +62,20 @@
- 			continue;
+--- src/mail.c.orig	Wed May 23 11:02:11 2001
++++ src/mail.c	Mon Nov  4 13:38:33 2002
+@@ -75,6 +75,20 @@
+ 		}
  
  		/*
 +		 * Update mailgroup info
