@@ -23,7 +23,6 @@ USE_LIBTOOL=		YES
 
 MAKE_FLAGS+=	PREFIX="${PREFIX}"
 MAKE_FLAGS+=	CCOMP="${CFLAGS}"
-MAKEFILE=	Makefile.dist
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -41,6 +40,7 @@ REPLACE_PERL=	scripts/addxface scripts/deepen scripts/facesaddr \
 		scripts/newsfrom.faces scripts/rotary.faces
 
 do-configure:
+	${LN} -sf Makefile.dist ${WRKSRC}/${MAKEFILE}
 	cd ${WRKSRC};							\
 	files="								\
 		x11.c							\
