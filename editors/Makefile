@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.90 2003/07/04 11:53:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.91 2003/12/14 03:27:39 xtraeme Exp $
 #
 
 COMMENT=	Editors
 
 SUBDIR+=	TeXmacs
+SUBDIR+=	abiword
 SUBDIR+=	abiword2
 SUBDIR+=	abiword2-gnome
-SUBDIR+=	abiword
 SUBDIR+=	beav
 SUBDIR+=	beaver
 SUBDIR+=	biew
