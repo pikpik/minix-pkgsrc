@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2000/12/17 23:40:54 wiz Exp $
+# $NetBSD: Makefile,v 1.74 2000/12/18 23:35:04 tsarna Exp $
 #
 
     SUBDIR += 9menu
@@ -47,7 +47,6 @@
     SUBDIR += pty-redir
     SUBDIR += py-readline
     SUBDIR += qterm
-    SUBDIR += quicklist
     SUBDIR += root
     SUBDIR += rpm
     SUBDIR += sci
