@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- lib/Imakefile.orig	Wed Aug 20 07:46:03 1997
++++ lib/Imakefile	Mon Feb 11 12:01:37 2002
+@@ -67,9 +67,9 @@
+ 	     $(XDPMSLIBDIR) \
+ 	     Xp $(ZLIBDIR)
+ #else
+-#if XnestServer
++#if 1
+ XEXTDIR = Xext
+ #endif
+ 
+ LINTSUBDIRS = Xau Xdmcp X11 $(XEXTDIR) $(XKBLIBDIR) $(XKBUILIBDIR) \
+ 	      $(LBXUTILDIR) $(XF86EXTLIBS) $(ZLIBDIR)
