@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/17 22:51:27 grant Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/30 16:32:09 jmmv Exp $
 #
 # XXX do not use -- see ../netatalk instead
 
@@ -16,7 +16,7 @@ COMMENT=	Netatalk appletalk file and print services, enhanced by Adrian Sun
 CONFLICTS=	netatalk-[0-9]*
 CONFLICTS+=	netatalk-umich-[0-9]*
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 
 MAKE_ENV+=		ETCDIR="${PKG_SYSCONFDIR}"
