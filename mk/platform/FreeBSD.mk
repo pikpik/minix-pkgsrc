@@ -1,4 +1,4 @@
-# $NetBSD: FreeBSD.mk,v 1.1 2004/10/06 20:51:47 jlam Exp $
+# $NetBSD: FreeBSD.mk,v 1.2 2004/10/13 15:31:31 tv Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -98,7 +98,6 @@ DEPENDS+=	${USE_USERADD:D${_USER_DEPENDS}}
 DEPENDS+=	${USE_GROUPADD:D${_USER_DEPENDS}}
 .endif
 
-CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		0022
 .if ${OBJECT_FMT} == "ELF"
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
