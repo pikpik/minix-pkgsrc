@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2002/01/14 21:15:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2002/01/26 18:30:08 hubertf Exp $
 
-DISTNAME=		silc-client-0.7.3
+DISTNAME=		silc-client-0.7.6.2
 CATEGORIES=		chat
 MASTER_SITES=		http://silcnet.org/download/client/sources/ \
 			ftp://ftp.silcnet.org/silc/client/sources/ \
@@ -35,8 +35,6 @@ CONFIGURE_ARGS+=	--with-ncurses=${BUILDLINK_DIR}
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
-.include "../../devel/gettext-lib/buildlink.mk"
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../devel/glib/buildlink.mk"
-.include "../../devel/pth/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
