@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.53 2000/07/31 01:56:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.54 2000/08/15 01:08:48 jlam Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
     SUBDIR += STk
+    SUBDIR += awka
     SUBDIR += bwbasic
     SUBDIR += baci
     SUBDIR += caml-light
