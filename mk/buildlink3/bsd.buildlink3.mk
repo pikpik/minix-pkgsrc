@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.147 2004/08/10 15:16:29 jlam Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.148 2004/08/13 00:48:05 dmcmahill Exp $
 #
 # An example package buildlink3.mk file:
 #
@@ -583,7 +583,7 @@ BUILDLINK_CONTENTS_FILTER.${_pkg_}?=					\
 BUILDLINK_FILES_CMD.${_pkg_}?=						\
 	${_BLNK_PKG_INFO.${_pkg_}} -f ${BUILDLINK_PKGNAME.${_pkg_}} |	\
 	${SED} -n '/File:/s/^[ 	]*File:[ 	]*//p' |		\
-	${BUILDLINK_CONTENTS_FILTER.${_pkg_}}
+	${BUILDLINK_CONTENTS_FILTER.${_pkg_}} | ${CAT}
 
 # _BLNK_FILES_CMD.<pkg> combines BUILDLINK_FILES_CMD.<pkg> and
 # BUILDLINK_FILES.<pkg> into one command that outputs all of the files
