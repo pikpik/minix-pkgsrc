@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/20 18:16:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/24 06:10:27 wiz Exp $
 #
 
-DISTNAME=	openbox-2.2.0
-PKGREVISION=	1
+DISTNAME=	openbox-2.2.3
 CATEGORIES=	wm
 MASTER_SITES=	http://icculus.org/openbox/releases/
 
@@ -15,7 +14,6 @@ DEPENDS+=	bsetroot>=0.1:../../wm/bsetroot
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 
-WRKSRC=		${WRKDIR}/openbox-2.2.0
-
+.include "../../fonts/Xft2/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
