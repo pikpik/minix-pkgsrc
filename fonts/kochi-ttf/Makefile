@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:18 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:57 jmmv Exp $
 
 DISTNAME=	kochi-gothic-20020503
 PKGNAME=	kochi-ttf-20020503
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 DISTFILES=	kochi-gothic-${KOCHI_VERSION}${EXTRACT_SUFX} \
 		kochi-mincho-${KOCHI_VERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	uebayasi@soum.co.jp
+MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.on.cs.keio.ac.jp/~yasu/jp_fonts.html
 COMMENT=	Free Japanese TrueType font by Yasuyuki Furukawa
 
