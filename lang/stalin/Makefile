@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:45:25 grant Exp $
+# $NetBSD: Makefile,v 1.19 2004/04/28 05:06:28 snj Exp $
 
 DISTNAME=		stalin-0.9
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.nj.nec.com/pub/qobi/
 EXTRACT_SUFX=		.tgz

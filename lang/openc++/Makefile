@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/01/24 13:51:14 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/09 02:26:14 snj Exp $
 #
 
 DISTNAME=	opencxx2512
 PKGNAME=	openc++-2.5.12
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opencxx/}
 

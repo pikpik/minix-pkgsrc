@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/02/14 17:21:43 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/12 03:32:30 snj Exp $
 
 DISTNAME=		ksi-3.4.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ksi/}
 
