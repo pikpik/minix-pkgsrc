@@ -30,9 +30,15 @@ for i in `${SED} -n -e '/^@comment begin DSO$/,/^@comment end DSO$/p' ${PLIST_SR
 	${BSD_INSTALL_PROGRAM} ${WRKSRC}/${src} ${PREFIX}/$i
 done
 
-# install DATA  
+# install DATA
 for i in `${SED} -n -e '/^@comment begin DATA$/,/^@comment end DATA$/p' ${PLIST_SRC} | ${EGREP} -v ^@comment` ; do
 	src=`echo $i | sed -e 's@lib/mozilla@dist/bin@'`;
+	${BSD_INSTALL_DATA} ${WRKSRC}/${src} ${PREFIX}/$i
+done
+
+# install INCLUDE
+for i in `${SED} -n -e '/^@comment begin INCLUDE$/,/^@comment end INCLUDE$/p' ${PLIST_SRC} | ${EGREP} -v ^@comment` ; do
+	src=`echo $i | sed -e 's@include/mozilla@dist/include@'`;
 	${BSD_INSTALL_DATA} ${WRKSRC}/${src} ${PREFIX}/$i
 done
 

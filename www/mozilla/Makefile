@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.66 2001/05/22 09:32:27 wiz Exp $
+# $NetBSD: Makefile,v 1.65 2001/05/11 00:37:45 taya Exp $
 
-MOZ_VER=	0.9
+MOZ_VER=	0.9.1
 DISTNAME=	mozilla-source-${MOZ_VER}
 PKGNAME=	mozilla-${MOZ_VER}
 WRKSRC=		${WRKDIR}/mozilla
@@ -37,7 +37,7 @@ CONFIGURE_ARGS=	--disable-tests \
 		--enable-svg \
 		--with-extensions=cookie,irc,wallet,xmlextras,xml-rpc \
 		--without-pthreads \
-		--enable-modules=all,psm2
+		--enable-crypto
 
 .if  ${MACHINE_ARCH} == "m68k"
 DBG=
@@ -69,10 +69,6 @@ SHAREMODE?=	644
 pre-configure:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/autoconf)
 	(cd ${WRKSRC}/nsprpub && ${LOCALBASE}/bin/autoconf)
-
-do-build:
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} BUILD_MODULES=all
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKE_FLAGS} BUILD_MODULES=psm2
 
 post-build:
 	${ECHO} skin,install,select,classic/1.0 >> ${WRKSRC}/dist/bin/chrome/installed-chrome.txt
