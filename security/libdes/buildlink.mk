@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .include "../../mk/bsd.buildlink.mk"
 
 BUILDLINK_DEPENDS.libdes?=	libdes-4.04b
