@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.3 1997/12/29 19:15:02 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1998/02/14 22:08:42 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/07/31 07:23:58 max Exp
 #
 
 #    SUBDIR += aftp
 #    SUBDIR += bsvc
+   SUBDIR += compat11
+   SUBDIR += compat12
 #    SUBDIR += cpmemu
 #    SUBDIR += cpmtools
 #    SUBDIR += fmsx
