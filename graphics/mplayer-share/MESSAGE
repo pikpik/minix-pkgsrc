@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+To view subtitles, you must copy/link one of the supplied fonts from
+${PREFIX}/share/mplayer/fonts to ~/.mplayer/font.
+
+===========================================================================
