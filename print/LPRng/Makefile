@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/24 22:46:11 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/21 13:46:50 adam Exp $
 # FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
 
 DISTNAME=	LPRng-3.6.26
@@ -6,7 +6,7 @@ CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.lprng.com/
 COMMENT=	"meta-package" for LPRng, Enhanced Printer Spooler
 
