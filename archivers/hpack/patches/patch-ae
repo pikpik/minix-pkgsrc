@@ -1,12 +1,12 @@
 $NetBSD$
 
---- system.h.orig	1993-08-27 12:16:40.000000000 -0500
+--- system.h.orig	1993-08-27 13:16:40.000000000 -0400
 +++ system.h
 @@ -779,6 +779,10 @@ void strlwr( char *string );
  #if defined( AIX ) || defined( AIX370 ) || defined( AIX386 )
    #define MAX_PATH			( 1023 + 1 )
    #define MAX_FILENAME		( 254 + 1 )
-+#elif defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__APPLE__)
++#elif defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__APPLE__) || defined(__INTERIX)
 +  #include <limits.h>
 +  #define MAX_PATH          ( _POSIX_PATH_MAX + 1 )
 +  #define MAX_FILENAME		( NAME_MAX + 1 )
@@ -17,7 +17,7 @@ $NetBSD$
  #if defined( AIX ) || defined( AIX370 )
    #define NEED_STRLWR					/* AIX RS6000, AIX 370 */
    #define NEED_STRICMP
-+#elif defined( __FreeBSD__ ) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__APPLE__)                                   /* Amdahl UTS4 */
++#elif defined( __FreeBSD__ ) || defined(__OpenBSD__) || defined(__NetBSD__) || defined(__APPLE__) || defined(__INTERIX)                                   /* Amdahl UTS4 */
 +  #include <unistd.h>
 +  #define tell(fd) lseek((fd),(off_t)0,SEEK_CUR)
 +  #define NEED_STRLWR
