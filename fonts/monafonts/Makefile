@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/24 03:10:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/31 13:59:24 toshii Exp $
 
-DISTNAME=	monafont-2.21
+DISTNAME=	monafont-2.22
 PKGNAME=	${DISTNAME:S/font/fonts/}
 CATEGORIES=	fonts japanese
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=monafont/}
