@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2003/04/28 23:18:18 jdolecek Exp $
+# $NetBSD: Makefile,v 1.82 2003/06/03 14:36:17 wiz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -25,6 +25,7 @@ SUBDIR+=	hercules-images
 SUBDIR+=	ia64sim
 SUBDIR+=	linux-locale
 SUBDIR+=	linuxppc_lib
+SUBDIR+=	lrmi
 SUBDIR+=	minivmac
 SUBDIR+=	mmix
 SUBDIR+=	netbsd32_compat14
