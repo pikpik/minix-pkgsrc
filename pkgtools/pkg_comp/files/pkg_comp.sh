@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pkg_comp.sh,v 1.19 2004/02/21 13:08:31 jmmv Exp $
+# $NetBSD: pkg_comp.sh,v 1.20 2004/04/02 18:03:01 jmmv Exp $
 #
 # pkg_comp - Build packages inside a clean chroot environment
 # Copyright (c) 2002, 2003, 2004 Julio M. Merino Vidal <jmmv@NetBSD.org>
@@ -594,7 +594,7 @@ EOF
 #
 makeroot_digest()
 {
-    ( PKGSRC_COMPILER=; export PKGSRC_COMPILER; pkg_build pkgtools/digest )
+    ( PKGSRC_COMPILER=gcc; export PKGSRC_COMPILER; pkg_build pkgtools/digest )
 }
 
 # makeroot_libkver
