@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2002/09/08 09:03:37 zuntum Exp $
+# $NetBSD: Makefile,v 1.41 2002/10/13 07:33:28 jlam Exp $
 #
 
 DISTNAME=		kaffe-1.0.7
@@ -35,7 +35,7 @@ CONFIGURE_ENV+=		VM_LIBS="-lc"
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/license.terms ${PREFIX}
 
-test:
+test: build
 	@cd ${WRKSRC}/test && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} check
 
 .include "../../devel/gmp/buildlink2.mk"
