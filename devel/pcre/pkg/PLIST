@@ -1,7 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/08/26 12:52:06 proff Exp $
+@comment $NetBSD: PLIST,v 1.2 1999/09/18 20:49:54 ad Exp $
 bin/pgrep
 include/pcre.h
+include/pcreposix.h
 lib/libpcre.a
+lib/libpcreposix.a
 man/man3/pcreposix.3
 man/man3/pcre.3
 man/man1/pgrep.1
