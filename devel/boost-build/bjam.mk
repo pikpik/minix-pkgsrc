@@ -1,7 +1,6 @@
-# $NetBSD$
+# $NetBSD: bjam.mk,v 1.1 2005/02/26 22:48:35 jmmv Exp $
 #
 
-USE_BUILDLINK3=		YES
 .include "../../devel/boost-build/buildlink3.mk"
 
 .include "toolset.mk"
