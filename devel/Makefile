@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.275 2002/03/23 11:00:46 agc Exp $
+# $NetBSD: Makefile,v 1.276 2002/03/24 20:20:09 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -14,6 +14,7 @@ SUBDIR+=	arch
 SUBDIR+=	argtable
 SUBDIR+=	as31
 SUBDIR+=	astyle
+SUBDIR+=	atk
 SUBDIR+=	autoconf
 SUBDIR+=	autoconf-devel
 SUBDIR+=	automake
@@ -76,6 +77,7 @@ SUBDIR+=	gettext-m4
 SUBDIR+=	gindent
 SUBDIR+=	glade
 SUBDIR+=	glib
+SUBDIR+=	glib2
 SUBDIR+=	global
 SUBDIR+=	gmake
 SUBDIR+=	gmp
@@ -205,6 +207,7 @@ SUBDIR+=	p5-TimeDate
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-perl-headers
 SUBDIR+=	palmos-includes
+SUBDIR+=	pango
 SUBDIR+=	pardiff
 SUBDIR+=	patch
 SUBDIR+=	pccts
