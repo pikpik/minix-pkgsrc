@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.4 2000/06/18 00:07:05 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/27 02:46:07 jlam Exp $
 #
 
-DISTNAME=	adzap-20000616
+DISTNAME=	adzap-20010112
 CATEGORIES=	www perl5
 MASTER_SITES=	http://www.zip.com.au/~cs/adzap/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.zip.com.au/~cs/adzap/index.html
+WRKSRC=		${WRKDIR}/adzap
 
 MESSAGE_FILE=	${WRKDIR}/MESSAGE
 
-NO_WRKSUBDIR=	# defined
 NO_BUILD=	# defined
 USE_PERL5=	# defined
 
