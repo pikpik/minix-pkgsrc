@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- opt.c.orig	Mon Aug 27 12:19:27 2001
++++ opt.c	Mon Aug 27 12:19:42 2001
+@@ -80,6 +80,7 @@
+ */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <string.h>
+ #include "opt.h"
+ 
