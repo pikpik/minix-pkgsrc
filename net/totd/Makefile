@@ -1,10 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2000/12/14 21:43:20 itojun Exp $
+# $NetBSD: Makefile,v 1.8 2001/02/17 18:19:47 wiz Exp $
 #
 
 DISTNAME=	totd-1.1p5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/Vermicelli/
 EXTRACT_SUFX=	.tgz
+
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCHFILES=	totd-1.1p5-20010310a.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	feico@pasta.cs.uit.no
 HOMEPAGE=	http://www.vermicelli.pasta.cs.uit.no/ipv6/software.html
