@@ -2,5 +2,5 @@
 lib/X11/fonts/TTF/Eunjin.ttf
 lib/X11/fonts/TTF/Hmfs.ttf
 lib/X11/fonts/TTF/Ongdalsam.ttf
-share/doc/alee-ttf/Copyright
+share/doc/alee-ttf/COPYING
 @dirrm share/doc/alee-ttf
