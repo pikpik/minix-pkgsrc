@@ -2,8 +2,7 @@ $NetBSD$
 
 --- ksysguard/ksysguardd/NetBSD/apm.c.orig	Thu Oct  3 22:13:00 2002
 +++ ksysguard/ksysguardd/NetBSD/apm.c
-@@ -19,6 +19,7 @@
- 	$Id: patch-ev,v 1.1 2003/03/11 13:10:30 markd Exp $
+@@ -20,5 +20,6 @@
  */
  
 +#ifdef __i386__
