@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/05/02 10:29:21 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2004/07/03 14:00:28 grant Exp $
 #
 
 DISTNAME=	xmlcatmgr-2.1
@@ -37,7 +37,7 @@ INSTALL_DIRS=	${WRKSRC}/work
 
 .include "../../mk/compiler.mk"
 
-.if !empty(PKGSRC_COMPILER:Mmipspro)
+.if !empty(CC_VERSION:MMIPSpro)
 CFLAGS+=	-c99
 .endif
 
