@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2000/02/12 16:07:08 fredb Exp $
+# $NetBSD: Makefile,v 1.12 2000/02/12 16:26:52 fredb Exp $
 #
 
 DISTNAME=	libtool-1.3.4
@@ -10,6 +10,9 @@ HOMEPAGE=	http://www.profitpress.com/libtool/
 
 CONFLICTS=	glibtool-*
 GNU_CONFIGURE=	yes
+
+test check: build
+	cd ${WRKSRC} && ${MAKE} check
 
 .include "../../mk/bsd.prefs.mk"
 
