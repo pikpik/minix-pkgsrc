@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+case $2 in
+        DEINSTALL) cat << EOF
+===========================================================================
+If you don't want to use openldap anymore, remove @PREFIX@/etc/openldap.
+===========================================================================
+
+EOF
+        ;;
+esac
