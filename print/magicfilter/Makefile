@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2000/03/30 05:50:13 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2000/04/10 00:06:28 jlam Exp $
 
 DISTNAME=	magicfilter-1.2
 CATEGORIES=	print
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/printing/}
 MAINTAINER=	packages@netbsd.org
 
 DEPENDS+=	a2ps-*:../../print/a2ps
-DEPENDS+=	ghostscript-[0-9]*:../../print/ghostscript5
+DEPENDS+=	ghostscript-5.50nb1:../../print/ghostscript5
 DEPENDS+=	netpbm-*:../../graphics/netpbm
 DEPENDS+=	teTeX-bin-*:../../print/teTeX-bin
 DEPENDS+=	papersize-*:../../print/papersize
