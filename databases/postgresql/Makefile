@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2001/02/13 02:37:43 jlam Exp $
+# $NetBSD: Makefile,v 1.61 2001/02/16 14:17:37 wiz Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
@@ -20,7 +20,7 @@ NOT_FOR_PLATFORM=	*-*-mips
 # PGGROUP	group of the database administrator
 #
 PGUSER?=		pgsql
-PGGROUP?=		ingres
+PGGROUP?=		pgsql
 
 MESSAGE=		${FILESDIR}/post-install-notes
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
