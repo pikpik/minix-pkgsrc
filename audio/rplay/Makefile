@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/01/11 15:10:56 skrll Exp $
-# FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
+# $NetBSD: Makefile,v 1.35 2002/02/18 15:14:02 seb Exp $
 #
 
 DISTNAME=	rplay-3.3.2
@@ -11,7 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://rplay.doit.org/
 COMMENT=	Network audio player
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
@@ -32,9 +31,9 @@ post-install:
 	${SED} ${FILES_SUBST_SED} ${FILESDIR}/rplayd.sh > ${WRKDIR}/rplayd
 	${INSTALL_SCRIPT} ${WRKDIR}/rplayd ${PREFIX}/etc/rc.d/rplayd
 
-.include "../../audio/gsm/buildlink.mk"
-.include "../../devel/readline/buildlink.mk"
-.include "../../devel/rx/buildlink.mk"
+.include "../../audio/gsm/buildlink2.mk"
+.include "../../devel/readline/buildlink2.mk"
+.include "../../devel/rx/buildlink2.mk"
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
