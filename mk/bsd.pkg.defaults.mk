@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.153 2003/06/05 12:13:34 markd Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.154 2003/06/12 15:27:08 jschauma Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -678,11 +678,6 @@ DELIVER_SUID?=	NO
 DOVECOT_USE_GNUTLS?=	NO
 # Used by dovecot package to determine whether to use GnuTLS or OpenSSL as the
 # underlying crypto library.
-# Possible: YES, NO
-# Default: NO
-
-DOVECOT_USE_LDAP?=	NO
-# Used by dovecot package to determine whether to enable LDAP support.
 # Possible: YES, NO
 # Default: NO
 
@@ -1697,7 +1692,7 @@ USE_MMX?=	NO
 # Default: NO
 
 USE_OPENLDAP?=	NO
-# Enable openldap support in gnupg.
+# Enable openldap support.  Used in gnupg, dovecot.
 # Possible: YES, or NO.
 # Default: NO
 
