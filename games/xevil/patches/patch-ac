@@ -1,17 +1,16 @@
---- game.C.orig	Thu Jul 30 05:20:22 1998
-+++ game.C	Thu Jul 30 05:21:16 1998
-@@ -388,3 +388,3 @@
-   int weaponsNum;
--  PhysicalContext *weapons[A_CLASSES_NUM];
-+  const PhysicalContext *weapons[A_CLASSES_NUM];
-   weaponsNum = locator->filter_contexts(weapons,NULL,
-@@ -392,3 +392,3 @@
-   int oItemsNum;
--  PhysicalContext *oItems[A_CLASSES_NUM];
-+  const PhysicalContext *oItems[A_CLASSES_NUM];
-   oItemsNum = locator->filter_contexts(oItems,NULL,
-@@ -1383,3 +1383,3 @@
-       // Get list of all classes that are potential Human classes.
--      PhysicalContext *list[A_CLASSES_NUM];
-+      const PhysicalContext *list[A_CLASSES_NUM];
-       int size = locator.filter_contexts(list,NULL,potential_human_filter);
+$NetBSD$
+
+--- makefile.orig	2003-03-23 00:09:08.000000000 +0000
++++ makefile	2003-08-16 11:20:02.000000000 +0000
+@@ -63,11 +63,6 @@
+ 
+ # Could also include serverping in the distribution
+ $(OBJ_DIR)/xevil$(VERSION).$(PCKG_NAME).tar.Z::
+-	cp readme.txt $(OBJ_DIR)
+-	cp gpl.txt $(OBJ_DIR)
+-	cp -r instructions $(OBJ_DIR)
+-	(cd $(OBJ_DIR); tar cf xevil$(VERSION).$(PCKG_NAME).tar xevil readme.txt gpl.txt instructions)
+-	(cd $(OBJ_DIR); $(COMPRESS) -f xevil$(VERSION).$(PCKG_NAME).tar)
+ 
+ ## Make a distribution file.
+ #dist:

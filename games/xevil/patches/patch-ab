@@ -1,7 +1,17 @@
---- actual.C.orig	Thu Jul 30 05:18:48 1998
-+++ actual.C	Thu Jul 30 05:19:19 1998
-@@ -687,3 +687,3 @@
- {
--  PhysicalContext *list[A_CLASSES_NUM];
-+  const PhysicalContext *list[A_CLASSES_NUM];
-   int size;
+$NetBSD$
+
+--- cmn/utils.cpp.orig	Sun Apr 13 15:11:54 2003
++++ cmn/utils.cpp	Sun Apr 13 15:12:19 2003
+@@ -483,11 +483,7 @@
+ #endif
+ 
+ 
+-#ifdef UNAME_USR_BIN
+-#define UNAME_PATH "/usr/bin/uname"
+-#else
+-#define UNAME_PATH "/bin/uname"
+-#endif
++#define UNAME_PATH "@UNAME@"
+ 
+ #ifdef X11
+   FILE* fp = popen(UNAME_PATH " -a","r");
