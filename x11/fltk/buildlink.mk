@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.5 2001/06/11 01:59:38 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.6 2001/06/23 19:27:01 jlam Exp $
 #
 # This Makefile fragment is included by packages that use FLTK.
 #
@@ -15,6 +15,8 @@
 .if !defined(FLTK_BUILDLINK_MK)
 FLTK_BUILDLINK_MK=	# defined
 
+.include "../../mk/bsd.buildlink.mk"
+
 BUILDLINK_DEPENDS.fltk?=	fltk>=1.0.9
 DEPENDS+=	${BUILDLINK_DEPENDS.fltk}:../../x11/fltk
 
@@ -29,7 +31,5 @@ BUILDLINK_TARGETS+=	${BUILDLINK_TARGETS.fltk}
 
 pre-configure: ${BUILDLINK_TARGETS.fltk}
 fltk-buildlink: _BUILDLINK_USE
-
-.include "../../mk/bsd.buildlink.mk"
 
 .endif	# FLTK_BUILDLINK_MK
