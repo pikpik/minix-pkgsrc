@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/05/14 13:30:34 adam Exp $
+# $NetBSD: Makefile,v 1.21 2004/05/31 11:47:29 tron Exp $
 
 DISTNAME=	net-snmp-5.1.1
 CATEGORIES=	net
@@ -66,6 +66,9 @@ CONFIGURE_ARGS+=	--with-persistent-directory="${NET_SNMP_PERSISTENTDIR}"
 CONFIGURE_ARGS+=	--with-mibdirs="${NET_SNMP_MIBDIRS}"
 .endif
 CONFIGURE_ARGS+=	--with-mib-modules="smux host"
+.if (${OPSYS} == "Darwin")
+CONFIGURE_ARGS+=	--with-out-mib-modules="ucd-snmp/diskio mibII"
+.endif
 #
 # Using "dummy" values is technically not compliant with SNMP specs, but
 # otherwise, some tools, e.g. net/tcl-scotty, net/tkined, may ignore results
