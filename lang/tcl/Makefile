@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/24 19:53:32 jwise Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/29 20:23:58 jwise Exp $
 #
 
 DISTNAME=		tcl8.3.2
 PKGNAME=		tcl-8.3.2
 CATEGORIES=		lang
-MASTER_SITES=		ftp://ftp.scriptics.com/pub/tcl/tcl8_3/
+MASTER_SITES=		ftp://ftp.scriptics.com/pub/tcl/tcl8_3/ \
+			ftp://ftp.informatik.uni-hamburg.de/pub/soft/lang/tcl/tcl8_3/
 
 MAINTAINER=		jwise@netbsd.org
 HOMEPAGE=		http://www.tcltk.com/
