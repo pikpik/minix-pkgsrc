@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2002/10/03 22:45:05 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/11/26 21:56:32 schmonz Exp $
 #
 
-DISTNAME=	id3lib-3.8.2
+DISTNAME=	id3lib-3.8.3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=id3lib/}
 
@@ -12,7 +12,7 @@ COMMENT=	library for manipulating ID3v1 and ID3v2 tags
 USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
