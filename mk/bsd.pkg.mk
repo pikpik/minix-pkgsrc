@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1354 2004/01/23 17:55:17 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1355 2004/01/24 09:23:23 xtraeme Exp $
 #
 # This file is in the public domain.
 #
@@ -223,15 +223,6 @@ PKG_FAIL_REASON+= "${PKGNAME} uses imake, but the buildlink-x11 package was foun
 	 "    Please deinstall it (pkg_delete buildlink-x11)."
 .  endif
 .endif	# USE_IMAKE
-
-# XXX USE_GMAKE is redundant since USE_GNU_TOOLS+=make accomplishes the
-# XXX same thing but by using the more general tools.mk framework.  This
-# XXX variable should eventually be reaped from pkgsrc.
-#
-.if defined(USE_GMAKE)
-USE_GNU_TOOLS+=		make
-_USE_GMAKE=		yes
-.endif
 
 .if defined(USE_GNU_TOOLS) && !empty(USE_GNU_TOOLS:Mmake)
 _USE_GMAKE=		yes
