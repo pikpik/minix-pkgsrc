@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/29 03:48:08 rh Exp $
 #
 
 DISTNAME=	GNUMail-1.0.3
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/GNUMail
 CATEGORIES=	mail gnustep
 MASTER_SITES=	http://extrovert.screwdriver.net/~extra/cgi-bin/
