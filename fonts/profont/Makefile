@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2003/12/20 00:28:12 perry Exp $
 #
 
 DISTNAME=	profontlinux
@@ -11,7 +11,6 @@ MAINTAINER=	perry@NetBSD.org
 HOMEPAGE=	http://www.tobias-jung.de/seekingprofont/
 COMMENT=	Monospaced bitmap font readable in very small sizes
 
-USE_BUILDLINK2=		yes
 NO_BUILD=		yes
 NO_CONFIGURE=		yes
 USE_X11BASE=		yes
