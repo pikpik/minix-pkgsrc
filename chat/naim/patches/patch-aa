@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- firetalk/lclint.h.orig	Thu Jan 24 12:34:58 2002
++++ firetalk/lclint.h	Thu Jan 24 12:35:09 2002
+@@ -24,4 +24,6 @@
+ #define _NETDB_H
+ #endif
+ 
++#include <inttypes.h>
++
+ #endif
