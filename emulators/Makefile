@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2001/05/15 09:47:27 agc Exp $
+# $NetBSD: Makefile,v 1.58 2001/05/30 11:14:09 agc Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -46,6 +46,8 @@ SUBDIR+=	swarm
 SUBDIR+=	twin
 SUBDIR+=	uae
 SUBDIR+=	vice
+SUBDIR+=	vmware
+SUBDIR+=	vmware-module
 SUBDIR+=	wine
 SUBDIR+=	wine-current
 SUBDIR+=	x48
