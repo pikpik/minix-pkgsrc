@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2002/12/02 21:34:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2002/12/04 09:35:47 jmmv Exp $
 
-DISTNAME=	TeXmacs-1.0.0.23-src
+DISTNAME=	TeXmacs-1.0.0.24-src
 PKGNAME=	${DISTNAME:S/-src//}
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.texmacs.org/pub/TeXmacs/targz/
