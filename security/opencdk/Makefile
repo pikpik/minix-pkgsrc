@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/02/10 00:20:29 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/14 17:21:52 jlam Exp $
 #
 
 DISTNAME=	opencdk-0.5.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/opencdk/
 
