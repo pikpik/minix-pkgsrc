@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.303 2004/02/20 04:30:43 minskim Exp $
+# $NetBSD: Makefile,v 1.304 2004/02/20 04:45:29 minskim Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -60,6 +60,7 @@ SUBDIR+=	cgicc
 SUBDIR+=	cgilib
 SUBDIR+=	checkbot
 SUBDIR+=	chimera
+SUBDIR+=	clearsilver
 SUBDIR+=	cocoon
 SUBDIR+=	communicator
 SUBDIR+=	cronolog
@@ -223,6 +224,7 @@ SUBDIR+=	tcl-cgi
 SUBDIR+=	thttpd
 SUBDIR+=	tidy
 SUBDIR+=	tinyproxy
+SUBDIR+=	trac
 SUBDIR+=	urlget
 SUBDIR+=	w3
 SUBDIR+=	w3c-httpd
