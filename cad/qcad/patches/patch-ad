@@ -1,8 +1,8 @@
 $NetBSD$
 
---- relement.cpp.orig	Tue Feb 20 21:30:40 2001
+--- relement.cpp.orig
 +++ relement.cpp
-@@ -3681,7 +3681,7 @@
+@@ -3683,7 +3683,7 @@
  
    // Search pattern in /usr/share/<proj>/hatches dir:
    if(!QFileInfo(patternPath).exists()) {
