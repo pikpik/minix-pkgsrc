@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/fpr
+bin/fsplit
+man/man1/fpr.1
+man/man1/fsplit.1
