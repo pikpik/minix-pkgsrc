@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.180 2003/09/28 11:05:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.181 2003/10/01 20:58:52 reed Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -82,6 +82,7 @@ SUBDIR+=	mew
 SUBDIR+=	mew-xemacs
 SUBDIR+=	mew3
 SUBDIR+=	mhonarc
+SUBDIR+=	milter-regex
 SUBDIR+=	mimedefang
 SUBDIR+=	mini_sendmail
 SUBDIR+=	msmtp
