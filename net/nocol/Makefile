@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/08/04 14:48:19 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/08/20 15:17:17 tsarna Exp $
 #
 
 DISTNAME=	nocol-4.2beta6
@@ -15,7 +15,18 @@ INSTALL_TARGET=	install root
 
 post-patch:
 	@(hostname=`/bin/hostname`;					\
-	fqdn=`/usr/sbin/host $$hostname | /usr/bin/awk '{ print $$1; exit }'`; \
+	dir="";								\
+	for d in /usr/bin /usr/sbin `${ECHO} $$PATH | tr ':' ' '`; do	\
+		if [ -x $$d/host ]; then				\
+			dir=$$d;					\
+			break;						\
+		fi							\
+	done;								\
+	if [ "X$$dir" = "X" ]; then					\
+		${ECHO} "host program not found";			\
+		exit 1;							\
+	fi;								\
+	fqdn=`$$dir/host $$hostname | ${AWK} '{ print $$1; exit }'`;	\
 	${SED} -e 's|@prefix@|${PREFIX}|g' -e "s|@FQDN@|$$fqdn|g" 	\
 			${FILESDIR}/answers > ${WRKSRC}/answers)
 
