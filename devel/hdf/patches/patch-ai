@@ -1,6 +1,6 @@
 $NetBSD$
 
---- /dev/null	Thu Mar 22 20:12:43 2001
+--- /dev/null	Sun Mar 25 00:38:45 2001
 +++ mfhdf/ncdump/Makefile
 @@ -0,0 +1,34 @@
 +PROG= ncdump
@@ -14,14 +14,14 @@ $NetBSD$
 +LIBDIR= ${PREFIX}/lib
 +MANDIR= ${PREFIX}/man
 +
-+JPEGLIB= -Wl,-R${JPEGBASE} -L${JPEGBASE} -ljpeg
-+HDFLIB= -L${.CURDIR}/../../hdf/src -ldf
-+MFHDFLIB= -L${.CURDIR}/../libsrc -lmfhdf
-+MFHDFINC= -I${.CURDIR}/../libsrc
++CPPFLAGS+= -I${.CURDIR}/../libsrc
++CPPFLAGS+= @SWAP@
 +
-+LDFLAGS+= -Wl,-R${LIBDIR} ${MFHDFLIB} ${HDFLIB} ${JPEGLIB}
++LDFLAGS+= -L${.CURDIR}/../libsrc
++LDFLAGS+= -L${.CURDIR}/../../hdf/src
++LDFLAGS+= -Wl,-R${JPEGBASE} -L${JPEGBASE}
 +
-+CPPFLAGS+= ${MFHDFINC} @SWAP@
++LDADD+= -lmfhdf -ldf -ljpeg -lz -lm
 +
 +NOGCCERROR= 1
 +
