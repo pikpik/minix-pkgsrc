@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.2737 2004/12/21 20:16:07 xtraeme Exp $
+$NetBSD: TODO,v 1.2738 2004/12/22 21:11:19 skrll Exp $
 
 Suggested new packages
 ======================
@@ -341,7 +341,6 @@ Suggested package updates
 	o bchunk-1.2.0
 	o bdb-xml-2.0.7
 	o benchfft-3.1
-	o bibparse-1.06
 	o bibtex2html-1.74 [requires ocaml>=3.07]
 	o bins-1.1.27
 	o bioperl-1.4
