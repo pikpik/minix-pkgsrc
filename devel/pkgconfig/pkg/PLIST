@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pkg-config
+man/man1/pkg-config.1
+share/aclocal/pkg.m4
