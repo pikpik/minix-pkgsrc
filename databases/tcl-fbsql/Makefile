@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2003/04/04 21:43:30 jmc Exp $
 
 DISTNAME=		fbsql.c
 PKGNAME=		tcl-fbsql-1.05
@@ -27,5 +27,7 @@ do-install:
 .include "../../lang/tcl/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
 
+.if !target(do-install)
 # Need here for $PREFIX
 TCL_DIR!=		. ${PREFIX}/lib/tclConfig.sh; echo $$TCL_PACKAGE_PATH
+.endif
