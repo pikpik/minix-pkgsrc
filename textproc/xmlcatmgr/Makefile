@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.15 2004/01/05 23:43:06 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/17 16:00:20 jmmv Exp $
 #
 
-DISTNAME=	xmlcatmgr-2.0alpha2
+DISTNAME=	xmlcatmgr-2.0beta1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlcatmgr/}
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://xmlcatmgr.sourceforge.net/
-COMMENT=	XML (and SGML) catalog manager
+COMMENT=	XML and SGML catalog manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
@@ -17,6 +17,7 @@ USE_PKGINSTALL=	YES
 
 CONFIGURE_ARGS+=	-p ${PREFIX}
 CONFIGURE_ARGS+=	-c ${PKG_SYSCONFDIR}/xml/catalog
+CONFIGURE_ARGS+=	-C ${PKG_SYSCONFDIR}/sgml/catalog
 CONFIGURE_ARGS+=	-D
 CONFIGURE_ENV+=		SED="${SED}"
 CONFIGURE_ENV+=		INSTALL_DATA="${INSTALL_DATA}"
