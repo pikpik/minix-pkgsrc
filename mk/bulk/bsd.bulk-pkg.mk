@@ -1,7 +1,7 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.55 2004/01/26 21:10:32 heinz Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.56 2004/01/26 21:24:41 agc Exp $
 
 #
-# Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@netbsd.org>
+# Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
