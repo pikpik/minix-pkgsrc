@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2004/10/01 10:37:33 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/27 17:02:00 wiz Exp $
 #
 
-DISTNAME=		rarlinux-3.3.0
+DISTNAME=		rarlinux-3.4.1
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.rarsoft.com/rar/ \
 			ftp://ftp.rarsoft.com/rar/
@@ -23,6 +23,8 @@ WRKSRC=			${WRKDIR}/rar
 DEPENDS+=	suse_base>=6.1:../../emulators/${SUSE_DIR_PREFIX}_base
 DEPENDS+=	suse_compat>=6.1:../../emulators/${SUSE_DIR_PREFIX}_compat
 .endif
+
+NO_BUILDLINK=	YES
 
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
