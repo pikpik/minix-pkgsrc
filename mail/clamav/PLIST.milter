@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST.milter,v 1.2 2004/01/29 17:14:16 cube Exp $
-man/man8/clamav-milter.8
-sbin/clamav-milter
