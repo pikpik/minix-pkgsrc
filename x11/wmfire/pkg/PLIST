@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/wmfire
+share/doc/wmfire/README
+share/doc/wmfire/AUTHORS
+share/doc/wmfire/COPYING
+share/doc/wmfire/CREDITS
+share/doc/wmfire/INSTALL
