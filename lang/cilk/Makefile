@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/07/17 08:36:10 agc Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/01 05:48:15 jlam Exp $
 
 DISTNAME=		cilk-5.3.1
+PKGREVISION=		1
 CATEGORIES=		lang parallel
 MASTER_SITES=		http://supertech.lcs.mit.edu/cilk/ \
 			ftp://theory.lcs.mit.edu/pub/cilk/
