@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1999/08/28 09:43:11 rh Exp $
+# $NetBSD: Makefile,v 1.24 1999/09/05 13:41:14 mrg Exp $
 #
 
 DISTNAME=	imlib-1.9.4
@@ -13,7 +13,7 @@ DEPENDS+=	giflib-3.0:../../graphics/giflib
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	netpbm-19940301:../../graphics/netpbm
 DEPENDS+=	png-1.0.3:../../graphics/png
-DEPENDS+=	tiff-3.4:../../graphics/tiff
+DEPENDS+=	tiff-*:../../graphics/tiff
 
 USE_X11BASE=	yes
 USE_LIBTOOL=	yes
