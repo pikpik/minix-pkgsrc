@@ -1,12 +1,12 @@
-# $NetBSD$
+# $NetBSD: Makefile.common,v 1.1.1.1 1999/11/17 18:32:29 drochner Exp $
 #
 # Paths for Qt headers and library
 #
 
 QTDIR=$(PREFIX)
-QTINC=$(QTDIR)/include/qt
+QTINC=$(QTDIR)/include/qt1
 QTLIB=$(QTDIR)/lib
-MOC=$(QTDIR)/bin/moc
+MOC=$(QTDIR)/bin/moc1
 
 #
 # Paths for Qwt headers and library 
