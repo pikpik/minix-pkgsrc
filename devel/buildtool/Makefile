@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/09/15 14:49:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2004/02/04 17:12:09 jmmv Exp $
 #
 
 DISTNAME=	buildtool-0.15
@@ -9,7 +9,9 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://buildtool.sourceforge.net/
 COMMENT=	Portable build infrastructure
 
-USE_BUILDLINK2=	yes
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	yes
 HAS_CONFIGURE=	yes
 
 TEST_TARGET=		test
