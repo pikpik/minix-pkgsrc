@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/01/24 15:13:20 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/11 04:06:04 minskim Exp $
 #
 
 DISTNAME=	xerces-c-src_2_3_0
@@ -35,7 +35,8 @@ CONFIGURE_ARGS+=	-m inmem		# message loader
 CONFIGURE_ARGS+=	-r none			# threading
 
 .include "../../converters/libiconv/buildlink3.mk"
-.if defined(ICONV_IS_GNU)
+
+.if defined(ICONV_TYPE) && (${ICONV_TYPE} == "gnu")
 CONFIGURE_ARGS+=	-t IconvGNU		# transcoder
 PLIST_SUBST+=		NATIVEICONV="@comment " GNUICONV=""
 .else
