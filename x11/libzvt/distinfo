@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.9 2002/04/10 14:37:17 jlam Exp $
+
+SHA1 (libzvt-2.0.1.tar.bz2) = 0531918eb1b88f386d65737b782b05332be24494
+Size (libzvt-2.0.1.tar.bz2) = 250649 bytes
+SHA1 (patch-aa) = 310dc2cfcf429163b4c5d420276d45eadae3a418
