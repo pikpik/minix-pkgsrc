@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-config-cf-Imakefile,v 1.1.1.1 2000/10/29 16:17:13 mjl Exp $
 
 --- config/cf/Imakefile.orig	Sun Oct 29 15:17:58 2000
 +++ config/cf/Imakefile	Sun Oct 29 15:19:49 2000

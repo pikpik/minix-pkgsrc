@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-Imakefile,v 1.1.1.1 2000/10/29 16:17:13 mjl Exp $
 
 --- Imakefile.orig	Thu May  4 08:30:42 2000
 +++ Imakefile	Wed Aug  9 19:29:42 2000
