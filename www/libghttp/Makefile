@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2000/11/25 17:22:15 rh Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/17 17:22:12 wiz Exp $
 
-DISTNAME=		libghttp-1.0.7
+DISTNAME=		libghttp-1.0.9
 CATEGORIES=		www gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/libghttp/}
 
