@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/11/01 13:33:10 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/20 12:24:28 agc Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.08
@@ -25,7 +25,7 @@ SHLIB_HANDLING=	NO
 
 .include "../../mk/bsd.prefs.mk"
 
-ONLY_FOR_PLATFORM=	*-*-i386 SunOS-*-sparc
+ONLY_FOR_PLATFORM=	*-*-i386 *-*-sparc
 
 # Default (overridden below)
 PLATFORM=	unknown
