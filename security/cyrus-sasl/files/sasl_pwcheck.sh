@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: sasl_pwcheck.sh,v 1.3 2001/11/26 07:34:05 jlam Exp $
+# $NetBSD: sasl_pwcheck.sh,v 1.4 2001/11/26 20:38:32 jlam Exp $
 #
 # The pwcheck daemon allows UNIX password authentication with Cyrus SASL.
 #
@@ -11,6 +11,8 @@ if [ -e /etc/rc.subr ]
 then
 	. /etc/rc.subr
 fi
+
+rcd_dir=`@DIRNAME@ $0`
 
 name="sasl_pwcheck"
 rcvar="${name}"
@@ -42,7 +44,7 @@ sasl_pwcheck_precmd()
 {
 	if [ ! -e ${sasldb} ]
 	then
-		@RCD_SCRIPTS_DIR@/sasl_pwcheck dbinit
+		$rcd_dir/sasl_pwcheck dbinit
 	fi
 }
 
