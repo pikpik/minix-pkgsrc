@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: libtool.sh,v 1.1.2.7 2002/06/30 08:04:36 jlam Exp $
+# $NetBSD: libtool.sh,v 1.2 2002/08/22 08:21:29 jlam Exp $
 
 Xsed='@SED@ -e 1s/^X//'
 sed_quote_subst='s/\([\\`\\"$\\\\]\)/\\\1/g'
@@ -34,7 +34,7 @@ while [ $# -gt 0 ]; do
 			while [ $# -gt 0 ]; do
 				arg="$1"; shift
 				case $arg in
-				*[\`\"\$\\])
+				*[\`\"\$\\]*)
 					arg=`@ECHO@ X$arg | \
 						$Xsed -e "$sed_quote_subst" \
 					`
