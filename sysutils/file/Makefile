@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2003/07/21 17:24:14 martti Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/05 02:10:39 reed Exp $
 
-DISTNAME=		file-4.02
+DISTNAME=		file-4.09
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.gw.com/mirrors/pub/unix/file/
 MASTER_SITES+=		ftp://ftp.astron.com/pub/file/
