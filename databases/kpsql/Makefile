@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 21:28:19 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/11/14 10:02:15 wiz Exp $
 #
 
 DISTNAME=	kpsql-1.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	http://www.mutinybaysoftware.com/downloads/
 EXTRACT_SUFX=	.tgz

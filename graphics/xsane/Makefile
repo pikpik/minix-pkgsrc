@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2003/07/13 13:52:18 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2003/07/17 21:43:15 grant Exp $
 
 DISTNAME=	xsane-0.90
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xsane.org/download/ \
 		http://gd.tuwien.ac.at/hci/sane/xsane/ \

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2003/12/13 00:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/12/30 16:48:45 cjep Exp $
 
 DISTNAME=	wistumbler2.00-pre3
 PKGNAME=	${DISTNAME:S/wistumbler/wistumbler-/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nopcode.org/prj/wistumbler2/
 

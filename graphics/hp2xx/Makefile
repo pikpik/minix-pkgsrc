@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2003/07/17 21:41:14 grant Exp $
+# $NetBSD: Makefile,v 1.21 2003/08/09 10:53:28 seb Exp $
 #
 
 DISTNAME=	hp2xx-3.4.0
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/${DISTNAME}/sources
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNU:=hp2xx/}

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2003/11/17 15:28:31 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2003/12/03 01:36:12 xtraeme Exp $
 #
 
 DISTNAME=	amaya-src-8.2
 PKGNAME=	${DISTNAME:S/-src//}
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/Amaya/work
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/Amaya/Distribution/ \

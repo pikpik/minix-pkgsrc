@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/13 17:54:15 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use vte.
 #
@@ -9,7 +9,7 @@
 VTE_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			vte
-BUILDLINK_DEPENDS.vte?=		vte>=0.11.10
+BUILDLINK_DEPENDS.vte?=		vte>=0.11.10nb1
 BUILDLINK_PKGSRCDIR.vte?=		../../x11/vte
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.vte=vte

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.8 2003/12/13 00:45:22 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.9 2003/12/14 19:54:30 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use libgnomedb.
 #
@@ -9,7 +9,7 @@
 LIBGNOMEDB_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			libgnomedb
-BUILDLINK_DEPENDS.libgnomedb?=		libgnomedb>=1.0.0nb3
+BUILDLINK_DEPENDS.libgnomedb?=		libgnomedb>=1.0.0nb5
 BUILDLINK_PKGSRCDIR.libgnomedb?=		../../databases/libgnomedb
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.libgnomedb=libgnomedb

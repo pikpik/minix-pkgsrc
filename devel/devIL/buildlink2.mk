@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/03 19:00:02 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use DevIL.
 #
@@ -9,7 +9,7 @@
 DEVIL_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			DevIL
-BUILDLINK_DEPENDS.DevIL?=		DevIL>=1.6.6
+BUILDLINK_DEPENDS.DevIL?=		DevIL>=1.6.6nb1
 BUILDLINK_PKGSRCDIR.DevIL?=		../../devel/devIL
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.DevIL=DevIL

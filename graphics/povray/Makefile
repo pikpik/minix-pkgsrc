@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2003/09/10 22:35:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2003/11/07 14:20:05 gavan Exp $
 
 DISTNAME=	povuni_s
 PKGNAME=	povray-3.50c
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Official/Unix/\
 	 	ftp://ftp.mirror.ac.uk/sites/ftp.povray.org/pub/povray/Official/Unix/

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2003/06/07 14:47:19 cjep Exp $
+# $NetBSD: Makefile,v 1.29 2003/07/17 21:42:57 grant Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/dept/OLD/pub/

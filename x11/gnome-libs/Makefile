@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.91 2003/10/29 10:40:53 gavan Exp $
+# $NetBSD: Makefile,v 1.92 2003/10/29 15:35:51 wiz Exp $
 
 DISTNAME=		gnome-libs-1.4.2
+PKGREVISION=		1
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-libs/1.4/}
 

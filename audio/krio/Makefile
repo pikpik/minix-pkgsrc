@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2003/07/21 16:30:41 martti Exp $
+# $NetBSD: Makefile,v 1.14 2003/10/08 10:06:47 taca Exp $
 
 DISTNAME=	Krio-19990721
 PKGNAME=	krio-19990721
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/Krio
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.13th-floor.org/pub/krio/

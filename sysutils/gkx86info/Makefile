@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/13 13:53:16 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 17:24:15 martti Exp $
 #
 
 DISTNAME=	gkx86info0.0.2
 PKGNAME=	gkx86info-0.0.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://asdfnews.org/yargon/
 

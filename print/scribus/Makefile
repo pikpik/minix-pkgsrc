@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2003/08/05 13:40:11 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2003/10/29 20:54:51 reed Exp $
 
 DISTNAME=	scribus-1.1.1
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://ftp.kde.com/Office/Text_Word_Processing/Scribus/ \
 		http://web2.altmuehlnet.de/fschmid/ \

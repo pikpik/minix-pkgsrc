@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 22:55:10 grant Exp $
+# $NetBSD: Makefile,v 1.18 2003/12/18 05:31:34 xtraeme Exp $
 #
 
 DISTNAME=		enlightenment-0.16.6
+PKGREVISION=		1
 CATEGORIES=		x11 gnome wm
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.58 2003/12/25 16:47:50 fredb Exp $
+# $NetBSD: Makefile,v 1.59 2003/12/26 06:06:32 grant Exp $
 #
 
 DISTNAME=	Wine-20031212
 PKGNAME=	${DISTNAME:S/W/w/}
+PKGREVISION=	 	1
 WRKSRC= 	${WRKDIR}/${DISTNAME:S/W/w/}
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.ibiblio.org/Linux/ALPHA/wine/development/ \

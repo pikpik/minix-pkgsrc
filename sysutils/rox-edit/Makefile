@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:53:47 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 17:24:29 martti Exp $
 #
 
 DISTNAME=	Edit-0.1.2
 PKGNAME=	rox-edit-0.1.2
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/Edit
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}

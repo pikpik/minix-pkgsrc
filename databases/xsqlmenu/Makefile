@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/12/28 21:22:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:29:12 grant Exp $
 #
 
 DISTNAME=	xsqlmenu-2.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	http://www.jlab.org/~saw/xsqlmenu/
 

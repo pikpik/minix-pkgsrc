@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/12/13 00:45:26 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/14 20:39:57 jmmv Exp $
 #
 
 DISTNAME=	gtksourceview-0.7.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtksourceview/0.7/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 19:01:46 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/03 21:18:10 xtraeme Exp $
 #
 
 DISTNAME=	ogre-v0-12-1
 PKGNAME=	ogre-0.12.1
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/ogrenew
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ogre/}

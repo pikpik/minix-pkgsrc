@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2003/07/13 13:51:40 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:36:34 grant Exp $
 #
 
 DISTNAME=       emma-0.8.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	finance
 MASTER_SITES=   ${HOMEPAGE}emma/packages/
 

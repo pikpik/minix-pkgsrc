@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:29:18 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/05 10:33:34 adam Exp $
 #
 
 DISTNAME=	ProjectCenter-0.3.6
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/ProjectCenter
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=dev-apps/}

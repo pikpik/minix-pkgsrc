@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2003/09/17 19:40:17 grant Exp $
+# $NetBSD: Makefile,v 1.31 2003/12/03 00:50:34 magick Exp $
 
 DISTNAME=	xemacs-21.5.16
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS:=xemacs-21.5/}
 

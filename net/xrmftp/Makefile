@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:52:05 grant Exp $
 
 DISTNAME=	xrmftp-1.2.4
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/${DISTNAME}.src
 CATEGORIES=	net
 MASTER_SITES=	http://www.mat.uni.torun.pl/~rafmet/xrmftp/

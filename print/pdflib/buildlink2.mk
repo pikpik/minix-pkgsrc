@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:39 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:39:47 jlam Exp $
 
 .if !defined(PDFLIB_BUILDLINK2_MK)
 PDFLIB_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		pdflib
-BUILDLINK_DEPENDS.pdflib?=	pdflib>=4.0.1nb1
+BUILDLINK_DEPENDS.pdflib?=	pdflib>=4.0.3nb2
 BUILDLINK_PKGSRCDIR.pdflib?=	../../print/pdflib
 
 EVAL_PREFIX+=				BUILDLINK_PREFIX.pdflib=pdflib

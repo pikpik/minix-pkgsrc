@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:01 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:01 jlam Exp $
 
 .if !defined(PSICONV_BUILDLINK2_MK)
 PSICONV_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		psiconv
-BUILDLINK_DEPENDS.psiconv?=	psiconv>=0.6.1
+BUILDLINK_DEPENDS.psiconv?=	psiconv>=0.8.3nb1
 BUILDLINK_PKGSRCDIR.psiconv?=	../../converters/psiconv
 
 EVAL_PREFIX+=				BUILDLINK_PREFIX.psiconv=psiconv

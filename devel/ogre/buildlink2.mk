@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/12/03 19:01:47 xtraeme Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/12/03 21:18:10 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use ogre.
 #
@@ -9,7 +9,7 @@
 OGRE_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			ogre
-BUILDLINK_DEPENDS.ogre?=		ogre>=0.12.0
+BUILDLINK_DEPENDS.ogre?=		ogre>=0.12.1nb1
 BUILDLINK_PKGSRCDIR.ogre?=		../../devel/ogre
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.ogre=ogre

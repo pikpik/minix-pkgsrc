@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2002/12/28 21:22:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/17 21:29:11 grant Exp $
 #
 
 DISTNAME=	xmysqladmin-1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases x11
 MASTER_SITES=	http://gd.tuwien.ac.at/db/mysql/Downloads/Contrib/ \
 		http://mysql-mirror.free.fr/Downloads/Contrib/ \
