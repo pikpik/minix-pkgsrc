@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/30 10:13:54 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/10/21 03:40:21 hubertf Exp $
 
 DISTNAME=		irssi-0.7.98.4
 PKGNAME=		${DISTNAME}nb1
@@ -12,7 +12,7 @@ COMMENT=                Secure and modular IRC client with text mode user interf
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--enable-perl=no \
-			--with-ncurses=${LOCALBASE}
+			--with-ncurses=${BUILDLINK_DIR}
 USE_BUILDLINK_ONLY=	yes
 USE_CONFIG_WRAPPER=	yes
 
