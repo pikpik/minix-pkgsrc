@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+You will need to stop Solaris volume management before using
+${PKGNAME}:
+
+	/etc/init.d/volmgt stop
+
+===========================================================================
