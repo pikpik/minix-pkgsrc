@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2000/09/20 04:49:19 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2000/09/28 16:31:15 hubertf Exp $
 #
 
-DISTNAME=		openssh-2.2.0p1
+DISTNAME=		openssh-2.3.0p1
 CATEGORIES=		security
 MASTER_SITES=		http://the.wiretapped.net/security/cryptography/ssh/OpenSSH/files/ \
 			http://www.firedrake.org/openssh/files/ \
