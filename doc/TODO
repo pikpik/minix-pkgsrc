@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.2769 2004/12/26 15:13:15 wiz Exp $
+$NetBSD: TODO,v 1.2770 2004/12/26 17:39:24 wiz Exp $
 
 Suggested new packages
 ======================
@@ -209,11 +209,6 @@ Suggested new packages
 	http://packages.qa.debian.org/t/ttf-freefont.html
 	TrueType fonts covering the UCS character sets similar to
 	Helvetica, Times and Courier.
-
-	LingoTeach
-	http://www.lingoteach.org/
-	Language teaching program with various lessons (with GTK+
-	interface).
 
 	GraphicsMagick
 	http://www.graphicsmagick.org/
