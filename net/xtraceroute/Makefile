@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/01/20 02:03:40 hubertf Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.12
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		ndg_files.tar.gz
 CATEGORIES=	net x11
 MASTER_SITES=	http://www.dtek.chalmers.se/~d3august/xt/dl/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		ndg_files.tar.gz
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.dtek.chalmers.se/~d3august/xt/index.html
