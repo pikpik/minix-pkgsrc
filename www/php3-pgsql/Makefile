@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2000/04/02 16:40:41 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2000/04/09 04:00:35 jlam Exp $
 #
 
 PKGNAME=	php-pgsql-${PHP_VERSION}
 
-DEPENDS+=	postgresql-6.5.3:../../databases/postgresql
+DEPENDS+=	postgresql>=6.5.3:../../databases/postgresql
 
 CONFIGURE_ARGS+=--with-pgsql=${LOCALBASE}/pgsql
 
