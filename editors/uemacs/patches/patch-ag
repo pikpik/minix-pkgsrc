@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/unix.c.orig	Sat Nov 13 14:57:12 1999
 +++ src/unix.c	Sat Nov 13 15:04:45 1999
 @@ -816,9 +816,19 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/lock.c.orig	Sun Nov 19 03:09:22 1995
 +++ src/lock.c	Wed Mar 25 13:56:13 1998
 @@ -10,10 +10,17 @@
