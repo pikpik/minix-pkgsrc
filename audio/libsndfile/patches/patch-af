@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/ms_adpcm.c.orig	2004-06-16 10:17:04.000000000 +0000
+--- src/ms_adpcm.c.orig	2004-10-17 00:46:34.000000000 +0000
 +++ src/ms_adpcm.c
 @@ -44,7 +44,7 @@ typedef struct
  	short			*samples ;
@@ -9,5 +9,5 @@ $NetBSD$
 -	unsigned short	dummydata [] ; /* ISO C99 struct flexible array. */
 +	unsigned short	*dummydata ; /* ISO C99 struct flexible array. */
  #else
- 	unsigned short	dummydata [1] ; /* This is a hack an might not work. */
+ 	unsigned short	dummydata [0] ; /* This is a hack an might not work. */
  #endif
