@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/08/02 05:50:55 sakamoto Exp $
 #
 
 PKGNAME=	ja-FreeWnn-server-1.10
@@ -7,6 +7,7 @@ DEPENDS+=	ja-FreeWnn-lib-1.10:../../japanese/freewnn-lib
 
 WNNDIR=		Wnn
 WNN_TARGET=	SERVER
+WNN_LANG=	ja_JP
 
 MASTERDIR=	${.CURDIR}/../../misc/freewnn-common
 FILESDIR=	${MASTERDIR}/files
