@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2004/02/14 18:26:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.85 2004/03/13 17:49:03 cube Exp $
 #
 
 DISTNAME=		imlib-1.9.14
@@ -10,12 +10,13 @@ MAINTAINER=		tron@NetBSD.org
 HOMEPAGE=		http://www.nl.rasterman.com/imlib.html
 COMMENT=		Image manipulation library for X11
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 USE_BUILDLINK3=		yes
-USE_X11BASE=		yes
+USE_X11=		yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	imlib.pc.in
 GNU_CONFIGURE=		yes
-PLIST_SUBST+=		LOCALBASE=${LOCALBASE}
 USE_GNU_TOOLS+=		make
 UNLIMIT_RESOURCES=	datasize
 
@@ -45,9 +46,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/imlib
 	cd ${WRKSRC}/doc; ${INSTALL_DATA} *.gif *.html \
 		${PREFIX}/share/doc/imlib
-	${TEST} ${PREFIX} = ${LOCALBASE} || \
-	${LN} -fs ${PREFIX}/share/aclocal/imlib.m4 \
-		${LOCALBASE}/share/aclocal/imlib.m4
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
