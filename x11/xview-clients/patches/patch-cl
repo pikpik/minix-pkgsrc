@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- olwm/states.c.orig	Tue Jun 29 07:11:58 1993
++++ olwm/states.c	Fri Dec 28 15:55:43 2001
+@@ -1,4 +1,3 @@
+-#ident	"@(#)states.c	26.66	93/06/28 SMI"
+ 
+ /*
+  *      (c) Copyright 1989 Sun Microsystems, Inc.
