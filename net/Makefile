@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.485 2004/07/19 19:19:08 xtraeme Exp $
+# $NetBSD: Makefile,v 1.486 2004/07/19 20:31:49 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -146,6 +146,7 @@ SUBDIR+=	jumpgate
 SUBDIR+=	jwhois
 SUBDIR+=	kdenetwork2
 SUBDIR+=	kdenetwork3
+SUBDIR+=	kphone
 SUBDIR+=	lambdamoo
 SUBDIR+=	lambdamoo-core
 SUBDIR+=	lambdamoo-doc
