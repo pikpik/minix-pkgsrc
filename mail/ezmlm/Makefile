@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/07/19 23:49:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.11 2004/07/20 00:07:37 schmonz Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
 
 DISTNAME=		${EZMLM_VERS}
 
-MAINTAINER=		zuntum@NetBSD.org
+MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/ezmlm.html
 COMMENT=		Easy-to-use, high-speed mailing list manager for qmail
 
