@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/08/14 12:46:44 agc Exp $
+# $NetBSD: Makefile,v 1.2 2001/12/02 09:37:22 wiz Exp $
 #
 
 DISTINFO_FILE=		${.CURDIR}/../../shells/tcsh/distinfo
@@ -9,8 +9,8 @@ CONFLICTS=		tcsh-[0-9]*
 
 .include "../../shells/tcsh/Makefile"
 
-WRKSRC:=		${WRKDIR}/${PKGNAME}
-PKGNAME:=		static-${PKGNAME}
+WRKSRC:=		${WRKDIR}/${DISTNAME}
+PKGNAME:=		static-${DISTNAME}
 COMMENT:=		Statically-linked version of the ${COMMENT}
 
 LDFLAGS+=		-static
