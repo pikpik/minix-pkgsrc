@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2004/12/03 15:14:56 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/02/21 20:57:20 veego Exp $
 #
 
 DISTNAME=		twin-src-3.1.14
 PKGNAME=		twin-3.1.14
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		emulators
 MASTER_SITES=		ftp://ftp.willows.com/pub/twin/
 
