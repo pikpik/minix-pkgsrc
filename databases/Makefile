@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2000/11/27 01:02:18 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2000/12/12 01:30:45 wiz Exp $
 #
 
     SUBDIR += db
@@ -32,6 +32,7 @@
     SUBDIR += py-ldap
     SUBDIR += py-mysqldb
     SUBDIR += py-postgresql
+    SUBDIR += quicklist
     SUBDIR += rrdtool
     SUBDIR += sdbm
     SUBDIR += sqsh
