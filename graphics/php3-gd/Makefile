@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/10/09 11:55:54 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/06/23 10:11:10 adam Exp $
 
 MODNAME=		gd
 CATEGORIES+=		graphics
@@ -17,5 +17,6 @@ PLIST_SRC+=		${.CURDIR}/PLIST.extras
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/extra/gd/bdf2gdfont ${PREFIX}/bin
 
+.include "../../graphics/freetype-lib/buildlink2.mk"
 .include "../../graphics/gd/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
