@@ -1,10 +1,12 @@
-#	$NetBSD: IRIX.own.mk,v 1.1 2002/12/02 17:03:23 jschauma Exp $
+#	$NetBSD: IRIX.own.mk,v 1.1.1.1 2004/03/11 13:04:00 grant Exp $
 
 .if !defined(_IRIX_OWN_MK_)
 _IRIX_OWN_MK_=1
 
 .if defined(MAKECONF) && exists(${MAKECONF})
 .include "${MAKECONF}"
+.elif exists(@SYSCONFDIR@/mk.conf)
+.include "@SYSCONFDIR@/mk.conf"
 .elif exists(/etc/mk.conf)
 .include "/etc/mk.conf"
 .endif

@@ -1,10 +1,12 @@
-#	$NetBSD: bsd.own.mk.in,v 1.1.1.1 2004/03/11 13:04:00 grant Exp $
+#	$NetBSD: bsd.own.mk.in,v 1.2 2004/03/11 17:29:11 tv Exp $
 
 .if !defined(_BSD_OWN_MK_)
 _BSD_OWN_MK_=1
 
 .if defined(MAKECONF) && exists(${MAKECONF})
 .include "${MAKECONF}"
+.elif exists(@SYSCONFDIR@/mk.conf)
+.include "@SYSCONFDIR@/mk.conf"
 .elif exists(/etc/mk.conf)
 .include "/etc/mk.conf"
 .endif
