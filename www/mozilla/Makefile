@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2003/03/17 16:07:32 taya Exp $
+# $NetBSD: Makefile,v 1.117 2003/05/02 11:56:43 wiz Exp $
 
 MOZILLA=	mozilla
 MOZILLA_BIN=	mozilla-bin
@@ -6,7 +6,7 @@ MOZ_VER=	1.3
 PKGREVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 
-COMMENT=	Open-source version of the Netscape browser
+COMMENT=	Full featured gecko-based browser
 
 USE_CXX=	yes
 BUILD_SVG=	# defined
