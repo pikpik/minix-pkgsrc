@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1.1.1 2001/07/28 17:49:00 jlam Exp $
 #
 # This Makefile fragment is included by packages that use java-db3.
 #
@@ -17,7 +17,7 @@ JAVA_DB3_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.java-db3?=	java-db3>=3.2.9
+BUILDLINK_DEPENDS.java-db3?=	java-db3>=2.9
 DEPENDS+=		${BUILDLINK_DEPENDS.java-db3}:../../databases/java-db3
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.java-db3=java-db3
