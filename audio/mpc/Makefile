@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2004/05/05 09:29:11 simonb Exp $
+# $NetBSD: Makefile,v 1.3 2004/06/29 08:26:38 simonb Exp $
 
 DISTNAME=		mpc-0.11.1
 CATEGORIES=		audio
 MASTER_SITES=		http://mercury.chem.pitt.edu/~shank/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		simonb@NetBSD.org
 HOMEPAGE=		http://musicpd.org/
 COMMENT=		Command-line client for musicpd
 
