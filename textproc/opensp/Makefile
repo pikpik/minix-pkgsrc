@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/12/19 20:29:31 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2002/07/24 19:45:28 jlam Exp $
 #
 
 DISTNAME=	OpenSP-1.4
@@ -20,5 +20,9 @@ CONFIGURE_ARGS+=--enable-http \
 		--enable-default-catalog=${PREFIX}/share/sgml/catalog
 CONFIGURE_ENV+= CC="${LOCALBASE}/pthreads/bin/pgcc" \
 		CXX="${LOCALBASE}/pthreads/bin/pg++"
+
+USE_LIBTOOL=	yes
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+USE_LIBINTL=	yes
 
 .include "../../mk/bsd.pkg.mk"
