@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/07/13 13:54:27 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/08/09 20:04:44 recht Exp $
 #
 
 DISTNAME=	pygtk-1.99.17
@@ -21,7 +21,7 @@ PKGCONFIG_OVERRIDE+=	${WRKSRC}/pygtk-2.0.pc.in
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN}
 
-PYTHON_VERSION_REQD=	22pth
+PYTHON_VERSIONS_ACCEPTED=	23pth 22pth
 BUILDLINK_DEPENDS.python22-pth=	python22-pth>=2.2.2nb2
 
 .include "../../devel/libglade2/buildlink2.mk"
