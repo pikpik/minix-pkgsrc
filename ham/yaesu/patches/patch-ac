@@ -1,6 +1,6 @@
 $NetBSD$
 
---- config.h.orig	Sat Apr 13 21:06:53 2002
+--- config.h.orig	Mon Aug 21 00:25:07 1995
 +++ config.h
 @@ -1,10 +1,10 @@
  /*
