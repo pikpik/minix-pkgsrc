@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.431 2004/01/15 19:12:52 tron Exp $
+# $NetBSD: Makefile,v 1.432 2004/01/22 13:52:03 jmmv Exp $
 #
 
 COMMENT=	Networking tools
@@ -317,6 +317,7 @@ SUBDIR+=	ucd-snmp
 SUBDIR+=	ucspi-tcp
 SUBDIR+=	udptunnel
 SUBDIR+=	unison
+SUBDIR+=	unison-devel
 SUBDIR+=	upclient
 SUBDIR+=	userppp
 SUBDIR+=	vcheck
