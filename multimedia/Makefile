@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.57 2004/10/20 19:00:05 adrianp Exp $
+# $NetBSD: Makefile,v 1.58 2004/11/17 02:38:19 xtraeme Exp $
 #
 
 COMMENT=	Multimedia utilities
 
+SUBDIR+=	RealPlayerGold
 SUBDIR+=	acidrip
 SUBDIR+=	alevt
 SUBDIR+=	avidemux
