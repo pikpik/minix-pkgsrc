@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2003/01/04 12:46:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.59 2003/02/17 09:23:06 grant Exp $
 #
 
 COMMENT=	Archivers
@@ -39,6 +39,7 @@ SUBDIR+=	nomarch
 SUBDIR+=	nulib2
 SUBDIR+=	p5-Archive-Tar
 SUBDIR+=	p5-Archive-Zip
+SUBDIR+=	pax
 SUBDIR+=	php4-bz2
 SUBDIR+=	php4-zlib
 SUBDIR+=	ppunpack
