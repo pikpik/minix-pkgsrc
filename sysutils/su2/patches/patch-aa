@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Thu Sep  7 13:50:58 1995
+--- Makefile.orig	2004-04-16 20:59:06.000000000 -0700
 +++ Makefile
-@@ -8,16 +8,16 @@
+@@ -8,16 +8,16 @@ CC=gcc
  #        /etc/super-users and /usr/adm/sulog that are defined
  #        separately.
  # 
@@ -22,13 +22,12 @@ $NetBSD$
  
  # m88k
  # OPTIONS=-DFULLPATH -DNOVFORK
-@@ -31,13 +31,19 @@
+@@ -31,13 +31,18 @@ OPTIONS=-DFULLPATH 
  # Shadow Passwords (Solaris)
  # OPTIONS=-DFULLPATH -DUSE_SHADOW
  
 -CFLAGS=-O $(OPTIONS)
 +CFLAGS+= $(OPTIONS)
-+LDLIBS=-lcrypt -lcompat
  
  su2:	su2.c
  
