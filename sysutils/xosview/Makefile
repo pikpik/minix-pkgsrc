@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2000/07/13 15:48:47 agc Exp $
+# $NetBSD: Makefile,v 1.30 2000/08/23 23:14:31 tron Exp $
 #
 
 DISTNAME=       xosview-1.7.0.b
+PKGNAME=	xosview-1.7.0b
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.ece.utexas.edu/~bgrayson/xosview/ \
 		http://lore.ece.utexas.edu/~bgrayson/xosview/
