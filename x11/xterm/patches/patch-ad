@@ -13,3 +13,13 @@ $NetBSD$
  #ifndef linux
  #ifndef VMS
  #ifndef USE_POSIX_TERMIOS
+@@ -295,7 +299,9 @@ ttyslot()
+ #else
+ #include <sys/resource.h>
+ #endif
++#ifdef HAVE_INITGROUPS
+ #define HAS_BSD_GROUPS
++#endif
+ #endif /* !VMS */
+ #endif /* !linux */
+ 
