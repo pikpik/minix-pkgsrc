@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1.1.1 2004/09/26 01:12:17 dmcmahill Exp $
 
 --- bem/configure.orig	Fri Sep 10 22:15:44 2004
 +++ bem/configure
