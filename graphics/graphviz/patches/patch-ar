@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tcldot/demo/Makefile.am.orig	Wed May 15 23:55:31 2002
+--- tcldot/demo/Makefile.am.orig	2003-01-15 17:22:16.000000000 +0000
 +++ tcldot/demo/Makefile.am
 @@ -2,7 +2,7 @@
  
@@ -10,4 +10,4 @@ $NetBSD$
 +demodir = $(prefix)/share/examples/@PACKAGE@
  demo_SCRIPTS = doted gcat
  demo_DATA = doted.README gcat.README
- EXTRA_DIST = $(demo_SCRIPTS) $(demo_DATA)
+ EXTRA_DIST = $(demo_SCRIPTS) $(demo_DATA) CVS/*

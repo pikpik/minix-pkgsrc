@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tcldgl/demo/Makefile.am.orig	Wed May 15 23:55:31 2002
+--- tcldgl/demo/Makefile.am.orig	2003-01-15 17:22:16.000000000 +0000
 +++ tcldgl/demo/Makefile.am
 @@ -2,7 +2,7 @@
  
@@ -10,4 +10,4 @@ $NetBSD$
 +demodir = $(prefix)/share/examples/@PACKAGE@
  demo_SCRIPTS = dge
  demo_DATA = dge.README dge.example1.dot  dge.example2.dot
- EXTRA_DIST = $(demo_SCRIPTS) $(demo_DATA)
+ EXTRA_DIST = $(demo_SCRIPTS) $(demo_DATA) CVS/*

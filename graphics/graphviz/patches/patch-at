@@ -1,12 +1,12 @@
 $NetBSD$
 
---- tclpathplan/Makefile.am.orig	Thu Aug  1 17:43:31 2002
+--- tclpathplan/Makefile.am.orig	2003-01-15 17:22:16.000000000 +0000
 +++ tclpathplan/Makefile.am
-@@ -19,7 +19,7 @@ libtclplan_la_SOURCES = find_ints.c inte
+@@ -21,7 +21,7 @@ libtclplan_la_SOURCES = find_ints.c inte
  libtclplan_la_LIBADD = \
- 	../tclhandle/libtclhandle.la \
- 	../pathplan/libpathplanconvenience.la \
--	../tclstubs/libtclstubs.la
+ 	$(top_srcdir)/tclhandle/libtclhandle.la \
+ 	$(top_srcdir)/pathplan/libpathplanconvenience.la \
+-	$(top_srcdir)/tclstubs/libtclstubs.la
 +	${TCL_STUB_LIB_SPEC}
  
  all-local: pkgIndex.tcl
