@@ -1,5 +1,5 @@
-@comment $NetBSD$
-${RUBY_ARCHLIBDIR}/GD.so
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/10/05 09:55:18 taca Exp $
+${RUBY_SITEARCHLIBDIR}/GD.so
 ${RUBY_EXAMPLESDIR}/gd/example.rb
 ${RUBY_EXAMPLESDIR}/gd/gdtestttf.png
 ${RUBY_EXAMPLESDIR}/gd/gdtestttf.rb
