@@ -1,4 +1,4 @@
-/*	$NetBSD: show.c,v 1.5 2004/04/09 18:38:12 tv Exp $	*/
+/*	$NetBSD: show.c,v 1.29 2004/05/07 16:40:31 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: show.c,v 1.11 1997/10/08 07:47:38 charnier Exp";
 #else
-__RCSID("$NetBSD: show.c,v 1.5 2004/04/09 18:38:12 tv Exp $");
+__RCSID("$NetBSD: show.c,v 1.29 2004/05/07 16:40:31 jlam Exp $");
 #endif
 #endif
 
@@ -151,8 +151,8 @@ show_var(const char *fname, const char *variable)
 			/*
 			 * We expect lines to look like one of the following
 			 * forms:
-			 *	VAR=value 
-			 *	VAR= value 
+			 *      VAR=value
+			 *      VAR= value
 			 * We print out the value of VAR, or nothing if it
 			 * doesn't exist.
 			 */
