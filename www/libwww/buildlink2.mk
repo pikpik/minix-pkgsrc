@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.5 2002/11/19 21:50:54 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.6 2002/12/03 16:47:32 wiz Exp $
 
 .if !defined(LIBWWW_BUILDLINK2_MK)
 LIBWWW_BUILDLINK2_MK=	# defined
@@ -40,6 +40,7 @@ BUILDLINK_FILES.libwww+=	lib/libmd5.*
 .endif
 
 .include "../../devel/zlib/buildlink2.mk"
+.include "../../security/openssl/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	libwww-buildlink
 
