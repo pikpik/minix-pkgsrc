@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1999/06/09 10:53:17 sakamoto Exp $
 # FreeBSD Id: Makefile,v 1.2 1999/05/01 04:00:25 taoka Exp $
 
 DISTNAME=	jhd-2.3
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.iamas.ac.jp/pub1/UNIX/File/
 
-MAINTAINER=	teck-pkg-ja@jp.netbsd.org
+MAINTAINER=	tech-pkg-ja@jp.netbsd.org
 
 BUILD_DEPENDS=	nkf:../../japanese/nkf
 
