@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/07/17 12:53:07 agc Exp $
+# $NetBSD: Makefile,v 1.5 2002/09/23 16:57:03 wiz Exp $
 #
 
 DISTNAME=	hh2000-0.6
@@ -11,9 +11,10 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://hirame.hiram.edu/~worleyam
 COMMENT=	Astronomical simulation and visualization program
 
-GNU_CONFIGURE=	yes
-USE_X11BASE=	yes
-USE_BUILDLINK2=	yes
+GNU_CONFIGURE=		yes
+USE_X11BASE=		yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../graphics/glut/buildlink2.mk"
