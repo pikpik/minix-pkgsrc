@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:49:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/11 18:51:45 dmcmahill Exp $
 
 DISTNAME=	nfsshell-1.0
 WRKSRC=		${WRKDIR}/nfsbug
@@ -12,10 +12,10 @@ COMMENT=	NFS security verification suite
 
 EXTRACT_ONLY=   nfsBugFerret.tgz
 
-# doesn't build on alpha, pmax, sparc, or vax.  In fact
-# the only platform where I've been told it does work is
-# i386.
-NOT_FOR_PLATFORM=	*-*-alpha *-*-mips* *-*-sparc *-*-vax
+# Only works on 1.5B or greater on most platforms but will work on any x86
+# since struct pmap didn't get exposed through vm.h there.
+ONLY_FOR_PLATFORM=	NetBSD-1.5[B-Z]-* NetBSD-1.5Z[A-Z]-* NetBSD-1.[6-9]*-* \
+			NetBSD-*-i386
 
 post-extract:
 	${CP} ${DISTDIR}/nfsShell.c ${WRKSRC}/nfsshell.c
