@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/12/30 13:13:28 simonb Exp $
+# $NetBSD: Makefile,v 1.9 2000/05/19 11:24:46 mjl Exp $
 
 DISTNAME=	nedit-5.1.1-src
 PKGNAME=	nedit-5.1.1
@@ -7,6 +7,8 @@ MASTER_SITES=	http://ftp.nedit.org/ftp/v5_1_1/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.nedit.org/
+
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
 USE_MOTIF=	yes
 
