@@ -1,0 +1,14 @@
+#!/bin/sh
+# $NetBSD:$
+
+echo -n "Worksource:" 
+echo ${WRKSRC}
+
+cd ${WRKSRC}
+cp p_port.h ${PREFIX}/include
+cp pdf.h ${PREFIX}/include
+cp libpdf.a ${PREFIX}/lib
+mkdir ${PREFIX}/pdf-afm
+cp fonts/*.afm ${PREFIX}/pdf-afm/
+cp fonts/afmlist ${PREFIX}/pdf-afm/
+cp text2pdf ${PREFIX}/bin
