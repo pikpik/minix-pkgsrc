@@ -1,12 +1,16 @@
-# $NetBSD: Makefile,v 1.44 2001/12/26 16:09:41 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2001/12/28 07:38:56 jlam Exp $
 #
 
 DISTNAME=		lynx2.8.4rel.1
-PKGNAME=		lynx-2.8.4.1
+PKGNAME=		lynx-2.8.4.1.2
 CATEGORIES=		www
 MASTER_SITES=		http://lynx.isc.org/release/ \
 			ftp://lynx.isc.org/lynx/
 EXTRACT_SUFX=		.tar.bz2
+
+PATCH_SITES=		http://lynx.isc.org/lynx2.8.4/patches/ \
+			ftp://lynx.isc.org/lynx/lynx2.8.4/patches/
+PATCHFILES=		lynx2.8.4rel.1a.patch lynx2.8.4rel.1b.patch
 
 MAINTAINER=		fredb@netbsd.org
 HOMEPAGE=		http://lynx.browser.org/
