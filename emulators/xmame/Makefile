@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2001/03/30 14:37:01 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.45 2001/03/31 18:59:30 kristerw Exp $
 #
 
 DISTNAME=		xmame-0.37b13.1
@@ -11,6 +11,10 @@ HOMEPAGE=		http://x.mame.net/
 COMMENT=		X11 emulator for old arcade and console machines
 
 DEPENDS=		unzip>=5.40:../../archivers/unzip
+
+RESTRICTED=		"selling is not allowed"
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_X11BASE=		YES
 USE_XPM=		YES
