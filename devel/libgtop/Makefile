@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2000/09/05 09:33:15 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2000/10/17 18:03:23 jlam Exp $
 
 DISTNAME=		libgtop-1.0.9
 CATEGORIES=		devel gnome
@@ -13,6 +13,7 @@ DEPENDS+=		gnome-libs-*:../../x11/gnome-libs
 DEPENDS+=		guile-[0-9]*:../../lang/guile
 
 NOT_FOR_PLATFORM=	SunOS
+OSVERSION_SPECIFIC=	yes
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == NetBSD
