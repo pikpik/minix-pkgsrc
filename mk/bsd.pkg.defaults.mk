@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.259 2004/07/16 23:21:50 xtraeme Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.260 2004/07/19 20:00:15 jlam Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -882,6 +882,16 @@ EXIM_USER?=	mail
 # Used in the exim package to specify the server user.
 # Possible: any user name
 # Default: mail
+
+EZMLM_IDX_USE_MYSQL?=	NO
+# Enable MySQL support in ezmlm-idx.
+# Possible: YES, NO
+# Default: NO
+
+EZMLM_IDX_USE_PGSQL?=	NO
+# Enable PostgreSQL support in ezmlm-idx.
+# Possible: YES, NO
+# Default: NO
 
 FETCHMAIL_USE_SSL?=	YES
 # Enable SSL in fetchmail (for pop and imap connections)
