@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/01/03 18:49:39 reed Exp $
+# $NetBSD: Makefile,v 1.33 2004/01/14 16:50:19 magick Exp $
 
 DISTNAME=	xemacs-21.5.16
 PKGREVISION=	1
@@ -16,7 +16,7 @@ PLIST_SUBST+=	EMACSVER=xemacs-21.5-b16
 MESSAGE_SUBST+=	EMACSVER=xemacs-21.5-b16
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
-USE_PKGSRC_GCC=		# defined
+GCC_REQD=		2.95.3
 .endif
 
 .include "../../mk/bsd.prefs.mk"
