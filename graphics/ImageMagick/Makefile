@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2004/03/23 19:53:33 tron Exp $
+# $NetBSD: Makefile,v 1.116 2004/04/24 04:39:30 reed Exp $
 
 .include "Makefile.common"
 
@@ -12,6 +12,8 @@ BUILDLINK_DEPENDS.jasper+=	jasper>=1.701.0
 DEPENDS+=			mpeg2codec-1.2:../../graphics/mpeg2codec
 
 CONFLICTS=	geomview<1.8.1nb2  # used to have a program named 'animate'
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 USE_X11=		YES
