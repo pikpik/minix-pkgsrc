@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2004/02/11 04:40:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/03/08 19:40:39 jmmv Exp $
 #
 
-DISTNAME=		gnome-desktop-2.4.1.1
+DISTNAME=		gnome-desktop-2.6.0
 PKGNAME=		${DISTNAME:S/-desktop/2-pixmaps/}
-PKGREVISION=		1
 CATEGORIES=		graphics gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-desktop/2.4/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-desktop/2.6/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		rh@NetBSD.org
