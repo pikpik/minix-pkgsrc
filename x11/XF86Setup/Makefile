@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/02/05 15:31:28 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2000/02/15 09:26:25 agc Exp $
 
 DISTNAME=		XF86Setup-3.3.6
 CATEGORIES=		x11
@@ -21,6 +21,6 @@ WRKSRC=			${WRKDIR}/hw/xfree86/XF86Setup
 USE_IMAKE=		yes
 
 pre-configure:
-	@touch ${WRKSRC}/res_cpp_symbol
+	@${TOUCH} ${WRKSRC}/res_cpp_symbol
 
 .include "../../mk/bsd.pkg.mk"
