@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/26 03:29:59 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/04/11 04:03:18 snj Exp $
 #
 
 DISTNAME=	gp-0.26
 CATEGORIES=	biology
-MASTER_SITES=	http://www.bioinformatics.org/genpak/
+MASTER_SITES=	http://www.bioinformatics.org/genpak/download/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hdp@cs.nmsu.edu
