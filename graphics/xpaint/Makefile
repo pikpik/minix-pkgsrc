@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2001/05/22 09:32:23 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2001/09/27 23:18:13 jlam Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/08/29 12:17:50 tg Exp
 
-DISTNAME=       xpaint-2.6.1
+DISTNAME=       xpaint-2.6.2
 WRKSRC=		${WRKDIR}/xpaint
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://home.worldonline.dk/~torsten/xpaint/
