@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/08/22 00:23:55 schmonz Exp $
+# $NetBSD: Makefile,v 1.19 2004/12/03 15:15:02 wiz Exp $
 #
 
 DISTNAME=		qmail-conf-0.60
@@ -24,8 +24,8 @@ BUILD_TARGET=		it
 INSTALL_TARGET= 	setup check
 
 do-configure:
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 	${ECHO} ${LOCALBASE} > ${WRKSRC}/conf-ucspi-tcp
 	${ECHO} ${QMAILDIR} > ${WRKSRC}/conf-qmail
 

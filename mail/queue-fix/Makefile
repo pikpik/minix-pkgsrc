@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/28 22:14:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/03 15:15:02 wiz Exp $
 #
 
 DISTNAME=		queue-fix
@@ -19,8 +19,8 @@ BUILD_TARGET=		it
 INSTALLATION_DIRS=	bin share/doc/queue-fix
 
 do-configure:
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/queue-fix ${PREFIX}/bin

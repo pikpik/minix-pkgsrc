@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/07/26 19:16:09 schmonz Exp $
+# $NetBSD: Makefile,v 1.8 2004/12/03 15:15:09 wiz Exp $
 #
 
 DISTNAME=	checkpassword-0.90
@@ -23,8 +23,8 @@ INSTALL_TARGET=	setup check
 INSTALLATION_DIRS=	bin
 
 do-configure:
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 
 .include "../../mk/bsd.pkg.mk"

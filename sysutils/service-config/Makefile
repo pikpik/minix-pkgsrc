@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:53:51 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:10 wiz Exp $
 #
 
 DISTNAME=	service-config-0.51
@@ -19,9 +19,9 @@ RESTRICTED=     "Possibly inherited DJB-style license would prohibit distributio
 NO_BIN_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_FTP=  ${RESTRICTED}
 
-post-patch:
-	${ECHO} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
-	${ECHO} "${CC} ${_STRIPFLAG_CC}" > ${WRKSRC}/conf-ld
-	${ECHO} "${PREFIX}" > ${WRKSRC}/conf-home
+do-configure:
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
+	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
 
 .include "../../mk/bsd.pkg.mk"

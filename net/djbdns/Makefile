@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/12/03 15:15:05 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2005/03/07 09:41:45 uebayasi Exp $
 # FreeBSD Id: ports/net/djbdns/Makefile,v 1.4 2000/09/28 18:18:41 nbm Exp
 #
 
@@ -50,8 +50,8 @@ CFLAGS+=		--include errno.h
 .include "options.mk"
 
 do-configure:
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
 
 post-install:

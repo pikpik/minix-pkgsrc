@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/07/26 19:29:44 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/03 15:14:53 wiz Exp $
 
 DISTNAME=	cdb-0.75
 CATEGORIES=	databases
@@ -22,8 +22,8 @@ INSTALL_TARGET=	setup check
 INSTALLATION_DIRS=	bin include lib
 
 do-configure:
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	${ECHO} ${CC} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
+	${ECHO} ${CC:Q} ${CFLAGS:Q} > ${WRKSRC}/conf-cc
+	${ECHO} ${CC:Q} ${_STRIPFLAG_CC} > ${WRKSRC}/conf-ld
 	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
 
 post-install:
