@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/security/nss/lib/freebl/Makefile ./security/nss/lib/freebl/Makefile
 --- ../Orig/mozilla/security/nss/lib/freebl/Makefile	Thu Jun 14 07:53:34 2001
-+++ ./security/nss/lib/freebl/Makefile	Sun Jul  1 13:15:47 2001
++++ ./security/nss/lib/freebl/Makefile	Sat Aug  4 10:38:04 2001
 @@ -256,6 +256,19 @@
  MPI_OBJS = $(addprefix $(OBJDIR)/$(PROG_PREFIX), $(MPI_SRCS:.c=$(OBJ_SUFFIX)))
  MPI_OBJS += $(addprefix $(OBJDIR)/$(PROG_PREFIX), $(MPI_USERS:.c=$(OBJ_SUFFIX)))
