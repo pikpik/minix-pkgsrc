@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/04/01 21:07:49 tron Exp $
+# $NetBSD: Makefile,v 1.10 1998/04/15 10:38:45 agc Exp $
 # FreeBSD Id: Makefile,v 1.52 1997/12/14 00:58:08 asami Exp
 #
 
@@ -28,6 +28,7 @@
 #    SUBDIR += lout
 #    SUBDIR += lprps
     SUBDIR += lyx
+    SUBDIR += magicfilter
 #    SUBDIR += makeindex
 #    SUBDIR += mp
     SUBDIR += mpage
