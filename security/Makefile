@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/01/14 15:39:40 fredb Exp $
+# $NetBSD: Makefile,v 1.24 2000/02/07 16:21:37 agc Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/11/09 10:17:02 asami Exp
 #
 
@@ -6,6 +6,7 @@
 #    SUBDIR += cops
     SUBDIR += crack
 #    SUBDIR += donkey
+    SUBDIR += ddos-scan
     SUBDIR += fortify
     SUBDIR += fsh
 #    SUBDIR += fwtk
