@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46.2.4 2002/06/23 18:59:30 jlam Exp $
+# $NetBSD: Makefile,v 1.51 2002/08/25 21:50:47 jlam Exp $
 #
 
 DISTNAME=		sudo-1.6.6
@@ -37,9 +37,6 @@ CONFIGURE_ARGS+=	--without-kerb4 --without-kerb5
 .endif
 
 CONFIGURE_ARGS+=	--with-nbsdops --disable-path-info
-
-PLIST_SRC=		${PKGDIR}/PLIST.common
-PLIST_SRC+=		${PKGDIR}/PLIST.${LOWER_OPSYS}
 
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
