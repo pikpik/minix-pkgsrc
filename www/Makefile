@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.281 2003/12/17 14:38:38 taca Exp $
+# $NetBSD: Makefile,v 1.282 2003/12/17 19:20:38 jdolecek Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -170,6 +170,7 @@ SUBDIR+=	p5-WWW-Amazon-Wishlist
 SUBDIR+=	p5-libapreq
 SUBDIR+=	p5-libwww
 SUBDIR+=	pear-HTML_Common
+SUBDIR+=	pear-HTML_Select
 SUBDIR+=	php-FastTemplate
 SUBDIR+=	php3
 SUBDIR+=	php4
