@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.10 2001/07/27 13:33:28 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.11 2001/08/17 21:14:11 jlam Exp $
 #
 # This Makefile fragment is included by packages that use freetype2.
 #
@@ -81,6 +81,9 @@ freetype2-buildlink-config:
 		${CHMOD} +x ${BUILDLINK_CONFIG.freetype2};		\
 	fi
 .endif	# _NEED_FREETYPE2
+
+REPLACE_BUILDLINK_SED+=	\
+	-e "s|${BUILDLINK_CONFIG_WRAPPER.freetype2}|${BUILDLINK_CONFIG.freetype2}|g"
 
 .if defined(USE_CONFIG_WRAPPER)
 FREETYPE_CONFIG?=	${BUILDLINK_CONFIG_WRAPPER.freetype2}

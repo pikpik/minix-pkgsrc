@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/09/09 05:30:55 jlam Exp $
 #
 # This Makefile fragment is included by packages that use chasen.
 #
@@ -33,6 +33,8 @@ BUILDLINK_CONFIG.chasen=	\
 	${BUILDLINK_PREFIX.chasen}/bin/chasen-config
 BUILDLINK_CONFIG_WRAPPER.chasen=	\
 	${BUILDLINK_DIR}/bin/chasen-config
+REPLACE_BUILDLINK_SED+=	\
+	-e "s|${BUILDLINK_CONFIG_WRAPPER.chasen}|${BUILDLINK_CONFIG.chasen}|g"
 
 .if defined(USE_CONFIG_WRAPPER)
 CHASEN_CONFIG?=		${BUILDLINK_CONFIG_WRAPPER.chasen}

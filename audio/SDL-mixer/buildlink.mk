@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1.1.1 2001/09/24 15:00:25 rh Exp $
 #
 # This Makefile fragment is included by packages that use SDL_mixer.
 #
@@ -33,6 +33,8 @@ BUILDLINK_TARGETS+=		${BUILDLINK_TARGETS.SDL_mixer}
 
 BUILDLINK_CONFIG.SDL_mixer=		${LOCALBASE}/bin/SDL_mixer-config
 BUILDLINK_CONFIG_WRAPPER.SDL_mixer=	${BUILDLINK_DIR}/bin/SDL_mixer-config
+REPLACE_BUILDLINK_SED+=	\
+	-e "s|${BUILDLINK_CONFIG_WRAPPER.SDL_mixer}|${BUILDLINK_CONFIG.SDL_mixer}|g"
 
 .if defined(USE_CONFIG_WRAPPER) && defined(GNU_CONFIGURE)
 SDL_MIXER_CONFIG?=	${BUILDLINK_CONFIG_WRAPPER.SDL_mixer}
