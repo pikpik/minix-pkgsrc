@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2000/11/15 13:52:57 wiz Exp $
+# $NetBSD: Makefile,v 1.74 2000/11/17 13:10:43 agc Exp $
 #
 
     SUBDIR += ac3dec
@@ -47,6 +47,7 @@
     SUBDIR += gogo
     SUBDIR += gqmpeg
     SUBDIR += gsm
+    SUBDIR += icecast
     SUBDIR += id3ed
     SUBDIR += kdemultimedia
     SUBDIR += krio
@@ -56,6 +57,7 @@
     SUBDIR += libcdaudio
     SUBDIR += libmikmod
     SUBDIR += libsidplay
+    SUBDIR += liveice
     SUBDIR += madplay
     SUBDIR += maplay
     SUBDIR += mbrola
