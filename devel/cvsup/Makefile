@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/13 10:58:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/14 10:51:59 hubertf Exp $
 
 DISTNAME=	cvsup-bin-nogui-16.1d
 PKGNAME=	cvsup-16.1.d
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/cvsupd/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://people.freebsd.org/~jdp/
 COMMENT=	cvsup daemon and client
 
 WRKSRC=		${WRKDIR}

@@ -1,4 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2001/09/14 10:51:59 hubertf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/09/14 13:23:41 hubertf Exp $
+
+# XXX there's some newer version at 
+# http://people.freebsd.org/~jdp/s1g/
 
 DISTNAME=	cvsup-bin-16.1d
 PKGNAME=	cvsup-gui-16.1.d
@@ -7,6 +10,7 @@ MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/cvsupd/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://people.freebsd.org/~jdp/
 COMMENT=	cvsup gui client
 
 WRKSRC=		${WRKDIR}
