@@ -1,3 +1,4 @@
+@comment $NetBSD$
 qt3/lib/libqssl.so
 qt3/lib/libqssl.a
 qt3/lib/libqssl.la
