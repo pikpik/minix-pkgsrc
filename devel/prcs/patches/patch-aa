@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Sun Sep 13 23:49:17 1998
-+++ configure	Mon Mar  6 04:20:09 2000
-@@ -4068,7 +4068,7 @@
+--- configure.orig	Sun Oct 31 04:30:30 1999
++++ configure
+@@ -4330,7 +4330,7 @@
    ;;
  esac
  fi
