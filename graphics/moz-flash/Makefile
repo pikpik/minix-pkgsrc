@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/07/11 14:24:01 abs Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/30 12:22:48 jlam Exp $
 #
 
 .include "../libflash/Makefile.common"
@@ -19,7 +19,7 @@ CPPFLAGS+=	-DDEV_DSP=\\\"${DEVOSSSOUND}\\\"
 MAKE_ENV+=	SHLIBTOOL="${PKGSHLIBTOOL}"
 MAKE_ENV+=	MOZ_PLUGDIR="${MOZ_PLUGDIR}"
 
-MOZ_PLUGDIR=     ${X11PREFIX}/lib/mozilla/plugins
+MOZ_PLUGDIR=	${PREFIX}/lib/mozilla/plugins
 
 do-install:
 	cd ${WRKSRC}/Plugin && \
