@@ -1,1 +1,4 @@
+@comment $NetBSD: $
 sbin/choparp
+man/man8/choparp.8
+man/cat8/choparp.0
