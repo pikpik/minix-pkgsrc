@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 08:38:22 jlam Exp $
 
 DISTNAME=		KnightCap-3.6
 PKGNAME=		knightcap-3.6nb1
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://samba.anu.edu.au/pub/KnightCap/
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://anu.samba.org/KnightCap/
+COMMENT=		chess engine with 3D OpenGL-rendered chessboard
 
 DEPENDS+=		Mesa-*:../../graphics/Mesa
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/03/28 23:54:41 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2000/05/05 15:25:16 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.3 1998/08/05 09:31:04 asami Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	http://www.ekran.no/archive/x/
 
 MAINTAINER=	root@garbled.net
+COMMENT=	Classic game with apples and hungry worm
 
 ALL_TARGET=	bsd
 USE_X11=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/05/15 10:54:44 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2000/05/15 11:26:20 wulf Exp $
 #
 
 DISTNAME=	dpbox-60000
@@ -9,6 +9,7 @@ MASTER_SITES=	http://userpage.fu-berlin.de/~jschurig/
 
 MAINTAINER=	wulf@netbsd.org
 HOMEPAGE=	http://userpage.fu-berlin.de/~jschurig/
+COMMENT=	Multi-Protocol Amateur Packet Radio BBS
 
 USE_GMAKE=	yes
 MAKEFILE=	Makefile.netbsd

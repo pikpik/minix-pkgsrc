@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/10/15 12:06:34 rh Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/22 05:56:10 rh Exp $
 
 DISTNAME=	battleball.21.src
 PKGNAME=	battleball-2.1
@@ -7,6 +7,7 @@ MASTER_SITES=	http://linuxberg.prover.com.br/files/x11/entertain/
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.cs.utexas.edu/users/pahardin/bb.html
+COMMENT=	3d game of soccer, with tanks
 
 USE_X11=	YES
 CHECK_MESA=	YES

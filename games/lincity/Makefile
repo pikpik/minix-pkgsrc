@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1999/04/15 20:39:42 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/08/12 06:30:44 jlam Exp $
 #
 
 DISTNAME=		lincity-1.11
@@ -8,6 +8,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=games/strategy/} \
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.floot.demon.co.uk/lincity.html
+COMMENT=		Free clone of SimCity for X11
 
 USE_X11BASE=		# defined
 

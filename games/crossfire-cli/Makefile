@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/13 08:31:01 garbled Exp $
+# $NetBSD: Makefile,v 1.3 2000/12/14 08:20:47 garbled Exp $
 #
 
 DISTNAME=	crossfire-client-0.95.8
@@ -8,6 +8,7 @@ DISTFILES=	${CF_SRC} ${CF_SND} ${CF_RAW}
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://crossfire.real-time.com/
+COMMENT=	Client for X11 game similar to gauntlet and nethack
 
 DEPENDS+=	gtk+>=1.2.4:../../x11/gtk
 DEPENDS+=	png>=1.0.3:../../graphics/png

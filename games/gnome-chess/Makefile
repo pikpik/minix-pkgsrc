@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/17 22:10:45 tron Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/15 09:58:14 tron Exp $
 
 DISTNAME=	gnome-chess-0.2.4
 CATEGORIES=	games gnome
@@ -6,6 +6,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/gnome-chess/}
 
 MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://arcavia.com/rd/gnome-chess/
+COMMENT=	GNOME's graphical interface for playing chess
 
 DEPENDS+=	gnome-core-*:../../x11/gnome-core
 

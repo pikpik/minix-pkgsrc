@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/23 23:14:26 tron Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/18 15:25:36 wiz Exp $
 #
 
 DISTNAME=		nighthawk-2.1
@@ -13,6 +13,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		hubertf@netbsd.org
 HOMEPAGE=		http://www.downunder.net.au/~jsno/
+COMMENT=		C=64 Paradroid clone
 
 USE_GMAKE=		YES
 USE_X11=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/10/15 02:08:21 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/10/21 22:36:35 wiz Exp $
 
 DISTNAME=		medium
 PKGNAME=		${CHESS_ENGINE}-book-${DISTNAME}-20000511
@@ -7,6 +7,7 @@ MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/common/${DISTNAME}/
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		jlam@netbsd.org
+COMMENT=		chess opening book for Crafty (medium)
 
 DEPENDS+=		crafty>=17.0:../../games/crafty
 

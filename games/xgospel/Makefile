@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/11/06 20:56:00 hwr Exp $
 #
 
 DISTNAME=	xgospel-1.12d
@@ -7,6 +7,7 @@ MASTER_SITES=	http://img.teaser.fr/~jlgailly//
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://gailly.net/xgospel/
+COMMENT=	X11 based IGS client
 
 GNU_CONFIGURE=	YES
 USE_X11=	YES

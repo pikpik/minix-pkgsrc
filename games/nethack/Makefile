@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/12/24 22:29:58 pooka Exp $
+# $NetBSD: Makefile,v 1.7 2000/08/10 17:50:04 pooka Exp $
 
 .include	"../nethack-lib/Makefile.common"
 
@@ -6,6 +6,8 @@ DISTNAME=	nethack-all-${NETHACK_VERSION}
 CATEGORIES+=	x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
+
+COMMENT=	Meta-package for NetHack with x11, qt and tty versions
 
 DEPENDS+=	nethack-tty-${NETHACK_VERSION}:../nethack-tty
 DEPENDS+=	nethack-x11-${NETHACK_VERSION}:../nethack-x11

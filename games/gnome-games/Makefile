@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2001/02/06 03:16:57 fredb Exp $
+# $NetBSD: Makefile,v 1.20 2001/02/13 11:47:01 tron Exp $
 
 DISTNAME=		gnome-games-1.2.0
 CATEGORIES=		games gnome
@@ -6,6 +6,7 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-games/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
+COMMENT=		GNOME games collection
 
 BUILD_DEPENDS+=		${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+=		${LOCALBASE}/bin/automake:../../devel/automake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/15 18:46:27 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/04 21:50:10 wiz Exp $
 
 DISTNAME=		dopewars-1.4.8
 CATEGORIES=		games
@@ -9,6 +9,7 @@ MASTER_SITES=		http://bellatrix.pcl.ox.ac.uk/~ben/dopewars/ \
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://bellatrix.pcl.ox.ac.uk/~ben/dopewars/
+COMMENT=		Make a fortune dealing drugs on the streets of New York
 
 USE_CURSES=		YES
 USE_GMAKE=		YES

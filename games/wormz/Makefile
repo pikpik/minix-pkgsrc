@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/10/27 17:14:07 agc Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/26 02:22:47 wiz Exp $
 #
 
 DISTNAME=		Wormz-1.0b5
@@ -8,6 +8,7 @@ MASTER_SITES=		http://lide.punknet.cz/miri/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://lide.punknet.cz/miri/wormz.html
+COMMENT=		Networked game for X11
 
 WRKSRC=			${WRKDIR}/Wormz
 USE_GMAKE=		yes

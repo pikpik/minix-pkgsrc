@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2000/08/25 01:54:17 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2000/10/16 01:37:51 wiz Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
 
 PKGNAME=		nethack-tty-${NETHACK_VERSION}
+
+COMMENT=		the tty/console based version of NetHack
 
 DEPENDS+=		nethack-lib-${NETHACK_VERSION}:../nethack-lib
 

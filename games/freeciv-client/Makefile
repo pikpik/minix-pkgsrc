@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2000/09/11 03:53:05 fredb Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/04 14:18:49 wiz Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
+
+COMMENT=		Freeciv client with Xaw interface
 
 DEPENDS+=		freeciv-share-${FC_VERS}:../../games/freeciv-share
 

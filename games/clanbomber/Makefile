@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/01/04 01:08:55 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/23 15:09:52 wiz Exp $
 
 DISTNAME=		clanbomber-1.01
 PKGNAME=		${DISTNAME}nb1
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.clanbomber.de/files/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.clanbomber.de/
+COMMENT=		Bomberman clone using the ClanLib graphics system
 
 DEPENDS+=		ClanLib>=0.4:../../graphics/clanlib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/01 14:58:18 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:25 tron Exp $
 #
 
 DISTNAME=		xsoldier-0.96
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.surfline.ne.jp/hachi/xsoldier/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.surfline.ne.jp/hachi/xsoldier.html
+COMMENT=		Updated xgalaga type game with awesome graphics
 
 USE_IMAKE=		YES
 USE_XPM=		YES

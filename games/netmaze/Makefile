@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/08/29 10:09:43 jdc Exp $
 
 DISTNAME=		netmaze0.81
 PKGNAME=		netmaze-0.81
@@ -6,6 +6,7 @@ CATEGORIES=		games
 MASTER_SITES=  		${MASTER_SITE_XCONTRIB:=games/multiplayer/}
 
 MAINTAINER=		jdc@netbsd.org
+COMMENT=		X windows-based multiplayer combat game (like Midi Maze)
 
 USE_IMAKE=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/01/30 23:18:48 agc Exp $
+# $NetBSD: Makefile,v 1.4 1999/08/06 22:55:02 mjl Exp $
 #
 
 DISTNAME=		spellcast
@@ -9,6 +9,7 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.eblong.com/zarf/spellcast.html
+COMMENT=		Game of dueling wizards for two players
 
 USE_X11BASE=		yes
 

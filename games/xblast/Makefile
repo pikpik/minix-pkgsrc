@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/02/05 18:39:10 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/31 17:26:15 jwise Exp $
 #
 
 DISTNAME=		xblast-2.6.beta-sound
@@ -9,6 +9,7 @@ MASTER_SITES=		http://www.ikp.uni-koeln.de/~vogel/archive/
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.ikp.uni-koeln.de/~vogel/xblast/xblast.html
+COMMENT=		2-6 player kill the other guy with bombs game. A real blast!
 
 DEPENDS+=		tk-8.3.2:../../x11/tk
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/10/25 08:40:00 jlam Exp $
 
 DISTNAME=		EXCH314S
 PKGNAME=		exchess-3.14
@@ -8,6 +8,7 @@ EXTRACT_SUFX=		.zip
 
 MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://pc.astro.brandeis.edu/BRAG/people/dch/chess.html
+COMMENT=		experimental chess engine
 
 NO_WRKSUBDIR=		# defined
 NO_CONFIGURE=		# defined
