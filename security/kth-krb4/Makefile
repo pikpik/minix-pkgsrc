@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2001/09/27 23:18:38 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2002/02/18 15:14:39 seb Exp $
 #
 
 DISTNAME=		krb4-1.0.9
@@ -17,6 +17,12 @@ CONFLICTS+=		libdes-[0-9]*
 
 CRYPTO=			yes
 GNU_CONFIGURE=		yes
+
+# this hangs while compiling one of the files, at least with the
+# toolchain as of 1.5ZC (20020329)
+.if ${MACHINE_ARCH} == "sparc64"
+IS_INTERACTIVE=		yes
+.endif
 
 post-patch:
 	@${SED} -e 's|@PREFIX@|${PREFIX}|g'                                   \
