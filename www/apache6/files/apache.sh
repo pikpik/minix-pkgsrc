@@ -1,7 +1,9 @@
 #!/bin/sh
 #
-# $NetBSD: apache.sh,v 1.1.1.1 1999/07/23 17:53:29 itojun Exp $
+# $NetBSD: apache.sh,v 1.2 2000/07/10 12:22:30 hubertf Exp $
 #
+# PROVIDE: apache
+# REQUIRE: DAEMON
 
 CMD=${1:-start}
 
