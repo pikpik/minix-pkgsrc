@@ -1,3 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/17 01:07:14 recht Exp $
 bin/doclifter
+bin/manlifter
 man/man1/doclifter.1
+man/man1/manlifter.1
