@@ -39,6 +39,13 @@ post-build:
 		-e 's|@PREFIX@|${PREFIX}|' \
 		<${FILESDIR}/lwresd.sh >${WRKDIR}/lwresd
 
+# include/isc/ipv6.h is installed on non-ipv6 platforms
+IPV6H=		"@comment "
+.if ${OPSYS} == "SunOS" && ${OS_VERSION} == "5.7"
+IPV6H=		""
+.endif
+
+PLIST_SUBST+=	IPV6H="${IPV6H}"
 PLIST_SRC=	${WRKDIR}/PLIST
 
 post-install:
