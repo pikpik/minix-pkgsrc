@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1998/05/09 15:24:42 frueauf Exp $
+# $NetBSD: Makefile,v 1.18 1998/06/20 23:47:25 tron Exp $
 
 DISTNAME=	gimp-1.0.0
 CATEGORIES=	graphics
@@ -25,7 +25,6 @@ GIMP_DATA=	gimp-data-extras-1.0.0
 IS_INTERACTIVE=	yes
 .endif
 USE_X11=	yes
-USE_GTEXINFO=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include"
