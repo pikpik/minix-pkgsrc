@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/07/28 18:26:06 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/11/09 00:43:12 wiz Exp $
 #
 
 COMMENT=	window managers (for X)
@@ -15,6 +15,7 @@ SUBDIR+=	ctwm
 SUBDIR+=	econf
 SUBDIR+=	enlightenment
 SUBDIR+=	ethemes
+SUBDIR+=	evilwm
 SUBDIR+=	flwm
 SUBDIR+=	fvwm1
 SUBDIR+=	fvwm2
