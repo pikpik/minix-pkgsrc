@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/texi2html
+man/man1/texi2html.1.gz
+share/texi2html/invisible.xbm
+@dirrm share/texi2html
