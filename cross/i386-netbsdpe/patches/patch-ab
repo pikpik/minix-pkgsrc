@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gcc/config/i386/cygwin.asm.orig	Thu Dec 17 06:03:13 1998
+--- gcc/config/i386/cygwin.asm.orig	2001-10-31 23:32:27.000000000 +0900
 +++ gcc/config/i386/cygwin.asm
 @@ -3,9 +3,9 @@
  #ifdef L_chkstk
