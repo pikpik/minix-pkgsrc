@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2002/09/02 13:10:08 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2002/09/11 10:12:38 jlam Exp $
 #
 
 .include "Makefile.common"
@@ -9,8 +9,9 @@ COMMENT=	the GNOME image loading library
 # XXX hopefully there is no x.gnome-config.x in PATH
 post-patch:
 	${SED} -e 's/gnome-config/x.gnome-config.x/g' \
-	  ${WRKSRC}/configure.in >${WRKSRC}/.tmp && \
-	${MV} ${WRKSRC}/.tmp ${WRKSRC}/configure.in
+	  ${WRKSRC}/configure >${WRKSRC}/.tmp && \
+	${MV} ${WRKSRC}/.tmp ${WRKSRC}/configure
+	${CHMOD} a+x ${WRKSRC}/configure
 
 post-configure:
 	${SED} -e 's/ doc$$//' ${WRKSRC}/Makefile >${WRKSRC}/.tmp && \
