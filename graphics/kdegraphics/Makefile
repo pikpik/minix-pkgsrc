@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/12/29 19:46:49 tron Exp $
+# $NetBSD: Makefile,v 1.12 1999/01/30 23:18:50 agc Exp $
 #
 
 DISTNAME=	kdegraphics-1.0
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.kde.org/
 DEPENDS+=	kdebase-1.0:../../x11/kdebase
 
 CONFLICTS=	kdegraphics-4.1b
+
+IGNORE=		"needs to be updated"
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes

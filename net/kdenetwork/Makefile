@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1998/12/29 19:46:49 tron Exp $
+# $NetBSD: Makefile,v 1.24 1999/01/30 23:18:53 agc Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/11/05 04:19:54 asami Exp
 #
 
@@ -16,6 +16,8 @@ DEPENDS+=	kdesupport-1.0:../../converters/kdesupport
 DEPENDS+=	kdebase-1.0:../../x11/kdebase
 
 CONFLICTS=	kdenetwork-2.1b kdenetwork-3.1b kdenetwork-4.1b
+
+IGNORE=		"needs to be updated"
 
 NOT_FOR_ARCHS=	alpha	# LP64/ELF problems
 
