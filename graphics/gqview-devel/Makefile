@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/10/26 08:26:45 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/11/01 18:25:36 wiz Exp $
 #
 
 DISTNAME=	gqview-1.3.4
@@ -12,7 +12,6 @@ COMMENT=	GTK2-based graphic file viewer (development version)
 BUILD_USES_MSGFMT=	# defined
 
 USE_BUILDLINK2=		# defined
-USE_X11BASE=		# defined
 GNU_CONFIGURE=		# defined
 USE_PKGLOCALEDIR=	# defined
 CONFIGURE_ENV+=		ac_cv_path_GNOME_CONFIG=no
