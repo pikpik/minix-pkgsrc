@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/dos2unix
+bin/unix2dos
+man/man1/unix2dos.1
+man/man1/dos2unix.1
