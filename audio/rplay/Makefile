@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/05/15 13:55:35 agc Exp $
+# $NetBSD: Makefile,v 1.11 1998/06/04 22:55:11 augustss Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
 #
 
@@ -15,9 +15,6 @@ CONFIGURE_ARGS= "--prefix=${PREFIX}"
 CONFIGURE_ENV+=        RPLAY_TARGET=generic # XXX
 CONFIGURE_ENV+=        CFLAGS=-I${PREFIX}/include # XXX
 CONFIGURE_ENV+=        LDFLAGS=-L${PREFIX}/lib # XXX
-#USE_GMAKE=	yes
-MAN1=           rplay.1 xrplay.1 rplayd.1 rptp.1
-MAN5=		rplay.conf.5 rplay.hosts.5 rplay.servers.5
 INFO_FILES=	RPTP.info RPLAY.info rplay.info librplay.info
 
 pre-configure:
