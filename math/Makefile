@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.118 2004/08/14 13:30:38 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.119 2004/09/05 18:42:15 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -74,7 +74,7 @@ SUBDIR+=	p5-Spreadsheet-ParseExcel
 SUBDIR+=	p5-Spreadsheet-WriteExcel
 SUBDIR+=	pari
 SUBDIR+=	pari-galdata
-SUBDIR+=	php4-bcmath
+SUBDIR+=	php-bcmath
 SUBDIR+=	pspp
 SUBDIR+=	py-Numeric
 SUBDIR+=	py-Scientific

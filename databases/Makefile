@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.144 2004/10/21 16:05:17 darcy Exp $
+# $NetBSD: Makefile,v 1.145 2004/10/28 01:14:58 xtraeme Exp $
 #
 
 COMMENT=	Databases
@@ -78,14 +78,14 @@ SUBDIR+=	p5-perl-ldap
 SUBDIR+=	p5-postgresql
 SUBDIR+=	p5-sybperl
 SUBDIR+=	pgaccess
-SUBDIR+=	php4-dba
-SUBDIR+=	php4-dbase
-SUBDIR+=	php4-filepro
-SUBDIR+=	php4-ldap
-SUBDIR+=	php4-mssql
-SUBDIR+=	php4-mysql
-SUBDIR+=	php4-odbc
-SUBDIR+=	php4-pgsql
+SUBDIR+=	php-dba
+SUBDIR+=	php-dbase
+SUBDIR+=	php-filepro
+SUBDIR+=	php-ldap
+SUBDIR+=	php-mssql
+SUBDIR+=	php-mysql
+SUBDIR+=	php-odbc
+SUBDIR+=	php-pgsql
 SUBDIR+=	phpldapadmin
 SUBDIR+=	phpmyadmin
 SUBDIR+=	phppgadmin
