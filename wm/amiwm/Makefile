@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/06/30 09:45:48 zuntum Exp $
+# $NetBSD: Makefile,v 1.5 2001/08/29 22:41:22 jlam Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -11,6 +11,9 @@ HOMEPAGE=	http://www.lysator.liu.se/~marcus/amiwm.html
 COMMENT=	X window manager with Amiga look and feel
 
 LICENSE=	amiwm-license
+RESTRICTED=     "Restrictive copyright (non-commerical use only)"
+NO_SRC_ON_CDROM=        ${RESTRICTED}
+NO_BIN_ON_CDROM=        ${RESTRICTED}
 
 USE_BUILDLINK_ONLY=	YES
 USE_X11=	yes
