@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/28 12:53:03 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/09/06 16:37:44 hubertf Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -9,6 +9,8 @@ DISTFILES=	doomsrc.zip doom-1.8.wad.gz
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.idsoftware.com/archives/doomarc.html
+
+LICENSE=	shareware
 
 BUILD_DEPENDS=	unzip:../../archivers/unzip
 
