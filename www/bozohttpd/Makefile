@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/06/11 06:34:54 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2001/08/12 17:28:57 mrg Exp $
 #
 
 DISTNAME=	bozohttpd-5.08
@@ -11,6 +11,8 @@ HOMEPAGE=	http://www.eterna.com.au/bozohttpd/
 COMMENT=	bozotic HTTP server; small and secure
 
 BUILD_DEFS+=	USE_INET6
+
+USE_BUILDLINK_ONLY=	YES
 
 .include "../../mk/bsd.prefs.mk"
 
