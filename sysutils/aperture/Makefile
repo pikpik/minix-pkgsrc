@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2002/11/10 07:59:02 tron Exp $
+# $NetBSD: Makefile,v 1.25 2002/12/04 14:13:16 tron Exp $
 
 DISTNAME=	apNetBSD
 PKGNAME=	aperture-2.0
 PKGREVISION=	4
+WRKSRC=		${WRKDIR}
 CATEGORIES=	sysutils x11
 EXTRACT_SUFX=	.shar
 
@@ -30,7 +31,6 @@ ALL_TARGET=		cleandir depend all
 DIST_SUBDIR=		${PKGNAME}
 INSTALL_TARGET=		dirs includes install
 MANCOMPRESSED_IF_MANZ=	YES
-WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		YES
 OSVERSION_SPECIFIC=	YES
 MAKE_ENV+=		BSDSRCDIR="${BSDSRCDIR}"

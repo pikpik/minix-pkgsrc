@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2001/12/30 03:39:28 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2003/02/26 04:07:50 jschauma Exp $
 
 DISTNAME=	xmahjongg
 PKGNAME=	xmahjongg-1.0
 PKGREVISION=	2
+WRKSRC=		${WRKDIR}/xmahjongg
 CATEGORIES=	games
 # Most Usenet archive sites don't store it as a .tar.gz, but Slackware
 # and its mirrors do.
@@ -11,7 +12,6 @@ MASTER_SITES=	ftp://wcarchive.cdrom.com/pub/linux/slackware/source/xap/xgames/
 MAINTAINER=	packages@netbsd.org
 COMMENT=	The Chinese game of Mahjongg for X11
 
-WRKSRC=		${WRKDIR}/xmahjongg
 USE_IMAKE=	yes
 
 RESTRICTED=	"Restrictive copyright"

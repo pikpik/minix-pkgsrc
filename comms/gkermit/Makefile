@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2001/09/09 20:36:16 agc Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/04 12:43:56 jlam Exp $
 #
 
 DISTNAME=	gkermit
 PKGNAME=	gkermit-1.00
+WRKSRC=		${WRKDIR}
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
 
@@ -14,7 +15,6 @@ USE_BUILDLINK2=	# defined
 ALL_TARGET=	posix
 MAKEFILE=	makefile
 MAKE_ENV+=	KFLAGS="${CFLAGS}"
-WRKSRC=		${WRKDIR}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gkermit ${PREFIX}/bin/gkermit; \

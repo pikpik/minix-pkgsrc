@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/02/24 05:08:03 itojun Exp $
 
 DISTNAME=	sch-20010224
+WRKSRC=		${WRKDIR}/sch/build
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.itojun.org/pub/misc/
 
@@ -10,7 +11,6 @@ COMMENT=	curses-based schedule management tool
 LICENSE=	no-commercial-use
 
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/sch/build
 
 # manpages are not complete, don't confuse people
 do-install:

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2003/01/24 04:20:24 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/01/25 03:10:36 grant Exp $
 #
 
 DISTNAME=       jde-2.3.2
+WRKSRC=         ${WRKDIR}/${DISTNAME}/lisp
 CATEGORIES=     devel editors
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 # The "real" site has silly naming conventions:
@@ -26,7 +27,6 @@ MAKE_ENV+=	EMACS_LISPPREFIX=${EMACS_LISPPREFIX}
 
 NO_CONFIGURE=   # set
 
-WRKSRC=         ${WRKDIR}/${DISTNAME}/lisp
 MAKEFILE=       makefile
 
 post-extract:

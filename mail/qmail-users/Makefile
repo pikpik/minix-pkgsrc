@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/01/28 17:51:11 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:37 jlam Exp $
 #
 
 DISTNAME=	qmail-users-1.0
+WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=   #
 DISTFILES=	#
@@ -23,8 +24,6 @@ PKG_USERS+=	qmails:qmail::qmails:${QMAILDIR}
 NO_BUILD=	YES
 NO_CHECKSUM=	YES
 USE_PKGINSTALL=	YES
-
-WRKSRC=		${WRKDIR}
 
 do-install:	# empty
 

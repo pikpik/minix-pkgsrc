@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2002/03/04 19:41:06 fredb Exp $
+# $NetBSD: Makefile,v 1.12 2003/01/24 15:38:42 wiz Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
 DISTNAME=		IPv6socket_scrub
 PKGNAME=		ipv6socket_scrub-1.0
+WRKSRC=			${WRKDIR}/${DISTNAME}/src
 CATEGORIES=		devel
 # need to fetch on your own
 #MASTER_SITES=		
@@ -15,7 +16,6 @@ COMMENT=		checks IPv6 portability in source code
 
 DECOMPRESS_CMD=		${CAT}
 EXTRACT_BEFORE_ARGS=	-xf
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
 RESTRICTED=		"not redistributable, license agreement required"
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}

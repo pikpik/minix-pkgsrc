@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2003/01/24 09:41:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/28 21:14:27 wiz Exp $
 
 DISTNAME=	pkg_comp-1.6
+WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -12,7 +13,6 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	YES
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
-WRKSRC=		${WRKDIR}
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 09:07:10 agc Exp $
+# $NetBSD: Makefile,v 1.4 2002/11/13 20:15:10 jschauma Exp $
 #
 
 DISTNAME=		gprolog-1.2.16
+WRKSRC=			${WRKDIR}/${DISTNAME}/src
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/contraintes/gprolog/
 
@@ -17,7 +18,5 @@ CONFIGURE_ARGS+=	--with-install-dir=${PREFIX}/libexec/${PKGNAME} \
 			--with-html-dir=${PREFIX}/share/doc/html/gprolog \
 			--with-examples-dir=${PREFIX}/share/examples/gprolog \
 			--with-c-flags='-O3 -finline-functions -fomit-frame-pointer -D__unix__=1'
-
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
 
 .include "../../mk/bsd.pkg.mk"

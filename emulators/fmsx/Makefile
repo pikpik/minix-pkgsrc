@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2001/06/03 17:34:57 kei Exp $
+# $NetBSD: Makefile,v 1.7 2001/07/05 14:22:37 perry Exp $
 
 DISTNAME=	fMSX24.tar
 PKGNAME=	fmsx-2.4
+WRKSRC= 	${WRKDIR}/MSX
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://www.komkon.org/fms/fMSX/
 EXTRACT_SUFX=	.Z
@@ -17,8 +18,6 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 
 USE_X11=	yes
-
-WRKSRC= 	${WRKDIR}/MSX
 
 .include "../../mk/bsd.prefs.mk"
 USE_SUN_AUDIO?=	YES

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2003/01/28 22:04:08 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/26 04:05:41 jschauma Exp $
 
 DISTNAME=		vlnx416e
 PKGNAME=		uvscan-4.16.0
 PKGREVISION=		1
+WRKSRC=			${WRKDIR}
 CATEGORIES=		security
 MASTER_SITES=		http://download.nai.com/products/evaluation/virusscan/english/cmdline/linux/version_4.16/
 EXTRACT_SUFX=		.tar.Z
@@ -25,7 +26,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 
-WRKSRC=			${WRKDIR}
 DOCDIR=			${PREFIX}/share/doc/uvscan
 DATDIR=			${PREFIX}/share/uvscan
 UVSCANDIR=		${PREFIX}/libexec/uvscan

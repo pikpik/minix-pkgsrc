@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.8 2002/09/25 06:36:07 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/02/26 03:40:54 jschauma Exp $
 
 DISTNAME=	xcircuit-2.2.0
 PKGREVISION=	2
+WRKSRC=		${WRKDIR}/${DISTNAME}
 CATEGORIES=	cad graphics
 MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/
 COMMENT=	Drawing program for X11 (especially for circuits)
-
-WRKSRC=		${WRKDIR}/${DISTNAME}
 
 USE_BUILDLINK2=	yes
 USE_IMAKE=	yes

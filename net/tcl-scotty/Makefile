@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:43 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/11/25 17:53:20 jwise Exp $
 #
 
 DISTNAME=	scotty-2.1.11
 PKGNAME=	tcl-scotty-2.1.11
+WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 CATEGORIES=	net tcl tk
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 
@@ -18,8 +19,6 @@ CONFIGURE_ARGS+= --with-tcl-config=${PREFIX}/lib --enable-multicast \
 CONFIGURE_ENV+=	TARGET=scotty
 
 USE_LIBTOOL=	yes
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 
 post-extract:
 	@${RM} -f ${WRKSRC}/../doc/http.n

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2002/03/13 17:36:55 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/09 14:35:34 wiz Exp $
 #
 
 DISTNAME=	TreeText-0.3.3-src
 PKGNAME=	${DISTNAME:C/-src//}
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/treetext/treetext
 CATEGORIES=	editors
 MASTER_SITES=	http://www.ab.wakwak.com/~tino/fox/treetext/
 EXTRACT_SUFX=	.zip
@@ -14,8 +15,6 @@ COMMENT=	multi documents editor
 
 USE_BUILDLINK2=	# defined
 USE_X11BASE=	# defined
-
-WRKSRC=		${WRKDIR}/treetext/treetext
 
 post-extract:
 	@${LN} -s ${WRKSRC}/makefile ${WRKSRC}/Makefile

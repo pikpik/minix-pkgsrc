@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/28 03:36:16 jlam Exp $
 
 DISTNAME=	FastTemplate-1_1_0
 PKGNAME=	php-FastTemplate-1.1.0
+WRKSRC=		${WRKDIR}/FastTemplate
 CATEGORIES=	www php4
 MASTER_SITES=	http://www.thewebmasters.net/php/
 
@@ -15,7 +16,6 @@ COMMENT=	PHP extension for managing templates and variable interpolation
 DEPENDS+=	php>=3.0.18:../../www/php4
 
 DIST_SUBDIR=	${PKGBASE}
-WRKSRC=		${WRKDIR}/FastTemplate
 
 NO_BUILD=	YES
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/01/17 11:29:19 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2002/09/21 23:46:54 jlam Exp $
 #
 
 DISTNAME=	soaplib-0.8-20000621
 PKGNAME=	${PYPKGPREFIX}-soaplib-0.8
+WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	http://www.pythonware.com/downloads/
 EXTRACT_SUFX=	.zip
@@ -11,7 +12,6 @@ MAINTAINER=	drochner@netbsd.org
 HOMEPAGE=	http://www.pythonware.com/products/soap/index.htm
 COMMENT=	implementation of the SOAP 1.1 protocol
 
-WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
 
 PY_PATCHPLIST=	yes

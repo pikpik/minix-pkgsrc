@@ -1,14 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/08/16 05:31:10 lukem Exp $
 
 DISTNAME=	cd-discid_0.7.orig
 PKGNAME=	cd-discid-0.7
+WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://frantica.lly.org/~rcw/cd-discid/
 
 MAINTAINER=	lukem@netbsd.org
 COMMENT=	Read CD to obtain CDDB discid information
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 do-build:
 	cd ${WRKSRC} && ${CC} -O -o cd-discid cd-discid.c

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/21 10:47:31 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/23 23:55:25 jlam Exp $
 #
 
 DISTNAME=	xmftp-1.0.4
+WRKSRC=		${WRKDIR}/xmftp/source
 CATEGORIES=	net
 MASTER_SITES=	http://www.cse.fau.edu/~valankar/old/xmftp/
 
@@ -12,8 +13,6 @@ COMMENT=	X/Motif FTP client
 USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
 USE_GMAKE=	yes
-
-WRKSRC=		${WRKDIR}/xmftp/source
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmftp ${PREFIX}/bin

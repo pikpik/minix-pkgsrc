@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2003/01/28 22:03:15 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/02/14 22:50:04 hubertf Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-1-src
 PKGNAME=	${OPENCM_VERSION:C/alpha/rc/}
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/${OPENCM_VERSION}/base
 CATEGORIES=	devel
 MASTER_SITES=	http://www.opencm.org/releases/
 EXTRACT_SUFX=	.tgz
@@ -24,7 +25,6 @@ INFO_FILES=	opencm.info
 
 CPPFLAGS+=	-D__unix__
 MAKE_ENV+=	GZIP_CMD=${GZIP_CMD:Q}
-WRKSRC=		${WRKDIR}/${OPENCM_VERSION}/base
 
 .include "../../devel/boehm-gc/buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"

@@ -1,15 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/08/28 10:00:11 seb Exp $
 
 DISTNAME=	tclcl-src-1.0b12
 PKGNAME=	tcl-${DISTNAME:S/b/rc/:S/-src//}
+WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=otcl-tclcl/}
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://otcl-tclcl.sourceforge.net/tclcl/
 COMMENT=	Tcl/C++ interface used by ns and nam
-
-WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

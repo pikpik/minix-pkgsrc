@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2002/03/17 17:20:01 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2002/08/17 05:59:00 tron Exp $
 #
 
 DISTNAME=	boolean
 PKGNAME=	boolean-${REL}
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/boolean/${REL}/linux
 CATEGORIES=	cad graphics
 MASTER_SITES=	http://www.xs4all.nl/~kholwerd/download/boolzip/
 EXTRACT_SUFX=	.zip
@@ -20,7 +21,6 @@ REL=		6.2
 # This package cannot be built with g++ 2.95.3.
 ONLY_FOR_PLATFORM=	NetBSD-1.[45]*-*
 
-WRKSRC=		${WRKDIR}/boolean/${REL}/linux
 MAKEFILE=	makefile.gui
 PLIST_SUBST=	REL=${REL}
 

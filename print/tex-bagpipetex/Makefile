@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/23 18:13:46 fredb Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/25 23:16:25 fredb Exp $
 #
 
 DISTNAME=	bagpipetex-3.01
 PKGNAME=	tex-${DISTNAME}
+WRKSRC=         ${WRKDIR}
 CATEGORIES=	print
 MASTER_SITES=	http://www.stanford.edu/~wrinnes/bagpipe.tex/distribution/
 DISTFILES=	bagpipe301.tar.gz
@@ -15,7 +16,6 @@ DEPENDS+=	tex-musixtex>=109:../tex-musixtex
 
 NO_CONFIGURE=   yes
 NO_BUILD=       yes
-WRKSRC=         ${WRKDIR}
 
 TEXMF_CNF=      ${LOCALBASE}/share/texmf/web2c/texmf.cnf
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/09/09 20:36:24 agc Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/27 23:18:04 jlam Exp $
 
 DISTNAME=		book_large
 PKGNAME=		${CHESS_ENGINE}-book-large-20000512
+WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		http://www.ast.cam.ac.uk/~cmf/chess/
 EXTRACT_SUFX=		.tgz
@@ -15,7 +16,6 @@ CONFLICTS=		${CHESS_ENGINE}-book-[0-9]*
 
 CHESS_ENGINE=		colchess
 DIST_SUBDIR=		chessbooks
-WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		# defined
 
 PLIST_SUBST+=		CHESS_ENGINE=${CHESS_ENGINE}

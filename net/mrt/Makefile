@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:19:08 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/25 04:18:06 hubertf Exp $
 #
 
 DISTNAME=	mrt-2.2.2a-Aug11
 PKGNAME=	mrt-2.2.2a.20000811
+WRKSRC=		${WRKDIR}/mrt/src
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.merit.edu/net-research/mrt/
 
@@ -10,7 +11,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.mrtd.net/
 COMMENT=	Multi-threaded Routing Toolkit
 
-WRKSRC=		${WRKDIR}/mrt/src
 GNU_CONFIGURE=	yes
 
 PLIST_SRC=	${WRKSRC}/.PLIST_SRC

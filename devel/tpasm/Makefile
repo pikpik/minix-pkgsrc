@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/04/16 00:11:50 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2001/04/29 09:20:33 wulf Exp $
 #
 
 DISTNAME=	tpasm1.0r
 PKGNAME=	tpasm-1.0r
+WRKSRC=		${WRKDIR}/tpasm
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.ct0.com/pub/
 EXTRACT_SUFX=	.tgz
@@ -10,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.sqt.com
 COMMENT=	assembler for 6805, 68HC11, 6502, Surplus, 8051, Z80, PIC, and AVR
-
-WRKSRC=		${WRKDIR}/tpasm
 
 USE_GMAKE=	yes
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2002/09/21 00:46:56 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/12/28 21:22:55 jschauma Exp $
 
 DISTNAME=	xrmftp-1.2.4
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/${DISTNAME}.src
 CATEGORIES=	net
 MASTER_SITES=	http://www.mat.uni.torun.pl/~rafmet/xrmftp/
 EXTRACT_SUFX=	.src.tgz
@@ -12,7 +13,6 @@ COMMENT=	FTP client for X Window System
 
 USE_BUILDLINK2=	yes
 USE_X11BASE=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME}.src
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xrmftp ${PREFIX}/bin

@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/02 02:51:02 rxg Exp $
 
 DISTNAME=	mp32ogg-0.11
+WRKSRC=		${WRKDIR}
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	# empty
@@ -17,7 +18,6 @@ DEPENDS+=	p5-String-ShellQuote>=1.00:../../textproc/p5-String-ShellQuote
 USE_PERL5=	yes
 
 EXTRACT_ONLY=	# empty
-WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
 
 do-extract:

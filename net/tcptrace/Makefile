@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2001/02/17 18:19:45 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2001/02/25 04:18:08 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/07/19 19:43:36 fenner Exp
 #
 
 DISTNAME=	tcptrace.5.2.1
 PKGNAME=	tcptrace-5.2.1
+WRKSRC=         ${WRKDIR}/tcptrace_5.2.1
 CATEGORIES=	net
 MASTER_SITES=	http://jarok.cs.ohiou.edu/software/tcptrace/files/5.2.1/
 
@@ -11,7 +12,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://jarok.cs.ohiou.edu/software/tcptrace/tcptrace.html
 COMMENT=	TCP dump file analysis tool
 
-WRKSRC=         ${WRKDIR}/tcptrace_5.2.1
 GNU_CONFIGURE=	yes
 
 ALL_TARGET=	tcptrace

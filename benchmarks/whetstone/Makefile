@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2001/04/09 11:45:39 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2001/09/09 20:36:15 agc Exp $
 
 DISTNAME=		whetstone
 PKGNAME=		whetstone-1.2
+WRKSRC=			${WRKDIR}
 CATEGORIES=		benchmarks
 MASTER_SITES=		http://www.netlib.org/benchmark/
 EXTRACT_SUFX=		.c
@@ -9,7 +10,6 @@ EXTRACT_SUFX=		.c
 MAINTAINER=		root@garbled.net
 COMMENT=		Benchmark for processors that gives you a MIPS rating
 
-WRKSRC=			${WRKDIR}
 EXTRACT_CMD=		${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 do-build:

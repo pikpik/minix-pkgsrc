@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/14 02:28:18 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/10 14:26:37 wiz Exp $
 #
 
 DISTNAME=		verilog-mode-3.60
+WRKSRC=			${WRKDIR}
 CATEGORIES=		cad editors
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 # The latest can be fetched interactively from
@@ -10,8 +11,6 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MAINTAINER=		dmcmahill@netbsd.org
 HOMEPAGE=		http://www.verilog.com/verilog-mode.html
 COMMENT=		Verilog mode for Emacs
-
-WRKSRC=			${WRKDIR}
 
 .include "../../mk/emacs.mk"
 

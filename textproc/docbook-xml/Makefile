@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/01/18 09:39:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/29 21:17:26 jmmv Exp $
 #
 
 DISTNAME=	docbook-xml-4.2
-WRKSRC=		${WRKDIR}
 PKGREVISION=	4
+WRKSRC=		${WRKDIR}
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.oasis-open.org/docbook/xml/4.2/
 EXTRACT_SUFX=	.zip

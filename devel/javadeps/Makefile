@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/10/18 21:10:02 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/12/26 20:52:10 jlam Exp $
 #
 
 DISTNAME=	javadeps-1.1
+WRKSRC=		${WRKDIR}/JavaDeps-1.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.vet.com.au/java/javadeps/
 EXTRACT_SUFX=	.zip
@@ -12,8 +13,6 @@ COMMENT=	Automatic dependency tracking for Java
 
 USE_BUILDLINK2=	# defined
 USE_JAVA=	run
-
-WRKSRC=		${WRKDIR}/JavaDeps-1.1
 
 do-build:
 	cd ${WRKSRC}; for file in jdeps; do				\

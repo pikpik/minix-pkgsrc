@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2002/12/26 20:52:12 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/28 21:14:36 wiz Exp $
 #
 
 DISTNAME=	saxon
 PKGNAME=	saxon-6.0.2
+WRKSRC=		${WRKDIR}
 CATEGORIES=	textproc www
 MASTER_SITES=	${HOMEPAGE}saxon6.0.2/
 EXTRACT_SUFX=	.zip
@@ -16,8 +17,6 @@ USE_JAVA=	run
 USE_BUILDLINK2=
 NO_CONFIGURE=
 NO_BUILD=
-
-WRKSRC=		${WRKDIR}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/java

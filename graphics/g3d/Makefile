@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2002/10/09 10:54:44 agc Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/08 02:44:13 salo Exp $
 #
 
 DISTNAME=	g3d-0.0.2
+WRKSRC=		${WRKDIR}/g3d
 CATEGORIES=	graphics
 MASTER_SITES=	http://condor.stcloudstate.edu/~hebl9901/g3d/
 
 MAINTAINER=	sakamoto@netbsd.org
 HOMEPAGE=	http://condor.stcloudstate.edu/~hebl9901/g3d/
 COMMENT=	3D modeller with a view of 3D modelling
-
-WRKSRC=		${WRKDIR}/g3d
 
 USE_LIBTOOL=	YES
 USE_GMAKE=	YES

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/15 20:35:39 kei Exp $
 
 DISTNAME=		elisat10
 PKGNAME=		ja-elisat-1.0
+WRKSRC=			${WRKDIR}
 CATEGORIES=		fonts x11 japanese
 MASTER_SITES=		http://www.tea.forus.or.jp/toshi/exhibition/
 
@@ -13,7 +14,6 @@ USE_X11BASE=		YES
 DOCDIR=			${PREFIX}/share/doc/elisat
 FONTDIR=		${X11PREFIX}/lib/X11/fonts/local
 #ALIAS=			${WRKDIR}/fonts.alias
-WRKSRC=			${WRKDIR}
 
 LICENSE=		no-commercial-use
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2001/04/19 11:39:31 agc Exp $
+# $NetBSD: Makefile,v 1.5 2002/02/06 16:58:16 jlam Exp $
 
 DISTNAME=		modeline_vfr.c
 PKGNAME=		modeline-20001121
+WRKSRC=			${WRKDIR}/modeline
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=		# empty
@@ -9,8 +10,6 @@ EXTRACT_SUFX=		# empty
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.dkfz-heidelberg.de/spec/linux/modeline/
 COMMENT=		calculates XF86 Modelines to configure your monitor for X11R6
-
-WRKSRC=			${WRKDIR}/modeline
 
 do-extract:
 	${MKDIR} ${WRKSRC}

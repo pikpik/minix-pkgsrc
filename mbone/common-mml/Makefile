@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:04:34 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/27 01:50:02 dmcmahill Exp $
 #
 
 DISTNAME=	common-1.2.0
 PKGNAME=	common-mml-1.2.0
+WRKSRC=		${WRKDIR}/common
 CATEGORIES=	mbone
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/common/
 
@@ -14,7 +15,6 @@ COMMENT=	Common multimedia library required by mbone tools
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-WRKSRC=		${WRKDIR}/common
 
 # this does ipv6 ONLY ;(
 # .if ${USE_INET6} == "YES"

@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2002/03/15 04:59:16 jmc Exp $
+# $NetBSD: Makefile,v 1.15 2003/03/08 06:00:03 jmc Exp $
 # FreeBSD Id: Makefile,v 1.6 1999/01/27 07:41:12 fenner Exp
 #
 
 DISTNAME=	chess-5.00
 PKGNAME=	gnuchess-5.00
 PKGREVISION=	2
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU:=chess/}
 
@@ -19,7 +20,6 @@ COMMENT=	GNU chess engine
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 ALL_TARGET=	gnuchess
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 BOOKDIR=	${PREFIX}/lib/gnuchess
 DOCDIR=		${PREFIX}/share/doc/gnuchess

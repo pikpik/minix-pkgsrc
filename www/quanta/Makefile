@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2002/09/20 12:00:50 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/02 22:28:09 wiz Exp $
 
 DISTNAME=	quanta-2.0-pr2
 PKGNAME=	quanta-1.9.9.2
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/quanta
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quanta/}
 EXTRACT_SUFX=	.tar.bz2
@@ -22,8 +23,6 @@ USE_GMAKE=              YES
 GNU_CONFIGURE=          YES
 USE_LIBTOOL=            YES
 LTCONFIG_OVERRIDE=      ${WRKSRC}/admin/ltconfig
-
-WRKSRC=		${WRKDIR}/quanta
 
 pre-configure:
 	cd ${WRKSRC};							\

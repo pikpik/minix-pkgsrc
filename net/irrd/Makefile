@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2001/09/27 23:18:27 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2002/09/01 15:30:11 kim Exp $
 
 DISTNAME=	irrd2.1.4
 PKGNAME=	irrd-2.1.4
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 CATEGORIES=	net
 MASTER_SITES=	http://www.irrd.net/ \
 		ftp://ftp.merit.edu/radb/irrd/ \
@@ -15,8 +16,6 @@ DEPENDS+=	gnupg-[0-9]*:../../security/gnupg
 DEPENDS+=	wget-[0-9]*:../../net/wget
 
 USE_PERL5=	# defined
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-gdbm

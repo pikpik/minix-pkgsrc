@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2002/10/15 11:27:11 kei Exp $
+# $NetBSD: Makefile,v 1.11 2003/01/10 18:46:32 nathanw Exp $
 #
 
 DISTNAME=		plt.src.x
 PKGNAME=		drscheme-202
+WRKSRC=                 ${WRKDIR}/plt/src
 DIST_SUBDIR=		${PKGNAME:C/-[0-9]*//}/${PKGNAME:C/.*-([0-9]*)/\1/}
 CATEGORIES=		lang
 MASTER_SITES=		http://download.plt-scheme.org/bundles/202/plt/ \
@@ -22,8 +23,6 @@ USE_X11=		yes
 USE_GMAKE=		yes
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-
-WRKSRC=                 ${WRKDIR}/plt/src
 
 post-patch:
 	@for patchee in \

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2002/10/13 12:01:46 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2002/10/15 23:34:40 dillo Exp $
 #
 
 DISTNAME=	pilrc-2.9p9
 PKGNAME=	pilrc-2.9.10
+#WRKSRC=	${WRKDIR}/pilrc-2.9p9
 DIFFS=		pilrc-2.9p10.diff
 EXTRACT_SUFFIX=	.tgz
 DISTFILES=	${DISTNAME}${EXTRACT_SUFFIX} ${DIFFS}
@@ -27,7 +28,6 @@ USE_GMAKE=	YES
 USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 
-#WRKSRC=		${WRKDIR}/pilrc-2.9p9
 DOCDIR=		${PREFIX}/share/doc/html/pilrc
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/05/08 16:15:56 agc Exp $
+# $NetBSD: Makefile,v 1.4 2002/02/25 04:47:22 jlam Exp $
 #
 
 DISTNAME=		memconf
 PKGNAME=		memconf-1.23.2
+WRKSRC=			${WRKDIR}
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/
 EXTRACT_SUFX=		.gz
@@ -12,8 +13,6 @@ HOMEPAGE=		http://netnow.micron.net/~tschmidt/memconf.html
 COMMENT=		physical memory information utility
 
 ONLY_FOR_PLATFORM=	SunOS-*-* 	# only for Solaris
-
-WRKSRC=			${WRKDIR}
 
 NO_BUILD=		yes
 

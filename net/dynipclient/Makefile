@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2001/08/28 13:23:06 tv Exp $
+# $NetBSD: Makefile,v 1.3 2002/02/27 01:36:09 tv Exp $
 #
 
 DISTNAME=	dynip_3.00
 PKGNAME=	dynipclient-3.00
+WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.dynip.com/software/unix/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.dynip.com/
 COMMENT=	Client for the dynip.com dynamic DNS service
-
-WRKSRC=		${WRKDIR}
 
 do-build:
 	cd ${WRKSRC} && ./Configure freebsd ${PREFIX}/bin /etc ${PREFIX}/man

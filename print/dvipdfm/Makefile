@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2002/10/09 13:31:20 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/02/24 15:30:54 kei Exp $
 
 DISTNAME=	dvipdfm-0.13.2c
+WRKSRC=		${WRKDIR}/dvipdfm
 CATEGORIES=	print converters
 MASTER_SITES=	ftp://ftp.kettering.edu/pub/outgoing/mwicks/dvipdfm/
 
@@ -11,7 +12,6 @@ COMMENT=	DVI to PDF translator
 CONFLICTS+=	dvipdfmx-[0-9]*
 CONFLICTS+=	ja-dvipdfm-[0-9]*
 
-WRKSRC=			${WRKDIR}/dvipdfm
 USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share

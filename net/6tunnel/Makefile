@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/23 13:54:47 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/10/23 20:23:09 zuntum Exp $
 #
 
 DISTNAME=	6tunnel-0.09
+WRKSRC=		${WRKDIR}/6tunnel
 CATEGORIES=	net
 MASTER_SITES=	ftp://amba.bydg.pdi.net/pub/wojtekka/
 
 MAINTAINER=	zuntum@netbsd.org
 COMMENT=	v4/v6 protocol translation
-
-WRKSRC=		${WRKDIR}/6tunnel
 
 do-build:
 	${CC} ${CFLAGS} -o ${WRKSRC}/6tunnel ${WRKSRC}/6tunnel.c

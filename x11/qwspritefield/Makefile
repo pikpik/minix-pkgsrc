@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2001/03/09 16:10:22 agc Exp $
+# $NetBSD: Makefile,v 1.14 2001/03/11 08:32:38 tron Exp $
 
 DISTNAME=	QwSpriteField1.6
 PKGNAME=	qwspritefield-1.6
+WRKSRC=		${WRKDIR}/QwSpriteField
 CATEGORIES=	x11 graphics
 MASTER_SITES=	ftp://ftp.troll.no/contrib/
 
@@ -15,7 +16,6 @@ CONFLICTS=	kdesupport-1.0
 USE_X11BASE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-WRKSRC=		${WRKDIR}/QwSpriteField
 
 QW_INCLUDES=	Pix.h QwCluster.h QwPublicList.h QwSpriteField.h
 

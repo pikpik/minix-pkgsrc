@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/10/29 18:30:30 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2001/12/05 15:00:44 agc Exp $
 #
 
 DISTNAME=	acme085_linux
 PKGNAME=	acme-0.85
+WRKSRC=		${WRKTOP}/sources
 CATEGORIES=	devel
 MASTER_SITES=	http://www.esw-heim.tu-clausthal.de/~marco/cpf/current/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${LIBDIST}
@@ -16,7 +17,6 @@ BUILD_DEPENDS+=	unzip-*:../../archivers/unzip
 LIBDIST=	lib002.zip
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 WRKTOP=		${WRKDIR}/acme085
-WRKSRC=		${WRKTOP}/sources
 
 ACME_LIB=	${PREFIX}/share/acme
 MAKE_ENV+=	ACME_LIB=${ACME_LIB}

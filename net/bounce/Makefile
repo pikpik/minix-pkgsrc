@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/03/19 22:11:17 fredb Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/17 18:18:38 wiz Exp $
 #
 
 DISTNAME=		bounce-0.0
+WRKSRC=			${WRKDIR}/bounce
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		p99dreyf@criens.u-psud.fr
 COMMENT=		tool to forward TCP connection from one IP to another
-
-WRKSRC=			${WRKDIR}/bounce
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

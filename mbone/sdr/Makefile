@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2001/02/17 18:04:36 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2001/05/05 19:51:17 jlam Exp $
 #
 
 DISTNAME=	sdr-3.0
+WRKSRC=		${WRKDIR}/sdr/${SYSDIR}
 CATEGORIES=	mbone tk
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/3.0/
 
@@ -32,7 +33,6 @@ SYSDIR= solaris
 SYSDIR= freebsd
 .endif
 
-WRKSRC=		${WRKDIR}/sdr/${SYSDIR}
 USE_GMAKE=	yes
 
 do-configure:

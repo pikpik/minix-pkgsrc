@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/15 20:28:01 kei Exp $
 
 DISTNAME=		vfontcap-kochi-0.0
+WRKSRC=			${WRKDIR}
 CATEGORIES=		fonts x11 japanese
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -12,7 +13,6 @@ DEPENDS+=		ja-vflib-lib-*:../../print/ja-vflib-lib
 DEPENDS+=		kochi-ttf-*:../../fonts/kochi-ttf
 
 EXTRACT_ONLY=		# empty
-WRKSRC=			${WRKDIR}
 NO_CHECKSUM=		YES
 NO_BUILD=		YES
 

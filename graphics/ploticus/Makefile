@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2002/12/16 23:02:31 grant Exp $
+# $NetBSD: Makefile,v 1.15 2002/12/24 06:10:09 wiz Exp $
 #
 
 DISTNAME=	plsrc210
 PKGNAME=	ploticus-2.10
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 CATEGORIES=	graphics
 MASTER_SITES=	http://ploticus.sourceforge.net/download/
 
@@ -16,7 +17,6 @@ USE_X11=	YES
 USE_BUILDLINK2=	YES
 
 ALL_TARGET=	ploticus
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MANSRC=		${WRKDIR}/${DISTNAME}/man
 PREFABSRC=	${WRKDIR}/${DISTNAME}/prefabs
 

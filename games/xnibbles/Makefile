@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2001/12/05 04:29:32 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/09/24 08:33:07 jlam Exp $
 #
 
 DISTNAME=		xnibbles-1.0BETA4
 PKGNAME=		xnibbles-1.0b4
+WRKSRC=			${WRKDIR}/xnibbles
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.tjhsst.edu/xnibbles/
 
@@ -14,7 +15,6 @@ USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
 USE_GMAKE=		YES
 
-WRKSRC=			${WRKDIR}/xnibbles
 ALL_TARGET=		netbsd
 
 CC=			${CXX}

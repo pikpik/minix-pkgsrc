@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2002/05/20 12:38:58 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/21 23:46:50 jlam Exp $
 #
 
 DISTNAME=	mkfontalias.py
 PKGNAME=	mkfontalias-20000521
+WRKSRC=		${WRKDIR}
 CATEGORIES=	fonts
 MASTER_SITES=	http://home.c2i.net/dark/
 EXTRACT_SUFX=	# empty
@@ -12,7 +13,6 @@ HOMEPAGE=	http://home.c2i.net/dark/linux.html#fuzzy
 COMMENT=	creates a fonts.alias from the fonts.dir for TrueType fonts
 
 EXTRACT_ONLY=	# empty
-WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
 
 PYTHON_PATCH_SCRIPTS=	${DISTNAME}

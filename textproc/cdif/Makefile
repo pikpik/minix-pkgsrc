@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/06/07 21:16:10 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:48 agc Exp $
 #
 
 DISTNAME=		cdif-1.15
+WRKSRC=			${WRKDIR}
 CATEGORIES=		textproc
 MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
 EXTRACT_SUFX=		# empty
@@ -13,7 +14,6 @@ LICENSE=		no-commercial-use
 
 USE_PERL5=		# defined
 
-WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		# defined
 NO_BUILD=		# defined
 

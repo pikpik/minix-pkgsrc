@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2001/12/15 20:25:39 agc Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/28 21:14:27 wiz Exp $
 #
 
 DISTNAME=	pkgdep-1.0
+WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -12,7 +13,6 @@ COMMENT=	Script for displaying dependence information on software packages
 USE_PERL5=	YES
 
 EXTRACT_ONLY=	# empty
-WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 

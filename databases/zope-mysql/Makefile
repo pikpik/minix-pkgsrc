@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2002/09/21 23:46:48 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2002/10/10 12:31:08 wiz Exp $
 #
 
 DISTNAME=	ZMySQLDA-1.1.3-nonbin
 PKGNAME=	zope-mysql-1.1.3
 PKGREVISION=	2
+WRKSRC=		${WRKDIR}/lib
 CATEGORIES=	databases www
 MASTER_SITES=   http://www.zope.org/Members/MikeP/ZMySQLDA/
 
@@ -15,7 +16,6 @@ DEPENDS+=	zope-2.*:../../www/zope
 
 USE_BUILDLINK2=	YES
 
-WRKSRC=		${WRKDIR}/lib
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
 ZOPEDIR=	${PREFIX}/lib/zope

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/01/22 22:07:29 kristerw Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/28 01:14:03 uebayasi Exp $
 
 DISTNAME=		superlu_2.0
 PKGNAME=		superlu-2.0
 PKGREVISION=		2
+WRKSRC=			${WRKDIR}/SuperLU
 CATEGORIES=		math
 MASTER_SITES=		http://www.nersc.gov/~xiaoye/SuperLU/
 
@@ -11,8 +12,6 @@ HOMEPAGE=		http://www.nersc.gov/~xiaoye/SuperLU/
 COMMENT=		ANSI C routine library for the solution of sparse linear systems
 
 DEPENDS+=		blas-[0-9]*:../../math/blas
-
-WRKSRC=			${WRKDIR}/SuperLU
 
 BLAS_PREFIX_DEFAULT=	${LOCALBASE}
 EVAL_PREFIX+=		BLAS_PREFIX=blas

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2003/03/09 19:46:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.20 2003/03/24 17:56:44 jschauma Exp $
 
 DISTNAME=	quake-v6-bsd-kame
 PKGNAME=	quake6-0.0
+WRKSRC=		${WRKDIR}/quakeforge
 CATEGORIES=	games
 MASTER_SITES=	http://www.viagenie.qc.ca/quake/
 
@@ -10,8 +11,6 @@ HOMEPAGE=	http://www.viagenie.qc.ca/en/ipv6-quake.shtml
 COMMENT=	Quake over IPv6
 
 DEPENDS=	quakedata-[0-9]*:../../games/quakedata
-
-WRKSRC=		${WRKDIR}/quakeforge
 
 USE_BUILDLINK2=	yes
 USE_X11=	yes

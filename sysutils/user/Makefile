@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 17:42:21 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2002/12/07 02:39:05 schmonz Exp $
 #
 
 # Note to package maintainers:
@@ -6,14 +6,13 @@
 # "tar pzvcf user-`date +%Y%m%d`.tar.gz user" and upload that
 # file to ${MASTER_SITE_LOCAL}.
 DISTNAME=		user-20000509
+WRKSRC=			${WRKDIR}/user
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		agc@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
 COMMENT=		Solaris-compatible {user,group}{add,del,mod} commands
-
-WRKSRC=			${WRKDIR}/user
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* # already in Solaris base system
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 14:17:14 taca Exp $
 
 DISTNAME=	tag104
 PKGNAME=	${RUBY_PKGNAMEPREFIX}tag-1.0.4
+WRKSRC=		${WRKDIR}
 CATEGORIES=	www
 MASTER_SITES=	http://www.moonwolf.com/ruby/archive/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +12,6 @@ HOMEPAGE=	http://www.moonwolf.com/ruby/tag.html
 COMMENT=	Ruby Simple HTML Tag library for CGI
 
 DIST_SUBDIR=	ruby
-WRKSRC=		${WRKDIR}
 USE_RUBY_RD=	# defined
 NO_CONFIGURE=	# defined
 

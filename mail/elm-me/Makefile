@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2002/12/24 09:04:12 kim Exp $
+# $NetBSD: Makefile,v 1.8 2003/01/28 22:03:32 jlam Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
 DISTNAME=		elm-2.4ME+93
 PKGNAME=		elm-me-2.4.93
+WRKSRC=			${WRKDIR}/elm2.4.ME+.93
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.ozone.fmi.fi/KEH/ \
 			ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
@@ -22,7 +23,6 @@ CONFIGURE_SCRIPT=	ksh ./Configure
 CONFIGURE_ENV=		PREFIX="${PREFIX}" RUN_AS_BATCH=yes
 CONFIGURE_ARGS=		-S
 
-WRKSRC=			${WRKDIR}/elm2.4.ME+.93
 INSTALL_DIRS=		${WRKSRC} ${WRKSRC}/nls
 
 SUPPORT_FILES=		${PREFIX}/lib/elm.mimetypes-dist		\

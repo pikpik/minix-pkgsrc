@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2002/05/22 12:26:16 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/14 03:43:18 schmonz Exp $
 #
 
 DISTNAME=	oggasm_1.4.0
 PKGNAME=	${DISTNAME:S/_/-/}
+WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://oggasm.sourceforge.net/
 
@@ -18,7 +19,6 @@ USE_PERL5=	yes
 REPLACE_PERL=	oggasm
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/oggasm ${PREFIX}/bin

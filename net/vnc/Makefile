@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.26 2002/10/23 18:16:58 bouyer Exp $
+# $NetBSD: Makefile,v 1.27 2003/01/31 12:16:47 abs Exp $
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
 DISTNAME=		vnc-3.3.3r2
 PKGNAME=		vnc-3.3.3.2
 PKGREVISION=		1
+WRKSRC=			${WRKDIR}/vnc_unixsrc
 CATEGORIES=		net x11
 MASTER_SITES=		ftp://ftp.uk.research.att.com/pub/vnc/dist/
 DISTFILES=		vnc-3.3.3r2_unixsrc.tgz \
@@ -25,8 +26,6 @@ NO_INSTALL_MANPAGES=	yes
 USE_IMAKE=		yes
 USE_PERL5=		yes
 BUILD_DEFS+=		USE_INET6
-
-WRKSRC=			${WRKDIR}/vnc_unixsrc
 
 ALL_TARGET=		World
 

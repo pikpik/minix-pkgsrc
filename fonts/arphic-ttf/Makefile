@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/06/28 20:50:14 agc Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/28 21:14:18 wiz Exp $
 #
 
 DISTNAME=	arphic-ttf-2.11
+WRKSRC=		${WRKDIR}
 CATEGORIES=	fonts
 MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/${DIST_SUBDIR}/
 DISTFILES=	${FONT_FILES} ${MISC_FILES}
@@ -17,7 +18,6 @@ DIST_SUBDIR=	arphic-ttf
 CONFLICTS=	arphicttf-*
 
 EXTRACT_ONLY=	# empty
-WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

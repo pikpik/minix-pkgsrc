@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2002/08/25 18:38:31 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/22 04:43:17 wiz Exp $
 #
 
 DISTNAME=	libnet-1.0.1b
 PKGREVISION=	1
+WRKSRC=		${WRKDIR}/${DISTNAME:C/l/L/}
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 
@@ -17,7 +18,6 @@ GNU_CONFIGURE=	# defined
 CONFIGURE_ENV+=	LIBNET_CONFIG_CFLAGS="-I${PREFIX}/include" \
 		LIBNET_CONFIG_LIBS="${LDFLAGS}"
 
-WRKSRC=		${WRKDIR}/${DISTNAME:C/l/L/}
 PLIST_SRC=	${WRKDIR}/PLIST
 DOCDIR=		share/doc/libnet
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2002/08/29 17:15:15 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/11 01:46:29 jmc Exp $
 #
 
 DISTNAME=		blas
 PKGNAME=		blas-1.0
 PKGREVISION=		1
+WRKSRC=			${WRKDIR}
 CATEGORIES=		math
 MASTER_SITES=		ftp://ftp.netlib.org/blas/ \
 			ftp://netlib.bell-labs.com/netlib/blas/ \
@@ -13,7 +14,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		packages@netbsd.org
 COMMENT=		Basic Linear Algebra Subprograms (Fortran)
 
-WRKSRC=			${WRKDIR}
 USE_FORTRAN=		YES
 USE_BUILDLINK2=		YES
 

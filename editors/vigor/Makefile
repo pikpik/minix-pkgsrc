@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2001/11/15 23:40:32 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2003/01/29 16:23:13 agc Exp $
 #
 
 DISTNAME=	vigor-0.016
+WRKSRC=		${WRKDIR}/${DISTNAME}/build
 CATEGORIES=	editors
 MASTER_SITES=	http://www.red-bean.com:8080/
 
@@ -14,7 +15,6 @@ CONFLICTS+=	nvi-[0-9]*
 USE_X11=	yes
 USE_BUILDLINK2=	yes
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/build
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-x
 #		--enable-perlinterp \

@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/27 13:13:55 seb Exp $
 #
 
 DISTNAME=	iperf-1.6.5-source
 PKGNAME=	${DISTNAME:C/-source//}
+WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	net
 MASTER_SITES=	http://dast.nlanr.net/Projects/Iperf/
 
@@ -12,7 +13,6 @@ COMMENT=	TCP and UDP bandwidth performance measurement tool
 
 NOT_FOR_PLATFORM=	*-*-sparc64	# internal g++ error
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_BUILDLINK2=	YES
 CONFIGURE_DIRS=	${WRKSRC}/cfg
 INSTALL_DIRS=	${WRKSRC}/src

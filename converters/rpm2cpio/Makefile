@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2001/11/29 01:12:28 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2002/10/18 12:30:45 wiz Exp $
 # FreeBSD Id: ports/misc/rpm2cpio/Makefile,v 1.2 1999/08/25 07:22:29 obrien Exp
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
+WRKSRC=		${WRKDIR}
 CATEGORIES=	misc
 MASTER_SITES=	http://www.iagora.com/~espel/
 EXTRACT_SUFX=	# none
@@ -17,7 +18,6 @@ DIST_SUBDIR=	${PKGNAME}
 REPLACE_PERL=	rpm2cpio
 
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} .
-WRKSRC=		${WRKDIR}
 NO_BUILD=	YES
 
 # conflicts with rpm package, which also contains a rpm2cpio

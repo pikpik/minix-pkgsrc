@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2001/04/09 11:45:36 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/09/09 20:36:13 agc Exp $
 
 DISTNAME=		fib.c
 PKGNAME=		fib-980203
+WRKSRC=			${WRKDIR}
 CATEGORIES=		benchmarks
 MASTER_SITES=		ftp://ftp.nosc.mil/pub/aburto/fib/
 EXTRACT_SUFX=		#empty
 
 MAINTAINER=		root@garbled.net
 COMMENT=		Mathematical benchmark
-
-WRKSRC=			${WRKDIR}
 
 do-extract:
 	${MKDIR} ${WRKSRC}

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2002/03/23 01:56:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/24 18:55:34 wiz Exp $
 #
 
 DISTNAME=		csound-manual-4.10
 PKGREVISION=		1
+WRKSRC=			${WRKDIR}
 CATEGORIES=		audio
 MASTER_SITES=		ftp://ftp.csounds.com/manual/current/
 EXTRACT_SUFX=		.zip
@@ -27,7 +28,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 DIST_SUBDIR=		csound-4.10
 
 NO_BUILD=		yes
-WRKSRC=			${WRKDIR}
 # default -a in options wreaks havoc on pdfs in the zips
 EXTRACT_CMD=		unzip -Lq ${DOWNLOADED_DISTFILE}
 

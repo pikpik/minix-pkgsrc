@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/03/25 18:21:20 atatat Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/26 04:50:18 atatat Exp $
 #
 
 DISTNAME=	pkgdepgraph-2.4
+WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -16,7 +17,6 @@ COMMENT=	Visual representation of installed NetBSD packages
 USE_PERL5=	YES
 
 EXTRACT_ONLY=	# empty
-WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 

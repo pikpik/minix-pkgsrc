@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2001/06/20 10:19:27 jtb Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/02 09:04:03 jtb Exp $
 
 DISTNAME=		ntl-5.3.1
+WRKSRC=			${WRKDIR}/${DISTNAME}/src
 CATEGORIES=		math devel
 MASTER_SITES=		http://www.shoup.net/ntl/
 
@@ -9,8 +10,6 @@ HOMEPAGE=		http://www.shoup.net/ntl/
 COMMENT=		C++ library for doing number theory
 
 DEPENDS+=		gmp>=3.1.1:../../devel/gmp
-
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
 
 NO_CONFIGURE=		# defined
 USE_LIBTOOL=		yes

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/03/04 19:41:06 fredb Exp $
+# $NetBSD: Makefile,v 1.5 2003/01/24 15:38:42 wiz Exp $
 #
 
 DISTNAME=	simian_12_98
 PKGNAME=	simian-2.1
+WRKSRC=		${WRKDIR}/Simian/src
 CATEGORIES=	cad
 MASTER_SITES=	http://weewave.mer.utexas.edu/MED_files/CODE_RQST/
 
@@ -17,7 +18,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
-WRKSRC=		${WRKDIR}/Simian/src
 ALL_TARGET=	simian
 
 INTERACTIVE_STAGE=	fetch

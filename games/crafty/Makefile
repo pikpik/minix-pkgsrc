@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2002/09/11 10:52:09 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2002/09/25 12:32:00 dmcmahill Exp $
 
 DISTNAME=		crafty-18.15
+WRKSRC=			${WRKDIR}
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/v18/ \
 			ftp://ftp.cis.uab.edu/pub/hyatt/ \
@@ -14,7 +15,6 @@ COMMENT=		chess engine
 USE_BUILDLINK2=		YES
 
 DIST_SUBDIR=		${DISTNAME}
-WRKSRC=			${WRKDIR}
 CRAFTY_DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 CRAFTY_STARTPGN=	start.pgn
 CRAFTY_DOCFILES=	read.me crafty.faq

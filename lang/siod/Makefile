@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2001/09/09 20:36:33 agc Exp $
+# $NetBSD: Makefile,v 1.7 2002/08/12 16:21:12 agc Exp $
 
 DISTNAME=		siod
 PKGNAME=		siod-3.0
+WRKSRC=			${WRKDIR}
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.std.com/pub/gjc/
 EXTRACT_SUFX=		.tgz
@@ -12,7 +13,6 @@ COMMENT=		Small-footprint implementation of the Scheme programming language
 
 DEPENDS+=		sdbm-[0-9]*:../../databases/sdbm
 
-WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile
 ALL_TARGET=		${OPSYS}
 MAKE_ENV+=		CC="${CC}"

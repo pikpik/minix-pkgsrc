@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2001/11/29 01:12:50 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/24 18:55:42 wiz Exp $
 #
 
 DISTNAME=		RTF-1.10
 PKGNAME=		rtf-tools-1.10
 PKGREVISION=		1
+WRKSRC=			${WRKDIR}/rtf
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.primate.wisc.edu/software/RTF/
 EXTRACT_SUFX=		.tar.Z
@@ -14,7 +15,6 @@ COMMENT=		RTF to troff/groff/text converter
 
 BUILD_DEPENDS+=		libts-1.08:../../devel/libts
 
-WRKSRC=			${WRKDIR}/rtf
 INSTALL_TARGET=		install install.man
 
 post-patch:
