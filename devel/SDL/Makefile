@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2002/10/13 19:28:56 kristerw Exp $
+# $NetBSD: Makefile,v 1.43 2002/10/31 22:19:49 jlam Exp $
 #
 
 DISTNAME=	SDL-1.2.5
@@ -52,5 +52,11 @@ MAKE_ENV+=		AM_CFLAGS="${AM_CFLAGS}"
 .include "../../graphics/Mesa/buildlink2.mk"
 .include "../../graphics/aalib-x11/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
+
+.if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "pth")
+# Let SDL know that we do not have native pthreads and are using GNU pth.
+CONFIGURE_ARGS+=       --disable-pthreads
+CONFIGURE_ARGS+=       --enable-pth
+.endif
 
 .include "../../mk/bsd.pkg.mk"
