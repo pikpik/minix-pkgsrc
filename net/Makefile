@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.209 2001/03/28 07:46:20 zuntum Exp $
+# $NetBSD: Makefile,v 1.210 2001/04/03 11:32:52 zuntum Exp $
 #
 
 COMMENT=	Networking tools
@@ -68,6 +68,7 @@ SUBDIR+=	libpcap
 SUBDIR+=	libsscript
 SUBDIR+=	lopster
 SUBDIR+=	lukemftp
+SUBDIR+=	lukemftpd
 SUBDIR+=	md-whois
 SUBDIR+=	mirror
 SUBDIR+=	mouse-pppoe
