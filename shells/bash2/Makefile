@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2004/10/22 23:54:22 minskim Exp $
+# $NetBSD: Makefile,v 1.59 2004/10/23 08:10:40 minskim Exp $
 #
 
 DISTNAME=	bash-2.05b
@@ -29,6 +29,8 @@ TEST_TARGET=		test
 PKG_SHELL=		${PREFIX}/bin/bash
 
 .include "../../mk/bsd.prefs.mk"
+
+CFLAGS.Interix+=	-DUSE_POSIX_GLOB_LIBRARY
 
 # Global and legacy options
 .if defined(BASH_STATIC) && !empty(BASH_STATIC:M[yY][eE][sS])
