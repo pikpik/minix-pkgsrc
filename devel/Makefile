@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.316 2002/09/01 05:36:04 schmonz Exp $
+# $NetBSD: Makefile,v 1.317 2002/09/01 05:53:35 schmonz Exp $
 #
 
 COMMENT=	Development utilities
@@ -34,6 +34,7 @@ SUBDIR+=	bonobo-activation
 SUBDIR+=	bonobo-conf
 SUBDIR+=	boost
 SUBDIR+=	c-cpp-reference
+SUBDIR+=	c4
 SUBDIR+=	cbrowser
 SUBDIR+=	ccache
 SUBDIR+=	cdecl
