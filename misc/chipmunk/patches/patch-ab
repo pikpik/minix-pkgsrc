@@ -1,7 +1,7 @@
 $NetBSD$
 
---- config.h.orig	Wed Jun 23 16:52:58 1999
-+++ config.h	Wed Jun 23 18:09:29 1999
+--- config.h.orig	Thu Mar 23 10:38:56 1995
++++ config.h
 @@ -108,6 +108,25 @@
  #   define USE_TESTS
  #endif
