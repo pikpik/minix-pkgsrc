@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.901 2002/01/11 14:41:42 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.902 2002/01/15 00:32:12 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1273,7 +1273,7 @@ SITES_${fetchfile:T}?= ${PATCH_SITES}
 .    endfor
 .  endif
 .  if !empty(_ALLFILES)
-_FETCH_ALLFILES= ${MKDIR} ${_DISTDIR};
+_FETCH_ALLFILES= ${TEST} -d ${_DISTDIR} || ${MKDIR} ${_DISTDIR};
 _FETCH_ALLFILES+= cd ${_DISTDIR};
 .    for fetchfile in ${_ALLFILES}
 _FETCH_ALLFILES+= 							\
