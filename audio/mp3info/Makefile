@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/09/27 23:17:45 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 21:22:55 grant Exp $
 #
 
 DISTNAME=	mp3info-0.2.16
@@ -11,5 +11,6 @@ COMMENT=	MP3 header and tag information tool
 CONFLICTS=	gmp3info-[0-9]*
 
 GNU_CONFIGURE=	YES
+USE_GCC_SHLIB=	YES
 
 .include "../../mk/bsd.pkg.mk"
