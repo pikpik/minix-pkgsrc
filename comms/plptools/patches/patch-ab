@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- plpnfsd/mp_mount.c.orig	Mon Jan 17 11:49:41 2000
-+++ plpnfsd/mp_mount.c	Sun Jun 11 17:03:47 2000
++++ plpnfsd/mp_mount.c
 @@ -16,7 +16,7 @@
  #define PORTMAP			/* I need svcudp_create in rpc/svc_soc.h, sol 2.4 */
  #endif
