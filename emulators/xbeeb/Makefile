@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2000/06/01 18:20:54 skrll Exp $
+# $NetBSD: Makefile,v 1.3 2000/06/01 20:47:00 skrll Exp $
 #
 
 DISTNAME=	xbeeb-0.3.6
-EXTRACT_SUFX=	.tgz
 CATEGORIES=	emulators x11
 MASTER_SITES=	ftp://ftp.netcom.net.uk/pub/Micros/BBC/Emulators/Xbeeb/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	skrll@netbsd.org
 HOMEPAGE=	http://www.netcomuk.co.uk/~james/BBCMicro/Xbeeb/index.html
