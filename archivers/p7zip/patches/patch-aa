@@ -1,14 +1,18 @@
 $NetBSD$
 
---- 7zip/Crypto/AES/aesopt.h.orig	2004-06-13 19:06:36.000000000 +0200
+--- 7zip/Crypto/AES/aesopt.h.orig	2004-06-13 12:06:36.000000000 -0500
 +++ 7zip/Crypto/AES/aesopt.h
-@@ -166,8 +166,7 @@
+@@ -166,8 +166,11 @@
  // #if defined(__GNUC__) || defined(__GNU_LIBRARY__)
  #if (defined(__GNUC__) || defined(__GNU_LIBRARY__)) && !defined(WIN32) && !defined(__CYGWIN__)
  
 -#  include <endian.h>
 -#  include <byteswap.h>
-+#  include <sys/endian.h>
++#  ifdef __linux__
++#    include <endian.h>
++#  else
++#    include <sys/endian.h>
++#  endif
  #elif defined(__CRYPTLIB__)
  #  if defined( INC_ALL )
  #    include "crypt.h"
