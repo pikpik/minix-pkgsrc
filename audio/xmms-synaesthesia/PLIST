@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libsynaesthesia.a
+lib/xmms/Visualization/libsynaesthesia.la
+lib/xmms/Visualization/libsynaesthesia.so
+@dirrm lib/xmms/Visualization

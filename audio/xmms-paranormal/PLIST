@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/paranormal
+bin/pndoc
+lib/xmms/Visualization/libparanormal.a
+lib/xmms/Visualization/libparanormal.la
+lib/xmms/Visualization/libparanormal.so
+@dirrm lib/xmms/Visualization

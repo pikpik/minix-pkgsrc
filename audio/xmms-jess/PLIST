@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libjess.a
+lib/xmms/Visualization/libjess.la
+lib/xmms/Visualization/libjess.so
+@dirrm lib/xmms/Visualization

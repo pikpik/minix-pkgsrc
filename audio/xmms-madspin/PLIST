@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libmadspin.a
+lib/xmms/Visualization/libmadspin.la
+lib/xmms/Visualization/libmadspin.so
+@dirrm lib/xmms/Visualization

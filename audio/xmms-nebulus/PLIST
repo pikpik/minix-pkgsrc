@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libnebulus.a
+lib/xmms/Visualization/libnebulus.la
+lib/xmms/Visualization/libnebulus.so
+@dirrm lib/xmms/Visualization

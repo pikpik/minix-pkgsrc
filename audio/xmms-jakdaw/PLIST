@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libjakdaw.a
+lib/xmms/Visualization/libjakdaw.la
+lib/xmms/Visualization/libjakdaw.so
+@dirrm lib/xmms/Visualization
