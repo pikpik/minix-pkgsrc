@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.46 2000/12/14 04:27:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.47 2001/01/23 22:32:37 manu Exp $
 #
 
     SUBDIR += atari800
     SUBDIR += bochs
     SUBDIR += compat12
     SUBDIR += compat13
+    SUBDIR += compat14
     SUBDIR += darcnes
     SUBDIR += doscmd
     SUBDIR += fmsx
@@ -12,6 +13,8 @@
     SUBDIR += ia64sim
     SUBDIR += linux-locale
     SUBDIR += linuxppc_lib
+    SUBDIR += netbsd32_compat14
+    SUBDIR += netbsd32_compat15
     SUBDIR += pcemu
     SUBDIR += plex86
     SUBDIR += simh
