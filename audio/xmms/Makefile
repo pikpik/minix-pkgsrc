@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.52 2003/07/25 09:22:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.53 2003/12/08 14:41:39 wiz Exp $
 #
 
 .include "Makefile.common"
-
-PKGREVISION=		10
 
 CONFIGURE_ARGS+=	--disable-esd
 
