@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 1998/07/15 11:45:52 tv Exp $
+# $NetBSD: Makefile,v 1.11 1998/08/20 15:17:03 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/08/29 12:17:50 tg Exp
 #
 
-DISTNAME=       xpaint-2.5
+DISTNAME=       xpaint-2.5.6
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://www.danbbs.dk/~torsten/xpaint/
 
