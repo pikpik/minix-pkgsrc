@@ -1,4 +1,4 @@
-#	$NetBSD: Makefile,v 1.37 1999/04/08 20:08:16 tron Exp $
+#	$NetBSD: Makefile,v 1.38 1999/04/08 20:09:10 tron Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/10/13 04:41:07 max Exp
 
     SUBDIR += astrolog
@@ -18,6 +18,7 @@
     SUBDIR += fep
     SUBDIR += figlet
     SUBDIR += git
+    SUBDIR += gnome-pim
     SUBDIR += gnucash
     SUBDIR += ical
     SUBDIR += jive
