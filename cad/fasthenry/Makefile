@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/03/27 08:54:54 tron Exp $
+# $NetBSD: Makefile,v 1.5 2000/05/12 16:07:35 dmcmahill Exp $
 #
 
 DISTNAME=	fasthenry-3.0-12Nov96
@@ -10,6 +10,13 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://kontiki.mit.edu/rle/research/info_research_proj.html
+
+LICENSE=		no-commercial-use
+RESTRICTED=		"No redistribution allowed"
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_SRC_ON_FTP=		${RESTRICTED}
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./config
