@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/aspell/da.multi
+lib/aspell/da.rws
+lib/aspell/danish.alias
+lib/aspell/dansk.alias
+share/aspell/da.dat
+share/aspell/da_phonet.dat
