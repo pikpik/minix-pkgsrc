@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:52:54 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 17:20:08 martti Exp $
 #
 
-DISTNAME=	flawfinder-1.22
+DISTNAME=	flawfinder-1.24
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.dwheeler.com/flawfinder/
 
