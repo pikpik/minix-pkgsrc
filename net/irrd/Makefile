@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/10/28 19:50:18 kim Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/22 17:38:07 dmcmahill Exp $
 #
 
 DISTNAME=	irrd-1.5-beta-Sept-24-1999
@@ -10,6 +10,7 @@ MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.irrd.net/
 
 BUILD_DEPENDS=	autoreconf:../../devel/autoconf
+BUILD_DEPENDS=	bison:../../devel/bison
 
 .include "../../mk/bsd.prefs.mk"
 
