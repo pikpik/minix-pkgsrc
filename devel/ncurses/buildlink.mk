@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.4 2001/07/01 22:59:17 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.5 2001/07/01 23:04:11 jlam Exp $
 #
 # This Makefile fragment is included by packages that use ncurses.
 #
@@ -32,7 +32,9 @@ _NEED_NCURSES=		YES
 .endif
 .endfor
 .else
+.if ${OPSYS} != "SunOS"
 _NEED_NCURSES=		YES
+.endif
 .endif
 .endif
 
