@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2002/09/24 12:50:28 blymn Exp $
+# $NetBSD: Makefile,v 1.149 2002/10/01 10:34:34 drochner Exp $
 #
 
 COMMENT=	Games
@@ -54,6 +54,7 @@ SUBDIR+=	freeciv-share
 SUBDIR+=	frotz
 SUBDIR+=	galaxa
 SUBDIR+=	gemdropx
+SUBDIR+=	glchess
 SUBDIR+=	glickomania
 SUBDIR+=	gnocatan
 SUBDIR+=	gnome-breakout
