@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/25 21:21:47 tron Exp $
 
 DISTNAME=		suse_vmware-${SUSE_VERSION}
+PKGNAME=		${DISTNAME}nb1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=a1/}
 DISTFILES=		${RPMFILES}
