@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.831 2001/10/26 13:57:58 skrll Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.832 2001/10/26 14:09:59 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -58,7 +58,11 @@ TEMPLATES?=		${PKGSRCDIR}/templates
 PATCHDIR?=		${.CURDIR}/patches
 SCRIPTDIR?=		${.CURDIR}/scripts
 FILESDIR?=		${.CURDIR}/files
-PKGDIR?=		${.CURDIR}/pkg
+.if exists(${.CURDIR}/pkg)
+PKGDIR?=               ${.CURDIR}/pkg
+.else
+PKGDIR?=               ${.CURDIR}
+.endif
 
 .if defined(USE_JAVA)
 BUILD_DEFS+=		PKG_JVM JAVA_HOME
