@@ -25,7 +25,7 @@ $NetBSD$
 +  s = g_strconcat(hom, "/.ee", NULL);
 +  i = stat(s, &sb);
 +  if (i == -1 && errno == ENOENT)
-+	mkdir(s, 0);
++	mkdir(s, S_IRWXU);
    s = g_strconcat(hom, "/.ee/settings", NULL);
    g_free(hom);
    f = fopen(s, "w");
