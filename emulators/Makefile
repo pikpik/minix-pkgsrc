@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2001/05/30 11:14:09 agc Exp $
+# $NetBSD: Makefile,v 1.59 2001/07/07 14:45:11 veego Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -55,5 +55,6 @@ SUBDIR+=	xbeeb
 SUBDIR+=	xcopilot
 SUBDIR+=	xm7
 SUBDIR+=	xmame
+SUBDIR+=	xmess
 
 .include "../mk/bsd.pkg.subdir.mk"
