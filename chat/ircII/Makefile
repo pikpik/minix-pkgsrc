@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/04/12 10:35:41 wennmach Exp $
+# $NetBSD: Makefile,v 1.6 2001/05/19 03:56:32 jlam Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/05/14 10:35:13 torstenb Exp
 #
 
@@ -40,7 +40,7 @@ DEPENDS+=               socks5-1.0.2:../../net/socks5
 .endif
 
 .if (${OPSYS} == SunOS)
-CONFIGURE_ENV+=		LIBS=-lnsl
+LIBS=			-lnsl
 .endif
 
 pre-install:
