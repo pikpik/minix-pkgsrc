@@ -1,2 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/06/30 08:15:23 taca Exp $
-${RUBY_ARCHLIBDIR}/gdbm.so
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:49 zuntum Exp $
+${RUBY_SITEARCHLIBDIR}/gdbm.so
