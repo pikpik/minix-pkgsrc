@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bmf
+bin/bmfconv
+man/man1/bmf.1
+man/man1/bmfconv.1
