@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/06 13:45:39 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/05 17:21:48 grant Exp $
 
-DISTNAME=		dbh_1.0-14
-PKGNAME=		dbh-1.0.14
+DISTNAME=		dbh_1.0-15
+PKGNAME=		dbh-1.0.15
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dbh/}
-EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		benedikt.meurer@unix-ag.uni-siegen.de
 HOMEPAGE=		http://dbh.sourceforge.net/
