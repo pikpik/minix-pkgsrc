@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/06/22 13:21:05 agc Exp $
+# $NetBSD: Makefile,v 1.16 1998/06/28 20:11:38 tron Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/10/10 09:24:38 tg Exp
 #
 
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.tux.org/pub/tux/bagleyd/xlockmore/
 
 MAINTAINER=	hubertf@netbsd.org
 
-DEPENDS+=	xpm-3.4j:../../graphics/xpm
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 # XXX Mesa support disabled for security reasons
 #DEPENDS+=	Mesa-2.6:../../graphics/Mesa
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/22 14:22:50 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/22 13:21:06 agc Exp $
 #
 
 DISTNAME=	fvwm-2.0.46
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/sources/2.0.x/ \
 
 MAINTAINER=	tron@netbsd.org
 
-DEPENDS+=	xpm-3.4j:../../graphics/xpm
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
 USE_IMAKE=	yes
 

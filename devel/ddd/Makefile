@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/21 13:36:02 tron Exp $
+# $NetBSD: Makefile,v 1.10 1998/06/22 11:27:48 agc Exp $
 # $FreeBSD Id: Makefile,v 1.5 1998/02/19 09:43:16 obrien Exp
 #
 
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ips.cs.tu-bs.de/pub/local/softech/ddd/  \
 
 MAINTAINER=     obrien@NUXI.com
 
-DEPENDS+=	xpm-3.4j:../../graphics/xpm
+DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
 USE_MOTIF=	yes
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/06/12 13:43:17 frueauf Exp $
 #
 
 DISTNAME=		mirrormagic-1.3
@@ -8,7 +8,7 @@ MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=		root@garbled.net
 
-DEPENDS=		xpm-3.4j:../../graphics/xpm
+DEPENDS=		xpm-3.4k:../../graphics/xpm
 
 USE_X11=		YES
 
