@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/26 11:11:22 shell Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:40:25 grant Exp $
 
-DISTNAME=	exiftags-0.96
+DISTNAME=	exiftags-0.98
 CATEGORIES=	graphics
 MASTER_SITES=	http://johnst.org/sw/exiftags/
 
