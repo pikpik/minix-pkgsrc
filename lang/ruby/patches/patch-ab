@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- configure.orig	Fri Apr 14 04:30:57 2000
++++ configure	Thu Jun  1 13:57:08 2000
+@@ -4062,4 +4062,5 @@
+      case "$host_cpu" in
+      mips*) CCDLFLAGS=-fPIC ;;
++     sparc) CCDLFLAGS=-fPIC ;;
+      *) ;;
+      esac ;;
