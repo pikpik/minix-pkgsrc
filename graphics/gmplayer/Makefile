@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.21 2003/07/13 13:52:04 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2003/07/26 21:41:30 jmmv Exp $
 #
 
-.include "../../graphics/mplayer-share/Makefile.common"
-
 PKGNAME=	gmplayer-${MPLAYER_PKG_VERSION}
-PKGREVISION=	6
+PKGREVISION=	7
 SKIN_SITES=	http://www.mplayerhq.hu/MPlayer/Skin/		\
 		ftp://ftp.mplayerhq.hu/MPlayer/Skin/		\
 		${MASTER_SITE_LOCAL:=mplayer}
+
+.include "../../graphics/mplayer-share/Makefile.common"
 
 COMMENT=	Software only MPEG-1/2/4 video decoder with a GTK+ interface
 
@@ -59,7 +59,6 @@ do-install:
 
 .include "../../graphics/mplayer-share/Makefile.depends"
 
-.include "../../audio/nas/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 
 .include "../../mk/bsd.pkg.mk"
