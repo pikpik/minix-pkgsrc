@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2000/11/06 03:17:48 minoura Exp $
+# $NetBSD: Makefile,v 1.18 2000/11/06 05:37:18 minoura Exp $
 
     SUBDIR += arm-netbsd
     SUBDIR += armv2-netbsd
@@ -17,7 +17,6 @@
     SUBDIR += mipsel-netbsd
     SUBDIR += powerpc-netbsd
     SUBDIR += sparc-netbsdelf
-    SUBDIR += sparc64-netbsd
     SUBDIR += zoularis
 
 .include "../mk/bsd.pkg.subdir.mk"
