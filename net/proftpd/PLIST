@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:05 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/06/10 05:49:41 martti Exp $
 bin/ftpcount
 bin/ftpwho
+bin/ftptop
 man/man1/ftpcount.1
 man/man1/ftpwho.1
 man/man5/xferlog.5
