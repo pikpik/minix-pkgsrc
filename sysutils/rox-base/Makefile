@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/28 22:04:18 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:46 grant Exp $
 #
 
 DISTNAME=	rox-base-1.0.2
@@ -13,7 +13,7 @@ COMMENT=	Shared ROX resources
 
 DIST_SUBDIR=	rox
 
-USE_BUILDLINK2=	yes
+NO_BUILDLINK=	yes
 USE_PKGINSTALL=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
