@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.1.1.1 2003/12/14 03:24:51 xtraeme Exp $
+$NetBSD$
 
---- configure.orig	2003-11-28 17:04:17.000000000 +0100
-+++ configure	2003-11-28 17:04:36.000000000 +0100
-@@ -3571,7 +3571,7 @@
+--- configure.orig	2004-10-24 04:15:56.000000000 +0000
++++ configure
+@@ -3852,7 +3852,7 @@ case "$OS_NAME" in
  		WARNING_CFLAGS=""
  		;;
  	*BSD)
