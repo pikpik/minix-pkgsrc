@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/06/18 15:25:24 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/02/04 18:58:22 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1996/11/21 11:27:26 asami Exp
 #
 
@@ -13,6 +13,13 @@ MAINTAINER=	packages@netbsd.org
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 USE_X11=	yes
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CFLAGS=		-DSYSV
+MAKE_ENV+=	CFLAGS="${CFLAGS}" CC="${CC}"
+.endif
 
 post-patch:
 	${RM} -f ${WRKDIR}/mm2.7/src/bin/*.orig
