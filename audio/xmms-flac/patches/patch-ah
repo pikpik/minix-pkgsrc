@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/metaflac/Makefile.in.orig	2003-10-31 14:38:44.000000000 +1100
 +++ src/metaflac/Makefile.in	2003-10-31 14:39:19.000000000 +1100
 @@ -158,10 +158,10 @@
