@@ -1,0 +1,3 @@
+$NetBSD$
+lib/vlc/libi420_yuy2_altivec.a
+lib/vlc/libmemcpyaltivec.a
