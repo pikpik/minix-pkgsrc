@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/01/22 05:49:14 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2001/01/25 17:18:07 jlam Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -9,12 +9,6 @@ MAINTAINER=		jlam@netbsd.org
 HOMEPAGE=		http://www.php.net/
 
 CONFLICTS+=		ap-php-4.0.3pl1
-
-MESSAGE_FILE=		${WRKDIR}/.MESSAGE
-
-pre-install:
-	${SED}	-e "s,@PREFIX@,${PREFIX},g" \
-		< ${PKGDIR}/MESSAGE > ${MESSAGE_FILE}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/libexec/cgi-bin

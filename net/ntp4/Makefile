@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/02/08 12:18:15 fredb Exp $
+# $NetBSD: Makefile,v 1.13 2000/08/18 19:39:53 fredb Exp $
 #
 
 DISTNAME=	ntp-4.0.99k
@@ -17,10 +17,6 @@ CONFIGURE_ENV+=	"LIBS=-ltermcap"	# for ntpdc
 
 DOCDIR=		${PREFIX}/share/doc
 EXAMPLESDIR=	${PREFIX}/share/examples
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
-
-post-build:
-	${SED} 's|@PREFIX@|${PREFIX}|g' < ${PKGDIR}/MESSAGE > ${WRKDIR}/MESSAGE
 
 post-install:
 	cd ${WRKSRC}; \

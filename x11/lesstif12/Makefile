@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/10/30 10:13:56 mjl Exp $
+# $NetBSD: Makefile,v 1.4 2000/12/22 17:26:22 jlam Exp $
 
 PKGNAME=		lesstif12-${LESSTIF_VERSION}
 
@@ -10,12 +10,6 @@ CONFLICTS+=		openmotif-*
 CONFIGURE_ARGS+=	--enable-build-12
 CONFIGURE_ARGS+=	--disable-build-20
 CONFIGURE_ARGS+=	--enable-default-12
-
-MESSAGE_FILE=		${WRKDIR}/MESSAGE
-
-pre-install:
-	${SED} -e "s,@PREFIX@,${PREFIX},g" \
-		< ${PKGDIR}/MESSAGE > ${MESSAGE_FILE}
 
 # We don't install any documentation, but the installation process creates
 # this directory anyway, so remove it if it's empty.

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/11/22 10:44:51 rh Exp $
+# $NetBSD: Makefile,v 1.4 2001/01/25 10:46:40 wiz Exp $
 #
 
 DISTNAME=	ispman-0.5
@@ -19,7 +19,6 @@ DEPENDS+=	postfix>=19991231pl08:../../mail/postfix
 .endif
 
 USE_PERL5=	YES
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
 
 ISPMAN_HTDOCS?=	${PREFIX}/share/ispman/virtual
 ISPMAN_IP?=	127.0.0.1
@@ -47,7 +46,5 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${PERL5} ./pkginstall.pl &&			\
 	${INSTALL_DATA} ispman.ldif ${PREFIX}/etc/ispman
-	${SED} -e 's#@@PREFIX@@#${PREFIX}#g' < ${PKGDIR}/MESSAGE	\
-		> ${WRKDIR}/MESSAGE
 
 .include "../../mk/bsd.pkg.mk"

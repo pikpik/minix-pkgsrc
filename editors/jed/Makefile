@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/01/01 17:11:28 mjl Exp $
+# $NetBSD: Makefile,v 1.10 2000/09/03 10:04:38 wiz Exp $
 #
 
 DISTNAME=		jed0.98-7
@@ -16,10 +16,5 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-X
 
 WRKSRC=			${WRKDIR}/jed
-
-MESSAGE_FILE=		${WRKDIR}/MESSAGE
-
-pre-install:
-	${SED} -e "s_@PREFIX@_${PREFIX}_" ${PKGDIR}/MESSAGE > ${MESSAGE_FILE}
 
 .include "../../mk/bsd.pkg.mk"

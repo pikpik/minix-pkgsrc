@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/04/21 10:57:33 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2000/09/03 13:22:31 wiz Exp $
 #
 
 DISTNAME=	smtpd-2.0
@@ -11,7 +11,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.obtuse.com/smtpd.html
 
 SPOOL=		/var/spool/smtpd
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
 
 pre-install:
 		-${MKDIR} ${SPOOL}/etc
@@ -19,9 +18,5 @@ pre-install:
 		${CHOWN} -R uucp.mail ${SPOOL}
 		${CHMOD} -R g=,o= ${SPOOL}
 		${CP} /etc/localtime /etc/resolv.conf ${SPOOL}/etc
-
-post-build:
-		${SED} -e 's#@PREFIX@#${PREFIX}#g' <${PKGDIR}/MESSAGE \
-			>${MESSAGE_FILE}
 
 .include "../../mk/bsd.pkg.mk"

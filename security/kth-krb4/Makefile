@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/09/09 19:40:21 fredb Exp $
+# $NetBSD: Makefile,v 1.6 2000/10/11 16:28:53 wennmach Exp $
 #
 
 DISTNAME=		krb4-1.0.1
@@ -13,18 +13,11 @@ CRYPTO=			yes
 GNU_CONFIGURE=		yes
 #USE_GTEXINFO=		yes #not currently needed
 
-MESSAGE_FILE=		${WRKDIR}/MESSAGE
-
 post-patch:
 	@${SED} -e 's|@PREFIX@|${PREFIX}|g'                                   \
 		<${WRKSRC}/lib/kafs/kafs.h                                    \
 		>${WRKSRC}/lib/kafs/kafs.h.sed
 	@${MV} ${WRKSRC}/lib/kafs/kafs.h.sed ${WRKSRC}/lib/kafs/kafs.h
-
-pre-install:
-	@${SED} -e 's|@PREFIX@|${PREFIX}|g'                                   \
-		<${PKGDIR}/MESSAGE                                            \
-		>${MESSAGE_FILE}
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/kth-krb4

@@ -1,8 +1,11 @@
-**************************************************************
-Executable for @@PKGNAME@@ is installed into
-@@PREFIX@@/libexec/smtpfeed.
+======================================================================
+$NetBSD$
+
+The executable for ${PKGNAME} is installed into
+${PREFIX}/libexec/smtpfeed.
 
 You'll need to prepare (1) sendmail with WIDE patch applied,
 and (2) properly configured sendmail.cf.
-(1) is included in mail/sendmail pkgsrc.
-**************************************************************
+(1) is done in the mail/sendmail package.
+
+======================================================================

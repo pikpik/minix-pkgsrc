@@ -1,6 +1,9 @@
 ===============================================================================
+$NetBSD$
+
 xdm-krb4 now has been installed on your system.
 
 A startup file (e.g. for inclusion into your /etc/rc.local) is provided
-in @PREFIX@/etc/rc.d/xdm-krb4.sh
+in ${PREFIX}/etc/rc.d/xdm-krb4.sh
+
 ===============================================================================

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2000/12/11 16:43:11 jlam Exp $
+# $NetBSD: Makefile,v 1.58 2000/12/11 20:18:56 jlam Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 #
 
@@ -20,7 +20,7 @@ NOT_FOR_PLATFORM=	*-*-alpha *-*-mips
 PGUSER?=		pgsql
 PGGROUP?=		ingres
 
-MESSAGE_FILE=		${FILESDIR}/post-install-notes
+MESSAGE=		${FILESDIR}/post-install-notes
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
 PGHOME=			${PREFIX}/${PGUSER}

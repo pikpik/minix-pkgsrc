@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/06/01 11:23:42 rh Exp $
+# $NetBSD: Makefile,v 1.9 2000/06/21 01:58:33 jlam Exp $
 #
 
 DISTNAME=	t1lib-1.0.1
@@ -15,12 +15,7 @@ USE_LIBTOOL=	# defined
 USE_X11BASE=	# defined
 
 WRKSRC=		${WRKDIR}/T1-1.0.1
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
 ALL_TARGET=	without_doc
-
-post-build:
-	${SED} -e 's|@@PREFIX@@|${PREFIX}|g' \
-		< ${PKGDIR}/MESSAGE > ${MESSAGE_FILE}
 
 post-install:
 	${MKDIR} ${PREFIX}/share/t1lib

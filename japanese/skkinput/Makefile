@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/20 07:10:53 itohy Exp $
+# $NetBSD: Makefile,v 1.3 2000/11/09 05:14:27 itohy Exp $
 
 DISTNAME=	skkinput-2.03
 CATEGORIES=	japanese
@@ -17,12 +17,10 @@ PLIST_SUBST=	PKGBASE=${LOCALBASE}
 
 DESCR_SRC=	${WRKDIR}/DESCR
 INSTALL_FILE=	${WRKDIR}/INSTALL
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
 
 post-build:
 	${SED} 's#@PKGBASE@#${LOCALBASE}#g' ${PKGDIR}/DESCR	>${DESCR_SRC}
 	${SED} 's#@PKGBASE@#${LOCALBASE}#g' ${PKGDIR}/INSTALL	>${INSTALL_FILE}
-	${SED} 's#@PKGBASE@#${LOCALBASE}#g' ${PKGDIR}/MESSAGE	>${MESSAGE_FILE}
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/skkinput.man ${PREFIX}/man/ja_JP.EUC/man1/skkinput.1

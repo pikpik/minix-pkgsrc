@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2000/10/17 18:14:16 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2001/01/13 15:30:49 tv Exp $
 #
 
 DISTNAME=	mod_ssl-2.7.1-1.3.14
@@ -18,8 +18,6 @@ CONFLICTS=	apache-1.3.[0123456789] apache-*modssl-* apache6-*
 HAS_CONFIGURE=	defined
 USE_SSL=	defined
 
-MESSAGE_FILE=	${WRKDIR}/MESSAGE
-
 .include "../../mk/bsd.prefs.mk"
 
 CONFIGURE_ARGS+=	--with-apxs=${PREFIX}/sbin/apxs
@@ -34,8 +32,6 @@ post-build:
 		> ${WRKSRC}/pkg.sslsup/mkcert.sh
 
 post-install:
-	@${SED} -e "s,@PREFIX@,${PREFIX},g" \
-		< ${PKGDIR}/MESSAGE > ${MESSAGE_FILE}
 	@${SED} -e "s,@PREFIX@,${PREFIX},g" \
 		< ${FILESDIR}/README.mkcert > ${WRKDIR}/README.mkcert
 
