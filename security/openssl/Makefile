@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2000/10/11 16:30:12 wennmach Exp $
+# $NetBSD: Makefile,v 1.25 2000/12/28 21:35:34 wiz Exp $
 #
 
 DISTNAME=		openssl-0.9.5a
@@ -27,7 +27,7 @@ ONLY_FOR_PLATFORM=	NetBSD-*-alpha NetBSD-*-arm32 NetBSD-*-i386 \
 
 CONFIGURE_ARGS=		-fPIC -DPIC --openssldir=${PREFIX} --prefix=${PREFIX} \
 			${LDFLAGS}
-#CONFIGURE_ENV=		PREFIX=${PREFIX}
+CONFIGURE_ENV=		CC="${CC}"
 
 .include "../../mk/bsd.prefs.mk"
 
