@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.274 2002/03/22 14:20:18 wiz Exp $
+# $NetBSD: Makefile,v 1.275 2002/03/23 11:00:46 agc Exp $
 #
 
 COMMENT=	Development utilities
 
 SUBDIR+=	GConf
 SUBDIR+=	SDL
+SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
 SUBDIR+=	acme
 SUBDIR+=	anjuta
