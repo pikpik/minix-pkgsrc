@@ -1,5 +1,0 @@
-#!/bin/sh
-# $NetBSD:$
-
-cd ${WRKSRC}
-cp makefile.gcc Makefile
