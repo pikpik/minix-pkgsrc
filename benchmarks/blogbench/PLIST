@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/blogbench
+man/man8/blogbench.8
