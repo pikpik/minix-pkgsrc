@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/03/20 02:23:38 snj Exp $
+# $NetBSD: Makefile,v 1.39 2004/03/27 17:33:28 he Exp $
 #
 
 DISTNAME=	lame-${VERS}
@@ -10,7 +10,7 @@ MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.mp3dev.org/mp3/
 COMMENT=	Fast, high quality MP3 encoder
 
-VERS=		3.95.1
+VERS=		3.96
 
 LICENSE=	fee-based-commercial-use
 
