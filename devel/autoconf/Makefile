@@ -2,7 +2,7 @@
 # FreeBSD Id: Makefile,v 1.12 1997/06/13 20:00:47 max Exp
 #
 
-DISTNAME=       autoconf-2.52
+DISTNAME=       autoconf-2.13
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=autoconf/}
 
