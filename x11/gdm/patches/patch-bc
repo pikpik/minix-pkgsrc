@@ -62,7 +62,7 @@ $NetBSD$
  		$(mkinstalldirs) $(authdir); \
 -		chown gdm.gdm $(authdir); \
 -		chmod 750 $(authdir); \
-+		${CHOWN} gdm:gdm $(authdir); \
++		${CHOWN} ${GDMOWN}:${GDMGRP} $(authdir); \
 +		${CHMOD} 750 $(authdir); \
  	fi
  
