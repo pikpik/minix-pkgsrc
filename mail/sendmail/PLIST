@@ -1,9 +1,11 @@
-@comment $NetBSD: PLIST,v 1.4 2003/03/04 00:21:31 seb Exp $
+@comment $NetBSD: PLIST,v 1.5 2003/05/01 15:19:12 jmmv Exp $
 bin/hoststat
 bin/mailq
 bin/newaliases
 bin/purgestat
 bin/vacation
+lib/libsm.a
+lib/libsmutil.a
 libexec/sendmail/sendmail
 libexec/sendmail/smrsh
 man/cat1/mailq.0
