@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/08/11 22:05:22 jwise Exp $
+# $NetBSD: Makefile,v 1.5 2001/11/14 14:47:57 agc Exp $
 
 DISTNAME=	jakarta-servletapi-3.2.3-src
 PKGNAME=	jakarta-servletapi-3.2.3
@@ -34,3 +34,4 @@ do-install:
 
 .include "../../mk/bsd.pkg.mk"
 MAKE_PROGRAM=	${LOCALBASE}/bin/ant
+MAKE_FLAGS=

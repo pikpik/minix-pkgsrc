@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/08/23 18:06:16 abs Exp $
+# $NetBSD: Makefile,v 1.23 2001/09/27 23:18:52 jlam Exp $
 
 DISTNAME=	${PKGNAME}-src
 PKGNAME=	jakarta-tomcat-3.2.3
@@ -49,3 +49,4 @@ post-install:
 
 .include "../../mk/bsd.pkg.mk"
 MAKE_PROGRAM=	${LOCALBASE}/bin/ant
+MAKE_FLAGS=
