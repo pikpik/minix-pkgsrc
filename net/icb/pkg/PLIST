@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/icb
+libdata/icbserverdb
+libdata/icb/sample.icbrc
+libdata/icb/bartender
+libdata/icb/confuse
+libdata/icb/echofile
+@dirrm libdata/icb
