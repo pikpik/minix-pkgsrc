@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/widget/src/gtksuperwin/Makefile.in ./widget/src/gtksuperwin/Makefile.in
 --- ../Orig/mozilla/widget/src/gtksuperwin/Makefile.in	Wed Apr 10 12:35:09 2002
-+++ ./widget/src/gtksuperwin/Makefile.in	Sat May 11 20:11:28 2002
++++ ./widget/src/gtksuperwin/Makefile.in	Thu Jun  6 09:13:20 2002
 @@ -25,6 +25,7 @@
  MODULE		= widget
  LIBRARY_NAME	= gtksuperwin

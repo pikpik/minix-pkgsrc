@@ -2,7 +2,7 @@ $NetBSD$
 
 diff -ru ../Orig/mozilla/security/nss/lib/ssl/sslmutex.c ./security/nss/lib/ssl/sslmutex.c
 --- ../Orig/mozilla/security/nss/lib/ssl/sslmutex.c	Wed Apr 10 12:29:16 2002
-+++ ./security/nss/lib/ssl/sslmutex.c	Sat May 11 20:14:13 2002
++++ ./security/nss/lib/ssl/sslmutex.c	Thu Jun  6 09:13:42 2002
 @@ -83,7 +83,7 @@
      return SECSuccess;
  }
