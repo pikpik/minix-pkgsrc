@@ -1,0 +1,13 @@
+$NetBSD: $
+
+--- data/bbappconf.bb.orig	Sun Aug  4 11:51:37 2002
++++ data/bbappconf.bb	Sun Aug  4 11:51:49 2002
+@@ -19,7 +19,7 @@
+ !bbappconf.1.maxHoriz:  false
+ !bbappconf.1.startOnWorkspace:	
+ 
+-! start xterm with "xterm -name workspace2"
++! start xterm with "xterm -name Workspace2"
+ !bbappconf.2.classHint.class:	XTerm
+ !bbappconf.2.classHint.name:	Workspace2
+ !bbappconf.2.Stick:		true
