@@ -2,7 +2,7 @@
 #
 
 DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
-PKGNAME=		# see Makefile.${OPSYS}.${ARCH}
+PKGNAME=		phoenix-bin-0.6.1
 WRKSRC=			${WRKDIR}/MozillaFirebird
 CATEGORIES=		www
 
