@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.4 2001/06/18 19:58:55 jlam Exp $
+# $NetBSD: defs.Linux.mk,v 1.5 2001/07/13 06:16:02 jlam Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -16,7 +16,7 @@ DIRNAME?=	/bin/dirname
 ECHO?=		/bin/echo
 EGREP?=		/bin/egrep
 FALSE?=		/bin/false
-FILE?=		/usr/bin/file
+FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 GREP?=		/bin/grep
 GTAR?=		/bin/tar

@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.3 2001/06/18 19:58:55 jlam Exp $
+# $NetBSD: defs.SunOS.mk,v 1.4 2001/07/13 06:16:02 jlam Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -16,7 +16,7 @@ DIRNAME?=	/usr/bin/dirname
 ECHO?=		/usr/ucb/echo
 EGREP?=		/usr/xpg4/bin/egrep
 FALSE?=		/usr/bin/false
-FILE?=		/usr/bin/file
+FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 GREP?=		/usr/bin/grep
 GTAR?=		${ZOULARISBASE}/bin/tar
