@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/mp3blaster
+bin/mp3tag
+bin/nmixer
+man/man1/mp3blaster.1
+man/man1/nmixer.1
+share/mp3blaster/commands.txt
+share/mp3blaster/sample.mp3blasterrc
+share/mp3blaster/sample.mp3blasterrc_for_x
+@dirrm share/mp3blaster
