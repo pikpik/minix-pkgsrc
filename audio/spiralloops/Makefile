@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/11 18:49:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/04/13 09:38:38 xtraeme Exp $
 #
 
 DISTNAME=		SpiralLoops-2.0.0
@@ -17,7 +17,7 @@ ONLY_FOR_PLATFORM=	*-*-alpha *-*-arc *-*-cobalt *-*-dreamcast \
 			*-*-vax
 
 USE_BUILDLINK3=		yes
-USE_LANGUAGES=		c c++
+USE_LANGUAGES=		c++
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
