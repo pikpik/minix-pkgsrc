@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/03/30 05:00:34 garbled Exp $
+@comment $NetBSD$
 bin/ftdump
 bin/fterror
 bin/ftlint
@@ -17,7 +17,7 @@ include/ftxkern.h
 include/ftxpost.h
 include/ftxwidth.h
 lib/libttf.a
-lib/libttf.so.2.0
+lib/libttf.so.3.0
 share/locale/cs/LC_MESSAGES/freetype.mo
 share/locale/de/LC_MESSAGES/freetype.mo
 share/locale/es/LC_MESSAGES/freetype.mo
