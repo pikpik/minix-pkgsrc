@@ -1,5 +1,4 @@
- # $NetBSD: Makefile,v 1.31 2001/06/27 04:58:51 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.32 2001/07/16 07:59:11 itojun Exp $
 
 DISTNAME=	wget-1.7
 CATEGORIES=	net
