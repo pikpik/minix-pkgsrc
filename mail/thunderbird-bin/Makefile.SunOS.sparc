@@ -1,5 +1,5 @@
-# $NetBSD: Makefile.SunOS.sparc,v 1.1 2003/12/13 04:01:50 grant Exp $
+# $NetBSD: Makefile.SunOS.sparc,v 1.2 2004/01/04 05:01:02 grant Exp $
 
-DISTNAME=	thunderbird-${MOZ_VER}-sparc-sun-solaris2.8
+DISTNAME=	${MOZILLA}-${MOZ_VER}-sparc-sun-solaris2.8
 
 MOZ_PLATFORM=	solaris
