@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2004/02/14 22:10:46 recht Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2004/03/05 19:25:42 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GTK2_BUILDLINK3_MK:=	${GTK2_BUILDLINK3_MK}+
@@ -24,6 +24,7 @@ USE_X11= 	yes
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
+.include "../../x11/Xrandr/buildlink3.mk"
 
 .endif	# GTK2_BUILDLINK3_MK
 
