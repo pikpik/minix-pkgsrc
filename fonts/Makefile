@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2002/03/06 20:20:04 seb Exp $
+# $NetBSD: Makefile,v 1.19 2002/03/24 03:12:04 uebayasi Exp $
 #
 
 COMMENT=	Fonts
@@ -26,6 +26,7 @@ SUBDIR+=	ko-x11fonts
 SUBDIR+=	mglfonts
 SUBDIR+=	mkttfdir
 SUBDIR+=	monafonts
+SUBDIR+=	mozilla-fonts
 SUBDIR+=	ms-ttf
 SUBDIR+=	watanabe_vfont
 
