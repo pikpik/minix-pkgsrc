@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 21:40:18 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/26 02:27:41 wiz Exp $
 #
 
 DISTNAME=	denemo-0.5.4
@@ -13,7 +13,7 @@ COMMENT=	GUI musical score editor written in C/GTK+
 DEPENDS+=	lilypond-[0-9]*:../../print/lilypond
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
