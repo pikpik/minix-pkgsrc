@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/01/18 01:50:46 hubertf Exp $
 bin/pdmenu
-etc/pdmenurc.sample
 lib/pdmenu/editdir.pl
 lib/pdmenu/showdir.pl
 man/man1/pdmenu.1
