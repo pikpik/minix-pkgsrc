@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/05/02 20:07:36 jmmv Exp $
+# $NetBSD: Makefile,v 1.51 2004/05/07 01:14:51 xtraeme Exp $
 #
 
 DISTNAME=		gtk+-2.4.1
@@ -44,6 +44,17 @@ BUILD_DIRS=		${WRKSRC} ${WRKSRC}/demos/gtk-demo
 PRINT_PLIST_AWK+=	/^@dirrm share\/themes\/Default$$/ \
 				{ print "@unexec $${RMDIR} %D/" $$2 \
 				  " 2>/dev/null || $${TRUE}"; next; }
+
+.include "../../mk/compiler.mk"
+
+# work around /**/ in a macro definition in X11/Xlibint.h (GetEmptyReq)
+# being expanded to a space, causing breakage in gdk/x11/gdkasync.c.
+#
+# turning on strict ISO C compliance uses a different macro definition
+# which uses ## instead and does what it should.
+.if !empty(CC_VERSION:MSun)
+CPPFLAGS+=		-Xc
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/gtk-2.0/engines
