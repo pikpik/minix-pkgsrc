@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:21:31 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/07 02:01:12 hubertf Exp $
 #
 
 DISTNAME=	blackbox-0.61.1
@@ -9,14 +9,10 @@ MAINTAINER=	carneous@carneous.net
 HOMEPAGE=	http://blackbox.alug.org/
 COMMENT=	small and fast X11R6 window manager
 
+USE_BUILDLINK_ONLY=	yes
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 
-CONFIGURE_ARGS+=	--prefix=${X11PREFIX} \
-			--x-includes=${X11BASE}/include \
-			--x-libraries=${X11BASE}/lib \
-			--enable-kde
-
-HAS_CONFIGURE=	YES
+CONFIGURE_ARGS+=	--enable-kde
 
 .include "../../mk/bsd.pkg.mk"
