@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/10/28 16:49:45 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2004/12/03 15:14:51 wiz Exp $
 
 DISTNAME=		hbench-OS-1.0
 PKGNAME=		hbench-1.0
@@ -19,17 +19,7 @@ USE_BUILDLINK3=		YES
 OSVERSION_SPECIFIC=	YES
 BUILD_TARGET=		build
 
-PLIST_SRC=		${WRKDIR}/PLIST-src
-
 DIST_SUBDIR=		${PKGNAME_NOREV}
-
-post-patch:
-	@machfiles="";							\
-	if [ ${MACHINE} = i386 ]; then					\
-		machfiles="$$machfiles ${PKGDIR}/PLIST.${MACHINE}";	\
-	fi ;								\
-	${CAT} ${PKGDIR}/PLIST.md $$machfiles ${PKGDIR}/PLIST.common	\
-		> ${PLIST_SRC}
 
 post-configure:
 	@cd ${WRKSRC};							\
