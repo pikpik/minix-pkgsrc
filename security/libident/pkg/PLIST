@@ -1,2 +1,4 @@
+@comment $NetBSD$
 include/ident.h
 lib/libident.a
+man/man3/ident.3.gz
