@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/05 21:56:17 rh Exp $
 
 DISTNAME=	diction-1.02
 CATEGORIES=	textproc
@@ -9,5 +9,7 @@ HOMEPAGE=	http://www.gnu.org/software/diction/diction.html
 COMMENT=	GNU version of diction and style
 
 GNU_CONFIGURE=	YES
+CONFIG_GUESS_OVERRIDE= ${WRKSRC}/config.guess
+CONFIG_SUB_OVERRIDE=   ${WRKSRC}/config.sub
 
 .include "../../mk/bsd.pkg.mk"
