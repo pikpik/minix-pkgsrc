@@ -1,24 +1,13 @@
 $NetBSD$
 
---- Makefile.orig	Wed Feb  6 21:05:51 2002
-+++ Makefile
+--- Makefile.orig	Wed Feb  6 20:05:51 2002
++++ Makefile	Mon Jun 17 07:16:33 2002
 @@ -1,6 +1,6 @@
  CC     = gcc
 -LIBS   = -lXpm `gtk-config --libs`
 -CFLAGS = `gtk-config --cflags`
-+LIBS   = -lXpm `${GTK_CONFIG} --libs`
-+CFLAGS = `${GTK_CONFIG} --cflags`
++LIBS   += -lXpm `${GTK_CONFIG} --libs`
++CFLAGS += `${GTK_CONFIG} --cflags`
  OBJS   = bbrun.o \
           ../wmgeneral/wmgeneral.o \
           ../wmgeneral/misc.o \
-@@ -9,8 +9,10 @@
- .c.o:
- 	$(CC) -c -O2 -Wall $< -o $*.o $(CFLAGS)
- 
-+all: bbrun
-+
- bbrun: $(OBJS)
- 	$(CC) -Wall -g -o bbrun $^ $(LIBS)
- 
- clean:
- 	rm -f bbrun $(OBJS)
