@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/11/06 08:37:46 thorpej Exp $
+# $NetBSD: Makefile,v 1.10 2002/11/28 12:00:26 agc Exp $
 #
 
 DISTNAME=	simhv210-0b2
@@ -17,6 +17,14 @@ COMMENT=	Bob Supnik's historical computer simulator
 WRKSRC=		${WRKDIR}
 
 EXTRACT_CMD=	unzip -aoq ${DOWNLOADED_DISTFILE}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${MACHINE_ARCH} == "arm")
+.if (${CFLAGS:M-O2} == "-O2")
+CFLAGS:=	${CFLAGS:S/-O2//}
+.endif
+.endif
 
 post-extract:
 	${MKDIR} ${WRKSRC}/BIN
