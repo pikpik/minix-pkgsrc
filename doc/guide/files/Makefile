@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2004/09/30 01:58:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/21 14:27:37 grant Exp $
 
-WEB_PREFIX=	${.CURDIR}/../htdocs
+WEB_PREFIX?=	${.CURDIR}/../htdocs
 
 DOC=	pkgsrc
 
