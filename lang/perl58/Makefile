@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/01/23 23:26:25 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2004/01/24 13:51:14 grant Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -93,6 +93,7 @@ CONFIGURE_ARGS+=	-Duse64bitint
 PERL5_CC=		${CC:T}
 .endif
 CONFIGURE_ARGS+=	-Dcc="${PERL5_CC}"
+MAKE_ENV+=		LANG=""
 
 .if ${OPSYS} == "Darwin"
 #
