@@ -1,0 +1,21 @@
+$NetBSD$
+
+--- /dev/null	Sat Feb 22 00:18:04 2003
++++ build/luac/Makefile
+@@ -0,0 +1,16 @@
++PROG= luac
++
++SRCS= dump.c luac.c opt.c print.c stubs.c
++
++BINDIR= ${PREFIX}/bin
++MANDIR= ${PREFIX}/man
++
++CPPFLAGS+= -D_POSIX_SOURCE -I${.CURDIR}/../../include -I${.CURDIR}/../../src
++
++LDFLAGS+= -R${PREFIX}/lib -L${.CURDIR}/../liblua
++
++LDADD+= -llua
++
++.PATH:	${.CURDIR}/../../src/luac
++
++.include <bsd.prog.mk>

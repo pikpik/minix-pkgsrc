@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2003/01/26 21:38:23 salo Exp $
 #
 # This Makefile fragment is included by packages that use lua.
 #
@@ -7,7 +7,7 @@
 LUA_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		lua
-BUILDLINK_DEPENDS.lua?=		lua>=4.0
+BUILDLINK_DEPENDS.lua?=		lua>=4.0.1
 BUILDLINK_PKGSRCDIR.lua?=	../../lang/lua
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.lua=lua
