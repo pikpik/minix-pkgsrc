@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/02/18 11:26:15 martti Exp $
+# $NetBSD: Makefile,v 1.48 2002/03/13 17:37:33 fredb Exp $
 
 DISTNAME=		cups-${DIST_VERS}-source
 PKGNAME=		cups-${VERS}
@@ -26,6 +26,7 @@ USE_BUILDLINK_ONLY=	YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+UNLIMIT_RESOURCES=	datasize memorysize
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--localstatedir=/var
 CONFIGURE_ARGS+=	--with-docdir=${PREFIX}/share/doc/html/cups
