@@ -1,12 +1,14 @@
-# $NetBSD: Makefile,v 1.2 1999/09/01 21:00:11 tron Exp $
+# $NetBSD: Makefile,v 1.3 1999/10/07 17:41:56 tron Exp $
 
 DISTNAME=	rtspd-src-1.0.0.0
 PKGNAME=	ra-rtsp-proxy-1.0.0.0
 CATEGORIES=	net
 MASTER_SITES=	# empty
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tron@netbsd.org
 HOMEPAGE=	http://service.real.com/firewall/fdev.html
+
+IS_INTERACTIVE=	yes
 
 LICENSE=		no-commercial-use
 MIRROR_DISTFILE=	no
