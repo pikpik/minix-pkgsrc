@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.821 2001/10/04 21:48:12 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.822 2001/10/04 22:01:54 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -317,6 +317,16 @@ DISTINFO_FILE?=		${.CURDIR}/distinfo
 
 .if exists(/usr/bin/m4)
 M4?=			/usr/bin/m4
+.endif
+
+.if defined(BUILDLINK_CPPFLAGS)
+CFLAGS:=		${BUILDLINK_CPPFLAGS} ${CFLAGS}
+CXXFLAGS:=		${BUILDLINK_CPPFLAGS} ${CXXFLAGS}
+CPPFLAGS:=		${BUILDLINK_CPPFLAGS} ${CPPFLAGS}
+.endif
+
+.if defined(BUILDLINK_LDFLAGS)
+LDFLAGS:=		${BUILDLINK_LDFLAGS} ${LDFLAGS}
 .endif
 
 .if !defined(X11_BUILDLINK_MK)
