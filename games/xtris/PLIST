@@ -1,0 +1,7 @@
+@comment $NetBSD: PLIST,v 1.2 2002/01/25 12:30:11 opp Exp $
+bin/xtris
+bin/xtserv
+bin/xtbot
+man/man6/xtris.6
+man/man6/xtserv.6
+man/man6/xtbot.6
