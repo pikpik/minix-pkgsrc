@@ -1,10 +1,7 @@
 @comment $NetBSD$
 include/begemot.h
 include/rpoll.h
-lib/libbegemot.so.1.9
-lib/libbegemot.so.1
-lib/libbegemot.so
-lib/libbegemot.a
+lib/libbegemot.la
 man/man3/begemot-intro.3
 man/man3/begemot-panic.3
 man/man3/begemot-xalloc.3
