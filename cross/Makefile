@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/12/12 01:30:45 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2001/01/04 01:21:52 itojun Exp $
 #
 
     SUBDIR += arm-netbsd
@@ -14,6 +14,7 @@
     SUBDIR += i386-netbsdelf
     SUBDIR += i386-netbsdpe
     SUBDIR += m68k-netbsd
+    SUBDIR += m68k-netbsdelf
     SUBDIR += mipseb-netbsd
     SUBDIR += mipsel-netbsd
     SUBDIR += powerpc-netbsd
