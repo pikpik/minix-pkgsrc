@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/08/25 21:51:15 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/25 18:10:59 wiz Exp $
 #
 
 DISTNAME=	sed-3.02
@@ -14,7 +14,6 @@ USE_BUILDLINK2=	YES
 GNU_CONFIGURE=	YES
 
 INFO_FILES=	sed.info
-AUTOMAKE_PATTERNS+=	sed.info version.texi stamp-vti
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/07/22 22:00:53 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2002/10/28 00:22:03 seb Exp $
 
 DISTNAME=	eperl-2.2.14
 CATEGORIES=	lang perl5 textproc
@@ -14,12 +14,10 @@ USE_BUILDLINK2=	YES
 LIBPERL5_REQD=	${PERL5_REQD}
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Parse/ePerl/.packlist
 
-GNU_CONFIGURE=	# defined
+GNU_CONFIGURE=		YES
 PERL5_CONFIGURE=	NO
 PERL5_CONFIGURE_DIRS=	${WRKSRC}/mod/Parse
 BUILD_DIRS=		${WRKSRC} ${WRKSRC}/mod/Parse
-
-AUTOMAKE_PATTERNS+=	config_ac.h.in
 
 post-configure: perl5-configure
 
