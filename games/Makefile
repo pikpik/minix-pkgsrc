@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 1999/12/25 16:22:03 pooka Exp $
+# $NetBSD: Makefile,v 1.72 1999/12/27 22:38:33 pooka Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -58,6 +58,7 @@
 #    SUBDIR += netris
 #    SUBDIR += oneko
 #    SUBDIR += oonsoo
+    SUBDIR += omega
     SUBDIR += pacman
     SUBDIR += pysol
 #    SUBDIR += qcc
