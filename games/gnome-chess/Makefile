@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.18 2003/05/02 11:54:56 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2003/05/05 16:27:49 jmmv Exp $
 
 DISTNAME=		gnome-chess-0.3.3
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		games gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-chess/0.3/}
 
 MAINTAINER=		tron@netbsd.org
 HOMEPAGE=		http://arcavia.com/rd/gnome-chess/
 COMMENT=		GNOME\'s graphical interface for playing chess
+
+DEPENDS+=		gnome1-dirs>=1.2:../../misc/gnome1-dirs
 
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes

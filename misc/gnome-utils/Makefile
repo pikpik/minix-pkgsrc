@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2003/05/02 11:55:48 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2003/05/05 16:43:43 jmmv Exp $
 
 DISTNAME=		gnome-utils-1.4.1.2
 PKGREVISION=		3
@@ -10,6 +10,7 @@ MAINTAINER=		rh@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Set of useful GNOME utilities and applications
 
+DEPENDS+=		gnome1-dirs>=1.2:../../misc/gnome1-dirs
 BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 BUILD_DEPENDS+=		xml-i18n-tools-[0-9]*:../../textproc/xml-i18n-tools
 
