@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/11/25 19:18:32 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/01/29 13:42:28 wiz Exp $
 #
 
 DISTNAME=		stripes-2.1
@@ -18,5 +18,6 @@ PKG_SYSCONFSUBDIR?=	httpd
 ALL_TARGET=		all
 MAKE_FLAGS+=		DEST=${PREFIX} PERL=${PERL5} \
 			CONFIGFILE=${PKG_SYSCONFDIR}/lg.conf
+REPLACE_PERL=		${WRKSRC}/lg.pl
 
 .include "../../mk/bsd.pkg.mk"
