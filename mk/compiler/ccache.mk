@@ -1,10 +1,10 @@
-# $NetBSD: ccache.mk,v 1.23 2005/01/10 19:38:53 jlam Exp $
+# $NetBSD: ccache.mk,v 1.24 2005/01/12 18:36:11 jlam Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
 #
 # This code is derived from software contributed to The NetBSD Foundation
-# by Johnny Lam.
+# by Johnny C. Lam.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
