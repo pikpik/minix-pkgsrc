@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/17 21:04:12 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/14 16:15:30 jmmv Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-demo-/}
@@ -8,7 +8,7 @@ PKGREVISION=	4
 CONFLICTS+=	xscreensaver<4.14 xscreensaver-gnome-[0-9]*
 
 USE_BUILDLINK3=	yes
-USE_DIRS+=	xdg-x11-1.1
+USE_DIRS+=	xdg-1.1
 
 .include "../../x11/xscreensaver/Makefile.common"
 
