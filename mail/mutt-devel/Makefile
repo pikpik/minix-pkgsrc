@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/06/12 20:33:04 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/06/20 07:48:56 jlam Exp $
 
 DISTNAME=		mutt-1.3.18i
 CATEGORIES=		mail
@@ -10,8 +10,8 @@ COMMENT=		text-based MIME mail client with PGP support
 
 USE_BUILDLINK_ONLY=	YES
 
-#BUILD_DEPENDS+=	autoconf-2.13:../../devel/autoconf
-#BUILD_DEPENDS+=	automake-1.4:../../devel/automake
+BUILD_DEPENDS+=		autoconf-2.13:../../devel/autoconf
+BUILD_DEPENDS+=		automake-1.4:../../devel/automake
 
 BUILD_USES_MSGFMT=	YES
 #USE_LIBINTL=		YES
