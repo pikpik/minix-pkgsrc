@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/09/08 22:15:21 tron Exp $
+# $NetBSD: Makefile,v 1.13 1999/02/20 22:48:34 hubertf Exp $
 #
 
 DISTNAME=		qpopper2.53
@@ -16,6 +16,12 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--libexecdir=${PREFIX}/libexec \
 			--sysconfdir=${PREFIX}/etc --enable-apop \
 			--with-apop=/etc/apop.auth --with-apopuid=root
+
+.include "../../mk/bsd.prefs.mk"
+
+.if defined(QPOPPER_SERVERMODE)
+CONFIGURE_ARGS+=	--enable-servermode
+.endif
 
 # popper makefile doesn't have an install target...
 do-install:
