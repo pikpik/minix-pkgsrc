@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/larsclock
-bin/larsremote
-bin/larswm
-share/doc/larswm/keyboard_refcard.pdf
-share/doc/larswm/mouse_refcard.pdf
-@dirrm share/doc/larswm

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/01/21 20:39:21 agc Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/10 13:09:34 wiz Exp $
 #
 
 DISTNAME=	olvwm4.src4
 PKGNAME=	olvwm-4.4
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	http://www.akula.com/~jadler/sdo/olvwm/
 

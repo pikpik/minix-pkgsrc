@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2002/10/04 08:59:34 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/28 22:28:31 agc Exp $
 
 DISTNAME=	piewm-1.02
+PKGREVISION=	1
 CATEGORIES=	wm
 MASTER_SITES=	ftp://ftp.crynwr.com/piewm/
 
