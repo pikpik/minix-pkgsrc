@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/13 10:31:14 tron Exp $
 
 DISTNAME=		compat-2004.4.2-3.${SUSE_ARCH}
 PKGNAME=		suse_compat-${SUSE_VERSION}
 CATEGORIES=		emulators
-MASTER_SITES=		${MASTER_SITE_SUSE}
+MASTER_SITES=		${MASTER_SITE_SUSE91}
 EXTRACT_SUFX=		.rpm
 
 MAINTAINER=		tron@NetBSD.org
