@@ -33,8 +33,13 @@ PATCHEES=	makeall ./src/rt/Rmakefile ./src/util/Rmakefile		\
 
 .if ${OPSYS} == "NetBSD"
 PKGSRC_ARCH=	9
+PLIST_SUBST+=	USE_GL="@comment "
 .elif ${OPSYS} == "FreeBSD"
 PKGSRC_ARCH=	8
+PLIST_SUBST+=	USE_GL="@comment "
+.elif ${OPSYS} == "IRIX"
+PKGSRC_ARCH=	3
+PLIST_SUBST+=	USE_GL=""
 .endif
 
 MAKE_ENV+=	MV="${MV}" RM="${RM}" CP="${CP}"			\
@@ -52,15 +57,19 @@ do-configure:
 		${WRKSRC}/${patchee} >	${WRKSRC}/${patchee}.tmp &&	\
 	${MV} ${WRKSRC}/${patchee}.tmp ${WRKSRC}/${patchee}
 .endfor
+	${RM} ${WRKSRC}/lib/.gdb_history
 
 do-build:
 	cd ${WRKSRC} && ${MAKE_ENV} csh ./makeall install
+	@${RM} -f ${WRKSRC}/radiance/bin/wish*
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/radiance
 	cd ${WRKSRC}/radiance && ${PAX} -rw . ${PREFIX}/radiance/
 	${INSTALL_DATA_DIR} ${PREFIX}/radiance/obj
 	cd ${WRKSRC}/obj && ${PAX} -rw . ${PREFIX}/radiance/obj/
+	${INSTALL_DATA_DIR} ${PREFIX}/radiance/lib
+	cd ${WRKSRC}/lib && ${PAX} -rw . ${PREFIX}/radiance/lib/
 	${INSTALL_DATA_DIR} ${PREFIX}/radiance/man
 	cd ${WRKSRC}/doc/man && ${PAX} -rw . ${PREFIX}/radiance/man/
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/radiance
