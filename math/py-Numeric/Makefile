@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.20 2001/04/09 11:50:51 drochner Exp $
+# $NetBSD: Makefile,v 1.21 2001/05/14 16:22:35 drochner Exp $
 
-DISTNAME=	Numeric-19.0.0
-PKGNAME=	py-Numeric-19.0.0
+DISTNAME=	Numeric-20.1.0
+PKGNAME=	py-Numeric-20.1.0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 
 MAINTAINER=	tsarna@netbsd.org
-HOMEPAGE=	http://numpy.sourceforge.net/
+HOMEPAGE=	http://www.pfdubois.com/numpy/
 COMMENT=	Adds multidimensional numeric arrays to Python
 
 USE_PYTHON=	yes
