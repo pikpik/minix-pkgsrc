@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/09/13 19:35:06 garbled Exp $
+# $NetBSD: Makefile,v 1.7 1999/01/25 18:47:38 hubertf Exp $
 #
 
 DISTNAME=	gnuplot-3.7
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ftp.gnuplot.vt.edu/pub/gnuplot/ \
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.gnu.org/software/gnuplot/gnuplot.html
+
+USE_X11=	yes
 
 GNU_CONFIGURE=	yes
 
