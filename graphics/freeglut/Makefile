@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/04/19 18:36:02 xtraeme Exp $
 #
 
 DISTNAME=	freeglut-2.2.0
@@ -10,6 +10,8 @@ HOMEPAGE=	http://freeglut.sourceforge.net/
 COMMENT=	Alternative to the OpenGL Utility Toolkit (GLUT) library
 
 CONFLICTS=	glut-[0-9]*:../../graphics/glut
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
