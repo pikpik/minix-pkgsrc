@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.73 2002/06/21 21:06:48 jlam Exp $
+# $NetBSD: bsd.prefs.mk,v 1.74 2002/08/01 05:36:33 jlam Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -179,6 +179,8 @@ SHAREMODE?=		${DOCMODE}
 # if the system is IPv6-ready NetBSD, compile with IPv6 support turned on.
 .if (${OPSYS} == "NetBSD") && !defined(USE_SOCKS) && \
     exists(/usr/include/netinet6)
+USE_INET6?=		YES
+.elif ${OPSYS} == "SunOS" && exists(/usr/include/netinet/ip6.h)
 USE_INET6?=		YES
 .else
 USE_INET6?=		NO
