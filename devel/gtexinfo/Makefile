@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2003/06/02 01:20:45 jschauma Exp $
+# $NetBSD: Makefile,v 1.37 2003/06/12 13:39:27 wiz Exp $
 #
 
 DISTNAME=		texinfo-4.6
@@ -18,8 +18,9 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-libintl-prefix=${BUILDLINK_PREFIX.gettext}
 
-INSTALL_INFO=	${PREFIX}/bin/install-info
-TEST_TARGET=	check
+USE_NEW_TEXINFO=	YES
+INFO_FILES=		info-stnd.info info.info texinfo
+TEST_TARGET=		check
 
 post-patch:
 	${MV} -f ${WRKSRC}/info/filesys.h ${WRKSRC}/info/filesys.h.orig
@@ -31,3 +32,6 @@ post-patch:
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
+
+# This need to be defined here to override the setting in texinfo.mk
+INSTALL_INFO=		${PREFIX}/bin/install-info
