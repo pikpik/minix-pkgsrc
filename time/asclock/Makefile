@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:27:15 agc Exp $
+# $NetBSD: Makefile,v 1.15 2004/02/04 05:16:33 reed Exp $
 
 DISTNAME=	asclock-classic-1.0
 PKGNAME=	asclock-1.0
@@ -12,8 +12,7 @@ NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
 WRKSRC=		${WRKDIR}/asclock1.0
 USE_IMAKE=	YES
-USE_X11BASE=	YES
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
 LANGUAGES=	en de pt nl no it sv es hu br fr cs ru uk sl id da
 
@@ -72,5 +71,5 @@ do-install:
 .endfor
 	@${ECHO} @dirrm share/asclock-classic >> ${PLIST_SRC}
 
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
