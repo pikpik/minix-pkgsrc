@@ -1,9 +1,19 @@
-# $NetBSD: Makefile,v 1.74 2002/02/02 03:32:42 wiz Exp $
+# $NetBSD: Makefile,v 1.75 2002/03/19 15:04:17 mjl Exp $
 #
 
 COMMENT=	Mathematics
 
 SUBDIR+=	R
+SUBDIR+=	R-KernSmooth
+SUBDIR+=	R-VR
+SUBDIR+=	R-boot
+SUBDIR+=	R-cluster
+SUBDIR+=	R-foreign
+SUBDIR+=	R-mgcv
+SUBDIR+=	R-nlme
+SUBDIR+=	R-recommended
+SUBDIR+=	R-rpart
+SUBDIR+=	R-survival
 SUBDIR+=	abs
 SUBDIR+=	admesh
 SUBDIR+=	aribas
