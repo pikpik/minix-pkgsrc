@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 1998/07/18 04:22:25 tv Exp $
+# $NetBSD: Makefile,v 1.11 1998/11/15 20:46:35 tron Exp $
 # FreeBSD Id: Makefile,v 1.26 1997/10/13 04:41:06 max Exp
 #
 
+    SUBDIR += binkd
 #    SUBDIR += bpl+
 #    SUBDIR += ecu
     SUBDIR += fidogate
