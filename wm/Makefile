@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2002/11/20 18:17:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.33 2002/11/20 21:40:43 jschauma Exp $
 #
 
 COMMENT=	window managers (for X)
@@ -32,6 +32,7 @@ SUBDIR+=	matchbox
 SUBDIR+=	metacity
 SUBDIR+=	olvwm
 SUBDIR+=	openbox
+SUBDIR+=	pekwm
 SUBDIR+=	piewm
 SUBDIR+=	pwm
 SUBDIR+=	qvwm
