@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/24 18:23:46 cjep Exp $
 #
 
-DISTNAME=	nbgrep-20030824
+DISTNAME=	nbgrep-20030825
 CATEGORIES=	sysutils textproc
 MASTER_SITES=	http://www.fawlty.net/software/
 
