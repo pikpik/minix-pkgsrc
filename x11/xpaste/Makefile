@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/09/29 09:20:12 seb Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/04 09:27:01 seb Exp $
 #
 
 DISTNAME=	xpaste-1.1
@@ -11,6 +11,9 @@ EXTRACT_SUFX=	.shar.gz
 MAINTAINER=	seb@NetBSD.org
 COMMENT=	Display the content of the X11 paste buffer in a window
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 
 .include "../../mk/bsd.pkg.mk"
