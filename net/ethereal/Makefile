@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.46 2001/05/27 11:31:45 itojun Exp $
-#
+# $NetBSD: Makefile,v 1.47 2001/06/12 20:33:06 jlam Exp $
 
-ETHEREAL_VERSION=	0.8.18
-DISTNAME=		ethereal-${ETHEREAL_VERSION}
+DISTNAME=		ethereal-0.8.18
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ethereal.com/pub/ethereal/ \
 			ftp://ftp.sunet.se/pub/network/monitoring/ethereal/
@@ -26,7 +24,7 @@ CONFIGURE_ARGS+=	--with-gtk-prefix="${GTKDIR}" \
 			--with-ucdsnmp=${LOCALBASE}
 LIBS+=			-lcrypto
 
-PLIST_SUBST+=		ETHEREAL_VERSION=${ETHEREAL_VERSION}
+PLIST_SUBST+=		PKGVERSION=${PKGNAME:S/ethereal-//}
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/editcap.1 ${PREFIX}/man/man1
