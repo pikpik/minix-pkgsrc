@@ -1,7 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile.php,v 1.1 2004/11/04 18:38:55 jdolecek Exp $
 #
 
 .include "../../lang/php5/Makefile.common"
+
+DISTINFO_FILE=	${.CURDIR}/../../lang/php5/distinfo
 
 BUILD_DEFS=		USE_INET6
 
