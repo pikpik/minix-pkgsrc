@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.173 2003/06/19 16:45:12 wiz Exp $
+# $NetBSD: Makefile,v 1.174 2003/06/23 15:49:28 wiz Exp $
 #
 
 COMMENT=	Games
@@ -128,6 +128,7 @@ SUBDIR+=	newvox
 SUBDIR+=	nighthawk
 SUBDIR+=	omega
 SUBDIR+=	pacman
+SUBDIR+=	pag
 SUBDIR+=	plib
 SUBDIR+=	powwow
 SUBDIR+=	prboom
