@@ -2,13 +2,13 @@
 # FreeBSD Id: Makefile,v 1.2 1998/03/19 01:54:59 msmith Exp
 #
 
-DISTNAME=       	vnc-3.3.3r1_unixsrc
-PKGNAME=		vncviewer-3.3.3.1
+DISTNAME=       	vnc-3.3.3r2_unixsrc
+PKGNAME=		vncviewer-3.3.3.2
 CATEGORIES=		net x11
 MASTER_SITES=   	http://www.uk.research.att.com/vnc/dist/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=	 	packages@netbsd.org
+MAINTAINER=	 	abs@netbsd.org
 HOMEPAGE=		http://www.uk.research.att.com/vnc/
 
 CRYPTO=			yes
