@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/11/29 01:12:48 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2002/03/13 17:37:43 fredb Exp $
 #
 
 DISTNAME=	kapm-0.3.1
@@ -18,6 +18,8 @@ DEPENDS+=	kdebase-1.1.2nb1:../../x11/kdebase
 
 USE_X11BASE=	YES	# to get things near KDE
 GNU_CONFIGURE=	YES
+USE_LIBTOOL=	yes
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 EVAL_PREFIX+=	QT1DIR=qt1
 CONFIGURE_ENV+=	QTDIR=${QT1DIR}/qt1
