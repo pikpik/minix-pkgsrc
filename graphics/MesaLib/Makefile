@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/23 12:36:54 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2001/04/12 20:38:26 hubertf Exp $
 #
 
 .include "../Mesa/Makefile.common"
@@ -21,7 +21,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 USE_GMAKE=	yes
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--enable-static
+CONFIGURE_ARGS=		--enable-static --without-glut
 
 .include "../../mk/bsd.prefs.mk"
 
