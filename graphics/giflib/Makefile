@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/04/24 00:25:41 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2004/10/03 00:14:51 tv Exp $
 #
 
 DISTNAME=		giflib-4.1.0
@@ -14,7 +14,7 @@ CONFLICTS=		libungif-[0-9]*
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS=		--without-x
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 USE_LIBTOOL=		# defined
 
 DOCDIR=			${PREFIX}/share/doc/giflib

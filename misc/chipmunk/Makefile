@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/11 17:24:37 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:12:58 tv Exp $
 #
 
 DISTNAME=       chipmunk-1.4
@@ -12,7 +12,7 @@ COMMENT=	Shell-like tool for hardware debugging
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 
 ALL_TARGET=	chipmunk
 MAKE_ENV+=	CONFIG_OPTIONS="${CPPFLAGS}"

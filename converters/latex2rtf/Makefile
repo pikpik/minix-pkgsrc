@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/11 07:21:15 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/05/07 22:08:56 reed Exp $
 #
 
 DISTNAME=	latex2rtf-1.8aa
@@ -10,7 +10,7 @@ MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://www.kfa-juelich.de/isr/1/texconv/latex2rtf.html
 COMMENT=	LaTeX to RTF converter
 
-USE_BUILDLINK3=	# defined
+USE_BUILDLINK3=	yes
 MAKE_FLAGS+=	XCFLAGS="${CFLAGS}"
 
 INFO_FILES=	latex2rtf.info

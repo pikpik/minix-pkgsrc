@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/04/22 15:00:08 drochner Exp $
+# $NetBSD: Makefile,v 1.23 2004/10/03 00:13:28 tv Exp $
 
 DISTNAME=		hdf5-1.6.2
 PKGREVISION=		1
@@ -14,7 +14,7 @@ COMMENT=		Hierarchical Data Format (new generation)
 GNU_CONFIGURE=		# defined
 # XXX can't enable this until we have a shared libsz
 #CONFIGURE_ARGS+=	--with-szlib
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 USE_LIBTOOL=		# defined
 TEST_TARGET=		check
 

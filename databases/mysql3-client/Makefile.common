@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.25 2004/08/27 06:29:07 jlam Exp $
+# $NetBSD: Makefile.common,v 1.1.1.1 2004/10/28 01:01:32 xtraeme Exp $
 
 DISTNAME=		mysql-3.23.58
 CATEGORIES=		databases
@@ -28,7 +28,7 @@ MYSQL_DATADIR?=		${VARBASE}/mysql
 MYSQL_CHARSET?=		latin1
 MYSQL_EXTRA_CHARSET?=	all
 
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 USE_GNU_TOOLS+=		make
 CONFIGURE_ARGS+=	--localstatedir=${MYSQL_DATADIR}
