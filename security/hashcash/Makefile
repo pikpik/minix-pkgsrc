@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/29 19:01:34 tv Exp $
 #
 
-DISTNAME=		hashcash-0.28
+DISTNAME=		hashcash-0.30
 CATEGORIES=		security
-MASTER_SITES=		http://cypherspace.org/hashcash/source/
+MASTER_SITES=		http://www.hashcash.org/source/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		tv@duh.org
