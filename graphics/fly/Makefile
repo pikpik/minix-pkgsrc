@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/07/21 16:51:39 martti Exp $
+# $NetBSD: Makefile,v 1.23 2003/09/02 13:27:45 seb Exp $
 
 DISTNAME=	fly-1.6.5
 PKGREVISION=	4
@@ -11,7 +11,7 @@ COMMENT=	Command-file interface for creating and modifying PNG images
 
 BUILD_DEPENDS+=	gif2png>=2.4.2:../../graphics/gif2png
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_PERL5=	YES
 USE_X11=	YES
 
@@ -36,7 +36,7 @@ do-install:
 	${RM} -f ${WRKSRC}/examples/*.orig
 	cd ${WRKSRC}/examples; ${INSTALL_DATA} * ${PREFIX}/share/examples/fly
 
-.include "../../graphics/freetype-lib/buildlink2.mk"
-.include "../../graphics/gd/buildlink2.mk"
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/freetype-lib/buildlink3.mk"
+.include "../../graphics/gd/buildlink3.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
