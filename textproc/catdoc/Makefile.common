@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1 2003/09/17 14:57:26 jmmv Exp $
+# $NetBSD: Makefile.common,v 1.2 2004/01/20 12:26:49 agc Exp $
 #
 
 DISTNAME=	catdoc-0.91.4
@@ -13,7 +13,7 @@ DISTINFO_FILE=		${.CURDIR}/../../textproc/catdoc/distinfo
 PATCHDIR=		${.CURDIR}/../../textproc/catdoc/patches
 
 WRKSRC=			${WRKDIR}/catdoc
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--libdir=${PREFIX}/share
