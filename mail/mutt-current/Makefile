@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/18 22:46:38 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/21 21:01:31 hubertf Exp $
 
 IGNORE=		"Stable mutt avaiable in mail/mutt"
 
@@ -28,14 +28,10 @@ CONFIGURE_ARGS+= --with-curses=${LOCALBASE} --with-exec-shell=/bin/ksh \
 		 --enable-pop --enable-imap
 LDFLAGS+=	-s
 
-RESTRICTED=	"Contains PGP code"
-NO_SRC_ON_FTP=	${RESTRICTED}
-NO_SRC_ON_CDROM=	${RESTRICTED}
-
 .include "../../mk/bsd.prefs.mk"
 
 .if !(defined(MUTT_INTERNATIONAL) && ${MUTT_INTERNATIONAL} == YES)
-IGNORE=		"${PKGNAME} contains PGP code"
+CRYPTO=		yes
 .endif
 
 .if ${OPSYS} == "SunOS"

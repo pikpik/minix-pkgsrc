@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2000/06/21 01:17:52 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2000/08/18 22:46:49 hubertf Exp $
 #
 
 DISTNAME=		rsaref
@@ -10,9 +10,7 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		tv@netbsd.org
 
-RESTRICTED=		"Cryptographic source usable only within the USA"
-NO_SRC_ON_FTP=	${RESTRICTED}
-
+CRYPTO=			yes
 IS_INTERACTIVE=		yes # requires options to be set in order to use
 LICENSE=		no-commercial-use
 

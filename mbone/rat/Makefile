@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/08/18 22:46:42 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2000/08/31 00:11:31 jwise Exp $
 #
 
 DISTNAME=	rat-3.0.28
@@ -10,10 +10,7 @@ HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
 
 DEPENDS+=	tk-8.3.2:../../x11/tk
 
-RESTRICTED=		"Contains DES encryption"
-NO_SRC_ON_FTP=		${RESTRICTED}
-NO_SRC_ON_CDROM=	${RESTRICTED}
-
+CRYPTO=		yes
 USE_GMAKE=	yes
 USE_X11BASE=	yes
 

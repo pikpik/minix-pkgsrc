@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/23 23:24:07 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2000/08/23 23:27:58 wiz Exp $
 #
 
 DISTNAME=		srp-1.4.4
@@ -20,9 +20,8 @@ BUILD_DEPENDS+=		autoconf:../../devel/autoconf
 BUILD_DEPENDS+=		automake:../../devel/automake
 DEPENDS+=		gmp>=2.0.2:../../devel/gmp
 
-RESTRICTED=             "Crypto; export-controlled"
-NO_SRC_ON_FTP=	${RESTRICTED}
-
+BROKEN=			"Distfile for srp-1.4.4 not available"
+CRYPTO=			yes
 GNU_CONFIGURE=		yes
 
 CPPFLAGS+=		-Dunix=1

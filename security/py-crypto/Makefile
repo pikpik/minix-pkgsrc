@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2000/08/18 22:46:49 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2000/08/21 21:01:33 hubertf Exp $
 
 DISTNAME=	pycrypt100
 PKGNAME=	py-crypto-1.0.0
@@ -11,8 +11,7 @@ HOMEPAGE=	http://starship.skyport.net/crew/amk/writing/pct/
 
 DEPENDS+=	python-1.5.2:../../lang/python
 
-RESTRICTED=	"Cryptographic software"
-NO_SRC_ON_FTP=	${RESTRICTED}
+CRYPTO=		yes
 
 WRKSRC=		${WRKDIR}/Extensions/Crypto
 MAKE_FLAGS=	'OPT=${CFLAGS}'
