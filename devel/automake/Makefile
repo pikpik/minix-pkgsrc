@@ -3,7 +3,7 @@
 # Date created:		15 March 1997
 # Whom:			FUJIMOTO Kensaku <fujimoto@oscar.elec.waseda.ac.jp>
 #
-# $NetBSD: Makefile,v 1.4 1997/11/13 14:37:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1998/02/09 00:31:30 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
@@ -21,7 +21,6 @@ BUILD_DEPENDS=	${PREFIX}/bin/install-info:${PORTSDIR}/devel/gtexinfo
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PERL=${PREFIX}/bin/perl
 STRIPFLAG=	# none
-
 
 pre-install:
 	@if [ ! -f ${PREFIX}/info/dir ]; then \
