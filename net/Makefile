@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.271 2002/01/31 23:04:47 wiz Exp $
+# $NetBSD: Makefile,v 1.272 2002/01/31 23:15:30 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -73,6 +73,7 @@ SUBDIR+=	icsi-finger
 SUBDIR+=	ip6_int
 SUBDIR+=	ipa
 SUBDIR+=	ipcalc
+SUBDIR+=	ipcheck
 SUBDIR+=	ipv6calc
 SUBDIR+=	ipw
 SUBDIR+=	irrd
