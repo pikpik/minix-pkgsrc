@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2002/09/25 12:04:06 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2002/10/06 11:43:25 jlam Exp $
 
 DISTNAME=	xanim2801
 PKGNAME=	xanim-2.80.1
@@ -44,10 +44,12 @@ XANIM_AUDIO.SunOS=	XA_AUDIO_DEFS="-DXA_SPARC_AUDIO -DSVR4 -DXA_SELECT"
 post-extract:
 	@${LN} -s docs/xanim.man ${WRKSRC}
 	@${MKDIR} ${WRKSRC}/mods
+.if defined(CODEC_FILES) && !empty(CODEC_FILES)
 	@for file in ${CODEC_FILES}; do					\
 		${CP} ${DISTDIR}/$$file ${WRKSRC}/mods;			\
 		${GUNZIP_CMD} ${WRKSRC}/mods/$$file;			\
 	done
+.endif
 
 .include "../../mk/ossaudio.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
