@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2001/02/07 05:16:39 fredb Exp $
+# $NetBSD: Makefile,v 1.84 2001/02/17 18:24:46 wiz Exp $
 #
 
 DISTNAME=       fetchmail-5.6.0
@@ -60,7 +60,7 @@ post-build:
 	tbl ${WRKSRC}/fetchmail.tbl >${WRKSRC}/fetchmail.man
 
 post-install:
-	${INSTALL} -d -m 555 -o ${DOCOWN} -g ${DOCGRP} ${FDOC}
+	${INSTALL_DATA_DIR} ${FDOC}
 	cd ${WRKSRC} && ${INSTALL_DATA} \
 	   sample.rcfile FAQ NOTES FEATURES README COPYING \
 	   fetchmail-FAQ.html fetchmail-features.html \
