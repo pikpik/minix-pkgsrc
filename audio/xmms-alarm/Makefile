@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/03/07 22:52:41 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:10 tv Exp $
 #
 
-DISTNAME=		xmms-alarm-0.3.3
-PKGREVISION=	1
+DISTNAME=		xmms-alarm-0.3.6
 CATEGORIES=		audio
 MASTER_SITES=		http://www.snika.uklinux.net/xmms-alarm/
 
