@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/05/07 15:26:01 tron Exp $
+# $NetBSD: Makefile,v 1.16 1998/05/09 15:24:42 frueauf Exp $
 
 DISTNAME=	gimp-0.99.28
 CATEGORIES=	graphics
@@ -55,6 +55,6 @@ pre-install:
 post-install:
 	@${ECHO_MSG} "--> now installing in ${GIMP_DATA}"
 	@(cd ${WRKDIR}/${GIMP_DATA} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} \
-		${MAKE_FLAGS} ${MAKEFILE} ${INSTALL_TARGET})
+		${MAKE_FLAGS} -f ${MAKEFILE} ${INSTALL_TARGET})
 
 .include <../../mk/bsd.pkg.mk>

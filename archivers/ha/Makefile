@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:08 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:18 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/08/10 22:31:19 fenner Exp 
 #
 
@@ -12,7 +12,7 @@ MAINTAINER=     packages@netbsd.org
 
 NO_WRKSUBDIR=   yes
 MAKEFILE=       makefile.nix
-MAKE_FLAGS=     CC=cc -f
+MAKE_FLAGS=     CC=cc
 ALL_TARGET=     ha
 USE_GMAKE=      yes
 
