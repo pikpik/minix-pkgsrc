@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/05/05 22:45:37 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/27 19:01:22 jlam Exp $
 #
 
 DISTNAME=	ltris-1.0.1
@@ -9,7 +9,7 @@ MAINTAINER=	xs@nitric.net
 HOMEPAGE=	http://lgames.sourceforge.net/
 COMMENT=	SDL tetris clone
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-highscore-path=${LOCALBASE}/share/games/
