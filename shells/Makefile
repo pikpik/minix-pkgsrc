@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/01/11 23:06:54 grant Exp $
+# $NetBSD: Makefile,v 1.30 2004/03/28 14:27:57 uebayasi Exp $
 #
 
 COMMENT=	Shells
@@ -13,6 +13,7 @@ SUBDIR+=	nologinmsg
 SUBDIR+=	osh
 SUBDIR+=	pdksh
 SUBDIR+=	perlsh
+SUBDIR+=	posh
 SUBDIR+=	rc
 SUBDIR+=	scsh
 SUBDIR+=	standalone-tcsh
