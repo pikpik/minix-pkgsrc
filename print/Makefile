@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2003/02/24 15:32:10 kei Exp $
+# $NetBSD: Makefile,v 1.98 2003/03/12 00:50:51 mjl Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -91,6 +91,7 @@ SUBDIR+=	tex-hugelatex
 SUBDIR+=	tex-jadetex
 SUBDIR+=	tex-musixtex
 SUBDIR+=	tex-ocrb
+SUBDIR+=	tex-textpos
 SUBDIR+=	texfamily
 SUBDIR+=	texfamily-share
 SUBDIR+=	transfig
