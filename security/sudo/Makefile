@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2004/08/22 19:32:52 jlam Exp $
+# $NetBSD: Makefile,v 1.66 2004/08/23 21:15:17 xtraeme Exp $
 #
 
 DISTNAME=		sudo-1.6.8
@@ -17,7 +17,6 @@ COMMENT=		Allow others to run commands as root
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		yes
-USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 
