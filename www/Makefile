@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2001/03/24 17:49:52 zuntum Exp $
+# $NetBSD: Makefile,v 1.122 2001/03/25 05:23:25 mjl Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -66,6 +66,7 @@ SUBDIR+=	ns-remote
 SUBDIR+=	opera
 SUBDIR+=	p5-Apache-ASP
 SUBDIR+=	p5-Apache-ePerl
+SUBDIR+=	p5-Apache-Session
 SUBDIR+=	p5-CGI
 SUBDIR+=	p5-CGI-Application
 SUBDIR+=	p5-CGI_Lite
