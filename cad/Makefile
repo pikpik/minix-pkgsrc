@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.1 1998/04/09 13:02:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:16 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
 #    SUBDIR += acs
 #    SUBDIR += chipmunk
+    SUBDIR += fastcap
+    SUBDIR += fasthenry
 #    SUBDIR += felt
 #    SUBDIR += irsim
 #    SUBDIR += kaskade
