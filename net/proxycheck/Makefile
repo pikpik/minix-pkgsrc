@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/17 11:50:40 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/09 09:12:09 wiz Exp $
 #
 
-DISTNAME=	proxycheck-0.42
+DISTNAME=	proxycheck-0.45
 CATEGORIES=	net
 MASTER_SITES=	http://www.corpit.ru/mjt/proxycheck/
 
