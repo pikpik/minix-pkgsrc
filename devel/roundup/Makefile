@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:33:36 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/09/14 17:30:18 recht Exp $
 
 DISTNAME=	roundup-0.6.1
 CATEGORIES=	devel
@@ -10,6 +10,7 @@ COMMENT=	Issue tracking system with command-line, web and email clients
 
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
+USE_BUILDLINK2=	yes
 
 PYTHON_VERSIONS_ACCEPTED=	23 23pth 22 22pth 21 21pth
 
