@@ -1,0 +1,12 @@
+$NetBSD$
+--- agent/mibgroup/Makefile.in-	Fri Jan 21 05:58:34 2000
++++ agent/mibgroup/Makefile.in	Fri Jan 21 05:58:15 2000
+@@ -7,7 +7,7 @@
+ # object files in the sub directory.
+ 
+ .c.o:
+-	$(CC) -c $(CPPFLAGS) $(CFLAGS) -o $@ $<
++	$(LIBTOOL) $(CC) -c $(CPPFLAGS) $(CFLAGS) $<
+ 
+ OBJS = @module_list_o@
+ SRCS = @module_list_c@
