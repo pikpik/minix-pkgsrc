@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1999/06/04 06:00:10 frueauf Exp $
+# $NetBSD: Makefile,v 1.20 1999/08/20 01:44:48 fredb Exp $
 # FreeBSD Id: Makefile,v 1.14 1998/02/14 16:46:50 andreas Exp
 #
 
@@ -17,7 +17,9 @@ DEPENDS=		ispell-3.1.20:../../textproc/ispell \
 
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS= 	--with-extra-lib=${X11BASE}/lib \
+CONFIGURE_ARGS= 	--with-extra-lib="${X11BASE}/lib" \
 			--with-extra-inc="${X11BASE}/include ${X11BASE}/include/X11"
+
+LDFLAGS+=		-L${X11BASE}/lib -Wl,-R${X11BASE}/lib
 
 .include "../../mk/bsd.pkg.mk"
