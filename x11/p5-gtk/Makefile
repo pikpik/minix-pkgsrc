@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2003/06/23 07:14:47 mrg Exp $
+# $NetBSD: Makefile,v 1.24 2003/07/13 13:54:27 wiz Exp $
 #
 
 .include "Makefile.common"
 
 PKGNAME=		p5-gtk-${GTKPERL_VERSION}
-PKGREVISION=		2
 SVR4_PKGNAME=		p5gtk
 WRKSRC=			${WRKDIR}/${DISTNAME}/Gtk
 
@@ -16,4 +15,5 @@ PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Gtk/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../x11/gtk/buildlink2.mk"
+
 .include "../../mk/bsd.pkg.mk"
