@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.201 2001/04/25 17:44:36 wiz Exp $
+# $NetBSD: Makefile,v 1.202 2001/04/27 11:48:22 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -90,6 +90,7 @@ SUBDIR+=	libgtop
 SUBDIR+=	libhfs
 SUBDIR+=	libnet
 SUBDIR+=	libole2
+SUBDIR+=	libportlib
 SUBDIR+=	libproplist
 SUBDIR+=	libscsi
 SUBDIR+=	libsigc++
