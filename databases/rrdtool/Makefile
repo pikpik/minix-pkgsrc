@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2001/05/06 01:09:34 fredb Exp $
+# $NetBSD: Makefile,v 1.11 2001/06/11 06:34:24 jlam Exp $
 #
 
-DISTNAME=	rrdtool-1.0.28
+DISTNAME=	rrdtool-1.0.33
 CATEGORIES=	databases graphics net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub/
 
