@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- bin/nsupdate/Makefile.in-	Sun Feb  4 19:08:31 2001
++++ bin/nsupdate/Makefile.in	Sun Feb  4 19:08:38 2001
+@@ -66,4 +66,4 @@
+ 
+ install:: nsupdate installdirs
+ 	${LIBTOOL} ${INSTALL_PROGRAM} nsupdate ${DESTDIR}${bindir}
+-	${INSTALL_PROGRAM} nsupdate.8 ${DESTDIR}${mandir}/man8
++	${INSTALL_DATA} nsupdate.8 ${DESTDIR}${mandir}/man8
