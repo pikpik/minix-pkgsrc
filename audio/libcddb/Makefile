@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/17 15:25:37 recht Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:33 jlam Exp $
 #
 
 DISTNAME=	libcddb-0.9.4
@@ -12,7 +12,7 @@ COMMENT=	Library to access data on a CDDB server
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-PKGCONFIG_OVERRIDE+=	${WRKSRC}/libcddb.pc.in
+PKGCONFIG_OVERRIDE+=	libcddb.pc.in
 GNU_CONFIGURE=		yes
 
 .include "../../misc/libcdio/buildlink3.mk"

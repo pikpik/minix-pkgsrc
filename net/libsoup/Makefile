@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/02/11 03:06:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/14 17:21:46 jlam Exp $
 #
 
 DISTNAME=		libsoup-1.99.26
@@ -14,7 +14,7 @@ USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    ${WRKSRC}/soup-2.0.pc.in
+PKGCONFIG_OVERRIDE+=    soup-2.0.pc.in
 
 CONFIGURE_ARGS+=	--disable-gtk-doc
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/02/13 14:04:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/02/14 17:21:50 jlam Exp $
 #
 
 DISTNAME=	libgnomeprint-2.4.2
@@ -22,7 +22,7 @@ GNU_CONFIGURE=		YES
 
 BUILDLINK_DEPENDS.freetype2+=	freetype2>=2.1.4
 
-PKGCONFIG_OVERRIDE=	${WRKSRC}/libgnomeprint/libgnomeprint-2.2.pc.in
+PKGCONFIG_OVERRIDE=	libgnomeprint/libgnomeprint-2.2.pc.in
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html

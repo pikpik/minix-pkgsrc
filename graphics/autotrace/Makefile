@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/26 12:43:21 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/02/14 17:21:40 jlam Exp $
 #
 
 DISTNAME=	autotrace-0.31.1
@@ -15,7 +15,7 @@ USE_X11=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
-PKGCONFIG_OVERRIDE=	${WRKSRC}/autotrace.pc.in
+PKGCONFIG_OVERRIDE=	autotrace.pc.in
 
 .include "../../graphics/ImageMagick/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

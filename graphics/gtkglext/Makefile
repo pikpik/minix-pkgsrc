@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/02/10 20:58:04 garbled Exp $
+# $NetBSD: Makefile,v 1.17 2004/02/14 17:21:42 jlam Exp $
 #
 
 DISTNAME=		gtkglext-0.7.1
@@ -18,7 +18,7 @@ USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 
-PKGCONFIG_OVERRIDE=	${WRKSRC}/gtkglext.pc.in
+PKGCONFIG_OVERRIDE=	gtkglext.pc.in
 LIBS+=			-lm
 
 CONFIGURE_ARGS+=        --with-html-dir=${PREFIX}/share/doc/html

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/14 01:16:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:35 jlam Exp $
 #
 
 DISTNAME=		fribidi-0.10.4
@@ -14,7 +14,7 @@ USE_BUILDLINK2=		yes
 USE_LIBTOOL=            yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE=	${WRKSRC}/fribidi.pc.in
+PKGCONFIG_OVERRIDE=	fribidi.pc.in
 
 TEST_TARGET=		check
 

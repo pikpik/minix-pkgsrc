@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/02/11 07:11:28 xtraeme Exp $
+# $NetBSD: Makefile,v 1.29 2004/02/14 17:21:55 jlam Exp $
 #
 
 DISTNAME=		gnome-panel-2.4.2
@@ -21,7 +21,7 @@ USE_PERL5=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
-PKGCONFIG_OVERRIDE=	${WRKSRC}/libpanel-applet/libpanelapplet-2.0.pc.in
+PKGCONFIG_OVERRIDE=	libpanel-applet/libpanelapplet-2.0.pc.in
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
