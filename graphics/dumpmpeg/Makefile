@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/19 04:59:01 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/06/26 09:16:10 grant Exp $
 #
 
 DISTNAME=	dumpmpeg-0.6
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dumpmpeg/}
 
 MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/dumpmpeg
-COMMENT=	Splits mpeg stream into single images
+COMMENT=	Splits an MPEG stream into single images
 
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
