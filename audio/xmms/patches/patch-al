@@ -1,13 +1,13 @@
 $NetBSD$
 
---- xmms/Makefile.in.orig	Tue Nov 28 01:55:58 2000
+--- xmms/Makefile.in.orig	Mon Jun 18 21:55:30 2001
 +++ xmms/Makefile.in
-@@ -179,7 +179,7 @@
- DEFS = @DEFS@ -I. -I$(srcdir) -I..
+@@ -184,7 +184,7 @@
+ DEFS = @DEFS@ -I. -I$(srcdir) -I.. -I.
  CPPFLAGS = @CPPFLAGS@
  LDFLAGS = @LDFLAGS@
 -LIBS = @LIBS@
 +LIBS = @LIBS@ @LIBMIKMOD_LIBS@ @XML_LIBS@
  xmms_OBJECTS =  bmp.o skin.o util.o output.o fft.o input.o effect.o \
- general.o visualization.o dga.o fullscreen.o pluginenum.o playlist.o \
+ general.o visualization.o fullscreen.o pluginenum.o playlist.o \
  controlsocket.o dock.o widget.o sbutton.o pbutton.o tbutton.o textbox.o \

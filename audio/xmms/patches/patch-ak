@@ -1,9 +1,9 @@
 $NetBSD$
 
---- wmxmms/Makefile.in.orig	Mon Jan 31 19:44:47 2000
-+++ wmxmms/Makefile.in	Thu Mar 16 23:45:58 2000
-@@ -148,7 +148,7 @@
- DEFS = @DEFS@ -I. -I$(srcdir) -I..
+--- wmxmms/Makefile.in.orig	Mon Jun 18 21:56:09 2001
++++ wmxmms/Makefile.in
+@@ -180,7 +180,7 @@
+ DEFS = @DEFS@ -I. -I$(srcdir) -I.. -I../xmms
  CPPFLAGS = @CPPFLAGS@
  LDFLAGS = @LDFLAGS@
 -LIBS = @LIBS@
