@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2004/01/24 15:23:47 grant Exp $
+# $NetBSD: Makefile,v 1.52 2004/02/13 08:07:52 jlam Exp $
 #
 
 DISTNAME=		lynx2.8.5dev.7
@@ -12,7 +12,7 @@ MASTER_SITES=		http://lynx.isc.org/current/ \
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		fredb@NetBSD.org
-HOMEPAGE=		http://lynx.browser.org/
+HOMEPAGE=		http://lynx.isc.org/
 COMMENT=		Alphanumeric display oriented World-Wide Web Client
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
