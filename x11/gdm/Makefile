@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2001/03/20 02:42:12 mjl Exp $
+# $NetBSD: Makefile,v 1.19 2001/04/02 14:45:13 rh Exp $
 
 DISTNAME=	gdm-2.2.0
 CATEGORIES=	x11 gnome
@@ -109,7 +109,7 @@ post-install:
 	  ${INSTALL_DATA} $$SOURCE $$TARGET; \
 	fi
 .endfor
-	${MKDIR} ${PREFIX}/share/doc/gdm
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gdm
 	${INSTALL_DATA} ${DISTDIR}/Daemon.README ${PREFIX}/share/doc/gdm
 	${INSTALL_DATA} ${DISTDIR}/Daemon.png ${PREFIX}/share/pixmaps
 	${LN} -fs Gnome ${GDMCFGDIR}/Sessions/Default
