@@ -1,6 +1,7 @@
 $NetBSD$
+
 --- Makefile.orig	Sun Jan 21 23:26:06 2001
-+++ Makefile	Sat Nov 23 20:18:40 2002
++++ Makefile
 @@ -1,6 +1,8 @@
  # Short makefile for gensolpkg
  
@@ -10,7 +11,7 @@ $NetBSD$
  CFLAGS= -O
  BIN= gensolpkg
  OBJS= gensolpkg.o
-@@ -13,7 +15,7 @@
+@@ -13,7 +15,7 @@ ${BIN} : ${OBJS}
  	${CC} ${CFLAGS} ${LDFLAGS} ${OBJS} ${LIBS} -o ${BIN}
  
  gensolpkg.c: gensolpkg.c.in
