@@ -10,6 +10,7 @@ COMMENT=	Latest terminal emulator for the X Window System
 
 ONLY_FOR_PLATFORM=	SunOS-*-*	# in NetBSD X11 distribution
 
+USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
 
 INSTALL_FILE=	${WRKDIR}/INSTALL
