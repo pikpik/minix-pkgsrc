@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/08/01 23:21:00 kristerw Exp $
+# $NetBSD: Makefile,v 1.4 2001/11/29 01:12:32 hubertf Exp $
 
 DISTNAME=		suse_vmware-${SUSE_VERSION}
 PKGREVISION=		1
@@ -12,6 +12,8 @@ COMMENT=		Linux compatibility package to support running VMware
 
 DEPENDS+=		suse_base>=${SUSE_VERSION}:../suse_base
 DEPENDS+= 		suse_x11>=${SUSE_VERSION}:../suse_x11
+
+ONLY_FOR_PLATFORM=      NetBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
