@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 1999/08/22 22:02:34 tron Exp $
+# $NetBSD: Makefile,v 1.15 1999/08/29 12:49:00 rh Exp $
 
-DISTNAME=	mc-4.5.37
-PKGNAME=	gmc-4.5.37
+DISTNAME=	mc-4.5.38
+PKGNAME=	gmc-4.5.38
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/mc/}
 
