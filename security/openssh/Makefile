@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2000/07/01 01:16:39 itojun Exp $
+# $NetBSD: Makefile,v 1.15 2000/07/02 22:07:55 itojun Exp $
 #
 
 DISTNAME=		openssh-2.1.1p2
@@ -7,6 +7,7 @@ MASTER_SITES=		http://the.wiretapped.net/security/cryptography/ssh/OpenSSH/files
 			http://www.firedrake.org/openssh/files/ \
 			ftp://thermo.stat.ncsu.edu/pub/openssh/files/ \
 			ftp://sunsite.cnlab-switch.ch/mirror/OpenSSH/files/ \
+			ftp://gd.tuwien.ac.at/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/old/
 
 MAINTAINER=		packages@netbsd.org
