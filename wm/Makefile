@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2005/02/03 09:59:59 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2005/03/06 21:19:31 jmmv Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -17,6 +17,7 @@ SUBDIR+=	bbrun
 SUBDIR+=	blackbox
 SUBDIR+=	bsetroot
 SUBDIR+=	ctwm
+SUBDIR+=	e16menuedit2
 SUBDIR+=	econf
 SUBDIR+=	enlightenment
 SUBDIR+=	ethemes
