@@ -119,7 +119,7 @@ $NetBSD$
 +             AC_DEFINE(HAVE_GC)
 +	     LIBGC="-L$withval/lib -lgc"
 +             IGC="-I$withval/include -I./gc"
-+])
++)
 +
  dnl ------------------------------------------------------------------
  
