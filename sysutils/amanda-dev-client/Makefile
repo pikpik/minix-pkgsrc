@@ -7,7 +7,6 @@ SVR4_PKGNAME=		amacl
 
 COMMENT=		Client part of Amanda, a network backup system
 
-DEPENDS+=		gtar-1.12:../../archivers/gtar
 DEPENDS+=		amanda-common-${VERS}:../../sysutils/amanda-dev-common
 
 GNU_CONFIGURE=		yes
@@ -15,6 +14,10 @@ GNU_CONFIGURE=		yes
 .include "../../mk/bsd.prefs.mk"
 .include "../../sysutils/amanda-dev-common/Makefile.common"
 .include "../../devel/readline/buildlink.mk"
+
+.if ${OPSYS} != "Linux"
+DEPENDS+=		gtar-1.12:../../archivers/gtar
+.endif
 
 CONFIGURE_ARGS+=	--without-server --without-restore
 

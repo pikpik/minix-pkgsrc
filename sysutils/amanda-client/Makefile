@@ -12,7 +12,6 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.amanda.org/
 COMMENT=		Client part of Amanda, a network backup system
 
-DEPENDS+=		{gtar,gtar-base}>=1.12:../../archivers/gtar-base
 DEPENDS+=		amanda-common-2.4.2p2:../../sysutils/amanda-common
 
 GNU_CONFIGURE=		yes
@@ -20,6 +19,10 @@ GNU_CONFIGURE=		yes
 .include "../../mk/bsd.prefs.mk"
 .include "../../sysutils/amanda-common/Makefile.common"
 .include "../../devel/readline/buildlink.mk"
+
+.if ${OPSYS} != "Linux"
+DEPENDS+=		{gtar,gtar-base}>=1.12:../../archivers/gtar-base
+.endif
 
 CONFIGURE_ARGS+=	--without-server --without-restore
 
