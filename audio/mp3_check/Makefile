@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:21:36 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:22:52 grant Exp $
 #
 
 DISTNAME=	mp3_check-1.98
@@ -9,7 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://mp3check.sourceforge.net/
 COMMENT=	mp3 file checker
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mp3_check ${PREFIX}/bin
