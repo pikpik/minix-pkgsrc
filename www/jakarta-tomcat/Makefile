@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.8 2000/05/31 23:44:58 jwise Exp $
+# $NetBSD: Makefile,v 1.9 2000/08/28 14:28:56 wiz Exp $
 
 DISTNAME=	jakarta-tomcat.src
 PKGNAME=	jakarta-tomcat-3.1
 CATEGORIES=	www
 MASTER_SITES=	http://jakarta.apache.org/builds/tomcat/release/v3.1/src/
 DISTFILES=	jakarta-tomcat.tar.gz jakarta-tools.tar.gz jakarta-ant.tar.gz
-DIST_SUBDIR=	jakarta-3.1
 
 MAINTAINER=	jwise@netbsd.org
 HOMEPAGE=	http://jakarta.apache.org/
+
+DIST_SUBDIR=	jakarta-3.1
 
 USE_JAVA=	yes
 
