@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2001/03/14 16:41:26 skrll Exp $
+# $NetBSD: Makefile,v 1.126 2001/03/16 00:37:10 manu Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -12,7 +12,7 @@ SUBDIR+=	MesaLib
 SUBDIR+=	Ngraph
 SUBDIR+=	alevt
 SUBDIR+=	autotrace
-SUBDIR+= blender
+SUBDIR+=	blender
 SUBDIR+=	camediaplay
 SUBDIR+=	cdlabelgen
 SUBDIR+=	clanlib
@@ -54,8 +54,8 @@ SUBDIR+=	gqview
 SUBDIR+=	grap
 SUBDIR+=	hermes
 SUBDIR+=	hp2xx
-SUBDIR+=	imlib
 SUBDIR+=	iGMT
+SUBDIR+=	imlib
 SUBDIR+=	jpeg
 SUBDIR+=	kdegraphics
 SUBDIR+=	kdegraphics2
@@ -99,6 +99,7 @@ SUBDIR+=	prag
 SUBDIR+=	pstoedit
 SUBDIR+=	py-gd
 SUBDIR+=	py-imaging
+SUBDIR+=	py-imagingtk
 SUBDIR+=	qvplay
 SUBDIR+=	rayshade
 SUBDIR+=	ruby-gl
