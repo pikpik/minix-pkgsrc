@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/03/31 01:43:06 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/02 02:22:15 heinz Exp $
 #
 
-DISTNAME=	Digest-1.08
+DISTNAME=	Digest-1.10
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	# empty
 SVR4_PKGNAME=	p5dig
