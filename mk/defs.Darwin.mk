@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.43 2003/01/15 20:55:39 jlam Exp $
+# $NetBSD: defs.Darwin.mk,v 1.44 2003/01/21 22:48:58 grant Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -82,6 +82,17 @@ USERADD?=		${FALSE}			# XXX - Fix me!
 ZOULARISBASE?=		${LOCALBASE}
 
 PKG_CREATE_USERGROUP?=	NO				# XXX - Until then
+
+# imake installs manpages in weird places
+# these values from /usr/X11R6/lib/X11/config/Imake.tmpl
+IMAKE_MAN_SOURCE_PATH= man/man
+IMAKE_MAN_SUFFIX=      1
+IMAKE_LIBMAN_SUFFIX=   3
+IMAKE_FILEMAN_SUFFIX=  5
+IMAKE_MAN_DIR=         ${IMAKE_MAN_SOURCE_PATH}1
+IMAKE_LIBMAN_DIR=      ${IMAKE_MAN_SOURCE_PATH}3
+IMAKE_FILEMAN_DIR=     ${IMAKE_MAN_SOURCE_PATH}5
+IMAKE_MANNEWSUFFIX=    ${IMAKE_MAN_SUFFIX}
 
 _DO_SHLIB_CHECKS=	yes	# on installation, fixup PLIST for shared libs
 _IMAKE_MAKE=		${MAKE}	# program which gets invoked by imake
