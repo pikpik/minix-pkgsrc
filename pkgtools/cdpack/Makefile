@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 18:16:41 dmcmahill Exp $
 #
 
 DISTNAME=	cdpack-1.0
@@ -8,7 +8,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	dmcmahill@netbsd.org
 HOMEPAGE=	http://www.netbsd.org
-COMMENT=	utility to create and multi-cd binary package collections
+COMMENT=	utility to create multi-cd binary package collections
 
 # for mkisofs
 DEPENDS+=	cdrecord-*:../../sysutils/cdrecord
