@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2002/10/13 04:30:44 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/26 20:24:23 agc Exp $
 #
 
 COMMENT=	Applications dealing with parallelism in computing
 
+SUBDIR+=	GridSim
 SUBDIR+=	clusterit
 SUBDIR+=	dqs
 SUBDIR+=	glunix
