@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/21 21:27:29 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/03 17:00:05 minskim Exp $
 #
 
 DISTNAME=	sylpheed-0.9.99-gtk2-20041024
@@ -29,6 +29,8 @@ CONFIGURE_ARGS+=	--enable-gpgme
 CONFIGURE_ARGS+=	--enable-compface
 
 PKG_SYSCONFSUBDIR=	sylpheed
+
+LDFLAGS.SunOS+=		-lsocket -lnsl -lX11
 
 .include "../../mk/bsd.prefs.mk"
 
