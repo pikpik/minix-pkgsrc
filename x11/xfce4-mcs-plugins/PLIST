@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/26 10:44:37 martti Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/12/03 05:34:09 martti Exp $
 lib/xfce4/mcs-plugins/keyboard_plugin.a
 lib/xfce4/mcs-plugins/keyboard_plugin.la
 lib/xfce4/mcs-plugins/keyboard_plugin.so
@@ -9,6 +9,7 @@ lib/xfce4/mcs-plugins/ui_plugin.a
 lib/xfce4/mcs-plugins/ui_plugin.la
 lib/xfce4/mcs-plugins/ui_plugin.so
 ${PKGLOCALEDIR}/locale/ar/LC_MESSAGES/xfce-mcs-plugins.mo
+${PKGLOCALEDIR}/locale/az/LC_MESSAGES/xfce-mcs-plugins.mo
 ${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/xfce-mcs-plugins.mo
 ${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/xfce-mcs-plugins.mo
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/xfce-mcs-plugins.mo

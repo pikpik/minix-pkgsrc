@@ -1,9 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/26 10:42:59 martti Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/12/03 05:34:09 martti Exp $
 bin/xfce-mcs-manager
 bin/xfce-setting-show
 include/xfce4/xfce-mcs-manager/manager-plugin.h
 lib/pkgconfig/xfce-mcs-manager.pc
 ${PKGLOCALEDIR}/locale/ar/LC_MESSAGES/xfce-mcs-manager.mo
+${PKGLOCALEDIR}/locale/az/LC_MESSAGES/xfce-mcs-manager.mo
 ${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/xfce-mcs-manager.mo
 ${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/xfce-mcs-manager.mo
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/xfce-mcs-manager.mo
