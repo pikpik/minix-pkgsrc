@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/30 16:00:59 markd Exp $
+# $NetBSD: Makefile,v 1.8 2003/08/05 13:35:42 drochner Exp $
 #
 
 DISTNAME=	kmess-1.1
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_GMAKE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_X11BASE=		yes
 
 .include "../../audio/arts/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
