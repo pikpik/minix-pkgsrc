@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.3 2003/05/02 11:54:42 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2003/05/25 09:31:29 epg Exp $
 
 .if !defined(SUBVERSION_BUILDLINK2_MK)
 SUBVERSION_BUILDLINK2_MK=		#defined
 
 BUILDLINK_PACKAGES+=			subversion-base
-BUILDLINK_DEPENDS.subversion-base?=	subversion-base>=${SVNVER}
+BUILDLINK_DEPENDS.subversion-base?=	subversion-base>=${SVNVER}nb1
 BUILDLINK_PKGSRCDIR.subversion-base?=	../../devel/subversion-base
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.subversion-base=subversion-base
