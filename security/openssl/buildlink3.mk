@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2004/02/05 07:06:15 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2004/02/05 07:17:14 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OPENSSL_BUILDLINK3_MK:=	${OPENSSL_BUILDLINK3_MK}+
@@ -122,7 +122,7 @@ BUILDLINK_USE_BUILTIN.openssl!=		\
 .    endfor
 .  endif
 MAKEFLAGS+=	\
-	BUILDLINK_USE_BUILTIN.openssl="${BUILDLINK_USE_BUILTIN.openssl}"
+	BUILDLINK_USE_BUILTIN.openssl=${BUILDLINK_USE_BUILTIN.openssl}
 .endif
 
 .if !defined(_NEED_NEWER_OPENSSL)
@@ -137,7 +137,7 @@ _NEED_NEWER_OPENSSL!=	\
 	fi
 .    endif
 .  endfor
-MAKEFLAGS+=	_NEED_NEWER_OPENSSL="${_NEED_NEWER_OPENSSL}"
+MAKEFLAGS+=	_NEED_NEWER_OPENSSL=${_NEED_NEWER_OPENSSL}
 .endif
 
 .if !empty(BUILDLINK_USE_BUILTIN.openssl:M[nN][oO]) && \

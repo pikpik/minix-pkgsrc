@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2004/02/05 07:06:15 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2004/02/05 07:17:14 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ZLIB_BUILDLINK3_MK:=	${ZLIB_BUILDLINK3_MK}+
@@ -87,7 +87,7 @@ BUILDLINK_USE_BUILTIN.zlib!=	\
 .      endif
 .    endfor
 .  endif
-MAKEFLAGS+=	BUILDLINK_USE_BUILTIN.zlib="${BUILDLINK_USE_BUILTIN.zlib}"
+MAKEFLAGS+=	BUILDLINK_USE_BUILTIN.zlib=${BUILDLINK_USE_BUILTIN.zlib}
 .endif
 
 .if !empty(BUILDLINK_USE_BUILTIN.zlib:M[nN][oO])

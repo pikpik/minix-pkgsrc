@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2004/01/17 12:19:51 jlam Exp $
+# $NetBSD: Makefile,v 1.112 2004/01/20 12:22:21 agc Exp $
 
 DISTNAME=		samba-3.0.1
 PKGREVISION=		1
@@ -109,12 +109,12 @@ BUILD_DEFS+=		SAMBA_USE_LDAP_COMPAT
 .if !defined(MKTEMP)
 MKTEMP!=	${TYPE} mktemp 2>&1 | \
 		${AWK} '/not found/ { print "mktemp"; exit } { print $$3 }'
-MAKEFLAGS+=	MKTEMP="${MKTEMP}"
+MAKEFLAGS+=	MKTEMP=${MKTEMP:Q}
 .endif
 .if !defined(PWD_MKDB)
 PWD_MKDB!=	${TYPE} pwd_mkdb 2>&1 | \
 		${AWK} '/not found/ { print "pwd_mkdb"; exit } { print $$3 }'
-MAKEFLAGS+=	PWD_MKDB="${PWD_MKDB}"
+MAKEFLAGS+=	PWD_MKDB=${PWD_MKDB:Q}
 .endif
 FILES_SUBST+=	MKTEMP=${MKTEMP:Q}
 FILES_SUBST+=	PWD_MKDB=${PWD_MKDB:Q}

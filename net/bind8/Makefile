@@ -1,5 +1,5 @@
 #
-# $NetBSD: Makefile,v 1.24 2004/01/20 12:22:18 agc Exp $
+# $NetBSD: Makefile,v 1.25 2004/01/28 12:18:47 grant Exp $
 #
 # FreeBSD Id: Makefile,v 1.12 1999/06/28 21:25:07 billf Exp
 #
@@ -37,7 +37,7 @@ MAKEFLAGS+=	INSTALL=${INSTALL}
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/ndc.d root other 700
 .endif
 
-MAKEFLAGS+=	PREFIX=${PREFIX}
+MAKEFLAGS+=	PREFIX=${PREFIX:Q}
 
 post-extract:
 	cd ${WRKDIR}/doc/man &&						\
