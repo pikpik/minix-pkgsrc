@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.46 2002/08/27 10:29:41 dillo Exp $
+# $NetBSD: Makefile,v 1.47 2002/10/28 12:42:36 agc Exp $
 #
 
 COMMENT=	Archivers
 
+SUBDIR+=	9e
 SUBDIR+=	arc
 SUBDIR+=	bicom
 SUBDIR+=	bunzip
