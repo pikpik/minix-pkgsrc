@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/02/25 04:17:53 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2001/03/16 18:16:39 wiz Exp $
 
 DISTNAME=	Canna35b2
 PKGNAME=	Canna-server-3.5b2
@@ -16,9 +16,8 @@ COMMENT=	Kana-Kanji conversion system (server)
 
 DEPENDS+=	Canna-lib-3.5b2:../../japanese/canna-lib
 
-MASTERDIR=	${.CURDIR}/../../japanese/canna-lib
-FILESDIR=	${MASTERDIR}/files
-PATCHDIR=	${MASTERDIR}/patches
+FILESDIR=	${.CURDIR}/../../japanese/canna-lib/files
+PATCHDIR=	${.CURDIR}/../../japanese/canna-lib/patches
 
 BUILD_DEFS+=	USE_INET6
 
