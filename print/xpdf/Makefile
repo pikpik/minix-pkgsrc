@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2002/08/25 21:50:34 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2002/09/19 01:45:42 jlam Exp $
 # 
 
-DISTNAME=	xpdf-1.01
+DISTNAME=	xpdf-2.00
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
 		${MASTER_SITE_SUNSITE:=apps/graphics/viewers/X/}
@@ -36,6 +36,7 @@ CONF_FILES=		${EGDIR}/xpdfrc ${PKG_SYSCONFDIR}/xpdfrc
 .include "../../fonts/t1lib/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
 .include "../../graphics/xpm/buildlink2.mk"
+.include "../../mk/motif.buildlink2.mk"
 
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
