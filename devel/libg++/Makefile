@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.4 1998/04/17 09:37:23 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/22 11:05:03 agc Exp $
 #
+
+BROKEN=		"Designed for NetBSD 1.4 - 1.3(.x) comes with this in-tree"
 
 GXXVERSION=	2.8.1.1a	# used by internal Makefile
 DISTNAME=	libg++-${GXXVERSION}
