@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/02/14 17:21:54 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2004/03/07 22:30:33 minskim Exp $
 
 DISTNAME=		neon-0.24.4
 CATEGORIES=		www
@@ -10,7 +10,7 @@ COMMENT=		HTTP and WebDAV client library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	neon.pc.in
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/03/08 19:52:51 minskim Exp $
+# $NetBSD: Makefile,v 1.14 2004/03/21 05:15:52 minskim Exp $
 #
 
 DISTNAME=		zebedee-2.3.1
@@ -15,7 +15,7 @@ DEPENDS+=		tcl-[0-9]*:../../lang/tcl
 
 USE_PERL5=		build
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 
 MAKE_ENV+=		PERL5=${PERL5}
 MAKE_FLAGS=		OS=${LOWER_OPSYS}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/10/11 13:40:19 grant Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/28 11:35:00 grant Exp $
 #
 
 DISTNAME=		rats-2.1
@@ -12,7 +12,7 @@ COMMENT=		Rough Auditing Tool for Security
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--datadir=${LOCALBASE}/share/rats
 ALL_TARGET=		rats

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/01/20 12:19:16 agc Exp $
+# $NetBSD: Makefile,v 1.26 2004/02/17 06:36:38 grant Exp $
 
 DISTNAME=	f2c-20001205
 PKGREVISION=	5
@@ -31,7 +31,7 @@ PLIST_SUBST+=	F2CMAJOR=${F2CMAJOR} F2CMINOR=${F2CMINOR}
 PLIST_SRC=	${WRKDIR}/PLIST
 
 WRKSRC=		${WRKDIR}/f2c
-USE_BUILDLINK3=	# defined
+USE_BUILDLINK3=	yes
 
 post-extract:
 	@${RM} ${WRKSRC}/index.html

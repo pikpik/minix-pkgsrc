@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2003/07/17 21:37:54 grant Exp $
+# $NetBSD: Makefile,v 1.30 2004/03/10 02:25:09 snj Exp $
 
 DISTNAME=	baduki-0.2.9
 PKGREVISION=	2
@@ -11,7 +11,7 @@ COMMENT=	Go playing program based on xamigo
 
 BUILD_USES_MSGFMT=	# defined
 
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	# defined
 USE_X11=		# defined
 

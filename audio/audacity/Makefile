@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/22 07:14:59 grant Exp $
+# $NetBSD: Makefile,v 1.23 2004/03/07 22:34:20 snj Exp $
 
 DISTNAME=	audacity-src-1.0.0-2
 PKGNAME=	audacity-1.0.0.2
@@ -14,7 +14,7 @@ COMMENT=	Audio editor
 BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 WRKSRC=		${WRKDIR}/audacity-src-1.0.0
-USE_BUILDLINK3=		# defined
+USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		# defined
 
