@@ -2,7 +2,7 @@
 #
 
 DISTNAME=		gnumeric-1.0.12
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		math gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnumeric/1.0/}
 
@@ -25,7 +25,6 @@ USE_PERL5=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-python
 CONFIGURE_ARGS+=	--without-psiconv
-CONFIGURE_ARGS+=	--without-guile
 CONFIGURE_ARGS+=	--localstatedir=${SCROLLKEEPER_DATADIR}
 LIBS+=      		-lunicode
 
@@ -38,7 +37,7 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 .include "../../devel/libglade/buildlink2.mk"
 .include "../../devel/libole2/buildlink2.mk"
 .include "../../devel/oaf/buildlink2.mk"
-#.include "../../lang/guile/buildlink2.mk"	# XXX needs guile fix first
+.include "../../lang/guile/buildlink2.mk"
 .include "../../print/gnome-print/buildlink2.mk"
 .include "../../textproc/libunicode/buildlink2.mk"
 .include "../../textproc/libxml/buildlink2.mk"
