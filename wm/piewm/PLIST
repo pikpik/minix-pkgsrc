@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/piewm
+lib/X11/twm/system.twmrc
+man/cat1/piewm.0
