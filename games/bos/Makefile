@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/17 12:52:36 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/08/17 13:16:53 seb Exp $
 #
 
 DISTNAME=		bos_1_1
 PKGNAME=		bos-1.1
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		http://bos.seul.org/files/
 

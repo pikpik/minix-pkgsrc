@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2004/11/26 21:14:41 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/07 14:27:54 wiz Exp $
 #
 
 DISTNAME=		crimson-0.4.7
 PKGNAME=		${DISTNAME:S/crimson/crimsonfields/}
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		http://crimson.seul.org/files/
 EXTRACT_SUFX=		.tar.bz2

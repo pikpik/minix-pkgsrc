@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/10/03 00:14:40 tv Exp $
+# $NetBSD: Makefile,v 1.10 2004/11/22 14:12:29 adam Exp $
 
 DISTNAME=	dosbox-0.63
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dosbox/}
 

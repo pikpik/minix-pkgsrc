@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2005/01/05 12:20:37 adam Exp $
+# $NetBSD: Makefile,v 1.19 2005/02/14 08:17:36 uebayasi Exp $
 
 DISTNAME=	SDL_mixer-1.2.6
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_mixer/release/
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/17 02:33:21 xtraeme Exp $
 #
 
 BROWSER=	mozilla
+PKGREVISION=	1
 
 CONFIGURE_ARGS+=	--disable-gtk2
 CONFIGURE_ARGS+=	--enable-gtk1

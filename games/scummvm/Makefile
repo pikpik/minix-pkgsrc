@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2004/10/06 09:29:35 tron Exp $
+# $NetBSD: Makefile,v 1.30 2005/01/04 13:41:53 adam Exp $
 
 DISTNAME=	scummvm-0.7.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
 EXTRACT_SUFX=	.tar.bz2
