@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.51 1999/10/23 09:14:53 tron Exp $
+# $NetBSD: Makefile,v 1.52 1999/11/06 16:52:11 wennmach Exp $
 # FreeBSD Id: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp
 #
 
     SUBDIR += Mosaic
     SUBDIR += analog
     SUBDIR += ap-auth-cookie
+    SUBDIR += ap-dtcl
     SUBDIR += ap-fastcgi
     SUBDIR += ap-ssl
     SUBDIR += ap-perl
