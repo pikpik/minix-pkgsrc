@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/g2.h
+include/g2_PS.h
+include/g2_X11.h
+lib/libg2.a
