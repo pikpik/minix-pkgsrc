@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:12:56 tv Exp $
+# $NetBSD: Makefile,v 1.20 2005/01/13 15:06:25 adam Exp $
 
 DISTNAME=	gsl-1.6
 CATEGORIES=	math devel
@@ -15,3 +15,9 @@ INFO_FILES=		gsl-ref.info
 TEST_TARGET=		check
 
 .include "../../mk/bsd.pkg.mk"
+
+# At least gcc-3.3.5 failed to compile gsl-1.6/statistics/lag1.c
+# with -mcpu=v9 on a solaris/sparc system.
+.if (${OPSYS} == "SunOS") && (${MACHINE_ARCH} == "sparc") && (!empty(CC_VERSION:M*gcc*))
+CFLAGS:=        ${CFLAGS:C/-mcpu=[^ \t]*//g}
+.endif
