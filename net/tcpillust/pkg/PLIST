@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/tcpillust
 lib/X11/tcpillust/tcpillust.tcl
 lib/X11/tcpillust/back.xbm
