@@ -1,3 +1,4 @@
+@comment $NetBSD$
 ${TARGET_ARCH}/include/_G_config.h
 ${TARGET_ARCH}/include/__math.h
 ${TARGET_ARCH}/include/a.out.h
