@@ -14,6 +14,8 @@ COMMENT=	Message digest wrapper utility
 
 VERSION=	20010807
 
+USE_BUILDLINK2=	# defined
+
 EXTRACT_ONLY=   # empty
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	# defined
