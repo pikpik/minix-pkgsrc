@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/11/03 22:43:38 kim Exp $
+# $NetBSD: Makefile,v 1.32 2004/01/10 02:15:29 kleink Exp $
 #
 
 DISTNAME=		jwhois-3.2.2
@@ -17,6 +17,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=/var/db
 CONFIGURE_ARGS+=	--with-cache
+
+LIBS.SunOS+=		-lnsl -lsocket
 
 INFO_FILES=		jwhois.info
 
