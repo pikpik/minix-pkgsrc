@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/02/14 18:26:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/07 01:14:47 xtraeme Exp $
 #
 
-DISTNAME=		libntlm-0.3.2
+DISTNAME=		libntlm-0.3.3
 CATEGORIES=		security
 MASTER_SITES=		http://josefsson.org/libntlm/releases/
 

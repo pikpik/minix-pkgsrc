@@ -1,8 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/12/03 19:18:16 xtraeme Exp $
 include/ntlm.h
 lib/libntlm.a
 lib/libntlm.la
 lib/libntlm.so
 lib/libntlm.so.0
-lib/libntlm.so.0.1
+lib/libntlm.so.0.2
 lib/pkgconfig/libntlm.pc
