@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.252 2004/09/05 18:40:08 wiz Exp $
+# $NetBSD: Makefile,v 1.253 2004/10/18 03:44:55 ben Exp $
 #
 
 COMMENT=	Audio tools
@@ -187,6 +187,7 @@ SUBDIR+=	rhythmbox
 SUBDIR+=	rio
 SUBDIR+=	rio500
 SUBDIR+=	rioutil
+SUBDIR+=	rip
 SUBDIR+=	rosegarden
 SUBDIR+=	rplay
 SUBDIR+=	rsynth
