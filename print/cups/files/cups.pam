@@ -1,0 +1,6 @@
+# $NetBSD$
+#
+# PAM configuration for Common UNIX Printing System
+#
+auth	required	@PREFIX@/lib/security/pam_unix.so nullok shadow
+account	required	@PREFIX@/lib/security/pam_unix.so
