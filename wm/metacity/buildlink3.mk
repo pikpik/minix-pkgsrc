@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/02/11 05:41:22 xtraeme Exp $
 #
 # This Makefile fragment is included by packages that use metacity.
 #
@@ -19,7 +19,9 @@ BUILDLINK_PKGSRCDIR.metacity?=		../../wm/metacity
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
+.include "../../devel/pango/buildlink3.mk"
 .include "../../net/ORBit2/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
 
 .endif # METACITY_BUILDLINK3_MK
