@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/05/02 11:56:06 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/05/22 02:53:23 markd Exp $
 
 DISTNAME=	kdenetwork-3.1.2
 CATEGORIES=	net
@@ -12,6 +12,8 @@ PTHREAD_OPTS+=		require
 FOO_MAIN_FILES= \
 	ksirc/ksirc_main.cpp \
 	kxmlrpc/kxmlrpcd_main.cpp
+
+REPLACE_PERL=		ksirc/dsirc
 
 .include "../../mk/bsd.prefs.mk"
 
