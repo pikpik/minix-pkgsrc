@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.181 2004/06/29 18:02:54 shannonjr Exp $
+# $NetBSD: Makefile,v 1.182 2004/06/30 17:41:54 salo Exp $
 #
 
 COMMENT=	Programming languages
@@ -73,7 +73,8 @@ SUBDIR+=	jikes
 SUBDIR+=	jini
 SUBDIR+=	joos
 SUBDIR+=	kaffe
-SUBDIR+=	kaffe-nox11
+SUBDIR+=	kaffe-esound
+SUBDIR+=	kaffe-x11
 SUBDIR+=	kali
 SUBDIR+=	ksi
 SUBDIR+=	libperl

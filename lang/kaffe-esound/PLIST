@@ -1,0 +1,6 @@
+@comment $NetBSD$
+java/kaffe/jre/lib/${MACHINE_ARCH}/libtritonusesd-${PKGVERSION}.so
+java/kaffe/jre/lib/${MACHINE_ARCH}/libtritonusesd.a
+java/kaffe/jre/lib/${MACHINE_ARCH}/libtritonusesd.la
+java/kaffe/jre/lib/${MACHINE_ARCH}/libtritonusesd.so
+@comment in kaffe: @dirrm java/kaffe/jre/lib/${MACHINE_ARCH}

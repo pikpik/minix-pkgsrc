@@ -1,0 +1,6 @@
+@comment $NetBSD$
+java/kaffe/jre/lib/${MACHINE_ARCH}/libawt-${PKGVERSION}.so
+java/kaffe/jre/lib/${MACHINE_ARCH}/libawt.a
+java/kaffe/jre/lib/${MACHINE_ARCH}/libawt.la
+java/kaffe/jre/lib/${MACHINE_ARCH}/libawt.so
+@comment in kaffe: @dirrm java/kaffe/jre/lib/${MACHINE_ARCH}
