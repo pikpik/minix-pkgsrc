@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/26 15:28:40 dmcmahill Exp $
 #
 
-DISTNAME=	verilog-20000120
+DISTNAME=	verilog-20000212
 CATEGORIES=	cad
 MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/snapshots/
 
