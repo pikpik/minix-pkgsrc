@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 16:56:44 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/07/21 23:06:10 schmonz Exp $
 #
 
 DISTNAME=		dot-forward-0.71
@@ -10,7 +10,7 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/dot-forward.html
 COMMENT=		Reads sendmail's .forward files under qmail
 
-DEPENDS+=		{qmail>=1.03nb1,netqmail>=1.05}:../../mail/qmail
+DEPENDS+=		{qmail>=1.03nb7,netqmail>=1.05}:../../mail/qmail
 
 ALL_TARGET=		it
 INSTALL_TARGET=		setup check
