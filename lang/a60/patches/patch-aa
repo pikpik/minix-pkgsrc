@@ -2,6 +2,15 @@ $NetBSD$
 
 --- Makefile.in.orig	Mon Jul 12 08:15:42 1999
 +++ Makefile.in
+@@ -34,7 +34,7 @@
+ exec_prefix =	@exec_prefix@
+ 
+ BINDIR = $(exec_prefix)/bin
+-LIBDIR = $(prefix)/lib
++LIBDIR = $(prefix)/share/a60
+ MANDIR = $(prefix)/man/man1
+ MANSUFF = 1
+ 
 @@ -66,13 +66,15 @@
  DEFS = -DHAVE_CONFIG_H
  ##
