@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pymet${PYVERSSUFFIX}
+${PYSITELIB}/pymetar.py
+${PYSITELIB}/pymetar.pyc
