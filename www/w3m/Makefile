@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.24 2001/05/01 00:31:24 kei Exp $
 #
 
 DISTNAME=	w3m-0.2.1
@@ -106,7 +106,7 @@ post-extract:
 	@(cd ${WRKSRC}/doc-jp; ${RM} -fr CVS)
 
 post-patch:
-	${FIND} ${WRKSRC} -type f -name '*.orig'|xargs ${RM}
+	${FIND} ${WRKSRC} -type f -name '*.orig' | ${XARGS} ${RM}
 
 # do not look at previous configuration
 do-configure:

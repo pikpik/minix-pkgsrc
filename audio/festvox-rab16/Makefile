@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1999/12/28 04:20:01 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/16 13:30:39 wiz Exp $
 
 DISTNAME=	festvox_rablpc16k
 PKGNAME=	festvox-rab16-1.4.0
@@ -22,7 +22,7 @@ FHOME=		${PREFIX}/share/festival
 
 post-extract:
 	@ ${CHMOD} -R a+r ${WRKSRC}
-	@ ${FIND} ${WRKSRC} -type d -print0 | xargs -0 ${CHMOD} 755
+	@ ${FIND} ${WRKSRC} -type d -print0 | ${XARGS} -0 ${CHMOD} 755
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}

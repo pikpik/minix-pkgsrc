@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2001/02/16 15:22:35 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2001/03/04 09:06:14 tron Exp $
 #
 
 DISTNAME=       xart19980415
@@ -21,7 +21,7 @@ USE_XPM=	YES
 WRKSRC=		${WRKDIR}/19980415
 
 post-extract:
-	${FIND} ${WRKSRC} -type d -print | xargs ${CHMOD} 755
-	${FIND} ${WRKSRC} -type f -print | xargs ${CHMOD} 644
+	${FIND} ${WRKSRC} -type d -print | ${XARGS} ${CHMOD} 755
+	${FIND} ${WRKSRC} -type f -print | ${XARGS} ${CHMOD} 644
 
 .include "../../mk/bsd.pkg.mk"

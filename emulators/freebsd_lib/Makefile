@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/08/18 22:46:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2001/02/17 18:38:17 wiz Exp $
 #
 
 DISTNAME=		freebsd_lib-2.2.7
@@ -16,7 +16,7 @@ NO_WRKSUBDIR=		yes
 do-install:
 	@${INSTALL_DATA_DIR} ${PREFIX}/emul/freebsd
 	@(cd ${WRKSRC} && ${FIND} usr -type d -print) | \
-		(cd ${PREFIX}/emul/freebsd && xargs ${INSTALL_DATA_DIR})
+		(cd ${PREFIX}/emul/freebsd && ${XARGS} ${INSTALL_DATA_DIR})
 	@cd ${WRKSRC} && for file in `${FIND} usr -name '*.*' -print`; do \
 		${INSTALL_DATA} $$file ${PREFIX}/emul/freebsd/$$file; \
 	done
