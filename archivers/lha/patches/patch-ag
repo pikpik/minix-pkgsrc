@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- src/Makefile.orig	Fri Dec 15 21:13:15 2000
++++ src/Makefile
+@@ -49,4 +49,4 @@
+ 	rm -f core *.o lha.tar lha.tar.Z *~ \#* *.orig
+ 
+ install:
+-	$(INSTALL) $(INSTALLBIN) lha $(BINDIR)/lha
++	$(BSD_INSTALL_BIN) lha $(BINDIR)/lha
