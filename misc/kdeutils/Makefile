@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/07/04 05:11:14 mycroft Exp $
+# $NetBSD: Makefile,v 1.15 1998/07/14 20:30:58 tron Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/11/28 00:04:18 se Exp
 #
 
@@ -14,6 +14,8 @@ DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	qt-1.33:../../x11/qt
 DEPENDS+=	kdelibs-1.0:../../x11/kdelibs
 DEPENDS+=	kdebase-1.0:../../x11/kdebase
+
+CONFLICTS=	kdeutils-2.1b kdeutils-3.1b kdeutils-4.1b
 
 USE_X11=	yes
 HAS_CONFIGURE=	yes
