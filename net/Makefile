@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.324 2002/07/24 11:59:42 agc Exp $
+# $NetBSD: Makefile,v 1.325 2002/07/25 17:12:03 jonb Exp $
 #
 
 COMMENT=	Networking tools
@@ -254,6 +254,7 @@ SUBDIR+=	vtun
 SUBDIR+=	wakeup
 SUBDIR+=	wget
 SUBDIR+=	whatmask
+SUBDIR+=	wistumbler
 SUBDIR+=	wminet
 SUBDIR+=	wmnet
 SUBDIR+=	wmpload
