@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2000/11/27 01:05:44 wiz Exp $
+# $NetBSD: Makefile,v 1.186 2000/11/28 16:35:30 agc Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -165,6 +165,7 @@
     SUBDIR += xscript
     SUBDIR += xsnow
     SUBDIR += xteddy
+    SUBDIR += xteddy2
     SUBDIR += xtermset
     SUBDIR += xtimer
     SUBDIR += xview
