@@ -1,5 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/08 23:20:56 jtb Exp $
 bin/fpr
 bin/fsplit
+man/cat1/fpr.cat1
 man/man1/fpr.1
+man/cat1/fsplit.cat1
 man/man1/fsplit.1
