@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/29 20:21:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/01 08:20:08 jmmv Exp $
 #
 
 DISTNAME=	xmlcatmgr-0.2
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlcatmgr/}
 
 MAINTAINER=	jmmv@netbsd.org
-HOMEPAGE=	http://www.sourceforge.net/projects/xmlcatmgr/
+HOMEPAGE=	http://xmlcatmgr.sourceforge.net/
 COMMENT=	XML catalog manager
 
 USE_BUILDLINK2=	YES
