@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:33:46 grant Exp $
 #
 
 DISTNAME=	rdtool-${RUBY_RD_VERSION}
 PKGNAME=	${RUBY_PKGNAMEPREFIX}rd-mode-${RUBY_RD_VERSION}
-PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${DISTNAME}/utils
 CATEGORIES=	devel
 MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
