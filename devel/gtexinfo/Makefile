@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/05/14 11:09:47 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/11 12:07:57 agc Exp $
 #
 
 DISTNAME=		texinfo-3.12
@@ -12,7 +12,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-catgets
 
 pre-build:
-	${MV} ${WRKSRC}/info/filesys.h ${WRKSRC}/info/filesys.h.orig
+	${MV} -f ${WRKSRC}/info/filesys.h ${WRKSRC}/info/filesys.h.orig
 	${SED} -e 's|@PREFIX@|${PREFIX}|g'		\
 		-e 's|@X11BASE@|${X11BASE}|g'		\
 		-e 's|@LOCALBASE@|${LOCALBASE}|g'	\
