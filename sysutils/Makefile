@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.214 2004/01/21 05:03:49 grant Exp $
+# $NetBSD: Makefile,v 1.215 2004/02/07 10:38:32 wiz Exp $
 
 COMMENT=	System utilities
 
@@ -19,6 +19,7 @@ SUBDIR+=	aperture
 SUBDIR+=	apotheke
 SUBDIR+=	asapm
 SUBDIR+=	atitvout
+SUBDIR+=	autoswc
 SUBDIR+=	bbsload
 SUBDIR+=	bchunk
 SUBDIR+=	bkpupsd
