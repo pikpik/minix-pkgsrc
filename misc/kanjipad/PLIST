@@ -2,4 +2,6 @@
 bin/kanjipad
 bin/kpengine
 share/kanjipad/jdata.dat
+share/doc/kanjipad/README
 @dirrm share/kanjipad
+@dirrm share/doc/kanjipad
