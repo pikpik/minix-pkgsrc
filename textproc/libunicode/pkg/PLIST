@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/unicode-config
+include/unicode.h
+lib/libunicode.a
+lib/libunicode.la
+lib/libunicode.so.0.0
