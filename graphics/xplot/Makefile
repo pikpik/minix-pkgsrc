@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.15 2003/07/21 16:51:54 martti Exp $
-#
+# $NetBSD: Makefile,v 1.16 2003/09/27 02:27:47 dan Exp $
 
 DISTNAME=	xplot-0.90.7.1
+PKGREVISION=	1
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://www.xplot.org/xplot/
 HOMEPAGE=	http://www.xplot.org/
 
-MAINTAINER=	thorpej@NetBSD.org
+MAINTAINER=	dan@NetBSD.org
 COMMENT=	Plotting program, most often used in conjunction with tcptrace
 
 USE_X11BASE=	yes
