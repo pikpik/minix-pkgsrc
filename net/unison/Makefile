@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/03/27 03:20:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2001/09/28 23:54:36 hubertf Exp $
 #
 
 DISTNAME=	src
@@ -12,7 +12,7 @@ COMMENT=	file-synchronization tool
 
 BUILD_DEPENDS=	ocaml>=3.00:../../lang/ocaml
 
-DIST_SUBDIR=	unison
+DIST_SUBDIR=	${PKGNAME}
 
 # docs: unison-manual.pdf/html/ps/dvi
 WRKSRC=		${WRKDIR}/${PKGNAME}
