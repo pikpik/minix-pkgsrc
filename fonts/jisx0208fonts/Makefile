@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2002/09/24 14:21:43 taca Exp $
+# $NetBSD: Makefile,v 1.25 2003/03/16 01:46:05 kei Exp $
 #
 
-DISTNAME=	jisx0208fonts-20301316
+DISTNAME=	jisx0208fonts-200301316
 CATEGORIES=	fonts x11 japanese
 MASTER_SITES=   # empty
 DISTFILES=	# empty
