@@ -1,3 +1,4 @@
+@comment $NetBSD$
 share/a2ps/README
 share/a2ps/ps/base.ps
 share/a2ps/ps/bw.pro
