@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:04 tv Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/27 16:48:56 wiz Exp $
 #
 
-DISTNAME=	jamjar-0.6
-PKGREVISION=	1
+DISTNAME=	jamjar-0.7.1
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.acunia.com/wonka/
 
