@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2001/05/07 00:59:07 wiz Exp $
+# $NetBSD: Makefile,v 1.77 2001/05/21 09:47:33 jun Exp $
 #
 
 COMMENT=	Security tools
@@ -10,6 +10,7 @@ SUBDIR+=	aide
 SUBDIR+=	amavis
 SUBDIR+=	apg
 SUBDIR+=	audit-packages
+SUBDIR+=	cfs
 SUBDIR+=	crack
 SUBDIR+=	cyrus-sasl
 SUBDIR+=	ddos-scan
