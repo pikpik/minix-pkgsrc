@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/01/10 22:10:18 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2003/03/28 02:28:16 salo Exp $
 #
 
 PKGNAME=		ap-php-${PHP_BASE_VERS}
@@ -21,4 +21,6 @@ do-install:
 		${PREFIX}/lib/httpd/mod_php4.so
 
 .include "../../www/apache/buildlink2.mk"
+
+.include "../../mk/gcc.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
