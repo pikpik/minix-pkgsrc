@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2002/11/30 23:21:33 salo Exp $
+# $NetBSD: Makefile,v 1.34 2002/12/24 06:09:51 wiz Exp $
 #
 
 DISTNAME=		bonobo-1.0.18
@@ -22,6 +22,7 @@ USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		LOCALBASE="${LOCALBASE}"
 CONFIGURE_ENV+=		X11BASE="${X11BASE}"
+CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool ${WRKSRC}/libefs/libtool
