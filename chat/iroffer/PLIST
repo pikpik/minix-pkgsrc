@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/iroffer
+share/doc/iroffer/COPYING
+share/doc/iroffer/README
+share/doc/iroffer/WHATSNEW
+share/examples/iroffer/sample.config
+share/examples/iroffer/iroffer.cron
+@dirrm share/examples/iroffer
+@dirrm share/doc/iroffer
