@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.53 2004/01/24 15:06:57 grant Exp $
+# $NetBSD: Makefile,v 1.54 2004/03/23 04:41:01 jlam Exp $
 
 DISTNAME=	cdrtools-2.00.3
 PKGNAME=	cdrecord-2.00.3
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/
 
-MAINTAINER=	lukem@NetBSD.org
+MAINTAINER=	packages@NetBSD.org
 HOMEPAGE=	http://www.fokus.gmd.de/research/cc/glone/employees/joerg.schilling/private/cdrecord.html
 COMMENT=	Software for creating ISO9660 images and writing CDs/CD-RWs
 
