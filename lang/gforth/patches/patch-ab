@@ -1,8 +1,8 @@
 $NetBSD$
 
---- arch/m68k/machine.h.orig	Sat Dec 19 19:22:27 1998
-+++ arch/m68k/machine.h	Sun Apr  9 23:53:32 2000
-@@ -42,7 +42,16 @@
+--- arch/m68k/machine.h.orig	Sat Sep 23 20:22:05 2000
++++ arch/m68k/machine.h
+@@ -44,7 +44,16 @@
   */
  #if defined(apollo)
  #  define FLUSH_ICACHE(addr,size)    cache_$clear()
