@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/xgnuboy
+share/doc/gnuboy/README
+share/doc/gnuboy/sample.rc
+share/doc/gnuboy/CREDITS
+@dirrm share/doc/gnuboy
