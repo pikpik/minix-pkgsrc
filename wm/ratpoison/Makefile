@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2001/06/30 10:13:21 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2001/08/29 22:41:25 jlam Exp $
 #
 
-DISTNAME=	ratpoison-0.1.1
+DISTNAME=	ratpoison-1.0.0
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ratpoison/}
 
