@@ -1,6 +1,6 @@
 $NetBSD$
 
---- conf/configure.in.nse.orig	Fri Sep 21 17:55:33 2001
+--- conf/configure.in.nse.orig	Mon Jan 12 18:57:50 2004
 +++ conf/configure.in.nse
 @@ -11,7 +11,24 @@ dnl
  AC_MSG_CHECKING([for struct ether_header])
@@ -62,7 +62,7 @@ $NetBSD$
  #include <netinet/tcp.h>
  ], [
  int main()
-@@ -120,7 +157,6 @@ dnl
+@@ -140,7 +177,6 @@ dnl
  dnl  Check for pcap library 
  dnl
  AC_CHECK_LIB(pcap,main,[V_LIB="$V_LIB -lpcap" pcap=yes])

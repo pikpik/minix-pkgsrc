@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.2 2003/09/01 18:21:12 seb Exp $
+$NetBSD$
 
---- Makefile.in.orig	Thu Jun  6 22:37:57 2002
+--- Makefile.in.orig	Mon Jan 12 18:59:20 2004
 +++ Makefile.in
-@@ -54,7 +54,7 @@
+@@ -54,7 +54,7 @@ PERL	= @PERL@
  
  CCOPT	= @V_CCOPT@
  STATIC	= @V_STATIC@
@@ -10,8 +10,8 @@ $NetBSD: patch-aa,v 1.2 2003/09/01 18:21:12 seb Exp $
 +LDFLAGS	= @LDFLAGS@
  LDOUT	= -o $(BLANK)
  
- DEFINE	= -DTCP_DELAY_BIND_ALL -DNO_TK @V_DEFINE@ @V_DEFINES@ @DEFS@ -DNS_DIFFUSION -DSMAC_NO_SYNC -DSTL_NAMESPACE=@STL_NAMESPACE@ -DUSE_SINGLE_ADDRESS_SPACE
-@@ -452,10 +452,10 @@
+ DEFINE	= -DTCP_DELAY_BIND_ALL -DNO_TK @V_DEFINE@ @V_DEFINES@ @DEFS@ -DNS_DIFFUSION -DSMAC_NO_SYNC -DCPP_NAMESPACE=@CPP_NAMESPACE@ -DUSE_SINGLE_ADDRESS_SPACE -Drng_test
+@@ -471,10 +471,10 @@ common/ptypes2tcl.o: common/ptypes2tcl.c
  install: force install-ns install-man install-recursive
  
  install-ns: force
