@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 1999/03/01 01:49:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.7 1999/10/07 17:42:01 tron Exp $
 #
 
-V=		2.2
+V=		2.2.2
 DISTNAME=       fvwm-${V}
 PKGNAME=	xpmroot-${V}
 CATEGORIES=	x11
@@ -12,6 +12,7 @@ MASTER_SITES=   ftp://ftp.hpc.uh.edu/pub/fvwm/version-2/ \
                 ftp://ftp.TokyoNet.AD.JP/pub/X/fvwm/fvwm-users-jp/kits/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.fvwm.org/xpmroot.html
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 
