@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/24 12:58:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/26 19:54:27 wiz Exp $
 #
 
 DISTNAME=	teTeX-1.0.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty

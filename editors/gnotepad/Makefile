@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2004/01/03 18:49:39 reed Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/22 08:30:30 grant Exp $
 
 DISTNAME=	gnotepad+-1.3.3
 PKGNAME=	${DISTNAME:S/+//}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnotepad/}
 

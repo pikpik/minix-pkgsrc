@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2003/02/21 22:47:08 rh Exp $
 #
 # This Makefile fragment is included by packages that use cyrus-imapd.
 #
@@ -10,6 +10,7 @@ CYRUS_IMAPD_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			cyrus-imapd
 BUILDLINK_DEPENDS.cyrus-imapd?=		cyrus-imapd>=2.0.17
+BUILDLINK_RECOMMENDED.cyrus-imapd?=		cyrus-imapd>=2.0.17nb3
 BUILDLINK_PKGSRCDIR.cyrus-imapd?=		../../mail/cyrus-imapd
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.cyrus-imapd=cyrus-imapd

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 07:56:59 jmc Exp $
+# $NetBSD: Makefile,v 1.6 2003/11/22 23:55:15 jlam Exp $
 #
 
 DISTNAME=       sdk50-win
 PKGNAME=	palmos-includes-5.0
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.palmos.com/dev/tools/sdk/
 DISTFILES=	sdk50-win.zip

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/01/23 21:50:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/24 15:30:32 grant Exp $
 #
 
 DISTNAME=	gnustep-back-0.9.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2004/02/13 22:15:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/02/14 17:21:55 jlam Exp $
 #
 
 DISTNAME=		gnome-desktop-2.4.1.1
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-desktop/2.4/}
 EXTRACT_SUFX=		.tar.bz2

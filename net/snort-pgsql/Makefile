@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2003/07/26 11:13:50 salo Exp $
+# $NetBSD: Makefile,v 1.12 2003/12/31 14:11:42 salo Exp $
 #
 
 .include "../../net/snort/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-pgsql-/}
+PKGREVISION=	1
 
 COMMENT=	Network Intrusion Detection System (with PostgreSQL support)
 

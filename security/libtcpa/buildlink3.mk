@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/03/05 19:25:39 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2004/03/18 09:12:14 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBTCPA_BUILDLINK3_MK:=	${LIBTCPA_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libtcpa
 
 .if !empty(LIBTCPA_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libtcpa+=	libtcpa>=1.1b
+BUILDLINK_RECOMMENDED.libtcpa?=	libtcpa>=1.1bnb1
 BUILDLINK_PKGSRCDIR.libtcpa?=	../../security/libtcpa
 BUILDLINK_DEPMETHOD.libtcpa?=	build
 .endif	# LIBTCPA_BUILDLINK3_MK

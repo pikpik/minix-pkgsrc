@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/01/22 07:15:01 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/14 17:21:33 jlam Exp $
 #
 
 DISTNAME=	streamtuner-local-0.2.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	audio www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=streamtuner/}
 

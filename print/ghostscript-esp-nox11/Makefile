@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2002/09/13 22:27:12 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/09/18 22:31:58 jlam Exp $
 
 PKGNAME=	ghostscript-esp-nox11-${GS_VERS}
+PKGREVISION=	1
 COMMENT=	ESP/CUPS Postscript interpreter without X11 drivers
 
 CONFIGURE_ARGS+=	--without-x

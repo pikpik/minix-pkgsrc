@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2004/02/09 18:47:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2004/02/11 06:22:08 xtraeme Exp $
 #
 
 .include "Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-/2-/}
-PKGREVISION=		6
+PKGREVISION=		7
 
 CONFIGURE_ARGS+=	--disable-pixbuf-loader
 

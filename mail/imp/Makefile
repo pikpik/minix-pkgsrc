@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2003/08/16 21:11:20 bouyer Exp $
+# $NetBSD: Makefile,v 1.22 2003/09/14 21:27:44 bouyer Exp $
 
 DISTNAME=	imp-3.2.2
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	ftp://ftp.horde.org/pub/imp/tarballs/
 

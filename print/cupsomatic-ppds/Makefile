@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/07/21 17:16:19 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:24:28 agc Exp $
 
 DISTNAME=	all-com-ppds
 PKGNAME=	cupsomatic-ppds-20010515
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 
 # Not sure why ${MASTER_SITE_LOCAL:=${PKGNAME}} doesn't work, but the

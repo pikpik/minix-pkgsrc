@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/12/03 22:14:46 kristerw Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:26:50 agc Exp $
 
 DISTNAME=	libxml-enno-1.05a
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5lxe
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/T/TJ/TJMATHER/}

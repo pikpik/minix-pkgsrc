@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/24 09:55:55 recht Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/25 14:31:02 recht Exp $
 #
 
 DISTNAME=	SpreadModule-1.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/SpreadModule/spreadmodule/}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.python.org/other/spread/
 EXTRACT_SUFX=	.tgz

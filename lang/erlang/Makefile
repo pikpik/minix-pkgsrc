@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2003/11/12 03:39:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/24 13:51:14 grant Exp $
 
 DISTNAME=		otp_src_R9C-0
 PKGNAME=		erlang-9.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		http://www.erlang.org/download/
 

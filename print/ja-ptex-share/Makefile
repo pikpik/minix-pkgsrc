@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/12/24 13:02:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:24:29 agc Exp $
 
 DISTNAME=	ptex-texmf-2.1
 PKGNAME=	ja-ptex-share-2.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print japanese
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/tetex/ \
 		ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/jvf/ \

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 16:30:43 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:07:43 agc Exp $
 #
 
 DISTNAME=	oggasm_1.4.0
 PKGNAME=	${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://oggasm.sourceforge.net/
 

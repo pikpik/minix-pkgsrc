@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/10 19:20:45 jmmv Exp $
 #
 
 DISTNAME=	gtodo-0.14
+PKGREVISION=	1
 CATEGORIES=	time gnome
 MASTER_SITES=	http://download.qballcow.nl/programs/gtodo/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/02/09 18:47:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/20 13:15:10 jmmv Exp $
 
 DISTNAME=	acme-2.4.2
 PKGNAME=	gnome-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/acme/2.4/}
 EXTRACT_SUFX=	.tar.bz2

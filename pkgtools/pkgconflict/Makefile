@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:17 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:23:57 agc Exp $
 #
 
-DISTNAME=	pkgconflict-0.3nb1
+DISTNAME=	pkgconflict-0.3
+PKGREVISION=	2
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty

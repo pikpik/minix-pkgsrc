@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/01/12 07:59:28 martti Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/23 04:41:01 jlam Exp $
 
 .include "../../net/samba2/Makefile.common"
 
 PKGNAME=		pam-smbpass-${SAMBA_DIST_VERS}
+PKGREVISION=		1
 CATEGORIES=		security
 
 MAINTAINER=		jlam@NetBSD.org

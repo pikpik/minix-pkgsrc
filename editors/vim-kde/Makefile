@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2004/01/23 21:50:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/03/08 19:40:38 jmmv Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	editors kde
 MASTER_SITES=	ftp://ftp.kde.org/stable/apps/KDE3.x/utils/ \
 		http://freenux.org/kvim/

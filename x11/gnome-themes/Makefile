@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2004/02/14 17:21:55 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2004/03/08 19:40:43 jmmv Exp $
 #
 
 DISTNAME=		gnome-themes-2.4.1
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-themes/2.4/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,10 +1,11 @@
-# $NetBSD: buildlink2.mk,v 1.3 2003/05/06 17:42:31 jmmv Exp $
+# $NetBSD: buildlink2.mk,v 1.4 2003/12/30 23:14:18 cjep Exp $
 
 .if !defined(KTHKRB4_BUILDLINK2_MK)
 KTHKRB4_BUILDLINK2_MK=   # defined
 
 BUILDLINK_PACKAGES+=		kth-krb4
 BUILDLINK_DEPENDS.kth-krb4?=	kth-krb4>=1.1.1
+BUILDLINK_RECOMMENDED.kth-krb4?=	kth-krb4>=1.2.1nb4
 BUILDLINK_PKGSRCDIR.kth-krb4?=	../../security/kth-krb4
 
 EVAL_PREFIX+=				BUILDLINK_PREFIX.kth-krb4=kth-krb4

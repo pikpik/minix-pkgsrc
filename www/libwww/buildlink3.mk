@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:41 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/03/18 09:12:16 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBWWW_BUILDLINK3_MK:=	${LIBWWW_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libwww
 
 .if !empty(LIBWWW_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libwww+=	libwww>=5.3.2nb2
+BUILDLINK_RECOMMENDED.libwww?=	libwww>=5.4.0nb2
 BUILDLINK_PKGSRCDIR.libwww?=	../../www/libwww
 .endif	# LIBWWW_BUILDLINK3_MK
 

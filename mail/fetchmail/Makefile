@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.137 2004/01/06 07:06:30 jlam Exp $
+# $NetBSD: Makefile,v 1.138 2004/02/14 00:54:45 grant Exp $
 
 DISTNAME=	fetchmail-6.2.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://catb.org/~esr/fetchmail/ \
 		http://sunsite.unc.edu/pub/Linux/system/mail/pop/

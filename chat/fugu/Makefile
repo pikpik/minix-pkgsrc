@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:34:30 martti Exp $
+# $NetBSD: Makefile,v 1.10 2003/12/30 17:21:55 cjep Exp $
 #
 
 DISTNAME=	fugu-1.0
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://fugu.gale.org/dist/
 

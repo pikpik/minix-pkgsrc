@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2003/11/26 16:03:07 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2004/03/08 19:52:51 minskim Exp $
 #
 
 DISTNAME=		mod_aolserver-1.1
 PKGNAME=		ap-aolserver-1.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/03/21 05:15:52 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2004/03/23 04:41:01 jlam Exp $
 #
 
 DISTNAME=		zebedee-2.3.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security
 MASTER_SITES=		http://www.winton.org.uk/zebedee/ \
 			${MASTER_SITE_SOURCEFORGE:=zebedee/}
