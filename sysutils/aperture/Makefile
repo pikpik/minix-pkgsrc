@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2003/07/17 22:53:27 grant Exp $
+# $NetBSD: Makefile,v 1.28 2003/08/10 21:47:32 wiz Exp $
 
 DISTNAME=	apNetBSD
 PKGNAME=	aperture-2.0
-PKGREVISION=	4
+PKGREVISION=	5
 WRKSRC=		${WRKDIR}
 CATEGORIES=	sysutils x11
 EXTRACT_SUFX=	.shar
