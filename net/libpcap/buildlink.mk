@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/08/17 13:19:01 wiz Exp $
+# $NetBSD: buildlink.mk,v 1.2 2001/09/06 13:22:19 zuntum Exp $
 #
 # This Makefile fragment is included by packages that use libpcap. 
 #
@@ -17,7 +17,7 @@ LIBPCAP_BUILDLINK_MK=	# defined
 
 .include "../../mk/bsd.buildlink.mk"
 
-BUILDLINK_DEPENDS.libpcap?=	libpcap>=0.6.1
+BUILDLINK_DEPENDS.libpcap?=	libpcap>=0.7.1
 
 .if exists(/usr/include/pcap.h)
 _NEED_LIBPCAP=		NO
