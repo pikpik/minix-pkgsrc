@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2001/09/24 20:04:02 tron Exp $
+# $NetBSD: Makefile,v 1.11 2001/09/26 18:48:53 tron Exp $
 
 DISTNAME=	xchat-1.8.3
 PKGNAME=	${DISTNAME}nb1
@@ -23,6 +23,8 @@ MAKE_ENV+=	PKGLOCALEDIR="${PKGLOCALEDIR}"
 BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
+
+CONFIGURE_ARGS+=	--enable-panel
 
 # IPv6 support
 .if defined(USE_INET6) && ${USE_INET6} == YES
