@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/10/03 00:15:00 tv Exp $
-# FreeBSD Id: Makefile,v 1.15 1997/09/01 12:28:30 tg Exp
-#
+# $NetBSD: Makefile,v 1.25 2004/12/03 15:15:00 wiz Exp $
 
 DISTNAME=		elk-3.0
 PKGNAME=		elk-3.0.3

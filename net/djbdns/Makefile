@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/03/23 00:57:20 schmonz Exp $
-# FreeBSD Id: ports/net/djbdns/Makefile,v 1.4 2000/09/28 18:18:41 nbm Exp
-#
+# $NetBSD: Makefile,v 1.42 2005/03/23 01:48:06 schmonz Exp $
 
 DISTNAME=		djbdns-1.05
 PKGREVISION=		6

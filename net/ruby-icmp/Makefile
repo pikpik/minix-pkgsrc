@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/28 04:13:56 taca Exp $
-# FreeBSD: ports/net/ruby-icmp/Makefile,v 1.2 2000/11/02 19:06:06 knu Exp
+# $NetBSD: Makefile,v 1.6 2005/03/06 17:19:07 taca Exp $
 
 DISTNAME=	icmp-0.2.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/07/17 21:31:59 grant Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/09/15 07:22:06 tg Exp
-#
+# $NetBSD: Makefile,v 1.28 2004/01/20 12:13:28 agc Exp $
 
 DISTNAME=		noweb-2.9a
 PKGREVISION=		1

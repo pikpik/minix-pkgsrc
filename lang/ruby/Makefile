@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/03/06 13:05:38 taca Exp $
-# FreeBSD: ports/lang/ruby/Makefile,v 1.40 2001/01/18 19:53:38 knu Exp
+# $NetBSD: Makefile,v 1.33 2005/03/06 16:46:05 taca Exp $
 
 DISTNAME=	ruby-${RUBY_VERSION}
 PKGREVISION=	2

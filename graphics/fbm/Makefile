@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:40:27 grant Exp $
-# FreeBSD Id: ports/graphics/fbm/Makefile,v 1.5 2000/04/29 23:54:02 steve Exp
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:18:15 agc Exp $
 
 DISTNAME=	fbm-1.2
 CATEGORIES=	graphics converters

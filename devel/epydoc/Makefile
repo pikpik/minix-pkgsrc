@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/11/26 23:00:01 darcy Exp $
-# FreeBSD Id: ports/devel/epydoc/Makefile,v 1.1 2003/12/29 07:07:37 ijliao Exp
+# $NetBSD: Makefile,v 1.4 2004/12/13 06:05:47 minskim Exp $
 
 DISTNAME=	epydoc-2.1
 PKGREVISION=	1

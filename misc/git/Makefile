@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/08/09 11:14:05 seb Exp $
-# FreeBSD Id: Makefile,v 1.8 1996/11/21 11:54:39 asami Exp
-#
+# $NetBSD: Makefile,v 1.24 2004/12/03 15:15:04 wiz Exp $
 
 DISTNAME=	git-4.3.17
 PKGREVISION=	1

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/07/21 17:24:32 martti Exp $
-# FreeBSD Id: Makefile,v 1.3 1997/01/06 12:13:36 jkh Exp
-#
+# $NetBSD: Makefile,v 1.22 2004/01/20 12:26:16 agc Exp $
 
 DISTNAME=	rtty-3.2
 PKGREVISION=	1

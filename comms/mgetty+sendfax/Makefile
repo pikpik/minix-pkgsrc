@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/02/23 16:57:28 jwise Exp $
-# FreeBSD Id: Makefile,v 1.25 1998/07/16 06:44:37 vanilla Exp
-#
+# $NetBSD: Makefile,v 1.43 2005/02/23 16:58:43 jwise Exp $
 
 DISTNAME=	mgetty1.1.31-Jul24
 PKGNAME=	mgetty-1.1.31

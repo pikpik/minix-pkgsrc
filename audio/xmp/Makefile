@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/05/16 17:11:30 danw Exp $
-# FreeBSD: ports/audio/xmp/Makefile,v 1.5 2000/04/08 21:24:59 mharo Exp
-#
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:12 tv Exp $
 
 DISTNAME=	xmp-2.0.4
 PKGREVISION=	2

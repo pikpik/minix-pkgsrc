@@ -1,8 +1,4 @@
-#
-# $NetBSD: Makefile,v 1.28 2004/12/28 02:47:46 reed Exp $
-#
-# FreeBSD Id: Makefile,v 1.12 1999/06/28 21:25:07 billf Exp
-#
+# $NetBSD: Makefile,v 1.29 2005/01/26 04:50:33 itojun Exp $
 
 DISTNAME=	bind
 PKGNAME=	bind-${BIND_VERSION}

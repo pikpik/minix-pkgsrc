@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2004/10/01 09:15:34 martti Exp $
-# FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
-#
+# $NetBSD: Makefile,v 1.40 2004/10/03 00:18:22 tv Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
 PKGNAME=	fvwm2-${FVWM_VER}

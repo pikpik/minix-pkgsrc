@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/07/17 21:48:45 grant Exp $
-# FreeBSD Id: Makefile,v 1.6 1996/11/17 09:05:15 obrien Exp
+# $NetBSD: Makefile,v 1.12 2003/07/21 17:01:12 martti Exp $
 
 DISTNAME=       buffer-1.17
 CATEGORIES=	misc

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/01/20 12:14:05 agc Exp $
-# FreeBSD Id: Makefile,v 1.3 1996/11/12 02:19:40 obrien Exp
-#
+# $NetBSD: Makefile,v 1.26 2004/04/12 11:17:15 xtraeme Exp $
 
 DISTNAME=		sam
 PKGNAME=		sam-4.3

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/01/20 12:24:29 agc Exp $
-# FreeBSD Id: Makefile,v 1.15 1998/01/08 18:52:13 fenner Exp
-#
+# $NetBSD: Makefile,v 1.28 2004/02/17 12:52:35 jlam Exp $
 
 DISTNAME=	psutils-p17
 PKGNAME=	psutils-1.17

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/11/26 13:58:31 jlam Exp $
-# FreeBSD Id: Makefile,v 1.6 1997/03/12 08:21:35 asami Exp
-#
+# $NetBSD: Makefile,v 1.17 2004/01/20 12:28:28 agc Exp $
 
 DISTNAME=	xneko
 PKGNAME=	xneko-4.4

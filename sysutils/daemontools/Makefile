@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/23 00:51:10 schmonz Exp $
-# FreeBSD Id: ports/sysutils/daemontools/Makefile,v 1.8 2000/12/03 05:16:41 steve Exp
+# $NetBSD: Makefile,v 1.19 2005/03/23 00:57:21 schmonz Exp $
 
 DISTNAME=		daemontools-0.76
 CATEGORIES=		sysutils

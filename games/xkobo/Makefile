@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/03 15:14:58 wiz Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/11/12 09:57:17 tg Exp
-#
+# $NetBSD: Makefile,v 1.13 2005/02/21 20:26:11 hubertf Exp $
 
 DISTNAME=       xkobo-1.11
 PKGREVISION=	2

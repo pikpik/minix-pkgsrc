@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/08/27 09:14:43 itojun Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/08/27 19:31:37 jmacd Exp
-#
+# $NetBSD: Makefile,v 1.23 2004/12/03 15:15:01 wiz Exp $
 
 DISTNAME=		scheme48-0.57
 CATEGORIES=		lang

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 22:56:59 grant Exp $
-# FreeBSD Id: Makefile,v 1.2 1996/12/29 00:51:27 obrien Exp
-#
+# $NetBSD: Makefile,v 1.13 2004/04/19 05:14:43 snj Exp $
 
 DISTNAME=	xless-1.7
 PKGREVISION=	1

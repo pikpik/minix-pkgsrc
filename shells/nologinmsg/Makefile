@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/22 23:59:59 jschauma Exp $
-# FreeBSD Id: ports/shells/nologinmsg/Makefile,v 1.3 2003/02/21 13:26:58 knu Exp
+# $NetBSD: Makefile,v 1.4 2005/01/21 03:43:10 tv Exp $
 
 DISTNAME=	nologinmsg-1.0
 CATEGORIES=	shells sysutils

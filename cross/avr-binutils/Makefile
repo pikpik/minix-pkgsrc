@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/08 04:50:50 snj Exp $
-# FreeBSD Id: ports/devel/avr-binutils/Makefile,v 1.9 2003/03/07 06:00:08 ade Exp
+# $NetBSD: Makefile,v 1.7 2004/08/06 16:31:09 uebayasi Exp $
 
 DISTNAME=		binutils-2.13.2.1
 PKGNAME=		avr-binutils-2.13.2.1

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/05/06 17:41:54 jmmv Exp $
-# FreeBSD Id: Makefile,v 1.1.1.1 1998/08/10 00:20:29 steve Exp
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:20:05 agc Exp $
 
 DISTNAME=               sc-6.21
 CATEGORIES=             math

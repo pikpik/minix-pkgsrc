@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/01/21 11:25:23 taca Exp $
-# Based on FreeBSD Id: Makefile,v 1.27 1999/04/03 08:25:18 itojun Exp
-#
+# $NetBSD: Makefile,v 1.22 2005/03/14 19:52:16 tv Exp $
 
 DISTNAME=	smtpfeed-1.18
 PKGREVISION=	1

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/02 03:20:12 wiz Exp $
-# $FreeBSD: Makefile,v 1.16 1997/01/03 09:36:43 obrien Exp $
-#
+# $NetBSD: Makefile,v 1.4 2001/02/16 15:10:52 wiz Exp $
 
 DISTNAME=	jetpack
 PKGNAME=	jetpack-1.0

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/03/08 20:27:17 minskim Exp $
-# $FreeBSD Id: Makefile,v 1.12 1998/02/24 21:43:11 jseger Exp
-#
+# $NetBSD: Makefile,v 1.22 2004/08/15 03:27:29 minskim Exp $
 
 DISTNAME=	FileRunner-2.5.1
 PKGNAME=	${DISTNAME:S/FileRunner/filerunner/}

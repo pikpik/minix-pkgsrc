@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:14:05 agc Exp $
-# FreeBSD Id: Makefile,v 1.12 1998/08/23 02:10:57 hoek Exp
-#
+# $NetBSD: Makefile,v 1.9 2004/05/12 21:58:52 grant Exp $
 
 DISTNAME=	beav_1.40-11
 PKGNAME=	beav-1.40.11

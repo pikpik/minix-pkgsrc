@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/09 11:14:09 seb Exp $
-# FreeBSD Id: ports/misc/vera/Makefile,v 1.7 2000/11/13 12:44:18 demon Exp
+# $NetBSD: Makefile,v 1.11 2003/09/17 15:51:11 hubertf Exp $
 
 DISTNAME=	vera-1.11
 CATEGORIES=	misc

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2004/10/03 00:12:57 tv Exp $
-# FreeBSD Id: Makefile,v 1.18 1998/09/27 20:10:45 steve Exp
+# $NetBSD: Makefile,v 1.50 2005/01/12 15:32:01 jlam Exp $
 
 DISTNAME=	octave-2.0.17
 PKGREVISION=	3

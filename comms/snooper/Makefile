@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/06/29 23:41:39 recht Exp $
-# FreeBSD Id: Makefile,v 1.3 1998/08/13 09:20:41 itojun Exp $
+# $NetBSD: Makefile,v 1.17 2005/01/24 01:58:05 tv Exp $
 
 DISTNAME=	snooper-19991202
 PKGREVISION=	1

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:18:24 tv Exp $
-# FreeBSD Id: ports/www/mod_auth_pgsql2/Makefile,v 1.5 2004/02/06 11:21:00 clement Exp
+# $NetBSD: Makefile,v 1.5 2004/10/14 15:33:51 tv Exp $
 
 DISTNAME=		mod_auth_pgsql-2.0.2b1
 PKGNAME=		${DISTNAME:S/^mod-/ap2/:S/_/-/g}

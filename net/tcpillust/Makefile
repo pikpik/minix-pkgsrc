@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 22:51:55 grant Exp $
-# $FreeBSD: ports/net/tcpillust/Makefile,v 1.1.1.1 2000/07/29 06:26:00 sada Exp $
-#
+# $NetBSD: Makefile,v 1.11 2004/03/08 20:27:15 minskim Exp $
 
 DISTNAME=	tcpillust-1.0a
 PKGREVISION=	1

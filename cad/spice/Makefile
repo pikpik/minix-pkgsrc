@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/12/03 13:37:48 dmcmahill Exp $
-# FreeBSD Id: Makefile,v 1.10 1998/06/08 09:21:37 tg Exp
-#
+# $NetBSD: Makefile,v 1.28 2005/01/11 22:26:01 dmcmahill Exp $
 
 DISTNAME=	sp3f4.kit
 PKGNAME=	spice-3f5.1

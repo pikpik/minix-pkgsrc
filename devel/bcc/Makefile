@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/01/06 05:36:28 tv Exp $
-# FreeBSD Id: Makefile,v 1.6 1996/11/18 11:22:35 asami Exp
-#
+# $NetBSD: Makefile,v 1.11 2005/02/13 03:04:55 reed Exp $
 
 DISTNAME=		bcc
 PKGNAME=		bcc-95.3.12

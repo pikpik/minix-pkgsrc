@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 22:56:55 grant Exp $
-# FreeBSD Id: Makefile,v 1.2 1997/06/17 07:45:12 asami Exp
-#
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:28:28 agc Exp $
 
 DISTNAME=		xfishtank-2.2
 CATEGORIES=		x11

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/28 11:46:30 wiz Exp $
-# FreeBSD Id: Makefile,v 1.5 1998/10/21 00:57:27 steve Exp
+# $NetBSD: Makefile,v 1.14 2004/11/28 16:04:00 martti Exp $
 
 DISTNAME=	LPRng-3.6.28
 CATEGORIES=	print

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:43:44 grant Exp $
-# FreeBSD Id: Makefile,v 1.9 1998/11/28 05:08:27 asami Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/05 21:23:00 minskim Exp $
 
 DISTNAME=	sj3-2.0.1.20
 PKGNAME=	sj3-lib-2.0.1.20

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 21:23:51 grant Exp $
-# FreeBSD Id: Makefile,v 1.5 1996/11/18 13:56:53 asami Exp
-#
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:07:43 agc Exp $
 
 DISTNAME=		xmix-2.1
 CATEGORIES=		audio

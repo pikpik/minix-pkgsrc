@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/11/28 06:01:43 taca Exp $
-# FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.10 2001/01/26 03:42:37 knu Exp
+# $NetBSD: Makefile,v 1.10 2005/03/06 17:19:06 taca Exp $
 
 DISTNAME=	optparse-0.12
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}

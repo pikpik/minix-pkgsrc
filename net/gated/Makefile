@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/12/03 15:15:05 wiz Exp $
-# FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp
-#
+# $NetBSD: Makefile,v 1.18 2004/12/28 02:47:46 reed Exp $
 
 DISTNAME=       gated-3-5-11
 PKGNAME=        gated-3.5.11

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/11/12 00:15:48 seb Exp $
-# FreeBSD Id: Makefile,v 1.2 1999/01/17 10:56:40 vanilla Exp $
+# $NetBSD: Makefile,v 1.8 2004/12/20 11:30:56 grant Exp $
 
 DISTNAME=	jcode.pl-2.13
 PKGNAME=	p5-jcode-2.13

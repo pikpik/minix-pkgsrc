@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:38:21 wiz Exp $
-# FreeBSD Id: Makefile,v 1.13 1998/12/01 09:49:33 asami Exp
-#
+# $NetBSD: Makefile,v 1.3 2001/10/25 20:50:38 agc Exp $
 
 DISTNAME=	pcemu1.01alpha
 PKGNAME=	pcemu-1.01a

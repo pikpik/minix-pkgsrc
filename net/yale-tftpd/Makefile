@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:22:22 agc Exp $
-# FreeBSD Id: ports/ftp/yale-tftpd/Makefile,v 1.14 2000/04/12 05:31:29 mharo Exp
+# $NetBSD: Makefile,v 1.10 2004/03/21 10:29:51 seb Exp $
 
 DISTNAME=	yale-tftpd-3.0
 PKGREVISION=	3

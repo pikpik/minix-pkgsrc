@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/01/16 22:00:26 christos Exp $
-# FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
-#
+# $NetBSD: Makefile,v 1.44 2005/02/23 04:09:51 minskim Exp $
 
 DISTNAME=		rxvt-2.7.10
 PKGREVISION=		4

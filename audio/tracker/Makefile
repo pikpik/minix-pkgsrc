@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/11/02 22:33:19 kristerw Exp $
-# FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp
-#
+# $NetBSD: Makefile,v 1.31 2005/02/23 03:28:49 minskim Exp $
 
 DISTNAME=		tracker-5.3
 PKGREVISION=		1

@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/16 15:36:50 recht Exp $
-# FreeBSD Id: ports/devel/ply/Makefile,v 1.6 2004/01/12 23:41:26 pav Exp
+# $NetBSD: Makefile,v 1.2 2004/07/19 19:57:42 recht Exp $
 
 DISTNAME=	ply-1.5
 CATEGORIES=	devel

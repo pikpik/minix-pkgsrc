@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/07/30 15:50:37 minskim Exp $
-# FreeBSD Id: Makefile,v 1.5 1997/11/26 23:09:14 jseger Exp
-#
+# $NetBSD: Makefile,v 1.22 2005/03/03 08:58:27 garbled Exp $
 
 DISTNAME=       bonnie
 PKGNAME=	bonnie-2.06

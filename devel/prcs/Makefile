@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/06/27 22:09:27 kristerw Exp $
-# FreeBSD Id: Makefile,v 1.9 1997/10/13 05:11:40 jmacd Exp
-#
+# $NetBSD: Makefile,v 1.32 2004/12/12 16:10:37 kristerw Exp $
 
 DISTNAME= 		prcs-1.3.3
 CATEGORIES=		devel

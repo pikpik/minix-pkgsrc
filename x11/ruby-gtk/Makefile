@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/01/28 14:08:02 taca Exp $
-# FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.16 2000/10/15 15:45:59 knu Exp
+# $NetBSD: Makefile,v 1.30 2005/03/06 17:19:08 taca Exp $
 
 DISTNAME=	ruby-gtk-${VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-gtk-${VERSION}

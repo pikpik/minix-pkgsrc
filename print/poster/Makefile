@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/20 01:16:21 jschauma Exp $
-# FreeBSD Id: ports/print/poster/Makefile,v 1.6 2004/02/06 13:12:14 trevor Exp
+# $NetBSD: Makefile,v 1.2 2004/12/03 15:15:07 wiz Exp $
 
 DISTNAME=	poster
 PKGNAME=	poster-1.0

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/10/03 00:18:14 tv Exp $
-# FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
-#
+# $NetBSD: Makefile,v 1.30 2004/11/12 12:13:45 mjl Exp $
 
 PKGNAME=		amanda-server-${VERS}
 # PKGREVISION=		1

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:15:17 agc Exp $
-# Based on FreeBSD Id: Makefile,v 1.6 1999/02/12 17:23:40 motoyuki Exp
-#
+# $NetBSD: Makefile,v 1.9 2004/02/26 08:15:27 uebayasi Exp $
 
 DISTNAME=	jisx0212fonts-0.0
 PKGREVISION=	1

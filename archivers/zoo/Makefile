@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/05/29 12:00:28 minskim Exp $
-# FreeBSD Id: Makefile,v 1.8 1997/08/10 22:31:36 fenner Exp
-#
+# $NetBSD: Makefile,v 1.21 2004/12/03 15:14:51 wiz Exp $
 
 DISTNAME=       zoo-2.10pl1
 PKGNAME=	zoo-2.10.1

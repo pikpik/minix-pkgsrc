@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/03/29 12:43:11 jmmv Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/10/15 20:23:40 max Exp
-#
+# $NetBSD: Makefile,v 1.12 2004/01/20 12:28:28 agc Exp $
 
 DISTNAME=	x3270-3213
 PKGNAME=	x3270-3.2.13

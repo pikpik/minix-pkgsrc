@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/04/19 21:43:21 xtraeme Exp $
-# FreeBSD Id: Makefile,v 1.4 1999/06/06 13:19:49 taoka Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/13 19:51:49 kristerw Exp $
 
 DISTNAME=	kinput2-v3
 PKGNAME=	kinput2-3.0

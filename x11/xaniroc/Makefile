@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:56:50 grant Exp $
-# from FreeBSD: ports/x11/xaniroc/Makefile,v 1.4 1999/08/31 02:50:46 peter Exp
-#
+# $NetBSD: Makefile,v 1.8 2003/07/21 17:38:32 martti Exp $
 
 DISTNAME=	xaniroc
 PKGNAME=	xaniroc-1.02

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/03/07 10:03:13 uebayasi Exp $
-# FreeBSD Id: Makefile,v 1.20 1997/08/27 13:06:01 ache Exp
-#
+# $NetBSD: Makefile,v 1.39 2005/03/16 12:03:06 rillig Exp $
 
 DISTNAME=	pgp263is
 CATEGORIES=	security

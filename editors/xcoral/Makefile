@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 01:20:02 jschauma Exp $
-# FreeBSD Id: Makefile,v 1.6 1999/01/26 02:16:00 steve Exp
-#
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:35:11 grant Exp $
 
 DISTNAME=		xcoral-3.2
 CATEGORIES=		editors

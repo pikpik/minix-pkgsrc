@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/03 15:15:03 wiz Exp $
-# FreeBSD Id: ports/math/eukleides/Makefile,v 1.1 2002/06/04 18:40:20 ijliao Exp
+# $NetBSD: Makefile,v 1.11 2004/12/31 13:13:32 kristerw Exp $
 
 DISTNAME=	xeukleides.1.0.0
 PKGNAME=	xeukleides-1.0.0

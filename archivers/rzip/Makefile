@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/11/23 06:43:01 tv Exp $
-# FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp
-#
+# $NetBSD: Makefile,v 1.4 2005/01/18 22:01:52 tv Exp $
 
 DISTNAME=	rzip-2.0
 PKGREVISION=	1

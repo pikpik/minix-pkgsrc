@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/01/21 13:05:28 tv Exp $
-# FreeBSD Id: Makefile,v 1.5 1997/10/10 06:53:29 obrien Exp
+# $NetBSD: Makefile,v 1.18 2005/01/24 01:54:31 tv Exp $
 
 DISTNAME=	lrzsz-0.12.20
 CATEGORIES=	comms

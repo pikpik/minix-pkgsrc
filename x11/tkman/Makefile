@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/01/20 12:28:27 agc Exp $
-# FreeBSD Id: Makefile,v 1.28 1997/12/08 15:51:20 tg Exp
-#
+# $NetBSD: Makefile,v 1.36 2004/03/08 20:27:17 minskim Exp $
 
 DISTNAME=		tkman
 PKGNAME=		tkman-2.1

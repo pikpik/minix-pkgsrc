@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/06/03 23:07:29 heinz Exp $
-# FreeBSD Id: ports/misc/rpm2cpio/Makefile,v 1.2 1999/08/25 07:22:29 obrien Exp
+# $NetBSD: Makefile,v 1.17 2004/10/21 21:19:22 reed Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
