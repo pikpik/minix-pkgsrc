@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2004/07/22 17:37:23 drochner Exp $
+# $NetBSD: Makefile,v 1.117 2004/07/30 13:50:07 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -60,6 +60,7 @@ SUBDIR+=	newmat
 SUBDIR+=	ntl
 SUBDIR+=	octave
 SUBDIR+=	octave-current
+SUBDIR+=	octave-forge
 SUBDIR+=	odepack
 SUBDIR+=	otter
 SUBDIR+=	p5-Math-Bezier
