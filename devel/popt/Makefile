@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/10/15 10:18:41 martti Exp $
+# $NetBSD: Makefile,v 1.15 2002/10/19 18:08:58 martti Exp $
 #
 
 DISTNAME=	popt-1.7
@@ -17,13 +17,13 @@ BUILD_USES_MSGFMT=	yes
 CONFLICTS=		ORBit<=0.5.3
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 WRKSRC=			${WRKDIR}/${DISTNAME}
-CONFIGURE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

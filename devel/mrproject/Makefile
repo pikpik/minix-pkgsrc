@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/09/10 16:06:40 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/07 09:36:53 wiz Exp $
 #
 
 DISTNAME=		mrproject-0.5.1
@@ -11,6 +11,7 @@ HOMEPAGE=		http://mrproject.codefactory.se/
 COMMENT=		Project management program
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/08/28 16:26:12 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2002/10/19 10:54:51 rh Exp $
 #
 
 DISTNAME=		oaf-0.6.10
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		new object activation framework for GNOME
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
 

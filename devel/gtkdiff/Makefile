@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/09/10 16:06:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/22 00:07:25 jlam Exp $
 #
 
 DISTNAME=	gtkdiff-1.6.0
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.ainet.or.jp/~inoue/software/gtkdiff/index-e.html
 COMMENT=	diff front-end program using GNOME
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 

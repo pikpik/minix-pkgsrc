@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/10/05 03:39:33 rh Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/05 03:54:46 rh Exp $
 #
 
 DISTNAME=		anjuta-0.1.9
@@ -16,6 +16,7 @@ DEPENDS+=		xml-i18n-tools>=0.9:../../textproc/xml-i18n-tools
 BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 USE_GMAKE=		YES
 USE_LIBTOOL=		YES

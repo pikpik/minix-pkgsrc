@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/30 09:14:27 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/11/02 02:42:03 rh Exp $
 #
 
 DISTNAME=		glade-1.1.2
@@ -16,12 +16,12 @@ BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_GMAKE=		YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-CONFIGURE_ENV+=		LOCALEDIR=${PKGLOCALEDIR}
 CONFIGURE_ARGS+=	--localstatedir=${SCROLLKEEPER_DATADIR}
 
 .include "../../textproc/scrollkeeper/buildlink2.mk"

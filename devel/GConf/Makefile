@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/10/19 10:54:43 rh Exp $
+# $NetBSD: Makefile,v 1.32 2002/10/30 03:09:27 rh Exp $
 #
 
 DISTNAME=		GConf-1.0.9
@@ -15,6 +15,7 @@ BUILD_USES_MSGFMT=	yes
 #DEPENDS+=		guile>=1.3.4:../../lang/guile
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 

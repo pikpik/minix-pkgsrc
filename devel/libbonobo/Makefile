@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/16 03:14:43 rh Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/19 10:54:49 rh Exp $
 
 DISTNAME=		libbonobo-2.0.0
 PKGREVISION=		2
@@ -12,6 +12,7 @@ COMMENT=		GNOME2 Object activation framework library
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 USE_GMAKE=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

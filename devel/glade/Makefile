@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/10/19 10:54:47 rh Exp $
+# $NetBSD: Makefile,v 1.30 2002/11/02 02:42:03 rh Exp $
 #
 
 DISTNAME=	glade-0.6.2
@@ -11,13 +11,13 @@ MAINTAINER=     packages@netbsd.org
 HOMEPAGE=	http://glade.pn.org/
 COMMENT=	User interface builder for GTK+
 
-GNU_CONFIGURE=	yes
-USE_X11BASE=	yes
-USE_BUILDLINK2=	yes
+GNU_CONFIGURE=		yes
+USE_X11BASE=		yes
+USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 
-CONFIGURE_ENV+=	LOCALEDIR=${PKGLOCALEDIR}
-CONFIGURE_ARGS+=--with-bonobo
-CONFIGURE_ARGS+=--localstatedir=${SCROLLKEEPER_DATADIR}
+CONFIGURE_ARGS+=	--with-bonobo
+CONFIGURE_ARGS+=	--localstatedir=${SCROLLKEEPER_DATADIR}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/glade
