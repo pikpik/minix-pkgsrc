@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2001/02/07 04:32:35 jtb Exp $
+# $NetBSD: Makefile,v 1.46 2001/02/07 22:36:25 jtb Exp $
 #
 
     SUBDIR += R
@@ -7,6 +7,7 @@
     SUBDIR += aribas
     SUBDIR += blas
     SUBDIR += calc
+    SUBDIR += capc-calc
     SUBDIR += cassowary
     SUBDIR += dcdflib.c
     SUBDIR += dfftpack
