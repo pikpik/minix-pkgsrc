@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/23 12:33:19 kleink Exp $
+# $NetBSD: Makefile,v 1.4 1999/06/27 14:17:59 drochner Exp $
 # FreeBSD Id: Makefile,v 1.4 1998/06/27 05:19:35 asami Exp
 #
 
@@ -30,7 +30,7 @@ pre-install:
 
 do-install:
 	@(cd ${INSTDIR}/2.4.1; unzip ${DISTDIR}/docbk241.zip)
-	@$(RM) -r ${INSTDIR}/2.4.1/iso-*
+	@${RM} -r ${INSTDIR}/2.4.1/iso-*
 	@${INSTALL_DATA} ${FILESDIR}/catalog241 ${INSTDIR}/2.4.1/catalog
 	@${ECHO} "CATALOG \"${ISOCAT}\"" >> ${INSTDIR}/2.4.1/catalog
 	@(cd ${INSTDIR}/3.0; unzip ${DISTDIR}/docbk30.zip)
