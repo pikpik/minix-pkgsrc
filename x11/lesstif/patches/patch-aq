@@ -1,14 +1,13 @@
 $NetBSD$
 
---- doc/www.lesstif.org/Makefile.am.orig	Mon Jul  2 11:40:03 2001
-+++ doc/www.lesstif.org/Makefile.am	Wed Sep 19 17:47:46 2001
-@@ -13,8 +13,7 @@
+--- doc/www.lesstif.org/Makefile.in.orig	Thu Dec  5 17:55:30 2002
++++ doc/www.lesstif.org/Makefile.in	Thu Dec  5 17:57:03 2002
+@@ -148,7 +148,7 @@
  # Lets put the informational stuff in a sub directory to avoid 
  # polluting /usr/local for default installs.
  #
--docdir=	$(prefix)/LessTif/doc
--doc_DATA= \
-+html_DATA= \
+-docdir = $(prefix)/LessTif/doc
++docdir = $(prefix)/share/doc/html/lesstif
+ doc_DATA = \
     Advocacy.html          contents.html          misc_frame.html \
     BUG-HUNTING.html       core.html              news.html \
-    COPYING.LIB.html       cvs.html               news_frame.html \
