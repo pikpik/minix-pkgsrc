@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/02/06 16:58:12 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2002/05/03 20:51:33 jtb Exp $
 
 DISTNAME=		hdf5-1.4.3
 CATEGORIES=		devel
@@ -11,7 +11,7 @@ HOMEPAGE=		http://hdf.ncsa.uiuc.edu/HDF5/
 COMMENT=		Hierarchical Data Format (new generation)
 
 GNU_CONFIGURE=		# defined
-USE_BUILDLINK_ONLY=	# defined
+USE_BUILDLINK2=		# defined
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/bin/ltconfig
 
@@ -27,5 +27,5 @@ post-install:
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${WRKSRC}/doc/html
 	cd ${WRKSRC}/doc/html && ${PAX} -rw . ${PREFIX}/share/doc/html/hdf5
 
-.include "../../devel/zlib/buildlink.mk"
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
