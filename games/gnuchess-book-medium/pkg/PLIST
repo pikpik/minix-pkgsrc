@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/${CHESS_ENGINE}/${BOOK_FILE}
