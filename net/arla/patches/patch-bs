@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 
 Eradicate setprogname() on NetBSD.
 Kill me for doing this for many programs in one patch, but I've got
