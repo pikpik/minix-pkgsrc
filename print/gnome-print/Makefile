@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/01/26 11:57:12 rh Exp $
+# $NetBSD: Makefile,v 1.13 2000/03/14 21:36:46 tron Exp $
 #
 
 DISTNAME=	gnome-print-0.12
@@ -8,8 +8,8 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=stable/sources/gnome-print/}
 MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.levien.com/gnome/print-arch.html
 
-DEPENDS+=	gnome-libs-*:../../x11/gnome-libs
-DEPENDS+=	libxml-1.*:../../textproc/libxml
+DEPENDS+=	gnome-libs>=1.0.56:../../x11/gnome-libs
+DEPENDS+=	libxml>=1.8.5:../../textproc/libxml
 DEPENDS+=	ghostscript-*:../../print/ghostscript5
 
 GNU_CONFIGURE=	YES
