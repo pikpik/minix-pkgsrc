@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/par
+share/doc/parchive/README
+@dirrm share/doc/parchive
