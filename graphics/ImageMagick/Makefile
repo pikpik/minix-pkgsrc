@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.96 2003/04/16 13:27:21 mjl Exp $
+# $NetBSD: Makefile,v 1.97 2003/06/02 14:05:04 abs Exp $
 
-.include "./Makefile.common"
+.include "Makefile.common"
 
-PKGNAME=		ImageMagick-${DISTSUFFIX}
+PKGNAME=		ImageMagick-${DISTVERSION}
 
 CATEGORIES=		graphics
 
@@ -39,10 +39,6 @@ CFLAGS=			-O
 
 # Some configure_args come from Makefile.common
 CONFIGURE_ARGS+=	--without-perl
-
-post-install:
-	${INSTALL_DATA} ${WRKSRC}/Copyright.txt ${WRKSRC}/QuickStart.txt \
-		${PREFIX}/share/ImageMagick
 
 .include "../../archivers/bzip2/buildlink2.mk"
 .include "../../graphics/jasper/buildlink2.mk"
