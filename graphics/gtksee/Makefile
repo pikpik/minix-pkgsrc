@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/03 18:49:43 reed Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/24 15:46:43 grant Exp $
 #
 
 DISTNAME=		gtksee-0.5.2
@@ -16,7 +16,7 @@ BUILDLINK_DEPENDS.gtk?=	gtk+>=1.2.10
 GNU_CONFIGURE=		YES
 USE_X11=		YES
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 
 post-install:
@@ -26,8 +26,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/COPYING ${PREFIX}/share/doc/gtksee
 	${INSTALL_DATA} ${WRKSRC}/TODO	  ${PREFIX}/share/doc/gtksee
 
-.include "../../x11/gtk/buildlink2.mk"
-.include "../../graphics/jpeg/buildlink2.mk"
-.include "../../graphics/png/buildlink2.mk"
-.include "../../graphics/tiff/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
+.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
+.include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
