@@ -105,7 +105,6 @@ share/emacs/site-lisp/mew/mew-mule0.el
 share/emacs/site-lisp/mew/mew-mule3.el
 share/emacs/site-lisp/mew/mew-nntp.el
 share/emacs/site-lisp/mew/mew-nntp.elc
-share/emacs/site-lisp/mew/mew-os2.el
 share/emacs/site-lisp/mew/mew-pgp.el
 share/emacs/site-lisp/mew/mew-pgp.elc
 share/emacs/site-lisp/mew/mew-pick.el
