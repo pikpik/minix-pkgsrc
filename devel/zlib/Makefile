@@ -1,8 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2001/09/10 13:24:50 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2001/11/29 16:44:15 abs Exp $
 
-DISTNAME=	zlib-1.1.3
+DISTNAME=	zlib-1.1.4
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.freesoftware.com/pub/infozip/zlib/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
+		http://www.libpng.org/pub/png/src/ \
+		ftp://swrinde.nde.swri.edu/pub/png/src/ \
+		http://www.gzip.org/zlib/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gzip.org/zlib/
