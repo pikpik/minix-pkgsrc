@@ -1,0 +1,5 @@
+#!/bin/sh
+# $NetBSD:$
+echo "Installing lib files now"
+cd ${WRKSRC}
+tar cf - lib | (cd ${PREFIX}/share/jed ; tar xf - )
