@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2003/04/10 07:22:35 bouyer Exp $
+# $NetBSD: Makefile,v 1.32 2003/05/02 11:56:35 wiz Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
 DISTNAME=	fvwm-${FVWM_VER}
 PKGNAME=	fvwm2-${FVWM_VER}
-PKGREVISION=	3
 CATEGORIES=	x11 wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/ \
 		http://www.fvwm.org/generated/icon_download/ \
@@ -19,7 +18,7 @@ DEPENDS+=	xpmroot-2.*:../../x11/xpmroot
 
 CONFLICTS=	fvwm1-* fvwm>=1
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
-FVWM_VER=	2.4.15
+FVWM_VER=	2.4.16
 
 USE_X11BASE=		YES
 USE_BUILDLINK2=		YES
