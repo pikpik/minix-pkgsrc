@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/07/02 22:07:04 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2001/08/22 17:38:57 jlam Exp $
 
 DISTNAME=		xinvest-2.6
 CATEGORIES=		finance x11
@@ -16,5 +16,5 @@ post-patch:
 	${TOUCH} ${WRKSRC}/Xinvest.man
 
 .include "../../graphics/xpm/buildlink.mk"
-.include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

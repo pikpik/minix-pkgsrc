@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2001/07/24 16:00:01 nra Exp $
+# $NetBSD: Makefile,v 1.27 2001/08/22 17:38:56 jlam Exp $
 #
 
 DISTNAME=	xmcd-3.0.1
@@ -35,5 +35,5 @@ post-install:
 
 .include "../../devel/ncurses/buildlink.mk"
 .include "../../graphics/xpm/buildlink.mk"
-.include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"

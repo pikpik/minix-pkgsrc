@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1 2001/07/29 06:28:59 jlam Exp $
 #
 # This Makefile fragment is included by packages that use Xbae.
 #
@@ -25,7 +25,7 @@ BUILDLINK_PREFIX.Xbae_DEFAULT=	${X11PREFIX}
 BUILDLINK_FILES.Xbae=		include/Xbae/*
 BUILDLINK_FILES.Xbae+=		lib/libXbae.*
 
-.include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 
 BUILDLINK_TARGETS.Xbae=	Xbae-buildlink
 BUILDLINK_TARGETS+=	${BUILDLINK_TARGETS.Xbae}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/17 17:06:14 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/07/29 06:25:15 jlam Exp $
 #
 
 DISTNAME=	Xbae-4.9.1
@@ -25,5 +25,5 @@ post-install:
 	${LN} -fs ${PREFIX}/share/aclocal/ac_find_xbae.m4 \
 		${LOCALBASE}/share/aclocal/ac_find_xbae.m4
 
-.include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
