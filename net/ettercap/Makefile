@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/05/02 11:56:01 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/05 16:59:02 jmmv Exp $
 
 DISTNAME=		ettercap-0.6.9
 PKGREVISION=		1
@@ -19,11 +19,8 @@ USE_NCURSES=		# newpad(), MAX_FORM_COMMAND
 PTHREAD_OPTS+=		require
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
-post-build:
-			cd ${WRKSRC}/plugins ; ${MAKE_ENV} ${MAKE} all
-
-post-install:
-			cd ${WRKSRC}/plugins ; ${MAKE_ENV} ${MAKE} install
+BUILD_DIRS=		${WRKSRC} ${WRKSRC}/plugins
+INSTALL_DIRS=		${WRKSRC} ${WRKSRC}/plugins
 
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
