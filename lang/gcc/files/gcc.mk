@@ -1,6 +1,6 @@
-# $NetBSD: gcc.mk,v 1.3 2002/01/03 21:19:09 tron Exp $
+# $NetBSD: gcc.mk,v 1.4 2002/09/27 12:28:16 jlam Exp $
 #
-# make configuration file for @PKGNAME@
+# make configuration file for @DISTNAME@
 
 CC=	@GCC_PREFIX@/bin/cc
 CPP=	@GCC_PREFIX@/bin/cpp
