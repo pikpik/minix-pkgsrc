@@ -1,4 +1,4 @@
-# $NetBSD: bsd.wrapper.mk,v 1.25 2005/03/06 22:27:12 agc Exp $
+# $NetBSD: bsd.wrapper.mk,v 1.26 2005/03/08 00:52:31 grant Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -52,11 +52,7 @@ _WRAP_VARS_MK=		${WRAPPER_DIR}/vars.mk
 
 .PHONY: do-wrapper
 
-# USE_BUILDLINK3 == "no" implies NO_BUILDLINK
-.if !empty(USE_BUILDLINK3:M[nN][oO])
-NO_BUILDLINK=	yes
-.endif
-.if !defined(NO_BUILDLINK)
+.if !defined(NO_BUILD)
 .  include "../../mk/buildlink3/bsd.buildlink3.mk"
 .endif
 
