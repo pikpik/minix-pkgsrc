@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/28 09:27:29 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2003/12/05 17:07:02 drochner Exp $
 #
 
 DISTNAME=	Zope-2.6.2-src
@@ -40,9 +40,9 @@ do-build:
 #
 do-install:
 	${INSTALL_DATA_DIR} ${ZOPEDIR}
-	cd ${WRKSRC} && ${FIND} ${ZOPEPY} -type f -and \! \( -name "*.[cho]" \
-		-or -name "sedscript" -or -name "Makefile*" \
-		-or -name "Setup*" -or -name ".cvsignore" \) \
+	cd ${WRKSRC} && ${FIND} ${ZOPEPY} -type f -a \! \( -name "*.[cho]" \
+		-o -name "sedscript" -o -name "Makefile*" \
+		-o -name "Setup*" -o -name ".cvsignore" \) \
 		-print | ${PAX} -rw ${ZOPEDIR}
 	cd ${ZOPEDIR} && ${PYTHONBIN} ${WRKSRC}/inst/compilezpy.py
 	cd ${WRKSRC} && ${PAX} -rw ${ZOPEDATA} ${ZOPEDIR}
