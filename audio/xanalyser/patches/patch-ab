@@ -1,13 +1,8 @@
-$NetBSD: patch-ab,v 1.1.1.1 2002/04/23 03:33:26 schmonz Exp $
+$NetBSD$
 
---- src/DSP.cc.orig	Sat Dec  1 20:05:15 2001
+--- src/DSP.cc.orig	2001-12-01 19:05:15.000000000 -0600
 +++ src/DSP.cc
-@@ -10,12 +10,12 @@
- #include <stdlib.h>
- #include <fcntl.h>
- #include <sys/ioctl.h>
--#include <sys/soundcard.h>
-+#include <soundcard.h>
+@@ -14,8 +14,8 @@
  #include <math.h>
  #include <errno.h>
  #include <string.h>
@@ -18,7 +13,7 @@ $NetBSD: patch-ab,v 1.1.1.1 2002/04/23 03:33:26 schmonz Exp $
  
  #include "DSP.h"
  
-@@ -168,7 +168,7 @@
+@@ -168,7 +168,7 @@ DSP::swapbuffer (void* buffer, int count
      int n = count / 2;
  
      for (int i = n; i != 0; i--) {
