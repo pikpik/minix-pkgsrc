@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/25 15:17:52 taca Exp $
 #
 
 DISTNAME=	chkjis
 PKGNAME=	p5-chkjis-0.18
-CATEGORIES=	textproc
+CATEGORIES=	japanese converters perl5
 MASTER_SITES=	http://www2d.biglobe.ne.jp/~msyk/software/perl5/
 EXTRACT_SUFX=	.pl
 
