@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.217 2001/06/10 11:32:39 wiz Exp $
+# $NetBSD: Makefile,v 1.218 2001/06/16 03:31:37 jlam Exp $
 #
 
 COMMENT=	Development utilities
@@ -120,6 +120,7 @@ SUBDIR+=	mit-pthreads
 SUBDIR+=	mk-files
 SUBDIR+=	nana
 SUBDIR+=	nasm
+SUBDIR+=	nasm-devel
 SUBDIR+=	ncurses
 SUBDIR+=	netcdf
 SUBDIR+=	newmkdep
