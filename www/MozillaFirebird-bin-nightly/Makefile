@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/17 03:10:42 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/23 03:50:51 grant Exp $
 #
 
 DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
@@ -23,6 +23,8 @@ NO_CONFIGURE=		# defined
 NO_SRC_ON_FTP=		# defined
 
 USE_PKGINSTALL=		YES
+
+PLATFORM=		dummy
 
 .include "../../mk/bsd.prefs.mk"
 
