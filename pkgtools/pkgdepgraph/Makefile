@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/03/26 04:50:18 atatat Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/29 12:42:11 jmmv Exp $
 #
 
-DISTNAME=	pkgdepgraph-2.4
+DISTNAME=	pkgdepgraph-2.5
 WRKSRC=		${WRKDIR}
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
