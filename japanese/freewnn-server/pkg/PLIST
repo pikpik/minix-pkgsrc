@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/08/02 05:50:55 sakamoto Exp $
+@comment $NetBSD: PLIST,v 1.2 1999/09/03 04:31:46 sakamoto Exp $
 @cwd ${DICT_DIR}
 @cwd ${DICT_DIR}
 wnn/ja_JP/pubdic/bio.dic
@@ -65,5 +65,6 @@ sbin/wdreg
 sbin/wnnkill
 sbin/wnnstat
 sbin/wnntouch
+etc/rc.d/ja-freewnn
 @exec ln -s ${DICT_DIR}/wnn/ja_JP %D/share/wnn/ja_JP/dic
 @unexec rm %D/share/wnn/ja_JP/dic
