@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2001/01/19 01:35:15 hubertf Exp $
+# $NetBSD: Makefile,v 1.86 2001/02/09 14:26:52 scw Exp $
 #
 
     SUBDIR += amanda
@@ -69,6 +69,7 @@
     SUBDIR += whowatch
     SUBDIR += xbatt
     SUBDIR += xbattbar
+    SUBDIR += xcdroast
     SUBDIR += xdu
     SUBDIR += xhfs
     SUBDIR += xosview
