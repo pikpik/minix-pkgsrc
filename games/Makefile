@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.206 2004/04/16 15:05:34 xtraeme Exp $
+# $NetBSD: Makefile,v 1.207 2004/04/16 18:20:36 xtraeme Exp $
 #
 
 COMMENT=	Games
@@ -137,6 +137,7 @@ SUBDIR+=	openmortal
 SUBDIR+=	pacman
 SUBDIR+=	pag
 SUBDIR+=	plib
+SUBDIR+=	powermanga
 SUBDIR+=	powwow
 SUBDIR+=	prboom
 SUBDIR+=	pysol
