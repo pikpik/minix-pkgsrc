@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/06/02 01:18:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 21:48:47 grant Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/04/30 03:18:06 asami Exp
 #
 
@@ -12,6 +12,6 @@ COMMENT=	Produce PS sheet-music from text input
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
-MANCOMPRESSED=	yes
+CFLAGS+=	-DPAPERSIZE=${PAPERSIZE}
 
 .include "../../mk/bsd.pkg.mk"
