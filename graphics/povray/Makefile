@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/05/22 09:32:22 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2002/03/13 17:37:16 fredb Exp $
 # FreeBSD Id: Makefile,v 1.9 1998/08/20 18:56:00 jseger Exp
 
 DISTNAME=       povray31
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Official/Unix/ \
 	 	ftp://www.hensa.ac.uk/mirrors/povray/povray/Official-3.0/Unix/\
 		ftp://ftp.univ-lille1.fr/pub/povray/Official-3.0/Unix/
 DISTFILES=      povuni_s.tgz povuni_d.tgz
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 MAINTAINER=	pooka@netbsd.org
 HOMEPAGE=	http://www.povray.org/
