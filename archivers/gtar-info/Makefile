@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/08/09 10:27:41 seb Exp $
+# $NetBSD: Makefile,v 1.14 2004/03/11 18:03:49 xtraeme Exp $
 #
 
 DISTNAME=       tar-1.13.25
@@ -22,7 +22,7 @@ NO_BUILD=	yes
 do-install:
 	for i in ${WRKSRC}/doc/tar.info* ; \
 	do \
-	    ${INSTALL_DATA} $${i} ${PREFIX}/info ; \
+	    ${INSTALL_DATA} $${i} ${PREFIX}/${INFO_DIR} ; \
 	done
 
 .include "../../mk/bsd.pkg.mk"
