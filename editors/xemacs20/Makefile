@@ -47,7 +47,6 @@ DEPENDS+=	faces-1.6.1:../../mail/faces
 WITH_XFACE=	--with-xface=no
 .endif
 
-CFLAGS+=	-g
 CONFIGURE_ARGS+=${MACHINE_GNU_ARCH}--netbsd --prefix=${PREFIX} \
 		--site-includes=${PREFIX}/include \
 		--infopath="${PREFIX}/info:${X11BASE}/info:/usr/local/info" \
