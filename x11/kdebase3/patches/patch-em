@@ -1,6 +1,6 @@
-$NetBSD: patch-em,v 1.1.2.1 2002/06/23 19:06:03 jlam Exp $
+$NetBSD$
 
---- legacyimport/Makefile.am.orig	Wed May 16 02:41:36 2001
+--- legacyimport/Makefile.am.orig	Mon Sep 16 09:08:59 2002
 +++ legacyimport/Makefile.am
 @@ -1,14 +1,18 @@
  INCLUDES = $(all_includes)
@@ -10,9 +10,9 @@ $NetBSD: patch-em,v 1.1.2.1 2002/06/23 19:06:03 jlam Exp $
 +lib_LTLIBRARIES = libklegacyimport_main.la klegacyimport.la
  
 -klegacyimport_la_SOURCES = legacyimport.cpp
--klegacyimport_la_LIBADD = $(LIB_KDEUI) $(LIB_KFILE)
+-klegacyimport_la_LIBADD = $(LIB_KDEUI) $(LIB_KIO)
 +libklegacyimport_main_la_SOURCES = legacyimport.cpp
-+libklegacyimport_main_la_LIBADD = $(LIB_KDEUI) $(LIB_KFILE)
++libklegacyimport_main_la_LIBADD = $(LIB_KDEUI) $(LIB_KIO)
 +libklegacyimport_main_la_LDFLAGS = $(all_libraries)
 +
 +klegacyimport_la_SOURCES = klegacyimport_main.cpp

@@ -1,8 +1,8 @@
-$NetBSD: patch-ek,v 1.1.2.1 2002/06/23 19:06:02 jlam Exp $
+$NetBSD$
 
---- kxkb/kxkb.cpp.orig	Sat Mar  2 22:03:52 2002
+--- kxkb/kxkb.cpp.orig	Sun Oct 27 11:07:27 2002
 +++ kxkb/kxkb.cpp
-@@ -483,7 +483,9 @@
+@@ -503,7 +503,9 @@ void LayoutMap::setLayout(WId winId, con
  const char * DESCRIPTION =
    I18N_NOOP("A utility to switch keyboard maps.");
  
@@ -11,5 +11,5 @@ $NetBSD: patch-ek,v 1.1.2.1 2002/06/23 19:06:02 jlam Exp $
 +
 +int kdemain(int argc, char *argv[])
  {
-     KAboutData about("kxkb", I18N_NOOP("KDE Keyboard Tool"), "0.6",
+     KAboutData about("kxkb", I18N_NOOP("KDE Keyboard Tool"), "0.8",
                       DESCRIPTION, KAboutData::License_LGPL,

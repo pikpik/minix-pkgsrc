@@ -1,8 +1,8 @@
 $NetBSD$
 
---- kwin/clients/laptop/Makefile.in.orig	Fri Dec 27 18:19:11 2002
+--- kwin/clients/laptop/Makefile.in.orig	Fri Jan 17 09:03:12 2003
 +++ kwin/clients/laptop/Makefile.in
-@@ -291,7 +291,7 @@ INCLUDES = $(all_includes)
+@@ -290,7 +290,7 @@ INCLUDES = $(all_includes)
  kde_module_LTLIBRARIES = kwin_laptop.la
  
  kwin_laptop_la_SOURCES = laptopclient.cpp
@@ -11,7 +11,7 @@ $NetBSD$
  kwin_laptop_la_LDFLAGS = $(all_libraries) $(KDE_PLUGIN) -module
  
  #>- METASOURCES = AUTO
-@@ -307,7 +307,7 @@ CONFIG_HEADER = $(top_builddir)/config.h
+@@ -306,7 +306,7 @@ CONFIG_HEADER = $(top_builddir)/config.h
  CONFIG_CLEAN_FILES =
  LTLIBRARIES = $(kde_module_LTLIBRARIES)
  
