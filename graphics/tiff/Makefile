@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2004/12/28 23:10:10 reed Exp $
+# $NetBSD: Makefile,v 1.62 2005/01/09 21:34:41 jlam Exp $
 
 DISTNAME=	tiff-3.7.1
 CATEGORIES=	graphics
@@ -19,7 +19,6 @@ USE_LIBTOOL=	yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-rpath
-CONFIGURE_ARGS+=	--enable-c++
 
 .include "../../mk/bsd.prefs.mk"
 
