@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.707 2001/04/03 17:58:33 skrll Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.708 2001/04/04 06:43:43 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -338,7 +338,7 @@ DECOMPRESS_CMD?=	${BZCAT}
 .elif ${EXTRACT_SUFX} == ".tar"
 DECOMPRESS_CMD?=	${CAT}
 .elif ${EXTRACT_SUFX} == ".zip"
-BUILD_DEPENDS+=		unzip-5.42:../../archivers/unzip
+BUILD_DEPENDS+=		unzip-*:../../archivers/unzip
 EXTRACT_CMD?=		unzip -Laq ${DOWNLOADED_DISTFILE}
 .elif ${EXTRACT_SUFX} == ".lzh"
 BUILD_DEPENDS+=		lha-114f:../../archivers/lha
