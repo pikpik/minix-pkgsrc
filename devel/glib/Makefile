@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.1/ \
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.gtk.org/docs/glib_toc.html
 
+CONFLICTS=	gtk+-1.0.*
+
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
