@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.299 2002/05/09 16:22:30 taca Exp $
+# $NetBSD: Makefile,v 1.300 2002/05/15 00:11:58 itojun Exp $
 #
 
 COMMENT=	Networking tools
@@ -66,6 +66,7 @@ SUBDIR+=	gkrellm-snmp
 SUBDIR+=	gkrellm-wireless
 SUBDIR+=	gnapfetch
 SUBDIR+=	gnapster
+SUBDIR+=	gnet
 SUBDIR+=	gnubile
 SUBDIR+=	gnut
 SUBDIR+=	gopher
