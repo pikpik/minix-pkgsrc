@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/netscape/communicator-${NS_VERS}/libjsd.so
+lib/netscape/communicator-${NS_VERS}/dynfonts/libTrueDoc.so
+lib/netscape/communicator-${NS_VERS}/plugins/libnullplugin.so
+lib/netscape/communicator-${NS_VERS}/netscape-dynMotif
+lib/netscape/communicator-${NS_VERS}/libnullplugin-dynMotif.so

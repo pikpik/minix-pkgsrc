@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/netscape/navigator-${NS_VERS}/dynfonts/libTrueDoc.so
+lib/netscape/navigator-${NS_VERS}/plugins/libnullplugin.so
+lib/netscape/navigator-${NS_VERS}/netscape-dynMotif
+lib/netscape/navigator-${NS_VERS}/libnullplugin-dynMotif.so
