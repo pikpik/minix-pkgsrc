@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/10/03 00:15:02 tv Exp $
+# $NetBSD: Makefile,v 1.33 2004/12/03 15:15:01 wiz Exp $
 
 DISTNAME=	ocaml-3.06
 PKGREVISION=	7
@@ -52,4 +52,5 @@ PLIST_SRC=	${PKGDIR}/PLIST
 .endif
 
 .include "../../x11/tk/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
