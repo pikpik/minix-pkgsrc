@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 1998/02/08 23:41:25 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.2 1998/11/10 08:34:54 garbled Exp $
 man/cat1/xblast.0
+man/cat1/tkXBlast.0
 lib/X11/app-defaults/XBlast
 share/xblast/bitmap/block/air_pump.pbm
 share/xblast/bitmap/block/bomb.pbm
