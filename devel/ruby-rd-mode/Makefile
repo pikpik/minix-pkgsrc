@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/06/30 23:33:28 taca Exp $
 #
 
 DISTNAME=	rdtool-${RUBY_RD_VERSION}
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
 
 MAINTAINER=	taca@netbsd.org
 HOMEPAGE=	http://www2.pos.to/~tosh/ruby/rdtool/
-COMMENT=	Editing mode for RD (Ruby Docuemnt Format).
+COMMENT=	Editing mode for RD (Ruby Document Format).
 
 .if defined(USE_XEMACS)
 DEPENDS+=	xemacs-[0-9]*:../../editors/xemacs
