@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/12/21 12:47:29 agc Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/10 01:39:02 wiz Exp $
 #
 
 DISTNAME=	tclticker-1.1
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/apps/tclticker/1.1/
 MAINTAINER=	packages@netbsd.org
 #HOMEPAGE=	
 
-DEPENDS+=	tk-8.0.5:../../x11/tk80
+DEPENDS+=	tk-8.3.2:../../x11/tk
 
 NO_BUILD=	yes
 
