@@ -1,4 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 1998/06/07 19:48:47 frueauf Exp $
 bin/pico
+bin/pilot
 lib/libpico.a
 man/man1/pico.1
+man/man1/pilot.1
