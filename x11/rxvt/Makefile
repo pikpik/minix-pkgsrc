@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/08/25 21:52:45 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2002/10/26 18:02:16 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
 #
 
@@ -6,6 +6,7 @@ DISTNAME=		rxvt-2.7.3
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.rxvt.org/pub/rxvt/ \
 			ftp://ftp.rxvt.org/pub/rxvt/devel/ \
+			ftp://ftp.rxvt.org/pub/rxvt/old/ \
 			ftp://mason.primenet.com.au/pub/rxvt/
 EXTRACT_SUFX=		.tar.bz2
 
