@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/07/01 21:40:27 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2001/08/22 17:38:57 jlam Exp $
 # FreeBSD ID: Makefile,v 1.5 1997/09/08 13:37:47 tg Exp
 #
 
@@ -19,5 +19,5 @@ post-patch:
 			$$file.orig > $$file;				\
 	done
 
-.include "../../x11/lesstif/buildlink.mk"
+.include "../../mk/motif.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
