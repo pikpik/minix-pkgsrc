@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2004/01/31 13:56:09 chris Exp $
+# $NetBSD: Makefile,v 1.60 2004/03/02 20:44:15 chris Exp $
 
 DISTNAME=	sylpheed-0.9.10
 CATEGORIES=	mail news x11
@@ -65,7 +65,6 @@ post-install:
 
 .include "../../converters/libiconv/buildlink2.mk"
 .include "../../devel/gettext-lib/buildlink2.mk"
-.include "../../converters/libiconv/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
 .include "../../security/gpgme03/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"
