@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 1998/06/27 23:39:24 frueauf Exp $
 bin/ant
 bin/atlantis
 bin/attraction
@@ -14,6 +14,7 @@ bin/cynosure
 bin/decayscreen
 bin/deco
 bin/discrete
+bin/distort
 bin/drift
 bin/epicycle
 bin/fadeplot
@@ -36,6 +37,7 @@ bin/interference
 bin/jigsaw
 bin/julia
 bin/kaleidescope
+bin/kumppa
 bin/laser
 bin/lightning
 bin/lisa
