@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/10/17 00:06:47 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/27 07:31:11 rh Exp $
 #
 
 DISTNAME=		xmms-mad-0.0.9
@@ -9,7 +9,6 @@ MASTER_SITES=		http://www.superduper.net/downloads/xmms-mad/
 MAINTAINER=		jmcneill@netbsd.org
 HOMEPAGE=		http://www.superduper.net/xmms-mad/
 COMMENT=		Input plugin for XMMS that uses libmad
-
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
