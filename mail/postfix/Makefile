@@ -1,19 +1,14 @@
-# $NetBSD: Makefile,v 1.156 2004/12/28 02:47:45 reed Exp $
+# $NetBSD: Makefile,v 1.158 2005/03/22 10:40:08 cjs Exp $
 
-DISTNAME=	postfix-2.1.5
-PKGREVISION=	5
+DISTNAME=	postfix-2.2.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/
-DIST_SUBDIR=	postfix
-
-CLASS_PATCH=		postfix-2.1.1-canonical_classes-with_docs.diff
-PATCHFILES+=		${CLASS_PATCH}
-SITES_${CLASS_PATCH}=	ftp://ftp.gw.com/pub/people/kim/patches/
-PATCH_DIST_STRIP.${CLASS_PATCH}=	-p1
 
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.postfix.org/
 COMMENT=	Postfix SMTP server and tools
+
+DIST_SUBDIR=	postfix
 
 CONFLICTS+=	sendmail-[0-9]* fastforward>=0.51nb2
 
