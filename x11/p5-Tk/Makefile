@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/03/22 12:27:19 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2004/04/04 08:53:48 mason Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/09/14 04:00:00 jfitz Exp
 #
 
@@ -14,10 +14,10 @@ COMMENT=	Perl5 interface to Tk
 
 BUILD_DEPENDS= 	p5-HTML-Parser>=3.19:../../www/p5-HTML-Parser
 
-USE_BUILDLINK2=		YES
-USE_X11=		YES
-PERL5_REQD=		5.8
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Tk/.packlist
+USE_BUILDLINK3=	YES
+USE_X11=	YES
+PERL5_REQD=	5.8
+PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Tk/.packlist
 
 MAKE_PARAMS=	X11=${X11BASE}
 
