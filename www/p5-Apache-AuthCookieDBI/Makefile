@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 19:24:22 he Exp $
 #
 
 DISTNAME=	Apache-AuthCookieDBI-1.19
 PKGNAME=	p5-${DISTNAME}
-CATEGORIES=	www
+CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
 
 MAINTAINER=	tegk-pkg@NetBSD.org
