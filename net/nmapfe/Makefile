@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:17 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/08/03 12:45:51 hubertf Exp $
 
 DISTNAME=	nmap-3.00
 PKGNAME=	nmapfe-0.9.5
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+=--prefix=${PREFIX}
 .if ${OPSYS} == "SunOS"
 MAKE_ENV+=      CPPFLAGS=""
 .endif
-
 
 do-build:
 	cd ${WRKSRC}/nbase ; ${SETENV} ${BUILD_ENV} ${MAKE}
