@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/08/20 15:17:09 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 1998/11/13 14:06:01 drochner Exp $
 #
 # New ports collection makefile for:	hint
 # Version required:	12 June 1998 (no version stamp)
@@ -24,5 +24,8 @@ ALL_TARGET=	DOUBLE
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/DOUBLE ${PREFIX}/bin/hint
 	${INSTALL_MAN} ${WRKSRC}/hint.1 ${PREFIX}/man/man1
+
+benchmark:
+	cd ${WRKSRC} ; mkdir -p data ; ./DOUBLE
 
 .include "../../mk/bsd.pkg.mk"
