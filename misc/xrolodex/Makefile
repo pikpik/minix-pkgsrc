@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/27 07:06:02 garbled Exp $
 
 DISTNAME=		xrolodex.1.5.motif
 PKGNAME=		xrolodex-1.5
