@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:16:58 agc Exp $
+$NetBSD$
 
-MD5 (Bonnie.tar.Z) = 23f73cd45caabb510b4f2bdc6dfa6ff0
+SHA1 (Bonnie.tar.Z) = 11387dd47cd046413083d4c99e1857bd961de9fe
+Size (Bonnie.tar.Z) = 14202 bytes
 SHA1 (patch-aa) = a66447e5fc512fe211250240cc6627c7bb4ce4cb
 SHA1 (patch-ab) = e2f2294f9c65dac318afb30cf84145eb280353c6

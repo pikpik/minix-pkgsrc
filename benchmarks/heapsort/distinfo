@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1998/10/22 06:07:24 garbled Exp $
+$NetBSD$
 
-MD5 (heapsort.c) = c0623d55d703dc1bbdb1cd46bc637e9e
+SHA1 (heapsort.c) = 78d6ee3715a6250213b948bf7450b53520811e4c
+Size (heapsort.c) = 17563 bytes

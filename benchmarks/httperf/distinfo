@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/03/16 22:53:29 thorpej Exp $
+$NetBSD$
 
-MD5 (httperf-0.6.tar.gz) = d67ee49eb06e14d0bf8dbf5bce954c5b
+SHA1 (httperf-0.6.tar.gz) = 6e0bcc21e2a94061b231c50182528a17ba22f14f
+Size (httperf-0.6.tar.gz) = 85351 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1998/10/22 06:23:09 garbled Exp $
+$NetBSD$
 
-MD5 (nsieve.c) = 6fdcc587905d7ab364b03115b5268d2e
+SHA1 (nsieve.c) = 003ec02c832fc2e53810d85451f178d194b80d93
+Size (nsieve.c) = 22452 bytes

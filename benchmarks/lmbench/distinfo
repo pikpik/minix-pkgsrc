@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.1 1998/08/30 17:46:26 garbled Exp $
+$NetBSD$
 
-MD5 (lmbench-2alpha11.tgz) = e30ebe7c813bc049567eb16f13a0b12b
+SHA1 (lmbench-2alpha11.tgz) = 7480815b8f8d4000647db59eb6160e9dbac06490
+Size (lmbench-2alpha11.tgz) = 464956 bytes
 SHA1 (patch-aa) = 97536e7dfab285e1a942c89882e8eca156cc346e
 SHA1 (patch-ab) = b25c659fd808535738591892c552b062bb7e7e8f
 SHA1 (patch-ac) = 2aa73fbf3119db95ca483f676bd3f3c2fd25c8f6
