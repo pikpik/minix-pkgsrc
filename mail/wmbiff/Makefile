@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/21 12:35:54 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/31 12:57:07 tron Exp $
 
 DISTNAME=	wmbiff-0.4.13
 CATEGORIES=	mail x11
@@ -19,7 +19,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${EX_DIR}
 	${INSTALL_DATA} ${WRKSRC}/wmbiff/sample.wmbiffrc ${EX_DIR}
 
-.include "../../devel/rx/buildlink2.mk"
 .include "../../graphics/xpm/buildlink2.mk"
 .include "../../wm/windowmaker/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
