@@ -1,0 +1,10 @@
+@comment $NetBSD$
+include/linda/linda.h
+lib/libinda.a
+lib/libinda.la
+lib/libinda.so
+lib/libinda.so.0
+lib/libinda.so.0.0
+lib/pkgconfig/linda.pc
+@dirrm lib/pkgconfig
+@dirrm include/linda
