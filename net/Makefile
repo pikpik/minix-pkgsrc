@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.178 2001/01/11 01:46:53 mjl Exp $
+# $NetBSD: Makefile,v 1.179 2001/01/13 23:33:00 tron Exp $
 #
 
     SUBDIR += adns
@@ -68,6 +68,7 @@
     SUBDIR += netcat
     SUBDIR += netname
     SUBDIR += netperf
+    SUBDIR += netsaint-base
     SUBDIR += ngrep
     SUBDIR += nmap
     SUBDIR += nmapfe
