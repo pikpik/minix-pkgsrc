@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2001/06/01 11:36:01 skrll Exp $
+# $NetBSD: Makefile,v 1.30 2001/07/01 22:45:04 abs Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
 
 SUBDIR+=	bsdpak
+SUBDIR+=	buildlink-x11
 SUBDIR+=	cdpack
 SUBDIR+=	digest
 SUBDIR+=	gensolpkg
