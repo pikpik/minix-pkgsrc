@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2001/08/15 21:10:37 agc Exp $
+# $NetBSD: Makefile,v 1.103 2001/09/02 20:15:15 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -16,6 +16,7 @@ SUBDIR+=	colorize
 SUBDIR+=	colorls
 SUBDIR+=	colortail
 SUBDIR+=	cowsay
+SUBDIR+=	cstream
 SUBDIR+=	cuecat
 SUBDIR+=	dgpsip
 SUBDIR+=	dialog
