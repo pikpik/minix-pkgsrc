@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 1999/11/11 12:56:01 agc Exp $
+# $NetBSD: Makefile,v 1.89 1999/11/25 01:59:55 itojun Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -108,6 +108,7 @@
 #    SUBDIR += p5-Include
 #    SUBDIR += p5-IniConf
 #    SUBDIR += p5-Ioctl
+    SUBDIR += p5-IO-stringy
     SUBDIR += p5-MLDBM
     SUBDIR += p5-PV
 #    SUBDIR += p5-Penguin
