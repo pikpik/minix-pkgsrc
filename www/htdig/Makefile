@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/06/02 01:16:05 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2003/07/17 22:55:36 grant Exp $
 
 DISTNAME=	htdig-3.1.6
 CATEGORIES=	www databases
@@ -24,7 +24,8 @@ CONFIGURE_ARGS=	--with-cgi-bin-dir=${PREFIX}/libexec/cgi-bin \
 		--with-database-dir=/var/db/htdig \
 		--with-image-dir=${PREFIX}/share/examples/htdig \
 		--with-search-dir=${PREFIX}/share/examples/htdig
-CPPFLAGS+=	-I${PREFIX}/include/db2
+CXXFLAGS+=	-Wno-deprecated
+CPPFLAGS+=	-I${PREFIX}/include/db2 ${CXXFLAGS}
 PLIST_SUBST=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
 
 post-patch:
