@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2001/07/13 07:09:17 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/07/29 14:25:05 bouyer Exp $
 
 DISTNAME=	imp-2.2.6
 CATEGORIES=	mail www
 MASTER_SITES=	ftp://ftp.horde.org/pub/imp/tarballs/
 
-MAINTAINER=	jlam@netbsd.org
+MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://www.horde.org/imp/
 COMMENT=	Internet Messaging Program
 
