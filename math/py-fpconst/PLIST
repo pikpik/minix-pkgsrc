@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/fpconst.py
+${PYSITELIB}/fpconst.pyc
+${PYSITELIB}/fpconst.pyo
