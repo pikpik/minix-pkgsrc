@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.6 2003/01/07 09:51:10 grant Exp $
 
 --- Makefile.in.orig	Tue Dec 21 21:07:54 1999
 +++ Makefile.in
@@ -7,7 +7,7 @@ $NetBSD$
  dummy:
  
 -subdirs = src doc rclock src/graphics src/test
-+subdirs = src
++subdirs = src doc
  
  DIST =	INSTALL README.configure configure Makefile Makefile.in ChangeLog
  
