@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/06/06 05:46:22 jtb Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/05 13:25:44 seb Exp $
 
 DISTNAME=		gpc-2.1
-PKGREVISION=		2
+PKGREVISION=		3
 WRKSRC=			${WRKDIR}/gcc-2.95.3
 CATEGORIES=		lang
 MASTER_SITES=		http://www.gnu-pascal.de/current/ \
