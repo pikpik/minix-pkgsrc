@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- topbox/src/Resources.h.orig	Fri Oct 10 06:22:12 1997
++++ topbox/src/Resources.h	Thu May 17 16:58:23 2001
+@@ -61,7 +61,7 @@
+     sizeof(char *),
+     XtOffset(AppDataPtr,helpFile),
+     XtRImmediate,
+-    "/usr/local/lib/rosegarden/rosehelp.info",
++    RGLIBDIR"/help/rosehelp.info"
+   },
+   {
+     XtNhelpTextFont,
