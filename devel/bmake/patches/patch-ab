@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- machine.sh.orig	Mon Feb 18 10:05:46 2002
++++ machine.sh	Mon Feb 18 10:06:09 2002
+@@ -38,6 +38,7 @@
+ case $OS in
+ *BSD)
+ 	MACHINE=$OS$OSMAJOR.$machine
++	MACHINE_ARCH=`uname -p 2>/dev/null`
+ 	;;
+ SunOS)
+         MACHINE=$OS$OSMAJOR
