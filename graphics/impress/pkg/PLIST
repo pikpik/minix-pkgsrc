@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/impress
+bin/transeps
+bin/font3d
