@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/Makefile.orig	Tue Mar 13 21:57:31 2001
++++ src/Makefile
+@@ -23,7 +23,7 @@
+ 	$(CC) $(GFLAGS) $(OPT) -c $<
+ 
+ $(BINARY): $(OBJS)
+-	$(CC) $(OBJS) $(GLIBS) $(ID3_LIB) $(OPT) -o $(BINARY)
++	$(CC) $(OBJS) $(GLIBS) $(ID3_LIB) $(OPT) -lz -lstdc++ -o $(BINARY)
+ 
+ 
+ 
