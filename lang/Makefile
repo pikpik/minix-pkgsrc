@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2003/03/22 20:23:04 kristerw Exp $
+# $NetBSD: Makefile,v 1.149 2003/04/29 23:19:47 jtb Exp $
 #
 
 COMMENT=	Programming languages
@@ -27,6 +27,7 @@ SUBDIR+=	egcs
 SUBDIR+=	eieio
 SUBDIR+=	elisp-manual
 SUBDIR+=	elk
+SUBDIR+=	erlang
 SUBDIR+=	f2c
 SUBDIR+=	fort77
 SUBDIR+=	gauche
