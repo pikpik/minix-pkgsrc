@@ -1,16 +1,18 @@
-# $NetBSD: Makefile,v 1.8 1998/05/06 09:51:02 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/22 13:12:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.17 1997/12/08 15:45:27 tg Exp
 #
 
-DISTNAME=		rman-3.0.5
-CATEGORIES=		textproc
-MASTER_SITES=		ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
-EXTRACT_SUFX=		.tar.Z
+DISTNAME=	rman-3.0.6
+CATEGORIES=	textproc
+MASTER_SITES=	ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
+EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=	packages@netbsd.org
 
-NO_CDROM=		"License required"
-MIRROR_DISTFILE=	no
+CONFLICTS=	rman-3.0.5
+
+RESTRICTED=	"Permission to incorporate this software into commercial products is needed."
+NO_CDROM=	"License required"
 
 post-install:
 	@strip ${PREFIX}/bin/rman
