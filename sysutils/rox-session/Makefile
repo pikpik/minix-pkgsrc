@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/10 16:06:49 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/05 00:29:43 wiz Exp $
 #
 
 DISTNAME=	ROX-Session-0.1.14
@@ -16,8 +16,9 @@ DEPENDS+=	rox>=1.2.0nb2:../../sysutils/rox
 
 DIST_SUBDIR=	rox
 
-USE_BUILDLINK2=		yes
-GNU_CONFIGURE=		yes
+USE_BUILDLINK2=	yes
+GNU_CONFIGURE=	yes
+USE_X11=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/ROX-Session/src
 
