@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/02/17 09:20:25 grant Exp $
-bin/xmill
+@comment $NetBSD: PLIST,v 1.2 2004/03/29 05:12:01 ben Exp $
+bin/xcmill
 bin/xdemill
 bin/xmillexample
 bin/xmillinspect
