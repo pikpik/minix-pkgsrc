@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.572 2004/11/20 04:20:45 minskim Exp $
+# $NetBSD: Makefile,v 1.573 2004/11/26 21:55:12 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -489,6 +489,7 @@ SUBDIR+=	rt3
 SUBDIR+=	ruby-amstd
 SUBDIR+=	ruby-bsearch
 SUBDIR+=	ruby-byaccr
+SUBDIR+=	ruby-curses
 SUBDIR+=	ruby-filelock
 SUBDIR+=	ruby-installpkg
 SUBDIR+=	ruby-mode
@@ -503,6 +504,7 @@ SUBDIR+=	ruby-testunit
 SUBDIR+=	ruby-textbuf
 SUBDIR+=	ruby-unit
 SUBDIR+=	ruby-zlib
+SUBDIR+=	ruby16-curses
 SUBDIR+=	rudiments
 SUBDIR+=	rvm
 SUBDIR+=	rx
