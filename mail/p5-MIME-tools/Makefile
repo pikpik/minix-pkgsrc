@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/11/26 06:50:04 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/12/10 15:36:57 martti Exp $
 #
 
 DISTNAME=       MIME-tools-5.411a
-PKGNAME=        p5-${DISTNAME}
+PKGNAME=        p5-${DISTNAME:S/a/.1/}
 SVR4_PKGNAME=	p5mit
 CATEGORIES=	perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=MIME/}
