@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2001/09/24 20:03:47 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/13 21:23:43 jlam Exp $
 
-DISTNAME=	koffice-1.1
+DISTNAME=	koffice-1.1.1
 CATEGORIES=	misc kde
-MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/koffice-1.1/src/ \
-		ftp://ftp.us.kde.org/pub/kde/stable/koffice-1.1/src/ \
-		ftp://ftp.de.kde.org/pub/kde/stable/koffice-1.1/src/
+MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/koffice-1.1.1/src/ \
+		ftp://ftp.us.kde.org/pub/kde/stable/koffice-1.1.1/src/ \
+		ftp://ftp.de.kde.org/pub/kde/stable/koffice-1.1.1/src/
 
 .include "../../x11/kde2/Makefile.kde2"
 
