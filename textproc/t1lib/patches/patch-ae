@@ -1,7 +1,7 @@
-$NetBSD: patch-ae,v 1.1.1.1 1998/11/05 08:26:03 garbled Exp $
+$NetBSD$
 
---- lib/t1lib/Makefile.in.orig	Wed Nov  4 16:23:04 1998
-+++ lib/t1lib/Makefile.in	Wed Nov  4 16:23:24 1998
+--- lib/t1lib/Makefile.in.orig	Wed Aug  4 05:59:24 1999
++++ lib/t1lib/Makefile.in	Sat Nov 13 22:25:24 1999
 @@ -14,7 +14,7 @@
  #
  # Modified by H.Kakugawa to use libtool
