@@ -1,0 +1,10 @@
+@comment $NetBSD: PLIST,v 1.1 1997/11/06 09:57:40 proff Exp $
+share/festival/lib/dicts/cmu/cmulex.scm
+share/festival/lib/dicts/cmu/cmu_lts_rules.scm
+share/festival/lib/dicts/cmu/cmudict-0.4.out
+share/festival/lib/dicts/cmu/Makefile
+share/festival/lib/dicts/cmu/cmudict-0.4.scm
+share/festival/lib/dicts/cmu/cmudict-0.4.diff
+share/festival/lib/dicts/cmu/cmu2ft
+share/festival/lib/dicts/cmu/cmudict_extensions.scm
+@dirrm share/festival/lib/dicts/cmu
