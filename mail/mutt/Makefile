@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2000/06/21 07:00:16 tron Exp $
+# $NetBSD: Makefile,v 1.52 2000/07/07 06:28:04 tron Exp $
 
 DISTNAME=	mutt-1.2.4i
 CATEGORIES=	mail
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.mutt.org/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf:../../devel/autoconf
 BUILD_DEPENDS+=	${LOCALBASE}/bin/automake:../../devel/automake
+DEPENDS+=	gettext-*:../../devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
