@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:15:42 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/09 00:10:59 minskim Exp $
 #
 
 DISTNAME=	xscavenger-1.4.4
@@ -17,7 +17,7 @@ USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 
-CPPFLAGS+=	-DSOUNDDEV=\\\"${DEVOSSSOUND}\\\"
+CPPFLAGS+=	-DSOUNDDEV="\"${DEVOSSSOUND}\""
 
 INSTALLATION_DIRS=	man/man6
 
