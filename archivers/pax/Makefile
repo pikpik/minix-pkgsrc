@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/06/26 13:31:47 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/07/03 02:50:32 grant Exp $
 #
 
 DISTNAME=		pax-20040703
@@ -20,8 +20,15 @@ NO_PKG_REGISTER=        # defined
 NO_PACKAGE=             Deinstallation is not permitted
 PKG_PRESERVE=           # defined
 
+.include "../../mk/bsd.prefs.mk"
+
 do-extract:
 	@${CP} -Rp ${FILESDIR} ${WRKSRC}
 
-.include "../../pkgtools/libnbcompat/buildlink3.mk"
+.if defined(LIBNBCOMPAT_STYLE) && (${LIBNBCOMPAT_STYLE} == "inplace")
+.  include "../../pkgtools/libnbcompat/inplace.mk"
+.else
+.  include "../../pkgtools/libnbcompat/buildlink3.mk"
+.endif
+
 .include "../../mk/bsd.pkg.mk"
