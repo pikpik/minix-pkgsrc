@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/10/04 03:00:11 itojun Exp $
+# $NetBSD: Makefile,v 1.35 2003/03/03 02:51:03 jschauma Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/07/13 18:49:29 max Exp
 #
 
@@ -16,6 +16,10 @@ USE_IMAKE=		# defined
 XAW_TYPE?=		3d
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Linux"
+USE_GMAKE=		YES
+.endif
 
 # We need Xaw3d to build.
 .if ${XAW_TYPE} == "standard"
