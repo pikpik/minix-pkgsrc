@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/09/10 23:46:22 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2002/09/11 13:51:31 schmonz Exp $
 #
 
 DISTNAME=	jini-1_2_1-src
@@ -43,7 +43,7 @@ _FETCH_MESSAGE=	\
 	${ECHO} ; \
 	${ECHO} " The file ${DISTNAME}${EXTRACT_SUFX} containing the Jini(TM)"; \
 	${ECHO} " Technology Starter Kit must be fetched into ${DISTDIR} from "; \
-	${ECHO} " ${DOWNLOAD}."; \
+	${ECHO} " ${DOWNLOAD}"; \
 	${ECHO} ; \
 	${ECHO} "======================================================================"
 
