@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/flawfinder
+man/man1/flawfinder.1
