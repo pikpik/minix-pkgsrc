@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/03/29 12:40:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2003/07/17 21:32:57 grant Exp $
 
 DISTNAME=		p5-perl-headers
 PKGNAME=		${DISTNAME}-${OS_VERSION}
@@ -15,8 +15,9 @@ COMMENT=		Perl header files
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/.packlist.h2ph
 
-EXTRACT_ONLY=		# empty
-NO_CHECKSUM=		# defined
+EXTRACT_ONLY=		yes
+NO_CHECKSUM=		yes
+OSVERSION_SPECIFIC=     yes
 
 # Since this package will be named, for instance, p5-perl-headers-1.5.1,
 # binary packages on a FTP server (where only "1.5" is used as the directory
