@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gtop
+share/gnome/apps/Utilities/gtop.desktop
+share/gtoprc
