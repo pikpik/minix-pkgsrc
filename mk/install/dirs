@@ -1,5 +1,7 @@
 #!@SH@
 #
+# $NetBSD$
+#
 # +DIRS - reference-counted directory management script
 #
 # Usage: ./+DIRS ADD|REMOVE [metadatadir]

@@ -1,5 +1,7 @@
 #!@SH@
 #
+# $NetBSD$
+#
 # +USERGROUP - users and groups management script
 #
 # Usage: ./+USERGROUP ADD|REMOVE [metadatadir]
