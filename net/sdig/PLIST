@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/sdig
+bin/nbname
+share/doc/sdig.README
+share/examples/sdig.conf
+share/misc/mactable
