@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/03/19 12:39:27 tron Exp $
 
 DISTNAME=	ffmpeg-0.4.5
 CATEGORIES=	graphics net
@@ -13,7 +13,7 @@ BUILD_DEPENDS+=	nasm>=0.98:../../devel/nasm
 HAS_CONFIGURE=	YES
 USE_GMAKE=	YES
 
-CONFIGURE_ARGS=	--cc=${CC} --disable-grab --prefix=${PREFIX}
+CONFIGURE_ARGS=	--cc=${CC} --disable-grab --disable-mmx --prefix=${PREFIX}
 WRKSRC=		${WRKDIR}/ffmpeg
 
 post-install:
