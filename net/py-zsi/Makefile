@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/24 10:30:33 recht Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/10 14:47:29 recht Exp $
 #
 
 DISTNAME=	ZSI-1.4.1
@@ -22,5 +22,5 @@ post-extract:
 		${WRKSRC}/scripts/wsdl2py-${PYVERSSUFFIX}
 
 .include "../../lang/python/extension.mk"
-.include "../../textproc/pyxml/buildlink2.mk"
+.include "../../textproc/py-xml/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
