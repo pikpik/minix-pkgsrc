@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2000/05/12 18:20:17 drochner Exp $
+# $NetBSD: Makefile,v 1.25 2000/07/20 13:30:59 rh Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
 #
 
@@ -21,12 +21,14 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_WRKSUBDIR=		yes
 EXTRACT_CMD=		${DOWNLOADED_DISTFILE} >/dev/null
 
-KERNEL=			/`env "PATH=${PATH}:/sbin:/usr/sbin" sysctl -n machdep.booted_kernel`
+.ifndef KERNEL
+KERNEL!=	env "PATH=${PATH}:/sbin:/usr/sbin" sysctl -n machdep.booted_kernel
+.endif
 
 pre-extract:
-	@if (${NM} ${KERNEL} | ${GREP} -q compat_12 && \
-		${NM} ${KERNEL} | ${GREP} -q exec_nomid && \
-		${NM} ${KERNEL} | ${GREP} -q exec_aout); then ${TRUE}; \
+	@if (${NM} /${KERNEL} | ${GREP} -q compat_12 && \
+		${NM} /${KERNEL} | ${GREP} -q exec_nomid && \
+		${NM} /${KERNEL} | ${GREP} -q exec_aout); then ${TRUE}; \
 	else \
 		${ECHO} "****************************************************************";\
 		${ECHO} Make can not proceed! In order to extract \(and run\); \
