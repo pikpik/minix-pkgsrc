@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2002/05/03 21:31:02 jtb Exp $
+# $NetBSD: Makefile,v 1.17 2002/10/25 17:58:33 wiz Exp $
 
-DISTNAME=		pl-lite-5.0.5
-PKGNAME=		swi-prolog-5.0.5
+DISTNAME=		pl-lite-5.0.10
+PKGNAME=		swi-prolog-5.0.10
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.swi.psy.uva.nl/SWI-Prolog/
 
