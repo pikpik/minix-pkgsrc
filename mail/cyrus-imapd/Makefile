@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/08/25 12:35:40 veego Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/25 15:25:37 jlam Exp $
 
 DISTNAME=		cyrus-imapd-1.6.24
 CATEGORIES=		mail
@@ -13,7 +13,7 @@ DEPENDS+=		cyrus-sasl-1.5.24:../../security/cyrus-sasl
 ONLY_FOR_PLATFORM=	NetBSD-1.5*-* \
 			SunOS-*-*
 
-USE_PERL=		yes
+USE_PERL5=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-cyrus-prefix=${PREFIX}/cyrus

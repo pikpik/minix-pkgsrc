@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/07/13 11:09:16 abs Exp $
+# $NetBSD: Makefile,v 1.8 2000/07/13 15:34:10 abs Exp $
 #
 
 DISTNAME=	nocol-4.3.1
@@ -9,7 +9,7 @@ MASTER_SITES= 	http://www.netplex-tech.com/software/nocol/downloads/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.netplex-tech.com/software/nocol/
 
-USE_PERL=	yes
+USE_PERL5=	yes
 
 INSTALL_TARGET=	install root
 
