@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1999/03/06 21:31:42 tron Exp $
 bin/audiofile-config
 bin/sfconvert
 bin/sfinfo
+include/af_vfs.h
 include/audiofile.h
 include/aupvlist.h
 lib/libaudiofile.a
