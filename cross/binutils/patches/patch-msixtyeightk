@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-m68k,v 1.1 2001/01/24 11:24:12 tsutsui Exp $
 
 --- ./ld/configure.tgt.orig	Sat Dec  9 21:17:55 2000
 +++ ./ld/configure.tgt	Sat Dec  9 21:25:20 2000
