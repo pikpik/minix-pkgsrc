@@ -1,4 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2002/10/30 10:37:35 seb Exp $
+# $NetBSD: Makefile,v 1.25 2003/06/02 01:16:08 jschauma Exp $
+#
+# NOTE:	Versions 1.27 and 1.28 cause apache to dump core,
+#	so this packages has been left at version 1.25
 #
 
 DISTNAME=		mod_perl-1.25
