@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/07/28 16:26:12 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 17:37:19 wiz Exp $
 
 DISTNAME=       dictd-1.4.9
 PKGNAME=        dict-client-1.4.9
@@ -16,7 +16,8 @@ GNU_CONFIGURE=	yes
 ALL_TARGET=	dict
 INSTALL_TARGET=	install.dict
 
-FILESDIR=	${.CURDIR}/../dict-server/files
-PATCHDIR=	${.CURDIR}/../dict-server/patches
+FILESDIR=	${.CURDIR}/../../textproc/dict-server/files
+PATCHDIR=	${.CURDIR}/../../textproc/dict-server/patches
+DISTINFO_FILE=	${.CURDIR}/../../textproc/dict-server/distinfo
 
 .include "../../mk/bsd.pkg.mk"
