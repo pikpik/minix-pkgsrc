@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/08/24 12:24:30 hwr Exp $
+# $NetBSD: Makefile,v 1.4 2000/04/21 06:46:11 sakamoto Exp $
 #
 
 DISTNAME=	global-3.55
@@ -9,6 +9,7 @@ MAINTAINER=	abs@netbsd.org
 HOMEPAGE=	http://www.tamacom.com/global/
 
 USE_PERL5=	yes
+MANCOMPRESSED_IF_MANZ=	yes
 
 LDFLAGS+=	-L../libutil
 MAKE_ENV+=      LIBDIR="${PREFIX}/lib"
