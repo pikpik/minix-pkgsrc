@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/03/23 14:11:23 tron Exp $
+# $NetBSD: Makefile,v 1.7 2001/03/24 21:10:12 tron Exp $
 #
 
 DISTNAME=	patch-2.5.4
@@ -14,9 +14,21 @@ GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if exists(/usr/bin/patch) && ${OPSYS} != "SunOS"
-IGNORE=		"${PKGNAME} is part of your NetBSD distribution"
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	--program-prefix=g
+PROGRAM_PREFIX=		g
+.else
+PROGRAM_PREFIX=
 .endif
+
+PLIST_SUBST+=		PROGRAM_PREFIX=${PROGRAM_PREFIX}
+
+post-extract:
+	${MV} ${WRKSRC}/pch.c ${WRKSRC}/pch.c.orig
+	${SED}  -e '/#include <pch.h>/a\' -e '#include <sys/param.h>'	\
+		-e 's/^#if HAVE_SETMODE/#if defined(HAVE_SETMODE) \&\& (!(defined(BSD) \&\& BSD >= 199306))/' \
+		< ${WRKSRC}/pch.c.orig 					\
+		> ${WRKSRC}/pch.c
 
 .include "../../mk/bsd.pkg.mk"
 
