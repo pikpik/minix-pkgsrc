@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/12/28 00:11:45 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/12/28 00:16:11 wiz Exp $
 #
 
 DISTNAME=	vifm-0.1
@@ -15,7 +15,7 @@ USE_BUILDLINK2=	yes
 USE_GMAKE=	yes
 
 INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
-INCOMPAT_CURSES=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-C]*
+INCOMPAT_CURSES+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-C]*
 
 pre-configure:
 	@${SED} -e "s/cfg.use_screen = 0/cfg.use_screen = 1/" \
