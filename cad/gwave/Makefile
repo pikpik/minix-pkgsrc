@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2000/08/30 17:49:36 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/31 17:21:58 dmcmahill Exp $
 #
 
-DISTNAME=	gwave-20000809
+DISTNAME=	gwave-20001123
 CATEGORIES=	cad
 MASTER_SITES=	http://www.cs.unc.edu/~tell/dist/
 
