@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/26 04:47:05 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/12/03 15:15:05 wiz Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/ \
 		ftp://avian.org/src/hacks/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	kim@tac.nyc.ny.us
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.atstake.com/research/tools/network_utilities/
 COMMENT=	Read and write data across network connections
 
