@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.3081 2003/08/23 16:43:46 recht Exp $
+$NetBSD: CHANGES,v 1.3082 2003/08/23 19:42:00 seb Exp $
 
 Changes to the packages collection and infrastructure in 2003:
 
@@ -3315,3 +3315,4 @@ Changes to the packages collection and infrastructure in 2003:
 	Updated mbmon to 2.03 [recht 2003-03-23]
 	Updated xmbmon to 2.03 [recht 2003-03-23]
 	Updated pkgdiff to 0.113 [seb 2003-03-23]
+	Updated imapfilter to 0.9.2 [seb 2003-03-23]
