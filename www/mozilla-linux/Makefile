@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/03/26 18:12:02 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:42:51 jmmv Exp $
 #
 
 DISTNAME=		mozilla-i686-pc-linux-gnu-1.3
@@ -31,11 +31,11 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/mozilla.sh ${PREFIX}/bin/mozilla-linux
 
 post-install:
-	${CP} -f ${PKGDIR}/PLIST ${PLIST_SRC}
-	${FIND} ${MOZILLA_LIB} \( -type f -o -type l \) -print		\
+	@${CP} -f ${PKGDIR}/PLIST ${PLIST_SRC}
+	@${FIND} ${MOZILLA_LIB} \( -type f -o -type l \) -print		\
 		| ${SORT} | ${SED} -e "s,${PREFIX}/,,g"			\
 		>> ${PLIST_SRC}
-	${FIND} ${MOZILLA_LIB} -type d -print				\
+	@${FIND} ${MOZILLA_LIB} -type d -print				\
 		| ${SORT} -r | ${SED} -e "s,${PREFIX}/,@dirrm ,g"	\
 		>> ${PLIST_SRC}
 
