@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/02/03 13:51:27 abs Exp $
+# $NetBSD: Makefile,v 1.35 2004/03/10 22:24:48 tron Exp $
 
 DISTNAME=	bidwatcher-1.3.13
 CATEGORIES=	misc
@@ -10,7 +10,7 @@ COMMENT=        eBay snipe tool
 
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 
 DOCDIR=		${PREFIX}/share/doc/bidwatcher
 HTMLDIR=	${PREFIX}/share/doc/html/bidwatcher
@@ -23,5 +23,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/quick_start.html ${HTMLDIR}
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
