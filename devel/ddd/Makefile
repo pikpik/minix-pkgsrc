@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/06/02 11:29:28 agc Exp $
 # Id: Makefile,v 1.5 1998/02/19 09:43:16 obrien Exp
 #
 
@@ -47,4 +47,4 @@ post-install:
 check:
 	(cd ${WRKSRC} ; ${GMAKE} check)
 
-.include <bsd.port.mk>
+.include "../../mk/bsd.pkg.mk"
