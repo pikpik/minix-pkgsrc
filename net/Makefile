@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.297 2002/05/06 00:03:37 hubertf Exp $
+# $NetBSD: Makefile,v 1.298 2002/05/07 22:25:25 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -58,6 +58,7 @@ SUBDIR+=	firewalk-gtk
 SUBDIR+=	fmirror
 SUBDIR+=	fping
 SUBDIR+=	freewais-sf
+SUBDIR+=	ftpproxy
 SUBDIR+=	gated
 SUBDIR+=	gftp
 SUBDIR+=	gkrellm-ping
