@@ -35,7 +35,7 @@ $NetBSD$
  INSTALL_MAN_DIR=	${INSTALL} -d -m 0555 -g wheel -o root
  INSTALL_DATA_DIR=	${INSTALL} -d -m 0555 -g wheel -o root
  
-@@ -230,21 +230,10 @@ install:
+@@ -230,21 +230,9 @@ install:
  	${INSTALL_PROGRAM} ipa ipastat ${DSTBINDIR}
  	${INSTALL_MAN} man/ipa.5 man/ipa.conf.5 ${DSTMANDIR}/man5
  	${INSTALL_MAN} man/ipa.8 man/ipastat.8 ${DSTMANDIR}/man8
@@ -50,7 +50,7 @@ $NetBSD$
 -.endif
 -	${INSTALL_MAN} man/ru_RU.KOI8-R/ipa.5 man/ru_RU.KOI8-R/ipa.conf.5 ${DSTMANDIR}/ru_SU.KOI8-R/man5
 -	${INSTALL_MAN} man/ru_RU.KOI8-R/ipa.8 man/ru_RU.KOI8-R/ipastat.8 ${DSTMANDIR}/ru_SU.KOI8-R/man8
- 	${INSTALL_DATA_DIR} ${DSTEXAMPLEDIR}
+-	${INSTALL_DATA_DIR} ${DSTEXAMPLEDIR}
  	${INSTALL_DATA} examples/* ${DSTEXAMPLEDIR}
  .if exists(${DSTRCDIR})
 -	${INSTALL_SCRIPT} etc/ipa.sh.sample ${DSTRCDIR}
