@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/jhead
+share/doc/html/jhead/usage.html
+@dirrm share/doc/html/jhead
