@@ -58,6 +58,7 @@
     SUBDIR += pacman
 #    SUBDIR += qcc
 #    SUBDIR += quakeserver
+    SUBDIR += rollemup
 #    SUBDIR += sokoban
     SUBDIR += spellcast
 #    SUBDIR += spider
