@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2001/02/28 22:34:54 jtb Exp $
+# $NetBSD: Makefile,v 1.55 2001/03/07 15:54:26 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -32,6 +32,7 @@ SUBDIR+=	ntl
 SUBDIR+=	octave
 SUBDIR+=	odepack
 SUBDIR+=	otter
+SUBDIR+=	pari
 SUBDIR+=	p5-BigInteger
 SUBDIR+=	p5-Interpolate
 SUBDIR+=	p5-MatrixReal
