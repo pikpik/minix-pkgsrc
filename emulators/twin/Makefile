@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/22 08:36:04 grant Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/03 15:14:56 wiz Exp $
 #
 
 DISTNAME=		twin-src-3.1.14
@@ -18,19 +18,12 @@ USE_X11=		yes
 BUILD_TARGET=		depend world
 AUTOCONF_REQD=		2.13
 CONFIGURE_ARGS=		--enable-debugger
-PLIST_SRC=		${WRKDIR}/PLIST
 
 pre-configure:
 	cd ${WRKSRC} && ${AUTORECONF} --force
 
 pre-build:
 	${CP} ${WRKSRC}/windows/Execfreebsd.c ${WRKSRC}/windows/Execnetbsd.c
-
-pre-install:
-	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
-.if exists(${PKGDIR}/PLIST.${MACHINE_ARCH})
-	@${CAT} ${PKGDIR}/PLIST.${MACHINE_ARCH} >> ${PLIST_SRC}
-.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/twin
