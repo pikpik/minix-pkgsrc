@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2002/12/06 18:26:38 grant Exp $
+# $NetBSD: Makefile,v 1.57 2002/12/18 17:42:51 jmmv Exp $
 #
 
 COMMENT=	communication programs
@@ -50,6 +50,7 @@ SUBDIR+=	p5-Net-Goofey
 SUBDIR+=	p5-Net-ICQ2000
 SUBDIR+=	pircbot
 SUBDIR+=	psi
+SUBDIR+=	roxirc
 SUBDIR+=	scrollz
 SUBDIR+=	silc-client
 SUBDIR+=	silc-server
