@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/05/18 11:30:24 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2002/05/30 14:21:23 zuntum Exp $
 #
 
 DISTNAME=	mailsync_4.3-2
@@ -16,6 +16,12 @@ USE_GMAKE=	yes
 ALL_TARGET=	default
 
 WRKSRC=		${WRKDIR}/mailsync-4.3
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+CFLAGS+=	-fno-operator-names
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mailsync ${PREFIX}/bin
