@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/06/02 01:20:01 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/06/29 22:19:13 jtb Exp $
 
 DISTNAME=		zile-1.6.2
 CATEGORIES=		editors
@@ -11,8 +11,9 @@ COMMENT=		Emacs-like text editor
 GNU_CONFIGURE=		yes
 USE_NCURSES=		# KEY_RESIZE (also uses stdscr->_delay directly)
 USE_BUILDLINK2= 	yes
+USE_NEW_TEXINFO=	YES
+USE_MAKEINFO=		YES
 INFO_FILES=		zile.info
 
 .include "../../devel/ncurses/buildlink2.mk"
-.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
