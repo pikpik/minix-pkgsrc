@@ -1,4 +1,4 @@
-# $NetBSD: defs.SunOS.mk,v 1.32 2002/10/23 12:21:30 wiz Exp $
+# $NetBSD: defs.SunOS.mk,v 1.33 2002/10/27 18:27:11 bouyer Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -130,8 +130,3 @@ ZOULARISBASE:=		${LOCALBASE}
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 .endif
 PKG_TOOLS_BIN?=		${ZOULARISBASE}/bin
-
-.if ${X11BASE} == "/usr/openwin"
-HAVE_OPENWINDOWS=	YES
-.endif
-
