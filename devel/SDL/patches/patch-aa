@@ -39,7 +39,17 @@ $NetBSD$
  
  usbend:
  	/* The poll blocks the event thread. */
-@@ -529,9 +534,9 @@ report_alloc(struct report *r, struct re
+@@ -456,7 +461,8 @@ SDL_SYS_JoystickUpdate(SDL_Joystick *joy
+ 			    } else if (usage == HUG_HAT_SWITCH) {
+ 				v = (Sint32)hid_get_data(REP_BUF_DATA(rep),
+ 							 &hitem);
+-				SDL_PrivateJoystickHat(joy, 0, hatval_to_sdl(v));
++				SDL_PrivateJoystickHat(joy, 0,
++					hatval_to_sdl(v)-hitem.logical_minimum);
+ 			    }
+ 			    break;
+ 			}
+@@ -529,9 +535,9 @@ report_alloc(struct report *r, struct re
  #endif
  #else
  # ifdef USBHID_NEW
