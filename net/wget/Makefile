@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2003/12/08 21:44:35 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2004/02/14 17:21:49 jlam Exp $
 
 DISTNAME=	wget-1.9.1
 CATEGORIES=	net
@@ -24,6 +24,7 @@ FIX_RPATH+=		OPENSSL_LDFLAGS
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ENV+=		OPENSSL_LDFLAGS="${OPENSSL_LDFLAGS}"
+CONFIGURE_ENV+=		ac_cv_func_sigsetjmp=yes
 
 EGDIR=			${PREFIX}/share/examples/wget
 CONF_FILES=		${EGDIR}/wgetrc ${PKG_SYSCONFDIR}/wgetrc
