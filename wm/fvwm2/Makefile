@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2002/10/11 06:16:49 martti Exp $
+# $NetBSD: Makefile,v 1.26 2002/11/03 09:01:03 martti Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
@@ -75,4 +75,5 @@ CONFIGURE_ARGS+=    --without-gtk-prefix
 .endif
 
 .include "../../devel/readline/buildlink2.mk"
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
