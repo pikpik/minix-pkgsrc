@@ -1,0 +1,6 @@
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:56:05 zuntum Exp $
+bin/powwow
+man/man6/powwow.6
+share/powwow/powwow.doc
+share/powwow/powwow.help
+@dirrm share/powwow
