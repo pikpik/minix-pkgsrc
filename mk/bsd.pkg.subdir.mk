@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.subdir.mk,v 1.47 2002/03/04 19:41:05 fredb Exp $
+#	$NetBSD: bsd.pkg.subdir.mk,v 1.48 2002/05/29 14:55:22 yyamano Exp $
 #	Derived from: FreeBSD Id: bsd.port.subdir.mk,v 1.19 1997/03/09 23:10:56 wosch Exp 
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
 #
@@ -172,7 +172,7 @@ README.html: .PRECIOUS
 
 show-comment:
 	@if [ "${COMMENT}" ]; then					\
-		${ECHO} "${COMMENT:S/"/''/}";				\
+		${ECHO} "${COMMENT:Q}";					\
 	elif [ -f COMMENT ] ; then					\
 		${CAT} COMMENT;						\
 	else								\
