@@ -2,7 +2,7 @@
 #
 # This Makefile fragment is included by packages that use xfce4-panel.
 #
-# This file was created automatically using createbuildlink 2.6.
+# This file was created automatically using createbuildlink 2.7.
 #
 
 .if !defined(XFCE4_PANEL_BUILDLINK2_MK)
@@ -33,12 +33,10 @@ BUILDLINK_FILES.xfce4-panel+=	lib/xfce4/panel-plugins/libseparator.*
 BUILDLINK_FILES.xfce4-panel+=	lib/xfce4/panel-plugins/libswitcher.*
 BUILDLINK_FILES.xfce4-panel+=	lib/xfce4/panel-plugins/libsystembuttons.*
 
-.include "../../devel/pkgconfig/buildlink2.mk"
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../x11/xfce4-mcs-plugins/buildlink2.mk"
 .include "../../x11/startup-notification/buildlink2.mk"
 .include "../../devel/glib2/buildlink2.mk"
-.include "../../devel/pkgconfig/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	xfce4-panel-buildlink
 

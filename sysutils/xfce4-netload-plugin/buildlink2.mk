@@ -2,7 +2,7 @@
 #
 # This Makefile fragment is included by packages that use xfce4-netload-plugin.
 #
-# This file was created automatically using createbuildlink 2.6.
+# This file was created automatically using createbuildlink 2.7.
 #
 
 .if !defined(XFCE4_NETLOAD_PLUGIN_BUILDLINK2_MK)
@@ -18,7 +18,6 @@ BUILDLINK_FILES.xfce4-netload-plugin+=	lib/xfce4/panel-plugins/libnetload.*
 
 .include "../../x11/xfce4-panel/buildlink2.mk"
 .include "../../devel/glib2/buildlink2.mk"
-.include "../../devel/pkgconfig/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	xfce4-netload-plugin-buildlink
 
