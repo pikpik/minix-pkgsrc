@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/05/06 16:26:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2003/05/07 11:28:01 jmmv Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.06
@@ -10,6 +10,8 @@ MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/5.x/
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.adobe.com/prodindex/acrobat/readstep.html
 COMMENT=	View, distribute and print PDF documents
+
+CONFLICTS+=	acroread-5.*
 
 RESTRICTED=	"Original installer required to redistribute."
 NO_SRC_ON_CDROM=	${RESTRICTED}
