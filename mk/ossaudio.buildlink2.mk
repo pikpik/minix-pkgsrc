@@ -1,31 +1,37 @@
-# $NetBSD: ossaudio.buildlink2.mk,v 1.3 2002/09/26 12:31:08 jlam Exp $
+# $NetBSD: ossaudio.buildlink2.mk,v 1.4 2002/09/27 15:17:18 rh Exp $
 
 .if !defined(OSSAUDIO_BUILDLINK2_MK)
 OSSAUDIO_BUILDLINK2_MK=	# defined
 
 .include "../../mk/bsd.prefs.mk"
 
+_OSS_INSTALLED!=	if ${PKG_INFO} -qe oss; then echo YES; else echo NO; fi
+
+.if ${_OSS_INSTALLED} == "YES"
+.  include "../../audio/oss/buildlink2.mk"
+.else
 BUILDLINK_PREFIX.ossaudio=	/usr
 BUILDLINK_FILES.ossaudio=	include/sys/soundcard.h
 BUILDLINK_FILES.ossaudio+=	include/machine/soundcard.h
 BUILDLINK_FILES.ossaudio+=	lib/libossaudio.*
 
-BUILDLINK_TARGETS+=		ossaudio-buildlink
-BUILDLINK_TARGETS+=		ossaudio-buildlink-soundcard-h
-
-.if ${OPSYS} == "NetBSD"
+.  if ${OPSYS} == "NetBSD"
 LIBOSSAUDIO?=			-lossaudio
 DEVOSSAUDIO?=			/dev/audio
-.elif ${OPSYS} == "Linux"
+.  elif ${OPSYS} == "Linux"
 LIBOSSAUDIO?=			# empty
 DEVOSSAUDIO?=			/dev/dsp
-.else
+.  else
 LIBOSSAUDIO?=			# empty
 DEVOSSAUDIO?=			/dev/audio
+.  endif
 .endif
 
 MAKE_ENV+=			LIBOSSAUDIO="${LIBOSSAUDIO}"
 MAKE_ENV+=			DEVOSSAUDIO="${DEVOSSAUDIO}"
+
+BUILDLINK_TARGETS+=		ossaudio-buildlink
+BUILDLINK_TARGETS+=		ossaudio-buildlink-soundcard-h
 
 ossaudio-buildlink: _BUILDLINK_USE
 
