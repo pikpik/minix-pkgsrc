@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 16:43:45 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/05 03:42:32 grant Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -10,7 +10,7 @@ COMMENT=	Line editing support for Python
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/readline.c
 
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		yes
 USE_GNU_READLINE=	# defined
 
 PYDISTUTILSPKG=	yes
@@ -26,7 +26,7 @@ do-patch:
 	${PATCH} --batch <$$f || true; \
 	done)
 
-.include "../../devel/readline/buildlink2.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/srcdist.mk"
 .include "../../mk/bsd.pkg.mk"
