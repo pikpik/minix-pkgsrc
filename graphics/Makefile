@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.195 2002/07/25 10:54:57 wiz Exp $
+# $NetBSD: Makefile,v 1.196 2002/08/28 19:40:52 seb Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -90,6 +90,7 @@ SUBDIR+=	ivtools
 SUBDIR+=	jasper
 SUBDIR+=	jhead
 SUBDIR+=	jpeg
+SUBDIR+=	jpeg2ps
 SUBDIR+=	kdegraphics
 SUBDIR+=	kdegraphics2
 SUBDIR+=	kdegraphics3
