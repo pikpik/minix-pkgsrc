@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.289 2005/03/20 16:56:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.290 2005/03/22 16:10:43 jmmv Exp $
 
 COMMENT=	System utilities
 
@@ -149,7 +149,6 @@ SUBDIR+=	rfstool
 SUBDIR+=	roller
 SUBDIR+=	rox
 SUBDIR+=	rox-archive
-SUBDIR+=	rox-base
 SUBDIR+=	rox-edit
 SUBDIR+=	rox-lib
 SUBDIR+=	rox-memo
