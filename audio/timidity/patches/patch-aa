@@ -1,8 +1,8 @@
 $NetBSD$
 
---- timidity/sun_a.c.orig	Wed Jan  9 11:13:16 2002
+--- timidity/sun_a.c.orig	2002-07-19 00:43:58.000000000 +0000
 +++ timidity/sun_a.c
-@@ -69,7 +69,11 @@
+@@ -70,7 +70,11 @@
  #define SUNAUDIO_AENC_SIGWORD	AENC_SIGWORDB
  #endif
  
