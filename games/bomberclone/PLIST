@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/bomberclone
+share/doc/bomberclone/AUTHORS
+share/doc/bomberclone/COPYING
+share/doc/bomberclone/ChangeLog
+share/doc/bomberclone/INSTALL
+share/doc/bomberclone/NEWS
+share/doc/bomberclone/README
+share/doc/bomberclone/TODO
+@dirrm share/doc/bomberclone

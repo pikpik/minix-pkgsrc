@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	2003-06-12 22:53:17.000000000 +0200
++++ Makefile.in
+@@ -85,7 +85,7 @@ install_sh = @install_sh@
+ 
+ SUBDIRS = src
+ 
+-bomberclonedocdir = ${prefix}/doc/bomberclone
++bomberclonedocdir = ${prefix}/share/doc/bomberclone
+ bomberclonedoc_DATA = \
+ 	README\
+ 	COPYING\
