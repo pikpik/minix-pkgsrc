@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.155 2002/07/11 11:41:28 tron Exp $
+# $NetBSD: Makefile,v 1.157 2002/08/20 15:45:56 grant Exp $
 
 COMMENT=	System utilities
 
@@ -48,6 +48,7 @@ SUBDIR+=	gkrellm
 SUBDIR+=	gkx86info
 SUBDIR+=	gmc
 SUBDIR+=	gnome-vfs
+SUBDIR+=	gnome-vfs2
 SUBDIR+=	gnometoaster
 SUBDIR+=	gpart
 SUBDIR+=	grub
