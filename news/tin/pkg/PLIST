@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/rtin
+bin/tin
+man/man1/tin.1
