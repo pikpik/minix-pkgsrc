@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:02 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.3 2003/02/18 14:12:15 jmmv Exp $
 
 .if !defined(INTLTOOL_BUILDLINK2_MK)
 INTLTOOL_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=		intltool
-BUILDLINK_DEPENDS.intltool?=	intltool>=0.18
+BUILDLINK_DEPENDS.intltool?=	intltool>=0.25nb1
 BUILDLINK_PKGSRCDIR.intltool?=	../../textproc/intltool
 BUILDLINK_DEPMETHOD.intltool?=	build
 
