@@ -1,3 +1,4 @@
+$NetBSD$
 --- xdvipresent.orig	Thu May 22 11:08:43 2003
 +++ xdvipresent	Thu May 22 11:09:48 2003
 @@ -57,6 +57,11 @@
