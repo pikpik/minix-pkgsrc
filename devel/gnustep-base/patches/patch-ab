@@ -1,8 +1,8 @@
-$NetBSD: patch-ab,v 1.1 2002/09/27 23:56:30 rh Exp $
+$NetBSD$
 
---- base.make.in.orig	Thu Jun 27 00:34:16 2002
+--- base.make.in.orig	2003-01-03 21:14:46.000000000 +0100
 +++ base.make.in
-@@ -40,6 +40,7 @@ ifeq ($(FOUNDATION_LIB),gnu)
+@@ -41,6 +41,7 @@ ifeq ($(FOUNDATION_LIB),gnu)
  
    FND_LDFLAGS =
    FND_LIBS = -lgnustep-base

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/11/12 03:39:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 21:30:52 grant Exp $
 #
 
-DISTNAME=		gnustep-base-1.6.0
-PKGREVISION=		4
+DISTNAME=		gnustep-base-1.8.0
 CATEGORIES=		devel gnustep
 MASTER_SITES=		ftp://ftp.gnustep.org/pub/gnustep/core/
 
@@ -32,12 +31,13 @@ pre-configure:
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/openapp ${PREFIX}/bin
 
-.include "../../devel/gmp/buildlink2.mk"
-.include "../../devel/ffcall/buildlink2.mk"
-.include "../../devel/gnustep-objc/buildlink2.mk"
 .include "../../converters/libiconv/buildlink2.mk"
-.include "../../textproc/libxml2/buildlink2.mk"
+.include "../../devel/ffcall/buildlink2.mk"
+.include "../../devel/gmp/buildlink2.mk"
+.include "../../devel/gnustep-objc/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"
+.include "../../textproc/libxml2/buildlink2.mk"
+
 .include "../../mk/pthread.buildlink2.mk"
 
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "pth")
