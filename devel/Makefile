@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.171 2001/02/20 09:14:14 jun Exp $
+# $NetBSD: Makefile,v 1.172 2001/02/20 09:53:43 jun Exp $
 #
 
 COMMENT=	Development utilities
@@ -122,6 +122,7 @@ SUBDIR+=	p5-IO-Tty
 SUBDIR+=	p5-LDAP
 SUBDIR+=	p5-MLDBM
 SUBDIR+=	p5-PV
+SUBDIR+=	p5-Safe-Hole
 SUBDIR+=	p5-Storable
 SUBDIR+=	p5-Term-ReadKey
 SUBDIR+=	p5-Time-HiRes
