@@ -1,0 +1,2 @@
+@comment $NetBSD$
+@unexec ${RMDIR} %D/share/mc 2>/dev/null || ${TRUE}
