@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2004/08/27 06:29:07 jlam Exp $
+# $NetBSD: Makefile,v 1.56 2004/10/03 00:13:16 tv Exp $
 
 DISTNAME=	cku211
 PKGNAME=	kermit-8.0.211
@@ -15,7 +15,7 @@ LICENSE=	kermit-license
 .include "../../mk/bsd.prefs.mk"
 
 WRKSRC=		${WRKDIR}
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 USE_BUILDLINK3=	YES
 BUILD_DEFS+=	KERMIT_SUID_UUCP KFLAGS LIBS MANINSTALL
 MAKE_ENV+=	KFLAGS="${KFLAGS}" LIBS="${LIBS}"
