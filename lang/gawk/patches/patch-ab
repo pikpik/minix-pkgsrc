@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.6 2002/12/12 03:17:14 dmcmahill Exp $
 
 --- Makefile.in.orig	Mon Apr 29 10:36:46 2002
 +++ Makefile.in
@@ -7,7 +7,7 @@ $NetBSD$
  DEFPATH = "\".$(PATH_SEPARATOR)$(awkdatadir)\""
  
 -DEFS = -DDEFPATH=$(DEFPATH) -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR="\"$(datadir)/locale\""
-+DEFS = -DDEFPATH=$(DEFPATH) -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR="\"/usr/pkg/share/locale\""
++DEFS = -DDEFPATH=$(DEFPATH) -DHAVE_CONFIG_H -DGAWK -DLOCALEDIR="\"$(prefix)/$(PKGLOCALEDIR)/locale\""
  
  INCLUDES = -I$(srcdir)/intl
  
