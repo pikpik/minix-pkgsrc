@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/09/02 21:35:50 christos Exp $
+# $NetBSD: Makefile,v 1.11 2000/02/12 16:07:08 fredb Exp $
 #
 
 DISTNAME=	libtool-1.3.4
@@ -8,7 +8,9 @@ MASTER_SITES=	${MASTER_SITE_GNU:=libtool/}
 MAINTAINER=	tv@netbsd.org
 HOMEPAGE=	http://www.profitpress.com/libtool/
 
+CONFLICTS=	glibtool-*
 GNU_CONFIGURE=	yes
+
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
