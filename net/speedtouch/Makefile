@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2003/11/07 11:06:17 abs Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/07 11:17:58 abs Exp $
 #
 
 DISTNAME=	speedtouch-1.2-beta2
 PKGREVISION=	2
 CATEGORIES=	net
-MASTER_SITES=	http://osdn.dl.sourceforge.net/sourceforge/speedtouch/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=speedtouch/} \
 		http://www.alcatel.com/consumer/dsl/
 DISTFILES=	${DISTNAME}.tar.bz2 speedmgmt.tar.gz
 
