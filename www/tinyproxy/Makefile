@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/23 07:41:07 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/03/26 02:27:58 wiz Exp $
 #
 
 DISTNAME=	tinyproxy-1.6.2
@@ -10,7 +10,7 @@ MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://tinyproxy.sourceforge.net/
 COMMENT=	Lightweight HTTP/SSL proxy
 
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 GNU_CONFIGURE=	YES
 
@@ -54,5 +54,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/filter-howto.txt \
 		${PREFIX}/share/doc/tinyproxy/
 
-.include "../../security/openssl/buildlink2.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
