@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2000/06/12 22:38:51 wulf Exp $
+# $NetBSD: Makefile,v 1.49 2000/06/21 11:44:24 bouyer Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -36,7 +36,7 @@
     SUBDIR += ocaml
     SUBDIR += p2c
     SUBDIR += perl5
-#    SUBDIR += perl5-currrent		# disabled by default
+#    SUBDIR += perl5-current		# disabled by default
     SUBDIR += py-extclass
     SUBDIR += py-html-docs
     SUBDIR += python
