@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/10/03 07:43:11 xtraeme Exp $
+# $NetBSD: Makefile,v 1.15 2003/10/03 08:09:20 xtraeme Exp $
 #
 
 DISTNAME=	xchat-2.0.5
@@ -29,6 +29,8 @@ CONFIGURE_ARGS+=	--enable-textfe
 CONFIGURE_ARGS+=	--enable-tcl=no
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
+
+LDFLAGS.IRIX+=		-lX11
 
 .include "../../mk/bsd.prefs.mk"
 
