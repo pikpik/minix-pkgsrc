@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2004/11/08 11:10:00 shannonjr Exp $
+# $NetBSD: Makefile,v 1.7 2004/11/12 06:39:20 jlam Exp $
 #
 
-DISTNAME=		librfuncs-1.0.5
+DISTNAME=		librfuncs-1.0.6
 CATEGORIES=		devel
 MASTER_SITES=		http://www.johnrshannon.com/NetBSD/
 EXTRACT_SUFX=		.tar.bz2
