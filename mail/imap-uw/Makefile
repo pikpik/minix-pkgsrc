@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2002/03/18 17:30:23 fredb Exp $
+# $NetBSD: Makefile,v 1.41 2002/06/21 14:13:36 abs Exp $
 
 DISTNAME=       imap-2001a
 PKGNAME=        imap-uw-2001.1
@@ -24,7 +24,9 @@ DOC_DIR=	${PREFIX}/share/doc/imap-uw
 .if ${OPSYS} == "SunOS"
 ALL_TARGET=	gso
 .elif ${OPSYS} == "Linux"
-ALL_TARGET=     lrh
+ALL_TARGET=	lrh
+.elif ${OPSYS} == "Darwin"
+ALL_TARGET=	osx
 .else
 ALL_TARGET=	neb
 .endif
