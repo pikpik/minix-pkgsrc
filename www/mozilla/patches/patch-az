@@ -1,8 +1,8 @@
 $NetBSD$
 
 diff -ru ../Orig/mozilla/directory/c-sdk/ldap/include/portable.h ./directory/c-sdk/ldap/include/portable.h
---- ../Orig/mozilla/directory/c-sdk/ldap/include/portable.h	Sat Jul 28 07:02:31 2001
-+++ ./directory/c-sdk/ldap/include/portable.h	Sat Aug  4 10:38:30 2001
+--- ../Orig/mozilla/directory/c-sdk/ldap/include/portable.h	Wed Aug 15 16:14:54 2001
++++ ./directory/c-sdk/ldap/include/portable.h	Sun Sep 16 20:47:15 2001
 @@ -98,7 +98,7 @@
   * some systems don't have the BSD re_comp and re_exec routines
   */
