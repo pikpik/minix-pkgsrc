@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/05/16 10:05:35 agc Exp $
+# $NetBSD: Makefile,v 1.7 2002/02/12 19:56:51 mjl Exp $
 #
 
 DISTNAME=	jikes-1.15
@@ -11,9 +11,9 @@ COMMENT=	Java source to byte-code compiler
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-*
 
-CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
-
-GNU_CONFIGURE=	yes
+USE_BUILDLINK_ONLY=	yes
+GNU_CONFIGURE=		yes
+CXXFLAGS+=		${CFLAGS}
 
 USE_GMAKE=	# uses multi-line comments with \ (naughty hack!)
 
