@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/13 13:53:12 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/24 15:00:22 grant Exp $
 #
 
 DISTNAME=		otpCalc-0.96
@@ -12,7 +12,7 @@ COMMENT=		OTP and S/Key calculator for X
 
 GNU_CONFIGURE=		YES
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 
 ALL_TARGET=		otpCalc otpCalc.1
 
@@ -20,5 +20,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/otpCalc ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/otpCalc.1 ${PREFIX}/man/man1
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
