@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $NetBSD: tomcat.sh,v 1.5 2001/05/24 16:06:43 abs Exp $
+# $NetBSD: tomcat.sh,v 1.6 2002/05/17 13:24:57 abs Exp $
 #
 # PROVIDE: tomcat
 # REQUIRE: DAEMON
@@ -77,8 +77,12 @@ then
 			$0 start
 			;;
 
+		flush)
+			cd ${PREFIX}/tomcat/work && rm -rf */*
+			;;
+
 		*)
-			echo 1>&2 "Usage: $0 [restart|start|stop]"
+			echo 1>&2 "Usage: $0 [restart|start|stop|flush]"
 			exit 1
 			;;
 		esac
