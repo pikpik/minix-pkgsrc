@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.7 2001/12/01 15:08:03 jlam Exp $
 
 --- Makefile.in.orig	Tue Oct 17 00:15:53 2000
 +++ Makefile.in
@@ -7,7 +7,7 @@ $NetBSD$
  CC     = @CC@
  CFLAGS = @CFLAGS@
 -LIBS   = @LIBS@
-+LIBS   = @LIBS@ -lpng -ljpeg -lz -lttf -lintl -lXpm -lX11
++LIBS   = @LIBS@ -lpng -ljpeg -lz -lfreetype -lintl
  DEFS   = -DETCDIR=\"@ETCDIR@\" @DEFS@ @OPTS@
  LDFLAGS= @LDFLAGS@
  INSTALL= @INSTALL@
