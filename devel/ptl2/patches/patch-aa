@@ -1,5 +1,4 @@
-$NetBSD:$
-
+$NetBSD$
 --- Makefile.orig	Wed Mar 24 13:33:28 1999
 +++ Makefile	Thu Mar 25 01:03:04 1999
 @@ -7,13 +7,13 @@
