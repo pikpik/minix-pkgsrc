@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- ./pvm3/src/host.c.orig	Sat Jul 18 22:31:42 1998
++++ ./pvm3/src/host.c	Sat Jul 18 22:31:42 1998
+@@ -115,4 +115,5 @@
+ #include <sys/param.h>
+ #endif
++#include <sys/types.h>
+ #ifdef NEEDMENDIAN
+ #include <machine/endian.h>

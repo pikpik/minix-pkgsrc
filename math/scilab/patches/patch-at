@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- ./pvm3/src/msgbox.c.orig	Sat Jul 18 22:31:48 1998
++++ ./pvm3/src/msgbox.c	Sat Jul 18 22:31:47 1998
+@@ -128,4 +128,5 @@
+ 
+ #include <stdio.h>
++#include <sys/types.h>
+ #ifdef NEEDMENDIAN
+ #include <machine/endian.h>

@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- ./pvm3/src/lpvmgen.c.orig	Sat Jul 18 22:31:46 1998
++++ ./pvm3/src/lpvmgen.c	Sat Jul 18 22:31:46 1998
+@@ -411,4 +411,5 @@
+ 
+ #include <stdio.h>
++#include <sys/types.h>
+ #ifdef NEEDMENDIAN
+ #include <machine/endian.h>

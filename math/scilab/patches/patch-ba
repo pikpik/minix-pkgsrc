@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- ./pvm3/src/tdpro.c.orig	Sat Jul 18 22:31:53 1998
++++ ./pvm3/src/tdpro.c	Sat Jul 18 22:31:52 1998
+@@ -205,4 +205,5 @@
+ 
+ 
++#include <sys/types.h>
+ #ifdef NEEDMENDIAN
+ #include <machine/endian.h>
