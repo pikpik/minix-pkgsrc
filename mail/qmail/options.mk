@@ -1,9 +1,11 @@
+# $NetBSD$
+
 .if ${OPSYS} == "Darwin"
-PKG_OPTIONS.qmail+=	darwin
+PKG_DEFAULT_OPTIONS+=	darwin
 .endif
 
 .if ${OPSYS} == "Linux"
-PKG_OPTIONS.qmail+=	netqmail	# for the errno patches
+PKG_DEFAULT_OPTIONS+=	netqmail	# for the errno patches
 .endif
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.qmail
