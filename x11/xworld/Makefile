@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/02/05 22:19:45 wennmach Exp $
+# $NetBSD: Makefile,v 1.8 2004/02/06 16:26:23 minskim Exp $
 #
 
 DISTNAME=		xworld-2.0
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://gutemine.geo.uni-koeln.de/pub/xworld/ \
 MAINTAINER=		wennmach@NetBSD.org
 COMMENT=		Earth as seen from the direction of the sun
 
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
 USE_X11=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/03/08 19:40:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2004/04/05 13:27:00 tron Exp $
 
 DISTNAME=		gtk-engines-0.12
 PKGREVISION=		6
@@ -14,11 +14,11 @@ DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 CONFLICTS+=		gtk2-engines-*
 
 GNU_CONFIGURE=		# defined
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		yes
 USE_X11BASE=		# defined
 USE_LIBTOOL=		# defined
 SHLIBTOOL_OVERRIDE=	libtool
 
-.include "../../x11/gtk/buildlink2.mk"
-.include "../../graphics/imlib/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
+.include "../../graphics/imlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
