@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/imapfilter
+man/man1/imapfilter.1
+man/man5/imapfilterrc.5
+share/examples/imapfilter/sample.imapfilterrc
+@dirrm share/examples/imapfilter
