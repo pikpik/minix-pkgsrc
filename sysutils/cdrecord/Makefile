@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/05/25 08:22:50 frueauf Exp $
+# $NetBSD: Makefile,v 1.15 1998/06/22 13:09:50 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/11/05 23:55:31 asami Exp
 #
 
@@ -27,6 +27,5 @@ do-install:
 	 ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/cdrecord/cdrecord.1 ${PREFIX}/man/man1
 	@[ -e /dev/scgx ] || ${LN} -fs /dev/cd0d /dev/scgx
-	@${CAT} ${PKGDIR}/MESSAGE
 
 .include "../../mk/bsd.pkg.mk"

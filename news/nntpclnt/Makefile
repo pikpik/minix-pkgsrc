@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/15 10:38:41 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/06/22 13:00:14 agc Exp $
 #
 
 DISTNAME=	nntpclnt-1.6.1
@@ -23,6 +23,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/libnntpclnt.a ${PREFIX}/lib/
 	${INSTALL_DATA} ${WRKSRC}/nntpclnt.3 ${PREFIX}/man/man3/
 	${INSTALL_DATA_DIR} ${PREFIX}/etc/nntp
-	${CAT} ${PKGDIR}/MESSAGE
 
 .include "../../mk/bsd.pkg.mk"

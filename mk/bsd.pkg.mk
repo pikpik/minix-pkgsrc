@@ -569,16 +569,16 @@ IGNORE=	"is restricted: ${RESTRICTED}"
 IGNORE=	"uses X11, but ${X11BASE} not found"
 .elif defined(BROKEN)
 IGNORE=	"is marked as broken: ${BROKEN}"
-.elif defined(LICENSE)
-.ifdef ACCEPTABLE_LICENSES
-.for _lic in ${ACCEPTABLE_LICENSES}
-.if ${LICENSE} == "${_lic}"
+.elif defined(LICENCE)
+.ifdef ACCEPTABLE_LICENCES
+.for _lic in ${ACCEPTABLE_LICENCES}
+.if ${LICENCE} == "${_lic}"
 _ACCEPTABLE=	yes
 .endif
 .endfor	# _lic
-.endif	# ACCEPTABLE_LICENSES
+.endif	# ACCEPTABLE_LICENCES
 .ifndef _ACCEPTABLE
-IGNORE=	"Unacceptable license: ${LICENSE}"
+IGNORE=	"Unacceptable licence: ${LICENCE}"
 .endif
 .endif
 
@@ -1059,6 +1059,10 @@ _PORT_USE: .USE
 			fi;						\
 		done;							\
 	fi)
+.if exists(${PKGDIR}/MESSAGE)
+	@${ECHO_MSG} "===>   Please note the following:"
+	@${CAT} ${PKGDIR}/MESSAGE
+.endif
 .if !defined(NO_PKG_REGISTER)
 	@cd ${.CURDIR} && ${MAKE} ${.MAKEFLAGS} fake-pkg
 .endif # NO_PKG_REGISTER

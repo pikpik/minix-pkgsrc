@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 1998/07/10 20:07:17 tron Exp $
+# $NetBSD: Makefile,v 1.30 1998/07/13 13:09:36 mycroft Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -127,7 +127,6 @@ post-install:
 			-f ${SSH_CONF_DIR}/ssh_host_key -N ""; \
 	fi
 	${INSTALL_SCRIPT} ${WRKDIR}/sshd.sh ${PREFIX}/etc/rc.d/sshd.sh
-	@${CAT} ${PKGDIR}/MESSAGE
 
 # Include <bsd.pkg.mk> here.  It is essential to have all the override
 # targets precede inclusion of this.
