@@ -1452,6 +1452,10 @@ When choosing which of these variables to use, follow the following rules:
 
    where "GTKDIR" corresponds to the first definition in the EVAL_PREFIX pair.
 
+ * Within ${PREFIX}, packages should install files according to hier(7), with
+   the exception that manual pages go into ${PREFIX}/man, not
+   ${PREFIX}/share/man.
+
  7.2 Main targets
  ================
 
