@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.356 2005/01/09 11:27:53 seb Exp $
+# $NetBSD: Makefile,v 1.357 2005/01/13 12:59:01 jmmv Exp $
 #
 
 COMMENT=	Graphics tools and libraries
 
 SUBDIR+=	3DKit
+SUBDIR+=	CRWInfo
 SUBDIR+=	GLXKit
 SUBDIR+=	GMT
 SUBDIR+=	GUIlib
