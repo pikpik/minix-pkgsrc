@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.118 2002/09/24 13:54:36 wiz Exp $
+# $NetBSD: Makefile,v 1.119 2002/10/04 15:52:39 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -71,6 +71,7 @@ SUBDIR+=	p5-Digest-HMAC
 SUBDIR+=	p5-Digest-MD2
 SUBDIR+=	p5-Digest-MD4
 SUBDIR+=	p5-Digest-MD5
+SUBDIR+=	p5-Digest-Nilsimsa
 SUBDIR+=	p5-Digest-SHA1
 SUBDIR+=	p5-IO-Socket-SSL
 SUBDIR+=	p5-Net-SSLeay
