@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.21 2001/02/17 15:48:51 dmcmahill Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.22 2001/03/19 11:25:39 dmcmahill Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@netbsd.org>
@@ -206,7 +206,7 @@ bulk-package:
 		if [ "${PRECLEAN}" = "yes" -a "${USE_BULK_CACHE}" = "yes" ]; then \
 			${ECHO_MSG} "BULK> Removing installed packages which are not needed to build ${PKGNAME}" ; \
 			thisdir=`${AWK} '/ ${PKGNAME} / {print $$1}' ${INDEXFILE}`; \
-			for pkgname in `${PKG_INFO} | ${AWK} '{print $$1}'` ; \
+			for pkgname in `${PKG_INFO} -e \*` ; \
 			do \
 				pkgdir=`${GREP} " $$pkgname " ${INDEXFILE} | ${AWK} '{print $$1}'` ;\
 				if ${PKG_INFO} -qe $$pkgname ; then \
