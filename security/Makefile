@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.195 2004/09/04 14:13:11 seb Exp $
+# $NetBSD: Makefile,v 1.196 2004/09/05 10:01:32 grant Exp $
 #
 
 COMMENT=	Security tools
@@ -20,6 +20,7 @@ SUBDIR+=	beecrypt
 SUBDIR+=	bitstir
 SUBDIR+=	cfs
 SUBDIR+=	chkrootkit
+SUBDIR+=	corkscrew
 SUBDIR+=	crack
 SUBDIR+=	crypto++
 SUBDIR+=	cy-login
