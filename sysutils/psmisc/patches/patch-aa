@@ -1,8 +1,11 @@
 $NetBSD$
 
---- Makefile.orig	Mon Jul 28 10:28:00 1997
-+++ Makefile	Sun Jul 19 17:35:06 1998
-@@ -3,11 +3,11 @@
+--- Makefile.orig	Mon Jul 28 11:28:00 1997
++++ Makefile	Wed Jul 21 21:00:29 1999
+@@ -1,13 +1,13 @@
+ CC=cc
+-CFLAGS=-O -DPSMISC_VERSION=\"`cat VERSION`\" \
++CFLAGS=-O -Dunix -DPSMISC_VERSION=\"`cat VERSION`\" \
    -Wall -Wno-parentheses -Wwrite-strings -Wpointer-arith \
    # -Wcast-align -Wconversion -g
  LDFLAGS=#-s -N #-Xlinker -qmagic
