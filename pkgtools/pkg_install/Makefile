@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2004/01/15 01:40:13 grant Exp $
+# $NetBSD: Makefile,v 1.92 2004/02/09 04:52:10 jlam Exp $
 
 # Notes to package maintainers:
 #
@@ -48,6 +48,7 @@ CPPFLAGS+=		-DMACHINE_ARCH='\"${MACHINE_ARCH}\"'
 
 PKG_DBDIR?=		/var/db/pkg
 PKG_INFO=		PKG_DBDIR=${PKG_DBDIR} ${PKG_INFO_CMD}
+PKG_INFO=		PKG_DBDIR=${PKG_DBDIR} ${PKG_ADMIN_CMD}
 
 .include "../../mk/bsd.prefs.mk"
 
