@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.566 2000/09/07 15:26:52 fredb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.567 2000/09/09 18:45:16 fredb Exp $
 #
 # This file is in the public domain.
 #
@@ -3086,7 +3086,7 @@ fake-pkg: ${PLIST} ${DESCR}
 				continue ; 				\
 			fi ; 						\
 			if ${TEST} -z "$$realdep"; then			\
-				${ECHO} "$$dep not installed - NOT registered" ; \
+				${ECHO} "$$dep not installed - dependency NOT registered" ; \
 			elif [ -d ${PKG_DBDIR}/$$realdep ]; then	\
 				if ${TEST} ! -e ${PKG_DBDIR}/$$realdep/+REQUIRED_BY; then \
 					${TOUCH} ${PKG_DBDIR}/$$realdep/+REQUIRED_BY; \
