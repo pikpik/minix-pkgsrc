@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.1.1.1 2002/09/29 03:48:08 rh Exp $
+$NetBSD: distinfo,v 1.2 2003/12/05 11:27:01 adam Exp $
 
-SHA1 (GNUMail-1.1.1.tar.gz) = c97a92015ac909c0a2a3757008a397c987b53ca9
-Size (GNUMail-1.1.1.tar.gz) = 1048002 bytes
+SHA1 (GNUMail-1.1.2.tar.gz) = 311a53d724ea0aa4852b781aa909983242748b5c
+Size (GNUMail-1.1.2.tar.gz) = 1078949 bytes
