@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 #
 
 DISTNAME=	qt3-${QTVERSION}
