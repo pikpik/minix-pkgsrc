@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/09/08 12:26:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2003/10/13 12:12:57 jmmv Exp $
 #
 
 DISTNAME=	xmlcatmgr-1.1
@@ -11,6 +11,7 @@ COMMENT=	XML (and SGML) catalog manager
 
 USE_BUILDLINK2=	YES
 USE_PKGINSTALL=	YES
+USE_GNU_TOOLS=	awk
 
 MAKEFILE=	Makefile.boot
 MAKE_ENV+=	BT_PREFIX="${PREFIX}"
