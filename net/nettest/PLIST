@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nettest
+bin/nettestd
+man/man8/nettest.8
