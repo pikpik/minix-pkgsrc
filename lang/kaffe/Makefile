@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2001/03/19 17:07:16 wennmach Exp $
+# $NetBSD: Makefile,v 1.32 2001/04/24 12:40:07 skrll Exp $
 #
 
 DISTNAME=		kaffe-1.0.6
@@ -10,7 +10,7 @@ HOMEPAGE=		http://www.kaffe.org/
 COMMENT=		Virtual machine capable of running Java(tm) code
 
 DEPENDS+=		jpeg-6b:../../graphics/jpeg
-DEPENDS+=		png>1.0.9:../../graphics/png
+DEPENDS+=		png>=1.0.11:../../graphics/png
 DEPENDS+=		libungif-*:../../graphics/libungif
 DEPENDS+=		gmp>=3.0.0:../../devel/gmp
 

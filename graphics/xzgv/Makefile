@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/04/14 21:43:46 jtb Exp $
+# $NetBSD: Makefile,v 1.5 2001/04/22 21:35:50 jtb Exp $
 
 DISTNAME=	xzgv-0.7
 CATEGORIES=	graphics
@@ -13,7 +13,7 @@ DEPENDS+=	gtk+>=1.2.0:../../x11/gtk
 DEPENDS+=	glib-[0-9]*:../../devel/glib
 DEPENDS+=	libungif-[0-9]*:../../graphics/libungif
 DEPENDS+=	jpeg-[0-9]*:../../graphics/jpeg
-DEPENDS+=	png>1.0.9:../../graphics/png
+DEPENDS+=	png>=1.0.11:../../graphics/png
 DEPENDS+=	tiff-[0-9]*:../../graphics/tiff
 DEPENDS+=	imlib>=1.0:../../graphics/imlib
 
