@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/01/22 08:24:28 grant Exp $
+# $NetBSD: Makefile,v 1.36 2004/02/14 17:21:36 jlam Exp $
 #
 
 DISTNAME=		gc6.2
@@ -10,6 +10,9 @@ MASTER_SITES=		http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/
 MAINTAINER=		recht@NetBSD.org
 HOMEPAGE=		http://www.hpl.hp.com/personal/Hans_Boehm/gc/
 COMMENT=		Garbage collection and memory leak detection for C and C++
+
+
+NOT_FOR_PLATFORM=	*-*-amd64 *-*-x86_64
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
