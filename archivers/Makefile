@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.49 2002/11/18 15:21:12 cjep Exp $
+# $NetBSD: Makefile,v 1.50 2002/11/18 16:23:01 cjep Exp $
 #
 
 COMMENT=	Archivers
 
 SUBDIR+=	9e
 SUBDIR+=	arc
+SUBDIR+=	arj
 SUBDIR+=	bicom
 SUBDIR+=	bunzip
 SUBDIR+=	bzip2
