@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.342 2002/11/02 02:49:21 rh Exp $
+# $NetBSD: Makefile,v 1.343 2002/12/05 11:31:56 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -245,6 +245,7 @@ SUBDIR+=	tcpdpriv
 SUBDIR+=	tcpdstat
 SUBDIR+=	tcpdump
 SUBDIR+=	tcpillust
+SUBDIR+=	tcpreplay
 SUBDIR+=	tcpslice
 SUBDIR+=	tcptrace
 SUBDIR+=	tightvnc
