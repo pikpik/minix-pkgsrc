@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/10/08 13:12:25 wiz Exp $
 #
 
 .if !defined(LIBREP_BUILDLINK2_MK)
 LIBREP_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			librep
-BUILDLINK_DEPENDS.librep?=		librep>=0.15.1nb1
+BUILDLINK_DEPENDS.librep?=		librep>=0.15.1nb3
 BUILDLINK_PKGSRCDIR.librep?=		../../lang/librep
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.librep=librep
