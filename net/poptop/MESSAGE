@@ -1,3 +1,8 @@
+===========================================================================
+$NetBSD$
+
 If you have trouble getting this to operate properly and run
 NetBSD 1.6.x or earlier, try removing the "gre" network interface
 from your kernel!
+
+===========================================================================
