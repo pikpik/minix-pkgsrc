@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Fri Jan 15 19:46:33 1999
++++ Makefile.in	Wed Jan 27 20:47:54 1999
+@@ -66,7 +66,7 @@
+ GMSGFMT = @GMSGFMT@
+ GTK_CFLAGS = @GTK_CFLAGS@
+ GTK_CONFIG = @GTK_CONFIG@
+-GTK_LIBS = @GTK_LIBS@
++GTK_LIBS = @GTK_LIBS@ -lintl
+ GT_NO = @GT_NO@
+ GT_YES = @GT_YES@
+ INCLUDE_LOCALE_H = @INCLUDE_LOCALE_H@
