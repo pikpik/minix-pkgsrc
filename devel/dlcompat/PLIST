@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/dlfcn.h
+lib/libdl.0.dylib
+lib/libdl.a
+lib/libdl.dylib
