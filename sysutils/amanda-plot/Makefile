@@ -1,14 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2004/05/04 03:40:50 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/05/12 18:45:25 bouyer Exp $
 #
 
-DISTNAME=		amanda-2.4.4p2
-PKGNAME=		amanda-plot-2.4.4p2
+PKGNAME=		amanda-plot-${VERS}
 SVR4_PKGNAME=		amapl
-CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.cs.umd.edu/pub/amanda/
 
-MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.amanda.org/
 COMMENT=		Visualizes the behavior of Amanda, a network backup system
 
 DEPENDS+=		gnuplot>=3.7:../../graphics/gnuplot
