@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/cd_disect
+bin/cd_sessions
+bin/udfclient
+bin/udfdump
