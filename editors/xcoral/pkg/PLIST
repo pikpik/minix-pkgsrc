@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xcoral
 lib/xcoral/DEPEND
 lib/xcoral/README
