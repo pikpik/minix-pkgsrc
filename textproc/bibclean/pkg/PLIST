@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/.bibcleanrc
+bin/bibclean
+man/man1/bibclean.1
