@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- lg.pl.orig	Tue May 29 19:27:24 2001
++++ lg.pl
+@@ -1,4 +1,4 @@
+-#!/usr/pkg/bin/perl
++#!@PERL@
+ #
+ # lg.pl,v 1.2 2001/05/29 17:27:24 kim Exp
+ #
