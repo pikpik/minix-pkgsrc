@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/03/11 19:20:50 martin Exp $
+# $NetBSD: Makefile,v 1.6 2001/03/27 03:20:18 hubertf Exp $
 #
 
 DISTNAME=		nut-0.44.3-pre5
@@ -67,7 +67,7 @@ pre-install:
 
 post-install:
 	@${SED} -e "/%%PREFIX%%/s##${LOCALBASE}#g" \
-		files/upsd \
+		${FILESDIR}/upsd \
 		>${LOCALBASE}/etc/rc.d/upsd
 	@${CHMOD} 0755 ${LOCALBASE}/etc/rc.d/upsd
 	@${INSTALL} -d -o ${NUT_USER} -g ${NUT_GROUP} -m 0770 /var/db/nut
