@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/09/11 00:08:32 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/13 23:09:32 jlam Exp $
 
 DISTNAME=	hpijs-1.2.2
 CATEGORIES=	print
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		# defined
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-.  include "../../lang/gcc/Makefile.gcc"
+.  include "../../lang/gcc/buildlink2.mk"
 .endif
 
 .include "../../mk/bsd.pkg.mk"
