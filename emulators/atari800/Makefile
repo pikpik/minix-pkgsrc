@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2002/02/18 10:40:50 jmc Exp $
+# $NetBSD: Makefile,v 1.15 2002/11/22 12:25:48 wiz Exp $
 #
 
-DISTNAME=	atari800-1.2.4
+DISTNAME=	atari800-1.2.5
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=atari800/}
-DISTFILES=	atari800-1.2.4.tar.gz xf25.zip
+DISTFILES=	atari800-1.2.5.tar.gz xf25.zip
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://atari800.atari.org
@@ -23,7 +23,7 @@ USE_BUILDLINK2=		YES
 USE_GMAKE=		YES
 USE_X11=		YES
 
-EXTRACT_ONLY=	atari800-1.2.4.tar.gz
+EXTRACT_ONLY=	atari800-1.2.5.tar.gz
 MAKE_FLAGS=	LDFLAGS="${LDFLAGS} -L${X11BASE}/lib" OBJ="atari_x11.o" \
 		CFLAGS="-c ${CFLAGS} -DPREFIX=\\\"${PREFIX}\\\""
 #override HOME to avoid picking up a bad ${HOME}/.atari800 during the build
