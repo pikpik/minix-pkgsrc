@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.1 1998/04/28 11:05:52 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/22 13:00:14 agc Exp $
 #
 
-DISTNAME=	suck-3.9.3
+DISTNAME=	suck-3.9.4
 CATEGORIES=	news
 MASTER_SITES=	http://home.att.net/~bobyetman/
 MASTER_SITES+=	ftp://sunsite.unc.edu/pub/Linux/system/news/transport/
 MASTER_SITES+=	ftp://tsx-11.mit.edu/pub/linux/sources/sbin/
 
 MAINTAINER=	root@garbled.net
+
+CONFLICTS=	suck-3.9.3
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS= --prefix=${LOCALBASE}
