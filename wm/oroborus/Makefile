@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/08/28 20:05:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:27:35 agc Exp $
 #
 
 DISTNAME=	oroborus_2.0.12-1
@@ -11,10 +11,10 @@ HOMEPAGE=	http://www.oroborus.org/
 COMMENT=	Small and simple window manager for X
 
 WRKSRC=         ${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_X11=	YES
 
-.include "../../graphics/xpm/buildlink2.mk"
+.include "../../graphics/xpm/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

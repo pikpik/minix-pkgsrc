@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:33:59 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/11/10 14:51:04 gavan Exp $
 #
 
 DISTNAME=	bbpager-0.3.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://bbtools.thelinuxcommunity.org/available.phtml
 COMMENT=	Pager for the blackbox window manager
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 USE_X11=	YES
 USE_GCC_SHLIB=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/03 17:40:25 sketch Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:27:35 agc Exp $
 #
 
 DISTNAME=	evilwm_0.99.17.orig
@@ -11,7 +11,8 @@ HOMEPAGE=	http://evilwm.sourceforge.net/
 COMMENT=	Minimalist Window Manager for X
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}
-USE_X11=	YES
+USE_BUILDLINK3=	yes
+USE_X11=	yes
 
 ALL_TARGET=	allinone
 
