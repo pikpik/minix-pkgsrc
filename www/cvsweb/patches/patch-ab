@@ -14,3 +14,11 @@ $NetBSD$
  out Zeller's <a
  href="http://linux.fh-heilbronn.de/~zeller/cgi/cvsweb.cgi" >CVSweb
  distribution site</a>.  Bill's original script can be found <a
+@@ -508,6 +509,7 @@
+ @cvs_options = qw(-l);
+ 
+ push @cvs_options, '-R' if ($uname eq 'FreeBSD' || $uname eq 'OpenBSD');
++push @cvs_options, '-u' if ($uname eq 'NetBSD');
+ 
+ #      Only FreeBSD's and OpenBSD's cvs(1) supports -R (read only access
+ #      mode) option, which considerably speeds up checkouts over NFS.
