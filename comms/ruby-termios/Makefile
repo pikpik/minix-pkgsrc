@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/09/19 23:08:26 dent Exp $
+# $NetBSD: Makefile,v 1.7 2003/12/19 12:04:20 sketch Exp $
 #
 
 DISTNAME=	ruby-termios-0.9.4
@@ -9,7 +9,7 @@ MASTER_SITES=	http://arika.org/archive/
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://arika.org/ruby/termios
-COMMENT=	Ruby extention to termios library
+COMMENT=	Ruby extension to termios library
 
 DIST_SUBDIR=	ruby
 USE_RUBY_EXTCONF= yes
