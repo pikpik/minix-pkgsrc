@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 13:41:32 drochner Exp $
 #
 
 DISTNAME=	python-mk-1.0
@@ -17,6 +17,7 @@ NO_CHECKSUM=	# defined
 NO_CONFIGURE=	# defined
 NO_PATCH=	# defined
 NO_BUILD=	# defined
+NO_PACKAGE=	# defined
 
 PYMKFILE=	${FILESDIR}/bsd.python.mk
 
