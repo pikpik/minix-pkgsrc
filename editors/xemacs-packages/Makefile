@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/07/11 17:56:56 cube Exp $
+# $NetBSD: Makefile,v 1.44 2004/07/12 08:40:23 tron Exp $
 
 DISTNAME=	xemacs-packages
 PKGNAME=	xemacs-packages-1.15
@@ -130,7 +130,7 @@ MAINTAINER=	magick@NetBSD.org
 HOMEPAGE=	http://www.xemacs.org/
 COMMENT=	Common elisp packages for xemacs 21
 
-DEPENDS+=	xemacs>=21.1.14:../../editors/xemacs
+DEPENDS+=	xemacs{,-nox11}>=21.1.14:../../editors/xemacs
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGBASE}
