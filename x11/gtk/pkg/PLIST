@@ -113,9 +113,15 @@ lib/libgtk.a
 lib/libgtk.la
 lib/libgtk.so.1.4
 man/man1/gtk-config.1
+@unexec install-info --delete %D/info/gdk.info %D/info/dir
+@unexec install-info --delete %D/info/glib.info %D/info/dir
+@unexec install-info --delete %D/info/gtk.info %D/info/dir
 info/gdk.info
 info/glib.info
 info/gtk.info
+@exec install-info %D/info/gdk.info %D/info/dir
+@exec install-info %D/info/glib.info %D/info/dir
+@exec install-info %D/info/gtk.info %D/info/dir
 info/gtk.info-1
 info/gtk.info-2
 info/gtk.info-3
