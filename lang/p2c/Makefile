@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/09/09 02:19:52 jwise Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 09:07:23 agc Exp $
 
 DISTNAME=	p2c-1.20
 WRKSRC=		${WRKDIR}/src
@@ -9,6 +9,7 @@ EXTRACT_SUFX=   .tar.Z
 MAINTAINER=	jwise@netbsd.org
 COMMENT=	Pascal to C compiler (translates Pascal to C)
 
-MAKE_FLAGS+=	CFLAGS='-Dunix'
+USE_BUILDLINK2=	# defined
+CFLAGS+=	-Dunix=1
 
 .include "../../mk/bsd.pkg.mk"
