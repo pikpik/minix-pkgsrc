@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2004/03/11 18:03:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/05/30 03:16:09 minskim Exp $
 
 DISTNAME=       freeze-2.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/unixfreeware/archive/
 
