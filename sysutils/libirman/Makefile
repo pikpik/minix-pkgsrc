@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2002/06/14 20:38:40 abs Exp $
+# $NetBSD: Makefile,v 1.4 2002/06/20 09:06:48 abs Exp $
 #
 
 DISTNAME=	libirman-0.4.1b
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.evation.com/libirman/
 
