@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/todo
+bin/tda
+bin/tdr
+bin/tdd
+bin/tde
+man/man1/todo.1
