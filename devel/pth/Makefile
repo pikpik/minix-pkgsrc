@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40.2.4 2002/08/22 11:11:00 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2002/08/25 18:38:43 jlam Exp $
 #
 
 DISTNAME=		pth-1.4.1
@@ -37,7 +37,3 @@ post-install:
 			${PREFIX}/share/doc/pth/
 
 .include "../../mk/bsd.pkg.mk"
-
-.if (${MACHINE_ARCH} == "i386" && ${CFLAGS:M-O2} == "-O2")
-CFLAGS:=		${CFLAGS:S/-O2/-O0/}
-.endif
