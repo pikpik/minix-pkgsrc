@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2002/06/16 10:44:09 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/23 23:01:03 jlam Exp $
 #
 
 DISTNAME=	xbindkeys-1.5.5
 CATEGORIES=	x11
 MASTER_SITES=	http://hocwp.free.fr/xbindkeys/
 
-MAINTAINER=	jmmv@hispabsd.org
+MAINTAINER=	jmmv@netbsd.org
 HOMEPAGE=	http://hocwp.free.fr/xbindkeys/xbindkeys.html
 COMMENT=	Launches shell commands with your keyboard or your mouse
 

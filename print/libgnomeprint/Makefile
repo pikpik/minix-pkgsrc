@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/30 07:36:11 rh Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/24 06:10:22 wiz Exp $
 #
 
 DISTNAME=		libgnomeprint-1.116.0
@@ -6,7 +6,7 @@ PKGREVISION=		3
 CATEGORIES=		print gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgnomeprint/1.116/}
 
-MAINTAINER=		jmmv@hispabsd.org
+MAINTAINER=		jmmv@netbsd.org
 HOMEPAGE=		http://www.levien.com/gnome/print-arch.html
 COMMENT=		Library for the GNOME2 Printing Architecture
 

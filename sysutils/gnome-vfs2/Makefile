@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/19 10:54:57 rh Exp $
+# $NetBSD: Makefile,v 1.5 2002/12/24 06:10:24 wiz Exp $
 #
 
 DISTNAME=		gnome-vfs-2.0.4
@@ -8,7 +8,7 @@ CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-vfs/2.0/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		jmmv@hispabsd.org
+MAINTAINER=		jmmv@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME Virtual File System (v2)
 

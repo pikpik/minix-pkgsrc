@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/11/30 12:41:06 salo Exp $
+# $NetBSD: Makefile,v 1.10 2002/12/24 06:09:46 wiz Exp $
 
 DISTNAME=	gabber-0.8.7
 PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gabber/}
 
-MAINTAINER=	jmmv@hispabsd.org
+MAINTAINER=	jmmv@netbsd.org
 HOMEPAGE=	http://gabber.sourceforge.net/
 COMMENT=	Gnome Jabber Client
 
