@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:15:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/13 13:54:04 wiz Exp $
 #
 
-DISTNAME=	gtkmm-2.2.1
-PKGREVISION=	2
+DISTNAME=	gtkmm-2.2.3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmm/}
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	adam@netbsd.org
 HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ interface to Gtk+ v2
 
