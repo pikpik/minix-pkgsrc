@@ -1,16 +1,14 @@
 # $NetBSD$
+#
 
-DISTNAME=		pchar-1.0
-CATEGORIES=		net
-MASTER_SITES=		http://www.ca.sandia.gov/~bmah/Software/pchar/
+DISTNAME=	pchar-1.0
+CATEGORIES=	net
+MASTER_SITES=	http://www.ca.sandia.gov/~bmah/Software/pchar/
 
-MAINTAINER=		soren@netbsd.org
-HOMEPAGE=		http://www.ca.sandia.gov/~bmah/Software/pchar/
+MAINTAINER=	itojun@itojun.org
+HOMEPAGE=	http://www.zebra.org/
 
-GNU_CONFIGURE=		yes
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/pchar ${PREFIX}/sbin; \
-	${INSTALL_MAN} ${WRKSRC}/pchar.1 ${PREFIX}/man/man1
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=--with-ipv6
 
 .include "../../mk/bsd.pkg.mk"
