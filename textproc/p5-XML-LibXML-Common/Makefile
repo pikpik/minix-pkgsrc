@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/23 21:50:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/17 05:55:27 minskim Exp $
 #
 
 DISTNAME=	XML-LibXML-Common-0.13
@@ -11,6 +11,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~phish/XML-LibXML-Common/
 COMMENT=	Routines and constants common for XML::LibXML and XML::GDOME
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/LibXML/Common/.packlist
