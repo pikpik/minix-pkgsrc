@@ -1,0 +1,6 @@
+@comment $NetBSD$
+info/jessie.info
+lib/java/jessie/javax-net.jar
+lib/java/jessie/javax-security-cert.jar
+lib/java/jessie/org-metastatic-jessie.jar
+@dirrm lib/java/jessie
