@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: ircd-hybrid,v 1.2 2002/07/06 20:36:58 tv Exp $
+# $NetBSD: ircd-hybrid.sh,v 1.1 2003/07/29 17:26:02 jmmv Exp $
 #
 # PROVIDE: ircdhybrid
 # REQUIRE: DAEMON
@@ -9,7 +9,7 @@ name="ircdhybrid"
 rcvar=$name
 pidfile="@PPATH@"
 command="@SPATH@"
-conffile="@DPATH@ircd.conf"
+conffile="@DPATH@/ircd.conf"
 required_files="$conffile"
 start_precmd=set_pid_file
 
