@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2003/09/11 04:13:05 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2003/09/12 20:07:32 grant Exp $
 
 DISTNAME=	kdelibs-3.1.3
 PKGREVISION=	2
@@ -109,8 +109,9 @@ post-install:
 	) > ${PLIST_SRC}
 
 .if ${MACHINE_ARCH} == "alpha"
-USE_GCC2=	 # defined
+USE_PKGSRC_GCC=		# defined
 .endif
+
 .include "../../archivers/bzip2/buildlink2.mk"
 .include "../../audio/arts/buildlink2.mk"
 .include "../../audio/libaudiofile/buildlink2.mk"

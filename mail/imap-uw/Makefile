@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2003/09/13 18:31:32 kim Exp $
+# $NetBSD: Makefile,v 1.69 2003/09/16 19:16:44 jmmv Exp $
 # ATTENTION:
 # The Kerberos support in this software is known to be problematic. If you
 # upgrade this package you *must* test it on a system *without* Kerberos
@@ -162,7 +162,5 @@ do-install:
 .if !defined(IMAP_UW_NO_SSL) || ${IMAP_UW_NO_SSL} != "YES"
 .include "../../security/openssl/buildlink2.mk"
 .endif
-.if defined(USE_GCC3)
-.  include "../../lang/gcc3/buildlink2.mk"
-.endif
+
 .include "../../mk/bsd.pkg.mk"

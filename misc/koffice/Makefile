@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/08/05 13:39:53 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2003/09/12 20:07:23 grant Exp $
 
 DISTNAME=	koffice-1.2.1
 PKGREVISION=	4
@@ -24,7 +24,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-USE_GCC2=		# defined
+GCC_REQD=		2.95.3
 
 PTHREAD_OPTS+=		require
 
