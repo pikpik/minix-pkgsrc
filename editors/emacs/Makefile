@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2005/02/24 15:31:48 drochner Exp $
+# $NetBSD: Makefile,v 1.78 2005/02/26 16:01:32 wiz Exp $
 
 DISTNAME=	emacs-21.4a
 CATEGORIES=	editors
@@ -13,7 +13,6 @@ CONFLICTS=	mule-[0-9]*
 USE_BUILDLINK3=		yes
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
-USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 # needed for 21.4a, can probably go away on next update
