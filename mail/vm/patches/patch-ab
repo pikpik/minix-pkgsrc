@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- vm.texinfo.orig	Sun Aug 22 19:48:28 1999
++++ vm.texinfo
+@@ -1,9 +1,10 @@
+ \input texinfo  @comment -*-Text-*-
+ @setfilename vm.info
+ @settitle VM User's Manual
+-@c @direntry
+-@c * VM::			A mail reader.
+-@c @end direntry
++@dircategory Mail
++@direntry
++* VM: (vm).		A mail reader.
++@end direntry
+ @iftex
+ @finalout
+ @end iftex
