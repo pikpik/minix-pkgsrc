@@ -12,7 +12,7 @@ $NetBSD$
  
  
  EXTRA_DIST = README
-@@ -268,7 +269,7 @@
+@@ -268,10 +269,10 @@
  
  libmpeg_la_SOURCES = dummy.cpp
  
@@ -20,7 +20,11 @@ $NetBSD$
 +libmpeg_la_LDFLAGS = $(all_libraries) 				-module 				-release $(MPEGLIB_VERSION) 				-version-info $(MPEGLIB_MAJOR_VERSION):$(MPEGLIB_MINOR_VERSION):$(MPEGLIB_MICRO_VERSION) $(LIBOSSAUDIO)
  
  
- libmpeg_la_LIBADD = $(MPEG_EXTRALIBS) $(MMXFILES) 				$(MPEGLIB_LIBS)
+-libmpeg_la_LIBADD = $(MPEG_EXTRALIBS) $(MMXFILES) 				$(MPEGLIB_LIBS)
++libmpeg_la_LIBADD = $(MPEG_EXTRALIBS) $(MMXFILES) 				$(MPEGLIB_LIBS) $(LIBPTHREAD)
+ 
+ mkinstalldirs = $(SHELL) $(top_srcdir)/admin/mkinstalldirs
+ CONFIG_HEADER = ../../config.h
 @@ -287,9 +288,7 @@
  libmpeg_la_DEPENDENCIES =  mpgplayer/*.lo mpegplay/*.lo splay/*.lo \
  tplay/*.lo decoder/*.lo output/*.lo input/*.lo util/render/*.lo \
