@@ -1,6 +1,6 @@
 $NetBSD$
 
---- netscape-installer.orig	Wed Jun 25 02:04:39 2003
+--- netscape-installer.orig	2003-06-25 02:04:39.000000000 +1000
 +++ netscape-installer
 @@ -38,7 +38,7 @@
  
