@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- ./tool.c.orig	Sat Jan  1 05:12:05 2000
++++ ./tool.c	Mon Feb 14 02:36:52 2000
+@@ -19,6 +19,7 @@
+ #include "video.h"
+ #include "tool.h"
+ #include "system.h"
++#include "endian.h"
+ 
+ unsigned long system_flags;
+ 

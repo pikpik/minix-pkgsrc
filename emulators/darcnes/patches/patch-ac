@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- ./snd_unix.c.orig	Wed Jan 26 21:22:18 2000
-+++ ./snd_unix.c	Sun Feb 13 22:27:06 2000
++++ ./snd_unix.c	Mon Feb 14 00:38:09 2000
 @@ -8,13 +8,21 @@
  
  /* #define SOUND_LINUX */	/* use linux sound header */
