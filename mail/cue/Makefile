@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2004/03/26 02:27:43 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2004/04/24 23:02:35 snj Exp $
 
-DISTNAME=	cue-snap-20040301
-PKGNAME=	cue-20040301
-PKGREVISION=	1
+DISTNAME=	cue-snap-20040329
+PKGNAME=	cue-20040329
 CATEGORIES=	mail
 MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/cue/snap/
 
@@ -39,7 +38,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/sample.cuerc ${PREFIX}/share/examples/cue
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/cue
 	${INSTALL_DATA} ${WRKSRC}/cue.hlp  ${PREFIX}/share/doc/cue
-	${INSTALL_DATA} ${WRKSRC}/cue.html ${PREFIX}/share/doc/cue
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
