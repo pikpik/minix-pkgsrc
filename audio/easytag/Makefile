@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2003/07/13 13:50:22 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2003/07/17 21:22:05 grant Exp $
 #
 
-DISTNAME=	easytag-0.28
-PKGREVISION=	1
+DISTNAME=	easytag-0.28.1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=easytag/}
 EXTRACT_SUFX=	.tar.bz2
