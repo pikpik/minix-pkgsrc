@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+Copy requiered files from ${PKG_PREFIX}/share/phppgadmin to your web 
+space. Do not edit "config.inc.php-dist", copy it to "config.inc.php" and 
+configure it for your needs. Remember that PHP should be configured to 
+have "magic_quotes=on".
+===========================================================================
