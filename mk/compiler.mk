@@ -1,4 +1,4 @@
-# $NetBSD: compiler.mk,v 1.20 2003/10/12 03:05:37 grant Exp $
+# $NetBSD: compiler.mk,v 1.21 2003/10/18 09:14:47 grant Exp $
 
 # This Makefile fragment implements handling for supported
 # C/C++/fortran compilers.
@@ -102,7 +102,7 @@ _GCC_VERSION_REQD=	gcc>=${GCC_REQD}
 GCC_REQD=		2.95.3
 _NEED_PKGSRC_GCC=	YES
 .    else
-_GCC_IN_USE=		gcc-${_CC_VERSION}
+_GCC_IN_USE=		gcc-${_CC_VERSION:S/-//g}
 _NEED_PKGSRC_GCC!=	\
 	if ${PKG_ADMIN} pmatch '${_GCC_VERSION_REQD}' ${_GCC_IN_USE}; then \
 		${ECHO} "NO"; \
