@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/05/11 11:52:05 rh Exp $
+# $NetBSD: Makefile,v 1.7 2002/09/06 00:36:14 rh Exp $
 #
 
 DISTNAME=	createbuildlink-2.0
@@ -11,6 +11,7 @@ COMMENT=	Shell script to help creating a buildlink.mk file
 
 EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
+USE_BUILDLINK2=	yes
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
 NO_PATCH=	yes
