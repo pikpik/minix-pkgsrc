@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/17 19:22:32 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/19 09:22:30 agc Exp $
 
-DISTNAME=	HTML_Select-1.2
+DISTNAME=	HTML_Select-1.2.1
 CATEGORIES=	www
 
 MAINTAINER=	tech-pkg@NetBSD.org
