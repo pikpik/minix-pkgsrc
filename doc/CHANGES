@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.7836 2004/11/12 11:34:33 darcy Exp $
+$NetBSD: CHANGES,v 1.7837 2004/11/12 12:16:39 mjl Exp $
 
 Changes to the packages collection and infrastructure in 2004:
 
@@ -5255,3 +5255,6 @@ Changes to the packages collection and infrastructure in 2004:
 	Updated amanda-server to 2.4.4p4 [mjl 2004-11-12]
 	Updated amanda-client to 2.4.4p4 [mjl 2004-11-12]
 	Updated amanda-plot to 2.4.4p4 [mjl 2004-11-12]
+	Added p5-Class-WhiteHole-0.03 [he 2004-11-12]
+	Added p5-Net-XWhois-0.90 [he 2004-11-12]
+	Added p5-Crypt-RandPasswd-0.02 [he 2004-11-12]
