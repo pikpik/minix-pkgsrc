@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/20 16:50:08 drochner Exp $
 #
 
 DISTNAME=	amaya-src-3.1
@@ -13,6 +13,9 @@ HOMEPAGE=	http://www.w3.org/Amaya/
 WRKSRC=		${WRKDIR}/Amaya/work
 GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	../configure
+CONFIGURE_ARGS+=	--with-motif
+CONFIGURE_ENV+=	MOTIFBASE=${MOTIFBASE}
+CFLAGS+=	-Dunix
 
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	png>=1.0.1:../../graphics/png
