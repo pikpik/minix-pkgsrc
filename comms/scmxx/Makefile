@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/10/03 00:13:17 tv Exp $
+# $NetBSD: Makefile,v 1.31 2004/11/27 23:00:00 wiz Exp $
 #
 
 DISTNAME=		scmxx-0.7.4
@@ -32,4 +32,5 @@ post-install:
 	    ${PREFIX}/share/examples/scmxx
 
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
