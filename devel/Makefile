@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.598 2005/01/18 17:54:34 peter Exp $
+# $NetBSD: Makefile,v 1.599 2005/01/20 18:10:05 adrianp Exp $
 #
 
 COMMENT=	Development utilities
@@ -285,6 +285,7 @@ SUBDIR+=	newfile
 SUBDIR+=	newmkdep
 SUBDIR+=	noweb
 SUBDIR+=	nqc
+SUBDIR+=	nspr
 SUBDIR+=	oaf
 SUBDIR+=	ode
 SUBDIR+=	ogre
