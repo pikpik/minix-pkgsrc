@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.296 2002/07/12 16:26:17 wiz Exp $
+# $NetBSD: Makefile,v 1.297 2002/07/12 17:34:56 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -114,6 +114,7 @@ SUBDIR+=	jlib
 SUBDIR+=	kdbg
 SUBDIR+=	kdebindings2
 SUBDIR+=	kdesdk2
+SUBDIR+=	kdesdk3
 SUBDIR+=	kdevelop
 SUBDIR+=	kdevelop-base
 SUBDIR+=	lcc
