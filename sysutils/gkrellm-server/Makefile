@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/02/26 23:11:57 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2004/03/07 03:51:16 minskim Exp $
 .include "../../sysutils/gkrellm/Makefile.common"
 
 GKRELLM_PKGBASE=	gkrellm-server
@@ -13,7 +13,7 @@ CONF_FILES=		${PREFIX}/share/examples/gkrellm-server/gkrellmd.conf ${PREFIX}/etc
 
 .include "../../mk/bsd.prefs.mk"
 
-.if (${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "OpenBSD")
+.if (${OPSYS} == "FreeBSD" || ${OPSYS} == "OpenBSD")
 SPECIAL_PERMS+=         ${PREFIX}/bin/gkrellmd ${ROOT_USER} kmem 2711
 .endif
 
