@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/03/23 14:53:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/05/05 17:24:10 dmcmahill Exp $
 #
 
 DISTNAME=	citrix_ica-client
@@ -46,9 +46,9 @@ CDIR=		${PREFIX}/lib/ICAClient
 BINDIR=		${PREFIX}/bin
 
 .if (${MACHINE_ARCH} == "sparc")
-#.if !exists(/emul/svr4/usr/lib/ld.so)
-#IGNORE=		"${PKGNAME} requires SVR4 compability - see compat_svr4(8)"
-#.endif
+.if !exists(/emul/svr4/usr/lib/ld.so)
+IGNORE=		"${PKGNAME} requires SVR4 compability - see compat_svr4(8)"
+.endif
 .endif
 
 do-install:
