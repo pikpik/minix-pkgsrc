@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/10/25 19:57:34 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/03/31 04:58:25 uebayasi Exp $
 
 DISTNAME=		stuffit520.611linux-i386
 PKGNAME=		stuffit-5.2.0.611
@@ -11,7 +11,7 @@ MAINTAINER=		collver@linuxfreemail.com
 HOMEPAGE=		http://www.aladdinsys.com/expander
 COMMENT=		Stuffit Archive Creator and Expander
 
-DEPENDS+=		suse_base>=6:../../emulators/suse_base
+DEPENDS+=		suse_base>=6:../../emulators/${SUSE_DIR_PREFIX}_base
 
 WRKSRC=			${WRKDIR}
 RESTRICTED=		"Redistribution not permitted"
@@ -37,4 +37,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/unstuff/* \
 		${PREFIX}/share/doc/stuffit/unstuff/
 
-.include "../../mk/bsd.pkg.mk"
+.include "../../emulators/suse_linux/Makefile.application"
