@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/09/03 13:51:08 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/10/26 16:26:34 tsarna Exp $
 #
 
 DISTNAME=	wxPython-2.2.1
@@ -10,7 +10,7 @@ MAINTAINER=	tsarna@netbsd.org
 HOMEPAGE=	http://wxpython.org/
 
 DEPENDS+=       python>=2.0:../../lang/python
-DEPENDS+=       wxGTK>=2.2.0:../../x11/wxGTK
+DEPENDS+=       wxGTK>=2.2.1:../../x11/wxGTK
 
 PLIST_SRC=      ${WRKDIR}/.PLIST_SRC
 SITE_PKG=	lib/python2.0/site-packages
