@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2001/06/11 11:23:20 itojun Exp $
+# $NetBSD: Makefile,v 1.16 2001/10/22 05:51:25 martti Exp $
 #
 
-DISTNAME=		isakmpd-20011018
+DISTNAME=		isakmpd-20020104
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/packages/distfiles/LOCAL_PORTS/
 
