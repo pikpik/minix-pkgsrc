@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2003/01/19 06:52:54 salo Exp $
+# $NetBSD: Makefile,v 1.56 2003/02/25 02:14:57 uebayasi Exp $
 
 DISTNAME=	xemacs-21.4.12
 CATEGORIES=	editors
@@ -22,12 +22,6 @@ PLIST_SUBST+=	DISTNAME="${DISTNAME}"
 MESSAGE_SUBST+=	DISTNAME="${DISTNAME}"
 
 .include "../../mk/bsd.prefs.mk"
-
-.if defined(MANZ)
-PLIST_SUBST+=	ELSUFX='.gz'
-.else
-PLIST_SUBST+=	ELSUFX=''
-.endif
 
 # XXX GUI configuration is a mess...
 #
@@ -127,8 +121,5 @@ post-patch:
 post-install:
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/${DISTNAME}
 	@${INSTALL_DATA_DIR} ${PREFIX}/lib/xemacs
-	@if [ -n "${MANZ}" ]; then \
-		${WRKSRC}/lib-src/gzip-el.sh ${PREFIX}/lib/${DISTNAME};	\
-	fi
 
 .include "../../mk/bsd.pkg.mk"
