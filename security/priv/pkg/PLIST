@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/priv
+man/man1/priv.1
+@dirrm etc/priv
