@@ -1,1 +1,7 @@
-bin/sed
+@comment $NetBSD$
+bin/jsed
+info/sed.info
+man/man1/jsed.1
+share/doc/ja-sed/OREADME.MB
+share/doc/ja-sed/README.MB
+@dirrm share/doc/ja-sed
