@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.43 2004/05/07 01:14:50 xtraeme Exp $
+# $NetBSD: Makefile,v 1.44 2004/07/01 15:14:23 recht Exp $
 
-DISTNAME=	libxslt-1.1.7
+DISTNAME=	libxslt-1.1.8
 PKGNAME=	${DISTNAME}
 CATEGORIES=	textproc
-#MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}
-#EXTRACT_SUFX=	.tar.bz2
-MASTER_SITES=	ftp://xmlsoft.org/
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}
+EXTRACT_SUFX=	.tar.bz2
+#MASTER_SITES=	ftp://xmlsoft.org/
 
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://xmlsoft.org/XSLT/
