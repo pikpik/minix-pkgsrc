@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/10/03 00:13:33 tv Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/23 06:11:09 epg Exp $
 
 PKGNAME=	${PYPKGPREFIX}-subversion-${SVNVER}
 COMMENT=	Python bindings and tools for Subversion
@@ -19,6 +19,10 @@ MAKEFLAGS+=		swig_pydir=${LOCALBASE}/${PYSITELIB}/libsvn \
 			swig_pydir_extra=${LOCALBASE}/${PYSITELIB}/svn
 
 TEST_TARGET=		all check
+
+post-patch:
+	${RM} ${WRKSRC}/build-outputs.mk
+	${CP} ${FILESDIR}/build-outputs.mk ${WRKSRC}/build-outputs.mk
 
 post-install:
 	${RM} ${LOCALBASE}/${PYSITELIB}/libsvn/*.a
