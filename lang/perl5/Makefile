@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.52 2001/12/14 19:24:53 jlam Exp $
+# $NetBSD: Makefile,v 1.53 2001/12/14 19:26:11 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES+=		lang devel
 
 MAINTAINER=		jlam@netbsd.org
