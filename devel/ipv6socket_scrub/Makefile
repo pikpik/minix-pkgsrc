@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/25 01:54:01 itojun Exp $
+# $NetBSD$
+# KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
 DISTNAME=		IPv6socket_scrub
@@ -19,8 +20,10 @@ RESTRICTED=		"not redistributable, license agreement required"
 MIRROR_DISTFILES=	no
 
 do-fetch:
-	@${ECHO} "===> You need to sign the agreement on ${HOMEPAGE}"
-	@${ECHO} "     and fetch on your own."
+	@if test \! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}; then \
+		${ECHO} "===> You need to sign the agreement on ${HOMEPAGE}"; \
+		${ECHO} "     and fetch on your own."; \
+	fi
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ipv6socket_scrub ${PREFIX}/bin
