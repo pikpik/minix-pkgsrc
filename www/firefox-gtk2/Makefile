@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/29 17:46:52 xtraeme Exp $
 
 MOZILLA=	firefox-gtk2
 MOZILLA_BIN=	firefox-bin
 MOZ_VER=	0.8
+PKGREVISION=	1
 EXTRACT_SUFX=	.tar.bz2
 
 DISTNAME=	firefox-source-${MOZ_VER}
