@@ -1,8 +1,11 @@
-# $NetBSD: Makefile,v 1.40 2004/02/12 04:57:07 markd Exp $
+# $NetBSD: Makefile,v 1.41 2004/02/12 05:04:08 markd Exp $
 
 DISTNAME=	kdebase-3.2.0
+PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	Base modules for the KDE 3 integrated X11 desktop
+
+DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

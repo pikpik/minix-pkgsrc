@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/24 21:39:49 jmmv Exp $
 #
 
 DISTNAME=	gnome-pkgview-1.0.5
+PKGREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.greatnorthern.demon.co.uk/packages/gnome-pkgview/
 
@@ -10,7 +11,7 @@ HOMEPAGE=	http://www.greatnorthern.demon.co.uk/gnome-pkgview.html
 COMMENT=	Displays the version of GNOME components installed
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS=		xdg-dirs>=1.0:../../misc/xdg-dirs
+DEPENDS=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes

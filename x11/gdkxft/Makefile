@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.17 2004/01/03 18:49:55 reed Exp $
+# $NetBSD: Makefile,v 1.18 2004/02/14 17:21:55 jlam Exp $
 #
 
 DISTNAME=		gdkxft-1.5
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gdkxft/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gdkxft.sourceforge.net/
 COMMENT=		Transparently add anti-aliased font support to gtk+ applications
+
+DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 .include "../../mk/bsd.prefs.mk"
 

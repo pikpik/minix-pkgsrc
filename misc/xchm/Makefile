@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.8 2004/03/03 22:42:10 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/07 01:17:45 minskim Exp $
 #
 
 DISTNAME=	xchm-0.9
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xchm/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://xchm.sourceforge.net/
 COMMENT=	CHM viewer for UNIX
+
+DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
 
 USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c++

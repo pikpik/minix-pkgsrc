@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:47 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 14:11:10 grant Exp $
 #
 
 DISTNAME=	ooqstart-0.8.3
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ooqstart/}
 EXTRACT_SUFX=	.tgz
@@ -12,6 +12,7 @@ HOMEPAGE=	http://ooqstart.sourceforge.net/
 COMMENT=	OpenOffice quickstart applet for GNOME
 
 DEPENDS+=	gnome-applets>=1.4.0:../../x11/gnome-applets
+DEPENDS+=	xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 USE_BUILDLINK2=	YES
 USE_GNU_TOOLS+=	make

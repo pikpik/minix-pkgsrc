@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.8 2004/02/14 00:24:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/02/20 12:22:48 jmmv Exp $
 #
 
 DISTNAME=	apotheke-0.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	ftp://ftp.berlios.de/pub/apotheke/
 
 MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://apotheke.berlios.de/
 COMMENT=	CVS view for Nautilus
+
+DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
 
 USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2004/01/24 14:58:00 grant Exp $
+# $NetBSD: Makefile,v 1.45 2004/02/14 17:21:49 jlam Exp $
 #
 
 DISTNAME=		ggv-1.0.2
-PKGREVISION=		11
+PKGREVISION=		12
 CATEGORIES=		print gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/ggv/1.0/}
 
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME frontend for GhostScript
 
 BUILD_USES_MSGFMT=	YES
+DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES

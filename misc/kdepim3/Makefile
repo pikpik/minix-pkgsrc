@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2004/02/06 10:48:58 markd Exp $
+# $NetBSD: Makefile,v 1.24 2004/02/14 17:21:45 jlam Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 COMMENT=	Personal Information Management tools for the KDE desktop
+
+DEPENDS+=	xdg-dirs>=1.1:../../misc/xdg-dirs
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.14 2003/11/12 01:31:49 salo Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/03 18:49:40 reed Exp $
 #
 
 DISTNAME=	gnome-breakout-0.5.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.senet.com.au/~alcaron/
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.senet.com.au/~alcaron/software.html
 COMMENT=	Gnome version of the classic breakout game
+
+DEPENDS+=	xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2004/02/18 12:02:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/03/05 17:39:54 jmmv Exp $
 #
 
 DISTNAME=	libgnomeui-2.4.0.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnomeui/2.4/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Core GNOME2 graphical libraries
 
 BUILD_USES_MSGFMT=	yes
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 CONFLICTS+=		gnome-libs<=1.4.2nb1
 

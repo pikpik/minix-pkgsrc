@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/25 22:04:48 jmmv Exp $
 #
 
 DISTNAME=	mlview-0.6.2
+PKGREVISION=	1
 CATEGORIES=	editors gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/mlview/0.6/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +12,7 @@ HOMEPAGE=	http://www.freespiders.org/projects/gmlview/
 COMMENT=	XML editor for the GNOME environment
 
 BUILD_USES_MSGFMT=	yes
-DEPENDS+=		xdg-dirs>=1.0:../../misc/xdg-dirs
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes

@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.4 2003/12/24 09:53:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/14 17:21:40 jlam Exp $
 #
 
 DISTNAME=		freesci-0.3.4a
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		http://savannah.nongnu.org/download/freesci/stable.pkg/0.3.4a/
 
 MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://freesci.linuxgames.com/
 COMMENT=		Interpreter for Sierra On-Line's SCI games
+
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2004/01/03 18:50:00 reed Exp $
+# $NetBSD: Makefile,v 1.13 2004/02/25 23:19:21 minskim Exp $
 
 DISTNAME=		wdm-1.25
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11 windowmaker
 MASTER_SITES=		http://voins.program.ru/wdm/
 
@@ -10,6 +10,7 @@ HOMEPAGE=		http://voins.program.ru/wdm/
 COMMENT=		WINGs display manager
 
 BUILD_USES_MSGFMT=	YES
+DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES

@@ -1,12 +1,15 @@
-# $NetBSD: Makefile,v 1.16 2004/02/09 11:06:06 markd Exp $
+# $NetBSD: Makefile,v 1.17 2004/02/25 22:16:23 markd Exp $
 
 DISTNAME=		kile-1.6.1
+PKGREVISION=		1
 CATEGORIES=		editors kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kile/}
 
 MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://kile.sourceforge.net/
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
+
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make

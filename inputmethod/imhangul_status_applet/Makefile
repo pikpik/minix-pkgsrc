@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/02/18 00:16:35 minskim Exp $
 #
 
 DISTNAME=		imhangul_status_applet-0.2
+PKGREVISION=		1
 CATEGORIES=		korean inputmethod
 MASTER_SITES=		http://download.kldp.net/imhangul/
 
@@ -10,6 +11,7 @@ HOMEPAGE=		http://imhangul.kldp.net/\#APPLET
 COMMENT=		GNOME2 applet to show imhangul status
 
 DEPENDS=		imhangul>=0.9.6:../../inputmethod/imhangul
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
 
 GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2004/02/14 17:21:41 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2004/02/20 17:49:45 jmmv Exp $
 
 DISTNAME=	gimageview-0.2.24
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmmviewer/}
 
@@ -9,7 +9,7 @@ MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://gtkmmviewer.sourceforge.net/
 COMMENT=	GTK+ based image viewer with tabbed browsing
 
-DEPENDS+=	gnome2-dirs>=1.0:../../misc/gnome2-dirs
+DEPENDS+=	gnome2-dirs>=1.5:../../misc/gnome2-dirs
 
 USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES

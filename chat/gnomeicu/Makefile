@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/22 07:49:20 grant Exp $
 
 DISTNAME=	gnomeicu-0.96
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	chat gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnomeicu/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://gnomeicu.sourceforge.net/
 COMMENT=	GNOME ICQ client
+
+DEPENDS+=	xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES

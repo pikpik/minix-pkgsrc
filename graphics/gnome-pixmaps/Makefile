@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2002/10/19 10:54:53 rh Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:41:03 grant Exp $
 #
 
 DISTNAME=		gnome-core-1.4.2
 PKGNAME=		${DISTNAME:S/core/pixmaps/}
+PKGREVISION=		1
 CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-core/1.4/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,6 +11,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Pixmaps for gnome-core
+
+DEPENDS+=		xdg-x11-dirs>=1.1:../../misc/xdg-x11-dirs
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 13:04:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/14 17:21:45 jlam Exp $
 #
 
 DISTNAME=		xine-ui-0.9.22
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xine/}
 
@@ -11,6 +11,8 @@ HOMEPAGE=		http://xinehq.de/
 COMMENT=		Skinned xlib-based xine GUI
 
 BUILD_USES_MSGFMT=	YES
+DEPENDS+=		xdg-dirs>=1.1:../../misc/xdg-dirs
+
 BUILDLINK_DEPENDS.curl=	curl>7.10.2
 
 USE_PKGLOCALEDIR=	YES
