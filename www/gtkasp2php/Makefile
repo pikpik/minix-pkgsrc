@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/13 13:53:48 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:55:34 grant Exp $
 
 DISTNAME=	asp2php-0.76.10
 PKGREVISION=	2
@@ -8,7 +8,7 @@ MASTER_SITES=	http://65.108.58.129/asp2php/
 
 MAINTAINER=	shell@NetBSD.org
 HOMEPAGE=	http://asp2php.naken.cc/
-COMMENT=	gtk+ version of utility to convert asp pages to php pages
+COMMENT=	Gtk+ version of utility to convert asp pages to php pages
 
 USE_BUILDLINK2=	YES
 

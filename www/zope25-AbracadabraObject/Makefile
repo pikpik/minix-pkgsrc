@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/12 16:57:18 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:56:09 grant Exp $
 
 DISTNAME=	AbracadabraObject-1.5.1
 PKGNAME=	zope25-AbracadabraObject-1.5.1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.zope.org/Members/mjablonski/AbracadabraObject/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.zope.org/Members/mjablonski/AbracadabraObject
-COMMENT=	pre-configured objects with only one click
+COMMENT=	Pre-configured objects with only one click
 
 .include "../../www/zope25/product.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/04/06 15:48:55 grant Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:42:52 jmmv Exp $
 
 DISTNAME=		netscape-v304-export.x86-unknown-bsd
 PKGNAME=		navigator3-3.04
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://archive.netscape.com/archive/navigator/3.04/shipping/englis
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.netscape.com
-COMMENT=		netscape ver 3 navigator standard edition
+COMMENT=		Netscape ver 3 navigator standard edition
 
 ONLY_FOR_PLATFORM=	*-*-i386
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2002/09/19 09:04:34 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2003/01/28 22:04:32 jlam Exp $
 
 DISTNAME=	thttpd-2.23beta1
 PKGNAME=	thttpd-2.23.0.1
@@ -9,7 +9,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	mike@ethmoid.org
 HOMEPAGE=	http://www.acme.com/software/thttpd/
-COMMENT=	tiny/turbo/throttling HTTP server
+COMMENT=	Tiny/turbo/throttling HTTP server
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 GNU_CONFIGURE=	# defined
