@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/30 21:13:35 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/25 00:44:46 wiz Exp $
 #
 
 DISTNAME=	dnstop-20021224
@@ -10,6 +10,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://dnstop.measurement-factory.com/src/
 COMMENT=	Diagnose tcpdump trace for DNS queries/replies
 
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 WRKSRC=		${WRKDIR}
 
 do-install:
