@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/12/03 23:49:02 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/02/10 04:38:02 minskim Exp $
 share/xsl/tei/common/teicommon.xsl
-share/xsl/tei/html/catalog
 share/xsl/tei/html/teihtml-bibl.xsl
 share/xsl/tei/html/teihtml-chunk.xsl
 share/xsl/tei/html/teihtml-corpus.xsl
