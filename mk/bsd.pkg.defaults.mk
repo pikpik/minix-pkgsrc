@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.251 2004/06/20 02:52:56 xtraeme Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.252 2004/06/20 20:57:17 xtraeme Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -1839,6 +1839,11 @@ QPOPPER_USER?= pop
 #QPOPPER_SERVERMODE=
 # Used in qpopper package to enable server mode.
 # Possible: defined, not defined
+# Default: not defined
+
+#QPOPPER_USE_DRAC=
+# Used in qpopper package to enable drac support.
+# Possible: yes or no, not defined.
 # Default: not defined
 
 RASMOL_DEPTH?= 8
