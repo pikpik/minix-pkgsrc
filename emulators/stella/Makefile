@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/01/11 21:21:17 dent Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/17 18:38:24 wiz Exp $
 
 DISTNAME=	stella-1.1-src
 PKGNAME=	stella-1.1
@@ -15,6 +15,10 @@ WRKSRC=		${WRKDIR}/${PKGNAME}/src/build
 MAKEFILE=	makefile
 ALL_TARGET=	unix-x
 MAKE_ENV=	CXXFLAGS="${CXXFLAGS} -fno-rtti"
+
+.if (${MACHINE_ARCH} == arm32)
+ MAKE_ENV=	CXXFLAGS="-fno-rtti"
+.endif
 
 post-build:
 	@cd ${WRKSRC}/../ui/sound && ${MAKE} oss
