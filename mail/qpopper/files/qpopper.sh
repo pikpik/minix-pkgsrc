@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: qpopper.sh,v 1.1 2004/05/06 13:46:23 taca Exp $
 #
 
 # PROVIDE: qpopper
@@ -10,6 +10,7 @@
 . /etc/rc.subr
 
 name=qpopper
+rcvar=$name
 command="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 
