@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/03/19 17:54:37 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2002/05/29 19:09:56 skrll Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -13,7 +13,6 @@ CONFIGURE_ARGS+=	-I${BUILDLINK_QTDIR}/include \
 MAKE_ENV+=              LIBQT="-lqt-mt"
 
 USE_BUILDLINK_ONLY=		yes
-BUILDLINK_DEPENDS.qt3-libs=	qt3-libs-${QTVERSION}
 
 USE_PTHREAD=	native pth-syscall
 
