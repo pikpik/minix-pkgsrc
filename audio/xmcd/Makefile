@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/02/13 19:17:23 fredb Exp $
+# $NetBSD: Makefile,v 1.21 2000/03/16 15:30:02 wiz Exp $
 #
 
 DISTNAME=	xmcd-2.6
@@ -13,7 +13,14 @@ DEPENDS+=	ncurses>=4.2:../../devel/ncurses
 USE_MOTIF=	yes
 USE_IMAKE=	yes
 IS_INTERACTIVE=	yes	# asks a lot of questions
-MAKE_ENV+=	MACHINE_ARCH="${MACHINE_ARCH}" SHELL=/bin/sh
+MAKE_ENV+=	SHELL=/bin/sh
+
+pre-install:
+	cd ${WRKSRC} && \
+	for f in libdi_d/config.sh misc_d/start.sh install.sh; do \
+		${SED} -e "s/@MACHINE_ARCH@/${MACHINE_ARCH}/" $$f > $$f.new; \
+		${MV} -f $$f.new $$f; \
+	done
 
 post-install:
 .for FILE in cda cddbcmd wm2xmcd xmcd
