@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libexec/pcgi-wrapper
+lib/python1.5/site-packages/pcgi_publisher.py
+lib/python1.5/site-packages/pcgi_publisher.pyc
+lib/python1.5/site-packages/pcgi_publisher.pyo
