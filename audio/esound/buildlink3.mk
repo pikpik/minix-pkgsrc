@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/01/03 23:06:43 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/01/04 23:34:04 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ESOUND_BUILDLINK3_MK:=	${ESOUND_BUILDLINK3_MK}+
@@ -15,4 +15,4 @@ BUILDLINK_PKGSRCDIR.esound?=	../../audio/esound
 .  include "../../audio/libaudiofile/buildlink3.mk"
 .endif	# ESOUND_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:C/\+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
