@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.5 2001/07/27 13:33:38 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.6 2001/08/05 14:52:00 wiz Exp $
 #
 # This Makefile fragment is included by packages that use lesstif12.
 #
@@ -56,8 +56,8 @@ MOTIFBASE?=	${X11BASE}
 .endif
 .endif
 
-EVAL_PREFIX+=			BUILDLINK_PREFIX.lesstif12=lesstif12
-BUILDLINK_PREFIX.lesstif12_DEFAULT=	${X11PREFIX}
+EVAL_PREFIX+=			LESSTIF12_PREFIX=lesstif12
+BUILDLINK_PREFIX.lesstif12=	${LESSTIF12_PREFIX}/LessTif/Motif1.2
 BUILDLINK_FILES.lesstif12=	include/Mrm/*
 BUILDLINK_FILES.lesstif12+=	include/Xm/*
 BUILDLINK_FILES.lesstif12+=	include/uil/*
