@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.198 2004/10/06 00:14:23 wiz Exp $
+# $NetBSD: Makefile,v 1.199 2004/10/06 11:23:55 martti Exp $
 #
 
 COMMENT=	Security tools
@@ -93,6 +93,7 @@ SUBDIR+=	mcrypt
 SUBDIR+=	mhash
 SUBDIR+=	mirrordir
 SUBDIR+=	mit-krb5
+SUBDIR+=	msf
 SUBDIR+=	msu
 SUBDIR+=	msudir
 SUBDIR+=	nessus
