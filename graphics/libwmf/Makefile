@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2000/08/04 22:10:15 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2000/08/05 02:36:37 jlam Exp $
 #
 
-DISTNAME=		libwmf-0.1.17nb1
+DISTNAME=		libwmf-0.1.17
+PKGNAME=		libwmf-0.1.17nb1
 CATEGORIES=		graphics devel
 MASTER_SITES=		http://www.csn.ul.ie/~caolan/publink/libwmf/
 
