@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.271 2005/01/12 14:02:05 xtraeme Exp $
+# $NetBSD: Makefile,v 1.272 2005/01/17 09:47:50 seb Exp $
 #
 
 COMMENT=	Audio tools
@@ -39,8 +39,8 @@ SUBDIR+=	emixer
 SUBDIR+=	esound
 SUBDIR+=	faac
 SUBDIR+=	faad2
-SUBDIR+=	festdoc
 SUBDIR+=	festival
+SUBDIR+=	festival-doc
 SUBDIR+=	festlex-cmu
 SUBDIR+=	festlex-oald
 SUBDIR+=	festlex-ogi
