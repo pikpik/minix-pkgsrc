@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2001/09/09 15:06:36 rh Exp $
+# $NetBSD: Makefile,v 1.34 2001/09/16 19:02:50 zuntum Exp $
 #
 
 COMMENT=	Archivers
@@ -31,7 +31,6 @@ SUBDIR+=	rar
 SUBDIR+=	ruby-zlib
 SUBDIR+=	squsq
 SUBDIR+=	stuffit
-SUBDIR+=	szdd
 SUBDIR+=	unace
 SUBDIR+=	unarj
 SUBDIR+=	undms
