@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mpac
+share/mpac/patch.gif
+@dirrm share/mpac
