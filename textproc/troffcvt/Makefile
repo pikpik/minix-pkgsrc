@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 12:27:06 agc Exp $
 #
 
 DISTNAME=		troffcvt-1.04
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.primate.wisc.edu/software/troffcvt/
 
-MAINTAINER=		collver@linuxfreemail.com
+MAINTAINER=		collver1@attbi.com
 HOMEPAGE=		http://www.primate.wisc.edu/software/troffcvt/
 COMMENT=		Troff/groff to RTF/HTML/TEXT converter
 

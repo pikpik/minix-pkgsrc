@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 12:10:40 agc Exp $
 #
 
 DISTNAME=		MemMgr-1.04
@@ -6,7 +6,7 @@ PKGNAME=		libmemmgr-1.04
 CATEGORIES=		devel
 MASTER_SITES=		http://www.primate.wisc.edu/software/MemMgr/
 
-MAINTAINER=		collver@linuxfreemail.com
+MAINTAINER=		collver1@attbi.com
 HOMEPAGE=		http://www.primate.wisc.edu/software/MemMgr/
 COMMENT=		simple memory manager library
 

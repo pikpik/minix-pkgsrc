@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/04/27 11:47:12 agc Exp $
 #
 
 DISTNAME=		TS-1.08
@@ -6,7 +6,7 @@ PKGNAME=		libts-1.08
 CATEGORIES=		devel
 MASTER_SITES=		http://www.primate.wisc.edu/software/TS/
 
-MAINTAINER=		collver@linuxfreemail.com
+MAINTAINER=		collver1@attbi.com
 HOMEPAGE=		http://www.primate.wisc.edu/software/TS/
 COMMENT=		library of simple token-scanning routines
 
