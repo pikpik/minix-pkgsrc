@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/keychain
-share/doc/keychain/README
-@dirrm share/doc/keychain

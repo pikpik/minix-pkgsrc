@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/idea_spd
-bin/ideatest
-include/idea.h
-lib/libidea.a

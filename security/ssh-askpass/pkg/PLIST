@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/ssh-askpass
-bin/x11-ssh-askpass
-lib/X11/app-defaults/SshAskpass
-share/doc/ssh-askpass/README

@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/mcrypt
-bin/mdecrypt
-man/man1/mcrypt.1
-${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/mcrypt.mo
-${PKGLOCALEDIR}/locale/el/LC_MESSAGES/mcrypt.mo
-${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/mcrypt.mo

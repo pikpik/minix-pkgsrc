@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2000/07/14 11:46:28 agc Exp $
-bin/priv
-man/man1/priv.1
-@exec mkdir -p @PRIV_CONF_DIR@/priv || true
-@unexec rmdir @PRIV_CONF_DIR@/priv || true

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/srpftp
-bin/srptelnet
-man/man1/srpftp.1
-man/man1/srptelnet.1

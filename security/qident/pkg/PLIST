@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/qident
-man/man1/qident.1
-man/cat1/qident.0

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/apg
-bin/apgcli
-sbin/apgd
-man/man1/apg.1
-man/man8/apgd.8
