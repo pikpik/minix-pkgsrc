@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/gdk-pixbuf/gnome-canvas-pixbuf.h
+lib/gnomecanvaspixbufConf.sh
+lib/libgnomecanvaspixbuf.a
+lib/libgnomecanvaspixbuf.la
+lib/libgnomecanvaspixbuf.so.1.0
