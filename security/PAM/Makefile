@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/03/10 18:07:16 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2004/03/26 18:48:52 jlam Exp $
 #
 
 DISTNAME=	Linux-PAM-0.77
@@ -38,7 +38,7 @@ MESSAGE_SUBST+=		PAM_MODULEDIR=${PAM_MODULEDIR}
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${USE_LIBCRACK} == YES
+.if !empty(USE_LIBCRACK:M[yY][eE][sS])
 .  include "../../security/libcrack/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-libcrack
 PLIST_SUBST+=		USE_LIBCRACK=
