@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2001/02/16 15:51:46 wiz Exp $
+# $NetBSD: Makefile,v 1.83 2001/02/19 16:11:38 tron Exp $
 #
 
 COMMENT=	Audio tools
@@ -79,6 +79,7 @@ SUBDIR+=	mpg123
 SUBDIR+=	musicbox
 SUBDIR+=	nas
 SUBDIR+=	nspmod
+SUBDIR+=	p5-MP3-Tag
 SUBDIR+=	realplayer
 SUBDIR+=	rio
 SUBDIR+=	rio500
