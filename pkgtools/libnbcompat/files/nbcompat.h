@@ -1,4 +1,4 @@
-/*	$NetBSD: nbcompat.h,v 1.27 2003/12/05 15:41:06 erh Exp $	*/
+/*	$NetBSD: nbcompat.h,v 1.28 2003/12/08 14:52:02 grant Exp $	*/
 
 /*-
  * Copyright (c) 2003 The NetBSD Foundation, Inc.
@@ -225,17 +225,11 @@ struct {								\
 # include <nbcompat/err.h>
 #endif
 
-#if HAVE_NBCOMPAT_GLOB
-# if HAVE_GLOB_H
-#  undef HAVE_GLOB_H
-# endif
-#endif
-
+/* always use our glob.h */
 #if HAVE_GLOB_H
-# include <glob.h>
-#else
-# include <nbcompat/glob.h>
+# undef HAVE_GLOB_H
 #endif
+#include <nbcompat/glob.h>
 
 #if HAVE_SYS_MKDEV_H
 # include <sys/mkdev.h>
