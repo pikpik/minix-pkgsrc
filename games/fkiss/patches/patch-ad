@@ -24,3 +24,12 @@ $NetBSD$
    if (sound_debug >= 2)
      fputs(" ", stderr);
  }
+@@ -464,7 +470,7 @@ void decide_midi_player()
+   char *midilist[] = {
+     "/usr/bin/midiplay", "",
+     "/usr/bin/playmidi", "",
+-    "/usr/local/bin/timidity", "-idq",
++    "XXXPREFIXXXX/bin/timidity", "-idq",
+     NULL
+   };
+   
