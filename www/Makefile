@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.332 2004/07/17 01:15:44 darcy Exp $
+# $NetBSD: Makefile,v 1.333 2004/07/20 17:41:29 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -55,6 +55,7 @@ SUBDIR+=	bluefish
 SUBDIR+=	bozohttpd
 SUBDIR+=	cadaver
 SUBDIR+=	calamaris
+SUBDIR+=	cgic
 SUBDIR+=	cgicc
 SUBDIR+=	cgilib
 SUBDIR+=	checkbot
