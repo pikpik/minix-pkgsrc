@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2001/11/22 12:58:40 agc Exp $
+# $NetBSD: Makefile,v 1.7 2002/02/18 15:14:30 seb Exp $
 #
 
-DISTNAME=	gsl-1.0
+DISTNAME=	gsl-1.1.1
 CATEGORIES=	math devel
 MASTER_SITES=	ftp://sources.redhat.com/pub/gsl/ \
 		ftp://ftp.freesoftware.com/pub/sourceware/pub/gsl/ \
