@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Mon Dec 10 12:58:48 2001
-+++ Makefile.in	Fri Dec 14 17:11:51 2001
-@@ -333,24 +333,6 @@
+--- Makefile.in.orig	Sat Nov 30 15:01:12 2002
++++ Makefile.in
+@@ -335,24 +335,6 @@ maintainer-clean-generic clean mostlycle
  
  
  install-data-local:

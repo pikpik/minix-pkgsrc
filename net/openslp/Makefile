@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2002/09/19 09:04:16 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/11/26 09:27:14 jlam Exp $
 
-DISTNAME=	openslp-1.0.9a
+DISTNAME=	openslp-1.0.10
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openslp/}
 
@@ -40,7 +40,7 @@ post-install:
 	cd ${WRKSRC}/doc; ${CP} -R rfc/* ${DOCDIR}
 	cd ${WRKSRC}/doc; ${CP} -R html/* ${HTMLDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${DOCDIR} ${HTMLDIR}
-	${CHMOD} -R a-w ${DOCDIR} ${HTMLDIR}
+	${CHMOD} -R a+rx,a-w ${DOCDIR} ${HTMLDIR}
 
 .include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
