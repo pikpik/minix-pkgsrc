@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/10/09 20:05:39 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2000/01/22 10:45:46 wulf Exp $
 #
 
 DISTNAME=	libungif-4.1.0
@@ -27,6 +27,10 @@ post-patch:
 	${RM} ${WRKSRC}/doc/gif2x11.html
 
 post-install:
+	cd ${PREFIX}; for f in libungif.a libungif.so.5.0; do \
+		g=`echo $$f | ${SED} "s,libungif,libgif,"`; \
+		${LN} -sf $$f ${PREFIX}/lib/$$g; \
+	done
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	cd ${WRKSRC}; ${INSTALL_DATA} COPYING UNCOMPRESSED_GIF ${DOCDIR}
 	cd ${WRKSRC}/doc; ${INSTALL_DATA} *.html *.txt *.png ${DOCDIR}
