@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/30 15:50:55 markd Exp $
+# $NetBSD: Makefile,v 1.9 2003/08/05 13:37:29 drochner Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
@@ -25,6 +25,9 @@ CONFIGURE_ARGS+=	--enable-gui=kde
 CONFIGURE_ARGS+=	--enable-kde-toolbar
 CONFIGURE_ARGS+=	--with-features=huge
 CONFIGURE_ARGS+=	--with-tlib=ncurses
+
+post-configure:
+	${TOUCH} ${WRKSRC}/auto/configure ${WRKSRC}/auto/config.mk
 
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../meta-pkgs/kde3/buildlink2.mk"
