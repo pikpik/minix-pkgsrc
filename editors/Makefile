@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2001/05/17 00:06:07 jtb Exp $
+# $NetBSD: Makefile,v 1.48 2001/06/09 10:42:40 wiz Exp $
 #
 
 COMMENT=	Editors
@@ -54,5 +54,6 @@ SUBDIR+=	xcoral
 SUBDIR+=	xemacs
 SUBDIR+=	xemacs-packages
 SUBDIR+=	xvile
+SUBDIR+=	yudit
 
 .include "../mk/bsd.pkg.subdir.mk"
