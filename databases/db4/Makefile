@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2004/11/17 21:32:10 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2004/12/27 04:27:49 jlam Exp $
 
 DISTNAME=		db-4.3.21
 PKGNAME=		${DISTNAME:S/db/db4/}
+PKGREVISION=		1
 CATEGORIES=		databases
 MASTER_SITES=		http://www.sleepycat.com/update/snapshot/
 
