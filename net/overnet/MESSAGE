@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.1.1.1 2003/05/15 12:52:49 grant Exp $
 
 	It is recommended that you create a working directory for
 	your instance of ${PKGNAME}, as several configuration files
