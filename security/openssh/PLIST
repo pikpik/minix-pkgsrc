@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/05 04:17:31 jlam Exp $
+@comment $NetBSD: PLIST,v 1.3 2002/06/25 02:13:12 itojun Exp $
 bin/scp
 bin/sftp
 bin/slogin
@@ -28,4 +28,4 @@ share/examples/openssh/moduli
 share/examples/openssh/ssh_config
 share/examples/openssh/sshd_config
 @dirrm share/examples/openssh
-@exec mkdir -p /var/chroot/sshd
+@exec ${MKDIR} /var/chroot/sshd
