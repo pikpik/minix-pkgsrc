@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/13 22:33:43 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2002/12/18 20:54:10 wiz Exp $
 
-DISTNAME=	adobe-cmaps-20020913
+DISTNAME=	adobe-cmaps-20030126
 CATEGORIES=	print
 MASTER_SITES=	# empty
 
-CMAP_FILES=	ac14 ag14 ai0 aj14 aj20 ak12
+CMAP_FILES=	ac14 ag14 ai0 aj15 aj20 ak12
 RKSJ_FILES=	rksj-cmaps
 CMAP_DISTFILES=	${CMAP_FILES:S/$/.tar.Z/} ${RKSJ_FILES:S/$/.tar.Z/}
 .for FILE in ${CMAP_DISTFILES}
