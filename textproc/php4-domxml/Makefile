@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/07/06 16:28:53 recht Exp $
+# $NetBSD: Makefile,v 1.18 2004/07/06 19:52:01 jdolecek Exp $
 
 MODNAME=		domxml
 CATEGORIES+=		textproc
@@ -7,7 +7,8 @@ COMMENT=		PHP4 extension for DOM support
 
 USE_BUILDLINK3=		YES
 
-.include "../../www/php4/Makefile.module"
+PHP_VERSION_REQD=	4
+.include "../../lang/php/ext.mk"
 
 CONFIGURE_ARGS+=	--enable-${MODNAME}=shared,${BUILDLINK_PREFIX.libxml2}
 CONFIGURE_ARGS+=	--with-dom=shared,${BUILDLINK_PREFIX.libxml2}
