@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/12/30 17:21:55 cjep Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/22 08:24:28 grant Exp $
 #
 
 DISTNAME=	cmake-1.6.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cmake.org/files/
 
