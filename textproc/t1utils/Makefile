@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/01/12 05:35:50 jonb Exp $
 #
 
-DISTNAME=	t1utils-1.14
+DISTNAME=	t1utils-1.20
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/type/
 
