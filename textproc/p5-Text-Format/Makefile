@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/04 17:41:42 seb Exp $
 #
 
 DISTNAME=       Text-Format0.52
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	p5tfo
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 
-MAINTAINER=	sketch@rd.bbc.co.uk
+MAINTAINER=	sketch@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/search?module=Text::Format
 COMMENT=	Provide perl5 formatting functions on plain text
 
