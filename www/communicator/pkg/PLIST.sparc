@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/communicator-4.5_nis
+bin/netscape_nis
+lib/netscape/communicator-4.5/netscape_nis
+lib/netscape/communicator-4.5/libjsd.so.1.0
+lib/netscape/communicator-4.5/dynfonts/libTrueDoc.so
+lib/netscape/communicator-4.5/plugins/libnullplugin.so
+@dirrm lib/netscape/communicator-4.5/dynfonts
