@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/10/03 01:46:25 tv Exp $
+# $NetBSD: Makefile,v 1.7 2004/12/03 15:15:10 wiz Exp $
 #
 
 DISTNAME=	hfsutils-3.2.6
@@ -10,12 +10,11 @@ MAINTAINER=	wrstuden@NetBSD.org
 HOMEPAGE=	http://www.mars.org/home/rob/proj/hfs/
 COMMENT=	Command Line Interface HFS (not HFS+) disk access tools
 
-DEPENDS=	libhfs-3.2.6nb1:../../devel/libhfs
-
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include/libhfs
 
 BUILD_TARGET=	all_cli
 INSTALL_TARGET=	install_cli
 
+.include "../../devel/libhfs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
