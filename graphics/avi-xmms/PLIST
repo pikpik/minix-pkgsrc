@@ -1,4 +1,0 @@
-@comment $NetBSD$
-lib/xmms/Input/libavixmms.a
-lib/xmms/Input/libavixmms.la
-lib/xmms/Input/libavixmms.so
