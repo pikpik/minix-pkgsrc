@@ -1,5 +1,5 @@
 #
-# NetBSD
+# $NetBSD$
 #
 
 SHLIB_MAJOR=	0

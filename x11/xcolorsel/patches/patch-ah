@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- RgbTextP.h.orig	Wed Nov 16 21:27:10 1994
 +++ RgbTextP.h	Wed Jul 15 10:00:34 1998
 @@ -78,7 +78,7 @@

@@ -1,3 +1,6 @@
+#
+# $NetBSD$
+#
 BINDIR=		${PREFIX}/bin
 WISHDIR?=	${BINDIR}
 

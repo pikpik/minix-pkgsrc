@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- configure.orig	Thu Sep 25 20:32:47 1997
 +++ configure	Tue Dec  2 11:39:39 1997
 @@ -1060,6 +1060,7 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- doc/lessdox/clients/Makefile.in.orig	Tue Apr  7 14:00:12 1998
 +++ doc/lessdox/clients/Makefile.in	Wed Apr  8 01:36:34 1998
 @@ -96,10 +96,10 @@

@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# $NetBSD$
+#
 
 cd $WRKSRC || exit 1;
 

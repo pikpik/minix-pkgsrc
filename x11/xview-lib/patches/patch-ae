@@ -1,3 +1,5 @@
+$NetBSD$
+
 *** lib/libxview/win/win_input.c~	Tue Oct  8 22:51:45 1996
 --- lib/libxview/win/win_input.c	Wed Apr 17 02:26:55 1996
 ***************

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- xpns.orig	Tue Apr  8 11:27:14 1997
 +++ xpns	Tue Apr  8 11:29:05 1997
 @@ -1,6 +1,7 @@

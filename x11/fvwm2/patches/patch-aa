@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Fvwm.tmpl.dist	Wed Jan 22 22:38:49 1997
 +++ Fvwm.tmpl	Thu Jan 30 15:27:41 1997
 @@ -97,7 +97,7 @@

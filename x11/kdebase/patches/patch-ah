@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- kaudio/Makefile.in.orig	Fri Jul 10 20:35:26 1998
 +++ kaudio/Makefile.in	Tue Jul 14 21:03:52 1998
 @@ -175,7 +175,7 @@

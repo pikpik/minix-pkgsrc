@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Imakefile.orig	Thu Jun  2 16:22:14 1994
 +++ Imakefile	Fri Dec 27 18:52:23 1996
 @@ -5,7 +5,8 @@
