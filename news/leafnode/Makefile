@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:22:41 agc Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/24 14:51:52 grant Exp $
 
 DISTNAME=		leafnode-1.9.49.rel
 PKGNAME=		${DISTNAME:S/.rel//}
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.leafnode.org/
 COMMENT=		NNTP server for small (dialup) sites
 
 WRKSRC=			${WRKDIR}/${DISTNAME}
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
@@ -58,5 +58,5 @@ post-install:
 			${WRKSRC}/README-daemontools			\
 			${WRKSRC}/README.FIRST ${PREFIX}/share/doc/leafnode
 
-.include "../../devel/pcre/buildlink2.mk"
+.include "../../devel/pcre/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
