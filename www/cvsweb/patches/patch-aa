@@ -11,3 +11,12 @@ $NetBSD$
  
  # Search the above directories for each command (prefer gtar over tar).
  #
+@@ -344,7 +344,7 @@ $inputTextSize = 12;
+ # The traditional mime.types file, eg. the one from Apache is fine.
+ # See above where this gets used.
+ #
+-$mime_types = '/usr/local/etc/apache/mime.types';
++$mime_types = '/usr/pkg/etc/httpd/mime.types';
+ 
+ # Charset appended to the Content-Type HTTP header for text/* MIME types.
+ # Note that the web server may default to some charset which may take effect
