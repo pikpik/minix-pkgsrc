@@ -1,9 +1,9 @@
-# $NetBSD$
 # New ports collection makefile for:    libXg
 # Version required:     ????? arbitrarily picked 1.0 for version
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
+# $NetBSD: Makefile,v 1.2 1997/10/09 14:35:21 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/01/27 15:59:35 erich Exp
 #
 
