@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2004/10/03 00:18:09 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2004/10/23 08:57:33 shannonjr Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBGCRYPT_BUILDLINK3_MK:=	${LIBGCRYPT_BUILDLINK3_MK}+
@@ -17,5 +17,6 @@ BUILDLINK_PKGSRCDIR.libgcrypt?=	../../security/libgcrypt
 .endif	# LIBGCRYPT_BUILDLINK3_MK
 
 .include "../../security/libgpg-error/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
