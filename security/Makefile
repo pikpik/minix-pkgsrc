@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.186 2004/07/06 18:05:44 agc Exp $
+# $NetBSD: Makefile,v 1.187 2004/07/15 23:11:40 recht Exp $
 #
 
 COMMENT=	Security tools
@@ -181,6 +181,7 @@ SUBDIR+=	ssh2
 SUBDIR+=	ssh2-nox11
 SUBDIR+=	ssldump
 SUBDIR+=	sslwrap
+SUBDIR+=	steghide
 SUBDIR+=	stunnel
 SUBDIR+=	sudo
 SUBDIR+=	tacshell
