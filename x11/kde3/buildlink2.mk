@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:52 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:23:34 jlam Exp $
 #
 # This Makefile fragment is included by packages that use the KDE3
 # configure-and-build process.
@@ -52,6 +52,7 @@ CONFIGURE_ARGS+=	--datadir="${KDEDIR}/share/kde"
 CONFIGURE_ARGS+=	--with-qt-dir="${QTDIR}"
 CONFIGURE_ARGS+=	--with-extra-includes="${_KDE3_EXTRA_INCLUDES}"
 CONFIGURE_ARGS+=	--disable-rpath
+CONFIGURE_ARGS+=	--disable-debug
 .if exists(${X11BASE}/lib/libXinerama.so)
 CONFIGURE_ARGS+=	--with-xinerama
 .endif
