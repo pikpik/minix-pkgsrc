@@ -1,8 +1,8 @@
 # $NetBSD: Makefile.SunOS.sparc,v 1.2 2003/07/02 14:56:59 grant Exp $
 #
 
-DISTNAME=	mozilla-sparc-sun-solaris2.8_1.5
-MASTER_SITES=	${MASTER_SITE_MOZILLA:=mozilla1.5/}
+DISTNAME=	mozilla-i386-pc-solaris2.8-1.5
+MASTER_SITES=	${MASTER_SITE_MOZILLA:=mozilla1.5/contrib/}
 
 DEPENDS+=	gtk+>=1.2:../../x11/gtk
 
