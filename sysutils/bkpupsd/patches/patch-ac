@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- src/ups.c.orig	2003-01-21 20:49:06.000000000 +0900
++++ src/ups.c
+@@ -90,11 +90,11 @@ ups_new(name, device, timeout, grace)
+ 	int timeout;
+ 	int grace;
+ {
+-	static char *file[] = { UPSTAB,
++	static const char *file[] = { UPSTAB,
+ #ifdef DEBUG
+-				"upstab",
++				      "upstab",
+ #endif
+-				NULL, };
++				      NULL, };
+ 	char *ups_cap;
+ 	UPS ups;
+ 	char *s, *how;
