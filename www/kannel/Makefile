@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.9 2002/06/15 21:00:27 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2002/08/01 05:48:24 jlam Exp $
 #
 
 DISTNAME=	gateway-${KANNEL_VER}
 PKGNAME=	kannel-${KANNEL_VER}
 CATEGORIES=	www net
-MASTER_SITES=	http://www.kannel.3glab.org/download/${KANNEL_VER}/
+MASTER_SITES=	http://www.kannel.org/download/${KANNEL_VER}/
 
 MAINTAINER=	rh@netbsd.org
-HOMEPAGE=	http://www.kannel.org/
-COMMENT=	open source WAP and SMS gateway
+HOMEPAGE=	http://www.kannel.org
+COMMENT=	Open source WAP and SMS gateway
 
-KANNEL_VER=	1.0.3
+KANNEL_VER=	1.2.0
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK_ONLY=	YES
@@ -19,6 +19,7 @@ USE_PERL5=		YES
 PTHREAD_OPTS+=		require
 
 CONFIGURE_ARGS+=	--disable-docs
+CONFIGURE_ARGS+=	--disable-ssl
 
 .include "../../textproc/libxml2/buildlink.mk"
 .include "../../mk/pthread.buildlink.mk"
