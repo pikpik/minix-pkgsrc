@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19.2.1 2002/06/30 06:24:47 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2002/08/25 21:52:50 jlam Exp $
 
 DISTNAME=	wterm-6.2.9
 PKGREVISION=	1
@@ -14,7 +14,8 @@ GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
 USE_BUILDLINK2=	YES
 
-CONFIGURE_ARGS+= --enable-utmp --enable-wtmp --enable-xpm-background
+CONFIGURE_ARGS+= --enable-utmp --enable-wtmp
+CONFIGURE_ARGS+= --enable-xpm-background --enable-transparency
 CONFIGURE_ARGS+= --enable-menubar --enable-graphics --enable-next-scroll
 CONFIGURE_ARGS+= --enable-half-shadow
 CONFIGURE_ARGS+= --with-xpm-library=${BUILDLINK_PREFIX.xpm}
