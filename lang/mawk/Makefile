@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:29 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/22 12:44:31 agc Exp $
 #
 
 DISTNAME=       mawk1.2.2
@@ -10,5 +10,11 @@ MASTER_SITES=   ftp://ftp.oxy.edu/public/
 MAINTAINER=	agc@netbsd.org
 
 GNU_CONFIGURE=	yes
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+MAKE_ENV+=              CPPFLAGS=
+.endif
 
 .include "../../mk/bsd.pkg.mk"
