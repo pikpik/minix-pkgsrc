@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/06/10 15:52:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.3 1999/11/02 11:11:42 sakamoto Exp $
 
 DISTNAME=	NetBSD1.3I-jman-19990531
 PKGNAME=	ja-man-19990531
@@ -20,10 +20,9 @@ PLIST_SRC=	${WRKDIR}/PLIST
 MESSAGE_SRC=    ${PKGDIR}/MESSAGE
 MESSAGE_FILE=   ${WRKDIR}/.MESSAGE
 
+MANCOMPRESSED_IF_MANZ=	yes
+
 .include "../../mk/bsd.prefs.mk"
-.ifdef MANZ
-MANCOMPRESSED=  yes
-.endif
 
 post-extract:
 	@${GTAR} cCf ${PREFIX}/share/groff/tmac - tmac.andoc tmac.doc \
