@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2001/11/18 22:42:57 agc Exp $
+# $NetBSD: Makefile,v 1.117 2001/11/20 09:54:04 martti Exp $
 #
 
 COMMENT=	System utilities
@@ -26,6 +26,7 @@ SUBDIR+=	dog
 SUBDIR+=	e2fsprogs
 SUBDIR+=	etcupdate
 SUBDIR+=	extipl
+SUBDIR+=	fdgw
 SUBDIR+=	fileutils
 SUBDIR+=	findutils
 SUBDIR+=	fix4SA110rev2
