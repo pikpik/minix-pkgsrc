@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2000/03/12 09:28:59 itojun Exp $
+# $NetBSD: Makefile,v 1.37 2000/03/12 09:44:57 itojun Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -20,6 +20,7 @@
     SUBDIR += lout
     SUBDIR += mminstance
     SUBDIR += mswordview
+    SUBDIR += opensp
     SUBDIR += p5-Convert-BER
     SUBDIR += p5-Filter
     SUBDIR += p5-XML-Parser
