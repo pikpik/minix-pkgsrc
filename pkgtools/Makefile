@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/07/01 22:45:04 abs Exp $
+# $NetBSD: Makefile,v 1.31 2001/07/02 21:01:24 jlam Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -9,7 +9,6 @@ SUBDIR+=	cdpack
 SUBDIR+=	digest
 SUBDIR+=	gensolpkg
 #SUBDIR+=	pax		# Only needed on 1.3 systems
-SUBDIR+=	perl-mk
 #SUBDIR+=	pkg_install	# Only install on demand of bsd.pkg.mk
 SUBDIR+=	pkg_tarup
 SUBDIR+=	pkgchk
