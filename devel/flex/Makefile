@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/21 16:43:21 martti Exp $
+# $NetBSD: Makefile,v 1.11 2003/08/23 22:55:34 wiz Exp $
 
 DISTNAME=		flex-2.5.4a
 WRKSRC=			${WRKDIR}/flex-2.5.4
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.gnu.org/software/flex/
 COMMENT=		Fast clone of lex(1), the lexical scanner generator
 
 GNU_CONFIGURE=		YES
+
+TEST_TARGET=		check
 
 .if !exists(/usr/bin/yacc)
 BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison

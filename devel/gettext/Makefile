@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2003/07/21 16:43:21 martti Exp $
+# $NetBSD: Makefile,v 1.51 2003/08/09 10:44:41 seb Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
@@ -30,6 +30,8 @@ CONFIGURE_ENV+=		GCJ= ac_cv_prog_GCJ=
 CONFIGURE_ENV+=		HAVE_GCJ_IN_PATH=
 CONFIGURE_ENV+=		HAVE_JAVAC_IN_PATH=
 CONFIGURE_ENV+=		HAVE_JIKES_IN_PATH=
+
+TEST_TARGET=		check
 
 post-install:
 	cd ${WRKSRC}/intl; ${MAKE_PROGRAM} install-data
