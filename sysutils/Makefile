@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 1999/05/15 08:05:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.29 1999/05/19 00:24:30 augustss Exp $
 # FreeBSD Id: Makefile,v 1.23 1997/09/30 06:14:59 asami Exp
 #
 
@@ -18,6 +18,7 @@
     SUBDIR += fileutils
     SUBDIR += gcombust
     SUBDIR += gmc
+    SUBDIR += hfsutils
 #    SUBDIR += idled
     SUBDIR += logrot
     SUBDIR += lsof
