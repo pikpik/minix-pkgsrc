@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2003/10/29 05:45:15 reed Exp $
+# $NetBSD: Makefile,v 1.19 2003/12/04 23:28:10 dmcmahill Exp $
 #
 
 DISTNAME=	fontconfig-2.2.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	fonts gnome
 MASTER_SITES=	http://fontconfig.org/release/
 
