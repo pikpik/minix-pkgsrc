@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/17 01:32:33 hubertf Exp $
+$NetBSD$
 
-MD5 (cs4235-20001009.tar.gz) = 90ae14efc9596a8ae7483d9528a03988
+SHA1 (cs4235-20001009.tar.gz) = 599d28d94dc72ccccb0d9478f5e0383bcbff2bd8
+Size (cs4235-20001009.tar.gz) = 1967 bytes

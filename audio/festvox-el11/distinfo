@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/10/11 13:26:16 proff Exp $
+$NetBSD$
 
-MD5 (festvox_ellpc11k.tar.gz) = e96a97644d36fcb89952ca65c283cea3
+SHA1 (festvox_ellpc11k.tar.gz) = 73ecc7b3c0a04102b1a591a2061b1b1998edbe4e
+Size (festvox_ellpc11k.tar.gz) = 1473907 bytes

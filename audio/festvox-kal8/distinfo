@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/10/11 13:26:18 proff Exp $
+$NetBSD$
 
-MD5 (festvox_kallpc8k.tar.gz) = d3b750bd2fdcc8dde9da458bcc00fe74
+SHA1 (festvox_kallpc8k.tar.gz) = 4005942b90c981ce8b28649f7e54fc9cb7b505ff
+Size (festvox_kallpc8k.tar.gz) = 2362746 bytes

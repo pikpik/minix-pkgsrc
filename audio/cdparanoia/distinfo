@@ -1,6 +1,7 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/19 08:03:00 itohy Exp $
+$NetBSD$
 
-MD5 (cdparanoia-III-alpha9.7.src.tgz) = 0820b2b52b721745f926c913c0a2653f
+SHA1 (cdparanoia-III-alpha9.7.src.tgz) = 7c379d3628878fd79ebc1d567408a4d31a7f2e39
+Size (cdparanoia-III-alpha9.7.src.tgz) = 109670 bytes
 SHA1 (patch-aa) = e013ea41a177441efff076bebf55ff3675ca97f3
 SHA1 (patch-ab) = 714ba2c17584ec255de6179391925a994066f60e
 SHA1 (patch-ac) = 895f0fcc76788d592738424e476109c7052526cb

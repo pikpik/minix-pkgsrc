@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/10/11 13:26:19 proff Exp $
+$NetBSD$
 
-MD5 (festvox_rablpc16k.tar.gz) = cefcdda6cd48027da36d78f2f711451b
+SHA1 (festvox_rablpc16k.tar.gz) = 164983d46df6a09b07a5550f4613047f94b1764a
+Size (festvox_rablpc16k.tar.gz) = 5369001 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 1999/10/11 16:30:00 proff Exp $
+$NetBSD$
 
-MD5 (festvox_en1.tar.gz) = 66e3bc07751d7e31826185649c5ada5a
+SHA1 (festvox_en1.tar.gz) = 92d3e06ced67de02b5aa18f111c33b7874376050
+Size (festvox_en1.tar.gz) = 3323 bytes

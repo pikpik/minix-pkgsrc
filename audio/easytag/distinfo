@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.3 2000/11/30 00:03:11 wiz Exp $
+$NetBSD$
 
-MD5 (easytag-0.11.tar.gz) = 0bbc19f38f4f5f298a225f2b3de1ab00
+SHA1 (easytag-0.11.tar.gz) = b111566c7642ce692217c0f80a1ccea91944a632
+Size (easytag-0.11.tar.gz) = 284140 bytes
 SHA1 (patch-aa) = fff44172118fe2542bccc9badd96fec182e76e2a
