@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+To enable this package, add the following lines to php.ini:
+
+	extension_dir=@PREFIX@/@PHP_EXTENSION_DIR@
+	extension=@MODNAME@.so
+
+and restart your PHP4-enabled HTTP server to load this module.
+===========================================================================
