@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8.2.3 2002/08/25 21:19:46 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/08/25 21:49:14 jlam Exp $
 #
 
 VERS=			1.08
@@ -6,7 +6,6 @@ DISTNAME=		lzo-${VERS}
 PKGNAME=		liblzo-${VERS}
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.oberhumer.com/opensource/lzo/download/ \
-			${MASTER_SITE_SUNSITE:=libs/compression/} \
 			ftp://ftp.elf.stuba.sk/pub/pc/pack/
 
 MAINTAINER=		rh@netbsd.org
