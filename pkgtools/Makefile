@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2005/01/05 00:32:28 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2005/01/25 13:05:21 jmmv Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -22,6 +22,7 @@ SUBDIR+=	pkg_filecheck
 SUBDIR+=	pkg_install-info
 SUBDIR+=	pkg_notify
 SUBDIR+=	pkg_regress
+SUBDIR+=	pkg_select
 SUBDIR+=	pkg_tarup
 SUBDIR+=	pkgclean
 SUBDIR+=	pkgconflict
