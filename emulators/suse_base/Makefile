@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.44 2003/07/17 21:36:03 grant Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=a1/} \
 			${MASTER_SITE_SUSE_UPD:=a1/}
@@ -55,6 +55,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${EMULDIR}/dev
 	${LN} -fs /dev/sound ${EMULDIR}/dev/dsp
 	${LN} -fs /dev/null ${EMULDIR}/dev/null
+	${LN} -fs /dev/tty ${EMULDIR}/dev/tty
 	@${CP} ${WRKDIR}/PLIST ${PLIST_SRC}
 	${RPM2PKG} ${RPM2PKGARGS}
 	${ECHO} "@dirrm ${EMULSUBDIR}" >>${PLIST_SRC}
