@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libiris.a
+lib/xmms/Visualization/libiris.la
+lib/xmms/Visualization/libiris.so
+@dirrm lib/xmms/Visualization

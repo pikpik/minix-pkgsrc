@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libbezier.a
+lib/xmms/Visualization/libbezier.la
+lib/xmms/Visualization/libbezier.so
+@dirrm lib/xmms/Visualization

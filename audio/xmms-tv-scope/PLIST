@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xmms/Visualization/tv_scope.a
+lib/xmms/Visualization/tv_scope.la
+lib/xmms/Visualization/tv_scope.so
+@dirrm lib/xmms/Visualization

@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/xmms/Visualization/libinfinite.a
+lib/xmms/Visualization/libinfinite.la
+lib/xmms/Visualization/libinfinite.so
+share/xmms/infinite_states
+@dirrm share/xmms
+@dirrm lib/xmms/Visualization
