@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.pre,v 1.1.1.1 2000/01/14 15:19:28 dmcmahill Exp $
+@comment $NetBSD$
 Acrobat3/Browsers/netscape
 Acrobat3/Browsers/${PLATFORM}/nppdf.so
 Acrobat3/Fonts/AcroRead.upr

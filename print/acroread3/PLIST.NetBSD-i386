@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.netbsd-i386,v 1.4 2001/04/15 00:19:01 dmcmahill Exp $
+@comment $NetBSD$
 Acrobat3/Reader/${PLATFORM}/lib/libagm.so
 Acrobat3/Reader/${PLATFORM}/lib/libagm.so.2.0
 Acrobat3/Reader/${PLATFORM}/lib/libpfs.so

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/07/17 22:52:22 grant Exp $
+# $NetBSD: Makefile,v 1.25 2004/01/20 12:24:28 agc Exp $
 
 PKGNAME=	acroread3-3.01
 CATEGORIES=	print
@@ -57,9 +57,6 @@ DISTNAME=	${PKGNAME}
 LDD?=		${TRUE}
 .endif
 
-PLIST_SRC=	${PKGDIR}/PLIST.pre \
-		${PKGDIR}/PLIST.${LOWER_OPSYS}-${MACHINE_ARCH} \
-		${PKGDIR}/PLIST.post
 PLIST_SUBST+=	PLATFORM=${PLATFORM}
 
 pre-install:
