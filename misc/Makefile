@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2001/03/23 20:20:32 fredb Exp $
+# $NetBSD: Makefile,v 1.94 2001/03/26 04:14:22 zuntum Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -51,6 +51,7 @@ SUBDIR+=	loco
 SUBDIR+=	logsurfer
 SUBDIR+=	lv
 SUBDIR+=	most
+SUBDIR+=	mtail
 SUBDIR+=	nxtvepg
 SUBDIR+=	p5-Array-PrintCols
 SUBDIR+=	p5-Business-CreditCard
