@@ -1,0 +1,11 @@
+# $NetBSD$
+#
+
+SHAREDIR=@SHAREDIR@
+
+case $STAGE in
+POST-INSTALL)
+	echo "===> Running postfix's post-install script"
+	@SHAREDIR@/post-install first-install
+	;;
+esac
