@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/demime
+etc/demime_junkmail.cf
+man/man1/demime.1
