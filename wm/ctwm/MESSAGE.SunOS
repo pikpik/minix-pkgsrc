@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+m4 needs to be available in your PATH when ${PKGNAME} is started.
+You can do this in your .xsession, eg.
+
+	PATH="$PATH:/usr/ccs/bin"
+	export PATH
+
+===========================================================================
