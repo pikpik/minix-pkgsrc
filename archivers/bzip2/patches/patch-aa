@@ -1,16 +1,19 @@
 $NetBSD$
 
 --- Makefile.orig	Fri Jun 23 16:34:47 2000
-+++ Makefile
-@@ -1,6 +1,7 @@
++++ Makefile	Fri Jul 13 23:48:52 2001
+@@ -1,8 +1,9 @@
  
  SHELL=/bin/sh
 -CC=gcc
 +CC=${LIBTOOL} ${REALCC}
 +LD=${LIBTOOL} ${REALCC}
  BIGFILES=-D_FILE_OFFSET_BITS=64
- CFLAGS=-Wall -Winline -O2 -fomit-frame-pointer -fno-strength-reduce $(BIGFILES)
+-CFLAGS=-Wall -Winline -O2 -fomit-frame-pointer -fno-strength-reduce $(BIGFILES)
++CFLAGS+=-Wall -Winline -fomit-frame-pointer -fno-strength-reduce $(BIGFILES)
  
+ OBJS= blocksort.o  \
+       huffman.o    \
 @@ -12,22 +13,18 @@
        decompress.o \
        bzlib.o
