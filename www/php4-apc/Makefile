@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/11/05 21:44:44 jdolecek Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/04 12:05:15 wiz Exp $
 
-DISTNAME=	APC-2.0.4
-PKGNAME=	php-${DISTNAME:tl}
-MODNAME=	${DISTNAME:C/-[^-]*$//:tl}
+DISTNAME=	APC-${VERSION}
+PKGNAME=	php-apc-${VERSION}
+MODNAME=	apc
 CATEGORIES+=	sysutils
 MASTER_SITES=	http://pecl.php.net/get/
 EXTRACT_SUFX=	.tgz
@@ -13,6 +13,7 @@ COMMENT=	Alternative PHP Cache for PHP4
 
 EXTRACT_ELEMENTS=	# empty
 
+VERSION=		2.0.4
 WRKSRC=			${WRKDIR}/${DISTNAME}
 USE_BUILDLINK3=		YES
 
