@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/09/09 06:51:23 tron Exp $
+# $NetBSD: Makefile,v 1.26 2004/10/03 00:14:41 tv Exp $
 
 DISTNAME=       emma-0.8.2
 PKGREVISION=	4
@@ -19,6 +19,7 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 
 CONFIGURE_ENV+=		PYTHONBIN=${PYTHONBIN}
+CONFIGURE_ARGS+=	--with-included-gettext
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 PYTHON_VERSIONS_ACCEPTED=	15
@@ -26,7 +27,6 @@ PYTHON_VERSIONS_ACCEPTED=	15
 post-extract:
 	${RM} ${WRKSRC}/config.cache
 
-.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../time/py-mxDateTime/buildlink3.mk"
 .include "../../x11/gnome-libs/buildlink3.mk"
