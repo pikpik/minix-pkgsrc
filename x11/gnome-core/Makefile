@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.25 1999/09/03 01:57:03 jlam Exp $
+# $NetBSD: Makefile,v 1.26 1999/09/03 07:22:55 rh Exp $
 #
 
 DISTNAME=		gnome-core-1.0.9
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=gnome-1.0/sources/}
 
-MAINTAINER=		tron@netbsd.org
+MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 
 DEPENDS+=		esound-0.2.8:../../audio/esound
