@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink2.mk,v 1.89 2003/07/09 16:07:22 salo Exp $
+# $NetBSD: bsd.buildlink2.mk,v 1.90 2003/07/09 20:07:46 salo Exp $
 #
 # An example package buildlink2.mk file:
 #
@@ -1046,7 +1046,7 @@ ${BUILDLINK_DIR}/bin/install-info:
 	${_PKG_SILENT}${_PKG_DEBUG}${CHMOD} +x ${.TARGET}
 
 # Create a makeinfo script that will invoke the right makeinfo
-# command if USE_MAKEINFO is 'yes' or invoke the GNU missing script if not.
+# command if USE_MAKEINFO is 'yes' or will exit on error if not.
 CONFIGURE_ENV+=	MAKEINFO="${BUILDLINK_DIR}/bin/makeinfo"
 MAKE_ENV+=	MAKEINFO="${BUILDLINK_DIR}/bin/makeinfo"
 
