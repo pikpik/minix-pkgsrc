@@ -1,0 +1,19 @@
+# $NetBSD$
+
+.if !defined(LIBGCRYPT_BUILDLINK2_MK)
+LIBGCRYPT_BUILDLINK2_MK=	# defined
+
+BUILDLINK_PACKAGES+=			libgcrypt
+BUILDLINK_DEPENDS.libgcrypt?=		libgcrypt>=1.1.11
+BUILDLINK_PKGSRCDIR.libgcrypt?=		../../security/libgcrypt
+
+EVAL_PREFIX+=	BUILDLINK_PREFIX.libgcrypt=libgcrypt
+BUILDLINK_PREFIX.libgcrypt_DEFAULT=	${LOCALBASE}
+BUILDLINK_FILES.libgcrypt+=	include/gcrypt.h
+BUILDLINK_FILES.libgcrypt+=	lib/libgcrypt.*
+
+BUILDLINK_TARGETS+=	libgcrypt-buildlink
+
+libgcrypt-buildlink: _BUILDLINK_USE
+
+.endif	# LIBGCRYPT_BUILDLINK2_MK
