@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/07/21 11:39:54 agc Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/22 13:05:58 itojun Exp $
 #
 
 DISTNAME=       cucipop-1.31
@@ -18,7 +18,7 @@ BUILD_DEFS+=	USE_INET6
 .include "../../mk/bsd.prefs.mk"
 
 # to be friendly with pre-1.5 systems
-.if ${USE_INET6} == "YES"
+.if defined(USE_INET6) && ${USE_INET6} == "YES"
 MAKE_ENV+=	CFLAGS_INET6=-DINET6
 .endif
 
