@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/07/17 01:56:38 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2004/11/29 01:03:03 tv Exp $
 
 DISTNAME=	BasiliskII_src_14032003
 PKGNAME=	BasiliskII-1.0.20030314
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gwenole.beauchesne.online.fr/basilisk2/
 COMMENT=	Open Source 68k Macintosh emulator
+
+NOT_FOR_PLATFORM+=	Darwin-*-*
 
 WRKSRC=		${WRKDIR}/BasiliskII-1.0/src/Unix
 USE_BUILDLINK3=	yes
