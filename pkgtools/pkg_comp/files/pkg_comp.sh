@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: pkg_comp.sh,v 1.1.1.1 2002/09/07 00:08:49 rh Exp $
 #
 # pkg_comp - Build packages inside a clean chroot environment
 # Copyright (c) 2002, Julio Merino <jmmv@hispabsd.org>
@@ -328,7 +328,7 @@ pkg_build()
 #!/bin/sh
 cd /usr/pkgsrc/$p
 make $BUILD_TARGET
-if [ $? != 0 ]; then
+if [ \$? != 0 ]; then
     touch /pkg_comp/tmp/`basename $statfile`
 fi
 make clean

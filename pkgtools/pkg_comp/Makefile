@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/07 00:08:35 rh Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/25 18:57:49 wiz Exp $
 
-DISTNAME=	pkg_comp-1.1
+DISTNAME=	pkg_comp-1.2
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jmmv@hispabsd.org
+MAINTAINER=	jmmv@netbsd.org
 COMMENT=	Build packages inside a chroot jail
 
 EXTRACT_ONLY=	# empty
