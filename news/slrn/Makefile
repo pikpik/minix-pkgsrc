@@ -34,7 +34,6 @@ CONFIGURE_ENV+=	INSTALL=/usr/bin/install
 
 LDFLAGS.Linux+=	-ldl
 
-.include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/libslang/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
