@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2000/12/30 18:41:20 rh Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 09:07:08 agc Exp $
 #
 
-DISTNAME=	gb-0.0.17
+DISTNAME=	gb-0.0.18
 CATEGORIES=	lang gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=unstable/sources/gb/}
 
@@ -9,7 +9,7 @@ MAINTAINER=	rh@netbsd.org
 HOMEPAGE=	http://www.gnome.org/gb/
 COMMENT=	Basic for Gnome
 
-DEPENDS+=	gnome-core>=1.2.0:../../x11/gnome-core
+DEPENDS+=	gnome-core>1.4.0:../../x11/gnome-core
 
 GNU_CONFIGURE=	YES
 USE_X11BASE=	YES
