@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 1998/09/05 20:19:16 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1999/01/06 12:27:33 frueauf Exp $
 #
 
-DISTNAME=	zircon-1.18.205
+DISTNAME=	zircon-1.18.210
 CATEGORIES=	net
 MASTER_SITES=	ftp://catless.ncl.ac.uk/pub/
 
