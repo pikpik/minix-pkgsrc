@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:46:54 grant Exp $
+# $NetBSD: Makefile,v 1.19 2003/08/30 22:51:22 jlam Exp $
 #
 
 DISTNAME=	qmail-1.03
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://cr.yp.to/software/			\
 		ftp://ftp.ntnu.no/pub/unix/mail/qmail/		\
