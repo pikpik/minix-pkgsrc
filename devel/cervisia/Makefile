@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2001/03/05 05:29:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.14 2002/03/13 17:36:47 fredb Exp $
 #
 
 DISTNAME=	cervisia-1.0
@@ -11,7 +11,7 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://cervisia.sourceforge.net/
 COMMENT=	Graphical frontend for the CVS client
 
-DEPENDS+=	kde-1.1.2nb1:../../x11/kde
+DEPENDS+=	kde-1.1.2nb2:../../x11/kde
 DEPENDS+=	cvs>=1.10:../../devel/cvs
 
 USE_X11BASE=		yes	# To get this near KDE
