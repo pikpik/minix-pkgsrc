@@ -1,6 +1,7 @@
 $NetBSD$
---- Makefile.in.orig	Thu Jun  8 15:35:14 2000
-+++ Makefile.in	Tue Aug 29 16:32:25 2000
+
+--- Makefile.in.orig	Thu Jun  8 20:35:14 2000
++++ Makefile.in
 @@ -35,7 +35,7 @@
  DESTDIR =
  
@@ -19,3 +20,15 @@ $NetBSD$
  pkgindex_DATA = pkgIndex.tcl
  
  # tclStubLib.c is a dummy file just to fool automake
+@@ -491,11 +491,6 @@
+ 
+ test:
+ 	echo 'load .libs/libtclgdbm.so Tclgdbm ; source torture.tcl' | tclsh@TCL_VERSION@
+-
+-# override normal libtool rule
+-tclStubLib.lo : @TCL_STUB_LIB_PATH@
+-	ar -x @TCL_STUB_LIB_PATH@
+-	mv tclStubLib.o tclStubLib.lo
+ 
+ # Tell versions [3.59,3.63) of GNU make to not export all variables.
+ # Otherwise a system limit (for SysV at least) may be exceeded.
