@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2003/03/09 19:46:51 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/07/22 22:38:36 jmmv Exp $
 #
 
 DISTNAME=		battalion
 PKGNAME=		battalion-1.4
-PKGREVISION=		2
+PKGREVISION=		3
 WRKSRC=			${WRKDIR}/battalionSource
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.evl.uic.edu/aej/

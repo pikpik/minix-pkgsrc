@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2003/07/13 13:54:04 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2003/07/17 22:56:31 grant Exp $
 
 DISTNAME=		gtkglarea-1.2.2
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11 graphics
 MASTER_SITES=		http://www.student.oulu.fi/~jlof/gtkglarea/download/
 

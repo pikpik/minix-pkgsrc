@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2003/03/24 17:56:44 jschauma Exp $
+# $NetBSD: Makefile,v 1.21 2003/03/29 12:41:08 jmmv Exp $
 
 DISTNAME=	quake-v6-bsd-kame
 PKGNAME=	quake6-0.0
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/quakeforge
 CATEGORIES=	games
 MASTER_SITES=	http://www.viagenie.qc.ca/quake/

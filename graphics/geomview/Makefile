@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2003/07/17 21:40:45 grant Exp $
+# $NetBSD: Makefile,v 1.26 2003/08/09 10:53:27 seb Exp $
 
 DISTNAME=		geomview-1.8.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		graphics math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=geomview/}
 
