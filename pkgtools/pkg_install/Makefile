@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/11/09 15:45:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 1999/01/19 23:34:07 hubertf Exp $
 #
 
 # Note to package maintainers:
@@ -16,10 +16,12 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
 
-PREFIX=			/usr
+LOCALBASE=		/usr
+PREFIX=			${LOCALBASE}
 WRKSRC=			${WRKDIR}/pkg_install
 ALL_TARGET=		depend all
 MAKE_ENV+=		BINDIR=/usr/sbin MANDIR=/usr/share/man
+NO_MTREE=		yes
 NO_PKG_REGISTER=	yes
 NO_PACKAGE=		No package registration is done
 
