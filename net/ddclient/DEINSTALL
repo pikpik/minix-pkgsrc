@@ -1,0 +1,11 @@
+# $NetBSD$
+
+case ${STAGE} in
+DEINSTALL)
+	;;
+
+POST-DEINSTALL)
+	${RM} -f @PKG_SYSCONFDIR@/ddclient.cache
+	;;
+
+esac
