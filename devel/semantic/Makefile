@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/09 10:44:49 seb Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/22 08:24:30 grant Exp $
 #
 
 DISTNAME=	semantic-1.4.2
@@ -51,6 +51,6 @@ do-install:
 			${EMACS_LISPPREFIX}/semantic
 	cd ${WRKSRC} && ${INSTALL_DATA} ${AUXFILES} ${EMACS_LISPPREFIX}/semantic
 	cd ${WRKSRC} && ${INSTALL_DATA} ${INFO_FILES} ${OTHER_INFO}	\
-			${PREFIX}/info
+			${PREFIX}/${INFO_DIR}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/08/09 10:59:07 seb Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/24 13:51:14 grant Exp $
 #
 
 DISTNAME=	eieio-0.17
@@ -33,6 +33,6 @@ do-install:
 	${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}/eieio
 	cd ${WRKSRC} && ${INSTALL_DATA} ${SRCS} ${SRCS:.el=.elc} 	\
 			${EMACS_LISPPREFIX}/eieio
-	cd ${WRKSRC} && ${INSTALL_DATA} ${INFO_FILES} ${PREFIX}/info
+	cd ${WRKSRC} && ${INSTALL_DATA} ${INFO_FILES} ${PREFIX}/${INFO_DIR}
 
 .include "../../mk/bsd.pkg.mk"
