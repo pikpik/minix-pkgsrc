@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2004/10/03 00:18:19 tv Exp $
+# $NetBSD: Makefile,v 1.7 2004/12/24 04:32:55 wiz Exp $
 
 DISTNAME=	gnome-spell-1.0.5
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-spell/1.0/}
 EXTRACT_SUFX=	.tar.bz2
@@ -16,6 +16,8 @@ USE_DIRS+=		gnome2-1.3
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
+
+BUILDLINK_DEPENDS.libgnomeui+=	libgnomeui>=2.8.0nb3
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"
