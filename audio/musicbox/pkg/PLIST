@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/musicbox
+share/doc/musicbox/README
+@dirrm share/doc/musicbox
