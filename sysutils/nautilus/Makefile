@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2004/01/23 21:50:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/24 15:06:58 grant Exp $
 #
 
-DISTNAME=		nautilus-2.4.1
-PKGREVISION=		5
+DISTNAME=		nautilus-2.4.2
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus/2.4/}
 EXTRACT_SUFX=		.tar.bz2
@@ -46,7 +45,6 @@ CONF_FILES+=		${EGDIR}/${conffile} ${PKG_SYSCONFDIR}/${conffile}
 .include "../../devel/eel2/buildlink2.mk"
 .include "../../graphics/imlib2/buildlink2.mk"
 .include "../../graphics/librsvg2/buildlink2.mk"
-.include "../../sysutils/fam/buildlink2.mk"
 .include "../../textproc/intltool/buildlink2.mk"
 .include "../../x11/gnome-desktop/buildlink2.mk"
 
