@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- ./configure.in.orig	Tue Apr  6 12:12:19 1999
++++ ./configure.in	Wed Jul 28 11:29:10 1999
+@@ -55,5 +55,5 @@
+     fi
+     ;;
+-"FreeBSD")
++"FreeBSD" | "NetBSD" | "OpenBSD")
+     CCOPTIONS="-DCSRG_BASED"
+     CDEBUGFLAGS="-O2 -fno-strength-reduce"
