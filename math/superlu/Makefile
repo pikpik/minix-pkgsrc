@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2001/04/14 21:43:57 jtb Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/03 22:16:51 jtb Exp $
 
 DISTNAME=		superlu_2.0
 PKGNAME=		superlu-2.0
+PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		http://www.nersc.gov/~xiaoye/SuperLU/
 
