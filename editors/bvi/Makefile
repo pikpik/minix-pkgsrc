@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.2 1999/11/12 15:32:48 agc Exp $
+# $NetBSD: Makefile,v 1.3 2000/01/15 18:46:25 jlam Exp $
 #
 
 DISTNAME=	bvi-1.2.0.src
 PKGNAME=	bvi-1.2.0
 CATEGORIES=	editors
-MASTER_SITES=	http://bvi.linuxbox.com/download/
+MASTER_SITES=	http://bvi.linuxave.net/download/
 
 MAINTAINER=	sakamoto@netbsd.org
-HOMEPAGE=	http://bvi.linuxbox.com/
+HOMEPAGE=	http://bvi.linuxave.net/
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	CFLAGS="-I${LOCALBASE}/include" \
