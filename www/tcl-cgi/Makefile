@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/07/07 16:10:42 bouyer Exp $
+# $NetBSD: Makefile,v 1.3 2000/08/30 15:42:58 jwise Exp $
 #
 
 DISTNAME=	cgi.tcl
@@ -11,6 +11,8 @@ MAINTAINER=	bouyer@netbsd.org
 HOMEPAGE=	http://expect.nist.gov/cgi.tcl/
 
 DEPENDS+=	tcl-8.3.2:../../lang/tcl
+
+DIST_SUBDIR=	${PKGNAME}
 
 GNU_CONFIGURE=	yes
 
