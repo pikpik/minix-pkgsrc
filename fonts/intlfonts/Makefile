@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/05/09 17:16:18 itojun Exp $
+# $NetBSD: Makefile,v 1.6 2000/05/27 14:11:29 agc Exp $
 
 DISTNAME=	intlfonts-1.2
 CATEGORIES=	fonts x11
@@ -39,6 +39,8 @@ USE_X11BASE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-fontdir=${PREFIX}/lib/X11/fonts/intlfonts \
 		--without-bdf --enable-compress=gzip
+
+.include "../../mk/bsd.prefs.mk"
 
 .if !defined(NO_EXTRA_FONTS)
 FONT_SETS+=	${EXTRA_FONTS}
