@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2000/03/28 17:22:19 tron Exp $
 # FreeBSD Id: ports/www/tidy/Makefile,v 1.15 2000/02/16 00:08:36 mharo Exp
 
-DISTNAME=	tidy13jan00
-PKGNAME=	tidy-20000113
+DISTNAME=	tidy4aug00
+PKGNAME=	tidy-20000804
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/People/Raggett/
 EXTRACT_SUFX=	.tgz
