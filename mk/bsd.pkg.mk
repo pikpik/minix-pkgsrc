@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1323 2003/12/18 03:32:50 grant Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1324 2003/12/21 14:19:12 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1057,7 +1057,6 @@ MASTER_SITE_XEMACS+=	\
 	ftp://ftp.dti.ad.jp/pub/unix/editor/xemacs/ \
 	ftp://ftp.jaist.ac.jp/pub/GNU/xemacs/ \
 	ftp://ftp.pasteur.fr/pub/computing/xemacs/ \
-	ftp://ftp.tu-darmstadt.de/pub/editors/xemacs/ \
 	http://public.planetmirror.com.au/pub/xemacs/ \
 	ftp://mirror.aarnet.edu.au/pub/xemacs/ \
 	ftp://mirror.cict.fr/xemacs/ \
