@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/pila
+bin/pilotdis
+bin/splitprc
+man/man1/pilotdis.1
