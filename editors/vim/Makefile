@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 1999/08/08 09:31:18 rh Exp $
+# $NetBSD: Makefile,v 1.20 1999/10/07 17:41:49 tron Exp $
 
 DISTNAME=		vim-5.4
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
@@ -13,8 +13,6 @@ DISTFILES=		${DISTNAME}-src${EXTRACT_SUFX} \
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.vim.org/
 
-DEPENDS=		ncurses-4.2:../../devel/ncurses
-
 CONFLICTS=		vim-gtk-*
 
 GNU_CONFIGURE=		yes
@@ -23,5 +21,11 @@ CONFIGURE_ARGS+=	--enable-gui=athena --with-tlib=ncurses
 CPPFLAGS+=		-I${LOCALBASE}/include	# for ncurses' termcap.h
 LDFLAGS+=		-L${LOCALBASE}/lib	# for -lncurses
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+DEPENDS=		ncurses-4.2:../../devel/ncurses
+.endif
 
 .include "../../mk/bsd.pkg.mk"
