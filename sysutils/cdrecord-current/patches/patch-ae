@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- cdda2wav/Makefile.orig	Tue Nov 16 00:48:52 1999
 +++ cdda2wav/Makefile	Tue Nov 16 00:49:23 1999
 @@ -7,7 +7,8 @@
