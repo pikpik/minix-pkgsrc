@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:34:12 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/11/28 16:52:20 wiz Exp $
 bin/BEpsf
 bin/Blatdoc
 bin/Blatdocs
@@ -89,7 +89,6 @@ ${SCIBASE}/config/Makefile.ultrix
 ${SCIBASE}/config/Makefile.ultrix.in
 ${SCIBASE}/config/Makeso.incl
 ${SCIBASE}/config/Makeso.incl.in
-${SCIBASE}/config/Makeso.incl.in.orig
 ${SCIBASE}/config/README
 ${SCIBASE}/config/config.guess
 ${SCIBASE}/config/config.sub
