@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/12/24 18:52:45 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:40:01 jmmv Exp $
 #
 
 DISTNAME=		bicom101
@@ -8,7 +8,7 @@ CATEGORIES=		archivers
 MASTER_SITES=		http://www3.sympatico.ca/mt0000/bicom/
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		collver1@attbi.com
+MAINTAINER=		collver1@comcast.net
 HOMEPAGE=		http://www3.sympatico.ca/mt0000/bicom/bicom.html
 COMMENT=		data compressor in the PPM family
 
