@@ -1,11 +1,11 @@
-$NetBSD: patch-aa,v 1.5 1999/09/29 22:43:57 hubertf Exp $
+$NetBSD$
 
---- kdvi/dvi.h.orig  Thu Sep 30 00:11:49 1999
-+++ kdvi/dvi.h       Thu Sep 30 00:13:01 1999
+--- kdvi/dvi.h.orig	Sat Nov 27 23:19:40 1999
++++ kdvi/dvi.h	Sat Nov 27 23:19:40 1999
 @@ -60,3 +60,7 @@
- #define        EREFL           251
+ #define	EREFL		251
  
- #define        TRAILER         223     /* Trailing bytes at end of file */
+ #define	TRAILER		223	/* Trailing bytes at end of file */
 +
 +#ifdef __SVR4
 +#define NeedVarargsPrototypes  1
