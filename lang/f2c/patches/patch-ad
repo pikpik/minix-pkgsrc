@@ -2,9 +2,9 @@ $NetBSD$
 
 Name libraries correctly
 
---- f2c.1t.orig	Sat May 16 17:16:53 1998
-+++ f2c.1t	Thu Jul  9 07:54:55 1998
-@@ -333,12 +333,15 @@
+--- f2c.1t.orig	Tue Sep  8 10:16:48 1998
++++ f2c.1t	Tue Dec  7 17:24:23 1999
+@@ -334,12 +334,15 @@
  output file
  .TP
 -.F /usr/include/f2c.h
