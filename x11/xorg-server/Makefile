@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:18:40 tv Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/08 03:35:25 xtraeme Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		xorg-server-${XORG_VER}
@@ -47,6 +47,12 @@ SUBST_MESSAGE.stubs=	"Fixing stubs Makefile."
 
 .if ${OPSYS} != "NetBSD"
 USE_PERL5=	build # Yeah, we need this :-)
+.endif
+
+.if !empty(MACHINE_PLATFORM:MNetBSD-*-x86_64)
+PLIST_SUBST+=		NOT_X86_64=""
+.else
+PLIST_SUBST+=		NOT_X86_64="@comment "
 .endif
 
 post-install:
