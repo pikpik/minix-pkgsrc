@@ -1,8 +1,8 @@
 $NetBSD$
 
---- kaboodle/main.cpp.orig	Fri Aug 31 13:34:04 2001
+--- kaboodle/main.cpp.orig	Sun Oct 27 11:20:11 2002
 +++ kaboodle/main.cpp
-@@ -42,7 +42,9 @@
+@@ -42,7 +42,9 @@ static KCmdLineOptions options[] =
  	{ 0, 0, 0}
  };
  
@@ -11,5 +11,5 @@ $NetBSD$
 +
 +int kdemain(int argc, char **argv)
  {
- 	KCmdLineArgs::init( argc, argv, KaboodleFactory::aboutData());
+ 	KCmdLineArgs::init(argc, argv, Kaboodle::KaboodleFactory::aboutData());
  	KCmdLineArgs::addCmdLineOptions(options);

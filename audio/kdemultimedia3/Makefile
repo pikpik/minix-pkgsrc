@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.12 2003/01/20 10:03:41 skrll Exp $
 
-DISTNAME=	kdemultimedia-3.0.5a
+DISTNAME=	kdemultimedia-3.1
 CATEGORIES=	audio
 COMMENT=	Audio tools for the KDE integrated X11 desktop
 
