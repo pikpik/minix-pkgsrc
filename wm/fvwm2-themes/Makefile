@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/05/01 17:57:53 snj Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:18:23 tv Exp $
 #
 
 DISTNAME=	fvwm-themes-${THEM_VER}
 PKGNAME=	${DISTNAME:S/fvwm/&2/}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fvwm-themes/}
 EXTRACT_SUFX=	.tar.bz2
@@ -14,7 +14,7 @@ MAINTAINER=	gendalia@NetBSD.org
 HOMEPAGE=	http://fvwm-themes.sourceforge.net/
 COMMENT=	Configuration framework for fvwm2 with samples
 
-DEPENDS+=	fvwm2>=2.4.8:../../wm/fvwm2
+DEPENDS+=	{fvwm2,fvwm-devel}>=2.4.8:../../wm/fvwm2
 
 THEM_VER=	0.6.2
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
