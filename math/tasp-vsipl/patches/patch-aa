@@ -1,0 +1,8 @@
+$NetBSD$
+
+--- /dev/null	Sat May  5 19:44:41 2001
++++ Makefile
+@@ -0,0 +1,3 @@
++SUBDIR= libvsip libVU
++
++.include <bsd.subdir.mk>
