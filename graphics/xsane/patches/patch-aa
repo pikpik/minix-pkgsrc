@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.5 2000/08/28 16:00:19 rh Exp $
 
 --- configure.orig	Thu Jul 27 14:59:24 2000
 +++ configure
@@ -32,7 +32,7 @@ $NetBSD$
  # check must stand at end of list because of the missing libintl in libsane.so
  # check needs x_libraries and x_includes because they may be needed by png
  if test "${ADD_LIBINTL}" = "no"; then
-+  CPPFLAGS="${CPPFLAGS} -I${x_includes}"
++  CPPFLAGS="${CPPFLAGS} -I${x_includes} -I${LOCALBASE}/include"
    for ac_hdr in sane/sane.h
  do
  ac_safe=`echo "$ac_hdr" | sed 'y%./+-%__p_%'`
