@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2004/03/12 02:20:17 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/15 20:52:07 ben Exp $
 #
 
 DISTNAME=		Csound-4.24.1
 PKGNAME=		csound-dev-4.24.1
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		http://www.csounds.com/istvan/archive/misc/
 EXTRACT_SUFX=		.tar.bz2
