@@ -1,35 +1,33 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 16:54:03 martti Exp $
+# $NetBSD$
 #
 
-DISTNAME=	maude-linux
-PKGNAME=	maude-1.0.5
+DISTNAME=	maude-src
+PKGNAME=	maude-2.0.1
+WRKSRC=		${WRKDIR}/Maude-${PKGVERSION}
 CATEGORIES=	lang
-MASTER_SITES=	http://maude.csl.sri.com/maude1/current/system/
-EXTRACT_SUFX=	.tar.Z
+MASTER_SITES=	http://maude.cs.uiuc.edu/download/ \
+		http://maude.cs.uiuc.edu/download/current/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		fm.maude
 
-MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://maude.csl.sri.com/
+MAINTAINER=	kristerw@NetBSD.org
+HOMEPAGE=	http://maude.cs.uiuc.edu/
 COMMENT=	System for equational and rewriting logic specification/programming
 
-# see http://maude.csl.sri.com/license/license.html
-LICENSE=	maude-license
+.if !exists(/usr/bin/flex)
+BUILD_DEPENDS+=	flex-[0-9]*:../../devel/flex
+.endif
+BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
 
-RESTRICTED=		license does not explicitly allow redistribution
-NO_SRC_ON_FTP=		${RESTRICTED}
-NO_BIN_ON_FTP=		${RESTRICTED}
-NO_SRC_ON_CDROM=	${RESTRICTED}
-NO_BIN_ON_CDROM=	${RESTRICTED}
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-NO_CONFIGURE=		yes
-NO_BUILD=		yes
+USE_BUILDLINK2=	YES
+GNU_CONFIGURE=	YES
+CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/maude
 
-ONLY_FOR_PLATFORM=	NetBSD-*-i386
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKDIR}/maude-linux/bin/maude.linux ${PREFIX}/bin/maude
-	${INSTALL_SCRIPT} ${WRKDIR}/maude-linux/bin/full-maude.maude ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKDIR}/maude-linux/bin/prelude.maude ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/maude
-	${INSTALL_DATA} ${WRKDIR}/maude-linux/examples/* ${PREFIX}/share/examples/maude
-
+post-install:
+	${INSTALL_DATA} ${DISTDIR}/fm.maude ${PREFIX}/share/maude
+.include "../../devel/buddy/buildlink2.mk"
+.include "../../devel/gmp/buildlink2.mk"
+.include "../../devel/libtecla/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
