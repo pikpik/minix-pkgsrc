@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/06/21 20:16:26 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2001/06/30 18:39:29 jlam Exp $
 
 DISTNAME=	tk8.3.2
 PKGNAME=	tk-8.3.2nb1
@@ -16,8 +16,9 @@ CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_DIR}/lib
 MAKE_ENV+=		TOUCH="${TOUCH}"
 
 USE_X11=		yes
-USE_BUILDLINK_ONLY=	yes
 USE_LIBTOOL=		yes
+USE_BUILDLINK_ONLY=	yes
+REPLACE_BUILDLINK+=	tkConfig.sh
 
 # Initially install the man pages into ${WRKDIR}/man, as we need a staged
 # install to avoid overwriting existing manpages in ${PREFIX}/man.
@@ -79,4 +80,5 @@ test:
 	cd ${WRKSRC}; ${SETENV} LIBTOOL=${LIBTOOL} PREFIX=${PREFIX} ${MAKE} test
 
 .include "../../lang/tcl/buildlink.mk"
+.include "../../mk/x11.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
