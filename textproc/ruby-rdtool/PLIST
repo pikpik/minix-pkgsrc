@@ -1,8 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:41 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/02/04 15:30:17 taca Exp $
 bin/rd2
 bin/rdswap
 bin/rmi2html
-bin/rmi2html.rb
 ${RUBY_SITELIBDIR}/rd/block-element.rb
 ${RUBY_SITELIBDIR}/rd/complex-list-item.rb
 ${RUBY_SITELIBDIR}/rd/desclist.rb
