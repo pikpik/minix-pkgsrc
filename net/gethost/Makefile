@@ -1,12 +1,12 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/10 02:12:00 kim Exp $
 
-CATEGORIES=	net
 DISTNAME=	gethost-0.03
-
+CATEGORIES=	net
 MASTER_SITES=	http://www.reedmedia.net/software/gethost/
+
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.reedmedia.net/software/gethost/
-COMMENT=	A hostname and IP resolver for testing /etc/hosts, nsswitch.conf
+COMMENT=	hostname and IP resolver for testing /etc/hosts and nsswitch.conf
 
 ALL_TARGET=	gethost
 
