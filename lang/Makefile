@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/04/04 03:51:43 proff Exp $
+# $NetBSD: Makefile,v 1.25 1999/04/07 10:38:12 agc Exp $
 # FreeBSD Id: Makefile,v 1.82 1997/09/30 07:49:24 asami Exp
 #
 
@@ -20,6 +20,7 @@
 #    SUBDIR += forth
 #    SUBDIR += g77
 #    SUBDIR += gcl
+    SUBDIR += gforth
 #    SUBDIR += gnat
     SUBDIR += guavac
     SUBDIR += guile
