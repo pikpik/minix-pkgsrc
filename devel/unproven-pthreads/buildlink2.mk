@@ -1,9 +1,7 @@
-# $NetBSD: buildlink2.mk,v 1.4 2002/10/09 09:49:32 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2002/10/09 10:27:12 jlam Exp $
 
 .if !defined(UNPROVEN_PTHREADS_BUILDLINK2_MK)
 UNPROVEN_PTHREADS_BUILDLINK2_MK=	# defined
-
-.include "../../mk/bsd.prefs.mk"
 
 BUILDLINK_PACKAGES+=			unproven-pthreads
 BUILDLINK_DEPENDS.unproven-pthreads?=	unproven-pthreads>=0.17
