@@ -1,4 +1,4 @@
-# $NetBSD: ext.mk,v 1.1.1.1 2004/10/31 19:30:30 jdolecek Exp $
+# $NetBSD: ext.mk,v 1.2 2004/11/06 18:24:40 jdolecek Exp $
 #
 # PHP extension package framework, for both PECL and bundled PHP extensions.
 #
@@ -22,13 +22,13 @@ PLIST_SUBST+=		MODNAME=${PKGMODNAME}
 PKGNAME?=		php-${MODNAME}-${PHP_BASE_VERS}
 EXTRACT_ELEMENTS?=	${DISTNAME}/ext/${PKGMODNAME}
 WRKSRC?=		${WRKDIR}/${EXTRACT_ELEMENTS}
+DISTINFO_FILE=		${.CURDIR}/${PHPPKGSRCDIR}/distinfo
 .else
 # PECL extension
 PKGNAME?=		php-${MODNAME}-${PHP_BASE_VERS}.${PECL_VERSION}
 MASTER_SITES=		http://pecl.php.net/get/
 DISTNAME=		${MODNAME}-${PECL_VERSION}
 DIST_SUBDIR+=		php-${MODNAME}
-DISTINFO_FILE=		${PKGDIR}/distinfo
 EXTRACT_SUFX=		.tgz
 .endif
 
