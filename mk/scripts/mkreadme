@@ -1,5 +1,5 @@
 #!/bin/sh
-# $NetBSD: mkreadme,v 1.2 2003/01/04 22:28:33 dmcmahill Exp $
+# $NetBSD: mkreadme,v 1.3 2003/05/06 17:42:05 jmmv Exp $
 #
 # Script for README.html generation
 #
@@ -255,7 +255,7 @@ if [ -d ${PKGSRCDIR}/pkgtools/pkglint ]; then
 
     for v in DISTDIR PACKAGES PKGREPOSITORYSUBDIR PKG_SUFX MACHINE_ARCH PKG_URL OPSYS OS_VERSION FTP_PKG_URL_HOST FTP_PKG_URL_DIR CDROM_PKG_URL_HOST CDROM_PKG_URL_DIR
     do
-	val=`make show-var VARNAME=${v}`
+	val=`${BMAKE} show-var VARNAME=${v}`
 	if [ $? != 0 ]; then
 	    echo "Error:  make show-var VARNAME=${v} in `pwd` "
 	    echo "Failed.  This is a fatal error"
