@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+To enable changing the system password via a Courier authentication module,
+the following packages will need to be installed:
+
+	tcl-expect	Tcl extension for scripting of interactive programs
+===========================================================================

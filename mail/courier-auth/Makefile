@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2002/01/02 22:24:43 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/01/22 22:00:22 jlam Exp $
 
 PKGNAME=	courier-auth-${BASE_VERS}
-PKGREVISION?=	# empty
+PKGREVISION?=	1
+CATEGORIES=	security
 COMMENT=	authentication modules for Courier mail packages
 
 CONFLICTS=	courier-imap<=1.4.0
