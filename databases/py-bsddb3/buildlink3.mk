@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/05/11 10:49:54 seb Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_BSDDB3_BUILDLINK3_MK:=	${PY_BSDDB3_BUILDLINK3_MK}+
 
 .include "../../mk/pthread.buildlink3.mk"
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "native"
-PYTHON_VERSIONS_ACCEPTED=	23pth 22pth
+PYTHON_VERSIONS_ACCEPTED=	24 23 22
 .endif
 .include "../../lang/python/pyversion.mk"
 
