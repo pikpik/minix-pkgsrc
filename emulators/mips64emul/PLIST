@@ -1,2 +1,10 @@
 @comment $NetBSD$
 bin/mips64emul
+man/man1/mips64emul.1
+share/doc/mips64emul/BUGS
+share/doc/mips64emul/HISTORY
+share/doc/mips64emul/LICENSE
+share/doc/mips64emul/README
+share/doc/mips64emul/RELEASE
+share/doc/mips64emul/TODO
+@dirrm share/doc/mips64emul
