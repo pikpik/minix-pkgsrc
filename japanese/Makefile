@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/08/02 05:59:21 sakamoto Exp $
+# $NetBSD: Makefile,v 1.13 1999/08/02 11:35:28 sakamoto Exp $
 #
 
     SUBDIR += a2ps
@@ -13,6 +13,7 @@
     SUBDIR += groff
     SUBDIR += jhd
     SUBDIR += kakasi
+    SUBDIR += kinput2
     SUBDIR += less
     SUBDIR += man
     SUBDIR += mh
