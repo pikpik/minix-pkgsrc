@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- MANIFEST.orig	Mon Dec 11 12:37:36 2000
++++ MANIFEST	Mon Dec 25 14:14:38 2000
+@@ -15,7 +15,6 @@
+ Unicode/_test.pl
+ Unicode/table.h
+ Unicode/uni.c
+-mac_install.pl
+ t/ambiguous.pl
+ t/benchmark.pl
+ t/convert.t
+@@ -30,4 +29,3 @@
+ t/unibench.pl
+ t/x0212.euc
+ t/zenkaku.euc
+-win_install.pl
