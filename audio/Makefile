@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.261 2004/11/05 22:48:46 wiz Exp $
+# $NetBSD: Makefile,v 1.262 2004/11/05 23:10:08 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -137,6 +137,7 @@ SUBDIR+=	mad
 SUBDIR+=	mad123
 SUBDIR+=	madman
 SUBDIR+=	madplay
+SUBDIR+=	malint
 SUBDIR+=	maplay
 SUBDIR+=	mbrola
 SUBDIR+=	mbrolavox-en1
