@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/14 09:40:30 rh Exp $
 #
 
 DISTNAME=		fkiss-0.32
@@ -15,6 +15,7 @@ DEPENDS+=		lha-*:../../archivers/lha
 
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
+CFLAGS+=		-DUSE_STDARG -DHAVE_STDARG_H
 
 pre-configure:
 	cd ${WRKSRC} && \
