@@ -1,5 +1,0 @@
-@comment $NetBSD$
-jre/lib/i386/libjavacomp.so
-jre/lib/i386/libjavacomp_g.so
-jre/README.javacomp
-jre/LICENSE.javacomp

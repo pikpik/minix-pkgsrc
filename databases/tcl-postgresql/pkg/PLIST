@@ -1,8 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2001/01/04 15:10:25 agc Exp $
-bin/pgtclsh
-include/pgsql/libpgtcl.h
-lib/libpgtcl.a
-lib/libpgtcl.so
-lib/libpgtcl.so.2
-lib/libpgtcl.so.2.1
-man/man1/pgtclsh.1

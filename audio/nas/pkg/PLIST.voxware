@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.6 2000/08/04 01:31:56 jlam Exp $
-bin/nasd
-man/cat1/auvoxware.0
-man/cat1/nasd.0
-man/cat1/nasd.conf.0
-share/examples/nas/nasd.conf.eg
-@dirrm share/examples/nas

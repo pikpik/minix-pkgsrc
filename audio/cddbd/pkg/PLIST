@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1997/11/06 09:57:49 agc Exp $
-bin/cddbd
-share/xmcd/cddbd/access
-share/xmcd/cddbd/motd
-share/xmcd/cddbd/sites
-@dirrm share/xmcd/cddbd
-@dirrm share/xmcd

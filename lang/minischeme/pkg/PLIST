@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/miniscm
-share/minischeme/init.scm
-share/minischeme/nextleaf.scm
-share/minischeme/tools.scm
-@dirrm share/minischeme

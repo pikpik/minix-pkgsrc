@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/xmp
-bin/xxmp
-etc/xmp-modules.conf
-etc/xmp.conf
-man/man1/xmp.1
-man/man1/xxmp.1

@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/02/26 18:45:48 tsarna Exp $
-lib/python2.0/site-packages/_mysqlmodule.so
-lib/python2.0/site-packages/MySQLdb.py
-lib/python2.0/site-packages/MySQLdb.pyc
-lib/python2.0/site-packages/MySQLdb.pyo

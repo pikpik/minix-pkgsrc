@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/10/11 14:00:34 proff Exp $
-bin/mbrola
-share/doc/mbrola/readme.txt
-@unexec rm -r %D/share/mbrola
-@dirrm share/doc/mbrola

@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/05/23 21:46:05 tron Exp $
-lib/python2.0/lib-dynload/gdbmmodule.so

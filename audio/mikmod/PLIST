@@ -1,0 +1,3 @@
+@comment $NetBSD: PLIST,v 1.4 2000/04/02 16:32:37 pooka Exp $
+bin/mikmod
+man/man1/mikmod.1

@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.3 2000/12/19 09:24:17 jlam Exp $
-bin/jikes
-man/man1/jikes.1
-share/doc/html/jikes/license.htm
-@dirrm share/doc/html/jikes

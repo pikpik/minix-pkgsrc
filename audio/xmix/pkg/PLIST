@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xmix
-lib/X11/app-defaults/XMix
-man/cat1/xmix.0

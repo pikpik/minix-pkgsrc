@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/rio
-bin/find-lpt-port
-share/rio/README
-@dirrm share/rio

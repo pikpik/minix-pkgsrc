@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/tfmxplay
-share/doc/tfmxplay/README
-@dirrm share/doc/tfmxplay

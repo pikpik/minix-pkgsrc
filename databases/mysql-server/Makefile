@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/07/08 13:59:16 bad Exp $
+# $NetBSD: Makefile,v 1.23 2001/10/18 15:20:06 veego Exp $
 #
 
 .include "../../databases/mysql-client/Makefile.common"
@@ -38,6 +38,6 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/scripts/mysql_install_db ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/man/mysqld.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKSRC}/man/safe_mysqld.1 ${PREFIX}/man/man1
-	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
+#	PKG_PREFIX=${PREFIX} ${SH} ${INSTALL_FILE} ${PKGNAME} POST-INSTALL
 
 .include "../../mk/bsd.pkg.mk"
