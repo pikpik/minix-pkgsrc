@@ -1,3 +1,4 @@
 @comment $NetBSD$
+lib/sasl/libgssapiv2.a
 lib/sasl/libgssapiv2.la
 lib/sasl/libgssapiv2.so.1.14
