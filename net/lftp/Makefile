@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/02/14 17:21:46 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2004/02/15 21:41:04 salo Exp $
 #
 
 DISTNAME=		lftp-2.6.12
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		michal@pasternak.w.lub.pl
 HOMEPAGE=		http://lftp.yar.ru/
 COMMENT=		Powerful command line ftp client
-
-PKG_INSTALLATION_TYPES= overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
