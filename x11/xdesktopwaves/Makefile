@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/20 22:14:59 jmmv Exp $
 #
 
-DISTNAME=	xdesktopwaves-1.0
+DISTNAME=	xdesktopwaves-1.1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xdesktopwaves/}
 
