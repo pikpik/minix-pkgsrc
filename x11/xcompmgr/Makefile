@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:50:52 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/08 03:58:18 xtraeme Exp $
 #
 
 DISTNAME=	xcompmgr-cvs-20040914
@@ -34,6 +34,5 @@ pre-configure:
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../x11/Xcomposite/buildlink3.mk"
 .include "../../x11/Xrender/buildlink3.mk"
-.include "../../x11/compositeext/buildlink3.mk"
 .include "../../mk/automake.mk"
 .include "../../mk/bsd.pkg.mk"
