@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/06/25 19:31:32 tron Exp $
+# $NetBSD: Makefile,v 1.3 1998/07/01 17:01:45 tron Exp $
 #
 
 DISTNAME=       fly-1.6.1
@@ -6,6 +6,7 @@ CATEGORIES=	graphics www
 MASTER_SITES=   ftp://www.unimelb.edu.au/pub/www/tools/unix/fly/
 
 MAINTAINER=	bouyer@netbsd.org
+HOMEPAGE=	http://www.unimelb.edu.au/fly/fly.html
 
 DEPENDS+=       gd-1.3:../../graphics/gd
 

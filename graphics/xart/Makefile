@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/07/04 09:19:00 mycroft Exp $
+# $NetBSD: Makefile,v 1.7 1998/07/15 11:45:51 tv Exp $
 #
 
 DISTNAME=       xart19980415
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.cqi.com/~humbubba/linux/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.cqi.com/~humbubba/linux.html
 
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	tiff-3.4:../../graphics/tiff

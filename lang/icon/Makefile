@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/20 11:56:24 frueauf Exp $
+# $NetBSD: Makefile,v 1.9 1998/06/27 22:03:40 tron Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/02/12 08:39:15 tg Exp
 #
 
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 ONLY_FOR_ARCHS=	alpha i386
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.cs.arizona.edu/icon/index.htm
 
 DIST_SUBDIR=	icon
 NO_WRKSUBDIR=	true

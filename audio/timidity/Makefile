@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/06/18 16:15:11 agc Exp $
+# $NetBSD: Makefile,v 1.15 1998/07/20 12:18:23 frueauf Exp $
 #
 
 DISTNAME=       timidity-0.2i
@@ -9,6 +9,7 @@ TIINS=          dgguspat.zip
 DISTFILES=      ${TIINS} ${DISTNAME}.tar.gz
 
 MAINTAINER=     mycroft@NetBSD.ORG
+HOMEPAGE=	http://www.cgs.fi/~tt/timidity/
 
 BUILD_DEPENDS=  unzip:../../archivers/unzip
 RUN_DEPENDS=	wish8.0:../../x11/tk80

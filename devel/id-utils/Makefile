@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:22 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/24 09:20:34 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1996/11/18 10:22:47 asami Exp
 #
 
@@ -7,6 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.gnu.org/software/idutils/idutils.html
 
 OPSYS!=		uname -s
 .if (${OPSYS} == "FreeBSD")

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:56 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 13:21:03 agc Exp $
 #
 
 DISTNAME=	unclutter-8
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	mycroft@NetBSD.ORG
+MAINTAINER=	mycroft@netbsd.org
 
 WRKSRC=		${WRKDIR}/unclutter
 USE_IMAKE=	yes

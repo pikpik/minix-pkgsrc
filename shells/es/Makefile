@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:32 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 13:07:50 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1996/11/18 11:39:46 asami Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=	shells
 MASTER_SITES=   ftp://ftp.sys.toronto.edu/pub/es/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://hawkwind.utcs.utoronto.ca:8001/mlists/es.html
 
 MANCOMPRESSED=	yes
 

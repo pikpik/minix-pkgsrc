@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/09 13:36:48 agc Exp $
+# $NetBSD: Makefile,v 1.10 1998/06/18 16:15:11 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/09/08 13:20:10 tg Exp 
 #
 
@@ -7,6 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://mercury.hypersurf.com/~amb/download/xmcd/src/
 
 MAINTAINER=	hubertf@netbsd.org
+HOMEPAGE=	http://sunsite.unc.edu/~cddb/xmcd/index.html
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

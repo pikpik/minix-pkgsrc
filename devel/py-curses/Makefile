@@ -7,6 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://starship.skyport.net/pub/crew/andrich/Unsupported/
 
 MAINTAINER=	tsarna@netbsd.org
+HOMEPAGE=	http://starship.skyport.net/crew/amk/howto/curses/curses.html
 
 DEPENDS+=	python-1.5.1:../../lang/python
 DEPENDS+=       ncurses-1.9.9g:../../devel/ncurses                      

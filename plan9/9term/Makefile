@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/05/09 17:23:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 1998/06/22 13:01:52 agc Exp $
 # FreeBSD Id: Makefile,v 1.5 1996/12/07 23:43:56 asami Exp
 #
 
@@ -8,9 +8,10 @@ CATEGORIES=	plan9
 MASTER_SITES=   ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.psrg.cs.usyd.edu.au/~matty/9term/index.html
 
 # needs library and private header, but not during runtime
-BUILD_DEPENDS=	${PKGSRCDIR}/plan9/sam/${WRKDIR:T}/libframe/libframe.a:../../plan9/sam
+#BUILD_DEPENDS=	${PKGSRCDIR}/plan9/sam/${WRKDIR:T}/libframe/libframe.a:../../plan9/sam
 
 OPSYS!= 	uname -s
 .if (${OPSYS} == "NetBSD")

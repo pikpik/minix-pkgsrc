@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:17 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/06/20 09:20:39 agc Exp $
 
 DISTNAME=	modemd-970221
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.vix.com/pub/modemd/
 
-MAINTAINER=	tsarna@endicor.com
+MAINTAINER=	tsarna@netbsd.org
 
 .include "../../mk/bsd.prefs.mk"
 

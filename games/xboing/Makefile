@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/18 09:25:16 frueauf Exp $
 #
 
 DISTNAME=		xboing2.4
@@ -8,6 +8,7 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=		root@garbled.net
+HOMEPAGE=		http://www.catt.rmit.edu.au/xboing/xboing.html
 
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 

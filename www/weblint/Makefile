@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/22 13:14:31 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/08/08 12:35:42 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/10/29 17:09:53 max Exp
 #
 
@@ -7,6 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cre.canon.co.uk/pub/weblint/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.cre.canon.co.uk/~neilb/weblint/
 
 USE_PERL5=	yes
 

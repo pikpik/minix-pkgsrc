@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/05/22 13:49:41 tron Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/22 13:20:56 agc Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -7,6 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/
 
 MAINTAINER=	rh@trapdoor.vip.at
+HOMEPAGE=	http://www.lysator.liu.se/~marcus/amiwm.html
 
 USE_X11=	yes
 GNU_CONFIGURE=	yes

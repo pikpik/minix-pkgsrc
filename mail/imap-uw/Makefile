@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/08/05 12:16:48 frueauf Exp $
+# $NetBSD: Makefile,v 1.4 1998/08/05 14:46:31 tv Exp $
 #
 
 DISTNAME=       imap-4.2
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tv@netbsd.org
+HOMEPAGE=	http://www.washington.edu/imap/
 
 USE_LIBTOOL=	yes
 

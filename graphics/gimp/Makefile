@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 1998/07/04 09:18:59 mycroft Exp $
+# $NetBSD: Makefile,v 1.22 1998/07/15 11:45:50 tv Exp $
 
 DISTNAME=	gimp-1.0.0
 CATEGORIES=	graphics
@@ -8,6 +8,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${GIMP_DATA}${EXTRACT_SUFX}
 
 MAINTAINER=	bsieker@techfak.uni-bielefeld.de
+HOMEPAGE=	http://www.gimp.org/
 
 DEPENDS+=	jpeg-6b:../../graphics/jpeg
 DEPENDS+=	gtk+-1.0.4:../../x11/gtk

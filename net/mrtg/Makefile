@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/07/13 17:56:27 tv Exp $
+# $NetBSD: Makefile,v 1.3 1998/07/14 10:56:16 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/12/16 19:42:17 vanilla Exp
 #
 
@@ -7,6 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/
 
 MAINTAINER=	tv@netbsd.org
+HOMEPAGE=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/mrtg.html
 
 DEPENDS=	gd-1.3:../../graphics/gd
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/07/24 00:18:03 cjs Exp $
 #
 #  Notes:
 #
@@ -19,6 +19,7 @@ CATEGORIES=	www
 MASTER_SITES=   http://ca.php.net/distributions/
 
 MAINTAINER=	cjs@netbsd.org
+HOMEPAGE=	http://www.php.net/
 
 #DEPENDS+=	perl,apache1.3,mysql
 

@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.13 1998/05/23 15:42:59 tv Exp $
+# $NetBSD: Makefile,v 1.14 1998/06/22 12:47:35 agc Exp $
 # FreeBSD Id: Makefile,v 1.4 1997/09/11 03:54:43 fenner Exp 
 #
 
 DISTNAME=	vat-4.0b2
-CATEGORIES=	mbone tk80
+CATEGORIES=	mbone
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 DISTFILES=	vatsrc-4.0b2.tar.gz
 
-MAINTAINER=	mycroft@NetBSD.ORG
+MAINTAINER=	mycroft@netbsd.org
+HOMEPAGE=	http://www-nrg.ee.lbl.gov/vat/
 
 # If configure is changed to look for libgsm.a in ${PREFIX}/lib, then
 # we can use this first BUILD_DEPENDS and save some work.

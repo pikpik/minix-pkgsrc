@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/07/04 08:09:07 mycroft Exp $
+# $NetBSD: Makefile,v 1.8 1998/07/04 09:37:30 mycroft Exp $
 #
 
 DISTNAME=       mkisofs-1.11.3
@@ -6,6 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.cdrom.com/pub/linux/tsx-11/packages/mkisofs/
 
 MAINTAINER=	mycroft@netbsd.org
+HOMEPAGE=	http://andante.jic.com/mkisofs.html
 
 CONFLICTS=	mkisofs-1.11
 

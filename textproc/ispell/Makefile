@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/06/10 08:02:09 agc Exp $
+# $NetBSD: Makefile,v 1.10 1998/06/22 13:12:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.21 1997/08/13 23:29:52 jmz Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.gnu.org/software/ispell/ispell.html
 
 MAKE_FLAGS=	TMPDIR=${.CURDIR}
 SCRIPTS_ENV=	"LANG=${LANG}"

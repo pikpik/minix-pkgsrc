@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/05/08 23:32:52 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/20 09:26:32 agc Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/01/03 10:58:40 obrien Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/software/
 
 MAINTAINER=     tron@netbsd.org
+HOMEPAGE=	http://www.clinet.fi/~walker/minicom.html
 
 RUN_DEPENDS=	lrz:../../comms/lrzsz \
 		lsz:../../comms/lrzsz \

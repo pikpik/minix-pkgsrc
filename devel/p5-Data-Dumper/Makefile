@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:22 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 11:27:50 agc Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/06/24 18:43:11 jfitz Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Data
 
 MAINTAINER=		packages@netbsd.org
+HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/Data-Dumper/Dumper.html
 
 USE_PERL5=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:57 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/22 13:21:05 agc Exp $
 #
 
 DISTNAME=	xkeycaps-2.38
@@ -7,6 +7,7 @@ MASTER_SITES=	http://people.netscape.com/jwz/xkeycaps/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.jwz.org/xkeycaps/
 
 USE_IMAKE=      yes
 

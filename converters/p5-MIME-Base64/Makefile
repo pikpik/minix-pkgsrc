@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/06/08 18:23:45 bad Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 13:51:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/08/04 22:47:16 ache Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     MIME
 
 MAINTAINER=	hubertf@netbsd.org
+HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/MIME-Base64/Base64.html
 
 USE_PERL5=	yes
 

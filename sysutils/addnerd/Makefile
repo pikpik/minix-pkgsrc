@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.5 1998/06/08 10:13:10 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/22 13:09:50 agc Exp $
 #
 
 DISTNAME=	addnerd-1.5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
-MAINTAINER=	agc@NetBSD.org
+MAINTAINER=	agc@netbsd.org
+HOMEPAGE=	http://www.westley.demon.co.uk/software.html
 
 GNU_CONFIGURE=	yes
 

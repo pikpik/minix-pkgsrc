@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/01 13:25:28 frueauf Exp $
 #
 
 DISTNAME=		xgalaga-2.0.34
@@ -6,6 +6,7 @@ CATEGORIES=		games x11
 MASTER_SITES=		http://ogresoft.dyn.ml.org/
 
 MAINTAINER=		root@garbled.net
+HOMEPAGE=		http://ogresoft.dyn.ml.org/xgal.html
 
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 

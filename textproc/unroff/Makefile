@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/04/24 09:20:37 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/06/22 13:12:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/04/27 00:11:48 asami Exp
 #
 
@@ -10,6 +10,7 @@ MASTER_SITES=	${UNROFF_SITE}/dist/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PATCH1} ${PATCH2}
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www-rn.informatik.uni-bremen.de/software/unroff/
 
 RUN_DEPENDS=	elk:../../lang/elk
 BUILD_DEPENDS=	elk:../../lang/elk

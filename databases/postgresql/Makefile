@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/06/22 13:58:26 frueauf Exp $
+# $NetBSD: Makefile,v 1.15 1998/07/15 12:40:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.22 1997/12/24 01:21:37 alex Exp
 
 DISTNAME=	postgresql-6.3.2
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.PostgreSQL.org/pub/ \
 		ftp://ftp.jaist.ac.jp/pub/dbms/postgres95/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.PostgreSQL.ORG/
 
 DEPENDS+=	tk-8.0p2:../../x11/tk80
 DEPENDS+=	tcl-8.0p2:../../lang/tcl80

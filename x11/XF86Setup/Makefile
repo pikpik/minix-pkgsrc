@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/06/28 17:16:31 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/07/03 23:30:10 tron Exp $
 
 DISTNAME=	XF86Setup-3.3.2
 CATEGORIES=	x11
@@ -6,6 +6,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 ONLY_FOR_ARCHS=	i386
 
 MAINTAINER=	tron@netbsd.org
+HOMEPAGE=	http://www.xfree86.org/
 
 BUILD_DEPENDS+= ${TCLLIB}:../../lang/tcl80 \
 		${TKLIB}:../../x11/tk80

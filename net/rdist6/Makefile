@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/04/24 16:12:12 agc Exp $
+# $NetBSD: Makefile,v 1.2 1998/06/22 12:58:34 agc Exp $
 #
 
 DISTNAME=	rdist-6.1.4
@@ -6,6 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.MagniComp.com/download/rdist/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.MagniComp.com/rdist/
 
 RDIST6_NAME=	rdist6
 

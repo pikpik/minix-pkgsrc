@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1998/07/15 22:03:49 tron Exp $
+# $NetBSD: Makefile,v 1.26 1998/08/13 07:31:37 tron Exp $
 #
 
 DISTNAME=	ImageMagick-4.0.8
@@ -6,6 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	tron@netbsd.org
+HOMEPAGE=	http://www.wizards.dupont.com/cristy/ImageMagick.html
 
 DEPENDS+=	tiff-3.4:../../graphics/tiff
 DEPENDS+=	jpeg-6b:../../graphics/jpeg

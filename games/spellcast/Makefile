@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/07 11:54:28 frueauf Exp $
 #
 
 DISTNAME=		spellcast
@@ -8,6 +8,7 @@ MASTER_SITES=		http://www.edoc.com/zarf/ftp/
 EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		root@garbled.net
+HOMEPAGE=		http://www.edoc.com/zarf/spellcast.html
 
 USE_X11=		yes
 

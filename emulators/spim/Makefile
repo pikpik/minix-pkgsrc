@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/05/26 21:19:18 tron Exp $
+# $NetBSD: Makefile,v 1.2 1998/05/28 17:39:11 tron Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/10/10 06:53:35 obrien Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		ftp://ftp.cs.wisc.edu/pub/spim/
 
 MAINTAINER=		deberg@mit.edu
+HOMEPAGE=		http://www.cs.wisc.edu/~larus/spim.html
 
 NO_WRKSUBDIR=		yes
 

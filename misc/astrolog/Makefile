@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/05/09 15:24:44 frueauf Exp $
+# $NetBSD: Makefile,v 1.7 1998/06/18 11:12:02 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/08/10 22:31:15 fenner Exp
 #
 
@@ -11,6 +11,7 @@ MASTER_SITES=   http://www.astrolog.org/ftp/ephem/ \
 DISTFILES=      ${EXTRACT_ONLY} ${EPHEM}
 
 MAINTAINER=     packages@netbsd.org
+HOMEPAGE=	http://www.astrolog.org/
 
 EPHEM=          LRZ5_24 CHI_24 CPJV_24
 

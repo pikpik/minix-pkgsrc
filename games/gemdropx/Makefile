@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/07/25 21:22:38 frueauf Exp $
 #
 
 DISTNAME=	gemdropx
@@ -7,6 +7,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/gemdropx/
 
 MAINTAINER=	root@garbled.net
+HOMEPAGE=	http://www.sonic.net/~nbs/unix/x/gemdropx/
 
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/gemdropx

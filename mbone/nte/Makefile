@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/05/08 21:25:00 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1998/05/09 15:24:43 frueauf Exp $
 #
 
 DISTNAME=	nt.1.5a23
@@ -6,7 +6,7 @@ PKGNAME=	nte-1.5a23
 CATEGORIES=	mbone tk80
 MASTER_SITES=	ftp://cs.ucl.ac.uk/mice/nte/
 
-MAINTAINER=	mycroft@NetBSD.ORG
+MAINTAINER=	mycroft@netbsd.org
 
 BUILD_DEPENDS=	${PKGSRCDIR}/x11/tk80/${WRKDIR:T}/tk8.0/generic/default.h:${TK_DIR}:configure
 DEPENDS+=	tk-8.0p2:../../x11/tk80

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/06/21 04:29:07 tv Exp $
+# $NetBSD: Makefile,v 1.15 1998/07/15 10:34:56 agc Exp $
 
 DISTNAME=	ncurses-1.9.9g
 CATEGORIES=	devel
@@ -7,6 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.fu-berlin.de/unix/gnu/ncurses/
 
 MAINTAINER=	hubertf@netbsd.org
+HOMEPAGE=	http://www.gnu.org/software/ncurses/ncurses.html
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-normal --with-shared --enable-bsdpad

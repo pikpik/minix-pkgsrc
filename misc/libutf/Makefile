@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:36 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/06/22 12:52:33 agc Exp $
 #
 
 DISTNAME=	libutf-2.10
@@ -6,6 +6,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
 MAINTAINER=	agc@netbsd.org
+HOMEPAGE=	http://www.westley.demon.co.uk/software.html
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	tst

@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.3 1998/07/21 14:58:43 agc Exp $
+# $NetBSD: Makefile,v 1.4 1998/07/22 07:34:28 agc Exp $
 #
 
 DISTNAME=       STk-3.99.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://kaolin.unice.fr/pub/STk/
 
-MAINTAINER=	perry@NetBSD.ORG
+MAINTAINER=	perry@netbsd.org
+HOMEPAGE=	http://kaolin.unice.fr/STk/
 
 GNU_CONFIGURE=	yes
 

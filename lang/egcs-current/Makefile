@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/06/15 19:06:24 tv Exp $
+# $NetBSD: Makefile,v 1.3 1998/06/22 12:44:29 agc Exp $
 #
 
 DISTNAME=	egcs-19980608
@@ -6,6 +6,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://egcs.cygnus.com/pub/egcs/snapshots/1998-06-08/
 
 MAINTAINER=	tv@netbsd.org
+HOMEPAGE=	http://egcs.cygnus.com/
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS+=--enable-shared --with-gnu-as

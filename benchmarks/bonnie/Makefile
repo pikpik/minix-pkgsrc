@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/04/20 11:56:20 frueauf Exp $
+# $NetBSD: Makefile,v 1.8 1998/06/20 09:20:38 agc Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/11/26 23:09:14 jseger Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=   ftp://ftp.sunet.se/pub/benchmark/Bonnie/
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.textuality.com/bonnie/index.html
 
 NO_CONFIGURE=	yes
 

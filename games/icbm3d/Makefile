@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/07/24 11:41:06 frueauf Exp $
+# $NetBSD: Makefile,v 1.2 1998/07/25 18:03:38 frueauf Exp $
 #
 
 DISTNAME=	icbm3d.0.3
@@ -7,6 +7,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/icbm3d/
 
 MAINTAINER=	root@garbled.net
+HOMEPAGE=	http://www.sonic.net/~nbs/unix/x/icbm3d/
 
 WRKSRC=		${WRKDIR}/icbm3d
 MAKEFILE=	makefile

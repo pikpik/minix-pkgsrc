@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/07/04 09:18:55 mycroft Exp $
+# $NetBSD: Makefile,v 1.12 1998/07/20 13:03:43 frueauf Exp $
 # $FreeBSD Id: Makefile,v 1.5 1998/02/19 09:43:16 obrien Exp
 #
 
@@ -11,6 +11,7 @@ MASTER_SITES=	ftp://ftp.ips.cs.tu-bs.de/pub/local/softech/ddd/  \
 		ftp://ftp.th-darmstadt.de/pub/programming/tools/ddd/
 
 MAINTAINER=     obrien@NUXI.com
+HOMEPAGE=	http://www.cs.tu-bs.de/softech/ddd/
 
 DEPENDS+=	xpm-3.4k:../../graphics/xpm
 

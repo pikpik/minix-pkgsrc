@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1998/05/09 15:24:44 frueauf Exp $
+# $NetBSD: Makefile,v 1.10 1998/06/22 12:52:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/11/30 19:37:48 vanilla Exp
 #
 
@@ -8,6 +8,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/file/managers/mc
 
 MAINTAINER=		packages@netbsd.org
+HOMEPAGE=		http://www.gnome.org/mc/
 
 DEPENDS+=		ncurses-1.9.9g:../../devel/ncurses
 

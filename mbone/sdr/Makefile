@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/06/18 10:45:54 is Exp $
+# $NetBSD: Makefile,v 1.9 1998/07/14 12:08:36 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/10/15 20:35:20 fenner Exp 
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=	mbone tk80
 MASTER_SITES=	http://north.east.isi.edu/sdr/
 
 MAINTAINER=	is@netbsd.org
+HOMEPAGE=	http://north.east.isi.edu/sdr/
 
 DEPENDS+=	tk-8.0p2:../../x11/tk80
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/06/22 12:27:09 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/08/11 10:36:56 agc Exp $
 #
 
 DISTNAME=	ssam-1.9
@@ -6,6 +6,7 @@ CATEGORIES=	editors
 MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
 MAINTAINER=	agc@netbsd.org
+HOMEPAGE=	http://www.westley.demon.co.uk/software.html
 
 DEPENDS=	libutf-2.10:../../misc/libutf
 

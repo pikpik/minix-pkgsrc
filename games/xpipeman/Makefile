@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/01 14:52:45 frueauf Exp $
 #
 
 DISTNAME=	xpipeman-1.5
@@ -6,6 +6,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	http://www.spinne.com/x/games/xpipeman/
 
 MAINTAINER=	root@garbled.net
+HOMEPAGE=	http://www.spinne.com/x/games/xpipeman/
 
 WRKSRC=		${WRKDIR}/xpipeman
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/07/24 13:36:52 agc Exp $
+# $NetBSD: Makefile,v 1.2 1998/08/04 14:48:19 agc Exp $
 #
 
 DISTNAME=	nocol-4.2beta6
@@ -7,6 +7,7 @@ CATEGORIES=	net
 MASTER_SITES= 	ftp://ftp.navya.com/pub/vikas/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://www.netplex-tech.com/software/nocol/
 
 USE_PERL=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1998/07/04 04:11:34 mycroft Exp $
+# $NetBSD: Makefile,v 1.14 1998/07/15 11:50:09 agc Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1997/08/20 10:33:35 jkh Exp
 #
 
@@ -8,6 +8,7 @@ CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
 
 MAINTAINER=		packages@netbsd.org
+HOMEPAGE=		http://www.scriptics.com/
 
 WRKSRC=			${WRKDIR}/tcl8.0/unix
 GNU_CONFIGURE=		yes

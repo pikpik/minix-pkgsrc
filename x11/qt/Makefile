@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1998/07/19 21:09:23 tv Exp $
+# $NetBSD: Makefile,v 1.16 1998/07/22 11:38:11 mycroft Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/10/30 05:15:19 jkh Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/linux/sunsite/Incoming/ \
 		ftp://ftp.troll.no/qt/source/
 
 MAINTAINER=	tron@netbsd.org
+HOMEPAGE=	http://www.troll.no/products/qt.html
 
 CONFLICTS=	qt-1.33
 

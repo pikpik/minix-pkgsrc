@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/04 21:02:20 tron Exp $
 
 DISTNAME=		battleball.20.src
 PKGNAME=		battleball-2.0
@@ -6,6 +6,7 @@ CATEGORIES=		games x11
 MASTER_SITES=		http://www.cs.utexas.edu/users/pahardin/
 
 MAINTAINER=		root@garbled.net
+HOMEPAGE=		http://www.cs.utexas.edu/users/pahardin/bb.html
 
 WRKSRC=			${WRKDIR}/bb-2.0
 

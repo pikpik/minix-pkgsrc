@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/07/26 22:06:10 frueauf Exp $
 #
 
 DISTNAME=	finalbattle.0.0
@@ -7,6 +7,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/finalbattle/
 
 MAINTAINER=	root@garbled.net
+HOMEPAGE=	http://www.sonic.net/~nbs/unix/x/finalbattle/
 
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/final
