@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/11/01 13:18:44 cube Exp $
+# $NetBSD: Makefile,v 1.14 2003/11/01 21:36:54 cube Exp $
 
 DISTNAME=	cdlabelgen-2.7.0
 CATEGORIES=	graphics
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.aczone.com/tools/cdinsert/
 COMMENT=	Generate frontcards and traycards for CDs
 
 USE_PERL5=	run
-USE_BUILDLINK2=	yes
+NO_BUILDLINK=	yes
 
 MAKE_ENV+=	SED="${SED}"
 MAKE_ENV+=	MV="${MV}"
