@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/08/09 07:29:00 adam Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/03 00:14:56 tv Exp $
 
 DISTNAME=	libmng-1.0.8
 PKGNAME=	${DISTNAME:S/lib//}
@@ -28,8 +28,8 @@ INSTALLATION_DIRS=	man/man3 man/man5
 
 pre-configure:
 	cd ${WRKSRC};				\
-	${LN} -sf makefiles/configure.in .;	\
-	${LN} -sf makefiles/Makefile.am .;	\
+	${RM} -f configure.in && ${LN} -sf makefiles/configure.in .;	\
+	${RM} -f Makefile.am && ${LN} -sf makefiles/Makefile.am .;	\
 	${ACLOCAL};				\
 	${LOCALBASE}/bin/libtoolize --automake;	\
 	${AUTOMAKE} -a --foreign -i;		\
