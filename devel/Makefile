@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.560 2004/11/06 20:21:53 he Exp $
+# $NetBSD: Makefile,v 1.561 2004/11/08 11:09:36 adam Exp $
 #
 
 COMMENT=	Development utilities
@@ -259,6 +259,7 @@ SUBDIR+=	ltsa
 SUBDIR+=	lwp
 SUBDIR+=	m4
 SUBDIR+=	maketool
+SUBDIR+=	mantis
 SUBDIR+=	mk-files
 SUBDIR+=	monotone
 SUBDIR+=	mph
