@@ -180,7 +180,7 @@ pkg_do(char *pkg)
 
 			/* No match */
 			warnx("can't find package `%s' installed%s!", pkg,
-			      usedot ? " or in a file" : "");
+				  usedot ? " or in a file" : "");
 			return 1;
 		}
 		if (chdir(log_dir) == FAIL) {
