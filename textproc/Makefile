@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.270 2004/11/18 09:16:41 wiz Exp $
+# $NetBSD: Makefile,v 1.271 2004/11/28 04:52:50 taca Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -247,7 +247,6 @@ SUBDIR+=	saxon
 SUBDIR+=	scew
 SUBDIR+=	scrollkeeper
 SUBDIR+=	source-highlight
-SUBDIR+=	sp
 SUBDIR+=	stardic
 SUBDIR+=	subtitleripper
 SUBDIR+=	tcl-dom
