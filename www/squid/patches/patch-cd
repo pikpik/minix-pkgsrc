@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- src/mib.txt.orig	2000-05-16 16:06:05.000000000 +0900
++++ src/mib.txt
+@@ -1,4 +1,4 @@
+-SQUID-MIB  { iso org(3) dod(6) internet(1) private(4) enterprises(1) 3495 }
++-- SQUID-MIB  { iso org(3) dod(6) internet(1) private(4) enterprises(1) 3495 }
+ 
+-DEFINITIONS ::= BEGIN
++SQUID-MIB DEFINITIONS ::= BEGIN
+ --
