@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Wed Mar 31 01:45:41 1999
++++ configure
+@@ -859,8 +859,6 @@
+ 
+ else
+   x=disabled
+-CFLAGS="-O2"
+-LDFLAGS=""
+ debug=off
+ 
+ fi
