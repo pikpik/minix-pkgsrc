@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/23 08:34:25 martti Exp $
 
 DISTNAME=	libxslt-1.0.7
 PKGNAME=	${DISTNAME}
@@ -15,7 +15,8 @@ USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
+CONFIGURE_ARGS+=	--with-libxml-prefix=${BUILDLINK_DIR}
+CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
 
 .include "../../textproc/libxml2/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
