@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/04/11 17:14:26 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:40 tv Exp $
 #
 
 DISTNAME=	dgen-sdl-1.23
@@ -20,6 +20,17 @@ USE_X11=	yes
 USE_BUILDLINK3=	yes
 
 CONFIGURE_ARGS+=	--with-extra-opt
+
+SUBST_CLASSES+=		config
+SUBST_STAGE.config=	pre-configure
+SUBST_FILES.config=	configure
+SUBST_SED.config=	-e "s|\-malign-loops|\-falign-loops|g" \
+			-e "s|\-malign-jumps|\-falign-jumps|g" \
+			-e "s|\-malign-functions|\-falign-functions|g" \
+			-e "s|\-mpentium||g" \
+			-e "s|\-march=pentium||g" \
+			-e "s|\-fno-rtti||g"
+SUBST_MESSAGE.config=	"Removing outdated compilation flags."
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
