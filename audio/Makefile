@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2003/04/11 19:15:10 jmmv Exp $
+# $NetBSD: Makefile,v 1.171 2003/04/25 04:50:29 rh Exp $
 #
 
 COMMENT=	Audio tools
@@ -189,6 +189,7 @@ SUBDIR+=	xmms-infinity
 SUBDIR+=	xmms-iris
 SUBDIR+=	xmms-jakdaw
 SUBDIR+=	xmms-jess
+SUBDIR+=	xmms-liveice
 SUBDIR+=	xmms-mad
 SUBDIR+=	xmms-madspin
 SUBDIR+=	xmms-neato
