@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2001/11/26 06:50:33 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/25 14:30:48 seb Exp $
 #
 
-PKGVER=			0.58
+PKGVER=			0.67
 DISTNAME=       	FCGI-${PKGVER}
 PKGNAME=        	p5-FCGI-${PKGVER}
 SVR4_PKGNAME=		p5fcg
