@@ -1,4 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2003/07/17 22:55:19 grant Exp $
+# $NetBSD$
+
+#
+# There is no distinfo file because users can specify alternate themes
+# via the "WINDOWMAKER_THEMES" variable.
+#
 
 DISTNAME=	wmthemes-0.80.0
 WRKSRC=		${WRKDIR}
@@ -16,6 +21,7 @@ DIST_SUBDIR=	wmthemes
 
 USE_X11BASE=	yes
 NO_BUILD=	yes
+NO_CHECKSUM=	yes
 
 PLIST_SRC=	${WRKDIR}/PLIST
 THEME_SUBDIRS=	Backgrounds IconSets Icons Pixmaps Sounds Styles Themes
