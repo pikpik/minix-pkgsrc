@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.405 2003/09/08 00:33:44 hubertf Exp $
+# $NetBSD: Makefile,v 1.406 2003/09/10 14:35:11 cjep Exp $
 #
 
 COMMENT=	Networking tools
@@ -338,6 +338,5 @@ SUBDIR+=	yaz
 SUBDIR+=	ytalk
 SUBDIR+=	ywho
 SUBDIR+=	zebra
-SUBDIR+=	zephyr
 
 .include "../mk/bsd.pkg.subdir.mk"
