@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/06/05 06:30:25 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/06/08 21:25:42 wiz Exp $
 #
 
 DISTNAME=	naim-0.11.5.9
@@ -14,7 +14,7 @@ GNU_CONFIGURE=	YES
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-USE_NCURSES=		# keyname (perhaps also wattr_get, wattr_set)
+USE_NCURSES=		# assertion "COLOR_PAIRS >= (COLORS*COLORS)" failed: file "./win.c", line 250, function "wsetup_colors"
 
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../devel/readline/buildlink2.mk"
