@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/13 13:51:54 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/17 21:39:27 grant Exp $
 #
 
 DISTNAME=	xarchon-0.50
@@ -15,6 +15,7 @@ USE_BUILDLINK2=	YES
 USE_GMAKE=	YES
 GNU_CONFIGURE=	YES
 USE_X11=	YES
+USE_GCC_SHLIB=	YES
 
 .include "../../mk/bsd.prefs.mk"
 
