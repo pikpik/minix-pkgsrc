@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: upsmon.sh,v 1.4 2002/09/20 02:02:01 grant Exp $
+# $NetBSD: upsmon.sh,v 1.5 2003/01/26 00:48:24 fredb Exp $
 #
 # PROVIDE: upsmon
 # REQUIRE: upsd
@@ -14,7 +14,7 @@ fi
 name="upsmon"
 rcvar="${name}"
 command="@PREFIX@/sbin/${name}"
-pidfile="/var/run/${name}.pid"
+pidfile="@NUT_STATEDIR@/${name}.pid"
 required_files="@NUT_CONFDIR@/${name}.conf"
 
 if [ -f /etc/rc.subr ]
