@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/05/09 15:24:43 frueauf Exp $
+# $NetBSD: Makefile,v 1.9 1998/08/20 15:17:11 tsarna Exp $
 #
 
 DISTNAME=	nt.1.5a23
@@ -8,10 +8,18 @@ MASTER_SITES=	ftp://cs.ucl.ac.uk/mice/nte/
 
 MAINTAINER=	mycroft@netbsd.org
 
-BUILD_DEPENDS=	${PKGSRCDIR}/x11/tk80/${WRKDIR:T}/tk8.0/generic/default.h:${TK_DIR}:configure
+.include "../../mk/bsd.prefs.mk"
+
+.ifdef WRKOBJDIR
+BUILD_ROOT=	${WRKOBJDIR}
+.else
+BUILD_ROOT=	${PKGSRCDIR}
+.endif
+
+BUILD_DEPENDS=	${BUILD_ROOT}/x11/tk80/${WRKDIR:T}/tk8.0/generic/default.h:${TK_DIR}:configure
 DEPENDS+=	tk-8.0p2:../../x11/tk80
 
-TK_DIR=         ${PKGSRCDIR}/x11/tk80
+TK_DIR=         ${BUILD_ROOT}/x11/tk80
 TK_SRC=		${TK_DIR}/${WRKDIR:T}/tk8.0
 
 RESTRICTED=	"Contains DES encryption"
