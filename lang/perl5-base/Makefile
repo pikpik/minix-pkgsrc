@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/01/25 14:40:10 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2001/02/17 09:07:24 agc Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/07/18 06:16:44 markm Exp
 #
 
 DISTNAME=		perl-${PERL_VERSION}
-PKGNAME=		perl-base-${PERL_VERSION}
+PKGNAME=		perl-base-${PERL_VERSION}nb1
 PERL_VERSION=		5.6.0
 CATEGORIES=		lang devel perl5
 MASTER_SITES=		ftp://ftp.digital.com/pub/plan/perl/CPAN/src/5.0/maint/ \
