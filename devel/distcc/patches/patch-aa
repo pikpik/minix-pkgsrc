@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	Wed Feb  5 10:08:12 2003
++++ Makefile.in	Wed Feb  5 10:08:25 2003
+@@ -408,7 +408,7 @@
+ # TODO: Perhaps don't rely on linuxdoc tools being present on a
+ # machine doing a build from CVS.
+ 
+-install: showpaths install-doc install-man install-programs install-linuxdoc
++install: showpaths install-doc install-man install-programs
+ 
+ install-programs: $(bin_PROGRAMS)
+ 	$(INSTALL) -d $(DESTDIR)$(bindir)
