@@ -1,10 +1,14 @@
 $NetBSD$
 
---- mb_ordered.c.orig	Mon Sep 25 10:22:08 1995
-+++ mb_ordered.c	Sat Jun 20 00:33:30 1998
-@@ -26,2 +26,5 @@
- #include "dither.h"
+--- mb_ordered.c.orig	Fri Jul 23 23:53:08 1999
++++ mb_ordered.c
+@@ -24,6 +24,9 @@
+ #include <malloc.h>
+ #include <memory.h>
+ #include "video.h"
 +#ifdef __NetBSD__
 +#include <stdlib.h>
 +#endif
- 
+ #include "proto.h"
+ #include "dither.h"
+ #include "my_dmalloc.h"

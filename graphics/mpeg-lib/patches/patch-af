@@ -1,10 +1,14 @@
 $NetBSD$
 
---- fs2fast.c.orig	Mon Sep 25 10:22:05 1995
-+++ fs2fast.c	Sat Jun 20 00:33:28 1998
-@@ -24,2 +24,5 @@
- #include "dither.h"
+--- fs2fast.c.orig	Fri Jul 23 23:59:24 1999
++++ fs2fast.c
+@@ -22,6 +22,9 @@
+ #include <malloc.h>
+ #include <memory.h>
+ #include "video.h"
 +#ifdef __NetBSD__
 +#include <stdlib.h>
 +#endif
- 
+ #include "proto.h"
+ #include "dither.h"
+ #include "my_dmalloc.h"
