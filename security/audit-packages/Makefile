@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2001/06/06 23:37:52 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/06/25 18:31:19 wiz Exp $
 
-DISTNAME=	audit-packages-1.10
+DISTNAME=	audit-packages-1.11
 CATEGORIES=	security pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,7 +18,7 @@ do-configure:
 		${SED} -e 's|\$${DISTDIR}|${DISTDIR}|g' 		\
 			-e 's|\$${AWK}|${AWK}|g'			\
 			-e 's|\$${FETCH_CMD}|${FETCH_CMD}|g'		\
-			-e 's|\$${PKG_INFO}|${PKG_INFO}|g'		\
+			-e 's|\$${PKG_TOOLS_BIN}|${PKG_TOOLS_BIN}|g'	\
 			-e 's|\$${SH}|${SH}|g'				\
 			-e 's|\$${TOUCH}|${TOUCH}|g'			\
 			${FILESDIR}/$$f > ${WRKSRC}/$$f;		\
