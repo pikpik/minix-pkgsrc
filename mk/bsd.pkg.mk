@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.862 2001/11/25 19:38:55 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.863 2001/11/26 19:56:06 hubertf Exp $
 #
 # This file is in the public domain.
 #
@@ -3112,7 +3112,7 @@ print-pkg-size-depends:
 ###
 ### Usage:
 ###  - make install
-###  - make print-PLIST | brain >pkg/PLIST
+###  - make print-PLIST | brain >PLIST
 ###
 
 # Common (system) directories not to generate @dirrm statements for
