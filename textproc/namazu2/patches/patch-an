@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- filter/msword.pl.orig	Mon Aug 26 12:13:31 2002
++++ filter/msword.pl
+@@ -128,7 +128,7 @@ sub filter_wv ($$$$$) {
+ 	my $supported = undef;
+ 	my $fh_cmd = util::efopen("$wvversionpath $tmpfile |");
+ 	while (<$fh_cmd>) {
+-	    if (/^Version: (word\d+),/i) {
++	    if (/^Version: (word\d+)(?:,| )/i) {
+ 		$version = $1;
+ 		#
+ 		# Only word8 format is supported for Japanese.
