@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2001/05/14 14:48:27 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2001/05/23 15:48:34 agc Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -37,6 +37,7 @@ SUBDIR+=	libpspell
 SUBDIR+=	libunicode
 SUBDIR+=	libxml
 SUBDIR+=	lout
+SUBDIR+=	lq-sp
 SUBDIR+=	makeztxt
 SUBDIR+=	mminstance
 SUBDIR+=	openjade
