@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2001/04/27 12:20:17 agc Exp $
+# $NetBSD: Makefile,v 1.96 2001/04/27 12:28:00 agc Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -27,6 +27,7 @@ SUBDIR+=	ispell-british
 SUBDIR+=	ispell-francais
 SUBDIR+=	ispell-gaeilge
 SUBDIR+=	ispell-german
+SUBDIR+=	ispell-svenska
 SUBDIR+=	jade
 SUBDIR+=	kdoc
 SUBDIR+=	latex2html
