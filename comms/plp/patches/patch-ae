@@ -1,8 +1,8 @@
 $NetBSD$
 
---- utils/Makefile.orig	Sun Jan 17 16:22:40 1999
+--- utils/Makefile.orig	1999-01-17 17:22:40.000000000 +0100
 +++ utils/Makefile
-@@ -3,14 +3,14 @@
+@@ -3,14 +3,14 @@ CSOURCE= $(wildcard *.c)
  
  OBJ=$(CCSOURCE:%.cc=%.o) $(CSOURCE:%.c=%.o)
  
@@ -21,4 +21,5 @@ $NetBSD$
  
  clean :
 -	rm -f *.a core $(OBJ) *~
+\ No newline at end of file
 +	rm -f .libs *.la core $(OBJ) *~
