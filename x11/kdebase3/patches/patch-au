@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-au,v 1.1.2.1 2002/06/23 19:05:22 jlam Exp $
 
 --- kcontrol/kcontrol/main.cpp.orig	Wed May  8 19:21:01 2002
 +++ kcontrol/kcontrol/main.cpp

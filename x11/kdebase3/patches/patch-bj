@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bj,v 1.1.2.1 2002/06/23 19:05:30 jlam Exp $
 
 --- kicker/Makefile.am.orig	Wed May  8 19:21:48 2002
 +++ kicker/Makefile.am

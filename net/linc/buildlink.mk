@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2002/04/27 08:48:33 rh Exp $
+# $NetBSD: buildlink.mk,v 1.2.2.1 2002/08/22 11:12:03 jlam Exp $
 #
 # This Makefile fragment is included by packages that use linc.
 #

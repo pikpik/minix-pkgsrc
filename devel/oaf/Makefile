@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/05/18 10:54:16 mjl Exp $
+# $NetBSD: Makefile,v 1.16.2.2 2002/08/22 11:10:49 jlam Exp $
 #
 
 DISTNAME=		oaf-0.6.10

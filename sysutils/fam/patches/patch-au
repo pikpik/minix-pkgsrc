@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-au,v 1.1.2.1 2002/06/23 19:00:08 jlam Exp $
 
 --- fam/Makefile.in.orig	Fri Dec 21 10:00:16 2001
 +++ fam/Makefile.in

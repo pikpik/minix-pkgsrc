@@ -1,4 +1,4 @@
-$NetBSD: patch-ae,v 1.2 1999/08/02 11:28:36 sakamoto Exp $
+$NetBSD: patch-ae,v 1.2.2.1 2002/06/23 18:48:01 jlam Exp $
 
 --- include/Paths.h.in.orig	Thu Jan 23 20:20:57 1997
 +++ include/Paths.h.in	Tue Aug 18 11:29:00 1998

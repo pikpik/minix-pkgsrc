@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1.2.1 2002/06/23 19:05:13 jlam Exp $
 
 --- kate/app/dummy_main.cpp.orig	Thu May 30 09:59:32 2002
 +++ kate/app/dummy_main.cpp

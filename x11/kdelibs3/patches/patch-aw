@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aw,v 1.1.2.1 2002/06/23 19:06:23 jlam Exp $
 
 --- kdeprint/management/kaddprinterwizard.cpp.orig	Wed May  8 19:27:33 2002
 +++ kdeprint/management/kaddprinterwizard.cpp

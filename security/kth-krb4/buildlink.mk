@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2002/04/05 11:32:20 wennmach Exp $
+# $NetBSD: buildlink.mk,v 1.1.2.1 2002/08/22 11:12:20 jlam Exp $
 #
 # This Makefile fragment is included by packages that use kth-krb4.
 #

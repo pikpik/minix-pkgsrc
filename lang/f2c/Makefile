@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/06/17 04:21:08 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.19.2.2 2002/08/22 11:11:47 jlam Exp $
 
 DISTNAME=	f2c-20001205
 PKGREVISION=	5

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bj,v 1.1.2.1 2002/06/23 19:06:33 jlam Exp $
 
 --- kio/misc/kssld/kssld.cpp.orig	Wed May  8 19:28:06 2002
 +++ kio/misc/kssld/kssld.cpp

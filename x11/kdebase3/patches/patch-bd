@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bd,v 1.1.2.1 2002/06/23 19:05:27 jlam Exp $
 
 --- kdesktop/kdesktop_main.cc.orig	Thu May 30 09:59:45 2002
 +++ kdesktop/kdesktop_main.cc

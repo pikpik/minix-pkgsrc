@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.10 2001/04/18 21:43:18 dmcmahill Exp $
+$NetBSD: patch-aa,v 1.10.2.1 2002/06/23 18:50:16 jlam Exp $
 
 Add a top level Makefile
 

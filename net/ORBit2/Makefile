@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/07/12 15:33:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3.2.1 2002/08/22 11:11:59 jlam Exp $
 #
 
 DISTNAME=		ORBit2-2.4.0

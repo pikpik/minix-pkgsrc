@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2001/10/25 15:37:04 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.1.2.1 2002/08/22 11:11:04 jlam Exp $
 #
 # This Makefile fragment is included by packages that use ptl2.
 #

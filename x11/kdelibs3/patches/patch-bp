@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bp,v 1.1.2.1 2002/06/23 19:06:37 jlam Exp $
 
 --- kioslave/http/http_cache_cleaner_main.cpp.orig	Thu May 30 09:48:55 2002
 +++ kioslave/http/http_cache_cleaner_main.cpp

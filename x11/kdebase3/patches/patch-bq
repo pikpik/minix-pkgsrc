@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bq,v 1.1.2.1 2002/06/23 19:05:33 jlam Exp $
 
 --- kicker/kicker_main.cpp.orig	Thu May 30 09:59:49 2002
 +++ kicker/kicker_main.cpp

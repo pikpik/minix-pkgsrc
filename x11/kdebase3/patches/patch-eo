@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-eo,v 1.1.2.1 2002/06/23 19:06:04 jlam Exp $
 
 --- legacyimport/legacyimport.cpp.orig	Sat Jan  5 13:21:31 2002
 +++ legacyimport/legacyimport.cpp

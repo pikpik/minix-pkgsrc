@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-du,v 1.1.2.1 2002/06/23 19:05:57 jlam Exp $
 
 --- kwin/clients/laptop/Makefile.am.orig	Tue Feb 19 16:56:15 2002
 +++ kwin/clients/laptop/Makefile.am

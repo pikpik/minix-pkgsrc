@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1.2.1 2002/06/23 19:01:26 jlam Exp $
 #
 # This Makefile fragment is included by packages that use chasen.
 #

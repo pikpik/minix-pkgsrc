@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2002/08/19 15:17:55 wiz Exp $
+# $NetBSD: Makefile,v 1.49.2.2 2002/08/22 11:12:22 jlam Exp $
 
 DISTNAME=		openssl-0.9.6g
 SVR4_PKGNAME=		ossl

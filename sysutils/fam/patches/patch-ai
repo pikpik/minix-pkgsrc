@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ai,v 1.1.2.1 2002/06/23 18:59:59 jlam Exp $
 
 --- fam/InternalClient.c++.orig	Tue Dec 18 11:03:37 2001
 +++ fam/InternalClient.c++

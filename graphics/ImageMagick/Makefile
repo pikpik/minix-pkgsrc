@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2002/03/13 17:37:02 fredb Exp $
+# $NetBSD: Makefile,v 1.82.2.1 2002/08/22 11:11:15 jlam Exp $
 
 DISTNAME=		ImageMagick-5.4.8-2
 PKGNAME=		${DISTNAME:S/-2/.2/}

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.1.2.1 2002/06/23 19:00:04 jlam Exp $
 
 --- fam/mntent.h.orig	Sun May 12 19:15:01 2002
 +++ fam/mntent.h

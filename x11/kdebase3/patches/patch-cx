@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cx,v 1.1.2.2 2002/08/22 11:13:28 jlam Exp $
 
 --- konsole/konsole/main.cpp.orig	Mon Jun 24 12:57:09 2002
 +++ konsole/konsole/main.cpp

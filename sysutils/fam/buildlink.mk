@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink.mk,v 1.1.2.1 2002/06/23 18:59:50 jlam Exp $
 #
 # This Makefile fragment is included by packages that use fam.
 #

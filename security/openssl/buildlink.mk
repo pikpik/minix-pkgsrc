@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.18 2002/08/15 01:14:32 fredb Exp $
+# $NetBSD: buildlink.mk,v 1.11.2.2 2002/08/22 11:12:23 jlam Exp $
 #
 # This Makefile fragment is included by packages that use OpenSSL.
 #

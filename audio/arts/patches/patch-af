@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1.2.1 2002/06/23 18:37:35 jlam Exp $
 
 --- flow/gsl/gslcommon.c.orig	Thu May 30 13:24:35 2002
 +++ flow/gsl/gslcommon.c

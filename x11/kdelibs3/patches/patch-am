@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-am,v 1.1.2.1 2002/06/23 19:06:17 jlam Exp $
 
 --- kconf_update/kconf_update_main.cpp.orig	Thu May 30 09:48:50 2002
 +++ kconf_update/kconf_update_main.cpp

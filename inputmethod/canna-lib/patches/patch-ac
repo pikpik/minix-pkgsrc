@@ -1,4 +1,4 @@
-$NetBSD: patch-ac,v 1.1.1.1 1999/08/02 04:37:09 sakamoto Exp $
+$NetBSD: patch-ac,v 1.2.2.1 2002/06/23 18:47:21 jlam Exp $
 
 --- dic/phono/Imakefile.orig	Wed Nov 27 16:15:14 1996
 +++ dic/phono/Imakefile	Fri Jul 30 19:57:02 1999

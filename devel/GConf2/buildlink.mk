@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2002/05/22 16:24:59 agc Exp $
+# $NetBSD: buildlink.mk,v 1.3.2.1 2002/06/23 18:43:45 jlam Exp $
 #
 # This Makefile fragment is included by packages that use gconf2.
 #

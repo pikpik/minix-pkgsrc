@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.7 2002/08/08 14:45:50 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.6.2.1 2002/08/22 11:09:59 jlam Exp $
 #
 # This Makefile fragment is included by packages that use xmms.
 #

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.6 2002/03/13 17:36:52 fredb Exp $
+# $NetBSD: buildlink.mk,v 1.6.2.1 2002/08/22 11:10:50 jlam Exp $
 #
 # This Makefile fragment is included by packages that use oaf.
 #

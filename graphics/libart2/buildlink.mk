@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2002/05/22 21:30:31 agc Exp $
+# $NetBSD: buildlink.mk,v 1.1.2.2 2002/08/22 11:11:32 jlam Exp $
 #
 # This Makefile fragment is included by packages that use the library
 # provided by libart2.

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bm,v 1.1.2.1 2002/06/23 19:06:35 jlam Exp $
 
 --- kioslave/http/Makefile.am.orig	Fri Jan 18 16:04:23 2002
 +++ kioslave/http/Makefile.am

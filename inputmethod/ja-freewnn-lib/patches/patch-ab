@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2.2.1 2002/06/23 18:47:39 jlam Exp $
 
 --- cWnn/Makefile.in.orig	Tue Mar 23 21:13:41 1999
 +++ cWnn/Makefile.in	Mon May 20 03:07:33 2002

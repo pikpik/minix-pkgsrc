@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1 2002/02/10 00:50:42 rh Exp $
+# $NetBSD: Makefile.common,v 1.1.2.1 2002/08/22 11:11:40 jlam Exp $
 
 CATEGORIES?=	graphics
 MASTER_SITES?=	ftp://ftp.mostang.com/pub/sane/sane-${SANE_VERSION}/ \

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2002/06/27 07:15:58 skrll Exp $
+@comment $NetBSD: PLIST,v 1.2.2.2 2002/08/22 11:13:39 jlam Exp $
 bin/artsmessage
 bin/checkXML
 ${CUPS}bin/cupsdconf

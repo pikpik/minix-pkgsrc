@@ -1,4 +1,4 @@
-$NetBSD: patch-ad,v 1.2 1999/08/02 11:28:36 sakamoto Exp $
+$NetBSD: patch-ad,v 1.2.2.1 2002/06/23 18:48:01 jlam Exp $
 
 --- sj3.tmpl.orig	Thu Jan 23 20:20:58 1997
 +++ sj3.tmpl	Fri Jul 30 20:27:08 1999

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/07/16 13:11:13 agc Exp $
+# $NetBSD: Makefile,v 1.38.2.1 2002/08/22 11:13:02 jlam Exp $
 
 DISTNAME=		control-center-1.4.0.4
 CATEGORIES=		x11 gnome

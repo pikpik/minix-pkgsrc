@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cj,v 1.1.2.1 2002/06/23 19:05:40 jlam Exp $
 
 --- konqueror/client/Makefile.in.orig	Mon May 13 23:57:50 2002
 +++ konqueror/client/Makefile.in

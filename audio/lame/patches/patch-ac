@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2.2.1 2002/06/23 18:38:21 jlam Exp $
 
 --- frontend/Makefile.in.orig	Fri Apr 12 21:38:18 2002
 +++ frontend/Makefile.in

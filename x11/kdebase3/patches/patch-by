@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-by,v 1.1.2.1 2002/06/23 19:05:36 jlam Exp $
 
 --- klipper/Makefile.am.orig	Fri Mar  1 09:59:20 2002
 +++ klipper/Makefile.am

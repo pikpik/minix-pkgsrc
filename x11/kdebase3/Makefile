@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/20 11:48:23 skrll Exp $
+# $NetBSD: Makefile,v 1.1.2.2 2002/08/22 11:13:22 jlam Exp $
 
 DISTNAME=	kdebase-3.0.2
 PKGREVISION=	2

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-az,v 1.1.2.1 2002/06/23 19:06:26 jlam Exp $
 
 --- kinit/Makefile.am.orig	Wed Jan 23 06:28:28 2002
 +++ kinit/Makefile.am

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-co,v 1.1.2.1 2002/06/23 19:05:42 jlam Exp $
 
 --- konqueror/keditbookmarks/keditbookmarks_main.cpp.orig	Thu May 30 09:59:58 2002
 +++ konqueror/keditbookmarks/keditbookmarks_main.cpp

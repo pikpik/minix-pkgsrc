@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bs,v 1.1.2.1 2002/06/23 19:05:34 jlam Exp $
 
 --- kicker/proxy/Makefile.in.orig	Mon May 13 23:57:47 2002
 +++ kicker/proxy/Makefile.in

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.1.2.1 2002/06/23 18:37:35 jlam Exp $
 
 --- soundserver/Makefile.in.orig	Wed May  8 19:59:27 2002
 +++ soundserver/Makefile.in

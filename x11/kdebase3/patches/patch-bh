@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bh,v 1.1.2.1 2002/06/23 19:05:29 jlam Exp $
 
 --- khotkeys/khotkeys/khotkeys_main.cpp.orig	Thu May 30 09:59:46 2002
 +++ khotkeys/khotkeys/khotkeys_main.cpp

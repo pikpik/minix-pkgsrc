@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cz,v 1.1.2.1 2002/06/23 19:05:47 jlam Exp $
 
 --- ksmserver/Makefile.in.orig	Mon May 13 23:57:53 2002
 +++ ksmserver/Makefile.in

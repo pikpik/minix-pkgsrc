@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-dg,v 1.1.2.1 2002/06/23 19:05:50 jlam Exp $
 
 --- kwin/Makefile.am.orig	Wed May  8 19:23:01 2002
 +++ kwin/Makefile.am

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ep,v 1.1.2.1 2002/06/23 19:06:04 jlam Exp $
 
 --- startkde.orig	Wed May  8 22:08:15 2002
 +++ startkde

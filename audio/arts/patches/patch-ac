@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.2.2 2002/08/22 11:09:40 jlam Exp $
 
 --- flow/cpuinfo.cc.orig	Mon Mar 18 12:39:39 2002
 +++ flow/cpuinfo.cc

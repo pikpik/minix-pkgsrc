@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-av,v 1.1.2.1 2002/06/23 19:06:22 jlam Exp $
 
 --- kdeprint/management/Makefile.in.orig	Tue May 21 15:42:07 2002
 +++ kdeprint/management/Makefile.in

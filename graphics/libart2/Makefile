@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.2.1 2002/06/23 18:46:33 jlam Exp $
 
 DISTNAME=		libart_lgpl-2.3.8
 PKGNAME=		libart2-2.3.8

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/01/08 17:49:12 drochner Exp $
+# $NetBSD: Makefile,v 1.3.2.1 2002/06/23 18:37:51 jlam Exp $
 #
 
 DISTNAME=	id3lib-3.8.0pre2

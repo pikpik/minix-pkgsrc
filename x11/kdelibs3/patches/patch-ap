@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ap,v 1.1.2.1 2002/06/23 19:06:18 jlam Exp $
 
 --- kded/Makefile.in.orig	Tue May 21 15:42:06 2002
 +++ kded/Makefile.in

@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.2 1999/08/02 11:28:36 sakamoto Exp $
+$NetBSD: patch-aa,v 1.2.2.1 2002/06/23 18:48:00 jlam Exp $
 
 diff -arcN ../sj3-2.0.1.13.org/doc/doc/sj3lib.ms ./doc/doc/sj3lib.ms
 *** ../sj3-2.0.1.13.org/doc/doc/sj3lib.ms	Fri Jun  3 17:00:49 1994

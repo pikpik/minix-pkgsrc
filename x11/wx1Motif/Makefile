@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.2.1 2002/06/23 19:06:58 jlam Exp $
 #
 
 DISTNAME=		wx1Motif-1.68e

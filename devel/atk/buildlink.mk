@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1.1.1 2002/03/24 20:28:05 dmcmahill Exp $
+# $NetBSD: buildlink.mk,v 1.1.1.1.2.1 2002/08/22 11:10:20 jlam Exp $
 #
 # This Makefile fragment is included by packages that use atk.
 #

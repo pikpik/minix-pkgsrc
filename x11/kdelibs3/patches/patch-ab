@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.2.1 2002/06/23 19:06:09 jlam Exp $
 
 --- arts/knotify/Makefile.in.orig	Tue May 21 15:42:03 2002
 +++ arts/knotify/Makefile.in

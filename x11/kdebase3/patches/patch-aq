@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aq,v 1.1.2.1 2002/06/23 19:05:20 jlam Exp $
 
 --- kcontrol/kcontrol/kcminit_main.cpp.orig	Thu May 30 09:59:38 2002
 +++ kcontrol/kcontrol/kcminit_main.cpp

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.15 2002/06/25 06:54:43 tron Exp $
+# $NetBSD: buildlink.mk,v 1.13.2.1 2002/08/22 11:10:12 jlam Exp $
 #
 # This Makefile fragment is included by packages that use SDL.
 #

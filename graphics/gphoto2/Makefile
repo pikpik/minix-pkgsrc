@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/02/26 13:14:54 martti Exp $
+# $NetBSD: Makefile,v 1.6.2.1 2002/08/22 11:11:27 jlam Exp $
 
 DISTNAME=	gphoto2-2.1.0
 PKGNAME=	gphoto-2.1.0

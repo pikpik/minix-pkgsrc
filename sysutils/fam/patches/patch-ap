@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ap,v 1.1.2.1 2002/06/23 19:00:05 jlam Exp $
 
 --- fam/mntent_compat.c++.orig	Sun May 12 19:37:49 2002
 +++ fam/mntent_compat.c++

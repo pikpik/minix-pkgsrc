@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1.1.1 2001/11/06 04:08:34 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.1.1.1.2.1 2002/08/22 11:10:08 jlam Exp $
 #
 # This Makefile fragment is included by packages that use unixodbc.
 #

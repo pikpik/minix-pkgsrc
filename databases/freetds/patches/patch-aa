@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.2.1 2002/06/23 18:43:13 jlam Exp $
 
 --- Makefile.in.orig	Sun Dec 16 10:40:25 2001
 +++ Makefile.in

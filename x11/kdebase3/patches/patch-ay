@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ay,v 1.1.2.1 2002/06/23 19:05:25 jlam Exp $
 
 --- kdeprint/kjobviewer/main.cpp.orig	Sat Dec 29 17:10:49 2001
 +++ kdeprint/kjobviewer/main.cpp

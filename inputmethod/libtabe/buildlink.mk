@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1.1.1 2002/06/04 08:31:10 uebayasi Exp $
+# $NetBSD: buildlink.mk,v 1.2.2.1 2002/06/23 18:47:54 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libtabe.
 #

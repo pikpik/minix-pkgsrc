@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/03/20 16:23:07 wiz Exp $
+# $NetBSD: Makefile,v 1.26.2.1 2002/08/22 11:11:47 jlam Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/11/22 16:01:32 jseger Exp
 #
 

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bx,v 1.1.2.1 2002/06/23 19:05:36 jlam Exp $
 
 --- kioslave/info/kde-info2html.conf.orig	Wed Aug  2 11:07:17 2000
 +++ kioslave/info/kde-info2html.conf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2002/05/19 17:11:19 tron Exp $
+# $NetBSD: Makefile,v 1.33.2.2 2002/08/22 11:10:45 jlam Exp $
 #
 
 DISTNAME=	slang-1.4.5

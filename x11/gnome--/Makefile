@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/05/12 10:16:51 abs Exp $
+# $NetBSD: Makefile,v 1.7.2.2 2002/08/22 11:13:03 jlam Exp $
 #
 
 DISTNAME=	gnomemm-1.1.19

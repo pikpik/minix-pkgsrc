@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2002/08/01 06:40:53 jlam Exp $
+# $NetBSD: Makefile,v 1.31.2.2 2002/08/22 11:10:12 jlam Exp $
 #
 
 DISTNAME=	SDL-1.2.3

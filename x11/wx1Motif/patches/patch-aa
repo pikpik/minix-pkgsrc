@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.2.1 2002/06/23 19:07:00 jlam Exp $
 
 --- src/make.env.orig	Wed Oct 22 09:13:30 1997
 +++ src/make.env

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ee,v 1.1.2.1 2002/06/23 19:06:00 jlam Exp $
 
 --- kwin/clients/system/Makefile.am.orig	Tue Feb 19 16:56:16 2002
 +++ kwin/clients/system/Makefile.am

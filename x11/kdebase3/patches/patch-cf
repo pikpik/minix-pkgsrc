@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cf,v 1.1.2.1 2002/06/23 19:05:39 jlam Exp $
 
 --- kmenuedit/main.cpp.orig	Mon Feb 11 20:09:39 2002
 +++ kmenuedit/main.cpp

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2.2.1 2002/06/23 18:47:40 jlam Exp $
 
 --- kWnn/Makefile.in.orig	Tue Mar 23 21:14:47 1999
 +++ kWnn/Makefile.in	Mon May 20 03:07:57 2002

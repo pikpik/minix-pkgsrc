@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bw,v 1.1.2.1 2002/06/23 19:05:35 jlam Exp $
 
 --- kicker/proxy/extensionproxy_main.cpp.orig	Thu May 30 09:59:50 2002
 +++ kicker/proxy/extensionproxy_main.cpp

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.2.1 2002/06/23 19:07:01 jlam Exp $
 
 --- contrib/wxxpm/makefile.unx.orig	Thu Jul 24 20:41:32 1997
 +++ contrib/wxxpm/makefile.unx

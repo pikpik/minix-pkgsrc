@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.1 2002/05/17 16:56:02 schmonz Exp $
+# $NetBSD: buildlink.mk,v 1.1.2.2 2002/08/22 11:10:29 jlam Exp $
 #
 # This Makefile fragment is included by packages that use dlcompat (libdl).
 #

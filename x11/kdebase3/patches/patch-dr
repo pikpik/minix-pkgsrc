@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-dr,v 1.1.2.1 2002/06/23 19:05:55 jlam Exp $
 
 --- kwin/clients/kstep/Makefile.in.orig	Mon May 13 23:57:56 2002
 +++ kwin/clients/kstep/Makefile.in

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cl,v 1.1.2.1 2002/06/23 19:05:41 jlam Exp $
 
 --- konqueror/client/kfmclient_main.cc.orig	Thu May 30 09:59:56 2002
 +++ konqueror/client/kfmclient_main.cc

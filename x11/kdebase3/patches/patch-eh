@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-eh,v 1.1.2.1 2002/06/23 19:06:01 jlam Exp $
 
 --- kwin/clients/web/Makefile.in.orig	Mon May 13 23:57:57 2002
 +++ kwin/clients/web/Makefile.in

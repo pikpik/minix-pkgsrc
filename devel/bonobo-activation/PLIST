@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2002/07/12 15:59:45 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1.2.2 2002/08/22 11:10:24 jlam Exp $
 bin/activation-client
 bin/bonobo-activation-empty-server
 bin/bonobo-activation-run-query

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2002/07/22 10:36:53 grant Exp $
+# $NetBSD: Makefile,v 1.10.2.1 2002/08/22 11:10:03 jlam Exp $
 
 DISTNAME=	db-3.3.11
 PKGNAME=	db3-3.11.2

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/17 13:33:40 uebayasi Exp $
+# $NetBSD: Makefile,v 1.1.1.1.2.1 2002/06/23 18:58:57 jlam Exp $
 
 DISTNAME=	gpgme-0.3.0
 CATEGORIES=	security

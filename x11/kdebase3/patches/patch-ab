@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.2.1 2002/06/23 19:05:12 jlam Exp $
 
 --- kate/app/Makefile.am.orig	Thu Jan 10 17:03:37 2002
 +++ kate/app/Makefile.am

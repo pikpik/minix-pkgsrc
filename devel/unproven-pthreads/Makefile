@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2002/08/16 20:13:10 jdolecek Exp $
+# $NetBSD: Makefile,v 1.27.2.2 2002/08/22 11:11:10 jlam Exp $
 #
 
 DISTNAME=		unproven-pthreads-0.17

@@ -1,4 +1,4 @@
-$NetBSD: patch-ad,v 1.2 2002/03/22 03:48:55 uebayasi Exp $
+$NetBSD: patch-ad,v 1.2.2.1 2002/06/23 18:47:41 jlam Exp $
 
 --- configure.in.orig	Tue Apr  6 12:12:19 1999
 +++ configure.in

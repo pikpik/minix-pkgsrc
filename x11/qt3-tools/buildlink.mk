@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.3 2002/03/19 17:54:37 drochner Exp $
+# $NetBSD: buildlink.mk,v 1.3.2.1 2002/06/23 19:06:49 jlam Exp $
 #
 # This Makefile fragment is included by packages that use qt3-tools.
 #

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2002/07/17 17:48:04 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1.2.2 2002/08/22 11:10:11 jlam Exp $
 bin/gconf-sanity-check-2
 bin/gconfd-2
 bin/gconftool-2

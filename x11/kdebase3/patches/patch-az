@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-az,v 1.1.2.1 2002/06/23 19:05:25 jlam Exp $
 
 --- kdesktop/Makefile.am.orig	Wed May  8 19:21:24 2002
 +++ kdesktop/Makefile.am

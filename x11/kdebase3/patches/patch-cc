@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cc,v 1.1.2.1 2002/06/23 19:05:38 jlam Exp $
 
 --- kmenuedit/Makefile.am.orig	Thu Jun  7 15:26:30 2001
 +++ kmenuedit/Makefile.am
