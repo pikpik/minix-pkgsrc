@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 17:54:51 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/03/30 18:13:24 mjl Exp $
 #
 
-DISTNAME=		slrn-0.9.7.0
+DISTNAME=		slrn-0.9.7.0a
+PKGNAME=		slrn-0.9.7.0.1
 CATEGORIES=		news
 MASTER_SITES=		ftp://slrn.sourceforge.net/pub/slrn/ \
 			ftp://ftp.uni-stuttgart.de/pub/unix/misc/slang/slrn/ \
