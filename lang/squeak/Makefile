@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/25 04:17:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.12 2001/03/27 03:20:04 hubertf Exp $
 #
 
 DISTNAME=	Squeak2.7-src
@@ -20,8 +20,6 @@ USE_GMAKE=	yes
 NO_WRKSUBDIR=	yes
 
 ALL_TARGET=	squeak
-
-CONFIGURE_ARGS+=	--debug
 
 pre-configure:
 	cd ${WRKSRC}/conf; ${LOCALBASE}/bin/autoconf
