@@ -1,4 +1,4 @@
-dnl $NetBSD$
+dnl $NetBSD: configure.ac,v 1.1.1.1 2004/02/21 23:28:36 jmmv Exp $
 
 dnl -----------------------------------------------------------------------
 
@@ -48,14 +48,14 @@ AC_HEADER_SYS_WAIT
 AC_HEADER_TIME
 AC_HEADER_TIOCGWINSZ
 AC_CHECK_HEADERS([sys/cdefs.h \
+                  sys/param.h \
+                  sys/types.h \
                   sys/ioctl.h \
                   sys/mount.h \
-                  sys/param.h \
                   sys/resource.h \
                   sys/stat.h \
                   sys/statvfs.h \
                   sys/sysctl.h \
-                  sys/types.h \
                   sys/utsname.h \
                   sys/varargs.h \
                   sys/vfs.h \
