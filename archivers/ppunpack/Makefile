@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/01/15 01:36:59 tron Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 13:15:35 wiz Exp $
 
 DISTNAME=	ppsmall-1.0
 PKGNAME=	ppunpack-1.0
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
 COMMENT=	Decompresses Amiga PowerPacker files
+
+NO_BUILDLINK_ONLY=	# defined
 
 WRKSRC=		${WRKDIR}/PPUnpack
 MAKE_FLAGS=	CC="${CC}" COPTS="${CFLAGS}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/16 13:15:42 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2001/06/04 17:08:20 jtb Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -14,6 +14,8 @@ COMMENT=	convert mailable BinHex format into binary
 RESTRICTED=	"May not be sold without permission"
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
+
+USE_BUILDLINK_ONLY=	# defined
 
 PRGNAME=	xbin
 EXTRACT_ONLY=	# blank

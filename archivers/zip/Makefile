@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2001/02/16 13:15:43 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2001/03/27 03:19:44 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp 
 #
 
@@ -19,6 +19,8 @@ EXTRACT_ONLY=	zip23.tar.gz
 MAKEFILE=	unix/Makefile
 MAKE_FLAGS=	LOCAL_ZIP="${CFLAGS}"
 ALL_TARGET=	generic
+
+USE_BUILDLINK_ONLY=	# defined
 
 post-extract:
 	@cd ${WRKSRC} && unzip -qo ${DISTDIR}/zcrypt29.zip
