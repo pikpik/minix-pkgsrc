@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/giFT/libGnutella.la
+lib/giFT/libGnutella.so
+share/giFT/Gnutella/Gnutella.conf
+share/giFT/Gnutella/Gnutella.conf.template
+share/giFT/Gnutella/gwebcaches
+share/giFT/Gnutella/hostiles.txt
+@dirrm share/giFT/Gnutella
