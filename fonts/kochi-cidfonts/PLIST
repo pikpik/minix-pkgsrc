@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/ghostscript/Resource/CIDFont/Kochi-Gothic
+share/ghostscript/Resource/CIDFont/Kochi-Gothic.afm
+share/ghostscript/Resource/CIDFont/Kochi-Mincho
+share/ghostscript/Resource/CIDFont/Kochi-Mincho.afm
