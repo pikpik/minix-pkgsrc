@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.273 2002/02/05 19:55:12 drochner Exp $
+# $NetBSD: Makefile,v 1.274 2002/02/06 21:13:39 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -208,7 +208,6 @@ SUBDIR+=	traceroute-as
 SUBDIR+=	trafshow
 SUBDIR+=	ttt
 SUBDIR+=	ucd-snmp
-SUBDIR+=	ucd-snmp-current
 SUBDIR+=	ucspi-tcp
 SUBDIR+=	unison
 SUBDIR+=	userppp
