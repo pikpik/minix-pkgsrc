@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2002/12/26 20:52:12 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/26 22:14:36 jlam Exp $
 #
 # We use the binary distribution of crimson because otherwise we
 # have a bootstrap-loop between jakarta-ant and crimson, each of which
 # uses the other.
 
 DISTNAME=	${PKGNAME}-bin
-PKGNAME=	crimson-1.1.3
+PKGNAME=	crimson-1.1.3.1
 CATEGORIES=	textproc www
 MASTER_SITES=	http://xml.apache.org/dist/crimson/
 
