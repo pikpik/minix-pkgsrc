@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/06/21 21:40:08 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2001/06/23 19:26:51 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -12,6 +12,7 @@ BUILDLINK_DEPENDS.postgresql-lib=	postgresql-lib>=${PG_BASE_VERS}
 
 CONFIGURE_ARGS+=	--enable-readline
 MAKE_ENV+=		INSTALLED_LIBPQ=1
+LIBS+=			${LIBGETOPT}
 
 DIRS_TO_BUILD=		src/bin
 

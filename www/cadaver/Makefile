@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/06/19 04:52:16 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2001/06/29 04:54:56 jlam Exp $
 
 DISTNAME=		cadaver-0.17.0
 CATEGORIES=		www
@@ -17,6 +17,8 @@ CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_DIR}
 CONFIGURE_ARGS+=	--with-include-neon
 CONFIGURE_ARGS+=	--enable-libxml
 CONFIGURE_ARGS+=	--enable-netrc
+
+LIBS+=			${LIBGETOPT}
 
 # We don't need curses, just termcap.
 CONFIGURE_ENV+=		ac_cv_lib_curses_tputs=no
