@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/07/27 13:42:21 itojun Exp $
+# $NetBSD: Makefile,v 1.12 1999/08/15 16:21:10 itojun Exp $
 # Based on KAME Id: Makefile,v 1.1.2.1.2.1.10.2 1999/01/05 11:03:50 itojun Exp
 #
 
@@ -13,6 +13,8 @@ HOMEPAGE=	http://www.zebra.org/
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--sysconfdir=${PREFIX}/etc/zebra
+
+BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/07/12 17:41:53 itojun Exp $
+# $NetBSD: Makefile,v 1.23 1999/07/22 16:02:51 itojun Exp $
 #
 
 DISTNAME=	rsync-2.3.1
@@ -15,6 +15,8 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=     mycroft@netbsd.org
 HOMEPAGE=	http://samba.anu.edu.au/rsync/
+
+BUILD_DEFS+=	USE_INET6
 
 .include "../../mk/bsd.prefs.mk"
 
