@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1999/02/09 13:17:05 frueauf Exp $
+# $NetBSD: Makefile,v 1.26 1999/03/06 21:32:19 tron Exp $
 #
 
     SUBDIR += amp
@@ -7,9 +7,34 @@
     SUBDIR += cdd
     SUBDIR += cddbd
     SUBDIR += esound
+    SUBDIR += festdoc
+    SUBDIR += festival
+    SUBDIR += festlex-cmu
+    SUBDIR += festlex-oald
+    SUBDIR += festlex-ogi
+    SUBDIR += festlex-poslex
+    SUBDIR += festogi-spanish
+    SUBDIR += festvox-abc
+    SUBDIR += festvox-aec
+    SUBDIR += festvox-don
+    SUBDIR += festvox-el11
+    SUBDIR += festvox-hvs
+    SUBDIR += festvox-jph
+    SUBDIR += festvox-kal16
+    SUBDIR += festvox-kal8
+    SUBDIR += festvox-ked16
+    SUBDIR += festvox-ked8
+    SUBDIR += festvox-mbrola
+    SUBDIR += festvox-mwm
+    SUBDIR += festvox-ogirab
+    SUBDIR += festvox-rab16
+    SUBDIR += festvox-rab8
+    SUBDIR += festvox-tll
     SUBDIR += gsm
     SUBDIR += libaudiofile
     SUBDIR += maplay
+    SUBDIR += mbrola-linux
+    SUBDIR += mbrolavox-en1
     SUBDIR += mikmod
     SUBDIR += mpg123
     SUBDIR += nas
@@ -28,5 +53,4 @@
     SUBDIR += xmix
     SUBDIR += xmmix
     SUBDIR += xwave
-
 .include "../mk/bsd.pkg.subdir.mk"
