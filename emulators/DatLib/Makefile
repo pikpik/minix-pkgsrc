@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/04 12:05:12 wiz Exp $
 #
 
 DISTNAME=		datlib22
@@ -16,6 +16,7 @@ USE_GNU_TOOLS+=		make
 WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile
 BUILD_TARGET=		datlib
+EXTRACT_CMD_OPTS.zip=	-Laaqo
 
 MAKE_ENV+=		RANLIB=${RANLIB:Q}
 
