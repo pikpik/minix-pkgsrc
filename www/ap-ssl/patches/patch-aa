@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.4 2000/06/02 23:34:31 jdolecek Exp $
+$NetBSD$
 
---- pkg.sslmod/libssl.module.orig	Sat Jun  3 01:26:46 2000
-+++ pkg.sslmod/libssl.module	Sat Jun  3 01:26:58 2000
-@@ -418,7 +418,7 @@
+--- pkg.sslmod/libssl.module.orig	Mon Jan  1 05:48:53 2001
++++ pkg.sslmod/libssl.module
+@@ -427,7 +427,7 @@
              exit 1
          fi
      fi
