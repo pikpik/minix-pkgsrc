@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2002/06/25 05:15:11 grant Exp $
+# $NetBSD: Makefile,v 1.27 2002/06/29 08:37:38 wiz Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -26,6 +26,7 @@ SUBDIR+=	nttcp
 SUBDIR+=	paranoia
 SUBDIR+=	postmark
 SUBDIR+=	randread
+SUBDIR+=	skampi
 SUBDIR+=	ttcp
 SUBDIR+=	whetstone
 SUBDIR+=	xengine
