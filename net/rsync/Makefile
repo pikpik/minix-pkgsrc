@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 1999/07/22 16:02:51 itojun Exp $
+# $NetBSD: Makefile,v 1.24 1999/08/18 09:24:08 agc Exp $
 #
 
 DISTNAME=	rsync-2.3.1
@@ -21,7 +21,7 @@ BUILD_DEFS+=	USE_INET6
 .include "../../mk/bsd.prefs.mk"
 
 GNU_CONFIGURE=	yes
-.if defined(USE_INET6)
+.if defined(USE_INET6) && ${USE_INET6} == YES
 CONFIGURE_ARGS=	--enable-ipv6
 .else
 CONFIGURE_ARGS=	--disable-ipv6

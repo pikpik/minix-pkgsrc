@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 1999/08/18 09:24:08 agc Exp $
+# $NetBSD: Makefile,v 1.51 1999/08/22 20:20:57 frueauf Exp $
 #
 
 DISTNAME=       fetchmail-5.0.7
@@ -23,7 +23,7 @@ BUILD_DEFS+=	USE_KERBEROS4 USE_INET6
 CONFIGURE_ARGS+=--with-kerberos=yes
 RESTRICTED=	uses Kerberos encryption code
 .endif
-.if defined(USE_INET6)
+.if defined(USE_INET6) && ${USE_INET6} == YES
 CONFIGURE_ARGS+=--enable-inet6
 .endif
 
