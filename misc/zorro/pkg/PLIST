@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/zorro
-share/zorro/DOTzorrorc
-@dirrm share/zorro

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/lv
-bin/lgrep
-lib/lv/lv.hlp
-man/man1/lv.1
-@dirrm lib/lv

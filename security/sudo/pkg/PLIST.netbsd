@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 1999/08/31 19:26:41 jlam Exp $
-man/man5/sudoers.5
-man/man8/sudo.8
-man/man8/visudo.8

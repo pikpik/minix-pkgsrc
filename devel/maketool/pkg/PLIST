@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/09/17 14:40:45 fredb Exp $
-bin/extract_targets
-bin/make_makefile
-bin/maketool
-share/locale/la/LC_MESSAGES/maketool.mo
-@dirrm share/locale/la/LC_MESSAGES
-@dirrm share/locale/la

@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 1998/08/12 01:50:02 tsarna Exp $
-lib/python2.0/lib-dynload/_cursesmodule.so

@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2000/11/29 05:05:30 itojun Exp $
-include/libintl.h
-lib/libintl.a
-lib/libintl.la
-lib/libintl.so
-lib/libintl.so.1
-lib/libintl.so.1.0

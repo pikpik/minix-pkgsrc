@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/heyu
-man/man1/heyu.1
-man/man5/x10config.5
-man/man5/x10sched.5

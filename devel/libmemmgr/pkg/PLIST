@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/libmemmgr.a
-include/memmgr.h
-share/doc/libmemmgr/memmgr.txt
-@dirrm share/doc/libmemmgr

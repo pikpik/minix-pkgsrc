@@ -1,7 +1,0 @@
-$NetBSD$
-======================================================================
-
-  You may want to install ${PREFIX}/share/examples/colorize/colorizerc
-  to ${PREFIX}/etc or alternatively to ~/.colorizerc
-
-======================================================================

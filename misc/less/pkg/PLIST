@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1998/10/28 18:12:10 garbled Exp $
-bin/less
-bin/lesskey
-bin/lessecho
-man/man1/less.1
-man/man1/lesskey.1

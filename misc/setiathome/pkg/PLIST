@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/23 01:27:35 abs Exp $
-bin/setiathome
-bin/xsetiathome
-man/cat1/setiathome.0

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/granulate
-share/doc/granulate/README
-@dirrm share/doc/granulate

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/qterm
-man/man1/qterm.1
-etc/qtermtab

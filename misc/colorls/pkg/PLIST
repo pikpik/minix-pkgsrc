@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/colorls
-man/man1/colorls.1.gz
-man/cat1/colorls.0.gz

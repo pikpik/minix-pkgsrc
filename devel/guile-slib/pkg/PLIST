@@ -1,4 +1,0 @@
-@comment $NetBSD$
-share/guile/slibcat
-@exec	ln -sf ../slib %D/share/guile/slib
-@unexec	rm -f %D/share/guile/slib

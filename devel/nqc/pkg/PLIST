@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2001/05/14 20:38:47 nathanw Exp $
-bin/mkdata
-bin/nqc
-man/man1/nqc.1

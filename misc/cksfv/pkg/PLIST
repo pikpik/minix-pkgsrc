@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/cksfv
-share/doc/cksfv/README
-@dirrm share/doc/cksfv
