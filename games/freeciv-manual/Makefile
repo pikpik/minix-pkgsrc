@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 16:49:46 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:15:40 agc Exp $
 #
 
 DISTNAME=	manual-1.8.1-2
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.freeciv.org/
 COMMENT=	Manuals for freeciv (game, client, and server)
 
 WRKSRC=		${WRKDIR}/manual
-USE_BUILDLINK2=	YES
+USE_BUILDLINK3=	YES
 NO_BUILD=	YES
 
 do-install:
