@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2000/01/24 23:23:53 soren Exp $
+# $NetBSD: Makefile,v 1.4 2000/06/06 02:38:36 soren Exp $
 
 DISTNAME=		pchar-1.2
 CATEGORIES=		net
@@ -17,7 +17,7 @@ BUILD_DEFS+=	USE_INET6
 CONFIGURE_ARGS+=	--with-ipv6
 .endif
 
-DEPENDS+=		ucd-snmp:../../net/ucd-snmp
+DEPENDS+=		ucd-snmp-*:../../net/ucd-snmp
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pchar ${PREFIX}/sbin
