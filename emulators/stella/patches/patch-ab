@@ -14,3 +14,14 @@ $NetBSD$
  
    // Set up the names of the input and output config files
    mySettingsOutputFilename = myUserConfigFile;
+@@ -54,6 +54,10 @@ SettingsUNIX::SettingsUNIX()
+   else
+     mySettingsInputFilename = mySystemConfigFile;
+ 
++  // otherwise the system properties file is never used
++  if(!fileExists(myUserPropertiesFile))
++    myUserPropertiesFile = "";
++
+   mySnapshotFile = "";
+   myStateFile    = "";
+ }
