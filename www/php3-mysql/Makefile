@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/02/15 05:54:20 bad Exp $
+# $NetBSD: Makefile,v 1.6 2000/05/25 08:15:28 rh Exp $
 #
 
 PKGNAME=	php-mysql-${PHP_VERSION}
@@ -9,6 +9,8 @@ CONFIGURE_ARGS+=--with-mysql=${LOCALBASE}
 
 BUILDING_EXTENSION_MODULE=yes
 
+MESSAGE_FILE=	${WRKDIR}/MESSAGE
+
 do-build:
 	cd ${WRKSRC}/functions && \
 		${COMPILE.c} -I.. -I. -I${LOCALBASE}/include/mysql -fPIC -DPIC -DCOMPILE_DL mysql.c && \
@@ -16,5 +18,7 @@ do-build:
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/functions/mysql.so ${PREFIX}/lib/php3/
+	${SED} -e 's|@PREFIX@|${PREFIX}|g' ${PKGDIR}/MESSAGE >${MESSAGE_FILE}
+
 
 .include "../php3/Makefile"
