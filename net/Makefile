@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.174 2000/12/15 23:20:02 wiz Exp $
+# $NetBSD: Makefile,v 1.175 2000/12/27 16:04:15 hubertf Exp $
 #
 
     SUBDIR += airportbasestationconfig
@@ -124,6 +124,7 @@
     SUBDIR += ttt
     SUBDIR += ucd-snmp
     SUBDIR += ucd-snmp-current
+    SUBDIR += ucspi-tcp
     SUBDIR += upclient
     SUBDIR += userppp
     SUBDIR += vnc
