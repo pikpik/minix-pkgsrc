@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.7 2001/03/24 21:14:40 hubertf Exp $
+# $NetBSD: Makefile.common,v 1.8 2001/03/27 03:20:28 hubertf Exp $
 #
 
 DISTNAME=		qt-x11-${QTVERSION}
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	-static -sm -no-thread \
 			-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CONFIGURE_ARGS+=	-gif	# qt2 does not write compressed GIFs
 
-CONFIGURE_SCRIPT=	${ECHO} yes | ./configure
+CONFIGURE_ARGS+=	< ${FILESDIR}/license-acceptance
 
 QTPREFIX=		${PREFIX}/qt2
 
