@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.15 2003/08/09 10:44:41 seb Exp $
 #
 
-DISTNAME=	global-4.5
+DISTNAME=	global-4.7
 CATEGORIES=	devel
 MASTER_SITES=   http://www.tamacom.com/global/
 
