@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 1999/10/11 11:25:20 proff Exp $
+# $NetBSD: Makefile,v 1.7 1999/10/28 03:03:22 proff Exp $
 
-DISTNAME=	festvox-don-1.4.0
+DISTNAME=	festvox_don
+PKGNAME=	festvox-don-1.4.0
 WRKSRC=		${WRKDIR}/festival
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.0/
-DISTFILES=	festvox_don.tar.gz
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
@@ -23,6 +23,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && pax -r -w * ${FHOME}
+	cd ${WRKSRC} && ${PAX} -r -w * ${FHOME}
 
 .include "../../mk/bsd.pkg.mk"
