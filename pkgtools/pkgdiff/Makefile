@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2001/10/31 07:31:45 zuntum Exp $
+# $NetBSD: Makefile,v 1.20 2001/11/19 08:03:37 tron Exp $
 #
 
-DISTNAME=	pkgdiff-0.102
+DISTNAME=	pkgdiff-0.103
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
