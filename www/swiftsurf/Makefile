@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/12/30 17:28:39 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/24 15:23:47 grant Exp $
 
 DISTNAME=		swiftsurf-1.2.5
 CATEGORIES=		www
@@ -7,8 +7,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=swiftsurf/}
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://swiftsurf.sourceforge.net/
 COMMENT=		Web proxy that can handle http and https
-
-BUILD_DEPENDS=		ocaml>=3.00:../../lang/ocaml
 
 USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
@@ -37,4 +35,5 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/swiftsurf
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/swiftsurf
 
+.include "../../lang/ocaml/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
