@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2000/06/21 06:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2000/10/15 17:35:28 rh Exp $
 #
 
-DISTNAME=		gnome-print-0.23
+DISTNAME=		gnome-print-0.24
 CATEGORIES=		print gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=stable/sources/gnome-print/}
 
