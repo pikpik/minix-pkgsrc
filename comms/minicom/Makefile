@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/01/28 22:03:10 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2003/03/29 12:40:20 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.13 1998/01/03 10:58:40 obrien Exp
 #
 
@@ -19,6 +19,7 @@ DEPENDS+=	lrzsz-[0-9]*:../../comms/lrzsz
 
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
+USE_PKGLOCALEDIR=	yes
 USE_GMAKE=		yes
 NO_CONFIGURE=		yes
 
