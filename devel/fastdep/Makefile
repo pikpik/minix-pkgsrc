@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/08/22 13:47:40 jmmv Exp $
 #
 
-DISTNAME=	fastdep-0.15
+DISTNAME=	fastdep-0.16
 CATEGORIES=	devel
 MASTER_SITES=	http://www.irule.be/bvh/c++/fastdep/
 
