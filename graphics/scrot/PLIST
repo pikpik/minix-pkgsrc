@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/scrot
+doc/scrot/AUTHORS
+doc/scrot/ChangeLog
+doc/scrot/README
+doc/scrot/TODO
+man/man1/scrot.1
+@dirrm doc/scrot
