@@ -1,8 +1,7 @@
 #!/bin/sh
 #
-# $NetBSD: samba.sh,v 1.6 2001/11/21 16:44:18 jlam Exp $
+# $NetBSD: samba.sh,v 1.7 2001/11/21 21:38:53 jlam Exp $
 #
-# PROVIDE: samba
 # KEYWORD: nostart
 
 if [ -e /etc/rc.subr ]
