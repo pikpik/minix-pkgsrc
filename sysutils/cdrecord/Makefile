@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2000/07/22 16:14:48 rh Exp $
+# $NetBSD: Makefile,v 1.33 2000/09/10 17:37:10 wiz Exp $
 
 DISTNAME=	cdrecord-1.9
 CATEGORIES=	sysutils
@@ -15,6 +15,10 @@ TARGET_ARCH=	${MACHINE_ARCH}-netbsd-cc
 TARGET_DIR=	OBJ/${TARGET_ARCH}
 #override ARCH to avoid picking up a bad ${ARCH} during the build
 MAKE_ENV+=      ARCH=""
+
+post-patch:
+	@cd ${WRKSRC}; \
+	    ${MV} mkisofs/mkisofs.8 mkisofs/mkisofs.tbl
 
 do-configure:
 	${MKDIR} ${WRKSRC}/include/sys
@@ -34,7 +38,7 @@ do-install:
 	    ${INSTALL_MAN} cdrecord.1 ${PREFIX}/man/man1
 	cd ${WRKSRC}/mkisofs; \
 	    ${INSTALL_PROGRAM} ${TARGET_DIR}/mkisofs ${PREFIX}/bin; \
-	    ${INSTALL_MAN} mkisofs.8 ${PREFIX}/man/man8
+	    ${INSTALL_MAN} mkisofs.tbl ${PREFIX}/man/man8
 	cd ${WRKSRC}/misc; \
 	    ${INSTALL_PROGRAM} ${TARGET_DIR}/readcd ${PREFIX}/bin; \
 	    ${INSTALL_MAN} readcd.1 ${PREFIX}/man/man1
