@@ -1,8 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/11/10 11:34:44 itojun Exp $
+@comment $NetBSD$
 bin/mcrypt
-@exec ln -s %D/bin/mdecrypt
-@unexec rm %D/bin/mdecrypt
+bin/mdecrypt
 man/man1/mcrypt.1
-share/locale/cz/LC_MESSAGES/mcrypt.mo
-share/locale/el/LC_MESSAGES/mcrypt.mo
-share/locale/pl/LC_MESSAGES/mcrypt.mo
+${PKGLOCALEDIR}/locale/cs/LC_MESSAGES/mcrypt.mo
+${PKGLOCALEDIR}/locale/el/LC_MESSAGES/mcrypt.mo
+${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/mcrypt.mo
