@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libQwSpriteField.a
+lib/libQwSpriteField.so.6.0
+include/qt/Pix.h
+include/qt/QwCluster.h
+include/qt/QwPublicList.h
+include/qt/QwSpriteField.h
