@@ -3,7 +3,7 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 1997/10/27 03:22:24 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/08/10 22:31:33 fenner Exp 
 #
 
@@ -21,8 +21,7 @@ do-build:
 		${CC} ${CFLAGS} -D_UNIX unrar.c -o unrar
 
 do-install:
-	install -d -m 755 -o ${SHAREOWN} -g ${SHAREGRP} \
-		${PREFIX}/share/doc/unrar
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/unrar
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} unrar ${PREFIX}/bin
 	cd ${WRKSRC} && ${INSTALL_MAN} readme.txt license.txt \
 		${PREFIX}/share/doc/unrar
