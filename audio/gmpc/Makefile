@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/02 04:00:55 grant Exp $
 #
 
 DISTNAME=		gmpc-0.10.2
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		http://download.qballcow.nl/programs/gmpc/
 
