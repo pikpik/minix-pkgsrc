@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2003/06/29 04:24:56 uebayasi Exp $
+# $NetBSD: Makefile,v 1.42 2003/08/05 13:37:51 seb Exp $
 #
 .include "../../shells/zsh/Makefile.common"
 
 ZSH_VERSION=	4.0.7
+ZSH_MAINTAINER=	uebayasi@NetBSD.org
 
 .include "../../mk/bsd.pkg.mk"
