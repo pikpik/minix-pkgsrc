@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2003/07/21 16:36:12 martti Exp $
+# $NetBSD: Makefile,v 1.21 2003/07/28 10:11:45 jmmv Exp $
 #
 
 DISTNAME=		libiconv-1.9.1
@@ -10,7 +10,9 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/libiconv/
 COMMENT=		Character set conversion library
 
-USE_BUILDLINK2=		YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
