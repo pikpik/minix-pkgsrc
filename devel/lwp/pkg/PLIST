@@ -1,0 +1,9 @@
+@comment $NetBSD$
+include/lwp/lock.h
+include/lwp/lwp.h
+include/lwp/preempt.h
+include/lwp/timer.h
+@dirrm include/lwp
+lib/liblwp.a
+@comment -- not yet -- lib/liblwp.la
+lib/liblwp.so.1.0
