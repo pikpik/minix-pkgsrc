@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/05/03 15:35:44 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.8 2001/05/03 22:03:31 dmcmahill Exp $
 # FreeBSD: ports/devel/sdcc/Makefile,v 1.5 2000/04/15 15:13:38 knu Exp
 
 DISTNAME=	sdcc-2.2.1-src
@@ -38,7 +38,7 @@ CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-CPPFLAGS+=	-I${WRKDIR}/include
+CPPFLAGS+=	-I${WRKDIR}/include -DYY_NEVER_INTERACTIVE
 
 post-extract:
 	${MKDIR} ${WRKDIR}/include
