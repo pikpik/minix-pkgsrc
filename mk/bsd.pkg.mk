@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1380 2004/02/08 10:39:35 seb Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1381 2004/02/09 01:30:59 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -2407,8 +2407,13 @@ do-libtool-override:
 .    for libtool in ${SHLIBTOOL_OVERRIDE}
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	if [ -f ${libtool} ]; then					\
-		${RM} -f ${libtool};					\
-		${LN} -sf ${_SHLIBTOOL} ${libtool};			\
+		(${ECHO} '#!${CONFIG_SHELL}';				\
+		 ${ECHO} 'exec ${_SHLIBTOOL} "$$@"';			\
+		) > ${libtool}.override;				\
+		if [ -x ${libtool} ]; then				\
+			${CHMOD} +x ${libtool}.override;		\
+		fi;							\
+		${MV} -f ${libtool}.override ${libtool};		\
 	fi
 .    endfor
 .  endif
