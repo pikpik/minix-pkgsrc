@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2002/05/07 23:12:05 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2002/05/08 00:35:14 hubertf Exp $
 #
 
-DISTNAME=	pure-ftpd-1.0.11
-PKGREVISION=	1
+DISTNAME=	pure-ftpd-1.0.12
 CATEGORIES=	net
-MASTER_SITES=	http://belnet.dl.sourceforge.net/sourceforge/pureftpd/ \
-		${MASTER_SITE_SOURCEFORGE:=pureftpd/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pureftpd/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	dawszy@arhea.net
