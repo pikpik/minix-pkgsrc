@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/25 04:14:01 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:17:48 tv Exp $
 #
 
 DISTNAME=	LaBrea2_3
@@ -13,7 +13,9 @@ HOMEPAGE=	http://www.hackbusters.net/LaBrea/
 COMMENT=	Builds tarpits/honeypots for scanners
 
 WRKSRC=		${WRKDIR}/LaBrea
+
 USE_BUILDLINK3=	YES
+BUILDLINK_DEPENDS.libnet+=	libnet<=1.0.1b
 
 post-extract:
 	cd ${WRKSRC};							\
