@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.145 2001/07/01 14:30:46 taca Exp $
+# $NetBSD: Makefile,v 1.146 2001/07/02 19:13:36 nra Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -79,6 +79,7 @@ SUBDIR+=	p5-Apache-Session
 SUBDIR+=	p5-Apache-ePerl
 SUBDIR+=	p5-CGI
 SUBDIR+=	p5-CGI-Application
+SUBDIR+=	p5-CGI-Minimal
 SUBDIR+=	p5-CGI_Lite
 SUBDIR+=	p5-FCGI
 SUBDIR+=	p5-HTML-Format
