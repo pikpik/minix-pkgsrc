@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+If you are going to use ${PKGNAME} in conjunction with procmail,
+ensure that you are running at least
+	procmail-3.22nb1
+as there are bugs in earlier versions of procmail that prevent ${PKGNAME}
+from functioning correctly as a procmail filter.
+===========================================================================
