@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.222 2005/01/22 18:14:01 adrianp Exp $
+# $NetBSD: Makefile,v 1.223 2005/01/22 19:50:06 peter Exp $
 #
 
 COMMENT=	Security tools
@@ -21,6 +21,7 @@ SUBDIR+=	beecrypt
 SUBDIR+=	bitstir
 SUBDIR+=	cfs
 SUBDIR+=	chkrootkit
+SUBDIR+=	courier-authlib
 SUBDIR+=	crack
 SUBDIR+=	crypto++
 SUBDIR+=	cy-login
