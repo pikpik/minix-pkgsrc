@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2001/04/14 16:44:12 kei Exp $
+# $NetBSD: Makefile,v 1.37 2001/05/11 18:09:11 sakamoto Exp $
 #
 
 COMMENT=	Packages with japanese language support
@@ -28,9 +28,9 @@ SUBDIR+=	mknmz-wwwoffle
 SUBDIR+=	namazu1
 SUBDIR+=	namazu2
 SUBDIR+=	nkf
+SUBDIR+=	p5-Jcode
 SUBDIR+=	p5-Text-ChaSen
 SUBDIR+=	p5-Text-Kakasi
-SUBDIR+=	p5-Jcode
 SUBDIR+=	p5-jcode
 SUBDIR+=	p5-nkf
 SUBDIR+=	sed
@@ -44,6 +44,7 @@ SUBDIR+=	texfamily-share
 SUBDIR+=	vflib
 SUBDIR+=	vflib-lib
 SUBDIR+=	vflib-utils
+SUBDIR+=	vfxdvik
 SUBDIR+=	xjman
 
 .include "../mk/bsd.pkg.subdir.mk"
