@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.2 2001/07/27 20:32:01 agc Exp $
+# $NetBSD: Makefile,v 1.3 2002/07/25 11:15:58 kim Exp $
 #
 
 NO_MTREE=		YES
 
+WRKSRC=			${WRKDIR}/${DISTNAME}
+PKGNAME=		standalone-${DISTNAME}
+
 .include "../../shells/tcsh/Makefile"
 
-WRKSRC:=		${WRKDIR}/${DISTNAME}
-PKGNAME:=		standalone-${DISTNAME}
 COMMENT:=		Standalone version of the ${COMMENT}
 
 LDFLAGS+=		-static
