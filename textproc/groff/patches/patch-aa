@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Mon Sep 16 18:51:00 2002
+--- Makefile.in.orig	2004-04-07 17:33:39.000000000 +0200
 +++ Makefile.in
-@@ -169,7 +169,7 @@ tmac_an_prefix=\
+@@ -186,7 +186,7 @@ tmac_an_prefix=\
  indexext=.i
  
  # Directory containing the default index for refer.
