@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/04/19 15:17:15 zuntum Exp $
+# $NetBSD: Makefile,v 1.8 2002/04/19 15:38:52 zuntum Exp $
 #
 
 
@@ -11,5 +11,6 @@ SUBDIR+=	locator
 SUBDIR+=	tfkiss
 SUBDIR+=	tnt
 SUBDIR+=	wwl
+SUBDIR+=	yaesu
 
 .include "../mk/bsd.pkg.subdir.mk"
