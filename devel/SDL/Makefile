@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2003/07/26 21:38:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.51 2003/07/26 23:05:34 jmmv Exp $
 #
 
 .include "Makefile.common"
-
-PKGREVISION=		6
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
