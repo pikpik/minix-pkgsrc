@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.252 2005/03/25 12:58:49 chris Exp $
+# $NetBSD: Makefile,v 1.253 2005/03/25 13:22:33 adrianp Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -195,7 +195,7 @@ SUBDIR+=	sympa
 SUBDIR+=	teapop
 SUBDIR+=	thunderbird
 SUBDIR+=	thunderbird-bin-nightly
-SUBDIR+=	thunderbird-gtk2
+SUBDIR+=	thunderbird-gtk1
 SUBDIR+=	tmda
 SUBDIR+=	tnef
 SUBDIR+=	tnef2txt
