@@ -1,4 +1,4 @@
-/*	$Id: inet_pton.c,v 1.1.1.1 2003/02/28 10:44:47 lukem Exp $	*/
+/*	$Id: inet_pton.c,v 1.1 2004/03/11 13:01:01 grant Exp $	*/
 /*	$NetBSD: inet_pton.c,v 1.2 2003/02/28 10:44:47 lukem Exp $	*/
 
 /* Copyright (c) 1996 by Internet Software Consortium.
