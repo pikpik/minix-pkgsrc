@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/doc/wApua/README
+share/doc/wApua/COPYING
+share/doc/wApua/wApua.rc
+@dirrm share/doc/wApua
