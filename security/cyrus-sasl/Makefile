@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/01/31 19:52:02 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2002/01/31 20:42:09 jlam Exp $
 
 DISTNAME=		cyrus-sasl-1.5.27
 SVR4_PKGNAME=		csasl
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 			ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/sasl/
 
 MAINTAINER=		jlam@netbsd.org
-HOMEPAGE=		http://asg2.web.cmu.edu/sasl/
+HOMEPAGE=		http://asg.web.cmu.edu/sasl/
 COMMENT=		Simple Authentication and Security Layer
 
 BUILD_DEPENDS+=		automake>=1.4:../../devel/automake
