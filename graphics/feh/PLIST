@@ -1,12 +1,12 @@
-@comment $NetBSD: PLIST,v 1.2 2002/09/20 10:59:21 rh Exp $
+@comment $NetBSD$
 bin/cam
 bin/feh
 bin/gen_cam_menu.sh
+man/man1/feh.1
 share/doc/feh/AUTHORS
 share/doc/feh/ChangeLog
 share/doc/feh/README
 share/doc/feh/TODO
-man/man1/feh.1
 share/feh/fonts/black.style
 share/feh/fonts/menu.style
 share/feh/fonts/yudit.ttf
