@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/07/17 11:12:52 skrll Exp $
 
-DISTNAME=	kdelibs-3.0.2
+DISTNAME=	kdelibs-3.0.3
 PKGNAME=	${DISTNAME:S/kdelib/kdelibdoc/}
 CATEGORIES=	x11 devel
 
