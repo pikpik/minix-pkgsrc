@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/01/10 08:40:07 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/01/24 03:12:32 jlam Exp $
 #
 # Optionally define USE_GNU_READLINE to force use of GNU readline.
 #
@@ -23,6 +23,14 @@ BUILDLINK_IS_BUILTIN.readline=	NO
 .  if exists(/usr/include/readline.h) || \
       exists(/usr/include/readline/readline.h)
 BUILDLINK_IS_BUILTIN.readline=	YES
+.  endif
+.endif
+
+.if defined(BUILDLINK_PREFER_PKGSRC)
+.  if empty(BUILDLINK_PREFER_PKGSRC) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:M[yY][eE][sS]) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:Mreadline)
+BUILDLINK_USE_BUILTIN.readline=	NO
 .  endif
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.10 2003/10/28 18:55:36 reed Exp $
+# $NetBSD: buildlink2.mk,v 1.11 2003/10/30 12:28:56 grant Exp $
 
 .if !defined(FREETYPE2_BUILDLINK2_MK)
 FREETYPE2_BUILDLINK2_MK=	# defined
@@ -48,6 +48,14 @@ _NEED_FREETYPE2!= \
 	else								\
 		${ECHO} "YES";						\
 	fi
+.  endif
+.endif
+
+.if defined(BUILDLINK_PREFER_PKGSRC)
+.  if empty(BUILDLINK_PREFER_PKGSRC) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:M[yY][eE][sS]) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:Mfreetype2)
+_NEED_FREETYPE2=	YES
 .  endif
 .endif
 

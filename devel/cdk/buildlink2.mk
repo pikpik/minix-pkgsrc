@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.4 2003/09/27 17:07:35 grant Exp $
+# $NetBSD: buildlink2.mk,v 1.5 2003/09/28 09:13:56 jlam Exp $
 
 .if !defined(CDK_BUILDLINK2_MK)
 CDK_BUILDLINK2_MK=     # defined
@@ -12,6 +12,14 @@ _NEED_CDK=		YES
 _NEED_CDK=		NO
 .else
 _NEED_CDK=		YES
+.endif
+
+.if defined(BUILDLINK_PREFER_PKGSRC)
+.  if empty(BUILDLINK_PREFER_PKGSRC) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:M[yY][eE][sS]) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:Mcdk)
+_NEED_CDK=	YES
+.  endif
 .endif
 
 .if ${_NEED_CDK} == "YES"

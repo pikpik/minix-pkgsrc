@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.24 2003/08/02 09:25:44 wiz Exp $
+# $NetBSD: buildlink2.mk,v 1.25 2004/01/15 23:04:00 tron Exp $
 
 .if !defined(GETTEXT_BUILDLINK2_MK)
 GETTEXT_BUILDLINK2_MK=	# defined
@@ -44,6 +44,14 @@ INCOMPAT_GETTEXT?=	# empty
 _NEED_GNU_GETTEXT=	YES
 .    endif
 .  endfor
+.endif
+
+.if defined(BUILDLINK_PREFER_PKGSRC)
+.  if empty(BUILDLINK_PREFER_PKGSRC) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:M[yY][eE][sS]) || \
+      !empty(BUILDLINK_PREFER_PKGSRC:Mgettext)
+_NEED_GNU_GETTEXT=	YES
+.  endif
 .endif
 
 .if ${_NEED_GNU_GETTEXT} == "YES"
