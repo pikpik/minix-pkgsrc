@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/11/15 02:29:51 sakamoto Exp $
+# $NetBSD: Makefile,v 1.2 1999/11/16 23:54:11 sakamoto Exp $
 #
 
-DISTNAME=	xipdump-1.5.2
+DISTNAME=	xipdump-1.5.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.epita.fr/~lse/xipdump/
 EXTRACT_SUFX=	.tgz
@@ -27,8 +27,5 @@ post-build:
 	@${ECHO} "@dirrm share/xipdump/pkt" >> ${PLIST_SRC}
 	@${ECHO} "@dirrm share/xipdump/pkc" >> ${PLIST_SRC}
 	@${ECHO} "@dirrm share/xipdump" >> ${PLIST_SRC}
-
-post-install:
-	${INSTALL_DATA} ${WRKSRC}/Xipdump.ad ${PREFIX}/lib/X11/app-defaults
 
 .include "../../mk/bsd.pkg.mk"
