@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.368 2005/02/02 21:33:45 drochner Exp $
+# $NetBSD: Makefile,v 1.369 2005/02/16 22:18:30 jschauma Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -66,6 +66,7 @@ SUBDIR+=	exif
 SUBDIR+=	exiftags
 SUBDIR+=	fbm
 SUBDIR+=	feh
+SUBDIR+=	flphoto
 SUBDIR+=	fly
 SUBDIR+=	fnlib
 SUBDIR+=	freeglut
