@@ -22,8 +22,6 @@ CONFIGURE_ARGS+= --with-curses=${LOCALBASE} --with-exec-shell=/bin/ksh \
 		 --enable-pop --enable-imap
 LDFLAGS+=	-s
 
-BUILD_DEFS+=	MUTT_INTERNATIONAL MUTT_VERSION
-
 .include "../../mk/bsd.pkg.mk"
 
 .if ${OPSYS} == "SunOS"
@@ -32,7 +30,7 @@ PLIST_SUBST+=	LOCALEBASE=lib
 PLIST_SUBST+=	LOCALEBASE=share
 .endif
 
-MUTT_BASE_VERSION=	1.0
+MUTT_BASE_VERSION=	1.0.1
 .if defined(MUTT_INTERNATIONAL) && ${MUTT_INTERNATIONAL} == YES
 MUTT_VERSION=		${MUTT_BASE_VERSION}i
 
