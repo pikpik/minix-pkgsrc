@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/digest
+man/man1/digest.1
+man/cat1/digest.0
