@@ -1,8 +1,8 @@
 $NetBSD$
 
---- doc/vorbisenc/Makefile.in.orig	Tue Jan  1 12:53:49 2002
+--- doc/vorbisenc/Makefile.in.orig	Mon Nov 17 19:44:22 2003
 +++ doc/vorbisenc/Makefile.in
-@@ -92,7 +92,7 @@
+@@ -106,7 +106,7 @@ pthread_lib = @pthread_lib@
  
  AUTOMAKE_OPTIONS = foreign
  
