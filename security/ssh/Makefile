@@ -3,7 +3,7 @@
 # Date created:				19971214
 # Whom:					hubertf@netbsd.org
 #
-# $NetBSD: Makefile,v 1.5 1998/01/18 20:07:43 kleink Exp $
+# $NetBSD: Makefile,v 1.6 1998/01/22 07:48:11 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 # Maximal ssh package requires a YES value for USE_PERL.
@@ -33,6 +33,7 @@ MASTER_SITES=	\
 .endif
 
 RESTRICTED=	"Crypto; export-controlled"
+MIRROR_DISTFILE=	no
 IS_INTERACTIVE=	YES
 
 GNU_CONFIGURE=	YES
