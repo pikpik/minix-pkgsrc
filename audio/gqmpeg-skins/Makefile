@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/03/26 02:27:34 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/11 17:15:35 xtraeme Exp $
 #
 
 DISTNAME=	bla
 PKGNAME=	gqmpeg-skins-20030712
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://gqmpeg.sourceforge.net/skins/
 DISTFILES+=	\
