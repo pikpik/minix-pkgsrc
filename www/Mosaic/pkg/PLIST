@@ -1,2 +1,4 @@
+@comment $NetBSD$
 bin/Mosaic
+bin/mosaic
 lib/X11/app-defaults/Mosaic
