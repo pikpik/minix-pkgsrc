@@ -1,6 +1,4 @@
-#
-# $NetBSD$
-#
+# $NetBSD: Makefile,v 1.1 1998/08/27 13:11:04 garbled Exp $
 
 DISTNAME=		nethack-3.2.2
 PKGNAME=		nethack-tty-3.2.2
