@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/04/12 21:19:32 tron Exp $
 
 DISTNAME=	mailwrapper-19990412
 CATEGORIES=	mail
@@ -15,6 +15,7 @@ IGNORE=         "is part of your NetBSD distribution"
 .endif
 
 MANCOMPRESSED=	1
+MAKE_ENV+=	MANZ=1
 WRKSRC=		${WRKDIR}/mailwrapper
 
 MAILER_CONF=	/etc/mailer.conf
