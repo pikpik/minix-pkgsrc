@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2001/02/16 15:51:47 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2001/02/16 21:09:17 lukem Exp $
 #
 
 COMMENT=	communication programs
@@ -8,6 +8,7 @@ SUBDIR+=	epic4
 SUBDIR+=	fugu
 SUBDIR+=	gaim
 SUBDIR+=	gale
+SUBDIR+=	gnomeicu
 SUBDIR+=	icb
 SUBDIR+=	icqlib
 SUBDIR+=	irchat
