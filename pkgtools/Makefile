@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/09/23 14:27:56 agc Exp $
+# $NetBSD: Makefile,v 1.12 1999/11/17 09:53:08 agc Exp $
 #
 
 SUBDIR+= gensolpkg
@@ -7,6 +7,7 @@ SUBDIR+= gensolpkg
 SUBDIR+= pkgdep
 SUBDIR+= pkglibtool
 SUBDIR+= pkglint
+SUBDIR+= pkgmanpages
 SUBDIR+= port2pkg
 SUBDIR+= url2pkg
 #SUBDIR+= xpkgwedge		# broken
