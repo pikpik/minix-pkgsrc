@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2003/09/20 16:56:40 salo Exp $
+@comment $NetBSD$
 bin/pure-pw
 bin/pure-pwconvert
 bin/pure-statsdecode
