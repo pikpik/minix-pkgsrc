@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1.1.1 2001/04/27 14:06:06 wiz Exp $
 
 --- /dev/null	Sat Jan 29 20:16:40 2000
 +++ conf/os-netbsd.h	Sat Jan 29 20:47:21 2000
@@ -15,7 +15,7 @@ $NetBSD$
 +/* Then again... */
 +
 +#undef  SAFEPATH
-+#define SAFEPATH    "/bin:/usr/bin:/usr/pkg/bin"  /* Safe dirs for PATH		*/
++#define SAFEPATH    "/bin:/usr/bin:@PREFIX@/bin"  /* Safe dirs for PATH		*/
 +
 +#undef  SYSV_USRMAIL		/* Mailboxes in /usr/mail, as per SysV	*/
 +#define MBX_DIR     "/var/mail"
