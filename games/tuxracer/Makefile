@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/11 23:16:27 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/04/12 02:04:59 minskim Exp $
 #
 
 DISTNAME=	tuxracer-0.61
@@ -11,6 +11,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	david@netbsd-fr.org
 HOMEPAGE=	http://tuxracer.sourceforge.net/
 COMMENT=	3D penguin racing game using OpenGL
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
