@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.4 2001/03/09 11:38:34 dmcmahill Exp $
+$NetBSD$
 
-MD5 (dinotrace-9.1b.tar.gz) = fbb15da827d07f946ca5a1d40b14c235
+SHA1 (dinotrace-9.1b.tar.gz) = 9028042c35a2682cd09155d5c662af219ef73f73
+Size (dinotrace-9.1b.tar.gz) = 365778 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/02/22 08:38:56 rh Exp $
+$NetBSD$
 
-MD5 (geda/libgeda-20000220.tar.gz) = b8952f645133f3df0323024dc1cd9b86
+SHA1 (geda/libgeda-20000220.tar.gz) = d8f81b1d3b184a4d2584b5e472b9ebd54966e84f
+Size (geda/libgeda-20000220.tar.gz) = 221407 bytes

@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.3 2000/11/24 13:51:51 dmcmahill Exp $
+$NetBSD$
 
-MD5 (gwave-20001123.tar.gz) = 7196e8cee2ef51506532d627932ab3c1
+SHA1 (gwave-20001123.tar.gz) = ac17fc599cfd31371fac9ae71ef5c884d04c69a3
+Size (gwave-20001123.tar.gz) = 367032 bytes
 SHA1 (patch-aa) = 26e19c970e9a145ab20dcad0459f7ede086fb66f
 SHA1 (patch-ab) = a40205d5f32117cf0ba951b916bf802953380215

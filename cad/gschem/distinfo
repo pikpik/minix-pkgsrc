@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/02/22 08:38:55 rh Exp $
+$NetBSD$
 
-MD5 (geda/gschem-20000220.tar.gz) = 0d66cb58815a6ba0c5e717d02ba35adb
+SHA1 (geda/gschem-20000220.tar.gz) = 538fdaeb38fcdb1a01586b2f9f2d67ea4b7a0d85
+Size (geda/gschem-20000220.tar.gz) = 341740 bytes

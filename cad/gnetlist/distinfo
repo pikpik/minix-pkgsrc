@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/02/22 08:38:54 rh Exp $
+$NetBSD$
 
-MD5 (geda/gnetlist-20000220.tar.gz) = 335700b3a8fb22ab58f4cf9cd35ff0ec
+SHA1 (geda/gnetlist-20000220.tar.gz) = 5f1faa27f2f187a37aea03b4a1c23b29c6bdf9b6
+Size (geda/gnetlist-20000220.tar.gz) = 195151 bytes
