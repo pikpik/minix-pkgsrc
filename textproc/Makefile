@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.267 2004/11/12 06:25:22 erh Exp $
+# $NetBSD: Makefile,v 1.268 2004/11/12 06:41:55 erh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -198,7 +198,6 @@ SUBDIR+=	p5-XML-Xerces
 SUBDIR+=	p5-XML-YAWriter
 SUBDIR+=	p5-YAML
 SUBDIR+=	p5-libxml
-SUBDIR+=	p5-libxml-enno
 SUBDIR+=	par
 SUBDIR+=	php4-domxml
 SUBDIR+=	php5-dom
