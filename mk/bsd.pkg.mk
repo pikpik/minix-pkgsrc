@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.447 2000/05/31 21:25:48 jwise Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.448 2000/05/31 22:16:16 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -2421,7 +2421,7 @@ binpkg-list:
 		do 							\
 			if [ -f "$$pkg" ] ; then			\
 				pkgname=`${ECHO} $$pkg | ${SED} 's@.*/@@'`; \
-				${ECHO} "<TR><TD>${MACHINE_ARCH}:<TD><a href=\"${PKG_URL}/$$pkg\">$$pkgname</a> (${OPSYS} ${OS_VERSION})"; \
+				${ECHO} "<TR><TD>${MACHINE_ARCH}:<TD><a href=\"${PKG_URL}/$$pkg\">$$pkgname</a><TD>(${OPSYS} ${OS_VERSION})"; \
 			fi ;						\
 		done ; 							\
 		;;							\
