@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/08/22 17:39:00 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/03/15 01:07:47 nathanw Exp $
 #
 
 DISTNAME=	ctwm-3.5.2
@@ -9,7 +9,8 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://ctwm.dl.nu/
 COMMENT=	Window manager with support for multiple virtual screens
 
+USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
 
-.include "../../graphics/xpm/buildlink.mk"
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
