@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/18 00:35:50 jtb Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/02 01:21:23 jschauma Exp $
 
 DISTNAME=	efax-0.9
 CATEGORIES=	comms
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cce.com/efax/
 COMMENT=	collection of small programs for sending and receiving faxes
 
-CONFLICTS=	kdeutils-[0-9]*
+CONFLICTS=	kdeutils<3.1
 
 USE_BUILDLINK2=	# defined
 
