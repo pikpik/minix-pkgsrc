@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/04/15 20:39:39 tron Exp $
+# $NetBSD: Makefile,v 1.17 1999/07/06 07:54:35 jlam Exp $
 #
 
 DISTNAME=	mikmod-3.0.3
@@ -14,7 +14,7 @@ DEPENDS+=	ncurses-4.2:../../devel/ncurses
 USE_GMAKE=	yes
 
 post-patch:
-	chmod a+x ${WRKSRC}/build-mikmod.netbsd.sh
+	${CHMOD} a+x ${WRKSRC}/build-mikmod.netbsd.sh
 
 do-build:
 	@( cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build-mikmod.netbsd.sh )

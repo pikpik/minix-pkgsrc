@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/10/11 10:32:49 proff Exp $
+# $NetBSD: Makefile,v 1.6 1999/12/25 22:25:32 wiz Exp $
 
 DISTNAME=	festlex_CMU
 PKGNAME=	festlex-cmu-1.4.0
@@ -17,7 +17,7 @@ FHOME=		${PREFIX}/share/festival
 
 post-extract:
 	@ ${CHMOD} -R a+r ${WRKSRC}
-	@ find ${WRKSRC} -type d -print0 | xargs -0 ${CHMOD} 755
+	@ ${FIND} ${WRKSRC} -type d -print0 | xargs -0 ${CHMOD} 755
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
