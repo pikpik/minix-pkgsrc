@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2001/11/25 18:59:45 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2001/12/02 06:56:38 jlam Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/06/13 16:17:01 ache Exp
 #
 
@@ -11,8 +11,6 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://rplay.doit.org/
 COMMENT=	Network audio player
 
-BUILD_DEPENDS+=	autoconf>=2.13:../../devel/autoconf
-
 USE_BUILDLINK_ONLY=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
@@ -23,7 +21,6 @@ INFO_FILES=	RPLAY.info RPTP.info librplay.info rplay.info
 RCD_SCRIPTS=	rplayd
 
 pre-configure:
-	cd ${WRKSRC}; ${LOCALBASE}/bin/autoreconf --force
 	cd ${WRKSRC}/doc; for manpage in *.[0-9]; do			\
 		${SED}	-e "s|/usr/local/etc|${PKG_SYSCONFDIR}|g"	\
 			-e "s|/usr/local|${PREFIX}|g"			\
