@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:42:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/26 03:41:29 hubertf Exp $
 # FreeBSD Id: ports/sysutils/daemontools/Makefile,v 1.8 2000/12/03 05:16:41 steve Exp
 
 DISTNAME=	daemontools-0.70
@@ -13,6 +13,10 @@ DISTFILES=	${DISTNAME}.tar.gz					\
 MAINTAINER=	zuntum@eik.pl
 HOMEPAGE=	http://cr.yp.to/daemontools.html
 COMMENT=	Service monitoring and logging utilities by djb
+
+RESTRICTED=	"Redistribution of modified package is forbidden"
+NO_BIN_ON_CDROM=${RESTRICTED}
+NO_BIN_ON_FTP=	${RESTRICTED}
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
