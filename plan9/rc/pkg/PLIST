@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 1997/11/06 10:04:02 agc Exp $
 bin/rc
-bin/history
 bin/-
 bin/--
 bin/-p
