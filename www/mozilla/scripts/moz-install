@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# $NetBSD$
 
 ${SED} -e "s,@PREFIX@,${PREFIX},g" ${FILESDIR}/mozilla-${OBJECT_FMT}.in > ${PREFIX}/bin/mozilla
 ${CHOWN} ${BINOWN} ${PREFIX}/bin/mozilla
