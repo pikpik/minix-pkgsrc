@@ -1,0 +1,4 @@
+@comment $NetBSD$
+
+share/lambdamoo/LambdaCore-12Apr99.db
+@dirrm share/lambdamoo
