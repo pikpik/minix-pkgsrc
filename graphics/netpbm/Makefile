@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2004/05/20 08:41:07 adam Exp $
+# $NetBSD: Makefile,v 1.94 2004/07/06 10:55:53 tron Exp $
 
 DISTNAME=	netpbm-10.18.13
 CATEGORIES=	graphics
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://netpbm.sourceforge.net/
 COMMENT=	Toolkit for conversion of images between different formats
-
-LICENSE=	no-commercial-use
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
