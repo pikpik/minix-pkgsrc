@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: sshd.sh,v 1.7 2002/02/05 04:17:32 jlam Exp $
 #
 # PROVIDE: sshd
 # REQUIRE: DAEMON LOGIN
@@ -92,6 +92,9 @@ else
 		else
 			@ECHO@ "${name} is not running."
 		fi
+		;;
+	keygen)
+		eval ${keygen_cmd}
 		;;
 	esac
 fi
