@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2004/02/25 15:53:17 minskim Exp $
+# $NetBSD: Makefile,v 1.16 2004/02/25 19:04:19 minskim Exp $
 
-DISTNAME=	wmbiff-0.4.19
-PKGREVISION=	2
+DISTNAME=	wmbiff-0.4.25
 CATEGORIES=	mail x11 windowmaker
 MASTER_SITES=	$(MASTER_SITE_SOURCEFORGE:=wmbiff/)
 
@@ -23,4 +22,5 @@ post-install:
 .include "../../graphics/xpm/buildlink3.mk"
 .include "../../wm/windowmaker/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
+.include "../../security/gnutls/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
