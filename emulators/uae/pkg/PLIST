@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/readdisk
+bin/uae
+share/doc/uae/FAQ
+share/doc/uae/README
+@dirrm share/doc/uae
