@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/12/12 02:10:20 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/02/17 17:06:55 wiz Exp $
 #
 
 DISTNAME=	wterm-6.2.6
@@ -15,7 +15,7 @@ DEPENDS+=	windowmaker-*:../../wm/windowmaker
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
 
-CFLAGS+=	-I${LOCALBASE}/include
+CFLAGS+=	-I${LOCALBASE}/include -I${X11BASE}/include/WINGs
 
 CONFIGURE_ARGS+= --enable-utmp --enable-wtmp --enable-xpm-background
 CONFIGURE_ARGS+= --enable-menubar --enable-graphics --enable-next-scroll
