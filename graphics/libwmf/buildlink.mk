@@ -1,4 +1,4 @@
-# $NetBSD: buildlink.mk,v 1.2 2001/07/20 01:54:45 jlam Exp $
+# $NetBSD: buildlink.mk,v 1.3 2001/07/27 13:33:30 jlam Exp $
 #
 # This Makefile fragment is included by packages that use libwmf.
 #
@@ -18,7 +18,7 @@ LIBWMF_BUILDLINK_MK=	# defined
 .include "../../mk/bsd.buildlink.mk"
 
 BUILDLINK_DEPENDS.libwmf?=	libwmf>=0.1.21
-DEPENDS+=	${BUILDLINK_DEPENDS.libwmf}:../../graphics/libwmf
+BUILD_DEPENDS+=	${BUILDLINK_DEPENDS.libwmf}:../../graphics/libwmf
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.libwmf=libwmf
 BUILDLINK_PREFIX.libwmf_DEFAULT=	${LOCALBASE}
