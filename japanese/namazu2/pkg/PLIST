@@ -1,12 +1,15 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/01/27 02:29:24 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/08/21 14:01:19 taca Exp $
+bin/adnmz
 bin/bnamazu
 bin/gcnmz
 bin/kwnmz
+bin/lnnmz
 bin/mailutime
 bin/mknmz
 bin/namazu
 bin/nmz-config
 bin/nmzgrep
+bin/nmzmerge
 bin/rfnmz
 bin/vfnmz
 @exec /bin/mkdir %D/etc/namazu 2>/dev/null|| /usr/bin/true
