@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2000/01/02 22:54:12 rh Exp $
+# $NetBSD: Makefile,v 1.17 2000/01/02 23:01:27 rh Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
-#    SUBDIR += acs
+    SUBDIR += acs
 #    SUBDIR += chipmunk
     SUBDIR += fastcap
     SUBDIR += fasthenry
