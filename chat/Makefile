@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2002/12/18 17:42:51 jmmv Exp $
+# $NetBSD: Makefile,v 1.58 2002/12/19 11:43:57 grant Exp $
 #
 
 COMMENT=	communication programs
@@ -44,6 +44,7 @@ SUBDIR+=	lmme
 SUBDIR+=	micq
 SUBDIR+=	naim
 SUBDIR+=	navi2ch
+SUBDIR+=	ninja
 SUBDIR+=	p5-Net-AIM
 SUBDIR+=	p5-Net-AOLIM
 SUBDIR+=	p5-Net-Goofey
