@@ -1,4 +1,4 @@
-/*	$NetBSD: ftpio.c,v 1.53 2003/09/02 07:35:01 jlam Exp $	*/
+/*	$NetBSD: ftpio.c,v 1.54 2003/09/03 07:33:37 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: ftpio.c,v 1.53 2003/09/02 07:35:01 jlam Exp $");
+__RCSID("$NetBSD: ftpio.c,v 1.54 2003/09/03 07:33:37 jlam Exp $");
 #endif
 
 /*
@@ -177,12 +177,12 @@ expect(int fd, const char *str, int *ftprc)
 	case -1:
 	    if (errno == EINTR)
 		break;
-	    warn("expect: select() failed (probably ftp died because of bad args)");
+	    warn("expect: poll() failed (probably ftp died because of bad args)");
 	    done = 1;
 	    retval = -1;
 	    break;
 	case 0:
-	    warnx("expect: select() timeout");
+	    warnx("expect: poll() timeout");
 	    /* need to send ftp coprocess SIGINT to make it stop
 	     * downloading into dir that we'll blow away in a second */
 	    kill(ftp_pid, SIGINT);
@@ -209,7 +209,12 @@ expect(int fd, const char *str, int *ftprc)
 		break;
 	    }
 
-	    rc=read(fd,&buf[sizeof(buf)-1],1);
+	    rc = read(fd, &buf[sizeof(buf) - 1], 1);
+	    if (rc <= 0) {
+		done = 1;
+		retval = -1;
+		break;
+	    }
 
 	    if (verbose_expect)
 		putchar(buf[sizeof(buf)-1]);
