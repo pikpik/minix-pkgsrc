@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2002/11/23 22:47:02 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/28 21:14:27 wiz Exp $
 
-DISTNAME=	pkg_tarup-1.2
+DISTNAME=	pkg_tarup-1.3
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -17,6 +17,7 @@ NO_MTREE=	yes
 # Set SCRIPT_SUBST to substitute "@VARIABLE@" with "value"
 SCRIPT_SUBST+=	AWK=${AWK:Q}				\
 		ECHO=${ECHO:Q}				\
+		HEAD=${HEAD:Q}				\
 		ID=${ID:Q}				\
 		PKG_DBDIR=${PKG_DBDIR:Q}		\
 		PKG_SUFX=${PKG_SUFX:Q}			\
