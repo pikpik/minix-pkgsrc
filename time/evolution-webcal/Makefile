@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/24 16:43:56 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/28 19:19:42 jmmv Exp $
 #
 
 DISTNAME=	evolution-webcal-2.0.1
@@ -21,6 +21,7 @@ GCONF2_SCHEMAS=		evolution-webcal.schemas
 .include "../../devel/GConf2/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../mail/evolution-data-server/buildlink3.mk"
 .include "../../net/libsoup-devel/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
