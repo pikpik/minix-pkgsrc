@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2001/09/27 23:18:31 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/07/17 22:51:47 grant Exp $
 #
 
 DISTNAME=	freerdist-0.92
+PKGREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.astron.com/pub/freerdist/
+MASTER_SITES=	ftp://ftp.astron.com/pub/freerdist/ \
+		ftp://ftp.gw.com/pub/unix/freerdist/
 
 MAINTAINER=	christos@NetBSD.org
 COMMENT=	Network file distribution/synchronisation utility
