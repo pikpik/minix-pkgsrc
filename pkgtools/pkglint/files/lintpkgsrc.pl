@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 
-# $NetBSD: lintpkgsrc.pl,v 1.26 2000/08/17 16:16:02 abs Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.27 2000/08/28 14:15:00 abs Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -707,7 +707,10 @@ sub scan_pkgsrc_makefiles
 	    if ($pkgname)
 		{
 		if ($pkgname !~ /(.*)-(\d.*)/)
-		    { print "Cannot extract $pkgname version ($cat/$pkgdir)\n"; }
+		    {
+		    print "Cannot extract $pkgname version ($cat/$pkgdir)\n";
+		    next;
+		    }
 		$pkg{$1}{$2}{'dir'} = "$cat/$pkgdir";
 		$pkg{$1}{$2}{'depends'} = $vars{'DEPENDS'};
 		}
