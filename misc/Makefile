@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.179 2004/01/17 19:02:27 kristerw Exp $
+# $NetBSD: Makefile,v 1.180 2004/01/19 10:38:51 jmmv Exp $
 #
 
 COMMENT=	Miscellaneous utilities
 
+SUBDIR+=	XFree86-docs
+SUBDIR+=	XFree86-man
 SUBDIR+=	9menu
 SUBDIR+=	ascii
 SUBDIR+=	asr-manpages
