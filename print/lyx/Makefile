@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2001/03/19 04:30:23 bad Exp $
+# $NetBSD: Makefile,v 1.34 2001/03/19 04:32:27 bad Exp $
 # FreeBSD Id: Makefile,v 1.14 1998/02/14 16:46:50 andreas Exp
 #
 
-DISTNAME=		lyx-1.1.6
+DISTNAME=		lyx-1.1.6fix1
 CATEGORIES=		print
 # XXX temporary: problems with the ftp server
 #MASTER_SITES=		ftp://ftp.lyx.org/pub/lyx/stable/
