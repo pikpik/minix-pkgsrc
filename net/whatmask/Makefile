@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/21 13:14:36 zuntum Exp $
 #
 
-DISTNAME=	whatmask-1.0
+DISTNAME=	whatmask-1.1
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.laffeycomputer.com/current_builds/whatmask/
 
