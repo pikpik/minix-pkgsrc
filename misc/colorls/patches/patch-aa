@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Sat Nov 27 23:51:20 1999
-+++ Makefile	Sat Nov 27 23:51:22 1999
-@@ -3,5 +3,8 @@
+--- Makefile.orig	Fri Sep 23 22:55:51 1994
++++ Makefile
+@@ -3,4 +3,7 @@
  
 -PROG=	ls
 +PROG=	colorls
@@ -11,4 +11,3 @@ $NetBSD$
 +MANDIR= ${PREFIX}/man
 +MANINSTALL= catinstall maninstall
  
- .include <bsd.prog.mk>
