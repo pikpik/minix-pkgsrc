@@ -7,6 +7,10 @@ WRKSRC=			${WRKDIR}/${DISTNAME:S/Lib//}
 MAINTAINER=		jschauma@netbsd.org
 COMMENT=		OpenGL examples and Demos
 
+# XXX:
+BROKEN=			"This package not available until Mesa is updated to
+5.0!"
+
 .include "../Mesa/Makefile.common"
 
 USE_BUILDLINK2=		yes
@@ -22,7 +26,6 @@ do-install:
 	cd ${WRKSRC}/${dir} && ${PAX} -s ,^./.*Makefile.*,, -s ,^./CVS.*,, \
 		-rw . ${PREFIX}/share/examples/${PKGNAME}/${dir}
 .endfor
-	
 
 .include "../../graphics/Mesa/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
