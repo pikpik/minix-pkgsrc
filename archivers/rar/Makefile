@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1998/06/18 16:06:37 agc Exp $
+# $NetBSD: Makefile,v 1.12 1999/03/28 15:34:24 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/08/10 22:31:27 fenner Exp 
 #
 
@@ -15,8 +15,7 @@ MAINTAINER=     packages@netbsd.org
 NO_PACKAGE=     Only unmodified original package can be distributed
 
 NO_WRKSUBDIR=   yes
-EXTRACT_CMD=
-EXTRACT_BEFORE_ARGS=
+EXTRACT_CMD=	${DOWNLOADED_DISTFILE}
 
 pre-extract:
 	chmod a+x ${DISTDIR}/${DISTFILES}

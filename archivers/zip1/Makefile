@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/06/26 20:07:14 tv Exp $
+# $NetBSD: Makefile,v 1.4 1998/08/20 15:16:38 tsarna Exp $
 #
 
 DISTNAME=	zip1-1.1
@@ -12,8 +12,7 @@ HOMEPAGE=	http://www.cdrom.com/pub/infozip/
 
 BUILD_DEPENDS=	unzip:../../archivers/unzip
 
-EXTRACT_CMD=	unzip
-EXTRACT_BEFORE_ARGS=	-qo
+EXTRACT_CMD=	unzip -qo ${DOWNLOADED_DISTFILE}
 
 MAKEFILE=	makefile
 MAKE_FLAGS=	CFLAGS="${CFLAGS} -DDIRENT" LFLAGS2="-lcompat"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/02/10 14:59:50 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1999/02/10 18:49:17 explorer Exp $
 # FreeBSD: Makefile,v 1.1.1.1 1998/06/15 18:09:43 ghelmer Exp
 #
 
@@ -11,7 +11,7 @@ EXTRACT_SUFX=	.tar
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.scl.ameslab.gov/Projects/HINT/
 
-EXTRACT_BEFORE_ARGS=-xf
+EXTRACT_CMD=	${GTAR} -xf ${DOWNLOADED_DISTFILE}
 WRKSRC=		${WRKDIR}/unix
 ALL_TARGET=	DOUBLE INT
 
