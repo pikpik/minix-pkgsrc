@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xce
+man/man1/xce.1
