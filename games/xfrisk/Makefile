@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:15:42 agc Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/24 13:30:57 grant Exp $
 #
 
 DISTNAME=	xfrisk-1.2
@@ -11,7 +11,7 @@ HOMEPAGE=	http://morphy.iki.fi/xfrisk/
 COMMENT=	X11 version of the classic Risk board game
 
 WRKSRC=		${WRKDIR}/XFrisk
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
 
@@ -32,5 +32,5 @@ XAW_TYPE?=	3d
 XAW_TYPE=3d
 .endif
 
-.include "../../mk/xaw.buildlink2.mk"
+.include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
