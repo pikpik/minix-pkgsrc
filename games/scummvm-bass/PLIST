@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bass
+share/games/bass/sky.dnr
+share/games/bass/sky.dsk
+@dirrm share/games/bass
