@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.235 2003/04/10 17:04:08 salo Exp $
+# $NetBSD: Makefile,v 1.236 2003/04/11 07:28:27 salo Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -223,6 +223,7 @@ SUBDIR+=	xdvipresent
 SUBDIR+=	xfig
 SUBDIR+=	xgraph
 SUBDIR+=	xine-lib
+SUBDIR+=	xine-ui
 SUBDIR+=	xli
 SUBDIR+=	xpaint
 SUBDIR+=	xplot
