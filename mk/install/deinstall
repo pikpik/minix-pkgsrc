@@ -1,6 +1,6 @@
 # start of deinstall
 #
-# $NetBSD: deinstall,v 1.21 2003/09/13 10:06:36 jlam Exp $
+# $NetBSD: deinstall,v 1.22 2003/09/17 02:38:29 jlam Exp $
 
 eval set -- ${PKG_USERS}
 for userset; do
@@ -96,7 +96,7 @@ VIEW-DEINSTALL)
 	if [ -n "${PKG_SHELL}" -a "${PKG_REGISTER_SHELLS}" = "YES" ]; then
 		${ECHO} "===> Updating /etc/shells"
 		${CP} /etc/shells /etc/shells.pkgsrc."$$"
-		(${GREP} -v ${PKG_SHELL} /etc/shells.pkgsrc."$$" || ${TRUE}) > /etc/shells
+		(${GREP} -v "^${PKG_SHELL}" /etc/shells.pkgsrc."$$" || ${TRUE}) > /etc/shells
 		${RM} /etc/shells.pkgsrc."$$"
 	fi
 	;;
