@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2000/02/19 02:40:33 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2000/03/27 08:55:00 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/04/30 23:49:14 asami Exp
 #
 
@@ -25,7 +25,7 @@ MAKE_ENV+=		CPPFLAGS=
 CONFIGURE_ARGS+=	${CONF}
 
 .if exists(/usr/bin/top)
-IGNORE=			"is part of your NetBSD distribution"
+IGNORE=			"${PKGNAME} is part of your NetBSD distribution"
 .endif
 
 MAKE_ENV+=	INSTALL_MAN="${INSTALL_MAN}" \
