@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2002/06/17 20:21:46 tron Exp $
+# $NetBSD: Makefile,v 1.47 2002/06/17 20:56:53 tron Exp $
 
 DISTNAME=	sendmail.8.11.6
 PKGNAME=	sendmail-8.11.6
@@ -50,7 +50,7 @@ DEPENDS+=	db-2.7.7:../../databases/db
 .endif
 
 .if defined(USE_LDAP) && ${USE_LDAP} == YES
-DEPENDS+=	openldap-1.2.*:../../databases/openldap
+.include "../../databases/openldap/buildlink.mk"
 .endif
 
 .if defined(USE_STARTTLS) && ${USE_STARTTLS} == YES
