@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/12/29 11:26:56 recht Exp $
+# $NetBSD: Makefile,v 1.14 2005/03/21 23:49:48 recht Exp $
 #
 
 DISTNAME=	tla-1.3.1
@@ -39,6 +39,7 @@ post-install:
 	cd ${WRKDIR}/${DISTNAME}/src/docs-tla/html && \
 		${PAX} -s ',.*/\.arch-ids.*,,' -rwppm . ${HTMLDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${HTMLDIR}
-	${CHMOD} -R ugo-w ${HTMLDIR}
+	${FIND} ${SMDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${SMDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE} 
 
 .include "../../mk/bsd.pkg.mk"
