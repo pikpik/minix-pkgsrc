@@ -1,0 +1,5 @@
+$NetBSD: md5,v 1.3 1999/11/30 01:54:07 sakamoto Exp $
+
+MD5 (lha-114f.tar.gz) = db86f414e08c39e190763f8b0c190ff6
+SHA1 (patch-ad) = 952365147b6e4b493ccbf230e8f2df476e15ffc3
+SHA1 (patch-ae) = b073e65ab6089bb4ad258e01973ec90756c7d3d8
