@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:45:03 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:19:17 agc Exp $
 #
 
 DISTNAME=	opencxx2512
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.csg.is.titech.ac.jp/~chiba/openc++.html
 COMMENT=	OpenC++ is a version of C++ with a Metaobject Protocol
 
-USE_GMAKE=	YES
+USE_GNU_TOOLS+=	make
 MAKEFILE=	Makefile.SunOSandBSD
 MAKE_FLAGS+=	CXXFLAGS=-I${PREFIX}/include
 MAKE_FLAGS+=	GCLIBDIR=${BUILDLINK_DIR}

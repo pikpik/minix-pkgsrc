@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:44:14 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/08/09 10:59:07 seb Exp $
 #
 
 DISTNAME=	eieio-0.17
@@ -19,7 +19,7 @@ DEPENDS+=	xemacs-packages:../../editors/xemacs-packages
 MAKEFLAGS+=	EMACS=${EMACS_BIN}
 
 NO_CONFIGURE=	# set
-USE_GMAKE=	# set
+USE_GNU_TOOLS+=	make
 
 INFO_FILES=	eieio.info
 

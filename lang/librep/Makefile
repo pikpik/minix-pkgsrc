@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/08/09 10:59:10 seb Exp $
+# $NetBSD: Makefile,v 1.31 2003/08/09 12:30:51 seb Exp $
 #
 
 DISTNAME=		librep-${REP_VERS}
@@ -17,7 +17,7 @@ DEPENDS+=		libtool-base>=${LIBTOOL_REQD}:../../devel/libtool-base
 USE_GNU_READLINE=	# uses rl_basic_quote_characters
 
 USE_BUILDLINK2=		# defined
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		# defined
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 REP_LIBTOOL=		${PREFIX}/libexec/rep/${MACHINE_GNU_PLATFORM}/libtool

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/21 16:54:01 martti Exp $
+# $NetBSD: Makefile,v 1.16 2003/08/09 10:59:06 seb Exp $
 
 DISTNAME=		cilk-5.3.1
 PKGREVISION=		2
@@ -14,7 +14,7 @@ ONLY_FOR_PLATFORM=	*-*-alpha *-*-i386 -*-*mipse[bl] *-*-powerpc *-*-sparc
 
 GNU_CONFIGURE=		# defined
 USE_BUILDLINK2=	 	# defined
-USE_GMAKE=		# defined
+USE_GNU_TOOLS+=		make
 USE_PERL5=		yes
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE= 	${WRKSRC}/libtool

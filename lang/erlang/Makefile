@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/09/28 09:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/12 03:39:40 jschauma Exp $
 
 DISTNAME=		otp_src_R9C-0
 PKGNAME=		erlang-9.2
@@ -16,7 +16,7 @@ USE_BUILDLINK2=		yes
 USE_X11=		yes
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_JAVA=		yes
 USE_JAVA2=		yes
 

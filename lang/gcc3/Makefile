@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2004/01/13 09:53:35 grant Exp $
+# $NetBSD: Makefile,v 1.47 2004/01/21 10:17:56 abs Exp $
 #
 
 DISTNAME=		gcc-3.3
@@ -18,7 +18,7 @@ NOT_FOR_PLATFORM=	Darwin-*-*
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 HAS_CONFIGURE=		YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/07/21 12:48:44 seb Exp $
+# $NetBSD: Makefile,v 1.23 2003/08/09 10:59:11 seb Exp $
 
 DISTNAME=		gcc-2.95.2
 PKGNAME=		pgcc-2.95.2.1
@@ -21,7 +21,7 @@ ONLY_FOR_PLATFORM=	NetBSD-*-arm NetBSD-*-arm32 NetBSD-*-i386	\
 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	${WRKSRC}/configure

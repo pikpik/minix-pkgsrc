@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2003/09/22 03:04:16 jschauma Exp $
+# $NetBSD: Makefile,v 1.50 2003/09/23 20:56:00 dmcmahill Exp $
 
 DISTNAME=		kaffe-1.1.0
 CATEGORIES=		lang java
@@ -12,7 +12,7 @@ USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 USE_X11=		yes
 USE_LIBTOOL=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 TEST_TARGET=		check
 
