@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.33 2004/09/02 11:13:27 jmmv Exp $
+@comment $NetBSD$
 bin/xml2-config
 bin/xmlcatalog
 bin/xmllint
@@ -35,6 +35,7 @@ include/libxml2/libxml/xmlautomata.h
 include/libxml2/libxml/xmlerror.h
 include/libxml2/libxml/xmlexports.h
 include/libxml2/libxml/xmlmemory.h
+include/libxml2/libxml/xmlmodule.h
 include/libxml2/libxml/xmlreader.h
 include/libxml2/libxml/xmlregexp.h
 include/libxml2/libxml/xmlsave.h
@@ -98,6 +99,7 @@ share/doc/html/libxml2/html/libxml-xmlautomata.html
 share/doc/html/libxml2/html/libxml-xmlerror.html
 share/doc/html/libxml2/html/libxml-xmlexports.html
 share/doc/html/libxml2/html/libxml-xmlmemory.html
+share/doc/html/libxml2/html/libxml-xmlmodule.html
 share/doc/html/libxml2/html/libxml-xmlreader.html
 share/doc/html/libxml2/html/libxml-xmlregexp.html
 share/doc/html/libxml2/html/libxml-xmlsave.html
