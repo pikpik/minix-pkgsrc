@@ -1,4 +1,4 @@
-# $NetBSD: defs.NetBSD.mk,v 1.37 2002/12/03 20:53:41 agc Exp $
+# $NetBSD: defs.NetBSD.mk,v 1.38 2002/12/03 21:13:38 agc Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -17,6 +17,7 @@ ECHO?=		echo				# Shell builtin
 EGREP?=		/usr/bin/egrep
 EXPR?=		/bin/expr
 FALSE?=		false				# Shell builtin
+FGREP?=		/usr/bin/fgrep
 FILE_CMD?=	/usr/bin/file
 FIND?=		/usr/bin/find
 GMAKE?=		${LOCALBASE}/bin/gmake
