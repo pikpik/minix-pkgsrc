@@ -1,0 +1,12 @@
+@comment $NetBSD$
+bin/netscape
+bin/netscape.bin
+bin/movemail
+bin/movemail.bin
+share/netscape/nls/C
+share/netscape/nls/nls.dir
+share/netscape/java/java_301
+share/netscape/mailcap
+@dirrm share/netscape/java
+@dirrm share/netscape/nls
+@dirrm share/netscape
