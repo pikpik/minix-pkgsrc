@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/X11/config/XView.cf
 lib/X11/config/XView.lib
 lib/X11/config/XView.obj
