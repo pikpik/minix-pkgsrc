@@ -1,3 +1,4 @@
+$NetBSD$
 --- remote.c.orig	Fri Jan 10 02:18:28 2003
 +++ remote.c	Fri Jan 10 02:18:32 2003
 @@ -33,6 +33,8 @@
