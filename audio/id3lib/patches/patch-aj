@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- include/id3/io_helpers.h.orig	Tue Jan  8 16:47:21 2002
++++ include/id3/io_helpers.h	Tue Jan  8 16:47:33 2002
+@@ -28,7 +28,7 @@
+ #ifndef _ID3LIB_IO_HELPERS_H_
+ #define _ID3LIB_IO_HELPERS_H_
+ 
+-#include "strings.h"
++#include "id3strings.h"
+ #include "reader.h"
+ #include "writer.h"
+ 

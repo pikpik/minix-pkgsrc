@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- include/id3/helpers.h.orig	Tue Jan  8 16:46:04 2002
++++ include/id3/helpers.h	Tue Jan  8 16:46:16 2002
+@@ -28,7 +28,7 @@
+ #ifndef _ID3LIB_HELPERS_H_
+ #define _ID3LIB_HELPERS_H_
+ 
+-#include "strings.h"
++#include "id3strings.h"
+ #include "globals.h"
+ 
+ class ID3_TagImpl;
