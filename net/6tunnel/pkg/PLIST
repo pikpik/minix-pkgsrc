@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/6tunnel
+man/man1/6tunnel.1
