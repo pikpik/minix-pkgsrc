@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/18 15:14:45 seb Exp $
-info/cronolog.info
+@comment $NetBSD: PLIST,v 1.3 2003/08/07 10:38:54 seb Exp $
 man/man8/cronolog.8
 man/man8/cronosplit.8
 sbin/cronolog
