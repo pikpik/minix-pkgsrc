@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/03/07 16:28:20 rh Exp $
+# $NetBSD: Makefile,v 1.3 1999/05/05 16:54:04 bad Exp $
 #
 
 DISTNAME=       wu-ftpd-2.4.2-vr16
@@ -12,6 +12,8 @@ MASTER_SITES=   ftp://ftp.vr.net/pub/wu-ftpd/ \
 
 MAINTAINER=     rh@netbsd.org
 HOMEPAGE=	http://www.landfield.com/wu-ftpd/
+
+BROKEN=		"superceded by wu-ftpd package"
 
 CONFLICTS+=	wu-ftpd-* beroftpd-*
 
