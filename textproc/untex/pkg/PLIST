@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/untex
+man/man1/untex.1
