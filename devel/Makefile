@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.280 2002/04/17 20:49:45 tsarna Exp $
+# $NetBSD: Makefile,v 1.281 2002/04/20 20:05:15 schmonz Exp $
 #
 
 COMMENT=	Development utilities
@@ -8,6 +8,7 @@ SUBDIR+=	SDL
 SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
 SUBDIR+=	acme
+SUBDIR+=	ald
 SUBDIR+=	anjuta
 SUBDIR+=	apel
 SUBDIR+=	arch
