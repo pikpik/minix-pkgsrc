@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/09/30 12:25:25 tron Exp $
+# $NetBSD: Makefile,v 1.28 2004/01/22 08:36:04 grant Exp $
 
 DISTNAME=	uae-0.8.22
 PKGNAME=	${DISTNAME}
@@ -18,7 +18,7 @@ GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--enable-dga --enable-vidmode --disable-ui
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/compiler.mk"
 
 .if !empty(CC_VERSION:Mgcc-3.*)
 post-configure:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/02/08 03:00:29 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2004/02/08 04:03:15 jlam Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -15,7 +15,7 @@ USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 MAKE_ENV+=		REALCC="${CC}"
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/compiler.mk"
 
 .if !empty(CC_VERSION:Mgcc*)
 BZIP_CFLAGS=           -Wall -Winline -fomit-frame-pointer -fno-strength-reduce

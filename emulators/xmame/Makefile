@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2004/01/22 08:36:04 grant Exp $
+# $NetBSD: Makefile,v 1.104 2004/01/28 15:26:26 xtraeme Exp $
 #
 
 DISTNAME=		xmame-0.78.1
@@ -78,6 +78,7 @@ MAKE_FLAGS+=		JOY_USB=1
 .  endif
 .endif
 
+.include "../../mk/compiler.mk"
 .if !empty(CC_VERSION:Mgcc-2*)
 # Prevent memory explosion for gcc 2.95 and older.
 MAKE_FLAGS+=		LOW_MEM=1

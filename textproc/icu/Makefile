@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/01/20 12:26:49 agc Exp $
+# $NetBSD: Makefile,v 1.28 2004/01/24 15:13:20 grant Exp $
 #
 
 DISTNAME=	icu-2.6.1
@@ -37,7 +37,7 @@ SUPPORT_FILES+=		${PREFIX}/share/examples/icu/convrtrs.txt \
 CONFIGURE_ARGS+=	--disable-threads
 .endif
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/compiler.mk"
 
 .if !empty(CC_VERSION:Mgcc-3*)
 CXXFLAGS:=		${CXXFLAGS:C/-O[0-9]*/-O/g}
