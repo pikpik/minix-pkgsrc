@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/07/31 14:28:00 drochner Exp $
 #
 
 DISTNAME=	id3lib-3.8.0pre1
+PKGNAME=	id3lib-3.8.0.0.1
 CATEGORIES=	audio
 MASTER_SITES=	http://prdownloads.sourceforge.net/id3lib/
 
