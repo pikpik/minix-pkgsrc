@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1998/08/24 12:36:35 agc Exp $
+# $NetBSD: Makefile,v 1.26 1998/08/24 16:57:14 agc Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -46,6 +46,7 @@
     SUBDIR += png
     SUBDIR += povray
 #    SUBDIR += qvplay
+    SUBDIR += rayshade
     SUBDIR += sane
 #    SUBDIR += sced
 #    SUBDIR += spigot
