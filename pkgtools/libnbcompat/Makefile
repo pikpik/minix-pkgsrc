@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.35 2004/05/12 21:51:08 grant Exp $
+# $NetBSD: Makefile,v 1.36 2004/08/06 16:55:09 jlam Exp $
 #
 # NOTE: If you update this package, it is *mandatory* that you update
 # 	pkgsrc/pkgtools/libnbcompat/files/README to reflect the actual
 #	list of tested and supported platforms.
 #
 
-DISTNAME=		libnbcompat-20040805
+DISTNAME=		libnbcompat-20040809
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
