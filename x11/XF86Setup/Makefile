@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 1998/08/20 15:17:32 tsarna Exp $
+# $NetBSD: Makefile,v 1.4 1998/09/08 10:17:21 agc Exp $
 
-DISTNAME=	XF86Setup-3.3.2
+DISTNAME=	XF86Setup-3.3.3.1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 ONLY_FOR_ARCHS=	i386
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.xfree86.org/
 
 BUILD_DEPENDS+= ${TCLLIB}:../../lang/tcl80 \
 		${TKLIB}:../../x11/tk80
+
+CONFLICTS=	XF86Setup-*
 
 TCLLIB=		${LOCALBASE}/lib/libtcl80.a
 TKLIB=		${LOCALBASE}/lib/libtk80.a
