@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/04/13 10:13:20 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.5 2000/06/01 11:23:47 rh Exp $
 #
 
 DISTNAME=	qt-1.44
@@ -12,9 +12,11 @@ HOMEPAGE=	http://www.troll.no/products/qt.html
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
-USE_PKGLIBTOOL=	yes
+USE_LIBTOOL=	yes
 
-MAKE_ENV=	QTDIR=${WRKSRC}
+QTPREFIX=${PREFIX}/qt1
+
+MAKE_ENV=	QTDIR=${WRKSRC} QTPREFIX=${QTPREFIX}
 ALL_TARGET=	src
 
 .include "../../mk/bsd.prefs.mk"
@@ -31,8 +33,6 @@ do-configure:
 post-patch:
 	cd ${WRKSRC} && ${PATCH} <${FILESDIR}/enablegif.patch
 .endif
-
-QTPREFIX=${PREFIX}/qt1
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${QTPREFIX}/bin
