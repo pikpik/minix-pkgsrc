@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2004/12/14 19:53:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.39 2004/12/24 04:32:55 wiz Exp $
 
 .include "Makefile.common"
 
 #PKGNAME=	sylpheed-claws-${SYLPHEED_VERSION}
-PKGREVISION=	2
 
 MAINTAINER=	chris@NetBSD.org
 COMMENT=	X based e-mail and netnews client
@@ -44,6 +43,11 @@ CONF_FILES=	${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sylpheed-claws
 PKG_SUPPORTED_OPTIONS=	jpilot ldap inet6
 
+pre-configure:
+
+	cd ${WRKSRC}; ${AUTOCONF}
+
+.include "../../mk/autoconf.mk"
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mjpilot)
