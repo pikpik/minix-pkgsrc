@@ -1,8 +1,12 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/01/05 01:17:48 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.2 1999/01/20 20:24:11 hubertf Exp $
 bin/xglobe
-lib/X11/xglobe/xglobe-markers
-lib/X11/xglobe/map.bmp
-lib/X11/xglobe/mggd.gif
-lib/X11/xglobe/daymap.gif
-lib/X11/xglobe/nightmap.gif
-@dirrm lib/X11/xglobe
+bin/xglobe-getcloudmap.sh
+lib/xglobe/xglobe-markers
+lib/xglobe/map.bmp
+lib/xglobe/mggd.gif
+lib/xglobe/daymap.gif
+lib/xglobe/nightmap.gif
+share/doc/xglobe/README
+share/doc/xglobe/README.maps
+@dirrm lib/xglobe
+@dirrm share/doc/xglobe
