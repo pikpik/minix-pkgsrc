@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/08/14 08:11:11 rh Exp $
+# $NetBSD: Makefile,v 1.3 2002/03/13 17:36:48 fredb Exp $
 #
 
 DISTNAME=		eel-1.0.1
@@ -24,4 +24,6 @@ USE_GMAKE=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CPPFLAGS+=		-D_POSIX_THREAD_SYSCALL_SOFT=1
 
+.include "../../graphics/png/buildlink.mk"
+.include "../../devel/oaf/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
