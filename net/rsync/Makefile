@@ -24,7 +24,7 @@ SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	"Fixing hardcoded paths."
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	rsync.h rsync.1 rsyncd.conf.5
-SUBST_SED.paths=	-e 's|/etc/rsyncd|${PKG_SYSCONFDIR}|g' \
+SUBST_SED.paths=	-e 's|/etc/rsyncd|${PKG_SYSCONFDIR}/rsyncd|g' \
 			-e 's|/usr/bin/rsync|${PREFIX}/bin/rsync|g'
 
 .include "../../mk/bsd.pkg.mk"
