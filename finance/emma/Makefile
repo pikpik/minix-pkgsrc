@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:46:33 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/06/30 14:33:36 tron Exp $
 #
 
 DISTNAME=       emma-0.8-1
@@ -15,6 +15,7 @@ BUILD_DEPENDS+=	automake-1.4:../../devel/automake
 DEPENDS+=	gnome-libs-*:../../x11/gnome-libs
 DEPENDS+=	python-*:../../lang/python
 
+USE_LIBINTL=	YES
 USE_X11BASE=	YES
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
