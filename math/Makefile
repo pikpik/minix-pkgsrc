@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2002/01/17 13:13:28 martti Exp $
+# $NetBSD: Makefile,v 1.71 2002/01/17 14:03:12 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -12,6 +12,7 @@ SUBDIR+=	blas
 SUBDIR+=	calc
 SUBDIR+=	capc-calc
 SUBDIR+=	cassowary
+SUBDIR+=	dbell-calc
 SUBDIR+=	dcdflib.c
 SUBDIR+=	dcdflib.f
 SUBDIR+=	dfftpack
