@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITELIBDIR}/mutexm.rb
+${RUBY_DOCDIR}/mutexm/ja/mutexm.rd.ja
+@dirrm ${RUBY_DOCDIR}/mutexm/ja
+@dirrm ${RUBY_DOCDIR}/mutexm
