@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- netstuff.cpp.orig	Thu Jun  6 03:52:08 2002
++++ netstuff.cpp	Wed Jun 12 15:51:57 2002
+@@ -247,6 +247,8 @@
+    fd_set fds;
+    struct timeval tm;
+ 
++   *Buff = NULL;
++
+    GTimer * time_since_start=g_timer_new();
+    g_timer_start(time_since_start);
+ 
