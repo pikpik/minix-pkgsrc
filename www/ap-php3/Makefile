@@ -1,10 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/05/03 19:51:26 tv Exp $
 #
 
 PKGNAME=	ap-${DISTNAME}
-
-FILESDIR=	${PKGSRCDIR}/www/php3/files
-PATCHDIR=	${PKGSRCDIR}/www/php3/patches
 
 DEPENDS+=	apache-1.3.6p0:../../www/apache
 
