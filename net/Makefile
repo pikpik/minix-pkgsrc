@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.166 2000/11/10 16:55:47 abs Exp $
+# $NetBSD: Makefile,v 1.167 2000/11/20 20:41:11 tron Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -48,6 +48,7 @@
     SUBDIR += ircII
     SUBDIR += ircu
     SUBDIR += irrd
+    SUBDIR += isic
     SUBDIR += ispman
     SUBDIR += jwhois
     SUBDIR += kdenetwork
