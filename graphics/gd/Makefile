@@ -4,7 +4,7 @@
 # Whom:                 jeff@cetlink.net
 #
 # $NetBSD$
-# $FreeBSD Id: Makefile,v 1.2 1997/02/14 07:55:45 asami Exp $
+# $FreeBSD Id: Makefile,v 1.2 1997/02/14 07:55:45 asami Exp
 #
 
 DISTNAME=       gd1.2
