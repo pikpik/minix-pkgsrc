@@ -1,8 +1,8 @@
 $NetBSD$
 
---- filter/Makefile.orig	Fri Aug 17 11:54:02 2001
-+++ filter/Makefile
-@@ -122,7 +122,7 @@
+--- filter/Makefile.orig	Sun Oct  7 08:16:09 2001
++++ filter/Makefile	Fri Dec 14 17:34:59 2001
+@@ -137,7 +137,7 @@
  
  libcupsimage.la:       $(IMAGEOBJS) ../Makedefs
  	echo Linking $@...
