@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 1999/03/08 10:53:56 agc Exp $
+# $NetBSD: Makefile,v 1.17 1999/04/01 13:38:44 agc Exp $
 # FreeBSD Id: Makefile,v 1.29 1998/01/27 01:11:47 fenner Exp
 #
 
@@ -20,6 +20,13 @@ CONFIGURE_ARGS= --enable-shared \
 		--with-tclinclude=${PREFIX}/include/tcl8.0 \
 		--with-tkconfig=${PREFIX}/lib/tk8.0 \
 		--with-tkinclude=${PREFIX}/include/tk8.0
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+LD_LIBRARY_PATH?=	/usr/lib:${LOCALBASE}/lib:${X11BASE}/lib
+MAKE_ENV+=		LD_LIBRARY_PATH=${LD_LIBRARY_PATH}
+.endif
 
 post-extract:
 	${MV} ${WRKSRC}/example/rftp ${WRKSRC}/example/expect-rftp
