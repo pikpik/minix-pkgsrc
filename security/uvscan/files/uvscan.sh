@@ -1,2 +1,7 @@
 #!/bin/sh
-@@PREFIX@@/libexec/uvscan/uvscan $*
+#
+# $NetBSD$
+#
+# Wrapper script to execute McAfee(R) VirusScan
+
+@PREFIX@/libexec/uvscan/uvscan $*
