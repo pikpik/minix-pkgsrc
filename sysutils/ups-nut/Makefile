@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/11/17 15:50:56 lukem Exp $
+# $NetBSD: Makefile,v 1.12 2001/11/19 04:25:15 lukem Exp $
 #
 
 DISTNAME=		nut-0.45.2
@@ -35,7 +35,8 @@ NUT_GROUP=		nut
 CONFIGURE_ARGS+=	--sysconfdir=${LOCALBASE}/etc/nut \
 			--with-user=${NUT_USER} \
 			--with-group=${NUT_GROUP} \
-			--with-statepath=/var/db/nut
+			--with-statepath=/var/db/nut \
+			--with-modelpath=${LOCALBASE}/sbin/ups-drivers
 
 FILES_SUBST=		NUT_USER=${NUT_USER}
 FILES_SUBST+=		NUT_GROUP=${NUT_GROUP}
