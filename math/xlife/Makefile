@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/12/31 21:32:56 fredb Exp $
 #
 
 DISTNAME=	xlife-5.0
+PKGNAME=	${DISTNAME}nb1
 CATEGORIES=	math games
 MASTER_SITES=	http://www.tuxedo.org/~esr/
 
