@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/02/16 15:10:43 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/20 12:59:07 wiz Exp $
 
 DISTNAME=	battleball.21.src
 PKGNAME=	battleball-2.1
@@ -25,11 +25,10 @@ do-install:
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(BATTLEBALL_USE_MESA)
-USE_MESA=	YES
+.include "../../graphics/Mesa/buildlink2.mk"
 .else
 CPPFLAGS+=	-DNO_OPENGL
 SED_CMDS+=	-e '/^GLINCS/s|^|\#|' -e '/^GLLIBS/s|^|\#|'
 .endif
 
-.include "../../graphics/Mesa/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
