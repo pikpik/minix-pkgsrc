@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2000/10/15 11:49:21 rh Exp $
+# $NetBSD: Makefile,v 1.93 2000/10/15 17:46:51 rh Exp $
 # FreeBSD Id: Makefile,v 1.53 1997/09/28 13:25:40 markm Exp
 #
 
@@ -13,6 +13,7 @@
     SUBDIR += clanlib
     SUBDIR += cqcam
     SUBDIR += denemo
+    SUBDIR += dia
     SUBDIR += dx
     SUBDIR += dxsamples
     SUBDIR += ee
