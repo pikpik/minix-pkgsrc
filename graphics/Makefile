@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2002/02/13 09:11:50 abs Exp $
+# $NetBSD: Makefile,v 1.176 2002/02/15 21:28:00 drochner Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -156,6 +156,7 @@ SUBDIR+=	tiff
 SUBDIR+=	tkpiechart
 SUBDIR+=	urt
 SUBDIR+=	vcg
+SUBDIR+=	vid
 SUBDIR+=	viewfax
 SUBDIR+=	water
 SUBDIR+=	win32-codecs
