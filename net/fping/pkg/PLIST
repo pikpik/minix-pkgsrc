@@ -1,2 +1,3 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2000/05/19 10:20:36 abs Exp $
 sbin/fping
+man/man8/fping.8
