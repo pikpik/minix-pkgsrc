@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/xmms/General/libalarm.la
+lib/xmms/General/libalarm.so
