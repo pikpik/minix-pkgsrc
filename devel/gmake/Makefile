@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2002/11/30 14:08:30 grant Exp $
+# $NetBSD: Makefile,v 1.40 2002/12/02 02:14:33 salo Exp $
 
 DISTNAME=       make-3.80
 PKGNAME=        gmake-3.80
@@ -13,7 +13,6 @@ USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 CONFIGURE_ARGS+=	--program-prefix="g"
-CONFIGURE_ARGS+=	--with-libintl-prefix=${BUILDLINK_PREFIX.gettext}
 TEXINFO_OVERRIDE=	YES
 TEXINFO_REQD=		4.0
 
