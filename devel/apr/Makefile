@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/12/03 15:30:26 epg Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/13 10:09:18 jklos Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 PKGREVISION=	1
@@ -27,22 +27,39 @@ pre-configure:
 .endfor
 .undef f
 
-do-configure:
-	@cd ${WRKSRC}/apr && ${SETENV} ${CONFIGURE_ENV} ./configure \
+APR_CONFIGURE_ARGS= \
 		--prefix=${PREFIX} \
 		--with-devrandom=/dev/urandom \
 		--with-installbuilddir=${PREFIX}/libexec/apr
-	@cd ${WRKSRC}/apr-util && ${SETENV} ${CONFIGURE_ENV} ./configure \
+
+APU_CONFIGURE_ARGS= \
 		--prefix=${PREFIX} \
 		--with-apr=${WRKSRC}/apr \
-		--with-dbm=sdbm \
 		--with-expat=${BUILDLINK_PREFIX.expat}
+
+.include "../../mk/bsd.prefs.mk"
+.if ${APR_USE_DB4} == "YES"
+APU_CONFIGURE_ARGS+=\
+	--with-berkeley-db=${BUILDLINK_PREFIX.db4}/include:${LOCALBASE}
+.else
+APU_CONFIGURE_ARGS+=	--with-dbm=sdbm
+.endif
+
+do-configure:
+	@cd ${WRKSRC}/apr && ${SETENV} ${CONFIGURE_ENV} ./configure \
+		${APR_CONFIGURE_ARGS}
+	@cd ${WRKSRC}/apr-util && ${SETENV} ${CONFIGURE_ENV} ./configure \
+		${APU_CONFIGURE_ARGS}
 
 post-install:
 	${RM} ${PREFIX}/libexec/apr/libtool
 	${INSTALL_SCRIPT} ${LIBTOOL} ${PREFIX}/libexec/apr/libtool
 
 .include "../../www/apache2/Makefile.common"
+
+.if ${APR_USE_DB4} == "YES"
+.include "../../databases/db4/buildlink2.mk"
+.endif
 
 .include "../../textproc/expat/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
