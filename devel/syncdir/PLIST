@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/libsyncdir.a
+lib/libsyncdir.la
+lib/libsyncdir.so
+lib/libsyncdir.so.1
+lib/libsyncdir.so.1.0
