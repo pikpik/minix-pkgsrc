@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2003/04/01 15:19:30 abs Exp $
+# $NetBSD: Makefile,v 1.12 2003/07/17 22:53:46 grant Exp $
 
 DISTNAME=	rconfig-0.17
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.mono.org/abs/tools/rconfig/
 
@@ -11,6 +12,7 @@ COMMENT=	Manage configurations for many machines via rdist trees
 DEPENDS+=	fping-[0-9]*:../../net/fping
 DEPENDS+=	freerdist-[0-9]*:../../net/rdist6
 DEPENDS+=	srsh-[0-9]*:../../net/srsh
+DEPENDS+=	p5-Text-Substitute-[0-9]*:../../textproc/p5-Text-Substitute
 
 USE_PERL5=	# defined
 
