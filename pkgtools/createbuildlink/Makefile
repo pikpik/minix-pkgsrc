@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2004/02/02 10:06:22 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.25 2004/02/06 23:02:16 wiz Exp $
 
-DISTNAME=	createbuildlink-3.0
+DISTNAME=	createbuildlink-3.1
 CATEGORIES=	pkgtools sysutils
 MASTER_SITES=	# Nothing
 DISTFILES=	# Nothing
 
 MAINTAINER=	rh@NetBSD.org
-COMMENT=	Shell script to help creating a buildlink2.mk file
+COMMENT=	shell script to help creating buildlink[23].mk files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
