@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2003/10/11 04:08:26 grant Exp $
+# $NetBSD: Makefile,v 1.3 2003/11/27 00:10:55 taya Exp $
 
+PKGREVISION=	1
 MOZILLA=	MozillaFirebird
 MOZILLA_BIN=	MozillaFirebird-bin
 MOZ_VER=	0.7
