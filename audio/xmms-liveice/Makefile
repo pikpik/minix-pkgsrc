@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/12 01:25:08 snj Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:11 tv Exp $
 #
 
 DISTNAME=	liveice-xmms
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
-CFLAGS+=		-DLAME=\"\\\"${BUILDLINK_PREFIX.lame}/bin/lame\\\"\"
+CFLAGS+=		-DLAME="\"${BUILDLINK_PREFIX.lame}/bin/lame\""
 
 .include "../../audio/lame/buildlink3.mk"
 .include "../../audio/xmms/buildlink3.mk"
