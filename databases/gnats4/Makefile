@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/06 18:33:21 recht Exp $
 #
 
 DISTNAME=	gnats-4.0
@@ -14,6 +14,7 @@ USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		m4 make
 USE_BISON=		yes
 USE_MAKEINFO=		yes
+TEXINFO_REQD=		4.6
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
