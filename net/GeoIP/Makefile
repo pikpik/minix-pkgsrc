@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:17:48 tv Exp $
+# $NetBSD: Makefile,v 1.9 2004/11/25 18:37:52 snj Exp $
 #
 
 DISTNAME=	GeoIP-1.3.8
@@ -21,4 +21,5 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 EGDIR=		${PREFIX}/share/examples/GeoIP
 CONF_FILES=	${EGDIR}/GeoIP.conf.default ${PKG_SYSCONFDIR}/GeoIP.conf
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
