@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- util/skeleton/make_def.bd.orig	Thu Jul 29 17:35:18 1993
++++ util/skeleton/make_def.bd	Fri Oct  1 01:47:31 1999
+@@ -9,5 +9,5 @@
+ PS		= /
+ REVISION	=
+-VERSION		= 3f4
++VERSION		= 3f5.1
+ VERSION_REVISION= $(VERSION)$(REVISION)
+ NOTICE		=
