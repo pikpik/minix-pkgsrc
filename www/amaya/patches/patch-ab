@@ -1,13 +1,11 @@
 $NetBSD$
 
---- ../Makefile.in.orig	Mon Jun 25 07:14:52 2001
+--- ../Makefile.in.orig	Fri Jul  5 17:49:48 2002
 +++ ../Makefile.in
-@@ -180,8 +180,9 @@
- 	  cd $(LIBWWW) ; unset LANG; \
- 	  if [ ! -f Makefile -o ! -f wwwconf.h ] ; then \
+@@ -186,7 +186,7 @@ libwww_config :
  	  	$$libwwwdir/configure \
-+			--prefix=${PREFIX} \
  			--disable-shared \
+ 			@WITHDAV@ \
 -			--with-zlib="$$localdir/libz.a"; \
 +			--with-zlib; \
  		$(ECHO) "libwww is configured" ; \

@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.4.2.1 2002/06/30 06:24:31 jlam Exp $
+$NetBSD$
 
---- ../annotlib/Makefile.in.orig	Thu Apr  5 06:49:33 2001
+--- ../annotlib/Makefile.in.orig	Mon Apr 22 11:05:03 2002
 +++ ../annotlib/Makefile.in
-@@ -14,10 +14,8 @@
+@@ -14,10 +14,8 @@ include ../Options
  
  INCLUDES= -DHAVE_CONFIG_H -DANNOTATIONS \
  	  -I.. -I../amaya  -I@srcdir@/f -I@top_srcdir@/amaya \
@@ -12,6 +12,6 @@ $NetBSD: patch-ad,v 1.4.2.1 2002/06/30 06:24:31 jlam Exp $
 -	  -I@top_srcdir@/../libwww/modules/expat/xmltok \
 +	  -I@top_srcdir@/amaya/f \
 +	  -I${LOCALBASE}/include/w3c-libwww \
+ 	   $(RAPTOR_INCLUDES) \
  	   @THOTINCLUDES@ $(X_FLAGS)
- 
  
