@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/11/11 17:49:24 tron Exp $
+# $NetBSD: Makefile,v 1.14 2001/02/16 14:38:21 wiz Exp $
 
 DISTNAME=	cscope-15.0bl2
 PKGNAME=	cscope-15.0.2
@@ -9,21 +9,20 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://cscope.sourceforge.net/
 COMMENT=	interactive C program browser
 
-GNU_CONFIGURE=	YES
-USE_CURSES=	YES
+GNU_CONFIGURE=		YES
+USE_BUILDLINK_ONLY=	YES
 
-.include "../../mk/bsd.prefs.mk"
+CONFIGURE_ARGS+=	--with-ncurses=${BUILDLINK_DIR}
 
-.if ${NEED_NCURSES} == "YES"
-CONFIGURE_ARGS+=--with-ncurses=${LOCALBASE}
+# Change references to <curses.h> to <ncurses.h> in the source files.
+NCURSES_SED=		-e "s|<curses.h>|<ncurses.h>|g"
 
 post-extract:
-.for FILE in command.c display.c edit.c exec.c find.c help.c input.c main.c
-	@cd ${WRKSRC}/src;						\
-	${MV} ${FILE} ${FILE}.orig;					\
-	${SED} "s/^#include <curses.h>/#include <ncurses.h>/" 		\
-		< ${FILE}.orig > ${FILE}
-.endfor
-.endif
+	cd ${WRKSRC}/src; for file in *.[ch]; do			\
+		${MV} -f $${file} $${file}.presubst;			\
+		${SED} ${NCURSES_SED} $${file}.presubst > $${file};	\
+		${RM} -f $${file}.presubst;				\
+	done
 
+.include "../../devel/ncurses/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
