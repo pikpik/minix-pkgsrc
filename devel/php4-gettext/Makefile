@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 06:31:12 jlam Exp $
 
-.include "../php4/Makefile.module"
+.include "../../www/php4/Makefile.module"
 
 MODNAME=		gettext
 CATEGORIES+=		devel

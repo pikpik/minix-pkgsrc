@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2001/09/27 23:18:57 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/16 05:57:34 jlam Exp $
 
-.include "../php4/Makefile.module"
+.include "../../www/php4/Makefile.module"
 
 MODNAME=		pgsql
 CATEGORIES+=		databases
