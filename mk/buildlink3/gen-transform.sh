@@ -1,6 +1,6 @@
 #!@BUILDLINK_SHELL@
 #
-# $NetBSD: gen-transform.sh,v 1.20 2004/02/01 00:41:25 jlam Exp $
+# $NetBSD: gen-transform.sh,v 1.21 2004/02/12 08:28:58 jlam Exp $
 
 transform="@_BLNK_TRANSFORM_SEDFILE@"
 untransform="@_BLNK_UNTRANSFORM_SEDFILE@"
@@ -130,7 +130,7 @@ EOF
 		-l$2)
 			case "\${_libs}" in
 			-l$3" "*|*" "-l$3" "*)
-				_libs="\${_libs%%-l$3 *}-l$2 -l$3 \${_libs#*-l3 }"
+				_libs="\${_libs%%-l$3 *}-l$2 -l$3 \${_libs#*-l$3 }"
 				;;
 			-l$3|*" "-l$3)
 				_libs="\${_libs%%-l$3}-l$2 -l$3"
@@ -308,6 +308,7 @@ EOF
 
 # Write out header for reorderlibs 
 @CAT@ > $reorderlibs << EOF
+\$echo "==> Reordering libraries: \$libs" >> \$wrapperlog
 prevlibs=
 while \$test "\$libs" != "\$prevlibs" -a -n "\$libs"; do
 	_libs=
