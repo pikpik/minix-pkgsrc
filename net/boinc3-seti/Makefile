@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/19 20:14:21 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:17:49 tv Exp $
 #
 
 DISTNAME=		seti_boinc-client-cvs-2004-07-15
@@ -40,5 +40,5 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/app_info.xml ${SBDIR}
 
 .include "../../net/boinc3-libs/buildlink3.mk"
-.include "../../databases/mysql-client/buildlink3.mk"
+.include "../../mk/mysql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/08/27 06:29:11 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:18:24 tv Exp $
 #
 
 DISTNAME=		mod_auth_mysql.c
@@ -44,6 +44,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/mysql-group-auth.txt ${DOC_DIR}
 
 .include "../../www/apache2/buildlink3.mk"
-.include "../../databases/mysql-client/buildlink3.mk"
+.include "../../mk/mysql.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

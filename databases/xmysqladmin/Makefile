@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/04/25 17:48:44 snj Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:13:24 tv Exp $
 #
 
 DISTNAME=	xmysqladmin-1.0
@@ -22,7 +22,7 @@ MAKE_ENV+=	X11PREFIX=${X11PREFIX}
 
 ALL_TARGET=	xmysqladmin
 
-.include "../../databases/mysql-client/buildlink3.mk"
+.include "../../mk/mysql.buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
