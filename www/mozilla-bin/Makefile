@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/03/31 02:42:24 grant Exp $
+# $NetBSD: Makefile,v 1.10 2003/04/03 12:45:47 grant Exp $
 #
 
 DISTNAME=		mozilla-i686-pc-linux-gnu-1.3
-PKGNAME=		mozilla-linux-1.3
+PKGNAME=		mozilla-bin-1.3
 WRKSRC=			${WRKDIR}/mozilla
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_MOZILLA:=mozilla1.3/}
@@ -12,6 +12,8 @@ HOMEPAGE=		http://www.mozilla.org/
 COMMENT=		Open-source version of the Netscape browser (binary pkg)
 
 ONLY_FOR_PLATFORM=	Linux-*-i[3-6]86 NetBSD-*-i386
+
+CONFLICTS+=		mozilla-linux-[0-9]*
 
 NO_CONFIGURE=		# defined
 
