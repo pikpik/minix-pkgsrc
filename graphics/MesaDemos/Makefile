@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/09 19:04:52 jschauma Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/14 03:46:51 jschauma Exp $
 
 PKGNAME=		MesaDemos-${MESA_VERSION}
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
@@ -7,7 +7,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME:S/Lib//}
 MAINTAINER=		jschauma@netbsd.org
 COMMENT=		OpenGL examples and Demos
 
-MESA_REQD=		5.0
+MESA_REQD=		5.0.1
 
 .include "../Mesa/Makefile.common"
 

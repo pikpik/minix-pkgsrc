@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2003/03/24 18:54:21 jschauma Exp $
+# $NetBSD: Makefile,v 1.18 2003/04/17 22:15:44 jmmv Exp $
 
 PKGNAME=		MesaLib-${MESA_VERSION}
-PKGREVISION=		2
 WRKSRC=			${WRKDIR}/${DISTNAME:S/Lib//}
 MAINTAINER=		rh@netbsd.org
 COMMENT=		Graphics library similar to SGI's OpenGL
