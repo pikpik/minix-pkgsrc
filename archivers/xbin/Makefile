@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/06/05 12:36:07 rh Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -11,9 +11,9 @@ DISTFILES=	${DISTNAME}.c ${PRGNAME}.man
 MAINTAINER=	rh@netbsd.org
 
 PRGNAME=	xbin
+EXTRACT_ONLY=	# blank
 
-do-extract:
-	${MKDIR} ${WRKSRC}
+post-extract:
 .for file in ${DISTFILES}
 	${CP} ${DISTDIR}/${file} ${WRKSRC}
 .endfor
