@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.155 2003/04/25 04:40:46 rh Exp $
+# $NetBSD: Makefile,v 1.156 2003/04/25 04:44:47 rh Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -13,6 +13,9 @@ SUBDIR+=	bidwatcher
 SUBDIR+=	blackbook
 SUBDIR+=	bottlerocket
 SUBDIR+=	buffer
+SUBDIR+=	celestia
+SUBDIR+=	celestia-gnome
+SUBDIR+=	celestia-kde
 SUBDIR+=	chipmunk
 SUBDIR+=	chord
 SUBDIR+=	cksfv
