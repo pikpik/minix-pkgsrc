@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2001/11/22 09:33:09 martti Exp $
+# $NetBSD: Makefile,v 1.4 2001/11/26 06:49:55 jlam Exp $
 
-DISTNAME=		Test-Harness-1.26
+DISTNAME=		Test-Harness-2.01
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5tha
 CATEGORIES=		devel perl5
@@ -11,9 +11,6 @@ COMMENT=		perl5 module for testing
 
 USE_BUILDLINK_ONLY=	YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Test/Harness/.packlist
-
-post-patch:
-	@perl -pi.orig -e 'm.INSTALLDIRS.&&s,.,,sg' ${WRKSRC}/Makefile.PL
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
