@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2004/04/25 08:45:16 snj Exp $
+# $NetBSD: Makefile,v 1.32 2004/07/06 09:54:42 adam Exp $
 
-DISTNAME=	gtk-gnutella-0.93.4
+DISTNAME=	gtk-gnutella-0.94
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk-gnutella/}
 EXTRACT_SUFX=	.tar.bz2
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	-d -e -r -s -D prefix="${PREFIX}" -D cc="${CC}" \
 			-D privlib="${PREFIX}/share/gtk-gnutella" \
 			-D sysman="${PREFIX}/man" -D cflags="${CFLAGS}" \
 			-D locale="${PREFIX}/${PKGLOCALEDIR}/locale" \
-			-D optimize="${COPTS}" -D gtkversion=2
+			-D optimize="${COPTS}" -D gtkversion=2 -D yacc="yacc"
 
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
