@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/libFnlib.so.4.0
 lib/libFnlib.la
 lib/libFnlib.a
