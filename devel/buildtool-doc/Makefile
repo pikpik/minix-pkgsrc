@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/04 17:14:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/25 10:05:15 jmmv Exp $
 #
 
 DISTNAME=	buildtool-doc-0.15
@@ -20,6 +20,9 @@ CONFIGURE_ENV+=	DOCBOOK_XSL="${PREFIX}/share/xsl/docbook"
 BUILDLINK_DEPMETHOD.libxml2?=	build
 BUILDLINK_DEPMETHOD.libxslt?=	build
 BUILDLINK_DEPMETHOD.xmlcatmgr?=	build
+
+pre-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/${DISTNAME}
 
 .include "../../devel/buildtool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
