@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2003/09/15 15:21:46 adam Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/03 18:49:41 reed Exp $
 #
 
-.include "../../audio/SDL_mixer/buildlink2.mk"
-.include "../../graphics/SDL_image/buildlink2.mk"
+.include "../../audio/SDL_mixer/buildlink3.mk"
+.include "../../graphics/SDL_image/buildlink3.mk"
 
 .include "../rocksndiamonds/Makefile.common"
 
