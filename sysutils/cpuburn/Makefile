@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:53:30 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:26:15 agc Exp $
 #
 
 DISTNAME=	cpuburn_1_4
 PKGNAME=	cpuburn-1.4
 PKGREVISION=	2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://users.ev1.net/~redelm/
+MASTER_SITES=	http://pages.sbcglobal.net/redelm/
 EXTRACT_SUFX=	_tar.gz
 
 MAINTAINER=	abs@NetBSD.org
-HOMEPAGE=	http://users.ev1.net/~redelm/
+HOMEPAGE=	http://pages.sbcglobal.net/redelm/
 COMMENT=	CPU load testing utilities for Pentium pro and later
 
 ONLY_FOR_PLATFORM= *-*-i[3456]86
