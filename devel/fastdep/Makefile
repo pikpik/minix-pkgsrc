@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/12/22 10:31:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/22 08:24:29 grant Exp $
 #
 
 DISTNAME=	fastdep-0.16
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.irule.be/bvh/c++/fastdep/
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.irule.be/bvh/c++/fastdep/
-COMMENT=	Dependancy generator for C/C++ files
+COMMENT=	Dependency generator for C/C++ files
 
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
