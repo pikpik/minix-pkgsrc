@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2000/07/31 02:12:14 hubertf Exp $
+# $NetBSD: Makefile,v 1.46 2000/08/11 12:06:48 ad Exp $
 # FreeBSD Id: Makefile,v 1.45 1997/08/13 18:35:22 andreas Exp 
 #
 
@@ -32,6 +32,7 @@
     SUBDIR += pine
     SUBDIR += popa3d
     SUBDIR += postfix
+    SUBDIR += postfix-current
     SUBDIR += procmail
     SUBDIR += qpopper
     SUBDIR += rblcheck
