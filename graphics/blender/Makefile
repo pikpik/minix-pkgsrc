@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2004/01/24 15:46:43 grant Exp $
+# $NetBSD: Makefile,v 1.30 2004/02/14 17:21:40 jlam Exp $
 #
 
-DISTNAME=		blender-2.31a
-PKGNAME=		blender-2.31.0.1
+DISTNAME=		blender-2.32
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.cs.umn.edu/pub/blender.org/source/ \
 			http://download.blender.org/source/
