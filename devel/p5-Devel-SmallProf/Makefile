@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 21:32:18 grant Exp $
+# $NetBSD: Makefile,v 1.11 2003/07/21 16:43:37 martti Exp $
 #
 
 DISTNAME=		Devel-SmallProf-0.9
@@ -10,7 +10,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Devel/}
 MAINTAINER=		bad@NetBSD.org
 COMMENT=		Perl5 module for line-by-line profiling perl programs
 
-DEPENDS=		p5-Time-HiRes>=01.20:../../time/p5-Time-HiRes
+DEPENDS=		p5-Time-HiRes>=1.20:../../time/p5-Time-HiRes
 
 USE_BUILDLINK2=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Devel/SmallProf/.packlist
