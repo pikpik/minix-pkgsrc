@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1999/12/12 08:06:04 rh Exp $
+# $NetBSD: Makefile,v 1.3 2000/02/22 14:26:50 scw Exp $
 
 DISTNAME=		dap-2.1
 CATEGORIES=		audio
@@ -14,7 +14,12 @@ DEPENDS+=		xforms-0.88:../../x11/xforms
 MAKEFILE=		Makefile.netbsd
 ONLY_FOR_PLATFORM=	*-*-alpha *-*-arm32 *-*-i386 *-*-m68k *-*-sparc *-*-ns32k
 
+USE_X11=		YES
+
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/main/DAP ${PREFIX}/bin/dap
+	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dap
+	@${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/TODO \
+		${PREFIX}/share/doc/dap
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,2 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/04 12:56:29 scw Exp $
 bin/dap
+share/doc/dap/README
+share/doc/dap/TODO
+@dirrm share/doc/dap
