@@ -1,0 +1,21 @@
+#!/bin/sh
+# $NetBSD:$
+
+echo "post-configure"
+
+cd ${WRKSRC}
+make config
+cd ${WRKSRC}/src
+patch <<-MOUSE-
+--- config.h.orig	Sun Jun  6 18:23:52 1999
++++ config.h	Sun Jun  6 18:24:18 1999
+@@ -86,7 +86,7 @@
+ /* #undef HAVE_SOCKET */
+ 
+ /* Define if you have the strerror function.  */
+-/* #undef HAVE_STRERROR */
++#define HAVE_STRERROR
+ 
+ /* Define if you have the uname function.  */
+ /* #undef HAVE_UNAME */
+-MOUSE-

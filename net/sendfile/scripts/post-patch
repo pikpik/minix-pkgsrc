@@ -1,0 +1,7 @@
+#!/bin/sh
+# $NetBSD:$
+
+cd ${WRKSRC}
+mv makeconfig makeconfig.configured
+sed -e 's/@PREFIX@/${PREFIX}/' <  makeconfig.configured > makeconfig
+chmod +x makeconfig
