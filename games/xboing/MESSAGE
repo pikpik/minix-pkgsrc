@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+	With XFree86-4.x.x, you probably need to start xboing with
+	the -usedefcmap option to get it to work.
+
+===========================================================================
