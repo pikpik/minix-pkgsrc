@@ -1,17 +1,15 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/18 15:14:44 seb Exp $
+@comment $NetBSD: PLIST,v 1.3 2003/01/10 01:15:51 mycroft Exp $
 bin/sawfish
 bin/sawfish-capplet
 bin/sawfish-client
 bin/sawfish-themer
 bin/sawfish-ui
-@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/sawfish.info
 info/sawfish.info
 info/sawfish.info-1
 info/sawfish.info-2
 info/sawfish.info-3
 info/sawfish.info-4
 info/sawfish.info-5
-@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/sawfish.info
 libexec/sawfish/${SF_VERS}/${MACHINE_GNU_PLATFORM}/DOC
 libexec/sawfish/${SF_VERS}/${MACHINE_GNU_PLATFORM}/gradient.la
 libexec/sawfish/${SF_VERS}/${MACHINE_GNU_PLATFORM}/gradient.a
