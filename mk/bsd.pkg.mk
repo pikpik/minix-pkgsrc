@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1256 2003/09/03 14:08:09 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1257 2003/09/03 15:05:43 tron Exp $
 #
 # This file is in the public domain.
 #
@@ -440,7 +440,9 @@ MAKE_ENV+=		CPP="${CPP}"
 #	              Compiler Collection
 #
 .if !defined(USE_MIPSPRO) && !defined(USE_SUNPRO)
-.  include "../../mk/gcc.buildlink2.mk"
+.  if empty(USE_BUILDLINK2:M[nN][oO])
+.    include "../../mk/gcc.buildlink2.mk"
+.  endif
 .endif
 
 # export the flags needed to compile and link pthreaded code
