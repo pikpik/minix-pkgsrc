@@ -1,4 +1,4 @@
-#	$NetBSD$
+# $NetBSD: Makefile,v 1.1 1998/08/12 22:44:32 tv Exp $
 #
 
 DISTNAME=	sim_2.3c
