@@ -1,13 +1,13 @@
 $NetBSD$
 
---- include/SDL_syswm.h.orig	Wed Feb 28 13:35:28 2001
+--- include/SDL_syswm.h.orig	Sun Jul  8 11:00:06 2001
 +++ include/SDL_syswm.h
 @@ -49,7 +49,7 @@
  #else
  
  /* This is the structure for custom window manager events */
--#if (defined(unix) || defined(__unix__) || defined(_AIX)) && \
-+#if (defined(unix) || defined(__unix__) || defined(__NetBSD__) || defined(_AIX)) && \
+-#if (defined(unix) || defined(__unix__) || defined(_AIX) || defined(__OpenBSD__)) && \
++#if (defined(unix) || defined(__unix__) || defined(_AIX) || defined(__NetBSD__) || defined(__OpenBSD__)) && \
      (!defined(DISABLE_X11) && !defined(__CYGWIN32__))
   /* AIX is unix, of course, but the native compiler CSet doesn't define unix */
  #include <X11/Xlib.h>
