@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libaudio_nas.la
+lib/libaudio_nas.so
+lib/libaudio_nas.so.0
+lib/libaudio_nas.so.0.5
