@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2000/05/27 09:53:36 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2000/06/12 12:01:59 wiz Exp $
 
 DISTNAME=	glunix-release-1-0a
 PKGNAME=	glunix-1.0a
@@ -17,7 +17,6 @@ USE_PERL5=	yes
 IS_INTERACTIVE= yes
 NO_MTREE=	yes
 NO_WRKSUBDIR=	yes
-MIRROR_DISTFILE=NO
 
 MESSAGE_FILE=	${WRKDIR}/MESSAGE
 

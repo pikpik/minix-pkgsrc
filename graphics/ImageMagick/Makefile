@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.59 2000/08/10 08:57:23 tron Exp $
 
 DISTNAME=		ImageMagick-5.2.2
 CATEGORIES=		graphics
@@ -13,7 +13,7 @@ DEPENDS+=		mpeg2codec-1.2:../../graphics/mpeg2codec
 DEPENDS+=		png>=1.0.6:../../graphics/png
 DEPENDS+=		tiff-*:../../graphics/tiff
 
-MIRROR_DISTFILE=	no
+NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
 GNU_CONFIGURE=		YES
 USE_X11=		YES

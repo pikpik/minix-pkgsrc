@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/08/26 16:50:48 tsarna Exp $
+# $NetBSD: Makefile,v 1.8 1999/12/25 18:03:23 wiz Exp $
 #
 
 DISTNAME=	amp-0.7.6
@@ -9,7 +9,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mycroft@netbsd.org
 
-MIRROR_DISTFILE=	no
+NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
+
 GNU_CONFIGURE=	yes
 
 do-install:

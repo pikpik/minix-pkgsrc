@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 1998/07/04 09:18:54 mycroft Exp $
+# $NetBSD: Makefile,v 1.15 1998/08/20 15:16:39 tsarna Exp $
 #
 
 DISTNAME=		snd
@@ -8,11 +8,12 @@ CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		hubertf@netbsd.org
-HOMEPAGE=		http://ccrma-www/CCRMA/Software/snd/snd.html
+HOMEPAGE=		http://ccrma-www.stanford.edu/CCRMA/Software/snd/snd.html
 
 DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
-MIRROR_DISTFILE=	no
+NO_SRC_ON_FTP=		Already on MASTER_SITE_LOCAL
+
 USE_MOTIF=		yes
 MAKEFILE=		makefile.netbsd
 ALL_TARGET=		snd

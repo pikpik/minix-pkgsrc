@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/28 20:18:55 rh Exp $
 
 DISTNAME=	fastDNAml_1.2.1
 PKGNAME=	fastDNAml-1.2.1
@@ -9,7 +9,9 @@ MASTER_SITES=	http://geta.life.uiuc.edu/~gary/programs/fastDNAml/
 MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://geta.life.uiuc.edu/~gary/programs/fastDNAml.html
 
-NO_CDROM=	"No commercial distribution without a royalty agreement with the author"
+RESTRICTED=	"No commercial distribution without a royalty agreement with the author"
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 do-build :
 	@ cd ${WRKSRC}/source && ${MAKE} LDFLAGS=-lm fastDNAml

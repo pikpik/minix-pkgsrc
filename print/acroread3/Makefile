@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/05/02 14:43:58 pooka Exp $
+# $NetBSD: Makefile,v 1.7 2000/06/19 15:31:52 dmcmahill Exp $
 
 PKGNAME=	acroread3-3.01
 CATEGORIES=	print
@@ -9,7 +9,10 @@ HOMEPAGE=	http://www.adobe.com/prodindex/acrobat/readstep.html
 
 IS_INTERACTIVE=	YES
 RESTRICTED=	"Original installer required to redistribute."
-NO_CDROM=	${RESTRICTED}
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+NO_SRC_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
 
 NO_BUILD=	YES
 

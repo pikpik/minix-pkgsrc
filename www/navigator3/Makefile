@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/21 23:09:01 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1999/10/05 01:02:52 hubertf Exp $
 
 DISTNAME=		netscape-v304-export.x86-unknown-bsd
 PKGNAME=		navigator3-3.04
@@ -10,8 +10,12 @@ HOMEPAGE=		http://www.netscape.com
 
 ONLY_FOR_PLATFORM=	*-*-i386
 
-MIRROR_DISTFILE=	no
-NO_CDROM=		Licensed product
+RESTRICTED=		Licensed product
+NO_SRC_ON_FTP=		${RESTRICTED}
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+
 NO_WRKSUBDIR=		yes
 USE_X11BASE=		yes
 SCRIPTS_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}

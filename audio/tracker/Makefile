@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1999/11/23 16:26:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 1999/12/25 23:43:56 wiz Exp $
 # FreeBSD Id: Makefile,v 1.29 1996/12/20 23:46:22 ache Exp 
 #
 
@@ -10,8 +10,10 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		packages@netbsd.org
 
 RESTRICTED=		"Non-redistributable beta"
-NO_CDROM=		${RESTRICTED}
-MIRROR_DISTFILE=	no
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+NO_SRC_ON_FTP=		${RESTRICTED}
+NO_SRC_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=			${WRKDIR}/tracker
 MAKE_FLAGS=		MACHINE=netbsd CC=${CC} INSTALL="${INSTALL}" \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/02/15 09:26:25 agc Exp $
+# $NetBSD: Makefile,v 1.14 2000/03/16 14:17:13 wiz Exp $
 
 DISTNAME=		XF86Setup-3.3.6
 CATEGORIES=		x11
@@ -16,7 +16,8 @@ ONLY_FOR_PLATFORM=	*-*-i386
 TCLLIB=			${LOCALBASE}/lib/libtcl80.a
 TKLIB=			${LOCALBASE}/lib/libtk80.a
 
-MIRROR_DISTFILE=	no
+NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
+
 WRKSRC=			${WRKDIR}/hw/xfree86/XF86Setup
 USE_IMAKE=		yes
 

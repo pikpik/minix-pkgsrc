@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2000/01/15 18:46:24 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2000/07/28 21:47:49 jlam Exp $
 #
 
 DISTNAME=       timidity-0.2i
@@ -15,7 +15,9 @@ DEPENDS+=	tk-8.0.5:../../x11/tk80
 
 USE_CURSES=	# defined
 
-NO_CDROM=       "Uses copyrighted patches"
+RESTRICTED=		"Uses copyrighted patches"
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 EXTRACT_ONLY=   ${DISTNAME}.tar.gz
 INSTALL_TARGET= install.all

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/01/09 16:02:55 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2000/06/24 16:24:36 kim Exp $
 
 DISTNAME=	mush-7.2.5
 PKGNAME=	mush-7.2.6.b4.pl1
@@ -20,8 +20,6 @@ MAINTAINER=	christos@netbsd.org
 
 DIST_SUBDIR=	mush
 
-RESTRICTED=	"Z-Code license"
-MIRROR_DISTFILE= no
 NO_WRKSUBDIR=	yes
 
 pre-configure:

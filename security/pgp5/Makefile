@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/04/16 14:53:22 mjl Exp $
+# $NetBSD: Makefile,v 1.4 1999/08/07 06:01:07 rh Exp $
 #
 
 DISTNAME=	pgp50i-unix-src
@@ -20,7 +20,7 @@ HOMEPAGE=       http://www.pgpi.com/
 BUILD_DEPENDS=	${LOCALBASE}/bin/perl:../../lang/perl5
 
 RESTRICTED=	"Cryptographic software"
-MIRROR_DISTFILE=no
+NO_SRC_ON_FTP=	${RESTRICTED}
 
 GNU_CONFIGURE=	YES
 

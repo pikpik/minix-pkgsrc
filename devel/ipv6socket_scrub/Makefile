@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2000/03/16 12:25:49 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2000/07/20 13:30:59 rh Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
@@ -20,7 +20,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
-MIRROR_DISTFILES=	no
 
 do-fetch:
 	@if ${TEST} \! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}; then \

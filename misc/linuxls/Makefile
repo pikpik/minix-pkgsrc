@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/08/14 20:07:34 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/08/20 15:17:14 tsarna Exp $
 # FreeBSD Id: Makefile,v 1.6 1997/04/30 04:43:34 asami Exp
 #
 
@@ -14,7 +14,8 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	bmc@WillsCreek.COM
 HOMEPAGE=	http://www.gnu.org/software/fileutils/fileutils.html
 
-MIRROR_DISTFILE= no
+NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
+
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.pkg.mk"

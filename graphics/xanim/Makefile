@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 1999/07/07 23:11:18 tron Exp $
+# $NetBSD: Makefile,v 1.16 2000/01/02 03:38:32 wiz Exp $
 #
 
 DISTNAME=	xanim2801
@@ -22,8 +22,11 @@ HOMEPAGE=	http://xanim.va.pubnix.com/
 
 EXTRACT_ONLY=   ${DISTNAME}.tar.gz
 
-# we can't mirror/distribute iv32 or cyuv object modules
-MIRROR_DISTFILE=	no
+RESTRICTED=		Can't mirror/distribute iv32 or cyuv object modules
+NO_SRC_ON_FTP=		${RESTRICTED}
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_IMAKE=	yes
 

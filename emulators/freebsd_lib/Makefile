@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/05/24 20:39:40 tv Exp $
+# $NetBSD: Makefile,v 1.7 1999/12/29 01:41:00 wiz Exp $
 #
 
 DISTNAME=		freebsd_lib-2.2.7
@@ -8,16 +8,6 @@ MASTER_SITES=		http://www.flame.org/NetBSD/
 MAINTAINER=		packages@netbsd.org
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
-
-#
-# The distfile is distributed under the GPL, so no re-distribution of
-# binaries without source.
-#
-# Source can be found on
-#	http://www.flame.org/NetBSD/freebsd_lib.2.2.7-src.tar.gz.
-# It seems nasty to have to provide source when FreeBSD already does.
-#
-MIRROR_DISTFILE=	no
 
 NO_BUILD=		yes
 NO_WRKSUBDIR=		yes

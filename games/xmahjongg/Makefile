@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1999/09/28 20:40:03 soren Exp $
+# $NetBSD: Makefile,v 1.7 2000/07/11 11:01:06 agc Exp $
 # FreeBSD Id: Makefile,v 1.3 1996/12/08 01:11:27 max Exp
 #
 
@@ -14,7 +14,9 @@ MAINTAINER=	packages@netbsd.org
 WRKSRC=		${WRKDIR}/xmahjongg
 USE_IMAKE=	yes
 
-NO_CDROM=	"Restrictive copyright"
+RESTRICTED=	"Restrictive copyright"
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 post-extract:
 	@${CP} ${WRKSRC}/xmahjongg.6 ${WRKSRC}/xmahjongg.man
