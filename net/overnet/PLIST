@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/overnet
+share/doc/overnet/README
+share/examples/overnet/contact.dat
+@dirrm share/examples/overnet
+@dirrm share/doc/overnet
