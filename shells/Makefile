@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/01/10 07:04:02 grant Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/10 07:06:44 grant Exp $
 #
 
 COMMENT=	Shells
@@ -11,6 +11,7 @@ SUBDIR+=	bash2-static
 SUBDIR+=	es
 SUBDIR+=	esh
 SUBDIR+=	mudsh
+SUBDIR+=	nologinmsg
 SUBDIR+=	osh
 SUBDIR+=	pdksh
 SUBDIR+=	perlsh
