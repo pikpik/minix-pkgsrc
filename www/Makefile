@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.166 2001/11/29 08:36:17 martti Exp $
+# $NetBSD: Makefile,v 1.167 2001/12/06 16:16:14 dillo Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -70,6 +70,7 @@ SUBDIR+=	libwww
 SUBDIR+=	links
 SUBDIR+=	lynx
 SUBDIR+=	lynx-current
+SUBDIR+=	make_album
 SUBDIR+=	mozilla
 SUBDIR+=	navigator
 SUBDIR+=	navigator3
