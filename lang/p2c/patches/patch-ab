@@ -1,8 +1,9 @@
 $NetBSD$
---- p2clib.c.orig	Fri Jan 29 15:12:01 1999
-+++ p2clib.c	Fri Jan 29 15:11:31 1999
-@@ -8,6 +8,7 @@
-  */
+
+--- p2clib.c.orig	Wed Apr 24 22:30:49 1991
++++ p2clib.c	Wed Dec  8 10:47:00 1999
+@@ -9,6 +9,7 @@
+ 
  
  
 +#include <limits.h>
