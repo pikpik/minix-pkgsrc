@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/04/12 15:01:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/09 10:54:44 agc Exp $
 #
 
 DISTNAME=	g3d-0.0.2
@@ -21,6 +21,7 @@ USE_BUILDLINK2=	yes
 post-configure:
 	@${LN} -s ${WRKSRC}/b3d/src ${WRKSRC}/g3d/b3d
 
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../x11/gtkglarea/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 
