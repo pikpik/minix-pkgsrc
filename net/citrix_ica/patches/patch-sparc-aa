@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-sparc-aa,v 1.2 2002/08/05 00:34:57 dmcmahill Exp $
 
 --- solaris/hinst.orig	Wed Mar  6 08:29:33 2002
 +++ solaris/hinst
@@ -25,14 +25,14 @@ $NetBSD$
  		read dummy
  
 -		/bin/false
-+		/usr/bin/false
++		! :
  		return 
  	fi
  
  	$ECHO_CMD $calcspace4
  
 -	/bin/true
-+	/usr/bin/true
++	:
  	return
  }
  
@@ -41,7 +41,7 @@ $NetBSD$
  		:
  	else
 -		/bin/false
-+		/usr/bin/false
++		! :
  		return 
  	fi
  

@@ -2,23 +2,14 @@ $NetBSD$
 
 --- setupwfc.orig	Thu Apr 18 02:32:45 2002
 +++ setupwfc
-@@ -378,7 +378,7 @@
- 		PLATFORM=hp
- 		DISP_PLATFORM="Hewlett-Packard (HP-UX)"
- 		;;
--	Linux)
-+	Linux|FreeBSD|NetBSD)
-                # We assume that an Intel-based linux system will have an x86
-                # processor. We also assume that this is reported by uname -m
-                # "ix86" where x is some number.
-@@ -395,10 +395,6 @@
-                    exit 1
+@@ -396,8 +396,8 @@ get_OS(){
                 fi
                 ;;
--        NetBSD)
+         NetBSD)
 -                PLATFORM=netbsd
 -                DISP_PLATFORM="NetBSD"
--                ;;
++                PLATFORM=linuxx86
++                DISP_PLATFORM="NetBSD emulating Linux x86"
+                 ;;
          UnixWare)
                  # SCO UnixWare 7
-                 PLATFORM=sco
