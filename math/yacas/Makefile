@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2000/02/29 14:27:14 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2000/11/11 15:31:51 dmcmahill Exp $
 #
 
 DISTNAME=	yacas-latest
-PKGNAME=	yacas-1.0.41
+PKGNAME=	yacas-1.0.43
 CATEGORIES=	math
 MASTER_SITES=	http://www.xs4all.nl/~apinkus/
 
