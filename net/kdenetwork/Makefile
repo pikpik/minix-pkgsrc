@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2000/08/16 00:20:22 hubertf Exp $
+# $NetBSD: Makefile,v 1.50 2000/08/22 21:26:54 skrll Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/11/05 04:19:54 asami Exp
 #
 
@@ -25,7 +25,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/admin/ltconfig
 GNU_CONFIGURE=		yes
 EVAL_PREFIX+=		QT1DIR=qt1 KDEBASEDIR=kdebase
 CONFIGURE_ARGS=		"--datadir=${KDEBASEDIR}/share/kde" \
-			"--with-qt-dir=${QT1DIR}/qt1" 
+			"--with-qt-dir=${QT1DIR}/qt1"
 CONFIGURE_ENV=  	KDEDIR=${KDEBASEDIR} \
 			CPPFLAGS="${CPPFLAGS}" \
 			CXXFLAGS="${CFLAGS}" \
