@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/07/19 11:38:33 jlam Exp $
 #
 
 DISTNAME=	dhid-3.0
@@ -15,8 +15,8 @@ pre-patch:
 
 do-configure:
 	${SED} -e "s,@PREFIX@,${PREFIX},g" ${WRKSRC}/dtool.in >${WRKSRC}/dtool
-	${SED} -e "s,@PREFIX@,${PREFIX},g" ${FILESDIR}/dhid.sh.sample \
-		>${WRKDIR}/dhid.sh.sample
+	${SED} -e "s,@PREFIX@,${PREFIX},g" -e "s,@ECHO@,${ECHO},g" \
+		${FILESDIR}/dhid.sh.sample >${WRKDIR}/dhid.sh.sample
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dhid ${PREFIX}/libexec

@@ -1,6 +1,9 @@
 #!/bin/sh
+#
+# $NetBSD$
+
 DHID=@PREFIX@/libexec/dhid
 if [ -f ${DHID} ]; then
-	${ECHO} -n " dhid"
+	@ECHO@ -n " dhid"
 	${DHID}
 fi
