@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/17 14:59:31 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2003/02/26 04:07:50 jschauma Exp $
 
 DISTNAME=	xvier
-PKGNAME=	xvier-1.0
+PKGNAME_MASTER=	xvier-1.0
+PKGNAME=	${PKGNAME_MASTER}
 PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=games/strategy/}
@@ -12,6 +13,6 @@ MAINTAINER=	packages@netbsd.org
 COMMENT=	four-in-a-row game
 
 USE_IMAKE=	YES
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_MASTER}
 
 .include "../../mk/bsd.pkg.mk"
