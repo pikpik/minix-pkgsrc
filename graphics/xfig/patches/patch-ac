@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Fig.ad-orig	Thu Jul  2 02:10:28 1998
++++ Fig.ad	Tue Jan  5 22:11:21 1999
+@@ -14,7 +14,7 @@
+ 
+ ! pdfviewer - put your favorite pdf viewer here.  
+ !		This is for viewing the xfig how-to guide and man pages
+-Fig.pdfviewer:			acroread
++Fig.pdfviewer:			gv
+ 
+ ! Spacing between buttons
+ Fig.internalborderwidth:	2
