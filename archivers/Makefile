@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2003/08/30 07:18:39 taca Exp $
+# $NetBSD: Makefile,v 1.63 2003/09/04 13:36:30 xtraeme Exp $
 #
 
 COMMENT=	Archivers
@@ -63,5 +63,6 @@ SUBDIR+=	xpk
 SUBDIR+=	zip
 SUBDIR+=	zip1
 SUBDIR+=	zoo
+SUBDIR+=	zziplib
 
 .include "../mk/bsd.pkg.subdir.mk"
