@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/festival
 bin/festival_client
 libexec/festival.naked
