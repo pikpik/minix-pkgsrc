@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.244 2005/01/20 14:00:41 wiz Exp $
+# $NetBSD: Makefile,v 1.245 2005/01/24 19:20:58 martti Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -96,6 +96,7 @@ SUBDIR+=	mailscanner
 SUBDIR+=	mailserv
 SUBDIR+=	mailsync
 SUBDIR+=	mailwrapper
+SUBDIR+=	mairix
 SUBDIR+=	majordomo
 SUBDIR+=	mdfrm
 SUBDIR+=	mess822
