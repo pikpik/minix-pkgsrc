@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/gpg-agent
+bin/gpgconf
+bin/watchgnupg
+info/gnupg.info
+libexec/gpg-protect-tool
+sbin/addgnupghome
