@@ -1,3 +1,4 @@
+$NetBSD$
 --- setup.py.orig      Thu Jul 18 14:55:36 2002
 +++ setup.py   Thu Nov 14 15:36:03 2002
 @@ -11,7 +11,7 @@
