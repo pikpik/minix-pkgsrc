@@ -1360,6 +1360,7 @@ share/emacs/20.3/lisp/emacs-lisp/sregex.elc
 share/emacs/20.3/lisp/emacs-lisp/tq.elc
 share/emacs/20.3/lisp/emacs-lisp/trace.elc
 share/emacs/20.3/lisp/COPYING
+share/emacs/20.3/lisp/site-init.el
 share/emacs/20.3/site-lisp/subdirs.el
 share/emacs/site-lisp/subdirs.el
 @dirrm share/emacs/20.3/lisp/calendar
