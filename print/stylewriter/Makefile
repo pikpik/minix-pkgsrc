@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2001/02/17 17:51:55 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2001/05/04 15:45:39 agc Exp $
 #
 
 DISTNAME=	stylewriter
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.pobox.com/~monroe/styl/
 COMMENT=	Apple StyleWriter driver for un*x
 
 DEPENDS+=	ghostscript{,-nox11}-[6-9]*:../../print/ghostscript
-DEPENDS+=	enscript-1.6.1:../../print/enscript
+DEPENDS+=	enscript>=1.6.1:../../print/enscript
 
 NO_CONFIGURE=	yes
 
