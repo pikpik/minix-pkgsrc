@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/16 22:50:39 zuntum Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/27 23:18:30 jlam Exp $
 #
 
 DISTNAME=		publicfile-0.52
@@ -10,6 +10,7 @@ HOMEPAGE=		http://cr.yp.to/publicfile.html
 COMMENT=		secure read-only HTTP and FTP servers
 
 DEPENDS+=		daemontools-[0-9]*:../../sysutils/daemontools
+DEPENDS+=		ucspi-tcp-[0-9]*:../../net/ucspi-tcp
 
 ALL_TARGET=		it
 INSTALL_TARGET=		setup check
