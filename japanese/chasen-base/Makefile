@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/06/22 14:12:06 taca Exp $
+# $NetBSD: Makefile,v 1.9 2001/09/09 05:14:46 jlam Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
@@ -17,11 +17,10 @@ COMMENT=		ChaSen, Japanese Morphological Analysis System
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
 USE_BUILDLINK_ONLY=	# defined
+OWN_DIRS=		${CHASEN_DICDIR}
 
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-post-install:
-	${INSTALL_DATA_DIR} ${LOCALBASE}/share/chasen/dic
-
-.include "Makefile.common"
+.include "../chasen/Makefile.common"
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
