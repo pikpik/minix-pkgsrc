@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2001/02/25 04:18:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.26 2001/07/19 12:09:24 tron Exp $
 # FreeBSD Id: Makefile,v 1.13 1999/04/08 07:49:18 dima Exp $
 
 PKGNAME=	acroread-4.05
@@ -45,6 +45,7 @@ WRKSRC=		${WRKDIR}/SSOLRS.install
 PLATFORM=	sparcsolaris
 .else
 DISTNAME=	${PKGNAME}
+PLATFORM=	unknown
 .endif
 ONLY_FOR_PLATFORM=	*-*-i386 *-1.4[L-Z]-sparc *-1.[5-9]*-sparc *-[2-9]*-sparc
 # *-*-alpha 
