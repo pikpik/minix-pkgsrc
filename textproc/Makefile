@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2000/01/16 14:03:45 wulf Exp $
+# $NetBSD: Makefile,v 1.35 2000/02/25 01:04:16 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -44,5 +44,6 @@
     SUBDIR += texi2html
     SUBDIR += textutils
     SUBDIR += unroff
+    SUBDIR += wdiff
 
 .include "../mk/bsd.pkg.subdir.mk"
