@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 1999/11/23 16:26:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 1999/04/27 23:56:21 garbled Exp $
 #
 # IMPORTANT: Before upgrading this package, please read files/README.next_rev!
 
-DISTNAME=	scilab-2.4.1-src
-PKGNAME=	scilab-2.4.1
+DISTNAME=	scilab-2.5-src
+PKGNAME=	scilab-2.5
 WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/Meta2/Scilab/distributions/
@@ -18,10 +18,12 @@ RESTRICTED=	"no paid distribution of SCILAB"
 NO_CDROM=	${RESTRICTED}
 
 USE_FORTRAN=	yes
+USE_LIBTOOL=    yes
 USE_X11BASE=	yes
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 
+CONFIGURE_ARGS+=	--without-xless
 MAKE_ENV+=	HOME=${WRKSRC}
 CONFIGURE_ENV+=	LOCALBASE=${LOCALBASE}
 CONFIGURE_ENV+=	X11BASE=${X11BASE}
@@ -36,7 +38,8 @@ pre-fetch:
 
 post-patch:
 	@if [ ${MACHINE_ARCH} != "alpha" ]; then \
-		${MV} ${WRKSRC}/scilab.star.orig ${WRKSRC}/scilab.star ; \
+		${RM} ${WRKSRC}/scilab.star ; \
+		${CP} ${WRKSRC}/scilab.star.orig ${WRKSRC}/scilab.star ; \
 	fi
 
 .include "../../mk/bsd.pkg.mk"
