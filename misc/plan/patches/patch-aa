@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.5 2000/08/22 09:44:16 rh Exp $
 
 --- Makefile.orig	Mon Jul 17 22:07:03 2000
 +++ Makefile
@@ -34,7 +34,7 @@ $NetBSD$
  YACC=yacc
  #				# numerical user ID of <nobody> account
 -NOB_UID=60001
-+NOB_UID=39
++NOB_UID=32767
  #				# default numerical group ID of <nobody>
 -NOB_GID=60001
 +NOB_GID=39
