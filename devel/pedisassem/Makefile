@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2001/04/18 20:38:21 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2001/09/09 20:36:20 agc Exp $
 
 DISTNAME=	dsasmsrc
-PKGNAME=	pedisassem-0.22
+PKGNAME=	pedisassem-0.23
 CATEGORIES=	devel
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Foothills/4078/
 EXTRACT_SUFX=	.zip
