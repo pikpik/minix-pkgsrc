@@ -3,10 +3,11 @@
 
 DISTNAME=	gap4r3
 PKGNAME=	gap-4.3
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/ \
 		ftp://ftp.math.rwth-aachen.de/pub/gap4/ \
+		ftp://pell.anu.edu.au/pub/algebra/gap4/ \
 		ftp://ftp.ccs.neu.edu/pub/mirrors/ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}	\
 			fix4r3n4.tar.gz
@@ -26,6 +27,13 @@ ALL_TARGET=	default
 
 GAP_DIRECTORY=	${PREFIX}/lib/gap4.3
 GAP_PLATFORM=	${MACHINE_GNU_PLATFORM}-cc
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == SunOS
+GAP_PLATFORM=	${MACHINE_GNU_PLATFORM}2-${CC}
+.endif
+
+PLIST_SUBST=	GAP_PLATFORM=${GAP_PLATFORM}
 
 post-extract:
 	( cd ${WRKSRC} && ${GTAR} zxf ${DISTDIR}/fix4r3n4.tar.gz )
