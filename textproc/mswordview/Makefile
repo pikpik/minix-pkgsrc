@@ -1,14 +1,15 @@
 # $NetBSD$
+#
 
-DISTNAME=	mswordview-0.5.2
+DISTNAME=	mswordview-0.5.9
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.csn.ul.ie/~caolan/publink/mswordview/
 
-MAINTAINER=	jwise@netbsd.org
+MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.csn.ul.ie/~caolan/docs/MSWordView.html
 
+GNU_CONFIGURE=	YES
+
 WRKSRC=		${WRKDIR}/mswordview
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--libdir=${PREFIX}/share
 
 .include "../../mk/bsd.pkg.mk"
