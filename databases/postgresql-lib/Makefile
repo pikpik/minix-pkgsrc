@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/05/14 14:47:30 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -6,6 +6,8 @@
 PKGNAME=		postgresql-lib-${PG_VERS}
 PG_PKG_VERS=		# empty
 COMMENT=		PostgreSQL database headers and libraries
+
+USE_BUILDLINK_ONLY=	# defined
 
 DIRS_TO_BUILD=		src/include src/interfaces src/pl
 
