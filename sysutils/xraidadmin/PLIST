@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xraidadmin
+share/xraidadmin/RAID_Admin.jar
+@dirrm share/xraidadmin
