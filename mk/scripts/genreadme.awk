@@ -1,5 +1,5 @@
  #!/usr/bin/awk -f
-# $NetBSD: genreadme.awk,v 1.4 2002/11/14 07:10:05 dmcmahill Exp $
+# $NetBSD: genreadme.awk,v 1.5 2002/11/16 02:15:15 dmcmahill Exp $
 #
 # Copyright (c) 2002 The NetBSD Foundation, Inc.
 # All rights reserved.

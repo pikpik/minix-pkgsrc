@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1120 2002/12/31 15:46:42 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1121 2003/01/04 15:52:13 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -3695,7 +3695,7 @@ print-run-depends-list:
 .  endif
 .endif
 
-# This target is used by the mk/bulk/mkreadme script to generate
+# This target is used by the mk/scripts/mkreadme script to generate
 # README.html files
 .if !target(print-summary-data)
 print-summary-data:
