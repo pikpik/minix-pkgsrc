@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/13 17:56:58 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2003/07/17 21:22:29 grant Exp $
 
 DISTNAME=	kdemultimedia-1.1.2
 PKGREVISION=	2
@@ -10,7 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	KDE audio tools
 
-DEPENDS+=	kdebase-1.1.2nb3:../../x11/kdebase
+DEPENDS+=	kdebase-1.1.2nb4:../../x11/kdebase
 
 USE_X11BASE=	yes
 USE_GMAKE=	yes
