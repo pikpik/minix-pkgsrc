@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 1999/11/28 14:37:40 itojun Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
@@ -20,7 +20,7 @@ RESTRICTED=		"not redistributable, license agreement required"
 MIRROR_DISTFILES=	no
 
 do-fetch:
-	@if test \! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}; then \
+	@if ${TEST} \! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}; then \
 		${ECHO} "===> You need to sign the agreement on ${HOMEPAGE}"; \
 		${ECHO} "     and fetch on your own."; \
 	fi
