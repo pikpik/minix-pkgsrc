@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kio/http/http_cache_cleaner.cpp.orig	Sun Jul 29 05:55:39 2001
++++ kio/http/http_cache_cleaner.cpp
+@@ -187,7 +187,7 @@
+    }
+ }
+ 
+-int main(int argc, char **argv)
++int kio_http_cache_cleaner_main(int argc, char **argv)
+ {
+    KLocale::setMainCatalogue("kdelibs");
+    KCmdLineArgs::init( argc, argv, appName, description, version, true);

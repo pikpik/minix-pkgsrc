@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kicker/proxy/appletproxy.cpp.orig	Tue Feb  6 18:32:06 2001
++++ kicker/proxy/appletproxy.cpp
+@@ -55,7 +55,7 @@
+   { 0, 0, 0}
+ };
+ 
+-int main( int argc, char ** argv )
++int appletproxy_main( int argc, char ** argv )
+ {
+     KAboutData aboutData( "appletproxy", I18N_NOOP("Panel applet proxy.")
+                           , "v0.1.0"

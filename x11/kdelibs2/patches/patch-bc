@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kio/http/kcookiejar/main.cpp.orig	Wed Dec 27 18:59:18 2000
++++ kio/http/kcookiejar/main.cpp
+@@ -46,7 +46,7 @@
+  { 0, 0, 0 }
+ };
+ 
+-int main(int argc, char *argv[])
++int kcookiejar_main(int argc, char *argv[])
+ {
+    KLocale::setMainCatalogue("kdelibs");
+    KCmdLineArgs::init(argc, argv, "kcookiejar", description, version);

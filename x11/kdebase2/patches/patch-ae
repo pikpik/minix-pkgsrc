@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kate/main/katemain.cpp.orig	Sun Jul 29 05:56:17 2001
++++ kate/main/katemain.cpp
+@@ -39,7 +39,7 @@
+     { 0,0,0 }
+ };
+ 
+-int main( int argc, char **argv )
++int kate_main( int argc, char **argv )
+ {
+   KCmdLineArgs::init (argc, argv, KateFactory::aboutData());
+   KCmdLineArgs::addCmdLineOptions (options);

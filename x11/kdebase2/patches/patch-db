@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- konsole/src/kwrited.C.orig	Sat Mar 17 14:30:43 2001
++++ konsole/src/kwrited.C
+@@ -80,7 +80,7 @@
+     ::exit(0);
+ }
+ 
+-int main(int argc, char* argv[])
++int kwrited_main(int argc, char* argv[])
+ {
+   KLocale::setMainCatalogue("konsole");
+   KCmdLineArgs::init(argc, argv, "kwrited",

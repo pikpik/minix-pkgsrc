@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kio/klauncher/main.cpp.orig	Sun Jul 29 05:55:39 2001
++++ kio/klauncher/main.cpp
+@@ -86,8 +86,3 @@
+    launcher->exec();
+    return 0;
+ }
+-
+-int main(/*int argc, char **argv*/)
+-{
+-   return 0;
+-}

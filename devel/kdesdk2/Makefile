@@ -1,13 +1,15 @@
 # $NetBSD: Makefile,v 1.2 2001/03/28 07:50:34 skrll Exp $
 #
 
-DISTNAME=	kdesdk-2.1
+DISTNAME=	kdesdk-2.2.1
 CATEGORIES=	devel kde
 .include "../../x11/kde2/Makefile.part1"
 COMMENT=	Support applications and tools used by KDE developers
 
-DEPENDS+=	kdebase>=2.1:../../x11/kdebase2
+DEPENDS+=	kdebase-2.2.1:../../x11/kdebase2
 DEPENDS+=	db-2.7.7:../../databases/db
+
+BROKEN=		Needs looking into.
 
 .include "../../x11/kde2/Makefile.part2"
 
