@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.365 2003/01/02 04:45:49 explorer Exp $
+# $NetBSD: Makefile,v 1.366 2003/01/02 15:28:00 mjl Exp $
 #
 
 COMMENT=	Development utilities
@@ -212,8 +212,8 @@ SUBDIR+=	p5-Attribute-Handlers
 SUBDIR+=	p5-BSD-Resource
 SUBDIR+=	p5-Bit-Vector
 SUBDIR+=	p5-Class-Loader
-SUBDIR+=	p5-Class-ReturnValue
 SUBDIR+=	p5-Class-ObjectTemplate
+SUBDIR+=	p5-Class-ReturnValue
 SUBDIR+=	p5-Compress-Zlib
 SUBDIR+=	p5-Config-IniFiles
 SUBDIR+=	p5-Curses
