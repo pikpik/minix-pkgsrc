@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/qvplay
+bin/qvrec
+bin/qvalldel
+man/man1/qvplay.1
+man/man1/qvrec.1
+man/man1/qvalldel.1
