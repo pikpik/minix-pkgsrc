@@ -1,2 +1,2 @@
 @comment $NetBSD$
-libexec/sslwrap
+sbin/sslwrap
