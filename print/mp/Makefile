@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/09/21 21:33:09 kim Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/14 17:21:50 jlam Exp $
 #
 
 DISTNAME=	mpdist-3.7.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://mpdist.sourceforge.net/
 COMMENT=	PostScript pretty printer
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
 
@@ -22,5 +22,5 @@ USE_X11=		yes
 CONFIGURE_ARGS+=--enable-bsd-print
 .endif
 
-.include "../../x11/gtk/buildlink2.mk"
+.include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
