@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.233 2001/07/10 09:53:10 zuntum Exp $
+# $NetBSD: Makefile,v 1.234 2001/07/29 01:13:18 hubertf Exp $
 #
 
 COMMENT=	Networking tools
@@ -152,6 +152,7 @@ SUBDIR+=	snort
 SUBDIR+=	socks4
 SUBDIR+=	socks5
 SUBDIR+=	speakfreely
+SUBDIR+=	speedtouch
 SUBDIR+=	spegla
 SUBDIR+=	srsh
 SUBDIR+=	ssync
