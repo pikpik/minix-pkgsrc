@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2004/02/01 01:43:29 jlam Exp $
+# $NetBSD: Makefile,v 1.109 2004/02/11 09:10:15 xtraeme Exp $
 
 .include "Makefile.common"
 
@@ -18,6 +18,7 @@ USE_BUILDLINK3=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+USE_LANGUAGES=		c c++
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	Magick++/lib/ImageMagick++.pc.in
 PKGCONFIG_OVERRIDE+=	magick/ImageMagick.pc.in
