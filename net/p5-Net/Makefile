@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/11/13 01:37:12 frueauf Exp $
+# $NetBSD: Makefile,v 1.11 1998/11/30 02:50:34 explorer Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/06/27 18:38:15 jfitz Exp
 #
 
@@ -12,8 +12,6 @@ MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/libnet/FAQ.html
 
 BUILD_DEPENDS= 		${PREFIX}/lib/perl5/site_perl/Data/Dumper.pm:../../devel/p5-Data-Dumper
-
-NOT_FOR_ARCHS=		alpha	# dynamic loading needed in perl
 
 USE_PERL5=		YES
 
