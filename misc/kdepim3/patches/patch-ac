@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kresources/kolab/kabc/resourcekolab.cpp.orig	2005-02-04 12:12:14.000000000 +1300
++++ kresources/kolab/kabc/resourcekolab.cpp
+@@ -80,7 +80,7 @@ KABC::ResourceKolab::ResourceKolab( cons
+     Kolab::ResourceKolabBase( "ResourceKolab-KABC" ),
+     mCachedSubresource( QString::null ), mLocked( false )
+ {
+-  setType( "kolab" );
++  setType( "imap" );
+ }
+ 
+ KABC::ResourceKolab::~ResourceKolab()

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.37 2004/12/10 06:17:28 markd Exp $
+# $NetBSD: Makefile,v 1.38 2004/12/23 12:54:29 markd Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Personal Information Management tools for the KDE desktop
 
@@ -24,15 +23,18 @@ REPLACE_PERL=	kmail/kmail-3.1-update-new-mail-notification-settings.pl \
 		kmail/kmail-3.3b1-misc.pl \
 		kmail/kmail-pgpidentity.pl \
 		kmail/kmail-upd-identities.pl \
+		kmail/kmail-3.4-misc.pl \
 		kmail/upgrade-signature.pl \
 		kmail/upgrade-transport.pl \
-		libkdenetwork/kpgp-3.1-upgrade-address-data.pl
+		libkdenetwork/kpgp-3.1-upgrade-address-data.pl \
+		libkpgp/kpgp-3.1-upgrade-address-data.pl
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 BUILDLINK_DEPMETHOD.qt3-tools=	full
 
 .include "../../comms/libmal/buildlink3.mk"
 .include "../../comms/pilot-link-libs/buildlink3.mk"
+.include "../../security/cyrus-sasl2/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
