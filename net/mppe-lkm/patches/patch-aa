@@ -250,7 +250,7 @@ $NetBSD$
 +      struct mbuf *mfirst = NULL;
 +      struct mbuf *mprev;
 +      struct mbuf *m = NULL;
-+      int bleft = isize+MPPE_OVHD;
++      int bleft = isize+MPPE_OVHD+2;
 +      do {
 +	mprev = m;
 +	MGET(m,M_DONTWAIT, MT_DATA);
@@ -400,7 +400,7 @@ $NetBSD$
 +    if (mp->m_len <= PPP_HDRLEN + MPPE_OVHD) {
 +	if (state->debug)
 +	    aprint_error("mppe_decompress[%d]: short pkt (%d)\n",
-+		   state->unit, isize);
++		   state->unit, mp->m_len);
  	return DECOMP_ERROR;
      }
 -    osize = isize - MPPE_OVHD - 2;	/* assume no PFC */
