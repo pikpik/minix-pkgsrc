@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/22 08:24:30 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/02/11 05:38:35 xtraeme Exp $
 #
 
 DISTNAME=	libwnck-2.4.0.1
@@ -19,7 +19,6 @@ USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	libwnck-1.0.pc.in
 
 .include "../../devel/gettext-lib/buildlink3.mk"

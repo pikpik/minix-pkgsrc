@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/07/28 10:11:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2004/01/05 11:17:10 jlam Exp $
 #
 
 DISTNAME=		libiconv-1.9.1
@@ -16,8 +16,6 @@ USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE+=	${WRKSRC}/libtool
-LIBTOOL_OVERRIDE+=	${WRKSRC}/libcharset/libtool
 
 TEST_TARGET=		check
 

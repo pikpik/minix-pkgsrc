@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/12/16 08:51:42 recht Exp $
 #
 
 DISTNAME=		libXcursor-1.1.1
@@ -17,7 +17,6 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/xcursor.pc.in
 
 .include "../../devel/pkgconfig/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/01/26 15:16:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2004/01/28 14:39:37 recht Exp $
 
 DISTNAME=	transcode-0.6.11
 PKGREVISION=	2
@@ -15,7 +15,7 @@ USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
 
 USE_LIBTOOL=		yes
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../mk/bsd.prefs.mk"
 

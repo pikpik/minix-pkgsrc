@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/03 18:50:00 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/24 15:30:33 grant Exp $
 #
 
 DISTNAME=	pygtk-0.6.9
@@ -16,7 +16,6 @@ CONFIGURE_ARGS+= --disable-numpy
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN}
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
-LIBTOOL_OVERRIDE= ${WRKSRC}/libtool
 PY_PATCHPLIST=	yes
 USE_BUILDLINK2=	yes
 

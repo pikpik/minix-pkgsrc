@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/02/07 17:44:10 seb Exp $
+# $NetBSD: Makefile,v 1.24 2004/02/08 03:47:08 jlam Exp $
 #
 
 DISTNAME=	rrdtool-1.0.40
@@ -16,8 +16,6 @@ NOT_FOR_PLATFORM=	NetBSD-1.[0-4]*-alpha NetBSD-1.5-alpha \
 
 USE_LIBTOOL=		yes
 USE_BUILDLINK3=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/config/libtool
-LIBTOOL_OVERRIDE+=	${WRKSRC}/libtool
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 

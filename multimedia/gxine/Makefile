@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/26 13:08:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 13:18:06 jmmv Exp $
 #
 
 DISTNAME=		gxine-0.3.3
@@ -13,7 +13,6 @@ COMMENT=		Gtk-based media player
 USE_BUILDLINK2=		YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		YES
 
 .include "../../devel/glib2/buildlink2.mk"

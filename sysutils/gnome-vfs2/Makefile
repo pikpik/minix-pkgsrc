@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/02/11 00:56:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.29 2004/02/12 23:44:09 jmmv Exp $
 #
 
 DISTNAME=		gnome-vfs-2.4.2
@@ -21,7 +21,6 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGINSTALL=		YES
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	${WRKSRC}/gnome-vfs-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gnome-vfs-module-2.0.pc.in
 

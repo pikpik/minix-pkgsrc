@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/05/06 17:40:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/13 13:50:47 wiz Exp $
 
 DISTNAME=	ickle-0.3.2
 PKGREVISION=	2
@@ -11,7 +11,6 @@ COMMENT=	Simplistic gtk+ icq client
 
 USE_BUILDLINK2= YES
 USE_LIBTOOL=    YES
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 GNU_CONFIGURE=  YES
 
 .include "../../chat/libicq2000/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 19:17:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/10 00:20:29 jlam Exp $
 #
 
 DISTNAME=		libidn-0.3.3
@@ -14,7 +14,6 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/libidn.pc.in
 
 INFO_FILES=		libidn.info

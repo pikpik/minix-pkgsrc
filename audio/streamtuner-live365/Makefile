@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/12/13 00:45:21 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:34 reed Exp $
 #
 
 DISTNAME=	streamtuner-live365-0.3.2
@@ -15,7 +15,7 @@ USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 USE_X11=	YES
 
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../audio/streamtuner/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

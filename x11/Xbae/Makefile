@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/08/25 21:52:27 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/17 22:56:20 grant Exp $
 #
 
 DISTNAME=	Xbae-4.9.1
@@ -12,7 +12,6 @@ COMMENT=	Motif-compatible widgets: XbaeMatrix, XbaeCaption, XbaeInput
 USE_BUILDLINK2=		YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-motif-includes=${MOTIFBASE}/include

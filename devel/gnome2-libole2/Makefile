@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/13 13:51:11 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:30:51 grant Exp $
 #
 
 DISTNAME=		libole2-2.2.8
@@ -18,7 +18,6 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/glib2/buildlink2.mk"

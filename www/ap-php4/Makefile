@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/12/30 23:40:12 cjep Exp $
+# $NetBSD: Makefile,v 1.35 2004/01/12 09:46:04 cjep Exp $
 #
 
 PKGNAME=		ap-php-${PHP_BASE_VERS}
@@ -9,7 +9,7 @@ DEPENDS+=		php>=${PHP_BASE_VERS}:../../www/php4
 
 USE_BUILDLINK2=		YES
 APACHE_MODULE=		YES
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../www/php4/Makefile.php"
 

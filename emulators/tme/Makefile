@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/23 08:21:54 skrll Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/06 08:53:41 skrll Exp $
 #
 
 DISTNAME=		tme-0.2
@@ -13,7 +13,6 @@ COMMENT=		The Machine Emulator
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 

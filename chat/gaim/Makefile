@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/01/22 07:49:20 grant Exp $
+# $NetBSD: Makefile,v 1.51 2004/01/27 01:24:51 recht Exp $
 #
 
 DISTNAME=	gaim-0.75
@@ -22,8 +22,6 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--disable-nas
 CONFIGURE_ARGS+=	--disable-perl

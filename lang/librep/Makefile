@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/02/12 09:10:51 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2004/02/14 00:59:11 jlam Exp $
 #
 
 DISTNAME=		librep-${REP_VERS}
@@ -19,7 +19,6 @@ USE_GNU_TOOLS+=		make
 USE_GNU_READLINE=	# uses rl_basic_quote_characters
 
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 REP_LIBTOOL=		${PREFIX}/libexec/rep/${MACHINE_GNU_PLATFORM}/libtool
 
 GNU_CONFIGURE=		yes

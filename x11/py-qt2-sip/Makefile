@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:56:40 grant Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 17:38:31 martti Exp $
 #
 
 DISTNAME=	sip-3.1
@@ -13,9 +13,7 @@ COMMENT=	Tool to create Python bindings for C++ libraries
 USE_BUILDLINK2= 	# defined
 USE_X11=		# defined
 USE_LIBTOOL=		# defined
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
-HAS_CONFIGURE=		# defined
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS=		--with-python=${PYTHONBIN} \
 			--with-qt-dir=${QTDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:24:04 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/26 21:41:09 jmmv Exp $
 #
 
 DISTNAME=	infinity-0.2
@@ -13,7 +13,6 @@ COMMENT=	Psychedelic visualization plug-in for xmms
 
 USE_BUILDLINK2=	YES
 USE_LIBTOOL=	YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=	YES
 
 .include "../../audio/xmms/buildlink2.mk"

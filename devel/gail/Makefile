@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/02/11 10:43:59 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2004/02/13 17:05:35 jmmv Exp $
 #
 
 DISTNAME=	gail-1.4.1
@@ -17,7 +17,6 @@ USE_GNU_TOOLS+=		make
 USE_X11=		yes
 USE_LIBTOOL=		yes
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	gail.pc.in
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no

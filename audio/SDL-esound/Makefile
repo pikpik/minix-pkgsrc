@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/09/03 19:24:43 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/15 09:13:47 markd Exp $
 #
 
 .include "../../devel/SDL/Makefile.common"
@@ -10,7 +10,7 @@ COMMENT=	SDL plugin to output sound through the esound daemon
 
 CONFIGURE_ARGS+=	--enable-esd
 
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 BUILD_DIRS=		${WRKSRC}/src/audio/esd
 

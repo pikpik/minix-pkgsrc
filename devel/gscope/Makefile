@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/11/12 01:31:48 salo Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/03 18:49:38 reed Exp $
 #
 
 DISTNAME=		gscope-0.4.1
@@ -16,7 +16,6 @@ USE_BUILDLINK2=		# defined
 USE_X11=		# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/popt/buildlink2.mk"
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"

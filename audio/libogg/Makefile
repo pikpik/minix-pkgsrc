@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/01/10 05:42:50 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2004/02/01 01:43:28 jlam Exp $
 
 DISTNAME=	libogg-1.1
 CATEGORIES=	devel audio
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GCC_REQD+=		2.95.3
 

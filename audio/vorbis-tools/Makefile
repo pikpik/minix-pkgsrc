@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/09/05 19:16:36 explorer Exp $
+# $NetBSD: Makefile,v 1.27 2003/12/08 14:43:48 wiz Exp $
 
 DISTNAME=	vorbis-tools-1.0.1
 CATEGORIES=	audio
@@ -17,7 +17,6 @@ USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--with-ogg-prefix=${BUILDLINK_PREFIX.libogg}	\
 			--with-vorbis-prefix=${BUILDLINK_PREFIX.libvorbis} \
 			--with-ao-prefix=${BUILDLINK_PREFIX.libao}

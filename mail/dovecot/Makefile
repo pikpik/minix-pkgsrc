@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/01 03:38:33 salo Exp $
+# $NetBSD: Makefile,v 1.13 2004/02/10 00:32:35 jlam Exp $
 
 DISTNAME=		dovecot-0.99.10.4
 CATEGORIES=		mail
@@ -16,8 +16,6 @@ USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 USE_PKGINSTALL= 	YES
 GNU_CONFIGURE=		YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=/var

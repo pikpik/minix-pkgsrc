@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/02/13 16:13:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/13 17:02:08 jmmv Exp $
 #
 
 DISTNAME=		at-spi-1.3.9
@@ -21,7 +21,6 @@ USE_X11=		yes
 
 CONFIGURE_ARGS+=	--disable-gtk-doc
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/cspi-1.0.pc.in
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/libspi-1.0.pc.in
 

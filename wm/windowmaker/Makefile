@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/01/07 02:21:17 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2004/02/01 01:43:30 jlam Exp $
 
 DISTNAME=		WindowMaker-0.80.2
 PKGNAME=		windowmaker-0.80.2
@@ -19,7 +19,6 @@ USE_PKGINSTALL=		YES
 USE_X11BASE=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-usermenu \
 			--sysconfdir=${PKG_SYSCONFBASEDIR} \

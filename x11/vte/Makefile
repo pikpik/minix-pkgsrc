@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/24 15:30:34 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/11 07:11:28 xtraeme Exp $
 #
 
 DISTNAME=	vte-0.11.10
@@ -25,7 +25,6 @@ CONFIGURE_ARGS+=	--disable-gtk-doc
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/vte.pc.in
 
 .include "../../devel/pkgconfig/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:39:05 martti Exp $
+# $NetBSD: Makefile,v 1.10 2003/11/03 11:01:05 gavan Exp $
 #
 
 DISTNAME=		edb-1.0.3
@@ -15,7 +15,6 @@ USE_LIBTOOL=		YES
 USE_BUILDLINK2=		YES
 USE_GCC_SHLIB=		YES
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 CONFIGURE_ARGS+=	--enable-cxx
 
 .include "../../x11/gtk/buildlink2.mk"

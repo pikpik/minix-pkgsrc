@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/26 12:48:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:59:01 jmmv Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -16,8 +16,6 @@ GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CFLAGS+=		-DDEVOSSAUDIO=\"\\\"${DEVOSSAUDIO}\\\"\"
 LDFLAGS+=		${LIBOSSAUDIO}

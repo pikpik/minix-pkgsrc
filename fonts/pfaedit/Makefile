@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/20 12:15:17 agc Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/22 08:38:29 grant Exp $
 #
 
 DISTNAME=	pfaedit_full-${VERSION}
@@ -16,7 +16,6 @@ VERSION=	040102
 WRKSRC=		${WRKDIR}/pfaedit-${VERSION}
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
 USE_X11=	YES

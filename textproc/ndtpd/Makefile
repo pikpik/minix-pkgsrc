@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/08/05 22:21:56 seb Exp $
+# $NetBSD: Makefile,v 1.11 2003/08/09 11:27:50 seb Exp $
 #
 
 DISTNAME=	ndtpd-3.1.4
@@ -16,8 +16,6 @@ USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
 INFO_FILES=	ndtpd-ja.info ndtpd.info
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=${NDTPD_RUNDIR}

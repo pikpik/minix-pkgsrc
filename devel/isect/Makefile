@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/08/30 22:51:14 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2004/02/04 01:58:35 grant Exp $
 #
 
 DISTNAME=	isect-1.6.2
@@ -14,7 +14,6 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_PKGINSTALL=		yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PTHREAD_OPTS+=		require
 INFO_FILES=		isect.info
 

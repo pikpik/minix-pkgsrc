@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 19:22:23 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/02/10 00:14:41 jlam Exp $
 #
 
 DISTNAME=		gss-0.0.6
@@ -15,7 +15,6 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/gss.pc.in
 
 INFO_FILES=		gss.info

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/11/03 10:51:46 agc Exp $
+# $NetBSD: Makefile,v 1.17 2004/02/14 04:43:48 dmcmahill Exp $
 #
 
 DISTNAME=		libgdgeda-2.0.15
@@ -17,8 +17,6 @@ DIST_SUBDIR=		${PKGNAME}
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_BUILDLINK3=		YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/22 08:24:28 grant Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/23 21:50:43 jmmv Exp $
 
 DISTNAME=	autogen-5.5.3
 PKGREVISION=	5
@@ -13,7 +13,6 @@ USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_MAKEINFO=		YES
 INFO_FILES=		autogen.info
 

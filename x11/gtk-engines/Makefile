@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2003/07/17 22:56:30 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/03 18:49:56 reed Exp $
 
 DISTNAME=		gtk-engines-0.12
 PKGREVISION=		5
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		# defined
 USE_BUILDLINK2=		# defined
 USE_X11BASE=		# defined
 USE_LIBTOOL=		# defined
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../graphics/imlib/buildlink2.mk"

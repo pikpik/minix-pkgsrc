@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/12/04 19:48:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/23 21:50:49 jmmv Exp $
 #
 
 DISTNAME=	raptor-1.0.0
@@ -14,7 +14,6 @@ USE_BUILDLINK2=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/raptor.pc.in
 
 .include "../../devel/glib2/buildlink2.mk"

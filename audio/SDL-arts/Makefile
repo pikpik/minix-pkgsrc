@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/12/08 14:41:38 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/15 09:13:47 markd Exp $
 #
 
 .include "../../devel/SDL/Makefile.common"
@@ -12,7 +12,7 @@ COMMENT=	SDL plugin to output sound through the aRts sound daemon
 
 CONFIGURE_ARGS+=	--enable-arts
 
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 BUILD_DIRS=		${WRKSRC}/src/audio/arts
 

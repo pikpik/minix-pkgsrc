@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/24 14:11:10 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/09 18:47:37 jmmv Exp $
 #
 
 DISTNAME=		gok-0.8.4
@@ -23,7 +23,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
 CONFIGURE_ARGS+=	--disable-gtk-doc
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/gok-1.0.pc.in
 
 GCONF2_SCHEMAS=		gok.schemas

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/02/11 04:02:48 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/02/11 04:36:58 xtraeme Exp $
 #
 
 DISTNAME=		balsa-2.0.16
@@ -19,7 +19,6 @@ USE_PKGINSTALL=		yes
 USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-gpgme=${BUILDLINK_PREFIX.gpgme}/bin/gpgme-config

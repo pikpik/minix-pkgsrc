@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/01/03 18:49:56 reed Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/24 15:30:32 grant Exp $
 #
 
 DISTNAME=	gnomemm-1.2.4
@@ -17,7 +17,6 @@ USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
 USE_X11BASE=	yes
 USE_BUILDLINK2=	yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 REPLACE_PERL=	docgen/pce2
 
 .include "../../devel/libsigc++10/buildlink2.mk"

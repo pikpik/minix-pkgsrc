@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2004/01/03 18:49:55 reed Exp $
+# $NetBSD: Makefile,v 1.53 2004/01/24 15:30:32 grant Exp $
 
 DISTNAME=		control-center-1.4.0.4
 PKGREVISION=		5
@@ -17,7 +17,6 @@ USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
 
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 LOCALSTATEDIR=		${X11PREFIX}/var
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/13 08:43:31 mrg Exp $
+# $NetBSD: Makefile,v 1.5 2003/11/25 22:32:00 dmcmahill Exp $
 
 DISTNAME=	Blursk-1.3
 PKGNAME=	xmms-blursk-1.3
@@ -16,8 +16,6 @@ GNU_CONFIGURE=	YES
 USE_BUILDLINK2=	YES
 USE_LIBTOOL=	YES
 USE_X11=	YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .if !exists(${X11BASE}/include/X11/extensions/Xvlib.h)
 PKG_FAIL_REASON=	"${PKGNAME} requires libXv.a"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/02/11 12:20:03 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2004/02/11 17:14:13 jmmv Exp $
 
 DISTNAME=		glib-2.2.3
 PKGNAME=		${DISTNAME:S/glib/glib2/}
@@ -20,9 +20,8 @@ USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++
 USE_PERL5=		yes
-
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
 PKGCONFIG_OVERRIDE=	${WRKSRC}/glib-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gmodule-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gobject-2.0.pc.in

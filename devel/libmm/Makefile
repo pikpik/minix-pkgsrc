@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:31:35 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/05 12:53:31 jlam Exp $
 #
 
 DISTNAME=	mm-1.2.2
@@ -14,8 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
-
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../mk/bsd.pkg.mk"

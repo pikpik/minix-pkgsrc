@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/03 18:49:37 reed Exp $
+# $NetBSD: Makefile,v 1.18 2004/01/22 08:24:28 grant Exp $
 
 DISTNAME=		bonobo-conf-0.14
 PKGREVISION=		7
@@ -13,12 +13,10 @@ BUILD_USES_MSGFMT=	YES
 
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
+USE_LIBTOOL=		YES
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
-
-USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bonobo-conf

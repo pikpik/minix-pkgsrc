@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/01/24 15:46:44 grant Exp $
+# $NetBSD: Makefile,v 1.31 2004/01/25 03:08:47 grant Exp $
 
 DISTNAME=		plplot-5.2.1
 CATEGORIES=		graphics
@@ -15,7 +15,6 @@ USE_FORTRAN=		# defined
 USE_X11=		# defined
 USE_PERL5=		build
 USE_LIBTOOL=		# defined
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 CONFIGURE_ENV+=		GDINCDIR=${BUILDLINK_PREFIX.gd}/include
 CONFIGURE_ENV+=		GDLIBDIR=${BUILDLINK_PREFIX.gd}/lib

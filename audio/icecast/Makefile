@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/01/12 06:05:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/23 21:50:42 jmmv Exp $
 #
 
 DISTNAME=		icecast-2.0.0
@@ -15,8 +15,6 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 
 BUILD_DEFS+=		ICECAST_CHROOTDIR
 

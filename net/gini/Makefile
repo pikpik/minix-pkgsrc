@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/12/08 14:41:41 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/24 14:50:05 grant Exp $
 #
 
 DISTNAME=		gini-0.5.1
@@ -15,8 +15,6 @@ GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
-
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 
 .include "../../audio/libvorbis/buildlink2.mk"
 .include "../../devel/glib/buildlink2.mk"

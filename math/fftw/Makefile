@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/08/09 11:11:30 seb Exp $
+# $NetBSD: Makefile,v 1.13 2004/01/24 13:58:23 grant Exp $
 
 .if (${MACHINE_ARCH} == "powerpc")
 DISTNAME=		fftw-3.0.1-fma
@@ -15,7 +15,6 @@ HOMEPAGE=		http://www.fftw.org/
 COMMENT=		Collection of fast C routines to compute DFTs
 
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/fftw.pc.in
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-shared

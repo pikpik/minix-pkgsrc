@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/13 13:53:04 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/07/17 22:52:12 grant Exp $
 #
 
 DISTNAME=	linda-0.1.1
@@ -13,7 +13,6 @@ COMMENT=	Parallel distributed database environment
 USE_BUILDLINK2=		# defined
 GNU_CONFIGURE=		# defined
 USE_LIBTOOL=		# defined
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/glib2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

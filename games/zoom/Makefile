@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/24 13:30:57 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/01 01:43:29 jlam Exp $
 #
 
 DISTNAME=		zoom-1.0.1
@@ -17,7 +17,6 @@ COMMENT=		Plays Infocom-compatible games, with graphics support
 USE_BUILDLINK2=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 USE_X11=		yes
 USE_GNU_TOOLS+=		make

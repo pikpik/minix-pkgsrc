@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:21:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:25:59 grant Exp $
 #
 
 DISTNAME=		libirc-0.2
@@ -13,7 +13,6 @@ COMMENT=		libirc is a C-library for the IRC protocol
 GNU_CONFIGURE=		yes
 USE_BUILDLINK2=		yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/glib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"

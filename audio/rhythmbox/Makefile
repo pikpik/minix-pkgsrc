@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/26 17:07:21 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/02/09 18:47:36 jmmv Exp $
 #
 
 DISTNAME=	rhythmbox-0.6.5
@@ -14,7 +14,6 @@ BUILD_USES_MSGFMT=	YES
 DEPENDS=		gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 GNU_CONFIGURE=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_BUILDLINK2=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/01/20 12:13:29 agc Exp $
+# $NetBSD: Makefile,v 1.26 2004/01/22 08:24:30 grant Exp $
 #
 
 DISTNAME=	popt-1.7
@@ -23,7 +23,6 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

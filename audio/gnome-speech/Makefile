@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/22 07:15:00 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/23 21:50:42 jmmv Exp $
 #
 
 DISTNAME=	gnome-speech-0.2.8
@@ -23,7 +23,6 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--disable-gtk-doc
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/gnome-speech-1.0.pc.in
 
 .include "../../devel/libbonobo/buildlink2.mk"

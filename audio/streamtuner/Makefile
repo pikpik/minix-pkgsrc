@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/03 18:49:34 reed Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/22 07:15:01 grant Exp $
 #
 
 DISTNAME=	streamtuner-${DIST_VER}
@@ -20,7 +20,6 @@ USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	${WRKSRC}/extras/streamtuner.pc.in
 
 DIST_VER=		0.10.2

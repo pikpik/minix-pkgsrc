@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/24 14:58:00 grant Exp $
+# $NetBSD: Makefile,v 1.22 2004/02/11 02:34:55 xtraeme Exp $
 #
 
 DISTNAME=	libgnomeprintui-2.4.2
@@ -20,7 +20,6 @@ USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	libgnomeprintui/libgnomeprintui-2.2.pc.in
 
 CONFIGURE_ARGS=		--enable-gtk-doc=no

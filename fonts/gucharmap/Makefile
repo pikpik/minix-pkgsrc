@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/23 21:50:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/09 18:47:37 jmmv Exp $
 #
 
 DISTNAME=	gucharmap-1.2.0
@@ -21,7 +21,6 @@ USE_LIBTOOL=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE+=    ${WRKSRC}/gucharmap.pc.in
 
 .include "../../devel/libgnomeui/buildlink2.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/02/10 03:23:51 sekiya Exp $
+# $NetBSD: Makefile,v 1.41 2004/02/14 00:54:44 grant Exp $
 #
 
 DISTNAME=		GConf-1.0.9
@@ -20,7 +20,6 @@ USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 PKGCONFIG_OVERRIDE=	${WRKSRC}/gconf.pc.in
 
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.db3}/include/db3

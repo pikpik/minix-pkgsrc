@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/12/23 10:11:23 cube Exp $
+# $NetBSD: Makefile,v 1.32 2004/01/23 21:38:27 cube Exp $
 #
 
 DISTNAME=		lftp-2.6.12
@@ -18,7 +18,7 @@ USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 USE_GNU_READLINE=	# uses GNU readline internal _rl_mark_modified_lines
 
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+SHLIBTOOL_OVERRIDE=	libtool
 
 CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

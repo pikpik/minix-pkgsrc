@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/12 22:57:38 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/10 00:20:29 jlam Exp $
 
 DISTNAME=	gnutls-1.0.4
 CATEGORIES=	security devel
@@ -11,8 +11,6 @@ COMMENT=	GNU Transport Layer Security library
 USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
-
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 
 DOCDIR=		${PREFIX}/share/doc/gnutls
 EGDIR=		${PREFIX}/share/examples/gnutls

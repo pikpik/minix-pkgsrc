@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/02/09 18:47:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.37 2004/02/10 21:06:33 markd Exp $
 
 DISTNAME=	koffice-1.3
 PKGREVISION=	1
@@ -18,7 +18,6 @@ USE_BUILDLINK2=		YES
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GCC_REQD+=		2.95.3
 

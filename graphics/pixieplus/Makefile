@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/23 21:50:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/24 15:46:44 grant Exp $
 #
 
 DISTNAME=	pixieplus-0.5.4
@@ -16,8 +16,6 @@ USE_GNU_TOOLS+=		make
 USE_LIBTOOL=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
-
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 .include "../../graphics/kdegraphics3/buildlink2.mk"
 .include "../../graphics/ImageMagick/buildlink2.mk"

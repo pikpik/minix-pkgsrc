@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/24 09:53:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/22 07:15:01 grant Exp $
 #
 
 DISTNAME=	flac-1.1.0
@@ -16,8 +16,7 @@ USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool-disable-static
+SHLIBTOOL_OVERRIDE=	libtool-disable-static
 
 XMMS_WRKSRC=	${WRKSRC}/src/plugin_xmms
 

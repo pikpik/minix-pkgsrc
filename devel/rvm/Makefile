@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/08/25 10:31:07 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2004/01/22 08:24:30 grant Exp $
 #
 
 DISTNAME=	rvm-1.8
@@ -12,12 +12,10 @@ COMMENT=	Recoverable Virtual Memory
 
 USE_BUILDLINK2=		YES
 USE_GNU_TOOLS+=		make
+USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-lwp-includes=${BUILDLINK_PREFIX.lwp}/include
-
-USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 pre-build:
 	cd ${WRKSRC}/rvm;						\

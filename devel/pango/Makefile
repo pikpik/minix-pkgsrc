@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/02/10 01:56:42 xtraeme Exp $
+# $NetBSD: Makefile,v 1.34 2004/02/11 01:46:30 abs Exp $
 #
 
 DISTNAME=		pango-1.2.5
@@ -20,9 +20,8 @@ USE_X11=		yes
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
-
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
 PKGCONFIG_OVERRIDE=	${WRKSRC}/pango.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangoft2.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/pangox.pc.in

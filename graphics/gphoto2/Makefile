@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2003/09/28 18:59:09 is Exp $
+# $NetBSD: Makefile,v 1.23 2003/11/12 01:31:49 salo Exp $
 #
 
 DISTNAME=	gphoto2-2.1.2
@@ -15,7 +15,6 @@ CONFLICTS=	gphoto-[0-9]*
 
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 

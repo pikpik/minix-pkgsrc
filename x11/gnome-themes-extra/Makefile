@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/24 15:30:32 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/02/09 18:47:38 jmmv Exp $
 #
 
 DISTNAME=	gnome-themes-extras-0.5
@@ -20,8 +20,6 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
-
-LIBTOOL_OVERRIDE=       ${WRKSRC}/libtool
 
 .include "../../devel/libgnomeui/buildlink2.mk"
 .include "../../x11/gtk2-engines/buildlink2.mk"

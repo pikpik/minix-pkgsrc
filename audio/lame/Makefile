@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/02/03 01:42:23 xtraeme Exp $
+# $NetBSD: Makefile,v 1.35 2004/02/11 08:33:51 xtraeme Exp $
 #
 
 DISTNAME=	lame-${VERS}
@@ -16,9 +16,7 @@ LICENSE=	fee-based-commercial-use
 
 USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
-
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-vorbis
