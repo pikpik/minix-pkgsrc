@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/sybasect.so
+${PYSITELIB}/Sybase.py
+${PYSITELIB}/Sybase.pyc
