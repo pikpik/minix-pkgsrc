@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2004/02/28 20:04:40 snj Exp $
+# $NetBSD: Makefile,v 1.27 2004/03/29 02:17:24 snj Exp $
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
 EXTRACT_SUFX=	.tar.Z
@@ -17,7 +17,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
-USE_X11=		YES
 
 CFLAGS+=	-DPKG_SYSCONFDIR='\\\"${PKG_SYSCONFDIR}\\\"'
 CFLAGS.SunOS+=	-DSYSV
