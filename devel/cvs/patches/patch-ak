@@ -1,8 +1,8 @@
-$NetBSD: patch-ak,v 1.1 1999/04/20 15:01:11 mycroft Exp $
+$NetBSD$
 
---- src/checkout.c.orig	Sun Jul 26 22:54:04 1998
-+++ src/checkout.c	Tue Apr 20 10:15:03 1999
-@@ -180,7 +180,7 @@
+--- src/checkout.c.orig	Wed Jun 28 06:15:47 2000
++++ src/checkout.c
+@@ -179,7 +179,7 @@
  	    case 'p':
  		pipeout = 1;
  		run_module_prog = 0;	/* don't run module prog when piping */
