@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2003/04/19 00:16:58 jschauma Exp $
+# $NetBSD: Makefile,v 1.15 2003/05/14 23:11:32 seb Exp $
 #
 
 DISTNAME=	ocaml-3.06
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/cristal/ocaml/${DISTNAME}/
 
@@ -37,5 +37,18 @@ post-build:
 .if (${MACHINE_ARCH} == "i386")
 PLIST_SRC=	${PKGDIR}/PLIST.opt ${PKGDIR}/PLIST
 .endif
+
+PTHREAD_OPTS+=	native
+.include "../../mk/pthread.buildlink2.mk"
+
+.if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} != "none")
+CONFIGURE_ARGS+=	-with-pthread
+PLIST_SRC+=		${PKGDIR}/PLIST.threads
+PLIST_SUBST+=		NATIVE_THREADS="@comment "
+.else
+PLIST_SUBST+=		NATIVE_THREADS=
+.endif
+
+PLIST_SRC+=		${PKGDIR}/PLIST.common_end
 
 .include "../../mk/bsd.pkg.mk"
