@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/01/20 12:15:41 agc Exp $
+# $NetBSD: Makefile,v 1.14 2004/04/15 21:17:08 ben Exp $
 
 DISTNAME=		ularn
 PKGNAME=		ularn-6.12.92
@@ -24,6 +24,10 @@ SUBST_MESSAGE.termlib=	"Adding -lcompat dependency."
 SUBST_STAGE.termlib=	post-patch
 SUBST_FILES.termlib=	Configure
 SUBST_SED.termlib=	-e 's,^termlib=..termlib,& -lcompat,'
+.endif
+
+.if ${OPSYS} == "Linux"
+CFLAGS+=		-I/usr/include/ncurses -DGETOPT
 .endif
 
 pre-configure:
