@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/dbmmanage
 bin/htdigest
 bin/htpasswd
