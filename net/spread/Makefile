@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/30 10:41:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/08/09 13:07:40 recht Exp $
 #
 
 DISTNAME=	spread-src-3.17.1
@@ -11,6 +11,7 @@ MAINTAINER=	marc@informatik.uni-bremen.de
 HOMEPAGE=	http://www.spread.org/
 COMMENT=	Group communication system providing a number of messaging services
 
+USE_PERL5=	build
 USE_BUILDLINK2=	YES
 USE_PKGINSTALL=	YES
 GNU_CONFIGURE=	YES
