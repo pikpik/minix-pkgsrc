@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:26:03 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/08/09 10:33:29 seb Exp $
 
 DISTNAME=	liece-1.4.10
 CATEGORIES=	chat
@@ -13,13 +13,13 @@ DEPENDS=	${PKGNAME_PREFIX}apel>=10.3:../../devel/apel
 .include "../../mk/emacs.mk"
 
 HAS_CONFIGURE=	# defined
+USE_GNU_TOOLS+=	make
 .if ${EMACS_FLAVOR} == "emacs"
 CONFIGURE_ARGS+=--with-emacs=${EMACS_BIN}
 .else
 CONFIGURE_ARGS+=--with-xemacs=${EMACS_BIN}
 .endif
 CONFIGURE_ARGS+=--with-lispdir=${EMACS_LISPPREFIX}
-USE_GMAKE=	# defined
 
 INFO_FILES=	liece.info
 

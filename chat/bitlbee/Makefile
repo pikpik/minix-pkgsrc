@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/05 23:05:58 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2003/12/31 13:02:42 xtraeme Exp $
 #
 
 DISTNAME=		bitlbee-0.83
@@ -11,7 +11,7 @@ COMMENT=		IRC to other chat networks gateway
 
 USE_BUILDLINK2=		yes
 HAS_CONFIGURE=		yes
-USE_GMAKE=		yes
+USE_GNU_TOOLS+=		make
 USE_PKGINSTALL=		yes
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/01/03 18:49:35 reed Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/04 17:26:20 xtraeme Exp $
 #
 
 DISTNAME=	xchat-2.0.7
@@ -18,7 +18,7 @@ CONFLICTS=		xchat-gnome-[0-9]*
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
 USE_LIBTOOL=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/21 16:35:14 martti Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:10:01 agc Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/-/_/}.src
@@ -13,7 +13,7 @@ COMMENT=	Utility to synchronize Palm Pilots to the AvantGo.com service
 
 WRKSRC=		${WRKDIR}/malsync
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 MAKE_ENV+=		PILOT_LINK_DIR=${BUILDLINK_PREFIX.pilot-link-libs}
 CPPFLAGS+=		-D__unix__=1
 

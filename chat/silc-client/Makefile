@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2003/11/27 12:40:53 salo Exp $
+# $NetBSD: Makefile,v 1.31 2004/01/14 17:09:26 salo Exp $
 #
 
 DISTNAME=		${SILC_CLIENT_DISTNAME}
@@ -19,7 +19,7 @@ COMMENT=                Client for the Secure Internet Live Conferencing (SILC) 
 USE_BUILDLINK2=		YES
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 SHLIBTOOL_OVERRIDE=	${WRKSRC}/libtool ${WRKSRC}/irssi/libtool \
 			${WRKSRC}/lib/silcmath/mpi/libtool

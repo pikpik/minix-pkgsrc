@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/03 23:13:00 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:09:35 agc Exp $
 
 DISTNAME=		fisg-0.2.0
 CATEGORIES=		chat textproc
@@ -10,6 +10,6 @@ COMMENT=		Fast IRC statistics generator
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_BUILDLINK2=		YES
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 
 .include "../../mk/bsd.pkg.mk"

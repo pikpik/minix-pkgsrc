@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:50:50 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/17 21:26:43 grant Exp $
 #
 
 DISTNAME=	gsmlib-1.9
@@ -14,7 +14,7 @@ BUILD_USES_MSGFMT=	yes
 
 ONLY_FOR_PLATFORM=	NetBSD-1.[6-9]*
 
-USE_GMAKE=		YES
+USE_GNU_TOOLS+=		make
 USE_BUILDLINK2=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/08/12 08:08:33 jdolecek Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/12 10:38:03 cjep Exp $
 
 DISTNAME=	qssl-2.0
 PKGNAME=	psi-ssl-2.0
@@ -12,7 +12,7 @@ HOMEPAGE=	http://psi.affinix.com/
 COMMENT=	PSI Jabber Client - SSL plugin
 
 USE_BUILDLINK2=	yes
-USE_GMAKE=	yes
+USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
 USE_X11=	yes
 
