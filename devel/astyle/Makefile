@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/11/05 15:27:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2004/02/18 13:33:40 jlam Exp $
 #
 
 DISTNAME=	astyle_1.13.6.1
@@ -24,7 +24,7 @@ post-extract:
 
 post-install:
 	${INSTALL_DATA_DIR} ${HTMLDIR}
-	cd ${WRKSRC}; ${INSTALL_DATA} astyle.html astyle_release_notes.html\
-								 license.html ${HTMLDIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} astyle.html \
+		astyle_release_notes.html license.html ${HTMLDIR}
 
 .include "../../mk/bsd.pkg.mk"
