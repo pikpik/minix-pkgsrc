@@ -1,0 +1,6 @@
+@comment $NetBSD$
+sbin/mailgraph
+${CGIDIR}/mailgraph.cgi
+${DOCDIR}/CHANGES
+${DOCDIR}/COPYING
+${DOCDIR}/README
