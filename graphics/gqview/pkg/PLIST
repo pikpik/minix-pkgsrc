@@ -1,12 +1,15 @@
-@comment $NetBSD: PLIST,v 1.6 2001/03/01 14:35:07 wiz Exp $
+@comment $NetBSD: PLIST,v 1.7 2001/03/04 09:12:08 jlam Exp $
 bin/gqview
 man/man1/gqview.1
 ${PKGLOCALEDIR}/locale/de/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/es/LC_MESSAGES/gqview.mo
+${PKGLOCALEDIR}/locale/et/LC_MESSAGES/gqview.mo
+${PKGLOCALEDIR}/locale/fi/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/hu/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/it/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/ja/LC_MESSAGES/gqview.mo
+${PKGLOCALEDIR}/locale/nl/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/pt_BR/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/gqview.mo
 ${PKGLOCALEDIR}/locale/ru/LC_MESSAGES/gqview.mo
