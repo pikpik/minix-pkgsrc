@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2003/05/31 16:14:47 uebayasi Exp $
 #
 .include "../../shells/ast-ksh/Makefile.common"
 
@@ -13,4 +13,4 @@ COMMENT:=	Statically-linked version of the ${COMMENT}
 
 KSH93_MAKEFLAGS=LDFLAGS=-static
 
-.include "../../shells/ast-ksh/Makefile.include"
+.include "../../mk/bsd.pkg.mk"
