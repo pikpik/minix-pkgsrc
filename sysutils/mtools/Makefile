@@ -34,11 +34,11 @@ post-patch:
 
 post-install:
 .ifdef MTOOLS_ENABLE_FLOPPYD
+	${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
+.else
 	${RM} -f ${PREFIX}/man/man1/floppyd.1
 	${RM} -f ${PREFIX}/bin/floppyd ${PREFIX}/bin/floppyd_installtest
 	${GREP} -v /floppyd ${PKGDIR}/PLIST >${PLIST_SRC}
-.else
-	${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
 .endif
 
 .include "../../mk/bsd.pkg.mk"
