@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/webalizer
+man/man1/webalizer.1
+etc/webalizer.conf-sample
