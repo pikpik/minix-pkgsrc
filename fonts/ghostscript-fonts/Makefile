@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/03/28 21:14:20 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 21:37:06 grant Exp $
 
 DISTNAME=		ghostscript-fonts-6.0
 CATEGORIES=		fonts
@@ -37,7 +37,9 @@ do-install:
 	done
 	${INSTALL_DATA} ${FILESDIR}/fonts.alias \
 		${PREFIX}/share/ghostscript/fonts/
-	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/ghostscript
-	${CHMOD} -R a-w ${PREFIX}/share/ghostscript
+	@for file in ${PREFIX}/share/ghostscript/fonts/*; do		\
+		${CHMOD} ${SHAREMODE} $${file};				\
+		${CHOWN} ${SHAREOWN}:${SHAREGRP} $${file};		\
+	done
 
 .include "../../mk/bsd.pkg.mk"
