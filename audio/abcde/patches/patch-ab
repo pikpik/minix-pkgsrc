@@ -1,8 +1,8 @@
 $NetBSD$
 
---- abcde.conf.orig	Wed Aug 15 23:32:10 2001
+--- abcde.conf.orig	Mon Jan 21 03:35:31 2002
 +++ abcde.conf
-@@ -93,7 +93,7 @@
+@@ -96,7 +96,7 @@
  #NOCDDBQUERY=n
  
  # CD device you want to read from
