@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.205 2004/04/05 12:42:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.206 2004/04/16 15:05:34 xtraeme Exp $
 #
 
 COMMENT=	Games
@@ -172,6 +172,7 @@ SUBDIR+=	tscp
 SUBDIR+=	tuxmath
 SUBDIR+=	tuxracer
 SUBDIR+=	ularn
+SUBDIR+=	urban
 SUBDIR+=	vms-empire
 SUBDIR+=	wormz
 SUBDIR+=	xarchon
