@@ -19,7 +19,7 @@ $NetBSD$
 +DESTLIB		= ${PREFIX}/share/felt
 +DESTMAN		= ${PREFIX}/man
 +INSTALL		= /bin/sh $(TOPDIR)/etc/install.sh -c
-+LDOPTS		= -s
++LDOPTS		= -s -Wl,-R${X11BASE}/lib
  LIBELT		= $(TOPDIR)/lib/Elements/libelt.a
  LIBFELT		= $(TOPDIR)/lib/Felt/libfelt.a
  LIBGEN		= $(TOPDIR)/lib/Generate/libgen.a
