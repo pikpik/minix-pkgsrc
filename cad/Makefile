@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/04/15 10:38:16 agc Exp $
+# $NetBSD: Makefile,v 1.3 1998/06/06 22:53:03 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/11/17 10:53:52 tg Exp
 #
 
@@ -12,6 +12,6 @@
 #    SUBDIR += magic
 #    SUBDIR += mars
 #    SUBDIR += pcb
-#    SUBDIR += spice
+    SUBDIR += spice
 
 .include "../mk/bsd.pkg.subdir.mk"
