@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.1564 2004/04/01 15:17:22 xtraeme Exp $
+$NetBSD: TODO,v 1.1565 2004/04/01 19:25:44 jmmv Exp $
 
 Suggested new packages
 ======================
@@ -343,7 +343,7 @@ Suggested package updates
 	o vfu-4.03
 	o vnc-3.3.7 [http://www.realvnc.com/download.html]
 	o vttest-20030301
-	o w3m-0.4.2
+	o w3m-0.5
 	o wavesurfer-1.5.3
 	o wdm-1.27
 	o wwwoffle-2.8a
