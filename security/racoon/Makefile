@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.66 2004/04/12 03:35:23 itojun Exp $
+# $NetBSD: Makefile,v 1.67 2004/04/25 03:22:42 snj Exp $
 #
 
-DISTNAME=	racoon-20040408a
+DISTNAME=	racoon-20040617a
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
@@ -39,9 +39,9 @@ CONFIGURE_ARGS+=--disable-ipv6
 .endif
 CONFIGURE_ARGS+=--sysconfdir=${PKG_SYSCONFDIR}
 .if defined(PKGREVISION)
-CONFIGURE_ARGS+=--with-pkgversion=netbsd-pkgsrc-20040408anb${PKGREVISION}
+CONFIGURE_ARGS+=--with-pkgversion=netbsd-pkgsrc-20040617anb${PKGREVISION}
 .else
-CONFIGURE_ARGS+=--with-pkgversion=netbsd-pkgsrc-20040408a
+CONFIGURE_ARGS+=--with-pkgversion=netbsd-pkgsrc-20040617a
 .endif
 
 pre-configure:
