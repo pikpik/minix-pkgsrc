@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/06/07 14:47:19 cjep Exp $
+# $NetBSD: Makefile,v 1.27 2003/07/17 22:53:25 grant Exp $
 # FreeBSD Id: Makefile,v 1.9 1997/03/08 05:00:11 gpalmer Exp
 #
 
@@ -12,7 +12,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.amanda.org/
 COMMENT=		Common libraries and binaries for Amanda
 
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 
 .include "../../mk/bsd.prefs.mk"
