@@ -1,16 +1,14 @@
-@comment $NetBSD: PLIST,v 1.2 2002/02/18 15:14:44 seb Exp $
+@comment $NetBSD$
 bin/ratpoison
-@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/ratpoison.info
 info/ratpoison.info
-@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/ratpoison.info
 man/man1/ratpoison.1
 share/doc/ratpoison/AUTHORS
 share/doc/ratpoison/COPYING
 share/doc/ratpoison/ChangeLog
 share/doc/ratpoison/NEWS
 share/doc/ratpoison/README
+share/ratpoison/genrpbindings
 share/ratpoison/ratpoison.el
 share/ratpoison/split.sh
-share/ratpoison/genrpbindings
-@dirrm share/doc/ratpoison
 @dirrm share/ratpoison
+@dirrm share/doc/ratpoison
