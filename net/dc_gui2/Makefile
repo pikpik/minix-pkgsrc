@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/06/10 13:21:52 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/06/10 13:25:37 wiz Exp $
 #
 
 DISTNAME=	dc_gui2-0.74
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.ac2i.tzo.com/dctc/ \
 		http://brainz.servebeer.com/dctc/

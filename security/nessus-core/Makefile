@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:18 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/09 17:01:25 frueauf Exp $
 #
 
 DISTNAME=	nessus-core-${VERS}
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/nessus-core
 .include 	"../nessus/Makefile.common"
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:54:46 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/06/02 08:26:03 martti Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC= 	${WRKDIR}/kvim-${KVIM_VERSION}/src
 CATEGORIES=	editors kde
 MASTER_SITES=	http://download.kde.org/stable/apps/KDE3.x/utils/ \

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2003/05/02 11:56:59 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/06/02 01:15:45 jschauma Exp $
 #
 
 DISTNAME=	gnomemm-1.2.2
 PKGNAME=	${DISTNAME:S/mm/--/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmm/}
 

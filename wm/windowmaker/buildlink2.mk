@@ -1,10 +1,10 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:46 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 18:40:16 jlam Exp $
 
 .if !defined(WINDOWMAKER_BUILDLINK2_MK)
 WINDOWMAKER_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			windowmaker
-BUILDLINK_DEPENDS.windowmaker?=		windowmaker>=0.80.0nb1
+BUILDLINK_DEPENDS.windowmaker?=		windowmaker>=0.80.2nb2
 BUILDLINK_PKGSRCDIR.windowmaker?=	../../wm/windowmaker
 
 EVAL_PREFIX+=			BUILDLINK_PREFIX.windowmaker=windowmaker

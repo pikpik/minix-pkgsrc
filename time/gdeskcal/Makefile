@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/05 19:33:15 drochner Exp $
 #
 
 DISTNAME=		gDeskCal-0_51
 PKGNAME=		gdeskcal-0.51
+PKGREVISION=		1
 CATEGORIES=		time
 MASTER_SITES=		http://www.pycage.de/download/
 

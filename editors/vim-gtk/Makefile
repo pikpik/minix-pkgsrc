@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2003/06/02 07:27:24 martti Exp $
+# $NetBSD: Makefile,v 1.36 2003/06/02 08:26:03 martti Exp $
 
 .include		"../vim-share/Makefile.common"
 
 PKGNAME=		vim-gtk-${VIM_VERSION}.${VIM_PATCHLEVEL}
+PKGREVISION=		1
 
 COMMENT=		Vim editor (vi clone) with X11 GTK+ GUI
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2003/06/29 19:41:08 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2003/07/13 02:42:09 hubertf Exp $
 #
 
 DISTNAME=	centericq-4.9.4
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://konst.org.ua/download/
 EXTRACT_SUFX=	.tar.bz2

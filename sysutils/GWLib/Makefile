@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/28 02:19:03 rh Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/06 08:51:33 rh Exp $
 #
 
 .include "../../sysutils/gworkspace/Makefile.common"
 PKGNAME=	${DISTNAME:S/gworkspace/GWLib/}
+PKGREVISION=	1
 
 COMMENT=	GWorkspace support library
 

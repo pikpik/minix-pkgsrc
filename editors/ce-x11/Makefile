@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2002/04/14 11:34:20 schmonz Exp $
+# $NetBSD: Makefile,v 1.3 2002/09/21 11:09:43 jlam Exp $
 #
 
 .include "../ce/Makefile.common"
 
 PKGNAME=		ce-x11-${VERSION}
+PKGREVISION=		1
 COMMENT+=		, X11 version
 
 USE_BUILDLINK2=		# defined

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.32 2003/05/02 11:56:35 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2003/06/01 06:53:30 martti Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/10/11 10:42:43 jkh Exp
 #
 
 DISTNAME=	fvwm-${FVWM_VER}
 PKGNAME=	fvwm2-${FVWM_VER}
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/ \
 		http://www.fvwm.org/generated/icon_download/ \

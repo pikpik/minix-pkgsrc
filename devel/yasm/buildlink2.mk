@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.1.1 2003/04/09 15:59:53 jmmv Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2003/06/28 11:47:01 jmmv Exp $
 #
 # This Makefile fragment is included by packages that use yasm.
 #
@@ -9,7 +9,7 @@
 YASM_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			yasm
-BUILDLINK_DEPENDS.yasm?=		yasm>=0.2.2
+BUILDLINK_DEPENDS.yasm?=		yasm>=0.2.2nb1
 BUILDLINK_PKGSRCDIR.yasm?=		../../devel/yasm
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.yasm=yasm

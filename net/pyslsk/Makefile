@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/19 18:42:09 hubertf Exp $
 #
 
 DISTNAME=	pyslsk-1.2.0
+PKGREVISION=	1
 CATEGORIES=	net audio x11
 MASTER_SITES=	http://www.sensi.org/~ak/pyslsk/
 

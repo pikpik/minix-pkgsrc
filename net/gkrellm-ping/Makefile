@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/05/02 11:56:02 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/03 22:20:17 wiz Exp $
 
 DISTNAME=	gkrellmPing-0.2-3
 PKGNAME=	gkrellm-ping-0.2.3
-PKGREVISION=	2
+PKGREVISION=	3
 WRKSRC=		${WRKDIR}/gkrellmPing
 CATEGORIES=	net sysutils
 MASTER_SITES=	http://gkrellmping.dweb.ro/downloads/

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/06/02 14:05:03 abs Exp $
+# $NetBSD: Makefile,v 1.9 2003/06/24 00:35:34 seb Exp $
 #
 
 DISTNAME=	prc-tools-2.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=prc-tools/}
 DISTFILES=	${DISTNAME}.tar.gz ${DIST_BINUTILS}.tar.bz2

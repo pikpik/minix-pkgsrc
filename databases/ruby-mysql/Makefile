@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2002/03/21 04:48:05 fredb Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/10 11:55:09 wiz Exp $
 #
 
 DISTNAME=	mysql-ruby-2.4.2
 PKGNAME=	${RUBY_PKGNAMEPREFIX}mysql-2.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.tmtm.org/mysql/ruby/
 

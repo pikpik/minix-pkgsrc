@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.10.2.2 2002/08/25 21:20:24 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/08/25 21:50:03 jlam Exp $
 
 DISTNAME=	nap-1.4.4
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nap/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2003/05/02 11:54:46 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2003/06/02 01:20:07 jschauma Exp $
 #
 
 DISTNAME=	manedit-0.5.6
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/${DISTNAME}/manedit
 CATEGORIES=	editors
 MASTER_SITES=	ftp://wolfpack.twu.net/users/wolfpack/

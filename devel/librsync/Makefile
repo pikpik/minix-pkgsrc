@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/09/19 01:51:24 uebayasi Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2002/10/15 13:49:19 agc Exp $
 #
 
 DISTNAME=		librsync-0.9.5.1
+PKGREVISION=		1
 CATEGORIES=		devel net
 MASTER_SITES=		http://rdiff-backup.stanford.edu/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2002/10/25 17:42:13 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/06/02 01:19:36 jschauma Exp $
 
 DISTNAME=	omega-0.90-pa4
 PKGNAME=	omega-0.90.4
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/omega
 CATEGORIES=	games
 #MASTER_SITES=	http://dolphin.openprojects.net/Omega/Downloads/Prealphas/

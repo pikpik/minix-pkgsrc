@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/04 16:22:06 hubertf Exp $
 #
 
 DISTNAME=	slurm-0.2.1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.raisdorf.net/files/code/
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.5 2003/05/23 18:04:32 salo Exp $
 #
 # This Makefile fragment is included by packages that use gimp-base.
 #
@@ -9,7 +9,7 @@
 GIMP_BASE_BUILDLINK2_MK=	# defined
 
 BUILDLINK_PACKAGES+=			gimp-base
-BUILDLINK_DEPENDS.gimp-base?=		gimp-base>=1.2.4
+BUILDLINK_DEPENDS.gimp-base?=		gimp-base>=1.2.5nb1
 BUILDLINK_PKGSRCDIR.gimp-base?=		../../graphics/gimp-base
 
 EVAL_PREFIX+=	BUILDLINK_PREFIX.gimp-base=gimp-base

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2003/04/20 19:26:18 cjep Exp $
+# $NetBSD: Makefile,v 1.4 2003/06/02 01:16:47 jschauma Exp $
 #
 
 DISTNAME=	aspell-it-0.50-2
 PKGNAME=	${DISTNAME:C/it-(.*)-(.*)$/italian-\1.\2/}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=aspell/dict/it/}
 EXTRACT_SUFX=	.tar.bz2

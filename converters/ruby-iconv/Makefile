@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2002/09/10 16:06:37 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/09 17:40:58 wiz Exp $
 #
 
 DISTNAME=	iconv-0.4.4
 PKGNAME=	${RUBY_PKGNAMEPREFIX}${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	converters
 MASTER_SITES=	http://member.nifty.ne.jp/nokada/archive/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2003/01/19 06:35:46 salo Exp $
+# $NetBSD: Makefile,v 1.5 2003/01/20 09:55:08 salo Exp $
 #
 
 DISTNAME=	aspell-sk-0.50.3-1.1
 PKGNAME=	${DISTNAME:C/sk-(.*)-(.*)$/slovak-\1.\2/}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://ispell.hq.sk/
 EXTRACT_SUFX=	.tar.bz2

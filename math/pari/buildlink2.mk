@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2003/07/07 21:57:50 jtb Exp $
 
 .if !defined(PARI_BUILDLINK2_MK)
 PARI_BUILDLINK2_MK=		# defined
 
 BUILDLINK_PACKAGES+=		pari
-BUILDLINK_DEPENDS.pari?=	pari>=2.1.5
+BUILDLINK_DEPENDS.pari?=	pari>=2.1.5nb1
 BUILDLINK_PKGSRCDIR.pari?=	../../math/pari
 BUILDLINK_DEPMETHOD.pari?=	build
 

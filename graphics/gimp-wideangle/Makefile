@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2003/06/18 18:09:56 salo Exp $
+# $NetBSD: Makefile,v 1.3 2003/06/27 10:07:37 drochner Exp $
 #
 
 DISTNAME=	wideangleFeb03
 PKGNAME=	gimp-wideangle-0.4
+PKGREVISION=			1
 WRKSRC=		${WRKDIR}/wideangle
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.ozemail.com.au/~hodsond/

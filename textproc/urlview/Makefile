@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4.2.1 2002/06/30 06:24:22 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/08/25 21:51:20 jlam Exp $
 
 DISTNAME=	urlview-0.9
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/contrib/ \
 		ftp://ftp.funet.fi/pub/unix/mail/mutt/contrib/ \

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/16 11:06:37 markd Exp $
 #
 
 DISTNAME=		fhist-1.12
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.canb.auug.org.au/~millerp/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.78 2003/06/24 06:45:46 grant Exp $
+# $NetBSD: Makefile,v 1.79 2003/07/09 08:15:16 grant Exp $
 #
 
 DISTNAME=		ethereal-0.9.13
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ethereal.com/pub/ethereal/ \
 			ftp://ftp.sunet.se/pub/network/monitoring/ethereal/ \

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2002/10/23 11:54:03 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2003/03/14 19:37:56 jlam Exp $
 #
 
 DISTNAME=	kdf-0.5.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils kde
 MASTER_SITES=	ftp://ftp.us.kde.org/pub/kde/stable/1.1.2/apps/utils/
 EXTRACT_SUFX=	.tgz

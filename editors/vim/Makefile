@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.44 2003/02/15 18:56:17 martti Exp $
+# $NetBSD: Makefile,v 1.45 2003/06/02 08:26:03 martti Exp $
 
 .include		"../vim-share/Makefile.common"
 
 PKGNAME=		vim-${VIM_VERSION}.${VIM_PATCHLEVEL}
+PKGREVISION=		1
 
 COMMENT=		Vim editor (vi clone) without gui
 

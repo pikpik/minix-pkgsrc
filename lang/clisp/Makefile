@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2002/12/01 14:49:15 salo Exp $
+# $NetBSD: Makefile,v 1.27 2003/03/29 12:41:25 jmmv Exp $
 
 DISTNAME=		clisp-2.27
-PKGREVISION=		1
+PKGREVISION=		2
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clisp/}

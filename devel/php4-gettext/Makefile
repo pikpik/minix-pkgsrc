@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2002/10/05 10:53:42 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/10/31 15:14:31 wiz Exp $
 
 MODNAME=		gettext
 CATEGORIES+=		devel
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PHP4 extension for gettext support
 
 USE_BUILDLINK2=		YES

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2002/10/25 17:58:04 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2003/01/24 13:36:20 wiz Exp $
 #
 
 DISTNAME=	vfu-3.04
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=utils/file/managers/} \
 		http://www.biscom.net/~cade/vfu/

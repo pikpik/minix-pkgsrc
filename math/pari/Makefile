@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2003/06/02 01:18:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2003/07/07 21:57:49 jtb Exp $
 
 DISTNAME=		pari-2.1.5
+PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		ftp://www.gn-50uma.de/gn/gn-50uma.de/pari-2.1/ \
 			http://www.gn-50uma.de/ftp/pari-2.1/

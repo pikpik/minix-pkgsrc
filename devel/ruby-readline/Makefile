@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2002/10/25 18:33:29 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:40:39 jmmv Exp $
 #
 
 DISTNAME=		${RUBY_DISTNAME}
 PKGNAME=		${RUBY_PKGNAMEPREFIX}readline-${RUBY_VERSION}
+PKGREVISION=		1
 WRKSRC=			${RUBY_WRKSRC}/ext/readline
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_RUBY}

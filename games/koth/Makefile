@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/04/02 12:06:40 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/04/02 12:18:58 wiz Exp $
 #
 
 DISTNAME=	koth-0.8.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://savannah.nongnu.org/download/koth/default.pkg/0.8.0/
 EXTRACT_SUFX=	.tar.bz2

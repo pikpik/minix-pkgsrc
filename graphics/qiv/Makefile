@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/05/05 19:05:15 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2003/06/02 01:19:15 jschauma Exp $
 #
 
 DISTNAME=	qiv-1.8-src
 PKGNAME=	qiv-1.8
-PKGREVISION=	1
+PKGREVISION=	2
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.klografx.net/qiv/download/

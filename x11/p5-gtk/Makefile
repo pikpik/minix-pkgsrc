@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2003/05/09 08:02:38 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2003/06/23 07:14:47 mrg Exp $
 #
 
 .include "Makefile.common"
 
 PKGNAME=		p5-gtk-${GTKPERL_VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 SVR4_PKGNAME=		p5gtk
 WRKSRC=			${WRKDIR}/${DISTNAME}/Gtk
 

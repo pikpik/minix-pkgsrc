@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2003/02/21 12:53:23 mycroft Exp $
+# $NetBSD: Makefile,v 1.27 2003/07/05 15:53:33 seb Exp $
 #
 
 DISTNAME=		librep-${REP_VERS}
 REP_VERS=		0.16.1
 #PKGREVISION=		3
+PKGREVISION=		1
 CATEGORIES=		lang devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=librep/}
 

@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/06/03 14:32:21 wiz Exp $
 
 DISTNAME=	defendguin-0.0.10
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.nbswebfx.com/downloads/
 

@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2003/03/27 18:59:37 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/06/02 01:20:49 jschauma Exp $
 # FreeBSD Id: Makefile,v 1.1.1.1 1998/08/09 15:13:33 kuriyama Exp
 #
 
 DISTNAME=		gettext-0.11.5
 PKGNAME=		gettext-lib-0.11.5
 SVR4_PKGNAME=		gttli
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=gettext/}
 

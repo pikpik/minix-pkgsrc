@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/03 00:45:22 wulf Exp $
 #
 
 DISTNAME=	xlog-0.8
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	http://people.debian.org/~pa3aba/download/
 

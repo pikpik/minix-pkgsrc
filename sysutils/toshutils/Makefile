@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/05/02 11:56:30 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/03 20:57:32 wiz Exp $
 #
 
 DISTNAME=	toshutils-991217
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.ne426pd.in2home.co.uk/
 

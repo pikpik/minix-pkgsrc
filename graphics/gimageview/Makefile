@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2003/05/02 11:55:17 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/12 11:29:43 zuntum Exp $
 
 DISTNAME=	gimageview-0.2.23
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmmviewer/}
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:04 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/05/02 14:16:28 wiz Exp $
 
 DISTNAME=	gnubile-0.20
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://gnutella.wego.com/file_depot/0-10000000/110000-120000/116705/folder/127699/
 
