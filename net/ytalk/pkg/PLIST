@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ytalk
+etc/ytalkrc
+man/man1/ytalk.1
