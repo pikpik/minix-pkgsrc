@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/06/22 13:09:51 agc Exp $
-# FreeBSD Id: Makefile,v 1.5 1997/04/28 11:30:44 joerg Exp
+# $NetBSD: Makefile,v 1.7 1998/07/04 08:09:07 mycroft Exp $
 #
 
 DISTNAME=       mkisofs-1.11.3

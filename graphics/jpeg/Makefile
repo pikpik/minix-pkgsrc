@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/06/22 12:39:46 agc Exp $
-# FreeBSD Id: Makefile,v 1.14 1997/07/17 15:12:43 max Exp
+# $NetBSD: Makefile,v 1.8 1998/07/04 04:59:29 mycroft Exp $
 #
 
 DISTNAME=       jpegsrc.v6b
