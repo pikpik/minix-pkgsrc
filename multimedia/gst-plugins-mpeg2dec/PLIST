@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gstreamer-0.8/libgstmpeg2dec.a
+lib/gstreamer-0.8/libgstmpeg2dec.la
+lib/gstreamer-0.8/libgstmpeg2dec.so
+@comment in gstreamer: @dirrm lib/gstreamer-0.8
