@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/04 15:01:55 peter Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/28 02:47:49 reed Exp $
 
 DISTNAME=		pflkm-20041204
 PKGREVISION=		1
@@ -23,6 +23,7 @@ CONF_FILES=		${PREFIX}/share/examples/${PKGBASE}/pf.conf \
 			${PKG_SYSCONFDIR}/pf.conf
 CONF_FILES+=		${PREFIX}/share/examples/${PKGBASE}/pf.os \
 			${PKG_SYSCONFDIR}/pf.os
+CONF_FILES_MODE=	0600
 
 OWN_DIRS=		${PREFIX}/lkm ${VARBASE}/chroot/pflogd
 OWN_DIRS+=		${PREFIX}/share/examples/${PKGBASE}
