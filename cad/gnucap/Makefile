@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/03/29 02:24:42 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2003/04/21 03:06:29 dmcmahill Exp $
 #
 
 DISTNAME=	gnucap-0.33
@@ -27,9 +27,8 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/gnucap
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/gnucap
 
-test: build
-	cd ${WRKSRC}/test && ./test ../src/*/gnucap "" 0001 == 2>&1 | \
-		${TEE} ${WRKDIR}/test.log
+do-test:
+	cd ${WRKSRC}/test && ./test ../src/*/gnucap "" 0001 ==
 
 .include "../../devel/readline/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
