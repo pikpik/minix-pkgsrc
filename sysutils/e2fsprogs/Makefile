@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 17:42:12 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/02/16 19:19:55 jschauma Exp $
 #
 
-DISTNAME=	e2fsprogs-1.19
+DISTNAME=	e2fsprogs-1.32
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=e2fsprogs/} \
 		ftp://ftp.dei.uc.pt/.d4/linuxberg/files/console/system/ \
