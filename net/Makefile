@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 1999/08/04 17:01:33 rh Exp $
+# $NetBSD: Makefile,v 1.78 1999/08/30 17:48:16 kim Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -98,6 +98,7 @@
     SUBDIR += socks5
     SUBDIR += spegla
     SUBDIR += srsh
+    SUBDIR += ssync
 #    SUBDIR += strobe
 #    SUBDIR += sup
 #    SUBDIR += tac_plus
