@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/04/26 18:56:15 garbled Exp $
+# $NetBSD: Makefile,v 1.11 1999/06/28 11:52:26 agc Exp $
 # FreeBSD Id: Makefile,v 1.18 1998/09/27 20:10:45 steve Exp
 
 DISTNAME=	octave-2.0.13
@@ -58,4 +58,4 @@ post-patch:
 	done
 .endif
 
-.include <../../mk/bsd.pkg.mk>
+.include "../../mk/bsd.pkg.mk"

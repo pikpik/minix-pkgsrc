@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1999/02/20 22:48:25 hubertf Exp $
+# $NetBSD: Makefile,v 1.6 1999/08/17 11:18:05 rh Exp $
 # FreeBSD Id: Makefile,v 1.25 1998/07/16 06:44:37 vanilla Exp
 #
 
@@ -23,4 +23,4 @@ post-configure:
 pre-install:
 	@(cd ${WRKSRC}/doc; ${MAKE} manpages)
 
-.include <../../mk/bsd.pkg.mk>
+.include "../../mk/bsd.pkg.mk"

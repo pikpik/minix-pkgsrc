@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 1999/02/20 22:48:45 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 1999/03/08 10:53:57 agc Exp $
 #
 
 DISTNAME=	squid-2.1.PATCH2
@@ -62,4 +62,4 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/squid.sh ${PREFIX}/etc/rc.d/squid.sh
 	@${SETENV} ${MAKE_ENV} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
 
-.include <../../mk/bsd.pkg.mk>
+.include "../../mk/bsd.pkg.mk"

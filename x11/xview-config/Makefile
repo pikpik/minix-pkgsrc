@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1998/07/03 23:30:10 tron Exp $
+# $NetBSD: Makefile,v 1.4 1999/04/01 14:07:56 agc Exp $
 # $FreeBSD Id: Makefile,v 1.9 1998/05/04 03:34:50 steve Exp
 #
 
@@ -18,4 +18,4 @@ NO_BUILD=	yes
 post-extract:
 	@chmod -R go+rX ${WRKDIR}
 
-.include <../../mk/bsd.pkg.mk>
+.include "../../mk/bsd.pkg.mk"
