@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.110 2003/01/19 20:22:19 tron Exp $
+# $NetBSD: Makefile,v 1.111 2003/01/22 03:29:52 lukem Exp $
 
 MOZILLA=	mozilla
 MOZILLA_BIN=	mozilla-bin
@@ -8,6 +8,7 @@ PKGREVISION=	4
 
 COMMENT=	Open-source version of the Netscape browser
 
+USE_CXX=	yes
 BUILD_SVG=	# defined
 
 .include	"../../www/mozilla/Makefile.common"
