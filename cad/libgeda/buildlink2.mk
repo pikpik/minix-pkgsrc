@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink2.mk,v 1.1 2002/12/13 05:19:52 dmcmahill Exp $
 #
 # This Makefile fragment is included by packages that use libgeda.
 #
@@ -26,7 +26,7 @@ BUILDLINK_FILES.libgeda+=	lib/libgeda.*
 
 .include "../../devel/libstroke/buildlink2.mk"
 .include "../../graphics/libgdgeda/buildlink2.mk"
-.include "../../lang/guile/buildlink2.mk"
+.include "../../lang/guile14/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 
 BUILDLINK_TARGETS+=	libgeda-buildlink

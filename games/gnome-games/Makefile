@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2002/12/01 02:00:14 salo Exp $
+# $NetBSD: Makefile,v 1.46 2002/12/24 06:10:02 wiz Exp $
 
 DISTNAME=		gnome-games-1.4.0.4
 PKGREVISION=		3
@@ -66,7 +66,7 @@ post-install:
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"
 # Required for ports which don't build "libgtop".
-.include "../../lang/guile/buildlink2.mk"
+.include "../../lang/guile14/buildlink2.mk"
 .include "../../x11/gnome-core/buildlink2.mk"
 .include "../../mk/automake.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/16 01:36:07 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.8 2002/11/22 00:41:14 dmcmahill Exp $
 #
 
 DISTNAME=	gerbv-0.11
@@ -17,6 +17,6 @@ USE_GMAKE=	YES
 
 .include "../../graphics/gdk-pixbuf/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
-.include "../../lang/guile/buildlink2.mk"
+.include "../../lang/guile14/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
