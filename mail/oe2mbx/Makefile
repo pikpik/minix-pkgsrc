@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/05 16:27:39 zuntum Exp $
 #
 
 DISTNAME=	oe2mbx-1.21
@@ -17,6 +17,7 @@ MAKE_ENV+=      INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_DATA="${INSTALL_DATA}"
 
 BUILD_TARGET=	liboe oe2mbx
+INSTALLATION_DIRS=	bin lib include
 
 pre-build:
 	cd ${WRKSRC} && ${MAKE_PROGRAM} clean
