@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2001/03/29 22:22:14 jwise Exp $
+@comment $NetBSD: PLIST,v 1.9 2001/08/11 22:05:24 jwise Exp $
 etc/rc.d/tomcat
 tomcat/KEYS
 tomcat/LICENSE
@@ -225,7 +225,6 @@ tomcat/src/org/apache/tomcat/facade/HttpServletRequestFacade.java
 tomcat/src/org/apache/tomcat/facade/HttpServletResponseFacade.java
 tomcat/src/org/apache/tomcat/facade/HttpSessionFacade.java
 tomcat/src/org/apache/tomcat/facade/RequestDispatcherImpl.java
-tomcat/src/org/apache/tomcat/facade/RequestDispatcherImpl.java.orig
 tomcat/src/org/apache/tomcat/facade/ServletConfigImpl.java
 tomcat/src/org/apache/tomcat/facade/ServletContextFacade.java
 tomcat/src/org/apache/tomcat/facade/ServletInputStreamFacade.java
