@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2001/09/27 23:17:56 jlam Exp $
+# $NetBSD: Makefile,v 1.55 2001/11/27 21:03:07 tron Exp $
 
 DISTNAME=		libgtop-1.0.12
 PKGNAME=		${DISTNAME}nb1
@@ -22,7 +22,7 @@ OSVERSION_SPECIFIC=	yes
 .if (${MACHINE_ARCH} != alpha) && (${MACHINE_ARCH} != arm32) && \
     (${MACHINE_ARCH} != i386) && (${MACHINE_ARCH} != m68k) && \
     (${MACHINE_ARCH} != mipsel) && (${MACHINE_ARCH} != powerpc) && \
-    (${MACHINE_ARCH} != sparc)
+    (${MACHINE_ARCH} != sparc) && (${MACHINE_ARCH} != sparc64)
 IGNORE=			"${PKGNAME} has not yet been ported to ${MACHINE_ARCH}."
 IGNORE+=		"Please look at /usr/include/${MACHINE_ARCH}/pcb.h"
 IGNORE+=		"and update patches/patch-al appropriately."
