@@ -1,3 +1,4 @@
+# $NetBSD$
 # New ports collection makefile for:	xpm
 # Version required:     3.4j
 # Date created:		14 September 1994
