@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.4 2003/10/05 07:07:14 jlam Exp $
 
 --- hints/netbsd.sh.orig	Tue Jul  1 23:49:58 2003
 +++ hints/netbsd.sh	Wed Jul  2 11:49:17 2003
