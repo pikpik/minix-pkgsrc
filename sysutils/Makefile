@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.263 2004/10/11 09:42:35 kim Exp $
+# $NetBSD: Makefile,v 1.264 2004/10/11 15:57:02 minskim Exp $
 
 COMMENT=	System utilities
 
@@ -37,6 +37,8 @@ SUBDIR+=	cpuburn
 SUBDIR+=	cpuid
 SUBDIR+=	crashme
 SUBDIR+=	daemontools
+SUBDIR+=	dbus
+SUBDIR+=	dbus-glib
 SUBDIR+=	depot
 SUBDIR+=	desktop-file-utils
 SUBDIR+=	dmassage
