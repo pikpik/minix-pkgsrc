@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.181 2003/08/16 18:28:44 dillo Exp $
+# $NetBSD: Makefile,v 1.182 2003/08/22 13:30:12 drochner Exp $
 #
 
 COMMENT=	Games
@@ -105,6 +105,7 @@ SUBDIR+=	koth
 SUBDIR+=	kulki
 SUBDIR+=	lbreakout
 SUBDIR+=	lbreakout2
+SUBDIR+=	level9
 SUBDIR+=	lgeneral
 SUBDIR+=	lgeneral-data
 SUBDIR+=	lincity
