@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.66 2003/07/12 08:53:40 jtb Exp $
 
 DISTNAME=		gcc-2.95.3
-PKGREVISION=		5
+PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/}
 

@@ -1,2 +1,3 @@
 @comment $NetBSD: PLIST,v 1.8 2003/07/04 16:27:27 seb Exp $
-@this plist intentionally left blank
+share/examples/${DISTNAME}/mk.conf
+@dirrm share/examples/${DISTNAME}
