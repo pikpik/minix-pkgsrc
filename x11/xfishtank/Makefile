@@ -1,9 +1,9 @@
-# $NetBSD$
 # New ports collection makefile for:   xfishtank
 # Version required:    2.2
 # Date created:        24th April 1997
 # Whom:                jacs
 #
+# $NetBSD: Makefile,v 1.2 1997/10/09 11:54:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/06/17 07:45:12 asami Exp
 #
 
