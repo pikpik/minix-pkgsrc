@@ -1,5 +1,5 @@
 #
-# $NetBSD: Makefile,v 1.4 2001/10/15 17:25:09 martti Exp $
+# $NetBSD: Makefile,v 1.5 2001/11/19 16:23:14 jlam Exp $
 #
 
 DISTNAME=		cvsweb-1.112
@@ -22,16 +22,15 @@ INSTALL_FILE=		${WRKDIR}/INSTALL
 
 .include "../../mk/bsd.prefs.mk"
 
-APACHE_SYSCONFDIR?=	${CONFDIR}/httpd
+PKG_SYSCONFSUBDIR?=	httpd
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 
-CONF_FILES=	${EGDIR}/cvsweb.conf.default ${APACHE_SYSCONFDIR}/cvsweb.conf
-MAKE_DIRS=	${APACHE_SYSCONFDIR}
+CONF_FILES=	${EGDIR}/cvsweb.conf.default ${PKG_SYSCONFDIR}/cvsweb.conf
 
 do-build:
 	${MV} ${WRKSRC}/cvsweb.cgi ${WRKSRC}/cvsweb.cgi.bak
 	${SED}	-e 's,/usr/bin/perl,${PERL5},'				\
-		-e 's,/usr/local/web/apache/conf/,${APACHE_SYSCONFDIR}/,' \
+		-e 's,/usr/local/web/apache/conf/,${PKG_SYSCONFDIR}/,'	\
 	    ${WRKSRC}/cvsweb.cgi.bak > ${WRKSRC}/cvsweb.cgi
 
 do-install:
