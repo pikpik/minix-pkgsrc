@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/MIME/Base64/Base64.a
+lib/perl5/site_perl/<$ARCH>-netbsd/auto/MIME/Base64/extralibs.ld
+@dirrm lib/perl5/site_perl/<$ARCH>-netbsd/auto/MIME/Base64
+@dirrm lib/perl5/site_perl/<$ARCH>-netbsd/auto/MIME
