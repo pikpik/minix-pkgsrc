@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2001/02/08 19:05:00 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2001/02/17 17:51:38 wiz Exp $
 #
 
-DISTNAME=		cups-${VERS}-2-source
-PKGNAME=		cups-${VERS}.2nb1
+DISTNAME=		cups-${VERS}-3-source
+PKGNAME=		cups-${VERS}.3nb1
 VERS=			1.1.6
 WRKSRC=			${WRKDIR}/cups-${VERS}
 CATEGORIES=		print
