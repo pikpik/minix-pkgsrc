@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/14 17:21:53 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/14 18:26:29 jmmv Exp $
 #
 
 DISTNAME=	aiksaurus-1.0.1
@@ -9,7 +9,9 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://aiksaurus.sourceforge.net/
 COMMENT=	English-language thesaurus
 
-USE_BUILDLINK2=	YES
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=		--without-gtk
