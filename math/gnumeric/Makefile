@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2002/10/16 11:31:24 martti Exp $
+# $NetBSD: Makefile,v 1.62 2002/11/02 02:42:04 rh Exp $
 #
 
 DISTNAME=		gnumeric-1.0.10
@@ -16,6 +16,7 @@ ONLY_FOR_PLATFORM=	NetBSD-1.5[R-Z]-* NetBSD-1.5Z[A-Z]-* NetBSD-1.[6-9]*-* SunOS-
 #BUILD_DEPENDS+=		python>=2.0:../../lang/python
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_GMAKE=		YES
 USE_PERL5=		YES

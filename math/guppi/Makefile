@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2002/09/24 10:20:06 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2002/10/19 10:54:55 rh Exp $
 
 DISTNAME=	Guppi-0.40.3
 PKGNAME=	${DISTNAME:S/G/g/}
@@ -27,6 +27,7 @@ PLIST_SUBST+=		GNUMERIC="@comment "
 DEPENDS+=		guile>=1.4:../../lang/guile
 
 USE_BUILDLINK2=		YES
+USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
