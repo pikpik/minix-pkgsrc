@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/07/15 08:13:41 tron Exp $
+# $NetBSD: Makefile,v 1.3 1999/04/15 20:39:49 tron Exp $
 #
 
 DISTNAME=	xcolorsel-1.1a-src
@@ -8,9 +8,12 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}
 
 MAINTAINER=	perry@netbsd.org
 
-DEPENDS+=	Xaw3d-1.5:../../x11/Xaw3d
-
 WRKSRC=		${WRKDIR}/xcolorsel
 USE_IMAKE=	yes
+USE_XAW=	yes
+
+.include "../../mk/bsd.prefs.mk"
+
+XAW_TYPE?=	3d
 
 .include "../../mk/bsd.pkg.mk"
