@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2001/05/14 17:14:02 rh Exp $
+# $NetBSD: Makefile,v 1.98 2001/05/19 13:05:37 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -40,6 +40,7 @@ SUBDIR+=	i2ocfg
 SUBDIR+=	kapm
 SUBDIR+=	kdf
 SUBDIR+=	klavg
+SUBDIR+=	koncd
 SUBDIR+=	lavaps
 SUBDIR+=	logrot
 SUBDIR+=	lsof
