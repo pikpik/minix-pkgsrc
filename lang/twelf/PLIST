@@ -1,12 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/01/22 22:41:23 kristerw Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/07/07 23:33:49 seb Exp $
 bin/twelf-server
 bin/twelf-sml
-info/twelf.info
-info/twelf.info-1
-info/twelf.info-2
-info/twelf.info-3
-info/twelf.info-4
-info/twelf.info-5
 lib/twelf/bin/.dbase/README
 lib/twelf/bin/.heap/README
 lib/twelf/bin/.heap/twelf-server.${BOX}-${OS}
