@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/06/21 15:57:16 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2002/09/14 02:59:25 hubertf Exp $
 
 DISTNAME=		silc-server-0.9.5
 CATEGORIES=		chat security
@@ -47,8 +47,6 @@ RCD_SCRIPTS=		silcd
 RCD_SCRIPTS_MODE=	0555
 
 OWN_DIRS_PERMS+=	/var/log/silcd ${SILCD_USER} ${SILCD_GROUP} 0700
-
-DEINSTALL_EXTRA_TMPL=	${PKGDIR}/DEINSTALL
 
 CONFIGURE_ARGS+=	--with-docdir=${PREFIX}/share/doc/silcd
 CONFIGURE_ARGS+=	--with-etcdir=${PKG_SYSCONFDIR}

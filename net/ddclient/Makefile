@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7.2.1 2002/07/01 17:44:58 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/08/25 21:49:56 jlam Exp $
 
 DISTNAME=	ddclient-3.6.2
 CATEGORIES=	net
@@ -16,7 +16,6 @@ RCD_SCRIPTS=		ddclient
 CONF_FILES_PERMS=	${EGDIR}/sample-etc_ddclient.conf		\
 			${PKG_SYSCONFDIR}/ddclient.conf			\
 			${ROOT_USER} ${ROOT_GROUP} 0600
-DEINSTALL_EXTRA_TMPL=	${.CURDIR}/DEINSTALL
 
 do-configure:
 	cd ${WRKSRC}; for file in ddclient; do				\

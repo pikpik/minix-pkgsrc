@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/06/28 17:13:59 taca Exp $
+# $NetBSD: Makefile,v 1.4 2002/07/07 14:36:40 taca Exp $
 
 DISTNAME=		samba-${SAMBA_BASE_VERSION}-ja-${SAMBA_JA_VERSION}
 PKGNAME=		ja-samba-${SAMBA_BASE_VERSION}.${SAMBA_JA_VERSION}
@@ -110,8 +110,6 @@ SUPPORT_FILES_PERMS=	${SMBPASSWD_FILE}
 RCD_SCRIPTS=		samba nmbd smbd
 OWN_DIRS=		${SAMBA_ETCDIR} ${SAMBA_LOCKDIR}
 OWN_DIRS_PERMS=		${SAMBA_PRIVATE} ${ROOT_USER} ${ROOT_GROUP} 0500
-
-INSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
 
 # Remove irrelevant files for this package.
 post-extract:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/07/22 23:30:29 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2002/07/28 01:54:37 schmonz Exp $
 #
 
 DISTNAME=	qmail-1.03
@@ -36,8 +36,6 @@ RCD_SCRIPTS_EXAMPLEDIR=	${QMAILDIR}/etc/rc.d
 
 NO_MTREE=	YES
 LOCALBASE=	/
-
-DEINSTALL_EXTRA_TMPL=	${PKGDIR}/DEINSTALL
 
 do-configure:
 	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
