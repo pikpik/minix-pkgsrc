@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/05/22 14:36:06 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/07/17 22:52:49 grant Exp $
 #
 
 DISTNAME=	Linux-${PKGNAME}
@@ -70,7 +70,7 @@ CONF_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}
 
 # this is so it won't try to interactively install any configs
 pre-build:
-	touch ${WRKSRC}/.quiet_install
+	${TOUCH} ${WRKSRC}/.quiet_install
 
 post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
