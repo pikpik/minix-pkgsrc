@@ -1,8 +1,8 @@
 $NetBSD$
 
---- shell/main.c.orig	Mon Jul 30 16:22:50 2001
+--- shell/main.c.orig	Tue Sep 18 01:21:34 2001
 +++ shell/main.c
-@@ -53,6 +53,23 @@
+@@ -60,6 +60,23 @@
  static gboolean no_splash = FALSE;
  extern char *evolution_debug_log;
  
@@ -24,9 +24,9 @@ $NetBSD$
 +#endif
 +
  
- static void
- no_views_left_cb (EShell *shell, gpointer data)
-@@ -273,6 +290,10 @@
+ static GtkWidget *
+ quit_box_new (void)
+@@ -347,6 +364,10 @@
  	}
  
  	gtk_idle_add (idle_cb, uri_list);
