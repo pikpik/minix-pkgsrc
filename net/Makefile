@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 1999/09/01 20:26:34 tron Exp $
+# $NetBSD: Makefile,v 1.82 1999/09/10 15:48:44 rh Exp $
 # FreeBSD Id: Makefile,v 1.117 1997/08/16 03:11:52 gpalmer Exp 
 #
 
@@ -116,6 +116,7 @@
 #    SUBDIR += trafshow
     SUBDIR+= ttcp
     SUBDIR += ucd-snmp
+    SUBDIR += ucd-snmp-current
     SUBDIR += upclient
     SUBDIR += vnc
 #    SUBDIR += wais
