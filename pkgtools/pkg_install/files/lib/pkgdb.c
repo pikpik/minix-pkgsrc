@@ -1,4 +1,4 @@
-/*	$NetBSD: pkgdb.c,v 1.15 2003/09/02 07:35:04 jlam Exp $	*/
+/*	$NetBSD: pkgdb.c,v 1.13 2003/09/02 08:28:35 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: pkgdb.c,v 1.15 2003/09/02 07:35:04 jlam Exp $");
+__RCSID("$NetBSD: pkgdb.c,v 1.13 2003/09/02 08:28:35 jlam Exp $");
 #endif
 
 /*
@@ -41,7 +41,9 @@ __RCSID("$NetBSD: pkgdb.c,v 1.15 2003/09/02 07:35:04 jlam Exp $");
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#if HAVE_DB_H
+#if HAVE_DB1_DB_H
+#include <db1/db.h>
+#elif HAVE_DB_H
 #include <db.h>
 #endif
 #if HAVE_ERR_H
