@@ -1,0 +1,9 @@
+==============================================================================
+$NetBSD$
+
+Please read graphviz license terms in:
+
+${PREFIX}/share/doc/graphviz/MINTERMS.txt
+${PREFIX}/share/doc/graphviz/COPYING
+
+==============================================================================

@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- MINTERMS.txt.orig	Fri Oct  6 18:10:34 2000
++++ MINTERMS.txt
+@@ -2,7 +2,7 @@
+ Appendix A - Minimum Terms
+ --------------------------
+ 
+-LICENSOR: ______________
++LICENSOR: The NetBSD Project
+ 
+ LICENSE AGREEMENT
+ 
