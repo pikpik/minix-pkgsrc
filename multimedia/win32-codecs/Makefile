@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2004/07/03 05:28:09 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/05 23:33:30 wiz Exp $
 #
 
-DISTNAME=	win32codecs-20040703
-PKGNAME=	win32-codecs-040703.1
+DISTNAME=	windows-all-20040809
+PKGNAME=	win32-codecs-040809.1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.mplayerhq.hu/MPlayer/releases/codecs/ \
 		http://www2.mplayerhq.hu/MPlayer/releases/codecs/ \
 		ftp://ftp.mplayerhq.hu/MPlayer/releases/codecs/
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.zip
 DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=	qt65dlls-20040704.tar.bz2
 DISTFILES+=	qtextras-20040704.tar.bz2
