@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2001/07/13 23:12:18 itojun Exp $
+# $NetBSD: Makefile,v 1.3 2001/07/18 06:47:36 itojun Exp $
 
-DISTNAME=	lambd-20010718
+DISTNAME=	lambd-20010719
 CATEGORIES=	sysutils
 MASTER_SITES=	# none
 DISTFILES=	# none
