@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2000/07/31 01:56:43 hubertf Exp $
+# $NetBSD: Makefile,v 1.67 2000/08/13 19:03:06 wiz Exp $
 #
 
     SUBDIR += ac3dec
@@ -77,6 +77,7 @@
     SUBDIR += timidity
     SUBDIR += tosha
     SUBDIR += tracker
+    SUBDIR += vorbis
     SUBDIR += wmsound
     SUBDIR += wsoundprefs
     SUBDIR += xamp
