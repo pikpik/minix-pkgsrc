@@ -1,5 +1,0 @@
-$NetBSD: distinfo,v 1.2 2001/04/20 15:05:07 skrll Exp $
-
-SHA1 (t1lib-1.1.1.tar.gz) = 5183f718dc0b90ff8c0aee4fbcfdbbc90e5db883
-Size (t1lib-1.1.1.tar.gz) = 1442934 bytes
-SHA1 (patch-ac) = a75f5dc4a4c5d8e564690b774345488383d21580
