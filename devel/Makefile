@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 1999/10/17 04:33:00 fredb Exp $
+# $NetBSD: Makefile,v 1.86 1999/11/05 04:32:28 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.78 1997/10/01 08:32:59 cracauer Exp
 #
 
@@ -57,6 +57,7 @@
     SUBDIR += libgetopt
     SUBDIR += libgtop
     SUBDIR += libhfs
+    SUBDIR += libnet
     SUBDIR += libproplist
     SUBDIR += libscsi
     SUBDIR += libslang
