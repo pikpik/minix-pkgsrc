@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 1998/06/12 20:41:54 tv Exp $
+# $NetBSD: Makefile,v 1.26 1998/06/15 10:25:24 tron Exp $
 # FreeBSD Id: Makefile,v 1.47 1997/11/10 22:04:42 dima Exp
 #
 
@@ -66,7 +66,7 @@ DEPENDS+=		socks5-1.0.2:../../net/socks5
 .endif
 
 # Don't install "ssh" setuid
-.if defined(SSH_NO_SUID) && ${SSH_NO_SUID} == YES
+.if !defined(SSH_SUID) || ${SSH_SUID} != YES
 CONFIGURE_ARGS+=	--disable-suid-ssh
 .endif
 
