@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/23 21:50:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/18 19:46:55 wiz Exp $
 #
 
 DISTNAME=		bk_edit-0.6.23
@@ -15,6 +15,9 @@ BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
+
+MAKE_ENV+=		PKG_CFLAGS=${CFLAGS:Q}
+MAKE_ENV+=		PKG_LDFLAGS=${LDFLAGS:Q}
 
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
