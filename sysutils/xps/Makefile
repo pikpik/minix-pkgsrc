@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	xps-3.04
+DISTNAME=	xps-3.06
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.netwinder.org/users/r/rocky/
 
