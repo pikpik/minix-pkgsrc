@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- config.c.orig	Sat Dec  5 11:52:07 1998
 +++ config.c	Thu Aug 26 15:36:02 1999
 @@ -705,11 +705,15 @@

@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- sockets.h.orig	Mon Aug 23 19:34:19 1999
 +++ sockets.h	Mon Aug 23 19:33:57 1999
 @@ -20,7 +20,7 @@

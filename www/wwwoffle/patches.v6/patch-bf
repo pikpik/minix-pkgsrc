@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- wwwoffle.c.orig	Tue Aug 24 19:33:32 1999
 +++ wwwoffle.c	Tue Aug 24 19:41:22 1999
 @@ -216,7 +216,7 @@
