@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2004/03/21 07:06:58 snj Exp $
+# $NetBSD: Makefile,v 1.15 2004/03/28 20:16:09 mycroft Exp $
 #
 
 DISTNAME=	faad2-2.0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
-MAINTAINER=	dillo@giga.or.at
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://faac.sourceforge.net/
 COMMENT=	AAC decoding library
 
