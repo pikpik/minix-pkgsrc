@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/02/15 20:46:27 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2002/02/17 21:11:33 jlam Exp $
 #
 
 DISTNAME=	gimp-print-4.2.0
@@ -24,4 +24,5 @@ CONFIGURE_ARGS+=	--without-translated-ppds
 CONFIGURE_ARGS+=	--without-samples
 CONFIGURE_ARGS+=	--disable-escputil
 
+.include "../../devel/gettext-lib/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
