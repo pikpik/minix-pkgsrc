@@ -62,7 +62,6 @@ share/silc/help/motd
 share/silc/help/msg
 share/silc/help/names
 share/silc/help/nick
-share/silc/help/note
 share/silc/help/notice
 share/silc/help/oper
 share/silc/help/part
@@ -110,3 +109,5 @@ share/silc/themes/default.theme
 @dirrm share/silc
 @dirrm share/doc/silc
 @dirrm etc/silc
+@dirrm lib/silc/modules
+@dirrm lib/silc
