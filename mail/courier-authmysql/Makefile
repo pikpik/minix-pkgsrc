@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/21 14:43:16 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/11 16:45:26 jlam Exp $
 
 PKGNAME=	courier-authmysql-${BASE_VERS}
 COMMENT=	Courier MySQL authentication module
@@ -28,7 +28,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/authlib/authdaemond.mysql ${AUTHLIBDIR}
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/authlib/authmysqlrc ${EGDIR}/authmysqlrc.dist
-	${INSTALL_DATA_DIR} ${HTMLDIR}
-	${INSTALL_DATA} ${WRKSRC}/authlib/README.authmysql.html	${HTMLDIR}
+	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/authlib/README.authmysql.html	${DOCDIR}
 
 .include "../../mk/bsd.pkg.mk"
