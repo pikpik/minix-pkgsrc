@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/06/04 23:54:38 jtb Exp $
+# $NetBSD: Makefile,v 1.3 2001/07/10 23:14:16 fredb Exp $
 #
 
 DISTNAME=	dvi2tty
@@ -11,6 +11,9 @@ MAINTAINER=	fredb@netbsd.org
 COMMENT=	Program for previewing DVI files
 
 LICENSE=	no-commercial-use
+USE_BUILDLINK_ONLY=	# defined
+MAKE_FLAGS+=	CC="${CC}"
+MAKE_FLAGS+=	CFLAGS="${CFLAGS}"
 
 pre-patch:
 	cd ${WRKSRC};						\
