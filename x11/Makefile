@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.172 2000/08/29 19:56:42 jwise Exp $
+# $NetBSD: Makefile,v 1.173 2000/08/31 14:14:21 jwise Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -133,6 +133,7 @@
     SUBDIR += xfishtank
     SUBDIR += xflame
     SUBDIR += xforms
+    SUBDIR += xfstt
     SUBDIR += xgas
     SUBDIR += xglobe
     SUBDIR += xhangglider
