@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/07/17 09:39:05 rh Exp $
+# $NetBSD: Makefile,v 1.2 2000/08/18 22:46:51 hubertf Exp $
 #
 
 DISTNAME=		${PKGNAME}-i386.linux
@@ -26,6 +26,8 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 NO_BUILD=		yes
 MESSAGE_FILE=		${WRKDIR}/MESSAGE
+
+LDD?=			/emul/linux/usr/bin/ldd
 
 do-configure:
 	cd ${WRKSRC} && ${CP} AsWedit AsWedit.bak && \
