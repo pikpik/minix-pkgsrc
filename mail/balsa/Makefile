@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/01/24 13:59:57 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2002/02/01 17:02:18 mjl Exp $
 #
 
 DISTNAME=	balsa-1.2.4
@@ -21,6 +21,7 @@ DEPENDS+=	libiconv-*:../../converters/libiconv
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
+USE_X11BASE=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--disable-more-warnings --without-esmtp \
 			--enable-pcre --disable-threads 
