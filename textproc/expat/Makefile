@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/03/02 18:13:58 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2004/08/05 22:16:59 recht Exp $
 #
 
 DISTNAME=	expat-1.95.8
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=expat/}
 
