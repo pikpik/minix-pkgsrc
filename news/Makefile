@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1998/08/29 21:55:39 frueauf Exp $
+# $NetBSD: Makefile,v 1.11 1998/09/05 03:26:55 garbled Exp $
 # FreeBSD Id: Makefile,v 1.28 1997/06/27 23:02:54 brian Exp 
 #
 
@@ -17,7 +17,7 @@
 #    SUBDIR += plor
 #    SUBDIR += rkive
 #    SUBDIR += slnr
-#    SUBDIR += slrn
+    SUBDIR += slrn
 #    SUBDIR += slurp
     SUBDIR += suck
     SUBDIR += tin
