@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:48:05 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/19 23:08:30 dent Exp $
 
 DISTNAME=	randlib.c-1.3
 PKGNAME=	randlib-1.3
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://odin.mdacc.tmc.edu/pub/source/
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://odin.mdacc.tmc.edu/anonftp/
 COMMENT=	Library of C Routines for Random Number Generation
+
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/randlib
