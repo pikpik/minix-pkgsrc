@@ -1,5 +1,7 @@
 #!/bin/sh
-
+#
+# $NetBSD$
+#
 # PROVIDE: named
 # REQUIRE: SERVERS
 
