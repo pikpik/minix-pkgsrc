@@ -1,6 +1,6 @@
 #! @RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: tomcat.sh,v 1.8 2002/12/28 22:34:14 jlam Exp $
+# $NetBSD: tomcat.sh,v 1.9 2003/12/04 15:00:57 grant Exp $
 #
 # PROVIDE: tomcat
 # REQUIRE: DAEMON
@@ -9,6 +9,7 @@
 # tomcat=YES in /etc/rc.conf.
 
 PREFIX=@PREFIX@
+TOMCAT_LIB=@TOMCAT_LIB@
 
 if [ -z "${JAVA_HOME}" ]
 then
@@ -18,7 +19,7 @@ fi
 
 name="tomcat"
 rcvar=$name
-command="${PREFIX}/tomcat/bin/tomcat.sh"
+command="${TOMCAT_LIB}/bin/catalina.sh"
 
 # set defaults
 if [ -r /etc/rc.conf ]
@@ -63,12 +64,12 @@ then
 		case ${cmd} in
 		run|start)
 			echo "Starting ${name}."
-			(cd ${PREFIX}/tomcat && ${command} ${cmd})
+			(cd ${TOMCAT_LIB} && ${command} ${cmd})
 			;;
 
 		stop)
 			echo "Stopping ${name}."
-			(cd ${PREFIX}/tomcat && ${command} ${cmd})
+			(cd ${TOMCAT_LIB} && ${command} ${cmd})
 			;;
 
 		restart)
@@ -78,7 +79,7 @@ then
 			;;
 
 		flush)
-			cd ${PREFIX}/tomcat/work && rm -rf */*
+			cd ${TOMCAT_LIB}/work && rm -rf */*
 			;;
 
 		*)
