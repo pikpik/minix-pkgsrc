@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/emitc
+bin/mph
+bin/mphm
+bin/mphminm
+share/doc/mph.doc
