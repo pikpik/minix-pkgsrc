@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2004/02/10 17:56:55 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/04 15:55:18 minskim Exp $
 #
 
 DISTNAME=	bsddb3-4.2.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pybsddb/}
 
@@ -18,6 +19,11 @@ PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
 
 BUILDLINK_DEPENDS.db4+=		db4>=4.2.52
+
+.include "../../mk/pthread.buildlink3.mk"
+.if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "native"
+PYTHON_VERSIONS_ACCEPTED=	23pth 22pth
+.endif
 
 .include "../../databases/db4/buildlink3.mk"
 .include "../../lang/python/extension.mk"
