@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.369 2003/04/11 17:08:00 cjep Exp $
+# $NetBSD: Makefile,v 1.370 2003/04/13 13:02:30 cjep Exp $
 #
 
 COMMENT=	Networking tools
@@ -214,6 +214,7 @@ SUBDIR+=	py-google
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-soappy
 SUBDIR+=	py-xmlrpclib
+SUBDIR+=	qadsl
 SUBDIR+=	ra-pna-proxy
 SUBDIR+=	ra-rtsp-proxy
 SUBDIR+=	radiusd-cistron
