@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2001/04/17 12:26:17 tron Exp $
+# $NetBSD: Makefile,v 1.22 2001/04/27 22:39:50 jtb Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -6,6 +6,7 @@ PKG_MISC_TARGETS?=	benchmark results
 
 SUBDIR+=	benchfft
 SUBDIR+=	bonnie
+SUBDIR+=	bonnie++
 SUBDIR+=	bytebench
 SUBDIR+=	dhrystone
 SUBDIR+=	fib
