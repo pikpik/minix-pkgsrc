@@ -1,8 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/07/30 11:14:32 frueauf Exp $
 #
 
 DISTNAME=	nessus-libraries-${VERS}
 .include 	"../nessus/Makefile.common"
+
+USE_LIBTOOL=		yes
+LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig \
+			${WRKSRC}/libpeks/ltconfig \
+			${WRKSRC}/libpeks/gmp3/ltconfig
 
 # The detection of the gmp library from pkgsrc does unfortunatly not
 # work. Feel free to tweak the configure script of nessus-library to
