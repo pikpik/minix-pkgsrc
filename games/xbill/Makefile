@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/02/16 15:11:00 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2001/09/27 23:18:08 jlam Exp $
 #
 
 DISTNAME=		xbill-2.0
@@ -12,11 +12,12 @@ COMMENT=		stop the dreaded Windows virus from infecting computers
 
 CONFLICT=		gnome-games-[0-9]*
 
+USE_BUILDLINK2=		YES
 USE_IMAKE=		YES
-USE_XPM=		YES
 NO_INSTALL_MANPAGES=	YES
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/xbill.man ${PREFIX}/man/man6/xbill.6
 
+.include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
