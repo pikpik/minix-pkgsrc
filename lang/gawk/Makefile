@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2003/12/17 15:11:03 sketch Exp $
+# $NetBSD: Makefile,v 1.22 2004/04/25 07:15:51 snj Exp $
 #
 
-DISTNAME=	gawk-3.1.3
+DISTNAME=	gawk-3.1.4
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=gawk/}
 EXTRACT_SUFX=	.tar.bz2
@@ -24,8 +24,16 @@ MAKE_ENV+=		PKGLOCALEDIR="${PKGLOCALEDIR}"
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILD_DEFS+=		GAWK_ENABLE_PORTALS
-.if ${GAWK_ENABLE_PORTALS} == "YES"
+.if !empty(GAWK_ENABLE_PORTALS:M[Yy][Ee][Ss])
+PKG_DEFAULT_OPTIONS+=   portals
+.endif
+
+PKG_OPTIONS_VAR=	PKG_OPTIONS.gawk
+PKG_SUPPORTED_OPTIONS=	portals
+
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Mportals)
 CONFIGURE_ARGS+=	--enable-portals
 .endif
 
