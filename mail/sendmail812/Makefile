@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:12:54 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/28 09:39:57 jlam Exp $
 
 .include "../../mail/sendmail812/Makefile.common"
 
@@ -62,9 +62,6 @@ post-patch: make-sendmail-siteconfig
 .if defined(USE_SASL2) && ${USE_SASL2} == YES
 	${CAT} ${FILESDIR}/site.config.m4-sasl2 >>${SITECONFIG}
 	${ECHO} -n ' SASL2' >>${DESCR_SRC}
-.elif defined(USE_SASL) && ${USE_SASL} == YES
-	${CAT} ${FILESDIR}/site.config.m4-sasl >>${SITECONFIG}
-	${ECHO} -n ' SASL' >>${DESCR_SRC}
 .endif
 	${ECHO} >>${DESCR_SRC}
 
