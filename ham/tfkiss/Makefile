@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 1999/06/06 19:34:31 frueauf Exp $
+# $NetBSD: Makefile,v 1.3 1999/07/27 16:03:05 frueauf Exp $
 #
 
-DISTNAME=	tfkiss-1.1.0
+DISTNAME=	tfkiss-1.2.2
 CATEGORIES=	ham
 MASTER_SITES=	ftp://ftp.ping.net.au/pub/unix/ham/
 
@@ -10,5 +10,7 @@ HOMEPAGE=	http://www.bfl.at/mayer/ham/
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+
+CONFIGURE_ARGS=	--enable-xpid --enable-flexnet --enable-axip
 
 .include "../../mk/bsd.pkg.mk"
