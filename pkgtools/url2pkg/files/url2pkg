@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# url2pkg $Id: url2pkg,v 1.2 1999/05/06 03:31:58 feyrer Exp $
+# url2pkg $Id: url2pkg,v 1.3 1999/05/06 04:20:33 feyrer Exp $
 # (c) 1999 Hubert Feyrer
 #
 
@@ -117,4 +117,4 @@ echo "Contents of "`echo w*`"/${wrksrc}:"
 ls -la w*/$wrksrc
 
 echo ""
-echo "Good luck!"
+echo "Good luck! (See ../../Packages.txt for some more help :-)"
