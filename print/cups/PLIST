@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2004/01/10 03:32:09 jlam Exp $
+@comment $NetBSD: PLIST,v 1.12 2004/04/23 22:07:57 reed Exp $
 bin/cancel
 bin/cups-config
 bin/cupstestppd
@@ -502,6 +502,7 @@ share/doc/html/cups/translation.html
 share/doc/html/cups/translation.pdf
 share/examples/cups/classes.conf
 share/examples/cups/client.conf
+${PAM}share/examples/cups/cups.pam
 share/examples/cups/cupsd.conf
 share/examples/cups/mime.convs
 share/examples/cups/mime.types
