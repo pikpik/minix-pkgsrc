@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.254 2004/10/19 03:13:52 ben Exp $
+# $NetBSD: Makefile,v 1.255 2004/10/22 18:30:42 jmmv Exp $
 #
 
 COMMENT=	Audio tools
@@ -184,6 +184,7 @@ SUBDIR+=	py-mad
 SUBDIR+=	py-ogg
 SUBDIR+=	py-vorbis
 SUBDIR+=	py-xmms
+SUBDIR+=	rexima
 SUBDIR+=	rhythmbox
 SUBDIR+=	rio
 SUBDIR+=	rio500
