@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/13 08:31:01 garbled Exp $
+# $NetBSD: Makefile,v 1.3 2001/02/16 15:10:46 wiz Exp $
 #
 
 DISTNAME=	crossfire-0.95.8
@@ -27,10 +27,10 @@ CONFIGURE_ARGS+=	--prefix=${LOCALBASE}
 post-install:
 	cd ${LOCALBASE}/share/crossfire && \
 	    ${GZCAT} ${DISTDIR}/${CF_MAPS} | ${GTAR} xmf -
-	@chown root:games ${LOCALBASE}/bin/crossfire
-	@chmod 2755 ${LOCALBASE}/bin/crossfire
-	@chown -R root:games ${LOCALBASE}/share/crossfire
-	@chown -R root:games ${LOCALBASE}/var/crossfire
-	@chmod -R g+w ${LOCALBASE}/var/crossfire
+	@${CHOWN} root:games ${LOCALBASE}/bin/crossfire
+	@${CHMOD} 2755 ${LOCALBASE}/bin/crossfire
+	@${CHOWN} -R root:games ${LOCALBASE}/share/crossfire
+	@${CHOWN} -R root:games ${LOCALBASE}/var/crossfire
+	@${CHMOD} -R g+w ${LOCALBASE}/var/crossfire
 
 .include "../../mk/bsd.pkg.mk"
