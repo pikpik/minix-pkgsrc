@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2004/12/18 03:59:30 grant Exp $
+# $NetBSD: options.mk,v 1.2 2005/01/10 20:59:43 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.qpopper
 PKG_SUPPORTED_OPTIONS=	inet6 ssl
@@ -18,4 +18,6 @@ CONFIGURE_ARGS+=	--without-ssl
 
 .if !empty(PKG_OPTIONS:Minet6)
 CONFIGURE_ENV+=		O_DEFS="${O_DEFS}" CFLAGS="-DINET6"
+.else
+CONFIGURE_ARGS+=	--disable-ipv6
 .endif
