@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- oafd/qsort_ex.c.orig	Tue Sep  4 14:07:43 2001
++++ oafd/qsort_ex.c
+@@ -26,7 +26,7 @@
+ #include <string.h>
+ #include "qsort_ex.h"
+ 
+-#if HAVE_ALLOCA
++#ifdef HAVE_ALLOCA_H
+ #include <alloca.h>
+ #endif
+ 
