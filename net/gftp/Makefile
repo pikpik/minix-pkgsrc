@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/12/13 00:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/03 18:49:47 reed Exp $
 #
 
 .include "${.CURDIR}/Makefile.common"
@@ -10,5 +10,5 @@ DEPENDS+=	gnome2-dirs>=1.2:../../misc/gnome2-dirs
 
 CONFLICTS=	gftp-gtk1-[0-9]*
 
-.include "../../x11/gtk2/buildlink2.mk"
+.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
