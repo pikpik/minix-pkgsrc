@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2001/02/16 14:38:35 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2001/02/25 04:17:42 hubertf Exp $
 #
 
 DISTNAME=	libg++-${GXXVERSION}
@@ -12,7 +12,8 @@ COMMENT=	The GNU C++ Class Library
 IGNORE=		'${PKGNAME} is designed for NetBSD 1.4 - 1.3(.x) comes with this in-tree'
 .endif
 
-GXXVERSION=	2.8.1.1a	# used by internal Makefile
+# used by internal Makefile
+GXXVERSION=	2.8.1.1a
 
 MAKE_ENV+=	GXXVERSION="${GXXVERSION}" NOPROFILE=1 NOGCCERROR=1
 PLIST_SRC=	${WRKSRC}/.PLIST
