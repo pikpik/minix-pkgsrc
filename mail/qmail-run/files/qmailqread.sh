@@ -1,9 +1,9 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: qmailqread.sh,v 1.1 2004/07/21 22:35:59 schmonz Exp $
+# $NetBSD: qmailqread.sh,v 1.1.1.1 2004/08/02 03:59:21 schmonz Exp $
 #
-# Script to control a service providing local non-root users access
-# to see the queue. Adapted from a script by Steinar Haug.
+# @PKGNAME@ script to control a service providing local non-root
+# users access to see the queue. Adapted from a script by Steinar Haug.
 #
 
 # PROVIDE: qmailqread mail

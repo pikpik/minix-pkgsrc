@@ -1,8 +1,8 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: qmailpop3d.sh,v 1.3 2004/07/21 22:35:59 schmonz Exp $
+# $NetBSD: qmailpop3d.sh,v 1.1.1.1 2004/08/02 03:59:21 schmonz Exp $
 #
-# Script to control qmail-pop3d (POP3 server for Maildirs).
+# @PKGNAME@ script to control qmail-pop3d (POP3 server for Maildirs).
 #
 
 # PROVIDE: qmailpop3d mail
