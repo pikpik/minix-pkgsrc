@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/01/06 22:41:23 fredb Exp $
+# $NetBSD: Makefile,v 1.18 2002/10/08 13:20:39 jlam Exp $
 
 DISTNAME=	kterm-6.2.0
 CATEGORIES=	x11
@@ -14,6 +14,9 @@ COMMENT=	Multi-lingual terminal emulator for X
 
 USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
+
+_SETUID_ROOT=	${ROOT_USER} ${ROOT_GROUP} 4711
+SPECIAL_PERMS=	${PREFIX}/bin/kterm ${_SETUID_ROOT}
 
 BUILD_DEFS+=	KTERM_USE_WALLPAPER
 
@@ -39,4 +42,5 @@ post-patch:
 .endif
 
 .include "../../mk/xaw.buildlink2.mk"
+.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
