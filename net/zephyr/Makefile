@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2002/06/15 21:20:03 cjep Exp $
+# $NetBSD: Makefile,v 1.24 2002/07/26 08:18:29 rh Exp $
 #
 
 DISTNAME=	zephyr-2.0.4
-CATEGORIES=	net athena
+CATEGORIES=	net
 MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/dist/
 
 MAINTAINER=	mycroft@netbsd.org
