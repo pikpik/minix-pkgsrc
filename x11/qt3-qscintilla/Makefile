@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/07/15 15:55:00 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 22:56:42 grant Exp $
 #
 
-DISTNAME=		qscintilla-1.53-x11-gpl-1.1
-PKGNAME=		qt3-qscintilla-1.1
+DISTNAME=		qscintilla-1.54-x11-gpl-1.2
+PKGNAME=		qt3-qscintilla-1.2
 CATEGORIES=		x11
 MASTER_SITES=		http://www.river-bank.demon.co.uk/download/QScintilla/
 
 MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.river-bank.demon.co.uk/download/QScintilla/
+HOMEPAGE=		http://www.riverbankcomputing.co.uk/qscintilla/
 COMMENT=		C++ editor class
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/qt
