@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.2 2000/07/31 06:58:36 jlam Exp $
+$NetBSD$
 
-MD5 (cassowary-0.60.tar.gz) = e8bc875306b1c873ceeb0a9d8a83533d
+SHA1 (cassowary-0.60.tar.gz) = 1c9bb84c3e6936cc85d8f660a9ac12017dd631a7
+Size (cassowary-0.60.tar.gz) = 1605222 bytes
 SHA1 (patch-aa) = 32c7d9db43bea9b9114c4091cd0687b558211a94
 SHA1 (patch-ab) = 66119674c748ea04a16b1c91850b4e6acc831ec4

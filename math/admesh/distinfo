@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/10 04:44:57 jtb Exp $
+$NetBSD$
 
-MD5 (admesh-0.95.tar.gz) = c21d198c547685f43efd2cf11536d7d4
+SHA1 (admesh-0.95.tar.gz) = b9d242366efa2af90bcd84951ed23d283fe72bd2
+Size (admesh-0.95.tar.gz) = 51340 bytes

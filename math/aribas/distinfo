@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 2001/01/28 05:44:52 jtb Exp $
+$NetBSD$
 
-MD5 (aribas-1.20.tar.gz) = c6ccb125cc758b7c1dedfdccc3d74be2
+SHA1 (aribas-1.20.tar.gz) = c889ae120a21cd5821b8241921af2e8bd0dfa9d2
+Size (aribas-1.20.tar.gz) = 235202 bytes
 SHA1 (patch-aa) = 0923d0f36e3d1e8d6fa2b558c8d7bb3aaf08110c

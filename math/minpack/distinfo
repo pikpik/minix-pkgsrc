@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/10 05:11:31 jtb Exp $
+$NetBSD$
 
-MD5 (minpack-20001130.tar.gz) = 79685d13d02a75924270ec3d6d4cc951
+SHA1 (minpack-20001130.tar.gz) = 34d26afa91e6deb55582affae618a7ac7fe49ad6
+Size (minpack-20001130.tar.gz) = 186179 bytes

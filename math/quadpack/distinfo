@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/12/01 01:51:33 jtb Exp $
+$NetBSD$
 
-MD5 (quadpack-20001130.tar.gz) = f9e88a94482dda3db32be8896dd0d453
+SHA1 (quadpack-20001130.tar.gz) = a4f3338c7c61a606f5267b2170a0f7471664b979
+Size (quadpack-20001130.tar.gz) = 111626 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.8 2000/08/16 19:04:43 jlam Exp $
+$NetBSD$
 
-MD5 (R-1.1.1.tgz) = 17d500eafe2531ed7e15e6ac27ef074f
+SHA1 (R-1.1.1.tgz) = c1d66c22c6b4e0ebb7bb5f1dcf52b33a997b7e6b
+Size (R-1.1.1.tgz) = 3046615 bytes
 SHA1 (patch-aa) = 2613aab78c571b15a33003587a377c5e363063d3
