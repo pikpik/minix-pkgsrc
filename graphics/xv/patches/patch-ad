@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.6 1998/10/28 02:21:24 garbled Exp $
 --- Imakefile.orig	Tue Oct 27 00:45:53 1998
 +++ Imakefile	Tue Oct 27 01:13:26 1998
 @@ -6,13 +6,15 @@
@@ -29,7 +29,7 @@ $NetBSD$
  
 +#ifdef UseInstalledJpeg
 +JPEG = -DDOJPEG
-+LIBJPEG = $(LDFLAGS) -L$(LOCALBASE)/lib -ljpeg
++LIBJPEG = $(LDFLAGS) -L$(LOCALBASE)/lib -Wl,-R$(LOCALBASE)/lib -ljpeg
 +JPEGINCLUDE = -I$(LOCALBASE)/include
 +#endif
 +
