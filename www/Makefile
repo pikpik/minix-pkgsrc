@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.363 2004/12/03 16:54:30 ben Exp $
+# $NetBSD: Makefile,v 1.364 2004/12/21 03:03:30 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -199,6 +199,7 @@ SUBDIR+=	p5-HTMLObject
 SUBDIR+=	p5-HTTP-DAV
 SUBDIR+=	p5-HTTP-Request-Form
 SUBDIR+=	p5-HTTPD-User-Manage
+SUBDIR+=	p5-Kwiki
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
 SUBDIR+=	p5-SVN-Web
 SUBDIR+=	p5-Template-Extract
