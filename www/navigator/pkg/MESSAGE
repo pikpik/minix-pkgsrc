@@ -1,5 +1,5 @@
-==========================================================================
-$NetBSD: MESSAGE,v 1.6 2000/01/05 15:43:36 abs Exp $
+==============================================================================
+$NetBSD: MESSAGE,v 1.5 2000/01/05 15:43:36 abs Exp $
 
 alpha:	The Digital UNIX version of Netscape requires COMPAT_OSF1 in your
 	kernel, plus /emul/osf1 libraries.
@@ -12,4 +12,4 @@ sparc:	The SunOS version of Netscape requires COMPAT_SUNOS in your kernel,
 	version is 'netscape_nis'. Netscape appears to have stopped with 4.61.
 	SunOS 'navigator' has problems saving files, 'communicator' does not.
 
-==========================================================================
+==============================================================================
