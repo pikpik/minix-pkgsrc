@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.7 1998/08/07 10:40:37 agc Exp $
 
 --- makefile.unix.orig	Wed Jun 17 06:07:13 1998
 +++ makefile.unix	Thu Jul 23 05:34:54 1998
@@ -16,7 +16,7 @@ $NetBSD$
  
  # *** To disable joystick support comment next line
 -# JOY		= -DUSE_JOYSTICK
-+ifeq (${MACHINE},i386)
++ifeq (${NETBSD_JOYSTICK},yes)
 +JOY		= -DUSE_JOYSTICK
 +endif
  
@@ -27,7 +27,7 @@ $NetBSD$
  
  # On iX86 based OS's, if supported, you can use standard joystick driver
 -# JS	= -DI386_JOYSTICK
-+ifeq (${MACHINE},i386)
++ifeq (${NETBSD_JOYSTICK},yes)
 +JS	= -DI386_JOYSTICK
 +endif
  
