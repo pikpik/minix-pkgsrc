@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2002/03/22 15:37:14 wiz Exp $
+# $NetBSD: Makefile,v 1.186 2002/04/21 08:08:27 rh Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -77,6 +77,7 @@ SUBDIR+=	gphoto2
 SUBDIR+=	gqview
 SUBDIR+=	grap
 SUBDIR+=	graphviz
+SUBDIR+=	gri
 SUBDIR+=	gtkam
 SUBDIR+=	hermes
 SUBDIR+=	hp2xx
