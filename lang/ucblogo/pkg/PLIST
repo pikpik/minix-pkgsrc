@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/logo
 share/logo/logolib/#
 share/logo/logolib/xcor
