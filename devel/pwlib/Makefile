@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/08/01 05:48:10 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2002/12/01 18:31:41 jdolecek Exp $
 #
 
 DISTNAME=		pwlib_1.4.4
@@ -44,7 +44,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/ptclib
 	${INSTALL_DATA_DIR} ${PREFIX}/include/ptlib/unix/ptlib
 	cd ${WRKSRC}/include;						\
-	for f in `${FIND} . -type f -a ! -path '*/CVS/*' -print`; do	\
+	for f in `${FIND} . -type f -print | ${GREP} -v '/CVS/'`; do	\
 		${INSTALL_DATA} $$f ${PREFIX}/include/`${DIRNAME} $$f`;	\
 	done
 	${INSTALL_DATA_DIR} ${PREFIX}/share/pwlib/make
