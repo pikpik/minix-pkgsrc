@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:19:11 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/03/16 20:53:04 zuntum Exp $
 
-DISTNAME=	ncftp-3.0.2-src
-PKGNAME=	ncftp3-3.0.2
+DISTNAME=	ncftp-3.0.3-src
+PKGNAME=	ncftp3-3.0.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 
