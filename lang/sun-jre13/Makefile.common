@@ -1,7 +1,7 @@
-# $NetBSD: Makefile.common,v 1.14 2003/03/26 04:05:43 jschauma Exp $
+# $NetBSD: Makefile.common,v 1.15 2003/07/17 21:45:26 grant Exp $
 
 # MASTER_SITES is very special, and must end in "=":
-CATEGORIES=	lang
+CATEGORIES=	lang java
 EXTRACT_SUFX=	.bin
 
 MAINTAINER=	jschauma@NetBSD.org
