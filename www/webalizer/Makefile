@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2000/11/14 00:01:27 briggs Exp $
+# $NetBSD: Makefile,v 1.13 2001/02/17 17:22:46 wiz Exp $
 #
 
 DISTNAME=	webalizer-2.01-06-src
@@ -21,7 +21,8 @@ WRKSRC=		${WRKDIR}/webalizer-2.01-06
 USE_X11=	yes
 USE_XPM=	yes
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--with-gd=${LOCALBASE}/include
+CONFIGURE_ARGS=	--with-gd=${LOCALBASE}/include \
+		--enable-dns
 
 post-patch:
 	@for f in webalizer.1; do \
