@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2001/03/22 08:49:28 itojun Exp $
+# $NetBSD: Makefile,v 1.44 2001/03/27 03:20:15 hubertf Exp $
 
 DISTNAME=		openssh-2.5.2p2
 CATEGORIES=		security
@@ -26,14 +26,16 @@ OPENSSLV_H=		/usr/include/openssl/opensslv.h
 OPENSSL_VERSION!=	awk '/.*OPENSSL_VERSION_NUMBER.*/ { print $$3 }' \
 				${OPENSSLV_H}
 OPENSSL_VERSION_095a=	0x0090581fL
-.if (${OPENSSL_VERSION} != ${OPENSSL_VERSION_095a})
-DEPENDS+=		openssl-0.9.5a:../../security/openssl
+OPENSSL_VERSION_096=	0x0090600fL
+.if (${OPENSSL_VERSION} != ${OPENSSL_VERSION_095a}) && \
+    (${OPENSSL_VERSION} != ${OPENSSL_VERSION_096})
+DEPENDS+=		openssl-0.9.6:../../security/openssl
 SSLBASE=		${LOCALBASE}
 .else
 SSLBASE=		/usr
 .endif
 .else
-DEPENDS+=		openssl-0.9.5a:../../security/openssl
+DEPENDS+=		openssl-0.9.6:../../security/openssl
 SSLBASE=		${LOCALBASE}
 .endif
 
