@@ -1,6 +1,5 @@
-# $NetBSD: Makefile,v 1.11 2000/03/27 08:54:56 tron Exp $
+# $NetBSD: Makefile,v 1.12 2000/04/07 14:40:36 hubertf Exp $
 # FreeBSD Id: Makefile,v 1.6 1998/02/11 08:48:26 tg Exp
-#
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
@@ -14,8 +13,8 @@ PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	packages@netbsd.org
 
-DEPENDS+=	tiff-*:../../graphics/tiff
-BUILD_DEPENDS+=	${LOCALBASE}/include/pgm.h:../../graphics/netpbm
+DEPENDS+=	tiff-*:../tiff
+DEPENDS+=	netpbm-9.*:../netpbm
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
