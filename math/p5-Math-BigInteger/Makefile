@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:06 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/07 22:34:25 seb Exp $
 
 DISTNAME=	Math-BigInteger-1.0
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5mbi
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Math/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Arbitrary length integer extension module for Perl
 
 USE_BUILDLINK2=		YES

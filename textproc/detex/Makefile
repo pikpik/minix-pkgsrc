@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 17:37:19 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2002/11/11 20:07:33 jschauma Exp $
 #
 
 DISTNAME=	detex-2.7
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.cs.purdue.edu/homes/trinkle/detex/
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cs.purdue.edu/homes/trinkle/detex/
 COMMENT=	remove LaTeX commands
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/09/05 23:52:42 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:31 jmmv Exp $
 
 DISTNAME=	cvsup-gui-static-16.1.f
 PKGNAME=	${DISTNAME:C/-static//}
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/cvsupd/${MACHINE_ARCH}-${OS_VERSION:C/(...).*/\1/}/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://people.freebsd.org/~jdp/
 COMMENT=	cvsup gui client
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/11/20 16:57:55 bouyer Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/28 21:14:12 wiz Exp $
 #
 
 DISTNAME=       tar-1.13.25
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
 		ftp://ftp.sunsite.org.uk/Mirrors/alpha.gnu.org/gnu/tar/ \
 		ftp://ftp.funet.fi/pub/mirrors/alpha.gnu.org/gnu/tar/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gnu.org/software/tar/tar.html
 COMMENT=	Info format documentation for the GNU tape archiver
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/07/01 16:43:59 itojun Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:41:54 jmmv Exp $
 
 DISTNAME=	bridged-20010701
 WRKSRC=		${WRKDIR}/bridged
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	userland ethernet bridge daemon
 
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/04/05 19:14:23 proff Exp $
+# $NetBSD: Makefile,v 1.13 2002/04/06 19:42:08 wiz Exp $
 # FreeBSD Id: Makefile,v 1.11 1998/02/01 03:04:11 itojun Exp
 #
 
@@ -7,7 +7,7 @@ CATEGORIES=		news
 MASTER_SITES=		ftp://ftp.nntpcache.org/pub/nntpcache/ \
 			ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/news/nntpcache/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.nntpcache.org/
 COMMENT=		nntp multi-server caching daemon
 

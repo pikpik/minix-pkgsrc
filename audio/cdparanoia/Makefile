@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/12/03 17:57:44 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/03/04 14:45:12 itohy Exp $
 
 DISTNAME=	cdparanoia-III-alpha9.8
 PKGNAME=	cdparanoia-3.0.9.8
@@ -6,7 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.xiph.org/paranoia/download/
 EXTRACT_SUFX=	.src.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.xiph.org/paranoia/
 COMMENT=	CDDA reading utility with extra data verification features
 

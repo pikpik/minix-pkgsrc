@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/02/27 01:36:09 tv Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:55 jmmv Exp $
 #
 
 DISTNAME=	dynip_3.00
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.dynip.com/software/unix/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.dynip.com/
 COMMENT=	Client for the dynip.com dynamic DNS service
 

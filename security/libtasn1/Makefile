@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/14 03:23:43 salo Exp $
 #
 
 DISTNAME=	libtasn1-0.2.4
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/libtasn1/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gnutls.org/
 COMMENT=	ASN.1 structure parser library
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/03/29 12:41:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/01 12:10:11 jmmv Exp $
 
 DISTNAME=	mailwrapper-19990412
 PKGREVISION=	1
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/mailwrapper
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	NetBSD 1.4's wrapper to support arbitrary Mail Transport Agents
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL

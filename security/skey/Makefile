@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/26 09:10:06 grant Exp $
+# $NetBSD: Makefile,v 1.2 2002/08/28 03:10:04 jlam Exp $
 #
 
 DISTNAME=		skey-1.1.5
@@ -6,7 +6,7 @@ CATEGORIES=		security
 MASTER_SITES=		http://www.sparc.spb.su/solaris/skey/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Port of OpenBSD s/key implementation
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/04/15 20:51:44 jmc Exp $
+# $NetBSD: Makefile,v 1.7 2003/05/02 11:54:22 wiz Exp $
 #
 
 DISTNAME=	coconut-0.3.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.asahi-net.or.jp/~em7t-hmd/coconut/		\
 		${MASTER_SITE_SOURCEFORGE:=coconut-lib/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://sourceforge.net/projects/coconut-lib/
 COMMENT=	Objective-C library for Unix-like systems
 

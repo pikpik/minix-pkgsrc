@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/23 08:49:46 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/21 17:31:36 jmmv Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
@@ -8,7 +8,7 @@ PKGREVISION=	1
 MASTER_SITES+=	http://gd.tuwien.ac.at/infosys/mail/qmail/ezmlm-patches/ \
 		ftp://ftp.ezmlm.org/pub/patches/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.ezmlm.org/
 COMMENT=	ezmlm with enhancements by third parties
 

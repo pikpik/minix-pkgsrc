@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/04/29 08:18:35 rh Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/11 09:29:13 jmc Exp $
 #
 
 DISTNAME=		gnome-icon-theme-1.0.2
@@ -6,7 +6,7 @@ CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme/1.0/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		theme consisting of a set of icons for GNOME
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2003/03/26 04:05:42 jschauma Exp $
+# $NetBSD: Makefile,v 1.27 2003/05/14 17:56:56 jmc Exp $
 
 DISTNAME=		so51a_lnx_${LANGNO}
 PKGNAME=		staroffice-${LANGUAGE}-5.1a
@@ -7,7 +7,7 @@ CATEGORIES=		misc
 MASTER_SITES=		${DOWNLOAD_SITE}
 EXTRACT_SUFX=		.tar
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.sun.com/staroffice/
 COMMENT=		Integrated office suite
 

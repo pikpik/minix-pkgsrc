@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/09/16 14:38:33 uebayasi Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:42:06 jmmv Exp $
 #
 
 DISTNAME=	src
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/latest/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cis.upenn.edu/~bcpierce/unison/
 COMMENT=	file-synchronization tool
 

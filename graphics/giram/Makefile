@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.26 2003/05/02 11:55:18 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2003/05/24 11:23:08 salo Exp $
 #
 
 DISTNAME=	giram-0.3.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.giram.org/downloads/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.giram.org/
 COMMENT=	Giram Is Really A Modeller
 

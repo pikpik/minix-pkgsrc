@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2002/01/16 07:19:08 zuntum Exp $
+# $NetBSD: Makefile,v 1.4 2002/05/03 22:01:42 zuntum Exp $
 #
 
 DISTNAME=	qtools-0.56
 CATEGORIES=	mail
 MASTER_SITES=	http://www.superscript.com/qtools/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.superscript.com/qtools/intro.html
 COMMENT=	utilities for filtering via .qmail
 

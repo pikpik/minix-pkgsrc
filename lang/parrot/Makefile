@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/09/13 14:18:03 agc Exp $
 #
 
 DISTNAME=       parrot-0.0.1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.netthink.co.uk/downloads/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.python.org/parrot.html
 COMMENT=	bytecode language possibly to be used by Perl/Python
 

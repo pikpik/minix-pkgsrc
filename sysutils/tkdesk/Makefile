@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/07/03 09:27:00 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/25 09:21:11 wiz Exp $
 #
 
 DISTNAME=	tkdesk-1.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://tkdesk.sourceforge.net/dist/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://tkdesk.sourceforge.net/
 COMMENT=	graphical file manager
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/07/27 19:05:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2002/11/16 00:13:09 wiz Exp $
 #
 
 DISTNAME=	igerman98-20021114
@@ -7,7 +7,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://j3e.de/ispell/igerman98/dict/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://j3e.de/ispell/igerman98/
 COMMENT=	German dictionary for interactive spelling checker
 

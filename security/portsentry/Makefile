@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/05/01 21:32:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/05/01 21:33:19 jmmv Exp $
 #
 
 DISTNAME=	portsentry-1.0
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://www.psionic.com/tools/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.psionic.com/abacus/portsentry/
 COMMENT=	detects and respond to port scans against a target host in real-time
 

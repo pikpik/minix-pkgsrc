@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/10/22 11:44:58 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/01/19 09:04:04 salo Exp $
 #
 
 DISTNAME=	libident-0.22
 CATEGORIES=	security devel net
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/libs/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Small library to interface to the ident protocol server (rfc1413)
 
 USE_BUILDLINK2=	# defined

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2003/04/27 12:52:02 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/06 21:03:25 jmmv Exp $
 
 DISTNAME=		wdm-1.23
 CATEGORIES=		x11 windowmaker
 MASTER_SITES=		http://voins.program.ru/wdm/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://voins.program.ru/wdm/
 COMMENT=		WINGs display manager
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2002/10/02 21:10:10 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2003/01/04 22:16:43 wiz Exp $
 
 DISTNAME=	ucd-snmp-4.2.4
 CATEGORIES=	net
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/} \
 		ftp://sunsite.cnlab-switch.ch/mirror/ucd-snmp/ \
 		ftp://ftp.win.or.jp/pub/network/snmp/ucd-snmp/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.net-snmp.org/
 COMMENT=	Extensible SNMP implementation
 

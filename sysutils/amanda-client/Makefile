@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/09/05 18:07:52 jschauma Exp $
+# $NetBSD: Makefile,v 1.30 2002/10/25 18:52:44 wiz Exp $
 #
 
 DISTNAME=		amanda-2.4.2p2
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		amacl
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.cs.umd.edu/pub/amanda/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.amanda.org/
 COMMENT=		Client part of Amanda, a network backup system
 

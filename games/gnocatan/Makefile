@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/10/05 04:26:12 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2003/05/02 11:54:56 wiz Exp $
 #
 
 DISTNAME=	gnocatan-0.6.1
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnocatan/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://gnocatan.sourceforge.net/
 COMMENT=	gnome version of the Settlers of Catan board game
 

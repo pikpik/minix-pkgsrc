@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/11/26 06:50:20 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/20 17:46:04 seb Exp $
 #
 
 DISTNAME=		Convert-PEM-0.06
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5pem
 CATEGORIES=		converters perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Convert/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 #HOMEPAGE=	
 COMMENT=		perl5 module to read/write ASN.1-encoded PEM files
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2002/10/24 21:24:18 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/10 15:08:20 drochner Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-idle-0
 CATEGORIES=	devel
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.python.org/idle/
 COMMENT=	IDLE - The Integrated DeveLopment Environment for Python
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2001/11/14 06:18:08 zuntum Exp $
+# $NetBSD: Makefile,v 1.3 2002/02/18 15:14:45 seb Exp $
 #
 
 DISTNAME=	cronolog-1.6.1
 CATEGORIES=	www
 MASTER_SITES=	http://www.ford-mason.co.uk/resources/cronolog/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.ford-mason.co.uk/resources/cronolog/
 COMMENT=	Web log rotation utility that provides datestamp filenames
 

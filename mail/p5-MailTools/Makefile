@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/10/07 22:34:26 seb Exp $
+# $NetBSD: Makefile,v 1.20 2003/01/31 11:01:30 shell Exp $
 
 DISTNAME=	MailTools-1.58
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5mto
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	perl5 modules related to mail applications
 
 BUILD_DEPENDS+=	p5-Net>=1.09:../../net/p5-Net

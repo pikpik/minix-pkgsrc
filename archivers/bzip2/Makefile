@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2003/03/18 21:53:29 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2003/03/28 20:30:24 wiz Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://sources.redhat.com/pub/bzip2/v102/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://sources.redhat.com/bzip2/
 COMMENT=	Block-sorting file compressor
 

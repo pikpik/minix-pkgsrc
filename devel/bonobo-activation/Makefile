@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/01/28 22:03:13 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2003/05/02 11:54:21 wiz Exp $
 #
 
 DISTNAME=		bonobo-activation-2.1.1
@@ -7,7 +7,7 @@ CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/bonobo-activation/2.1/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://developer.gnome.org/
 COMMENT=		Object activation framework for GNOME2
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2003/03/03 04:17:46 jschauma Exp $
+# $NetBSD: Makefile,v 1.26 2003/03/29 12:42:57 jmmv Exp $
 
 DISTNAME=		XF86Setup-3.3.6
 PKGREVISION=		1
@@ -7,7 +7,7 @@ CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.xfree86.org/
 COMMENT=		Graphical configuration tool for XFree86
 

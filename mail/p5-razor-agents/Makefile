@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/17 15:28:02 dillo Exp $
+# $NetBSD: Makefile,v 1.6 2003/04/24 21:42:42 heinz Exp $
 
 DISTNAME=	razor-agents-2.22
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5ra
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=razor/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://razor.sourceforge.net/
 COMMENT=	distributed and collaborative spam detection network
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/08/28 16:05:50 itojun Exp $
+# $NetBSD: Makefile,v 1.8 2002/09/03 14:55:05 itojun Exp $
 
 DISTNAME=	nsd-1.0.1
 PKGNAME=	nsd-1.0.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/nsd/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.nlnetlabs.nl/nsd/index.en.html
 COMMENT=	authoritative-only DNS server
 

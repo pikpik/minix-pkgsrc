@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2003/03/22 03:11:29 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2003/03/29 12:42:56 jmmv Exp $
 #
 
 DISTNAME=	webalizer-2.01-10-src
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
 		http://gd.tuwien.ac.at/infosys/logeval/webalizer/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.mrunix.net/webalizer/
 COMMENT=	Web server log file analysis program
 

@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/05/07 11:55:03 dmcmahill Exp $
 #
 
 DISTNAME=	cmake-1.6.6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cmake.org/files/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cmake.org
 COMMENT=	cross platform make
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/12/03 17:56:55 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2003/03/28 21:14:24 wiz Exp $
 #
 
 DISTNAME=	web-server-1.1
@@ -6,7 +6,7 @@ CATEGORIES=	meta-pkgs www
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	provides some useful tools for a web server
 
 DEPENDS+=	apache-1.3.*:../../www/apache

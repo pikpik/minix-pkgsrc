@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/03/25 14:28:24 salo Exp $
+# $NetBSD: Makefile,v 1.6 2003/03/29 12:42:21 jmmv Exp $
 #
 
 DISTNAME=	xpdf-korean
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
 COMMENT=	xpdf support files for Korean
 

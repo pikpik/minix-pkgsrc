@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2001/10/24 22:10:52 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/08/31 02:54:29 wiz Exp $
 #
 
 DISTNAME=	libdockapp-0.4.0
 CATEGORIES=	devel wm
 MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://shadowmere.student.utwente.nl/
 COMMENT=	simple library to create dockapps for WindowMaker
 

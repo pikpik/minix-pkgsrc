@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/25 04:18:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:53 jmmv Exp $
 
 DISTNAME=	batchftp102
 PKGNAME=	batchftp-1.02
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.fu-berlin.de/unix/network/batchftp/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Automatically download files via the FTP protocol
 
 post-extract:

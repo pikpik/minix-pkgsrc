@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/04/23 14:57:04 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:48 wiz Exp $
 
 DISTNAME=	CMFPlone1.0.1
 PKGREVISION=	1
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/plone/}
 WRKSRC=		${WRKDIR}/CMFPlone-1.0.1
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.plone.org/
 COMMENT=	Content Management System
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/10/04 08:59:34 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2003/05/02 11:53:37 wiz Exp $
 
 DISTNAME=	audacity-src-1.0.0-2
 PKGNAME=	audacity-1.0.0.2
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=audacity/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://audacity.sourceforge.net/
 COMMENT=	audio editor
 

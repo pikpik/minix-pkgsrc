@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/08/23 20:35:28 kristerw Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:40:50 jmmv Exp $
 
 DISTNAME=	mmix
 PKGNAME=	mmix-20020615
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	emulators devel lang
 MASTER_SITES=	http://www-cs-faculty.stanford.edu/~knuth/programs/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www-cs-faculty.stanford.edu/~knuth/mmix.html
 COMMENT=	Simulators for Knuth's MMIX RISC architecture
 

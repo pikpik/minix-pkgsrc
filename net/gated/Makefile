@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/04/10 01:28:22 grant Exp $
+# $NetBSD: Makefile,v 1.12 2003/05/06 17:42:09 jmmv Exp $
 # FreeBSD Id: Makefile,v 1.17 1998/04/26 18:47:12 peter Exp
 #
 
@@ -7,7 +7,7 @@ PKGNAME=        gated-3.5.11
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.gated.merit.edu/net-research/gated/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gated.org/
 COMMENT=	Routing protocol daemon
 

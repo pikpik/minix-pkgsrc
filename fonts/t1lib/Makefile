@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2002/09/19 14:47:34 tron Exp $
+# $NetBSD: Makefile,v 1.5 2003/01/28 22:03:19 jlam Exp $
 
 DISTNAME=	t1lib-1.3.1
 CATEGORIES=	fonts devel graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=libs/graphics/} \
 		ftp://ftp.foolabs.com/pub/xpdf/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	library for generating bitmaps from Adobe Type 1 fonts
 
 USE_BUILDLINK2=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2003/04/29 23:05:22 jtb Exp $
+# $NetBSD: Makefile,v 1.17 2003/05/09 23:58:51 jtb Exp $
 
 DISTNAME=		hdf5-1.4.5-post2
 PKGNAME=		hdf5-1.4.5.2
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://hdf.ncsa.uiuc.edu/HDF5/hdf5-1.4.5/src/ \
 			ftp://sunsite.doc.ic.ac.uk/packages/HDF/HDF5/hdf5-1.4.5/src/ \
 			http://www.go.dlr.de/fresh/unix/src/misc/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://hdf.ncsa.uiuc.edu/HDF5/
 COMMENT=		Hierarchical Data Format (new generation)
 

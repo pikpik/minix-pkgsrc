@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8.2.1 2002/06/30 06:24:27 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2002/08/25 21:51:32 jlam Exp $
 #
 
 DISTNAME=	flwm-1.00
@@ -6,7 +6,7 @@ CATEGORIES=	x11 wm
 MASTER_SITES=	http://flwm.sourceforge.net/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://flwm.sourceforge.net/
 COMMENT=	The Fast, Light Window Manager
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/12/24 06:10:16 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2003/05/02 11:55:57 wiz Exp $
 #
 
 DISTNAME=	ooqstart-0.8.3
@@ -7,7 +7,7 @@ CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ooqstart/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://ooqstart.sourceforge.net/
 COMMENT=	OpenOffice quickstart applet for GNOME
 

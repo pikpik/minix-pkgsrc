@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/12/10 18:07:38 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/10 01:28:31 grant Exp $
 #
 
 DISTNAME=	ZopeBook
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Documentation/Books/ZopeBook/current/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.zope.org/Documentation/Books/ZopeBook/current/index_html
 COMMENT=	Documentation for Zope-2.5
 

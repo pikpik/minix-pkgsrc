@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/09 20:14:00 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/10 14:26:39 wiz Exp $
 
 DISTNAME=		psgml-1.2.5
 PKGNAME=		${DISTNAME:S/-/-mode-/}
 CATEGORIES=		textproc editors
 MASTER_SITES=		http://www.lysator.liu.se/~lenst/about_psgml/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.lysator.liu.se/~lenst/about_psgml/
 COMMENT=		SGML/XML mode for Emacs
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:23 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/02 15:23:13 seb Exp $
 
 DISTNAME=	Text-BibTeX-0.33
 PKGNAME=	p5-${DISTNAME}
@@ -7,7 +7,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=biblio/bibtex/utils/btOOL/}
 DISTFILES+=	${DISTNAME}.tar.gz btparse-0.32.tar.gz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://starship.python.net/~gward/btOOL/
 COMMENT=	Perl library for reading, parsing, and processing BibTeX files
 

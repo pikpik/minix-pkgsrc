@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2003/01/19 06:59:51 salo Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/23 02:02:33 rh Exp $
 
 DISTNAME=	cdlabelgen-2.5.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.aczone.com/pub/tools/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.aczone.com/tools/cdinsert/
 COMMENT=	generate frontcards and traycards for CDs
 

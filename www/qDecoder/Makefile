@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/05/04 00:53:51 jtb Exp $
 
 DISTNAME=	qDecoder-7.0.1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.qDecoder.org/pub/qDecoder/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.qDecoder.org/
 COMMENT=	Web Application Interface for C/C++ (CGI Library)
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/31 17:03:39 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/20 17:46:00 seb Exp $
 
 DISTNAME=		Convert-UUlib-0.213
 PKGNAME=		p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=		p5uul
 CATEGORIES=		sysutils perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Convert/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		perl5 module interface to the uulib library
 
 USE_BUILDLINK2=		YES

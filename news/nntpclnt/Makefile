@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2002/09/18 21:16:24 tron Exp $
+# $NetBSD: Makefile,v 1.18 2003/01/28 22:03:59 jlam Exp $
 
 DISTNAME=	nntpclnt-1.6.1
 PKGREVISION=	3
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/nntp/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	NNTP client library and inews client posting program
 
 CONFLICTS+=	inn-[0-9]*

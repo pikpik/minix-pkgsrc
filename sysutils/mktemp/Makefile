@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/12/13 09:32:08 salo Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/25 20:41:52 salo Exp $
 #
 
 DISTNAME=	mktemp-1.5
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.mktemp.org/pub/mktemp/ \
 		ftp://ftp.usa.openbsd.org/pub/mktemp/ \
 		ftp://ftp.wiretapped.net/pub/security/host-security/mktemp/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.mktemp.org/
 COMMENT=	Small program for safe temporary file and directory creation
 

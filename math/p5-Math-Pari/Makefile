@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/03/13 17:37:24 fredb Exp $
+# $NetBSD: Makefile,v 1.7 2002/10/27 21:20:37 seb Exp $
 #
 
 DISTNAME=		Math-Pari-2.001804
@@ -8,7 +8,7 @@ SVR4_PKGNAME=		p5mpa
 CATEGORIES=		math perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Math/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 #HOMEPAGE=	
 COMMENT=		perl5 interface to the pari math library
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2002/12/03 19:34:58 drochner Exp $
 #
 
 DISTNAME=	pymetar-0.4
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-pymetar-0.4
 CATEGORIES=	net
 MASTER_SITES=	http://unattached.i-no.de/pkgs/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://unattached.i-no.de/software-pymetar.shtml
 COMMENT=	downloads weather reports
 

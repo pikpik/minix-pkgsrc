@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2002/11/04 19:29:37 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2003/02/14 21:14:37 salo Exp $
 #
 
 DISTNAME=	pkgconfig-0.15.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.freedesktop.org/software/pkgconfig/releases/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.freedesktop.org/software/pkgconfig/
 COMMENT=	system for managing library compile/link flags
 

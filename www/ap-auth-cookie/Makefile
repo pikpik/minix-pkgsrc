@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2003/03/29 12:42:47 jmmv Exp $
+# $NetBSD: Makefile,v 1.28 2003/05/06 17:42:56 jmmv Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.kciLink.com/pub/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	ftp://ftp.kciLink.com/pub/mod_auth_cookie.txt
 COMMENT=	Cookie-based authentication for Apache
 

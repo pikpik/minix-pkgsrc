@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2003/05/05 14:41:55 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2003/05/08 17:25:07 jmmv Exp $
 #
 
 DISTNAME=		Eterm-0.9.2
@@ -10,7 +10,7 @@ MASTER_SITES=		ftp://ftp.eterm.org/pub/Eterm/ \
 			ftp://ftp.dti.ad.jp/pub/X/Eterm/
 DISTFILES=		${ETERM_SRCS} ${PIXMAP_FILES}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.eterm.org/
 COMMENT=		Enlightened terminal emulator for the X Window System
 

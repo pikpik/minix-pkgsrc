@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:27 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/27 20:49:01 seb Exp $
 
 DISTNAME=	XML-XSLT-0.32
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5xxs
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	perl5 module for processing XSLT
 
 DEPENDS+=	p5-XML-DOM>=1.25:../../textproc/p5-XML-DOM

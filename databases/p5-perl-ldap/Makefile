@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/10/27 20:48:56 seb Exp $
+# $NetBSD: Makefile,v 1.17 2003/01/31 11:14:46 shell Exp $
 #
 
 DISTNAME=     	perl-ldap-0.2701
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	pldap
 CATEGORIES=	databases net devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=LWP/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://perl-ldap.sourceforge.net/
 COMMENT=	Perl class to access LDAP servers
 

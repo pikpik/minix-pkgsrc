@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/11/26 06:49:55 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/13 22:22:45 seb Exp $
 #
 
 DISTNAME=      	Tie-IxHash-1.21
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	p5tix
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Tie/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Perl module that implements ordered in-memory associative arrays
 
 USE_BUILDLINK2=		YES

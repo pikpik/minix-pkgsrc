@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/03/19 15:45:27 seb Exp $
 
 DISTNAME=	DB_File-1.806
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	databases perl5
 MASTER_SITES=	 ${MASTER_SITE_PERL_CPAN:=DB_File/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	perl5 module to use Berkeley DB version 1 API
 
 USE_BUILDLINK2=	# defined

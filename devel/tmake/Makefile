@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/04/25 14:55:59 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2002/03/18 07:11:24 fredb Exp $
 #
 
 DISTNAME=	tmake-1.7
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.trolltech.com/freebies/tmake/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.trolltech.com/products/download/freebies/tmake.html
 COMMENT=	Cross-platform Makefile Tool
 

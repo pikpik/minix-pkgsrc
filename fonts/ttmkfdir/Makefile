@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/10/09 23:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/03/29 12:40:59 jmmv Exp $
 #
 
 DISTNAME=	ttmkfdir
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	fonts x11
 MASTER_SITES=	http://www.joerg-pommnitz.de/TrueType/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.joerg-pommnitz.de/TrueType/xfsft.html
 COMMENT=	tool that creates a fonts.scale file
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/12/24 06:10:20 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:56:14 wiz Exp $
 #
 
 DISTNAME=	linda-0.1.1
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	parallel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=linda/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://sourceforge.net/projects/linda/
 COMMENT=	Parallel distributed database environment
 

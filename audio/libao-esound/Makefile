@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/04/11 19:12:58 jmmv Exp $
 #
 
 .include "../libao/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/libao/libao-esound/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT+=	(esound plugin)
 
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/disable-esd/enable-esd/g}

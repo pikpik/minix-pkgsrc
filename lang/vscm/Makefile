@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2001/05/11 01:43:03 jtb Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/29 01:12:39 hubertf Exp $
 
 DISTNAME=	vscmV0r4
 PKGNAME=	vscm-0.4
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/scheme-repository/imp/vscm/
 PATCHFILES=	bugfix.txt
 PATCH_SITES=	${MASTER_SITES}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cs.princeton.edu/~blume/vscm/
 COMMENT=	Portable scheme implementation
 

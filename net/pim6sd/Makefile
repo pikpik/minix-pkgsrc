@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2002/04/03 05:37:00 itojun Exp $
+# $NetBSD: Makefile,v 1.4 2003/03/29 12:42:02 jmmv Exp $
 
 DISTNAME=	pim6sd-20020403a
 WRKSRC=		${WRKDIR}/${DISTNAME}/pim6sd/
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	IPv6 PIM sparse mode daemon
 
 # does it seem right?

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/03/13 17:37:24 fredb Exp $
+# $NetBSD: Makefile,v 1.14 2002/05/20 23:53:49 cjep Exp $
 
 DISTNAME=	octave-2.1.33
 PKGNAME=	octave-2.1.34
@@ -14,7 +14,7 @@ PATCHFILES=	octave-2.1.33-2.1.34.patch.gz
 PATCH_SITES=	${MASTER_SITES}
 PATCH_DIST_STRIP= -p1
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.che.wisc.edu/octave/
 COMMENT=	High-level language, primarily intended for numerical computations
 

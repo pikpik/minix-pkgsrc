@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/18 23:02:30 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2002/09/20 21:27:15 jlam Exp $
 #
 
 DISTNAME=	bbconf-1.4
 CATEGORIES=	wm
 MASTER_SITES=	http://bbconf.sourceforge.net/code/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://bbconf.sourceforge.net/
 COMMENT=	configuration tool for the blackbox window manager
 

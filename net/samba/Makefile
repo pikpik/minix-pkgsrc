@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.96 2003/04/10 11:58:55 uebayasi Exp $
+# $NetBSD: Makefile,v 1.97 2003/05/02 11:56:11 wiz Exp $
 
 .include "Makefile.common"
 PKGREVISION=		1
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.samba.org/
 COMMENT=		SMB/CIFS protocol server suite for UNIX
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/10/14 12:54:31 dillo Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/25 17:53:43 wiz Exp $
 #
 
 DISTNAME=		iselect-1.2.0
 CATEGORIES=		misc
 MASTER_SITES=		http://www.engelschall.com/sw/iselect/distrib/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.engelschall.com/sw/iselect/
 COMMENT=		Curses based Interactive Selection Tool
 

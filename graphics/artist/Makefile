@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/11/29 08:59:48 martti Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/11 09:31:09 uebayasi Exp $
 #
 
 DISTNAME=	artist-1.2.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lysator.liu.se/~tab/artist/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.lysator.liu.se/~tab/artist/
 COMMENT=	Elisp drawing package with mouse and keyboard support
 

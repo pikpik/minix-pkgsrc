@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/08/25 21:49:21 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:40:03 jmmv Exp $
 
 DISTNAME=	t20-squsq-3.3
 PKGNAME=	squsq-3.3
@@ -6,7 +6,7 @@ WRKSRC=		${WRKDIR}/t20-squsq
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Compressor/decompressor for CP/M Squeeze compressed files
 
 MAKEFILE=	${FILESDIR}/Makefile

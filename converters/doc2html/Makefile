@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/11/12 13:48:58 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.9 2003/02/14 17:21:07 wiz Exp $
 #
 
 DISTNAME=	doc2html
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	converters
 MASTER_SITES=	http://www.htdig.org/files/contrib/parsers/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.htdig.org
 COMMENT=	PERL external filter for htdig to convert numerous doc formats to HTML
 

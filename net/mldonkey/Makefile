@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/26 08:58:43 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/05/28 07:25:15 wiz Exp $
 #
 
 DISTNAME=	mldonkey-2.5-0.sources
@@ -8,7 +8,7 @@ WRKSRC=		${WRKDIR}/mldonkey
 CATEGORIES=	net
 MASTER_SITES=	http://savannah.nongnu.org/download/mldonkey/release-2.5/official/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.nongnu.org/mldonkey/
 COMMENT=	Free peer-to-peer client with eDonkey support and more
 

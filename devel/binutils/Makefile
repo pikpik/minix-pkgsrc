@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/12/25 16:53:51 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/01/04 20:18:33 wiz Exp $
 #
 
 DISTNAME=	binutils-2.11.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=binutils/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gnu.org/directory/binutils.html
 COMMENT=	GNU binary utilities
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/01 11:59:48 jmmv Exp $
 #
 
 DISTNAME=	mailserv
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}
 CATEGORIES=	mail
 MASTER_SITES=	http://www.csicop.org/~fitz/www/mailserv/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.csicop.org/~fitz/www/mailserv/
 COMMENT=	WWW interface to several types of mailing list servers
 

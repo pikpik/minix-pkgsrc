@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:52 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/03/29 12:41:58 jmmv Exp $
 
 DISTNAME=		LambdaMOO-1.8.1
 PKGNAME=		lambdamoo-1.8.1
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.place.org/pub/moo/ \
 			${MASTER_SITE_SOURCEFORGE:=lambdamoo/} \
 			ftp://ftp.kanga.nu/pub/mirrors/download.sourceforge.net/lambdamoo/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.ccs.neu.edu/home/eostrom/muds/lambdamoo.html
 COMMENT=		The definitive MOO software
 

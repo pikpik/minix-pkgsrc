@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/10/18 12:30:45 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/29 12:40:22 jmmv Exp $
 # FreeBSD Id: ports/misc/rpm2cpio/Makefile,v 1.2 1999/08/25 07:22:29 obrien Exp
 
 DISTNAME=	rpm2cpio
@@ -8,7 +8,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.iagora.com/~espel/
 EXTRACT_SUFX=	# none
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.iagora.com/~espel/index.html
 COMMENT=	Convert .rpm files for extraction with cpio, needs just perl
 

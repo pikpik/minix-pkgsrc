@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/03/02 19:47:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.19 2003/03/29 12:41:20 jmmv Exp $
 # FreeBSD: Makefile,v 1.8 1996/11/18 09:53:36 asami Exp
 #
 
@@ -15,7 +15,7 @@ PATCHFILES=		pixmap_2.6.patch1.gz \
 			pixmap_2.6.patch3.gz \
 			pixmap_2.6.patch4.gz
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		Pixmap editor based on XPM library
 
 USE_BUILDLINK2=		YES

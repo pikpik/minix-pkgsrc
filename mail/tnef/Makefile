@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2002/10/13 20:20:24 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/05 10:13:52 wiz Exp $
 #
 
 DISTNAME=	tnef-1.2.0
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tnef/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://world.std.com/~damned/software.html
 COMMENT=	decode MS-TNEF MIME attachments
 

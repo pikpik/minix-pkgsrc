@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/03/15 13:32:35 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2001/03/15 13:38:58 hubertf Exp $
 #
 
 DISTNAME=	astyle_1.13.6.1
@@ -7,7 +7,7 @@ CATEGORIES=	textproc devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=astyle/}
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://astyle.sourceforge.net/
 COMMENT=	reindenter and reformatter of C++, C and Java source code
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2002/10/20 23:35:11 seb Exp $
+# $NetBSD: Makefile,v 1.11 2003/03/03 11:15:08 mjl Exp $
 #
 
 DISTNAME=	DBD-CSV-0.2002
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	p5dcs
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBD/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 # HOMEPAGE=	http://
 COMMENT=	Access CSV files via DBI
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.33 2002/03/05 23:34:27 skrll Exp $
+# $NetBSD: Makefile,v 1.34 2002/11/15 00:00:41 jlam Exp $
 #
 
 DISTNAME=		giflib-4.1.0
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://prtr-13.ucsc.edu/pub/libungif/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://prtr-13.ucsc.edu/~badger/software/libungif/index.shtml
 COMMENT=		Tools and library routines for working with GIF images
 

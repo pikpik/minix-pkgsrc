@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/11/22 16:37:05 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/03/29 12:42:55 jmmv Exp $
 #
 
 DISTNAME=	tidy_src_021108
@@ -11,7 +11,7 @@ MASTER_SITES=	http://tidy.sourceforge.net/src/ \
 EXTRACT_SUFX=	.tgz
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} tidy_docs_021021${EXTRACT_SUFX}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://tidy.sourceforge.net/
 COMMENT=	Fixes and tidies up HTML files
 

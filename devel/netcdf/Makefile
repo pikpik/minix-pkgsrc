@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/03/02 08:26:09 jtb Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/29 23:14:08 grant Exp $
 
 DISTNAME=	netcdf-3.5.0
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://www.gfd-dennou.org/arch/netcdf/unidata-mirror/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.unidata.ucar.edu/packages/netcdf/index.html
 COMMENT=	Library for array-oriented data access
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2002/10/21 14:52:27 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2002/12/22 14:59:25 agc Exp $
 #
 
 DISTNAME=	tkcvs_7_1_2
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.twobarleycorns.net/ \
 		${MASTER_SITE_SOURCEFORGE:=tkcvs/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.twobarleycorns.net/tkcvs.html
 COMMENT=	Tcl/Tk frontends to CVS and diff
 

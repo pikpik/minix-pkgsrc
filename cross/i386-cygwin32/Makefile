@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2001/03/10 21:15:27 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/03/29 12:40:24 jmmv Exp $
 #
 
 DISTVERSION=		1.0.0.0
 DISTFILES=		# none
 WRKSRC=			${WRKDIR}/${EGCS_DISTNAME}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
 COMMENT=		Cross-compile environment for Cywin32/i386
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2002/04/20 19:02:03 fredb Exp $
+# $NetBSD: Makefile,v 1.4 2003/04/07 15:01:22 bouyer Exp $
 
 DISTNAME=	sdig-0.30
 CATEGORIES=	net
 MASTER_SITES=	http://www.exploits.org/sdig/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} mactable.gz
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.exploits.org/sdig/
 COMMENT=	Switch Digger finds port assignment for hosts on a switched Ethernet
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2002/10/09 19:02:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2002/12/14 03:43:19 schmonz Exp $
 
 DISTNAME=		gri-2.8.7
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gri/}
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://gri.sourceforge.net
 COMMENT=		language for scientific graphics applications
 

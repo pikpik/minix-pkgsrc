@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2003/03/30 20:04:00 jschauma Exp $
+# $NetBSD: Makefile,v 1.63 2003/04/01 22:52:42 jmc Exp $
 #
 
 DISTNAME=	cvs-1.11.5
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://ftp.cvshome.org/${DISTNAME}/ \
 		${MASTER_SITE_GNU:=non-gnu/cvs/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.cvshome.org/
 COMMENT=	Concurrent Versions System
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/08/28 19:16:47 seb Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/07 21:18:58 seb Exp $
 
 DISTNAME=	Math-Bezier-0.01
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Math/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Perl module for the solution of Bezier curves
 
 USE_BUILDLINK2=		YES

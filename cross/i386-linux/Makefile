@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/10/03 16:40:11 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2003/03/29 12:40:24 jmmv Exp $
 #
 
 WRKSRC=			${WRKDIR}
@@ -7,7 +7,7 @@ DISTFILES=		${LINUXDEVEL_FILES}
 EXTRACT_ONLY=		# none of the RPM files
 MASTER_SITES=		ftp://ftp.cdrom.com/pub/linux/redhat/redhat-5.1/i386/RedHat/RPMS/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		Cross-compile environment for iX86 Linux, libc v6
 
 BUILD_DEPENDS+=		rpm-[0-9]*:../../misc/rpm

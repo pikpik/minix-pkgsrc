@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/02/17 23:32:34 grant Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:42:47 jmmv Exp $
 #
 
 DISTNAME=	mod_bandwidth.c
@@ -8,7 +8,7 @@ CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cohprog.com/pub/apache/module/
 EXTRACT_SUFX=	# empty
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://cohprog.com/v3/bandwidth/intro-en.html
 COMMENT=	Apache module for bandwidth management
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/02 11:54:08 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2003/05/30 16:19:52 jmmv Exp $
 #
 
 DISTNAME=		gnome-pilot-0.1.71
@@ -7,7 +7,7 @@ CATEGORIES=		comms gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-pilot/0.1/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Palm Pilot synchronisation for GNOME
 

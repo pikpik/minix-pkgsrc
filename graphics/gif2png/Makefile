@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2002/03/13 17:37:07 fredb Exp $
+# $NetBSD: Makefile,v 1.20 2002/08/30 23:04:07 wiz Exp $
 
 DISTNAME=	gif2png-2.4.6
 CATEGORIES=	graphics converters
 MASTER_SITES=	http://www.tuxedo.org/~esr/gif2png/ \
 		${MASTER_SITE_SUNSITE:=apps/graphics/convert/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.tuxedo.org/~esr/gif2png/
 COMMENT=	convert GIF files to PNG
 

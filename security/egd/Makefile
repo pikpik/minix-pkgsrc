@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/09/27 23:18:38 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/28 00:07:56 seb Exp $
 #
 
 DISTNAME=	egd-0.8
@@ -6,7 +6,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.lothar.com/linux/ \
 		http://www.lothar.com/pub/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.lothar.com/tech/crypto/
 COMMENT=	EGD: Entropy Gathering Daemon
 

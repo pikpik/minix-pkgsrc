@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/02/17 13:53:08 zuntum Exp $
 
 DISTNAME=	spamprobe-0.8b
 COMMENT=	Spam detector using Bayesian analysis of word counts
 CATEGORIES=	mail
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://spamprobe.sourceforge.net/
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=spamprobe/}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2002/11/01 16:34:36 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2003/03/29 12:40:26 jmmv Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -8,7 +8,7 @@ SVR4_PKGNAME=		p5gdm
 WRKSRC=			${WRKDIR}/${EXTRACT_ELEMENTS}
 CATEGORIES+=		perl5
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		perl interface to gdbm - GNU database manager
 
 USE_BUILDLINK2=		YES

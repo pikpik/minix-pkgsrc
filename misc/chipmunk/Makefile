@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2001/06/21 03:03:07 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/10/25 18:42:53 wiz Exp $
 #
 
 DISTNAME=       chipmunk-1.4
 CATEGORIES=	misc
 MASTER_SITES=   http://www.bitwizard.nl/chipmunk/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.bitwizard.nl/chipmunk/index.html
 COMMENT=	shell-like tool for hardware debugging
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/02 15:03:18 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2003/04/27 14:31:52 cjep Exp $
 #
 
 DISTNAME=		Devel-StackTrace-1.02
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5dst
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Devel/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 #HOMEPAGE=	
 COMMENT=		perl5 module for stack trace and stack trace frame objects
 

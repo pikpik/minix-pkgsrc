@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/12/24 06:09:54 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2003/05/02 11:54:28 wiz Exp $
 #
 
 DISTNAME=		libole2-2.2.8
@@ -8,7 +8,7 @@ CATEGORIES=		devel gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libole2/2.2/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		OLE2 streams parsing library for GNOME2
 

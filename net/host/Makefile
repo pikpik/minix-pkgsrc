@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/09/09 20:36:38 agc Exp $
+# $NetBSD: Makefile,v 1.3 2003/03/29 12:41:56 jmmv Exp $
 
 DISTNAME=	host_991529
 PKGNAME=	host-991529
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nikhef.nl/pub/network/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.nikhef.nl/user/e07/
 COMMENT=	powerful DNS query and testing tool
 

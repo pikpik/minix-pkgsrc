@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2003/05/01 20:43:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/03 12:00:10 cjep Exp $
 
 DISTNAME=	logcheck-1.1.1
 PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.psionic.com/tools/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.psionic.com/
 COMMENT=	Auditing tool for system logs on Unix boxes
 

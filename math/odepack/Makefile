@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2001/05/05 20:55:09 jtb Exp $
+# $NetBSD: Makefile,v 1.10 2003/03/29 12:41:43 jmmv Exp $
 
 DISTNAME=		odepack-20001130
 WRKSRC=			${WRKDIR}/odepack
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		Systematized Collection of ODE Solvers
 
 DEPENDS+=		linpack>=20010427:../../math/linpack

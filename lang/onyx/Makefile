@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2002/11/11 11:10:41 mrg Exp $
+# $NetBSD: Makefile,v 1.7 2002/11/20 11:57:43 mrg Exp $
 
 DISTNAME=	onyx-${VERS}
 CATEGORIES=	lang
 MASTER_SITES=	http://www.canonware.com/download/onyx/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.canonware.com/
 COMMENT=	Embeddable stack-based threaded interpreted language
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/11/26 06:50:14 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/06 22:31:11 seb Exp $
 #
 
 DISTNAME=		Crypt-DES-2.03
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5des
 CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Crypt/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 COMMENT=		XS-based DES implementation for Perl
 
 USE_BUILDLINK2=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/05/05 14:29:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2003/05/30 16:19:55 jmmv Exp $
 #
 
 DISTNAME=		mrproject-0.5.1
@@ -6,7 +6,7 @@ PKGREVISION=		5
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.codefactory.se/pub/software/mrproject/source/
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://mrproject.codefactory.se/
 COMMENT=		Project management program
 

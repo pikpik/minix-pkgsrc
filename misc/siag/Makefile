@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.31 2003/01/17 02:58:59 uebayasi Exp $
+# $NetBSD: Makefile,v 1.32 2003/03/05 14:30:59 wiz Exp $
 #
 
 DISTNAME=       siag-3.5.7
 CATEGORIES=     misc textproc math
 MASTER_SITES=   ftp://siag.nu/pub/siag/
 
-MAINTAINER=     packages@netbsd.org
+MAINTAINER=     tech-pkg@netbsd.org
 HOMEPAGE=       http://siag.nu/
 COMMENT=	Poor man's office suite with spreadsheet, word processor, etc
 

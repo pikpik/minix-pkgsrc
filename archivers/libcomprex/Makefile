@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/11/18 16:22:13 cjep Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/10 07:34:16 cjep Exp $
 #
 
 DISTNAME=	libcomprex-0.3.2
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnupdate/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gnupdate.org/components/libcomprex/index.xml
 COMMENT=	Library to handle (de)compression of files
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/01/30 02:28:35 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2002/10/31 11:22:02 seb Exp $
 #
 
 DISTNAME=	wApua-0.05
 CATEGORIES=	www
 MASTER_SITES=	http://fsinfo.cs.uni-sb.de/~abe/wApua/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://fsinfo.cs.uni-sb.de/~abe/wApua/
 COMMENT=	web browser for WAP WML
 

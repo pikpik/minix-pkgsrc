@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/03/01 21:58:40 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/05/02 11:54:25 wiz Exp $
 #
 
 DISTNAME=	gconfmm-2.0.1
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmm/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ interface to GConf2
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.20 2003/03/25 09:14:06 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2003/03/25 10:57:44 tron Exp $
 
 DISTNAME=	sox-12.17.4
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sox/} \
 		http://www.cnpbagwell.com/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://sox.sourceforge.net/
 COMMENT=	SOund eXchange - universal sound sample translator
 

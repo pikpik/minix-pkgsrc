@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/04/28 08:59:29 skrll Exp $
+# $NetBSD: Makefile,v 1.16 2003/05/02 11:57:10 wiz Exp $
 
 DISTNAME=	kde-2.2.2
 PKGREVISION=	6
@@ -6,7 +6,7 @@ CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	"meta-package" for the KDE integrated X11 desktop
 

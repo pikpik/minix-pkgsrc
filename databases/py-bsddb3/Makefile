@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/17 19:26:04 gson Exp $
 #
 
 DISTNAME=	bsddb3-4.1.1
@@ -7,7 +7,7 @@ PKGREVISION= 	1
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pybsddb/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://pybsddb.sourceforge.net/
 COMMENT=	Python extension module for Berkeley DB 3 and 4
 

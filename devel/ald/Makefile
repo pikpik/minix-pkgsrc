@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/04/22 11:51:50 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/03/29 12:40:29 jmmv Exp $
 #
 
 DISTNAME=	ald-0.0.19d
@@ -7,7 +7,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 CATEGORIES=	devel
 MASTER_SITES=	http://ellipse.mcs.drexel.edu/source/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://ellipse.mcs.drexel.edu/ald.html
 COMMENT=	Very nice x86 assembly-level debugger ported to NetBSD
 

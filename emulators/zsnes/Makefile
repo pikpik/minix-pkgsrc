@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2003/05/05 16:24:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2003/05/05 19:05:11 jmmv Exp $
 #
 
 DISTNAME=		zsnes136src
@@ -8,7 +8,7 @@ WRKSRC=			${WRKDIR}/zsnes-1.36/src
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=zsnes/}
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.zsnes.com/sourceforge.php
 COMMENT=		Super NES emulator
 

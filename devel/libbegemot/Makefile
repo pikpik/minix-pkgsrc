@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2001/02/17 18:09:10 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2002/05/16 16:04:55 agc Exp $
 #
 
 DISTNAME=	libbegemot-1.9
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/cats/usr/harti/p11/
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 #HOMEPAGE=	
 COMMENT=	base development library, contains useful routines
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/11/28 05:20:47 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/10/13 22:22:48 seb Exp $
 #
 
 DISTNAME=	IPC-ShareLite-0.08
@@ -6,7 +6,7 @@ PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IPC/}
 
-MAINTAINER=	packages@netbsd.org
+MAINTAINER=	tech-pkg@netbsd.org
 COMMENT=	Light-weight interface to shared memory
 
 USE_BUILDLINK2=		 YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/25 12:59:09 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/04/10 01:28:28 grant Exp $
 #
 
 DISTNAME=		mod_python-2.7.6
@@ -7,7 +7,7 @@ CATEGORIES=		www
 MASTER_SITES=		http://www.modpython.org/dist/
 EXTRACT_SUFX=           .tgz
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.modpython.org/
 COMMENT=		Python interpretter embedded into Apache
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2001/02/16 14:05:01 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2001/05/27 15:17:36 dmcmahill Exp $
 #
 
 DISTVERSION=		1.3.0.0
 DISTFILES=		# none
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.netbsd.org/
 COMMENT=		Cross-compile environment for a.out NetBSD/m68k (static binaries only)
 

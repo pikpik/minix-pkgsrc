@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/10/09 18:25:40 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2003/03/29 12:41:42 jmmv Exp $
 
 DISTNAME=		lapack
 PKGNAME=		lapack-20010201
@@ -11,7 +11,7 @@ MASTER_SITES=		ftp://ftp.netlib.org/lapack/			\
 			ftp://ftp.zib.de/netlib/lapack/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		packages@netbsd.org
+MAINTAINER=		tech-pkg@netbsd.org
 HOMEPAGE=		http://www.netlib.org/lapack/index.html
 COMMENT=		Linear Algebra PACKage
 
