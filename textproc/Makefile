@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/09/19 11:32:52 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.25 1999/09/24 01:09:20 fredb Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/10/13 11:11:32 itojun Exp
 #
 
@@ -24,6 +24,7 @@
     SUBDIR += mswordview
     SUBDIR += par
     SUBDIR += p5-XML-Parser
+    SUBDIR += p5-Filter
 #    SUBDIR += pilot_makedoc
     SUBDIR += rman
 #    SUBDIR += sgmlformat
