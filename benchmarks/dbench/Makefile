@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/01/20 12:08:12 agc Exp $
+# $NetBSD: Makefile,v 1.5 2004/07/30 15:50:37 minskim Exp $
 #
 
 DISTNAME=	dbench-1.3
 CATEGORIES=	benchmarks
-MASTER_SITES=	ftp://dnuc.polyn.kiae.su/pub/dbench/
+MASTER_SITES=	http://samba.org/ftp/tridge/dbench/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://samba.org/ftp/tridge/dbench/README
