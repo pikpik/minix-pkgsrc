@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2001/04/13 04:18:34 kim Exp $
+# $NetBSD: Makefile,v 1.23 2001/06/20 14:08:41 wiz Exp $
 #
 
-DISTNAME=	procmail-3.15.1
+DISTNAME=	procmail-3.20
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.procmail.org/pub/procmail/
 

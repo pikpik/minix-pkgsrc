@@ -2,16 +2,16 @@ $NetBSD$
 
 If these lines stay, `make install; make deinstall; make install' fails.
 
---- Makefile.1.orig	Sat Dec 21 04:28:05 1996
+--- Makefile.1.orig	Fri Jun 29 04:20:17 2001
 +++ Makefile.1
-@@ -102,14 +102,12 @@
+@@ -101,14 +101,12 @@
       then $(MANCOMPRESS) -c new/$$a.5 >$(MAN5DIR)/$$a.$(MAN5SUFFIX); \
       else :; fi; \
    done
 -	echo Housekeeping file >install.man
  
  install.bin: $(BINS) $(BASENAME)
- 	@-mkdir $(BINDIR) 2>$(DEVNULL); exit 0
+ 	@-$(MKDIRS) $(BINDIR) 2>$(DEVNULL); exit 0
  	@chmod 0755 $(BINS)
  	$(INSTALL) $(BINS) $(BINDIR)
  	@-dirname / >$(DEVNULL) || $(INSTALL) examples/dirname $(BINDIR)
