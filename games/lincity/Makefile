@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/12 06:30:44 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/02/16 15:10:53 wiz Exp $
 #
 
 DISTNAME=		lincity-1.11
@@ -14,6 +14,8 @@ USE_X11BASE=		# defined
 
 ALL_TARGET=		xlincity
 INSTALL_TARGET=		install-xlincity install-lib install-man
+
+MAKE_ENV+=		EXTRA_OPTS="${CFLAGS}"
 
 pre-build:
 	${LN} -sf lincity.man ${WRKSRC}/xlincity.man
