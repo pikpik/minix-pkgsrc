@@ -1,8 +1,8 @@
 $NetBSD$
 
---- doc/ref/Makefile.in.orig	Mon Dec 16 13:05:21 2002
+--- doc/ref/Makefile.in.orig	2003-04-21 19:02:49.000000000 +0200
 +++ doc/ref/Makefile.in
-@@ -215,7 +215,7 @@
+@@ -218,7 +218,7 @@ PSS = guile.ps
  TEXINFOS = guile.texi
  DATA = $(html_DATA)
  
