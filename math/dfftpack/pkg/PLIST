@@ -1,0 +1,10 @@
+@comment $NetBSD$
+lib/libdfftpack.a
+lib/libdfftpack.la
+lib/libdfftpack.so.0.0
+share/doc/dfftpack/README
+share/doc/dfftpack/doc
+share/doc/dfftpack/doc.double
+share/examples/dfftpack/test.f
+@dirrm share/examples/dfftpack
+@dirrm share/doc/dfftpack
