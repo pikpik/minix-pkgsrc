@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.59 2003/09/14 16:30:34 danw Exp $
+# $NetBSD: defs.Linux.mk,v 1.60 2003/09/23 07:26:23 grant Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -68,6 +68,8 @@ HEAD?=		/usr/bin/head
 .endif
 HOSTNAME_CMD?=	/bin/hostname
 ID?=		/usr/bin/id
+IMAKE?=		${X11BASE}/bin/imake ${IMAKEOPTS}
+IMAKEOPTS+=	-DBuildHtmlManPages=NO
 LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln
 LS?=		/bin/ls
