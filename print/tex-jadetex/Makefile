@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2001/09/09 20:36:45 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2001/10/04 18:47:06 hubertf Exp $
 #
 
 DISTNAME=	jadetex-2.20
-PKGNAME=	tex-${DISTNAME}nb1
+PKGNAME=	tex-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://www.tug.org/applications/jadetex/
 EXTRACT_SUFX=	.zip

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/05/23 15:47:43 agc Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/09 20:36:49 agc Exp $
 #
 
 DISTNAME=		helpdc21
-PKGNAME=		helpdeco-21nb1
+PKGNAME=		helpdeco-21
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SIMTEL:=win95/winhelp/}
 EXTRACT_SUFX=		.zip

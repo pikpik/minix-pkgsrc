@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.36 2001/07/03 20:59:05 zuntum Exp $
+# $NetBSD: Makefile,v 1.37 2001/08/09 13:45:43 wiz Exp $
 #
 
 DISTNAME=       bxform-088
-PKGNAME=	xforms-0.88nb1
+PKGNAME=	xforms-0.88
+PKGREVISION=       1
 WRKSRC=		${WRKDIR}/xforms
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ncmir.ucsd.edu/pub/xforms/${ARCH_SUBDIR}/

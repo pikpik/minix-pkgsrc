@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2001/07/16 10:29:51 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2001/09/27 23:17:41 jlam Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp 
 #
 
 DISTNAME=	zip-2.3
-PKGNAME=	${DISTNAME}nb1
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/ \
 		ftp://ftp.icce.rug.nl/infozip/src/

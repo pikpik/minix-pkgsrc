@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2001/05/19 03:56:40 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2001/09/09 20:36:47 agc Exp $
 # FreeBSD Id: Makefile,v 1.3 1997/01/06 12:13:36 jkh Exp
 #
 
 DISTNAME=       rtty-3.2
-PKGNAME=	${DISTNAME}nb1
+PKGREVISION=       1
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.vix.com/pub/vixie/
 

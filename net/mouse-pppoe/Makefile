@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/03/31 11:14:30 zuntum Exp $
+# $NetBSD: Makefile,v 1.8 2001/09/09 20:36:38 agc Exp $
 
 DISTNAME=		pppoe.20000912
-PKGNAME=		mouse-${DISTNAME:S/./-/}nb1
+PKGNAME=		mouse-${DISTNAME:S/./-/}
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.netbsd.org/pub/NetBSD/misc/mouse/pppoe/
 

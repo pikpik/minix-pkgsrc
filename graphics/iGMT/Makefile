@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2001/05/07 18:41:16 jtb Exp $
+# $NetBSD: Makefile,v 1.11 2001/05/19 17:48:27 jtb Exp $
 
 DISTNAME=		igmt_v1.2
-PKGNAME=		iGMT-1.2nb1
+PKGNAME=		iGMT-1.2
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://op.gfz-potsdam.de/igmt/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2001/03/15 15:22:00 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2001/06/20 09:29:26 jlam Exp $
 #
 
 DISTNAME=	ispell-3.1.20
-PKGNAME=	ispell-base-3.1.20nb1
+PKGNAME=	ispell-base-3.1.20
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/02/25 04:17:54 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/18 12:21:05 frueauf Exp $
 
 DISTNAME=	skk9.6
-PKGNAME=	skkserv-3.9.4nb1
+PKGNAME=	skkserv-3.9.4
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/skk-9.6
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/9.6/

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2001/08/27 18:35:54 hubertf Exp $
+# $NetBSD: Makefile,v 1.24 2001/11/28 05:20:46 jlam Exp $
 # FreeBSD Id: Makefile,v 1.5 1997/09/19 09:29:04 max Exp
 #
 
 DISTNAME=	automake-1.4-p5
-PKGNAME=	${DISTNAME:C/-p/./}nb1
+PKGNAME=	${DISTNAME:C/-p/./}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=automake/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2001/04/28 14:43:28 drochner Exp $
+# $NetBSD: Makefile,v 1.8 2001/11/26 05:56:36 jlam Exp $
 #
 
 DISTNAME=		libcdaudio-0.99.4
-PKGNAME=		libcdaudio-0.99.4nb1
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		ftp://cdcd.undergrid.net/libcdaudio/ \
 			http://cdcd.undergrid.net/libcdaudio/source_archive/ \
