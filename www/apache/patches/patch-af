@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/modules/standard/mod_so.c.orig	Wed Oct 17 11:47:02 2001
+--- src/modules/standard/mod_so.c.orig	Fri Feb  1 10:05:43 2002
 +++ src/modules/standard/mod_so.c
-@@ -321,7 +321,15 @@
+@@ -324,7 +324,15 @@
          return err;
      }
      
