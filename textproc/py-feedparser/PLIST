@@ -1,3 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/27 06:31:20 schmonz Exp $
 ${PYSITELIB}/feedparser.py
 ${PYSITELIB}/feedparser.pyc
+${PYSITELIB}/feedparser.pyo
