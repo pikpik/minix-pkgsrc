@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.325 2004/07/06 21:03:27 drochner Exp $
+# $NetBSD: Makefile,v 1.326 2004/07/28 13:39:47 markd Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -132,6 +132,8 @@ SUBDIR+=	jpeginfo
 SUBDIR+=	jpegoptim
 SUBDIR+=	kdegraphics2
 SUBDIR+=	kdegraphics3
+SUBDIR+=	kphotobook
+SUBDIR+=	kphotools
 SUBDIR+=	lcms
 SUBDIR+=	lib3ds
 SUBDIR+=	libart2
