@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/10/16 06:58:30 jlam Exp $
-
-.include "../../www/php4/Makefile.module"
+# $NetBSD: Makefile,v 1.3 2001/12/03 08:30:59 jlam Exp $
 
 MODNAME=		dbase
 CATEGORIES+=		databases
@@ -8,6 +6,9 @@ PKGREVISION=		# empty
 COMMENT=		PHP4 extension for dBase database access
 
 USE_BUILDLINK_ONLY=	YES
+
+.include "../../www/php4/Makefile.module"
+
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared
 
 .include "../../mk/bsd.pkg.mk"
