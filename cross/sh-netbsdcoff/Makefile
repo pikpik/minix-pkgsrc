@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/01/04 01:20:48 itojun Exp $
 #
 
 DISTVERSION=		1.3.0.0
@@ -14,6 +14,7 @@ BINUTILS_GNUTARGET=	coff-sh
 BINUTILS_LDEMULATION=	shunx
 USE_CROSS_EGCS=		yes
 EGCS_FAKE_RUNTIME=	yes
+EGCS_MULTILIB=		yes
 
 TARGET_ARCH=		sh-netbsdcoff
 
