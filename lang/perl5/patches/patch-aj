@@ -10,10 +10,10 @@ $NetBSD$
      *) $touch $firstmakefile ;;
      esac
  fi
-@@ -141,6 +142,8 @@ for file in `$cat .clist`; do
-         $cppstdin $finc -I. $cppflags $cppminus <UU/$file.c |
+@@ -155,6 +156,8 @@ for file in `$cat .clist`; do
          $sed \
-     	    -e '/^#.*<stdin>/d' \
+ 	    -e '1d' \
+ 	    -e '/^#.*<stdin>/d' \
 +    	    -e '/^#.*<built-in>/d' \
 +    	    -e '/^#.*<command line>/d' \
  	    -e '/^#.*"-"/d' \
