@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.251 2001/10/11 14:50:48 agc Exp $
+# $NetBSD: Makefile,v 1.252 2001/10/11 15:12:43 agc Exp $
 #
 
 COMMENT=	Networking tools
@@ -48,6 +48,7 @@ SUBDIR+=	eggdrop
 SUBDIR+=	ethereal
 SUBDIR+=	fair-identd
 SUBDIR+=	firewalk
+SUBDIR+=	firewalk-gtk
 SUBDIR+=	fping
 SUBDIR+=	freewais-sf
 SUBDIR+=	gated
