@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/expat.h
+lib/libexpat.a
+lib/libexpat.la
+lib/libexpat.so
+lib/libexpat.so.0
+lib/libexpat.so.0.1
