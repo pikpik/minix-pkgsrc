@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/09/28 12:27:06 fredb Exp $
+# $NetBSD: Makefile,v 1.14 1999/12/06 09:43:19 sakamoto Exp $
 #
 # GNU binutils configured to hold `as many targets as the cross system is
 # capable of using'.  Configures and builds everything except gas, which
@@ -62,7 +62,7 @@ do-install:
 ENABLE_TARGETS_LIST!=	${ECHO} "${ENABLE_TARGETS}" | ${SED} "s/[ 	][ 	]*/,/g;s/^,*//"
 
 .if defined(EXTRACT_USING_PAX)
-DONT_EXTRACT!=		${AWK} -- '{ ORS=" "; print $1 }' < files/exclude
+DONT_EXTRACT!=		${AWK} -- '{ ORS=" "; print $1 }' < ${FILESDIR}/exclude
 EXTRACT_ELEMENTS=	-c ${DONT_EXTRACT}
 .else
 EXTRACT_ELEMENTS=	-X ${FILESDIR}/exclude
