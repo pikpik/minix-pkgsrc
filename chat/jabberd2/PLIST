@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/03/28 19:44:07 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/04/23 22:07:52 reed Exp $
 bin/c2s
 bin/jabberd
+bin/migrate.pl
 bin/pipe-auth.pl
 bin/resolver
 bin/router
