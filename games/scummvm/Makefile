@@ -1,9 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2003/03/29 12:41:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2003/05/02 11:55:05 wiz Exp $
 
-DISTNAME=	scummvm_0.3.0b-src
-PKGREVISION=	1
-PKGNAME=	scummvm-0.3.0
-WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
+DISTNAME=	scummvm-0.4.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
 EXTRACT_SUFX=	.tar.bz2
