@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/02/14 17:21:36 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2004/03/07 22:32:05 minskim Exp $
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
 PKGREVISION=	1
@@ -18,6 +18,8 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/srclib
 BUILD_DIRS=		${WRKSRC}/apr ${WRKSRC}/apr-util
 
 CONFIGURE_ENV+=		CFLAGS="${CFLAGS}" LIBS="${LDFLAGS}"
+
+LDFLAGS.SunOS+=		-lnsl
 
 pre-configure:
 .for f in apr/config.layout apr-util/config.layout
