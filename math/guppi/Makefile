@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2004/10/03 00:12:56 tv Exp $
+# $NetBSD: Makefile,v 1.43 2004/10/15 14:50:07 tv Exp $
 
 DISTNAME=	Guppi-0.40.3
 PKGNAME=	${DISTNAME:S/G/g/}
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	math graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/Guppi/0.40/}
 EXTRACT_SUFX=	.tar.bz2
@@ -25,7 +25,7 @@ USE_LIBTOOL=		YES
 .include "../../devel/bonobo/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
-.include "../../lang/guile14/buildlink3.mk"
+.include "../../lang/guile/buildlink3.mk"
 .include "../../print/gnome-print/buildlink3.mk"
 .include "../../x11/gnome-libs/buildlink3.mk"
 
