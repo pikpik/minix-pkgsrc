@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 1997/11/05 13:40:16 agc Exp $
 # New ports collection makefile for:   xmascot
 # Version required:    2.5p2
 # Date created:        20 November 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
+# $NetBSD: Makefile,v 1.5 1998/01/09 09:17:05 agc Exp $
 # FreeBSD Id: Makefile,v 1.2 1997/06/07 19:47:09 max Exp
 #
 
