@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 1998/11/05 06:35:24 mycroft Exp $
+# $NetBSD: Makefile,v 1.14 1999/01/01 07:58:29 garbled Exp $
 #
 
 DISTNAME=	sdr-2.5.8
 CATEGORIES=	mbone tk80
-MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.5.8/
+MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/experimental/2.5.8/
 
 MAINTAINER=	is@netbsd.org
 HOMEPAGE=	http://north.east.isi.edu/sdr/
