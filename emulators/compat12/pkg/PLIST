@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libedit.so.0.0
+lib/libg++.so.2.0
+lib/libg++.so.3.0
+lib/libutil.so.3.2
