@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/uwm
+man/cat1/uwm.0
+lib/X11/uwm/system.uwmrc
+@dirrm lib/X11/uwm
