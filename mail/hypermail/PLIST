@@ -1,0 +1,12 @@
+@comment $NetBSD$
+bin/hypermail
+bin/msg2archive
+bin/rdmsg
+man/man1/hypermail.1
+man/man4/hmrc.4
+share/doc/html/hypermail/customizing.html
+share/doc/html/hypermail/hmrc.html
+share/doc/html/hypermail/hr.yellow.gif
+share/doc/html/hypermail/hypermail.gif
+share/doc/html/hypermail/hypermail.html
+@dirrm share/doc/html/hypermail
