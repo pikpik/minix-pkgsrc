@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2002/01/10 20:56:25 tron Exp $
+# $NetBSD: Makefile,v 1.31 2002/03/23 17:44:21 yyamano Exp $
 
 DISTNAME=	xmcd-3.0.2
 CATEGORIES=	audio
@@ -15,7 +15,7 @@ PATCH_DIST_STRIP=	-p1
 WRKSRC=		${WRKDIR}/xmcd-3.0
 USE_NCURSES=	yes
 USE_IMAKE=	yes
-IS_INTERACTIVE=	yes	# asks a lot of questions
+INTERACTIVE_STAGE=	install
 MAKE_ENV+=	SHELL=${SH}
 
 post-patch:
