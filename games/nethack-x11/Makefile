@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/12/31 06:19:38 garbled Exp $
+# $NetBSD: Makefile,v 1.3 1998/12/31 13:20:54 tv Exp $
 #
 
 DISTNAME=		nethack-3.2.2
@@ -9,8 +9,8 @@ MASTER_SITES=		http://pinky.wtower.com/nethack/sources/
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.win.tue.nl/games/roguelike/nethack/
 
-#DEPENDS+=		nethack-lib-3.2.2:../nethack-lib
-#DEPENDS+=		xpm-3.4k:../../graphics/xpm
+DEPENDS+=		nethack-lib-3.2.2:../nethack-lib
+DEPENDS+=		xpm-3.4k:../../graphics/xpm
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	sys/unix/setup.sh
