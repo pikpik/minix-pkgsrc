@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2004/11/07 12:32:04 markd Exp $
+# $NetBSD: Makefile,v 1.24 2004/12/18 17:17:16 jdolecek Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.10
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/acrobatreader/unix/5.x/
 
@@ -78,6 +79,7 @@ post-install:
 	${CHMOD} +x ${PREFIX}/bin/acroread5
 	@${ECHO_MSG} "Be sure to read the license agreement in"
 	@${ECHO_MSG} "${PREFIX}/Acrobat5/Reader/license.txt"
+	${LN} -sf ${PREFIX}/bin/acroread5 ${PREFIX}/bin/acroread
 
 # do not include the linux stuff if we are, for example, on a Solaris box
 . if (${MACHINE_ARCH} == "i386")
