@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.295 2002/07/05 06:58:25 tron Exp $
+# $NetBSD: Makefile,v 1.296 2002/07/12 16:26:17 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -128,6 +128,7 @@ SUBDIR+=	libetm
 SUBDIR+=	libg++
 SUBDIR+=	libgetopt
 SUBDIR+=	libglade
+SUBDIR+=	libglade2
 SUBDIR+=	libgtop
 SUBDIR+=	libhfs
 SUBDIR+=	libmemmgr
