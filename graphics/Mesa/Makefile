@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/01/30 23:18:50 agc Exp $
+# $NetBSD: Makefile,v 1.23 1999/02/20 22:48:30 hubertf Exp $
 #
 
 DISTNAME=       MesaLib-3.0
@@ -12,8 +12,6 @@ DISTFILES=	MesaLib-${MESA_VERSION}${EXTRACT_SUFX} \
 
 MAINTAINER=	mycroft@netbsd.org
 HOMEPAGE=	http://www.ssec.wisc.edu/~brianp/Mesa.html
-
-NOT_FOR_ARCHS=	alpha	#gcc lossage
 
 WRKSRC=         ${WRKDIR}/${PKGNAME}
 ALL_TARGET=	netbsd
