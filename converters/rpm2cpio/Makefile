@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2004/10/21 21:19:22 reed Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
+PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	http://www.iagora.com/~espel/
 EXTRACT_SUFX=	# none
@@ -13,11 +14,13 @@ COMMENT=	Convert .rpm files for extraction with cpio, needs just perl
 WRKSRC=		${WRKDIR}
 USE_BUILDLINK3=	YES
 
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 REPLACE_PERL=	rpm2cpio
 
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} .
-NO_BUILD=	YES
+
+# There is nothing to build
+do-build:
 
 # conflicts with rpm package, which also contains a rpm2cpio
 do-install:
