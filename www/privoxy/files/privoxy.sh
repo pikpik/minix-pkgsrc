@@ -1,6 +1,6 @@
-#@SH@
+#!@SH@
 #
-# $NetBSD$
+# $NetBSD: privoxy.sh,v 1.1.1.1 2003/06/16 03:02:04 kim Exp $
 #
 
 # PROVIDE: privoxy
