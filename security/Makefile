@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.141 2003/09/01 16:41:21 jdolecek Exp $
+# $NetBSD: Makefile,v 1.142 2003/09/04 13:32:35 xtraeme Exp $
 #
 
 COMMENT=	Security tools
@@ -35,6 +35,8 @@ SUBDIR+=	gnupg
 SUBDIR+=	gnutls
 SUBDIR+=	gpa
 SUBDIR+=	gpgme
+SUBDIR+=	gsasl
+SUBDIR+=	gss
 SUBDIR+=	gtk-systrace
 SUBDIR+=	hackbot
 SUBDIR+=	isakmpd
