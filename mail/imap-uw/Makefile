@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2003/09/16 19:16:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.70 2003/09/17 19:40:45 grant Exp $
 # ATTENTION:
 # The Kerberos support in this software is known to be problematic. If you
 # upgrade this package you *must* test it on a system *without* Kerberos
@@ -11,7 +11,7 @@ CATEGORIES=     mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.washington.edu/imap/
 COMMENT=	University of Washington's IMAP, POP2, and POP3 servers
 
