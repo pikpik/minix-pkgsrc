@@ -1,4 +1,4 @@
-# $NetBSD: gcc.mk,v 1.61 2004/03/13 20:02:52 jlam Exp $
+# $NetBSD: gcc.mk,v 1.62 2004/03/30 21:39:24 jlam Exp $
 
 .if !defined(COMPILER_GCC_MK)
 COMPILER_GCC_MK=	defined
@@ -295,7 +295,7 @@ _GCC_LINKS+=	_GCC_CC
 PKG_CC=		${_GCC_CC}
 CC=		${PKG_CC:T}
 .endif
-.if exists(${_GCCBINDIR}/cpp)
+.if exists(${_GCCBINDIR}/cpp) && ${OPSYS} != "Darwin"
 _GCC_CPP=	${_GCC_DIR}/bin/cpp
 _GCC_LINKS+=	_GCC_CPP
 PKG_CPP=	${_GCC_CPP}
@@ -332,7 +332,7 @@ CC_VERSION!=		\
 	else								\
 		${ECHO} "gcc-${_GCC_REQD}";				\
 	fi
-	
+
 .  else
 CC_VERSION_STRING=	${CC_VERSION}
 CC_VERSION=		gcc-${_GCC_REQD}
