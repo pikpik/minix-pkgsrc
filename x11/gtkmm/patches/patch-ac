@@ -1,8 +1,8 @@
 $NetBSD$
 
---- docs/images/Makefile.in.orig	2003-07-21 18:53:19.000000000 +0200
-+++ docs/images/Makefile.in	2003-07-22 10:20:24.000000000 +0200
-@@ -120,7 +120,7 @@
+--- docs/images/Makefile.in.orig	2003-08-23 09:49:27.000000000 +0200
++++ docs/images/Makefile.in
+@@ -171,7 +171,7 @@ web_path_gtkmm2 = /home/groups/g/gt/gtkm
  web_path_docs = $(web_path_gtkmm2)docs/
  rsync_args = -vz --rsh ssh --delete --delete-after
  
