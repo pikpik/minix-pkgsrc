@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.defaults.mk,v 1.20 2001/11/30 00:30:40 wiz Exp $
+# $NetBSD: bsd.pkg.defaults.mk,v 1.21 2001/12/03 04:51:08 kent Exp $
 #
 
 # A file providing defaults for pkgsrc and the packages collection.
@@ -974,6 +974,11 @@ PILRC_USE_GTK?=	YES
 # Used in poptop package to specify the use of the mppe-ppp package
 # in preference to the standard ppp
 # Possible: defined, not defined
+# Default: not defined
+
+#POSTFIX_USE_INET6=YES
+# Add support for IPv6.
+# Possible: YES, not defined
 # Default: not defined
 
 #POSTFIX_USE_PCRE=YES
