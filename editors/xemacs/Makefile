@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2002/03/22 22:25:05 tron Exp $
+# $NetBSD: Makefile,v 1.44 2002/03/25 19:07:39 magick Exp $
 
 DISTNAME=	xemacs-21.1.14
 PKGREVISION=	2
@@ -63,7 +63,8 @@ CONFIGURE_ARGS+=	${MACHINE_GNU_PLATFORM} --prefix=${PREFIX} \
 			--infopath="${PREFIX}/info:${X11BASE}/info:/usr/local/info" \
 			--lockdir=/var/tmp/xemacs.lock \
 			--site-includes=${PREFIX}/include:${WRKDIR} \
-			--site-libraries=${PREFIX}/lib
+			--site-libraries=${PREFIX}/lib \
+			--with-msw=no
 
 CFLAGS+=		-Dunix
 MAKE_ENV+=		INSTALL_MAN="${INSTALL_MAN}" \

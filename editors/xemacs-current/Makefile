@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/03/24 19:40:29 magick Exp $
+# $NetBSD: Makefile,v 1.2 2002/03/25 19:35:15 magick Exp $
 
 DISTNAME=	xemacs-21.5.5
 CATEGORIES=	editors
@@ -64,7 +64,8 @@ CONFIGURE_ARGS+=	${MACHINE_GNU_PLATFORM} --prefix=${PREFIX} \
 			--infopath="${PREFIX}/info:${X11BASE}/info:/usr/local/info" \
 			--site-includes=${PREFIX}/include:${WRKDIR} \
 			--site-libraries=${PREFIX}/lib \
-			--error-checking=none
+			--error-checking=none \
+			--with-msw=no
 
 CFLAGS+=		-Dunix
 MAKE_ENV+=		INSTALL_MAN="${INSTALL_MAN}"
