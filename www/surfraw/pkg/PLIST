@@ -1,9 +1,10 @@
-@comment $NetBSD: PLIST,v 1.4 2000/08/12 12:16:04 proff Exp $
+@comment $NetBSD$
 bin/W
 bin/altavista
 bin/appwatch
 bin/ask
 bin/austlii
+bin/britannica
 bin/cite
 bin/cnn
 bin/currency
@@ -14,6 +15,7 @@ bin/freshmeat
 bin/ftpsearch
 bin/google
 bin/ircsearch
+bin/jake
 bin/linuxdoc
 bin/netbsd
 bin/newscientist
@@ -21,6 +23,7 @@ bin/pubmed
 bin/raging
 bin/rhyme
 bin/slashdot
+bin/stockquote
 bin/sundocs
 bin/sunsolve
 bin/surfraw
