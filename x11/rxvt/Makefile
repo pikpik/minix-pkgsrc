@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/01/14 09:08:02 grant Exp $
+# $NetBSD: Makefile,v 1.35 2003/03/27 07:14:25 wiz Exp $
 # FreeBSD Id: Makefile,v 1.13 1997/03/07 12:29:49 obrien Exp
 #
 
@@ -63,7 +63,6 @@ post-install:
 
 .if ${OPSYS} == "SunOS"
 CFLAGS+= -DSunOS
-.else
 .endif
 
 .include "../../graphics/xpm/buildlink2.mk"
