@@ -7,3 +7,5 @@ bin/ns
 bin/setdest
 bin/ucb-tr-stat
 man/man1/ns.1
+share/doc/html/ns/CHANGES.html
+@dirrm share/doc/html/ns
