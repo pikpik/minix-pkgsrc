@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${PYSITELIB}/logging/__init__.py
+${PYSITELIB}/logging/__init__.pyc
+${PYSITELIB}/logging/config.py
+${PYSITELIB}/logging/config.pyc
+${PYSITELIB}/logging/handlers.py
+${PYSITELIB}/logging/handlers.pyc
+@dirrm ${PYSITELIB}/logging
