@@ -1,9 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2002/06/10 09:05:09 sakamoto Exp $
 canna/canna/bushu.cld
 canna/canna/chimei.ctd
 canna/canna/dics.dir
 canna/canna/fuzokugo.cbd
-canna/canna/fuzokugo.cld
 canna/canna/hojomwd.ctd
 canna/canna/hojoswd.ctd
 canna/canna/iroha.cbd

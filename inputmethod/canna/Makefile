@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2002/12/27 08:41:25 uebayasi Exp $
+# $NetBSD: Makefile,v 1.1 2003/05/31 07:24:38 uebayasi Exp $
 #
 .include "Makefile.common"
 
-CANNA_MODULE=	server
+PKGNAME:=	Canna-${CANNA_VERSION}
 
-DEPENDS+=	Canna-server-bin>=${CANNA_VERSION}:../canna-server-bin
+DEPENDS+=	Canna-server>=${CANNA_VERSION}:../canna-server
 DEPENDS+=	Canna-dict>=${CANNA_VERSION}:../canna-dict
 
 EXTRACT_ONLY=	# empty
