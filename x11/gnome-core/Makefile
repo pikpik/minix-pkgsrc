@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2001/09/27 23:19:00 jlam Exp $
+# $NetBSD: Makefile,v 1.69 2001/10/06 14:47:35 rh Exp $
 
 DISTNAME=		gnome-core-1.4.0.4
 CATEGORIES=		x11 gnome
@@ -42,6 +42,7 @@ post-install:
 .endfor
 .endfor
 
+.include "../../archivers/bzip2/buildlink.mk"
 .include "../../graphics/gdk-pixbuf-gnome/buildlink.mk"
 .include "../../www/libghttp/buildlink.mk"
 .include "../../textproc/libxml/buildlink.mk"
