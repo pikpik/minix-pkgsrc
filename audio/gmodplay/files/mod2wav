@@ -1,5 +1,7 @@
 #!/bin/sh
 #
+# $NetBSD$
+#
 # I wrote this shell script long ago to be able to master CDs from modules
 # in Un*x using gmodplay.  -Ben
 
