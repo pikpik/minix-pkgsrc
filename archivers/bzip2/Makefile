@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/08/25 21:48:59 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2002/10/31 22:08:15 grant Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -12,6 +12,16 @@ COMMENT=	Block-sorting file compressor
 USE_BUILDLINK2=		# defined
 USE_LIBTOOL=		# defined
 MAKE_ENV+=		REALCC="${BUILDLINK_CC}"
+
+.include "../../mk/bsd.prefs.mk"
+
+CCVERS!=       ${CC} -v 2>&1 | ${GREP} "gcc" || ${ECHO} "notgcc"
+
+.if ${CCVERS} != "notgcc"
+BZIP_CFLAGS=           -Wall -Winline -fomit-frame-pointer -fno-strength-reduce 
+.endif
+
+MAKE_ENV+=             BZIP_CFLAGS="${BZIP_CFLAGS}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bzip2 ${PREFIX}/bin
