@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2004/11/30 02:50:52 uebayasi Exp $
+# $NetBSD: Makefile,v 1.62 2005/03/04 15:32:35 uebayasi Exp $
 
 DISTNAME=	mew-4.2
 CATEGORIES=	mail
@@ -8,7 +8,7 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.mew.org/
 COMMENT=	Messaging in the Emacs World
 
-CONFLICTS=+	mew-xemacs-*
+CONFLICTS=+	mew-xemacs-[0-9]* incm-[0-9]*
 
 INFO_FILES=	mew.info
 
