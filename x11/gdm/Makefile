@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2003/01/10 07:57:49 cjep Exp $
+# $NetBSD: Makefile,v 1.35 2003/01/10 17:26:55 jmmv Exp $
 
 DISTNAME=	gdm-2.2.0
 PKGREVISION=	2
@@ -14,6 +14,7 @@ COMMENT=	Gnome Display Manager - a re-implementation of the xdm program
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
@@ -115,5 +116,5 @@ post-install:
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/libglade/buildlink2.mk"
 .include "../../x11/gnome-libs/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/10/09 18:57:11 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2003/01/19 13:04:48 grant Exp $
 
 DISTNAME=	teapop-0.3.5
 CATEGORIES=	mail
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.toontown.org/teapop/
 COMMENT=	Yet another RFC1939 compliant POP3 server
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--enable-flock
@@ -46,5 +47,4 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/etc/teapop.passwd ${EGDIR}
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2002/09/21 06:53:56 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2002/12/23 19:57:51 wiz Exp $
 # FreeBSD Id: Makefile,v 1.19 1998/10/31 18:05:31 jseger Exp
 #
 
@@ -18,6 +18,7 @@ COMMENT=	X11 interactive printed circuit board layout system
 DEPENDS+=	m4>=1.4:../../devel/m4
 
 USE_BUILDLINK2=	yes
+USE_PKGINSTALL=	yes
 USE_IMAKE=	yes
 
 PKG_SYSCONFSUBDIR=	pcb
@@ -65,5 +66,4 @@ post-install:
 	${ECHO} "# list your local includes here" > ${EGDIR}/local.inc
 
 .include "../../mk/texinfo.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

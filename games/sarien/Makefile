@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2003/01/10 16:16:33 jmmv Exp $
 #
 
 DISTNAME=	sarien-0.7.0
@@ -11,6 +11,7 @@ COMMENT=	Adventure Game Interpreter (AGI) for Sierra On-Line Titles
 
 GNU_CONFIGURE=		YES
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 USE_GMAKE=		YES
 
 CONFIGURE_ARGS=		--with-sdl
@@ -27,5 +28,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/etc/sarien.cfg ${EGDIR}/sarien.conf
 
 .include "../../devel/SDL/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

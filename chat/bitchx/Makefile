@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/11/06 00:59:30 grant Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/23 14:09:53 grant Exp $
 
 DISTNAME=	ircii-pana-1.0c18
 PKGNAME=	bitchx-1.0.3.18
@@ -14,6 +14,7 @@ HOMEPAGE=	http://www.bitchx.org/
 COMMENT=	IRC client based on ircII
 
 USE_BUILDLINK2=		yes
+USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ssl
 
@@ -51,5 +52,5 @@ post-install:
 
 .include "../../devel/ncurses/buildlink2.mk"
 .include "../../security/openssl/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
+
 .include "../../mk/bsd.pkg.mk"

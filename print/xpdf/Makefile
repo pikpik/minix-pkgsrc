@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2002/12/24 06:10:24 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2002/12/31 02:31:53 uebayasi Exp $
 # 
 
 DISTNAME=	xpdf-2.01
@@ -20,6 +20,7 @@ DEPENDS+=	ghostscript-fonts-[0-9]*:../../fonts/ghostscript-fonts
 CONFLICTS=	xpdf-crypto-[0-9]*
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 USE_X11BASE=		YES
 
 GNU_CONFIGURE=		YES
@@ -43,7 +44,6 @@ CONF_FILES=		${EGDIR}/xpdfrc ${PKG_SYSCONFDIR}/xpdfrc
 .include "../../graphics/xpm/buildlink2.mk"
 .include "../../mk/motif.buildlink2.mk"
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-*-mipsel)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/10/23 02:15:11 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2002/10/25 17:59:54 wiz Exp $
 
 DISTNAME=	chrony-1.17
 CATEGORIES=	net
@@ -9,6 +9,7 @@ HOMEPAGE=	http://chrony.sunsite.dk/index.php
 COMMENT=	Daemon for maintaining the accuracy of computer clocks
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 HAS_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
@@ -32,5 +33,4 @@ post-install:
 
 .include "../../devel/readline/buildlink2.mk"
 .include "../../devel/ncurses/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

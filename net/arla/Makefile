@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2002/12/07 02:38:59 schmonz Exp $
+# $NetBSD: Makefile,v 1.30 2003/01/14 12:00:08 wennmach Exp $
 
 DISTNAME=		arla-0.35.12pre1
 #PKGREVISION=
@@ -15,9 +15,10 @@ CONFLICTS+=		rx-[0-9]*
 OSVERSION_SPECIFIC=	yes
 INFO_FILES=		arla.info
 
-USE_BUILDLINK2=		# defined
-USE_X11=		# defined
-GNU_CONFIGURE=		# defined
+USE_BUILDLINK2=		yes
+USE_PKGINSTALL=		yes
+USE_X11=		yes
+GNU_CONFIGURE=		yes
 
 .if exists(/usr/lib/libroken.a)
 CONFIGURE_ARGS+=	--with-krb4-lib=/usr/lib
@@ -66,5 +67,4 @@ post-install:
 	${INSTALL_DATA} ${FILESDIR}/fstab ${EGDIR}
 
 .include "../../mk/texinfo.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

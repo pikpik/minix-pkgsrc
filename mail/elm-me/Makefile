@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/23 00:07:07 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2002/12/24 09:04:12 kim Exp $
 # FreeBSD: Makefile,v 1.42 1997/12/24 01:21:07 alex Exp
 #
 
@@ -16,6 +16,7 @@ COMMENT=		ELM Mail User Agent with ME extensions
 CONFLICTS=		elm-[0-9]*
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	ksh ./Configure
 CONFIGURE_ENV=		PREFIX="${PREFIX}" RUN_AS_BATCH=yes
@@ -43,5 +44,4 @@ post-configure:
 	${TOUCH} ${WRKSRC}/*/Makefile
 
 .include "../../devel/gettext-lib/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

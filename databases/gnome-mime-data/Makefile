@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/12/25 15:11:20 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2003/01/02 03:21:34 rh Exp $
 #
 
 DISTNAME=		gnome-mime-data-2.0.1
@@ -16,6 +16,7 @@ BUILD_USES_MSGFMT=	YES
 CONFLICTS=		gnome-vfs<=1.0.3
 
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_PERL5=		build
 GNU_CONFIGURE=		YES
@@ -27,5 +28,5 @@ CONF_FILES=		${EGDIR}/gnome-vfs-mime-magic ${PKG_SYSCONFDIR}/gnome-vfs-mime-magi
 
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../lang/perl5/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/01/10 19:24:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2003/01/11 21:08:42 jmmv Exp $
 #
 
 DISTNAME=	xmlcatmgr-0.1
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.sourceforge.net/projects/xmlcatmgr/
 COMMENT=	XML catalog manager
 
 USE_BUILDLINK2=	YES
+USE_PKGINSTALL=	YES
 
 MAKEFILE=	Makefile.boot
 MAKE_ENV+=	BT_PREFIX="${PREFIX}"
@@ -38,5 +39,4 @@ post-install:
 	${INSTALL_DATA} ${WRKDIR}/catalog.sgml ${PREFIX}/share/sgml/catalog
 	${INSTALL_DATA} ${WRKDIR}/catalog.xml ${PREFIX}/share/xml/catalog
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

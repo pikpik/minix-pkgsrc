@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/08/25 21:52:08 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2002/11/26 15:07:31 jmmv Exp $
 #
 
 DISTNAME=	dillo-0.6.6
@@ -11,6 +11,7 @@ HOMEPAGE=	http://dillo.cipsga.org.br/
 COMMENT=	Very small and fast graphical web-browser
 
 USE_BUILDLINK2=	yes
+USE_PKGINSTALL=	yes
 USE_X11=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
@@ -28,5 +29,4 @@ post-install:
 .include "../../graphics/png/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

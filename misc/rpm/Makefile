@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2002/12/01 16:25:58 salo Exp $
+# $NetBSD: Makefile,v 1.38 2002/12/28 08:48:09 tron Exp $
 
 DISTNAME=	rpm-2.5.4
 CATEGORIES=	misc
@@ -13,6 +13,7 @@ BUILD_USES_MSGFMT=	yes
 CONFLICTS+=		rpm2cpio<1.0nb1
 
 USE_BUILDLINK2=		yes
+USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GMAKE=		yes
 GNU_CONFIGURE=		yes
@@ -35,5 +36,4 @@ pre-install:
 .include "../../devel/gettext-lib/buildlink2.mk"
 .include "../../devel/zlib/buildlink2.mk"
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

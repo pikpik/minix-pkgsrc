@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/10/30 09:28:33 martti Exp $
+# $NetBSD: Makefile,v 1.7 2003/01/09 17:38:36 jmmv Exp $
 
 DISTNAME=	ipa-1.3
 CATEGORIES=	net sysutils
@@ -18,7 +18,8 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_PACKAGE=		${RESTRICTED}
 
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK2=		yes
+USE_PKGINSTALL=		yes
 ALL_TARGET=		NetBSD
 
 CFLAGS+=		-DCFGFILE=\\\"${PKG_SYSCONFDIR}/ipa.conf\\\"
@@ -31,5 +32,4 @@ RCD_SCRIPTS=		ipa
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ipa
 
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2002/09/13 06:53:32 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2002/09/19 09:04:06 jlam Exp $
 #
 
 DISTNAME=	hylafax-4.1
@@ -19,6 +19,8 @@ DIST_SUBDIR=	hylafax
 
 CONFLICTS=	mgetty-[0-9]*
 
+USE_PKGINSTALL=	yes
+
 FAXUSER?=	uucp
 FAXGROUP?=	dialer
 RCD_SCRIPTS=	hylafax
@@ -36,5 +38,4 @@ post-install:
 	${CHMOD} 4555 ${SUID_EXES}
 
 .include "../../mk/ghostscript.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2002/11/18 12:07:41 martti Exp $
+# $NetBSD: Makefile,v 1.24 2002/12/07 02:39:03 schmonz Exp $
 #
 
 DISTNAME=		isakmpd-20021118
@@ -15,6 +15,7 @@ PKG_FAIL_REASON+=	"${PKGNAME} requires ipsec-ready ${OPSYS}"
 
 ALL_TARGET=		depend all
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 
 WRKSRC=			${WRKDIR}/isakmpd
 
@@ -41,5 +42,4 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/isakmpd.sh ${PREFIX}/etc/rc.d/isakmpd
 
 .include "../../security/openssl/buildlink2.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2002/10/21 12:39:30 heinz Exp $
+# $NetBSD: Makefile,v 1.14 2002/11/06 21:51:26 heinz Exp $
 
 DISTNAME=	Mail-SpamAssassin-2.43
 PKGNAME=	spamassassin-2.43
@@ -20,6 +20,7 @@ DEPENDS+=	p5-MIME-Base64>=2.11:../../converters/p5-MIME-Base64
 
 BUILDLINK_DEPENDS.perl=	perl>=5.6.0
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 
 CONFLICTS=		p5-Mail-SpamAssassin-[1-9]*
 
@@ -116,5 +117,4 @@ post-install:
 	${CHGRP} ${SHAREGRP} ${RULESDIR}/*
 
 .include "../../lang/perl5/module.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"

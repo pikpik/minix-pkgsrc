@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2002/12/16 16:14:06 drochner Exp $
+# $NetBSD: Makefile,v 1.56 2002/12/17 15:57:31 tron Exp $
 
 DISTNAME=	wget-1.8.2
 CATEGORIES=	net
@@ -12,6 +12,7 @@ USE_PERL5=	build
 
 BUILD_USES_MSGFMT=	YES
 USE_BUILDLINK2=		YES
+USE_PKGINSTALL=		YES
 
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES
@@ -35,7 +36,5 @@ CONFIGURE_ARGS+=--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=--with-ssl=${SSLBASE}
 
 .include "../../devel/gettext-lib/buildlink2.mk"
-
 .include "../../mk/texinfo.mk"
-.include "../../mk/bsd.pkg.install.mk"
 .include "../../mk/bsd.pkg.mk"
