@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2001/09/08 23:03:02 manu Exp $
+# $NetBSD: Makefile,v 1.2 2001/09/15 13:04:35 drochner Exp $
 #
 
 DISTNAME=	aalib-1.4rc4
+PKGNAME=	aalib-1.4.0.4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aa-project/}
 
