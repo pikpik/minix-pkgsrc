@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2000/02/22 22:08:23 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.11 2000/03/27 23:36:14 explorer Exp $
 #
 
-DISTNAME=		unproven-pthreads-0.12
+DISTNAME=		unproven-pthreads-0.13
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.flame.org/pub/netbsd/
 
