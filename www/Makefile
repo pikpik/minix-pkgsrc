@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.317 2004/04/16 21:39:01 minskim Exp $
+# $NetBSD: Makefile,v 1.318 2004/04/23 16:11:05 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -223,6 +223,7 @@ SUBDIR+=	squid
 SUBDIR+=	squidGuard
 SUBDIR+=	surfraw
 SUBDIR+=	swiftsurf
+SUBDIR+=	swiggle
 SUBDIR+=	swill
 SUBDIR+=	swish-e
 SUBDIR+=	tcl-cgi
