@@ -1,5 +1,5 @@
-======================================================================
-$NetBSD: MESSAGE,v 1.2 2001/01/29 11:34:36 wiz Exp $
+===========================================================================
+$NetBSD: MESSAGE,v 1.1 2001/10/31 22:55:40 zuntum Exp $
 
 This is the NetBSD package for ICSI-finger, a more advanced version of
 GNU finger.
@@ -18,4 +18,4 @@ ${PREFIX}/share/examples/icsi-finger/services-add to /etc/services, and
 (on the master finger server) 
 ${PREFIX}/share/examples/icsi-finger/rc.local-add to /etc/rc.local.
 
-======================================================================
+===========================================================================

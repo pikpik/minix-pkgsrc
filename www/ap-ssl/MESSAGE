@@ -1,5 +1,5 @@
-=============================================================================
-$NetBSD$
+===========================================================================
+$NetBSD: MESSAGE,v 1.2 2002/08/26 00:12:52 grant Exp $
 
 You will need to generate certificates and keys for your server before
 Apache will start with mod_ssl support.  Please read
@@ -15,4 +15,4 @@ configuration parts of the default httpd.conf are bracketed by:
   <IfDefine SSL>
   </IfDefine>
 
-=============================================================================
+===========================================================================

@@ -1,5 +1,5 @@
-======================================================================
-$NetBSD: MESSAGE,v 1.4 2001/01/29 11:34:25 wiz Exp $
+===========================================================================
+$NetBSD: MESSAGE,v 1.1 2001/10/31 23:52:15 zuntum Exp $
 
 You need to copy the ${BOCHS_MAINDIR}/bochsrc file to your home
 directory and name it .bochsrc.  Then edit it to your tastes
@@ -15,4 +15,4 @@ website is in ${BOCHS_DOCDIR}.  The file install.html
 will assist you in creating a HD "file". (A raw disk partition can
 be used as well.)
 
-======================================================================
+===========================================================================

@@ -1,5 +1,5 @@
-======================================================================
-$NetBSD: MESSAGE,v 1.1 2001/02/22 16:56:29 dmcmahill Exp $
+===========================================================================
+$NetBSD: MESSAGE,v 1.1 2001/11/01 01:16:32 zuntum Exp $
 
 You may wish to have the vulnerabilities file downloaded daily so that
 it remains current.  This may be done by adding an appropriate entry
@@ -18,4 +18,4 @@ if [ -x ${PREFIX}/sbin/audit-packages ]; then
         ${PREFIX}/sbin/audit-packages
 fi
 
-======================================================================
+===========================================================================
