@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/05/21 16:02:50 abs Exp $
+# $NetBSD: Makefile,v 1.6 2001/05/24 08:53:55 jlam Exp $
 
 .include "../../databases/postgresql/Makefile.common"
 .include "../../databases/postgresql/Makefile.ssl"
@@ -41,8 +41,6 @@ ADDGROUP=		groupadd
 
 DEINSTALL_FILE=		${WRKDIR}/DEINSTALL
 INSTALL_FILE=		${WRKDIR}/INSTALL
-
-pre-configure: ${BUILDLINK_TARGETS}
 
 do-build:
 .for DIR in ${DIRS_TO_BUILD}

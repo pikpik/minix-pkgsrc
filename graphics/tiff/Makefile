@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2001/05/03 13:22:50 skrll Exp $
+# $NetBSD: Makefile,v 1.31 2001/05/28 02:50:24 jlam Exp $
 
 DISTNAME=	tiff-v3.5.5
 PKGNAME=	tiff-3.5.5
@@ -57,7 +57,5 @@ pre-patch:
 	${MV} ${WRKSRC}/tools/Makefile.in ${WRKSRC}/tools/Makefile.in.in
 	${SED}	-e "s,\(\$${CC} -o\),\$${LIBTOOL} \1,g" \
 		${WRKSRC}/tools/Makefile.in.in  > ${WRKSRC}/tools/Makefile.in
-
-pre-configure: ${BUILDLINK_TARGETS}
 
 .include "../../mk/bsd.pkg.mk"

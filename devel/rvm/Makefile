@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/04/27 19:01:55 phil Exp $
+# $NetBSD: Makefile,v 1.4 2001/05/31 22:53:48 jlam Exp $
 #
 
 DISTNAME=	rvm-1.3
@@ -22,7 +22,5 @@ LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
 
 CONFIGURE_ARGS+=	--with-lwp-includes=${BUILDLINK_INCDIR}
 LDFLAGS+=		-L${BUILDLINK_LIBDIR}
-
-pre-configure: ${BUILDLINK_TARGETS}
 
 .include "../../mk/bsd.pkg.mk"

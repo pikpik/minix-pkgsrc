@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2001/03/27 03:20:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.37 2001/05/28 21:02:28 jlam Exp $
 # Based on KAME Id: Makefile,v 1.1.2.1.2.1.10.2 1999/01/05 11:03:50 itojun Exp
 #
 
@@ -49,7 +49,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST
 CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
 CONFIGURE_ENV+=		LIBS="${LDFLAGS} ${LIBS}"
 
-pre-configure: ${BUILDLINK_TARGETS}
+pre-configure:
 	cd ${WRKSRC} && ${LOCALBASE}/bin/autoreconf
 #	cd ${WRKSRC} && ${LOCALBASE}/bin/automake
 

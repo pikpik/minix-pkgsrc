@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2001/05/15 08:32:48 phil Exp $
+# $NetBSD: Makefile,v 1.28 2001/05/31 22:58:08 jlam Exp $
 #
 
 DISTNAME=		coda-5.3.13
@@ -37,8 +37,6 @@ INSTALL_SUBST+=		LN=${LN}
 INSTALL_SUBST+=		RM=${RM}
 INSTALL_SUBST+=		RMDIR=${RMDIR}
 INSTALL_SUBST+=		TRUE=${TRUE}
-
-pre-configure: ${BUILDLINK_TARGETS}
 
 pre-install:
 	${SED} ${INSTALL_SUBST:S/=/@!/:S/$/!g/:S/^/ -e s!@/}		\
