@@ -1,4 +1,4 @@
-/*	$NetBSD$	*/
+/*	$NetBSD: lambio.c,v 1.1 2001/07/18 06:47:37 itojun Exp $	*/
 
 /*
  * Copyright (C) 2001 WIDE Project.  All rights reserved.
@@ -34,6 +34,7 @@
 #include <net/if_dl.h>
 #include <net/if_ether.h>
 #include <ifaddrs.h>
+#include <string.h>
 
 #include <machine/sysarch.h>
 #include <machine/pio.h>
