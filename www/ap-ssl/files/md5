@@ -1,3 +1,3 @@
-$NetBSD: md5,v 1.5 2000/02/17 04:21:59 jwise Exp $
+$NetBSD$
 
-MD5 (mod_ssl-2.6.3-1.3.12.tar.gz) = b66b034d91079dcc7749de8f7ab98573
+MD5 (mod_ssl-2.6.6-1.3.12.tar.gz) = 573b4d89c1f203216a55fb5c2aece009
