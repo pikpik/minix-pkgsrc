@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/08/22 22:02:32 tron Exp $
+# $NetBSD: Makefile,v 1.23 1999/08/28 09:43:11 rh Exp $
 #
 
 DISTNAME=	imlib-1.9.4
@@ -21,7 +21,10 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
 LDFLAGS+=		-L${LOCALBASE}/lib
-CONFIGURE_ARGS+=	--with-gtk-prefix=${X11BASE}
 CONFIGURE_ENV+=		CPPFLAGS='-I${LOCALBASE}/include -I${LOCALBASE}/include/giflib'
 
 .include "../../mk/bsd.pkg.mk"
+
+.if !defined(USE_LOCALBASE_FOR_X11)
+CONFIGURE_ARGS+=	--with-gtk-prefix=${X11BASE}
+.endif
