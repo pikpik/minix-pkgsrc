@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1999/07/24 02:31:30 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2001/02/16 15:22:26 wiz Exp $
 #
 
 DISTNAME=	libgii-0.6
@@ -9,13 +9,14 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Input Interface - API for all possible input sources
 
-GNU_CONFIGURE=	YES
-CONFIGURE_ARGS+=--enable-mutexes=int \
-		--with-x
+USE_BUILDLINK2=		# defined
+USE_X11=		# defined
 
-post-install:
-	cd ${PREFIX}/man/man3 ; for i in *.3gii ; do \
-		${MV} $$i `basename $$i .3gii`.3 ; \
-	done
+USE_LIBTOOL=		# defined
+LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
+
+GNU_CONFIGURE=		# defined
+CONFIGURE_ARGS+=	--enable-mutexes=int
+CONFIGURE_ARGS+=	--with-x
 
 .include "../../mk/bsd.pkg.mk"
