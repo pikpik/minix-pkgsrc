@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2002/10/03 13:37:54 markd Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:29:46 grant Exp $
 #
 
 DISTNAME=	c_cpp_reference-2.0.2
@@ -18,5 +18,5 @@ USE_GMAKE=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
-.include "../../x11/kde3/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
