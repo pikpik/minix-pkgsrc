@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 1998/11/05 08:34:25 garbled Exp $
+# $NetBSD: Makefile,v 1.41 1999/01/03 17:07:20 tron Exp $
 # FreeBSD Id: Makefile,v 1.87 1997/10/15 04:58:31 max Exp
 #
 
@@ -110,7 +110,7 @@
 #    SUBDIR += xscrabble
 #    SUBDIR += xshisen
 #    SUBDIR += xshogi
-#    SUBDIR += xskat
+    SUBDIR += xskat
 #    SUBDIR += xsokoban
 #    SUBDIR += xsol
     SUBDIR += xsoldier
