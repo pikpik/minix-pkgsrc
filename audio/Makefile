@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2001/03/14 16:25:17 skrll Exp $
+# $NetBSD: Makefile,v 1.88 2001/03/15 20:58:11 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -97,7 +97,6 @@ SUBDIR+=	splay
 SUBDIR+=	timidity
 SUBDIR+=	tosha
 SUBDIR+=	tracker
-SUBDIR+=	vorbis
 SUBDIR+=	vorbis-tools
 SUBDIR+=	wmmixer
 SUBDIR+=	wsoundprefs
