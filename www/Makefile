@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2000/05/30 12:47:23 rh Exp $
+# $NetBSD: Makefile,v 1.82 2000/05/30 14:04:54 kleink Exp $
 # FreeBSD Id: Makefile,v 1.65 1997/11/17 06:31:39 fenner Exp
 #
 
@@ -71,6 +71,7 @@
     SUBDIR += tidy
     SUBDIR += urlget
     SUBDIR += w3c-httpd
+    SUBDIR += waplet
     SUBDIR += w3m
     SUBDIR += web500gw
     SUBDIR += webalizer
