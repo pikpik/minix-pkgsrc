@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/swisswatch
-lib/X11/app-defaults/SwissWatch
-lib/X11/app-defaults/SwissWatch-color
-man/cat1/swisswatch.0.gz

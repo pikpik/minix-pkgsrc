@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 1999/10/28 19:04:57 jlam Exp $
-bin/asclock
-libexec/asclock-classic
-man/cat1/asclock.0

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2000/10/30 02:15:19 kim Exp $
+# $NetBSD: Makefile,v 1.10 2000/11/18 22:01:43 kim Exp $
 #
 
 DISTNAME=		roller-1.7
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 MAINTAINER=		kim@tac.nyc.ny.us
 
 DEPENDS+=		cpogm-*:../../sysutils/cpogm
-DEPENDS+=		logtime-*:../../sysutils/logtime
+DEPENDS+=		logtime-*:../../time/logtime
 
 .include "../../mk/bsd.prefs.mk"
 

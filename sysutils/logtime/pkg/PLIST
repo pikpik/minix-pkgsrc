@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/logtime
-man/man1/logtime.1

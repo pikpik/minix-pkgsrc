@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/catclock
-lib/X11/app-defaults/Catclock
-man/cat1/catclock.0
