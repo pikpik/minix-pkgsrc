@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2000/03/03 13:56:48 agc Exp $
+# $NetBSD: Makefile,v 1.14 2000/03/05 07:35:17 kim Exp $
 # FreeBSD Id: Makefile,v 1.7 1997/12/16 19:42:17 vanilla Exp
 #
 
@@ -16,7 +16,7 @@ MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 MAINTAINER=	tv@netbsd.org
 HOMEPAGE=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/mrtg.html
 
-DEPENDS=	gd-1.7.3:../../graphics/gd
+DEPENDS=	gd>=1.7.3:../../graphics/gd
 
 USE_PERL5=	YES
 USE_X11=	YES
