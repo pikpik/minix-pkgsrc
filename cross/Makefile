@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/02/13 23:01:57 minskim Exp $
+# $NetBSD: Makefile,v 1.37 2004/06/01 21:37:05 kristerw Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -23,5 +23,6 @@ SUBDIR+=	i386-msdosdjgpp
 SUBDIR+=	i386-netbsdpe
 SUBDIR+=	icdprog
 SUBDIR+=	mipsEEel-netbsd
+SUBDIR+=	uisp
 
 .include "../mk/bsd.pkg.subdir.mk"
