@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.88 2002/11/30 14:59:39 grant Exp $
+# $NetBSD: Makefile,v 1.89 2002/12/01 15:38:00 salo Exp $
 
 DISTNAME=		mutt-1.4i
 PKGNAME=		${DISTNAME:C/i$//}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.mutt.org/pub/mutt/ \
 			ftp://ftp.stealth.net/pub/mirrors/ftp.mutt.org/pub/mutt/ \
@@ -62,6 +62,14 @@ BUILD_DEFS+=		MUTT_USE_NCURSES MUTT_USE_SLANG MUTT_USE_SSL USE_SASL
 EGDIR=			${PREFIX}/share/examples/mutt
 CONF_FILES=		${EGDIR}/Muttrc ${PKG_SYSCONFDIR}/Muttrc
 SUPPORT_FILES=		${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
+
+post-extract:
+	${MV} ${WRKSRC}/doc/mutt.man ${WRKSRC}/doc/mutt.man.in
+
+pre-build:
+	${SED} -e "s|@PREFIX@|${PREFIX}|g" \
+	       -e "s|@PKG_SYSCONFDIR@|${PKG_SYSCONFDIR}|g" \
+	       < ${WRKSRC}/doc/mutt.man.in > ${WRKSRC}/doc/mutt.man
 
 post-install:
 	${LN} -s ${EGDIR} ${PREFIX}/share/doc/mutt/samples
