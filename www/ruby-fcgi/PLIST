@@ -1,0 +1,6 @@
+@comment $NetBSD$
+${RUBY_SITELIBDIR}/fcgi.rb
+${RUBY_SITEARCHLIBDIR}/fcgi.so
+${RUBY_DOCDIR}/fcgi/README
+${RUBY_DOCDIR}/fcgi/README.signals
+@dirrm ${RUBY_DOCDIR}/fcgi

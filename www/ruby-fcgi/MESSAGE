@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+If you have a problem with using pure ruby version, please set:
+
+	FCGI_PURE_RUBY=true
+
+before require fcgi library.
+
+===========================================================================
