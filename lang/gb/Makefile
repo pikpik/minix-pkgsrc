@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2002/12/01 15:02:08 salo Exp $
+# $NetBSD: Makefile,v 1.13 2002/12/24 06:10:10 wiz Exp $
 #
 
 DISTNAME=		gb-0.0.20
@@ -20,4 +20,5 @@ USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../print/gnome-print/buildlink2.mk"
+.include "../../graphics/freetype2/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
