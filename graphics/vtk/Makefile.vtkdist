@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.vtkdist,v 1.1.1.1 2004/08/02 13:13:40 drochner Exp $
+# $NetBSD: Makefile.vtkdist,v 1.2 2004/08/27 06:29:08 jlam Exp $
 
 .include "../../graphics/vtk/Makefile.common"
 
@@ -7,8 +7,6 @@ VTKDIST_VERSION=	4.2.6
 DISTNAME=		VTK-4.2-LatestRelease
 DIST_SUBDIR=		VTK-4.2.6
 WRKSRC=       		${WRKDIR}/VTK
-
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vtk/}
 
 DISTINFO_FILE=		${.CURDIR}/../vtk/distinfo
 PATCHDIR=		${.CURDIR}/../vtk/patches
