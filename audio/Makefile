@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2001/05/23 20:18:13 rh Exp $
+# $NetBSD: Makefile,v 1.98 2001/05/31 16:44:19 agc Exp $
 #
 
 COMMENT=	Audio tools
@@ -11,6 +11,7 @@ SUBDIR+=	cam
 SUBDIR+=	cdd
 SUBDIR+=	cddbd
 SUBDIR+=	cdparanoia
+SUBDIR+=	cheesetracker
 SUBDIR+=	cmp3
 SUBDIR+=	cs4235
 SUBDIR+=	csound
