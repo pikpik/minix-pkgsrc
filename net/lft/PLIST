@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/lft
+man/man8/lft.8
