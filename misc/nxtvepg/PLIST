@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/02/18 19:17:24 tron Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:28:56 zuntum Exp $
 bin/nxtvepg
 man/man1/nxtvepg.1
+lib/X11/app-defaults/Nxtvepg
