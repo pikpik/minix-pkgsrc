@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/libetm.a
+include/etm.h
+share/doc/libetm/etm.txt
+@dirrm share/doc/libetm
