@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/ap/ap_hook.c.orig	Mon Dec  7 10:31:53 1998
 +++ src/ap/ap_hook.c	Mon Dec  7 10:32:48 1998
 @@ -705,6 +705,15 @@
