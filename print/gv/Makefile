@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2000/05/10 15:39:07 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2001/02/17 17:51:44 wiz Exp $
 # FreeBSD Id: Makefile,v 1.16 1997/07/13 18:49:29 max Exp
 #
 
@@ -13,13 +13,12 @@ COMMENT=	PostScript and PDF previewer
 DEPENDS+=	ghostscript-[6-9]*:../../print/ghostscript
 
 USE_IMAKE=	yes
-USE_XAW=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-XAW_TYPE?=	3d
+# We need Xaw3d to build.
 .if (${XAW_TYPE} == standard)
-DEPENDS+=	Xaw3d-1.5:../../x11/Xaw3d
+XAW_TYPE=	3d
 .endif
 
 post-extract:
@@ -28,4 +27,5 @@ post-extract:
 post-install:
 	@(cd ${WRKSRC}; ${MAKE} install.doc)
 
+.include "../../mk/xaw.buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
