@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.37 2004/04/14 12:12:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.38 2004/04/16 13:39:54 jmmv Exp $
 #
 
 COMMENT=	Multimedia utilities
 
 SUBDIR+=	alevt
-SUBDIR+=	apla
 SUBDIR+=	avidemux
 SUBDIR+=	avifile
 SUBDIR+=	avifile-devel
