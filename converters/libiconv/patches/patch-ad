@@ -1,6 +1,6 @@
 $NetBSD$
 
---- configure.orig	2003-05-22 20:19:20.000000000 +0000
+--- configure.orig	2003-07-02 10:34:07.000000000 +0000
 +++ configure
 @@ -1905,7 +1905,7 @@ fi
  
@@ -11,7 +11,7 @@ $NetBSD$
  
  
  ac_ext=c
-@@ -13898,6 +13898,7 @@ else
+@@ -13900,6 +13900,7 @@ else
     chmod u+w .
     $rm conftest* out/*
     rmdir out
