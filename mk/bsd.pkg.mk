@@ -1393,6 +1393,7 @@ check-vulnerable:
 			  PKGBASE="${PKGBASE}"				\
 			${AWK} '/^$$/ { next }				\
 				/^#.*/ { next }				\
+				$$1 !~ ENVIRON["PKGBASE"] && $$1 !~ /\{/ { next } \
 				{ s = sprintf("${PKG_ADMIN} pmatch \"%s\" %s && ${ECHO} \"*** WARNING - %s vulnerability in %s - see %s for more information ***\"", $$1, ENVIRON["PKGNAME"], $$2, ENVIRON["PKGNAME"], $$3); system(s); }' < ${PKGVULNDIR}/pkg-vulnerabilities || ${FALSE}; \
 	fi
 
