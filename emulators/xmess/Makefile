@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2002/03/06 23:03:33 kristerw Exp $
+# $NetBSD: Makefile,v 1.20 2002/04/22 02:49:27 jlam Exp $
 #
 
 DISTNAME=		xmame-0.56.2
@@ -22,6 +22,11 @@ TARGET=			${PKGBASE}
 UNLIMIT_RESOURCES=	datasize
 
 .include "../../mk/bsd.prefs.mk"
+
+# XXX On arm32, the src/unix/video_drivers/x11_window.c causes problems
+.if (${MACHINE_ARCH} == "arm32" && ${CFLAGS} == "-O2")
+CFLAGS="-O0"
+.endif
 
 ROMPATH=		${PREFIX}/share/${TARGET}
 SPOOLDIR=		/var/games/${TARGET}
