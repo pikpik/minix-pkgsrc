@@ -1,11 +1,11 @@
-# $NetBSD: Makefile 2000/05/01 13:25 Mipam$
+# $NetBSD: Makefile,v 1.1.1.1 2000/05/04 15:30:06 hubertf Exp $
 
 DISTNAME=	nmapfe-0.9.5
 CATEGORIES=	net security
 MASTER_SITES=	http://codebox.net/download/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=     reinoud@ibbnet.org
+MAINTAINER=     reinoud@ibbnet.org,hubertf@netbsd.org
 HOMEPAGE=	http://www.insecure.org/nmap/index.html
 
 DEPENDS+=	nmap-2.*:../../net/nmap
