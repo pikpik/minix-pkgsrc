@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2002/05/09 22:16:52 agc Exp $
+# $NetBSD: Makefile,v 1.3 2002/08/27 18:32:13 jlam Exp $
 #
 
 DISTNAME=	generator-0.34
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.squish.net/generator/files/
 
@@ -13,7 +13,19 @@ COMMENT=	Sega Mega drive genesis emulator
 USE_BUILDLINK2=		# defined
 USE_X11=		# defined
 GNU_CONFIGURE=		# defined
+
+.if (${MACHINE_ARCH} == "i386")
 CONFIGURE_ARGS+=	--with-gtk --with-raze
+.else
+CONFIGURE_ARGS+=        --with-gtk --with-cmz80
+.endif
+
+.include "../../mk/endian.mk"
+
+.if ${MACHINE_ENDIAN} == "big"
+CFLAGS+=	-DBYTES_HIGHFIRST
+.endif
+
 
 .include "../../devel/SDL/buildlink2.mk"
 .include "../../x11/gtk/buildlink2.mk"
