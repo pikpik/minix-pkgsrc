@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2003/08/09 11:08:56 seb Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/31 18:39:42 lha Exp $
 
-DISTNAME=	gnus-5.10.3
+DISTNAME=	gnus-5.10.6
 CATEGORIES=	mail
 MASTER_SITES=	http://quimby.gnus.org/gnus/dist/
 
