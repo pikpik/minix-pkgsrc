@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.129 2002/01/25 17:47:19 hubertf Exp $
+# $NetBSD: Makefile,v 1.130 2002/02/13 18:44:54 jdolecek Exp $
 #
 
 COMMENT=	Games
@@ -58,10 +58,11 @@ SUBDIR+=	gnuchess-book-small
 SUBDIR+=	gnuchess4
 SUBDIR+=	gnugo
 SUBDIR+=	golddig
+SUBDIR+=	gtkballs
 SUBDIR+=	heretic2-demo
 SUBDIR+=	icbm3d
-SUBDIR+=	iso-pernangband
 SUBDIR+=	imaze
+SUBDIR+=	iso-pernangband
 SUBDIR+=	jetpack
 SUBDIR+=	kdegames
 SUBDIR+=	kdegames2
