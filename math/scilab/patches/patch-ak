@@ -5,7 +5,7 @@ $NetBSD$
 @@ -1,4 +1,7 @@
  #include <stdio.h>
  #ifndef __MSC__
-+#ifdef __FreeBSD__
++#if defined(netbsd) || defined(freebsd) 
 +#include <sys/types.h>
 +#endif
  #include <dirent.h>

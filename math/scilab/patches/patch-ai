@@ -16,7 +16,7 @@ $NetBSD$
 +#include <floatingpoint.h>
 +#endif
 +
-+#if defined(netbsd) || defined(freebsd)
++#if (defined(netbsd) && !defined(__alpha__)) || defined(freebsd)
 +void C2F(nofpex)()
 +{
 +  fpsetmask(0);   /* Don't dump core on FPE return Inf or NaN */
