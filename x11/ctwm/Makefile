@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1998/03/12 10:12:10 tron Exp $
+# $NetBSD: Makefile,v 1.8 1998/04/15 10:38:52 agc Exp $
 #
 
 DISTNAME=	ctwm-3.5
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://slhp1.epfl.ch/pub/
 
 MAINTAINER=	tron@netbsd.org
 
-LIB_DEPENDS=	Xpm.4.:${PORTSDIR}/graphics/xpm
+DEPENDS+=	xpm-3.4j:../../graphics/xpm
 
 USE_IMAKE=	yes
 

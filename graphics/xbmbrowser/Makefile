@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:27 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/20 11:56:24 frueauf Exp $
 # FreeBSD: Makefile,v 1.3 1997/08/26 07:12:20 tg Exp
 #
 
@@ -10,7 +10,7 @@ MASTER_SITE_SUBDIR=	utilities
 
 MAINTAINER=		packages@netbsd.org
 
-LIB_DEPENDS=		Xpm.4.:${PORTSDIR}/graphics/xpm
+DEPENDS+=		xpm-3.4j:../../graphics/xpm
 
 USE_IMAKE=		yes
 USE_GMAKE=		yes

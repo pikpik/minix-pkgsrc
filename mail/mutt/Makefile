@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:31 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/04/15 16:57:11 tron Exp $
 
 DISTNAME=	mutt-0.91.1i
 CATEGORIES=	mail
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://riemann.iam.uni-bonn.de/pub/mutt/ \
 
 MAINTAINER=	tron@netbsd.org
 
-LIB_DEPENDS=	ncurses.3.4:${PORTSDIR}/devel/ncurses
+DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
 
 RESTRICTED=	"Uses PGP"
 MIRROR_DISTFILE= no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 1998/03/20 07:08:43 mycroft Exp $
+# $NetBSD: Makefile,v 1.7 1998/04/15 10:38:10 agc Exp $
 #
 
 DISTNAME=	mikmod-2.14-unix
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.chiark.greenend.org.uk/~stevem/mikmod/
 
 MAINTAINER=	mycroft@NetBSD.ORG
 
-LIB_DEPENDS=	ncurses.3.4:${PORTSDIR}/devel/ncurses
+DEPENDS+=	ncurses-1.9.9g:../../devel/ncurses
 
 RESTRICTED=	"Registration required for redistribution and commercial use."
 MIRROR_DISTFILE=	no

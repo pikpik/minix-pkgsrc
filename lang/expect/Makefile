@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 1998/04/15 10:38:28 agc Exp $
+# $NetBSD: Makefile,v 1.9 1998/04/20 11:56:24 frueauf Exp $
 # FreeBSD Id: Makefile,v 1.29 1998/01/27 01:11:47 fenner Exp
 #
 
@@ -9,7 +9,7 @@ MASTER_SITES=	http://expect.nist.gov/
 
 MAINTAINER=	packages@netbsd.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11/tk80
+DEPENDS+=	tk-8.0p2:../../x11/tk80
 
 WRKSRC=		${WRKDIR}/expect-5.25
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/01/30 13:57:57 agc Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:33 agc Exp $
 # FreeBSD Id: Makefile,v 1.12 1997/09/11 03:54:53 fenner Exp
 #
 
@@ -9,7 +9,7 @@ DISTFILES=	vicsrc-2.8.tar.gz
 
 MAINTAINER=	is@netbsd.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11/tk80
+DEPENDS+=	tk-8.0p2:../../x11/tk80
 
 GNU_CONFIGURE=	yes
 USE_X11=	yes

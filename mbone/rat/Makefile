@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 1998/03/06 02:12:00 mycroft Exp $
+# $NetBSD: Makefile,v 1.3 1998/04/15 10:38:32 agc Exp $
 #
 
 DISTNAME=	rat-3.0
@@ -8,7 +8,7 @@ DISTFILES=	rat-3.0.23.tar.gz
 
 MAINTAINER=	mycroft@NetBSD.ORG
 
-LIB_DEPENDS=	tk80:${PORTSDIR}/x11/tk80
+DEPENDS+=	tk-8.0p2:../../x11/tk80
 
 RESTRICTED=	"Contains DES encryption"
 MIRROR_DISTFILE=no
