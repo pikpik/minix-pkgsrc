@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2002/07/04 23:51:26 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2003/03/29 12:42:22 jmmv Exp $
 
 DISTNAME=	audit-packages-1.14
 WRKSRC=		${WRKDIR}
@@ -12,8 +12,6 @@ COMMENT=	tools to show vulnerabilities in installed packages
 NO_CHECKSUM=    yes
 NO_BUILD=	yes
 NO_MTREE=	yes
-
-PKGVULNDIR?=	${DISTDIR}
 
 do-configure:
 	@for f in audit-packages download-vulnerability-list; do	\
