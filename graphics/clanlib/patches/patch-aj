@@ -1,7 +1,7 @@
 $NetBSD$
 
---- Sources/Core/SurfaceProviders/provider_pcx.cpp.orig	Sun Apr  9 12:18:02 2000
-+++ Sources/Core/SurfaceProviders/provider_pcx.cpp	Fri Dec 15 07:27:49 2000
+--- Sources/Core/SurfaceProviders/provider_pcx.cpp.orig	Sun Apr  9 21:18:02 2000
++++ Sources/Core/SurfaceProviders/provider_pcx.cpp
 @@ -113,10 +113,14 @@
  
  	datafile->seek(4, CL_InputSource::seek_set);
@@ -10,13 +10,13 @@ $NetBSD$
 -	short ymin = datafile->read_short16();
 -	short xmax = datafile->read_short16();
 -	short ymax = datafile->read_short16();
-+	short xmin = datafile->read_char8() |
++	short xmin = datafile->read_uchar8() |
 +		     (datafile->read_char8() << 8);
-+	short ymin = datafile->read_char8() |
++	short ymin = datafile->read_uchar8() |
 +		     (datafile->read_char8() << 8);
-+	short xmax = datafile->read_char8() |
++	short xmax = datafile->read_uchar8() |
 +		     (datafile->read_char8() << 8);
-+	short ymax = datafile->read_char8() |
++	short ymax = datafile->read_uchar8() |
 +		     (datafile->read_char8() << 8);
  
  	pitch = xmax - xmin  + 1;
