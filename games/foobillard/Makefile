@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/25 04:41:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/24 13:30:56 grant Exp $
 #
 
 DISTNAME=	foobillard-2.8
@@ -26,6 +26,7 @@ CONFIGURE_ARGS+=	--enable-nvidia=no
 
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/freetype2/buildlink2.mk"
+.include "../../graphics/glu/buildlink2.mk"
 .include "../../graphics/MesaLib/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
 
