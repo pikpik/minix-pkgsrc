@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 1998/11/09 18:05:10 tsarna Exp $
+# $NetBSD: Makefile,v 1.2 1999/04/15 17:43:38 tsarna Exp $
 #
 
 DISTNAME=	lout-3.13
@@ -17,10 +17,10 @@ do-configure:
 
 post-install:
 	${CAT} ${PKGDIR}/PLIST.pre >${PLIST_SRC}
-	(cd ${PREFIX}; find share/doc/lout -type f -print >>${PLIST_SRC})
-	(cd ${PREFIX}; find share/lout -type f -print >>${PLIST_SRC})
+	(cd ${PREFIX}; ${FIND} share/doc/lout -type f -print >>${PLIST_SRC})
+	(cd ${PREFIX}; ${FIND} share/lout -type f -print >>${PLIST_SRC})
 	${ECHO} "@unexec ${RM} -rf %D/share/doc/lout" >>${PLIST_SRC}
-	(cd ${PREFIX}; find -d share/lout -type d -print | \
+	(cd ${PREFIX}; ${FIND} -d share/lout -type d -print | \
 	${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
 .include "../../mk/bsd.pkg.mk"
