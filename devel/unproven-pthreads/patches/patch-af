@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- config/configure.orig	Mon Jul 10 15:03:06 2000
++++ config/configure
+@@ -1151,7 +1151,7 @@
+ name=$host_cpu-$host_os
+ 
+ case $host in
+-    alpha-*-netbsd1.4*) 
++    alpha-*-netbsd1.5*) 
+ 	name=alpha-netbsd-1.3
+ 	except="fork lseek ftruncate pipe fstat"
+ 	available_syscalls="sigsuspend sigaction sigprocmask"
