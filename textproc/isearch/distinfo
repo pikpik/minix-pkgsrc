@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/06 22:09:27 jtb Exp $
+$NetBSD$
 
-MD5 (Isearch-1.47d.tar.gz) = 12373e0e54bfc4e195dcaa14554f354b
+SHA1 (Isearch-1.47d.tar.gz) = eda30cd52bc0d125d0856ee89a13c55db1bacc00
+Size (Isearch-1.47d.tar.gz) = 456600 bytes
 SHA1 (patch-aa) = c28ec93dbefeae47299bda6a53d6fdbb3ddb2577

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/06/07 21:51:34 hubertf Exp $
+$NetBSD$
 
-MD5 (html-4.0b.tar.gz) = 6f6d8f1d5b9d73d1b5c82e6402defe80
+SHA1 (html-4.0b.tar.gz) = 4985d99bfd79aaf530bef77e16969d436823cff6
+Size (html-4.0b.tar.gz) = 40520 bytes

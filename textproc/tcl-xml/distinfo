@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/08/30 19:46:37 jwise Exp $
+$NetBSD$
 
-MD5 (TclXML-1.2.tar.gz) = 500c0f8dc647136039cd78a766f89c1b
+SHA1 (TclXML-1.2.tar.gz) = 6d4d2412be12d34d575e6e02ccc00836516a34fe
+Size (TclXML-1.2.tar.gz) = 45157 bytes

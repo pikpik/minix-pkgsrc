@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/01/13 04:15:35 jonb Exp $
+$NetBSD$
 
-MD5 (mminstance-1.8.tar.gz) = 126653233eb304347468da71ac404e9a
+SHA1 (mminstance-1.8.tar.gz) = 26fca824424f130236f1ba2c72f97a9824281993
+Size (mminstance-1.8.tar.gz) = 128869 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/10/22 09:30:43 rh Exp $
+$NetBSD$
 
-MD5 (pspell-.11.2.tar.gz) = 37585dbcced59d7fefadd2dcb97e87bb
+SHA1 (pspell-.11.2.tar.gz) = 733f41994ff0091bb454067168f0bab15d71b8de
+Size (pspell-.11.2.tar.gz) = 384312 bytes
 SHA1 (patch-aa) = b0b7f9f5a86f0b5de6bb6b8fd04a3974d05c5e0c

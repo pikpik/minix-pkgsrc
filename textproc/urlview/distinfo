@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/07/04 16:07:22 tron Exp $
+$NetBSD$
 
-MD5 (urlview-0.9.tar.gz) = 67731f73e69297ffd106b65c8aebb2ab
+SHA1 (urlview-0.9.tar.gz) = e366312a7dd04eb38909a36f854c502fbe81f4be
+Size (urlview-0.9.tar.gz) = 46685 bytes

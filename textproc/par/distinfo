@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:27:39 agc Exp $
+$NetBSD$
 
-MD5 (Par150.tar.gz) = 657e54eca896e43782282eda1af92e1a
+SHA1 (Par150.tar.gz) = 9888047860fa1c2c51ba20da786246b79ffcceff
+Size (Par150.tar.gz) = 46805 bytes

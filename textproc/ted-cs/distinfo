@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/19 11:22:52 dmcmahill Exp $
+$NetBSD$
 
-MD5 (Ted_CZ.tar.gz) = bd2b220155a0b2bdaddfe21f64a3cf6a
+SHA1 (Ted_CZ.tar.gz) = e898ecc143fb5372562755e514319cd6369b6033
+Size (Ted_CZ.tar.gz) = 825473 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/03/12 09:28:29 itojun Exp $
+$NetBSD$
 
-MD5 (wdiff-0.5.tar.gz) = 7f9c78f5dd6fb4f3dabe28fbd4d14319
+SHA1 (wdiff-0.5.tar.gz) = 44e18850e16518633139cf24a83165e62e3baa95
+Size (wdiff-0.5.tar.gz) = 129267 bytes

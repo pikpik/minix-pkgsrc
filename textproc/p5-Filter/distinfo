@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/12/02 16:39:36 rh Exp $
+$NetBSD$
 
-MD5 (Filter-1.16.tar.gz) = c9309d8c25900ff05b159dff9795a4b9
+SHA1 (Filter-1.16.tar.gz) = 496c7f7006c5016286680f6c9b35f0d143d03b7b
+Size (Filter-1.16.tar.gz) = 24119 bytes

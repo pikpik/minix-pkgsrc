@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2000/08/07 15:30:31 jonb Exp $
+$NetBSD$
 
-MD5 (t1utils-1.20.tar.gz) = f8ce616748d4320b1fb88a69e4a81eb7
+SHA1 (t1utils-1.20.tar.gz) = 65fb89f533dd954b55bd35f441a495c493d093cd
+Size (t1utils-1.20.tar.gz) = 72931 bytes

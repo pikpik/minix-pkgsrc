@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/19 11:23:13 dmcmahill Exp $
+$NetBSD$
 
-MD5 (Ted_DK.tar.gz) = 9d8d343d5b65b0b13544d54e23e952e3
+SHA1 (Ted_DK.tar.gz) = 94475e0ea9a667ab3b8e43df666f49149e263975
+Size (Ted_DK.tar.gz) = 1120057 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/08/30 19:47:13 jwise Exp $
+$NetBSD$
 
-MD5 (TclDOM-1.6.tar.gz) = 9e38ac0d5fb001d4e6b62a02970087fe
+SHA1 (TclDOM-1.6.tar.gz) = 94e3d48df88099b7d2b5c5fda5bc34bd366bb068
+Size (TclDOM-1.6.tar.gz) = 28400 bytes

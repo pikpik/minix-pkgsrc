@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/02/28 13:20:47 wiz Exp $
+$NetBSD$
 
-MD5 (XML-Parser-2.29.tar.gz) = ed0c4169356c454cb860341505a6c592
+SHA1 (XML-Parser-2.29.tar.gz) = ca6bcdd9baea6ce51444cfe93ac1226372f9da67
+Size (XML-Parser-2.29.tar.gz) = 295423 bytes

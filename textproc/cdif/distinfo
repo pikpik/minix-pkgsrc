@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/03/12 09:44:30 itojun Exp $
+$NetBSD$
 
-MD5 (cdif-1.15) = b3d4ebebcea5e1e85264a180178339b4
+SHA1 (cdif-1.15) = 14dee0a46a2d6cfa281e822b7e5f60ea10ea7789
+Size (cdif-1.15) = 17571 bytes

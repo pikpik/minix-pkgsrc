@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/05/31 14:41:05 jwise Exp $
+$NetBSD$
 
-MD5 (xp.zip) = e4a2371d5bad54eefa7287ebc62e2f1a
+SHA1 (xp.zip) = 42b31c07c826dc24d7e5742b8f64090496bfbad4
+Size (xp.zip) = 281324 bytes
