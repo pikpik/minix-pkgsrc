@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/25 18:37:13 jtb Exp $
+$NetBSD$
 
-MD5 (ascii-3.0.tar.gz) = d5d64ac8ab1e8101361f581cc7f82554
+SHA1 (ascii-3.0.tar.gz) = faf4c7d90ab4a55cda42a3a8c6124f4f8f5d7429
+Size (ascii-3.0.tar.gz) = 10804 bytes

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 2000/12/05 19:30:58 drochner Exp $
+$NetBSD$
 
-MD5 (cowsay-3.03.tar.gz) = b29169797359420dadb998079021a494
+SHA1 (cowsay-3.03.tar.gz) = cc65a9b13295c87df94a58caa8a9176ce5ec4a27
+Size (cowsay-3.03.tar.gz) = 15189 bytes
 SHA1 (patch-aa) = 2613aabd26116b6f800f8b5a814fa0d29f852c52

@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 1999/09/15 03:22:32 jlam Exp $
+$NetBSD$
 
-MD5 (gperiodic-1.2.6.tar.gz) = 719465978b1d6cd98b882e67f6943cfe
+SHA1 (gperiodic-1.2.6.tar.gz) = e188c725cc443f1029bf8a7156a2d16171bcbe36
+Size (gperiodic-1.2.6.tar.gz) = 140651 bytes
 SHA1 (patch-aa) = 55fc5b2d5751115e27a9e97613603a1b854384ea

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/19 15:50:14 wiz Exp $
+$NetBSD$
 
-MD5 (Business-ISBN-20001010.tar.gz) = 9f3be82ae9ab251a1d3780d243f10d6f
+SHA1 (Business-ISBN-20001010.tar.gz) = 67f92cb01e16dc4012565500cae5740bddec967c
+Size (Business-ISBN-20001010.tar.gz) = 6876 bytes

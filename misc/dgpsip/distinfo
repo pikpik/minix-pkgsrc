@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 1999/10/31 01:21:45 wennmach Exp $
+$NetBSD$
 
-MD5 (dgpsip-1.28.tar.gz) = 006f0792198e056598315b01aacb050d
+SHA1 (dgpsip-1.28.tar.gz) = e646fa8dfcb93a33cf374de00ba222c7499dde6a
+Size (dgpsip-1.28.tar.gz) = 63830 bytes

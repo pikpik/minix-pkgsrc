@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/06/10 11:40:10 drochner Exp $
+$NetBSD$
 
-MD5 (vttest-20000208.tgz) = 6e916fb1c053bee278158445685e43cf
+SHA1 (vttest-20000208.tgz) = fd46a5439e084f842aec271e88fbe77a675ea68e
+Size (vttest-20000208.tgz) = 95023 bytes

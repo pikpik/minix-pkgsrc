@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1999/01/29 21:07:23 tron Exp $
+$NetBSD$
 
-MD5 (xrolodex.1.5.motif.tar.Z) = 6c48b12be83a8f47925eac6e222afd9a
+SHA1 (xrolodex.1.5.motif.tar.Z) = fe263c22afc7d5375de00689c7e7c157f49a628a
+Size (xrolodex.1.5.motif.tar.Z) = 126075 bytes

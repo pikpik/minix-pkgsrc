@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 2001/02/21 02:34:58 hubertf Exp $
+$NetBSD$
 
-MD5 (pdmenu_1.2.65.tar.gz) = a48c6bd9de312eb91a4a6715c100e71e
+SHA1 (pdmenu_1.2.65.tar.gz) = d25a7cc5f0c316cbfdcd84ec22a1766ee8c50272
+Size (pdmenu_1.2.65.tar.gz) = 88453 bytes

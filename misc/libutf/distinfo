@@ -1,4 +1,5 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:25:07 agc Exp $
+$NetBSD$
 
-MD5 (libutf-2.10.tar.gz) = f83bcb35eb4600d5b0e16a401103c4bc
+SHA1 (libutf-2.10.tar.gz) = 8dd0f6873112deaa5b5bf2a0554e28f9d8d4ddda
+Size (libutf-2.10.tar.gz) = 55099 bytes
 SHA1 (patch-aa) = 74848da73b79be65f725aba9b4277cd83d86912f

@@ -1,5 +1,6 @@
-$NetBSD: md5,v 1.1.1.1 2001/01/24 03:53:06 hubertf Exp $
+$NetBSD$
 
-MD5 (colortail-0.3.0.tar.gz) = 2589d3e372080f4052d1cc0d6550508f
+SHA1 (colortail-0.3.0.tar.gz) = 5c55a9b0550868129d8ede133f6b34fa5356c5ce
+Size (colortail-0.3.0.tar.gz) = 54329 bytes
 SHA1 (patch-aa) = 21a8249fd27487078d141a2e30e1e917586e1c3a
 SHA1 (patch-ab) = 055d1a11e6a555b569d11fe2c870332ae93b13e6

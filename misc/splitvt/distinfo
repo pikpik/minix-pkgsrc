@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:25:08 agc Exp $
+$NetBSD$
 
-MD5 (splitvt-1.6.3.tar.gz) = e95e166145ec51d2a9d80aa6472f9f98
+SHA1 (splitvt-1.6.3.tar.gz) = 0a2ca870a770b663b50b92881e31eb3492107cec
+Size (splitvt-1.6.3.tar.gz) = 57692 bytes

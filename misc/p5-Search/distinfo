@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:25:08 agc Exp $
+$NetBSD$
 
-MD5 (Search-0.2.tar.gz) = 219489c16addfdfdacd6ce8ffca85040
+SHA1 (Search-0.2.tar.gz) = 3eae95d37dade3ba0425b488992f4d4718306a60
+Size (Search-0.2.tar.gz) = 14687 bytes

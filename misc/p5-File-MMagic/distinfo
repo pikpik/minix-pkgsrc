@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2000/11/27 02:23:35 kei Exp $
+$NetBSD$
 
-MD5 (File-MMagic-1.09.tar.gz) = 5353c5250b1bde9cbb8831a300c7b4eb
+SHA1 (File-MMagic-1.09.tar.gz) = b7b5e93d4df12a7f19ee2c2ee09e8a127d96432b
+Size (File-MMagic-1.09.tar.gz) = 20088 bytes

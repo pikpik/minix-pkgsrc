@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:25:06 agc Exp $
+$NetBSD$
 
-MD5 (jive-1.1.tar.gz) = 6d1132f08857d67b94e45339f5dbed29
+SHA1 (jive-1.1.tar.gz) = e9e8f211f5f6d18d58f5451d6048c80b16857a37
+Size (jive-1.1.tar.gz) = 4637 bytes

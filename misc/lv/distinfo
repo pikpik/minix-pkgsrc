@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.5 2001/02/12 11:29:23 kei Exp $
+$NetBSD$
 
-MD5 (lv4494.tar.gz) = 8b221fcca182f3914a5e79e771ebfb0b
+SHA1 (lv4494.tar.gz) = 0effd50e04c7507e663791ee7401a8240cfa5b8c
+Size (lv4494.tar.gz) = 597686 bytes

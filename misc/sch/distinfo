@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.1.1.1 2001/02/24 05:08:03 itojun Exp $
+$NetBSD$
 
-MD5 (sch-20010224.tar.gz) = 95ddf897a75fe9b05fbdda6b7d2963e0
+SHA1 (sch-20010224.tar.gz) = 428f3581d4705d5816430efbb3b49634f2f38b32
+Size (sch-20010224.tar.gz) = 185050 bytes

@@ -1,3 +1,4 @@
-$NetBSD: md5,v 1.2 1998/08/07 13:25:07 agc Exp $
+$NetBSD$
 
-MD5 (Array-PrintCols-1.2.tar.gz) = 9dd483fbc72eefb0587a0e0c0a614926
+SHA1 (Array-PrintCols-1.2.tar.gz) = c3b2296a9a6c7beeb6d558c63f00e805a4101a88
+Size (Array-PrintCols-1.2.tar.gz) = 15099 bytes
