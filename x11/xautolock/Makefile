@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/02/17 17:06:59 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2001/07/08 19:57:53 tron Exp $
 
 DISTNAME=	xautolock-pl15
 PKGNAME=	xautolock-1.15
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tron@netbsd.org
 COMMENT=	Activate xlock after a user defined time of inactivity
 
+USE_BUILDLINK2=	YES
 USE_IMAKE=	YES
 
 .include "../../mk/bsd.prefs.mk"
