@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- capplet/Makefile.in.orig	Wed Jan  2 08:52:03 2002
++++ capplet/Makefile.in
+@@ -405,8 +405,8 @@
+ install-exec-am: install-binPROGRAMS
+ install-exec: install-exec-am
+ 
+-install-data-am: install-deskDATA install-gladeDATA install-newsysDATA \
+-		install-sysDATA
++install-data-am: install-deskDATA install-gladeDATA install-sysDATA
++#		install-sysDATA
+ install-data: install-data-am
+ 
+ install-am: all-am
