@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/10/03 22:36:41 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2001/11/12 12:27:30 seb Exp $
 
 DISTNAME=	curl-7.9.1
 CATEGORIES=	www
@@ -14,6 +14,11 @@ USE_GMAKE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_DIR}
+
+# This causes curl-config not to be regenerated during build-time as it was
+# already created at configure-time.
+#
+AUTOMAKE_POST_PATTERNS+=	curl-config
 
 .include "../../security/openssl/buildlink.mk"
 .include "../../mk/bsd.pkg.mk"
