@@ -1,8 +1,6 @@
-@comment $NetBSD: PLIST,v 1.5 2002/12/13 05:19:51 dmcmahill Exp $
+@comment $NetBSD: PLIST,v 1.6 2003/03/09 06:18:26 dmcmahill Exp $
 bin/gschem
-@unexec ${INSTALL_INFO} --delete --info-dir=%D/info %D/info/gschemdoc.info
 info/gschemdoc.info
-@exec ${INSTALL_INFO} --info-dir=%D/info %D/info/gschemdoc.info
 info/gschemdoc.info-1
 info/gschemdoc.info-10
 info/gschemdoc.info-11
