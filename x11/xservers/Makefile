@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2002/06/04 12:36:15 tron Exp $#
+# $NetBSD: Makefile,v 1.8 2002/07/02 13:11:00 wiz Exp $#
 
 DISTNAME=	xservers-3.3.6.3
 CATEGORIES=	x11
@@ -12,7 +12,6 @@ COMMENT=	Old X11 servers for use under XFree86 4.x
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 ALL_TARGET=	World
-NO_CHECKSUM=	YES
 PLIST_SRC=	${WRKDIR}/PLIST
 USE_X11BASE=	YES
 
