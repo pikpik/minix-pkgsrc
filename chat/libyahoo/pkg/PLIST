@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/libyahoo-config
+include/libyahoo/libyahoo-debug.h
+include/libyahoo/libyahoo-proto.h
+include/libyahoo/libyahoo.h
+lib/libyahoo.a
+@dirrm include/libyahoo
