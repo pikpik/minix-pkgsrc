@@ -1,8 +1,12 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/31 22:48:50 jlam Exp $
 bin/couriertls
 bin/imapd
 bin/maildirmake
 bin/pop3d
+etc/rc.d/courierimap
+etc/rc.d/courierimaps
+etc/rc.d/courierpop
+etc/rc.d/courierpops
 libexec/courier/authlib/authcram
 libexec/courier/authlib/authcustom
 libexec/courier/authlib/authpwd
