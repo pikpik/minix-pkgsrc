@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.259 2003/10/01 05:57:34 itojun Exp $
+# $NetBSD: Makefile,v 1.260 2003/10/05 09:31:57 cube Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -219,6 +219,7 @@ SUBDIR+=	qvplay
 SUBDIR+=	rayshade
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	resize_image
+SUBDIR+=	ruby-gd
 SUBDIR+=	ruby-opengl
 SUBDIR+=	s10sh
 SUBDIR+=	sane-backends
