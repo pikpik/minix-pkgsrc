@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2002/09/10 16:06:49 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2002/09/24 14:07:58 martti Exp $
 
 DISTNAME=	libxslt-1.0.20
 PKGNAME=	${DISTNAME}
@@ -17,6 +17,7 @@ LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libxml-prefix=${BUILDLINK_PREFIX.libxml2}
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
+CONFIGURE_ARGS+=	--without-python
 
 .include "../../textproc/libxml2/buildlink2.mk"
 .include "../../lang/perl5/buildlink2.mk"
