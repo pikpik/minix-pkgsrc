@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2000/02/11 00:06:35 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2000/05/21 15:27:29 kim Exp $
 #
 
 DISTNAME=       cvs-1.10
@@ -27,13 +27,14 @@ CONFIGURE_ARGS+=	--with-krb4=/usr --enable-encryption
 CONFIGURE_ARGS+=	--with-krb4=no
 .endif
 
-.if defined(KERBEROS) && ${KERBEROS} == 5
-USE_KERBEROS=	yes
-CONFIGURE_ARGS+=	--with-gssapi
-CFLAGS+=		-I/usr/include/krb5		# krb5.h
-.else
-CONFIGURE_ARGS+=	--with-gssapi=no
-.endif
+# XXX KERBEROS 5 SUPPORT BROKEN WITH HEIMDAL
+#.if defined(KERBEROS) && ${KERBEROS} == 5
+#USE_KERBEROS=	yes
+#CONFIGURE_ARGS+=	--with-gssapi
+#CFLAGS+=		-I/usr/include/krb5		# krb5.h
+#.else
+#CONFIGURE_ARGS+=	--with-gssapi=no
+#.endif
 
 .if defined(RCS_LOCALID)
 CFLAGS+=	-DLOCALID=\"\\\"${RCS_LOCALID}\\\"\"
