@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2001/01/23 10:37:41 itojun Exp $
+# $NetBSD: Makefile,v 1.9 2001/01/23 10:42:42 itojun Exp $
 #
 
 DISTNAME=	jisx0208fonts-20010112
@@ -49,10 +49,10 @@ SHINONOME12=	shinonome12-1.0.8.tar.bz2
 EXTRACT_ONLY+=	shinonome12-1.0.8.tar.bz2
 PLIST_SRC+=	${PKGDIR}/PLIST.shinonome
 
-SHINONOME_CONFIGURE_ENV=${CONFIGURE_ENV} PERL="${LOCALBASE}/bin/perl"
+SHINONOME_CONFIGURE_ENV=${CONFIGURE_ENV} PERL="${PERL5}"
 SHINONOME_CONFIGURE_ARGS=${CONFIGURE_ARGS} --with-fontdir=${FONTDIR} --disable-progressbar
 
-BUILD_DEPEND+=	perl:../../lang/perl5
+BUILD_DEPEND+=	${PERL5}:../../lang/perl5-base
 BUILD_DEPEND+=	gmake:../../devel/gmake
 .endif
 
