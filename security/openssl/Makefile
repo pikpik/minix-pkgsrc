@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2003/07/17 22:53:02 grant Exp $
+# $NetBSD: Makefile,v 1.76 2003/08/25 16:34:00 jschauma Exp $
 
 DISTNAME=		openssl-0.9.6g
 PKGREVISION=		2
@@ -34,17 +34,6 @@ PKG_SYSCONFSUBDIR=	openssl
 CONF_FILES=		${PREFIX}/share/examples/openssl/openssl.cnf	\
 			${PKG_SYSCONFDIR}/openssl.cnf
 OWN_DIRS=		${PKG_SYSCONFDIR}/certs ${PKG_SYSCONFDIR}/private
-
-SEDFILES=		Configure Makefile.org Makefile.ssl 		\
-			apps/Makefile.ssl crypto/Makefile.ssl		\
-			ssl/Makefile.ssl test/Makefile.ssl
-
-post-patch:
-	for i in ${SEDFILES}; do					\
-		${SED} -e "s/@MAKE@/${MAKE}/" ${WRKSRC}/$$i > 		\
-			${WRKSRC}/$$i.tmp && 				\
-		${MV} ${WRKSRC}/$$i.tmp ${WRKSRC}/$$i;			\
-	done;
 
 do-configure:
 	cd ${WRKSRC}							\
