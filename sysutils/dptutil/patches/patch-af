@@ -1,4 +1,4 @@
-$NetBSD
+$NetBSD$
 
 --- dptutil/engcalls.c.orig	Tue Aug 13 16:02:24 2002
 +++ dptutil/engcalls.c	Fri Dec 13 14:19:12 2002
