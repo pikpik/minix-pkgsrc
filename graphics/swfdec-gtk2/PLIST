@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gtk-2.0/2.2.0/loaders/swf_loader.a
+lib/gtk-2.0/2.2.0/loaders/swf_loader.la
+lib/gtk-2.0/2.2.0/loaders/swf_loader.so
+@comment in gtk2: @dirrm lib/gtk-2.0/2.2.0/loaders
