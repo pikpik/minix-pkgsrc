@@ -1,0 +1,7 @@
+#
+# $NetBSD$
+#
+PROG=	unshlight
+NOMAN=	sorry
+
+.include <bsd.prog.mk>

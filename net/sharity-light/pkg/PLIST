@@ -1,0 +1,7 @@
+@comment $NetBSD$
+sbin/shlight
+sbin/unshlight
+man/man8/shlight.8
+share/doc/sharity-light/FAQ.txt
+share/doc/sharity-light/README
+@dirrm share/doc/sharity-light
