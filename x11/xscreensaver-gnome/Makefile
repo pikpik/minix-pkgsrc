@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/01/24 15:30:34 grant Exp $
+# $NetBSD: Makefile,v 1.28 2004/02/01 10:41:43 jlam Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
@@ -7,7 +7,7 @@ PKGREVISION=	3
 
 CONFLICTS+=	xscreensaver<4.14 xscreensaver-demo-[0-9]*
 
-USE_BUILDLINK2=	yes
+USE_BUILDLINK3=	yes
 
 .include "../../x11/xscreensaver/Makefile.common"
 
@@ -37,8 +37,8 @@ post-install:
 	${LN} -s ${BUILDLINK_PREFIX.xscreensaver}/libexec/xscreensaver/config \
 		${PREFIX}/share/control-center/screensavers
 
-.include "../../devel/libglade/buildlink2.mk"
-.include "../../textproc/libxml2/buildlink2.mk"
-.include "../../x11/controlcenter/buildlink2.mk"
-.include "../../x11/xscreensaver/buildlink2.mk"
+.include "../../devel/libglade/buildlink3.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
+.include "../../x11/controlcenter/buildlink3.mk"
+.include "../../x11/xscreensaver/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
