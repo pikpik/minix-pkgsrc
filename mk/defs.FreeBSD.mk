@@ -1,4 +1,4 @@
-# $NetBSD: defs.FreeBSD.mk,v 1.15 2003/01/15 20:55:39 jlam Exp $
+# $NetBSD: defs.FreeBSD.mk,v 1.16 2003/02/21 12:01:00 grant Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -46,7 +46,11 @@ MTREE?=		/usr/sbin/mtree
 MV?=		/bin/mv
 NICE?=		/usr/bin/nice
 PATCH?=		/usr/bin/patch
+.if exists(${LOCALBASE}/bin/pax)
+PAX?=		${LOCALBASE}/bin/pax
+.else
 PAX?=		/bin/pax
+.endif
 PERL5?=		${LOCALBASE}/bin/perl
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
