@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- account.h.orig	Fri Feb  4 23:59:06 2000
++++ account.h
+@@ -24,4 +24,6 @@
+ */
+ 
++#include <stdio.h>
++
+ int activeAccount();              /* Return index number of current account */
+ int numAccounts();                 /* Return number of open accounts */
