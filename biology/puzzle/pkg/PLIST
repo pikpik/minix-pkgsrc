@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/puzzle
+share/doc/puzzle/manual.html
+@dirrm share/doc/puzzle
