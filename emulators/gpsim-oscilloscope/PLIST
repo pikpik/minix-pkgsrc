@@ -1,0 +1,5 @@
+@comment $NetBSD: $
+lib/libgpsim_oscilloscope.la
+share/examples/gpsim-oscilloscope/tst_txdot.asm
+share/examples/gpsim-oscilloscope/tst_txdot.stc
+@dirrm share/examples/gpsim-oscilloscope
