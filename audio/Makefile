@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2003/02/14 23:57:33 hubertf Exp $
+# $NetBSD: Makefile,v 1.162 2003/02/15 00:46:28 hubertf Exp $
 #
 
 COMMENT=	Audio tools
@@ -141,6 +141,9 @@ SUBDIR+=	sox
 SUBDIR+=	spiralloops
 SUBDIR+=	spiralsynth
 SUBDIR+=	splay
+SUBDIR+=	streamtuner
+SUBDIR+=	streamtuner-local
+SUBDIR+=	streamtuner-live365
 SUBDIR+=	sweep
 SUBDIR+=	tcl-snack
 SUBDIR+=	tfmxplay
