@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${RUBY_SITELIBDIR}/bsearch.rb
