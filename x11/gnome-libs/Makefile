@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 1999/05/02 15:51:27 tron Exp $
+# $NetBSD: Makefile,v 1.23 1999/05/04 20:31:32 tron Exp $
 #
 
 DISTNAME=	gnome-libs-1.0.9
@@ -24,7 +24,6 @@ LDFLAGS+=       	"-L${LOCALBASE}/lib"
 CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR} \
 			--with-glib-prefix=${LOCALBASE}
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
-			INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
 			LOCALBASE=${LOCALBASE} \
 			X11BASE=${X11BASE}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 1999/04/09 15:39:38 bad Exp $
+# $NetBSD: Makefile,v 1.1.1.1 1999/05/06 23:37:00 tv Exp $
 #
 
 DISTNAME=	mysql-3.22.22
@@ -23,9 +23,6 @@ CONFIGURE_ARGS+=--localstatedir=${MYSQL_DATADIR} \
 		--with-named-z-libs=z --with-named-curses=curses \
 		--without-perl --without-debug --without-bench \
 		--without-docs --with-low-memory
-CONFIGURE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_DATA="${INSTALL_DATA}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}" CXX="${CXX}"
 
 CFLAGS+=	-Dunix
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 1999/01/20 05:57:14 simonb Exp $
+# $NetBSD: Makefile,v 1.14 1999/05/12 22:32:14 tron Exp $
 #
 
 DISTNAME=	pilot-link.0.9.0
@@ -13,8 +13,6 @@ USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-perl5=${PERL5_BIN} --without-tcl \
 		--without-python --without-java
-CONFIGURE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 MAKE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 
 PERL5_BIN=	${LOCALBASE}/bin/perl

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/03/22 16:08:33 bad Exp $
+# $NetBSD: Makefile,v 1.8 1999/04/14 21:39:04 tron Exp $
 #
 
 DISTNAME=	libtool-1.2
@@ -10,8 +10,6 @@ MAINTAINER=	tv@netbsd.org
 HOMEPAGE=	http://www.profitpress.com/libtool/
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 .if !exists(/usr/libexec/ld.so) && !exists(/usr/libexec/ld.elf_so)
 CONFIGURE_ARGS=	--disable-shared
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/03/06 22:45:16 tron Exp $
+# $NetBSD: Makefile,v 1.4 1999/03/22 22:43:41 agc Exp $
 
 DISTNAME=	esound-0.2.8
 CATEGORIES=	audio
@@ -14,6 +14,5 @@ DEPENDS+=	libaudiofile-0.1.6:../../audio/libaudiofile
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 
 .include "../../mk/bsd.pkg.mk"

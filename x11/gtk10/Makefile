@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 1999/01/30 23:18:56 agc Exp $
+# $NetBSD: Makefile,v 1.8 1999/02/19 14:22:47 rh Exp $
 
 DISTNAME=	gtk+-1.0.6
 PKGNAME=	gtk10-1.0.6
@@ -16,8 +16,6 @@ USE_LIBTOOL=	yes
 USE_X11BASE=	yes
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/gtk10
 
 CFLAGS=		-pipe -O2
