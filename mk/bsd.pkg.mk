@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.815 2001/09/25 20:26:37 mycroft Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.816 2001/09/30 22:10:34 abs Exp $
 #
 # This file is in the public domain.
 #
@@ -308,9 +308,9 @@ DISTINFO_FILE?=		${.CURDIR}/distinfo
 M4?=			/usr/bin/m4
 .endif
 
-.if defined(USE_X11BASE) || defined(USE_X11)
+.if !defined(X11_BUILDLINK_MK)
+.  if defined(USE_X11BASE) || defined(USE_X11)
 LDFLAGS+=		-Wl,-R${X11BASE}/lib
-.  if !defined(X11_BUILDLINK_MK)
 LDFLAGS+=		-L${X11BASE}/lib
 .  endif
 .endif
