@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1242 2003/08/23 03:57:49 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1244 2003/08/23 09:11:19 grant Exp $
 #
 # This file is in the public domain.
 #
@@ -2254,6 +2254,12 @@ do-install:
 real-su-package: ${PLIST} ${DESCR}
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	${ECHO_MSG} "${_PKGSRC_IN}> Building binary package for ${PKGNAME}"; \
+	if ${PKG_INFO} -qe ${PKGNAME}; then				\
+		: The package is installed. ;				\
+	else								\
+		${ECHO_MSG} "=> ${PKGNAME} is not installed.";		\
+		exit 1;							\
+	fi;								\
 	if [ ! -d ${PKGREPOSITORY} ]; then				\
 		${MKDIR} ${PKGREPOSITORY};				\
 		if [ $$? -ne 0 ]; then					\
