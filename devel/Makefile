@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.407 2003/07/24 13:31:13 drochner Exp $
+# $NetBSD: Makefile,v 1.408 2003/07/25 16:05:26 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -77,6 +77,7 @@ SUBDIR+=	cweb
 SUBDIR+=	cxref
 SUBDIR+=	ddd
 SUBDIR+=	dejagnu
+SUBDIR+=	device-driver-doc-de
 SUBDIR+=	diffutils
 SUBDIR+=	distcc
 SUBDIR+=	dlcompat
