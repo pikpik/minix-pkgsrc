@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/02/18 16:40:50 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 1999/04/04 03:51:50 hubertf Exp $
 #
 
 DISTNAME=	nmap-2.11
@@ -10,5 +10,6 @@ MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.insecure.org/nmap/index.html
 
 GNU_CONFIGURE=	YES
+CONFIGURE_ENV+=	INSTALL=${INSTALL}
 
 .include "../../mk/bsd.pkg.mk"
