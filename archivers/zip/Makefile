@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27.2.3 2002/08/21 22:42:04 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2002/08/25 21:49:27 jlam Exp $
 # FreeBSD Id: Makefile,v 1.10 1997/04/27 16:06:15 ache Exp 
 #
 
@@ -30,7 +30,7 @@ ALL_TARGET=	generic
 USE_BUILDLINK2=	# defined
 
 post-extract:
-	@cd ${WRKSRC} && unzip -qo ${DISTDIR}/zcrypt29.zip
+	@cd ${WRKSRC} && ${LOCALBASE}/bin/unzip -qo ${DISTDIR}/zcrypt29.zip
 
 do-install:
 	cd ${WRKSRC} && \
