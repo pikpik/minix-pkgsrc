@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 00:36:29 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2001/01/31 19:10:12 tron Exp $
 
 DISTNAME=	micq-0.4.6.p1
 PKGNAME=	${DISTNAME:S/p//}
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://micq.ukeer.de/
+COMMENT=	text-mode ICQ client
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/.p/-p/}/src
 

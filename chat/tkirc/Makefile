@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 00:36:25 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/15 02:37:29 wiz Exp $
 
 DISTNAME=	tkirc1.202
 PKGNAME=	tkirc-1.202
@@ -7,6 +7,7 @@ MASTER_SITES=	ftp://ftp.informatik.uni-oldenburg.de/pub/tkirc/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://netsplit.de/tkirc1/
+COMMENT=	GUI for the ircII Internet Relay Chat client
 
 DEPENDS+=	ircII-*:../../chat/ircII
 DEPENDS+=	tk>=8.3.2:../../x11/tk

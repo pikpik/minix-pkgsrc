@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2000/08/14 23:14:23 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/15 00:36:31 wiz Exp $
 #
 
 DISTNAME=		libirc-0.2
@@ -7,6 +7,7 @@ MASTER_SITES=		http://www.cs.kau.se/~jorgen/software/
 
 MAINTAINER=		packages@netbsd.org
 HOMEPAGE=		http://www.cs.kau.se/~jorgen/software/
+COMMENT=		libirc is a C-library for the IRC protocol
 
 DEPENDS+=		glib>=1.2.6:../../devel/glib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2000/12/31 06:45:17 mrg Exp $
+# $NetBSD: Makefile,v 1.3 2001/01/11 11:00:24 tron Exp $
 # FreeBSD Id: Makefile,v 1.14 1997/05/14 10:35:13 torstenb Exp
 #
 
@@ -10,6 +10,7 @@ MASTER_SITES=		ftp://ircftp.au.eterna.com.au/pub/ircII/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		packages@netbsd.org
+COMMENT=		The 'Internet Relay Chat' and 'Internet Citizens Band' Client
 
 .include "../../mk/bsd.prefs.mk"
 
