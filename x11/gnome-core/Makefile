@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 1999/06/19 15:19:13 tron Exp $
+# $NetBSD: Makefile,v 1.21 1999/07/14 23:05:07 tron Exp $
 #
 
 DISTNAME=		gnome-core-1.0.7
@@ -33,5 +33,11 @@ CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} \
 pre-configure:
 	@${MKDIR} ${WRKDIR}/sys
 	@${LN} -s /usr/include/soundcard.h ${WRKDIR}/sys
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${OPSYS} == "NetBSD") && exists(/usr/include/machine/apmvar.h)
+CPPFLAGS+=		-D__NetBSD_APM__
+.endif
 
 .include "../../mk/bsd.pkg.mk"
