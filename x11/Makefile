@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 1999/05/03 17:29:39 rh Exp $
+# $NetBSD: Makefile,v 1.89 1999/05/03 18:04:21 rh Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -31,6 +31,7 @@
 #    SUBDIR += explorer
 #    SUBDIR += fbsd-icons
     SUBDIR += filerunner
+    SUBDIR += fltk
 #    SUBDIR += freefonts
     SUBDIR += fvwm-wharf
     SUBDIR += fvwm1
