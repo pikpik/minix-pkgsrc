@@ -1,8 +1,8 @@
-$NetBSD: patch-aa,v 1.1 2001/05/14 12:55:30 zuntum Exp $
+$NetBSD$
 
---- Makefile.in.orig	Mon Oct 29 16:51:17 2001
-+++ Makefile.in	Sat Nov 24 10:47:36 2001
-@@ -62,13 +62,14 @@
+--- Makefile.in.orig	Wed Jan  2 15:57:57 2002
++++ Makefile.in
+@@ -62,13 +62,14 @@ RANLIB = @RANLIB@
  UTF8   = @UTF8@
  NEWLINE = @NEWLINE@
  
