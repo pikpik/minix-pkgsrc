@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/28 09:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2003/12/30 17:27:31 cjep Exp $
 
 DISTNAME=		yabasic-2.722
 PKGREVISION=		1
@@ -10,7 +10,7 @@ HOMEPAGE=		http://www.yabasic.de/
 COMMENT=		Yet another Basic for Unix and Windows
 
 USE_X11=		YES
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
 post-install:
@@ -18,5 +18,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/yabasic.htm \
 		${PREFIX}/share/doc/html/yabasic
 
-.include "../../devel/ncurses/buildlink2.mk"
+.include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

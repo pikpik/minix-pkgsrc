@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/07 21:31:52 jtb Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:19:16 agc Exp $
 
 DISTNAME=		gprolog-1.2.16
 CATEGORIES=		lang
@@ -11,7 +11,7 @@ COMMENT=		GNU prolog compiler and interpreter
 ONLY_FOR_PLATFORM=	*-*-i386 *-*-powerpc *-*-sparc
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-USE_BUILDLINK2=		yes
+USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-install-dir=${PREFIX}/libexec/${PKGNAME} \
 			--with-doc-dir=${PREFIX}/share/doc/gprolog \

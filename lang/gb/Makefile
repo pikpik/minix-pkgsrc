@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:44:22 grant Exp $
+# $NetBSD: Makefile,v 1.19 2004/01/03 18:49:45 reed Exp $
 #
 
 DISTNAME=		gb-0.0.20
@@ -13,12 +13,12 @@ COMMENT=		Basic for Gnome
 BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK2=		YES
+USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
-.include "../../print/gnome-print/buildlink2.mk"
-.include "../../graphics/freetype2/buildlink2.mk"
+.include "../../print/gnome-print/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
