@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/07 17:26:58 ad Exp $
+# $NetBSD: Makefile,v 1.2 2000/11/07 18:11:46 ad Exp $
 
 DISTNAME=		userppp-001107
 CATEGORIES=		net
@@ -8,6 +8,7 @@ DISTFILES=		ppp-001107.src.tar.gz
 MAINTAINER=		ad@netbsd.org
 HOMEPAGE=		http://www.awfulhak.org/~brian/
 
+MANCOMPRESSED_IF_MANZ=	YES
 WRKSRC=			${WRKDIR}/ppp-001107
 
 post-patch:
