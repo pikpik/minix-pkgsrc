@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:25:57 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/19 12:01:51 jmmv Exp $
 #
 
 DISTNAME=	kmess-1.1
@@ -23,7 +23,7 @@ USE_X11BASE=		yes
 .include "../../devel/zlib/buildlink2.mk"
 .include "../../graphics/jpeg/buildlink2.mk"
 .include "../../graphics/png/buildlink2.mk"
+.include "../../meta-pkgs/kde3/buildlink2.mk"
 .include "../../x11/kdelibs3/buildlink2.mk"
-.include "../../x11/kde3/buildlink2.mk"
 .include "../../mk/pthread.buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
