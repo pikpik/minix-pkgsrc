@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/04/09 04:33:18 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2002/04/15 12:13:38 drochner Exp $
 #
 
 DISTNAME=	Python-2.2.1
@@ -11,7 +11,7 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 
-USE_BUILDLINK_ONLY=	YES
+USE_BUILDLINK2=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-threads
 
@@ -20,7 +20,7 @@ INSTALL_TARGET=	altinstall
 post-extract:
 	${MV} ${WRKSRC}/Tools/scripts/pydoc ${WRKSRC}/Tools/scripts/pydoc2.2
 
-.include "../../devel/zlib/buildlink.mk"
+.include "../../devel/zlib/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
 
 # This comes after bsd.pkg.mk so that the LDFLAGS here overrides the one
