@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 1999/06/28 19:22:45 tsarna Exp $
 
 DISTNAME=	mxDateTime-1.3.0
 PKGNAME=	py-mxDateTime-1.3.0
@@ -15,7 +15,7 @@ DEPENDS+=	python-1.5.2:../../lang/python
 
 EXTRACT_CMD=	unzip -Laqo ${DOWNLOADED_DISTFILE}
 
-NO_CDROM=	Permission to...and without fee or royalty...
+NO_CDROM=	No commerciao distribution
 
 do-configure:
 	( cd ${WRKSRC}/mxDateTime ; \
