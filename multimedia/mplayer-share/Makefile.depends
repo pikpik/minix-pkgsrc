@@ -1,11 +1,11 @@
-# $NetBSD: Makefile.depends,v 1.7 2004/04/10 12:23:55 salo Exp $
+# $NetBSD: Makefile.depends,v 1.8 2004/04/28 15:54:46 wiz Exp $
 #
 
 DEPENDS+=	mplayer-share>=${MPLAYER_PKG_VERSION}:../../multimedia/mplayer-share
 
 GCC_REQD+=	2.95.3
 
-.if ${OPSYS} == "NetBSD" || ${OPSYS} == "Linux"
+.if ${OPSYS} == "FreeBSD" || ${OPSYS} == "Linux" || ${OPSYS} == "NetBSD"
 .  include "../../audio/cdparanoia/buildlink3.mk"
 .endif
 
