@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 1999/11/09 16:52:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2000/11/15 13:52:58 wiz Exp $
 #
 
 VERS=		3.87
@@ -10,6 +10,7 @@ MASTER_SITES=	http://lame.sourceforge.net/download/beta/
 
 MAINTAINER=	hubertf@netbsd.org
 HOMEPAGE=	http://www.mp3dev.org/mp3/
+COMMENT=	Fast, high quality MP3 encoder
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

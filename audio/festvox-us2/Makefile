@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2000/02/15 09:26:18 agc Exp $
+# $NetBSD: Makefile,v 1.5 2000/07/06 17:43:44 dmcmahill Exp $
 
 DISTNAME=	festvox_us2
 PKGNAME=	festvox-us2-1.4.0
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.0/
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
+COMMENT=	MBROLA based Americal English male voice for festival
 
 DEPENDS+=	festival-1.4.0:../festival
 DEPENDS+=	festlex-poslex-1.4.0:../festlex-poslex

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/01/08 14:35:13 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2001/01/21 17:51:10 veego Exp $
 
 DISTNAME=	aumix-2.7
 CATEGORIES=	audio
@@ -10,6 +10,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aumix/} \
 
 MAINTAINER=	trevor@jpj.net
 HOMEPAGE=	http://jpj.net/~trevor/aumix.html
+COMMENT=	Set mix levels
 
 BUILD_DEPENDS+=	msgfmt:../../devel/gettext
 DEPENDS+=	gtk+-1.2.*:../../x11/gtk

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 1998/08/20 15:16:40 tsarna Exp $
+# $NetBSD: Makefile,v 1.13 1999/12/28 04:20:03 wiz Exp $
 # FreeBSD ID: Makefile,v 1.5 1997/09/08 13:37:47 tg Exp
 #
 
@@ -8,6 +8,7 @@ MASTER_SITES=   http://mercury.hypersurf.com/~amb/download/xmmix-1.2/src/
 
 MAINTAINER=	augustss@cs.chalmers.se
 HOMEPAGE=	http://sunsite.unc.edu/~cddb/xmmix/index.html
+COMMENT=	X interface to the audio mixer device
 
 USE_IMAKE=	yes
 USE_MOTIF=	yes

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2000/12/17 01:41:42 wiz Exp $
 #
 
 DISTNAME=	dgguspat
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=     packages@netbsd.org
+COMMENT=	GUS (Gravis Ultrasound) patches (audio samples) for TiMidity
 
 BUILD_DEPENDS+=	unzip:../../archivers/unzip
 

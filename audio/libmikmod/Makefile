@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2000/06/09 07:53:02 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2000/10/13 19:29:34 fredb Exp $
 
 DISTNAME=		libmikmod-3.1.9
 CATEGORIES=		audio
@@ -6,6 +6,7 @@ MASTER_SITES=		http://mikmod.darkorb.net/libmikmod/
 
 MAINTAINER=		kuebart@mathematik.uni-ulm.de
 HOMEPAGE=		http://mikmod.darkorb.net/
+COMMENT=		MikMod Sound Library
 
 DEPENDS+=		esound-0.2.*:../../audio/esound
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/04/20 11:56:20 frueauf Exp $
+# $NetBSD: Makefile,v 1.6 1998/06/18 16:15:11 agc Exp $
 # FreeBSD Id: Makefile,v 1.8 1997/04/01 23:08:24 swallace Exp
 #
 
@@ -9,6 +9,7 @@ MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	packages@netbsd.org
+COMMENT=	CD player for X
 
 USE_IMAKE=      yes
 

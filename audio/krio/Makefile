@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/11/17 13:09:54 agc Exp $
+# $NetBSD: Makefile,v 1.2 2000/12/19 12:08:32 wiz Exp $
 #
 
 DISTNAME=	Krio-19990721
@@ -8,6 +8,7 @@ MASTER_SITES=	ftp://ftp.13th-floor.org/pub/krio/
 
 MAINTAINER=     packages@netbsd.org
 HOMEPAGE=       http://kyle.13th-floor.org/2.0/krio
+COMMENT=	kde front-end for managing the Rio PMP300 mp3 player
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 

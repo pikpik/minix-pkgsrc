@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 1999/12/28 04:20:03 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2000/07/06 17:43:46 dmcmahill Exp $
 
 DISTNAME=	us2-980812
 PKGNAME=	mbrolavox-${DISTNAME}
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://tcts.fpms.ac.be/synthesis/mbrola.html
+COMMENT=	American English male voice for MBROLA
 
 DEPENDS+=	mbrola-301h:../mbrola
 BUILD_DEPENDS=	unzip:../../archivers/unzip
