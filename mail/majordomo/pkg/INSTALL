@@ -1,41 +1,46 @@
 #!/bin/sh
+#
+# $NetBSD$
+
+PKGNAME=$1
+STAGE=$2
 
 HOME=@HOME@
 MAJORDOMO_USER=@MAJORDOMO_USER@
 MAJORDOMO_GROUP=@MAJORDOMO_GROUP@
 ADDUSER=@ADDUSER@
 ADDGROUP=@ADDGROUP@
+CHGRP=@CHGRP@
+ID=@ID@
+TOUCH=@TOUCH@
+RM=@RM@
 
-PKG=$1
-STAGE=$2
-
-if [ "$STAGE" != "INSTALL" ];
+if [ "$STAGE" != "PRE-INSTALL" ];
 then
 	exit 0
 fi
 
-
-# Group... the default's shipped with NetBSD
+# We need to check that ${MAJORDOMO_GROUP} exists before adding the user.
 #
-if grep "^${MAJORDOMO_GROUP}:" /etc/group 2>&1 >/dev/null
-then
-	echo "Group '$MAJORDOMO_GROUP' already exists, proceeding."
+${TOUCH} "/tmp/grouptestmajordomo.$$"
+${CHGRP} ${MAJORDOMO_GROUP} "/tmp/grouptestmajordomo.$$" >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+	echo "Group '${MAJORDOMO_GROUP}' already exists...proceeding."
 else
 	echo "Creating '${MAJORDOMO_GROUP}' group..."
 	${ADDGROUP} ${MAJORDOMO_GROUP}
 	echo "Done."
 fi
+${RM} -f "/tmp/grouptestmajordomo.$$"
 
-
-# use finger to be able to use NIS, ...
-if finger ${MAJORDOMO_USER} 2>&1 | grep >/dev/null "no such user"
-then
-	echo "Creating '$MAJORDOMO_USER' user ..."
-	${ADDUSER} -d ${HOME}/${MAJORDOMO_USER} -g ${MAJORDOMO_GROUP} \
-		${MAJORDOMO_USER}
-	echo Done.
+${ID} ${MAJORDOMO_USER} >/dev/null 2>&1
+if [ $? -eq 0 ]; then
+	echo "User '${MAJORDOMO_USER}' already exists...proceeding."
 else
-	echo "User '$MAJORDOMO_USER' already exists, proceeding."
+	echo "Creating '${MAJORDOMO_USER}' user..."
+	${ADDUSER} -c "Majordomo User" -g ${MAJORDOMO_GROUP} \
+		-b ${HOME} ${MAJORDOMO_USER}
+	echo "Done."
 fi
 
 # Home... in case the login exists but not the home directory
