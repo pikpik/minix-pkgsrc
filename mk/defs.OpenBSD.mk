@@ -1,4 +1,4 @@
-# $NetBSD: defs.OpenBSD.mk,v 1.22 2003/09/16 03:10:32 itojun Exp $
+# $NetBSD: defs.OpenBSD.mk,v 1.23 2003/09/17 05:28:31 itojun Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -58,6 +58,11 @@ SHLOCK=		${LOCALBASE}/bin/shlock
 SORT?=		/usr/bin/sort
 SU?=		/usr/bin/su
 TAIL?=		/usr/bin/tail
+.if exists(/bin/tar)
+TAR?=		/bin/tar
+.else
+TAR?=		/usr/bin/tar
+.endif
 TEE?=		/usr/bin/tee
 TEST?=		test				# Shell builtin
 TOUCH?=		/usr/bin/touch

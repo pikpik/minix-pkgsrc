@@ -1,4 +1,4 @@
-# $NetBSD: defs.Darwin.mk,v 1.54 2003/09/05 13:54:13 martti Exp $
+# $NetBSD: defs.Darwin.mk,v 1.55 2003/09/14 16:30:34 danw Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -59,6 +59,11 @@ SHLOCK=		/usr/bin/shlock
 SORT?=		/usr/bin/sort
 SU?=		/usr/bin/su
 TAIL?=		/usr/bin/tail
+.if exists(${LOCALBASE}/bin/tar)
+TAR?=		${LOCALBASE}/bin/tar
+.else
+TAR?=		/usr/bin/tar
+.endif
 TEE?=		/usr/bin/tee
 TEST?=		test				# Shell builtin
 TOUCH?=		/usr/bin/touch

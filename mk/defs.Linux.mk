@@ -1,4 +1,4 @@
-# $NetBSD: defs.Linux.mk,v 1.58 2003/09/05 13:54:14 martti Exp $
+# $NetBSD: defs.Linux.mk,v 1.59 2003/09/14 16:30:34 danw Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -103,6 +103,7 @@ SORT?=		/usr/bin/sort
 .endif
 SU?=		/bin/su
 TAIL?=		/usr/bin/tail
+TAR?=		${LOCALBASE}/bin/tar
 TEE?=		/usr/bin/tee
 .if exists(/bin/test)
 TEST?=		/bin/test
