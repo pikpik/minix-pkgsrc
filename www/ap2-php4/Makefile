@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2002/10/17 09:56:52 martti Exp $
+# $NetBSD: Makefile,v 1.2 2002/11/05 07:33:19 martti Exp $
 
 PKGNAME=		ap2-php-${PHP_BASE_VERS}
 PKGREVISION=		# empty
@@ -13,6 +13,9 @@ APACHE_MODULE=		YES
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
+
+# Needed to pickup includes
+CFLAGS+=		-I${PREFIX}/include/apr-0
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/.libs/libphp4.so	\
