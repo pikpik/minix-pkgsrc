@@ -1,9 +1,9 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/03/18 09:12:11 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/10/03 00:13:33 tv Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SWIG_PYTHON_BUILDLINK3_MK:=	${SWIG_PYTHON_BUILDLINK3_MK}+
 
-PYTHON_VERSION_ACCEPTED=	22 22pth
+PYTHON_VERSION_ACCEPTED=	22
 
 .include "../../lang/python/pyversion.mk"
 .include "../../devel/swig-build/Makefile.version"
