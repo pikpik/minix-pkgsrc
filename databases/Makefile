@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2001/08/01 08:22:23 skrll Exp $
+# $NetBSD: Makefile,v 1.62 2001/08/16 10:47:24 rh Exp $
 #
 
 COMMENT=	Databases
@@ -33,6 +33,7 @@ SUBDIR+=	p5-DBI
 SUBDIR+=	p5-DBIx-Datasource
 SUBDIR+=	p5-DBIx-SearchBuilder
 SUBDIR+=	p5-MLDBM
+SUBDIR+=	p5-MLDBM-Sync
 SUBDIR+=	p5-SQL-Statement
 SUBDIR+=	p5-gdbm
 SUBDIR+=	p5-perl-ldap
