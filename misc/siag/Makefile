@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 1999/10/13 23:14:51 simonb Exp $
+# $NetBSD: Makefile,v 1.12 1999/10/21 15:12:40 agc Exp $
 
 DISTNAME=       siag-3.1.20
 CATEGORIES=     misc textproc math
@@ -28,9 +28,5 @@ DEPENDS+=	ncurses-4.2:../../devel/ncurses
 .endif
 
 XAW_TYPE?=	3d
-
-post-install:
-	${MV} ${PREFIX}/doc/siag ${PREFIX}/share/doc/siag
-	-${RMDIR} ${PREFIX}/doc
 
 .include "../../mk/bsd.pkg.mk"
