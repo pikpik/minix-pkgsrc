@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+${PKGNAME} will use the following directory as the default
+location of the site-specific Perl modules:
+
+	${PERL5_SITELIB}
+
+===========================================================================
