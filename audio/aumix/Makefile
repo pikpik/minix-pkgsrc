@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2001/06/29 04:54:49 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2002/10/13 11:55:54 wiz Exp $
 
 DISTNAME=	aumix-2.7
 CATEGORIES=	audio
@@ -15,6 +15,7 @@ COMMENT=	Set mix levels
 BUILD_USES_MSGFMT=	yes
 
 USE_BUILDLINK2=		yes
+USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-own-labels
 CONFIGURE_ARGS+=	--enable-nls
