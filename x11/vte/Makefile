@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/12/07 21:27:41 minskim Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/03 16:53:09 jmmv Exp $
 #
 
 DISTNAME=	vte-0.11.12
@@ -26,6 +26,9 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 CONFIGURE_ARGS+=	--with-ft-exec-prefix=${BUILDLINK_PREFIX.freetype2}
 
 PKGCONFIG_OVERRIDE+=    vte.pc.in
+
+# for FC_WIDTH
+BUILDLINK_DEPENDS.fontconfig+=      fontconfig>=2.1.93
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
