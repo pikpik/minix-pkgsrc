@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 1998/03/28 21:24:40 frueauf Exp $
+# $NetBSD: Makefile,v 1.5 1998/04/15 10:38:21 agc Exp $
 #
 
 DISTNAME=	readline-2.1
@@ -7,10 +7,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 
 MAINTAINER=	packages@netbsd.org
 
-BUILD_DEPENDS=	${PREFIX}/bin/install-info:${PORTSDIR}/devel/gtexinfo
-RUN_DEPENDS=    ${PREFIX}/bin/install-info:${PORTSDIR}/devel/gtexinfo
-
 GNU_CONFIGURE=	yes
+USE_GTEXINFO=	yes
 
 MAN3=		readline.3
 
