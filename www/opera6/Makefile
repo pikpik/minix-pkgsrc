@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2002/02/26 18:51:50 tron Exp $
+# $NetBSD: Makefile,v 1.3 2002/02/27 17:17:44 jlam Exp $
 
 DISTNAME=	opera-${OPERA_PKG_VERSION}
 CATEGORIES=	www
@@ -23,6 +23,9 @@ EXTRACT_ONLY=	# empty
 PLIST_SRC=	${WRKDIR}/PLIST_DYNAMIC
 
 .include "../../mk/bsd.prefs.mk"
+
+# A default so lintpkgsrc is happy
+OPERA_PKG_VERSION=             6.0
 
 .if (${MACHINE_ARCH} == i386)
 DEPENDS+=	suse_compat>=6.4:../../emulators/suse_compat
