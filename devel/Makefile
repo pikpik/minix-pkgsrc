@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.521 2004/07/30 13:00:59 cube Exp $
+# $NetBSD: Makefile,v 1.522 2004/08/03 15:36:00 cube Exp $
 #
 
 COMMENT=	Development utilities
@@ -372,8 +372,8 @@ SUBDIR+=	p5-Test-Harness
 SUBDIR+=	p5-Test-Inline
 SUBDIR+=	p5-Test-Simple
 SUBDIR+=	p5-Test-Unit
-SUBDIR+=	p5-Tree-Simple
 SUBDIR+=	p5-Tie-IxHash
+SUBDIR+=	p5-Tree-Simple
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-gettext
 SUBDIR+=	p5-glib2
