@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	Sat Dec  9 02:04:53 2000
++++ configure
+@@ -1003,7 +1003,7 @@
+ CHASEN_GENDATA="matrix.cha table.cha chadic.int chadic.pat chadic.ary"
+ 
+ 
+-CHASEN_PREDATA="grammar.cha ctypes.cha cforms.cha chasenrc connect.cha Makefile.bat" 
++CHASEN_PREDATA="grammar.cha ctypes.cha cforms.cha connect.cha" 
+ 
+ 
+ trap '' 1 2 15
