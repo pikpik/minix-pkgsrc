@@ -1,7 +1,5 @@
-# $NetBSD: Makefile,v 1.7 2004/01/07 18:00:16 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2004/04/22 12:28:11 wiz Exp $
 #
-
-USE_BUILDLINK3=	yes
 
 .include "../libao/Makefile.common"
 
