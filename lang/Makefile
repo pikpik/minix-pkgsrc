@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.95 2001/04/30 18:33:57 jlam Exp $
+# $NetBSD: Makefile,v 1.96 2001/05/15 21:10:42 jtb Exp $
 #
 
 COMMENT=	Programming languages
 
 SUBDIR+=	RScheme
 SUBDIR+=	STk
+SUBDIR+=	a60
 SUBDIR+=	awka
 SUBDIR+=	baci
 SUBDIR+=	brandybasic
