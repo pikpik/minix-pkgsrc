@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/10/23 13:14:54 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2001/10/24 22:10:57 jlam Exp $
 #
 
 DISTNAME=	newvox-1.0
@@ -9,9 +9,9 @@ MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.libsdl.org/projects/newvox/index.html
 COMMENT=	voxel-style landscape rendering fly-by
 
-USE_BUILDLINK_ONLY=	YES
-GNU_CONFIGURE=		YES
+USE_BUILDLINK2=	YES
+USE_X11=	YES
+GNU_CONFIGURE=	YES
 
-.include "../../devel/SDL/buildlink.mk"
-.include "../../mk/x11.buildlink.mk"
+.include "../../devel/SDL/buildlink2.mk"
 .include "../../mk/bsd.pkg.mk"
