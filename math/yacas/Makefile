@@ -1,12 +1,16 @@
-# $NetBSD: Makefile,v 1.1.1.1 2000/02/20 14:40:34 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2000/02/29 14:27:14 dmcmahill Exp $
 #
 
-DISTNAME=	yacas-1.0.29
+DISTNAME=	yacas-latest
+PKGNAME=	yacas-1.0.41
 CATEGORIES=	math
 MASTER_SITES=	http://www.xs4all.nl/~apinkus/
 
 MAINTAINER=	packages@netbsd.org
 HOMEPAGE=	http://www.xs4all.nl/~apinkus/yacas.html
+
+DIST_SUBDIR=	${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	YES
 
