@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/13 18:00:08 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/26 13:57:47 adam Exp $
 
 PKGNAME=	MesaDemos-${MESA_VERSION}
 COMMENT=	OpenGL examples and Demos
@@ -8,7 +8,6 @@ DISTINFO_FILE=		${.CURDIR}/distinfo
 
 .include "../Mesa/Makefile.common"
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 MAKE_FLAGS+=		LIB_DEP=""
 
