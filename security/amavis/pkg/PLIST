@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/zipsecure
+bin/securetar
+sbin/scanmails
