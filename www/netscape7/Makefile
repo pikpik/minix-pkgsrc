@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2003/08/08 09:38:40 grant Exp $
+# $NetBSD: Makefile,v 1.20 2003/09/12 09:45:10 seb Exp $
 #
 
 DISTNAME=		netscape-i686-pc-linux-gnu-sea
-PKGNAME=		netscape${VERS_MAJ}-${VERS_MIN}
+PKGNAME=		netscape${VERS_MAJ}-${VERS_MAJ}.${VERS_MIN}
 PKGREVISION=		2
 WRKSRC=			${WRKDIR}/netscape-installer
 CATEGORIES=		www
