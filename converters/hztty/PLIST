@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/hztty
+man/man1/hztty.1
