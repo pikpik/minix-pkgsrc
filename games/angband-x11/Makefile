@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 1998/08/27 13:22:08 garbled Exp $
+# $NetBSD: Makefile,v 1.2 1998/12/31 15:19:15 tv Exp $
 #
 
 DISTNAME=		angband-283
@@ -13,6 +13,7 @@ CONFLICTS=		angband-tty-*
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 MAKEFILE=		Makefile.std
 ALL_TARGET=		angband
+USE_X11=		yes
 
 PATCHFILES+=		${PKGSRCDIR}/games/angband-tty/patches/patch-*
 ALLFILES=		${DISTFILES}	# don't checksum shared patches
