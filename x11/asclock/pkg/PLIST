@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/asclock
+man/cat1/asclock.0
