@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 1998/08/27 07:07:50 garbled Exp $
+# $NetBSD: Makefile,v 1.53 1998/08/29 12:59:33 garbled Exp $
 # FreeBSD Id: Makefile,v 1.156 1997/09/30 07:54:42 asami Exp
 #
 
@@ -93,6 +93,7 @@
     SUBDIR += xdm3d
 #    SUBDIR += xdtm
     SUBDIR += xearth
+    SUBDIR += xephem
 #    SUBDIR += xfce
 #    SUBDIR += xfed
 #    SUBDIR += xfedor
