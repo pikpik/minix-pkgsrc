@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.476 2003/04/17 10:39:52 salo Exp $
+$NetBSD: TODO,v 1.477 2003/04/17 18:57:12 wiz Exp $
 
 Suggested new packages
 ======================
@@ -222,7 +222,7 @@ Suggested package updates
 	o scsh-0.6.4
 	o sendfile-20010424
 	o sketch-0.6.15
-	o smalltalk-2.1
+	o smalltalk-2.1.1
 	o smarteiffel-1.0 [replacing smalleiffel]
 	o snd-6.7
 	o snes9x-1.39a
