@@ -1,4 +1,4 @@
-# $NetBSD: buildlink2.mk,v 1.1.2.1 2002/06/23 23:04:18 jlam Exp $
+# $NetBSD: buildlink2.mk,v 1.2 2002/08/25 19:22:38 jlam Exp $
 
 .if !defined(PTL2_BUILDLINK2_MK)
 PTL2_BUILDLINK2_MK=	# defined
@@ -13,6 +13,8 @@ BUILDLINK_FILES.ptl2=		PTL/include/*/*/*.h
 BUILDLINK_FILES.ptl2+=		PTL/include/*/*.h
 BUILDLINK_FILES.ptl2+=		PTL/include/*.h
 BUILDLINK_FILES.ptl2+=		lib/libPTL.*
+
+BUILDLINK_CPPFLAGS.ptl2=	-I${BUILDLINK_PREFIX.ptl2}/PTL/include
 
 BUILDLINK_TARGETS+=	ptl2-buildlink
 
