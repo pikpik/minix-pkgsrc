@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2001/09/27 23:18:30 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2002/02/17 21:12:07 tron Exp $
 
 DISTNAME=		pchar-1.4
 CATEGORIES=		net
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-ipv6
 .include "..//ucd-snmp/buildlink.mk"
 
 CONFIGURE_ARGS+=	--with-snmp=${BUILDLINK_DIR}
-LIBS+=			-lsnmp -lssl -lcrypto
+LIBS+=			-lsnmp -lcrypto
 .endif
 
 do-install:
