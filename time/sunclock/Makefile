@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:55:06 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/11 09:28:20 snj Exp $
 #
 
-DISTNAME=	sunclock-1.4
+DISTNAME=	sunclock-1.5
 PKGREVISION=	1
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
