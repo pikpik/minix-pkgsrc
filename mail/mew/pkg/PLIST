@@ -3,6 +3,12 @@ bin/mewcat
 bin/mewdecode
 bin/mewencode
 bin/mewls
+@unexec install-info --delete --info-dir=%D/info %D/info/mew.info
+info/mew.info
+@exec install-info --info-dir=%D/info %D/info/mew.info
+info/mew.info-1
+info/mew.info-2
+info/mew.info-3
 lib/emacs/etc/Mew/Mew.img
 lib/emacs/etc/Mew/Mew.png
 lib/emacs/etc/Mew/Mew.xbm
