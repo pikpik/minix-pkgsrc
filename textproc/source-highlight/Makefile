@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2001/11/18 23:55:11 seb Exp $
 #
 
-DISTNAME=	source-highlight-1.1
+DISTNAME=	source-highlight-1.2.1
 SVR4_PKGNAME=	srchl
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=source-highlight/}
