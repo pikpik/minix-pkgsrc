@@ -1,4 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2001/04/21 09:54:11 wiz Exp $
 
 SHA1 (fnlib-0.5.tar.gz) = fd1ace80c3069d3ccb7b3aa7943e6688b61988f2
 Size (fnlib-0.5.tar.gz) = 431588 bytes
+SHA1 (patch-aa) = 79050e44ffc9029881a35402937a8ed67be677bd
