@@ -1,32 +1,16 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: dhid.sh,v 1.2 2000/08/09 21:00:10 hubertf Exp $
+# $NetBSD$
 #
 # PROVIDE: dhid
 # REQUIRE: NETWORK
 
-DHID=@PREFIX@/sbin/dhid
+. /etc/rc.subr
 
-case "$1" in
-start)
-	if [ ! -f "@PREFIX@/etc/dhid.conf" ]; then
-		pkg_info -D dhid
-		echo "@PREFIX@/etc/dhid.conf not found, exiting."
-		exit 1
-	fi
-	if [ -f ${DHID} ]; then
-		@ECHO@ -n " dhid"
-		${DHID}
-	fi
-	;;
-stop)
-	if [ -f /var/run/dhid.pid ]; then
-		kill `cat /var/run/dhid.pid`
-		rm -f /var/run/dhid.pid
-	fi
-	;;
-*)
-	echo "Usage: $0 {start,stop}"
-	exit 1
-	;;
-esac
+name="dhid"
+command="@PREFIX@/sbin/${name}"
+pidfile="/var/run/${name}.pid"
+required_files="@PKG_SYSCONFDIR@/dhid.conf"
+
+load_rc_config $name
+run_rc_command "$1"
