@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2000/08/23 23:14:30 tron Exp $
+# $NetBSD: Makefile,v 1.4 2000/08/28 05:41:02 jlam Exp $
 #
 
-DISTNAME=	grace-5.1.0
+DISTNAME=	grace-5.1.2
 CATEGORIES=	math graphics x11
 MASTER_SITES=	ftp://plasma-gate.weizmann.ac.il/pub/grace/src/
 
