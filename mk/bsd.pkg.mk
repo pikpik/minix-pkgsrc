@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.393 2000/01/14 11:58:21 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.394 2000/01/15 02:08:03 jwise Exp $
 #
 # This file is in the public domain.
 #
@@ -136,7 +136,7 @@ BUILD_DEFS+=		KERBEROS
 .endif
 
 .if defined(USE_PERL5)
-DEPENDS+=		perl-5.00404:${PKGSRCDIR}/lang/perl5
+DEPENDS+=		perl-*:${PKGSRCDIR}/lang/perl5
 .endif
 
 .if defined(USE_FORTRAN)
