@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 1998/06/22 13:09:50 agc Exp $
+# $NetBSD: Makefile,v 1.6 1998/10/15 19:51:08 agc Exp $
 #
 
 DISTNAME=       depot-5.14
@@ -6,9 +6,11 @@ CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.andrew.cmu.edu/pub/depot/alpha/
 
 MAINTAINER=	packages@netbsd.org
+HOMEPAGE=	http://andrew2.andrew.cmu.edu/depot/depot.html
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	INSTALL=""
+CONFIGURE_ENV+=	INSTALL="" CC=gcc
+MAKE_ENV+=	CC=gcc
 
 do-install:
 	@cd ${WRKSRC}/src/cmd && ${MAKE} DESTDIR=${PREFIX} install
