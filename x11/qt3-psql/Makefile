@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/04/16 14:30:45 recht Exp $
+# $NetBSD: Makefile,v 1.13 2004/07/06 16:59:55 wiz Exp $
 #
 
 .include "../qt3-libs/Makefile.common"
@@ -7,7 +7,7 @@ PKGNAME=		qt3-psql-${QTVERSION}
 COMMENT=		QT postgresql driver
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include \
-			-I${BUILDLINK_PREFIX.postgresql-lib}/include/postgresql/server \
+			-I${PGSQL_PREFIX}/include/postgresql/server \
 			-L${QTDIR}/lib
 
 USE_BUILDLINK3=		yes
@@ -25,5 +25,5 @@ do-install:
 		${SQLDRVDIR}
 
 .include "../../x11/qt3-libs/buildlink3.mk"
-.include "../../databases/postgresql-lib/buildlink3.mk"
+.include "../../mk/pgsql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
