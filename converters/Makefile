@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2002/01/02 22:29:55 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2002/03/22 13:49:12 wiz Exp $
 #
 
 COMMENT=	Character code converters
@@ -6,6 +6,7 @@ COMMENT=	Character code converters
 SUBDIR+=	base64
 SUBDIR+=	bbcim
 SUBDIR+=	cbmconvert
+SUBDIR+=	cn2jp
 SUBDIR+=	doc2html
 SUBDIR+=	dvi2tty
 SUBDIR+=	ish
