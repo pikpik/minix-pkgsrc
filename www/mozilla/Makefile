@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 1999/05/07 11:00:16 tron Exp $
+# $NetBSD: Makefile,v 1.25 1999/05/07 14:48:57 tron Exp $
 #
 
 DISTNAME=	mozilla-19981008
@@ -12,6 +12,7 @@ MAINTAINER=	fvdl@netbsd.org
 HOMEPAGE=	http://www.mozilla.org/
 
 BUILD_DEPENDS+=	${LOCALBASE}/bin/perl:../../lang/perl5
+
 USE_X11BASE=	yes
 USE_GMAKE=	yes
 USE_MOTIF=	yes
