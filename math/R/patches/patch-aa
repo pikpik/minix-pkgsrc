@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- Makeconf.in.orig	Mon Nov 23 04:20:11 1998
++++ Makeconf.in	Sun Dec 20 12:12:22 1998
+@@ -50,4 +50,4 @@
+ libdir = @libdir@
+ mandir = @mandir@
+ 
+-rhome = @libdir@/R
++rhome = @datadir@/R
