@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1467 2004/06/04 15:00:14 jschauma Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1468 2004/06/05 09:10:41 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -1789,8 +1789,8 @@ _ACQUIRE_LOCK=								\
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	ppid=`${PS} -p $$$$ -o ppid | ${AWK} 'NR == 2 { print $$1 }'`;	\
 	while true; do							\
-		if [ -f /var/run/dmesg.boot -a -f ${LOCKFILE} -a	\
-		     /var/run/dmesg.boot -nt ${LOCKFILE} ]; then	\
+		if ${TEST} -f /var/run/dmesg.boot -a -f ${LOCKFILE} -a	\
+		     /var/run/dmesg.boot -nt ${LOCKFILE}; then		\
 			${ECHO} "=> Removing stale ${LOCKFILE}";	\
 			${RM} ${LOCKFILE};				\
 		fi;							\
