@@ -1,30 +1,37 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.48 2002/09/15 06:24:21 uebayasi Exp $
 
-DISTNAME=		vm-6.87
-CATEGORIES=		mail
-MASTER_SITES=		ftp://ftp.uni-mainz.de/pub/gnu/vm/ \
-			ftp://tug.org/vm/ \
-			ftp://ftp.uu.net/networking/mail/vm/ \
-			ftp://psg.com/pub/vm/ \
-			ftp://sunsite.cnlab-switch.ch/mirror/vm/
+DISTNAME=	mew-3.1
+CATEGORIES=	mail
+MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/release/
 
-MAINTAINER=		jtb@netbsd.org
-HOMEPAGE=		http://www.wonderworks.com/vm/
+MAINTAINER=	tech-pkg-ja@jp.netbsd.org
+HOMEPAGE=	http://www.mew.org/
+COMMENT=	Messaging in the Emacs World
 
-DEPENDS+=	 	emacs-[0-9]*:../../editors/emacs
+CONFLICTS=+	mew-xemacs-*
 
-WRKSRC=			${WRKDIR}/${PKGNAME}
-INFO_FILES=		vm.info
+EMACS_VERSION_ACCEPTED=	emacs21 emacs20
 
-do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/emacs/site-lisp/vm
-	${INSTALL_DATA} ${WRKSRC}/*.el ${WRKSRC}/*.elc \
-	${PREFIX}/share/emacs/site-lisp/vm
-	${INSTALL_DATA} ${WRKSRC}/*.info* ${PREFIX}/info
-	${INSTALL_DATA_DIR} ${PREFIX}/share/emacs/site-lisp/vm/pixmaps
-	${INSTALL_DATA} ${WRKSRC}/pixmaps/*.x[pb]m \
-	${PREFIX}/share/emacs/site-lisp/vm/pixmaps
-	@for p in qp-decode qp-encode base64-decode base64-encode ; do \
-	${INSTALL_PROGRAM} ${WRKSRC}/$$p ${PREFIX}/bin ; done
+MEW_CONTRIB_DIR=${EMACS_LISPPREFIX}/mew/contrib
 
+MAKE_FLAGS+=	prefix=${PREFIX}
+MAKE_FLAGS+=	EMACS=${EMACS_BIN}
+MAKE_FLAGS+=	elispdir=${EMACS_LISPPREFIX}/mew
+MAKE_FLAGS+=	etcdir=${PREFIX}/share/mew
+
+INFO_FILES=	mew.info
+
+post-patch:
+	@${GREP} -lr /usr/local ${WRKSRC} | \
+	while read f; do \
+		${MV} $$f $${f}.orig; \
+		${SED} -e 's|/usr/local|${PREFIX}|g' $${f}.orig >$$f; \
+	done
+
+post-install:
+	@${INSTALL_DATA_DIR} ${MEW_CONTRIB_DIR}
+	@${INSTALL_DATA} ${WRKSRC}/contrib/* ${MEW_CONTRIB_DIR}
+
+.include "../../mk/emacs.mk"
+.include "../../mk/texinfo.mk"
 .include "../../mk/bsd.pkg.mk"
