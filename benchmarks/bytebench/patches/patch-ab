@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2002/01/09 11:24:37 jlam Exp $
 
 --- Makefile.orig	Wed Jul 28 15:05:02 1999
 +++ Makefile
@@ -18,7 +18,7 @@ $NetBSD$
  
  ## generic gcc CFLAGS.  -DTIME must be included
 -CFLAGS = -DTIME -Wall -pedantic -ansi
-+CFLAGS += -DTIME -Wall -pedantic -ansi
++#CFLAGS = -DTIME -Wall -pedantic -ansi
  
  # local directories
  PROGDIR = ./pgms
