@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/01/25 16:22:15 kristerw Exp $
+# $NetBSD: Makefile,v 1.21 2004/02/01 01:43:29 jlam Exp $
 #
 
 DISTNAME=		angband-283
@@ -15,7 +15,7 @@ COMMENT=		Tolkien based variant of Moria for tty/console displays
 CONFLICTS=		angband-x11-[0-9]*
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
-USE_BUILDLINK2=		# defined
+USE_BUILDLINK3=		# defined
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 MAKEFILE=		Makefile.std
 ALL_TARGET=		angband
