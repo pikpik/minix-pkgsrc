@@ -1,13 +1,13 @@
 $NetBSD$
 
---- src/fasthenry/readGeom.c.orig	Sun May  2 21:44:00 2004
-+++ src/fasthenry/readGeom.c
-@@ -3,7 +3,7 @@
- #include <stdio.h>
- #include <ctype.h>
- #include <string.h>
--#include <malloc.h>
-+#include <stdlib.h>
- #include <math.h>
- #include "induct.h"
+--- src/zbuf/zbuf.c.orig	Tue Aug  3 22:24:14 2004
++++ src/zbuf/zbuf.c
+@@ -34,6 +34,8 @@ operation of Software or Licensed Progra
+  
+ */
  
++#include <string.h>
++
+ #include "mulGlobal.h"
+ 
+ main(argc, argv)
