@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2004/01/04 05:01:03 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/01/31 16:47:26 grant Exp $
 #
 
-MOZILLA=	MozillaFirebird
+MOZILLA=	firefox
 
-HOMEPAGE=	http://www.mozilla.org/projects/firebird/
+HOMEPAGE=	http://www.mozilla.org/projects/firefox/
 COMMENT=	Lightweight gecko-based web browser (gtk2 nightly binary pkg)
 
 MOZ_GTK2=	YES
