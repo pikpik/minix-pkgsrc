@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:01:15 martti Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/08 10:12:15 jmmv Exp $
 
 DISTNAME=	${DISTNAME_${OPSYS}_${MACHINE_ARCH}}
 PKGNAME=	dnetc-2.8018.472
@@ -26,13 +26,20 @@ DISTNAME_SunOS_sparc=		dnetc-solaris-sparc
 
 RCD_SCRIPTS=	dnetc
 
+.if ${MACHINE_ARCH} != "arm" && ${MACHINE_ARCH} != "arm32"
 do-extract:
 	@${MKDIR} ${WRKSRC}
 	@cd ${WRKSRC}; ${GTAR} -zxf ${DISTDIR}/${DISTFILES}
+.endif
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/dnetc/
+.if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
+	${INSTALL_DATA} ${WRKSRC}/readme.* ${PREFIX}/share/doc/dnetc/
+	${INSTALL_DATA} ${WRKSRC}/*.txt ${PREFIX}/share/doc/dnetc/
+.else
 	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/dnetc/
+.endif
 	${INSTALL_MAN} ${WRKSRC}/dnetc.1 ${PREFIX}/man/man1/
 	${INSTALL_PROGRAM} ${WRKSRC}/dnetc ${PREFIX}/bin/
 
