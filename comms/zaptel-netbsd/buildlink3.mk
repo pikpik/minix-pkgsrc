@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/04/08 03:03:42 riz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 ZAPTEL_NETBSD_BUILDLINK3_MK:=	${ZAPTEL_NETBSD_BUILDLINK3_MK}+
@@ -16,6 +16,6 @@ BUILDLINK_PKGSRCDIR.zaptel-netbsd?=	../../comms/zaptel-netbsd
 BUILDLINK_DEPMETHOD.zaptel-netbsd?=	build
 .endif	# ZAPTEL_NETBSD_BUILDLINK3_MK
 
-.include "../../wip/newt/buildlink3.mk"
+.include "../../devel/newt/buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
