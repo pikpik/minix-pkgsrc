@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.15 2004/10/05 10:30:35 agc Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/07 13:40:49 ben Exp $
 #
 
 DISTNAME=		matchbox-window-manager-0.9.3
 PKGNAME=		matchbox-0.9.3
 CATEGORIES=		wm x11
-MASTER_SITES=		http://matchbox.handhelds.org/sources/matchbox-window-manager/0..9/
+MASTER_SITES=		http://projects.o-hand.com/matchbox/sources/matchbox-window-manager/0.9/
 
 MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://matchbox.handhelds.org/
+HOMEPAGE=		http://projects.o-hand.com/matchbox/
 COMMENT=		Window manager designed for computers with small displays
 
 USE_BUILDLINK3=		yes
