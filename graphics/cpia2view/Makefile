@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/23 04:41:00 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:49 tv Exp $
 #
 
 DISTNAME=	cpia2_driver-1.0
@@ -16,7 +16,6 @@ MAINTAINER=	hamajima@NetBSD.org
 HOMEPAGE=	http://www2.starcat.ne.jp/~takam/bsd/NetBSD.html#cpia2
 COMMENT=	USB cameras based CPiA2 Utility Programs
 
-USE_BUILDLINK3=		yes
 
 do-build:
 	for f in cpia2shot cpia2view ; do		\

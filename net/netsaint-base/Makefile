@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/06/20 21:52:08 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:17:56 tv Exp $
 #
 
 DISTNAME=		netsaint-0.0.7
@@ -10,7 +10,6 @@ MAINTAINER=		murray@river-styx.org
 HOMEPAGE=		http://www.netsaint.org/
 COMMENT=		Network monitor
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 
 .include "../../net/netsaint-base/Makefile.common"

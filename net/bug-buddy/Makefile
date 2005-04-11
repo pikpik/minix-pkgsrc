@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/10/03 00:17:49 tv Exp $
+# $NetBSD: Makefile,v 1.30 2005/03/22 16:27:52 jmmv Exp $
 #
 
 DISTNAME=		bug-buddy-2.10.0
@@ -13,7 +13,6 @@ COMMENT=		Graphical GNOME2 bug reporting tool
 BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make

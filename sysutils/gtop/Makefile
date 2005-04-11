@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/10/03 00:18:15 tv Exp $
+# $NetBSD: Makefile,v 1.38 2004/11/30 18:26:40 wiz Exp $
 
 DISTNAME=		gtop-1.0.13
 PKGREVISION=		10
@@ -12,7 +12,6 @@ COMMENT=		GNOME system monitor - top like, memory graphs, process viewer
 BUILD_USES_MSGFMT=	YES
 
 OSVERSION_SPECIFIC=	YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make

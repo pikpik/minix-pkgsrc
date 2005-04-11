@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/11/29 19:32:18 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2004/12/28 23:18:17 reed Exp $
 #
 
 DISTNAME=		mapserver-4.0
@@ -10,7 +10,6 @@ MAINTAINER=		hdp@cs.msu.edu
 HOMEPAGE=		http://mapserver.gis.umn.edu/
 COMMENT=		Environment for building spatially enabled Internet apps
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes

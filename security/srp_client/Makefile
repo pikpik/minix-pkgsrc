@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/09/08 14:30:00 markd Exp $
+# $NetBSD: Makefile,v 1.29 2004/10/03 00:18:13 tv Exp $
 
 DISTNAME=		srp-1.4.4
 PKGNAME=		srp-client-1.4.4
@@ -15,7 +15,6 @@ LICENSE=		srp_client-license
 
 CRYPTO=			yes
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 
 CPPFLAGS+=		-Dunix=1
 #CPPFLAGS+=		-Dkrb_get_err_text=k_strerror

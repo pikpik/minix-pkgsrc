@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/07/22 09:16:01 recht Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:33 tv Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -11,7 +11,6 @@ COMMENT=	Line editing support for Python
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/readline.c
 
-USE_BUILDLINK3=		yes
 USE_GNU_READLINE=	# defined
 
 PYDISTUTILSPKG=	yes

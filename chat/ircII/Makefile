@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/04/14 17:33:38 grant Exp $
+# $NetBSD: Makefile,v 1.36 2004/08/20 03:20:54 mrg Exp $
 
 DISTNAME=		ircii-${VERS}
 PKGNAME=		ircII-${VERS}
@@ -23,7 +23,6 @@ PLIST_SUBST+= 		VERS=${VERS}
 .include "../../mk/bsd.prefs.mk"
 
 WRKSRC=			${WRKDIR}/ircii-${VERS}
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 .if defined(DEFAULT_IRC_SERVER)
 CONFIGURE_ARGS+=	--with-default-server=${DEFAULT_IRC_SERVER}

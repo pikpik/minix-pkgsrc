@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/11/06 16:43:44 sketch Exp $
+# $NetBSD: Makefile,v 1.31 2005/02/06 15:09:23 jmmv Exp $
 #
 
 DISTNAME=		libIDL-0.8.5
@@ -12,7 +12,6 @@ COMMENT=		CORBA Interface Definition Language parser
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_GNU_TOOLS+=		lex yacc
 CONFIGURE_ENV+=		HAVE_YACC=yes

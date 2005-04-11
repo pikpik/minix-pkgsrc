@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/27 15:17:15 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/02 17:28:56 jlam Exp $
 
 DISTNAME=      	Kwiki-Favorites-0.13
 PKGNAME=       	p5-${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Kwiki plugin to bookmark favorite pages
 
 DEPENDS+=	p5-Kwiki>=0.37nb1:../../www/p5-Kwiki
 
-USE_BUILDLINK3=	yes
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Kwiki/Favorites/.packlist
 
 .include "../../lang/perl5/module.mk"

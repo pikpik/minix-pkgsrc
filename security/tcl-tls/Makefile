@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/23 14:40:12 peter Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/27 17:33:44 peter Exp $
 #
 
 DISTNAME=		tls1.5.0-src
@@ -12,7 +12,6 @@ COMMENT=		TLS (aka SSL) Channel for the Tcl language
 
 WRKSRC=			${WRKDIR}/tls1.5
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ssl-dir=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE:Q}

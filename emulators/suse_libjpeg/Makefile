@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/11/12 14:31:18 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/01/23 12:06:07 tron Exp $
 
 DISTNAME=		libjpeg
 PKGNAME=		suse_${DISTNAME}-${SUSE_VERSION}
@@ -17,7 +17,6 @@ ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
-NO_BUILDLINK=		YES
 LIBTOOLIZE_PLIST=	NO
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 

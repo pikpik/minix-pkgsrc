@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.55 2004/08/27 06:29:10 jlam Exp $
+# $NetBSD: Makefile.common,v 1.56 2004/12/03 15:15:07 wiz Exp $
 
 DISTNAME=		ghostscript-${GS_VERS}
 GS_VERS=		6.01
@@ -19,7 +19,6 @@ DEPENDS+=		ghostscript-fonts-6.0:../../fonts/ghostscript-fonts
 DEPENDS+=		watanabe-vfont-19930318:../../fonts/watanabe_vfont
 
 WRKSRC=			${WRKDIR}/gs${GS_VERS}
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 

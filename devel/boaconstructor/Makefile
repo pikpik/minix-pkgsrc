@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/25 20:03:52 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/01/23 20:41:45 recht Exp $
 #
 
 DISTNAME=		boa-constructor-0.2.3.src
@@ -14,7 +14,6 @@ COMMENT=		Python IDE
 
 WRKSRC=		${WRKDIR}/boa-constructor-0.2.3
 EXTRACT_CMD_OPTS.zip=	-aqo
-USE_BUILDLINK3=		yes
 PYTHON_VERSIONS_ACCEPTED=	23
 
 BOADIR=	${PREFIX}/share/boa-constructor-0.2.3

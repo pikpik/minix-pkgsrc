@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/09/21 17:15:05 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/28 19:17:41 jmmv Exp $
 #
 
 DISTNAME=	gnome2-user-docs-2.8.1
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	The GNOME 2 users guide
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/09/19 14:31:36 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:16 tv Exp $
 #
 
 DISTNAME=	vifm-0.1
@@ -11,7 +11,6 @@ HOMEPAGE=	http://vifm.sourceforge.net/
 COMMENT=	Ncurses based file manager with vi like keybindings
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 
 INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*

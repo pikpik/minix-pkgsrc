@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/20 16:18:41 minskim Exp $
 #
 
 DISTNAME=		scid-3.6.1
@@ -9,7 +9,6 @@ MAINTAINER=		luapzz@gmail.com
 HOMEPAGE=		http://scid.sourceforge.net/
 COMMENT=		Shane's Chess Information Database
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make

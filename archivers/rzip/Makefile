@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/18 22:01:52 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/24 21:12:50 wiz Exp $
 
 DISTNAME=	rzip-2.0
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://rzip.samba.org/
 COMMENT=	Create or extract .rz files, like gzip but smaller
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 
 post-install:
 	${LN} -f ${PREFIX}/bin/rzip ${PREFIX}/bin/runzip

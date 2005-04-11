@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/26 23:21:43 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/12/27 15:24:11 jlam Exp $
 
 DISTNAME=      	Kwiki-PreformattedBlocks-0.11
 PKGNAME=       	p5-${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Kwiki plugin to display preformatted text
 
 DEPENDS+=	p5-Kwiki>=0.34:../../www/p5-Kwiki
 
-USE_BUILDLINK3=	yes
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Kwiki/PreformattedBlocks/.packlist
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/10/04 22:57:09 heinz Exp $
+# $NetBSD: Makefile,v 1.34 2004/11/19 13:35:43 adam Exp $
 
 DISTNAME=	slrn-0.9.8.1
 CATEGORIES=	news
@@ -9,7 +9,6 @@ MAINTAINER=	mjl@NetBSD.org
 HOMEPAGE=	http://slrn.sourceforge.net/
 COMMENT=	Highly customizable threaded newsreader
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-inews --with-slrnpull --enable-spool \

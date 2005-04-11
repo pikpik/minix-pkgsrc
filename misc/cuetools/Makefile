@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/05/07 11:27:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/03 22:48:40 jmmv Exp $
 #
 
 DISTNAME=	cuetools-1.2
@@ -11,7 +11,6 @@ COMMENT=	Set of utilities to manipulate cue and toc files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 INSTALLATION_DIRS=	bin man/man1

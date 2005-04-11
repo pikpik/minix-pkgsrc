@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/04/26 16:49:17 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2004/07/04 22:18:41 jmmv Exp $
 #
 
 DISTNAME=	buildtool-0.16
@@ -11,7 +11,6 @@ COMMENT=	Portable build infrastructure
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 HAS_CONFIGURE=	yes
 
 TEST_TARGET=		test

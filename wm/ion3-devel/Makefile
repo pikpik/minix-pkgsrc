@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/06/01 16:51:14 cube Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/04 20:50:57 cube Exp $
 #
 
 DISTNAME=	ion-3ds-20040906
@@ -12,7 +12,6 @@ COMMENT=	Keyboard friendly tiling window manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_X11=	YES
 USE_GNU_TOOLS+=	make

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/03/23 00:51:09 schmonz Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/09 22:36:56 schmonz Exp $
 #
 
 DISTNAME=		qmail-conf-0.60
@@ -18,7 +18,6 @@ DEPENDS+=		ucspi-tcp>=0.86:../../net/ucspi-tcp
 
 SITES_djbdns-1.05.tar.gz=	http://cr.yp.to/djbdns/ ftp://cr.yp.to/djbdns/
 
-USE_BUILDLINK3=		yes
 
 DJB_RESTRICTED=		NO
 DJB_CONFIG_CMDS=	${ECHO} ${LOCALBASE} > ${WRKSRC}/conf-ucspi-tcp

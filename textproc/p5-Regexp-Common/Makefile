@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:09 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/01 22:30:52 wiz Exp $
 #
 
 DISTNAME=		Regexp-Common-2.119
@@ -12,7 +12,6 @@ COMMENT=		Provide commonly requested regular expressions
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Regexp/Common/.packlist
 

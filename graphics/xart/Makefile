@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/10/03 00:14:58 tv Exp $
+# $NetBSD: Makefile,v 1.35 2004/12/28 23:18:19 reed Exp $
 #
 
 DISTNAME=       xart19980415
@@ -13,7 +13,6 @@ HOMEPAGE=	http://linux01.gwdg.de/~rhohen/linux.html
 COMMENT=	Paint program (enhanced xpaint)
 
 WRKSRC=		${WRKDIR}/19980415
-USE_BUILDLINK3=	YES
 USE_IMAKE=      YES
 
 post-extract:

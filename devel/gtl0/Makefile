@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:13:28 tv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/02 20:32:37 wiz Exp $
 
 DISTNAME=		GTL-0.3.3
 PKGNAME=		gtl0-0.3.3
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.fmi.uni-passau.de/Graphlet/GTL/
 COMMENT=		C++ graph data structure library based on the STL (older version)
 
 USE_LIBTOOL=		# defined
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 
 LICENSE=		no-commercial-use

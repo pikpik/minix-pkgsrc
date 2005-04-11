@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:14:39 tv Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/28 23:18:18 reed Exp $
 #
 
 DISTNAME=	poedit-1.2.5
@@ -12,7 +12,6 @@ COMMENT=	Cross-platform gettext catalogs (.po files) editor
 
 DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make

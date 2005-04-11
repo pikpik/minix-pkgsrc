@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/05 16:56:37 he Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/20 11:30:59 grant Exp $
 #
 
 DISTNAME=	Config-IniFiles-2.38
@@ -14,7 +14,6 @@ COMMENT=	Perl module for reading .ini-style configuration files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Config/IniFiles/.packlist
 
 .include "../../lang/perl5/module.mk"

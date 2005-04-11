@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/04/18 23:05:58 snj Exp $
+# $NetBSD: Makefile,v 1.23 2004/04/20 10:31:13 lukem Exp $
 
 DISTNAME=	xbattbar_1.4.2
 PKGNAME=	${DISTNAME:S/_/-/}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://iplab.aist-nara.ac.jp/member/suguru/xbattbar.html
 COMMENT=	X11 battery graph for laptops
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}
-USE_BUILDLINK3=	yes
 
 USE_IMAKE=	# defined
 

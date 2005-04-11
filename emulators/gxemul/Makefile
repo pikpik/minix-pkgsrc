@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/30 00:30:44 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/07 17:29:19 xtraeme Exp $
 #
 
 DISTNAME=	gxemul-0.3.1
@@ -11,7 +11,6 @@ COMMENT=	Machine emulator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 HAS_CONFIGURE=	yes
 
 INSTALLATION_DIRS=	bin share/doc/${PKGBASE}

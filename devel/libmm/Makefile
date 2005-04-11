@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/11/18 15:51:35 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2004/11/25 14:19:06 adam Exp $
 
 DISTNAME=	mm-1.3.1
 PKGNAME=	lib${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Portable abstraction layer for shared memory
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 TEST_TARGET=		test

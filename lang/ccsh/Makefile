@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/03/07 17:16:54 minskim Exp $
 #
 
 DISTNAME=		ccsh-0.0.4
@@ -12,7 +12,6 @@ COMMENT=		C-like syntax scripting
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		yes
 
 SUBST_CLASSES+=		options
 SUBST_MESSAGE.options=	"Preventing CFLAGS from being overridden."

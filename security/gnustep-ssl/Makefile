@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/16 01:20:53 rh Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/16 06:19:23 rh Exp $
 #
 
 DISTNAME=		gnustep-base-1.10.1
@@ -18,7 +18,6 @@ CONFIGURE_DIRS=		${WRKDIR}/${DISTNAME}
 WRKSRC=			${CONFIGURE_DIRS}/SSL
 MAKEFILE=		GNUmakefile
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 GNU_CONFIGURE_PREFIX=	${PREFIX}/share/GNUstep
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep

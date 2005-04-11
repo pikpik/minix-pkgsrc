@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/10 09:14:34 garbled Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:14:49 tv Exp $
 #
 
 PKGNAME=		cal3d-${CAL3D_VERSION}
@@ -8,7 +8,6 @@ PKGREVISION=	1
 
 COMMENT=	        Skeletal based 3d character animation library in C++
 
-USE_BUILDLINK3=		yes
 
 pre-configure:
 	cd ${WRKSRC} && ./autogen.sh

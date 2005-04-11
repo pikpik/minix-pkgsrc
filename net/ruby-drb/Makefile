@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/03/06 17:19:07 taca Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/24 21:12:59 wiz Exp $
 
 DISTNAME=	drb-2.0.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www2a.biglobe.ne.jp/~seki/ruby/
 COMMENT=	Distributed Ruby
 
 RUBY_VERSION=		${RUBY16_VERSION}
-USE_BUILDLINK3=		yes
 USE_RUBY_INSTALL=	yes
 REPLACE_RUBY_DIRS=	${WRKSRC}/sample
 DOCS=			acl-ref.rd acl-ref.rd.ja acl.rd acl.rd.ja \

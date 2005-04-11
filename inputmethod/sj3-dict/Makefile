@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:43:43 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/03/05 21:23:00 minskim Exp $
 #
 
 DISTNAME=	sj3-2.0.1.20
@@ -19,7 +19,6 @@ PATCHDIR=	${.CURDIR}/../sj3-lib/patches
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

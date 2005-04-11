@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/11/20 22:10:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/30 18:26:39 wiz Exp $
 #
 
 DISTNAME=		gnome-pilot-0.1.71
@@ -18,7 +18,6 @@ BUILDLINK_DEPENDS.gnome-panel=	gnome-panel<2.0
 
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome1-1.5
 USE_PKGLOCALEDIR=	YES
 USE_LIBINTL=		YES

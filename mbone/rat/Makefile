@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/06/18 12:50:51 markd Exp $
+# $NetBSD: Makefile,v 1.23 2004/10/03 00:12:57 tv Exp $
 #
 
 DISTNAME=	rat-3.0.28
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
 COMMENT=	Robust Audio Tool - multicast audioconferencing
 
 CRYPTO=		yes
-USE_BUILDLINK3= yes
 USE_GNU_TOOLS+=	make
 USE_X11BASE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/04/18 05:36:52 snj Exp $
+# $NetBSD: Makefile,v 1.22 2004/10/03 00:14:43 tv Exp $
 
 DISTNAME=		clanbomber-1.01
 PKGREVISION=		4
@@ -9,7 +9,6 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.clanbomber.de/
 COMMENT=		Bomberman clone using the ClanLib graphics system
 
-USE_BUILDLINK3=		yes
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make

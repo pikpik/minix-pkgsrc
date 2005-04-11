@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/02/20 12:48:07 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:20 tv Exp $
 #
 
 DISTNAME=		libunicode-0.4
@@ -10,7 +10,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.pango.org/
 COMMENT=		Library for manipulating Unicode characters and strings
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

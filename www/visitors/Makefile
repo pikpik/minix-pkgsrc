@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 17:55:44 wiz Exp $
 #
 
 DISTNAME=		visitors-0.4a
@@ -10,7 +10,6 @@ HOMEPAGE=		http://www.hping.org/visitors/
 COMMENT=		Very fast web log analyzer
 
 WRKSRC=			${WRKDIR}/visitors_0.4a
-USE_BUILDLINK3=		YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/visitors ${PREFIX}/bin

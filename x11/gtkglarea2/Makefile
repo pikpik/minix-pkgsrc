@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/02/18 15:48:00 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:33 tv Exp $
 #
 
 DISTNAME=	gtkglarea-1.99.0
@@ -12,7 +12,6 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	OpenGL widget for the GTK+2 GUI toolkit
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 PKGCONFIG_OVERRIDE+=	gtkgl-2.0.pc.in
 GNU_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/08/06 16:31:09 uebayasi Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	gdb-5.3
 PKGNAME=	avr-gdb-5.3
@@ -10,7 +10,6 @@ MAINTAINER=	karlj@mdstud.chalmers.se
 COMMENT=	GNU gdb for Atmel AVR 8-bit RISC microcontrollers
 
 USE_GNU_TOOLS+=	make
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=avr --program-prefix=avr
 

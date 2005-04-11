@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/18 07:21:49 snj Exp $
+# $NetBSD: Makefile,v 1.8 2004/08/27 06:29:09 jlam Exp $
 #
 
 DISTNAME=	waste-source
@@ -24,7 +24,6 @@ NO_BIN_ON_FTP=          ${RESTRICTED}
 NO_SRC_ON_CDROM=        ${RESTRICTED}
 NO_BIN_ON_CDROM=        ${RESTRICTED}
 
-USE_BUILDLINK3=		yes
 
 MAKE_ENV+=	LDFLAGS="-L${BUILDLINK_PREFIX.pthread}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.pthread}/lib"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/08 13:04:14 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 02:44:26 jschauma Exp $
 #
 
 DISTNAME=		tcl8.3.4
@@ -23,7 +23,6 @@ GNU_CONFIGURE=		yes
 MAKE_ENV+=		TOUCH="${TOUCH}"
 TEST_TARGET=		test
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 INSTALL_TARGET=		install

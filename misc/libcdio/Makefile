@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:13:00 tv Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/05 14:23:18 drochner Exp $
 #
 
 DISTNAME=	libcdio-0.70
@@ -11,7 +11,6 @@ COMMENT=	CD-ROM access library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	libcdio.pc.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/12 17:36:40 seb Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:03 grant Exp $
 
 DISTNAME=	UNIVERSAL-moniker-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -15,7 +15,6 @@ DEPENDS+=	p5-Lingua-EN-Inflect>=1.88:../../devel/p5-Lingua-EN-Inflect
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/UNIVERSAL/moniker/.packlist
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 15:07:15 peter Exp $
 
 DISTNAME=	pfstat-1.7
 CATEGORIES=	sysutils net
@@ -8,7 +8,6 @@ MAINTAINER=	peter@pointless.nl
 HOMEPAGE=	http://www.benzedrine.cx/pfstat.html
 COMMENT=	Utility to render graphical statistics for PF
 
-USE_BUILDLINK3=	yes
 NO_CONFIGURE=	yes
 
 do-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2005/02/21 20:26:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.56 2005/02/21 22:37:03 kim Exp $
 
 DISTNAME=	screen-4.0.2
 PKGREVISION=	1
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NOT_FOR_PLATFORM=	Interix-*-* # user auth and username size fixes needed
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 INFO_FILES=		screen.info
 PLIST_SUBST=		DISTNAME=${DISTNAME}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/02/26 09:02:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.5 2004/05/07 01:14:50 xtraeme Exp $
 #
 
 DISTNAME=	aewm++-1.0.24
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://sapphire.sourceforge.net/
 COMMENT=	Fork of the popular minimal window manager aewm
 
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 
 .include "../../mk/bsd.pkg.mk"

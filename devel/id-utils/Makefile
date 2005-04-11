@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/10/03 00:13:28 tv Exp $
+# $NetBSD: Makefile,v 1.37 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	id-utils-3.2
 PKGREVISION=	5
@@ -13,7 +13,6 @@ CONFLICTS=	sh-utils>=2.0nb2
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 
 INFO_FILES=	id-utils.info

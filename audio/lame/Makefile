@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/02/21 20:26:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.46 2005/02/24 19:11:58 ben Exp $
 #
 
 DISTNAME=	lame-${VERS}
@@ -17,7 +17,6 @@ LICENSE=	lame-license
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 

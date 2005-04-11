@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2002/10/21 13:39:33 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/24 15:58:44 snj Exp $
 
 DISTNAME=		AfterStep-1.0
 PKGNAME=		fvwm-wharf-1.0
@@ -9,7 +9,6 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.afterstep.org/
 COMMENT=		Copy of AfterStep's Wharf compatible with fvwm2
 
-USE_BUILDLINK3=		YES
 USE_IMAKE=		YES
 # We don't want the '-a' flag
 XMKMF=			${XMKMF_CMD}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/08/17 13:16:53 seb Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/27 15:43:34 wiz Exp $
 #
 
 DISTNAME=		bos_1_1
@@ -13,7 +13,6 @@ COMMENT=		Invasion - Battle of Survival (real-time strategy game)
 
 DEPENDS+=		stratagus>=2.1:../../games/stratagus
 
-NO_BUILDLINK=		yes
 
 do-build:
 	${SED} -e "s|@LOCALBASE@|${LOCALBASE}|" \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/02/13 19:17:46 recht Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/29 14:15:37 wiz Exp $
 #
 
 DISTNAME=	shared-mime-info-0.16
@@ -12,7 +12,6 @@ COMMENT=	Core database of common types
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES

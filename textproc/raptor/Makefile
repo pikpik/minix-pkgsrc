@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/03 00:18:21 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/01/03 15:59:12 wiz Exp $
 #
 
 DISTNAME=	raptor-1.0.0
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.redland.opensource.ac.uk/raptor/
 COMMENT=	RDF Parser Toolkit written in C
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

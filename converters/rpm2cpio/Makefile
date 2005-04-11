@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/24 21:12:52 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/03 21:54:33 kristerw Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.iagora.com/~espel/hacks.html
 COMMENT=	Convert .rpm files for extraction with cpio, needs just perl
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	YES
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 REPLACE_PERL=	rpm2cpio

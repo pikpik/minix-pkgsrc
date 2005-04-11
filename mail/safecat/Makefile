@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/13 03:25:44 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2005/03/23 00:51:10 schmonz Exp $
 #
 
 DISTNAME=		safecat-1.12
@@ -9,7 +9,6 @@ MAINTAINER=		zuntum@NetBSD.org
 HOMEPAGE=		http://pobox.com/~lbudney/linux/software/safecat.html
 COMMENT=		Write data safely to a maildir
 
-USE_BUILDLINK3=		yes
 
 DJB_RESTRICTED=		NO
 DJB_BUILD_TARGETS=	install instcheck

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/28 23:18:19 reed Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/10 16:26:34 dillo Exp $
 #
 
 DISTNAME=	hugov31_unix_source
@@ -15,7 +15,6 @@ DISTFILE_WX=	hugov31_wxwin_source${EXTRACT_SUFX}
 #EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 DIST_SUBDIR=	hugo-3.1.01
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 WRKSRC=		${WRKDIR}/hugov3.1.0/hewx
 

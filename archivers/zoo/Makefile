@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/03 15:14:51 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/24 21:12:50 wiz Exp $
 
 DISTNAME=       zoo-2.10pl1
 PKGNAME=	zoo-2.10.1
@@ -13,7 +13,6 @@ LICENSE=	zoo-license
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	yes
 NO_CONFIGURE=	yes
 
 BUILD_TARGET=     bsdansi

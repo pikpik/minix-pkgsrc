@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/07 01:50:25 heinz Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/20 11:31:04 grant Exp $
 
 DISTNAME=		Mail-SPF-Query-1.996
 PKGNAME=                p5-${DISTNAME}
@@ -20,7 +20,6 @@ DEPENDS+=		p5-URI>=1.18:../../www/p5-URI
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Mail/SPF/Query/.packlist
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		# empty
 
 .include "../../lang/perl5/module.mk"

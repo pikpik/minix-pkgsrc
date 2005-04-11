@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/22 16:24:11 jmmv Exp $
 #
 
 DISTNAME=	gnome-doc-utils-0.1.3
@@ -14,7 +14,6 @@ DEPENDS+=	${PYPKGPREFIX}-libxml2>=2.6.16:../../textproc/py-libxml2
 DEPENDS+=	${PYPKGPREFIX}-libxslt>=1.1.12:../../textproc/py-libxslt
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		# empty
 USE_PKGLOCALEDIR=	YES
 

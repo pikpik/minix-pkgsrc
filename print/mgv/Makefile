@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/25 02:51:00 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:06 tv Exp $
 
 DISTNAME=		mgv-3.1.5
 PKGREVISION=		2
@@ -11,7 +11,6 @@ COMMENT=		Motif/LessTif user interface for Ghostscript
 
 GNU_CONFIGURE=		yes
 USE_X11BASE=		yes
-USE_BUILDLINK3=		yes
 
 CONFIGURE_ARGS+=	--with-motif-includes=${MOTIFBASE}/include
 CONFIGURE_ARGS+=	--with-motif-libs=${MOTIFBASE}/lib

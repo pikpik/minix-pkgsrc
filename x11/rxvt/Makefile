@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/02/23 04:09:51 minskim Exp $
+# $NetBSD: Makefile,v 1.45 2005/03/24 21:13:04 wiz Exp $
 
 DISTNAME=		rxvt-2.7.10
 PKGREVISION=		4
@@ -13,7 +13,6 @@ COMMENT=		Low memory usage xterm replacement that supports color
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES

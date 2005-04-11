@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/03/19 20:47:46 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/01 10:19:58 adam Exp $
 
 DISTNAME=	octave-forge-2004.11.16
 PKGREVISION=	1
@@ -11,7 +11,6 @@ COMMENT=	Extensions to Octave
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 GNU_CONFIGURE=		yes

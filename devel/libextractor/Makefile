@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/11/29 02:25:26 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/01/27 12:27:47 drochner Exp $
 #
 
 DISTNAME=		libextractor-0.3.11
@@ -10,7 +10,6 @@ MAINTAINER=		tv@duh.org
 HOMEPAGE=		http://ovmj.org/libextractor/
 COMMENT=		Metadata extractor for various file data types
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

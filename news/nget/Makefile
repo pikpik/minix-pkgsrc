@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:18:02 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/12 10:23:57 jmmv Exp $
 #
 
 DISTNAME=		nget-0.27
@@ -10,7 +10,6 @@ MAINTAINER=		joel@carnat.net
 HOMEPAGE=		http://nget.sourceforge.net/
 COMMENT=		Command line nntp file grabber
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make

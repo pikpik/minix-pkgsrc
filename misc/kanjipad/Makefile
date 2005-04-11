@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/10/03 00:12:59 tv Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/14 20:36:55 minskim Exp $
 #
 
 DISTNAME=		kanjipad-2.0.0
@@ -10,7 +10,6 @@ MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://fishsoup.net/software/kanjipad/
 COMMENT=		Japanese handwriting recognition
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PERL5=		build
 

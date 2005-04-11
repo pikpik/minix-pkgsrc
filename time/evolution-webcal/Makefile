@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/01 18:02:01 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/22 16:38:55 jmmv Exp $
 #
 
 DISTNAME=	evolution-webcal-2.2.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.novell.com/products/evolution/
 COMMENT=	GNOME URL handler for web-published iCal calendar files
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES

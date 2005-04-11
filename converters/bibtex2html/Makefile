@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/02/28 15:16:33 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/27 20:38:51 wiz Exp $
 
 DISTNAME=	bibtex2html-1.75
 CATEGORIES=	converters
@@ -11,7 +11,6 @@ COMMENT=	Collection of tools for translating from BibTeX to HTML
 BUILD_DEPENDS+=	hevea-[0-9]*:../../textproc/hevea
 DEPENDS+=	teTeX-bin-[0-9]*:../../print/teTeX-bin
 
-NO_BUILDLINK=	yes
 GNU_CONFIGURE=	yes
 USE_PERL5=	run
 

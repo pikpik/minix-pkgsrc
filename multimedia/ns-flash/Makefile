@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/05 18:54:53 jdolecek Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/07 11:48:45 tron Exp $
 
 CATEGORIES=		multimedia www
 MASTER_SITES=		http://fpdownload.macromedia.com/get/shockwave/flash/english/${DISTUNAME}/${FLASH_VERS}/
@@ -43,7 +43,6 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-NO_BUILDLINK=		yes
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
 CHECK_SHLIBS=		no

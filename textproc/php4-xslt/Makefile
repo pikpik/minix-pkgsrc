@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2004/10/31 21:28:51 jdolecek Exp $
+# $NetBSD: Makefile,v 1.14 2004/11/05 21:44:44 jdolecek Exp $
 
 MODNAME=		xslt
 CATEGORIES+=		textproc
 PKGREVISION=		# empty
 COMMENT=		PHP4 extension for XSLT functions (Sablotron backend)
 
-USE_BUILDLINK3=		YES
 
 CONFIGURE_ARGS+=	--enable-${MODNAME}
 CONFIGURE_ARGS+=	--with-${MODNAME}-sablot=${BUILDLINK_PREFIX.sablotron}

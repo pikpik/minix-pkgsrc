@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/02/14 14:52:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.25 2005/04/06 18:24:23 wiz Exp $
 #
 
 DISTNAME=	docbook-xsl-1.68.1
@@ -13,7 +13,6 @@ COMMENT=	Docbook XSL modular stylesheet
 
 DEPENDS=	docbook-xml>=4.2:../../textproc/docbook-xml
 
-USE_BUILDLINK3=	YES
 USE_LANGUAGES=	# empty
 NO_BUILD=	YES
 NO_CONFIGURE=	YES

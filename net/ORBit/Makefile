@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2005/01/24 22:13:52 tv Exp $
+# $NetBSD: Makefile,v 1.112 2005/03/09 15:30:36 jmmv Exp $
 
 DISTNAME=	ORBit-0.5.17
 CATEGORIES=	net
@@ -11,7 +11,6 @@ COMMENT=	High-performance CORBA ORB with support for the C language
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 
 USE_GNU_TOOLS+=		lex make yacc
 USE_LIBTOOL=		YES

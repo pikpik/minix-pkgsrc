@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/10/14 17:04:35 salo Exp $
+# $NetBSD: Makefile,v 1.10 2005/02/17 10:52:46 salo Exp $
 #
 
 DISTNAME=	libmatroska-0.7.5
@@ -12,7 +12,6 @@ COMMENT=	Extensible open standard Audio/Video container format
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_LANGUAGES=	c++
 

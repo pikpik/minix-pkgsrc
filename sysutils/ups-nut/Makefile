@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/08/03 05:21:50 martti Exp $
+# $NetBSD: Makefile,v 1.33 2004/12/28 02:47:50 reed Exp $
 #
 
 DISTNAME=		nut-2.0.0
@@ -15,7 +15,6 @@ MAINTAINER=		lukem@NetBSD.org
 HOMEPAGE=		http://www.networkupstools.org/
 COMMENT=		Network UPS Tools
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${NUT_CONFDIR}			\

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/24 21:25:00 nathanw Exp $
 
 DISTNAME=	gaim-otr-2.0.1
 CATEGORIES=	chat security
@@ -8,7 +8,6 @@ MAINTAINER=	nathanw@NetBSD.org
 HOMEPAGE=	http://www.cypherpunks.ca/otr/
 COMMENT=	Plugin for gaim to add OTR (Off-The-Record) encryption
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS=	make
 
 .include "../../chat/libotr/buildlink3.mk"

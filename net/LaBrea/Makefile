@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/01/28 23:35:59 adrianp Exp $
+# $NetBSD: Makefile,v 1.14 2005/02/09 20:49:02 adrianp Exp $
 #
 
 DISTNAME=	labrea-2.5-stable-1
@@ -12,7 +12,6 @@ COMMENT=	Builds tarpits/honeypots for scanners
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_PKGINSTALL=	YES
 

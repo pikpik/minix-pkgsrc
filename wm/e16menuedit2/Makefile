@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/07 16:49:14 agc Exp $
 #
 
 DISTNAME=		e16menuedit2-0.0.1
@@ -14,7 +14,6 @@ DEPENDS+=		enlightenment-0.16.*:../../wm/enlightenment
 BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes

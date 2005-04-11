@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/11 17:55:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:09 tv Exp $
 #
 
 DISTNAME=	sidplay-base-1.0.9
@@ -12,7 +12,6 @@ MAINTAINER=	pooka@NetBSD.org
 HOMEPAGE=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/
 COMMENT=	Tools for playing sidtunes
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++

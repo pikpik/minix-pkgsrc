@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2005/03/10 14:11:23 tv Exp $
+# $NetBSD: Makefile,v 1.47 2005/03/31 11:08:16 adam Exp $
 
 DISTNAME=       xpaint-2.7.6
 CATEGORIES=	graphics x11
@@ -10,7 +10,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://sf-xpaint.sourceforge.net/
 COMMENT=	Simple paint program
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_IMAKE=      	yes
 

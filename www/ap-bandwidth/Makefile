@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/08 15:19:18 grant Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/24 11:52:30 wiz Exp $
 #
 
 DISTNAME=	mod_bandwidth.c
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.cohprog.com/mod_bandwidth.html
 COMMENT=	Apache module for bandwidth management
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	yes
 
 APACHE_MODULE_NAME=	mod_bandwidth.so
 

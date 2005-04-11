@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/09/26 11:31:12 kristerw Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:00 grant Exp $
 
 DISTNAME=	IO-Digest-0.10
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ DEPENDS+=	p5-PerlIO-via-dynamic-[0-9]*:../../devel/p5-PerlIO-via-dynamic
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/IO/Digest/.packlist
 
 .include "../../lang/perl5/module.mk"

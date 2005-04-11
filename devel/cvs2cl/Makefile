@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/25 05:30:56 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/11/25 15:31:47 wiz Exp $
 #
 
 DISTNAME=	cvs2cl-2.58
@@ -12,7 +12,6 @@ COMMENT=	CVS-log-message-to-ChangeLog conversion script
 
 EXTRACT_CMD=	${ECHO}
 WRKSRC=		${WRKDIR}
-NO_BUILDLINK=	YES
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
 USE_PERL5=	# defined

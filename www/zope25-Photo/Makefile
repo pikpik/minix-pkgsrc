@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/05/19 14:05:22 adam Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:18:27 tv Exp $
 
 DISTNAME=	Photo-1.2.3
 PKGNAME=	zope25-Photo-1.2.3
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.zope.org/Members/rbickers/Photo
 COMMENT=	Photo object and Photo Folder object
 
 ZOPE_COPYPRODUCT= zope-std-copyproduct-short
-USE_BUILDLINK3=		yes
 
 .include "../../graphics/py-imaging/buildlink3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"

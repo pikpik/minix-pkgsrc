@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/04 23:09:06 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/18 20:58:30 jlam Exp $
 #
 
 DISTNAME=	aget-0.4
@@ -11,7 +11,6 @@ COMMENT=	Multithreaded HTTP download accelerator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 NO_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"

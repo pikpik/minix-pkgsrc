@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/14 19:38:19 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/28 02:47:41 reed Exp $
 #
 
 DISTNAME=		mu-conference-0.6.0
@@ -17,9 +17,7 @@ WRKSRC=			${WRKDIR}/jcr-0.1.2
 SUBWRKSRC=		${WRKSRC}/${DISTNAME}/src
 XMLCONFIG=		${WRKDIR}/${DISTNAME}/muc-jcr.xml
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=         yes
 USE_PKGINSTALL=		yes
 
 PKG_SYSCONFSUBDIR=      jabberd

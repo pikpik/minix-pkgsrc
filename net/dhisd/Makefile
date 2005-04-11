@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/21 20:53:18 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2005/02/21 20:26:13 hubertf Exp $
 #
 
 DISTNAME=	dhisd-5.1
@@ -9,7 +9,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dhis.org/
 COMMENT=	DynDNS server
 
-USE_BUILDLINK3=	yes
 
 do-install:
 		${INSTALL_DATA_DIR} ${PREFIX}/share/examples/dhisd

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:00 tv Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/03 15:15:06 wiz Exp $
 #
 
 DISTNAME=		tightvnc-1.2.9
@@ -15,7 +15,6 @@ CONFLICTS=		vnc-[0-9]*
 
 WRKSRC=			${WRKDIR}/vnc_unixsrc
 CRYPTO=			yes
-USE_BUILDLINK3=		yes
 USE_IMAKE=		yes
 NO_INSTALL_MANPAGES=	yes
 USE_PERL5=		yes

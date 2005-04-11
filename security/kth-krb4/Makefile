@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/09/05 18:44:56 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2004/10/03 00:18:09 tv Exp $
 #
 
 DISTNAME=		krb4-1.2.1
@@ -16,7 +16,6 @@ CONFLICTS+=		libdes-[0-9]*
 
 CRYPTO=			yes
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/11 06:48:01 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:14:48 tv Exp $
 #
 
 DISTNAME=	aview-1.3.0rc1
@@ -18,7 +18,6 @@ PLIST_SRC=	${WRKDIR}/PLIST
 WRKSRC=		${WRKDIR}/aview-1.3.0
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_BUILDLINK3=	yes
 USE_PKGINSTALL=	yes
 USE_X11=	yes
 

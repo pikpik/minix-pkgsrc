@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:07 grant Exp $
+# $NetBSD: Makefile,v 1.15 2005/03/24 21:13:00 wiz Exp $
 
 DISTNAME=		Crypt-CBC-2.08
 PKGNAME=		p5-${DISTNAME}
@@ -16,7 +16,6 @@ DEPENDS+=		p5-Digest-MD5>=2.0:../../security/p5-Digest-MD5
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Crypt/CBC/.packlist
 

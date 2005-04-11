@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/22 08:24:29 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/31 19:47:59 minskim Exp $
 #
 
 DISTNAME=	gnustep-objc-1.3.0
@@ -9,7 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Objective-C runtime
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 MAKEFILE=		GNUmakefile
 NO_CONFIGURE=		YES

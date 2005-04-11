@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/12/04 04:09:21 taca Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/20 11:30:56 grant Exp $
 #
 
 DISTNAME=	Jcode-0.88
@@ -16,7 +16,6 @@ DEPENDS+=	p5-MIME-Base64>=2.1:../../converters/p5-MIME-Base64
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Jcode/.packlist
 
 pre-configure:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/12/22 21:24:44 adrianp Exp $
+# $NetBSD: Makefile,v 1.35 2005/01/19 10:01:03 drochner Exp $
 
 DISTNAME=	xpdf-3.00
 PKGNAME=	${DISTNAME}pl3
@@ -21,7 +21,6 @@ DEPENDS+=	ghostscript-fonts-[0-9]*:../../fonts/ghostscript-fonts
 
 CONFLICTS=	xpdf-crypto-[0-9]*
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_X11=		YES
 USE_LANGUAGES=		c c++

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/13 18:33:44 tron Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/04 23:09:07 jlam Exp $
 
 DISTNAME=		kphone-4.0.5
 CATEGORIES=		net comms
@@ -10,7 +10,6 @@ COMMENT=		Graphical Voice Over Internet (VoIP) phone
 
 WRKSRC=			${WRKDIR}/kphone
 
-USE_BUILDLINK3=		yes
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes

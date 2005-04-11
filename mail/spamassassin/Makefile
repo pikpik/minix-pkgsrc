@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2005/01/15 21:44:55 schmonz Exp $
+# $NetBSD: Makefile,v 1.53 2005/02/13 21:20:25 heinz Exp $
 
 DISTNAME=	Mail-SpamAssassin-${SPAMASSASSIN_VERSION}
 PKGNAME=	spamassassin-${SPAMASSASSIN_VERSION}
@@ -33,7 +33,6 @@ WRKSRC=			${WRKDIR}/${DISTNAME}
 
 PERL5_REQD+=   		5.6.1	# MakeMaker >= 5.45 needed
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 PKG_SYSCONFSUBDIR=	spamassassin
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/10/15 14:50:06 tv Exp $
+# $NetBSD: Makefile,v 1.28 2004/11/02 20:34:03 wiz Exp $
 #
 
 DISTNAME=		cassowary-0.60
@@ -12,7 +12,6 @@ COMMENT=		Constraint-solving toolkit for linear equalities and inequalities
 
 BUILD_DEPENDS+=		bison>=1.34:../../devel/bison
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		# defined
 

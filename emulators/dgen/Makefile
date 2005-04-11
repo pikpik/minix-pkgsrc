@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/02/20 17:14:40 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/27 15:43:33 wiz Exp $
 #
 
 DISTNAME=	dgen-sdl-1.23
@@ -17,7 +17,6 @@ DEPENDS+=	nasm-[0-9]*:../../devel/nasm
 USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	yes
 USE_X11=	yes
-USE_BUILDLINK3=	yes
 
 CONFIGURE_ARGS+=	--with-extra-opt
 

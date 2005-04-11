@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/03/22 16:18:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2005/03/26 16:20:27 jmmv Exp $
 #
 
 DISTNAME=	evolution-data-server-1.2.1
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=		bison>=1.875:../../devel/bison
 BUILDLINK_DEPENDS.libsoup-devel+=	libsoup-devel>=2.2.2
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make yacc
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/14 20:36:55 minskim Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/23 10:07:34 rxg Exp $
 #
 
 DISTNAME=	rox-2.2.0
@@ -17,7 +17,6 @@ CONFLICTS=	rox-base-[0-9]*
 WRKSRC=		${WRKDIR}/${DISTNAME}/ROX-Filer/src
 DIST_SUBDIR=	rox
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		APP_DIR=${WRKDIR}/${DISTNAME}/ROX-Filer

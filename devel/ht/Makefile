@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/08/30 14:44:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:28 tv Exp $
 #
 
 DISTNAME=	ht-0.8.0
@@ -12,7 +12,6 @@ HOMEPAGE=	http://hte.sourceforge.net/
 COMMENT=	Viewer, editor and analyzer for text, binary and executable files
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		lex yacc
 USE_NCURSES=		# missing WA_BOLD and WA_NORMAL
 

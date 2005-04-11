@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/12/03 15:14:57 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2005/03/07 09:48:37 uebayasi Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -11,7 +11,6 @@ COMMENT=		The QT-Enhanced X11 version of NetHack
 
 DEPENDS+=		nethack-lib-${NETHACK_VERSION}:../nethack-lib
 
-USE_BUILDLINK3=		yes
 USE_X11=		# defined
 
 BUILD_TARGET=		x11tiles nethack

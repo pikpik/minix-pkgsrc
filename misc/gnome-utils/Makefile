@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2004/10/15 14:50:07 tv Exp $
+# $NetBSD: Makefile,v 1.78 2004/11/30 18:26:40 wiz Exp $
 
 DISTNAME=		gnome-utils-1.4.1.2
 PKGREVISION=		12
@@ -19,7 +19,6 @@ CONFLICTS=		coreutils<=5.0
 USE_DIRS+=		gnome1-1.5
 USE_GNU_TOOLS+=		make
 USE_X11BASE=		YES
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 
 GNU_CONFIGURE=		YES

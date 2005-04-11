@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/05/29 23:45:13 recht Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/31 00:25:14 recht Exp $
 #
 
 DISTNAME=	automake-1.4-p6
@@ -16,7 +16,6 @@ CONFLICTS=	automake<1.6
 
 #PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ENV=		PERL=${PERL5}
 _STRIPFLAG_INSTALL=	# none

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/04/11 17:10:25 snj Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/07 11:54:36 wiz Exp $
 #
 
 DISTNAME=	wmtime-1.0b2
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Time/Date applet for WindowMaker
 
 WRKSRC=		${WRKDIR}/wmtime.app/wmtime
-USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 post-extract:

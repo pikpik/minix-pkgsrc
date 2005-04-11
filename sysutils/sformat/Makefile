@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/02 10:08:03 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/21 20:26:14 hubertf Exp $
 #
 
 DISTNAME=		sformat-3.5
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "../../mk/bsd.prefs.mk"
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 TBL?=			tbl
 

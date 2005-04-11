@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/02/25 10:21:15 adrianp Exp $
+# $NetBSD: Makefile,v 1.51 2005/03/02 21:42:48 wiz Exp $
 
 DISTNAME=	cyrus-imapd-2.2.12
 CATEGORIES=	mail
@@ -9,7 +9,6 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://asg.web.cmu.edu/cyrus/imapd/
 COMMENT=	Cyrus IMAP server
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 PERL5_CONFIGURE=	no

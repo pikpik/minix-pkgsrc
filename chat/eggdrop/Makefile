@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/02/13 22:38:53 zuntum Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/04 21:05:04 adrianp Exp $
 
 DISTNAME=	eggdrop1.6.17
 PKGNAME=	eggdrop-1.6.17
@@ -10,7 +10,6 @@ MAINTAINER=     tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.eggheads.org/
 COMMENT=	IRC robot with TCL scripting and multi-channel ability
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 BUILD_DEFS+=		USE_INET6

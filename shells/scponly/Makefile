@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/28 02:27:29 snj Exp $
 
 DISTNAME=	scponly-4.0
 CATEGORIES=	shells security
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.sublimation.org/scponly/
 COMMENT=	Tiny shell that only permits scp and sftp
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 USE_PKGINSTALL=		yes

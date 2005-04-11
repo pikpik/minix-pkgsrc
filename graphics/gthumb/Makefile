@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/01/04 10:03:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/24 16:14:54 drochner Exp $
 
 DISTNAME=		gthumb-2.6.3
 CATEGORIES=		graphics
@@ -8,7 +8,6 @@ MAINTAINER=		minskim@NetBSD.org
 HOMEPAGE=		http://gthumb.sourceforge.net/
 COMMENT=		Image viewer and browser for the GNOME Desktop
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1 gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/08 02:36:37 snj Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:14:44 tv Exp $
 #
 
 DISTNAME=	glchess-0.4.7
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://glchess.sourceforge.net/
 COMMENT=	3D chess interface
 
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 INSTALL_DIRS=	${WRKSRC}/src ${WRKSRC}/man ${WRKSRC}/textures

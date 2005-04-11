@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/12/28 02:47:47 reed Exp $
+# $NetBSD: Makefile,v 1.12 2004/12/31 15:15:31 jlam Exp $
 #
 
 DISTNAME=	openvpn-2.0_rc1
@@ -10,7 +10,6 @@ MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://openvpn.sourceforge.net/
 COMMENT=	Easy-to-use SSL VPN daemon
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes

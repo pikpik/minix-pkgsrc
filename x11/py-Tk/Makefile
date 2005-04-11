@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/12/24 14:23:43 darcy Exp $
+# $NetBSD: Makefile,v 1.33 2005/01/23 20:41:49 recht Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-Tk-0
@@ -9,7 +9,6 @@ MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/topics/tkinter/
 COMMENT=	Tkinter -- Python interface to Tcl/Tk
 
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/_tkinter.c \

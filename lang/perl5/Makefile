@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2005/03/23 16:52:01 jlam Exp $
+# $NetBSD: Makefile,v 1.91 2005/03/24 02:33:08 jlam Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -22,7 +22,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 BUILDING_PERL5=		yes
 PERL5_CONFIGURE=	no
 
-USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde

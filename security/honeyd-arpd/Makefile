@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/28 02:47:49 reed Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/02 23:00:32 adrianp Exp $
 #
 
 DISTNAME=	arpd-0.2
@@ -15,7 +15,6 @@ COMMENT=	ARP daemon for honeyd
 USE_PKGINSTALL= yes
 RCD_SCRIPTS=	honeydarpd
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 
 CONFIGURE_ARGS+=    --with-libevent=${BUILDLINK_PREFIX.libevent}
 

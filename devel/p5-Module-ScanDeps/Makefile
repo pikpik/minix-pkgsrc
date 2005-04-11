@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/20 11:31:01 grant Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/31 22:42:31 seb Exp $
 #
 
 DISTNAME=	Module-ScanDeps-0.51
@@ -11,7 +11,6 @@ MAINTAINER=	seb@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Module-ScanDeps/
 COMMENT=	Perl 5 module to recursively scan Perl code for dependencies
 
-USE_BUILDLINK3=	YES
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Module/ScanDeps/.packlist
 

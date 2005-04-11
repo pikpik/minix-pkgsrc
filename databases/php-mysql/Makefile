@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/31 21:07:14 jdolecek Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/05 17:11:39 jdolecek Exp $
 
 MODNAME=		mysql
 CATEGORIES+=		databases
@@ -7,7 +7,6 @@ COMMENT=		PHP extension for MySQL databases
 
 MAINTAINER=		tech-pkg@NetBSD.org
 
-USE_BUILDLINK3=		yes
 USE_PHP_EXT_PATCHES=	yes
 
 EVAL_PREFIX+=		MYSQLDIR=mysql-client

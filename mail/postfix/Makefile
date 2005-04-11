@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2005/03/28 08:53:07 jlam Exp $
+# $NetBSD: Makefile,v 1.160 2005/04/04 18:13:32 martti Exp $
 
 DISTNAME=	postfix-2.2.2
 CATEGORIES=	mail
@@ -13,7 +13,6 @@ DIST_SUBDIR=	postfix
 CONFLICTS+=	sendmail-[0-9]* fastforward>=0.51nb2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-USE_BUILDLINK3=		yes
 
 .include "../../mk/bsd.prefs.mk"
 

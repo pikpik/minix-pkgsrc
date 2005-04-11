@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/05/30 02:19:16 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:17:49 tv Exp $
 #
 
 DISTNAME=	adns-1.1
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.chiark.greenend.org.uk/~ian/adns/
 COMMENT=	Asynchronous-capable DNS client library and utilities
 
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES

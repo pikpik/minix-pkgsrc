@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/11/28 14:48:36 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/22 09:21:45 minskim Exp $
 #
 
 DISTNAME=	hicolor-icon-theme-0.5
@@ -12,7 +12,6 @@ COMMENT=	Standard icon theme called hicolor
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	YES
-NO_BUILDLINK=	YES
 NO_BUILD=	YES
 USE_DIRS+=	xdg-1.1
 USE_GNU_TOOLS+=	make

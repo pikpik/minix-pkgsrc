@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/09/30 12:43:57 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2004/10/15 14:41:11 tv Exp $
 
 DISTNAME=	createbuildlink-3.8
 CATEGORIES=	pkgtools sysutils
@@ -14,7 +14,6 @@ WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	# empty
 USE_LANGUAGES=	# empty
 NO_CHECKSUM=	yes
-NO_BUILDLINK=	yes
 NO_BUILD=	yes
 EXTRACT_CMD=	${ECHO}
 

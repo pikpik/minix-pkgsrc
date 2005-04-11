@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/20 20:22:51 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/20 11:31:11 grant Exp $
 
 DISTNAME=	XML-XSLT-0.48
 PKGNAME=	p5-${DISTNAME}
@@ -17,7 +17,6 @@ DEPENDS+=	p5-XML-DOM>=1.25:../../textproc/p5-XML-DOM
 DEPENDS+=	p5-XML-Parser>=2.23:../../textproc/p5-XML-Parser
 DEPENDS+=	p5-libwww-[0-9]*:../../www/p5-libwww
 
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/XSLT/.packlist
 

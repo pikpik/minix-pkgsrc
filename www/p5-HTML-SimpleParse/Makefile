@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/04/25 06:03:51 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/20 11:31:13 grant Exp $
 
 DISTNAME=	HTML-SimpleParse-0.12
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Perl5 module implementing a bare-bones HTML parser
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/SimpleParse/.packlist
 

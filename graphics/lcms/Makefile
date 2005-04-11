@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/01/17 12:11:46 adam Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:55 wiz Exp $
 
 DISTNAME=	lcms-1.14
 CATEGORIES=	graphics
@@ -11,7 +11,6 @@ COMMENT=	Light Color Management System -- a color management library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 TEST_TARGET=		check

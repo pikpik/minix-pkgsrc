@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/20 21:29:10 rh Exp $
 #
 
 DISTNAME=	pthread-sem-1.0
@@ -8,7 +8,6 @@ MASTER_SITES=	http://www.cit.gu.edu.au/teaching/2105CIT/software/
 MAINTAINER=	rh@NetBSD.org
 COMMENT=	Semaphore implementation for (PTH) pthreads
 
-USE_BUILDLINK3=	yes
 PTHREAD_OPTS+=	require
 
 TEST_TARGET=	test

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/05/09 06:48:40 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:13 grant Exp $
 #
 
 DISTNAME=		eperl-2.2.14
@@ -15,7 +15,6 @@ COMMENT=		Perl5/Apache module of an ePerl text parser
 DEPENDS+=		eperl-2.2.14:../../textproc/eperl
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/mod/Apache
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Apache/ePerl/.packlist
 
 .include "../../lang/perl5/module.mk"

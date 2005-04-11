@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/06/27 19:15:37 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/02/23 04:09:51 minskim Exp $
 #
 
 DISTNAME=		cdrdao-1.1.9
@@ -27,7 +27,6 @@ CONFIGURE_ARGS+=	--without-posix-threads
 #override ARCH to avoid picking up a bad ${ARCH} during the build
 MAKE_ENV+=      ARCH=""
 
-USE_BUILDLINK3=	yes
 
 post-configure:
 	cd ${WRKSRC}/scsilib/RULES ; \

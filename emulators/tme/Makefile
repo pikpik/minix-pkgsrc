@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:14:41 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/15 11:54:11 tv Exp $
 #
 
 DISTNAME=		tme-0.2
@@ -10,7 +10,6 @@ MAINTAINER=		skrll@NetBSD.org
 HOMEPAGE=		http://theory.lcs.mit.edu/~fredette/tme/
 COMMENT=		The Machine Emulator
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/12/07 15:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2004/12/07 21:28:20 tron Exp $
 
 DISTNAME= 	tcp_wrappers_7.6-ipv6.1
 PKGNAME=	tcp_wrappers-7.6.1
@@ -12,7 +12,6 @@ COMMENT=	Monitor and filter incoming requests for network services
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 
 BUILD_DEFS+=		USE_INET6

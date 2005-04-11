@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/11/13 21:28:27 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	mpack-1.5-src
 PKGNAME=	mpack-1.5
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	External MIME packer/unpacker
 
 WRKSRC=		${WRKDIR}/mpack
-USE_BUILDLINK3=	yes
 
 LDFLAGS.SunOS+=	-lsocket -lnsl
 

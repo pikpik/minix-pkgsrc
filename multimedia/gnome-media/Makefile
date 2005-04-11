@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/24 22:41:40 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:02 tv Exp $
 
 DISTNAME=		gnome-media-1.2.3
 PKGREVISION=		12
@@ -12,7 +12,6 @@ COMMENT=		Set of audio/multimedia applications for GNOME
 BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome1-1.5
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES

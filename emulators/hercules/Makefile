@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/22 08:36:04 grant Exp $
+# $NetBSD: Makefile,v 1.15 2004/05/29 23:32:19 kristerw Exp $
 
 DISTNAME=		hercules-2.11
 PKGREVISION=		2
@@ -11,7 +11,6 @@ COMMENT=		S370 emulator
 
 DEPENDS+=		hercules-images-[0-9]*:../../emulators/hercules-images
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 MAKEFILE=		makefile
 MAKE_ENV+=		HOST_ARCH=${MACHINE_ARCH}

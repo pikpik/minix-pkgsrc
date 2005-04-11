@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:15:02 tv Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/14 18:43:19 tv Exp $
 
 DISTNAME=		oo2c_${BITS}-2.0.11
 PKGNAME=		oo2c-2.0.11
@@ -21,7 +21,6 @@ BITS=64
 BITS=32
 .endif
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

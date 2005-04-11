@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/05/02 02:27:59 heinz Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:08 grant Exp $
 #
 
 DISTNAME=		Digest-SHA1-2.10
@@ -18,7 +18,6 @@ CONFLICTS+=		p5-Digest-MD5<=2.12
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Digest/SHA1/.packlist
 
 .include "../../lang/perl5/module.mk"

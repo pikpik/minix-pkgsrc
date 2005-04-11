@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/13 06:05:47 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	epydoc-2.1
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://epydoc.sourceforge.net/
 COMMENT=	Python documentation framework
 
-USE_BUILDLINK3=     yes
 PYDISTUTILSPKG=     yes
 
 EPYDOCDIR=	${PREFIX}/share/doc/epydoc

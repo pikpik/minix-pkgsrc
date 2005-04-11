@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/11/23 17:07:35 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/01/01 04:20:38 wiz Exp $
 
 DISTNAME=		xquote-2.6.10
 CATEGORIES=		finance x11
@@ -8,7 +8,6 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://xinvest.sunsite.dk/xquote.html
 COMMENT=		WWW ticker symbol quote retrieval program
 
-USE_BUILDLINK3=		YES
 USE_IMAKE=		YES
 NO_INSTALL_MANPAGES=	YES
 

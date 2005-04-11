@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/11/20 16:02:53 uebayasi Exp $
+# $NetBSD: Makefile,v 1.17 2004/12/28 02:47:50 reed Exp $
 #
 
 DISTNAME=	ndtpd-3.1.5
@@ -12,7 +12,6 @@ COMMENT=	Server for accessing CD-ROM books with NDTP
 
 PKG_INSTALLATION_TYPES=	pkgviews overwrite
 
-USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES

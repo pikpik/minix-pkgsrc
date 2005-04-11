@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/04 13:40:38 shannonjr Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/02 14:59:35 shannonjr Exp $
 #
 
 DISTNAME=		dirmngr-0.9.0
@@ -19,7 +19,6 @@ PKG_GROUPS=		${DIRMNGR_GROUP}
 PKG_USERS=		${DIRMNGR_USER}:${DIRMNGR_GROUP}::pseudo\\ user:${VARBASE}/dirmngr:
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		awk
 USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes

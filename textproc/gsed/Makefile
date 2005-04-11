@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:18:19 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/01 23:10:47 dmcmahill Exp $
 #
 
 DISTNAME=	sed-4.1.1
@@ -13,7 +13,6 @@ COMMENT=	GNU implementation of sed, the POSIX stream editor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIG_STATUS_OVERRIDE=	# empty

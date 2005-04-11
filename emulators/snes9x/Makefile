@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/07/12 19:27:05 cube Exp $
+# $NetBSD: Makefile,v 1.21 2004/12/05 13:56:11 wiz Exp $
 
 DISTNAME=		s9xs139
 PKGNAME=		snes9x-1.39
@@ -14,7 +14,6 @@ COMMENT=		Super Nintendo Entertainment System (SNES) emulator
 BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 
 WRKSRC=			${WRKDIR}/release
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 PTHREAD_OPTS=		require

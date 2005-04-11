@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/10 03:08:58 snj Exp $
+# $NetBSD: Makefile,v 1.17 2004/10/03 00:14:44 tv Exp $
 
 DISTNAME=	frotz-2.43
 PKGREVISION=	2
@@ -14,7 +14,6 @@ MAINTAINER=	seebs@plethora.net
 HOMEPAGE=	http://www.cs.csubak.edu/~dgriffi/proj/frotz/
 COMMENT=	Curses-based interpreter for Infocom-compatible games
 
-USE_BUILDLINK3=		yes
 
 # setscrreg()
 INCOMPAT_CURSES=	NetBSD-1.5-* NetBSD-1.5.*-* NetBSD-1.5[A-V]-*

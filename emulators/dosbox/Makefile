@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/11/22 14:12:29 adam Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:33 wiz Exp $
 
 DISTNAME=	dosbox-0.63
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	cube@cubidou.net
 HOMEPAGE=	http://dosbox.sourceforge.net/
 COMMENT=	Multi-platform DOS emulator using SDL
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 

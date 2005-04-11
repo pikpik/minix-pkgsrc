@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/09/10 15:43:51 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2004/10/03 00:18:38 tv Exp $
 #
 
 DISTNAME=	qtarch-2.2-1
@@ -13,7 +13,6 @@ HOMEPAGE=	http://qtarch.sourceforge.net/
 COMMENT=	Graphical dialog editor for the Qt widget set
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 USE_GNU_TOOLS+=	make
 

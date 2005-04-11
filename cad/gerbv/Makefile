@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: Makefile,v 1.24 2005/03/01 12:07:52 dmcmahill Exp $
 #
 
 DISTNAME=	gerbv-1.0.1
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES= overwrite pkgviews
 
 CONFIGURE_ARGS+=	--enable-exportpng
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
 .include "../../graphics/gdk-pixbuf/buildlink3.mk"

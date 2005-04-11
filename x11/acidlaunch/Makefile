@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/03 00:18:28 tv Exp $
+# $NetBSD: Makefile,v 1.12 2004/12/28 23:18:15 reed Exp $
 #
 
 DISTNAME=	acidlaunch-0.5
@@ -11,7 +11,6 @@ HOMEPAGE=	http://linuxgamers.net/infoPage.php?page=acidlaunch
 COMMENT=	Small, light-weight app launcher
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 CONFIGURE_ARGS+=	--disable-xmltest
 CONFIGURE_ARGS+=	--disable-gdk_pixbuftest
 

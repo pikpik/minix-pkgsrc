@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/04/12 21:16:37 snj Exp $
+# $NetBSD: Makefile,v 1.25 2004/10/03 00:17:55 tv Exp $
 #
 
 DISTNAME=		linc-1.1.1
@@ -13,7 +13,6 @@ COMMENT=		Network client/server library
 
 CONFLICTS=		ORBit2>=2.8
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

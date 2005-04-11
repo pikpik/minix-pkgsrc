@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/07/21 21:28:41 salo Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:01 tv Exp $
 #
 
 DISTNAME=       yrolo-1.1
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.muquit.com/muquit/software/yrolo/yrolo.html
 COMMENT=	Contact management software
 
 WRKSRC=		${WRKDIR}/yrolo1.1
-USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 
 .include "../../mk/motif.buildlink3.mk"

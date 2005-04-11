@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/08 20:27:14 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/09 23:37:41 minskim Exp $
 #
 
 DISTNAME=	tclticker-1.1
@@ -12,7 +12,6 @@ DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 PKG_INSTALLATINO_TYPES=	overwrite pkgviews
 
-NO_BUILDLINK=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/18 18:13:53 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/08 15:15:17 salo Exp $
 #
 
 DISTNAME=		silc-toolkit-0.9.13
@@ -16,7 +16,6 @@ COMMENT=                Secure Internet Live Conferencing (SILC) protocol Toolki
 
 CONFLICTS+=		silc-client<1.0.1nb1
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	libtool */*/*/libtool

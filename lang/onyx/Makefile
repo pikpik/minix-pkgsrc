@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/06/21 08:48:41 mrg Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:15:02 tv Exp $
 
 DISTNAME=	onyx-${VERS}
 PKGREVISION=	1
@@ -15,7 +15,6 @@ BUILD_DEPENDS+=	cook-[0-9]*:../../devel/cook
 # needs EL_CLIENTDATA in /usr/include/histedit.h
 ONLY_FOR_PLATFORM=	NetBSD-1.5[YZ]*-* NetBSD-1.6*-* NetBSD-1.7*-* NetBSD-[2-9]*
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-pcre-prefix=${BUILDLINK_PREFIX.pcre}
 

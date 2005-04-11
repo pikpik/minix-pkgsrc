@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/09 14:15:22 hubertf Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/03 15:14:57 wiz Exp $
 #
 
 .include "../../graphics/freetype-lib/Makefile.common"
@@ -10,7 +10,6 @@ MAINTAINER=		bernhard@SDG.de,hubertf@NetBSD.org
 HOMEPAGE=		http://www.freetype.org/
 COMMENT=		TrueType to TeX PK font converter
 
-USE_BUILDLINK3=		yes
 
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--prefix=${LOCALBASE}

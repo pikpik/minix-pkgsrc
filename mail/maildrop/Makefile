@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/11/15 17:54:49 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/02/18 22:12:53 jlam Exp $
 
 DISTNAME=	maildrop-1.8.0
 PKGBASE=	${DISTNAME:C/-[^-]*$//}
@@ -14,7 +14,6 @@ DEPENDS+=	courier-maildir>=0.48.2:../../mail/courier-maildir
 
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 PKG_SUPPORTED_OPTIONS+=	authlib

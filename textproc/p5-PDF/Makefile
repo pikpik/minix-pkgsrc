@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/05/04 23:46:36 snj Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/20 11:31:09 grant Exp $
 #
 
 DISTNAME=	PDF-111
@@ -14,7 +14,6 @@ HOMEPAGE=	http://www.geocities.com/CapeCanaveral/Hangar/4794/
 COMMENT=	Perl5 module for pdf document manipulation
 
 WRKSRC=			${WRKDIR}/PDF
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/PDF/.packlist
 
 .include "../../lang/perl5/module.mk"

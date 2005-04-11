@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/03/02 13:38:59 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/03/19 17:48:28 tv Exp $
 #
 
 DISTNAME=		mod_aolserver-1.1
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.arsdigita.com/acs-repository/one-version?version_id=601
 COMMENT=		Module that emulates AOLServer in Apache
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 
 CONFIGURE_ARGS+=	--with-database=postgres
 CONFIGURE_ARGS+=	--with-mm=${BUILDLINK_PREFIX.libmm}

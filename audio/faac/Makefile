@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:05 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/19 19:03:34 wiz Exp $
 #
 
 DISTNAME=	faac-1.24
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.audiocoding.com/
 COMMENT=	AAC audio encoder
 
-USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/faac

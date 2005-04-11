@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:56:16 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/23 11:41:35 recht Exp $
 #
 
 DISTNAME=	ZMySQLDA-2.0.8
@@ -13,7 +13,6 @@ COMMENT=	MySQL Database adaptor for Zope
 
 DEPENDS+=	${PYPKGPREFIX}-mysqldb-[0-9]*:../../databases/py-mysqldb
 
-USE_BUILDLINK3=	yes
 ZOPE_COPYPRODUCT= zope-std-copyproduct-long
 
 .include "../../www/zope25/product.mk"

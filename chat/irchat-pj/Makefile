@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/06/12 02:11:42 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/12/03 15:14:52 wiz Exp $
 
 DISTNAME=	irchat-pj-2.4.24.22
 CATEGORIES=	chat
@@ -8,7 +8,6 @@ MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://irc.fan.gr.jp/pj/
 COMMENT=	Emacs lisp interface to Internet Relay Chat
 
-USE_BUILDLINK3=	yes
 
 .include "../../mk/emacs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/02/19 18:51:40 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/19 18:52:39 wiz Exp $
 #
 
 DISTNAME=	XML-Handler-YAWriter-0.23
@@ -14,7 +14,6 @@ COMMENT=	Another Perl module for writing XML documents
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/Handler/YAWriter/.packlist
 REPLACE_PERL=		xmlpretty
 

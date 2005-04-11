@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/04/20 19:41:35 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:21 tv Exp $
 #
 
 DISTNAME=	catclock
@@ -14,7 +14,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Variant of the MIT xclock with a "cat" mode
 
-USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 
 post-patch:

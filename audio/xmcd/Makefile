@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2004/10/03 00:13:10 tv Exp $
+# $NetBSD: Makefile,v 1.49 2005/02/21 20:26:08 hubertf Exp $
 
 DISTNAME=	xmcd-3.0.2
 PKGREVISION=    4
@@ -14,7 +14,6 @@ PATCHFILES=		xmcd-3.0.2-proxyauth-patch
 PATCH_DIST_STRIP=	-p1
 
 WRKSRC=			${WRKDIR}/xmcd-3.0
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL

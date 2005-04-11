@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:14:50 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/30 18:26:39 wiz Exp $
 
 DISTNAME=		eog-0.6
 PKGREVISION=		9
@@ -12,7 +12,6 @@ COMMENT=		Eye of GNOME: an image viewing and cataloging program
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 

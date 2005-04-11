@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:17:52 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/15 12:14:07 tv Exp $
 #
 
 DISTNAME=		gift-gnutella-0.0.9.2
@@ -11,7 +11,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gift..sourceforge.net/
 COMMENT=		Gnutella plugin for giFT
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/09 18:04:06 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/27 10:52:06 gson Exp $
 
 DISTNAME=	wavesurfer-1.7.4
 CATEGORIES=	audio
@@ -11,7 +11,6 @@ COMMENT=	Tool for sound visualization and manipulation
 DEPENDS+=	tcl-snack-[0-9]*:../../audio/tcl-snack
 DEPENDS+=	tk-[0-9]*:../../x11/tk
 
-NO_BUILDLINK=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# empty

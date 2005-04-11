@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/04/12 00:35:17 snj Exp $
+# $NetBSD: Makefile,v 1.25 2004/10/03 00:13:12 tv Exp $
 
 DISTNAME=		felt-3.05.src
 PKGNAME=		felt-3.05
@@ -14,7 +14,6 @@ COMMENT=		Free system for introductory level finite element analysis
 EXTRACT_ONLY=		felt-3.05.src.tar.gz
 
 WRKSRC=			${WRKDIR}/FElt-3.05
-USE_BUILDLINK3=		yes
 USE_X11BASE=		# defined
 XAW_TYPE?=		3d
 

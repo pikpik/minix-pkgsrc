@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/03/22 16:03:04 jmmv Exp $
+# $NetBSD: Makefile,v 1.38 2005/03/25 16:34:47 jmmv Exp $
 #
 
 DISTNAME=	libgnomeprint-2.10.2
@@ -12,7 +12,6 @@ COMMENT=	Library for the GNOME2 Printing Architecture
 
 BUILD_USES_MSGFMT=	YES
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES

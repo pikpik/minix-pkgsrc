@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/07/22 09:16:04 recht Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:17:57 tv Exp $
 #
 
 DISTNAME=	GeoIP-Python-1.2.0
@@ -11,7 +11,6 @@ MAINTAINER=	bartosz@atom.eu.org
 HOMEPAGE=	http://www.maxmind.com/app/python
 COMMENT=	GeoIP support for Python
 
-USE_BUILDLINK3=	yes
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
 

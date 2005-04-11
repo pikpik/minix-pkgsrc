@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/28 02:47:50 reed Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/05 16:21:06 jmmv Exp $
 #
 
 DISTNAME=		fam-2.7.0
@@ -14,7 +14,6 @@ COMMENT=		File Alteration Monitor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGINSTALL=		YES

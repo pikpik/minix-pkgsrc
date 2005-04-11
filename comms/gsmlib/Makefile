@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/11/12 06:39:20 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2004/12/04 23:09:06 jlam Exp $
 #
 
 DISTNAME=	gsmlib-1.10
@@ -15,7 +15,6 @@ BUILD_USES_MSGFMT=	yes
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-included-gettext

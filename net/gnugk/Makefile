@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/02 12:27:08 adam Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/28 02:47:46 reed Exp $
 
 DISTNAME=	gnugk-2.2.0
 PKGREVISION=	1
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnugk.org/
 COMMENT=	H.323 Gatekeeper
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS=		make
 USE_PKGINSTALL=         yes
 GNU_CONFIGURE=		yes

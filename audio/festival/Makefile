@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/12/21 18:12:25 agc Exp $
+# $NetBSD: Makefile,v 1.36 2005/03/07 10:34:07 agc Exp $
 
 DISTNAME=	festival-1.95-beta
 PKGNAME=	festival-1.95beta
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival/
 COMMENT=	Advanced multi-lingual speech synthesis system
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
 

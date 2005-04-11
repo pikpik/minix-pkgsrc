@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:12 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/24 21:12:51 wiz Exp $
 
 DISTNAME=	xmp-2.0.4
 PKGREVISION=	2
@@ -19,7 +19,6 @@ CONFIGURE_ARGS+=--disable-alsa \
 
 USE_X11=	yes
 USE_GNU_TOOLS+=	make
-USE_BUILDLINK3=	yes
 
 EGDIR=		${PREFIX}/share/examples/xmp
 CONF_FILES=	${EGDIR}/xmp-modules.conf ${PKG_SYSCONFDIR}/xmp-modules.conf

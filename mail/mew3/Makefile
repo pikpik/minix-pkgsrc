@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/11/30 02:49:38 uebayasi Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/15 13:48:28 wiz Exp $
 
 DISTNAME=	mew-3.3
 PKGREVISION=	1
@@ -13,7 +13,6 @@ CONFLICTS=+	mew-xemacs-[0-9]* incm-[0-9]*
 
 INFO_FILES=	mew.info
 
-USE_BUILDLINK3=	yes
 
 EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214 xemacs215
 

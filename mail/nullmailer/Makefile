@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/28 02:47:44 reed Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/29 15:21:50 minskim Exp $
 
 DISTNAME=		nullmailer-1.00RC7
 PKGNAME=		${DISTNAME:S/0RC7/.0rc7/}
@@ -10,7 +10,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://untroubled.org/nullmailer/
 COMMENT=		Simple relay-only mail transport agent
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c++
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes

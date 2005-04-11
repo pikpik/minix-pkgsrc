@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/12/28 02:47:46 reed Exp $
+# $NetBSD: Makefile,v 1.23 2005/01/23 20:41:48 recht Exp $
 #
 
 DISTNAME=	tmda-1.0.3
@@ -11,7 +11,6 @@ MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://tmda.net/
 COMMENT=	Python-based SPAM reduction system
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 PY_PATCHPLIST=		# defined
 PYTHON_PATCH_SCRIPTS=	${TMDA_PROGRAMS}

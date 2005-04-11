@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/04/09 22:36:56 schmonz Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/09 22:44:15 schmonz Exp $
 
 DISTNAME=		ucspi-tcp-0.88
 PKGREVISION=		1
@@ -17,7 +17,6 @@ DJB_RESTRICTED=		YES
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
 GCC_REQD+=		3.0

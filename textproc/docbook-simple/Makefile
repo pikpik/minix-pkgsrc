@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/30 06:31:02 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/06 18:24:23 wiz Exp $
 #
 
 DISTNAME=	docbook-simple-1.1CR2
@@ -12,7 +12,6 @@ MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://docbook.org/xml/simple/
 COMMENT=	Simplified DocBook XML DTD
 
-USE_BUILDLINK3=	YES
 USE_LANGUAGES=	# empty
 NO_CONFIGURE=	YES
 NO_BUILD=	YES

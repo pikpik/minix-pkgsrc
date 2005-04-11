@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/02 23:22:41 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:34 wiz Exp $
 #
 
 DISTNAME=		qemu-0.6.1
@@ -13,7 +13,6 @@ COMMENT=		CPU emulator using dynamic translation
 CONFLICTS+=		qemu-bin-*
 NOT_FOR_PLATFORM=	NetBSD-1.[0-6]*-*
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 HAS_CONFIGURE=		yes

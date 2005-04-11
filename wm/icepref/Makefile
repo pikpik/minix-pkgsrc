@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/15 17:03:58 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/02/04 13:00:09 rillig Exp $
 #
 
 DISTNAME=	icepref-1.1
@@ -12,7 +12,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Graphical configuration utility for IceWM
 
 WRKSRC=		${WRKDIR}/icepref
-USE_BUILDLINK3=	yes
 
 PYTHON_PATCH_SCRIPTS=	icepref
 

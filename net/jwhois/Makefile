@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2005/01/29 18:10:05 kim Exp $
+# $NetBSD: Makefile,v 1.50 2005/04/11 15:38:16 taca Exp $
 #
 
 DISTNAME=		jwhois-3.2.2
@@ -10,7 +10,6 @@ MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.gnu.org/software/jwhois/
 COMMENT=		Configurable WHOIS client
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

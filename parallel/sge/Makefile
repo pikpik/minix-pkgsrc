@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:18:03 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:48 reed Exp $
 #
 
 DISTNAME=		sge-5.3p6
@@ -13,7 +13,6 @@ COMMENT=		Sun Grid Engine distributed resource management system
 BUILD_DEPENDS+=		{standalone-tcsh,tcsh}-[0-9]*:../../shells/tcsh
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_PERL5=		YES

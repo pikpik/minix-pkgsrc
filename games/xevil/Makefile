@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.11 2005/01/25 16:02:26 xtraeme Exp $
 
 DISTNAME=	xevilsrc2.02r2
 PKGNAME=	xevil-2.02
@@ -12,7 +12,6 @@ COMMENT=	Side scrolling, bloody action game
 
 MAKEFILE=	makefile
 
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 BUILD_TARGET=	pkgsrc
 WRKSRC=		${WRKDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/28 23:04:15 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:45 recht Exp $
 #
 
 DISTNAME=		InlineEgg-1.08
@@ -12,7 +12,6 @@ COMMENT=		Python module for writing inline assembler programs
 
 LICENSE=		inlineegg-license
 
-USE_BUILDLINK3=		YES
 PY_PATCHPLIST=		YES
 PYDISTUTILSPKG=		YES
 

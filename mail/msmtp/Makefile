@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/01/19 15:30:25 adam Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/04 08:45:24 adam Exp $
 
 DISTNAME=	msmtp-1.4.0
 CATEGORIES=	mail
@@ -9,7 +9,6 @@ MAINTAINER=	bcv@hub3.net
 HOMEPAGE=	http://msmtp.sourceforge.net/
 COMMENT=	SMTP plugin for MUAs
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 
 EGDIR=		${PREFIX}/share/examples/msmtp

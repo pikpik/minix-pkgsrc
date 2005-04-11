@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:46 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/27 15:43:36 wiz Exp $
 #
 
 DISTNAME=		nagi_src_-_2002-11-14
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.agidev.com/projects/nagi/
 COMMENT=		Clone of Sierra's AGI
 
 WRKSRC=		${WRKDIR}/src
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 MAKEFILE=	Makefile.linux
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/11/03 00:46:24 kristerw Exp $
+# $NetBSD: Makefile,v 1.30 2005/03/24 21:12:57 wiz Exp $
 
 DISTNAME=	vicsrc-2.8
 PKGNAME=	${DISTNAME:S/src//}
@@ -18,7 +18,6 @@ HOMEPAGE=	http://www-nrg.ee.lbl.gov/vic/
 COMMENT=	MBONE video conferencing tool
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 USE_X11=	yes
 

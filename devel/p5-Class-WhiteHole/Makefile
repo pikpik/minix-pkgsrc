@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/12 17:36:40 seb Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:30:58 grant Exp $
 #
 
 DISTNAME=		Class-WhiteHole-0.04
@@ -12,7 +12,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Class-WhiteHole/
 COMMENT=		Perl5 module to ensure error on unhandled method calls
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Class/WhiteHole/.packlist
 
 .include "../../lang/perl5/module.mk"

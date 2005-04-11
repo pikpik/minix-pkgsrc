@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/04/25 08:47:21 snj Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:17:52 tv Exp $
 #
 
 DISTNAME=	gkrellm_snmp-0.21
@@ -11,7 +11,6 @@ MAINTAINER=	cube@NetBSD.org
 HOMEPAGE=	http://triq.net/gkrellm_snmp.html
 COMMENT=	GKrellM plugin to display values collected from a SNMP agent
 
-USE_BUILDLINK3=	YES
 
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

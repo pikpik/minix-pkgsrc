@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/10/03 00:14:41 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:34 wiz Exp $
 
 DISTNAME=		VisualBoyAdvance-src-1.6a
 PKGNAME=		vba-1.6.0.1
@@ -13,7 +13,6 @@ COMMENT=		Gameboy advance emulator
 
 WRKSRC=			${WRKDIR}/VisualBoyAdvance-1.6a
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-c-core

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/03/22 15:40:49 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:53 wiz Exp $
 
 DISTNAME=	emacs-21.4a
 PKGNAME=	emacs-nox11-21.4a
@@ -15,7 +15,6 @@ CONFLICTS+=	emacs-[0-9]*
 
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
-USE_BUILDLINK3=	yes
 
 PATCHDIR=	${.CURDIR}/../emacs/patches
 FILESDIR=	${.CURDIR}/../emacs/files

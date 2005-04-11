@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/01/18 17:48:52 peter Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/27 15:43:34 wiz Exp $
 
 DISTNAME=	cube_2004_05_22
 PKGNAME=	cube-20040522
@@ -17,7 +17,6 @@ CUBE_SRC=	${WRKSRC}/source/src
 CUBE_DATA=	${PREFIX}/share/cube
 
 NO_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 
 post-extract:

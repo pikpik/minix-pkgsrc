@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/07 18:03:10 xtraeme Exp $
 #
 
 DISTNAME=		cmatrix-1.2a
@@ -9,7 +9,6 @@ MAINTAINER=		dotz@irc.pl
 HOMEPAGE=		http://www.asty.org/cmatrix/
 COMMENT=		Make your console feel like Nadbuchonazor's bridge
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 

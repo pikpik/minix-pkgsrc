@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/22 08:54:34 snj Exp $
+# $NetBSD: Makefile,v 1.10 2005/01/22 09:27:59 xtraeme Exp $
 #
 
 DISTNAME=		3ddesktop-0.2.8
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://desk3d.sourceforge.net/
 COMMENT=		3D Virtual Desktop Switcher
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes

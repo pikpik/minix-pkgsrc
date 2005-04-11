@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/11/03 21:35:57 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/20 11:30:59 grant Exp $
 #
 
 DISTNAME=     	Date-Calc-5.4
@@ -16,7 +16,6 @@ DEPENDS+=	p5-Bit-Vector-[0-9]*:../../devel/p5-Bit-Vector
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Date/Calc/.packlist
 
 post-patch:

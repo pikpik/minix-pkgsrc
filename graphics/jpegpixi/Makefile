@@ -1,4 +1,4 @@
-# $NetBSD:$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/29 14:16:57 wiz Exp $
 
 DISTNAME=		jpegpixi-1.0.3
 CATEGORIES=		graphics
@@ -10,7 +10,6 @@ COMMENT=		Low-loss JPEG interpolator to remove bad pixels
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 

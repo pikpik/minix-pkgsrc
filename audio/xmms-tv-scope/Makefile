@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/02/21 20:26:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.15 2005/03/27 15:43:33 wiz Exp $
 #
 
 DISTNAME=	tv_scope-0.0.2
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://staff.xmms.org/zinx/xmms/
 COMMENT=	3D Representation of a waveform
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

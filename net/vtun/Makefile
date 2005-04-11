@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/02/21 20:26:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.33 2005/02/22 02:13:29 cjs Exp $
 
 DISTNAME=	vtun-2.6
 PKGREVISION=	6
@@ -14,7 +14,6 @@ HOMEPAGE=	http://vtun.sourceforge.net/
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 
 WRKSRC=			${WRKDIR}/vtun
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL

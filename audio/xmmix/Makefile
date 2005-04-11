@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:13:10 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/24 21:12:51 wiz Exp $
 
 DISTNAME=       xmmix-1.2
 PKGREVISION=	2
@@ -9,7 +9,6 @@ MAINTAINER=	augustss@cs.chalmers.se
 HOMEPAGE=	http://sunsite.unc.edu/~cddb/xmmix/index.html
 COMMENT=	X interface to the audio mixer device
 
-USE_BUILDLINK3=	yes
 USE_IMAKE=	yes
 
 pre-configure:

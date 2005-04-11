@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/10/15 14:50:06 tv Exp $
+# $NetBSD: Makefile,v 1.31 2005/01/11 03:16:23 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gschem-${PKGVERSION}
@@ -16,7 +16,6 @@ CONFLICTS+=		gEDA<19991011
 .include "../../cad/geda/Makefile.common"
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 USE_MAKEINFO=		YES
 INFO_FILES=		gschemdoc.info

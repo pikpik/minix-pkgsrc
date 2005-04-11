@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:27 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/15 12:22:13 tv Exp $
 
 DISTNAME=		giblib-1.2.4
 PKGREVISION=		2
@@ -11,7 +11,6 @@ COMMENT=		Programming utility library
 
 GNU_CONFIGURE=		YES
 PKGCONFIG_OVERRIDE=	giblib.pc.in
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 USE_X11=		YES
 

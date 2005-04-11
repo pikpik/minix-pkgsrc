@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/26 17:05:24 epg Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:30:59 grant Exp $
 
 DISTNAME=	Data-UUID-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Perl module for generating UUIDs
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Data/UUID/.packlist
 
 MAKE_ENV+=		PERL_MM_USE_DEFAULT=1

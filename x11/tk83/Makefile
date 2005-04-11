@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/08 17:24:45 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 02:44:26 jschauma Exp $
 
 DISTNAME=	tk8.3.4
 PKGNAME=	tk-8.3.4
@@ -19,7 +19,6 @@ MAKE_ENV+=		TOUCH="${TOUCH}"
 
 USE_X11=		yes
 USE_LIBTOOL=		yes
-USE_BUILDLINK3=		yes
 TEST_TARGET=		test
 
 # Initially install the man pages into ${WRKDIR}/man, as we need a staged

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/07/04 22:36:32 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/20 11:30:59 grant Exp $
 #
 
 DISTNAME=		Devel-StackTrace-1.11
@@ -12,7 +12,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/author/DROLSKY/Devel-StackTrace/
 COMMENT=		Perl5 module for stack trace and stack trace frame objects
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Devel/StackTrace/.packlist
 
 DEPENDS+=	p5-Test-Simple>=0.46:../p5-Test-Simple

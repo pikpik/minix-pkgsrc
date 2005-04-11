@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:12:58 tv Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/03 15:15:04 wiz Exp $
 
 DISTNAME=       gkrellweather-2.0.6
 PKGNAME=        gkrellm-weather-2.0.6
@@ -14,7 +14,6 @@ COMMENT=	Gkrellm2 weather plugin
 DEPENDS+=       wget>=1.8:../../net/wget
 BUILD_USES_MSGFMT=      YES
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES
 BUILD_TARGET=		gkrellweather.so

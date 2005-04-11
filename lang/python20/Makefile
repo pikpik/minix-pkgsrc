@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/12/19 05:34:07 grant Exp $
+# $NetBSD: Makefile,v 1.26 2005/01/30 12:44:39 jmmv Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -21,7 +21,6 @@ WRKSRC=		${WRKDIR}/Python-2.0.1
 DIST_SUBDIR=	python
 
 USE_LANGUAGES=	c c++
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--without-threads
 INSTALL_TARGET=	altinstall

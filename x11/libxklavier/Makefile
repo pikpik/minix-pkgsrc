@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:18:36 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/03/22 16:05:13 jmmv Exp $
 #
 
 DISTNAME=	libxklavier-2.0
@@ -12,7 +12,6 @@ COMMENT=	High-level API for the X Keyboard Extension (XKB)
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 USE_X11=		YES
 

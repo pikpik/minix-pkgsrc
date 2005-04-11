@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.141 2005/04/04 01:12:37 taca Exp $
+# $NetBSD: Makefile,v 1.142 2005/04/04 14:16:08 tron Exp $
 
 DISTNAME=	squid-2.5.STABLE9
 PKGNAME=	squid-2.5.9
@@ -58,7 +58,6 @@ PKG_SYSCONFSUBDIR?=	squid
 
 .include "../../mk/bsd.prefs.mk"
 
-USE_BUILDLINK3=		yes
 USE_PERL5=		build
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes

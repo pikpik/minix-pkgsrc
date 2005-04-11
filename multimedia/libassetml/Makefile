@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/02/16 18:38:40 reed Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/18 19:32:10 reed Exp $
 #
 
 DISTNAME=		libassetml-1.2.1
@@ -11,7 +11,6 @@ COMMENT=		Library for sharing image and audio files between projects
 
 BUILD_DEPENDS+=	texi2html-[0-9]*:../../textproc/texi2html
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5	# share/gnome/help
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes

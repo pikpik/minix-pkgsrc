@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2004/06/15 12:42:20 grant Exp $
+# $NetBSD: Makefile,v 1.38 2004/10/03 00:14:49 tv Exp $
 
 DISTNAME=		ClanLib-0.4.4
 PKGREVISION=		6
@@ -9,7 +9,6 @@ MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.clanlib.org/
 COMMENT=		The ClanLib Game SDK
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c++
 USE_X11BASE=		yes
 USE_GNU_TOOLS+=		make

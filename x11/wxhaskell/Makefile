@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/25 21:20:29 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/07 12:13:19 augustss Exp $
 
 DISTNAME=		wxhaskell-src-0.9
 PKGNAME=		${DISTNAME:S/-src//}
@@ -10,7 +10,6 @@ MAINTAINER=		augustss@NetBSD.org
 HOMEPAGE=		http://wxhaskell.sourceforge.net/index.html
 COMMENT=		wxGTK binding for Haskell
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 

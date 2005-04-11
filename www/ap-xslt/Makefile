@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/05/08 19:48:27 snj Exp $
+# $NetBSD: Makefile,v 1.27 2004/10/03 00:18:24 tv Exp $
 
 DISTNAME=	modxslt-1.1
 PKGNAME=	ap-xslt-1.1
@@ -11,7 +11,6 @@ HOMEPAGE=	http://modxslt.sourceforge.net/
 COMMENT=	Simple, fast XSLT transformations for apache
 
 WRKSRC=		${WRKDIR}/modxslt
-USE_BUILDLINK3=	YES
 
 APACHE_MODULE_NAME=	mod_xslt.so
 LDFLAGS+=	        -lsablot

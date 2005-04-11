@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1 2005/01/20 18:49:33 jmmv Exp $
+# $NetBSD: Makefile.common,v 1.2 2005/03/24 19:40:27 jmcneill Exp $
 #
 
 DISTNAME=	dia-0.94
@@ -14,7 +14,6 @@ DISTINFO_FILE=		${.CURDIR}/../../graphics/dia/distinfo
 PATCHDIR=		${.CURDIR}/../../graphics/dia/patches
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

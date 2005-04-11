@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/12/03 17:30:06 minskim Exp $
 #
 
 DISTNAME=	msnre-0.91
@@ -14,7 +14,6 @@ DEPENDS+=	p5-POE-[0-9]*:../../devel/p5-POE
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 
 PERL5_PACKLIST= ${PERL5_SITEARCH}/auto/msnre/.packlist
 

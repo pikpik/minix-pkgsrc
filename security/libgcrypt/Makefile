@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/10/23 08:57:33 shannonjr Exp $
+# $NetBSD: Makefile,v 1.25 2005/01/14 11:26:34 adam Exp $
 
 DISTNAME=	libgcrypt-1.2.1
 CATEGORIES=	security
@@ -11,7 +11,6 @@ COMMENT=	GNU cryptographic library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 

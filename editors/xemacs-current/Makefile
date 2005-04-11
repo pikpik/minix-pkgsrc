@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/01/31 00:10:12 minskim Exp $
+# $NetBSD: Makefile,v 1.46 2005/03/02 22:05:19 magick Exp $
 
 DISTNAME=	xemacs-21.5.19
 
@@ -11,7 +11,6 @@ COMMENT=	*BETA* XEmacs text editor version 21.5.19
 
 CONFLICTS+=	gnuclient-[0-9]*
 
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 
 BUILD_DEFS+=	XEMACS_WIDGETS

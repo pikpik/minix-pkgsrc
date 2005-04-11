@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2004/11/13 11:15:31 dillo Exp $
+# $NetBSD: Makefile,v 1.56 2004/12/28 23:18:20 reed Exp $
 
 DISTNAME=	xv-3.10a
 PKGREVISION=	9
@@ -16,7 +16,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.trilon.com/xv/
 COMMENT=	X11 program that displays images of various formats
 
-USE_BUILDLINK3=	YES
 
 USE_IMAKE=	YES
 

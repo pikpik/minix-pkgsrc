@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/17 18:39:05 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:15:00 tv Exp $
 
 DISTNAME=		eag-2.3
 PKGREVISION=		1
@@ -12,7 +12,6 @@ COMMENT=		Transducer generator using affix grammars
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/23 20:41:48 recht Exp $
+# $NetBSD: Makefile,v 1.5 2005/02/09 12:29:10 markd Exp $
 #
 
 DISTNAME=		pytables-0.9.1
@@ -10,7 +10,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://pytables.sourceforge.net/
 COMMENT=		Database package for large amounts of data
 
-USE_BUILDLINK3=		yes
 
 PYDISTUTILSPKG=		yes
 PYSETUPBUILDARGS=	--hdf5=${BUILDLINK_PREFIX.hdf5}

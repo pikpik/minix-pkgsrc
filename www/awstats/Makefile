@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/02/13 15:29:15 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2005/02/15 15:55:25 minskim Exp $
 #
 
 DISTNAME=	awstats-6.3
@@ -12,7 +12,6 @@ HOMEPAGE=	http://awstats.sourceforge.net/
 COMMENT=	Free real-time logfile analyzer to get advanced web statistics
 
 DIST_SUBDIR=	${PKGNAME}
-USE_BUILDLINK3=	YES
 NO_BUILD=	YES
 USE_PERL5=	run
 

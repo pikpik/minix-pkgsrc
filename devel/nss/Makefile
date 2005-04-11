@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/03 18:05:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/09 16:19:35 jschauma Exp $
 
 DISTNAME=		nss-3.9.2
 PKGREVISION=		2
@@ -13,7 +13,6 @@ BUILD_DEPENDS+=		zip>=2.3:../../archivers/zip
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/mozilla/security/nss
 
-USE_BUILDLINK3=		YES
 USE_PERL5=		build
 USE_GNU_TOOLS+=		make
 DIST=			${WRKSRC}/../../dist

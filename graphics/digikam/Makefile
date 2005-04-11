@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/01/09 11:14:09 seb Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/22 09:45:28 seb Exp $
 
 DISTNAME=		digikam-0.7.2
 CATEGORIES=		graphics kde
@@ -9,7 +9,6 @@ MAINTAINER=		seb@NetBSD.org
 HOMEPAGE=		http://digikam.sourceforge.net/
 COMMENT=		KDE frontend to gphoto2
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++

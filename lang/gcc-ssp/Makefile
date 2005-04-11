@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/05/09 02:26:14 snj Exp $
+# $NetBSD: Makefile,v 1.34 2004/12/03 15:15:00 wiz Exp $
 
 DISTNAME=		gcc-2.95.3
 PKGNAME=		gcc-ssp-2.95.3.13
@@ -29,7 +29,6 @@ GCC_FILESDIR=		${.CURDIR}/../gcc/files
 #			NetBSD-*-amigappc NetBSD-*-sandpoint
 NOT_FOR_PLATFORM=	*-*-x86_64
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_GNU_TOOLS+=		make
 

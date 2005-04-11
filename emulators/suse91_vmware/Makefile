@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/01/23 12:06:08 tron Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/02 16:59:44 jdolecek Exp $
 
 DISTNAME=		suse_vmware-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM=      NetBSD-*-i386 FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
-NO_BUILDLINK=		YES
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 PLIST_SUBST=		EMULSUBDIR=${EMULSUBDIR}
 

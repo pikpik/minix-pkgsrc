@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/11/13 21:28:28 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/02/25 09:10:18 adam Exp $
 
 DISTNAME=	hdf5-1.6.3
 CATEGORIES=	devel
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://hdf.ncsa.uiuc.edu/HDF5/
 COMMENT=	Hierarchical Data Format (new generation)
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-szlib

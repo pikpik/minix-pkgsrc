@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2005/03/28 14:25:36 jschauma Exp $
+# $NetBSD: Makefile,v 1.47 2005/04/05 22:02:10 kristerw Exp $
 
 DISTNAME=		PTL-2.1.9
 PKGNAME=		ptl-2.1.9
@@ -11,7 +11,6 @@ MAINTAINER=		msaitoh@NetBSD.org
 HOMEPAGE=		http://www.media.osaka-cu.ac.jp/~k-abe/PTL/
 COMMENT=		Portable user-level Thread Library 2 written by Kota Abe
 
-USE_BUILDLINK3=		YES
 USE_PERL5=		build
 MAKE_ENV=		INSTALL_PROGRAM="${INSTALL_SCRIPT}"
 PLIST_SRC=		${WRKDIR}/PLIST

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:17:49 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/29 05:59:24 jdolecek Exp $
 #
 
 DISTNAME=		seti_boinc-client-cvs-2004-07-15
@@ -12,7 +12,6 @@ HOMEPAGE=		http://setiweb.ssl.berkeley.edu/
 COMMENT=		SETI@home client for the BOINC framework
 
 WRKSRC=		${WRKDIR}/seti_boinc
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		BOINCDIR=${BUILDLINK_DIR}/boinc3
 # XXX don't know why MySQL is needed here

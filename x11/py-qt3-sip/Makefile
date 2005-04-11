@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/01/23 20:41:50 recht Exp $
+# $NetBSD: Makefile,v 1.12 2005/02/24 20:12:10 drochner Exp $
 #
 
 DISTNAME=	sip-4.2
@@ -15,7 +15,6 @@ CONFLICTS+=	${PYPKGPREFIX}-qt2-sip-*
 # needs qmake
 BUILD_DEPENDS+=		qt3-tools-3.*:../../x11/qt3-tools
 
-USE_BUILDLINK3= yes
 USE_X11=	yes
 USE_LIBTOOL=	yes
 USE_GNU_TOOLS+=	make

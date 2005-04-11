@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2004/10/31 21:07:13 jdolecek Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/05 17:11:39 jdolecek Exp $
 
 MODNAME=		iconv
 CATEGORIES+=		converters
 PKGREVISION=		# empty
 COMMENT=		PHP extension for character set conversion
 
-USE_BUILDLINK3=		YES
 
 # this is necessary so that PHP would find either the libc iconv
 # or use the packaged iconv, as appropriate; using

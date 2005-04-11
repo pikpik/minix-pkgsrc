@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/01 01:17:00 xtraeme Exp $
 #
 
 DISTNAME=	xmms-wma-1.0.4
@@ -12,7 +12,6 @@ COMMENT=	WMA input plugin for XMMS
 
 ONLY_FOR_PLATFORM=  *-*-i386 # Doesn't seem to be very portable...
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 
 .include "../../mk/bsd.prefs.mk"

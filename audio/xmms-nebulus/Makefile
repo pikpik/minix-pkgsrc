@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/21 20:26:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:33 wiz Exp $
 #
 
 DISTNAME=	xmms-nebulus-0.6.0
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://nebulus.tuxfamily.org/
 COMMENT=	Xmms plugin that uses OpenGL
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/25 08:42:29 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:17:53 tv Exp $
 
 DISTNAME=	gtk_wicontrol-0.17
 PKGREVISION=	3
@@ -11,7 +11,6 @@ COMMENT=	GTK+-based Wavelan status meter
 
 ONLY_FOR_PLATFORM=	*BSD-*-*
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/12/04 23:09:06 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2005/03/02 22:15:56 magick Exp $
 
 DISTNAME=	nxtvepg-2.7.4
 CATEGORIES=	misc
@@ -15,7 +15,6 @@ ONLY_FOR_PLATFORM=      NetBSD-1.4[Y-Z]-* NetBSD-1.4Z[A-Z]-* \
 USE_PERL5=	yes
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
-USE_BUILDLINK3= yes
 
 PTHREAD_AUTO_VARS=	yes
 .include "../../mk/pthread.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/06 17:19:08 taca Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 15:42:25 taca Exp $
 
 DISTNAME=		ruby-fcgi-${VER}
 PKGNAME=		${RUBY_PKGPREFIX}-fcgi-${VER}
@@ -9,7 +9,6 @@ MAINTAINER=		rasputnik@hellooperator.net
 HOMEPAGE=		http://sugi.nemui.org/prod/ruby-fcgi/
 COMMENT=		FastCGI interface for Ruby
 
-USE_BUILDLINK3=		yes
 USE_RUBY_SETUP=		yes
 RUBY_SETUP=		install.rb
 RUBY_EXTCONF_SUBDIRS=	ext/fcgi

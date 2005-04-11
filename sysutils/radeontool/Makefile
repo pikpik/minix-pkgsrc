@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/11/09 12:30:40 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/24 15:07:35 jmcneill Exp $
 
 DISTNAME=	radeontool-1.5
 CATEGORIES=	sysutils
@@ -8,7 +8,6 @@ MAINTAINER=	jmcneill@NetBSD.org
 HOMEPAGE=	http://fdd.com/software/radeon/
 COMMENT=	Toggle backlight and external video output on Radeon cards
 
-USE_BUILDLINK3=		yes
 BUILD_TARGET=		radeontool
 
 do-install:

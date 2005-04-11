@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: Makefile,v 1.71 2004/12/29 15:31:24 minskim Exp $
 
 DISTNAME=		gnome-games-1.4.0.4
 PKGREVISION=		16
@@ -20,7 +20,6 @@ CONFLICTS=		xbill-[0-9]*
 
 AUTOMAKE_REQD=		1.4
 AUTOCONF_REQD=		2.50
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome1-1.5
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/10/26 20:58:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.24 2004/10/27 07:50:30 recht Exp $
 #
 
 DISTNAME=		gnome-mime-data-2.4.2
@@ -16,7 +16,6 @@ BUILD_USES_MSGFMT=	YES
 
 CONFLICTS=		gnome-vfs<=1.0.3
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome2-1.5
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES

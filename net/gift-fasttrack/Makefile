@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/15 12:14:07 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/15 22:32:51 peter Exp $
 #
 
 DISTNAME=	giFT-FastTrack-0.8.9
@@ -11,7 +11,6 @@ HOMEPAGE=	http://download.berlios.de/gift-fasttrack/
 COMMENT=	Fasttrack plugin for giFT
 
 WRKSRC=			${WRKDIR}/${DISTNAME}
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

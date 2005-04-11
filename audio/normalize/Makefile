@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/12/27 21:32:30 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/27 21:38:06 wiz Exp $
 #
 
 DISTNAME=	normalize-0.7.6
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www1.cs.columbia.edu/~cvaill/normalize/
 COMMENT=	Wave (.wav) file volume normalizer
 
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES

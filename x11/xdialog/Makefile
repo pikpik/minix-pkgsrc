@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/04/24 22:46:13 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:39 tv Exp $
 #
 
 DISTNAME=		Xdialog-2.1.1
@@ -15,7 +15,6 @@ COMMENT=		X11 drop-in replacement for the curses dialog program
 
 BUILD_USES_MSGFMT=	YES
 
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_X11=		YES

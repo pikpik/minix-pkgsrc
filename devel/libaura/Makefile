@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/20 00:23:03 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/20 00:52:46 xtraeme Exp $
 #
 
 DISTNAME=	libaura-2.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.bsdinstaller.org/
 COMMENT=	LIBrary of Assorted Useful Reusable Abstraction
 
 WRKSRC=		${WRKDIR}/libaura
-USE_BUILDLINK3=	yes
 
 SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	post-patch

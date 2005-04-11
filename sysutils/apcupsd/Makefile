@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/12/28 02:47:50 reed Exp $
+# $NetBSD: Makefile,v 1.33 2004/12/29 15:42:38 minskim Exp $
 
 DISTNAME=		apcupsd-3.8.6
 PKGREVISION=		3
@@ -11,7 +11,6 @@ COMMENT=		UPS power management for APCC Products
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 USE_GNU_TOOLS+=		make
 

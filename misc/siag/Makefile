@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2004/10/03 00:13:00 tv Exp $
+# $NetBSD: Makefile,v 1.42 2004/10/15 14:50:07 tv Exp $
 #
 
 DISTNAME=       siag-3.5.7
@@ -18,7 +18,6 @@ CONFLICTS+=	antiword-[0-9]*
 CONFIGURE_ARGS+=--with-x
 CONFIGURE_ARGS+=--with-guile
 CONFIGURE_ARGS+=--with-docdir=${PREFIX}/share/doc/siag
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=  YES
 USE_GNU_TOOLS+=	make
 USE_X11=	YES

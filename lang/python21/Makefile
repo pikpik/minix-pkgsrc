@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/01/23 20:41:46 recht Exp $
+# $NetBSD: Makefile,v 1.18 2005/01/30 12:44:39 jmmv Exp $
 #
 
 DISTNAME=	Python-2.1.3
@@ -15,7 +15,6 @@ COMMENT=	Interpreted, interactive, object-oriented programming language
 CONFLICTS+=	python-[0-9]*
 
 USE_LANGUAGES=	c c++
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 
 PTHREAD_OPTS=   require

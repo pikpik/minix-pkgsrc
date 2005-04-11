@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/10/03 00:12:55 tv Exp $
+# $NetBSD: Makefile,v 1.25 2004/12/26 01:33:40 wiz Exp $
 #
 
 DISTNAME=	calc-2.11.10.1
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc/
 COMMENT=	C arbitrary precision calculator
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 
 .include "../../devel/ncurses/buildlink3.mk"

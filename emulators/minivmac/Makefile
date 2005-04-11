@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/05/23 20:58:41 danw Exp $
+# $NetBSD: Makefile,v 1.11 2004/11/19 15:44:25 wiz Exp $
 
 DISTNAME=	minivmac-0.1.7.src
 PKGNAME=	minivmac-0.1.7
@@ -13,7 +13,6 @@ COMMENT=	Miniature Macintosh emulator
 
 WRKSRC=		${WRKDIR}/minivmac
 USE_X11=	YES
-USE_BUILDLINK3=	YES
 
 SCRIPTS_ENV+=	CC="${CC}"
 

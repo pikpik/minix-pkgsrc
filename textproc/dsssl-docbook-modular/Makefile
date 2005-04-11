@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/02/18 16:17:43 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2005/02/21 20:26:14 hubertf Exp $
 
 DISTNAME=	docbook-dsssl-1.79
 PKGNAME=	dsssl-docbook-modular-1.79
@@ -15,7 +15,6 @@ DEPENDS+=	docbook>=4.0:../../textproc/docbook
 
 NO_MTREE=	yes
 
-USE_BUILDLINK3=	yes
 USE_LANGUAGES=	# empty
 INSTDIR=	${PREFIX}/share/sgml/docbook/dsssl/modular
 

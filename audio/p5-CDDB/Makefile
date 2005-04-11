@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/10 01:48:06 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:30:55 grant Exp $
 #
 
 DISTNAME=	CDDB-1.12
@@ -12,7 +12,6 @@ COMMENT=	High-level interface to the Compact Disc Database
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/CDDB/.packlist
 

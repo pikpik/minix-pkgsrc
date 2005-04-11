@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:18:12 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/20 11:31:07 grant Exp $
 #
 
 DISTNAME=		Crypt-OpenSSL-RSA-0.21
@@ -17,7 +17,6 @@ DEPENDS+=		p5-Crypt-OpenSSL-Random-[0-9]*:../p5-Crypt-OpenSSL-Random
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Crypt/OpenSSL/RSA/.packlist
 
 .include "../../security/openssl/buildlink3.mk"

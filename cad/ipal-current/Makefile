@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/06/11 13:19:49 grant Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/03 00:13:13 tv Exp $
 #
 
 DISTNAME=	ipal-20001210
@@ -14,7 +14,6 @@ COMMENT=	Libs and utils for manipulating PAL designs (development version)
 BUILD_DEPENDS+= bison-[0-9]*:../../devel/bison
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	lex make
 
 CFLAGS+=	-fPIC

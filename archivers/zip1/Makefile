@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/12/03 15:14:51 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2005/03/25 15:27:45 minskim Exp $
 #
 
 DISTNAME=	zip1-1.1
@@ -22,7 +22,6 @@ WRKSRC=		${WRKDIR}
 MAKEFILE=	makefile
 BUILD_TARGET=	zip zipcloak
 
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

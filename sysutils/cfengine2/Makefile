@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:14 tv Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/28 02:47:50 reed Exp $
 #
 
 PKGREVISION=	2
@@ -7,7 +7,6 @@ PKGREVISION=	2
 
 COMMENT=	Automate configuration and administration of large systems
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 PTHREAD_OPTS+=		require
 

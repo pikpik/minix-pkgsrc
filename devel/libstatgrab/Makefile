@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:31 tv Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/15 14:26:31 reed Exp $
 
 DISTNAME=	libstatgrab-0.11
 CATEGORIES=	devel
@@ -15,7 +15,6 @@ COMMENT=	Provides a useful interface to system statistics
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_BUILDLINK3=	yes
 
 PKGCONFIG_OVERRIDE=	libstatgrab.pc.in
 

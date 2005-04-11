@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/27 15:58:24 bouyer Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/01 19:06:12 bouyer Exp $
 #
 
 DISTNAME=		xen-2.0.3-src
@@ -40,7 +40,6 @@ PYTHON_PATCH_SCRIPTS+=	misc/xensv
 PYTHON_PATCH_SCRIPTS+=	misc/netfix
 PYTHON_PATCH_SCRIPTS+=	misc/xend
 PYTHON_PATCH_SCRIPTS+=	xentrace/xentrace_format
-USE_BUILDLINK3=		yes
 
 SUBST_CLASSES=          paths
 SUBST_STAGE.paths=      pre-configure

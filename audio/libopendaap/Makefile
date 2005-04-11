@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/07 15:30:44 adam Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/23 10:52:54 jmmv Exp $
 
 DISTNAME=	libopendaap-0.3.0
 PKGREVISION=	1
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://crazney.net/programs/itunes/libopendaap.html
 COMMENT=	DAAP client library
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool

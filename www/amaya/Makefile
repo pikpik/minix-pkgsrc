@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/10/03 00:18:23 tv Exp $
+# $NetBSD: Makefile,v 1.36 2005/01/18 16:35:18 adam Exp $
 
 DISTNAME=	amaya-fullsrc-9.0
 PKGNAME=	${DISTNAME:S/-fullsrc//}
@@ -15,7 +15,6 @@ COMMENT=	Web browser/editor from the World Wide Web Consortium (W3C)
 EXTRACT_ELEMENTS=	Amaya libwww
 WRKSRC=			${WRKDIR}/Amaya/work
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 GNU_CONFIGURE=		yes

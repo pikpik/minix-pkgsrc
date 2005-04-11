@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/20 22:14:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/11/30 16:08:50 xtraeme Exp $
 #
 
 DISTNAME=	xdesktopwaves-1.1
@@ -9,7 +9,6 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://xdesktopwaves.sourceforge.net/
 COMMENT=	Simulates water waves on the X Windows desktop
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_X11=		YES
 

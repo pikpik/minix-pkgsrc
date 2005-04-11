@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/07/22 09:16:02 recht Exp $
+# $NetBSD: Makefile,v 1.4 2005/01/23 20:41:49 recht Exp $
 #
 
 DISTNAME=		Reverend-0.2.4
@@ -11,7 +11,6 @@ MAINTAINER=		dotz@irc.pl
 HOMEPAGE=		http://www.divmod.org/Reverend/
 COMMENT=		General purpose Bayesian classifier
 
-NO_BUILDLINK=		yes
 NO_CONFIGURE=		yes
 USE_LANGUAGES=		# empty
 

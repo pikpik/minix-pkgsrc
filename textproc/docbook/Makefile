@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/02/18 16:09:15 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2005/03/24 21:13:01 wiz Exp $
 
 DISTNAME=	docbook-4.4
 CATEGORIES=	textproc
@@ -24,7 +24,6 @@ DEPENDS+=	iso8879>=1986:../../textproc/iso8879
 
 WRKSRC=		${WRKDIR}
 NO_MTREE=       yes
-USE_BUILDLINK3=	yes
 USE_LANGUAGES=	# empty
 EXTRACT_ONLY=	# empty
 

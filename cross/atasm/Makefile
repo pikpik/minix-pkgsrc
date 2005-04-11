@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/13 23:00:36 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:17 tv Exp $
 #
 
 DISTNAME=	atasm104
@@ -16,7 +16,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=         ${WRKDIR}/${DISTNAME}/src
 NO_CONFIGURE=   YES
-USE_BUILDLINK3=	YES
 
 DOCDIR=		${PREFIX}/share/doc/atasm
 

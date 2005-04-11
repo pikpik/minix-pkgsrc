@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/02 02:51:40 cube Exp $
 
 DISTNAME=		ppp-${PPPD_VERSION}
 PKGNAME=		${DISTNAME:S/ppp/&d/}
@@ -9,7 +9,6 @@ MAINTAINER=		cube@NetBSD.org
 HOMEPAGE=		http://ppp.samba.org/
 COMMENT=		PPP Daemon
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/01/23 02:35:11 hamajima Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/01 13:03:31 hamajima Exp $
 #
 
 DISTNAME=	ov51x-1.65-1.11-mark
@@ -16,7 +16,6 @@ MAINTAINER=	hamajima@NetBSD.org
 HOMEPAGE=	http://www2.starcat.ne.jp/~takam/bsd/NetBSD.html#ov519
 COMMENT=	USB cameras based OV519 Utility Programs
 
-USE_BUILDLINK3=		yes
 
 do-build:
 	for f in ov519shot ov519view ; do               \

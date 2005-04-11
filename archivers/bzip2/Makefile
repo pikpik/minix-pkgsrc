@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/10/03 00:13:03 tv Exp $
+# $NetBSD: Makefile,v 1.37 2004/10/13 17:51:32 tv Exp $
 #
 
 DISTNAME=	bzip2-1.0.2
@@ -12,7 +12,6 @@ COMMENT=	Block-sorting file compressor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 MAKE_ENV+=		REALCC="${CC}"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/02/01 00:39:19 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/24 08:08:56 xtraeme Exp $
 
 DISTNAME=		clamsmtp-1.4
 CATEGORIES=		mail
@@ -10,7 +10,6 @@ COMMENT=		SMTP filter that allows you to check for viruses
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		clamsmtpd

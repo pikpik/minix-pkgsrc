@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/01/04 23:47:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/22 16:36:46 jmmv Exp $
 #
 
 DISTNAME=	vino-2.10.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	VNC server for GNOME
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes

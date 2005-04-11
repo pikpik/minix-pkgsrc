@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/10/03 00:18:17 tv Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/28 23:18:20 reed Exp $
 
 DISTNAME=	xnc-5.0.4.src
 PKGNAME=	xnc-5.0.4
@@ -11,7 +11,6 @@ HOMEPAGE=	http://xnc.dubna.su/
 COMMENT=	File manager for X Window
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=	yes
 USE_DIRS+=	xdg-1.1
 USE_X11=	yes
 USE_LIBTOOL=	yes

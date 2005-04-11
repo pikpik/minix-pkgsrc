@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/27 21:13:01 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/08 09:05:46 adam Exp $
 
 DISTNAME=	osh-050131
 CATEGORIES=	shells
@@ -10,7 +10,6 @@ COMMENT=	Implementation of the UNIX 6th Edition shell
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 PKG_SHELL=		${PREFIX}/bin/osh
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2004/10/03 00:12:53 tv Exp $
+# $NetBSD: Makefile,v 1.61 2005/01/19 16:28:37 frueauf Exp $
 
 DISTNAME=	fetchmail-6.2.5
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
@@ -14,7 +14,6 @@ COMMENT=	Configuration tool for fetchmail
 DEPENDS+=	${DISTNAME}{,nb*}:../../mail/fetchmail
 
 NO_BUILD=	YES
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 
 DISTINFO_FILE=		${.CURDIR}/../../mail/fetchmail/distinfo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:01 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/27 15:43:37 wiz Exp $
 
 DISTNAME=	avifile-0.53.5
 PKGREVISION=	4
@@ -15,7 +15,6 @@ DEPENDS=	win32-codecs>=010122:../../multimedia/win32-codecs
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/02/05 00:24:14 cube Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/07 10:05:08 uebayasi Exp $
 #
 
 DISTNAME=	pwm-20030617
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFLICTS+=	ion<=20040729nb2
 
-USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_X11=	YES
 USE_GNU_TOOLS+=	make

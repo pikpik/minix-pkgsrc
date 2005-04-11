@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:14:40 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/27 15:43:34 wiz Exp $
 #
 
 DISTNAME=		gens-rc3
@@ -17,7 +17,6 @@ BUILD_DEPENDS+=		nasm-[0-9]*:../../devel/nasm
 ONLY_FOR_PLATFORM=	*-i386
 
 WRKSRC=			${WRKDIR}/GensForLinux
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 

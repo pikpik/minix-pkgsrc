@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/10/03 00:12:58 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/01/03 15:59:12 wiz Exp $
 
 DISTNAME=	gkrellweather-0.2.7
 PKGNAME=	gkrellm-weather-0.2.7
@@ -12,7 +12,6 @@ COMMENT=	gkrellm weather plugin
 
 DEPENDS+=       wmweather>=1.3:../../x11/wmweather
 
-USE_BUILDLINK3=	YES
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/gkrellm/plugins

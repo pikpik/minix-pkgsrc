@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:15 tv Exp $
+# $NetBSD: Makefile,v 1.11 2004/10/29 05:59:23 jdolecek Exp $
 #
 
 DISTNAME=	ser-0.8.10_src
@@ -13,7 +13,6 @@ COMMENT=	SIP express router
 
 WRKSRC=		${WRKDIR}/ser-0.8.10
 
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 
 MAKE_ENV+= BUILDLINK_PREFIX.pthread=${BUILDLINK_PREFIX.pthread:Q}

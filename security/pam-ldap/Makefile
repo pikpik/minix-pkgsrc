@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/19 19:08:43 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/01/14 05:35:33 jlam Exp $
 #
 
 DISTNAME=	pam_ldap-176
@@ -10,7 +10,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.padl.com/pam_ldap.html
 COMMENT=	Pluggable authentication module for LDAP directories
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes

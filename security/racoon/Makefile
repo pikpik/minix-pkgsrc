@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2004/12/02 06:44:27 itojun Exp $
+# $NetBSD: Makefile,v 1.73 2004/12/28 02:47:49 reed Exp $
 #
 
 DISTNAME=	racoon-20040818a
@@ -13,7 +13,6 @@ COMMENT=	KAME racoon IKE daemon
 CONFLICTS+=	racoon-[0-9]*
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/racoon
-USE_BUILDLINK3=	yes
 USE_PKGINSTALL=	yes
 
 CRYPTO=		yes

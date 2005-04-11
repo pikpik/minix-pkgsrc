@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/01/12 21:31:29 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/03/20 20:34:27 salo Exp $
 
 DISTNAME=	htdig-3.1.6
 PKGREVISION=	2
@@ -16,7 +16,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://htdig.sourceforge.net/
 COMMENT=	WWW indexing and searching system
 
-USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 USE_LANGUAGES=	c c++
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/21 02:39:23 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/24 14:36:49 wiz Exp $
 #
 
 DISTNAME=		pbzip2-0.9.2
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://compression.ca/pbzip2/
 COMMENT=		Parallel implementation of the bzip2 block-sorting file compressor
 
-USE_BUILDLINK3=		yes
 PTHREAD_AUTO_VARS=	yes
 
 do-install:

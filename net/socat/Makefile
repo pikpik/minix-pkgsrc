@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/22 18:57:56 adrianp Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/26 11:40:29 adrianp Exp $
 
 DISTNAME=	socat-1.4.2.0
 CATEGORIES=	net
@@ -10,7 +10,6 @@ COMMENT=	"netcat++" (extended design, new implementation)
 
 WRKSRC=			${WRKDIR}/socat-1.4
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_READLINE=	YES
 
 CONFIGURE_ARGS+=	--disable-libwrap

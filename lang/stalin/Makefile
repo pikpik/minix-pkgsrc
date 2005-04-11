@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/07/18 10:49:49 recht Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:15:02 tv Exp $
 
 DISTNAME=		stalin-0.9
 PKGREVISION=		4
@@ -13,7 +13,6 @@ COMMENT=		Aggressively optimizing Scheme compiler
 # Only ported to these 4 archs
 ONLY_FOR_PLATFORM=	*-*-i386 *-*-sparc *-*-alpha *-*-mips
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 UNLIMIT_RESOURCES=	stacksize datasize
 

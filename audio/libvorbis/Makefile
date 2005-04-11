@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/09/24 13:04:40 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2004/10/03 00:13:07 tv Exp $
 
 DISTNAME=	libvorbis-1.1.0
 PKGREVISION=	1
@@ -11,7 +11,6 @@ COMMENT=	Library for the Ogg Vorbis audio encoding format
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

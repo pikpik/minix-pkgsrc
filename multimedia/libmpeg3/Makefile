@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/06/12 04:34:49 grant Exp $
+# $NetBSD: Makefile,v 1.1 2004/06/26 18:00:21 grant Exp $
 #
 
 DISTNAME=	libmpeg3-1.3
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=	nasm-[0-9]*:../../devel/nasm
 CONFIGURE_ARGS+= --no-mmx --no-css
 .endif
 
-USE_BUILDLINK3= yes
 HAS_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
 

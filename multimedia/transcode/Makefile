@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/27 22:30:43 veego Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:38 wiz Exp $
 
 DISTNAME=	transcode-0.6.12
 PKGREVISION=	6
@@ -12,7 +12,6 @@ COMMENT=	Command line video-stream processing tool
 
 BUILD_DEPENDS+=		nasm>=0.98.36:../../devel/nasm
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 USE_LIBTOOL=		yes

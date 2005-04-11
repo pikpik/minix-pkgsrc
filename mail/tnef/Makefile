@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:12:55 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/02/05 14:54:14 heinz Exp $
 #
 
 DISTNAME=	tnef-1.3.1
@@ -12,7 +12,6 @@ COMMENT=	Decode MS-TNEF MIME attachments
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 TEST_TARGET=		check
 

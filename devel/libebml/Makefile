@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/14 16:59:36 salo Exp $
+# $NetBSD: Makefile,v 1.12 2005/02/17 10:52:02 salo Exp $
 #
 
 DISTNAME=	libebml-0.7.3
@@ -12,7 +12,6 @@ COMMENT=	Extensible Binary Meta Language support library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_LANGUAGES=	c++
 

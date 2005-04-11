@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2004/10/31 21:28:51 jdolecek Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/05 21:36:08 jdolecek Exp $
 
 MODNAME=		xsl
 CATEGORIES+=		textproc
 PKGREVISION=		# empty
 COMMENT=		PHP5 extension for XSLT functions
 
-USE_BUILDLINK3=		YES
 
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${BUILDLINK_PREFIX.libxslt}
 

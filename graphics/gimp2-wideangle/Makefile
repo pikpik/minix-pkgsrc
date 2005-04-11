@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:14:59 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/25 18:15:30 drochner Exp $
 #
 
 DISTNAME=	wideangle
@@ -13,7 +13,6 @@ COMMENT=	GIMP plugin for wideangle lens distortions
 
 DIST_SUBDIR=	${PKGNAME}
 WRKSRC=         ${WRKDIR}
-USE_BUILDLINK3=	YES
 EXTRACT_CMD=    ${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 do-build:

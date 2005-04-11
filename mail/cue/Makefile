@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/02/10 08:45:50 itojun Exp $
+# $NetBSD: Makefile,v 1.44 2005/03/23 09:42:33 jlam Exp $
 
 DISTNAME=	cue-snap-20050131
 PKGNAME=	cue-20050131
@@ -9,7 +9,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	mh-e like mail user agent
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

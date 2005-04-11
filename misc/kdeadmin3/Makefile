@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/10/03 00:12:59 tv Exp $
+# $NetBSD: Makefile,v 1.27 2004/10/13 12:39:18 markd Exp $
 
 DISTNAME=	kdeadmin-${_KDE_VERSION}
 CATEGORIES=	misc
@@ -6,7 +6,6 @@ COMMENT=	System administration tools for the KDE integrated X11 desktop
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 
 .include "../../mk/bsd.prefs.mk"

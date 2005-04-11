@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/11/23 17:04:15 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2005/02/18 14:51:01 wiz Exp $
 #
 
 DISTNAME=	xbae-4.51.01
@@ -10,7 +10,6 @@ MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://xbae.sourceforge.net/
 COMMENT=	Motif-compatible widgets: XbaeMatrix, XbaeCaption, XbaeInput
 
-USE_BUILDLINK3=		YES
 USE_X11=		YES
 USE_LIBTOOL=		YES
 

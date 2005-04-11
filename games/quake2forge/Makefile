@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/11/27 09:12:58 xtraeme Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/27 15:43:36 wiz Exp $
 #
 
 DISTNAME=	quake2-0.2.1
@@ -12,7 +12,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.quakeforge.net/
 COMMENT=	Enhanced Quake II engine
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
 USE_X11=	yes

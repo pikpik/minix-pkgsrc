@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:13:26 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/08 14:05:21 wiz Exp $
 
 DISTNAME=	ffcall-1.10
 PKGREVISION=	1
@@ -20,7 +20,6 @@ ONLY_FOR_PLATFORM=	*-*-alpha *-*-arm *-*-convex *-*-hppa *-*-i386 \
 			*-*-s390 *-*-sparc *-*-sparc64 \
 			*-*-x86_64
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 

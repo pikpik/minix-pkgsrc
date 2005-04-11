@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2002/09/22 00:07:57 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/23 23:49:28 wiz Exp $
 #
 
 DISTNAME=	clara-0.9.9
@@ -15,7 +15,6 @@ COMMENT=	Optical Character Recognition (OCR) program for books
 
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 
-USE_BUILDLINK3=		YES
 USE_X11=		YES
 REPLACE_PERL=		clara.pl mkdoc.pl selthresh.pl
 

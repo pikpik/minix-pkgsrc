@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/08/25 17:13:42 seb Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:12:53 tv Exp $
 
 DISTNAME=		imapfilter-1.0.1
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=		seb@NetBSD.org
 HOMEPAGE=		http://imapfilter.hellug.gr/
 COMMENT=		Mail filtering utility for the IMAP
 
-USE_BUILDLINK3=		yes
 
 LDFLAGS.SunOS+=		-lsocket -lnsl
 

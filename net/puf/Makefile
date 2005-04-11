@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/08/28 20:05:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/05/07 01:14:49 xtraeme Exp $
 #
 
 DISTNAME=	puf-0.93.2a
@@ -11,6 +11,5 @@ HOMEPAGE=	http://puf.sourceforge.net/
 COMMENT=	Parallel URL fetcher
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.pkg.mk"

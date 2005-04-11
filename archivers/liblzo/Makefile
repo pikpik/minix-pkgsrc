@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/10/03 00:13:04 tv Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/09 18:56:53 jlam Exp $
 #
 
 DISTNAME=	lzo-1.08
@@ -14,7 +14,6 @@ COMMENT=	Portable lossless data compression library written in ANSI C
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 

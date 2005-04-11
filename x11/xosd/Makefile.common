@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.16 2004/11/12 06:39:21 jlam Exp $
+# $NetBSD: Makefile.common,v 1.17 2004/11/30 01:34:41 xtraeme Exp $
 
 DISTNAME=	xosd-2.2.12
 CATEGORIES=	x11
@@ -12,7 +12,6 @@ DISTINFO_FILE=		${.CURDIR}/../../x11/xosd/distinfo
 PATCHDIR=		${.CURDIR}/../../x11/xosd/patches
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
 

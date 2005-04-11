@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/10/06 07:53:04 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2004/04/25 03:09:56 snj Exp $
 #
 
 DISTNAME=	sniff-2.0
@@ -8,7 +8,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Program to sniff logins and passwords
 
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

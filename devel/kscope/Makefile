@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/25 12:19:17 markd Exp $
 #
 
 DISTNAME=		kscope-1.0
@@ -13,7 +13,6 @@ COMMENT=		KDE frontend for cscope
 DEPENDS+=		cscope>=15.4:../../devel/cscope
 DEPENDS+=		exctags>=5.5.4:../../devel/exctags
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 

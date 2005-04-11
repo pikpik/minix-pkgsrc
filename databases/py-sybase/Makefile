@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/10/05 19:49:28 tsarna Exp $
+# $NetBSD: Makefile,v 1.8 2005/01/23 20:41:45 recht Exp $
 #
 
 DISTNAME=	sybase-0.36
@@ -15,7 +15,6 @@ PYTHON_VERSIONS_ACCEPTED=	21 22 23
 
 BUILDLINK_DEPENDS.freetds=	freetds-0.61*
 PYSETUPBUILDARGS=	build_ext -D HAVE_FREETDS=61 -U WANT_BULKCOPY
-USE_BUILDLINK3=		yes
 PYDISTUTILSPKG=		yes
 
 SYBASE=		${BUILDLINK_PREFIX.freetds}/freetds

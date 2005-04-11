@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/02/07 15:10:41 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/02/09 13:53:36 wiz Exp $
 #
 
 DISTNAME=	libtheora-1.0alpha4
@@ -12,7 +12,6 @@ COMMENT=	Video codec for Ogg multimedia streaming
 
 GNU_CONFIGURE=	YES
 PKGCONFIG_OVERRIDE=	theora.pc.in
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 
 .include "../../audio/libvorbis/buildlink3.mk"

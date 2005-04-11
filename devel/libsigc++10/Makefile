@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/26 22:07:06 snj Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:30 tv Exp $
 
 DISTNAME=	libsigc++-1.0.4
 PKGREVISION=	2
@@ -10,7 +10,6 @@ MAINTAINER=	bsieker@freenet.de
 HOMEPAGE=	http://libsigc.sourceforge.net/
 COMMENT=	Type-safe callback system for C++ programs
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES

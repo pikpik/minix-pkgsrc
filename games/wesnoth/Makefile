@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/01 14:35:17 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/03/27 15:43:36 wiz Exp $
 #
 
 DISTNAME=	wesnoth-0.8.11
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.wesnoth.org/
 COMMENT=	Fantasy turn-based strategy game
 
 HAS_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 UNLIMIT_RESOURCES+=	datasize
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

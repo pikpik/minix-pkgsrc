@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2004/09/16 15:09:01 minskim Exp $
+# $NetBSD: Makefile,v 1.39 2005/03/10 15:23:10 wiz Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	3
@@ -12,7 +12,6 @@ COMMENT=	The X Pixmap library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 USE_IMAKE=	# defined
 
 CHECK_BUILTIN.xpm=	yes

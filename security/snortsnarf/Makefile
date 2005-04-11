@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/04/25 03:17:55 snj Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/02 13:02:27 adrianp Exp $
 #
 
 DISTNAME=	SnortSnarf-050314.1
@@ -12,7 +12,6 @@ COMMENT=	Generate HTML report summaries from snort incident alerts
 
 DEPENDS+=	p5-Time>=101.062101:../../time/p5-Time
 
-NO_BUILDLINK=	YES
 NO_BUILD=	YES
 USE_PERL5=	run
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/05/05 09:00:23 recht Exp $
+# $NetBSD: Makefile,v 1.6 2004/07/22 09:16:04 recht Exp $
 
 DISTNAME=	GnuPGInterface-0.3.2
 PKGNAME=	${PYPKGPREFIX}-gnupg-0.3.2
@@ -13,7 +13,6 @@ DEPENDS+=	gnupg>=1.0.0:../../security/gnupg
 
 PYTHON_VERSIONS_ACCEPTED=	21
 PYDISTUTILSPKG=	yes
-USE_BUILDLINK3=	yes
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

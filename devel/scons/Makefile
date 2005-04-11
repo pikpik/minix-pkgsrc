@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/18 20:27:42 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/08/24 20:39:14 recht Exp $
 #
 
 DISTNAME=		scons-0.96.1
@@ -10,7 +10,6 @@ HOMEPAGE=		http://www.scons.org/
 COMMENT=		Build system, written in Python
 
 PYDISTUTILSPKG=		yes
-USE_BUILDLINK3=		yes
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/scons.1 ${PREFIX}/man/man1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/23 01:11:47 wiz Exp $
 
 DISTNAME=	fxtv-1.03
 PKGREVISION=	8
@@ -10,7 +10,6 @@ MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~rhh/fxtv/
 COMMENT=	TV display application for Brooktree 848 compatible TV cards
 
-USE_BUILDLINK3=	YES
 USE_X11BASE=	YES
 USE_GNU_TOOLS+=	make
 XAW_TYPE?=	3d

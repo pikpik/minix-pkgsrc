@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/03/24 21:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/04/08 16:03:37 wiz Exp $
 
 DISTNAME=		elk-3.0
 PKGNAME=		elk-3.0.3
@@ -14,7 +14,6 @@ COMMENT=		Embeddable Scheme interpreter
 NOT_FOR_PLATFORM=	*-*-alpha *-*-mips* *-*-sparc64
 
 BUILD_TARGET=		default
-USE_BUILDLINK3=		yes
 
 .include "../../mk/bsd.prefs.mk"
 

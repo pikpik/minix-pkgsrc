@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/06/27 16:38:32 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/07/24 22:44:12 recht Exp $
 
 PKGNAME=		postgresql74-docs-${BASE_VERS}
 SVR4_PKGNAME=		pstgd
@@ -7,7 +7,6 @@ COMMENT=		PostgreSQL database system documentation
 .include "../../databases/postgresql74/Makefile.common"
 
 NO_BUILD=	yes
-NO_BUILDLINK=	yes
 NO_CONFIGURE=	yes
 
 #BUILD_DIRS=	${WRKSRC}/doc

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/02/26 15:52:52 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2005/02/26 16:07:46 mrauch Exp $
 
 DISTNAME=		openoffice-1.1.4
 PKGREVISION=		1
@@ -22,7 +22,6 @@ BUILD_DEPENDS+=		zip-[0-9]*:../../archivers/zip
 BUILD_DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
 
 WRKSRC=			${WRKDIR}/config_office
-USE_BUILDLINK3=		yes
 GCC_REQD=		3.0
 USE_LANGUAGES+=		c c++
 

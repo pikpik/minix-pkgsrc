@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/01/12 15:32:00 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/01/22 15:57:29 minskim Exp $
 
 DISTNAME=		plplot-5.2.1
 PKGREVISION=		3
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://plplot.sourceforge.net/
 COMMENT=		Scientific plotting package
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 USE_GNU_TOOLS+=		m4 make
 USE_LANGUAGES=		fortran

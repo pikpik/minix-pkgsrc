@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/04/11 09:09:06 snj Exp $
+# $NetBSD: Makefile,v 1.23 2004/10/03 00:12:57 tv Exp $
 
 DISTNAME=		pari-2.1.5
 PKGREVISION=		4
@@ -12,7 +12,6 @@ COMMENT=		Software package for computer-aided number theory
 
 BUILD_DEPENDS+= 	teTeX-[0-9]*:../../print/teTeX
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
 USE_GNU_READLINE=	# rl_save_prompt

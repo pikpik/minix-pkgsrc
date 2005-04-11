@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/11 14:16:53 seb Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:31:02 grant Exp $
 #
 
 DISTNAME=	PAR-Dist-0.07
@@ -12,7 +12,6 @@ MAINTAINER=	seb@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PAR-Dist/
 COMMENT=	Perl module toolkit to create and manipulate PAR distributions
 
-USE_BUILDLINK3=	YES
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/PAR/Dist/.packlist
 

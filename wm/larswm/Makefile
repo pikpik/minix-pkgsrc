@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/11/27 17:55:54 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/07 10:05:08 uebayasi Exp $
 #
 
 DISTNAME=	larswm-7.5.3
@@ -15,7 +15,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DOCFILES=	keyboard_refcard.pdf mouse_refcard.pdf
 
 USE_PKGINSTALL=	YES
-USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 EGDIR=		${PREFIX}/share/examples/larswm

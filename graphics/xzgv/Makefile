@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2004/10/03 00:14:59 tv Exp $
+# $NetBSD: Makefile,v 1.25 2004/12/23 02:01:11 wiz Exp $
 
 DISTNAME=	xzgv-0.8
 PKGNAME=	xzgv-0.8.0.1
@@ -16,7 +16,6 @@ COMMENT=	Image viewer
 USE_MAKEINFO=	YES
 INFO_FILES=	xzgv
 
-USE_BUILDLINK3=		yes
 USE_X11BASE=		yes
 USE_GNU_TOOLS+=		make
 

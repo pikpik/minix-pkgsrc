@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:15:01 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/26 09:39:30 jlam Exp $
 
 DISTNAME=		gforth-0.6.2
 PKGREVISION=	1
@@ -12,7 +12,6 @@ COMMENT=		Fast interpreter for the Forth language
 
 ONLY_FOR_PLATFORM=	*-*-alpha *-*-i386 *-*-m68k *-*-powerpc *-*-sparc
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
 # Make sure elisp will be installed even if no emacs installed.

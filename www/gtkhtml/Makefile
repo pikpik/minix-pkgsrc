@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/10/03 00:18:26 tv Exp $
+# $NetBSD: Makefile,v 1.41 2004/11/30 18:26:40 wiz Exp $
 
 DISTNAME=		gtkhtml-1.1.10
 PKGREVISION=		5
@@ -10,7 +10,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Lightweight HTML rendering/printing/editing engine
 
-USE_BUILDLINK3=		YES
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/04/11 06:05:04 snj Exp $
+# $NetBSD: Makefile,v 1.13 2004/05/31 16:47:47 minskim Exp $
 
 DISTNAME=	sirc-2.211
 PKGREVISION=	1
@@ -41,7 +41,6 @@ SIRC_SCRIPTS= \
 		www.pl				\
 		yiff.pl
 
-USE_BUILDLINK3=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 DIST_SUBDIR=	sirc

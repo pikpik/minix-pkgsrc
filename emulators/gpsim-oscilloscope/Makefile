@@ -1,4 +1,4 @@
-# $NetBSD: $
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/29 20:53:30 bouyer Exp $
 #
 
 DISTNAME=	oscilloscope-0.1.1
@@ -10,7 +10,6 @@ MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Oscilloscope module for gpsim
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 USE_LANGUAGES=	c c++
 
 USE_LIBTOOL=	YES

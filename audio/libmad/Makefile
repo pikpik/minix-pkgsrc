@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/05/31 16:47:47 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:07 tv Exp $
 #
 
 DISTNAME=	libmad-0.15.1b
@@ -15,7 +15,6 @@ CONFLICTS=	mad<0.15
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

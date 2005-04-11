@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/01/06 18:57:29 abs Exp $
+# $NetBSD: Makefile,v 1.35 2004/01/20 03:24:44 lukem Exp $
 #
 
 DISTNAME=	procmail-3.22
@@ -12,7 +12,6 @@ COMMENT=	Local mail delivery agent
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 MAKE_ENV+=	SHELL=${SH} CHMOD=${CHMOD}
 INSTALL_TARGET=	install-suid install.man
 UNLIMIT_RESOURCES=      datasize

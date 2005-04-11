@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/20 11:30:56 grant Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/19 19:26:02 wiz Exp $
 #
 
 DISTNAME=	Unicode-String-2.07
@@ -13,7 +13,6 @@ COMMENT=	Perl5 modules to handle various Unicode issues
 
 DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 
-USE_BUILDLINK3=		yes
 PERL5_PACKLIST=         ${PERL5_SITEARCH}/auto/Unicode/String/.packlist
 
 .include "../../lang/perl5/module.mk"

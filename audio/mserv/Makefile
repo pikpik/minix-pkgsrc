@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/02/02 10:23:44 abs Exp $
+# $NetBSD: Makefile,v 1.30 2005/02/02 13:22:14 abs Exp $
 #
 
 DISTNAME=	mserv-0.35
@@ -15,7 +15,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/mserv
 CONFIGURE_ENV+=		MY_LIBS="-lvorbisfile -lvorbis"
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 REPLACE_PERL=		support/mservedit webclient/main.cgi \

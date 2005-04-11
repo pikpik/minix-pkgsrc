@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/10/03 00:14:42 tv Exp $
+# $NetBSD: Makefile,v 1.33 2005/02/21 10:53:15 wiz Exp $
 
 DISTNAME=	libXft-2.1.6
 PKGNAME=	Xft2-2.1.6
@@ -14,7 +14,6 @@ COMMENT=	Library for configuring and customizing font access
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		YES

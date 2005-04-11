@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/14 16:20:58 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/22 16:34:52 wiz Exp $
 #
 
 DISTNAME=		mdiff216
@@ -11,7 +11,6 @@ MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://www.logiqx.com/Tools/MAMEDiff/MAMEDiff.shtml
 COMMENT=		Compare MAME rom sets of different releases
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile

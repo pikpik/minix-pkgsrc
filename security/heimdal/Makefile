@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/12/23 14:43:28 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2004/12/28 02:47:49 reed Exp $
 
 DISTNAME=	heimdal-0.6.3
 PKGREVISION=	3
@@ -14,7 +14,6 @@ CONFLICTS+=	mit-krb5-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_GNU_TOOLS+=		yacc
 

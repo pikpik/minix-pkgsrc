@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/28 02:47:41 reed Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/20 18:50:09 salo Exp $
 #
 
 DISTNAME=		jabber-1.4.2
@@ -16,7 +16,6 @@ CONFLICTS=		jabberd2-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 HAS_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGINSTALL=		yes

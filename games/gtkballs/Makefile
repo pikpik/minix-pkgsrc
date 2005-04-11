@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/11/08 14:35:34 adam Exp $
+# $NetBSD: Makefile,v 1.17 2004/11/17 15:47:03 adam Exp $
 
 DISTNAME=	gtkballs-3.1.5
 CATEGORIES=	games
@@ -12,7 +12,6 @@ COMMENT=	GTK+ clone of "Color Lines"
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-included-gettext
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/games
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 

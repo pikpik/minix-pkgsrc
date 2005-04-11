@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:18 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/19 04:37:30 jlam Exp $
 #
 
 DISTNAME=	lsqlite_src
@@ -13,7 +13,6 @@ HOMEPAGE=	http://lua-users.org/wiki/LuaSqlite
 COMMENT=	SQLite binding for LUA
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	yes
 
 CFLAGS+=	-fPIC
 LIBS+=		-llua -lsqlite -llualib

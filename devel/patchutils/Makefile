@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/24 08:45:26 recht Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/01 03:22:02 minskim Exp $
 #
 
 DISTNAME=		patchutils-0.2.30
@@ -13,7 +13,6 @@ COMMENT=		Some programs for manipulating patch files
 
 DEPENDS+=               patch-[0-9]*:../../devel/patch
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes

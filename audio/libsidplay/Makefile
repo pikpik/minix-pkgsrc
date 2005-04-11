@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/09/07 16:45:32 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2004/10/03 00:13:07 tv Exp $
 #
 
 DISTNAME=	libsidplay-1.36.59
@@ -13,7 +13,6 @@ COMMENT=	Sidplay Library
 
 CONFLICTS=	sidplay-1.36.*
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_GNU_TOOLS+=		make

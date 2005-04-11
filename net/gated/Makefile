@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/28 02:47:46 reed Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/24 21:12:58 wiz Exp $
 
 DISTNAME=       gated-3-5-11
 PKGNAME=        gated-3.5.11
@@ -18,7 +18,6 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		gated
 RCD_SCRIPT_SRC.gated=	${FILESDIR}/gated

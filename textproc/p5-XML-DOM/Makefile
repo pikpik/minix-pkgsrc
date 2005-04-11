@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/05/29 01:19:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/20 11:31:10 grant Exp $
 #
 
 DISTNAME=	XML-DOM-1.43
@@ -19,7 +19,6 @@ CONFLICTS+=	p5-libxml-enno-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML-DOM/.packlist
 
 .include "../../lang/perl5/module.mk"

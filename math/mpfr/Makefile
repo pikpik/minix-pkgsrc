@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/05 22:11:38 rh Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:12:56 tv Exp $
 #
 
 DISTNAME=		mpfr-2.0.3
@@ -11,7 +11,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.mpfr.org/
 COMMENT=		GMP-based library for multiple-precision floating-point computations
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-gmp-include=${GMP_DIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/10/08 04:45:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2004/11/29 11:27:02 xtraeme Exp $
 #
 
 DISTNAME=	xcompmgr-1.1.1	
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.freedesktop.org/
 COMMENT=	Sample compositing manager for X.org >= 6.8.0
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 
 .include "../../mk/bsd.prefs.mk"

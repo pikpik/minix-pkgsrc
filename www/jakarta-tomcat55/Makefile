@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2005/01/21 12:24:39 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/01 13:35:29 abs Exp $
 
 DISTNAME=       jakarta-tomcat-${TOMCAT_VERSION}
 CATEGORIES=	www java
@@ -14,7 +14,6 @@ TOMCAT_VERSION=	5.5.7
 
 # This needs java 1.4 or higher.
 USE_JAVA2=	yes
-USE_BUILDLINK3=	yes
 
 TOMCAT_LIB=     ${PREFIX}/tomcat
 CATALINA_DIR=	Catalina/localhost

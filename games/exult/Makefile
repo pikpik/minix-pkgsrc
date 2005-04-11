@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/26 18:53:31 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/27 15:43:35 wiz Exp $
 #
 
 DISTNAME=		exult-1.2
@@ -10,7 +10,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://exult.sourceforge.net/
 COMMENT=		Open-source Ultima 7 engine
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

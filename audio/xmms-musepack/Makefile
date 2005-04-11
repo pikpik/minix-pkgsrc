@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/04 20:35:09 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/14 18:45:11 minskim Exp $
 #
 
 DISTNAME=		xmms-musepack-1.1
@@ -10,7 +10,6 @@ MAINTAINER=		jmmv@NetBSD.org
 HOMEPAGE=		http://www.musepack.net/
 COMMENT=		XMMS plugin for musepack (mpc) files
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c++
 GNU_CONFIGURE=		yes
 

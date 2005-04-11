@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:48 recht Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/09 12:16:02 markd Exp $
 #
 
 DISTNAME=	numarray-1.1.1
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.stsci.edu/resources/software_hardware/numarray
 COMMENT=	Array manipulation
 
-USE_BUILDLINK3=		yes
 PYDISTUTILSPKG=		yes
 PYTHON_VERSIONS_ACCEPTED= 24 23 22
 

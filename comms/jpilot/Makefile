@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/12/15 16:00:23 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2004/12/15 16:01:48 jlam Exp $
 #
 
 DISTNAME=		jpilot-0.99.5
@@ -14,7 +14,6 @@ BUILD_USES_MSGFMT=	YES
 
 CONFLICTS+=		jpilot-libplugin-[0-9]*
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome1-1.0
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

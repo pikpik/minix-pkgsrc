@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/29 19:39:20 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/02/02 17:28:59 jlam Exp $
 
 DISTNAME=      	Kwiki-RecentChanges-0.13
 PKGNAME=       	p5-${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Kwiki plugin to display recent changes
 
 DEPENDS+=	p5-Kwiki>=0.37nb1:../../www/p5-Kwiki
 
-USE_BUILDLINK3=	yes
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Kwiki/RecentChanges/.packlist
 
 .include "../../lang/perl5/module.mk"

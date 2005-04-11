@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/06 21:34:28 markd Exp $
 
 DISTNAME=	koffice-i18n-pt_BR-1.3.5
 CATEGORIES=	misc kde
@@ -9,7 +9,6 @@ MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://www.koffice.org/
 COMMENT=	Portuguese BR language pack for KOffice
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 

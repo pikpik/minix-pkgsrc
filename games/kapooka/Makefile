@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/24 17:05:03 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/27 15:43:35 wiz Exp $
 #
 
 DISTNAME=		kapooka_0.2
@@ -13,7 +13,6 @@ HOMEPAGE=		http://kapooka.sourceforge.net/
 COMMENT=		Puzzle game
 
 WRKSRC=			${WRKDIR}/kapooka
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 SUBST_CLASSES+=		kapooka

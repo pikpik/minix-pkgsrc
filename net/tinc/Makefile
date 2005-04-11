@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/05/07 01:14:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:18:00 tv Exp $
 #
 
 DISTNAME=	tinc-1.0.1
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://tinc.nl.linux.org/
 COMMENT=	Virtual Private Network (VPN) daemon
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 INFO_FILES=	tinc.info

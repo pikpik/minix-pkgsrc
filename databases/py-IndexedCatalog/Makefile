@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/26 22:53:29 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/07/22 09:16:01 recht Exp $
 #
 
 DISTNAME=		IndexedCatalog-0.6.0
@@ -10,7 +10,6 @@ MAINTAINER=		dotz@irc.pl
 HOMEPAGE=		http://async.com.br/projects/IndexedCatalog/
 COMMENT=		Indexed Catalog extension for standalone ZODB
 
-USE_BUILDLINK3=		yes
 PYDISTUTILSPKG=		yes
 PYBINMODULE=		yes
 

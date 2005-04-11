@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/16 15:42:58 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/24 21:12:56 wiz Exp $
 
 DISTNAME=	rblcheck-1.4
 CATEGORIES=	mail
@@ -11,7 +11,6 @@ COMMENT=	Command-line interface to Paul Vixie's RBL filter
 
 DOCS=		BUGS CHANGES CREDITS INSTALL PLATFORMS TODO
 
-USE_BUILDLINK3=	YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rblcheck ${PREFIX}/bin

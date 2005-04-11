@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/07/22 09:16:01 recht Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/23 20:41:49 recht Exp $
 #
 
 DISTNAME=		Lupy-0.2.1
@@ -10,7 +10,6 @@ MAINTAINER=		dotz@irc.pl
 HOMEPAGE=		http://divmod.org/Lupy/index.html
 COMMENT=		Full-text indexer and search engine
 
-USE_BUILDLINK3=		yes
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 

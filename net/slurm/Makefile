@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/10/03 00:17:58 tv Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/14 16:27:17 ben Exp $
 #
 
 DISTNAME=	slurm-0.3.3
@@ -9,7 +9,6 @@ MAINTAINER=	mail@eckigesauge.de
 HOMEPAGE=	http://www.raisdorf.net/projects/slurm/
 COMMENT=	Realtime traffic statistics
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 
 do-install:

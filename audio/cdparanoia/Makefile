@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/10 12:30:48 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/30 15:27:44 xtraeme Exp $
 #
 
 DISTNAME=	cdparanoia-III-alpha9.8
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-*-* Linux-*-* DragonFly-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES

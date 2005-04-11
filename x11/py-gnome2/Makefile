@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/29 11:12:10 recht Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/23 20:41:49 recht Exp $
 #
 
 DISTNAME=	gnome-python-2.6.2
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python binding for GNOME2
 
 PY_PATCHPLIST=	YES
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 PKGCONFIG_OVERRIDE+=	gnome-python-2.0.pc.in
 GNU_CONFIGURE=	YES

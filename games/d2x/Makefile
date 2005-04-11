@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/27 15:43:34 wiz Exp $
 #
 
 DISTNAME=	d2x-0.2.5
@@ -12,7 +12,6 @@ COMMENT=	Descent II port
 
 HAS_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 
 D2X_DATA=		${PREFIX}/share/games/${PKGBASE}

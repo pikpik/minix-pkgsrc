@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/29 11:12:50 recht Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/23 20:41:50 recht Exp $
 #
 
 DISTNAME=	pygtk-2.4.1
@@ -14,7 +14,6 @@ COMMENT=	Python bindings for GTK+2
 CONFLICTS=	${PYPKGPREFIX}-gtk<0.6.10
 
 PY_PATCHPLIST=	YES
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 PKGCONFIG_OVERRIDE+=	pygtk-2.0.pc.in
 GNU_CONFIGURE=	YES

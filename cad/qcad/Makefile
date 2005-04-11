@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/04/17 20:46:09 snj Exp $
+# $NetBSD: Makefile,v 1.22 2004/10/03 00:13:13 tv Exp $
 
 DISTNAME=		qcad-1.5.4-src
 PKGNAME=		qcad-1.5.4
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.qcad.org/
 COMMENT=		2D CAD System
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=		yes
 USE_X11=		# defined
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 MAKE_ENV+=		QTDIR=${BUILDLINK_PREFIX.qt3}

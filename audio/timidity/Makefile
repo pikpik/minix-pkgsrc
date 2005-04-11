@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/10/13 15:23:40 adam Exp $
+# $NetBSD: Makefile,v 1.51 2004/12/03 14:20:03 ben Exp $
 
 DISTNAME=	TiMidity++-2.13.2
 PKGNAME=	${DISTNAME:S/TiMidity++/timidity/}
@@ -13,7 +13,6 @@ COMMENT=	MIDI to WAV renderer and player
 
 CONFLICTS=	kdemultimedia-2.[0-9]*
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-vt100
 CONFIGURE_ARGS+=	--enable-gtk --enable-wrd --enable-xaw --enable-ncurses

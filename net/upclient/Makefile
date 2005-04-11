@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/02/21 20:26:13 hubertf Exp $
+# $NetBSD: Makefile,v 1.20 2005/03/07 09:41:45 uebayasi Exp $
 #
 
 DISTNAME=	upclient-4.2.1.23
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://uptimes.hostingwired.com/
 COMMENT=	Keeps track of your server uptime, and compares it to other hosts
 
-USE_BUILDLINK3=	YES
 USE_PKGINSTALL=	YES
 
 BUILD_TARGET=	bsd

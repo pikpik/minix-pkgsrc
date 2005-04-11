@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/15 14:50:07 tv Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/13 13:18:07 kristerw Exp $
 #
 
 DISTNAME=		libmatheval-1.1.1
@@ -10,7 +10,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/libmatheval/
 COMMENT=		Library for evaluating mathematical expressions
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/12/03 15:51:09 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/04 13:57:15 wiz Exp $
 
 DISTNAME=	guile-slib-2.4.2
 PKGREVISION=	6
@@ -12,7 +12,6 @@ COMMENT=	SLIB glue files for guile 1.6
 
 DEPENDS+=	slib>=2.4.2:../../devel/slib
 
-USE_BUILDLINK3=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/09 18:06:21 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:10 grant Exp $
 #
 
 DISTNAME=	Text-Quoted-1.8
@@ -15,7 +15,6 @@ DEPENDS+=	p5-Text-Autoformat>=1.04:../../textproc/p5-Text-Autoformat
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Text/Quoted/.packlist
 

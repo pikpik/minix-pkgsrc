@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/10/03 00:13:12 tv Exp $
+# $NetBSD: Makefile,v 1.30 2005/02/23 11:07:35 dmcmahill Exp $
 #
 
 DISTNAME=	dinotrace-9.2a
@@ -11,7 +11,6 @@ COMMENT=	Tool for viewing the output of digital simulators
 
 GNU_CONFIGURE=		YES
 INFO_FILES=		dinotrace.info
-USE_BUILDLINK3=		YES
 USE_PERL5=		build
 USE_X11=		YES
 USE_GNU_TOOLS+=		make

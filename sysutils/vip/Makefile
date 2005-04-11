@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/14 11:41:52 agc Exp $
+# $NetBSD: Makefile,v 1.2 2005/02/09 08:40:33 seb Exp $
 
 DISTNAME=	vip-19971113
 PKGREVISION=	1
@@ -15,7 +15,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 WRKSRC=		${WRKDIR}
-NO_BUILDLINK=	# defined
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined
 

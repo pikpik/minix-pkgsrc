@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/26 02:43:38 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/02/07 14:11:26 wiz Exp $
 #
 
 DISTNAME=		p7zip_4.14.01_src
@@ -13,7 +13,6 @@ COMMENT=		File archiver with high compression
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 MAKEFILE=		makefile
 NO_CONFIGURE=		yes

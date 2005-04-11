@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:12:55 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/13 02:26:34 reed Exp $
 
 DISTNAME=	bc-1.06
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.gnu.org/software/bc/bc.html
 COMMENT=	Arbitrary precision calculator language
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 INFO_FILES=	bc.info dc.info
 

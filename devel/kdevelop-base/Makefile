@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/01/11 13:41:27 markd Exp $
+# $NetBSD: Makefile,v 1.40 2005/03/23 22:38:45 markd Exp $
 
 DISTNAME=	kdevelop-3.2.0
 PKGNAME=	kdevelop-base-3.2.0
@@ -10,7 +10,6 @@ COMMENT=	Base modules for IDE for Unix/X11/KDE
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
 BUILD_USES_MSGFMT=	yes
-USE_BUILDLINK3=		yes
 
 DEPENDS+=		automake>=1.7:../../devel/automake
 DEPENDS+=		doxygen>=1.3.5:../../devel/doxygen

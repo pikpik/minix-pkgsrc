@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/07/21 23:49:28 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2004/08/22 00:23:55 schmonz Exp $
 #
 
 DISTNAME=	autorespond-2.0.5
@@ -11,7 +11,6 @@ COMMENT=	Simple autoresponder add-on package for qmail
 
 DEPENDS+=	qmail>=1.03:../../mail/qmail
 
-USE_BUILDLINK3=	yes
 
 SUBST_CLASSES+=		qmaildir
 SUBST_STAGE.qmaildir=	do-configure

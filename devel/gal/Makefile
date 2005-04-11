@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2004/11/30 18:26:39 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2005/02/09 20:20:01 wiz Exp $
 
 DISTNAME=		gal-0.24
 CATEGORIES=		gnome devel
@@ -9,7 +9,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Gnome Application Libraries (gal-1.0 API)
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome1-1.5
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES

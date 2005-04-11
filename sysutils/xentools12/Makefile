@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/05/12 08:01:05 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:49 recht Exp $
 #
 
 DISTNAME=		xeno-1.2-src-040418
@@ -31,7 +31,6 @@ PYTHON_VERSIONS_ACCEPTED= 22 23
 PY_PATCHPLIST=		yes
 PYTHON_PATCH_SCRIPTS=	examples/xc_dom_control.py examples/xc_dom_create.py
 PYTHON_PATCH_SCRIPTS+=	examples/xc_vd_tool.py
-USE_BUILDLINK3=		yes
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

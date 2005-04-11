@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/12 00:15:48 seb Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:30:56 grant Exp $
 #
 
 DISTNAME=	Unicode-IMAPUtf7-2.00
@@ -15,7 +15,6 @@ DEPENDS+=	p5-Unicode-String>=2.06:../../converters/p5-Unicode-String
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Unicode/IMAPUtf7/.packlist
 
 .include "../../lang/perl5/module.mk"

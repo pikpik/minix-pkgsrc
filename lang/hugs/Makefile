@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/10/03 00:15:01 tv Exp $
+# $NetBSD: Makefile,v 1.28 2004/12/03 15:15:00 wiz Exp $
 
 DISTNAME=	hugs98-Dec2001
 PKGNAME=	hugs98-200112
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.haskell.org/hugs/
 COMMENT=	Nottingham and Yale Haskell interpreter and programming environment
 
 WRKSRC=			${WRKDIR}/hugs98-Dec2001/src/unix
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 CONFIGURE_ARGS+=	--with-readline
 BUILD_TARGET=		default

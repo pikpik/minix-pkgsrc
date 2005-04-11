@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2004/12/21 17:58:55 salo Exp $
+# $NetBSD: Makefile,v 1.54 2005/04/08 12:45:22 salo Exp $
 #
 
 DISTNAME=		lftp-3.1.2
@@ -17,7 +17,6 @@ COMMENT=		Powerful command line file transfer client
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LANGUAGES=		c c++

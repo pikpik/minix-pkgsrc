@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/05/04 23:46:37 snj Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:11 grant Exp $
 #
 
 DISTNAME=	XML-XQL-0.68
@@ -19,7 +19,6 @@ DEPENDS+=	p5-libwww-[0-9]*:../../www/p5-libwww
 
 CONFLICTS+=	p5-libxml-enno-[0-9]*
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/XQL/.packlist
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/01/01 02:11:30 minskim Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/28 14:58:28 adam Exp $
 
 DISTNAME=	eel-1.0.2
 CATEGORIES=	devel gnome
@@ -11,7 +11,6 @@ COMMENT=	Eazel Extensions Library
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 USE_PERL5=		build

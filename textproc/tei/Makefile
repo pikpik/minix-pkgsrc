@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/08/03 14:04:09 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/06 18:24:23 wiz Exp $
 
 DISTNAME=	dtd
 PKGNAME=	tei-4
@@ -15,7 +15,6 @@ WRKSRC=		${WRKDIR}/dtd
 DIST_SUBDIR=	${PKGNAME}
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
-USE_BUILDLINK3=	YES
 
 DTDDIR=		${LOCALBASE}/share/xml/tei
 

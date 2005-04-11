@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/07/18 14:56:09 kim Exp $
+# $NetBSD: Makefile,v 1.34 2004/09/15 14:51:42 jlam Exp $
 #
 
 DISTNAME=		mod_perl-1.29
@@ -17,7 +17,6 @@ CONFLICTS=		ap2-perl-[0-9]*
 DEPENDS+=		${BUILDLINK_DEPENDS.apache}:../../www/apache
 DEPENDS+=		p5-BSD-Resource>=1.10:../../devel/p5-BSD-Resource
 
-USE_BUILDLINK3=		YES
 APACHE_MODULE=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/mod_perl/.packlist
 

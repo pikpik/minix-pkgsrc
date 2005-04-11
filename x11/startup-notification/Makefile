@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/26 17:22:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/10 15:37:19 tv Exp $
 
 DISTNAME=		startup-notification-0.8
 CATEGORIES=		x11 gnome
@@ -12,7 +12,6 @@ COMMENT=		X11 application startup notification library
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
 

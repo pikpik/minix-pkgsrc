@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:00 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/03/24 21:12:59 wiz Exp $
 
 DISTNAME=	tf-40s1
 PKGNAME=	tf-4.0s1
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://tf.tcp.com/~hawkeye/tf/
 COMMENT=	Popular programmable MUD client, with macro support and more
 
-USE_BUILDLINK3=	YES
 
 MAKEFILE=	${WRKSRC}/unix/Makefile
 MAKE_ENV=	TFVER="${DISTNAME:S/^tf-//}"

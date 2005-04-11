@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2004/12/03 15:14:59 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2004/12/28 23:18:18 reed Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
@@ -17,7 +17,6 @@ COMMENT=	Toolkit and library for raster image processing
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
 WRKSRC=		${WRKDIR}
-USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 USE_X11=	yes
 CONFIGURE_SCRIPT=./Configure

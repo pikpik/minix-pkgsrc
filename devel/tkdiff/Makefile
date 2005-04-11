@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/03/05 14:53:08 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2005/03/05 14:59:28 minskim Exp $
 #
 
 DISTNAME=	tkdiff
@@ -18,7 +18,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 DIST_SUBDIR=	${PKGNAME_NOREV}
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
-NO_BUILDLINK=	yes
 
 INSTALLATION_DIRS=	bin
 

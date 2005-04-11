@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/28 23:35:59 adrianp Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/05 16:11:47 adrianp Exp $
 #
 
 DISTNAME=	scdp-1.0b
@@ -11,7 +11,6 @@ MAINTAINER=	arved@arved.at
 HOMEPAGE=       http://www.sourceforge.net/projects/scdp/
 COMMENT=	Program to send Cisco Discovery Protocol packets
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 BUILDLINK_DEPENDS.libnet+=	libnet-1.0.*

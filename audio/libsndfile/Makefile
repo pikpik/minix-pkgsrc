@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/02/24 03:37:28 ben Exp $
+# $NetBSD: Makefile,v 1.28 2005/03/19 13:59:13 ben Exp $
 
 DISTNAME=	libsndfile-1.0.11
 CATEGORIES=	audio
@@ -10,7 +10,6 @@ COMMENT=	Library for reading and writing audio files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE=	sndfile.pc.in

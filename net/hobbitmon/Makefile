@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/24 18:16:20 manu Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/20 10:51:32 manu Exp $
 #
 
 DISTNAME=	hobbit-4.0-beta6
@@ -13,7 +13,6 @@ COMMENT=	Network services monitor a la Big Brother
 
 DEPENDS+=	fping>2:../../net/fping
 
-USE_BUILDLINK3=	YES
 HAS_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 USE_PKGINSTALL=YES

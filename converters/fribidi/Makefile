@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/05/07 01:14:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:17 tv Exp $
 #
 
 DISTNAME=		fribidi-0.10.4
@@ -11,7 +11,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://fribidi.sourceforge.net/
 COMMENT=		Free Implementation of the Unicode Bidirectional Algorithm
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=            yes
 GNU_CONFIGURE=		yes
 

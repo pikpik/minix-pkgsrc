@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/03 00:08:02 kristerw Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:13 grant Exp $
 
 DISTNAME=	HTML-LinkExtractor-0.121
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ EXTRACT_USING_PAX=	# defined
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/HTML/LinkExtractor/.packlist
 
 .include "../../lang/perl5/module.mk"

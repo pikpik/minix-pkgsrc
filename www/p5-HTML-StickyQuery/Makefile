@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/20 04:29:10 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:31:13 grant Exp $
 #
 
 DISTNAME=		HTML-StickyQuery-0.12
@@ -17,7 +17,6 @@ DEPENDS+=		p5-URI>=1.27:../../www/p5-URI
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/StickyQuery/.packlist
 
 .include "../../lang/perl5/module.mk"

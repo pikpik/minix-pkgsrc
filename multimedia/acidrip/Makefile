@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/11/23 12:03:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/27 15:43:37 wiz Exp $
 #
 
 DISTNAME=	acidrip-0.14
@@ -15,7 +15,6 @@ DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder
 DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 DEPENDS+=	p5-gtk2>=1.040:../../x11/p5-gtk2
 
-USE_BUILDLINK3=	yes
 USE_PERL5=	yes
 
 PERL5_REQD=     5.8

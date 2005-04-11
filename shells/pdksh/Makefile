@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/10/04 10:23:16 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/05 12:36:41 jlam Exp $
 #
 
 DISTNAME=	pdksh-5.2.14
@@ -17,7 +17,6 @@ COMMENT=	Free clone of the AT&T Korn shell
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=pd
 

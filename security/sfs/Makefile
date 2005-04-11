@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:18:13 tv Exp $
+# $NetBSD: Makefile,v 1.17 2004/12/28 02:47:49 reed Exp $
 #
 
 DISTNAME=		sfs-0.7.2
@@ -19,7 +19,6 @@ CONFIGURE_ARGS+=	--with-sfsdir=${SFS_ROOT}
 CONFIGURE_ARGS+=	--disable-uvfs
 
 USE_PKGINSTALL=		yes
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 USE_PERL5=		yes
 

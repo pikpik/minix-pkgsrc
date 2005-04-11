@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/18 17:53:18 peter Exp $
 #
 
 DISTNAME=		tcllib-1.7
@@ -10,7 +10,6 @@ MAINTAINER=		peter@pointless.nl
 HOMEPAGE=		http://tcllib.sourceforge.net/
 COMMENT=		Collection of utility modules for Tcl
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 NO_BUILD=		yes
 

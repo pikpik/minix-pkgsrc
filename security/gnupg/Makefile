@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2005/02/09 11:35:50 markd Exp $
+# $NetBSD: Makefile,v 1.74 2005/03/22 17:50:55 wiz Exp $
 
 DISTNAME=	gnupg-1.4.1
 CATEGORIES=	security
@@ -22,7 +22,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CRYPTO=			yes
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make
 CONFIGURE_ARGS+=	--with-static-rnd=auto

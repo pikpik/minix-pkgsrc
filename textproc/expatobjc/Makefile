@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/05 00:28:50 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:18:19 tv Exp $
 #
 
 DISTNAME=		expatobjc-1.0
@@ -10,7 +10,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://expatobjc.sourceforge.net/
 COMMENT=		Objective-C Wrapper for Expat
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes

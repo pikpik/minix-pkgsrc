@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:14:49 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/22 03:04:31 minskim Exp $
 #
 
 DISTNAME=		cqcam-0.45a
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-alpha
 LICENSE=		no-profit
 
 HAS_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		c c++
 USE_X11=		YES
 

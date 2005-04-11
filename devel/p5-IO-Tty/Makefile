@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/25 03:49:17 minskim Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:00 grant Exp $
 #
 
 DISTNAME=	IO-Tty-1.02
@@ -13,7 +13,6 @@ COMMENT=	Another Perl class for I/O on tty and pseudo-tty devices
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/IO/Tty/.packlist
 
 .include "../../lang/perl5/module.mk"

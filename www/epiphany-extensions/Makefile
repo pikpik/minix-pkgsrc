@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/01/10 13:18:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2005/03/22 16:26:48 jmmv Exp $
 #
 
 DISTNAME=	epiphany-extensions-1.6.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.gnome.org/projects/epiphany/extensions.html
 COMMENT=	Extensions for the Epiphany web browser
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS=		make
 USE_LIBTOOL=		YES
 USE_MSGFMT_PLURALS=	YES

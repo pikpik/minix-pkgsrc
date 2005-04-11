@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:18:20 tv Exp $
+# $NetBSD: Makefile,v 1.22 2004/12/20 11:31:10 grant Exp $
 #
 
 DISTNAME=	XML-Parser-2.34
@@ -14,7 +14,6 @@ COMMENT=	Perl extension interface to James Clark's XML parser, expat
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/Parser/.packlist
 MAKE_PARAMS+=		EXPATLIBPATH=${BUILDLINK_PREFIX.expat}/lib
 MAKE_PARAMS+=		EXPATINCPATH=${BUILDLINK_PREFIX.expat}/include

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/24 14:56:47 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/27 15:43:35 wiz Exp $
 #
 
 DISTNAME=		enigma-0.81
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GCC_REQD+=		2.95
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++

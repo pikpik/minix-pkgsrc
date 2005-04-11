@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/03/23 04:41:00 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2004/10/03 00:14:47 tv Exp $
 #
 
 DISTNAME=		xracer-0.96.9
@@ -12,7 +12,6 @@ COMMENT=		XRacer is a clone of the popular Psygnosis game Wipeout
 
 BUILD_USES_MSGFMT=	# defined
 
-USE_BUILDLINK3=		yes
 USE_X11=		# defined
 USE_GNU_TOOLS+=		make
 USE_PERL5=		# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/10/03 00:13:14 tv Exp $
+# $NetBSD: Makefile,v 1.29 2004/10/22 09:14:45 adam Exp $
 
 DISTNAME=	ekg-1.5
 PKGREVISION=	2
@@ -10,7 +10,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://dev.null.pl/ekg/
 COMMENT=	Experimental Gadu-Gadu Client (Polish instant messaging system)
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_GNU_READLINE=	YES
 USE_LIBTOOL=		YES

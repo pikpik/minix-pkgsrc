@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/07/22 09:16:02 recht Exp $
+# $NetBSD: Makefile,v 1.13 2004/10/03 00:14:57 tv Exp $
 #
 
 DISTNAME=	pygimp-1.2
@@ -14,7 +14,6 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN}
 USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE= ${WRKSRC}/ltconfig
-USE_BUILDLINK3= yes
 
 PYTHON_PATCH_SCRIPTS= plug-ins/clothify.py plug-ins/foggify.py
 PYTHON_PATCH_SCRIPTS+= plug-ins/gimpcons.py plug-ins/gtkcons.py

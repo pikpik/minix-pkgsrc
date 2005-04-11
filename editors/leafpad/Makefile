@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/05 08:32:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/05 11:42:55 jmmv Exp $
 #
 
 DISTNAME=	leafpad-0.7.8
@@ -10,7 +10,6 @@ HOMEPAGE=	http://tarot.freeshell.org/leafpad/
 COMMENT=	Simple and light text editor using GTK+
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 

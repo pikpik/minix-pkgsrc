@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/06 20:44:05 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:30 tv Exp $
 #
 
 DISTNAME=		libgnomeuimm-2.0.0
@@ -12,7 +12,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://gtkmm.sourceforge.net/
 COMMENT=		C++ bindings for libgnomeui
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/libgnomeui/libgnomeuimm-2.0.pc.in

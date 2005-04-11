@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/12/12 00:14:13 tron Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/28 02:47:44 reed Exp $
 
 DISTNAME=	milter-greylist-1.6
 PKGREVISION=	1
@@ -11,7 +11,6 @@ HOMEPAGE=	http://hcpnet.free.fr/milter-greylist/
 COMMENT=	Easy-to-use greylist milter for sendmail
 
 USE_PKGINSTALL=	YES
-USE_BUILDLINK3= YES
 
 HAS_CONFIGURE=	YES
 CONFIGURE_ARGS+=--with-user=smmsp

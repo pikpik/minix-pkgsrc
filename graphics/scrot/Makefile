@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:14:57 tv Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/15 12:22:14 tv Exp $
 
 DISTNAME=	scrot-0.8
 PKGREVISION=	6
@@ -10,7 +10,6 @@ HOMEPAGE=	http://linuxbrit.co.uk/scrot/
 COMMENT=	Commandline screen capture util like "import", but using imlib2
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 
 .include "../../devel/giblib/buildlink3.mk"

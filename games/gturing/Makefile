@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/03/26 02:27:40 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:14:45 tv Exp $
 #
 
 DISTNAME=		gturing-0.1.1
@@ -14,7 +14,6 @@ COMMENT=		GNOME2 turing machine emulator
 BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
 USE_GNU_TOOLS+=		make

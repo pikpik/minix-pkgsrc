@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/07/01 00:51:23 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2004/07/01 10:57:37 wiz Exp $
 #
 
 DISTNAME=	wonka-src-0.9.6-release
@@ -20,7 +20,6 @@ BUILD_DEPENDS+=	jikes>=1.18:../../lang/jikes
 BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 WRKSRC=		${WRKDIR}/open-wonka
-USE_BUILDLINK3=	yes
 USE_X11=	# defined
 
 JVM_HOME=	${PREFIX}/java/${PKGBASE}

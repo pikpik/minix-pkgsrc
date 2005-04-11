@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:14:56 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:46 recht Exp $
 #
 
 DISTNAME=		MayaVi-1.3
@@ -12,7 +12,6 @@ COMMENT=		Scientific data visualizer written in Python
 
 DEPENDS=	vtk-python>=4.2:../../graphics/vtk-python
 
-USE_BUILDLINK3=		yes
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/01/22 16:22:25 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/10 02:55:39 jlam Exp $
 
 DISTNAME=	openpam-20050201
 CATEGORIES=	security
@@ -10,7 +10,6 @@ COMMENT=	open-source PAM library
 
 CONFLICTS+=	PAM-[0-9]*
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

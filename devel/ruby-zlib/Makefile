@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/06 16:52:39 taca Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:53 wiz Exp $
 
 DISTNAME=		${RUBY_DISTNAME}
 PKGNAME=		${RUBY_PKGPREFIX}-zlib-${RUBY_VERSION}
@@ -12,7 +12,6 @@ COMMENT=		Zlib library for Ruby
 
 RUBY_HAS_ARCHLIB=	yes
 RUBY_VERSION_SUPPORTED=	18
-USE_BUILDLINK3=		yes
 USE_RUBY_EXTCONF=	yes
 EXTRACT_ELEMENTS=	${RUBY_DISTNAME}/ext/zlib
 WRKSRC=			${RUBY_WRKSRC}/ext/zlib

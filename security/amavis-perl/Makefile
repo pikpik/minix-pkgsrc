@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/07/02 20:47:49 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2004/07/29 00:59:53 wiz Exp $
 
 DISTNAME=	amavisd-${VERSION}
 PKGNAME=	amavis-perl-${VERSION}
@@ -34,7 +34,6 @@ DEPENDS+=	p5-MIME-tools>=5.313:../../mail/p5-MIME-tools
 DEPENDS+=	p5-Net-[0-9]*:../../net/p5-Net
 DEPENDS+=	p5-Unix-Syslog-[0-9]*:../../sysutils/p5-Unix-Syslog
 
-USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.prefs.mk"
 .if defined(USE_MILTER) && ${USE_MILTER} == "YES"

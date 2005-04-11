@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/29 20:45:42 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/14 06:21:50 minskim Exp $
 #
 
 DISTNAME=		gmpc-0.11.2
@@ -9,7 +9,6 @@ MAINTAINER=		pkg@burningsoda.com
 HOMEPAGE=		http://qballcow.nl/?name=gmpc
 COMMENT=		GNOME client for the Music Player Daemon
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 

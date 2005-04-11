@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/02/01 17:02:00 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2005/02/27 22:49:43 wiz Exp $
 #
 
 DISTNAME=	mtr-0.69
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 
 INSTALLATION_DIRS=	man/man8 sbin

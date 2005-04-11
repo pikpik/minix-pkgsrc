@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/02/17 03:09:27 uebayasi Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/27 15:43:37 wiz Exp $
 #
 
 DISTNAME=	avidemux-2.0.18
@@ -13,7 +13,6 @@ COMMENT=	Graphical video editing program
 BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES
 

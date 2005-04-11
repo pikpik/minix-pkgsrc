@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/10/03 00:15:02 tv Exp $
+# $NetBSD: Makefile,v 1.32 2004/12/03 15:15:01 wiz Exp $
 
 DISTNAME=		nhc98src-1.16
 PKGNAME=		nhc98-1.16
@@ -14,7 +14,6 @@ COMMENT=		Portable Haskell 98 compiler
 NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64 *-*-x86_64
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=		YES
 
 INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
 INCOMPAT_CURSES+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-K]*

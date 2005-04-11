@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2004/10/03 00:18:15 tv Exp $
+# $NetBSD: Makefile,v 1.45 2004/11/30 18:26:40 wiz Exp $
 
 DISTNAME=		gnome-vfs-1.0.5
 PKGREVISION=		7
@@ -12,7 +12,6 @@ COMMENT=		GNOME Virtual File System
 BUILD_USES_MSGFMT=	YES
 BUILDLINK_DEPENDS.gnome-mime-data=	gnome-mime-data>=2.0.1
 
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_GNU_TOOLS+=		make

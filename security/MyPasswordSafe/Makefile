@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/06 00:13:19 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/06 14:23:00 wiz Exp $
 #
 
 DISTNAME=		MyPasswordSafe-20041004.src
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.semanticgap.com/myps/
 COMMENT=		Easy-to-use password manager
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 MAKE_FLAGS+=		QMAKE=${QTDIR:Q}/bin/qmake
 

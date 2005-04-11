@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:14:46 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/27 15:43:36 wiz Exp $
 #
 
 DISTNAME=		stratagus-2.1-src
@@ -12,7 +12,6 @@ HOMEPAGE=		http://stratagus.sourceforge.net/
 COMMENT=		Real-time strategy engine
 
 WRKSRC=			${WRKDIR}/stratagus-040702
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

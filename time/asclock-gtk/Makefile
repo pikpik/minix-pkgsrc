@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:21 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/12/03 15:15:11 wiz Exp $
 #
 
 DISTNAME=	asclock-gtk-2.1.10beta
@@ -13,7 +13,6 @@ COMMENT=	Dockable clock and calendar with themes for GTK+
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
 WRKSRC=		${WRKDIR}/asclock-gtk
-USE_BUILDLINK3=	yes
 USE_X11BASE=	# defined
 
 PLIST_SRC=	${PKGDIR}/PLIST \

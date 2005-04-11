@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/10 18:27:37 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/04 20:57:50 tv Exp $
 #
 
 DISTNAME=		pgpenvelope-2.10.2
@@ -17,7 +17,6 @@ DEPENDS+=		p5-String-Approx>=3.13:../../textproc/p5-String-Approx
 DEPENDS+=		p5-Term-ReadKey>=2.14:../../devel/p5-Term-ReadKey
 DEPENDS+=		p5-Term-ReadLine>=1.01:../../devel/p5-Term-ReadLine
 
-USE_BUILDLINK3=		yes
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/pgpenvelope/.packlist
 
 pre-configure:

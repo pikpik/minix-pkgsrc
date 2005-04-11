@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/22 16:10:12 jmmv Exp $
 #
 
 DISTNAME=	gnome-menus-2.10.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Implementation of the desktop menu specification for GNOME
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:18:19 tv Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/24 03:16:12 wiz Exp $
 #
 
 DISTNAME=	aspell-uk-0.51-0
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://aspell.net/
 COMMENT=	Ukrainian language support for aspell
 
-USE_BUILDLINK3=	YES
 HAS_CONFIGURE=	YES
 
 .include "../../textproc/aspell/buildlink3.mk"

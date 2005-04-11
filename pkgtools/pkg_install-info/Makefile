@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/01/06 05:32:29 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/02/07 16:12:38 seb Exp $
 #
 
 DISTNAME=		pkg_install-info-${VERSION}
@@ -13,7 +13,6 @@ COMMENT=		Standalone GNU info file installation utility
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 
 NO_CHECKSUM=		# defined

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/11/15 11:38:42 shannonjr Exp $
+# $NetBSD: Makefile,v 1.21 2005/01/21 20:52:24 tv Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -104,7 +104,6 @@ PTHREAD_OPTS=		native
 CONFIGURE_ARGS+=	--disable-threads
 .endif
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_GNU_TOOLS+=		make
 HAS_CONFIGURE=		YES # no GNU_CONFIGURE!

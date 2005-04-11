@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/19 20:09:15 drochner Exp $
 #
 
 #DISTNAME=		boinc-3.07
@@ -15,7 +15,6 @@ COMMENT=		Core client for Boinc V3
 
 WRKSRC=		${WRKDIR}/boinc_public
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		MYSQL_CONFIG=true
 

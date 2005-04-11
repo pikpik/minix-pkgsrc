@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/30 16:13:53 adam Exp $
+# $NetBSD: Makefile,v 1.5 2005/02/25 19:17:52 drochner Exp $
 
 DISTNAME=	gliv-1.9.1
 CATEGORIES=	graphics
@@ -11,7 +11,6 @@ COMMENT=	OpenGL image viewer
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes

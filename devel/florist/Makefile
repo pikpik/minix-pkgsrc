@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:26 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/28 13:02:26 wiz Exp $
 #
 
 DISTNAME=		florist-3.15p-src
@@ -12,7 +12,6 @@ MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		ftp://ftp.cs.nyu.edu/pub/gnat/3.15p/
 COMMENT=		FSU implementation of POSIX.5 (Ada binding)
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_AUTOCONF=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/09/19 01:53:41 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/09/19 01:54:01 grant Exp $
 #
 
 DISTNAME=	ScrollZ-1.9
@@ -13,7 +13,6 @@ COMMENT=	Advanced IRC client based on ircII client
 BUILD_DEFS+=	USE_INET6
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

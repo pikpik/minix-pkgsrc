@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/25 20:03:20 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2004/12/28 23:18:18 reed Exp $
 
 DISTNAME=		tex2rtf-2.01-source
 PKGNAME=		tex2rtf-2.01
@@ -13,7 +13,6 @@ COMMENT=		LaTex-to-RTF translator
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 MAKEFILE=		makefile.unx
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c++
 
 post-patch:

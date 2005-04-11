@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/24 17:21:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/04 22:58:09 adrianp Exp $
 
 DISTNAME=	src
 PKGNAME=	unison-2.9.20
@@ -17,7 +17,6 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 
 # docs: unison-manual.pdf/html/ps/dvi
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 MAKE_FLAGS+=	CFLAGS="" UISTYLE=text
 MAKE_ENV+=	HOME=${WRKDIR}

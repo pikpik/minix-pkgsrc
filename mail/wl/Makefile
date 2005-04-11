@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/03/06 19:24:55 hira Exp $
+# $NetBSD: Makefile,v 1.21 2005/04/11 18:06:00 hira Exp $
 
 DISTNAME=	wl-2.14.0
 CATEGORIES=	mail
@@ -8,7 +8,6 @@ MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://www.gohome.org/wl/
 COMMENT=	Mail/news management system with IMAP4rev1 support for Emacs
 
-USE_BUILDLINK3=	yes
 
 DEPENDS+=	apel>=10.6:../../devel/apel
 DEPENDS+=	flim>=1.14.7:../../devel/flim

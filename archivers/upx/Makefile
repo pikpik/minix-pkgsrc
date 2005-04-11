@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/02/10 15:51:38 ben Exp $
+# $NetBSD: Makefile,v 1.6 2005/03/02 04:35:38 minskim Exp $
 
 DISTNAME=	upx-1.25-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -13,7 +13,6 @@ WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 USE_GNU_TOOLS+=	make
 USE_PERL5=	build
-USE_BUILDLINK3=	yes
 
 do-build:
 	cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV}			\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/20 21:19:35 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/20 11:31:11 grant Exp $
 
 DISTNAME=	XML-XPath-1.13
 PKGNAME=	p5-${DISTNAME}
@@ -15,7 +15,6 @@ DEPENDS+=	p5-XML-Parser>=2.23:../../textproc/p5-XML-Parser
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/XPath/.packlist
 
 .include "../../lang/perl5/module.mk"

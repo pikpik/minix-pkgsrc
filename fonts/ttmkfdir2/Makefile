@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/09/18 07:50:14 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:14:42 tv Exp $
 #
 
 DISTNAME=	ttmkfdir2.20021109
@@ -16,7 +16,6 @@ CONFLICTS=	ttmkfdir-[0-9]*
 
 WRKSRC=		${WRKDIR}/${PKGBASE}
 USE_LIBTOOL=	yes
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	lex make
 USE_LANGUAGES=	c c++
 

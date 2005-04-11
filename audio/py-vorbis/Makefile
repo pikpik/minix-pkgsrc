@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/07/22 09:16:00 recht Exp $
+# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:09 tv Exp $
 #
 
 DISTNAME=		pyvorbis-1.3
@@ -11,7 +11,6 @@ MAINTAINER=		dotz@irc.pl
 HOMEPAGE=		http://vorbis.com/
 COMMENT=		Python bindings for Vorbis library
 
-USE_BUILDLINK3=         yes
 PY_PATCHPLIST=          yes
 PYDISTUTILSPKG=         yes
 

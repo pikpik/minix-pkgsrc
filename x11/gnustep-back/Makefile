@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:33 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/11/16 06:13:15 rh Exp $
 
 DISTNAME=		gnustep-back-0.9.4
 PKGREVISION=		2
@@ -9,7 +9,6 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnustep.org/
 COMMENT=		X11 AppKit backend for GNUstep
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep
 

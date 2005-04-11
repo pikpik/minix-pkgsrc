@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/03/18 23:29:36 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:02 tv Exp $
 
 DISTNAME=	libdvbpsi-0.1.3
 PKGREVISION=	1
@@ -12,6 +12,5 @@ COMMENT=	PSI decoder and generator library for MPEG2 and DVB streams
 GNU_CONFIGURE=	yes
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
-USE_BUILDLINK3=	yes
 
 .include "../../mk/bsd.pkg.mk"

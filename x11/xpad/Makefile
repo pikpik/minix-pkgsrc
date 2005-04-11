@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/08/28 06:05:32 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:40 tv Exp $
 #
 
 DISTNAME=	xpad-1.12
@@ -14,7 +14,6 @@ COMMENT=	Sticky notes application in GTK 2
 BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_PKGLOCALEDIR=	yes

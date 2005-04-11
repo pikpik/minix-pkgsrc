@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/02/09 14:57:52 tron Exp $
+# $NetBSD: Makefile,v 1.67 2005/04/11 18:56:05 martti Exp $
 
 .include "Makefile.common"
 
@@ -12,7 +12,6 @@ CONFLICTS=		apache-*ssl-[0-9]* apache-[0-9]* apache6-[0-9]*
 
 BUILD_DEFS+=		USE_INET6
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 USE_LIBTOOL=		YES
 

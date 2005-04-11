@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/10/03 00:17:55 tv Exp $
+# $NetBSD: Makefile,v 1.35 2005/03/24 21:12:59 wiz Exp $
 
 DISTNAME=		ncftp-2.4.3
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.ncftp.com/ncftp/
 COMMENT=		FTP replacement with advanced user interface
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-extra-dirs
 CONFIGURE_ARGS+=	--disable-ncurses

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/06 07:49:59 xtraeme Exp $
 #
 
 DISTNAME=		hlfl-0.60.1
@@ -11,7 +11,6 @@ MAINTAINER=		pancake@phreaker.net
 HOMEPAGE=		http://www.hlfl.org/
 COMMENT=		High Level Firewall Language
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 
 .include "../../mk/bsd.pkg.mk"

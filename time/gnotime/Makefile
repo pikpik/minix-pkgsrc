@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/23 13:54:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2004/11/27 10:48:03 jdolecek Exp $
 
 DISTNAME=	gnotime-2.2.1
 PKGREVISION=	# empty
@@ -10,7 +10,6 @@ HOMEPAGE=	http://gttr.sourceforge.net/
 COMMENT=	Time tracker for GNOME2
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

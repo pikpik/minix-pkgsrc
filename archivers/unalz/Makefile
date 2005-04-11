@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2005/03/02 16:18:47 minskim Exp $
 #
 
 DISTNAME=		unalz-0.31
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILD_TARGET=		posix
 NO_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 
 INSTALLATION_DIRS=	bin

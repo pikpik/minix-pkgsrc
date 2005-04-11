@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/01 10:37:33 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/31 11:40:31 minskim Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -25,7 +25,6 @@ VERSION=		3.1
 NO_BUILD=		# defined
 CHECK_SHLIBS=		NO
 SHLIB_HANDLING=		NO
-USE_BUILDLINK3=		YES
 INFO_DIR=		pvs/doc/release-notes
 INFO_FILES=		pvs-release-notes.info
 

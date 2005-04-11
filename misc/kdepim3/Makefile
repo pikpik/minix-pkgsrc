@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/03/24 05:08:41 markd Exp $
+# $NetBSD: Makefile,v 1.41 2005/03/28 09:39:57 jlam Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
 CATEGORIES=	misc
@@ -6,7 +6,6 @@ COMMENT=	Personal Information Management tools for the KDE desktop
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_PERL=		run
 USE_GNU_TOOLS+=		awk yacc

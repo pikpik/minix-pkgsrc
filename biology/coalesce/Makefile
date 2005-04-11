@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/04/11 03:52:59 snj Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/03 15:14:51 wiz Exp $
 #
 
 DISTNAME=	coalesce1.5b
@@ -11,7 +11,6 @@ HOMEPAGE=	http://evolution.genetics.washington.edu/lamarc/coalesce.html
 COMMENT=	Estimates effective population size and mutation rate
 
 WRKSRC=		${WRKDIR}/coalesce1.5beta
-USE_BUILDLINK3=	YES
 BUILD_TARGET=	coalesce
 
 DOCDIR=		${PREFIX}/share/doc/coalesce

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2003/09/23 15:06:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.2 2004/03/05 19:09:22 minskim Exp $
 #
 .include "../../inputmethod/canna/Makefile.common"
 
@@ -6,7 +6,6 @@ CANNA_MODULE=	canuum
 
 MAINTAINER=	oishi@ims.ac.jp
 
-USE_BUILDLINK3=	YES
 MAKE_ARGS+=	PREFIX=${PREFIX}
 
 do-configure:

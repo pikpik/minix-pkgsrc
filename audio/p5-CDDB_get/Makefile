@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/18 03:48:30 ben Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/20 11:30:55 grant Exp $
 #
 
 DISTNAME=	CDDB_get-2.23
@@ -13,7 +13,6 @@ COMMENT=	Perl interface to query for CDDB information
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/CDDB_get/.packlist
 

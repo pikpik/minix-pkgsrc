@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/12 02:47:51 snj Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/07 15:53:34 ben Exp $
 #
 
 DISTNAME=		xmms-meta-timidity-0.2
@@ -15,7 +15,6 @@ DEPENDS+=		eawpatches-[0-9]*:../../audio/eawpatches
 DEPENDS+=		xmms-meta-input-[0-9]*:../../audio/xmms-meta-input
 
 WRKSRC=			${WRKDIR}
-NO_BUILDLINK=		# defined
 USE_LANGUAGES=		# empty
 
 do-build:

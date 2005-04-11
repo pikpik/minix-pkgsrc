@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:46 reed Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/29 15:42:38 minskim Exp $
 
 DISTNAME=	    jftpgw-0.13.4
 PKGREVISION=	    1
@@ -9,7 +9,6 @@ MAINTAINER=	    tech-pkg@NetBSD.org
 HOMEPAGE=	    http://www.mcknight.de/jftpgw/
 COMMENT=	    FTP gateway/proxy
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_PKGINSTALL=		yes
 

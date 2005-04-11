@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/05/08 21:56:00 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/06 15:28:59 xtraeme Exp $
 #
 
 DISTNAME=		xextensions-1.0.1
@@ -13,7 +13,6 @@ COMMENT=		Various extension headers for xlibs from freedesktop.org
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 PKGCONFIG_OVERRIDE=	xextensions.pc.in
 GNU_CONFIGURE=		yes
 

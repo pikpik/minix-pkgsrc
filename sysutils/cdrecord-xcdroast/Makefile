@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/05/30 02:19:16 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/08/28 06:05:32 jlam Exp $
 
 DISTNAME=	cdrtools-2.01a21
 PKGNAME=	cdrecord-xcdroast-0.98a15.2.01a21
@@ -16,7 +16,6 @@ CONFLICTS+=	cdrecord-xcdroast098a13-*
 .include "../../mk/bsd.prefs.mk"
 
 WRKSRC=			${WRKDIR}/${DISTNAME:C/a.*//}
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 .if ${LOCALBASE} != "/opt/schily"

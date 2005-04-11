@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2005/03/22 15:39:05 wiz Exp $
+# $NetBSD: Makefile,v 1.81 2005/04/07 12:38:02 markd Exp $
 
 DISTNAME=	emacs-21.4a
 PKGREVISION=	1
@@ -11,7 +11,6 @@ COMMENT=	GNU editing macros (editor)
 
 CONFLICTS=	mule-[0-9]*
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes

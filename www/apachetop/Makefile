@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:18:25 tv Exp $
+# $NetBSD: Makefile,v 1.4 2004/11/27 00:25:03 sketch Exp $
 #
 
 DISTNAME=	apachetop-0.12.5
@@ -9,7 +9,6 @@ MAINTAINER=	sketch@NetBSD.org
 HOMEPAGE=	http://clueful.shagged.org/apachetop/
 COMMENT=	Real time apache log display
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--with-logfile=${VARBASE}/log/httpd/access_log

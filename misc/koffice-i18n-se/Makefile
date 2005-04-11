@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/25 12:56:12 markd Exp $
 
 DISTNAME=	koffice-i18n-se-1.3.5
 CATEGORIES=	misc kde
@@ -9,7 +9,6 @@ MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://www.koffice.org/
 COMMENT=	se language pack for KOffice
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 USE_GNU_TOOLS+=	make
 

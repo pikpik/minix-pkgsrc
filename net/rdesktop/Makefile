@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/02/15 20:20:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.21 2005/03/23 15:24:11 xtraeme Exp $
 #
 
 DISTNAME=		rdesktop-1.4.0
@@ -9,7 +9,6 @@ MAINTAINER=		grant@NetBSD.org
 HOMEPAGE=		http://www.rdesktop.org/
 COMMENT=		Open-source Remote Desktop Protocol client
 
-USE_BUILDLINK3=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-x=${X11BASE}

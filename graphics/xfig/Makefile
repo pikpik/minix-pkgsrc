@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/10/03 00:14:58 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/02/18 15:56:18 wiz Exp $
 
 DISTNAME=	xfig.3.2.4.full
 PKGNAME=	xfig-3.2.4
@@ -19,7 +19,6 @@ DEPENDS+=	transfig>=3.2.4:../../print/transfig
 BUILDLINK_DEPENDS.Xaw3d+=	Xaw3d>=1.5E
 
 WRKSRC=			${WRKDIR}/xfig.3.2.4
-USE_BUILDLINK3=		YES
 USE_IMAKE=		YES
 XAW_TYPE?=		3d
 

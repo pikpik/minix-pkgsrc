@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/20 11:31:14 grant Exp $
+# $NetBSD: Makefile,v 1.11 2005/02/23 19:04:09 wiz Exp $
 
 DISTNAME=	libapreq-1.33
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Lots of Apache specific httpd handling modules
 
 DEPENDS+=	p5-Apache-Test>=1.13:../../www/p5-Apache-Test
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/libapreq/.packlist
 
 LDFLAGS+=	${COMPILER_RPATH_FLAG}${PERL5_SITEARCH}/auto/libapreq

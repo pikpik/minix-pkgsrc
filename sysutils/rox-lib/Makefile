@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:16 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/03/23 10:20:10 rxg Exp $
 #
 
 DISTNAME=	rox-lib-1.9.17
@@ -17,7 +17,6 @@ DIST_SUBDIR=	rox
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-USE_BUILDLINK3=	yes
 
 PYTHON_PATCH_SCRIPTS=	AppRun MakeDist
 

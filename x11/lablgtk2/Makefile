@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/04 20:39:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/24 17:21:01 jmmv Exp $
 #
 
 DISTNAME=	lablgtk-2.4.0
@@ -11,7 +11,6 @@ HOMEPAGE=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/
 COMMENT=	GTK+ 2.x bindings for Objective Caml
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 BUILDLINK_DEPMETHOD.ocaml=	full

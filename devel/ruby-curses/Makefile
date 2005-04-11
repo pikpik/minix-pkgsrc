@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/03/06 13:00:31 taca Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/06 17:19:06 taca Exp $
 #
 
 DISTNAME=		${RUBY_DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=		Ruby extension to curses library
 
 RUBY_VERSION_SUPPORTED=	18
 RUBY_HAS_ARCHLIB=	yes
-USE_BUILDLINK3=		yes
 USE_RUBY_EXTCONF=	yes
 EXTRACT_ELEMENTS=	${RUBY_DISTNAME}/ext/curses
 WRKSRC=			${RUBY_WRKSRC}/ext/curses

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/03/19 21:45:29 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/03/21 22:38:33 wiz Exp $
 #
 
 DISTNAME=	Bit-Vector-6.4
@@ -16,7 +16,6 @@ DEPENDS+=	p5-Carp-Clan-[0-9]*:../../devel/p5-Carp-Clan
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Bit/Vector/.packlist
 
 .include "../../lang/perl5/module.mk"

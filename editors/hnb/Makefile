@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:14:38 tv Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/05 08:28:45 jmmv Exp $
 #
 
 DISTNAME=	hnb-1.9.17
@@ -11,7 +11,6 @@ COMMENT=	Hierarchical data organizer
 
 INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]* NetBSD-1.6[A-U]-*
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 BUILD_DIRS=		${WRKSRC}/src

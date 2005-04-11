@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/03/09 22:49:48 minskim Exp $
+# $NetBSD: Makefile,v 1.31 2004/04/29 15:17:02 minskim Exp $
 #
 
 DISTNAME=	tkcvs_7_2_1
@@ -15,7 +15,6 @@ DEPENDS+=	tk>=8.4:../../x11/tk
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_BUILDLINK=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# empty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/20 11:31:05 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/29 13:16:59 adrianp Exp $
 
 DISTNAME=	User-Identity-0.90
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ PERL5_REQD+=	5.6.0
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/User/Identity/.packlist
 
 .include "../../lang/perl5/module.mk"

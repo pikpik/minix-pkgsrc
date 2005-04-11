@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/11/13 21:28:27 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2004/11/29 00:58:08 tv Exp $
 #
 
 DISTNAME=		binkd098
@@ -14,7 +14,6 @@ HOMEPAGE=		http://www.corbina.net/~maloff/binkd/
 COMMENT=		FidoNet-over-IP transport program utilizing BINKP protocol
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		# defined
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

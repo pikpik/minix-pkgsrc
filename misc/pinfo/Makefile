@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/10/03 00:13:00 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/03/02 13:39:17 wiz Exp $
 #
 
 DISTNAME=		pinfo-0.6.1
@@ -12,7 +12,6 @@ COMMENT=		Przemek's Info Viewer
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_PKGINSTALL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/06 13:44:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:02 tv Exp $
 #
 
 DISTNAME=	libdvdnav-0.1.9
@@ -11,7 +11,6 @@ HOMEPAGE=	http://dvd.sourceforge.net/
 COMMENT=	Library to navigate DVDs
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 
 .include "../../mk/pthread.buildlink3.mk"

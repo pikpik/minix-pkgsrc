@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2005/02/17 17:43:33 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2005/03/01 15:36:48 wiz Exp $
 #
 
 DISTNAME=	cvs-1.11.19
@@ -15,7 +15,6 @@ COMMENT=	Concurrent Versions System
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"

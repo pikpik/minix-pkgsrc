@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/02/26 17:27:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/22 16:43:56 jmmv Exp $
 
 DISTNAME=	gnome-devel-2.10.0
 CATEGORIES=	meta-pkgs devel gnome
@@ -23,7 +23,6 @@ DEPENDS+=	pkgconfig>=0.15:../../devel/pkgconfig
 
 EXTRACT_ONLY=	# empty
 NO_BUILD=	yes
-NO_BUILDLINK=	yes
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 

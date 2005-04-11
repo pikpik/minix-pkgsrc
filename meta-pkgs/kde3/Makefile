@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/03/23 21:28:33 markd Exp $
+# $NetBSD: Makefile,v 1.39 2005/03/27 15:43:37 wiz Exp $
 
 DISTNAME=	kde-3.4.0
 PKGREVISION=	1
@@ -28,7 +28,6 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_BUILDLINK=	yes
 NO_MTREE=	yes
 
 do-install:	# empty

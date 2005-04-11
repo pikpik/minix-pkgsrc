@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:18:11 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/20 11:31:07 grant Exp $
 #
 
 DISTNAME=	Authen-SASL-Cyrus-0.07
@@ -13,7 +13,6 @@ COMMENT=	Perl module to handle Cyrus protocol for SASL authentication
 
 DEPENDS+=	p5-Authen-SASL-[0-9]*:../../security/p5-Authen-SASL
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Authen/SASL/Cyrus/.packlist
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/08 18:51:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/08 20:46:49 xtraeme Exp $
 
 DISTNAME=	nasm-0.98.39
 CATEGORIES=	devel lang
@@ -11,7 +11,6 @@ COMMENT=	General-purpose x86 assembler
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GCC_REQD+=		3.0
 USE_MAKEINFO=		yes

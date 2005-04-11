@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/19 09:29:16 jdolecek Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/02 11:21:43 jdolecek Exp $
 
 DISTNAME=	qca-tls-1.0
 PKGREVISION=	# empty
@@ -10,7 +10,6 @@ MAINTAINER=	jdolecek@NetBSD.org
 HOMEPAGE=	http://delta.affinix.com/qca/
 COMMENT=	Cross-platform crypto API for QT - TLS plugin
 
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	yes
 USE_X11=	yes

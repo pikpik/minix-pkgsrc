@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/04/25 04:56:56 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2004/10/03 00:14:53 tv Exp $
 #
 
 DISTNAME=	jasper-1.701.0
@@ -14,7 +14,6 @@ COMMENT=	Software-based reference implementation of the JPEG-2000 codec
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 CONFIGURE_ARGS+=	--enable-shared --without-x --disable-opengl
 

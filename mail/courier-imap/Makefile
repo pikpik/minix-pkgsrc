@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/03/01 01:42:36 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2005/03/23 04:07:03 jlam Exp $
 
 DISTNAME=	courier-imap-4.0.2
 PKGBASE=	${DISTNAME:C/-[^-]*$//}
@@ -14,7 +14,6 @@ DEPENDS+=	courier-maildir>=0.48.2:../../mail/courier-maildir
 
 USE_GNU_TOOLS+=		make
 USE_LANGUAGES=		c c++
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_PERL5=		build
 

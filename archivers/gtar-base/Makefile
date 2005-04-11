@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/01/16 04:44:50 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/01/16 22:28:40 tv Exp $
 #
 
 DISTNAME=       tar-1.15.1
@@ -15,7 +15,6 @@ BUILD_USES_MSGFMT=	YES
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 

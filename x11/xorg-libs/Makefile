@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/03/23 22:44:00 xtraeme Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/30 20:29:19 hira Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		xorg-libs-${XORG_VER}
@@ -35,7 +35,6 @@ CONFLICTS+=		libX11-[0-9]*
 CONFLICTS+=		libXau-[0-9]*
 .endif
 
-USE_BUILDLINK3=			yes
 BUILDLINK_PASSTHRU_DIRS+=	${X11ROOT}/lib
 
 XBUILD_DIRS=		lib nls programs/Xserver/include \

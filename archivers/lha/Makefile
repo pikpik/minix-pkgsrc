@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/05/30 07:06:26 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2004/08/01 20:00:29 jlam Exp $
 
 DISTNAME=       lha-114i
 PKGNAME=	lha-114.9
@@ -13,7 +13,6 @@ COMMENT=	Archive files using LZW compression (.lzh files)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 NO_CONFIGURE=	yes
 
 MAKE_FLAGS=	MAKE="${MAKE_PROGRAM}"

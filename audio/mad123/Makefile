@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/01/03 15:59:12 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/01/29 12:22:27 scw Exp $
 #
 
 DISTNAME=	mad123-0.8.5
@@ -9,7 +9,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.mctavish.co.uk/mad123/
 COMMENT=	Command-line MPEG audio player
 
-USE_BUILDLINK3=		yes
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mad123
 PKG_SUPPORTED_OPTIONS=	arts

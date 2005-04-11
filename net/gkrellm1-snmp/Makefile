@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/25 08:49:31 snj Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:17:52 tv Exp $
 
 DISTNAME=		gkrellm_snmp-0.18
 PKGNAME=		gkrellm-snmp-0.18
@@ -10,7 +10,6 @@ MAINTAINER=		jasper@pointless.net
 HOMEPAGE=		http://triq.net/gkrellm.html
 COMMENT=		Simple SNMP monitor for gkrellm
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 
 do-install:

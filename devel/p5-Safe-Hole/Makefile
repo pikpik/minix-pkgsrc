@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/25 03:22:57 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/20 11:31:02 grant Exp $
 #
 
 DISTNAME=	Safe-Hole-0.08
@@ -14,7 +14,6 @@ COMMENT=	Exec subs in the original package from within a Safe object
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Safe/Hole/.packlist
 
 .include "../../lang/perl5/module.mk"

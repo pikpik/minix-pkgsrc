@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/20 11:31:04 grant Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/14 15:46:47 wiz Exp $
 #
 
 DISTNAME=	Image-Imlib2-1.04
@@ -13,7 +13,6 @@ COMMENT=	Interface to the Imlib2 image library
 
 USE_PERL5=	run
 USE_X11=	YES
-USE_BUILDLINK3=	YES
 
 # versions before that contained a broken imlib2-config
 BUILDLINK_DEPENDS.imlib2+=	imlib2>=1.2.0nb2

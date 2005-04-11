@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/04/11 18:02:24 salo Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/28 02:47:50 reed Exp $
 #
 
 DISTNAME=	anacron-2.3
@@ -10,7 +10,6 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://anacron.sourceforge.net/
 COMMENT=	Periodic command scheduler
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_PKGINSTALL=		yes
 

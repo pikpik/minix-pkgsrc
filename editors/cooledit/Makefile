@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/11/30 15:00:34 adam Exp $
+# $NetBSD: Makefile,v 1.15 2005/01/05 15:27:40 adam Exp $
 
 DISTNAME=	cooledit-3.17.14
 CATEGORIES=	editors
@@ -10,7 +10,6 @@ COMMENT=	Full-featured text editor
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

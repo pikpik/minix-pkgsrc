@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/26 10:39:41 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/27 15:43:35 wiz Exp $
 #
 
 DISTNAME=		digger-20020314
@@ -10,7 +10,6 @@ MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://www.digger.org/
 COMMENT=		Digger Remastered
 
-USE_BUILDLINK3=		yes
 
 .include "../../mk/bsd.prefs.mk"
 

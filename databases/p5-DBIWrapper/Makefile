@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/08 19:23:08 erh Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:30:57 grant Exp $
 #
 
 DISTNAME=	libdbiwrapper-perl-${VERSION}
@@ -18,7 +18,6 @@ VERSION=	0.20
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/DBIWrapper/.packlist
 
 BUILDLINK_DEPENDS.p5-DBI+=	p5-DBI>=1.37

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/04/12 03:48:53 snj Exp $
+# $NetBSD: Makefile,v 1.30 2004/10/03 00:18:28 tv Exp $
 #
 
 DISTNAME=       XmHTML-1.1.7
@@ -13,7 +13,6 @@ COMMENT=	Motif Widget capable of displaying HTML 3.2 conforming text
 USE_X11BASE=	YES
 USE_GNU_TOOLS+=	make
 USE_LIBTOOL=	YES
-USE_BUILDLINK3=	YES
 
 do-install:
 	${LIBTOOL} ${LIBTOOL_FLAGS} ${INSTALL_DATA} \

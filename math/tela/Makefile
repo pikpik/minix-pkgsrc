@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:12:57 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/01/12 15:32:01 jlam Exp $
 
 DISTNAME=		tela-1.34
 PKGREVISION=		1
@@ -15,7 +15,6 @@ DEPENDS+=		plotmtv-[0-9]*:../../graphics/plotmtv
 GNU_CONFIGURE=		# defined
 USE_LANGUAGES=		fortran
 USE_X11=		# defined
-USE_BUILDLINK3=		yes
 
 INSTALL_TARGET= 	install installdocs
 

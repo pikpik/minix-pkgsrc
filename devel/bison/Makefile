@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/11/14 07:24:37 jlam Exp $
+# $NetBSD: Makefile,v 1.51 2005/02/18 14:41:38 wiz Exp $
 
 DISTNAME=		bison-2.0
 CATEGORIES=		devel
@@ -13,7 +13,6 @@ BUILD_USES_MSGFMT=	yes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
 M4=			${LOCALBASE}/bin/gm4

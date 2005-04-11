@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2004/08/23 11:01:56 mrg Exp $
+# $NetBSD: Makefile,v 1.47 2004/10/03 00:18:25 tv Exp $
 #
 
 DISTNAME=	bozohttpd-20040823
@@ -15,7 +15,6 @@ BUILD_DEFS+=	USE_INET6
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.prefs.mk"
 

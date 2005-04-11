@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/04 11:55:28 blymn Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/25 13:17:46 blymn Exp $
 #
 
 DISTNAME=	lwp-1.12
@@ -16,7 +16,6 @@ COMMENT=	Light Weight Process style threads
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-m68k NetBSD-*-sparc* \
 			NetBSD-*-arm NetBSD-*-arm32 Linux-*-i386 NetBSD-*-x86_64
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

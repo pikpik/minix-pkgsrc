@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/28 23:38:39 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/27 23:35:54 minskim Exp $
 #
 
 DISTNAME=	pyOpenSSL-0.6
@@ -12,7 +12,6 @@ COMMENT=        Python interface to the OpenSSL library
 
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
-USE_BUILDLINK3= yes
 
 .include "../../lang/python/extension.mk"
 .include "../../security/openssl/buildlink3.mk"

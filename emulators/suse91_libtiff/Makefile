@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/02 20:29:55 recht Exp $
+# $NetBSD: Makefile,v 1.2 2005/01/22 09:57:51 jdolecek Exp $
 
 DISTNAME=		suse_libtiff-${SUSE_VERSION}
 PKGREVISION=		1
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM=      NetBSD-*-i386 FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
-NO_BUILDLINK=		YES
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		libtiff-3.6.1-38.14.${SUSE_ARCH}.rpm

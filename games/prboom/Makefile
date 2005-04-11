@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/10/10 17:28:24 snj Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/27 15:43:36 wiz Exp $
 
 DISTNAME=	prboom-2.2.6
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://prboom.sourceforge.net/
 COMMENT=	Multiplayer-capable and modified version of DOOM
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 
 #CONFIGURE_ARGS+=	--enable-gl

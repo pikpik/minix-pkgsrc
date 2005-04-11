@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2004/11/30 18:26:39 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2004/12/24 04:32:55 wiz Exp $
 #
 
 DISTNAME=		balsa-1.4.3
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
 USE_LIBTOOL=		yes
 USE_X11BASE=		yes
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_DIRS=		${WRKSRC}

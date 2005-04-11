@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/28 02:47:47 reed Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/29 15:31:24 minskim Exp $
 
 DISTNAME=	netatalk-1.6.2
 PKGREVISION=	2
@@ -11,7 +11,6 @@ HOMEPAGE=	http://sourceforge.net/projects/netatalk/
 COMMENT=	Netatalk appletalk file and print services
 
 GNU_CONFIGURE=	YES
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 USE_PERL5=	YES
 USE_LIBTOOL=		YES

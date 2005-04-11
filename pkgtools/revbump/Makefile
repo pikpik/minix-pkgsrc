@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/05 00:31:38 wiz Exp $
 #
 
 DISTNAME=		revbump-1.0
@@ -13,7 +13,6 @@ COMMENT=		Tools for bumping PKGREVISIONs (for pkgsrc developers)
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=		${WRKDIR}
-NO_BUILDLINK=	yes
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 USE_PERL5=	run

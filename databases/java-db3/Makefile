@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/10/03 00:13:18 tv Exp $
+# $NetBSD: Makefile,v 1.17 2004/12/03 15:14:53 wiz Exp $
 
 DISTNAME=	db-3.3.11
 PKGNAME=	java-db3-3.11.2
@@ -22,7 +22,6 @@ JAR=			${PKG_JAVA_HOME}/bin/jar
 JAVACABS=		${JAVAC}
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/build_unix
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	../dist/configure

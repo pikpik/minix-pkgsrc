@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/13 03:25:44 schmonz Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/23 00:51:10 schmonz Exp $
 #
 
 DISTNAME=		qmailanalog-0.70
@@ -9,7 +9,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/qmailanalog.html
 COMMENT=		Collection of tools to help analyze qmail's activity
 
-USE_BUILDLINK3=		yes
 
 DJB_RESTRICTED=		YES
 DJB_CONFIG_PREFIX=	${PREFIX}/qmailanalog

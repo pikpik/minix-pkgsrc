@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/10/03 00:13:25 tv Exp $
+# $NetBSD: Makefile,v 1.23 2004/12/14 19:49:41 minskim Exp $
 #
 
 DISTNAME=	coconut-0.3.0
@@ -13,7 +13,6 @@ COMMENT=	Objective-C library for Unix-like systems
 
 BUILD_DEPENDS+=	papaya>=0.1.7:../../devel/papaya
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/02/23 03:28:49 minskim Exp $
+# $NetBSD: Makefile,v 1.31 2005/03/07 12:19:16 tv Exp $
 
 DISTNAME=	sox-12.17.6
 CATEGORIES=	audio
@@ -11,7 +11,6 @@ COMMENT=	SOund eXchange - universal sound sample translator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-fast-ulaw
 CONFIGURE_ARGS+=	--enable-fast-alaw

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/10 14:12:50 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/08/27 06:29:11 jlam Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -15,7 +15,6 @@ RESTRICTED=     "Restrictive copyright (non-commerical use only)"
 NO_SRC_ON_CDROM=        ${RESTRICTED}
 NO_BIN_ON_CDROM=        ${RESTRICTED}
 
-USE_BUILDLINK3=	yes
 USE_X11=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="-DHAVE_X11_EXTENSIONS_SHAPE_H=1 -O" \

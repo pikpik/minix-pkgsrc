@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/03 16:53:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/15 16:27:34 wiz Exp $
 #
 
 DISTNAME=	vte-0.11.12
@@ -12,7 +12,6 @@ COMMENT=	Terminal widget with improved accessibility and I18N support
 
 BUILD_USES_MSGFMT=	yes
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.2
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

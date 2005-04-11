@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/02/19 17:53:55 wiz Exp $
 #
 
 DISTNAME=		Test-Taint-1.04
@@ -12,7 +12,6 @@ COMMENT=		Tools to test taintedness
 
 #DEPENDS+=		p5-Array-Compare-[0-9]*:../../devel/p5-Array-Compare
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Test/Taint/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/30 20:51:51 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/20 11:31:14 grant Exp $
 #
 
 DISTNAME=		X11-Protocol-0.53
@@ -13,7 +13,6 @@ COMMENT=		Interface to the X11 protocol
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/X11/Protocol/.packlist
 
 .include "../../lang/perl5/module.mk"

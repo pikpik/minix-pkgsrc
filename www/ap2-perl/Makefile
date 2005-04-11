@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:18:24 tv Exp $
+# $NetBSD: Makefile,v 1.16 2004/11/09 12:09:59 adam Exp $
 #
 # NOTE: This package is *BETA*.  If it doesn't work, then check the
 #	modperl-2.0 mailing lists for help.
@@ -14,7 +14,6 @@ COMMENT=	Module that embeds a Perl interpreter into Apache
 
 CONFLICTS=	ap-perl-[0-9]*
 
-USE_BUILDLINK3=		yes
 APACHE_MODULE=		# defined
 PERL5_REQD+=		5.6.0
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/mod_perl/.packlist

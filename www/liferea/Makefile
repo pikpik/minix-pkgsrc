@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/11/28 23:38:39 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/02 16:56:31 minskim Exp $
 
 DISTNAME=		liferea-0.6.4
 CATEGORIES=		www
@@ -9,7 +9,6 @@ HOMEPAGE=		http://liferea.sourceforge.net/
 COMMENT=		Simple FeedReader clone for reading RSS/RDF feeds
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

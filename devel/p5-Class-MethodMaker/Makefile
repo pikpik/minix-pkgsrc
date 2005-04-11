@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/04 22:42:56 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/03/27 20:54:07 wiz Exp $
 #
 
 DISTNAME=		Class-MethodMaker-2.06
@@ -12,7 +12,6 @@ COMMENT=		Getter/setter OO method maker for class elements
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Class/MethodMaker/.packlist
 

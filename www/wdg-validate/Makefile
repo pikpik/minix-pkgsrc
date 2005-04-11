@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/02/17 01:29:30 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2004/02/17 01:58:08 minskim Exp $
 #
 
 DISTNAME=	validate-1.2
@@ -20,7 +20,6 @@ DIST_SUBDIR=	validate
 EXTRACT_ONLY=	wdg-sgml-lib-1.1.3.tar.gz
 SITES_wdg-sgml-lib-1.1.3.tar.gz=	http://www.htmlhelp.com/tools/validator/src/
 
-USE_BUILDLINK3=	YES
 REPLACE_PERL=	validate
 NO_BUILD=	YES
 

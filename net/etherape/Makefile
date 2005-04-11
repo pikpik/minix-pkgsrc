@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/11/22 15:27:53 adam Exp $
+# $NetBSD: Makefile,v 1.23 2004/12/20 23:43:56 dan Exp $
 
 DISTNAME=	etherape-0.9.1
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://etherape.sourceforge.net/
 COMMENT=	Graphical network monitor
 
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES

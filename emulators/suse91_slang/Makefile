@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/04/19 00:28:59 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/02 19:44:24 jdolecek Exp $
 
 DISTNAME=		suse_slang-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -15,7 +15,6 @@ ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
-NO_BUILDLINK=		YES
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		slang-1.4.9-121.${SUSE_ARCH}.rpm

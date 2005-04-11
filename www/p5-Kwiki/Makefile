@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/25 18:20:52 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/02 17:27:41 jlam Exp $
 
 DISTNAME=      	Kwiki-0.37
 PKGNAME=       	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Extensible, modular, Perl-based Wiki
 
 DEPENDS+=	p5-Spoon>=0.21nb1:../../devel/p5-Spoon
 
-USE_BUILDLINK3=		yes
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Kwiki/.packlist
 
 .include "../../lang/perl5/module.mk"

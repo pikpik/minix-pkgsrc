@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2004/12/28 21:45:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.43 2005/03/22 16:14:16 jmmv Exp $
 #
 
 DISTNAME=		nautilus-2.10.0
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.gnome.org/projects/nautilus/
 COMMENT=		Nautilus file manager for GNOME2
 
 USE_PKGLOCALEDIR=	yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_X11=		yes
 USE_GNU_TOOLS+=		make

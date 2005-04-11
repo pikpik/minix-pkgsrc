@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2004/10/03 00:13:05 tv Exp $
+# $NetBSD: Makefile,v 1.43 2004/11/26 21:05:16 wiz Exp $
 #
 
 DISTNAME=	easytag-1.0
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 

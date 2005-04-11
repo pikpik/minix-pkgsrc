@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/01/16 19:52:29 markd Exp $
+# $NetBSD: Makefile,v 1.13 2005/01/23 20:41:45 recht Exp $
 #
 
 DISTNAME=	bsddb3-4.3.0
@@ -13,7 +13,6 @@ COMMENT=	Python extension module for Berkeley DB 4
 PYSETUPBUILDARGS=	--berkeley-db=${BUILDLINK_PREFIX.db4}
 PYSETUPINSTALLARGS=	--berkeley-db=${BUILDLINK_PREFIX.db4}
 
-USE_BUILDLINK3=	yes
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
 

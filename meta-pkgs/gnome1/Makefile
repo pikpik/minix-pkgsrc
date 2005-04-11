@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/11/30 18:26:40 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2004/12/21 17:10:12 agc Exp $
 
 DISTNAME=	gnome-1.4.2.1
 PKGREVISION=	8
@@ -36,7 +36,6 @@ DEPENDS+=	pan>=0.11.4nb2:../../news/pan
 DEPENDS+=	xchat-gnome>=1.8.10nb3:../../chat/xchat-gnome
 
 USE_X11=	yes
-USE_BUILDLINK3=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes

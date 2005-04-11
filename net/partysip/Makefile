@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/01 19:55:02 drochner Exp $
 #
 
 DISTNAME=		partysip-2.2.1
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.nongnu.org/partysip/partysip.html
 COMMENT=		SIP proxy server
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-config-dir=/etc
 USE_LIBTOOL=		yes

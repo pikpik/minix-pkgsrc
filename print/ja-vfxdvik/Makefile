@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/26 01:30:42 snj Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:18:05 tv Exp $
 
 DISTNAME=	xdvik-${XDVIK_ORIGINAL_VERS}
 PKGNAME=	ja-vfxdvik-${XDVIK_ORIGINAL_VERS}.${XDVIK_JP_PATCH_VERS}
@@ -25,7 +25,6 @@ DEPENDS+=	ja-ptex-bin>=3.1.2:../../print/ja-ptex-bin
 
 XDVI_DIR=	${WRKDIR}/${DISTNAME}/texk/xdvik
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		YES
 USE_LIBTOOL=		YES

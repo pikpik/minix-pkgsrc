@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/09/07 08:13:30 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/02 11:55:29 adrianp Exp $
 
 DISTNAME=	scanssh-2.1
 CATEGORIES=	security
@@ -10,7 +10,6 @@ HOMEPAGE=	http://monkey.org/~provos/scanssh/
 COMMENT=	SSH remote version scanner
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_BUILTIN.libevent=	NO
 
 .include "../../devel/libevent/buildlink3.mk"

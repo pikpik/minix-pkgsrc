@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/05/04 23:46:37 snj Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/20 11:31:11 grant Exp $
 
 DISTNAME=	XML-SAX-Expat-0.35
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ DEPENDS+=	p5-XML-NamespaceSupport-[0-9]*:../../textproc/p5-XML-NamespaceSupport
 DEPENDS+=	p5-XML-SAX-[0-9]*:../../textproc/p5-XML-SAX
 DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/XML/SAX/Expat/.packlist
 
 .include "../../lang/perl5/module.mk"

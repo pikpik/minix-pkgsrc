@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/02/26 17:26:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2005/03/22 16:32:32 jmmv Exp $
 #
 
 DISTNAME=		gnopernicus-0.10.4
@@ -10,7 +10,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Collection of accessibility apps for GNOME 2
 
-USE_BUILDLINK3=		yes
 USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_PKGINSTALL=		yes

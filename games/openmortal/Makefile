@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/28 23:18:18 reed Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:36 wiz Exp $
 #
 
 DISTNAME=	openmortal-0.7
@@ -12,7 +12,6 @@ HOMEPAGE=	http://apocalypse.rulez.org/~upi/Mortal/
 COMMENT=	Parody of Mortal Kombat with real characters
 
 GNU_CONFIGURE=	yes
-USE_BUILDLINK3=	yes
 USE_GNU_TOOLS+=	make
 USE_PERL5=	yes
 USE_X11=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:13:25 tv Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/30 07:11:18 minskim Exp $
 #
 
 DISTNAME=	chmlib-0.35
@@ -12,7 +12,6 @@ COMMENT=	Library for dealing with Microsoft ITSS/CHM format files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes

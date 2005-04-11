@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/20 11:31:05 grant Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/24 21:12:58 wiz Exp $
 
 DISTNAME=		Array-PrintCols-2.1
 PKGNAME=		p5-${DISTNAME}
@@ -11,7 +11,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://theory.uwinnipeg.ca/CPAN/data/Array-PrintCols/PrintCols.html
 COMMENT=		Perl5 module to print arrays of elements in sorted columns
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Array/PrintCols/.packlist
 
 .include "../../lang/perl5/module.mk"

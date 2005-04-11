@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/09/27 02:15:19 rh Exp $
+# $NetBSD: Makefile,v 1.16 2004/10/03 00:12:58 tv Exp $
 #
 
 DISTNAME=	gnustep-1.10.0
@@ -25,7 +25,6 @@ DEPENDS+=	Renaissance>=0.7.0:../../devel/Renaissance
 DEPENDS+=	gworkspace>=0.6.3:../../sysutils/gworkspace
 
 USE_X11=	yes
-USE_BUILDLINK3=	yes
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes

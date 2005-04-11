@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/08/04 12:21:02 cube Exp $
+# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:26 tv Exp $
 
 DISTNAME=	http_load-04jan2002
 PKGNAME=	http_load-20020104
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.acme.com/software/http_load/
 COMMENT=	Multiprocessing http test client
 
 MAKE_ENV+=	SSLBASE="${SSLBASE}"
-USE_BUILDLINK3=	YES
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

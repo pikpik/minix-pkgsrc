@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/03/20 13:06:59 schwarz Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/21 14:34:34 agc Exp $
 
 DISTNAME=	gnugo-3.6
 CATEGORIES=	games
@@ -8,7 +8,6 @@ MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gnugo/
 COMMENT=	Go playing program
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 

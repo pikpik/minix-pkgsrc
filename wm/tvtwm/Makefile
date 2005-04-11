@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/03/10 14:12:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.11 2004/09/18 11:59:06 blymn Exp $
 
 DISTNAME=	tvtwm.pl11
 PKGNAME=	tvtwm-11
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Classic twm with virtual desktop support
 
 WRKSRC=		${WRKDIR}/tvtwm
-USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 .include "../../graphics/xpm/buildlink3.mk"

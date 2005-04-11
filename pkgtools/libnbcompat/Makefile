@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2004/10/24 11:18:33 grant Exp $
+# $NetBSD: Makefile,v 1.44 2005/01/06 05:32:29 tv Exp $
 #
 # NOTE: If you update this package, it is *mandatory* that you update
 # 	pkgsrc/pkgtools/libnbcompat/files/README to reflect the actual
@@ -14,7 +14,6 @@ MAINTAINER=		grant@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Portable NetBSD compatibility library
 
-NO_BUILDLINK=		yes
 NO_PKGTOOLS_REQD_CHECK=	yes
 NO_CHECKSUM=		yes
 NO_MTREE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/20 17:26:10 heinz Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/20 11:31:09 grant Exp $
 #
 
 DISTNAME=		Convert-ASCII-Armour-1.4
@@ -18,7 +18,6 @@ DEPENDS+=		p5-Compress-Zlib-[0-9]*:../../devel/p5-Compress-Zlib
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Convert/ASCII/Armour/.packlist
 

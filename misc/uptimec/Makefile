@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/04/13 14:25:35 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2004/06/27 20:21:52 xtraeme Exp $
 #
 
 DISTNAME=	uptimec-0.2p3
@@ -9,7 +9,6 @@ MAINTAINER=	ola@mrEriksson.net
 HOMEPAGE=	http://www.mreriksson.net/uptimes/
 COMMENT=	Uptime Project client
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:13:15 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/08 15:19:25 salo Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
@@ -16,7 +16,6 @@ DEPENDS+=	silc-client>=${SILC_CLIENT_VERSION}:../../chat/silc-client
 
 .include "../../chat/silc-client/Makefile.common"
 
-USE_BUILDLINK3=	YES
 GNU_CONFIGURE=	YES
 
 IRSSI_DIR=	${WRKDIR}/${SILC_CLIENT_DISTNAME}/irssi

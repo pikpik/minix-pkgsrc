@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/11 15:44:30 manu Exp $
 #
 
 DISTNAME=	mod_auth_radius-1.5.7
@@ -10,7 +10,6 @@ MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://www.freeradius.org/mod_auth_radius/
 COMMENT=	Radius authentication module for Apache
 
-USE_BUILDLINK3=	YES
 
 APACHE_MODULE_NAME=	mod_auth_radius.so
 

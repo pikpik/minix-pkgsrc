@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/07/20 13:12:15 adam Exp $
+# $NetBSD: Makefile,v 1.12 2004/10/03 00:14:40 tv Exp $
 
 DISTNAME=	fuse-0.7.0
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://fuse-emulator.sourceforge.net/
 COMMENT=	ZX Spectrum Emulator
 
-USE_BUILDLINK3=		yes
 USE_PERL5=		build
 USE_X11=		yes
 GNU_CONFIGURE=		yes

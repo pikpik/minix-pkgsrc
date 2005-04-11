@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/01/20 21:59:13 adrianp Exp $
+# $NetBSD: Makefile,v 1.9 2005/03/26 12:07:56 adrianp Exp $
 
 DISTNAME=	tcpreplay-2.3.3
 CATEGORIES=	net
@@ -10,7 +10,6 @@ COMMENT=	Replay saved tcpdump or snoop files
 
 BUILDLINK_DEPENDS.libpcap+=	libpcap>=0.6
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--with-libnet=${BUILDLINK_PREFIX.libnet}

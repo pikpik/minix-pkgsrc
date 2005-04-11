@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/14 16:15:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2004/10/03 00:14:43 tv Exp $
 #
 
 DISTNAME=		ccgo-0.3.4
@@ -14,7 +14,6 @@ DEPENDS+=		gnugo>=3.4:../../games/gnugo
 
 BUILD_USES_MSGFMT=	YES
 
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

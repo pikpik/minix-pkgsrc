@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/12/20 11:30:59 grant Exp $
+# $NetBSD: Makefile,v 1.15 2005/01/20 21:21:39 bad Exp $
 #
 
 DISTNAME=		Devel-SmallProf-1.15
@@ -16,7 +16,6 @@ DEPENDS=		p5-Time-HiRes>=1.20:../../time/p5-Time-HiRes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Devel/SmallProf/.packlist
 
 .include "../../lang/perl5/module.mk"

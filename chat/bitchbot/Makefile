@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/17 09:27:57 minskim Exp $
 
 DISTNAME=	bitchbot-1.0.2
 CATEGORIES=	chat
@@ -12,7 +12,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PERL5=	YES
 USE_PKGINSTALL=	YES
-NO_BUILDLINK=	YES
 
 REPLACE_PERL=	bitch.pl genstats.pl
 

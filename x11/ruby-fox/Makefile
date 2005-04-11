@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/03/05 09:19:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2005/03/06 17:19:08 taca Exp $
 
 DISTNAME=	FXRuby-1.0.29
 PKGNAME=	${RUBY_PKGPREFIX}-fox-1.0.29
@@ -14,7 +14,6 @@ COMMENT=	Ruby interface to FOX GUI library
 DEPENDS+=	${RUBY_PKGPREFIX}-opengl>=0.32:../../graphics/ruby-opengl
 
 RUBY_HAS_ARCHLIB=	yes
-USE_BUILDLINK3=		yes
 USE_RUBY_EXTCONF=	yes
 USE_X11=		yes
 INSTALL_TARGET=		site-install

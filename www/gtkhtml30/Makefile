@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/14 04:00:31 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/02/19 22:47:09 wiz Exp $
 #
 
 DISTNAME=	gtkhtml-3.0.10
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Lightweight HTML rendering/printing/editing engine
 
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	src/libgtkhtml.pc.in

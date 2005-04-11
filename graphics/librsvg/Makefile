@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/20 22:10:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2005/01/28 14:58:09 adam Exp $
 
 DISTNAME=	librsvg-1.0.3
 CATEGORIES=	graphics gnome
@@ -9,7 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.levien.com/svg/
 COMMENT=	Raph's SVG library
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_X11=		yes
 GNU_CONFIGURE=		yes

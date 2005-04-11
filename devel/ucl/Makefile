@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/03 00:13:34 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/02 04:20:08 minskim Exp $
 #
 
 DISTNAME=	ucl-1.02
@@ -12,7 +12,6 @@ COMMENT=	Portable lossless data compression library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--enable-shared=yes

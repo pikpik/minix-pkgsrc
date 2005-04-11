@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/10/03 00:18:28 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/05 18:16:21 wiz Exp $
 #
 
 DISTNAME=		libXrandr-1.0.2
@@ -14,7 +14,6 @@ COMMENT=		X RandR extension (Library)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 

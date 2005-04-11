@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/11 07:09:28 snj Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:17 tv Exp $
 
 DISTNAME=	autoconvert-0.3.13
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://banyan.dlut.edu.cn/~ygh/
 COMMENT=	Intelligent Chinese encoding converter
 
-USE_BUILDLINK3=	yes
 USE_LIBTOOL=	yes
 USE_GNU_TOOLS+=	make
 

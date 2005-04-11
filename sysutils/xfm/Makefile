@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/18 23:47:03 snj Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/24 21:13:01 wiz Exp $
 
 DISTNAME=	xfm-1.4.3
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.musikwissenschaft.uni-mainz.de/~ag/xfm/
 COMMENT=	The X File Manager
 
 WRKSRC=		${WRKDIR}/xfm-1.4.3
-USE_BUILDLINK3=	YES
 USE_IMAKE=	YES
 
 .include "../../graphics/xpm/buildlink3.mk"

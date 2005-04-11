@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/27 12:25:26 drochner Exp $
 #
 
 DISTNAME=		factbook_text_2002
@@ -12,7 +12,6 @@ HOMEPAGE=		http://frmas.free.fr/li_1.htm
 COMMENT=		CIA factbook for xrmap
 
 WRKSRC=			${WRKDIR}
-USE_BUILDLINK3=		yes
 NO_BUILD=		yes
 DEPENDS+=		xrmap-base>=2.29:../../geography/xrmap-base
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:14:39 tv Exp $
+# $NetBSD: Makefile,v 1.22 2004/10/21 03:39:04 xtraeme Exp $
 
 DISTNAME=	nano-1.2.4
 CATEGORIES=	editors
@@ -9,7 +9,6 @@ HOMEPAGE=	http://www.nano-editor.org/
 COMMENT=	Small and friendly text editor (a free replacement for Pico)
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 
 INFO_FILES=	nano.info

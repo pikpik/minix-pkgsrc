@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/23 20:41:45 recht Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/24 20:27:51 drochner Exp $
 #
 
 DISTNAME=	eric-3.6.2
@@ -12,7 +12,6 @@ COMMENT=	Python IDE
 DEPENDS=	${PYPKGPREFIX}-qt3-modules>=3.11:../../x11/py-qt3-modules
 DEPENDS+=	${PYPKGPREFIX}-qt3-qscintilla>=3.11:../../x11/py-qt3-qscintilla
 
-USE_BUILDLINK3=		yes
 NO_BUILD=		yes
 USE_LANGUAGES=
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/02/21 20:26:10 hubertf Exp $
+# $NetBSD: Makefile,v 1.34 2005/03/15 15:51:30 wiz Exp $
 
 DISTNAME=	gmp-4.1.4
 PKGREVISION=	1
@@ -12,7 +12,6 @@ COMMENT=	Library for arbitrary precision arithmetic
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_LANGUAGES=		c c++
 USE_GNU_TOOLS+=		m4
 USE_LIBTOOL=		yes

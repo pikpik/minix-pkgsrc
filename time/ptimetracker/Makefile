@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/23 07:10:26 jdolecek Exp $
 
 DISTNAME=	ptimetracker-1.7.3
 PKGREVISION=	# empty
@@ -13,7 +13,6 @@ COMMENT=	Keep track of the time spent on projects
 USE_X11=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
-USE_BUILDLINK3=		YES
 
 do-configure:
 	cd ${WRKSRC} && ${QTDIR}/bin/qmake -o Makefile ptt.pro

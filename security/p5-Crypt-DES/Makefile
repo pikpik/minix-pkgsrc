@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/20 17:23:29 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2004/12/20 11:31:07 grant Exp $
 #
 
 DISTNAME=		Crypt-DES-2.03
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=		p5-Crypt-CBC-[0-9]*:../../security/p5-Crypt-CBC
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Crypt/DES/.packlist
 
 .include "../../lang/perl5/module.mk"

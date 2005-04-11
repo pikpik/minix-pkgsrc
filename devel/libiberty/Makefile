@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/06/05 16:32:02 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/18 21:58:55 tv Exp $
 #
 
 DISTNAME=		libiberty-1.0
@@ -11,7 +11,6 @@ COMMENT=		This package provides the GNU liberty library of "missing" functions
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 

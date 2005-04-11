@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/12 20:32:43 snj Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:18:10 tv Exp $
 #
 
 DISTNAME=	libksba-0.4.7
@@ -10,7 +10,6 @@ MAINTAINER=	kleink@NetBSD.org
 HOMEPAGE=	http://www.g10code.com/p-libksba.html
 COMMENT=	X.509 library (0.4 branch)
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

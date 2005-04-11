@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/11 06:16:26 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2004/12/28 23:18:21 reed Exp $
 
 DISTNAME=		simage-1.6.1
 PKGREVISION=		1
@@ -12,7 +12,6 @@ COMMENT=		Library for image format loaders and front-ends
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 CONFIGURE_ARGS+=	--with-xwd --with-mpeg2enc

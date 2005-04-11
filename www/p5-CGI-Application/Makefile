@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/12/05 15:41:16 he Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/20 11:31:13 grant Exp $
 
 DISTNAME=		CGI-Application-3.31
 PKGNAME=		p5-${DISTNAME}
@@ -16,7 +16,6 @@ DEPENDS+=		p5-HTML-Template-[0-9]*:../../www/p5-HTML-Template
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/CGI/Application/.packlist
 
 .include "../../lang/perl5/module.mk"

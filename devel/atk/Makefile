@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2004/12/28 16:37:17 jmmv Exp $
+# $NetBSD: Makefile,v 1.36 2005/03/22 15:53:32 jmmv Exp $
 #
 
 DISTNAME=		atk-1.9.1
@@ -14,7 +14,6 @@ COMMENT=		Set of interfaces for accessibility
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2004/11/12 06:39:20 jlam Exp $
+# $NetBSD: Makefile,v 1.76 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=		glib-1.2.10
 PKGREVISION=		8
@@ -15,7 +15,6 @@ CONFLICTS=		gtk+-1.0.*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

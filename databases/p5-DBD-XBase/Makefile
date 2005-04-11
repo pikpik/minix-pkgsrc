@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/16 04:05:44 salo Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/20 11:30:57 grant Exp $
 #
 
 DISTNAME=	DBD-XBase-0.241
@@ -12,7 +12,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.fi.muni.cz/~adelton/perl/
 COMMENT=	Perl DBI/DBD driver for XBase (dBase/FoxPro) databases
 
-USE_BUILDLINK3=	YES
 PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/XBase/.packlist
 
 .include "../../databases/p5-DBI/buildlink3.mk"

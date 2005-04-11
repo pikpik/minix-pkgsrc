@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/03 00:13:15 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/02/21 20:26:10 hubertf Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -14,7 +14,6 @@ COMMENT=	Curses GUI for licq
 
 DEPENDS+=	licq-core-[0-9]*:../licq-core
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/01/22 03:58:32 minskim Exp $
+# $NetBSD: Makefile,v 1.34 2005/02/20 12:48:59 grant Exp $
 
 DISTNAME=		XF86Setup-3.3.6
 PKGREVISION=		2
@@ -16,7 +16,6 @@ WRKSRC=			${WRKDIR}/hw/xfree86/XF86Setup
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
-USE_BUILDLINK3=		yes
 USE_IMAKE=		yes
 
 .if !defined(X11_RELEASE) && !defined(CHECK_X11)

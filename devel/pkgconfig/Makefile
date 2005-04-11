@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/12/18 16:57:56 grant Exp $
+# $NetBSD: Makefile,v 1.21 2005/03/28 19:48:14 wiz Exp $
 #
 
 DISTNAME=	pkgconfig-0.16.0
@@ -11,7 +11,6 @@ COMMENT=	System for managing library compile/link flags
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 CONFIGURE_ARGS+=	--disable-threads

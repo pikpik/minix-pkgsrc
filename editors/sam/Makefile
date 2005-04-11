@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/04/12 11:17:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.27 2005/03/24 21:12:53 wiz Exp $
 
 DISTNAME=		sam
 PKGNAME=		sam-4.3
@@ -16,7 +16,6 @@ WRKSRC=			${WRKDIR}
 EXTRACT_CMD=		${GZCAT} ${DOWNLOADED_DISTFILE} | ${SH}
 
 MANCOMPRESSED=		yes
-USE_BUILDLINK3=		yes
 USE_X11BASE=		yes
 MAKE_ENV+=		X11PREFIX=${X11PREFIX}
 

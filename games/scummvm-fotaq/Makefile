@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/05/05 08:25:44 drochner Exp $
 #
 
 DISTNAME=		FOTAQ_Floppy
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.scummvm.org/
 COMMENT=		Flight Of The Amazon Queen
 
 WRKSRC=			${WRKDIR}/FOTAQ_Floppy
-NO_BUILDLINK=		yes
 
 FOTAQDIR=	${PREFIX}/share/games/fotaq
 

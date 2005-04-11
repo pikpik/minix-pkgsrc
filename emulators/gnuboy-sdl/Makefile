@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:14:40 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/27 15:43:34 wiz Exp $
 
 DISTNAME=	gnuboy-1.0.3
 PKGNAME=	${DISTNAME:S/-/-sdl-/}
@@ -12,7 +12,6 @@ COMMENT=	SDL port of Gameboy emulator
 
 GNU_CONFIGURE=	yes
 USE_X11=	yes
-USE_BUILDLINK3=	yes
 CONFIGURE_ARGS+=--with-sdl
 
 .include "../../devel/SDL/buildlink3.mk"

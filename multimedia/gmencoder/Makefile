@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/18 11:24:33 abs Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:37 wiz Exp $
 #
 
 DISTNAME=	gmencoder-0.1.0
@@ -16,7 +16,6 @@ DEPENDS+=       	mencoder>=0.90:../../multimedia/mencoder
 DEPENDS+=       	mplayer>=0.90:../../multimedia/mplayer
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=       	gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_PKGINSTALL=		yes

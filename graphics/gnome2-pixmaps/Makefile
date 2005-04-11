@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/02/26 17:24:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.23 2005/03/22 16:09:27 jmmv Exp $
 #
 
 DISTNAME=		gnome-desktop-2.10.0
@@ -24,7 +24,6 @@ USE_DIRS+=		xdg-1.1
 USE_X11=		YES
 NO_CONFIGURE=		YES
 NO_BUILD=		YES
-NO_BUILDLINK=		# defined
 
 DSTDIR=			${PREFIX}/share/pixmaps
 

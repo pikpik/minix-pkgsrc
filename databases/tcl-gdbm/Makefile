@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:13:24 tv Exp $
+# $NetBSD: Makefile,v 1.16 2004/12/14 06:59:11 minskim Exp $
 #
 
 DISTNAME=	tclgdbm-0.10
@@ -11,7 +11,6 @@ MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Tcl interface to gdbm - GNU database manager
 
 GNU_CONFIGURE=		# defined
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		# defined
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 

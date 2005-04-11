@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/02/10 14:39:40 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/28 22:23:27 jmmv Exp $
 #
 
 DISTNAME=	gnome-common-2.8.0
@@ -10,6 +10,5 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Generic M4 macros for GNOME development
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 
 .include "../../mk/bsd.pkg.mk"

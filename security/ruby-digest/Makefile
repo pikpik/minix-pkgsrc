@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/01/23 17:33:19 taca Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/06 16:52:40 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	${RUBY_HOMEPAGE}
 COMMENT=	Ruby extension to message digest library
 
 RUBY_HAS_ARCHLIB=	yes
-USE_BUILDLINK3=		yes
 USE_RUBY_EXTCONF=	yes
 RUBY_EXTCONF_SUBDIRS=	. md5 rmd160 sha1 sha2
 EXTRACT_ELEMENTS=	${RUBY_DISTNAME}/ext/digest

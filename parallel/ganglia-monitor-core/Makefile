@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/10 02:33:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/03 19:13:50 jschauma Exp $
 #
 
 DISTNAME=		ganglia-3.0.1
@@ -12,7 +12,6 @@ HOMEPAGE=		http://ganglia.sourceforge.net/
 COMMENT=		Ganglia cluster monitor, monitoring daemon
 
 HAS_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

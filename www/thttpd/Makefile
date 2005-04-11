@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/09/14 08:32:16 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2004/12/28 02:47:51 reed Exp $
 
 DISTNAME=	thttpd-2.25b
 PKGREVISION=	2
@@ -13,7 +13,6 @@ COMMENT=	Tiny/turbo/throttling HTTP server
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 USE_PKGINSTALL=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:14:51 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/21 20:26:11 hubertf Exp $
 #
 
 DISTNAME=	gimp-data-extras-1.2.0
@@ -16,7 +16,6 @@ COMMENT=	GNU Image Manipulation Program (extra brushes and patterns)
 
 CONFLICTS+=	gimp<=1.2.3 gimp>=2.0.0
 
-USE_BUILDLINK3=	YES
 USE_X11=	YES
 GNU_CONFIGURE=	YES
 

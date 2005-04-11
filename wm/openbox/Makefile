@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/04/20 21:49:00 snj Exp $
+# $NetBSD: Makefile,v 1.20 2004/10/03 00:18:23 tv Exp $
 
 DISTNAME=	openbox-3.2
 PKGREVISION=	1
@@ -13,7 +13,6 @@ BUILD_USES_MSGFMT=	YES
 DEPENDS+=		vera-ttf>=1.10:../../fonts/vera-ttf
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome2-1.5
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		YES

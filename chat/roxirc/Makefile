@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/03/12 05:46:21 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2004/05/07 01:14:47 xtraeme Exp $
 #
 
 DISTNAME=	roxirc-1.8
@@ -13,7 +13,6 @@ DEPENDS+=	tk-[0-9]*:../../x11/tk
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_BUILDLINK=	YES
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
 

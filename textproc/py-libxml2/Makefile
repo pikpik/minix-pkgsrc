@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/11/03 16:41:56 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2004/11/25 18:37:43 minskim Exp $
 
 DISTNAME=	libxml2-2.6.16
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Python wrapper for libxml2
 WRKSRC=		${WRKDIR}/${DISTNAME}/python
 PYDISTUTILSPKG=	YES
 PYBINMODULE=	YES
-USE_BUILDLINK3=	YES
 NO_CONFIGURE=	YES
 
 SUBST_CLASSES+=		setup

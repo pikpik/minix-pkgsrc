@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/01/20 15:08:54 xtraeme Exp $
+# $NetBSD: Makefile,v 1.19 2005/02/15 20:46:20 rillig Exp $
 #
 
 DISTNAME=		jabberd-2.0s6
@@ -12,7 +12,6 @@ COMMENT=		Instant messaging server (version 2)
 
 CONFLICTS=		jabberd-[0-9]*:../../chat/jabberd
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_PKGINSTALL=		yes

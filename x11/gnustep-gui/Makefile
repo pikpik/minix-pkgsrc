@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:33 tv Exp $
+# $NetBSD: Makefile,v 1.20 2004/12/28 23:18:21 reed Exp $
 
 DISTNAME=	gnustep-gui-0.9.4
 PKGREVISION=	2
@@ -9,7 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	GNUstep AppKit Implementation
 
-USE_BUILDLINK3=		yes
 USE_X11=		yes
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep
 

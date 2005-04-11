@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/12/03 15:15:00 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2004/12/14 18:22:44 minskim Exp $
 
 DISTNAME=	lua-5.0.2
 PKGREVISION=	2
@@ -22,7 +22,6 @@ COMMENT=	Powerful light-weight language for extending applications
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	yes
 BUILD_TARGET=	all so
 INSTALL_TARGET=	install soinstall
 

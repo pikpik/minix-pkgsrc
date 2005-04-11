@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/03/05 21:23:00 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/24 21:12:55 wiz Exp $
 
 DISTNAME=	sj3-2.0.1.20
 PKGNAME=	sj3-lib-2.0.1.20
@@ -12,7 +12,6 @@ COMMENT=	Japanese input method (library)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=	YES
 
 .include "../../mk/bsd.prefs.mk"
 

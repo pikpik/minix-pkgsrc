@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/04/11 15:54:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.14 2004/10/28 11:46:49 wiz Exp $
 #
 
 DISTNAME=	disc-cover-1.5.4
@@ -11,7 +11,6 @@ COMMENT=	Generation of CD covers
 
 DEPENDS+=	p5-Audio-CD>=0.05:../../audio/p5-Audio-CD
 
-USE_BUILDLINK3=		YES
 REPLACE_PERL=		disc-cover
 
 DCTMPL=	${PREFIX}/share/disc-cover/templates

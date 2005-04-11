@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2004/12/04 04:43:12 tron Exp $
+# $NetBSD: Makefile,v 1.41 2005/03/15 03:59:38 tv Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	3
@@ -17,7 +17,6 @@ LICENSE=	limited-redistribution
 RESTRICTED=	"Distribution not allowed if money exchanged"
 
 WRKSRC=			${WRKDIR}/faces
-USE_BUILDLINK3=		YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 

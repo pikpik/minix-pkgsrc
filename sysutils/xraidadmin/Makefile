@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/30 17:30:39 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/06/30 17:40:04 jschauma Exp $
 #
 
 DISTNAME=		RAIDAdmin1.3archive
@@ -21,7 +21,6 @@ NO_BIN_ON_FTP=  	${RESTRICTED}
 
 WRKSRC=			${WRKDIR}/RAID\ Admin\ 1.3
 
-USE_BUILDLINK3=		yes
 NO_BUILD=		# defined
 USE_JAVA=		run
 PKG_JVMS_ACCEPTED=	sun-jdk13 sun-jdk14

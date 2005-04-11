@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/11/25 18:37:52 snj Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/12 05:22:54 tv Exp $
 #
 
 DISTNAME=	GeoIP-1.3.8
@@ -12,7 +12,6 @@ COMMENT=	Find the country from any IP address
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes
 

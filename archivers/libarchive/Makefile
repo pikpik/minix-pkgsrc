@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/03/19 04:43:41 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/03/21 22:56:24 xtraeme Exp $
 #
 
 DISTNAME=	libarchive-1.02.016
@@ -9,7 +9,6 @@ MAINTAINER=	xtraeme@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~kientzle/libarchive/src/
 COMMENT=	Library to read/create different archive formats
 
-USE_BUILDLINK3=	yes
 GNU_CONFIGURE=	yes
 
 .include "../../archivers/bzip2/buildlink3.mk"

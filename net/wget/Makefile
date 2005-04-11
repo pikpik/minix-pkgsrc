@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2005/02/09 11:42:38 bouyer Exp $
+# $NetBSD: Makefile,v 1.80 2005/02/09 17:51:47 tv Exp $
 
 DISTNAME=	wget-1.9.1
 PKGREVISION=	5
@@ -12,7 +12,6 @@ COMMENT=	Retrieve files from the 'net via HTTP and FTP
 BUILD_USES_MSGFMT=	YES
 
 USE_PERL5=		build
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 
 GNU_CONFIGURE=		YES

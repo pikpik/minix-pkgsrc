@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2004/12/10 09:30:42 salo Exp $
+# $NetBSD: Makefile,v 1.91 2004/12/28 23:18:21 reed Exp $
 
 DISTNAME=	imlib-1.9.15
 PKGREVISION=	2
@@ -12,7 +12,6 @@ COMMENT=	Image manipulation library for X11
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 USE_GNU_TOOLS+=		make
 USE_LIBTOOL=		yes
 USE_X11=		yes

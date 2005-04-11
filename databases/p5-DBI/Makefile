@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/01/29 18:30:47 kim Exp $
+# $NetBSD: Makefile,v 1.29 2005/02/24 15:36:53 wiz Exp $
 #
 
 DISTNAME=	DBI-1.47
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=		p5-Test-Simple-[0-9]*:../../devel/p5-Test-Simple
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		YES
 PERL5_REQD+=		5.6.0
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/DBI/.packlist
 

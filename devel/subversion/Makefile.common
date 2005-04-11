@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.16 2004/11/19 04:01:59 epg Exp $
+# $NetBSD: Makefile.common,v 1.17 2004/11/27 00:36:25 epg Exp $
 
 DISTNAME=		subversion-${SVNVER}
 CATEGORIES=		devel
@@ -17,7 +17,6 @@ FILESDIR=       	${.CURDIR}/../../devel/subversion/files
 PATCHDIR=		${.CURDIR}/../../devel/subversion/patches
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_LIBTOOL=		YES
 
 CONFIGURE_ARGS+=	--with-apr=${BUILDLINK_PREFIX.apr}

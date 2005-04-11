@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/11/27 11:17:04 jdolecek Exp $
+# $NetBSD: Makefile,v 1.12 2004/12/17 20:09:06 jdolecek Exp $
 
 DISTNAME=	phpPgAdmin-3.5.1
 PKGREVISION=	# empty
@@ -17,7 +17,6 @@ MESSAGE_SUBST+=	EGDIR=${EGDIR}
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/-.*//}
 NO_BUILD=	YES
-NO_BUILDLINK=	YES
 USE_PKGINSTALL=	YES
 
 PHPPGBASE=	${PREFIX}/share/phppgadmin

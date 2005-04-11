@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:14:59 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/11/25 19:11:58 minskim Exp $
 #
 
 DISTNAME=		imhangul_status_applet-0.2
@@ -13,7 +13,6 @@ COMMENT=		GNOME2 applet to show imhangul status
 DEPENDS=		imhangul>=0.9.6:../../inputmethod/imhangul
 
 GNU_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 USE_GNU_TOOLS+=		make

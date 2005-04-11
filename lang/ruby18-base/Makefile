@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/10 06:00:05 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/31 16:31:10 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	${RUBY_HOMEPAGE}
 COMMENT=	Ruby 1.8 based release minimum package
 
 RUBY_VERSION=		${RUBY18_VERSION}
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 TEST_TARGET=		test
 CONFIGURE_ARGS+=	--enable-shared

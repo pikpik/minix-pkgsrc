@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2004/04/24 23:11:10 snj Exp $
+# $NetBSD: Makefile,v 1.30 2004/10/03 00:14:50 tv Exp $
 
 DISTNAME=		geomview-1.8.1
 PKGREVISION=		4
@@ -9,7 +9,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.geomview.org/
 COMMENT=		Interactive geometry viewing program
 
-USE_BUILDLINK3=		yes
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 

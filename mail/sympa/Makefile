@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/10/03 00:12:55 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/02/15 22:45:54 seb Exp $
 #
 
 DISTNAME=	sympa-4.1.2
@@ -33,7 +33,6 @@ DEPENDS.SunOS+=	p5-DB_File>=1.75:../../databases/p5-DB_File
 
 OPSYSVARS+=	DEPENDS
 
-USE_BUILDLINK3=		YES
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-confdir=${PKG_SYSCONFDIR}

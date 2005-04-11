@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/04 12:12:31 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2004/11/14 16:48:55 jmmv Exp $
 #
 
 DISTNAME=	gmime-2.1.9
@@ -9,7 +9,6 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://spruce.sourceforge.net/gmime/
 COMMENT=	Library for the creation and parsing of MIME messages
 
-USE_BUILDLINK3=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_GNU_TOOLS+=		make

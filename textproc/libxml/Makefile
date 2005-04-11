@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2004/11/20 22:07:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.34 2004/11/27 18:48:25 minskim Exp $
 #
 
 DISTNAME=		libxml-1.8.17
@@ -13,7 +13,6 @@ COMMENT=		XML parser, mainly used by the GNOME project
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_BUILDLINK3=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	libxml.pc.in

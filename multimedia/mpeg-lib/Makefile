@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:03 tv Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/03 15:15:05 wiz Exp $
 #
 
 DISTNAME=	mpeg_lib-1.3.1
@@ -13,7 +13,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://starship.python.net/~gward/mpeglib/
 COMMENT=	Library for decoding MPEG movies
 
-USE_BUILDLINK3=	YES
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 

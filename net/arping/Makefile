@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/01/28 23:35:59 adrianp Exp $
+# $NetBSD: Makefile,v 1.6 2005/02/01 18:24:34 adrianp Exp $
 #
 
 DISTNAME=		arping-2.05
@@ -9,7 +9,6 @@ MAINTAINER=		cube@NetBSD.org
 HOMEPAGE=		http://www.habets.pp.se/synscan/programs.php?prog=arping
 COMMENT=		ARP-level ping utility
 
-USE_BUILDLINK3=		yes
 NO_CONFIGURE=		yes
 
 LIBS.SunOS+=		-lsocket -lnsl

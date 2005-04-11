@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/01/08 20:13:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2005/01/26 19:28:11 jmmv Exp $
 
 DISTNAME=	gnome-spell-1.0.6
 CATEGORIES=	textproc gnome
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Spell checking as you type like gtkspell
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 USE_DIRS+=		gnome2-1.3
 USE_PKGLOCALEDIR=	YES
 USE_GNU_TOOLS+=		make

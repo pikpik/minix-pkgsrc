@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/11/15 09:01:05 markd Exp $
+# $NetBSD: Makefile,v 1.22 2005/01/21 21:16:33 wiz Exp $
 #
 
 DISTNAME=	vcdimager-0.7.20
@@ -10,7 +10,6 @@ MAINTAINER=	ben@NetBSD.org
 HOMEPAGE=	http://www.vcdimager.org/
 COMMENT=	Mastering suite for Video CDs
 
-USE_BUILDLINK3=	YES
 USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	yes

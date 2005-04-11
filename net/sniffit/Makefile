@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/10/03 00:17:58 tv Exp $
+# $NetBSD: Makefile,v 1.27 2004/12/03 15:15:06 wiz Exp $
 #
 
 DISTNAME=		sniffit.0.3.5
@@ -14,7 +14,6 @@ COMMENT=		Packet sniffer program
 NOT_FOR_PLATFORM=	*-*-alpha	# severe LP64 loss
 
 GNU_CONFIGURE=		YES
-USE_BUILDLINK3=		YES
 BUILD_TARGET=
 
 do-install:

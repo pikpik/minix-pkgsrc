@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2004/10/15 23:48:44 snj Exp $
+# $NetBSD: Makefile,v 1.51 2005/02/28 22:42:34 snj Exp $
 
 DISTNAME=	gqview-2.0.0
 CATEGORIES=	graphics x11
@@ -11,7 +11,6 @@ COMMENT=	GTK2-based graphic file viewer
 BUILD_USES_MSGFMT=	# defined
 
 GNU_CONFIGURE=		# defined
-USE_BUILDLINK3=		yes
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	# defined
 

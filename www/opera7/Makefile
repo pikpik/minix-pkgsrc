@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/02/06 12:07:19 jdolecek Exp $
+# $NetBSD: Makefile,v 1.29 2005/03/18 03:33:10 dmcmahill Exp $
 
 DISTNAME=	opera-${OPERA_PKG_VERSION:S/u/pl/}
 PKGREVISION=	# empty
@@ -22,7 +22,6 @@ LICENSE=	opera-license
 
 #PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_BUILDLINK=           YES
 NO_CONFIGURE=           YES
 NO_TOOLS=               YES
 USE_LANGUAGES=          # empty
@@ -131,7 +130,7 @@ post-install:
 
 # regenerate distinfo for all ports supported by this package
 opera-distinfo:
-	( echo '$$NetBSD: Makefile,v 1.28 2005/02/06 12:07:19 jdolecek Exp $$'; echo ''; \
+	( echo '$$NetBSD: Makefile,v 1.29 2005/03/18 03:33:10 dmcmahill Exp $$'; echo ''; \
 	_OPERA_OPSYS=NetBSD ${MAKE} distinfo 1>&2; \
 		${GREP} opera distinfo; \
 	_OPERA_OPSYS=FreeBSD ${MAKE} distinfo 1>&2; \

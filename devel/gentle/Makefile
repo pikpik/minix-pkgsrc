@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/30 08:23:15 wiz Exp $
 #
 
 DISTNAME=		gentle-97
@@ -9,7 +9,6 @@ MAINTAINER=		MarkoSchuetz@web.de
 HOMEPAGE=		http://gentle.compilertools.net/distribution.html
 COMMENT=		Gentle Compiler Construction System
 
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 
 do-build:

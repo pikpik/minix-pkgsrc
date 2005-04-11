@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/20 12:15:40 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/03/09 21:11:20 snj Exp $
 
 DISTNAME=		mapit.v1-16
 PKGNAME=		dipmap-1.16
@@ -12,7 +12,6 @@ COMMENT=		Generate postscript maps from results of play-by-email Diplomacy games
 
 MAKEFILE=		makefile
 NO_CONFIGURE=		yes
-USE_BUILDLINK3=		yes
 WRKSRC=			${WRKDIR}/mapit
 
 post-patch:

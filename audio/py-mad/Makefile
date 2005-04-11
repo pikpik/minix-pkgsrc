@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/07/22 09:16:00 recht Exp $
+# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:09 tv Exp $
 #
 
 DISTNAME=		pymad-0.5.1
@@ -11,7 +11,6 @@ MAINTAINER= 		froz@icix.org
 HOMEPAGE=		http://spacepants.org/src/pymad
 COMMENT=		Python bindings for libmad
 
-USE_BUILDLINK3=		yes
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 

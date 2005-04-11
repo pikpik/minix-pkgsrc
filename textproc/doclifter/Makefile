@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/01/23 20:41:49 recht Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/23 21:47:52 wiz Exp $
 #
 
 DISTNAME=	doclifter-2.1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://catb.org/~esr/doclifter/
 COMMENT=	Translates documents written in troff macros to DocBook
 
 NO_BUILD=	yes
-USE_BUILDLINK3=	yes
 
 PYTHON_PATCH_SCRIPTS=		doclifter manlifter
 PYTHON_VERSIONS_ACCEPTED=	24 23 22

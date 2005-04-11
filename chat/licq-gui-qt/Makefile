@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/03 00:13:15 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/02/21 20:26:10 hubertf Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -20,7 +20,6 @@ DEPENDS+=	licq-core-[0-9]*:../licq-core
 NOT_FOR_PLATFORM= NetBSD-*-*
 .endif
 
-USE_BUILDLINK3=		YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	# defined

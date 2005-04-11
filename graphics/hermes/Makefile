@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/02/14 17:21:42 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2004/10/03 00:14:52 tv Exp $
 
 DISTNAME=		Hermes-1.3.3
 PKGREVISION=		1
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.clanlib.org/hermes/
 COMMENT=		Library for conversion of pixel graphics
 
 WRKSRC=			${WRKDIR}/Hermes-1.3.3
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/18 20:20:48 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/22 03:53:33 jlam Exp $
 
 .include "Makefile.common"
 
@@ -17,7 +17,6 @@ CONFLICTS+=	courier-authmysql-[0-9]*
 CONFLICTS+=	courier-authpgsql-[0-9]*
 
 USE_GNU_TOOLS+=		make
-USE_BUILDLINK3=		yes
 USE_LIBTOOL=		yes
 PKG_SYSCONFSUBDIR=	authlib
 

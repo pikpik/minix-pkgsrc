@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/10/20 11:10:29 cube Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/28 02:47:47 reed Exp $
 
 DISTNAME=	pure-ftpd-1.0.20
 PKGREVISION=	1
@@ -16,7 +16,6 @@ MAINTAINER=	dawszy@arhea.net
 HOMEPAGE=	http://www.pureftpd.org/
 COMMENT=	FTP daemon with optional SQL support
 
-USE_BUILDLINK3=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 

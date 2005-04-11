@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/03/22 15:57:32 jmmv Exp $
+# $NetBSD: Makefile,v 1.34 2005/03/22 18:23:13 jmmv Exp $
 #
 
 DISTNAME=		libglade-2.5.1
@@ -13,7 +13,6 @@ COMMENT=		Runtime interpreter for GLADE GUI files (v2)
 
 BUILD_USES_MSGFMT=	YES
 
-USE_BUILDLINK3=		YES
 USE_GNU_TOOLS+=		make
 USE_X11=		YES
 GNU_CONFIGURE=		YES

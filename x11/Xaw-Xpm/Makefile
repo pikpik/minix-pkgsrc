@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/04/14 16:15:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.21 2004/04/14 19:30:23 jmmv Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
@@ -14,7 +14,6 @@ COMMENT=		Enhanced 3-D widgets based on the Athena Widget set and Xaw3d
 CONFLICTS=		Xaw3d-[0-9]*
 
 WRKSRC=			${WRKDIR}/XawXpm
-USE_BUILDLINK3=		YES
 USE_DIRS+=		xdg-1.1
 USE_IMAKE=		YES
 PLIST_SRC=		${WRKDIR}/.PLIST_SRC
