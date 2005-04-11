@@ -29,6 +29,13 @@ CONFIGURE_ARGS+=	--mandir=${WRKDIR}/man
 
 .include "../../lang/tcl/buildlink3.mk"
 
+post-build:
+	${SED} -e "s|^\(.*\)='\(.*\)'|\1=\"\2\"|"			\
+		-e "s|${WRKSRC}|${PREFIX}/lib|"				\
+		-e "s|${WRKDIR}/${DISTNAME:C/-src//}|${PREFIX}|"	\
+		${WRKSRC}/tkConfig.sh > ${WRKSRC}/tkConfig.sh.tmp &&	\
+		${MV} ${WRKSRC}/tkConfig.sh.tmp ${WRKSRC}/tkConfig.sh
+
 post-install:
 	cd ${WRKDIR} && ${PAX} -rwpm man ${PREFIX}
 	${RM} -rf ${WRKDIR}/man
