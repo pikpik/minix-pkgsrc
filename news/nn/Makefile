@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2004/12/25 06:39:42 kim Exp $
+# $NetBSD: Makefile,v 1.24 2005/03/24 21:12:59 wiz Exp $
 
-DISTNAME=	nn-6.6.4
-PKGREVISION=	1
+DISTNAME=	nn-6.6.5
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.nndev.org/pub/nn-6.6/ \
 		ftp://ftp.nndev.org/pub/nn-6.6/old/
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	NN newsreader
