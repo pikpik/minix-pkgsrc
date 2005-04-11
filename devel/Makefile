@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.626 2005/04/08 02:56:07 riz Exp $
+# $NetBSD: Makefile,v 1.627 2005/04/10 02:54:47 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -537,6 +537,7 @@ SUBDIR+=	ruby-amstd
 SUBDIR+=	ruby-activesupport
 SUBDIR+=	ruby-bsearch
 SUBDIR+=	ruby-byaccr
+SUBDIR+=	ruby-cmd
 SUBDIR+=	ruby-curses
 SUBDIR+=	ruby-filelock
 SUBDIR+=	ruby-installpkg
