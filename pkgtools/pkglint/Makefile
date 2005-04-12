@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.228 2005/04/11 19:01:31 tv Exp $
+# $NetBSD: Makefile,v 1.229 2005/04/11 21:47:05 tv Exp $
 #
 
 DISTNAME=	pkglint-4.12
@@ -6,7 +6,7 @@ CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	rillig@NetBSD.org
 HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/Packages.txt
 COMMENT=	Verifier for NetBSD packages and complete pkgsrc tree
 
