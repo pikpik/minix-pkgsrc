@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/06 21:51:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:18 tv Exp $
 #
 
 DISTNAME=	putty-0.58
@@ -11,7 +11,7 @@ COMMENT=	Free implementation of Telnet and SSH for Win32 and Unix platforms
 
 USE_GNU_TOOLS+=	make
 USE_X11=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME}/unix
+BUILD_DIRS=	${WRKSRC}/unix
 
 MAKEFILE=	Makefile.gtk
 
