@@ -1,9 +1,11 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/11/25 05:42:40 xtraeme Exp $
 bin/gld
 share/doc/gld/LICENCE
 share/doc/gld/README
 share/examples/gld/gld.conf
-share/gld/tables.sql
+share/gld/table-whitelist.sql
+share/gld/tables.mysql
+share/gld/tables.pgsql
 @dirrm share/gld
 @dirrm share/examples/gld
 @dirrm share/doc/gld
