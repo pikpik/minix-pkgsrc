@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/04/11 21:48:14 tv Exp $
+# $NetBSD: Makefile,v 1.43 2005/04/13 16:47:10 rillig Exp $
 
 DISTNAME=	tk8.4.9-src
 PKGNAME=	tk-8.4.9
@@ -18,6 +18,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}/lib
 CONFIGURE_ARGS+=	--enable-threads
+CONFIGURE_ENV+=		LIB_RUNTIME_DIR=${PREFIX}/lib
 MAKE_ENV+=		TOUCH=${TOUCH:Q}
 PTHREAD_OPTS+=		require
 
