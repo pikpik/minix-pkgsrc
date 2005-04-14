@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.75 2005/04/11 21:48:11 tv Exp $
+# $NetBSD: Makefile,v 1.76 2005/04/14 20:53:30 markd Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 COMMENT=	Base modules for the KDE 3 integrated X11 desktop
 
@@ -87,6 +87,12 @@ LIBS+=			-L${BUILDLINK_PREFIX.samba}/lib/samba -Wl,-R${BUILDLINK_PREFIX.samba}/l
 PLIST_SUBST+=		HAVE_SMB=""
 .else
 PLIST_SUBST+=		HAVE_SMB="@comment "
+.endif
+
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "Linux"
+PLIST_SUBST+=		HAVE_USBVIEW=""
+.else
+PLIST_SUBST+=		HAVE_USBVIEW="@comment "
 .endif
 
 ICONDIR=		share/kde/icons
