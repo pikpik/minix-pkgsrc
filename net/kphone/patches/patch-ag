@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- kphone/Makefile.in.orig	Thu Apr  7 21:10:26 2005
 +++ kphone/Makefile.in	Thu Apr  7 21:11:15 2005
 @@ -6,7 +6,7 @@
