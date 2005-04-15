@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.629 2005/04/11 04:09:08 minskim Exp $
+# $NetBSD: Makefile,v 1.630 2005/04/15 05:07:15 snj Exp $
 #
 
 COMMENT=	Development utilities
@@ -9,6 +9,7 @@ SUBDIR+=	GConf
 SUBDIR+=	GConf2
 SUBDIR+=	GConf2-ui
 SUBDIR+=	Gorm
+SUBDIR+=	ObjectiveLib
 SUBDIR+=	ProjectCenter
 SUBDIR+=	RTFM
 SUBDIR+=	Renaissance
