@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/03/22 09:51:04 adam Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:48:15 tv Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	xorg-clients-${XORG_VER}
@@ -61,11 +61,6 @@ post-install:
 
 .if ${OPSYS} == "Linux"
 .  include "../../security/PAM/buildlink3.mk"
-.endif
-
-PLIST_SRC+=	PLIST
-.if ${OPSYS} != "Darwin"
-PLIST_SRC+=	PLIST.dga
 .endif
 
 .include "../../meta-pkgs/xorg/Makefile.common"
