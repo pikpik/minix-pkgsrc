@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.9850 2005/04/15 04:57:44 rh Exp $
+$NetBSD: CHANGES,v 1.9851 2005/04/15 05:17:49 schmonz Exp $
 
 Changes to the packages collection and infrastructure in 2005:
 
@@ -2017,3 +2017,4 @@ Changes to the packages collection and infrastructure in 2005:
 	Updated gnustep-base to 1.10.3 [rh 2005-04-15]
 	Updated djbdns-run to 20050415 [schmonz 2005-04-15]
 	Updated qmail-run to 20050415 [schmonz 2005-04-15]
+	Added ObjectiveLib-0.9 [rh 2005-04-15]
