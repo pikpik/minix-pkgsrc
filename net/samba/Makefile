@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.138 2005/01/09 06:33:28 christos Exp $
+# $NetBSD: Makefile,v 1.139 2005/04/11 21:46:59 tv Exp $
 
 DISTNAME=		samba-3.0.10
 PKGREVISION=		2
@@ -16,7 +16,7 @@ MAINTAINER=		jlam@NetBSD.org
 HOMEPAGE=		http://www.samba.org/
 COMMENT=		SMB/CIFS protocol server suite
 
-CONFLICTS+=		ja-samba-[0-9]* pam-smbpass-[0-9]* winbind-[0-9]*
+CONFLICTS+=		ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
