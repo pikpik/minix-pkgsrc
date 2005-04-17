@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2004/12/03 15:14:53 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2005/04/11 21:45:10 tv Exp $
 
 DISTNAME=	uudeview-0.5.20
 PKGNAME=	xdeview-0.5.20
@@ -23,4 +23,5 @@ post-install:
 
 .include "../../converters/uulib/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
