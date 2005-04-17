@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.233 2005/04/02 11:26:17 jdolecek Exp $
+# $NetBSD: Makefile,v 1.234 2005/04/17 11:37:05 adrianp Exp $
 #
 
 COMMENT=	Security tools
@@ -68,6 +68,7 @@ SUBDIR+=	heimdal
 SUBDIR+=	honeyd
 SUBDIR+=	honeyd-arpd
 SUBDIR+=	hydan
+SUBDIR+=	hydra
 SUBDIR+=	ike-scan
 SUBDIR+=	ipsec-tools
 SUBDIR+=	isakmpd
