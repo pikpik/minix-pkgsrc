@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.50 2005/03/24 21:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2005/04/11 21:47:07 tv Exp $
 
 DISTNAME=	gv-3.6.1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_GNU:=gv/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gv/
 COMMENT=	PostScript and PDF previewer
 
