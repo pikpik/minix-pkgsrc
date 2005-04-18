@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:26 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/18 00:13:05 salo Exp $
 #
 
 DISTNAME=	libebml-0.7.4
@@ -19,6 +19,8 @@ NO_CONFIGURE=	yes
 MAKEFLAGS+=	prefix=${PREFIX:Q}
 MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:Q} RANLIB=${RANLIB:Q}
 BUILD_DIRS=	${WRKDIR}/${DISTNAME}/make/linux
+BUILD_TARGET=	staticlib
+INSTALL_TARGET=	install_headers install_staticlib
 
 ONLY_FOR_COMPILER=	gcc
 
