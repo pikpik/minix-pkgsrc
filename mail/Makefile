@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.255 2005/04/04 19:12:27 salo Exp $
+# $NetBSD: Makefile,v 1.256 2005/04/10 02:06:31 minskim Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -149,6 +149,7 @@ SUBDIR+=	prayer
 SUBDIR+=	procmail
 SUBDIR+=	proxsmtp
 SUBDIR+=	pulsar
+SUBDIR+=	pymsgauth
 SUBDIR+=	qcheck
 SUBDIR+=	qgreylist
 SUBDIR+=	qmHandle
