@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.54 2005/04/08 12:45:22 salo Exp $
+# $NetBSD: Makefile,v 1.55 2005/04/11 21:46:49 tv Exp $
 #
 
-DISTNAME=		lftp-3.1.2
+DISTNAME=		lftp-3.1.3
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.cs.tu-berlin.de/pub/net/ftp/lftp/ \
 			ftp://ftp.tuwien.ac.at/infosys/browsers/ftp/lftp/ \
