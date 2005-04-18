@@ -1,0 +1,10 @@
+# $NetBSD$
+
+case ${STAGE} in
+
+POST-DEINSTALL)
+
+	${RM} ${PREFIX}/bin/pymsgauth-*
+	;;
+
+esac
