@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.4 2004/07/15 10:54:19 grant Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/16 12:47:22 tron Exp $
 
 MOZILLA=	firefox
-MOZ_VER=	1.0
+MOZ_VER=	1.0.3
+MOZ_DISTVER=	${MOZ_VER}
 
 HOMEPAGE=	http://www.mozilla.org/projects/firefox/
-COMMENT=	Lightweight gecko-based web browser (binary pkg)
+COMMENT=	Lightweight gecko-based web browser (binary package)
 
-# see Makefile.NetBSD.i386 for NetBSD ONLY_FOR_PLATFORM patterns.
+DIST_SUBDIR=	${MOZILLA}/${MOZ_DISTDIR}
+# binary package is built against GTK2
+MOZ_GTK2=	YES
+
 ONLY_FOR_PLATFORM+=	Linux-*-i386
-ONLY_FOR_PLATFORM+=	SunOS-5.[89]*-*
 
 .include "../../www/mozilla-bin/Makefile.common"
