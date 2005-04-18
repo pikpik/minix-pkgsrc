@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/02/24 19:17:10 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2005/03/26 11:16:15 recht Exp $
 #
 
 .include "Makefile.common"
@@ -9,7 +9,7 @@ PKG_SYSCONFSUBDIR=	libgda
 EGDIR=			${PREFIX}/share/examples/libgda
 CONF_FILES+=		${EGDIR}/config ${PKG_SYSCONFDIR}/config
 
-CONFIGURE_ARGS+=	--with-odbc=no
+CONFIGURE_ARGS+=	--with-odbc=no --with-bdb=no
 
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../mk/bsd.pkg.mk"
