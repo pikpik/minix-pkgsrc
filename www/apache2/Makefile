@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.68 2005/04/11 21:47:51 tv Exp $
+# $NetBSD: Makefile,v 1.69 2005/04/12 05:49:45 martti Exp $
 
 .include "Makefile.common"
 
 PKGNAME=		apache-${APACHE_VERSION}
-PKGREVISION=	1
+PKGREVISION=		2
 CATEGORIES=		www
 
 HOMEPAGE=		http://httpd.apache.org/
