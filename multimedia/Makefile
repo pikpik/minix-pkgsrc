@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2005/03/23 19:17:16 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2005/04/16 11:34:20 wiz Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -56,7 +56,7 @@ SUBDIR+=	mpeg_encode
 SUBDIR+=	mpeg_play
 SUBDIR+=	mplayer
 SUBDIR+=	mplayer-plugin-firefox
-SUBDIR+=	mplayer-plugin-firefox-gtk2
+SUBDIR+=	mplayer-plugin-firefox-gtk1
 SUBDIR+=	mplayer-plugin-mozilla
 SUBDIR+=	mplayer-plugin-mozilla-gtk2
 SUBDIR+=	mplayer-share
