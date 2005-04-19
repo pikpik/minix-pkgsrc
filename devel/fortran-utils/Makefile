@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:30:30 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:13:28 agc Exp $
 
 DISTNAME=	fortran-utils-1.1
 CATEGORIES=	devel
@@ -10,5 +10,8 @@ COMMENT=	Utilities for Fortran programmers
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
 WRKSRC=		${WRKDIR}/fortran-utils
+
+MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP} BINMODE=${BINMODE}	\
+		MANOWN=${MANOWN} MANGRP=${MANGRP} MANMODE=${MANMODE}
 
 .include "../../mk/bsd.pkg.mk"
