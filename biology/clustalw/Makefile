@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/08/16 23:34:58 ben Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/03 15:14:51 wiz Exp $
 
 DISTNAME=	clustalw1.83.UNIX
 PKGNAME=	clustalw-1.83
@@ -10,11 +10,15 @@ MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://www-igbmc.u-strasbg.fr/BioInfo/ClustalW/
 COMMENT=	General purpose multiple alignment program for DNA or proteins
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
 MAKEFILE=	makefile
 BUILD_TARGET=	clustalw
 WRKSRC=		${WRKDIR}/clustalw1.83
 
 MAKE_FLAGS+=	CC="${CC}"
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	@${SED} -e 's:@PREFIX@:${PREFIX}:' < ${WRKSRC}/clustalw.c \
