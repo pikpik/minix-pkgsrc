@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/01/14 21:44:33 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.honeyd
 PKG_SUPPORTED_OPTIONS=	python rrdtool
@@ -6,7 +6,7 @@ PKG_SUPPORTED_OPTIONS=	python rrdtool
 .include "../../mk/bsd.options.mk"
 
 ###
-### Add python support 
+### Add python support
 ###
 .if !empty(PKG_OPTIONS:Mpython)
 .	include "../../lang/python/extension.mk"
