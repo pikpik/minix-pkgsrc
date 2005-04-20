@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/rssh
+libexec/rssh_chroot_helper
+man/man1/rssh.1
+man/man5/rssh.conf.5
+share/examples/rssh/rssh.conf
+@dirrm share/examples/rssh
