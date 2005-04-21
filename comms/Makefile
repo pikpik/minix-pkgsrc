@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2004/06/20 20:07:03 tv Exp $
+# $NetBSD: Makefile,v 1.53 2005/04/08 03:12:29 riz Exp $
 #
 
 COMMENT=	Communication utilities
@@ -21,6 +21,7 @@ SUBDIR+=	hylafax
 SUBDIR+=	jpilot
 SUBDIR+=	jpilot-syncmal
 SUBDIR+=	kermit
+SUBDIR+=	kyopon
 SUBDIR+=	libmal
 SUBDIR+=	linuxsms
 SUBDIR+=	lrzsz
