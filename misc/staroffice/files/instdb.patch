@@ -1,7 +1,0 @@
-$NetBSD$
-
---- instdb.ins.orig	Sun Nov 21 14:06:06 1999
-+++ instdb.ins	Sun Nov 21 14:43:30 1999
-@@ -2 +2 @@
--	DefaultDestPath = "@@PREFIX@@/Office51";
-+	DefaultDestPath = "Office51";

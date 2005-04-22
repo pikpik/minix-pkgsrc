@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.235 2005/03/07 14:49:47 minskim Exp $
+# $NetBSD: Makefile,v 1.236 2005/04/10 01:03:43 minskim Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -207,7 +207,6 @@ SUBDIR+=	screen
 SUBDIR+=	setiathome
 SUBDIR+=	siag
 SUBDIR+=	splitvt
-SUBDIR+=	staroffice
 SUBDIR+=	stellarium
 SUBDIR+=	tds
 SUBDIR+=	team

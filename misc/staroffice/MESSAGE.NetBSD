@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD: MESSAGE,v 1.2 2002/09/24 12:30:19 wiz Exp $
-
-  Please note that under NetBSD the program will pop up a requester,
-  complaining that it is unable to load the 'PluginManager' component.
-  This is normal and can be ignored (you can simply click away the
-  requester).
-
-===========================================================================
