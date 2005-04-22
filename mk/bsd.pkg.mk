@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1614 2005/04/18 10:06:47 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1615 2005/04/21 15:53:53 tv Exp $
 #
 # This file is in the public domain.
 #
@@ -931,8 +931,8 @@ USE_LANGUAGES?=		# empty
 #
 .include "../../mk/compiler.mk"
 
-USE_NEW_TOOLS?=	no
-.if !empty(USE_NEW_TOOLS:M[yY][eE][sS])
+_USE_NEW_TOOLS?=	no
+.if !empty(_USE_NEW_TOOLS:M[yY][eE][sS])
 .include "../../mk/tools/bsd.tools.mk"
 .else
 .include "../../mk/tools.mk"
