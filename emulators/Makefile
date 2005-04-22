@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.127 2005/04/02 19:46:15 jdolecek Exp $
+# $NetBSD: Makefile,v 1.128 2005/04/02 19:51:01 jdolecek Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -70,7 +70,6 @@ SUBDIR+=	peace
 SUBDIR+=	pearpc
 SUBDIR+=	qemu
 SUBDIR+=	raine
-SUBDIR+=	rewind
 SUBDIR+=	simh
 SUBDIR+=	simulavr
 SUBDIR+=	snes9x
