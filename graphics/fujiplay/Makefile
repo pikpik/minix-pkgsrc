@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/02/21 20:26:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2005/03/10 14:07:29 tv Exp $
 #
 
 DISTNAME=	fujiplay
@@ -14,6 +14,13 @@ COMMENT=	Download pictures from some Fujifilm digital cameras
 
 DIST_SUBDIR=	fujiplay-1.33
 WRKSRC=		${WRKDIR}
+
+SUBST_CLASSES+=		cvsid
+SUBST_MESSAGE.cvsid=	"Removing CVS Ids from files."
+SUBST_STAGE.cvsid=	post-extract
+SUBST_SED.cvsid=	-e 's|\$$Id|Id|'
+SUBST_SED.cvsid+=	-e 's| \$$$$||'
+SUBST_FILES.cvsid=	fujiplay.c
 
 xpost-patch:
 	cd ${WRKSRC} ; ${MV} fujiplay.c fujiplay.c.orig2 ; \
