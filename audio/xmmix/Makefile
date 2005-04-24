@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.22 2005/03/24 21:12:51 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/11 21:44:58 tv Exp $
 
 DISTNAME=       xmmix-1.2
 PKGREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=   http://mercury.hypersurf.com/~amb/download/xmmix-1.2/src/
+MASTER_SITES=   http://www.ibiblio.org/tkan/download/xmmix/1.2.2/src/
 
 MAINTAINER=	augustss@cs.chalmers.se
-HOMEPAGE=	http://sunsite.unc.edu/~cddb/xmmix/index.html
+HOMEPAGE=	http://www.amb.org/xmmix/
 COMMENT=	X interface to the audio mixer device
 
 USE_IMAKE=	yes
