@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/10 13:09:22 rtr Exp $
+# $NetBSD: Makefile,v 1.18 2005/04/11 21:45:15 tv Exp $
 
 DISTNAME=	MySQL-python-0.9.2
 PKGNAME=	${PYPKGPREFIX}-mysqldb-0.9.2
@@ -13,7 +13,7 @@ COMMENT=	MySQL interface for Python
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
 
-MYSQL_VERSIONS_ACCEPTED= 40 30
+MYSQL_VERSIONS_ACCEPTED= 40
 
 .include "../../mk/mysql.buildlink3.mk"
 .include "../../lang/python/extension.mk"
