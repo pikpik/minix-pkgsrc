@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/04/20 12:37:57 seb Exp $
+# $NetBSD: Makefile,v 1.32 2005/04/22 02:18:20 jlam Exp $
 #
 
 DISTNAME=	graphviz-2.2.1
@@ -47,7 +47,6 @@ pre-build:
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/gd/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
-.include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
