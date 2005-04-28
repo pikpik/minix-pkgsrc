@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/03/25 19:13:24 kim Exp $
+# $NetBSD: Makefile,v 1.49 2005/04/11 21:47:21 tv Exp $
 #
 
 DISTNAME=	tcsh-6.14.00
@@ -28,8 +28,8 @@ PLIST_SRC=	${WRKDIR}/PLIST-src
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-OS_VER!=	${ECHO} ${OS_VERSION} | ${SED} -e 's|5\.|2.|'
-LOWER_OPSYS=	solaris${OS_VER}
+OS_VER_cmd=	${ECHO} ${OS_VERSION} | ${SED} -e 's|5\.|2.|'
+LOWER_OPSYS=	solaris${OS_VER_cmd:sh}
 .endif
 
 PKG_SHELL?=	${PREFIX}/bin/tcsh
