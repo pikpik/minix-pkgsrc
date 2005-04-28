@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.634 2005/04/22 19:00:33 wiz Exp $
+# $NetBSD: Makefile,v 1.635 2005/04/24 02:49:19 rh Exp $
 #
 
 COMMENT=	Development utilities
@@ -96,6 +96,7 @@ SUBDIR+=	cvsup-gui-bin
 SUBDIR+=	cvsync
 SUBDIR+=	cweb
 SUBDIR+=	cxref
+SUBDIR+=	darcs
 SUBDIR+=	darts
 SUBDIR+=	ddd
 SUBDIR+=	dejagnu
