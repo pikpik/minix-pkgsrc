@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.45 2005/04/28 03:01:11 jlam Exp $
+# $NetBSD: replace.mk,v 1.46 2005/04/28 03:57:39 jlam Exp $
 #
 # This Makefile fragment handles "replacements" of system-supplied
 # tools with pkgsrc versions.  The replacements are placed under
@@ -263,7 +263,7 @@ ${_TOOLS_VARNAME.grep}=		${TOOLS_REAL_CMD.grep}
 .endif
 
 .if !defined(TOOLS_IGNORE.gsed) && !empty(USE_TOOLS:Mgsed)
-.  if !empty(PKGPATH:Mtextproc/sed)
+.  if !empty(PKGPATH:Mtextproc/gsed)
 MAKEFLAGS+=			TOOLS_IGNORE.gsed=
 .  elif !empty(_TOOLS_USE_PKGSRC.gsed:M[yY][eE][sS])
 TOOLS_DEPENDS.gsed?=		gsed>=3.0.2:../../textproc/gsed
