@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/24 10:05:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:40 tv Exp $
 #
 
 DISTNAME=	theme-dirs-1.0
@@ -22,8 +22,7 @@ WRKSRC=		${WRKDIR}
 .include "dirs.mk"
 .include "../../mk/bsd.prefs.mk"
 
-_SORTED!=	${ECHO} ${THEME_DIRS} | ${TR} -s ' \t' '\n' | ${SORT}
-MAKE_DIRS+=	${_SORTED:S/^/${PREFIX}\//}
+MAKE_DIRS+=	${THEME_DIRS:O:S/^/${PREFIX}\//}
 
 do-install:	# nothing
 
