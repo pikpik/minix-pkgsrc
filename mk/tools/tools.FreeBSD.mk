@@ -1,7 +1,8 @@
-# $NetBSD: tools.FreeBSD.mk,v 1.2 2005/04/27 15:59:25 jlam Exp $
+# $NetBSD: tools.FreeBSD.mk,v 1.3 2005/04/27 16:52:28 jlam Exp $
 #
 # System-supplied tools for the FreeBSD operating system.
 
+TOOLS_PLATFORM.[?=		[			# shell builtin
 TOOLS_PLATFORM.awk?=		/usr/bin/awk
 TOOLS_PLATFORM.basename?=	/usr/bin/basename
 TOOLS_PLATFORM.cat?=		/bin/cat

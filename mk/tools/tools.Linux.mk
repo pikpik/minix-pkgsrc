@@ -1,7 +1,8 @@
-# $NetBSD: tools.Linux.mk,v 1.4 2005/04/27 16:52:28 jlam Exp $
+# $NetBSD: tools.Linux.mk,v 1.5 2005/04/27 17:46:26 jlam Exp $
 #
 # System-supplied tools for the Linux operating system.
 
+TOOLS_PLATFORM.[?=		[			# shell builtin
 TOOLS_PLATFORM.awk?=		${TOOLS_PLATFORM.gawk}
 .if exists(/bin/basename)
 TOOLS_PLATFORM.basename?=	/bin/basename

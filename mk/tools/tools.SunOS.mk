@@ -1,7 +1,8 @@
-# $NetBSD: tools.SunOS.mk,v 1.2 2005/04/27 15:58:18 jlam Exp $
+# $NetBSD: tools.SunOS.mk,v 1.3 2005/04/27 16:52:28 jlam Exp $
 #
 # System-supplied tools for the Solaris operating system.
 
+TOOLS_PLATFORM.[?=		[			# shell builtin
 TOOLS_PLATFORM.awk?=		/usr/bin/nawk
 TOOLS_PLATFORM.basename?=	/usr/bin/basename
 TOOLS_PLATFORM.cat?=		/usr/bin/cat
