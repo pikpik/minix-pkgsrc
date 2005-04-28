@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/03 15:15:11 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/20 21:34:17 salo Exp $
 #
 
 DISTNAME=	pcal-4.7
@@ -14,7 +14,7 @@ COMMENT=	PostScript calendar program
 
 HTDOCS=		${PREFIX}/share/httpd/htdocs
 CGIBINDIR=	${PREFIX}/libexec/cgi-bin
-WWWSERVER!=	hostname
+WWWSERVER=	${HOSTNAME_CMD:sh}
 
 .include "../../mk/bsd.prefs.mk"	# for PAPERSIZE
 .include <bsd.sys.mk>			# for CC and HOST_CC
