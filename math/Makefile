@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.127 2005/01/25 14:36:38 cube Exp $
+# $NetBSD: Makefile,v 1.128 2005/04/22 19:02:11 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -50,6 +50,7 @@ SUBDIR+=	linpack
 SUBDIR+=	ltm
 SUBDIR+=	mapm
 SUBDIR+=	mathomatic
+SUBDIR+=	maxima
 SUBDIR+=	mcsim
 SUBDIR+=	meschach
 SUBDIR+=	metis
