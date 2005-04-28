@@ -1,0 +1,4 @@
+$NetBSD: $
+
+To use `album' you also need themes.  There are some sample themes in the
+album_themes package.
