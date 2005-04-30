@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/03/23 00:51:09 schmonz Exp $
+# $NetBSD: Makefile,v 1.33 2005/04/11 21:46:23 tv Exp $
 #
 
 DISTNAME=		netqmail-1.05
@@ -81,11 +81,11 @@ PKG_FAIL_REASON+=	"QMAIL_QUEUE_DIR must not be under ${QMAILDIR}"
 
 .if !empty(QMAIL_QUEUE_EXTRA)
 QUEUE_EXTRA=		"T${QMAIL_QUEUE_EXTRA}\\0"
-QUEUE_EXTRALEN!=	${EXPR} `${ECHO} ${QUEUE_EXTRA} | ${WC} -c` - 2
+QUEUE_EXTRALEN_cmd=	${EXPR} `${ECHO} ${QUEUE_EXTRA} | ${WC} -c` - 2
 SUBST_CLASSES+=		logging
 SUBST_STAGE.logging=	do-configure
 SUBST_FILES.logging=	extra.h
-SUBST_SED.logging=	-e 's|0|${QUEUE_EXTRALEN}|g'
+SUBST_SED.logging=	-e 's|0|${QUEUE_EXTRALEN_cmd:sh}|g'
 SUBST_SED.logging+=	-e 's|""|${QUEUE_EXTRA}|g'
 SUBST_MESSAGE.logging=	"Setting QUEUE_EXTRA."
 .endif
