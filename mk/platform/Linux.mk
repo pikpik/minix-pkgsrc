@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.9 2005/02/17 20:03:26 reed Exp $
+# $NetBSD: Linux.mk,v 1.10 2005/03/18 18:16:35 tv Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -165,6 +165,7 @@ IMAKE_MISCMAN_DIR=	${IMAKE_MAN_SOURCE_PATH}7
 IMAKE_MANNEWSUFFIX=	${IMAKE_MAN_SUFFIX}
 
 _DO_SHLIB_CHECKS=	no	# on installation, fixup PLIST for shared libs
+_IMAKE_TOOLS=		gmake	# extra tools required when we use imake
 _IMAKE_MAKE=		${GMAKE}	# program which gets invoked by imake
 .if exists(/usr/include/netinet6) || exists(/usr/include/linux/in6.h)
 _OPSYS_HAS_INET6=	yes	# IPv6 is standard
