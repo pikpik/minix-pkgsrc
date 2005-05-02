@@ -1,2 +1,3 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/09/25 00:33:19 grant Exp $
 @comment this PLIST automatically generated
+share/examples/rc.d/mailscanner

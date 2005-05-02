@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/05 11:46:11 xtraeme Exp $
 bin/ubs
 bin/ubs-event
 bin/ubs-play
@@ -10,6 +10,7 @@ include/ubs-play.h
 include/ubs-sched.h
 include/ubs.h
 lib/libubs.a
+share/examples/rc.d/ubs
 share/examples/ubs/help.conf
 share/examples/ubs/ubs.conf.default
 @dirrm share/examples/ubs

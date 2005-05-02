@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/04/23 22:07:53 reed Exp $
+@comment $NetBSD: PLIST,v 1.6 2004/06/25 16:58:10 wiz Exp $
 bin/addwords
 bin/canlisp
 bin/cannacheck
@@ -75,3 +75,4 @@ man/man1/splitword.1
 man/man1/wtoc.1
 sbin/cannakill
 sbin/cannaserver
+share/examples/rc.d/canna

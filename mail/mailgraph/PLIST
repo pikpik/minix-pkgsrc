@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/12/31 21:36:59 kim Exp $
 sbin/mailgraph
 ${CGIDIR}/mailgraph.cgi
 ${DOCDIR}/CHANGES
 ${DOCDIR}/COPYING
 ${DOCDIR}/README
+share/examples/rc.d/mailgraph

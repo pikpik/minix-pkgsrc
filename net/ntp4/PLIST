@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/10/24 04:52:26 fredb Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/06/10 20:03:11 jschauma Exp $
 bin/ntp-keygen
 bin/ntp-wait
 bin/ntpd
@@ -187,6 +187,8 @@ share/examples/ntp4/grundoon.conf
 share/examples/ntp4/malarky.conf
 share/examples/ntp4/pogo.conf
 share/examples/ntp4/rackety.conf
+share/examples/rc.d/ntpdate
+share/examples/rc.d/ntpd
 @dirrm share/examples/ntp4
 @dirrm share/doc/html/ntp4/scripts
 @dirrm share/doc/html/ntp4/pic

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2004/07/08 23:14:59 erh Exp $
+@comment $NetBSD: PLIST,v 1.5 2005/03/20 17:52:20 jmmv Exp $
 bin/hsml
 lib/screws/BasicExec.so
 lib/screws/CleanLog.so
@@ -83,6 +83,7 @@ share/doc/screws/tcpwin
 share/doc/screws/verbose
 share/doc/screws/virtual-hosts
 share/doc/screws/wrt54g.txt
+share/examples/rc.d/screws
 share/examples/screws/default.conf
 share/examples/screws/screws.conf
 share/screws/hsml-inc/include.pl.html

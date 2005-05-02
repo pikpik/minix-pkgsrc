@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/04/01 13:44:58 abs Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/04/06 18:33:57 abs Exp $
+share/examples/rc.d/tomcat5
 tomcat5/LICENSE
 tomcat5/NOTICE
 tomcat5/RELEASE-NOTES

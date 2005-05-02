@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.15 2005/02/03 13:37:03 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.16 2005/04/26 20:20:32 drochner Exp $
 bin/gdm
 bin/gdm-binary
 bin/gdmXnest
@@ -36,6 +36,7 @@ share/examples/gdm/modules/AccessDwellMouseEvents
 share/examples/gdm/modules/AccessKeyMouseEvents
 share/examples/gdm/modules/factory-AccessDwellMouseEvents
 share/examples/gdm/modules/factory-AccessKeyMouseEvents
+share/examples/rc.d/gdm
 share/gdm/BuiltInSessions/default.desktop
 share/gdm/gdmchooser.glade
 share/gdm/gdmsetup.glade
