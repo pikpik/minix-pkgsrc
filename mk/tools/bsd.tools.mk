@@ -1,4 +1,4 @@
-# $NetBSD: bsd.tools.mk,v 1.11 2005/04/27 20:54:08 jlam Exp $
+# $NetBSD: bsd.tools.mk,v 1.12 2005/04/28 17:37:06 jlam Exp $
 #
 # This Makefile fragment creates tools under ${TOOLS_DIR} that are
 # found before similarly-named tools in the system path.
@@ -79,6 +79,7 @@ USE_TOOLS?=		# empty
 .include "../../mk/tools/texinfo.mk"
 .include "../../mk/tools/rpcgen.mk"
 .include "../../mk/tools/replace.mk"
+.include "../../mk/tools/perl.mk"
 .include "../../mk/tools/make.mk"
 
 ######################################################################
