@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/01/22 09:08:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/07 15:25:13 cjep Exp $
 
 DISTNAME=	ra3-1.65
 PKGNAME=	quake3server-ra3-1.65
@@ -8,7 +8,7 @@ MASTER_SITES?=	http://gamefiles.blueyonder.co.uk/blueyondergames/quake3arena/mod
 DISTFILES=	ra3165cl.zip \
 		ra3165sv.zip
 
-MAINTAINER=	david@netbsd-fr.org
+MAINTAINER=	david@silicium.ath.cx
 COMMENT=	Quake III Arena Mod: Rocket Arena 3 for Linux
 
 .include "../../games/quake3server/Makefile.common"

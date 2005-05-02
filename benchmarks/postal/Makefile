@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/10/03 00:13:12 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:00 tv Exp $
 
 DISTNAME=	postal-0.62
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/postal/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	david@netbsd-fr.org
+MAINTAINER=	david@silicium.ath.cx
 HOMEPAGE=	http://www.coker.com.au/postal/
 COMMENT=	Tool for benchmarking SMTP/POP servers
 

@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.bluesnews.com/idstuff/quake3/linux/ \
 		ftp://ftp.idsoftware.com/idstuff/quake3/linux/
 EXTRACT_SUFX=	.run
 
-MAINTAINER=	david@netbsd-fr.org
+MAINTAINER=	david@silicium.ath.cx
 COMMENT=	Quake III Arena Dedicated Server for Linux
 
 .include "../../games/quake3server/Makefile.common"

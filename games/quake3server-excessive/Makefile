@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/22 12:01:35 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2004/05/07 15:25:13 cjep Exp $
 
 DISTNAME=	excessive_q3_server_003
 PKGNAME=	quake3server-excessive-003
 CATEGORIES=	games net
 MASTER_SITES=	ftp://ftp.fr.FreeBSD.org/pub/FreeBSD/distfiles/
 
-MAINTAINER=	david@netbsd-fr.org
+MAINTAINER=	david@silicium.ath.cx
 COMMENT=	Quake III Arena Mod: Excessive for Linux
 
 EXTRACT_SUFX=	.zip
