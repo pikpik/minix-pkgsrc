@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.16 2005/03/15 15:58:52 wennmach Exp $
 bin/ydr
 bin/rxdebug
 bin/rxperf
@@ -120,6 +120,5 @@ share/examples/arla/fstab
 share/examples/arla/SuidCells
 share/examples/arla/arla.conf
 @dirrm share/examples/arla
-@comment share/examples/rc.d/arlad
 share/gnats/stacken
 lkm/nnpfs_mod.o
