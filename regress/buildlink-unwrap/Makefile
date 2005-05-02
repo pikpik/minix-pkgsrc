@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/28 23:54:21 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:10 tv Exp $
 
 DISTNAME=	regress-buildlink-unwrap-0.0
 CATEGORIES=	regress
@@ -87,15 +87,13 @@ TEST_DIR=	${.CURDIR}/tests
 # If RUNTESTS is defined, then just run those tests, otherwise run them all.
 .if defined(RUNTESTS)
 TEST_MAKEFILES=	${RUNTESTS:S/^/${TEST_DIR}\//:S/$/.mk/}
+.  for _mkfile_ in ${TEST_MAKEFILES}
+.    if exists(${_mkfile_})
+.      include "${_mkfile_}"
+.    endif
+.  endfor
 .else
-TEST_MAKEFILES!= \
-	${FIND} ${TEST_DIR} -name "*.mk" -print || ${ECHO} "none"
+.  include "tests/unwrap-config.mk"
 .endif
-
-.for _mkfile_ in ${TEST_MAKEFILES}
-.  if exists(${_mkfile_})
-.    include "${_mkfile_}"
-.  endif
-.endfor
 
 .include "../../mk/bsd.pkg.mk"
