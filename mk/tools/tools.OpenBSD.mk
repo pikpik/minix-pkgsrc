@@ -1,4 +1,4 @@
-# $NetBSD: tools.OpenBSD.mk,v 1.3 2005/04/27 16:52:28 jlam Exp $
+# $NetBSD: tools.OpenBSD.mk,v 1.4 2005/04/28 17:30:24 jlam Exp $
 #
 # System-supplied tools for the OpenBSD operating system.
 
@@ -34,6 +34,7 @@ TOOLS_PLATFORM.gzip?=		/usr/bin/gzip -nf ${GZIP}
 TOOLS_PLATFORM.head?=		/usr/bin/head
 TOOLS_PLATFORM.hostname?=	/bin/hostname
 TOOLS_PLATFORM.id?=		/usr/bin/id
+TOOLS_PLATFORM.ldconfig?=	/sbin/ldconfig
 TOOLS_PLATFORM.lex?=		/usr/bin/lex
 TOOLS_PLATFORM.ln?=		/bin/ln
 TOOLS_PLATFORM.ls?=		/bin/ls
