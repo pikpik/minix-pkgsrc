@@ -1,7 +1,7 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2005/03/22 16:37:32 jmmv Exp $
+# $NetBSD: Makefile.common,v 1.2 2005/04/11 21:46:43 tv Exp $
 #
 
-DISTNAME=	totem-1.0
+DISTNAME=	totem-1.0.2
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	http://www.hadess.net/files/software/totem/
 
