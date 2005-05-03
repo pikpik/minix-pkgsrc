@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.3 2005/05/02 04:42:08 jlam Exp $
+# $NetBSD: defaults.mk,v 1.4 2005/05/02 21:10:03 jlam Exp $
 
 .if !defined(TOOLS_DEFAULTS_MK)
 TOOLS_DEFAULTS_MK=	defined
@@ -53,6 +53,7 @@ _TOOLS_VARNAME.lex=		LEX
 _TOOLS_VARNAME.ln=		LN
 _TOOLS_VARNAME.ls=		LS
 _TOOLS_VARNAME.m4=		M4
+_TOOLS_VARNAME.mail=		MAIL_CMD
 _TOOLS_VARNAME.mkdir=		MKDIR
 _TOOLS_VARNAME.mtree=		MTREE
 _TOOLS_VARNAME.mv=		MV
