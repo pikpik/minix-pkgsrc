@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.550 2005/04/19 00:07:27 wiz Exp $
+# $NetBSD: Makefile,v 1.551 2005/04/19 01:05:45 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -221,6 +221,7 @@ SUBDIR+=	ntop1
 SUBDIR+=	ntp4
 SUBDIR+=	oidentd
 SUBDIR+=	oinkmaster
+SUBDIR+=	openafs
 SUBDIR+=	openag
 SUBDIR+=	openh323
 SUBDIR+=	openntpd
