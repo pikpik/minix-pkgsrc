@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/19 10:53:49 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/05/02 17:11:17 drochner Exp $
 #
 
 DISTNAME=	libcdio-0.73
@@ -19,6 +19,7 @@ PKGCONFIG_OVERRIDE+=	libcdio_paranoia.pc.in
 PKGCONFIG_OVERRIDE+=	libiso9660.pc.in
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-versioned-libs
+USE_PERL5=		build
 
 INFO_FILES=		libcdio.info
 
