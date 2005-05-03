@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:53:51 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:26:16 agc Exp $
 #
 
 DISTNAME=	setquota-0.1
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.jurai.net/users/winter/
 
