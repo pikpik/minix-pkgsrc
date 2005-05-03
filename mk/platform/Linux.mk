@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.10 2005/03/18 18:16:35 tv Exp $
+# $NetBSD: Linux.mk,v 1.11 2005/05/02 21:10:02 jlam Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -60,7 +60,6 @@ GZIP_CMD?=	/usr/bin/gzip -nf ${GZIP}
 GZIP_CMD?=	/bin/gzip -nf ${GZIP}
 .endif
 GZCAT?=		/bin/zcat
-GZIP?=		-9
 .if exists(/bin/head)
 HEAD?=		/bin/head
 .else

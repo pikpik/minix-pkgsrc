@@ -1,4 +1,4 @@
-# $NetBSD: Interix.mk,v 1.30 2005/03/28 15:04:07 tv Exp $
+# $NetBSD: Interix.mk,v 1.31 2005/04/20 21:40:30 tv Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -72,7 +72,6 @@ GREP?=		/bin/grep
 GTAR?=		${LOCALBASE}/bin/tar
 GUNZIP_CMD?=	/usr/contrib/bin/gunzip -f
 GZCAT?=		/usr/contrib/bin/gunzip -c
-GZIP?=		-9
 GZIP_CMD?=	/usr/contrib/bin/gzip -nf ${GZIP}
 HEAD?=		/bin/head
 HOSTNAME_CMD?=	/bin/hostname
