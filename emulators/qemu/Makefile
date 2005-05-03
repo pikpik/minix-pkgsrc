@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:44 tv Exp $
 #
 
-DISTNAME=		qemu-0.6.1
-PKGREVISION=		4
+DISTNAME=		qemu-0.7.0
 CATEGORIES=		emulators
 MASTER_SITES=		http://fabrice.bellard.free.fr/qemu/
 
-MAINTAINER=		dhowland@users.sourceforge.net
+MAINTAINER=		dhowlland@users.sourceforge.net
 HOMEPAGE=		http://fabrice.bellard.free.fr/qemu/
 COMMENT=		CPU emulator using dynamic translation
 
@@ -16,6 +15,8 @@ NOT_FOR_PLATFORM=	NetBSD-1.[0-6]*-*
 USE_GNU_TOOLS+=		make
 USE_X11=		yes
 HAS_CONFIGURE=		yes
+
+GCC_REQD+=		3.0
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--interp-prefix=${PREFIX}/share/qemu
