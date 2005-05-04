@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.293 2005/04/22 19:03:04 wiz Exp $
+# $NetBSD: Makefile,v 1.294 2005/04/23 17:30:01 adrianp Exp $
 
 COMMENT=	System utilities
 
-SUBDIR+=	GWLib
 SUBDIR+=	acpi-iasl
 SUBDIR+=	acpidump
 SUBDIR+=	adjustkernel
