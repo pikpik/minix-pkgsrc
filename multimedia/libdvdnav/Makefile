@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2004/10/03 00:13:02 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:41 tv Exp $
 #
 
-DISTNAME=	libdvdnav-0.1.9
-PKGREVISION=	1
+DISTNAME=	libdvdnav-0.1.10
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvd/}
 
