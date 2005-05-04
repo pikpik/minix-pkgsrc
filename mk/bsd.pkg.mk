@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1625 2005/05/03 21:30:42 kristerw Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1626 2005/05/04 04:23:34 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -943,8 +943,8 @@ USE_TOOLS+=	[ awk basename cat chgrp chmod chown cmp cp cut date	\
 		dirname echo egrep env expr false fgrep file find grep	\
 		gtar gunzip gzcat gzip head hostname id install		\
 		ldconfig ln ls m4 mkdir mtree mv nice pax pwd rm rmdir	\
-		sed sh shlock sort tail tee test touch tr true tsort wc	\
-		xargs
+		sed sh shlock sort strip tail tee test touch tr true	\
+		tsort wc xargs
 
 # We need a mail command to send mail to ${PKGSRC_MESSAGE_RECIPIENTS}.
 .if !empty(PKGSRC_MESSAGE_RECIPIENTS)
