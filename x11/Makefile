@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.387 2005/03/29 13:59:04 wiz Exp $
+# $NetBSD: Makefile,v 1.388 2005/05/03 13:20:11 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -64,6 +64,7 @@ SUBDIR+=	gnopernicus
 SUBDIR+=	gnustep-back
 SUBDIR+=	gnustep-gui
 SUBDIR+=	gnustep-preferences
+SUBDIR+=	gromit
 SUBDIR+=	gtk
 SUBDIR+=	gtk+extra
 SUBDIR+=	gtk--
