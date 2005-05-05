@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/24 03:01:15 rh Exp $
 #
 
-DISTNAME=		sope-4.4beta.6-voyager-r756
-PKGNAME=		sope-4.4rc6
+DISTNAME=		sope-4.4beta.6-voyager-r758
+PKGNAME=		sope-4.4rc6.758
 CATEGORIES=		www gnustep
 MASTER_SITES=		ftp://ftp.opengroupware.org/sources/releases/
 
