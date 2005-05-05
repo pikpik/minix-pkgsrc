@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/02/14 11:20:13 grant Exp $
+# $NetBSD: Makefile,v 1.36 2005/04/11 21:46:17 tv Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -11,7 +11,7 @@ COMMENT=	Anti-virus toolkit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-CLAMAV_VERSION=		0.83
+CLAMAV_VERSION=		0.84
 
 USE_LIBTOOL=		yes
 
