@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.14 2005/03/27 15:43:38 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:48:12 tv Exp $
 #
 
-DISTNAME=		paragui-1.0.4
-PKGREVISION=		7
-CATEGORIES=		x11
-MASTER_SITES=		http://savannah.nongnu.org/download/paragui/
+DISTNAME=	paragui-1.1.8
+CATEGORIES=	x11
+MASTER_SITES=	http://savannah.nongnu.org/download/paragui/
 
-MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.paragui.org/
-COMMENT=		Cross-platform high-level application framework and GUI library
+MAINTAINER=	tech-pkg@NetBSD.org
+HOMEPAGE=	http://www.paragui.org/
+COMMENT=	Cross-platform high-level application framework and GUI library
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
@@ -17,7 +16,9 @@ GNU_CONFIGURE=		yes
 PTHREAD_OPTS+=		require native
 
 .include "../../devel/SDL/buildlink3.mk"
+.include "../../devel/libsigc++/buildlink3.mk"
 .include "../../devel/physfs/buildlink3.mk"
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
