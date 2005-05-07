@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:33 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/07 19:03:38 jdolecek Exp $
 
 DISTNAME=	php-extensions-5.0
 PKGREVISION=	5
@@ -55,6 +55,7 @@ DEPENDS+=	php-zlib-5.0.*:../../archivers/php-zlib
 # PHP 5.x-only extensions
 DEPENDS+=	php-dom-5.0.*:../../textproc/php5-dom
 DEPENDS+=	php-mysqli-5.0.*:../../databases/php5-mysqli
+DEPENDS+=	php-soap-5.0.*:../../net/php5-soap
 DEPENDS+=	php-sqlite-5.0.*:../../databases/php5-sqlite
 DEPENDS+=	php-xsl-5.0.*:../../textproc/php5-xsl
 
