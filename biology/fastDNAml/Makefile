@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/29 13:41:05 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/08/16 23:45:59 ben Exp $
 
 DISTNAME=	fastDNAml_1.2.2
 PKGNAME=	fastDNAml-1.2.2
@@ -10,8 +10,6 @@ HOMEPAGE=	http://geta.life.uiuc.edu/~gary/programs/fastDNAml.html
 COMMENT=	Program derived from Joseph Felsenstein's version 3.3 DNAML
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/source
-
-MAKE_FLAGS+=	CC=${CC}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fastDNAml ${PREFIX}/bin
