@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/07/28 01:42:43 atatat Exp $
+# $NetBSD: Makefile,v 1.18 2004/10/07 02:01:38 jlam Exp $
 #
 
 DISTNAME=	pkgdepgraph-2.7
@@ -7,7 +7,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	atatat@NetBSD.org
-HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/Packages.txt
+HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
 COMMENT=	Visual representation of installed NetBSD packages
 
 # removed so that pkgdepgraph can be used on "client" machines -- @@@
