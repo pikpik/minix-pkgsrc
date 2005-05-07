@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:47:30 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/03 10:29:13 drochner Exp $
 #
 
 DISTNAME=	vcdimager-0.7.21
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.vcdimager.org/pub/vcdimager/vcdimager-0.7_UNSTABLE/
+MASTER_SITES=	http://www.vcdimager.org/pub/vcdimager/vcdimager-0.7/
 
 MAINTAINER=	ben@NetBSD.org
 HOMEPAGE=	http://www.vcdimager.org/
