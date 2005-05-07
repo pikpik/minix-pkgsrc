@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.52 2004/12/28 02:47:52 reed Exp $
+# $NetBSD: Makefile,v 1.53 2004/12/29 15:42:38 minskim Exp $
 
-DISTNAME=	wwwoffle-2.8c
-PKGREVISION=	1
+DISTNAME=	wwwoffle-2.8e
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/www/servers/} \
-		ftp://ftp.demon.co.uk/pub/unix/httpd/ \
-		http://www.gedanken.freeserve.co.uk/download-wwwoffle/
+MASTER_SITES=	http://www.gedanken.freeserve.co.uk/download-wwwoffle/ \
+		ftp://ftp.ibiblio.org/pub/Linux/apps/www/servers/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	fredb@NetBSD.org
+MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.gedanken.demon.co.uk/wwwoffle/
 COMMENT=	WWW proxy with support for offline browsing
 
