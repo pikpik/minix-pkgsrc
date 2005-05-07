@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/03/04 17:38:53 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/11 21:45:36 tv Exp $
 
 DISTNAME=		p5-perl-headers
 PKGNAME=		${DISTNAME}-${OS_VERSION}
@@ -44,7 +44,7 @@ do-build:
 
 do-install:
 	${INSTALL_DATA_DIR} ${PERL5_INSTALLSITEARCH}
-	${CP} -R ${WRKSRC}/h2ph/* ${PERL5_INSTALLSITEARCH}
+	cd ${WRKSRC}/h2ph/ && ${PAX} -rw . ${PERL5_INSTALLSITEARCH}
 	${INSTALL_DATA} ${WRKSRC}/packlist ${PERL5_PACKLIST}
 	${CAT} ${PERL5_PACKLIST} | ${XARGS} ${CHMOD} a-w
 	${CAT} ${PERL5_PACKLIST} | ${XARGS} ${CHOWN} ${SHAREOWN}:${SHAREGRP}
