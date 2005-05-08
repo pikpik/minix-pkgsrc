@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2004/10/03 00:18:09 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2004/11/19 23:16:02 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 HEIMDAL_BUILDLINK3_MK:=	${HEIMDAL_BUILDLINK3_MK}+
@@ -19,7 +19,13 @@ BUILDLINK_PKGSRCDIR.heimdal?=	../../security/heimdal
 BUILDLINK_INCDIRS.heimdal?=	include/krb5
 .endif	# HEIMDAL_BUILDLINK3_MK
 
-PKG_OPTIONS.heimdal?=	${PKG_DEFAULT_OPTIONS}
+.if !defined(PKG_OPTIONS.heimdal)
+PKG_OPTIONS.heimdal!=							\
+	cd ${BUILDLINK_PKGSRCDIR.heimdal} &&				\
+	${MAKE} show-var ${MAKE_FLAGS} VARNAME=PKG_OPTIONS
+MAKE_FLAGS+=			PKG_OPTIONS.heimdal=${PKG_OPTIONS.heimdal:Q}
+WRAPPER_VARS+=			PKG_OPTIONS.heimdal
+.endif
 
 .include "../../security/openssl/buildlink3.mk"
 .if !empty(PKG_OPTIONS.heimdal:Mdb4)
