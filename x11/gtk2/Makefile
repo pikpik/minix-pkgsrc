@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2005/04/11 21:48:08 tv Exp $
+# $NetBSD: Makefile,v 1.81 2005/04/15 13:47:25 wiz Exp $
 #
 
 DISTNAME=		gtk+-2.6.7
@@ -53,6 +53,12 @@ CPPFLAGS+=		-DPREFIX="\"${PREFIX}\""
 PRINT_PLIST_AWK+=	/^@dirrm share\/themes\/Default$$/ \
 				{ print "@unexec $${RMDIR} %D/" $$2 \
 				  " 2>/dev/null || $${TRUE}"; next; }
+
+SUBST_CLASSES=		pthread
+SUBST_STAGE.pthread=	pre-configure
+SUBST_MESSAGE.pthread=	"Fixing pthread flags."
+SUBST_SED.pthread=	-e 's,__PTHREAD_FLAGS__,${BUILDLINK_LDFLAGS.pthread},g'
+SUBST_FILES.pthread=	gdk-pixbuf/Makefile.in
 
 .include "../../mk/compiler.mk"
 
