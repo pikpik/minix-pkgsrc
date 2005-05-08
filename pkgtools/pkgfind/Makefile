@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2005/02/15 21:24:36 peter Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:47:05 tv Exp $
 
-DISTNAME=	pkgfind-20050215
+DISTNAME=	pkgfind-20050508
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
