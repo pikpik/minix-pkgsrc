@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/09/19 23:08:27 dent Exp $
+# $NetBSD: Makefile,v 1.11 2005/02/11 03:13:19 erh Exp $
 #
 
 DISTNAME=	cs113ins
@@ -19,6 +19,7 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 EXTRACT_CMD=	(cd ${WRKDIR} && unzip -x ${DOWNLOADED_DISTFILE}) || ${TRUE}
+WRKSRC=		${WRKDIR}
 
 CSFILES=	cs/images/Logo2.gif \
 		cs/images/Logo.gif \
