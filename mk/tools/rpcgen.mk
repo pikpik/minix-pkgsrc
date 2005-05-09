@@ -1,10 +1,10 @@
-# $NetBSD: rpcgen.mk,v 1.2 2005/04/24 04:34:34 jlam Exp $
+# $NetBSD: rpcgen.mk,v 1.3 2005/05/09 00:13:03 jlam Exp $
 
 # Create an rpcgen script that correctly sets the CPP environment
 # variable to a stat(2)able path to a C preprocessor, then invokes
 # the real rpcgen.
 #
-TOOLS_WRAP+=		rpcgen
+TOOLS_CREATE+=		rpcgen
 .if !defined(TOOLS_REAL_CMD.rpcgen)
 TOOLS_EXECDIRS.rpcgen?=	/bin /sbin /usr/bin /usr/sbin
 .  for _d_ in ${TOOLS_EXECDIRS.rpcgen}
