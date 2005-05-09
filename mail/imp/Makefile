@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/01/16 21:46:05 adrianp Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/01 17:36:26 adrianp Exp $
 
 DISTNAME=	imp-3.2.8
 CATEGORIES=	mail www
@@ -67,6 +67,7 @@ do-install:
 	cd ${WRKSRC}/config; ${INSTALL_DATA} * ${IMPDIR}/config
 	cd ${WRKSRC}; ${INSTALL_DATA} *.php ${IMPDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${IMPDIR}
-	${CHMOD} -R a-w ${IMPDIR}
+	${FIND} ${IMPDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${IMPDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE} 
 
 .include "../../mk/bsd.pkg.mk"

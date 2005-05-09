@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/27 12:18:53 adrianp Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/01 19:07:36 adrianp Exp $
 
 DISTNAME=	imp-h3-${IMPVER}
 PKGNAME=	imp-${IMPVER}
@@ -93,7 +93,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/config/*.dist ${IMPDIR}/config
 	${INSTALL_DATA} ${WRKSRC}/*.php ${IMPDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${IMPDIR}
-	${CHMOD} -R a-w ${IMPDIR}
+	${FIND} ${IMPDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${IMPDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE} 
 	${CHOWN} ${APACHE_USER}:${ROOT_GROUP} ${IMPDIR}/config
 	${CHMOD} 0750 ${IMPDIR}/config
 
