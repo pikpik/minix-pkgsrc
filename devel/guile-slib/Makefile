@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/04 13:57:15 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/04/11 21:45:25 tv Exp $
 
 DISTNAME=	guile-slib-2.4.2
 PKGREVISION=	6
@@ -14,6 +14,7 @@ DEPENDS+=	slib>=2.4.2:../../devel/slib
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
+WRKSRC=		${WRKDIR}
 
 do-build:
 
