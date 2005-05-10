@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.390 2005/05/04 20:08:24 reed Exp $
+# $NetBSD: Makefile,v 1.391 2005/05/10 20:26:05 jmmv Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -22,6 +22,7 @@ SUBDIR+=	asnap
 SUBDIR+=	aterm
 SUBDIR+=	bbapm
 SUBDIR+=	blt
+SUBDIR+=	clearlooks-metacity
 SUBDIR+=	compositeext
 SUBDIR+=	controlcenter
 SUBDIR+=	devilspie
