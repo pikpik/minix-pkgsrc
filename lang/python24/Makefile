@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:16 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/09 20:37:51 recht Exp $
 #
 
 DISTNAME=	Python-2.4.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
+
+# Remember to update pkgsrc/lang/python/srcdist.mk when version changes
 
 CONFLICTS+=	python-[0-9]*
 
