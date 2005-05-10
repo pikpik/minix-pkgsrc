@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/xine/plugins/${PKGVERSION}/xineplug_decode_qt.a
+lib/xine/plugins/${PKGVERSION}/xineplug_decode_qt.so
+lib/xine/plugins/${PKGVERSION}/xineplug_decode_w32dll.a
+lib/xine/plugins/${PKGVERSION}/xineplug_decode_w32dll.so
