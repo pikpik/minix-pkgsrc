@@ -1,8 +1,8 @@
-# $NetBSD: builtin.mk,v 1.1 2004/03/10 17:57:15 jlam Exp $
+# $NetBSD: builtin.mk,v 1.2 2004/03/29 05:43:35 jlam Exp $
 
 .if !defined(IS_BUILTIN.tcp_wrappers)
 IS_BUILTIN.tcp_wrappers=	no
-.  if exists(/usr/include/tcpd.h)
+.  if exists(/usr/include/tcpd.h) && exists(/usr/lib${ABI}/libwrap.so)
 IS_BUILTIN.tcp_wrappers=	yes
 .  endif
 .endif	# IS_BUILTIN.tcp_wrappers
