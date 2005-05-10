@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:04 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/10 18:38:15 drochner Exp $
 #
 
 DISTNAME=		inkscape-0.41
@@ -22,6 +22,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_GNU_TOOLS+=		make
 
+BUILDLINK_DEPENDS.boehm-gc+=	boehm-gc>=6.4
 .include "../../devel/boehm-gc/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libsigc++2/buildlink3.mk"
