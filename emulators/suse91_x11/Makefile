@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2005/01/22 10:10:17 jdolecek Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:45:45 tv Exp $
 
 DISTNAME=		suse_x11-${SUSE_VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE91}
 DISTFILES=		${RPMFILES}
@@ -18,7 +18,7 @@ EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
-RPMFILES=		XFree86-libs-4.3.99.902-43.35.3.${SUSE_ARCH}.rpm
+RPMFILES=		XFree86-libs-4.3.99.902-43.42.5.${SUSE_ARCH}.rpm
 
 .include "../../mk/bsd.prefs.mk"
 
