@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.17 2004/12/20 13:25:09 grant Exp $
+# $NetBSD: buildlink3.mk,v 1.18 2005/02/24 22:38:42 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 PERL5_BUILDLINK3_MK:=	${PERL5_BUILDLINK3_MK}+
@@ -30,10 +30,7 @@ USE_PKGINSTALL=		yes
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/../../lang/perl5/files/install.tmpl
 .endif
 
-.include "../../lang/perl5/vars.mk"
-
 .if ${PKG_INSTALLATION_TYPE} == "overwrite"
-.  if defined(PERL5_SUB_INSTALLARCHLIB)
 #
 # Perl keeps headers and odd libraries in an odd path not caught by the
 # default BUILDLINK_FILES_CMD, so name them to be symlinked into
@@ -42,7 +39,6 @@ INSTALL_EXTRA_TMPL+=	${.CURDIR}/../../lang/perl5/files/install.tmpl
 BUILDLINK_FILES.perl=							\
 	${PERL5_SUB_INSTALLARCHLIB}/CORE/*				\
 	${PERL5_SUB_INSTALLARCHLIB}/auto/DynaLoader/DynaLoader.a
-.  endif
 .endif
 
 .endif  # PERL5_BUILDLINK3_MK
