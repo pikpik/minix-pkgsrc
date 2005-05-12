@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2005/04/11 21:46:14 tv Exp $
+# $NetBSD: Makefile,v 1.34 2005/05/01 22:55:07 kristerw Exp $
 
 DISTNAME=		nhc98src-1.18.tar.gz
 PKGNAME=		nhc98-1.18
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.york.ac.uk/pub/haskell/nhc98/
 DISTFILES=		nhc98src-1.18.tar.gz \
