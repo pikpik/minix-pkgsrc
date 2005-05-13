@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/02/18 16:08:13 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2005/04/11 21:45:18 tv Exp $
 #
 
 DISTNAME=	automake-1.9.5
@@ -20,7 +20,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV=		PERL=${PERL5}
 _STRIPFLAG_INSTALL=	# none
 EVAL_PREFIX+=		M4DIR=m4
-M4=			${M4DIR}/bin/${GNU_PROGRAM_PREFIX}m4
+TOOLS_M4=		${M4DIR}/bin/${GNU_PROGRAM_PREFIX}m4
 
 INFO_FILES=		automake.info
 
