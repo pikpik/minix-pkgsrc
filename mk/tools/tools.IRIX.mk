@@ -1,4 +1,4 @@
-# $NetBSD: tools.IRIX.mk,v 1.9 2005/05/10 19:56:51 jlam Exp $
+# $NetBSD: tools.IRIX.mk,v 1.10 2005/05/10 20:14:27 jlam Exp $
 #
 # System-supplied tools for the IRIX operating system.
 
@@ -25,7 +25,7 @@ TOOLS_PLATFORM.find?=		/sbin/find
 TOOLS_PLATFORM.grep?=		/sbin/grep
 TOOLS_PLATFORM.gunzip?=		/usr/sbin/gunzip -f
 .if exists(/usr/sbin/gzcat)
-TOOLS_PLATFORM.gzcat?=		/usr/bin/gzcat
+TOOLS_PLATFORM.gzcat?=		/usr/sbin/gzcat
 .elif exists(/usr/bsd/zcat)
 TOOLS_PLATFORM.gzcat?=		/usr/bsd/zcat
 .endif
