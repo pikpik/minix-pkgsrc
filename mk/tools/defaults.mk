@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.11 2005/05/13 22:08:20 jlam Exp $
+# $NetBSD: defaults.mk,v 1.12 2005/05/14 19:01:14 jlam Exp $
 
 .if !defined(TOOLS_DEFAULTS_MK)
 TOOLS_DEFAULTS_MK=	defined
@@ -103,5 +103,10 @@ ${_v_}?=	${TOOLS_PLATFORM.${_t_}}
 .  endif
 .endfor
 .undef _t_
+
+# XXX Temporarily set this here until we figure out a better way to handle
+# XXX TAR/GTAR in a better way.
+#
+TAR?=	${GTAR}
 
 .endif	# TOOLS_DEFAULTS_MK
