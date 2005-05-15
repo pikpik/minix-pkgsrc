@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2003/07/17 21:30:46 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2003/07/29 12:44:39 agc Exp $
 
 DISTNAME=	NetBSD-treiber_schreiben
 PKGNAME=	device-driver-doc-de-20030729
@@ -9,7 +9,8 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.unixag-kl.fh-kl.de/~jkunz/
 COMMENT=	Device driver documentation in German
 
-NO_BUILD=	# defined
+NO_BUILD=		yes
+PKGSRC_USE_TOOLS+=	gunzip
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/device-driver-doc-de

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/27 13:08:45 jmmv Exp $
 #
 
 DISTNAME=	arka-0.11
@@ -20,6 +20,7 @@ CPPFLAGS+=	-DARKA_GLOBAL=\"${PKG_SYSCONFDIR}/arkarc\"
 CPPFLAGS+=	-DARKA_PROGRAMS=\"${PKG_SYSCONFDIR}/arkarc\"
 
 INSTALLATION_DIRS=	bin man/man1
+PKGSRC_USE_TOOLS+=	gunzip
 
 post-build:
 	cd ${WRKSRC} && ${GUNZIP_CMD} arka.1.gz

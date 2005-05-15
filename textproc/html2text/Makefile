@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/24 08:53:28 adam Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/28 11:25:15 wiz Exp $
 
 DISTNAME=	html2text-1.3.2a
 CATEGORIES=	textproc
@@ -12,6 +12,7 @@ USE_LANGUAGES=		c c++
 GCC_REQD=		3.0
 HAS_CONFIGURE=		yes
 CONFIGURE_ENV+=		ECHO="${ECHO}"
+PKGSRC_USE_TOOLS+=	gunzip
 
 post-build:
 	${GUNZIP_CMD} -d ${WRKSRC}/html2text.1.gz ${WRKSRC}/html2textrc.5.gz

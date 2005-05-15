@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/03/27 15:43:37 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:58 tv Exp $
 #
 
 DISTNAME=	xrick-021212
@@ -18,6 +18,7 @@ NO_BIN_ON_FTP=	    ${RESTRICTED}
 NO_SRC_ON_FTP=	    ${RESTRICTED}
 
 USE_GNU_TOOLS+=		make
+PKGSRC_USE_TOOLS+=	gunzip
 USE_X11=		YES
 
 SUBST_CLASSES+=		data
