@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.5 2003/03/14 20:41:30 mason Exp $
+$NetBSD: MESSAGE,v 1.6 2003/09/04 03:26:04 erh Exp $
 
 Please refer to the file:
 
@@ -33,7 +33,7 @@ to httpd.conf:
 	Include ${PKG_SYSCONFDIR}/horde.conf
 
 to make Horde accessible through:
-	
+
 	http://www.domain.com/horde/
 
 ===========================================================================
