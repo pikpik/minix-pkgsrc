@@ -1,7 +1,7 @@
 #! /bin/sh
-# $NetBSD: cleanup,v 1.6 2004/05/25 02:25:21 jschauma Exp $
+# $NetBSD: cleanup,v 1.7 2004/10/11 13:50:17 tv Exp $
 
 wrkdir=${1:-work}
 
-rm -f -r $wrkdir
+rm -f -r "$wrkdir"
 rm -f Makefile.inc mk.conf.example */config.cache
