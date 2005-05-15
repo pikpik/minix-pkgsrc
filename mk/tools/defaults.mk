@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.13 2005/05/14 20:05:05 jlam Exp $
+# $NetBSD: defaults.mk,v 1.14 2005/05/14 21:15:07 jlam Exp $
 
 .if !defined(TOOLS_DEFAULTS_MK)
 TOOLS_DEFAULTS_MK=	defined
@@ -16,7 +16,7 @@ TOOLS_DEFAULTS_MK=	defined
 # "TOOL" variable names associated with each of the tools
 _TOOLS_VARNAME.awk=		AWK
 _TOOLS_VARNAME.basename=	BASENAME
-_TOOLS_VARNAME.bison=		YACC
+_TOOLS_VARNAME.bison-yacc=	YACC
 _TOOLS_VARNAME.bzcat=		BZCAT
 _TOOLS_VARNAME.cat=		CAT
 _TOOLS_VARNAME.chgrp=		CHGRP
