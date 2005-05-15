@@ -1,0 +1,9 @@
+# $NetBSD$
+#
+
+MAKEARGS_TEST=build
+MAKEARGS_CLEAN=clean
+
+check_result() {
+	exit_status 0
+}
