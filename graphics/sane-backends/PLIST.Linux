@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/sane.d/qcam.conf
+etc/sane.d/v4l.conf
+lib/sane/libsane-qcam.la
+lib/sane/libsane-v4l.la
