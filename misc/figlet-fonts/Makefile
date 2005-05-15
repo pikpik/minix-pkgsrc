@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/05/07 15:25:13 cjep Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/12/25 19:32:51 wiz Exp $
 #
 
 DISTNAME=	figlet-fonts-20021023
@@ -16,9 +16,11 @@ DIST_SUBDIR=	${DISTNAME}
 NO_CONFIGURE=	# defined
 NO_BUILD=	# defined
 
+PKGSRC_USE_TOOLS+=	gzcat
+
 post-extract:
 	cd ${WRKDIR}/international && \
-		${GZIP_CMD} -cd cjkfonts.tar.gz | ${GTAR} -xf - && \
+		${GZCAT} cjkfonts.tar.gz | ${GTAR} -xf - && \
 		${RM} -f cjkfonts.tar.gz
 # conflicts with font of same name in figlet
 	${MV} ${WRKDIR}/contributed/banner.flf ${WRKDIR}/contributed/banner1.flf
