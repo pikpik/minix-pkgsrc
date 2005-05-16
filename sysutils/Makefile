@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.294 2005/04/23 17:30:01 adrianp Exp $
+# $NetBSD: Makefile,v 1.295 2005/05/04 17:26:45 kristerw Exp $
 
 COMMENT=	System utilities
 
@@ -19,6 +19,7 @@ SUBDIR+=	bacula
 SUBDIR+=	bbsload
 SUBDIR+=	bchunk
 SUBDIR+=	bkpupsd
+SUBDIR+=	burn
 SUBDIR+=	ccd2iso
 SUBDIR+=	ccze
 SUBDIR+=	cdbkup
