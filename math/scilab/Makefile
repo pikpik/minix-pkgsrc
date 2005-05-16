@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/03/17 22:41:09 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.61 2005/04/11 21:46:31 tv Exp $
 #
 
 DISTNAME=	${SCIBASE}.src
@@ -21,6 +21,7 @@ NOT_FOR_PLATFORM=	NetBSD-1.[0-4]*-alpha NetBSD-1.5-alpha \
 USE_LANGUAGES=		fortran
 USE_X11BASE=		yes
 USE_LIBTOOL=		yes
+PKGSRC_USE_TOOLS+=	tee
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-xaw3d
