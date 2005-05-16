@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/30 15:06:58 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2005/05/07 21:37:42 schmonz Exp $
 #
 
 DISTNAME=		netqmail-1.05
@@ -29,7 +29,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 .endif
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
+PKGSRC_USE_TOOLS+=	expr
 
 DJB_BUILD_TARGETS= 	man
 
