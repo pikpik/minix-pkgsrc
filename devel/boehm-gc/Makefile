@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/02/19 21:19:50 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2005/04/11 21:45:18 tv Exp $
 
 DISTNAME=	gc6.4
 PKGNAME=	${DISTNAME:S/gc/boehm-gc-/}
@@ -28,7 +28,7 @@ MAKE_ENV+=		COPTS=${CFLAGS:Q}
 CONFIGURE_ARGS+=	--disable-threads
 .endif
 
-.if defined(EXTRACT_USING_PAX)
+.if !empty(EXTRACT_USING:Mpax)
 EXTRACT_ELEMENTS=	-u
 .endif
 
