@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/01/22 21:50:27 kristerw Exp $
+# $NetBSD: Makefile,v 1.41 2005/04/11 21:45:37 tv Exp $
 
 DISTNAME=	pwlib-v1_8_3-src
 PKGNAME=	pwlib-1.8.3
@@ -15,6 +15,7 @@ BUILD_DEPENDS=		bison-[0-9]*:../../devel/bison
 
 WRKSRC=			${WRKDIR}/pwlib
 USE_GNU_TOOLS+=		make
+PKGSRC_USE_TOOLS+=	tar
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes

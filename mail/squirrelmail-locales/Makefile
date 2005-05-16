@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/24 20:40:44 martti Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:27 tv Exp $
 #
 
 DISTNAME=	all_locales-${VER}-20050122
@@ -13,7 +13,8 @@ COMMENT=	Locale package for SquirrelMail
 
 VER=		1.4.4
 
-NO_CONFIGURE=	# defined
+NO_CONFIGURE=		# defined
+PKGSRC_USE_TOOLS+=	tar
 
 WRKSRC=		${WRKDIR}
 
