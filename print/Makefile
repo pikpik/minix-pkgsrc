@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.123 2005/04/15 14:25:16 markd Exp $
+# $NetBSD: Makefile,v 1.124 2005/04/28 22:34:02 reed Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -105,6 +105,7 @@ SUBDIR+=	teTeX3-bin
 SUBDIR+=	teTeX3-texmf
 SUBDIR+=	teTeX3-texmfsrc
 SUBDIR+=	tex-bagpipetex
+SUBDIR+=	tex-chemarrow
 SUBDIR+=	tex-eurosym
 SUBDIR+=	tex-hugelatex
 SUBDIR+=	tex-jadetex
