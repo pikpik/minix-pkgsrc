@@ -1,4 +1,4 @@
-# $NetBSD: imake.mk,v 1.7 2005/05/15 18:37:44 jlam Exp $
+# $NetBSD: imake.mk,v 1.8 2005/05/15 23:27:44 jlam Exp $
 #
 # This Makefile fragment handles packages that need imake and xmkmf
 # to build X11-related packages.  The correct imake and xmkmf tools
@@ -33,9 +33,6 @@
 # rules as for other replacement tools.
 #
 
-# Continue to allow USE_IMAKE until packages have been taught to use the
-# new syntax.
-#
 .if defined(USE_IMAKE)
 USE_TOOLS+=	imake
 .endif
