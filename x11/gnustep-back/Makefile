@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2005/04/15 05:15:05 rh Exp $
+# $NetBSD: Makefile,v 1.24 2005/04/15 05:16:47 rh Exp $
 
-DISTNAME=	gnustep-back-0.9.5
+DISTNAME=	gnustep-back-0.9.6
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 
