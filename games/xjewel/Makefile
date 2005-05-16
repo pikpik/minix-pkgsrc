@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/02/26 04:07:49 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:39:36 grant Exp $
 
 DISTNAME=	xjewel-1.6
 PKGREVISION=	1
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.z
 MAINTAINER=	jdc@NetBSD.org
 COMMENT=	X windows-based dropping jewels game
 
-USE_IMAKE=	yes
+USE_IMAKE=		yes
+PKGSRC_USE_TOOLS+=	gzcat
 
 .include "../../mk/bsd.pkg.mk"
