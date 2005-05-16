@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/01 18:49:22 cjep Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/03 15:15:03 wiz Exp $
 #
 
 DISTNAME=	gap4r3
@@ -19,6 +19,8 @@ EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 SITES_fix4r3n5.tar.gz=	${MASTER_SITES:=bugfixes/}
 
 LICENSE=	no-commercial-use
+
+PKGSRC_USE_TOOLS+=	gtar
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	PREFIX=${PREFIX}

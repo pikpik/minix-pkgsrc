@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/11/17 21:10:51 snj Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/02 19:54:01 jdolecek Exp $
 
 DISTNAME=	linuxq3ademo-1_11-6_x86_gz
 PKGREVISION=	2
@@ -28,6 +28,7 @@ USE_X11=	yes
 NO_CONFIGURE=	yes
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 								${GTAR} xzf -
+PKGSRC_USE_TOOLS+=	gtar
 
 ONLY_FOR_PLATFORM=*-*-i386
 

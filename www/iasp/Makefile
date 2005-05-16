@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:27:59 agc Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/28 02:47:50 reed Exp $
 
 .include "../iasp/Makefile.common"
 
 PKGNAME=	iasp-${IASP_VERSION}
 PKGREVISION=	2
 COMMENT=	Instant ASP: Java implementation of Active Server Pages
+
+PKGSRC_USE_TOOLS+=	gtar
 
 SCRIPTS_ENV+=	CAT=${CAT:Q}
 SCRIPTS_ENV+=	CHMOD=${CHMOD:Q}

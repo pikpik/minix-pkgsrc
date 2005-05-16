@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:14 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/02 02:14:24 markd Exp $
 
 PKGNAME=		postgresql73-lib-${BASE_VERS}
 PKGREVISION=		2
@@ -13,6 +13,7 @@ CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
 BUILD_DIRS=		${WRKSRC}/src/include
 BUILD_DIRS+=		${WRKSRC}/src/interfaces
 BUILD_DIRS+=		${WRKSRC}/src/pl
+PKGSRC_USE_TOOLS+=	gtar
 
 USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL=	${.CURDIR}/INSTALL

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2002/05/31 13:01:23 seb Exp $
+# $NetBSD: Makefile,v 1.2 2003/07/17 21:49:15 grant Exp $
 
 DISTNAME=	NetBSD1.3I-jman-19990531
 PKGNAME=	ja-man-19990531
@@ -18,6 +18,7 @@ MAKE_ENV+=	JAMANDIR=${JAMANDIR}
 
 PLIST_SRC=	${WRKDIR}/PLIST
 
+PKGSRC_USE_TOOLS+=	gtar
 MANCOMPRESSED_IF_MANZ=	yes
 
 .include "../../mk/bsd.prefs.mk"

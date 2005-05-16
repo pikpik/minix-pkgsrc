@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/02/11 03:13:19 erh Exp $
+# $NetBSD: Makefile,v 1.12 2005/05/09 20:37:25 kristerw Exp $
 #
 
 DISTNAME=	cs113ins
@@ -17,6 +17,8 @@ DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 RESTRICTED=	"License prohibits redistribution on CDROM"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+
+PKGSRC_USE_TOOLS+=	gtar
 
 EXTRACT_CMD=	(cd ${WRKDIR} && unzip -x ${DOWNLOADED_DISTFILE}) || ${TRUE}
 WRKSRC=		${WRKDIR}
