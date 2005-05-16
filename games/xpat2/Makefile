@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/03/24 21:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:58 tv Exp $
 
 DISTNAME=	xpat2-1.07
 CATEGORIES=	games
@@ -18,7 +18,7 @@ USE_X11BASE=	YES
 #
 #USE_IMAKE=	YES
 
-MAKE_ENV+=	XPMDIR="${BUILDLINK_PREFIX.xpm}" XMKMF="${XMKMF}"
+MAKE_ENV+=	XPMDIR=${BUILDLINK_PREFIX.xpm:Q} XMKMF=${XMKMF:Q}
 
 SUPPORT_FILES_PERMS=	/dev/null /var/games/xpat.log ${GAMEOWN} ${GAMEGRP} ${GAMEMODE}
 MAKE_DIRS=		/var/games
