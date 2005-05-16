@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/17 13:36:29 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:40 tv Exp $
 
 DISTNAME=	emacs-20.7
 PKGREVISION=	5
@@ -19,6 +19,8 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	GNU editing macros (editor)
+
+NOT_FOR_PLATFORM=	Darwin-*-*
 
 CONFLICTS=	mule-[0-9]*
 
