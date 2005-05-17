@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/03/06 17:19:08 taca Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:48:01 tv Exp $
 
 DISTNAME=	tag104
 PKGNAME=	${RUBY_PKGPREFIX}-tag-1.0.4
@@ -13,9 +13,8 @@ COMMENT=	Ruby Simple HTML Tag library for CGI
 
 # The distfile cannot be extracted with some tar (e.g. NetBSD 2.0)
 # or some pax (e.g. NetBSD 1.6).  Force use of gtar instead.
-BUILD_DEPENDS+=	gtar-base-[0-9]*:../../archivers/gtar-base
-
-GTAR=		${PREFIX}/bin/${GNU_PROGRAM_PREFIX}tar
+#
+EXTRACT_USING=	gtar
 
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	yes
