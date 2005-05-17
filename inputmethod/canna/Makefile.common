@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.10 2005/04/11 21:46:11 tv Exp $
+# $NetBSD: Makefile.common,v 1.11 2005/05/16 18:25:37 jlam Exp $
 #
 # Canna common makefile.
 #
@@ -19,6 +19,7 @@ PATCHDIR=	${.CURDIR}/../canna/patches
 .include "../canna/Makefile.version"
 
 USE_TOOLS+=	imake
+USE_X11BASE=	yes
 CANNA_SPOOL=	${DESTDIR}/var/spool/canna
 CANNA_MODE=	0755
 
