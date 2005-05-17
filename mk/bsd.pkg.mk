@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1667 2005/05/17 06:31:00 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1668 2005/05/17 21:46:59 dmcmahill Exp $
 #
 # This file is in the public domain.
 #
@@ -876,7 +876,11 @@ PKGSRC_USE_TOOLS+=	shlock
 # the BSD-style makefile causes the man pages to be compressed or not.
 #
 .if !defined(_MANCOMPRESSED)
-_MANCOMPRESSED?=	${MANCOMPRESSED:Uno}
+.  if defined(MANCOMPRESSED) && !empty(MANCOMPRESSED:M[yY][eE][sS])
+_MANCOMPRESSED=		yes
+.  else
+_MANCOMPRESSED=		no
+.  endif
 .  if defined(MANCOMPRESSED_IF_MANZ) && defined(PKGMAKECONF)
 _MANCOMPRESSED!=							\
 	{ ${ECHO} ".include \""${PKGMAKECONF:Q}"\"";			\
