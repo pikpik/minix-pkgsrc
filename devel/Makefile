@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.637 2005/05/18 22:02:17 wiz Exp $
+# $NetBSD: Makefile,v 1.638 2005/05/18 22:06:07 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -495,7 +495,6 @@ SUBDIR+=	prc-tools
 SUBDIR+=	prcs
 SUBDIR+=	pth
 SUBDIR+=	pthread-sem
-SUBDIR+=	ptl2
 SUBDIR+=	pvs
 SUBDIR+=	pwlib
 SUBDIR+=	py-InlineEgg

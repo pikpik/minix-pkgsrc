@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.128 2005/04/02 19:51:01 jdolecek Exp $
+# $NetBSD: Makefile,v 1.129 2005/04/22 19:17:14 wiz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -52,7 +52,6 @@ SUBDIR+=	hercules
 SUBDIR+=	hercules-images
 SUBDIR+=	ia64sim
 SUBDIR+=	libspectrum
-SUBDIR+=	linux-locale
 SUBDIR+=	linuxppc_lib
 SUBDIR+=	lrmi
 SUBDIR+=	m1
