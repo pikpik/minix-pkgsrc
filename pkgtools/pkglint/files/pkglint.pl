@@ -25,7 +25,7 @@
 # an uppercase letter are not recognized as subroutines but as file handles.
 #==========================================================================
 
-package PkgLint::Utils;
+package PkgLint::Util;
 #==========================================================================
 # This package is a catch-all for everything that does not fit in any other
 # package. Currently it contains the boolean constants C<false> and C<true>.
@@ -40,7 +40,7 @@ BEGIN {
 use constant false	=> 0;
 use constant true	=> 1;
 
-#== End of PkgLint::Utils =================================================
+#== End of PkgLint::Util ==================================================
 
 package PkgLint::Logging;
 #==========================================================================
@@ -68,7 +68,7 @@ BEGIN {
 		log_error log_warning log_info
 		print_summary_and_exit set_verbose is_verbose
 	);
-	import PkgLint::Utils qw(false true);
+	import PkgLint::Util qw(false true);
 }
 
 use constant NO_FILE		=> "";
@@ -222,7 +222,7 @@ use File::Basename;
 use Cwd;
 
 BEGIN {
-	import PkgLint::Utils qw(false true);
+	import PkgLint::Util qw(false true);
 	import PkgLint::Logging qw(
 		NO_FILE NO_LINE_NUMBER
 		log_error log_warning log_info
