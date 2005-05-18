@@ -1,4 +1,4 @@
-# $NetBSD: subst.mk,v 1.17 2005/04/30 15:05:06 jlam Exp $
+# $NetBSD: subst.mk,v 1.18 2005/05/17 19:01:36 rillig Exp $
 #
 # This Makefile fragment implements a general text replacement facility.
 # Package makefiles define a ``class'', for each of which a paricular
@@ -67,7 +67,7 @@ subst-${_class_}: ${_SUBST_TARGETS.${_class_}}
  subst-${_class_}-message:
 .  if defined(SUBST_MESSAGE.${_class_})
 	${_PKG_SILENT}${_PKG_DEBUG}					\
-	${ECHO_SUBST_MSG} "=> "${SUBST_MESSAGE.${_class_}:Q}
+	${ECHO_SUBST_MSG} "=> "${SUBST_MESSAGE.${_class_}}
 .  endif
 
 .PHONY: subst-${_class_}-cookie
