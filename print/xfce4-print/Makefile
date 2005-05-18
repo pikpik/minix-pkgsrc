@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/02/10 12:25:33 martti Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/31 18:12:29 drochner Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -13,6 +13,8 @@ CONFIGURE_ARGS+=	--with-printcap=/etc/printcap
 
 .if defined(USE_CUPS)
 .include "../../print/cups/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=	--disable-cups
 .endif
 
 .include "../../x11/xfce4-mcs-plugins/buildlink3.mk"
