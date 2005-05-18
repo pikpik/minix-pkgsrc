@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	2004-01-25 12:36:36.000000000 +0000
+--- Makefile.in.orig	Mon May 16 11:33:40 2005
 +++ Makefile.in
-@@ -202,7 +202,7 @@ subdirs = @subdirs@
+@@ -211,7 +211,7 @@ subdirs = @subdirs@
  sysconfdir = @sysconfdir@
  target_alias = @target_alias@
  AUTOMAKE_OPTIONS = 1.3e gnu
