@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.380 2005/05/05 05:50:05 rh Exp $
+# $NetBSD: Makefile,v 1.381 2005/05/05 20:07:23 xtraeme Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -59,8 +59,6 @@ SUBDIR+=	dvdbackup
 SUBDIR+=	dvdview
 SUBDIR+=	dx
 SUBDIR+=	dxsamples
-SUBDIR+=	ee
-SUBDIR+=	eog
 SUBDIR+=	eog2
 SUBDIR+=	epeg
 SUBDIR+=	exif
@@ -112,7 +110,6 @@ SUBDIR+=	gmngview
 SUBDIR+=	gnome-backgrounds
 SUBDIR+=	gnome-icon-theme
 SUBDIR+=	gnome-iconedit
-SUBDIR+=	gnome-pixmaps
 SUBDIR+=	gnome2-pixmaps
 SUBDIR+=	gnuplot
 SUBDIR+=	gnuplot-nox11

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.245 2005/03/30 15:13:17 wiz Exp $
+# $NetBSD: Makefile,v 1.246 2005/05/18 16:01:36 drochner Exp $
 #
 
 COMMENT=	Games
@@ -87,9 +87,6 @@ SUBDIR+=	glchess
 SUBDIR+=	glickomania
 SUBDIR+=	gltron
 SUBDIR+=	gnocatan
-SUBDIR+=	gnome-breakout
-SUBDIR+=	gnome-chess
-SUBDIR+=	gnome-games
 SUBDIR+=	gnome2-games
 SUBDIR+=	gnuchess
 SUBDIR+=	gnuchess-book

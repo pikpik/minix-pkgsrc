@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/gob
-man/man1/gob.1
-share/aclocal/gob.m4

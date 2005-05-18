@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.554 2005/05/05 19:36:57 xtraeme Exp $
+# $NetBSD: Makefile,v 1.555 2005/05/07 19:29:50 jdolecek Exp $
 #
 
 COMMENT=	Networking tools
@@ -109,7 +109,6 @@ SUBDIR+=	gkrellm-wireless
 SUBDIR+=	gkrellm1-snmp
 SUBDIR+=	gkrellm1-wireless
 SUBDIR+=	gnapfetch
-SUBDIR+=	gnapster
 SUBDIR+=	gnet
 SUBDIR+=	gnet1
 SUBDIR+=	gnetcat
@@ -120,7 +119,6 @@ SUBDIR+=	gopher
 SUBDIR+=	gtk-gnutella
 SUBDIR+=	gtk_wicontrol
 SUBDIR+=	gtksamba
-SUBDIR+=	gtm
 SUBDIR+=	hesiod
 SUBDIR+=	hf6to4
 SUBDIR+=	hlfl
