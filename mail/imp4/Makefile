@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/01 19:07:36 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/09 16:15:06 minskim Exp $
 
 DISTNAME=	imp-h3-${IMPVER}
 PKGNAME=	imp-${IMPVER}
@@ -13,6 +13,7 @@ CONFLICTS+=	imp-3.*
 
 DEPENDS+=	horde>=3.0.2:../../www/horde3
 DEPENDS+=	php-imap>4.3.3:../../mail/php-imap
+DEPENDS++	pear-Mail-[0-9]*:../../mail/pear-Mail
 
 .include "../../mk/bsd.prefs.mk"
 
