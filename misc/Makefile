@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.237 2005/04/22 18:58:30 wiz Exp $
+# $NetBSD: Makefile,v 1.238 2005/05/18 22:02:17 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -52,6 +52,7 @@ SUBDIR+=	fd
 SUBDIR+=	fep
 SUBDIR+=	figlet
 SUBDIR+=	figlet-fonts
+SUBDIR+=	firelib
 SUBDIR+=	fooseti
 SUBDIR+=	getopt
 SUBDIR+=	git
