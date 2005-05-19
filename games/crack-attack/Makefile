@@ -1,13 +1,11 @@
 # $NetBSD: Makefile,v 1.4 2004/10/03 00:14:43 tv Exp $
-#
 
-DISTNAME=	crack-attack-1.1.10
-PKGREVISION=	1
+DISTNAME=	crack-attack-1.1.14
 CATEGORIES=	games
-MASTER_SITES=	http://aluminumangel.org/cgi-bin/download_counter.cgi?attack_linux+attack/
+MASTER_SITES=	http://savannah.nongnu.org/download/crack-attack/
 
 MAINTAINER=	snj@NetBSD.org
-HOMEPAGE=	http://aluminumangel.org/attack/
+HOMEPAGE=	http://savannah.nongnu.org/projects/crack-attack
 COMMENT=	Tetris Attack inspired game
 
 GNU_CONFIGURE=	YES
@@ -19,5 +17,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/html/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.jpg ${PREFIX}/share/doc/html/${PKGBASE}
 
+.include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../graphics/Mesa/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
+
 .include "../../mk/bsd.pkg.mk"
