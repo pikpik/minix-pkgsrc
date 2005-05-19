@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-# $NetBSD: genreadme.awk,v 1.12 2004/07/06 22:49:18 wiz Exp $
+# $NetBSD: genreadme.awk,v 1.13 2005/05/17 21:46:59 dmcmahill Exp $
 #
 # Copyright (c) 2002, 2003, 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -797,6 +797,7 @@ function copy_readme(old, new, cmd, rc) {
 
 
 function load_cache_file( file ) {
+  fatal_check_file( file );
 
   if( debug ) printf("load_cache_file(%s)\n", file);
 
