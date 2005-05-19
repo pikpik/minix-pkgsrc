@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/01/07 01:10:14 minskim Exp $
+# $NetBSD: Makefile,v 1.32 2005/04/11 21:45:29 tv Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-2-src
@@ -14,6 +14,7 @@ COMMENT=	Secure, high-integrity replacement for CVS
 WRKSRC=		${WRKDIR}/${OPENCM_VERSION}/base
 USE_PKGINSTALL=	YES
 USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gzip
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--infodir=${PREFIX}/${INFO_DIR}
 CONFIGURE_ARGS+=	--with-ssl-dir=${BUILDLINK_PREFIX.openssl}
