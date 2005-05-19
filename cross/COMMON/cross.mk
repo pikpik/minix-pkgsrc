@@ -1,4 +1,4 @@
-#	$NetBSD: cross.mk,v 1.30 2004/10/07 02:01:37 jlam Exp $
+#	$NetBSD: cross.mk,v 1.31 2005/04/18 10:02:27 wiz Exp $
 
 # Shared definitions for building a cross-compile environment.
 
@@ -45,6 +45,7 @@ AR_FOR_TARGET=		${WRKDIR}/ar
 NM_FOR_TARGET=		${WRKDIR}/nm
 RANLIB_FOR_TARGET=	${WRKDIR}/ranlib
 LD_FOR_TARGET=		${WRKDIR}/ld
+PKGSRC_USE_TOOLS+=	patch
 
 pre-patch: binutils-patch
 pre-configure: binutils-configure
