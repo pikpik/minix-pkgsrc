@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2004/12/28 22:50:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:48:07 tv Exp $
 #
 
-DISTNAME=	gnome-themes-extras-0.8.0
+DISTNAME=	gnome-themes-extras-0.8.1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-themes-extras/0.8/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,6 +12,9 @@ COMMENT=	Collection of metathemes for the GNOME desktop environment
 
 DEPENDS+=		librsvg2-gtk2>=2.6.1:../../graphics/librsvg2-gtk2
 BUILD_USES_MSGFMT=	yes
+
+# NetBSD's pax-as-tar truncates filenames
+EXTRACT_USING=		gtar
 
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
