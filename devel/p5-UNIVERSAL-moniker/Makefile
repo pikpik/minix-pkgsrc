@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:03 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:35 tv Exp $
 
 DISTNAME=	UNIVERSAL-moniker-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/UNIVERSAL-moniker/
 COMMENT=	Perl module for assigning user-friendly names to classes
 
-DEPENDS+=	p5-Lingua-EN-Inflect>=1.88:../../devel/p5-Lingua-EN-Inflect
+DEPENDS+=	p5-Lingua-EN-Inflect>=1.88:../../textproc/p5-Lingua-EN-Inflect
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
