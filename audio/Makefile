@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.279 2005/05/16 09:41:40 rh Exp $
+# $NetBSD: Makefile,v 1.280 2005/05/16 09:55:43 rh Exp $
 #
 
 COMMENT=	Audio tools
@@ -120,6 +120,9 @@ SUBDIR+=	libac3
 SUBDIR+=	libao
 SUBDIR+=	libao-arts
 SUBDIR+=	libao-esound
+SUBDIR+=	libao-macosx
+SUBDIR+=	libao-oss
+SUBDIR+=	libao-sun
 SUBDIR+=	libaudiofile
 SUBDIR+=	libcdaudio
 SUBDIR+=	libcddb
