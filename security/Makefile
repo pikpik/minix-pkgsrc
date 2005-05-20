@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.239 2005/04/30 12:25:29 drochner Exp $
+# $NetBSD: Makefile,v 1.240 2005/05/05 20:18:50 xtraeme Exp $
 #
 
 COMMENT=	Security tools
@@ -188,6 +188,7 @@ SUBDIR+=	py-cryptkit
 SUBDIR+=	py-gnupg
 SUBDIR+=	py-gnutls
 SUBDIR+=	py-m2crypto
+SUBDIR+=	py-mcrypt
 SUBDIR+=	pyca
 SUBDIR+=	qca
 SUBDIR+=	qca-tls
