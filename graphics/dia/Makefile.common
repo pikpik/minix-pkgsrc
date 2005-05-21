@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.2 2005/03/24 19:40:27 jmcneill Exp $
+# $NetBSD: Makefile.common,v 1.3 2005/04/11 21:46:01 tv Exp $
 #
 
 DISTNAME=	dia-0.94
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--without-python
 SUBST_CLASSES+=		intl
 SUBST_MESSAGE.intl=	"Fixing path to installed files."
 SUBST_STAGE.intl=	pre-configure
-SUBST_FILES.intl=	${WRKSRC}/lib/intl.c
+SUBST_FILES.intl=	lib/intl.c
 SUBST_SED.intl=		-e 's,%%PREFIX%%,${PREFIX},g'
 
 .if empty(PKGNAME:Mdia-[0-9]*)

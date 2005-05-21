@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/02/01 17:39:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:10 tv Exp $
 
 DISTNAME=	amavisd-new-${VERSION}${PATCHLEVEL}
 PKGNAME=	amavisd-new-${VERSION}${PATCHLEVEL:S/-//}
@@ -95,7 +95,7 @@ do-build:	replace-interpreter
 
 SUBST_CLASSES+=		amavisd
 SUBST_STAGE.amavisd=	pre-build
-SUBST_FILES.amavisd=	${WRKSRC}/amavisd ${WRKSRC}/amavisd.conf
+SUBST_FILES.amavisd=	amavisd amavisd.conf
 SUBST_SED.amavisd=	\
 	-e "s|/etc/amavisd.conf|${PKG_SYSCONFDIR}/amavisd.conf|"	\
 	-e "s|@AMAVIS_DIR@|${AMAVIS_DIR}|g"				\
