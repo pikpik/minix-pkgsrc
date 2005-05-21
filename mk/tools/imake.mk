@@ -1,10 +1,10 @@
-# $NetBSD: imake.mk,v 1.10 2005/05/19 05:27:25 jlam Exp $
+# $NetBSD: imake.mk,v 1.11 2005/05/21 04:46:52 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
 #
 # This code is derived from software contributed to The NetBSD Foundation
-# by Johnny C. Lam
+# by Johnny C. Lam.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
