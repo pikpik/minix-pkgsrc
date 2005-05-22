@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:45:02 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:41 jlam Exp $
 #
 
 DISTNAME=	verilog-0.8.1
@@ -11,16 +11,14 @@ COMMENT=	Verilog simulation and synthesis tool (stable release version)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
-
 CONFLICTS+=	verilog-current-[0-9]*
 
-GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake lex
+GNU_CONFIGURE=		yes
+USE_TOOLS+=		bison gmake lex
 CONFIGURE_ARGS+=	--without-ipal
 YACC=			${LOCALBASE}/bin/bison
-TEST_DIRS=	${WRKSRC}
-TEST_TARGET=	check
+TEST_DIRS=		${WRKSRC}
+TEST_TARGET=		check
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../archivers/bzip2/buildlink3.mk"

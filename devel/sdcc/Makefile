@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/04/11 21:45:38 tv Exp $
+# $NetBSD: Makefile,v 1.30 2005/05/22 20:07:55 jlam Exp $
 
 DISTNAME=	sdcc-2.4.0
 PKGNAME=	${DISTNAME:S/-src//}
@@ -10,13 +10,10 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://sdcc.sourceforge.net/
 COMMENT=	Cross compile 8051 code
 
-#
 # XXX - This HACK circumvent a problem with the use of yacc that breaks the
 # XXX - building process of sdcc.  Use of bison fixes this problem for now.
 #
-BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
-
-YACC=		bison
+USE_TOOLS+=	bison
 
 BUILD_TARGET=	dep all
 
