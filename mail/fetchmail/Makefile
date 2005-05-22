@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2005/01/19 16:24:34 frueauf Exp $
+# $NetBSD: Makefile,v 1.151 2005/04/11 21:46:19 tv Exp $
 
 DISTNAME=	fetchmail-6.2.5
 PKGREVISION=	4
@@ -20,8 +20,8 @@ USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-hesiod
-USE_TBL=		yes
 LDFLAGS+=		${CFLAGS}
+USE_TOOLS+=		tbl
 
 .include "options.mk"
 
