@@ -17,7 +17,9 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--disable-debug
-CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
+CONFIGURE_ARGS+=	${CONFIGURE_ARGS.${ICONV_TYPE}-iconv}
+
+CONFIGURE_ARGS.gnu-iconv=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/libgsf/buildlink3.mk"
