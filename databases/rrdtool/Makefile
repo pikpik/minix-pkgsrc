@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: Makefile,v 1.28 2005/04/11 21:45:15 tv Exp $
 #
 
 DISTNAME=	rrdtool-1.0.40
@@ -19,7 +19,6 @@ USE_GNU_TOOLS+=		make
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS= --enable-shared
-CONFIGURE_ENV=	PERL=${PERL5}
 
 PERL5_CONFIGURE=	NO
 PERL5_PACKLIST+= 	${PERL5_SITEARCH}/auto/RRDp/.packlist
