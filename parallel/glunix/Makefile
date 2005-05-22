@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/01/24 14:52:44 grant Exp $
+# $NetBSD: Makefile,v 1.29 2004/05/31 22:13:16 kristerw Exp $
 
 DISTNAME=	glunix-release-1-0a
 PKGNAME=	glunix-1.0a
@@ -20,7 +20,7 @@ SSH=		${LOCALBASE}/bin/ssh
 .endif
 
 WRKSRC=		${WRKDIR}
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 USE_PERL5=	yes
 INTERACTIVE_STAGE=	fetch
 NO_MTREE=	yes

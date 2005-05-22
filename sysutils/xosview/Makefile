@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2004/08/03 07:33:05 cube Exp $
+# $NetBSD: Makefile,v 1.52 2005/04/11 21:47:31 tv Exp $
 
 DISTNAME=	xosview-1.8.2
 CATEGORIES=	sysutils
@@ -29,7 +29,7 @@ UVM=		# defined
 BUILD_DEFS=	UVM
 .  endif
 .elif ${OPSYS} == "SunOS"
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 CPPFLAGS+=	-I${X11BASE}/include
 LIBS+=		-lsocket -lnsl
 .endif

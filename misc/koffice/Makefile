@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2005/05/12 18:31:20 reed Exp $
+# $NetBSD: Makefile,v 1.57 2005/05/18 22:35:04 reed Exp $
 
 DISTNAME=	koffice-1.3.5
 PKGREVISION=	4
@@ -14,7 +14,7 @@ COMMENT=	KDE Office Suite
 
 CONFLICTS+=	koffice3-[0-9]*
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

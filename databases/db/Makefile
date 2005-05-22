@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/03/15 16:13:58 tron Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/11 21:45:11 tv Exp $
 
 DISTNAME=	db-2.7.7
 PKGREVISION=	2
@@ -21,7 +21,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	../dist/configure
 CONFIGURE_ARGS+=	--enable-compat185
 
-USE_GNU_TOOLS+=		awk
+USE_TOOLS+=		gawk
 
 INSTALLATION_DIRS=	bin include/db2 lib share/doc/html
 

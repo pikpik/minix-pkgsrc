@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2004/10/06 10:17:06 grant Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:26 tv Exp $
 #
 
 DISTNAME=		libcfg+-0.6.2
@@ -13,7 +13,7 @@ COMMENT=		Command line and configuration file parsing library
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 MANCOMPRESSED=		yes
 

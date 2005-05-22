@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/01/26 17:42:53 ben Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:01 tv Exp $
 
 DISTNAME=	compface-1.5.1
 CATEGORIES=	graphics
@@ -10,7 +10,7 @@ COMMENT=	48x48x1 image compression and decompression (X-face utility)
 
 CONFLICTS=	faces-[0-9]*
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
 SUBST_CLASSES+=		perlpath

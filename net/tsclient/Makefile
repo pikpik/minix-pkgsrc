@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/10/03 00:18:00 tv Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:47:01 tv Exp $
 #
 
 DISTNAME=		tsclient-0.132
@@ -15,7 +15,7 @@ DEPENDS+=       	vncviewer-[0-9]*:../../net/vncviewer
 BUILD_USES_MSGFMT=	yes
 
 USE_DIRS+=		gnome2-1.5
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 USE_PERL5=		run
 USE_X11=		yes

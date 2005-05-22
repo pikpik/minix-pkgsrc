@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2004/01/24 15:13:20 grant Exp $
+# $NetBSD: Makefile,v 1.23 2005/03/24 21:13:02 wiz Exp $
 
 DISTNAME=	glimpse-4.17.2
 PKGREVISION=	1
@@ -14,7 +14,7 @@ RESTRICTED=	"Restrictive copyright (don't sell for profit)"
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 
 post-install:

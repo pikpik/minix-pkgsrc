@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:03 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/13 16:49:57 rillig Exp $
 #
 
 DISTNAME=		ufraw-0.4
@@ -10,7 +10,7 @@ MAINTAINER=		gdt@ir.bbn.com
 HOMEPAGE=		http://ufraw.sourceforge.net/
 COMMENT=		GIMP plug-in for raw digicam import
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 BUILD_TARGET=		build
 INSTALL_TARGET=		install-admin
 

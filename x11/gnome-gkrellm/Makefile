@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:18:31 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:48:07 tv Exp $
 
 DISTNAME=	gkrellm-gnome
 PKGNAME=	gnome-gkrellm-0.1
@@ -10,7 +10,7 @@ MAINTAINER=	damon@NetBSD.org
 HOMEPAGE=	http://web.wt.net/~billw/gkrellm/Plugins.html
 COMMENT=	gkrellm gnome plugin
 
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/gkrellm/plugins

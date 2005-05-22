@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/02/20 16:18:41 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:56 tv Exp $
 #
 
 DISTNAME=		scid-3.6.1
@@ -11,7 +11,7 @@ COMMENT=		Shane's Chess Information Database
 
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 CONFIGURE_ENV+=		TCLCONFIG_SH=${TCLCONFIG_SH:Q}
 CONFIGURE_ARGS+=	BINDIR=${PREFIX}/bin SHAREDIR=${PREFIX}/share/scid

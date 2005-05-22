@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:03 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/26 00:44:09 reed Exp $
 #
 
 DISTNAME=		nget-0.27.1
@@ -11,7 +11,7 @@ COMMENT=		Command line nntp file grabber
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	--with-pcre

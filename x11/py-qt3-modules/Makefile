@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:48:12 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/02 15:36:53 drochner Exp $
 #
 
 DISTNAME=		PyQt-x11-gpl-3.14.1
@@ -12,7 +12,7 @@ COMMENT=		Python binding for qt3
 
 USE_X11=		yes
 USE_LIBTOOL=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS=		-b ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/21 14:00:36 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/21 14:35:47 lha Exp $
 
 DISTNAME=	heimdal-0.6.4
 CATEGORIES=	security
@@ -14,7 +14,7 @@ CONFLICTS+=	mit-krb5-[0-9]*
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LIBTOOL=		yes
-USE_GNU_TOOLS+=		yacc
+USE_TOOLS+=		bison
 
 HEIMDAL_STATEDIR?=	${VARBASE}/heimdal
 

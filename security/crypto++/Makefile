@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/07/26 15:18:44 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/19 16:48:21 wiz Exp $
 #
 
 DISTNAME=		cryptopp521
@@ -16,7 +16,7 @@ COMMENT=		Free C++ class library of Cryptographic Primitives
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 MAKEFILE=		GNUmakefile
 WRKSRC=			${WRKDIR}
 USE_LANGUAGES=		c++

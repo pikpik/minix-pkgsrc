@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2004/05/13 19:29:42 kristerw Exp $
+# $NetBSD: Makefile,v 1.28 2005/04/11 21:45:41 tv Exp $
 
 DISTNAME=	mule-2.3
 PKGREVISION=	2
@@ -22,7 +22,7 @@ CONFLICTS=	emacs-[0-9]*
 
 WRKSRC=		${WRKDIR}/mule
 GNU_CONFIGURE=	yes
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 USE_X11=	yes
 
 CONFIGURE_ARGS+=	${MACHINE_ARCH}--netbsd --with-x --with-x-toolkit=lucid

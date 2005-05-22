@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.15 2005/04/11 21:44:58 tv Exp $
+# $NetBSD: Makefile.common,v 1.16 2005/04/28 22:23:43 jlam Exp $
 #
 
 DISTNAME=	xmms-1.2.10
@@ -13,7 +13,7 @@ COMMENT=	X Multimedia System - an audio player with a Winamp GUI
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_X11=		yes
 GNU_CONFIGURE=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/04/11 21:46:52 tv Exp $
+# $NetBSD: Makefile,v 1.37 2005/05/14 02:13:09 reed Exp $
 
 DISTNAME=	ntop-3.1
 PKGREVISION=	3
@@ -14,7 +14,7 @@ CONFLICTS=	ntop-[0-9]*
 
 WRKSRC=		${WRKDIR}/ntop
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

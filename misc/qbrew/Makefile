@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/27 09:11:05 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:39 tv Exp $
 
 DISTNAME=	qbrew-0.3.4
 CATEGORIES=	misc
@@ -8,7 +8,7 @@ MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://www.usermode.org/code.html
 COMMENT= 	Homebrewer's recipe calculator
 
-USE_GNU_TOOLS+= make
+USE_TOOLS+= gmake
 GNU_CONFIGURE=  yes
 USE_LIBTOOL=    yes
 

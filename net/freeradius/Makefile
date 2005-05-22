@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/04/11 21:46:46 tv Exp $
+# $NetBSD: Makefile,v 1.28 2005/05/18 21:58:45 adrianp Exp $
 
 DISTNAME=	freeradius-1.0.2
 PKGREVISION=	2
@@ -13,7 +13,7 @@ COMMENT=	Free RADIUS server implementation
 .include "../../mk/bsd.prefs.mk"
 
 CONFLICTS+=		radiusd-cistron*
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 USE_PKGINSTALL=		YES
 USE_PERL5=		YES

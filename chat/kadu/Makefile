@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:04 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/21 08:56:21 adam Exp $
 
 DISTNAME=	kadu-0.4.0
 CATEGORIES=	chat
@@ -9,7 +9,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.kadu.net/
 COMMENT=	Chat client for Gadu-Gadu network (Poland)
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-existing-libgadu=${BUILDLINK_PREFIX.ekg}

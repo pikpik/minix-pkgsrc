@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/06 21:26:03 markd Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:37 tv Exp $
 
 DISTNAME=	koffice-i18n-mt-1.3.5
 CATEGORIES=	misc kde
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.koffice.org/
 COMMENT=	Maltese language pack for KOffice
 
 GNU_CONFIGURE=	YES
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 
 .include "../../misc/koffice/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

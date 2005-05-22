@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/07 16:20:20 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:47:52 tv Exp $
 
 DISTNAME=		elinks-0.10.4
 CATEGORIES=		www
@@ -11,7 +11,7 @@ COMMENT=		Extended/Enhanced Links
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 CONFIGURE_ARGS+=	--without-x
 CONFIGURE_ARGS+=	--enable-256-colors

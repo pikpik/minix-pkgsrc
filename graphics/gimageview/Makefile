@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/02/05 18:20:20 jklos Exp $
+# $NetBSD: Makefile,v 1.36 2005/04/11 21:46:03 tv Exp $
 
 DISTNAME=	gimageview-0.2.27
 CATEGORIES=	graphics
@@ -13,7 +13,7 @@ USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_X11=		YES
 
 CONFIGURE_ARGS+=	--disable-xinetest

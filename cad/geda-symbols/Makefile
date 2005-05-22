@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/02/22 20:38:49 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.16 2005/01/11 03:16:23 dmcmahill Exp $
 #
 
 DISTNAME=	geda-symbols-${PKGVERSION}
@@ -13,6 +13,6 @@ CONFLICTS+=	gEDA<19991011
 .include "../../cad/geda/Makefile.common"
 
 GNU_CONFIGURE=	YES
-USE_GNU_TOOLS+=	make sed
+USE_TOOLS+=	gmake gsed
 
 .include "../../mk/bsd.pkg.mk"

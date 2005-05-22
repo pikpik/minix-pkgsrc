@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/02/24 03:39:42 ben Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:44:57 tv Exp $
 #
 
 DISTNAME=		SpiralSynth-2.0.0
@@ -17,7 +17,7 @@ ONLY_FOR_PLATFORM=	*-*-alpha *-*-arc *-*-cobalt *-*-dreamcast \
 
 USE_LANGUAGES=		c++
 USE_X11=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 MAKE_ENV+=		CXXFLAGS="${CXXFLAGS}"
 CXXFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""

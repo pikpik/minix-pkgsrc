@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/12/02 16:56:31 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:47:54 tv Exp $
 
 DISTNAME=		liferea-0.6.4
 CATEGORIES=		www
@@ -10,7 +10,7 @@ COMMENT=		Simple FeedReader clone for reading RSS/RDF feeds
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_X11=		yes

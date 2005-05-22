@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/07/30 15:50:37 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/27 18:14:24 wiz Exp $
 #
 
 DISTNAME=	httperf-0.6
@@ -13,7 +13,7 @@ LICENSE=	no-commercial-use
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 
 .include "../../mk/bsd.prefs.mk"
 

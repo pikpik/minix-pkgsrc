@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/12/03 15:15:23 skrll Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:42 tv Exp $
 #
 
 DISTNAME=	arcem-1.00-src
@@ -25,7 +25,7 @@ COMMENT=	Dave Gilbert's Acorn Archimedes emulator
 
 WRKSRC=		${WRKDIR}/arcem
 USE_X11=	# defined
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 
 MAKE_ENV+=	SYSTEM=X
 

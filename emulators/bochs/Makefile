@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/02/11 22:28:42 reed Exp $
+# $NetBSD: Makefile,v 1.39 2005/05/16 18:22:57 jlam Exp $
 
 DISTNAME=		bochs-2.1.1
 PKGREVISION=		1
@@ -10,7 +10,7 @@ HOMEPAGE=		http://bochs.sourceforge.net/
 COMMENT=		i386 machine emulator capable of running DOS/Windows
 
 GNU_CONFIGURE=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_TOOLS+=		gunzip gzip
 USE_LANGUAGES=		c c++
 

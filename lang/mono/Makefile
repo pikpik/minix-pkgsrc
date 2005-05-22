@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/04 07:22:34 recht Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/11 21:46:14 tv Exp $
 
 DISTNAME=	mono-1.1.6
 CATEGORIES=	lang
@@ -22,7 +22,7 @@ NOT_FOR_PLATFORM+=	NetBSD-2.9*-* NetBSD-3.*-*
 # LP64 problems
 NOT_FOR_PLATFORM+=	*-*-alpha *-*-sparc64
 
-USE_GNU_TOOLS+=		make yacc
+USE_TOOLS+=		bison gmake
 USE_PKGINSTALL=		yes
 USE_LIBTOOL=		yes
 

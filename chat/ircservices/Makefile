@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/03/26 17:28:29 adrianp Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:04 tv Exp $
 #
 
 DISTNAME=	ircservices-5.0.49
@@ -14,9 +14,7 @@ COMMENT=	Services for IRC networks
 
 HAS_CONFIGURE=	YES
 USE_PKGINSTALL=	YES
-USE_GNU_TOOLS+=	make
-
-USE_GNU_TOOLS+=	grep sed
+USE_TOOLS+=	gmake grep gsed
 USE_PERL5=	build
 RCD_SCRIPTS=	ircservices
 

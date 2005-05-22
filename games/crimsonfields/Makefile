@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/03/27 15:43:34 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/04/11 21:45:49 tv Exp $
 #
 
 DISTNAME=		crimson-0.4.7
@@ -13,7 +13,7 @@ HOMEPAGE=		http://crimson.seul.org/
 COMMENT=		Tactical war game in the tradition of Battle Isle
 
 USE_DIRS+=		xdg-1.1
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 # not standard locale files
 #USE_PKGLOCALEDIR=	no
 GNU_CONFIGURE=		yes

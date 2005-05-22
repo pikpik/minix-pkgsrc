@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/27 17:45:38 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:00 tv Exp $
 #
 
 DISTNAME=		socket++-1.12.10
@@ -13,7 +13,7 @@ USE_LIBTOOL=		YES
 AUTOMAKE_REQD=          1.4
 AUTOCONF_REQD=          2.50
 GNU_CONFIGURE=          YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 TEST_DIRS=		${WRKSRC}/test
 TEST_TARGET=		check
 

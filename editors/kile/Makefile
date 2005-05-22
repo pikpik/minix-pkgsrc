@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/01/19 11:35:48 markd Exp $
+# $NetBSD: Makefile,v 1.28 2005/04/11 21:45:41 tv Exp $
 
 DISTNAME=		kile-1.7.1
 PKGREVISION=		1
@@ -11,7 +11,7 @@ HOMEPAGE=		http://kile.sourceforge.net/
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
 
 USE_DIRS+=		xdg-1.1
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PERL5=		build

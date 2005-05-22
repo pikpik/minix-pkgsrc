@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/04/11 21:47:24 tv Exp $
+# $NetBSD: Makefile,v 1.32 2005/05/09 17:35:16 xtraeme Exp $
 #
 
 DISTNAME=	grub-0.97
@@ -12,7 +12,7 @@ COMMENT=	GRand Unified Bootloader -- Boots *BSD, Linux, groks ffs, FAT, ext2
 ONLY_FOR_PLATFORM=	*-*-i386
 
 GNU_CONFIGURE=		YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 INFO_FILES=		grub.info multiboot.info
 

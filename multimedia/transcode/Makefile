@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:38 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/11 21:46:43 tv Exp $
 
 DISTNAME=	transcode-0.6.12
 PKGREVISION=	6
@@ -12,7 +12,7 @@ COMMENT=	Command line video-stream processing tool
 
 BUILD_DEPENDS+=		nasm>=0.98.36:../../devel/nasm
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	libtool

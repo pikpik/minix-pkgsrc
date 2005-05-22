@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/01/13 21:52:26 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/04/11 21:47:10 tv Exp $
 #
 
 DISTNAME=	Linux-PAM-0.77
@@ -19,7 +19,7 @@ CONFLICTS+=	openpam-[0-9]*
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGINSTALL=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.9 2005/03/22 14:57:12 cube Exp $
+# $NetBSD: Makefile.common,v 1.10 2005/03/22 15:14:41 cube Exp $
 
 DISTNAME=	${GKRELLM_DISTBASE}
 PKGNAME=	${GKRELLM_PKGBASE}-${GKRELLM_VERSION}
@@ -11,7 +11,7 @@ HOMEPAGE=	http://gkrellm.net/
 
 CONFLICTS+=	gkrellm-1*
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	YES
 
 MAKE_ENV+=		LOCALEDIR=${PREFIX}/${PKGLOCALEDIR}/locale

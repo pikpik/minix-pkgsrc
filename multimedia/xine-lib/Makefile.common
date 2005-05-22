@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.19 2005/05/02 11:29:35 drochner Exp $
+# $NetBSD: Makefile.common,v 1.20 2005/05/10 00:16:42 reed Exp $
 #
 
 DISTNAME=		xine-lib-1.0.1
@@ -21,7 +21,7 @@ USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	libtool libtool-nofpic
 PKGCONFIG_OVERRIDE=	misc/libxine.pc.in
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 CONFIGURE_ARGS+=	--with-w32-path='${PREFIX}/lib/win32'
 CONFIGURE_ARGS+=	--without-external-ffmpeg --disable-ffmpegtest

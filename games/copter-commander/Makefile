@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:49 tv Exp $
 #
 
 DISTNAME=	copter-commander-1.8
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.speakeasy.org/~morse/copter-commander/
 COMMENT=	Armor Alley/Rescue Raiders clone
 
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 MAKE_ENV+=	X11PREFIX=${X11PREFIX}
 MAKE_ENV+=	GTKGLAREADIR=${BUILDLINK_PREFIX.gtkglarea}
 MAKE_ENV+=	OPENGLDIR=${BUILDLINK_PREFIX.MesaLib}

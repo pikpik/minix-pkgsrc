@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/02/09 16:19:35 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:29 tv Exp $
 
 DISTNAME=		nss-3.9.2
 PKGREVISION=		2
@@ -14,7 +14,7 @@ BUILD_DEPENDS+=		zip>=2.3:../../archivers/zip
 WRKSRC=			${WRKDIR}/${DISTNAME}/mozilla/security/nss
 
 USE_PERL5=		build
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 DIST=			${WRKSRC}/../../dist
 BUILD_TARGET=		nss_build_all
 MAKE_ENV=		BSD_LDOPTS="-L${BUILDLINK_PREFIX.nspr}/lib/nspr ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.nspr}/lib/nspr ${COMPILER_RPATH_FLAG}${LOCALBASE}/lib/nss"

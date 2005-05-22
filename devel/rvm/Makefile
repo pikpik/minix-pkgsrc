@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/01/25 13:20:35 blymn Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:38 tv Exp $
 #
 
 DISTNAME=	rvm-1.10
@@ -10,7 +10,7 @@ MAINTAINER=	phil@cs.wwu.edu
 HOMEPAGE=	http://www.coda.cs.cmu.edu/
 COMMENT=	Recoverable Virtual Memory
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES

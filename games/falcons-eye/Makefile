@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:45:49 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/13 16:54:13 jlam Exp $
 #
 
 DISTNAME=		nethack_source_331_jtp_193
@@ -18,7 +18,7 @@ CONFIGURE_SCRIPT=	./sys/unix/setup.sh
 DIST_SUBDIR=		${PKGNAME_NOREV}-20050216-2
 
 WRKSRC=			${WRKDIR}
-USE_GNU_TOOLS+=		lex yacc
+USE_TOOLS+=		bison lex
 MAKE_ENV+=		YACC=${TOOLS_YACC:Q}
 USE_X11=		yes
 

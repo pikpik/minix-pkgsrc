@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/12/19 23:09:59 minskim Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/11 21:45:19 tv Exp $
 
 DISTNAME=		devhelp-0.7
 PKGREVISION=		11
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.imendio.com/projects/devhelp/
 COMMENT=		Documentation viewer based on GNOME2
 
 USE_DIRS+=		gnome2-1.5
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PERL5=		build
 USE_PKGLOCALEDIR=	yes

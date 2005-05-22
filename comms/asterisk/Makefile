@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/13 19:22:17 riz Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/17 03:48:59 minskim Exp $
 #
 
 DISTNAME=		asterisk-1.0.7
@@ -11,7 +11,7 @@ MAINTAINER=		riz@NetBSD.org
 HOMEPAGE=		http://www.asterisk.org/
 COMMENT=		The Asterisk Software PBX
 
-USE_GNU_TOOLS+= 	make yacc
+USE_TOOLS+= 		bison gmake
 
 MANCOMPRESSED= 		yes
 

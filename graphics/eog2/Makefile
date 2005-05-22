@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/04/11 21:46:02 tv Exp $
+# $NetBSD: Makefile,v 1.40 2005/04/20 16:15:16 drochner Exp $
 #
 
 DISTNAME=	eog-2.10.0
@@ -14,7 +14,7 @@ BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
 USE_X11=		YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 

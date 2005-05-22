@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:15 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:05 tv Exp $
 #
 
 DISTNAME=	quirc-0.9.84
@@ -11,7 +11,7 @@ HOMEPAGE=	http://quirc.org/
 COMMENT=	Stable and powerful graphical IRC client
 
 GNU_CONFIGURE=	YES
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 USE_X11=	YES
 
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}

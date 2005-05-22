@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/11/27 11:28:59 tron Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:46:28 tv Exp $
 
 DISTNAME=	wmbiff-0.4.25
 PKGREVISION=	1
@@ -11,7 +11,7 @@ COMMENT=	xbuffy like "mail-checker" for WindowMaker
 
 GNU_CONFIGURE=	YES
 USE_X11=	YES
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 
 EX_DIR=		${PREFIX}/share/examples/wmbiff
 

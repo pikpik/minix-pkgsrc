@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/04/11 21:46:00 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/04/11 23:01:21 reinoud Exp $
 #
 
 DISTNAME=		blender-2.36
@@ -16,7 +16,7 @@ BUILD_DEPENDS+=		scons>=0.96:../../devel/scons
 WRKSRC=			${WRKDIR}/blender
 
 USE_X11=		YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 
 LDFLAGS+=		-lcrypto

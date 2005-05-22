@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/11 21:46:29 tv Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/20 15:48:27 drochner Exp $
 #
 
 DISTNAME=		gcalctool-5.5.42
@@ -14,7 +14,7 @@ BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.5
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_X11=		YES
 USE_PKGLOCALEDIR=	yes
 

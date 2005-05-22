@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:49 recht Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:31 tv Exp $
 #
 
 DISTNAME=		xeno-1.2-src-040418
@@ -24,7 +24,7 @@ CONF_FILES=		${EGDIR}/defaults ${PKG_SYSCONFDIR}/defaults
 CONF_FILES+=		${EGDIR}/democd ${PKG_SYSCONFDIR}/democd
 CONF_FILES+=		${EGDIR}/netbsd ${PKG_SYSCONFDIR}/netbsd
 
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 MAKE_ENV+=		EGDIR="${EGDIR}"
 MAKE_ENV+=		MV="${MV}" PYTHON="${PYTHONBIN}" SED="${SED}"
 PYTHON_VERSIONS_ACCEPTED= 22 23

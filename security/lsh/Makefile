@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:13 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/30 12:23:42 drochner Exp $
 #
 
 DISTNAME=		lsh-1.4.3
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.lysator.liu.se/~nisse/lsh/
 COMMENT=		ssh2 client/server
 
 GNU_CONFIGURE=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../devel/liboop/buildlink3.mk"

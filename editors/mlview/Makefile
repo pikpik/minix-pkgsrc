@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/03/22 16:13:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:41 tv Exp $
 #
 
 DISTNAME=	mlview-0.7.0
@@ -15,7 +15,7 @@ BUILD_USES_MSGFMT=	yes
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 

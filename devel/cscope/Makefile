@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/04/11 21:45:19 tv Exp $
+# $NetBSD: Makefile,v 1.38 2005/05/22 05:35:32 jlam Exp $
 #
 
 DISTNAME=	cscope-15.4
@@ -11,7 +11,7 @@ HOMEPAGE=	http://cscope.sourceforge.net/
 COMMENT=	Interactive C program browser
 
 GNU_CONFIGURE=		YES
-USE_GNU_TOOLS+=		lex
+USE_TOOLS+=		lex
 
 CONFIGURE_ARGS+=	--with-ncurses=${BUILDLINK_PREFIX.ncurses}
 CONFIGURE_ARGS+=	--with-flex

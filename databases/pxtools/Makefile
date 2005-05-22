@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:15 tv Exp $
 #
 
 DISTNAME=		pxtools-0.0.20
@@ -11,7 +11,7 @@ HOMEPAGE=		http://jan.kneschke.de/projects/pxtools/
 COMMENT=		Paradox database export/info utilities
 
 USE_PKGLOCALEDIR=	YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 GNU_CONFIGURE=		YES
 

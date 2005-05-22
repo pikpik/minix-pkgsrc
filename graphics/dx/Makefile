@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/04/11 21:46:02 tv Exp $
+# $NetBSD: Makefile,v 1.30 2005/05/22 03:04:29 jlam Exp $
 
 DISTNAME=	dx-4.3.2
 PKGREVISION=	2
@@ -10,8 +10,7 @@ HOMEPAGE=	http://www.opendx.org/
 COMMENT=	Open Visualization Data Explorer
 
 USE_X11BASE=		yes
-USE_GNU_TOOLS+=		make
-USE_TOOLS+=		lex
+USE_TOOLS+=		gmake lex
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-javadx
 

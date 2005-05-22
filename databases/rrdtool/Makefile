@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/04/11 21:45:15 tv Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/22 05:35:32 jlam Exp $
 #
 
 DISTNAME=	rrdtool-1.0.40
@@ -15,7 +15,7 @@ NOT_FOR_PLATFORM=	NetBSD-1.[0-4]*-alpha NetBSD-1.5-alpha \
 			NetBSD-1.5.*-alpha NetBSD-1.5[A-U]-alpha
 
 USE_LIBTOOL=		yes
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS= --enable-shared

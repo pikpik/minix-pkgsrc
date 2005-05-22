@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/03 15:15:12 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/11 21:48:13 tv Exp $
 #
 
 DISTNAME=	qt-1.44
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.troll.no/products/qt.html
 COMMENT=	C++ X GUI toolkit
 
 USE_X11BASE=	yes
-USE_GNU_TOOLS+=	make
+USE_TOOLS+=	gmake
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 

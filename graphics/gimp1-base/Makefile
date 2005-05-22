@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/02/21 20:26:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:03 tv Exp $
 #
 
 DISTNAME=		gimp-1.2.5
@@ -21,7 +21,7 @@ CONFLICTS+=		gimp<=1.2.3 gimp>=2.0.0
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_X11=		YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 
 .include "../../mk/bsd.prefs.mk"

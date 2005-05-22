@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2004/12/29 15:31:24 minskim Exp $
+# $NetBSD: Makefile,v 1.33 2005/04/11 21:45:49 tv Exp $
 
 DISTNAME=	dopewars-1.5.10
 CATEGORIES=	games
@@ -11,7 +11,7 @@ COMMENT=	Make a fortune dealing drugs on the streets of New York
 USE_DIRS+=		xdg-1.1
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-ncurses

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/29 16:24:14 seb Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:44:51 tv Exp $
 
 DISTNAME=		amarok-1.2.3
 CATEGORIES=		audio kde
@@ -10,7 +10,7 @@ HOMEPAGE=		http://amarok.kde.org/
 COMMENT=		KDE audio player
 
 USE_DIRS+=		xdg-1.1
-USE_GNU_TOOLS+=		make
+USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 
