@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:56:41 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1 2005/05/10 21:02:42 christos Exp $
 bin/error
-man/man1/error.1
 man/cat1/error.0
+man/man1/error.1
