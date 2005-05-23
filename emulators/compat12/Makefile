@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2003/08/30 22:51:15 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/04/15 18:40:50 kristerw Exp $
 #
 
 DISTNAME=		compat12-${MACHINE_ARCH}
@@ -13,8 +13,8 @@ COMMENT=		Shared libraries for NetBSD 1.2 (and earlier) compatibility
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-m68k NetBSD-*-ns32k \
 			NetBSD-*-sparc
 
-NO_BUILD=		# defined
-NO_MTREE=		# defined
+NO_BUILD=		yes
+NO_MTREE=		yes
 SHLIB_HANDLING=		NO
 USE_PKGINSTALL=		YES
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
