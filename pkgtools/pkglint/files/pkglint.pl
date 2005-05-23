@@ -589,7 +589,7 @@ sub check_package() {
 	# we need to handle the Makefile first to get some variables
 	log_info(NO_FILE, NO_LINE_NUMBER, "Checking Makefile.");
 
-	if (checkfile_Makefile("Makefile")) {
+	if (!checkfile_Makefile("Makefile")) {
 		log_error("$opt_packagedir/Makefile", NO_LINE_NUMBER, "Cannot be read.");
 		return false;
 	}
@@ -1393,6 +1393,7 @@ sub checkfile_Makefile($) {
 	# ...nor settings of TEST_TARGET & BUILD_TARGET
 	$j =~ s/\nTEST_TARGET[\t ]*.*=[\t ]*[^\n]*\n/\nTEST_TARGET=#replaced\n/;
 	$j =~ s/\nBUILD_TARGET[\t ]*.*=[\t ]*[^\n]*\n/\nBUILD_TARGET=#replaced\n/;
+	$j =~ s/\n(?:PKGSRC_)?USE_TOOLS[ \t]*\+=[ \t]*[^\n]*\n/\nUSE_TOOLS=#replaced\n/;
 	if ($opt_warn_directcmd) {
 		foreach my $i (keys %cmdnames) {
 			if ($j =~ /[ \t\/@]$i[ \t\n;]/) {
