@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.18 2005/04/11 21:45:38 tv Exp $
+# $NetBSD: Makefile.common,v 1.19 2005/05/22 05:37:44 jlam Exp $
 
 DISTNAME=		subversion-${SVNVER}
 CATEGORIES=		devel
@@ -24,6 +24,8 @@ CONFIGURE_ARGS+=	--with-apr=${BUILDLINK_PREFIX.apr}
 CONFIGURE_ARGS+=	--with-apr-util=${BUILDLINK_PREFIX.apr}
 CONFIGURE_ARGS+=	--with-neon=${BUILDLINK_PREFIX.neon}
 CONFIGURE_ARGS+=	--with-ssl
+
+MAKE_FLAGS+=		SWIG_LIBSWIG_DIR=${BUILDLINK_DIR}/share/swig/1.3
 
 BUILDLINK_DEPENDS.subversion-base=	subversion-base>=${SVNVER}
 

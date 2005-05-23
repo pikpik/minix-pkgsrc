@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/01/17 01:08:50 epg Exp $
+# $NetBSD: Makefile,v 1.19 2005/05/22 05:35:32 jlam Exp $
 
 PKGNAME=	p5-subversion-${SVNVER}
 COMMENT=	Perl bindings for Subversion
@@ -15,12 +15,13 @@ PERL5_CONFIGURE=	NO
 #PERL5_CONFIGURE_DIRS=	${PERL_DIR}
 PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/SVN/_Core/.packlist
 
+TEST_TARGET=		check-swig-pl
+
 post-patch:
 	${RM} ${WRKSRC}/build-outputs.mk
 	${CP} ${FILESDIR}/build-outputs.mk ${WRKSRC}/build-outputs.mk
 
 .include "../../devel/subversion/buildlink3.mk"
-.include "../../devel/swig-build/buildlink3.mk"
-.include "../../devel/swig-perl/buildlink3.mk"
+.include "../../devel/swig13/buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
