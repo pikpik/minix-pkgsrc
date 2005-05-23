@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/19 22:46:44 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:46:49 tv Exp $
 #
 
 DISTNAME=		libsoup-1.99.28
@@ -21,5 +21,6 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
