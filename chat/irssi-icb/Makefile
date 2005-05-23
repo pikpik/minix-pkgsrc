@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:13:14 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:04 tv Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
@@ -13,7 +13,7 @@ COMMENT=	Irssi plugin to access ICB networks
 
 WRKSRC=		${WRKDIR}/${IRSSI_DISTNAME}/${DISTNAME}
 
-.include "${.CURDIR}/../../chat/irssi/Makefile.common"
+.include "../../chat/irssi/Makefile.common"
 
 DEPENDS+=	irssi>=${IRSSI_VERSION}:../../chat/irssi
 
