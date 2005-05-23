@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2005/04/11 21:46:10 tv Exp $
+# $NetBSD: Makefile,v 1.49 2005/05/22 20:08:07 jlam Exp $
 
-DISTNAME=       xpaint-2.7.6
+DISTNAME=       xpaint-2.7.7
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sf-xpaint/}
 EXTRACT_SUFX=	.tar.bz2
