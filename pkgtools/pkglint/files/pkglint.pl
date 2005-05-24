@@ -1284,7 +1284,7 @@ sub checklines_direct_tools($) {
 			my ($varname, $value) = ($1, $2);
 			# process variable assignments
 			if ($varname !~ $regex_ok_vars) {
-				$line->log_warning("Possible direct use of \"${tool}\" found in variable ${varname}. Please use \$\{$toolvar{$tool}\} instead.");
+				$line->log_warning("Possible direct use of \"${tool}\" in variable ${varname}. Please use \$\{$toolvar{$tool}\} instead.");
 			}
 		} elsif ($text =~ qr"^\t(.*)") {
 			my ($shellcmd) = ($1);
