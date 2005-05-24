@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/11/08 13:42:17 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:44:50 tv Exp $
 #
 
 DISTNAME=		rarlinux-3.4.1
@@ -22,7 +22,6 @@ WRKSRC=			${WRKDIR}/rar
 DEPENDS+=	suse_base>=6.1:../../emulators/${SUSE_DIR_PREFIX}_base
 DEPENDS+=	suse_compat>=6.1:../../emulators/${SUSE_DIR_PREFIX}_compat
 .endif
-
 
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
