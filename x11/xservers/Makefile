@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/02/20 12:49:35 grant Exp $#
+# $NetBSD: Makefile,v 1.18 2005/05/16 01:15:34 jlam Exp $
 
 DISTNAME=	xservers-3.3.6.3
 CATEGORIES=	x11
