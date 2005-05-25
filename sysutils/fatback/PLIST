@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/fatback
+info/fatback-manual.info
+man/man1/fatback.1
