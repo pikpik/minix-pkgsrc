@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:46:41 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/22 20:08:18 jlam Exp $
 
 DISTNAME=	ffmpeg-0.4.8
 PKGREVISION=	3
@@ -17,9 +17,9 @@ USE_PKGINSTALL=	YES
 CONF_FILES=	${PREFIX}/share/examples/ffmpeg/ffserver.conf \
 		${PKG_SYSCONFDIR}/ffserver.conf
 
-MAKE_ENV+=	EXTRA_LIBS="${LIBGETOPT}" \
-		FFSERVER_CONF=${PKG_SYSCONFDIR}/ffserver.conf \
-		LOCALBASE="${LOCALBASE}"
+MAKE_ENV+=	EXTRA_LIBS=${LIBGETOPT:Q} \
+		FFSERVER_CONF=${PKG_SYSCONFDIR:Q}/ffserver.conf \
+		LOCALBASE=${LOCALBASE:Q}
 
 CONFIGURE_ARGS=		--cc=${CC} --prefix=${PREFIX}
 CONFIGURE_ARGS+=	--enable-pp --disable-vhook --disable-debug
