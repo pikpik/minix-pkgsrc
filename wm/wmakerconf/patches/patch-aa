@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2004-07-22 03:43:52.000000000 +0000
+--- configure.orig	2005-03-02 18:36:35.000000000 +0000
 +++ configure
-@@ -3284,8 +3284,8 @@ if test "$x_libraries" != "NONE"; then
+@@ -3230,8 +3230,8 @@ if test "$x_libraries" != "NONE"; then
  fi
  
  # Add some common include and library path's
