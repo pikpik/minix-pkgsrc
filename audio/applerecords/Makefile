@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/06 07:20:12 agc Exp $
+# $NetBSD: Makefile,v 1.2 2004/10/28 20:14:51 lha Exp $
 #
 
 DISTNAME=		applerecords-0.5
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.cdavies.org/applerecords.html
 COMMENT=		Java DAAP client
 
-NO_BUILD=		# defined
+NO_BUILD=		yes
 WRKSRC=			${WRKDIR}
 USE_JAVA=		run
 
