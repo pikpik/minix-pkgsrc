@@ -1,7 +1,10 @@
-@comment	$NetBSD$
+@comment	$NetBSD: PLIST,v 1.1.1.1 2005/01/13 08:22:58 itojun Exp $
 bin/mDNSClientPosix
 bin/mDNSIdentify
 bin/mDNSNetMonitor
 bin/mDNSProxyResponderPosix
 bin/mDNSResponderPosix
-bin/mdnsd
+include/dns_sd.h
+lib/libdns_sd.${SO_SUFFIX}
+sbin/dnsextd
+sbin/mdnsd
