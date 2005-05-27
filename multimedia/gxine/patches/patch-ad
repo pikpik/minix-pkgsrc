@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/spidermonkey/jsprf.c.orig	Sat May  7 19:07:27 2005
 +++ src/spidermonkey/jsprf.c	Sat May  7 19:08:37 2005
 @@ -57,7 +57,11 @@
