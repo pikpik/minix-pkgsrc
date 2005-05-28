@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2005/04/05 11:07:35 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2005/05/22 20:07:45 jlam Exp $
 #
 
 DISTNAME=	geneweb-4.10
 CATEGORIES=	databases
+PKGREVISION=	1
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/geneweb/Src/
 
 MAINTAINER=	wulf@NetBSD.org
