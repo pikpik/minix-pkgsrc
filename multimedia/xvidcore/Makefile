@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2005/01/18 13:04:13 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:46:43 tv Exp $
 #
 
 DISTNAME=	xvidcore-1.0.3
 CATEGORIES=	multimedia
-MASTER_SITES=	http://files.xvid.org/downloads/
+MASTER_SITES=	http://downloads.xvid.org/downloads/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tech-pkg@NetBSD.org
