@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.2 2004/02/22 16:35:39 heinz Exp $
 
 --- Makefile.PL.orig	Wed Jan 14 22:26:52 2004
 +++ Makefile.PL
@@ -7,7 +7,7 @@ $NetBSD$
  	($BUILD_ZLIB
            ? zlib_files($ZLIB_LIB)
 -	  : (LIBS	=> [ "-L$ZLIB_LIB -lz " ])
-+	  : (LIBS	=> [ "-L$ZLIB_LIB -R$ZLIB_LIB -lz " ])
++	  : (LIBS	=> [ "-L$ZLIB_LIB $ENV{'COMPILER_RPATH_FLAG'}$ZLIB_LIB -lz " ])
  	),  
  	($] >= 5.005
  	    ? (ABSTRACT_FROM	=> 'Zlib.pm',
