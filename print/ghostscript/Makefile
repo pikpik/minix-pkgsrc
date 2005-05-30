@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2003/02/23 00:57:52 itohy Exp $
+# $NetBSD: Makefile,v 1.13 2003/09/18 16:25:10 jmmv Exp $
 
 PKGNAME=	ghostscript-${GS_VERS}
-PKGREVISION=	4
+PKGREVISION=	5
 COMMENT=	Aladdin Postscript interpreter
 
 USE_X11=		YES
