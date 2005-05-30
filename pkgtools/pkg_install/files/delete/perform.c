@@ -1,4 +1,4 @@
-/*	$NetBSD: perform.c,v 1.14 2005/02/04 09:10:13 jlam Exp $	*/
+/*	$NetBSD: perform.c,v 1.56 2005/05/10 00:06:57 rillig Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: perform.c,v 1.15 1997/10/13 15:03:52 jkh Exp";
 #else
-__RCSID("$NetBSD: perform.c,v 1.14 2005/02/04 09:10:13 jlam Exp $");
+__RCSID("$NetBSD: perform.c,v 1.56 2005/05/10 00:06:57 rillig Exp $");
 #endif
 #endif
 
@@ -845,7 +845,7 @@ pkg_do(char *pkg)
 		if (is_depoted_pkg) {
 			(void) remove_files(LogDir, "+*");
 			if (isemptydir(LogDir))
-				(void) fexec(RMDIR_CMD, LogDir, NULL);
+				(void)rmdir(LogDir);
 			else
 				warnx("%s is not empty", LogDir);
 			return 0;
