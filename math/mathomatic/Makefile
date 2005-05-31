@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/05/15 14:32:29 minskim Exp $
+# $NetBSD: Makefile,v 1.38 2005/05/26 13:08:07 minskim Exp $
 #
 
 DISTNAME=		mathomatic-12.3.3
@@ -7,7 +7,7 @@ MASTER_SITES=		http://www.panix.com/~gesslein/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc@bjan.freeshell.org
-HOMEPAGE=		http://www.panix.com/~gesslein/
+HOMEPAGE=		http://www.mathomatic.com/
 COMMENT=		Small portable symbolic math program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
