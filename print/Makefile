@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2005/05/16 22:30:24 jschauma Exp $
+# $NetBSD: Makefile,v 1.126 2005/05/18 22:02:17 wiz Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -29,6 +29,7 @@ SUBDIR+=	dvipdfm
 SUBDIR+=	dvipdfmx
 SUBDIR+=	dvipng
 SUBDIR+=	enscript
+SUBDIR+=	epstool
 SUBDIR+=	foomatic-filters
 SUBDIR+=	foomatic-gswrapper
 SUBDIR+=	ggv2
