@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/04/11 21:46:35 tv Exp $
+# $NetBSD: Makefile,v 1.43 2005/05/22 20:08:15 jlam Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
 CATEGORIES=	misc
@@ -10,9 +10,10 @@ USE_DIRS+=		xdg-1.1
 USE_PERL=		run
 USE_TOOLS+=		bison gawk
 
-PKG_DEFAULT_OPTIONS+=	sasl
 PKG_OPTIONS_VAR=	PKG_OPTIONS.kdepim
 PKG_SUPPORTED_OPTIONS=	sasl
+PKG_SUGGESTED_OPTIONS=	sasl
+
 .include "../../mk/bsd.options.mk"
 
 BUILDLINK_DEPENDS.gpgme+=     gpgme>=0.4.5

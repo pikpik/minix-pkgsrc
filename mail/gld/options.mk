@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2005/04/14 22:22:56 xtraeme Exp $
+# $NetBSD: options.mk,v 1.2 2005/05/24 15:30:39 xtraeme Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gld
 PKG_SUPPORTED_OPTIONS=	mysql pgsql
-PKG_DEFAULT_OPTIONS+=	mysql
+PKG_SUGGESTED_OPTIONS=	mysql
 
 .include "../../mk/bsd.options.mk"
 

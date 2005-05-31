@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1.1.1 2005/01/20 18:02:39 cube Exp $
+# $NetBSD: options.mk,v 1.2 2005/02/20 21:50:57 cube Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.netbsd-tap
 PKG_SUPPORTED_OPTIONS=	bpf
-PKG_DEFAULT_OPTIONS?=	bpf
+PKG_SUGGESTED_OPTIONS=	bpf
 
 .include "../../mk/bsd.options.mk"
 

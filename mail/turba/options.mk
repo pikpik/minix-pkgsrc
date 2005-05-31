@@ -1,11 +1,8 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1.1.1 2005/03/25 13:21:43 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.turba
 PKG_SUPPORTED_OPTIONS=	ldap mysql
-
-.if !defined(PKG_OPTIONS.turba)
-PKG_DEFAULT_OPTIONS+=	ldap
-.endif
+PKG_SUGGESTED_OPTIONS=	ldap
 
 .include "../../mk/bsd.options.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:46:20 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:12 jlam Exp $
 
 DISTNAME=	maildrop-1.8.0
 PKGBASE=	${DISTNAME:C/-[^-]*$//}
@@ -16,8 +16,8 @@ USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 
-PKG_SUPPORTED_OPTIONS+=	authlib
-PKG_DEFAULT_OPTIONS+=	authlib
+PKG_SUPPORTED_OPTIONS=	authlib
+PKG_SUGGESTED_OPTIONS=	authlib
 
 .include "../../mail/courier-maildir/Makefile.common"
 .include "../../security/courier-authlib/Makefile.common"

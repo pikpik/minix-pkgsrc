@@ -1,11 +1,8 @@
-# $NetBSD: options.mk,v 1.2 2005/01/10 20:59:43 adrianp Exp $
+# $NetBSD: options.mk,v 1.3 2005/01/30 04:41:16 taca Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.qpopper
 PKG_SUPPORTED_OPTIONS=	inet6 ssl
-
-.if !defined(PKG_OPTIONS.qpopper)
-PKG_DEFAULT_OPTIONS+=	ssl
-.endif
+PKG_SUGGESTED_OPTIONS=	ssl
 
 .include "../../mk/bsd.options.mk"
 

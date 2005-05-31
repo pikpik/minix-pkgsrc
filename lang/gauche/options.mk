@@ -1,10 +1,11 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/03/07 03:16:46 uebayasi Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gauche
 PKG_SUPPORTED_OPTIONS=	gdbm multibyte
-PKG_DEFAULT_OPTIONS+=	gdbm multibyte
+PKG_SUGGESTED_OPTIONS=	gdbm multibyte
 
 .include "../../mk/bsd.options.mk"
+
 .include "../../mk/bsd.prefs.mk"
 
 ###

@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2005/03/22 08:46:26 adam Exp $
+# $NetBSD: options.mk,v 1.1 2005/04/01 10:15:47 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.octave
-PKG_DEFAULT_OPTIONS=	hdf5
 PKG_SUPPORTED_OPTIONS=	hdf5
+PKG_SUGGESTED_OPTIONS=	hdf5
 
 .include "../../mk/bsd.options.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2005/01/24 17:24:08 hira Exp $
+# $NetBSD: options.mk,v 1.3 2005/03/22 14:01:20 adam Exp $
 
 _COMMONCARDDRIVERS=	apm ark ati chips cirrus cyrix dummy glint i128 mga \
 			neomagic nv rendition s3 s3virge savage siliconmotion \
@@ -22,7 +22,8 @@ _OSCARDDRIVERS+=	${_LINUXCARDDRIVERS}
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xorg-server
 PKG_SUPPORTED_OPTIONS=	${_COMMONCARDDRIVERS} ${_OSCARDDRIVERS}
-PKG_DEFAULT_OPTIONS=	${PKG_SUPPORTED_OPTIONS}
+PKG_SUGGESTED_OPTIONS=	${PKG_SUPPORTED_OPTIONS}
+
 .include "../../mk/bsd.options.mk"
 
 .for _drv in ${PKG_OPTIONS}

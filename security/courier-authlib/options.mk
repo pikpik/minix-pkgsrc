@@ -1,11 +1,9 @@
-# $NetBSD: options.mk,v 1.2 2005/02/26 22:14:01 jlam Exp $
+# $NetBSD: options.mk,v 1.3 2005/03/18 20:20:48 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.courier-authlib
 PKG_SUPPORTED_OPTIONS=	PAM bdb ldap mysql pgsql
+PKG_SUGGESTED_OPTIONS=	bdb
 
-.if !defined(PKG_OPTIONS.courier-auth)
-PKG_DEFAULT_OPTIONS+=	bdb
-.endif
 .include "../../mk/bsd.options.mk"
 
 ###

@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2005/03/29 08:48:31 adam Exp $
+# $NetBSD: options.mk,v 1.2 2005/03/31 09:52:26 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.scummvm
-PKG_DEFAULT_OPTIONS=	sdl
 PKG_SUPPORTED_OPTIONS=	sdl x11
+PKG_SUGGESTED_OPTIONS=	sdl
 
 .include "../../mk/bsd.options.mk"
 

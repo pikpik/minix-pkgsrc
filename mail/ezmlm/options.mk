@@ -1,11 +1,12 @@
-# $NetBSD$
-
-.if ${OPSYS} == "Darwin"
-PKG_DEFAULT_OPTIONS+=	althash
-.endif
+# $NetBSD: options.mk,v 1.1 2004/12/21 04:22:03 schmonz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ezmlm
 PKG_SUPPORTED_OPTIONS=	althash
+
+.if ${OPSYS} == "Darwin"
+PKG_SUGGESTED_OPTIONS=	althash
+.endif
+
 .include "../../mk/bsd.options.mk"
 
 ###

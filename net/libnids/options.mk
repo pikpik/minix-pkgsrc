@@ -1,11 +1,8 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/04/05 22:13:29 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.libnids
 PKG_SUPPORTED_OPTIONS=	libnet10 libnet11
-
-.if !defined(PKG_OPTIONS.libnids)
-PKG_DEFAULT_OPTIONS+= 	libnet10
-.endif
+PKG_SUGGESTED_OPTIONS= 	libnet10
 
 .include "../../mk/bsd.options.mk"
 

@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/03/20 17:52:20 jmmv Exp $
 #
 
-PKG_DEFAULT_OPTIONS+=	inet6 lua ssl
 PKG_OPTIONS_VAR=	PKG_OPTIONS.screws
 PKG_SUPPORTED_OPTIONS=	inet6 lua ssl
+PKG_SUGGESTED_OPTIONS=	inet6 lua ssl
 
 .include "../../mk/bsd.options.mk"
 
