@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1679 2005/05/29 17:12:16 jmmv Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1680 2005/05/31 12:10:07 dillo Exp $
 #
 # This file is in the public domain.
 #
@@ -172,7 +172,6 @@ PKGREPOSITORYSUBDIR?=	All
 PKGWILDCARD?=		${PKGBASE}-[0-9]*
 SVR4_PKGNAME?=		${PKGNAME}
 USE_DIGEST?=		YES
-USE_GNU_TOOLS?=		# empty
 WRKSRC?=		${WRKDIR}/${DISTNAME}
 
 .if (defined(INSTALL_UNSTRIPPED) && !empty(INSTALL_UNSTRIPPED:M[yY][eE][sS])) || defined(DEBUG_FLAGS)

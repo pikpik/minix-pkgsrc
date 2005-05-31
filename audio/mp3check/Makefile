@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/12/03 15:14:51 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/02/16 12:20:35 wiz Exp $
 
 DISTNAME=	mp3check-0.8.0
 CATEGORIES=	audio
@@ -8,7 +8,6 @@ MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://jo.ath.cx/soft/mp3check/mp3check.html
 COMMENT=	Check MP3 files for consistency
 
-#USE_GNU_TOOLS+=	make
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
 
