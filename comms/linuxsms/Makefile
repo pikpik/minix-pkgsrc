@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/11 06:25:18 snj Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:07 tv Exp $
 #
 
 DISTNAME=	linuxsms-0.65
@@ -19,7 +19,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/linuxsms.1 ${PREFIX}/man/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/linuxsms
 .for f in BUGS CHANGES README README.ES TODO
-	${INSTALL_DATA} ${WRKSRC}/$f ${PREFIX}/share/doc/linuxsms
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/linuxsms
 .endfor
 .undef f
 

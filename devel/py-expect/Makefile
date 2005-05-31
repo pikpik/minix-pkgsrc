@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/10/03 00:13:32 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:37 tv Exp $
 #
 
 DISTNAME=	ExpectPy-1.9b1
@@ -28,7 +28,7 @@ EXAMPLESFILES=	ask.py glob.py ping.py telnet.py xping.py
 post-install:
 		${INSTALL_DATA_DIR} ${EXAMPLESDIR}
 .for f in ${EXAMPLESFILES}
-		${INSTALL_DATA} ${WRKSRC}/examples/$f ${EXAMPLESDIR}
+		${INSTALL_DATA} ${WRKSRC}/examples/${f} ${EXAMPLESDIR}
 .endfor
 
 .include "../../lang/tcl/buildlink3.mk"

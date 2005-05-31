@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2005/05/11 16:15:50 jlam Exp $
+# $NetBSD: Makefile,v 1.82 2005/05/22 20:08:10 jlam Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -199,9 +199,9 @@ post-patch:
 .if ${PKGDIRMODE} != "755"
 .  for f in installhtml installman installperl lib/ExtUtils/Install.pm
 	cd ${WRKSRC} && \
-		${MV} -f $f $f.dirmode && \
+		${MV} -f ${f} ${f}.dirmode && \
 		${SED} -e 's/755/${PKGDIRMODE}/g;/umask(/d' \
-		$f.dirmode >$f
+		${f}.dirmode >${f}
 .  endfor
 .endif
 
