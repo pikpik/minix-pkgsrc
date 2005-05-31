@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1678 2005/05/26 11:15:30 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1679 2005/05/29 17:12:16 jmmv Exp $
 #
 # This file is in the public domain.
 #
@@ -4083,9 +4083,9 @@ show-license show-licence:
 
 # This target is defined in bsd.options.mk for packages that use
 # the options framework.
-.if !target(describe-options)
-.PHONY: describe-options
-describe-options:
+.if !target(show-options)
+.PHONY: show-options
+show-options:
 	@${ECHO} This package does not use the options framework.
 .endif
 
