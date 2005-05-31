@@ -29,6 +29,7 @@ REPLACE_PERL=	kmail/kmail-3.1-update-new-mail-notification-settings.pl \
 		kmail/kmail-pgpidentity.pl \
 		kmail/kmail-upd-identities.pl \
 		kmail/kmail-3.4-misc.pl \
+		kmail/kmail-3.4.1-update-status-filters.pl \
 		kmail/upgrade-signature.pl \
 		kmail/upgrade-transport.pl \
 		libkdenetwork/kpgp-3.1-upgrade-address-data.pl \
