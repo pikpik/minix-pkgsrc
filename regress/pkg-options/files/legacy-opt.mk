@@ -1,6 +1,6 @@
-# $NetBSD: simple.mk,v 1.1.1.1 2005/05/16 00:09:03 rillig Exp $
+# $NetBSD: legacy-opt.mk,v 1.1 2005/05/31 11:05:31 dillo Exp $
 #
-# This file test a very simple options configuration.
+# This file tests PKG_OPTIONS_LEGACY_OPTS.
 #
 
 MAKECONF=			/dev/null
