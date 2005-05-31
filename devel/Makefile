@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.642 2005/05/26 10:53:19 wiz Exp $
+# $NetBSD: Makefile,v 1.643 2005/05/28 16:37:58 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -280,6 +280,7 @@ SUBDIR+=	mk-files
 SUBDIR+=	mkcmd
 SUBDIR+=	monotone
 SUBDIR+=	monotone-server
+SUBDIR+=	monotone-viz
 SUBDIR+=	mph
 SUBDIR+=	mrproject
 SUBDIR+=	nana
