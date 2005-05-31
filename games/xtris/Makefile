@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/03/07 23:03:56 snj Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:59 tv Exp $
 #
 
 DISTNAME=	xtris-1.15
@@ -12,14 +12,7 @@ COMMENT=	Multi-player version of a popular game for the X Window system
 WRKSRC=		${WRKDIR}/xtris
 USE_X11BASE=	yes
 
-BUILD_DEFS+=	USE_INET6
-
-# to get USE_INET6
-.include "../../mk/bsd.prefs.mk"
-
-.if defined(USE_INET6) && ${USE_INET6} == YES
-CFLAGS+=	-DINET6
-.endif
+.include "options.mk"
 
 do-install:
 	${INSTALL} -o bin -g games -m 2755 ${WRKSRC}/xtris ${PREFIX}/bin/xtris
