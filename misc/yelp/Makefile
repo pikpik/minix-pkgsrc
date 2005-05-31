@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2005/04/11 21:46:40 tv Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/22 20:08:18 jlam Exp $
 #
 
-DISTNAME=		yelp-2.6.5
+DISTNAME=		yelp-2.10.0
 CATEGORIES=		misc
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.6/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.10/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
@@ -24,6 +24,8 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-html-widget=gtkhtml2
 
+.include "../../mk/bsd.prefs.mk"
+
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/GConf2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
@@ -38,7 +40,15 @@ CONFIGURE_ARGS+=	--with-html-widget=gtkhtml2
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
+.include "../../textproc/gnome-doc-utils/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../www/libgtkhtml/buildlink3.mk"
+.if ${GECKO_PROVIDER} == "firefox"
+# firefox didn't have a pkgconfig file before 1.0.4
+BUILDLINK_DEPENDS.firefox+= firefox>=1.0.4
+.include "../../www/firefox/buildlink3.mk"
+.else
+.include "../../www/mozilla-gtk2/buildlink3.mk"
+.endif
 
 .include "../../mk/bsd.pkg.mk"
