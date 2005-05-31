@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/04/11 21:47:53 tv Exp $
+# $NetBSD: Makefile,v 1.43 2005/05/22 20:08:45 jlam Exp $
 
 DISTNAME=		gtkhtml-1.1.10
 PKGREVISION=		5
@@ -24,6 +24,6 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 .include "../../print/gnome-print/buildlink3.mk"
 .include "../../www/glibwww/buildlink3.mk"
 .include "../../www/libghttp/buildlink3.mk"
-.include "../../x11/controlcenter/buildlink3.mk"
+.include "../../x11/control-center/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
