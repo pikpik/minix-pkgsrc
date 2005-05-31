@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/31 16:31:10 taca Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:16 tv Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -26,6 +26,14 @@ CONFIG_STATUS_OVERRIDE=	# empty
 
 .if !empty(RUBY_SUFFIX)
 CONFIGURE_ARGS+= --program-suffix="${RUBY_SUFFIX}"
+.endif
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "IRIX"
+PLIST_SUBST+=  HAS_IO="@comment "
+.else
+PLIST_SUBST+=  HAS_IO=
 .endif
 
 DOCS=		COPYING COPYING.ja ChangeLog README \
