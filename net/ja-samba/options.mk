@@ -1,15 +1,15 @@
-# $NetBSD: options.mk,v 1.1 2005/02/07 11:35:45 jlam Exp $
+# $NetBSD: options.mk,v 1.2 2005/05/03 15:40:30 wiz Exp $
 
 # Global and legacy options
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ja-samba
-PKG_SUPPORTED_OPTIONS=	PAM cups ldap
+PKG_SUPPORTED_OPTIONS=	pam cups ldap
 .include "../../mk/bsd.options.mk"
 
 ###
 ### Support PAM authentication.
 ###
-.if !empty(PKG_OPTIONS:MPAM)
+.if !empty(PKG_OPTIONS:Mpam)
 .  include "../../mk/pam.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pam
 .endif

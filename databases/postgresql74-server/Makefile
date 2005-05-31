@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/02/07 11:35:41 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/16 01:32:22 jlam Exp $
 
 PKGNAME=		postgresql74-server-${BASE_VERS}
 PKGREVISION=		# empty
@@ -26,10 +26,10 @@ BUILD_DIRS+=		${WRKSRC}/src/backend/utils/mb/conversion_procs
 #.include "../../mk/dlopen.buildlink3.mk"
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.postgresql74-server
-PKG_SUPPORTED_OPTIONS=	PAM
+PKG_SUPPORTED_OPTIONS=	pam
 .include "../../mk/bsd.options.mk"
 
-.if !empty(PKG_OPTIONS:MPAM)
+.if !empty(PKG_OPTIONS:Mpam)
 .  include "../../mk/pam.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pam
 .endif
