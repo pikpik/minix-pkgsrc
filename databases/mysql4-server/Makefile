@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/01/10 15:47:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:12 tv Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 #PKGREVISION=		1
@@ -35,6 +35,8 @@ BUILD_DEFS+=		MYSQL_DATADIR
 BUILD_DIRS=		${WRKSRC} ${WRKSRC}/man
 
 .include "../../databases/mysql4-client/buildlink3.mk"
+BUILDLINK_DEPMETHOD.readline=build
+.include "../../devel/readline/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 
 post-configure:
