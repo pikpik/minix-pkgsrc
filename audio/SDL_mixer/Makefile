@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2005/03/27 15:43:32 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2005/04/11 21:44:51 tv Exp $
 
 DISTNAME=	SDL_mixer-1.2.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_mixer/release/
 
@@ -16,10 +16,9 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_LIBTOOL=		YES
 USE_X11=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=        --enable-music-ogg
 
 CPPFLAGS=		-Dunix=1
-CFLAGS=			-DPREFIX="\"${PREFIX}\""
+CFLAGS=			-DSYSCONFDIR="\"${PKG_SYSCONFDIR}\""
 
 INSTALLATION_DIRS=	bin
 
