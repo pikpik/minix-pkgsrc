@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:43 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/19 06:49:33 snj Exp $
 
 DISTNAME=	crack-attack-1.1.14
 CATEGORIES=	games
@@ -10,7 +10,6 @@ COMMENT=	Tetris Attack inspired game
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
-USE_X11=	YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/html/${PKGBASE}

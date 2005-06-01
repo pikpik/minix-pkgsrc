@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 13:28:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/02 23:02:06 reed Exp $
 
 DISTNAME=	divx-player-installer
 PKGNAME=	divxplayer-0.2.0
@@ -36,5 +36,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/frontend.sh \
 		${PREFIX}/bin/${BINARY:S/.bin$//}
 
+.include "../../mk/x11.buildlink3.mk"
 .include "../../emulators/suse_linux/Makefile.application"
 .include "../../mk/bsd.pkg.mk"

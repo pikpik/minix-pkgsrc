@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/05/05 05:07:12 snj Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/10/03 00:18:29 tv Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 FLTK_BUILDLINK3_MK:=	${FLTK_BUILDLINK3_MK}+
@@ -19,5 +19,6 @@ BUILDLINK_FILES.fltk+=		include/Fl/*
 
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}

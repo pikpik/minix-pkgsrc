@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/01/12 21:13:22 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2005/03/24 21:12:57 wiz Exp $
 
 DISTNAME=       kp-0.96
 CATEGORIES=	misc tk
@@ -9,7 +9,7 @@ COMMENT=	The Keyboard Practicer, touch-type training program
 
 DEPENDS=	tk>=8.3.2:../../x11/tk
 
-USE_X11=	yes
+.include "../../mk/x11.buildlink3.mk"
 
 pre-configure:
 	for f in `${FIND} ${WRKDIR}/. -type f -print \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/05/18 16:24:29 drochner Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/22 20:08:47 jlam Exp $
 #
 
 DISTNAME=		gnome-themes-2.10.1
@@ -16,7 +16,6 @@ USE_DIRS+=		gnome2-1.5 theme-1.0
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_X11=		yes
 GNU_CONFIGURE=		yes
 
 .include "../../devel/libgnomeui/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/05/16 04:45:40 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/05/22 20:08:03 jlam Exp $
 
 DISTNAME=	tworld-1.2.1
 PKGNAME=	${DISTNAME:S/^t/tile/}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.muppetlabs.com/~breadbox/software/tworld/
 COMMENT=	"Game based on Chip's Challenge"
 
 USE_TOOLS+=	date gmake
-USE_X11=	YES
 GNU_CONFIGURE=	YES
 
 BUILD_TARGET=	tworld

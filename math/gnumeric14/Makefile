@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/22 20:08:13 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/01 12:55:10 markd Exp $
 #
 
 DISTNAME=		gnumeric-1.4.3
@@ -13,7 +13,6 @@ COMMENT=		Spreadsheet program from the GNOME project
 BUILD_USES_MSGFMT=	YES
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
-USE_X11=		YES
 USE_TOOLS+=		gmake
 USE_PERL5=		YES
 USE_LIBTOOL=		YES

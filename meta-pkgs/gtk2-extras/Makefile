@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:37 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:33 tv Exp $
 
 DISTNAME=	gtk2-extras-2.6.0
 PKGREVISION=	1
@@ -15,7 +15,6 @@ DEPENDS+=	gtk2-engines>=2.6.0:../../x11/gtk2-engines
 DEPENDS+=	librsvg2-gtk2>=2.6.3:../../graphics/librsvg2-gtk2
 DEPENDS+=	swfdec-gtk2>=0.2.1nb1:../../graphics/swfdec-gtk2
 
-USE_X11=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes

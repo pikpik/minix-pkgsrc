@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.use.mk,v 1.14 2005/05/18 22:42:07 jlam Exp $
+#	$NetBSD: bsd.pkg.use.mk,v 1.15 2005/05/22 19:11:12 jlam Exp $
 #
 # Turn USE_* macros into proper depedency logic.  Included near the top of
 # bsd.pkg.mk, after bsd.prefs.mk.
@@ -27,7 +27,7 @@ MAKE_FLAGS+=		CC=${CC:Q} CXX=${CXX:Q}
 
 .if defined(USE_X11BASE)
 MTREE_FILE?=		${PKGSRCDIR}/mk/${OPSYS}.x11.dist
-USE_X11?=		implied
+.  include "../../mk/x11.buildlink3.mk"
 .endif
 
 .if ${PKG_INSTALLATION_TYPE} == "pkgviews"
@@ -117,13 +117,6 @@ RMAN?=			${LOCALBASE}/bin/rman
 .  else
 RMAN?=			${X11BASE}/bin/rman
 .  endif
-.endif
-
-### USE_X11
-
-.if defined(USE_X11)
-X11_LDFLAGS+=		${COMPILER_RPATH_FLAG}${X11BASE}/lib${LIBABISUFFIX}
-X11_LDFLAGS+=		-L${X11BASE}/lib${LIBABISUFFIX}
 .endif
 
 ### USE_XPKGWEDGE

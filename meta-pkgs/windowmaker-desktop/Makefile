@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/01/03 15:59:12 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/01/28 00:00:14 ben Exp $
 #
 
 DISTNAME=	windowmaker-desktop-1.2
@@ -25,7 +25,6 @@ DEPENDS+=	wmweather-[0-9]*:../../x11/wmweather
 DEPENDS+=	wmMoonClock-[0-9]*:../../time/wmmoonclock
 DEPENDS+=	wmmixer-[0-9]*:../../audio/wmmixer
 
-USE_X11=	yes
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes

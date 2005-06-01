@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/03/30 19:48:14 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/05/22 20:08:13 jlam Exp $
 
 DISTNAME=	WMMail.app-0.64
 PKGNAME=	wmmail-0.64
@@ -19,4 +19,5 @@ CONFIGURE_ARGS+=	--with-PL-incs="-I${LOCALBASE}/include" \
 			--with-PL-libs="-L${LOCALBASE}/lib"
 
 .include "../../devel/libproplist/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

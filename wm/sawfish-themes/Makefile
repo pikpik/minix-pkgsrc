@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:55:16 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/11/30 18:26:40 wiz Exp $
 
 DISTNAME=		sawfish-themes-0.2
 PKGREVISION=		2
@@ -21,6 +21,8 @@ NO_CONFIGURE=		yes
 USE_X11BASE=		yes
 
 .include "../../mk/bsd.prefs.mk"
+
+.include "../../mk/x11.buildlink3.mk"
 
 pre-fetch:
 	@${ECHO} "==========================================================="

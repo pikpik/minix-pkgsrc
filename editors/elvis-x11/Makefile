@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/17 19:41:18 snj Exp $
+# $NetBSD: Makefile,v 1.5 2004/10/03 00:14:38 tv Exp $
 #
 
 .include "../elvis/Makefile.common"
@@ -9,7 +9,6 @@ COMMENT=	GUI for elvis, includes console elvis
 
 CONFLICTS+=	elvis-[0-9]*
 
-USE_X11=		YES
 CONFIGURE_ARGS+=	--with-x=yes
 CONFIGURE_ARGS+=	--with-xft
 

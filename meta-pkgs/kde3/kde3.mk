@@ -1,4 +1,4 @@
-# $NetBSD: kde3.mk,v 1.7 2005/04/27 02:09:05 markd Exp $
+# $NetBSD: kde3.mk,v 1.8 2005/05/18 22:35:04 reed Exp $
 #
 # This Makefile fragment is included by packages that use the KDE3
 # configure-and-build process.
@@ -37,7 +37,6 @@
 .if !defined(KDE3_MK)
 KDE3_MK=	# defined
 
-USE_X11=		YES
 USE_PKGLOCALEDIR=	YES
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:09 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/26 02:52:47 markd Exp $
 #
 
 DISTNAME=	skencil-0.6.16
@@ -9,8 +9,6 @@ MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=sketch/}
 MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://sketch.sourceforge.net/
 COMMENT=	Interactive drawing program
-
-USE_X11=	YES
 
 PYTHON_PATCH_SCRIPTS= sk2ppm.py sk2ps.py skconvert.py skencil.py skshow.py
 SK_CONF_ARGS=	--imaging-include=${BUILDLINK_PREFIX.pyimaging}/${PYINC}/PIL

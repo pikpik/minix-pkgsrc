@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:56 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:02 jlam Exp $
 #
 
 DISTNAME=	neverball-1.2.2
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.icculus.org/neverball/
 COMMENT=	Part puzzle game, part action game and with SDL graphics
 
 USE_TOOLS+=	gmake
-USE_X11=	yes
 
 # Avoiding multiples patches...
 BUILDLINK_TRANSFORM.SDL+=	-e "s|/SDL/|/|g"

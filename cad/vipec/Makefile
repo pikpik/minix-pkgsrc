@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/04/11 21:45:03 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/05/22 20:07:41 jlam Exp $
 #
 
 DISTNAME=	ViPEC-3.2.0
@@ -9,7 +9,6 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://vipec.sourceforge.net/
 COMMENT=	Network analyser for electrical networks
 
-USE_X11=		yes
 USE_TOOLS+=		gmake
 UNLIMIT_RESOURCES+=	datasize
 

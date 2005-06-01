@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:48:13 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:50 jlam Exp $
 
 DISTNAME=	QwSpriteField1.6
 PKGNAME=	qwspritefield-1.6
@@ -12,7 +12,6 @@ COMMENT=	Efficiently redrawn sprites in the Qt GUI Toolkit
 CONFLICTS=	kdesupport-1.0
 
 WRKSRC=		${WRKDIR}/QwSpriteField
-USE_X11=	yes
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/29 16:10:22 magick Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/22 20:08:18 jlam Exp $
 
 DISTNAME=	alevt-1.6.0
 PKGREVISION=	2
@@ -23,4 +23,5 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/pixmaps
 
 .include "../../graphics/png/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

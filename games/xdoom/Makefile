@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/05/16 01:15:32 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/05/22 20:08:03 jlam Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -38,6 +38,7 @@ CFLAGS+=	-D__BIG_ENDIAN__=1
 .endif
 
 .include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 
 post-extract:
 	(cd ${WRKDIR}; ${GTAR} xzf linuxdoom-1.10.src.tgz)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/02/12 22:43:44 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.38 2005/04/11 21:48:14 tv Exp $
 #
 
 DISTNAME=		wxGTK-2.4.2
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.wxwidgets.org/
 COMMENT=		GTK-based implementation of the wxWidgets GUI library
 
 USE_PKGLOCALEDIR=	YES
-USE_X11=		YES
 USE_LIBTOOL=		YES
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES

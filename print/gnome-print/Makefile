@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/02/09 20:16:58 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2005/04/11 21:47:07 tv Exp $
 
 DISTNAME=		gnome-print-0.37
 CATEGORIES=		print gnome
@@ -10,7 +10,6 @@ COMMENT=		Prototype implementation of the Gnome Printing Architecture
 
 USE_DIRS+=		gnome1-1.5
 USE_PKGLOCALEDIR=	YES
-USE_X11=		YES
 USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES

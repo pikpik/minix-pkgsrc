@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/03 15:14:58 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:58 tv Exp $
 
 DISTNAME=		xjump_2.7.5.orig
 PKGNAME=		xjump-2.7.5
@@ -13,7 +13,6 @@ COMMENT=		Jumping game for X
 WRKSRC=			${WRKDIR}/xjump-2.7.5.orig
 BUILD_TARGET=		xjump
 
-USE_X11=		YES
 
 do-install:
 	${INSTALL} -g games -m 2755 ${WRKSRC}/xjump ${PREFIX}/bin/xjump

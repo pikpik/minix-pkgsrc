@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/22 15:55:59 jmcneill Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:43 jlam Exp $
 #
 
 DISTNAME=	fluxbox-0.9.12
@@ -12,7 +12,6 @@ COMMENT=	Window Manager for X based on Blackbox
 
 DEPENDS=	bsetroot>=0.1nb1:../../wm/bsetroot
 
-USE_X11=	YES
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 USE_TOOLS=	gmake
@@ -28,4 +27,5 @@ CONFIGURE_ARGS+=	--enable-xinerama
 .include "options.mk"
 
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

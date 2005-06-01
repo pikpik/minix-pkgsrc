@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/01/01 18:13:15 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/11 21:44:51 tv Exp $
 
 DISTNAME=		dap-2.1.2
 PKGREVISION=		5
@@ -14,7 +14,6 @@ MAKEFILE=		Makefile.netbsd
 
 MAKE_ENV+=		X11PREFIX=${X11PREFIX}
 
-USE_X11=		yes
 USE_LANGUAGES=		c c++
 
 do-install:

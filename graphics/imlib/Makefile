@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2005/04/11 21:46:04 tv Exp $
+# $NetBSD: Makefile,v 1.93 2005/05/22 20:08:06 jlam Exp $
 
 DISTNAME=	imlib-1.9.15
 PKGREVISION=	2
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
-USE_X11=		yes
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	imlib.pc.in
 UNLIMIT_RESOURCES=	datasize

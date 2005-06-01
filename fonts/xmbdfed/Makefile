@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/01/21 16:10:14 kei Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:48 tv Exp $
 
 DISTNAME=	xmbdfed-4.5
 PKGREVISION=	#
@@ -17,5 +17,4 @@ do-install:
 
 .include "../../graphics/freetype-lib/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

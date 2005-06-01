@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/02/10 09:27:15 garbled Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/24 05:42:37 garbled Exp $
 
 DISTNAME=		clusterit-2.3
 CATEGORIES=		parallel
@@ -10,6 +10,6 @@ COMMENT=		Clustering package for unix
 
 HAS_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
-USE_X11=		YES
 
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

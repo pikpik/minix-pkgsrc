@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:45:17 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:47 jlam Exp $
 #
 
 DISTNAME=		at-spi-1.6.3
@@ -14,7 +14,6 @@ USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_X11=		yes
 
 CONFIGURE_ARGS+=	--disable-gtk-doc
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/10/15 12:22:13 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/11 21:45:23 tv Exp $
 
 DISTNAME=		giblib-1.2.4
 PKGREVISION=		2
@@ -12,8 +12,8 @@ COMMENT=		Programming utility library
 GNU_CONFIGURE=		YES
 PKGCONFIG_OVERRIDE=	giblib.pc.in
 USE_LIBTOOL=		YES
-USE_X11=		YES
 
 .include "../../graphics/imlib2/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

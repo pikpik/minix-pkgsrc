@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/03/10 15:23:10 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2005/04/11 21:46:10 tv Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	3
@@ -13,13 +13,6 @@ COMMENT=	The X Pixmap library
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_IMAKE=	# defined
-
-CHECK_BUILTIN.xpm=	yes
-.include "builtin.mk"
-
-.if !empty(IS_BUILTIN.xpm:M[yY][eE][sS])
-PKG_SKIP_REASON= "${PKGBASE} is part of your X11 distribution"
-.endif
 
 .if ${OPSYS} == "SunOS"
 post-install:

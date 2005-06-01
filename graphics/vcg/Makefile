@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:18:17 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:55 wiz Exp $
 
 DISTNAME=	vcg.1.30.r3.17
 PKGNAME=	vcg-1.30
@@ -11,6 +11,8 @@ COMMENT=	Visualization Tool for compiler graphs
 
 WRKSRC=		${WRKDIR}/vcg.1.30
 USE_X11BASE=	yes
+
+.include "../../mk/x11.buildlink3.mk"
 
 pre-patch:
 	@${MKDIR} ${WRKSRC}/preconf/X11ccNetBSD

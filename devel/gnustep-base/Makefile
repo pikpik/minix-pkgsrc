@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/04/12 15:11:11 adam Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/15 04:54:11 rh Exp $
 
 DISTNAME=	gnustep-base-1.10.3
 CATEGORIES=	devel gnustep
@@ -10,7 +10,6 @@ COMMENT=	GNUstep foundation classes
 
 PTHREAD_LIBS=		-lpthread
 
-USE_X11=		yes
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep
 CONFIGURE_ENV+=		INSTALL_PROGRAM="${INSTALL_SCRIPT}"
 
@@ -43,5 +42,6 @@ post-install:
 PTHREAD_LIBS+=		-lpth
 .endif
 
+.include "../../mk/x11.buildlink3.mk"
 .include "../../devel/gnustep-make/gnustep.mk"
 .include "../../mk/bsd.pkg.mk"

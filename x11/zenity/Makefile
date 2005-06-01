@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/04/11 21:48:17 tv Exp $
+# $NetBSD: Makefile,v 1.20 2005/05/22 20:08:52 jlam Exp $
 #
 
 DISTNAME=	zenity-2.10.0
@@ -16,7 +16,6 @@ USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
-USE_X11=		yes
 
 BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.0
 

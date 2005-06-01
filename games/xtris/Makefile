@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:59 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/31 21:47:34 wiz Exp $
 #
 
 DISTNAME=	xtris-1.15
@@ -13,6 +13,8 @@ WRKSRC=		${WRKDIR}/xtris
 USE_X11BASE=	yes
 
 .include "options.mk"
+
+.include "../../mk/x11.buildlink3.mk"
 
 do-install:
 	${INSTALL} -o bin -g games -m 2755 ${WRKSRC}/xtris ${PREFIX}/bin/xtris

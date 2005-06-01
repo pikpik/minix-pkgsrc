@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/13 15:26:39 drochner Exp $
+# $NetBSD: Makefile,v 1.32 2005/05/22 20:07:51 jlam Exp $
 #
 
 DISTNAME=	gail-1.8.4
@@ -12,7 +12,6 @@ COMMENT=	GNOME Accessibility Implementation Library
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
-USE_X11=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 

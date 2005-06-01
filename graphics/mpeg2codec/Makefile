@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/25 04:45:36 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:46:06 tv Exp $
 
 DISTNAME=	mpeg2vidcodec_v12
 PKGNAME=	mpeg2codec-1.2
@@ -15,6 +15,8 @@ WRKSRC=		${WRKDIR}/mpeg2
 USE_X11BASE=		# defined
 
 INSTALLATION_DIRS=	bin
+
+.include "../../mk/x11.buildlink3.mk"
 
 do-install:
 	${INSTALL_PROGRAM} \

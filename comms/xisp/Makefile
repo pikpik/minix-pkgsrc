@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/10/03 00:13:17 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/11 21:45:08 tv Exp $
 #
 
 DISTNAME=		xisp-2.7p1
@@ -11,8 +11,6 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=system/network/serial/} \
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://xisp.hellug.gr/
 COMMENT=		User-friendly X11 interface to pppd/chat
-
-USE_X11=		YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xisp

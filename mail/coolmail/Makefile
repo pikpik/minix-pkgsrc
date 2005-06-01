@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2001/02/17 18:24:41 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/21 16:56:43 martti Exp $
 
 DISTNAME=		coolmail-1.3
 CATEGORIES=		mail x11
@@ -10,6 +10,8 @@ COMMENT=		Xbiff replacement with 3D animation and sound
 
 MAKE_ENV+=		X11BASE=${PREFIX}
 USE_X11BASE=		yes
+
+.include "../../mk/x11.buildlink3.mk"
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/Coolmail.ad \

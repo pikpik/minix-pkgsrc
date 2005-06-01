@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:47:54 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/05/22 20:08:45 jlam Exp $
 
 DISTNAME=		liferea-0.6.4
 CATEGORIES=		www
@@ -13,7 +13,6 @@ USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_X11=		yes
 
 SHLIBTOOL_OVERRIDE=	libtool
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/02/21 20:26:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:00 tv Exp $
 #
 
 DISTNAME=	synaesthesia-xmms-0.0.3-rc3
@@ -13,7 +13,6 @@ COMMENT=	Port of Synaesthesia to an XMMS plugin
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_X11=	yes
 
 CPPFLAGS+=	-D_POSIX_THREAD_SYSCALL_SOFT=1
 

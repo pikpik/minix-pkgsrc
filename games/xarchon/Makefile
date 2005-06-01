@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/04/11 21:45:57 tv Exp $
+# $NetBSD: Makefile,v 1.32 2005/05/22 20:08:03 jlam Exp $
 #
 
 DISTNAME=	xarchon-0.60
@@ -13,7 +13,6 @@ COMMENT=	Chess-like strategy game with battle options
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
-USE_X11=	YES
 USE_LANGUAGES=	c c++
 
 .include "../../mk/bsd.prefs.mk"

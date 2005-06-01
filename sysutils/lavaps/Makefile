@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/04/05 10:44:06 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/05 10:44:51 wiz Exp $
 #
 
 DISTNAME=	lavaps-1.20
@@ -11,7 +11,6 @@ COMMENT=	Lava lamp of currently running processes
 
 USE_PERL5=	build
 
-USE_X11=	YES
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--with-additional-includes='-I${LOCALBASE}/include' \
 		--with-additional-libs='-L${LOCALBASE}/lib' \

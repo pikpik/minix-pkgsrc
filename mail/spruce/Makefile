@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:46:27 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:12 jlam Exp $
 #
 
 DISTNAME=       spruce-0.5.17
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://spruce.sourceforge.net/
 COMMENT=	MIME-aware, GNOME-based email program
 
-USE_X11=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes

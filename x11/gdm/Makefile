@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2005/04/26 20:20:32 drochner Exp $
+# $NetBSD: Makefile,v 1.78 2005/05/31 11:24:33 dillo Exp $
 #
 
 DISTNAME=	gdm-2.6.0.9
@@ -23,7 +23,6 @@ USE_DIRS+=		gnome2-1.5
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
-USE_X11=		YES
 USE_LIBTOOL=		YES
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gdm

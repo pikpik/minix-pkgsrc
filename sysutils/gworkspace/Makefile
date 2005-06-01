@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.11 2005/04/11 21:47:25 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/05/02 06:35:55 rh Exp $
 #
 
 DISTNAME=	gworkspace-0.7.1
@@ -13,7 +13,6 @@ COMMENT=	GNUstep Workspace manager
 CONFLICTS+=	GWLib-[0-9]*
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/gw/GW/}
-USE_X11=	yes
 
 .include "../../x11/gnustep-back/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/11 21:46:05 tv Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/18 15:54:18 wiz Exp $
 #
 
 DISTNAME=	libggi-2.1.1.src
@@ -15,7 +15,6 @@ COMMENT=	General Graphics Interface library is a flexible drawing library
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_PKGINSTALL=		yes
-USE_X11=		yes
 USE_LIBTOOL=		yes
 
 GNU_CONFIGURE=		yes

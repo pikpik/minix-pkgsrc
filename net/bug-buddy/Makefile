@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/04/11 21:46:45 tv Exp $
+# $NetBSD: Makefile,v 1.32 2005/05/22 20:08:23 jlam Exp $
 #
 
 DISTNAME=		bug-buddy-2.10.0
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake
-USE_X11=		YES
 USE_LIBTOOL=		YES
 
 GCONF2_SCHEMAS=		bug-buddy.schemas

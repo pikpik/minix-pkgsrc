@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/04/11 21:48:07 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/05/22 20:08:47 jlam Exp $
 #
 
 DISTNAME=	Preferences-1.2.0
@@ -14,7 +14,6 @@ COMMENT=	Application for setting preferences for the GNUstep system
 
 NO_CONFIGURE=		YES
 USE_TOOLS+=		gmake
-USE_X11=		YES
 MAKEFILE=		GNUmakefile
 
 .include "../../x11/gnustep-back/buildlink3.mk"

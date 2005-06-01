@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:38:35 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:28:29 agc Exp $
 
 DISTNAME=	xpmicons-1.0
 CATEGORIES=	x11
@@ -20,6 +20,8 @@ WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	icons
 USE_X11BASE=	yes
 NO_BUILD=	yes
+
+.include "../../mk/x11.buildlink3.mk"
 
 post-extract:
 	${FIND} ${WRKSRC} -type d -name .xvpics -exec ${RM} -rf {} \; -prune

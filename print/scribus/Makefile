@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/04/11 21:47:09 tv Exp $
+# $NetBSD: Makefile,v 1.23 2005/05/22 20:08:28 jlam Exp $
 
 DISTNAME=	scribus-1.2.1
 CATEGORIES=	print
@@ -9,7 +9,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.scribus.net/
 COMMENT=	Publishing layout with graphical interface
 
-USE_X11=		# defined
 USE_TOOLS+=		gmake
 PTHREAD_OPTS+=		require
 

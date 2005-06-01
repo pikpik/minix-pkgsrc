@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/05/22 20:07:41 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/05/22 20:28:47 jlam Exp $
 #
 
 DISTNAME=	pcb-${SNAPDATE}
@@ -20,7 +20,6 @@ SNAPDATE=		20050315
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		bison gm4 gmake lex
 TOOLS_DEPMETHOD.gm4=	DEPENDS
-USE_X11=		yes
 
 INFO_FILES=	pcb.info
 

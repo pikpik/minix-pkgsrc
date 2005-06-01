@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/04/26 18:07:49 drochner Exp $
+# $NetBSD: Makefile,v 1.41 2005/05/22 20:08:28 jlam Exp $
 #
 
 DISTNAME=	libgnomeprint-2.10.3
@@ -14,7 +14,6 @@ BUILD_USES_MSGFMT=	YES
 
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	YES
-USE_X11=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 

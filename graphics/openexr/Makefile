@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:07 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:07 jlam Exp $
 
 DISTNAME=	OpenEXR-1.2.2
 PKGNAME=	openexr-1.2.2
@@ -11,7 +11,6 @@ COMMENT=	High dynamic-range (HDR) image file format library and tools
 
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
-USE_X11=		yes # for exrdisplay FLTK application
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	${WRKSRC}/OpenExr.pc.in
 TEST_TARGET=		check

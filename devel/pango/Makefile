@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2005/04/11 21:45:36 tv Exp $
+# $NetBSD: Makefile,v 1.55 2005/05/22 20:07:54 jlam Exp $
 #
 
 DISTNAME=		pango-1.8.1
@@ -16,7 +16,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
-USE_X11=		yes
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
 USE_LIBTOOL=		yes

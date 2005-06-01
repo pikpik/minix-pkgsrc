@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:44:59 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/24 13:58:04 rillig Exp $
 #
 
 DISTNAME=	paranormal-0.2.0
@@ -14,7 +14,6 @@ COMMENT=	Extremely customizable (pseudo-programmable) XMMS plugin
 GNU_CONFIGURE=	yes
 USE_BUILDLINK_ONLY=	YES
 USE_LIBTOOL=	yes
-USE_X11=	yes
 CPPFLAGS+=	-D_POSIX_THREAD_SYSCALL_SOFT=1
 
 # Might be better in textproc/libxml2/buildlink.mk:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:48:05 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:46 jlam Exp $
 #
 
 DISTNAME=	ebuilder-0.56d
@@ -11,7 +11,6 @@ HOMEPAGE=	http://web.inter.nl.net/users/eavdmeer/index.html
 COMMENT=	GUI builder for the Qt library
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
-USE_X11=	yes
 USE_TOOLS+=	gmake
 MAKEFILE=	GNUmakefile
 

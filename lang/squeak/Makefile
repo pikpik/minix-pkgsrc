@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/04/26 07:10:16 fredb Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/11 21:46:16 tv Exp $
 #
 
 DISTNAME=	Squeak-3.6-3
@@ -14,7 +14,6 @@ COMMENT=	Full Smalltalk 80 with portability to UN*X, Mac, and Windows
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_X11=	yes
 
 AUTOCONF_REQD>=	2.57
 AUTOMAKE_REQD=	1.4.6
@@ -55,4 +54,5 @@ CONFIGURE_ARGS+=	--enable-mpg-mmx
 .include "../../mk/automake.mk"
 .include "../../audio/nas/buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

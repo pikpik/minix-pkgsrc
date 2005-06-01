@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/07 16:49:14 agc Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:47 tv Exp $
 #
 
 DISTNAME=		e16menuedit2-0.0.1
@@ -16,7 +16,6 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
-USE_X11=		yes
 
 pre-configure:
 	cd ${WRKSRC};							\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/04/11 21:48:16 tv Exp $
+# $NetBSD: Makefile,v 1.25 2005/05/22 20:08:52 jlam Exp $
 
 DISTNAME=	xplanet-1.1.2
 CATEGORIES=	x11
@@ -9,7 +9,6 @@ HOMEPAGE=	http://xplanet.sourceforge.net/
 COMMENT=	Rotating rendered map of the Earth in X11 root window
 
 USE_TOOLS+=		gmake
-USE_X11=		yes
 GNU_CONFIGURE=		yes
 
 # directory creation should be fixed in the future release of xplanet

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/22 20:07:38 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/31 22:23:50 rillig Exp $
 #
 
 DISTNAME=	MuSE-0.9
@@ -15,7 +15,6 @@ COMMENT=	Multiple Streaming Engine
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
-USE_X11=	yes
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--disable-ncurses

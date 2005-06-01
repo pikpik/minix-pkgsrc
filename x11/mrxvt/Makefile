@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/05/28 06:36:53 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/28 07:09:59 minskim Exp $
 #
 
 DISTNAME=	mrxvt-0.4.1
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
 USE_PKGINSTALL=		YES
-USE_X11=		YES
 USE_TOOLS+=		gmake
 
 CONFIGURE_ARGS+=	--enable-xft
