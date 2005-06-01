@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2004/03/29 05:43:30 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2005/06/01 18:03:23 jlam Exp $
 
 BUILTIN_PKG:=	expat
 
@@ -21,7 +21,7 @@ IS_BUILTIN.expat!=							\
 	${IMAKE} -DUseInstalled -I${X11BASE}/lib/X11/config		\
 		-f ${BUILDLINK_PKGSRCDIR.expat}/builtin-imake.mk	\
 		-s - |							\
-	${MAKE} -f - builtin-test
+	${IMAKE_MAKE} -f - builtin-test
 .    endif
 .  endif
 .endif

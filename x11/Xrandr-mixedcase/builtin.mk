@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2004/03/29 05:43:30 jlam Exp $
+# $NetBSD: builtin.mk,v 1.8 2005/06/01 18:03:27 jlam Exp $
 
 BUILTIN_PKG:=	Xrandr
 
@@ -21,7 +21,7 @@ IS_BUILTIN.Xrandr!=							\
 	${IMAKE} -DUseInstalled -I${X11BASE}/lib/X11/config		\
 		-f ${BUILDLINK_PKGSRCDIR.Xrandr}/builtin-imake.mk	\
 		-s - |							\
-	${MAKE} -f - builtin-test
+	${IMAKE_MAKE} -f - builtin-test
 .    endif
 .  endif
 .endif
