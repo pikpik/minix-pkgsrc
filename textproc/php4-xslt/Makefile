@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/11/05 21:44:44 jdolecek Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:41 tv Exp $
 
 MODNAME=		xslt
 CATEGORIES+=		textproc
@@ -10,19 +10,21 @@ CONFIGURE_ARGS+=	--enable-${MODNAME}
 CONFIGURE_ARGS+=	--with-${MODNAME}-sablot=${BUILDLINK_PREFIX.sablotron}
 CONFIGURE_ARGS+=	--with-expat-dir=${BUILDLINK_PREFIX.expat}
 
+.include "../../converters/libiconv/buildlink3.mk"
+
 # this is necessary so that PHP would find either the libc iconv
 # or use the packaged iconv, as appropriate; using
 # --with-iconv=shared,${BUILDLINK_PREFIX.iconv} assumes libiconv exists
+#
+CHECK_BUILTIN.iconv:=	yes
+.include "../../converters/libiconv/builtin.mk"
+CHECK_BUILTIN.iconv:=	no
 
-.include "../../mk/bsd.prefs.mk"
-.include "../../converters/libiconv/buildlink3.mk"
-.include "../../mk/buildlink3/bsd.builtin.mk"
-
-.if !empty(USE_BUILTIN.iconv:M[nN][oO])
-# use libiconv
-CONFIGURE_ARGS+=	--with-iconv-dir=${BUILDLINK_PREFIX.iconv:Q}
+.if !empty(USE_BUILTIN.iconv:M[nN][oO]) || \
+    !empty(BUILTIN_LIB_FOUND.iconv:M[yY][eE][sS])
+CONFIGURE_ARGS+=	--with-iconv=shared,${BUILDLINK_PREFIX.iconv}
 .else
-CONFIGURE_ARGS+=	--with-iconv-dir
+CONFIGURE_ARGS+=	--with-iconv
 .endif
 
 PLIST_SRC+=		${.CURDIR}/PLIST.extras
