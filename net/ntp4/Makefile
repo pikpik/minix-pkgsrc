@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/03/19 03:03:56 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2005/04/11 21:46:52 tv Exp $
 #
 
 DISTNAME=	ntp-4.2.0
@@ -65,12 +65,9 @@ NO_TIMETRIM=	""
 PLIST_SUBST+=	TIMETRIM=${TIMETRIM} NO_TIMETRIM=${NO_TIMETRIM}
 
 .include "../../security/openssl/buildlink3.mk"
-.include "../../mk/buildlink3/bsd.builtin.mk"
 
-.if !empty(USE_BUILTIN.openssl:M[nN][oO])
 CONFIGURE_ARGS+=	--with-openssl-incdir=${SSLBASE}/include
 CONFIGURE_ARGS+=	--with-openssl-libdir=${SSLBASE}/lib
 CONFIGURE_ARGS+=	--with-crypto=openssl
-.endif
 
 .include "../../mk/bsd.pkg.mk"
