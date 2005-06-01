@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/04/11 21:46:41 tv Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/19 11:00:18 wiz Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
 CATEGORIES=	multimedia
@@ -21,21 +21,21 @@ CONF_FILES+=		${PREFIX}/share/examples/kdemultimedia3/applications-merged/kde-mu
 BUILDLINK_DEPENDS.xine-lib=	xine-lib>=1rc0anb1
 .endif
 
-.if defined(USE_OSS)
-CONFIGURE_ARGS+=	--enable-audio=oss
-.endif
-
 CONFIGURE_ARGS+=	--enable-cdparanoia
 CONFIGURE_ARGS+=	--with-cdparanoia=${BUILDLINK_PREFIX.cdparanoia}
 CONFIGURE_ARGS+=	--with-vorbis=${BUILDLINK_PREFIX.libvorbis}
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.kdemultimedia
-PKG_SUPPORTED_OPTIONS=	gstreamer
+PKG_SUPPORTED_OPTIONS=	gstreamer oss
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mgstreamer)
 .include "../../multimedia/gstreamer/buildlink3.mk"
 .include "../../multimedia/gst-plugins/buildlink3.mk"
+.endif
+
+.if !empty(PKG_OPTIONS:Moss)
+CONFIGURE_ARGS+=	--enable-audio=oss
 .endif
 
 # Ensure we export symbols in the linked shared object.
