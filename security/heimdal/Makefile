@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/05/31 10:01:39 dillo Exp $
+# $NetBSD: Makefile,v 1.38 2005/05/31 11:31:07 dillo Exp $
 
 DISTNAME=	heimdal-0.6.4
 CATEGORIES=	security
@@ -24,6 +24,8 @@ CONFIGURE_ARGS+=	--localstatedir=${HEIMDAL_STATEDIR}
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/krb5
 CONFIGURE_ARGS+=	--without-x
 CONFIGURE_ARGS+=	--without-krb4
+
+CFLAGS.Darwin+= -DBIND_8_COMPAT
 
 .include "../../mk/bsd.prefs.mk"
 
