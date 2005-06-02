@@ -1,6 +1,6 @@
-# $NetBSD: unsupported.mk,v 1.1 2005/05/28 12:16:43 dillo Exp $
+# $NetBSD: group-required.mk,v 1.1 2005/06/02 20:38:51 dillo Exp $
 #
-# This file tests that selecting no option from a requried group
+# This file tests that selecting no option from a required group
 # causes the package build to fail.
 #
 
