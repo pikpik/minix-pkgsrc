@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/05/14 13:33:15 adrianp Exp $
+# $NetBSD: Makefile,v 1.35 2005/05/15 21:39:07 salo Exp $
 
 DISTNAME=	horde-2.2.8
 CATEGORIES=	www
@@ -9,7 +9,9 @@ HOMEPAGE=	http://www.horde.org/
 COMMENT=	PHP application framework
 
 DEPENDS+=	php-gettext>=4.3.3:../../devel/php-gettext
-DEPENDS+=	pear-Log-*:../../sysutils/pear-Log
+DEPENDS+=	pear-Log-[0-9]*:../../sysutils/pear-Log
+DEPENDS+=	pear-DB-[0-9]*:../../databases/pear-DB
+DEPENDS+=	pear-Mail-[0-9]*:../../mail/pear-Mail
 
 CONFLICTS+=	horde-3.*
 
