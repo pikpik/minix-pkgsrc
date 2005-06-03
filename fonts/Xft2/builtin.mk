@@ -1,9 +1,9 @@
-# $NetBSD: builtin.mk,v 1.10 2005/06/03 17:02:36 jlam Exp $
+# $NetBSD: builtin.mk,v 1.11 2005/06/03 19:12:49 jlam Exp $
 
 BUILTIN_PKG:=	Xft2
 
 BUILTIN_FIND_FILES_VAR:=	H_XFT2
-BUILTIN_FIND_FILES.H_XFT2=	${X11BASE}/include/X11/Xft.h
+BUILTIN_FIND_FILES.H_XFT2=	${X11BASE}/include/X11/Xft/Xft.h
 
 .include "../../mk/buildlink3/bsd.builtin.mk"
 
