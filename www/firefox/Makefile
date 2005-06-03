@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2005/04/02 14:38:14 abs Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/14 15:27:10 taya Exp $
 
 MOZILLA=	firefox
 EXTRACT_SUFX=	.tar.bz2
 
 COMMENT=	Lightweight gecko-based web browser
 
-MOZILLA_USE_GTK2=	# defined
+_MOZILLA_USE_GTK2=	# defined
 MOZILLA_USE_XFT=	YES
 
 PKGCONFIG_OVERRIDE+=	build/unix/firefox-gtkmozembed.pc
