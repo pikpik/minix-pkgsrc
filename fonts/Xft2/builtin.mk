@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.7 2005/06/01 18:02:48 jlam Exp $
+# $NetBSD: builtin.mk,v 1.8 2005/06/01 18:33:02 jlam Exp $
 
 BUILTIN_PKG:=	Xft2
 
@@ -18,8 +18,10 @@ PKGSRC_USE_TOOLS+=	imake			# XXX
 IMAKE?=			${X11BASE}/bin/imake	# XXX
 .    if defined(IMAKE) && exists(${IMAKE})
 IS_BUILTIN.Xft2!=							\
+	dir=`cd ${BUILDLINK_PKGSRCDIR.Xft2} && ${PWD_CMD}`;		\
+	cd ${TMPDIR:U/tmp:Q} &&						\
 	${IMAKE} -DUseInstalled -I${X11BASE}/lib/X11/config		\
-		-f ${BUILDLINK_PKGSRCDIR.Xft2}/builtin-imake.mk		\
+		-f $$dir/builtin-imake.mk -C builtin-imake.$$$$.c	\
 		-s - |							\
 	${IMAKE_MAKE} -f - builtin-test
 .    endif
