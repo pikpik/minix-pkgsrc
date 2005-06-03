@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.6 2005/06/01 18:33:02 jlam Exp $
+# $NetBSD: builtin.mk,v 1.7 2005/06/03 16:03:09 jlam Exp $
 
 BUILTIN_PKG:=	Xcomposite
 
@@ -17,7 +17,8 @@ IS_BUILTIN.Xcomposite=	no
 .  if exists(${H_XCOMPOSITE})
 PKGSRC_USE_TOOLS+=	imake			# XXX
 IMAKE?=			${X11BASE}/bin/imake	# XXX
-.    if defined(IMAKE) && exists(${IMAKE})
+_BUILTIN_IMAKE_CMD=	${IMAKE:C/^/_asdf_/1:M_asdf_*:S/^_asdf_//}
+.    if exists(${_BUILTIN_IMAKE_CMD})
 IS_BUILTIN.Xcomposite!=							\
 	dir=`cd ${BUILDLINK_PKGSRCDIR.Xcomposite} && ${PWD_CMD}`;	\
 	cd ${TMPDIR:U/tmp:Q} && 					\

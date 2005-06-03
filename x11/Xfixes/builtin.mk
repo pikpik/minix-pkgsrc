@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.5 2005/06/01 18:33:02 jlam Exp $
+# $NetBSD: builtin.mk,v 1.6 2005/06/03 16:03:09 jlam Exp $
 
 BUILTIN_PKG:=	Xfixes
 
@@ -16,7 +16,8 @@ IS_BUILTIN.Xfixes=	no
 .  if exists(${H_XFIXES})
 PKGSRC_USE_TOOLS+=	imake			# XXX
 IMAKE?=			${X11BASE}/bin/imake	# XXX
-.    if defined(IMAKE) && exists(${IMAKE})
+_BUILTIN_IMAKE_CMD=	${IMAKE:C/^/_asdf_/1:M_asdf_*:S/^_asdf_//}
+.    if exists(${_BUILTIN_IMAKE_CMD})
 IS_BUILTIN.Xfixes!=							\
 	dir=`cd ${BUILDLINK_PKGSRCDIR.Xfixes} && ${PWD_CMD}`;		\
 	cd ${TMPDIR:U/tmp:Q} && 					\
