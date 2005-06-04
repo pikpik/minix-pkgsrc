@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.247 2005/05/18 22:02:17 wiz Exp $
+# $NetBSD: Makefile,v 1.248 2005/05/18 22:39:00 wiz Exp $
 #
 
 COMMENT=	Games
@@ -122,6 +122,7 @@ SUBDIR+=	level9
 SUBDIR+=	lgeneral
 SUBDIR+=	lgeneral-data
 SUBDIR+=	lincity
+SUBDIR+=	liquidwar
 SUBDIR+=	lmarbles
 SUBDIR+=	lpairs
 SUBDIR+=	ltris
