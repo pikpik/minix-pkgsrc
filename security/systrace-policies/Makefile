@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.76 2004/12/10 02:51:46 dogcow Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/24 17:11:45 agc Exp $
 
 DISTNAME=	hairyeyeball-1.1
+PKGREVISION=	1
 CATEGORIES=	security sysutils
 MASTER_SITES=	http://www.blafasel.org/~floh/he/releases/
 EXTRACT_SUFX=	.tgz
@@ -11,7 +12,7 @@ COMMENT=	Systrace policy examples
 
 WRKSRC=		${WRKDIR}/1.1
 
-NO_BUILD=	# defined
+NO_BUILD=	YES
 
 do-install:
 	dir=${PREFIX}/share/examples/systrace-policies;			\
