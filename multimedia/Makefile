@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2005/05/18 22:02:17 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2005/06/03 15:40:30 jmmv Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -71,6 +71,8 @@ SUBDIR+=	realplayer-codecs
 SUBDIR+=	regionset
 SUBDIR+=	smpeg
 SUBDIR+=	smpeg-xmms
+SUBDIR+=	swfdec
+SUBDIR+=	swfdec-gtk2
 SUBDIR+=	totem
 SUBDIR+=	totem-xine
 SUBDIR+=	transcode
