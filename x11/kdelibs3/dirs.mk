@@ -1,8 +1,8 @@
-# $NetBSD: dirs.mk,v 1.4 2005/03/26 03:49:03 markd Exp $
+# $NetBSD: dirs.mk,v 1.5 2005/04/19 10:55:25 wiz Exp $
 #
 
 .if !defined(DIRS_KDE3_MK)
-DIRS_XDG_MK=	#defined
+DIRS_KDE3_MK=	#defined
 
 KDE3_DIRS=	include/dom
 KDE3_DIRS+=	include/kabc
