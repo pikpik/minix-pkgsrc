@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/gcdmaster
-man/man1/gcdmaster.1
-share/applications/gcdmaster.desktop
-share/pixmaps/gcdmaster.png
