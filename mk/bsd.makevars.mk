@@ -1,11 +1,11 @@
-# $NetBSD: bsd.makevars.mk,v 1.1 2005/06/01 03:04:16 jlam Exp $
+# $NetBSD: bsd.makevars.mk,v 1.2 2005/06/01 17:05:19 jlam Exp $
 #
 # This Makefile fragment is included by bsd.prefs.mk to set all of
 # the variables saved through MAKEVARS.  Typical usage is:
 #
 # .include "../../mk/bsd.prefs.mk"
 #
-# .if !define(EXPENSIVE_VAR)
+# .if !defined(EXPENSIVE_VAR)
 # EXPENSIVE_VAR!=	( ... an expensive computation ... )
 # .endif
 # MAKEVARS+=	EXPENSIVE_VAR
