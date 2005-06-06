@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/05/25 22:09:39 gendalia Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/31 11:24:32 dillo Exp $
 
 DISTNAME=	openafs-1.3.82-src
 PKGNAME=	${DISTNAME:C/-src//}
@@ -31,5 +31,6 @@ PLIST_SRC+=		${.CURDIR}/PLIST.pam
 .else
 CONFIGURE_ARGS+=        --disable-pam
 .endif
+PLIST_SRC+=		${.CURDIR}/PLIST
 
 .include "../../mk/bsd.pkg.mk"
