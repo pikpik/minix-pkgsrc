@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/01/16 16:57:55 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/11 21:44:50 tv Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -28,6 +28,7 @@ CFLAGS+=		-DBSD
 LDFLAGS+=		-lcompat
 .endif
 CFLAGS.Interix+=	-DBSD
+CFLAGS.Darwin+=		-DBSD
 
 INSTALLATION_DIRS=	bin man/cat1
 
