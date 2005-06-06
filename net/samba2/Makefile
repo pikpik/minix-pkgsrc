@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2005/06/02 09:48:43 salo Exp $
+# $NetBSD: Makefile,v 1.22 2005/06/03 22:54:44 jlam Exp $
 
 .include "Makefile.common"
-PKGREVISION=		# empty1
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.samba.org/
-PKGREVISION=		1
+PKGREVISION=		2
 COMMENT=		SMB/CIFS protocol server suite for UNIX
 
 USE_PKGINSTALL=		yes
