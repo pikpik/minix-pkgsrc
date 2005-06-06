@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/03 21:13:31 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/23 10:32:16 jmmv Exp $
 #
 
 DISTNAME=	rp8codecs${RP_ARCH}-20050115
@@ -38,6 +38,6 @@ NO_SRC_ON_FTP=	${RESTRICTED}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/RealPlayer8-Codecs
-	${INSTALL_DATA} ${WRKSRC}/* ${PREFIX}/lib/RealPlayer8-Codecs
+	${INSTALL_DATA} ${WRKSRC}/*.so.*.* ${PREFIX}/lib/RealPlayer8-Codecs
 
 .include "../../mk/bsd.pkg.mk"
