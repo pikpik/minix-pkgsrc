@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.559 2005/05/27 15:14:15 bouyer Exp $
+# $NetBSD: Makefile,v 1.560 2005/05/29 09:27:31 abs Exp $
 #
 
 COMMENT=	Networking tools
@@ -228,6 +228,7 @@ SUBDIR+=	openag
 SUBDIR+=	openh323
 SUBDIR+=	openntpd
 SUBDIR+=	openslp
+SUBDIR+=	openvmps
 SUBDIR+=	openvpn
 SUBDIR+=	openvpn-current
 SUBDIR+=	overnet
