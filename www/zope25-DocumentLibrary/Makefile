@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:56:10 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/22 04:14:41 martti Exp $
 
 DISTNAME=	DocumentLibrary-1.0rc1
 PKGREVISION=	1
@@ -15,7 +15,7 @@ DEPENDS+=	zope25-BTreeFolder-[0-9]*:../../www/zope25-BTreeFolder
 ZOPE_COPYPRODUCT= zope-std-copyproduct-short
 
 post-extract:
-	${FIND} -d ${WRKSRC} -name CVS -type d -exec ${RM} -rf {} \;
+	d=`${FIND} ${WRKSRC} -name CVS -type d`; ${RM} -rf $${d}
 
 .include "../../www/zope25/product.mk"
 .include "../../mk/bsd.pkg.mk"
