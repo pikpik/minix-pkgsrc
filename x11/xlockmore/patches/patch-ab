@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2004-11-05 03:44:37.000000000 +0100
+--- configure.orig	2005-02-16 21:19:14.000000000 +0100
 +++ configure
-@@ -8364,7 +8364,7 @@ else
+@@ -7856,7 +7856,7 @@ else
  #define USE_GL 1
  _ACEOF
  
