@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.151 2005/05/22 05:35:33 jlam Exp $
+# $NetBSD: Makefile,v 1.152 2005/06/05 14:20:25 taca Exp $
 
 DISTNAME=	squid-2.5.STABLE10
 PKGNAME=	squid-2.5.10
@@ -63,9 +63,8 @@ CONFIGURE_ARGS+=	--enable-auth=basic,digest,ntlm \
 			--enable-delay-pools \
 			--enable-removal-policies=lru,heap \
 			--enable-poll \
-			--enable-async-io=5 \
 			--enable-underscores \
-			--enable-storeio=${SQUID_BACKEND}
+			--enable-storeio=${SQUID_BACKEND:Q}
 
 #
 # generic helpers
