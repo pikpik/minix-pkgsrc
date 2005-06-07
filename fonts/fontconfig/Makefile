@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/04/12 12:38:40 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.42 2005/05/22 20:07:59 jlam Exp $
 #
 
 DISTNAME=	fontconfig-2.3.1
@@ -32,6 +32,7 @@ CONFIGURE_ARGS+=	--with-expat-lib=${BUILDLINK_PREFIX.expat}/lib
 CONFIGURE_ARGS+=	--with-confdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--enable-docs
+CONFIGURE_ENV+=		HASDOCBOOK=no
 
 .include "../../mk/bsd.prefs.mk"
 
