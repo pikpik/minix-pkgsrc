@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.171 2005/05/18 19:58:45 adrianp Exp $
+# $NetBSD: Makefile,v 1.172 2005/05/18 22:02:17 wiz Exp $
 #
 
 COMMENT=	Databases
@@ -169,5 +169,4 @@ SUBDIR+=	xsqlmenu
 SUBDIR+=	yasql
 SUBDIR+=	zope-mysql
 
-A
 .include "../mk/bsd.pkg.subdir.mk"
