@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2004/10/11 18:02:59 tv Exp $
+# $NetBSD: Makefile,v 1.55 2005/04/11 21:44:52 tv Exp $
 
 DISTNAME=		esound-0.2.35
 PKGREVISION=		1
@@ -19,18 +19,11 @@ PKGCONFIG_OVERRIDE=	esound.pc.in
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
-BUILD_DEFS+=		USE_INET6
-
 EGDIR=			${PREFIX}/share/examples/esound
 CONF_FILES=		${EGDIR}/esd.conf ${PKG_SYSCONFDIR}/esd.conf
 
+.include "options.mk"
 .include "../../mk/bsd.prefs.mk"
-
-.if defined(USE_INET6) && !empty(USE_INET6:M[Yy][Ee][Ss])
-CONFIGURE_ARGS+=	--enable-ipv6
-.else
-CONFIGURE_ARGS+=	--disable-ipv6
-.endif
 
 .if ${OPSYS} == "Interix"
 # no sound output device, but can support a remote esound server
