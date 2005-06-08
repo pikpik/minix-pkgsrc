@@ -1,13 +1,14 @@
 <!--
 	Creates entities for each chapter in the pkgsrc book.
 
-	$NetBSD: chapters.ent,v 1.3 2005/05/10 00:27:43 rillig Exp $
+	$NetBSD: chapters.ent,v 1.4 2005/06/03 12:27:48 jmmv Exp $
 -->
 
 <!-- users-guide -->
 <!ENTITY chap.intro			SYSTEM "introduction.xml">
 <!ENTITY chap.getting			SYSTEM "getting.xml">
 <!ENTITY chap.using			SYSTEM "using.xml">
+<!ENTITY chap.configuring		SYSTEM "configuring.xml">
 <!ENTITY chap.binary			SYSTEM "binary.xml">
 <!ENTITY chap.components		SYSTEM "components.xml">
 <!ENTITY chap.plist			SYSTEM "plist.xml">
