@@ -1,4 +1,4 @@
-# $NetBSD: bsd.options.mk,v 1.38 2005/06/06 13:54:51 dillo Exp $
+# $NetBSD: bsd.options.mk,v 1.39 2005/06/08 16:19:08 dillo Exp $
 #
 # This Makefile fragment provides boilerplate code for standard naming
 # conventions for handling per-package build options.
@@ -11,7 +11,7 @@
 #
 #			PKG_SUPPORTED_OPTIONS=	kerberos ldap ssl
 #
-#	PKG_OPTION_VAR (must be defined)
+#	PKG_OPTIONS_VAR (must be defined)
 #               The variable the user can set to enable or disable
 #		options specifically for this package.
 #
