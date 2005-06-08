@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.560 2005/05/29 09:27:31 abs Exp $
+# $NetBSD: Makefile,v 1.561 2005/06/06 16:12:57 bouyer Exp $
 #
 
 COMMENT=	Networking tools
@@ -333,7 +333,6 @@ SUBDIR+=	ruby-drb
 SUBDIR+=	ruby-icmp
 SUBDIR+=	ruby-xmlrpc4r
 SUBDIR+=	samba
-SUBDIR+=	samba2
 SUBDIR+=	scdp
 SUBDIR+=	scli
 SUBDIR+=	sdig
