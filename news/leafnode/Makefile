@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2005/05/13 15:08:04 kim Exp $
+# $NetBSD: Makefile,v 1.25 2005/05/22 20:08:26 jlam Exp $
 
-DISTNAME=		leafnode-1.11.2.rel
+DISTNAME=		leafnode-1.11.3.rel
 PKGNAME=		${DISTNAME:S/.rel//}
-PKGREVISION=		# empty
 CATEGORIES=		news
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=leafnode/}
 EXTRACT_SUFX=		.tar.bz2
