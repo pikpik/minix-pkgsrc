@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.3 2004/09/14 15:10:09 jlam Exp $
+# $NetBSD: builtin.mk,v 1.4 2005/06/01 18:03:20 jlam Exp $
 
 BUILTIN_PKG:=	heimdal
 
@@ -61,7 +61,7 @@ MAKEVARS+=	BUILTIN_PKG.heimdal
 ###
 .if !defined(USE_BUILTIN.heimdal)
 .  if ${PREFER.heimdal} == "pkgsrc"
-USE_BUILTIN.heimdal=	${IS_BUILTIN.heimdal}
+USE_BUILTIN.heimdal=	no
 .  else
 USE_BUILTIN.heimdal=	${IS_BUILTIN.heimdal}
 .    if defined(BUILTIN_PKG.heimdal) && \
