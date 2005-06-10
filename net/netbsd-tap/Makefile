@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/02/20 21:50:57 cube Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/24 22:39:07 cube Exp $
 
 # This package relies on a correct configuration of pkgsrc WRT NetBSD
 # source directory information, otherwise the build will fail in a non-
@@ -22,7 +22,7 @@
 # aware that it can lead to some confusion of pkgsrc, which is why
 # MAKECONF was set to /dev/null in the first place.
 
-DISTNAME=	netbsd-tap-20050324
+DISTNAME=	netbsd-tap-20050610
 CATEGORIES=	net
 MASTER_SITES=	# empty
 DISTFILES=	# empty
