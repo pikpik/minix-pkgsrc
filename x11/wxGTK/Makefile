@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2005/04/11 21:48:14 tv Exp $
+# $NetBSD: Makefile,v 1.39 2005/06/01 18:03:32 jlam Exp $
 #
 
 DISTNAME=		wxGTK-2.4.2
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=wxwindows/}
 EXTRACT_SUFX=		.tar.bz2
