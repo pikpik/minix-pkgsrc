@@ -1,4 +1,4 @@
-# $NetBSD: bsd.options.mk,v 1.40 2005/06/08 22:36:52 wiz Exp $
+# $NetBSD: bsd.options.mk,v 1.41 2005/06/09 18:44:26 jlam Exp $
 #
 # This Makefile fragment provides boilerplate code for standard naming
 # conventions for handling per-package build options.
@@ -52,8 +52,10 @@
 #		A list of warnings about deprecated variables or
 #		options used, and what to use instead.
 #
-#       At least one of PKG_SUPPORTED_OPTIONS, PKG_OPTIONS_OPTIONAL_GROUPS,
-#	and PKG_OPTIONS_REQUIRED_GROUPS must be defined.
+#       If none of PKG_SUPPORTED_OPTIONS, PKG_OPTIONS_OPTIONAL_GROUPS,
+#	and PKG_OPTIONS_REQUIRED_GROUPS are defined, PKG_OPTIONS is
+#	set to the empty list and the package is otherwise treated as
+#	not using the options framework.
 #		
 #
 # Optionally, the user may define the following variables in /etc/mk.conf:
@@ -141,10 +143,11 @@
 PKG_OPTIONS=		# empty
 
 # Check for variable definitions required before including this file.
-.if !defined(PKG_SUPPORTED_OPTIONS) && !defined(PKG_OPTIONS_OPTIONAL_GROUPS) && !defined(PKG_OPTIONS_REQUIRED_GROUPS)
-PKG_FAIL_REASON+=	"bsd.options.mk: At least one of PKG_SUPPORTED_OPTIONS, PKG_OPTIONS_OPTIONAL_GROUPS, and PKG_OPTIONS_REQUIRED_GROUPS must be defined."
-.elif !defined(PKG_OPTIONS_VAR)
+.if !defined(PKG_OPTIONS_VAR)
 PKG_FAIL_REASON+=	"bsd.options.mk: PKG_OPTIONS_VAR is not defined."
+.elif !defined(PKG_SUPPORTED_OPTIONS) && !defined(PKG_OPTIONS_OPTIONAL_GROUPS) && !defined(PKG_OPTIONS_REQUIRED_GROUPS)
+# no supported options: set PKG_OPTIONS to empty and skip rest of file
+PKG_OPTIONS=	#empty
 .else # process the rest of the file
 
 #
