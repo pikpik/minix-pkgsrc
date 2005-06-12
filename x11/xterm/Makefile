@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/06/01 18:03:33 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/04 17:42:31 wiz Exp $
 
 DISTNAME=	xterm-202
 CATEGORIES=	x11
@@ -29,7 +29,7 @@ pre-build:
 	@${SED} -e 's#@MV@#${MV}#g' \
 	  -e 's#@LOCALBASE@#${LOCALBASE}#g' \
 	  -e 's#@PREFIX@#${PREFIX}#g' \
-	  ${PKGDIR}/INSTALL >${INSTALL_FILE}
+	  ${PKGDIR}/INSTALL.openwin >${INSTALL_FILE}
 
 pre-install:
 	${SH} ${INSTALL_FILE} ${PKGNAME} PRE-INSTALL
