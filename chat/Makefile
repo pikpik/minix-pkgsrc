@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2005/05/18 22:02:17 wiz Exp $
+# $NetBSD: Makefile,v 1.112 2005/06/06 11:35:39 tron Exp $
 #
 
 COMMENT=	Communication programs
@@ -31,7 +31,6 @@ SUBDIR+=	gg2
 SUBDIR+=	gnomeicu
 SUBDIR+=	goofey
 SUBDIR+=	gossip
-SUBDIR+=	gtkyahoo
 SUBDIR+=	gtmess
 SUBDIR+=	i2cb
 SUBDIR+=	i2cbd
@@ -53,7 +52,6 @@ SUBDIR+=	kmess
 SUBDIR+=	libirc
 SUBDIR+=	libotr
 SUBDIR+=	libtlen
-SUBDIR+=	libyahoo
 SUBDIR+=	licq-core
 SUBDIR+=	licq-gui-console
 SUBDIR+=	licq-gui-qt
