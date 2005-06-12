@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD: MESSAGE.NetBSD,v 1.1 2003/12/25 16:28:14 taca Exp $
+
+Opera 8 crashes when used on MP system on NetBSD. A workaround is to
+use single processor kernel.
+
+===========================================================================
