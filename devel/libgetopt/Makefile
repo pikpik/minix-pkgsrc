@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/03/10 21:15:36 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/05/25 11:38:53 wiz Exp $
 #
 
 DISTNAME=	libgetopt-1.4.1
@@ -14,10 +14,6 @@ USE_LIBTOOL=	YES
 WRKSRC=		${WRKDIR}/libgetopt
 
 .include "../../mk/bsd.prefs.mk"
-
-.if exists(/usr/include/getopt.h) && empty(LOWER_OPSYS:Mirix5*)
-PKG_SKIP_REASON= "${PKGNAME} is part of your ${OPSYS} distribution"
-.endif
 
 .if ${OPSYS} == "SunOS"
 MAKEFLAGS+=	NETBSD_COMPATIBLE=YES
