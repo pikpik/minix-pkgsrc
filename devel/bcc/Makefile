@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/02/13 03:04:55 reed Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=		bcc
 PKGNAME=		bcc-95.3.12
@@ -9,6 +9,8 @@ COMMENT=		Bruce Evans' C compiler (with as and ld); can do 16-bit code
 
 NOT_FOR_PLATFORM=	*-*-alpha	# Severe LP64 problems
 
+MAKE_ENV+=		BINOWN=${BINOWN} BINGRP=${BINGRP} BINMODE=${BINMODE} \
+			MANOWN=${MANOWN} MANGRP=${MANGRP} MANMODE=${MANMODE}
 MANCOMPRESSED_IF_MANZ=	yes
 
 do-configure:
