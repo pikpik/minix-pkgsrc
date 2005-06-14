@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/24 17:19:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/06/01 18:03:29 jlam Exp $
 
 .include "../../lang/ocaml/Makefile.common"
 
@@ -23,6 +23,7 @@ PLIST_SRC=		${.CURDIR}/PLIST.opt ${.CURDIR}/PLIST
 .endif
 
 BUILDLINK_DEPMETHOD.ocaml=	full
+BUILDLINK_DEPMETHOD.${BDB_TYPE}=build
 
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"
