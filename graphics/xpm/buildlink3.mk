@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.16 2004/09/16 15:09:01 minskim Exp $
+# $NetBSD: buildlink3.mk,v 1.17 2005/06/01 18:02:58 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XPM_BUILDLINK3_MK:=	${XPM_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xpm
 
 .if !empty(XPM_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.xpm+=		xpm>=3.4k
-BUILDLINK_RECOMMENDED.xpm?=	xpm>=3.4knb2
+BUILDLINK_RECOMMENDED.xpm?=	xpm>=3.4knb4
 BUILDLINK_PKGSRCDIR.xpm?=	../../graphics/xpm
 .endif	# XPM_BUILDLINK3_MK
 
