@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.4 2005/06/11 08:49:33 jmmv Exp $
+# $NetBSD: builtin.mk,v 1.5 2005/06/15 09:41:02 jmmv Exp $
 
 BUILTIN_PKG:=	xextensions
 
@@ -73,6 +73,7 @@ BUILDLINK_FILES.xextensions+=	lib/pkgconfig/fontconfig.pc
 BUILDLINK_TARGETS+=	xextensions-fake-pc
 
 xextensions-fake-pc:
+	@${MKDIR} ${BUILDLINK_DIR}/lib/pkgconfig
 	@{ ${ECHO} "Name: XExtensions"; \
 	   ${ECHO} "Description: Sundry X extension headers"; \
 	   ${ECHO} "Version: 1.0.1"; \
