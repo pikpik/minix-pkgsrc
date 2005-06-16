@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/25 22:17:30 rh Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:36 tv Exp $
 #
 
 DISTNAME=		palmpower-1.0.2
@@ -13,6 +13,7 @@ CPPFLAGS+=		-Dunix
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
+INSTALLATION_DIRS=	bin man/man1
 
 post-build:
 	cd ${WRKSRC}/utils &&						\

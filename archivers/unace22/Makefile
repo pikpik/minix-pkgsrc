@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/06/28 21:45:42 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2004/10/01 10:37:33 grant Exp $
 #
 
 DISTNAME=	linunace22
@@ -32,6 +32,8 @@ DEPENDS+=	suse_compat>=6.1:../../emulators/${SUSE_DIR_PREFIX}_compat
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
 CHECK_SHLIBS=	NO
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/unace ${PREFIX}/bin/unace22

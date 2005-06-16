@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/05 12:58:05 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/27 15:43:32 wiz Exp $
 #
 
 .include "../../devel/SDL/Makefile.common"
@@ -15,6 +15,7 @@ CONFIGURE_ARGS+=	--enable-esd
 SHLIBTOOL_OVERRIDE=	libtool
 
 BUILD_DIRS=		${WRKSRC}/src/audio/esd
+INSTALLATION_DIRS=	lib
 
 do-install:
 	cd ${WRKSRC}/src/audio/esd && ${SHLIBTOOL} --mode=install \

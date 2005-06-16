@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:44 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:47 jlam Exp $
 
 DISTNAME=	minivmac-0.1.7.src
 PKGNAME=	minivmac-0.1.7
@@ -16,6 +16,8 @@ WRKSRC=		${WRKDIR}/minivmac
 SCRIPTS_ENV+=	CC="${CC}"
 
 DOCDIR=		${PREFIX}/share/doc/html/minivmac
+
+INSTALLATION_DIRS=	bin
 
 .include "../../mk/x11.buildlink3.mk"
 

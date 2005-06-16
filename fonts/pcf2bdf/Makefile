@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/06/15 13:35:02 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:00 jlam Exp $
 #
 
 DISTNAME=	pcf2bdf-1.04
@@ -14,6 +14,8 @@ WRKSRC=		${WRKDIR}
 USE_TOOLS+=	gmake
 USE_LANGUAGES=	c++
 MAKEFILE=	Makefile.gcc
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pcf2bdf ${PREFIX}/bin

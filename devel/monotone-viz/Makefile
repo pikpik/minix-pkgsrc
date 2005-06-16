@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/05/31 16:00:58 drochner Exp $
 #
 
 DISTNAME=		monotone-viz-0.9
@@ -13,6 +13,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 BUILD_TARGET=		monotone-viz
 BUILD_ENV+=		BUILDLINK_DIR=${BUILDLINK_DIR}
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${CP} ${WRKSRC}/monotone-viz ${PREFIX}/bin

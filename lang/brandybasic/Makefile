@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/03 15:15:00 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/16 01:15:32 jlam Exp $
 #
 
 DISTNAME=	b116
@@ -17,6 +17,7 @@ EXAMPLEDIR=	${PREFIX}/share/examples/brandy
 BUILD_TARGET=	nodebug
 
 PKGSRC_USE_TOOLS+=	gtar
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}

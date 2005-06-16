@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/05/08 15:10:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/03 15:14:55 wiz Exp $
 
 DISTNAME=	sml-mode-3.9.5
 CATEGORIES=	devel editors
@@ -10,6 +10,8 @@ COMMENT=	Emacs mode for editing Standard ML source code
 BUILD_TARGET=	default
 
 INFO_FILES=	sml-mode.info
+
+INSTALLATION_DIRS=	info
 
 do-install:
 	${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}/sml-mode

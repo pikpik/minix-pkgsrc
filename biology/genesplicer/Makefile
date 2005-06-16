@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:00 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/23 08:56:25 rillig Exp $
 #
 
 DISTNAME=		GeneSplicer
@@ -16,6 +16,7 @@ EXAMPLES=		arabidopsis drosophila malaria pyoelii human rice \
 			training_data_sets/Human
 MAKEFILE=		makefile
 WRKSRC=			${WRKDIR}/GeneSplicer/sources
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/genesplicer ${PREFIX}/bin

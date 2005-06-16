@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/03/05 19:09:22 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:11 tv Exp $
 #
 .include "../../inputmethod/canna/Makefile.common"
 
@@ -7,6 +7,8 @@ CANNA_MODULE=	canuum
 MAINTAINER=	oishi@ims.ac.jp
 
 MAKE_ARGS+=	PREFIX=${PREFIX}
+
+INSTALLATION_DIRS=	man/ja_JP.EUC/man1
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${XMKMF_CMD}; \

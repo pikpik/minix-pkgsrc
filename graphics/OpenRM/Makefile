@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:00 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:54 jlam Exp $
 #
 
 DISTNAME=		openrm-devel-1.5.2
@@ -15,6 +15,8 @@ WRKSRC=			${WRKDIR}/rm152
 BUILD_TARGET=		freebsd docs
 MAKE_ENV+=		AR=${AR} RM=${RM} CP=${CP} LN=${LN} ECHO_CMD=${ECHO} \
 			STRIP_CMD=${ECHO}
+
+INSTALLATION_DIRS=	lib
 
 post-patch:
 	${MV} ${WRKSRC}/doc/sortlist.pl ${WRKSRC}/doc/sortlist.pl.orig && \

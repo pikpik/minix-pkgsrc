@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/18 17:51:19 peter Exp $
 
 DISTNAME=	qstat-2.6
 CATEGORIES=	games
@@ -9,6 +9,8 @@ HOMEPAGE=	http://www.qstat.org/
 COMMENT=	Program that gathers real-time statistics from game servers
 
 NO_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/${PKGBASE}

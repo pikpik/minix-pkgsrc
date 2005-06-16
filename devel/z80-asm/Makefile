@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:39 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:07:55 jlam Exp $
 #
 
 DISTNAME=	z80-asm-1.0
@@ -11,6 +11,8 @@ COMMENT=	Z80 assembly code assembler and disassembler
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
+
+INSTALLATION_DIRS=	bin man/man1 man/man5
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/z80-asm ${PREFIX}/bin/z80-asm

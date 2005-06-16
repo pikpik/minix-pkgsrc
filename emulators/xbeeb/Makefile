@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/20 12:14:41 agc Exp $
+# $NetBSD: Makefile,v 1.13 2004/05/11 11:58:13 dillo Exp $
 #
 
 DISTNAME=	xbeeb-0.3.6
@@ -19,6 +19,8 @@ MAN_PAGE=	${WRKDIR}/xbeeb.1
 XBEEBROOT=	share/xbeeb
 MESSAGE_SUBST+=	XBEEBROOT=${XBEEBROOT}
 PLIST_SUBST+=	XBEEBROOT=${XBEEBROOT}
+
+INSTALLATION_DIRS=	bin man/man1
 
 # xbeeb build starts in the source directory
 do-configure:

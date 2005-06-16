@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/31 20:09:07 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2005/01/03 15:59:12 wiz Exp $
 
 DISTNAME=	mp32ogg-0.11
 PKGREVISION=	2
@@ -22,6 +22,8 @@ EXTRACT_ONLY=	# empty
 NO_BUILD=	yes
 
 REPLACE_PERL=	${WRKSRC}/${DISTNAME}
+
+INSTALLATION_DIRS=	bin
 
 do-extract:
 	${CP} ${_DISTDIR}/${DISTNAME} ${WRKSRC}

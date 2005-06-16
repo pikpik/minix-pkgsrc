@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/16 01:32:22 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:54 jlam Exp $
 
 DISTNAME=	${PKGNAME_NOREV}-5.src.rpm
 PKGNAME=	newt-0.51.6
@@ -20,6 +20,8 @@ USE_LIBTOOL=	yes
 NO_EXPORT_CPP=	yes
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
+
+INSTALLATION_DIRS=	bin include lib
 
 do-extract:
 	${LOCALBASE}/sbin/rpm2pkg -d ${WRKDIR} ${DISTDIR}/${DISTNAME}

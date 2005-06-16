@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/19 09:12:27 agc Exp $
 #
 
 DISTNAME=	enriched2html-1.0
@@ -11,6 +11,8 @@ HOMEPAGE=	# none
 COMMENT=	Converts from text/enriched to HTML
 
 WRKSRC=		${WRKDIR}
+
+INSTALLATION_DIRS=	bin
 
 do-extract:
 	${CP} ${DISTDIR}/enriched2html.c ${WRKSRC}

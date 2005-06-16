@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:14:05 agc Exp $
+# $NetBSD: Makefile,v 1.9 2004/05/11 11:50:00 markd Exp $
 
 DISTNAME=	Ted_da_DK
 PKGNAME=	ted-da-2.16
@@ -17,6 +17,8 @@ USE_X11BASE=	YES
 
 DIST_SUBDIR=	Ted-2.16
 NO_BUILD=	YES
+
+INSTALLATION_DIRS=	share/Ted/ind
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/ind/Danish.ind ${PREFIX}/share/Ted/ind

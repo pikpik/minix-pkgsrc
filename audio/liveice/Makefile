@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/02/21 20:26:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:44:54 tv Exp $
 #
 
 DISTNAME=	liveice
@@ -17,6 +17,8 @@ DEPENDS+=	tk>=8.0:../../x11/tk
 GNU_CONFIGURE=	YES
 DIST_SUBDIR=	liveice-0.20001121
 LIBS+=		${LIBOSSAUDIO}
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/liveice ${PREFIX}/bin

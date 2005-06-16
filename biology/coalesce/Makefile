@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/03 15:14:51 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:00 tv Exp $
 #
 
 DISTNAME=	coalesce1.5b
@@ -17,6 +17,8 @@ DOCDIR=		${PREFIX}/share/doc/coalesce
 EXDIR=		${PREFIX}/share/examples/coalesce
 DOCFILES=	coalesce.doc errors.doc readme
 EXFILES=	bestree infile intree outfile parmfile seedfile
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}

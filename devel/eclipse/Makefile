@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/11 14:02:23 abs Exp $
+# $NetBSD: Makefile,v 1.13 2005/01/19 20:44:11 jschauma Exp $
 #
 
 DISTNAME=	${PKGNAME}
@@ -34,6 +34,8 @@ MASTER_SITES=	ftp://download.eclipse.org/R-3.0-200406251208/
 BUILD_DEPENDS+=	zip>=2.3:../../archivers/zip
 
 PAXDIR=		${WRKDIR}
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKDIR} && ${MAKE_ENV} ${SH} build -os linux -ws motif -arch x86

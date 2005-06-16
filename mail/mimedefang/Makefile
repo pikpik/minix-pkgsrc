@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/04/11 21:46:21 tv Exp $
+# $NetBSD: Makefile,v 1.23 2005/06/05 22:31:34 markd Exp $
 
 DISTNAME=		mimedefang-2.52
 CATEGORIES=		mail
@@ -63,6 +63,7 @@ CONFIGURE_ENV+=		NAI=${PREFIX}/bin/uvscan
 # Doesn't work with pth
 PTHREAD_OPTS+=		require native
 
+INSTALLATION_DIRS=	bin man/man5 man/man7 man/man8
 do-install:
 	${INSTALL_DATA_DIR} ${PKG_SYSCONFDIR}
 	${INSTALL_DATA_DIR} ${EGDIR}

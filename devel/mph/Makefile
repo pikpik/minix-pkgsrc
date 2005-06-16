@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/04 08:44:58 agc Exp $
+# $NetBSD: Makefile,v 1.2 2003/12/24 09:53:48 jmmv Exp $
 #
 
 DISTNAME=	mph-1.2
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.ibiblio.org/pub/Linux/devel/lang/c/
 MAINTAINER=	tech-pkg@NetBSD.org
 #HOMEPAGE=	none
 COMMENT=	Minimal perfect hashing functionality
+
+INSTALLATION_DIRS=	bin share/doc
 
 do-install:
 	for i in emitc mph mphm; do					\

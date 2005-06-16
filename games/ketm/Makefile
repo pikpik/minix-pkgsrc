@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/05/22 20:08:02 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/06/01 18:02:51 jlam Exp $
 #
 
 DISTNAME=	ketm-0.0.6
@@ -14,6 +14,8 @@ COMMENT=	Old-school 2d-scrolling shooter
 BUILD_TARGET=	ketm
 
 USE_TOOLS+=	gmake
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	cd ${WRKSRC} &&							\

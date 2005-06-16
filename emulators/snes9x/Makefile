@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/06/10 18:20:06 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2005/06/11 16:53:18 wiz Exp $
 
 DISTNAME=		s9xs139
 PKGNAME=		snes9x-1.39
@@ -16,6 +16,7 @@ BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 WRKSRC=			${WRKDIR}/release
 USE_TOOLS+=		gmake
 PTHREAD_OPTS=		require
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/snes9x ${PREFIX}/bin

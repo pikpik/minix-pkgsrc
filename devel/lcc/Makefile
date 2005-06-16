@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:31:14 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/21 16:43:25 martti Exp $
 
 DISTNAME=	lcc-4.1
 CATEGORIES=	devel lang
@@ -18,6 +18,8 @@ ONLY_FOR_PLATFORM=	*-*-i386
 
 BUILDDIR=	${WRKSRC}/src
 MAKEFILE=	makefile
+
+INSTALLATION_DIRS=	bin libexec man/man1
 
 post-extract:
 	${CP} ${FILESDIR}/x86bsd.md ${WRKSRC}/src/

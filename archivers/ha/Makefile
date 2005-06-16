@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:44:49 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:37 jlam Exp $
 
 DISTNAME=       ha0999
 PKGNAME=        ha-0.999b
@@ -16,6 +16,8 @@ WRKSRC=		${WRKDIR}
 MAKEFILE=       makefile.nix
 BUILD_TARGET=     ha
 USE_TOOLS+=	gmake
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	cd ${WRKSRC}; ${INSTALL_PROGRAM} ha ${PREFIX}/bin

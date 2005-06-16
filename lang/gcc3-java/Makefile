@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/05/22 17:48:22 abs Exp $
+# $NetBSD: Makefile,v 1.16 2004/07/02 15:40:01 drochner Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-java-${GCC_VERSION}
 COMMENT=	GNU Compiler Collection, v3 - Java compiler
@@ -26,6 +26,7 @@ do-build:
 		${GMAKE} all-target-libjava
 
 do-install:
+	${INSTALL_PROGRAM_DIR} ${GCC_ARCHDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/gcc/jc1 ${GCC_ARCHDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/gcc/gcj ${GCC_ARCHDIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/gcc/jvgenmain ${GCC_ARCHDIR}

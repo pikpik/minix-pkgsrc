@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/08/28 07:50:24 schmonz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:27 tv Exp $
 #
 
 DISTNAME=		rss2email-${RVER}
@@ -31,6 +31,7 @@ SUBST_SED.bin+=		-e 's|@PYTHONBIN@|${PYTHONBIN}|g'
 
 SHAREDIR=		${PREFIX}/share/rss2email
 EGDIR=			${PREFIX}/share/examples/rss2email
+INSTALLATION_DIRS=	bin man/man1
 
 do-extract:
 	${CP} -R ${DISTDIR}/${DIST_SUBDIR} ${WRKSRC}

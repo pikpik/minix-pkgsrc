@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/04 21:05:04 adrianp Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/11 21:45:03 tv Exp $
 
 DISTNAME=	eggdrop1.6.17
 PKGNAME=	eggdrop-1.6.17
@@ -27,6 +27,8 @@ PLIST_SUBST+=		NOIPV6=
 
 EGDIR=		${PREFIX}/share/examples/eggdrop
 CONF_FILES=	${EGDIR}/eggdrop.conf ${PKG_SYSCONFDIR}/eggdrop.conf
+
+INSTALLATION_DIRS=	bin man/man1
 
 post-patch:
 	cd ${WRKSRC} && ${SED} -e 's,modules/,${PREFIX}/lib/eggdrop/,' \

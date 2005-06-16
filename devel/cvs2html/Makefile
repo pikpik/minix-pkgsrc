@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/04/25 04:02:39 snj Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:19 tv Exp $
 #
 
 DISTNAME=	cvs2html-1.82
@@ -12,6 +12,8 @@ COMMENT=	Perl script to turn ``cvs log'' output into HTML
 NO_BUILD=	YES
 USE_PERL5=	# defined
 REPLACE_PERL=	cvs2html
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/cvs2html ${PREFIX}/bin

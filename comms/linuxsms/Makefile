@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:07 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/31 22:42:12 rillig Exp $
 #
 
 DISTNAME=	linuxsms-0.65
@@ -13,6 +13,8 @@ USE_PERL5=	yes
 NO_BUILD=	yes
 
 REPLACE_PERL=	linuxsms
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/linuxsms ${PREFIX}/bin

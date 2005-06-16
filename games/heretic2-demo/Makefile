@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/20 12:15:40 agc Exp $
+# $NetBSD: Makefile,v 1.13 2005/05/16 01:15:31 jlam Exp $
 #
 
 DISTNAME=	heretic2-demo-x86
@@ -27,6 +27,8 @@ WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	lokigames
 LIBDIR=		${PREFIX}/lib/lokigames/${BINNAME}
 SHAREDIR=	${PREFIX}/share/doc/lokigames
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	${SED} -e 's#@@PREFIX@@#${PREFIX}#g' \

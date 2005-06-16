@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/01/05 12:58:04 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:32 wiz Exp $
 #
 
 .include "../../devel/SDL/Makefile.common"
@@ -15,6 +15,7 @@ CONFIGURE_ARGS+=	--enable-arts
 SHLIBTOOL_OVERRIDE=	libtool
 
 BUILD_DIRS=		${WRKSRC}/src/audio/arts
+INSTALLATION_DIRS=	lib
 
 do-install:
 	cd ${WRKSRC}/src/audio/arts && ${SHLIBTOOL} --mode=install \

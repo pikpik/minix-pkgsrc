@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/26 02:27:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/01/03 15:59:12 wiz Exp $
 #
 
 DISTNAME=	oggasm_1.4.0
@@ -20,6 +20,8 @@ USE_PERL5=	yes
 REPLACE_PERL=	oggasm
 
 NO_BUILD=	yes
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/oggasm ${PREFIX}/bin

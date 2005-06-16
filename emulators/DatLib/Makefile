@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/20 15:30:18 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:57 jlam Exp $
 #
 
 DISTNAME=		datlib25
@@ -18,6 +18,7 @@ BUILD_TARGET=		datlib
 EXTRACT_CMD_OPTS.zip=	-Laaqo
 
 MAKE_ENV+=		RANLIB=${RANLIB:Q}
+INSTALLATION_DIRS=	lib
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/DatLib

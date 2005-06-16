@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/20 11:00:18 schmonz Exp $
 #
 
 DISTNAME=		mb2md-3.20.pl
@@ -19,6 +19,7 @@ USE_PERL5=		run
 REPLACE_PERL=		${DISTNAME}
 
 NO_BUILD=		# defined
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin/${PKGBASE}

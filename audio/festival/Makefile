@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/06/01 18:02:37 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2005/06/06 03:08:18 minskim Exp $
 
 DISTNAME=	festival-1.95-beta
 PKGNAME=	festival-1.95beta
@@ -63,6 +63,8 @@ MAKE_ENV+=	PKG_EST_HOME="${SPEECHTOOLS}"				\
 		GCC26_CXX="${CXX}"					\
 		CC="${CC}"						\
 		CXX="${CXX}"
+
+INSTALLATION_DIRS=	bin libexec man/man1
 
 post-patch:
 	@${CP} ${FILESDIR}/top-Makefile ${WRKSRC}/Makefile

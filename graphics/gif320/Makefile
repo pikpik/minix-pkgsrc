@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/03 15:14:59 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/21 20:26:11 hubertf Exp $
 #
 
 DISTNAME=	gif320-3.3
@@ -11,6 +11,8 @@ COMMENT=	GIF file viewer for use with VT-320 terminals
 
 BUILD_TARGET=	# empty
 WRKSRC=		${WRKDIR}/gif320
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gif320 ${PREFIX}/bin

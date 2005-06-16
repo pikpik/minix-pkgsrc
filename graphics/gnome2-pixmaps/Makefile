@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/05/18 16:43:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2005/06/01 18:02:56 jlam Exp $
 #
 
 DISTNAME=		gnome-desktop-2.10.1
@@ -25,6 +25,7 @@ NO_CONFIGURE=		YES
 NO_BUILD=		YES
 
 DSTDIR=			${PREFIX}/share/pixmaps
+INSTALLATION_DIRS=	share/pixmaps
 
 .include "../../mk/x11.buildlink3.mk"
 

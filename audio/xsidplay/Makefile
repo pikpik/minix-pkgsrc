@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/04/11 21:45:00 tv Exp $
+# $NetBSD: Makefile,v 1.31 2005/05/22 20:07:40 jlam Exp $
 #
 
 DISTNAME=	xsidplay-1.6.5.1a
@@ -20,6 +20,8 @@ MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 CONFIGURE_ARGS+=	--with-qt-dir=${QTDIR}
 CONFIGURE_ENV+=		DISABLE_ESD_TEST=yes
 CONFIGURE_ENV+=		DISABLE_ARTSD_TEST=yes
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/src/xsidplay ${PREFIX}/bin

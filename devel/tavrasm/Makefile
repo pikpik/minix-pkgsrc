@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/03/03 13:07:42 dillo Exp $
+# $NetBSD: Makefile,v 1.10 2004/06/12 12:40:21 grant Exp $
 #
 
 DISTNAME=	tavrasm
@@ -19,6 +19,7 @@ MAKEFILE=	makefile
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 ONLY_FOR_COMPILER=	gcc
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/tavrasm

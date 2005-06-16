@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/11/13 21:28:28 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:46:14 tv Exp $
 #
 
 DISTNAME=	jasmin-1.06
@@ -13,6 +13,8 @@ USE_JAVA=	run
 
 WRKSRC=		${WRKDIR}/jasmin
 NO_BUILD=	# defined
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	${MV} ${WRKSRC}/bin/jasmin ${WRKSRC}/bin/jasmin.patch && 	\

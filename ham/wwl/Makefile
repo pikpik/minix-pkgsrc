@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/21 16:52:08 martti Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:18:36 agc Exp $
 #
 
 DISTNAME=	wwl-1.2
@@ -11,6 +11,8 @@ COMMENT=	Calculates distance (qrb)
 
 WRKSRC=		${WRKDIR}/wwl
 NO_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wwl ${PREFIX}/bin

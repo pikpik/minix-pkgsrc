@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/03/22 03:52:06 kristerw Exp $
+# $NetBSD: Makefile,v 1.4 2004/04/23 18:07:06 wiz Exp $
 
 DISTNAME=	cvsup-static-16.1.h
 PKGNAME=	${DISTNAME:C/static/bin/}
@@ -18,6 +18,8 @@ ONLY_FOR_PLATFORM=	NetBSD-1.[5-9]*-i386 NetBSD-[2-9]*-i386
 DIST_SUBDIR=	cvsup-i386-1.6
 
 CONFLICTS=	cvsup-[0-9]* cvsup-gui-[0-9]*
+
+INSTALLATION_DIRS=	bin man/man1 man/man5 sbin
 
 do-install:
 	for i in cvpasswd cvsup ; do \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/10 14:27:20 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:06 jlam Exp $
 #
 
 DISTNAME=		metacam-1.2
@@ -11,6 +11,7 @@ COMMENT=		Digital camera image meta-information reader
 
 USE_TOOLS+=		gmake
 BUILD_TARGET=		default
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/metacam ${PREFIX}/bin

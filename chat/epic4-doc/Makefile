@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/03/26 02:27:35 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/04 09:10:50 wiz Exp $
 #
 
 DISTNAME=	epic4-help-20050315
@@ -22,6 +22,8 @@ COMMENT=	Additional documentation for epic4 package
 DEPENDS+=	epic4>=2.0:../../chat/epic4
 
 NO_BUILD=	YES
+
+INSTALLATION_DIRS=	share/epic/help
 
 do-install:
 	${CP} -R ${WRKDIR}/help/* ${PREFIX}/share/epic/help

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:44:57 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:07:39 jlam Exp $
 #
 
 DISTNAME=	toolame-02l
@@ -16,6 +16,8 @@ TOOLAME_ARCH?=
 
 MAKE_ENV+=	CC="${CC}" CFLAGS="${CFLAGS}" ARCH="${TOOLAME_ARCH}"
 BUILD_TARGET=	toolame
+
+INSTALLATION_DIRS=	bin
 
 TOOLAME_HTMLFILES= changes.html default.html psycho.html readme.html vbr.html
 do-install:

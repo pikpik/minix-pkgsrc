@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/06/02 01:19:41 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2003/07/17 21:38:25 grant Exp $
 #
 
 DISTNAME=	stdsounds2
@@ -13,6 +13,8 @@ COMMENT=	Freeciv sound sets
 DEPENDS=	freeciv-share-[0-9]*:../../games/freeciv-share
 
 NO_BUILD=	YES
+
+INSTALLATION_DIRS=	share/freeciv
 
 do-install:
 	${INSTALL_DATA} ${WRKDIR}/stdsounds.soundspec \

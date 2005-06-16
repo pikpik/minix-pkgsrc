@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/02/02 21:16:34 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:03 tv Exp $
 #
 
 DISTNAME=		rawphoto-200410220928
@@ -13,6 +13,7 @@ COMMENT=		Digicam RAW file importer for GIMP
 
 WRKSRC=		${WRKDIR}/rawphoto-200410220910/src
 BUILD_TARGET=		build
+INSTALLATION_DIRS=	lib/gimp/2.0/plugin-ins
 
 pre-build:
 	${LN} -sf ${LOCALBASE}/bin/gimptool-2.0 \

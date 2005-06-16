@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/01/28 22:03:15 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:43 reed Exp $
 #
 
 DISTNAME=	p4d
@@ -29,6 +29,8 @@ RCD_SCRIPTS=	p4d
 
 P4LOG?=		log
 P4JOURNAL?=	journal
+
+INSTALLATION_DIRS=	sbin
 
 do-install:
 	${INSTALL_PROGRAM} ${DISTDIR}/${DIST_SUBDIR}/${DISTNAME} ${PREFIX}/sbin

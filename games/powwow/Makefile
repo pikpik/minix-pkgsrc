@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/02/04 09:38:43 adam Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:02 jlam Exp $
 
 DISTNAME=	powwow-1.2.5
 CATEGORIES=	games
@@ -10,6 +10,8 @@ COMMENT=	Client to play MUDs
 
 USE_TOOLS+=	gmake
 POWWOW_DIR=	${PREFIX}/share/powwow
+
+INSTALLATION_DIRS=	bin man/man6
 
 do-build:
 	cd ${WRKSRC} && POWWOW_DIR="${POWWOW_DIR}" CFLAGS="${CFLAGS}" ./make_it

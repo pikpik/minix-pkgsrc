@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2004/09/15 07:10:48 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/11 21:46:14 tv Exp $
 
 .include "../../lang/perl5/Makefile.common"
 
@@ -37,6 +37,7 @@ do-build:
 		${MAKE_PROGRAM} -f ${MAKEFILE} DynaLoader.o
 
 do-install:
+	${INSTALL_DATA_DIR} ${PERL5_ARCHLIB}
 	${INSTALL_DATA} ${WRKSRC}/DynaLoader.o ${PERL5_ARCHLIB}/DynaLoader_pic.o
 
 .include "../../lang/perl5/module.mk"

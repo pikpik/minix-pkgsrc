@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:39:08 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/08 10:30:07 uebayasi Exp $
 #
 
 DISTNAME=	sl
@@ -16,6 +16,8 @@ HOMEPAGE=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/
 COMMENT=	Animated SL that runs across the terminal when you type `sl'
 
 BUILD_DEPENDS=	nkf-[0-9]*:../../converters/nkf
+
+INSTALLATION_DIRS=	bin man/ja_JP.EUC/man1
 
 post-build:
 	nkf -e ${WRKSRC}/sl.1 > ${WRKSRC}/sl.1.euc

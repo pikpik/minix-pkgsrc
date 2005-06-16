@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/04/11 21:45:38 tv Exp $
+# $NetBSD: Makefile,v 1.23 2005/05/22 20:07:55 jlam Exp $
 
 DISTNAME=	STLport-4.6
 PKGNAME=	stlport-4.6
@@ -27,6 +27,8 @@ LDFLAGS+=		${PTHREAD_LIBS}
 INCDIR=		${PREFIX}/include/stlport
 LIBDIR=		${PREFIX}/lib
 HTMLDIR=	${PREFIX}/share/doc/html/stlport
+
+INSTALLATION_DIRS=	include lib
 
 pre-install:
 	cd ${WRKSRC}/stlport && ${RM} -rf BC50 config/new_compiler old_hp

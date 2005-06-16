@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:02 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/05/22 20:07:41 jlam Exp $
 #
 
 DISTNAME=	gnucap-0.34
@@ -16,6 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=		gmake
 USE_GNU_READLINE=	YES
+INSTALLATION_DIRS=	bin
 
 do-build:
 	@cd ${WRKSRC}/modelgen && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} pkgsrc

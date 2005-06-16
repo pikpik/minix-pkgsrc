@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2005/04/11 21:46:22 tv Exp $
+# $NetBSD: Makefile,v 1.104 2005/04/15 16:36:39 tron Exp $
 
 DISTNAME=	pine4.62
 PKGNAME=	pine-4.62
@@ -56,6 +56,8 @@ PKG_SUPPORTED_OPTIONS=	ldap
 PINE_LDAPCFLAGS=	LDAPCFLAGS="-DENABLE_LDAP"
 PINE_LDAPLIBS=		LDAPLIBS="-lldap -llber"
 .endif
+
+INSTALLATION_DIRS=	bin man/man1
 
 # Make sure the imap lib that comes with pine isn't
 # used (see http://www.securityfocus.com/advisories/2646)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/01/23 20:41:48 recht Exp $
+# $NetBSD: Makefile,v 1.24 2005/04/11 21:46:28 tv Exp $
 #
 
 DISTNAME=	tmda-1.0.3
@@ -43,6 +43,8 @@ SUBST_CLASSES+=		etc
 SUBST_STAGE.etc=	do-configure
 SUBST_FILES.etc=	bin/tmda-ofmipd TMDA/Auth.py TMDA/Defaults.py
 SUBST_SED.etc=		-e 's|/etc|${PKG_SYSCONFDIR}|g'
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKSRC} && ${PYTHONBIN} ./compileall

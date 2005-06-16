@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/05 10:41:43 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:44 tv Exp $
 #
 
 DISTNAME=		lrmi-0.8
@@ -12,6 +12,7 @@ COMMENT=		Wrapper to the i386 vm86 mode
 
 ONLY_FOR_PLATFORM=	*-*-i386
 MAKEFILE=		Makefile.bsd
+INSTALLATION_DIRS=	bin include lib
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/vbe.h ${PREFIX}/include

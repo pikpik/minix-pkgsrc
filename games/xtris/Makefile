@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/31 21:47:34 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/01 18:02:53 jlam Exp $
 #
 
 DISTNAME=	xtris-1.15
@@ -13,6 +13,8 @@ WRKSRC=		${WRKDIR}/xtris
 USE_X11BASE=	yes
 
 .include "options.mk"
+
+INSTALLATION_DIRS=	bin man/man6
 
 .include "../../mk/x11.buildlink3.mk"
 

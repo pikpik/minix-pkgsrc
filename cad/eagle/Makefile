@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/02/25 01:09:25 xtraeme Exp $
+# $NetBSD: Makefile,v 1.12 2005/05/30 19:48:54 bouyer Exp $
 #
 
 DISTNAME=		eagle-lin-eng-4.14
@@ -28,6 +28,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 NO_BUILD=		YES
+INSTALLATION_DIRS=	bin
 
 do-configure:
 	${SED} -e "s:@@PREFIX@@:${PREFIX}:g" <${FILESDIR}/eagle >${WRKDIR}/eagle

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/28 11:46:49 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:44:52 tv Exp $
 #
 
 DISTNAME=	disc-cover-1.5.4
@@ -14,6 +14,8 @@ DEPENDS+=	p5-Audio-CD>=0.05:../../audio/p5-Audio-CD
 REPLACE_PERL=		disc-cover
 
 DCTMPL=	${PREFIX}/share/disc-cover/templates
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-build:
 	cd ${WRKSRC} && ${BUILDLINK_PREFIX.perl}/bin/pod2man \

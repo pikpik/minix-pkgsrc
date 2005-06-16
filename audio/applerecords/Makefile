@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/28 20:14:51 lha Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/25 22:55:20 rillig Exp $
 #
 
 DISTNAME=		applerecords-0.5
@@ -13,6 +13,8 @@ COMMENT=		Java DAAP client
 NO_BUILD=		yes
 WRKSRC=			${WRKDIR}
 USE_JAVA=		run
+
+INSTALLATION_DIRS=	bin
 
 do-extract:
 	${CP} ${DISTDIR}/${DIST_SUBDIR}/${DISTNAME}.jar ${WRKSRC}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/11/28 15:15:30 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2004/12/03 15:15:01 wiz Exp $
 #
 
 DISTNAME=	${PKGNAME:S/smalleiffel/se/}
@@ -21,6 +21,8 @@ DOCDIR=		${PREFIX}/share/doc/html/smalleiffel
 EGDIR=		${PREFIX}/share/examples/smalleiffel
 LIBDIR=		${PREFIX}/share/smalleiffel
 LIBEXECDIR=	${PREFIX}/libexec/smalleiffel
+
+INSTALLATION_DIRS=	bin
 
 post-extract:
 	${FIND} ${WRKSRC} -type f -print | ${XARGS} ${CHMOD} 644

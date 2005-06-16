@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/06/02 01:20:43 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2003/07/17 21:31:08 grant Exp $
 #
 
 DISTNAME=	idiff-1.0
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.darwinsys.com/freeware/
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.darwinsys.com/freeware/
 COMMENT=	Interactive front-end to diff(1)
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/idiff ${PREFIX}/bin/idiff

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/09/26 03:15:28 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2004/01/20 12:08:40 agc Exp $
 #
 
 DISTNAME=		pdbalign
@@ -11,6 +11,7 @@ HOMEPAGE=               #empty
 COMMENT=		Prediction of Protein Secondary Structure and Active Sites
 
 WRKSRC=			${WRKDIR}
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pdbalign ${PREFIX}/bin

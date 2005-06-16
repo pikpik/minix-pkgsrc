@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/03/21 17:35:53 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:02 tv Exp $
 #
 
 DISTNAME=	simian_12_98
@@ -24,6 +24,7 @@ WRKSRC=		${WRKDIR}/Simian/src
 BUILD_TARGET=	simian
 
 INTERACTIVE_STAGE=	fetch
+INSTALLATION_DIRS=	bin
 
 _FETCH_MESSAGE= \
 	${ECHO} '======================================================='; \

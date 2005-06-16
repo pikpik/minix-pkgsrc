@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/10 13:22:00 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/23 09:04:56 rillig Exp $
 
 DISTNAME=	icbirc-1.8
 CATEGORIES=	chat
@@ -15,6 +15,8 @@ SRCS=		icb.c irc.c icbirc.c
 
 CPPFLAGS.Interix+= -Dsocklen_t=int
 LDFLAGS.SunOS+=	-lsocket -lnsl
+
+INSTALLATION_DIRS=	bin man/man8
 
 do-build:
 .for f in ${SRCS}

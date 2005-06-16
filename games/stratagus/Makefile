@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:57 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:03 jlam Exp $
 #
 
 DISTNAME=		stratagus-2.1-src
@@ -17,6 +17,8 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-flac --with-mad
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/stratagus ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:37 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/25 22:53:55 rillig Exp $
 
 DISTNAME=	upx-1.25-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -12,6 +12,8 @@ COMMENT=	Ultimate packer for executables
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 USE_TOOLS+=	gmake perl
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV}			\

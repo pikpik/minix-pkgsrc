@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/06/02 01:21:13 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/10 05:53:48 cjs Exp $
 #
 
 DISTNAME=	xlreader-0.9.0
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.giffin.org/xlreader.php
 COMMENT=	Converts the cells in a MS Excel file to text
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xlreader ${PREFIX}/bin

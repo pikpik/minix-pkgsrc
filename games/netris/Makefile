@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/22 20:08:02 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/31 21:46:06 wiz Exp $
 #
 
 DISTNAME=		netris-0.52
@@ -19,6 +19,8 @@ HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./Configure
 
 .include "options.mk"
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/netris ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/03 15:14:55 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:54 jlam Exp $
 
 DISTNAME=		ratfor77
 PKGNAME=		ratfor-1.0
@@ -11,6 +11,7 @@ COMMENT=		Preprocessor for the Ratfor dialect of Fortran
 
 BUILD_TARGET=		ratfor77
 USE_TOOLS+=		gmake
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ratfor77 ${PREFIX}/bin/ratfor

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/01/20 12:13:28 agc Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/05 11:11:05 wiz Exp $
 #
 
 DISTNAME=		MemMgr-1.04
@@ -11,6 +11,7 @@ HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Simple memory manager library
 
 WRKSRC=			${WRKDIR}/memmgr-1.04
+INSTALLATION_DIRS=	include lib
 
 post-patch:
 	${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.bak

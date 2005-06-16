@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/17 16:08:39 salo Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/17 16:32:10 kim Exp $
 #
 
 DISTNAME=	postgrey-1.21
@@ -69,6 +69,8 @@ SUBST_SED.postgrey+=	-e 's,/var/spool/postfix/postgrey,${POSTGREY_DBDIR},g'
 SUBST_SED.postgrey+=	-e 's,/etc/postfix,${PKG_SYSCONFDIR},g'
 #
 SUBST_MESSAGE.postgrey=	"Fixing defaults"
+
+INSTALLATION_DIRS=	sbin
 
 do-build:
 

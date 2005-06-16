@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:19:18 agc Exp $
+# $NetBSD: Makefile,v 1.8 2004/12/03 15:15:01 wiz Exp $
 #
 
 DISTNAME=	twelf-1-4
@@ -33,6 +33,8 @@ TWELF_HTMLDOCDIR=	${PREFIX}/share/doc/html/twelf
 TWELF_EXAMPLEDIR=	${PREFIX}/share/examples/twelf
 
 .include "../../lang/smlnj/Makefile.common"
+
+INSTALLATION_DIRS+=	bin
 
 post-extract:
 	${CHMOD} -R +r ${WRKSRC}

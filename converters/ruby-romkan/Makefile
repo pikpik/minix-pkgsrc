@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/06 17:19:05 taca Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:09 tv Exp $
 
 DISTNAME=	ruby-romkan-0.4
 PKGNAME=	${RUBY_PKGPREFIX}-romkan-0.4
@@ -17,6 +17,7 @@ do-build:
 	cd ${WRKSRC}; ${RUBY_RD} romkan.ja.rd > romkan.html.ja
 
 do-install:
+	${INSTALL_DATA_DIR} ${RUBY_SITELIBDIR}
 	${INSTALL_DATA} ${WRKSRC}/romkan.rb ${RUBY_SITELIBDIR}
 	${INSTALL_DATA_DIR} ${RUBY_DOCDIR}/romkan
 	${INSTALL_DATA} ${WRKSRC}/romkan.html ${RUBY_DOCDIR}/romkan

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:43:48 martti Exp $
+# $NetBSD: Makefile,v 1.10 2004/01/20 12:13:30 agc Exp $
 #
 
 DISTNAME=	xxgdb-1.12
@@ -16,6 +16,8 @@ USE_IMAKE=	yes
 .if ${OPSYS} == "SunOS"
 MAKE_ENV+=	CPPFLAGS=
 .endif
+
+INSTALLATION_DIRS=	bin lib/X11/app-defaults man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xxgdb ${PREFIX}/bin

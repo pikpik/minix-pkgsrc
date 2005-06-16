@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/04/01 18:52:11 snj Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:57 tv Exp $
 #
 
 DISTNAME=	tscp181
@@ -18,6 +18,8 @@ NO_BIN_ON_CDROM= ${RESTRICTED}
 NO_SRC_ON_CDROM= ${RESTRICTED}
 NO_BIN_ON_FTP= ${RESTRICTED}
 NO_SRC_ON_FTP= ${RESTRICTED}
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKSRC} ; ${CC} ${CFLAGS} ${LDFLAGS} -o tscp *.c -lcompat

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/11/13 21:28:28 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:25 tv Exp $
 #
 
 DISTNAME=	javadeps-1.1
@@ -12,6 +12,8 @@ COMMENT=	Automatic dependency tracking for Java
 
 WRKSRC=		${WRKDIR}/JavaDeps-1.1
 USE_JAVA=	run
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKSRC}; for file in jdeps; do				\

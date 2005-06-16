@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:17 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/31 22:43:53 rillig Exp $
 #
 
 DISTNAME=	adocman-0.10
@@ -17,6 +17,8 @@ USE_PERL5=	YES
 NO_BUILD=	YES
 
 REPLACE_PERL=	adocman xml_export
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/adocman ${PREFIX}/bin

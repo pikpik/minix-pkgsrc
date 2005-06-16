@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/28 23:31:35 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:20 tv Exp $
 #
 
 DISTNAME=	elf-0.5.3
@@ -15,6 +15,8 @@ GNU_CONFIGURE=	YES
 
 BUILD_DIRS=	${WRKSRC}/src
 BUILD_TARGET=	elf
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/elf ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/12/31 11:40:31 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:37 tv Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -49,6 +49,8 @@ MAINFILEEXT=		solaris
 .if ${OPSYS} == "NetBSD"
 MESSAGE_SRC=		${FILESDIR}/MESSAGE
 .endif
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	${SED} -e "s|@PREFIX@|${PREFIX}|" ${WRKSRC}/pvs > \

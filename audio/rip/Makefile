@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/10/22 15:05:18 snj Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:44:56 tv Exp $
 #
 
 DISTNAME=	rip-1.07
@@ -18,6 +18,8 @@ REPLACE_PERL=	rip
 
 DOCFILES=	BUGS CHANGELOG COPYING FAQ INSTALLING README
 DOCDIR=		${PREFIX}/share/doc/rip
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/rip ${PREFIX}/bin/rip

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/01/26 17:34:57 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:46:03 tv Exp $
 
 DISTNAME=	gdchart0.11.5dev
 PKGNAME=	gdchart-0.11.5
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.fred.net/brv/chart/
 COMMENT=	Easy to use, fast C API for creating charts and graphs
 
 USE_LIBTOOL=		yes
+INSTALLATION_DIRS=	include lib
 
 #TEST_TARGET=	gdc_samp1 gdc_samp2 gdc_pie_samp ft_samp
 

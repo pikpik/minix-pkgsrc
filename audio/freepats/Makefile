@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/12/03 14:07:10 ben Exp $
 #
 
 DISTNAME=	freepats-20040611
@@ -15,6 +15,8 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 MESSAGE_SUBST+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
+
+INSTALLATION_DIRS=	share
 
 post-patch:
 	${ECHO} "dir ${PREFIX}/share/freepats" >${WRKSRC}/timidity.cfg

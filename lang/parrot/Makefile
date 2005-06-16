@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/21 16:54:04 martti Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:01 wiz Exp $
 #
 
 DISTNAME=       parrot-0.0.1
@@ -12,6 +12,8 @@ COMMENT=	Bytecode language possibly to be used by Perl/Python
 USE_PERL5=	# defined
 
 BUILD_TARGET=	test_prog
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${PREFIX}/include/parrot

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/11/18 16:47:59 adam Exp $
+# $NetBSD: Makefile,v 1.18 2005/04/08 11:54:15 adam Exp $
 
 .include "../../lang/tcl-expect/Makefile.common"
 
@@ -15,6 +15,8 @@ CONFIGURE_ARGS+=	--with-tclconfig=${PREFIX}/lib
 CONFIGURE_ARGS+=	--with-tclinclude=${PREFIX}/include/tcl
 CONFIGURE_ARGS+=	--with-tkconfig=${PREFIX}/lib
 CONFIGURE_ARGS+=	--with-tkinclude=${PREFIX}/include/tk
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/expectk ${PREFIX}/bin

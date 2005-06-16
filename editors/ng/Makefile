@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/12/03 15:14:56 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:41 tv Exp $
 
 DISTNAME=	ng-1.4.3
 CATEGORIES=     editors japanese
@@ -22,6 +22,8 @@ USE_CANNA=	YES
 
 BUILD_TARGET=	ng
 MAKEFLAGS+=	USE_CANNA=${USE_CANNA}
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	@(cd ${WRKSRC}; ${LN} -s sys/bsd/Makefile . )

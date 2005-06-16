@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/09/26 18:35:51 agc Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/28 02:47:44 reed Exp $
 #
 
 DISTNAME=		MailScanner-4.30.3-2
@@ -89,6 +89,8 @@ SUBST_SED.systemdefs=	-e s,/bin/rm,${RM},g
 .if empty(SED:M${LOCALBASE}*)
 SUBST_SED.systemdefs=	-e s,/bin/sed,${SED},g
 .endif
+
+INSTALLATION_DIRS=	bin man/man5 man/man8
 
 # get rid of CVS backup files
 post-extract:

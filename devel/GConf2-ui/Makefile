@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/03 15:14:53 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/22 15:55:26 jmmv Exp $
 #
 
 .include "../../devel/GConf2/Makefile.common"
@@ -11,6 +11,8 @@ CONFIGURE_ARGS+=	--enable-gtk
 
 BUILD_DIRS=	${WRKSRC}/gconf
 BUILD_TARGET=	gconfmarshal.h gconfmarshal.c GConfX.h gconf-sanity-check-2
+
+INSTALLATION_DIRS=	libexec
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gconf/.libs/gconf-sanity-check-2 \

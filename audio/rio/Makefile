@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/10/28 16:20:37 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:44:56 tv Exp $
 #
 
 DISTNAME=	rio007
@@ -15,6 +15,8 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386
 
 WRKSRC=		${WRKDIR}/rio107
 MAKEFILE=	makefile
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rio ${PREFIX}/bin

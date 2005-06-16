@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2003/07/21 16:43:24 martti Exp $
+# $NetBSD: Makefile,v 1.15 2004/01/20 12:13:28 agc Exp $
 # KAME Id: Makefile,v 1.6 1999/11/28 14:36:04 itojun Exp
 #
 
@@ -23,6 +23,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 
 INTERACTIVE_STAGE=	fetch
+INSTALLATION_DIRS=	bin man/man1
 
 _FETCH_MESSAGE= \
 	${ECHO} '======================================================='; \

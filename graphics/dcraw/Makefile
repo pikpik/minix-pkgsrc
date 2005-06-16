@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/04/11 21:46:01 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/05/06 04:33:30 markd Exp $
 #
 
 DISTNAME=	dcraw
@@ -14,6 +14,8 @@ COMMENT=	Raw digital camera decoder
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 LIBS+=		-lm -ljpeg
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-extract:
 	(cd ${DISTDIR}/${DIST_SUBDIR} && ${CP} ${DISTFILES} ${WRKSRC})

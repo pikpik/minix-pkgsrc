@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:27 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:12 jlam Exp $
 
 DISTNAME=	sigrot_1.2-1
 PKGNAME=	sigrot-1.2
@@ -14,6 +14,8 @@ USE_TOOLS+=	gmake
 
 DOCDIR=		${PREFIX}/share/doc/sigrot
 EGDIR=		${PREFIX}/share/examples/sigrot
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-build:
 	cd ${WRKSRC} && ${CC} sigrot.c -o sigrot

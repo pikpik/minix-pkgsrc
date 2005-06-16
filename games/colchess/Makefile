@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/05/02 20:17:05 snj Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:48 tv Exp $
 
 DISTNAME=		colchess
 PKGNAME=		${DISTNAME}-7.0
@@ -17,6 +17,7 @@ WRKSRC=			${WRKDIR}/ColChess
 
 DATADIR=		${PREFIX}/share/colchess
 DOCDIR=			${PREFIX}/share/doc/colchess
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/colchess ${PREFIX}/bin
