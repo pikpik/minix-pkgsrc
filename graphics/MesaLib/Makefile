@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2004/10/31 00:53:10 minskim Exp $
+# $NetBSD: Makefile,v 1.39 2005/06/05 15:39:06 minskim Exp $
 
 PKGNAME=	MesaLib-${MESA_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	Graphics library similar to SGI's OpenGL
 
 .include "../Mesa/Makefile.common"
@@ -18,6 +18,8 @@ CONFIGURE_ARGS+=	--disable-sparc
 .if !empty(CC_VERSION:Mgcc-3*)
 BUILDLINK_TRANSFORM+=   rm:-O[23]
 .endif
+
+.include "../../mk/pthread.buildlink3.mk"
 
 pre-build:
 	cd ${WRKSRC} && ${RM} -fr src/glu src/glut progs
