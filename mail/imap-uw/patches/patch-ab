@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/osdep/unix/Makefile.orig	2005-03-06 08:53:53.000000000 -0800
 +++ src/osdep/unix/Makefile	2005-03-06 08:56:06.000000000 -0800
 @@ -29,9 +29,6 @@
