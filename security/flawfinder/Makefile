@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/02/14 14:21:17 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/06/23 16:19:41 snj Exp $
 
 DISTNAME=	flawfinder-1.26
 CATEGORIES=	security devel
@@ -10,6 +10,7 @@ COMMENT=	Python program to find flaws in C/C++ programs
 
 NO_BUILD=	# defined
 PYTHON_PATCH_SCRIPTS= flawfinder
+INSTALATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/flawfinder ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/01/26 12:06:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/30 12:44:09 wiz Exp $
 
 .include "Makefile.common"
 
@@ -23,6 +23,8 @@ DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=	${MP_FONTS}
 
 .include "../../mk/bsd.prefs.mk"
+
+INSTALLATION_DIRS=	man/man1
 
 do-install:
 	${INSTALL_MAN} ${WRKSRC}/DOCS/man/en/mplayer.1 ${PREFIX}/man/man1

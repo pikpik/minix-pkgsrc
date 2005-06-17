@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:54:22 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:26:50 agc Exp $
 #
 
 DISTNAME=	ispell-sc-ca
@@ -14,6 +14,8 @@ COMMENT=	Catalan dictionary for interactive spelling checker
 DEPENDS+=	ispell-base>=3.1.20:../../textproc/ispell-base
 
 WRKSRC=		${WRKDIR}
+
+INSTALLATION_DIRS=	lib
 
 post-extract:
 	( cd ${WRKSRC} 							\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:47:02 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:26 jlam Exp $
 #
 
 DISTNAME=	xmftp-1.0.4
@@ -13,6 +13,8 @@ COMMENT=	X/Motif FTP client
 WRKSRC=		${WRKDIR}/xmftp/source
 USE_X11BASE=	yes
 USE_TOOLS+=	gmake
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmftp ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/27 01:45:22 tv Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:30 tv Exp $
 #
 
 DISTNAME=		user-20040426
@@ -17,6 +17,8 @@ NO_CHECKSUM=		yes
 NO_CONFIGURE=		yes
 NO_TOOLS=		yes
 NO_BUILD=		yes
+
+INSTALLATION_DIRS=	sbin
 
 do-install:
 .for f in useradd userdel groupadd groupdel

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/12/30 17:27:31 cjep Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:21:02 agc Exp $
 #
 
 DISTNAME=	ulinuxgnu
@@ -15,6 +15,8 @@ MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}
 
 SCRIPTS_ENV+=   SED=${SED}
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	cd ${WRKSRC};							\

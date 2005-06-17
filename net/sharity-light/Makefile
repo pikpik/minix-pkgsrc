@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2001/03/19 12:27:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.3 2004/12/05 13:56:11 wiz Exp $
 #
 
 DISTNAME=	Sharity-Light.1.2
@@ -13,6 +13,8 @@ COMMENT=	Userland smbfs -- SMB to NFS protocol converter
 
 # avoid picking up a bad value from a users environment
 MAKE_ENV+=	"ARCH=	"
+
+INSTALLATION_DIRS=	man/man8 sbin
 
 post-extract:
 	${MKDIR} ${WRKDIR}/unshlight

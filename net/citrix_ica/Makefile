@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/02/20 12:58:09 grant Exp $
+# $NetBSD: Makefile,v 1.20 2005/02/21 21:24:06 veego Exp $
 #
 
 # A default so lintpkgsrc is happy, overridden below
@@ -56,6 +56,8 @@ BINDIR=         ${PREFIX}/bin
 PKG_FAIL_REASON= "${PKGNAME} requires SVR4 compability - see compat_svr4(8)"
 .  endif
 .endif
+
+INSTALLATION_DIRS=	bin
 
 PATCHDIR=${WRKDIR}/.patches
 pre-patch:

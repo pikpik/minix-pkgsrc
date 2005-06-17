@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/03/22 01:07:07 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2005/06/01 18:03:20 jlam Exp $
 
 .include "Makefile.common"
 
@@ -8,6 +8,8 @@ COMMENT=	Password sniffer (webspy)
 DEPENDS+=	dsniff-nox11-[0-9]*:../../security/dsniff-nox11
 
 BUILD_TARGET=	libmissing.a webspy
+
+INSTALLATION_DIRS+=	sbin man/man8
 
 .include "../../mk/x11.buildlink3.mk"
 

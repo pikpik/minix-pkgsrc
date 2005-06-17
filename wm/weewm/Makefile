@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:49 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/01 18:03:26 jlam Exp $
 #
 
 DISTNAME=	weewm-0.0.2
@@ -13,6 +13,8 @@ COMMENT=	Fast and ultra light windowmanager with total keyboard control
 
 EXAMPLESDIR=	${PREFIX}/share/examples/weewm
 DOCDIR=		${PREFIX}/share/doc/weewm
+
+INSTALLATION_DIRS=	bin man/man1
 
 .include "../../mk/x11.buildlink3.mk"
 

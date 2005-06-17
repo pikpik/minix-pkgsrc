@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:01:27 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:21:02 agc Exp $
 
 DISTNAME=	sch-20010224
 CATEGORIES=	misc
@@ -11,6 +11,8 @@ LICENSE=	no-commercial-use
 
 WRKSRC=		${WRKDIR}/sch/build
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	bin
 
 # manpages are not complete, don't confuse people
 do-install:

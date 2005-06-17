@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/27 00:53:10 heinz Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/09 18:39:01 wiz Exp $
 #
 
 DISTNAME=		troffcvt-1.04
@@ -13,6 +13,7 @@ COMMENT=		Troff/groff to RTF/HTML/TEXT converter
 USE_PERL5=		yes
 
 INSTALL_TARGET=		install install.man
+INSTALLATION_DIRS=	bin man/man1
 
 post-patch:
 	for i in `${FIND} ${WRKSRC} -name Makefile -print`; do \

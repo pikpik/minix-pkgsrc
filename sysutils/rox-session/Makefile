@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/04/11 21:47:29 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/01 18:03:22 jlam Exp $
 #
 
 DISTNAME=	ROX-Session-0.1.14
@@ -18,6 +18,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/ROX-Session/src
 DIST_SUBDIR=	rox
 
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	libexec/rox share/rox
 
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/28 22:01:22 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:47:20 tv Exp $
 
 DISTNAME=	tinyca-0.6.8
 CATEGORIES=	security
@@ -30,6 +30,8 @@ SUBST_SED.script=	-e "s|./lib|${CADIR}|g" \
 			-e "s|/usr/bin/zip|${PREFIX}/bin/zip|g" \
 			-e "s|./templates|${CADIR}/templates|g"
 SUBST_MESSAGE.script=	"Fixing hardcoded paths."
+
+INSTALLATION_DIRS=	bin
 
 .include "../../security/openssl/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/20 21:34:17 salo Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/28 23:32:43 jlam Exp $
 #
 
 DISTNAME=	pcal-4.7
@@ -22,6 +22,8 @@ MAKE_ENV+=	PAPERSIZE="${PAPERSIZE}"
 MAKE_ENV+=	CC="${CC}" HOST_CC="${HOST_CC}"
 
 BUILD_TARGET=	pcal
+
+INSTALLATION_DIRS=	bin man/man1
 
 pre-install:
 	${MV} ${WRKSRC}/pcal.cgi ${WRKSRC}/pcal.cgi.tmp

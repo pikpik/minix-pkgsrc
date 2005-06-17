@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/07/17 22:53:31 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/05/07 11:54:35 wiz Exp $
 
 DISTNAME=		raidmgt-3.31
 PKGNAME=		dptutil-3.31
@@ -13,6 +13,8 @@ COMMENT=		DPT/Adaptec Storage Management software (dptutil)
 # Should work for 32-bit PowerPC and SPARC, but untested.  64-bit platforms
 # may have problems.
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
+
+INSTALLATION_DIRS=	bni
 
 post-patch:
 	${SED}	-e "s,@SBINDIR@,${PREFIX}/sbin,g"			\

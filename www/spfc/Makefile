@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/24 15:23:47 grant Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/22 20:08:46 jlam Exp $
 
 DISTNAME=	spfc-0.2.0
 CATEGORIES=	www java
@@ -19,6 +19,7 @@ NO_CONFIGURE=
 MAKE_ENV+=	CLASSPATH=${CLASSPATH}:${PREFIX}/lib/jsdk.jar
 
 do-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/lib/java
 	${INSTALL_DATA} ${WRKSRC}/../bin/spfc.jar ${PREFIX}/lib/java
 	${INSTALL_PROGRAM_DIR} ${PREFIX}/share/doc/java/spfc
 	cd ${WRKSRC}/../docs && ${PAX} -rw -pp . ${PREFIX}/share/doc/java/spfc

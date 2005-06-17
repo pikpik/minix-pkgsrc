@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:27:54 martti Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:26:50 agc Exp $
 #
 
 DISTNAME=	untex-1.3
@@ -9,6 +9,8 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Remove LaTeX commands
 
 WRKSRC=		${WRKDIR}
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/untex ${PREFIX}/bin

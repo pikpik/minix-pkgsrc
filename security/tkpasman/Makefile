@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/03 15:15:09 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:47:20 tv Exp $
 #
 
 DISTNAME=	TkPasMan-2.2a
@@ -32,6 +32,7 @@ CONFIG_SUBST+=		OPENSSL=""
 .endif
 
 BUILD_TARGET=		tkpasman
+INSTALLATION_DIRS=	bin
 
 post-extract:
 	${MV} ${WRKSRC}/config ${WRKSRC}/config.in

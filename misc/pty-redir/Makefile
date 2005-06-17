@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2001/02/17 18:09:20 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/12/28 14:21:38 xtraeme Exp $
 
 DISTNAME=	pty-redir-0.1
 CATEGORIES=	misc
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_BACKUP} \
 
 MAINTAINER=	dustin@spy.net
 COMMENT=	Attach a program's stdio to a pty
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pty-redir ${PREFIX}/bin

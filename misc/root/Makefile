@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/05/22 20:08:17 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/01 18:03:05 jlam Exp $
 
 DISTNAME=		root_v2.23.08.source
 PKGNAME=		root-2.23
@@ -21,6 +21,8 @@ MAKE_ENV=		LD_LIBRARY_PATH=${WRKDIR}/lib ROOTSYS=${WRKDIR}
 .if (${MACHINE_ARCH} == "arm")
 BROKEN= 	Compilation stops due to internal compiler error
 .endif
+
+INSTALLATION_DIRS=	bin
 
 do-configure:
 	${CP} ${FILESDIR}/Makefile.netbsd ${WRKDIR}/src

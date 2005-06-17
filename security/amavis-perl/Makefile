@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/07/29 00:59:53 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:10 tv Exp $
 
 DISTNAME=	amavisd-${VERSION}
 PKGNAME=	amavis-perl-${VERSION}
@@ -71,6 +71,7 @@ CONFIGURE_ARGS+=--enable-smtp --with-smtp-port=${SMTPPORT}
 PLIST_SRC+=	${PKGDIR}/PLIST.nomilter
 .endif
 
+INSTALLATION_DIRS=	sbin man/man1 man/man5 man/man8
 
 post-build:
 	${SED} -e "s|/etc/amavisd.conf|${PREFIX}/etc/amavis/amavisd.conf|" \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:22:20 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/22 23:37:34 reed Exp $
 #
 
 DISTNAME=	fnet.pl-1.4
@@ -12,6 +12,8 @@ COMMENT=	Minimal FNET-like ICB client written in Perl
 
 WRKSRC=		${WRKDIR}/fnet-1.4
 USE_PERL5=	# defined
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	${SED} -e 's,/usr/local,${PREFIX},g' ${WRKSRC}/fnet.pl >${WRKSRC}/pfnet

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/02/01 18:24:34 adrianp Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:44 tv Exp $
 #
 
 DISTNAME=		arping-2.05
@@ -31,6 +31,8 @@ BUILD_FOR=		macosx
 .if !empty(PKG_OPTIONS:Marping1)
 BUILD_TARGET=		arping1 ${BUILD_FOR}
 .endif
+
+INSTALLATION_DIRS=	bin man/man8
 
 .include "../../net/libpcap/buildlink3.mk"
 

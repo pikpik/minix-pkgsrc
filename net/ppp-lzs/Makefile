@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/15 19:12:46 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/15 19:13:39 jlam Exp $
 
 DISTNAME=	ppp-lzs-1.2
 CATEGORIES=	net
@@ -20,6 +20,8 @@ MESSAGE_SUBST+= PREFIX="${PREFIX}"
 PKGSRC_USE_TOOLS+=	patch
 
 BUILDLINK_PASSTHRU_DIRS=	${NETBSDSRCDIR}/lib/libpcap
+
+INSTALLATION_DIRS=	lkm man/cat8 man/man8 sbin
 
 pre-extract:
 .if !exists(${NETBSDSRCDIR}/usr.sbin/pppd/Makefile)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 22:51:53 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:06 wiz Exp $
 #
 
 DISTNAME=	tac_plus.F4.0.4.alpha
@@ -17,6 +17,8 @@ BUILD_TARGET=	tac_plus
 .if ${OPSYS} == "SunOS"
 MAKE_FLAGS+=	OS=-DSOLARIS OSLIBS="-lsocket -lnsl"
 .endif
+
+INSTALLATION_DIRS=	man/man8 sbin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tac_plus ${PREFIX}/sbin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/09/23 13:23:25 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/15 22:02:28 jlam Exp $
 #
 
 DISTNAME=	tdir-1.58
@@ -13,6 +13,7 @@ LICENSE=	tdir-license
 
 PKGSRC_USE_TOOLS+=	gunzip
 PYTHON_PATCH_SCRIPTS=	tdir
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tdir ${PREFIX}/bin/tdir

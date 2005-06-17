@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 17:24:32 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:26:16 agc Exp $
 #
 
 DISTNAME=	Wrappers-1.0.2
@@ -19,6 +19,8 @@ DIST_SUBDIR=	rox
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+
+INSTALLATION_DIRS=	share/rox
 
 do-install:
 	${RM} -f ${WRKSRC}/Emacs/AppRun.orig

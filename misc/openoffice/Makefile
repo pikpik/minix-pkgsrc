@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2005/05/22 20:08:17 jlam Exp $
+# $NetBSD: Makefile,v 1.65 2005/06/01 18:03:05 jlam Exp $
 
 DISTNAME=		openoffice-1.1.4
 PKGREVISION=		2
@@ -55,6 +55,8 @@ PLIST_SRC+=             ${PKGDIR}/PLIST.${OPSYS}
 MESSAGE_SUBST+=		OPENOFFICE_VERSION=${OPENOFFICE_VERSION}
 
 OPENOFFICE_VERSION=	OpenOffice.org1.1.4
+
+INSTALLATION_DIRS=	bin
 
 post-extract:
 # bring the two files from GPC into place

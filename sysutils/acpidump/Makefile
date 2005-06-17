@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/03 15:15:09 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:31 jlam Exp $
 #
 
 DISTNAME=	pacpidump
@@ -12,6 +12,8 @@ COMMENT=	Portable ACPI table dumper
 
 USE_TOOLS+=	gmake
 BUILD_TARGET=	# null
+
+INSTALLATION_DIRS=	bin man/man8
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/acpidump ${PREFIX}/bin

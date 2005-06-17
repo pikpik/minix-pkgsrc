@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/01/27 00:53:10 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2004/03/26 02:27:49 wiz Exp $
 #
 
 DISTNAME=	sitescooper-2.2.8
@@ -15,6 +15,8 @@ DEPENDS+=	pilotmgr-[0-9]*:../../comms/pilotmgr
 
 USE_PERL5=	# defined
 NO_BUILD=	# defined
+
+INSTALLATION_DIRS=	bin etc man/man1
 
 do-configure:
 .for file in sitescooper rss-to-site subs-to-site

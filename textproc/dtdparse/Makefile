@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/25 19:11:58 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:34 tv Exp $
 #
 
 DISTNAME=	dtdparse-2.0beta6
@@ -21,6 +21,8 @@ XMLDIR=		${PREFIX}/share/xml/dtdparse
 XML_CATALOGS=	${XMLDIR}/catalog
 SCRIPTS=	dtdflatten dtdformat dtdparse \
 		tools/contentmodel tools/dtdstats tools/elements
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	cd ${WRKSRC}; \

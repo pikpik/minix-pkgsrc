@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/04/25 03:19:39 snj Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/28 22:36:44 reed Exp $
 
 DISTNAME=	foomatic-gswrapper
 PKGNAME=	foomatic-gswrapper-1.2
@@ -26,6 +26,8 @@ USE_PERL5=		# defined
 NO_BUILD=		# defined
 
 REPLACE_PERL=	${DISTNAME}
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin

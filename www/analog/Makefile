@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2004/12/19 22:00:10 tron Exp $
+# $NetBSD: Makefile,v 1.47 2004/12/19 22:06:31 tron Exp $
 
 DISTNAME=       analog-6.0
 CATEGORIES=	www
@@ -23,6 +23,8 @@ CONF_FILES=	${EGDIR}/analog.cfg ${PKG_SYSCONFDIR}/analog.cfg
 .if !exists(/usr/include/glob.h)
 CFLAGS+=	-DNOGLOB
 .endif
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDISTDIR}/analog ${PREFIX}/bin

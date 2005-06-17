@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:21:02 agc Exp $
+# $NetBSD: Makefile,v 1.15 2005/03/24 21:12:57 wiz Exp $
 
 DISTNAME=		jive-1.1
 CATEGORIES=		misc
@@ -8,6 +8,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 COMMENT=		Filter that converts English text to Jive
 
 WRKSRC=			${WRKDIR}/jive
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/jive ${PREFIX}/bin

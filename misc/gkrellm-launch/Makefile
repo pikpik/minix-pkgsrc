@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:04 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:34 tv Exp $
 #
 
 DISTNAME=	gkrellmlaunch-0.5
@@ -12,6 +12,8 @@ HOMEPAGE=	http://gkrellmlaunch.sourceforge.net/
 COMMENT=	GKrellM plugin to allow quick launch of applications
 
 BUILD_TARGET=	gkrellmlaunch.so
+
+INSTALLATION_DIRS=	lib/gkrellm2/plugins
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/gkrellmlaunch.so ${PREFIX}/lib/gkrellm2/plugins

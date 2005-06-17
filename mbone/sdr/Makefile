@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/04/05 10:34:19 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2005/05/22 20:08:14 jlam Exp $
 #
 
 DISTNAME=	sdr-3.0
@@ -31,6 +31,8 @@ SYSDIR= solaris
 .else
 SYSDIR= freebsd
 .endif
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	${MV} ${WRKSRC}/../src/sdr.tcl ${WRKSRC}/../src/sdr.tcl.in &&	\

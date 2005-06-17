@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2003/07/17 22:51:45 grant Exp $
+# $NetBSD: Makefile,v 1.20 2004/01/20 12:22:20 agc Exp $
 
 DISTNAME=	rtspd-src-1.0.0.0
 PKGNAME=	ra-rtsp-proxy-1.0.0.0
@@ -24,6 +24,8 @@ WRKSRC=		${WRKDIR}/rtspd-1.0.0.0a
 .if ${OPSYS} == "SunOS"
 MAKE_ENV+=	LOCAL_LIBS="-lsocket -lnsl"
 .endif
+
+INSTALLATION_DIRS=	etc/rc.d man/man8 sbin
 
 post-build:
 	${SED} s#@PREFIX@#${PREFIX}#g <${FILESDIR}/rtspd.sh >${WRKDIR}/rtspd.sh

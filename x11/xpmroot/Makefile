@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2004/10/01 09:15:28 martti Exp $
+# $NetBSD: Makefile,v 1.45 2005/04/11 21:48:16 tv Exp $
 #
 
 DISTNAME=       fvwm-${PKG_VERSION}
@@ -17,6 +17,8 @@ GNU_CONFIGURE=	YES
 
 MAKE_ENV+=	VERSION=${PKG_VERSION}
 CONFIGURE_ARGS+=	--without-extras --disable-dmalloc --without-gnome
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-build:
 	@(cd ${WRKSRC}/libs && \

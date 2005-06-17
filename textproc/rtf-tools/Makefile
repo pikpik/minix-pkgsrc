@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/27 18:22:35 ben Exp $
+# $NetBSD: Makefile,v 1.17 2005/03/31 01:05:22 reed Exp $
 #
 
 DISTNAME=		RTF-1.10
@@ -14,6 +14,7 @@ COMMENT=		RTF to troff/groff/text converter
 
 WRKSRC=			${WRKDIR}/rtf
 INSTALL_TARGET=		install install.man
+INSTALLATION_DIRS=	bin man/manl
 
 post-patch:
 	for i in `${FIND} ${WRKSRC} -name Makefile -print`; do \

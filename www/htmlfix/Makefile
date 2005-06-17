@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2002/06/19 10:43:57 abs Exp $
+# $NetBSD: Makefile,v 1.5 2003/07/17 22:55:36 grant Exp $
 #
 
 DISTNAME=		htmlfix-1.03
@@ -11,6 +11,7 @@ COMMENT=		Fix latin1 to html entities and/or line endings
 DEPENDS+=	p5-HTML-FixEntities-[0-9]*:../../www/p5-HTML-FixEntities
 
 USE_PERL5=		YES
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/htmlfix.pl ${PREFIX}/bin/htmlfix

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/06/28 17:28:57 abs Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:11 tv Exp $
 #
 
 DISTNAME=		gnu-crypto-2.0.1-bin
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.gnu.org/software/gnu-crypto/
 COMMENT=		GPL implementation of the Java Crypto Extensions
 
 USE_JAVA2=		run
+INSTALLATION_DIRS=	info
 
 do-build: # do nothing
 

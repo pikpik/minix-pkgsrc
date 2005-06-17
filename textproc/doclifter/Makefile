@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/03/23 21:47:52 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:47:34 tv Exp $
 #
 
 DISTNAME=	doclifter-2.1
@@ -18,6 +18,8 @@ SUBST_CLASSES+=		bin-path
 SUBST_STAGE.bin-path=	pre-configure
 SUBST_FILES.bin-path=	manlifter
 SUBST_SED.bin-path=	-e 's,@@BIN_PATH@@,${PREFIX}/bin,g'
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/doclifter ${PREFIX}/bin

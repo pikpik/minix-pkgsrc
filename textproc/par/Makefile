@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/12/03 15:15:11 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/03/24 21:13:02 wiz Exp $
 
 DISTNAME=	Par152
 PKGNAME=	par-1.52
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.nicemice.net/par/
 COMMENT=	Paragraph reformatter, vaguely similar to fmt, but better
 
 BUILD_TARGET=
+INSTALLATION_DIRS=	bin man/man1
 
 do-configure:
 	(cd ${WRKSRC}; ${CP} protoMakefile Makefile)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:48 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/01 18:03:29 jlam Exp $
 #
 
 DISTNAME=	keylaunch-1.3.0
@@ -11,6 +11,8 @@ COMMENT=	X utility for binding commands to a hot key
 
 WRKSRC=		${WRKDIR}/keylaunch
 USE_TOOLS+=	gmake
+
+INSTALLATION_DIRS=	bin
 
 .include "../../mk/x11.buildlink3.mk"
 

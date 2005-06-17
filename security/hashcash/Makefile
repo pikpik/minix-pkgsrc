@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/29 04:21:33 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:12 tv Exp $
 #
 
 DISTNAME=		hashcash-1.13
@@ -14,6 +14,7 @@ COMMENT=		Hash collision based postage stamp
 .include "../../mk/bsd.prefs.mk"
 
 CFLAGS+=		-Dunix
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hashcash ${PREFIX}/bin/

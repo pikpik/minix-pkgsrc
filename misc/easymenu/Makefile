@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/31 16:38:48 kristerw Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:34 tv Exp $
 #
 
 DISTNAME=		easymenu-0.7.2
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.mrEriksson.net/dev/
 COMMENT=		Software used to generate menu systems
 
 NO_BUILD=		# defined
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/easymenu ${PREFIX}/bin/

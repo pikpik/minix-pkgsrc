@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.13 2004/05/07 11:54:35 wiz Exp $
 
 DISTNAME=		sm_linux_v314_install
 PKGNAME=		storage-manager-3.14
@@ -37,6 +37,8 @@ _FETCH_MESSAGE= \
 	${ECHO} "  into ${DISTDIR} from"; \
 	${ECHO} "  ${DOWNLOAD}."; \
 	${ECHO} "================================================================="
+
+INSTALLATION_DIRS=	etc/rc.d sbin
 
 do-extract:
 	${MKDIR} ${WRKSRC}

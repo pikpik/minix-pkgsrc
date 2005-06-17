@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/01/28 23:50:00 heinz Exp $
+# $NetBSD: Makefile,v 1.22 2004/03/26 02:27:58 wiz Exp $
 #
 
 DISTNAME=	Zope-2.2.2-src
@@ -22,6 +22,8 @@ PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 ZOPEDIR=	${PREFIX}/lib/zope
 
 PYTHON_VERSIONS_ACCEPTED= 20 # XXX for now
+
+INSTALLATION_DIRS=	sbin
 
 do-configure:
 	${SED} -e "s,@PREFIX@,${PREFIX}," \

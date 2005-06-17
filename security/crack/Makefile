@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/23 23:02:30 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/24 21:13:00 wiz Exp $
 
 DISTNAME=	crack5.0
 PKGNAME=	crack-5.0
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.crypticide.org/users/alecm/
 COMMENT=	The "Sensible" Unix Password Cracker
 
 WRKSRC=		${WRKDIR}/c50a
+
+INSTALLATION_DIRS=	sbin
 
 pre-configure:
 	@${ECHO} "XLIB+= -lcrypt" >> ${WRKSRC}/src/util/Makefile

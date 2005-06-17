@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/03/23 10:20:10 rxg Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:29 tv Exp $
 #
 
 DISTNAME=	rox-lib-1.9.17
@@ -19,6 +19,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 PYTHON_PATCH_SCRIPTS=	AppRun MakeDist
+INSTALLATION_DIRS=	share/rox
 
 post-patch:
 	${SED} -e s:"/usr/local/lib":"${PREFIX}/share/rox":g	\

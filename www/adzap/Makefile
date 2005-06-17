@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2005/01/18 02:51:48 simonb Exp $
+# $NetBSD: Makefile,v 1.48 2005/05/04 12:35:54 simonb Exp $
 #
 
 DISTNAME=	adzap-20050504
@@ -14,6 +14,8 @@ COMMENT=	Filter out animated ad banners from web pages
 WRKSRC=		${WRKDIR}/adzap
 NO_BUILD=	# defined
 USE_PERL5=	# defined
+
+INSTALLATION_DIRS=	libexec
 
 do-configure:
 .for FILE in scripts/squid_redirect scripts/wrapzap

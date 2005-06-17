@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/04 18:42:03 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:50 tv Exp $
 #
 
 PKGNAME=		ap-php-${PHP_BASE_VERS}
@@ -12,6 +12,8 @@ SHLIBTOOL_OVERRIDE=	libtool
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
+
+INSTALLATION_DIRS=	lib/httpd
 
 do-install:
 	if [ -f ${WRKSRC}/.libs/libphp${PKG_PHP_VERSION}.so ]; then	\

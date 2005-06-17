@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.75 2005/05/16 01:15:34 jlam Exp $
+# $NetBSD: Makefile.common,v 1.76 2005/05/21 12:42:35 wiz Exp $
 #
 # Common include file for communicator and navigator packages
 
@@ -163,6 +163,8 @@ DEPENDS+=	suse_x11>=6.4:../../emulators/${SUSE_DIR_PREFIX}_x11
 
 .if ${BINNAME} != "netscape"
 NO_BUILD=	YES
+
+INSTALLATION_DIRS=	bin
 
 # powerpc is "unusual"
 .  if ${MACHINE_ARCH} == "powerpc"

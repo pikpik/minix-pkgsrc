@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/01/15 19:58:07 tron Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/19 13:36:11 wiz Exp $
 
 DISTNAME=	connect
 PKGNAME=	${DISTNAME}-1.83
@@ -22,6 +22,8 @@ LIBS=	-lsocket -lnsl
 .else
 LIBS=
 .endif
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	${MKDIR} ${WRKSRC}

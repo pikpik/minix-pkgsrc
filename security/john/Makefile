@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/06/26 19:17:33 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/12/03 15:15:08 wiz Exp $
 #
 
 DISTNAME=	john-1.6
@@ -32,6 +32,8 @@ BUILD_TARGET=	solaris-x86-any
 .else
 BUILD_TARGET=	generic
 .endif
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/../run/john ${PREFIX}/bin

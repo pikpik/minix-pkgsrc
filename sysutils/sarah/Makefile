@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/06/02 01:16:53 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:50 grant Exp $
 
 DISTNAME=	sarah-0.7b
 CATEGORIES=	sysutils
@@ -17,6 +17,8 @@ NO_BIN_ON_CDROM=${RESTRICTED}
 USE_PERL5=	YES
 REPLACE_PERL=	sarah
 NO_BUILD=	YES
+
+INSTALLATION_DIRS=	bin man/man1
 
 post-patch:
 	${SED}	-e "s,/usr/local,${PREFIX},g"				\

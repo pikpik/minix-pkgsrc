@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/25 20:03:53 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/01/28 16:19:17 veego Exp $
 #
 
 .include "../../net/bittornado/Makefile.common"
@@ -15,6 +15,8 @@ NO_BUILD=	# defined
 
 PYTHON_PATCH_SCRIPTS=	btcompletedirgui.py btdownloadgui.py
 PYTHON_PATCH_SCRIPTS+=	btmaketorrentgui.py
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/btcompletedirgui.py ${PREFIX}/bin

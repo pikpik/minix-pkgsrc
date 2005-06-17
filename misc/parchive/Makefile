@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/09/19 23:08:25 dent Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/20 12:21:02 agc Exp $
 #
 
 DISTNAME=	par-v1.1
@@ -12,6 +12,8 @@ HOMEPAGE=	http://parchive.sourceforge.net/
 COMMENT=	Create or use "Parity Volume Set" (PAR and Pnn) files
 
 WRKSRC=		${WRKDIR}/par-cmdline
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/par ${PREFIX}/bin/parchive

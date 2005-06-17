@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/10/03 00:12:57 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:31 tv Exp $
 #
 
 DISTNAME=	statist-1.0.1
@@ -14,6 +14,8 @@ DEPENDS+=	gnuplot-[0-9]*:../../graphics/gnuplot
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_LIBTOOL=	YES
+
+INSTALLATION_DIRS=	bin lib
 
 do-install:
 	cd ${WRKSRC} &&							\

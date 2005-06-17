@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/08 04:31:16 mrg Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:46 tv Exp $
 #
 
 DISTNAME=		flodo-v4
@@ -16,6 +16,8 @@ BUILDLINK_DEPENDS.libpcap+=	libpcap>=0.8
 
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.libpcap}/include
 LDFLAGS+=		-L${BUILDLINK_PREFIX.libpcap}/lib
+
+INSTALLATION_DIRS=	man/man8 sbin
 
 do-build:
 	cd ${WRKSRC} && ${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS} -o flodo flodo.c hash.c local_mac.c -lpcap

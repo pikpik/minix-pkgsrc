@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:18:36 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:47:18 grant Exp $
 
 DISTNAME=		admesh-0.95
 CATEGORIES=		math
@@ -9,6 +9,7 @@ HOMEPAGE=		http://www.varlog.com/products/admesh/
 COMMENT=		Program for processing triangulated solid meshes
 
 GNU_CONFIGURE=		yes
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/admesh ${PREFIX}/bin

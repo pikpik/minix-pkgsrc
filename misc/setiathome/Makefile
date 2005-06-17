@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/11/12 14:41:47 sketch Exp $
+# $NetBSD: Makefile,v 1.14 2004/12/28 02:47:46 reed Exp $
 #
 
 DISTNAME=       ${PKGNAME_NOREV}
@@ -59,6 +59,8 @@ NO_BUILD=	yes
 USE_PKGINSTALL=	yes
 
 RCD_SCRIPTS=	setiathome
+
+INSTALLATION_DIRS=	bin man/cat1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/setiathome ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/01/20 12:20:05 agc Exp $
+# $NetBSD: Makefile,v 1.15 2004/12/03 15:15:03 wiz Exp $
 
 DISTNAME=	tochnog-20010429
 CATEGORIES=	math
@@ -16,6 +16,8 @@ MAKEFILE=	makefile
 BUILD_TARGET=	netbsd
 
 MAKE_ENV+=	MACHINE_ARCH=${MACHINE_ARCH}
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	@${RM} -f ${WRKDIR}/tochnog/test/*.orig ${WRKDIR}/tochnog/tools/*.bat

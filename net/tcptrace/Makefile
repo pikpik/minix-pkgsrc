@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/12/03 15:15:06 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/04/11 21:47:00 tv Exp $
 #
 
 DISTNAME=	tcptrace-6.6.1
@@ -17,6 +17,8 @@ BUILD_TARGET=	tcptrace
 DOCFILES=	COPYRIGHT FAQ README README.tput_graphs
 
 LDFLAGS.SunOS+=	-lm
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tcptrace ${PREFIX}/bin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/03/24 21:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2005/04/11 21:46:51 tv Exp $
 
 DISTNAME=		ncftp-2.4.3
 PKGREVISION=	1
@@ -27,6 +27,8 @@ CONFIGURE_ARGS+= 	--enable-socks5
 .    include "../../net/socks5/buildlink3.mk"
 .  endif
 .endif
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ncftp ${PREFIX}/bin/ncftp2

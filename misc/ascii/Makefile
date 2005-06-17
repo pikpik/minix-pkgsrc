@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:48:40 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/03 15:15:03 wiz Exp $
 #
 
 DISTNAME=	ascii-3.0
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.tuxedo.org/~esr/software.html
 COMMENT=	ASCII character table program
 
 BUILD_TARGET= ascii
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ascii ${PREFIX}/bin

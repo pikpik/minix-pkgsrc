@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/09/01 17:00:24 reed Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/03 15:15:04 wiz Exp $
 #
 
 DISTNAME=       mmv_1.01b.orig
@@ -18,6 +18,8 @@ BUILD_TARGET=	mmv
 .if ${OPSYS} == "SunOS"
 CFLAGS+=	-DIS_SYSV
 .endif
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mmv ${PREFIX}/bin/mmv

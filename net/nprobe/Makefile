@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:52 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/22 20:08:25 jlam Exp $
 
 DISTNAME=	nProbe-source-1.3.1
 PKGREVISION=	2
@@ -17,6 +17,7 @@ USE_TOOLS+=	gmake
 BUILD_TARGET=	nprobe
 
 INTERACTIVE_STAGE=	fetch
+INSTALLATION_DIRS=	sbin
 
 # Uncomment this to make a demo version of nprobe.
 #CFLAGS+=	-DMAX_DEMO_FLOWS=1000 -DDEMO_MODE

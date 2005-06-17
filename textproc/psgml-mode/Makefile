@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/03 15:15:11 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/05 05:59:56 hrs Exp $
 
 DISTNAME=		psgml-1.3.2
 PKGNAME=		${DISTNAME:S/-/-mode-/}
@@ -20,6 +20,8 @@ SRCS=	psgml-api.el psgml-charent.el psgml-debug.el psgml-dtd.el	\
 	psgml-lucid.el psgml-maint.el psgml-other.el psgml-parse.el	\
 	psgml-sysdep.el	psgml.el
 INFO_FILES=	psgml-api.info psgml.info
+
+INSTALLATION_DIRS+=	info
 
 do-install:
 	${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}/psgml-mode

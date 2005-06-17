@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/10/03 00:13:00 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:46:39 tv Exp $
 
 DISTNAME=	reed-5.4
 PKGREVISION=	2
@@ -17,6 +17,8 @@ REPLACE_PERL=		breed fix_bookmarks.pl wrap
 
 # wgetnstr()
 INCOMPAT_CURSES=	NetBSD-1.5-* NetBSD-1.5.*-* NetBSD-1.5[A-U]-*
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/reed ${PREFIX}/bin

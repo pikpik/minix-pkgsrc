@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/06/10 23:01:39 markd Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 01:32:25 markd Exp $
 
 DISTNAME=	mDNSResponder-107.1
 PKGREVISION=	1
@@ -43,6 +43,8 @@ PLIST_SUBST+=	SO_SUFFIX=${SO_SUFFIX}
 BINARY=		mDNSClientPosix mDNSIdentify mDNSNetMonitor \
 		mDNSProxyResponderPosix mDNSResponderPosix
 SBINARY=	mdnsd dnsextd
+
+INSTALLATION_DIRS=	bin include lib sbin
 
 do-install:
 	for i in ${BINARY}; do \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:21:02 agc Exp $
+# $NetBSD: Makefile,v 1.9 2005/02/21 20:26:12 hubertf Exp $
 #
 
 DISTNAME=	xjdic24
@@ -24,6 +24,8 @@ DEPENDS+=	kanjidic-[0-9]*:../../misc/kanjidic
 WRKSRC=		${WRKDIR}
 MESSAGE_SUBST+=	PREFIX=${PREFIX}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 		cd ${WRKSRC} ; \

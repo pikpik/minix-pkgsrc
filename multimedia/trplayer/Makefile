@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/02 18:06:52 jdolecek Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/03 03:37:51 fredb Exp $
 #
 
 DISTNAME=	trplayer-1.2.0
@@ -34,6 +34,8 @@ EMULDIR=	${LOCALBASE}/emul/linux
 EXTRACT_ONLY=	# nothing
 INFO_FILES=	trplayer.info
 PLIST_SRC=	${WRKDIR}/PLIST.rpm
+
+INSTALLATION_DIRS=	${INFO_DIR}
 
 do-install:
 	${CP} ${PKGDIR}/PLIST ${PLIST_SRC};				\

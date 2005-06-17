@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:28:28 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/23 15:09:06 heinz Exp $
 
 DISTNAME=		xdm3d-1.0
 CATEGORIES=		x11
@@ -13,6 +13,7 @@ NO_INSTALL_MANPAGES=	yes
 USE_IMAKE=		yes
 
 PLIST_SRC=		${WRKDIR}/PLIST-src
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xdm ${PREFIX}/bin/xdm3d

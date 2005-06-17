@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/12/15 17:02:22 agc Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:22:19 agc Exp $
 #
 
 DISTNAME=	ipw-3.3a
@@ -11,6 +11,8 @@ HOMEPAGE=	http://mjhb.marina-del-rey.ca.us/ipw/
 COMMENT= 	"whois" replacement that automatically queries several databases
 
 WRKSRC=		${WRKDIR}
+
+INSTALLATION_DIRS=	bin share/doc
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ipw ${PREFIX}/bin

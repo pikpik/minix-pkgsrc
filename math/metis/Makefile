@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:47:47 grant Exp $
+# $NetBSD: Makefile,v 1.7 2004/12/03 15:15:03 wiz Exp $
 
 DISTNAME=		metis-4.0
 CATEGORIES=		math
@@ -9,6 +9,7 @@ HOMEPAGE=		http://www-users.cs.umn.edu/~karypis/metis/
 COMMENT=		Unstructured graph partitioning and sparse matrix ordering system
 
 BUILD_TARGET=		default
+INSTALLATION_DIRS=	bin lib
 
 do-install:
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} graphchk kmetis mesh2dual 	\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:16:06 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:55:35 grant Exp $
 
 DISTNAME=	haskell-cgi-20001206
 CATEGORIES=	www
@@ -16,6 +16,8 @@ NO_BUILD= 	#defined
 
 HUGS_PREFIX_DEFAULT=	${LOCALBASE}
 EVAL_PREFIX+=	HUGS_PREFIX=hugs
+
+INSTALLATION_DIRS=	share/hugs/lib
 
 do-configure:
 	@for i in ${WRKSRC}/*; do					  \

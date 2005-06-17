@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/04/11 21:48:02 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/05/22 20:08:46 jlam Exp $
 
 DISTNAME=		swiftsurf-1.2.5
 PKGREVISION=		2
@@ -18,6 +18,8 @@ SWIFT=		swift.opt
 BUILD_TARGET=	byte
 SWIFT=		swift
 .endif
+
+INSTALLATION_DIRS=	bin
 
 do-configure:
 	for f in ${WRKSRC}/src/conf.ml; do \

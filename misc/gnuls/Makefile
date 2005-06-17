@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/11/05 16:20:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/11 21:46:35 tv Exp $
 #
 
 DISTNAME=	coreutils-5.2.1
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		YES
 PLIST_SUBST+=		GNU_PROGRAM_PREFIX="${GNU_PROGRAM_PREFIX}"
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
-INSTALL_DIRS=		bin man/man1
+INSTALLATION_DIRS=	bin man/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/dircolors \

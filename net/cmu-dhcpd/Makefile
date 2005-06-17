@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:51:03 grant Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:22:19 agc Exp $
 #
 
 DISTNAME=	CMU-dhcp-3.3.7+PU-9
@@ -13,6 +13,8 @@ COMMENT=	CMU BootP and DHCP server, plus Princeton patches
 
 WRKSRC=		${WRKDIR}/CMU-dhcp-3.3.7+PU-9
 GNU_CONFIGURE=	YES
+
+INSTALLATION_DIRS=	man/man5 man/man8 sbin
 
 do-install:
 	${INSTALL_DATA_DIR} /var/db/bindings

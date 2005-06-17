@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:43 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/01 18:03:23 jlam Exp $
 
 DISTNAME=	ptimetracker-1.7.3
 PKGREVISION=	# empty
@@ -12,6 +12,7 @@ COMMENT=	Keep track of the time spent on projects
 # USE_GNOME=	gnomehack gnomeprefix libgtkhtml libgnomeui
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
+INSTALLATION_DIRS=	bin man/man1
 
 do-configure:
 	cd ${WRKSRC} && ${QTDIR}/bin/qmake -o Makefile ptt.pro

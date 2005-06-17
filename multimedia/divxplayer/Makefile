@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/05/02 23:02:06 reed Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/01 18:03:06 jlam Exp $
 
 DISTNAME=	divx-player-installer
 PKGNAME=	divxplayer-0.2.0
@@ -23,6 +23,8 @@ DIST_SUBDIR=	${PKGNAME}
 
 BINARY=		divxPlayer.bin
 DATADIR=	${PREFIX}/share/divxplayer
+
+INSTALLATION_DIRS=	bin
 
 post-patch:
 	${SED} -e "s|%%DATADIR%%|${DATADIR}|" ${FILESDIR}/launcher.sh \
