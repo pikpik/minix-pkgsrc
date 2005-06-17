@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/09/04 12:47:37 abs Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/24 21:12:58 wiz Exp $
 
 DISTNAME=	fping-2.4b2_to
 PKGNAME=	fping-2.4b2
@@ -13,6 +13,6 @@ COMMENT=	Quickly ping many hosts w/o flooding the network
 GNU_CONFIGURE=	YES
 
 post-install:
-	${CHMOD} 4555 ${LOCALBASE}/sbin/fping
+	${CHMOD} 4555 ${PREFIX}/sbin/fping
 
 .include "../../mk/bsd.pkg.mk"

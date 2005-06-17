@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/05/16 01:15:30 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:38 jlam Exp $
 
 DISTNAME=	gqmpeg-skins-20030712
 PKGREVISION=	3
@@ -91,7 +91,7 @@ INSTALLATION_DIRS=	share/gqmpeg/skins
 do-install:
 		for i in ${DISTFILES} ; do \
 			${ECHO} unpacking $$i ; \
-			${CAT} ${DISTDIR}/${DIST_SUBDIR}/$$i | ( cd ${LOCALBASE}/share/gqmpeg/skins ; \
+			${CAT} ${DISTDIR}/${DIST_SUBDIR}/$$i | ( cd ${PREFIX}/share/gqmpeg/skins ; \
 				    ${GTAR} -zxf - ) ; \
 		done
 		${FIND} ${PREFIX}/share/gqmpeg/skins -type d -print | \

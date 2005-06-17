@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/05/22 20:08:09 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/29 11:12:01 shannonjr Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -163,8 +163,8 @@ do-install:
 post-install:
 	@${SED} ${FILES_SUBST_SED} ${FILESDIR}/ada > ${WRKDIR}/ada
 	${ECHO} '"$$@"' >> ${WRKDIR}/ada
-	${INSTALL_DATA} ${WRKDIR}/ada ${LOCALBASE}/bin/ada
-	${CHMOD} +x ${WRKDIR}/ada ${LOCALBASE}/bin/ada
+	${INSTALL_DATA} ${WRKDIR}/ada ${PREFIX}/bin/ada
+	${CHMOD} +x ${WRKDIR}/ada ${PREFIX}/bin/ada
 	${CP} -f ${PKGDIR}/PLIST ${PLIST_SRC}
 	${FIND} ${GCC_PREFIX} \( -type f -o -type l \) -print	\
 		| ${SORT} | ${SED} -e "s,${PREFIX}/,,g"	\

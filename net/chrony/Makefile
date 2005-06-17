@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:46:45 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/05/22 20:08:23 jlam Exp $
 
 DISTNAME=	chrony-1.20
 PKGREVISION=	1
@@ -14,7 +14,7 @@ USE_TOOLS+=		gmake
 HAS_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
-EGDIR=			${LOCALBASE}/share/examples/chrony
+EGDIR=			${PREFIX}/share/examples/chrony
 EGFILES=		chrony.conf.example chrony.keys.example
 RCD_SCRIPTS=		chronyd
 

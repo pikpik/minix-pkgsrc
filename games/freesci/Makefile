@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/03/27 15:43:35 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:50 tv Exp $
 #
 
 DISTNAME=		freesci-0.3.4c
@@ -18,8 +18,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-ggi --without-directfb
 
 post-install:
-	${INSTALL_DATA_DIR} ${LOCALBASE}/share/examples/freesci
-	${INSTALL_DATA} ${FILESDIR}/config ${LOCALBASE}/share/examples/freesci
+	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/freesci
+	${INSTALL_DATA} ${FILESDIR}/config ${PREFIX}/share/examples/freesci
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"

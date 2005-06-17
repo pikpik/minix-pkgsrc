@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/03/22 23:33:33 reed Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:46:46 tv Exp $
 
 DISTNAME=	firewalk-5.0
 CATEGORIES=	net security
@@ -15,7 +15,7 @@ CONFIGURE_ENV+=	CFLAGS=-I${LOCALBASE}/include
 
 BUILDLINK_DEPENDS.libnet+=	libnet-1.1.*
 
-MAKE_ENV+=	FIREWALK_LOC=${LOCALBASE}
+MAKE_ENV+=	FIREWALK_LOC=${PREFIX}
 
 .include "../../devel/libnet11/buildlink3.mk"
 .include "../../net/libdnet/buildlink3.mk"

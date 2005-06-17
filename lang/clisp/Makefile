@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/04/11 21:46:12 tv Exp $
+# $NetBSD: Makefile,v 1.42 2005/05/02 17:42:06 drochner Exp $
 
 DISTNAME=		clisp-2.33.2
 CATEGORIES=		lang
@@ -32,7 +32,7 @@ do-configure:
 	(cd .. ; ${SETENV} ${CONFIGURE_ENV} \
 		${CONFIGURE_SCRIPT} --host=${MACHINE_GNU_PLATFORM} \
 			--prefix=${PREFIX}) && \
-	./makemake --prefix=${LOCALBASE} --with-readline --with-gettext \
+	./makemake --prefix=${PREFIX} --with-readline --with-gettext \
 		--with-dynamic-ffi --fsstnd=netbsd >Makefile
 
 pre-build:
