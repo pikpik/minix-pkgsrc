@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/04/11 21:46:33 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/05/31 14:01:14 markd Exp $
 
 DISTNAME=	kde-3.4.1
 CATEGORIES=	meta-pkgs x11 kde
@@ -9,6 +9,7 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	"meta-package" for the KDE integrated X11 desktop
 
+DEPENDS+=	kdelibs-3.4.1{,nb[0-9]*}:../../misc/kdelibs3
 DEPENDS+=	kdeaccessibility-3.4.1{,nb[0-9]*}:../../misc/kdeaccessibility3
 DEPENDS+=	kdeartwork-3.4.1{,nb[0-9]*}:../../misc/kdeartwork3
 DEPENDS+=	kdeaddons-3.4.1{,nb[0-9]*}:../../misc/kdeaddons3
