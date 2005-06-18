@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2004/06/07 01:34:25 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/26 22:48:35 jmmv Exp $
 #
 
 BOOST_PACKAGE=		python
 BOOST_COMMENT=		(Boost.Python binary library)
 BOOST_CONFIG=		installed
+
+PKGREVISION=		1
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
