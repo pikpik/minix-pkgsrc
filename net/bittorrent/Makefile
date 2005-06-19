@@ -1,17 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2005/02/13 13:53:34 recht Exp $
+# $NetBSD: Makefile,v 1.25 2005/03/28 14:43:10 recht Exp $
 #
 
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME:S/BitT/bitt/}
+PKGREVISION=	1
 
 PYDISTUTILSPKG=	YES
-
-post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bittorrent
-	${INSTALL_DATA} ${WRKSRC}/credits.txt ${PREFIX}/share/doc/bittorrent
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${PREFIX}/share/doc/bittorrent
-	${INSTALL_DATA} ${WRKSRC}/LICENSE.txt ${PREFIX}/share/doc/bittorrent
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
