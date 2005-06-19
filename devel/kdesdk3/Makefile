@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2005/04/11 21:45:25 tv Exp $
+# $NetBSD: Makefile,v 1.34 2005/05/22 20:07:52 jlam Exp $
 
 DISTNAME=	kdesdk-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 COMMENT=	Support applications and tools used by KDE developers
 
@@ -74,6 +75,12 @@ PLIST_SUBST+=		HAVE_SVN=""
 .else
 PLIST_SUBST+=		HAVE_SVN="@comment"
 .endif
+
+# Makefile{,.am,.in} weren't supposed to be installed so clean up
+post-install:
+	${RM} ${KDEDIR}/share/kde/apps/kapptemplate/admin/Makefile
+	${RM} ${KDEDIR}/share/kde/apps/kapptemplate/admin/Makefile.am
+	${RM} ${KDEDIR}/share/kde/apps/kapptemplate/admin/Makefile.in
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 
