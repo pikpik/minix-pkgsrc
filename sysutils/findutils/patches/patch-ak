@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- find/fstype.c	Thu Nov  3 11:33:48 1994
 +++ find/fstype.c	Tue May  2 15:31:42 2000
 @@ -30,9 +30,6 @@
