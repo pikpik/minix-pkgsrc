@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/04/04 09:31:46 adam Exp $
+# $NetBSD: Makefile,v 1.25 2005/06/01 18:03:21 jlam Exp $
 
 .include	"../nessus/Makefile.common"
 
@@ -8,8 +8,8 @@ DISTFILES=	# empty
 
 COMMENT=	The Nessus Network Security Scanner
 
-DEPENDS+=	nessus-core-${VERS}:../nessus-core
-DEPENDS+=	nessus-plugins-${VERS}:../nessus-plugins
+DEPENDS+=	nessus-core-${VERS}{,nb*}:../nessus-core
+DEPENDS+=	nessus-plugins-${VERS}{,nb*}:../nessus-plugins
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
