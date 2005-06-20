@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2005/05/24 07:53:54 adam Exp $
+# $NetBSD: Makefile,v 1.112 2005/06/12 06:37:32 jlam Exp $
 
 DISTNAME=	netpbm-10.26.9
 PKGREVISION=	1
@@ -30,7 +30,7 @@ MAKE_ENV+=	NETWORKLD="${LIBS}"
 # Several of the netpbm shell scripts use bashisms, so force using
 # bash for all of the shell scripts.
 #
-DEPENDS+=		bash-[0-9]*:../../shells/bash2
+DEPENDS+=		bash-[0-9]*:../../shells/bash
 EVAL_PREFIX+=		BASH_PREFIX=bash
 SUBST_CLASSES+=		bash
 SUBST_STAGE.bash=	post-build
