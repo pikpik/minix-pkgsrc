@@ -1,8 +1,8 @@
-#     $NetBSD: Interix.x11.dist,v 1.4 2004/09/07 15:47:16 wiz Exp $
+#     $NetBSD: Linux.x11.dist,v 1.40 2005/01/04 09:01:45 jmmv Exp $
 #     FreeBSD Id: BSD.x11.dist,v 1.2 1997/06/10 07:55:10 asami Exp
 #
 
-/set type=dir uid=197108 gid=131616 mode=0775
+/set type=dir uname=root gname=sys mode=0755
 .
     bin
     ..

@@ -1,7 +1,7 @@
-#	$NetBSD: DragonFly.pkg.dist,v 1.9 2005/04/28 19:15:38 wiz Exp $
+# $NetBSD: OSF1.pkg.dist,v 1.10 2005/05/19 16:45:33 jmmv Exp $
 #
 
-/set type=dir uname=root gname=wheel mode=0755
+/set type=dir uname=root gname=system mode=0755
 .
     bin
     ..

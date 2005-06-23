@@ -1,7 +1,7 @@
-# $NetBSD: IRIX.pkg.dist,v 1.58 2005/04/28 19:15:38 wiz Exp $
+#	$NetBSD: FreeBSD.pkg.dist,v 1.60 2005/05/19 16:45:33 jmmv Exp $
 #
 
-/set type=dir uname=root gname=sys mode=0755
+/set type=dir uname=root gname=wheel mode=0755
 .
     bin
     ..

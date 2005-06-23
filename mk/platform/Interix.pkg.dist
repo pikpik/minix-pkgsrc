@@ -1,7 +1,8 @@
-# $NetBSD: OSF1.pkg.dist,v 1.9 2005/04/28 19:15:38 wiz Exp $
+#     Id: BSD.local.dist,v 1.30 1997/08/01 13:16:39 phk Exp 
+#	$NetBSD: Interix.pkg.dist,v 1.24 2005/05/19 16:45:33 jmmv Exp $
 #
 
-/set type=dir uname=root gname=system mode=0755
+/set type=dir uid=197108 gid=131616 mode=0775
 .
     bin
     ..
@@ -690,10 +691,6 @@
                 ..
             ..
             ja
-                LC_MESSAGES
-                ..
-            ..
-            ja_JP
                 LC_MESSAGES
                 ..
             ..
