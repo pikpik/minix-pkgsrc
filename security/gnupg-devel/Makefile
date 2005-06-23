@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2005/04/23 12:38:05 shannonjr Exp $
+# $NetBSD: Makefile,v 1.11 2005/05/22 20:08:30 jlam Exp $
 #
 
-DISTNAME=		gnupg-1.9.16
+DISTNAME=		gnupg-1.9.17
 PKGNAME=		${DISTNAME:S/gnupg/gnupg-devel/}
 #PKGREVISION=		1
 CATEGORIES=		security
