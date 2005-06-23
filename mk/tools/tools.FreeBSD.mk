@@ -1,4 +1,4 @@
-# $NetBSD: tools.FreeBSD.mk,v 1.14 2005/05/26 21:46:14 jlam Exp $
+# $NetBSD: tools.FreeBSD.mk,v 1.15 2005/06/03 22:54:44 jlam Exp $
 #
 # System-supplied tools for the FreeBSD operating system.
 
@@ -16,6 +16,7 @@ TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 TOOLS_PLATFORM.cp?=		/bin/cp
 TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/bin/date
+TOOLS_PLATFORM.diff?=		/usr/bin/diff
 TOOLS_PLATFORM.dirname?=	/usr/bin/dirname
 TOOLS_PLATFORM.echo?=		echo			# shell builtin
 TOOLS_PLATFORM.egrep?=		/usr/bin/egrep
