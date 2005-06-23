@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1698 2005/06/23 08:31:20 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1699 2005/06/23 09:02:46 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -4786,3 +4786,5 @@ _CTYPE3=	" ["${NETBSD_LOGIN_NAME:Q}" "${_CDATE_cmd:sh:Q}"]"
 changes-entry:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	${ECHO} ${_CTYPE1}${_CTYPE2}${_CTYPE3} >> ${PKGSRC_CHANGES:Q}
+
+wt: show-options supported-options-message
