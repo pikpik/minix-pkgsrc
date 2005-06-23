@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/05/06 19:49:32 epg Exp $
+# $NetBSD: Makefile,v 1.40 2005/05/25 17:09:22 bouyer Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications
@@ -56,6 +56,7 @@ SUBDIR+=	sunclock
 SUBDIR+=	swisswatch
 SUBDIR+=	titrax
 SUBDIR+=	wmcalclock
+SUBDIR+=	wmclockmon
 SUBDIR+=	wmfishtime
 SUBDIR+=	wmmoonclock
 SUBDIR+=	wmtime
