@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.644 2005/05/31 16:15:09 drochner Exp $
+# $NetBSD: Makefile,v 1.645 2005/06/23 17:07:38 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -501,6 +501,7 @@ SUBDIR+=	py-InlineEgg
 SUBDIR+=	py-Optik
 SUBDIR+=	py-Pyro
 SUBDIR+=	py-TPG
+SUBDIR+=	py-ZopeInterface
 SUBDIR+=	py-checker
 SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
