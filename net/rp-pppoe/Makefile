@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2004/12/28 02:47:47 reed Exp $
+# $NetBSD: Makefile,v 1.27 2005/06/23 16:48:27 kristerw Exp $
 
 DISTNAME=	rp-pppoe-3.5
 PKGREVISION=	2
@@ -17,7 +17,7 @@ USE_PKGINSTALL=	YES
 USE_TOOLS+=	id
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PPPD=${PPPD}
-CONFIGURE_ENV+=	ac_cv_path_ID="${TOOLS_ID}"
+CONFIGURE_ENV+=	ID="${TOOLS_ID}"
 
 RCD_SCRIPTS=	pppoe
 
