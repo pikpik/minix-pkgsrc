@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/04/11 21:47:14 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/19 21:17:02 kristerw Exp $
 
 .include	"../nessus/Makefile.common"
 
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=	cat
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
-CONFIGURE_ENV+=		ac_cv_path_CAT="${TOOLS_CAT}"
+CONFIGURE_ENV+=		CAT="${TOOLS_CAT}"
 
 PLIST_SRC=	${WRKDIR}/PLIST PLIST
 
