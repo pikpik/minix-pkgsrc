@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.130 2005/05/18 15:54:59 drochner Exp $
+# $NetBSD: Makefile,v 1.131 2005/05/18 22:39:00 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -73,6 +73,7 @@ SUBDIR+=	p5-Math-Interpolate
 SUBDIR+=	p5-Math-MatrixReal
 SUBDIR+=	p5-Math-Pari
 SUBDIR+=	p5-Math-Random
+SUBDIR+=	p5-Number-Compare
 SUBDIR+=	p5-Number-Latin
 SUBDIR+=	p5-Set-Crontab
 SUBDIR+=	p5-Set-Infinite
