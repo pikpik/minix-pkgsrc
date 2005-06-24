@@ -1,4 +1,4 @@
-# $NetBSD: hacks.mk,v 1.5 2004/12/10 23:48:50 jlam Exp $
+# $NetBSD: hacks.mk,v 1.6 2005/05/11 16:15:50 jlam Exp $
 
 .include "../../mk/compiler.mk"
 
