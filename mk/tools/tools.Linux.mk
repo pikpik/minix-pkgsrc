@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.20 2005/06/16 04:30:46 grant Exp $
+# $NetBSD: tools.Linux.mk,v 1.21 2005/06/23 20:45:34 jlam Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -9,6 +9,7 @@ TOOLS_PLATFORM.basename?=	/bin/basename
 .elif exists(/usr/bin/basename)
 TOOLS_PLATFORM.basename?=	/usr/bin/basename
 .endif
+TOOLS_PLATFORM.bash?=		/bin/bash
 .if exists(/usr/bin/bison)
 TOOLS_PLATFORM.bison?=		/usr/bin/bison
 TOOLS_PLATFORM.bison-yacc?=	/usr/bin/bison -y
