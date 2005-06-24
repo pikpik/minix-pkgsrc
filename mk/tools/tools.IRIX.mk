@@ -1,4 +1,4 @@
-# $NetBSD: tools.IRIX.mk,v 1.12 2005/05/15 22:31:50 jlam Exp $
+# $NetBSD: tools.IRIX.mk,v 1.13 2005/06/23 20:45:34 jlam Exp $
 #
 # System-supplied tools for the IRIX operating system.
 
@@ -11,6 +11,7 @@ TOOLS_PLATFORM.chmod?=		/sbin/chmod
 TOOLS_PLATFORM.chown?=		/sbin/chown
 TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 TOOLS_PLATFORM.cp?=		/sbin/cp
+TOOLS_PLATFORM.csh?=		/bin/csh
 TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/sbin/date
 TOOLS_PLATFORM.diff?=		/usr/bin/diff

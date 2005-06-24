@@ -1,4 +1,4 @@
-# $NetBSD: tools.SunOS.mk,v 1.15 2005/06/03 22:54:44 jlam Exp $
+# $NetBSD: tools.SunOS.mk,v 1.16 2005/06/23 20:45:34 jlam Exp $
 #
 # System-supplied tools for the Solaris operating system.
 
@@ -18,6 +18,7 @@ TOOLS_PLATFORM.cmp?=		/bin/cmp
 TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 .endif
 TOOLS_PLATFORM.cp?=		/bin/cp
+TOOLS_PLATFORM.csh?=		/bin/csh
 TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/usr/xpg4/bin/date
 .if exists(/bin/diff)
