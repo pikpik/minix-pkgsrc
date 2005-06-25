@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:14:52 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/25 03:23:03 taca Exp $
 
 DISTNAME=	nkf205
 PKGNAME=	nkf-2.05
@@ -6,7 +6,7 @@ CATEGORIES=	japanese converters
 MASTER_SITES=	http://www01.tcp-ip.or.jp/~furukawa/nkf_utf8/
 
 MAINTAINER=	cjs@NetBSD.org
-HOMEPAGE=	http://www.jazzdisco.org/bsdi/software/nkf/
+HOMEPAGE=	http://www01.tcp-ip.or.jp/~furukawa/nkf_utf8/
 COMMENT=	Convert between various Japanese character encodings
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
