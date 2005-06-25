@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.652 2005/06/24 19:58:46 wiz Exp $
+# $NetBSD: Makefile,v 1.653 2005/06/24 20:24:30 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -15,6 +15,7 @@ SUBDIR+=	ProjectCenter
 SUBDIR+=	RTFM
 SUBDIR+=	Renaissance
 SUBDIR+=	SDL
+SUBDIR+=	SDL-intro-en
 SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
 SUBDIR+=	SDLmm
