@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2005/05/22 20:07:45 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/06/01 18:02:42 jlam Exp $
 #
 
-DISTNAME=		libgnomedb-1.2.1
+DISTNAME=		libgnomedb-1.2.2
 CATEGORIES=		databases gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgnomedb/1.2/}
 EXTRACT_SUFX=		.tar.bz2
@@ -21,7 +21,7 @@ GNU_CONFIGURE=		YES
 PKGCONFIG_OVERRIDE=	libgnomedb.pc.in
 
 CONFIGURE_ARGS=		--enable-gtk-doc=no
-CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc/html
+CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
 GCONF2_SCHEMAS=		libgnomedb.schemas
 
