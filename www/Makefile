@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.403 2005/06/23 07:30:22 martti Exp $
+# $NetBSD: Makefile,v 1.404 2005/06/26 09:40:25 kei Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -103,7 +103,6 @@ SUBDIR+=	glibwww
 SUBDIR+=	grail
 SUBDIR+=	gtkasp2php
 SUBDIR+=	gtkhtml
-SUBDIR+=	gtkhtml3
 SUBDIR+=	gtkhtml30
 SUBDIR+=	gtkhtml36
 SUBDIR+=	haskell-cgi
