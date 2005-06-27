@@ -1,4 +1,4 @@
-#	$NetBSD: cross.mk,v 1.34 2005/06/01 20:07:59 jlam Exp $
+#	$NetBSD: cross.mk,v 1.35 2005/06/20 05:24:53 kristerw Exp $
 
 # Shared definitions for building a cross-compile environment.
 
@@ -162,7 +162,7 @@ USE_TOOLS+=		gmake
 CC_FOR_TARGET=		${EGCS_WRKSRC}/gcc/xgcc -B${EGCS_WRKSRC}/gcc/ ${CFLAGS_FOR_TARGET}
 CXX_FOR_TARGET=		${CC_FOR_TARGET}
 
-UES_TOOLS+=		chmod
+USE_TOOLS+=		chmod
 EGCS_MAKE_FLAGS=	CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
 			CC_FOR_TARGET="${CC_FOR_TARGET}" \
 			GCC_FOR_TARGET="${CC_FOR_TARGET}" \
