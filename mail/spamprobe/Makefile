@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:46:27 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/12 08:59:32 jlam Exp $
 
-DISTNAME=	spamprobe-1.0a
+DISTNAME=	spamprobe-1.2a
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=spamprobe/}
 
@@ -14,9 +14,7 @@ USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+= --enable-default-8bit
-CONFIGURE_ARGS+= --with-db=${BUILDLINK_PREFIX.db4}
 
-BUILDLINK_TRANSFORM+=	l:db:db4
+.include "options.mk"
 
-.include "../../databases/db4/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
