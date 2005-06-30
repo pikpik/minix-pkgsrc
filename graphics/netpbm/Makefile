@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.113 2005/06/20 22:39:18 wiz Exp $
+# $NetBSD: Makefile,v 1.115 2005/06/24 21:58:47 minskim Exp $
 
-DISTNAME=	netpbm-10.26.9
-PKGREVISION=	3
+DISTNAME=	netpbm-10.26.11
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netpbm/}
 EXTRACT_SUFX=	.tgz
@@ -12,8 +11,7 @@ COMMENT=	Toolkit for conversion of images between different formats
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_TOOLS+=	bash gmake lex
-USE_PERL5=	yes
+USE_TOOLS+=	bash gmake lex perl
 
 TOOLS_DEPMETHOD.bash=	DEPENDS
 
