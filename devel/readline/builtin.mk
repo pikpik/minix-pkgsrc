@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.9 2005/01/26 16:17:16 jlam Exp $
+# $NetBSD: builtin.mk,v 1.10 2005/06/01 18:02:45 jlam Exp $
 
 BUILTIN_PKG:=	readline
 
@@ -77,7 +77,7 @@ USE_BUILTIN.readline=	yes
 # Some platforms don't have a readline/editline implementation that can
 # replace GNU readline.
 #
-_INCOMPAT_READLINE?=	SunOS-*-* Darwin-*-* Interix-*-*
+_INCOMPAT_READLINE?=	SunOS-*-* Darwin-[567].*-* Interix-*-*
 .    for _pattern_ in ${_INCOMPAT_READLINE} ${INCOMPAT_READLINE}
 .      if !empty(MACHINE_PLATFORM:M${_pattern_})
 USE_BUILTIN.readline=	no
