@@ -1,8 +1,8 @@
 $NetBSD$
 
---- liboctave/f2c-main.c.orig	2002-04-03 19:44:22.000000000 -0500
+--- liboctave/f2c-main.c.orig	2005-05-18 12:20:20.000000000 +0000
 +++ liboctave/f2c-main.c
-@@ -20,6 +20,10 @@ Software Foundation, 59 Temple Place - S
+@@ -21,6 +21,10 @@ Software Foundation, Inc., 51 Franklin S
  
  */
  
