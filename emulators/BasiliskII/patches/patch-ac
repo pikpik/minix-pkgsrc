@@ -1,8 +1,8 @@
 $NetBSD$
 
---- vm_alloc.cpp.orig	Fri Mar 14 20:17:27 2003
+--- vm_alloc.cpp.orig	2005-01-30 21:42:14.000000000 +0000
 +++ vm_alloc.cpp
-@@ -29,6 +29,7 @@
+@@ -39,6 +39,7 @@
  #include "vm_alloc.h"
  
  #ifdef HAVE_MACH_VM
