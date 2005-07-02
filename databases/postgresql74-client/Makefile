@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/05/16 01:32:22 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/30 01:50:10 wiz Exp $
 
 PKGNAME=		postgresql74-client-${BASE_VERS}
 PKGREVISION=		# empty
@@ -25,7 +25,7 @@ pre-build:
 
 post-install:
 	${EGREP} -v "^#" ${FILESDIR}/man.client > ${WRKDIR}/man_tar_files
-	${TAR} -zxm -C ${PREFIX}/man -T ${WRKDIR}/man_tar_files	\
+	cd ${PREFIX}/man && ${TAR} -zxm -T ${WRKDIR}/man_tar_files	\
 		-f ${WRKSRC}/doc/man.tar.gz
 
 .include "../../mk/bsd.prefs.mk"
