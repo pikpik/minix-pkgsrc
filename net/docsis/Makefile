@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:46:45 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/05/22 20:08:23 jlam Exp $
 #
 
-DISTNAME=		docsis-0.9.2
+DISTNAME=		docsis-0.9.4
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=docsis/}
 
