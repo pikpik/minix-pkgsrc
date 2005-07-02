@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:14 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:32 jlam Exp $
 
-DISTNAME=	nikto-1.34
+DISTNAME=	nikto-1.35
 CATEGORIES=	security www
 MASTER_SITES=	http://www.cirt.net/nikto/
 
@@ -19,8 +19,8 @@ USE_PKGINSTALL=	YES
 SUBST_CLASSES=		conf
 SUBST_STAGE.conf=	post-patch
 SUBST_FILES.conf=	config.txt
-SUBST_SED.conf=		-e "s|\#NMAP=/usr|NMAP=${PREFIX}|g" 
-SUBST_MESSAGE.conf=	"Fixing configuration files."
+SUBST_SED.conf=		-e "s|@PREFIX@|${PREFIX}|g"
+SUBST_MESSAGE.conf=	"Fixing PREFIX in files."
 
 CONF_FILES=	${PREFIX}/share/examples/nikto/config.txt \
 			 ${PREFIX}/share/nikto/config.txt
