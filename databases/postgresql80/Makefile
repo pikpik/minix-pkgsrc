@@ -1,3 +1,4 @@
+# $NetBSD$
 
 PKGNAME=	postgresql80-${BASE_VERS}
 COMMENT=	Robust, next generation, object-relational DBMS
