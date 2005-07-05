@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2005/02/07 00:17:56 dan Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 20:34:43 recht Exp $
 
 PKGNAME=		postgresql80-client-${BASE_VERS}
-PKGREVISION=		# empty
+PKGREVISION=		1
 COMMENT=		PostgreSQL database client programs
 
 .include "../../databases/postgresql80/Makefile.common"
