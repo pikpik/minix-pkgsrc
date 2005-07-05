@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.242 2005/06/14 03:52:01 rillig Exp $
+# $NetBSD: Makefile,v 1.243 2005/06/24 22:36:59 rillig Exp $
 #
 
 DISTNAME=	pkglint-4.18
@@ -44,8 +44,8 @@ MANINSTALL=		catinstall
 .endif
 
 do-extract:
-.for _f_ in ${SUBST_FILES.pkglint}
-	@${CP} ${FILESDIR}/${_f_} ${WRKSRC}/${_f_}
+.for f in ${SUBST_FILES.pkglint}
+	@${CP} ${FILESDIR}/${f} ${WRKSRC}/${f}
 .endfor
 
 do-install:
