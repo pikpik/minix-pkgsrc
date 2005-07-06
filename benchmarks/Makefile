@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2003/12/03 18:41:21 xtraeme Exp $
+# $NetBSD: Makefile,v 1.32 2005/02/14 22:07:23 xtraeme Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -31,6 +31,7 @@ SUBDIR+=	postal
 SUBDIR+=	postmark
 SUBDIR+=	randread
 SUBDIR+=	skampi
+SUBDIR+=	thrulay
 SUBDIR+=	ttcp
 SUBDIR+=	whetstone
 SUBDIR+=	xengine
