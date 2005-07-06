@@ -61,7 +61,7 @@ do
 	    START_NEW_NETSCAPE=1
 	    ;;
 	*)
-	    URL=`echo $a | sed -e 's/"/%22/g' -e 's/\`/%60/g -e 's/,/%2c/'`
+	    URL=`echo $a | sed -e 's/"/%22/g' -e 's/\`/%60/g' -e 's/,/%2c/g'`
 	    break;
 	    ;;
     esac
