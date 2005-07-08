@@ -1,8 +1,8 @@
 $NetBSD$
 
---- wrlib/Makefile.in.orig	2004-10-26 04:10:46.000000000 +0000
+--- wrlib/Makefile.in.orig	2005-06-19 03:23:01.000000000 +0000
 +++ wrlib/Makefile.in
-@@ -115,7 +115,7 @@ AUTOMAKE_OPTIONS = no-dependencies
+@@ -118,7 +118,7 @@ AUTOMAKE_OPTIONS = no-dependencies
  
  lib_LTLIBRARIES = libwraster.la
  
