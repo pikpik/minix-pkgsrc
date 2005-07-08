@@ -1,7 +1,7 @@
 $NetBSD$
 
 --- Configure.orig	2001-02-22 20:17:39.000000000 +0100
-+++ Configure	2005-06-20 03:49:52.000000000 +0200
++++ Configure	2005-07-08 22:38:46.000000000 +0200
 @@ -2540,7 +2540,7 @@
      esac
      ;;
@@ -38,9 +38,12 @@ $NetBSD$
  cpp='$cpp'
  cppflags='$cppflags'
  cpplast='$cpplast'
-@@ -6307,19 +6307,19 @@
+@@ -6305,21 +6305,21 @@
+ d_xthread='$d_xthread'
+ date='$date'
  defeditor='$defeditor'
- diff='$diff'
+-diff='$diff'
++diff='$TOOLS_DIFF'
  direntrytype='$direntrytype'
 -echo='$echo'
 +echo='$TOOLS_ECHO'
