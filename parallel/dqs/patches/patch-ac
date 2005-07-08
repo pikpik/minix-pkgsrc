@@ -1,8 +1,9 @@
-$NetBSD: patch-ac,v 1.1.1.1 2003/06/26 20:23:42 agc Exp $
+$NetBSD$
 
---- SRC/dqs_exec_job.c	2000/10/01 23:56:25	1.7
-+++ SRC/dqs_exec_job.c	2002/09/18 11:15:44
-@@ -275,10 +275,5 @@
+--- SRC/dqs_exec_job.c.orig	2000-10-02 01:56:25.000000000 +0200
++++ SRC/dqs_exec_job.c	2005-07-08 21:37:31.000000000 +0200
+@@ -274,11 +274,6 @@
+ #include "dqs_errno.h"
  
  #include <errno.h>                                                  
 -extern int errno, sys_nerr;                                         
