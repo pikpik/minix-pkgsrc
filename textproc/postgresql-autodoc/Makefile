@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:41 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/05/22 20:08:35 jlam Exp $
 #
 
 DISTNAME=	postgresql_autodoc-1.24
-# PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://www.rbt.ca/autodoc/binaries/
 
@@ -18,5 +18,6 @@ USE_PERL5=	yes
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/${PKGBASE}
+CONFIGURE_ENV+=	ac_cv_path_PERL=${PERL5}
 
 .include "../../mk/bsd.pkg.mk"
