@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/02/21 21:24:06 veego Exp $
+# $NetBSD: Makefile,v 1.27 2005/06/17 03:50:30 jlam Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.10
@@ -11,6 +11,9 @@ HOMEPAGE=	http://www.adobe.com/prodindex/acrobat/readstep.html
 COMMENT=	View, distribute and print PDF documents
 
 CONFLICTS+=	acroread-5.*
+# conflict with acroread7 due to bin/acroread
+CONFLICTS+=	acroread-7.*
+CONFLICTS+=	acroread7-7.*
 
 RESTRICTED=	"Original installer required to redistribute."
 NO_SRC_ON_CDROM=	${RESTRICTED}
