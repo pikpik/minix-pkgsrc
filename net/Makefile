@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.561 2005/06/06 16:12:57 bouyer Exp $
+# $NetBSD: Makefile,v 1.562 2005/06/08 08:58:15 salo Exp $
 #
 
 COMMENT=	Networking tools
@@ -398,6 +398,7 @@ SUBDIR+=	unison-devel
 SUBDIR+=	upclient
 SUBDIR+=	userppp
 SUBDIR+=	vcheck
+SUBDIR+=	vde
 SUBDIR+=	vino
 SUBDIR+=	vnc
 SUBDIR+=	vncviewer
