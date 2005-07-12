@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/01/25 13:48:54 jmmv Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/11 21:45:41 tv Exp $
 #
 
 DISTNAME=	nvi-1.81.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	http://www.kotnet.org/~skimo/nvi/devel/
 EXTRACT_SUFX=	.tar.bz2
@@ -26,6 +26,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	../dist/configure
 CONFIGURE_ARGS+=	--with-db3=${BUILDLINK_PREFIX.db3}
 CONFIGURE_ARGS+=	--program-transform-name='s,^,n,'
+CONFIGURE_ENV+=		vi_cv_path_shell=${TOOLS_SH}
+USE_TOOLS+=		sh
 USE_LIBTOOL=		YES
 
 .include "../../databases/db3/buildlink3.mk"
