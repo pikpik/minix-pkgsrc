@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/06/17 03:50:27 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/28 17:13:25 peter Exp $
 
 DISTNAME=		openntpd-3.7p1
 CATEGORIES=		net
@@ -23,7 +23,7 @@ EGDIR=			${PREFIX}/share/examples/openntpd
 CONF_FILES=		${EGDIR}/ntpd.conf ${PKG_SYSCONFDIR}/ntpd.conf
 
 RCD_SCRIPTS=		openntpd
-PKG_USERS=		_ntp:_ntp::ntpd\\ pseudo-user:${VARBASE}/chroot/ntpd:/sbin/nologin
+PKG_USERS=		_ntp:_ntp::ntpd\\ pseudo-user:${VARBASE}/chroot/ntpd:${NOLOGIN}
 PKG_GROUPS=		_ntp
 
 OWN_DIRS=		${VARBASE}/chroot/ntpd
