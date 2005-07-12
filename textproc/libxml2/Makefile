@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.68 2005/04/11 21:47:36 tv Exp $
+# $NetBSD: Makefile,v 1.69 2005/05/22 20:08:35 jlam Exp $
 
-DISTNAME=	libxml2-2.6.19
+DISTNAME=	libxml2-2.6.20
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml2/2.6/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,7 +12,7 @@ COMMENT=	XML parser library from the GNOME project
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake gtar
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	libxml-2.0.pc.in
 
