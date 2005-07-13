@@ -54,9 +54,7 @@ CONFIGURE_ARGS+=	--disable-libtool-lock
 CONFIGURE_ARGS+=	--disable-shared
 BUILD_SHLIBTOOL=	NO
 .  endif
-.elif ${OPSYS} == "IRIX"
-# configure bails out in subdir after re-parsing the cache
-CONFIGURE_ARGS+=	--cache-file=/dev/null
+
 .endif
 
 CONFIGURE_ARGS+=	--disable-ltdl-install
