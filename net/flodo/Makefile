@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:46 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:25 jlam Exp $
 #
 
 DISTNAME=		flodo-v4
@@ -11,7 +11,6 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://arctic.org/~dean/flodo/
 COMMENT=		Simple network flow sampling tool
 
-USE_BUILTIN.libpcap=	no
 BUILDLINK_DEPENDS.libpcap+=	libpcap>=0.8
 
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.libpcap}/include
