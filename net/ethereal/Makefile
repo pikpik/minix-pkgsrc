@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.108 2005/05/06 13:54:48 tron Exp $
+# $NetBSD: Makefile,v 1.109 2005/06/01 18:03:07 jlam Exp $
 
 DISTNAME=		ethereal-0.10.11
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.ethereal.com/distribution/ \
 			http://ethereal.planetmirror.com/distribution/ \
@@ -45,6 +46,10 @@ PTHREAD_OPTS=		require
 .if ${OPSYS} == "Darwin"
 USE_BUILTIN.libpcap=	no
 .endif
+
+# XXX avoid rebuild after dissector patch
+pre-build:
+	${TOUCH} ${WRKSRC}/epan/dissectors/register.c
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
