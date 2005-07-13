@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2005/06/26 16:52:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.81 2005/06/29 08:51:08 jmmv Exp $
 #
 
 DISTNAME=	gdm-2.8.0.0
@@ -52,14 +52,14 @@ CONF_FILES=		${EGDIR}/dm/Sessions/default.desktop \
 	modules/AccessDwellMouseEvents modules/AccessKeyMouseEvents \
 	modules/factory-AccessDwellMouseEvents \
 	modules/factory-AccessKeyMouseEvents
-CONF_FILES+=		${EGDIR}/gdm/$f \
-			${PKG_SYSCONFDIR}/gdm/$f
+CONF_FILES+=		${EGDIR}/gdm/${f} \
+			${PKG_SYSCONFDIR}/gdm/${f}
 .endfor
 SUPPORT_FILES_MODE=	0755
 .for f in Init/Default PostSession/Default PreSession/Default \
 	XKeepsCrashing Xsession
-SUPPORT_FILES+=		${EGDIR}/gdm/$f \
-			${PKG_SYSCONFDIR}/gdm/$f
+SUPPORT_FILES+=		${EGDIR}/gdm/${f} \
+			${PKG_SYSCONFDIR}/gdm/${f}
 .endfor
 RCD_SCRIPTS=		gdm
 
