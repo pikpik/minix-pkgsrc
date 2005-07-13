@@ -1,18 +1,16 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:45:19 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:50 jlam Exp $
 
-DISTNAME=		distcc-2.18.2
-PKGREVISION=		2
-CATEGORIES=		devel
-MASTER_SITES=		http://distcc.samba.org/ftp/distcc/
-EXTRACT_SUFX=		.tar.bz2
+DISTNAME=	distcc-2.18.3
+CATEGORIES=	devel
+MASTER_SITES=	http://distcc.samba.org/ftp/distcc/
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=		martti@NetBSD.org
-HOMEPAGE=		http://distcc.samba.org/
-COMMENT=		Tool for distributed C/C++ compiling
+MAINTAINER=	martti@NetBSD.org
+HOMEPAGE=	http://distcc.samba.org/
+COMMENT=	Tool for distributed C/C++ compiling
 
-USE_TOOLS+=		gmake
 USE_PKGINSTALL=		yes
-
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-rfc2553
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
