@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:36 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/22 20:07:54 jlam Exp $
 #
 
 DISTNAME=	Glib-${DIST_VERSION}
@@ -22,7 +22,7 @@ MAKE_PARAMS+=	disable-threadsafe
 
 DIST_VERSION=	1.040
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Glib/.packlist
+PERL5_PACKLIST=	auto/Glib/.packlist
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pkgconfig/buildlink3.mk"

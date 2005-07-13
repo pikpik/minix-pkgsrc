@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2005/06/19 22:29:35 heinz Exp $
+# $NetBSD: Makefile,v 1.57 2005/06/22 20:43:19 heinz Exp $
 
 DISTNAME=	Mail-SpamAssassin-${SPAMASSASSIN_VERSION}
 PKGNAME=	spamassassin-${SPAMASSASSIN_VERSION}
@@ -46,7 +46,7 @@ BUILD_DEFS+=		SPAMASSASSIN_CONTACT_ADDRESS
 
 PLIST_ADD=		${WRKSRC}/.PLIST_ADD
 PLIST_SRC=		${PKGDIR}/PLIST ${PLIST_ADD}
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Mail/SpamAssassin/.packlist
+PERL5_PACKLIST=		auto/Mail/SpamAssassin/.packlist
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

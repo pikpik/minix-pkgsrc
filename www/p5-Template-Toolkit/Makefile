@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/12/25 05:00:00 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:48:01 tv Exp $
 #
 
 DISTNAME=	Template-Toolkit-2.14
@@ -14,7 +14,7 @@ COMMENT=	Perl5 text template and dynamic web page integration toolkit
 
 DEPENDS+=	p5-AppConfig>=1.52:../../devel/p5-AppConfig
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Template/.packlist
+PERL5_PACKLIST=	auto/Template/.packlist
 
 MAKE_PARAMS=	TT_PREFIX=${PREFIX}/share/tt2
 MAKE_PARAMS+=	TT_LATEX=y

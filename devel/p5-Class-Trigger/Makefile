@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/12/20 11:30:58 grant Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/09 15:48:30 minskim Exp $
 #
 
 DISTNAME=	Class-Trigger-0.09
@@ -16,7 +16,7 @@ DEPENDS+=	p5-IO-stringy>=0.02:../../devel/p5-IO-stringy
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Class/Trigger/.packlist
+PERL5_PACKLIST=	auto/Class/Trigger/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

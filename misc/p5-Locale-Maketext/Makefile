@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/02 22:30:31 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:39 tv Exp $
 #
 
 DISTNAME=		Locale-Maketext-1.09
@@ -13,7 +13,7 @@ COMMENT=		Perl framework for localization
 
 DEPENDS+=		p5-I18N-LangTags>=0.30:../p5-I18N-LangTags
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Locale-Maketext/.packlist
+PERL5_PACKLIST=		auto/Locale-Maketext/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:56 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/20 07:44:31 seb Exp $
 #
 
 DISTNAME=	NetAddr-IP-3.24
@@ -18,7 +18,7 @@ BUILD_DEPENDS+=	p5-Module-Signature-[0-9]*:../../security/p5-Module-Signature
 PERL5_REQD=		5.6.0
 USE_LANGUAGES=		# empty
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/NetAddr/IP/.packlist
+PERL5_PACKLIST=		auto/NetAddr/IP/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

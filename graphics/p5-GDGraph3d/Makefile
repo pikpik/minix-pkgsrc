@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/20 11:31:03 grant Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:46:07 tv Exp $
 
 DISTNAME=	GDGraph3d-0.56
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,7 @@ COMMENT=	GDGraph3d is a pkg to generate charts, using Lincoln Stein's GD.pm
 DEPENDS+=       p5-GDGraph>=1.30:../../graphics/p5-GDGraph
 
 USE_LANGUAGES=		# empty
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/GD/Graph3d/.packlist
+PERL5_PACKLIST=		auto/GD/Graph3d/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

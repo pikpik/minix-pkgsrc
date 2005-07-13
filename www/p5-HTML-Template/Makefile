@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2004/12/20 11:31:14 grant Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/11 21:47:59 tv Exp $
 
 DISTNAME=		HTML-Template-2.7
 PKGNAME=		p5-${DISTNAME}
@@ -14,7 +14,7 @@ COMMENT=		Perl5 module to create HTML templates with simple tags
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTML/Template/.packlist
+PERL5_PACKLIST=		auto/HTML/Template/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

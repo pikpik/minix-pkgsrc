@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/20 11:31:08 grant Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:47:16 tv Exp $
 #
 
 DISTNAME=	Digest-Nilsimsa-0.06
@@ -14,7 +14,7 @@ COMMENT=	Perl5 extension module for Nilsimsa signatures
 
 
 PERL5_CONFIGURE=	YES
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Digest/Nilsimsa/.packlist
+PERL5_PACKLIST=		auto/Digest/Nilsimsa/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

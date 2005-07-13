@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/02/26 17:52:13 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:32 tv Exp $
 #
 
 DISTNAME=	File-Temp-0.16
@@ -13,7 +13,7 @@ COMMENT=	Provides functions for generating temporary files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/File/Temp/.packlist
+PERL5_PACKLIST=		auto/File/Temp/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

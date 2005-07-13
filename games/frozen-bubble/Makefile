@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:45:50 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/05/22 20:08:01 jlam Exp $
 #
 
 DISTNAME=	frozen-bubble-1.0.0
@@ -19,7 +19,7 @@ USE_TOOLS+=	gmake
 MAKE_ENV+=	PERL5="${PERL5}" CP="${CP}"
 
 REPLACE_PERL=	frozen-bubble*
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/fb_c_stuff/.packlist
+PERL5_PACKLIST=	auto/fb_c_stuff/.packlist
 
 post-extract:
 	${RM} -rf ${WRKSRC}/gfx/.xvpics

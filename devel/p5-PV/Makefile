@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:53 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:34 tv Exp $
 
 DISTNAME=	PerlVision-1.4
 PKGNAME=	p5-PV-1.4
@@ -14,7 +14,7 @@ DEPENDS+=	p5-Curses>=1.02:../../devel/p5-Curses
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/PV/.packlist
+PERL5_PACKLIST=	auto/PV/.packlist
 
 pre-configure:
 	@${CP} ${FILESDIR}/Makefile.PL ${WRKSRC}/Makefile.PL

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:08 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:16 tv Exp $
 #
 
 DISTNAME=	Digest-Hashcash-0.02
@@ -16,7 +16,7 @@ DEPENDS+=	p5-Time-HiRes>=1.2:../../time/p5-Time-HiRes
 
 
 PERL5_CONFIGURE=	YES
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Digest/Hashcash/.packlist
+PERL5_PACKLIST=		auto/Digest/Hashcash/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

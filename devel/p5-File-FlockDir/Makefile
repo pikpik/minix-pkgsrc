@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/12/20 11:30:59 grant Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:31 tv Exp $
 #
 
 DISTNAME=	File-FlockDir-1.02
@@ -13,7 +13,7 @@ COMMENT=	FlockDir - override perl flock() for network or portability purposes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/File/FlockDir/.packlist
+PERL5_PACKLIST=		auto/File/FlockDir/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

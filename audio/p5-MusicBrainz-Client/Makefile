@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:44:56 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/26 19:48:54 epg Exp $
 #
 
 DISTNAME=	MusicBrainz-Client-0.09
@@ -12,7 +12,7 @@ COMMENT=	Provide access to the libmusicbrainz client library
 
 DEPENDS+=	p5-MusicBrainz-Queries>=0.07:../../audio/p5-MusicBrainz-Queries
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/MusicBrainz/Client/.packlist
+PERL5_PACKLIST=		auto/MusicBrainz/Client/.packlist
 
 .include "../../audio/musicbrainz/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:06 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:53 tv Exp $
 #
 
 DISTNAME=	Net-DNSServer-0.11
@@ -14,7 +14,7 @@ DEPENDS+=	p5-IPC-SharedCache-[0-9]*:../../devel/p5-IPC-SharedCache
 DEPENDS+=	p5-Net-Bind-[0-9]*:../../net/p5-Net-Bind
 DEPENDS+=	p5-Net-Server-[0-9]*:../../net/p5-Net-Server
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/Net/DNSServer/.packlist
+PERL5_PACKLIST=	auto/Net/DNSServer/.packlist
 
 .include "../../databases/p5-DBI/buildlink3.mk"
 

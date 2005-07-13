@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/04/11 21:47:50 tv Exp $
+# $NetBSD: Makefile,v 1.36 2005/06/24 05:56:26 jlam Exp $
 #
 
 DISTNAME=		mod_perl-1.29
@@ -19,7 +19,7 @@ DEPENDS+=		p5-BSD-Resource>=1.10:../../devel/p5-BSD-Resource
 
 APACHE_MODULE=		YES
 PERL5_REQD+=		5.8.0
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/mod_perl/.packlist
+PERL5_PACKLIST=		auto/mod_perl/.packlist
 
 MAKE_PARAMS+=		USE_APXS=1
 MAKE_PARAMS+=		WITH_APXS=${APXS}

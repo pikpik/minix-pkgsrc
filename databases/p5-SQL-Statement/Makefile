@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/03 05:06:42 mjl Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:13 tv Exp $
 #
 
 DISTNAME=	SQL-Statement-1.11
@@ -12,7 +12,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 # HOMEPAGE=	http://
 COMMENT=	Small, abstract SQL engine
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/SQL/Statement/.packlist
+PERL5_PACKLIST=		auto/SQL/Statement/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

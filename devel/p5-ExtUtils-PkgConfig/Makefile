@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/27 22:00:31 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:31 tv Exp $
 #
 
 DISTNAME=	ExtUtils-PkgConfig-1.06
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 PERL5_REQD=	5.8
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/ExtUtils/PkgConfig/.packlist
+PERL5_PACKLIST=	auto/ExtUtils/PkgConfig/.packlist
 
 .include "../../devel/pkgconfig/buildlink3.mk"
 .include "../../lang/perl5/module.mk"

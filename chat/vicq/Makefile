@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/05/31 16:47:47 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:06 tv Exp $
 
 DISTNAME=	vicq-0.4.1
 PKGREVISION=	1
@@ -19,7 +19,7 @@ NO_BUILD=		YES
 
 REPLACE_PERL=		vicq
 PERL5_CONFIGURE=	NO
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Net/vICQ/.packlist
+PERL5_PACKLIST=		auto/Net/vICQ/.packlist
 
 INSTALLATION_DIRS=	bin man
 

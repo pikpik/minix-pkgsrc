@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/12/20 11:31:14 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:59 tv Exp $
 
 DISTNAME=		libhtmlobject-perl-${VERSION}
 PKGNAME=		p5-HTMLObject-${VERSION}
@@ -16,7 +16,7 @@ DEPENDS+=	p5-Data-FormValidator>=3.59:../../textproc/p5-Data-FormValidator
 VERSION=	2.22
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/HTMLObject/.packlist
+PERL5_PACKLIST=		auto/HTMLObject/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

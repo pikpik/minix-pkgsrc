@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/20 11:31:11 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:40 tv Exp $
 #
 
 DISTNAME=	XML-Stream-1.15
@@ -14,7 +14,7 @@ COMMENT=	XML::Stream provides you with access to XML Stream
 DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 DEPENDS+=	p5-Unicode-String-[0-9]*:../../converters/p5-Unicode-String
 
-PERL5_PACKLIST=	${PERL5_SITEARCH}/auto/XML/Stream/.packlist
+PERL5_PACKLIST=	auto/XML/Stream/.packlist
 
 .include "../../lang/perl5/module.mk"
 

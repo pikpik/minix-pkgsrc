@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/03/24 21:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:46:56 tv Exp $
 
 DISTNAME=	Net-TFTP-0.10
 PKGNAME=	p5-Net-TFTP-0.10
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Perl5 module for TFTP transfers
 
 WRKSRC=			${WRKDIR}/Net-TFTP-0.10
-PERL5_PACKLIST=		${PERL5_SITEARCH}/auto/Net/TFTP/.packlist
+PERL5_PACKLIST=		auto/Net/TFTP/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
