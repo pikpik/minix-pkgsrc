@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/03/24 21:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:29 jlam Exp $
 
 DISTNAME=       	vnc-3.3.3r2_unixsrc
 PKGNAME=		vncviewer-3.3.3.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net x11
 MASTER_SITES=   	http://www.uk.research.att.com/archive/vnc/dist/
 EXTRACT_SUFX=		.tgz
