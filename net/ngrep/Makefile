@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2005/02/25 09:23:40 adam Exp $
+# $NetBSD: Makefile,v 1.22 2005/04/11 21:46:52 tv Exp $
 
-DISTNAME=	ngrep-1.43
+DISTNAME=	ngrep-1.44
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ngrep/}
 EXTRACT_SUFX=	.tar.bz2
@@ -13,6 +13,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-pcre
 # ngrep's configure use --includedir/$includedir in a weird way!
 CONFIGURE_ARGS+=	--includedir=${BUILDLINK_PREFIX.libpcap}/include
+CONFIGURE_ARGS+=	--enable-ipv6
 BUILD_TARGET=		ngrep
 
 .include "../../mk/bsd.prefs.mk"
