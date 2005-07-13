@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/01 19:50:42 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:27 tv Exp $
 #
 
 DISTNAME=	libosip2-2.2.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=osip/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://www.fsf.org/software/osip/osip.html
+HOMEPAGE=	http://www.gnu.org/software/osip/
 COMMENT=	Implementation of SIP
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
