@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:19 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/22 20:07:50 jlam Exp $
 #
 
-DISTNAME=	cvsps-2.0rc1
-PKGREVISION=	1
+DISTNAME=	cvsps-2.1
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}
 
