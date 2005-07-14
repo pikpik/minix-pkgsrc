@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.26 2005/04/11 21:45:30 tv Exp $
+# $NetBSD: Makefile,v 1.27 2005/07/13 18:01:23 jlam Exp $
 
-DISTNAME=	Curses-1.08b
+DISTNAME=	Curses-1.12
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cur
 CATEGORIES=	devel perl5
@@ -15,7 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_NCURSES=	# needs libpanel
 
-WRKSRC=		${WRKDIR}/Curses-1.08
+WRKSRC=		${WRKDIR}/Curses-1.12
 PERL5_PACKLIST=		auto/Curses/.packlist
 
 MAKE_PARAMS+=	PANELS
