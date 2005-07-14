@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/02/16 18:44:36 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/16 06:58:08 jlam Exp $
 #
 
 DISTNAME=		queue-repair-0.9.0
@@ -6,7 +6,7 @@ CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
 MAINTAINER=		schmonz@NetBSD.org
-HOMEPAGE=		http://pyropus.ca/software/queue_repair/
+HOMEPAGE=		http://pyropus.ca/software/queue-repair/
 COMMENT=		Check or correct most corruptions of the queue in qmail
 
 NO_BUILD=		YES
