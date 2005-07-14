@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/05/31 10:01:37 dillo Exp $
+# $NetBSD: Makefile,v 1.41 2005/06/24 05:58:42 grant Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -61,6 +61,10 @@ PKG_SUGGESTED_OPTIONS=	curl
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mmilter)
+# force use of pkgsrc version of libmilter -- clamav uses the sendmail binary
+# to check API compatibility(!), so it must build with as new a version of
+# libmilter as pkgsrc is capable of providing
+USE_BUILTIN.libmilter=	no
 .  include "../../mail/libmilter/buildlink3.mk"
 CONFIGURE_ARGS+=	--enable-milter
 PLIST_SUBST+=		MILTER=
