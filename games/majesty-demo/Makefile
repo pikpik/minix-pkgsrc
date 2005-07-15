@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/05/15 04:26:24 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:55 jlam Exp $
 #
 
 DISTNAME=	majesty_demo
@@ -13,7 +13,7 @@ COMMENT=	Fantasy kingdom simulation (demo)
 
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 			${GZCAT} | ${PAX} -O -r
-PKGSRC_USE_TOOLS+=	gzcat pax
+USE_TOOLS+=	gzcat pax
 
 ONLY_FOR_PLATFORM=*-*-i386
 

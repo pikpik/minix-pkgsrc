@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/05/16 01:15:33 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:03:24 jlam Exp $
 
 DISTNAME=	ethemes-0.1
 PKGREVISION=	2
@@ -17,7 +17,7 @@ NO_BUILD=	yes
 NO_CONFIGURE=	yes
 EXTRACT_ONLY=
 
-PKGSRC_USE_TOOLS+=	gtar
+USE_TOOLS+=	gtar
 
 E_DATADIR=	share/enlightenment/themes
 

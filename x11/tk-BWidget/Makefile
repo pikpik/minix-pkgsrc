@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/24 21:10:12 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/16 01:15:34 jlam Exp $
 
 DISTNAME=	BWidget-1.7.0
 PKGNAME=	tk-${DISTNAME}
@@ -18,7 +18,7 @@ NO_EXTRACT=	YES
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
 
-PKGSRC_USE_TOOLS+=	gtar
+USE_TOOLS+=	gtar
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/tcl

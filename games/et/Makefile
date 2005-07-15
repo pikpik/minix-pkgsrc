@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/16 01:15:31 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:54 jlam Exp $
 #
 
 DISTNAME=       et-linux-2.56-2.x86
@@ -15,7 +15,7 @@ NO_BUILD=	yes
 USE_PKGINSTALL=	yes
 ONLY_FOR_PLATFORM=	FreeBSD-*-i386 Linux-*-i386
 
-PKGSRC_USE_TOOLS+=	gtar
+USE_TOOLS+=	gtar
 ETDIR=		${PREFIX}/lib/lokigames/et
 EXTRACT_CMD=	${TAIL} +356 ${DOWNLOADED_DISTFILE} | ${GTAR} xzf - \
 		-C ${WRKSRC}

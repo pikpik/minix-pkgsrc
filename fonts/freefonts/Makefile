@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/16 01:15:31 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/16 06:57:52 jlam Exp $
 #
 
 DISTNAME=	freefonts-0.10
@@ -14,7 +14,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 USE_X11BASE=	yes
-PKGSRC_USE_TOOLS+=	gtar
+USE_TOOLS+=	gtar
 INSTALLATION_DIRS=	lib/X11/fonts
 
 do-install:

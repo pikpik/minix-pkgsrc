@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/30 01:50:10 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/07/02 10:48:20 wiz Exp $
 
 PKGNAME=		postgresql74-client-${BASE_VERS}
 PKGREVISION=		# empty
@@ -10,7 +10,7 @@ COMMENT=		PostgreSQL database client programs
 # XXX work around core dumps with the native libedit
 USE_GNU_READLINE=	yes
 
-PKGSRC_USE_TOOLS+=	tar
+USE_TOOLS+=		tar
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
 CONFIGURE_ARGS+=	--with-zlib
 CONFIGURE_ARGS+=	--with-readline
