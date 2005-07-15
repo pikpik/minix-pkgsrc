@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:07:41 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/05/22 20:51:45 jlam Exp $
 #
 
 DISTNAME=		geda-gnetlist-${PKGVERSION}
@@ -11,8 +11,7 @@ COMMENT=		Netlist generation program
 
 DEPENDS+=		geda-symbols-${PKGVERSION}:../../cad/geda-symbols
 # needs GNU m4 for the PCBboard netlister
-USE_TOOLS+=		gm4
-TOOLS_DEPMETHOD.gm4=	DEPENDS
+USE_TOOLS+=		gm4:run
 
 .include "../../cad/geda/Makefile.common"
 
