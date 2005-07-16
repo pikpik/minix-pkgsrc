@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:48:02 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/19 20:12:05 kristerw Exp $
 #
 
 DISTNAME=	screws-0.56
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.nopcode.org/?t=screws
 COMMENT=	SCRipt Enhanced Web Server
 
 USE_PKGINSTALL=	YES
+USE_TOOLS+=	perl:run
 
 BUILD_DEFS+=	SCREWS_USER SCREWS_GROUP
 
@@ -34,5 +35,4 @@ SUBST_SED.paths=	-e 's|/var/log|${VARBASE}/log|g'
 
 .include "options.mk"
 
-.include "../../lang/perl5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

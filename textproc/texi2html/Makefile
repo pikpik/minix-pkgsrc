@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/02/07 13:30:11 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:47:42 tv Exp $
 #
 
 DISTNAME=		texi2html-1.76
@@ -17,9 +17,9 @@ CONFLICTS=		teTeX-bin-1.0 teTeX-bin-1.0.[1234567]
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-INFO_FILES=		texi2html.info
-
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
-.include "../../lang/perl5/buildlink3.mk"
+USE_TOOLS+=		perl:run
+INFO_FILES=		texi2html.info
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/01/20 02:18:50 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:29 tv Exp $
 #
 
 DISTNAME=	stow-1.3.3
@@ -12,8 +12,8 @@ COMMENT=	Maps several separate packages into a tree without merging them
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	YES
+USE_TOOLS+=	perl:run
 
 INFO_FILES=	stow.info
 
-.include "../../lang/perl5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

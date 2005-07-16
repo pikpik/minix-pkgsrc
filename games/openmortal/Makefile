@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/01 18:02:51 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/16 01:19:10 jlam Exp $
 #
 
 DISTNAME=	openmortal-0.7
@@ -20,6 +20,5 @@ REPLACE_PERL=	data/script/*.pl
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../lang/perl5/buildlink3.mk"
 .include "../../net/SDL_net/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

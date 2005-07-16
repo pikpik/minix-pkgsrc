@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/04/11 21:45:09 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/16 06:57:43 jlam Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
@@ -14,6 +14,7 @@ COMMENT=	Convert .rpm files for extraction with cpio, needs just perl
 WRKSRC=		${WRKDIR}
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
+USE_TOOLS+=	perl:run
 REPLACE_PERL=	rpm2cpio
 
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} .
@@ -27,5 +28,4 @@ do-build:
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/rpm2cpio ${PREFIX}/bin/rpm2cpio.pl
 
-.include "../../lang/perl5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
