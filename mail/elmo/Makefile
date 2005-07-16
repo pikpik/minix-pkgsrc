@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2005/02/05 22:36:26 jdolecek Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:18 tv Exp $
 #
 
-DISTNAME=		elmo-1.3.1
+DISTNAME=		elmo-1.3.2
 PKGREVISION=		# empty
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=elmo/}
@@ -16,6 +16,8 @@ GNU_CONFIGURE=		yes
 REPLACE_PERL=		elmoconf.pl
 
 CONFIGURE_ARGS+=	--with-gpgme-prefix=${BUILDLINK_PREFIX.gpgme}
+# I get segmentation faults when not compiled with debug enabled
+CONFIGURE_ARGS+=	--enable-debug
 
 SUBST_CLASSES=		tux
 SUBST_STAGE.tux=	post-patch
