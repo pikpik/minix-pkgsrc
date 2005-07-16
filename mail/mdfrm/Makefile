@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:19:43 agc Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/16 06:58:03 jlam Exp $
 #
 
 DISTNAME=	mdfrm.pl
@@ -15,7 +15,7 @@ DEPENDS+=       p5-TimeDate-[0-9]*:../../time/p5-TimeDate
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 WRKSRC=		${WRKDIR}
-USE_PERL5=	yes
+USE_TOOLS+=	perl:run
 NO_BUILD=	yes
 
 INSTALLATION_DIRS=	bin

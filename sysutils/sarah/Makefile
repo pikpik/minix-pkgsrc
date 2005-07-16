@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:50 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/17 03:50:35 jlam Exp $
 
 DISTNAME=	sarah-0.7b
 CATEGORIES=	sysutils
@@ -14,7 +14,7 @@ NO_BIN_ON_FTP=	${RESTRICTED}
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
-USE_PERL5=	YES
+USE_TOOLS+=	perl:run
 REPLACE_PERL=	sarah
 NO_BUILD=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4.2.1 2005/03/28 05:55:03 snj Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/05/25 17:06:48 bouyer Exp $
 #
 
 DISTNAME=		netdisco-0.94_with_mibs
@@ -30,7 +30,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME}
 
 EGDIR=			${PREFIX}/share/examples/${PKGNAME_NOREV}
 
-USE_PERL5=	yes
+USE_TOOLS+=	perl:run
 REPLACE_PERL=	bin/doc_munge
 REPLACE_PERL+=  bin/test_cdp.pl
 REPLACE_PERL+=  bin/test_fwtable.pl

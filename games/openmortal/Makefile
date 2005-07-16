@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/05/22 20:08:02 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/01 18:02:51 jlam Exp $
 #
 
 DISTNAME=	openmortal-0.7
@@ -12,8 +12,7 @@ HOMEPAGE=	http://apocalypse.rulez.org/~upi/Mortal/
 COMMENT=	Parody of Mortal Kombat with real characters
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake
-USE_PERL5=	yes
+USE_TOOLS+=	gmake perl:run
 
 REPLACE_PERL=	data/script/*.pl
 

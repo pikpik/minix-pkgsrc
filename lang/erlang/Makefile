@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/06/01 18:02:58 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/07/12 09:40:46 wiz Exp $
 
 DISTNAME=		otp_src_R9C-0
 PKGNAME=		erlang-9.2
@@ -12,9 +12,8 @@ COMMENT=		Concurrent functional programming language
 
 DIST_SUBDIR=		erlang
 
-USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake perl:run
 USE_JAVA=		yes
 USE_JAVA2=		yes
 

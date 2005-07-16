@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/24 18:15:32 kim Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/17 03:50:34 jlam Exp $
 #
 
 DISTNAME=		pflogsumm-1.1.0
@@ -14,7 +14,7 @@ DEPENDS+=		p5-Date-Calc-[0-9]*:../../devel/p5-Date-Calc
 .include "../../mk/bsd.prefs.mk"
 
 NO_CONFIGURE=		# defined
-USE_PERL5=		# defined
+USE_TOOLS+=		perl:run
 INSTALLATION_DIRS=	man/man1 sbin
 
 do-build:

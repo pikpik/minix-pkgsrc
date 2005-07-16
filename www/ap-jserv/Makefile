@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2004/12/29 15:42:38 minskim Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/22 20:08:44 jlam Exp $
 
 DISTNAME=	ApacheJServ-1.1.2
 PKGNAME=	ap-jserv-1.1.2
@@ -12,9 +12,8 @@ COMMENT=	Older Java Servlet engine for Apache Server
 DEPENDS+=	{apache-1.3.9*,apache-1.3.[1-9][0-9]*,apache6-1.3.9*,apache6-1.3.[1-9][0-9]*}:../../www/apache
 # yes, this needs _exactly_ version 2.0
 DEPENDS+=	jsdk-2.0:../../www/jsdk20
-USE_PERL5=	build	# for "apxs"
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/src/scripts/build/unix/ltconfig
 GNU_CONFIGURE=		yes

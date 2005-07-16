@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/06/01 18:02:57 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2005/07/13 18:01:31 jlam Exp $
 
 .include "../../graphics/ImageMagick/Makefile.common"
 
@@ -18,7 +18,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LIBTOOL=		YES
 
-USE_PERL5=		run
 PERL5_CONFIGURE=	NO
 PERL5_PACKLIST=		auto/Image/Magick/.packlist
 

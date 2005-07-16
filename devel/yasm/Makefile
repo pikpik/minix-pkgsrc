@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:34 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:39 tv Exp $
 #
 
 DISTNAME=	yasm-0.2.2
@@ -14,7 +14,7 @@ BUILD_USES_MSGFMT=	YES
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-USE_PERL5=		build
+USE_TOOLS+=		perl
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

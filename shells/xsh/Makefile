@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:31 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:40 jlam Exp $
 
 DISTNAME=	XML-XSH-1.8.2
 PKGNAME=	${DISTNAME:S/XML-XSH/xsh/}
@@ -16,7 +16,6 @@ DEPENDS+=	p5-XML-LibXML-Iterator-[0-9]*:../../textproc/p5-XML-LibXML-Iterator
 DEPENDS+=	p5-XML-NodeFilter-[0-9]*:../../textproc/p5-XML-NodeFilter
 DEPENDS+=	p5-XML-LibXML-XPathContext-[0-9]*:../../textproc/p5-XML-LibXML-XPathContext
 
-USE_PERL5=	yes
 USE_TOOLS+=	gmake
 PKG_SHELL=	${PREFIX}/bin/xsh
 

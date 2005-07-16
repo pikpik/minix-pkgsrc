@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/01 18:02:53 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/17 04:49:46 jlam Exp $
 #
 
 DISTNAME=	zoom-1.0.1
@@ -18,8 +18,7 @@ COMMENT=		Plays Infocom-compatible games, with graphics support
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake
-USE_PERL5=		build
+USE_TOOLS+=		gmake perl
 
 .if ${MACHINE_ARCH} == "alpha"
 GCC_REQD+=		3.0

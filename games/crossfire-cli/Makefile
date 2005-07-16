@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/06/17 04:49:46 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/07/15 18:27:50 jlam Exp $
 #
 
 DISTNAME=	crossfire-client-1.0.0
@@ -17,8 +17,7 @@ CF_SRC=		crossfire-client-1.0.0.tar.gz
 CF_SND=		client-0.95.2-au-sounds.tgz
 CF_RAW=		client-0.95.2-raw-sounds.tgz
 
-USE_PERL5=	yes
-USE_TOOLS+=	gmake gtar
+USE_TOOLS+=	gmake gtar perl:run
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-sound-dir=${PREFIX}/share/cfclient/sounds
 

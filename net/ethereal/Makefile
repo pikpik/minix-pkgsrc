@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2005/06/01 18:03:07 jlam Exp $
+# $NetBSD: Makefile,v 1.110 2005/07/13 10:01:53 drochner Exp $
 
 DISTNAME=		ethereal-0.10.11
 PKGREVISION=		1
@@ -22,7 +22,7 @@ MAINTAINER=		frueauf@NetBSD.org
 HOMEPAGE=		http://www.ethereal.com/
 COMMENT=		Network protocol analyzer
 
-USE_PERL5=		build
+USE_TOOLS+=		perl
 
 USE_LIBTOOL=		YES
 SHLIBTOOL_OVERRIDE=	libtool

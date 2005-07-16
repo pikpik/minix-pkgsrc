@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/05/31 11:24:33 dillo Exp $
+# $NetBSD: Makefile,v 1.24 2005/06/01 20:08:01 jlam Exp $
 
 # NOTE:  This package is modeled on ../openssh, but does not share
 # files with it as that package may update faster than the gssapi
@@ -31,8 +31,6 @@ CONFLICTS+=		ssh-[0-9]* ssh6-[0-9]* ssh2-[0-9]*
 CONFLICTS+=		openssh-[0-9]*
 CONFLICTS+=		lsh>2.0
 
-USE_PERL5=		build
-
 CRYPTO=			yes
 KERBEROS=		yes
 
@@ -57,7 +55,7 @@ MANDIR=			man
 PLIST_SUBST+=		MANDIR=${MANDIR}
 
 USE_PKGINSTALL=		yes
-USE_TOOLS+=		autoconf
+USE_TOOLS+=		autoconf perl
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--mandir=${PREFIX}/${MANDIR}

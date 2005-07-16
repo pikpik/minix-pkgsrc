@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/04/11 21:47:31 tv Exp $
+# $NetBSD: Makefile,v 1.29 2005/05/22 20:08:34 jlam Exp $
 
 DISTNAME=	xps-4.2
 CATEGORIES=	sysutils
@@ -8,8 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://motif-pstree.sourceforge.net/
 COMMENT=	Displays the Unix process list as a hierarchical tree
 
-USE_TOOLS+=		gmake
-USE_PERL5=		build
+USE_TOOLS+=		gmake perl
 GNU_CONFIGURE=		yes
 
 .include "../../mk/motif.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/06/01 18:03:28 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2005/07/06 18:01:37 drochner Exp $
 #
 
 DISTNAME=		gnome-desktop-2.10.2
@@ -15,8 +15,7 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake
-USE_PERL5=		yes
+USE_TOOLS+=		gmake perl:run
 USE_LIBTOOL=		yes
 
 BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.0

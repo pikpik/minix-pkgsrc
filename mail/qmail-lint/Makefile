@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/08/30 16:49:45 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/16 06:58:08 jlam Exp $
 #
 
 DISTNAME=	qmail-lint-0.55
@@ -14,7 +14,7 @@ COMMENT=	Examine the qmail configuration for common errors
 EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 WRKSRC=		${WRKDIR}
-USE_PERL5=	yes
+USE_TOOLS+=	perl:run
 REPLACE_PERL=	${DISTNAME}
 NO_BUILD=	yes
 

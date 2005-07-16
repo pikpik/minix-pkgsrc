@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/03/26 02:27:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/16 06:58:02 jlam Exp $
 #
 
 DISTNAME=		YoSucker-pr37
@@ -16,7 +16,7 @@ DEPENDS+=		p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 DEPENDS+=		p5-IO-Socket-SSL-[0-9]*:../../security/p5-IO-Socket-SSL
 DEPENDS+=		p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 
-USE_PERL5=		# defined
+USE_TOOLS+=		perl:run
 REPLACE_PERL=		bin/EncProxyPasswd bin/EncPasswd bin/YoSucker
 
 NO_BUILD=		# defined

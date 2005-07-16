@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:30:06 grant Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:45 jlam Exp $
 #
 
 DISTNAME=	cvs2p4-2.3.3
@@ -17,7 +17,7 @@ DEPENDS+=	rcs-[0-9]*:../../devel/rcs
 .endif
 
 USE_PKGINSTALL=	yes
-USE_PERL5=	yes
+USE_TOOLS+=	perl:run
 NO_BUILD=	yes
 
 DOCDIR=		share/doc/${PKGBASE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/02/10 02:22:49 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2004/03/26 02:27:35 wiz Exp $
 
 DISTNAME=	esms-0.9.5
 PKGREVISION=	1
@@ -15,7 +15,7 @@ DEPENDS+=	p5-HTML-Tree>=3.11:../../www/p5-HTML-Tree
 
 GNU_CONFIGURE=	YES
 
-USE_PERL5=	YES
+USE_TOOLS+=	perl:run
 PERL5_REQD+=	5.6.1
 REPLACE_PERL=	esms
 

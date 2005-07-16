@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/05/22 20:08:46 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/06/01 20:08:01 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
@@ -33,7 +33,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}-stable
 USE_TOOLS+=		autoconf213 gmake
 MAKEFILE=		GNUmakefile
 
-USE_PERL5=		build
+USE_TOOLS+=		perl
 
 PTHREAD_AUTO_VARS=	yes
 PTHREAD_OPTS+=		require

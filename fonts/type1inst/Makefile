@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:52 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/17 04:49:46 jlam Exp $
 #
 
 DISTNAME=		type1inst-0.6.1
@@ -8,8 +8,8 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=X11/xutils/}
 MAINTAINER=		groo@NetBSD.org
 COMMENT=		Automatically generate fonts.scale/fonts.dir for Type1 fonts
 
-USE_PERL5=		yes
 USE_X11BASE=		yes
+USE_TOOLS+=		perl:run
 REPLACE_PERL=		t1embed type1inst
 
 NO_BUILD=		yes
