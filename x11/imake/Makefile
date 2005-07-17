@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/07/31 02:28:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:48:08 tv Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	imake-${XF_VER}
@@ -61,12 +61,13 @@ do-build:
 	${MAKE_PROGRAM} -f xmakefile VerifyOS version.def Makefiles includes
 
 post-install:
-	@${CP} ${X11ROOT}/lib/X11/config/host.def		\
-		${X11ROOT}/lib/X11/config/host.def.orig
-	@${SED} -e "s|\#define ProjectRoot ${X11ROOT}||"	\
-		${X11ROOT}/lib/X11/config/host.def.orig >	\
-		${X11ROOT}/lib/X11/config/host.def
-	@${RM} ${X11ROOT}/lib/X11/config/host.def.orig
+	${_PKG_SILENT}${_PKG_DEBUG}					\
+	hostdef=${X11ROOT:Q}/lib/X11/config/host.def;			\
+	hosttmp=${WRKSRC:Q}/host.def.tmp;				\
+	${SED} -e "s|\#define ProjectRoot ${X11ROOT}||"			\
+		"$${hostdef}" > "$${hosttmp}";				\
+	${INSTALL_DATA} "$${hosttmp}" "$${hostdef}";			\
+	${RM} -f "$${hosttmp}"
 
 	@( \
 	${ECHO};					\
