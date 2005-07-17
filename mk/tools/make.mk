@@ -1,4 +1,4 @@
-# $NetBSD: make.mk,v 1.11 2005/05/21 04:53:17 jlam Exp $
+# $NetBSD: make.mk,v 1.12 2005/06/01 18:14:23 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -56,6 +56,6 @@ MAKE_PROGRAM=		${MAKE}
 .endif
 
 TOOLS_CREATE+=		make
-TOOLS_REAL_CMD.make=	${MAKE_PROGRAM}
+TOOLS_PATH.make=	${MAKE_PROGRAM}
 
 CONFIGURE_ENV+=		MAKE=make
