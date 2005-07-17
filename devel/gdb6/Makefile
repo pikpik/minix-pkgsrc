@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:07:51 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/01 20:08:00 jlam Exp $
 #
 
 DISTNAME=		gdb-6.2.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/gdb/gdb.html
 COMMENT=		The GNU Project Debugger
+
+NOT_FOR_PLATFORM=	Darwin-*-*
 
 BUILD_USES_MSGFMT=	yes
 
