@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.1 2004/05/28 14:24:04 dillo Exp $
+$NetBSD$
 
---- source/hdtools.c.orig	2005-01-17 21:10:00.000000000 +0100
-+++ source/hdtools.c
-@@ -147,7 +147,7 @@ void DrawBranch(int obj)
+--- source/hdtools.c.orig	Mon Jan 17 21:10:00 2005
++++ source/hdtools.c	Mon Jul 18 03:09:11 2005
+@@ -147,7 +147,7 @@
  	/* Scroll the window up a line if necessary */
  	if (tree_lines>=D_SCREENHEIGHT-1)
  	{
