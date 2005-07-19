@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/12/28 23:18:19 reed Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/17 03:50:45 jlam Exp $
 
 DISTNAME=	xdaemon-2.0
 PKGREVISION=	2
@@ -10,7 +10,7 @@ MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://www.NetBSD.org/
 COMMENT=	BSD Daemon sticking on your desktop (like xteddy)
 
-DEPENDS+=	xteddy-2.*:../xteddy2
+DEPENDS+=	xteddy-2.*:../../x11/xteddy2
 
 CONFLICT+=	xdaemon-1.*
 
