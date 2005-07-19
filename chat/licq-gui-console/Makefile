@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/02/21 20:26:10 hubertf Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:05 tv Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -12,7 +12,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.licq.org/
 COMMENT=	Curses GUI for licq
 
-DEPENDS+=	licq-core-[0-9]*:../licq-core
+DEPENDS+=	licq-core-[0-9]*:../../chat/licq-core
 
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
