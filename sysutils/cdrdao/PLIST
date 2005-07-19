@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2004/06/20 19:05:25 dillo Exp $
+@comment $NetBSD: PLIST.cdrdao,v 1.1 2005/06/04 19:05:38 adrianp Exp $
 bin/cdrdao
 bin/cue2toc
 bin/toc2cddb
