@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:09 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:20 jlam Exp $
 #
 
 DISTNAME=	teTeX-1.0.7
@@ -11,8 +11,8 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Thomas Esser's TeX distribution for UNIX compatible systems
 
-DEPENDS+=	teTeX-bin-1.0.[7-9]*:../teTeX1-bin
-DEPENDS+=	teTeX-sharesrc-1.0.[1-9]*:../teTeX1-sharesrc
+DEPENDS+=	teTeX-bin-1.0.[7-9]*:../../print/teTeX1-bin
+DEPENDS+=	teTeX-sharesrc-1.0.[1-9]*:../../print/teTeX1-sharesrc
 DEPENDS+=	texi2html>=1.52:../../textproc/texi2html
 
 EXTRACT_ONLY=   # empty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:47:39 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/07/13 18:01:43 jlam Exp $
 #
 
 DISTNAME=	XML-Node-0.10
@@ -13,7 +13,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://belmont-shores.ics.uci.edu/XML::Node/
 COMMENT=	Node-based XML parsing: an simplified interface to XML::Parser
 
-DEPENDS+=	p5-XML-Parser-2.*:../p5-XML-Parser
+DEPENDS+=	p5-XML-Parser-2.*:../../textproc/p5-XML-Parser
 
 PERL5_PACKLIST=		auto/XML/Node/.packlist
 

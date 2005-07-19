@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2004/03/05 19:04:30 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:11 tv Exp $
 #
 .include "Makefile.common"
 
 PKGNAME:=	Canna-${CANNA_VERSION}
 
-DEPENDS+=	Canna-server>=${CANNA_VERSION}:../canna-server
-DEPENDS+=	Canna-dict>=${CANNA_VERSION}:../canna-dict
+DEPENDS+=	Canna-server>=${CANNA_VERSION}:../../inputmethod/canna-server
+DEPENDS+=	Canna-dict>=${CANNA_VERSION}:../../inputmethod/canna-dict
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	YES

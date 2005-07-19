@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/28 23:25:14 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/07 13:34:06 hubertf Exp $
 
 DISTNAME=	tetex-src-3.0
 PKGNAME=	${DISTNAME:C/tetex/teTeX/:C/src/bin/}
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	TeX distribution for UNIX compatible systems - binaries
 
 BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
-DEPENDS+=	teTeX-texmf>=3.0:../teTeX3-texmf
+DEPENDS+=	teTeX-texmf>=3.0:../../print/teTeX3-texmf
 DEPENDS+=	dialog-0.6z*:../../misc/dialog
 
 # games/omega previously installed an omega executable too

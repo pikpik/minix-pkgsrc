@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/15 19:11:35 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/07/15 18:27:53 jlam Exp $
 
 DISTNAME=	teTeX-texmfsrc-1.0.1
 PKGNAME=	teTeX-sharesrc-1.0.1
@@ -10,7 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Sources for machine-independent part of teTeX
 
-DEPENDS+=	teTeX-share-1.0.[2-9]*:../teTeX1-share
+DEPENDS+=	teTeX-share-1.0.[2-9]*:../../print/teTeX1-share
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	teTeX

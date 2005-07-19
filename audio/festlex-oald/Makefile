@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2004/01/20 12:07:41 agc Exp $
+# $NetBSD: Makefile,v 1.14 2004/02/21 06:20:11 snj Exp $
 
 DISTNAME=	festlex_OALD
 PKGNAME=	festlex-oald-1.4.0
@@ -10,7 +10,7 @@ MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
 COMMENT=	Oxford Advanced Learner's pronunciation dictionary for Festival
 
-DEPENDS+=	festival>=1.4.0:../festival
+DEPENDS+=	festival>=1.4.0:../../audio/festival
 
 LICENSE=	no-commercial-use
 

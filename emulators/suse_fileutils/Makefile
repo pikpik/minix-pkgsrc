@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2003/07/17 21:36:06 grant Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/02 14:25:39 dmcmahill Exp $
 
 DISTNAME=		suse_fileutils-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package - fileutils
 
-DEPENDS+=		suse_base>=${SUSE_VERSION}:../suse_base
+DEPENDS+=		suse_base>=${SUSE_VERSION}:../../emulators/suse_base
 
 ONLY_FOR_PLATFORM=      NetBSD-*-i386 NetBSD-*-powerpc
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2004/09/29 13:10:23 hubertf Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/17 03:50:30 jlam Exp $
 #
 
 DISTNAME=	jadetex-3.13
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jadetex/}
 MAINTAINER=	hubertf@NetBSD.org
 COMMENT=	Process tex files produced by the TeX backend of Jade
 
-DEPENDS+=	tex-hugelatex>=1.0nb1:../tex-hugelatex
+DEPENDS+=	tex-hugelatex>=1.0nb1:../../print/tex-hugelatex
 
 NO_BUILD=	yes
 TEXMF_CNF=	${LOCALBASE}/share/texmf/web2c/texmf.cnf

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2003/09/23 15:06:59 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2004/01/27 00:53:11 heinz Exp $
 #
 .include "../canna/Makefile.common"
 
 CANNA_MODULE=	dict
 
-BUILD_DEPENDS+=	Canna-server>=${CANNA_VERSION}:../canna-server
+BUILD_DEPENDS+=	Canna-server>=${CANNA_VERSION}:../../inputmethod/canna-server
 
 NO_MTREE=	yes
 OWN_DIRS=	${PREFIX}/canna

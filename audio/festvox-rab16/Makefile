@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/06/07 14:47:18 cjep Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:07:42 agc Exp $
 
 DISTNAME=	festvox_rablpc16k
 PKGNAME=	festvox-rab16-1.4.0
@@ -10,9 +10,9 @@ MAINTAINER=	proff@iq.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
 COMMENT=	16khz British English male voice for festival
 
-DEPENDS+=	festival>=1.4.0:../festival
-DEPENDS+=	festlex-poslex>=1.4.0:../festlex-poslex
-DEPENDS+=	festlex-oald>=1.4.0:../festlex-oald
+DEPENDS+=	festival>=1.4.0:../../audio/festival
+DEPENDS+=	festlex-poslex>=1.4.0:../../audio/festlex-poslex
+DEPENDS+=	festlex-oald>=1.4.0:../../audio/festlex-oald
 
 CONFLICTS=	festvox-rab8-[0-9]*
 

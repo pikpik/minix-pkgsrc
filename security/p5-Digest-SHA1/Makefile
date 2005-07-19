@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:16 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/07/13 18:01:39 jlam Exp $
 #
 
 DISTNAME=		Digest-SHA1-2.10
@@ -12,7 +12,7 @@ MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Digest-SHA1/
 COMMENT=		Perl5 module for SHA1
 
-DEPENDS+=		p5-Digest>=1.00:../p5-Digest
+DEPENDS+=		p5-Digest>=1.00:../../security/p5-Digest
 
 CONFLICTS+=		p5-Digest-MD5<=2.12
 
