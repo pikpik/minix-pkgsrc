@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/04/11 21:46:14 tv Exp $
+# $NetBSD: Makefile,v 1.25 2005/05/22 20:08:09 jlam Exp $
 
 DISTNAME=		guile-1.4.1
 PKGNAME=		guile14-1.4.1
@@ -8,7 +8,7 @@ MASTER_SITES=		${MASTER_SITE_GNU:=guile/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/guile/guile.html
-COMMENT=		GNU's Ubiquitous Intelligent Language for Extension
+COMMENT=		GNU's Ubiquitous Intelligent Language for Extension (old version)
 
 GNU_CONFIGURE=		YES
 GNU_CONFIGURE_PREFIX=	${LOCALBASE}/guile/1.4
