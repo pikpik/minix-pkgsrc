@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/09/21 08:53:35 jmc Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:25:33 agc Exp $
 #
 
 DISTNAME=	AiSSLtelnet-0.15
@@ -22,5 +22,13 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/AiSSLtelnet
 	${INSTALL_DATA} ${WRKSRC}/aicrypto/COPYRIGHT ${WRKSRC}/README \
 	${WRKSRC}/README-j ${PREFIX}/share/doc/AiSSLtelnet
+
+# The sources assume <malloc.h> exists.  Create a fake one for platforms
+# that don't have it.
+post-wrapper:
+	if ${TEST} ! -f /usr/include/malloc.h; then		\
+		${ECHO} "#include <stdlib.h>"			\
+			> ${BUILDLINK_DIR}/include/malloc.h;	\
+	fi
 
 .include "../../mk/bsd.pkg.mk"
