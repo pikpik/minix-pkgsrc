@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Imakefile.orig	Thu Nov 25 17:56:14 1999
-+++ Imakefile	Thu Nov 25 23:43:28 1999
-@@ -11,6 +11,6 @@
+--- Imakefile.orig	Mon Jan 24 04:15:17 2000
++++ Imakefile	Wed Jul 20 18:31:03 2005
+@@ -11,9 +11,9 @@
  SYS_LIBRARIES = MathLibrary
  LOCAL_LIBRARIES = $(XLIB)
  
@@ -11,3 +11,6 @@ $NetBSD$
  
 -ComplexProgramTarget(xcruise)
 +ComplexProgramTargetNoMan(xcruise)
+ 
+ distclean:: clean
+ 	$(RM) Makefile *.bak *.orig
