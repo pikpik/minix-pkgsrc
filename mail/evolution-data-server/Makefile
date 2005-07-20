@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/06/29 23:43:13 salo Exp $
+# $NetBSD: Makefile,v 1.23 2005/07/04 20:09:30 drochner Exp $
 #
 
 DISTNAME=	evolution-data-server-1.2.3
@@ -11,6 +11,7 @@ HOMEPAGE=	http://ximian.com/products/evolution/
 COMMENT=	Evolution data server
 
 BUILD_USES_MSGFMT=	yes
+USE_MSGFMT_PLURALS=	yes
 
 BUILDLINK_DEPENDS.libsoup-devel+=	libsoup-devel>=2.2.3
 
