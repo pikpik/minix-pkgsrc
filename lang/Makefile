@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.216 2005/06/24 05:56:26 jlam Exp $
+# $NetBSD: Makefile,v 1.217 2005/06/24 06:43:44 jlam Exp $
 #
 
 COMMENT=	Programming languages
@@ -177,5 +177,6 @@ SUBDIR+=	vscm
 SUBDIR+=	vslisp
 SUBDIR+=	win32-jdk
 SUBDIR+=	yabasic
+SUBDIR+=	yap
 
 .include "../mk/bsd.pkg.subdir.mk"
