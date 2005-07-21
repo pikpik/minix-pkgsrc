@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:45:50 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:08:01 jlam Exp $
 #
 
 DISTNAME=	gtetrinet-0.7.7
@@ -33,6 +33,6 @@ GCONF2_SCHEMAS=		gtetrinet.schemas
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/05/22 20:07:51 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/06/01 18:02:43 jlam Exp $
 #
 # Check the API before updating this package!  gal-2.5 and above should
 # get their own gal26 package!
@@ -29,7 +29,7 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"

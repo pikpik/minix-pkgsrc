@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/25 12:21:20 markd Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:35 tv Exp $
 
 DISTNAME=	kdeaccessibility-${_KDE_VERSION}
 CATEGORIES=	misc
@@ -23,7 +23,7 @@ PLIST_SUBST+=		HAVE_GST="@comment "
 .endif
 
 .include "../../meta-pkgs/kde3/kde3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

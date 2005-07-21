@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/04/06 15:02:05 adam Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:11 tv Exp $
 
 DISTNAME=	dbh-1.0.24
 CATEGORIES=	databases
@@ -22,5 +22,5 @@ post-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} doc/dbh-hash-tables.html \
 		${PREFIX}/share/doc/dbh/html
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

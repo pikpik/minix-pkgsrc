@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.common,v 1.1 2005/06/03 15:40:31 jmmv Exp $
 
 DISTNAME=	libdv-0.104
 CATEGORIES=	multimedia
@@ -32,7 +32,7 @@ LIBS+=		${LIBOSSAUDIO}
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

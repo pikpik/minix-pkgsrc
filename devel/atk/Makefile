@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/05/10 16:37:16 drochner Exp $
+# $NetBSD: Makefile,v 1.39 2005/05/22 20:07:48 jlam Exp $
 #
 
 DISTNAME=		atk-1.10.1
@@ -31,6 +31,6 @@ BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.3
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

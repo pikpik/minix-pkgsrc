@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/04/19 00:17:40 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2005/05/22 20:07:51 jlam Exp $
 
 DISTNAME=	g-wrap-1.9.6
 CATEGORIES=	devel
@@ -23,6 +23,6 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/guile/site/g-wrap/guile/ws
 
 .include "../../devel/glib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

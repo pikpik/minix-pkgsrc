@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/06/01 18:03:22 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/06/01 20:08:01 jlam Exp $
 #
 
 DISTNAME=	gnome-system-monitor-2.10.1
@@ -30,7 +30,7 @@ pre-configure:
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/libwnck/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../sysutils/libgtop2/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:18:09 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:12 tv Exp $
 #
 
 DISTNAME=	gpass-0.4.4
@@ -18,7 +18,7 @@ USE_PKGLOCALEDIR=	YES
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

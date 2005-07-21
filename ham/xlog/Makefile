@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:46:11 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/22 20:08:08 jlam Exp $
 #
 
 DISTNAME=	xlog-1.0
@@ -15,7 +15,7 @@ USE_TOOLS+=	gmake
 
 CONFIGURE_ARGS=	--enable-hamlib
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../ham/hamlib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../print/libgnomeprint/buildlink3.mk"

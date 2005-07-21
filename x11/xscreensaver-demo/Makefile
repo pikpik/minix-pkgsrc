@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/23 20:19:14 hira Exp $
+# $NetBSD: Makefile,v 1.18 2005/06/28 10:03:14 wiz Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-demo-/}
@@ -24,7 +24,7 @@ post-install:
 		       ${PREFIX}/man/man1/xscreensaver-demo.1
 
 .include "../../devel/libglade2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/xscreensaver/buildlink3.mk"

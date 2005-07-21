@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/04 16:50:34 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:06 jlam Exp $
 
 DISTNAME=	kipi-plugins-0.1.0-beta2
 PKGNAME=	kipi-plugins-0.1.0beta2
@@ -30,7 +30,7 @@ pre-build:
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../devel/libgphoto2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../graphics/imlib2/buildlink3.mk"
 .include "../../graphics/libkexif/buildlink3.mk"

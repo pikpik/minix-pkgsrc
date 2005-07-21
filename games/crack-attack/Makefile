@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/19 06:49:33 snj Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:49 jlam Exp $
 
 DISTNAME=	crack-attack-1.1.14
 CATEGORIES=	games
@@ -16,7 +16,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/html/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/*.jpg ${PREFIX}/share/doc/html/${PKGBASE}
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/Mesa/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 

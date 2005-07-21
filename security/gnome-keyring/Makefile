@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/22 15:58:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:47:11 tv Exp $
 #
 
 DISTNAME=	gnome-keyring-0.4.2
@@ -20,6 +20,6 @@ PKGCONFIG_OVERRIDE=	${WRKSRC}/gnome-keyring-1.pc.in
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

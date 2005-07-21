@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/05/22 20:07:39 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/06/01 18:02:38 jlam Exp $
 #
 
 DISTNAME=	streamtuner-0.99
@@ -23,7 +23,7 @@ GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	extras/streamtuner.pc.in
 
 .include "../../audio/taglib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../lang/python/pyversion.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"

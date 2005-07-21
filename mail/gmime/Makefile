@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:19 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:12 jlam Exp $
 #
 
 DISTNAME=	gmime-2.1.9
@@ -21,6 +21,6 @@ PKGCONFIG_OVERRIDE+=	gmime-2.0.pc.in
 .include "options.mk"
 
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

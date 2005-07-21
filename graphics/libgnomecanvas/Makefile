@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/06/01 18:02:56 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2005/07/04 20:06:29 drochner Exp $
 #
 
 DISTNAME=		libgnomecanvas-2.10.2
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

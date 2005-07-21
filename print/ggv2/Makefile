@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/05/22 20:08:27 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2005/06/01 18:03:09 jlam Exp $
 #
 
 DISTNAME=		ggv-2.8.4
@@ -24,7 +24,7 @@ GCONF2_SCHEMAS= 	ggv.schemas
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../net/ORBit2/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/intltool/buildlink3.mk"

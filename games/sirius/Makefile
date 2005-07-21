@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/05/22 20:08:03 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/06/01 18:02:52 jlam Exp $
 #
 
 DISTNAME=	sirius-0.8.0
@@ -21,7 +21,7 @@ USE_PKGLOCALEDIR=	YES
 .include "../../devel/GConf2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

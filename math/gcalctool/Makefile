@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/06/21 18:18:57 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/07/18 00:09:38 kristerw Exp $
 #
 
 DISTNAME=		gcalctool-5.5.42
@@ -34,7 +34,7 @@ post-wrapper:
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"

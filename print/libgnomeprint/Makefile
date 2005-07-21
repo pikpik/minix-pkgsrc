@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/05/22 20:08:28 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2005/06/01 18:03:20 jlam Exp $
 #
 
 DISTNAME=	libgnomeprint-2.10.3
@@ -52,7 +52,7 @@ PRINT_PLIST_AWK+=	/cups/ { print "$${USE_CUPS}" $$0; next; }
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"

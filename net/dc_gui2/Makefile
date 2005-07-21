@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/04/11 21:46:45 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/05/22 20:08:23 jlam Exp $
 #
 
 DISTNAME=	dc_gui2-0.75
@@ -35,5 +35,5 @@ post-configure:
 .include "../../databases/db4/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

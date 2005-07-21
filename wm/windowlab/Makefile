@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/22 20:08:44 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/01 18:03:26 jlam Exp $
 #
 
 DISTNAME=	windowlab-1.12
@@ -23,7 +23,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/menurc.sample ${EGDIR}/menurc.default
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../fonts/Xft2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

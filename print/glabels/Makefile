@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/29 04:48:24 reed Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/22 20:08:28 jlam Exp $
 #
 
 DISTNAME=		glabels-2.0.2
@@ -18,7 +18,7 @@ USE_TOOLS+=		gmake
 .include "../../databases/shared-mime-info/mimedb.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"

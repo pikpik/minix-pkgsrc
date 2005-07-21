@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/05/22 20:07:38 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/05/31 21:59:20 rillig Exp $
 
 DISTNAME=	liteamp-0.2.4.2
 PKGREVISION=	1
@@ -23,7 +23,7 @@ CPPFLAGS+=		-UGTK_DISABLE_DEPRECATED
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

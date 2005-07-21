@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/05/22 20:08:18 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/07/16 01:19:15 jlam Exp $
 #
 
 DISTNAME=	kmplayer-0.8.4b
@@ -30,7 +30,7 @@ SUBST_STAGE.desktop=	pre-configure
 SUBST_FILES.desktop=	src/kmplayer.desktop
 SUBST_SED.desktop=	-e 's|@PREFIX@|${PREFIX}|g'
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"

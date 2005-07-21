@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/01/11 03:16:24 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/11 21:45:02 tv Exp $
 #
 
 DISTNAME=		geda-gsymcheck-${PKGVERSION}
@@ -20,5 +20,5 @@ USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../cad/libgeda/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

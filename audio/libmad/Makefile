@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:07 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:44:54 tv Exp $
 #
 
 DISTNAME=	libmad-0.15.1b
@@ -31,5 +31,5 @@ post-build:
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/mad.pc ${PREFIX}/lib/pkgconfig
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

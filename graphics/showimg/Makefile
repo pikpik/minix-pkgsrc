@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/05/04 17:00:06 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:07 jlam Exp $
 #
 
 DISTNAME=	showimg-0.9.4-1
@@ -18,7 +18,7 @@ GNU_CONFIGURE=	YES
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../graphics/libkexif/buildlink3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"

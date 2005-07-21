@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2005/06/01 18:21:10 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2005/06/06 14:53:19 hira Exp $
 
 DISTNAME=		evolution-2.2.2
 PKGREVISION=		1
@@ -121,7 +121,7 @@ LDFLAGS+=	-lsemaphore
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../mail/evolution-data-server/buildlink3.mk"

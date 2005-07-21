@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:07:56 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/06/01 18:02:45 jlam Exp $
 #
 
 DISTNAME=		gconf-editor-2.10.0
@@ -30,7 +30,7 @@ BUILDLINK_DEPENDS.GConf2+=	GConf2>=2.10.0
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"

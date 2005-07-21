@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/26 20:15:04 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2005/06/01 18:03:23 jlam Exp $
 
 DISTNAME=	gtkspell-2.0.10
 CATEGORIES=	textproc devel
@@ -20,7 +20,7 @@ SUBST_FILES.subdir=	Makefile.in
 SUBST_SED.subdir=	-e 's|SUBDIRS = gtkspell examples docs|SUBDIRS = gtkspell|'
 
 .include "../../devel/pango/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 

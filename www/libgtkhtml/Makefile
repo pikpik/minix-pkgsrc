@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/05/22 20:08:45 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2005/06/01 18:03:26 jlam Exp $
 #
 
 DISTNAME=	libgtkhtml-2.6.3
@@ -19,7 +19,7 @@ USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	libgtkhtml-2.0.pc.in
 
 .include "../../devel/gail/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

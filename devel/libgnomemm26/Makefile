@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:45:26 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:52 jlam Exp $
 #
 
 DISTNAME=		libgnomemm-2.6.0
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../x11/gtkmm24/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

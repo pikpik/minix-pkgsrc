@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/11/15 14:26:31 reed Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:27 tv Exp $
 
 DISTNAME=	libstatgrab-0.11
 CATEGORIES=	devel
@@ -40,5 +40,5 @@ PLIST_SUBST+=		SAIDAR=""
 .include "../../devel/ncurses/buildlink3.mk"
 .endif
 
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

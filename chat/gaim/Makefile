@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2005/07/08 09:39:47 grant Exp $
+# $NetBSD: Makefile,v 1.91 2005/07/09 03:56:12 grant Exp $
 
 DISTNAME=	gaim-1.4.0
 CATEGORIES=	chat x11
@@ -46,7 +46,7 @@ CONFIGURE_ARGS+=	--disable-screensaver
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/nss/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/silc-toolkit/buildlink3.mk"
 .include "../../textproc/gtkspell/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

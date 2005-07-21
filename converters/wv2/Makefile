@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:10 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/05/22 02:45:58 minskim Exp $
 #
 
 DISTNAME=		wv2-0.2.2
@@ -23,5 +23,5 @@ CONFIGURE_ARGS.gnu-iconv=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/libgsf/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

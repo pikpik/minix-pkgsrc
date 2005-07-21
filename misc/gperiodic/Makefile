@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:08:15 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/06/01 18:03:05 jlam Exp $
 
 DISTNAME=		gperiodic-2.0.8
 CATEGORIES=		misc x11
@@ -23,6 +23,6 @@ MAKE_ENV+=		PKGLOCALEDIR=${PKGLOCALEDIR}
 BUILD_TARGET=		gperiodic
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

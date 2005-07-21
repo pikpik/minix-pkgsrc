@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:07:56 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:45 jlam Exp $
 
 DISTNAME=	gtranslator-1.0.2
 CATEGORIES=	editors
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--disable-debug
 .include "../../devel/libbonoboui/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

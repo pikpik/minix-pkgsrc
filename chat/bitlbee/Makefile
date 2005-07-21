@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/05/22 20:07:41 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:41 jlam Exp $
 #
 
 DISTNAME=		bitlbee-0.91
@@ -59,6 +59,6 @@ CONFIGURE_ARGS+=	--ipv6=1
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

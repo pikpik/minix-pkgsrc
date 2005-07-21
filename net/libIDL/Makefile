@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/05/22 20:08:24 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2005/05/23 01:21:26 jlam Exp $
 #
 
 DISTNAME=		libIDL-0.8.5
@@ -30,7 +30,7 @@ CONFIGURE_ENV.SunOS+=	CPP=/usr/lib/cpp
 CONFIGURE_ENV+=		F77=${FALSE}
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

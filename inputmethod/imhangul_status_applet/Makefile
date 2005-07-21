@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:11 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:08 jlam Exp $
 #
 
 DISTNAME=		imhangul_status_applet-0.2
@@ -21,7 +21,7 @@ USE_LIBTOOL=		yes
 GCONF2_SCHEMAS=		imhangul_status.schemas
 
 .include "../../devel/GConf2/schemas.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../x11/gnome-panel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

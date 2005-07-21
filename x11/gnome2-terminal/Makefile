@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/06/01 18:03:28 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/07/16 01:19:26 jlam Exp $
 #
 
 DISTNAME=		gnome-terminal-2.10.0
@@ -29,7 +29,7 @@ BUILDLINK_DEPENDS.startup-notification+=	startup-notification>=0.8
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../fonts/Xft2/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"

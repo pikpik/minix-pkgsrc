@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/05/18 18:48:37 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2005/05/22 20:08:33 jlam Exp $
 #
 
 DISTNAME=	vcdimager-0.7.22
@@ -22,7 +22,7 @@ BUILDLINK_TRANSFORM+= rm:-Wl,--version-script=libvcdinfo.la.ver
 .endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkgconfig/buildlink3.mk"
+.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../misc/libcdio/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
