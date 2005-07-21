@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2005/07/19 17:11:40 drochner Exp $
+# $NetBSD: Makefile,v 1.176 2005/07/19 17:36:06 drochner Exp $
 #
 
 COMMENT=	Databases
@@ -86,6 +86,7 @@ SUBDIR+=	p5-sybperl
 SUBDIR+=	pear-DB
 SUBDIR+=	pgaccess
 SUBDIR+=	pgpool
+SUBDIR+=	pgtcl
 SUBDIR+=	php-dba
 SUBDIR+=	php-dbase
 SUBDIR+=	php-dbx
