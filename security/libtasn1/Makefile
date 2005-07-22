@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2005/01/27 15:47:57 adam Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/11 21:47:13 tv Exp $
 
-DISTNAME=	libtasn1-0.2.13
+DISTNAME=	libtasn1-0.2.14
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/libtasn1/ \
 		ftp://ftp.gnupg.org/gcrypt/alpha/gnutls/libtasn1/ \
