@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.563 2005/07/11 03:24:04 grant Exp $
+# $NetBSD: Makefile,v 1.564 2005/07/14 23:03:50 adrianp Exp $
 #
 
 COMMENT=	Networking tools
@@ -168,6 +168,7 @@ SUBDIR+=	libradius
 SUBDIR+=	libsoup
 SUBDIR+=	libsoup-devel
 SUBDIR+=	libsscript
+SUBDIR+=	libtorrent
 SUBDIR+=	linc
 SUBDIR+=	llnlxdir
 SUBDIR+=	llnlxftp
@@ -331,6 +332,7 @@ SUBDIR+=	rootprobe
 SUBDIR+=	rp-l2tp
 SUBDIR+=	rp-pppoe
 SUBDIR+=	rsync
+SUBDIR+=	rtorrent
 SUBDIR+=	ruby-drb
 SUBDIR+=	ruby-icmp
 SUBDIR+=	ruby-xmlrpc4r
