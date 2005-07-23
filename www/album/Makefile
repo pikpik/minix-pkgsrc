@@ -1,10 +1,10 @@
-# $NetBSD $
+# $NetBSD$
 #
 
 DISTNAME=	album
 ALBUMREV=	3.07
 PKGNAME=	${DISTNAME}-${ALBUMREV}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://marginalhacks.com/bin/
 
