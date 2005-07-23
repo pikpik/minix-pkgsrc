@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.282 2005/05/21 03:17:00 grant Exp $
+# $NetBSD: Makefile,v 1.283 2005/05/21 23:20:23 augustss Exp $
 #
 
 COMMENT=	Audio tools
@@ -74,7 +74,6 @@ SUBDIR+=	flac2mp3
 SUBDIR+=	fluidsynth
 SUBDIR+=	freepats
 SUBDIR+=	freezetag
-SUBDIR+=	gdcd
 SUBDIR+=	gkrellm-volume
 SUBDIR+=	gkrellm-xmms
 SUBDIR+=	gkrellm1-volume
@@ -298,6 +297,5 @@ SUBDIR+=	xmp
 SUBDIR+=	xmradio
 SUBDIR+=	xsidplay
 SUBDIR+=	xwave
-SUBDIR+=	yamt
 
 .include "../mk/bsd.pkg.subdir.mk"

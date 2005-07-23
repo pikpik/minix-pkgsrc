@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.241 2005/05/26 08:59:42 agc Exp $
+# $NetBSD: Makefile,v 1.242 2005/06/05 22:47:19 markd Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -75,7 +75,6 @@ SUBDIR+=	gperiodic
 SUBDIR+=	granulate
 SUBDIR+=	gxmame
 SUBDIR+=	heyu
-SUBDIR+=	hitchhiker
 SUBDIR+=	ibutton-pdkit
 SUBDIR+=	iselect
 SUBDIR+=	ja-less
