@@ -1,4 +1,4 @@
-# $NetBSD $
+# $NetBSD$
 #
 
 DISTNAME=	album_themes
