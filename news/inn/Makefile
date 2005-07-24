@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/07/16 19:10:40 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2005/07/18 02:37:22 jlam Exp $
 
 DISTNAME=		inn-2.4.1
 PKGREVISION=		6
@@ -123,5 +123,6 @@ post-install:
 		${INSTALL_DATA} $$FILE ${EXAMPLEDIR};			\
 	done
 
+.include "../../lang/perl5/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
