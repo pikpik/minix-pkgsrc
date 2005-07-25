@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.80 2005/05/22 20:08:45 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.81 2005/05/25 13:45:36 fredb Exp $
 
 DISTNAME=	lynx2.8.5
 PKGNAME=	lynx-2.8.5.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://lynx.isc.org/${DISTNAME}/ \
 		ftp://ftp.nl.uu.net/pub/unix/www/lynx/${DISTNAME}/ \
@@ -29,6 +28,9 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 INSTALL_TARGET=		install-full install-lss
 MAKEFILE=       	makefile
+
+CONFIGURE_ENV+=		GZIP=${TOOLS_GZIP_CMD:Q}
+USE_TOOLS+=		gzip
 
 .include "options.mk"
 
