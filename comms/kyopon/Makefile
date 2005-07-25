@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/21 03:15:00 itohy Exp $
 
-DISTNAME=		kyopon-0.1
+DISTNAME=		kyopon-0.2
 CATEGORIES=		comms
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
