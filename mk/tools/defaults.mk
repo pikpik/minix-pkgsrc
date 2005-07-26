@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.35 2005/07/15 18:27:55 jlam Exp $
+# $NetBSD: defaults.mk,v 1.36 2005/07/15 20:14:04 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -105,6 +105,7 @@ _TOOLS_VARNAME.nroff=		NROFF
 _TOOLS_VARNAME.patch=		PATCH
 _TOOLS_VARNAME.pax=		PAX
 _TOOLS_VARNAME.perl=		PERL5
+_TOOLS_VARNAME.pod2man=		POD2MAN
 _TOOLS_VARNAME.pwd=		PWD_CMD
 _TOOLS_VARNAME.rm=		RM
 _TOOLS_VARNAME.rmdir=		RMDIR
