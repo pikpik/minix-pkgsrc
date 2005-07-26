@@ -1,4 +1,4 @@
-# $NetBSD: legacy-opt.mk,v 1.2 2005/05/31 13:33:39 dillo Exp $
+# $NetBSD: legacy-opt.mk,v 1.3 2005/07/19 10:38:19 dillo Exp $
 #
 # This file tests PKG_OPTIONS_LEGACY_OPTS.
 #
@@ -16,4 +16,5 @@ PKG_OPTIONS.foo=		old
 
 .PHONY: test
 test:
+	echo ${PKG_FAIL_REASON:M*:Q}
 	echo ${PKG_OPTIONS:M*:Q}

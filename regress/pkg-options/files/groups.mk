@@ -1,4 +1,4 @@
-# $NetBSD: legacy-opt.mk,v 1.1 2005/05/31 11:05:31 dillo Exp $
+# $NetBSD: groups.mk,v 1.1 2005/06/02 20:38:51 dillo Exp $
 #
 # This file tests option groups (PKG_OPTIONS_REQUIRED_GROUPS and
 # PKG_OPTIONS_OPTIONAL_GROUPS).
@@ -22,4 +22,5 @@ PKG_OPTIONS.foo+=	g h i -i -h
 
 .PHONY: test
 test:
+	echo ${PKG_FAIL_REASON:M*:Q}
 	echo ${PKG_OPTIONS:M*:Q}
