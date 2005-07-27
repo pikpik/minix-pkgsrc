@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.37 2005/06/01 18:02:43 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2005/07/21 16:29:46 wiz Exp $
 #
 # Check the API before updating this package!  gal-2.5 and above should
 # get their own gal26 package!
 #
 
-DISTNAME=	gal-2.4.2
+DISTNAME=	gal-2.4.3
 PKGNAME=	${DISTNAME:S/gal/gal2/}
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gal/2.4/}
