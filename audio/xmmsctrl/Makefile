@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:07:40 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:40 jlam Exp $
 #
 
 DISTNAME=		xmmsctrl-1.6
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=		audio
 MASTER_SITES=		http://www.docs.uu.se/~adavid/utils/
 
-MAINTAINER=		dotz@irc.pl
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.docs.uu.se/~adavid/utils/
 COMMENT=		Small utility to control xmms from the command line
 

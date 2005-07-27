@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/01/23 20:41:48 recht Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:59 tv Exp $
 #
 
 DISTNAME=		${TWISTED_DISTNAME}
@@ -6,7 +6,7 @@ PKGNAME=		${PYPKGPREFIX}-${TWISTED_PKGNAME}
 CATEGORIES=		net python
 MASTER_SITES=		${TWISTED_MASTER_SITES}
 
-MAINTAINER=		dotz@irc.pl
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.twistedmatrix.com/
 COMMENT=		Framework for writing networked applications
 

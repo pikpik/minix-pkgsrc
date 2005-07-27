@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/23 20:41:45 recht Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:37 tv Exp $
 #
 
 DISTNAME=		InlineEgg-1.08
@@ -6,7 +6,7 @@ PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=		devel
 MASTER_SITES=		http://oss.corest.com/repo/
 
-MAINTAINER=		dotz@irc.pl
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://oss.corest.com/projects/inlineegg.html
 COMMENT=		Python module for writing inline assembler programs
 

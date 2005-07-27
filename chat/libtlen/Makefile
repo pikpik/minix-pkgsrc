@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:04 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/01 04:31:05 grant Exp $
 
 DISTNAME=	libtlen-20040912
 PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.libtlen.eu.org/snapshots/archive/
 
-MAINTAINER=	dotz@irc.pl
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.libtlen.eu.org/
 COMMENT=	Library to access tlen.pl IM system
 
