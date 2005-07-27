@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:46 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:58 jlam Exp $
 #
 
-DISTNAME=		tme-0.2
-PKGREVISION=		3
+DISTNAME=		tme-0.4
 CATEGORIES=		emulators
 MASTER_SITES=		http://theory.lcs.mit.edu/~fredette/tme/
 
