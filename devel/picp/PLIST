@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/picp
+share/doc/picp/PICPmanual.html
+@dirrm share/doc/picp
