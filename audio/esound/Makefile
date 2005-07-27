@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.55 2005/04/11 21:44:52 tv Exp $
+# $NetBSD: Makefile,v 1.56 2005/06/08 13:20:04 wiz Exp $
 
-DISTNAME=		esound-0.2.35
-PKGREVISION=		1
+DISTNAME=		esound-0.2.36
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/esound/0.2/}
 EXTRACT_SUFX=		.tar.bz2
@@ -37,11 +36,6 @@ SUBST_FILES.oss=	configure
 SUBST_SED.oss=		-e 's,-lossaudio,${LIBOSSAUDIO},g'
 SUBST_MESSAGE.oss=	"Fixing oss."
 .endif
-
-post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/html/esound
-	cd ${WRKSRC}/docs/html && \
-		${PAX} -rw -pp -pm . ${PREFIX}/share/doc/html/esound
 
 .include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
