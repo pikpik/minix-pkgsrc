@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/24 21:24:12 nathanw Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:04 tv Exp $
 
-DISTNAME=	libotr-2.0.1
+DISTNAME=	libotr-2.0.2
 CATEGORIES=	chat security
 MASTER_SITES=	http://www.cypherpunks.ca/otr/
 
