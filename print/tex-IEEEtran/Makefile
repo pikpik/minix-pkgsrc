@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/07/27 17:02:05 drochner Exp $
 #
 
 DISTNAME=	IEEEtran-1.6b
@@ -7,7 +7,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=macros/latex/contrib/IEEEtran/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-# HOMEPAGE=
+HOMEPAGE=	http://www.ieee.org/organizations/pubs/transactions/stylesheets.htm
 COMMENT=	LaTeX class for IEEE journals and conferences
 
 DIST_SUBDIR=	${DISTNAME}
