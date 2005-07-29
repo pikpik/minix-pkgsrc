@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/04 13:29:08 darcy Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:51 jlam Exp $
 #
 
 DISTNAME=	generate-2.2
@@ -10,8 +10,8 @@ MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://www.druid.net/darcy/readme-generate.html
 COMMENT=	Simple text pre-processor
 
-MAKE_ENV+=		MANDIR=${LOCALBASE}/man
-MAKE_ENV+=		BINDIR=${LOCALBASE}/bin
+MAKE_ENV+=	MANDIR=${LOCALBASE}/man
+MAKE_ENV+=	BINDIR=${LOCALBASE}/bin
 
 USE_TOOLS+=	gmake
 
