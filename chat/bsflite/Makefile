@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/28 20:58:14 reed Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/16 16:44:53 recht Exp $
 
 DISTNAME=	bsflite-0.80
 CATEGORIES=	chat
@@ -17,5 +17,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/bsflite
 	${INSTALL_DATA} ${WRKSRC}/config-example \
 		${PREFIX}/share/examples/bsflite
+
+LIBS.SunOS+=	-lnsl -lsocket
+MAKE_ENV+=	LIBS=${LIBS:Q}
 
 .include "../../mk/bsd.pkg.mk"
