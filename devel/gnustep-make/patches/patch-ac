@@ -1,8 +1,8 @@
 $NetBSD$
 
---- target.make.orig	2004-04-20 09:43:51.000000000 +0000
+--- target.make.orig	2005-07-13 14:56:18.000000000 +0000
 +++ target.make
-@@ -632,9 +632,9 @@ endif
+@@ -671,9 +671,9 @@ endif
  
  ####################################################
  #
@@ -14,7 +14,7 @@ $NetBSD$
  # This is disabled temporarily, because I don't know exactly how
  # to link shared libs. Everything seems to link correctly now but
  # constructor functions in the shared lib failed to get called
-@@ -666,7 +666,7 @@ endif
+@@ -705,7 +705,7 @@ endif
  #
  # NetBSD ELF
  #
