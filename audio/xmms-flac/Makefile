@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/05/22 20:07:39 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/29 06:06:33 grant Exp $
 #
 
 DISTNAME=	flac-1.1.2
@@ -13,6 +13,7 @@ COMMENT=	FLAC XMMS plugin
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	libtool-disable-static
 
