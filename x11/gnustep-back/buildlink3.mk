@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/09/24 01:56:54 rh Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/11/16 06:13:15 rh Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNUSTEP_BACK_BUILDLINK3_MK:=	${GNUSTEP_BACK_BUILDLINK3_MK}+
@@ -18,6 +18,7 @@ BUILDLINK_PKGSRCDIR.gnustep-back?=	../../x11/gnustep-back
 
 .include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
+.include "../../graphics/glitz/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"
 .include "../../x11/gnustep-gui/buildlink3.mk"
 
