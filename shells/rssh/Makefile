@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/20 16:21:15 seb Exp $
 #
 
 DISTNAME=		rssh-2.2.3
@@ -21,7 +21,7 @@ PKG_SKIP_REASON+=	"${PKGNAME} requires wordexp(3)"
 EGDIR=			${PREFIX}/share/examples/rssh
 INSTALLATION_DIRS=	share/examples/rssh
 CONF_FILES=		${EGDIR}/rssh.conf ${PKG_SYSCONFDIR}/rssh.conf
-PKG_SHELL?=		${PREFIX}/bin/rssh
+PKG_SHELL?=		bin/rssh
 
 SPECIAL_PERMS+=	${PREFIX}/libexec/rssh_chroot_helper ${SETUID_ROOT_PERMS}
 

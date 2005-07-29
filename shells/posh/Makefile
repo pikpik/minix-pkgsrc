@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/29 17:02:31 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:21 tv Exp $
 #
 
 DISTNAME=	posh_0.3.14
@@ -13,7 +13,7 @@ COMMENT=	Debian Policy-compliant Ordinary SHell
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
-PKG_SHELL=		${PREFIX}/bin/posh
+PKG_SHELL=		bin/posh
 USE_PKGINSTALL=		YES
 WRKSRC=			${WRKDIR}/${PKGNAME}
 
