@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:07:44 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/28 05:57:25 snj Exp $
 #
 
 DISTNAME=		rss2html-0.7.2
@@ -14,5 +14,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_TOOLS+=		gmake
 
 INSTALLATION_DIRS+=	bin
+
+LIBS.SunOS+=		-lnsl -lsocket
+MAKE_ENV+=		LIBS=${LIBS:Q}
 
 .include "../../mk/bsd.pkg.mk"
