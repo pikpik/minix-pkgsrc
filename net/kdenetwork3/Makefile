@@ -1,12 +1,8 @@
 # $NetBSD: Makefile,v 1.41 2005/05/31 14:34:59 markd Exp $
 
 DISTNAME=	kdenetwork-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	net
 COMMENT=	Network modules for the KDE integrated X11 desktop
-
-PATCH_SITES=	ftp://ftp.kde.org/pub/kde/security_patches/
-PATCHFILES=	post-3.4.1-kdenetwork-libgadu.patch
 
 CONFLICTS=	kopete-[0-9]*
 
@@ -26,6 +22,10 @@ _REPLACE.bash.new=	/bin/sh
 _REPLACE_FILES.bash=	krfb/krfb_httpd/krfb_httpd
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ENV+=		ac_cv_header_net_if_ppp_h=yes
+.endif
 
 .if ${OPSYS} == "SunOS"
 CONFIGURE_ENV+=		ac_cv_sys_file_offset_bits=no
