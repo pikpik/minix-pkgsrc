@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/05/26 05:47:40 markd Exp $
+# $NetBSD: Makefile,v 1.43 2005/07/16 01:19:16 jlam Exp $
 
 DISTNAME=	netatalk-2.0.3
 CATEGORIES=	net print
@@ -13,6 +13,7 @@ GNU_CONFIGURE=	YES
 USE_TOOLS+=	gmake perl:run
 USE_LIBTOOL=	YES
 USE_OLD_DES_API=YES
+BUILDLINK_TRANSFORM+=	l:db-4.2:db4
 
 USE_PKGINSTALL=	YES
 PKG_SYSCONFSUBDIR=	netatalk
