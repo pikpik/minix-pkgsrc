@@ -1,4 +1,4 @@
-# $NetBSD: bootstrap.mk,v 1.3 2005/05/21 04:46:52 jlam Exp $
+# $NetBSD: bootstrap.mk,v 1.4 2005/05/21 04:53:17 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -57,7 +57,6 @@ TOOLS_PLATFORM.strip?=		${LOCALBASE}/bin/strip
 TOOLS_PLATFORM.tar?=		${LOCALBASE}/bin/tar
 
 .elif ${OPSYS} == "Darwin"
-TOOLS_PLATFORM.gtar?=		${TOOLS_PLATFORM.tar}
 TOOLS_PLATFORM.pax?=		${LOCALBASE}/bin/pax
 TOOLS_PLATFORM.tar?=		${LOCALBASE}/bin/tar
 
@@ -96,7 +95,6 @@ TOOLS_PLATFORM.sed?=		${LOCALBASE}/bin/nbsed
 TOOLS_PLATFORM.tar?=		${LOCALBASE}/bin/tar
 
 .elif ${OPSYS} == "Linux"
-TOOLS_PLATFORM.gtar?=		${TOOLS_PLATFORM.tar}
 TOOLS_PLATFORM.mtree?=		${LOCALBASE}/sbin/mtree
 TOOLS_PLATFORM.pax?=		${LOCALBASE}/bin/pax
 TOOLS_PLATFORM.tar?=		${LOCALBASE}/bin/tar
