@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/04/11 21:47:37 tv Exp $
+# $NetBSD: Makefile,v 1.27 2005/07/16 01:19:24 jlam Exp $
 #
 
 DISTNAME=	OpenSP-1.5.1
@@ -15,6 +15,7 @@ CONFLICTS+=     sp-[0-9]*
 
 BUILD_USES_MSGFMT=	yes
 USE_TOOLS+=		perl
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 PTHREAD_OPTS+=		require
 USE_PKGLOCALEDIR=	yes
