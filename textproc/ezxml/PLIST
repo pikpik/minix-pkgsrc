@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/ezxml.h
+lib/libezxml.a
+share/doc/ezxml/ezxml.txt
+@dirrm share/doc/ezxml
