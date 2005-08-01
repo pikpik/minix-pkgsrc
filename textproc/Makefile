@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.290 2005/06/24 17:34:40 wiz Exp $
+# $NetBSD: Makefile,v 1.291 2005/07/21 12:14:19 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -66,6 +66,7 @@ SUBDIR+=	enchant
 SUBDIR+=	eperl
 SUBDIR+=	expat
 SUBDIR+=	expatobjc
+SUBDIR+=	ezxml
 SUBDIR+=	flyspell
 SUBDIR+=	fop
 SUBDIR+=	freepwing
