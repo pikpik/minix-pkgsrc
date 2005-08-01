@@ -13,23 +13,3 @@ $NetBSD$
  BUILD_OPT = "--enable-slapd"
  BUILD_SRV = @BUILD_SLAPD@
  
-@@ -401,17 +405,14 @@ install-schema: FORCE
- 		else \
- 			echo "PRESERVING EXISTING SCHEMA FILE $$SD" ; \
- 		fi ; \
--		$(INSTALL) $(INSTALLFLAGS) -m 444 $$i $$SD.default ; \
- 	done
- 
- install-conf: FORCE
- 	@-$(MKDIR) $(DESTDIR)$(sysconfdir)
--	@-$(INSTALL) -m 700 -d $(DESTDIR)$(localstatedir)/openldap-data
--	$(INSTALL) $(INSTALLFLAGS) -m 600 slapd.conf.tmp $(DESTDIR)$(sysconfdir)/slapd.conf.default
- 	if test ! -f $(DESTDIR)$(sysconfdir)/slapd.conf; then \
- 		echo "installing slapd.conf in $(sysconfdir)"; \
--		echo "$(INSTALL) $(INSTALLFLAGS) -m 600 slapd.conf.tmp $(DESTDIR)$(sysconfdir)/slapd.conf"; \
--		$(INSTALL) $(INSTALLFLAGS) -m 600 slapd.conf.tmp $(DESTDIR)$(sysconfdir)/slapd.conf; \
-+		echo "$(INSTALL) $(INSTALLFLAGS) -m 444 slapd.conf.tmp $(DESTDIR)$(sysconfdir)/slapd.conf"; \
-+		$(INSTALL) $(INSTALLFLAGS) -m 444 slapd.conf.tmp $(DESTDIR)$(sysconfdir)/slapd.conf; \
- 	else \
- 		echo "PRESERVING EXISTING CONFIGURATION FILE $(DESTDIR)$(sysconfdir)/slapd.conf" ; \
- 	fi
