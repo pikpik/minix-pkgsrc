@@ -1,5 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/08/30 20:53:20 adrianp Exp $
 
+.include "options.mk"
 .include "../../mail/sendmail812/Makefile.common"
 
 PKGNAME=	libmilter-${DIST_VERS}
