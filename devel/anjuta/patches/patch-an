@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-an,v 1.2 2004/04/21 15:01:28 jmmv Exp $
 
 --- src/launcher.c.orig	2004-04-08 06:15:31.000000000 +0200
 +++ src/launcher.c
@@ -7,7 +7,7 @@ $NetBSD$
  #include <fcntl.h>
  #include <signal.h>
 +#ifdef HAVE_PTY_H
- #include <pty.h>
+ //#include <pty.h>
 +#endif
  #include <assert.h>
  #include <gnome.h>
