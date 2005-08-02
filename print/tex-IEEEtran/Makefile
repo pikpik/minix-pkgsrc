@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/07/27 17:02:05 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2005/07/27 17:10:05 minskim Exp $
 #
 
 DISTNAME=	IEEEtran-1.6b
@@ -12,6 +12,8 @@ COMMENT=	LaTeX class for IEEE journals and conferences
 
 DIST_SUBDIR=	${DISTNAME}
 DISTFILES= IEEEtran.cls IEEEtran_HOWTO.pdf README bare_conf.tex bare_jrnl.tex
+
+DEPENDS+=       teTeX-bin-[0-9]*:../../print/teTeX-bin
 
 EXTRACT_ONLY=	# nothing
 NO_CONFIGURE=	yes
