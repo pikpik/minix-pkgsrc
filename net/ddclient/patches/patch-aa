@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.2 2001/12/09 19:55:36 jlam Exp $
 
 --- ddclient.orig	Sun Nov 18 19:54:48 2001
 +++ ddclient
@@ -9,6 +9,6 @@ $NetBSD$
  ######################################################################
 @@ -22,3 +21,3 @@
  my $hostname  = hostname();
--my $etc       = ($program =~ /test/i) ? './'   : '/etc/';
+-my $etc       = ($program =~ /test/i) ? './'   : '/etc/ddclient/';
 +my $etc       = ($program =~ /test/i) ? './'   : '@PKG_SYSCONFDIR@/';
  my $savedir   = ($program =~ /test/i) ? 'URL/' : '/tmp/';
