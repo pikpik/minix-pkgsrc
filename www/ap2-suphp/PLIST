@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/httpd/mod_suphp.so
+sbin/suphp
+share/examples/suphp/suphp.conf
+@dirrm share/examples/suphp
+@dirrm lib/httpd
