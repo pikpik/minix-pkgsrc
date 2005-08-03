@@ -1,8 +1,8 @@
-$NetBSD: patch-ab,v 1.4 2003/12/03 05:38:50 martti Exp $
+$NetBSD$
 
---- Makefile.in.orig	2005-03-28 22:52:12.000000000 +0200
-+++ Makefile.in
-@@ -50,8 +50,8 @@ MAN1DIR = man/man1
+--- Makefile.in.orig	2005-05-18 20:41:27.000000000 +0200
++++ Makefile.in	2005-08-03 23:00:07.000000000 +0200
+@@ -50,8 +50,8 @@
  
  install: doxywizard_install 
  	$(INSTTOOL) -d $(INSTALL)/bin
@@ -11,5 +11,5 @@ $NetBSD: patch-ab,v 1.4 2003/12/03 05:38:50 martti Exp $
 +	$(INSTTOOL) -c -m 755 bin/doxygen    $(INSTALL)/bin
 +	$(INSTTOOL) -c -m 755 bin/doxytag    $(INSTALL)/bin
  	$(INSTTOOL) -d $(INSTALL)/$(MAN1DIR)
- 	cat doc/doxygen.1    | sed -e "s/DATE/\$(DATE)/g" -e "s/VERSION/$(VERSION)/g" > $(INSTALL)/$(MAN1DIR)/doxygen.1 ; \
- 	cat doc/doxytag.1    | sed -e "s/DATE/\$(DATE)/g" -e "s/VERSION/$(VERSION)/g" > $(INSTALL)/$(MAN1DIR)/doxytag.1 ; \
+ 	cat doc/doxygen.1    | sed -e "s/DATE/$(DATE)/g" -e "s/VERSION/$(VERSION)/g" > $(INSTALL)/$(MAN1DIR)/doxygen.1 ; \
+ 	cat doc/doxytag.1    | sed -e "s/DATE/$(DATE)/g" -e "s/VERSION/$(VERSION)/g" > $(INSTALL)/$(MAN1DIR)/doxytag.1 ; \
