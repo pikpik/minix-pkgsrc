@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2005/02/12 23:38:04 rillig Exp $
+# $NetBSD: options.mk,v 1.3 2005/06/01 18:03:22 jlam Exp $
 #
 
 ### The charset option enables input/display support for various 8-bit
@@ -19,15 +19,6 @@ PLIST_SRC+=		${PKGDIR}/PLIST.mcedit
 CONFIGURE_ARGS+=	--without-edit
 .endif
 
-### Enable file sizes >= 2 GB. Note that this option is considered
-### experimental, as some filesize calculations are still done with
-### 32 bits of precision.
-.if !empty(PKG_OPTIONS:Mlargefile)
-CONFIGURE_ARGS+=	--enable-largefile
-.else
-CONFIGURE_ARGS+=	--disable-largefile
-.endif
-
 ### Enable the Samba virtual file system. You can connect to Windows
 ### file servers or Samba servers in your network.
 .if !empty(PKG_OPTIONS:Msamba)
@@ -37,7 +28,6 @@ CONFIGURE_ARGS+=	--without-samba
 .endif
 
 ### The subshell is a shell command line inside the Midnight Commander.
-### It does not work well on NetBSD (does not save the screen contents).
 .if !empty(PKG_OPTIONS:Msubshell)
 CONFIGURE_ARGS+=	--with-subshell
 .else
