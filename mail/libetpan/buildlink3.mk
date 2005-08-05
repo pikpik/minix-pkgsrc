@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/10/03 00:12:53 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2005/08/05 19:29:56 xtraeme Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBETPAN_BUILDLINK3_MK:=	${LIBETPAN_BUILDLINK3_MK}+
@@ -18,5 +18,6 @@ BUILDLINK_PKGSRCDIR.libetpan?=	../../mail/libetpan
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/db4/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
