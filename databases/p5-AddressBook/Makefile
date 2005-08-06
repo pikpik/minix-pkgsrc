@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:12 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/07/13 18:01:20 jlam Exp $
 
 DISTNAME=	AddressBook-0.16
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=perl-abook/} \
 		ftp://ftp.loaded.net/pub/CPAN/authors/id/D/DL/DLEIGH/

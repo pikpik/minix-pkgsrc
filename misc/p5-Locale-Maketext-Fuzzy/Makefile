@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:39 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:34 jlam Exp $
 #
 
 DISTNAME=		Locale-Maketext-Fuzzy-0.02
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		misc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Locale/}
 

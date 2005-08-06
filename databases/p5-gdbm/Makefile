@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2005/06/24 06:43:43 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2005/07/13 18:01:21 jlam Exp $
 
 DISTNAME=	perl-5.6.1
 PKGNAME=	p5-gdbm-1.05
 SVR4_PKGNAME=	p5gdm
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	databases perl5
 MASTER_SITES+=	ftp://cpan.teleglobe.net/pub/CPAN/src/5.0/maint/ \
 		ftp://perl.secsup.org/pub/perl/src/5.0/maint/ \

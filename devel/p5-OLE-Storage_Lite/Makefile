@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/06/26 07:59:37 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/13 18:01:27 jlam Exp $
 
 DISTNAME=	OLE-Storage_Lite-0.14
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5osl
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/J/JM/JMCNAMARA/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/07/13 18:01:25 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/21 16:29:49 wiz Exp $
 #
 
 DISTNAME=	ExtUtils-PkgConfig-1.06
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk2-perl/}
 
@@ -11,8 +12,6 @@ HOMEPAGE=	http://gtk2-perl.sourceforge.net/
 COMMENT=	Simplistic perl interface to pkg-config
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
-PERL5_REQD=	5.8
 
 PERL5_PACKLIST=	auto/ExtUtils/PkgConfig/.packlist
 

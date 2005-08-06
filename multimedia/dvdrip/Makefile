@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:46:41 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/07/13 18:01:34 jlam Exp $
 #
 
 VERS=		0.50.18
 DISTNAME=	Video-DVDRip-${VERS}
 PKGNAME=	dvdrip-${VERS}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	multimedia x11 sysutils
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Video/}
 

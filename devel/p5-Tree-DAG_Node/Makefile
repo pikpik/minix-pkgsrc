@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:45:35 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:29 jlam Exp $
 #
 
 DISTNAME=	Tree-DAG_Node-1.05
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://cpan.org/authors/id/S/SB/SBURKE/
 
