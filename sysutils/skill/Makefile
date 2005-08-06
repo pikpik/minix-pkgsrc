@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/07/04 22:40:32 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/03/10 17:00:54 tv Exp $
 #
 
 DISTNAME=	skill-4.1.1
@@ -15,6 +15,8 @@ NOT_FOR_PLATFORM+= Interix-*-* # currently no machdep support
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
+MAKE_ENV+=	OSTYPE=nbsd-44
+.elif ${OPSYS} == "Darwin"
 MAKE_ENV+=	OSTYPE=nbsd-44
 .elif ${OPSYS} == "SunOS"
 BINMODE=	02555
