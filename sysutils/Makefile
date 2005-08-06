@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.302 2005/06/24 20:12:04 wiz Exp $
+# $NetBSD: Makefile,v 1.303 2005/07/22 21:49:27 adam Exp $
+#
 
 COMMENT=	System utilities
 
