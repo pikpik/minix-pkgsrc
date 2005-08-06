@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2005/07/06 19:46:14 reed Exp $
+# $NetBSD: Makefile,v 1.34 2005/07/27 17:07:51 drochner Exp $
 #
 
 COMMENT=	Benchmarking tools
-PKG_MISC_TARGETS?=	benchmark results
 
 SUBDIR+=	benchfft
 SUBDIR+=	blogbench
