@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/07/10 19:11:02 recht Exp $
+# $NetBSD: Makefile,v 1.28 2005/07/26 13:50:58 gdt Exp $
 #
 
 .include "Makefile.common"
@@ -7,6 +7,8 @@ PKGNAME=	${DISTNAME:S/BitT/bitt/}
 PKGREVISION=	1
 
 PYDISTUTILSPKG=	YES
+
+CONFLICTS+=	bittornado-[0-9]*
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
