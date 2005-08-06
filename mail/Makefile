@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.269 2005/07/20 19:43:18 tv Exp $
+# $NetBSD: Makefile,v 1.270 2005/07/23 21:34:55 wiz Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -37,6 +37,7 @@ SUBDIR+=	elm
 SUBDIR+=	elm-me
 SUBDIR+=	elmo
 SUBDIR+=	etach
+SUBDIR+=	etpan
 SUBDIR+=	evolution
 SUBDIR+=	evolution-data-server
 SUBDIR+=	evolution14
