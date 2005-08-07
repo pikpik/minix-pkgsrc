@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2005/07/21 16:30:01 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2005/07/24 21:14:51 wiz Exp $
 #
 
 .include "Makefile.common"
 
-PKGREVISION=		5
 COMMENT=		GTK-based implementation of the wxWidgets GUI library
 
 post-install:
@@ -11,4 +10,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/LICENCE.txt ${DOCDIR}/LICENSE
 
 .include "../../graphics/glu/buildlink3.mk"
+.include "../../mk/ossaudio.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
