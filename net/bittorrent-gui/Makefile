@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/10 19:11:02 recht Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/06 10:55:06 wiz Exp $
 #
 
 .include "../../net/bittorrent/Makefile.common"
@@ -7,7 +7,7 @@ PKGNAME=	${DISTNAME:S/BitTorrent/bittorrent-gui/}
 
 COMMENT+=	(GTK+ GUI)
 
-DEPENDS+=	bittorrent>=4.0.2:../../net/bittorrent
+DEPENDS+=	bittorrent>=4.0.3:../../net/bittorrent
 
 PYTHON_PATCH_SCRIPTS= btdownloadgui.py btmaketorrentgui.py
 
