@@ -1,0 +1,5 @@
+@comment $NetBSD$
+etc/nsswitch.ldap
+lib/nss_ldap.so
+lib/nss_ldap.so.1
+man/man5/nss_ldap.5
