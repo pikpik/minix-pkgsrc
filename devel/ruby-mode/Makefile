@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/03/16 02:01:10 taca Exp $
+# $NetBSD: Makefile,v 1.9 2004/11/27 14:55:25 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -33,7 +33,7 @@ do-install:
 		${INSTALL_DATA} ${SRCS} ${SRCS:.el=.elc} \
 			${EMACS_LISPPREFIX}/ruby-mode
 
-.include "../../lang/ruby/modules.mk"
+.include "../../lang/ruby/rubyversion.mk"
 .include "../../lang/ruby/Makefile.common"
 .include "../../mk/emacs.mk"
 .include "../../mk/bsd.pkg.mk"
