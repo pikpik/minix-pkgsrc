@@ -1,17 +1,16 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:07:52 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.7 2005/06/10 17:03:35 tv Exp $
 
-DISTNAME=		libextractor-0.4.2
-CATEGORIES=		devel
-MASTER_SITES=		http://gnunet.org/libextractor/download/
+DISTNAME=	libextractor-0.5.2
+CATEGORIES=	devel
+MASTER_SITES=	http://gnunet.org/libextractor/download/
 
-MAINTAINER=		tv@duh.org
-HOMEPAGE=		http://gnunet.org/libextractor/
-COMMENT=		Metadata extractor for various file data types
+MAINTAINER=	tv@duh.org
+HOMEPAGE=	http://gnunet.org/libextractor/
+COMMENT=	Metadata extractor for various file data types
 
-USE_TOOLS+=		gmake
-USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
+USE_PKGLOCALEDIR=	yes
+USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 PTHREAD_OPTS+=		require
 
