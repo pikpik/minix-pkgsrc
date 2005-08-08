@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:28 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/06 06:19:13 jlam Exp $
 
 DISTNAME=	Schedule-RateLimiter-0.01
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ USE_LANGUAGES=	# empty
 
 DEPENDS+=	p5-Time-HiRes-[0-9]*:../../time/p5-Time-HiRes
 
-PERL5_CONFIGURE=YES
 PERL5_PACKLIST=	auto/Schedule/RateLimiter/.packlist
 
 .include "../../lang/perl5/module.mk"

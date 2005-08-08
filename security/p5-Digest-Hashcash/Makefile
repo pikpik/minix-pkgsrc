@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/13 18:01:39 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:30 jlam Exp $
 #
 
 DISTNAME=	Digest-Hashcash-0.02
@@ -14,8 +14,6 @@ COMMENT=	Perl5 extension module for hashcash hashes
 
 DEPENDS+=	p5-Time-HiRes>=1.2:../../time/p5-Time-HiRes
 
-
-PERL5_CONFIGURE=	YES
 PERL5_PACKLIST=		auto/Digest/Hashcash/.packlist
 
 .include "../../lang/perl5/module.mk"
