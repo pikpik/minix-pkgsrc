@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/08/04 11:29:10 drochner Exp $
 #
 
 DISTNAME=		luma-2.1.3
@@ -25,4 +25,5 @@ do-install:
 .include "../../lang/python/application.mk"
 .include "../../databases/py-ldap/buildlink3.mk"
 .include "../../x11/py-qt3-base/buildlink3.mk"
+.include "../../x11/py-qt3-modules/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
