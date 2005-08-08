@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.178 2005/08/04 11:30:31 drochner Exp $
+# $NetBSD: Makefile,v 1.179 2005/08/06 06:26:36 jlam Exp $
 #
 
 COMMENT=	Databases
@@ -50,6 +50,7 @@ SUBDIR+=	mysql4-client
 SUBDIR+=	mysql4-server
 SUBDIR+=	mysqlcc
 SUBDIR+=	mytop
+SUBDIR+=	nss_ldap
 SUBDIR+=	odbc-postgresql
 SUBDIR+=	openldap
 SUBDIR+=	oraedit
