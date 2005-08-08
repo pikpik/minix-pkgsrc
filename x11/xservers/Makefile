@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/07/15 18:27:54 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/08/08 18:12:46 tron Exp $
 
 DISTNAME=	xservers-3.3.6.4
 CATEGORIES=	x11
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.xfree86.org/
 COMMENT=	Old X11 servers for use under XFree86 4.x
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
+
+NO_SRC_ON_FTP=	"already in MASTER_SITE_LOCAL"
 
 BUILD_TARGET=	World
 PLIST_SRC=	${WRKDIR}/PLIST
