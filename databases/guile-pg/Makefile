@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:45:11 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:45 jlam Exp $
 #
 
 DISTNAME=	guile-pg-0.23
 CATEGORIES=	databases
 MASTER_SITES=	http://www.glug.org/people/ttn/software/guile-pg/
 
-MAINTAINER=	gdt@ir.bbn.com
+MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.glug.org/people/ttn/software/guile-pg/
 COMMENT=	PostgreSQL interface for Guile
 
