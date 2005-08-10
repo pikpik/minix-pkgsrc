@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.303 2005/07/22 21:49:27 adam Exp $
+# $NetBSD: Makefile,v 1.304 2005/08/06 20:33:56 rillig Exp $
 #
 
 COMMENT=	System utilities
@@ -69,6 +69,7 @@ SUBDIR+=	fixelfprot
 SUBDIR+=	free
 SUBDIR+=	fsv
 SUBDIR+=	fsviewer
+SUBDIR+=	gamin
 SUBDIR+=	gcdmaster
 SUBDIR+=	gcombust
 SUBDIR+=	genpasswd
