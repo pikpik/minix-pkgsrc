@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.54 2005/06/25 00:48:26 kristerw Exp $
+# $NetBSD: Makefile,v 1.55 2005/07/21 16:29:59 wiz Exp $
 
-DISTNAME=	bluefish-1.0
-PKGREVISION=	2
+DISTNAME=	bluefish-1.0.2
 CATEGORIES=	www
 MASTER_SITES=	http://pkedu.fbt.eitn.wau.nl/~olivier/downloads/	\
 		ftp://bluefish.advancecreations.com/bluefish/downloads/ \
@@ -15,7 +14,7 @@ HOMEPAGE=	http://bluefish.openoffice.nl/
 COMMENT=	GTK HTML editor for the experienced web designer
 
 DEPENDS+=		weblint-[0-9]*:../../www/weblint
-BUILD_USES_MSGFMT=	YES
+BUILD_USES_MSGFMT=	yes
 
 USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		find gmake grep
@@ -35,5 +34,4 @@ CONFIGURE_ENV+=		EXTERNAL_FIND="${TOOLS_FIND}"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
