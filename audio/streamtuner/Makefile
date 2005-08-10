@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/06/01 18:02:38 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2005/07/21 16:29:44 wiz Exp $
 #
 
 DISTNAME=	streamtuner-0.99
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=	hicolor-icon-theme-[0-9]*:../../graphics/hicolor-icon-theme
 BUILD_USES_MSGFMT=	yes
 
 USE_DIRS+=		gnome2-1.5
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
@@ -23,7 +23,6 @@ GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	extras/streamtuner.pc.in
 
 .include "../../audio/taglib/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../lang/python/pyversion.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"

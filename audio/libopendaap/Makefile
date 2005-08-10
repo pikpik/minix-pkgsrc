@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/07/21 16:29:43 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/05 12:53:08 tonio Exp $
 
 DISTNAME=	libopendaap-0.4.0
 CATEGORIES=	audio
@@ -12,8 +12,7 @@ COMMENT=	DAAP client library
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
-
-.include "../../devel/pkg-config/buildlink3.mk"
+USE_TOOLS+=		pkg-config
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

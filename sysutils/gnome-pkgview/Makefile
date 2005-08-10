@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:47:24 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/21 16:29:57 wiz Exp $
 #
 
 DISTNAME=	gnome-pkgview-1.0.6
@@ -12,6 +12,7 @@ COMMENT=	Displays the version of GNOME components installed
 
 BUILD_USES_MSGFMT=	yes
 
+USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
@@ -22,7 +23,6 @@ GCONF2_SCHEMAS=		gnome-pkgview.schemas
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/21 16:29:46 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/07/22 21:25:59 adam Exp $
 
 DISTNAME=	gconfmm-2.10.0
 CATEGORIES=	devel
@@ -12,11 +12,10 @@ COMMENT=	C++ bindings for gconf
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gconf/gconfmm-2.6.pc.in
 GNU_CONFIGURE=		yes
 
 .include "../../devel/GConf2/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../x11/gtkmm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

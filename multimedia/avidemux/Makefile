@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/06/11 16:57:29 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/07/21 16:29:53 wiz Exp $
 #
 
 DISTNAME=	avidemux-2.0.40
@@ -13,7 +13,7 @@ GCC_REQD=		3.0
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 
 CPPFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 LDFLAGS+=		${LIBOSSAUDIO}
@@ -46,7 +46,6 @@ post-configure:
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../multimedia/mjpegtools/buildlink3.mk"
 .include "../../multimedia/xvidcore/buildlink3.mk"

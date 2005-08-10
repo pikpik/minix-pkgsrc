@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/07/21 16:29:58 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/07/28 12:43:13 adam Exp $
 
 DISTNAME=	gtkspell-2.0.11
 CATEGORIES=	textproc devel
@@ -8,6 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gtkspell.sourceforge.net/
 COMMENT=	Spell checking GtkTextView widget
 
+USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
@@ -20,7 +21,6 @@ SUBST_FILES.subdir=	Makefile.in
 SUBST_SED.subdir=	-e 's|SUBDIRS = gtkspell examples docs|SUBDIRS = gtkspell|'
 
 .include "../../devel/pango/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

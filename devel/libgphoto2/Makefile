@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/07/19 17:24:27 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2005/07/21 16:29:48 wiz Exp $
 #
 
 DISTNAME=	libgphoto2-2.1.6
@@ -11,6 +11,7 @@ COMMENT=	Digital camera access library
 
 CONFLICTS+=	gphoto<2.1.1
 
+USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE+=	libgphoto2/libgphoto2.pc.in
 USE_PKGLOCALEDIR=	YES
@@ -26,6 +27,5 @@ PLIST_SUBST+=		HAVE_LIBUSB="@comment"
 .include "../../devel/libusb/buildlink3.mk"
 PLIST_SUBST+=		HAVE_LIBUSB=""
 .endif
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

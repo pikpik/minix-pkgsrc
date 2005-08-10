@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:33 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/21 16:29:53 wiz Exp $
 #
 
 DISTNAME=		blccc-1.99
@@ -10,6 +10,7 @@ MAINTAINER=		salo@NetBSD.org
 HOMEPAGE=		http://www.blinkenlights.de/
 COMMENT=		Blinkenlights Chaos Control Center
 
+USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 SHLIBTOOL_OVERRIDE=	libtool
@@ -17,7 +18,6 @@ SHLIBTOOL_OVERRIDE=	libtool
 EGDIR=			${PREFIX}/share/examples/blccc
 
 .include "../../devel/blib/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 
 post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}

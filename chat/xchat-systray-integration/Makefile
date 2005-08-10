@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/06 11:47:06 tron Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/21 16:29:45 wiz Exp $
 
 DISTNAME=	xchat-systray-integration-2.4.5-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -12,13 +12,12 @@ COMMENT=	Systray icon plugin for X-Chat
 DEPENDS=	xchat>=2.0:../../chat/xchat
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 
 # We build a shared object, so ensure that the object files are PIC.
 CFLAGS+=	-fPIC
 
 MAKE_ENV+=	prefix=${PREFIX}
 
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

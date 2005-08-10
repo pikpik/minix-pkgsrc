@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/06/01 18:02:56 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2005/07/21 16:29:51 wiz Exp $
 
 DISTNAME=	imlib2-1.2.0
 PKGREVISION=	3
@@ -9,6 +9,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.enlightenment.org/pages/imlib2.html
 COMMENT=	Image manipulation library
 
+USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 
@@ -20,7 +21,6 @@ LIBS.SunOS=		-lm
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"

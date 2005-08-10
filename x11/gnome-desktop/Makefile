@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/07/16 01:19:26 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/07/21 16:30:00 wiz Exp $
 #
 
 DISTNAME=		gnome-desktop-2.10.2
@@ -15,7 +15,7 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake perl:run pkg-config
 USE_LIBTOOL=		yes
 
 BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.0
@@ -23,7 +23,6 @@ BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.0
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../graphics/gnome2-pixmaps/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:54 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/07/21 16:29:50 wiz Exp $
 #
 
 DISTNAME=		Magnetic22Src
@@ -12,7 +12,7 @@ MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://www.if-legends.org/~msmemorial/magnetic.htm
 COMMENT=		Interpreter for text adventures from Magnetic Scrolls
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 BUILD_TARGET=		gtkmagnetic
 WRKSRC=			${WRKDIR}/Gtk
 
@@ -24,7 +24,6 @@ LIBS.SunOS+=		-lCrun
 
 INSTALLATION_DIRS=	bin
 
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../multimedia/smpeg/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:46 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/21 16:29:55 wiz Exp $
 #
 
 DISTNAME=	gift-0.11.8.1
@@ -10,6 +10,7 @@ MAINTAINER=	alex@catbull.com
 HOMEPAGE=	http://gift.sourceforge.net/
 COMMENT=	Modular daemon that abstracts filesharing protocols
 
+USE_TOOLS+=		pkg-config
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -19,6 +20,5 @@ PKGCONFIG_OVERRIDE+=    ${WRKSRC}/lib/libgift.pc.in
 
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

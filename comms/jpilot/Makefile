@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2005/06/01 18:02:41 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2005/07/21 16:29:45 wiz Exp $
 #
 
 DISTNAME=		jpilot-0.99.5
@@ -16,6 +16,7 @@ CONFLICTS+=		jpilot-libplugin-[0-9]*
 
 USE_DIRS+=		gnome1-1.0
 USE_LIBTOOL=		YES
+USE_TOOLS+=		pkg-config
 USE_PKGLOCALEDIR=	YES
 USE_OLD_DES_API=	YES
 
@@ -33,7 +34,6 @@ PLUGINSDIR=		${PREFIX}/lib/jpilot/plugins
 
 .include "../../comms/pilot-link-libs/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../devel/pkg-config/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
