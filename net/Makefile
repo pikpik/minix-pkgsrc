@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.567 2005/08/05 22:07:07 reinoud Exp $
+# $NetBSD: Makefile,v 1.568 2005/08/10 13:58:47 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -347,6 +347,7 @@ SUBDIR+=	sdist
 SUBDIR+=	sendfile
 SUBDIR+=	sharity-light
 SUBDIR+=	sipcalc
+SUBDIR+=	sipsak
 SUBDIR+=	sitescooper
 SUBDIR+=	skype
 SUBDIR+=	slurm
