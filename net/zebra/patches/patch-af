@@ -1,8 +1,8 @@
-$NetBSD: patch-af,v 1.2.2.1 2002/08/25 21:20:45 jlam Exp $
+$NetBSD$
 
---- zebra/Makefile.am.orig	Wed Jun 19 08:17:32 2002
-+++ zebra/Makefile.am	Wed Jul 10 08:34:31 2002
-@@ -43,15 +43,17 @@
+--- zebra/Makefile.am.orig	2004-04-28 16:05:31.000000000 +0000
++++ zebra/Makefile.am
+@@ -44,15 +44,17 @@ EXTRA_DIST = $(sysconf_DATA) if_ioctl.c 
  #client : client_main.o ../lib/libzebra.a
  #	$(CC) -g -o client client_main.o ../lib/libzebra.a $(LIBS) $(LIB_IPV6)
  
