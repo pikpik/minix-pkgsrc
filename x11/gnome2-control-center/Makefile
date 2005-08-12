@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.46 2005/07/21 16:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2005/08/10 20:56:26 jlam Exp $
 #
 
 DISTNAME=	control-center-2.10.1
 PKGNAME=	gnome2-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/control-center/2.10/}
 EXTRACT_SUFX=	.tar.bz2
