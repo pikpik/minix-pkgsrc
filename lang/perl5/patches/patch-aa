@@ -83,24 +83,6 @@ $NetBSD$
      );
      
      my %man_layouts =
-@@ -2480,13 +2501,13 @@ sub install {
-     my(@m);
- 
-     push @m, q{
--install :: all pure_install doc_install
-+install :: all pure_install
- 
--install_perl :: all pure_perl_install doc_perl_install
-+install_perl :: all pure_perl_install
- 
--install_site :: all pure_site_install doc_site_install
-+install_site :: all pure_site_install
- 
--install_vendor :: all pure_vendor_install doc_vendor_install
-+install_vendor :: all pure_vendor_install
- 
- pure_install :: pure_$(INSTALLDIRS)_install
- 
 @@ -2519,7 +2540,7 @@ pure_site_install ::
  		$(INST_LIB) $(DESTINSTALLSITELIB) \
  		$(INST_ARCHLIB) $(DESTINSTALLSITEARCH) \

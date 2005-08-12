@@ -2,8 +2,15 @@
 
 case ${STAGE} in
 DEINSTALL)
-	eval `${PERL5} -V:scriptdir`
+	eval `${PERL5} -V:prefix -V:archlib -V:scriptdir`
 	PERL5_PACKLIST="@PERL5_PACKLIST@"
+
+	# Remove the perllocal.pod file.
+	case "$archlib" in
+	$prefix/*)	archlib="${PKG_PREFIX}/${archlib#$prefix/}" ;;
+	esac
+	${RM} -f $archlib/perllocal.pod
+	${RMDIR} -p $archlib 2>/dev/null || ${TRUE}
 
 	# Remove any symlinked bits that belong to this module.
 	$scriptdir/perllink -f -p ${PKG_PREFIX} delete ${PERL5_PACKLIST}
