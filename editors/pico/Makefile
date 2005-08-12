@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2005/04/11 21:45:41 tv Exp $
+# $NetBSD: Makefile,v 1.64 2005/06/16 06:57:49 jlam Exp $
 #
 # NOTE:
 # When updating, it is necessary to change the shlib version, located in
@@ -7,9 +7,8 @@
 # and then bump the BUILDLINK_DEPENDS in buildlink3.mk.
 #
 
-DISTNAME=	pine4.62
-PKGNAME=	pico-4.9
-PKGREVISION=	2
+DISTNAME=	pine4.63
+PKGNAME=	pico-4.10
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
 		ftp://ftp.fu-berlin.de/unix/mail/pine/
