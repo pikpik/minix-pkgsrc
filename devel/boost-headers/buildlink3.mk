@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/02/27 21:57:53 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2005/02/28 01:44:17 tv Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 BOOST_HEADERS_BUILDLINK3_MK:=	${BOOST_HEADERS_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	boost-headers
 
 .if !empty(BOOST_HEADERS_BUILDLINK3_MK:M+)
 # Use a dependency pattern that guarantees the proper ABI.
-BUILDLINK_DEPENDS.boost-headers+=	boost-headers-1.32.*
+BUILDLINK_DEPENDS.boost-headers+=	boost-headers-1.33.*
 BUILDLINK_DEPMETHOD.boost-headers?=	build
 BUILDLINK_PKGSRCDIR.boost-headers?=	../../devel/boost-headers
 .endif	# BOOST_HEADERS_BUILDLINK3_MK
