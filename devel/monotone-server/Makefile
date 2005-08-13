@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/05/21 04:10:17 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/09 22:02:31 jmmv Exp $
 #
 
 DISTNAME=	monotone-server-0.22
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
