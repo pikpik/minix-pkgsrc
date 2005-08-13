@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/08/13 19:38:19 adrianp Exp $
 
 DISTNAME=	Community-Rules
-PKGNAME=	snort-rules-2.4.0
+PKGNAME=	snort-rules-2.3
 CATEGORIES=	net security
 MASTER_SITES=	http://www.snort.org/pub-bin/downloads.cgi/Download/comm_rules/
 
