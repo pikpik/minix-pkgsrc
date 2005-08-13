@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2005/08/05 16:24:50 drochner Exp $
+# $NetBSD: Makefile,v 1.28 2005/08/10 13:48:22 drochner Exp $
 
 DISTNAME=		libpcap-0.9.3
-PKGREVISION=		1
+PKGREVISION=		2
 SVR4_PKGNAME=		lpcap
 CATEGORIES=		net
 MASTER_SITES= 		http://www.tcpdump.org/release/
@@ -25,5 +25,8 @@ USE_LIBTOOL=		yes
 CONFIGURE_ARGS+=	--enable-ipv6
 .  endif
 .endif
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/pcap-int.h ${PREFIX}/include
 
 .include "../../mk/bsd.pkg.mk"
