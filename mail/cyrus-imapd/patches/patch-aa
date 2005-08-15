@@ -17,3 +17,21 @@ $NetBSD$
  die "wrong number of arguments" if ($#ARGV != 1);
  my ($cfile, $hfile) = @ARGV;
  
+@@ -214,7 +222,6 @@ while (<STDIN>) {
+ print HFILE <<EOF
+   IMAPOPT_LAST
+ };
+-extern struct imapopt_s imapopts[];
+ 
+ enum enum_value {
+   IMAP_ENUM_ZERO = 0,
+@@ -260,6 +267,9 @@ print HFILE "    const struct enum_optio
+ 
+ print HFILE <<EOF
+ };
++
++extern struct imapopt_s imapopts[];
++
+ #endif /* INCLUDED_IMAPOPTIONS_H */
+ EOF
+     ;
