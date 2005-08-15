@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/07/15 18:27:48 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/05 19:43:45 jlam Exp $
 
 PKGNAME=	postgresql80-client-${BASE_VERS}
 PKGREVISION=	2
@@ -11,6 +11,9 @@ USE_LIBTOOL=		yes
 CONFIGURE_ARGS+=	--with-openssl
 CONFIGURE_ARGS+=	--with-readline
 CONFIGURE_ARGS+=	--with-zlib
+
+CONFLICTS+=	postgresql80-lib-*
+CONFLICTS+=	postgresql80-docs-*
 
 # The thread-safety test in ${WRSRC}/src/tools/thread does not pass on
 # NetBSD.
