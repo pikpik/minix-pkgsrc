@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/07/16 19:10:38 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2005/07/30 21:04:36 rillig Exp $
 
 DISTNAME=		vile-9.4
 PKGREVISION=	1
@@ -39,4 +39,5 @@ post-install:
 	done
 
 .include "../../devel/ncurses/buildlink3.mk"
+.include "../../lang/perl5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
