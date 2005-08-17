@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/06/12 08:18:28 jdolecek Exp $
+# $NetBSD: Makefile,v 1.46 2005/08/17 19:58:34 tron Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 CATEGORIES+=		lang
@@ -21,6 +21,8 @@ MASTER_SITES+=		http://pear.php.net/get/
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 XMLRPC_DISTFILE=	XML_RPC-1.4.0.tgz
 DISTFILES=		${EXTRACT_ONLY} ${XMLRPC_DISTFILE}
+
+USE_TOOLS+=		gzip
 
 # On NetBSD ELF platforms, we need to link libgcc.a whole-archive so that
 # certain symbols from the C++ implementation (__get_eh_context, etc.)
