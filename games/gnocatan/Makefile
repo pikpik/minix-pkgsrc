@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.32 2005/07/21 16:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2005/08/10 20:56:17 jlam Exp $
 #
 
 DISTNAME=	gnocatan-0.8.1.16
 PKGREVISION=	4
 CATEGORIES=	games gnome
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnocatan/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pio/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://gnocatan.sourceforge.net/
+MAINTAINER=	veego@NetBSD.org
+HOMEPAGE=	http://pio.sourceforge.net/
 COMMENT=	GNOME version of the Settlers of Catan board game
+
+CONFLICTS=	pioneers-[0-9]*
 
 GNU_CONFIGURE=		YES
 USE_DIRS+=		xdg-1.1
