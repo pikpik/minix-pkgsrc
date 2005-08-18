@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.10 2005/02/13 16:41:59 taca Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:47:33 tv Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
 PKGNAME=		chasen-base-${CHASEN_VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		japanese textproc
 MASTER_SITES=		http://chasen.aist-nara.ac.jp/stable/chasen/
 
 PATCHFILES=		chasen-2.3.3.20030821.patch \
-			chasen-2.3.3.20030822.patch \
-			chasen-2.3.3.20031024.patch
+			chasen-2.3.3.20030822.patch
 PATCH_SITES=		${MASTER_SITES}
 
 MAINTAINER=		tech-pkg-ja@jp.NetBSD.org
