@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2005/08/01 09:49:37 jlam Exp $
+# $NetBSD: Makefile,v 1.100 2005/08/03 21:01:40 jlam Exp $
 
 DISTNAME=	openldap-2.2.27
 PKGREVISION=	1
@@ -99,7 +99,7 @@ INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR:Q}
 post-install:
 .for _file_ in ${CNFS} ${CNFS_PERMS}
 	${CHMOD} ${SHAREMODE} ${EGDIR}/${_file_}
-	${RM} ${EGDIR}/${_file_}.default
+	${RM} -f ${EGDIR}/${_file_}.default
 .endfor
 
 .include "../../mk/bsd.pkg.mk"
