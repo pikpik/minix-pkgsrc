@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/05/18 20:34:19 adrianp Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/02 23:07:30 salo Exp $
 
 DISTNAME=	horde-3.0.4
 PKGREVISION=	1
@@ -38,25 +38,25 @@ CONF_FILES+=		${EGDIR}/horde.conf ${PKG_SYSCONFDIR}/horde.conf
 CONF_FILES_PERMS+=	${HORDEDIR}/config/conf.php.dist \
 			${HORDEDIR}/config/conf.php \
 			${APACHE_USER} ${ROOT_GROUP} 0640
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/conf.xml.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/conf.xml.dist \
 			${HORDEDIR}/config/conf.xml \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/mime_drivers.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/mime_drivers.php.dist \
 			${HORDEDIR}/config/mime_drivers.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/motd.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/motd.php.dist \
 			${HORDEDIR}/config/motd.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/nls.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/nls.php.dist \
 			${HORDEDIR}/config/nls.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/prefs.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/prefs.php.dist \
 			${HORDEDIR}/config/prefs.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/registry.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/registry.php.dist \
 			${HORDEDIR}/config/registry.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
-SUPPORT_FILES_PERMS+=	${HORDEDIR}/config/hooks.php.dist \
+CONF_FILES_PERMS+=	${HORDEDIR}/config/hooks.php.dist \
 			${HORDEDIR}/config/hooks.php \
 			${APACHE_USER} ${ROOT_GROUP} 0440
 

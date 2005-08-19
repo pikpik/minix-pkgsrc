@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2005/04/11 21:46:21 tv Exp $
+# $NetBSD: Makefile,v 1.126 2005/05/29 03:44:12 minskim Exp $
 
 DISTNAME=		mutt-1.4.2.1i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -54,7 +54,7 @@ INSTALL_EXTRA_TMPL=	${.CURDIR}/INSTALL
 DOCDIR=			${PREFIX}/share/doc/mutt
 EGDIR=			${PREFIX}/share/examples/mutt
 CONF_FILES=		${EGDIR}/Muttrc ${PKG_SYSCONFDIR}/Muttrc
-SUPPORT_FILES=		${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
+CONF_FILES+=		${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
 FILES_SUBST+=		DOCDIR=${DOCDIR}
 
 .if exists(${WRKSRC}/mutt_dotlock)

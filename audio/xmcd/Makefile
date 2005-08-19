@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2005/02/21 20:26:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.50 2005/04/11 21:44:58 tv Exp $
 
 DISTNAME=	xmcd-3.0.2
 PKGREVISION=    4
@@ -34,9 +34,9 @@ _SETUID_ROOT=	${ROOT_USER} ${ROOT_GROUP} 4711
 SPECIAL_PERMS=	${ARCHBIN}/cda ${_SETUID_ROOT}
 SPECIAL_PERMS+=	${ARCHBIN}/xmcd ${_SETUID_ROOT}
 
-SFILES=		common.cfg device.cfg wwwwarp.cfg
-.for FILE in ${SFILES}
-SUPPORT_FILES+=	${XMCDDIR}/config/${FILE}.dist ${XMCDDIR}/config/${FILE}
+CFILES=		common.cfg device.cfg wwwwarp.cfg
+.for FILE in ${CFILES}
+CONF_FILES+=	${XMCDDIR}/config/${FILE}.dist ${XMCDDIR}/config/${FILE}
 .endfor
 MAKE_DIRS=	${XMCDDIR} ${XMCDDIR}/cdinfo ${XMCDDIR}/config ${XMCDDIR}/discog
 
