@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/05/30 16:31:08 salo Exp $
+# $NetBSD: Makefile,v 1.18 2005/08/03 03:19:40 grant Exp $
 #
 
 DISTNAME=	libebml-0.7.5
@@ -21,7 +21,5 @@ MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:Q} RANLIB=${RANLIB:Q}
 BUILD_DIRS=	${WRKDIR}/${DISTNAME}/make/linux
 BUILD_TARGET=	staticlib
 INSTALL_TARGET=	install_headers install_staticlib
-
-ONLY_FOR_COMPILER=	gcc icc
 
 .include "../../mk/bsd.pkg.mk"
