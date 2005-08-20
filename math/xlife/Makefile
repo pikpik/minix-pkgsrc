@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/03/15 04:38:57 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:31 tv Exp $
 #
 
 DISTNAME=	xlife-5.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math games
 MASTER_SITES=	http://www.tuxedo.org/~esr/
 
