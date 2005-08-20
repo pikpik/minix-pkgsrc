@@ -1,0 +1,10 @@
+# $NetBSD$
+
+VARBASE=@VARBASE@
+
+case "${STAGE}" in
+
+POST-INSTALL)
+	mkfifo ${VARBASE}/spool/nullmailer/trigger
+	;;
+esac
