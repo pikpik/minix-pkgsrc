@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/06/16 06:58:02 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/07/19 14:00:35 wiz Exp $
 #
 
 DISTNAME=	cucipop-1.31
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/
 
@@ -20,7 +20,7 @@ LICENSE=	cucipop-license
 MAKE_ENV+=	ROOT_USER="${ROOT_USER}"
 MAKE_ENV+=	ROOT_GROUP="${ROOT_GROUP}"
 
-MAKE_DIRS+=	${PREFIX}/share/cucipop/bulletins
+REQD_DIRS+=	${PREFIX}/share/cucipop/bulletins
 SPECIAL_PERMS+=	${PREFIX}/sbin/cucipop ${ROOT_USER} ${ROOT_GROUP} 2755
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cucipop

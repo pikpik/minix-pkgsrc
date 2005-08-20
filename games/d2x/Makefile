@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:00 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:50 jlam Exp $
 #
 
 DISTNAME=	d2x-0.2.5
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games x11
 MASTER_SITES=	http://icculus.org/d2x/src/
 
@@ -14,7 +14,7 @@ HAS_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 
 D2X_DATA=		${PREFIX}/share/games/${PKGBASE}
-MAKE_DIRS=		${D2X_DATA}
+REQD_DIRS=		${D2X_DATA}
 MESSAGE_SUBST+=		D2X_DATA=${D2X_DATA}
 
 #

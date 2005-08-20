@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2005/04/11 21:47:43 tv Exp $
+# $NetBSD: Makefile,v 1.25 2005/08/19 18:12:39 jlam Exp $
 #
 
 DISTNAME=	xmlcatmgr-2.2
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlcatmgr/}
 
@@ -22,7 +23,7 @@ CONF_FILES=	${EGDIR}/catalog.etc.sgml ${PKG_SYSCONFDIR}/sgml/catalog
 CONF_FILES+=	${EGDIR}/catalog.etc.xml ${PKG_SYSCONFDIR}/xml/catalog
 CONF_FILES+=	${EGDIR}/catalog.share.sgml ${PREFIX}/share/sgml/catalog
 CONF_FILES+=	${EGDIR}/catalog.share.xml ${PREFIX}/share/xml/catalog
-MAKE_DIRS=	${PREFIX}/share/sgml ${PREFIX}/share/xml
+REQD_DIRS=	${PREFIX}/share/sgml ${PREFIX}/share/xml
 
 PRINT_PLIST_AWK+=	/^@dirrm share\/(sgml|xml)$$/ { next; }
 

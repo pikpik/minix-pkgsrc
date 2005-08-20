@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2005/04/11 21:44:58 tv Exp $
+# $NetBSD: Makefile,v 1.51 2005/08/19 18:12:36 jlam Exp $
 
 DISTNAME=	xmcd-3.0.2
-PKGREVISION=    4
+PKGREVISION=    5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.ibiblio.org/tkan/download/xmcd/src/
 
@@ -38,7 +38,7 @@ CFILES=		common.cfg device.cfg wwwwarp.cfg
 .for FILE in ${CFILES}
 CONF_FILES+=	${XMCDDIR}/config/${FILE}.dist ${XMCDDIR}/config/${FILE}
 .endfor
-MAKE_DIRS=	${XMCDDIR} ${XMCDDIR}/cdinfo ${XMCDDIR}/config ${XMCDDIR}/discog
+REQD_DIRS=	${XMCDDIR} ${XMCDDIR}/cdinfo ${XMCDDIR}/config ${XMCDDIR}/discog
 
 pre-configure:
 	cd ${WRKSRC} && \

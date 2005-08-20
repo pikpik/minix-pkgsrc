@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:05 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/21 04:10:18 jlam Exp $
 #
 
 DISTNAME=	pkg_alternatives-1.3
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -25,8 +26,8 @@ DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 FILES_SUBST+=		PKG_ALTERNATIVES=${PREFIX}/sbin/pkg_alternatives
 
-MAKE_DIRS=		${DBDIR}
-MAKE_DIRS+=		${PKG_SYSCONFDIR}
+REQD_DIRS=		${DBDIR}
+MAKE_DIRS=		${PKG_SYSCONFDIR}
 
 PKG_SYSCONFSUBDIR=	pkg_alternatives
 CONF_FILES=		${EGDIR}/filter.conf ${PKG_SYSCONFDIR}/filter.conf
