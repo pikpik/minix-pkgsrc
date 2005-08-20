@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:46:18 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/08/19 18:12:37 jlam Exp $
 
 DISTNAME=		elm-2.4ME+93
 PKGNAME=		elm-me-2.4.93
-PKGREVISION=				2
+PKGREVISION=		3
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.ozone.fmi.fi/KEH/ \
 			ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
