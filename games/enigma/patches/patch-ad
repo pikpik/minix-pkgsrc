@@ -1,8 +1,8 @@
 $NetBSD$
 
---- doc/manual/Makefile.in.orig	Sat Oct 11 19:19:56 2003
+--- doc/manual/Makefile.in.orig	2005-05-27 05:54:42.000000000 +0000
 +++ doc/manual/Makefile.in
-@@ -146,7 +146,7 @@ HTML = $(wildcard enigma_*.html) \
+@@ -177,7 +177,7 @@ HTML = $(wildcard enigma_*.html) \
  	index.html
  
  
