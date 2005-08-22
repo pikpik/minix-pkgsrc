@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2005/02/05 22:16:32 jdolecek Exp $
+# $NetBSD: Makefile,v 1.33 2005/04/11 21:46:18 tv Exp $
 
-DISTNAME=		elm2.5.7
-PKGREVISION=		# empty
-PKGNAME=		elm-2.5.7
+DISTNAME=		elm2.5.8
+PKGNAME=		elm-2.5.8
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.virginia.edu/pub/elm/
 
