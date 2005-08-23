@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.3818 2005/08/22 09:50:14 cube Exp $
+$NetBSD: TODO,v 1.3819 2005/08/22 15:36:31 adam Exp $
 
 Suggested new packages
 ======================
@@ -423,7 +423,6 @@ Suggested package updates
 	o dmalloc-5.4.2
 	o dnstracer-1.8
 	o dpkg-1.13.3
-	o drivel-2.0.2
 	o dvdrip-0.52.6
 	o dvipdfmx-20050201
 	o dvipng-1.6 [http://sourceforge.net/projects/dvipng/]
