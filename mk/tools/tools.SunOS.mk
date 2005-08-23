@@ -1,4 +1,4 @@
-# $NetBSD: tools.SunOS.mk,v 1.17 2005/06/24 20:59:59 jlam Exp $
+# $NetBSD: tools.SunOS.mk,v 1.18 2005/07/31 05:24:52 grant Exp $
 #
 # System-supplied tools for the Solaris operating system.
 
@@ -74,7 +74,7 @@ TOOLS_PLATFORM.tbl?=		/usr/bin/tbl
 TOOLS_PLATFORM.tee?=		/usr/bin/tee
 TOOLS_PLATFORM.test?=		test			# shell builtin
 TOOLS_PLATFORM.touch?=		/usr/bin/touch
-TOOLS_PLATFORM.tr?=		/usr/bin/tr
+TOOLS_PLATFORM.tr?=		/usr/xpg4/bin/tr
 TOOLS_PLATFORM.true?=		/usr/bin/true
 TOOLS_PLATFORM.tsort?=		/usr/ccs/bin/tsort
 TOOLS_PLATFORM.wc?=		/usr/bin/wc
