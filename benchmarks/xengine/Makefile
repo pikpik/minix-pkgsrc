@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2005/06/12 04:03:30 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/15 18:27:48 jlam Exp $
 
 DISTNAME=	xengine-1.0.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/comp.sources.x/volume09/xengine/
 DISTFILES=	part01.z patch1.z
