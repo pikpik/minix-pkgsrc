@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/24 03:06:43 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:47:32 tv Exp $
 #
 
 DISTNAME=	aspell6-en-6.0-0
@@ -12,6 +12,8 @@ HOMEPAGE=	http://aspell.net/
 COMMENT=	English language support for aspell
 
 HAS_CONFIGURE=	YES
+CONFIGURE_ENV+=	ASPELL=${BUILDLINK_PREFIX.aspell}/bin/aspell
+CONFIGURE_ENV+=	PREZIP=${BUILDLINK_PREFIX.aspell}/bin/prezip-bin
 
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
