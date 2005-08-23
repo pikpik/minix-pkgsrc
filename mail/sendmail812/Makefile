@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/03/30 21:54:19 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/01 14:54:33 wiz Exp $
 
 .include "options.mk"
 .include "../../mail/sendmail812/Makefile.common"
@@ -14,7 +14,7 @@ PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
 USE_PKGINSTALL=	yes
 PKG_GROUPS=	smmsp
-PKG_USERS=	smmsp:smmsp::Sendmail\\ Message\\ Submission\\ Program
+PKG_USERS=	smmsp:smmsp::Sendmail\ Message\ Submission\ Program
 
 post-patch: make-sendmail-siteconfig
 .if !empty(PKG_OPTIONS:Mtcpwrappers)

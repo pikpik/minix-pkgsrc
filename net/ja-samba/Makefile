@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/07/08 16:47:42 kristerw Exp $
+# $NetBSD: Makefile,v 1.38 2005/08/19 18:12:38 jlam Exp $
 
 DISTNAME=		samba-${SAMBA_VERSION}-ja-${JA_VERSION}
 PKGNAME=		ja-samba-${SAMBA_VERSION}.${JA_PKG_VERSION}
@@ -124,7 +124,7 @@ OWN_DIRS_PERMS=		${SAMBA_PRIVATE} ${ROOT_USER} ${ROOT_GROUP} 0500
 RCD_SCRIPTS=		samba nmbd smbd winbindd
 
 PKG_GROUPS=		${SAMBA_GROUP}
-PKG_USERS=		${SAMBA_USER}:${SAMBA_GROUP}::Samba\\ pseudo-user
+PKG_USERS=		${SAMBA_USER}:${SAMBA_GROUP}::Samba\ pseudo-user
 
 BUILD_DEFS+=		SAMBA_USER SAMBA_GROUP
 MAKE_FLAGS=		CFLAGS='-DGUEST_ACCOUNT=\"${SAMBA_USER:Q}\"'

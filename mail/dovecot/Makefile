@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/04/11 21:46:18 tv Exp $
+# $NetBSD: Makefile,v 1.37 2005/08/19 04:57:01 grant Exp $
 
 DISTNAME=		dovecot-0.99.14
 PKGREVISION=		1
@@ -28,7 +28,7 @@ RCD_SCRIPTS=	dovecot
 DOVECOT_USER?=	dovecot
 DOVECOT_GROUP?=	dovecot
 PKG_GROUPS=	${DOVECOT_GROUP}
-PKG_USERS=	${DOVECOT_USER}:${DOVECOT_GROUP}::Dovecot\\ IMAP/POP3\\ user
+PKG_USERS=	${DOVECOT_USER}:${DOVECOT_GROUP}::Dovecot\ IMAP/POP3\ user
 
 EGDIR=		${PREFIX}/share/examples/dovecot
 CONF_FILES=	${EGDIR}/dovecot.conf.default ${PKG_SYSCONFDIR}/dovecot.conf

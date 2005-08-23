@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:50 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/07/13 15:30:23 adam Exp $
 
 DISTNAME=	distcc-2.18.3
 CATEGORIES=	devel
@@ -21,7 +21,7 @@ RCD_SCRIPTS=		distccd
 DISTCC_USER?=		distcc
 DISTCC_GROUP?=		distcc
 PKG_GROUPS=		${DISTCC_GROUP}
-PKG_USERS=      	${DISTCC_USER}:${DISTCC_GROUP}::Distccd\\ user
+PKG_USERS=      	${DISTCC_USER}:${DISTCC_GROUP}::Distccd\ user
 
 DISTCC_PIDDIR?=		${VARBASE}/run/distccd
 OWN_DIRS_PERMS=		${DISTCC_PIDDIR} ${DISTCC_USER} ${DISTCC_GROUP} 0750

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/06/19 21:12:36 seb Exp $
+# $NetBSD: Makefile,v 1.20 2005/07/29 21:02:35 xtraeme Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 #PKGREVISION=		1
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--with-pthreads
 USE_PKGINSTALL=		YES
 DEINSTALL_EXTRA_TMPL=	${.CURDIR}/DEINSTALL
 
-PKG_USERS=		${MYSQL_USER}:${MYSQL_GROUP}::MySQL\\ database\\ administrator:${MYSQL_DATADIR}:${SH}
+PKG_USERS=		${MYSQL_USER}:${MYSQL_GROUP}::MySQL\ database\ administrator:${MYSQL_DATADIR}:${SH}
 PKG_GROUPS=		${MYSQL_GROUP}
 RCD_SCRIPTS=		mysqld
 

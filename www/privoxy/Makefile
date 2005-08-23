@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/06/01 20:08:01 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/07/16 01:19:26 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
@@ -22,7 +22,7 @@ PKG_SYSCONFSUBDIR?=	privoxy
 USE_PKGINSTALL=		YES
 RCD_SCRIPTS=		privoxy
 PKG_GROUPS=		${PRIVOXY_GROUP}
-PKG_USERS=		${PRIVOXY_USER}:${PRIVOXY_GROUP}::Privoxy\\ user
+PKG_USERS=		${PRIVOXY_USER}:${PRIVOXY_GROUP}::Privoxy\ user
 
 EGDIR=			${PREFIX}/share/examples/privoxy
 

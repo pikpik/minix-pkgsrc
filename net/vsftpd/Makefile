@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/03/07 09:41:45 uebayasi Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:02 tv Exp $
 #
 
 DISTNAME=	vsftpd-1.2.2
@@ -20,7 +20,7 @@ RCD_SCRIPTS=	vsftpd
 VSFTPD_USER?=	vsftpd
 VSFTPD_GROUP?=	vsftpd
 PKG_GROUPS=	${VSFTPD_GROUP}
-PKG_USERS=	${VSFTPD_USER}:${VSFTPD_GROUP}::vsftpd\\ user
+PKG_USERS=	${VSFTPD_USER}:${VSFTPD_GROUP}::vsftpd\ user
 
 DOCDIR=		${PREFIX}/share/doc/vsftpd
 EGDIR=		${PREFIX}/share/examples/vsftpd

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/08/14 18:47:47 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/08/17 11:43:27 tv Exp $
 #
 
 DISTNAME=	fidogate-4.4.10
@@ -21,7 +21,7 @@ EGDIR=		${PREFIX}/share/examples/fidogate
 CONF_FILES=	${EGDIR}/fidogate.conf ${PKG_SYSCONFDIR}/fidogate/fidogate.conf
 RCD_SCRIPTS=	fidogate
 
-PKG_USERS=	news:news::Network\\ News:/var/spool/news:${NOLOGIN}
+PKG_USERS=	news:news::Network\ News:/var/spool/news:${NOLOGIN}
 PKG_GROUPS=	news
 
 post-extract:

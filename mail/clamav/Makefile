@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/07/14 02:26:09 tv Exp $
+# $NetBSD: Makefile,v 1.43 2005/07/26 07:53:50 grant Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -34,7 +34,7 @@ DEINSTALL_EXTRA_TMPL=	${.CURDIR}/DEINSTALL
 
 RCD_SCRIPTS=	clamd freshclamd
 PKG_GROUPS+=	${CLAMAV_GROUP}
-PKG_USERS+=	${CLAMAV_USER}:${CLAMAV_GROUP}::Clamav\\ User
+PKG_USERS+=	${CLAMAV_USER}:${CLAMAV_GROUP}::Clamav\ User
 
 VIRUSDBDIR=	${VARBASE}/clamav
 EGDIR=		${PREFIX}/share/examples/clamav

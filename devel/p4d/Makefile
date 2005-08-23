@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:43 reed Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:47 jlam Exp $
 #
 
 DISTNAME=	p4d
@@ -19,7 +19,7 @@ FILES_SUBST+=	P4LOG=${P4LOG:Q}
 FILES_SUBST+=	P4JOURNAL=${P4JOURNAL:Q}
 
 PKG_GROUPS?=	${P4GROUP}
-PKG_USERS?=	${P4USER}:${P4GROUP}::Perforce\\ Server:${P4ROOT}
+PKG_USERS?=	${P4USER}:${P4GROUP}::Perforce\ Server:${P4ROOT}
 
 OWN_DIRS_PERMS=	${P4ROOT} ${P4USER} ${P4GROUP} 750
 

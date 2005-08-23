@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/07/15 22:19:11 kristerw Exp $
+# $NetBSD: Makefile,v 1.35 2005/08/02 09:26:06 seb Exp $
 
 PKGNAME=		amanda-common-${VERS}
 PKGREVISION=		2
@@ -28,7 +28,7 @@ CONFIGURE_ENV+=		ac_cv_lib_ncurses_tgetent=no
 CONFIGURE_ENV+=		ac_cv_lib_readline_readline=no
 
 PKG_GROUPS=		${AMANDA_GROUP}
-PKG_USERS=		${AMANDA_USER}:${AMANDA_GROUP}::Amanda\\ user::${SH}
+PKG_USERS=		${AMANDA_USER}:${AMANDA_GROUP}::Amanda\ user::${SH}
 
 OWN_DIRS_PERMS=		${AMANDA_VAR} ${AMANDA_USER} ${AMANDA_GROUP} 0700
 OWN_DIRS_PERMS+=	${AMANDA_VAR}/gnutar-lists  ${AMANDA_USER} ${AMANDA_GROUP} 0700

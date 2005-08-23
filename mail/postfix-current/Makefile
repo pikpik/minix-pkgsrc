@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/07/31 03:58:45 grant Exp $
+# $NetBSD: Makefile,v 1.43 2005/08/14 21:51:02 christos Exp $
 
 DISTNAME=	postfix-2.3-20050726
 CATEGORIES=	mail
@@ -88,7 +88,7 @@ OWN_DIRS+=		${POSTFIX_QUEUE_DIR}
 MAKE_DIRS+=		${PKG_SYSCONFDIR}
 
 PKG_GROUPS?=		postfix maildrop
-PKG_USERS?=		postfix:postfix::Postfix\\ User:${POSTFIX_QUEUE_DIR}
+PKG_USERS?=		postfix:postfix::Postfix\ User:${POSTFIX_QUEUE_DIR}
 
 CONF_FILES=		# empty
 .for _file_ in main.cf master.cf postfix-files

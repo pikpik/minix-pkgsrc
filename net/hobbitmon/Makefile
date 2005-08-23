@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:48 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:24 jlam Exp $
 #
 
 DISTNAME=	hobbit-4.0-beta6
@@ -29,7 +29,7 @@ BBCGIURL?=	/cgi-bin
 BBHOSTIP?=	127.0.0.1
 
 PKG_GROUPS=	${BBGROUP}
-PKG_USERS=	${BBUSER}:${BBGROUP}::Hobbit\\ monitor:${BBTOPDIR}
+PKG_USERS=	${BBUSER}:${BBGROUP}::Hobbit\ monitor:${BBTOPDIR}
 
 CONFIGURE_ENV+=	TARGET=hobbit
 CONFIGURE_ENV+=	FPING=${PREFIX}/sbin/fping

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/16 06:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/08/19 18:12:37 jlam Exp $
 #
 
 DISTNAME=		jabber-1.4.2
@@ -39,7 +39,7 @@ BUILD_DEFS+=		JABBERD_USER	JABBERD_GROUP \
 			JABBERD_PIDDIR
 
 PKG_GROUPS=             ${JABBERD_GROUP}
-PKG_USERS=              ${JABBERD_USER}:${JABBERD_GROUP}::Jabberd\\ user
+PKG_USERS=              ${JABBERD_USER}:${JABBERD_GROUP}::Jabberd\ user
 
 FILES_SUBST+=		JABBERD_USER="${JABBERD_USER}"
 FILES_SUBST+=		JABBERD_GROUP="${JABBERD_GROUP}"
