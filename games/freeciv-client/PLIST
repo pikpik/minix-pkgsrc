@@ -1,2 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/03/28 00:35:25 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:52:19 zuntum Exp $
 bin/civclient
+share/applications/freeciv.desktop
