@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/08/19 20:46:45 schmonz Exp $
+# $NetBSD: Makefile,v 1.8 2005/08/23 19:33:52 schmonz Exp $
 #
 
 DISTNAME=		bglibs-1.027
@@ -13,6 +13,7 @@ BUILD_TARGET=		all
 INSTALL_TARGET=		install
 
 DJB_RESTRICTED=		NO
+DJB_MAKE_TARGETS=	NO
 
 DJB_CONFIG_CMDS=							\
 	${ECHO} ${DJB_CONFIG_PREFIX}/include/bglibs > conf-include;	\

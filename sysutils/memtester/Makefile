@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:47:25 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/07 11:56:01 schmonz Exp $
 #
 
 DISTNAME=		memtester-4.0.5
@@ -11,9 +11,8 @@ COMMENT=		Utility for testing the memory subsystem for faults
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-BUILD_TARGET=		all
-
 DJB_RESTRICTED=		NO
+DJB_MAKE_TARGETS=	NO
 
 INSTALLATION_DIRS=	bin man/man8 share/doc/memtester
 
