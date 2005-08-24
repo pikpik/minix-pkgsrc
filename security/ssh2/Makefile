@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/12/28 02:47:49 reed Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/01 18:03:21 jlam Exp $
 #
 
 PKGNAME=	${DISTNAME:C/ssh-/ssh2-/}
 COMMENT=        Secure Shell client and server for V.2 SSH protocol
-PKGREVISION=	3
+PKGREVISION=	4
 
 CONFLICTS=	ssh2-nox11-[0-9]*
 
