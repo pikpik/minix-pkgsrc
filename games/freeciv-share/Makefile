@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/13 13:51:44 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2004/03/05 12:06:38 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-share-/}
 COMMENT=	Machine independent files for Freeciv
@@ -7,5 +7,6 @@ COMMENT=	Machine independent files for Freeciv
 
 CONFIGURE_ARGS+=	--disable-server
 CONFIGURE_ARGS+=	--enable-client=no
+CONFIGURE_ARGS+=	--enable-make-data
 
 .include "../../mk/bsd.pkg.mk"
