@@ -1,11 +1,12 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: spamass-milter.sh,v 1.2 2005/08/23 13:40:02 tv Exp $
+# $NetBSD: spamass-milter.sh,v 1.3 2005/08/23 13:46:37 tv Exp $
 #
 
 # PROVIDE: spamass-milter
 # REQUIRE: spamd
 # KEYWORD: shutdown
+# BEFORE: mail
 
 if [ -f /etc/rc.subr ]; then
 	. /etc/rc.subr
