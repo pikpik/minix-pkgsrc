@@ -1,8 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/07/11 22:53:24 zuntum Exp $
 bin/pag
 bin/pag_intro
 share/doc/pag/README.cat
-share/doc/pag/TODO
 share/pag/levels/001.pag
 share/pag/levels/001_2.pag
 share/pag/levels/002.pag
