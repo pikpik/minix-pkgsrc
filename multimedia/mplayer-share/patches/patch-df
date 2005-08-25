@@ -1,3 +1,4 @@
+$NetBSD$
 --- libmpdemux/stream_vcd.c.orig	2005-05-20 20:10:45.000000000 +0200
 +++ libmpdemux/stream_vcd.c	2005-05-20 20:10:59.000000000 +0200
 @@ -14,7 +14,7 @@
