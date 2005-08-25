@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/06/17 03:50:39 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2005/08/25 08:55:39 grant Exp $
 
 DISTNAME=       analog-6.0
 CATEGORIES=	www
@@ -25,6 +25,10 @@ CFLAGS+=	-DNOGLOB
 .endif
 
 INSTALLATION_DIRS=	bin man/man1
+
+LIBS+=		-lm
+LIBS.SunOS+=	-lnsl -lsocket
+MAKE_ENV+=	LIBS=${LIBS:Q}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDISTDIR}/analog ${PREFIX}/bin
