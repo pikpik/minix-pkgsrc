@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.242 2005/06/05 22:47:19 markd Exp $
+# $NetBSD: Makefile,v 1.243 2005/07/23 21:34:55 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -21,6 +21,7 @@ SUBDIR+=	bottlerocket
 SUBDIR+=	brs
 SUBDIR+=	bsdiff
 SUBDIR+=	buffer
+SUBDIR+=	cdialog
 SUBDIR+=	celestia
 SUBDIR+=	celestia-gnome
 SUBDIR+=	celestia-gtk
