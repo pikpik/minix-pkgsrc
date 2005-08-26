@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1716 2005/08/15 17:35:45 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1717 2005/08/18 19:24:15 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1178,7 +1178,6 @@ _RESUME_TRANSFER=						\
 			${RM} $$tfile;				\
 		fi;						\
 		need_fetch=no;					\
-		break;						\
 	elif [ "$$osize" -lt "$$tsize" -a ! -f "$$tfile" ]; then	\
 		${CP} $$ofile $$tfile;				\
 		dsize=`${WC} -c < $$tfile`;			\
@@ -1187,7 +1186,9 @@ _RESUME_TRANSFER=						\
 		dsize=`${WC} -c < $$tfile`;			\
 		need_fetch=yes;					\
 	else							\
-		dsize=`${WC} -c < $$tfile`;			\
+		if [ -f "$$tfile" ]; then			\
+			dsize=`${WC} -c < $$tfile`;		\
+		fi;						\
 		need_fetch=yes;					\
 	fi;							\
 	if [ "$$need_fetch" = "no" ]; then			\
