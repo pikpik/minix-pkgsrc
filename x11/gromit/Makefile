@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/07/21 16:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/08/10 20:56:26 jlam Exp $
 #
 
 DISTNAME=		gromit-20041213
@@ -12,10 +12,13 @@ COMMENT=		Text marker tool for the X11 screen
 USE_TOOLS+=		pkg-config
 INSTALLATION_DIRS=	bin
 
+LDFLAGS+=		-lX11
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gromit ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gromit
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gromit
 
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
