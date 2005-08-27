@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/21 16:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/10 20:56:26 jlam Exp $
 
 DISTNAME=		devilspie-0.10
 CATEGORIES=		x11
@@ -13,6 +13,8 @@ BUILD_DEPENDS+=		libxslt>=1.0:../../textproc/libxslt
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
+
+LIBS+=			-lX11
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/devilspie
