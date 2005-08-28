@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2005/03/15 13:48:28 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:46:20 tv Exp $
 
 DISTNAME=	mew-3.3
+PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/release/

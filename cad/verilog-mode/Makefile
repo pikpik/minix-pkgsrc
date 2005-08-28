@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:25:28 grant Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:09:10 agc Exp $
 #
 
 DISTNAME=		verilog-mode-3.60
+PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
 CATEGORIES=		cad editors
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 # The latest can be fetched interactively from

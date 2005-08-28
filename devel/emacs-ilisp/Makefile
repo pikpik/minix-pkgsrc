@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 16:43:20 martti Exp $
+# $NetBSD: Makefile,v 1.6 2004/12/03 15:14:54 wiz Exp $
 #
 
 DISTNAME=	ilisp-20021222
-PKGNAME=	emacs-${DISTNAME}
+PKGNAME=	${EMACS_PKGNAME_PREFIX}emacs-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ilisp/}
 

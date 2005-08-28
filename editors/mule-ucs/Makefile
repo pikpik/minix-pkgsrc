@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/08/29 16:20:56 taca Exp $
+# $NetBSD: Makefile,v 1.10 2004/05/08 13:35:20 uebayasi Exp $
 
 DISTNAME=	Mule-UCS-0.84
+PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
 PKGREVISION=	4
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/Mule-UCS/
