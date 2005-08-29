@@ -75,6 +75,8 @@ post-extract:
 	${MKDIR} ${WRKSRC}/Local
 	${CP} ${WRKSRC}/src/EDITME ${WRKSRC}/Local/Makefile.pkgsrc
 	${CP} ${WRKSRC}/exim_monitor/EDITME ${WRKSRC}/Local/eximon.conf.pkgsrc
+	${CP} ${FILESDIR}/Makefile-DragonFly ${FILESDIR}/os.h-DragonFly \
+		${WRKSRC}/OS/
 
 pre-configure:
 	@${ECHO} LOOKUP_DSEARCH=yes >> ${WRKSRC}/Local/Makefile.pkgsrc
