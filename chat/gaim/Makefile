@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.98 2005/08/25 21:30:47 reed Exp $
+# $NetBSD: Makefile,v 1.99 2005/08/26 02:01:20 grant Exp $
 
 DISTNAME=	gaim-1.5.0
 PKGREVISION=	1
@@ -45,7 +45,6 @@ CONFIGURE_ARGS+=	--disable-screensaver
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/silc-toolkit/buildlink3.mk"
-.include "../../textproc/gtkspell/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
 
