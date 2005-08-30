@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/qprint
+man/man1/qprint.1
