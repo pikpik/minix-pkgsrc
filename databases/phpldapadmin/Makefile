@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/23 22:01:42 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2005/08/30 14:26:32 adrianp Exp $
 
 DISTNAME=	phpldapadmin-${VERSION}
 PKGREVISION=	2
@@ -28,6 +28,9 @@ INSTALLATION_DIRS=	${PREFIX}/share/phpldapadmin
 do-configure:
 	@${SED} -e "s|@LDAPADMINDIR@|${PREFIX}/share/phpldapadmin|g" \
 		${FILESDIR}/phpldapadmin.conf > ${WRKDIR}/phpldapadmin.conf
+
+pre-install:
+	@${RM} ${WRKSRC}/login.php.orig
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/phpldapadmin
