@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2005/08/07 00:17:20 rillig Exp $
+# $NetBSD: Makefile,v 1.135 2005/08/07 16:17:43 recht Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -40,6 +40,7 @@ SUBDIR+=	fuse
 SUBDIR+=	fuse-utils
 SUBDIR+=	gcube
 SUBDIR+=	generator
+SUBDIR+=	generator-cbiere
 SUBDIR+=	gens
 SUBDIR+=	gnuboy
 SUBDIR+=	gnuboy-sdl
