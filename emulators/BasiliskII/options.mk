@@ -1,7 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2005/07/01 12:34:32 adam Exp $
+# $NetBSD: options.mk,v 1.2 2005/08/31 16:11:34 hira Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.BasiliskII
 PKG_SUPPORTED_OPTIONS=	esound gtk sdl
+PKG_OPTIONS_LEGACY_OPTS+=	esd:esound
 
 .include "../../mk/bsd.options.mk"
 
