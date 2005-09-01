@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.3833 2005/08/30 14:31:13 adam Exp $
+$NetBSD: TODO,v 1.3834 2005/08/30 16:18:43 tonio Exp $
 
 Suggested new packages
 ======================
@@ -1145,9 +1145,6 @@ Infrastructure problems which need addressing
 
 Suggested pkgsrc enhancements
 =============================
-
-	o Fix the many false positive warnings from pkglint, such as:
-	  WARN: possible use of absolute pathname "/usr", in Makefile.
 
 	o Make pkgsrc work on more operating systems.
 
