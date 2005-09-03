@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2003/07/21 17:16:27 martti Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:30 jlam Exp $
 #
 
-DISTNAME=	pscal-1.15
+DISTNAME=	pscal-1.16
 CATEGORIES=	print
 MASTER_SITES=	http://www.panix.com/~mbh/pscal/
 
