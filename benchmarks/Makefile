@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/09/03 05:58:59 xtraeme Exp $
+# $NetBSD: Makefile,v 1.37 2005/09/03 06:27:25 xtraeme Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -27,6 +27,7 @@ SUBDIR+=	nettest
 SUBDIR+=	nsieve
 SUBDIR+=	nttcp
 SUBDIR+=	paranoia
+SUBDIR+=	pipebench
 SUBDIR+=	postal
 SUBDIR+=	postmark
 SUBDIR+=	randread
