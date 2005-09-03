@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/08/30 16:14:53 tonio Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.lbdb
 PKG_SUPPORTED_OPTIONS=	osx-addressbook gnupg abook
@@ -15,7 +15,7 @@ PLIST_SUBST+= OSXADDRESSBOOK="@comment "
 .endif
 
 .if !empty(PKG_OPTIONS:Mgnupg)
-DEPENDS=gnupg-[0-9]*:../../security/gnupg
+DEPENDS+=gnupg-[0-9]*:../../security/gnupg
 CONFIGURE_ARGS+=	--with-gpg
 PLIST_SUBST+= WITHGPG=""
 .else
@@ -24,7 +24,7 @@ PLIST_SUBST+= WITHGPG="@comment "
 .endif
 
 .if !empty(PKG_OPTIONS:Mabook)
-DEPENDS=abook-[0-9]*:../../databases/abook
+DEPENDS+=abook-[0-9]*:../../databases/abook
 CONFIGURE_ARGS+=	--with-abook
 PLIST_SUBST+= WITHABOOK=""
 .else
