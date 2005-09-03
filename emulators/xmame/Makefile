@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.132 2005/06/24 22:52:42 kristerw Exp $
+# $NetBSD: Makefile,v 1.133 2005/08/25 19:54:22 kristerw Exp $
 #
 
 DISTNAME=		xmame-0.99
@@ -112,6 +112,13 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/html/xmame/
 	${INSTALL_DATA_DIR}  ${PREFIX}/share/doc/xmame
 	${INSTALL_DATA} ${WRKSRC}/doc/xmame-doc.txt ${PREFIX}/share/doc/xmame
+
+.if !empty(CC_VERSION:Mgcc-3*)
+SUBST_CLASSES=		pragma
+SUBST_STAGE.pragma=	pre-configure
+SUBST_FILES.pragma=	src/*.h
+SUBST_SED.pragma=	-e "s|\#pragma once||g"
+.endif
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
