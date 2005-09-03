@@ -13,3 +13,13 @@ $NetBSD$
  
  if( ! $anon_bind )
  	strlen($pass) or pla_error( $lang['password_blank'] );
+@@ -149,9 +151,6 @@ include realpath( 'header.php' );
+ 		parent.left_frame.location.reload();
+ 	<?php } ?>
+ 
+-	<?php if ( isset($custom_welcome_page) and $custom_welcome_page ) { ?>
+-		parent.right_frame.location.href='welcome.php';
+-	<?php } ?>
+ </script>
+ 
+ <center>
