@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/04/11 03:26:55 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 03:53:57 minskim Exp $
 
-DISTNAME=	cmd-0.7.0
+DISTNAME=	cmd-0.7.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://code.vernix.org/cmd/download/
