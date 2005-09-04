@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/cwm
+man/man1/cwm.1
