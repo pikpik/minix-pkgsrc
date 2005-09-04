@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/11/12 23:44:02 kristerw Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:21 jlam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gtk-/}
+PKGREVISION=	1
 
 COMMENT=	GTK frontend for free real-time 3D space simulator
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/03/27 15:43:35 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:49 tv Exp $
 #
 
 DISTNAME=	fillets-ng-0.6.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fillets/}
 
