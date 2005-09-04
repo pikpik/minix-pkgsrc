@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.408 2005/08/11 17:45:33 reed Exp $
+# $NetBSD: Makefile,v 1.409 2005/08/26 22:19:31 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -135,6 +135,7 @@ SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
 SUBDIR+=	libwww
 SUBDIR+=	liferea
+SUBDIR+=	lighttpd
 SUBDIR+=	links
 SUBDIR+=	links-gui
 SUBDIR+=	lynx
