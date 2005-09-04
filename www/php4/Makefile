@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/08/17 21:13:53 tron Exp $
+# $NetBSD: Makefile,v 1.49 2005/08/18 07:47:50 tron Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 CATEGORIES+=		lang
@@ -13,6 +13,9 @@ LIBTOOL_OVERRIDE=	# empty
 USE_TOOLS+=		gmake
 
 .include "Makefile.php"
+
+CONFIGURE_ARGS+=	--enable-discard-path
+CONFIGURE_ARGS+=	--enable-force-cgi-redirect
 
 CGIDIR=			${PREFIX}/libexec/cgi-bin
 EGDIR=			${PREFIX}/share/examples/php
