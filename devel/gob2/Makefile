@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2005/07/21 16:29:47 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.4 2005/08/10 20:56:15 jlam Exp $
 
-DISTNAME=	gob2-2.0.11
+DISTNAME=	gob2-2.0.12
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://ftp.5z.com/pub/gob/ \
 		http://ftp.5z.com/pub/gob/old/
@@ -10,8 +9,8 @@ MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://www.5z.com/jirka/gob.html
 COMMENT=	GNOME object builder for glib2
 
-GNU_CONFIGURE=	YES
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=		pkg-config
+GNU_CONFIGURE=		yes
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
