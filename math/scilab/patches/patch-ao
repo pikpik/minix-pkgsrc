@@ -1,9 +1,9 @@
 $NetBSD$
 
---- ocaml/Makefile.orig	Tue Mar 30 13:30:26 2004
+--- ocaml/Makefile.orig	2005-04-28 06:53:48.000000000 +0000
 +++ ocaml/Makefile
-@@ -26,7 +26,7 @@ PLATFORM=$(shell uname -s)
- EXE=modelicac
+@@ -30,7 +30,7 @@ PLATFORM=$(shell uname -s)
+ EXE=../bin/modelicac
  
  
 -.SUFFIXES: .ml .mli .cmo .cmi .cmx .mlp .mpi
@@ -11,7 +11,7 @@ $NetBSD$
  
  
  
-@@ -60,12 +60,12 @@ EXE=modelicac
+@@ -64,12 +64,12 @@ EXE=../bin/modelicac
  	@$(OCAMLOPT) $(OCAMLOPTFLAGS) -c $(<)
  
  
