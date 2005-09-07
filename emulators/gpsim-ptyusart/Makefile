@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/11/29 20:55:51 bouyer Exp $
+# $NetBSD: $
 #
 
-DISTNAME=	ptyusart-0.3.1
+DISTNAME=	ptyusart-0.3.2
 PKGNAME=	gpsim-${DISTNAME}
 CATEGORIES=	emulators
 MASTER_SITES=	http://www-asim.lip6.fr/~bouyer/pic/
@@ -12,6 +12,7 @@ COMMENT=	Pseudo-tty module for gpsim
 ONLY_FOR_PLATFORM=      NetBSD-*-*
 
 GNU_CONFIGURE=	YES
+USE_BUILDLINK3=	YES
 USE_LANGUAGES=	c c++
 
 USE_LIBTOOL=	YES
