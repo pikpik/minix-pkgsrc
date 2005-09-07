@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2005/06/17 03:50:41 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/08 18:16:04 kristerw Exp $
 
 DISTNAME=	mini_httpd-1.19
 PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/mini_httpd/
 
-MAINTAINER=	pkgsrc@bjan.freeshell.org
+MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.acme.com/software/mini_httpd/
 COMMENT=	Small, forking webserver with IPv6 and SSL support
 
