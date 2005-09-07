@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/03/27 15:43:32 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:38 jlam Exp $
 
 .include "../../devel/SDL/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/SDL/SDL-arts/}
-PKGREVISION=	1
 
 CATEGORIES+=	audio kde
 
