@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/07/21 16:29:59 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/08/10 20:56:26 jlam Exp $
 #
 
 DISTNAME=		compositeext-2.0
 CATEGORIES=		x11 devel
-MASTER_SITES=		http://freedesktop.org/~xlibs/release/
+MASTER_SITES=		http://xlibs.freedesktop.org/release/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		tech-pkg@NetBSD.org
