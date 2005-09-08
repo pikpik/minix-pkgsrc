@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- src/configure.orig	2005-05-24 05:27:10.000000000 +0200
++++ src/configure
+@@ -17,9 +17,6 @@ do
+ 	fi
+ done
+ 
+-PKG_INCLUDE=`pkg-config gtk+-2.0 --cflags`
+-PKG_LIB=`pkg-config gtk+-2.0 --libs`
+-
+ rm -f configure.h configure.log test test.o test.c
+ 
+ touch configure.h
