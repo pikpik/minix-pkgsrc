@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2005/07/07 08:08:18 martti Exp $
+# $NetBSD: Makefile,v 1.110 2005/08/09 18:38:53 drochner Exp $
 #
 
 COMMENT=	Editors
@@ -78,6 +78,7 @@ SUBDIR+=	ted-no
 SUBDIR+=	ted-pl
 SUBDIR+=	ted-pt
 SUBDIR+=	ted-sv
+SUBDIR+=	texmaker
 SUBDIR+=	uemacs
 SUBDIR+=	ve
 SUBDIR+=	vigor
