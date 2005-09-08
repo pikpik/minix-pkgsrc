@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/11/23 18:20:03 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/01/01 03:57:21 wiz Exp $
 #
 
 DISTNAME=	antiword-0.36.1
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.winfield.demon.nl/index.html
 COMMENT=	Free MS Word to text and PostScript converter
 
 CONFLICTS=	siag-[0-9]*
+
+CFLAGS.SunOS+=	-D__STDC_ISO_10646__
 
 post-patch:
 	cd ${WRKSRC} ; \
