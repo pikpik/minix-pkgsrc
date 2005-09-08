@@ -1,10 +1,10 @@
-$NetBSD: patch-af,v 1.1.1.1 2003/04/06 11:08:15 rh Exp $
+$NetBSD$
 
---- doc/man/Makefile.in.orig	Sat Apr  5 18:50:43 2003
+--- doc/man/Makefile.in.orig	2005-08-26 02:12:42.000000000 +0200
 +++ doc/man/Makefile.in
-@@ -108,7 +108,7 @@ X_PRE_LIBS = @X_PRE_LIBS@
- am__include = @am__include@
+@@ -147,7 +147,7 @@ am__include = @am__include@
  am__quote = @am__quote@
+ gxine_have_gdk_pixbuf_csource = @gxine_have_gdk_pixbuf_csource@
  install_sh = @install_sh@
 -SUBDIRS = en de
 +SUBDIRS = en
