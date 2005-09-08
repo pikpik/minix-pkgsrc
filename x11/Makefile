@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.404 2005/08/24 11:05:51 salo Exp $
+# $NetBSD: Makefile,v 1.405 2005/09/02 14:44:33 xtraeme Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -61,6 +61,7 @@ SUBDIR+=	gnustep-preferences
 SUBDIR+=	gromit
 SUBDIR+=	gtk
 SUBDIR+=	gtk+extra
+SUBDIR+=	gtk2+extra
 SUBDIR+=	gtk-engines
 SUBDIR+=	gtk-thinice-engine
 SUBDIR+=	gtk2
