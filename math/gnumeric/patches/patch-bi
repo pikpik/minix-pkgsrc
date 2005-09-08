@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bi,v 1.1 2005/09/06 17:58:56 drochner Exp $
 
 --- src/sheet-object-image.c.orig	2005-09-06 10:00:36.000000000 +0200
 +++ src/sheet-object-image.c

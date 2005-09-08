@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-bb,v 1.1 2005/09/06 17:58:56 drochner Exp $
 
 --- src/gnm-so-filled.c.orig	2005-09-06 09:56:08.000000000 +0200
 +++ src/gnm-so-filled.c
