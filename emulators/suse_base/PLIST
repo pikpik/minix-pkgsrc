@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2004/02/19 11:37:11 cjs Exp $
+@comment $NetBSD: PLIST,v 1.7 2005/08/16 00:30:41 dmcmahill Exp $
 sbin/linux-mkpwd
 @unexec ${RM} -f %D/@@EMULSUBDIR@@/etc/ld.so.cache
 @@EMULSUBDIR@@/etc/SuSE-release
@@ -10,4 +10,3 @@ sbin/linux-mkpwd
 @exec cd %D/@@EMULSUBDIR@@/dev && ln -s sound dsp
 @unexec ${RM} -f %D/@@EMULSUBDIR@@/dev/*
 @dirrm @@EMULSUBDIR@@/dev
-
