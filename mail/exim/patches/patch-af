@@ -1,4 +1,4 @@
-$NetBSD: patch-af,v 1.4 2004/09/25 07:45:51 grant Exp $
+$NetBSD: patch-af,v 1.5 2005/05/17 17:06:12 abs Exp $
 
 --- OS/os.h-NetBSD.orig	2005-05-04 12:35:39.000000000 +0100
 +++ OS/os.h-NetBSD
@@ -8,7 +8,7 @@ $NetBSD: patch-af,v 1.4 2004/09/25 07:45:51 grant Exp $
  
 +#include <sys/param.h>
 +
-+#if __NetBSD_Version__ >= 200040000
++#if __NetBSD_Version__ >= 299000900
 +#define HAVE_SYS_STATVFS_H
 +#endif
 +
