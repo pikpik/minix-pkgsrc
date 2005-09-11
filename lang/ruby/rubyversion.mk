@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.11 2005/03/30 16:16:20 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.12 2005/08/31 08:50:32 jlam Exp $
 #
 
 .ifndef _RUBYVERSION_MK
@@ -186,6 +186,13 @@ RUBY_EXAMPLESDIR?=	${LOCALBASE}/share/examples/${RUBY_NAME}
 # make ruby based packages' distfiles to one place.
 #
 RUBY_DIST_SUBDIR?=	ruby
+
+#
+# make ruby reletaed package to common DIST_SUBDIR
+#
+.if !empty(RUBY_DIST_SUBDIR)
+DIST_SUBDIR?=	${RUBY_DIST_SUBDIR}
+.endif
 
 #
 # MAKE_ENV
