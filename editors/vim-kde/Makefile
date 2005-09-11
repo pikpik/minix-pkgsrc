@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/01/25 13:48:54 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/11 21:45:42 tv Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
@@ -9,7 +9,7 @@ MASTER_SITES=	ftp://ftp.rutgers.edu/pub/kde/stable/apps/KDE3.x/utils/ \
 		http://freenux.org/kvim/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	greyskyy@po.cwru.edu
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.freehackers.org/kvim
 COMMENT=	Vim editor (vi clone) with X11 KDE3 GUI
 
