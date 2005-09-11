@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/07/13 18:01:37 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/08/06 06:19:28 jlam Exp $
 #
 
 DISTNAME=		ispman-0.5
@@ -37,7 +37,7 @@ pre-configure:
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/../IO-stringy-1.212_patched/lib/IO/Scalar.pm \
-		${PERL5_INSTALLVENDORLIB}
+		${PERL5_INSTALLVENDORLIB}/IO/ScalarPatched.pm
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
