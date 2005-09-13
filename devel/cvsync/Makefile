@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2005/05/22 20:07:50 jlam Exp $
+# $NetBSD: Makefile,v 1.74 2005/07/28 15:01:08 wiz Exp $
 #
 
 DISTNAME=	cvsync-0.24.18
@@ -59,5 +59,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/samples/cvsyncd-NetBSD.conf ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/samples/cvsyncd-OpenBSD.conf ${EGDIR}
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
