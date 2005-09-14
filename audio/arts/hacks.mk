@@ -1,4 +1,4 @@
-$NetBSD$
+# $NetBSD: hacks.mk,v 1.1 2005/09/08 16:24:15 schmonz Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
