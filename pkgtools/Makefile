@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2005/05/18 04:49:38 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.68 2005/07/30 21:28:06 wiz Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -9,7 +9,6 @@ SUBDIR+=	cdpack
 SUBDIR+=	createbuildlink
 SUBDIR+=	dfdisk
 SUBDIR+=	digest
-SUBDIR+=	distfetch
 SUBDIR+=	genrpm
 SUBDIR+=	gensolpkg
 #SUBDIR+=	libkver		# Only under instruction of user
