@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2005/05/22 20:08:31 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/07/16 01:19:19 jlam Exp $
 
-DISTNAME=	zebedee-2.5.2
+DISTNAME=	zebedee-2.5.3
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zebedee/}
 
@@ -14,6 +14,12 @@ USE_TOOLS+=		gmake perl
 
 MAKE_ENV+=		PERL5=${PERL5}
 MAKE_FLAGS=		OS=${LOWER_OPSYS}
+
+.include "../../mk/pthread.buildlink3.mk"
+
+.if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} != "none"
+PTHREAD_CFLAGS+=  -DHAVE_PTHREADS
+.endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
