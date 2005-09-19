@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2004/03/26 02:27:55 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2004/07/22 09:16:02 recht Exp $
 #
 
 DISTNAME=	Zope-2.2.2-src
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.zope.org/Documentation/Guides/DTML-HTML/DTML.html
 COMMENT=	DTML and StructuredText from Zope, also independently useful
-
-DEPENDS+=	py-extclass>=2.2.2:../../lang/py-extclass
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/lib/python/DocumentTemplate
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
@@ -43,4 +41,7 @@ do-install:
 		${SED} -e "s/^/@dirrm /" >>${PLIST_SRC}
 
 .include "../../lang/python20/Makefile.inc"
+
+.include "../../lang/py-extclass/buildlink3.mk"
+.include "../../lang/python20/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
