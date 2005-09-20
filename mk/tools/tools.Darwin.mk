@@ -1,4 +1,4 @@
-# $NetBSD: tools.Darwin.mk,v 1.17 2005/06/24 20:59:59 jlam Exp $
+# $NetBSD: tools.Darwin.mk,v 1.18 2005/07/07 21:29:11 jlam Exp $
 #
 # System-supplied tools for the Darwin (Mac OS X) operating system.
 
@@ -6,6 +6,7 @@ TOOLS_PLATFORM.[?=		[			# shell builtin
 TOOLS_PLATFORM.awk?=		/usr/bin/awk
 TOOLS_PLATFORM.basename?=	/usr/bin/basename
 TOOLS_PLATFORM.bash?=		/bin/bash
+TOOLS_PLATFORM.byacc?=		/usr/bin/yacc
 .if exists(/usr/bin/bzcat)
 TOOLS_PLATFORM.bzcat?=		/usr/bin/bzcat
 .endif
