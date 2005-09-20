@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2005/06/24 12:28:31 markd Exp $
+# $NetBSD: Makefile,v 1.72 2005/07/16 01:19:13 jlam Exp $
 
 DISTNAME=		R-2.1.1
 CATEGORIES=		math
@@ -83,6 +83,7 @@ CONFIGURE_ARGS+=	--enable-mbcs=no
 .endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
