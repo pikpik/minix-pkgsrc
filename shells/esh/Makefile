@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2005/06/17 03:50:33 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/07/29 18:32:17 jlam Exp $
 
 DISTNAME=		esh-0.8
+PKGREVISION=		1
 CATEGORIES=		shells
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 
