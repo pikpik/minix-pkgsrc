@@ -129,7 +129,15 @@ $NetBSD$
  	  continue
  	  ;;
  	-l*)
-@@ -3202,6 +3285,7 @@ EOF
+@@ -3153,6 +3236,7 @@ EOF
+ 	# Calculate the version variables.
+ 	major=
+ 	versuffix=
++	versuffix2=
+ 	verstring=
+ 	case $version_type in
+ 	none) ;;
+@@ -3202,6 +3286,7 @@ EOF
  	linux)
  	  major=.`expr $current - $age`
  	  versuffix="$major.$age.$revision"
@@ -137,7 +145,15 @@ $NetBSD$
  	  ;;
  
  	osf)
-@@ -5462,8 +5546,16 @@ relink_command=\"$relink_command\""
+@@ -3264,6 +3349,7 @@ EOF
+ 	if test "$avoid_version" = yes && test "$need_version" = no; then
+ 	  major=
+ 	  versuffix=
++	  versuffix2=
+ 	  verstring=""
+ 	fi
+ 
+@@ -5462,8 +5548,16 @@ relink_command=\"$relink_command\""
        exit $EXIT_FAILURE
      fi
  
