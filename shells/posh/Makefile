@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/29 18:32:18 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/09/20 04:23:49 jlam Exp $
 #
 
 DISTNAME=	posh_0.3.14
@@ -16,7 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 GNU_CONFIGURE=		YES
 PKG_SHELL=		bin/posh
 USE_PKGINSTALL=		YES
-WRKSRC=			${WRKDIR}/${PKGNAME}
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/posh
