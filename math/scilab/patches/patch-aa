@@ -43,7 +43,17 @@ $NetBSD$
     FC_PICFLAGS='-fPIC'
     # check for --export-dynamic
     ac_save_LDFLAGS="$LDFLAGS"
-@@ -1714,13 +1714,13 @@ case "$host" in
+@@ -1413,7 +1413,8 @@ if test "$PERIFILE" = periX11.o; then 
+         LDFLAGS="$ac_save_LDFLAGS"
+         save_cflags=$CFLAGS
+         CFLAGS="$X_CFLAGS $CC_OPTIONS"
+-        AC_TRY_COMPILE([#include <X11/IntrinsicP.h> #include <X11/Xaw3d/ViewportP.h>],,,
++        AC_TRY_COMPILE([#include <X11/IntrinsicP.h>
++	#include <X11/Xaw3d/ViewportP.h>],,,
+         AC_MSG_ERROR([Include file "ViewportP.h" for Xaw3d not found. 
+ 			       Get and put it in <X11/Xaw3d/> .]))
+ 	CFLAGS=$save_cflags
+@@ -1714,13 +1715,13 @@ case "$host" in
      ;;
  esac
  
