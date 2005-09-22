@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2005/01/14 13:37:53 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.4 2005/07/28 10:25:14 adam Exp $
 bin/Animate
 bin/Arrange
 bin/Banner
@@ -6,6 +6,7 @@ bin/Ident
 bin/MonitorWharf
 bin/Pager
 bin/Wharf
+bin/WinCommand
 bin/WinList
 bin/WinTabs
 bin/Xpm2Jpg
