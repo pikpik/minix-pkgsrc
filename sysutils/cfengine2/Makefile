@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2004/12/28 02:47:50 reed Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:23 tv Exp $
 #
 
-PKGREVISION=	2
+PKGREVISION=	3
 
 .include "../../sysutils/cfengine2/Makefile.common"
 
