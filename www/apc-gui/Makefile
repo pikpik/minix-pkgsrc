@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/10/31 23:44:13 jdolecek Exp $
+# $NetBSD: Makefile,v 1.11 2004/12/19 18:31:30 minskim Exp $
 
 DISTNAME=	apc_gui-1.0.3
 PKGNAME=	${DISTNAME:S/_/-/}
@@ -13,7 +13,7 @@ COMMENT=	Web interface for managing APC (php-apc)
 PHP_VERSION_REQD=	4
 
 DEPENDS+=	php-apc>=1.1.0.1:../../www/php4-apc
-DEPENDS+=	php-gd-4.3.*:../../graphics/php-gd
+DEPENDS+=	php-gd-4.[0-9]*:../../graphics/php-gd
 
 NO_BUILD=	YES
 USE_PKGINSTALL=	YES
