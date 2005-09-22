@@ -1,8 +1,7 @@
 $NetBSD$
 
-diff -ru ../Orig/mozilla/xpcom/io/nsLocalFileUnix.h ./xpcom/io/nsLocalFileUnix.h
---- ../Orig/mozilla/xpcom/io/nsLocalFileUnix.h	2004-01-15 15:14:13.000000000 +0900
-+++ ./xpcom/io/nsLocalFileUnix.h	2004-06-15 23:56:45.000000000 +0900
+--- xpcom/io/nsLocalFileUnix.h.orig	2004-01-15 06:14:13.000000000 +0000
++++ xpcom/io/nsLocalFileUnix.h
 @@ -57,7 +57,7 @@
  #endif
  
