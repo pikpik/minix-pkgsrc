@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.patch.mk,v 1.16 2005/07/15 18:27:55 jlam Exp $
+# $NetBSD: bsd.pkg.patch.mk,v 1.17 2005/07/31 05:26:50 snj Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and defines the
 # relevant variables and targets for the "patch" phase.
@@ -238,8 +238,8 @@ do-pkgsrc-patch:
 				${ECHO_MSG} "**************************************"; \
 				continue;				\
 			fi;						\
-			${ECHO} "$$algsum" |				\
-			{ read alg recorded;				\
+			set -- $$algsum;				\
+			{ alg="$$1"; recorded="$$2";			\
 			  calcsum=`${SED} -e '/\$$NetBSD.*/d' $$i | ${DIGEST} $$alg`; \
 			  ${ECHO_PATCH_MSG} "=> Verifying $$filename (using digest algorithm $$alg)"; \
 			  if ${TEST} -z "$$recorded"; then		\
