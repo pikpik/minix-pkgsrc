@@ -1,6 +1,10 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2001/11/18 22:41:40 agc Exp $
 bin/grun
 man/man1/grun.1
-share/grun/gassoc
 share/grun/consfile
+share/grun/gassoc
+${PKGLOCALEDIR}/locale/de/LC_MESSAGES/grun.mo
+${PKGLOCALEDIR}/locale/es/LC_MESSAGES/grun.mo
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/grun.mo
+${PKGLOCALEDIR}/locale/pt/LC_MESSAGES/grun.mo
 @dirrm share/grun
