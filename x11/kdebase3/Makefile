@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2005/09/06 12:37:58 markd Exp $
+# $NetBSD: Makefile,v 1.90 2005/09/16 12:10:39 markd Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 PKGREVISION=	2
@@ -65,6 +65,10 @@ RCD_SCRIPTS=		kdm
 .include "../../mk/bsd.prefs.mk"
 
 LIBS.NetBSD+=		${EXPORT_SYMBOLS_LDFLAGS}
+
+.if ${OPSYS} == "SunOS"
+USE_TOOLS+=		gawk:pkgsrc
+.endif
 
 PLIST_SRC=		${WRKDIR}/PLIST.Xdpms
 
