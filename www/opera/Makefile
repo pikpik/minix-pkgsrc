@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/08/05 22:04:04 jdolecek Exp $
+# $NetBSD: Makefile,v 1.41 2005/09/20 19:36:13 jdolecek Exp $
 
 DISTNAME=	opera-${OPERA_PKG_VERSION:S/u/pl/}
 PKGREVISION=	# empty
@@ -18,7 +18,7 @@ COMMENT=	Small, fast and customizable WWW client
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 SunOS-*-sparc FreeBSD-*-i386
 
-LICENSE=	opera-license
+LICENSE=	opera-850-license
 
 #PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
@@ -136,7 +136,7 @@ post-install:
 
 # regenerate distinfo for all ports supported by this package
 opera-distinfo:
-	( ${ECHO} '$$NetBSD: Makefile,v 1.40 2005/08/05 22:04:04 jdolecek Exp $$'; ${ECHO} ''; \
+	( ${ECHO} '$$NetBSD: Makefile,v 1.41 2005/09/20 19:36:13 jdolecek Exp $$'; ${ECHO} ''; \
 	_OPERA_OPSYS=NetBSD ${MAKE} distinfo 1>&2; \
 		${GREP} opera distinfo; \
 	_OPERA_OPSYS=FreeBSD ${MAKE} distinfo 1>&2; \
