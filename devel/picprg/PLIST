@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/picprg
-share/doc/picprg/README
-share/doc/picprg/README.BAJ
-@dirrm share/doc/picprg

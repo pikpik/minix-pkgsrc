@@ -491,7 +491,6 @@ SUBDIR+=	php-sysvsem
 SUBDIR+=	php-sysvshm
 SUBDIR+=	physfs
 SUBDIR+=	picp
-SUBDIR+=	picprg
 SUBDIR+=	pilrc
 SUBDIR+=	pkg-config
 SUBDIR+=	ply
