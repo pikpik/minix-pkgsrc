@@ -1,1 +1,2 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/02/14 23:56:38 hubertf Exp $
+lib/xmms/Visualization/libbumpscope.la
