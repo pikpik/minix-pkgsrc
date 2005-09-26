@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/07/21 16:29:52 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/10 20:56:18 jlam Exp $
 #
 
 DISTNAME=	xdx-1.2
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	http://www.qsl.net/pg4i/download/
 
