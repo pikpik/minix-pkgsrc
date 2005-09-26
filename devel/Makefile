@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.671 2005/09/03 14:21:13 minskim Exp $
+# $NetBSD: Makefile,v 1.673 2005/09/25 07:48:07 dsainty Exp $
 #
 
 COMMENT=	Development utilities
@@ -21,6 +21,7 @@ SUBDIR+=	SDL_ttf
 SUBDIR+=	SDLmm
 SUBDIR+=	aap
 SUBDIR+=	acme
+SUBDIR+=	acr
 SUBDIR+=	acunia-jam
 SUBDIR+=	adocman
 SUBDIR+=	aegis
