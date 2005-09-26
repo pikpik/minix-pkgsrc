@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/21 16:29:46 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/10 20:56:14 jlam Exp $
 #
 
 DISTNAME=	shared-mime-info-0.16
@@ -18,6 +18,8 @@ USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		pkg-config
 
 CONFIGURE_ARGS+=	--disable-update-mimedb
+
+.include "../../mk/bsd.prefs.mk"
 
 CPPFLAGS+=		-DPREFIX="\"${PREFIX}\""
 
