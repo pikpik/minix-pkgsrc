@@ -1,3 +1,12 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/02/02 21:22:10 drochner Exp $
+@comment $NetBSD$
+bin/dcraw
+bin/nikon-curve
 bin/ufraw
+bin/ufraw-batch
+bin/ufraw-exif
 lib/gimp/2.0/plug-ins/ufraw-gimp
+man/man1/ufraw.1
+share/applications/ufraw.desktop
+share/pixmaps/ufraw.png
+@dirrm share/pixmaps
+@dirrm share/applications
