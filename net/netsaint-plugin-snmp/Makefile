@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/03 15:15:06 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:26 jlam Exp $
 #
 
 DISTNAME=	netsaint-plugins-1.2.9-4
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netsaintplug/}
 
-MAINTAINER=	murray@river-styx.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://netsaintplug.sourceforge.net/
 COMMENT=	SNMP monitoring plug-in for netsaint
 
