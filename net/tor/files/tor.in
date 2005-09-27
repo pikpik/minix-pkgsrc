@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: tor.sh,v 1.25 2004/08/02 19:54:17 abs Exp $
+# $NetBSD: tor.in,v 1.1 2005/02/13 20:27:54 jschauma Exp $
 #
 # PROVIDE: tor
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ command="@PREFIX@/bin/tor"
 required_files="@PKG_SYSCONFDIR@/torrc"
 start_cmd="tor_start"
 stop_cmd="tor_stop"
-pidfile="/var/run/${name}.pid"
+pidfile="@PKG_HOME@/${name}.pid"
 restart_cmd="tor_stop ; tor_start"
 
 tor_start ()
