@@ -1,20 +1,20 @@
-$NetBSD: patch-ab,v 1.2 2005/04/24 13:06:03 adrianp Exp $
+$NetBSD$
 
---- Makefile.OCaml.orig	2005-07-29 17:34:34.000000000 +0200
-+++ Makefile.OCaml	2005-07-29 17:42:53.000000000 +0200
-@@ -29,6 +29,11 @@
+--- Makefile.OCaml.orig	2005-08-12 02:26:59.000000000 +0200
++++ Makefile.OCaml
+@@ -29,6 +29,11 @@ ifeq ($(shell uname),Darwin)
  else
  ifeq ($(shell uname),OpenBSD)
    OSARCH=OpenBSD
-+else
++  else
 +ifeq ($(shell uname),NetBSD)
 +  OSARCH=NetBSD
-+	STATIC=true
++  STATIC=true
 +endif
  endif
  endif
  endif
-@@ -242,6 +247,10 @@
+@@ -242,6 +247,10 @@ else
    endif
  endif
  
