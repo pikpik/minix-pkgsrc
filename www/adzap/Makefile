@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2005/06/17 03:50:39 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2005/07/16 01:19:24 jlam Exp $
 #
 
 DISTNAME=	adzap-20050504
@@ -12,7 +12,7 @@ HOMEPAGE=	http://adzapper.sourceforge.net/
 COMMENT=	Filter out animated ad banners from web pages
 
 WRKSRC=		${WRKDIR}/adzap
-NO_BUILD=	# defined
+NO_BUILD=	yes
 USE_TOOLS+=	perl:run
 
 INSTALLATION_DIRS=	libexec
