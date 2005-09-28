@@ -1,5 +1,4 @@
-#
-# $NetBSD: Makefile,v 1.26 2005/07/16 01:19:25 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2005/08/06 06:19:35 jlam Exp $
 #
 
 DISTNAME=		cvsweb-3.0.5
