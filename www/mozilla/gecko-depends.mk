@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .if !empty(PKG_OPTIONS:Mfirefox)
 # firefox didn't have a pkgconfig file before 1.0.4
 BUILDLINK_DEPENDS.firefox+= firefox>=1.0.4

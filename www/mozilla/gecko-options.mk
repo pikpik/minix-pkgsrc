@@ -1,3 +1,5 @@
+# $NetBSD$
+
 PKG_OPTIONS_REQUIRED_GROUPS+=	gecko
 PKG_OPTIONS_GROUP.gecko=	firefox mozilla
 PKG_SUGGESTED_OPTIONS+=		firefox
