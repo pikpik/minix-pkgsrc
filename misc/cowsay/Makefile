@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/04/24 22:46:11 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:14 jlam Exp $
 
 DISTNAME=		cowsay-3.03
 PKGREVISION=		1
@@ -17,8 +17,8 @@ SUBST_MESSAGE.pap=	Adjusting paths to perl and the cows
 SUBST_FILES.pap=	cowsay
 SUBST_SED.pap=		-e "s|%BANGPERL%|!${PERL5}|" -e "s|%PREFIX%|${PREFIX}|"
 
-NO_CONFIGURE=		# defined
-NO_BUILD=		# defined
+NO_CONFIGURE=		yes
+NO_BUILD=		yes
 
 INSTALLATION_DIRS=	bin man/man1 share/cows
 

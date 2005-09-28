@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/10 20:21:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/20 19:16:21 jlam Exp $
 #
 
 DISTNAME=	theme-dirs-1.1
@@ -11,10 +11,10 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared theme directories
 
-NO_BUILD=	# defined
-NO_CONFIGURE=	# defined
-NO_CHECKSUM=	# defined
-NO_EXTRACT=	# defined
+NO_BUILD=	yes
+NO_CONFIGURE=	yes
+NO_CHECKSUM=	yes
+NO_EXTRACT=	yes
 USE_DIRS=	xdg-1.1
 USE_LANGUAGES=	# empty
 USE_PKGINSTALL=	yes
