@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2004/01/27 00:53:11 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2004/08/09 21:41:23 cube Exp $
 
 PKGNAME=	${DISTNAME:=pl2}
 DISTNAME=	bwbasic-2.20
-PKGREVISION=	# empty
 CATEGORIES=	lang
 MASTER_SITES=	http://www.nicholson.com/rhn/files/
 EXTRACT_SUFX=	.tar.Z
