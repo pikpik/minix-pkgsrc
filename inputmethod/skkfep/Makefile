@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/01/20 12:18:53 agc Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:59 jlam Exp $
 
 DISTNAME=	skkfep0.86c
 PKGNAME=	skkfep-0.86c
@@ -12,7 +12,7 @@ COMMENT=	Terminal based SKK-like Kana-to-Kanji FrontEnd Processor
 BUILD_DEFS+=	USE_INET6
 
 WRKSRC=		${WRKDIR}/skkfep
-NO_CONFIGURE=	# defined
+NO_CONFIGURE=	yes
 MAKE_ENV=	MAKE_FLAGS='EXECBASE=${LOCALBASE} CC=${CC}'
 
 DESCR_SRC=	${WRKDIR}/DESCR
