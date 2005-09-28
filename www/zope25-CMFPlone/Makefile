@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2003/07/17 22:56:10 grant Exp $
+# $NetBSD: Makefile,v 1.11 2004/01/20 12:28:00 agc Exp $
 
 DISTNAME=	CMFPlone1.0.3
 PKGNAME=	zope25-CMFPlone-1.0.3
@@ -24,7 +24,7 @@ JUNKFILES=	.\#HISTORY.txt.1.88.2.78 .\#WorkflowTool.py.1.7.2.3 \
 
 post-extract:
 .for i in ${JUNKFILES}
-	${RM} ${WRKSRC}/CMFPlone/$i
+	${RM} ${WRKSRC}/CMFPlone/${i}
 .endfor
 
 .include "../../www/zope25/product.mk"

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.common,v 1.5 2005/05/16 04:45:40 jlam Exp $
+# $NetBSD: Makefile.common,v 1.6 2005/07/15 18:27:54 jlam Exp $
 
 MASTER_SITES=	http://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_SHORT}/nightly/${MOZ_CONTRIB}latest-trunk/ \
 		ftp://ftp.mozilla.org/pub/mozilla.org/${MOZILLA_SHORT}/nightly/${MOZ_CONTRIB}latest-trunk/
 
 DIST_SUBDIR=	${PKGNAME}
-NO_CHECKSUM=	# defined
+NO_CHECKSUM=	yes
 NO_SRC_ON_FTP=	# defined
 
 .include "../../mk/bsd.prefs.mk"

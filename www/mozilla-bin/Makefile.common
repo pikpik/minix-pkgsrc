@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.28 2005/06/17 03:50:41 jlam Exp $
+# $NetBSD: Makefile.common,v 1.29 2005/08/06 19:48:24 tron Exp $
 
 DISTNAME=		# see Makefile.${OPSYS}.${ARCH}
 PKGNAME=		${MOZILLA}${MOZ_EXTRA}-bin-${MOZ_VER}
@@ -8,7 +8,7 @@ MAINTAINER=		grant@NetBSD.org
 HOMEPAGE?=		http://www.mozilla.org/
 
 WRKSRC?=		${WRKDIR}/${MOZILLA}
-NO_CONFIGURE=		# defined
+NO_CONFIGURE=		yes
 USE_LANGUAGES=		# empty
 
 FILESDIR=		${.CURDIR}/../../www/mozilla-bin/files
