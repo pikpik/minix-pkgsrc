@@ -1,8 +1,8 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.3 2004/02/12 00:10:30 hubertf Exp $
+$NetBSD: MESSAGE,v 1.4 2005/02/11 22:28:42 reed Exp $
 
 You need to copy the ${PREFIX}/share/doc/bochs/bochsrc-sample.txt
 file to your home directory and name it .bochsrc.  Then edit it to
-your tastes defining the hard drives and floppies as needed.  
+your tastes defining the hard drives and floppies as needed.
 
 ===========================================================================
