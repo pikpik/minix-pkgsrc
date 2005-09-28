@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2005/07/15 18:27:48 jlam Exp $
+# $NetBSD: Makefile,v 1.75 2005/09/01 22:02:34 rillig Exp $
 #
 
 # tools used by this Makefile
@@ -52,7 +52,7 @@ SUBDIR+=	news
 SUBDIR+=	parallel
 SUBDIR+=	pkgtools
 SUBDIR+=	print
-#SUBDIR+=	regress
+#SUBDIR+=	regress		# regression tests must be started manually
 SUBDIR+=	security
 SUBDIR+=	shells
 SUBDIR+=	sysutils
