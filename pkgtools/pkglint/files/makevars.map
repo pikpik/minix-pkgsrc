@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.12 2005/08/01 15:40:19 wiz Exp $
+# $NetBSD: makevars.map,v 1.13 2005/09/27 18:58:56 rillig Exp $
 #
 
 # This file tries to guess the type of some variables, according to their
@@ -56,3 +56,4 @@ NO_MTREE		Yes_Or_Undefined
 PKG_PRESERVE		Yes_Or_Undefined
 NO_PKGTOOLS_REQD_CHECK	Yes_Or_Undefined
 NO_PKG_REGISTER		Yes_Or_Undefined
+BUILD_USES_MSGFMT	Yes_Or_Undefined
