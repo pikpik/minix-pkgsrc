@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/03 15:14:51 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/03/24 21:12:51 wiz Exp $
 
 DISTNAME=	hint_unix_serial
 PKGNAME=	hint.serial-98.06.12
@@ -17,6 +17,9 @@ BUILD_TARGET=	DOUBLE INT
 WRKSRC=		${WRKDIR}/unix
 
 INSTALLATION_DIRS=	bin man/man1
+
+post-extract:
+	${CP} ${FILESDIR}/hint.1 ${WRKSRC}/hint.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/DOUBLE ${PREFIX}/bin/hint-double
