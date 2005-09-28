@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/07 22:24:04 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:29 jlam Exp $
 #
 
 DISTNAME=	binpatch-1.0
@@ -11,7 +11,7 @@ HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
 COMMENT=	Trivial binary patch applicator
 
 
-NO_CHECKSUM=	# defined
+NO_CHECKSUM=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

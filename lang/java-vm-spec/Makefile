@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:19:16 agc Exp $
+# $NetBSD: Makefile,v 1.6 2004/04/24 22:46:10 jlam Exp $
 
 DISTNAME=		vmspec.2nded.html
 PKGNAME=		java-vm-spec-2.0
@@ -10,8 +10,8 @@ HOMEPAGE=		http://java.sun.com/docs/books/vmspec/index.html
 COMMENT=		The Java(TM) Virtual Machine Specification (HTML)
 
 WRKSRC=			${WRKDIR}/vmspec
-NO_CONFIGURE=		# defined
-NO_BUILD=		# defined
+NO_CONFIGURE=		yes
+NO_BUILD=		yes
 
 HTMLDIR=		${PREFIX}/share/doc/html/java-vm-spec
 

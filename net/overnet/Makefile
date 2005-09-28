@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2004/12/21 01:48:19 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/17 03:50:27 jlam Exp $
 #
 
 DISTNAME=	overnetclc-1.0.1
@@ -16,8 +16,8 @@ BUILD_DEPENDS+=	rpm2pkg-[0-9]*:../../pkgtools/rpm2pkg
 
 WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	# empty
-NO_CONFIGURE=	# defined
-NO_BUILD=	# defined
+NO_CONFIGURE=	yes
+NO_BUILD=	yes
 CHECK_SHLIBS=	no
 
 EVAL_PREFIX=	RPM2PKGDIR=rpm2pkg

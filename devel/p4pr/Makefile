@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:47 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/16 01:19:09 jlam Exp $
 #
 
 DISTNAME=	p4pr
@@ -14,7 +14,7 @@ DEPENDS+=	p4-[0-9]*:../../devel/p4
 
 WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	# none
-NO_BUILD=	# defined
+NO_BUILD=	yes
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	${DISTFILES}
 

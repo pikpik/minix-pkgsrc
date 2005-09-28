@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:43 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/16 01:19:08 jlam Exp $
 #
 
 DISTNAME=	code2html-0.9.1
@@ -9,7 +9,7 @@ MAINTAINER=	jschauma@NetBSD.org
 HOMEPAGE=	http://www.palfrader.org/code2html/
 COMMENT=	Convert a program source code to syntax highlighted HTML
 
-NO_BUILD=	# defined
+NO_BUILD=	yes
 REPLACE_PERL=	code2html
 USE_TOOLS+=	perl:run
 

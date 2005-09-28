@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/04/18 15:59:37 schmonz Exp $
 #
 
 DISTNAME=		pymsgauth-2.1.0
@@ -19,7 +19,7 @@ DOCDIR=			share/doc/pymsgauth
 HTMLDOCDIR=		share/doc/html/pymsgauth
 EGDIR=			share/examples/pymsgauth
 
-NO_BUILD=		# defined
+NO_BUILD=		yes
 PYTHON_PATCH_SCRIPTS=	${PYMSGAUTH_PROGRAMS} *.py
 
 USE_PKGINSTALL=		yes

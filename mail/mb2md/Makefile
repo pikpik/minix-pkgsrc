@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/06/16 06:58:03 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/07/16 01:19:12 jlam Exp $
 #
 
 DISTNAME=		mb2md-3.20.pl
@@ -18,7 +18,7 @@ WRKSRC=			${WRKDIR}
 USE_TOOLS+=		perl:run
 REPLACE_PERL=		${DISTNAME}
 
-NO_BUILD=		# defined
+NO_BUILD=		yes
 INSTALLATION_DIRS=	bin
 
 do-install:

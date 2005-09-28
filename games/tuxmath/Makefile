@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:57 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/22 20:08:03 jlam Exp $
 #
 
 DISTNAME=	tuxmath-2001.09.07-0102
@@ -13,7 +13,7 @@ COMMENT=	Educational math arcade game
 
 WRKSRC=		${WRKDIR}/tuxmath
 USE_TOOLS+=	gmake
-NO_CONFIGURE=	# defined
+NO_CONFIGURE=	yes
 
 pre-install:
 	${FIND} ${WRKSRC} -name CVS -type d  -print | ${XARGS} ${RM} -rf

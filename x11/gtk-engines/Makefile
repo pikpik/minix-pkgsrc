@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2004/10/03 00:18:33 tv Exp $
+# $NetBSD: Makefile,v 1.26 2005/04/11 21:48:08 tv Exp $
 
 DISTNAME=		gtk-engines-0.12
 PKGREVISION=		7
@@ -11,10 +11,10 @@ COMMENT=		Theme engines for GTK+
 
 CONFLICTS+=		gtk2-engines-*
 
-GNU_CONFIGURE=		# defined
+GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
-USE_X11BASE=		# defined
-USE_LIBTOOL=		# defined
+USE_X11BASE=		yes
+USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../x11/gtk/buildlink3.mk"

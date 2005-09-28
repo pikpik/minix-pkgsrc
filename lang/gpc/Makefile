@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/04/11 21:46:13 tv Exp $
+# $NetBSD: Makefile,v 1.21 2005/05/22 20:08:09 jlam Exp $
 
 DISTNAME=		gpc-2.1
 PKGREVISION=		3
@@ -37,7 +37,7 @@ GPC_PREFIX=		${_GCC_PREFIX}
 GPC_SUBPREFIX=		${_GCC_SUBPREFIX}/
 .endif
 
-HAS_CONFIGURE=		# defined
+HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	${WRKSRC}/configure
 CONFIGURE_ARGS=		--host=${MACHINE_GNU_PLATFORM}
 CONFIGURE_ARGS+=	--prefix=${GPC_PREFIX}

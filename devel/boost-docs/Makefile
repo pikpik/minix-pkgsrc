@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2005/02/26 22:48:35 jmmv Exp $
 #
 
 BOOST_PACKAGE=		docs
@@ -9,7 +9,7 @@ BOOST_CONFIG=		no
 
 DOCDIR=			${PREFIX}/share/doc/boost
 
-NO_BUILD=		# defined
+NO_BUILD=		yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}

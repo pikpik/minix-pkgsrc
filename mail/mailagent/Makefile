@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/03/24 21:12:56 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/07/16 01:19:12 jlam Exp $
 
 DISTNAME=		mailagent-3.0.73
 CATEGORIES=		mail
@@ -12,7 +12,7 @@ USE_TOOLS+=		perl:run
 NO_PACKAGE=		"Correct FQDN needs to be hardcoded"
 INTERACTIVE_STAGE=	configure
 
-HAS_CONFIGURE=		# defined
+HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS=		-dres \
 			-Dperlpath='${PERL5}' \

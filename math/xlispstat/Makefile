@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:56 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/06/01 18:03:04 jlam Exp $
 
 DISTNAME=		xlispstat-3-52-18
 PKGNAME=		xlispstat-3.52.18
@@ -10,8 +10,8 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.stat.umn.edu/~luke/xls/xlsinfo/xlsinfo.html
 COMMENT=		Statistics/X11-based LISP interpreter
 
-GNU_CONFIGURE=		# defined
-USE_X11BASE=		# defined
+GNU_CONFIGURE=		yes
+USE_X11BASE=		yes
 
 NOT_FOR_PLATFORM=	*-*-alpha	# core dumps
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/28 11:48:24 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/01 18:03:20 jlam Exp $
 
 DISTNAME=		ja-vflib-${VFLIB_VERSION}
 VFLIB_VERSION=		2.24.2nb1
@@ -15,9 +15,9 @@ DEPENDS+=		ja-vflib-utils-${VFLIB_VERSION}:../../print/ja-vflib-utils
 
 
 EXTRACT_ONLY=		# empty
-NO_CHECKSUM=		# defined
-NO_CONFIGURE=		# defined
-NO_BUILD=		# defined
+NO_CHECKSUM=		yes
+NO_CONFIGURE=		yes
+NO_BUILD=		yes
 
 do-install:		# empty
 

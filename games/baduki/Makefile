@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/04/11 21:45:48 tv Exp $
+# $NetBSD: Makefile,v 1.34 2005/06/01 18:02:49 jlam Exp $
 
 DISTNAME=	baduki-0.2.9
 PKGREVISION=	3
@@ -9,11 +9,11 @@ MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://soback.kornet21.net/~artist/baduk/baduki.html
 COMMENT=	Go playing program based on xamigo
 
-BUILD_USES_MSGFMT=	# defined
+BUILD_USES_MSGFMT=	yes
 
-USE_PKGLOCALEDIR=	# defined
+USE_PKGLOCALEDIR=	yes
 
-GNU_CONFIGURE=		# defined
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-included-gettext
 
 .include "../../devel/gettext-lib/buildlink3.mk"

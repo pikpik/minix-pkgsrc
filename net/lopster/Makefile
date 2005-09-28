@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:49 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/22 20:08:25 jlam Exp $
 #
 
 DISTNAME=	lopster-1.2.0
@@ -11,7 +11,7 @@ HOMEPAGE=	http://lopster.sourceforge.net/
 COMMENT=	Yet another Gtk+ Napster clone
 
 USE_TOOLS+=	gmake
-GNU_CONFIGURE=	# defined
+GNU_CONFIGURE=	yes
 
 post-extract:
 	${RM} -fr ${WRKSRC}/intl

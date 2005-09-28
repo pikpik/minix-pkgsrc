@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/02 17:21:02 hubertf Exp $
+# $NetBSD: Makefile,v 1.17 2005/04/11 21:47:06 tv Exp $
 
 DISTNAME=	dvipdfm-0.13.2c
 PKGREVISION=	4
@@ -14,7 +14,7 @@ CONFLICTS+=	ja-dvipdfm-[0-9]*
 CONFLICTS+=	teTeX-bin>=2.0			# Part of teTeX>=2.0
 
 WRKSRC=			${WRKDIR}/dvipdfm
-GNU_CONFIGURE=		# defined
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share
 # needed to get the stdarg.h version of kpathsea/c-varargs.h instead of the
 # varargs.h version which gcc3 does not like

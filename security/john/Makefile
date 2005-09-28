@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/12/03 15:15:08 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:32 jlam Exp $
 #
 
 DISTNAME=	john-1.6
@@ -12,7 +12,7 @@ COMMENT=	Unix Password Cracker
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
-NO_CONFIGURE=	# defined
+NO_CONFIGURE=	yes
 
 .include "../../mk/compiler.mk"
 .include "../../mk/bsd.prefs.mk"

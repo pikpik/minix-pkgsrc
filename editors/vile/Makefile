@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/08/17 14:57:19 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.43 2005/09/27 22:49:27 agc Exp $
 
 DISTNAME=		vile-9.5
 CATEGORIES=		editors
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://dickey.his.com/vile/vile.html
 COMMENT=		VI Like Emacs.  a vi "workalike", with many additional features
 
-GNU_CONFIGURE=		# defined
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-perl
 CONFIGURE_ARGS+=	--datadir=${DATADIR}
 CONFIGURE_ARGS+=	--with-libdir-path=${FILTERDIR}

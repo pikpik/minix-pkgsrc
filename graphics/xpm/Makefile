@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/06/14 18:10:37 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2005/08/11 22:46:05 dmcmahill Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	5
@@ -12,7 +12,7 @@ COMMENT=	The X Pixmap library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_IMAKE=	# defined
+USE_IMAKE=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

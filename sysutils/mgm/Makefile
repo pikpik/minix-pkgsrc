@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/17 03:50:34 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/16 01:19:20 jlam Exp $
 
 DISTNAME=	mgm-1.1
 CATEGORIES=	sysutils
@@ -12,7 +12,7 @@ COMMENT=	Moaning Goat Meter
 DEPENDS+=	p5-Tk-[0-9]*:../../x11/p5-Tk
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/-.*$//}
-NO_BUILD=	# defined
+NO_BUILD=	yes
 USE_TOOLS+=	perl:run
 PERL_SCRIPTS=	mgm
 

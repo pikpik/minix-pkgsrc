@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:19:16 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/04/24 22:46:10 jlam Exp $
 
 DISTNAME=		langspec-2.0.html
 PKGNAME=		java-lang-spec-2.0
@@ -11,8 +11,8 @@ HOMEPAGE=		http://java.sun.com/docs/books/jls/index.html
 COMMENT=		The Java(TM) Language Specification (HTML)
 
 WRKSRC=			${WRKDIR}
-NO_CONFIGURE=		# defined
-NO_BUILD=		# defined
+NO_CONFIGURE=		yes
+NO_BUILD=		yes
 
 HTMLDIR=		${PREFIX}/share/doc/html/java-lang-spec
 

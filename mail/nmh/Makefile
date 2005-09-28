@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2005/03/24 21:12:56 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2005/09/22 22:00:41 jlam Exp $
 
 DISTNAME=		nmh-1.0.4
 PKGREVISION=		6
@@ -42,7 +42,7 @@ CONFIGURE_ARGS+=	--with-pager=${NMH_PAGER}
 .endif
 
 .if defined(KERBEROS)
-PKG_USE_KERBEROS=	# defined
+PKG_USE_KERBEROS=	yes
 .if ${OPSYS} == "NetBSD"
 LIBS=			-lroken -lcrypt -lcom_err
 .endif
