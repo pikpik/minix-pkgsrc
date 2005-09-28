@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:48 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/08/28 04:25:29 uebayasi Exp $
 #
 
 DISTNAME=	semantic-1.4.2
@@ -17,7 +17,7 @@ DEPENDS+=	${EMACS_PKGNAME_PREFIX}eieio>=0.17:../../lang/eieio
 
 BUILD_ENV+=	EMACS=${EMACS_FLAVOR}
 
-NO_CONFIGURE=	# set
+NO_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 
 INFO_FILES=	semantic.info
