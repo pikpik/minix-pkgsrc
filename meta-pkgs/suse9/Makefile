@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/14 09:43:50 jdolecek Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/10 01:33:50 jschauma Exp $
 #
 
 DISTNAME=	suse-9.1
-PKGREVISION=	# empty
 CATEGORIES=	meta-pkgs emulators
 MASTER_SITES=	# empty
 DISTFILES=	# empty

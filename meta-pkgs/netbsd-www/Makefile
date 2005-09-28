@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/07/16 01:19:14 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/28 13:59:21 mishka Exp $
 #
 
 DISTNAME=	netbsd-www-1.4
@@ -21,12 +21,12 @@ DEPENDS+=	opensp>=1.1:../../textproc/opensp
 DEPENDS+=	w3m>=0.4:../../www/w3m
 
 USE_TOOLS+=	perl:run
-EXTRACT_ONLY=	# defined
-NO_CHECKSUM=	# defined
-NO_CONFIGURE=	# defined
-NO_BUILD=	# defined
-NO_MTREE=	# defined
+NO_CHECKSUM=	yes
+NO_CONFIGURE=	yes
+NO_BUILD=	yes
+NO_MTREE=	yes
 
-do-install:	# empty
+do-install:
+	@${DO_NADA}
 
 .include "../../mk/bsd.pkg.mk"

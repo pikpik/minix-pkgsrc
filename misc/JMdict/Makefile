@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/08/23 00:29:35 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/01/03 15:46:40 wiz Exp $
 #
 
 DISTNAME=	JMdict
@@ -23,7 +23,7 @@ WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 EXTRACT_ONLY=	JMdict.gz
 
-NO_BUILD=	# nothing to do
+NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/JMdict
