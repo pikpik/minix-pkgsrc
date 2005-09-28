@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: Makefile,v 1.6 2004/10/10 07:30:23 jdolecek Exp $
 
 PKGNAME=		postgresql74-contrib-${BASE_VERS}
 PKGREVISION=		# empty
@@ -20,7 +20,7 @@ pre-build:
 		../../src/include/parser/parse.h ../../src/include/utils/fmgroids.h
 	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}cd ${WRKSRC}/src/port && \
 	${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS}
-	
+
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "FreeBSD" && ${LOWER_OPSYS_VERSUFFIX} == "4"
 USE_GNU_READLINE=yes

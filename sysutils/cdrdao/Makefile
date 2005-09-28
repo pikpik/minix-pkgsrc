@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/07/19 16:33:57 drochner Exp $
+# $NetBSD: Makefile,v 1.26 2005/09/26 01:01:46 fredb Exp $
 
 .include "../../sysutils/cdrdao/Makefile.common"
 
@@ -12,7 +12,7 @@ CONFIGURE_ARGS+=	--without-xdao
 
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "none"
 CONFIGURE_ARGS+=	--without-posix-threads
-.endif    
+.endif
 
 post-install:
 		${INSTALL_MAN_DIR} ${PREFIX}/share/doc/cdrdao
@@ -36,5 +36,5 @@ post-install:
 		${INSTALL_MAN} ${WRKSRC}/contrib/wav2dao/wav2dao.pl \
 			${PREFIX}/share/examples/cdrdao
 
-.include "../../mk/pthread.buildlink3.mk" 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

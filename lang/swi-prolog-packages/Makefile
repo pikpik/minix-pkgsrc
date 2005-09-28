@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:11 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:59 jlam Exp $
 
 .include "../swi-prolog-lite/Makefile.common"
 
@@ -42,12 +42,12 @@ checkforx:
 	${ECHO} checkforx: Xvfb-PID: `${CAT} ${WRKDIR}/.Xvfb.pid`
 	sleep 5
 DISPLAY= :2
-.  else           
-	@${ECHO} "Error: Environment variable DISPLAY must be set"      
+.  else
+	@${ECHO} "Error: Environment variable DISPLAY must be set"
 	@${ECHO} "       and point to a connectible X server."
-	@${FALSE} 
-.  endif  #Xvfb    
-.endif  #DISPLAY   
+	@${FALSE}
+.  endif  #Xvfb
+.endif  #DISPLAY
 
 MAKE_ENV+=		DISPLAY=${DISPLAY}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/03 18:04:10 seb Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/20 19:16:22 jlam Exp $
 #
 
 DISTNAME=	WebSVN_161
@@ -18,7 +18,7 @@ WRKSRC=		${WRKDIR}/WebSVN
 NO_BUILD=	yes
 USE_PKGINSTALL=	yes
 
-PKG_SYSCONFDIR.websvn=	${PREFIX}/${HTTPD_ROOT}/websvn/include	
+PKG_SYSCONFDIR.websvn=	${PREFIX}/${HTTPD_ROOT}/websvn/include
 
 MESSAGE_SUBST+=	PKGBASE=${PKGBASE}
 MESSAGE_SUBST+=	HTTPD_ROOT=${HTTPD_ROOT}

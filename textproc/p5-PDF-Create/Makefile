@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/13 18:01:41 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:32 jlam Exp $
 #
 
 DISTNAME=	PDF-Create-0.01
@@ -9,7 +9,7 @@ CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=PDF/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-#HOMEPAGE=	
+#HOMEPAGE=
 COMMENT=	Perl5 module for creating pdf documents
 
 PERL5_PACKLIST=		auto/PDF/Create/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/06/02 23:28:11 salo Exp $
+# $NetBSD: Makefile,v 1.33 2005/08/19 18:12:37 jlam Exp $
 
 DISTNAME=	imp-3.2.8
 PKGREVISION=	1
@@ -70,6 +70,6 @@ do-install:
 	cd ${WRKSRC}; ${INSTALL_DATA} *.php ${IMPDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${IMPDIR}
 	${FIND} ${IMPDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
-	${FIND} ${IMPDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE} 
+	${FIND} ${IMPDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE}
 
 .include "../../mk/bsd.pkg.mk"
