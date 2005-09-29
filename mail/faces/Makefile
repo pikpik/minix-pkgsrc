@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/06/01 18:02:59 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2005/07/16 19:10:39 jlam Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	3
@@ -13,8 +13,10 @@ DEPENDS+=	netpbm>=9.2:../../graphics/netpbm
 
 CONFLICTS=	compface-[0-9]*
 
-LICENSE=	limited-redistribution
+LICENSE=	faces-license
 RESTRICTED=	"Distribution not allowed if money exchanged"
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=			${WRKDIR}/faces
 USE_X11BASE=		YES
