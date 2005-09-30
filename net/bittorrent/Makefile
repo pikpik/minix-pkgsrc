@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2005/08/07 16:15:55 recht Exp $
-#
+# $NetBSD: Makefile,v 1.31 2005/08/07 16:43:15 recht Exp $
 
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME:S/BitT/bitt/}
 
-PYDISTUTILSPKG=	YES
+PYDISTUTILSPKG=	yes
 
 CONFLICTS+=	bittornado-[0-9]*
 
