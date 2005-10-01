@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/03/24 21:13:03 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/05 20:19:13 reed Exp $
 
 DISTNAME=       wwwcount2.5
 PKGNAME=        wwwcount-2.5
@@ -14,7 +14,7 @@ INSTALLATION_DIRS=	bin man/man1 share/doc/wwwcount/Count2.5/images \
 			share/doc/wwwcount/Count2.5/eximages share/examples
 
 pre-configure:
-	cd ${WRKSRC}; yes "" | PREFIX=${PREFIX} ./Count-config
+	cd ${WRKSRC}; yes "" | PREFIX=${PREFIX} VARBASE=${VARBASE} ./Count-config
 
 do-install:
 	cd ${WRKSRC}; yes "" | ./Count-install
