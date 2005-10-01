@@ -1,0 +1,5 @@
+@comment $NetBSD$
+sbin/fs-fsh
+sbin/fs-makefs
+sbin/fs-tstfs
+share/doc/fs-kit
