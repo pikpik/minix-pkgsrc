@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:16 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/03 19:48:22 recht Exp $
 #
 
-DISTNAME=	Python-2.4.1
-PKGNAME=	python24-pth-2.4.1
+DISTNAME=	Python-2.4.2
+PKGNAME=	python24-pth-2.4.2
 CATEGORIES=	lang python
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -11,7 +11,7 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 
-DEPENDS+=	python24>=2.4:../../lang/python24
+DEPENDS+=	python24>=2.4.2:../../lang/python24
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
