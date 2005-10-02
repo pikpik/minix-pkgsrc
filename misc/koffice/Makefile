@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2005/07/25 21:08:29 kristerw Exp $
+# $NetBSD: Makefile,v 1.64 2005/10/01 11:40:55 adam Exp $
 
 DISTNAME=	koffice-1.4.1
 CATEGORIES=	misc kde
@@ -17,7 +17,7 @@ CONFLICTS+=	koffice3-[0-9]*
 EXTRACT_USING=		gtar
 
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake perl
+USE_TOOLS+=		gmake perl pkg-config
 GNU_CONFIGURE=		yes
 
 GCC_REQD+=		2.95.3
