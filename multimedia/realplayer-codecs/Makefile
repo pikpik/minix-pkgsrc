@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/09/15 13:27:34 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/10/02 11:23:08 wiz Exp $
 #
 
 DISTNAME=	rp8codecs${RP_ARCH}-20050115
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	http://www4.mplayerhq.hu/MPlayer/releases/codecs/ \
 		http://ftp5.mplayerhq.hu/mplayer/releases/codecs/ \
 		ftp://ftp2.mplayerhq.hu/MPlayer/releases/codecs/ \
-		ftp://ftp5.mplayerhq.hu/mplayer/releases/codecs/
+		ftp://ftp5.mplayerhq.hu/mplayer/releases/codecs/ \
 		http://www1.mplayerhq.hu/MPlayer/releases/codecs/ \
 		http://www2.mplayerhq.hu/MPlayer/releases/codecs/
 EXTRACT_SUFX=	.tar.bz2
