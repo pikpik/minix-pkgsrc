@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2005/08/19 16:14:54 drochner Exp $
+# $NetBSD: Makefile,v 1.23 2005/09/30 13:51:24 adam Exp $
 
 DISTNAME=	cairo-1.0.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 
@@ -19,6 +20,15 @@ CONFIGURE_ARGS+=	--enable-glitz
 CONFIGURE_ARGS+=	--enable-pdf
 CONFIGURE_ARGS+=	--enable-ps
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin" && exists(/System/Library/Frameworks/Quartz.framework)
+CONFIGURE_ARGS+=	--enable-quartz
+PLIST_SUBST+=		QUARTZ=
+.else
+PLIST_SUBST+=		QUARTZ="@comment "
+.endif
 
 BUILDLINK_DEPENDS.freetype2+=	freetype2>=2.1.5
 BUILDLINK_DEPENDS.Xft2+=	Xft2>=2.1.2
