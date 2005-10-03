@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2005/07/27 03:13:27 junyoung Exp $
+# $NetBSD: Makefile,v 1.6 2005/10/01 10:55:35 minskim Exp $
 #
 
-DISTNAME=		unalz-0.50
+DISTNAME=		unalz-0.52
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.kipple.pe.kr/win/unalz/
 EXTRACT_SUFX=		.tgz
