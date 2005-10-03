@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.40 2005/08/07 19:47:23 tron Exp $
+# $NetBSD: Makefile,v 1.41 2005/09/20 03:52:01 jlam Exp $
 
-DISTNAME=	cscope-15.4
-PKGREVISION=	4
+DISTNAME=	cscope-15.5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cscope/}
 
