@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/data/file.cc.orig	2005-08-03 19:44:11.000000000 +0000
++++ src/data/file.cc
+@@ -43,6 +43,7 @@
+ #include <fcntl.h>
+ #include <sys/ioctl.h>
+ #include <sys/mman.h>
++#include <unistd.h>
+ 
+ #if HAS_XFS == 1
+ #include <xfs/libxfs.h>
