@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.36 2005/09/03 16:57:07 tonio Exp $
+# $NetBSD: Makefile,v 1.37 2005/09/06 07:26:35 jlam Exp $
 
-DISTNAME=		mutt-1.5.10i
-PKGNAME=		${DISTNAME:C/i$//}
+DISTNAME=		mutt-1.5.11
 CATEGORIES=		mail
 MUTT_SITES=		ftp://ftp.mutt.org/mutt/ \
 			ftp://ftp.stealth.net/pub/mirrors/ftp.mutt.org/pub/mutt/ \
@@ -17,7 +16,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "../../mk/bsd.prefs.mk"
 
-WRKSRC=			${WRKDIR}/${DISTNAME:C/i$$//}
 BUILD_USES_MSGFMT=	yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		perl:run
