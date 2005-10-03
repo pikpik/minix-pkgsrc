@@ -3,8 +3,8 @@ libdata/if_iwi/LICENSE
 libdata/if_iwi/iwi-boot.fw
 libdata/if_iwi/iwi-bss.fw
 libdata/if_iwi/iwi-ibss.fw
-libdata/if_iwi/iwi-sniffer-ibss.fw
 libdata/if_iwi/iwi-sniffer.fw
 libdata/if_iwi/iwi-ucode-bss.fw
 libdata/if_iwi/iwi-ucode-ibss.fw
+libdata/if_iwi/iwi-ucode-sniffer.fw
 @dirrm libdata/if_iwi
