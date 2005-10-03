@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .if ${PKG_LANG:C/_.*//} == "afrikaans"
 OPENOFFICE_ISOCODE=	af
 OPENOFFICE_LANG=	afrikaans

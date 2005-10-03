@@ -1,12 +1,13 @@
 $NetBSD$
 
---- ../ucbhelper/source/client/proxydecider.cxx.orig	2004-10-20 14:04:36.000000000 +0200
+--- ../ucbhelper/source/client/proxydecider.cxx.orig	2005-06-03 12:31:52.000000000 +0200
 +++ ../ucbhelper/source/client/proxydecider.cxx
-@@ -125,6 +125,7 @@ using namespace ucbhelper;
- #else
- #include <netdb.h>
+@@ -126,7 +126,7 @@ using namespace ucbhelper;
  #include <unistd.h>
-+#include <sys/socket.h>
  #endif
  
- #ifdef SOLARIS
+-#if defined (FREEBSD)
++#if defined (FREEBSD) || defined (NETBSD)
+ #include <sys/socket.h>
+ #endif
+ 
