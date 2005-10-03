@@ -1,6 +1,6 @@
 #!@SH@
 #
-# $NetBSD: verifypc.sh,v 1.1.1.1 2005/10/01 12:56:51 jmmv Exp $
+# $NetBSD: verifypc.sh,v 1.2 2005/10/02 09:29:29 jmmv Exp $
 #
 # verifypc - Sanity check package dependencies according to pkg-config
 # Copyright (c) 2005 Julio M. Merino Vidal <jmmv@NetBSD.org>
@@ -91,7 +91,7 @@ check_match() {
     fi
 
     pkgdep=$(echo ${dep} | cut -d : -f 1 | sed 's|>=|-|;s|>|-|')
-    pkgname=$(echo ${pkgdep} | cut -d - -f 1)
+    pkgname=$(echo ${pkgdep} | sed 's|^\(.*\)-\([0-9].*\)$|\1|')
 
     out=$(pkg_admin pmatch "${pkgname}${pcop}${pcver}" "${pkgdep}" 2>&1)
     ret=$?
