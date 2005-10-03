@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/04/11 21:44:50 tv Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/06 14:03:53 yyamano Exp $
 #
 
 DISTNAME=	${PRGNAME}unix
@@ -23,7 +23,7 @@ EXTRACT_ONLY=	# empty
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(OPSYS:M*BSD)
+.if !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly"
 CFLAGS+=		-DBSD
 LDFLAGS+=		-lcompat
 .endif
