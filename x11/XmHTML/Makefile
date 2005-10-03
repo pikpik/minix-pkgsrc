@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/06/17 03:50:43 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2005/07/31 05:51:28 grant Exp $
 #
 
 DISTNAME=       XmHTML-1.1.7
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=   http://www.xs4all.nl/~ripley/XmHTML/dist/
 
-MAINTAINER=	mellon@isc.org
+MAINTAINER=	tech-pkg@netbsd.org
 HOMEPAGE=	http://www.xs4all.nl/~ripley/XmHTML/
 COMMENT=	Motif Widget capable of displaying HTML 3.2 conforming text
 
