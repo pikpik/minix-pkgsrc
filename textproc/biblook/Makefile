@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/05/23 23:28:29 danw Exp $
+# $NetBSD: Makefile,v 1.7 2005/03/07 10:03:13 uebayasi Exp $
 #
 
 DISTNAME=	biblook
@@ -11,6 +11,7 @@ HOMEPAGE=	http://compgeom.cs.uiuc.edu/~jeffe/biblook.html
 COMMENT=	Indexing and searching tools for BibTeX bibliography databases
 
 WRKSRC=		${WRKDIR}
+MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}/man1
 MAKE_FLAGS=     CC="${CC}"
 
 # override definitions in the package's Makefile via command line
