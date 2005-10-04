@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/03/20 19:53:09 salo Exp $
+# $NetBSD: Makefile,v 1.24 2005/04/11 21:44:48 tv Exp $
 #
 
 DISTNAME=       cpio-2.5
@@ -29,7 +29,5 @@ CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX}
 .endif
 PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
-
-INSTALLATION_DIRS=	bin man/man1
 
 .include "../../mk/bsd.pkg.mk"
