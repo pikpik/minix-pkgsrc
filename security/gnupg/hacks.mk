@@ -1,4 +1,4 @@
-# $NetBS$
+# $NetBSD$
 
 .ifndef GNUPG_HACKS_MK
 GNUPG_HACKS_MK=         #defined
