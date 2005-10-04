@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.82 2005/07/21 16:29:59 wiz Exp $
+# $NetBSD: Makefile,v 1.83 2005/08/10 20:56:25 jlam Exp $
 #
 
 DISTNAME=	galeon-1.3.21
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=galeon/}
 EXTRACT_SUFX=	.tar.bz2
@@ -43,6 +44,7 @@ CONF_FILES=		${EGDIR}/sound/events/galeon.soundlist \
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
