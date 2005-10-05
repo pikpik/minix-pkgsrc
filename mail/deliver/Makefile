@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/05/28 01:09:01 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/01 14:45:01 wiz Exp $
 
 DISTNAME=	deliver-2.1.14
 PKGREVISION=	1
@@ -13,7 +13,6 @@ PKG_SYSCONFSUBDIR=		deliver
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.deliver
 PKG_SUPPORTED_OPTIONS=		deliver-suid
-PKG_OPTIONS_LEGACY_VARS+=	DELIVER_SUID:deliver-suid
 
 .include "../../mk/bsd.options.mk"
 

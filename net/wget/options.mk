@@ -1,9 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2005/02/09 17:51:47 tv Exp $
+# $NetBSD: options.mk,v 1.2 2005/05/31 10:01:39 dillo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.wget
 PKG_SUPPORTED_OPTIONS=	inet6 ssl
 PKG_SUGGESTED_OPTIONS=	ssl
-PKG_OPTIONS_LEGACY_VARS+=	WGET_USE_SSL:ssl
 
 .include "../../mk/bsd.options.mk"
 

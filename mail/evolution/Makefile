@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2005/08/21 20:53:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.90 2005/08/24 10:59:12 adrianp Exp $
 
 DISTNAME=		evolution-2.2.3
 PKGREVISION=		1
@@ -15,7 +15,6 @@ BUILD_USES_MSGFMT=	YES
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.evolution
 PKG_SUPPORTED_OPTIONS=	inet6 krb4 krb5 ssl
-PKG_OPTIONS_LEGACY_OPTS+=	ipv6:inet6
 
 .include "../../mk/bsd.options.mk"
 

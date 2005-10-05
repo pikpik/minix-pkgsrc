@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/12 20:59:18 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2005/09/30 13:18:24 jmmv Exp $
 #
 
 DISTNAME=	monotone-0.23
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+=	BOOST_SUFFIX=-mt
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.monotone
 PKG_SUPPORTED_OPTIONS=	inet6
-PKG_OPTIONS_LEGACY_OPTS+=	ipv6:inet6
 
 .include "../../mk/bsd.options.mk"
 

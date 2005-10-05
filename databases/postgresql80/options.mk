@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/08/05 19:43:45 jlam Exp $
 
 PKG_SUPPORTED_OPTIONS+=		pgsql-hier-query
-PKG_OPTIONS_LEGACY_VARS+=	PGSQL_USE_HIER:pgsql-hier-query
+
 .include "../../mk/bsd.options.mk"
 
 ###

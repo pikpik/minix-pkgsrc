@@ -1,12 +1,8 @@
-# $NetBSD: options.mk,v 1.6 2005/06/03 10:25:38 wiz Exp $
+# $NetBSD: options.mk,v 1.7 2005/09/30 12:43:35 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.uim
 PKG_SUPPORTED_OPTIONS=	anthy canna eb gtk qt
 PKG_SUGGESTED_OPTIONS=	anthy canna gtk
-PKG_OPTIONS_LEGACY_VARS+=	UIM_USE_ANTHY:anthy
-PKG_OPTIONS_LEGACY_VARS+=	UIM_USE_CANNA:canna
-PKG_OPTIONS_LEGACY_VARS+=	UIM_USE_EB:eb
-PKG_OPTIONS_LEGACY_VARS+=	UIM_USE_QT:qt
 
 .include "../../mk/bsd.options.mk"
 
