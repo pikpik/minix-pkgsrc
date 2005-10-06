@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1724 2005/10/04 17:43:57 reed Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1725 2005/10/04 20:50:49 seb Exp $
 #
 # This file is in the public domain.
 #
@@ -4039,6 +4039,7 @@ _PRINT_PLIST_AWK_SUBST+=						\
 	gsub(/${PKGNAME_NOREV}/, "$${PKGNAME}");			\
 	gsub(/${PKGVERSION:S/./\./g:C/nb[0-9]*$$//}/, "$${PKGVERSION}");\
 	gsub(/${PKGLOCALEDIR}\/locale/, "$${PKGLOCALEDIR}/locale");	\
+	gsub("^${PKGMANDIR}\/", "man/");				\
 }
 
 _PRINT_PLIST_AWK_IGNORE=	($$0 ~ /emul\/linux\/proc/)
@@ -4169,6 +4170,7 @@ print-PLIST:
 				/emul\/linux\/proc/ { next; }		\
 				/${PREFIX:S|/|\\/|g}\/\.$$/ { next; }	\
 				{ sub("${PREFIX}/\\\\./", ""); }	\
+				{ sub("^${PKGMANDIR}/", "man/"); }	\
 				${_PRINT_PLIST_COMMON_DIRS}'` ;		\
 	do								\
 		if [ `${LS} -la ${PREFIX}/$$i | ${WC} -l` = 3 ]; then	\
