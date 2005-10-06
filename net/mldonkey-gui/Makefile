@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/23 18:47:43 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/25 08:41:29 tron Exp $
 #
 
 .include "../../net/mldonkey/Makefile.common"
@@ -13,6 +13,8 @@ PRINT_PLIST_AWK+=	/^@dirrm libexec\/mldonkey$$/ \
 
 INSTALLATION_DIRS=	bin
 
+.include "options.mk"
+
 do-install:
 	${RM} -f ${PREFIX}/bin/mlgui
 	cd ${PREFIX}/bin && ${LN} -s ../libexec/mldonkey/mlgui mlgui
@@ -23,5 +25,4 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mlim ${PREFIX}/libexec/mldonkey
 	${INSTALL_PROGRAM} ${WRKSRC}/mlnet+gui ${PREFIX}/libexec/mldonkey
 
-.include "../../x11/lablgtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
