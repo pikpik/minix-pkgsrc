@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/03/26 17:06:50 minskim Exp $
+# $NetBSD: Makefile,v 1.24 2005/03/27 13:09:19 jmmv Exp $
 #
 
 COMMENT=	Software for the biological sciences
@@ -21,6 +21,7 @@ SUBDIR+=	pdbalign
 SUBDIR+=	phylip
 SUBDIR+=	profit
 SUBDIR+=	puzzle
+SUBDIR+=	pymol
 SUBDIR+=	rasmol
 SUBDIR+=	sewer
 SUBDIR+=	stride
