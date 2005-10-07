@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/11/29 05:09:42 taca Exp $
+# $NetBSD: Makefile,v 1.6 2005/03/15 14:05:52 wiz Exp $
 
 DISTNAME=	mh-6.8.4-JP-3.05
 PKGNAME=	ja-mh6-3.05
@@ -26,7 +26,7 @@ MANCOMPRESSED=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-batchmode \
 		--libexecdir=${PREFIX}/libexec/mh \
-		--enable-jmandir=${PREFIX}/man/ja_JP.EUC \
+		--enable-jmandir=${PREFIX}/${PKGMANDIR}/ja_JP.EUC \
 		--enable-apop=${PREFIX}/etc/pop.auth --enable-rpop
 
 post-install:
