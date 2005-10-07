@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2005/06/13 17:19:12 jlam Exp $
+# $NetBSD: Makefile,v 1.115 2005/09/28 20:52:25 rillig Exp $
 
 # Notes to package maintainers:
 #
@@ -89,9 +89,10 @@ update:
 
 PREFIX:=		${PKG_TOOLS_BIN:C|/[^/]?bin$||}
 .if ${PREFIX} == "/usr"
+# XXX This breaks for those who set their own LOCALBASE to /usr
+# XXX and also define PKGMANDIR to different than share/man.
 CONFIGURE_ARGS+=	--mandir=${PREFIX}/share/man
 MANDIR=			share/
 .else
-CONFIGURE_ARGS+=	--mandir=${PREFIX}/man
 MANDIR=			# empty
 .endif
