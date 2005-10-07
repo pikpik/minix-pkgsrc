@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2003/12/04 16:06:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2005/08/19 18:12:39 jlam Exp $
 
 DISTNAME=		sarg-1.4.1
 CATEGORIES=		www
@@ -14,7 +14,7 @@ COMMENT=		Squid-Cache proxy server Analysis Report Generator
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-gcc					\
 			--enable-bindir=${PREFIX}/sbin			\
-			--enable-mandir=${PREFIX}/man/man1		\
+			--enable-mandir=${PREFIX}/${PKGMANDIR}/man1	\
 			--enable-sysconfdir=${PKG_SYSCONFDIR}
 
 USE_PKGINSTALL=		yes
