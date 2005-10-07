@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${PYSITELIB}/gnuradio/_howto.la
+${PYSITELIB}/gnuradio/howto.py
+${PYSITELIB}/gnuradio/howto.pyc
+${PYSITELIB}/gnuradio/howto.pyo
+include/gnuradio/howto_square_ff.h
+include/gnuradio/howto_square2_ff.h
+include/gnuradio/swig/howto.i
