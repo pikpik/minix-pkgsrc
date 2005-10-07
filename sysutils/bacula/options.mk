@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.options,v 1.1.1.1 2004/11/06 16:17:38 mjl Exp $
+# $NetBSD: Makefile.options,v 1.2 2005/05/31 10:01:39 dillo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.bacula
 PKG_SUPPORTED_OPTIONS=	catalog-sqlite catalog-pgsql
