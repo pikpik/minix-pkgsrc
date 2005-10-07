@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2005/08/29 11:37:08 xtraeme Exp $
+# $NetBSD: options.mk,v 1.4 2005/08/29 13:31:14 xtraeme Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.gaim
 PKG_SUPPORTED_OPTIONS+=		gnutls gtkspell silc audio perl tcl nas
@@ -46,7 +46,7 @@ CONFIGURE_ARGS+=	--disable-audio
 .endif
 
 .if !empty(PKG_OPTIONS:Mperl)
-USE_PERL5=	yes
+USE_TOOLS+=		perl:run
 .  include "../../lang/perl5/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--disable-perl
