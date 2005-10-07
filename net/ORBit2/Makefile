@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2005/07/21 16:29:54 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2005/08/10 20:56:21 jlam Exp $
 #
 
-DISTNAME=		ORBit2-2.12.2
+DISTNAME=		ORBit2-2.12.4
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/ORBit2/2.12/}
 EXTRACT_SUFX=		.tar.bz2
