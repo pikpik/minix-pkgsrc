@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.22 2005/05/31 10:01:40 dillo Exp $
+# $NetBSD: Makefile.php,v 1.23 2005/09/04 20:13:59 jlam Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -40,6 +40,7 @@ CONFIGURE_ENV+=		EXTENSION_DIR="${PREFIX}/${PHP_EXTENSION_DIR}"
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.${PKGNAME:C/-[^-]*$//}
 PKG_SUPPORTED_OPTIONS+=	ssl
+PKG_SUGGESTED_OPTIONS+=	ssl
 
 .include "../../mk/bsd.options.mk"
 

@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+Note php-openssl has been removed as separate package as of 5.0.5nb1, the
+main PHP5 package has them built-in now.
+===========================================================================
+
