@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2005/09/04 12:49:17 jdolecek Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/28 19:17:16 rillig Exp $
 
 DISTNAME=	php-extensions-4.4
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs www php4
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -48,6 +49,7 @@ DEPENDS+=	php-sockets-4.4.*:../../net/php-sockets
 DEPENDS+=	php-sysvsem-4.4.*:../../devel/php-sysvsem
 DEPENDS+=	php-sysvshm-4.4.*:../../devel/php-sysvshm
 DEPENDS+=	php-wddx-4.4.*:../../textproc/php-wddx
+DEPENDS+=	php-xmlrpc-4.4.*:../../net/php-xmlrpc
 DEPENDS+=	php-yp-4.4.*:../../net/php-yp
 DEPENDS+=	php-zip-4.4.*:../../archivers/php-zip
 DEPENDS+=	php-zlib-4.4.*:../../archivers/php-zlib
