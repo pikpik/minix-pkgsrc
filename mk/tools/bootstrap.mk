@@ -1,4 +1,4 @@
-# $NetBSD: bootstrap.mk,v 1.5 2005/07/30 00:38:56 seb Exp $
+# $NetBSD: bootstrap.mk,v 1.6 2005/09/13 04:24:35 dmcmahill Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -114,7 +114,7 @@ TOOLS_PLATFORM.sed?=		${LOCALBASE}/bin/nbsed
 TOOLS_PLATFORM.tar?=		${LOCALBASE}/bin/tar
 
 .elif ${OPSYS} == "UnixWare"
-TOOLS_PLATFORM.mkdir?=		${LOCALBASE}/sbin/mkdir-sh
+TOOLS_PLATFORM.mkdir?=		${LOCALBASE}/sbin/mkdir-sh -p
 TOOLS_PLATFORM.mtree?=		${LOCALBASE}/sbin/mtree
 TOOLS_PLATFORM.pax?=		${LOCALBASE}/bin/pax
 TOOLS_PLATFORM.sed?=		${LOCALBASE}/bin/nbsed
