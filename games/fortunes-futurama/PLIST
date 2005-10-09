@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/games/fortune/futurama
+share/games/fortune/futurama.dat
+@dirrm share/games/fortune
