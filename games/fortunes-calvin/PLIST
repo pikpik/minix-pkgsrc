@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/games/fortune/calvin
+share/games/fortune/calvin.dat
+@dirrm share/games/fortune
