@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.19 2005/05/25 22:52:53 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:37 jlam Exp $
 
 DISTNAME=		stuffit520.611linux-i386
 PKGNAME=		stuffit-5.2.0.611
 CATEGORIES=		archivers
-MASTER_SITES=		http://www.aladdinsys.com/downloads/files/
+MASTER_SITES=		http://www.allume.com/downloads/files/
 
 MAINTAINER=		ben@NetBSD.org
-HOMEPAGE=		http://www.stuffit.com/unix/
+HOMEPAGE=		http://www.stuffit.com/unix/stuffit/
 COMMENT=		Stuffit Archive Creator and Expander
 
 .include "../../mk/bsd.prefs.mk"
