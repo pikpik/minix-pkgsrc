@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/games/fortune/h2g2
+share/games/fortune/h2g2.dat
+@dirrm share/games/fortune
