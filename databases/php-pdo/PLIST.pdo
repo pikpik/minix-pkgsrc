@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/php/ext/pdo/php_pdo.h
+include/php/ext/pdo/php_pdo_driver.h
+@dirrm include/php/ext/pdo
