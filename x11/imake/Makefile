@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2005/07/17 21:57:52 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2005/09/28 20:52:28 rillig Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	imake-${XF_VER}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 DISTFILES=	XFree86-${XF_VER}-src-1.tgz XFree86-${XF_VER}-src-3.tgz
