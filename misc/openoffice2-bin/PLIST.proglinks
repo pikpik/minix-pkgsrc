@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/scalc
+bin/sdraw
+bin/simpress
+bin/soffice
+bin/swriter
