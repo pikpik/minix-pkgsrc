@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- rplayd/timer.c.orig	2005-08-04 22:38:22.000000000 +0000
++++ rplayd/timer.c
+@@ -27,6 +27,7 @@
+ #include <sys/types.h>
+ #include <sys/time.h>
+ #include <sys/signal.h>
++#include <errno.h>
+ #include <stdio.h>
+ #include <unistd.h>
+ #include "rplayd.h"

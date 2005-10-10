@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- rplayd/sound.c.orig	2005-10-10 16:55:19.000000000 +0200
++++ rplayd/sound.c
+@@ -28,7 +28,7 @@
+ #include <sys/uio.h>
+ #include <sys/stat.h>
+ #include <sys/file.h>
+-#include <sys/errno.h>
++#include <errno.h>
+ #include <sys/signal.h>
+ #include <sys/ioctl.h>
+ #ifdef ultrix
