@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD: MESSAGE,v 1.1 2003/06/27 23:02:51 jmmv Exp $
-
-You should install the librsvg2-gtk2 package, which provides an RSVG
-gdk-pixbuf loader and an RSVG theme engine for the GTK2 toolkit.
-
-===========================================================================
