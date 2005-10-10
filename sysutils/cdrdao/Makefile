@@ -14,6 +14,9 @@ CONFIGURE_ARGS+=	--without-xdao
 CONFIGURE_ARGS+=	--without-posix-threads
 .endif
 
+post-extract:
+	${CP} ${WRKSRC}/scsilib/RULES/os-freebsd.id ${WRKSRC}/scsilib/RULES/os-dragonfly.id
+
 post-install:
 		${INSTALL_MAN_DIR} ${PREFIX}/share/doc/cdrdao
 		${INSTALL_MAN} ${WRKSRC}/README \
