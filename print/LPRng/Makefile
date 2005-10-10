@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/03/24 21:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/07/21 09:21:06 wiz Exp $
 
 DISTNAME=	LPRng-3.6.28
 PKGREVISION=	1
-CATEGORIES=	print
+CATEGORIES=	print meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
