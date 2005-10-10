@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:47:33 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:08:34 jlam Exp $
 
 DISTNAME=       dictd-1.9.15
 PKGNAME=        dict-client-1.9.15
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=   ftp://ftp.dict.org/pub/dict/
 
-MAINTAINER=	tech-pkg@netbsd.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.dict.org/
 COMMENT=	Dictionary Service Protocol client
 
