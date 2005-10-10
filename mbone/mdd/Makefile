@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/25 18:27:12 manu Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:20 jlam Exp $
 #
 
 DISTNAME=	mdd-20050318
@@ -6,7 +6,7 @@ CATEGORIES=	mbone
 MASTER_SITES=	http://ftp.espci.fr/pub/mdd/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	manu@netbsd.org
+MAINTAINER=	manu@NetBSD.org
 COMMENT=	Multicast file distribution tool
 
 INSTALLATION_DIRS=	bin man/man1

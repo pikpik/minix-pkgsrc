@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/06/02 14:40:15 salo Exp $
+# $NetBSD: Makefile,v 1.22 2005/06/02 14:58:59 blymn Exp $
 
 DISTNAME=	bzflag-2.0.2.20050318
 PKGNAME=	${DISTNAME:S/.20050318//}
 CATEGORIES=	games x11
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=bzflag/}
 
-MAINTAINER=	blymn@netbsd.org
+MAINTAINER=	blymn@NetBSD.org
 HOMEPAGE=	http://www.bzflag.org/
 COMMENT=	OpenGL tank game
 
