@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: wrapper-defs.mk,v 1.1 2004/09/27 12:05:53 jlam Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -41,6 +41,6 @@ WRAPPER_DIR=		${WRKDIR}/.wrapper
 WRAPPER_BINDIR=		${WRAPPER_DIR}/bin
 WRAPPER_TMPDIR=		${WRAPPER_DIR}/tmp
 WRAPPER_SRCDIR=		${.CURDIR}/../../mk/wrapper
-WRAPPER_SHELL=		${SH}
+WRAPPER_SHELL?=		${SH}
 
 .endif	# WRAPPER_DEFS_MK
