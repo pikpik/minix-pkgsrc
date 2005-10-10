@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/08/10 20:56:25 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/09/13 21:21:12 tonio Exp $
 #
 
 DISTNAME=     selectwm-0.4.1
-PKGREVISION=  1
+PKGREVISION=  2
 CATEGORIES=   wm
 MASTER_SITES= http://ordiluc.net/selectwm/
 
@@ -18,4 +18,5 @@ CONFIGURE_ARGS+=  --without-included-gettext
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/libgetopt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
