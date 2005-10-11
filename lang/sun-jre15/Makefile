@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/10/03 21:36:58 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2005/10/11 17:56:24 tv Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 
