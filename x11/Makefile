@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.407 2005/09/22 15:04:19 wiz Exp $
+# $NetBSD: Makefile,v 1.408 2005/10/03 04:53:51 minskim Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -6,6 +6,7 @@ COMMENT=	Packages to support the X window system
 SUBDIR+=	9term
 SUBDIR+=	XF86Setup
 SUBDIR+=	XFree86-clients
+SUBDIR+=	XFree86-imake
 SUBDIR+=	XFree86-libs
 SUBDIR+=	XFree86-server
 SUBDIR+=	XaoS
@@ -79,7 +80,6 @@ SUBDIR+=	gtoolkit
 SUBDIR+=	hanterm
 SUBDIR+=	hot-babe
 SUBDIR+=	hsetroot
-SUBDIR+=	imake
 SUBDIR+=	imwheel
 SUBDIR+=	kde3-i18n-af
 SUBDIR+=	kde3-i18n-ar
