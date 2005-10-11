@@ -1,3 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/10/11 00:45:39 gdt Exp $
 bin/squidpurge
-share/doc/squidpurge
+share/doc/squidpurge/README
+@dirrm share/doc/squidpurge
