@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.135 2005/09/08 15:29:28 drochner Exp $
+# $NetBSD: Makefile,v 1.136 2005/10/02 12:08:37 wulf Exp $
 #
 
 COMMENT=	Mathematics
@@ -92,8 +92,11 @@ SUBDIR+=	py-numarray
 SUBDIR+=	py-pytables
 SUBDIR+=	py-rpy
 SUBDIR+=	qalculate
+SUBDIR+=	qalculate-bases
+SUBDIR+=	qalculate-currency
 SUBDIR+=	qalculate-gtk
 SUBDIR+=	qalculate-kde
+SUBDIR+=	qalculate-units
 SUBDIR+=	quadpack
 SUBDIR+=	randlib
 SUBDIR+=	ruby-bigfloat
