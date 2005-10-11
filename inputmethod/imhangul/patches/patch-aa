@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	2005-07-29 21:31:02.000000000 -0700
+--- Makefile.in.orig	2005-09-10 20:20:25.000000000 -0700
 +++ Makefile.in
 @@ -829,12 +829,12 @@ uninstall-info: uninstall-info-recursive
  
@@ -10,13 +10,13 @@ $NetBSD$
 -		if test ! -d `dirname $(IM_HANGUL_GTK_IMMODULE_FILE)`; then \
 -			$(mkinstalldirs) `dirname $(IM_HANGUL_GTK_IMMODULE_FILE)`; \
 -		fi;\
--		gtk-query-immodules-2.0 > $(DESTDIR)$(IM_HANGUL_GTK_IMMODULE_FILE); \
+-		gtk-query-immodules-2.0 > $(IM_HANGUL_GTK_IMMODULE_FILE); \
 -	fi
 +#	if test -z "$(DESTDIR)" ; then \
 +#		if test ! -d `dirname $(IM_HANGUL_GTK_IMMODULE_FILE)`; then \
 +#			$(mkinstalldirs) `dirname $(IM_HANGUL_GTK_IMMODULE_FILE)`; \
 +#		fi;\
-+#		gtk-query-immodules-2.0 > $(DESTDIR)$(IM_HANGUL_GTK_IMMODULE_FILE); \
++#		gtk-query-immodules-2.0 > $(IM_HANGUL_GTK_IMMODULE_FILE); \
 +#	fi
  
  uninstall:
