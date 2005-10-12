@@ -1,9 +1,10 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: dspam.sh,v 1.1 2005/03/21 21:35:52 xtraeme Exp $
+# $NetBSD: dspam.sh,v 1.2 2005/04/26 15:43:26 jwise Exp $
 #
 
 # PROVIDE: dspam
+# REQUIRE: SERVERS
 # BEFORE:  DAEMON
 
 if [ -f /etc/rc.subr ]; then
@@ -65,6 +66,6 @@ else
 		esac
 fi
 
-if [ "$1" != "stop" -o "$1" != "status" ]; then
+if checkyesno "${rcvar}" && [ "$1" != "stop" -o "$1" != "status" ]; then
 	echo $(check_process $command) > $pidfile
 fi
