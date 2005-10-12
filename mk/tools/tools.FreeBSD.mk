@@ -1,4 +1,4 @@
-# $NetBSD: tools.FreeBSD.mk,v 1.19 2005/08/10 02:57:32 jlam Exp $
+# $NetBSD: tools.FreeBSD.mk,v 1.20 2005/09/20 03:50:19 jlam Exp $
 #
 # System-supplied tools for the FreeBSD operating system.
 
@@ -51,6 +51,7 @@ TOOLS_PLATFORM.nice?=		/usr/bin/nice
 TOOLS_PLATFORM.nroff?=		/usr/bin/nroff
 TOOLS_PLATFORM.patch?=		/usr/bin/patch
 TOOLS_PLATFORM.pax?=		/bin/pax
+TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.pwd?=		/bin/pwd
 TOOLS_PLATFORM.rm?=		/bin/rm
 TOOLS_PLATFORM.rmdir?=		/bin/rmdir
