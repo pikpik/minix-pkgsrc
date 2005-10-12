@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.307 2005/09/26 23:28:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.308 2005/10/01 18:29:04 agc Exp $
 #
 
 COMMENT=	System utilities
 
+SUBDIR+=	855resolution
 SUBDIR+=	acpi-iasl
 SUBDIR+=	acpidump
 SUBDIR+=	adjustkernel
