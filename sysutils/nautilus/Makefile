@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.50 2005/07/21 16:29:57 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2005/08/10 20:56:24 jlam Exp $
 #
 
-DISTNAME=		nautilus-2.10.1
+DISTNAME=		nautilus-2.12.1
 CATEGORIES=		sysutils gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus/2.10/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus/2.12/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		rh@NetBSD.org
@@ -22,9 +22,9 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 
 GCONF2_SCHEMAS=		apps_nautilus_preferences.schemas
 
-BUILDLINK_DEPENDS.eel2+=	eel2>=2.10.1
+BUILDLINK_DEPENDS.eel2+=	eel2>=2.12.0
 BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.0
-BUILDLINK_DEPENDS.gnome-vfs2+=	gnome-vfs2>=2.10.0
+BUILDLINK_DEPENDS.gnome-vfs2+=	gnome-vfs2>=2.12.0
 BUILDLINK_DEPENDS.startup-notification+=	startup-notification>=0.8
 
 .include "../../audio/esound/buildlink3.mk"

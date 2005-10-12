@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- libnautilus-private/nautilus-file-operations.c.orig	2005-09-26 17:30:05.000000000 +0200
++++ libnautilus-private/nautilus-file-operations.c
+@@ -25,6 +25,7 @@
+  */
+ 
+ #include <config.h>
++#include <locale.h>
+ #include <string.h>
+ #include <stdio.h>
+ #include "nautilus-file-operations.h"
