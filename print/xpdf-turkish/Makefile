@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2004/01/20 12:24:30 agc Exp $
+# $NetBSD: Makefile,v 1.12 2004/07/28 11:06:43 wiz Exp $
 #
 
-DISTNAME=	xpdf-turkish
+DISTNAME=	xpdf-turkish-2002-apr-10
 PKGNAME=	${DISTNAME}-20020410
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
@@ -15,8 +15,7 @@ DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
 USE_PKGINSTALL=	yes
 
-WRKSRC=		${WRKDIR}/${DISTNAME}
-DIST_SUBDIR=	${PKGNAME_NOREV}
+WRKSRC=		${WRKDIR}/xpdf-turkish
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
