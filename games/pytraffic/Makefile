@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/07/20 19:46:27 drochner Exp $
 #
 
-DISTNAME=		pytraffic-2.0.1
+DISTNAME=		pytraffic-2.5
 CATEGORIES=		games
 MASTER_SITES=	http://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/
 
