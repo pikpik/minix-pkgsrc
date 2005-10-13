@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2005/06/03 20:08:34 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2005/09/30 21:18:58 mjl Exp $
 #
 
 COMMENT=	Communication utilities
@@ -46,6 +46,7 @@ SUBDIR+=	qpage
 SUBDIR+=	ruby-termios
 SUBDIR+=	scmxx
 SUBDIR+=	snooper
+SUBDIR+=	synce-libsynce
 SUBDIR+=	tkhylafax
 SUBDIR+=	xisp
 SUBDIR+=	xtel
