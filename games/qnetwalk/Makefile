@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:56 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:02 jlam Exp $
 #
 
-DISTNAME=	qnetwalk-1.1
+DISTNAME=	qnetwalk-1.2
 CATEGORIES=	x11 games
 MASTER_SITES=	http://qt.osdn.org.ua/
 
