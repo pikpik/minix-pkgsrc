@@ -1,0 +1,3 @@
+@comment $NetBSD$
+include/libmimedir.h
+lib/libmimedir.a
