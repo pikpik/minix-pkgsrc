@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/13 16:57:41 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/10/13 18:40:21 wiz Exp $
 #
 
 DISTNAME=		synce-rra-0.9.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		comms
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=synce/}
 
