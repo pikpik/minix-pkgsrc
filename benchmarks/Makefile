@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/09/03 06:27:25 xtraeme Exp $
+# $NetBSD: Makefile,v 1.38 2005/09/03 06:53:48 xtraeme Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -12,6 +12,7 @@ SUBDIR+=	dbench
 SUBDIR+=	dhrystone
 SUBDIR+=	fib
 SUBDIR+=	flops
+SUBDIR+=	forkbomb
 SUBDIR+=	hbench
 SUBDIR+=	heapsort
 SUBDIR+=	hint
