@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2005/10/14 00:45:57 minskim Exp $
+# $NetBSD: Makefile,v 1.250 2005/10/14 01:08:27 minskim Exp $
 #
 
 COMMENT=	Security tools
@@ -14,6 +14,7 @@ SUBDIR+=	amavis
 SUBDIR+=	amavis-perl
 SUBDIR+=	amavisd-new
 SUBDIR+=	antonym
+SUBDIR+=	ap-modsecurity
 SUBDIR+=	apg
 SUBDIR+=	arirang
 SUBDIR+=	audit-packages
