@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.295 2005/10/02 11:11:27 wiz Exp $
+# $NetBSD: Makefile,v 1.296 2005/10/04 18:52:19 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -91,6 +91,7 @@ SUBDIR+=	icu
 SUBDIR+=	intltool
 SUBDIR+=	ipadic
 SUBDIR+=	isearch
+SUBDIR+=	iso-codes
 SUBDIR+=	iso12083
 SUBDIR+=	iso8879
 SUBDIR+=	ispell-base
