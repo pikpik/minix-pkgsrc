@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4024 2005/10/15 17:52:17 tonio Exp $
+$NetBSD: TODO,v 1.4025 2005/10/15 18:14:32 wiz Exp $
 
 Suggested new packages
 ======================
@@ -323,7 +323,6 @@ Suggested package updates
 	o XaoS-3.1.1
 	o YoSucker-73
 	o aap-0.144
-	o abook-0.5.4
 	o acpi-iasl-20040715
 	o adocman-0.13
 	o adtool-1.3
