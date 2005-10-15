@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.286 2005/09/26 23:18:51 xtraeme Exp $
+# $NetBSD: Makefile,v 1.287 2005/10/01 13:56:44 smb Exp $
 #
 
 COMMENT=	Audio tools
@@ -78,6 +78,7 @@ SUBDIR+=	gkrellm-volume
 SUBDIR+=	gkrellm-xmms
 SUBDIR+=	gkrellm1-volume
 SUBDIR+=	gkrellm1-xmms
+SUBDIR+=	glurp
 SUBDIR+=	gmp3info
 SUBDIR+=	gmpc
 SUBDIR+=	gnome-audio
