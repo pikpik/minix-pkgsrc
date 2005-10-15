@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4018 2005/10/14 21:53:49 jmmv Exp $
+$NetBSD: TODO,v 1.4019 2005/10/14 22:18:11 kristerw Exp $
 
 Suggested new packages
 ======================
@@ -322,7 +322,6 @@ Suggested package updates
 	o XFree86-4.5.0
 	o XaoS-3.1.1
 	o Xft2-2.1.7
-	o Xrender-0.9.0
 	o YoSucker-73
 	o aap-0.144
 	o abook-0.5.4
