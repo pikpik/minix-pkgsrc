@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.127 2005/10/10 17:22:06 reed Exp $
+# $NetBSD: replace.mk,v 1.128 2005/10/12 16:28:29 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -691,7 +691,10 @@ TOOLS_PATH.imake=		${TOOLS_PREFIX.imake}/${X11ROOT_PREFIX}/bin/imake
 TOOLS_DEPENDS.imake?=		xorg-imake>=6.8:../../x11/xorg-imake
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.imake=xorg-imake
 TOOLS_PATH.imake=		${TOOLS_PREFIX.imake}/${X11ROOT_PREFIX}/bin/imake
-.    else # !empty(X11_TYPE:Mnative)
+# !empty(X11_TYPE:Mnative)
+.    elif defined(IMAKE)
+TOOLS_PATH.imake=		${IMAKE}
+.    else
 TOOLS_PATH.imake=		${X11BASE}/bin/imake
 .    endif
 .  endif
