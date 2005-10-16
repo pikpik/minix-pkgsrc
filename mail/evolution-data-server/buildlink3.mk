@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2005/03/22 16:18:07 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2005/10/16 12:17:52 jmmv Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 EVOLUTION_DATA_SERVER_BUILDLINK3_MK:=	${EVOLUTION_DATA_SERVER_BUILDLINK3_MK}+
@@ -24,5 +24,6 @@ PRINT_PLIST_AWK+=/^@dirrm lib\/evolution-data-server-1.2$$/ \
 
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
+.include "../../devel/nss/buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
