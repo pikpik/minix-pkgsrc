@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/28 14:08:02 taca Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/06 17:19:07 taca Exp $
 
 PKGNAME=			${RUBY_PKGPREFIX}-${DISTNAME}
 PKGREVISION=			2
@@ -7,6 +7,7 @@ PKGREVISION=			2
 
 DEPENDS+=			${CLEARSILVER_BASE}:../../www/clearsilver-base
 
+USE_RUBY_DIST_SUBDIR=		no
 RUBY_HAS_ARCHLIB=		yes
 CONFIGURE_ARGS+=		--enable-ruby
 CONFIGURE_ARGS+=		--with-ruby=${RUBY}
