@@ -1,4 +1,4 @@
-# $NetBSD: xfree.mk,v 1.10 2004/03/29 05:43:32 jlam Exp $
+# $NetBSD: xfree.mk,v 1.11 2005/06/01 18:03:08 jlam Exp $
 
 FILES_LIST=	${FILESDIR}/xfree
 
@@ -11,7 +11,7 @@ FILES_LIST=	${FILESDIR}/xfree
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../x11/Xrandr/buildlink3.mk"
 .include "../../x11/Xrender/buildlink3.mk"
-.include "../../x11/render/buildlink3.mk"
+.include "../../x11/renderext/buildlink3.mk"
 .include "../../x11/randrext/buildlink3.mk"
 .include "../../x11/xcursor/buildlink3.mk"
 
