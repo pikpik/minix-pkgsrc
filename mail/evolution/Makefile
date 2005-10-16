@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2005/10/05 13:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2005/10/16 12:19:13 jmmv Exp $
 
 DISTNAME=		evolution-2.4.1
 CATEGORIES=		mail time gnome
@@ -13,6 +13,7 @@ DEPENDS+=		psmisc-[0-9]*:../../sysutils/psmisc
 BUILD_USES_MSGFMT=	YES
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.evolution
+PKG_SUGGESTED_OPTIONS=	inet6 ssl
 PKG_SUPPORTED_OPTIONS=	inet6 krb4 krb5 ssl
 
 .include "../../mk/bsd.options.mk"
