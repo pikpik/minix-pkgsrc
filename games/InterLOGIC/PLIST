@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/interlogic
+share/doc/interLOGIC/README
+@dirrm share/doc/interLOGIC
