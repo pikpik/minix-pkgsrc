@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/01/21 12:57:45 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:08 tv Exp $
 #
 
 DISTNAME=	chef.l
@@ -21,7 +21,10 @@ MAKE_ENV+=	BINDIR=${PREFIX}/bin BINOWN=${BINOWN} BINGRP=${BINGRP}
 INSTALLATION_DIRS=	bin
 
 do-extract:
-	${CP} ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ${WRKDIR}/chef.l
+	# deal with the dos encoding of the file
+	${CP} ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ${WRKDIR}/chef.l.tmp
+	cd ${WRKSRC} && ${TR} '\015' '\n' < chef.l.tmp > chef.l
+	cd ${WRKSRC} && ${RM} chef.l.tmp
 
 do-build:
 	cd ${WRKSRC} && ${LEX} chef.l
