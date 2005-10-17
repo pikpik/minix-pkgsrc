@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/06/17 04:49:47 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/17 16:16:48 is Exp $
 #
 
 PKGNAME=		mpd-1.0.1
 DISTNAME=		mpd.1.0.1
-#PKGREVISION=		0
+PKGREVISION=		1
 CATEGORIES=		lang parallel
 MASTER_SITES=		http://www.cs.arizona.edu/mpd/download/
 EXTRACT_SUFX=		.tgz
