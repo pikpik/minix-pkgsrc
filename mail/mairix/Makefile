@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2005/06/16 06:58:03 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/09/28 20:52:24 rillig Exp $
 #
 
-DISTNAME=		mairix-0.15.1
+DISTNAME=		mairix-0.16.1
 CATEGORIES=		mail
 MASTER_SITES=		http://www.rpcurnow.force9.co.uk/mairix/
 
