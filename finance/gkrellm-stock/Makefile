@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2005/07/21 16:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/08/10 20:56:16 jlam Exp $
 #
 
 DISTNAME=		gkrellstock-0.5.1
 PKGNAME=		gkrellm-stock-0.5.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		finance
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gkrellstock/}
 
@@ -11,7 +11,7 @@ MAINTAINER=		cube@NetBSD.org
 HOMEPAGE=		http://gkrellstock.sourceforge.net/
 COMMENT=		GKrellM2 stock ticker plugin
 
-DEPENDS+=		p5-finance-quote>=1.08:../../finance/p5-finance-quote
+DEPENDS+=		p5-Finance-Quote>=1.08:../../finance/p5-Finance-Quote
 
 USE_TOOLS+=		pkg-config
 WRKSRC=			${WRKDIR}/gkrellStock-0.5.1
