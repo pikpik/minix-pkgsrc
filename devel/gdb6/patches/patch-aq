@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-inftarg_c,v 1.1.1.1 2004/06/01 19:29:30 shannonjr Exp $
 
 --- gdb/inftarg.c.orig	2004-02-04 14:49:55.000000000 -0700
 +++ gdb/inftarg.c

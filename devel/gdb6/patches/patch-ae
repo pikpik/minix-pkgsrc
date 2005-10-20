@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cli_cli_decode_c,v 1.1.1.1 2004/06/01 19:29:30 shannonjr Exp $
 
 --- ./gdb/cli/cli-decode.c.orig	2004-02-10 12:08:15.000000000 -0700
 +++ ./gdb/cli/cli-decode.c
