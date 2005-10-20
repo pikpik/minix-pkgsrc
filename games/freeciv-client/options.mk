@@ -1,7 +1,8 @@
-# $NetBSD: options.mk,v 1.4 2005/06/01 18:02:46 jlam Exp $
+# $NetBSD: options.mk,v 1.1 2005/08/24 10:45:32 adam Exp $
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.freeciv-client
-PKG_SUPPORTED_OPTIONS=	gtk gtk2 xaw xaw3d sdl x11
+PKG_OPTIONS_VAR=		PKG_OPTIONS.freeciv-client
+PKG_OPTIONS_REQUIRED_GROUPS=	backend
+PKG_OPTIONS_GROUP.backend=	gtk gtk2 xaw xaw3d sdl x11
 PKG_SUGGESTED_OPTIONS=	gtk2
 
 .include "../../mk/bsd.options.mk"
