@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2005/05/31 10:01:38 dillo Exp $
+# $NetBSD: Makefile,v 1.26 2005/08/11 00:03:42 jlam Exp $
 
-DISTNAME=	maildrop-1.8.1
+DISTNAME=	maildrop-2.0.1
 PKGBASE=	${DISTNAME:C/-[^-]*$//}
 CATEGORIES=     security
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=courier/}
@@ -10,7 +10,7 @@ MAINTAINER=	jlam@NetBSD.org
 COMMENT=	Courier mail delivery agent with filtering abilities
 HOMEPAGE=	http://www.courier-mta.org/maildrop/
 
-DEPENDS+=	courier-maildir>=0.51.0:../../mail/courier-maildir
+DEPENDS+=	courier-maildir>=0.52.1:../../mail/courier-maildir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
