@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.219 2005/07/22 09:10:23 wiz Exp $
+# $NetBSD: Makefile,v 1.220 2005/10/19 03:39:43 minskim Exp $
 #
 
 COMMENT=	Programming languages
@@ -87,6 +87,7 @@ SUBDIR+=	mercury
 SUBDIR+=	minischeme
 SUBDIR+=	mono
 SUBDIR+=	moscow_ml
+SUBDIR+=	mpd
 SUBDIR+=	mzscheme
 SUBDIR+=	nawk
 SUBDIR+=	nhc98
