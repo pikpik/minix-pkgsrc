@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/10/06 11:51:13 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mldonkey-gui
 PKG_OPTIONS_REQUIRED_GROUPS+=	toolkit
 PKG_OPTIONS_GROUP.toolkit=	lablgtk lablgtk2
 # lablgtk2 GUI segfaults easily
-PKG_SUGGESTED_OPTIONS=	lablgtk
+PKG_SUGGESTED_OPTIONS=	lablgtk2
 
 .include "../../mk/bsd.options.mk"
 
