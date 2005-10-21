@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.310 2005/10/13 20:59:26 agc Exp $
+# $NetBSD: Makefile,v 1.311 2005/10/20 17:46:47 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -247,5 +247,6 @@ SUBDIR+=	xosview
 SUBDIR+=	xps
 SUBDIR+=	xraidadmin
 SUBDIR+=	xuvmstat
+SUBDIR+=	zidrav
 
 .include "../mk/bsd.pkg.subdir.mk"
