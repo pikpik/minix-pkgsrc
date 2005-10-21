@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/exifgrep
+bin/exifprobe
+man/man1/exifgrep.1
+man/man1/exifprobe.1
