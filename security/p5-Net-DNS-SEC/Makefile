@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/07/13 18:01:39 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/06 06:19:30 jlam Exp $
 #
 
 DISTNAME=		Net-DNS-SEC-0.12
@@ -9,7 +9,7 @@ CATEGORIES=		security net perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=		heinz@NetBSD.org
-HOMEPAGE=		http://www.ripe.net/disi/
+HOMEPAGE=		http://www.net-dns.org/
 COMMENT=		DNSSEC extension to Net::DNS Perl DNS Resolver Module
 
 DEPENDS+=		p5-Net-DNS>=0.44:../../net/p5-Net-DNS
