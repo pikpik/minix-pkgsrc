@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2005/10/01 12:52:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2005/10/16 21:51:29 jmmv Exp $
 #
 
-DISTNAME=	pkg-config-0.19
-PKGREVISION=	2
+DISTNAME=	pkg-config-0.20
 CATEGORIES=	devel
 MASTER_SITES=	http://pkgconfig.freedesktop.org/releases/
 
