@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:23 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:46 jlam Exp $
 #
 
 DISTNAME=		gentle-97
@@ -40,4 +40,3 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/examples/README ${PREFIX}/share/examples/gentle
 
 .include "../../mk/bsd.pkg.mk"
-
