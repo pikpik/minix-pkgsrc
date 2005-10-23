@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openoffice-bin
 PKG_SUPPORTED_OPTIONS=	java
