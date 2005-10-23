@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/01/30 23:18:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2005/08/20 19:16:23 jlam Exp $
 #
 # Interix-only "JDK" for pkgsrc, implemented as a script wrapper around the
 # Win32 Sun JDK/JRE.
@@ -42,7 +42,7 @@ do-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/java.sh ${JAVA_HOME}/bin/java
 	${LN} -sf . ${JAVA_HOME}/jre
 .for f in ${JAVA_WRAPPERS:Njava} ${JAVA_EXTRA}
-	${LN} -sf java ${JAVA_HOME}/bin/$f
+	${LN} -sf java ${JAVA_HOME}/bin/${f}
 .endfor
 
 .include "../../mk/java-env.mk"
