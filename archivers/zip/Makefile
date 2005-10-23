@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/08/03 18:54:31 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2005/10/23 18:07:10 rillig Exp $
 
 DISTNAME=	zip231
 PKGNAME=	zip-2.31
@@ -16,11 +16,12 @@ COMMENT=	Create/update ZIP files compatible with pkzip
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 MAKEFILE=	unix/Makefile
-MAKE_FLAGS=	LOCAL_ZIP="${CFLAGS}" LFLAGS1="${_STRIPFLAG_CC}"
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 .include "../../mk/bsd.prefs.mk"
 
+MAKE_FLAGS+=	LOCAL_ZIP=${CFLAGS:Q}
+MAKE_FLAGS+=	LFLAGS1=${_STRIPFLAG_CC:Q}
 .if ${OPSYS} == "NetBSD" && ${MACHINE_ARCH} == "powerpc"
 CFLAGS+=	-O0
 .endif
