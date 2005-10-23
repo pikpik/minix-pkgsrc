@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.258 2005/10/17 08:12:37 wiz Exp $
+# $NetBSD: Makefile,v 1.259 2005/10/23 19:33:49 minskim Exp $
 #
 
 COMMENT=	Games
@@ -7,7 +7,6 @@ SUBDIR+=	0verkill
 SUBDIR+=	InterLOGIC
 SUBDIR+=	KoboDeluxe
 SUBDIR+=	REminiscence
-SUBDIR+=	Teg
 SUBDIR+=	abuse
 SUBDIR+=	adom
 SUBDIR+=	an
@@ -193,6 +192,7 @@ SUBDIR+=	stratagus
 SUBDIR+=	svb
 SUBDIR+=	tads
 SUBDIR+=	tanked
+SUBDIR+=	teg
 SUBDIR+=	tileworld
 SUBDIR+=	tscp
 SUBDIR+=	tuxmath
