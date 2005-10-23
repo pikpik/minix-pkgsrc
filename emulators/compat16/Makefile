@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/23 10:55:28 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/09/28 20:52:20 rillig Exp $
 #
 
 DISTNAME=		compat16-${MACHINE_ARCH}-${VERSION}
@@ -20,14 +20,12 @@ NO_BUILD=		yes
 NO_CONFIGURE=		yes
 SHLIB_HANDLING=		NO
 
-.include "../../mk/bsd.prefs.mk"
-
 EMULSUBDIR=		emul/netbsd16
 
 PLIST_SUBST+=		EMULSUBDIR=${EMULSUBDIR}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${EMULSUBDIR}
-	(cd ${WRKDIR}; pax -rw usr ${PREFIX}/${EMULSUBDIR})
+	(cd ${WRKDIR}; ${PAX} -rw usr ${PREFIX}/${EMULSUBDIR})
 
 .include "../../mk/bsd.pkg.mk"
