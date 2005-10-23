@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/libpython2.3.dylib
 lib/python${PY_VER_SUFFIX}/lib-dynload/audioop.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/imageop.so
