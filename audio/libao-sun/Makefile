@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2005/05/24 15:57:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2005/10/08 12:30:38 jmmv Exp $
 
-.include "../libao/Makefile.common"
+.include "../../audio/libao/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/libao/libao-sun/}
 
