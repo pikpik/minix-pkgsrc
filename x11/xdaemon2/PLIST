@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/05 22:58:04 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:12:03 zuntum Exp $
 bin/xdaemon
 bin/xdaemon2
+share/doc/xdaemon.README
 share/xteddy/xdaemon.png
 share/xteddy/xdaemon2.png
-share/doc/xdaemon.README
