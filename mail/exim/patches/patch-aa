@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Local/Makefile.pkgsrc.orig	2005-08-29 08:16:24.000000000 -0700
 +++ Local/Makefile.pkgsrc	2005-08-29 08:21:51.000000000 -0700
 @@ -100,7 +100,7 @@

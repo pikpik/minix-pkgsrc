@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2005/10/07 10:28:34 abs Exp $
+# $NetBSD: options.mk,v 1.5 2005/10/16 14:10:57 abs Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.exim
 PKG_SUPPORTED_OPTIONS=	exim-build-eximon exim-content-scan exim-lookup-dnsdb
@@ -32,7 +32,7 @@ LOCAL_MAKEFILE_OPTIONS+=LOOKUP_DSEARCH=YES
 .if !empty(PKG_OPTIONS:Mexim-lookup-ldap)
 LOCAL_MAKEFILE_OPTIONS+=LOOKUP_LDAP=YES
 LOCAL_MAKEFILE_OPTIONS+=LDAP_LIB_TYPE=OPENLDAP2
-LOOKUP_LIBS+=${COMPILER_RPATH_FLAG}${LOCALBASE}/${BUILDLINK_LIBDIRS.openldap}  -L${LOCALBASE}/${BUILDLINK_LIBDIRS.openldap} -lldap -llber 
+LOOKUP_LIBS+=${COMPILER_RPATH_FLAG}${LOCALBASE}/${BUILDLINK_LIBDIRS.openldap}  -L${LOCALBASE}/${BUILDLINK_LIBDIRS.openldap} -lldap -llber
 .  include "../../databases/openldap/buildlink3.mk"
 .endif
 
