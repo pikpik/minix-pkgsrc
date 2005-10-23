@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/04/05 09:24:39 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2005/04/11 21:45:28 tv Exp $
 
 DISTNAME=	m4-1.4.3
 CATEGORIES=	devel
@@ -21,7 +21,7 @@ TEST_TARGET=		check
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(GNU_PROGRAM_PREFIX)
-CONFIGURE_ARGS=		--program-prefix=${GNU_PROGRAM_PREFIX}
+CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX}
 .endif
 PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
