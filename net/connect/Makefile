@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:24 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/10/23 14:26:39 rillig Exp $
 
 DISTNAME=	connect
 PKGNAME=	${DISTNAME}-1.83
@@ -14,7 +14,7 @@ EXTRACT_ONLY=	# empty
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 LIBS.Darwin+=	-lresolv
-LIBS.SunOS+=	-lsocket -lnsl
+LIBS.SunOS+=	-lresolv -lsocket -lnsl
 
 INSTALLATION_DIRS=	bin
 
