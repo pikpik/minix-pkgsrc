@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.27 2005/10/16 12:06:05 jdolecek Exp $
+# $NetBSD: Makefile.php,v 1.28 2005/10/19 18:05:06 tv Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--with-exec-dir=${PREFIX}/libexec/php4
 .include "../../mk/bsd.prefs.mk"
 
 # The Solaris system regex structures miss re_magic used by PHP build 
-.if ${OPSYS} != "SunOS"
+.if (${OPSYS} != "SunOS") && (${OPSYS} != "Linux")
 CONFIGURE_ARGS+=	--with-regex=system
 .else
 CONFIGURE_ARGS+=	--with-regex=php
