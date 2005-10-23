@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Completion/Unix/Command/_mt.orig	2005-05-09 23:58:35.000000000 +0200
 +++ Completion/Unix/Command/_mt	2005-05-09 23:57:23.000000000 +0200
 @@ -44,7 +44,7 @@

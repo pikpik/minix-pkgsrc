@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Completion/Unix/Type/_file_systems.orig	2005-05-09 23:58:17.000000000 +0200
 +++ Completion/Unix/Type/_file_systems	2005-05-10 00:00:42.000000000 +0200
 @@ -16,9 +16,9 @@
