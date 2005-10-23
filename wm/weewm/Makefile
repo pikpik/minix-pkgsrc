@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/01 18:03:26 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:39 jlam Exp $
 #
 
 DISTNAME=	weewm-0.0.2
@@ -26,7 +26,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/examples/keys.rc ${EXAMPLESDIR}
 	${INSTALL_DATA_DIR} ${DOCDIR}
 .for f in AUTHORS FAQ README
-	${INSTALL_DATA} ${WRKSRC}/$f ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${DOCDIR}
 .endfor
 
 .include "../../mk/bsd.pkg.mk"
