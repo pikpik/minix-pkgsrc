@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/16 06:58:02 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/16 01:19:13 jlam Exp $
 #
 
 DISTNAME=	mailgraph-1.10
@@ -56,7 +56,7 @@ do-install:
 	${INSTALL_SCRIPT} \
 	    ${WRKSRC}/mailgraph.pl ${PREFIX}/sbin/mailgraph
 .for i in CHANGES COPYING README
-	${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/${DOCDIR}/$i
+	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/${DOCDIR}/${i}
 .endfor
 
 .include "../../mk/bsd.pkg.mk"
