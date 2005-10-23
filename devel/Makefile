@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.680 2005/10/16 04:51:51 minskim Exp $
+# $NetBSD: Makefile,v 1.681 2005/10/22 17:01:20 sommerfeld Exp $
 #
 
 COMMENT=	Development utilities
@@ -368,7 +368,6 @@ SUBDIR+=	p5-ExtUtils-Depends
 SUBDIR+=	p5-ExtUtils-F77
 SUBDIR+=	p5-ExtUtils-PkgConfig
 SUBDIR+=	p5-ExtUtils-XSBuilder
-SUBDIR+=	p5-File-chdir
 SUBDIR+=	p5-File-BaseDir
 SUBDIR+=	p5-File-DirSync
 SUBDIR+=	p5-File-Find-Rule
@@ -380,6 +379,7 @@ SUBDIR+=	p5-File-Slurp
 SUBDIR+=	p5-File-Spec
 SUBDIR+=	p5-File-Temp
 SUBDIR+=	p5-File-Type
+SUBDIR+=	p5-File-chdir
 SUBDIR+=	p5-FileHandle-Unget
 SUBDIR+=	p5-FileKGlob
 SUBDIR+=	p5-FreezeThaw
