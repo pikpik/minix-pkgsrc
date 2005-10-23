@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/02/28 07:28:29 tron Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:45 jlam Exp $
 
 DISTNAME=	cfitsio2500
 PKGNAME=	cfitsio-2.500
@@ -21,7 +21,7 @@ INSTALLATION_DIRS=	include lib
 post-build:
 	cd ${WRKSRC}; \
 	./testprog | diff - testprog.out; \
-	cmp testprog.fit testprog.std
+	${CMP} testprog.fit testprog.std
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/cfitsio
