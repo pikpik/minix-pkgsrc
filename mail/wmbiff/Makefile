@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2005/06/01 18:03:00 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/09/06 15:49:35 adam Exp $
 
 DISTNAME=	wmbiff-0.4.26
 CATEGORIES=	mail x11 windowmaker
-MASTER_SITES=	$(MASTER_SITE_SOURCEFORGE:=wmbiff/)
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wmbiff/}
 
 MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/wmbiff/
