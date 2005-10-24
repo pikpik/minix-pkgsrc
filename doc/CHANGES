@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.11645 2005/10/24 11:40:28 tonio Exp $
+$NetBSD: CHANGES,v 1.11646 2005/10/24 17:02:21 tv Exp $
 
 Changes to the packages collection and infrastructure in 2005:
 
@@ -4823,3 +4823,5 @@ Changes to the packages collection and infrastructure in 2005:
 	Updated math/py-rpy to 0.4.6 [drochner 2005-10-24]
 	Updated converters/wv to 1.0.3nb3 [tonio 2005-10-24]
 	Updated net/entropy to 0.9.1.439 [tv 2005-10-24]
+	Updated multimedia/mplayer to 1.0rc7nb4 [minskim 2005-10-24]
+	Updated multimedia/gmplayer to 1.0rc7nb2 [minskim 2005-10-24]
