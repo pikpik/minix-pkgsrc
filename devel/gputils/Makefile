@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:51 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/29 09:33:26 dogcow Exp $
 
-DISTNAME=	gputils-0.13.2
+DISTNAME=	gputils-0.13.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gputils/}
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	dogcow@NetBSD.org
 HOMEPAGE=       http://gputils.sourceforge.net/
 COMMENT=	collection of tools for Microchip's PIC micro-processors
 
