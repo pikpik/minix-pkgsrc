@@ -1,4 +1,3 @@
-@comment $NetBSD$
-
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/09/29 12:48:51 wulf Exp $
 bin/gattrib
 share/gEDA/system-gattribrc
