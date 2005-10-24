@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2005/08/09 12:26:08 adam Exp $
+# $NetBSD: Makefile,v 1.4 2005/09/08 17:55:46 minskim Exp $
 
-DISTNAME=	libtorrent-0.7.0-1
-PKGNAME=	libtorrent-0.7.0.1
+DISTNAME=	libtorrent-0.7.5
 CATEGORIES=	net
 MASTER_SITES=	http://libtorrent.rakshasa.no/downloads/
 
