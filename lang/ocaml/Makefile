@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/06/14 21:00:41 minskim Exp $
+# $NetBSD: Makefile,v 1.39 2005/10/20 19:32:29 tonio Exp $
 
 .include "Makefile.common"
 
@@ -11,7 +11,8 @@ BUILD_TARGET=		world
 BUILD_TARGET+=	opt opt.opt
 PLIST_SRC=	${PKGDIR}/PLIST.opt
 .  if (${OPSYS} != "Darwin") && \
-      !(${OPSYS} == "SunOS" && ${MACHINE_ARCH} == "i386")
+      !(${OPSYS} == "SunOS" && ${MACHINE_ARCH} == "i386") && \
+      (${MACHINE_ARCH} != "sparc")
 PLIST_SRC+=	${PKGDIR}/PLIST.prof
 .  endif
 PLIST_SRC+=	${PKGDIR}/PLIST
