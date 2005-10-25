@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/06 13:11:09 taca Exp $
+# $NetBSD: Makefile,v 1.3 2005/03/06 17:19:08 taca Exp $
 
 DISTNAME=	borges-0.2.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -10,12 +10,11 @@ MAINTAINER=	rasputin@idoru.mine.nu
 HOMEPAGE=	http://segment7.net/projects/ruby/borges/
 COMMENT=	Ruby web application framework
 
-.include "../../lang/ruby/rubyversion.mk"
-
 DEPENDS+=	ruby16-installpkg>=0.0.1:../../devel/ruby-installpkg
 DEPENDS+=	ruby16-webrick>=1.2.3:../../www/ruby-webrick
 
 RUBY_VERSION=		${RUBY16_VERSION}
+USE_RUBY_DIST_SUBDIR=	yes
 USE_RUBY_INSTALL=	yes
 NO_BUILD=		yes
 BORGES_SHARE_DIR=	data/doc data/examples

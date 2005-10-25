@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:16 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/07/19 10:20:36 grant Exp $
 
 DISTNAME=	vapor-0.81
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=	http://rubyforge.org/frs/download.php/215/
 MAINTAINER=	rasputin@idoru.mine.nu
 HOMEPAGE=	http://vapor.rubyforge.org/
 COMMENT=	Ruby transparent persistence to postgresql
+
+USE_RUBY_DIST_SUBDIR=	yes
 
 .include "../../lang/ruby/rubyversion.mk"
 
