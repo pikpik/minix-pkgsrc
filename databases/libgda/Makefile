@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/03/26 11:16:15 recht Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/18 18:01:48 drochner Exp $
 #
 
 .include "Makefile.common"
+
+PKGREVISION=	1
 
 PKGCONFIG_OVERRIDE=	libgda.pc.in
 
