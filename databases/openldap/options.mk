@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.11 2005/02/09 15:38:03 cube Exp $
+# $NetBSD: options.mk,v 1.12 2005/05/31 10:01:36 dillo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openldap
-PKG_SUPPORTED_OPTIONS=	bdb dynamic kerberos sasl slp
+PKG_SUPPORTED_OPTIONS=	bdb kerberos sasl slp
 PKG_SUGGESTED_OPTIONS=	bdb
 
 .include "../../mk/bsd.options.mk"
@@ -20,28 +20,8 @@ BDB_ACCEPTED=		db4 # db3?
 BDB_TYPE?=		none
 .if ${BDB_TYPE} != "none"
 CONFIGURE_ARGS+=	--enable-bdb --enable-hdb
-.  if !empty(PKG_OPTIONS:Mdynamic)
-CONFIGURE_ARGS+=	--enable-hdb=mod
-.  endif
 .else
 CONFIGURE_ARGS+=	--disable-bdb --disable-hdb
-.endif
-
-###
-### Whether to build with dynamically-loadable backend modules.  If not
-### specified, then link the backend modules statically into slapd.
-###
-.if !empty(PKG_OPTIONS:Mdynamic)
-.  if !empty(PKG_OPTIONS:Mbdb)
-PLIST_SUBST+=		HDB_MODULE=
-.  else
-PLIST_SUBST+=		HDB_MODULE="@comment "
-.  endif
-.  include "../../devel/libltdl/buildlink3.mk"
-CONFIGURE_ARGS+=	--enable-modules
-PLIST_SUBST+=		DYNAMIC_MOD=
-.else
-PLIST_SUBST+=		DYNAMIC_MOD="@comment "
 .endif
 
 ###
