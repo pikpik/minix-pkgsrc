@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/Makefile.in.orig	2005-08-08 15:02:29.000000000 +0000
+--- tools/Makefile.in.orig	2005-10-06 16:10:02.000000000 +0000
 +++ tools/Makefile.in
-@@ -50,16 +50,16 @@ make_ctests$(EXEEXT): make_ctests.o
+@@ -53,16 +53,16 @@ make_ctests$(EXEEXT): make_ctests.o
  	$(CC) $(CFLAGS) -o $@ make_ctests.o
  
  fnt2bdf$(EXEEXT): fnt2bdf.o
