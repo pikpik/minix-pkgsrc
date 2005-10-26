@@ -1,18 +1,20 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: kdc.sh,v 1.2 2004/02/23 12:35:11 wiz Exp $
+# $NetBSD$
 #
-# PROVIDE: kdc
+# PROVIDE: kpasswdd
 # REQUIRE: NETWORKING
 # BEFORE:  SERVERS
 
 . /etc/rc.subr
 
-name="kdc"
+name="kpasswdd"
 rcvar=$name
 command="@PREFIX@/libexec/${name}"
-command_args="--detach"
+command_args="& sleep 2"
 required_files="@PKG_SYSCONFDIR@/krb5.conf"
+required_vars="kdc"
 
 load_rc_config $name
+load_rc_config_var kdc kdc
 run_rc_command "$1"

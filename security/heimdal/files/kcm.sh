@@ -1,14 +1,14 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: kdc.sh,v 1.2 2004/02/23 12:35:11 wiz Exp $
+# $NetBSD$
 #
-# PROVIDE: kdc
+# PROVIDE: kcm
 # REQUIRE: NETWORKING
 # BEFORE:  SERVERS
 
 . /etc/rc.subr
 
-name="kdc"
+name="kcm"
 rcvar=$name
 command="@PREFIX@/libexec/${name}"
 command_args="--detach"
