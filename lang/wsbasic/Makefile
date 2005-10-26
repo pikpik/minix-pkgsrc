@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/19 03:36:03 minskim Exp $
 
-DISTNAME=	wsbasic-1_2_4
+DISTNAME=	wsbasic-1_2_5
 PKGNAME=	${DISTNAME:S/_/./g}
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wsbasic/}
