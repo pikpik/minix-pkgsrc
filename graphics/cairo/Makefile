@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/10/02 10:54:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2005/10/06 18:46:59 drochner Exp $
 
 DISTNAME=	cairo-1.0.2
 CATEGORIES=	graphics
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--enable-ps
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
 .include "../../mk/bsd.prefs.mk"
+
+LIBS.SunOS+=		-lsunmath
 
 .if ${OPSYS} == "Darwin" && exists(/System/Library/Frameworks/Quartz.framework)
 CONFIGURE_ARGS+=	--enable-quartz
