@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:39 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/17 04:49:45 jlam Exp $
 #
 
 DISTNAME=	toolame-02l
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=toolame/}
 EXTRACT_SUFX=	.tgz
