@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.21 2005/09/28 20:52:20 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2005/10/19 12:38:16 adam Exp $
 
 DISTNAME=	slib3a2
 #
 # Convert the version number as follows 2d2 -> 2.4.2, where the d is
 # changed to a 4, representing the 4th letter.
 # Thus, 3a1 -> 3.1.1
+#
+# Also update guile-slib
 #
 PKGNAME=	slib-3.1.2
 CATEGORIES=	devel
