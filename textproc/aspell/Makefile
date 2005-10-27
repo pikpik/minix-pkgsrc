@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/07/15 20:14:03 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2005/09/11 16:29:58 minskim Exp $
 #
 
 DISTNAME=		aspell-0.60.3
@@ -41,12 +41,6 @@ SUBST_SED.bash=		"s!/bin/bash!/bin/sh!"
 NOT_FOR_COMPILER=	xlc
 
 LIBS.SunOS+=		-lm
-
-.include "../../mk/compiler.mk"
-
-.if !empty(PKGSRC_COMPILER:Msunpro)
-LIBS.SunOS+=		-lCrun -lCstd
-.endif
 
 # Create directory for dictionaries.
 post-install:
