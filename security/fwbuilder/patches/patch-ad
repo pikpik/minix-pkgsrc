@@ -1,12 +1,13 @@
 $NetBSD$
 
---- src/gui/FWBTree.cpp.orig	Sun Dec 12 09:38:29 2004
-+++ src/gui/FWBTree.cpp	Thu Feb 24 00:31:41 2005
-@@ -51,6 +51,7 @@
- #include "fwbuilder/IntervalGroup.h"
- 
- #include <iostream>
-+#include <algorithm>
- 
- using namespace std;
- using namespace libfwbuilder;
+--- src/gui/RuleOptionsDialog.cpp.orig	2005-09-13 06:55:41.000000000 +0200
++++ src/gui/RuleOptionsDialog.cpp	2005-10-27 23:16:08.000000000 +0200
+@@ -157,7 +157,7 @@
+     if (platform=="pix" || platform=="fwsm")
+     {
+         string vers="version_"+p->getStr("version");
+-        if ( Resources::platform_res[platform]->getResourceBool(
++        if ( Resources::platform_res[(std::string)platform]->getResourceBool(
+               "/FWBuilderResources/Target/options/"+vers+"/pix_rule_syslog_settings"))
+         {
+             pix_disable_rule_log->setEnabled(true);
