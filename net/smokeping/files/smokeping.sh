@@ -1,13 +1,13 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: smokeping.sh,v 1.1.1.1 2003/03/24 15:24:39 bouyer Exp $
+# $NetBSD: smokeping.sh,v 1.2 2004/06/23 22:25:44 adrianp Exp $
 #
 # PROVIDE: smokeping
 # REQUIRE: DAEMON
 
 name="smokeping"
 command="@PREFIX@/bin/smokeping"
-pidfile="/var/run/${name}.pid"
+pidfile="@VARBASE@/run/${name}.pid"
 
 cmd=${1:-start}
 
