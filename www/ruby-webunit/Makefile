@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/06 17:19:08 taca Exp $
+# $NetBSD: Makefile,v 1.6 2005/10/25 04:15:49 taca Exp $
 
 DISTNAME=	webunit-${VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	www textproc ruby
 MASTER_SITES=	http://www.xpenguin.biz/download/webunit/
 
-MAINTAINER=	rasputin@idoru.mine.nu
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.xpenguin.biz/download/webunit/index-en.html
 COMMENT=	HTTP unit testing framework for Ruby
 
