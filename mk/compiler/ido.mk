@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .if !defined(COMPILER_IDO_MK)
 COMPILER_IDO_MK=	defined
 
