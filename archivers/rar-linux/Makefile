@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2005/05/31 20:48:17 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:37 jlam Exp $
 #
 
-DISTNAME=		rarlinux-3.4.1
+DISTNAME=		rarlinux-3.5.1
 PKGNAME=		${DISTNAME:C/linux/-linux/}
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.rarsoft.com/rar/ \
