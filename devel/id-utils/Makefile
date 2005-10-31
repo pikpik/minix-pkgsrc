@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.37 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	id-utils-3.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=id-utils/}
 
