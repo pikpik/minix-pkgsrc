@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/09 20:26:04 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/11 21:44:58 tv Exp $
 #
 
 DISTNAME=	wmsmixer-0.5.1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.hibernaculum.net/download/
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.hibernaculum.net/wmsmixer.html
 COMMENT=	Another mixer designed for WindowMaker (dockapp)
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 USE_IMAKE=	YES
 USE_LANGUAGES=	c++
@@ -25,4 +27,5 @@ post-install:
 		${PREFIX}/share/doc/wmsmixer/README.wmsmixer
 
 .include "../../graphics/xpm/buildlink3.mk"
+.include "../../mk/ossaudio.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
