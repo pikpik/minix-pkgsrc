@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/07/21 16:29:43 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/08/10 20:56:11 jlam Exp $
 
 DISTNAME=	libcdaudio-0.99.12
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libcdaudio/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://libcdaudio.sourceforge.net/
 COMMENT=	Multi-platform CD player development library
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
