@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/12/30 17:21:55 cjep Exp $
+# $NetBSD: Makefile,v 1.6 2004/02/14 18:42:52 dmcmahill Exp $
 #
 
 DISTNAME=	cascade-1.4
+PKGREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rfcascade/}
 

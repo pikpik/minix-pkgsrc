@@ -1,7 +1,6 @@
 @comment $NetBSD: PLIST,v 1.2 2001/09/06 22:58:37 dmcmahill Exp $
 bin/cascade
 man/man1/cascade.1
-man/cat1/cascade.1
 share/doc/cascade/index.html
 share/doc/cascade/ex1.gif
 share/examples/cascade/README.examples
