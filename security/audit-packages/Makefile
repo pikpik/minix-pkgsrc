@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2005/08/04 12:02:59 rillig Exp $
+# $NetBSD: Makefile,v 1.60 2005/10/20 10:26:54 agc Exp $
 
 DISTNAME=	audit-packages-1.39
 CATEGORIES=	security pkgtools
@@ -17,6 +17,7 @@ BUILD_DEFS+=	PKGVULNDIR
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=    yes
 
+OWN_DIRS=	${PKGVULNDIR}
 INSTALLATION_DIRS=	man/cat8 man/man8 sbin
 
 .include "../../mk/bsd.prefs.mk"
