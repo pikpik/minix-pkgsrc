@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- malloc.c.orig	2002-03-02 07:15:03.000000000 -0500
++++ malloc.c
+@@ -45,6 +45,7 @@
+ #include <sys/types.h>
+ #include <unistd.h>
+ #include <errno.h>
++#include <stdlib.h>
+ #else	/* !POSIX_1 */
+ #include <sys/types.h>
+ extern int errno;
