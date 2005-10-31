@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:31:39 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/05/31 16:47:48 minskim Exp $
 #
 
 DISTNAME=	libscsi-1.6
@@ -7,6 +7,8 @@ MASTER_SITES=	ftp://ftp.emsi.priv.at/pub/netbsd/contrib/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	FreeBSD SCSI user library
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
