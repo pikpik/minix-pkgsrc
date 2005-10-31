@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/02/15 20:54:37 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/05/25 11:50:20 wiz Exp $
 #
 
 DISTNAME=		rcs-5.7
@@ -18,6 +18,7 @@ CONFIGURE_ARGS+=	--with-diffutils=gdiff
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		PATH=${LOCALBASE}/bin:$$PATH
+CONFIGURE_HAS_MANDIR=	no
 
 post-install:
 	${RM} -f ${PREFIX}/bin/rcslog
