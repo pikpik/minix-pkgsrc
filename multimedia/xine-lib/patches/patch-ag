@@ -1,4 +1,4 @@
-$NetBSD: patch-ag,v 1.9 2005/10/10 22:51:04 joerg Exp $
+$NetBSD: patch-ag,v 1.10 2005/10/13 10:48:01 jmmv Exp $
 
 --- configure.ac.orig	2005-10-08 16:08:37.000000000 +0200
 +++ configure.ac
@@ -7,7 +7,7 @@ $NetBSD: patch-ag,v 1.9 2005/10/10 22:51:04 joerg Exp $
  
  case "$host" in
 -  *-*-freebsd*)
-+  *-*-freebsd* | -*-*-dragonfly*)
++  *-*-freebsd* | *-*-dragonfly*)
      if test x"$pthread_prefix" = "xno"; then
        pthread_prefix="/usr/local"
      fi
