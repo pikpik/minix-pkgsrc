@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/xine/plugins/1.0.3/xineplug_ao_out_oss.so
+lib/xine/plugins/1.0.3/xineplug_ao_out_oss.a
