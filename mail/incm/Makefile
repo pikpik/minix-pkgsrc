@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/15 13:48:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:58:02 jlam Exp $
 #
 
 DISTNAME=	incm-0.5
@@ -17,5 +17,11 @@ INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/incm ${PREFIX}/bin/
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Interix"
+.  include "../../pkgtools/libnbcompat/buildlink3.mk" # for utimes()
+.endif
 
 .include "../../mk/bsd.pkg.mk"
