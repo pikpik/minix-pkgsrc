@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:26 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/17 03:50:29 jlam Exp $
 #
 
 DISTNAME=		vpnc-0.3.2
@@ -8,6 +8,8 @@ MASTER_SITES=		http://www.unix-ag.uni-kl.de/~massar/vpnc/
 MAINTAINER=		hubertf@NetBSD.org
 HOMEPAGE=		http://www.unix-ag.uni-kl.de/~massar/vpnc/
 COMMENT=		Client for Cisco3000 VPN Concentrator
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 USE_TOOLS+=		gmake
 BUILD_TARGET=		vpnc
