@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/02/19 03:49:09 jschauma Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:34 jlam Exp $
 #
 
 DISTNAME=		news-0.2
@@ -14,5 +14,11 @@ INSTALLATION_DIRS=	bin man/man1
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/news ${PREFIX}/bin/
 	${INSTALL_MAN} ${WRKSRC}/news.1 ${PREFIX}/man/man1/
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Interix"
+.  include "../../pkgtools/libnbcompat/buildlink3.mk"
+.endif
 
 .include "../../mk/bsd.pkg.mk"
