@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2005/06/12 13:03:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.114 2005/07/14 23:11:10 adrianp Exp $
 #
 
 COMMENT=	Communication programs
@@ -25,6 +25,7 @@ SUBDIR+=	fisg
 SUBDIR+=	fugu
 SUBDIR+=	gaim
 SUBDIR+=	gaim-encryption
+SUBDIR+=	gaim-icb
 SUBDIR+=	gaim-otr
 SUBDIR+=	gale
 SUBDIR+=	gg2
