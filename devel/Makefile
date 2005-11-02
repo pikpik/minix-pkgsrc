@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.684 2005/10/30 21:04:13 agc Exp $
+# $NetBSD: Makefile,v 1.685 2005/10/31 15:53:54 tv Exp $
 #
 
 COMMENT=	Development utilities
@@ -569,7 +569,6 @@ SUBDIR+=	ruby-subversion
 SUBDIR+=	ruby-testunit
 SUBDIR+=	ruby-textbuf
 SUBDIR+=	ruby-unit
-SUBDIR+=	ruby-zlib
 SUBDIR+=	ruby16-curses
 SUBDIR+=	ruby16-racc
 SUBDIR+=	ruby16-zlib
