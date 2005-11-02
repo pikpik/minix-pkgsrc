@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/06 17:19:05 taca Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:15 tv Exp $
 
 DISTNAME=	ruby-dbi-all-${RUBY_DBI_VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-DBD-sqlite-${RUBY_DBI_VERSION}
@@ -14,11 +14,11 @@ DISTINFO_FILE=  	${.CURDIR}/../ruby-DBI/distinfo
 PATCHDIR=		${.CURDIR}/../ruby-DBI/patches
 RUBY_HAS_ARCHLIB=	yes
 USE_RUBY_SETUP=		yes
-CONFIGURE_ARGS=		--with=dbd_sqlite
+CONFIGURE_ARGS+=	--with=dbd_sqlite
 
 DEPENDS+= ${RUBY_PKGPREFIX}-DBI>=${RUBY_DBI_VERSION}:../../databases/ruby-DBI
 
-.include "../ruby-DBI/Makefile.common"
+.include "../../databases/ruby-DBI/Makefile.common"
 .include "../../lang/ruby/modules.mk"
 .include "../../databases/sqlite/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
