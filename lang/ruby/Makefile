@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.36 2005/06/17 04:49:47 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/07/19 10:02:11 grant Exp $
 
 DISTNAME=	ruby-${RUBY_VERSION}
-PKGREVISION=	2
 CATEGORIES=	lang ruby
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -10,10 +9,10 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.ruby-lang.org/en/
 COMMENT=	Wrapper package for Ruby programming language
 
+CONFLICTS=	pkg_alternatives-[0-9]*
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_WRAPPER=	yes
 PLIST_SRC=	${WRKDIR}/PLIST
 
 .include "../../lang/ruby/rubyversion.mk"
