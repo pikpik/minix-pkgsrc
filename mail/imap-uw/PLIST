@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2004/09/22 07:38:52 jlam Exp $
+@comment $NetBSD$
 bin/dmail
 bin/mailutil
 bin/mlock
@@ -26,6 +26,10 @@ include/c-client/tcp.h
 include/c-client/utf8.h
 lib/libc-client.la
 lib/libc-client_pic.a
+lib/libimapuw.a
+lib/libimapuw.so
+lib/libimapuw.so.4
+lib/libimapuw.so.4.0.2
 libexec/imapd
 libexec/ipop2d
 libexec/ipop3d
