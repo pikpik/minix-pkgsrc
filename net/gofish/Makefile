@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/26 03:42:21 minskim Exp $
 
-DISTNAME=		gofish-1.0
+DISTNAME=		gofish-1.1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gofish/}
 
