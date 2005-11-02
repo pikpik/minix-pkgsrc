@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- lib/rdoc/markup/simple_markup.rb.orig	2004-04-24 10:39:45.000000000 +0900
++++ lib/rdoc/markup/simple_markup.rb
+@@ -194,8 +194,7 @@ module SM  #:nodoc:
+     LABEL_LIST_RE = /^(
+                         (  \[.*?\]    (?# labeled  )
+                           |\S.*::     (?# note     )
+-                        )(?=\s|$)
+-                        \s*
++                        )(?:\s+|$)
+                       )/x
+ 
+ 

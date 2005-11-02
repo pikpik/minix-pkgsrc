@@ -1,0 +1,11 @@
+# $NetBSD$
+
+RUBY_SITERIDIR="@RUBY_SITERIDIR@"
+rid="${RUBY_SITERIDIR}/created.rid"
+
+case ${STAGE} in
+DEINSTALL)
+	rm -f ${rid}
+	;;
+esac
+exit
