@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.220 2005/10/19 03:39:43 minskim Exp $
+# $NetBSD: Makefile,v 1.221 2005/10/20 17:47:11 wiz Exp $
 #
 
 COMMENT=	Programming languages
@@ -132,8 +132,8 @@ SUBDIR+=	rexx-imc
 SUBDIR+=	rexx-regina
 SUBDIR+=	ruby
 SUBDIR+=	ruby-doc-stdlib
-SUBDIR+=	ruby16
-SUBDIR+=	ruby16-base
+#SUBDIR+=	ruby16
+#SUBDIR+=	ruby16-base
 SUBDIR+=	ruby18
 SUBDIR+=	ruby18-base
 SUBDIR+=	sablevm

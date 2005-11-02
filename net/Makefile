@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.583 2005/10/29 01:07:03 minskim Exp $
+# $NetBSD: Makefile,v 1.584 2005/10/29 17:00:52 minskim Exp $
 #
 
 COMMENT=	Networking tools
@@ -345,9 +345,9 @@ SUBDIR+=	rp-l2tp
 SUBDIR+=	rp-pppoe
 SUBDIR+=	rsync
 SUBDIR+=	rtorrent
-SUBDIR+=	ruby-drb
+#SUBDIR+=	ruby-drb
 SUBDIR+=	ruby-icmp
-SUBDIR+=	ruby-xmlrpc4r
+#SUBDIR+=	ruby-xmlrpc4r
 SUBDIR+=	samba
 SUBDIR+=	scamper
 SUBDIR+=	scapy
