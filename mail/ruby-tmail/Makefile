@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/03/24 21:12:56 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/02 08:35:55 taca Exp $
 
 DISTNAME=	tmail-0.10.8
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	mail ruby
 MASTER_SITES=	http://i.loveruby.net/archive/tmail/
 
