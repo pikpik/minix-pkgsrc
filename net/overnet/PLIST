@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/12/19 11:14:51 minskim Exp $
-bin/overnetclc
-share/doc/overnetclc/ChangeLog
-share/doc/overnetclc/LISEZMOI
-share/doc/overnetclc/README
-share/overnetclc/contact.dat

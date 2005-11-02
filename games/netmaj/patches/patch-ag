@@ -1,8 +1,0 @@
-$NetBSD$
-
---- server_kill.c.orig	Sat Aug 31 17:14:38 1996
-+++ server_kill.c
-@@ -23,2 +23,3 @@
- 
-+#include <unistd.h>
- #include "pai.h"

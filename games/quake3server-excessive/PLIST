@@ -1,8 +1,0 @@
-@comment $NetBSD$
-lib/lokigames/quake3server/excessive/description.pk3
-lib/lokigames/quake3server/excessive/maplist.cfg
-lib/lokigames/quake3server/excessive/motd.cfg
-lib/lokigames/quake3server/excessive/readme.txt
-lib/lokigames/quake3server/excessive/vm/qagame.qvm
-@dirrm lib/lokigames/quake3server/excessive/vm
-@dirrm lib/lokigames/quake3server/excessive

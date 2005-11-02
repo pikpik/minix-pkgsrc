@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/vanessa_logger_sample
-include/vanessa_logger.h
-lib/libvanessa_logger.la
-man/man1/vanessa_logger_sample.1

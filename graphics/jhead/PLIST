@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:51:39 zuntum Exp $
-bin/jhead
-man/man1/jhead.1
-share/doc/html/jhead/usage.html
-@dirrm share/doc/html/jhead

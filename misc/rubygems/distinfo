@@ -1,5 +1,0 @@
-$NetBSD: distinfo,v 1.1.1.1 2005/04/10 01:01:33 minskim Exp $
-
-SHA1 (ruby/rubygems-0.8.11.tgz) = 6a7d047349a073f24621e589f50a6a6548f943be
-RMD160 (ruby/rubygems-0.8.11.tgz) = 381ef7f088b3b439f28797d6d7a3257b3e28d6e4
-Size (ruby/rubygems-0.8.11.tgz) = 160265 bytes

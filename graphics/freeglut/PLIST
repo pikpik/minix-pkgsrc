@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/05/13 12:59:37 wiz Exp $
-include/GL/freeglut.h
-include/GL/freeglut_ext.h
-include/GL/freeglut_std.h
-lib/libfreeglut.la
-@unexec ${RMDIR} %D/include/GL >/dev/null 2>&1 || ${TRUE}

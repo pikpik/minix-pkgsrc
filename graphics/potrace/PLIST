@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/potrace
-bin/mkbitmap
-man/man1/potrace.1
-man/man1/mkbitmap.1

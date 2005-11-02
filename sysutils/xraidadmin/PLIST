@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/30 17:30:39 jschauma Exp $
-bin/xraidadmin
-libexec/xraidadmin/RAID_Admin.jar
-@dirrm libexec/xraidadmin

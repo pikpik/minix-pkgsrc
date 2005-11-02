@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/tkpasman
-share/doc/tkpasman/README
-@dirrm share/doc/tkpasman

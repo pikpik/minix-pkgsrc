@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/aspell/uk.multi
-lib/aspell/uk.rws
-lib/aspell/ukrainian.alias
-share/aspell/uk.dat

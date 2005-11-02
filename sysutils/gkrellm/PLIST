@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.10 2005/07/06 17:00:12 cube Exp $
-bin/gkrellm
-include/gkrellm2/gkrellm.h
-include/gkrellm2/gkrellm-public-proto.h
-lib/pkgconfig/gkrellm.pc
-man/man1/gkrellm.1

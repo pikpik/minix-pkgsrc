@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.3 2005/05/25 11:37:56 wiz Exp $
-include/sysexits.h

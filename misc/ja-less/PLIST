@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/jless
-bin/jlesskey
-bin/jlessecho
-man/man1/jless.1
-man/man1/jlesskey.1

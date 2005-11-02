@@ -1,6 +1,0 @@
-$NetBSD$
-
---- malloc.h.orig	Sun May 23 17:14:14 2004
-+++ malloc.h
-@@ -0,0 +1 @@
-+#include <stdlib.h>

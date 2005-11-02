@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/nbtscan
-share/doc/nbtscan/README
-@dirrm share/doc/nbtscan

@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/hydan
-bin/hydan-decode
-bin/hydan-stats
-share/hydan/README.details
-share/hydan/README
-@dirrm share/hydan

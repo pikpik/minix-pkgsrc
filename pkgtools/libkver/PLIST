@@ -1,8 +1,0 @@
-@comment $NetBSD$
-lib/libkver.a
-lib/libkver.so
-lib/libkver.so.1
-lib/libkver.so.1.0
-man/cat3/kver.0
-man/man3/kver.3
-${HAS_SYSCTL}sbin/sysctl

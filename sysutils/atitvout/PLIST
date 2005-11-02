@@ -1,5 +1,0 @@
-@comment $NetBSD$
-sbin/atitvout
-share/doc/atitvout/README
-share/doc/atitvout/test.sh
-@dirrm share/doc/atitvout

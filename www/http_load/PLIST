@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/http_load
-man/man1/http_load.1

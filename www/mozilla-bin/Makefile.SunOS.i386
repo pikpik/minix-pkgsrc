@@ -1,6 +1,0 @@
-# $NetBSD: Makefile.SunOS.i386,v 1.2 2004/01/04 05:01:02 grant Exp $
-
-DISTNAME=	mozilla-i386-pc-solaris2.8_${MOZ_VER}
-EXTRACT_SUFX=	.tar.bz2
-
-MOZ_PLATFORM=	solaris

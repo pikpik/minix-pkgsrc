@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.3 2002/12/22 17:30:09 wiz Exp $
-bin/${GNU_PROGRAM_PREFIX}patch
-${PATCH_LINK}bin/gpatch
-man/man1/${GNU_PROGRAM_PREFIX}patch.1

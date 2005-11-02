@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2003/03/02 20:21:37 jschauma Exp $
-bin/root-tail
-${IMAKE_MAN_DIR}/root-tail.${IMAKE_MANNEWSUFFIX}

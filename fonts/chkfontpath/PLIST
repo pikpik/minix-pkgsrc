@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/chkfontpath
-man/man8/chkfontpath.8

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/mairix
-share/doc/html/mairix/mairix.html
-@dirrm share/doc/html/mairix

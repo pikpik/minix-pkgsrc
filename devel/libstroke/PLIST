@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/06/03 16:21:14 minskim Exp $
-include/stroke.h
-lib/libstroke.la
-share/aclocal/libgstroke.m4
-share/aclocal/libstroke.m4

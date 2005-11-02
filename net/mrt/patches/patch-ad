@@ -1,9 +1,0 @@
-$NetBSD$
---- include/igmp.h.orig	Tue Aug 15 20:44:22 2000
-+++ include/igmp.h	Tue Aug 15 20:44:47 2000
-@@ -48,3 +48,5 @@
- #ifdef WIDE_IPV6
-+#ifdef HAVE_MROUTING6
- #include <netinet6/ip6_mroute.h>
-+#endif /* HAVE_MROUTING6 */
- #endif /* WIDE_IPV6 */

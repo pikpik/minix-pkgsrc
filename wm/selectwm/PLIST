@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/selectwm
-man/man1/selectwm.1
-${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/selectwm.mo

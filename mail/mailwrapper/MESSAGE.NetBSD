@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD: MESSAGE.NetBSD,v 1.1 2003/08/16 06:48:18 reed Exp $
-
-This package *must* be deinstalled before you upgrade your NetBSD
-installation.
-
-===========================================================================

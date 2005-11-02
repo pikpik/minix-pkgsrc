@@ -1,8 +1,0 @@
-@comment $NetBSD$
-include/libelf/elf_repl.h
-include/libelf/gelf.h
-include/libelf/libelf.h
-include/libelf/nlist.h
-include/libelf/sys_elf.h
-lib/libelf.a
-@dirrm include/libelf

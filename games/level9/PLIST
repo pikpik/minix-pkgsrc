@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/level9
-share/doc/level9/level9.txt
-@dirrm share/doc/level9

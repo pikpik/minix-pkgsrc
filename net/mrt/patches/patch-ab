@@ -1,8 +1,0 @@
-$NetBSD$
---- configure.in-	Tue Aug 15 21:21:22 2000
-+++ configure.in	Tue Aug 15 21:21:39 2000
-@@ -557,3 +557,3 @@
- #endif
--], [  	    LIBS="$LIBS -L/usr/local/v6/lib -linet6"
-+], [#  	    LIBS="$LIBS -L/usr/local/v6/lib -linet6"
-             AC_DEFINE(WIDE_IPV6)

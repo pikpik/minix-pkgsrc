@@ -1,5 +1,0 @@
-@comment $NetBSD$
-share/doc/edict/edict_doc.txt
-share/edict/edict
-@dirrm share/edict
-@dirrm share/doc/edict

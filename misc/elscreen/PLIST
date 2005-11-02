@@ -1,3 +1,0 @@
-@comment $NetBSD$
-${EMACS_LISPPREFIX}/elscreen/elscreen.el
-@dirrm ${EMACS_LISPPREFIX}/elscreen

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/wmsmixer
-share/examples/wmsmixer/home.wmsmixer
-share/doc/wmsmixer/README.wmsmixer
-@dirrm share/examples/wmsmixer
-@dirrm share/doc/wmsmixer

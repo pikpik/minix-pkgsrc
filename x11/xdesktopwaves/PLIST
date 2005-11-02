@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/xdesktopwaves
-man/man1/xdesktopwaves.1
-share/doc/xdesktopwaves/README
-share/pixmaps/xdesktopwaves.xpm
-@comment in xdg-dirs: @dirrm share/pixmaps
-@dirrm share/doc/xdesktopwaves

@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-You will need to customize your .emacs.el (or default.el) file to
-autoload Python mode for Emacs. For example:
-
-(autoload 'python-mode "python-mode" "Mode for editing Python scripts" t)
-
-===========================================================================

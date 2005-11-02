@@ -1,6 +1,0 @@
-@comment $NetBSD$
-lib/aspell/el.multi
-lib/aspell/el.rws
-lib/aspell/greek.alias
-share/aspell/el.dat
-share/aspell/el_phonet.dat

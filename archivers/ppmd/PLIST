@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/ppmd
-share/doc/ppmd/read_me.txt
-@dirrm share/doc/ppmd

@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2003/02/25 02:22:29 jschauma Exp $
-bin/xmmix
-lib/X11/app-defaults/XMmix
-lib/X11/xmmix.hlp
-${IMAKE_MAN_DIR}/xmmix.${IMAKE_MANNEWSUFFIX}

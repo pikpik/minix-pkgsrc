@@ -1,4 +1,0 @@
-@comment $NetBSD$
-share/Module-Signature/AUTRIJUS.pub
-share/Module-Signature/PAUSE2003.pub
-@dirrm share/Module-Signature

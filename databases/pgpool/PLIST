@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/pgpool
-share/examples/pgpool.conf.sample

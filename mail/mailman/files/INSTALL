@@ -1,8 +1,0 @@
-# $NetBSD$
-
-case ${STAGE} in
-POST-INSTALL)
-    # Fix file permissions
-    ${PKG_PREFIX}/lib/mailman/bin/check_perms -f
-    ;;
-esac

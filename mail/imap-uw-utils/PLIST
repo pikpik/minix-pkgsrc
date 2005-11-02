@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:00:14 zuntum Exp $
-bin/icat
-bin/ifrom
-man/man1/icat.1
-man/man1/ifrom.1

@@ -1,9 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/12/02 04:08:18 jlam Exp $
-man/man5/proxsmtpd.conf.5
-man/man8/proxsmtpd.8
-sbin/proxsmtpd
-share/examples/proxsmtp/add_header.sh
-share/examples/proxsmtp/proxsmtpd.conf
-share/examples/proxsmtp/spamassassin.sh
-share/examples/rc.d/proxsmtpd
-@dirrm share/examples/proxsmtp

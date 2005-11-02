@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2004/03/20 23:36:33 minskim Exp $
-lib/tcl8.4/pdflib/pdflib_tcl.la
-lib/tcl8.4/pdflib/pkgIndex.tcl
-@dirrm lib/tcl8.4/pdflib

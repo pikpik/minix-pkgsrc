@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/i2cb
-libdata/i2cb/bartender
-libdata/i2cb/confuse
-libdata/i2cb/echofile
-libdata/i2cb/sample.i2cbrc
-libdata/i2cbserverdb
-@dirrm libdata/i2cb

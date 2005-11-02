@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/bsdiff
-bin/bspatch
-man/man1/bsdiff.1
-man/man1/bspatch.1

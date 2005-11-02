@@ -1,8 +1,0 @@
-/* $NetBSD$ */
-
-#define ProjectRoot @PREFIX@
-
-#define BuildFonts YES
-#define HasPerl NO
-#define MakeCmd @MAKE@
-#define ImakeCmd @IMAKE@

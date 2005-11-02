@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/pkgdepgraph
-man/cat1/pkgdepgraph.0
-man/man1/pkgdepgraph.1

@@ -1,3 +1,0 @@
-@comment $NetBSD$
-include/vanessa_adt.h
-lib/libvanessa_adt.la

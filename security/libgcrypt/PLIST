@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.6 2004/05/22 10:07:48 adam Exp $
-bin/libgcrypt-config
-include/gcrypt-module.h
-include/gcrypt.h
-lib/libgcrypt.la
-share/aclocal/libgcrypt.m4

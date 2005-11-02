@@ -1,8 +1,0 @@
-@comment $NetBSD: PLIST-egcs,v 1.1 1999/01/04 22:37:30 tv Exp $
-${TARGET_ARCH}/bin/f77
-${TARGET_ARCH}/bin/fort77
-${TARGET_ARCH}/bin/g77
-bin/${TARGET_ARCH}-f77
-bin/${TARGET_ARCH}-fort77
-bin/${TARGET_ARCH}-g77
-lib/gcc-lib/${TARGET_ARCH}/${EGCS_INTVERSION}/f771

@@ -1,9 +1,0 @@
-#!/bin/sh
-# $NetBSD$
-
-if ! [ -d ${HOME}/.blender ]; then
-	echo Softlinking ${HOME}/.blender to point to global __PREFIX__/share/blender settings.
-	ln -s __PREFIX__/share/blender ${HOME}/.blender
-fi
-
-exec __PREFIX__/bin/blender-bin "$@"

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/xmftp
-share/doc/xmftp/BUGS
-share/doc/xmftp/CHANGES
-share/doc/xmftp/FAQ
-@dirrm share/doc/xmftp

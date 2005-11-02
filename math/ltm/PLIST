@@ -1,7 +1,0 @@
-@comment $NetBSD$
-include/tommath.h
-lib/libtommath.a
-share/doc/ltm/bn.pdf
-share/doc/ltm/poster.pdf
-share/doc/ltm/tommath.pdf
-@dirrm share/doc/ltm

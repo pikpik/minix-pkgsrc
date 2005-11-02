@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:27:01 zuntum Exp $
-bin/tcsh
-man/man1/tcsh.1

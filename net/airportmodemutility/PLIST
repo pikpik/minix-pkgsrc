@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/airportmodemutility
-lib/airportmodemutility/AirportModemUtility.jar
-share/doc/airportmodemutility/AUTHORS
-share/doc/airportmodemutility/COPYING
-share/doc/airportmodemutility/README
-@dirrm share/doc/airportmodemutility
-@dirrm lib/airportmodemutility

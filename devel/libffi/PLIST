@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/07/18 12:39:40 agc Exp $
-include/ffi.h
-include/ffi_mips.h
-include/fficonfig.h
-lib/libffi.la

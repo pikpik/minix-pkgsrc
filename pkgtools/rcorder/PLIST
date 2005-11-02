@@ -1,4 +1,0 @@
-@comment $NetBSD$
-sbin/rcorder
-man/cat8/rcorder.0
-man/man8/rcorder.8

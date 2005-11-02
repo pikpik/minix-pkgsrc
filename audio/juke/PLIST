@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/juke
-man/man1/juke.1
-share/doc/juke/MANUAL
-share/examples/juke/juke.conf.default
-@dirrm share/examples/juke
-@dirrm share/doc/juke

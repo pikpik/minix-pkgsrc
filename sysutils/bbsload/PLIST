@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2002/12/09 16:01:43 tron Exp $
-bin/bbsload
-man/man1/bbsload.1
-share/bbtools/README.bbsload
-share/bbtools/bbsload.bb
-share/bbtools/bbsload.nobb
-@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || ${TRUE}

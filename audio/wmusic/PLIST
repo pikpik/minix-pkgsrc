@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/wmusic
-share/doc/wmusic/COPYING
-share/doc/wmusic/README
-@dirrm share/doc/wmusic

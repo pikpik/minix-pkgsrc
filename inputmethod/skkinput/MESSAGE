@@ -1,8 +1,0 @@
-===========================================================================
-$NetBSD: MESSAGE,v 1.2 2002/09/24 12:30:21 wiz Exp $
-
-You can use either a stand-alone SKK dictionary file or Skkserv for
-Skkinput.  If you want to use Skkserv, install the inputmethod/skkserv
-package.
-
-===========================================================================

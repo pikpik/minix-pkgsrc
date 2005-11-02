@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/09/20 23:24:58 wiz Exp $
-include/ntlm.h
-lib/libntlm.la
-lib/pkgconfig/libntlm.pc

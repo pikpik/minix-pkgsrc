@@ -1,7 +1,0 @@
-@comment $NetBSD$
-lib/aspell/br.multi
-lib/aspell/br.rws
-lib/aspell/breton.alias
-lib/aspell/brezhoneg.alias
-share/aspell/br.dat
-share/aspell/br_phonet.dat

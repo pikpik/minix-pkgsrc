@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2002/12/19 13:57:38 grant Exp $
-bin/xmountains
-${IMAKE_MAN_DIR}/xmountains.${IMAKE_MANNEWSUFFIX}

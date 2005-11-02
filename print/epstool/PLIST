@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/epstool
-man/man1/epstool.1
-share/doc/epstool/LICENCE
-share/doc/epstool/epstool.htm
-@dirrm share/doc/epstool

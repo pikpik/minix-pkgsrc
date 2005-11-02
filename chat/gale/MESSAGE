@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD: MESSAGE,v 1.2 2001/11/19 21:05:55 jlam Exp $
-
-Please run ${PREFIX}/bin/gale-install as the ``root'' user, even if you
-are upgrading a previous gale installation.
-
-===========================================================================

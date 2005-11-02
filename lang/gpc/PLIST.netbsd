@@ -1,6 +1,0 @@
-@comment $NetBSD$
-lib/gcc-lib/${MACHINE_GNU_PLATFORM}/2.95.3/specs
-@dirrm lib/gcc-lib/${MACHINE_GNU_PLATFORM}/2.95.3/include
-@dirrm lib/gcc-lib/${MACHINE_GNU_PLATFORM}/2.95.3
-@dirrm lib/gcc-lib/${MACHINE_GNU_PLATFORM}
-@dirrm lib/gcc-lib

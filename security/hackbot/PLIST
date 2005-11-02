@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/hackbot.pl
-man/man1/hackbot.1.gz
-share/hackbot/cgi.db
-share/hackbot/fingerprint.db
-@dirrm share/hackbot

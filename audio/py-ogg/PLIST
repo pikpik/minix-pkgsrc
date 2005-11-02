@@ -1,8 +1,0 @@
-@comment $NetBSD$
-${PYINC}/pyogg/pyogg.h
-${PYSITELIB}/ogg/__init__.py
-${PYSITELIB}/ogg/__init__.pyc
-${PYSITELIB}/ogg/__init__.pyo
-${PYSITELIB}/ogg/_ogg.so
-@dirrm ${PYSITELIB}/ogg
-@dirrm ${PYINC}/pyogg

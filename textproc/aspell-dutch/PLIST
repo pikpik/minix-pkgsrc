@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/aspell/dutch.alias
-lib/aspell/nl.multi
-lib/aspell/nl.rws
-share/aspell/nl.dat

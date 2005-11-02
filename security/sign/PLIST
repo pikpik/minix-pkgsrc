@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/sign
-bin/unsign
-man/man1/sign.1

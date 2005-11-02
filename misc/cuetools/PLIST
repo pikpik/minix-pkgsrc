@@ -1,9 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/05/07 11:27:16 jmmv Exp $
-bin/cuebreakpoints
-bin/cueconvert
-bin/cueprint
-man/man1/cuebreakpoints.1
-man/man1/cueconvert.1
-man/man1/cueprint.1
-share/doc/cuetools/formats.txt
-@dirrm share/doc/cuetools

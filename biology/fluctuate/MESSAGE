@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD: $
-
-In order to run the fluctuate example, you should create a directory for
-example files and then copy ${PREFIX}/share/examples/fluctuate/{bestree,
-infile,outfile} to there.  After that, you can simply run 'fluctuate' from
-that directory.
-
-===========================================================================

@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.5 2004/01/20 18:45:24 seb Exp $
-include/gdbm.h
-lib/libgdbm.la
-man/man3/gdbm.3

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/dmassage
-share/doc/dmassage/README
-@dirrm share/doc/dmassage

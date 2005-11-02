@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/pxinfo
-bin/pxsqldump
-bin/pxcsvdump
-bin/pxxmldump
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/pxtools.mo

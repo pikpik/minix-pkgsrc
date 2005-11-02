@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xchrono
-share/doc/xchrono/README
-@dirrm share/doc/xchrono

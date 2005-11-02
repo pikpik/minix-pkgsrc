@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/bg5ps
-bin/ttf2psm
-etc/bg5ps/bg5ps.conf
-@dirrm etc/bg5ps

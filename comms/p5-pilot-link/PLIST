@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:44:28 zuntum Exp $
-bin/ietf2datebook
-bin/pilot-undelete
-bin/sync-plan

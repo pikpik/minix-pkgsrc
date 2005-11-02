@@ -1,3 +1,0 @@
-@comment $NetBSD$
-man/man8/iftop.8
-sbin/iftop

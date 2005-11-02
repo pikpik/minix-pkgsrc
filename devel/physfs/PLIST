@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/09/21 00:30:59 wiz Exp $
-bin/test_physfs
-include/physfs.h
-lib/libphysfs.la

@@ -1,6 +1,0 @@
-$NetBSD$
-
---- include/malloc.h.orig	Wed Apr 28 08:36:32 2004
-+++ include/malloc.h
-@@ -0,0 +1 @@
-+#include <stdlib.h>

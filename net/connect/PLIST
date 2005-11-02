@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/connect
-share/doc/connect/README
-@dirrm share/doc/connect

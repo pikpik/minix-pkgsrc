@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/goto
-bin/if
-bin/osh
-man/man1/goto.1
-man/man1/if.1
-man/man1/osh.1

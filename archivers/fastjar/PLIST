@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:24:20 zuntum Exp $
-bin/fastjar
-bin/grepjar
-man/man1/fastjar.1
-man/man1/grepjar.1

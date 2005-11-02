@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/jdisdvi
-bin/jdvi2tty
-man/man1/jdvi2tty.1

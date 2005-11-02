@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2003/03/03 02:45:52 jschauma Exp $
-bin/wmnet
-${IMAKE_MAN_DIR}/wmnet.${IMAKE_MANNEWSUFFIX}

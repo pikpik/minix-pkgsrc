@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/gromit
-share/doc/gromit/README
-@dirrm share/doc/gromit

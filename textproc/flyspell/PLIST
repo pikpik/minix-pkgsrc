@@ -1,3 +1,0 @@
-@comment $NetBSD$
-${EMACS_LISPPREFIX}/flyspell/flyspell.el
-@dirrm ${EMACS_LISPPREFIX}/flyspell

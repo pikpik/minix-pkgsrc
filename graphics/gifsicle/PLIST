@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/gifdiff
-bin/gifsicle
-bin/gifview
-man/man1/gifdiff.1
-man/man1/gifsicle.1
-man/man1/gifview.1

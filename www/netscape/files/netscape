@@ -1,9 +1,0 @@
-#!/bin/sh
-# $NetBSD: netscape_mozilla,v 1.2 2002/03/11 10:18:25 abs Exp $
-
-# Simple script used if NS_MOZILLA is set when netscape installed
-
-if [ -z "$NETSCAPE_PREFERRED" ]; then
-    export NETSCAPE_PREFERRED=@NETSCAPE_PREFERRED@
-fi
-exec ns-open "$@"

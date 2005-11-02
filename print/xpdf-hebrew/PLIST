@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2002/12/09 16:01:40 tron Exp $
-share/xpdf/hebrew/ISO-8859-8.unicodeMap
-@dirrm share/xpdf/hebrew

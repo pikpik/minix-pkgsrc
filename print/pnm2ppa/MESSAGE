@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD$
-
-You *must* edit the default ${PKG_SYSCONFDIR}/pnm2ppa.conf configuration
-file to get this package working.
-
-===========================================================================

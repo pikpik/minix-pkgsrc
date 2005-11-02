@@ -1,5 +1,0 @@
-@comment $NetBSD$
-sbin/tcptraceroute
-man/man8/tcptraceroute.8
-share/doc/tcptraceroute/examples.txt
-@dirrm share/doc/tcptraceroute

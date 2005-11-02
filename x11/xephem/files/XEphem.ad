@@ -1,3 +1,0 @@
-! $NetBSD$
-
-XEphem.ShareDir: @PREFIX@/share/xephem

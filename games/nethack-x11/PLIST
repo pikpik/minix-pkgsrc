@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2002/03/25 20:32:29 pooka Exp $
-bin/nethack-x11
-share/nethackdir340/x11tiles
-share/nethackdir340/nethack.x11.rc
-lib/X11/app-defaults/NetHack
-lib/X11/fonts/misc/nh10.bdf

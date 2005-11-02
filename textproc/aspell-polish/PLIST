@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/aspell/pl.multi
-lib/aspell/pl.rws
-lib/aspell/polish.alias
-share/aspell/pl.dat

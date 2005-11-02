@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.11 2004/07/22 15:00:20 adam Exp $
-bin/nasl
-bin/nasl-config
-include/nessus/nasl.h
-lib/libnasl.la
-man/man1/nasl-config.1
-man/man1/nasl.1

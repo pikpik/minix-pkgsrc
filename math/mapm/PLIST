@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/mapm-calc
-include/m_apm.h
-lib/libmapm.a
-share/doc/mapm/README
-share/doc/mapm/algorithms.used
-share/doc/mapm/function.ref
-@dirrm share/doc/mapm

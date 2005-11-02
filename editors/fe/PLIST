@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/fe
-man/man1/fe.1
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/fe.mo
-share/doc/fe/fe.ps
-share/doc/fe/feref.ps
-@dirrm share/doc/fe

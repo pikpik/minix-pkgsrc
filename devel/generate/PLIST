@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/generate
-bin/rgenerate
-man/man1/generate.1

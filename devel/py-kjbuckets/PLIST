@@ -1,4 +1,0 @@
-@comment $NetBSD$
-${PYSITELIB}/kjbuckets.so
-share/doc/${PYPKGPREFIX}-kjbuckets/kjbuckets.txt
-@dirrm share/doc/${PYPKGPREFIX}-kjbuckets

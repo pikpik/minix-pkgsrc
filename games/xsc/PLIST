@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/xsc
-share/doc/xsc/README
-@dirrm share/doc/xsc

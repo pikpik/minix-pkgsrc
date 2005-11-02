@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/mined
-share/help/mined.hlp
-man/man1/mined.1

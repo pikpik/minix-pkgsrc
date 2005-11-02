@@ -1,6 +1,0 @@
-@comment $NetBSD$
-man/man8/binkd.8
-sbin/binkd
-sbin/${PKGNAME}
-share/examples/binkd/binkd.conf
-@dirrm share/examples/binkd

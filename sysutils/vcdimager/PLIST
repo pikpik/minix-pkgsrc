@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.5 2003/08/05 21:22:36 seb Exp $
-bin/vcdimager
-bin/vcdrip
-man/man1/vcdimager.1
-man/man1/vcdrip.1

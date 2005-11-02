@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/openag
-share/doc/OpenAG/AUTHORS
-share/doc/OpenAG/ChangeLog
-share/doc/OpenAG/INSTALL
-share/doc/OpenAG/NEWS
-share/doc/OpenAG/README

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-${EMACS_LISPPREFIX}/matlab-mode/matlab.el
-${EMACS_LISPPREFIX}/matlab-mode/matlab.elc
-@dirrm ${EMACS_LISPPREFIX}/matlab-mode

@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/13 18:14:04 jlam Exp $
-lib/sasl2/libgssapiv2.la

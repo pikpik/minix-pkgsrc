@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/driftnet
-man/man1/driftnet.1

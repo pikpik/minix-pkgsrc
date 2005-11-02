@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/bbmail
-man/man1/bbmail.1
-share/bbtools/bbmail.bb
-@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || ${TRUE}

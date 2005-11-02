@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/28 14:25:37 recht Exp $
-include/dvdcss/dvdcss.h
-lib/libdvdcss.la
-@dirrm include/dvdcss

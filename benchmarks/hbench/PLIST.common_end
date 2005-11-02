@@ -1,7 +1,0 @@
-@comment $NetBSD$
-@dirrm bin/hbench/${LOWER_OPSYS}${OS_VERSION}-${MACHINE_ARCH}
-@dirrm bin/hbench
-@dirrm share/doc/hbench
-@dirrm share/hbench/Results
-@dirrm share/hbench/conf
-@dirrm share/hbench

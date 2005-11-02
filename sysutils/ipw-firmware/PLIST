@@ -1,7 +1,0 @@
-@comment $NetBSD$
-libdata/if_ipw/LICENSE
-libdata/if_ipw/README
-libdata/if_ipw/ipw2100-1.2-i.fw
-libdata/if_ipw/ipw2100-1.2-p.fw
-libdata/if_ipw/ipw2100-1.2.fw
-@dirrm libdata/if_ipw

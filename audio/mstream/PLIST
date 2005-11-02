@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/mstream-play
-man/man1/mstream-play.1
-share/ices-mp3/mstream.pm

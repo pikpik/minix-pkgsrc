@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/datutil
-share/doc/DatUtil/datutil.txt
-@dirrm share/doc/DatUtil

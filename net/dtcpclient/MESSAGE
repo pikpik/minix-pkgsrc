@@ -1,8 +1,0 @@
-===========================================================================
-$NetBSD$
-
-If your password is found in ${PREFIX}/etc/dtcpclient.auth, dtcpclient does
-not ask for your password.  The format is a colon-separated list of the
-server name, the user name, and the password.
-
-===========================================================================

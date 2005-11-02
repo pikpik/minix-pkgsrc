@@ -1,6 +1,0 @@
-# $NetBSD$
-#
-
-INN_PREFIX?=	${PREFIX}/inn
-INN_DATA_DIR?=	/var/news
-INN_SPOOL?=	${INN_DATA_DIR}/spool

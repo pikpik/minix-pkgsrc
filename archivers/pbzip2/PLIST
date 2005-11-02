@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/01/12 13:45:27 wiz Exp $
-bin/pbzip2
-man/man1/pbzip2.1
-share/doc/pbzip2/COPYING
-share/doc/pbzip2/README
-@dirrm share/doc/pbzip2

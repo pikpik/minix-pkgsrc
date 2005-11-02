@@ -1,3 +1,0 @@
-@comment $NetBSD$
-sbin/pkg_comp
-man/man8/pkg_comp.8

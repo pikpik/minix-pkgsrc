@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.10 2004/08/18 12:41:32 adam Exp $
-include/gmp.h
-include/gmpxx.h
-lib/libgmp.la
-lib/libgmpxx.la

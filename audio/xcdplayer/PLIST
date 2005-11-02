@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:18:15 zuntum Exp $
-bin/xcdplayer
-lib/X11/app-defaults/XCdplayer
-${IMAKE_MAN_DIR}/xcdplayer.${IMAKE_MANNEWSUFFIX}.gz

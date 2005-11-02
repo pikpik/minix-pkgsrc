@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-Before attempting to configure a tunnel, you will need to create the
-generic tunnel interface, eg. (NetBSD):
-
-	/sbin/ifconfig gif0 create
-
-===========================================================================

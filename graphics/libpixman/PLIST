@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/02/03 12:07:57 recht Exp $
-include/pixman.h
-lib/libpixman.la
-lib/pkgconfig/libpixman.pc

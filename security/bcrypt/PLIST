@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/bcrypt
-man/man1/bcrypt.1

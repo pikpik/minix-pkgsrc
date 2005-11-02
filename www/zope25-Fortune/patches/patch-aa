@@ -1,8 +1,0 @@
-$NetBSD$
-
---- lib/python/Products/Fortune/fortunesetup.py.orig	Mon Sep 30 17:30:58 2002
-+++ lib/python/Products/Fortune/fortunesetup.py	Mon Sep 30 17:31:08 2002
-@@ -1,2 +1,2 @@
--fortunedir = '/usr/share/games/fortunes'
-+fortunedir = '/usr/share/games/fortune'
- maxfortune = 2048

@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/01/12 21:19:50 adam Exp $
-include/zconf.h
-include/zlib.h
-lib/libz.la
-man/man3/zlib.3

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/teach-ce
-share/doc/ce/FUNCTIONS
-share/doc/ce/TUTORIAL
-share/doc/ce/ce.help
-@dirrm share/doc/ce

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-etc/nidentd.fake.example
-etc/nidentd.nat.example
-libexec/nidentd

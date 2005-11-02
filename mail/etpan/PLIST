@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/etpan
-share/doc/etpan/CONFIG
-share/doc/etpan/INTERNAL
-share/doc/etpan/README
-@dirrm share/doc/etpan

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/queue-fix
-share/doc/queue-fix/README
-@dirrm share/doc/queue-fix

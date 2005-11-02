@@ -1,3 +1,0 @@
-@comment $NetBSD$
-bin/multitail
-man/man1/multitail.1

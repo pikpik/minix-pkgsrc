@@ -1,9 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2004/08/21 11:07:35 markd Exp $
-include/musicbrainz/browser.h
-include/musicbrainz/errors.h
-include/musicbrainz/mb_c.h
-include/musicbrainz/musicbrainz.h
-include/musicbrainz/queries.h
-lib/libmusicbrainz.la
-lib/pkgconfig/libmusicbrainz.pc
-@dirrm include/musicbrainz

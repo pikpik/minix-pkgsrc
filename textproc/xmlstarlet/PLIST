@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/xml
-man/man1/xmlstarlet.1
-share/doc/xmlstarlet/xmlstarlet-ug.pdf
-share/doc/xmlstarlet/xmlstarlet.txt
-@dirrm share/doc/xmlstarlet

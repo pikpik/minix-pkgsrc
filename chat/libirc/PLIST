@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 19:20:21 zuntum Exp $
-lib/libirc.la
-include/btypes.h
-include/cmd.h
-include/irc_core.h
-include/macros.h
-include/ctcp.h

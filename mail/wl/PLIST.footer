@@ -1,9 +1,0 @@
-@comment $NetBSD$
-@dirrm ${EMACS_LISPPREFIX}/wl
-@dirrm share/examples/wl/ja
-@dirrm share/examples/wl/en
-@dirrm share/examples/wl
-@dirrm share/wl
-@dirrm share/doc/wl/ja
-@dirrm share/doc/wl/en
-@dirrm share/doc/wl

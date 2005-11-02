@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/aspell/eo.multi
-lib/aspell/eo.rws
-lib/aspell/esperanto.alias
-share/aspell/eo.dat

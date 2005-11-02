@@ -1,3 +1,0 @@
-@comment $NetBSD$
-${EMACS_LISPPREFIX}/python-mode.el
-${EMACS_LISPPREFIX}/python-mode.elc

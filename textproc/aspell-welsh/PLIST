@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/aspell/cy.multi
-lib/aspell/cy.rws
-lib/aspell/welsh.alias
-share/aspell/cy.dat

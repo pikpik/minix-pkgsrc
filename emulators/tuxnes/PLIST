@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/tuxnes
-bin/romfixer
-share/doc/tuxnes/AUTHORS
-share/doc/tuxnes/BUGS
-share/doc/tuxnes/COPYING
-share/doc/tuxnes/README
-share/doc/tuxnes/THANKS
-@dirrm share/doc/tuxnes

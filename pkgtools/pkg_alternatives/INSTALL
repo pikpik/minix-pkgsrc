@@ -1,8 +1,0 @@
-# $NetBSD: INSTALL,v 1.1 2005/01/25 16:27:37 jmmv Exp $
-#
-
-case ${STAGE} in
-	POST-INSTALL)
-		@PKG_ALTERNATIVES@ -gs rebuild
-		;;
-esac

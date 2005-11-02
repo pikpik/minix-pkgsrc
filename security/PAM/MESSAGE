@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-${PKGNAME} will use the following directory as the default
-location of its plugin modules:
-
-	${PAM_MODULEDIR}
-
-===========================================================================

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-etc/hobbitc.conf
-bin/hobbitc
-man/man8/hobbitc.8

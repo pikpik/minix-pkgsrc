@@ -1,8 +1,0 @@
-===========================================================================
-$NetBSD$
-
-	To use YoSucker, copy the file header-translation and a
-	sample config file from ${PREFIX}/share/examples/YoSucker
-	to ~/.yosucker and edit the config file.
-
-===========================================================================

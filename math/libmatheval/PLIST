@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/24 12:36:29 drochner Exp $
-include/matheval.h
-info/libmatheval.info
-lib/libmatheval.la

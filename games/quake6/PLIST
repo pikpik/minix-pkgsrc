@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/quake-gl
-bin/quake-x11
-bin/qw-client-gl
-bin/qw-client-x11
-bin/qw-server

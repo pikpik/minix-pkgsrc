@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/wtail
-man/man1/wtail.1
-share/doc/wtail/CHANGES
-share/doc/wtail/COPYING
-share/doc/wtail/FAQ
-share/doc/wtail/README
-share/doc/wtail/VERSION
-@dirrm share/doc/wtail

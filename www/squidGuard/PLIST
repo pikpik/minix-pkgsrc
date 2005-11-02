@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2002/08/05 00:20:30 zuntum Exp $
-bin/squidGuard
-@unexec ${RMDIR} /var/squidguard/log 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} /var/squidguard 2>/dev/null || ${TRUE}

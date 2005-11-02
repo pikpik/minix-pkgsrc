@@ -1,3 +1,0 @@
-@comment $NetBSD$
-sbin/scsiinfo
-man/man1/scsiinfo.1

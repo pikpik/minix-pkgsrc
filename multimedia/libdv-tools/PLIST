@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/dubdv
-bin/dvconnect
-bin/encodedv
-bin/playdv
-man/man1/dubdv.1
-man/man1/dvconnect.1
-man/man1/encodedv.1
-man/man1/playdv.1

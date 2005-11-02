@@ -1,6 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:56:18 zuntum Exp $
-bin/.bibcleanrc
-bin/bibclean
-man/man1/bibclean.1
-share/doc/bibclean/bibclean.dvi
-@dirrm share/doc/bibclean

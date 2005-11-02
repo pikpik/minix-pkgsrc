@@ -1,5 +1,0 @@
-@comment $NetBSD$
-@dirrm ${MACHINE_GNU_PLATFORM}/lib/ldscripts
-@dirrm ${MACHINE_GNU_PLATFORM}/lib
-@dirrm ${MACHINE_GNU_PLATFORM}/bin
-@dirrm ${MACHINE_GNU_PLATFORM}

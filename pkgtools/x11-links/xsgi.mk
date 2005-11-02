@@ -1,3 +1,0 @@
-# $NetBSD$
-
-FILES_LIST=	${FILESDIR}/xsgi

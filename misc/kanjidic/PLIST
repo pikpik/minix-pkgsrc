@@ -1,5 +1,0 @@
-@comment $NetBSD$
-share/doc/kanjidic/kanjidic.doc
-share/kanjidic/kanjidic
-@dirrm share/kanjidic
-@dirrm share/doc/kanjidic

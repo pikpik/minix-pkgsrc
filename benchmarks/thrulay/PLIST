@@ -1,6 +1,0 @@
-@comment $NetBSD$
-bin/thrulay
-bin/thrulayd
-share/doc/thrulay/README
-share/doc/thrulay/thrulay-protocol.txt
-@dirrm share/doc/thrulay

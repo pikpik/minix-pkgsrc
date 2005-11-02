@@ -1,8 +1,0 @@
-$NetBSD$
-
---- lburg/gram.y.orig	Fri Nov 21 11:59:34 1997
-+++ lburg/gram.y
-@@ -2,2 +2,3 @@
- #include <stdio.h>
-+#include <stdlib.h>
- #include "lburg.h"

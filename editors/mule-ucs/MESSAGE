@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-To use mule-ucs with unicode, you will need to add the following line
-to your .emacs or ${EMACS_LISPPREFIX}/site-start.el:
-
-	(require 'un-define)
-
-===========================================================================

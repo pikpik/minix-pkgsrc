@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/vanessa_socket_pipe
-include/vanessa_socket.h
-lib/libvanessa_socket.la
-man/man1/vanessa_socket_pipe.1

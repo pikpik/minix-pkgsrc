@@ -1,8 +1,0 @@
-$NetBSD:$
-
---- version.h.in.orig	Sat Sep  7 15:57:33 2002
-+++ version.h.in	Sat Sep  7 15:57:43 2002
-@@ -1,2 +1,2 @@
--#define BBTOOL "bbsload"
-+#define BBTOOL "bbapm"
- #define BBTOOL_VERSION "@VERSION@"

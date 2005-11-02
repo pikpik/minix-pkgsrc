@@ -1,8 +1,0 @@
-@comment $NetBSD$
-bin/madman
-lib/madman/plugins/burn_to_audio_cd
-lib/madman/plugins/burn_to_data_cd
-lib/madman/plugins/export_m3u
-lib/madman/plugins/move_to_trash
-@dirrm lib/madman/plugins
-@dirrm lib/madman

@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/capture
-bin/gbindiff
-bin/switchmode

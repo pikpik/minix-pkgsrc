@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/bits-avail
-bin/bitstir
-man/man8/bitstir.8

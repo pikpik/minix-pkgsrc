@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2004/09/20 23:19:13 wiz Exp $
-bin/sndfile-resample
-include/samplerate.h
-lib/libsamplerate.la
-lib/pkgconfig/samplerate.pc

@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/abcde
-bin/cddb-tool
-man/man1/abcde.1
-man/man1/cddb-tool.1
-share/examples/abcde/abcde.conf
-@dirrm share/examples/abcde

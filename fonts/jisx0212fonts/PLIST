@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:49:03 zuntum Exp $
-lib/X11/fonts/local/jisksp14.pcf.gz
-lib/X11/fonts/local/jisksp16-1990.pcf.gz
-lib/X11/fonts/local/jisksp40.pcf.gz
-lib/X11/fonts/local/min-1-24.pcf.gz

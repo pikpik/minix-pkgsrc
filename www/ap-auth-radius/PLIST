@@ -1,5 +1,0 @@
-@comment $NetBSD$
-lib/httpd/mod_auth_radius.so
-share/example/mod_auth_radius/README
-share/example/mod_auth_radius/htaccess
-share/example/mod_auth_radius/httpd.conf

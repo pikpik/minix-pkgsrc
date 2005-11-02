@@ -1,9 +1,0 @@
-# $NetBSD: DEINSTALL,v 1.2 2003/03/15 08:26:35 kei Exp $
-
-TEXMF=@PREFIX@/share/texmf
-
-case ${STAGE} in
-POST-DEINSTALL)
-	@PREFIX@/bin/mktexlsr
-	;;
-esac

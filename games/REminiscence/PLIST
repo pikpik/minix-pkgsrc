@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/rs
-share/doc/REminiscence/README
-@dirrm share/doc/REminiscence

@@ -1,9 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:56:24 zuntum Exp $
-bin/xbomb
-man/man6/xbomb.6
-lib/X11/app-defaults/XBomb
-@exec ${GAME_DIR} ${SCORE_PATH}
-@exec ${GAME_DIR} ${SCORE_PATH}/xbomb3.hi
-@exec ${GAME_DIR} ${SCORE_PATH}/xbomb4.hi
-@exec ${GAME_DIR} ${SCORE_PATH}/xbomb6.hi
-@unexec echo Delete ${SCORE_PATH}/ if you do not need your hiscores anymore.

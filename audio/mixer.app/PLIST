@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/Mixer.app
-share/doc/Mixer.app/README
-@dirrm share/doc/Mixer.app

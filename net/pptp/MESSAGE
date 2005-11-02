@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD$
-
-If you experience problems with this package, try rebuilding your kernel
-without the 'gre' pseudo-device.
-
-===========================================================================

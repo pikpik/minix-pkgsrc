@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/strfile
-man/cat8/strfile.0
-man/man8/strfile.8

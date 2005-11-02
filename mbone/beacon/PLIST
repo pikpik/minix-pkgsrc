@@ -1,4 +1,0 @@
-@comment $NetBSD$
-bin/beacon
-share/examples/beacon/beacon.conf
-@dirrm share/examples/beacon

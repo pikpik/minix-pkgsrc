@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/ggiterm
-man/man1/ggiterm.1
-share/doc/ggiterm/README
-share/doc/ggiterm/ggiterm.termcap
-share/doc/ggiterm/ggiterm.terminfo
-@dirrm share/doc/ggiterm

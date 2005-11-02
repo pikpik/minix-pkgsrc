@@ -1,5 +1,0 @@
-$NetBSD: distinfo,v 1.2 2005/09/04 13:55:53 taca Exp $
-
-SHA1 (ruby/activesupport-1.2.1.tgz) = bfe06e821020f9603888702d21ab5c44362dbbd3
-RMD160 (ruby/activesupport-1.2.1.tgz) = 921549b88b59baf6f8bad3d0d2699286ee2eb4c6
-Size (ruby/activesupport-1.2.1.tgz) = 29479 bytes

@@ -1,9 +1,0 @@
-#!/bin/sh
-#
-# $NetBSD$
-
-case $1 in
---datadir)
-	echo @PREFIX@/share
-	;;
-esac

@@ -1,7 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2004/03/30 19:51:31 ben Exp $
-bin/mplex
-lib/libmplex2.la
-share/doc/mplex/COPYING
-share/doc/mplex/INSTRUCT
-share/doc/mplex/README
-@dirrm share/doc/mplex

@@ -1,5 +1,0 @@
-@comment $NetBSD$
-man/man8/bftpd.8
-sbin/bftpd
-share/examples/bftpd/bftpd.conf
-@dirrm share/examples/bftpd

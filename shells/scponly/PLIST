@@ -1,5 +1,0 @@
-@comment $NetBSD$
-bin/scponly
-man/man8/scponly.8
-share/examples/scponly/debuglevel
-@dirrm share/examples/scponly

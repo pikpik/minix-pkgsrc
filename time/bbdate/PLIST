@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/bbdate
-share/bbtools/README.bbdate
-share/bbtools/bbdate.conf
-share/bbtools/bbdate.nobb
-share/bbtools/bbdate.style
-@unexec ${RMDIR} %D/share/bbtools 2>/dev/null || ${TRUE}

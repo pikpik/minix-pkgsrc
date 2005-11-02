@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/11/14 18:36:21 drochner Exp $
-bin/zopeedit.py
-man/man1/zopeedit.1
-share/doc/zopeedit/README.txt
-@dirrm share/doc/zopeedit

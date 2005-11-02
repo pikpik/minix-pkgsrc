@@ -1,8 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1 2004/10/23 14:46:16 shannonjr Exp $
-bin/gpg-agent
-bin/gpgconf
-bin/watchgnupg
-info/gnupg.info
-libexec/gpg-protect-tool
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/gnupg2.mo
-sbin/addgnupghome

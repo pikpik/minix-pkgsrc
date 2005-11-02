@@ -1,8 +1,0 @@
-# $NetBSD$
-
-case ${STAGE} in
-DEINSTALL)
-    # Remove compiled copy of configuration
-    ${RM} -f ${PKG_PREFIX}/lib/mailman/Mailman/mm_cfg.pyc
-    ;;
-esac
