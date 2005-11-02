@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/02 05:09:52 seb Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/18 09:39:37 seb Exp $
 
 DISTNAME=	kipi-plugins-0.1.0-rc1
 PKGNAME=	kipi-plugins-0.1.0rc1
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	seb@NetBSD.ORG
+MAINTAINER=	seb@NetBSD.org
 HOMEPAGE=	http://extragear.kde.org/apps/kipi/
 COMMENT=	Kipi (KDE Image Plugin Interface) plugins
 
