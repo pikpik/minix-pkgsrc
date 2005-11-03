@@ -1,7 +1,7 @@
-$NetBSD: patch-ad,v 1.2 1999/11/17 23:06:22 tron Exp $
+$NetBSD: patch-ad,v 1.1.1.1 2000/03/26 14:44:41 jlam Exp $
 
---- search.c.orig	Mon Sep 28 08:41:23 1998
-+++ search.c	Thu Dec 10 23:39:26 1998
+--- src/search.c.orig	Mon Sep 28 08:41:23 1998
++++ src/search.c	Thu Dec 10 23:39:26 1998
 @@ -174,7 +174,7 @@
        while (true)
  	{

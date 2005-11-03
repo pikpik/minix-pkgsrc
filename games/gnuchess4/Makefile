@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:15:40 agc Exp $
+# $NetBSD: Makefile,v 1.10 2005/03/24 21:12:54 wiz Exp $
 
 DISTNAME=		gnuchess-4.0.pl80
 PKGNAME=		gnuchess4-4.0.80
@@ -13,12 +13,13 @@ CONFLICTS=		gnuchess-4.*
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=		yes
+CONFIGURE_DIRS=		src
+BUILD_DIRS=		${CONFIGURE_DIRS}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gnuchess4
-	cd ${WRKSRC}/../doc; ${INSTALL_DATA} \
+	cd ${WRKSRC}/doc; ${INSTALL_DATA} \
 		ARTICLE ARTICLE.2 CHESSTOOL FAQ HEURISTICS MOVE-GEN \
 		README.font README.output \
 		${PREFIX}/share/doc/gnuchess4
