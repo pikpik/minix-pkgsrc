@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:57 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/17 16:01:39 reed Exp $
 
 DISTNAME=	colortail-0.3.0
 CATEGORIES=	misc
@@ -20,4 +20,5 @@ post-install:
 		conf.xferlog conf.daemon ${PREFIX}/share/examples/colortail
 	${SED} 's,@PREFIX@,${PREFIX},' ${PKGDIR}/DESCR > ${DESCR_SRC}
 
+.include "../../libgetopt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
