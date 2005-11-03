@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:24 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:07:51 jlam Exp $
 #
 
 DISTNAME=	gnustep-objc-1.3.0
 CATEGORIES=	devel gnustep
-MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/libs/
+MASTER_SITES=	${MASTER_SITE_GNUSTEP:=libs/}
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
