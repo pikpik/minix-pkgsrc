@@ -11,7 +11,7 @@
 # Freely redistributable.  Absolutely no warranty.
 #
 # From Id: portlint.pl,v 1.64 1998/02/28 02:34:05 itojun Exp
-# $NetBSD: pkglint.pl,v 1.322 2005/11/03 10:34:26 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.323 2005/11/03 12:32:07 rillig Exp $
 #
 # This version contains lots of changes necessary for NetBSD packages
 # done by:
@@ -359,6 +359,10 @@ sub get_logical_line($$$) {
 		}
 	}
 
+	if ($lineno > $#{@{$lines}}) {
+		# The last line in the file is a continuation line
+		$lineno--;
+	}
 	$lastlineno = $lines->[$lineno]->[0];
 	${$ref_lineno} = $lineno + 1;
 
@@ -1808,6 +1812,10 @@ sub checklines_package_Makefile($) {
 
 		if ($text =~ /^\040{8}/) {
 			$line->log_warning("Use tab (not spaces) to make indentation.");
+		}
+
+		if ($text =~ qr"\$\{WRKSRC\}/\.\./") {
+			$line->log_error("Using \"\${WRKSRC}/..\" is conceptually wrong. Use a combination of WRKSRC, CONFIGURE_DIRS and BUILD_DIRS instead.");
 		}
 
 		if ($text =~ regex_varassign) {
