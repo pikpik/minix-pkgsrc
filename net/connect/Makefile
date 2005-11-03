@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/10/23 14:26:39 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/10/23 14:30:05 rillig Exp $
 
 DISTNAME=	connect
 PKGNAME=	${DISTNAME}-1.83
@@ -20,7 +20,7 @@ INSTALLATION_DIRS=	bin
 
 do-build:
 	${MKDIR} ${WRKSRC}
-	${CC} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} ${CFLAGS} -o ${WRKSRC}/connect ${LIBS}
+	${LINK.c} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} -o ${WRKSRC}/connect ${LIBS}
 	${EGREP} '^ \*(| .*)$$' ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} | \
 	${CUT} -c 4- >${WRKSRC}/README
 
