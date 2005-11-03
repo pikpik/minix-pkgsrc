@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/09/11 13:59:38 adrianp Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/30 21:02:57 agc Exp $
 
 DISTNAME=	iscsi-Jan15
 PKGNAME=	intel-iscsi-20040115
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=intel-iscsi/}
 EXTRACT_SUFX=	.tgz
