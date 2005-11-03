@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: openvpn.sh,v 1.1 2005/08/17 19:55:57 jlam Exp $
+# $NetBSD: openvpn.sh,v 1.2 2005/09/18 03:11:40 jlam Exp $
 #
 # PROVIDE: openvpn
 # REQUIRE: NETWORKING
@@ -65,6 +65,7 @@ openvpn_start()
 			return 1
 		fi
 	done
+	echo "Starting ${name}."
 	for f in $openvpn_cfg; do
 		doit="$command $command_args --config $f"
 		if ! eval $doit; then
