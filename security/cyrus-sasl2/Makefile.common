@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.28 2005/05/22 20:08:29 jlam Exp $
+# $NetBSD: Makefile.common,v 1.29 2005/06/01 20:08:01 jlam Exp $
 #
 # This file is currently included by:
 #
@@ -45,6 +45,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 
 USE_LIBTOOL=		yes
+LTCONFIG_OVERRIDE=	${WRKSRC}/config/ltconfig
 MAKE_ENV+=		SHLIBTOOL=${SHLIBTOOL:Q}
 
 DOCDIR=			${PREFIX}/share/doc/cyrus-sasl
