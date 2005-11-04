@@ -1,4 +1,4 @@
-# $NetBSD: tools.SunOS.mk,v 1.20 2005/08/30 00:32:46 dmcmahill Exp $
+# $NetBSD: tools.SunOS.mk,v 1.21 2005/10/12 16:28:29 jlam Exp $
 #
 # System-supplied tools for the Solaris operating system.
 
@@ -66,6 +66,7 @@ TOOLS_PLATFORM.pwd?=		/bin/pwd
 TOOLS_PLATFORM.rm?=		/usr/bin/rm
 TOOLS_PLATFORM.rmdir?=		/usr/bin/rmdir
 TOOLS_PLATFORM.sh?=		/bin/ksh
+TOOLS_PLATFORM.sleep?=		/bin/sleep
 TOOLS_PLATFORM.sort?=		/usr/bin/sort
 TOOLS_PLATFORM.strip?=		/usr/ccs/bin/strip
 TOOLS_PLATFORM.tail?=		/usr/xpg4/bin/tail
