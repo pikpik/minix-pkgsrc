@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/11/03 01:57:15 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/11/04 13:58:17 rillig Exp $
 #
 
 DISTNAME=		htdocs-share-20050727
@@ -43,6 +43,8 @@ _GUIDE_OUTPUTS=		${OUTPUTS}
 
 .include "Makefile.common"
 
+# The source files are only symlinked into the WRKSRC, so that they can
+# be easily modified, should the "lint" phase fail.
 pre-extract:
 	${MKDIR} ${WRKSRC}
 	@${LN} -s ${FILESDIR}/* ${WRKSRC}
