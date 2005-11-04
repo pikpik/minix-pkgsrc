@@ -1,7 +1,7 @@
-$NetBSD: patch-ah,v 1.1 2002/12/07 21:34:05 cjep Exp $
+$NetBSD: patch-ah,v 1.2 2003/03/06 11:43:28 is Exp $
 
---- port/solaris/Makefile.set.gcc.orig	Tue Oct 19 00:45:13 1999
-+++ port/solaris/Makefile.set.gcc
+--- src/port/solaris/Makefile.set.gcc.orig	Tue Oct 19 00:45:13 1999
++++ src/port/solaris/Makefile.set.gcc
 @@ -1,12 +1,14 @@
  'CC=gcc'
  'CDEBUG=-g -O2'
