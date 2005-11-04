@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1737 2005/10/31 09:50:44 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1738 2005/11/02 18:32:19 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -1918,7 +1918,7 @@ post-configure: ${_CONFIGURE_POSTREQ}
 
 # Build
 
-BUILD_DIRS?=		${WRKSRC}
+BUILD_DIRS?=		${CONFIGURE_DIRS}
 BUILD_MAKE_FLAGS?=	${MAKE_FLAGS}
 
 .PHONY: do-build
