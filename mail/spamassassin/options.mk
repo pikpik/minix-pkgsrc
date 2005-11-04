@@ -1,12 +1,9 @@
-# $NetBSD: options.mk,v 1.1 2004/10/12 00:11:10 heinz Exp $
+# $NetBSD: options.mk,v 1.2 2004/11/17 19:56:49 xtraeme Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.spamassassin
 PKG_SUPPORTED_OPTIONS=	ssl net-tests perl-warnings perl-taint-checks \
 			awl-sql-tests bayes-sql-tests
-#
-# Default options
-#
-PKG_OPTIONS.spamassassin?=	perl-taint-checks perl-warnings ssl
+PKG_SUGGESTED_OPTIONS=	perl-taint-checks perl-warnings ssl
 .include "../../mk/bsd.options.mk"
 
 #
