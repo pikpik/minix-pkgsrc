@@ -1,4 +1,4 @@
-# $NetBSD: extension.mk,v 1.11 2004/06/12 21:18:31 darcy Exp $
+# $NetBSD: extension.mk,v 1.12 2004/12/28 22:48:11 adrianp Exp $
 
 # derive a python version from the package name if possible
 # optionally handled quoted package names
@@ -10,7 +10,7 @@ PYTHON_VERSION_REQD?= ${PKGNAME_REQD:C/^[^-]*py([^-]*)-.*/\1/}
 
 .if defined(PYBINMODULE)
 .if ${MACHINE_ARCH} == "mips" || ${MACHINE_ARCH} == "vax"
-PKG_FAIL_REASON= "${PKGNAME} needs dynamic loading"
+PKG_FAIL_REASON+=	"${PKGNAME} needs dynamic loading"
 .endif
 .endif
 
