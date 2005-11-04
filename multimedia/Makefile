@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2005/10/19 04:50:32 minskim Exp $
+# $NetBSD: Makefile,v 1.74 2005/10/21 07:46:24 xtraeme Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -46,6 +46,7 @@ SUBDIR+=	libogg
 SUBDIR+=	libtheora
 SUBDIR+=	lsdvd
 SUBDIR+=	mencoder
+SUBDIR+=	ming
 SUBDIR+=	mjpegtools
 SUBDIR+=	mkvtoolnix
 SUBDIR+=	mmg
