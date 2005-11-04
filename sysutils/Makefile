@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.316 2005/10/29 16:09:03 minskim Exp $
+# $NetBSD: Makefile,v 1.317 2005/10/31 09:47:30 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -142,6 +142,7 @@ SUBDIR+=	p5-Sys-Hostname-Long
 SUBDIR+=	p5-Unix-Syslog
 SUBDIR+=	pciutils
 SUBDIR+=	pcvt-utils
+SUBDIR+=	pdumpfs
 SUBDIR+=	pear-Log
 SUBDIR+=	pflogsumm
 SUBDIR+=	pfstat
