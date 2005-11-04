@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2005/10/21 07:46:24 xtraeme Exp $
+# $NetBSD: Makefile,v 1.75 2005/11/04 03:01:59 minskim Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -68,6 +68,7 @@ SUBDIR+=	ogle_gui
 SUBDIR+=	ogmtools
 SUBDIR+=	openquicktime
 SUBDIR+=	p5-xmltv
+SUBDIR+=	py-ming
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	regionset
 SUBDIR+=	smpeg
