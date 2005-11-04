@@ -1,13 +1,15 @@
 # $NetBSD$
+#
 
-R_PKGNAME=	VR
-R_PKGVER=	6.3-2
+CATEGORIES=             databases math
+MASTER_SITES=           ${MASTER_SITE_R_CRAN:=contrib/}
 
-MAINTAINER=	markd@netbsd.org
-COMMENT=	Various functions from the libraries of Venables and Ripley
+MAINTAINER=             mchittur@cs.nmsu.edu
+HOMEPAGE=               ${R_HOMEPAGE_BASE}/VR.html
+COMMENT=		Functions and datasets for 'Modern Applied Statistics with S'
 
-R_INST_DIRS=	MASS class nnet spatial
-PLIST_SRC=	/dev/null
+R_PKGNAME=              VR
+R_PKGVER=               7.2-4
 
 .include "../../math/R/Makefile.extension"
 .include "../../mk/bsd.pkg.mk"
