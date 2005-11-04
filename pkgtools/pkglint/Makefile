@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.278 2005/11/04 08:40:59 rillig Exp $
+# $NetBSD: Makefile,v 1.279 2005/11/04 09:32:03 rillig Exp $
 #
 
 DISTNAME=	pkglint-4.35
@@ -60,6 +60,6 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}/deprecated.map ${PREFIX}/share/pkglint/
 
 post-install:
-	${PREFIX}/bin/pkglint -q -Wno-workdir
+	${PREFIX}/bin/pkglint -q
 
 .include "../../mk/bsd.pkg.mk"
