@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/06/28 17:28:57 abs Exp $
+# $NetBSD: Makefile,v 1.18 2005/04/11 21:46:14 tv Exp $
 #
 
 DISTNAME=		jini-${SUN_VERSION}-src
@@ -29,7 +29,7 @@ WRKSRC=			${WRKDIR}/jini${SUN_VERSION}
 VERSION=		1.2.1
 SUN_VERSION=		${VERSION:C/\./_/g}_001
 USE_JAVA=		run
-PKG_JVMS_ACCEPTED=	sun-jdk13 sun-jdk14 jdk13 jdk14
+PKG_JVMS_ACCEPTED=	sun-jdk13 sun-jdk14 jdk14
 
 .include "../../mk/bsd.prefs.mk"
 
