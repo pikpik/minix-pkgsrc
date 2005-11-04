@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/30 10:38:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:33 jlam Exp $
 #
 
 DISTNAME=	dvd+rw-tools-5.21.4.10.8
@@ -14,6 +14,10 @@ DEPENDS+=	{cdrecord-[1-9]*,cdrtools-ossdvd-[0-9]*}:../../sysutils/cdrecord
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 INSTALLATION_DIRS=	bin man/man1
+
+# These are the only platforms listed in growisofs.c
+ONLY_FOR_PLATFORM=Linux-*-* OpenBSD-*-* NetBSD-*-* FreeBSD-*-* \
+	DragonFly-*-* SunOS-*-* HP-UX-*-* IRIX-*-*
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/growisofs ${PREFIX}/bin
