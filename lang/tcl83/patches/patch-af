@@ -1,7 +1,7 @@
-$NetBSD: patch-af,v 1.1.1.1 2004/03/08 19:22:27 minskim Exp $
+$NetBSD: patch-af,v 1.2 2005/09/21 14:49:08 joerg Exp $
 
---- tcl.m4.orig	Fri Oct 19 19:24:15 2001
-+++ tcl.m4
+--- unix/tcl.m4.orig	Fri Oct 19 19:24:15 2001
++++ unix/tcl.m4
 @@ -601,6 +601,7 @@ AC_DEFUN(SC_CONFIG_CFLAGS, [
      # Step 3: set configuration options based on system name and version.
  
