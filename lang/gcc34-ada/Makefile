@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/05/29 11:12:01 shannonjr Exp $
+# $NetBSD: Makefile,v 1.16 2005/06/17 04:49:47 jlam Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -136,8 +136,8 @@ pre-configure:
 .endif
 
 do-configure:
-	((${TEST} -d ${WRKDIR}/obj || ${MKDIR} ${WRKDIR}/obj) && \
-	 (cd ${WRKDIR}/obj && ${SETENV} ${CONFIGURE_ENV} ${WRKSRC}/configure ${CONFIGURE_ARGS}))
+	${MKDIR} ${WRKDIR}/obj
+	cd ${WRKDIR}/obj && ${SETENV} ${CONFIGURE_ENV} ${WRKSRC}/configure ${CONFIGURE_ARGS}
 
 do-build:
 	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} bootstrap)
