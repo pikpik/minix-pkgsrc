@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/08/29 20:39:37 reed Exp $
+# $NetBSD: Makefile,v 1.3 2005/10/01 18:19:58 recht Exp $
 
 DISTNAME=	ezxml-0.8.5
 CATEGORIES=	textproc devel
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ezxml/} \
 MAINTAINER=	yazzy@yazzy.org
 HOMEPAGE=	http://ezxml.sourceforge.net/
 COMMENT=	Easy to use C library for parsing XML documents
-
-WRKSRC=		${WRKDIR}/${PKGNAME:C/-[^-]*$//}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
