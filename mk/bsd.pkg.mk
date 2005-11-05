@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1743 2005/11/04 20:52:38 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1744 2005/11/04 21:26:19 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -1441,8 +1441,8 @@ show-depends-dirs:
 	depends=${_ALL_DEPENDS:C/^[^:]*://:O:u:Q};			\
 	for reldir in $$depends; do					\
 		case $$reldir in					\
-			*/*)	: "expected";;				\
-			*)	${ECHO} ${.TARGET:Q}": warning: missing directory in dependency \"$$reldir\". Check DEPENDS and BUILD_DEPENDS." 1>&2; \
+			../../*/*) ;;					\
+			*)	${ECHO} "[show-depends-dirs] warning: invalid dependency \"$$reldir\". Check DEPENDS and BUILD_DEPENDS." 1>&2; \
 				continue;;				\
 		esac;							\
 		WD=`cd "$$reldir" && ${PWD_CMD}`;			\
