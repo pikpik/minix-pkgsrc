@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/04/11 21:45:03 tv Exp $
+# $NetBSD: Makefile,v 1.36 2005/05/31 16:36:40 wiz Exp $
 
 DISTNAME=	ircii-pana-1.1-final
 PKGNAME=	bitchx-1.1
@@ -17,7 +17,7 @@ NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64 *-*-x86_64
 WRKSRC=			${WRKDIR}/BitchX
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS=		--with-ssl
+CONFIGURE_ARGS+=	--with-ssl
 
 .include "options.mk"
 .include "../../mk/bsd.prefs.mk"
