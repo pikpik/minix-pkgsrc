@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.398 2005/11/04 11:48:01 rillig Exp $
+# $NetBSD: Makefile,v 1.399 2005/11/04 17:20:30 gdt Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -181,6 +181,7 @@ SUBDIR+=	libungif
 SUBDIR+=	libvideogfx
 SUBDIR+=	libwmf
 SUBDIR+=	ljpeg
+SUBDIR+=	lprof
 SUBDIR+=	magicpoint
 SUBDIR+=	mayavi
 SUBDIR+=	metacam
