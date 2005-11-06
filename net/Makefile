@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.585 2005/11/02 09:20:51 taca Exp $
+# $NetBSD: Makefile,v 1.586 2005/11/03 06:35:30 taca Exp $
 #
 
 COMMENT=	Networking tools
@@ -210,6 +210,7 @@ SUBDIR+=	netdisco
 SUBDIR+=	netgroup
 SUBDIR+=	netname
 SUBDIR+=	netperf
+SUBDIR+=	netpipes
 SUBDIR+=	netsaint-base
 SUBDIR+=	netsaint-plugin-cluster
 SUBDIR+=	netsaint-plugin-snmp
