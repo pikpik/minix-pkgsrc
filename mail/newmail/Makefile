@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/24 21:12:56 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:21 tv Exp $
 
 DISTNAME=	newmail-1.0.1
 CATEGORIES=	mail
@@ -9,4 +9,5 @@ COMMENT=	Program to check multiple local mailboxes for new mail
 
 WRKSRC=		${WRKDIR}/newmail
 
+.include "../../devel/sysexits/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
