@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:15:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:58:02 jlam Exp $
 #
 
 DISTNAME=	bulk_mailer-1.13
@@ -19,4 +19,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bulk_mailer ${PREFIX}/bin/bulk_mailer
 	${INSTALL_MAN} ${WRKSRC}/bulk_mailer.1 ${PREFIX}/man/man1/bulk_mailer.1
 
+.include "../../devel/sysexits/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
