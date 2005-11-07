@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/02 01:17:47 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:51:40 grant Exp $
 
 DISTNAME=	pptp-linux-1.0.2
 PKGNAME=	pptp-1.0.2
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.pdos.lcs.mit.edu/~cananian/Projects/PPTP/
 COMMENT=	PPTP client package for Microsoft VPN servers (no encryption yet)
 
 #LICENSE=	GPL
+
+NOT_FOR_PLATFORM=	Interix-*-*
 
 .include "../../mk/bsd.prefs.mk"
 
