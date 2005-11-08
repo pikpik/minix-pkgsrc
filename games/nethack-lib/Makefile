@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2005/08/19 18:12:37 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/08/20 19:16:21 jlam Exp $
 #
 
-.include		"../nethack-lib/Makefile.common"
+.include		"../../games/nethack-lib/Makefile.common"
 
 PKGNAME=		nethack-lib-${NETHACK_VERSION}
 PKGREVISION=		1
