@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:54:30 grant Exp $
+# $NetBSD: Makefile,v 1.8 2003/09/15 09:51:38 agc Exp $
 #
 
 DISTNAME=	lout-3.26
@@ -24,4 +24,5 @@ post-install:
 	(cd ${PREFIX}; ${FIND} -d share/lout -type d -print | \
 	${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
