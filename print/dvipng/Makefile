@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/03/23 21:59:32 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:06 tv Exp $
 
 DISTNAME=	dvipng-1.0
 PKGREVISION=	2
@@ -20,6 +20,6 @@ BUILDLINK_DEPENDS.freetype2?=	freetype2>=2.1.3
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/gd/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../print/teTeX-bin/kpathsea.buildlink3.mk"
+.include "../../mk/tex.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
