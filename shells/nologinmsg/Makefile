@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/03/24 21:13:00 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:21 tv Exp $
 
 DISTNAME=	nologinmsg-1.0
 CATEGORIES=	shells sysutils
@@ -28,4 +28,5 @@ CFLAGS+=	-D__LIBNBCOMPAT
 .  include "../../pkgtools/libnbcompat/buildlink3.mk"
 .endif
 
+.include "../../devel/sysexits/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
