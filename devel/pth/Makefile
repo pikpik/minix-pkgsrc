@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2004/10/03 00:13:32 tv Exp $
+# $NetBSD: Makefile,v 1.66 2005/04/11 21:45:37 tv Exp $
 #
 
 DISTNAME=		pth-2.0.0
@@ -31,6 +31,9 @@ pre-configure:
 .  else
 CONFIGURE_ARGS+=	--enable-syscall-hard
 .  endif
+.elif ${OPSYS} == "Interix"
+CONFIGURE_ENV+=		ac_cv_check_nfdstype='unsigned int'
+CONFIGURE_ENV+=		ac_cv_typedef_nfds_t=no # in <poll.h>, but that's unused
 .endif
 
 post-install:
