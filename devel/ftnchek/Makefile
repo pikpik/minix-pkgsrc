@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/17 21:30:32 grant Exp $
+# $NetBSD: Makefile,v 1.13 2003/08/02 17:49:37 kristerw Exp $
 
 DISTNAME=	ftnchek-3.2.2
 CATEGORIES=	devel
@@ -12,6 +12,8 @@ COMMENT=	Static analyzer for Fortran programs
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--libdir=${PREFIX}/libexec
 CONFIGURE_ARGS+=--disable-submodel
+
+USE_TOOLS+=	soelim
 
 .if (${MACHINE_ARCH} == "arm")
 CFLAGS+=	-O1
