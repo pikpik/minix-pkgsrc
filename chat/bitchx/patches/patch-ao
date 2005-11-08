@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.1 2005/11/06 17:40:47 adrianp Exp $
 
 --- source/term.c.orig	2005-11-06 17:14:05.000000000 +0000
 +++ source/term.c
@@ -7,7 +7,7 @@ $NetBSD$
  
  extern  char    *getenv();
 +
-+#if !defined(__FreeBSD__)
++#if !defined(__FreeBSD__) && !defined(__DragonFly__)
  extern	char	*tparm();
 +#endif
  
