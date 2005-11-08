@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/07/16 01:19:12 jlam Exp $
 
 DISTNAME=	distribute-2.1-pl19
 PKGNAME=	distribute-2.1.26
@@ -51,4 +51,5 @@ mmessage::
 	@${ECHO} "     if necessary, override them and perform compilation again."
 	@${ECHO} "     there's no way to override them at runtime."
 
+.include "../../devel/sysexits/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
