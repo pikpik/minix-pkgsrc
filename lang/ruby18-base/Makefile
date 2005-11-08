@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/09/23 12:01:44 taca Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/02 08:56:39 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -93,7 +93,7 @@ pre-build:
 #
 post-build:
 	@cd ${WRKSRC}/.ext; \
-		${FIND} . -type d -print \
+		${FIND} . -depth -type d -print \
 			-exec ${RMDIR} {} \; > /dev/null 2>&1; ${TRUE}
 post-install:
 	${STRIP} ${RUBY}
