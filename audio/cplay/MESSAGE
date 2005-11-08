@@ -1,0 +1,14 @@
+===========================================================================
+$NetBSD$
+
+In order to make this package actually useful, you should install at least
+one of the following audio players:
+
+audio/splay
+audio/mpg123
+audio/mpg321
+audio/madplay
+audio/mikmod
+audio/xmp
+audio/sox
+===========================================================================
