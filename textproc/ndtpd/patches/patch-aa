@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/defs.h.in.orig	2001-03-01 09:35:35.000000000 -0500
++++ src/defs.h.in
+@@ -24,6 +24,7 @@
+ #include <time.h>
+ #include <sys/types.h>
+ #include <sys/socket.h>
++#include <sys/time.h>
+ 
+ #include <eb/eb.h>
+ #include <eb/error.h>
