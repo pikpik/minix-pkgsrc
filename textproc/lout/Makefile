@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/09/15 09:51:38 agc Exp $
+# $NetBSD: Makefile,v 1.9 2005/11/08 19:30:41 tv Exp $
 #
 
 DISTNAME=	lout-3.26
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.it.usyd.edu.au/jeff/lout/
 
