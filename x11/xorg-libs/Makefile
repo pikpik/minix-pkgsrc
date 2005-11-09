@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/09/18 19:33:42 xtraeme Exp $
+# $NetBSD: Makefile,v 1.24 2005/10/16 16:56:22 tonio Exp $
 
 DISTNAME=		${DISTFILES}
 PKGNAME=		xorg-libs-${XORG_VER}
@@ -56,7 +56,7 @@ post-install:
 .endif
 
 pre-install:
-.if !exists(${X11ROOT}/lib/pkgconfig)
+.if !exists(${X11BASE}/lib/pkgconfig)
 	${INSTALL_DATA_DIR} ${X11BASE}/lib/pkgconfig
 .endif
 .for f in render.pc fixesext.pc compositeext.pc
