@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/08/09 18:33:38 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2005/11/08 21:45:01 tonio Exp $
 #
 
-DISTNAME=		unicode
-PKGNAME=		tex-ucs-20041710
-CATEGORIES=		print
-MASTER_SITES=		http://www.unruh.de/DniQ/latex/unicode/
-EXTRACT_SUFX=		.tgz
+DISTNAME=	unicode
+PKGNAME=	tex-ucs-20041710
+CATEGORIES=	print
+MASTER_SITES=	http://www.unruh.de/DniQ/latex/unicode/
+EXTRACT_SUFX=	.tgz
 
-MAINTAINER=		tech-pkg@NetBSD.org
-HOMEPAGE=		http://www.unruh.de/DniQ/latex/unicode/
-COMMENT=		LaTeX UTF-8 support
+MAINTAINER=	minskim@NetBSD.org
+HOMEPAGE=	http://www.unruh.de/DniQ/latex/unicode/
+COMMENT=	LaTeX UTF-8 support
 
 WRKSRC=		${WRKDIR}/ucs
 NO_CONFIGURE=	yes
