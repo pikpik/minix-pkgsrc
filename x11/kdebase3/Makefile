@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2005/10/13 12:38:49 markd Exp $
+# $NetBSD: Makefile,v 1.94 2005/11/08 18:25:44 joerg Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -119,7 +119,7 @@ SUBST_SED.varlock=	s:/var/lock:/var/spool/lock:
 .endif
 
 pre-configure:
-	ln -s FreeBSD ${WRKSRC}/ksysguard/ksysguardd/DragonFly
+	${LN} -s FreeBSD ${WRKSRC}/ksysguard/ksysguardd/DragonFly
 	cd ${WRKSRC};							\
 	files="kcontrol/kdm/main.cpp kioslave/info/kde-info2html.conf";	\
 	for file in $${files}; do					\
