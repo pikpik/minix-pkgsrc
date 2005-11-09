@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- csound/diskin.c.orig	2005-03-16 09:08:15.000000000 -0800
++++ csound/diskin.c
+@@ -267,7 +267,7 @@ void newsndinset(SOUNDINEW *p)       /* 
+     /* should go in SOUNDINEW struct eventually */
+     long snewbufsize = SNDINEWBUFSIZ;
+ 
+-    if (*p->skipinit != FL(0.0)) return;
++    if (p->skipinit != NULL && *p->skipinit != FL(0.0)) return;
+     if (skiptime < 0) {
+       warning(Str(X_1460,"negative skip time, substituting zero."));
+       skiptime = FL(0.0);
