@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/03/26 13:26:16 martti Exp $
+# $NetBSD: Makefile,v 1.17 2005/09/28 19:18:55 rillig Exp $
 
 .include "Makefile.common"
+
+XFCE4_VERSION=	4.2.3.1
 
 DISTNAME=	xfce4-${XFCE4_VERSION}
 DISTFILES=	# empty
