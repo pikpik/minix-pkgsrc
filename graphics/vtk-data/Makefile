@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/02 13:20:02 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2005/09/28 20:52:23 rillig Exp $
 #
 
 DISTNAME=	VTKData-4.2
 PKGNAME=	vtk-data-4.2
+PKGREVISION=	1
 COMMENT=	Example data for VTK
 
 WRKSRC=		${WRKDIR}/VTKData-release-4-2
@@ -12,7 +13,7 @@ EXAMPLES_DIR=	share/vtk
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${EXAMPLES_DIR}
-	cd ${WRKSRC} && ${PAX} -rw -pe * ${PREFIX}/${EXAMPLES_DIR}
+	cd ${WRKSRC} && ${PAX} -rw -pe -s '|.*/CVS/.*||' . ${PREFIX}/${EXAMPLES_DIR}
 
 .include "../../graphics/vtk/Makefile.common"
 
