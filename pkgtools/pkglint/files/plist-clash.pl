@@ -1,10 +1,8 @@
 #! @PERL@
-# $NetBSD: plist-clash.pl,v 1.3 2005/02/14 22:14:48 cube Exp $
+# $NetBSD: plist-clash.pl,v 1.4 2005/10/24 20:56:53 rillig Exp $
 #
 # Scan all PLIST files given on the command line and report all lines
 # that appear more than once.
-
-my $conf_rootdir = '@PKGSRCDIR@';
 
 my %files = ();
 
