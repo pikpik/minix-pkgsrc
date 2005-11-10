@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/09/28 19:07:49 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/11/08 21:45:01 tonio Exp $
 #
 
 DISTNAME=	prosper-1.00.4
@@ -27,7 +27,7 @@ EGDIR=		${LOCALBASE}/share/examples/tex-prosper
 post-extract:
 	${MV} ${WRKDIR}/PPRblends.sty ${WRKSRC}/contrib
 	${MV} ${WRKSRC}/doc/doc-examples ${WRKSRC}/examples
-	${FIND} ${WRKSRC} -name CVS -printx | ${XARGS} ${RM} -rf
+	${FIND} ${WRKSRC} -name CVS -print0 | ${XARGS} -0 ${RM} -rf
 
 do-install:
 	${INSTALL_DATA_DIR} ${PROSPERDIR}
