@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.38 2005/09/11 19:58:46 adrianp Exp $
+# $NetBSD: Makefile,v 1.39 2005/10/20 20:26:32 jlam Exp $
 
 DISTNAME=	sqwebmail-5.0.6
-PKGBASE=	${DISTNAME:C/-[^-]*$//}
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
@@ -17,7 +16,10 @@ USE_TOOLS+=		env gmake perl:run
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 
+# PKGNAME is a parameter to the following file.
+PKGNAME=	${DISTNAME}
 .include "../../mail/courier-maildir/Makefile.common"
+
 .include "../../security/courier-authlib/Makefile.common"
 
 INSTALL_AM_MAKEFLAGS=	sysconfdir=${EGDIR}
