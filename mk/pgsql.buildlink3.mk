@@ -1,11 +1,11 @@
-# $NetBSD: pgsql.buildlink3.mk,v 1.11 2005/05/24 10:01:25 rillig Exp $
+# $NetBSD: pgsql.buildlink3.mk,v 1.12 2005/08/06 23:01:19 abs Exp $
 
 .if !defined(PGVERSION_MK)
 PGVERSION_MK=	defined
 
 .include "../../mk/bsd.prefs.mk"
 
-PGSQL_VERSION_DEFAULT?=		74
+PGSQL_VERSION_DEFAULT?=		80
 PGSQL_VERSIONS_ACCEPTED?=	80 74 73
 
 # transform the list into individual variables
