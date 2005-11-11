@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/08/05 12:53:08 tonio Exp $
+# $NetBSD: Makefile,v 1.8 2005/08/10 20:56:11 jlam Exp $
 
 DISTNAME=	libopendaap-0.4.0
 CATEGORIES=	audio
@@ -13,6 +13,11 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_TOOLS+=		pkg-config
+
+SUBST_CLASSES+=		pthread
+SUBST_STAGE.pthread=	pre-configure
+SUBST_FILES.pthread=	opendaap.pc.in
+SUBST_SED.pthread=	-e 's|@@PTHREAD@@|${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}|'
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
