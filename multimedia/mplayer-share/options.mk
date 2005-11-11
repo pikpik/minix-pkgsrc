@@ -2,7 +2,9 @@
 
 .if defined(PKGNAME) && empty(PKGNAME:Mmplayer-share*)
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.${PKGBASE}
+# Note: This expression is the same as ${PKGBASE}, but the latter is
+# not defined yet, so we cannot use it here.
+PKG_OPTIONS_VAR=	PKG_OPTIONS.${PKGNAME:C/-[0-9].*//}
 
 .include "../../mk/bsd.prefs.mk"
 
