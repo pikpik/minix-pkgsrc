@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/log.c.orig	2005-11-11 16:59:24.000000000 +0000
++++ src/log.c
+@@ -72,7 +72,7 @@
+ #include "authenticate/basic.h"
+ #include "authenticate/user.h"
+ 
+-extern int errno, running;
++extern int running;
+ extern server_info_t info;
+ 
+ void
