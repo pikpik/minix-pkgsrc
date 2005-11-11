@@ -1,13 +1,13 @@
-$NetBSD: patch-af,v 1.1.1.1 2002/03/18 23:02:30 wiz Exp $
+$NetBSD$
 
---- configure.orig	Sat Jan 19 03:07:04 2002
+--- configure.orig	2003-03-12 19:29:19.000000000 +0100
 +++ configure
-@@ -5179,7 +5179,7 @@
+@@ -22533,7 +22533,7 @@ fi
  
  
  
--jpeg_incdirs="/usr/include /usr/local/include $kde_extra_includes"
-+jpeg_incdirs="/usr/include ${LOCALBASE}/include $kde_extra_includes"
+-jpeg_incdirs="$includedir /usr/include /usr/local/include $kde_extra_includes"
++jpeg_incdirs="$includedir /usr/include ${LOCALBASE}/include $kde_extra_includes"
  
  jpeg_incdir=NO
  for i in $jpeg_incdirs;

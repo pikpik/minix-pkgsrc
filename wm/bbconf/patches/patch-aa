@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	Sat Jan 19 03:10:27 2002
+--- Makefile.in.orig	2003-03-12 19:55:46.000000000 +0100
 +++ Makefile.in
-@@ -218,7 +218,7 @@
+@@ -193,7 +193,7 @@ AUTOMAKE_OPTIONS = foreign 
  
  MAINTAINERCLEANFILES = subdirs configure.in acinclude.m4 configure.files 
  

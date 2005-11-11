@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/09/28 20:52:19 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2005/11/08 18:52:30 tonio Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -25,7 +25,7 @@ CHECK_SHLIBS=		NO
 SHLIB_HANDLING=		NO
 INFO_DIR=		pvs/doc/release-notes
 INFO_FILES=		pvs-release-notes.info
-LATEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
+TEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
 
 LICENSE=        	pvs-license
 # not quite sure about this, but to be on the safe side:
