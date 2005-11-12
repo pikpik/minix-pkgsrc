@@ -1,4 +1,8 @@
-@comment $NetBSD: PLIST,v 1.9 2005/05/25 15:36:06 cube Exp $
+@comment $NetBSD: PLIST,v 1.10 2005/10/20 08:33:13 adrianp Exp $
+${HASH}bin/cssstat
+${HASH}bin/csscompress
+${HASH}bin/cssclean
+${HASH}bin/cssconvert
 bin/dspam
 bin/dspam_2sql
 bin/dspam_admin
