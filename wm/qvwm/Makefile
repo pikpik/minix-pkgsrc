@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/06/20 17:02:04 kristerw Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/24 20:37:38 kristerw Exp $
 #
 
 DISTNAME=	qvwm-1.1.12
@@ -18,6 +18,7 @@ USE_LANGUAGES=	c++
 post-install:
 	${MV} ${PREFIX}/man/man1/qvwm.1x ${PREFIX}/man/man1/qvwm.1
 
+.include "options.mk"
 .include "../../audio/esound/buildlink3.mk"
 .include "../../graphics/imlib/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
