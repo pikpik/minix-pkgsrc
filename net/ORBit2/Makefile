@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/08/10 20:56:21 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2005/10/07 16:03:21 drochner Exp $
 #
 
 DISTNAME=		ORBit2-2.12.4
@@ -17,6 +17,7 @@ CONFLICTS=		linc>=1.1
 USE_TOOLS+=		gmake pkg-config
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+#TEST_TARGET=		check
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
