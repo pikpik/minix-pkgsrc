@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/16 06:57:39 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/11/11 18:58:18 joerg Exp $
 #
 
 DISTNAME=	mad123-0.8.5
@@ -14,9 +14,9 @@ COMMENT=	Command-line MPEG audio player
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mad123
 PKG_SUPPORTED_OPTIONS=	arts oss sun
-PKG_DEFAULT_OPTIONS+=	oss
+PKG_SUGGESTED_OPTIONS+=	oss
 .if ${OPSYS} != "DragonFly"
-PKG_DEFAULT_OPTIONS+=	sun
+PKG_SUGGESTED_OPTIONS+=	sun
 .endif
 
 .include "../../mk/bsd.options.mk"
