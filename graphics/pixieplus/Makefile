@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/11 21:46:08 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/05/22 20:08:07 jlam Exp $
 #
 
 DISTNAME=	pixieplus-0.5.4
@@ -20,6 +20,7 @@ GNU_CONFIGURE=	YES
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../graphics/kdegraphics3/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
+.include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
