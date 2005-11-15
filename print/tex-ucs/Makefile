@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/11/13 04:12:43 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2005/11/13 04:14:31 minskim Exp $
 #
 
 DISTNAME=	unicode
@@ -23,10 +23,10 @@ UCSDIR=		${PKG_LOCALTEXMFPREFIX}/tex/latex/ucs
 
 do-install:
 	${INSTALL_DATA_DIR} ${UCSDIR}
-	(cd ${WRKSRC} && \
-	 for f in ${UCSFILES}; do \
-	 ${INSTALL_DATA} $$f ${UCSDIR};  \
-	 done)
-	${CP} -r ${WRKSRC}/data ${UCSDIR}
+.for f in ${UCSFILES}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${UCSDIR}
+.endfor
+	${INSTALL_DATA_DIR} ${UCSDIR}/data
+	${INSTALL_DATA} ${WRKSRC}/data/* ${UCSDIR}/data/
 
 .include "../../mk/bsd.pkg.mk"
