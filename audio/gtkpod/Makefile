@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/10/01 19:54:41 smb Exp $
+# $NetBSD: Makefile,v 1.4 2005/10/10 17:18:04 hira Exp $
 #
 
 DISTNAME=	gtkpod-0.94.0
@@ -18,6 +18,8 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=	pkg-config
 
 BUILDLINK_DEPENDS.gtk2+=	gtk2+>=2.4.0
+
+.include "options.mk"
 
 .include "../../audio/libid3tag/buildlink3.mk"
 .include "../../devel/atk/buildlink3.mk"
