@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2005/10/16 12:26:15 jmmv Exp $
+# $NetBSD: Makefile,v 1.135 2005/11/13 06:37:02 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -112,6 +112,7 @@ SUBDIR+=	tex-IEEEtran
 SUBDIR+=	tex-bagpipetex
 SUBDIR+=	tex-chemarrow
 SUBDIR+=	tex-eurosym
+SUBDIR+=	tex-foiltex
 SUBDIR+=	tex-hugelatex
 SUBDIR+=	tex-jadetex
 SUBDIR+=	tex-musixtex
