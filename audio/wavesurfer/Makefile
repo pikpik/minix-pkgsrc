@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/11/27 10:52:06 gson Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:44:57 tv Exp $
 
 DISTNAME=	wavesurfer-1.7.4
 CATEGORIES=	audio
@@ -19,7 +19,7 @@ SUBST_CLASSES+=		wish
 SUBST_MESSAGE.wish=	"Fixing hardcoded command names."
 SUBST_STAGE.wish=	post-patch
 SUBST_FILES.wish=	wavesurfer.tcl
-SUBST_SED.wish=		-e 's,wish8.4,wish,g' \
+SUBST_SED.wish=		-e 's,wish8.4,wish,g'
 
 INSTALLATION_DIRS=	bin lib
 
