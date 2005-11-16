@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.166 2005/07/31 03:46:05 grant Exp $
+# $NetBSD: Makefile,v 1.167 2005/08/23 11:48:48 rillig Exp $
 
 DISTNAME=	postfix-2.2.5
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/
 
