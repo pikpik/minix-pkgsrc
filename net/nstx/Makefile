@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/16 02:04:39 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/11/16 02:07:51 minskim Exp $
 #
 
-DISTNAME=		nstx-1.1beta6
+DISTNAME=		nstx-1.1-beta6
+PKGNAME=		${DISTNAME:S/-beta/beta/}
 CATEGORIES=		net
 MASTER_SITES=		http://nstx.dereference.de/nstx/
 EXTRACT_SUFX=		.tgz
