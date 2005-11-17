@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/17 20:59:27 tonio Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/31 11:25:14 tonio Exp $
 #
 
 DISTNAME=	chef.l
@@ -23,7 +23,7 @@ INSTALLATION_DIRS=	bin
 
 do-extract:
 	# deal with the dos encoding of the file
-	${CP} ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ${WRKDIR}/chef.l.tmp
+	${CP} ${DISTDIR}/${DIST_SUBDIR}/${DISTNAME}${EXTRACT_SUFX} ${WRKDIR}/chef.l.tmp
 	cd ${WRKSRC} && ${TR} '\015' '\n' < chef.l.tmp > chef.l
 	cd ${WRKSRC} && ${RM} chef.l.tmp
 
