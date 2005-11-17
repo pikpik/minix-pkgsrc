@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/11/02 00:20:38 seb Exp $
+# $NetBSD: Makefile,v 1.18 2005/11/16 01:40:15 seb Exp $
 
 DISTNAME=		amarok-1.3.6
 CATEGORIES=		audio kde
@@ -13,6 +13,7 @@ USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake pkg-config
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+USE_LIBTOOL=		yes
 
 CONFIGURE_ARGS+=	--without-nmm
 CONFIGURE_ARGS+=	--without-mas
