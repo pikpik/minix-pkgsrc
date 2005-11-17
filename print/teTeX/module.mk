@@ -1,10 +1,10 @@
-# $NetBSD: module.mk,v 1.2 2005/11/15 07:13:19 minskim Exp $
+# $NetBSD: module.mk,v 1.3 2005/11/17 00:42:14 minskim Exp $
 #
 # This Makefile fragment is intended to be included by packages that
 # install TeX packages.  It takes care of rebuilding the ls-R database
 # at (de)installation time.
 #
-# The following variable can be defined:
+# The following variables can be defined:
 #
 #    TEXMFDIRS - A list of TEXMF directories that need to update ls-R.
 #                Default: ${PKG_LOCALTEXMFPREFIX}
