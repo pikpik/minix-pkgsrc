@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.5 2005/06/01 18:02:38 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/10/16 15:19:46 wiz Exp $
 
 DISTNAME=		kmp-0.01
 PKGREVISION=		1
 CATEGORIES=		audio
-MASTER_SITES=		http://www.threadbox.net/code/files/kmp/
+MASTER_SITES=		http://mercury.chem.pitt.edu/~shank/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkg@burningsoda.com
-HOMEPAGE=		http://www.threadbox.net/index.php/code/kmp/
+#HOMEPAGE=		http://www.threadbox.net/index.php/code/kmp/
 COMMENT=		Qt client for the Music Player Daemon
 
 USE_LANGUAGES=		c++
