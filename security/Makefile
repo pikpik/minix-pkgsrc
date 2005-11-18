@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.253 2005/11/02 09:20:51 taca Exp $
+# $NetBSD: Makefile,v 1.254 2005/11/03 06:35:30 taca Exp $
 #
 
 COMMENT=	Security tools
@@ -102,6 +102,8 @@ SUBDIR+=	logcheck
 SUBDIR+=	lsh
 SUBDIR+=	lsh2
 SUBDIR+=	mcrypt
+SUBDIR+=	md4-collision
+SUBDIR+=	md5-collision
 SUBDIR+=	mhash
 SUBDIR+=	mirrordir
 SUBDIR+=	mit-krb5
