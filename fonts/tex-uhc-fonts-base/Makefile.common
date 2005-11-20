@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2005/11/15 19:54:20 minskim Exp $
+# $NetBSD: Makefile.common,v 1.2 2005/11/17 00:42:14 minskim Exp $
 
 DISTNAME=	uhc-fonts-1.0
 CATEGORIES=	fonts
@@ -9,8 +9,6 @@ MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://project.ktug.or.kr/hlatex/install-fonts.html
 
 TEX_ACCEPTED=	teTeX3
-
-BUILDLINK_DEPENDS.teTeX-bin+=	teTeX-bin>=3.0nb4
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
