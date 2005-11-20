@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/05/22 20:07:41 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:41 jlam Exp $
 #
 
 DISTNAME=	gnucap-0.34
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.gnucap.org/ \
 		http://www.kettering.edu/~adavis/gnucap/
 
 MAINTAINER=	dmcmahill@NetBSD.org
-HOMEPAGE=	http://www.gnucap.org
+HOMEPAGE=	http://www.gnucap.org/
 COMMENT=	General purpose circuit simulator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
