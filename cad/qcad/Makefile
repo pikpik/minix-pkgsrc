@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/08/18 23:51:24 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.27 2005/08/20 02:23:25 dmcmahill Exp $
 
 DISTNAME=		qcad-1.5.4-src
 PKGNAME=		qcad-1.5.4
@@ -27,7 +27,7 @@ QCAD_OPSYS = BSD
 QCAD_OPSYS = IRIX
 .else
 QCAD_OPSYS = UNKNOWN
-PKG_FAIL_REASON=	"Unknown operating system for ${PKGNAME}
+PKG_FAIL_REASON+=	"Unknown operating system for ${PKGNAME}"
 .endif
 
 do-configure:
