@@ -151,7 +151,7 @@ BULK_DBFILE?=	${BULKFILESDIR}/.bulk_db${BULK_ID}
 # A list of pkgs which we should _never_ delete during a build.  The primary
 # use is for digest and also for xpkgwedge.  Add pkgtools/xpkgwedge in
 # /etc/mk.conf to do an xpkgwedged bulk build.
-BULK_PREREQ+=		pkgtools/digest security/audit-packages
+BULK_PREREQ+=		pkgtools/digest
 
 # Commands for printing informational messages from the bulk build.
 # BULK_MSG_CONT is used for continuing a message started with BULK_MSG
