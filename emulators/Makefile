@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.138 2005/10/05 12:00:09 skrll Exp $
+# $NetBSD: Makefile,v 1.139 2005/10/21 03:52:01 minskim Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -123,6 +123,7 @@ SUBDIR+=	ucon64
 SUBDIR+=	uips
 SUBDIR+=	vba
 SUBDIR+=	vice
+SUBDIR+=	vmips
 SUBDIR+=	vmware
 SUBDIR+=	vmware-module
 SUBDIR+=	vmware-module3
