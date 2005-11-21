@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.8 2005/08/23 19:33:52 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2005/08/24 04:47:10 schmonz Exp $
 #
 
 DISTNAME=		bglibs-1.027
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${HOMEPAGE}
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://untroubled.org/bglibs/
 COMMENT=		Collection of libraries by Bruce Guenter
-
-BUILD_TARGET=		all
-INSTALL_TARGET=		install
 
 DJB_RESTRICTED=		NO
 DJB_MAKE_TARGETS=	NO
