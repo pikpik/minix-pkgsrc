@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/06/16 06:57:43 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/11/09 07:17:04 reed Exp $
 #
 
 DISTNAME=	latex2rtf-1.9.16a
@@ -10,10 +10,9 @@ MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://latex2rtf.sourceforge.net/
 COMMENT=	LaTeX to RTF converter
 
+USE_TOOLS+=	perl
 MAKE_FLAGS+=	XCFLAGS="${CFLAGS}"
-
 INFO_FILES=	latex2rtf.info
-
 INSTALLATION_DIRS=	share/doc/latex2rtf ${INFO_DIR}
 
 post-install:
