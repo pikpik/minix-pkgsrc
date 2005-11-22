@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/06/16 06:57:47 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/11/08 03:24:32 dan Exp $
 #
 
 DISTNAME=		monotone-viz-0.12
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://oandrieu.nerim.net/monotone-viz/
 
@@ -23,5 +24,6 @@ do-install:
 .include "../../x11/lablgtk2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
+.include "../../graphics/graphviz/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
