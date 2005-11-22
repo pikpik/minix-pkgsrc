@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2005/07/21 16:29:43 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/08/10 20:56:11 jlam Exp $
 #
 
-DISTNAME=		gmpc-0.11.2
+DISTNAME=		gmpc-0.12.0
 CATEGORIES=		audio
 MASTER_SITES=		http://download.qballcow.nl/programs/gmpc/
 
@@ -15,7 +15,11 @@ USE_TOOLS+=		pkg-config
 
 USE_DIRS+=		xdg-1.1
 
-.include "../../textproc/intltool/buildlink3.mk"
+.include "../../audio/libmpd/buildlink3.mk"
+.include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../textproc/intltool/buildlink3.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
