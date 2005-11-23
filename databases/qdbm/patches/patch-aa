@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	2005-08-31 12:19:56.000000000 -0700
+--- Makefile.in.orig	2005-09-01 04:19:56.000000000 +0900
 +++ Makefile.in
 @@ -45,13 +45,13 @@ MYLIBDIR = @libdir@
  MYBINDIR = @bindir@

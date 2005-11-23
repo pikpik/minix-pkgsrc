@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/23 19:01:56 minskim Exp $
+# $NetBSD$
 #
 
-DISTNAME=	qdbm-1.8.33
-CATEGORIES=	databases
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qdbm/}
+.include "Makefile.common"
 
-MAINTAINER=	obata@lins.jp
-HOMEPAGE=	http://qdbm.sourceforge.net/
+CATEGORIES=	databases
+
 COMMENT=	Quick Database Manager - library of routines for managing a db
 
 GNU_CONFIGURE=	yes

@@ -18,5 +18,10 @@ BUILDLINK_PKGSRCDIR.qdbm?=	../../databases/qdbm
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
+.if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} != "none"
+CONFIGURE_ARGS+=	--enable-pthread
+BUILDLINK_CFLAGS.qdbm+=	${PTHREAD_CFLAGS}
+BUILDLINK_LDFLAGS.qdbm+=${PTHREAD_LDFLAGS}
+.endif
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
