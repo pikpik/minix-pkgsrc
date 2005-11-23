@@ -65,7 +65,7 @@
 #include "lib.h"
 
 #ifndef lint
-__RCSID("$NetBSD: fexec.c,v 1.5 2003/10/29 23:00:28 jlam Exp $");
+__RCSID("$NetBSD: fexec.c,v 1.6 2005/11/22 15:44:59 ben Exp $");
 #endif
 
 static int	vfcexec(const char *, int, const char *, va_list);
@@ -111,8 +111,6 @@ vfcexec(const char *path, int skipempty, const char *arg, va_list ap)
 	static unsigned int	max = 4;
 	static const char	**argv = NULL;
 	unsigned int		argc;
-	pid_t			child;
-	int			status;
 
 	if (argv == NULL) {
 		argv = malloc(max * sizeof(const char *));
