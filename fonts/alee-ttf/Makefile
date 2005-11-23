@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/10/12 19:34:14 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2005/11/03 13:39:58 rillig Exp $
 #
 
-DISTNAME=	ttf-alee_5.4
-PKGNAME=	alee-ttf-5.4
+DISTNAME=	ttf-alee_6.0
+PKGNAME=	${DISTNAME:S/ttf-alee_/alee-ttf-/}
 CATEGORIES=	fonts korean
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/t/ttf-alee/}
 
