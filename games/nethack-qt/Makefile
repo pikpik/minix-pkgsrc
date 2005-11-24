@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/07/19 10:17:59 grant Exp $
+# $NetBSD: Makefile,v 1.45 2005/09/22 14:55:07 wiz Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -16,8 +16,6 @@ BUILD_TARGET=		x11tiles nethack
 INSTALL_TARGET=		binfiles
 MAKE_ENV+=		GTYPE=-qt
 CFLAGS+=		-DPREFIX="\"${PREFIX}\""
-
-ALLFILES=		${DISTFILES}	# don't checksum shared patches
 
 post-install:
 	@${CP} -f ${WRKSRC}/dat/x11tiles ${WRKSRC}/dat/tiles.xpm
