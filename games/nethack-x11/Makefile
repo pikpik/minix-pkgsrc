@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/07/19 10:17:59 grant Exp $
+# $NetBSD: Makefile,v 1.29 2005/09/22 14:55:07 wiz Exp $
 #
 
 .include		"../nethack-lib/Makefile.common"
@@ -16,7 +16,6 @@ BUILD_TARGET=		x11tiles nethack
 INSTALL_TARGET=		binfiles
 MAKE_ENV+=		GTYPE=-x11
 
-ALLFILES+=		${DISTFILES}
 FONTS_X11_DIRS+=	${PREFIX}/lib/X11/fonts/misc
 
 INSTALLATION_DIRS=	lib/X11/app-defaults lib/X11/fonts/misc
