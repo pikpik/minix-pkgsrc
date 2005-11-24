@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:06 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/07/16 01:19:18 jlam Exp $
 #
 
-DISTNAME=		revbump-1.0
+DISTNAME=		revbump-1.1
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
@@ -28,6 +28,8 @@ do-build:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/blbump ${PREFIX}/bin
+	${INSTALL_MAN} ${FILESDIR}/blbump.1 ${PREFIX}/man/man1
 	${INSTALL_SCRIPT} ${WRKDIR}/revbump ${PREFIX}/bin
+	${INSTALL_MAN} ${FILESDIR}/revbump.1 ${PREFIX}/man/man1
 
 .include "../../mk/bsd.pkg.mk"
