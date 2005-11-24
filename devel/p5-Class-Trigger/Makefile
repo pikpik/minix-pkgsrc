@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:23 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/06 06:19:09 jlam Exp $
 #
 
-DISTNAME=	Class-Trigger-0.09
+DISTNAME=	Class-Trigger-0.10
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5ctr
-PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Class/}
 
 MAINTAINER=	hiramatu@boreas.dti.ne.jp
 HOMEPAGE=	http://search.cpan.org/dist/Class-Trigger/
-COMMENT=	Mixin to add / call inheritable triggers
+COMMENT=	Mixin to add/call inheritable triggers
 
 DEPENDS+=	p5-Class-Data-Inheritable>=0.02:../../devel/p5-Class-Data-Inheritable
 DEPENDS+=	p5-IO-stringy>=0.02:../../devel/p5-IO-stringy
