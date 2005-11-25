@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2005/10/07 19:48:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.97 2005/11/20 16:50:19 wiz Exp $
 #
 
 DISTNAME=		gtk+-2.8.7
@@ -63,6 +63,8 @@ SUBST_STAGE.pthread=	pre-configure
 SUBST_MESSAGE.pthread=	"Fixing pthread flags."
 SUBST_SED.pthread=	-e 's,__PTHREAD_FLAGS__,${BUILDLINK_LDFLAGS.pthread},g'
 SUBST_FILES.pthread=	gdk-pixbuf/Makefile.in
+
+.include "options.mk"
 
 .include "../../mk/compiler.mk"
 
