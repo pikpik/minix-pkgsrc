@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.38 2005/06/02 23:26:41 salo Exp $
+# $NetBSD: Makefile,v 1.39 2005/08/19 18:12:39 jlam Exp $
 
-DISTNAME=	horde-2.2.8
-PKGREVISION=	1
+DISTNAME=	horde-2.2.9
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.horde.org/pub/horde/tarballs/
 
-MAINTAINER=	bouyer@NetBSD.org
+MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://www.horde.org/
 COMMENT=	PHP application framework
 
