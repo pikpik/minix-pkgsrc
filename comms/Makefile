@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.60 2005/10/13 16:06:02 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2005/10/13 16:58:08 wiz Exp $
 #
 
 COMMENT=	Communication utilities
 
 SUBDIR+=	asterisk
+SUBDIR+= asterisk-sounds-de-x9media-20051126
 SUBDIR+=	asterisk-sounds-extra
 SUBDIR+=	binkd
 SUBDIR+=	birda
