@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/05/30 15:39:11 dillo Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:09 jlam Exp $
 
 PKGNAME=	ghostscript-gnu-${GS_VERS}
+PKGREVISION=	1
 COMMENT=	GNU Postscript interpreter with all drivers
 
 CONFIGURE_ARGS+=	--with-x
