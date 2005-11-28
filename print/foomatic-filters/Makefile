@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/08/06 06:19:29 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/10/10 20:30:07 reed Exp $
 
 DISTNAME=	foomatic-filters-3.0.2
 PKGREVISION=	1
@@ -27,7 +27,7 @@ CONFIGURE_ENV+= 	CUPS_FILTERS=${LOCALBASE}/lib/cups/filter
 CONFIGURE_ENV+= 	PRINTCAP=/etc/printcap
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR}
 
-USE_TOOLS+=	gmake perl:run
+USE_TOOLS+=	gmake gs:run perl:run
 USE_PKGINSTALL=	yes
 INSTALL_TARGET=	install-bin install-man
 
@@ -39,5 +39,4 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/filter.conf ${EGDIR}
 
-.include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"

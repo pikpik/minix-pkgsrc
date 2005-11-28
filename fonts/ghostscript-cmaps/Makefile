@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/04/24 22:46:10 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/20 19:16:21 jlam Exp $
 
 DISTNAME=	ghostscript-cmaps-20020913
 PKGREVISION=	1
@@ -17,6 +17,7 @@ ADOBE_RESOURCEDIR=	${PREFIX}/share/Adobe/Resource
 GS_RESOURCEDIR=		${PREFIX}/share/ghostscript/Resource
 
 EXTRACT_ONLY=		# empty
+USE_TOOLS+=		gs:run
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
 USE_PKGINSTALL=		yes
@@ -32,5 +33,4 @@ REQD_DIRS=		${GS_RESOURCEDIR} ${GS_RESOURCEDIR}/CMap
 
 do-install:	# nothing
 
-.include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/11/03 05:10:16 taca Exp $
+# $NetBSD: Makefile,v 1.12 2005/11/03 07:20:28 taca Exp $
 
 DISTNAME=	RMagick-1.9.3
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -12,7 +12,7 @@ COMMENT=	Ruby ImageMagick extension
 
 RUBY_HAS_ARCHLIB=	yes
 GNU_CONFIGURE=		yes
-USE_GHOSTSCRIPT=	build
+USE_TOOLS+=		gs
 
 CONFIGURE_ARGS+=	--with-doc-dir=${RUBY_DOCDIR}/RMagick
 CONFIGURE_ARGS+=	--without-graphics-magick
@@ -25,5 +25,4 @@ post-install:
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../lang/ruby/modules.mk"
-.include "../../mk/ghostscript.mk"
 .include "../../mk/bsd.pkg.mk"
