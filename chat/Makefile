@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2005/11/02 08:36:15 jlam Exp $
+# $NetBSD: Makefile,v 1.116 2005/11/04 11:48:00 rillig Exp $
 #
 
 COMMENT=	Communication programs
@@ -88,6 +88,7 @@ SUBDIR+=	tkicb
 SUBDIR+=	tkirc
 SUBDIR+=	tkirc2
 SUBDIR+=	tzc
+SUBDIR+=	unrealircd
 SUBDIR+=	vicq
 SUBDIR+=	weechat
 SUBDIR+=	xaric
