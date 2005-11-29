@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.696 2005/11/23 22:06:10 wiz Exp $
+# $NetBSD: Makefile,v 1.697 2005/11/24 18:48:41 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -614,6 +614,7 @@ SUBDIR+=	tkdiff
 SUBDIR+=	tla
 SUBDIR+=	tmake
 SUBDIR+=	tpasm
+SUBDIR+=	tre
 SUBDIR+=	treecc
 SUBDIR+=	trio
 SUBDIR+=	tvision
