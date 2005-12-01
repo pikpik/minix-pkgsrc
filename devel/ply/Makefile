@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/03/24 21:12:53 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:36 tv Exp $
 
 DISTNAME=	ply-1.5
 CATEGORIES=	devel
@@ -19,7 +19,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/ply.html ${DOCDIR}
-	${INSTALL_DATA_DIR} /${EGDIR}
+	${INSTALL_DATA_DIR} ${EGDIR}
 	cd ${WRKSRC}/example && ${PAX} -rwppm * ${EGDIR}
 
 .include "../../lang/python/extension.mk"
