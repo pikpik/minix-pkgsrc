@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/07/19 10:16:09 grant Exp $
+# $NetBSD: Makefile,v 1.23 2005/09/28 20:52:25 rillig Exp $
 
 DISTNAME=		trn-4.0-test76
 PKGNAME=		trn-4.76
@@ -15,13 +15,7 @@ LICENSE=		trn-license
 
 PKG_SYSCONFSUBDIR=	nntp
 
-.include "../../mk/bsd.prefs.mk"
-
-.if defined(USE_INN) && ${USE_INN} == YES
-DEPENDS=		inn>=2.2:../../news/inn
-.else
-DEPENDS=		nntpclnt>=1.6.1:../../news/nntpclnt
-.endif
+.include "options.mk"
 
 # TRN_HOSTBITS determines the number of "name segments" (x.y.z.com), counting
 # from right to left, that TRN will match to allow cancels, with 0 requiring
