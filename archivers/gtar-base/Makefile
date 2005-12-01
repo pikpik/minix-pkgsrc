@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/10/23 18:05:06 rillig Exp $
+# $NetBSD: Makefile,v 1.45 2005/11/04 16:39:50 rillig Exp $
 #
 
 DISTNAME=       tar-1.15.1
@@ -36,7 +36,7 @@ CONFIGURE_ARGS+=	--program-prefix=${GTAR_PROGRAM_PREFIX}
 # lie to configure about gettext -- it does not need GNU gettext
 CONFIGURE_ENV+=		gt_cv_func_gnugettext2_libintl=yes
 
-PLIST_SUBST+=		GTAR_PROGRAM_PREFIX=${GTAR_PROGRAM_PREFIX}
+PLIST_SUBST+=		GTAR_PROGRAM_PREFIX=${GTAR_PROGRAM_PREFIX:Q}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 BUILD_DEFS+=		GTAR_PROGRAM_PREFIX
 

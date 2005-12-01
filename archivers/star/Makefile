@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/05/22 20:07:37 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/10/03 11:22:02 joerg Exp $
 #
 
 DISTNAME=	star-1.4.3
@@ -12,7 +12,7 @@ COMMENT=	The fastest tar like archiver for UNIX
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
-MAKE_FLAGS+=	INS_BASE=${PREFIX}
+MAKE_FLAGS+=	INS_BASE=${PREFIX:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

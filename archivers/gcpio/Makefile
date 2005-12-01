@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/10/04 18:14:30 reed Exp $
+# $NetBSD: Makefile,v 1.26 2005/11/03 19:38:50 adrianp Exp $
 #
 
 DISTNAME=       cpio-2.6
@@ -27,7 +27,7 @@ LIBS+=		-lgnumalloc
 .if defined(GNU_PROGRAM_PREFIX)
 CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX}
 .endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
+PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
 .include "../../mk/bsd.pkg.mk"

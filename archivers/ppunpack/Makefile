@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/11 21:44:50 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/23 20:43:26 rillig Exp $
 
 DISTNAME=	ppsmall-1.0
 PKGNAME=	ppunpack-1.0
@@ -17,7 +17,7 @@ WRKSRC=		${WRKDIR}/PPUnpack
 .include "../../mk/bsd.prefs.mk"
 
 MAKE_FLAGS+=	CC=${CC:Q}
-MAKE_FLAGS+=	COPTS=${CFLAGS:Q}
+MAKE_FLAGS+=	COPTS=${CFLAGS:M*:Q}
 BUILD_TARGET=	ppunpack
 LICENSE=	no-commercial-use
 
