@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/06/16 06:57:49 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/10/24 19:48:24 rillig Exp $
 
 DISTNAME=	ng-1.4.3
 PKGREVISION=	1
@@ -14,7 +14,6 @@ WRKSRC=         ${WRKDIR}/ng
 PKG_SUPPORTED_OPTIONS=	canna
 PKG_SUGGESTED_OPTIONS=	canna
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ng
-PKG_OPTIONS_LEGACY_VARS=	USE_CANNA:canna
 
 .include "../../mk/bsd.options.mk"
 
