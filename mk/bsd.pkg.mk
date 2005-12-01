@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1769 2005/11/29 22:18:38 reed Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1770 2005/12/01 00:17:05 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -1403,7 +1403,8 @@ do-fetch:
 .if !target(show-depends-dirs)
 _ALL_DEPENDS=		${DEPENDS} ${BUILD_DEPENDS}
 show-depends-dirs: do-check-pkg-fail-reason
-	@dlist="";							\
+	@set -e;							\
+	dlist="";							\
 	depends=${_ALL_DEPENDS:C/^[^:]*://:O:u:Q};			\
 	for reldir in $$depends; do					\
 		case $$reldir in					\
