@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2005/11/01 03:54:44 dmcmahill Exp $
+# $NetBSD: Makefile.common,v 1.2 2005/11/19 15:37:08 rillig Exp $
 #
 
 DISTNAME=       wcalc-0.9
@@ -9,6 +9,7 @@ MAINTAINER=     dmcmahill@NetBSD.org
 HOMEPAGE=       http://wcalc.sourceforge.net/
 
 DISTINFO_FILE=	${.CURDIR}/../../cad/wcalc/distinfo
+PATCHDIR=	${.CURDIR}/../../cad/wcalc/patches
 
 GNU_CONFIGURE=  YES
 USE_LIBTOOL=	YES
