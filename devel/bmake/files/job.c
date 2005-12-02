@@ -1109,7 +1109,7 @@ JobFinish (Job *job, WAIT_T status)
 #endif
 	    (void)fflush(out);
 	    return;
-	} else if (WIFSTOPPED(status) &&  WTERMSIG(status) == SIGCONT) {
+	} else if (WIFSTOPPED(status) &&  WSTOPSIG(status) == SIGCONT) {
 	    /*
 	     * If the beastie has continued, shift the Job from the stopped
 	     * list to the running one (or re-stop it if concurrency is
