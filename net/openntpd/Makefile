@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/12 04:15:50 grant Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/23 11:48:50 rillig Exp $
 
 DISTNAME=		openntpd-3.7p1
 CATEGORIES=		net
@@ -17,7 +17,7 @@ CONFLICTS+=		ntp-[0-9]*
 
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	sysconfdir=${PKG_SYSCONFDIR:Q}
 
 EGDIR=			${PREFIX}/share/examples/openntpd
 CONF_FILES=		${EGDIR}/ntpd.conf ${PKG_SYSCONFDIR}/ntpd.conf
