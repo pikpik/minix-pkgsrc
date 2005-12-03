@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/07/19 14:23:48 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2005/08/19 18:12:38 jlam Exp $
 
 DISTNAME=		vlnx424e
 PKGNAME=		uvscan-4.24.1
@@ -58,6 +58,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/liblnxfv.so.4 ${UVSCANDIR}
 	${RM} -f ${UVSCANDIR}/liblnxfv.so
 	${LN} -s liblnxfv.so.4 ${UVSCANDIR}/liblnxfv.so
+	${INSTALL_DATA_DIR} ${PREFIX}/emul/linux/usr/local/lib
 	for file in liblnxfv.so.4 liblnxfv.so; do			\
 		${RM} -f ${PREFIX}/emul/linux/usr/local/lib/$${file};	\
 		${LN} -s ${UVSCANDIR}/$${file}				\
