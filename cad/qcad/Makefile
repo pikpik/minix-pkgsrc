@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/08/20 02:23:25 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.28 2005/11/20 14:07:11 rillig Exp $
 
 DISTNAME=		qcad-1.5.4-src
 PKGNAME=		qcad-1.5.4
@@ -21,7 +21,7 @@ INSTALLATION_DIRS=	bin
 QCAD_OPSYS = LINUX
 .elif ${OPSYS} == "SunOS"
 QCAD_OPSYS = SOLARIS
-.elif !empty(OPSYS:M*BSD)
+.elif !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly"
 QCAD_OPSYS = BSD
 .elif !empty(OPSYS:MIRIX)
 QCAD_OPSYS = IRIX
