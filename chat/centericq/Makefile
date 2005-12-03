@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.53 2005/09/19 19:42:11 adrianp Exp $
+# $NetBSD: Makefile,v 1.54 2005/10/16 19:28:03 tonio Exp $
 #
 
 DISTNAME=	centericq-4.21.0
 CATEGORIES=	chat
+PKGREVISION=	1
 MASTER_SITES=	http://konst.org.ua/download/ \
 		http://centericq.de/archive/source/releases/
 EXTRACT_SUFX=	.tar.bz2
