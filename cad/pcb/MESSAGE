@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.2 2002/09/12 17:09:58 wiz Exp $
+$NetBSD: MESSAGE,v 1.1.1.1 2003/08/17 03:59:08 dmcmahill Exp $
 
 The following directories are all included in the search path for m4 files:
 
