@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/osdep/unix/mtx.c.orig	2005-12-03 00:05:28.000000000 +0000
++++ src/osdep/unix/mtx.c
+@@ -29,7 +29,6 @@
+ #include <stdio.h>
+ #include <ctype.h>
+ #include <errno.h>
+-extern int errno;		/* just in case */
+ #include "mail.h"
+ #include "osdep.h"
+ #include <pwd.h>
