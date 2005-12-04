@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/01 03:54:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2005/11/19 15:37:08 rillig Exp $
 #
 
 .include "../../cad/wcalc/Makefile.common"
@@ -38,6 +38,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 NO_MTREE=	yes
 
+do-patch:	#empty
 do-install:	# empty
 
 .include "../../mk/bsd.pkg.mk"
