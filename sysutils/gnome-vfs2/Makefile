@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.50 2005/09/05 14:15:32 adam Exp $
+# $NetBSD: Makefile,v 1.51 2005/10/07 16:10:44 drochner Exp $
+
+PKGREVISION=		1
 
 PKGCONFIG_OVERRIDE=	gnome-vfs-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	gnome-vfs-module-2.0.pc.in
@@ -13,6 +15,7 @@ GCONF2_SCHEMAS+=	desktop_gnome_url_handlers.schemas
 GCONF2_SCHEMAS+=	system_dns_sd.schemas
 GCONF2_SCHEMAS+=	system_http_proxy.schemas
 GCONF2_SCHEMAS+=	system_smb.schemas
+GCONF2_SCHEMAS+=	system_storage.schemas
 
 LDFLAGS.Darwin+=	-lresolv
 
