@@ -1,0 +1,15 @@
+@comment $NetBSD$
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/DeltaCache.pm
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/Delta.pm
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/Exception.pm
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/File.pm
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/Reader.pm
+${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository/Revision.pm
+bin/refinecvs
+share/doc/refinecvs/Changes
+share/doc/refinecvs/README
+share/doc/refinecvs/TODO
+share/doc/refinecvs/LICENSE
+@dirrm ${PERL5_SUB_INSTALLARCHLIB}/Cvs/Repository
+@dirrm ${PERL5_SUB_INSTALLARCHLIB}/Cvs
+@dirrm share/doc/refinecvs
