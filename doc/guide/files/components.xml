@@ -430,9 +430,12 @@
   <sect1 id="files-dir">
     <title><filename>files/*</filename></title>
 
-    <para>If you have any files that you wish to be placed in the
-    package prior to configuration or building, you should place these
-    files here and use a <quote>${CP}</quote> command in the
-    <quote>pre-configure</quote> target to achieve this.</para>
+    <para>If you have any files that you wish to be placed in the package prior
+      to configuration or building, you could place these files here and use
+      a <quote>${CP}</quote> command in the
+      <quote>pre-configure</quote> target to achieve 
+      this. Alternatively, you could simply diff the file against
+      <filename>/dev/null</filename> and use the patch mechanism to manage
+      the creation of this file.</para>
   </sect1>
 </chapter>
