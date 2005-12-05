@@ -11,7 +11,7 @@
 # Freely redistributable.  Absolutely no warranty.
 #
 # From Id: portlint.pl,v 1.64 1998/02/28 02:34:05 itojun Exp
-# $NetBSD: pkglint.pl,v 1.412 2005/12/02 20:15:00 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.413 2005/12/03 03:16:18 rillig Exp $
 #
 # This version contains lots of changes necessary for NetBSD packages
 # done by:
@@ -1604,8 +1604,6 @@ sub checkfile_patches_patch($) {
 	checklines_trailing_empty_lines($lines);
 
 	checklines_multiple_patches($lines);
-
-	autofix($lines);
 }
 
 #
