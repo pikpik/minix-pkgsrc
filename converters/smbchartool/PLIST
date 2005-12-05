@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/capecho
+bin/hexecho
+bin/smbfnconv
+share/doc/smbchartool/README
+share/doc/smbchartool/dot.profile
+@dirrm share/doc/smbchartool
