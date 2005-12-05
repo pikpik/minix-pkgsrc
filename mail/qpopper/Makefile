@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2005/06/01 20:55:16 adrianp Exp $
+# $NetBSD: Makefile,v 1.51 2005/06/13 16:53:47 taca Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -37,7 +37,7 @@ MESSAGE_SUBST+=		RCD_SCRIPTS=${RCD_SCRIPTS} \
 			RCD_SCRIPTS_DIR=${RCD_SCRIPTS_DIR}
 
 PKG_USERS?=		${QPOPPER_USER}:${QPOPPER_GROUP}
-MAKE_ENV+=		BINGRP=${BINGRP}
+MAKE_ENV+=		BINGRP=${BINGRP:Q}
 
 pre-build:
 	${SED}	-e "s|/usr/local/lib|${PREFIX}/libexec|g"		\
