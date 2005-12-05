@@ -1,4 +1,4 @@
-# $NetBSD: motif.buildlink3.mk,v 1.8 2005/06/01 18:03:06 jlam Exp $
+# $NetBSD: motif.buildlink3.mk,v 1.9 2005/11/04 15:29:21 rillig Exp $
 #
 # Package-settable variables:
 #
@@ -91,8 +91,8 @@ MOTIFBASE=		${_MOTIFBASE}
 
 .include "../../mk/x11.buildlink3.mk"
 
-MAKE_ENV+=		MOTIFLIB="${MOTIFLIB}"
-MAKE_ENV+=		MOTIFBASE="${_MOTIFBASE}"
+MAKE_ENV+=		MOTIFLIB=${MOTIFLIB:Q}
+MAKE_ENV+=		MOTIFBASE=${_MOTIFBASE:Q}
 CPPFLAGS+=		-I${_MOTIFBASE}/include
 LDFLAGS+=		-L${_MOTIFBASE}/lib
 LDFLAGS+=		${COMPILER_RPATH_FLAG}${_MOTIFBASE}/lib

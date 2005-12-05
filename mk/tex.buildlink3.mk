@@ -1,4 +1,4 @@
-# $NetBSD: tex.buildlink3.mk,v 1.6 2005/11/15 17:22:40 minskim Exp $
+# $NetBSD: tex.buildlink3.mk,v 1.7 2005/11/20 18:14:49 minskim Exp $
 #
 # A Makefile fragment for TeX and LaTeX packages
 #
@@ -128,7 +128,7 @@ PKG_TEXMFPREFIX=	${PREFIX}/share/texmf
 PKG_LOCALTEXMFPREFIX=	${PREFIX}/share/texmf
 .endif
 
-PLIST_SUBST+=	TEX_TYPE=${TEX_TYPE}
+PLIST_SUBST+=	TEX_TYPE=${TEX_TYPE:Q}
 PLIST_SUBST+=	PKG_TEXMFPREFIX=${PKG_TEXMFPREFIX:C|^${PREFIX}/||}
 PLIST_SUBST+=	PKG_LOCALTEXMFPREFIX=${PKG_LOCALTEXMFPREFIX:C|^${PREFIX}/||}
 
