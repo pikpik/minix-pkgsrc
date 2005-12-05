@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/04/06 05:28:40 epg Exp $
+# $NetBSD: Makefile,v 1.5 2005/10/29 19:29:52 epg Exp $
 
 PKGNAME=			${PYPKGPREFIX}-${DISTNAME}
 
 .include "../../www/clearsilver/Makefile.common"
 
 CONFIGURE_ARGS+=		--enable-python
-CONFIGURE_ARGS+=		--with-python=${PYTHONBIN}
+CONFIGURE_ARGS+=		--with-python=${PYTHONBIN:Q}
 
 MAKE_FLAGS+=			PYTHON_SITE=${LOCALBASE}/${PYSITELIB}
 

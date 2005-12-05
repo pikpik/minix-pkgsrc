@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/10/16 12:12:33 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2005/11/25 21:23:15 wiz Exp $
 #
 
 DISTNAME=	nautilus-cd-burner-2.12.1
@@ -25,7 +25,7 @@ GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	libnautilus-burn.pc.in
 
 CONFIGURE_ARGS+=	--disable-hal
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 CPPFLAGS+=		-D__unix__
 

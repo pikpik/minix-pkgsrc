@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.128 2005/09/22 15:30:44 tron Exp $
+# $NetBSD: Makefile,v 1.129 2005/12/05 20:50:34 rillig Exp $
 
 DISTNAME=		mutt-1.4.2.1i
 PKGNAME=		${DISTNAME:C/i$//}
@@ -22,7 +22,7 @@ BUILD_USES_MSGFMT=	yes
 USE_PKGLOCALEDIR=	yes
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}			\
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}			\
 			--with-docdir=${PREFIX}/share/doc/mutt		\
 			--without-included-gettext			\
 			--enable-pop					\

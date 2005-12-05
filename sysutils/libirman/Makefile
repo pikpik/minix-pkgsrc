@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2003/07/17 22:53:40 grant Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/31 20:31:19 minskim Exp $
 #
 
 DISTNAME=	libirman-0.4.1b
@@ -15,7 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 EGDIR=		${PREFIX}/share/examples
 CONF_FILES=	${EGDIR}/irman.conf ${PKG_SYSCONFDIR}/irman.conf

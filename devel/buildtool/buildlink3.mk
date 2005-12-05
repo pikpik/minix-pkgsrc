@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/05/16 05:09:21 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2005/12/05 20:50:02 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 BUILDTOOL_BUILDLINK3_MK:=	${BUILDTOOL_BUILDLINK3_MK}+
@@ -29,7 +29,7 @@ CONFIGURE_ENV+=		BT_PROG_CC=${CC:Q}
 CONFIGURE_ENV+=		BT_PROG_CXX=${CXX:Q}
 CONFIGURE_ENV+=		BT_PROG_LD=${LD:Q}
 CONFIGURE_ENV+=		BT_PROG_M4=${TOOLS_M4:Q}
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
+CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 .if !target(do-build)
 do-build:

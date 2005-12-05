@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:27 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/05/22 20:08:12 jlam Exp $
 #
 # TLS functionality needs testing. Please let me know the result,
 # and preferably info about your system.
@@ -19,7 +19,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV:S/.orig$//}
 USE_TOOLS+=		gmake
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 
 .include "options.mk"
 

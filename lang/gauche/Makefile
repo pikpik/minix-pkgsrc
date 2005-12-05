@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/03/07 03:16:46 uebayasi Exp $
+# $NetBSD: Makefile,v 1.30 2005/04/11 21:46:13 tv Exp $
 #
 
 DISTNAME=	Gauche-0.8.3
@@ -40,7 +40,7 @@ INFO_FILES=		gauche-refe.info gauche-refj.info
 .include "../../mk/bsd.pkg.mk"
 
 .if !empty(_WITH_ICONV_LIB)
-CONFIGURE_ARGS+=	--with-iconv-lib=${_WITH_ICONV_LIB}
+CONFIGURE_ARGS+=	--with-iconv-lib=${_WITH_ICONV_LIB:Q}
 .else
 BUILDLINK_TRANSFORM+=	rm:-liconv
 .endif

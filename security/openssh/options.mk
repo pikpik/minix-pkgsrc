@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2005/07/28 17:54:57 reed Exp $
+# $NetBSD: options.mk,v 1.6 2005/09/21 18:07:09 reed Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -13,7 +13,7 @@ PKG_SUPPORTED_OPTIONS+= pam
 
 .if !empty(PKG_OPTIONS:Mkerberos)
 .  include "../../mk/krb5.buildlink3.mk"
-CONFIGURE_ARGS+=        --with-kerberos5=${KRB5BASE}
+CONFIGURE_ARGS+=        --with-kerberos5=${KRB5BASE:Q}
 .endif
 
 .if !empty(PKG_OPTIONS:Mhpn-patch)

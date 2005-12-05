@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/11/22 19:33:06 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:59 rillig Exp $
 
 CONFLICTS+=		bacula-client-[0-9]*
 
@@ -8,8 +8,8 @@ PLIST_SUBST+=		BACULA_DB=${BACULA_DB:Q}
 MESSAGE_SUBST+=		PREFIX=${PREFIX}
 MESSAGE_SUBST+=		PKGNAME_NOREV=${PKGNAME_NOREV}
 
-CONFIGURE_ARGS+=	--with-dir-user=${BACULA_DIR_USER} --with-dir-group=${BACULA_GROUP}
-CONFIGURE_ARGS+=	--with-sd-user=${BACULA_SD_USER} --with-sd-group=${BACULA_GROUP}
+CONFIGURE_ARGS+=	--with-dir-user=${BACULA_DIR_USER:Q} --with-dir-group=${BACULA_GROUP:Q}
+CONFIGURE_ARGS+=	--with-sd-user=${BACULA_SD_USER:Q} --with-sd-group=${BACULA_GROUP:Q}
 
 BUILD_DEFS+=		BACULA_DIR_USER BACULA_SD_USER BACULA_GROUP
 

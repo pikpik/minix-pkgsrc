@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/07/16 01:19:16 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2005/07/31 13:19:55 markd Exp $
 
 DISTNAME=	netatalk-2.0.3
 PKGREVISION=	1
@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=	--enable-netbsd \
 			--enable-timelord \
 			--libexecdir=${PREFIX}/libexec/netatalk \
 			--sbindir=${PREFIX}/libexec/netatalk \
-			--with-pkgconfdir=${PKG_SYSCONFDIR} \
+			--with-pkgconfdir=${PKG_SYSCONFDIR:Q} \
 			--with-message-dir=${PKG_SYSCONFDIR}/msg \
 			--localstatedir=${VARBASE}/netatalk \
 			--with-uams-path=${PREFIX}/libexec/netatalk/uams \

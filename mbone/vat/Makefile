@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/04/05 10:35:13 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2005/06/01 18:03:04 jlam Exp $
 #
 
 DISTNAME=		vatsrc-4.0b2
@@ -12,7 +12,7 @@ COMMENT=		The Visual Audio Tool - multicast audioconferencing
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-tcl=${PREFIX} --with-tk=${PREFIX}
+CONFIGURE_ARGS+=	--with-tcl=${PREFIX:Q} --with-tk=${PREFIX:Q}
 
 CPPFLAGS+=		-I${LOCALBASE}/include -I${LOCALBASE}/include/gsm
 

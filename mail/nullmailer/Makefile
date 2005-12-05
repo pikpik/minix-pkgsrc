@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/08/20 02:20:45 schmonz Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 20:50:34 rillig Exp $
 
 DISTNAME=		nullmailer-1.00
 CATEGORIES=		mail
@@ -11,7 +11,7 @@ COMMENT=		Simple relay-only mail transport agent
 USE_LANGUAGES=		c++
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+= 	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+= 	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/spool
 CONFIGURE_ARGS+=	--bindir=${PREFIX}/libexec/nullmailer
 CONFIGURE_ARGS+=	--sbindir=${PREFIX}/libexec/nullmailer

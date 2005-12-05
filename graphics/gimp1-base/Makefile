@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/10/23 18:58:30 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:20 rillig Exp $
 #
 
 DISTNAME=		gimp-1.2.5
@@ -24,7 +24,7 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
 # The "print" plugin gets built separately (../../print/gimp-print)

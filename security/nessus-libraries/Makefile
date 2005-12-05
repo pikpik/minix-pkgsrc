@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:47:14 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 20:50:57 rillig Exp $
 
 .include 	"../../security/nessus/Makefile.common"
 
@@ -12,7 +12,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-zlib=${BUILDLINK_PREFIX.zlib}/lib \
 			--with-ssl=${BUILDLINK_PREFIX.openssl} \
-			--localstatedir=${VARBASE}
+			--localstatedir=${VARBASE:Q}
 CONFIGURE_ENV+=		CPP=${CPP:Q}
 
 .include "../../devel/zlib/buildlink3.mk"

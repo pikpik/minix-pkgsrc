@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/11/02 23:44:07 reed Exp $
+# $NetBSD: Makefile,v 1.45 2005/11/03 00:47:11 reed Exp $
 
 .include "../../graphics/ImageMagick/Makefile.common"
 
@@ -28,7 +28,7 @@ PERL5_CONFIGURE_DIRS=	${WRKSRC}/PerlMagick
 BUILD_DIRS=		${PERL5_CONFIGURE_DIRS}
 
 # Some configure_args come from Makefile.common
-CONFIGURE_ARGS+=	--with-perl=${PERL5}
+CONFIGURE_ARGS+=	--with-perl=${PERL5:Q}
 
 post-configure: perl5-configure
 

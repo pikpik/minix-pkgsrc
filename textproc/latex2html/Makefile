@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/11/11 18:50:25 tonio Exp $
+# $NetBSD: Makefile,v 1.22 2005/11/28 06:41:22 jlam Exp $
 
 DISTNAME=	latex2html-2002-2-1
 PKGNAME=	latex2html-2002.2.1
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--enable-png	# add support of PNG images
 CONFIGURE_ARGS+=	--with-texpath=${PKG_LOCALTEXMFPREFIX}/tex/latex/html
 CONFIGURE_ARGS+=	--shlibdir=${PREFIX}/share/latex2html
 .if defined(LATEX2HTML_ICONPATH)
-CONFIGURE_ARGS+=	--with-iconpath=${LATEX2HTML_ICONPATH}
+CONFIGURE_ARGS+=	--with-iconpath=${LATEX2HTML_ICONPATH:Q}
 .endif
 
 .include "../../mk/tex.buildlink3.mk"

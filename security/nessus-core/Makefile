@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/07/29 16:42:05 tron Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/05 20:50:57 rillig Exp $
 
 .include 	"../../security/nessus/Makefile.common"
 
@@ -9,7 +9,7 @@ COMMENT=	Core module of the Nessus Network Security Scanner
 WRKSRC=		${WRKDIR}/nessus-core
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--enable-gtk --with-x --localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--enable-gtk --with-x --localstatedir=${VARBASE:Q}
 CONFIGURE_ENV+=		ac_cv_path_GTKCONFIG="pkg-config gtk+-2.0" \
 			ac_cv_path_GLIBCONFIG="pkg-config glib-2.0"
 

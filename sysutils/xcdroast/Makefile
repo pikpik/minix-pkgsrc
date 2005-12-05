@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/08/19 18:12:39 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/12/05 20:51:02 rillig Exp $
 
 DISTNAME=	xcdroast-0.98alpha15
 PKGNAME=	xcdroast-0.98a15
@@ -20,7 +20,7 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--enable-gtk2
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

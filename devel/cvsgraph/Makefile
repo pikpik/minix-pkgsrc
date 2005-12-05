@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/06/16 06:57:45 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/05 20:50:03 rillig Exp $
 #
 
 DISTNAME=	cvsgraph-1.5.1
@@ -12,7 +12,7 @@ COMMENT=	Graphically represents CVS/RCS branches and file revisions
 USE_TOOLS+=		lex
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 DOCDIR=		${PREFIX}/share/doc/${PKGBASE}
 EGDIR=		${PREFIX}/share/examples/${PKGBASE}

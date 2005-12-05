@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/08/06 06:19:41 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 20:51:15 rillig Exp $
 #
 
 DISTNAME=	wml-2.0.9
@@ -19,7 +19,7 @@ DEPENDS+=	p5-Term-ReadKey>=2.11:../../devel/p5-Term-ReadKey
 
 USE_TOOLS+=	automake
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+= --with-perl=${PERL5} \
+CONFIGURE_ARGS+= --with-perl=${PERL5:Q} \
 		--with-openworld \
 		--with-tidy=${LOCALBASE}/bin/tidy
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/11 21:48:02 tv Exp $
+# $NetBSD: Makefile,v 1.35 2005/10/23 19:50:55 heinz Exp $
 #
 
 DISTNAME=	webalizer-2.01-10-src
@@ -18,7 +18,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 WRKSRC=			${WRKDIR}/${DISTNAME:S/-src//}
 USE_PKGINSTALL=		YES
 GNU_CONFIGURE=  	YES
-CONFIGURE_ARGS+=	--with-etcdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-etcdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--enable-dns
 CONFIGURE_ENV+=		ac_cv_GDLIB=${BUILDLINK_PREFIX.gd}/include
 

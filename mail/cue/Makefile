@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2005/06/16 06:58:02 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2005/10/05 13:29:50 wiz Exp $
 
 DISTNAME=	cue-snap-20050131
 PKGNAME=	cue-20050131
@@ -34,7 +34,7 @@ CONFIGURE_ARGS+=	--without-canna
 CONFIGURE_ARGS+=	--enable-idea
 .endif
 
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 
 INSTALLATION_DIRS=	bin

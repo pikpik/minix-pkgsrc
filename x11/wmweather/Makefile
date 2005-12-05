@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/06/01 18:03:32 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/03 21:04:32 joerg Exp $
 #
 
 DISTNAME=	wmweather-2.4.2
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake xmessage:run
 
 USE_PKGINSTALL=		yes
-CONFIGURE_ARGS+=	--with-sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-xmessage=${TOOLS_PATH.xmessage}
 
 EGDIR=		${PREFIX}/share/examples/${PKGBASE}

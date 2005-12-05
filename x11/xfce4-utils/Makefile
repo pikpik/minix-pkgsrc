@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/11/09 06:42:59 martti Exp $
+# $NetBSD: Makefile,v 1.17 2005/11/09 07:09:05 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -16,7 +16,7 @@ CONF_FILES=		${EGDIR}/xinitrc ${PKG_SYSCONFDIR}/xinitrc
 
 REQD_DIRS+=		${EGDIR}
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 
 .include "options.mk"
 

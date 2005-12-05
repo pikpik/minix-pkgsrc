@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2005/05/31 10:01:39 dillo Exp $
+# $NetBSD: options.mk,v 1.3 2005/10/05 13:29:49 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.wget
 PKG_SUPPORTED_OPTIONS=	inet6 ssl
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--disable-ipv6
 ###
 .if !empty(PKG_OPTIONS:Mssl)
 .  include "../../security/openssl/buildlink3.mk"
-CONFIGURE_ARGS+=--with-ssl=${SSLBASE}
+CONFIGURE_ARGS+=--with-ssl=${SSLBASE:Q}
 .else
 CONFIGURE_ARGS+=--without-ssl
 .endif

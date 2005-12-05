@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/06/19 11:34:45 veego Exp $
+# $NetBSD: Makefile,v 1.44 2005/09/26 14:07:25 wiz Exp $
 
 DISTNAME=	minicom-2.1
 PKGREVISION=	1
@@ -20,7 +20,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 PKG_SYSCONFSUBDIR=	minicom
 EGDIR=			${PREFIX}/share/examples/minicom

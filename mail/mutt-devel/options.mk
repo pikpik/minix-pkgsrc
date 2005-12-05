@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.9 2005/10/03 14:16:53 tonio Exp $
+# $NetBSD: options.mk,v 1.10 2005/10/04 15:37:32 tonio Exp $
 
 # Global and legacy options
 
@@ -35,7 +35,7 @@ CONFIGURE_ARGS+=	--with-sasl=${BUILDLINK_PREFIX.cyrus-sasl}
 ###
 .if !empty(PKG_OPTIONS:Mssl)
 .  include "../../security/openssl/buildlink3.mk"
-CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-ssl=${SSLBASE:Q}
 .else
 CONFIGURE_ARGS+=	--without-ssl
 .endif

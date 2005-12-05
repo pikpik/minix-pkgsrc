@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2005/10/13 20:58:49 jmmv Exp $
+# $NetBSD: Makefile,v 1.54 2005/11/25 21:23:15 wiz Exp $
 #
 
 DISTNAME=		nautilus-2.12.1
@@ -22,7 +22,7 @@ USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	libnautilus-extension/libnautilus-extension.pc.in
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 GCONF2_SCHEMAS=		apps_nautilus_preferences.schemas
 

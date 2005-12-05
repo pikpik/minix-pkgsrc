@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/07/21 16:29:56 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/08/10 20:56:23 jlam Exp $
 #
 
 DISTNAME=	desktop-file-utils-0.10
@@ -16,7 +16,7 @@ USE_LIBTOOL=		YES
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	EMACS=no
 
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL

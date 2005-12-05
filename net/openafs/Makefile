@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/11/02 14:42:38 gendalia Exp $
+# $NetBSD: Makefile,v 1.15 2005/11/04 07:28:47 gendalia Exp $
 
 DISTNAME=	openafs-1.4.0-src
 PKGREVISION=	1
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--enable-largefile-fileserver
 CONFIGURE_ARGS+=	--disable-kernel-module
 CONFIGURE_ARGS+=	--enable-namei-fileserver
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 USE_GNU_CONFIGURE_HOST= no
 

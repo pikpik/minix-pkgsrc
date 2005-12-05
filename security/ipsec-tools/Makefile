@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/11/22 16:22:47 tron Exp $
+# $NetBSD: Makefile,v 1.22 2005/12/05 20:50:56 rillig Exp $
 
 DISTNAME=		ipsec-tools-0.6.3
 CATEGORIES=		security
@@ -35,11 +35,11 @@ CONFIGURE_ARGS+=	--enable-frag --enable-hybrid
 CONFIGURE_ARGS+=	--enable-adminport --enable-dpd
 CONFIGURE_ARGS+=	--enable-natt=kernel
 
-CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 PLIST_SUBST+=		VARBASE=${VARBASE:Q}
 
 PKG_SYSCONFSUBDIR=	racoon
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 SAMPLE_DIR=	${WRKSRC}/src/racoon/samples
 EXAMPLE_DIR=	${PREFIX}/share/examples/ipsec-tools

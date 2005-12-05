@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/07/28 16:40:03 reed Exp $
+# $NetBSD: Makefile,v 1.45 2005/09/05 15:18:42 hira Exp $
 #
 
 DISTNAME=	fontconfig-2.3.2
@@ -28,7 +28,7 @@ CONFIGURE_ARGS+=	--with-default-fonts=${LOCALBASE}/lib/X11/fonts
 CONFIGURE_ARGS+=	--with-freetype-config=${BUILDLINK_PREFIX.freetype2}/bin/freetype-config
 CONFIGURE_ARGS+=	--with-expat-includes=${BUILDLINK_PREFIX.expat}/include
 CONFIGURE_ARGS+=	--with-expat-lib=${BUILDLINK_PREFIX.expat}/lib
-CONFIGURE_ARGS+=	--with-confdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-confdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--enable-docs
 CONFIGURE_ENV+=		HASDOCBOOK=no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.33 2005/11/11 07:04:57 rillig Exp $
+# $NetBSD: Makefile.php,v 1.34 2005/12/05 20:51:13 rillig Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -16,7 +16,7 @@ CONFIGURE_ARGS+=	--without-iconv
 
 CONFIGURE_ARGS+=	--disable-posix
 
-CONFIGURE_ARGS+=	--with-config-file-path=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-config-file-path=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-exec-dir=${PREFIX}/libexec/php4
 
 .include "../../mk/bsd.prefs.mk"

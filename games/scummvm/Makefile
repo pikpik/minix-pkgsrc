@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/06/17 04:49:46 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/10/31 09:05:34 adam Exp $
 
 DISTNAME=	scummvm-0.8.0
 CATEGORIES=	games
@@ -12,7 +12,7 @@ COMMENT=	LucasArts Script Creation Utility for Maniac Mansion
 USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
+CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 UNLIMIT_RESOURCES=	datasize
 

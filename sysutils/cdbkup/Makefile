@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/07/16 01:19:20 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:59 rillig Exp $
 
 DISTNAME=		cdbkup-1.0
 PKGREVISION=		3
@@ -29,8 +29,8 @@ CDBKUP_SNARDIR?=	/var/db/${PKGBASE}
 CDBKUP_DUMPGRP?=	operator
 .endif
 
-CONFIGURE_ARGS+=	--with-snardir=${CDBKUP_SNARDIR} \
-			--with-dumpgrp=${CDBKUP_DUMPGRP}
+CONFIGURE_ARGS+=	--with-snardir=${CDBKUP_SNARDIR:Q} \
+			--with-dumpgrp=${CDBKUP_DUMPGRP:Q}
 PLIST_SUBST+=		CDBKUP_SNARDIR=${CDBKUP_SNARDIR:Q} \
 			CDBKUP_DUMPGRP=${CDBKUP_DUMPGRP:Q} \
 			INSTALL=${INSTALL:Q} RMDIR=${RMDIR:Q} TRUE=${TRUE:Q}

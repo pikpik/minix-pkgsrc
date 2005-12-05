@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:28 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/02 17:03:54 wiz Exp $
 #
 
 DISTNAME=		tnftpd-20040810
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		YES
 MANCOMPRESSED_IF_MANZ=	YES
 USE_PKGINSTALL=		YES
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 CONF_FILES+=		${EXAMPLEDIR}/ftpd.conf ${PKG_SYSCONFDIR}/ftpd.conf
 CONF_FILES+=		${EXAMPLEDIR}/ftpusers ${PKG_SYSCONFDIR}/ftpusers

@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2005/01/14 05:15:40 jlam Exp $
+# $NetBSD: options.mk,v 1.6 2005/05/31 11:24:33 dillo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cyrus-saslauthd
 PKG_SUPPORTED_OPTIONS=	pam kerberos ldap gssapi
@@ -9,7 +9,7 @@ PKG_SUPPORTED_OPTIONS=	pam kerberos ldap gssapi
 ###
 .if !empty(PKG_OPTIONS:Mpam)
 .  include "../../mk/pam.buildlink3.mk"
-CONFIGURE_ARGS+=	--with-pam=${PAMBASE}
+CONFIGURE_ARGS+=	--with-pam=${PAMBASE:Q}
 .endif
 
 ###
@@ -39,7 +39,7 @@ PKG_OPTIONS+=		gssapi
 ###
 .if !empty(PKG_OPTIONS:Mgssapi)
 .  include "../../mk/krb5.buildlink3.mk"
-CONFIGURE_ARGS+=	--enable-gssapi=${KRB5BASE}
+CONFIGURE_ARGS+=	--enable-gssapi=${KRB5BASE:Q}
 CONFIGURE_ARGS+=	--with-gss_impl=${GSSIMPL.${KRB5_TYPE}}
 GSSIMPL.heimdal=	heimdal
 GSSIMPL.mit-krb5=	mit

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 21:31:42 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/10/03 00:13:30 tv Exp $
 #
 
 DISTNAME=	libsmi-0.1.6
@@ -15,7 +15,7 @@ MIBDIR=		${PREFIX}/share/libsmi/mibs
 USE_LIBTOOL=	YES
 LTCONFIG_OVERRIDE=${WRKSRC}/ltconfig
 GNU_CONFIGURE=	YES
-CONFIGURE_ARGS+=--with-mibdir="${MIBDIR}"
+CONFIGURE_ARGS+=--with-mibdir=${MIBDIR:Q}
 # this might make it easier to use scotty's and ucd-snmp's mibs,
 # and local ones too
 CONFIGURE_ARGS+=--with-smipath="${MIBDIR}:${PREFIX}/share/snmp/mibs:${PREFIX}/lib/tnm2.1.8/mibs:/usr/local/share/snmp/mibs"

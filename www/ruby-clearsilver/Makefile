@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/10/29 19:29:52 epg Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/02 09:48:34 taca Exp $
 
 PKGNAME=			${RUBY_PKGPREFIX}-${DISTNAME}
 PKGREVISION=			1
@@ -8,7 +8,7 @@ PKGREVISION=			1
 USE_RUBY_DIST_SUBDIR=		no
 RUBY_HAS_ARCHLIB=		yes
 CONFIGURE_ARGS+=		--enable-ruby
-CONFIGURE_ARGS+=		--with-ruby=${RUBY}
+CONFIGURE_ARGS+=		--with-ruby=${RUBY:Q}
 
 INSTALL_DIRS=			${WRKSRC}/ruby
 

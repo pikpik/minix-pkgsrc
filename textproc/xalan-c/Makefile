@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:47:43 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/05/22 20:08:36 jlam Exp $
 #
 
 DISTNAME=	Xalan-C_1_6-src
@@ -27,7 +27,7 @@ XALAN_ENV=	XALANCROOT="${WRKDIR}/xml-xalan/c" ICUROOT="${LOCALBASE}"
 
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./runConfigure
-CONFIGURE_ARGS+=	-C --prefix=${PREFIX}
+CONFIGURE_ARGS+=	-C --prefix=${PREFIX:Q}
 CONFIGURE_ARGS+=	-p ${XALAN_PLATFORM}
 CONFIGURE_ARGS+=	-t icu
 CONFIGURE_ARGS+=	-r pthread

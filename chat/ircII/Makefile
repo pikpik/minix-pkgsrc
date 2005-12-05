@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/06/02 22:21:18 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2005/12/05 20:49:53 rillig Exp $
 
 DISTNAME=		ircii-${VERS}
 PKGNAME=		ircII-${VERS}
@@ -25,7 +25,7 @@ PLIST_SUBST+= 		VERS=${VERS:Q}
 WRKSRC=			${WRKDIR}/ircii-${VERS}
 GNU_CONFIGURE=		yes
 .if defined(DEFAULT_IRC_SERVER)
-CONFIGURE_ARGS+=	--with-default-server=${DEFAULT_IRC_SERVER}
+CONFIGURE_ARGS+=	--with-default-server=${DEFAULT_IRC_SERVER:Q}
 .endif
 
 # Note: this pkg auto-detects IPv6 without regarding USE_INET6.

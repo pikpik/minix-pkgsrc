@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2005/06/19 01:46:35 salo Exp $
+# $NetBSD: options.mk,v 1.7 2005/10/05 13:29:50 wiz Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -14,7 +14,7 @@ PKG_SUGGESTED_OPTIONS=	ssl
 ###
 .if !empty(PKG_OPTIONS:Mssl)
 .	include "../../security/openssl/buildlink3.mk"
-CONFIGURE_ARGS+=	--enable-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--enable-openssl=${SSLBASE:Q}
 .else
 CONFIGURE_ARGS+=	--enable-openssl=no
 .endif

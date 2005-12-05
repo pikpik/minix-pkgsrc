@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/10/26 12:44:21 tonio Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 20:51:14 rillig Exp $
 
 DISTNAME=	snownews-1.5.7
 PKGREVISION=	2
@@ -20,7 +20,7 @@ USE_TOOLS+=		perl:run
 
 REPLACE_PERL+=		configure opml2snow snowsync
 
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
+CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 MAKE_ENV+=	PKG_LOCALEDIR=${PKGLOCALEDIR:Q}
 MAKE_ENV+=	EXTRA_CFLAGS=${CFLAGS:M*:Q}
 

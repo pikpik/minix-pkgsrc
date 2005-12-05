@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2005/06/03 14:26:30 uebayasi Exp $
+# $NetBSD: options.mk,v 1.4 2005/10/05 13:29:49 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.w3m
 PKG_SUPPORTED_OPTIONS=	w3m-lynx-key w3m-m17n w3m-unicode
@@ -54,7 +54,7 @@ _W3M_IMAGELIB=		${_imagelib:C|^w3m-image-||}
 .    endif
 .  endfor
 USE_X11=		YES
-CONFIGURE_ARGS+=	--enable-image=x11 --with-imagelib=${_W3M_IMAGELIB}
+CONFIGURE_ARGS+=	--enable-image=x11 --with-imagelib=${_W3M_IMAGELIB:Q}
 PLIST_SUBST+=		USE_IMAGE=''
 .  include "../../graphics/${_W3M_IMAGELIB}/buildlink3.mk"
 .else

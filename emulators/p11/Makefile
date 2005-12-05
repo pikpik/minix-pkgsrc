@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/05 11:14:15 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:58 jlam Exp $
 #
 
 DISTNAME=	p11-2.10a
@@ -9,7 +9,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	PDP11 emulator
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-begemot=${PREFIX}
+CONFIGURE_ARGS+=	--with-begemot=${PREFIX:Q}
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 

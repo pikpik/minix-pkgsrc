@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/07/21 16:30:01 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2005/08/10 20:56:29 jlam Exp $
 
 DISTNAME=	mlterm-2.9.2
 PKGREVISION=	1
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=	--with-imagelib=gdk-pixbuf
 CONFIGURE_ARGS+=	--with-type-engines=xft
 CONFIGURE_ARGS+=	--without-libiconv-prefix
 CONFIGURE_ARGS+=	--without-libintl-prefix
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 
 SUBST_CLASSES+=		link
 SUBST_MESSAGE.link=	"Fixing hardcoded paths and link options."

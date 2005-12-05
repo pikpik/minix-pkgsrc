@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/10/20 10:41:09 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/05 20:50:18 rillig Exp $
 
 DISTNAME=	wesnoth-1.0.1
 CATEGORIES=	games
@@ -10,7 +10,7 @@ COMMENT=	Fantasy turn-based strategy game
 
 USE_TOOLS+=		pkg-config
 HAS_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
+CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 UNLIMIT_RESOURCES+=	datasize
 

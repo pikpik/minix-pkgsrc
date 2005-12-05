@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2002/04/03 09:29:55 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2002/10/19 03:51:00 jlam Exp $
 
 .include "Makefile.common"
 
 PKGNAME=		odbc-postgresql-${BASE_VERS}
 COMMENT=		ODBC interface to PostgreSQL
 
-CONFIGURE_ARGS+=	--with-odbcinst=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-odbcinst=${PKG_SYSCONFDIR:Q}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/11/08 16:40:39 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/02 21:01:34 joerg Exp $
 
 PKGNAME=		postgresql74-lib-${BASE_VERS}
 PKGREVISION=		2
@@ -8,7 +8,7 @@ COMMENT=		PostgreSQL database headers and libraries
 .include "../../databases/postgresql74/Makefile.common"
 
 USE_TOOLS+=		tar
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

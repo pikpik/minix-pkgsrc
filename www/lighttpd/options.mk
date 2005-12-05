@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1.1.1 2005/09/04 06:37:05 jlam Exp $
+# $NetBSD: options.mk,v 1.2 2005/10/11 15:44:00 joerg Exp $
 
 PKG_OPTIONS_VAR =       PKG_OPTIONS.lighttpd
 PKG_SUPPORTED_OPTIONS=  bzip fam gdbm inet6 ldap lua mysql ssl memcache
@@ -70,7 +70,7 @@ CONFIGURE_ARGS+=	--with-memcache
 .if !empty(PKG_OPTIONS:Mmysql)
 .  include "../../mk/mysql.buildlink3.mk"
 MYSQL_CONFIG?=		${BUILDLINK_PREFIX.mysql-client}/bin/mysql_config
-CONFIGURE_ARGS+=	--with-mysql=${MYSQL_CONFIG}
+CONFIGURE_ARGS+=	--with-mysql=${MYSQL_CONFIG:Q}
 .endif
 
 ###
@@ -78,5 +78,5 @@ CONFIGURE_ARGS+=	--with-mysql=${MYSQL_CONFIG}
 ###
 .if !empty(PKG_OPTIONS:Mssl)
 .  include "../../security/openssl/buildlink3.mk"
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/06/17 04:49:49 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/24 21:26:24 wiz Exp $
 
 DISTNAME=		control-center-1.4.0.5
 CATEGORIES=		x11 gnome
@@ -20,7 +20,7 @@ USE_LIBTOOL=		YES
 LOCALSTATEDIR=		${PREFIX}/var
 
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR}
+CONFIGURE_ARGS+=	--localstatedir=${LOCALSTATEDIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

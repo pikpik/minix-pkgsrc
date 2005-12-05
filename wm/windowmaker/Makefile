@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2005/10/27 08:10:08 joerg Exp $
+# $NetBSD: Makefile,v 1.59 2005/12/05 20:51:10 rillig Exp $
 
 DISTNAME=	WindowMaker-0.92.0
 PKGNAME=	${DISTNAME:S/WindowMaker/windowmaker/}
@@ -19,7 +19,7 @@ USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-usermenu
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR:Q}
 CONFIGURE_ARGS+=	--with-gnustepdir=${PREFIX}/share/GNUstep
 CONFIGURE_ARGS+=	--with-nlsdir=${PREFIX}/${PKGLOCALEDIR}/locale
 CONFIGURE_ENV+=		LINGUAS=yes

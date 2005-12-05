@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/21 17:01:26 martti Exp $
+# $NetBSD: Makefile,v 1.8 2005/04/30 08:55:00 agc Exp $
 #
 
 DISTNAME=	qterm-ac-1.0
@@ -14,7 +14,7 @@ COMMENT=	Utility to recognise terminal type automatically
 USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 EGDIR=		${PREFIX}/share/examples/qterm
 CONF_FILES=	${EGDIR}/qtermtab ${PKG_SYSCONFDIR}/qtermtab

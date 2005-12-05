@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/10/04 18:27:00 reed Exp $
+# $NetBSD: Makefile,v 1.37 2005/12/05 20:50:54 rillig Exp $
 #
 
 DISTNAME=	Linux-PAM-0.77
@@ -26,7 +26,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-docdir=${PREFIX}/share/doc/PAM
 CONFIGURE_ARGS+=	--enable-includedir=${PREFIX}/include
 CONFIGURE_ARGS+=	--enable-mandir=${PREFIX}/${PKGMANDIR}
-CONFIGURE_ARGS+=	--enable-sconfigdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--enable-sconfigdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--enable-static-libpam
 CONFIGURE_ENV+=		ac_cv_prog_HAVE_SGML2TXT=no
 CONFIGURE_ENV+=		ac_cv_prog_HAVE_SGML2HTML=no

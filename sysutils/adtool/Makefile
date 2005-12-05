@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2004/11/06 17:16:52 kristerw Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:47:22 tv Exp $
 #
 
 DISTNAME=	adtool-1.2
@@ -17,7 +17,7 @@ USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 PTHREAD_OPTS+=		require
 
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 EGDIR=			${PREFIX}/share/examples/adtool
 CONF_FILES=		${EGDIR}/adtool.cfg.dist ${PKG_SYSCONFDIR}/adtool.cfg

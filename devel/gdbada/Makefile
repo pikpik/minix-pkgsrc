@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/07/17 19:03:34 kristerw Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/13 14:16:05 shannonjr Exp $
 
 DISTNAME=	gdbada-6.3
 #PKGREVISION=	1
@@ -24,10 +24,10 @@ USE_TOOLS+=		gmake
 TEST_TARGET=    	check
 INFO_DIR=		${GDB_PREFIX}/info
 LIB_DIR=		${GDB_PREFIX}/lib
-CONFIGURE_ARGS+=	--prefix=${GDB_PREFIX}
-CONFIGURE_ARGS+=	--exec-prefix=${GDB_PREFIX}
-CONFIGURE_ARGS+=	--infodir=${INFO_DIR}
-CONFIGURE_ARGS+=	--libdir=${LIB_DIR}
+CONFIGURE_ARGS+=	--prefix=${GDB_PREFIX:Q}
+CONFIGURE_ARGS+=	--exec-prefix=${GDB_PREFIX:Q}
+CONFIGURE_ARGS+=	--infodir=${INFO_DIR:Q}
+CONFIGURE_ARGS+=	--libdir=${LIB_DIR:Q}
 CONFIGURE_ARGS+=	--includedir=${GDB_PREFIX}/include
 CONFIGURE_ARGS+=	--mandir=${GDB_PREFIX}/man
 CONFIGURE_ARGS+=	--datadir=${GDB_PREFIX}/share

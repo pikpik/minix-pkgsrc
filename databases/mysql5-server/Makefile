@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/12/02 08:13:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:49:58 rillig Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 #PKGREVISION=		1
@@ -13,7 +13,7 @@ CONFIGURE_ARGS+=	--with-libwrap
 CONFIGURE_ARGS+=	--with-raid
 CONFIGURE_ARGS+=	--without-berkeley-db
 CONFIGURE_ARGS+=	--without-mysqlfs
-CONFIGURE_ARGS+=	--with-mysqld-user=${MYSQL_USER}
+CONFIGURE_ARGS+=	--with-mysqld-user=${MYSQL_USER:Q}
 
 PTHREAD_OPTS+=		require
 CONFIGURE_ARGS+=	--with-pthreads

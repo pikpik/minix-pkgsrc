@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2005/11/12 16:43:42 chris Exp $
+# $NetBSD: Makefile,v 1.83 2005/11/27 19:27:20 salo Exp $
 
 DISTNAME=	sylpheed-2.0.4
 CATEGORIES=	mail news x11
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	--enable-gpgme
 CONFIGURE_ARGS+=	--enable-compface
 
 PKG_SYSCONFSUBDIR=	sylpheed
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 PKG_OPTIONS_VAR=        PKG_OPTIONS.sylpheed
 PKG_SUPPORTED_OPTIONS=  jpilot ldap inet6

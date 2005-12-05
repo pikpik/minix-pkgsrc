@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/08/06 06:19:07 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:00 rillig Exp $
 
 PKGNAME=		postgresql74-plperl-${BASE_VERS}
 PKGREVISION=		2
@@ -10,7 +10,7 @@ DEPENDS+=	postgresql74-server>=${BASE_VERS}:../../databases/postgresql74-server
 .include "../../databases/postgresql74/Makefile.common"
 
 PERL5_CONFIGURE=	NO
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 CONFIGURE_ARGS+=	--with-perl
 
 BUILD_DIRS=		${WRKSRC}/src/pl/plperl

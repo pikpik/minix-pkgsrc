@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/10/12 21:22:08 reed Exp $
+# $NetBSD: Makefile,v 1.41 2005/10/26 15:43:08 adam Exp $
 
 DISTNAME=	ntop-3.2
 CATEGORIES=	net
@@ -15,7 +15,7 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gawk gmake
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/share/ntop
 CONFIGURE_ARGS+=	--with-gd-root=${BUILDLINK_PREFIX.gd}
 CONFIGURE_ARGS+=	--with-gdbm-root=${BUILDLINK_PREFIX.gdbm}

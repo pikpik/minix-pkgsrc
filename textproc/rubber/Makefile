@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/11/08 20:02:52 tonio Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/11 18:50:25 tonio Exp $
 #
 
 DISTNAME=		rubber-1.0
@@ -18,7 +18,7 @@ TEXINFO_REQD=		4.6
 PYTHON_VERSIONS_ACCEPTED=	24 23
 TEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
 
-CONFIGURE_ARGS+=	--python=${PYTHONBIN} --prefix=${PREFIX} \
+CONFIGURE_ARGS+=	--python=${PYTHONBIN:Q} --prefix=${PREFIX:Q} \
 			--datadir=${PREFIX}/share
 
 .include "../../lang/python/application.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2005/05/24 07:43:07 kleink Exp $
+# $NetBSD: Makefile,v 1.55 2005/10/03 21:18:55 agc Exp $
 #
 
 DISTNAME=		jwhois-3.2.2
@@ -13,7 +13,7 @@ COMMENT=		Configurable WHOIS client
 USE_PKGINSTALL=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/db
 
 LIBS.SunOS+=		-lnsl -lsocket

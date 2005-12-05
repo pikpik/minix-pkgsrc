@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:10 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/05/22 20:07:45 jlam Exp $
 
 DISTNAME=		binutils-2.12.1
 PKGNAME=		cross-h8300-hms-binutils-2.12.1
@@ -16,7 +16,7 @@ WRKSRC=			${WRKDIR}/objdir
 USE_TOOLS+=		gmake
 USE_MAKEINFO=		yes
 HAS_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--prefix=${H8300_PREFIX}
+CONFIGURE_ARGS+=	--prefix=${H8300_PREFIX:Q}
 CONFIGURE_ARGS+=	--infodir=${H8300_PREFIX}/binutils
 CONFIGURE_ARGS+=	--target=h8300-hms
 CONFIGURE_SCRIPT=	${SRCDIR}/configure
