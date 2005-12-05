@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2005/10/15 15:37:16 reed Exp $
+# $NetBSD: Makefile,v 1.58 2005/10/20 16:25:15 minskim Exp $
 
 DISTNAME=	curl-7.15.0
 PKGREVISION=	1
@@ -22,7 +22,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 # Work around an ICE on sparc64 with gcc2
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 TEST_TARGET=		check
 

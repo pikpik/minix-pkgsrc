@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/05/25 11:50:20 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/10/31 19:59:52 tv Exp $
 #
 
 DISTNAME=		rcs-5.7
@@ -12,12 +12,12 @@ COMMENT=		GNU Revision Control System - version control software
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"
-DEPENDS=		diffutils>=2.7:../../devel/diffutils
+DEPENDS+=		diffutils>=2.7:../../devel/diffutils
 CONFIGURE_ARGS+=	--with-diffutils=gdiff
 .endif
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV=		PATH=${LOCALBASE}/bin:$$PATH
+CONFIGURE_ENV+=		PATH=${LOCALBASE}/bin:"$$PATH"
 CONFIGURE_HAS_MANDIR=	no
 
 post-install:

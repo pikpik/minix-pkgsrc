@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.45 2005/09/22 14:55:07 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2005/11/24 20:32:34 rillig Exp $
 #
 
-.include		"../nethack-lib/Makefile.common"
+.include "../../games/nethack-lib/Makefile.common"
 
 PKGNAME=		nethack-qt-${NETHACK_VERSION}
 PKGREVISION=		3

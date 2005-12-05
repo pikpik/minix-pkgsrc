@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/01/18 17:53:18 peter Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:39 tv Exp $
 #
 
 DISTNAME=		tcllib-1.7
@@ -13,7 +13,7 @@ COMMENT=		Collection of utility modules for Tcl
 GNU_CONFIGURE=		yes
 NO_BUILD=		yes
 
-SUBST_CLASSES=		fix
+SUBST_CLASSES+=		fix
 SUBST_STAGE.fix=	post-patch
 SUBST_FILES.fix=	modules/doctools/mpformats/_html.tcl
 SUBST_SED.fix=		-e "s,/usr/bin/wget -q -O,${FETCH_CMD} -V -o,g"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/16 06:57:38 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/09/07 10:16:27 adam Exp $
 
 .include "../../devel/SDL/Makefile.common"
 
@@ -19,7 +19,7 @@ do-install:
 	cd ${WRKSRC}/src/audio/nas && ${SHLIBTOOL} --mode=install \
 		${INSTALL_DATA} libaudio_nas.la ${PREFIX}/lib
 
-BUILDLINK_DEPENDS.SDL=	SDL>=1.2.5nb6
+BUILDLINK_DEPENDS.SDL+=	SDL>=1.2.5nb6
 
 .include "../../audio/nas/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"

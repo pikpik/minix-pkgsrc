@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2005/10/18 00:46:28 wiz Exp $
+# $NetBSD: Makefile,v 1.88 2005/12/02 17:10:04 wiz Exp $
 #
 
 DISTNAME=	cvs-1.11.20
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	yes
 
 .include "options.mk"
 
-CONFIGURE_ENV+=	perl_path=${PERL5}
+CONFIGURE_ENV+=	perl_path=${PERL5:Q}
 
 INFO_FILES=	cvs.info cvsclient.info
 USE_MAKEINFO=	yes

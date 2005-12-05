@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/04/25 09:55:09 shannonjr Exp $
+# $NetBSD: Makefile,v 1.36 2005/08/12 19:36:53 drochner Exp $
 #
 
 DISTNAME=	gpgme-1.0.3
@@ -23,7 +23,7 @@ PKG_SUPPORTED_OPTIONS=	gpgsm
 LIBS.SunOS+=		-lnsl -lsocket
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 # getenv_r is not detected correctly. It will be found
 # in either base system or librfuncs

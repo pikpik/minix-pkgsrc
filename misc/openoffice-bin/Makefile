@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/10/03 16:09:43 mrauch Exp $
+# $NetBSD: Makefile,v 1.12 2005/10/10 20:08:09 mrauch Exp $
 
 PKGNAME=		openoffice-bin-${OO_VER}
 PKGREVISION=		1
@@ -16,7 +16,7 @@ HOMEPAGE=		http://www.openoffice.org/
 COMMENT=		Integrated office productivity suite (binary pkg)
 
 OO_VER=			1.1.5
-PLIST_SUBST+=		VER=${OO_VER}
+PLIST_SUBST+=		VER=${OO_VER:Q}
 MESSAGE_SUBST+=		VER=${OO_VER}
 
 NO_BUILD=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/09/28 12:26:54 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2005/10/29 01:56:42 kristerw Exp $
 
 DISTNAME=	ApacheJSSI-1.1.2
 PKGNAME=	jssi-1.1.2
@@ -18,7 +18,7 @@ WRKSRC=		${WRKDIR}/ApacheJSSI-1.1.2/src/java
 
 USE_TOOLS+=	gmake
 NO_CONFIGURE=	yes
-MAKE_ENV+=	CLASSPATH=${CLASSPATH}
+MAKE_ENV+=	CLASSPATH=${CLASSPATH:Q}
 
 post-build:
 	(cd ${WRKSRC}/../../docs && ${SETENV} ${SCRIPTS_ENV} ${SH} generate_javadoc)

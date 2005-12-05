@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:40 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/01 18:03:05 jlam Exp $
 
 DISTNAME=	xtide-2.4
-PKGNAME=	${DISTNAME}
 PKGREVISION=	3
 CATEGORIES= 	misc x11
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/

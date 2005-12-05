@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/07/23 10:39:39 hira Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/24 14:31:15 augustss Exp $
 #
 
 DISTNAME=	album_themes
@@ -14,7 +14,7 @@ DEPENDS+=	album-[0-9]*:../../www/album
 
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
-EXTRACT_ONLY=	# defined
+EXTRACT_ONLY=	# none
 
 USE_TOOLS+=	tar
 

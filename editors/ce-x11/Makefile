@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:40 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/01 18:02:45 jlam Exp $
 #
 
-.include "../ce/Makefile.common"
+.include "../../editors/ce/Makefile.common"
 
 PKGNAME=		ce-x11-${VERSION}
 COMMENT+=		, X11 version

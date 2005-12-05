@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/04 19:30:05 adrianp Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/16 14:46:43 tv Exp $
 #
 
 DISTNAME=	honeyd-1.0
@@ -31,7 +31,6 @@ DOCDIR=			${PREFIX}/share/doc/${PKGBASE}
 .for f in ${DIST_CONF_FILES}
 CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
-.undef f
 
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"

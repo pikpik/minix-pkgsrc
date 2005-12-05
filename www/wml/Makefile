@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/06/01 20:08:01 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/08/06 06:19:41 jlam Exp $
 #
 
 DISTNAME=	wml-2.0.9
@@ -19,14 +19,14 @@ DEPENDS+=	p5-Term-ReadKey>=2.11:../../devel/p5-Term-ReadKey
 
 USE_TOOLS+=	automake
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-perl=${PERL5} \
+CONFIGURE_ARGS+= --with-perl=${PERL5} \
 		--with-openworld \
 		--with-tidy=${LOCALBASE}/bin/tidy
 
 TEST_TARGET=	test
 
-INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
-INCOMPAT_CURSES+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-C]*
+INCOMPAT_CURSES=	NetBSD-1.5*-* NetBSD-1.6[-_.]*-*
+INCOMPAT_CURSES+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[A-C]*-*
 
 PERL_ARCHNAME_cmd=	eval `${PERL5} -V:archname 2>/dev/null`; \
 			${ECHO} $${archname}

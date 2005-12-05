@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: hacks.mk,v 1.1 2005/01/21 21:48:32 tv Exp $
 
-.ifndef PAR2_HACKS_MK
+.if !defined(PAR2_HACKS_MK)
 PAR2_HACKS_MK=		# defined
 
 ### [Fri Jan 21 21:44:32 UTC 2005 : tv]

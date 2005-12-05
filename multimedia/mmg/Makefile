@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:23 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/08/07 11:34:22 wiz Exp $
 #
 
 .include "../../multimedia/mkvtoolnix/Makefile.dist"
@@ -17,7 +17,7 @@ USE_LANGUAGES=	c++
 
 BUILD_TARGET=	src/mmg/mmg
 
-SUBST_CLASSES=		man help
+SUBST_CLASSES+=		man help
 
 SUBST_STAGE.man=	pre-configure
 SUBST_FILES.man=	doc/mmg.1

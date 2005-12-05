@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:46:44 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/22 20:08:23 jlam Exp $
 #
 
 DISTNAME=	adns-1.1
@@ -14,6 +14,6 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS=		--disable-dynamic
+CONFIGURE_ARGS+=	--disable-dynamic
 
 .include "../../mk/bsd.pkg.mk"

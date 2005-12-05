@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:36 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/10/23 21:56:41 rillig Exp $
 #
 
 DISTNAME=		user-20040426
@@ -15,7 +15,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_CHECKSUM=		yes
 NO_CONFIGURE=		yes
-NO_TOOLS=		yes
 NO_BUILD=		yes
 
 INSTALLATION_DIRS=	sbin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/01/20 12:07:42 agc Exp $
+# $NetBSD: Makefile,v 1.18 2005/07/19 10:22:33 grant Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
@@ -15,7 +15,7 @@ DEPENDS+=	festlex-ogi>=2.0:../../audio/festlex-ogi
 
 LICENSE=	no-commercial-use
 
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}nb1
 WRKSRC=		${WRKDIR}/festival
 
 NO_BUILD=	yes

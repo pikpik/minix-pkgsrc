@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:19 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/28 04:25:30 uebayasi Exp $
 
 DISTNAME=	calc-2.02f
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -12,7 +12,7 @@ COMMENT=	Advanced Calculator for GNU Emacs
 
 .include "../../mk/emacs.mk"
 
-MAKE_ENV+=	EMACS=${EMACS_FLAVOR}
+MAKE_ENV+=	EMACS=${EMACS_FLAVOR:Q}
 
 USE_MAKEINFO=	YES
 INFO_FILES=	calc.info

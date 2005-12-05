@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/01 18:02:40 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/22 15:28:35 minskim Exp $
 #
 
 DISTNAME=	magic-7.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://vlsi.cornell.edu/magic/
 COMMENT=	Integrated circuit layout system
 
 USE_TOOLS+=	gmake
-MAKE_ENV+=	MAGIC_HOME=${PREFIX}
+MAKE_ENV+=	MAGIC_HOME=${PREFIX:Q}
 
 .include "../../mk/endian.mk"
 .if ${MACHINE_ENDIAN} == "big"

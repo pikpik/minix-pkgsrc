@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- dissipate2/siputil.cpp.orig	2005-06-21 12:14:49.000000000 +0100
 +++ dissipate2/siputil.cpp	2005-11-24 16:47:03.000000000 +0000
 @@ -5,6 +5,9 @@

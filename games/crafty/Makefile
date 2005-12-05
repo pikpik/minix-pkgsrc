@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/06/06 03:59:00 minskim Exp $
+# $NetBSD: Makefile,v 1.35 2005/06/16 06:57:54 jlam Exp $
 
 DISTNAME=		crafty-18.15
 CATEGORIES=		games
@@ -46,7 +46,7 @@ BUILD_TARGET=		generic
 
 CRAFTY_OPTS=		-DBOOKDIR=\\\"${BOOKDIR}\\\"
 CRAFTY_OPTS+=		-DTBDIR=\\\"${TBDIR}\\\"
-MAKE_ENV+=		opt="${CRAFTY_OPTS}"
+MAKE_ENV+=		opt=${CRAFTY_OPTS:Q}
 
 BOOKDIR=		${PREFIX}/lib/crafty
 TBDIR=			${PREFIX}/share/egtb

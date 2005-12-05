@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 21:49:05 grant Exp $
+# $NetBSD: Makefile,v 1.7 2003/10/13 15:52:00 wiz Exp $
 #
 
 DISTNAME=	gone-1.3.5
@@ -10,6 +10,6 @@ HOMEPAGE=	http://jaguar.ir.miami.edu/~marcus/
 COMMENT=	Terminal locking utility with many improvements over lock(1)
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	with_setuid=no
+CONFIGURE_ENV+=	with_setuid=no
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-# $NetBSD$
-.ifndef _RUBY_RACCVERSION_MK
+# $NetBSD: raccversion.mk,v 1.1 2004/11/27 15:22:15 taca Exp $
 
+.if !defined(_RUBY_RACCVERSION_MK)
 _RUBY_RACCVERSION_MK=	# defined
 
 .if ${RUBY_NAME} != "ruby${RUBY_VER_DEFAULT}"

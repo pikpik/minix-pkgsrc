@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2005/10/13 12:31:59 markd Exp $
+# $NetBSD: Makefile,v 1.94 2005/11/17 04:33:20 hubertf Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -133,8 +133,8 @@ GCC_REQD+=		2.95
 .  if (${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "sparc")
 CXXFLAGS:=      ${CXXFLAGS:C/-O[0-9]*/-O/g}
 CFLAGS:=        ${CFLAGS:C/-O[0-9]*/-O/g}
-CONFIGURE_ENV+= CXXFLAGS="${CXXFLAGS}"
-CONFIGURE_ENV+= CFLAGS="${CFLAGS}"
+CONFIGURE_ENV+= CXXFLAGS=${CXXFLAGS:M*:Q}
+CONFIGURE_ENV+= CFLAGS=${CFLAGS:M*:Q}
 .  endif
 #
 # Configure finds these but apparently they are not ready for primetime

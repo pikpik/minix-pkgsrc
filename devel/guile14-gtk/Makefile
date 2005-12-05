@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/06/01 18:02:44 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/09/28 20:52:19 rillig Exp $
 #
 
 DISTNAME=		guile-gtk-0.19
@@ -18,7 +18,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/${GUILE14_SUBDIR}/share
 PLIST_SUBST+=		GUILE14_SUBDIR=${GUILE14_SUBDIR:Q}
-MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 
 .include "../../lang/guile14/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/05/22 20:08:22 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/01 18:03:06 jlam Exp $
 
 DISTNAME=	ogle-0.9.2
 PKGREVISION=	2
@@ -23,7 +23,7 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV+=		CPPFLAGS="${CPPFLAGS}"
+CONFIGURE_ENV+=		CPPFLAGS=${CPPFLAGS:M*:Q}
 #CONFIGURE_ARGS+=	--enable-obsdaudio
 #CONFIGURE_ARGS+=	--disable-sunaudio
 

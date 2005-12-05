@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/05/08 15:26:36 peter Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/04 22:21:33 xtraeme Exp $
 
 DISTNAME=	pkgfind-20050804
 CATEGORIES=	pkgtools
@@ -25,7 +25,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pkgfind ${PREFIX}/bin/pkgfind
 	${INSTALL_MAN} ${WRKSRC}/pkgfind.1 ${PREFIX}/man/man1/pkgfind.1
 
-SUBST_CLASSES=		path
+SUBST_CLASSES+=		path
 SUBST_STAGE.path=	post-patch
 SUBST_FILES.path=	pkgfind.c pkgfind.1
 SUBST_SED.path=		-e "s,/usr/pkgsrc,${PKGSRCDIR},g"

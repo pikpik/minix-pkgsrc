@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:48 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/08/06 06:19:19 jlam Exp $
 
 DISTNAME=		gnucash-docs-1.8.5
 CATEGORIES=		finance
@@ -9,7 +9,7 @@ MAINTAINER=		jdolecek@NetBSD.org
 HOMEPAGE=		http://www.gnucash.org/
 COMMENT=		Documentation for GnuCash - personal double-entry accounting program
 
-BUILD_DEPENDS=			docbook-xsl-[0-9]*:../../textproc/docbook-xsl
+BUILD_DEPENDS+=		docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 
 BUILDLINK_DEPMETHOD.libxml2=	build
 BUILDLINK_DEPMETHOD.libxslt=	build

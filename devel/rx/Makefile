@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:38 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/09/28 20:52:19 rillig Exp $
 
 DISTNAME=	rx-1.5
 PKGREVISION=	1
@@ -21,7 +21,7 @@ INFO_FILES=	rx.info
 #
 RX_MAJOR=	0
 RX_MINOR=	0
-MAKE_ENV+=	RX_MAJOR="${RX_MAJOR}" RX_MINOR="${RX_MINOR}"
+MAKE_ENV+=	RX_MAJOR=${RX_MAJOR:Q} RX_MINOR=${RX_MINOR:Q}
 
 post-install:
 	cd ${WRKSRC}/doc; ${INSTALL_DATA} ${INFO_FILES} ${PREFIX}/info

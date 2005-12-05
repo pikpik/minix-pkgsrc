@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/16 12:53:04 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:22 tv Exp $
 #
 
 DISTNAME=	pfqueue-0.1.4
@@ -10,7 +10,7 @@ HOMEPAGE=	http://pfqueue.sourceforge.net/
 COMMENT=	Real-time queue scanner for postfix
 
 GNU_CONFIGURE=	yes
-INCOMPAT_CURSES=	NetBSD-1.*
+INCOMPAT_CURSES=	NetBSD-1.*-*
 
 INSTALLATION_DIRS=	bin man/man1
 

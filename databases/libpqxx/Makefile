@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:12 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/27 01:57:26 markd Exp $
 #
 
 .include "../../databases/libpqxx/Makefile.common"
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--disable-thread-safety
 .endif
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 .include "../../mk/pgsql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

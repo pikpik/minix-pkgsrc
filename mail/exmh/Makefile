@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/03/24 21:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2005/06/01 18:02:59 jlam Exp $
 
 DISTNAME=	exmh-2.6.3
 CATEGORIES=	mail tk
@@ -14,7 +14,7 @@ DEPENDS+=	metamail>=2.7:../../mail/metamail
 
 .include "../../mk/bsd.prefs.mk"
 
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 WISH=		wish
 TCLSH=		tclsh

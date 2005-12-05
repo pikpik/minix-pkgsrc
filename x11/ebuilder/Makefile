@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/06/17 03:50:43 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2005/08/27 07:33:30 grant Exp $
 #
 
 DISTNAME=	ebuilder-0.56d
@@ -14,7 +14,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_TOOLS+=	flex gmake
 MAKEFILE=	GNUmakefile
 
-MAKE_ENV+=	CXXFLAGS="${CXXFLAGS}"
+MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:M*:Q}
 
 INSTALLATION_DIRS=	bin
 

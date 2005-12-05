@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:14 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:58:00 jlam Exp $
 #
 
 DISTNAME=		tcl8.4.6-src
@@ -15,7 +15,7 @@ DEPENDS+=		tcl>=8.4.6nb5:../../lang/tcl
 
 WRKSRC=			${WRKDIR}/${DISTNAME:C/-src//}/unix
 GNU_CONFIGURE=		yes
-MAKE_ENV+=		TOUCH="${TOUCH}"
+MAKE_ENV+=		TOUCH=${TOUCH:Q}
 MAKE_ENV+=		NOTHREAD_SUFX=-nothread
 
 USE_LIBTOOL=		yes

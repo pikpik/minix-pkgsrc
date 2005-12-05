@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/02/23 04:09:50 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:45:36 tv Exp $
 #
 
 DISTNAME=	pccts133mr22
@@ -14,7 +14,7 @@ COMMENT=	Purdue Compiler Construction Tool Set
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=		${WRKDIR}/pccts
-DIST_SUBDIR=	${PKGNAME}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 MAKEFILE=	makefile
 BUILD_TARGET=

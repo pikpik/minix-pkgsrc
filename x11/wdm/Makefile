@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/09/22 21:33:45 jmmv Exp $
+# $NetBSD: Makefile,v 1.24 2005/10/23 22:01:26 rillig Exp $
 
 DISTNAME=		wdm-1.25
 PKGREVISION=		6
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-gfx-incs=${BUILDLINK_DIR}/include/WINGs
 CONFIGURE_ARGS+=	--with-gfx-libs=${BUILDLINK_DIR}/lib
 CONFIGURE_ARGS+=	--with-logdir=${VARBASE}/log
 CONFIGURE_ARGS+=	--with-runlockdir=${VARBASE}/run
-CONFIGURE_ENV+=		SYSTEM_SHELL="${SH}"
+CONFIGURE_ENV+=		SYSTEM_SHELL=${SH:Q}
 
 RCD_SCRIPTS=		wdm
 

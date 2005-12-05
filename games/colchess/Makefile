@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/09/28 20:52:22 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/11/10 06:32:38 rillig Exp $
 
 DISTNAME=		colchess
 PKGNAME=		${DISTNAME}-7.0
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.ast.cam.ac.uk/~cmf/chess/colchess/
 COMMENT=		Chess analysis engine
 
 DIST_SUBDIR=		${PKGNAME_NOREV}
-MAKE_ENV+=		PREFIX="${PREFIX}"
+MAKE_ENV+=		PREFIX=${PREFIX:Q}
 NO_CONFIGURE=		yes
 WRKSRC=			${WRKDIR}/ColChess
 

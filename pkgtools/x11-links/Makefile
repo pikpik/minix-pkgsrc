@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2005/06/10 03:44:07 jlam Exp $
+# $NetBSD: Makefile,v 1.72 2005/07/25 20:50:25 reed Exp $
 #
 # NOTE:	If you update this package, then you'll likely need to also update
 #	the x11-links dependency in buildlink3.mk to the correct version,
@@ -28,7 +28,7 @@ PLIST_SRC=		${.CURDIR}/PLIST ${PLIST_SRC.files} ${PLIST_SRC.dirs}
 .include "../../mk/bsd.prefs.mk"
 
 .if !exists(${X11BASE}/include/X11/X.h)
-PKG_FAIL_REASON=	"${PKGNAME} requires X headers to be installed"
+PKG_FAIL_REASON+=	"${PKGNAME} requires X headers to be installed"
 .endif
 
 .if ${OPSYS} == "IRIX"

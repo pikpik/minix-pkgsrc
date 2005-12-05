@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/07/21 16:29:44 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2005/08/10 20:56:12 jlam Exp $
 #
 
 DISTNAME=	sweep-0.8.3
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--disable-oggtest
 CONFIGURE_ARGS+=	--disable-vorbistest
 
 CPPFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
-MAKE_ENV+=		EXPORT_SYMBOLS_LDFLAGS=${EXPORT_SYMBOLS_LDFLAGS}
+MAKE_ENV+=		EXPORT_SYMBOLS_LDFLAGS=${EXPORT_SYMBOLS_LDFLAGS:Q}
 
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../audio/libsamplerate/buildlink3.mk"

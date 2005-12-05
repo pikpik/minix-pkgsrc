@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/05/22 20:08:07 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2005/06/01 18:02:57 jlam Exp $
 #
 
 DISTNAME=	scigraphica-0.8.0
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--with-readline-include-path=${BUILDLINK_PREFIX.readline}/inclu
 CONFIGURE_ARGS+=	--with-readline-path=${BUILDLINK_PREFIX.readline}/lib
 CONFIGURE_ARGS+=	--with-termcap-include-path=${BUILDLINK_PREFIX.readline}/include
 CONFIGURE_ARGS+=	--with-termcap-path=${BUILDLINK_PREFIX.readline}/lib
-CONFIGURE_ENV+=		PYTHONBIN=${PYTHONBIN}
+CONFIGURE_ENV+=		PYTHONBIN=${PYTHONBIN:Q}
 
 USE_LIBTOOL=		YES
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

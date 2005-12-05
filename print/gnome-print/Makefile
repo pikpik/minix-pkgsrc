@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2005/06/01 18:03:09 jlam Exp $
+# $NetBSD: Makefile,v 1.69 2005/11/28 06:41:21 jlam Exp $
 
 DISTNAME=		gnome-print-0.37
 CATEGORIES=		print gnome
@@ -17,7 +17,7 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-admin		# currently unstable
 
 # override HOME to avoid trying to install ${HOME}/.gnome
-MAKE_ENV+=		HOME=${WRKSRC}
+MAKE_ENV+=		HOME=${WRKSRC:Q}
 
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/gdk-pixbuf-gnome/buildlink3.mk"

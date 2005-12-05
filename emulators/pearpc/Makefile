@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/01 18:02:47 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/27 16:21:17 wiz Exp $
 #
 
 DISTNAME=		pearpc-0.3.1
@@ -39,7 +39,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/ppccfg.example ${EGDIR}
 
-SUBST_CLASSES=		conf
+SUBST_CLASSES+=		conf
 SUBST_STAGE.conf=	post-patch
 SUBST_FILES.conf=	ppccfg.example
 SUBST_SED.conf=		-e "s|\"nvram\"|\"/tmp/nvram\"|"

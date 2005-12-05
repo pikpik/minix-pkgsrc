@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:28:47 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/07/16 19:10:38 jlam Exp $
 
 DISTNAME=	sdcc-2.4.0
 PKGNAME=	${DISTNAME:S/-src//}
@@ -28,7 +28,7 @@ CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/sdcc
 # needed for some arch's.  -fdollars-in-identifiers is enabled
 # by default on some, not on others
 CPPFLAGS+=		-fdollars-in-identifiers
-CONFIGURE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
+CONFIGURE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 CONFIGURE_ENV+=		sdcc_cv_CCggdb="no"
 
 .include "../../mk/bsd.prefs.mk"

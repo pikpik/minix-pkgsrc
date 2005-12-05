@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/06 06:19:24 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/10/29 02:27:47 grant Exp $
 #
 
 DISTNAME=	Video-DVDRip-0.50.18
@@ -24,7 +24,7 @@ DEPENDS+=	vcdimager>=0.7.12:../../sysutils/vcdimager-devel
 #DEPENDS+=	rar>=2.02:../../archivers/rar
 .endif
 
-BUILDLINK_DEPENDS.perl= perl>=5.6.0
+BUILDLINK_DEPENDS.perl+=	perl>=5.6.0
 
 USE_PKGLOCALEDIR=	YES
 

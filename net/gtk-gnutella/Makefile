@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/07/26 00:01:34 kristerw Exp $
+# $NetBSD: Makefile,v 1.45 2005/09/27 12:57:06 adam Exp $
 
 DISTNAME=	gtk-gnutella-0.95.4
 CATEGORIES=	net
@@ -16,11 +16,11 @@ USE_TOOLS+=		gmake
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-d -e -r -s \
-			-D prefix="${PREFIX}" \
+			-D prefix=${PREFIX:Q} \
 			-D privlib="${PREFIX}/share/gtk-gnutella" \
 			-D sysman="${PREFIX}/man" \
 			-D locale="${PREFIX}/${PKGLOCALEDIR}/locale" \
-			-D cc="${CC}" \
+			-D cc=${CC:Q} \
 			-D ccflags="${CFLAGS:Unone}" \
 			-D gtkversion=2 \
 			-D yacc="yacc" \

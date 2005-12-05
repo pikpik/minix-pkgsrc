@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/06 18:24:23 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:35 tv Exp $
 
 DISTNAME=	iso12083-1993
 PKGREVISION=	4
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://info.ex.ac.uk/pub/SGML/ISO-12083/ \
 		ftp://ftp.oit.unc.edu/pub/packages/SGML/oslo-mirror/ISO12083/
 DISTFILES=	article.dtd book.dtd maths.dtd serial.dtd
 
-MAINTAINER=	rh@NetBSD.ORG
+MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.oasis-open.org/cover/sgml-xml.html
 COMMENT=	SGML DTDs from the The Electronic Publishing Special Interest Group
 

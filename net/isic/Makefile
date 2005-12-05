@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/01/20 23:38:02 adrianp Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:46:48 tv Exp $
 #
 
 DISTNAME=	isic-0.06
@@ -28,7 +28,7 @@ post-install:
 .  if (${MACHINE_ARCH} == "alpha")
 CPPFLAGS:=      ${CPPFLAGS:C/-O[0-9]*//g}
 CFLAGS:=        ${CFLAGS:C/-O[0-9]*//g}
-CONFIGURE_ENV+= CPPFLAGS="${CPPFLAGS}"
-CONFIGURE_ENV+= CFLAGS="${CFLAGS}"
+CONFIGURE_ENV+= CPPFLAGS=${CPPFLAGS:M*:Q}
+CONFIGURE_ENV+= CFLAGS=${CFLAGS:M*:Q}
 .  endif
 .endif

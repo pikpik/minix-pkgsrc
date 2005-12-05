@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/08/07 11:34:18 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/11 01:03:57 minskim Exp $
 
 DISTNAME=		wxhaskell-src-0.9.4
 PKGNAME=		${DISTNAME:S/-src//}
@@ -16,7 +16,7 @@ USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 MAKEFILE=		makefile
-MAKE_FLAGS=		X11BASE=${X11BASE}
+MAKE_FLAGS+=		X11BASE=${X11BASE:Q}
 
 pre-configure:
 	cd ${WRKSRC}; ./configure --prefix=${PREFIX} --with-opengl

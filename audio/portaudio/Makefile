@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/10/10 15:24:08 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2005/10/31 16:13:06 tv Exp $
 
 DISTNAME=	portaudio_v18_1
 PKGNAME=	portaudio-18.1
@@ -17,7 +17,6 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-CONFIGURE_ARGS=		--prefix=${PREFIX}
 EXTRACT_CMD_OPTS.zip=	-aqo
 
 pre-configure:

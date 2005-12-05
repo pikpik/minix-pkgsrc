@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/06 15:45:59 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/08/25 10:34:12 xtraeme Exp $
 #
 
 DISTNAME=	pkg_select-20050817
@@ -32,7 +32,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/mirrors.ftp ${PREFIX}/share/pkg_select
 	${INSTALL_MAN} ${WRKSRC}/pkg_select.1 ${PREFIX}/man/man1
 
-SUBST_CLASSES=		path
+SUBST_CLASSES+=		path
 SUBST_STAGE.path=	post-patch
 SUBST_FILES.path=	Makefile pkg_select.1
 SUBST_SED.path=		-e "s|/usr/pkgsrc|${PKGSRCDIR}|g" \

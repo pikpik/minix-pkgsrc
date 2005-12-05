@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2005/02/23 03:28:49 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/31 16:11:20 tv Exp $
 #
 
 DISTNAME=	nspmod-0.1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/sound/players/}
 
-MAINTAINER=	mycroft@NetBSD.ORG
+MAINTAINER=	mycroft@NetBSD.org
 #HOMEPAGE=	http://www.jeton.or.jp/users/toru/www/orgsoft/index.html
 COMMENT=	MOD/S3M/MTM tracker that does its own DSP, uses VoxWare v2.90+
 

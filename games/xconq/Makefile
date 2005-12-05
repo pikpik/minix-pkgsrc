@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/04/11 21:45:58 tv Exp $
+# $NetBSD: Makefile,v 1.27 2005/05/22 20:08:03 jlam Exp $
 
 DISTNAME=		xconq-7.4.1
 PKGREVISION=		4
@@ -16,7 +16,7 @@ CONFIGURE_ARGS+=	--enable-alternate-scoresdir=${VARBASE}/games/xconq/scores
 CONFIGURE_ARGS+=	--with-tclconfig="${BUILDLINK_PREFIX.tcl}/lib"
 CONFIGURE_ARGS+=	--with-tkconfig="${BUILDLINK_PREFIX.tk}/lib"
 
-MAKE_ENV+=		LOCALBASE="${LOCALBASE}"
+MAKE_ENV+=		LOCALBASE=${LOCALBASE:Q}
 
 USE_MAKEINFO=		YES
 INFO_FILES=     	hacking.info xcdesign.info xconq.info

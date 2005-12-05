@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2003/03/26 04:05:40 jschauma Exp $
+# $NetBSD: Makefile,v 1.34 2003/08/08 09:38:41 grant Exp $
 #
 
 COMMENT=	Netscape Communicator browser, version 4 (binary pkg)
@@ -6,5 +6,5 @@ COMMENT=	Netscape Communicator browser, version 4 (binary pkg)
 BINNAME=	communicator
 DIST_SDIR_NAME=	complete_install
 
-.include "../navigator/Makefile.common"
+.include "../../www/navigator/Makefile.common"
 .include "../../mk/bsd.pkg.mk"

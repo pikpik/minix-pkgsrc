@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/25 14:48:45 zuntum Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/16 17:49:41 tonio Exp $
 
 DISTNAME=	bnc2.9.4
 PKGNAME=	${DISTNAME:S/bnc/&-/}
@@ -12,9 +12,8 @@ COMMENT=	Simple IRC relay proxy with support for virtual hosting
 
 DEPENDS+=	dialog-[0-9]*:../../misc/dialog
 
-GNU_CONFIGURE=	YES
-
-CONFIGURE_ARGS=	--with-ssl
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--with-ssl
 
 INSTALLATION_DIRS=	bin
 

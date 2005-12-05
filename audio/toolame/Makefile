@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/17 04:49:45 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/26 17:30:31 joerg Exp $
 #
 
 DISTNAME=	toolame-02l
@@ -15,7 +15,7 @@ USE_TOOLS+=		gmake
 
 TOOLAME_ARCH?=
 
-MAKE_ENV+=	CC="${CC}" CFLAGS="${CFLAGS}" ARCH="${TOOLAME_ARCH}"
+MAKE_ENV+=	CC=${CC:Q} CFLAGS=${CFLAGS:M*:Q} ARCH=${TOOLAME_ARCH:Q}
 BUILD_TARGET=	toolame
 
 INSTALLATION_DIRS=	bin

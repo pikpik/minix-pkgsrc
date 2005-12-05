@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/09/27 20:21:50 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/10/14 09:37:46 adam Exp $
 
 DISTNAME=	pcre-6.4
 PKGREVISION=	1
@@ -25,6 +25,6 @@ TEST_TARGET=		test
 # Avoid an ICE in gcc2 on sparc64
 # use CONFIGURE_ARGS instead of the usual CONFIGURE_ENV as the latter just
 # won't work with -this- configure
-CONFIGURE_ARGS+=	F77=${FALSE}
+CONFIGURE_ARGS+=	F77=${FALSE:Q}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/06/01 20:07:59 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/08 12:35:14 jmmv Exp $
 
 DISTNAME=	vorbis-tools-1.0
 PKGNAME=	tremor-tools-1.0.0.8
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--with-ogg-prefix=${BUILDLINK_PREFIX.libogg}	\
 			--with-vorbis-prefix=${BUILDLINK_PREFIX.libvorbis} \
 			--with-ao-prefix=${BUILDLINK_PREFIX.libao}
 
-PLIST_SUBST+=	DISTNAME="${DISTNAME}"
+PLIST_SUBST+=	DISTNAME=${DISTNAME:Q}
 
 PTHREAD_OPTS+=	require
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/21 16:29:54 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/10 20:56:21 jlam Exp $
 
 DISTNAME=		ed2k-gtk-gui-0.6.3
 PKGREVISION=		1
@@ -13,7 +13,7 @@ USE_TOOLS+=		pkg-config
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV+=		CONFIGURE_LDFLAGS=${LDFLAGS:Q}
+CONFIGURE_ENV+=		CONFIGURE_LDFLAGS=${LDFLAGS:M*:Q}
 
 SUBST_CLASSES+=		shell
 SUBST_MESSAGE.shell=	"Fixing hardcoded shell."

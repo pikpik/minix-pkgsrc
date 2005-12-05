@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/07/26 11:13:41 peter Exp $
+# $NetBSD: Makefile,v 1.3 2005/08/23 11:48:49 rillig Exp $
 
 DISTNAME=		spamd-20050726
 CATEGORIES=		mail
@@ -22,7 +22,7 @@ RCD_SCRIPTS=            pfspamd
 CONF_FILES=		${PREFIX}/share/examples/spamd/spamd.conf \
 			    ${PKG_SYSCONFDIR}/spamd.conf
 
-SUBST_CLASSES=		fix
+SUBST_CLASSES+=		fix
 SUBST_STAGE.fix=	post-patch
 SUBST_FILES.fix=	spamd/spamd.8
 SUBST_FILES.fix+=	spamd-setup/spamd-setup.c spamd-setup/spamd-setup.8

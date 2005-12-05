@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/24 14:07:02 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/11 21:45:06 tv Exp $
 #
 
 DISTNAME=	gku100
@@ -16,7 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 WRKSRC=		${WRKDIR}
 BUILD_TARGET=	posix
 MAKEFILE=	makefile
-MAKE_ENV+=	KFLAGS="${CFLAGS}"
+MAKE_ENV+=	KFLAGS=${CFLAGS:M*:Q}
 
 INSTALLATION_DIRS=	bin man/man1
 

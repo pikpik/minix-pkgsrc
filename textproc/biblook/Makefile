@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/04 21:40:19 reed Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/12 07:10:57 seb Exp $
 #
 
 DISTNAME=	biblook
@@ -12,7 +12,7 @@ COMMENT=	Indexing and searching tools for BibTeX bibliography databases
 
 WRKSRC=		${WRKDIR}
 MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}/man1
-MAKE_FLAGS=     CC="${CC}"
+MAKE_FLAGS+=	CC=${CC:Q}
 
 # override definitions in the package's Makefile via command line
 MAKE_FLAGS+=    OPT="${CFLAGS} -Dunix"

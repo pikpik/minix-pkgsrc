@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/11/16 22:36:40 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2005/11/20 13:44:46 rillig Exp $
 #
 
 DISTNAME=	chicken-2.2
@@ -17,6 +17,6 @@ INFO_FILES=	chicken.info
 MAKE_FLAGS+=	MAKEINFO=${TRUE:Q}
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=	F77=${FALSE}
+CONFIGURE_ENV+=	F77=${FALSE:Q}
 
 .include "../../mk/bsd.pkg.mk"

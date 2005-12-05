@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/10/01 19:36:01 recht Exp $
+# $NetBSD: Makefile,v 1.31 2005/11/16 19:18:59 joerg Exp $
 #
 
 PKGNAME=	python23-2.3.5
@@ -8,7 +8,7 @@ CONFLICTS+=	python-[0-9]*
 
 #PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-PTHREAD_OPTS=   require
+PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth

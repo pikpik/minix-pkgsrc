@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:21 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/09/04 05:00:36 jlam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gtk-/}
 PKGREVISION=	1
 
 COMMENT=	GTK frontend for free real-time 3D space simulator
 
-DEPENDS=	celestia-${CELESTIA_VERS}*:../../misc/celestia
+DEPENDS+=	celestia-${CELESTIA_VERS}*:../../misc/celestia
 
 CONFIGURE_ARGS+=	--with-gtk
 

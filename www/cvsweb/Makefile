@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/08/06 06:19:35 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/09/28 12:18:22 rillig Exp $
 #
 
 DISTNAME=		cvsweb-3.0.5
@@ -64,7 +64,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${DOCDIR}/${f}
 .endfor
 
-SUBST_CLASSES=		prefix
+SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	post-patch
 SUBST_FILES.prefix=	cvsweb.conf cvsweb.cgi INSTALL
 SUBST_SED.prefix=	-e "s,/usr/local/etc/apache,${PKG_SYSCONFBASE}/httpd,g"

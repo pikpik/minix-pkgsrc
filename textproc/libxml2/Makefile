@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2005/09/08 07:31:54 recht Exp $
+# $NetBSD: Makefile,v 1.74 2005/09/30 19:58:00 wiz Exp $
 
 DISTNAME=	libxml2-2.6.22
 CATEGORIES=	textproc
@@ -28,7 +28,7 @@ CONFIGURE_ARGS+=	--without-threads
 
 # NetBSD-sparc64-1.6*'s f77 makes configure failing and as f77 is not
 # needed for this package the following does no harm on other platforms.
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 MAKE_ENV+=	PAX=${PAX:Q}
 

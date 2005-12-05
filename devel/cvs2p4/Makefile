@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:45 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:08 jlam Exp $
 #
 
 DISTNAME=	cvs2p4-2.3.3
@@ -23,8 +23,8 @@ NO_BUILD=	yes
 DOCDIR=		share/doc/${PKGBASE}
 EGDIR=		share/examples/${PKGBASE}
 LIBDIR=		lib/perl5
-PLIST_SUBST+=	DOCDIR=${DOCDIR}
-PLIST_SUBST+=	EGDIR=${EGDIR}
+PLIST_SUBST+=	DOCDIR=${DOCDIR:Q}
+PLIST_SUBST+=	EGDIR=${EGDIR:Q}
 
 FILES_SUBST+=	P4ROOT=${P4ROOT:Q}
 FILES_SUBST+=	P4PORT=${P4PORT:Q}

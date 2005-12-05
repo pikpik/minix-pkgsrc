@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2005/06/17 16:27:58 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2005/07/16 01:19:11 jlam Exp $
 
 DISTNAME=		magicpoint-1.10a
 PKGREVISION=		7
@@ -26,7 +26,7 @@ PKG_SUGGESTED_OPTIONS=	xft2
 CONFIGURE_ARGS+=	--enable-freetype-charset16
 CONFIGURE_ARGS+=	--enable-locale
 CONFIGURE_ARGS+=	--enable-gif
-CONFIGURE_ENV+=		BUILDLINK_DIR=${BUILDLINK_DIR}
+CONFIGURE_ENV+=		BUILDLINK_DIR=${BUILDLINK_DIR:Q}
 CONFIGURE_ENV+=		mgp_cv_path_perl=${TOOLS_PERL5:Q}
 
 MGP_RENDERING_ENGINES=	freetype	graphics/freetype-lib \

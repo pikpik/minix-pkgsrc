@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/08/10 20:56:14 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2005/09/23 20:08:05 wiz Exp $
 #
 
 DISTNAME=		libgnomedb-1.2.2
@@ -20,7 +20,7 @@ GNU_CONFIGURE=		YES
 
 PKGCONFIG_OVERRIDE=	libgnomedb.pc.in
 
-CONFIGURE_ARGS=		--enable-gtk-doc=no
+CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
 GCONF2_SCHEMAS=		libgnomedb.schemas

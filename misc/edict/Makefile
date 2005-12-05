@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/17 05:35:38 cube Exp $
+# $NetBSD: Makefile,v 1.4 2005/01/03 15:44:06 wiz Exp $
 #
 
 DISTNAME=	edict
@@ -23,7 +23,7 @@ WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 EXTRACT_ONLY=	edict.gz
 
-NO_BUILD=	# nothing to do
+NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/edict

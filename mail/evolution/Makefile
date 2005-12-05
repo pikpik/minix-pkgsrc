@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2005/10/16 21:56:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.94 2005/12/04 09:09:47 hira Exp $
 
 DISTNAME=		evolution-2.4.1
 PKGREVISION=		1
@@ -24,7 +24,7 @@ PKG_SUPPORTED_OPTIONS=	inet6 krb4 krb5 ssl
 # function name conflicts with libsoftokn3 provided by Mozilla NSS.  These
 # cause runtime crashes, so don't allow these options to be specified
 # together.
-PKG_FAIL_REASON=	"Kerberos support conflicts with SSL"
+PKG_FAIL_REASON+=	"Kerberos support conflicts with SSL"
 .endif
 
 GNU_CONFIGURE=		YES

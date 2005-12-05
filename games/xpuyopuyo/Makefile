@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:08:04 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/06/01 20:08:00 jlam Exp $
 
 DISTNAME=		xpuyopuyo-0.9.1
 PKGREVISION=		5
@@ -18,7 +18,7 @@ LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-gnome	# install desktop and pixmap files
-CONFIGURE_ENV+=		ac_cv_path_GNOME_CONFIG="${GNOME_CONFIG}"
+CONFIGURE_ENV+=		ac_cv_path_GNOME_CONFIG=${GNOME_CONFIG:Q}
 
 GNOME_CONFIG=		${WRKDIR}/gnome-config
 

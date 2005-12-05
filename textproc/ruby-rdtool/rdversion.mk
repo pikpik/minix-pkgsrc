@@ -1,7 +1,7 @@
-# $NetBSD: rdversion.mk,v 1.3 2004/12/04 15:04:53 taca Exp $
+# $NetBSD: rdversion.mk,v 1.4 2004/12/04 16:07:01 taca Exp $
 #
 
-.ifndef _RD_VERSION_MK
+.if !defined(_RD_VERSION_MK)
 _RD_VERSION_MK=		# defined
 
 .include "../../lang/ruby/rubyversion.mk"

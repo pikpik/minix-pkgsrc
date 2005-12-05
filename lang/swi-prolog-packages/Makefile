@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:59 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/09/28 14:31:07 rillig Exp $
 
-.include "../swi-prolog-lite/Makefile.common"
+.include "../../lang/swi-prolog-lite/Makefile.common"
 
 PKGNAME=		swi-prolog-packages-${SWIPLVERS}
 PKGREVISION=	1
@@ -24,7 +24,7 @@ post-configure:
 	cd ${WRKSRC}/packages; \
 	${SETENV} \
 		CPP=${CPP} \
-		gmake configure
+		${GMAKE} configure
 
 pre-build:
 	${LN} -sf ${LOCALBASE}/bin/plld       ${WRKSRC}/src
@@ -49,14 +49,14 @@ DISPLAY= :2
 .  endif  #Xvfb
 .endif  #DISPLAY
 
-MAKE_ENV+=		DISPLAY=${DISPLAY}
+MAKE_ENV+=		DISPLAY=${DISPLAY:Q}
 
 post-install: teardownx
 teardownx:
 	${ECHO} teardownx: Xvfb-PID: `${CAT} ${WRKDIR}/.Xvfb.pid`
 	sleep 5
 	-kill `${CAT} ${WRKDIR}/.Xvfb.pid`
-	rm -f ${WRKDIR}/.Xvfb.pid
+	${RM} -f ${WRKDIR}/.Xvfb.pid
 
 
 .include "../../lang/swi-prolog-lite/buildlink3.mk"

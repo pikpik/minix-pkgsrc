@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:46 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/06 06:19:38 jlam Exp $
 #
 
 DISTNAME=       	CGI-Kwiki-0.18
@@ -10,7 +10,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.kwiki.org/
-COMMENT=		A Quickie Wiki that's not too Tricky
+COMMENT=		Quickie Wiki that's not too Tricky
 
 DEPENDS+=		p5-Test-Simple>=0.47:../../devel/p5-Test-Simple
 DEPENDS+=		p5-Locale-Maketext>=1.08:../../misc/p5-Locale-Maketext

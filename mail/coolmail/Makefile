@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/22 17:56:31 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2005/11/07 21:17:07 tv Exp $
 
 DISTNAME=		coolmail-1.3
 PKGREVISION=		1
@@ -14,7 +14,7 @@ EXTRA_LIBS.*=		-lcompat
 EXTRA_LIBS.Interix=	-lSM
 EXTRA_LIBS.IRIX=	# empty
 MAKE_ENV+=		EXTRA_LIBS=${EXTRA_LIBS:Q}
-MAKE_ENV+=		X11BASE=${PREFIX}
+MAKE_ENV+=		X11BASE=${PREFIX:Q}
 USE_X11BASE=		yes
 
 .include "../../mk/x11.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/08/12 12:27:30 salo Exp $
+# $NetBSD: Makefile,v 1.39 2005/09/07 15:19:08 adam Exp $
 
 DISTNAME=	xpdf-3.01
 CATEGORIES=	print
@@ -20,8 +20,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-freetype2-includes=${BUILDLINK_PREFIX.freetype2}/include/freetype2
 CONFIGURE_ARGS+=	--with-t1-includes=${BUILDLINK_PREFIX.t1lib}/include
-CONFIGURE_ENV+=		CXXFLAGS="${CXXFLAGS}"
-MAKE_ENV+=		SED="${SED}" ECHO="${ECHO}"
+CONFIGURE_ENV+=		CXXFLAGS=${CXXFLAGS:M*:Q}
+MAKE_ENV+=		SED=${SED:Q} ECHO=${ECHO:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:49 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/09/04 05:00:36 jlam Exp $
 #
 
 DISTNAME=	fillets-ng-0.6.0
@@ -15,7 +15,7 @@ DEPENDS+=	fillets-ng-data-0.6.1:../../games/fillets-ng-data
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 
-SUBST_CLASSES=		man
+SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
 SUBST_FILES.man=	fillets.6
 SUBST_MESSAGE.man=	"Fixing documentation path in the manual page."

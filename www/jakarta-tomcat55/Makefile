@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/25 13:46:43 abs Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/15 18:27:54 jlam Exp $
 
 DISTNAME=       jakarta-tomcat-${TOMCAT_VERSION}
 PKGREVISION=	1
@@ -41,13 +41,11 @@ CONF_FILES=	# empty
 .for f in ${CFILES}
 CONF_FILES+=	${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
-.undef f
 .for f in ${CF2FILES}
 CONF_FILES+=	${EGDIR2}/${f} ${PKG_SYSCONFDIR}/${CATALINA_DIR}/${f}
 .endfor
-.undef f
 
-FILES_SUBST+=	JAVA_HOME=${PKG_JVM_HOME} TOMCAT_LIB=${TOMCAT_LIB}
+FILES_SUBST+=	JAVA_HOME=${PKG_JVM_HOME:Q} TOMCAT_LIB=${TOMCAT_LIB:Q}
 
 do-build:
 	@${MV} ${WRKSRC}/conf ${WRKDIR}
@@ -56,11 +54,9 @@ do-install:
 .for f in ${CFILES}
 	${INSTALL_DATA} ${WRKDIR}/conf/${f} ${EGDIR}
 .endfor
-.undef f
 .for f in ${CF2FILES}
 	${INSTALL_DATA} ${WRKDIR}/conf/${CATALINA_DIR}/${f} ${EGDIR2}
 .endfor
-.undef f
 	${INSTALL_DATA_DIR} ${TOMCAT_LIB}
 	@(cd ${WRKSRC} && ${PAX} -rw -pm . ${TOMCAT_LIB};		\
 	${FIND} ${TOMCAT_LIB} -type f -print | ${XARGS} ${CHMOD} a+r;	\

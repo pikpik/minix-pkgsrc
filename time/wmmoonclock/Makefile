@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:47:45 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/05/22 20:08:43 jlam Exp $
 #
 
 DISTNAME=	wmMoonClock-1.27
@@ -13,7 +13,7 @@ WRKSRC=         ${WRKDIR}/${DISTNAME}/Src
 USE_TOOLS+=	gmake
 USE_X11BASE=	YES
 
-MAKE_FLAGS+=    EXTRA_LOCAL_LIBS=${EXTRA_LOCAL_LIBS}
+MAKE_FLAGS+=    EXTRA_LOCAL_LIBS=${EXTRA_LOCAL_LIBS:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

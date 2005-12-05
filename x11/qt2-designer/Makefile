@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/04/16 00:54:33 kristerw Exp $
+# $NetBSD: Makefile,v 1.25 2005/06/17 03:50:44 jlam Exp $
 
 PKGNAME=		qt2-designer-${QTVERSION}
 PKGREVISION=		3
@@ -7,7 +7,7 @@ COMMENT=		Visual (WYSIWYG) QT GUI builder
 CONFLICTS+=		qt2-designer-kde-[0-9]*
 
 
-.include "../qt2-libs/Makefile.common"
+.include "../../x11/qt2-libs/Makefile.common"
 
 BUILD_TARGET=		sub-tools
 

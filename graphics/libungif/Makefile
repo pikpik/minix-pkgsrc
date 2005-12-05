@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/04/11 21:46:06 tv Exp $
+# $NetBSD: Makefile,v 1.35 2005/11/05 13:32:36 adrianp Exp $
 
 DISTNAME=	libungif-4.1.3
 PKGREVISION=	3
@@ -18,7 +18,7 @@ USE_LIBTOOL=		yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--without-x
+CONFIGURE_ARGS+=	--without-x
 CONFIGURE_ENV+=		ac_cv_lib_X11_main=no
 
 DOCDIR=			${PREFIX}/share/doc/libungif

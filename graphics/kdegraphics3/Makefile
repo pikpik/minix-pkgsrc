@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2005/10/13 13:17:59 markd Exp $
+# $NetBSD: Makefile,v 1.51 2005/11/28 06:41:21 jlam Exp $
 
 DISTNAME=	kdegraphics-${_KDE_VERSION}
 CATEGORIES=	graphics
@@ -9,7 +9,7 @@ COMMENT=	Graphics programs for the KDE integrated X11 desktop
 USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gs:run
 
-BUILDLINK_DEPENDS.lcms=	lcms>=1.12
+BUILDLINK_DEPENDS.lcms+=	lcms>=1.12
 
 REPLACE_PERL=	kghostview/update-to-xt-names.pl
 

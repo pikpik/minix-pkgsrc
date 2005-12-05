@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/06/01 18:03:03 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2005/10/22 13:25:18 wiz Exp $
 
 DISTNAME=	Guppi-0.40.3
 PKGNAME=	${DISTNAME:S/G/g/}
@@ -16,7 +16,7 @@ COMMENT=	Plot program with integrated statistics capabilities
 # only left here for gnucash
 
 # works only with gnumeric-1.0.x (gnome1 based)
-CONFIGURE_ARGS=		--disable-gnumeric
+CONFIGURE_ARGS+=	--disable-gnumeric
 
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES

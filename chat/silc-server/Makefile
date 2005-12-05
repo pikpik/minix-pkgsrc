@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/08/23 11:48:47 rillig Exp $
+# $NetBSD: Makefile,v 1.42 2005/09/13 22:02:24 salo Exp $
 #
 
 DISTNAME=		silc-server-1.0
@@ -32,7 +32,7 @@ PKG_USERS=		${SILCD_USER}:${SILCD_GROUP}::SILC\ Server\ user
 PKG_SYSCONFSUBDIR?=	${PKGBASE}
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
-MAKE_ENV+=		examplesdir=${EGDIR}
+MAKE_ENV+=		examplesdir=${EGDIR:Q}
 
 CONF_FILES_MODE=	0600
 CONF_FILES+=		${EGDIR}/silcd.conf.default \
@@ -65,7 +65,7 @@ CONFIGURE_ARGS+=	--enable-shared
 
 # XXX: Avoid an ICE in gcc2 on sparc64
 #
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 .if ${MACHINE_ARCH} != "i386"
 CONFIGURE_ARGS+=	--disable-asm

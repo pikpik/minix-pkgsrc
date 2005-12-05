@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/06/16 06:57:48 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/09/28 20:52:20 rillig Exp $
 
 DISTNAME=	STLport-4.6
 PKGNAME=	stlport-4.6
@@ -17,7 +17,7 @@ USE_LANGUAGES=	c c++
 NO_CONFIGURE=	yes
 BUILD_DIRS=	${WRKSRC}/src
 
-MAKE_ENV+=	CXXFLAGS="${CXXFLAGS}"
+MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:M*:Q}
 MAKEFILE=	gcc-libtool.mak
 
 PTHREAD_OPTS+=		require

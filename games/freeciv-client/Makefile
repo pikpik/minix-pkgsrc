@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/06/01 18:02:50 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/08/24 10:45:32 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-client-/}
 COMMENT=	Freeciv client with Xaw interface
@@ -11,7 +11,7 @@ CONFLICTS=	freeciv-client-gtk<=1.11.4
 CONFIGURE_ARGS+=	--disable-make-data
 CONFIGURE_ARGS+=	--disable-server
 
-.include "../freeciv-share/Makefile.common"
+.include "../../games/freeciv-share/Makefile.common"
 
 .include "options.mk"
 

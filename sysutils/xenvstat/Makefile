@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/06/01 18:03:23 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:36 jlam Exp $
 
 DISTNAME=	xenvstat-20041127
 CATEGORIES=	sysutils
@@ -14,7 +14,7 @@ ONLY_FOR_PLATFORM=	NetBSD-*-*
 NO_CONFIGURE=	yes
 NO_CHECKSUM=	yes
 
-LIBS=		-lXmu -lXext -lXt -lX11 -lm
+LIBS+=		-lXmu -lXext -lXt -lX11 -lm
 
 INSTALLATION_DIRS=	bin lib/X11/app-defaults
 

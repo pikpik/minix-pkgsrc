@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/08/10 20:56:15 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2005/08/21 11:24:45 jmmv Exp $
 
 DISTNAME=		libbonobo-2.10.1
 CATEGORIES=		devel gnome
@@ -22,7 +22,7 @@ PKGCONFIG_OVERRIDE+=	bonobo-activation/bonobo-activation-2.0.pc.in
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
-CONFIGURE_ENV+=		PERL_PATH="${TOOLS_PERL5}"
+CONFIGURE_ENV+=		PERL_PATH=${TOOLS_PERL5:Q}
 
 PKG_SYSCONFSUBDIR=	bonobo-activation
 EGDIR=			${PREFIX}/share/examples/bonobo-activation

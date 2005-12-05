@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2005/04/11 21:46:39 tv Exp $
+# $NetBSD: Makefile,v 1.53 2005/05/22 20:08:18 jlam Exp $
 
 DISTNAME=	rpm-2.5.4
 PKGREVISION=	3
@@ -26,10 +26,10 @@ INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/${PKGLOCALEDIR}
 
 # The rpm databases are kept under ${RPM_DB_PREFIX}/lib/rpm.
-CONFIGURE_ENV+=		varprefix="${RPM_DB_PREFIX}"
+CONFIGURE_ENV+=		varprefix=${RPM_DB_PREFIX:Q}
 
 RPMDIR=			${RPM_DB_PREFIX}/lib/rpm
-FILES_SUBST+=		RPMDIR=${RPMDIR}
+FILES_SUBST+=		RPMDIR=${RPMDIR:Q}
 
 post-configure:
 	cd ${WRKSRC}/po && ${MV} cz.po cs.po

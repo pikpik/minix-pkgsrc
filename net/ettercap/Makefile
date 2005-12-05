@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/05/14 16:46:17 adrianp Exp $
+# $NetBSD: Makefile,v 1.38 2005/11/19 14:28:50 rillig Exp $
 
 DISTNAME=		ettercap-0.6.b
 PKGREVISION=		3
@@ -22,7 +22,7 @@ USE_NCURSES=		# putwin()
 USE_OLD_DES_API=	yes
 PTHREAD_OPTS+=		require
 PTHREAD_AUTO_VARS=	yes
-MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 
 BUILD_DIRS=		. plugins
 INSTALL_DIRS=		. plugins

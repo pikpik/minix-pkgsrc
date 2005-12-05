@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:45:05 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/07/19 10:01:16 grant Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -22,7 +22,7 @@ NOT_FOR_PLATFORM= NetBSD-*-*
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE=	# defined
+LIBTOOL_OVERRIDE=	# none
 SHLIBTOOL_OVERRIDE=	libtool */libtool */*/libtool
 WRKSRC=			${WRKDIR:=/${DISTNAME}/plugins/qt-gui}
 

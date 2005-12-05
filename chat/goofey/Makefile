@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/23 09:01:45 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:42 jlam Exp $
 #
 
 DISTNAME=	goofey-3.15
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.csse.monash.edu.au/~tym/goofey.html
 COMMENT=	Text-based client for goofey, a flexible short message system
 
 NO_CONFIGURE=	yes
-LDFLAGS.SunOS=	-lnsl -lsocket
+LDFLAGS.SunOS+=	-lnsl -lsocket
 
 INSTALLATION_DIRS=	bin man/man1
 

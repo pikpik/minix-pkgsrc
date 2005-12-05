@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/07/21 16:29:54 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2005/08/10 20:56:20 jlam Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
 CATEGORIES=	multimedia
@@ -19,7 +19,7 @@ CONF_FILES+=		${PREFIX}/share/examples/kdemultimedia3/applications-merged/kde-mu
 
 .include "../../mk/compiler.mk"
 .if !empty(CC_VERSION:Mgcc-3.*)
-BUILDLINK_DEPENDS.xine-lib=	xine-lib>=1rc0anb1
+BUILDLINK_DEPENDS.xine-lib+=	xine-lib>=1rc0anb1
 .endif
 
 CONFIGURE_ARGS+=	--enable-cdparanoia

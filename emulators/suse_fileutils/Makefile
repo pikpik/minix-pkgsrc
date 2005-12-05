@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/10/02 14:25:39 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2005/07/19 10:23:42 grant Exp $
 
 DISTNAME=		suse_fileutils-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -20,5 +20,5 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		fileutils.rpm
 
-.include "../suse_linux/Makefile.common"
+.include "../../emulators/suse_linux/Makefile.common"
 .include "../../mk/bsd.pkg.mk"

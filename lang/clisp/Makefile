@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/08/03 20:46:16 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2005/08/31 12:12:32 drochner Exp $
 
 DISTNAME=		clisp-2.33.2
 PKGREVISION=		1
@@ -16,7 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_PKGLOCALEDIR=	YES
-CONFIGURE_ENV+=		CC="${CC}" CFLAGS="${CFLAGS}" CPPFLAGS="${CPPFLAGS}" \
+CONFIGURE_ENV+=		CC=${CC:Q} CFLAGS=${CFLAGS:M*:Q} CPPFLAGS=${CPPFLAGS:M*:Q} \
 			gt_cv_func_gnugettext2_libintl=yes
 GNU_CONFIGURE=		YES
 UNLIMIT_RESOURCES=	stacksize

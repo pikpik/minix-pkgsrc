@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.12 2005/05/31 10:01:36 dillo Exp $
+# $NetBSD: options.mk,v 1.13 2005/10/26 15:08:13 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openldap
 PKG_SUPPORTED_OPTIONS=	bdb kerberos sasl slp
@@ -8,7 +8,7 @@ PKG_SUGGESTED_OPTIONS=	bdb
 
 ###
 ### Whether to build with the Berkeley DB based slapd backends.
-### 
+###
 ### NOTE: that option is enabled, because the openldap server needs
 ### 	  to have local storage support to work as standalone.
 ###

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/05/16 17:35:29 minskim Exp $
+# $NetBSD: Makefile,v 1.28 2005/06/17 03:50:30 jlam Exp $
 
 DISTNAME=	rpm2pkg-2.1
 PKGREVISION=	1
@@ -17,7 +17,7 @@ NO_CHECKSUM=	YES
 
 CPPFLAGS+=	${BUILDLINK_CPPFLAGS.bzip2} ${BUILDLINK_CPPFLAGS.rpm} \
 		${BUILDLINK_CPPFLAGS.zlib}
-LIBS=		-lrpm -lintl -lz -lbz2
+LIBS+=		-lrpm -lintl -lz -lbz2
 
 .include "../../mk/bsd.prefs.mk"
 

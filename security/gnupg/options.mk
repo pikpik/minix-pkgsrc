@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2005/05/15 04:26:24 jlam Exp $
+# $NetBSD: options.mk,v 1.4 2005/07/15 18:27:53 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnupg
 PKG_SUPPORTED_OPTIONS=	i586-optimized curl idea ldap m68060-optimized
@@ -41,6 +41,6 @@ PLIST_SUBST+=	OPENLDAP="@comment "
 
 .if !empty(PKG_OPTIONS:Mm68060-optimized)
 # be more efficient on M68060 machines
-CONFIGURE_ENV+=                M68060=${M68060}
+CONFIGURE_ENV+=                M68060=${M68060:Q}
 CFLAGS+=                       -m68060
 .endif

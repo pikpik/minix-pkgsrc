@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/27 13:40:03 grant Exp $
+# $NetBSD: Makefile,v 1.6 2005/10/12 07:10:57 seb Exp $
 #
 
 DISTNAME=	ripe-whois-tools-2.4
@@ -11,9 +11,9 @@ COMMENT=	RIPE WHOIS client and tools
 
 WRKSRC=		${WRKDIR}
 
-LIBS.NetBSD=	-lcrypt
-LIBS.SunOS=	-lnsl -lsocket
+LIBS.NetBSD+=	-lcrypt
+LIBS.SunOS+=	-lnsl -lsocket
 
-MAKE_ENV+=	LIBS="${LIBS}"
+MAKE_ENV+=	LIBS=${LIBS:M*:Q}
 
 .include "../../mk/bsd.pkg.mk"

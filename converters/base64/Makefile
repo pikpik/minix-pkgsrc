@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2004/12/03 15:14:52 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/04/11 21:45:08 tv Exp $
 #
 
 DISTNAME=	base64-1.3
-PKGNAME=	${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	http://www.fourmilab.ch/webtools/base64/

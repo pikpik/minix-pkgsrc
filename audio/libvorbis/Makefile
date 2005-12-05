@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/08/20 11:36:05 grant Exp $
+# $NetBSD: Makefile,v 1.39 2005/10/15 18:14:03 wiz Exp $
 
 DISTNAME=	libvorbis-1.1.1
 CATEGORIES=	devel audio
@@ -16,7 +16,7 @@ USE_LIBTOOL=		YES
 GCC_REQD+=		2.95.3
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 PKGCONFIG_OVERRIDE+=	vorbis.pc.in
 PKGCONFIG_OVERRIDE+=	vorbisenc.pc.in

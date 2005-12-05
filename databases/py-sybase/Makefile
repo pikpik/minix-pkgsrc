@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:15 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/07/01 00:29:06 reed Exp $
 #
 
 DISTNAME=	sybase-0.36
@@ -18,7 +18,7 @@ PYSETUPBUILDARGS=	build_ext -D HAVE_FREETDS=61 -U WANT_BULKCOPY
 PYDISTUTILSPKG=		yes
 
 SYBASE=		${BUILDLINK_PREFIX.freetds}/freetds
-MAKE_ENV+=	SYBASE=${SYBASE}
+MAKE_ENV+=	SYBASE=${SYBASE:Q}
 
 post-patch:
 	${SED} "s|\(runtime_library_dirs = \)None|\1['${SYBASE}'+'/lib']|" \

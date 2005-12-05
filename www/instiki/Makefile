@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/09/28 12:24:44 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2005/11/09 04:27:34 taca Exp $
 
 DISTNAME=	instiki-0.9.2
 PKGREVISION=	4
@@ -14,7 +14,7 @@ NO_BUILD=	yes
 USE_PKGINSTALL=	yes
 
 RCD_SCRIPTS=	instiki
-FILES_SUBST+=	RUBY=${RUBY}
+FILES_SUBST+=	RUBY=${RUBY:Q}
 
 REPLACE_RUBY=		instiki
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:21:02 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/02/02 21:07:26 abs Exp $
 #
 
 DISTNAME=	x10_heyu
@@ -15,7 +15,7 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 WRKSRC=		${WRKDIR}/heyu.dir
 
 CONFIGURE_SCRIPT=	./Configure
-MAKE_ENV+=	DEFAULT_SERIAL_DEVICE=${DEFAULT_SERIAL_DEVICE}
+MAKE_ENV+=	DEFAULT_SERIAL_DEVICE=${DEFAULT_SERIAL_DEVICE:Q}
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/heyu

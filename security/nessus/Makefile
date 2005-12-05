@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2005/07/19 10:13:07 grant Exp $
+# $NetBSD: Makefile,v 1.28 2005/08/09 21:33:23 tron Exp $
 
-.include	"../nessus/Makefile.common"
+.include	"../../security/nessus/Makefile.common"
 
 DISTNAME=	nessus-${VERS}
 MASTER_SITES=	# empty

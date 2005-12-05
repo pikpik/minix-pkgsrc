@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/08/06 06:19:24 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2005/10/18 04:32:37 grant Exp $
 
 DISTNAME=	net-snmp-5.2.1.2
 PKGREVISION=	1
@@ -79,7 +79,7 @@ CONFIGURE_ARGS+=	--enable-ucd-snmp-compatibility
 CONFIGURE_ARGS+=	--with-perl-modules=${MAKE_PARAMS:Q}
 PERL5_CONFIGURE=	NO
 PERL5_PACKLIST=		auto/Bundle/NetSNMP/.packlist
-CONFIGURE_ENV+=		PERLPROG="${PERL5}"
+CONFIGURE_ENV+=		PERLPROG=${PERL5:Q}
 
 .include "options.mk"
 

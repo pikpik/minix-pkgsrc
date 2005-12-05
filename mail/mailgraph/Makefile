@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/10/23 21:43:58 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/11/14 08:27:55 kleink Exp $
 #
 
 DISTNAME=	mailgraph-1.12
@@ -30,8 +30,8 @@ DOCDIR=		share/doc/${PKGBASE}
 OWN_DIRS+=	${PREFIX}/${DOCDIR}
 RCD_SCRIPTS=	mailgraph
 
-PLIST_SUBST+=	CGIDIR="${CGIDIR}"
-PLIST_SUBST+=	DOCDIR="${DOCDIR}"
+PLIST_SUBST+=	CGIDIR=${CGIDIR:Q}
+PLIST_SUBST+=	DOCDIR=${DOCDIR:Q}
 
 SUBST_CLASSES+=		defs
 

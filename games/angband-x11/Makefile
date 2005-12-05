@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/06/01 18:02:49 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2005/11/10 06:30:53 rillig Exp $
 #
 
 DISTNAME=	angband-3.0.3
@@ -16,7 +16,7 @@ CONFLICTS=	angband-tty-[0-9]*
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-INCOMPAT_CURSES=	NetBSD-1.5* NetBSD-1.6[-_.]*
+INCOMPAT_CURSES=	NetBSD-1.5*-* NetBSD-1.6[-_.]*-*
 INCOMPAT_CURSES+=	NetBSD-1.6[A-M]-*
 
 SPOILERFILE=	angband-spoilers.tar.gz

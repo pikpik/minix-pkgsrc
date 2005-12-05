@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/04/25 03:09:56 snj Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:47:19 tv Exp $
 #
 
 DISTNAME=	sniff-2.0
@@ -13,7 +13,7 @@ COMMENT=	Program to sniff logins and passwords
 
 .if ${OPSYS} == "SunOS"
 LIBS+=		-lsocket -lnsl
-MAKE_ENV+=	LIBS="${LIBS}"
+MAKE_ENV+=	LIBS=${LIBS:M*:Q}
 .endif
 
 .include "../../net/libpcap/buildlink3.mk"

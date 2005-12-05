@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:47:00 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/10/06 21:18:24 bad Exp $
 #
 
 DISTNAME=	export.socks.cstc.4.2.2
@@ -17,7 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=			${WRKDIR}/socks.cstc.4.2
 USE_PKGINSTALL=		yes
-MAKE_ENV+=		OPTIMIZE="${CFLAGS}"
+MAKE_ENV+=		OPTIMIZE=${CFLAGS:M*:Q}
 
 EGDIR=		${PREFIX}/share/examples/socks4
 CONF_FILES=	${EGDIR}/socks.conf ${PKG_SYSCONFDIR}/socks.conf

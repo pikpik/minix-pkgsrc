@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/07/21 08:31:50 minoura Exp $
+# $NetBSD: Makefile,v 1.12 2005/07/24 18:24:45 kristerw Exp $
 #
 
 DISTNAME=	sl
@@ -17,7 +17,7 @@ COMMENT=	Animated SL that runs across the terminal when you type `sl'
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
-BUILD_DEPENDS=	nkf-[0-9]*:../../converters/nkf
+BUILD_DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 
 INSTALLATION_DIRS=	bin man/ja_JP.EUC/man1
 

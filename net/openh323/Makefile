@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/05/22 20:08:25 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/07/15 18:27:53 jlam Exp $
 
 DISTNAME=	openh323-v1_15_2-src
 PKGNAME=	openh323-1.15.2
@@ -15,10 +15,10 @@ USE_TOOLS+=		gmake tar
 USE_LIBTOOL=		yes
 USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	PWLIBDIR=${PREFIX}
+CONFIGURE_ARGS+=	PWLIBDIR=${PREFIX:Q}
 
 BUILD_TARGET=		opt apps
-MAKE_ENV+=		PWLIBDIR=${PREFIX}/share/pwlib OPENH323DIR=${WRKSRC}
+MAKE_ENV+=		PWLIBDIR=${PREFIX}/share/pwlib OPENH323DIR=${WRKSRC:Q}
 MAKE_ENV+=		SYSLIBDIR=${PREFIX}/lib
 
 post-extract:

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.104 2005/01/18 14:16:20 adam Exp $
+# $NetBSD: hacks.mk,v 1.1 2005/01/24 20:48:05 tv Exp $
 
-.ifndef NETPBM_HACKS_MK
+.if !defined(NETPBM_HACKS_MK)
 NETPBM_HACKS_MK=	# defined
 
 ### [historic : ???]

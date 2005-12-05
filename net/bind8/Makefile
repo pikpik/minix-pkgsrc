@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/04/11 21:46:44 tv Exp $
+# $NetBSD: Makefile,v 1.32 2005/11/04 19:36:01 rillig Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGREVISION=	1
@@ -25,7 +25,7 @@ BUILD_DIRS=	src doc/man
 
 .if ${OPSYS} == "SunOS"
 MAKEFLAGS+=	MANROFF=cat
-MAKEFLAGS+=	INSTALL=${INSTALL}
+MAKEFLAGS+=	INSTALL=${INSTALL:Q}
 OWN_DIRS_PERMS=	${PKG_SYSCONFDIR}/ndc.d root other 700
 .endif
 

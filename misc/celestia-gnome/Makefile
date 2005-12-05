@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/06/20 06:06:11 hira Exp $
+# $NetBSD: Makefile,v 1.12 2005/09/04 05:00:36 jlam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
 PKGREVISION=	2
 
 COMMENT=	GNOME frontend for free real-time 3D space simulator
 
-DEPENDS=	celestia-${CELESTIA_VERS}*:../../misc/celestia
+DEPENDS+=	celestia-${CELESTIA_VERS}*:../../misc/celestia
 
 CELESTIA_PROGPREFIX=	g
 

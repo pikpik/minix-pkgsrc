@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/03/24 21:13:04 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/17 03:50:44 jlam Exp $
 
 DISTNAME=	tkinfo-2.8
 CATEGORIES=	x11
@@ -8,7 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://math-www.uni-paderborn.de/~axel/tkinfo/
 COMMENT=	Tk script to read and display GNU "info" files
 
-DEPENDS=	tk>=8.3.2:../../x11/tk
+DEPENDS+=	tk>=8.3.2:../../x11/tk
 
 NO_BUILD=	yes
 

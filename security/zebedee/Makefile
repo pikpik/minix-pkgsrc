@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/07/16 01:19:19 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/09/18 13:51:09 taca Exp $
 
 DISTNAME=	zebedee-2.5.3
 CATEGORIES=	security
@@ -12,8 +12,8 @@ DEPENDS+=	tcl-[0-9]*:../../lang/tcl
 
 USE_TOOLS+=		gmake perl
 
-MAKE_ENV+=		PERL5=${PERL5}
-MAKE_FLAGS=		OS=${LOWER_OPSYS}
+MAKE_ENV+=		PERL5=${PERL5:Q}
+MAKE_FLAGS+=		OS=${LOWER_OPSYS:Q}
 
 .include "../../mk/pthread.buildlink3.mk"
 

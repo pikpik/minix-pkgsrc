@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.45 2005/10/29 14:14:00 xtraeme Exp $
+# $NetBSD: Makefile.common,v 1.46 2005/11/09 19:48:44 tv Exp $
 
 DISTNAME=		mysql-4.1.15
 CATEGORIES=		databases
@@ -72,7 +72,7 @@ CONFIGURE_ARGS+=	--enable-assembler
 .endif
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 CPPFLAGS+=		-Dunix
 CFLAGS+=		-DUSE_OLD_FUNCTIONS # 3.23.x compat

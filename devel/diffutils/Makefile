@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2003/08/09 10:44:39 seb Exp $
+# $NetBSD: Makefile,v 1.14 2004/05/18 11:58:04 recht Exp $
 #
 
 DISTNAME=		diffutils-2.8.1
@@ -19,7 +19,7 @@ INFO_FILES=		diff.info
 .if defined(GNU_PROGRAM_PREFIX)
 CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX}
 .endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX}
+PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
 BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 
 .include "../../mk/bsd.pkg.mk"

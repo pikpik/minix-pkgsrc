@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:32 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/10/23 22:03:21 rillig Exp $
 
 DISTNAME=	xjman-0.5
 CATEGORIES=	japanese x11
@@ -15,7 +15,7 @@ WRKSRC=		${WRKDIR}/man/ja_JP.eucJP
 USE_X11BASE=	yes
 PLIST_SRC=	${WRKDIR}/PLIST
 XJMANDIR=	man/ja_JP.EUC
-MAKE_ENV+=	XJMANDIR=${XJMANDIR}
+MAKE_ENV+=	XJMANDIR=${XJMANDIR:Q}
 
 NO_CONFIGURE=	yes
 

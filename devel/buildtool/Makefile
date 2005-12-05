@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/07/04 22:18:41 jmmv Exp $
+# $NetBSD: Makefile,v 1.19 2005/04/11 21:45:18 tv Exp $
 #
 
 DISTNAME=	buildtool-0.16
@@ -17,9 +17,9 @@ TEST_TARGET=		test
 
 PKG_SYSCONFSUBDIR=	buildtool
 
-CONFIGURE_ARGS=		-p ${PREFIX}
+CONFIGURE_ARGS+=	-p ${PREFIX}
 CONFIGURE_ARGS+=	-c ${PKG_SYSCONFDIR}
-CONFIGURE_ENV+=		SH="${SH}"
+CONFIGURE_ENV+=		SH=${SH:Q}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/buildtool/pkgflags

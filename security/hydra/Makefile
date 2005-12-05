@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/07/21 16:29:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/08/10 20:56:23 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME}-src
@@ -19,7 +19,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 
 LICENSE+=	hydra-license
 
-SUBST_CLASSES=		build
+SUBST_CLASSES+=		build
 SUBST_STAGE.build=	post-patch
 SUBST_FILES.build=	Makefile.am configure hydra-gtk/src/main.c
 SUBST_SED.build=	-e "s|@SSLBASE@|${BUILDLINK_PREFIX.openssl}|g" \

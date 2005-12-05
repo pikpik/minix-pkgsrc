@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2002/12/27 08:41:24 uebayasi Exp $
+# $NetBSD: Makefile,v 1.6 2003/05/31 08:28:34 uebayasi Exp $
 #
-.include "../canna/Makefile.common"
+.include "../../inputmethod/canna/Makefile.common"
 
 CANNA_MODULE=	lib
 
@@ -27,4 +27,4 @@ do-configure:
 post-configure:
 	@${LN} -s ${WRKSRC}/server/*.h ${WRKSRC}/include
 
-.include "../canna/Makefile.include"
+.include "../../inputmethod/canna/Makefile.include"

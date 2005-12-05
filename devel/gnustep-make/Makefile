@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/07/29 12:57:13 adam Exp $
+# $NetBSD: Makefile,v 1.22 2005/09/30 23:10:52 rh Exp $
 
 DISTNAME=	gnustep-make-1.11.1
 CATEGORIES=	devel gnustep
@@ -10,7 +10,7 @@ COMMENT=	GNUstep makefile package
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-CONFIGURE_ENV+=	INSTALL_PROGRAM="${INSTALL_SCRIPT}"
+CONFIGURE_ENV+=	INSTALL_PROGRAM=${INSTALL_SCRIPT:Q}
 
 .include "../../mk/x11.buildlink3.mk"
 .include "gnustep.mk"

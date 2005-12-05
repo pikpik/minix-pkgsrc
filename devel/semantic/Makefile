@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/08/28 04:25:29 uebayasi Exp $
+# $NetBSD: Makefile,v 1.16 2005/09/28 17:06:53 rillig Exp $
 #
 
 DISTNAME=	semantic-1.4.2
@@ -23,7 +23,7 @@ USE_TOOLS+=	gmake
 INFO_FILES=	semantic.info
 OTHER_INFO=	semantic.info-1 semantic.info-2
 
-MAKE_ENV+=	EMACS=${EMACS_FLAVOR}
+MAKE_ENV+=	EMACS=${EMACS_FLAVOR:Q}
 
 # XXX cd ${WRKSRC}; ${MAKE} -V semantic_LISP
 SRCS=	semantic.el semantic-util.el semantic-bnf.el semantic-ctxt.el

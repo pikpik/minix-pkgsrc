@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2005/08/30 16:12:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.51 2005/09/04 02:37:02 xtraeme Exp $
 #
 
 DISTNAME=	lame-${VERS}
@@ -24,7 +24,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-vorbis
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE}
+CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 LDFLAGS.SunOS+=		-lm
 

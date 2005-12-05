@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2005/06/01 18:02:40 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/08/22 12:25:00 cube Exp $
 #
 
 DISTNAME=		gtkwave-2.0.0pre5
-PKGNAME=		gtkwave-2.0.0pre5
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.cs.man.ac.uk/pub/amulet/gtkwave/2.0/
 

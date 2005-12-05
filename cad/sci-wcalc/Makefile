@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2004/05/29 00:17:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/01 03:52:50 dmcmahill Exp $
 #
 
 .include "../../cad/wcalc/Makefile.common"
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=	--without-matlab
 CONFIGURE_ARGS+=	--without-octave
 CONFIGURE_ARGS+=	--with-scilab=${SCI}
 
-PLIST_SUBST+=		SCIVERSION=${SCIVERSION}
+PLIST_SUBST+=		SCIVERSION=${SCIVERSION:Q}
 MESSAGE_SUBST+=		SCIVERSION=${SCIVERSION}
 
 .include "../../cad/libwcalc/buildlink3.mk"

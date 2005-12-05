@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:15 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:11 jlam Exp $
 #
 
 DISTNAME=	basicproperty-0.6.3a
@@ -15,7 +15,7 @@ MAKE_ENV+=		BINDIR=${PREFIX}/bin
 USE_TOOLS+=		gmake
 
 PYDISTUTILSPKG=	yes
-PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX}
+PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX:Q}
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

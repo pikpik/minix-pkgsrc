@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:10 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:07:44 jlam Exp $
 
 DISTNAME=		binutils-2.13.2.1
 PKGNAME=		avr-binutils-2.13.2.1
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_MAKEINFO=		YES
 
-CONFIGURE_ARGS=		--target=avr
+CONFIGURE_ARGS+=	--target=avr
 
 # Prevent the need to run texi2pod.pl and pod2man hence
 # the need for perl as build dependency.

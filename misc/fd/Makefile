@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2001/12/30 13:46:03 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2002/11/10 00:35:08 grant Exp $
 #
 
 DISTNAME=	FD-1.03u
@@ -10,7 +10,7 @@ MAINTAINER=	nobu@psrc.isac.co.jp
 COMMENT=	File and directory management tool
 
 MANLANG=	ja
-MAKE_ENV=	LANG=${MANLANG}
+MAKE_ENV+=	LANG=${MANLANG:Q}
 DOCS=		README FAQ HISTORY ToAdmin
 
 # require maintainer signature for binary package distributions

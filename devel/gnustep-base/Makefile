@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/09/30 23:13:57 rh Exp $
+# $NetBSD: Makefile,v 1.27 2005/11/28 22:12:24 rh Exp $
 
 DISTNAME=	gnustep-base-1.11.1
 CATEGORIES=	devel gnustep
@@ -11,7 +11,7 @@ COMMENT=	GNUstep foundation classes
 PTHREAD_LIBS=		-lpthread
 
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep
-CONFIGURE_ENV+=		INSTALL_PROGRAM="${INSTALL_SCRIPT}"
+CONFIGURE_ENV+=		INSTALL_PROGRAM=${INSTALL_SCRIPT:Q}
 
 pre-configure:
 	${SED} 's|@PREFIX@|${PREFIX}|g' <${FILESDIR}/openapp >${WRKDIR}/openapp

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/05/22 05:35:32 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/07/16 19:10:38 jlam Exp $
 #
 
 DISTNAME=	automake-1.4-p6
@@ -10,7 +10,7 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html
 COMMENT=	GNU Standards-compliant Makefile generator (old version)
 
-DEPENDS=	autoconf213>=2.13:../../devel/autoconf213
+DEPENDS+=	autoconf213>=2.13:../../devel/autoconf213
 
 CONFLICTS=	automake<1.6
 

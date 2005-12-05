@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:45 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/17 03:50:24 jlam Exp $
 #
 
 DISTNAME=	driftnet-0.1.6
@@ -10,11 +10,11 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.ex-parrot.com/~chris/driftnet/
 COMMENT=	Real-time image sniffer
 
-DEPENDS=	mpg123-[0-9]*:../../audio/mpg123
+DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 
 
 BUILD_TARGET=	default
-MAKE_ENV+=	CAT="${CAT}" TRUE="${TRUE}"
+MAKE_ENV+=	CAT=${CAT:Q} TRUE=${TRUE:Q}
 
 INSTALLATION_DIRS=	bin man/man1
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/09/28 20:52:20 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2005/10/23 15:09:30 rillig Exp $
 #
 
 DISTNAME=		compat16-${MACHINE_ARCH}-${VERSION}
@@ -22,7 +22,7 @@ SHLIB_HANDLING=		NO
 
 EMULSUBDIR=		emul/netbsd16
 
-PLIST_SUBST+=		EMULSUBDIR=${EMULSUBDIR}
+PLIST_SUBST+=		EMULSUBDIR=${EMULSUBDIR:Q}
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${EMULSUBDIR}

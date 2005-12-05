@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2002/01/17 08:26:41 agc Exp $
+# $NetBSD: Makefile,v 1.4 2002/10/03 14:25:04 wiz Exp $
 #
 
 PKGNAME=	dylan-compiler-${DYLAN_VERSION}
 
-PATCHDIR=	${.CURDIR}/../dylan-interpreter/patches
-DISTINFO_FILE=	${.CURDIR}/../dylan-interpreter/distinfo
+PATCHDIR=	${.CURDIR}/../../lang/dylan-interpreter/patches
+DISTINFO_FILE=	${.CURDIR}/../../lang/dylan-interpreter/distinfo
 
 CONFIGURE_ARGS+=	--enable-mindy-bootstrap
 
@@ -16,4 +16,4 @@ pre-build:
 	@${ECHO_MSG} "You could try the dylan interpreter, in ${.CURDIR}/../dylan-interpreter"
 	@${ECHO_MSG} "********************************** WARNING ***********************************"
 
-.include "../dylan-interpreter/Makefile.common"
+.include "../../lang/dylan-interpreter/Makefile.common"

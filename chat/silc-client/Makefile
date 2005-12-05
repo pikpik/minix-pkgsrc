@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/05/22 20:07:43 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/09/17 17:06:27 salo Exp $
 #
 
 DISTNAME=		${SILC_CLIENT_DISTNAME}
@@ -26,7 +26,7 @@ SHLIBTOOL_OVERRIDE=	libtool */libtool */*/*/libtool
 PKG_SYSCONFSUBDIR?=	${PKGBASE}
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
-MAKE_ENV+=		examplesdir=${EGDIR}
+MAKE_ENV+=		examplesdir=${EGDIR:Q}
 
 CONF_FILES+=		${EGDIR}/silc.conf.default ${PKG_SYSCONFDIR}/silc.conf
 

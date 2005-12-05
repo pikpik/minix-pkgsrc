@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2003/07/17 21:33:25 grant Exp $
+# $NetBSD: Makefile,v 1.3 2004/07/22 09:16:01 recht Exp $
 #
 
 DISTNAME=	Distutils-1.0.2
@@ -12,7 +12,7 @@ COMMENT=	Distribution Utilities for Python
 
 PYTHON_VERSIONS_ACCEPTED= 15
 PYSITELIB=	lib/python1.5/site-packages
-PLIST_SUBST+=	PYSITELIB=${PYSITELIB}
+PLIST_SUBST+=	PYSITELIB=${PYSITELIB:Q}
 PYTHON_DISTUTILS_BOOTSTRAP=	yes
 
 do-build:

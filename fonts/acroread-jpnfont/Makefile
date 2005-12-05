@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2003/07/17 21:36:44 grant Exp $
+# $NetBSD: Makefile,v 1.9 2004/01/20 12:15:16 agc Exp $
 #
 
 DISTNAME=	jpnfont
@@ -23,4 +23,4 @@ _FETCH_MESSAGE= \
 	${ECHO} "    http://www.adobe.com/prodindex/acrobat/readstep.html"; \
 	${ECHO} "======================================================="
 
-.include "../acroread-font-share/Makefile.common"
+.include "../../fonts/acroread-font-share/Makefile.common"

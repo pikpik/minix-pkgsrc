@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/05/16 01:15:34 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2005/05/30 23:24:10 wiz Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
 PKGNAME=	fvwm2-${FVWM_VER}
@@ -23,7 +23,7 @@ USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
 USE_GNU_READLINE=	YES
 
-PLIST_SUBST+=		FVWM_VER=${FVWM_VER}
+PLIST_SUBST+=		FVWM_VER=${FVWM_VER:Q}
 
 EVAL_PREFIX+=		XPMDIR=xpm
 CONFIGURE_ARGS+=	--without-gnome
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--with-xpm-includes=${XPMDIR}/include
 CONFIGURE_ARGS+=	--with-imagepath=${PREFIX}/lib/X11/fvwm2/pixmaps:${X11BASE}/include/X11/bitmaps:${X11BASE}/include/X11/pixmaps
 
 # We don't want to have CPP from the buildlink directory
-CONFIGURE_ENV+=		ac_cv_path_FVWM_CPP="${CPP}"
+CONFIGURE_ENV+=		ac_cv_path_FVWM_CPP=${CPP:Q}
 
 post-extract:
 	${MKDIR} ${WRKDIR}/icons

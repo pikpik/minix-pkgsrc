@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:02 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:55 jlam Exp $
 #
 
 DISTNAME=	freeglut-2.2.0
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-replace-glut
+CONFIGURE_ARGS+=	--disable-replace-glut
 
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"

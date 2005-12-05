@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/07/20 00:59:45 reed Exp $
 #
 
 DISTNAME=		freefont-ttf
@@ -10,7 +10,7 @@ MAINTAINER=		reed@reedmedia.net
 HOMEPAGE=		http://www.nongnu.org/freefont/
 COMMENT=		Free UCS Outline Fonts: FreeMono, FreeSans, and FreeSerif
 
-DIST_SUBDIR=		${PKGNAME}
+DIST_SUBDIR=		${PKGNAME_NOREV}
 
 WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		yes

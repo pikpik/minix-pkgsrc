@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2005/05/22 22:06:28 jlam Exp $
+# $NetBSD: Makefile,v 1.67 2005/10/20 00:01:32 wiz Exp $
 
 DISTNAME=	ncurses-${NC_VERS}
 NC_VERS=	5.5
@@ -39,7 +39,7 @@ PLIST_SUBST+=	NOT_SUNOS=""
 TERMINFODIR=	share/terminfo
 .endif
 
-PLIST_SUBST+=	TERMINFODIR="${TERMINFODIR}"
+PLIST_SUBST+=	TERMINFODIR=${TERMINFODIR:Q}
 
 CONFIGURE_ARGS+=	--with-default-terminfo-dir=${PREFIX}/${TERMINFODIR}
 CONFIGURE_ARGS+=	--with-terminfo-dirs=${PREFIX}/${TERMINFODIR}

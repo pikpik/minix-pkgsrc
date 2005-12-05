@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:33 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/11/04 21:55:09 dbj Exp $
 #
 
 DISTNAME=	dvd+rw-tools-5.21.4.10.8
@@ -11,7 +11,7 @@ COMMENT=	Tools for writing DVD+R[W] disks
 
 DEPENDS+=	{cdrecord-[1-9]*,cdrtools-ossdvd-[0-9]*}:../../sysutils/cdrecord
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 INSTALLATION_DIRS=	bin man/man1
 

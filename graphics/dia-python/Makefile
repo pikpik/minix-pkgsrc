@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/01/20 18:50:48 jmmv Exp $
 #
 
 DIA_SUBPKG=		-python
@@ -7,7 +7,7 @@ DIA_SUBPKG=		-python
 COMMENT+=		(Python plugin)
 
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:S/--without-python/--with-python/g}
-CONFIGURE_ENV+=		PYTHON=${PYTHONBIN}
+CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
 
 PYTHON_PATCH_SCRIPTS=	po-checktrans.py
 PYTHON_PATCH_SCRIPTS+=	plug-ins/python/gtkcons.py

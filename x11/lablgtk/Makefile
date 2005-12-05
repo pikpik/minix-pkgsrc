@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/07/30 13:48:26 tron Exp $
+# $NetBSD: Makefile,v 1.21 2005/07/30 15:45:11 tron Exp $
 
 DISTNAME=	lablgtk-1.2.7
 PKGREVISION=	1
@@ -22,7 +22,7 @@ BUILDLINK_DEPENDS.ocaml+=	ocaml>=3.0.5
 USE_DOTOPT=	YES
 .else
 CAMLOPT=	ocamlc
-MAKE_ENV+=	CAMLOPT=${CAMLOPT}
+MAKE_ENV+=	CAMLOPT=${CAMLOPT:Q}
 PLIST_SRC=	${PKGDIR}/PLIST.noopt
 .endif
 

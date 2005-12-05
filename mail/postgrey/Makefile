@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2005/07/16 01:19:13 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/08/23 11:48:49 rillig Exp $
 #
 
 DISTNAME=	postgrey-1.21
-PKGREVISION=	# empty
 CATEGORIES=	mail
 MASTER_SITES=	http://isg.ee.ethz.ch/tools/postgrey/pub/ \
 		http://isg.ee.ethz.ch/tools/postgrey/pub/old/
@@ -45,10 +44,10 @@ OWN_DIRS+=		${PREFIX}/${EGDIR}
 OWN_DIRS_PERMS+=	${POSTGREY_DBDIR} \
 			${POSTGREY_USER} ${POSTGREY_GROUP} 0775
 
-FILES_SUBST+=		PERL="${PERL5}"
+FILES_SUBST+=		PERL=${PERL5:Q}
 
-PLIST_SUBST+=		DOCDIR="${DOCDIR}"
-PLIST_SUBST+=		EGDIR="${EGDIR}"
+PLIST_SUBST+=		DOCDIR=${DOCDIR:Q}
+PLIST_SUBST+=		EGDIR=${EGDIR:Q}
 
 SUBST_CLASSES+=		postgrey
 

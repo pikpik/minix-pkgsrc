@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ba,v 1.1 2004/03/09 11:24:04 seb Exp $
 
 --- server/waisserver.c.orig	1999-04-16 09:59:45.000000000 +0000
 +++ server/waisserver.c
-@@ -44,6 +44,9 @@ static char *PRCSid = "$Id: waisserver.c
+@@ -44,6 +44,9 @@
  #ifdef I_SYS_SELECT
  #include <sys/select.h>
  #endif

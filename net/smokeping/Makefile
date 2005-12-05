@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:29 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/10/28 21:43:18 adrianp Exp $
 
 DISTNAME=	smokeping-2.0.4
 CATEGORIES=	net
@@ -8,7 +8,7 @@ MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/index.en.html
 COMMENT=	Latency/packet loss monitoring/graphing tool
 
-DEPENDS=	rrdtool>=1.0:../../databases/rrdtool
+DEPENDS+=	rrdtool>=1.0:../../databases/rrdtool
 DEPENDS+=	fping>=2.4b2:../../net/fping
 DEPENDS+=	p5-Digest-MD5>=2.20:../../security/p5-Digest-MD5
 DEPENDS+=	p5-libwww>=5.64:../../www/p5-libwww

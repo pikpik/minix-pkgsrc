@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/21 03:49:56 minskim Exp $
 #
 
 DISTNAME=		z26v213
@@ -12,7 +12,7 @@ COMMENT=		Atari 2600 Emulator
 
 BUILD_DEPENDS+=		nasm-[0-9]*:../../devel/nasm
 
-ONLY_FOR_PLATFORM+=	*-i386
+ONLY_FOR_PLATFORM+=	*-*-i386
 
 WRKSRC=			${WRKDIR}/z26_snapshot-20040523
 USE_TOOLS+=		gmake perl

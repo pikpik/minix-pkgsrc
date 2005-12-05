@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/17 03:50:38 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/07/08 18:22:49 kristerw Exp $
 #
 
 DISTNAME=	pcal-4.7
@@ -17,8 +17,8 @@ CGIBINDIR=	${PREFIX}/libexec/cgi-bin
 WWWSERVER=	${HOSTNAME_CMD:sh}
 
 .include "../../mk/bsd.prefs.mk"	# for PAPERSIZE
-MAKE_ENV+=	PAPERSIZE="${PAPERSIZE}"
-MAKE_ENV+=	CC="${CC}" HOST_CC="${CC}"
+MAKE_ENV+=	PAPERSIZE=${PAPERSIZE:Q}
+MAKE_ENV+=	CC=${CC:Q} HOST_CC=${CC:Q}
 
 BUILD_TARGET=	pcal
 

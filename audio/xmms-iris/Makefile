@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/02/21 20:26:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:44:59 tv Exp $
 #
 
 DISTNAME=	iris-0.11
@@ -18,7 +18,7 @@ USE_LIBTOOL=	YES
 
 # Needs libXxf86vm.so which isn't provided on NetBSD currently.
 .if !exists(${X11BASE}/lib/libXxf86vm.so)
-PKG_FAIL_REASON=	"${PKGNAME} requires libXxf86vm.so"
+PKG_FAIL_REASON+=	"${PKGNAME} requires libXxf86vm.so"
 .endif
 
 .include "../../audio/xmms/buildlink3.mk"

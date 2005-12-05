@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2004/11/20 22:10:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.56 2005/04/11 21:45:26 tv Exp $
 
 DISTNAME=		libglade-0.17
 PKGREVISION=		7
@@ -15,7 +15,7 @@ USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 
-MAKE_ENV+=	DISPLAY=${DISPLAY}
+MAKE_ENV+=	DISPLAY=${DISPLAY:Q}
 
 .include "../../textproc/libxml/buildlink3.mk"
 .include "../../x11/gnome-libs/buildlink3.mk"

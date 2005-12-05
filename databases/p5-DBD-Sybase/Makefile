@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/07/13 18:01:20 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/08/06 06:19:06 jlam Exp $
 #
 
 DISTNAME=		DBD-Sybase-0.94
@@ -29,7 +29,7 @@ _SYBASE=		${BUILDLINK_PREFIX.freetds}/freetds
 .endif
 
 PERL5_LDFLAGS+=		${COMPILER_RPATH_FLAG}${_SYBASE}/lib
-MAKE_ENV+=		SYBASE=${_SYBASE}
+MAKE_ENV+=		SYBASE=${_SYBASE:Q}
 
 .if !defined(USE_SYBASE_OPENCLIENT)
 .  include "../../databases/freetds/buildlink3.mk"

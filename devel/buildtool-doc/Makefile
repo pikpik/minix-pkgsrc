@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:13:25 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:18 tv Exp $
 #
 
 DISTNAME=	buildtool-doc-0.16
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=	docbook-xsl>=1.61.3:../../textproc/docbook-xsl
 
 
 CONFIGURE_ARGS+=	--dir-html=${PREFIX}/share/doc/buildtool-doc/html
-CONFIGURE_ENV+=	CATALOG_FILE="${XML_DEFAULT_CATALOG}"
+CONFIGURE_ENV+=	CATALOG_FILE=${XML_DEFAULT_CATALOG:Q}
 CONFIGURE_ENV+=	DOCBOOK_XSL="${PREFIX}/share/xsl/docbook"
 
 BUILDLINK_DEPMETHOD.libxml2?=	build

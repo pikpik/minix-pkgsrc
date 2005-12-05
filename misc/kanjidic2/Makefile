@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/08/17 10:52:13 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2004/09/15 08:11:14 wiz Exp $
 #
 
 DISTNAME=	kanjidic2
@@ -23,7 +23,7 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 EXTRACT_ONLY=	kanjidic2.xml.gz kanjidic2_dtd.gz kanjidic2_xsd.gz
 WRKSRC=		${WRKDIR}
 
-NO_BUILD=	# nothing to do
+NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/kanjidic2

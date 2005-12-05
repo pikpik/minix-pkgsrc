@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/05/22 20:08:33 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/06/30 10:25:33 markd Exp $
 
 DISTNAME=	kdirstat-2.4.3
 CATEGORIES=	sysutils kde
@@ -7,7 +7,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://kdirstat.sourceforge.net/
-COMMENT= 	A graphical disk usage utility
+COMMENT= 	Graphical disk usage utility
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

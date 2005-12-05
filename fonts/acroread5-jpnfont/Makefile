@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2003/07/17 21:36:51 grant Exp $
+# $NetBSD: Makefile,v 1.4 2004/01/20 12:15:16 agc Exp $
 #
 
 DISTNAME=	jpnfont
@@ -12,4 +12,4 @@ DEPENDS+=	acroread5-font-share-5.0:../../fonts/acroread5-font-share
 WRKSRC=		${WRKDIR}/JPNKIT
 TAR_FILE=	${WRKSRC}/LANGJPN.TAR
 
-.include "../acroread5-font-share/Makefile.common"
+.include "../../fonts/acroread5-font-share/Makefile.common"

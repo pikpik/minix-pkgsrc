@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/05/22 20:07:39 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/31 16:13:50 tv Exp $
 #
 
 DISTNAME=	rio500-0.7
@@ -14,8 +14,9 @@ NOT_FOR_PLATFORM=	Interix-*-*
 
 USE_TOOLS+=	gmake
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-devicepath=/dev --with-deviceentry=urio0
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--with-devicepath=/dev
+CONFIGURE_ARGS+=	--with-deviceentry=urio0
 
 .include "../../devel/glib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

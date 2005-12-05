@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/07/16 19:10:39 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2005/09/29 14:29:26 wiz Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	3
@@ -23,8 +23,8 @@ USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		perl:run
 
-MAKE_FLAGS+=	PREFIX="${PREFIX}"
-MAKE_FLAGS+=	CCOMP="${CFLAGS}"
+MAKE_FLAGS+=	PREFIX=${PREFIX:Q}
+MAKE_FLAGS+=	CCOMP=${CFLAGS:M*:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

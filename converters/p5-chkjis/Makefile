@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/08/06 06:19:05 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/10 17:13:46 hira Exp $
 #
 
 DISTNAME=	chkjis
@@ -24,7 +24,6 @@ USE_TOOLS+=	perl:run
 NO_BUILD=		yes
 NO_CONFIGURE=		yes
 PERL5_CONFIGURE=	no
-NO_WRAPPER=		yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${PERL5_INSTALLVENDORLIB}

@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.26 2004/12/03 15:15:12 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/04/11 21:48:13 tv Exp $
 
 PKGNAME=	qt2-libs-${QTVERSION}
 PKGREVISION=	6
 COMMENT=	C++ X GUI toolkit
 
 
-.include "../qt2-libs/Makefile.common"
+.include "../../x11/qt2-libs/Makefile.common"
 
-CONFIGURE_ENV+=		QTDIR="${WRKSRC}"
-MAKE_ENV+=		QTDIR="${WRKSRC}"
-MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
+CONFIGURE_ENV+=		QTDIR=${WRKSRC:Q}
+MAKE_ENV+=		QTDIR=${WRKSRC:Q}
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 
 BUILD_TARGET=		sub-src
 

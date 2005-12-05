@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: hacks.mk,v 1.1 2005/08/03 16:55:19 tron Exp $
 
 # Firefox suffers from display glitches (e.g. text appearing at the wrong
 # location) if it was compiled with optimization.
@@ -13,7 +13,7 @@ _GCC_IS_TOO_OLD!=	\
 	else								\
 		${ECHO} "no";						\
 	fi
-MAKEFLAGS+=	_GCC_IS_TOO_OLD=${_GCC_IS_TOO_OLD}
+MAKEFLAGS+=	_GCC_IS_TOO_OLD=${_GCC_IS_TOO_OLD:Q}
 .    endif
 .    if !empty(_GCC_IS_TOO_OLD:M[yY][eE][sS])
 PKG_HACKS+=		powerpc-codegen

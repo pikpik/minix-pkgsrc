@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/01/27 21:18:59 recht Exp $
+# $NetBSD: Makefile,v 1.27 2005/04/11 21:45:37 tv Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-curses-0
@@ -20,7 +20,7 @@ PY_PATCHPLIST=	yes
 
 PY_SETUP_SUBST=	NCURSESPREFIX=${BUILDLINK_PREFIX.ncurses}
 
-BUILDLINK_DEPENDS.python23=	python23>=2.3nb2
+BUILDLINK_DEPENDS.python23+=	python23>=2.3nb2
 
 # ignore errors due to missing files (EXTRACT_ELEMENTS!)
 do-patch:

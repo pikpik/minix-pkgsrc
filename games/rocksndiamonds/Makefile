@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.14 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/08/16 15:35:51 adam Exp $
 
 DISTNAME=	rocksndiamonds-3.1.1
 CATEGORIES=	games x11
@@ -14,7 +14,7 @@ USE_TOOLS+=		gmake
 INSTALLATION_DIRS=	man/man6
 
 PLIST_SRC=	${WRKDIR}/PLIST ../rocksndiamonds/PLIST
-PLIST_SUBST+=	SCORE_PATH=${SCORE_PATH}
+PLIST_SUBST+=	SCORE_PATH=${SCORE_PATH:Q}
 PLIST_SUBST+=	ROCK_INSTALL_DIR="${INSTALL} -d -o ${RND_USER} -g ${RND_GROUP} -m 775"
 
 PKG_GROUPS=	${RND_GROUP}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/10/03 00:13:33 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:39 tv Exp $
 #
 
 DISTNAME=		tvision-0.8
@@ -15,7 +15,7 @@ COMMENT=		Turbo Vision C++ CUI library for UNIX
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-GCC_REQD=		3.0
+GCC_REQD+=		3.0
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:24 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/31 13:33:42 grant Exp $
 #
 
 DISTNAME=	ish-v${VERSION}
@@ -19,7 +19,7 @@ USE_TOOLS+=	gmake
 NO_CONFIGURE=	yes
 
 LIBS.SunOS+=	-lnsl -lsocket
-MAKE_ENV+=	LIBS=${LIBS:Q}
+MAKE_ENV+=	LIBS=${LIBS:M*:Q}
 
 INSTALLATION_DIRS=	bin sbin
 

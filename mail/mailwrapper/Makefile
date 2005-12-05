@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2004/08/10 21:46:34 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2004/08/10 21:49:04 jlam Exp $
 
 DISTNAME=	mailwrapper-19990412
 PKGREVISION=	4
@@ -6,7 +6,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	tech-pkg@NetBSD.org
-COMMENT=	wrapper to support arbitrary Mail Transport Agents
+COMMENT=	Wrapper to support arbitrary Mail Transport Agents
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
@@ -19,7 +19,7 @@ INSTALL_EXTRA_TMPL=	${.CURDIR}/INSTALL
 EGDIR=			${PREFIX}/share/examples/mailwrapper
 
 MAILWRAPPER_BACKUP_SFX=	.pkgsrc.mailwrapper
-FILES_SUBST+=	MAILWRAPPER_BACKUP_SFX=${MAILWRAPPER_BACKUP_SFX}
+FILES_SUBST+=	MAILWRAPPER_BACKUP_SFX=${MAILWRAPPER_BACKUP_SFX:Q}
 
 MAILWRAPPEES=	/usr/bin/mailq						\
 		/usr/bin/newaliases	/usr/sbin/newaliases		\

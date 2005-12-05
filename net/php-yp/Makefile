@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:57 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/03 19:50:31 jdolecek Exp $
 
 MODNAME=		yp
 CATEGORIES+=		net
-PKGREVISION=		# empty
 COMMENT=		PHP extension for YP domain support
 
 # yp extension has been unbundled in PHP 5.1.1, it's only available

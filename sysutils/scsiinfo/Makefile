@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2004/06/10 09:34:52 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:35 jlam Exp $
 
 DISTNAME=	scsiinfo-4.7
-PKGNAME=	${DISTNAME}
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.cs.toronto.edu/pub/jdd/scsiinfo/
 EXTRACT_SUFX=	.shar
@@ -28,4 +27,3 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/scsiinfo.1 ${PREFIX}/man/man1
 
 .include "../../mk/bsd.pkg.mk"
-

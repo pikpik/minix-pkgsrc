@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/06/06 17:09:05 abs Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:53:00 grant Exp $
 #
 
 DISTNAME=	msudir-0.13
@@ -9,6 +9,6 @@ MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.mono.org/abs/tools/msudir/
 COMMENT=	Easy setuid script management
 
-MAKE_ENV+=	SYSCONFDIR=${PKG_SYSCONFDIR}
+MAKE_ENV+=	SYSCONFDIR=${PKG_SYSCONFDIR:Q}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:07 jlam Exp $
 #
 
 DISTNAME=	linuxsms-0.65
@@ -23,6 +23,5 @@ do-install:
 .for f in BUGS CHANGES README README.ES TODO
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/linuxsms
 .endfor
-.undef f
 
 .include "../../mk/bsd.pkg.mk"

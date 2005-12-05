@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/01 18:02:47 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/27 12:04:04 xtraeme Exp $
 #
 
 DISTNAME=		openmsx-0.5.2
@@ -22,7 +22,7 @@ post-extract:
 	@${ECHO_MSG} "OPENMSX_STRIP:=true" > \
 		${WRKSRC}/build/flavour-pkgsrc.mk
 
-SUBST_CLASSES=		prefix
+SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	post-patch
 SUBST_FILES.prefix=	build/custom.mk
 SUBST_SED.prefix=	-e "s,/opt/openMSX,${PREFIX}/openmsx,"

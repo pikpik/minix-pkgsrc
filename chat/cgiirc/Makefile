@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/20 22:12:28 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:07 jlam Exp $
 
 DISTNAME=	cgiirc-0.5.6
 CATEGORIES=	chat
@@ -55,14 +55,12 @@ do-install:
 		${INSTALL_DATA} ${WRKSRC}/docs/${f} \
 			${PREFIX}/share/examples/cgiirc/${f}
 .	endfor
-.	undef f
 	${INSTALL_DATA} ${WRKSRC}/cgiirc.config ${PREFIX}/share/examples/cgiirc
 	${INSTALL_DATA} ${WRKDIR}/cgiirc.conf ${PREFIX}/share/examples/cgiirc
 .	for f in ${EGFILES}
 		${INSTALL_DATA} ${WRKSRC}/${f} \
 			${PREFIX}/share/examples/cgiirc/${f}
 .	endfor
-.	undef f
 	${INSTALL_SCRIPT} ${WRKSRC}/*.cgi ${CGIIRC}
 	${INSTALL_DATA} ${WRKSRC}/formats/* ${CGIIRC}/formats/
 	${INSTALL_DATA} ${WRKSRC}/images/*.gif ${CGIIRC}/images/

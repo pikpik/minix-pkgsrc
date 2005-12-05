@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/12/03 15:14:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:37 tv Exp $
 #
 
 DISTNAME=		PQueue-0.2
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=	--with-python=${PYTHONBIN}
 BUILD_TARGET=		default
 
 PY_PATCHPLIST=	yes
-PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX}
+PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX:Q}
 
 PYQ_DOCDIR=	${PREFIX}/share/doc/${PYPKGPREFIX}-PQueue
 

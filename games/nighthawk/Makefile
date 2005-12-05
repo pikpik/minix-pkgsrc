@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/06/07 05:44:46 minskim Exp $
+# $NetBSD: Makefile,v 1.28 2005/06/16 06:57:55 jlam Exp $
 #
 
 DISTNAME=		nighthawk-2.1
@@ -19,7 +19,7 @@ WRKSRC=			${WRKDIR}/nighthawk
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 
-MAKE_ENV+=		OSTYPE=${OPSYS}
+MAKE_ENV+=		OSTYPE=${OPSYS:Q}
 CPPFLAGS+=		-DPREFIX="\"${PREFIX}\"" \
 			-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\"" \
 			-DVARBASE="\"${VARBASE}\""

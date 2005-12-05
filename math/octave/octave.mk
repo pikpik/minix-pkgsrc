@@ -1,4 +1,4 @@
-# $NetBSD: octave.mk,v 1.2 2005/04/01 10:25:16 adam Exp $
+# $NetBSD: octave.mk,v 1.3 2005/08/04 13:15:13 adam Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -16,6 +16,5 @@ OCTAVE_VARS?=	LOCALVERFCNFILEDIR LOCALVEROCTFILEDIR LOCALVERARCHLIBDIR VERSION
 OCT_${_var_}!=  ${OCTAVE_CONFIG} -p ${_var_}
 .      endif
 .    endfor
-.    undef _var_
 .  endif
 .endif

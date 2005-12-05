@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/22 20:08:46 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/09/06 15:19:31 adam Exp $
 
 DISTNAME=	thy-0.9.4
 CATEGORIES=	www
@@ -37,7 +37,7 @@ RCD_SCRIPTS=		thy
 INFO_FILES=		thy.info
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-MAKE_FLAGS+=		pkgconfdir=${EGDIR}
+MAKE_FLAGS+=		pkgconfdir=${EGDIR:Q}
 
 EGDIR=			${PREFIX}/share/examples/thy
 

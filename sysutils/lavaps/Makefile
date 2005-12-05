@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/06/01 18:03:22 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/07/16 01:19:20 jlam Exp $
 #
 
 DISTNAME=	lavaps-1.20
@@ -12,9 +12,10 @@ COMMENT=	Lava lamp of currently running processes
 USE_TOOLS+=	perl
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=	--with-additional-includes='-I${LOCALBASE}/include' \
-		--with-additional-libs='-L${LOCALBASE}/lib' \
-		--with-tcl-ver=8.3.2 --with-tk-ver=8.3.2 \
+CONFIGURE_ARGS+=	--with-additional-includes=-I${LOCALBASE:Q}/include \
+		--with-additional-libs=-L${LOCALBASE:Q}/lib \
+		--with-tcl-ver=8.3.2 \
+		--with-tk-ver=8.3.2 \
 		--with-tcltk-lib-suffix-type=nodot
 
 .include "../../x11/tk83/buildlink3.mk"

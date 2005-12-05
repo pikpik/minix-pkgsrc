@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/06/16 06:58:03 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/07/31 03:06:17 grant Exp $
 #
 
 DISTNAME=	mailsync_5.2.1.orig
@@ -10,7 +10,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://mailsync.sourceforge.net/
 COMMENT=	Mailsync is a way of synchronizing a collection of mailboxes
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=	gmake
 USE_LANGUAGES+=	c c++
 GNU_CONFIGURE=	yes

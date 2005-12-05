@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:28 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/28 20:52:26 rillig Exp $
 
 DISTNAME=	ijs-0.34
 PKGREVISION=	1
@@ -14,7 +14,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 BUILD_TARGET=		libijs.la
-MAKE_ENV+=		XCFLAGS="${CFLAGS}"
+MAKE_ENV+=		XCFLAGS=${CFLAGS:M*:Q}
 MAKE_ENV+=		IJS_VERSION_INFO="0:0"
 
 post-install:

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2005/07/19 10:17:59 grant Exp $
+# $NetBSD: Makefile,v 1.18 2005/09/22 14:55:07 wiz Exp $
 
 # Needed so configure/patch rules don't get pulled in
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
 
-.include	"../nethack-lib/Makefile.common"
+.include "../../games/nethack-lib/Makefile.common"
 
 DISTNAME=	nethack-all-${NETHACK_VERSION}
 CATEGORIES+=	x11

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/08/19 18:12:36 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2005/10/31 16:47:15 tv Exp $
 
 DISTNAME=	oss-${OSS_VERSION}	# Overridden below
 PKGNAME=	oss-${OSS_VERSION}
@@ -39,8 +39,8 @@ MODSTAT=		/usr/bin/modstat
 
 CHROOT?=		/usr/sbin/chroot
 OSSLIBDIR=		${PREFIX}/lib/oss
-FILES_SUBST+=		OSSLIBDIR=${OSSLIBDIR}
-FILES_SUBST+=		MODSTAT=${MODSTAT}
+FILES_SUBST+=		OSSLIBDIR=${OSSLIBDIR:Q}
+FILES_SUBST+=		MODSTAT=${MODSTAT:Q}
 
 # OSS needs to find certain files in /etc, so this package can't be
 # made to honor ${PKG_SYSCONFDIR}.

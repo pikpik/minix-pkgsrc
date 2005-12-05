@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/15 22:02:27 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/08 18:22:09 jlam Exp $
 #
 
 DISTNAME=	baekmuk-2.0
@@ -16,7 +16,7 @@ CONFLICTS+=	ksc5601fonts-[0-9]*
 USE_X11BASE=	yes
 USE_TOOLS+=	gzip mkfontdir:run
 
-MAKE_ENV+=	FONTDIR=${FONTDIR} GZIP_CMD="${GZIP_CMD}"
+MAKE_ENV+=	FONTDIR=${FONTDIR:Q} GZIP_CMD=${GZIP_CMD:Q}
 
 # fonts
 BAEKMUK_BDF=	batang10.bdf batang10b.bdf batang12.bdf batang12b.bdf \

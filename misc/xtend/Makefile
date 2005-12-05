@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2001/02/17 18:09:30 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2004/02/07 10:39:39 wiz Exp $
 #
 
 DISTNAME=	xtend-1.2beta4
-PKGNAME=	${DISTNAME}
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.jabberwocky.com/pub/xtend/
 

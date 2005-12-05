@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/04/11 21:46:57 tv Exp $
+# $NetBSD: Makefile,v 1.26 2005/06/17 03:50:27 jlam Exp $
 
 DISTNAME=		pchar-1.4
 PKGREVISION=		4
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--with-ipv6
 .endif
 
 .if ${OPSYS} == "NetBSD"
-.include "../net-snmp/buildlink3.mk"
+.include "../../net/net-snmp/buildlink3.mk"
 
 CONFIGURE_ARGS+=	--with-snmp=${BUILDLINK_PREFIX.net-snmp}
 LIBS+=			-lsnmp -lcrypto -ldes

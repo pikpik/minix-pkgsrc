@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:43 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:42 jlam Exp $
 #
 
 DISTNAME=	xmlindent-0.2.16
@@ -13,7 +13,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	lex
 
-GCC_REQD=	3.0
+GCC_REQD+=	3.0
 
 INSTALLATION_DIRS=	bin man/man1
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:25 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/11/29 10:15:18 tron Exp $
 
 DISTNAME=		kphone-4.2
 CATEGORIES=		net comms
@@ -14,7 +14,7 @@ WRKSRC=			${WRKDIR}/kphone
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
-CONFIGURE_ENV+=		QTDIR="${QTDIR}"
+CONFIGURE_ENV+=		QTDIR=${QTDIR:Q}
 
 PTHREAD_OPTS+=		require
 PTHREAD_AUTO_VARS=	yes

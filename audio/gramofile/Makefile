@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:44:53 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:38 jlam Exp $
 #
 
 DISTNAME=	gramofile-1.6
@@ -23,7 +23,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bplaysrc/bplay ${PREFIX}/bin/bplay_gramo
 	cd ${PREFIX}/bin && ${LN} -s bplay_gramo brec_gramo
 
-SUBST_CLASSES=		snd
+SUBST_CLASSES+=		snd
 SUBST_STAGE.snd=	post-patch
 SUBST_FILES.snd=	bplaysrc/sndfunc.c
 SUBST_SED.snd=		-e "s,/dev/dsp,${DEVOSSAUDIO},g"

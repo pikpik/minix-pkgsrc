@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/07/21 16:29:51 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2005/08/10 20:56:18 jlam Exp $
 
 DISTNAME=	imlib2-1.2.0
 PKGREVISION=	3
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		YES
 
 PKGCONFIG_OVERRIDE=	imlib2.pc.in
 
-LIBS.SunOS=		-lm
+LIBS.SunOS+=		-lm
 
 .include "options.mk"
 

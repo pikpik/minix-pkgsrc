@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/11/13 05:30:11 minskim Exp $
+# $NetBSD: Makefile,v 1.22 2005/11/28 06:41:21 jlam Exp $
 
 DISTNAME=	dvipdfm-0.13.2c
 PKGREVISION=	5
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--datadir=${PREFIX}/share
 # needed to get the stdarg.h version of kpathsea/c-varargs.h instead of the
 # varargs.h version which gcc3 does not like
 CPPFLAGS+=		-DHAVE_PROTOTYPES
-CONFIGURE_ENV+=	PKG_LOCALTEXMFPREFIX=${PKG_LOCALTEXMFPREFIX}
+CONFIGURE_ENV+=	PKG_LOCALTEXMFPREFIX=${PKG_LOCALTEXMFPREFIX:Q}
 
 .include "../../mk/bsd.prefs.mk"
 

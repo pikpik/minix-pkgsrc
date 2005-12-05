@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/06/01 18:02:45 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/06/30 10:16:38 markd Exp $
 
 DISTNAME=	emacs-20.7
 PKGREVISION=	5
@@ -76,7 +76,7 @@ CONFIGURE_ARGS+=--with-ipv6
 .else
 CONFIGURE_ARGS+=--without-ipv6
 .endif
-MAKE_ENV+=	INSTALL_STRIP=${_STRIPFLAG_INSTALL}
+MAKE_ENV+=	INSTALL_STRIP=${_STRIPFLAG_INSTALL:Q}
 
 .include "../../mk/compiler.mk"
 .if !empty(CC_VERSION:Mgcc-3.*)

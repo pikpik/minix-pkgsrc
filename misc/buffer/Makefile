@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2003/07/21 17:01:12 martti Exp $
+# $NetBSD: Makefile,v 1.13 2005/03/24 21:12:57 wiz Exp $
 
 DISTNAME=       buffer-1.17
 CATEGORIES=	misc
@@ -12,7 +12,7 @@ COMMENT=	Buffer sporadic binary I/O for faster tape use
 
 .if ${OPSYS} == "SunOS"
 CPPFLAGS+=	-DSYS5
-MAKE_ENV+=	CC="${CC}"
+MAKE_ENV+=	CC=${CC:Q}
 .endif
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/07/21 16:29:44 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/08/10 20:56:12 jlam Exp $
 #
 
 DISTNAME=	speex-1.0.5
@@ -20,7 +20,7 @@ CONFLICTS=	Speex-[0-9]*
 CONFIGURE_ARGS+=	--with-ogg-dir="${BUILDLINK_PREFIX.libogg}"
 
 # Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=         F77=${FALSE}
+CONFIGURE_ENV+=         F77=${FALSE:Q}
 
 BUILDLINK_TRANSFORM+=	l:gnugetopt:getopt
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/09/28 20:52:18 rillig Exp $
 #
 
 DISTNAME=		tik-0.90
@@ -63,4 +63,3 @@ do-install:
 		${PREFIX}/share/examples/tik
 
 .include "../../mk/bsd.pkg.mk"
-

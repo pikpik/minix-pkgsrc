@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/05/22 20:07:45 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 22:06:28 jlam Exp $
 
 DISTNAME=	db-2.7.7
 PKGREVISION=	2
@@ -11,7 +11,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.sleepycat.com/
 COMMENT=	Sleepycat Software's Berkeley DB version 2
 
-NO_PKGTOOLS_REQD_CHECK=	# defined (needed for pkgtools/pkg_install)
+NO_PKGTOOLS_REQD_CHECK=	yes	# (needed for pkgtools/pkg_install)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

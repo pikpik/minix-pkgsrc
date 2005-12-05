@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:01 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:50 jlam Exp $
 #
 
 DISTNAME=	glaxium_0.5
@@ -17,7 +17,7 @@ USE_LANGUAGES=		c c++
 
 BUILD_TARGET=		glaxium
 
-SUBST_CLASSES=		bill
+SUBST_CLASSES+=		bill
 SUBST_STAGE.bill=	post-configure
 SUBST_FILES.bill=	conf.h
 SUBST_SED.bill=		-e "s,share\/games,share,g"

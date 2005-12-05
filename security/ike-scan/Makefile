@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/02/28 16:04:28 adam Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:12 tv Exp $
 
 DISTNAME=	ike-scan-1.7.1
 CATEGORIES=	security
@@ -11,7 +11,7 @@ COMMENT=	Fingerprinting IKE implementation
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-openssl
 
-SUBST_CLASSES=		man
+SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
 SUBST_FILES.man=	ike-scan.1
 SUBST_SED.man=		-e "s|/usr/local|${PREFIX}|g"

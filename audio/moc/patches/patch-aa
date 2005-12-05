@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2005/11/19 10:55:37 xtraeme Exp $
 
 --- player.c.orig	2005-09-09 08:20:13.000000000 +0000
 +++ player.c
@@ -20,4 +20,3 @@ $NetBSD$
  
  	if (tags_changed)
  		tags_change ();
-

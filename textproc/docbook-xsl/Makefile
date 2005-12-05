@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/09/10 12:38:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.30 2005/09/29 19:40:41 kristerw Exp $
 #
 
 DISTNAME=	docbook-xsl-1.69.1
@@ -11,7 +11,7 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://docbook.sourceforge.net/
 COMMENT=	Docbook XSL modular stylesheet
 
-DEPENDS=	docbook-xml>=4.2:../../textproc/docbook-xml
+DEPENDS+=	docbook-xml>=4.2:../../textproc/docbook-xml
 
 USE_LANGUAGES=	# empty
 NO_BUILD=	YES

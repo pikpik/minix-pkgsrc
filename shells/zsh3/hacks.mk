@@ -1,6 +1,6 @@
-# $NetBSD: hacks.mk,v 1.1 2005/01/24 22:27:48 tv Exp $
+# $NetBSD: hacks.mk,v 1.2 2005/01/25 18:22:24 tv Exp $
 
-.ifndef ZSH3_HACKS_MK
+.if !defined(ZSH3_HACKS_MK)
 ZSH3_HACKS_MK=		# defined
 
 ### [Mon Jan 24 22:27:33 UTC 2005 : tv]

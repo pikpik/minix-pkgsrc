@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/05/22 20:08:52 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/06/01 18:03:33 jlam Exp $
 #
 
 DISTNAME=	xpad-1.12
@@ -18,7 +18,7 @@ USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 
-LIBS.SunOS=		-lX11
+LIBS.SunOS+=		-lX11
 
 BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 

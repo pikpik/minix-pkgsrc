@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2005/01/12 15:43:39 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2005/01/28 23:37:42 dmcmahill Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 F2C_BUILDLINK3_MK:=	${F2C_BUILDLINK3_MK}+
@@ -19,9 +19,9 @@ BUILDLINK_PKGSRCDIR.f2c?=	../../lang/f2c
 # The f2c-f77 script takes some environment variables to override hardcoded
 # values for the compiler and C preprocessor.
 #
-CONFIGURE_ENV+=         CC_f2c="${CC}"
-CONFIGURE_ENV+=         CPP="${CPP}"
-MAKE_ENV+=              CC_f2c="${CC}"
-MAKE_ENV+=              CPP="${CPP}"
+CONFIGURE_ENV+=         CC_f2c=${CC:Q}
+CONFIGURE_ENV+=         CPP=${CPP:Q}
+MAKE_ENV+=              CC_f2c=${CC:Q}
+MAKE_ENV+=              CPP=${CPP:Q}
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
