@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2005/06/15 05:26:20 taca Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/16 06:58:03 jlam Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 PKGNAME=		poppassd-${VERSION}
 CATEGORIES=		mail
 MASTER_SITES=		${QPOPPER_MASTER_SITES}
@@ -15,11 +15,11 @@ MAINTAINER=		mellon@fugue.com
 HOMEPAGE=		${QPOPPER_HOMEPAGE}
 COMMENT=		Qualcomm's password change server mainly for Eudora
 
-.include "../qpopper/Makefile.common"
+.include "../../mail/qpopper/Makefile.common"
 
 CONFIGURE_ARGS+=	--enable-poppassd --without-pam
 CONFIGURE_ENV+=	CDEFS='-DSMBPASSWD_BINARY=\"${LOCALBASE}/bin/smbpasswd\"'
-MAKE_ENV+=	ROOT_USER=${ROOT_USER} ROOT_GROUP=${ROOT_GROUP}
+MAKE_ENV+=	ROOT_USER=${ROOT_USER:Q} ROOT_GROUP=${ROOT_GROUP:Q}
 
 .include "options.mk"
 
