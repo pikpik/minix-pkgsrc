@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.18 2005/06/24 21:47:57 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:59 rillig Exp $
 
-DISTNAME=	cdrtools-2.01.01a01
-PKGNAME=	cdrtools-ossdvd-2.01.1.34
+DISTNAME=	cdrtools-2.01.01a03
+PKGNAME=	cdrtools-ossdvd-2.01.1.35
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/alpha/
 EXTRACT_SUFX=	.tar.bz2
 
-PATCHFILES=	cdrtools-2.01.01a01-ossdvd.patch.bz2
+PATCHFILES=	cdrtools-2.01.01a03-ossdvd.patch.bz2
 PATCH_SITES=	ftp://ftp.crashrecovery.org/pub/linux/cdrtools/ \
 		http://crashrecovery.org/oss-dvd/
 PATCH_DIST_STRIP=	-p1
