@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/03/10 17:00:54 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/08/06 13:06:06 yyamano Exp $
 #
 
 DISTNAME=	skill-4.1.1
@@ -18,6 +18,9 @@ NOT_FOR_PLATFORM+= Interix-*-* # currently no machdep support
 MAKE_ENV+=	OSTYPE=nbsd-44
 .elif ${OPSYS} == "Darwin"
 MAKE_ENV+=	OSTYPE=nbsd-44
+.elif ${OPSYS} == "DragonFly"
+MAKE_ENV+=	OSTYPE=nbsd-44
+CPPFLAGS+=	-DHAS_STRERROR=1
 .elif ${OPSYS} == "SunOS"
 BINMODE=	02555
 MAKE_ENV+=	OSTYPE=sys-5r4 BINGRP=sys CPPFLAGS=
