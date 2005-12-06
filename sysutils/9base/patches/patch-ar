@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ar,v 1.1.1.1 2005/10/29 16:04:38 minskim Exp $
 
---- awk/Makefile.orig	2005-10-28 18:59:20.000000000 +0000
+--- awk/Makefile.orig	2005-11-14 10:22:40.000000000 +0000
 +++ awk/Makefile
-@@ -26,12 +26,10 @@ depend:
+@@ -24,12 +24,10 @@ depend:
  	@${YACC} -d ${YFILES}
  
  install: ${TARG}
@@ -18,4 +18,4 @@ $NetBSD$
 +	@${BSD_INSTALL_MAN} ${MANFILES} ${DESTDIR}${MANPREFIX}/man1
  
  uninstall:
- 	@rm -f ${DESTDIR}${PREFIX}/bin/${TARG}
+ 	rm -f ${DESTDIR}${PREFIX}/bin/${TARG}

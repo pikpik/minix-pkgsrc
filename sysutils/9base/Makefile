@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/23 20:25:50 minskim Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/29 16:04:38 minskim Exp $
 #
 
-DISTNAME=	9base-20051028
+DISTNAME=	9base-20051114
 CATEGORIES=	sysutils shells
 MASTER_SITES=	http://wmii.de/snaps/
 
