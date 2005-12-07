@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/01 18:03:06 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 20:50:43 rillig Exp $
 
 DISTNAME=	ogle-0.9.2
 PKGREVISION=	2
@@ -17,7 +17,7 @@ ONLY_FOR_PLATFORM+=	NetBSD-1.6Z*-alpha NetBSD-[2-9]*-alpha
 ONLY_FOR_PLATFORM+=	NetBSD-1.6Z*-sparc64 NetBSD-[2-9]*-sparc64
 ONLY_FOR_PLATFORM+=	NetBSD-*-x86_64
 ONLY_FOR_PLATFORM+=	Linux-*-*
-ONLY_FOR_PLATFORM+=	SunOS-*-*
+ONLY_FOR_PLATFORM+=	SunOS-*-* DragonFly-*-*
 
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
