@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/26 01:41:59 mjl Exp $
 #
 
-PKGNAME=		asterisk-sounds-de-x9media-20051126
-DISTNAME=		rita-voicefiles-ger
+PKGNAME=		asterisk-sounds-de-x9media-20051128
+DISTNAME=		rita-voicefiles-ger-v2
 CATEGORIES=		comms
 MASTER_SITES=		http://www.asteriskfreaks.com/dcl/index.php?
 EXTRACT_SUFX=		.tgz
