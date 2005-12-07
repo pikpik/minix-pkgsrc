@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/04/16 06:51:26 rumble Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/21 14:44:24 minskim Exp $
 #
 
 DISTNAME=		regionset-0.1
@@ -11,7 +11,7 @@ COMMENT=		Read and modify DVD drive region code
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-ONLY_FOR_PLATFORM+=	NetBSD-*-* OpenBSD-*-* Linux-*-*
+ONLY_FOR_PLATFORM+=	NetBSD-*-* OpenBSD-*-* Linux-*-* DragonFly-*-*
 
 INSTALLATION_DIRS=	bin
 
