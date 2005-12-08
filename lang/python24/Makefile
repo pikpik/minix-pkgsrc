@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/11/16 19:18:59 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:27 rillig Exp $
 #
 
 DISTNAME=	Python-2.4.2
@@ -76,8 +76,8 @@ OSSAUDIODEV_SUBST=
 EXTRA_SO_SUBST=
 .endif
 
-PLIST_SUBST+=	EXTRA_SO=${EXTRA_SO_SUBST:Q}
-PLIST_SUBST+=	OSSAUDIODEV=${OSSAUDIODEV_SUBST:Q}
+PLIST_SUBST+=	EXTRA_SO=${EXTRA_SO_SUBST}
+PLIST_SUBST+=	OSSAUDIODEV=${OSSAUDIODEV_SUBST}
 
 # Make sure python modules can link correctly
 .if ${OPSYS} == "Darwin"
