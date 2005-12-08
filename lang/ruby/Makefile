@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2005/07/19 10:02:11 grant Exp $
+# $NetBSD: Makefile,v 1.38 2005/11/02 09:00:44 taca Exp $
 
 DISTNAME=	ruby-${RUBY_VERSION}
+PKGREVISION=	1
 CATEGORIES=	lang ruby
 MASTER_SITES=	# empty
 DISTFILES=	# empty

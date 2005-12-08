@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/08/20 19:16:21 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/09/28 19:51:27 rillig Exp $
 #
 
 DISTNAME=	xorg-dirs-1.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	# empty
 DISTFILES=	# empty

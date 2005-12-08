@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.45 2005/12/05 23:55:14 rillig Exp $
+# $NetBSD: Makefile,v 1.46 2005/12/08 09:19:22 rillig Exp $
 #
 
 DISTNAME=	ntp-4.2.0
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	net time
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/		\
 		http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/
