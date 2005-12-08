@@ -1,4 +1,4 @@
-/*	$NetBSD: perform.c,v 1.34 2005/11/05 13:20:09 wiz Exp $	*/
+/*	$NetBSD: perform.c,v 1.115 2005/12/08 19:26:28 dillo Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -14,7 +14,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: perform.c,v 1.44 1997/10/13 15:03:46 jkh Exp";
 #else
-__RCSID("$NetBSD: perform.c,v 1.34 2005/11/05 13:20:09 wiz Exp $");
+__RCSID("$NetBSD: perform.c,v 1.35 2005/11/22 15:44:59 ben Exp $");
 #endif
 #endif
 
@@ -511,10 +511,10 @@ pkg_do(const char *pkg, lpkg_head_t *pkgs)
 	/* See if this package (exact version) is already registered */
 	if ((isdir(LogDir) || islinktodir(LogDir)) && !Force) {
 		if (!Automatic && is_automatic_installed(LogDir)) {
-			mark_as_automatic_installed(LogDir, 0);
-			warnx("package `%s' was already installed as "
-			      "dependency, now marked as installed manually",
-			      PkgName);
+			if (mark_as_automatic_installed(LogDir, 0) == 0)
+				warnx("package `%s' was already installed as "
+				      "dependency, now marked as installed "
+				      "manually", PkgName);
 		} else {
 			warnx("package `%s' already recorded as installed",
 			      PkgName);
