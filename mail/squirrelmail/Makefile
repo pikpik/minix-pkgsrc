@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2005/12/05 20:13:38 martti Exp $
+# $NetBSD: Makefile,v 1.60 2005/12/05 20:50:35 rillig Exp $
 
 DISTNAME=	squirrelmail-1.4.5
 PKGREVISION=	3
@@ -54,7 +54,7 @@ post-patch:
 		${MV} -f $${file}.fixed $${file};			\
 	done;								\
 	cd ${WRKSRC};							\
-	${FIND} . \( -name "*.orig" -o -name ".cvsignore" \) -print	\
+	${FIND} . \( -name "*.orig*" -o -name ".cvsignore" \) -print	\
 		| ${XARGS} ${RM} -f
 
 pre-install:
