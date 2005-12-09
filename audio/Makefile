@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.293 2005/11/22 19:27:07 wiz Exp $
+# $NetBSD: Makefile,v 1.294 2005/11/24 23:22:15 rpaulo Exp $
 #
 
 COMMENT=	Audio tools
@@ -129,6 +129,7 @@ SUBDIR+=	libao-sun
 SUBDIR+=	libaudiofile
 SUBDIR+=	libcdaudio
 SUBDIR+=	libcddb
+SUBDIR+=	libdca
 SUBDIR+=	libhydrogen
 SUBDIR+=	libid3tag
 SUBDIR+=	libmad
