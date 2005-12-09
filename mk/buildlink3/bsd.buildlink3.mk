@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.170 2005/05/11 22:08:18 jlam Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.171 2005/06/01 18:03:06 jlam Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -1035,6 +1035,7 @@ ${WRAPPER_TMPDIR}/libtool-fix-la: ${BUILDLINK_SRCDIR}/libtool-fix-la
 			 -e "s|@DIRNAME@|${DIRNAME:Q}|g"		\
 			 -e "s|@EGREP@|${EGREP:Q}|g"			\
 			 -e "s|@MV@|${MV:Q}|g"				\
+			 -e "s|@PWD@|${PWD_CMD:Q}|g"			\
 			 -e "s|@RM@|${RM:Q}|g"				\
 		| ${_WRAP_SH_CRUNCH_FILTER} > ${.TARGET}
 
