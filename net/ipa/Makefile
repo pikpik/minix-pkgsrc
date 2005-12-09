@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/02/17 03:00:33 uebayasi Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:46:48 tv Exp $
 #
 
 DISTNAME=	ipa-1.3.6
@@ -13,7 +13,7 @@ MAINTAINER=	simon@comsys.ntu-kpi.kiev.ua
 HOMEPAGE=	http://ipa-system.sourceforge.net/
 COMMENT=	IP accounting software
 
-ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-1*-* OpenBSD-*-*
+ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-1*-* OpenBSD-*-* DragonFly-*-*
 
 RESTRICTED=		"Needs to be built uniquely for each host"
 NO_BIN_ON_FTP=		${RESTRICTED}
