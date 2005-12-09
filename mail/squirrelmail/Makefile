@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/12/05 20:50:35 rillig Exp $
+# $NetBSD: Makefile,v 1.61 2005/12/09 06:42:46 martti Exp $
 
 DISTNAME=	squirrelmail-1.4.5
 PKGREVISION=	3
@@ -45,7 +45,7 @@ OWN_DIRS+=		${SMDIR} ${SMDIR}/config
 OWN_DIRS_PERMS=		${ATTACHMENTS_DIR} ${ROOT_USER} ${APACHE_GROUP} 730
 OWN_DIRS_PERMS+=	${USER_PREFS_DIR} ${APACHE_USER} ${APACHE_GROUP} 755
 
-post-patch:
+pre-configure:
 	cd ${WRKSRC};							\
 	for file in config/config_default.php; do			\
 		${SED}	-e "s|@ATTACHMENTS_DIR@|${ATTACHMENTS_DIR}|g"	\
