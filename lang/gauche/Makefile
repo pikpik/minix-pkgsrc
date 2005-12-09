@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2005/04/11 21:46:13 tv Exp $
+# $NetBSD: Makefile,v 1.31 2005/12/05 23:55:09 rillig Exp $
 #
 
-DISTNAME=	Gauche-0.8.3
-PKGREVISION=	1
+DISTNAME=	Gauche-0.8.6
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gauche/}
 EXTRACT_SUFX=	.tgz
@@ -34,7 +33,6 @@ LDFLAGS+=		${BUILDLINK_LIBICONV_LDADD}
 USE_MAKEINFO=		YES
 INFO_FILES=		gauche-refe.info gauche-refj.info
 
-.include "../../devel/boehm-gc/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
