@@ -1,8 +1,9 @@
 $NetBSD$
 
---- directory/c-sdk/config/arch.mk.orig	2005-06-03 20:59:03.000000000 +0200
-+++ directory/c-sdk/config/arch.mk
-@@ -138,7 +138,7 @@ endif
+diff -ruN ../Orig/mozilla/directory/c-sdk/config/arch.mk ./directory/c-sdk/config/arch.mk
+--- ../Orig/mozilla/directory/c-sdk/config/arch.mk	2002-03-27 06:51:57.000000000 +0900
++++ ./directory/c-sdk/config/arch.mk	2005-12-04 19:45:29.000000000 +0900
+@@ -138,7 +138,7 @@
  # Handle FreeBSD 2.2-STABLE and Linux 2.0.30-osfmach3
  #
  

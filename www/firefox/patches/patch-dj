@@ -1,7 +1,8 @@
 $NetBSD$
 
---- dbm/src/mktemp.c.orig	2005-05-23 21:26:42.000000000 +0200
-+++ dbm/src/mktemp.c	2005-05-23 21:27:08.000000000 +0200
+diff -ruN ../Orig/mozilla/dbm/src/mktemp.c ./dbm/src/mktemp.c
+--- ../Orig/mozilla/dbm/src/mktemp.c	2003-01-21 08:13:37.000000000 +0900
++++ ./dbm/src/mktemp.c	2005-12-04 19:44:43.000000000 +0900
 @@ -98,7 +98,7 @@
  static int 
  _gettemp(char *path, register int *doopen, int extraFlags)
