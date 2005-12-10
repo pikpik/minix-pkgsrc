@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/01 18:02:38 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/03 15:17:14 joerg Exp $
 
 PKGNAME=	mpg123${TARGET_SUFFIX}-${MPG123_VERSION}
 PKGREVISION=	7
@@ -8,6 +8,7 @@ TARGET_SUFFIX=	-nas
 
 CONFLICTS+=	mpg123-[0-9]*
 
+PKG_OPTIONS_VAR=PKG_OPTIONS.mpg123-nas
 .include "../../audio/mpg123/Makefile.common"
 
 .include "../../audio/nas/buildlink3.mk"
