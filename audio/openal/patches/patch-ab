@@ -70,6 +70,24 @@ $NetBSD$
  else
  
  cat >>confdefs.h <<\_ACEOF
+@@ -3214,7 +3273,7 @@ cat >>confdefs.h <<\_ACEOF
+ _ACEOF
+ 
+     OS_OBJS="\$(LIN_OBJS)" ;;
+-    *bsd*)
++    *bsd* | *dragonfly*)
+     BROKEN_PTHREAD_FLAG=yes
+ 
+ cat >>confdefs.h <<\_ACEOF
+@@ -3301,7 +3360,7 @@ case "$target" in
+     *linux*)
+     # No extra libs needed
+     ;;
+-    *bsd*)
++    *bsd* | *dragonfly*)
+     # No extra libs needed
+     ;;
+     *solaris*)
 @@ -5749,9 +5808,7 @@ else
  echo "${ECHO_T}no" >&6
  fi
