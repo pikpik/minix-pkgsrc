@@ -6,7 +6,7 @@ MASTER_SITES=	# empty
 
 SHORT_NAME=	JDK
 
-DEPENDS+=	sun-jre15-${PKGVERSION}*:../../lang/sun-jre15
+DEPENDS+=	${PKGNAME_NOREV:S/jdk/jre/}*:../../lang/sun-jre15
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-//:S/_/./:S/_/./:S/-linux-i586//}
 JAVA_WRAPPERS=	appletviewer apt extcheck idlj jar jarsigner \
