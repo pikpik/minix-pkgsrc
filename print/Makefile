@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.139 2005/11/29 22:39:48 minskim Exp $
+# $NetBSD: Makefile,v 1.140 2005/12/09 20:30:16 wiz Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -79,6 +79,7 @@ SUBDIR+=	pdflib
 SUBDIR+=	php-pdflib
 SUBDIR+=	pnm2ppa
 SUBDIR+=	poppler
+SUBDIR+=	poppler-qt
 SUBDIR+=	poster
 SUBDIR+=	pscal
 SUBDIR+=	psify
