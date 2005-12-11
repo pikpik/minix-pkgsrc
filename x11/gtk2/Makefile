@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.99 2005/11/29 17:44:50 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2005/12/05 20:51:17 rillig Exp $
 #
 
-DISTNAME=		gtk+-2.8.8
+DISTNAME=		gtk+-2.8.9
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v2.8/ \
