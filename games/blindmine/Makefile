@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/07/20 21:23:52 minskim Exp $
 #
 
 DISTNAME=	    blindmine-0.01
+PKGREVISION=	    1
 CATEGORIES=	    games python
 MASTER_SITES=	    http://kldp.net/frs/download.php/1378/
 EXTRACT_SUFX=	    .zip

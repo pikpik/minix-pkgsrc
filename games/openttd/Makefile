@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/09/26 16:35:05 rpaulo Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:50:17 rillig Exp $
 
 DISTNAME=	openttd-0.4.0.1-source
 PKGNAME=	openttd-0.4.0.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games x11
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=openttd/}
 

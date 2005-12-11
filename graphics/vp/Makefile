@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/03/27 15:43:37 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:10 tv Exp $
 #
 
 DISTNAME=		vp-1.5
-PKGREVISION=	3
+PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		http://math.smsu.edu/~erik/files/
 

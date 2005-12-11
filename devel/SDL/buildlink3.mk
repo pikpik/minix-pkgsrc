@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2005/03/27 14:43:47 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2005/06/01 18:02:42 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SDL_BUILDLINK3_MK:=	${SDL_BUILDLINK3_MK}+
@@ -24,7 +24,7 @@ PTHREAD_OPTS+=	require
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .endif
-.include "../../graphics/aalib-x11/buildlink3.mk"
+.include "../../graphics/aalib/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
 

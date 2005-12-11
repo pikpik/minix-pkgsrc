@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2005/05/02 23:02:06 reed Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:18 rillig Exp $
 #
 
 DISTNAME=	tuxracer-0.61
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxracer/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

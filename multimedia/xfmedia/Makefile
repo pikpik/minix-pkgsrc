@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/19 04:48:28 minskim Exp $
 #
 
 DISTNAME=		xfmedia-0.9.1
+PKGREVISION=		1
 CATEGORIES=		multimedia
 MASTER_SITES=		http://spuriousinterrupt.org/projects/xfmedia/files/
 EXTRACT_SUFX=           .tar.bz2

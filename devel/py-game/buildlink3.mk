@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/07/20 19:39:42 drochner Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_GAME_BUILDLINK3_MK:=	${PY_GAME_BUILDLINK3_MK}+
@@ -14,6 +14,7 @@ BUILDLINK_PACKAGES+=	${PYPKGPREFIX}-game
 
 .if !empty(PY_GAME_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.${PYPKGPREFIX}-game+=	${PYPKGPREFIX}-game>=1.6
+BUILDLINK_RECOMMENDED.${PYPKGPREFIX}-game?=	${PYPKGPREFIX}-game>=1.7.1nb1
 BUILDLINK_PKGSRCDIR.${PYPKGPREFIX}-game?=	../../devel/py-game
 
 .include "../../audio/SDL_mixer/buildlink3.mk"

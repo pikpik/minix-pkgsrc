@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:54 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:16 rillig Exp $
 #
 
 DISTNAME=	icebreaker-1.9.7
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	http://www.mattdm.org/icebreaker/1.9.x/
 EXTRACT_SUFX=	.tgz

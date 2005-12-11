@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2005/11/03 21:40:13 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:10 rillig Exp $
 #
 
 DISTNAME=		arnsrc27012002
 PKGNAME=		arnold-20020127
-PKGREVISION=	2
+PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		http://arnold.emuunlim.com/download/
 EXTRACT_SUFX=		.zip

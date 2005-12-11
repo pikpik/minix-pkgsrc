@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/03/27 15:43:33 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:44:59 tv Exp $
 #
 
 DISTNAME=	JESS-2.9.1
 PKGNAME=	xmms-jess-2.9.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	xmms audio
 MASTER_SITES=	http://arquier.free.fr/
 

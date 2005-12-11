@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/21 03:49:56 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/05 20:50:13 rillig Exp $
 #
 
 DISTNAME=		z26v213
 PKGNAME=		z26-2.13
+PKGREVISION=		1
 CATEGORIES=		emulators games
 MASTER_SITES=		http://www.whimsey.com/z26/
 

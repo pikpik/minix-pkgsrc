@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/06/16 06:57:56 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/07/15 18:27:51 jlam Exp $
 #
 
 DISTNAME=	xrick-021212
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	http://www.bigorno.net/xrick/
 EXTRACT_SUFX=	.tgz

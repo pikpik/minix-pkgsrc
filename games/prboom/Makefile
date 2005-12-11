@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2005/03/27 15:43:36 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:45:56 tv Exp $
 
 DISTNAME=	prboom-2.2.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=prboom/}
 
