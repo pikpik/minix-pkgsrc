@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/07 23:29:07 wulf Exp $
 
-VERSION=	0.1
+VERSION=	0.2
 DISTNAME=	gr-gsm-fr-vocoder-${VERSION}
 PKGNAME=	gnuradio-gsm-${VERSION}
 WRKSRC=		${WRKDIR}/${DISTNAME}
