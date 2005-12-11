@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/main.cc.orig	2003-09-09 23:22:55.000000000 +0200
+--- src/main.cc.orig	2003-09-09 21:22:55.000000000 +0000
 +++ src/main.cc
 @@ -51,10 +51,10 @@
  #include <pth.h>
@@ -15,3 +15,12 @@ $NetBSD$
  #endif
  #ifdef HAVE_ERRNO_H
  #include <errno.h>
+@@ -2917,7 +2917,7 @@ recsel_files(const char *path, char ***f
+ 	while ( (entry = readdir(dir)) )
+ 	{
+ 		DIR *dir2 = NULL;
+-		char *newpath = (char *)malloc((entry->d_reclen + 2 + strlen(path)) *
++		char *newpath = (char *)malloc((sizeof(*entry) + entry->d_namlen + 2 + strlen(path)) *
+ 			sizeof(char));
+ 
+ 		PTH_YIELD;
