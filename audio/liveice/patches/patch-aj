@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- liveice.c.orig	2005-12-11 22:17:53.000000000 +0000
++++ liveice.c
+@@ -20,8 +20,6 @@
+ 
+ #include "liveice.h"
+ 
+-extern int errno;
+-
+ void kill_children(int signo) {
+ 	fprintf(stderr,"Killing children...\n");
+ 	if(killpg(0, SIGTERM) < 0) {
