@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.6 2004/10/28 12:20:39 wiz Exp $
+$NetBSD: patch-aa,v 1.7 2004/11/02 13:27:45 wiz Exp $
 
 --- Makefile.orig	1997-11-12 20:01:58.000000000 +0100
 +++ Makefile
@@ -32,7 +32,7 @@ $NetBSD: patch-aa,v 1.6 2004/10/28 12:20:39 wiz Exp $
  
  all:	${ALL}
 -	${GCC} ${ALL} -o ${PKG} -L${LIB} -I${INC} -lqt
-+	${GCC} ${ALL} -o ${PKG} ${LIB}  -lqt -lX11 -lXext -lossaudio
++	${GCC} ${ALL} -o ${PKG} ${LIB}  -lqt -lX11 -lXext ${LIBOSSAUDIO}
  
 -player.o:
 -	${GCC} -c player.cpp -o player.o ${CFLAGS} -L${LIB} -I${INC}
