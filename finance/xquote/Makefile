@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2005/01/01 04:20:38 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:47 tv Exp $
 
 DISTNAME=		xquote-2.6.10
+PKGREVISION=		1
 CATEGORIES=		finance x11
 MASTER_SITES=		http://xinvest.sunsite.dk/
 

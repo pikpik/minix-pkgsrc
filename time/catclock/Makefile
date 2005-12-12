@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2004/10/03 00:18:21 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:44 tv Exp $
 #
 
 DISTNAME=	catclock
 PKGNAME=	catclock-0.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11 time
 MASTER_SITES=	http://www2.cenaath.cena.dgac.fr/ftp/decwindows/ \
 		ftp://ftp2.cnam.fr/decwindows/ \
