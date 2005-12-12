@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/04/11 21:45:45 tv Exp $
+# $NetBSD: Makefile,v 1.29 2005/07/19 10:23:42 grant Exp $
 
 DISTNAME=		suse_linux-7.3
 CATEGORIES=		emulators
@@ -24,7 +24,7 @@ DEPENDS+=		suse_libc5>=7.3:../../emulators/suse_libc5
 
 ONLY_FOR_PLATFORM=	NetBSD-1.5Z[C-Z]-i386 NetBSD-1.6*-i386 \
 			NetBSD-[2-9]*-i386 NetBSD-*-powerpc \
-			FreeBSD-*-i386
+			FreeBSD-*-i386 DrgaonFly-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES

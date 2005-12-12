@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/02 20:32:03 recht Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:44 tv Exp $
 
 DISTNAME=		suse_fontconfig-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -10,8 +10,6 @@ HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for fontconfig binaries
 
 DEPENDS+=		suse_expat>=${SUSE_VERSION}:../../emulators/suse91_expat
-
-ONLY_FOR_PLATFORM=      NetBSD-*-i386 FreeBSD-*-i386
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
