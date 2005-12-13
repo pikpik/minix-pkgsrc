@@ -1,12 +1,12 @@
 #!@PERL5@
 #
-# $NetBSD: patchdiff.pl,v 1.5 2002/08/14 16:30:07 seb Exp $
+# $NetBSD: patchdiff.pl,v 1.6 2004/01/10 05:40:40 jlam Exp $
 #
 # patchdiff: compares a set of patches patch-aa, patch-ab, ... in
 #   $WRKDIR/.newpatches in the with another set in patches.
 #
 # Copyright (c) 2000 by Dieter Baron <dillo@giga.or.at> and
-#                       Thomas Klausner <wiz@netbsd.org>  
+#                       Thomas Klausner <wiz@NetBSD.org>  
 # All Rights Reserved.  Absolutely no warranty.  
 
 use Getopt::Std;
