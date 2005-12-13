@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/11/10 09:04:25 tonio Exp $
+# $NetBSD: Makefile,v 1.3 2005/11/11 16:22:29 joerg Exp $
 
 DISTNAME=		cplay-1.49
 PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${HOMEPAGE}
 
-MAINTAINER=		geert.hendrickx@ua.ac.be
+MAINTAINER=		ghen@NetBSD.org
 HOMEPAGE=		http://www.tf.hut.fi/~flu/cplay/
 COMMENT=		Curses front-end for various audio players
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/09/08 19:59:13 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2005/09/12 18:47:07 drochner Exp $
 
 DISTNAME=	texmaker-1.12
 CATEGORIES=	editors
 MASTER_SITES=	http://www.xm1math.net/texmaker/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	geert.hendrickx@ua.ac.be
+MAINTAINER=	ghen@NetBSD.org
 HOMEPAGE=	http://www.xm1math.net/texmaker/
 COMMENT=	LaTeX editor and front end
 
