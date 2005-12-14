@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2004/08/28 06:05:31 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:04 tv Exp $
 #
 
 # Note: The file ftp://ftp.icb.net/pub/icb/icb-0.9grok2.tar.gz is way
 #	older than this here. It's got no readline support, tcl, ... - HF
 DISTNAME=		icb-5.0.9
 PKGNAME=		icb-5.0.9pl1
+PKGREVISION=		1
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
@@ -23,6 +24,9 @@ BUILDLINK_TRANSFORM+=	rm:-ltermcap
 .endif
 
 INSTALLATION_DIRS=	bin libdata libdata/icb
+
+post-extract:
+	${RM} ${WRKSRC}/tcl/string.h
 
 do-configure:
 	${SED} -e "s|@PREFIX@|${PREFIX}|g" ${FILESDIR}/config >${WRKSRC}/config

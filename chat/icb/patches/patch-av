@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- icb/history.c.orig	2005-12-13 16:25:41.000000000 +0000
++++ icb/history.c
+@@ -19,7 +19,6 @@ static STRLIST *hp = (STRLIST *) 0;	/* u
+ histput(nick)
+ char *nick;
+ {
+-	char *malloc();
+ 	STRLIST *sp;
+ 
+ 	/* hunt for user within list */
