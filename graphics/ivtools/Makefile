@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2005/06/01 18:02:56 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/11/05 17:17:12 rillig Exp $
 
 DISTNAME=	ivtools-1.2.2
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ivtools/}
 EXTRACT_SUFX=	.tgz
@@ -10,6 +11,9 @@ HOMEPAGE=	http://www.ivtools.org/ivtools/
 COMMENT=	Drawing editors for PostScript, TeX, and web graphics
 
 CONFLICTS+=	dclock-*
+
+DEPENDS+=	pstoedit>=3.*:../../graphics/pstoedit
+DEPENDS+=	wget>=1.*:../../net/wget
 
 WRKSRC=		${WRKDIR}/ivtools-1.2
 GNU_CONFIGURE=	YES
