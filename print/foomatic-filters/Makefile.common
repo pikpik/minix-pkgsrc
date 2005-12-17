@@ -1,0 +1,11 @@
+# $NetBSD$
+#
+# This Makefile.common file is included by the following Makefiles:
+#
+#	print/foomatic-filters/Makefile
+#	print/foomatic-filters-cups/Makefile
+#
+
+FOOMATIC_FILTERS_VERSION=	3.0.2
+CATEGORIES=			print
+HOMEPAGE=			http://www.linuxprinting.org/foomatic.html
