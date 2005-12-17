@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.140 2005/12/09 20:30:16 wiz Exp $
+# $NetBSD: Makefile,v 1.141 2005/12/11 10:09:10 markd Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -22,8 +22,6 @@ SUBDIR+=	chktex
 SUBDIR+=	cjk-lyx
 SUBDIR+=	cnprint
 SUBDIR+=	cups
-SUBDIR+=	cupsomatic
-SUBDIR+=	cupsomatic-ppds
 SUBDIR+=	dvidvi
 SUBDIR+=	dvipdfm
 SUBDIR+=	dvipdfmx
@@ -32,7 +30,9 @@ SUBDIR+=	enscript
 SUBDIR+=	epstool
 SUBDIR+=	evince
 SUBDIR+=	foomatic-filters
-SUBDIR+=	foomatic-gswrapper
+SUBDIR+=	foomatic-filters-cups
+SUBDIR+=	foomatic-ppds
+SUBDIR+=	foomatic-ppds-cups
 SUBDIR+=	ghostscript
 SUBDIR+=	ghostscript-afpl
 SUBDIR+=	ghostscript-esp
