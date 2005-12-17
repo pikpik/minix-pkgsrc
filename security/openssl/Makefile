@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2005/12/05 20:50:57 rillig Exp $
+# $NetBSD: Makefile,v 1.110 2005/12/05 23:55:18 rillig Exp $
 
 OPENSSL_SNAPSHOT?=	# empty
 OPENSSL_STABLE?=	# empty
@@ -26,7 +26,7 @@ MASTER_SITES=	ftp://ftp.openssl.org/snapshot/
 
 SVR4_PKGNAME=	ossl
 CATEGORIES=	security
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.openssl.org/
 COMMENT=	Secure Socket Layer and cryptographic library
 

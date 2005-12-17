@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.27 2005/06/01 20:08:01 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/05 23:55:14 rillig Exp $
 
 DISTNAME=	openslp-1.2.1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openslp/}
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.openslp.org/
 COMMENT=	Open-source implementation of the Service Location Protocol
 

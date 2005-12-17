@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2005/11/07 02:48:50 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:47 rillig Exp $
 
 DISTNAME=	netpipes-4.2-export
 PKGNAME=	${DISTNAME:S/-export//}
 CATEGORIES=	net
 MASTER_SITES=	http://web.purplefrog.com/ftp/thoth/netpipes/
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://web.purplefrog.com/~thoth/netpipes/netpipes.html
 COMMENT=	Utilities for communicating via sockets
 

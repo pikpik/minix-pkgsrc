@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:23 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/03 16:13:34 adrianp Exp $
 
 DISTNAME=	webmin-1.170-minimal
 PKGNAME=	${DISTNAME:S/-minimal$//}
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	sysutils www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=webadmin/}
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.webmin.com/
 COMMENT=	Perl web server and CGI for Unix system administration
 

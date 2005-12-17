@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2005/10/19 04:40:23 jlam Exp $
+# $NetBSD: Makefile,v 1.106 2005/12/05 23:55:10 rillig Exp $
 
 # The following two variables should have empty values unless we're
 # building a perl snapshot or release candidate.
@@ -32,7 +32,7 @@ AUTHOR_DIR=	authors/id/J/JH/JHI
 .  endif
 .endif
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.perl.com/
 COMMENT=	Practical Extraction and Report Language
 

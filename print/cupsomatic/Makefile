@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/07/16 01:19:18 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/11/28 06:41:21 jlam Exp $
 
 DISTNAME=	cupsomatic
 PKGNAME=	${DISTNAME}-2.2
@@ -18,7 +18,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL:=${subdir}/}
 #
 #MASTER_SITES+=	http://www.linuxprinting.org/
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.linuxprinting.org/cups-doc.html
 COMMENT=	Foomatic CUPS printer filter
 

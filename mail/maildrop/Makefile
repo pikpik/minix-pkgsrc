@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2005/11/11 07:34:30 rillig Exp $
+# $NetBSD: Makefile,v 1.31 2005/12/05 23:55:11 rillig Exp $
 
 DISTNAME=	maildrop-2.0.1
 CATEGORIES=     security
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=   .tar.bz2
 
-MAINTAINER=	jlam@NetBSD.org
+MAINTAINER=	jlam@pkgsrc.org
 COMMENT=	Courier mail delivery agent with filtering abilities
 HOMEPAGE=	http://www.courier-mta.org/maildrop/
 
