@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- aslookup.c.orig	2005-12-18 18:54:16.000000000 +0000
++++ aslookup.c
+@@ -49,7 +49,6 @@ static char Version[] = "@(#)aslookup.c	
+ #define EXTERN extern
+ #endif
+ 
+-EXTERN int errno;
+ EXTERN int h_errno;
+ extern char *version;		/* program version number */
+ 
