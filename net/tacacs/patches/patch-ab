@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tac_plus.h.orig	Tue Oct  3 17:11:45 2000
+--- tac_plus.h.orig	2000-06-18 17:26:54.000000000 +0000
 +++ tac_plus.h
 @@ -79,6 +79,7 @@
  #define STDLIB_MALLOC
@@ -10,7 +10,7 @@ $NetBSD$
  #define VOIDSIG
  #endif
  
-@@ -689,10 +690,12 @@
+@@ -689,12 +690,13 @@ extern void parser_init();
  extern void set_expiration_status();
  
  /* miscellaneous */
@@ -19,7 +19,9 @@ $NetBSD$
  extern const char *const sys_errlist[];
  #else
  extern char *sys_errlist[];
-+#endif
  #endif
- extern int errno;
+-extern int errno;
++#endif
  extern int sendauth_fn();
+ extern int sendpass_fn();
+ extern int enable_fn();
