@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- syshdr.h.orig	2005-12-18 20:00:48.000000000 +0000
++++ syshdr.h
+@@ -47,6 +47,9 @@
+ #		define BSD4_4_LITE2
+ #	endif
+ #endif
++#if defined(__DragonFly__)
++#define BSD4_4_LITE2
++#endif
+ #if defined(BSD4_4) && !defined(BSD4_4_LITE2)
+ #	define BSD4_4_LITE
+ #endif

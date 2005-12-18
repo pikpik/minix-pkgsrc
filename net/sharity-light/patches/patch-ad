@@ -1,13 +1,17 @@
-$NetBSD: patch-ad,v 1.1 2004/09/16 17:57:02 minskim Exp $
+$NetBSD$
 
---- ../unshlight/unshlight.c.orig	2001-03-09 10:09:36.000000000 -0600
+--- ../unshlight/unshlight.c.orig	2001-03-09 16:09:36.000000000 +0000
 +++ ../unshlight/unshlight.c
-@@ -8,6 +8,10 @@
+@@ -8,6 +8,14 @@
  #include <stdlib.h>
  #include <signal.h>
  
 +#if defined(__NetBSD__) && __NetBSD_Version__ >= 299000900
 +#define statfs statvfs
++#endif
++
++#if defined(__DragonFly__)
++#define MOUNT_NFS "nfs"
 +#endif
 +
  static void usage(void);
