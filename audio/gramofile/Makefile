@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:38 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:49:48 rillig Exp $
 #
 
 DISTNAME=	gramofile-1.6
 PKGREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	http://panic.et.tudelft.nl/~costar/gramofile/
+MASTER_SITES=	http://www.opensourcepartners.nl/~costar/gramofile/
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://panic.et.tudelft.nl/~costar/gramofile/
+HOMEPAGE=	http://www.opensourcepartners.nl/~costar/gramofile/
 COMMENT=	Tool for ripping audio from vinyl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
