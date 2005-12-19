@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.142 2005/12/17 20:11:58 wiz Exp $
+# $NetBSD: Makefile,v 1.143 2005/12/17 20:19:49 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -13,7 +13,6 @@ SUBDIR+=	R-PHYLOGR
 SUBDIR+=	R-R2HTML
 SUBDIR+=	R-RArcInfo
 SUBDIR+=	R-Rcmdr
-SUBDIR+=	R-VR
 SUBDIR+=	R-abind
 SUBDIR+=	R-chron
 SUBDIR+=	R-clim.pact
