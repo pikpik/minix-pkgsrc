@@ -7,7 +7,7 @@ $NetBSD$
                  CF='-O2 -fomit-frame-pointer -DUSE_RANDOM -DUSE_VT100 -DLINES=25'
                  LF='';;
 -
-+	NetBSD|Darwin)
++	NetBSD|Darwin|DragonFly)
 +		echo "Making Powwow for $OS"
 +		CC='gcc'
 +		CF='-O2 -pipe -DUSE_SGTTY -DBSD_LIKE -DUSE_RANDOM -DUSE_REGEXP'
