@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- xgraph.c.orig	2005-12-19 16:09:11.000000000 +0000
++++ xgraph.c
+@@ -2662,7 +2662,6 @@ XErrorEvent *evt;
+ 
+ 
+ #include <errno.h>
+-extern int errno;
+ #ifndef __WIN32__
+ #define HAVE_MMAP
+ #endif
