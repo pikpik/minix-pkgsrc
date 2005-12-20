@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:09 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/04 20:00:01 kristerw Exp $
 #
 
 DISTNAME=	yasm-0.4.0
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.tortall.net/projects/yasm/
 COMMENT=	Complete rewrite of the NASM assembler with BSD license
 
 BUILD_USES_MSGFMT=	YES
+BROKEN_GETTEXT_DETECTION=	NO
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
