@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/firewalk.c.orig	2005-12-20 13:47:17.000000000 +0000
++++ src/firewalk.c
+@@ -190,6 +190,7 @@ firewalk(struct firepack **fp)
+                         return (FW_SERIOUS_ERROR);
+                     default:
+                         /* empty */
++			break;
+                 }
+             }
+         }
