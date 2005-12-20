@@ -1,15 +1,16 @@
-$NetBSD: patch-aa,v 1.3 2002/08/12 11:42:30 agc Exp $
+$NetBSD$
 
---- Yrolo.tmpl	2002/05/09 14:46:24	1.1
-+++ Yrolo.tmpl	2002/05/09 14:47:36
-@@ -51,7 +51,11 @@
+--- Yrolo.tmpl.orig	1995-05-07 21:34:12.000000000 +0200
++++ Yrolo.tmpl
+@@ -51,7 +51,11 @@ XCOMM or
  XCOMM  LOCAL_LIBRARIES= -lXm -lXt -lX11
  XCOMM
  
+-LOCAL_LIBRARIES= XmClientLibs
 +#ifdef NetBSDArchitecture
-+LOCAL_LIBRARIES= XmClientLibs -lcompat ${LDFLAGS}
++LOCAL_LIBRARIES= -lXm -lXt -lcompat ${LDFLAGS}
 +#else
- LOCAL_LIBRARIES= XmClientLibs
++LOCAL_LIBRARIES= -lXm -lXt
 +#endif
  
  #ifdef HPArchitecture
