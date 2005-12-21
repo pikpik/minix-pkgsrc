@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/07/30 15:50:38 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/05 20:49:51 rillig Exp $
 
 DISTNAME=	ttcp
 PKGNAME=	${DISTNAME}-1.12
@@ -21,9 +21,10 @@ MAKE_ENV+=	BINOWN=${BINOWN:Q} BINGRP=${BINGRP:Q}	\
 
 MANCOMPRESSED_IF_MANZ=	YES
 
-.if (${OPSYS} == Darwin)
-MAKE_FLAGS+=	CFLAGS="-Din_addr_t=\"unsigned long\""
-.endif
+#.if (${OPSYS} == Darwin)
+#CFLAGS+=	"-Din_addr_t=\"unsigned long\""
+#MAKE_FLAGS+=	CFLAGS=${CFLAGS:Q}
+#.endif
 
 INSTALLATION_DIRS=	bin man/cat1 man/man1
 
