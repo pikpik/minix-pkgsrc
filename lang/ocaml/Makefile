@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2005/10/25 08:03:17 tonio Exp $
+# $NetBSD: Makefile,v 1.41 2005/10/25 08:13:23 tonio Exp $
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 CONFIGURE_ARGS+=	-no-tk
 CONFIGURE_ENV+=		disable_x11=yes
 
@@ -18,7 +19,7 @@ PLIST_SRC+=	${PKGDIR}/PLIST.prof
 PLIST_SRC+=	${PKGDIR}/PLIST
 .endif
 
-.if ${OPSYS} == "Darwin"
+.if ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly"
 PLIST_SRC+=	${PKGDIR}/PLIST.stub
 .endif
 
