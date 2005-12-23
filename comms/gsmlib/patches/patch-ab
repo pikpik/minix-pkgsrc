@@ -1,0 +1,31 @@
+$NetBSD$
+
+--- gsmlib/gsm_map_key.h.orig	2002-05-14 19:38:12.000000000 +0000
++++ gsmlib/gsm_map_key.h
+@@ -45,20 +45,12 @@ namespace gsmlib
+     MapKey(SortedStore &myStore, string key) :
+       _myStore(myStore), _strKey(key) {}
+ 
+-    friend
+-    bool operator< 
+-#ifndef WIN32
+-	<>
+-#endif
+-	                 (const MapKey<SortedStore> &x,
+-                      const MapKey<SortedStore> &y);
+-    friend
+-    bool operator==
+-#ifndef WIN32
+-	<>
+-#endif
+-	                  (const MapKey<SortedStore> &x,
+-                       const MapKey<SortedStore> &y);
++    template <class _SortedStore> friend
++    bool operator<(const MapKey<_SortedStore> &x,
++                   const MapKey<_SortedStore> &y);
++    template <class _SortedStore> friend
++    bool operator==(const MapKey<_SortedStore> &x,
++                       const MapKey<_SortedStore> &y);
+   };
+ 
+   // compare two keys
