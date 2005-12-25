@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/04 20:15:29 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2005/07/29 12:16:21 adam Exp $
 
 DISTNAME=	libpixman-0.1.6
 CATEGORIES=	graphics
@@ -12,5 +12,11 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	libpixman.pc.in
 GNU_CONFIGURE=		yes
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mmipspro*)
+CFLAGS+=		-c99
+.endif
 
 .include "../../mk/bsd.pkg.mk"
