@@ -1,4 +1,4 @@
-# $NetBSD: bsd.sites.mk,v 1.50 2005/12/03 21:15:48 wiz Exp $
+# $NetBSD: bsd.sites.mk,v 1.51 2005/12/20 22:48:34 salo Exp $
 #
 # Default MASTER_SITES
 
@@ -94,6 +94,7 @@ MASTER_SITE_SOURCEFORGE+=	\
 	http://easynews.dl.sourceforge.net/sourceforge/ \
 	http://heanet.dl.sourceforge.net/sourceforge/ \
 	http://internap.dl.sourceforge.net/sourceforge/ \
+	http://jaist.dl.sourceforge.net/sourceforge/ \
 	http://keihanna.dl.sourceforge.net/sourceforge/ \
 	http://kent.dl.sourceforge.net/sourceforge/ \
 	http://mesh.dl.sourceforge.net/sourceforge/ \
