@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/01 18:02:47 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:11 rillig Exp $
 
 DISTNAME=	pcemu1.01alpha
 PKGNAME=	pcemu-1.01a
@@ -9,6 +9,9 @@ MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
 
 MAINTAINER=	eric@fox.phoenix.az.us
 COMMENT=	8086 PC emulator, by David Hedley
+
+PKG_FAIL_REASON+=	"Broken on NetBSD/i386 3.0 in pkgsrc-2005Q4"
+PKG_FAIL_REASON+=	"Will be removed in pkgsrc-2006Q1 unless fixed"
 
 MAKE_ENV+=	FILESDIR=${FILESDIR:Q}
 

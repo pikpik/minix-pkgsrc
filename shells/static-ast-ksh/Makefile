@@ -1,8 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2004/01/11 23:06:54 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/09/20 04:23:49 jlam Exp $
 #
 .include "../../shells/ast-ksh/Makefile.common"
 
 PKGREVISION=	1
+
+PKG_FAIL_REASON+=	"Broken on NetBSD/i386 3.0 in pkgsrc-2005Q4"
+PKG_FAIL_REASON+=	"Will be removed in pkgsrc-2006Q1 unless fixed"
 
 CONFLICTS=	ast-ksh-[0-9]*	# Override.
 

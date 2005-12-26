@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 22:53:39 grant Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/21 17:24:17 martti Exp $
 
 DISTNAME=	lambd-20010719
 CATEGORIES=	sysutils
@@ -7,6 +7,9 @@ DISTFILES=	# none
 
 MAINTAINER=	itojun@NetBSD.org
 COMMENT=	Shutdown switch monitoring daemon for Wildlab LAMB
+
+PKG_FAIL_REASON+=	"Broken on NetBSD/i386 3.0 in pkgsrc-2005Q4"
+PKG_FAIL_REASON+=	"Will be removed in pkgsrc-2006Q1 unless fixed"
 
 EXTRACT_ONLY=	# none
 NO_CHECKSUM=	yes
