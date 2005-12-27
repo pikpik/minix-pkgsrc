@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	2005-01-30 22:20:52.000000000 +0000
+--- Makefile.orig	2005-01-30 23:20:52.000000000 +0100
 +++ Makefile
-@@ -6,12 +6,12 @@ clean:
+@@ -6,12 +6,13 @@ clean:
  	rm -f *~
  
  estd:	estd.c
@@ -20,3 +20,4 @@ $NetBSD$
 +	install -s -o root -g wheel -m 0755 estd ${PREFIX}/sbin/estd
 +	install -d -o root -g wheel -m 0755 ${PREFIX}/man/man1
 +	install -o root -g wheel -m 0644 estd.1 ${PREFIX}/man/man1/estd.1
++	install -o root -g wheel -m 0644 estd.sh ${PREFIX}/share/examples/rc.d/estd
