@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- include/osdefs.h.orig	2005-12-18 20:28:55.000000000 +0000
++++ include/osdefs.h
+@@ -79,7 +79,7 @@
+ # define NOINITGROUPS
+ #endif
+ 
+-#if defined(BSDI) || defined(FREEBSD) || defined(LINUX2)
++#if defined(BSDI) || defined(FREEBSD) || defined(LINUX2) || defined(__DragonFly__)
+ # ifndef HAVESYSERR
+ #  define HAVESYSERR
+ # endif
