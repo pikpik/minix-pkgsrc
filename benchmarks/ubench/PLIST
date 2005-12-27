@@ -1,2 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/09/03 05:57:45 xtraeme Exp $
 bin/ubench
+man/man8/ubench.8
+share/doc/ubench/README
+@dirrm share/doc/ubench
