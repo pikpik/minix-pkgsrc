@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.17 2005/10/11 17:19:21 jlam Exp $
 
 --- Makefile.org.orig	2005-06-20 00:29:54.000000000 -0400
 +++ Makefile.org
@@ -15,7 +15,7 @@ $NetBSD$
  MAKEFILE= Makefile
  
 -MANDIR=$(OPENSSLDIR)/man
-+MANDIR=$(INSTALLTOP)/man
++MANDIR=$(INSTALLTOP)/$(PKGMANDIR)
  MAN1=1
  MAN3=3
  MANSUFFIX=
