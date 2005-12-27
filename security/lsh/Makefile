@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/30 12:23:42 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/22 20:08:30 jlam Exp $
 #
 
 DISTNAME=		lsh-1.4.3
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.lysator.liu.se/pub/security/lsh/
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://www.lysator.liu.se/~nisse/lsh/
-COMMENT=		ssh2 client/server
+COMMENT=		SSH2 client/server (version 1 of lsh)
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
