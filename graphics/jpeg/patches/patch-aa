@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- makefile.cfg.orig	1998-03-21 11:08:57.000000000 -0800
++++ makefile.cfg
+@@ -17,7 +17,7 @@ includedir = $(prefix)/include
+ binprefix =
+ manprefix =
+ manext = 1
+-mandir = $(prefix)/man/man$(manext)
++mandir = @mandir@/man$(manext)
+ 
+ # The name of your C compiler:
+ CC= @CC@
