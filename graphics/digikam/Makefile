@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2005/08/10 20:56:17 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/18 09:44:09 seb Exp $
 
 DISTNAME=		digikam-0.7.4
 CATEGORIES=		graphics kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		seb@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://digikam.sourceforge.net/
 COMMENT=		KDE frontend to gphoto2
 

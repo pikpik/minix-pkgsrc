@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/02 14:24:23 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/06 06:19:30 jlam Exp $
 #
 
 DISTNAME=	Module-Signature-0.44
@@ -8,7 +8,7 @@ PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Module/}
 
-MAINTAINER=	seb@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Module-Signature/
 COMMENT=	Perl5 module adding cryptographic authentications to CPAN distributions
 

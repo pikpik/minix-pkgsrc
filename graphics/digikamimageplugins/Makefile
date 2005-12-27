@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/10/18 09:57:00 seb Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/26 23:39:32 schmonz Exp $
 
 DISTNAME=		digikamimageplugins-0.7.4
 CATEGORIES=		graphics kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		seb@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://digikam.sourceforge.net/
 COMMENT=		Plugins for Digikam's ImageEditor
 

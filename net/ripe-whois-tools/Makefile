@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2005/12/05 20:50:49 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/07 03:33:52 joerg Exp $
 #
 
 DISTNAME=	ripe-whois-tools-2.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ripe.net/tools/
 
-MAINTAINER=	seb@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.ripe.net/ripencc/pub-services/db/
 COMMENT=	RIPE WHOIS client and tools
 
