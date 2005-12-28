@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.422 2005/12/09 20:46:30 wiz Exp $
+# $NetBSD: Makefile,v 1.423 2005/12/17 19:28:38 markd Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -271,6 +271,7 @@ SUBDIR+=	ruby-webunit
 SUBDIR+=	sarg
 SUBDIR+=	screws
 SUBDIR+=	sitecopy
+SUBDIR+=	skipstone
 SUBDIR+=	snarf
 SUBDIR+=	snownews
 SUBDIR+=	sope
