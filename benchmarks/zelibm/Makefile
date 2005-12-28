@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/07/27 17:06:53 drochner Exp $
 #
 
 DISTNAME=		zelibm
@@ -18,4 +18,5 @@ do-install:
 .include "../../mk/x11.buildlink3.mk"
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../graphics/gd/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
