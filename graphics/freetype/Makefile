@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:46:02 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/09/28 20:52:22 rillig Exp $
 
 DISTNAME=		freetype-${FT_VERS}
 FT_VERS=		1.3.1
 PKGREVISION=		2
-CATEGORIES=		graphics textproc
+CATEGORIES=		graphics meta-pkgs textproc
 MASTER_SITES=		#
 DISTFILES=		#
 
