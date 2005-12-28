@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/05/15 17:11:04 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2005/09/28 14:31:08 rillig Exp $
 #
 # This package currently exists as a dependency for the hydra package but
 # the later versions of it are not supported by hydra.
@@ -12,7 +12,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://0xbadc0de.be/
-COMMENT=	Working SSH implementation by the mean of a library
+COMMENT=	Library providing working SSH implementation
 
 GNU_CONFIGURE=	YES
 
