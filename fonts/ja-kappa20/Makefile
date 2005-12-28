@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:52 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/05 20:50:14 rillig Exp $
 
 DISTNAME=		Kappa20-0.394
 PKGNAME=		ja-kappa20-0.394
@@ -15,6 +15,7 @@ FONTDIR=		${PREFIX}/lib/X11/fonts/local
 ALIAS_KAPPA=		${PREFIX}/share/examples/fonts.alias.Kappa20
 
 USE_PKGINSTALL=		YES
+USE_TOOLS+=		mkfontdir
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
