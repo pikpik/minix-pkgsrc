@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- src/xml/Makefile.orig	2004-09-22 17:26:24.000000000 +0200
++++ src/xml/Makefile
+@@ -25,8 +25,8 @@ OBJDIR=../../objs
+ OBJ=$(OBJDIR)/xmlparse.o $(OBJDIR)/xml_req.o $(OBJDIR)/xml_tun.o
+ BIN=../bin
+ 
+-CFLAGS=-O2 -g -Wall -I../../include -I../../platform/$(target)
+-CC=gcc
++CFLAGS+=-Wall -I../../include -I../../platform/$(target)
++CC?=gcc
+ 
+ all: $(OBJ) 
+ 
