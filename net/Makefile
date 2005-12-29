@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.592 2005/12/01 17:27:57 adrianp Exp $
+# $NetBSD: Makefile,v 1.593 2005/12/28 15:51:08 ghen Exp $
 #
 
 COMMENT=	Networking tools
@@ -12,6 +12,7 @@ SUBDIR+=	ORBit2
 SUBDIR+=	SDL_net
 SUBDIR+=	adns
 SUBDIR+=	aget
+SUBDIR+=	aiccu
 SUBDIR+=	airport2basestationconfig
 SUBDIR+=	airportbasestationconfig
 SUBDIR+=	airportmodemutility
