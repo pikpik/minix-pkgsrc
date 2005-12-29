@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/11/17 17:02:04 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:51 rillig Exp $
 #
 
 DISTNAME=		pkg_filecheck-0.1
@@ -13,7 +13,6 @@ COMMENT=		Check for files not owned by any package
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run
-USE_PKGINSTALL=	yes
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes

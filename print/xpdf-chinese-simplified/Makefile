@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/07/28 11:06:43 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2004/07/28 11:55:08 wiz Exp $
 #
 
 DISTNAME=	xpdf-chinese-simplified-2004-jul-27
@@ -13,7 +13,6 @@ COMMENT=	Xpdf support files for Chinese (Simplified)
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_PKGINSTALL=	yes
 
 WRKSRC=		${WRKDIR}/xpdf-chinese-simplified
 NO_CONFIGURE=	yes

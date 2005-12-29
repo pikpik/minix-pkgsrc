@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/09/19 16:13:26 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 23:55:04 rillig Exp $
 #
 
 DISTNAME=		nss_ldap-240
@@ -22,7 +22,6 @@ CONFIGURE_ARGS+= --sysconfdir=${PKG_SYSCONFDIR:Q}
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR}
 
-USE_PKGINSTALL=	yes
 CONF_FILES=	${EGDIR}/nss_ldap.conf ${PKG_SYSCONFDIR}/nss_ldap.conf
 
 pre-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/10/07 08:52:14 adam Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/27 09:58:56 dillo Exp $
 
 DISTNAME=	estd-netbsd-r4
 PKGNAME=	estd-0.4
@@ -19,7 +19,6 @@ SUBST_STAGE.prefix=	do-configure
 SUBST_MESSAGE.prefix=	Substituting PREFIX.
 SUBST_FILES.prefix=	*.sh
 SUBST_SED.prefix=	-e 's|@PREFIX@|${PREFIX}|'
-USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		estd
 
 .include "../../mk/bsd.pkg.mk"

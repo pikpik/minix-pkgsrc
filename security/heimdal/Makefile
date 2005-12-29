@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2005/12/05 23:55:17 rillig Exp $
+# $NetBSD: Makefile,v 1.49 2005/12/21 04:17:49 jlam Exp $
 
 DISTNAME=	heimdal-0.7.1
 PKGREVISION=	2
@@ -86,7 +86,6 @@ HEIMDAL_TRANSFORM=	s/^ftp/k&/
 PLIST_SUBST+=		KRB5_PREFIX=${KRB5_PREFIX:Q}
 CONFIGURE_ARGS+=	--program-transform-name=${HEIMDAL_TRANSFORM:Q}
 
-USE_PKGINSTALL=		yes
 OWN_DIRS_PERMS=		${HEIMDAL_STATEDIR} ${ROOT_USER} ${ROOT_GROUP} 0700
 SPECIAL_PERMS=		${PREFIX}/bin/${KRB5_PREFIX}su ${SETUID_ROOT_PERMS}
 RCD_SCRIPTS=		kadmind kcm kdc kpasswdd

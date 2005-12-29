@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:07 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/14 11:25:09 adrianp Exp $
 
 DISTNAME=	jpgraph-1.18
 PKGNAME=	php-${DISTNAME}
@@ -19,7 +19,6 @@ PJDIR=		${PREFIX}/share/php-jpgraph
 PJCONFFILE=	${PKG_SYSCONFDIR}/jpg-config.inc
 CONF_FILES=     ${EXDIR}/jpg-config.inc ${PKG_SYSCONFDIR}/jpg-config.inc
 
-USE_PKGINSTALL=         YES
 PKG_SYSCONFSUBDIR?=     php-jpgraph
 
 MESSAGE_SUBST+=	PJCONFFILE=${PJCONFFILE} PJDIR=${PJDIR} EXDIR=${EXDIR}

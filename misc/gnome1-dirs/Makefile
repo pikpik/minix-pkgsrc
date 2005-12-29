@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/08/20 19:16:21 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/09/28 19:51:27 rillig Exp $
 #
 
 DISTNAME=	gnome1-dirs-1.5
@@ -15,7 +15,6 @@ DEPENDS+=	gnome-dirs>=1.0:../../misc/gnome-dirs
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# empty
-USE_PKGINSTALL=	yes
 USE_X11BASE=	yes
 NO_CHECKSUM=	yes
 NO_EXTRACT=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/16 15:05:45 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:49:48 rillig Exp $
 #
 
 DISTNAME=	juke-0.7
@@ -10,7 +10,6 @@ MAINTAINER=	mob@bicekru.org
 #HOMEPAGE=	http://johan.nocrew.org/nav10/unix/juke/
 COMMENT=	Simple ncurses based jukebox
 
-USE_PKGINSTALL=	YES
 GNU_CONFIGURE=	YES
 
 # halfdelay()

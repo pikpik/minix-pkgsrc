@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:47 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/23 11:48:47 rillig Exp $
 #
 
 DISTNAME=	p4d
@@ -10,7 +10,6 @@ P4BINONLY=	# defined
 
 .include "../../devel/p4/Makefile.common"
 
-USE_PKGINSTALL=	yes
 
 FILES_SUBST+=	P4USER=${P4USER:Q}
 FILES_SUBST+=	P4ROOT=${P4ROOT:Q}

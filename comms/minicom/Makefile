@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/09/26 14:07:25 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2005/12/05 23:55:03 rillig Exp $
 
 DISTNAME=	minicom-2.1
 PKGREVISION=	1
@@ -15,7 +15,6 @@ DEPENDS+=	lrzsz-[0-9]*:../../comms/lrzsz
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/07/29 18:32:18 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/09/20 04:23:49 jlam Exp $
 #
 
 DISTNAME=       zsh-3.0.8
@@ -16,7 +16,6 @@ COMMENT=	The Z shell
 
 GNU_CONFIGURE=	yes
 USE_MAKEINFO=	YES
-USE_PKGINSTALL=	YES
 
 INFO_FILES=	zsh.info
 

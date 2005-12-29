@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:47:04 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/19 14:42:48 jmmv Exp $
 
 DISTNAME=		autoswc-1.5
 CATEGORIES=		pkgtools sysutils
@@ -15,7 +15,6 @@ DEPENDS+=		libtool-base>=1.5.2:../../devel/libtool-base
 NO_CHECKSUM=		YES
 NO_CONFIGURE=		YES
 NO_MTREE=		YES
-USE_PKGINSTALL=		YES
 WRKSRC=			${WRKDIR}
 
 PKG_SYSCONFSUBDIR=	autoswc

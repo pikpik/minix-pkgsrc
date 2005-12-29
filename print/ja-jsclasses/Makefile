@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:24:29 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/03/26 02:27:51 wiz Exp $
 
 DISTNAME=	jsclasses-030624
 PKGNAME=	ja-${DISTNAME}
@@ -14,7 +14,6 @@ COMMENT=	New document class files for pLaTeX
 DEPENDS+=	ja-ptex-bin>=2.1.3:../../print/ja-ptex-bin
 
 WRKSRC=			${WRKDIR}/jsclasses
-USE_PKGINSTALL=		YES
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 

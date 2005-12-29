@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/12/18 20:05:32 dillo Exp $
+# $NetBSD: Makefile,v 1.46 2005/12/20 16:00:16 ghen Exp $
 
 DISTNAME=	xpdf-3.01
 PKGNAME=	${DISTNAME}pl1
@@ -20,7 +20,6 @@ DEPENDS+=	ghostscript-fonts-[0-9]*:../../fonts/ghostscript-fonts
 
 CONFLICTS=	xpdf-crypto-[0-9]*
 
-USE_PKGINSTALL=		yes
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}

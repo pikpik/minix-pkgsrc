@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/08/23 11:48:51 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 23:55:17 rillig Exp $
 #
 
 DISTNAME=		dirmngr-0.9.1
@@ -20,7 +20,6 @@ PKG_USERS=		${DIRMNGR_USER}:${DIRMNGR_GROUP}::pseudo\ user:${VARBASE}/dirmngr:
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gawk
-USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 RCD_SCRIPTS=		dirmngr
 PKG_RCD_SCRIPTS=	yes

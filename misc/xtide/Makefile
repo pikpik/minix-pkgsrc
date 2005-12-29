@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:41 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 23:55:12 rillig Exp $
 
 DISTNAME=	xtide-2.4
 PKGREVISION=	3
@@ -13,7 +13,6 @@ COMMENT=	X11 tide predictor
 EXTRACT_ONLY=	${XTIDE_SRC}
 XTIDE_SRC=	${DISTNAME}${EXTRACT_SUFX}
 
-USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=--sysconfdir=${PKG_SYSCONFDIR:Q}

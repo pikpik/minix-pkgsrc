@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/09/28 20:52:24 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:35 rillig Exp $
 #
 
 DISTNAME=		pymsgauth-2.1.0
@@ -22,7 +22,6 @@ EGDIR=			share/examples/pymsgauth
 NO_BUILD=		yes
 PYTHON_PATCH_SCRIPTS=	${PYMSGAUTH_PROGRAMS} *.py
 
-USE_PKGINSTALL=		yes
 INSTALL_EXTRA_TMPL+=	${PKGDIR}/INSTALL
 DEINSTALL_EXTRA_TMPL+=	${PKGDIR}/DEINSTALL
 FILES_SUBST+=		SHAREDIR=${SHAREDIR:Q}

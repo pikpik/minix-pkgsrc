@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/11 21:47:53 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/09/28 12:23:55 rillig Exp $
 #
 
 DISTNAME=	hiawatha
@@ -21,7 +21,6 @@ NO_BUILD=	yes
 
 WRKSRC=		${WRKDIR}
 USE_JAVA=	run
-USE_PKGINSTALL=	yes
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

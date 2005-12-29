@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/11/04 07:28:47 gendalia Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 23:55:14 rillig Exp $
 
 DISTNAME=	openafs-1.4.0-src
 PKGREVISION=	1
@@ -34,7 +34,6 @@ PKG_OPTIONS_VAR=	PKG_OPTIONS.openafs
 RCD_SCRIPTS+=		bosserver
 .include "../../mk/bsd.options.mk"
 
-USE_PKGINSTALL=		yes
 
 .if !empty(PKG_OPTIONS:Mpam)
 CONFIGURE_ARGS+=	--enable-pam

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/10/22 21:50:58 heinz Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 23:55:13 rillig Exp $
 #
 
 DISTNAME=	GeoIP-1.3.14
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_PKGINSTALL=		yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 

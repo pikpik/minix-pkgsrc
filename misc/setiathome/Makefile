@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/17 03:50:22 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/06/25 15:21:29 abs Exp $
 #
 
 DISTNAME=       ${PKGNAME_NOREV}
@@ -56,7 +56,6 @@ ONLY_FOR_PLATFORM+= Linux-*-i386 Linux-*-x86_64
 DIST_SUBDIR=    setiathome
 DECOMPRESS_CMD=	${CAT}
 NO_BUILD=	yes
-USE_PKGINSTALL=	yes
 
 RCD_SCRIPTS=	setiathome
 

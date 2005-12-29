@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/11/30 17:47:54 adrianp Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:49:53 rillig Exp $
 #
 
 DISTNAME=	ircservices-5.0.56
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.ircservices.esper.net/
 COMMENT=	Services for IRC networks
 
 HAS_CONFIGURE=	YES
-USE_PKGINSTALL=	YES
 USE_TOOLS+=	gmake grep gsed perl
 RCD_SCRIPTS=	ircservices
 PKG_GROUPS=	services

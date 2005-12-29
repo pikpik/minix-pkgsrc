@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/09/21 21:23:46 cube Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 23:55:06 rillig Exp $
 
 DISTNAME=		rt-3.2.3
 PKGREVISION=		2
@@ -79,7 +79,6 @@ DEPENDS+=	p5-WWW-Mechanize>=0.72:../../www/p5-WWW-Mechanize
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 NO_BUILD=		yes
-USE_PKGINSTALL=		yes
 PKG_SYSCONFSUBDIR=	rt3
 
 PKG_GROUPS=		${RT_GROUP}

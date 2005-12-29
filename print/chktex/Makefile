@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/11/08 20:30:29 tonio Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 20:50:52 rillig Exp $
 #
 
 DISTNAME=	chktex-1.6.3
@@ -11,7 +11,6 @@ COMMENT=	LaTeX semantic checker
 
 DEPENDS+=	lynx-[0-9]*:../../www/lynx
 
-USE_PKGINSTALL=yes
 EGDIR=      ${PREFIX}/share/examples/chktex
 CONF_FILES=   ${EGDIR}/chktexrc ${PKG_SYSCONFDIR}/chktexrc
 

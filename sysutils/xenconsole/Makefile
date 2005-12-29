@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/13 18:36:00 martti Exp $
 
 DISTNAME=	xenConsole-r0.15b1-1
 PKGNAME=	xenconsole-0.15b1.1
@@ -31,7 +31,6 @@ SUBST_SED.xenconsole+=		-e "s,@LOCALBASE@,${LOCALBASE},g"
 
 REPLACE_PERL=		xcon.pl xsnmp.pm
 
-USE_PKGINSTALL=		yes
 EGDIR=			${PREFIX}/share/examples/xenconsole
 CONF_FILES=		${EGDIR}/xcon.ini ${PKG_SYSCONFDIR}/xcon.ini
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/10/29 12:02:23 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 23:55:22 rillig Exp $
 
 DISTNAME=	mod_ruby-${VERSION}
 PKGNAME=	ap2-${RUBY_PKGPREFIX}-${VERSION}
@@ -13,7 +13,6 @@ COMMENT=	Embedded Ruby for Apache2 (development version)
 CONFLICTS+=		ap-ruby*
 
 RUBY_HAS_ARCHLIB=	yes
-USE_PKGINSTALL=		yes
 APACHE_MODULE=		yes
 VERSION=		1.2.4
 HAS_CONFIGURE=  	yes

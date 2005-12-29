@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/10/11 12:20:57 tonio Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 20:49:47 rillig Exp $
 
 DISTNAME=		daapd-0.2.3d
 PKGREVISION=		3
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.deleet.de/projekte/daap/daapd/
 COMMENT=		Server for DAA protocol (iTunes)
 
 USE_LANGUAGES=		c c++
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
 MAKEFILE=		makefile
 

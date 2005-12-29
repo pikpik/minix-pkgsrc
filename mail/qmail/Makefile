@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/08/19 04:44:09 schmonz Exp $
+# $NetBSD: Makefile,v 1.39 2005/12/05 20:50:35 rillig Exp $
 #
 
 DISTNAME=		netqmail-1.05
@@ -36,7 +36,6 @@ DJB_BUILD_TARGETS= 	man
 DJB_RESTRICTED=		YES
 NO_PACKAGE=		"needs work to function properly as a binary package"
 
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${PKGDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${PKGDIR}/INSTALL
 MAKE_DIRS+=		${PKG_SYSCONFDIR} ${PKG_SYSCONFDIR}/alias

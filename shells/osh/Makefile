@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/29 18:32:17 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/09/20 04:23:49 jlam Exp $
 
 DISTNAME=	osh-050131
 PKGREVISION=	1
@@ -11,7 +11,6 @@ COMMENT=	Implementation of the UNIX 6th Edition shell
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_PKGINSTALL=		yes
 PKG_SHELL=		bin/osh
 
 TEST_TARGET=	check

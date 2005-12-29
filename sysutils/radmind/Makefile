@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/07/08 20:09:00 kristerw Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/05 20:51:01 rillig Exp $
 #
 
 DISTNAME=	radmind-1.5.0
@@ -19,7 +19,6 @@ USE_TOOLS+=		diff
 
 BUILD_TARGET=	all man rash
 
-USE_PKGINSTALL=	YES
 OWN_DIRS_PERMS+=        ${VARBASE}/radmind \
 			        ${ROOT_USER} ${ROOT_GROUP} 0750
 OWN_DIRS_PERMS+=        ${VARBASE}/radmind/client \

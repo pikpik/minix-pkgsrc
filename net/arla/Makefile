@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2005/12/05 23:55:13 rillig Exp $
+# $NetBSD: Makefile,v 1.48 2005/12/15 21:28:47 wennmach Exp $
 
 DISTNAME=		arla-0.41
 #PKGREVISION=		1
@@ -17,7 +17,6 @@ INFO_FILES=		arla.info send-pr.info
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_PKGINSTALL=		yes
 
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL

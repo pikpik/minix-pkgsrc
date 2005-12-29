@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2005/10/14 10:12:12 adam Exp $
+# $NetBSD: Makefile,v 1.86 2005/12/05 23:55:15 rillig Exp $
 
 DISTNAME=	wget-1.10.2
 CATEGORIES=	net
@@ -11,7 +11,6 @@ COMMENT=	Retrieve files from the 'net via HTTP and FTP
 BUILD_USES_MSGFMT=	YES
 
 USE_TOOLS+=		perl
-USE_PKGINSTALL=		YES
 
 GNU_CONFIGURE=		YES
 USE_OLD_DES_API=	YES

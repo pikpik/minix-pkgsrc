@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/12/05 20:50:47 rillig Exp $
+# $NetBSD: Makefile,v 1.33 2005/12/12 20:34:14 joerg Exp $
 
 DISTNAME=	nsd-2.3.3
 CATEGORIES=	net
@@ -29,7 +29,6 @@ CONFIGURE_ARGS+=--with-dbfile=${VARBASE}/db/nsd.db
 RCD_SCRIPTS=	nsd
 FILES_SUBST+=	NSDDB=${VARBASE}/db/nsd.db
 
-USE_PKGINSTALL=		yes
 PKG_GROUPS?=		nsd
 PKG_USERS?=		nsd:nsd::nsd\ pseudo-user
 

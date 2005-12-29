@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/10/31 17:09:45 tv Exp $
+# $NetBSD: Makefile,v 1.17 2005/11/07 15:46:26 joerg Exp $
 
 DISTNAME=		unixbench-4.1.0
 PKGNAME=		${DISTNAME:S/unix/byte/}
@@ -12,7 +12,6 @@ COMMENT=		BYTE Magazine's Public Domain benchmark for UNIX
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_PKGINSTALL=		yes
 
 BENCHMARK_ENV+=		BINDIR=${WRKSRC}/pgms
 BENCHMARK_ENV+=		SCRPDIR=${WRKSRC}/pgms

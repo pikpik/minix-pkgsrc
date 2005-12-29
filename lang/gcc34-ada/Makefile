@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/12/05 20:50:25 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 23:55:09 rillig Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -16,7 +16,6 @@ BUILD_USES_MSGFMT=	YES
 
 GCC_VERSION=		3.4.4
 
-USE_PKGINSTALL=		YES
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-languages="c,ada"

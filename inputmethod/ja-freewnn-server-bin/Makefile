@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/08/23 11:48:48 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 20:50:23 rillig Exp $
 #
 
 PKGNAME=	ja-FreeWnn-server-bin-1.10
@@ -17,7 +17,6 @@ FILESDIR=	${.CURDIR}/../ja-freewnn-lib/files
 DISTINFO_FILE=	${.CURDIR}/../ja-freewnn-lib/distinfo
 PATCHDIR=	${.CURDIR}/../ja-freewnn-lib/patches
 
-USE_PKGINSTALL=	yes
 
 RCD_SCRIPTS=	ja_freewnn
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2005/07/01 10:16:28 hira Exp $
+# $NetBSD: Makefile,v 1.48 2005/12/05 20:49:55 rillig Exp $
 
 DISTNAME=	mgetty1.1.31-Jul24
 PKGNAME=	mgetty-1.1.31
@@ -17,7 +17,6 @@ CONFLICTS=	hylafax-[0-9]*
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2005/12/05 20:50:58 rillig Exp $
+# $NetBSD: Makefile,v 1.69 2005/12/27 21:32:59 reed Exp $
 #
 
 DISTNAME=	bash-2.05b
@@ -21,7 +21,6 @@ CONFLICTS=	static-bash-[0-9]*
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_GNU_READLINE=	yes
-USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-installed-readline
 MAKE_ENV+=		INSTALL_SCRIPT=${INSTALL_SCRIPT:Q}

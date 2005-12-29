@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2005/12/05 14:13:05 taca Exp $
+# $NetBSD: Makefile,v 1.53 2005/12/05 23:55:11 rillig Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -31,7 +31,6 @@ DB_SUFFIX?=		db
 CONFIGURE_ARGS+=	--enable-spool-dir=${QPOPPER_SPOOL_DIR:Q}
 .endif
 
-USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		qpopper
 MESSAGE_SUBST+=		RCD_SCRIPTS=${RCD_SCRIPTS} \
 			RCD_SCRIPTS_DIR=${RCD_SCRIPTS_DIR}

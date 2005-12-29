@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/11/02 06:26:27 grant Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/10 02:51:35 taca Exp $
 #
 
 DISTNAME=		Zope-3.1.0
@@ -26,7 +26,6 @@ EXTRACT_USING=		gtar
 
 BUILD_TARGET=		build
 
-USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		zope3 zss3
 ZOPE3_GROUP?=		zope3
 ZOPE3_USER?=		zope3

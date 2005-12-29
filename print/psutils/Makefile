@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/07/16 01:19:18 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/12/05 20:50:53 rillig Exp $
 
 DISTNAME=	psutils-p17
 PKGNAME=	psutils-1.17
@@ -14,7 +14,6 @@ DEPENDS+=	papersize-[0-9]*:../../print/papersize
 
 WRKSRC=		${WRKDIR}/psutils
 USE_TOOLS+=	perl:run
-USE_PKGINSTALL=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

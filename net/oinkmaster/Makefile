@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/08/06 06:19:24 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:47 rillig Exp $
 
 DISTNAME=	oinkmaster-1.2
 PKGREVISION=	1
@@ -12,7 +12,6 @@ COMMENT=	Manage snort rule updates
 DEPENDS+=	wget>=1.00:../../net/wget
 DEPENDS+=	snort{,-mysql,-pgsql}-[0-9]*:../../net/snort
 
-USE_PKGINSTALL=	yes
 NO_BUILD=	yes
 
 CONF_FILES=	${PREFIX}/share/examples/oinkmaster/oinkmaster.conf \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/08/10 20:56:20 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2005/12/11 11:20:51 markd Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
 CATEGORIES=	multimedia
@@ -10,7 +10,6 @@ DEPENDS+=	xine-arts>=1rc0a:../../audio/xine-arts
 
 USE_TOOLS+=		pkg-config
 USE_DIRS+=		xdg-1.2
-USE_PKGINSTALL=		YES
 
 REPLACE_PERL=		kscd/workman2cddb.pl
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:36 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 23:55:12 rillig Exp $
 #
 
 DISTNAME=		yatsvrs-5.00p6
@@ -13,7 +13,6 @@ COMMENT=		Extended POP3 server and some supporting servers
 
 CONFLICTS=		ascyd-* yatsvr4-*
 
-USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 DOCS=			IMPORTANT README UPDATE doc/YATCONF doc/YATEXT4
 DOCDIR=			${PREFIX}/share/doc/yatsvr5

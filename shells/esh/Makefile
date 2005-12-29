@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/07/29 18:32:17 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/09/20 04:23:48 jlam Exp $
 
 DISTNAME=		esh-0.8
 PKGREVISION=		1
@@ -11,7 +11,6 @@ COMMENT=		Unix shell with Lisp-like syntax
 INFO_FILES=		esh.info
 
 WRKSRC=			${WRKDIR}/esh
-USE_PKGINSTALL=		yes
 PKG_SHELL=		bin/esh
 INSTALLATION_DIRS=	bin info
 

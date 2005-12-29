@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/05/15 11:53:20 veego Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/19 18:12:37 jlam Exp $
 #
 
 BD_BASENAME=	j2re
@@ -20,7 +20,6 @@ PLIST_SRC=	${PKGDIR}/PLIST
 PLIST_SRC+=	${PKGDIR}/PLIST.i386
 .endif
 
-USE_PKGINSTALL=	yes
 OWN_DIRS=	${JVM_HOME}
 OWN_DIRS+=	${JVM_HOME}/lib
 OWN_DIRS+=	${JVM_HOME}/lib/${BLACKDOWN_ARCH}

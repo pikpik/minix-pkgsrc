@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/11/22 00:01:40 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/05 20:49:49 rillig Exp $
 
 DISTNAME=		mpd-0.11.5
 PKGNAME=		${DISTNAME:S/mpd/musicpd/}
@@ -14,7 +14,6 @@ COMMENT=		Remote controllable audio player
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_PKGINSTALL=		yes
 
 .include "options.mk"
 

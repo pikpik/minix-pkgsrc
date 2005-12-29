@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:46 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 23:55:13 rillig Exp $
 
 DISTNAME=		gofish-1.1
 PKGREVISION=		1
@@ -12,7 +12,6 @@ COMMENT=		Gopher server
 WRKSRC=			${WRKDIR}/gofish
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_PKGINSTALL=		yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q} \
 			--localstatedir=${VARBASE:Q}

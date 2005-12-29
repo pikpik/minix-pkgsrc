@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/07/16 01:19:23 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/09/29 14:13:15 wiz Exp $
 
 DISTNAME=	sarah-0.9.1b
 CATEGORIES=	sysutils
@@ -14,7 +14,6 @@ REPLACE_PERL=	sarah
 NO_BUILD=	YES
 
 INSTALLATION_DIRS=	bin man/man1
-USE_PKGINSTALL=	YES
 CONF_FILES+=	${PREFIX}/share/examples/sarah/sarah.conf.sample \
 			${PKG_SYSCONFDIR}/sarah.conf
 

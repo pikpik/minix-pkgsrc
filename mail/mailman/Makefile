@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/12/05 23:55:11 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2005/12/08 21:09:04 bouyer Exp $
 
 DISTNAME=	mailman-2.1.6
 PKGREVISION=	1
@@ -13,7 +13,6 @@ COMMENT=	The GNU Mailing List Manager
 
 .include "../../mk/bsd.prefs.mk"
 
-USE_PKGINSTALL=		yes
 PKG_SYSCONFSUBDIR?=	httpd
 MESSAGE_SUBST+=		PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
 MESSAGE_SUBST+=		DOCDIR=${DOCDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/08/10 20:56:29 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2005/12/05 23:55:24 rillig Exp $
 
 DISTNAME=	mlterm-2.9.2
 PKGREVISION=	1
@@ -13,7 +13,6 @@ COMMENT=	Multilingual terminal emulator
 NOT_FOR_PLATFORM=	NetBSD-1.[0-4]*-* NetBSD-1.5[A-S]-*
 
 USE_TOOLS+=		pkg-config
-USE_PKGINSTALL=		yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

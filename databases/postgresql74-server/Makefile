@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/12/05 20:50:00 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 23:55:05 rillig Exp $
 
 PKGNAME=		postgresql74-server-${BASE_VERS}
 SVR4_PKGNAME=		pstgs
@@ -11,7 +11,6 @@ NOT_FOR_PLATFORM=	*-*-mips
 
 .include "../../databases/postgresql74/Makefile.common"
 
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 MESSAGE_SRC=		${.CURDIR}/MESSAGE
 USE_TOOLS+=		tar

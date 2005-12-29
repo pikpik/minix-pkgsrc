@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/12/05 20:50:57 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/08 19:14:47 joerg Exp $
 #
 
 DISTNAME=	p0f-2.0.5
@@ -11,7 +11,6 @@ HOMEPAGE=	http://lcamtuf.coredump.cx/p0f.shtml
 COMMENT=	Passive OS fingerprinting tool
 
 WRKSRC=		${WRKDIR}/p0f
-USE_PKGINSTALL=	yes
 
 PKG_SYSCONFSUBDIR=     p0f
 

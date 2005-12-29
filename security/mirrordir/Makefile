@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/07/21 22:27:19 schmonz Exp $
+# $NetBSD: Makefile,v 1.7 2004/10/03 00:18:10 tv Exp $
 #
 
 DISTNAME=	mirrordir-0.10.49
@@ -12,7 +12,6 @@ COMMENT=	Directory mirroring tool
 
 CONFLICTS=	qmail>=1.03nb7 netqmail>=1.05
 
-USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig

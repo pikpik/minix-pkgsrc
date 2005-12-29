@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2005/12/11 11:01:48 markd Exp $
+# $NetBSD: Makefile,v 1.98 2005/12/17 19:36:27 markd Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 PKGREVISION=	1
@@ -17,7 +17,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 UNLIMIT_RESOURCES=	datasize
 USE_DIRS+=		xdg-1.2
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		pkg-config mkfontdir
 
 CONFIGURE_ARGS+=	--with-ssl-dir="${BUILDLINK_PREFIX.openssl}"

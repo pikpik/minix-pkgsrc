@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/09/28 12:11:29 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2005/12/05 20:51:11 rillig Exp $
 #
 
 DISTNAME=	awstats-6.4
@@ -21,7 +21,6 @@ REPLACE_PERL=	tools/*.pl		\
 APACHE_USER?=	www
 APACHE_GROUP?=	www
 
-USE_PKGINSTALL=		YES
 # OWN_DIRS=		${VARBASE}/awstats
 OWN_DIRS_PERMS+= 	${VARBASE}/awstats ${APACHE_USER} ${APACHE_GROUP} 0700
 PKG_SYSCONFSUBDIR=	awstats

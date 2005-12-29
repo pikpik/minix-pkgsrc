@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:23 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 23:55:13 rillig Exp $
 #
 
 DISTNAME=	bmon-2.0.1
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 GNU_CONFIGURE=	yes
 MAKEFILE=	GNUmakefile
 USE_TOOLS+=	gmake
-USE_PKGINSTALL=	YES
 
 # In NetBSD 1.6.x the native curses implementation has problems with bmon.
 # So mark it as incompatible and link bmon against the

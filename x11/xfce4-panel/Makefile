@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/11/09 07:09:05 martti Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 23:55:24 rillig Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -10,7 +10,6 @@ COMMENT=	Xfce panel
 PKGCONFIG_OVERRIDE=	panel/xfce4-panel-1.0.pc.in
 PTHREAD_AUTO_VARS=	yes
 
-USE_PKGINSTALL=		yes
 
 PKG_SYSCONFSUBDIR=	xdg/xfce4/panel
 EGDIR=			${XFCE4_EGBASE}/panel

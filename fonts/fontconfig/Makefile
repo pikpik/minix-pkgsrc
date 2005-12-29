@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/09/05 15:18:42 hira Exp $
+# $NetBSD: Makefile,v 1.46 2005/12/05 23:55:07 rillig Exp $
 #
 
 DISTNAME=	fontconfig-2.3.2
@@ -17,7 +17,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-USE_PKGINSTALL=		YES
 USE_TOOLS+=		gmake
 
 PKGCONFIG_OVERRIDE=	fontconfig.pc.in

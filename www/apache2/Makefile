@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 2005/12/05 23:55:22 rillig Exp $
+# $NetBSD: Makefile,v 1.89 2005/12/15 11:29:00 tron Exp $
 
 .include "Makefile.common"
 
@@ -15,7 +15,6 @@ BUILD_DEFS+=	USE_INET6
 
 USE_TOOLS+=		perl:run
 USE_LIBTOOL=		yes
-USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-layout=NetBSD
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}

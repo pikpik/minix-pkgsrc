@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.18 2005/12/05 20:50:25 rillig Exp $
+# $NetBSD: Makefile.common,v 1.19 2005/12/05 23:55:09 rillig Exp $
 
 GCC_VERSION=	3.3.5
 DISTNAME=	gcc-${GCC_VERSION}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.gnu.org/software/gcc/gcc.html
 
 NOT_FOR_PLATFORM=	Darwin-*-* Interix-*-*
 
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
 MAKEFLAGS+=		GMAKE_LOCALE=no
 HAS_CONFIGURE=		yes

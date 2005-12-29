@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/05 20:50:27 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/08 12:20:02 wiz Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 
@@ -10,7 +10,6 @@ MASTER_SITES=	# empty
 SHORT_NAME=	JRE
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-//:S/_/./:S/_/./:S/-linux-i586//}
-USE_PKGINSTALL=	yes
 JAVA_WRAPPERS=	java javaws keytool orbd policytool rmid rmiregistry \
 		servertool tnameserv
 OWN_DIRS=	${JAVA_HOME}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/08/20 19:16:21 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/11/08 22:31:49 rillig Exp $
 #
 
 .include		"../../games/nethack-lib/Makefile.common"
@@ -13,7 +13,6 @@ CONFIGURE_SCRIPT=	./sys/unix/setup.sh
 BUILD_TARGET=		datastuff
 INSTALL_TARGET=		manpages install-dat
 
-USE_PKGINSTALL=		yes
 
 CONF_FILES_PERMS+=	/dev/null ${PREFIX}/share/${NETHACK_DIR}/record \
 			${ROOT_USER} games 664

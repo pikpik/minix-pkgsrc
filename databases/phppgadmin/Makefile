@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/09/06 06:07:28 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/16 11:41:06 jdolecek Exp $
 
 DISTNAME=	phpPgAdmin-3.5.5
 PKGNAME=	${DISTNAME:S/PgAdmin/pgadmin/}
@@ -17,7 +17,6 @@ MESSAGE_SUBST+=	EGDIR=${EGDIR}
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/-.*//}
 NO_BUILD=	YES
-USE_PKGINSTALL=	YES
 
 PHPPGBASE=	${PREFIX}/share/phppgadmin
 PHPPGHIER=	classes/HTML_TreeMenu/images help images/themes/default \

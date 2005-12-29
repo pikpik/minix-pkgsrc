@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/11 21:16:46 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/18 20:57:26 rillig Exp $
 #
 
 DISTNAME=	lpe-1.2.6
@@ -14,7 +14,6 @@ COMMENT=	Small and efficient programmer's editor for UNIX systems
 BUILD_USES_MSGFMT=	YES
 
 USE_PKGLOCALEDIR=	YES
-USE_PKGINSTALL=		YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES

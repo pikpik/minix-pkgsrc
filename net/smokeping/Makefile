@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/10/28 21:43:18 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 20:50:49 rillig Exp $
 
 DISTNAME=	smokeping-2.0.4
 CATEGORIES=	net
@@ -14,7 +14,6 @@ DEPENDS+=	p5-Digest-MD5>=2.20:../../security/p5-Digest-MD5
 DEPENDS+=	p5-libwww>=5.64:../../www/p5-libwww
 
 USE_TOOLS+=	perl:run
-USE_PKGINSTALL=	YES
 NO_BUILD=	YES
 
 BUILD_DEFS+=	USE_INET6

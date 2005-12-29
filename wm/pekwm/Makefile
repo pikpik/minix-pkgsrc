@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/05 20:51:09 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:21 rillig Exp $
 #
 
 DISTNAME=	pekwm-0.1.3
@@ -13,7 +13,6 @@ COMMENT=	Window manager based on aewm++
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	gmake perl:run
-USE_PKGINSTALL=	YES
 USE_LANGUAGES+=	c++
 
 .include "../../mk/bsd.prefs.mk"

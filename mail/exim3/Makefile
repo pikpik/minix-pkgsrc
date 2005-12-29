@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/08/23 11:48:48 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 20:50:30 rillig Exp $
 
 DISTNAME=	exim-3.36
 PKGREVISION=	4
@@ -13,7 +13,6 @@ COMMENT=	The Exim mail transfer agent, a replacement for sendmail
 
 CONFLICTS+=	exim-exiscan-[0-9]*
 
-USE_PKGINSTALL=	YES
 
 BUILD_DEFS+=		EXIM_USER EXIM_GROUP
 BUILD_DEFS+=		EXIM_DB.mysql EXIM_DB.pgsql

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/09/28 20:52:19 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 23:55:05 rillig Exp $
 
 DISTNAME=	yasql-1.81
 CATEGORIES=	databases
@@ -8,7 +8,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://yasql.sourceforge.net/
 COMMENT=	Yet another SQLPlus replacement for Oracle
 
-USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 NO_BUILD=	yes
 

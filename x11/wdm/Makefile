@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/05 20:51:19 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/05 23:55:24 rillig Exp $
 
 DISTNAME=		wdm-1.25
 PKGREVISION=		6
@@ -12,7 +12,6 @@ COMMENT=		WINGs display manager
 BUILD_USES_MSGFMT=	YES
 
 USE_DIRS+=		xdg-1.1
-USE_PKGINSTALL=		YES
 USE_X11BASE=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

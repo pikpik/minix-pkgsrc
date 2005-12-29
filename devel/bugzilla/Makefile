@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/11/02 11:35:57 adrianp Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:02 rillig Exp $
 #
 
 DISTNAME=	bugzilla-2.20
@@ -26,7 +26,6 @@ DEPENDS+=	p5-MailTools>=1.65:../../mail/p5-MailTools
 .include "options.mk"
 
 NO_BUILD=	YES
-USE_PKGINSTALL=	YES
 
 BZ_WEB_GROUP?=	${APACHE_GROUP}
 SENDMAIL?=	/usr/sbin/sendmail

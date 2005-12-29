@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/23 11:48:50 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/03 23:25:47 peter Exp $
 
 DISTNAME=		openntpd-3.7p1
 CATEGORIES=		net
@@ -15,7 +15,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFLICTS+=		ntp-[0-9]*
 
-USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	sysconfdir=${PKG_SYSCONFDIR:Q}
 

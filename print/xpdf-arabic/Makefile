@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/10/12 11:07:32 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/10/28 11:29:52 wiz Exp $
 #
 
 DISTNAME=	xpdf-arabic-2003-feb-16
@@ -13,7 +13,6 @@ COMMENT=	Xpdf support files for Arabic
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_PKGINSTALL=	yes
 
 WRKSRC=		${WRKDIR}/xpdf-arabic
 NO_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/05 20:50:40 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/05 23:55:12 rillig Exp $
 #
 
 DISTNAME=		pinfo-0.6.1
@@ -14,7 +14,6 @@ BUILD_USES_MSGFMT=	yes
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_PKGINSTALL=		yes
 
 INFO_FILES=	pinfo.info
 

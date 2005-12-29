@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:59 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:48 rillig Exp $
 #
 
 DISTNAME=	pygopherd_2.0.9
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://gopher.quux.org:70/devel/gopher/pygopherd/
 COMMENT=	Gopher server
 
-USE_PKGINSTALL=	yes
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
 

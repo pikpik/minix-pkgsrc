@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/09/17 20:33:11 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:46 rillig Exp $
 #
 
 DISTNAME=	hobbit-4.0-beta6
@@ -15,7 +15,6 @@ DEPENDS+=	fping>2:../../net/fping
 
 HAS_CONFIGURE=	YES
 USE_TOOLS+=	gmake
-USE_PKGINSTALL=YES
 
 .include "../../mk/bsd.prefs.mk"
 

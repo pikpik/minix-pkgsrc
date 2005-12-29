@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.110 2005/07/16 01:19:26 jlam Exp $
+# $NetBSD: Makefile,v 1.111 2005/12/05 20:51:17 rillig Exp $
 
 DISTNAME=		gtk+-1.2.10
 PKGREVISION=		8
@@ -47,7 +47,6 @@ GTK_MINOR_VERSION=	${GTK_VERSION:C/[^.]*\.//:C/\..*//}
 GTK_MICRO_VERSION=	${GTK_VERSION:C/.*\.//}
 
 .if ${PKG_INSTALLATION_TYPE} == "overwrite"
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
 INSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
 .endif

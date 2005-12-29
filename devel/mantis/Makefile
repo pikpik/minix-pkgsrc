@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:05 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/21 06:13:26 adrianp Exp $
 
 DISTNAME=	mantis-1.0.0rc4
 CATEGORIES=	devel www
@@ -11,7 +11,6 @@ COMMENT=	PHP/MySQL/web based bugtracking system
 DEPENDS+=	ap-php>=4.0.6:../../www/ap-php
 DEPENDS+=	php-mysql>=4.0.6:../../databases/php-mysql
 
-USE_PKGINSTALL=	YES
 NO_BUILD=	YES
 
 .include "../../mk/bsd.prefs.mk"

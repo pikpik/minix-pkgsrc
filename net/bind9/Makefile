@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2005/12/05 20:50:44 rillig Exp $
+# $NetBSD: Makefile,v 1.74 2005/12/05 23:55:13 rillig Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 CATEGORIES=	net
@@ -16,7 +16,6 @@ BUILD_DEFS+=	USE_INET6
 # No need to set USE_INET6, will auto-detect.
 
 USE_LIBTOOL=		yes
-USE_PKGINSTALL=		yes
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-libtool=yes \

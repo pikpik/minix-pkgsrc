@@ -1,4 +1,4 @@
-# $NetBSD: alternatives.mk,v 1.3 2005/01/25 16:29:16 jmmv Exp $
+# $NetBSD: alternatives.mk,v 1.4 2005/01/25 16:48:53 jmmv Exp $
 #
 # This Makefile fragment handles the alternatives system, registering a
 # package in the database.
@@ -51,7 +51,6 @@ PKG_ALTERNATIVES=		${PREFIX.pkg_alternatives}/sbin/pkg_alternatives
 
 INSTALL_EXTRA_TMPL+=	${WRKDIR}/.altinstall
 DEINSTALL_EXTRA_TMPL+=	${WRKDIR}/.altdeinstall
-USE_PKGINSTALL=		YES
 
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/08/20 19:16:23 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/10/23 21:43:10 rillig Exp $
 #
 # Interix-only "JDK" for pkgsrc, implemented as a script wrapper around the
 # Win32 Sun JDK/JRE.
@@ -19,7 +19,6 @@ EXTRACT_ONLY=		# empty
 USE_LANGUAGES=		# empty
 NO_CHECKSUM=		yes
 
-USE_PKGINSTALL=		yes
 OWN_DIRS=		${JAVA_HOME}
 
 ONLY_FOR_PLATFORM=	Interix-*-*

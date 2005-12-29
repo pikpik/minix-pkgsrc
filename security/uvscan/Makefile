@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/12/03 20:18:52 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2005/12/12 14:43:26 joerg Exp $
 
 DISTNAME=		vlnx424e
 PKGNAME=		uvscan-4.24.1
@@ -34,7 +34,6 @@ DATDIR=			${PREFIX}/share/uvscan
 UVSCANDIR=		${PREFIX}/libexec/uvscan
 DATFILES=		clean.dat internet.dat names.dat scan.dat pkgdesc.ini
 
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 FILES_SUBST+=		UVSCANDIR=${UVSCANDIR:Q}

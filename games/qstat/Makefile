@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/06/16 06:57:55 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/03 23:19:43 peter Exp $
 
 DISTNAME=	qstat-2.8
 CATEGORIES=	games
@@ -10,7 +10,6 @@ COMMENT=	Program that gathers real-time statistics from game servers
 
 INSTALLATION_DIRS=	bin
 
-USE_PKGINSTALL=	yes
 GNU_CONFIGURE=	yes
 CPPFLAGS+=	-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR:Q}\""
 

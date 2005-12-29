@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/07/21 16:22:04 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:29 rillig Exp $
 
 DISTNAME=	dk-milter-0.3.0
 PKGREVISION=	1
@@ -16,7 +16,6 @@ MAKE_ENV+=		M4=${M4:Q}
 RCD_SCRIPTS=		dk-milter
 USE_BUILTIN.libmilter=	no
 USE_TOOLS+=		gm4
-USE_PKGINSTALL=		YES
 
 SUBST_CLASSES+=		libs
 SUBST_STAGE.libs=	pre-configure

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/11 09:40:43 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/28 04:53:36 reed Exp $
 
 DISTNAME=	rocksndiamonds-3.1.1
 PKGREVISION=	1
@@ -9,7 +9,6 @@ MAINTAINER=	heinz@NetBSD.org
 HOMEPAGE=	http://www.artsoft.org/rocksndiamonds/
 COMMENT=	Game like Boulder Dash, Emerald Mine, or Sokoban (X11 build)
 
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
 
 INSTALLATION_DIRS=	${PKGMANDIR}/man6

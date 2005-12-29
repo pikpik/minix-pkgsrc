@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/11/14 08:58:51 seb Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/27 13:54:59 seb Exp $
 
 DISTNAME=		libkver-${VERSION}
 CATEGORIES=		pkgtools
@@ -11,7 +11,6 @@ COMMENT=	Shared library and sysctl(1) replacement to override system version
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_PKGINSTALL=		YES
 
 NO_PKGTOOLS_REQD_CHECK=	# defined
 NO_CHECKSUM=		yes

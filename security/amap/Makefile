@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/12/11 19:21:36 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/13 20:00:38 joerg Exp $
 #
 
 DISTNAME=       amap-5.0
@@ -11,7 +11,6 @@ HOMEPAGE=       http://www.thc.org/
 COMMENT=        Applications and Services scanner
 
 HAS_CONFIGURE=	YES
-USE_PKGINSTALL=	YES
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 EGDIR=			${PREFIX}/share/examples/amap

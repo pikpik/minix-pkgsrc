@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/07/20 01:54:04 kristerw Exp $
+# $NetBSD: Makefile,v 1.35 2005/12/05 20:49:50 rillig Exp $
 
 DISTNAME=		tracker-5.3
 PKGREVISION=		1
@@ -23,7 +23,6 @@ MAKE_FLAGS+=		MACHINE=${LOWER_OPSYS:Q} INSTALL=${INSTALL:Q} \
 		COMPRESSION_FILE=${PKG_SYSCONFDIR}/compression_methods \
 		COMPRESSION_FILE_EG=${EGDIR}/compression_methods
 
-USE_PKGINSTALL=	yes
 EGDIR=		${PREFIX}/share/examples/tracker
 CONF_FILES=	${EGDIR}/compression_methods ${PKG_SYSCONFDIR}/compression_methods
 

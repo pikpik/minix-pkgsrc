@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:40 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/16 19:10:41 jlam Exp $
 #
 
 DISTNAME=	bannerfilter-1.31
@@ -9,7 +9,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://phroggy.com/bannerfilter/
 COMMENT=	Blocks advertising banners as squid redirector script
 
-USE_PKGINSTALL=	YES
 NO_BUILD=	YES
 USE_TOOLS+=	perl:run
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/07/19 08:29:52 adam Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/05 20:50:09 rillig Exp $
 
 DISTNAME=	joe-3.3
 CATEGORIES=	editors
@@ -8,7 +8,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://joe-editor.sourceforge.net/
 COMMENT=	Joe's own editor
 
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX:Q}/share/examples

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/06/30 15:29:13 adam Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 23:55:19 rillig Exp $
 
 DISTNAME=	gentoo-0.11.55
 CATEGORIES=	sysutils
@@ -10,7 +10,6 @@ COMMENT=	Two-pane filemanager using GTK+, 100% GUI configurable
 
 BUILD_USES_MSGFMT=	yes
 
-USE_PKGINSTALL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}

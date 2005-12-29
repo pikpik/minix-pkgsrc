@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/07/16 01:19:07 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 23:55:02 rillig Exp $
 
 DISTNAME=	dircproxy-1.0.5
 PKGREVISION=	2
@@ -11,7 +11,6 @@ COMMENT=	Detachable internet relay chat proxy server
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		perl:run
-USE_PKGINSTALL=		YES
 
 CONFLICTS=		dircproxy-1.1.[0-9]*
 

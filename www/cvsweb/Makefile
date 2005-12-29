@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/09/28 12:18:22 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2005/12/05 20:51:11 rillig Exp $
 #
 
 DISTNAME=		cvsweb-3.0.5
@@ -20,7 +20,6 @@ DEPENDS+=		rcs-[0-9]*:../../devel/rcs
 
 NO_BUILD=		YES
 USE_TOOLS+=		perl:run
-USE_PKGINSTALL=		YES
 
 REPLACE_PERL=		cvsweb.cgi
 

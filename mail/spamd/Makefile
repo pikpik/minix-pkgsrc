@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/08/23 11:48:49 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:35 rillig Exp $
 
 DISTNAME=		spamd-20050726
 CATEGORIES=		mail
@@ -10,7 +10,6 @@ COMMENT=		OpenBSD spam deferral daemon
 
 ONLY_FOR_PLATFORM=	NetBSD-[2-9]*-*
 
-USE_PKGINSTALL=		yes
 NO_CONFIGURE=		yes
 
 PKG_USERS=		_spamd:_spamd::Spam\ Daemon:${VARBASE}/chroot/spamd:/sbin/nologin

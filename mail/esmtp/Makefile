@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/11/12 17:55:59 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 23:55:10 rillig Exp $
 #
 
 DISTNAME=	esmtp-0.5.1
@@ -12,7 +12,6 @@ HOMEPAGE=	http://esmtp.sourceforge.net/
 COMMENT=	Relay-only Mail Transfer Agent with sendmail-compatible syntax
 
 GNU_CONFIGURE=		yes
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		bison flex
 PTHREAD_OPTS+=		require
 

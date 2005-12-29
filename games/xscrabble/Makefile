@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/23 02:34:26 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.15 2005/10/07 10:20:49 rillig Exp $
 #
 
 DISTNAME=	xscrabble-1.0
@@ -11,7 +11,6 @@ COMMENT=	X version of the popular board game, for 1 to 4 players
 
 WRKSRC=		${WRKDIR}/xscrabble
 USE_IMAKE=	YES
-USE_PKGINSTALL=	YES
 
 INSTALLATION_DIRS=	bin lib/X11/app-defaults
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/12/05 23:55:04 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/27 21:04:23 reed Exp $
 
 DISTNAME=	freetds-0.63
 PKGREVISION=	2
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.freetds.org/
 COMMENT=	LGPL'd implementation of Sybase's db-lib/ct-lib/ODBC libs
 
 USE_LIBTOOL=		yes
-USE_PKGINSTALL=		yes
 USE_TOOLS+=		gmake
 
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/05 20:50:54 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:16 rillig Exp $
 
 DISTNAME=	amavisd-new-${VERSION}${PATCHLEVEL}
 PKGNAME=	amavisd-new-${VERSION}${PATCHLEVEL:S/-//}
@@ -41,7 +41,6 @@ CONFLICTS+=	amavis-perl-[0-9]*
 USE_TOOLS+=		perl:run
 REPLACE_PERL+=		amavisd amavisd-nanny
 
-USE_PKGINSTALL=		yes
 AMAVIS_USER?=		vscan
 AMAVIS_GROUP?=		vscan
 AMAVIS_DIR?=		${VARBASE}/amavis

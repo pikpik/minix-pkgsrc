@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/11/08 16:57:40 tv Exp $
+# $NetBSD: Makefile,v 1.31 2005/12/05 20:50:49 rillig Exp $
 
 DISTNAME=	rp-pppoe-3.5
 PKGREVISION=	2
@@ -14,7 +14,6 @@ NOT_FOR_PLATFORM+=	Interix-*-* # no userland protocol stack support
 
 CONFLICTS+=	mouse_pppoe<20000912nb1
 
-USE_PKGINSTALL=	YES
 USE_TOOLS+=	id
 GNU_CONFIGURE=	YES
 CONFIGURE_DIRS=	src

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/08/24 04:49:31 schmonz Exp $
+# $NetBSD: Makefile,v 1.3 2005/08/30 03:57:11 schmonz Exp $
 #
 
 DISTNAME=		cvm-0.76
@@ -20,7 +20,6 @@ SUBST_FILES.paths=	qmail-init.c
 SUBST_SED.paths=	-e 's|/var/qmail|${QMAILDIR}|g'
 SUBST_MESSAGE.paths=	"Fixing paths."
 
-USE_PKGINSTALL=		YES
 RCD_SCRIPTS=		cvm
 PKG_USERS+=		cvmlog:users::cvmlog
 

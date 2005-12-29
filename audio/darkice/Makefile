@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/22 20:07:37 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/16 06:57:38 jlam Exp $
 #
 
 DISTNAME=	darkice-0.14
@@ -12,7 +12,6 @@ COMMENT=	IceCast, IceCast2 and ShoutCast live audio streamer
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
-USE_PKGINSTALL=		yes
 
 CONFIGURE_ARGS+=	--with-vorbis-prefix=${BUILDLINK_PREFIX.libvorbis}
 CONFIGURE_ARGS+=	--with-lame-prefix=${BUILDLINK_PREFIX.lame}

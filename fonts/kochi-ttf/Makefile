@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/12/28 14:38:03 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/03/07 10:12:29 uebayasi Exp $
 
 DISTNAME=	kochi-substitute-${KOCHI_VERSION}
 PKGNAME=	kochi-ttf-${KOCHI_VERSION}
@@ -14,7 +14,6 @@ COMMENT=	Free Japanese TrueType font by Yasuyuki Furukawa
 KOCHI_VERSION=	20030809
 
 NO_BUILD=	yes
-USE_PKGINSTALL=	yes
 
 FONTS_TTF_DIRS=	${PREFIX}/lib/X11/fonts/TTF
 

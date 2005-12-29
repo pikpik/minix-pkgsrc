@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2005/05/22 20:08:18 jlam Exp $
+# $NetBSD: Makefile,v 1.54 2005/12/05 20:50:40 rillig Exp $
 
 DISTNAME=	rpm-2.5.4
 PKGREVISION=	3
@@ -18,7 +18,6 @@ NOT_FOR_PLATFORM+=	Interix-*-* # getmntent() is nonpublic; needs porting
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 

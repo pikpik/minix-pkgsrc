@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:43 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:23 jlam Exp $
 #
 
 DISTNAME=		vls-0.5.6
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.videolan.org/
 COMMENT=		VideoLAN Server
 
 USE_TOOLS+=		gmake
-USE_PKGINSTALL=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-dvbpsi=${BUILDLINK_PREFIX.libdvbpsi}

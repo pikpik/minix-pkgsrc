@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/08/10 20:56:23 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 20:51:00 rillig Exp $
 .include "../../sysutils/gkrellm/Makefile.common"
 
 GKRELLM_PKGBASE=	gkrellm-server
@@ -6,7 +6,6 @@ COMMENT=		Monitoring daemon remotely accessible by a GKrellM client
 DEPENDS+=		gkrellm-share-${GKRELLM_VERSION}:../../sysutils/gkrellm-share
 
 USE_TOOLS+=		pkg-config
-USE_PKGINSTALL=		YES
 PTHREAD_OPTS+=		require
 RCD_SCRIPTS=		gkrellmd
 CONF_FILES=		${PREFIX}/share/examples/gkrellm-server/gkrellmd.conf ${PREFIX}/etc/gkrellmd.conf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.169 2005/12/01 06:46:40 martti Exp $
+# $NetBSD: Makefile,v 1.170 2005/12/05 20:50:34 rillig Exp $
 
 DISTNAME=	postfix-2.2.6
 #PKGREVISION=	1
@@ -83,7 +83,6 @@ BUILD_TARGET=		# empty
 MAKE_ENV+=		CC=${CC:Q} OPT=${CFLAGS:M*:Q}
 MAKE_ENV+=		AUXLIBS=${AUXLIBS:Q} CCARGS=${CCARGS:Q}
 
-USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		postfix
 OWN_DIRS+=		${POSTFIX_QUEUE_DIR}
 MAKE_DIRS+=		${PKG_SYSCONFDIR}

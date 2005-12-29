@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/12/05 20:50:29 rillig Exp $
+# $NetBSD: Makefile,v 1.43 2005/12/05 23:55:10 rillig Exp $
 
 DISTNAME=	dspam-3.6.2
 CATEGORIES=	mail
@@ -74,7 +74,6 @@ DOCDIR=		${PREFIX}/share/doc/dspam
 DATADIR=	${PREFIX}/share/dspam
 EGDIR=		${PREFIX}/share/examples/dspam
 
-USE_PKGINSTALL=		yes
 RCD_SCRIPTS=		dspam
 
 PKG_SYSCONFSUBDIR=	dspam

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2004/01/20 12:24:29 agc Exp $
+# $NetBSD: Makefile,v 1.13 2004/07/28 11:06:43 wiz Exp $
 #
 
 DISTNAME=	xpdf-cyrillic-2003-jun-28
@@ -13,7 +13,6 @@ COMMENT=	Xpdf support files for Cyrillic
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 
-USE_PKGINSTALL=	yes
 
 WRKSRC=		${WRKDIR}/xpdf-cyrillic
 NO_CONFIGURE=	yes

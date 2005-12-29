@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/07/16 19:10:39 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/08/02 09:55:37 wiz Exp $
 
 DISTNAME=	ddclient-3.6.6
 CATEGORIES=	net
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=		perl:run
 USE_LANGUAGES=		# empty
-USE_PKGINSTALL=		yes
 DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 DOCDIR=			${PREFIX}/share/doc/ddclient

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/13 11:14:41 kleink Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/05 20:51:12 rillig Exp $
 #
 
 DISTNAME=		drraw-2.1.3
@@ -12,7 +12,6 @@ COMMENT=		Simple web based presentation front-end for RRDtool
 
 NO_BUILD=		yes
 USE_TOOLS+=		perl:run
-USE_PKGINSTALL=		yes
 
 REPLACE_PERL=		drraw.cgi
 
