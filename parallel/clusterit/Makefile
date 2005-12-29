@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/06/02 20:48:12 garbled Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 23:55:15 rillig Exp $
 
 DISTNAME=		clusterit-2.3.1
 CATEGORIES=		parallel
-MASTER_SITES=		http://www.garbled.net/download/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clusterit/}
 
 MAINTAINER=		root@garbled.net
-HOMEPAGE=		http://www.garbled.net/clusterit.html
+HOMEPAGE=		http://clusterit.sourceforge.net/
 COMMENT=		Clustering package for unix
 
 HAS_CONFIGURE=		YES
