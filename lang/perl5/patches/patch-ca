@@ -37,6 +37,15 @@ $NetBSD$
  		os2)	osname=os2
  			osvers="$4"
  			;;
+@@ -4426,7 +4428,7 @@ case "$plibpth" in
+ esac
+ case "$libpth" in
+ ' ') dlist='';;
+-'') dlist="$loclibpth $plibpth $glibpth";;
++'') dlist="$plibpth $glibpth $loclibpth";;
+ *) dlist="$libpth";;
+ esac
+ 
 @@ -7856,7 +7858,7 @@ if "$useshrplib"; then
  	solaris)
  		xxx="-R $shrpdir"
