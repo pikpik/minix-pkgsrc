@@ -1,0 +1,10 @@
+@comment $NetBSD$
+man/man1/aiccu.1
+sbin/aiccu
+share/doc/aiccu/HOWTO
+share/doc/aiccu/LICENSE
+share/doc/aiccu/README
+share/examples/aiccu/aiccu.conf
+share/examples/rc.d/aiccu
+@dirrm share/examples/aiccu
+@dirrm share/doc/aiccu
