@@ -1,8 +1,18 @@
 $NetBSD$
 
---- src/files.c.orig	Sun Jun 24 18:57:16 2001
+--- src/files.c.orig	2001-06-24 18:57:16.000000000 +0000
 +++ src/files.c
-@@ -769,7 +769,7 @@
+@@ -12,9 +12,6 @@
+ #endif
+ #if defined(UNIX) || defined(VMS)
+ #include <errno.h>
+-# ifndef SKIP_ERRNO
+-extern int errno;
+-# endif
+ #include <signal.h>
+ #endif
+ 
+@@ -769,7 +766,7 @@ boolean uncomp;
  	}
  	(void) signal(SIGINT, SIG_IGN);
  	(void) signal(SIGQUIT, SIG_IGN);
