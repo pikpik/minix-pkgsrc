@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/05/31 08:28:34 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/05 20:50:23 rillig Exp $
 #
 .include "../../inputmethod/canna/Makefile.common"
 
@@ -26,5 +26,15 @@ do-configure:
 
 post-configure:
 	@${LN} -s ${WRKSRC}/server/*.h ${WRKSRC}/include
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "DragonFly"
+post-install:
+.for f in RKC RKC16 canna canna16
+	${LN} -s lib${f}.so.1.1 ${PREFIX}/lib/lib${f}.so.1
+	${LN} -s lib${f}.so.1 ${PREFIX}/lib/lib${f}.so
+.endfor
+.endif
 
 .include "../../inputmethod/canna/Makefile.include"
