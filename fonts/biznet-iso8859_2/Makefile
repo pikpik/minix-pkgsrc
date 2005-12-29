@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/05/15 22:02:26 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/15 18:27:49 jlam Exp $
 #
 
 DISTNAME=	ISO8859-2-pcf
@@ -18,7 +18,7 @@ USE_TOOLS+=	gzip
 
 FONTDIR=	${PREFIX}/lib/X11/fonts/biznet
 OWN_DIRS=	${FONTDIR}
-FONTS_X11_DIRS=	${FONTDIR}/75dpi ${FONTDIR}/100dpi ${FONTDIR}/misc
+FONTS_DIRS.x11=	${FONTDIR}/75dpi ${FONTDIR}/100dpi ${FONTDIR}/misc
 
 do-install:
 	@for d in 75dpi 100dpi misc; do \
@@ -31,5 +31,4 @@ do-install:
 		done; \
 	done
 
-.include "../../mk/fonts.mk"
 .include "../../mk/bsd.pkg.mk"
