@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/11/08 18:22:09 jlam Exp $
 
 DISTNAME=		elisat10
 PKGNAME=		ja-elisat-1.0
@@ -13,8 +13,8 @@ WRKSRC=			${WRKDIR}
 USE_X11BASE=		YES
 DOCDIR=			${PREFIX}/share/doc/elisat
 FONTDIR=		${PREFIX}/lib/X11/fonts/local
-#ALIAS=			${WRKDIR}/fonts.alias
-USE_TOOLS+=		gzip mkfontdir:run
+FONTS_DIRS.x11=		${FONTDIR}
+USE_TOOLS+=		bdftopcf gzip
 
 LICENSE=		no-commercial-use
 
@@ -31,13 +31,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/*.doc ${WRKSRC}/*.html ${DOCDIR}; \
 	${INSTALL_DATA_DIR} ${FONTDIR}; \
 	${INSTALL_DATA} ${WRKSRC}/*.pcf.gz ${FONTDIR}
-
-post-install:
-	cd ${FONTDIR}; \
-	mkfontdir
-
-post-deinstall:
-	cd ${FONTDIR}; \
-	mkfontdir
 
 .include "../../mk/bsd.pkg.mk"
