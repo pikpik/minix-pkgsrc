@@ -1,6 +1,6 @@
 $NetBSD$
 
---- install.rb.orig	2005-04-02 16:29:08.000000000 +0900
+--- install.rb.orig	2005-04-02 07:29:08.000000000 +0000
 +++ install.rb
 @@ -22,9 +22,9 @@ end
  Dir.chdir("lib")
@@ -14,3 +14,4 @@ $NetBSD$
      File::makedirs(File.join($sitedir, *f.split(/\//)))
    end
  }
+\ No newline at end of file
