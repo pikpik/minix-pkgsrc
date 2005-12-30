@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: postfix.sh,v 1.3 2004/07/19 04:51:07 jlam Exp $
+# $NetBSD: postfix.sh,v 1.4 2004/07/19 22:02:15 jlam Exp $
 #
 
 # PROVIDE: mail
@@ -30,6 +30,7 @@ postfix_precmd()
 	# is used).
 	#
 
+	[ ! -d ${spooletcdir} ] && mkdir -p ${spooletcdir}
 	for f in localtime resolv.conf services; do
 		if [ -f /etc/$f ]; then
 			cmp -s /etc/$f ${spooletcdir}/$f || \
