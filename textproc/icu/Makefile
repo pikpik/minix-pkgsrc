@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2005/12/05 23:55:20 rillig Exp $
+# $NetBSD: Makefile,v 1.45 2005/12/29 06:22:19 jlam Exp $
 #
 
 DISTNAME=	icu-3.2
@@ -37,7 +37,7 @@ CONFIGURE_ARGS+=	--disable-threads
 
 .include "../../mk/compiler.mk"
 
-.if ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD"
+.if ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD" || ${OPSYS} == "DragonFly"
 PLIST_SUBST+=		MH_NAME=mh-bsd-gcc
 .elif ${OPSYS} == "Linux"
 PLIST_SUBST+=		MH_NAME=mh-linux
