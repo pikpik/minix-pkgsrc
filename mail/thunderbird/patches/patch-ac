@@ -1,8 +1,13 @@
-$NetBSD: patch-ac,v 1.24 2004/07/07 09:08:31 aymeric Exp $
+$NetBSD$
 
---- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	2004-04-22 22:50:05.000000000 +0200
+--- xpcom/reflect/xptcall/src/md/unix/Makefile.in.orig	2005-04-28 16:01:33.000000000 +0000
 +++ xpcom/reflect/xptcall/src/md/unix/Makefile.in
-@@ -49,6 +49,9 @@ ifneq (,$(filter FreeBSD NetBSD OpenBSD 
+@@ -45,10 +45,13 @@ include $(topsrcdir)/config/config.mk
+ #
+ # Lots of Unixish x86 flavors
+ #
+-ifneq (,$(filter FreeBSD NetBSD OpenBSD BSD_OS Darwin,$(OS_ARCH)))
++ifneq (,$(filter FreeBSD NetBSD OpenBSD BSD_OS Darwin DragonFly,$(OS_ARCH)))
  ifeq (86,$(findstring 86,$(OS_TEST)))
  CPPSRCS		:= xptcinvoke_unixish_x86.cpp xptcstubs_unixish_x86.cpp
  endif
