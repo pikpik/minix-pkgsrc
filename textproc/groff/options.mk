@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/12/09 20:40:56 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.groff
 PKG_SUPPORTED_OPTIONS=	x11
@@ -12,6 +12,10 @@ CONFIGURE_ARGS+=	--with-appresdir=${PREFIX}/lib/X11/app-defaults
 PLIST_SRC=		PLIST.x11 PLIST
 .include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Interix"
+CONFIGURE_ENV+=         X_EXTRA_LIBS=-lXext
+.endif
 .else
 CONFIGURE_ARGS+=	--without-x
 .endif
