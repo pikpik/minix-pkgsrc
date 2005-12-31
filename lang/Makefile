@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.224 2005/11/24 19:34:43 jdolecek Exp $
+# $NetBSD: Makefile,v 1.225 2005/12/22 22:10:36 joerg Exp $
 #
 
 COMMENT=	Programming languages
@@ -25,8 +25,6 @@ SUBDIR+=	clisp
 SUBDIR+=	coq
 SUBDIR+=	cu-prolog
 SUBDIR+=	drscheme
-SUBDIR+=	dylan-compiler
-SUBDIR+=	dylan-interpreter
 SUBDIR+=	eag
 SUBDIR+=	eieio
 SUBDIR+=	elisp-manual
@@ -56,6 +54,7 @@ SUBDIR+=	gpc
 SUBDIR+=	gprolog
 SUBDIR+=	guile
 SUBDIR+=	guile14
+SUBDIR+=	gwydion-dylan
 SUBDIR+=	hugs
 SUBDIR+=	icon
 SUBDIR+=	inform
