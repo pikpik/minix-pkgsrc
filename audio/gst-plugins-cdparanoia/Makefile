@@ -1,10 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/07/04 15:57:28 jmmv Exp $
 #
 
 GST_PLUGINS_NAME=	cdparanoia
 GST_PLUGINS_DIR=	ext/cdparanoia
 
 .include "../../multimedia/gst-plugins/Makefile.common"
+PKGREVISION=		1
 
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.cdparanoia}/include/cdparanoia
 

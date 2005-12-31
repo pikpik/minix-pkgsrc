@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/04/16 13:27:32 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/06/20 20:25:30 agc Exp $
 #
 
 GST_PLUGINS_NAME=	artsd
 GST_PLUGINS_DIR=	ext/artsd
 
 .include "../../multimedia/gst-plugins/Makefile.common"
+PKGREVISION=		1
 
 .include "../../audio/libid3tag/buildlink3.mk"
 .include "../../audio/arts/buildlink3.mk"

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/29 12:58:26 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/05/19 09:24:44 wiz Exp $
 
 .include "../../devel/glade2/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/glade/glade2-gnome/}
+PKGREVISION=	1
 CATEGORIES+=	gnome
 
 COMMENT+=	and GNOME2

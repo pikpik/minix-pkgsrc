@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2005/08/10 20:56:17 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2005/08/18 19:35:20 veego Exp $
 #
 
 DISTNAME=	gnocatan-0.8.1.16
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pio/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2005/07/21 16:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/08/10 20:56:17 jlam Exp $
 #
 
 DISTNAME=	sirius-0.8.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games gnome
 MASTER_SITES=	http://sirius.bitvis.nu/files/
 

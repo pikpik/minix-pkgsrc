@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2005/11/24 20:17:48 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/11/24 20:18:38 wiz Exp $
 
 DISTNAME=	koffice-i18n-es-1.3.5
+PKGREVISION=	1
 CATEGORIES=	misc kde
 MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/koffice-1.3.5/src/
 EXTRACT_SUFX=	.tar.bz2

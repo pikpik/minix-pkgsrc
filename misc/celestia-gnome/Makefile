@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2005/12/26 23:39:32 schmonz Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/28 17:13:11 garbled Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gnome-/}
-PKGREVISION=	2
+PKGREVISION=	3
 
 COMMENT=	GNOME frontend for free real-time 3D space simulator
 

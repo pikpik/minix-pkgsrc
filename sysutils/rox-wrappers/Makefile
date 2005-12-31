@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/17 03:50:35 jlam Exp $
 #
 
 DISTNAME=	Wrappers-1.0.2
 PKGNAME=	rox-wrappers-1.0.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz
