@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/10/07 22:52:21 wulf Exp $
+# $NetBSD: Makefile,v 1.29 2005/11/03 01:57:15 tv Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -13,6 +13,7 @@ SUBDIR+=	gnuradio
 SUBDIR+=	gnustep
 SUBDIR+=	gtk2-extras
 SUBDIR+=	kde3
+SUBDIR+=	matchbox
 SUBDIR+=	netbsd-doc
 SUBDIR+=	netbsd-doc-print
 SUBDIR+=	netbsd-www
