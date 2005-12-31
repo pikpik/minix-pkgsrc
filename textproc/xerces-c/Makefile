@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/05/22 20:08:36 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/10/23 23:35:17 rillig Exp $
 #
 
 DISTNAME=	xerces-c-src_2_3_0
@@ -49,6 +49,10 @@ MAKE_ENV+=		${XERCES_ENV}
 PLIST_SUBST+=		${PLIST_SUBST.${ICONV_TYPE}-iconv}
 
 .include "../../converters/libiconv/buildlink3.mk"
+
+pre-configure:
+	@${CP} ${PKGSRCDIR}/mk/gnu-config/config.guess ${WRKSRC}
+	@${CP} ${PKGSRCDIR}/mk/gnu-config/config.sub ${WRKSRC}
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/dom/impl/*.hpp \
