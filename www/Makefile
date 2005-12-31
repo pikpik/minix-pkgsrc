@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.423 2005/12/17 19:28:38 markd Exp $
+# $NetBSD: Makefile,v 1.424 2005/12/28 15:47:53 ghen Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -181,7 +181,6 @@ SUBDIR+=	p5-Apache-SSI
 SUBDIR+=	p5-Apache-Session
 SUBDIR+=	p5-Apache-Session-Wrapper
 SUBDIR+=	p5-Apache-Test
-SUBDIR+=	p5-Apache-ePerl
 SUBDIR+=	p5-CGI
 SUBDIR+=	p5-CGI-Application
 SUBDIR+=	p5-CGI-FastTemplate
