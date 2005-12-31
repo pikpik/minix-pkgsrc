@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2005/10/08 17:15:48 jmmv Exp $
+# $NetBSD: Makefile,v 1.34 2005/12/29 06:21:36 jlam Exp $
 #
 
 .include "../../devel/GConf2/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/GConf/GConf2/}
-PKGREVISION=	1
 
 
 CONFIGURE_ARGS+=	--disable-gtk

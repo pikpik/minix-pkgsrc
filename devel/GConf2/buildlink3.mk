@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2004/04/01 18:17:29 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2004/09/21 16:44:50 jmmv Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GCONF2_BUILDLINK3_MK:=	${GCONF2_BUILDLINK3_MK}+
@@ -26,6 +26,7 @@ BUILDLINK_PKGSRCDIR.GConf2?=	../../devel/GConf2
 BUILDLINK_TARGETS+=	GConf2-buildlink-fake
 _GCONF2_FAKE=		${BUILDLINK_DIR}/bin/gconftool-2
 
+.PHONY: GConf2-buildlink-fake
 GConf2-buildlink-fake:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	if [ ! -f ${_GCONF2_FAKE} ]; then				\
