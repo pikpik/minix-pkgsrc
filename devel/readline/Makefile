@@ -1,9 +1,13 @@
-# $NetBSD: Makefile,v 1.34 2004/12/03 15:14:55 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2005/04/11 21:45:38 tv Exp $
 #
 
-DISTNAME=	readline-5.0
+DISTNAME=	readline-5.1
+PKGNAME=	readline-5.1pl1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=readline/}
+
+PATCH_SITES=	${MASTER_SITE_GNU:=readline/readline-5.1-patches/}
+PATCHFILES=	readline51-001
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
