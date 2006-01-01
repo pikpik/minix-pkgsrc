@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2005/05/31 10:01:40 dillo Exp $
+# $NetBSD: options.mk,v 1.5 2005/12/02 17:51:50 wiz Exp $
 
 _COMMONCARDDRIVERS=	xorg-server-apm xorg-server-ark xorg-server-ati \
 			xorg-server-chips xorg-server-cirrus \
@@ -35,11 +35,6 @@ _OSCARDDRIVERS+=	${_LINUXCARDDRIVERS}
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xorg-server
 PKG_SUPPORTED_OPTIONS=	${_COMMONCARDDRIVERS} ${_OSCARDDRIVERS}
 PKG_SUGGESTED_OPTIONS=	${PKG_SUPPORTED_OPTIONS}
-
-# remove legacy handling after 2005Q4
-.for _drv in ${_ALLCARDDRIVERS}
-PKG_OPTIONS_LEGACY_OPTS+=	${_drv:S/xorg-server-//}:${_drv}
-.endfor
 
 .include "../../mk/bsd.options.mk"
 
