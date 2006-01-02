@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:45:11 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/08/14 18:00:15 minskim Exp $
 
 DISTNAME=	dbxml-1.2.1
 PKGNAME=	${DISTNAME:S/db/bdb-/}
@@ -15,6 +15,9 @@ CONFLITCS=	dbxml<=1.2.1
 WRKSRC=			${WRKDIR}/${DISTNAME}/build_unix
 GNU_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	../dist/configure
+CONFIG_GUESS_OVERRIDE=	../dist/config.guess
+CONFIG_SUB_OVERRIDE=	../dist/config.sub
+CONFIG_STATUS_OVERRIDE=	../dist/config.status
 USE_LIBTOOL=		YES
 
 CONFIGURE_ARGS+=	--with-berkeleydb=${BUILDLINK_PREFIX.db4}
