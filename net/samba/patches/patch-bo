@@ -1,8 +1,8 @@
 $NetBSD$
 
---- nmbd/nmbd.c.orig	2005-10-12 13:03:37.000000000 -0400
+--- nmbd/nmbd.c.orig	2005-11-09 13:29:00.000000000 -0500
 +++ nmbd/nmbd.c
-@@ -763,6 +763,10 @@ static BOOL open_sockets(BOOL isdaemon, 
+@@ -770,6 +770,10 @@ static BOOL open_sockets(BOOL isdaemon, 
  		mkdir(lp_lockdir(), 0755);
  	}
  
