@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:46 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:00 rillig Exp $
 #
 
 DISTNAME=	pgnotify-0.1
 PKGNAME=	${PYPKGPREFIX}-pgnotify-0.1
+PKGREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	http://sandbox.rulemaker.net/ngps/Dist/
 EXTRACT_SUFX=	.zip
