@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2005/08/06 06:19:06 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/11/24 18:54:21 wiz Exp $
 #
 
-DISTNAME=	DBIx-SearchBuilder-1.35
+DISTNAME=	DBIx-SearchBuilder-1.38
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5dxs
 CATEGORIES=	databases perl5
@@ -12,7 +12,7 @@ HOMEPAGE=	http://search.cpan.org/dist/DBIx-SearchBuilder/
 COMMENT=	Extension for easy SQL SELECT Statement generation
 
 BUILD_DEPENDS+=	p5-DBD-SQLite-[0-9]*:../../databases/p5-DBD-SQLite
-DEPENDS+=	p5-capitalization>=0.03:../../devel/p5-capitalization
+DEPENDS+=	p5-capitalization>=0.03nb1:../../devel/p5-capitalization
 DEPENDS+=	p5-Class-Accessor-[0-9]*:../../devel/p5-Class-Accessor
 DEPENDS+=	p5-Class-ReturnValue>=0.40:../../devel/p5-Class-ReturnValue
 DEPENDS+=	p5-Clone-[0-9]*:../../devel/p5-Clone
