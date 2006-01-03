@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2005/12/17 05:20:22 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2005/12/29 06:21:47 jlam Exp $
 
 DISTNAME=	courier-imap-4.0.6
 CATEGORIES=	mail
@@ -15,8 +15,10 @@ USE_TOOLS+=		env gmake perl
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 
+PKG_SUPPORTED_OPTIONS+=	fam
+
 # PKGNAME is a parameter to the following file
-PKGNAME=	${DISTNAME}
+PKGNAME=		${DISTNAME}
 .include "../../mail/courier-maildir/Makefile.common"
 
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/courier
