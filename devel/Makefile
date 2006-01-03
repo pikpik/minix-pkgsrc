@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.702 2005/12/28 13:08:02 ghen Exp $
+# $NetBSD: Makefile,v 1.703 2005/12/29 15:49:38 cube Exp $
 #
 
 COMMENT=	Development utilities
@@ -568,9 +568,7 @@ SUBDIR+=	ruby-activesupport
 SUBDIR+=	ruby-amstd
 SUBDIR+=	ruby-bsearch
 SUBDIR+=	ruby-byaccr
-SUBDIR+=	ruby-cmd
 SUBDIR+=	ruby-curses
-SUBDIR+=	ruby-filelock
 SUBDIR+=	ruby-mode
 SUBDIR+=	ruby-racc
 SUBDIR+=	ruby-rd-mode
