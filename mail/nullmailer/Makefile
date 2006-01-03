@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:11 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/29 06:21:52 jlam Exp $
 
-DISTNAME=		nullmailer-1.00
+DISTNAME=		nullmailer-1.01
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
