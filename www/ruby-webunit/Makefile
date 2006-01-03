@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/10/29 12:02:23 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2005/11/03 07:22:24 taca Exp $
 
 DISTNAME=	webunit-${VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.xpenguin.biz/download/webunit/index-en.html
 COMMENT=	HTTP unit testing framework for Ruby
 
-USE_RUBY_DIST_SUBDIR=	yes
 USE_RUBY_SETUP=	yes
 RUBY_SETUP=	install.rb
 WRKSRC=		${WRKDIR}/webunit
