@@ -1,4 +1,0 @@
-@comment $NetBSD$
-${RUBY_SITELIBDIR}/cmd.rb
-${RUBY_DOCDIR}/cmd/README
-@dirrm ${RUBY_DOCDIR}/cmd
