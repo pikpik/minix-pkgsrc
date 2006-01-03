@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2005/11/02 09:48:33 taca Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 23:55:09 rillig Exp $
 
 DISTNAME=	ruby-GD-${VER}-1
 PKGNAME=	${RUBY_PKGPREFIX}-gd-${VER}.1
 PKGREVISION=	3
 CATEGORIES=	graphics ruby
-MASTER_SITES=	http://tam.0xfa.com/ruby-gd/
+MASTER_SITES=	http://raa.ruby-lang.org/cache/ruby-gd/ \
+		http://tam.0xfa.com/ruby-gd/
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	# not available
