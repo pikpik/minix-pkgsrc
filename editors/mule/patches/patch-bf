@@ -1,6 +1,6 @@
-$NetBSD: patch-bf,v 1.1 2004/02/16 23:41:26 seb Exp $
+$NetBSD$
 
---- src/emacs.c.orig	1995-06-08 07:58:13.000000000 +0200
+--- src/emacs.c.orig	1995-06-08 05:58:13.000000000 +0000
 +++ src/emacs.c
 @@ -410,6 +410,8 @@ __main ()
  NXZone *emacszone;
@@ -11,10 +11,11 @@ $NetBSD: patch-bf,v 1.1 2004/02/16 23:41:26 seb Exp $
  /* ARGSUSED */
  main (argc, argv, envp)
       int argc;
-@@ -419,7 +421,9 @@ main (argc, argv, envp)
+@@ -418,8 +420,9 @@ main (argc, argv, envp)
+ {
    char stack_bottom_variable;
    int skip_args = 0;
-   extern int errno;
+-  extern int errno;
 +#if !(defined(BSD) && BSD >= 199306)
    extern sys_nerr;
 +#endif
