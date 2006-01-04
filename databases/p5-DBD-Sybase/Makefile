@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2005/08/06 06:19:06 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 20:49:58 rillig Exp $
 #
 
 DISTNAME=		DBD-Sybase-0.94
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		6
+PKGREVISION=		7
 SVR4_PKGNAME=		p5dsy
 CATEGORIES=		databases perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=DBD/}
@@ -25,7 +25,7 @@ _SYBASE=		${SYBASE}
 PKG_FAIL_REASON+=	"You must define SYBASE to the base directory of your Open Client."
 .  endif
 .else
-_SYBASE=		${BUILDLINK_PREFIX.freetds}/freetds
+_SYBASE=		${BUILDLINK_PREFIX.freetds}
 .endif
 
 PERL5_LDFLAGS+=		${COMPILER_RPATH_FLAG}${_SYBASE}/lib
