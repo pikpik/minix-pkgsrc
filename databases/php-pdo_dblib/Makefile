@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/12/03 17:24:28 jdolecek Exp $
+# $NetBSD: Makefile,v 1.3 2006/01/04 17:59:14 reed Exp $
 
 PDO_DRIVER=		dblib
 PDO_COMMENT=		FreeTDS/Sybase/MS SQL
 PDO_VERSION=		1.0
+PKGREVISION=		1
 
 .include "../../databases/php-pdo/module.mk"
 
