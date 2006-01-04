@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2004/03/29 12:51:54 grant Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/01 18:02:42 jlam Exp $
 
 PKGNAME=		sqsh-x11-2.1
+PKGREVISION=		1
 COMMENT=		SQL shell for Sybase and MS-SQL servers (X11 support)
 
 CONFLICTS+=		sqsh-[0-9]*
