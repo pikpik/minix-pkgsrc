@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/01/04 04:29:05 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2006/01/05 10:08:58 ghen Exp $
 
 DISTNAME=	madman-0.93
 PKGREVISION=	2
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=madman/}
 MAINTAINER=	ove@elektro-eel.org
 HOMEPAGE=	http://madman.sourceforge.net/
 COMMENT=	Powerful audio manager for large collections
-
-BROKEN_IN=	pkgsrc-2005Q4
 
 BUILD_DEPENDS+=		scons>=0.96:../../devel/scons
 
