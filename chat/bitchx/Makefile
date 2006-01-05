@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/11/06 17:40:47 adrianp Exp $
+# $NetBSD: Makefile,v 1.38 2005/12/29 06:21:32 jlam Exp $
 
 DISTNAME=	ircii-pana-1.1-final
 PKGNAME=	bitchx-1.1
@@ -25,10 +25,10 @@ CONFIGURE_ARGS+=	--with-ssl
 CFLAGS+=	-DBIND_8_COMPAT
 .endif
 
-post-patch:
-	@${MV} ${WRKSRC}/doc/BitchX.1 ${WRKSRC}/doc/BitchX.1.orig
-	@${SED} ${FILES_SUBST_SED} \
-		${WRKSRC}/doc/BitchX.1.orig > ${WRKSRC}/doc/BitchX.1
+SUBST_CLASSES+=		manpage
+SUBST_FILES.manpage+=	doc/BitchX.1
+SUBST_SED.manpage+=	-e 's,@PREFIX@,${PREFIX},g'
+SUBST_STAGE.manpage+=	post-patch
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
