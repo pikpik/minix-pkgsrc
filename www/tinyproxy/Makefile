@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/12/02 17:06:03 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/29 06:22:24 jlam Exp $
 #
 
 DISTNAME=	tinyproxy-1.6.2
@@ -34,12 +34,12 @@ EGDIR=		${PREFIX}/share/examples/tinyproxy
 
 CONF_FILES=	${EGDIR}/tinyproxy.conf.default ${PKG_SYSCONFDIR}/tinyproxy.conf
 
-post-patch:
-	@cd ${WRKSRC}/doc && \
-	for f in tinyproxy.8 tinyproxy.conf; do \
-		${MV} $${f} $${f}.orig; \
-		${SED} ${FILES_SUBST_SED} $${f}.orig > $${f}; \
-	done
+SUBST_CLASSES+=		docs
+SUBST_FILES.docs=	doc/tinyproxy.8 doc/tinyproxy.conf
+SUBST_SED.docs+=	-e 's,@TINYPROXY_USER@,${TINYPROXY_USER},g'
+SUBST_SED.docs+=	-e 's,@TINYPROXY_GROUP@,${TINYPROXY_GROUP},g'
+SUBST_SED.docs+=	-e 's,@PKG_SYSCONFDIR@,${PKG_SYSCONFDIR},g'
+SUBST_STAGE.docs=	post-patch
 
 post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
