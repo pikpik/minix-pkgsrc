@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 17:11:14 martti Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/03 15:15:06 wiz Exp $
 #
 
 DISTNAME=		sdist-1.6
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 
