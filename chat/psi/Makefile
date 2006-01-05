@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/12/26 23:39:30 schmonz Exp $
+# $NetBSD: Makefile,v 1.30 2005/12/31 10:12:58 rillig Exp $
 
 PSI_VERSION=	0.9.3
 DISTNAME=	psi-${PSI_VERSION}
@@ -70,7 +70,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/psi ${PREFIX}/bin/psi
 
 .include "../../x11/qt3-libs/buildlink3.mk"
-BUILDLINK_DEPMETHOD.qt3-tools=	build
 .include "../../x11/qt3-tools/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/qca/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/09/28 14:31:08 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/01 22:57:06 rillig Exp $
 
 DISTNAME=	qca-tls-1.0
 CATEGORIES=	security
@@ -31,6 +31,5 @@ do-install:
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
-BUILDLINK_DEPMETHOD.qt3-tools=	build
 .include "../../x11/qt3-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

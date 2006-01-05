@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/10/18 18:00:44 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2005/12/05 23:55:16 rillig Exp $
 
 DISTNAME=	scribus-1.2.3
 PKGREVISION=	1
@@ -32,7 +32,6 @@ CONFIGURE_ENV+=		ac_cv_prog_hacups=no
 .include "../../graphics/libart2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
-BUILDLINK_DEPMETHOD.qt3-tools=	build
 .include "../../x11/qt3-tools/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../lang/python/application.mk"

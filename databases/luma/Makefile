@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/09/08 18:29:56 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2005/10/29 01:44:35 kristerw Exp $
 #
 
 DISTNAME=		luma-2.2.1
@@ -27,4 +27,8 @@ do-install:
 .include "../../databases/py-ldap/buildlink3.mk"
 .include "../../x11/py-qt3-base/buildlink3.mk"
 .include "../../x11/py-qt3-modules/buildlink3.mk"
+# XXX Please verify whether qt3-tools is really needed at run-time.
+# If it is, then remove this comment.  If it is not, then remove
+# this comment and the line below, and bump PKGREVISION.
+BUILDLINK_DEPMETHOD.qt3-tools=	full
 .include "../../mk/bsd.pkg.mk"

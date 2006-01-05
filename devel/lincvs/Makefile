@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/12/28 13:07:14 ghen Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/31 09:08:22 ghen Exp $
 
 DISTNAME=		lincvs-1.4.4-0-generic-src
 PKGNAME=		${DISTNAME:S/-0-generic-src//}
@@ -41,5 +41,4 @@ do-install:
 
 .include "../../x11/qt3-libs/buildlink3.mk"
 .include "../../x11/qt3-tools/buildlink3.mk"
-BUILDLINK_DEPMETHOD.qt3-tools=	build
 .include "../../mk/bsd.pkg.mk"
