@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1782 2006/01/03 17:26:56 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1783 2006/01/04 04:25:47 schmonz Exp $
 #
 # This file is in the public domain.
 #
@@ -391,7 +391,8 @@ _BUILD_COOKIE=		${WRKDIR}/.build_done
 _TEST_COOKIE=		${WRKDIR}/.test_done
 _INSTALL_COOKIE=	${WRKDIR}/.install_done
 _PACKAGE_COOKIE=	${WRKDIR}/.package_done
-_INTERACTIVE_COOKIE=	.interactive_stage
+_INTERACTIVE_COOKIE_DIR?=	${.CURDIR}
+_INTERACTIVE_COOKIE=	${_INTERACTIVE_COOKiE_DIR}/.interactive_stage
 _NULL_COOKIE=		${WRKDIR}/.null
 
 # Miscellaneous overridable commands:
