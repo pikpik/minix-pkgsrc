@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2005/07/09 18:39:30 kristerw Exp $
+# $NetBSD: Makefile,v 1.52 2005/12/05 20:50:36 rillig Exp $
 
 DISTNAME=	octave-${OCTAVE_VER}
 PKGNAME=	octave-current-${OCTAVE_VER}
@@ -17,7 +17,7 @@ BUILD_DEPENDS+=	bison>=1.875:../../devel/bison
 BUILD_DEPENDS+=	gperf>=2.7:../../devel/gperf
 DEPENDS+=	gnuplot>=3.7:../../graphics/gnuplot
 
-OCTAVE_VER=	2.9.3
+OCTAVE_VER=	2.9.4
 CONFLICTS+=	octave-2.*
 
 .if (${MACHINE_ARCH} == "arm32")
@@ -89,6 +89,7 @@ post-install:
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../math/blas/buildlink3.mk"
 .include "../../math/fftw/buildlink3.mk"
 .include "../../math/lapack/buildlink3.mk"
