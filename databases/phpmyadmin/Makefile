@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2005/12/09 13:49:21 tron Exp $
+# $NetBSD: Makefile,v 1.41 2005/12/29 06:21:36 jlam Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
+PKGREVISION=	1
 CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phpmyadmin/}
 EXTRACT_SUFX=	.tar.bz2
@@ -37,9 +38,9 @@ PKG_SYSCONFSUBDIR?=	phpmyadmin
 NO_BUILD=		yes
 
 INSTALL_DIRS=	css lang libraries libraries/auth libraries/dbg \
-		libraries/dbi libraries/export libraries/fpdf	\
-		libraries/fpdf/font libraries/transformations	\
-		themes themes/darkblue_orange \
+		libraries/dbi libraries/engines libraries/export \
+		libraries/fpdf libraries/fpdf/font libraries/import \
+		libraries/transformations themes themes/darkblue_orange \
 		themes/darkblue_orange/css themes/darkblue_orange/img \
 		themes/original themes/original/css themes/original/img
 
