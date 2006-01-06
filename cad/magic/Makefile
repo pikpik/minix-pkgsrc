@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/09/22 15:28:35 minskim Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 20:49:52 rillig Exp $
 #
 
 DISTNAME=	magic-7.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	http://vlsi.cornell.edu/magic/
 
@@ -34,4 +34,5 @@ do-configure:
 	cd ${WRKSRC} && printf "1\n2\n6\n\n\n\n\n\n\n\n\n\n\n" | \
 		${SETENV} ${MAKE_ENV} ./scripts/config
 
+.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
