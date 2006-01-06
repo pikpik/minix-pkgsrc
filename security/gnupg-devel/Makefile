@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2005/05/22 20:08:30 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/23 09:24:39 shannonjr Exp $
 #
 
-DISTNAME=		gnupg-1.9.17
+DISTNAME=		gnupg-1.9.20
 PKGNAME=		${DISTNAME:S/gnupg/gnupg-devel/}
 #PKGREVISION=		1
 CATEGORIES=		security
@@ -55,6 +55,7 @@ pre-configure:
 
 BUILDLINK_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 
+.include "../../databases/openldap/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
