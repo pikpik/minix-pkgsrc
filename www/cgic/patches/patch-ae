@@ -1,8 +1,8 @@
 $NetBSD$
 
---- cgic.html.orig	Sun Jan 12 13:59:43 2003
+--- cgic.html.orig	2004-11-15 17:59:19.000000000 +0100
 +++ cgic.html
-@@ -365,6 +365,29 @@ cgic.c to your project?</strong>
+@@ -378,6 +378,29 @@ cgic.c to your project?</strong>
  If none of the above proves effective, please see the
  section regarding <a href="#support">support</a>.
  <h3><a name="howto">How to write a cgic application</a></h3>
