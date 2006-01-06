@@ -1,6 +1,6 @@
-#!@PREFIX@/bin/perl
+#!@PERL5@
 
-#  $NetBSD$
+#  $NetBSD: builddb.pl,v 1.1.1.1 2003/07/13 16:15:34 wiz Exp $
 #
 #  builddb -- build .byfile.db from tgz files or directory hierarchies.
 #  Copyright (C) 2000, 2003 Dieter Baron
