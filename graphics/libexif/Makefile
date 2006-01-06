@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2005/05/13 11:57:59 salo Exp $
+# $NetBSD: Makefile,v 1.26 2005/07/24 00:06:44 dillo Exp $
 
-DISTNAME=	libexif-0.6.12
-PKGREVISION=	2
+DISTNAME=	libexif-0.6.13
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libexif/}
 EXTRACT_SUFX=	.tar.bz2
