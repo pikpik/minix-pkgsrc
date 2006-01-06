@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/03 15:15:05 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/05 23:55:13 rillig Exp $
 #
 
 DISTNAME=		bounce-0.0
@@ -7,6 +7,8 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		p99dreyf@criens.u-psud.fr
 COMMENT=		Tool to forward TCP connection from one IP to another
+
+CONFLICTS+=		majordomo-*
 
 WRKSRC=			${WRKDIR}/bounce
 HAS_CONFIGURE=		yes

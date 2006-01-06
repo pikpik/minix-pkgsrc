@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/07/23 22:56:16 he Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:33 rillig Exp $
 
 DISTNAME=		majordomo-1.94.5
 PKGREVISION=		1
@@ -21,6 +21,8 @@ DEPENDS+=		user>=20000313:../../sysutils/user
 ADDUSER=		${LOCALBASE}/sbin/useradd
 ADDGROUP=		${LOCALBASE}/sbin/groupadd
 .endif
+
+CONFLICTS+=		bounce-*
 
 USE_TOOLS+=		perl:run
 
