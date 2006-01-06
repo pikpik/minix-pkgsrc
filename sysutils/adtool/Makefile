@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/12/05 23:55:19 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/29 06:22:16 jlam Exp $
 #
 
 DISTNAME=	adtool-1.2
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://c128.org/adtool/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2005/12/11 11:45:44 markd Exp $
+# $NetBSD: Makefile,v 1.47 2005/12/29 06:21:54 jlam Exp $
 
 DISTNAME=	kdeutils-${_KDE_VERSION}
+PKGREVISION=	1
 COMMENT=	Utilities for the KDE integrated X11 desktop
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"

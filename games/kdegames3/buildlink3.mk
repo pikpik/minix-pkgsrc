@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/10/03 00:14:45 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2005/03/23 22:28:09 markd Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 KDEGAMES_BUILDLINK3_MK:=	${KDEGAMES_BUILDLINK3_MK}+
@@ -11,8 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nkdegames}
 BUILDLINK_PACKAGES+=	kdegames
 
 .if !empty(KDEGAMES_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.kdegames+=	kdegames>=3.2.0
-BUILDLINK_RECOMMENDED.kdegames?=	kdegames>=3.4.0
+BUILDLINK_DEPENDS.kdegames+=	kdegames>=3.5.0nb1
 BUILDLINK_PKGSRCDIR.kdegames?=	../../games/kdegames3
 .endif	# KDEGAMES_BUILDLINK3_MK
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/10/08 16:49:35 jdolecek Exp $
+# $NetBSD: Makefile,v 1.14 2005/11/03 02:00:26 tv Exp $
 
 DISTNAME=	php-extensions-4.4
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	meta-pkgs www php4
 MASTER_SITES=	# empty
 DISTFILES=	# empty
