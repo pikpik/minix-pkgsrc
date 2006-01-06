@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:11 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:26 rillig Exp $
 #
 
 DISTNAME=	basicproperty-0.6.3a
 PKGNAME=	${PYPKGPREFIX}-basicproperty-0.6.3a
+PKGREVISION=	1
 CATEGORIES=	python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=basicproperty/}
 
