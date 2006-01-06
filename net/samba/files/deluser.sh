@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@SH@
 #
-# $NetBSD$
+# $NetBSD: deluser.sh,v 1.2 2004/01/11 02:26:31 jlam Exp $
 #
 # This is a deluser script for NetBSD systems whose userdel(8) doesn't
 # accept "$" in the username.
