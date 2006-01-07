@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2005/09/29 14:29:26 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2005/12/05 20:50:31 rillig Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	3
@@ -33,6 +33,8 @@ MAKE_ENV+=	SVR4LIBS="-lnsl -lsocket -lgen"
 MAKE_ENV+=	SYSV=-DSYSV32
 MAKE_ENV+=	CC=gcc
 MAKE_ENV+=	CPPFLAGS=
+.elif ${OPSYS} == "Darwin"
+USE_TOOLS+=	gmake
 .endif
 
 .if ${OPSYS} != "Interix"
