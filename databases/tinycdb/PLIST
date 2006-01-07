@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/cdb
+include/cdb.h
+lib/libcdb.a
+man/man1/cdb.1
+man/man3/cdb.3
+man/man5/cdb.5
