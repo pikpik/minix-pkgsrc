@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/07/21 16:29:48 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2005/08/10 20:56:15 jlam Exp $
 #
 
 DISTNAME=	libgphoto2-2.1.6
@@ -16,6 +16,12 @@ USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE+=	libgphoto2/libgphoto2.pc.in
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
+
+SUBST_CLASSES+=		libexif-update
+SUBST_STAGE.libexif-update=	pre-configure
+SUBST_MESSAGE.libexif-update=	Fix configure script checks for libexif-0.6.13
+SUBST_FILES.libexif-update=	configure
+SUBST_SED.libexif-update=	s,exif-,libexif/exif-,g
 
 .include "../../mk/bsd.prefs.mk"
 
