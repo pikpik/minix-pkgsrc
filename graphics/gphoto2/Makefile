@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/07/21 16:29:51 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2005/08/10 20:56:17 jlam Exp $
 
 DISTNAME=	gphoto2-2.1.6
 CATEGORIES=	graphics
@@ -19,6 +19,12 @@ CONFIGURE_ARGS+=	--with-aalib-prefix=${BUILDLINK_PREFIX.aalib}
 CONFIGURE_ARGS+=	--with-cdk-prefix=${BUILDLINK_PREFIX.cdk}
 CONFIGURE_ARGS+=	--with-exif-prefix=${BUILDLINK_PREFIX.libexif}
 CONFIGURE_ARGS+=	--with-jpeg-prefix=${BUILDLINK_PREFIX.jpeg}
+
+SUBST_CLASSES+=		libexif-update
+SUBST_STAGE.libexif-update=	pre-configure
+SUBST_MESSAGE.libexif-update=	Fix configure script checks for libexif-0.6.13
+SUBST_FILES.libexif-update=	configure
+SUBST_SED.libexif-update=	s,exif-,libexif/exif-,g
 
 # readline detection is currently broken since -ltermcap isn't passed as
 # part of the library check.
