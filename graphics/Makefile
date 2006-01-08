@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.405 2005/12/11 09:40:44 wiz Exp $
+# $NetBSD: Makefile,v 1.406 2006/01/03 21:03:03 adrianp Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -258,6 +258,7 @@ SUBDIR+=	refocus-it
 SUBDIR+=	resize_image
 SUBDIR+=	ruby-RMagick
 SUBDIR+=	ruby-gd
+SUBDIR+=	ruby-gnome2-gdkpixbuf
 SUBDIR+=	ruby-imlib2
 SUBDIR+=	ruby-opengl
 SUBDIR+=	s10sh
