@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/12/01 18:50:14 gdt Exp $
 #
 
 DISTNAME=		tex2page
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.ccs.neu.edu/home/dorai/tex2page/
 
 MAINTAINER=		gdt@NetBSD.org
 HOMEPAGE=		http://www.ccs.neu.edu/home/dorai/tex2page/
-COMMENT=		SHORT_DESCRIPTION_OF_THE_PACKAGE
+COMMENT=		Converts TeX manuscripts into (HTML) web pages
 
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
