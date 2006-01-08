@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/07/31 14:03:28 grant Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:40 rillig Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-mysql-/}
+PKGREVISION=	1
 COMMENT=	WS 23xx weather station MySQL support
 
 PATCHDIR=	${.CURDIR}/../open2300/patches
