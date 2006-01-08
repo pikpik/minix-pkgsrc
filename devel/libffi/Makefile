@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:29 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/03/07 14:54:40 wiz Exp $
 
 DISTNAME=	gcc-3.3.5
 PKGNAME=	libffi-2.0beta
@@ -13,6 +13,8 @@ COMMENT=	Foreign function interface
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	with_target_subdir=.
+CONFIG_GUESS_OVERRIDE=	../config.guess
+CONFIG_SUB_OVERRIDE=	../config.sub
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/libffi
 
