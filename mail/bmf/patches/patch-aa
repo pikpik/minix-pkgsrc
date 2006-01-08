@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2002/10/10 11:05:31 mjl Exp $
 
 --- configure.orig	Tue Oct  8 11:39:14 2002
 +++ configure	Tue Oct  8 11:45:11 2002
@@ -6,7 +6,7 @@ $NetBSD$
      LIBDB_LIB=""
      MYSQL_LIB="-lmysqlclient"
      ;;
-+  NetBSD)
++  NetBSD | DragonFly)
 +    OSVER=40
 +    if [ "$with_debug" = "yes" ]; then
 +      CCDBG="-g"
