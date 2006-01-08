@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2005/11/20 06:27:24 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 23:55:07 rillig Exp $
 #
 
 .include "../../graphics/freetype-lib/Makefile.common"
 
 PKGNAME=		ttf2pk-1.3.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		print
 
 MAINTAINER=		bernhard@SDG.de,hubertf@NetBSD.org

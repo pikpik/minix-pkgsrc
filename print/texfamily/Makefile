@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/12/05 20:50:54 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 23:55:16 rillig Exp $
 
 DISTNAME=	TeXfamily-1.2.1
 PKGREVISION=	5
@@ -27,7 +27,7 @@ PATCH_DIST_ARGS= -d ${WRKSRC}/texk/web2c/ptex-${TEXFAMILY_PTEXVERSION}
 MAINTAINER=	kei@NetBSD.org
 COMMENT=	TeXfamily (pTeX, JTeX, MuLTeX) - executables
 
-TEX_ACCEPTED=	teTeX1 # teTeX2 teTeX3
+#TEX_ACCEPTED=	teTeX1 # teTeX2 teTeX3
 DEPENDS+=	TeXfamily-share>=1.2.1nb3:../../print/texfamily-share
 DEPENDS+=	ja-vflib-lib-[0-9]*:../../print/ja-vflib-lib
 
@@ -169,5 +169,5 @@ post-install:
 pre-clean:
 	cd ../../print/teTeX1-bin && ${MAKE} clean
 
-.include "../../mk/tex.buildlink3.mk"
+.include "../../print/teTeX1-bin/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

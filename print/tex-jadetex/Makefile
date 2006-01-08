@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2005/12/28 04:56:42 reed Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/28 05:05:44 reed Exp $
 #
 
 DISTNAME=	jadetex-3.13
 PKGNAME=	tex-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jadetex/}
 

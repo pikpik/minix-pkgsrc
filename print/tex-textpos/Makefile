@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2005/11/08 21:45:01 tonio Exp $
+# $NetBSD: Makefile,v 1.13 2005/11/11 18:50:25 tonio Exp $
 #
 
 NAME=		textpos
 DISTNAME=	${NAME}
 PKGNAME=	tex-${NAME}-1.2b
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=macros/latex/contrib/supported/${NAME}/}
 
