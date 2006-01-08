@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/03/24 21:13:03 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/17 03:50:42 jlam Exp $
 
 DISTNAME=	w3c-httpd-3.0A
 CATEGORIES=	www
@@ -43,7 +43,7 @@ do-install:
 
 .include "../../mk/bsd.pkg.mk"
 
-.if (${OPSYS} == "FreeBSD")
+.if (${OPSYS} == "FreeBSD") || (${OPSYS} == "DragonFly")
 OSNAME=	freebsd
 .else
 #	covers OpenBSD too
