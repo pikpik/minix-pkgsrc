@@ -1,4 +1,4 @@
-# $NetBSD: tools.OpenBSD.mk,v 1.20 2005/11/04 20:02:01 jlam Exp $
+# $NetBSD: tools.OpenBSD.mk,v 1.21 2005/11/08 03:36:13 tv Exp $
 #
 # System-supplied tools for the OpenBSD operating system.
 
@@ -43,6 +43,7 @@ TOOLS_PLATFORM.hostname?=	/bin/hostname
 TOOLS_PLATFORM.id?=		/usr/bin/id
 TOOLS_PLATFORM.install?=	/usr/bin/install
 TOOLS_PLATFORM.ldconfig?=	/sbin/ldconfig
+TOOLS_PLATFORM.ksh?=		/bin/ksh
 TOOLS_PLATFORM.lex?=		/usr/bin/lex
 TOOLS_PLATFORM.ln?=		/bin/ln
 TOOLS_PLATFORM.ls?=		/bin/ls
