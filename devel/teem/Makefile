@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:48 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:08 rillig Exp $
 #
 
 DISTNAME=		teem-1.8.0-src
@@ -14,7 +14,7 @@ USE_TOOLS+=		gmake
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly"
 .  if ${MACHINE_ARCH} == "i386"
 NARCH=32
 LARCH=32
