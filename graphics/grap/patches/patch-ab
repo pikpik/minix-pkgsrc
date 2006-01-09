@@ -1,14 +1,20 @@
 $NetBSD$
 
---- grap.h	2004/01/14 15:42:50	1.1
-+++ grap.h	2004/01/14 15:43:09
-@@ -8,6 +8,10 @@
+--- grap.h.orig	2002-10-26 16:32:03.000000000 +0000
++++ grap.h
+@@ -7,7 +7,16 @@
+ #define DEFINES "/usr/share/grap/grap.defines"
  #endif
  
- #ifndef STDC_HEADERS
++#ifdef HAVE_CONFIG_H
++#include "config.h"
++#endif
 +
-+// keep up with gcc3.3
++extern bool print_lex_debug;
++
 +using namespace std;
++
+ #ifndef STDC_HEADERS
 +
  extern "C" {
  #ifndef __GNUC__
