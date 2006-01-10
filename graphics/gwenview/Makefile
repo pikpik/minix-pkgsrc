@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/09/23 22:05:17 reed Exp $
+# $NetBSD: Makefile,v 1.14 2005/11/23 19:23:27 markd Exp $
 #
 
 DISTNAME=	gwenview-1.3.1
@@ -10,7 +10,7 @@ MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://gwenview.sourceforge.net/
 COMMENT=	Image viewer for KDE whose aims are ease of use and speed
 
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
