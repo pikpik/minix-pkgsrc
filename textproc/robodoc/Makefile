@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/11/08 19:45:54 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:51:08 rillig Exp $
 #
 
 DISTNAME=	robodoc-3.2.3
@@ -11,6 +11,11 @@ COMMENT=	Tool to support project documentation within source code
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	gm4 gmake
+
+SUBST_CLASSES+=		gm4
+SUBST_FILES.gm4=	Docs/makefile.in
+SUBST_SED.gm4+=		-e 's,@M4@,${TOOLS_M4},g'
+SUBST_STAGE.gm4=	post-patch
 
 MAKEFILE=	makefile
 
