@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/12/29 06:22:20 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/01/06 16:21:53 joerg Exp $
 #
 
 DISTNAME=	golem-0.0.5
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=golem/}
 
-MAINTAINER=	reide@darkest.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://golem.sourceforge.net/
 COMMENT=	Fast and lightweight yet customizable window manager
 
