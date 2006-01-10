@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/07/16 01:19:24 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/07/31 06:03:26 grant Exp $
 #
 
 DISTNAME=	OpenSP-1.5.1
@@ -14,6 +14,7 @@ COMMENT=	SGML parser, successor to "sp"
 CONFLICTS+=     sp-[0-9]*
 
 BUILD_USES_MSGFMT=	yes
+BROKEN_GETTEXT_DETECTION=	yes
 USE_TOOLS+=		perl
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
