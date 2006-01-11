@@ -1,0 +1,16 @@
+# $NetBSD: Makefile,v 1.7 2006/01/11 16:10:11 reed Exp $
+#
+
+POPPLER_VERS=		0.4.4
+DISTNAME=		poppler-${POPPLER_VERS}
+CATEGORIES=		print
+MASTER_SITES=		http://poppler.freedesktop.org/
+
+MAINTAINER=		reed@reedmedia.net
+HOMEPAGE=		http://poppler.freedesktop.org/
+
+DISTINFO_FILE=		${.CURDIR}/../../print/poppler/distinfo
+#PATCHDIR=		${.CURDIR}/../../print/poppler/patches
+
+USE_TOOLS+=		pkg-config
+USE_LIBTOOL=		yes
