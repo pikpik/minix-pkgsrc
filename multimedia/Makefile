@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2005/11/04 04:37:24 minskim Exp $
+# $NetBSD: Makefile,v 1.78 2005/11/04 04:56:11 minskim Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -72,6 +72,7 @@ SUBDIR+=	php-ming
 SUBDIR+=	py-ming
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	regionset
+SUBDIR+=	replex
 SUBDIR+=	ruby-ming
 SUBDIR+=	smpeg
 SUBDIR+=	smpeg-xmms
