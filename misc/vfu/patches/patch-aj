@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- vfu/vfu.h.orig	2006-01-11 16:54:42.000000000 +0000
++++ vfu/vfu.h
+@@ -34,7 +34,7 @@
+ 
+   #include <vslib.h>
+ 
+-  #ifdef _TARGET_NETBSD_
++  #if defined(_TARGET_NETBSD_) || defined(_TARGET_DRAGONFLY_)
+     #include <sys/param.h>
+     #include <sys/mount.h>
+   #else
