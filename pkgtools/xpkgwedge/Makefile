@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.62 2005/12/29 06:22:06 jlam Exp $
+# $NetBSD: Makefile,v 1.63 2006/01/06 16:58:32 joerg Exp $
 
-DISTNAME=	xpkgwedge-1.14
+DISTNAME=	xpkgwedge-1.15
 CATEGORIES=	pkgtools devel x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -19,6 +19,9 @@ NO_CONFIGURE=	yes
 NO_CHECKSUM=	yes
 
 .include "../../mk/bsd.prefs.mk"
+
+USE_TOOLS+=	imake:run xmkmf:run
+
 .if ${LOCALBASE} == ${X11BASE}
 PKG_SKIP_REASON+=	"xpkgwedge is not needed when X11BASE is LOCALBASE"
 .endif
