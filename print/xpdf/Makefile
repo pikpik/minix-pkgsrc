@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2005/12/20 16:00:16 ghen Exp $
+# $NetBSD: Makefile,v 1.47 2005/12/29 06:22:08 jlam Exp $
 
 DISTNAME=	xpdf-3.01
 PKGNAME=	${DISTNAME}pl1
@@ -37,12 +37,13 @@ CONFIGURE_ARGS+=	--enable-a4-paper
 EGDIR=			${PREFIX}/share/examples/xpdf
 CONF_FILES=		${EGDIR}/xpdfrc ${PKG_SYSCONFDIR}/xpdfrc
 
-post-patch:
-	@cd ${WRKSRC}/doc && \
-	for f in *.1 *.5; do \
-		${MV} $${f} $${f}.orig; \
-		${SED} ${FILES_SUBST_SED} $${f}.orig > $${f}; \
-	done
+SUBST_CLASSES+=		paths
+SUBST_FILES.paths=	doc/pdffonts.1 doc/pdfimages.1 doc/pdfinfo.1
+SUBST_FILES.paths=	doc/pdftopnm.1 doc/pdftops.1 doc/pdftotext.1
+SUBST_FILES.paths=	doc/sample-xpdfrc doc/xpdf.1 doc/xpdfrc.5
+SUBST_SED.paths+=	-e 's,@PREFIX@,${PREFIX},g'
+SUBST_SED.paths+=	-e 's,@PKG_SYSCONFDIR@,${PKG_SYSCONFDIR},g'
+SUBST_STAGE.paths=	post-patch
 
 # Used by supplemental packages.
 post-install:
