@@ -1,21 +1,22 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:39 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/09/13 19:39:46 agc Exp $
 
-DISTNAME=       swig1.1p5
-PKGNAME=	swig-1.1p5
-PKGREVISION=	3
+DISTNAME=	swig-1.3.24
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.swig.org/pub/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 
-MAINTAINER=	mellon@isc.org
+MAINTAINER=	epg@NetBSD.org
 HOMEPAGE=	http://www.swig.org/
 COMMENT=	Simplified Wrapper and Interface Generator
 
-WRKSRC=		${WRKDIR}/SWIG1.1p5
-GNU_CONFIGURE=	YES
+CONFLICTS=      swig-build-[0-9]*
 
-.include "../../lang/python/pyversion.mk"
+CONFIGURE_ARGS+=	--with-swiglibdir=${PREFIX}/share/swig/1.3
+BUILD_TARGET=		swig
+WRKSRC=			${WRKDIR}/SWIG-1.3.24
 
-.include "../../lang/perl5/buildlink3.mk"
-.include "../../lang/tcl/buildlink3.mk"
+USE_TOOLS+=		gmake
+GNU_CONFIGURE=		YES
+USE_LANGUAGES=		c c++
+USE_LIBTOOL=		YES
 
 .include "../../mk/bsd.pkg.mk"
