@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/11/01 20:18:36 rillig Exp $
+# $NetBSD: Makefile,v 1.42 2005/12/28 11:07:17 ghen Exp $
 
 LIBQT=			${WRKSRC}/lib/libqt-mt.la
 
@@ -6,8 +6,6 @@ LIBQT=			${WRKSRC}/lib/libqt-mt.la
 # XXX: hack - work round an ICE with GCC 3.3 on sparc
 .if ${OPSYS} == "NetBSD" && ${MACHINE_ARCH} == "sparc"
 GCC_REQD+=		3.4
-.else
-GCC_REQD+=		2.95.3
 .endif
 
 .include "../../x11/qt3-libs/Makefile.common"
