@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:11 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/16 06:57:59 jlam Exp $
 #
 .include "../../inputmethod/canna/Makefile.common"
 
@@ -9,6 +9,10 @@ MAINTAINER=	oishi@ims.ac.jp
 MAKE_ARGS+=	PREFIX=${PREFIX}
 
 INSTALLATION_DIRS=	man/ja_JP.EUC/man1
+
+pre-configure:
+	@${CP} ${PKGSRCDIR}/mk/gnu-config/config.guess ${WRKSRC}/canuum
+	@${CP} ${PKGSRCDIR}/mk/gnu-config/config.sub ${WRKSRC}/canuum
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${XMKMF_CMD}; \
