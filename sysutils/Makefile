@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.327 2006/01/09 12:47:19 manu Exp $
+# $NetBSD: Makefile,v 1.328 2006/01/11 15:20:48 xtraeme Exp $
 #
 
 COMMENT=	System utilities
@@ -134,9 +134,9 @@ SUBDIR+=	mtscan
 SUBDIR+=	nautilus
 SUBDIR+=	nautilus-cd-burner
 SUBDIR+=	news
-SUBDIR+=	nvnet
 SUBDIR+=	nrg2iso
 SUBDIR+=	ntfsprogs
+SUBDIR+=	nvnet
 SUBDIR+=	osname
 SUBDIR+=	p5-File-NCopy
 SUBDIR+=	p5-File-Remove
