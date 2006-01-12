@@ -1,5 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2005/02/26 22:48:35 jmmv Exp $
 #
+
+PKGREVISION=	1
 
 BOOST_PACKAGE=		build
 BOOST_COMMENT=		(Boost.Build framework)
