@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2004/03/08 20:27:14 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2004/12/31 12:10:04 minskim Exp $
 #
 
 DISTNAME=		xblast-2.6.beta-sound
@@ -31,6 +31,6 @@ post-build:
 	cd ${WRKSRC}/tkXBlast && ${MAKE_ENV} ${MAKE}
 
 post-install:
-	${RM} ${PREFIX}/man/cat1/xbsndsrv.0
+	${RM} ${PREFIX}/${IMAKE_MAN_DIR}/xbsndsrv.${IMAKE_MAN_SUFFIX}
 
 .include "../../mk/bsd.pkg.mk"
