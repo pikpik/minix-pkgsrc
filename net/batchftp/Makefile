@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/11/08 15:51:52 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 20:50:44 rillig Exp $
 
 DISTNAME=	batchftp102
 PKGNAME=	batchftp-1.02
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.fu-berlin.de/unix/network/batchftp/
 
