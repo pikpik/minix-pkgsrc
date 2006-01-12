@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.use.mk,v 1.24 2005/12/04 01:44:30 joerg Exp $
+#	$NetBSD: bsd.pkg.use.mk,v 1.25 2005/12/05 22:07:07 rillig Exp $
 #
 # Turn USE_* macros into proper depedency logic.  Included near the top of
 # bsd.pkg.mk, after bsd.prefs.mk.
@@ -129,6 +129,7 @@ RMAN?=			${X11BASE}/bin/rman
 .if (defined(USE_X11BASE) || \
      defined(USE_IMAKE) || !empty(USE_TOOLS:Mimake) || \
      !empty(USE_TOOLS:Mimake\:*:Nimake\:pkgsrc)) && \
+    empty(PKGPATH:Mpkgtools/xpkgwedge) && \
     !empty(USE_XPKGWEDGE:M[yY][eE][sS])
 BUILD_DEPENDS+=		xpkgwedge>=${_XPKGWEDGE_REQD:U1.14}:../../pkgtools/xpkgwedge
 .endif
