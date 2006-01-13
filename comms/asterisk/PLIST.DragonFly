@@ -1,3 +1,2 @@
 @comment $NetBSD$
-lib/asterisk/modules/app_intercom.so
 lib/asterisk/modules/chan_oss.so
