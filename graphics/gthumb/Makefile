@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/10/06 18:38:49 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/31 12:32:37 wiz Exp $
 
 DISTNAME=		gthumb-2.6.8
 PKGREVISION=		1
@@ -16,6 +16,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 GCONF2_SCHEMAS+=	gthumb.schemas
+BUILDLINK_DEPENDS.libglade2+=   libglade2>=2.4.0
 
 .include "../../devel/GConf2/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
