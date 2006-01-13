@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/12/05 20:51:00 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2006/01/11 09:27:27 schmonz Exp $
 
 DISTNAME=		daemontools-0.76
 CATEGORIES=		sysutils
@@ -27,6 +27,8 @@ PLIST_SUBST+=		SERVICEDIR=${SERVICEDIR:Q}
 DEINSTALL_FILE=		${WRKDIR}/.DEINSTALL
 
 INSTALLATION_DIRS=	bin man man/man8 share/examples/daemontools
+
+SUBST_FILES.djbware+=	src/error.h
 
 post-build:
 	${SED}	-e "s,@@PREFIX@@,${PREFIX},"				\
