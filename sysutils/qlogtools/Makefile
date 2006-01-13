@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/08/07 11:47:55 schmonz Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/24 04:47:10 schmonz Exp $
 #
 
 DISTNAME=		qlogtools-3.1
@@ -11,6 +11,8 @@ COMMENT=		Tools useful in analyzing logs from qmail and other pkgs
 
 DJB_RESTRICTED=		NO
 DJB_MAKE_TARGETS=	NO
+
+SUBST_FILES.djbware+=	qfilelog.c
 
 do-install:
 	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC};			\
