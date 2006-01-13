@@ -1,4 +1,12 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/08 10:30:31 xtraeme Exp $
+@comment $NetBSD$
 sbin/ucarp
+share/doc/ucarp/AUTHORS
+share/doc/ucarp/COPYING
+share/doc/ucarp/NEWS
+share/doc/ucarp/README
+share/examples/ucarp/vip-down.sh
+share/examples/ucarp/vip-up.sh
 ${PKGLOCALEDIR}/locale/en@boldquot/LC_MESSAGES/ucarp.mo
 ${PKGLOCALEDIR}/locale/en@quot/LC_MESSAGES/ucarp.mo
+@dirrm share/examples/ucarp
+@dirrm share/doc/ucarp
