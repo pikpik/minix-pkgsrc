@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:27:16 agc Exp $
+# $NetBSD: Makefile,v 1.7 2005/01/25 04:20:31 tv Exp $
 #
 
 DISTNAME=	phoon_01apr1995
@@ -15,7 +15,7 @@ WRKSRC=		${WRKDIR}/phoon
 .include "../../mk/bsd.prefs.mk"
 
 # doesn't have tm_gmtoff
-.if ${OPSYS} == "Interix"
+.if ${OPSYS} == "Interix" || ${OPSYS} == "SunOS"
 MAKE_FLAGS+=	DEFINES=-DSYSV
 .endif
 
