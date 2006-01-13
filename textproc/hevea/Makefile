@@ -1,15 +1,17 @@
-# $NetBSD: Makefile,v 1.11 2005/05/16 05:09:21 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/09/29 13:20:46 tonio Exp $
 
 DISTNAME=	hevea-1.08
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://para.inria.fr/~maranget/hevea/distri/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://para.inria.fr/~maranget/hevea/
 COMMENT=	LaTeX to HTML translator
 
 BUILD_DEPENDS+=	ocaml>=3.07:../../lang/ocaml
 
+DIST_SUBDIR=    ${PKGNAME_NOREV}
 .include "../../mk/bsd.prefs.mk"
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")
