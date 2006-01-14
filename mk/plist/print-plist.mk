@@ -1,4 +1,4 @@
-# $$etBSD$
+# $NetBSD$
 
 ###
 ### Automatic PLIST generation
