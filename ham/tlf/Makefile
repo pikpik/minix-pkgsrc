@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:08 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:23 rillig Exp $
 #
 
-DISTNAME=	tlf-0.9.20
-PKGREVISION=	1
+DISTNAME=	tlf-0.9.27
 CATEGORIES=	ham
 MASTER_SITES=	http://sharon.pi8zaa.ampr.org/pub/linux/ham/tlf/
 
