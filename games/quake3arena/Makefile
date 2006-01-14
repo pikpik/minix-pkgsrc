@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/07/15 18:27:51 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/12 14:43:25 joerg Exp $
 
 DISTNAME=	linuxq3apoint-1.32b.x86
 PKGREVISION=	1
@@ -27,9 +27,12 @@ NO_BIN_ON_FTP=	no
 NO_CONFIGURE=	yes
 CHECK_SHLIBS=	NO
 
-USE_TOOLS+=	gtar
+USE_TOOLS+=	gtar gunzip tail
 
-EXTRACT_CMD=	${SED} '1,265d' ${DOWNLOADED_DISTFILE} | ${GTAR} xzf -
+# The distfile is a self-extracting shell script.  "266" is a magic
+# number that's taken from the distfile itself.
+#
+EXTRACT_CMD=	tail +266 ${DOWNLOADED_DISTFILE} | gunzip | gtar -xf -
 
 .if !make(fetch)
 ONLY_FOR_PLATFORM=*-*-i386
