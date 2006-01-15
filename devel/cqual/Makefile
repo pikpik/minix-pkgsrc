@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/01/12 00:44:44 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/13 07:51:42 rillig Exp $
 #
 
 DISTNAME=		cqual-0.991
@@ -22,4 +22,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC:Q}/doc/user-guide.pdf ${PREFIX:Q}/share/doc/cqual/
 	${INSTALL_DATA} ${WRKSRC:Q}/examples/* ${PREFIX:Q}/share/examples/cqual/
 
+.include "../../mk/emacs.mk"
 .include "../../mk/bsd.pkg.mk"
