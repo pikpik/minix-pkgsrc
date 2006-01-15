@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/08/06 20:33:56 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/07 23:34:02 wulf Exp $
 #
 
 COMMENT=	Wireless communication tools and applications
@@ -14,6 +14,7 @@ SUBDIR+=	gnuradio-gsm
 SUBDIR+=	gnuradio-howto
 SUBDIR+=	gnuradio-usrp
 SUBDIR+=	gnuradio-wxgui
+SUBDIR+=	gpredict
 SUBDIR+=	grig
 SUBDIR+=	hamlib
 SUBDIR+=	linpsk
