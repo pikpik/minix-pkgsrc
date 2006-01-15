@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/05/22 20:07:52 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/07/16 01:19:09 jlam Exp $
 
 DISTNAME=	ldapsdk_12311998
 PKGNAME=	${DISTNAME:S/_/-/}
@@ -21,6 +21,9 @@ EGDIR=			${PREFIX}/share/examples/ldapsdk
 SCRIPTS_ENV+=	EGDIR=${EGDIR}
 SCRIPTS_ENV+=	GMAKE=${GMAKE}
 SCRIPTS_ENV+=	LN=${LN}
+
+post-extract:
+	${LN} -s FreeBSD.mk ${WRKSRC}/config/DragonFly.mk
 
 do-configure:
 	${ECHO} "PKG_SYSCONFDIR=${PKG_SYSCONFDIR}" >> ${WRKSRC}/config/rules.mk
