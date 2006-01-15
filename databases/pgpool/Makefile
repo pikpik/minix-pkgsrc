@@ -1,8 +1,8 @@
 # $NetBSD: Makefile,v 1.5 2005/12/05 23:55:04 rillig Exp $
 
-DISTNAME=	pgpool-2.5.1
+DISTNAME=	pgpool-2.7
 CATEGORIES=	databases
-MASTER_SITES=	http://pgfoundry.org/frs/download.php/183/
+MASTER_SITES=	http://pgfoundry.org/frs/download.php/572/
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://pgpool.projects.postgresql.org/
