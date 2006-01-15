@@ -1,10 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/06/04 11:18:12 wiz Exp $
 #
 
-DISTNAME=	liquidwar-5.6.2
+DISTNAME=	liquidwar-5.6.3
 CATEGORIES=	games
-#MASTER_SITES=	http://savannah.nongnu.org/download/liquidwar/
-MASTER_SITES=	http://liquidwar.sunsite.dk/archive/
+MASTER_SITES=	http://ufoot.hd.free.fr/pub/archive/ \
+		http://www.ufoot.org/archive/ \
+		http://download.savannah.nongnu.org/releases/liquidwar/
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.ufoot.org/liquidwar/
