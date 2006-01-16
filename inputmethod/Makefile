@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2004/12/04 03:58:09 taya Exp $
+# $NetBSD: Makefile,v 1.19 2004/12/28 17:10:56 wiz Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -12,6 +12,8 @@ SUBDIR+=	canna-canuum
 SUBDIR+=	canna-dict
 SUBDIR+=	canna-lib
 SUBDIR+=	canna-server
+SUBDIR+=	fcitx
+SUBDIR+=	gcin
 SUBDIR+=	iiimecf
 SUBDIR+=	imhangul
 SUBDIR+=	imhangul_status_applet
