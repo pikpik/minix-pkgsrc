@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/10/03 00:14:42 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:47 tv Exp $
 #
 
 DISTNAME=	ttftot42-0.3.1
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	fonts print
 MASTER_SITES=	http://www.giga.or.at/pub/nih/ttftot42/
 
-MAINTAINER=	rxg@ms25.url.com.tw
+MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://ftp.giga.or.at/pub/nih/ttftot42/
 COMMENT=	TrueType font to Type 42 converter
 
