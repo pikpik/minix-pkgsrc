@@ -1,6 +1,6 @@
 $NetBSD$
 
---- byterun/Makefile.orig	2004-08-20 15:11:36.000000000 +0000
+--- byterun/Makefile.orig	2005-11-29 12:57:49.000000000 +0100
 +++ byterun/Makefile
 @@ -16,7 +16,7 @@
  include ../config/Makefile
@@ -28,5 +28,5 @@ $NetBSD$
 -	cp ld.conf $(LIBDIR)/ld.conf
 +	${BSD_INSTALL_DATA} ld.conf $(LIBDIR)/ld.conf
  
- ld.conf:
+ ld.conf: ../config/Makefile
  	echo "$(STUBLIBDIR)" >ld.conf

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- stdlib/Makefile.orig	2004-10-15 15:40:41.000000000 +0100
-+++ stdlib/Makefile	2004-10-15 15:41:45.000000000 +0100
-@@ -47,13 +47,13 @@
+--- stdlib/Makefile.orig	2004-11-29 15:53:30.000000000 +0100
++++ stdlib/Makefile
+@@ -48,13 +48,13 @@ allopt-prof: stdlib.p.cmxa std_exit.p.cm
  	rm -f std_exit.p.cmi
  
  install:
@@ -18,7 +18,7 @@ $NetBSD$
  	cd $(LIBDIR); $(RANLIB) stdlib.a
  
  installopt-noprof:
-@@ -64,7 +64,7 @@
+@@ -65,7 +65,7 @@ installopt-noprof:
  	rm -f $(LIBDIR)/std_exit.p.o; ln -s std_exit.o $(LIBDIR)/std_exit.p.o
  
  installopt-prof:
