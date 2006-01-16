@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tclUnixFCmd.c.orig	2003-10-03 19:45:37.000000000 +0200
-+++ tclUnixFCmd.c
-@@ -561,6 +561,14 @@ TclpDeleteFile(path)
+--- unix/tclUnixFCmd.c.orig	2005-12-05 16:10:33.000000000 +0100
++++ unix/tclUnixFCmd.c
+@@ -583,6 +583,14 @@ TclpDeleteFile(path)
   *---------------------------------------------------------------------------
   */
  
