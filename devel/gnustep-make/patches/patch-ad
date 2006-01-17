@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2005-03-10 04:21:17.000000000 +0000
+--- configure.orig	2005-12-20 17:39:33.000000000 +0100
 +++ configure
-@@ -4833,7 +4833,7 @@ echo $ECHO_N "checking if the compiler s
+@@ -5113,7 +5113,7 @@ echo $ECHO_N "checking if the compiler s
  
  # What we want to do: set AUTO_DEPENDENCIES to yes if gcc => 3.x
  

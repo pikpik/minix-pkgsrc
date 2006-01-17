@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2004/09/20 14:50:28 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2004/09/27 00:36:32 rh Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNUSTEP_MAKE_BUILDLINK3_MK:=	${GNUSTEP_MAKE_BUILDLINK3_MK}+
@@ -110,4 +110,4 @@ PRINT_PLIST_AWK+=	/^@exec \$${MKDIR} %D\/share\/GNUstep\/System\/share$$/ { next
 
 .endif	# GNUSTEP_MAKE_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
