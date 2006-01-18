@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.3 2005/12/31 12:32:43 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/12 16:57:49 jmmv Exp $
 #
 
 .include "Makefile.common"
+
+PKGREVISION=	1
 
 COMMENT+=	(using GStreamer)
 
 CONFLICTS+=	totem-xine-[0-9]*
 
-BUILDLINK_DEPENDS.gstreamer+=	gstreamer>=0.8.6.1
-
-.include "../../multimedia/gst-plugins/buildlink3.mk"
-.include "../../multimedia/gstreamer/buildlink3.mk"
+.include "../../multimedia/gst-plugins0.8/buildlink3.mk"
+.include "../../multimedia/gstreamer0.8/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
