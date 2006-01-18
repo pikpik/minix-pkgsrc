@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/20 20:25:30 agc Exp $
-lib/gstreamer-0.8/libgstartsdsink.la
-@comment in gstreamer: @dirrm lib/gstreamer-0.8
