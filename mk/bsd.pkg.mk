@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1787 2006/01/12 00:40:19 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1788 2006/01/12 23:43:56 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -4741,6 +4741,8 @@ ${DESCR}: ${DESCR_SRC}
 .if defined(_USE_PLIST_MODULE)
 .include "../../mk/plist/bsd.plist.mk"
 .endif # _USE_PLIST_MODULE
+
+.include "../../mk/bsd.utils.mk"
 
 .include "../../mk/subst.mk"
 
