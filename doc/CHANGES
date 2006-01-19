@@ -1,4 +1,4 @@
-$NetBSD: CHANGES,v 1.12571 2006/01/18 22:54:52 adrianp Exp $
+$NetBSD: CHANGES,v 1.12572 2006/01/18 23:55:07 xtraeme Exp $
 
 Changes to the packages collection and infrastructure in 2006:
 
@@ -391,3 +391,4 @@ Changes to the packages collection and infrastructure in 2006:
 	Updated converters/wv to 1.2.0 [adam 2006-01-18]
 	Added devel/libwhisker2 version 2.3 [adrianp 2006-01-18]
 	Updated meta-pkgs/xorg to 6.9.0 [xtraeme 2006-01-18]
+	Updated audio/solfege to 3.0.6 [schmonz 2006-01-19]
