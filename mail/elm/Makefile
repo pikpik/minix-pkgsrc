@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/08/22 12:40:12 tron Exp $
+# $NetBSD: Makefile,v 1.35 2005/08/22 13:15:05 salo Exp $
 
 DISTNAME=		elm2.5.8
 PKGNAME=		elm-2.5.8
@@ -20,11 +20,11 @@ CONFIGURE_ARGS+=	-d
 
 pre-configure:
 	${CP} ${FILESDIR}/config.sh ${WRKSRC}/config.sh.orig
-	${SED} -e 's:PREFIX:'${PREFIX}':g' \
+	${SED} -e 's:PREFIX:${PREFIX}:g' \
 		${WRKSRC}/config.sh.orig > ${WRKSRC}/config.sh.tmp
-	${SED} -e 's:LOCALBASE:'${LOCALBASE}':g' \
+	${SED} -e 's:LOCALBASE:${LOCALBASE}:g' \
 		${WRKSRC}/config.sh.tmp > ${WRKSRC}/config.sh.tmp2
-	${SED} -e 's:@CC@:'${CC}':g' \
+	${SED} -e 's:@CC@:${CC}:g' \
 		${WRKSRC}/config.sh.tmp2 > ${WRKSRC}/config.sh
 	${MV} ${WRKSRC}/nls/LANGS ${WRKSRC}/nls/LANGS.tmpl
 	${SED} -e 's:__PREFIX:'${PREFIX}':g' < ${WRKSRC}/nls/LANGS.tmpl > ${WRKSRC}/nls/LANGS
