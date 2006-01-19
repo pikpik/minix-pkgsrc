@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/14 16:38:17 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:18 rillig Exp $
 #
 
 DISTNAME=	xroach
@@ -11,7 +11,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 COMMENT=	Cockroaches hide under your windows
 
 DIST_SUBDIR=	xroach-4.4
-DECOMPRESS_CMD=	${CAT}
 MAKE_ENV+=	BINOWN=${BINOWN:Q} BINGRP=${BINGRP:Q} BINMODE=${BINMODE:Q} \
 		MANOWN=${MANOWN:Q} MANGRP=${MANGRP:Q} MANMODE=${MANMODE:Q}
 MANCOMPRESSED_IF_MANZ=	yes
