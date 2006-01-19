@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.40 2005/06/07 14:21:42 minskim Exp $
+# $NetBSD: Makefile,v 1.41 2005/12/05 20:50:20 rillig Exp $
 
 PKGNAME=	${DISTNAME:C/MesaLib/glu/}
-PKGREVISION=	1
 COMMENT=	GLU polygon tessellation facility for Mesa
 
 CONFLICTS+=	Mesa-glx-[0-9]*

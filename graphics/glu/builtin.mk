@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.7 2005/06/03 17:02:36 jlam Exp $
+# $NetBSD: builtin.mk,v 1.8 2005/06/03 19:12:49 jlam Exp $
 
 BUILTIN_PKG:=	glu
 
@@ -45,10 +45,10 @@ USE_BUILTIN.glu=	${IS_BUILTIN.glu}
 .    if defined(BUILTIN_PKG.glu) && \
         !empty(IS_BUILTIN.glu:M[yY][eE][sS])
 USE_BUILTIN.glu=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.glu}
+.      for dep in ${BUILDLINK_DEPENDS.glu}
 .        if !empty(USE_BUILTIN.glu:M[yY][eE][sS])
 USE_BUILTIN.glu!=							\
-	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.glu:Q}; then	\
+	if ${PKG_ADMIN} pmatch ${dep:Q} ${BUILTIN_PKG.glu:Q}; then	\
 		${ECHO} yes;						\
 	else								\
 		${ECHO} no;						\
