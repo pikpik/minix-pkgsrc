@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:58 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2006/01/14 23:07:26 wiz Exp $
 #
 
 DISTNAME=		m2crypto-0.13
@@ -8,7 +8,7 @@ MASTER_SITES=		http://sandbox.rulemaker.net/ngps/Dist/
 EXTRACT_SUFX=		.zip
 
 PATCH_SITES=		${MASTER_SITES}
-PATCHFILES=		0.13p1.patch 
+PATCHFILES=		0.13p1.patch
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://sandbox.rulemaker.net/ngps/m2/
