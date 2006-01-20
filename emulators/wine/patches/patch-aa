@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Make.rules.in.orig	2005-09-28 18:34:01.000000000 +0000
+--- Make.rules.in.orig	2005-10-06 18:06:04.000000000 +0200
 +++ Make.rules.in
 @@ -109,7 +109,7 @@ conf_manext     = 5
  CLEAN_FILES     = *.o *.a *.so *.ln *.$(LIBEXT) \\\#*\\\# *~ *% .\\\#* *.bak *.orig *.rej \
