@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/10/18 09:44:09 seb Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/27 13:54:58 seb Exp $
 
 DISTNAME=		digikam-0.7.4
 CATEGORIES=		graphics kde
@@ -12,6 +12,7 @@ COMMENT=		KDE frontend to gphoto2
 USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake pkg-config
 USE_LANGUAGES=		c c++
+USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
 BUILDLINK_DEPENDS.imlib2+=	imlib2>=1.2
