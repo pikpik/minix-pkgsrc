@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:23 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/14 12:06:48 wulf Exp $
 #
 
 DISTNAME=	tlf-0.9.27
@@ -18,11 +18,11 @@ PTHREAD_OPTS+=	require
 CONFIGURE_ARGS+=	--enable-hamlib
 
 post-patch:
-	${ECHO} SC_DEVICE=/dev/tty00 >> ${WRKSRC}/share/logcfg.dat
+	${ECHO} SC_DEVICE=/dev/tty00 >> ${WRKSRC:Q}/share/logcfg.dat
 
 .include "../../mk/bsd.prefs.mk"
 
-LIBS+= ${LIBOSSAUDIO}
+LIBS+=		${LIBOSSAUDIO}
 
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
