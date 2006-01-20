@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/11/03 21:42:46 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/11 09:40:39 wiz Exp $
 #
 
 DISTNAME=		sms_sdl-0.9.4a-r7.1-src
@@ -14,7 +14,7 @@ COMMENT=		SMS Plus emulator port to SDL
 
 WRKSRC=			${WRKDIR}/sms_sdl-0.9.4a-r7.1
 BUILD_DIRS=		sdl
-EXTRACT_CMD_OPTS.zip=	-aqo
+EXTRACT_OPTS_ZIP=	-aqo
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sdl/sms_sdl ${PREFIX}/bin

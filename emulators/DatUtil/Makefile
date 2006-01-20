@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/01/01 19:36:34 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/01/19 21:43:08 wiz Exp $
 #
 
 DISTNAME=		dutil227
@@ -15,7 +15,7 @@ USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}
 MAKEFILE=		makefile
 BUILD_TARGET=		datutil
-EXTRACT_CMD_OPTS.zip=	-Laaqo
+EXTRACT_OPTS_ZIP=	-Laaqo
 
 INSTALLATION_DIRS=	bin
 
