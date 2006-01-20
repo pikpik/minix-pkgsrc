@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:44:53 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/05/22 20:07:38 jlam Exp $
 
 DISTNAME=	id3v2-0.1.11
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=id3v2/}
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://id3v2.sourceforge.net/
 COMMENT=	Command line editor for id3v2 tags
 

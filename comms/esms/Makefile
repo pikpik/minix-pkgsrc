@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:07 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/08/06 06:19:04 jlam Exp $
 
 DISTNAME=	esms-0.9.5
 PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=esms/}
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://esms.sourceforge.net/
 COMMENT=	Command line SMS send tool
 

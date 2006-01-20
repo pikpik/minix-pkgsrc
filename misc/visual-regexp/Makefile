@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/01/12 21:15:12 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:23 jlam Exp $
 #
 
 DISTNAME=	visual_regexp-3.0
 CATEGORIES=	misc
 MASTER_SITES=	http://laurent.riesterer.free.fr/regexp/
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://laurent.riesterer.free.fr/regexp/
 COMMENT=	Easily design and debug regular expressions graphically
 

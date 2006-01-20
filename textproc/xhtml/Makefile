@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/06 18:24:23 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:47:43 tv Exp $
 #
 
 DISTNAME=	xhtml1
@@ -8,7 +8,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.w3.org/TR/xhtml1/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.w3.org/MarkUp/
 COMMENT=	DTDs for the Extensible Hypertext Markup Language
 

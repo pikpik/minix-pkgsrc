@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:34 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:14 jlam Exp $
 #
 
 DISTNAME=	cuetools-1.2
 CATEGORIES=	misc
 MASTER_SITES=	http://download.berlios.de/cuetools/
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://cuetools.berlios.de/
 COMMENT=	Set of utilities to manipulate cue and toc files
 

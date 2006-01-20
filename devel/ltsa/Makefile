@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/02/29 22:21:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:28 tv Exp $
 #
 
 DISTNAME=	ltsa2.2
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jnm/book/ltsa-v2/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.doc.ic.ac.uk/~jnm/book/ltsa-v2/
 COMMENT=	Labelled Transition System Analyser
 

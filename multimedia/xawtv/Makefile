@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2005/07/16 01:19:15 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/10/04 19:18:42 wiz Exp $
 #
 
 DISTNAME=	xawtv-3.95
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.bytesex.org/releases/xawtv/
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://linux.bytesex.org/xawtv/
 COMMENT=	TV application for Brooktree 848 compatible cards
 

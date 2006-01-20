@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/15 11:45:16 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/05/22 20:07:46 jlam Exp $
 #
 
 DISTNAME=	tdb-1.0.6
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tdb/}
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.sourceforge.net/projects/tdb/
 COMMENT=	Small database system which uses files to store data
 
