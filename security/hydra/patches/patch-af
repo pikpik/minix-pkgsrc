@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- hydra.c.orig	2006-01-20 00:52:40.000000000 +0000
++++ hydra.c
+@@ -154,7 +154,6 @@ typedef struct {
+ 
+ /* external vars */
+ extern char HYDRA_EXIT[5];
+-extern int errno;
+ extern int debug;
+ extern int verbose;
+ extern int waittime;
