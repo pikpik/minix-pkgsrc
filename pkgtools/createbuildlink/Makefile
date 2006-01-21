@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2005/04/11 21:47:04 tv Exp $
+# $NetBSD: Makefile,v 1.36 2005/07/21 16:25:05 wiz Exp $
 
 DISTNAME=	createbuildlink-3.9
 CATEGORIES=	pkgtools sysutils
@@ -15,7 +15,6 @@ EXTRACT_ONLY=	# empty
 USE_LANGUAGES=	# empty
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
-EXTRACT_CMD=	${ECHO}
 
 SCRIPT=		${DISTNAME:C/-.*$//}
 SCRIPTS=	${SCRIPT} substplistbasedirs

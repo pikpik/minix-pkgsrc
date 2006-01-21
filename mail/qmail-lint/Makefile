@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/16 06:58:08 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:13 jlam Exp $
 #
 
 DISTNAME=	qmail-lint-0.55
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	#
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://www.qmail.org/
 COMMENT=	Examine the qmail configuration for common errors
-
-EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run

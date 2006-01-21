@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/06/16 06:57:43 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/07/16 19:10:38 jlam Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
@@ -16,8 +16,6 @@ WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	rpm2cpio
-
-EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} .
 
 INSTALLATION_DIRS=	bin
 

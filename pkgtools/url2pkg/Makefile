@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/10/18 21:10:28 rh Exp $
+# $NetBSD: Makefile,v 1.39 2006/01/05 17:26:54 xtraeme Exp $
 #
 
 DISTNAME=	url2pkg-1.32
@@ -17,7 +17,6 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 USE_LANGUAGES=	# empty
-EXTRACT_CMD=	${ECHO}
 
 INSTALLATION_DIRS=	bin man/man8
 

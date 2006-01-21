@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/10/10 17:13:46 hira Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:49:55 rillig Exp $
 #
 
 DISTNAME=	chkjis
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www2d.biglobe.ne.jp/~msyk/software/chkjis.html
 COMMENT=	Filter library substituting vendor's own characters
 
 WRKSRC=		${WRKDIR}
-
-EXTRACT_CMD=	${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 
 VERSION=	0.18
 DIST_SUBDIR=	chkjis-${VERSION}

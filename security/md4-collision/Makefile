@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/04/11 21:45:24 tv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/18 23:43:05 agc Exp $
 
 DISTNAME=	md4coll
 PKGNAME=	md4-collision-20051118
@@ -10,7 +10,6 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.stachliu.com/collisions.html
 COMMENT=	MD5 Collision generator
 
-EXTRACT_CMD=		${CP} ${DOWNLOADED_DISTFILE} ${WRKSRC}
 WRKSRC=			${WRKDIR}
 
 INSTALLATION_DIRS=	bin
