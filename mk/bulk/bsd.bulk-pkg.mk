@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.108 2005/11/28 20:08:37 rillig Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.111 2006/01/17 22:35:13 jdc Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>
@@ -144,6 +144,10 @@ ORDERFILE?=	${BULKFILESDIR}/.order${BULK_ID}
 # File which is used as a timestamp for when the build started.  This is used
 # eventually for looking for leftover files (files not properly deinstalled)
 STARTFILE?=	${BULKFILESDIR}/.start${BULK_ID}
+
+# This top level file saves the bulk build ID. As it most often has a time
+# stamp, it is only generated once and later retrieved from this file.
+BULK_BUILD_ID_FILE?=	${BULKFILESDIR}/.bulk_build_id
 
 # File created and used by lintpkgsrc(8) to cache package metadata for
 # pruning and bulk-upload exclusions.
