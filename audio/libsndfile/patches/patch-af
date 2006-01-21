@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/ms_adpcm.c.orig	2005-09-04 00:11:39.000000000 +0000
+--- src/ms_adpcm.c.orig	2005-10-28 17:42:36.000000000 +0200
 +++ src/ms_adpcm.c
-@@ -44,7 +44,7 @@ typedef struct
+@@ -45,7 +45,7 @@ typedef struct
  	short			*samples ;
  	unsigned char	*block ;
  #if HAVE_FLEXIBLE_ARRAY

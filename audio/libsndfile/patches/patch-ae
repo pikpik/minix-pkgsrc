@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/ima_adpcm.c.orig	2005-09-04 00:11:39.000000000 +0000
+--- src/ima_adpcm.c.orig	2005-10-28 17:42:36.000000000 +0200
 +++ src/ima_adpcm.c
-@@ -37,7 +37,7 @@ typedef struct IMA_ADPCM_PRIVATE_tag
+@@ -38,7 +38,7 @@ typedef struct IMA_ADPCM_PRIVATE_tag
  	unsigned char	*block ;
  	short			*samples ;
  #if HAVE_FLEXIBLE_ARRAY

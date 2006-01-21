@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/10/03 00:13:07 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2005/09/30 13:26:02 adam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSNDFILE_BUILDLINK3_MK:=	${LIBSNDFILE_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.libsndfile?=	../../audio/libsndfile
 
 .include "../../audio/flac/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
