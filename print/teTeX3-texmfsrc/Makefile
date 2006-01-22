@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/17 22:00:13 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/07/19 10:15:30 grant Exp $
 # FreeBSD Id: Makefile,v 1.20 1997/08/05 06:56:41 tg Exp
 #
 
@@ -27,6 +27,6 @@ NO_MTREE=	yes
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/texmf
 	extract_file=${_DISTDIR:Q}/${DISTFILES:Q};			\
-	cd ${PREFIX}/share/texmf; ${EXTRACT_CMD${EXTRACT_SUFX}}
+	cd ${PREFIX}/share/texmf; ${EXTRACT_CMD}
 
 .include "../../mk/bsd.pkg.mk"
