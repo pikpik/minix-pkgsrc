@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2005/09/11 14:17:44 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:02 rillig Exp $
 
-DISTNAME=	allegro-4.1.18
-PKGREVISION=	1
+DISTNAME=	allegro-4.2.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=alleg/}
 
@@ -18,7 +17,7 @@ USE_MAKEINFO=		yes
 INFO_FILES=		allegro.info
 INSTALL_TARGET=		install install-info
 
-# NetBSD's OSS midi emulation is non-existant.
+# NetBSD's OSS midi emulation is non-existent.
 CONFIGURE_ARGS+=	--disable-ossmidi
 
 LIBS+=		${LIBOSSAUDIO}
