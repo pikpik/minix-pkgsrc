@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/12/31 12:32:43 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/01/06 15:10:06 wiz Exp $
 #
 
 DISTNAME=	dc_gui2-0.75
@@ -18,6 +18,7 @@ USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 CONFIGURE_ARGS+=	--enable-manual-db-detect
 USE_TOOLS+=		gmake pkg-config
+USE_LIBTOOL=		YES
 
 UNLIMIT_RESOURCES+=	datasize
 
