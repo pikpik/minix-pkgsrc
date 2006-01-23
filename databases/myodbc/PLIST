@@ -1,5 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:11:51 zuntum Exp $
-lib/libmyodbc.la
-share/doc/myodbc/INSTALL
-share/doc/myodbc/README-WIN32
+@comment $NetBSD$
+bin/myodbc3m
+lib/libmyodbc3.la
+${WITH_GUI}lib/libmyodbc3S.la
+lib/libmyodbc3_r.la
+share/doc/myodbc/README
+share/doc/myodbc/README.osx
+share/doc/myodbc/README.unix
+share/doc/myodbc/README.win
 @dirrm share/doc/myodbc
