@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2005/12/03 23:19:43 peter Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/29 06:21:41 jlam Exp $
 
-DISTNAME=	qstat-2.8
+DISTNAME=	qstat-2.10
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qstat/}
 
