@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2005/07/13 18:01:29 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:14 jlam Exp $
 
-DISTNAME=	Test-Cmd-1.04
+DISTNAME=	Test-Cmd-1.05
 PKGNAME=        p5-${DISTNAME}
 SVR4_PKGNAME=	p5tcm
 PKGREVISION=	2
