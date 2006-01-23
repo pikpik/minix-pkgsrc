@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/11/09 06:23:04 minskim Exp $
+# $NetBSD: Makefile,v 1.41 2005/12/10 23:34:42 salo Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -52,7 +52,7 @@ SITES_${skin}= ${SKIN_SITES}
 DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=	${SKINS}
 DISTINFO_FILE=	${.CURDIR}/distinfo
-DIST_SUBDIR=	${PKGNAME_NOREV}-20050409
+DIST_SUBDIR=	${PKGNAME_NOREV}-20060123
 
 USE_TOOLS+=		gtar
 CONFIGURE_ARGS+=	--enable-gui --disable-mencoder \
