@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/04/11 21:45:29 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/05/22 20:07:54 jlam Exp $
 #
 
 DISTNAME=		oaf-0.6.10
@@ -16,6 +16,8 @@ GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
 USE_TOOLS+=		bison lex
 USE_LIBTOOL=		YES
+
+BROKEN_GETTEXT_DETECTION=	YES
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
