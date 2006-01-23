@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/28 14:29:00 recht Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:45 jlam Exp $
+include/dvdread/cmd_print.h
 include/dvdread/dvd_reader.h
 include/dvdread/ifo_print.h
 include/dvdread/ifo_read.h
