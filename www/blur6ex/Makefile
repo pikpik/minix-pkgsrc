@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/12/05 20:51:11 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/29 06:22:22 jlam Exp $
 #
 
 DISTNAME=	blur6ex-0.1.198
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.blursoft.com/releases/
 
@@ -11,7 +12,7 @@ COMMENT=	Weblog and content framework
 
 DEPENDS+=	ap{,2}-php>=4.0.0:../../www/ap-php
 DEPENDS+=	php-mysql-[0-9]*:../../databases/php-mysql
-DEPENDS+=	mysql{,4}-server>=4.0:../../databases/mysql4-server
+DEPENDS+=	mysql-server>=4.1:../../databases/mysql5-server
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
