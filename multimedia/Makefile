@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2006/01/18 15:43:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.82 2006/01/24 02:28:49 xtraeme Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -12,6 +12,7 @@ SUBDIR+=	divxplayer
 SUBDIR+=	dumpmpeg
 SUBDIR+=	dvdauthor
 SUBDIR+=	dvdrip
+SUBDIR+=	dvdstyler
 SUBDIR+=	ffmpeg
 SUBDIR+=	flashplayer
 SUBDIR+=	fxtv
