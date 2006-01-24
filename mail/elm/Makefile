@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/01/19 11:23:44 tron Exp $
+# $NetBSD: Makefile,v 1.37 2006/01/19 14:51:38 tron Exp $
 
 DISTNAME=		elm2.5.8
 PKGNAME=		elm-2.5.8
@@ -17,14 +17,9 @@ CONFLICTS+=		elm-me-[0-9]*
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-d
+USE_TOOLS=		nroff
 
 .include "../../mk/bsd.prefs.mk"
-
-.if (${OPSYS} == Darwin)
-LIBC=			/usr/lib/libSystem.dylib
-.else
-LIBC=			/usr/lib/libc.so
-.endif
 
 pre-configure:
 	${CP} ${FILESDIR}/config.sh ${WRKSRC}/config.sh.orig
