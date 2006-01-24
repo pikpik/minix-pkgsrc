@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:39 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 20:51:10 rillig Exp $
 
 DISTNAME=		mod_dav-1.0.3-1.3.6
 PKGNAME=		ap-dav-1.0.3
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		www
 MASTER_SITES=		http://www.webdav.org/mod_dav/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:33 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/07/16 01:19:20 jlam Exp $
 #
 
 DISTNAME=		dmesg2gif-1.3
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty

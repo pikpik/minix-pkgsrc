@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/09/04 04:56:04 xtraeme Exp $
 #
 
 DISTNAME=	cwm-3
+PKGREVISION=	1
 CATEGORIES=	wm
 MASTER_SITES=	http://monkey.org/~marius/cwm/
 

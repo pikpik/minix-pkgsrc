@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/11/25 22:17:15 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/31 00:04:28 wiz Exp $
 #
 
 DISTNAME=		uim-1.0.1
+PKGREVISION=		1
 CATEGORIES=		inputmethod
 MASTER_SITES=		http://uim.freedesktop.org/releases/
 

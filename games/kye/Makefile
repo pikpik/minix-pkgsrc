@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/05/18 16:00:08 drochner Exp $
 #
 
 DISTNAME=		kye-0.1.0
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		http://games.moria.org.uk/kye/
 

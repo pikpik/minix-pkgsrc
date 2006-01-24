@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/05/23 08:48:52 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/16 06:57:40 jlam Exp $
 #
 
 DISTNAME=		xmms-meta-timidity-0.2
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		# empty
 DISTFILES=		# empty

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2005/12/29 06:22:19 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2006/01/11 15:18:17 xtraeme Exp $
 
 DISTNAME=	xcdroast-${DIST_VER}
 PKGNAME=	xcdroast-${DIST_VER:S/alpha/a/}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xcdroast/}
 

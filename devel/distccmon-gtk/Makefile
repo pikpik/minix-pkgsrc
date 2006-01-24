@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/10 09:55:16 jmmv Exp $
 
 PKGNAME=	${DISTNAME:S/-/-gtk-/}
+PKGREVISION=	1
 COMMENT=	Graphical monitor for distcc, the distributed C/C++ compiler
 
 .include "../../devel/distcc/Makefile.common"

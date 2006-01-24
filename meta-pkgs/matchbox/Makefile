@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/12/31 14:56:58 peter Exp $
 #
 
 DISTNAME=	matchbox-0.9.5
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs x11 wm
 MASTER_SITES=	# empty
 DISTFILES=	# empty

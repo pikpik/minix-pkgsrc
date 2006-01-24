@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2005/07/29 16:12:04 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2005/10/30 18:32:33 wiz Exp $
 #
 
 .include "../../multimedia/xine-lib/Makefile.common"
 
 PKGNAME=	${XINE_PKGNAME:S/lib/arts/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 COMMENT=	The aRts audio output plugin for xine-lib
 

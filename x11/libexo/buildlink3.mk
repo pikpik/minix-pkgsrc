@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/10/03 04:51:33 minskim Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2005/10/03 05:10:03 minskim Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 EXO_BUILDLINK3_MK:=	${EXO_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	exo
 
 .if !empty(EXO_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.exo+=		exo>=0.3.0
+BUILDLINK_RECOMMENDED.exo?=	exo>=0.3.0nb1
 BUILDLINK_PKGSRCDIR.exo?=	../../x11/libexo
 .endif	# EXO_BUILDLINK3_MK
 

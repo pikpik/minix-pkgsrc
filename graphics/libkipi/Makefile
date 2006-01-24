@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/11/02 06:56:55 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/27 13:54:58 seb Exp $
 
 DISTNAME=	libkipi-0.1.2
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=	.tar.bz2

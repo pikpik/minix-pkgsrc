@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2005/06/24 21:26:24 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 23:55:23 rillig Exp $
 
 DISTNAME=		control-center-1.4.0.5
+PKGREVISION=		1
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/control-center/1.4/}
 

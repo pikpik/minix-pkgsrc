@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:47 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/29 06:22:00 jlam Exp $
 #
 
 DISTNAME=		netdisco-0.94_with_mibs
 PKGNAME=		netdisco-0.94
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=netdisco/}
 

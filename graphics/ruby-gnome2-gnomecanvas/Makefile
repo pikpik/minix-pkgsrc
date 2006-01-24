@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/01/08 03:57:14 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2006/01/15 16:26:59 minskim Exp $
 #
 
 PKGNAME=		ruby-gnome2-gnomecanvas-${VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 COMMENT=		Ruby binding of GnomeCanvas-2.x
 CATEGORIES=		graphics gnome
 

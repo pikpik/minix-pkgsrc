@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2005/08/10 20:56:12 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2005/08/23 00:02:20 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gnetlist-${PKGVERSION}
 PKGNAME=		gnetlist-${PKGVERSION}
+PKGREVISION=		1
 CATEGORIES=		cad
 
 MAINTAINER=		dmcmahill@NetBSD.org

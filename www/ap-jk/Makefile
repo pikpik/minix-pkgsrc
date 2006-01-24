@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2005/12/26 23:39:34 schmonz Exp $
+# $NetBSD: Makefile,v 1.31 2006/01/04 04:29:08 schmonz Exp $
 
 DISTNAME=	jakarta-tomcat-connectors-${JK_VERSION}-src
 PKGNAME=	ap-jk-${JK_VERSION}
 JK_VERSION=	1.2.8
+PKGREVISION=	1
 CATEGORIES=	www java
 MASTER_SITES=	http://www.apache.org/dist/jakarta/tomcat-connectors/jk/source/jk-${JK_VERSION}/
 

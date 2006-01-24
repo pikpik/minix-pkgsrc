@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/06/01 18:03:26 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/31 22:05:22 recht Exp $
 #
 
 DISTNAME=	wmi-10
+PKGREVISION=	1
 CATEGORIES=	wm
 MASTER_SITES=	http://wmii.de/download/
 

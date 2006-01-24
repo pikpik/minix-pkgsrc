@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/10/26 04:09:37 dmcmahill Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2005/12/05 20:50:37 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
@@ -13,6 +13,7 @@ BUILDLINK_PACKAGES+=	scilab
 
 .if !empty(SCILAB_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.scilab+=	scilab>=3.0
+BUILDLINK_RECOMMENDED.scilab?=	scilab>=3.1.1nb1
 BUILDLINK_PKGSRCDIR.scilab?=	../../math/scilab
 
 BUILDLINK_FILES.scilab+=	lib/scilab-${SCIVERSION}/Version.incl

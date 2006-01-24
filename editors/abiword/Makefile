@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.93 2005/12/21 22:04:59 reed Exp $
+# $NetBSD: Makefile,v 1.94 2006/01/17 08:07:38 adam Exp $
 
 .include "Makefile.common"
 COMMENT=	Open Source cross-platform word processor
+PKGREVISION=	1
 
 # GTK1 version and previous name of the GTK2 version
 CONFLICTS=	abiword-personal-[0-9]* abiword2-[0-9]*

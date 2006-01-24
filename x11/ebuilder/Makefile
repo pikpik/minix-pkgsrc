@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2005/08/27 07:33:30 grant Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/05 20:51:15 rillig Exp $
 #
 
 DISTNAME=	ebuilder-0.56d
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11 devel
 MASTER_SITES=	http://web.inter.nl.net/users/eavdmeer/src/
 

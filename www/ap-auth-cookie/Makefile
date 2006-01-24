@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/05/15 21:54:50 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2005/12/05 20:51:10 rillig Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
@@ -6,6 +6,7 @@
 
 DISTNAME=	mod_auth_cookie.c
 PKGNAME=	ap-auth-cookie-1.9
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.kciLink.com/pub/
 EXTRACT_SUFX=	.gz

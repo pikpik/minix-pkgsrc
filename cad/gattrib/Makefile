@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/07/21 16:29:44 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/10 20:56:12 jlam Exp $
 
 DISTNAME=		geda-gattrib-${PKGVERSION}
 PKGNAME=		gattrib-${PKGVERSION}
+PKGREVISION=		1
 CATEGORIES=		cad
 
 MAINTAINER=		wulf@NetBSD.org

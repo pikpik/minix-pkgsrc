@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/08/19 16:06:03 drochner Exp $
 #
 
 DISTNAME=		python-pslib_0.2.0.orig
 PKGNAME=		${PYPKGPREFIX}-pslib-0.2.0
+PKGREVISION=		1
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pslib/}
 

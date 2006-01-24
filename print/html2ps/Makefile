@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2005/12/04 16:34:34 kim Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/04 17:02:54 kim Exp $
 #
 
 DISTNAME=	html2ps-1.0b4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://www.tdb.uu.se/~jan/
 

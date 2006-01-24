@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2005/08/21 11:30:03 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2005/10/14 21:44:31 jmmv Exp $
 #
 
 DISTNAME=		at-spi-1.6.6
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/at-spi/1.6/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2004/12/28 23:18:16 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/05/31 22:09:35 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 CONTROL_CENTER_BUILDLINK3_MK:=	${CONTROL_CENTER_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	control-center
 
 .if !empty(CONTROL_CENTER_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.control-center+=	control-center>=1.4.0.4nb9
-BUILDLINK_RECOMMENDED.control-center+=	control-center>=1.4.0.4nb10
+BUILDLINK_RECOMMENDED.control-center+=	control-center>=1.4.0.5nb1
 BUILDLINK_PKGSRCDIR.control-center?=	../../x11/control-center
 .endif	# CONTROL_CENTER_BUILDLINK3_MK
 

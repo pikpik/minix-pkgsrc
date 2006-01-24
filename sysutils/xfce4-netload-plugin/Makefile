@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/10/28 06:59:18 martti Exp $
+# $NetBSD: Makefile,v 1.12 2005/11/09 07:09:04 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	0.3.3
 
 DISTNAME=	xfce4-netload-plugin-${XFCE4_VERSION}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.berlios.de/xfce-goodies/
 COMMENT=	Xfce network load plugin

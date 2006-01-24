@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/05/08 15:19:18 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:49 tv Exp $
 #
 
 DISTNAME=	mod_access_referer-1.0.2
 PKGNAME=	ap-access-referer-1.0.2
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=accessreferer/}
 

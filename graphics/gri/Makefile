@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2005/07/16 01:19:11 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/11/28 06:41:20 jlam Exp $
 
 DISTNAME=		gri-2.12.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gri/}
 EXTRACT_SUFX=		.tgz

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/16 13:01:16 rxg Exp $
 #
 
 DISTNAME=		gcin-1.1.5
+PKGREVISION=		1
 CATEGORIES=		inputmethod
 MASTER_SITES=		http://www.csie.nctu.edu.tw/~cp76/gcin/download/
 EXTRACT_SUFX=		.tar.bz2

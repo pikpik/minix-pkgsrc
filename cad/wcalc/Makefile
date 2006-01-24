@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/12/04 15:49:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/08 06:31:54 dmcmahill Exp $
 #
 
 .include "../../cad/wcalc/Makefile.common"
+PKGREVISION=	1
 
 COMMENT=	Meta-pkg for the Wcalc Transmission Line Analysis/Synthesis Calculator
 

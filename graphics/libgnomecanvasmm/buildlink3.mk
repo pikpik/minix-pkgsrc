@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/07/22 21:54:06 adam Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 LIBGNOMECANVASMM_BUILDLINK3_MK:=	${LIBGNOMECANVASMM_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libgnomecanvasmm
 
 .if !empty(LIBGNOMECANVASMM_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libgnomecanvasmm+=	libgnomecanvasmm>=2.10.0
+BUILDLINK_RECOMMENDED.libgnomecanvasmm?=	libgnomecanvasmm>=2.12.0nb1
 BUILDLINK_PKGSRCDIR.libgnomecanvasmm?=	../../graphics/libgnomecanvasmm
 .endif	# LIBGNOMECANVASMM_BUILDLINK3_MK
 

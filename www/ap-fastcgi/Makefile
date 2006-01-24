@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2004/05/08 15:19:18 grant Exp $
+# $NetBSD: Makefile,v 1.27 2004/10/28 21:01:50 cube Exp $
 #
 
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME:S/mod_/ap-/}
+PKGREVISION=	1
 
 APACHE_MODULE=	yes
 APACHE_MODULE_NAME=	mod_fastcgi.so

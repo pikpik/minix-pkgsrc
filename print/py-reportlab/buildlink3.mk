@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/05/05 04:03:19 snj Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 PYREPORTLAB_BUILDLINK3_MK:=	${PYREPORTLAB_BUILDLINK3_MK}+
@@ -14,6 +14,7 @@ BUILDLINK_PACKAGES+=	pyreportlab
 
 .if !empty(PYREPORTLAB_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.pyreportlab+=		${PYPKGPREFIX}-reportlab-[0-9]*
+BUILDLINK_RECOMMENDED.pyreportlab?=	${PYPKGPREFIX}-reportlab>=1.20nb1
 BUILDLINK_PKGSRCDIR.pyreportlab?=	../../print/py-reportlab
 .endif	# PYREPORTLAB_BUILDLINK3_MK
 

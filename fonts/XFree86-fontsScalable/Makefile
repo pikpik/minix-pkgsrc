@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/09/28 20:52:21 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:13 rillig Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	XFree86-fontsScalable-${XF_VER}
+PKGREVISION=	1
 CATEGORIES=	fonts x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 DISTFILES=	XFree86-${XF_VER}-src-4.tgz XFree86-${XF_VER}-src-5.tgz

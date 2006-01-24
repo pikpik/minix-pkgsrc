@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/12/30 11:56:01 rh Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 EDCOMMON_BUILDLINK3_MK:=	${EDCOMMON_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	edcommon
 
 .if !empty(EDCOMMON_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.edcommon+=	edcommon>=32
+BUILDLINK_RECOMMENDED.edcommon?=	edcommon>=32nb1
 BUILDLINK_PKGSRCDIR.edcommon?=	../../devel/edcommon
 .endif	# EDCOMMON_BUILDLINK3_MK
 

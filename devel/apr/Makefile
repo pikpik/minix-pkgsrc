@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.37 2005/10/17 10:28:46 tron Exp $
+# $NetBSD: Makefile,v 1.38 2005/12/05 20:50:02 rillig Exp $
 
 .include "../../www/apache2/Makefile.common"
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://apr.apache.org/

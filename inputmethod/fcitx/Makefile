@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/16 13:04:07 rxg Exp $
 #
 
 DISTNAME=		fcitx-3.1.1
+PKGREVISION=		1
 CATEGORIES=		inputmethod
 MASTER_SITES=		http://www.fcitx.org/download/
 EXTRACT_SUFX=		.tar.bz2

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/08/24 14:31:15 augustss Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:51:10 rillig Exp $
 #
 
 DISTNAME=	album_themes
 PKGNAME=	album_themes-20050507
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://marginalhacks.com/bin/
 

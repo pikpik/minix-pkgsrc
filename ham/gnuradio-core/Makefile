@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/12/17 07:37:25 wulf Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/12 17:36:01 wiz Exp $
 
 DISTNAME=	gnuradio-core-2.6
 COMMENT=        Runtime system and DSP blocks for GNU Radio
-PKGREVISION=	1
+PKGREVISION=	2
 
 PYTHON_PATCH_SCRIPTS+=		src/lib/filter/generate_all.py
 PYTHON_PATCH_SCRIPTS+=		src/lib/general/generate_all.py

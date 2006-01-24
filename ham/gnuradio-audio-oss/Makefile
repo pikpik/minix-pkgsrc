@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/07 23:17:19 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/11 11:24:33 wulf Exp $
 
 VERSION=	0.7
 DISTNAME=	gr-audio-oss-${VERSION}
 PKGNAME=	gnuradio-audio-oss-${VERSION}
+PKGREVISION=	1
 WRKSRC=		${WRKDIR}/${DISTNAME}
 COMMENT=	Open Sound System support for GNU Radio
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/02/04 17:24:16 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:58 tv Exp $
 #
 
 DISTNAME=		kenosis-0.941
 PKGNAME=		${PYPKGPREFIX}-kenosis-0.94.1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kenosis/}
 

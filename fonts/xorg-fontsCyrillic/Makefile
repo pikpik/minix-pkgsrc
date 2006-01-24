@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/03/30 20:40:31 hira Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/23 20:53:27 xtraeme Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fontsCyrillic-${XORG_VER}
+PKGREVISION=	1
 CATEGORIES=	fonts x11
 MASTER_SITES=	${MASTER_SITE_XORG}
 

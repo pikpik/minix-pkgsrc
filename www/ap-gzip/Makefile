@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/05/08 15:19:18 grant Exp $
+# $NetBSD: Makefile,v 1.11 2005/04/11 21:47:50 tv Exp $
 #
 
 DISTNAME=	mod_gzip-1.3.26.1a
 PKGNAME=	${DISTNAME:C|mod_|ap-|}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mod-gzip/}
 EXTRACT_SUFX=	.tgz

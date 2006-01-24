@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2005/07/21 16:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/10 20:56:29 jlam Exp $
 #
 
 DISTNAME=		gtk-chtheme-0.3.1
 PKGNAME=		gtk2-chtheme-0.3.1
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://plasmasturm.org/programs/gtk-chtheme/
 EXTRACT_SUFX=		.tar.bz2

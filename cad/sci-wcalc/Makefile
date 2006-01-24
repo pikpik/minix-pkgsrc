@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/12/05 23:55:02 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/08 06:31:54 dmcmahill Exp $
 #
 
 .include "../../cad/wcalc/Makefile.common"
 PKGNAME=	sci-${DISTNAME}
+PKGREVISION=	1
 
 COMMENT=	Scilab Based Transmission Line Analysis/Synthesis Calculator
 
