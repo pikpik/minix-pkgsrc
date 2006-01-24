@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2004/10/03 00:13:23 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2005/07/03 15:23:33 wulf Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 RRDTOOL_BUILDLINK3_MK:=	${RRDTOOL_BUILDLINK3_MK}+
@@ -21,4 +21,4 @@ BUILDLINK_PKGSRCDIR.rrdtool?=	../../databases/rrdtool
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../www/cgilib/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
