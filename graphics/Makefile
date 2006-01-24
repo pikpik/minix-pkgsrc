@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.409 2006/01/08 03:58:46 minskim Exp $
+# $NetBSD: Makefile,v 1.410 2006/01/18 12:44:00 jmmv Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -292,6 +292,7 @@ SUBDIR+=	vtk-data
 SUBDIR+=	vtk-docs
 SUBDIR+=	vtk-python
 SUBDIR+=	wmphoto
+SUBDIR+=	wxsvg
 SUBDIR+=	x11rec
 SUBDIR+=	xart
 SUBDIR+=	xbmbrowser
