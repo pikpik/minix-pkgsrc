@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/14 12:06:48 wulf Exp $
+# $NetBSD: Makefile,v 1.8 2006/01/20 13:09:59 rillig Exp $
 #
 
 DISTNAME=	tlf-0.9.27
@@ -14,6 +14,7 @@ USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 BUILD_USES_MSGFMT=yes
 PTHREAD_OPTS+=	require
+PTHREAD_AUTO_VARS=	yes
 
 CONFIGURE_ARGS+=	--enable-hamlib
 
