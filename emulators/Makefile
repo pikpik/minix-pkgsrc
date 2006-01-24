@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.139 2005/10/21 03:52:01 minskim Exp $
+# $NetBSD: Makefile,v 1.140 2005/11/20 13:32:03 rillig Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -33,6 +33,7 @@ SUBDIR+=	dega
 SUBDIR+=	dgen
 SUBDIR+=	dosbox
 SUBDIR+=	doscmd
+SUBDIR+=	e-uae
 SUBDIR+=	fceu
 SUBDIR+=	fmsx
 SUBDIR+=	freebsd_lib
