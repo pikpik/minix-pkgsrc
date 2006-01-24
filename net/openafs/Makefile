@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/05 23:55:14 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/29 06:22:00 jlam Exp $
 
 DISTNAME=	openafs-1.4.0-src
 PKGREVISION=	1
@@ -11,9 +11,10 @@ MAINTAINER=	gendalia@NetBSD.org
 HOMEPAGE=	http://www.openafs.org/
 COMMENT=	File system for sharing, scalability and transparent data migration
 
+CONFLICTS+=	arla-[0-9]*
+CONFLICTS+=	heimdal-[0-9]*
 CONFLICTS+=	lwp-[0-9]*
 CONFLICTS+=	rx-[0-9]*
-CONFLICTS+=	arla-[0-9]*
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-bitmap-later
