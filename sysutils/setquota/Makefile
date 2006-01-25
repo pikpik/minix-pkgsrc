@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/03 21:52:33 kristerw Exp $
 #
 
 DISTNAME=	setquota-0.1
@@ -11,7 +11,7 @@ HOMEPAGE=	# unknown
 COMMENT=	Command line quota tools
 
 # BSD oriented, haven't checked on other environment now
-ONLY_FOR_PLATFORM=	NetBSD-*-*
+ONLY_FOR_PLATFORM=	NetBSD-*-* DragonFly-*-*
 
 WRKSRC=		${WRKDIR}/setquota/
 
