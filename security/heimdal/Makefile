@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/01/24 18:55:21 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2006/01/24 18:56:23 wiz Exp $
 
 DISTNAME=	heimdal-0.7.1
 PKGREVISION=	2
@@ -36,6 +36,9 @@ CFLAGS.Darwin+=		-DBIND_8_COMPAT
 # to the BSD <vis.h> header.
 OPSYSVARS+=		CONFIGURE_ENV
 CONFIGURE_ENV.SunOS+=	ac_cv_header_vis_h=no
+
+# Force building and installing Heimdal's own compile_et.
+CONFIGURE_ENV+=		COMPILE_ET=no
 
 .include "../../mk/bsd.prefs.mk"
 
