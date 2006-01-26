@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.428 2006/01/05 19:15:18 garbled Exp $
+# $NetBSD: Makefile,v 1.429 2006/01/11 19:01:08 salo Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -262,6 +262,7 @@ SUBDIR+=	py-nevow
 SUBDIR+=	py-pcgi
 SUBDIR+=	py-zpublisher
 SUBDIR+=	qDecoder
+SUBDIR+=	raggle
 SUBDIR+=	ruby-actionpack
 SUBDIR+=	ruby-actionwebservice
 SUBDIR+=	ruby-borges
