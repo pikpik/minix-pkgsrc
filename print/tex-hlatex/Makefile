@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/12/26 23:39:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/04 04:29:08 schmonz Exp $
 
 DISTNAME=	HLaTeX-1.0.1
 PKGNAME=	tex-hlatex-${DISTNAME:S/HLaTeX-//}
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://ftp.ktug.or.kr/pub/ktug/hlatex/
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://project.ktug.or.kr/hlatex/
 COMMENT=	LaTeX package to typeset Hangul
-
-BROKEN_IN=	pkgsrc-2005Q4
 
 DEPENDS+=	tex-uhc-fonts-base>=1.0:../../fonts/tex-uhc-fonts-base
 
