@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/js
+include/jsapi.h
+include/jsautocfg.h
+include/jscompat.h
+include/jslong.h
+include/jsosdep.h
+include/jsotypes.h
+include/jspubtd.h
+include/jstypes.h
+lib/libjs.so
