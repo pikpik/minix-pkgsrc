@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:09 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/01/16 14:34:34 tonio Exp $
 #
 
-DISTNAME=	coq-8.0pl2
-PKGREVISION=	1
+DISTNAME=	coq-8.0pl3
 CATEGORIES=	lang math
-MASTER_SITES=	ftp://ftp.inria.fr/INRIA/coq/V8.0pl2/
+MASTER_SITES=	ftp://ftp.inria.fr/INRIA/coq/V8.0pl3/
 
 MAINTAINER=	richards+netbsd@CS.Princeton.EDU
 HOMEPAGE=	http://coq.inria.fr/
