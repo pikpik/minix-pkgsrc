@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.716 2006/01/21 08:12:55 agc Exp $
+# $NetBSD: Makefile,v 1.717 2006/01/26 23:01:29 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -491,6 +491,7 @@ SUBDIR+=	p5-Tie-IxHash
 SUBDIR+=	p5-Tree-DAG_Node
 SUBDIR+=	p5-Tree-Simple
 SUBDIR+=	p5-UNIVERSAL-moniker
+SUBDIR+=	p5-UNIVERSAL-require
 SUBDIR+=	p5-Want
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-capitalization
