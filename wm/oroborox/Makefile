@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/24 07:32:40 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/29 14:13:11 rxg Exp $
 #
 
 DISTNAME=	OroboROX-0.9.7.9
@@ -12,7 +12,7 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://roxos.sunsite.dk/dev-contrib/guido/
 COMMENT=	The lightweight Window Manager for the ROX Desktop
 
-DEPENDS+=	rox-lib>=2.0.2nb1:../../sysutils/rox-lib
+DEPENDS+=	rox-lib>=2.0.2nb2:../../devel/rox-lib
 
 WRKSRC=		${WRKDIR}/OroboROX
 DIST_SUBDIR=	rox
