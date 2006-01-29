@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.252 2006/01/16 13:20:12 rxg Exp $
+# $NetBSD: Makefile,v 1.253 2006/01/28 20:48:19 agc Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -201,6 +201,7 @@ SUBDIR+=	reed
 SUBDIR+=	root
 SUBDIR+=	root-tail
 SUBDIR+=	routeplanner-cli
+SUBDIR+=	rox-memo
 SUBDIR+=	rpm
 SUBDIR+=	rubygems
 SUBDIR+=	sch
