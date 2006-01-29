@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.597 2006/01/15 16:25:08 adrianp Exp $
+# $NetBSD: Makefile,v 1.598 2006/01/25 12:54:06 salo Exp $
 #
 
 COMMENT=	Networking tools
@@ -69,6 +69,7 @@ SUBDIR+=	dip
 SUBDIR+=	djbdns
 SUBDIR+=	djbdns-run
 SUBDIR+=	dlint
+SUBDIR+=	dnsdoctor
 SUBDIR+=	dnsmasq
 SUBDIR+=	dnstop
 SUBDIR+=	dnstracer
