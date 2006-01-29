@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2005/05/22 20:07:43 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/11/25 19:58:59 wiz Exp $
 
-DISTNAME=	micq-0.5.0.4
+DISTNAME=	micq-0.5.1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.micq.org/source/ \
 		ftp://www.micq.org/pub/micq/source/
