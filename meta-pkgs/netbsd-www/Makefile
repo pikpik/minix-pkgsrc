@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/09/28 19:16:18 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2006/01/24 07:32:21 wiz Exp $
 #
 
 DISTNAME=	netbsd-www-1.4
@@ -19,6 +19,7 @@ DEPENDS+=	libxslt>=1.0.20:../../textproc/libxslt
 DEPENDS+=	ImageMagick>=5.5.7.11nb1:../../graphics/ImageMagick
 DEPENDS+=	xearth>=1.1:../../x11/xearth
 DEPENDS+=	opensp>=1.1:../../textproc/opensp
+DEPENDS+=	psutils>=1.17:../../print/psutils
 DEPENDS+=	w3m>=0.4:../../www/w3m
 
 USE_TOOLS+=	perl:run
