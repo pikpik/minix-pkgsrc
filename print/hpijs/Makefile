@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2005/09/28 20:52:25 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/05 20:50:53 rillig Exp $
 
-DISTNAME=	hpijs-1.7.1
+DISTNAME=	hpijs-2.1.4
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hpinkjet/}
 
@@ -27,4 +27,5 @@ do-install:
 	cd ${WRKSRC} && ${CP} ppd/HP* ${PREFIX}/share/ppd/
 	${GZIP_CMD} ${PREFIX}/share/ppd/HP*.ppd
 
+.include "../../graphics/jpeg/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
