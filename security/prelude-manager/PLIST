@@ -1,0 +1,14 @@
+@comment $NetBSD$
+bin/prelude-manager
+include/prelude-manager/prelude-manager.h
+lib/prelude-manager/filters/idmef-criteria.la
+lib/prelude-manager/reports/db.la
+lib/prelude-manager/reports/debug.la
+lib/prelude-manager/reports/relaying.la
+lib/prelude-manager/reports/textmod.la
+sbin/run-prelude-manager
+share/examples/rc.d/preludemanager
+@dirrm lib/prelude-manager/reports
+@dirrm lib/prelude-manager/filters
+@dirrm lib/prelude-manager
+@dirrm include/prelude-manager
