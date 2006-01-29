@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2005/12/28 22:33:36 is Exp $
+# $NetBSD: Makefile,v 1.115 2005/12/30 10:52:09 martti Exp $
 #
 
 COMMENT=	Editors
@@ -64,6 +64,7 @@ SUBDIR+=	nvi
 SUBDIR+=	nvi-m17n
 SUBDIR+=	pico
 SUBDIR+=	poedit
+SUBDIR+=	rox-edit
 SUBDIR+=	sam
 SUBDIR+=	speedbar
 SUBDIR+=	ssam
