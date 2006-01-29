@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.88 2005/12/02 17:10:04 wiz Exp $
+# $NetBSD: Makefile,v 1.89 2005/12/05 20:50:02 rillig Exp $
 #
 
-DISTNAME=	cvs-1.11.20
+DISTNAME=	cvs-1.11.21
 CATEGORIES=	devel
-PKGREVISION=	2
-MASTER_SITES=	http://ftp.gnu.org/non-gnu/cvs/
+MASTER_SITES=	http://ftp.gnu.org/non-gnu/cvs/source/stable/1.11.21/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@NetBSD.org
