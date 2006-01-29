@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.718 2006/01/28 00:37:40 rillig Exp $
+# $NetBSD: Makefile,v 1.719 2006/01/29 16:05:49 shannonjr Exp $
 #
 
 COMMENT=	Development utilities
@@ -566,6 +566,7 @@ SUBDIR+=	re2c
 SUBDIR+=	readline
 SUBDIR+=	refinecvs
 SUBDIR+=	roundup
+SUBDIR+=	rox-lib
 SUBDIR+=	rpc2
 SUBDIR+=	rsltc
 SUBDIR+=	rt-mysql
