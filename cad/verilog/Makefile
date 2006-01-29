@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/05/22 20:07:41 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/05/22 20:28:47 jlam Exp $
 #
 
 DISTNAME=	verilog-0.8.1
@@ -12,6 +12,8 @@ COMMENT=	Verilog simulation and synthesis tool (stable release version)
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFLICTS+=	verilog-current-[0-9]*
+
+USE_LANGUAGES=	c c++
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		bison gmake lex
