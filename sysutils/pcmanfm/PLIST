@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/pcmanfm
+${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/pcmanfm.mo
+${PKGLOCALEDIR}/locale/hu/LC_MESSAGES/pcmanfm.mo
+${PKGLOCALEDIR}/locale/zh_CN/LC_MESSAGES/pcmanfm.mo
+${PKGLOCALEDIR}/locale/zh_TW/LC_MESSAGES/pcmanfm.mo
