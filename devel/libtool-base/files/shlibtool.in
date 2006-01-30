@@ -1,0 +1,4 @@
+#!@SH@
+# $NetBSD$
+
+exec @PREFIX@/bin/libtool --tag=disable-static "$@"
