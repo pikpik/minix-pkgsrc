@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/11/28 06:41:20 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2006/01/24 07:32:15 wiz Exp $
 
 DISTNAME=		gri-2.12.5
 PKGREVISION=	2
@@ -14,7 +14,7 @@ BUILD_DEPENDS+=		ImageMagick-[0-9]*:../../graphics/ImageMagick
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake gs:run perl
-REPLACE_PERL=		gri_merge gri_unpage
+REPLACE_PERL+=		gri_merge gri_unpage
 
 USE_MAKEINFO=		yes
 INFO_FILES=		gri.info
