@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libperditiondb_odbc.la
+man/man8/perditiondb_odbc_makedb.8
+sbin/perditiondb_odbc_makedb

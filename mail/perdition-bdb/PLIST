@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/makebdb
+lib/libperditiondb_bdb.la
+man/man1/makebdb.1

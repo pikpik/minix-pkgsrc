@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/makegdbm
+lib/libperditiondb_gdbm.la
+man/man1/makegdbm.1

@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libperditiondb_ldap.la
+man/man8/perditiondb_ldap_makedb.8
+sbin/perditiondb_ldap_makedb
