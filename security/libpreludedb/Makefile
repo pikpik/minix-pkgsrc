@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/29 15:55:25 shannonjr Exp $
 #
 
-DISTNAME=		libpreludedb-0.9.2
+DISTNAME=		libpreludedb-0.9.3
 CATEGORIES=		security
 MASTER_SITES=		http://www.prelude-ids.org/download/releases/
 
