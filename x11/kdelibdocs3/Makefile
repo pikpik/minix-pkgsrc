@@ -2,7 +2,6 @@
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGNAME=	kdelibdocs-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	x11 devel
 
 COMMENT=	KDE library documentation
