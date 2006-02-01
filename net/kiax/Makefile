@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/25 16:39:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2006/01/30 22:36:01 wiz Exp $
 #
 
 DISTNAME=		kiax-0.8.4
@@ -19,7 +19,7 @@ do-configure:
 	(cd ${WRKSRC} && ${QTDIR}/bin/qmake -o Makefile qkiax.pro)
 	(cd ${WRKSRC}/src && ${QTDIR}/bin/qmake -o Makefile src.pro)
 
-LIBS+=			${LIBOSSAUDIO}
+LDFLAGS+=		${LIBOSSAUDIO}
 
 # Fix hardcoded paths
 SUBST_CLASSES+=		path
