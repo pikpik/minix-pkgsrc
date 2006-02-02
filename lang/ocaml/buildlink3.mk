@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2005/02/04 21:35:51 adrianp Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/01/27 19:03:16 tonio Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OCAML_BUILDLINK3_MK:=	${OCAML_BUILDLINK3_MK}+
@@ -28,22 +28,24 @@ OCAML_WRAPPERS=		ocamlc ocamlc.opt ocamlcp ocamlmklib ocamlmktop \
 			ocamlopt ocamlopt.opt
 OCAMLBIN_WRAPPERS=	ocaml
 
+.PHONY: ocaml-wrappers
 ocaml-wrappers:
-	${_PKG_SILENT}${_PKG_DEBUG} \
-	for w in ${OCAML_WRAPPERS}; do \
-		${SED}  -e 's|@SH@|${SH}|g' \
+	${_PKG_SILENT}${_PKG_DEBUG} set -e;				\
+	for w in ${OCAML_WRAPPERS}; do					\
+		${SED}  -e 's|@SH@|${SH}|g'				\
 			-e 's|@OCAML_PREFIX@|${BUILDLINK_PREFIX.ocaml}|g' \
-			-e 's|@CFLAGS@|${CFLAGS}|g' \
-			-e 's|@LDFLAGS@|${LDFLAGS}|g' \
-			<${.CURDIR}/../../lang/ocaml/files/wrapper.sh \
-			>${BUILDLINK_DIR}/bin/$$w; \
-		${CHMOD} +x ${BUILDLINK_DIR}/bin/$$w; \
+			-e 's|@CFLAGS@|${CFLAGS}|g'			\
+			-e 's|@LDFLAGS@|${LDFLAGS}|g'			\
+			< ${.CURDIR:Q}/../../lang/ocaml/files/wrapper.sh \
+			> ${BUILDLINK_DIR:Q}/bin/"$$w";			\
+		${CHMOD} +x ${BUILDLINK_DIR:Q}/bin/"$$w";		\
 	done
-	for w in ${OCAMLBIN_WRAPPERS}; do \
-		${LN} -s ${BUILDLINK_PREFIX.ocaml}/bin/$$w \
-		         ${BUILDLINK_DIR}/bin/$$w; \
+	${_PKG_SILENT}${_PKG_DEBUG} set -e;				\
+	for w in ${OCAMLBIN_WRAPPERS}; do				\
+		${LN} -s ${BUILDLINK_PREFIX.ocaml:Q}/bin/"$$w"		\
+		         ${BUILDLINK_DIR:Q}/bin/"$$w";			\
 	done
 
 .endif	# OCAML_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
