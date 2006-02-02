@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/01/20 12:11:21 adam Exp $
+# $NetBSD: Makefile,v 1.18 2006/01/31 21:28:34 adam Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
@@ -29,5 +29,6 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
