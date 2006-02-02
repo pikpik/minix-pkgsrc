@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/08/06 06:19:35 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/11/01 12:57:05 wiz Exp $
 
-DISTNAME=	YAML-0.39
+DISTNAME=	YAML-0.57
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5 textproc
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=YAML/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/I/IN/INGY/}
 
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/YAML/
