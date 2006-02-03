@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/bacula-tray-monitor
+share/examples/bacula/tray-monitor.conf
+@unexec ${RMDIR} %D/share/examples/bacula 2>/dev/null || ${TRUE}
