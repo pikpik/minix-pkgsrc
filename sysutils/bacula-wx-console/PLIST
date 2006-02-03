@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/wx-console
+share/examples/bacula/wx-console.conf
+@unexec ${RMDIR} %D/share/examples/bacula 2>/dev/null || ${TRUE}
