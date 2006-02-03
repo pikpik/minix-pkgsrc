@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.334 2006/02/01 00:54:05 markd Exp $
+# $NetBSD: Makefile,v 1.335 2006/02/03 08:23:44 ghen Exp $
 #
 
 COMMENT=	System utilities
@@ -107,6 +107,7 @@ SUBDIR+=	hfsutils
 SUBDIR+=	i2ocfg
 SUBDIR+=	idesk
 SUBDIR+=	ipw-firmware
+SUBDIR+=	ir-account
 SUBDIR+=	isapnptools
 SUBDIR+=	iwi-firmware
 SUBDIR+=	k3b
