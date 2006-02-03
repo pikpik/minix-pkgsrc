@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/01/21 11:55:14 rxg Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/24 07:32:48 wiz Exp $
 #
 
 DISTNAME=	kazehakase-0.3.3
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=kazehakase/17700/}
 
-MAINTAINER=	lems@gmx.net
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://kazehakase.sourceforge.jp/
 COMMENT=	Web browser with multiple layout engines support
 

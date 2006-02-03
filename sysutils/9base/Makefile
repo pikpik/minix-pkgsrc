@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/12/06 18:50:36 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/29 06:22:16 jlam Exp $
 #
 
 DISTNAME=	9base-20051114
 CATEGORIES=	sysutils shells
 MASTER_SITES=	http://wmii.de/snaps/
 
-MAINTAINER=	lems@gmx.net
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://wmii.de/
 COMMENT=	Port of various original plan9 tools
 

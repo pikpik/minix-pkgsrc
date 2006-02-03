@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/12/06 18:55:32 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/29 06:22:20 jlam Exp $
 #
 
 DISTNAME=	wmii-20051114
 CATEGORIES=	wm x11
 MASTER_SITES=	http://wmii.de/snaps/
 
-MAINTAINER=	lems@gmx.net
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://wmii.de/
 COMMENT=	Modular and keyboard-friendly window manager
 
