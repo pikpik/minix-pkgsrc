@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/gnome-console
+share/examples/bacula/gnome-console.conf
+@unexec ${RMDIR} %D/share/examples/bacula 2>/dev/null || ${TRUE}
