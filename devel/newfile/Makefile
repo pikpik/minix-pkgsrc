@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2006/01/03 14:25:49 taca Exp $
+# $NetBSD: Makefile,v 1.15 2006/01/09 18:50:57 joerg Exp $
 #
 
 DISTNAME=	newfile-1.0.14
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=newfile/}
 

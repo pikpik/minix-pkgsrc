@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/04 02:38:06 minskim Exp $
 #
 
 DISTNAME=	pdumpfs-${VER}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://namazu.org/~satoru/pdumpfs/
 

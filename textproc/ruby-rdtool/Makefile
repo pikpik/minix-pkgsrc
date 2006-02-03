@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/12/29 06:22:19 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/01/03 14:25:51 taca Exp $
 
 DISTNAME=	rdtool-0.6.18
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.moonwolf.com/ruby/archive/
 
