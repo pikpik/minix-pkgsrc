@@ -1,8 +1,8 @@
 $NetBSD$
 
---- readcd/readcd.c.orig	2004-03-02 01:55:11.000000000 +0100
+--- readcd/readcd.c.orig	2005-06-11 13:22:10.000000000 +0000
 +++ readcd/readcd.c
-@@ -389,12 +389,12 @@ main(ac, av)
+@@ -399,12 +399,12 @@ main(ac, av)
  	/*
  	 * We don't need root privilleges anymore.
  	 */
