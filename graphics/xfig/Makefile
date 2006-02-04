@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2005/04/11 21:46:10 tv Exp $
+# $NetBSD: Makefile,v 1.43 2005/11/12 16:08:21 itohy Exp $
 
 DISTNAME=	xfig.3.2.5-alpha5.full
 PKGNAME=	xfig-3.2.5alpha5
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://epb.lbl.gov/xfig/alpha/
 
