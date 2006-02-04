@@ -1,3 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/05/06 11:17:26 jmmv Exp $
-lib/libgda/providers/libgda-postgres.la
-@comment in libgda: @dirrm lib/libgda/providers
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:22 jlam Exp $
+lib/libgda-1.9/providers/libgda-postgres.la
+share/libgda/postgres_specs_create_db.xml
+share/libgda/postgres_specs_dsn.xml
+@comment in libgda: @dirrm share/libgda
+@comment in libgda: @dirrm lib/libgda-1.9/providers

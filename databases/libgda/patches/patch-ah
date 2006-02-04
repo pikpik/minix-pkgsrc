@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- providers/postgres/utils.c.orig	2005-09-22 10:24:01.000000000 +0000
++++ providers/postgres/utils.c
+@@ -26,6 +26,9 @@
+ #include <libgda/gda-intl.h>
+ #include <stdlib.h>
+ #include <string.h>
++#ifdef HAVE_LOCALE_H
++#include <locale.h>
++#endif
+ #include "gda-postgres.h"
+ #include "gda-postgres-blob.h"
+ 
