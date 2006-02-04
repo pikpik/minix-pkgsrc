@@ -1,14 +1,14 @@
 $NetBSD$
 
---- frontend/main.c.orig	2005-01-18 19:55:41.000000000 +0100
-+++ frontend/main.c
-@@ -24,6 +24,9 @@
-  */
+--- src/main.c.orig	2005-05-15 17:02:21.000000000 +0000
++++ src/main.c
+@@ -25,6 +25,9 @@
  
+ #include <stdio.h>
  #include <libgnomedb/libgnomedb.h>
 +#ifdef HAVE_LOCALE_H
 +#include <locale.h>
 +#endif
+ #include <gtk/gtk.h>
  #include "workspace-window.h"
- #include "component-factory.h"
  #include "session.h"
