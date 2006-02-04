@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/05/22 20:07:39 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/06/01 18:02:38 jlam Exp $
 
 DISTNAME=	rosegarden-2.1pl4
 PKGNAME=	rosegarden-2.1.4
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.cannam.demon.co.uk/rosegarden/distribution/
 
 MAINTAINER=	tech-pkg@NetBSD.org
-HOMEPAGE=	http://www.all-day-breakfast.com/rosegarden/
+HOMEPAGE=	http://www.rosegardenmusic.com/
 COMMENT=	Notation editor & MIDI sequencer
 
 DEPENDS+=	tcl-[0-9]*:../../lang/tcl
