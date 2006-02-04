@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/autosprintf.h
+info/autosprintf.info
+lib/libasprintf.la
+share/doc/libasprintf/autosprintf.html
+@dirrm share/doc/libasprintf
