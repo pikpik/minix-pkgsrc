@@ -1,8 +1,8 @@
 $NetBSD$
 
---- misc/Makefile.in.orig	Tue Aug  6 16:00:33 2002
-+++ misc/Makefile.in	Sun Sep  1 14:12:13 2002
-@@ -342,7 +342,7 @@
+--- gettext-tools/misc/Makefile.in.orig	2005-05-23 11:24:28.000000000 +0000
++++ gettext-tools/misc/Makefile.in
+@@ -569,7 +569,7 @@ info: info-am
  
  info-am:
  
