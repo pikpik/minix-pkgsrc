@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.2 2006/02/02 14:03:49 ghen Exp $
+# $NetBSD: options.mk,v 1.3 2006/02/03 07:57:57 ghen Exp $
 
 PKG_OPTIONS_VAR		= PKG_OPTIONS.gecko
 PKG_SUPPORTED_OPTIONS	= debug
 
-.if( ${MOZILLA_BIN} == "firefox-bin" )
+.if( ${MOZILLA_BIN} == "firefox-bin" || ${MOZILLA_BIN} == "thunderbird-bin" )
 PKG_SUPPORTED_OPTIONS  += official-mozilla-branding
 .endif
 
