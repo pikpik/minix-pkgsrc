@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2005/08/29 14:28:12 tv Exp $
+# $NetBSD: options.mk,v 1.6 2005/08/31 18:32:47 tv Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.freeradius
 
@@ -70,7 +70,6 @@ CONFIGURE_ARGS+=	--without-rlm_sql_mysql
 ###
 ###
 .if !empty(PKG_OPTIONS:Msnmp)
-.  include "../../net/net-snmp/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-snmp
 .else
 CONFIGURE_ARGS+=	--without-snmp
