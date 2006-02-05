@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2005/12/30 23:49:08 joerg Exp $
+# $NetBSD: Makefile,v 1.47 2006/01/03 00:04:42 wiz Exp $
 #
 
 DISTNAME=	icu-3.4
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.software.ibm.com/software/globalization/icu/${PKGVERSION}/
 EXTRACT_SUFX=	.tgz

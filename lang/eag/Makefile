@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:13 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/01 18:02:58 jlam Exp $
 
 DISTNAME=		eag-2.3
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.kun.nl/pub/eag/
 EXTRACT_SUFX=		.tgz

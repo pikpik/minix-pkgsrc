@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2005/05/23 08:11:44 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2005/09/23 09:04:57 tron Exp $
 
 DISTNAME=	gtar-1.15.1
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	# empty
 DISTFILES=	# empty

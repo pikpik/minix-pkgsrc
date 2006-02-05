@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/09/28 19:16:18 rillig Exp $
+# $NetBSD: Makefile,v 1.1 2005/11/03 01:57:15 tv Exp $
 #
 
 DISTNAME=	pkgsrc-guide-tools-1.0
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty

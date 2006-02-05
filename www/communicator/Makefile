@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2003/08/08 09:38:41 grant Exp $
+# $NetBSD: Makefile,v 1.35 2005/12/05 20:51:11 rillig Exp $
 #
 
+PKGREVISION=	1
 COMMENT=	Netscape Communicator browser, version 4 (binary pkg)
 
 BINNAME=	communicator

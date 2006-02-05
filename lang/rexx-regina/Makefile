@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/01/24 13:51:15 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:11 jlam Exp $
 #
 
 DISTNAME=	regina301
 PKGNAME=	rexx-regina-3.0.1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=regina-rexx/}
 EXTRACT_SUFX=	.zip

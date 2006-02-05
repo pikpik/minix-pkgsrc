@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2005/12/29 06:22:06 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2006/01/22 00:57:02 joerg Exp $
 
 DISTNAME=	LPRng-3.8.28
 PKGNAME=	LPRng-core-3.8.28
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.lprng.com/pub/LPRng/LPRng/ \
 		http://www.lprng.com/DISTRIB/LPRng/ \

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:47:46 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:03:24 jlam Exp $
 #
 
 DISTNAME=	bbpager-0.3.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	wm x11
 MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
 

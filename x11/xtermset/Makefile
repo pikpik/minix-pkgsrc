@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:48:16 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:03:33 jlam Exp $
 #
 
 DISTNAME=	xtermset-0.5.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=clts/}
 

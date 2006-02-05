@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/10/11 09:09:07 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/10/11 14:11:27 gdt Exp $
 #
 
 DISTNAME=	purge-${PURGEVERSION}-src
 PKGNAME=	squidpurge-0.${PURGEVERSION}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.wa.apana.org.au/~dean/sources/
 

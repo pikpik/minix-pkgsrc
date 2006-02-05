@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/13 06:35:20 minskim Exp $
 #
 
 DISTNAME=	passivetex
 PKGNAME=	tex-${DISTNAME}-1.24
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://www.tei-c.org/Software/passivetex/
 EXTRACT_SUFX=	.zip

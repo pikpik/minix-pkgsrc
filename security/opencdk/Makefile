@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2005/08/30 14:28:46 adam Exp $
+# $NetBSD: Makefile,v 1.17 2005/09/30 12:21:40 wiz Exp $
 
 DISTNAME=	opencdk-0.5.8
+PKGREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://josefsson.org/gnutls/releases/opencdk/ \
 		ftp://ftp.gnutls.org/pub/gnutls/opencdk/

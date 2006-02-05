@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2005/06/01 18:03:24 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/17 03:50:38 jlam Exp $
 
 DISTNAME=	bbrun-1.3
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	wm x11
 MASTER_SITES=	http://www.dwave.net/~jking/bbrun/
 

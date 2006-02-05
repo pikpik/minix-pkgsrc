@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:56 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/17 04:49:46 jlam Exp $
 #
 
 DISTNAME=	xpipeman-1.5
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.spinne.com/x/games/xpipeman/
 

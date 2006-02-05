@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2003/07/21 16:49:36 martti Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/01 18:02:49 jlam Exp $
 
 DISTNAME=	cgoban-1.9.12
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.igoweb.org/~wms/comp/cgoban/
 

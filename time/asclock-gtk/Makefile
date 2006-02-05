@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2005/06/17 03:50:38 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/09/28 20:52:27 rillig Exp $
 #
 
 DISTNAME=	asclock-gtk-2.1.10beta
 PKGNAME=	asclock-gtk-2.1.10
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_LOCAL}	# www.asclock.org is no more
 

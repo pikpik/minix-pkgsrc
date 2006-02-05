@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2005/05/22 20:08:25 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/06/17 03:50:26 jlam Exp $
 
 DISTNAME=	nProbe-source-1.3.1
-PKGREVISION=	2
+PKGREVISION=	3
 PKGNAME=	nprobe-1.3.1
 CATEGORIES=	net
 MASTER_SITES=	http://luca.ntop.org/nprobeDownload/

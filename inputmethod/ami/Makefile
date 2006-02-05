@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:11 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/09/22 04:03:51 minskim Exp $
 #
 
 DISTNAME=	ami-1.0.11
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	korean inputmethod
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/
 

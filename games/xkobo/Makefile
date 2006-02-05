@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/02/21 20:26:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.14 2005/03/24 21:12:54 wiz Exp $
 
 DISTNAME=       xkobo-1.11
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}  \
 		ftp://ftp.uoknor.edu/mirrors/X/contrib/games/

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2004/11/03 15:38:26 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/18 20:22:17 reed Exp $
 
 DISTNAME=	rocksndiamonds-levels-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.artsoft.org/RELEASES/unix/rocksndiamonds/levels/
 DISTFILES=	rockslevels-dx-1.0.tar.gz \

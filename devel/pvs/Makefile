@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2005/11/11 18:50:24 tonio Exp $
+# $NetBSD: Makefile,v 1.24 2006/01/23 16:50:55 joerg Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel lang
 MASTER_SITES=		ftp://pvs.csl.sri.com/pub/pvs/pvs${VERSION}/ \
 			ftp://ftp.cs.york.ac.uk/pub/pvs/pvs${VERSION}/ \

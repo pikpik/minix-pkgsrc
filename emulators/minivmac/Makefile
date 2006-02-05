@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:47 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:51 jlam Exp $
 
 DISTNAME=	minivmac-0.1.7.src
 PKGNAME=	minivmac-0.1.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=minivmac/}
 EXTRACT_SUFX=	.tgz

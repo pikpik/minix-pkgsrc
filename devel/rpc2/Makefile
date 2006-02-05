@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2005/07/16 01:19:09 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/08/15 01:20:23 xtraeme Exp $
 #
 
 DISTNAME=	rpc2-1.27
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.coda.cs.cmu.edu/pub/coda/src/
 

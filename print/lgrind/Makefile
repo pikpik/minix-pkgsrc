@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2005/11/11 18:50:24 tonio Exp $
+# $NetBSD: Makefile,v 1.25 2005/12/05 20:50:53 rillig Exp $
 
 DISTNAME=	lgrind
 PKGNAME=	lgrind-3.5
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2

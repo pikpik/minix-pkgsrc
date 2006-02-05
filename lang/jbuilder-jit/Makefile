@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2005/07/15 18:27:51 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/09/29 13:36:11 wiz Exp $
 #
 
 DISTNAME=	unix_jb35foundation
 PKGNAME=	jbuilder-jit-1.2.15
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=     lang java
 MASTER_SITES=	http://ftp.cdut.edu.cn/pub2/linux/develop/jbuilder/ \
 		http://python.planetmirror.com/ftp/jbuilder/foundation/3.5/linux/ \

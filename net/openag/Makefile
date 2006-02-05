@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2004/03/26 02:27:48 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/02/21 20:26:13 hubertf Exp $
 #
 
 DISTNAME=	OpenAG-1.1.1
 PKGNAME=	openag-1.1.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openags/}
 

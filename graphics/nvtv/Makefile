@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2004/12/28 02:47:43 reed Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:21 rillig Exp $
 
-PKGREVISION=	2
+PKGREVISION=	3
 .include "Makefile.common"
 
 CONFLICTS=	nvtv-gtk2-[0-9]*

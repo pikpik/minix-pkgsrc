@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:45 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/28 20:52:19 rillig Exp $
 #
 
 DISTNAME=       cbrowser-0.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=     devel tk
 MASTER_SITES=   http://www.ziplink.net/~felaco/cbrowser/
 

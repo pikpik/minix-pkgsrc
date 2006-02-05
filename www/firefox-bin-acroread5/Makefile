@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/10/18 10:46:26 grant Exp $
+# $NetBSD: Makefile,v 1.1 2004/02/10 12:26:24 grant Exp $
 
 DISTNAME= 		MozillaFirebird-bin-acroread5-1.0
+PKGREVISION=		1
 
 MAINTAINER=		kei@NetBSD.org
 COMMENT=		Acrobat Reader 5 plugin for firefox-bin

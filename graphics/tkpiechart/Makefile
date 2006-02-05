@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2004/03/30 01:51:46 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2004/04/09 20:42:59 minskim Exp $
 
 DISTNAME=	tkpiechart-5.4
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://jfontain.free.fr/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/06/17 03:50:39 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/09/28 20:52:27 rillig Exp $
 
 DISTNAME=	icewmconf-2.1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	wm
 MASTER_SITES=	http://sdboyd.dyndns.org/icewmconf/
 

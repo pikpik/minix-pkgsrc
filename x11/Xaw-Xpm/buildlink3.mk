@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/08/27 18:53:58 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2005/06/01 18:03:27 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XAW_XPM_BUILDLINK3_MK:=	${XAW_XPM_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	Xaw-Xpm
 
 .if !empty(XAW_XPM_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.Xaw-Xpm+=	Xaw-Xpm>=1.1
+BUILDLINK_RECOMMENDED.Xaw-Xpm?=	Xaw-Xpm>=1.1nb2
 BUILDLINK_PKGSRCDIR.Xaw-Xpm?=	../../x11/Xaw-Xpm
 .endif	# XAW_XPM_BUILDLINK3_MK
 

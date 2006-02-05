@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2005/05/31 16:16:50 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/05 20:49:48 rillig Exp $
 #
 
 DISTNAME=	madplay-0.15.2b
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mad/} \
 		ftp://ftp.mars.org/pub/mpeg/

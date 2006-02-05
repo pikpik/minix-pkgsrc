@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2005/06/01 18:03:20 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2005/06/17 03:50:31 jlam Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=	4
+PKGREVISION=	5
 COMMENT=	Password sniffer (webspy)
 
 DEPENDS+=	dsniff-nox11-[0-9]*:../../security/dsniff-nox11

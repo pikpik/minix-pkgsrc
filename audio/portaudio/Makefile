@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/12/05 20:49:49 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/20 23:41:29 jlam Exp $
 
 DISTNAME=	portaudio_v18_1
 PKGNAME=	portaudio-18.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.portaudio.com/archives/
 EXTRACT_SUFX=	.zip

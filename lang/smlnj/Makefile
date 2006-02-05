@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/12/26 23:39:32 schmonz Exp $
+# $NetBSD: Makefile,v 1.14 2006/01/04 04:29:07 schmonz Exp $
 #
 
 DISTNAME=	boot.${BOX}-unix
 PKGNAME=	smlnj-${SML_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://flint.cs.yale.edu/pub/smlnj/working/${SML_VERSION}/ \
 		http://smlnj.cs.uchicago.edu/dist/working/${SML_VERSION}/ \

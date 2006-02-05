@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2005/12/29 06:22:23 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/01/21 18:57:42 jlam Exp $
 #
 
 DISTNAME=	hiawatha
 PKGNAME=	hiawatha-0.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc www
 MASTER_SITES=	${HOMEPAGE} ${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.zip

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2004/11/12 12:13:44 mjl Exp $
+# $NetBSD: Makefile,v 1.39 2004/11/13 23:19:57 seb Exp $
 #
 
 DISTNAME=	amanda-2.4.4p4
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty

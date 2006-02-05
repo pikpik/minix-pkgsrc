@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2005/06/01 18:02:41 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/06/16 06:57:42 jlam Exp $
 
 DISTNAME=	estic-1.61
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.gwdg.de/pub/misc/isdn/linux/estic/
 EXTRACT_SUFX=	.zip

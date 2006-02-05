@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/07/22 09:16:01 recht Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:37 tv Exp $
 
 DISTNAME=	Optik-1.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=optik/}
 

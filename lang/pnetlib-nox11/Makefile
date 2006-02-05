@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/01/12 17:16:43 xtraeme Exp $
 #
 
 .include "${.CURDIR}/../pnetlib/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-nox11-/}
+PKGREVISION=	1
 
 CONFIGURE_ARGS+=	--without-x
 

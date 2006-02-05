@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/09/28 20:52:27 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/12 14:43:26 joerg Exp $
 
 DISTNAME=		sm_linux_v314_install
 PKGNAME=		storage-manager-3.14
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
 EXTRACT_SUFX=		.rpm

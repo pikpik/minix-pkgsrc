@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2005/12/26 23:39:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.24 2006/01/04 04:29:07 schmonz Exp $
 
 DISTNAME=		root_v2.23.08.source
 PKGNAME=		root-2.23
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		ftp://root.cern.ch/root/
 

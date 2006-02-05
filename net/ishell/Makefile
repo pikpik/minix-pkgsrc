@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2005/07/31 13:33:42 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:46 rillig Exp $
 #
 
 DISTNAME=	ish-v${VERSION}
 PKGNAME=	ishell-${VERSION}
 WRKSRC=		${WRKDIR}/ISHELL-v${VERSION}/
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=icmpshell/}
 

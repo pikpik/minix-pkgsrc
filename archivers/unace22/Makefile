@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:37 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/12 14:43:23 joerg Exp $
 #
 
 DISTNAME=	linunace22
 PKGNAME=	unace22-2.20
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://ace.imptech.net/ \
 		http://www.shedz.com/winace/ \

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/01/30 22:36:01 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/01 01:08:39 xtraeme Exp $
 #
 
 DISTNAME=		kiax-0.8.4
+PKGREVISION=		1
 CATEGORIES=		comms net audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kiax/}
 EXTRACT_SUFX=		.tar.bz2

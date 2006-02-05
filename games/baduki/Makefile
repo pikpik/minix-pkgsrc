@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2005/06/01 18:02:49 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2005/09/28 20:52:22 rillig Exp $
 
 DISTNAME=	baduki-0.2.9
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://soback.kornet21.net/~artist/baduk/
 

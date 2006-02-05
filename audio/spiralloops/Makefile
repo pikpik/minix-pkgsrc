@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2005/11/07 00:19:14 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2005/12/05 20:49:49 rillig Exp $
 #
 
 DISTNAME=		SpiralLoops-2.0.0
 PKGNAME=		spiralloops-2.0.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		audio
 MASTER_SITES=		http://www.pawfal.org/Software/SpiralLoops/dload/
 

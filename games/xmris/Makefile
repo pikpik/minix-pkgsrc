@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/09/08 06:30:37 jdc Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/29 06:21:41 jlam Exp $
 
 DISTNAME=		xmris.4.0.5
 PKGNAME=		xmris-4.05
+PKGREVISION=		1
 CATEGORIES=		games x11
 MASTER_SITES=		http://www.planetfall.pwp.blueyonder.co.uk/xmris/
 EXTRACT_SUFX=		.tgz

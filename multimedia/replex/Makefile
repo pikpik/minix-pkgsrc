@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/11 18:36:11 wiz Exp $
 #
 
 DISTNAME=		replex-0.1.4
+PKGREVISION=		1
 CATEGORIES=		multimedia
 MASTER_SITES=		http://www.metzlerbros.org/dvb/
 

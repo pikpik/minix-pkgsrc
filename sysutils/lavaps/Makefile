@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2005/07/16 01:19:20 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/05 20:51:01 rillig Exp $
 #
 
 DISTNAME=	lavaps-1.20
+PKGREVISION=	1
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 

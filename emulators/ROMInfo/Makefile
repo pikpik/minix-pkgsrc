@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2006/01/01 19:37:12 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/20 23:41:29 jlam Exp $
 #
 
 DISTNAME=		rinfo26
 PKGNAME=		ROMInfo-2.6
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.logiqx.com/Tools/ROMInfo/
 EXTRACT_SUFX=		.zip

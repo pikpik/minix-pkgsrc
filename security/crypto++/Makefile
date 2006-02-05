@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/03/19 16:48:21 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:29 jlam Exp $
 #
 
 DISTNAME=		cryptopp521
 PKGNAME=		cryptopp-5.2.1
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.eskimo.com/~weidai/ \
 			${MASTER_SITE_SOURCEFORGE:=cryptopp/} \

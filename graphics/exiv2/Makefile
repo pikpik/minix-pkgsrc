@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:05 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:19 rillig Exp $
 #
 
 DISTNAME=		exiv2-0.6.1
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://home.arcor.de/ahuggel/exiv2/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:47:08 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/01 18:03:20 jlam Exp $
 #
 
 DISTNAME=	mpdist-3.7.1
 PKGNAME=	mp-3.7.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mpdist/}
 

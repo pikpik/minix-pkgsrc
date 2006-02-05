@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/06/16 06:57:51 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:12 rillig Exp $
 
 DISTNAME=	VMware-workstation-3.2.1-2242
 PKGNAME=	vmware-3.2.1pl1
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://download3.vmware.com/software/wkst/ \
 		http://vmware-svca.www.conxion.com/software/ \

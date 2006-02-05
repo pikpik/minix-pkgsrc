@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2005/11/13 04:03:11 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/14 02:41:19 minskim Exp $
 #
 
 DISTNAME=	IEEEtran
 PKGNAME=	tex-IEEEtran-1.6c
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://www.ieee.org/portal/cms_docs/pubs/transactions/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} IEEEtranBST${EXTRACT_SUFX}

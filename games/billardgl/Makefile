@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/31 02:47:25 rillig Exp $
 #
 
 DISTNAME=	BillardGL-1.75
 PKGNAME=	${DISTNAME:S/BillardGL/billardgl/}
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://wesley.informatik.uni-freiburg.de/~nopper/BillardGL/download/
 

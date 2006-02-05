@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2004/10/28 17:00:26 wiz Exp $
 #
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 CONFLICTS=		bittorrent-[0-9]*
 
 PYDISTUTILSPKG=		yes

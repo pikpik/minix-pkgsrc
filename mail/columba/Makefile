@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:17 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/11/04 18:51:11 rillig Exp $
 #
 
 DISTNAME=	columba-unix-1.0_M2-bin
 PKGNAME=	columba-1.0M2
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=columba/}
 EXTRACT_SUFX=	.zip

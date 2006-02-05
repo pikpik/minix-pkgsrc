@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2003/07/21 16:47:08 martti Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/28 18:07:29 joerg Exp $
 
 DISTNAME=	mozilla-fonts-1.0
+PKGREVISION=	1
 CATEGORIES=	fonts www
 MASTER_SITES=	http://www.myrddin.demon.co.uk/dist/
 

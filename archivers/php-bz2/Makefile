@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2005/11/04 09:18:30 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/03 18:53:57 jdolecek Exp $
 
 MODNAME=		bz2
+PKGREVISION=		1
 CATEGORIES=		archivers
 COMMENT=		PHP extension for bzip2 compression
 

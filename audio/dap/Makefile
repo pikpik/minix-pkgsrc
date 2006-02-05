@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2005/10/16 15:14:40 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2005/12/05 20:49:47 rillig Exp $
 
 DISTNAME=		dap-2.1.2
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		audio
 MASTER_SITES=		# http://www.cee.hw.ac.uk/~richardk/downloads/
 EXTRACT_SUFX=		.tgz

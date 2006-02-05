@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/15 18:27:51 jlam Exp $
 
 DISTNAME=	wolf-linux-1.33.x86
 PKGNAME=	rtcw-1.33
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/wolf/linux/
 EXTRACT_SUFX=	.run

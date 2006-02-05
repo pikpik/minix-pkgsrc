@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/09/28 20:52:18 rillig Exp $
 
 DISTNAME=	plp_1_8
 PKGNAME=	plp-1.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	http://www.proudman51.freeserve.co.uk/psion/
 

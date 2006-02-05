@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2005/04/05 10:51:21 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2005/05/22 20:08:14 jlam Exp $
 #
 
 DISTNAME=		nt.1.5a23
 PKGNAME=		nte-1.5a23
+PKGREVISION=		1
 CATEGORIES=		mbone tk
 MASTER_SITES=		http://www-mice.cs.ucl.ac.uk/multimedia/software/nte/1.5a23/
 

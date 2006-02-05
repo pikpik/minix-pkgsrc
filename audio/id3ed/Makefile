@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2005/05/22 20:07:38 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2005/10/16 15:17:55 wiz Exp $
 #
 
 DISTNAME=	id3ed-1.10.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.dakotacom.net/~donut/programs/id3ed/
 

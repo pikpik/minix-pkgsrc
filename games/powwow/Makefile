@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:02 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:55 jlam Exp $
 
 DISTNAME=	powwow-1.2.5
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://linuz.sns.it/~max/powwow/
 

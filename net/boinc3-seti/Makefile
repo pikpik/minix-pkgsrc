@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:44 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/08 18:35:10 xtraeme Exp $
 #
 
 DISTNAME=		seti_boinc-client-cvs-2004-07-15
 PKGNAME=		boinc3-seti-20040715
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		net
 MASTER_SITES=		http://boinc.berkeley.edu/seti_source/nightly/
 

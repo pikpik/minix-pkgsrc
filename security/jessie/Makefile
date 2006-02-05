@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/12/26 23:39:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/04 04:29:08 schmonz Exp $
 #
 
 DISTNAME=		jessie-0.9.7
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://syzygy.metastatic.org/jessie/
 

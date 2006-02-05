@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2006/01/05 20:26:48 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/01/05 20:35:12 joerg Exp $
 #
 
 DISTNAME=		xfstt-1.6
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11 net fonts
 MASTER_SITES=		http://download.berlios.de/xfstt/
 

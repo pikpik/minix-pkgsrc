@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:53 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:56 jlam Exp $
 
 DISTNAME=	xworm102
 PKGNAME=	xworm-1.02
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.ekran.no/archive/x/
 

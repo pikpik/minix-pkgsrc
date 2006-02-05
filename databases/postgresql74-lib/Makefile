@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2005/12/02 21:01:34 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2005/12/05 23:55:05 rillig Exp $
 
 PKGNAME=		postgresql74-lib-${BASE_VERS}
-PKGREVISION=		2
+PKGREVISION=		3
 SVR4_PKGNAME=		pstgl
 COMMENT=		PostgreSQL database headers and libraries
 

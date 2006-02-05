@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/28 18:06:18 joerg Exp $
 #
 
 DISTNAME=	sgi-fonts-1.0-457.src
 PKGNAME=	sgi-fonts-1.0.457
+PKGREVISION=	1
 CATEGORIES=	fonts
 MASTER_SITES=	http://public.planetmirror.com/pub/suse/i386/8.2/suse/src/
 EXTRACT_SUFX=	.rpm

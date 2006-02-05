@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2005/06/17 03:50:29 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2005/07/16 01:19:18 jlam Exp $
 #
 
 DISTNAME=	port2pkg-1.11
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty

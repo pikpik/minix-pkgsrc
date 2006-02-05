@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2005/04/11 21:47:30 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/05/22 20:08:33 jlam Exp $
 #
 
 DISTNAME=	vcdimager-0.6.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNU:=vcdimager/}
 

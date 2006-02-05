@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2005/12/05 20:51:14 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/03 19:28:40 wiz Exp $
 #
 
 DISTNAME=	tidy_src_050921
 PKGNAME=	tidy-20050921
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://tidy.sourceforge.net/src/ \
 		http://tidy.sourceforge.net/src/old/

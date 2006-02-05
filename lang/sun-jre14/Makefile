@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.32 2005/12/05 20:50:27 rillig Exp $
+# $NetBSD: Makefile,v 1.33 2005/12/29 06:21:47 jlam Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 
 DISTNAME=	j2re-1_4_2_09-linux-i586
 PKGNAME=	sun-jre14-2.9
+PKGREVISION=	1
 MASTER_SITES=	# empty
 
 COMMENT=	Sun's Java(tm) 2 Runtime Environment 1.4.2

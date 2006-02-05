@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/06/16 06:57:46 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/01/21 18:57:40 jlam Exp $
 #
 
 DISTNAME=	gobo15
 PKGNAME=	gobo-eiffel-1.5
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.gobosoft.com/download/ \
 		http://www.eiffel-forum.org/archive/bezault/ \

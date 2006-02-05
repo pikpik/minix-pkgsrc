@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/06/01 18:02:59 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/16 06:58:02 jlam Exp $
 #
 
 DISTNAME=	bbmail-0.8.3
+PKGREVISION=	1
 CATEGORIES=	mail x11
 MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
 

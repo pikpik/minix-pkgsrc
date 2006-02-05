@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/12/29 06:21:40 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/29 07:04:28 jlam Exp $
 #
 
 DISTNAME=	profontlinux
 PKGNAME=        profont-1.0
+PKGREVISION=	1
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.tobiasjung.net/dl/
 EXTRACT_SUFX=	.zip

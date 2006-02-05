@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2004/04/20 07:56:31 xtraeme Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBDNET_BUILDLINK3_MK:=	${LIBDNET_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libdnet
 
 .if !empty(LIBDNET_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libdnet+=	libdnet>=1.7
+BUILDLINK_RECOMMENDED.libdnet?=	libdnet>=1.10nb1
 BUILDLINK_PKGSRCDIR.libdnet?=	../../net/libdnet
 .endif	# LIBDNET_BUILDLINK3_MK
 

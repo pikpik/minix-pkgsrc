@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2004/05/17 21:32:34 seb Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2004/11/22 22:24:47 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GCC3_JAVA_BUILDLINK3_MK:=	${GCC3_JAVA_BUILDLINK3_MK}+
@@ -19,6 +19,7 @@ GCC3_PKGMODIF=	_${GCC3_INSTALLTO_SUBPREFIX}
 .    endif
 .  endif
 BUILDLINK_DEPENDS.gcc3-java+=	gcc3${GCC3_PKGMODIF}-java>=${_GCC_REQD}
+BUILDLINK_RECOMMENDED.gcc3-java?=	gcc3-java>=3.3.5nb1
 BUILDLINK_PKGSRCDIR.gcc3-java?=	../../lang/gcc3-java
 BUILDLINK_LIBDIRS.gcc3-java?=	\
 	lib ${_GCC_ARCHDIR:S/^${BUILDLINK_PREFIX.gcc3-java}\///}

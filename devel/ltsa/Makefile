@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:28 tv Exp $
+# $NetBSD: Makefile,v 1.3 2006/01/20 16:15:53 jmmv Exp $
 #
 
 DISTNAME=	ltsa2.2
 PKGNAME=	${DISTNAME:S/ltsa/ltsa-/}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jnm/book/ltsa-v2/
 EXTRACT_SUFX=	.zip

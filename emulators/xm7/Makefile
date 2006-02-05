@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2006/01/19 18:13:38 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/01/21 18:57:41 jlam Exp $
 #
 
 DISTNAME=		xm71010s
 PKGNAME=		xm7-1010s
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.ipc-tokai.or.jp/~ytanaka/fm7/
 EXTRACT_SUFX=		.lzh

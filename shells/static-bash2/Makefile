@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2004/01/11 23:06:54 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/01/16 12:01:23 kristerw Exp $
 #
 
+PKGREVISION=		1
 DISTINFO_FILE=		${.CURDIR}/../../shells/bash2/distinfo
 PATCHDIR=		${.CURDIR}/../../shells/bash2/patches
 PKGDIR=			${.CURDIR}/../../shells/bash2

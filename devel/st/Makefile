@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/05/22 20:07:55 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:48 jlam Exp $
 #
 
 DISTNAME=	st-1.5.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=state-threads/}
 

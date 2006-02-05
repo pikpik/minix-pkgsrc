@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:14:06 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:54 wiz Exp $
 
 DISTNAME=	ue400dev
 PKGNAME=	uemacs-4.0
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	ftp://aquest.com/pub/uemacs400/disk2/
 EXTRACT_SUFX=	.zip

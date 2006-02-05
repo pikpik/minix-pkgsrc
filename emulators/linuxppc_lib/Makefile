@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2005/05/16 01:15:31 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/07/15 18:27:49 jlam Exp $
 
 DISTNAME=		linuxppc_lib-2000.4.6
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES+=		ftp://ftp.linuxppc.org/linuxppc-halloween/software/
 MASTER_SITES+=		http://linuxppc.org/software/java/dl/motif/

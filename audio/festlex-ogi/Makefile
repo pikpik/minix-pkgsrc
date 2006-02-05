@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2004/02/21 06:20:48 snj Exp $
+# $NetBSD: Makefile,v 1.16 2005/07/19 10:22:32 grant Exp $
 
 DISTNAME=	OGIlexicon-2.0
 PKGNAME=	festlex-ogi-2.0
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 

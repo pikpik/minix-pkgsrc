@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2005/06/01 18:02:58 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2005/12/05 20:50:23 rillig Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/dept/OLD/pub/
 DISTFILES=	urt-3.1b.tar.Z urt-doc.tar urt-img.tar

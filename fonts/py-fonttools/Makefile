@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/12/08 09:23:14 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/08 21:41:17 rillig Exp $
 #
 
 DISTNAME=		fonttools-2.0b1
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		fonts python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fonttools/}
 EXTRACT_SUFX=		.tgz

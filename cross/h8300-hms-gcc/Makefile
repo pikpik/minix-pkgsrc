@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/05/22 20:07:45 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:04 rillig Exp $
 
 DISTNAME=		gcc-core-3.1
 PKGNAME=		cross-h8300-hms-gcc-3.1
+PKGREVISION=		1
 CATEGORIES=		cross
 MASTER_SITES=		ftp://ftp.gnu.org/gnu/gcc/gcc-3.1/ \
 			ftp://sources.redhat.com/pub/newlib/

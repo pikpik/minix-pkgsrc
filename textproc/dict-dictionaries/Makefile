@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/12/05 20:51:02 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/01/02 11:06:34 joerg Exp $
 
 DISTNAME=       #
 PKGNAME=	dict-data-1.8.0
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.dict.org/pub/dict/
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/dict}

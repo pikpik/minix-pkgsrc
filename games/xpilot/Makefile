@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2003/02/26 04:07:50 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2003/07/21 16:50:03 martti Exp $
 #
 
 DISTNAME=	xpilot-4.5.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:34 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:15 jlam Exp $
 #
 
 DISTNAME=		getopt-1.1.3
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		http://www.frodol.dds.nl/
 

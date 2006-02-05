@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/12/12 14:43:23 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/08 16:53:21 salo Exp $
 
 DISTNAME=		suse_compat-${SUSE_VERSION}
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE91}
 DISTFILES=		${RPMFILES}

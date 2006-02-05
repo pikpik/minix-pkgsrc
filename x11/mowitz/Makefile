@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:48:11 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/01 18:03:29 jlam Exp $
 
 DISTNAME=	Mowitz-0.2.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://siag.nu/pub/mowitz/
 

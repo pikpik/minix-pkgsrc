@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:37 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:07 rillig Exp $
 
 DISTNAME=	pychecker-0.8.14
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
+PKGREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pychecker/}
 

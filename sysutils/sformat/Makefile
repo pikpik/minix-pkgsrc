@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:33 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:51:01 rillig Exp $
 #
 
 DISTNAME=		sformat-3.5
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.berlios.de/pub/sformat/
 

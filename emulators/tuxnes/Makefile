@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:58 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/01 18:02:48 jlam Exp $
 #
 
 DISTNAME=		tuxnes-0.75
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tuxnes/}
 

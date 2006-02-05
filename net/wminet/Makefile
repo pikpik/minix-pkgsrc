@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:02 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/11/08 16:45:47 tv Exp $
 
 DISTNAME=	wmnet-1.2
 PKGNAME=	wminet-1.2
+PKGREVISION=	1
 CATEGORIES=	net x11
 MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 

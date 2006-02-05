@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/05/22 20:08:43 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:38 jlam Exp $
 #
 
 DISTNAME=	wmCalClock-1.25
+PKGREVISION=	1
 CATEGORIES=	x11 time
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 

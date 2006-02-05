@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2005/04/11 21:46:14 tv Exp $
+# $NetBSD: Makefile,v 1.41 2005/05/22 20:08:10 jlam Exp $
 #
 
 DISTNAME=		librep-0.17
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=librep/}
 

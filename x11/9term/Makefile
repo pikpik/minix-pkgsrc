@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/04/11 21:48:03 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/06/01 18:03:27 jlam Exp $
 
 DISTNAME=		9term.1.6.3
 PKGNAME=		9term-1.6.3
+PKGREVISION=		1
 CATEGORIES=		plan9 x11
 MASTER_SITES=		ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 

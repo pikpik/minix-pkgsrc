@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2005/12/12 14:43:25 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/01/12 22:11:30 rillig Exp $
 
 DISTNAME=		suse_linux-7.3
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		# empty
 DISTFILES=		# empty

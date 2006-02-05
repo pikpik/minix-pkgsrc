@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/03/29 12:43:08 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2004/01/20 12:28:26 agc Exp $
 
 DISTNAME=		oneko-1.1b
 PKGNAME=		oneko-1.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11 games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:S/contrib/R5contrib/}
 

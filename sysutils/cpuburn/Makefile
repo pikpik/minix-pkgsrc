@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2005/07/15 18:27:53 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/01/21 18:57:42 jlam Exp $
 #
 
 DISTNAME=	cpuburn_1_4
 PKGNAME=	cpuburn-1.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://pages.sbcglobal.net/redelm/
 EXTRACT_SUFX=	_tar.gz

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/12/05 23:55:13 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/29 06:21:57 jlam Exp $
 #
 
 DISTNAME=	bmon-2.0.1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://people.suug.ch/~tgr/bmon/files/
 

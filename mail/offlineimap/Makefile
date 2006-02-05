@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:34 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/27 13:54:58 seb Exp $
 #
 
 DISTNAME=	offlineimap_${_OFFLINEIMAP_VER}
 PKGNAME=	offlineimap-${_OFFLINEIMAP_VER}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://gopher.quux.org:70/devel/offlineimap/
 

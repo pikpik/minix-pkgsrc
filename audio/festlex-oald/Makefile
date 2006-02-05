@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/02/21 06:20:11 snj Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/19 10:22:32 grant Exp $
 
 DISTNAME=	festlex_OALD
 PKGNAME=	festlex-oald-1.4.0
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/ \
 		http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2005/05/22 20:07:40 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:40 jlam Exp $
 
 DISTNAME=	nut-10.18
+PKGREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	http://www.lafn.org/~av832/
 EXTRACT_SUFX=	.tar.bz2

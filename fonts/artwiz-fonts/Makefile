@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/12/29 07:04:27 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/29 07:31:31 jlam Exp $
 #
 
 DISTNAME=	artwiz-aleczapka-1.3
 PKGNAME=        ${DISTNAME:S/aleczapka/fonts/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	fonts
 MASTER_SITES=	http://fluxbox.org/artwiz-aleczapka/
 EXTRACT_SUFX=	.tar.bz2

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:30 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:23 jlam Exp $
 #
 
 DISTNAME=	wmcpuload-1.0.1
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/
 EXTRACT_SUFX=	.tar.bz2

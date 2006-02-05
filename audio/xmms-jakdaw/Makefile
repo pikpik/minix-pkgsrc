@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/02/21 20:26:09 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:44:59 tv Exp $
 
 DISTNAME=	jakdaw-0.0.4
 PKGNAME=	xmms-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio xmms
 MASTER_SITES=	http://www.jakdaw.ucam.org/xmms/
 

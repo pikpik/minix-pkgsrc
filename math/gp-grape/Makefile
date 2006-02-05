@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/01/20 12:20:04 agc Exp $
+# $NetBSD: Makefile,v 1.10 2004/12/03 15:15:03 wiz Exp $
 #
 
 DISTNAME=	grape4r1
 PKGNAME=	gp-grape-4.1
-PKGREVISION=	1
+PKGREVISION=	2
 SVR4_PKGNAME=	gpgra
 CATEGORIES=	math
 MASTER_SITES=	http://www.maths.qmul.ac.uk/~leonard/grape4r1/

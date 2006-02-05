@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:37:22 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/09/28 20:52:21 rillig Exp $
 
 DISTNAME=		ko-x11fonts-20010722
+PKGREVISION=		1
 CATEGORIES=		fonts x11 korean
 MASTER_SITES=		# empty
 DISTFILES=		# empty

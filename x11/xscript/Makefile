@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/07/21 21:16:10 salo Exp $
+# $NetBSD: Makefile,v 1.10 2005/04/11 21:48:16 tv Exp $
 #
 
 DISTNAME=	xscript.tar
 PKGNAME=	xscript-19930228
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.gwdg.de/pub/x11/x.org/R5contrib/ \

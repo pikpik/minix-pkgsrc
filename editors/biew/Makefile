@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2005/05/22 20:07:55 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/06/16 06:57:49 jlam Exp $
 #
 
 DISTNAME=	biew562
 PKGNAME=	biew-5.6.2
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=biew/}
 EXTRACT_SUFX=	.tar.bz2

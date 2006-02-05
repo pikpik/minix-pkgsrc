@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:44:53 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:38 jlam Exp $
 #
 
 DISTNAME=	ladspa_sdk_1.12
 PKGNAME=	${DISTNAME:S/_sdk_/-/}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.ladspa.org/download/
 EXTRACT_SUFX=	.tgz

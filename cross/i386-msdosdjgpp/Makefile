@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/04/18 11:42:23 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 20:49:56 rillig Exp $
 #
 
 DISTVERSION=		2.02.0
-PKGREVISION=		1
+PKGREVISION=		2
 DISTFILES=		${DJGPP_FILES}
 EXTRACT_ONLY=		# none of the djgpp files
 MASTER_SITES=		ftp://ftp.delorie.com/pub/djgpp/deleted/v2/ \

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:12 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/12 14:43:25 joerg Exp $
 
 DISTNAME=		fileutils-4.1-154.i386
 PKGNAME=		suse_vmware-${SUSE_VERSION}
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE_UPD:=a1/}
 EXTRACT_SUFX=		.rpm

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/06/16 06:57:38 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/29 06:21:30 jlam Exp $
 #
 
 DISTNAME=	darkice-0.14
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=darkice/}
 

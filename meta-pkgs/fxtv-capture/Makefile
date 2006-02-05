@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/02/24 21:55:28 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/31 17:56:36 wiz Exp $
 #
 
 DISTNAME=	fxtv-capture-1.1
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty

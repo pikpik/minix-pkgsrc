@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:08 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 23:55:16 rillig Exp $
 #
 
 DISTNAME=		OpenPBS_2_3_16
 PKGNAME=		openpbs-2.3.16
+PKGREVISION=		1
 CATEGORIES=		parallel sysutils
 MASTER_SITES=		http://www.openpbs.org/UserArea/Download/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/09/28 20:52:21 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/03 17:44:19 joerg Exp $
 
 DISTNAME=	libXg.utf.fonts
 PKGNAME=	libXgFonts-1.0
+PKGREVISION=	1
 CATEGORIES=	fonts plan9
 MASTER_SITES=	ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/11/08 16:58:17 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/05 23:55:15 rillig Exp $
 #
 
 DISTNAME=	rp-l2tp-0.3
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rp-l2tp/}
 

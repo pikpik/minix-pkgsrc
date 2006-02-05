@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:17 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:50 rillig Exp $
 #
 
 DISTNAME=		torrentutils-0.3.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		net
 MASTER_SITES=		http://www.student.lu.se/~nbi98oli/src/
 

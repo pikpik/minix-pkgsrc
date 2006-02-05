@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:46:10 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/22 20:08:07 jlam Exp $
 
 DISTNAME=		xbmbrowser5.1
 PKGNAME=		xbmbrowser-5.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=utilities/}
 

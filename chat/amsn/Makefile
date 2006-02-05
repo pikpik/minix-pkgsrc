@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:03 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:41 jlam Exp $
 #
 
 DISTNAME=		amsn-0_94
 PKGNAME=		${DISTNAME:S/_/./}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=amsn/}
 

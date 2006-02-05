@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:14 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/29 18:17:21 jlam Exp $
 #
 
 DISTNAME=	ko-kaist-20010718
+PKGREVISION=	1
 CATEGORIES=	fonts x11 korean
 MASTER_SITES+=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 DISTFILES=	kaist-newmj18.bdf.gz ks_philgi16.bdf.gz \

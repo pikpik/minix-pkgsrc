@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/11/08 17:40:38 tonio Exp $
+# $NetBSD: Makefile,v 1.14 2005/11/11 18:50:23 tonio Exp $
 #
 
 DISTNAME=	skampi4
 PKGNAME=	skampi-4.0.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	benchmarks parallel
 MASTER_SITES=	http://liinwww.ira.uka.de/~skampi/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}_userman.ps.gz

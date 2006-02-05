@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2005/06/17 04:49:49 jlam Exp $
+# $NetBSD: Makefile,v 1.48 2005/12/29 06:22:26 jlam Exp $
 
 DISTNAME=		rxvt-2.7.10
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.rxvt.org/pub/rxvt/ \
 			ftp://mason.primenet.com.au/pub/rxvt/

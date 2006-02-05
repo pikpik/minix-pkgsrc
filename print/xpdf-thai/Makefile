@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2005/10/28 11:29:52 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/29 06:22:08 jlam Exp $
 #
 
 DISTNAME=	xpdf-thai-2002-jan-16
 PKGNAME=	xpdf-thai-20020116
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
 		http://gd.tuwien.ac.at/publishing/xpdf/

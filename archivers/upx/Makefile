@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/05/25 22:53:55 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:38 jlam Exp $
 
 DISTNAME=	upx-1.25-src
 PKGNAME=	${DISTNAME:S/-src//}
+PKGREVISION=	1
 CATEGORIES=	misc archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=upx/}
 

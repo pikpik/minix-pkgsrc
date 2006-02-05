@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2005/05/22 20:08:14 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/01 18:03:04 jlam Exp $
 #
 
 DISTNAME=	vista
 PKGNAME=	vista-5.05
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

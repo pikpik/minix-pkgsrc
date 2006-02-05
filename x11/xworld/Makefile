@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/06/20 10:58:16 wennmach Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 20:51:20 rillig Exp $
 #
 
 DISTNAME=		xworld-2.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		x11
 MASTER_SITES=		ftp://gutemine.geo.uni-koeln.de/pub/xworld/ \
 			ftp://ftp.Uni-Koeln.DE/misc/

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/01/27 19:47:21 xtraeme Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SPIDERMONKEY_BUILDLINK3_MK:=	${SPIDERMONKEY_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	spidermonkey
 
 .if !empty(SPIDERMONKEY_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.spidermonkey+=	spidermonkey>=1.5
+BUILDLINK_RECOMMENDED.spidermonkey?=	spidermonkey>=1.5nb1
 BUILDLINK_PKGSRCDIR.spidermonkey?=	../../lang/spidermonkey
 .endif	# SPIDERMONKEY_BUILDLINK3_MK
 

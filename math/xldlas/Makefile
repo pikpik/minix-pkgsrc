@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2005/04/11 21:46:31 tv Exp $
+# $NetBSD: Makefile,v 1.25 2005/06/17 03:50:20 jlam Exp $
 
 DISTNAME=		xldlas-0.85
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		math
 MASTER_SITES=		http://sunsite.math.klte.hu/mirrors/xldlas/	\
 			${MASTER_SITE_SUNSITE:=X11/xapps/math/}

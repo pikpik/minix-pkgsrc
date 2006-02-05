@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.27 2005/05/26 10:22:47 dillo Exp $
+# $NetBSD: Makefile,v 1.28 2005/10/03 21:36:58 wiz Exp $
 #
 
 DISTNAME=	pilrc-3.2
 #WRKSRC=	${WRKDIR}/pilrc-2.9p9
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pilrc/}
 

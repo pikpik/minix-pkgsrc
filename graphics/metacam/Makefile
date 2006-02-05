@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:06 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:58 jlam Exp $
 #
 
 DISTNAME=		metacam-1.2
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.cheeseplant.org/pub/
 

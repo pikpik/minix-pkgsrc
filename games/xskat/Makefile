@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2005/03/24 21:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:18 rillig Exp $
 
 DISTNAME=	xskat-3.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.gulu.net/xskat/
 

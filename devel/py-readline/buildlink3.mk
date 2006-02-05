@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2004/11/15 14:56:36 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.1 2005/08/10 13:46:33 drochner Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PYREADLINE_BUILDLINK3_MK:=	${PYREADLINE_BUILDLINK3_MK}+
@@ -15,6 +15,7 @@ BUILDLINK_PACKAGES+=	pyreadline
 .include "../../lang/python/pyversion.mk"
 
 BUILDLINK_DEPENDS.pyreadline+=		${PYPKGPREFIX}-readline-[0-9]*
+BUILDLINK_RECOMMENDED.pyreadline?=	${PYPKGPREFIX}-readline>=0nb2
 BUILDLINK_PKGSRCDIR.pyreadline?=	../../devel/py-readline
 
 .endif	# PYREADLINE_BUILDLINK3_MK

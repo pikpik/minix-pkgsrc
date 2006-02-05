@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:14 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/29 18:17:21 jlam Exp $
 #
 
 DISTNAME=	xfntmizi-1.1-2.noarch
 PKGNAME=	ko-mizi-20010718
+PKGREVISION=	1
 CATEGORIES=	fonts x11 korean
 MASTER_SITES+=	ftp://ftp.mizi.co.kr/pub/hanIM/
 EXTRACT_SUFX=	.rpm

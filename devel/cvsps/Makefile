@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/07/29 03:39:06 grant Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/05 20:50:03 rillig Exp $
 #
 
 DISTNAME=	cvsps-2.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${HOMEPAGE}
 

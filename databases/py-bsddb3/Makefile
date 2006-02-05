@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2006/01/10 20:22:48 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2006/01/10 21:06:31 wiz Exp $
 #
 
 DISTNAME=	bsddb3-4.3.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pybsddb/}
 

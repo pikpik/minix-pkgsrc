@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2005/12/26 23:39:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.11 2006/01/04 04:29:09 schmonz Exp $
 #
 
 DISTNAME=	${PLUGGER}-linux-x86-glibc
 PKGNAME=	moz-bin-${PLUGGER}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://fredrik.hubbe.net/plugger/
 

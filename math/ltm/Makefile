@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/12/03 15:15:03 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:29 tv Exp $
 #
 
 DISTNAME=		ltm-0.30
+PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		http://math.libtomcrypt.org/files/
 EXTRACT_SUFX=		.zip

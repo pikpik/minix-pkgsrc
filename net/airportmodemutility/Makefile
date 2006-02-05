@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/11/04 19:00:19 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:50:44 rillig Exp $
 
 DISTNAME=	${BINNAME}_20
 PKGNAME=	${BINNAME}-2.0
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.zip

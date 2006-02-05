@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2004/05/07 15:25:13 cjep Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/02 23:02:06 reed Exp $
 
 DISTNAME=	ra3-1.65
 PKGNAME=	quake3server-ra3-1.65
+PKGREVISION=	1
 CATEGORIES=	games net
 MASTER_SITES?=	http://gamefiles.blueyonder.co.uk/blueyondergames/quake3arena/modifications/rocketarena/patches/linux/ \
 		http://mir2.ovh.net/ftp.planetquake3.net/modifications/rocketarena3/

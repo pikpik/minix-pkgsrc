@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2005/05/22 20:08:14 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 23:55:12 rillig Exp $
 
 DISTNAME=	bottlerocket-0.04c
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://mlug.missouri.edu/~tymm/
 

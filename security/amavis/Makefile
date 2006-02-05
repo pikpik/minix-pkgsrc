@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/12/05 20:50:54 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:16 rillig Exp $
 #
 
 DISTNAME=	amavis-0.2.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	security mail
 MASTER_SITES=	http://www.amavis.org/dist/ \
 		http://aachalon.de/AMaViS/

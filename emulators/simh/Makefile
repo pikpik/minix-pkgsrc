@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2005/06/16 06:57:51 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/21 18:57:40 jlam Exp $
 #
 
 DISTNAME=	simhv33-0
 PKGNAME=	simh-3.3.0
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://simh.trailing-edge.com/sources/
 EXTRACT_SUFX=	.zip

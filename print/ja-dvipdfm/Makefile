@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/11/13 05:30:11 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2005/11/28 06:41:22 jlam Exp $
 
 DISTNAME=	dvipdfm-0.13.2c
 PKGNAME=	ja-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	print converters
 MASTER_SITES=	ftp://ftp.kettering.edu/pub/outgoing/mwicks/dvipdfm/
 

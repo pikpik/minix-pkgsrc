@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/10/03 00:12:53 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2005/12/05 20:50:33 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBESMTP_BUILDLINK3_MK:=	${LIBESMTP_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	libesmtp
 
 .if !empty(LIBESMTP_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libesmtp+=	libesmtp>=1.0rc1nb1
-BUILDLINK_RECOMMENDED.libesmtp?=	libesmtp>=1.0.3nb1
+BUILDLINK_RECOMMENDED.libesmtp?=	libesmtp>=1.0.3nb2
 BUILDLINK_PKGSRCDIR.libesmtp?=	../../mail/libesmtp
 
 LIBESMTP=	-lesmtp

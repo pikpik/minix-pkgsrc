@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/03/24 11:33:24 adam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/01 18:03:30 jlam Exp $
 
 .include "../../lang/ocaml/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/ocaml/ocaml-graphics/}
+PKGREVISION=		1
 
 COMMENT+=		(graphics library)
 

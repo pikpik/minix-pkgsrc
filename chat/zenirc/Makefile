@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/08/28 04:25:28 uebayasi Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/11 20:08:44 reed Exp $
 #
 
 DISTNAME=	zenirc-2.112
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	ftp://ftp.splode.com/pub/zenirc/
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/01/03 17:54:09 abs Exp $
+# $NetBSD: Makefile,v 1.2 2006/01/04 11:43:25 abs Exp $
 #
 
 DISTNAME=		postgresql-jdbc-8.0-${PGBUILD}.src
 PKGNAME=		jdbc-postgresql80-${PGBUILD}
 DISTFILES+=		${DISTNAME}.tar.gz ${JARDIST}
+PKGREVISION=		1
 CATEGORIES=		databases
 MASTER_SITES=		http://jdbc.postgresql.org/download/
 

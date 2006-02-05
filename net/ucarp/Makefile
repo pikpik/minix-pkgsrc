@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.6 2006/01/13 18:42:48 wiz Exp $
 #
 
 DISTNAME=		ucarp-1.1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ucarp.org/pub/ucarp/
 EXTRACT_SUFX=		.tar.bz2

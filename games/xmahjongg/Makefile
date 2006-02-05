@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/06/01 18:02:53 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/12 20:50:01 jdc Exp $
 #
 
 DISTNAME=	xmahjongg-3.6.1
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/xmahjongg/
 

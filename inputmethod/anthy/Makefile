@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2005/10/05 13:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/23 23:08:47 wiz Exp $
 
 .include	"../../inputmethod/anthy/Makefile.common"
 
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
+
+PKGREVISION=	1
 
 MAINTAINER=	taya@NetBSD.org
 COMMENT=	Kana Kanji conversion system

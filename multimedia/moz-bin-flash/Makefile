@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/09/28 22:58:49 rh Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/19 11:46:30 salo Exp $
 .include "../../www/firefox-bin-flash/Makefile.common"
 
+PKGREVISION=	1
 COMMENT=	Flash Player plugin for mozilla-bin
 MOZ_NAME=	mozilla-linux
 MOZ_BIN=	moz-bin

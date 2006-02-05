@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2005/07/19 02:29:50 grant Exp $
+# $NetBSD: Makefile,v 1.15 2005/10/23 23:01:49 rillig Exp $
 
 DISTNAME=	xdaemon-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 DISTFILES=	${PIX} Daemon.README

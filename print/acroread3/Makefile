@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2005/06/17 03:50:30 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/05 20:50:52 rillig Exp $
 
 PKGNAME=	acroread3-3.01
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/3.x/
 

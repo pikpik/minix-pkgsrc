@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/03/18 13:02:49 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:53 tv Exp $
 #
 
 DISTNAME=	galway-0.33
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	www x11 gnome
 MASTER_SITES=	http://erin.netpedia.net/download/
 EXTRACT_SUFX=	.tgz

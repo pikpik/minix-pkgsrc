@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/24 02:27:44 xtraeme Exp $
 #
 
 DISTNAME=	gtranscode-v0.3
 PKGNAME=	${DISTNAME:S/v//}
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.fuzzymonkey.net/files/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/01/24 15:06:57 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:32 jlam Exp $
 #
 
 DISTNAME=	extipl-5.04
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tsden.org/takamiti/extipl/archs/
 

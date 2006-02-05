@@ -1,6 +1,7 @@
-#	$NetBSD: Makefile,v 1.1.1.1 2005/10/05 11:58:50 skrll Exp $
+#	$NetBSD: Makefile,v 1.2 2005/12/12 14:43:23 joerg Exp $
 
 DISTNAME=		ski-0.9.81-l6-i686
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		# empty
 

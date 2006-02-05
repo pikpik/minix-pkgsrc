@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2005/07/15 18:27:52 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:36 rillig Exp $
 #
 
 DISTNAME=	gap4r3
 PKGNAME=	gap-4.3.5
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/ \
 		ftp://ftp.math.rwth-aachen.de/pub/gap/gap4/ \

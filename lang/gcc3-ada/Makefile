@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2004/11/28 19:19:52 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/16 06:58:00 jlam Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-ada-${GCC_VERSION}
+PKGREVISION=	1
 COMMENT=	GNU Compiler Collection, v3 - Ada compiler
 
 .include "../../lang/gcc3/language.mk"

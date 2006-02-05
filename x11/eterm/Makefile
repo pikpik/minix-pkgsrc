@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.43 2005/12/05 23:55:23 rillig Exp $
+# $NetBSD: Makefile,v 1.44 2005/12/29 06:22:25 jlam Exp $
 
 DISTNAME=	Eterm-0.9.3
 PKGNAME=	${DISTNAME:S/^E/e/}
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=eterm/} \
 		ftp://ftp.dti.ad.jp/pub/X/Eterm/

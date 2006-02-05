@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:46:12 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:59 jlam Exp $
 #
 
 DISTNAME=	CgLinux-1.3.0408-0400
 PKGNAME=	Cg-compiler-1.3beta2
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://download.nvidia.com/developer/cg/Cg_1.3/Linux/
 

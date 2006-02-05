@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:46:19 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/05/22 20:08:12 jlam Exp $
 #
 
 DISTNAME=	ifile-1.3.4
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.nongnu.org/ifile/
 DIST_SUBDIR=	${PKGNAME_NOREV}

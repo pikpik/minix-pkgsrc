@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:44:58 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:39 jlam Exp $
 #
 
 DISTNAME=	bezier-0.0.3
 PKGNAME=	xmms-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://yossman.net/~kuroyi/
 

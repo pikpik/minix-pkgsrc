@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:39 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:40 jlam Exp $
 
 DISTNAME=	wmusic-1.5.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://home.jtan.com/~john/wmusic/
 

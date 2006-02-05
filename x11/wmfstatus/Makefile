@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/06/01 18:03:32 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:44 jlam Exp $
 
 DISTNAME=	wmfstatus-0.4
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.finik.net/files/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:44:57 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/31 16:37:24 tv Exp $
 #
 
 DISTNAME=	wmmixer-1.0-beta1
 PKGNAME=	wmmixer-1.0
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Vista/2471/files/
 EXTRACT_SUFX=	.tgz

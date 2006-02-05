@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:47:09 tv Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/02 15:15:22 joerg Exp $
 
 DISTNAME=		rlpr-2.06
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		print
 MASTER_SITES=		ftp://truffula.com/pub/
 

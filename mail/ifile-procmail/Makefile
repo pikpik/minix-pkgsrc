@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2003/07/25 15:46:17 salo Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/20 12:19:43 agc Exp $
 #
 
 DISTNAME=	ifile.procmail-0.3
 PKGNAME=	${DISTNAME:S/./-/}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://Xtrmntr.org/ORBman/download/
 EXTRACT_SUFX=	.tgz

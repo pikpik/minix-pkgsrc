@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:26 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/01 20:08:01 jlam Exp $
 #
 
 DISTNAME=		socket++-1.12.10
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.linuxhacker.at/linux/downloads/src/
 

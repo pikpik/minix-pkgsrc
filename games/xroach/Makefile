@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:18 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/19 23:00:24 jlam Exp $
 #
 
 DISTNAME=	xroach
 PKGNAME=	${DISTNAME}-4.4
+PKGREVISION=	1
 CATEGORIES=	x11 games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/games/
 EXTRACT_SUFX=	.tar

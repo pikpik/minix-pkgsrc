@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/12/04 13:13:27 mjl Exp $
 
 DISTNAME=	Text-Diff-HTML-0.04
 PKGNAME=	p5-${DISTNAME}
 # PKGREVISION=	2
+PKGREVISION=	1
 CATEGORIES=	perl5 textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DW/DWHEELER/}
 

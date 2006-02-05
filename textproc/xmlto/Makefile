@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:47:43 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/13 21:25:58 adrianp Exp $
 #
 
 DISTNAME=		xmlto-0.0.18
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		textproc
 MASTER_SITES=		http://cyberelk.net/tim/data/xmlto/stable/
 EXTRACT_SUFX=		.tar.bz2

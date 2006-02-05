@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:47 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/15 18:27:49 jlam Exp $
 
 DISTNAME=	${PKGNAME_NOREV}-5.src.rpm
 PKGNAME=	newt-0.51.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://download.fedora.redhat.com/pub/fedora/linux/core/3/SRPMS/
 EXTRACT_SUFX=	# empty

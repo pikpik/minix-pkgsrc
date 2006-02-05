@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/06/17 03:50:43 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/09/18 20:21:17 minskim Exp $
 
 DISTNAME=		AfterStep-1.0
 PKGNAME=		fvwm-wharf-1.0
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.afterstep.org/pub/
 

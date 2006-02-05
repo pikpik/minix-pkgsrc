@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/11/08 16:49:35 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:13 rillig Exp $
 #
 
 DISTNAME=		xfinans-5.9
+PKGREVISION=		1
 CATEGORIES=		finance x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/financial/accounting/}
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2005/12/11 21:36:35 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2006/01/11 21:32:35 joerg Exp $
 #
 
 DISTNAME=	tclx8.3.5-src
 PKGNAME=	tk-tclX-8.3.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang tcl tk
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tclx/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2005/06/01 18:02:38 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/02/04 16:23:50 ghen Exp $
 
 DISTNAME=	rosegarden-2.1pl4
 PKGNAME=	rosegarden-2.1.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cannam.demon.co.uk/rosegarden/distribution/
 

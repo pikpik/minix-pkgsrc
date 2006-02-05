@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2005/08/10 20:56:17 jlam Exp $
+# $NetBSD: Makefile,v 1.35 2006/01/07 11:28:35 wiz Exp $
 
 DISTNAME=	gphoto2-2.1.6
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gphoto/}
 

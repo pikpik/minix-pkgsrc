@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/01/18 15:41:03 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2006/01/25 19:52:47 wiz Exp $
 #
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 COMMENT+=		base plugins
 
 USE_TOOLS+=		perl:run

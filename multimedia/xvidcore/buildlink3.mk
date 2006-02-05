@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/04/05 18:41:14 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2004/10/19 10:36:54 grant Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XVIDCORE_BUILDLINK3_MK:=	${XVIDCORE_BUILDLINK3_MK}+
@@ -17,6 +17,7 @@ BUILDLINK_PACKAGES+=	xvidcore
 
 .if !empty(XVIDCORE_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.xvidcore+=	xvidcore>=1.0.0
+BUILDLINK_RECOMMENDED.xvidcore?=	xvidcore>=1.1.0nb1
 BUILDLINK_PKGSRCDIR.xvidcore?=	../../multimedia/xvidcore
 .endif	# XVIDCORE_BUILDLINK3_MK
 

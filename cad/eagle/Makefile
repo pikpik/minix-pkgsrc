@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/06/16 06:57:41 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/12 14:43:23 joerg Exp $
 #
 
 DISTNAME=		eagle-lin-eng-4.14
 PKGNAME=		eagle-4.14
+PKGREVISION=		1
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ftp.cadsoft.de/pub/program/4.14/
 EXTRACT_SUFX=		.tgz

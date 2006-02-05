@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2004/04/24 22:46:13 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:48:13 tv Exp $
 
 DISTNAME=	speyes-1.2.0
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.okb-1.org/speyes/
 

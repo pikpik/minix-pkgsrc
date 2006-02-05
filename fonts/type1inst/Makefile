@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/06/17 04:49:46 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/07/16 01:19:10 jlam Exp $
 #
 
 DISTNAME=		type1inst-0.6.1
+PKGREVISION=		1
 CATEGORIES=		fonts
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=X11/xutils/}
 

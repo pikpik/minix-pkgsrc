@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/12/26 23:39:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/28 17:51:58 garbled Exp $
 
 DISTNAME=		xdm3d-1.0
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

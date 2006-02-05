@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/11/13 22:04:52 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:45:11 tv Exp $
 #
 
 DISTNAME=		edb-1.0.3
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 

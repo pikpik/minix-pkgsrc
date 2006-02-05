@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/03/29 22:22:54 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/02/21 20:26:11 hubertf Exp $
 #
 
 DISTNAME=	gimp-1.2.5
+PKGREVISION=	1
 CATEGORIES=	graphics
 DISTFILES=	# nothing
 

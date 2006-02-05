@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/11/08 18:22:09 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/29 18:17:21 jlam Exp $
 
 DISTNAME=		elisau10
 PKGNAME=		ja-elisau-1.0
+PKGREVISION=		1
 CATEGORIES=		fonts x11 japanese
 MASTER_SITES=		http://www.wheel.gr.jp/~dai/software/ \
 			ftp://ftp.jp.NetBSD.org/pub/NetBSD-jp/tut-jp/fonts/

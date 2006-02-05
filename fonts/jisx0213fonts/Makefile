@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/29 07:04:28 jlam Exp $
 #
 
 DISTNAME=	jisx0213fonts-0.0
+PKGREVISION=	1
 CATEGORIES=	fonts x11 japanese
 MASTER_SITES=	ftp://ftp.m17n.org/pub/character/fonts/imamura/jisx0213/
 DISTFILES=	${FONTS:C/$/.bdf.gz/}

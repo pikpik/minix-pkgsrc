@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:50 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:50 jlam Exp $
 #
 
 DISTNAME=	galaxa.0.1
 PKGNAME=	galaxa-0.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/galaxa/
 

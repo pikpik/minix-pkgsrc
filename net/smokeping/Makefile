@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2005/12/05 20:50:49 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/29 06:22:02 jlam Exp $
 
 DISTNAME=	smokeping-2.0.4
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/pub/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2005/05/22 20:07:53 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2005/05/22 20:51:45 jlam Exp $
 
 DISTNAME=	libsigc++-1.2.7
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libsigc++/1.2/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:52 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/12 14:43:25 joerg Exp $
 #
 
 DISTNAME=		xyame038
 PKGNAME=		xyame-038
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.emuxhaven.net/emuxhaven/multis/
 

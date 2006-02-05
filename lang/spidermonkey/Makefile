@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/27 19:47:21 xtraeme Exp $
 #
 
 DISTNAME=	js-1.5
 PKGNAME=	${DISTNAME:S/js/spidermonkey/}
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://ftp.mozilla.org/pub/mozilla.org/js/
 

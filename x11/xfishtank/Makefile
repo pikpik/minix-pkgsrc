@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:28:28 agc Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/24 21:13:04 wiz Exp $
 
 DISTNAME=		xfishtank-2.2
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.uni-koeln.de/windows/xcontrib/
 

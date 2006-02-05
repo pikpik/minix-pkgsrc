@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:31 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:59 rillig Exp $
 
 DISTNAME=	ccze-0.2.1
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://bonehunter.rulez.org/pub/ccze/stable/
 

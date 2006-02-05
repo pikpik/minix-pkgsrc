@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2004/05/11 11:50:00 markd Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:49 jlam Exp $
 
 DISTNAME=	Ted_fr_FR
 PKGNAME=	ted-fr-2.16
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/ \
 		ftp://metalab.unc.edu/pub/packages/editors/ted/

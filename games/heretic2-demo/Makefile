@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:54 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/15 18:27:50 jlam Exp $
 #
 
 DISTNAME=	heretic2-demo-x86
 PKGNAME=	heretic2-demo-2.0
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.linuxgames.com/loki/demos/heretic2/ \
 		ftp://download.linuxlords.com/pub/demos/heretic2/ \

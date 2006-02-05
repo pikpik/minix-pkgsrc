@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/06/01 18:03:29 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 19:50:26 wiz Exp $
 #
 
 DISTNAME=	multi-aterm-0.0.4
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.materm.tuxfamily.org/
 

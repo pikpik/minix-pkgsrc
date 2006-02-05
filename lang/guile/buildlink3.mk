@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/10/15 14:50:06 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2004/11/21 21:27:35 kristerw Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GUILE_BUILDLINK3_MK:=	${GUILE_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	guile
 
 .if !empty(GUILE_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.guile+=	guile>=1.6.3nb1
-BUILDLINK_RECOMMENDED.guile+=	guile>=1.6.4nb1
+BUILDLINK_RECOMMENDED.guile+=	guile>=1.6.7nb3
 BUILDLINK_PKGSRCDIR.guile?=	../../lang/guile
 .endif	# GUILE_BUILDLINK3_MK
 

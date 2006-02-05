@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/07/19 15:30:15 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2006/01/21 18:57:41 jlam Exp $
 
 DISTNAME=	quake106
 PKGNAME=	quakedata-1.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/idstuff/quake/ \
 		ftp://ftp.idsoftware.com/idstuff/quake/

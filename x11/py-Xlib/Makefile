@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/17 15:30:43 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:48:12 tv Exp $
 
 DISTNAME=	python-xlib-0.12
 PKGNAME=	${PYPKGPREFIX}-Xlib-0.12
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=python-xlib/}
 

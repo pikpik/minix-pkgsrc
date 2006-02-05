@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/07/16 01:19:08 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 20:49:56 rillig Exp $
 
 DISTNAME=		gcc-3.3.2003.05.11
 PKGNAME=		avr-gcc-3.3.2003.05.11
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		cross
 MASTER_SITES=		http://people.freebsd.org/~joerg/
 EXTRACT_SUFX=		.tar.bz2

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/02/17 01:13:57 minskim Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2004/03/05 19:25:41 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 TIDY_BUILDLINK3_MK:=	${TIDY_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	tidy
 
 .if !empty(TIDY_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.tidy+=	tidy>=20031002
+BUILDLINK_RECOMMENDED.tidy?=	tidy>=20050921nb1
 BUILDLINK_PKGSRCDIR.tidy?=	../../www/tidy
 .endif	# TIDY_BUILDLINK3_MK
 

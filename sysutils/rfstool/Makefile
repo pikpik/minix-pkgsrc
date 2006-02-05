@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2004/07/06 18:11:15 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:51:01 rillig Exp $
 #
 
 DISTNAME=	rfstool-0.14-source
 PKGNAME=	rfstool-0.14
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://p-nand-q.com/download/rfstool/
 EXTRACT_SUFX=	.zip

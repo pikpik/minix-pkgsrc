@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2005/06/01 18:03:22 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2005/10/23 21:17:07 rillig Exp $
 
 DISTNAME=	mtools-3.9.10
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tux.org/pub/knaff/mtools/
 EXTRACT_SUFX=	.tar.bz2

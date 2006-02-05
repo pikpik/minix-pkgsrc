@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:26 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/01/21 18:57:41 jlam Exp $
 #
 
 DISTNAME=	check_cluster
 PKGNAME=	netsaint-plugin-cluster-20001207
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/alpha/
 EXTRACT_SUFX=	.c

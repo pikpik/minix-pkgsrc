@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:39 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/10/31 16:09:18 tv Exp $
 
 DISTNAME=		nosefart-2.3-mls
 PKGNAME=		${DISTNAME:S/-mls//}
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nosefart/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/02/21 20:26:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:53 jlam Exp $
 #
 
 DISTNAME=	xroads-v0.5
 PKGNAME=	xroads-0.5
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.autobahn.mb.ca/~foxtrot/
 

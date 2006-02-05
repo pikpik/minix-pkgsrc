@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/12/29 06:22:20 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/01/06 16:07:39 joerg Exp $
 #
 
 DISTNAME=	larswm-7.5.3
+PKGREVISION=	1
 CATEGORIES=	wm x11
 MASTER_SITES=	http://home.earthlink.net/~lab1701/larswm/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DOCFILES}

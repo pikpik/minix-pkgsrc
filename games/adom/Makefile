@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/11/10 06:24:49 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/12 14:43:25 joerg Exp $
 #
 
 DISTNAME=	adom-111-elf
 PKGNAME=	adom-1.1.1
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.adom.de/adom/download/linux/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:18 rillig Exp $
 
 DISTNAME=	xbomb-2.1a
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.gedanken.demon.co.uk/download-xbomb/ \
 		ftp://ftp.demon.co.uk/pub/unix/xwindows/games/ \

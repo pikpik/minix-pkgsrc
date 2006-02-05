@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/01/20 12:28:28 agc Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/01 18:03:32 jlam Exp $
 
 DISTNAME=	magicpoint-1.09a
 PKGNAME=	xmindpath-1.09a
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 

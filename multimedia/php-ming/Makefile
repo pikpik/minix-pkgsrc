@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/04 04:53:16 minskim Exp $
 
 MODNAME=		ming
+PKGREVISION=		1
 CATEGORIES+=		multimedia
 
 MAINTAINER=		obata@lins.jp

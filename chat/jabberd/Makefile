@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2005/12/19 18:27:54 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/29 06:21:33 jlam Exp $
 #
 
 DISTNAME=		jabber-1.4.2
 PKGNAME=		jabberd-1.4.2
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		chat
 MASTER_SITES=		http://jabberd.jabberstudio.org/1.4/dist/
 

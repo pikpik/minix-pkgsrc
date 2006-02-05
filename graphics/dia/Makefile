@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2005/12/31 12:32:36 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2006/01/24 07:32:11 wiz Exp $
 #
 
 .include "Makefile.common"
 
-PKGREVISION=	3
+PKGREVISION=	4
 
 USE_DIRS+=	xdg-1.1
 

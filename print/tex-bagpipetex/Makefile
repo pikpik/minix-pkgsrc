@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/02/11 00:51:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/19 10:15:30 grant Exp $
 #
 
 DISTNAME=	bagpipetex-3.01
 PKGNAME=	tex-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://www.stanford.edu/~wrinnes/bagpipe.tex/distribution/
 DISTFILES=	bagpipe301.tar.gz

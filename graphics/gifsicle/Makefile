@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:03 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/01 18:02:55 jlam Exp $
 #
 
 DISTNAME=	gifsicle-1.41
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/gifsicle/
 

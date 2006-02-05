@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/12/26 23:39:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.14 2006/01/04 04:29:07 schmonz Exp $
 #
 
 DISTNAME=       yrolo-1.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	misc
 MASTER_SITES=   http://www.muquit.com/muquit/software/yrolo/
 

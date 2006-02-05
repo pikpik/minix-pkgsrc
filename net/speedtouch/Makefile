@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2005/12/29 06:22:04 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/01/20 23:41:30 jlam Exp $
 
 DISTNAME=		speedtouch-1.3.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=speedtouch/}
 DISTFILES=		${DISTNAME}.tar.bz2

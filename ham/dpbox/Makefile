@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/05/22 20:08:08 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:50:23 rillig Exp $
 #
 
 DISTNAME=	dpbox-60000
 PKGNAME=	dpbox-6.00.00
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	http://home.snafu.de/wahlm/dl8hbs/
 

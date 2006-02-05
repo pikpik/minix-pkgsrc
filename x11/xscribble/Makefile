@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2004/05/23 18:31:27 danw Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:51:20 rillig Exp $
 
 DISTNAME=	xscribble
 PKGNAME=	xscribble-20000616
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.handhelds.org/pub/apps/src/
 EXTRACT_SUFX=	.tgz

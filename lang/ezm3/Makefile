@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/12/05 20:50:25 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/01/02 23:19:41 veego Exp $
 
 DISTNAME=	ezm3-1.2
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/development/CVSup/ezm3/
 DISTFILES=	${DISTNAME}-src.tar.bz2 ${BOOTSTRAP}

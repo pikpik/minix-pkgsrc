@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2005/05/22 20:07:40 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/06/01 18:02:39 jlam Exp $
 #
 
 DISTNAME=	neato
 PKGNAME=	xmms-neato-20010818
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.rpi.edu/~mullr/xmms/
 

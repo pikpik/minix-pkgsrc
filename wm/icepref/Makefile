@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/02/04 13:00:09 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:47 tv Exp $
 #
 
 DISTNAME=	icepref-1.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	wm
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2005/07/16 01:19:08 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2005/11/28 06:41:20 jlam Exp $
 #
 
 DISTNAME=	doc2html
 PKGNAME=	doc2html-3.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	converters
 MASTER_SITES=	http://www.htdig.org/files/contrib/parsers/
 

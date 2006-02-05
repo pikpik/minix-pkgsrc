@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/03/26 02:27:51 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/29 06:22:07 jlam Exp $
 
 DISTNAME=	jsclasses-030624
 PKGNAME=	ja-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print japanese
 MASTER_SITES=	http://www.matsusaka-u.ac.jp/~okumura/jsclasses/
 EXTRACT_SUFX=	.zip

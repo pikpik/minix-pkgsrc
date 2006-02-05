@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.37 2006/01/24 07:31:56 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2006/01/25 01:51:34 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gnetlist-${PKGVERSION}
 PKGNAME=		gnetlist-${PKGVERSION}
+PKGREVISION=		1
 CATEGORIES=		cad
 
 MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Netlist generation program
 
-DEPENDS+=		geda-symbols-${PKGVERSION}:../../cad/geda-symbols
+DEPENDS+=		geda-symbols-${PKGVERSION}nb1:../../cad/geda-symbols
 
 .include "../../cad/geda/Makefile.common"
 

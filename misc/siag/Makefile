@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.45 2005/06/01 18:03:05 jlam Exp $
+# $NetBSD: Makefile,v 1.46 2006/02/04 02:46:31 rillig Exp $
 #
 # Note: I have tried to update this package to 3.6.0, but there were
 # some undefined identifiers "DndDrop" and "DndRawData" in the
 # xsiag/window.c file.
 
 DISTNAME=	siag-3.5.7
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	misc textproc math
 MASTER_SITES=	ftp://siag.nu/pub/siag/
 

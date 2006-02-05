@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2005/07/19 10:22:33 grant Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:49:48 rillig Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
 

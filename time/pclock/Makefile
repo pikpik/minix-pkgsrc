@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/06/01 18:03:23 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:51:09 rillig Exp $
 #
 
 DISTNAME=	pclock_0.13.1.orig
 PKGNAME=	${DISTNAME:S/_/-/:S/.orig//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	time x11
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/p/pclock/}
 

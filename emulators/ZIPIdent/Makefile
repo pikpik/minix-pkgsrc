@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2006/01/01 19:37:28 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/20 23:41:30 jlam Exp $
 #
 
 DISTNAME=		zident27
 PKGNAME=		ZIPIdent-2.7
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.logiqx.com/Tools/ZIPIdent/
 EXTRACT_SUFX=		.zip

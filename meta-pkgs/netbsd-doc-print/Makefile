@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/07/19 10:16:53 grant Exp $
+# $NetBSD: Makefile,v 1.18 2005/11/28 06:41:21 jlam Exp $
 #
 
 DISTNAME=	netbsd-doc-print-1.2
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty

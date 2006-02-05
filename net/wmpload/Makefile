@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:47:02 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/22 03:47:36 wiz Exp $
 #
 
 DISTNAME=	wmpload-0.9.5
+PKGREVISION=	1
 CATEGORIES=	net x11
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/serial/ppp/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:56 jlam Exp $
 
 DISTNAME=	xevilsrc2.02r2
 PKGNAME=	xevil-2.02
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.xevil.com/download/stable/
 EXTRACT_SUFX=	.zip

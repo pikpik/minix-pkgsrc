@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2003/06/24 19:23:51 salo Exp $
+# $NetBSD: Makefile,v 1.5 2004/11/28 16:02:56 wiz Exp $
 #
 
 DISTNAME=	root-tail-0.0.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc x11
 MASTER_SITES=	http://www.goof.com/pcg/marc/data/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2006/01/05 23:29:05 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 20:39:05 wiz Exp $
 
 DISTNAME=		cdbkup-1.0
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cdbkup/} \
 			ftp://batraq.anything3d.com/pub/cdbkup/cdbkup-1/ \

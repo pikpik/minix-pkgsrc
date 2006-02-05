@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/12/11 21:22:41 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2006/01/15 19:32:44 joerg Exp $
 
 DISTNAME=	fMSX24.tar
 PKGNAME=	fmsx-2.4
+PKGREVISION=	1
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://www.komkon.org/fms/fMSX/
 EXTRACT_SUFX=	.Z

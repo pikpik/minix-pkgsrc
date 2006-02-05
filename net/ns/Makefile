@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:47 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/27 02:31:43 minskim Exp $
 
 DISTNAME=	ns-src-2.29
 PKGNAME=	${DISTNAME:S/-src//}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 

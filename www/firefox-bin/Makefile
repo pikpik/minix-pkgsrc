@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/12/12 18:49:47 salo Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/03 20:34:44 xtraeme Exp $
 
 MOZILLA=	firefox
+PKGREVISION=	1
 MOZ_VER=	1.5.0.1
 MOZ_DISTVER=	${MOZ_VER}
 

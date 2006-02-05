@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/31 20:34:19 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/29 06:21:50 jlam Exp $
 #
 
 DISTNAME=		gotmail-0.8.6
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gotmail/}
 

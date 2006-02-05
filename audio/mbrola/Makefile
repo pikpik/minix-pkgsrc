@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/05/31 22:11:22 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:39 jlam Exp $
 
 DISTNAME=		mbr301h
 PKGNAME=		mbrola-301h
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		http://www.festvox.org/mbrola/bin/netbsd/
 EXTRACT_SUFX=		.zip

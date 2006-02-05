@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2006/01/25 22:21:09 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/03 02:19:42 rillig Exp $
 #
 
 DISTNAME=	magic-7.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	cad
 MASTER_SITES=	http://vlsi.cornell.edu/magic/
 

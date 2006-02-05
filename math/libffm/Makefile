@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:29 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:13 jlam Exp $
 
 DISTNAME=		libffm.0.28
 PKGNAME=		libffm-0.28
+PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		ftp://ftp.unix-ag.org/user/nils/
 

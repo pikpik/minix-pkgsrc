@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/12/30 22:41:27 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/30 22:57:57 joerg Exp $
 
 DISTNAME=		Maelstrom-1.4.3-L2.0.6-src.tar.gz
 PKGNAME=		maelstrom-x11-2.0.6
+PKGREVISION=		1
 CATEGORIES=		games x11
 MASTER_SITES+=		ftp://ftp.devolution.com/pub/maelstrom/
 MASTER_SITES+=		ftp://ftp.devolution.com/pub/maelstrom/Maelstrom-binaries/

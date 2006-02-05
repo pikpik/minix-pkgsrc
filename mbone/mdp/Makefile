@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:14 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/17 03:50:20 jlam Exp $
 #
 
 DISTNAME=	src-mdp-1.9a5
+PKGREVISION=	1
 CATEGORIES=	mbone
 MASTER_SITES+=	http://manimac.itd.nrl.navy.mil/MDP/dist/
 MASTER_SITES+=	http://downloads.pf.itd.nrl.navy.mil/protolib/

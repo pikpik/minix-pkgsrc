@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2005/12/05 23:55:12 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2005/12/29 06:21:55 jlam Exp $
 #
 
 DISTNAME=		pinfo-0.6.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		misc
 MASTER_SITES=		http://zeus.polsl.gliwice.pl/~pborys/stable-version/
 

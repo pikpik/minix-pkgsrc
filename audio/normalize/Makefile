@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2004/12/27 21:38:06 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:44:55 tv Exp $
 #
 
 DISTNAME=	normalize-0.7.6
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	audio
 MASTER_SITES=	http://www1.cs.columbia.edu/~cvaill/normalize/
 

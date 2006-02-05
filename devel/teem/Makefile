@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:08 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/09 16:32:11 joerg Exp $
 #
 
 DISTNAME=		teem-1.8.0-src
 PKGNAME=		${DISTNAME:C/-src//}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=teem/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/29 15:59:12 shannonjr Exp $
 #
 
 DISTNAME=		Cheetah-0.9.18
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cheetahtemplate/}
 

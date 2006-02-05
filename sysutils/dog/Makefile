@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2005/03/24 21:13:01 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:32 jlam Exp $
 
 DISTNAME=	dog-1.7
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://jl.photodex.com/dog/
 

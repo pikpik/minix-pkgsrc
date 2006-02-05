@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2005/07/16 01:19:15 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2005/07/31 13:30:49 grant Exp $
 
 DISTNAME=		irrd2.2.3
 PKGNAME=		irrd-2.2.3
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.irrd.net/ \
 			ftp://ftp.merit.edu/radb/irrd/ \

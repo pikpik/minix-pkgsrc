@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2004/05/29 00:17:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/01 03:49:19 dmcmahill Exp $
 #
 
 .include "../../cad/wcalc/Makefile.common"
 PKGNAME=	lib${DISTNAME}
+PKGREVISION=	1
 
 COMMENT=	Library for Transmission Line Analysis/Synthesis
 

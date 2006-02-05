@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:37 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:22 jlam Exp $
 #
 
 DISTNAME=		words-1.97-linux
 PKGNAME=		latin-words-bin-1.97
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		ftp://petrus.thomasaquinas.edu/pub/linux/words/
 

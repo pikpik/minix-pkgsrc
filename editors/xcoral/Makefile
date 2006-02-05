@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2005/06/01 18:02:46 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/16 06:57:50 jlam Exp $
 
 DISTNAME=		xcoral-3.2
+PKGREVISION=		1
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=editors/}
 

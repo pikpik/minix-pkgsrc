@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2005/06/01 18:02:38 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/31 15:48:32 tv Exp $
 #
 
 DISTNAME=	Mixer.app-1.8.0
 PKGNAME=	mixer.app-1.8.0
+PKGREVISION=	1
 CATEGORIES=	audio
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://www.fukt.bth.se/~per/mixer/

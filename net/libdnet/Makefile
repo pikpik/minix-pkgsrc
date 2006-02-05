@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:49 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:24 jlam Exp $
 #
 
 DISTNAME=	libdnet-1.10
+PKGREVISION=	1
 CATEGORIES=	devel net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libdnet/}
 

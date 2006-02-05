@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2004/12/03 15:15:03 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:46:29 tv Exp $
 #
 
 DISTNAME=	fplsa
 PKGNAME=	gp-fplsa-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 SVR4_PKGNAME=	gpfpl
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/share/

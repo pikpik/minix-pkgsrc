@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:47:44 tv Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/01 18:03:23 jlam Exp $
 #
 
 DISTNAME=	dclock
 PKGNAME=	dclock-4
+PKGREVISION=	1
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:S/contrib/R5contrib/}
 EXTRACT_SUFX=	.shar.Z

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2005/05/22 20:07:58 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/05 20:50:11 rillig Exp $
 
 DISTNAME=		hercules-2.11
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		http://www.conmicro.cx/hercules/
 

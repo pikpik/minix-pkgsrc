@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/07/15 18:27:48 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/29 06:21:32 jlam Exp $
 #
 
 DISTNAME=	arka-0.11
+PKGREVISION= 	1
 CATEGORIES= 	biology
 MASTER_SITES=	http://bioinformatics.org/genpak/download/
 EXTRACT_SUFX=	.tgz

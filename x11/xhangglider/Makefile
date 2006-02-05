@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:56:57 grant Exp $
+# $NetBSD: Makefile,v 1.7 2005/02/21 20:26:15 hubertf Exp $
 #
 
 DISTNAME=	xhangglider-0.94.0
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.netfort.gr.jp/~take/linux/
 

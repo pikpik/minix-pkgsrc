@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.8 2004/07/21 21:16:10 salo Exp $
 #
 
 DISTNAME=	xmeter-1.15
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=misdirected/}
 

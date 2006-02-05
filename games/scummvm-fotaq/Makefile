@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:57 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:55 jlam Exp $
 #
 
 DISTNAME=		FOTAQ_Floppy
 PKGNAME=		scummvm-fotaq-0
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scummvm/}
 EXTRACT_SUFX=		.zip

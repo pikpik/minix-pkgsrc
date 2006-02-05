@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:47:45 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:24 jlam Exp $
 #
 
 DISTNAME=	aewm++-1.0.24
+PKGREVISION=	1
 CATEGORIES=	wm x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sapphire/}
 EXTRACT_SUFX=	.tar.bz2

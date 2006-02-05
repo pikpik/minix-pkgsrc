@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/05/23 11:41:35 recht Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:48:03 tv Exp $
 
 DISTNAME=	MailManager-0.94
 PKGNAME=	zope25-MailManager-0.94
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mailmanager/}
 

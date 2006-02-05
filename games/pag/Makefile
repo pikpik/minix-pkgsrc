@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:08:02 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/25 14:38:05 xtraeme Exp $
 #
 
 DISTNAME=	pag-0.92
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://cvs.nopcode.org/
 

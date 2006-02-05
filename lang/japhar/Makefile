@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2005/05/17 20:56:51 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2005/05/22 20:08:10 jlam Exp $
 #
 
 DISTNAME=		japhar-0.08
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.japhar.org/pub/hungry/japhar/source/
 

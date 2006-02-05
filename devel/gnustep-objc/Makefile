@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/05/22 20:07:51 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/11/03 13:38:54 rillig Exp $
 #
 
 DISTNAME=	gnustep-objc-1.3.0
+PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=libs/}
 

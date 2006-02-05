@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2003/09/09 23:51:21 jschauma Exp $
+# $NetBSD: Makefile,v 1.7 2005/08/28 04:25:31 uebayasi Exp $
 
 DISTNAME=	dictionary-1.8.2
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME:S/dictionary/emacs-dict-client/}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${HOMEPAGE}
 

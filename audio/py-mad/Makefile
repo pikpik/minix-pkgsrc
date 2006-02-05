@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2004/10/03 00:13:09 tv Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:44:56 tv Exp $
 #
 
 DISTNAME=		pymad-0.5.1
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME:S/py//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=		audio python
 MASTER_SITES=		http://spacepants.org/src/pymad/download/
 

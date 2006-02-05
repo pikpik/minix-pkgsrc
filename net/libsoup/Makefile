@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/07/21 16:29:55 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/10 20:56:22 jlam Exp $
 #
 
 DISTNAME=		libsoup-1.99.28
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libsoup/1.99/}
 EXTRACT_SUFX=		.tar.bz2

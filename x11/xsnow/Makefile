@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2005/03/24 21:13:04 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/04/11 21:48:16 tv Exp $
 
 DISTNAME=	xsnow-1.42
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	http://www.euronet.nl/~rja/Xsnow/
 

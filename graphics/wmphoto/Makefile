@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/11/03 22:12:35 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:23 rillig Exp $
 #
 
 DISTNAME=	wmphoto-0.3a
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.dcc.uchile.cl/~amartoq/wmphoto/
 

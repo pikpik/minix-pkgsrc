@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/10/20 10:06:46 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:59 rillig Exp $
 #
 
 DISTNAME=	855resolution-0.4
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/12/29 06:22:20 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/03 00:58:25 wiz Exp $
 #
 
 DISTNAME=	wmii-20051114
+PKGREVISION=	1
 CATEGORIES=	wm x11
 MASTER_SITES=	http://wmii.de/snaps/
 

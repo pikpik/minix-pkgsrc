@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2005/11/07 21:17:07 tv Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/05 20:50:29 rillig Exp $
 
 DISTNAME=		coolmail-1.3
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=system/mail/biffs/}
 EXTRACT_SUFX=		.tgz

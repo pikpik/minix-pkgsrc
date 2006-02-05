@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/07/21 16:29:44 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/10 20:56:12 jlam Exp $
 
 DISTNAME=		faad2-2.0
 PKGNAME=		xmms-faad-2.0
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=faac/}
 

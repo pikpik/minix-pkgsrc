@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2005/09/07 13:58:16 adam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GALE_BUILDLINK3_MK:=	${GALE_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	gale
 
 .if !empty(GALE_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.gale+=	gale>=0.99f
+BUILDLINK_RECOMMENDED.gale?=	gale>=0.99fnb1
 BUILDLINK_PKGSRCDIR.gale?=	../../chat/gale
 .endif	# GALE_BUILDLINK3_MK
 

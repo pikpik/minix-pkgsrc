@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2004/05/07 01:14:47 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:05 tv Exp $
 #
 
 DISTNAME=	roxirc-1.8
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://roxirc.lighter.net/download/
 

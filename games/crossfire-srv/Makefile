@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2005/07/16 01:19:10 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/29 17:41:27 joerg Exp $
 #
 
 DISTNAME=	crossfire-1.0.0
 PKGNAME=	crossfire-server-1.0.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.scruz.net/users/mwedel/public/
 DISTFILES=	${CF_SRC} ${CF_MAPS}

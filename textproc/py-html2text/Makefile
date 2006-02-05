@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/12/03 00:47:04 schmonz Exp $
 #
 
 DISTNAME=		html2text-2.23
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		textproc python
 MASTER_SITES=		${HOMEPAGE}
 EXTRACT_SUFX=		.py

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2004/12/03 15:15:03 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/04/11 21:46:28 tv Exp $
 
 DISTNAME=		euler-1.60.6
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=euler/}
 

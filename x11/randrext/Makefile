@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:48:13 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/07 16:49:41 reed Exp $
 
 DISTNAME=		randrext-1.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xlibs.freedesktop.org/release/
 EXTRACT_SUFX=		.tar.bz2

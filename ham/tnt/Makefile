@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2005/05/22 20:08:08 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/08/14 14:45:58 wulf Exp $
 #
 
 DISTNAME=	tnt-1.9.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	ham
 MASTER_SITES=	ftp://ftp.wspse.de/pub/packet_radio/tnt/
 EXTRACT_SUFX=	.tar.bz2

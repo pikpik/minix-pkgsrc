@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2004/01/24 13:40:43 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:08 jlam Exp $
 #
 
 DISTNAME=	7pl225sr
 PKGNAME=	7plus-225
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	http://home.t-online.de/home/dg1bbq/
 DISTFILES=	7pl225sr.tgz \

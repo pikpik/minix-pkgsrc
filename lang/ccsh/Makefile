@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:12 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/22 20:08:08 jlam Exp $
 #
 
 DISTNAME=		ccsh-0.0.4
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ccsh/}
 

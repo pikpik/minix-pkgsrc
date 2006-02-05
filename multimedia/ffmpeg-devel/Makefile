@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2004/10/03 00:13:02 tv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/24 04:00:37 xtraeme Exp $
 
 DISTNAME=	ffmpeg-0.4.9-pre1
 PKGNAME=	ffmpeg-devel-0.4.9pre1
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ffmpeg/}
 

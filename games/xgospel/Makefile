@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:58 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/01 18:02:53 jlam Exp $
 #
 
 DISTNAME=	xgospel-1.12d
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	http://img.teaser.fr/~jlgailly//
 

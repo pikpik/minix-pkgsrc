@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2003/11/18 16:29:50 cube Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:03 rillig Exp $
 
 PKGNAME=	emacs20-${DISTNAME}
+PKGREVISION=	1
 
 DISTINFO_FILE=	${.CURDIR}/../../devel/elib/distinfo
 PATCHDIR=	${.CURDIR}/../../devel/elib/patches

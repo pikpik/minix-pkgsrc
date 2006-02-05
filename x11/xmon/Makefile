@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/21 17:38:34 martti Exp $
+# $NetBSD: Makefile,v 1.7 2004/07/21 21:16:10 salo Exp $
 #
 
 DISTNAME=	xmon.1.5.4
 PKGNAME=	xmon-1.5.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 devel
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=devel_tools/}
 

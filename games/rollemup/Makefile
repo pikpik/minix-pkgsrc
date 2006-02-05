@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2005/07/15 18:27:51 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/05 20:50:17 rillig Exp $
 
 DISTNAME=	Rollemup
 PKGNAME=	rollemup-1.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://savor.gulic.org/demos/
 # was http://usa.lostboys.nl/medialab/rollemup/Linux/

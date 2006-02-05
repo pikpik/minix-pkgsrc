@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/01/25 16:03:00 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/04 11:59:35 wiz Exp $
 
 DISTNAME=	cdrtools-2.01
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/
 EXTRACT_SUFX=	.tar.bz2

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2004/05/07 15:25:13 cjep Exp $
+# $NetBSD: Makefile,v 1.4 2005/05/02 23:02:06 reed Exp $
 
 DISTNAME=	urbanterror3
 PKGNAME=	quake3server-ut-3.0
+PKGREVISION=	1
 CATEGORIES=	games net
 DISTFILES=	urbanterror3.zip
 

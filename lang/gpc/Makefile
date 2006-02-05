@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2005/12/05 20:50:25 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2005/12/05 23:55:09 rillig Exp $
 
 DISTNAME=		gpc-2.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITES+=		http://www.gnu-pascal.de/current/ \

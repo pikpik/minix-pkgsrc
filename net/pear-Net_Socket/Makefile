@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2004/11/28 10:21:48 jdolecek Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 20:08:43 jdolecek Exp $
 
 DISTNAME=	Net_Socket-1.0.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES+=	net
 
 MAINTAINER=	jdolecek@NetBSD.org

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:49 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/12 14:43:26 joerg Exp $
 #
 
 DISTNAME=		skype_staticQT-1.2.0.18
 PKGNAME=		${DISTNAME:S/_staticQT//}
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://download.skype.com/linux/
 EXTRACT_SUFX=		.tar.bz2

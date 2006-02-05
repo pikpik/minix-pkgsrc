@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.55 2005/12/05 20:51:02 rillig Exp $
+# $NetBSD: Makefile,v 1.56 2005/12/05 23:55:20 rillig Exp $
 
 DISTNAME=	xosview-1.8.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xosview/}
 

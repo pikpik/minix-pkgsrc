@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/05/08 13:35:20 uebayasi Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/28 04:25:30 uebayasi Exp $
 #
 
 DISTNAME=	lookup-1.4
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://openlab.jp/edict/lookup/dist/
 

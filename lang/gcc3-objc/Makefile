@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2004/07/02 15:40:01 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2005/06/16 06:58:00 jlam Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-objc-${GCC_VERSION}
+PKGREVISION=	1
 COMMENT=	GNU Compiler Collection, v3 - Objective C compiler
 
 INSTLIBS=	libobjc/libobjc.la

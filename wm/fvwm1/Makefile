@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/03/24 21:13:03 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/05 20:51:09 rillig Exp $
 
 DISTNAME=	fvwm-1.24r
 PKGNAME=	${DISTNAME:S/fvwm/fvwm1/}
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

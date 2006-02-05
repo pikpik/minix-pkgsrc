@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:37 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/07/27 16:21:17 wiz Exp $
 #
 
 DISTNAME=		InlineEgg-1.08
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://oss.corest.com/repo/
 

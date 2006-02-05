@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/12/11 09:40:42 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/02 14:01:09 christos Exp $
 #
 
 DISTNAME=	neverball-1.4.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.icculus.org/neverball/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:07:51 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/07/29 04:52:12 grant Exp $
 #
 
 DISTNAME=	generate-2.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.druid.net/pub/distrib/
 EXTRACT_SUFX=	.tgz

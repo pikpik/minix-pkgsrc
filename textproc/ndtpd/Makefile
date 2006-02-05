@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2005/12/29 06:22:19 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/10 15:50:39 joerg Exp $
 #
 
 DISTNAME=	ndtpd-3.1.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/ndtpd/
 

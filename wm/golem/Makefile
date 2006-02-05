@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2006/01/06 16:21:53 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/01/10 20:47:06 wiz Exp $
 #
 
 DISTNAME=	golem-0.0.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=golem/}
 

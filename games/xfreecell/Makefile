@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2005/05/22 20:08:03 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:53 jlam Exp $
 
 DISTNAME=	xfreecell-1.0.5b
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=   http://www2.giganet.net/~nakayama/
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2003/12/30 17:21:54 cjep Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/05 11:02:08 wiz Exp $
 
 DISTNAME=	tree-puzzle-5.1
 PKGNAME=	puzzle-5.1
+PKGREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	http://members.tripod.de/korbi/puzzle/ \
 		ftp://ftp.ebi.ac.uk/pub/software/unix/puzzle/ \

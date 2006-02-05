@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/05/22 20:08:31 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:32 jlam Exp $
 #
 
 DISTNAME=	sign-1.0.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://swapped.cc/sign/files/
 

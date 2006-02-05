@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/12/05 20:50:33 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/29 06:21:50 jlam Exp $
 #
 
 DISTNAME=	mailgraph-1.12
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://people.ee.ethz.ch/~dws/software/mailgraph/pub/ \
 		http://people.ee.ethz.ch/~dws/software/mailgraph/pub/old/

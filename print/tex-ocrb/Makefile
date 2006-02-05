@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/09/28 14:31:08 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/11/08 21:45:01 tonio Exp $
 #
 
 DISTNAME=	ocr-b
 PKGNAME=	tex-ocrb-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=fonts/${DISTNAME}/}
 

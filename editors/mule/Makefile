@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2005/12/01 18:13:24 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2006/01/04 20:35:08 joerg Exp $
 
 DISTNAME=	mule-2.3
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/
 

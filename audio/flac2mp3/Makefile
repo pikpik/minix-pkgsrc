@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/07/15 20:14:03 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/21 18:57:40 jlam Exp $
 
 DISTNAME=	flac2mp3
 PKGNAME=	flac2mp3-20041223
+PKGREVISION=	1
 CATEGORIES=	audio converters
 MASTER_SITES=	http://www.gurulabs.com/files/
 EXTRACT_SUFX=	.pl

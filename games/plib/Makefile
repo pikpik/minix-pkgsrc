@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:56 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/06/01 18:02:51 jlam Exp $
 #
 
 DISTNAME=	plib-1.6.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games x11
 MASTER_SITES=	http://plib.sourceforge.net/dist/
 

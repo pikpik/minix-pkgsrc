@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2005/06/17 03:50:32 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/09/28 20:52:26 rillig Exp $
 
 # Date-based distfile name for pre-releases leading to 0.6.6.
 DISTNAME=	pyca-20031021
 PKGNAME=	${DISTNAME:S/pyca-/pyca-0.6.6./}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	http://www.pyca.de/download/
 

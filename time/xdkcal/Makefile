@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:45 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/01 18:03:24 jlam Exp $
 #
 
 DISTNAME=	xdkcal-0.9d
+PKGREVISION=	1
 CATEGORIES=	time
 MASTER_SITES=	http://www.shiratori.riec.tohoku.ac.jp/~jir/linux/products/xdkcal/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:02 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/04 17:19:54 joerg Exp $
 #
 
 DISTNAME=	aegis-4.15
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://aegis.sourceforge.net/
 

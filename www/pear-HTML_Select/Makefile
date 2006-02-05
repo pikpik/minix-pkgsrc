@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2004/11/27 10:02:52 jdolecek Exp $
+# $NetBSD: Makefile,v 1.7 2004/11/27 13:34:37 jdolecek Exp $
 
 DISTNAME=	HTML_Select-1.2.1
+PKGREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	jdolecek@NetBSD.org

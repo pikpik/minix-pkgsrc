@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/08/24 09:13:24 kivinen Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/04 00:33:17 wiz Exp $
 
 DISTNAME=	ssh-3.2.9.1
 PKGNAME=	${DISTNAME:C/ssh-/ssh2-/}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.ssh.com/pub/ssh/
 

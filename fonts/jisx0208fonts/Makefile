@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2003/07/17 21:37:13 grant Exp $
+# $NetBSD: Makefile,v 1.28 2003/07/21 16:47:07 martti Exp $
 #
 
 DISTNAME=	jisx0208fonts-200301316
+PKGREVISION=	1
 CATEGORIES=	fonts x11 japanese
 MASTER_SITES=   # empty
 DISTFILES=	# empty

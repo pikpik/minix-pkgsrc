@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2005/08/19 18:12:37 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/29 06:21:42 jlam Exp $
 
 DISTNAME=	xpat2-1.07
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=games/solitaires/}
 EXTRACT_SUFX=	-src.tar.gz

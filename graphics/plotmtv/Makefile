@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2004/01/20 12:18:16 agc Exp $
+# $NetBSD: Makefile,v 1.12 2004/07/21 21:16:10 salo Exp $
 
 DISTNAME=	Plotmtv1.4.1
 PKGNAME=	plotmtv-1.4.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 EXTRACT_SUFX=	.tar.Z

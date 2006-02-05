@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/09/08 13:39:21 martin Exp $
+# $NetBSD: Makefile,v 1.11 2005/11/03 22:03:18 rillig Exp $
 #
 
 DISTNAME=	xscavenger-1.4.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.xdr.com/dash/
 EXTRACT_SUFX=	.tgz

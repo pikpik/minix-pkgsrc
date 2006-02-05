@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2005/12/29 06:22:21 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/01/24 07:32:43 wiz Exp $
 
 DISTNAME=	mod_python-${VERSION}
 PKGNAME=	ap2-${PYPKGPREFIX}-python-${VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www python
 MASTER_SITES=	${MASTER_SITE_APACHE:=httpd/modpython/}
 EXTRACT_SUFX=	.tgz

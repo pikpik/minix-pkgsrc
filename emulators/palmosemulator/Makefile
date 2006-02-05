@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2005/07/16 01:19:10 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:11 rillig Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
 PKGNAME=	palmosemulator-${POSE_VERSION}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://www.palmos.com/dev/tools/emulator/sources/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \

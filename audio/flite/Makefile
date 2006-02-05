@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/16 14:18:42 xtraeme Exp $
 #
 
 DISTNAME=	flite-1.3-release
 PKGNAME=	${DISTNAME:S/-release//}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.cs.cmu.edu/flite/packed/flite-1.3/
 

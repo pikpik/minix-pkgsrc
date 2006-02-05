@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/10/31 16:13:50 tv Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/05 20:49:49 rillig Exp $
 #
 
 DISTNAME=	rio500-0.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rio500/}
 

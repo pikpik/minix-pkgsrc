@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:44 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/11/05 17:14:52 rillig Exp $
 
 DISTNAME=	gdb-5.3
 PKGNAME=	avr-gdb-5.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	cross
 MASTER_SITES=	${MASTER_SITE_GNU:=gdb/}
 

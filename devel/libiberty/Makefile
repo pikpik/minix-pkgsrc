@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:27 tv Exp $
+# $NetBSD: Makefile,v 1.5 2005/05/22 20:07:53 jlam Exp $
 #
 
 DISTNAME=		libiberty-1.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		http://www.johnrshannon.com/NetBSD/
 

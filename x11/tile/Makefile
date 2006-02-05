@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/15 13:40:49 minskim Exp $
 #
 
 DISTNAME=		tile_0.7.3
 PKGNAME=		tile-0.7.3
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://www.unixdev.net/downloads/tile/0.7.3/
 

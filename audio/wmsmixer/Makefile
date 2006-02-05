@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:44:58 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/31 16:38:40 tv Exp $
 #
 
 DISTNAME=	wmsmixer-0.5.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.hibernaculum.net/download/
 

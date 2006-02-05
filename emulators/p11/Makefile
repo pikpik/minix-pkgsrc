@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/12/05 23:55:07 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/09 09:37:32 joerg Exp $
 #
 
 DISTNAME=	p11-2.10a
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/cats/usr/harti/p11/
 

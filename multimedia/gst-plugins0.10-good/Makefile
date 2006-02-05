@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/01/18 15:42:27 jmmv Exp $
 #
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 COMMENT+=		good plugins
 
 CONFIGURE_ARGS+=	--enable-gconf

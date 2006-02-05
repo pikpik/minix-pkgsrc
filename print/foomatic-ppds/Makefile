@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/12/17 18:39:24 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/29 06:22:07 jlam Exp $
 
 .include "Makefile.common"
 
 DISTNAME=	foomatic-filters-ppds-${FOOMATIC_PPDS_VERSION}
 PKGNAME=	${DISTNAME:S/-filters-/-/}
+PKGREVISION=	1
 
 # The definitive location of the distfile is at www.linuxprinting.org,
 # but this tarball is regenerated daily from the Foomatic database.

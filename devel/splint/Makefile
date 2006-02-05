@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2005/04/10 16:49:59 jschauma Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/22 20:07:55 jlam Exp $
 #
 
 VERSION=	3.1.1
 DISTNAME=	splint-${VERSION}.src
 PKGNAME=	splint-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.splint.org/downloads/
 EXTRACT_SUFX= .tgz

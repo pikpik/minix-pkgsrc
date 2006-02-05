@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2005/12/26 23:39:32 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2006/01/04 04:29:07 schmonz Exp $
 
 PKGNAME=	jdk-openjit-${OPENJIT_VERSION}
+PKGREVISION=	1
 
 BROKEN_IN=	pkgsrc-2005Q4
 

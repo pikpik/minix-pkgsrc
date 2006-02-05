@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2005/09/04 05:00:36 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/29 06:21:54 jlam Exp $
 
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	Free real-time 3D space simulator
 
 

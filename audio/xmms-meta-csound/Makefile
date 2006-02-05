@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/05/23 08:47:26 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/16 06:57:40 jlam Exp $
 #
 
 DISTNAME=		xmms-meta-csound-0.3
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		# empty
 DISTFILES=		# empty

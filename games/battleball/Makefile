@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2005/06/01 21:28:41 dillo Exp $
+# $NetBSD: Makefile,v 1.20 2005/06/16 06:57:53 jlam Exp $
 
 DISTNAME=	battleball.21.src
 PKGNAME=	battleball-2.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games x11
 MASTER_SITES=	http://linuxberg.prover.com.br/files/x11/entertain/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2004/07/31 03:48:30 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2005/04/11 21:44:48 tv Exp $
 #
 
 DISTNAME=		bicom101
 PKGNAME=		bicom-1.01
+PKGREVISION=		1
 CATEGORIES=		archivers
 MASTER_SITES=		http://www3.sympatico.ca/mt0000/bicom/
 EXTRACT_SUFX=		.zip

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2005/04/11 21:45:45 tv Exp $
+# $NetBSD: Makefile,v 1.30 2005/12/12 14:43:24 joerg Exp $
 
 DISTNAME=		shlibs5
 PKGNAME=		suse_libc5-${SUSE_VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE:=a2/}
 EXTRACT_SUFX=		.rpm

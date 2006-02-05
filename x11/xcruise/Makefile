@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2001/02/17 17:07:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 22:56:52 grant Exp $
 #
 
 DISTNAME=	xcruise-0.24
+PKGREVISION=	1
 CATEGORIES=	x11 graphics
 MASTER_SITES=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2005/12/27 23:07:21 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/08 16:53:22 salo Exp $
 
 DISTNAME=		suse_openmotif-${SUSE_VERSION}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE91}
 DISTFILES=		${RPMFILES}

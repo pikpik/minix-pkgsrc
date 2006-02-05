@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2005/03/25 02:46:49 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2005/06/01 18:02:56 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBGII_BUILDLINK3_MK:=	${LIBGII_BUILDLINK3_MK}+
@@ -12,6 +12,7 @@ BUILDLINK_PACKAGES+=	libgii
 
 .if !empty(LIBGII_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.libgii+=	libgii>=0.9.0
+BUILDLINK_RECOMMENDED.libgii?=	libgii>=0.9.1nb1
 BUILDLINK_PKGSRCDIR.libgii?=	../../graphics/libgii
 .endif	# LIBGII_BUILDLINK3_MK
 

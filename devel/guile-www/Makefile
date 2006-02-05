@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2005/10/16 22:55:50 gdt Exp $
+# $NetBSD: Makefile,v 1.14 2005/10/17 00:03:35 gdt Exp $
 
 DISTNAME=	guile-www-2.13
+PKGREVISION=	1
 CATEGORIES=	devel www
 MASTER_SITES=	http://www.glug.org/people/ttn/software/guile-www/
 

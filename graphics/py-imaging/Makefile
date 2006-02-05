@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2005/04/11 21:46:08 tv Exp $
+# $NetBSD: Makefile,v 1.24 2005/10/12 14:48:44 drochner Exp $
 
 DISTNAME=	Imaging-1.1.5
 PKGNAME=	${PYPKGPREFIX}-imaging-1.1.5
+PKGREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://effbot.org/downloads/
 

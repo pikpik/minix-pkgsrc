@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2004/05/07 15:25:13 cjep Exp $
+# $NetBSD: Makefile,v 1.3 2005/05/02 23:02:06 reed Exp $
 
 DISTNAME=	excessive_q3_server_003
 PKGNAME=	quake3server-excessive-003
+PKGREVISION=	1
 CATEGORIES=	games net
 MASTER_SITES=	ftp://ftp.fr.FreeBSD.org/pub/FreeBSD/distfiles/
 

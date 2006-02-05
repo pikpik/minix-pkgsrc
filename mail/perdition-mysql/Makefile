@@ -1,5 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2006/01/31 21:07:30 tv Exp $
 #
+
+PKGREVISION=		1
 
 PERDITION_COMMENT=	MySQL user database module
 PERDITION_PKGNAME=	mysql

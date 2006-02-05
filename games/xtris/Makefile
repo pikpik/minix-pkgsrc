@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2005/06/01 18:02:53 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:56 jlam Exp $
 #
 
 DISTNAME=	xtris-1.15
+PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.iagora.com/~espel/xtris/
 

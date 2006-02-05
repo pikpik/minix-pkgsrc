@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2004/05/04 04:26:43 snj Exp $
+# $NetBSD: Makefile,v 1.3 2004/09/28 22:58:49 rh Exp $
 .include "Makefile.common"
+
+PKGREVISION=		1
 
 COMMENT=		Flash Player plugin for firefox-bin
 

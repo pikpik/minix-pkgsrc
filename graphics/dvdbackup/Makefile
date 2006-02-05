@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:57 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/17 04:49:47 jlam Exp $
 
 DISTNAME=	dvdbackup-0.1.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://dvd-create.sourceforge.net/
 

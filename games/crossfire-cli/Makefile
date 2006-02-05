@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2005/07/16 01:19:10 jlam Exp $
 #
 
 DISTNAME=	crossfire-client-1.0.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	games x11
 MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/crossfire/
 DISTFILES=	${CF_SRC} ${CF_SND} ${CF_RAW}

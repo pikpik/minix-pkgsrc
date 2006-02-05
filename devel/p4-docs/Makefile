@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:06 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/01/21 18:57:40 jlam Exp $
 #
 
 DISTNAME=	p4-docs
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	Perforce SCM documentation
 
 .include "../../devel/p4/Makefile.common"

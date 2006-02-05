@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/07/16 01:19:10 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/19 23:33:37 wiz Exp $
 
 DISTNAME=	gkrellstock-0.2
 PKGNAME=	gkrellm-stock-0.2
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	finance
 MASTER_SITES=	http://www.geocities.com/m_muthukumar/
 

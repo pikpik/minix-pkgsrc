@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:45 tv Exp $
+# $NetBSD: Makefile,v 1.16 2005/09/28 20:52:27 rillig Exp $
 #
 
 DISTNAME=	wmfishtime-1.24
+PKGREVISION=	1
 CATEGORIES=	time x11
 MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.56 2005/08/06 06:19:03 jlam Exp $
+# $NetBSD: Makefile,v 1.57 2005/12/29 06:21:31 jlam Exp $
 
 DISTNAME=	nas-1.7b.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://nas.codebrilliance.com/nas/ \
 		ftp://ftp.uni-duisburg.de/Sound/NAS/
