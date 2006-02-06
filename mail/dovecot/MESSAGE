@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+The Dovecot configuration file format has changed between 0.99.x
+and 1.0.  If you are upgrading from 0.99.x, be sure to read
+http://wiki.dovecot.org/UpgradingDovecot to avoid any issues.
+
+===========================================================================
