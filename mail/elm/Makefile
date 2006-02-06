@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/01/24 22:47:13 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2006/02/05 23:09:54 joerg Exp $
 
 DISTNAME=		elm2.5.8
 PKGNAME=		elm-2.5.8
@@ -21,6 +21,12 @@ CONFIGURE_ARGS+=	-d
 USE_TOOLS=		nroff
 
 .include "../../mk/bsd.prefs.mk"
+
+.if (${OPSYS} == Darwin)
+LIBC=			/usr/lib/libSystem.dylib
+.else
+LIBC=			/usr/lib/libc.so
+.endif
 
 pre-configure:
 	${CP} ${FILESDIR}/config.sh ${WRKSRC}/config.sh.orig
