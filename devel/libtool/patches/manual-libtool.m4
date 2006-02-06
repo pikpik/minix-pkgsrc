@@ -47,6 +47,15 @@ $NetBSD$
        need_version=yes
        ;;
    esac
+@@ -1440,7 +1442,7 @@ freebsd* | dragonfly*)
+     shlibpath_overrides_runpath=no
+     hardcode_into_libs=yes
+     ;;
+-  freebsd*) # from 4.6 on
++  *) # from 4.6 on, and DragonFly
+     shlibpath_overrides_runpath=yes
+     hardcode_into_libs=yes
+     ;;
 @@ -1518,12 +1520,7 @@ interix3*)
  irix5* | irix6* | nonstopux*)
    case $host_os in
