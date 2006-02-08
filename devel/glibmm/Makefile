@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/16 10:08:04 adam Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:42 joerg Exp $
 
 DISTNAME=	glibmm-2.8.3
 PKGREVISION=	1
@@ -16,6 +16,8 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/glib/glibmm-2.4.pc.in
 GNU_CONFIGURE=		yes
+
+BUILDLINK_DEPENDS.glib2+=	glib2>=2.8.0
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libsigc++2/buildlink3.mk"
