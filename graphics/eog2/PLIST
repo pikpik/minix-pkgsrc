@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2005/06/29 09:45:12 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.15 2005/10/14 21:52:14 jmmv Exp $
 bin/eog
 share/applications/eog.desktop
 share/eog/eog-gtk-ui.xml
@@ -114,6 +114,7 @@ ${PKGLOCALEDIR}/locale/vi/LC_MESSAGES/eog.mo
 ${PKGLOCALEDIR}/locale/wa/LC_MESSAGES/eog.mo
 ${PKGLOCALEDIR}/locale/xh/LC_MESSAGES/eog.mo
 ${PKGLOCALEDIR}/locale/zh_CN/LC_MESSAGES/eog.mo
+${PKGLOCALEDIR}/locale/zh_HK/LC_MESSAGES/eog.mo
 ${PKGLOCALEDIR}/locale/zh_TW/LC_MESSAGES/eog.mo
 ${PKGLOCALEDIR}/locale/zu/LC_MESSAGES/eog.mo
 share/omf/eog/eog-C.omf
