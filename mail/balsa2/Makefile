@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.47 2006/01/24 07:32:19 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2006/02/05 23:09:53 joerg Exp $
 
-DISTNAME=	balsa-2.2.6
-PKGREVISION=	5
+DISTNAME=	balsa-2.3.10
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://balsa.gnome.org/				\
 		ftp://ftp.newton.cx/pub/balsa/
@@ -57,7 +56,7 @@ BUILDLINK_DEPENDS.gmime+=	gmime>=2.1.9
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
-.include "../../www/gtkhtml36/buildlink3.mk"
+.include "../../www/gtkhtml38/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
