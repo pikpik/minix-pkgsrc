@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/01/31 21:06:56 adam Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:28 joerg Exp $
 
 DISTNAME=	cinepaint-0.20-2
 PKGNAME=	cinepaint-0.20.2
@@ -15,6 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		pkg-config
 
 PKGCONFIG_OVERRIDE=	cinepaint-gtk.pc.in
 
