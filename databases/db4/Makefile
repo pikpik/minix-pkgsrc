@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2006/01/06 15:08:46 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2006/02/05 00:12:54 wiz Exp $
 
 DISTNAME=		db-4.4.20
 PKGNAME=		${DISTNAME:S/db/db4/}
@@ -15,6 +15,7 @@ COMMENT=		Berkeley DB version 4 from Sleepycat Software
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+DIST_SUBDIR=		${PKGNAME_NOREV}
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
