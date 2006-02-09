@@ -1,0 +1,7 @@
+@comment $NetBSD$
+man/man8/iscsi-target.8
+man/man5/targets.5
+sbin/iscsi-harness
+sbin/iscsi-target
+share/iscsi/FAQ
+@dirrm share/iscsi
