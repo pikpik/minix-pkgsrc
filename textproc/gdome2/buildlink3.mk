@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/10/12 21:22:08 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:11:02 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GDOME2_BUILDLINK3_MK:=	${GDOME2_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.gdome2?=	../../textproc/gdome2
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
