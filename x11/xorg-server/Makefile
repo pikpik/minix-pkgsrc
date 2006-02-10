@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/02/01 20:21:59 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2006/02/05 23:11:48 joerg Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	xorg-server-${XORG_VER}
@@ -77,10 +77,6 @@ post-install:
 	${CHMOD} a+r ${X11ROOT}/bin/XDarwin
 .else
 	${CHMOD} a+r ${X11ROOT}/bin/Xorg
-.endif
-
-.if ${OPSYS} == "Linux"
-.  include "../../x11/Xrender/buildlink3.mk"
 .endif
 
 .include "../../fonts/fontconfig/buildlink3.mk"
