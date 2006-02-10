@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.4 2006/02/10 16:06:46 drochner Exp $
+lib/ivl/myhdl.vpi
