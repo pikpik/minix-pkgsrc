@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/01/22 08:18:49 adam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:36 joerg Exp $
 
 DISTNAME=	ghostscript-8.53
 PKGNAME=	ghostscript-afpl-8.53
@@ -15,7 +15,6 @@ COMMENT=	Postscript interpreter
 CONFLICTS+=		ghostscript{,-nox11}-[0-9]*
 CONFLICTS+=		ghostscript-esp{,-nox11}-[0-9]*
 CONFLICTS+=		ghostscript-gnu{,-nox11,-x11}-[0-9]*
-CONFLICTS+=		hpijs-[0-9]*
 
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
