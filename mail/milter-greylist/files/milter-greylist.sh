@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: milter-greylist.sh,v 1.1 2004/04/12 13:55:59 tron Exp $
+# $NetBSD: milter-greylist.sh,v 1.2 2004/04/12 14:07:16 tron Exp $
 #
 
 # PROVIDE: milter-greylist
@@ -8,6 +8,7 @@
 # BEFORE:  mail
 
 name="miltergreylist"
+rcvar="miltergreylist"
 command="@PREFIX@/bin/milter-greylist"
 command_args="-p /var/milter-greylist/milter-greylist.sock -u smmsp"
 
