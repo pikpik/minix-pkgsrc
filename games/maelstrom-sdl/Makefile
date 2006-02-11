@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/11 09:40:42 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:20 joerg Exp $
 #
 
 DISTNAME=	Maelstrom-3.0.5
@@ -7,7 +7,7 @@ PKGREVISION=	6
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.devolution.com/~slouken/Maelstrom/src/
 
-MAINTAINER=	Benjamin.Wong@cc.gatech.edu
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.devolution.com/~slouken/Maelstrom/
 COMMENT=	High resolution version of Asteroids (SDL version)
 
