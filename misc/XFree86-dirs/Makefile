@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/12/08 09:52:15 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2005/12/29 06:21:54 jlam Exp $
 #
 
 DISTNAME=	XFree86-dirs-1.1
@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared XFree86 directories
 

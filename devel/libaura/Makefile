@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/09/28 14:31:06 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2005/11/07 20:07:31 tv Exp $
 #
 
 DISTNAME=	libaura-2.0
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.bsdinstaller.org/distfiles/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.bsdinstaller.org/
 COMMENT=	LIBrary of Assorted Useful Reusable Abstraction
 

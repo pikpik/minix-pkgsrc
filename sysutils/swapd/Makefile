@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/12/29 06:22:18 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:56 joerg Exp $
 #
 
 DISTNAME=	swapd-1.0.3
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.rkeene.org/files/oss/swapd/source/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.rkeene.org/oss/swapd/
 COMMENT=	Swap daemon for POSIX-compliant operating systems
 

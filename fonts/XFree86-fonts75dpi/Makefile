@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/01/24 07:32:07 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:09:06 joerg Exp $
 
 DISTNAME=	XFree86-${XF_VER}-src-4
 PKGNAME=	XFree86-fonts75dpi-${XF_VER}
@@ -7,7 +7,7 @@ CATEGORIES=	fonts x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.xfree86.org/
 COMMENT=	XFree86 bitmap 75dpi fonts
 
