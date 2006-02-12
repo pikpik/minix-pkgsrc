@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/12/08 09:52:16 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2005/12/29 06:21:56 jlam Exp $
 #
 
 DISTNAME=	xorg-dirs-1.1
@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared X.org directories
 
