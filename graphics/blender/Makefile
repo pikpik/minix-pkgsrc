@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.49 2006/02/05 23:09:28 joerg Exp $
+# $NetBSD: Makefile,v 1.50 2006/02/10 20:34:25 adam Exp $
 
 DISTNAME=	blender-2.41
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.umn.edu/pub/blender.org/source/ \
 		http://download.blender.org/source/
 
-MAINTAINER=	jschauma@NetBSD.org
+MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.blender.org/
 COMMENT=	Fully integrated 3D graphics creation suite
 
