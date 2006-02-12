@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/01/18 23:24:12 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:40 joerg Exp $
 #
 
 DISTNAME=		cqual-0.991
@@ -12,7 +12,7 @@ COMMENT=		Tool for adding type qualifiers to C
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake perl:run bison
 
 REPLACE_PERL+=		bin/*
 
