@@ -1,2 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/08/05 07:21:56 wiz Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/02/07 00:51:58 snj Exp $
+bin/dvigif
 bin/dvipng
+man/man1/dvigif.1
+man/man1/dvipng.1

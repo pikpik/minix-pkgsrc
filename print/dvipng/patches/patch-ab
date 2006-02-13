@@ -1,8 +1,8 @@
 $NetBSD$
 
---- font.c.orig	2004-03-24 14:50:41.000000000 +0000
+--- font.c.orig	2005-07-04 18:15:24.000000000 +0200
 +++ font.c
-@@ -296,7 +296,6 @@ void ClearFonts(void)
+@@ -341,7 +341,6 @@ void ClearFonts(void)
    while(hfontptr!=NULL) {
      tmp=hfontptr->next;
      DoneFont(hfontptr);
