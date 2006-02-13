@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/18 15:42:27 jmmv Exp $
 lib/gstreamer-0.10/libgstalaw.la
 lib/gstreamer-0.10/libgstalpha.la
 lib/gstreamer-0.10/libgstalphacolor.la
+lib/gstreamer-0.10/libgstapetag.la
 lib/gstreamer-0.10/libgstauparse.la
 lib/gstreamer-0.10/libgstautodetect.la
 lib/gstreamer-0.10/libgstavi.la
