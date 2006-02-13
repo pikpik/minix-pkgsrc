@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/01/20 22:08:35 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:10:46 joerg Exp $
 #
 
 DISTNAME=		m2crypto-0.13
@@ -22,7 +22,7 @@ PYTHON_VERSIONS_ACCEPTED=	24 23 22 21
 # it seems, and 0.9.7i is the version which currently is
 # in pkgsrc and against which I fixed m2crypto to compile.
 # -- wiz 20060115
-BUILDLINK_DEPENDS.openssl+=	openssl-0.9.7i
+BUILDLINK_DEPENDS.openssl+=	openssl-0.9.7i{,nb*}
 
 .include "../../lang/python/extension.mk"
 .include "../../devel/swig/buildlink3.mk"
