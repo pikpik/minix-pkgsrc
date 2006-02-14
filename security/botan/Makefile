@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/05 01:25:12 rillig Exp $
 
 DISTNAME=	Botan-1.4.11
 PKGNAME=	botan-1.4.11
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tbz
 MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://botan.randombit.net/
 COMMENT=	Portable, easy to use, and efficient C++ crypto library
+
+USE_TOOLS+=	perl
 
 USE_LANGUAGES+=	c++
 REPLACE_PERL+=	./configure.pl
