@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- programs/xinit/Imakefile.orig	2006-02-12 16:27:32.000000000 +0100
++++ programs/xinit/Imakefile
+@@ -50,7 +50,7 @@ ComplexProgramTarget_1(xinit,$(LOCAL_LIB
+         XMODMAP = $(BINDIR)/xmodmap
+             TWM = $(BINDIR)/twm
+          XCLOCK = $(BINDIR)/xclock
+-          XTERM = $(BINDIR)/xterm
++          XTERM = xterm
+         XSERVER = $(BINDIR)/X
+           XAUTH = $(BINDIR)/xauth
+           XINIT = $(BINDIR)/xinit
