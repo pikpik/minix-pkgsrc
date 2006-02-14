@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	Tue Nov 23 01:39:56 2004
+--- Makefile.in.orig	2006-02-14 01:38:23.000000000 +0100
 +++ Makefile.in
 @@ -9,6 +9,7 @@ INSTALL_MAN=$(prefix)/man
  LIBS=@LIBS@
@@ -10,3 +10,12 @@ $NetBSD$
  
  INSTALLCMD=@INSTALL@
  
+@@ -37,7 +38,7 @@ install: all
+ 	${INSTALLCMD} -m 644 $(srcdir)/rzip.1 ${INSTALL_MAN}/man1/
+ 
+ rzip: $(OBJS)
+-	$(CC) $(CFLAGS) -o rzip $(OBJS) $(LIBS)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o rzip $(OBJS) $(LIBS)
+ 
+ rzip.1: rzip.yo
+ 	yodl2man -o rzip.1 rzip.yo
