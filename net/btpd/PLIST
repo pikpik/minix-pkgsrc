@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/btpd
+bin/btcli
+bin/btinfo
+share/doc/${PKGBASE}/README
+@dirrm share/doc/${PKGBASE}
