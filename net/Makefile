@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.599 2006/01/29 10:01:35 seb Exp $
+# $NetBSD: Makefile,v 1.600 2006/01/29 16:52:13 shannonjr Exp $
 #
 
 COMMENT=	Networking tools
@@ -43,6 +43,7 @@ SUBDIR+=	bounce
 SUBDIR+=	bpalogin
 SUBDIR+=	bridged
 SUBDIR+=	btget
+SUBDIR+=	btpd
 SUBDIR+=	bug-buddy
 SUBDIR+=	cdpd
 SUBDIR+=	cftp
