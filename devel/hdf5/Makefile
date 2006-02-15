@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/01/04 06:05:44 recht Exp $
+# $NetBSD: Makefile,v 1.33 2006/02/10 19:56:13 drochner Exp $
 
 DISTNAME=	hdf5-1.6.5
 PKGREVISION=	1
@@ -22,6 +22,7 @@ CHECK_WRKREF_SKIP=	${PREFIX}/lib/libhdf5.settings
 .include "options.mk"
 
 post-extract:
+	${CP} ${WRKSRC}/config/freebsd ${WRKSRC}/config/netbsd
 	${CP} ${WRKSRC}/config/freebsd ${WRKSRC}/config/netbsdelf
 
 post-install:
