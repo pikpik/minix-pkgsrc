@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/ucl/ucl.h
+include/ucl/ucl_asm.h
+include/ucl/uclconf.h
+lib/libucl.la
+@dirrm include/ucl
