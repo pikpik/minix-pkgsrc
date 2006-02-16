@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.3 2005/05/19 23:12:17 seb Exp $
+@comment $NetBSD: PLIST,v 1.4 2005/05/23 22:01:42 adrianp Exp $
 share/examples/phpldapadmin/config.php.example
+share/examples/phpldapadmin/phpldapadmin.conf
 share/phpldapadmin/INSTALL
 share/phpldapadmin/LICENSE
 share/phpldapadmin/VERSION
@@ -395,3 +396,4 @@ share/phpldapadmin/welcome.php
 @dirrm share/phpldapadmin/images
 @dirrm share/phpldapadmin/doc
 @dirrm share/phpldapadmin
+@dirrm share/examples/phpldapadmin
