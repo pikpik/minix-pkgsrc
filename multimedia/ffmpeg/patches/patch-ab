@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2006/01/24 04:00:37 xtraeme Exp $
 
 --- ffserver.c.orig	2003-09-28 17:26:39.000000000 +0200
 +++ ffserver.c
