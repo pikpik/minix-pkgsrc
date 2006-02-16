@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2006/01/24 07:32:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:12 joerg Exp $
 #
 
 DISTNAME=		e16menuedit2-0.0.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		wm x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 
@@ -18,9 +18,11 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		automake pkg-config
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
+MAKE_ENV+=		CATALOGS="de.gmo en.gmo ko.gmo tr.gmo"
 
 pre-configure:
-	cd ${WRKSRC}; aclocal; autoheader; automake -a --foreign -i; autoconf
+	set -e; cd ${WRKSRC:Q}; \
+	aclocal; autoheader; automake -a --foreign -i; autoconf
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
