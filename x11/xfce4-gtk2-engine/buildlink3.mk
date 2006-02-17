@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/01/24 07:33:01 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:11:46 joerg Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_GTK2_ENGINE_BUILDLINK3_MK:=	${XFCE4_GTK2_ENGINE_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.xfce4-gtk2-engine?=	../../x11/xfce4-gtk2-engine
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

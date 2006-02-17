@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/01/24 07:32:36 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/02/05 23:10:58 joerg Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_XKB_PLUGIN_BUILDLINK3_MK:=	${XFCE4_XKB_PLUGIN_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.xfce4-xkb-plugin?=	../../sysutils/xfce4-xkb-plugin
 .include "../../x11/xfce4-panel/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

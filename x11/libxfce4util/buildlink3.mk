@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2005/11/17 08:16:19 martti Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/02/05 23:11:39 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBXFCE4UTIL_BUILDLINK3_MK:=	${LIBXFCE4UTIL_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.libxfce4util?=	../../x11/libxfce4util
 
 .include "../../devel/glib2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

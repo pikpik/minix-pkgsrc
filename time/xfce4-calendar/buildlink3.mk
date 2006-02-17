@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/01/24 07:32:39 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/02/05 23:11:11 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XFCE4_CALENDAR_BUILDLINK3_MK:=	${XFCE4_CALENDAR_BUILDLINK3_MK}+
@@ -20,4 +20,4 @@ BUILDLINK_PKGSRCDIR.xfce4-calendar?=	../../time/xfce4-calendar
 .include "../../x11/xfce4-mcs-plugins/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
