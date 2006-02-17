@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/applications/celestia.desktop
+share/celestia/celestia-logo.png
+share/celestia/celestiaui.xml
+share/pixmaps/celestia.png

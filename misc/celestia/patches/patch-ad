@@ -1,13 +1,13 @@
 $NetBSD$
 
---- src/celestia/celestiacore.cpp.orig	2004-07-30 07:10:10.000000000 +0000
+--- src/celestia/celestiacore.cpp.orig	2006-02-08 10:03:15.000000000 +0100
 +++ src/celestia/celestiacore.cpp
-@@ -3454,7 +3454,7 @@ bool CelestiaCore::initSimulation()
+@@ -3547,7 +3547,7 @@ bool CelestiaCore::initSimulation(const 
      }
- #endif
- 
--    config = ReadCelestiaConfig("celestia.cfg");
-+    config = ReadCelestiaConfig(PKG_SYSCONFDIR "/celestia.cfg");
-     if (config == NULL)
+     else
      {
-         fatalError("Error reading configuration file.");;
+-        config = ReadCelestiaConfig("celestia.cfg");
++        config = ReadCelestiaConfig(PKG_SYSCONFDIR "/celestia.cfg");
+ 
+         string localConfigFile = WordExp("~/.celestia.cfg");
+         if (localConfigFile != "")
