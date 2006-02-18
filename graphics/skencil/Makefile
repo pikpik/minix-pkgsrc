@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/07/06 18:41:42 drochner Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:09:39 joerg Exp $
 #
 
 DISTNAME=	skencil-0.6.17
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=sketch/}
 
@@ -34,6 +34,8 @@ SKETCHEXDIR=	${PREFIX}/share/examples/skencil
 post-install:
 	${INSTALL_DATA_DIR} ${SKETCHDOCDIR}
 	cd ${WRKSRC} && ${PAX} -rwpm -v ${SKETCHDOCS} ${SKETCHDOCDIR}
+	${RM} ${SKETCHDOCDIR}/Doc/fonts.alias
+	${RM} ${SKETCHDOCDIR}/Doc/fonts.scale
 	${INSTALL_DATA_DIR} ${SKETCHEXDIR}
 	cd ${WRKSRC}/Examples && ${PAX} -rwpm -v . ${SKETCHEXDIR}
 
