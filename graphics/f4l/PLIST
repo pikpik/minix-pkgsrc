@@ -1,1 +1,2 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/11/20 16:58:12 xtraeme Exp $
+bin/f4l
