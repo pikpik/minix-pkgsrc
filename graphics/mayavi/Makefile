@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/12/05 20:50:21 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:09:35 joerg Exp $
 #
 
 DISTNAME=		MayaVi-1.5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mayavi/}
 
@@ -10,7 +10,7 @@ MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://mayavi.sourceforge.net/
 COMMENT=		Scientific data visualizer written in Python
 
-DEPENDS+=	vtk-python>=4.2:../../graphics/vtk-python
+DEPENDS+=		vtk-python>=4.2:../../graphics/vtk-python
 
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes

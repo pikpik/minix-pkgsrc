@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/02 14:13:45 drochner Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/10/06 18:08:15 drochner Exp $
 bin/mayavi
+bin/vtk_doc.py
 ${PYSITELIB}/mayavi/Base/DataVizManager.py
 ${PYSITELIB}/mayavi/Base/DataVizManager.pyc
 ${PYSITELIB}/mayavi/Base/DataVizManager.pyo
