@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nsca
+bin/send_nsca
+share/examples/nagios/nsca.cfg
