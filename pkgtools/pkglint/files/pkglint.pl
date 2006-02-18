@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.521 2006/02/17 15:26:01 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.522 2006/02/17 18:35:34 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -3194,6 +3194,8 @@ sub checkline_mk_vartype($$$$$) {
 				: ($varname =~ qr"DIR$") ? "Pathname"
 				: ($varname =~ qr"FILES$") ? "List of Pathmask"
 				: ($varname =~ qr"FILE$") ? "Pathname"
+				: ($varname =~ qr"PATH$") ? "Pathname"
+				: ($varname =~ qr"PATHS$") ? "List of Pathname"
 				: ($varname =~ qr"_USER$") ? "UserGroupName"
 				: ($varname =~ qr"_GROUP$") ? "UserGroupName"
 				: ($varname =~ qr"_ENV$") ? "List+ of ShellWord"
