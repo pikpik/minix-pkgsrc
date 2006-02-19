@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2005/10/12 20:22:57 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2005/11/08 00:59:37 tv Exp $
 
-DISTNAME=	fluidsynth-1.0.6
+DISTNAME=	fluidsynth-1.0.7
 CATEGORIES=	audio
 MASTER_SITES=	http://savannah.nongnu.org/download/fluid/
 
