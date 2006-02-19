@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.728 2006/02/15 00:31:34 heinz Exp $
+# $NetBSD: Makefile,v 1.729 2006/02/15 23:30:15 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -218,6 +218,7 @@ SUBDIR+=	libbonoboui
 SUBDIR+=	libcfg+
 SUBDIR+=	libctl
 SUBDIR+=	libdfui
+SUBDIR+=	libdnsres
 SUBDIR+=	libdockapp
 SUBDIR+=	libebml
 SUBDIR+=	libelf
