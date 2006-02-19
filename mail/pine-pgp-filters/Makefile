@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/02/07 15:54:04 abs Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 23:55:11 rillig Exp $
 #
 
 DISTNAME=		pine-pgp-filters-1.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security mail
 MASTER_SITES=		http://dougbarton.net/FreeBSD/Downloads/
 
@@ -22,6 +22,7 @@ do-build:
 .endfor
 
 post-install:
+	${RM} ${PREFIX}/libexec/ppf_*.orig
 	${INSTALL_DATA_DIR} ${DOCDIR}
 .for f in ${DOCFILES}
 	${INSTALL_DATA} ${WRKSRC}/${f}.gen ${DOCDIR}/${f}
