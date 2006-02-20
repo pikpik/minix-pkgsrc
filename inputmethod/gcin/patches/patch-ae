@@ -2,7 +2,15 @@ $NetBSD$
 
 --- gtk-im/Makefile.orig	2005-09-14 00:29:56.000000000 +0800
 +++ gtk-im/Makefile
-@@ -13,23 +13,18 @@ CFLAGS += -DNEW_GTK_IM=1
+@@ -6,30 +6,25 @@ IMMODULES=$(libdir)/$(GTK2IM)
+ IMMODULES_LOCAL=/usr/lib/$(GTK2IM)
+ 
+ .SUFFIXES:	.c .o .E
+-CFLAGS = $(OPTFLAGS) $(GTKINC) -I../im-client -I.. -I../IMdkit/include -DCLIENT_LIB=1
++CFLAGS = $(OPTFLAGS) $(GTKINC) -I../im-client -I.. -I../IMdkit/include
+ 
+ ifeq ($(NEW_GTK_IM),Y)
+ CFLAGS += -DNEW_GTK_IM=1
  endif
  
  .c.o:

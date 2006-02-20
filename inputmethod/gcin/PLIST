@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/16 13:01:16 rxg Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/02/01 02:42:13 rxg Exp $
 bin/gcin
 bin/gcin-setup
 bin/gcin2tab
@@ -21,7 +21,6 @@ share/control-center-2.0/capplets/gcin-setup.desktop
 share/doc/${PKGNAME}/Changelog
 share/doc/${PKGNAME}/README
 share/gcin/script/gcin-user-setup
-share/gcin/script/gcin-utf8-setup
 share/gcin/script/modify-XIM
 share/gcin/script/utf8-edit
 share/gcin/table/ar30.gtab
