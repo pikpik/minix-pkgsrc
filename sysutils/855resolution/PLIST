@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2005/10/12 02:06:37 christos Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/10/12 02:15:30 christos Exp $
 sbin/855resolution
+share/doc/855resolution/README.txt
+@dirrm share/doc/855resolution
