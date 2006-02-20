@@ -1,0 +1,4 @@
+@comment $NetBSD$
+@dirrm qt4/doc/html/images
+@dirrm qt4/doc/html
+@dirrm qt4/doc
