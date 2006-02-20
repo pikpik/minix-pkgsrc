@@ -1,5 +1,6 @@
 @comment $NetBSD$
 bin/bg-installer
+bin/cli-generate
 bin/crc-gentab
 include/bglibs/adt/common.h
 include/bglibs/adt/ghash.h
@@ -124,6 +125,7 @@ lib/bglibs/unix/nonblock.a
 lib/bglibs/unix/sig.a
 lib/bglibs/vmailmgr/client.a
 lib/bglibs/vmailmgr/vpwentry.a
+man/man1/cli-generate.1
 @dirrm lib/bglibs/vmailmgr
 @dirrm lib/bglibs/unix
 @dirrm lib/bglibs/str
