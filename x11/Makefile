@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.427 2006/01/29 17:55:55 rxg Exp $
+# $NetBSD: Makefile,v 1.428 2006/02/11 16:14:23 rxg Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -212,6 +212,10 @@ SUBDIR+=	qt3-mysql
 SUBDIR+=	qt3-psql
 SUBDIR+=	qt3-qscintilla
 SUBDIR+=	qt3-tools
+SUBDIR+=	qt4
+SUBDIR+=	qt4-docs
+SUBDIR+=	qt4-libs
+SUBDIR+=	qt4-tools
 SUBDIR+=	qtarch
 SUBDIR+=	qwspritefield
 SUBDIR+=	qwt
