@@ -1,1 +1,2 @@
-@comment $NetBSD: PLIST,v 1.2 2002/03/15 12:47:16 martti Exp $
+@comment $NetBSD: PLIST,v 1.3 2003/03/03 11:30:58 mjl Exp $
+${PERL5_SUB_INSTALLVENDORLIB}/XML/SAX/ParserDetails.ini
