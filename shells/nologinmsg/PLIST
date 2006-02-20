@@ -1,2 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/10 17:05:44 cjep Exp $
 bin/nologinmsg
+man/cat8/nologinmsg.0
+man/man8/nologinmsg.8
