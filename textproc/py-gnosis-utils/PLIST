@@ -1,6 +1,4 @@
-@comment $NetBSD$
-${PYSITELIB}/MANIFEST
-${PYSITELIB}/README
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/03/06 18:54:21 recht Exp $
 ${PYSITELIB}/gnosis/README
 ${PYSITELIB}/gnosis/__init__.py
 ${PYSITELIB}/gnosis/__init__.pyc
