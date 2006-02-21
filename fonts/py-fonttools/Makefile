@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2005/12/08 21:41:17 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:11 joerg Exp $
 #
 
 DISTNAME=		fonttools-2.0b1
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		fonts python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fonttools/}
 EXTRACT_SUFX=		.tgz
@@ -16,11 +16,5 @@ WRKSRC=			${WRKDIR}/fonttools
 PYDISTUTILSPKG=		yes
 
 .include "../../lang/python/extension.mk"
-.if !empty(PYPKGPREFIX:M*pth)
-PLIST_SUBST+=		FONTTOOLSPTH=""
-.else
-PLIST_SUBST+=		FONTTOOLSPTH="@comment "
-.endif
-
 .include "../../math/py-Numeric/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
