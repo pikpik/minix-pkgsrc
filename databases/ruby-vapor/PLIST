@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/16 16:29:11 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/11/27 15:50:33 taca Exp $
+bin/vaporadmin
 ${RUBY_SITELIBDIR}/vapor.rb
 ${RUBY_SITELIBDIR}/vapor/persistencemgr.rb
 ${RUBY_SITELIBDIR}/vapor/queryparser.y
