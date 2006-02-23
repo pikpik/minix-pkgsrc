@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/10/12 12:13:38 tonio Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:59 joerg Exp $
 #
 
 DISTNAME=	wily-0.13.41
@@ -14,7 +14,7 @@ COMMENT=	Unix/X11 clone of the Plan9 acme editor/environment
 GNU_CONFIGURE=	yes
 CONFIGURE_HAS_MANDIR=	no
 
-DEPENDS+=	libXgFonts-1.0nb1:../../fonts/Xg
+DEPENDS+=	libXgFonts>=1.0nb1:../../fonts/Xg
 
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
