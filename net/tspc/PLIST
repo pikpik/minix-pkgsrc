@@ -4,4 +4,10 @@ man/man8/tspc.8
 sbin/tspc
 share/examples/rc.d/tspc
 share/examples/tspc/tspc.conf
+share/tspc/template/README
+share/tspc/template/checktunnel.sh
+share/tspc/template/${TARGET}.sh
+share/tspc/template/variables_environ
+@dirrm share/tspc/template
+@dirrm share/tspc
 @dirrm share/examples/tspc
