@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.313 2006/01/30 13:25:31 kleink Exp $
+# $NetBSD: Makefile,v 1.314 2006/01/31 21:07:40 kleink Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -192,6 +192,7 @@ SUBDIR+=	p5-XML-Filter-DetectWS
 SUBDIR+=	p5-XML-Filter-Reindent
 SUBDIR+=	p5-XML-Filter-SAXT
 SUBDIR+=	p5-XML-Grove
+SUBDIR+=	p5-XML-Handler-Trees
 SUBDIR+=	p5-XML-Handler-YAWriter
 SUBDIR+=	p5-XML-LibXML
 SUBDIR+=	p5-XML-LibXML-Common
