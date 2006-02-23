@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/01/24 07:33:02 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/02/05 23:11:48 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XORG_LIBS_BUILDLINK3_MK:=	${XORG_LIBS_BUILDLINK3_MK}+
@@ -19,8 +19,9 @@ BUILDLINK_PACKAGES:=	xorg-libs ${BUILDLINK_PACKAGES}
 .if !empty(XORG_LIBS_BUILDLINK3_MK:M+)
 
 BUILDLINK_DEPENDS.xorg-libs+=		xorg-libs>=6.9.0
-BUILDLINK_RECOMMENDED.xorg-libs?=		xorg-libs>=6.9.0nb2
+BUILDLINK_RECOMMENDED.xorg-libs?=	xorg-libs>=6.9.0nb2
 BUILDLINK_PKGSRCDIR.xorg-libs?=		../../x11/xorg-libs
+BUILDLINK_LIBDIRS.xorg-libs?=		${X11ROOT_PREFIX}/lib
 BUILDLINK_TRANSFORM.xorg-libs+=		-e "s|/${X11ROOT_PREFIX}/|/|"
 
 .endif  # XORG_LIBS_BUILDLINK3_MK
