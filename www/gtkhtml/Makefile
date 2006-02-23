@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/01/24 07:32:48 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2006/02/05 23:11:24 joerg Exp $
 
 DISTNAME=		gtkhtml-1.1.10
 PKGREVISION=		7
@@ -16,6 +16,7 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 BUILD_USES_MSGFMT=	yes
+BROKEN_GETTEXT_DETECTION=	yes
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
