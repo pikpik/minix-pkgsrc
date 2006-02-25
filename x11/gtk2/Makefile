@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2006/02/13 19:14:04 wiz Exp $
+# $NetBSD: Makefile,v 1.108 2006/02/25 13:32:10 wiz Exp $
 #
 
 DISTNAME=		gtk+-2.8.13
@@ -59,7 +59,7 @@ PRINT_PLIST_AWK+=	/^@dirrm share\/themes\/Default$$/ \
 
 SUBST_CLASSES+=		pthread
 SUBST_STAGE.pthread=	pre-configure
-SUBST_MESSAGE.pthread=	"Fixing pthread flags."
+SUBST_MESSAGE.pthread=	Fixing pthread flags.
 SUBST_SED.pthread=	-e 's,__PTHREAD_FLAGS__,${BUILDLINK_LDFLAGS.pthread},g'
 SUBST_FILES.pthread=	gdk-pixbuf/Makefile.in
 
