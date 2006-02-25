@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2006/01/30 00:52:28 tron Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:26 joerg Exp $
 
-DISTNAME=	libtorrent-0.8.3
-PKGREVISION=	1
+DISTNAME=	libtorrent-0.8.5
 CATEGORIES=	net
 MASTER_SITES=	http://libtorrent.rakshasa.no/downloads/
 
-MAINTAINER=	imil@gcu.info
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://libtorrent.rakshasa.no/
 COMMENT=	BitTorrent library written in C++ for *nix
 
