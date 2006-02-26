@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/12/05 20:49:56 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/01/23 00:06:39 rillig Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-3.2
 CROSS_DISTFILES=
@@ -62,6 +62,12 @@ DISTFILES+=	${CROSS_DISTFILES}
 
 post-extract:
 	-${PATCH} -d ${GCC_WRKSRC} -p1 --forward --quiet -E < ${GCC_WIN32_PATCH}
+
+pre-configure:
+	for dir in ${BINUTILS_WRKSRC} ${GCC_WRKSRC} ${GCC_WRKSRC}/boehm-gc ${GCC_WRKSRC}/gcc; do \
+	${CP} ${PKGSRCDIR}/mk/gnu-config/config.guess $${dir}; \
+	${CP} ${PKGSRCDIR}/mk/gnu-config/config.sub $${dir}; \
+	done
 
 do-configure: bu-configure gcc-configure
 bu-configure:
