@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2005/10/08 12:35:14 jmmv Exp $
-#
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:08 joerg Exp $
 
-DISTNAME=	flac123-0.0.7
-PKGREVISION=	3
+DISTNAME=	flac123-0.0.9
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flac-tools/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://flac-tools.sourceforge.net/
 COMMENT=	Command-line program for playing FLAC audio files
 
