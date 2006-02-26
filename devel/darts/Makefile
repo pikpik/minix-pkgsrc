@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/05/06 13:22:43 taca Exp $
+# $NetBSD: Makefile,v 1.2 2005/03/24 21:12:52 wiz Exp $
 
 DISTNAME=	darts-0.2
 CATEGORIES=	devel
@@ -8,6 +8,7 @@ MAINTAINER=	tech-pkg@NetBSD.org
 HOMEPAGE=	http://chasen.org/~taku/software/darts/
 COMMENT=	C++ template library that implements Double-Array
 
+USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes
 
 DOCDIR=		${PREFIX}/share/doc/darts
