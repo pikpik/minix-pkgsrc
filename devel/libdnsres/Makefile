@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/02/19 17:11:06 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2006/02/26 17:01:25 joerg Exp $
 #
 
 DISTNAME=		libdnsres-0.1a
@@ -13,6 +13,9 @@ COMMENT=		Non-blocking thread-safe API for resolving DNS names
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
+
+# uses event_once
+BUILDLINK_DEPENDS.libevent+=	libevent>=0.9
 
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
