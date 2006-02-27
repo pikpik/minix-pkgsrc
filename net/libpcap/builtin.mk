@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.9 2005/01/11 21:19:24 xtraeme Exp $
+# $NetBSD: builtin.mk,v 1.10 2005/06/01 18:03:07 jlam Exp $
 
 BUILTIN_PKG:=	libpcap
 
@@ -26,6 +26,10 @@ MAKEVARS+=	IS_BUILTIN.libpcap
 .if !defined(BUILTIN_PKG.libpcap) && \
     !empty(IS_BUILTIN.libpcap:M[yY][eE][sS]) && \
     exists(${H_LIBPCAP})
+# libpcap>=0.9.3: pcap_setdirection added (don't use pcap_inject, this
+#  was hacked into the NetBSD version of 0.8.3)
+_BLTN_PCAP_093!=	\
+	${GREP} -c pcap_setdirection ${H_LIBPCAP} || ${TRUE}
 # libpcap>=0.8.3: MODE_MON added
 _BLTN_PCAP_083!=	\
 	${GREP} -c MODE_MON ${H_LIBPCAP} || ${TRUE}
@@ -45,7 +49,9 @@ _BLTN_PCAP_060!=	\
 _BLTN_PCAP_050!=	\
 	${GREP} -c pcap_compile_nopcap ${H_LIBPCAP} || ${TRUE}
 
-.  if ${_BLTN_PCAP_083} == "1"
+.  if ${_BLTN_PCAP_093} == "1"
+BUILTIN_VERSION.libpcap=	0.9.3
+.  elif ${_BLTN_PCAP_083} == "1"
 BUILTIN_VERSION.libpcap=	0.8.3
 .  elif ${_BLTN_PCAP_081} == "1"
 BUILTIN_VERSION.libpcap=	0.8.1
