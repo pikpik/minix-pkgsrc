@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/01/04 04:29:06 schmonz Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:08:42 joerg Exp $
 #
 
 DISTNAME=       gdb-5.3
@@ -14,6 +14,7 @@ BROKEN_IN=	pkgsrc-2005Q4
 
 NOT_FOR_PLATFORM=	Darwin-*-*
 
+BROKEN_GETTEXT_DETECTION=	yes
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
