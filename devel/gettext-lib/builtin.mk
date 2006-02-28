@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.26 2005/07/16 01:19:08 jlam Exp $
+# $NetBSD: builtin.mk,v 1.27 2005/08/20 12:04:09 jmmv Exp $
 
 BUILTIN_PKG:=	gettext
 
@@ -178,11 +178,7 @@ BUILDLINK_LDADD.gettext?=	${_BLTN_LIBINTL}
 # If BROKEN_GETTEXT_DETECTION is "yes", then automatically add "-lintl"
 # to LIBS to workaround this brokenness.
 #
-# XXX Nowadays, most packages' GNU configure scripts correctly detect
-# XXX -lintl, so this should really default to "no", but we'll leave it
-# XXX as "yes" until we can do a full bulk build test.
-#
-BROKEN_GETTEXT_DETECTION?=	yes
+BROKEN_GETTEXT_DETECTION?=	no
 .  if !empty(BROKEN_GETTEXT_DETECTION:M[yY][eE][sS])
 BUILDLINK_LIBS.gettext+=	${BUILDLINK_LDADD.gettext}
 CONFIGURE_ENV+=			INTLLIBS="${BUILDLINK_LDADD.gettext}"
