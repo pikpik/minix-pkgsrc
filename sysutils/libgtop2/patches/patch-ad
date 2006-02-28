@@ -1,6 +1,6 @@
-$NetBSD: patch-ad,v 1.1 2005/03/22 16:03:37 jmmv Exp $
+$NetBSD$
 
---- sysdeps/freebsd/fsusage.c.orig	2005-02-28 09:54:41.000000000 +0100
+--- sysdeps/freebsd/fsusage.c.orig	2005-02-28 08:54:41.000000000 +0000
 +++ sysdeps/freebsd/fsusage.c
 @@ -1,3 +1,7 @@
 +#ifdef HAVE_CONFIG_H
