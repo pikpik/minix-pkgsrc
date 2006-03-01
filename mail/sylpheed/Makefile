@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.88 2006/02/19 07:11:08 xtraeme Exp $
 
 DISTNAME=	sylpheed-2.2.0
 CATEGORIES=	mail news x11
@@ -17,7 +17,7 @@ CONFLICTS=		sylpheed-claws-[0-9]* sylpheed-gtk2-[0-9]*
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=            yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-nls
