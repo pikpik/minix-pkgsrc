@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/02/18 17:13:45 bouyer Exp $
 bin/nsca
 bin/send_nsca
 share/examples/nagios/nsca.cfg
+@dirrm share/examples/nagios
