@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- modules/alloc_mmap/alloc_mmap.orig	2006-03-01 00:19:15.000000000 +0000
++++ modules/alloc_mmap/alloc_mmap
+@@ -8,6 +8,7 @@ add_file mmap_mem.h
+ <os>
+ linux
+ freebsd
++dragonfly
+ openbsd
+ netbsd
+ solaris

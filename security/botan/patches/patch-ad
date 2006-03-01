@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- modules/es_ftw/es_ftw.orig	2006-02-27 01:30:36.000000000 +0000
++++ modules/es_ftw/es_ftw
+@@ -9,6 +9,7 @@ add_file es_ftw.cpp
+ aix
+ cygwin
+ darwin
++dragonfly
+ freebsd
+ hpux
+ irix
