@@ -1,5 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/05 22:11:38 rh Exp $
 include/mpf2mpfr.h
 include/mpfr.h
 info/mpfr.info
-lib/libmpfr.a
+lib/libmpfr.la
