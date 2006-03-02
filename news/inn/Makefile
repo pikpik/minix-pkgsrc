@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2005/12/14 09:22:35 amd Exp $
+# $NetBSD: Makefile,v 1.77 2006/01/04 10:32:40 tron Exp $
 
 DISTNAME=		inn-2.4.1
 PKGREVISION=		8
@@ -20,6 +20,7 @@ FILES_SUBST+=		INN_DATA_DIR=${INN_DATA_DIR:Q}
 
 GNU_CONFIGURE=		YES
 GNU_CONFIGURE_PREFIX=	${INN_PREFIX}
+GNU_CONFIGURE_MANDIR=	${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	--enable-setgid-inews 				\
 			--enable-uucp-rnews 				\
 			--with-perl					\
