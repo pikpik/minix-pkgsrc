@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2006/02/07 19:31:43 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2006/02/15 18:35:12 drochner Exp $
 
-DISTNAME=		liferea-1.0.4
+DISTNAME=		liferea-1.0.6
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=liferea/}
 
@@ -14,7 +14,7 @@ USE_TOOLS+=		gmake pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
-SHLIBTOOL_OVERRIDE=	libtool
+SHLIBTOOL_OVERRIDE+=	libtool
 
 GCONF2_SCHEMAS=		liferea.schemas
 
