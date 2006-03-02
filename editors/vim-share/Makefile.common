@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.53 2006/02/03 10:49:53 martti Exp $
+# $NetBSD: Makefile.common,v 1.54 2006/02/28 11:03:17 martti Exp $
 
 .include "../../editors/vim-share/version.mk"
 
@@ -44,7 +44,6 @@ ALTERNATIVES_SRC=
 
 PKG_SUPPORTED_OPTIONS+=	cscope
 PKG_OPTIONS_VAR=	PKG_OPTIONS.vim
-PKG_SUGGESTED_OPTIONS=	cscope
 
 .include "../../mk/bsd.options.mk"
 
