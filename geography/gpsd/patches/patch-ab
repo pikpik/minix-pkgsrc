@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- sirfmon.c.orig	2006-02-19 15:30:10.000000000 +0100
++++ sirfmon.c
+@@ -23,7 +23,7 @@
+  * so it deliberately doesn't use much of the library. 
+  */
+ #include <stdio.h>
+-#include <curses.h>
++#include <ncurses.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <math.h>
