@@ -1,9 +1,10 @@
-# $NetBSD: common,v 1.1 2003/01/29 11:13:29 jlam Exp $
+# $NetBSD: common,v 1.2 2003/12/12 15:17:56 adam Exp $
 
 .systemPrefs
 COPYRIGHT
 LICENSE
 README
+THIRDPARTYLICENSEREADME.txt
 bin/ControlPanel
 bin/java
 bin/keytool
