@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2005/10/20 08:33:13 adrianp Exp $
+@comment $NetBSD: PLIST,v 1.11 2005/11/12 16:53:19 adrianp Exp $
 ${HASH}bin/cssstat
 ${HASH}bin/csscompress
 ${HASH}bin/cssclean
@@ -90,7 +90,8 @@ ${MYSQL}share/dspam/mysql/neural.sql
 ${PGSQL}share/dspam/pgsql/pgsql_objects.sql
 ${PGSQL}share/dspam/pgsql/purge.sql
 ${PGSQL}share/dspam/pgsql/virtual_users.sql
-${SQLITE}share/dspam/sqlite/purge.sql
+${SQLITE}share/dspam/sqlite/purge-2.sql
+${SQLITE}share/dspam/sqlite/purge-3.sql
 share/dspam/txt/firstrun.txt
 share/dspam/txt/firstspam.txt
 share/dspam/txt/quarantinefull.txt
