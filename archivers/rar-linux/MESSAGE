@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD$
-
-For best compression performance, please install
-${PREFIX}/share/doc/rar-linux/rarfiles.lst into /etc.
-
-===========================================================================
