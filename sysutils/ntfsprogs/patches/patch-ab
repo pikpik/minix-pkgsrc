@@ -1,8 +1,8 @@
 $NetBSD$
 
---- include/ntfs/types.h.orig	2005-07-09 21:55:23.000000000 +0200
+--- include/ntfs/types.h.orig	2006-02-22 15:15:54.000000000 +0100
 +++ include/ntfs/types.h
-@@ -61,6 +61,16 @@ typedef sle64 leVCN;
+@@ -68,6 +68,16 @@ typedef sle64 leVCN;
  typedef s64 LCN;
  typedef sle64 leLCN;
  
