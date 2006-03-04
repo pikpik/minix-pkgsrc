@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:08:48 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/01 18:27:26 drochner Exp $
 #
 
 DISTNAME=		mercurial-0.8
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.selenic.com/mercurial/release/
 
 MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=	http://www.selenic.com/mercurial/wiki/index.cgi/Mercurial
 COMMENT=		Fast, lightweight source control management system
-
 
 PY_PATCHPLIST=          yes
 PYDISTUTILSPKG=		yes
