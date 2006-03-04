@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.9 2005/12/05 20:50:43 rillig Exp $
+# $NetBSD: Makefile.common,v 1.10 2005/12/29 06:21:56 jlam Exp $
 #
 
 DISTNAME=		mplayerplug-in-2.70
@@ -6,7 +6,7 @@ PKGNAME=		mplayer-plugin-${BROWSER}-2.70
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mplayerplug-in/}
 
-MAINTAINER=		xtraeme@NetBSD.org
+MAINTAINER=		tech-pkg@NetBSD.org
 HOMEPAGE=		http://mplayerplug-in.sourceforge.net/
 COMMENT=		Mplayer plug-in for ${BROWSER}
 
