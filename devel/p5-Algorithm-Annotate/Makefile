@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/10/17 13:04:17 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:08:49 joerg Exp $
 
 DISTNAME=	Algorithm-Annotate-0.10
 PKGNAME=	p5-${DISTNAME}
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Algorithm/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Perl module that provides cvs-annotate-like functionality
 
 DEPENDS+=	p5-Algorithm-Diff>=1.15:../../devel/p5-Algorithm-Diff

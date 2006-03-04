@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2003/07/17 22:53:12 grant Exp $
+# $NetBSD: Makefile,v 1.16 2004/01/20 12:25:34 agc Exp $
 #
 
 DISTNAME=		rc5-mlg-004
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.flame.org/netbsd-rc5/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.distributed.net/rc5/
 COMMENT=		Binaries for taking part in the rc5des challenge
 

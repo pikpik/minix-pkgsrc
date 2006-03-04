@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/02/05 23:11:33 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2006/03/02 21:11:55 drochner Exp $
 #
 
 DISTNAME=		gnome-themes-2.12.3
@@ -6,7 +6,7 @@ CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-themes/2.12/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Collection of themes and icons for GNOME 2
 

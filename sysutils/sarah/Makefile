@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2005/09/29 14:13:15 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/29 06:22:18 jlam Exp $
 
 DISTNAME=	sarah-0.9.1b
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.conundrum.com/pub/sarah/ \
 		http://prdownloads.sourceforge.net/sarah/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sarah.sourceforge.net/
 COMMENT=	Syslog automated Rotation and Archive Handler
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/05/22 20:08:15 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:10:08 joerg Exp $
 #
 
 DISTNAME=		getopt-1.1.3
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		http://www.frodol.dds.nl/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.frodol.dds.nl/
 COMMENT=		Program to help shell scripts parse command-line parameters
 

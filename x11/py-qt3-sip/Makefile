@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/01/24 07:32:59 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:11:41 joerg Exp $
 #
 
 DISTNAME=	sip-4.3.2
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	x11 devel python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/download/sip/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/sip/index.php
 COMMENT=	Tool to create Python bindings for C++ libraries
 

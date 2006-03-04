@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/09/11 11:46:08 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2005/11/03 23:12:43 rillig Exp $
 #
 
 DISTNAME=		ispman-0.5
@@ -8,7 +8,7 @@ SVR4_PKGNAME=		p5isp
 CATEGORIES=		net perl5
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ispman/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ispman.org/
 COMMENT=		Perl module for ISPMan webAdministrator and command line utils
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/09/27 22:37:25 mjl Exp $
+# $NetBSD: Makefile,v 1.26 2005/10/08 22:36:49 rillig Exp $
 #
 
 DISTNAME=	pgp50i-unix-src
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.pgpi.com/pub/pgp/5.0/unix/ \
 		ftp://ftp.tuwien.ac.at/privacy/pgp/5.0/unix/ \
 		http://ftp.tuwien.ac.at/privacy/pgp/5.0/unix/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=       http://www.pgpi.com/
 COMMENT=	Public-key encryption and digital signature utilities (v5)
 

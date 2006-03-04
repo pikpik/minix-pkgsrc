@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/12/05 20:50:41 rillig Exp $
+# $NetBSD: Makefile,v 1.42 2005/12/29 06:21:55 jlam Exp $
 #
 
 DISTNAME=	vfu-3.04
@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.biscom.net/~cade/away/vfu/
 COMMENT=	Small, handy, easy-to-use file manager
 

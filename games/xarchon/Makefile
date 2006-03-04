@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/01/24 07:32:09 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2006/02/05 23:09:23 joerg Exp $
 #
 
 DISTNAME=	xarchon-0.60
@@ -7,7 +7,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	http://xarchon.seul.org/ \
 		ftp://xarchon.seul.org/pub/xarchon/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xarchon.seul.org/
 COMMENT=	Chess-like strategy game with battle options
 

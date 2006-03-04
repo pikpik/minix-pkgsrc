@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/25 20:17:57 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:08:40 joerg Exp $
 #
 
 DISTNAME=		bzr-0.7
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.bazaar-ng.org/pkg/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.bazaar-ng.org/
 COMMENT=		Open source distributed version control system (Bazaar-NG)
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:45:37 tv Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:52 joerg Exp $
 #
 
 DISTNAME=		ZConfig-1.0
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		devel python
 MASTER_SITES=		http://www.zope.org/Members/fdrake/zconfig/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.zope.org/Members/fdrake/zconfig/
 COMMENT=		Configuration library
 

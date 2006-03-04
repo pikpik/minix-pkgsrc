@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/13 10:26:03 agc Exp $
+# $NetBSD: Makefile,v 1.2 2005/06/17 03:50:32 jlam Exp $
 
 DISTNAME=	hydan-0.13
 CATEGORIES=	security
 MASTER_SITES=	http://crazyboy.com/hydan/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://crazyboy.com/hydan/
 COMMENT=	Steganography tool for covert comms, signing and watermarking
 

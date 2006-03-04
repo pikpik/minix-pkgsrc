@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2004/02/16 10:30:29 seb Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2004/11/26 21:54:27 wiz Exp $
 #
 
 DISTNAME=	avl-1.4.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=avl/}
 #MASTER_SITES=	ftp://ftp.gnu.org/pub/gnu/avl/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.msu.edu/user/pfaffben/avl/
 COMMENT=	Library for manipulation of balanced binary trees
 

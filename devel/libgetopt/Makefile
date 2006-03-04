@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/06/12 07:26:18 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/06/16 06:57:46 jlam Exp $
 #
 
 DISTNAME=	libgetopt-1.4.1
@@ -6,7 +6,7 @@ CATEGORIES=	pkgtools sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Library for handling --long options
 
 NO_CHECKSUM=	YES

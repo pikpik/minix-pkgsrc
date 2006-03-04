@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2006/02/05 23:11:04 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2006/03/02 16:02:37 taca Exp $
 
 DISTNAME=	namazu-2.0.15
 CATEGORIES=	japanese textproc www
 MASTER_SITES=	http://www.namazu.org/stable/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.namazu.org/index.html.en
 COMMENT=	Full-text search system intended for easy use
 

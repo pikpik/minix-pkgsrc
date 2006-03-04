@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/10/16 15:17:55 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:08:10 joerg Exp $
 #
 
 DISTNAME=	id3ed-1.10.4
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.dakotacom.net/~donut/programs/id3ed/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dakotacom.net/~donut/programs/id3ed.html
 COMMENT=	Edit id3 description tags in mpeg3 files
 

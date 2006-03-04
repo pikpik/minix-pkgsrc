@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/01/04 04:29:06 schmonz Exp $
+# $NetBSD: Makefile,v 1.23 2006/02/05 23:09:28 joerg Exp $
 #
 
 DISTNAME=		aqsis-0.6.4
@@ -6,7 +6,7 @@ PKGREVISION=		5
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=aqsis/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.aqsis.com/
 COMMENT=		Renderman clone
 

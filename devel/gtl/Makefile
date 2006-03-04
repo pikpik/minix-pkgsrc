@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/09/28 20:52:19 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2005/12/05 20:50:04 rillig Exp $
 
 DISTNAME=		GTL-1.2.1
 PKGNAME=		gtl-1.2.1
@@ -6,7 +6,7 @@ CATEGORIES=		devel
 MASTER_SITES=		http://infosun.fmi.uni-passau.de/GTL/download/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.fmi.uni-passau.de/Graphlet/GTL/
 COMMENT=		C++ graph data structure library based on the STL
 

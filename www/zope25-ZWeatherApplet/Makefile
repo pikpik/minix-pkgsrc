@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/06 00:45:49 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:30 joerg Exp $
 
 DISTNAME=	ZWeatherApplet-1.51
 PKGREVISION=	2
@@ -6,7 +6,7 @@ PKGNAME=	zope25-ZWeatherApplet-1.51
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zweatherapplet/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.librelogiciel.com/software/
 COMMENT=	Zope Weather applet
 

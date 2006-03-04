@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2006/01/26 17:00:15 reed Exp $
+# $NetBSD: Makefile,v 1.27 2006/01/26 17:58:18 reed Exp $
 
 DISTNAME=	git-4.3.20
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU:=git/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hulubei.net/tudor/git/
 COMMENT=	GNU Interactive Tools - a file system browser for UNIX systems
 

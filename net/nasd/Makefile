@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/02/05 23:10:27 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/11 14:22:46 joerg Exp $
 
 DISTNAME=		repackaged-${PKGNAME_NOREV}
 PKGNAME=		nasd-1.3
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		net sysutils
 MASTER_SITES=		${MASTER_SITE_LOCAL} # original tar file has some trailing base64 checksums
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pdl.cmu.edu/NASD/Downloads/NASDcode.html
 COMMENT=		Prototype storage implementation
 

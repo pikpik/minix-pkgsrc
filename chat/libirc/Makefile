@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:45:04 tv Exp $
+# $NetBSD: Makefile,v 1.11 2005/10/22 13:14:34 wiz Exp $
 #
 
 DISTNAME=		libirc-0.2
@@ -6,7 +6,7 @@ PKGREVISION=		2
 CATEGORIES=		chat
 MASTER_SITES=		# empty
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 # HOMEPAGE=		http://www.cs.kau.se/~jorgen/software/
 COMMENT=		C library for the IRC protocol
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/06/17 04:49:47 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:10:34 joerg Exp $
 #
 
 DISTNAME=	9.01
@@ -8,7 +8,7 @@ CATEGORIES=	news x11
 MASTER_SITES=	ftp://sipb.mit.edu/pub/xrn/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mit.edu/people/jik/software/xrn.html
 COMMENT=	Usenet News reader for the X window system
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2003/07/17 21:27:39 grant Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:49:56 rillig Exp $
 #
 
 DISTNAME=	txt2man-1.4.2
 CATEGORIES=	converters
 MASTER_SITES=	http://mvertes.free.fr/download/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mvertes.free.fr/
 COMMENT=	Convert flat ASCII text to man page format
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/12/26 23:39:33 schmonz Exp $
+# $NetBSD: Makefile,v 1.15 2006/01/04 04:29:08 schmonz Exp $
 
 DISTNAME=	nfsshell-1.0
 CATEGORIES=	net security
@@ -6,7 +6,7 @@ MASTER_SITES=	http://www.asmodeus.com/archive/Xnix/
 DISTFILES=	nfsBugFerret.tgz \
 		nfsShell.c
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NFS security verification suite
 
 BROKEN_IN=	pkgsrc-2005Q4

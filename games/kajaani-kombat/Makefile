@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/12/11 09:40:42 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:16 joerg Exp $
 #
 
 DISTNAME=		kajaani-kombat-0.6
@@ -6,7 +6,7 @@ PKGREVISION=		3
 CATEGORIES=		games
 MASTER_SITES=		http://kombat.kajaani.net/dl/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://kombat.kajaani.net/
 COMMENT=		Rampart-like multiplayer game set in space
 

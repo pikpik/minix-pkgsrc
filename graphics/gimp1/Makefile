@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/02/21 20:26:11 hubertf Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:09:31 joerg Exp $
 #
 
 DISTNAME=	gimp-1.2.5
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	graphics
 DISTFILES=	# nothing
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gimp.org/
 COMMENT=	GNU Image Manipulation Program
 

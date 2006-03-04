@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/04/11 21:44:59 tv Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:08:18 joerg Exp $
 #
 
 DISTNAME=	liveice-xmms
@@ -7,7 +7,7 @@ PKGREVISION=	         3
 CATEGORIES=	audio
 MASTER_SITES=	http://star.arm.ac.uk/~spm/software/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://star.arm.ac.uk/~spm/software/
 COMMENT=	Audio streaming plugin for XMMS
 

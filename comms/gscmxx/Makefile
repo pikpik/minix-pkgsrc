@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/01/24 07:31:58 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:27 joerg Exp $
 #
 
 DISTNAME=	gscmxx-0.4.1
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=	comms x11 perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gscmxx/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gscmxx.sourceforge.net/
 COMMENT=	Gtk+ frontend for scmxx
 

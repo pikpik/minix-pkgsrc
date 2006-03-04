@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2004/12/18 16:12:41 grant Exp $
+# $NetBSD: Makefile,v 1.31 2005/04/11 21:45:11 tv Exp $
 
 DISTNAME=	db-3.3.11
 PKGNAME=	db3-3.11.2
@@ -7,7 +7,7 @@ CATEGORIES=	databases
 MASTER_SITES=	ftp://sleepycat1.inetu.net/releases/ \
 		ftp://sleepycat2.inetu.net/releases/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sleepycat.com/
 COMMENT=	Sleepycat Software's Berkeley DB version 3
 

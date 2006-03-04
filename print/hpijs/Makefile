@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2005/12/05 20:50:53 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/01/29 01:51:23 gavan Exp $
 
 DISTNAME=	hpijs-2.1.4
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hpinkjet/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hpinkjet.sourceforge.net/
 COMMENT=	HP inkjet printer driver server
 

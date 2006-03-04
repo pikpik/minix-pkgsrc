@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2004/12/03 15:15:01 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2005/07/16 01:19:11 jlam Exp $
 
 DISTNAME=       mos20src
 PKGNAME=        moscow_ml-2.00
@@ -7,7 +7,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.dina.kvl.dk/pub/mosml/ \
 		ftp://ftp.csd.uu.se/pub/mirror/mosml/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dina.kvl.dk/~sestoft/mosml.html
 COMMENT=	Moscow ML, a version of Standard ML
 

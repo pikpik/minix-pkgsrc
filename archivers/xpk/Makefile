@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:50 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2005/04/11 21:44:50 tv Exp $
 
 DISTNAME=	xpk-0.1.4
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	http://www.jormas.com/~vesuri/xpk/ \
 		http://energyhq.homeip.net/files/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.jormas.com/~vesuri/xpk/
 COMMENT=	The eXternal PacKer (XPK) library system
 

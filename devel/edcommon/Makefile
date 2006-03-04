@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:41 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/26 14:40:00 wiz Exp $
 #
 
 DISTNAME=		edcommon-32-s
@@ -7,7 +7,7 @@ PKGREVISION=		2
 CATEGORIES=		devel gnustep
 MASTER_SITES=		http://www.mulle-kybernetik.com/software/EDFrameworks/Downloads/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mulle-kybernetik.com/software/EDFrameworks/Downloads/
 COMMENT=		Foundation and AppKit extensions
 

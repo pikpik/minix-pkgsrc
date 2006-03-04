@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/24 13:57:34 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/31 16:30:55 tv Exp $
 #
 
 DISTNAME=	tfmxplay-0.6
@@ -6,7 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://darkstar.tabu.uni-bonn.de/~neo/tfmx/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://darkstar.tabu.uni-bonn.de/~neo/audio.html
 COMMENT=	Console TFMX (amiga games sound file format) player
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/07/13 18:01:45 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/08/06 06:19:35 jlam Exp $
 
 DISTNAME=      	Time-modules-2003.1126
 PKGNAME=	p5-${DISTNAME:S/modules-//}
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	devel perl5 time
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Time/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Perl5 functions to convert and use time variables
 
 PERL5_PACKLIST=		auto/Time-modules/.packlist

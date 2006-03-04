@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2005/03/24 21:12:57 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/15 22:16:05 tonio Exp $
 
 DISTNAME=	figlet222
 PKGNAME=	figlet-2.2.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.figlet.org/pub/figlet/program/unix/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.figlet.org/
 COMMENT=	Print text banners in fancy ASCII art characters
 

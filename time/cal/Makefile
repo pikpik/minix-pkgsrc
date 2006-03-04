@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/03/24 21:13:02 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/17 03:50:38 jlam Exp $
 
 DISTNAME=		cal-3.5
 PKGREVISION=		1
 CATEGORIES=		time
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=utils/shell/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Enhanced color version of standard calendar utility
 
 WRKSRC=			${WRKDIR}/cal-3.5/source

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/13 18:01:30 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/06 06:19:17 jlam Exp $
 
 DISTNAME=	WeakRef-0.01
 PKGNAME=	p5-${DISTNAME}
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/LUKKA/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Provide weak references in Perl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

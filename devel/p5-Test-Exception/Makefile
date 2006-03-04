@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/08/06 06:19:14 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/11/23 22:16:09 wiz Exp $
 #
 
 DISTNAME=		Test-Exception-0.21
@@ -6,7 +6,7 @@ PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Test/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Test-Exception/
 COMMENT=		Test exception based code
 

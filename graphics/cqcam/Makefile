@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/06/01 18:02:54 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/02/05 23:09:29 joerg Exp $
 #
 
 DISTNAME=		cqcam-0.45a
@@ -7,7 +7,7 @@ CATEGORIES=    		graphics x11
 MASTER_SITES=		http://www.cs.duke.edu/~reynolds/cqcam/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cs.duke.edu/~reynolds/cqcam/
 COMMENT=		Free Color QuickCam control program
 

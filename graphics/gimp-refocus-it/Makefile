@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/01/24 07:32:12 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:31 joerg Exp $
 #
 
 DISTNAME=		refocus-it-2.0.0
@@ -7,7 +7,7 @@ PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=refocus-it/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://refocus-it.sourceforge.net/
 COMMENT=		Refocus images
 

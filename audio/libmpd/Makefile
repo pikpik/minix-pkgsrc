@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/22 19:26:08 wiz Exp $
 #
 
 DISTNAME=		libmpd-0.01
 CATEGORIES=		audio
 MASTER_SITES=		http://download.qballcow.nl/programs/libmpd/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://download.qballcow.nl/programs/libmpd/libmpd.html
 COMMENT=		Library to access mpd (musicpd)
 

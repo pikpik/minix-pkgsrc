@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:18 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:09:25 joerg Exp $
 
 DISTNAME=	xskat-3.4
 PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.gulu.net/xskat/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xskat.de/xskat.html
 COMMENT=	Play the card game Skat
 

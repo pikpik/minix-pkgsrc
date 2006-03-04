@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/02/06 14:29:23 tron Exp $
+# $NetBSD: Makefile,v 1.41 2006/02/19 00:45:36 wiz Exp $
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
@@ -8,7 +8,7 @@ MASTER_SITES=	http://ftp.funet.fi/pub/unix/mail/metamail/	\
 		ftp://ftp.research.telcordia.com/pub/nsb/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Implementation of MIME, the Multipurpose Internet Mail Extensions
 
 CONFLICTS+=	elm>=2.5.5 mm-2.7

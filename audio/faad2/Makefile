@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/12/08 10:06:32 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2006/02/05 23:08:06 joerg Exp $
 #
 
 DISTNAME=	faad2-2.0
@@ -6,7 +6,7 @@ PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.audiocoding.com/
 COMMENT=	AAC decoding library
 

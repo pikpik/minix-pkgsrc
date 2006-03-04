@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:44 tv Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:09 joerg Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_LOCAL}	# www.asclock.org is no more
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Dockable clock and calendar with themes for X11
 
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL

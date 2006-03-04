@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/07/19 10:15:30 grant Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/24 20:52:05 joerg Exp $
 
 DISTNAME=	teTeX-texmfsrc-1.0.1
 PKGNAME=	teTeX-sharesrc-1.0.1
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/unix/teTeX/1.0/distrib/sources/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Sources for machine-independent part of teTeX
 

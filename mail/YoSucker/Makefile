@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/07/16 01:19:12 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/09/28 20:52:23 rillig Exp $
 #
 
 DISTNAME=		YoSucker-pr37
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=yosucker/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://yosucker.sourceforge.net/
 COMMENT=		Download mails from Yahoo webmail into mbox
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/07/13 18:01:26 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/06 06:19:11 jlam Exp $
 #
 
 DISTNAME=	IPC-SharedCache-1.3
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IPC/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Cache data in shared memory
 
 DEPENDS+=	p5-IPC-ShareLite>=0.06:../../devel/p5-IPC-ShareLite

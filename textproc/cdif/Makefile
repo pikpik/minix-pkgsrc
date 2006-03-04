@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/16 01:19:23 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/09/28 20:52:27 rillig Exp $
 #
 
 DISTNAME=		cdif-1.15
@@ -6,7 +6,7 @@ CATEGORIES=		textproc
 MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
 EXTRACT_SUFX=		# empty
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Word context diff
 
 LICENSE=		no-commercial-use

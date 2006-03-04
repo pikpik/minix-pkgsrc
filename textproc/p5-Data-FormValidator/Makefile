@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:31 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/03 17:33:08 abs Exp $
 
 DISTNAME=	Data-FormValidator-4.12
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5 textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Data/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Data-FormValidator/
 COMMENT=	Validates user input based on input profile
 

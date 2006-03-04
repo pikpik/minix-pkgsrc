@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2005/07/14 13:52:13 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/05 23:08:45 joerg Exp $
 
 DISTNAME=	librsync-0.9.7
 PKGREVISION=	1
 CATEGORIES=	devel net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=librsync/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rdiff-backup.stanford.edu/
 COMMENT=	Checksum-based differencing library
 

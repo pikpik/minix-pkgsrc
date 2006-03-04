@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/02/10 12:39:25 drochner Exp $
+# $NetBSD: Makefile,v 1.42 2006/02/13 11:04:54 drochner Exp $
 
 DISTNAME=	gnutls-1.3.4
 CATEGORIES=	security devel
@@ -9,7 +9,7 @@ MASTER_SITES=	http://josefsson.org/gnutls/releases/ \
 		ftp://ftp.mirrors.wiretapped.net/pub/security/network-security/gnutls/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnutls.org/
 COMMENT=	GNU Transport Layer Security library
 

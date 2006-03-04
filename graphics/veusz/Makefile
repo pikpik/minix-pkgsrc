@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2006/02/05 23:09:40 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/10 11:13:52 drochner Exp $
 #
 
 DISTNAME=		veusz-0.9
 CATEGORIES=		graphics
 MASTER_SITES=		http://download.gna.org/veusz/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://home.gna.org/veusz/
 COMMENT=		Scientific plotting package
 

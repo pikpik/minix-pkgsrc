@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:44:49 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/01 16:41:29 rillig Exp $
 #
 
 DISTNAME=	nomarch-1.3
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=utils/compress/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rus.members.beeb.net/nomarch.html
 COMMENT=	Free replacement for the arc program
 

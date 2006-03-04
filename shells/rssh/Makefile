@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2005/12/29 06:22:13 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/01/14 00:52:33 seb Exp $
 #
 
 DISTNAME=		rssh-2.3.2
 CATEGORIES=		shells security
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=rssh/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://rssh.sourceforge.net/
 COMMENT=		Restricted shell allowing only scp and/or sftp
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/06/01 18:02:41 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/05 23:08:28 joerg Exp $
 #
 
 DISTNAME=		xisp-2.7p1
@@ -8,7 +8,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=system/network/serial/} \
 			http://xisp.hellug.gr/release/ \
 			ftp://argeas.cs-net.gr/pub/unix/linux/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://xisp.hellug.gr/
 COMMENT=		User-friendly X11 interface to pppd/chat
 

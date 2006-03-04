@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2005/06/16 06:58:02 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/01 19:46:44 tv Exp $
 #
 
 DISTNAME=	incm-0.5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/release/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mew.org/
 COMMENT=	Tool to get mail from mbox file or maildir
 

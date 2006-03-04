@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/16 06:58:00 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:09:47 joerg Exp $
 
 DISTNAME=		pfthpc21
 PKGNAME=		pforth-21
@@ -7,7 +7,7 @@ CATEGORIES=		lang
 MASTER_SITES=		http://www.softsynth.com/pforth/
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.softsynth.com/pforth/
 COMMENT=		Portable ANS-like Forth
 

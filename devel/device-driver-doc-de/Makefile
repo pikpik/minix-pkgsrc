@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/05/15 22:02:26 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/07/15 18:27:48 jlam Exp $
 
 DISTNAME=	NetBSD-treiber_schreiben
 PKGNAME=	device-driver-doc-de-20030729
 CATEGORIES=	devel
 MASTER_SITES=	http://www.unixag-kl.fh-kl.de/~jkunz/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.unixag-kl.fh-kl.de/~jkunz/
 COMMENT=	Device driver documentation in German
 

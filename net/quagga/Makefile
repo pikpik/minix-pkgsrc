@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/12/29 06:22:02 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/02/05 23:10:30 joerg Exp $
 # Based on KAME Id: Makefile,v 1.1.2.1.2.1.10.2 1999/01/05 11:03:50 itojun Exp
 #
 
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.quagga.net/download/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.quagga.net/
 COMMENT=	Free multithreaded routing daemon software (fork of zebra)
 

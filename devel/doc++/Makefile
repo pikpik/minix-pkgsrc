@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2006/01/22 22:16:25 schwarz Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:41 joerg Exp $
 
 DISTNAME=		doc++-3.4.10
 PKGREVISION=	2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=docpp/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://docpp.sourceforge.net/
 COMMENT=		Documentation system for C, C++ and Java
 

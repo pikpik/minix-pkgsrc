@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/08/28 04:25:31 uebayasi Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:01 joerg Exp $
 
 DISTNAME=	dictionary-1.8.2
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME:S/dictionary/emacs-dict-client/}
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${HOMEPAGE}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://me.in-berlin.de/~myrkr/dictionary/
 COMMENT=	Emacs package for talking to a dictionary server
 

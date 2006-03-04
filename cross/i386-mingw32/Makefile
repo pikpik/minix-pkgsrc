@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2006/01/23 00:06:39 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2006/02/26 16:04:23 joerg Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-3.2
 CROSS_DISTFILES=
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mingw.org/
 COMMENT=		Cross-compile environment for MinGW
 CATEGORIES+=		cross lang

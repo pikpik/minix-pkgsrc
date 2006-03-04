@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/09/07 16:49:41 reed Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:11:45 joerg Exp $
 #
 
 DISTNAME=		libXcursor-1.1.2
@@ -8,7 +8,7 @@ CATEGORIES=		x11 devel
 MASTER_SITES=		http://xlibs.freedesktop.org/release/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.freedesktop.org/Software/xlibs
 COMMENT=		Client-side cursor loading library for X
 

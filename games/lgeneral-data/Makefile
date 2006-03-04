@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:45:51 tv Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:20 joerg Exp $
 #
 
 DISTNAME=	lgeneral-data-1.1.3
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgeneral/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lgames.sourceforge.net/index.php?project=LGeneral
 COMMENT=	Panzer General data files for lgeneral
 

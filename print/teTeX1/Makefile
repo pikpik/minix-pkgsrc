@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/07/19 10:15:29 grant Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:39 joerg Exp $
 #
 
 DISTNAME=	teTeX-1.0.7
@@ -7,7 +7,7 @@ CATEGORIES=	print
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Thomas Esser's TeX distribution for UNIX compatible systems
 

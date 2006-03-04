@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2005/12/29 06:21:45 jlam Exp $
+# $NetBSD: Makefile,v 1.86 2006/02/05 23:09:44 joerg Exp $
 
 DISTNAME=		gcc-2.95.3
 PKGREVISION=		7
@@ -11,7 +11,7 @@ PATCHFILES=		gcc-2.95.3-diff-2002-08-29.gz
 #
 # Synced from patches against main source tree as of 2002-03-28
 #
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/gcc/gcc.html
 COMMENT=		GNU Compiler Collection, version 2
 

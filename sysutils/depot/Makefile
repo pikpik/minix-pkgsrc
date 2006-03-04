@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2003/09/19 23:08:29 dent Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:51:00 rillig Exp $
 #
 
 DISTNAME=       depot-5.14
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.andrew.cmu.edu/pub/depot/alpha/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://asg.web.cmu.edu/depot/
 COMMENT=	Maps several separate packages into a tree without merging them
 

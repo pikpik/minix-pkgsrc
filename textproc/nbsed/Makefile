@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/04/11 21:47:36 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/09/28 14:31:08 rillig Exp $
 
 DISTNAME=		nbsed-20040821
 CATEGORIES=		textproc pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		NetBSD-current's sed(1)
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2005/09/25 10:40:18 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2005/10/10 08:35:54 xtraeme Exp $
 
 DISTNAME=	dbench-3.03
 PKGREVISION=	2
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://samba.org/ftp/tridge/dbench/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://samba.org/ftp/tridge/dbench/README
 COMMENT=	Simulation of the Ziff-Davis netbench benchmark
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/01/24 07:32:09 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:09:22 joerg Exp $
 #
 
 DISTNAME=	sirius-0.8.0
@@ -6,7 +6,7 @@ PKGREVISION=	6
 CATEGORIES=	games gnome
 MASTER_SITES=	http://sirius.bitvis.nu/files/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sirius.bitvis.nu/
 COMMENT=	Othello game for GNOME2
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2005/11/16 19:18:58 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2005/12/05 20:50:27 rillig Exp $
 #
 
 DISTNAME=	Python-2.2.3
@@ -8,7 +8,7 @@ CATEGORIES=	lang python
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.2.3/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 

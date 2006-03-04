@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:23 joerg Exp $
 #
 
 DISTNAME=	urban-1.5.3
@@ -7,7 +7,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://urban.bengburken.net/files/linux/
 DISTFILES=	urban-1.5.3${EXTRACT_SUFX} sound${EXTRACT_SUFX}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://urban.bengburken.net/eng/
 COMMENT=	U.R.B.A.N The Cyborg Project
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/12/29 06:21:47 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2006/01/06 15:10:03 wiz Exp $
 
 DISTNAME=	bogofilter-0.96.6
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bogofilter/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bogofilter.sourceforge.net/
 COMMENT=	Bayesian spam filter written in C
 

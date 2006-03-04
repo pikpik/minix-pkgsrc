@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/27 13:54:58 seb Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:31 joerg Exp $
 #
 
 DISTNAME=		scli-0.2.12
@@ -6,7 +6,7 @@ PKGREVISION=		6
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ibr.cs.tu-bs.de/pub/local/scli/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ibr.cs.tu-bs.de/projects/scli/
 COMMENT=		SNMP command line interface
 

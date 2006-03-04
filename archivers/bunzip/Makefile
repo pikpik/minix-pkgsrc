@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2004/04/22 23:24:05 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2005/04/11 21:44:48 tv Exp $
 
 DISTNAME=	bunzip021.c
 PKGNAME=	bunzip-0.21
@@ -6,7 +6,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.muraroa.demon.co.uk/
 COMMENT=	Decompressor for bzip .bz files
 

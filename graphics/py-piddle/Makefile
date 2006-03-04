@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:46:08 tv Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:38 joerg Exp $
 
 DISTNAME=	piddle-1.0.15
 PKGREVISION=	2
@@ -6,7 +6,7 @@ PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=piddle/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://piddle.sf.net/
 COMMENT=	Python Plug In Drawing, Does Little Else
 

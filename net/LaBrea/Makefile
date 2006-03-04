@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/29 06:21:56 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:21 joerg Exp $
 #
 
 DISTNAME=	labrea-2.5-stable-1
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=labrea/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://labrea.sourceforge.net/labrea-info.html
 COMMENT=	Builds tarpits/honeypots for scanners
 

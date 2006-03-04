@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/10/23 20:40:20 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2005/12/01 16:41:29 rillig Exp $
 
 DISTNAME=       lha-114i
 PKGNAME=	lha-114.9
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   http://www2m.biglobe.ne.jp/~dolphin/lha/prog/ \
 		ftp://ftp.win.ne.jp/pub/misc/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
 COMMENT=	Archive files using LZW compression (.lzh files)
 

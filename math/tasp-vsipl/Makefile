@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/01 18:03:04 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:04 joerg Exp $
 
 DISTNAME=	tvcpp0p8
 PKGNAME=	tasp-vsipl-20030710
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.vsipl.org/software/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.vsipl.org/
 COMMENT=	Vector Signal Image Processing Library
 

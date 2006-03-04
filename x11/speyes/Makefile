@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:48:13 tv Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:11:43 joerg Exp $
 
 DISTNAME=	speyes-1.2.0
 PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.okb-1.org/speyes/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.okb-1.org/speyes/speyes.html
 COMMENT=	South Park XEyes clone
 

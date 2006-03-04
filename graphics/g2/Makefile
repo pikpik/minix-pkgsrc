@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/09/26 14:59:13 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/05 23:09:30 joerg Exp $
 
 DISTNAME=		g2-0.49a
 PKGREVISION=		6
 CATEGORIES=		graphics
 MASTER_SITES=		http://g2.sourceforge.net/pub/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://g2.sourceforge.net/
 COMMENT=		Powerful, easy to use 2D graphics library
 

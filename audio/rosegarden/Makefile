@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/02/04 16:23:50 ghen Exp $
+# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:13 joerg Exp $
 
 DISTNAME=	rosegarden-2.1pl4
 PKGNAME=	rosegarden-2.1.4
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cannam.demon.co.uk/rosegarden/distribution/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rosegardenmusic.com/
 COMMENT=	Notation editor & MIDI sequencer
 

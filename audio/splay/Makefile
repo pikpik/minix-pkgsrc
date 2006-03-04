@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.18 2005/04/11 21:44:57 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/05 20:49:49 rillig Exp $
 #
 
 DISTNAME=		splay-0.8.2
 CATEGORIES=		audio
 MASTER_SITES=		# empty
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://splay.sourceforge.net/
 COMMENT=		Audio player/decoder that decodes MPEG Layer I,II,III and WAV files
 

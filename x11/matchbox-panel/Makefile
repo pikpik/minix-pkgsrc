@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/24 20:21:56 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:11:40 joerg Exp $
 #
 
 DISTNAME=		matchbox-panel-0.9.2
@@ -7,7 +7,7 @@ CATEGORIES=		x11
 MASTER_SITES=		http://projects.o-hand.com/matchbox/sources/matchbox-panel/0.9/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://projects.o-hand.com/matchbox/
 COMMENT=		Panel for Matchbox
 

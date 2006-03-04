@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2005/11/02 15:31:56 tv Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/07 22:00:45 seb Exp $
 #
 
 DISTNAME=	sipcalc-1.1.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.routemeister.net/projects/sipcalc/files/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.routemeister.net/projects/sipcalc/
 COMMENT=	IPv4/IPv6 subnet calculator
 

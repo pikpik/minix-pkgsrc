@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/01/21 15:20:38 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2005/11/11 20:26:57 wiz Exp $
 #
 
 DISTNAME=	fortunes-de_0.19.orig
@@ -6,7 +6,7 @@ PKGNAME=	fortunes-de-0.19
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/f/fortunes-de/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://packages.debian.org/unstable/games/fortunes-de.html
 COMMENT=	German data files for fortune
 

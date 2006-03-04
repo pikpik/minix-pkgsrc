@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.18 2005/05/23 06:56:53 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2005/10/16 14:59:22 wiz Exp $
 
 DISTNAME=       freeze-2.5
 PKGREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/compression/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 COMMENT=	FREEZE / MELT compression program - often used in QNX
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

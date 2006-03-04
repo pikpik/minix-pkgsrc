@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2005/08/19 03:55:00 schmonz Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/19 05:07:42 schmonz Exp $
 
 DISTNAME=       	djbfft-0.76
 CATEGORIES=     	math
 MASTER_SITES=   	http://cr.yp.to/djbfft/
 
-MAINTAINER=     	tech-pkg@NetBSD.org
+MAINTAINER=     	pkgsrc-users@NetBSD.org
 HOMEPAGE=       	http://cr.yp.to/djbfft.html
 COMMENT=        	Extremely fast library for floating-point convolution
 

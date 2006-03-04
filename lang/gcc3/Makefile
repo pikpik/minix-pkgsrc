@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2005/04/11 21:46:13 tv Exp $
+# $NetBSD: Makefile,v 1.59 2006/02/05 23:09:44 joerg Exp $
 
 GCC_VERSION=	3.3.5
 DISTNAME=	gcc3-${GCC_VERSION}
@@ -7,7 +7,7 @@ CATEGORIES=	lang
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gcc/gcc.html
 COMMENT=	GNU Compiler Collection, v3
 

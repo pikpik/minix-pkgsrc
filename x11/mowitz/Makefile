@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2005/06/01 18:03:29 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:11:40 joerg Exp $
 
 DISTNAME=	Mowitz-0.2.2
 PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://siag.nu/pub/mowitz/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://siag.nu/mowitz/
 COMMENT=	"More widgets" library
 

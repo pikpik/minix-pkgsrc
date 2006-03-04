@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/13 18:01:37 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/08/06 06:19:28 jlam Exp $
 
 DISTNAME=	SNMP_Session-1.07
 PKGNAME=	p5-SNMP_Session-1.07
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	http://www.switch.ch/misc/leinen/snmp/perl/dist/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.switch.ch/misc/leinen/snmp/perl/
 COMMENT=	Perl5 module providing rudimentary access to remote SNMP agents
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/12/11 09:40:42 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/05 23:09:19 joerg Exp $
 
 DISTNAME=	lbreakout2-2.5.2
 PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lgames.sourceforge.net/
 COMMENT=	Breakout-style arcade game
 

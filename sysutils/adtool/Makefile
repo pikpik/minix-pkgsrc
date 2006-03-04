@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/12/29 06:22:16 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/01/06 15:10:07 wiz Exp $
 #
 
 DISTNAME=	adtool-1.2
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://c128.org/adtool/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://c128.org/adtool/
 COMMENT=	Active Directory administration utility for Unix
 

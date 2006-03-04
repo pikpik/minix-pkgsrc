@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/04/05 10:42:47 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:33 jlam Exp $
 
 DISTNAME=       atitvout-0.4
 PKGREVISION=	1
 CATEGORIES=	sysutils graphics
 MASTER_SITES=	http://www.stud.uni-hamburg.de/users/lennart/projects/atitvout/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.stud.uni-hamburg.de/users/lennart/projects/atitvout/
 COMMENT=	Allows TV-Out connector support under Linux/NetBSD
 

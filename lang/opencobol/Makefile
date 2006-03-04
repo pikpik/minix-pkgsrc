@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/12/29 06:21:46 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:09:46 joerg Exp $
 #
 
 DISTNAME=		open-cobol-0.23
@@ -7,7 +7,7 @@ PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=open-cobol/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://open-cobol.sourceforge.net/
 COMMENT=		Open-source COBOL compiler
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2004/06/07 18:36:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2005/07/16 01:19:20 jlam Exp $
 #
 
 DISTNAME=	dmassage-0.6
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.sentia.org/downloads/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sentia.org/projects/dmassage/
 COMMENT=	dmesg(8) parser
 

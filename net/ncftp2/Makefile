@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.39 2005/06/25 00:52:00 kristerw Exp $
+# $NetBSD: Makefile,v 1.40 2005/12/02 17:02:29 wiz Exp $
 
 DISTNAME=		ncftp-2.4.3
 PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ncftp.com/ncftp/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ncftp.com/ncftp/
 COMMENT=		FTP replacement with advanced user interface
 

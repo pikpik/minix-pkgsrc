@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/01/04 04:29:06 schmonz Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:08:40 joerg Exp $
 #
 
 DISTNAME=	cgdb-0.4.0
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cgdb/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cgdb.sourceforge.net/
 COMMENT=	Curses-based interface to the GNU Debugger (GDB)
 

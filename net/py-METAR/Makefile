@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/12/05 20:50:48 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/05 23:10:29 joerg Exp $
 #
 
 DISTNAME=	pymetar-0.12
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	http://www.schwarzvogel.de/pkgs/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.schwarzvogel.de/software-pymetar.shtml
 COMMENT=	Downloads weather reports
 

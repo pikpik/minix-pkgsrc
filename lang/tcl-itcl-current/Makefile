@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/15 22:02:56 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/22 07:11:37 wiz Exp $
 
 DISTNAME=	tcl-itcl-20040920
 PKGNAME=	${DISTNAME:S/itcl/itcl-current/}
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tcltk.com/itcl/
 COMMENT=	[incr Tcl] object-oriented extension to Tcl/Tk.  CVS snapshot
 

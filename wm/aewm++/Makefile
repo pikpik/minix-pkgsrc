@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:24 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:12 joerg Exp $
 #
 
 DISTNAME=	aewm++-1.0.24
@@ -7,7 +7,7 @@ CATEGORIES=	wm x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sapphire/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sapphire.sourceforge.net/
 COMMENT=	Fork of the popular minimal window manager aewm
 

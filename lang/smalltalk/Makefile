@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.35 2006/02/05 23:09:48 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2006/02/18 23:42:57 wiz Exp $
 
 DISTNAME=	smalltalk-2.1.9
 PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=smalltalk/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.smalltalk.org/versions/GNUSmalltalk.html
 COMMENT=	GNU Smalltalk: A smalltalk-80 implementation
 

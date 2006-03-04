@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2005/06/16 06:57:41 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/07/16 19:10:38 jlam Exp $
 #
 
 DISTNAME=	spiceprm-0.11
 CATEGORIES=	cad
 MASTER_SITES=	http://metalab.unc.edu/pub/Linux/apps/circuits/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Spice preprocessor for parameterized subcircuits
 
 WRKSRC=			${WRKDIR}/spiceprm

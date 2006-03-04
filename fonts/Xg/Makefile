@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:09:07 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/02/17 19:27:59 wiz Exp $
 
 DISTNAME=	libXg.utf.fonts
 PKGNAME=	libXgFonts-1.0
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	fonts plan9
 MASTER_SITES=	ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	These are the UNICODE fonts for use with 9term and sam
 
 WRKSRC=		${WRKDIR}

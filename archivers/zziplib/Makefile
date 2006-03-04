@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:44:51 tv Exp $
+# $NetBSD: Makefile,v 1.9 2005/10/23 20:58:58 rillig Exp $
 #
 
 DISTNAME=	zziplib-0.10.82
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=zziplib/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://zziplib.sourceforge.net/
 COMMENT=	Library for ZIP archive handling
 

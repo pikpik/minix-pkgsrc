@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/07/13 18:01:26 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/08/06 06:19:11 jlam Exp $
 
 DISTNAME=	IPC-Run-0.79
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IPC/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/IPC-Run/
 COMMENT=	Perl module for interacting with child processes
 

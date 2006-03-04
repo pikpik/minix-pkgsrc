@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/01/20 16:15:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:08:24 joerg Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
@@ -7,7 +7,7 @@ CATEGORIES=	chat
 MASTER_SITES=	http://www.irssi.org/files/plugins/icb/
 DISTFILES=	${DISTNAME}.tar.gz ${IRSSI_DISTFILE}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.irssi.org/
 COMMENT=	Irssi plugin to access ICB networks
 

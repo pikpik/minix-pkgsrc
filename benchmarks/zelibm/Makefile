@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/12/28 13:19:26 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:08:20 joerg Exp $
 #
 
 DISTNAME=		zelibm
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		benchmarks
 MASTER_SITES=		http://people.redhat.com/drepper/libm/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://people.redhat.com/drepper/libm/
 COMMENT=		Visual Math Library Quality Check
 

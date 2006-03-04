@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/24 07:31:55 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:14 joerg Exp $
 #
 
 DISTNAME=	terminatorX-3.82
@@ -8,7 +8,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://terminatorx.cx/dist/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://terminatorx.cx/
 COMMENT=	Realtime audio synthesizer
 

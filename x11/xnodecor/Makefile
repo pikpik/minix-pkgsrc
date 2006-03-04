@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/01 18:03:33 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:48 joerg Exp $
 
 DISTNAME=	xnodecor-0.1
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.42.org/pub/wmx/contrib/
 DISTFILES=	xnodecor.c
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# none
 COMMENT=        Borderless or undecorated window support utility
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2006/02/20 17:56:36 joerg Exp $
+# $NetBSD: Makefile,v 1.76 2006/02/22 12:38:17 drochner Exp $
 
 DISTNAME=	tiff-3.8.0
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.remotesensing.org/pub/libtiff/ \
 		http://libtiff.maptools.org/dl/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.remotesensing.org/libtiff/
 COMMENT=	Library and tools for reading and writing TIFF data files
 

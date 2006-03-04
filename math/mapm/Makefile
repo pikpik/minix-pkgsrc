@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:46:29 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:20 jlam Exp $
 #
 
 DISTNAME=		mapm-4.9.2
 CATEGORIES=		math
 MASTER_SITES=		http://www.tc.umn.edu/~ringx004/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.tc.umn.edu/~ringx004/
 COMMENT=		Arbitrary Precision Math library
 

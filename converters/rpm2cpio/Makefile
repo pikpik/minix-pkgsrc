@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/07/16 19:10:38 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2006/01/21 18:57:40 jlam Exp $
 
 DISTNAME=	rpm2cpio
 PKGNAME=	rpm2cpio-1.1
@@ -7,7 +7,7 @@ CATEGORIES=	converters
 MASTER_SITES=	http://www.iagora.com/~espel/
 EXTRACT_SUFX=	# none
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.iagora.com/~espel/hacks.html
 COMMENT=	Convert .rpm files for extraction with cpio, needs just perl
 

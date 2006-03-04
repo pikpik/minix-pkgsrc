@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/09/28 20:52:19 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:40 joerg Exp $
 #
 
 DISTNAME=       cbrowser-0.6
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=     devel tk
 MASTER_SITES=   http://www.ziplink.net/~felaco/cbrowser/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=       http://www.ziplink.net/~felaco/cbrowser/
 COMMENT=        Graphical C/C++ source code browsing tool, and call graph viewer
 

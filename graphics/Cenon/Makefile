@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/24 07:32:10 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:09:26 joerg Exp $
 #
 
 DISTNAME=		Cenon-3.67
@@ -7,7 +7,7 @@ CATEGORIES=		graphics cad gnustep
 MASTER_SITES=		http://www.vhf-group.com/vhfInterservice/download/source/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cenon.info/
 COMMENT=		Vector graphics / CAD / DTP program
 

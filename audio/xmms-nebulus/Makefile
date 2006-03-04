@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/11 09:40:38 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:08:18 joerg Exp $
 #
 
 DISTNAME=	xmms-nebulus-0.6.0
@@ -7,7 +7,7 @@ CATEGORIES=	xmms audio
 MASTER_SITES=	http://nebulus.tuxfamily.org/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nebulus.tuxfamily.org/
 COMMENT=	Xmms plugin that uses OpenGL
 

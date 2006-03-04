@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/05/22 20:08:13 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/02/05 23:10:01 joerg Exp $
 #
 
 DISTNAME=	calc-2.11.10.1
@@ -8,7 +8,7 @@ CATEGORIES=	math
 MASTER_SITES=	http://www.isthe.com/chongo/src/calc/ \
 		http://prdownloads.sourceforge.net/calc/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc/
 COMMENT=	C arbitrary precision calculator
 

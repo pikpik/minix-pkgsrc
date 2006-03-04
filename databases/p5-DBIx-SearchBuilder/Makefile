@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/01/03 18:05:53 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/26 09:24:36 wiz Exp $
 #
 
 DISTNAME=	DBIx-SearchBuilder-1.39
@@ -7,7 +7,7 @@ SVR4_PKGNAME=	p5dxs
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBIx/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBIx-SearchBuilder/
 COMMENT=	Extension for easy SQL SELECT Statement generation
 

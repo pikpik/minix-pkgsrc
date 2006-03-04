@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:42 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/19 10:46:29 abs Exp $
 #
 
 DISTNAME=		visitors-0.5
 CATEGORIES=		www
 MASTER_SITES=		http://www.hping.org/visitors/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hping.org/visitors/
 COMMENT=		Very fast web log analyzer
 

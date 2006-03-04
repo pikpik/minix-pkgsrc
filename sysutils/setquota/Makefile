@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/03 21:52:33 kristerw Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/25 15:42:56 joerg Exp $
 #
 
 DISTNAME=	setquota-0.1
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.jurai.net/users/winter/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=	# unknown
 COMMENT=	Command line quota tools
 

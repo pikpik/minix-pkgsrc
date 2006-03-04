@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.28 2004/11/30 16:04:45 adam Exp $
+# $NetBSD: Makefile,v 1.29 2005/04/11 21:46:03 tv Exp $
 
 DISTNAME=	gif2png-2.5.1
 CATEGORIES=	graphics converters
 MASTER_SITES=	http://www.catb.org/~esr/gif2png/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.catb.org/~esr/gif2png/
 COMMENT=	Convert GIF files to PNG
 

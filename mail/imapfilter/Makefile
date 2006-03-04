@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2005/12/27 13:54:58 seb Exp $
+# $NetBSD: Makefile,v 1.20 2006/01/15 14:28:07 seb Exp $
 
 DISTNAME=		imapfilter-1.1.1
 CATEGORIES=		mail
 MASTER_SITES=		http://imapfilter.hellug.gr/source/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://imapfilter.hellug.gr/
 COMMENT=		Mail filtering utility for the IMAP
 

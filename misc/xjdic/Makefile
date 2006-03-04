@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/02/21 20:26:12 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2005/06/17 03:50:23 jlam Exp $
 #
 
 DISTNAME=	xjdic24
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
 		ftp://ftp.funet.fi/pub/culture/japan/mirrors/monash/pub/nihongo/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.csse.monash.edu.au/~jwb/xjdic/
 COMMENT=	Japanese dictionary
 

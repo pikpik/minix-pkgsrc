@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2005/03/24 21:12:50 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2005/04/11 21:44:51 tv Exp $
 
 DISTNAME=       zoo-2.10pl1
 PKGNAME=	zoo-2.10.1
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/arcers/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Manipulate archives of files in compressed form
 
 LICENSE=	zoo-license

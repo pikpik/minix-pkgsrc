@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/01/24 07:32:46 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2006/02/05 23:11:19 joerg Exp $
 #
 
 DISTNAME=	bins-1.1.29
@@ -7,7 +7,7 @@ CATEGORIES=	www graphics
 MASTER_SITES=	http://zubro.chez.tiscali.fr/BINS/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bins.sautret.org/
 COMMENT=	Static HTML photo album generator
 

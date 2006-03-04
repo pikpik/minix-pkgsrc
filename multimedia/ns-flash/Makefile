@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2005/12/19 14:06:28 tron Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:10:17 joerg Exp $
 
 PKGREVISION=		1
 CATEGORIES=		multimedia www
 MASTER_SITES=		http://fpdownload.macromedia.com/get/flashplayer/current/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.flash.com/
 COMMENT=		MacroMedia Flash Player Netscape plugin
 

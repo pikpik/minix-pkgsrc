@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/12/18 21:11:11 rillig Exp $
+# $NetBSD: Makefile,v 1.38 2005/12/19 16:41:39 joerg Exp $
 
 DISTNAME=		crafty-18.15
 CATEGORIES=		games
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.cis.uab.edu/pub/hyatt/v18/ \
 DISTFILES=		${CRAFTY_DISTFILES}
 DISTFILES+=		${CRAFTY_STARTPGN} ${CRAFTY_DOCFILES}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Chess engine
 
 

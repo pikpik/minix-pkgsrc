@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/01/05 04:37:33 uebayasi Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/09 10:58:20 drochner Exp $
 #
 
 DISTNAME=	dcraw
@@ -7,7 +7,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.cybercom.net/~dcoffin/dcraw/
 DISTFILES=	dcraw.c dcraw.1
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cybercom.net/~dcoffin/dcraw/
 COMMENT=	Raw digital camera decoder
 

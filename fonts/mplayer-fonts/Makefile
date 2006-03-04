@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/10/02 11:23:08 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/03 00:37:59 wiz Exp $
 
 DISTNAME=	mplayer-fonts-20030714
 CATEGORIES=	fonts
@@ -13,7 +13,7 @@ DISTFILES=	font-arial-iso-8859-1.tar.bz2 \
 		font-arial-iso-8859-2.tar.bz2 \
 		font-arial-cp1250.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mplayerhq.hu/
 COMMENT=	Fonts for mplayer and gmplayer
 

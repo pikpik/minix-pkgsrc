@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2006/03/02 08:40:20 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/03 01:29:40 minskim Exp $
 
 DISTNAME=	libfwbuilder-2.0.10
 PKGREVISION=	4
 CATEGORIES=	security net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fwbuilder/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fwbuilder.org/
 COMMENT=	Firewall Builder API
 

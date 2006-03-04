@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/06/17 03:50:43 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:11:32 joerg Exp $
 
 DISTNAME=	FileRunner-2.5.1
 PKGNAME=	${DISTNAME:S/FileRunner/filerunner/}
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	http://www.cd.chalmers.se/~hch/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cd.chalmers.se/~hch/filerunner.html
 COMMENT=	Filemanager with FTP capabilities. Uses Tcl/Tk
 

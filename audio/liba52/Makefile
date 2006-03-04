@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:44:53 tv Exp $
+# $NetBSD: Makefile,v 1.15 2005/07/29 00:41:51 grant Exp $
 #
 
 DISTNAME=	a52dec-0.7.4
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://liba52.sourceforge.net/files/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://liba52.sourceforge.net/
 COMMENT=	Free ATSC A/52 stream decoder library
 

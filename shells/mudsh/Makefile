@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/07/16 19:10:40 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/21 18:57:42 jlam Exp $
 #
 
 DISTNAME=	mudsh
@@ -7,7 +7,7 @@ CATEGORIES=	shells
 MASTER_SITES=	http://www.xirium.com/tech/mud-shell/download/
 EXTRACT_SUFX=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xirium.com/tech/mud-shell/index.html
 COMMENT=	M.U.D. game-like shell
 

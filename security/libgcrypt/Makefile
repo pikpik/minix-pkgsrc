@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/10/06 12:20:41 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2006/02/05 23:10:44 joerg Exp $
 
 DISTNAME=	libgcrypt-1.2.2
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/libgcrypt/ \
 		http://gd.tuwien.ac.at/privacy/gnupg/libgcrypt/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/directory/security/libgcrypt.html
 COMMENT=	GNU cryptographic library
 

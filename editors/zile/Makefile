@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2005/08/11 15:33:08 adam Exp $
+# $NetBSD: Makefile,v 1.18 2005/11/07 20:27:40 tv Exp $
 
 DISTNAME=	zile-2.2.4
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zile/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://zile.sourceforge.net/
 COMMENT=	Emacs-like text editor
 

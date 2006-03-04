@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/09/16 14:46:42 tv Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/23 03:50:23 grant Exp $
 #
 
 DISTNAME=	memcached-1.1.12
 CATEGORIES=	devel
 MASTER_SITES=	http://www.danga.com/memcached/dist/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.danga.com/memcached/
 COMMENT=	High-performance distributed memory object caching system
 

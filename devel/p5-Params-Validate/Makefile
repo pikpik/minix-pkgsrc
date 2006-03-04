@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/01/23 21:39:34 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/01/29 17:52:49 wiz Exp $
 
 DISTNAME=	Params-Validate-0.80
 PKGNAME=	p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=	p5pva
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Attribute/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Params-Validate/
 COMMENT=	Validate method/function parameters
 

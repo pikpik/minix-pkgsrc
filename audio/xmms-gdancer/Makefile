@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/01 18:02:39 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:18 joerg Exp $
 #
 
 DISTNAME=	gdancer-0.4.3
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://figz.com/gdancer/files/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://figz.com/gdancer/
 COMMENT=	XMMS plugin to animate characters to the beat of the music
 

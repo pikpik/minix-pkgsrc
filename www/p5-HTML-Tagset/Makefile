@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/08/06 06:19:39 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/11/23 22:16:36 wiz Exp $
 #
 
 DISTNAME=		HTML-Tagset-3.10
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5htg
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=HTML/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/HTML-Tagset/
 COMMENT=		Perl5 module of data tables useful in parsing HTML
 

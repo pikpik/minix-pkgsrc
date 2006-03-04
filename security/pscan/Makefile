@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/03/24 21:13:00 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:32 jlam Exp $
 
 DISTNAME=	pscan
 PKGNAME=	pscan-1.3
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.striker.ottawa.on.ca/~aland/pscan/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.striker.ottawa.on.ca/~aland/pscan/
 COMMENT=	Security C code scanner for misuse of format strings
 

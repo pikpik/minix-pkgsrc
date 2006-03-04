@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.26 2006/01/03 19:28:40 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:11:02 joerg Exp $
 
 DISTNAME=	glimpse-4.18.0
 PKGREVISION=	1
 CATEGORIES=	textproc databases
 MASTER_SITES=   http://webglimpse.net/trial/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://webglimpse.net/
 COMMENT=	Text search engine
 

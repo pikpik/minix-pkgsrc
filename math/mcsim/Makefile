@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2004/01/20 12:20:05 agc Exp $
+# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:20 jlam Exp $
 
 DISTNAME=	mcsim-4.2.0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_GNU:=mcsim/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Monte Carlo Simulation software
 
 USE_MAKEINFO=	YES

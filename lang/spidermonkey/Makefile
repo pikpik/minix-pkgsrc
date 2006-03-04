@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:09:51 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/26 20:36:58 joerg Exp $
 #
 
 DISTNAME=	js-1.5
@@ -7,7 +7,7 @@ PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://ftp.mozilla.org/pub/mozilla.org/js/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mozilla.org/js/spidermonkey/
 COMMENT=	Standalone JavaScript implementation in C
 

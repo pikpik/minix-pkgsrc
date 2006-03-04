@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2003/09/22 09:57:58 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:22 jlam Exp $
 
 DISTNAME=	ttyrec-1.0.4
 CATEGORIES=	misc
 MASTER_SITES=	http://namazu.org/~satoru/ttyrec/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://namazu.org/~satoru/ttyrec/
 COMMENT=	ttyrec is a tty recorder
 

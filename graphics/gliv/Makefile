@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/15 17:49:32 drochner Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/22 21:54:16 wiz Exp $
 
 DISTNAME=	gliv-1.9.4
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://guichaz.free.fr/gliv/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://guichaz.free.fr/gliv/
 COMMENT=	OpenGL image viewer
 

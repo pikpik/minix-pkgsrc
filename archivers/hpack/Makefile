@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2005/10/23 19:14:43 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2005/12/29 06:21:30 jlam Exp $
 
 DISTNAME=       hpack79src
 PKGNAME=        hpack-0.79
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=   ftp://ftp.franken.de/pub/crypt/misc/
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 COMMENT=	Multi-System Archiver with open keys PGP-based security
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

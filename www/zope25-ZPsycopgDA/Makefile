@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/11/16 15:33:26 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:30 joerg Exp $
 #
 
 DISTNAME=	psycopg-1.1.21
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://initd.org/pub/software/psycopg/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://initd.org/software/psycopg
 COMMENT=	PostgreSQL database adapter for Zope
 

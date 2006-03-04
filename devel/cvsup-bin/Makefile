@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/04/23 18:07:06 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:45 jlam Exp $
 
 DISTNAME=	cvsup-static-16.1.h
 PKGNAME=	${DISTNAME:C/static/bin/}
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://motoyuki.bsdclub.org/data/NetBSD/CVSup/i386/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~jdp/
 COMMENT=	cvsup daemon and client
 

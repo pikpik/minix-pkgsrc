@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2005/06/16 06:57:43 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:29 joerg Exp $
 
 DISTNAME=	macfork-1.0
 PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	http://www.cs.cmu.edu/~ajw/public/dist/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.cmu.edu/afs/cs/user/ajw/www/software/
 COMMENT=	Tool for extracting data from Macintosh resource forks
 

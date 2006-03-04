@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:56:10 grant Exp $
+# $NetBSD: Makefile,v 1.8 2004/01/20 12:28:00 agc Exp $
 
 DISTNAME=	CMF-1.3.1
 PKGREVISION=	1
@@ -6,7 +6,7 @@ PKGNAME=	zope25-CMF-1.3.1
 CATEGORIES=	www
 MASTER_SITES=	http://cmf.zope.org/download/CMF-1.3.1/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cmf.zope.org/
 COMMENT=	Content Management Framework for Zope
 

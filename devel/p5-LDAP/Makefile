@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/06 06:19:12 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:49 joerg Exp $
 #
 
 DISTNAME=	perldap-1.2.2
@@ -9,7 +9,7 @@ CATEGORIES=	devel perl5 databases
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/directory/perldap/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mozilla.org/directory/perldap.html
 COMMENT=	Perl5 module to build LDAP clients with perl
 

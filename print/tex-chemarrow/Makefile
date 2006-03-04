@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/01/23 18:37:18 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:10:40 joerg Exp $
 #
 
 DISTNAME=	chemarrow
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=macros/latex/contrib/}
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tug.ctan.org/tex-archive/help/Catalogue/entries/chemarrow.html
 COMMENT=	New arrow heads for chemical reaction schemes
 

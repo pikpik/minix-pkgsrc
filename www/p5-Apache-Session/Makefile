@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/08/06 06:19:36 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/11/23 22:20:24 wiz Exp $
 #
 
 DISTNAME=		Apache-Session-1.80
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5ase
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Apache/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Apache-Session/
 COMMENT=		Perl5 module to provide persistent storage
 

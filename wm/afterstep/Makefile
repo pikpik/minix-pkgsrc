@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/09/22 01:24:39 minskim Exp $
+# $NetBSD: Makefile,v 1.33 2006/02/05 23:11:12 joerg Exp $
 
 DISTNAME=	AfterStep-2.1.2
 PKGNAME=	${DISTNAME:S/AfterStep/afterstep/}
@@ -7,7 +7,7 @@ CATEGORIES=	wm
 MASTER_SITES=	ftp://ftp.afterstep.org/stable/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.afterstep.org/
 COMMENT=	Window manager based on the look and feel of the NeXTStep interface
 

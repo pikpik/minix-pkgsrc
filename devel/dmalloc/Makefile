@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:45:20 tv Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/02 19:35:11 drochner Exp $
 
 DISTNAME=		dmalloc-5.4.2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dmalloc/}
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.dmalloc.com/
 COMMENT=		Run-time configurable debugging malloc library
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2005/12/05 20:50:58 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/05 23:10:47 joerg Exp $
 
 DISTNAME=	zebedee-2.5.3
 PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zebedee/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.winton.org.uk/zebedee/
 COMMENT=	Simple tunneling program for TCP or UDP with encryption
 

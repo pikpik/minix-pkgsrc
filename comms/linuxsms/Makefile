@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:07 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/12/05 20:49:55 rillig Exp $
 #
 
 DISTNAME=	linuxsms-0.65
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=linuxsms/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linuxsms.sourceforge.net/
 COMMENT=	Perl script to send short messages to GSM phones
 

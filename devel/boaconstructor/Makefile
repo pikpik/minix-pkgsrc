@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/01/24 07:32:01 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:08:39 joerg Exp $
 #
 
 VERSION=		0.4.4
@@ -8,7 +8,7 @@ CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=boa-constructor/}
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://boa-constructor.sourceforge.net/
 COMMENT=		Python IDE
 

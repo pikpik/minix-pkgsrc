@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2005/08/10 18:36:01 gdt Exp $
+# $NetBSD: Makefile,v 1.61 2006/02/05 23:09:41 joerg Exp $
 
 DISTNAME=	xv-3.10a
 PKGREVISION=	11
@@ -11,7 +11,7 @@ PATCH_SITES=	${MASTER_SITE_SOURCEFORGE:=png-mng/}
 PATCH_DIST_CAT=		${BZCAT} $$patchfile | ${TAR} -Oxf - "*-patch-*"
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.trilon.com/xv/
 # and...	http://www.sonic.net/~roelofs/greg_xv.html
 COMMENT=	X11 program that displays images of various formats

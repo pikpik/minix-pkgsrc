@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:22:22 agc Exp $
+# $NetBSD: Makefile,v 1.7 2005/11/01 18:38:19 tv Exp $
 
 DISTNAME=	tcpdmerge-1.0
 CATEGORIES=	net
 MASTER_SITES=	http://phantom.nemoto.ecei.tohoku.ac.jp/~akiraka/tcpdmerge/
 DISTFILES=	tcpdmerge.c 00README.TXT
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://phantom.nemoto.ecei.tohoku.ac.jp/~akiraka/tcpdmerge/
 COMMENT=	Merge two tcpdump output files
 

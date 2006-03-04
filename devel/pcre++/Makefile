@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/08/03 17:44:17 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/03 17:45:24 wiz Exp $
 #
 
 DISTNAME=		pcre++-0.9.5
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.daemon.de/scip/Apps/pcre++/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		ftp://ftp.daemon.de/scip/Apps/pcre++/
 COMMENT=		Wrapper class around the pcre library
 

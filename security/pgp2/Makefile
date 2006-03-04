@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.45 2005/10/08 22:42:08 rillig Exp $
+# $NetBSD: Makefile,v 1.46 2005/12/01 20:17:48 wiz Exp $
 
 DISTNAME=	pgp263is
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/pgp/2.x/src/ \
 		ftp://ftp.kiarchive.ru/pub/unix/crypto/pgp/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pgpi.com/
 COMMENT=	Public-key encryption and digital signature utility (v2)
 

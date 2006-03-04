@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/01/31 11:44:53 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:11:49 joerg Exp $
 
 DISTNAME=	xterm-208
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://invisible-island.net/xterm/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dickey.his.com/xterm/xterm.html
 COMMENT=	Latest terminal emulator for the X Window System
 

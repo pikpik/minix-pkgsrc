@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/02/03 04:43:47 taca Exp $
+# $NetBSD: Makefile,v 1.28 2006/02/05 23:08:37 joerg Exp $
 
 DISTNAME=		ruby-postgres-${VERSION}
 PKGNAME=		${RUBY_PKGPREFIX}-postgresql-${VERSION}
@@ -8,7 +8,7 @@ MASTER_SITES=		http://raa.ruby-lang.org/cache/postgres/ \
 			http://ruby.scripting.ca/postgres/archive/ \
 			http://www.postgresql.jp/interfaces/ruby/archive/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ruby.scripting.ca/postgres/
 COMMENT=		Ruby extension for postgresql
 

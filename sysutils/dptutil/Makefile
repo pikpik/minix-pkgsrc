@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/05/07 11:54:35 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:33 jlam Exp $
 
 DISTNAME=		raidmgt-3.31
 PKGNAME=		dptutil-3.31
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.interlude.eu.org/~ad/raidmgt/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://opensource.adaptec.com/
 COMMENT=		DPT/Adaptec Storage Management software (dptutil)
 

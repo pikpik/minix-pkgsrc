@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/11 09:40:39 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:00 joerg Exp $
 #
 
 DISTNAME=		aranym-0.8.9beta
@@ -6,7 +6,7 @@ PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=aranym/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://aranym.sourceforge.net/
 COMMENT=		Atari Running on Any Machine
 

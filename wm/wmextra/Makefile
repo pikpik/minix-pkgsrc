@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/01/24 07:32:41 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:16 joerg Exp $
 #
 
 DISTNAME=		WindowMaker-extra-0.1
@@ -7,7 +7,7 @@ PKGREVISION=		3
 CATEGORIES=		x11 wm windowmaker
 MASTER_SITES=		ftp://ftp.windowmaker.org/pub/source/release/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.windowmaker.org/
 COMMENT=		Extras for Window Maker window manager
 

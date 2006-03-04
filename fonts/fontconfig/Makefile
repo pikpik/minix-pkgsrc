@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2006/01/24 07:32:07 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2006/02/05 23:09:09 joerg Exp $
 #
 
 DISTNAME=	fontconfig-2.3.2
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.fontconfig.org/release/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fontconfig.org/
 COMMENT=	Library for configuring and customizing font access
 

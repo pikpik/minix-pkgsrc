@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/01/24 07:32:09 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:09:16 joerg Exp $
 #
 
 DISTNAME=	gtetrinet-0.7.7
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtetrinet/0.7/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gtetrinet.sourceforge.net/
 COMMENT=	Multiplayer tetris game for GNOME2
 

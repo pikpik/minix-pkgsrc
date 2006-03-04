@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/05/22 20:08:10 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2006/02/05 23:09:45 joerg Exp $
 #
 
 DISTNAME=	jikes-1.22
@@ -7,7 +7,7 @@ CATEGORIES=	lang java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jikes/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jikes.sourceforge.net/
 COMMENT=	Java source to byte-code compiler
 

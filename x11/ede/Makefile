@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/24 07:32:51 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:11:32 joerg Exp $
 #
 
 DISTNAME=	ede-1.0.4
@@ -7,7 +7,7 @@ CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ede/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ede.sourceforge.net/
 COMMENT=	Equinox Desktop Environment
 

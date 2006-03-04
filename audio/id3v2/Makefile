@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2006/01/20 16:15:52 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2006/02/05 23:08:10 joerg Exp $
 
 DISTNAME=	id3v2-0.1.11
 PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=id3v2/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://id3v2.sourceforge.net/
 COMMENT=	Command line editor for id3v2 tags
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/03/28 14:57:36 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/04/11 21:45:18 tv Exp $
 #
 
 DISTNAME=	byacc-20040328
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://invisible-island.net/byacc/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dickey.his.com/byacc/byacc.html
 COMMENT=	Berkeley Yacc
 

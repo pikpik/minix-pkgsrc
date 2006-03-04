@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/02/05 23:10:04 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/18 13:47:55 rillig Exp $
 #
 
 DISTNAME=	yacas-1.0.59
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://yacas.sourceforge.net/backups/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://yacas.sourceforge.net/
 COMMENT=	Yet Another Computer Algebra System
 

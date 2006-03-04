@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/10/06 14:23:39 salo Exp $
+# $NetBSD: Makefile,v 1.25 2006/02/09 18:17:52 rillig Exp $
 
 DISTNAME=	arc521e.pl8
 PKGNAME=	arc-5.21e
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Create & extract files from DOS .ARC files
 
 RESTRICTED=	Do not modify. Do not charge for redistribution.

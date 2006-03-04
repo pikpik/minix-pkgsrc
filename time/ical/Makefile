@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2005/12/05 23:55:21 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2006/02/05 23:11:10 joerg Exp $
 
 DISTNAME=	ical-2.3.1
 PKGREVISION=	2
 CATEGORIES=	time
 MASTER_SITES=	http://www.annexia.org/_file/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.annexia.org/freeware/ical
 COMMENT=	Calendar application
 

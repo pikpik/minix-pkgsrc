@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2005/12/05 20:51:19 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2006/02/05 23:11:44 joerg Exp $
 
 DISTNAME=	tkinfo-2.8
 PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://math-www.uni-paderborn.de/~axel/tkinfo/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://math-www.uni-paderborn.de/~axel/tkinfo/
 COMMENT=	Tk script to read and display GNU "info" files
 

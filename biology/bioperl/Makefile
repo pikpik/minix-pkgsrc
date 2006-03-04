@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/13 18:01:19 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:04 jlam Exp $
 #
 
 DISTNAME=		bioperl-0.7.0
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		biology
 MASTER_SITES=		http://bioperl.org/Core/Latest/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://bioperl.org/
 COMMENT=		Perl tools for computational molecular biology
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2006/01/24 07:31:57 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:08:24 joerg Exp $
 
 DISTNAME=	gaim-encryption-2.38
 PKGREVISION=	2
 CATEGORIES=	chat security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gaim-encryption/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gaim-encryption.sourceforge.net/
 COMMENT=	Plugin for gaim to add TLS/SSL via nss/nspr
 

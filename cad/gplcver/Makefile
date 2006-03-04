@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/10 16:37:51 drochner Exp $
 #
 
 DISTNAME=		gplcver-2.11a.src
@@ -7,7 +7,7 @@ CATEGORIES=		cad
 MASTER_SITES=		http://www.pragmatic-c.com/gpl-cver/downloads/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pragmatic-c.com/gpl-cver/
 COMMENT=		Verilog simulator
 

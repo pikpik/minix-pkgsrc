@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2005/12/05 23:55:12 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:07 joerg Exp $
 
 DISTNAME=	bottlerocket-0.04c
 PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://mlug.missouri.edu/~tymm/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mlug.missouri.edu/~tymm/
 COMMENT=	Home Automation Software for the X10 FireCracker kit
 

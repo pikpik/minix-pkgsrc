@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/11/19 14:28:50 rillig Exp $
+# $NetBSD: Makefile,v 1.39 2005/12/05 20:50:45 rillig Exp $
 
 DISTNAME=		ettercap-0.6.b
 PKGREVISION=		3
@@ -6,7 +6,7 @@ CATEGORIES=		security net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ettercap/} \
 			http://ettercap.sourceforge.net/download/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ettercap.sourceforge.net/
 COMMENT=		Multipurpose sniffer/interceptor/logger for switched LAN
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2005/06/17 03:50:19 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2005/11/04 18:53:28 rillig Exp $
 
 DISTNAME=	aribas-1.53
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.mathematik.uni-muenchen.de/pub/forster/aribas/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mathematik.uni-muenchen.de/~forster/sw/aribas.html
 COMMENT=	Multi-precision floating point and big integer arithmetic calculator
 

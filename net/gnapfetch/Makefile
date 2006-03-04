@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2005/06/17 03:50:25 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/07/16 01:19:15 jlam Exp $
 
 DISTNAME=	gnapfetch-0.3
 CATEGORIES=	net
 MASTER_SITES=	http://entropy.atlantic.net/gnapfetch/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://entropy.atlantic.net/gnapfetch/
 COMMENT=	Update/maintain opennap servers for gnapster/TekNap
 

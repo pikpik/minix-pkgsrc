@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/04/11 21:44:50 tv Exp $
+# $NetBSD: Makefile,v 1.22 2005/05/25 22:53:26 rillig Exp $
 
 DISTNAME=       unarj-2.65
 PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=     tech-pkg@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.arjsoftware.com/
 COMMENT=	Allows files to be extracted from ARJ archives
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/05/22 20:07:54 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:08:52 joerg Exp $
 
 DISTNAME=	re2c-0.9.3
 PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=re2c/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://re2c.org/
 COMMENT=	Deterministic Finite State Automaton generator
 

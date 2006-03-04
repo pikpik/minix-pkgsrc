@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/12/09 14:17:44 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:08:55 joerg Exp $
 
 DISTNAME=	fe-1.6
 PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.moria.de/~michael/fe/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.moria.de/~michael/fe/
 COMMENT=	Folding editor
 

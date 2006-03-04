@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/12/07 15:05:36 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:17 joerg Exp $
 
 DISTNAME=	Blursk-1.3
 PKGNAME=	xmms-blursk-1.3
@@ -7,7 +7,7 @@ CATEGORIES=	xmms audio
 MASTER_SITES=	http://www.cs.pdx.edu/~kirkenda/blursk/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} blursk-presets
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	${MASTER_SITES}
 COMMENT=	Visualization plugin for XMMS inspired by "Blur Scope"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/06/17 03:50:34 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2005/09/28 20:52:26 rillig Exp $
 #
 
 DISTNAME=		fastfs.c
@@ -7,7 +7,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		http://www.squirrel.com/squirrel/
 EXTRACT_SUFX=		# empty
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Turn on/off delayed IO on a file system
 
 ONLY_FOR_PLATFORM=	SunOS-*-*

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/28 04:25:29 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:28 joerg Exp $
 
 DISTNAME=	artist-1.2.6
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lysator.liu.se/~tab/artist/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lysator.liu.se/~tab/artist/
 COMMENT=	Elisp drawing package with mouse and keyboard support
 

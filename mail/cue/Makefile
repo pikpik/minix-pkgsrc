@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.48 2005/10/05 13:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2005/12/05 23:55:10 rillig Exp $
 
 DISTNAME=	cue-snap-20050131
 PKGNAME=	cue-20050131
 CATEGORIES=	mail
 MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/cue/snap/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	mh-e like mail user agent
 
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/12/05 23:55:03 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2005/12/29 06:21:34 jlam Exp $
 #
 
 DISTNAME=	conserver-7.2.7
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.conserver.com/conserver/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.conserver.com/
 COMMENT=	Application that allows multiple users to watch serial consoles
 

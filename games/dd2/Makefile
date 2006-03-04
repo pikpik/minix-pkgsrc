@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/11 09:40:41 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:14 joerg Exp $
 #
 
 DISTNAME=		dd2-0.2.1
@@ -6,7 +6,7 @@ PKGREVISION=		4
 CATEGORIES=		games
 MASTER_SITES=		http://www.usebox.net/jjm/dd2/releases/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.usebox.net/jjm/dd2/
 COMMENT=		Shoot'em up arcade game for one or two players
 

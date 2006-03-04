@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.76 2004/12/10 02:51:46 dogcow Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/01 18:27:37 agc Exp $
 
 DISTNAME=	fs-kit-0.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.nobius.org/~dbg/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nobius.org/~dbg/
 COMMENT=	User-level filesystem testing kit
 

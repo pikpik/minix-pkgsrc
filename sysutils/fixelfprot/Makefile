@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2005/09/28 20:52:26 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:51:00 rillig Exp $
 
 DISTNAME=	fixelfprot-20040714
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mail-index.netbsd.org/tech-kern/2004/07/11/0002.html
 COMMENT=	C program to fix ELF protection on .got table for PowerPC
 

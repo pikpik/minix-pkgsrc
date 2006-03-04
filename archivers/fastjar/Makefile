@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/01/30 23:18:38 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:44:48 tv Exp $
 #
 
 DISTNAME=	fastjar-0.93
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fastjar/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fastjar.sourceforge.net/
 COMMENT=	C language version of the 'jar' archiver normally used by Java
 

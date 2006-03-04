@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2004/04/24 22:46:10 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/09/28 20:52:23 rillig Exp $
 
 DISTNAME=		vmspec.2nded.html
 PKGNAME=		java-vm-spec-2.0
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.javasoft.com/docs/specs/
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://java.sun.com/docs/books/vmspec/index.html
 COMMENT=		The Java(TM) Virtual Machine Specification (HTML)
 

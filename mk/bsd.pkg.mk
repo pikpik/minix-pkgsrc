@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1799 2006/02/18 15:37:22 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1800 2006/03/02 19:15:37 joerg Exp $
 #
 # This file is in the public domain.
 #
@@ -109,7 +109,7 @@ INSTALL_DIRS?=		${BUILD_DIRS}
 INSTALL_MAKE_FLAGS?=	${MAKE_FLAGS}
 INSTALL_TARGET?=	install
 INTERACTIVE_STAGE?=	none
-MAINTAINER?=		tech-pkg@NetBSD.org
+MAINTAINER?=		pkgsrc-users@NetBSD.org
 MAKE_FLAGS?=		# empty
 MAKEFILE?=		Makefile
 PATCH_DIGEST_ALGORITHM?=SHA1

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:18:15 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:54 wiz Exp $
 
 DISTNAME=	fbm-1.2
 CATEGORIES=	graphics converters
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/graphics/convert/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Fuzzy Pixmap Manipulation utilities
 
 WRKSRC=		${WRKDIR}

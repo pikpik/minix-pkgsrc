@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2005/09/20 04:23:48 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2005/12/29 06:22:12 jlam Exp $
 
 DISTNAME=		esh-0.8
 PKGREVISION=		1
 CATEGORIES=		shells
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Unix shell with Lisp-like syntax
 
 INFO_FILES=		esh.info

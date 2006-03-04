@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/13 18:01:48 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/08/06 06:19:40 jlam Exp $
 #
 
 DISTNAME=	WWW-Amazon-Wishlist-0.65
@@ -8,7 +8,7 @@ SVR4_PKGNAME=	p5waw
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=WWW/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cpan.org/modules/by-module/WWW/WWW-Amazon-Wishlist-0.65.readme
 COMMENT=	Perl5 module to get details from your Amazon wishlist
 

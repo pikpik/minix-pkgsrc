@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:02 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/02 19:51:34 wiz Exp $
 #
 
 DISTNAME=		simulavr-0.1.2.1
@@ -7,7 +7,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		http://freesoftware.fsf.org/download/simulavr/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nongnu.org/simulavr/
 COMMENT=		Simulator for Atmel AVR microcontrollers
 

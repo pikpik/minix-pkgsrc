@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.33 2006/02/05 23:10:39 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2006/03/02 19:04:55 drochner Exp $
 
 DISTNAME=	scribus-1.2.4.1
 CATEGORIES=	print
 MASTER_SITES=	http://www.scribus.org.uk/downloads/1.2.4.1/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.scribus.net/
 COMMENT=	Publishing layout with graphical interface
 

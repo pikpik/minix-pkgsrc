@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:58:00 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:26 rillig Exp $
 #
 
 DISTNAME=		tcl8.4.6-src
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tcl/}
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.tcl.tk/
 COMMENT=		TCL library for embedding
 

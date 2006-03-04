@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2004/01/20 12:26:16 agc Exp $
+# $NetBSD: Makefile,v 1.23 2005/03/24 21:13:01 wiz Exp $
 
 DISTNAME=	rtty-3.2
 PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.vix.com/pub/vixie/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Multiuser "tip"/"cu" replacement with logging
 
 WRKSRC=		${WRKDIR}

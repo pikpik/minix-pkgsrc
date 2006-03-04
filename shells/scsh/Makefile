@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.32 2005/09/20 04:23:49 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2005/12/29 06:22:13 jlam Exp $
 
 DISTNAME=		scsh-0.6.6
 PKGREVISION=		1
 CATEGORIES=		shells lang
 MASTER_SITES=		ftp://ftp.scsh.net/pub/scsh/0.6/
 
-MAINTAINER= 		tech-pkg@NetBSD.org
+MAINTAINER= 		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.scsh.net/
 COMMENT=		Unix shell embedded into Scheme, with access to all Posix calls
 

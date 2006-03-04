@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2005/03/24 21:13:00 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:30 jlam Exp $
 
 DISTNAME=	poster
 PKGNAME=	poster-1.0
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.ics.ele.tue.nl/pub/users/jos/poster/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://printing.kde.org/downloads/
 COMMENT=	Resize a ps image to print on larger media and/or multiple sheets
 

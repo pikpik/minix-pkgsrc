@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/24 17:11:45 agc Exp $
+# $NetBSD: Makefile,v 1.2 2005/06/04 00:35:28 kristerw Exp $
 
 DISTNAME=	hairyeyeball-1.1
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	security sysutils
 MASTER_SITES=	http://www.blafasel.org/~floh/he/releases/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://blafasel.org/~floh/he/
 COMMENT=	Systrace policy examples
 

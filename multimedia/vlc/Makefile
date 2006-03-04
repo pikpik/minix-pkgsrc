@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/01/24 07:32:28 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:10:18 joerg Exp $
 #
 
 DISTNAME=		vlc-${VLC_VER}
@@ -7,7 +7,7 @@ CATEGORIES=		multimedia
 MASTER_SITES=		http://download.videolan.org/pub/videolan/vlc/${VLC_VER}/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
 COMMENT=		VideoLAN Client
 

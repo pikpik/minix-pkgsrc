@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 23:55:05 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/29 06:21:36 jlam Exp $
 
 DISTNAME=	yasql-1.81
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yasql/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://yasql.sourceforge.net/
 COMMENT=	Yet another SQLPlus replacement for Oracle
 

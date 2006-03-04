@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/10 16:06:46 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/10 17:05:03 drochner Exp $
 #
 
 DISTNAME=	myhdl-0.5
@@ -6,7 +6,7 @@ PKGNAME=	MyHDL-iverilog-0.5
 CATEGORIES=	cad python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=myhdl/}
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jandecaluwe.com/Tools/MyHDL/Overview.html
 COMMENT=	Icarus Verilog cosimulation support for py-MyHDL
 

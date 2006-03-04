@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/01/15 22:27:27 heinz Exp $
+# $NetBSD: Makefile,v 1.34 2006/02/05 23:10:47 joerg Exp $
 
 DISTNAME=		vlnx440e
 PKGNAME=		uvscan-4.40
@@ -7,7 +7,7 @@ CATEGORIES=		security
 MASTER_SITES=		http://download.nai.com/products/evaluation/virusscan/english/cmdline/linux/v4.40/
 EXTRACT_SUFX=		.tar.Z
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mcafeesecurity.com/us/products/mcafee/antivirus/desktop/vs_commandline.htm
 COMMENT=		Evaluation version of a DOS/Windows file virus scanner
 

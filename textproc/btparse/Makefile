@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:23 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2005/09/27 12:24:06 tonio Exp $
 #
 
 DISTNAME=	btparse-0.34
 CATEGORIES=	textproc
 MASTER_SITES=	http://starship.python.net/~gward/btOOL/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://starship.python.net/~gward/btOOL/
 COMMENT=	BibTeX parsing library
 

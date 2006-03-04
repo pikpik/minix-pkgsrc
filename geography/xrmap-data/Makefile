@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:56 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:09:26 joerg Exp $
 #
 
 DISTNAME=		CIA_WDB2.jpd
@@ -8,7 +8,7 @@ CATEGORIES=		geography
 MASTER_SITES=		http://frmas.free.fr/files/
 EXTRACT_SUFX=		.gz
 
-MAINTAINER=		tech-pkg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://frmas.free.fr/li_1.htm
 COMMENT=		Vector data for xrmap
 

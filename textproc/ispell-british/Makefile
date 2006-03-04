@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/07/07 12:44:44 markd Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:51:03 rillig Exp $
 #
 
 DISTNAME=	ispell-3.3.02
@@ -6,7 +6,7 @@ PKGNAME=	ispell-${DICT_LANG}-3.3.02
 CATEGORIES=	textproc
 MASTER_SITES=	http://fmg-www.cs.ucla.edu/geoff/tars/
 
-MAINTAINER=	tech-pkg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ficus-www.cs.ucla.edu/geoff/ispell.html
 COMMENT=	British dictionary for interactive spelling checker
 
