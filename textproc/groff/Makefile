@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/12/31 16:28:40 ben Exp $
+# $NetBSD: Makefile,v 1.34 2006/02/05 23:11:02 joerg Exp $
 #
 
 DISTNAME=	groff-1.19.2
@@ -23,6 +23,12 @@ INFO_FILES=	groff
 .include "options.mk"
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+PLIST_SUBST+=	GNU_PREFIX="g"
+.else
+PLIST_SUBST+=	GNU_PREFIX=""
+.endif
 
 .if defined(PAPERSIZE)
 CONFIGURE_ENV+=	PAGE=${PAPERSIZE:Q}
