@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.337 2006/02/11 14:58:23 rxg Exp $
+# $NetBSD: Makefile,v 1.338 2006/02/11 16:07:58 rxg Exp $
 #
 
 COMMENT=	System utilities
@@ -192,6 +192,7 @@ SUBDIR+=	sredird
 SUBDIR+=	sshsh
 SUBDIR+=	storage-manager
 SUBDIR+=	stow
+SUBDIR+=	strace
 SUBDIR+=	su2
 SUBDIR+=	sux
 SUBDIR+=	swapd
