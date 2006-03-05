@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/05 20:50:26 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:47 joerg Exp $
 
 DISTNAME=	pnet-0.6.6
 PKGREVISION=	2
@@ -13,9 +13,8 @@ BUILD_DEPENDS+=	treecc>=0.2.6:../../devel/treecc
 
 CONFLICTS=	mono-[0-9]*
 
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake makeinfo
 USE_LIBTOOL=	yes
-USE_MAKEINFO=	yes
 GNU_CONFIGURE=	yes
 
 INFO_FILES=	pnettools.info

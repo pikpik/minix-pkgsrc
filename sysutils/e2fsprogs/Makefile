@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/16 12:25:34 hubertf Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:30:40 jlam Exp $
 #
 
 DISTNAME=	e2fsprogs-1.32
@@ -13,7 +13,7 @@ HOMEPAGE=	http://e2fsprogs.sourceforge.net/
 COMMENT=	Second extended file system (ext2fs) management programs
 
 GNU_CONFIGURE=	yes
-USE_MAKEINFO=	YES
+USE_TOOLS+=	makeinfo
 INFO_FILES=	libext2fs.info
 
 .include "../../mk/bsd.prefs.mk"

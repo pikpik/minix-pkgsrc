@@ -1,4 +1,4 @@
-# $NetBSD: tools.DragonFly.mk,v 1.21 2005/11/08 03:36:13 tv Exp $
+# $NetBSD: tools.DragonFly.mk,v 1.22 2006/02/15 20:02:30 reed Exp $
 #
 # System-supplied tools for the DragonFly operating system.
 
@@ -42,6 +42,9 @@ TOOLS_PLATFORM.ln?=		/bin/ln
 TOOLS_PLATFORM.ls?=		/bin/ls
 TOOLS_PLATFORM.m4?=		/usr/bin/m4
 TOOLS_PLATFORM.mail?=		/usr/bin/mail
+.if exists(/usr/bin/makeinfo)
+TOOLS_PLATFORM.makeinfo?=	/usr/bin/makeinfo
+.endif
 TOOLS_PLATFORM.mkdir?=		/bin/mkdir -p
 TOOLS_PLATFORM.mktemp?=		/usr/bin/mktemp
 TOOLS_PLATFORM.mtree?=		/usr/sbin/mtree

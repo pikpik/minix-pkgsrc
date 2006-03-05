@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/01/07 23:59:46 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2006/03/04 21:29:12 jlam Exp $
 
 DISTNAME=	binutils-2.16.1
 CATEGORIES=	devel
@@ -15,7 +15,7 @@ NOT_FOR_PLATFORM=	Darwin-*-* Interix-*-*
 USE_PKGLOCALEDIR=	yes
 REPLACE_LOCALEDIR_PATTERNS+=	Make-in
 
-USE_MAKEINFO=		yes
+USE_TOOLS+=		makeinfo
 TEXINFO_REQD=		4.0
 MAKEFLAGS+=		TEXINFO_LOCALE=no
 

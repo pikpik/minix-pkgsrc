@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2005/12/30 04:00:01 garbled Exp $
+# $NetBSD: Makefile,v 1.58 2006/02/05 23:10:37 joerg Exp $
 
 DISTNAME=	gv-3.6.1
 PKGREVISION=	1
@@ -10,9 +10,8 @@ HOMEPAGE=	http://www.gnu.org/software/gv/
 COMMENT=	PostScript and PDF previewer
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake gs:run
+USE_TOOLS+=		gmake gs:run makeinfo
 
-USE_MAKEINFO=		yes
 TEXINFO_REQD=		4.2
 INFO_FILES=		gv.info
 

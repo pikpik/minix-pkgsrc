@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/10/23 21:17:07 rillig Exp $
+# $NetBSD: Makefile,v 1.37 2006/02/05 23:10:55 joerg Exp $
 
 DISTNAME=	mtools-3.9.10
 PKGREVISION=	1
@@ -13,8 +13,7 @@ COMMENT=	FAT (MS-DOS, Atari) disk access tools
 NOT_FOR_PLATFORM = *-*-alpha *-*-sparc64	# LP64 problem
 
 GNU_CONFIGURE=		YES
-USE_TOOLS+=		gmake
-USE_MAKEINFO=		YES
+USE_TOOLS+=		gmake makeinfo
 INFO_FILES=		mtools.info
 
 .include "../../mk/bsd.prefs.mk"

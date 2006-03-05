@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.use.mk,v 1.26 2006/01/12 18:39:13 jlam Exp $
+#	$NetBSD: bsd.pkg.use.mk,v 1.27 2006/01/12 19:05:06 joerg Exp $
 #
 # Turn USE_* macros into proper depedency logic.  Included near the top of
 # bsd.pkg.mk, after bsd.prefs.mk.
@@ -103,12 +103,11 @@ MAKE_ENV+=		LIBTOOL="${LIBTOOL} ${LIBTOOL_FLAGS}"
 LIBTOOL_OVERRIDE?=	libtool */libtool */*/libtool
 .endif
 
-### USE_MAKEINFO, INFO_FILES
+### INFO_FILES
 
 INFO_FILES?=		# empty
-USE_MAKEINFO?=		no
 
-.if !empty(INFO_FILES) || empty(USE_MAKEINFO:M[nN][oO])
+.if !empty(INFO_FILES)
 .  include "../../mk/texinfo.mk"
 .endif
 

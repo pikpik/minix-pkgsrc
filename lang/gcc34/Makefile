@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/01/04 18:06:17 shannonjr Exp $
+# $NetBSD: Makefile,v 1.31 2006/02/05 23:09:45 joerg Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -107,12 +107,11 @@ PTHREAD_OPTS+=		native
 CONFIGURE_ARGS+=	--disable-threads
 .endif
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake makeinfo
 HAS_CONFIGURE=		YES # no GNU_CONFIGURE!
 CONFIG_SHELL?=		${SH}
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL:Q}
-USE_MAKEINFO=		YES
-PLIST_SRC=	${WRKDIR}/PLIST_DYNAMIC
+PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 .if !empty(BUILD_ADA:M[Yy][Ee][Ss])
 
