@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.140 2005/11/20 13:32:03 rillig Exp $
+# $NetBSD: Makefile,v 1.141 2006/01/24 20:23:19 adam Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -85,6 +85,7 @@ SUBDIR+=	suse91_compat
 SUBDIR+=	suse91_expat
 SUBDIR+=	suse91_fontconfig
 SUBDIR+=	suse91_freetype2
+SUBDIR+=	suse91_gdk-pixbuf
 SUBDIR+=	suse91_glx
 SUBDIR+=	suse91_gtk
 SUBDIR+=	suse91_gtk2
