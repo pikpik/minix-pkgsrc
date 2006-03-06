@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/02/05 23:10:54 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:41 jlam Exp $
 #
 
 DISTNAME=	gtoaster1.0Beta5
@@ -18,6 +18,11 @@ USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-oss --without-esd
 CONFIGURE_ARGS+=	--without-gnome --without-orbit
+
+SUBST_CLASSES+=		paths
+SUBST_FILES.paths=	audio_oss.c
+SUBST_SED.paths+=	-e 's,@DEVOSSAUDIO@,${DEVOSSAUDIO},g'
+SUBST_STAGE.paths=	post-patch
 
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/ossaudio.buildlink3.mk"
