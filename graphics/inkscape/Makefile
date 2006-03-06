@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/02/05 23:09:33 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/06 00:18:17 wiz Exp $
 
 DISTNAME=	inkscape-0.43
 PKGREVISION=	4
@@ -21,6 +21,7 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
+BUILD_USES_MSGFMT=	yes
 
 BUILDLINK_DEPENDS.boehm-gc+=	boehm-gc>=6.4
 
