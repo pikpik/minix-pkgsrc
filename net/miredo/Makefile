@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/07/13 14:22:20 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/28 01:29:39 rpaulo Exp $
 
 DISTNAME=	miredo-0.8.0
 CATEGORIES=	net
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	rpaulo@NetBSD.org
 HOMEPAGE=	http://www.simphalempin.com/dev/miredo/
 COMMENT=	Teredo IPv6 tunneling
+
+NOT_FOR_PLATFORM=	Interix-*-* NetBSD-[0-3]*-*
 
 GNU_CONFIGURE=	yes
 
