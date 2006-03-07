@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- configure.orig	2006-03-07 02:48:54.000000000 +0000
++++ configure
+@@ -29075,6 +29075,9 @@ fi
+         freebsd*)
+                 CPPFLAGS="$CPPFLAGS -D_THREAD_SAFE $PTHREAD_CFLAGS"
+                 ;;
++	dragonfly*)
++		LIBPTHREAD="$LIBPTHREAD -pthread"
++		;;
+         aix*)
+                 CPPFLAGS="$CPPFLAGS -D_THREAD_SAFE"
+                 LIBPTHREAD="$LIBPTHREAD -lc_r"
