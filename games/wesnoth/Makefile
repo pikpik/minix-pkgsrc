@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2005/12/11 09:40:43 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/05 23:09:23 joerg Exp $
 
 DISTNAME=	wesnoth-1.0.2
 PKGREVISION=	2
@@ -28,4 +28,5 @@ BUILDLINK_DEPENDS.SDL_mixer+=	SDL_mixer>=1.2.5nb3
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../net/SDL_net/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
