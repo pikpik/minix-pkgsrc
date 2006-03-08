@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/15 16:41:04 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:30:08 jlam Exp $
 #
 
 DISTNAME=	numarray-1.5.1
@@ -12,6 +12,13 @@ COMMENT=	Array manipulation
 
 PYDISTUTILSPKG=		yes
 PYTHON_VERSIONS_ACCEPTED= 24 23 22
+
+.if exists(/System/Library/Frameworks/vecLib.framework/Headers)
+BUILDLINK_PASSTHRU_DIRS+=	/System/Library/Frameworks/vecLib.framework/Headers
+PLIST_SUBST+=	DOTBLAS=""
+.else
+PLIST_SUBST+=	DOTBLAS="@comment "
+.endif
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
