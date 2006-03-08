@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.125 2006/02/05 23:10:23 joerg Exp $
+# $NetBSD: Makefile,v 1.126 2006/02/27 14:27:49 drochner Exp $
 
 DISTNAME=		ethereal-0.10.14
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		net
 MASTER_SITES=		http://www.ethereal.com/distribution/ \
 			http://ethereal.planetmirror.com/distribution/ \
@@ -42,7 +42,7 @@ PTHREAD_OPTS+=		require
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "Darwin"
+.if !empty(MACHINE_PLATFORM:MDarwin-[567].*-*)
 USE_BUILTIN.libpcap=	no
 .endif
 
