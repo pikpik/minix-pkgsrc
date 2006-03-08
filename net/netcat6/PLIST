@@ -1,4 +1,5 @@
 @comment $NetBSD$
 bin/nc6
+lib/charset.alias
 man/man1/nc6.1
-${PKGLOCALEDIR}/locale/it/LC_MESSAGES/nc6.mo
+${PKGLOCALEDIR}/locale/locale.alias
