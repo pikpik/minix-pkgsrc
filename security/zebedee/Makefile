@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:10:47 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:39 jlam Exp $
 
 DISTNAME=	zebedee-2.5.3
 PKGREVISION=	1
@@ -14,7 +14,13 @@ DEPENDS+=	tcl-[0-9]*:../../lang/tcl
 USE_TOOLS+=		gmake perl
 
 MAKE_ENV+=		PERL5=${PERL5:Q}
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Darwin"
+MAKE_FLAGS+=		OS=macosx
+.else
 MAKE_FLAGS+=		OS=${LOWER_OPSYS:Q}
+.endif
 
 .include "../../mk/pthread.buildlink3.mk"
 
