@@ -1,13 +1,7 @@
 $NetBSD$
 
---- teach-ce.in.orig	1999-03-30 12:56:24.000000000 -0500
+--- teach-ce.in.orig	2006-03-09 15:27:38.000000000 +0100
 +++ teach-ce.in
-@@ -1,4 +1,4 @@
--#! /bin/bash
-+#! /bin/sh
- #
- # @configure_input@
- #
 @@ -34,7 +34,7 @@ esac
  
  export PATH

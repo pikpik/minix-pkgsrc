@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/04/11 21:45:40 tv Exp $
+# $NetBSD: Makefile,v 1.14 2005/05/23 09:17:45 rillig Exp $
 #
 
 .include "Makefile.common"
@@ -6,6 +6,11 @@
 COMMENT+=		, tty version
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+REPLACE_INTERPRETER+=	bash
+_REPLACE.bash.old=	.*/bin/bash
+_REPLACE.bash.new=	${SH:Q}
+_REPLACE_FILES.bash=	teach-ce.in
 
 BUILD_TARGET=		ce
 INSTALL_TARGET=		install man-install
