@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2006/02/07 10:06:53 markd Exp $
+# $NetBSD: Makefile,v 1.105 2006/02/26 11:46:41 markd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGREVISION=	2
@@ -124,7 +124,7 @@ GCC_REQD+=		2.95
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../textproc/xmlcatmgr/catalogs.mk"
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:08:24 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/03/06 00:18:14 wiz Exp $
 
 DISTNAME=	gg2-2.2.8
 PKGREVISION=	4
@@ -33,5 +33,5 @@ CONFIGURE_ARGS+=	--without-update
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/xosd/buildlink3.mk"
 
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

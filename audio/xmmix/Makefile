@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/12 21:36:54 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:08:17 joerg Exp $
 
 DISTNAME=       xmmix-1.2
 PKGREVISION=	4
@@ -19,6 +19,6 @@ pre-configure:
 	done
 
 .include "../../mk/motif.buildlink3.mk"
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

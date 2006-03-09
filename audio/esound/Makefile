@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2005/12/05 23:55:02 rillig Exp $
+# $NetBSD: Makefile,v 1.60 2005/12/29 06:21:30 jlam Exp $
 
 DISTNAME=		esound-0.2.36
 CATEGORIES=		audio
@@ -27,7 +27,7 @@ CONF_FILES=		${EGDIR}/esd.conf ${PKG_SYSCONFDIR}/esd.conf
 # no sound output device, but can support a remote esound server
 CONFIGURE_ARGS+=	--disable-local-sound
 .else
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 MAKE_ENV+=		AM_CPPFLAGS='-DDEV_DSP=\"${DEVOSSAUDIO}\"'
 SUBST_CLASSES+=		oss
 SUBST_STAGE.oss=	post-patch

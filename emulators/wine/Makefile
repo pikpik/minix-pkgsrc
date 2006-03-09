@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.98 2006/02/26 07:48:11 wiz Exp $
+# $NetBSD: Makefile,v 1.99 2006/03/06 13:46:01 adam Exp $
 
 DISTNAME=	wine-0.9.9
 CATEGORIES=	emulators
@@ -53,7 +53,7 @@ post-install:
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

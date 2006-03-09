@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/01/20 07:38:12 adam Exp $
+# $NetBSD: Makefile,v 1.35 2006/02/05 23:09:00 joerg Exp $
 
 DISTNAME=	atari800-2.0.1
 PKGREVISION=	1
@@ -36,5 +36,5 @@ post-install:
 		${WRKSRC}/atari800.cfg ${PREFIX}/share/atari800/
 
 .include "../../graphics/png/buildlink3.mk"
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

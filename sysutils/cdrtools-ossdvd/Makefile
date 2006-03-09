@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/04 12:05:17 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2006/02/05 23:10:49 joerg Exp $
 
 DISTNAME=	cdrtools-2.01.01a05
 PKGNAME=	cdrtools-ossdvd-2.01.1.36
@@ -95,5 +95,5 @@ do-install:
 		${INSTALL_PROGRAM} OBJ/*/readcd ${PREFIX}/bin;		\
 		${INSTALL_MAN} readcd.1 ${PREFIX}/${PKGMANDIR}/man1
 
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

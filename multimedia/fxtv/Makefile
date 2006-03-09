@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/01 16:41:26 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:15 joerg Exp $
 
 DISTNAME=	fxtv-1.03
 PKGREVISION=	9
@@ -33,6 +33,6 @@ pre-configure:
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
 .include "../../x11/Xaw3d/buildlink3.mk"
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

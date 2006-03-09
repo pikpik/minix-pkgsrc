@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/01/21 18:57:41 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2006/02/05 23:09:24 joerg Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -38,7 +38,7 @@ CFLAGS+=	-D__BIG_ENDIAN__=1
 
 INSTALLATION_DIRS=	bin
 
-.include "../../mk/ossaudio.buildlink3.mk"
+.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 
 post-extract:
