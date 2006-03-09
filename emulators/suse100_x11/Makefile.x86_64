@@ -1,0 +1,3 @@
+# $NetBSD: Makefile.i386,v 1.1 2006/01/08 16:53:22 salo Exp $
+
+RPMFILES=		xorg-x11-libs-6.8.2-100.${SUSE_ARCH}.rpm
