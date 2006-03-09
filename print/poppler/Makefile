@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:10:38 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/15 18:08:35 drochner Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
+
+PKGREVISION=		1
 
 COMMENT=		PDF rendering library
 
@@ -9,7 +11,6 @@ USE_TOOLS+=		gmake
 
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 #PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-cairo.pc.in
-PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-glib.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-splash.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler.pc.in
 GNU_CONFIGURE=		yes
@@ -26,8 +27,8 @@ CONFIGURE_ARGS+=	--disable-cairo-output
 CONFIGURE_ARGS+=	--disable-poppler-qt
 # Don't compile GTK+ test program.
 CONFIGURE_ARGS+=	--disable-gtk-test
-# maybe  glib wrapper is only part needing gtk??
-#  --disable-poppler-glib  Don't compile poppler glib wrapper.
+# Don't compile GLib wrapper which also needs gtk2
+CONFIGURE_ARGS+=	--disable-poppler-glib
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -39,9 +40,7 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/poppler/
 	${INSTALL_MAN} ${WRKSRC}/README-XPDF ${PREFIX}/share/doc/poppler/
 
-.include "../../devel/glib2/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
