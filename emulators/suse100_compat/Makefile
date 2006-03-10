@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 23:09:03 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/09 20:34:38 tonio Exp $
 
 DISTNAME=		suse_compat-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -9,7 +9,7 @@ MAINTAINER=		tonio@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package with old shared libraries
 
-DEPENDS+=		suse_base>=${SUSE_VERSION}:../../emulators/suse91_base
+DEPENDS+=		suse_base>=${SUSE_VERSION}:../../emulators/suse100_base
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
