@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/16 01:19:06 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:08:12 joerg Exp $
 #
 
 DISTNAME=	mstream-1.0
@@ -18,8 +18,8 @@ USE_TOOLS+=	perl:run
 
 MODDIR=		${PREFIX}/share/ices-mp3
 
-MAKE_PARAMS+=	PREFIX=${PREFIX}
-MAKE_PARAMS+=	MODDIR=${MODDIR}
-MAKE_PARAMS+=	PERL=${PERL5}
+MAKE_FLAGS+=	PREFIX=${PREFIX:Q}
+MAKE_FLAGS+=	MODDIR=${MODDIR:Q}
+MAKE_FLAGS+=	PERL=${PERL5:Q}
 
 .include "../../mk/bsd.pkg.mk"
