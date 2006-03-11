@@ -15,6 +15,11 @@ DEPENDS+=	p5-MP3-Info>=1.0:../../audio/p5-MP3-Info
 
 NO_CONFIGURE=	yes
 USE_TOOLS+=	perl:run
+
+MODDIR=		${LOCALBASE}/share/ices-mp3
+
 MAKE_FLAGS+=	PREFIX=${PREFIX:Q}
+MAKE_FLAGS+=	MODDIR=${MODDIR:Q}
+MAKE_FLAGS+=	PERL=${PERL5:Q}
 
 .include "../../mk/bsd.pkg.mk"
