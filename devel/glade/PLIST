@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2005/05/13 15:19:27 drochner Exp $
+@comment $NetBSD: PLIST,v 1.7 2006/03/11 22:05:02 jmmv Exp $
 bin/glade-2
 share/applications/glade-2.desktop
 share/glade-2/gtk/autogen.sh
