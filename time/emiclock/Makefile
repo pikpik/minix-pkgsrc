@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/01/04 04:29:08 schmonz Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:11:09 joerg Exp $
 #
 
 DISTNAME=	emiclock-2.0.2
@@ -8,8 +8,6 @@ MASTER_SITES=	ftp://ftp.noge.com/pub/EmiClock/X11/
 
 MAINTAINER=	minoura@NetBSD.org
 COMMENT=	Analog clock with image in the middle
-
-BROKEN_IN=	pkgsrc-2005Q4
 
 LICENSE=	emiclock-license
 RESTRICTED=	"Do not distribute"
