@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/02/02 09:31:10 markd Exp $
+# $NetBSD: Makefile,v 1.50 2006/02/05 23:10:26 joerg Exp $
 
 DISTNAME=	kdenetwork-${_KDE_VERSION}
 PKGREVISION=	1
@@ -21,9 +21,9 @@ REPLACE_PERL=		ksirc/dsirc \
 			kopete/kopete/kconf_update/kopete-pluginloader.pl
 
 REPLACE_INTERPRETER+=	bash
-_REPLACE.bash.old=	/bin/bash
-_REPLACE.bash.new=	/bin/sh
-_REPLACE_FILES.bash=	krfb/krfb_httpd/krfb_httpd
+REPLACE.bash.old=	/bin/bash
+REPLACE.bash.new=	${SH}
+REPLACE_FILES.bash=	krfb/krfb_httpd/krfb_httpd
 
 .include "../../mk/bsd.prefs.mk"
 
