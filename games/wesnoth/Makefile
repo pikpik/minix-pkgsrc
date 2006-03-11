@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:09:23 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/07 07:24:07 wiz Exp $
 
 DISTNAME=	wesnoth-1.0.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wesnoth/}
 
@@ -14,6 +14,9 @@ HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 UNLIMIT_RESOURCES+=	datasize
+
+REPLACE_PERL+=		utils/wmlxgettext
+USE_TOOLS+=		perl:run
 
 BUILDLINK_DEPENDS.SDL+=		SDL>=1.2.7
 BUILDLINK_DEPENDS.SDL_mixer+=	SDL_mixer>=1.2.5nb3
