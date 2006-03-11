@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2005/10/25 15:52:33 heinz Exp $
+# $NetBSD: Makefile,v 1.25 2005/12/05 20:50:05 rillig Exp $
 
-DISTNAME=	libusb-0.1.10a
+DISTNAME=	libusb-0.1.12
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libusb/}
 
@@ -13,6 +13,7 @@ GCC_REQD+=		3.3
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-build-docs
+PKGCONFIG_OVERRIDE+=	libusb.pc.in
 
 ONLY_FOR_PLATFORM=	Darwin-*-* FreeBSD-*-* Linux-*-* NetBSD-*-*
 ONLY_FOR_PLATFORM+=	OpenBSD-*-* DragonFly-*-*
