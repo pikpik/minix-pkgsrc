@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2005/10/23 20:27:44 minskim Exp $
+# $NetBSD: Makefile,v 1.37 2005/10/29 16:09:03 minskim Exp $
 #
 
 COMMENT=	Shells
@@ -26,6 +26,7 @@ SUBDIR+=	static-tcsh
 SUBDIR+=	tcsh
 SUBDIR+=	xsh
 SUBDIR+=	zsh
+SUBDIR+=	zsh-current
 SUBDIR+=	zsh3
 
 .include "../mk/bsd.pkg.subdir.mk"
