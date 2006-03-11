@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.737 2006/03/02 19:48:22 wiz Exp $
+# $NetBSD: Makefile,v 1.738 2006/03/05 09:04:50 christos Exp $
 #
 
 COMMENT=	Development utilities
@@ -264,6 +264,7 @@ SUBDIR+=	librsync
 SUBDIR+=	libscsi
 SUBDIR+=	libsigc++
 SUBDIR+=	libsigc++2
+SUBDIR+=	libsigsegv
 SUBDIR+=	libslang
 SUBDIR+=	libsmi
 SUBDIR+=	libstash
