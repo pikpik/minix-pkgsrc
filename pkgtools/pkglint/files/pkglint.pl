@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.546 2006/03/10 22:30:25 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.547 2006/03/11 18:38:35 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -2881,6 +2881,14 @@ sub checkline_mk_vartype_basic($$$$$$$) {
 
 	if ($type eq "AwkCommand") {
 		$opt_debug and $line->log_warning("Unchecked AWK command: ${value}");
+
+	} elsif ($type eq "BrokenIn") {
+		if ($value ne $value_novar) {
+			$line->log_error("${varname} must not refer to other variables.");
+		} elsif ($value =~ qr"^(\d\d\d\d)Q(\d)$") {
+			# Fine.
+		}
+		$line->log_note("Please remove this line if the package builds for you.");
 
 	} elsif ($type eq "BuildlinkDepmethod") {
 		if ($value ne $value_novar) {
