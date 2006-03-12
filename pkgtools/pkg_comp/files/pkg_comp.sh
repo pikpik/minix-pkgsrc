@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pkg_comp.sh,v 1.29 2006/02/10 23:41:20 salo Exp $
+# $NetBSD: pkg_comp.sh,v 1.30 2006/02/16 13:25:43 jmmv Exp $
 #
 # pkg_comp - Build packages inside a clean chroot environment
 # Copyright (c) 2002, 2003, 2004, 2005 Julio M. Merino Vidal <jmmv@NetBSD.org>
@@ -90,7 +90,7 @@ env_setdefaults()
     : ${PKG_DEVELOPER:=yes}
     : ${CLEANDEPENDS:=yes}
     : ${LOCALBASE:=/usr/pkg}
-    : ${PKG_SYSCONFDIR:=/usr/pkg/etc}
+    : ${PKG_SYSCONFBASE:=/usr/pkg/etc}
     : ${CFLAGS:=}
     : ${CPPFLAGS:=}
     : ${CXXFLAGS:=}
