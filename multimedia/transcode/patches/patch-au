@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/socket.c.orig	2006-03-13 19:21:07.000000000 +0000
++++ src/socket.c
+@@ -42,8 +42,6 @@ static int socket_fd=-1;
+ 
+ pthread_mutex_t tc_socket_msg_lock=PTHREAD_MUTEX_INITIALIZER;
+ 
+-extern int errno;
+-
+ int s_write (int sock, void *buf, size_t count) 
+ {
+     int retval=0;
