@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.341 2006/03/08 10:02:14 ghen Exp $
+# $NetBSD: Makefile,v 1.342 2006/03/08 20:53:54 gdt Exp $
 #
 
 COMMENT=	System utilities
@@ -109,6 +109,7 @@ SUBDIR+=	gworkspace
 SUBDIR+=	hfsutils
 SUBDIR+=	i2ocfg
 SUBDIR+=	idesk
+SUBDIR+=	ipmitool
 SUBDIR+=	ipw-firmware
 SUBDIR+=	ir-account
 SUBDIR+=	isapnptools
