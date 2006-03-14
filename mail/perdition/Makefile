@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/03 16:56:35 tv Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/04 16:06:29 tv Exp $
 #
 
 PKGREVISION=		5
@@ -7,7 +7,6 @@ PERDITION_COMMENT=	main program
 
 .include "options.mk"
 
-USE_PKGINSTALL=		YES
 OWN_DIRS+=		${PKG_SYSCONFDIR}
 .for f in Makefile.popmap perdition.conf popmap popmap.re
 CONF_FILES+=		${EGDIR}/perdition/$f ${PKG_SYSCONFDIR}/${f:.popmap=}

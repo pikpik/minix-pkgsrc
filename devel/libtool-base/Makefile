@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2006/02/06 18:57:30 tv Exp $
+# $NetBSD: Makefile,v 1.76 2006/02/28 23:34:46 joerg Exp $
 
 ###########################################################################
 ###########################################################################
@@ -83,10 +83,10 @@ PLIST_SUBST+=		SHLIBTOOL="@comment "
 .else
 PLIST_SUBST+=		SHLIBTOOL=
 
-USE_PKGINSTALL=		YES # for FILES_SUBST defaults
-
 post-build:
-	@${SED} ${FILES_SUBST_SED} <${FILESDIR}/shlibtool.in >${WRKSRC}/shlibtool
+	@${SED}	-e "s|@PREFIX@|"${PREFIX:Q}"|g"				\
+		-e "s|@SH@|"${SH:Q}"|g"					\
+		${FILESDIR}/shlibtool.in > ${WRKSRC}/shlibtool
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/shlibtool ${PREFIX}/bin/shlibtool
