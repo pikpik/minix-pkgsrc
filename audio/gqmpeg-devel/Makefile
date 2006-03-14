@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/01/24 07:31:54 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/05 23:08:09 joerg Exp $
 
 DISTNAME=		gqmpeg-0.91.1
 PKGREVISION=		4
@@ -22,8 +22,6 @@ GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--without-included-gettext
 CONFIGURE_ENV+=		GNOME_DATADIR=${PREFIX}/share
-
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 .include "options.mk"
 

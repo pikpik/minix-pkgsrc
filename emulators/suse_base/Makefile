@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2006/02/05 23:09:03 joerg Exp $
+# $NetBSD: Makefile,v 1.58 2006/03/04 21:29:36 jlam Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 PKGREVISION=		8
@@ -14,6 +14,8 @@ COMMENT=		Linux compatibility package
 CONFLICTS=		linux_SuSE-5.3 linux_lib-2.4 linuxppc_lib-[0-9]*
 
 EXTRACT_ONLY=		# empty
+DEINSTALL_SRC=		# empty
+INSTALL_SRC=		${PKGDIR}/INSTALL
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 RPMFILES=		aaa_dir.rpm gppshare.rpm ncurses.rpm \

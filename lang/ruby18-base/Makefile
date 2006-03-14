@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/12/29 06:21:47 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/01/03 14:37:24 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -27,9 +27,6 @@ CONFIGURE_ARGS+=	--enable-shared \
 CONFIGURE_ENV+=		PREFIX=${PREFIX:Q}
 INSTALL_TARGET=		install install-doc
 WRKSRC=			${RUBY_WRKSRC}
-
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
-INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 # Ruby build process depends on config.status's content
 CONFIG_STATUS_OVERRIDE=	# empty

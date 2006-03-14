@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2006/01/06 15:10:04 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2006/02/05 23:09:54 joerg Exp $
 
 DISTNAME=	cyrus-imapd-2.2.12
 PKGREVISION=	4
@@ -14,8 +14,6 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 PERL5_CONFIGURE=	no
 BDB_ACCEPTED=		db4 db3
-
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 .include "../../mk/bsd.prefs.mk"
 

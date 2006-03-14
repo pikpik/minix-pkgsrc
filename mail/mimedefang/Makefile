@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/02/05 23:09:56 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2006/03/13 00:05:14 markd Exp $
 
 DISTNAME=		mimedefang-2.56
 CATEGORIES=		mail
@@ -22,8 +22,6 @@ DEPENDS+=		spamassassin>=2.31:../../mail/spamassassin
 USE_TOOLS+=		perl:run
 GNU_CONFIGURE=		YES
 PKG_SYSCONFSUBDIR?=	mimedefang
-
-INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 DEFANG_SPOOLDIR?=	${VARBASE}/spool/MIMEDefang
 DEFANG_USER?=		defang

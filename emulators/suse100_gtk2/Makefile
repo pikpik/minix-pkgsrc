@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:03 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/09 20:38:51 tonio Exp $
 
 DISTNAME=		suse_gtk2-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -23,7 +23,6 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 # Initialize gtk/pango modules.
 FILES_SUBST+=		EMULDIR=${EMULDIR:Q}
 PLIST_SUBST+=		EMULSUBDIR=${EMULSUBDIR:Q}
-INSTALL_EXTRA_TMPL+=	${PKGDIR}/INSTALL
 
 .if exists(Makefile.${MACHINE_ARCH})
 .include "Makefile.${MACHINE_ARCH}"

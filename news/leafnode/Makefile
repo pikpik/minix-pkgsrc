@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2005/12/29 06:22:05 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2006/02/05 23:10:33 joerg Exp $
 
 DISTNAME=		leafnode-1.11.3.rel
 PKGNAME=		${DISTNAME:S/.rel//}
@@ -14,8 +14,6 @@ COMMENT=		NNTP server for small (dialup) sites
 CONFLICTS+=		cyrus-imapd<2.2.10nb2
 
 WRKSRC=			${WRKDIR}/${DISTNAME}
-INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 LEAFNODE_SPOOL?=	/var/spool/leafnode
 LEAFNODE_LOCKDIR?=	/var/spool/lock/leafnode

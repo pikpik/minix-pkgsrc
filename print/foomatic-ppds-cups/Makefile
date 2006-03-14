@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/12/29 06:22:07 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:10:36 joerg Exp $
 
 .include "../../print/foomatic-ppds/Makefile.common"
 
@@ -22,8 +22,7 @@ EVAL_PREFIX+=		CUPS_PREFIX=cups
 CUPS_DATADIR=		${CUPS_PREFIX:Q}/share/cups/model
 FILES_SUBST+=		CUPS_DATADIR=${CUPS_DATADIR}
 
-DEINSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
-INSTALL_EXTRA_TMPL=	${PKGDIR}/INSTALL
+DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
 
 do-build:	# empty
 do-install:	# empty

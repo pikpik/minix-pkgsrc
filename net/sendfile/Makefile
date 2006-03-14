@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/02/24 19:43:56 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/04 21:30:24 jlam Exp $
 #
 
 DISTNAME=	sendfile-20010216
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.belwue.de/aktivitaeten/projekte/saft/
 COMMENT=	Implementation of the Simple asynchronous file transfer protocol
 
 WRKSRC=		${WRKDIR}/sendfile-2.1a
-
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 PKG_SYSCONFSUBDIR=	sendfile
 EGDIR=		${PREFIX}/share/examples/sendfile

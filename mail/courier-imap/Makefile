@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/01/03 05:36:36 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2006/02/05 23:09:53 joerg Exp $
 
 DISTNAME=	courier-imap-4.0.6
 PKGREVISION=	1
@@ -38,7 +38,6 @@ SSLCNF_FILES=		imapd.cnf pop3d.cnf
 FILES_SUBST+=		SSLCERTS=${SSLCERTS:Q}
 FILES_SUBST+=		GEN_FILES=${GEN_FILES:Q}
 
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 MAKE_DIRS=		${VARBASE}/run
 CONF_FILES_PERMS=	# empty
 .for FILE in ${GEN_FILES}

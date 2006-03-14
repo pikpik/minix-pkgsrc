@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/12/29 06:22:10 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2006/02/20 23:03:00 wiz Exp $
 
 # NOTE:  This package is modeled on ../openssh, but does not share
 # files with it as that package may update faster than the gssapi
@@ -132,8 +132,6 @@ FILES_SUBST+=		SSH_PID_DIR=${SSH_PID_DIR:Q}
 MESSAGE_SUBST+=		EGDIR=${EGDIR}
 MESSAGE_SUBST+=		OPENSSH_USER=${OPENSSH_USER}
 MESSAGE_SUBST+=		OPENSSH_GROUP=${OPENSSH_GROUP}
-
-INSTALL_EXTRA_TMPL+=	${.CURDIR}/INSTALL
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf

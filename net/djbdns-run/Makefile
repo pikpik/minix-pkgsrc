@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/12/29 06:21:58 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/01/08 14:08:58 joerg Exp $
 #
 
 DISTNAME=		djbdns-run-20050415
@@ -20,7 +20,6 @@ WRKSRC=			${WRKDIR}
 NO_CHECKSUM=		yes
 NO_BUILD=		yes
 
-INSTALL_EXTRA_TMPL+=	${PKGDIR}/INSTALL
 MAKE_DIRS+=		${PKG_SYSCONFDIR}/axfrdns
 MAKE_DIRS+=		${PKG_SYSCONFDIR}/dnscache/ip
 MAKE_DIRS+=		${PKG_SYSCONFDIR}/dnscache/servers

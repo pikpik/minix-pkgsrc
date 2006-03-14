@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/12/29 06:22:11 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/04 21:30:38 jlam Exp $
 #
 
 DISTNAME=	smtpd-2.0
@@ -26,6 +26,8 @@ CFLAGS.AIX+=	-DGETOPT_EOF -DUSE_LOCKF -DNEEDS_FCNTL_H -DNEEDS_LOCKF_H -DNEEDS_ST
 OPSYSVARS+=	LD_LIBS
 LD_LIBS.SunOS+=	-lnsl -lsocket -lresolv
 MAKE_ENV+=	LD_LIBS=${LD_LIBS:Q}
+DEINSTALL_SRC=	${PKGDIR}/DEINSTALL
+INSTALL_SRC=	# empty
 
 .include "../../mk/bsd.prefs.mk"
 

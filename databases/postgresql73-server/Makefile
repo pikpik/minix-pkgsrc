@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/16 23:28:53 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2006/02/20 18:34:07 joerg Exp $
 
 PKGNAME=		postgresql73-server-${BASE_VERS}
 SVR4_PKGNAME=		pstgs
@@ -11,8 +11,6 @@ NOT_FOR_PLATFORM=	*-*-mips
 
 
 .include "../../databases/postgresql73/Makefile.common"
-
-DEINSTALL_EXTRA_TMPL+=	${.CURDIR}/DEINSTALL
 
 USE_TOOLS+=		gtar
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}

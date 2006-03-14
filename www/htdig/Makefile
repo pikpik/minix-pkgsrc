@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/01/21 18:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2006/03/04 21:30:58 jlam Exp $
 
 DISTNAME=	htdig-3.1.6
 PKGREVISION=	3
@@ -30,7 +30,6 @@ CONFIGURE_ENV+=	PDF_PARSER="${LOCALBASE}/bin/acroread"
 CXXFLAGS+=	-Wno-deprecated
 CPPFLAGS+=	${CXXFLAGS}
 
-INSTALL_EXTRA_TMPL=     ${PKGDIR}/INSTALL
 PKG_SYSCONFSUBDIR=	htdig
 
 DBDIR?=		${VARBASE}/db/htdig
