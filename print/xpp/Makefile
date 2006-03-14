@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.31 2005/12/17 05:20:23 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2006/02/05 23:10:41 joerg Exp $
 
 DISTNAME=	xpp-1.1
 PKGREVISION=	6
 CATEGORIES=	print x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cups/}
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cups.sourceforge.net/xpp/index.html
 COMMENT=	X Printing Panel
 

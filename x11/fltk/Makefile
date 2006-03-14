@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2006/01/22 11:11:34 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2006/02/05 23:11:32 joerg Exp $
 
 DISTNAME=	fltk-1.1.7-source
 PKGNAME=	${DISTNAME:S/-source//}
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fltk/} \
 		ftp://ftp.rz.tu-bs.de/pub/mirror/ftp.easysw.com/ftp/pub/fltk/${VERS}/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fltk.org/
 COMMENT=	Fast Light Tool Kit for graphical user interfaces
 
