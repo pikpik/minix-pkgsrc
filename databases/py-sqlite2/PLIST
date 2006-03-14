@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PYSITELIB}/pysqlite-${PKGVERSION}-py2.4-${LOWER_OPSYS}-${OS_VERSION}-${MACHINE_ARCH}.egg
