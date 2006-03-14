@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:01 tv Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:29 joerg Exp $
 #
 
 DISTNAME=	cpia2_driver-1.0
@@ -8,12 +8,12 @@ CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cpia2/}
 EXTRACT_SUFX=	.tgz
 
-PATCH_SITES=	http://www2.starcat.ne.jp/~takam/bsd/
+PATCH_SITES=	http://www.medias.ne.jp/~takam/bsd/
 PATCHFILES= 	cpia2_driver-1.0-bsd-0.03.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	hamajima@NetBSD.org
-HOMEPAGE=	http://www2.starcat.ne.jp/~takam/bsd/NetBSD.html#cpia2
+HOMEPAGE=	http://www.medias.ne.jp/~takam/bsd/NetBSD.html#cpia2
 COMMENT=	USB cameras based CPiA2 Utility Programs
 
 
