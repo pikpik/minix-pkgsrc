@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2006/03/13 04:29:16 rillig Exp $
+# $NetBSD: Makefile,v 1.55 2006/03/14 01:14:31 jlam Exp $
 
 DISTNAME=		arla-0.41
 PKGREVISION=		3
@@ -58,9 +58,6 @@ CONF_FILES+=    ${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 
 RCD_SCRIPTS=	arlad
 OWN_DIRS_PERMS=	${ARLA_CACHE} ${ROOT_USER} ${ROOT_GROUP} 0700
-
-INSTALL_EXTRA_TMPL=	${.CURDIR}/INSTALL
-DEINSTALL_EXTRA_TMPL=	${.CURDIR}/DEINSTALL
 
 .include "../../mk/x11.buildlink3.mk"
 
