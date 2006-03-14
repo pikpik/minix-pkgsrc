@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.263 2006/02/05 01:26:56 rillig Exp $
+# $NetBSD: Makefile,v 1.264 2006/03/07 12:22:49 ghen Exp $
 #
 
 COMMENT=	Security tools
@@ -216,6 +216,8 @@ SUBDIR+=	rsaref
 SUBDIR+=	ruby-tcpwrap
 SUBDIR+=	scanssh
 SUBDIR+=	seahorse
+SUBDIR+=	seahorse-gedit
+SUBDIR+=	seahorse-nautilus
 SUBDIR+=	secpanel
 SUBDIR+=	sfs
 SUBDIR+=	sign
