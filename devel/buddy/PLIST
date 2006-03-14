@@ -2,8 +2,4 @@
 include/bdd.h
 include/bvec.h
 include/fdd.h
-lib/libbdd.a
-share/doc/buddy/bddnotes.ps
-share/doc/buddy/buddy.ps
-share/doc/buddy/tech.txt
-@dirrm share/doc/buddy
+lib/libbdd.la
