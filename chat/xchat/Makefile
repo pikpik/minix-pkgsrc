@@ -1,13 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2006/02/05 23:08:26 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2006/03/14 17:59:57 tron Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=		3
 MAINTAINER=		tron@NetBSD.org
-
-PATCH_SITES=           	${MASTER_SITES}/patches/
-PATCHFILES=		xc245-fix-te-notify.diff
-PATCH_DIST_STRIP=	-p1
 
 COMMENT=	X11 (X Window System) IRC client, using the GTK2 toolkit
 
@@ -18,7 +13,8 @@ CONFLICTS=		xchat-gnome-[0-9]*
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 
-CONFIGURE_ARGS+=	--enable-textfe
+# The text frontend doesn't compile in X-Chat 2.6.1
+#CONFIGURE_ARGS+=	--enable-textfe
 CONFIGURE_ARGS+=	--enable-tcl=no
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
