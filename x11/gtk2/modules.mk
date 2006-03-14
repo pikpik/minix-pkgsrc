@@ -1,4 +1,4 @@
-# $NetBSD: modules.mk,v 1.11 2005/12/29 06:22:25 jlam Exp $
+# $NetBSD: modules.mk,v 1.12 2006/03/14 01:14:35 jlam Exp $
 #
 # This Makefile fragment is intended to be included by packages that install
 # GTK2 modules.  It takes care of rebuilding the corresponding databases at
@@ -33,8 +33,8 @@ DEINSTALL_TEMPLATE+=	../../x11/gtk2/files/immodules.tmpl
 FILES_SUBST+=		GDK_PIXBUF_LOADERS_DB=${GDK_PIXBUF_LOADERS_DB:Q}
 FILES_SUBST+=		GDK_PIXBUF_QUERY_LOADERS=${GDK_PIXBUF_QUERY_LOADERS:Q}
 GDK_PIXBUF_LOADERS_DB=	${BUILDLINK_PREFIX.gtk2}/libdata/gtk-2.0/gdk-pixbuf.loaders
-INSTALL_EXTRA_TMPL+=	../../x11/gtk2/files/loaders.tmpl
-DEINSTALL_EXTRA_TMPL+=	../../x11/gtk2/files/loaders.tmpl
+INSTALL_TEMPLATE+=	../../x11/gtk2/files/loaders.tmpl
+DEINSTALL_TEMPLATE+=	../../x11/gtk2/files/loaders.tmpl
 .endif
 
 PRINT_PLIST_AWK+=	/^libdata\/gtk-2.0/ { next; }
