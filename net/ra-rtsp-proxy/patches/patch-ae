@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- daemon.c.orig	2006-03-14 02:40:54.000000000 +0000
++++ daemon.c
+@@ -181,7 +181,6 @@ RTSP Proxy License Agreement 8-98
+ #include "setup.h"
+ 
+ 
+-extern int errno;
+ 
+ 
+ 
