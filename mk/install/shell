@@ -1,6 +1,11 @@
-#!@SH@
+# $NetBSD: shell,v 1.4 2005/09/20 04:23:49 jlam Exp $
 #
-# $NetBSD: shell,v 1.3 2005/08/23 09:33:14 abs Exp $
+# Generate a +SHELL script that handles shell registration for the package.
+#
+case "${STAGE}" in
+PRE-INSTALL|UNPACK)
+	${CAT} > ./+SHELL << 'EOF'
+#!@SH@
 #
 # +SHELL - shell registration script
 #
@@ -219,3 +224,10 @@ CHECK-REMOVE)
 	;;
 esac
 exit $exitcode
+
+EOF
+	${SED} -n "/^\# SHELL: /p" ${SELF} >> ./+SHELL
+	${CHMOD} +x ./+SHELL
+	;;
+esac
+
