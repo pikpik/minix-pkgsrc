@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2005/11/26 01:43:17 mjl Exp $
+# $NetBSD: Makefile,v 1.63 2005/11/26 09:46:07 wiz Exp $
 #
 
 COMMENT=	Communication utilities
@@ -34,6 +34,7 @@ SUBDIR+=	minicom
 SUBDIR+=	modemd
 SUBDIR+=	obexftp
 SUBDIR+=	openobex
+SUBDIR+=	p5-Asterisk
 SUBDIR+=	p5-Device-Gsm
 SUBDIR+=	p5-Device-Modem
 SUBDIR+=	p5-Device-SerialPort
