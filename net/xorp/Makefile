@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:30:26 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/11 21:01:59 rillig Exp $
 #
 
 DISTNAME=		xorp-1.2
@@ -15,7 +15,8 @@ CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl:Q}
 
 # The xorp people insist on their own PREFIX.
 # See http://www.xorp.org/bugzilla/show_bug.cgi?id=91
-GNU_CONFIGURE_PREFIX=	${LOCALBASE}/xorp
+#
+GNU_CONFIGURE_PREFIX=	${PREFIX}/xorp
 
 TEST_TARGET=		check
 
