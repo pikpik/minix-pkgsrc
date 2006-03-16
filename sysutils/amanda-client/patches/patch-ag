@@ -1,0 +1,14 @@
+$NetBSD: patch-ad,v 1.7 2004/11/12 12:13:44 mjl Exp $
+
+--- client-src/sendbackup-dump.c.orig	2006-02-17 18:07:17.000000000 +0100
++++ client-src/sendbackup-dump.c	2006-02-17 18:08:53.000000000 +0100
+@@ -310,6 +310,9 @@
+ #ifdef HAVE_HONOR_NODUMP
+ 			     "h",
+ #endif
++#ifdef HAVE_DUMP_SNAPSHOT
++			     "X",
++#endif
+ 			     "f",
+ 			     NULL);
+ 
