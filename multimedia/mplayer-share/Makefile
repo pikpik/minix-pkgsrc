@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:17 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/11 04:20:36 reed Exp $
 
 .include "Makefile.common"
 
@@ -24,6 +24,6 @@ do-install:
 	${FIND} ${PREFIX}/share/mplayer/DOCS -type d -exec ${CHMOD} \
      		${PKGDIRMODE} \{\} \;
 	${FIND} ${PREFIX}/share/mplayer/DOCS -type f -exec ${CHMOD} \
-  		${SHAREMODE} \{\} \;
+		${SHAREMODE} \{\} \;
 
 .include "../../mk/bsd.pkg.mk"
