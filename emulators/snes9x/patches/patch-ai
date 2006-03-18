@@ -1,8 +1,8 @@
 $NetBSD$
 
---- unzip/unzip.h.orig	Wed Aug 25 07:52:56 1999
+--- unzip/unzip.h.orig	2004-12-30 14:15:45.000000000 -0800
 +++ unzip/unzip.h
-@@ -49,6 +49,15 @@
+@@ -49,6 +49,15 @@ extern "C" {
  #include "zlib.h"
  #endif
  
