@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- ov/UCD-fields.orig	2006-03-19 18:20:29.000000000 +0000
++++ ov/UCD-fields
+@@ -11,6 +11,7 @@ Field "SNMPAgent" {
+ 		"UCD Ultrix",
+ 		"UCD NetBSD",
+ 		"UCD FreeBSD",
++		"UCD DragonFly",
+ 		"UCD IRIX",
+ 		"UCD Linux",
+ 		"UCD BSD/OS",

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/03/11 16:59:54 rillig Exp $
+# $NetBSD: Makefile,v 1.47 2006/03/14 01:14:31 jlam Exp $
 
 DISTNAME=	net-snmp-5.3.0.1
 PKGREVISION=	2
@@ -92,6 +92,9 @@ REPLACE_INTERPRETER+=	bash
 REPLACE.bash.old=	/bin/bash
 REPLACE.bash.new=	${SH}
 REPLACE_FILES.bash=	local/mib2c-update
+
+post-extract:
+	${CP} ${FILESDIR}/dragonfly.h ${WRKSRC}/include/net-snmp/system
 
 post-wrapper:
 .if !empty(MACHINE_PLATFORM:MNetBSD-1.5.[123]*-i386)
