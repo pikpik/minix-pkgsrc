@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/10/09 10:30:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/27 17:36:41 reed Exp $
 #
 
 DISTNAME=	verifypc-1.3
@@ -18,7 +18,7 @@ WRKSRC=			${WRKDIR}
 
 SUBST_CLASSES+=		vars
 SUBST_STAGE.vars=	do-configure
-SUBST_MESSAGE.vars=	"Configuring sources."
+SUBST_MESSAGE.vars=	Configuring sources.
 SUBST_FILES.vars=	*
 SUBST_SED.vars=		-e 's|@MAKE@|${MAKE}|g'
 SUBST_SED.vars+=	-e 's|@SH@|${SH}|g'
