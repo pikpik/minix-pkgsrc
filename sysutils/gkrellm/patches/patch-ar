@@ -1,7 +1,16 @@
 $NetBSD$
 
---- server/monitor.c.orig	2005-05-24 06:29:32.000000000 +0200
+--- server/monitor.c.orig	2005-05-24 04:29:32.000000000 +0000
 +++ server/monitor.c
+@@ -21,7 +21,7 @@
+ 
+ #include "gkrellmd.h"
+ #include "gkrellmd-private.h"
+-
++#include <inttypes.h>
+ 
+ GList			*gkrellmd_monitor_list;
+ 
 @@ -555,14 +555,14 @@ serve_disk_data(GkrellmdMonitor *mon, gb
  		if (!disk->subdisk_parent)
  			{
