@@ -1,1 +1,2 @@
-@comment $NetBSD: PLIST,v 1.4 2003/09/17 15:51:12 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/03/08 22:24:04 seb Exp $
+info/vera.info
