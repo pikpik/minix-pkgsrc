@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.6 2004/08/23 15:18:02 tv Exp $
 
 --- config.make.orig	2003-04-15 14:45:20.000000000 -0400
 +++ config.make
@@ -67,7 +67,7 @@ $NetBSD$
 -INFODIR			= /usr/info
 -HTMLDIR			= /html/fidogate
 -HTMLLOGDIR		= /html/log
-+INFODIR			= @PREFIX@/info
++INFODIR			= @PREFIX@/@PKGINFODIR@
 +HTMLDIR			= @PREFIX@/share/doc/fidogate
 +HTMLLOGDIR		= @PREFIX@/share/fidogate
  
