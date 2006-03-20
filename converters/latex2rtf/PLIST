@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.5 2005/11/09 07:17:04 reed Exp $
 bin/latex2png
 bin/latex2rtf
+info/latex2rtf.info
 man/man1/latex2png.1
 man/man1/latex2rtf.1
 share/latex2rtf/cfg/afrikaans.cfg

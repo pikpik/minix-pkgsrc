@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2005/10/16 05:07:58 reed Exp $
 
 --- Makefile.in.orig	1994-11-19 04:45:32.000000000 -0800
 +++ Makefile.in	2005-10-15 16:09:14.000000000 -0700
@@ -8,7 +8,7 @@ $NetBSD$
  bindir = $(exec_prefix)/bin
 -infodir = $(prefix)/info
 -mandir = $(prefix)/man/man1
-+infodir = $(prefix)/$(INFO_DIR)
++infodir = $(prefix)/$(PKGINFODIR)
 +mandir = $(prefix)/$(PKGMANDIR)/man1
  manext = .1
  
