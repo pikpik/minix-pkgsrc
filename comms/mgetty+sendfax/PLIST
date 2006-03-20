@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2005/06/12 14:29:53 hira Exp $
+@comment $NetBSD: PLIST,v 1.10 2005/07/01 10:16:28 hira Exp $
 bin/autopvf
 bin/basictopvf
 bin/faxq
@@ -34,6 +34,7 @@ bin/sff2g3
 bin/vm
 bin/voctopvf
 bin/wavtopvf
+info/mgetty.info
 lib/mgetty+sendfax/cour25.pbm
 lib/mgetty+sendfax/cour25n.pbm
 lib/mgetty+sendfax/faxq-helper
