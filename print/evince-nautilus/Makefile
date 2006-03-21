@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/03/15 19:27:05 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2006/03/15 21:10:10 drochner Exp $
 #
 
 DISTNAME=		evince-0.4.0
 PKGNAME=		evince-nautilus-0.4.0
+PKGREVISION=		1
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evince/0.4/}
 EXTRACT_SUFX=		.tar.bz2
