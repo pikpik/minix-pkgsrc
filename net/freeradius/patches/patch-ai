@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2005-02-18 15:41:34.000000000 +0000
+--- configure.orig	2006-02-06 12:55:53.000000000 +0000
 +++ configure
-@@ -6373,7 +6373,7 @@ else
+@@ -6372,7 +6372,7 @@ else
    cat conftest.$ac_ext >&5
  fi
  rm -f conftest*
@@ -10,4 +10,4 @@ $NetBSD$
 +test "$ac_cv_search_sem_init" = "no" && for i in pthread sem posix4 rt semaphore; do
  LIBS="-l$i  $ac_func_search_save_LIBS"
  cat > conftest.$ac_ext <<EOF
- #line 6380 "configure"
+ #line 6379 "configure"
