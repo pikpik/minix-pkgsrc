@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2005/10/27 07:22:16 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/20 14:45:50 uebayasi Exp $
 
 PKGNAME=	postgresql81-client-${BASE_VERS}
 COMMENT=	PostgreSQL database client programs
 
-.include "../../wip/postgresql81/Makefile.common"
+.include "../../databases/postgresql81/Makefile.common"
 
 USE_TOOLS+=		gzip tar
 USE_LIBTOOL=		yes
@@ -42,7 +42,7 @@ BUILD_DIRS=	${INSTALL_DIRS}
 BUILD_DIRS+=	${WRKSRC}/src/backend
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.postgresql81-client
-.include "../../wip/postgresql81/options.mk"
+.include "../../databases/postgresql81/options.mk"
 
 .for _file_ in pg_service.conf psqlrc
 CONF_FILES+=	${PG_DATA_DIR}/${_file_}.sample ${PG_ETC_DIR}/${_file_}
