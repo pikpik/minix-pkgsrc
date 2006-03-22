@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/17 03:50:25 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:30:20 jlam Exp $
 #
 
 DISTNAME=	live.2003.04.04
@@ -18,6 +18,7 @@ INSTALLATION_DIRS=	bin lib
 
 do-configure:
 	${CP} ${FILESDIR}/config.netbsd ${WRKSRC}
+	${CP} ${FILESDIR}/config.netbsd ${WRKSRC}/config.dragonfly
 	cd ${WRKSRC} && ${SH} ./genMakefiles ${LOWER_OPSYS}
 	${RM} -f ${WRKSRC}/testProgs/qtParse
 
