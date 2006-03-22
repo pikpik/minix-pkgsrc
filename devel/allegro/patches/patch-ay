@@ -1,16 +1,13 @@
-$NetBSD: patch-ay,v 1.1 2005/09/11 14:17:44 wiz Exp $
+$NetBSD$
 
---- src/unix/umodules.c.orig	2005-09-04 18:00:17.000000000 +0200
+--- src/unix/umodules.c.orig	2005-09-04 12:00:17.000000000 -0400
 +++ src/unix/umodules.c
-@@ -44,7 +44,10 @@ static MODULE *module_list = NULL;
+@@ -44,7 +44,7 @@ static MODULE *module_list = NULL;
  /* where to look for modules.lst */
  static char *module_path[] =
  {
 -   "/usr/local/lib/allegro/", "/usr/lib/allegro/", NULL
-+   "@@PREFIX@@/lib/allegro/",
-+   "/usr/local/lib/allegro/",
-+   "/usr/lib/allegro/",
-+   NULL
++   INSTPREFIX "/lib/allegro/", "/usr/lib/allegro/", NULL
  };
  
  
