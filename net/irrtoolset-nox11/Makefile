@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/08/26 08:41:46 spz Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/15 20:07:40 spz Exp $
 #
 
 DISTNAME=		IRRToolSet-4.8.2
@@ -16,5 +16,10 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--without-x
+
+CONFIG_GUESS_OVERRIDE=	config.guess src/Core/.aux/config.guess \
+	src/rpsl/config.guess
+CONFIG_SUB_OVERRIDE=	config.sub src/Core/.aux/config.sub \
+	src/rpsl/config.sub
 
 .include "../../mk/bsd.pkg.mk"
