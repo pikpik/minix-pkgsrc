@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2005/05/23 09:04:56 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:42 jlam Exp $
 
 DISTNAME=	icbirc-1.8
 CATEGORIES=	chat
 MASTER_SITES=	http://www.benzedrine.cx/
 
-MAINTAINER=	tv@duh.org
+MAINTAINER=	tv@NetBSD.org
 HOMEPAGE=	http://www.benzedrine.cx/icbirc.html
 COMMENT=	Proxy IRC client and ICB server
 

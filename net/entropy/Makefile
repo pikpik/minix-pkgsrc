@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/01/24 07:32:29 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/05 23:10:23 joerg Exp $
 #
 
 DISTNAME=		entropy_rsa-${ENTROPY_VERSION}
@@ -9,7 +9,7 @@ CATEGORIES=		net www
 MASTER_SITES=		http://entropy.stop1984.com/files/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		tv@duh.org
+MAINTAINER=		tv@NetBSD.org
 HOMEPAGE=		http://entropy.stop1984.com/
 COMMENT=		Anonymous peer-to-peer networking node (similar to Freenet)
 

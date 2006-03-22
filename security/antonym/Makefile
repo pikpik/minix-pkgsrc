@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:31 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/07/16 01:19:18 jlam Exp $
 #
 
 DISTNAME=		antonym-1.9
 CATEGORIES=		security mail
 MASTER_SITES=		http://subwiki.honeypot.net/pub/Computing/AntoNym/
 
-MAINTAINER=		tv@duh.org
+MAINTAINER=		tv@NetBSD.org
 HOMEPAGE=		http://subwiki.honeypot.net/cgi-bin/view/Computing/AntoNym
 COMMENT=		Anonymous nymserver account maintenance tool
 

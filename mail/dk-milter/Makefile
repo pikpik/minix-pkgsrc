@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/12/29 06:21:48 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/08 18:03:04 joerg Exp $
 
 DISTNAME=	dk-milter-0.3.0
 PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dk-milter/}
 
-MAINTAINER=	tv@duh.org
+MAINTAINER=	tv@NetBSD.org
 HOMEPAGE=	http://sendmail.net/dk-milter/
 COMMENT=	Open source implementation of DomainKeys for sendmail
 
