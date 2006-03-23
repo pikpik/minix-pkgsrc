@@ -1,4 +1,4 @@
-# $NetBSD: xfree.mk,v 1.11 2005/06/01 18:03:08 jlam Exp $
+# $NetBSD: xfree.mk,v 1.12 2005/10/16 08:57:30 seb Exp $
 
 FILES_LIST=	${FILESDIR}/xfree
 
@@ -27,7 +27,7 @@ CHECK_BUILTIN.${_pkg_}:=	no
 
 .for _pkg_ in ${BUILDLINK_PACKAGES:Nx11-links}
 IGNORE_PKG.${_pkg_}=	yes
-.  if !empty(IS_BUILTIN.${_pkg_}:M[yY][eE][sS]) && \
+.  if (defined(IS_BUILTIN.${_pkg_}) && !empty(IS_BUILTIN.${_pkg_}:M[yY][eE][sS]) ) && \
       exists(${FILESDIR}/xfree.${_pkg_})
 FILES_LIST+=	${FILESDIR}/xfree.${_pkg_}
 .  endif
