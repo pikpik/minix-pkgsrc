@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2005/11/13 08:31:05 minskim Exp $
 
 --- configure.in.orig	2003-12-14 23:41:18.000000000 -0800
 +++ configure.in
@@ -7,7 +7,7 @@ $NetBSD$
          AC_CHECK_FUNCS([memset])
          ;;
 -    *bsd*)
-+    *bsd* | *darwin*)
++    *bsd* | *darwin* | *dragonfly*)
          AC_DEFINE(HAVE_BSD, 1, [Define to 1 if your build target is BSD.])
          AC_FUNC_MALLOC
          ;;
