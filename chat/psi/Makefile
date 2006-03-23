@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/03/21 07:32:41 minskim Exp $
+# $NetBSD: Makefile,v 1.38 2006/03/21 07:48:03 minskim Exp $
 
 PSI_VERSION=	0.10
 DISTNAME=	psi-${PSI_VERSION}
@@ -55,6 +55,8 @@ post-configure:
 	${MV} ${WRKSRC}/Makefile.new ${WRKSRC}/Makefile
 	${ECHO} 'target.path=${QTDIR}/lib' \
 		>> ${WRKSRC}/libpsi/psiwidgets/psiwidgets.pro
+	${ECHO} 'QMAKE_UIC=$(QTDIR)/bin/uic -L ../libpsi/psiwidgets/.libs' \
+		>> ${WRKSRC}/src/src.pro
 	cd ${WRKSRC}/libpsi/psiwidgets && ( ${SETENV} ${CONFIGURE_ENV}	\
 		${QTDIR}/bin/qmake psiwidgets.pro -o Makefile; \
 	)
