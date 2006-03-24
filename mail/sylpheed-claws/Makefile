@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2005/12/29 06:21:53 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2006/02/05 23:09:58 joerg Exp $
 
 .include "Makefile.common"
 
@@ -42,11 +42,6 @@ CONF_FILES=	${EGDIR}/mime.types ${PKG_SYSCONFDIR}/mime.types
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sylpheed-claws
 PKG_SUPPORTED_OPTIONS=	jpilot ldap inet6
-
-USE_TOOLS+=	autoconf
-
-pre-configure:
-	cd ${WRKSRC}; autoconf
 
 .include "../../mk/bsd.options.mk"
 
