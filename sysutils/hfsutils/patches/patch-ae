@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- copyin.c.orig	2006-03-24 19:19:27.000000000 +0000
++++ copyin.c
+@@ -48,8 +48,6 @@ int dup(int);
+ 
+ const char *cpi_error = "no error";
+ 
+-extern int errno;
+-
+ # define ERROR(code, str)	(cpi_error = (str), errno = (code))
+ 
+ # define MACB_BLOCKSZ	128
