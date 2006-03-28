@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- modules/kbool/src/scanbeam.cpp.orig	2006-03-28 17:34:33.000000000 +0000
++++ modules/kbool/src/scanbeam.cpp
+@@ -1417,3 +1417,9 @@ bool ScanBeam::writebeam()
+ 
+    return true;
+ }
++
++#include "kbool/include/statusb.h"
++
++StatusBar::StatusBar()
++{
++}
