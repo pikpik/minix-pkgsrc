@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.47 2006/03/14 17:59:57 tron Exp $
+# $NetBSD: Makefile.common,v 1.48 2006/03/14 19:06:19 tron Exp $
 
 DISTNAME=	xchat-2.6.1
 CATEGORIES=	chat gnome
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 HOMEPAGE=	http://xchat.org/
 
 DISTINFO_FILE=	${.CURDIR}/../../chat/xchat/distinfo
+PATCHDIR?=	${.CURDIR}/../../chat/xchat/patches
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
