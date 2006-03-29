@@ -1,6 +1,5 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 23:10:17 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/04 21:30:15 jlam Exp $
 
-PKGREVISION=		1
 CATEGORIES=		multimedia www
 MASTER_SITES=		http://fpdownload.macromedia.com/get/flashplayer/current/
 
@@ -18,7 +17,7 @@ WRKNAME=		install_flash_player_7_${DISTUNAME}
 .include "../../mk/bsd.prefs.mk"
 
 .if (${MACHINE_ARCH} == "i386")
-FLASH_VERS=		7.0r61
+FLASH_VERS=		7.0r63
 DEPENDS+=		suse_compat>=6.3:../../emulators/${SUSE_DIR_PREFIX}_compat
 DEPENDS+=		suse_x11>=6.3:../../emulators/${SUSE_DIR_PREFIX}_x11
 DISTUNAME=		linux
