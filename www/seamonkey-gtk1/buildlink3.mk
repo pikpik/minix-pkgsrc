@@ -13,7 +13,7 @@ BUILDLINK_PACKAGES+=			seamonkey-gtk1
 .if !empty(SEAMONKEY_GTK1_BUILDLINK3_MK:M+)
 BUILDLINK_DEPENDS.seamonkey-gtk1+=	seamonkey-gtk1>=1.0
 BUILDLINK_RECOMMENDED.seamonkey-gtk1+=	seamonkey-gtk1>=1.0
-BUILDLINK_PKGSRCDIR.seamonkey-gtk1?=	../../wip/seamonkey-gtk1
+BUILDLINK_PKGSRCDIR.seamonkey-gtk1?=	../../www/seamonkey-gtk1
 .endif	# SEAMONKEY_GTK1_BUILDLINK3_MK
 
 .include "../../graphics/freetype2/buildlink3.mk"
