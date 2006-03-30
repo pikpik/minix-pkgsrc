@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/07/16 19:10:38 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/05 16:27:23 jlam Exp $
 
 DISTNAME=       autoconf-2.13
 PKGNAME=	autoconf213-2.13
@@ -19,7 +19,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--program-transform-name='s/$$/-2.13/'
-
-INFO_FILES=		autoconf213.info
+INFO_FILES=		# PLIST
 
 .include "../../mk/bsd.pkg.mk"

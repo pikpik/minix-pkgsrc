@@ -1,9 +1,11 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.9 2005/08/27 22:24:02 recht Exp $
 bin/edit-pr
 bin/getclose
 bin/install-sid
 bin/query-pr
 bin/send-pr
+info/gnats.info
+info/gnats-faq.info
 libexec/gnats/at-pr
 libexec/gnats/check-db
 libexec/gnats/delete-pr

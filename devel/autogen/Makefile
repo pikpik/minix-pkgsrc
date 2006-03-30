@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/03/05 16:27:24 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/03/09 20:45:20 kristerw Exp $
 
 DISTNAME=	autogen-5.8.3
 CATEGORIES=	devel
@@ -12,7 +12,7 @@ COMMENT=	The Automated Text and Program Generation Tool
 USE_TOOLS+=		gmake makeinfo
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-INFO_FILES=		autogen.info
+INFO_FILES=		# PLIST
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/include/autoopts

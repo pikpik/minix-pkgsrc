@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.9 2006/03/09 20:45:20 kristerw Exp $
 bin/autogen
 bin/autoopts-config
 bin/columns
@@ -6,6 +6,7 @@ bin/getdefs
 bin/xml2ag
 include/autoopts/options.h
 include/autoopts/usage-txt.h
+info/autogen.info
 lib/libguileopts.la
 lib/libopts.la
 lib/pkgconfig/autoopts.pc

@@ -1,9 +1,11 @@
-@comment $NetBSD: PLIST,v 1.8 2004/08/26 00:00:20 wiz Exp $
+@comment $NetBSD: PLIST,v 1.9 2005/09/05 16:58:22 wiz Exp $
 bin/gawk
 bin/${PKGNAME}
 bin/igawk
 bin/pgawk
 bin/p${PKGNAME}
+info/gawk.info
+info/gawkinet.info
 libexec/awk/grcat
 libexec/awk/pwcat
 man/man1/gawk.1

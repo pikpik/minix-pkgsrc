@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2005/03/02 21:49:45 wiz Exp $
+@comment $NetBSD: PLIST,v 1.11 2005/03/02 21:50:12 wiz Exp $
 bin/g-wrap-config
 include/ffi.h
 include/ffitarget.h
@@ -8,6 +8,7 @@ include/g-wrap/ffi-support.h
 include/g-wrap/guile-compatibility.h
 include/g-wrap/guile-runtime.h
 include/g-wrap/guile-wct.h
+info/g-wrap.info
 lib/libffi.la
 lib/libgw-guile-gw-glib.la
 lib/libgw-guile-standard.la

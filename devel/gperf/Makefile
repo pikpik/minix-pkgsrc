@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/10/07 18:44:21 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/04 21:29:15 jlam Exp $
 #
 
 DISTNAME=	gperf-3.0.1
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES= overwrite pkgviews
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
-
-INFO_FILES=		gperf.info
+INFO_FILES=		# PLIST
 
 .include "../../mk/bsd.pkg.mk"

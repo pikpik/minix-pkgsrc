@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/12/03 16:50:22 wiz Exp $
+info/guile-library.info
 share/guile/site/config/load.scm
 share/guile/site/container/delay-tree.scm
 share/guile/site/container/nodal-tree.scm

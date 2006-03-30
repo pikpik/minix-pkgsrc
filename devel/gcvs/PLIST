@@ -1,9 +1,11 @@
-@comment $NetBSD: PLIST,v 1.4 2004/02/15 19:43:58 seb Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/09/08 16:21:53 wiz Exp $
 bin/cvs
 bin/cvsbug
 bin/cvstree
 bin/gcvs
 bin/rcs2log
+info/cvs.info
+info/cvsclient.info
 lib/cvs/contrib/README
 lib/cvs/contrib/clmerge
 lib/cvs/contrib/cln_hist

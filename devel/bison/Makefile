@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2005/09/30 13:51:25 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2005/11/07 10:05:50 cjep Exp $
 
 DISTNAME=		bison-2.1
 CATEGORIES=		devel
@@ -15,8 +15,7 @@ BUILD_USES_MSGFMT=	yes
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gm4:run
-
-INFO_FILES=		bison.info
+INFO_FILES=		# PLIST
 
 TEST_TARGET=		check
 

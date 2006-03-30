@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/10/21 03:11:14 xtraeme Exp $
 bin/bash
 bin/bashbug
+info/bash.info
 man/man1/bash.1
 man/man1/bashbug.1
 ${PKGLOCALEDIR}/locale/en@boldquot/LC_MESSAGES/bash.mo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/02/16 02:21:36 xtraeme Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/05 23:08:32 joerg Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
 PKGREVISION=		1
@@ -13,8 +13,7 @@ CONFIGURE_ARGS+=	--without-extra-tools
 CONFIGURE_ARGS+=	--without-server
 CONFIGURE_ARGS+=	--enable-thread-safe-client
 UNWRAP_FILES=		scripts/mysql_config
-
-INFO_FILES=		mysql.info
+INFO_FILES=		# PLIST
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/Docs/mysql.info ${PREFIX}/info
