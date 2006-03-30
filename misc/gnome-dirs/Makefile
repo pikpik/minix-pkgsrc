@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2005/12/29 06:21:54 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:10:09 joerg Exp $
 #
 
-DISTNAME=	gnome-dirs-1.5
-PKGREVISION=	2
+DISTNAME=	gnome-dirs-1.6
 CATEGORIES=	misc gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
