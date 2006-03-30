@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.7 2005/06/03 17:02:36 jlam Exp $
+# $NetBSD: builtin.mk,v 1.8 2005/06/03 19:12:49 jlam Exp $
 
 BUILTIN_PKG:=	Xfixes
 
@@ -13,7 +13,7 @@ BUILTIN_FIND_FILES.H_XFIXES=	${X11BASE}/include/X11/extensions/Xfixes.h
 ###
 .if !defined(IS_BUILTIN.Xfixes)
 IS_BUILTIN.Xfixes=	no
-.  if exists(${H_XFIXES})
+.  if empty(H_XFIXES:M__nonexistent__)
 BUILTIN_IMAKE_CHECK:=	Xfixes:BuildXfixesLibrary
 .    include "../../mk/buildlink3/imake-check.mk"
 IS_BUILTIN.Xfixes=	${BUILTIN_IMAKE_CHECK.Xfixes}

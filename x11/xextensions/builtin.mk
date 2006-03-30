@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.7 2005/10/08 10:07:30 jmmv Exp $
+# $NetBSD: builtin.mk,v 1.8 2005/10/09 21:43:02 jmmv Exp $
 
 BUILTIN_PKG:=	xextensions
 
@@ -19,7 +19,7 @@ IS_BUILTIN.xextensions=	no
 # we'll consider this X11 package to be built-in even if it's a part
 # of one of the pkgsrc-installed X11 distributions.
 #  
-.  if exists(${H_XEXTENSIONS})
+.  if empty(H_XEXTENSIONS:M__nonexistent__)
 IS_BUILTIN.xextensions=	yes
 .  endif
 .endif

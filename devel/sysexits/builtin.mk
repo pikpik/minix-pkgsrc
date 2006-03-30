@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.3 2005/06/01 18:02:44 jlam Exp $
+# $NetBSD: builtin.mk,v 1.1.1.1 2005/10/31 15:53:19 tv Exp $
 
 BUILTIN_PKG:=	sysexits
 
@@ -13,7 +13,7 @@ BUILTIN_FIND_FILES.H_SYSEXITS=	/usr/include/sysexits.h
 ###
 .if !defined(IS_BUILTIN.sysexits)
 IS_BUILTIN.sysexits=	no
-.  if empty(H_SYSEXITS:M${LOCALBASE}/*) && exists(${H_SYSEXITS})
+.  if empty(H_SYSEXITS:M__nonexistent__) && empty(H_SYSEXITS:M${LOCALBASE}/*)
 IS_BUILTIN.sysexits=	yes
 .  endif
 .endif	# IS_BUILTIN.sysexits
