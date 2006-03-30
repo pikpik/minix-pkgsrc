@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.114 2006/03/14 23:07:49 wiz Exp $
+# $NetBSD: Makefile,v 1.115 2006/03/21 06:00:53 jlam Exp $
 
-DISTNAME=		gtk+-2.8.15
+DISTNAME=		gtk+-2.8.16
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
 PKGREVISION=		1
 CATEGORIES=		x11
@@ -97,5 +97,6 @@ _BUILDING_GTK2=	yes
 .include "../../x11/xcursor/buildlink3.mk"
 .include "../../x11/Xfixes/buildlink3.mk"
 .include "../../x11/Xrandr/buildlink3.mk"
+.include "../../x11/Xrender/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
