@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/notify-send
+include/libnotify/notification.h
+include/libnotify/notify.h
+lib/libnotify.la
+lib/pkgconfig/libnotify.pc
+@dirrm include/libnotify
