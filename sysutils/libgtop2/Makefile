@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2006/03/06 00:18:25 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2006/03/30 03:44:44 jlam Exp $
 
-DISTNAME=		libgtop-2.12.2
+DISTNAME=		libgtop-2.14.0
 PKGNAME=		${DISTNAME:S/-/2-/}
-PKGREVISION=		1
 CATEGORIES=		sysutils gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgtop/2.12/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgtop/2.14/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
