@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:10:39 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:32 jlam Exp $
 
 DISTNAME=	teTeX-src-1.0.7
 PKGNAME=	teTeX-bin-1.0.7
@@ -10,7 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	TeX distribution for UNIX compatible systems - executables
 
-BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
 DEPENDS+=	teTeX-share-1.0.[2-9]*:../../print/teTeX1-share
 DEPENDS+=	dialog>=0.6z:../../misc/dialog
 
@@ -22,11 +21,11 @@ DIST_SUBDIR=		teTeX
 BUILD_TARGET=		all
 INSTALL_TARGET=		install strip
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		bison gmake
 USE_LANGUAGES=		c c++
 CFLAGS+=		-Dunix
 
-INFO_FILES=		latex.info dvips.info web2c.info kpathsea.info
+INFO_FILES=		# PLIST
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-texinfo

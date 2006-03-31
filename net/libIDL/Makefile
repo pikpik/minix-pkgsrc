@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/12/05 20:50:47 rillig Exp $
+# $NetBSD: Makefile,v 1.39 2006/02/05 23:10:26 joerg Exp $
 
 DISTNAME=	libIDL-0.8.6
 PKGREVISION=	1
@@ -17,7 +17,7 @@ USE_TOOLS+=		bison flex pkg-config
 PKGCONFIG_OVERRIDE=	libIDL-2.0.pc.in
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		HAVE_YACC=yes
-INFO_FILES=		libIDL2.info
+INFO_FILES=		# PLIST
 
 .include "../../mk/compiler.mk"
 

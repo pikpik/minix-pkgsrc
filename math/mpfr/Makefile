@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/01/03 20:48:01 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/02 19:09:39 drochner Exp $
 #
 
 DISTNAME=		mpfr-2.2.0
@@ -17,7 +17,7 @@ COMMENT=		GMP-based library for multiple-precision floating-point computations
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
-INFO_FILES=		mpfr.info
+INFO_FILES=		# PLIST
 
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

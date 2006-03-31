@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/02/11 14:11:07 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2006/03/01 16:22:20 drochner Exp $
 #
 
 DISTNAME=	gpgme-1.0.3
@@ -16,6 +16,7 @@ DEPENDS+=		gnupg>=1.2.2:../../security/gnupg
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 PTHREAD_OPTS+=		require
+INFO_FILES=		# PLIST
 
 SUBST_CLASSES+=		pthread
 SUBST_FILES.pthread=	gpgme/gpgme-config.in
@@ -43,8 +44,6 @@ TEST_TARGET=		check
 .if ${PTHREAD_TYPE} == "native"
 CONFIGURE_ARGS+=	--without-pth --without-pth-test
 .endif
-
-INFO_FILES=		gpgme.info
 
 .include "../../security/libgpg-error/buildlink3.mk"
 

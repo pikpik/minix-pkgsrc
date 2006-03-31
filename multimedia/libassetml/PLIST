@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/02/16 18:38:41 reed Exp $
 bin/assetml-query
 include/libassetml-1.0/libassetml/assetml.h
+info/libassetml.info
 lib/libassetml.la
 lib/pkgconfig/libassetml.pc
 share/gnome/help/libassetml/C/libassetml.html

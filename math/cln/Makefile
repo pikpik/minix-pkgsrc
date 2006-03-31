@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:01 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/12 16:33:32 rillig Exp $
 
 DISTNAME=	cln-1.1.9
 PKGREVISION=	2
@@ -17,7 +17,6 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 LIBTOOL_OVERRIDE+=	libtool
 PKGCONFIG_OVERRIDE=	cln.pc.in
-
-INFO_FILES=	cln.info
+INFO_FILES=		# PLIST
 
 .include "../../mk/bsd.pkg.mk"

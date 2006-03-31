@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2006/03/05 00:33:54 grant Exp $
+# $NetBSD: Makefile,v 1.46 2006/03/09 17:25:54 cube Exp $
 
 DISTNAME=	gnutls-1.3.5
 CATEGORIES=	security devel
@@ -19,8 +19,7 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
-
-INFO_FILES=		gnutls.info
+INFO_FILES=		# PLIST
 
 PKGCONFIG_OVERRIDE=	lib/gnutls.pc.in
 PKGCONFIG_OVERRIDE+=	libextra/gnutls-extra.pc.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/01/06 09:55:52 shannonjr Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:10:44 joerg Exp $
 #
 
 DISTNAME=	libksba-0.9.13
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	YES
 TEST_TARGET=	check
 
 TEXINFO_REQD=	4.0
-INFO_FILES=	ksba.info
+INFO_FILES=	# PLIST
 
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "../../security/libgpg-error/buildlink3.mk"

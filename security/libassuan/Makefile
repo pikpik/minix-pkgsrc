@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/23 09:21:18 shannonjr Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:10:44 joerg Exp $
 #
 
 DISTNAME=		libassuan-0.6.10
@@ -13,8 +13,7 @@ COMMENT=		The IPC library used by some GnuPG related software
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
-
-INFO_FILES=		assuan.info
+INFO_FILES=		# PLIST
 
 BUILDLINK_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 
