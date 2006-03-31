@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2006/03/05 16:27:28 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/09 17:23:11 cube Exp $
 
 DISTNAME=	libtasn1-0.3.1
+PKGREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/libtasn1/ \
 		ftp://ftp.gnupg.org/gcrypt/alpha/gnutls/libtasn1/ \
@@ -17,6 +18,7 @@ USE_TOOLS+=		makeinfo
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
+INFO_FILES=		# PLIST
 
 .include "../../mk/bsd.prefs.mk"
 
