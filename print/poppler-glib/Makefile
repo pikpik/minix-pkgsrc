@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2006/03/09 01:15:58 reed Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/30 21:30:25 jmmv Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-glib-${POPPLER_VERS}
+PKGREVISION=		1
+
 COMMENT=		PDF rendering library (GLib wrapper)
 
 CONFLICTS+=		poppler<0.4.5nb1
@@ -34,7 +36,7 @@ post-install:
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
-BUILDLINK_DEPENDS.poppler+=     poppler>=${POPPLER_VERS}
+BUILDLINK_DEPENDS.poppler+=     poppler>=${POPPLER_VERS}nb1
 .include "../../print/poppler/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
