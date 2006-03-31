@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/06/12 04:22:16 grant Exp $
+# $NetBSD: Makefile,v 1.11 2006/03/04 21:29:18 jlam Exp $
 
 DISTNAME=	nana-2.4
 CATEGORIES=	devel
@@ -8,9 +8,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.ntu.edu.au/homepages/pjm/nana-home/
 COMMENT=	Improved support for assertions and logging in C and C++
 
-GNU_CONFIGURE=	yes
-INFO_FILES=	nana.info
 USE_LANGUAGES=	c c++
+GNU_CONFIGURE=	yes
+INFO_FILES=	# PLIST
 
 NOT_FOR_COMPILER=	sunpro
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/11 06:25:46 uebayasi Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/14 20:30:00 kristerw Exp $
 #
 
 DISTNAME=	pcl-cvs-2.9.9
@@ -26,7 +26,7 @@ PKG_SKIP_REASON+=	"${PKGNAME} is only for emacs20"
 
 MAKE_ENV+=	PREFIX=${PREFIX:Q}
 BUILD_TARGET= 	default
-INFO_FILES=	pcl-cvs.info
+INFO_FILES=	# PLIST
 MESSAGE_SUBST+=	EMACS_LISPPREFIX=${EMACS_LISPPREFIX:Q}
 
 .include "../../mk/bsd.pkg.mk"
