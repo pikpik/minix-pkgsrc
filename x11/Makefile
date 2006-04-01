@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.428 2006/02/11 16:14:23 rxg Exp $
+# $NetBSD: Makefile,v 1.429 2006/02/20 12:11:00 adam Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -49,6 +49,7 @@ SUBDIR+=	gnome-desktop
 SUBDIR+=	gnome-libs
 SUBDIR+=	gnome-mag
 SUBDIR+=	gnome-panel
+SUBDIR+=	gnome-screensaver
 SUBDIR+=	gnome-session
 SUBDIR+=	gnome-themes
 SUBDIR+=	gnome-themes-extras
