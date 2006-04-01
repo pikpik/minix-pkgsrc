@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.1.1.1 2006/03/09 01:13:16 reed Exp $
+$NetBSD: patch-aa,v 1.2 2006/03/30 21:30:25 jmmv Exp $
 
 --- glib/Makefile.in.orig	2006-02-28 23:51:30.000000000 +0100
 +++ glib/Makefile.in
