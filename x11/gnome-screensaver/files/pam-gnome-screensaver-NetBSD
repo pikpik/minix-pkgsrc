@@ -1,0 +1,16 @@
+# $NetBSD$
+#
+# PAM configuration for the "gnome-screensaver" service
+#
+
+# auth
+auth		include		system
+
+# account
+account		include		system
+
+# session
+session		include		system
+
+# password
+password	include		system
