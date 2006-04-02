@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:09:15 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/09 21:04:43 jlam Exp $
 #
 
 DISTNAME=		freesci-0.3.4c
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		games
 MASTER_SITES=		http://www-plan.cs.colorado.edu/reichenb/freesci/ \
 			http://teksolv.de/~jameson/
@@ -25,6 +25,7 @@ post-install:
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../fonts/Xft2/buildlink3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 #.include "../../mk/motif.buildlink3.mk"
 #.include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
