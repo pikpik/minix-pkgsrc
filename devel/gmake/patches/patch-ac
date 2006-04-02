@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.4 2003/02/21 12:40:55 grant Exp $
 
---- glob/glob.c.orig	Sat Jan 22 16:43:03 2000
+--- glob/glob.c.orig	2006-03-10 02:20:45.000000000 +0000
 +++ glob/glob.c
-@@ -215,13 +215,13 @@ my_realloc (p, n)
+@@ -216,13 +216,13 @@ my_realloc (p, n)
  #  ifdef HAVE_ALLOCA_H
  #   include <alloca.h>
  #  else	/* Not HAVE_ALLOCA_H.  */
