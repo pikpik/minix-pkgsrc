@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.134 2006/03/09 14:05:14 ghen Exp $
+# $NetBSD: Makefile,v 1.135 2006/03/11 10:07:50 ghen Exp $
 
 DISTNAME=	netpbm-10.32
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netpbm/}
 EXTRACT_SUFX=	.tgz
@@ -78,5 +79,6 @@ post-install:
 	done >>${PLIST_SRC} &&					\
 	${PAX} -rwpppm . ${PREFIX}
 	${RM} -fr ${STAGEDIR}
+	${FIND} ${PREFIX}/share/doc/netpbm -type f | xargs ${CHMOD} ${NONBINMODE}
 
 .include "../../mk/bsd.pkg.mk"
