@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/03/14 01:58:47 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/31 23:21:33 rpaulo Exp $
 
 DISTNAME=	miredo-0.8.0
 CATEGORIES=	net
+PKGREVISION=	1
 MASTER_SITES=	http://www.remlab.net/files/miredo/v0.8/
 EXTRACT_SUFX=	.tar.bz2
 
