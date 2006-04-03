@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:03 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/09 20:36:39 tonio Exp $
 
 DISTNAME=		suse_freetype2-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -17,7 +17,6 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 .if exists(Makefile.${MACHINE_ARCH})
 .include "Makefile.${MACHINE_ARCH}"
-DISTINFO_FILE=		${.CURDIR}/distinfo.${MACHINE_ARCH}
 .endif
 
 .include "../../emulators/suse100_linux/Makefile.common"

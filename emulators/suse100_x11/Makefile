@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:03 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/09 20:37:05 tonio Exp $
 
 DISTNAME=		suse_x11-${SUSE_VERSION}
 CATEGORIES=		emulators
@@ -17,7 +17,6 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
 .if exists(Makefile.${MACHINE_ARCH})
 .include "Makefile.${MACHINE_ARCH}"
-DISTINFO_FILE=		${.CURDIR}/distinfo.${MACHINE_ARCH}
 .endif
 
 .include "../../mk/bsd.prefs.mk"
