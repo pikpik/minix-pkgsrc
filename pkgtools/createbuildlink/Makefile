@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/01/21 18:57:41 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2006/01/31 03:35:35 rillig Exp $
 
 DISTNAME=	createbuildlink-3.10
 CATEGORIES=	pkgtools sysutils
@@ -19,7 +19,7 @@ NO_BUILD=	yes
 SCRIPT=		${DISTNAME:C/-.*$//}
 SCRIPTS=	${SCRIPT} substplistbasedirs
 
-INSTALLATION_DIRS=	bin man/man8
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8
 
 do-configure:
 .for scr in ${SCRIPTS}
@@ -32,6 +32,6 @@ do-install:
 .for scr in ${SCRIPTS}
 	${INSTALL_SCRIPT} ${WRKSRC:Q}/${scr:Q} ${PREFIX:Q}/bin/${scr:Q}
 .endfor
-	${INSTALL_MAN} ${FILESDIR:Q}/${SCRIPT:Q}.8 ${PREFIX:Q}/man/man8
+	${INSTALL_MAN} ${FILESDIR:Q}/${SCRIPT:Q}.8 ${PREFIX:Q}/${PKGMANDIR:Q}/man8
 
 .include "../../mk/bsd.pkg.mk"
