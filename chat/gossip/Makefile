@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/03/21 06:00:44 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2006/04/03 15:45:49 jmmv Exp $
 #
 
 DISTNAME=	gossip-0.10.2
@@ -26,7 +26,7 @@ GCONF2_SCHEMAS=		gossip.schemas
 EGDIR=			${PREFIX}/share/examples/gossip
 CONF_FILES=		${EGDIR}/sound/events/gossip.soundlist \
 			${PKG_SYSCONFDIR}/sound/events/gossip.soundlist
-INSTALL_MAKE_FLAGS+=	sysconfdir=${EGDIR}
+INSTALL_MAKE_FLAGS+=	${MAKE_FLAGS} sysconfdir=${EGDIR}
 
 .include "../../chat/loudmouth/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"

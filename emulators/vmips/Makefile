@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/20 13:30:03 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2005/12/29 06:21:40 jlam Exp $
 #
 
 DISTNAME=		vmips-1.3.1
@@ -12,7 +12,7 @@ COMMENT=		MIPS R3000 emulator
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 INSTALLATION_DIRS=	bin include/vmips man/man1 share/vmips share/examples/vmips
-INSTALL_MAKE_FLAGS+=	sysconfdir=${EGDIR:Q}
+INSTALL_MAKE_FLAGS+=	${MAKE_FLAGS} sysconfdir=${EGDIR:Q}
 
 EGDIR=			${PREFIX}/share/examples/vmips
 CONF_FILES=		${EGDIR}/vmipsrc ${PKG_SYSCONFDIR}/vmipsrc
