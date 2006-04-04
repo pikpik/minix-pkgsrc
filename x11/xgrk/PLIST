@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xgrk
+bin/xgrk2
+share/doc/xgrk/README
