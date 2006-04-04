@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.7 2004/08/02 21:22:52 minskim Exp $
 bin/tnt
 bin/tntc
 include/tntrun.h
+info/tntdoc.info
 libexec/tnt/.help
 libexec/tnt/.info
 libexec/tnt/.logcall
