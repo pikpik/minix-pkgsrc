@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2005/12/05 20:50:56 rillig Exp $
+# $NetBSD: options.mk,v 1.6 2006/04/04 21:16:37 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnupg
 PKG_SUPPORTED_OPTIONS=	curl idea ldap
@@ -23,7 +23,8 @@ MACHINE_GNU_ARCH=	i586
 
 .if !empty(PKG_OPTIONS:Mcurl)
 .include "../../www/curl/buildlink3.mk"
-CONFIGURE_ARGS+=	--with-libcurl
+.else
+CONFIGURE_ARGS+=	--without-libcurl
 .endif
 
 .if !empty(PKG_OPTIONS:Midea)
