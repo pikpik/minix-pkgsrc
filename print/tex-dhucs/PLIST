@@ -9,6 +9,7 @@ ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib/dhucs-setspace.sty
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib/dhucs-trivcj.sty
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib/dhucs-ucshyper.sty
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib/dhucsfn.sty
+${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/dhucs-cmap.sty
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/dhucs.sty
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/hanja_hg.tab
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/hjcom_hg.tab
@@ -19,6 +20,7 @@ ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunbt.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCungr.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCungs.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCungt.fd
+${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCungtz.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunjbt.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunjgt.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunjnv.fd
