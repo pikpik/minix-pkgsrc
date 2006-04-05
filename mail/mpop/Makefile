@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:30:00 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/29 21:58:39 reed Exp $
 #
 
 DISTNAME=	mpop-0.8.2
@@ -14,12 +14,11 @@ COMMENT=	Small, fast and portable POP3 client
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config
+INFO_FILES=		# PLIST
 
 CONFIGURE_ARGS+=	--enable-nls
 
 EGDIR=		${PREFIX}/share/examples/mpop
-
-INFO_FILES=	mpop.info
 
 .include "options.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

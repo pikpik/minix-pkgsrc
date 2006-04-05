@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.4 2003/07/31 16:07:02 seb Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/03/07 20:51:55 seb Exp $
+${EMACS_INFOPREFIX}/mailcrypt.info
 ${EMACS_LISPPREFIX}/expect.el
 ${EMACS_LISPPREFIX}/expect.elc
 ${EMACS_LISPPREFIX}/mailcrypt.el
