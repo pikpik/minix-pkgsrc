@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:28 tv Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/05 22:24:50 jlam Exp $
 
 DISTNAME=	bc-1.06
 PKGREVISION=	1
@@ -11,7 +11,7 @@ COMMENT=	Arbitrary precision calculator language
 
 USE_TOOLS+=	flex
 GNU_CONFIGURE=	YES
-INFO_FILES=	bc.info dc.info
+INFO_FILES=	# PLIST
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
