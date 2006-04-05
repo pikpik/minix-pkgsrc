@@ -1,6 +1,6 @@
 $NetBSD$
 
---- fontforge/Makefile.dynamic.in.orig	2006-01-15 15:26:05.000000000 +0100
+--- fontforge/Makefile.dynamic.in.orig	2006-02-01 23:28:03.000000000 +0100
 +++ fontforge/Makefile.dynamic.in
 @@ -14,7 +14,7 @@ LIBTOOL = @LIBTOOL@
  CC = @CC@
