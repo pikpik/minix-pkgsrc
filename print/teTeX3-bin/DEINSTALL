@@ -1,0 +1,8 @@
+# $NetBSD$
+
+case ${STAGE} in
+DEINSTALL)
+	${TEST} ! -x ./+TETEX ||
+		./+TETEX REMOVE ${PKG_METADATA_DIR}
+	;;
+esac
