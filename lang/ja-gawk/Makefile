@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/03/24 21:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/11 13:04:07 wiz Exp $
 
 DISTNAME=	gawk-3.0.6
 PKGNAME=	ja-gawk-3.0.6
@@ -15,7 +15,7 @@ COMMENT=	GNU awk + multi-byte extension
 
 CONFLICTS=	gawk-[0-9]*
 
-INFO_FILES=	gawk.info
+INFO_FILES=	# PLIST
 
 GNU_CONFIGURE=	yes
 

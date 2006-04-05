@@ -1,4 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.6 2004/11/27 18:17:22 wiz Exp $
+info/hacking.info
+info/vmintegration.info
 lib/awt/font.properties
 lib/classpath/libjavaio.la
 lib/classpath/libjavalang.la
