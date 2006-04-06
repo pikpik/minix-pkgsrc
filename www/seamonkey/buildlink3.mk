@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/03/30 19:15:47 ghen Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/03/30 19:19:32 ghen Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 SEAMONKEY_BUILDLINK3_MK:=		${SEAMONKEY_BUILDLINK3_MK}+
@@ -11,8 +11,7 @@ BUILDLINK_PACKAGES:=			${BUILDLINK_PACKAGES:Nseamonkey}
 BUILDLINK_PACKAGES+=			seamonkey
 
 .if !empty(SEAMONKEY_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.seamonkey+=		seamonkey>=1.0
-BUILDLINK_RECOMMENDED.seamonkey+=	seamonkey>=1.0
+BUILDLINK_API_DEPENDS.seamonkey+=	seamonkey>=1.0
 BUILDLINK_PKGSRCDIR.seamonkey?=		../../www/seamonkey
 .endif	# SEAMONKEY_BUILDLINK3_MK
 
