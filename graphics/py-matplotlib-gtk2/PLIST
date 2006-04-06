@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/matplotlib/backends/_gtkagg.so
+${PYSITELIB}/matplotlib/backends/_na_backend_gdk.so
+${PYSITELIB}/matplotlib/backends/_nc_backend_gdk.so
