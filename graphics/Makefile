@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.412 2006/02/11 13:24:30 rillig Exp $
+# $NetBSD: Makefile,v 1.413 2006/02/13 15:25:39 rillig Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -249,6 +249,7 @@ SUBDIR+=	py-gnuplot
 SUBDIR+=	py-imaging
 SUBDIR+=	py-imagingtk
 SUBDIR+=	py-matplotlib
+SUBDIR+=	py-matplotlib-gtk2
 SUBDIR+=	py-piddle
 SUBDIR+=	qcamview
 SUBDIR+=	qiv
