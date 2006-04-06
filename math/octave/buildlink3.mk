@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:10:03 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:21 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OCTAVE_BUILDLINK3_MK:=	${OCTAVE_BUILDLINK3_MK}+
@@ -29,4 +29,4 @@ BUILDLINK_PKGSRCDIR.octave?=	../../math/octave
 .include "../../math/fftw/buildlink3.mk"
 .include "../../math/lapack/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
