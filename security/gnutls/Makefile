@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/03/09 17:25:54 cube Exp $
+# $NetBSD: Makefile,v 1.47 2006/03/31 23:56:29 jlam Exp $
 
 DISTNAME=	gnutls-1.3.5
 CATEGORIES=	security devel
@@ -24,9 +24,9 @@ INFO_FILES=		# PLIST
 PKGCONFIG_OVERRIDE=	lib/gnutls.pc.in
 PKGCONFIG_OVERRIDE+=	libextra/gnutls-extra.pc.in
 
-BUILDLINK_DEPENDS.opencdk+=	opencdk>=0.5.5
-BUILDLINK_DEPENDS.libtasn1+=	libtasn1>=0.3.1
-BUILDLINK_DEPENDS.libgcrypt+=	libgcrypt>=1.2.2
+BUILDLINK_API_DEPENDS.opencdk+=	opencdk>=0.5.5
+BUILDLINK_API_DEPENDS.libtasn1+=	libtasn1>=0.3.1
+BUILDLINK_API_DEPENDS.libgcrypt+=	libgcrypt>=1.2.2
 
 MAKE_ENV+=		RM=${RM:Q}
 MAKE_ENV+=		TZ=UTC

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/01/20 23:41:29 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:00 joerg Exp $
 #
 
 DISTNAME=		rinfo26
@@ -19,7 +19,7 @@ BUILD_TARGET=		rominfo
 EXTRACT_OPTS_ZIP=	-Laaqo
 INSTALLATION_DIRS=	bin
 
-BUILDLINK_DEPENDS.DatLib+=	DatLib>=2.13
+BUILDLINK_API_DEPENDS.DatLib+=	DatLib>=2.13
 
 post-extract:
 	${MKDIR} ${WRKSRC}/obj

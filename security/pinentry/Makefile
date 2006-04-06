@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:10:46 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/03/31 23:56:29 jlam Exp $
 #
 
 DISTNAME=		pinentry-0.7.1
@@ -38,7 +38,7 @@ PLIST_SUBST+=		USE_QT=
 PLIST_SUBST+=		USE_QT='@comment '
 .endif
 
-BUILDLINK_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
+BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 
 .include "../../security/libgpg-error/buildlink3.mk"
 .include "../../security/libksba/buildlink3.mk"

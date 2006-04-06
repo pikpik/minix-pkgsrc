@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:11:47 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/02/17 06:49:26 martti Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_WINDOWLIST_PLUGIN_BUILDLINK3_MK:=	${XFCE4_WINDOWLIST_PLUGIN_BUILDLINK3_MK}+
@@ -11,8 +11,8 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxfce4-windowlist-plugin}
 BUILDLINK_PACKAGES+=	xfce4-windowlist-plugin
 
 .if !empty(XFCE4_WINDOWLIST_PLUGIN_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.xfce4-windowlist-plugin+=	xfce4-windowlist-plugin>=0.1.0nb1
-BUILDLINK_RECOMMENDED.xfce4-windowlist-plugin?=	xfce4-windowlist-plugin>=0.1.0nb3
+BUILDLINK_API_DEPENDS.xfce4-windowlist-plugin+=	xfce4-windowlist-plugin>=0.1.0nb1
+BUILDLINK_ABI_DEPENDS.xfce4-windowlist-plugin?=	xfce4-windowlist-plugin>=0.1.0nb3
 BUILDLINK_PKGSRCDIR.xfce4-windowlist-plugin?=	../../x11/xfce4-windowlist-plugin
 .endif	# XFCE4_WINDOWLIST_PLUGIN_BUILDLINK3_MK
 

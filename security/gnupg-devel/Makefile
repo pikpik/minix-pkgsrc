@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/01/06 11:05:18 shannonjr Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:10:43 joerg Exp $
 #
 
 DISTNAME=		gnupg-1.9.20
@@ -54,7 +54,7 @@ PLIST_SRC+=	${.CURDIR}/PLIST.gpgsm
 pre-configure:
 	cd  ${WRKDIR}/pth-2.0.4 && ./configure --prefix=${WRKDIR}/pth --enable-pthread --enable-static --disable-shared && ${MAKE} install
 
-BUILDLINK_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
+BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 
 .include "../../databases/openldap/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"

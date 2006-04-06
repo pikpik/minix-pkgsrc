@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.3 2005/10/16 19:53:36 tonio Exp $
+# $NetBSD: builtin.mk,v 1.4 2006/03/30 18:06:19 jlam Exp $
 
 BUILTIN_PKG:=	xorg-libs
 
@@ -43,7 +43,7 @@ USE_BUILTIN.xorg-libs=	${IS_BUILTIN.xorg-libs}
 .    if defined(BUILTIN_PKG.xorg-libs) && \
         !empty(IS_BUILTIN.xorg-libs:M[yY][eE][sS])
 USE_BUILTIN.xorg-libs=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.xorg-libs}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.xorg-libs}
 .        if !empty(USE_BUILTIN.xorg-libs:M[yY][eE][sS])
 USE_BUILTIN.xorg-libs!=							\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.xorg-libs:Q}; then \

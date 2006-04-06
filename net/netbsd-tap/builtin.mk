@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2005/06/01 18:03:08 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2006/03/30 18:06:18 jlam Exp $
 
 BUILTIN_PKG:=	netbsd-tap
 
@@ -32,7 +32,7 @@ USE_BUILTIN.netbsd-tap=	${IS_BUILTIN.netbsd-tap}
 .    if defined(BUILTIN_PKG.netbsd-tap) && \
         !empty(IS_BUILTIN.netbsd-tap:M[yY][eE][sS])
 USE_BUILTIN.netbsd-tap=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.netbsd-tap}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.netbsd-tap}
 .        if !empty(USE_BUILTIN.netbsd-tap:M[yY][eE][sS])
 USE_BUILTIN.netbsd-tap!=						\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.netbsd-tap:Q}; then \

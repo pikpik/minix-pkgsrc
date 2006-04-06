@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2004/11/15 14:56:36 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2005/11/04 16:53:24 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 READLINE_BUILDLINK3_MK:=	${READLINE_BUILDLINK3_MK}+
@@ -13,8 +13,8 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nreadline}
 BUILDLINK_PACKAGES+=	readline
 
 .if !empty(READLINE_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.readline+=		readline>=2.2
-BUILDLINK_RECOMMENDED.readline+=	readline>=5.0
+BUILDLINK_API_DEPENDS.readline+=		readline>=2.2
+BUILDLINK_ABI_DEPENDS.readline+=	readline>=5.0
 BUILDLINK_PKGSRCDIR.readline?=		../../devel/readline
 
 BUILDLINK_FILES.readline+=	include/history.h

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/11/10 09:10:46 xtraeme Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2004/11/11 11:57:47 grant Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBRADIUS_LINUX_BUILDLINK3_MK:=	${LIBRADIUS_LINUX_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibradius}
 BUILDLINK_PACKAGES+=	libradius
 
 .if !empty(LIBRADIUS_LINUX_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.libradius+=	libradius>=20040827
+BUILDLINK_API_DEPENDS.libradius+=	libradius>=20040827
 BUILDLINK_PKGSRCDIR.libradius?=	../../net/libradius
 BUILDLINK_DEPMETHOD.libradius?=	build
 

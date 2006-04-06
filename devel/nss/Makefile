@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/12/05 20:50:06 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:49 joerg Exp $
 
 DISTNAME=		nss-3.9.2
 PKGREVISION=		4
@@ -77,7 +77,7 @@ do-install:
 	      "-lnss3 -lsmime3 -lssl3 -lsoftokn3 ${BUILDLINK_LIBS.pthread}"; \
 	} >${PREFIX}/lib/pkgconfig/nss.pc
 
-BUILDLINK_DEPENDS.nspr+=	nspr>=4.4.1nb2
+BUILDLINK_API_DEPENDS.nspr+=	nspr>=4.4.1nb2
 
 .include "../../devel/nspr/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

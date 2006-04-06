@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/10/14 19:31:57 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2004/11/25 22:55:54 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBLTDL_BUILDLINK3_MK:=	${LIBLTDL_BUILDLINK3_MK}+
@@ -19,7 +19,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibltdl}
 BUILDLINK_PACKAGES+=	libltdl
 
 .if !empty(LIBLTDL_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.libltdl+=	libltdl>=1.5.10
+BUILDLINK_API_DEPENDS.libltdl+=	libltdl>=1.5.10
 BUILDLINK_PKGSRCDIR.libltdl?=	../../devel/libltdl
 .endif	# LIBLTDL_BUILDLINK3_MK
 

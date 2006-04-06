@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/03/02 21:08:30 drochner Exp $
+# $NetBSD: Makefile,v 1.39 2006/03/30 21:11:32 jmmv Exp $
 
 DISTNAME=		gtk-engines-2.6.8
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -15,7 +15,7 @@ CONFLICTS+=		gtk2-engines-clearlooks-[0-9]*
 CONFLICTS+=		gtk2-engines-industrial-[0-9]*
 CONFLICTS+=		gnome-themes-extras<0.8
 
-BUILDLINK_DEPENDS.gtk2+=	gtk2+>=2.6.4
+BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.6.4
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes

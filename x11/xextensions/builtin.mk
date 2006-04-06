@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.8 2005/10/09 21:43:02 jmmv Exp $
+# $NetBSD: builtin.mk,v 1.9 2006/03/30 18:06:19 jlam Exp $
 
 BUILTIN_PKG:=	xextensions
 
@@ -37,7 +37,7 @@ USE_BUILTIN.xextensions=	${IS_BUILTIN.xextensions}
 .    if defined(BUILTIN_PKG.xextensions) && \
         !empty(IS_BUILTIN.xextensions:M[yY][eE][sS])
 USE_BUILTIN.xextensions=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.xextensions}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.xextensions}
 .        if !empty(USE_BUILTIN.xextensions:M[yY][eE][sS])
 USE_BUILTIN.xextensions!=						\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.xextensions:Q}; then \

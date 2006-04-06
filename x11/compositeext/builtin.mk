@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.5 2005/06/01 18:03:27 jlam Exp $
+# $NetBSD: builtin.mk,v 1.6 2006/03/30 18:06:19 jlam Exp $
 
 BUILTIN_PKG:=	compositeext
 
@@ -40,7 +40,7 @@ USE_BUILTIN.compositeext=	${IS_BUILTIN.compositeext}
 .    if defined(BUILTIN_PKG.compositeext) && \
         !empty(IS_BUILTIN.compositeext:M[yY][eE][sS])
 USE_BUILTIN.compositeext=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.compositeext}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.compositeext}
 .        if !empty(USE_BUILTIN.compositeext:M[yY][eE][sS])
 USE_BUILTIN.compositeext!=						\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.compositeext:Q}; then \

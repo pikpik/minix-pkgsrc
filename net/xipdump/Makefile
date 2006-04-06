@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:50 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/05 23:10:33 joerg Exp $
 #
 
 DISTNAME=	xipdump-1.5.4
@@ -11,7 +11,7 @@ MAINTAINER=	sakamoto@NetBSD.org
 HOMEPAGE=	http://www.lse.epita.fr/twiki/bin/view/Projects/XipDump
 COMMENT=	Displays IP packets using X Window System
 
-BUILDLINK_DEPENDS.libnet+=	libnet-1.0.*
+BUILDLINK_API_DEPENDS.libnet+=	libnet-1.0.*
 
 PLIST_SRC=	${WRKDIR}/PLIST
 

@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2004/03/29 05:43:29 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2005/06/01 18:02:43 jlam Exp $
 
 BUILTIN_PKG:=	binutils
 .include "../../mk/buildlink3/bsd.builtin.mk"
@@ -22,7 +22,7 @@ USE_BUILTIN.binutils=	${IS_BUILTIN.binutils}
 .    if defined(BUILTIN_PKG.binutils) && \
         !empty(IS_BUILTIN.binutils:M[yY][eE][sS])
 USE_BUILTIN.binutils=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.binutils}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.binutils}
 .        if !empty(USE_BUILTIN.binutils:M[yY][eE][sS])
 USE_BUILTIN.binutils!=							\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.binutils:Q}; then \

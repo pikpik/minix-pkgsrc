@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/02/05 23:11:41 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/02 21:53:52 drochner Exp $
 #
 
 DISTNAME=	PyQt-3.1-Qt-2.3.1
@@ -24,7 +24,7 @@ MAKE_ENV+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 
 # MesaLib is pulled in through qt2-libs; we need a version
 # which doesn't (needlessly) link to libpthread
-BUILDLINK_DEPENDS.MesaLib+=	MesaLib>=6.4.2nb1
+BUILDLINK_API_DEPENDS.MesaLib+=	MesaLib>=6.4.2nb1
 
 .include "../../lang/python/extension.mk"
 

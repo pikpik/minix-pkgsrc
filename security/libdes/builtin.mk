@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.4 2005/06/01 18:03:21 jlam Exp $
+# $NetBSD: builtin.mk,v 1.5 2006/03/30 18:06:18 jlam Exp $
 
 BUILTIN_PKG:=	libdes
 
@@ -31,7 +31,7 @@ USE_BUILTIN.libdes=	${IS_BUILTIN.libdes}
 .    if defined(BUILTIN_PKG.libdes) && \
         !empty(IS_BUILTIN.libdes:M[yY][eE][sS])
 USE_BUILTIN.libdes=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.libdes}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.libdes}
 .        if !empty(USE_BUILTIN.libdes:M[yY][eE][sS])
 USE_BUILTIN.libdes!=							\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.libdes:Q}; then	\

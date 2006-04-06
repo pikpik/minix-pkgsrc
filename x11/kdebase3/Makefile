@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2006/03/30 02:39:39 markd Exp $
+# $NetBSD: Makefile,v 1.109 2006/04/02 02:01:58 markd Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 PKGREVISION=	1
@@ -90,8 +90,8 @@ PKG_SUGGESTED_OPTIONS=	sasl
 
 .include "../../mk/bsd.options.mk"
 
-BUILDLINK_DEPENDS.Xrandr+=	Xrandr>=1.0
-BUILDLINK_DEPENDS.kdelibs+=	kdelibs>=${_KDE_VERSION}
+BUILDLINK_API_DEPENDS.Xrandr+=	Xrandr>=1.0
+BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs>=${_KDE_VERSION}
 
 DEPENDS+=		htdig>=3.2.0:../../www/htdig-devel
 

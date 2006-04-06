@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2006/03/21 06:00:45 jlam Exp $
+# $NetBSD: Makefile,v 1.66 2006/03/30 21:32:20 jmmv Exp $
 
 DISTNAME=		gnome-games-2.14.0
 CATEGORIES=		games gnome
@@ -57,10 +57,10 @@ GCONF2_SCHEMAS+=	same-gnome.schemas
 
 PYTHON_PATCH_SCRIPTS=	libgames-support/games-server.py
 
-BUILDLINK_DEPENDS.glib2+=	glib2>=2.6.3
-BUILDLINK_DEPENDS.howl+=	howl>=0.9.6
-BUILDLINK_DEPENDS.libgnome+=	libgnome>=2.10.0
-BUILDLINK_DEPENDS.librsvg2+=	librsvg2>=2.12.6
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.6.3
+BUILDLINK_API_DEPENDS.howl+=	howl>=0.9.6
+BUILDLINK_API_DEPENDS.libgnome+=	libgnome>=2.10.0
+BUILDLINK_API_DEPENDS.librsvg2+=	librsvg2>=2.12.6
 
 .include "../../audio/esound/buildlink3.mk"
 .include "../../devel/GConf2/schemas.mk"

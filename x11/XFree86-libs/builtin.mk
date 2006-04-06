@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2005/06/24 05:21:31 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2006/03/30 18:06:18 jlam Exp $
 
 BUILTIN_PKG:=	XFree86-libs
 
@@ -43,7 +43,7 @@ USE_BUILTIN.XFree86-libs=	${IS_BUILTIN.XFree86-libs}
 .    if defined(BUILTIN_PKG.XFree86-libs) && \
         !empty(IS_BUILTIN.XFree86-libs:M[yY][eE][sS])
 USE_BUILTIN.XFree86-libs=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.XFree86-libs}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.XFree86-libs}
 .        if !empty(USE_BUILTIN.XFree86-libs:M[yY][eE][sS])
 USE_BUILTIN.XFree86-libs!=						\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.XFree86-libs:Q}; then \

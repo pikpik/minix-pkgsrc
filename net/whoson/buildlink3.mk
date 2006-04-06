@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/04/12 21:39:41 snj Exp $
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/10/11 16:51:54 abs Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 WHOSON_BUILDLINK3_MK:=	${WHOSON_BUILDLINK3_MK}+
@@ -11,7 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nwhoson}
 BUILDLINK_PACKAGES+=	whoson
 
 .if !empty(WHOSON_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.whoson+=	whoson>=2.03
+BUILDLINK_API_DEPENDS.whoson+=	whoson>=2.03
 BUILDLINK_PKGSRCDIR.whoson?=	../../net/whoson
 .endif	# WHOSON_BUILDLINK3_MK
 

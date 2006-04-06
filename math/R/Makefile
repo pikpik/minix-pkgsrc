@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2006/02/05 23:09:59 joerg Exp $
+# $NetBSD: Makefile,v 1.81 2006/03/05 16:27:27 jlam Exp $
 
 DISTNAME=		R-2.2.1
 PKGREVISION=		2
@@ -78,7 +78,7 @@ PLIST_SRC=		${WRKDIR}/.PLIST_SRC
 R_LIBDIR=		${PREFIX}/lib/R
 R_INSTALL_DIRS=		${R_LIBDIR}
 
-BUILDLINK_DEPENDS.zlib+= zlib>=1.2.1
+BUILDLINK_API_DEPENDS.zlib+= zlib>=1.2.1
 
 .if ${OPSYS} == "NetBSD" && !empty(OS_VERSION:M1.[0-6]*)
 CONFIGURE_ARGS+=	--enable-mbcs=no

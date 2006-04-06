@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/03/14 15:02:38 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2006/03/21 06:00:49 jlam Exp $
 
 DISTNAME=	seahorse-0.8.1
 PKGNAME=	seahorse-nautilus-0.8.1
@@ -24,7 +24,7 @@ USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--disable-gedit
 
-BUILDLINK_DEPENDS.gpgme+=	gpgme>=1.0.1nb2
+BUILDLINK_API_DEPENDS.gpgme+=	gpgme>=1.0.1nb2
 
 BUILD_DIRS=	plugins/nautilus-ext
 INSTALL_DIRS=	plugins/nautilus-ext

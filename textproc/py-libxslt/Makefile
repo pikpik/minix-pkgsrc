@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/12/05 20:51:07 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:07 joerg Exp $
 
 DISTNAME=	libxslt-1.1.15
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -28,7 +28,7 @@ SUBST_SED.setup=	-e "s,@LIBICONVDIR@,${BUILDLINK_PREFIX.iconv},g" \
 			-e "s,@LIBXML2DIR@,${BUILDLINK_PREFIX.libxml2},g" \
 			-e "s,@LIBXSLTDIR@,${BUILDLINK_PREFIX.libxslt},g"
 
-BUILDLINK_DEPENDS.libxslt+=	libxslt>=${PKGVERSION}
+BUILDLINK_API_DEPENDS.libxslt+=	libxslt>=${PKGVERSION}
 .include "../../textproc/libxslt/buildlink3.mk"
 
 .include "../../lang/python/extension.mk"

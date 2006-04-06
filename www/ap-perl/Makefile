@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/02/05 23:11:17 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2006/03/04 21:30:56 jlam Exp $
 #
 
 DISTNAME=		mod_perl-1.29
@@ -14,7 +14,7 @@ COMMENT=		Module that embeds a Perl interpreter into Apache
 
 CONFLICTS=		ap2-perl-[0-9]*
 
-DEPENDS+=		${BUILDLINK_DEPENDS.apache}:../../www/apache
+DEPENDS+=		${BUILDLINK_API_DEPENDS.apache}:../../www/apache
 DEPENDS+=		p5-BSD-Resource>=1.10:../../devel/p5-BSD-Resource
 
 APACHE_MODULE=		YES

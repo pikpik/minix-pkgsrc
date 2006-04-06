@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/01/13 18:42:48 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:32 joerg Exp $
 #
 
 DISTNAME=		ucarp-1.1
@@ -15,7 +15,7 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
 # pcap_freecode with one argument only
-BUILDLINK_DEPENDS.libpcap+=	libpcap>=0.6.0
+BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.6.0
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ucarp

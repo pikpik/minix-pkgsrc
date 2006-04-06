@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/04/22 20:02:46 ben Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:08:13 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PORTAUDIO_BUILDLINK3_MK:=	${PORTAUDIO_BUILDLINK3_MK}+
@@ -11,8 +11,8 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nportaudio}
 BUILDLINK_PACKAGES+=	portaudio
 
 .if !empty(PORTAUDIO_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.portaudio+=	portaudio>=18.1
-BUILDLINK_RECOMMENDED.portaudio?=	portaudio>=18.1nb2
+BUILDLINK_API_DEPENDS.portaudio+=	portaudio>=18.1
+BUILDLINK_ABI_DEPENDS.portaudio?=	portaudio>=18.1nb2
 BUILDLINK_PKGSRCDIR.portaudio?=	../../audio/portaudio
 .endif	# PORTAUDIO_BUILDLINK3_MK
 

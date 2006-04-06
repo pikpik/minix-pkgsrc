@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.9 2005/06/03 19:12:49 jlam Exp $
+# $NetBSD: builtin.mk,v 1.10 2006/03/30 18:06:19 jlam Exp $
 
 BUILTIN_PKG:=	Xcomposite
 
@@ -34,7 +34,7 @@ USE_BUILTIN.Xcomposite=	${IS_BUILTIN.Xcomposite}
 .    if defined(BUILTIN_PKG.Xcomposite) && \
         !empty(IS_BUILTIN.Xcomposite:M[yY][eE][sS])
 USE_BUILTIN.Xcomposite=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.Xcomposite}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.Xcomposite}
 .        if !empty(USE_BUILTIN.Xcomposite:M[yY][eE][sS])
 USE_BUILTIN.Xcomposite!=						\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.Xcomposite:Q}; then \

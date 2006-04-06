@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:10:59 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:44 jlam Exp $
 #
 
 DISTNAME=	aspell6-cs-20040614-1
@@ -13,7 +13,7 @@ HOMEPAGE=	http://aspell.net/
 COMMENT=	Czech language support for aspell
 
 # earlier versions core-dumped on the input
-BUILDLINK_DEPENDS.aspell+=	aspell>=0.60.2nb1
+BUILDLINK_API_DEPENDS.aspell+=	aspell>=0.60.2nb1
 
 HAS_CONFIGURE=	YES
 

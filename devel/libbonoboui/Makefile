@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2006/03/06 00:18:11 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2006/03/30 21:09:01 jmmv Exp $
 #
 
 DISTNAME=	libbonoboui-2.14.0
@@ -22,8 +22,8 @@ PKGCONFIG_OVERRIDE=	bonobo/libbonoboui-2.0.pc.in
 
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
-BUILDLINK_DEPENDS.libbonobo+=	libbonobo>=2.14.0
-BUILDLINK_DEPENDS.libgnome+=	libgnome>=2.13.7
+BUILDLINK_API_DEPENDS.libbonobo+=	libbonobo>=2.14.0
+BUILDLINK_API_DEPENDS.libgnome+=	libgnome>=2.13.7
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/GConf2/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2005/03/27 21:18:06 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SHAPELIB_BUILDLINK3_MK:=	${SHAPELIB_BUILDLINK3_MK}+
@@ -11,7 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nshapelib}
 BUILDLINK_PACKAGES+=	shapelib
 
 .if !empty(SHAPELIB_BUILDLINK3_MK:M+)
-BUILDLINK_DEPENDS.shapelib+=	shapelib>=1.2.10
+BUILDLINK_API_DEPENDS.shapelib+=	shapelib>=1.2.10
 BUILDLINK_PKGSRCDIR.shapelib?=	../../geography/shapelib
 .endif	# SHAPELIB_BUILDLINK3_MK
 

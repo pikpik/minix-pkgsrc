@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.1.1.1 2005/10/15 16:36:57 wiz Exp $
+# $NetBSD: builtin.mk,v 1.2 2006/03/30 18:06:19 jlam Exp $
 
 BUILTIN_PKG:=	renderext
 
@@ -52,7 +52,7 @@ USE_BUILTIN.renderext=	${IS_BUILTIN.renderext}
 .    if defined(BUILTIN_PKG.renderext) && \
         !empty(IS_BUILTIN.renderext:M[yY][eE][sS])
 USE_BUILTIN.renderext=	yes
-.      for _dep_ in ${BUILDLINK_DEPENDS.renderext}
+.      for _dep_ in ${BUILDLINK_API_DEPENDS.renderext}
 .        if !empty(USE_BUILTIN.renderext:M[yY][eE][sS])
 USE_BUILTIN.renderext!=							\
 	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.renderext:Q}; then \
@@ -75,7 +75,7 @@ CHECK_BUILTIN.renderext?=	no
 .if !empty(CHECK_BUILTIN.renderext:M[nN][oO])
 
 .  if !empty(USE_BUILTIN.renderext:M[nN][oO])
-BUILDLINK_DEPENDS.renderext+=	renderext>=0.9
+BUILDLINK_API_DEPENDS.renderext+=	renderext>=0.9
 .  endif
 
 .  if !empty(USE_BUILTIN.renderext:M[yY][eE][sS])

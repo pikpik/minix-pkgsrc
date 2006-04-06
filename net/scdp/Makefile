@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/02/05 16:11:47 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:59 tv Exp $
 #
 
 DISTNAME=	scdp-1.0b
@@ -13,7 +13,7 @@ COMMENT=	Program to send Cisco Discovery Protocol packets
 
 GNU_CONFIGURE=	yes
 
-BUILDLINK_DEPENDS.libnet+=	libnet-1.0.*
+BUILDLINK_API_DEPENDS.libnet+=	libnet-1.0.*
 
 .include "../../devel/libnet/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

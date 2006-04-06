@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/03/21 06:00:54 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2006/03/30 21:22:41 jmmv Exp $
 #
 
 DISTNAME=	zenity-2.14.0
@@ -17,7 +17,7 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake pkg-config
 
-BUILDLINK_DEPENDS.glib2+=	glib2>=2.8.0
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.8.0
 
 .include "../../devel/GConf2/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

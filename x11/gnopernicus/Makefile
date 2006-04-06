@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/03/30 21:31:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.42 2006/04/04 18:07:16 jlam Exp $
 #
 
 DISTNAME=		gnopernicus-1.0.3
@@ -52,7 +52,7 @@ GCONF2_SCHEMAS+=	brlmonitor.schemas
 GCONF2_SCHEMAS+=	gnopernicus.schemas
 GCONF2_SCHEMAS+=	remote.schemas
 
-BUILDLINK_DEPENDS.glib2+=	glib2>=2.4.1
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.4.1
 
 .include "../../audio/gnome-speech/buildlink3.mk"
 .include "../../devel/at-spi/buildlink3.mk"

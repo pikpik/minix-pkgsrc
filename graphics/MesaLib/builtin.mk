@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.12 2006/01/19 12:53:17 adam Exp $
+# $NetBSD: builtin.mk,v 1.13 2006/03/30 18:06:17 jlam Exp $
 
 BUILTIN_PKG:=	MesaLib
 
@@ -45,7 +45,7 @@ USE_BUILTIN.MesaLib=	${IS_BUILTIN.MesaLib}
 .    if defined(BUILTIN_PKG.MesaLib) && \
         !empty(IS_BUILTIN.MesaLib:M[yY][eE][sS])
 USE_BUILTIN.MesaLib=	yes
-.      for dep in ${BUILDLINK_DEPENDS.MesaLib}
+.      for dep in ${BUILDLINK_API_DEPENDS.MesaLib}
 .        if !empty(USE_BUILTIN.MesaLib:M[yY][eE][sS])
 USE_BUILTIN.MesaLib!=							\
 	if ${PKG_ADMIN} pmatch ${dep:Q} ${BUILTIN_PKG.MesaLib:Q}; then \

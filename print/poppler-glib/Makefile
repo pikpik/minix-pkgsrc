@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/31 20:37:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2006/04/01 17:23:14 reed Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -36,7 +36,7 @@ post-install:
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
-BUILDLINK_DEPENDS.poppler+=     poppler>=${POPPLER_VERS}nb1
+BUILDLINK_API_DEPENDS.poppler+=     poppler>=${POPPLER_VERS}nb1
 .include "../../print/poppler/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

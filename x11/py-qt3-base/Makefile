@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:11:41 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/10 10:45:02 drochner Exp $
 #
 
 .include "../../x11/py-qt3-base/Makefile.common"
@@ -8,7 +8,7 @@ PKGREVISION=		2
 
 COMMENT=		Python binding for Qt3
 
-BUILDLINK_DEPENDS.qt3-tools+=	qt3-tools>=3.1.2nb2
+BUILDLINK_API_DEPENDS.qt3-tools+=	qt3-tools>=3.1.2nb2
 
 PLIST_SRC=		${PKGDIR}/PLIST.common
 .if ${OPSYS} == "Darwin"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/22 20:58:01 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/04 21:31:09 jlam Exp $
 
 DISTNAME=	lablgtk-1.2.7
 PKGREVISION=	3
@@ -12,7 +12,7 @@ COMMENT=	GTK+ bindings for ocaml
 USE_TOOLS+=	gmake
 
 BUILDLINK_DEPMETHOD.ocaml=	full
-BUILDLINK_DEPENDS.ocaml+=	ocaml>=3.0.5
+BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.0.5
 
 .include "../../mk/bsd.prefs.mk"
 

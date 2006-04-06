@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.12 2006/02/11 14:30:29 rxg Exp $
+# $NetBSD: Makefile.common,v 1.13 2006/03/30 20:57:08 jmmv Exp $
 #
 
 DBUS_VERSION=	0.61
@@ -75,7 +75,7 @@ INSTALL_DIRS+=		${WRKSRC}/${f}
 SUBST_FILES.paths+=	${f}/Makefile.in
 .  endfor
 
-BUILDLINK_DEPENDS.dbus+=	dbus>=${DBUS_VERSION}
+BUILDLINK_API_DEPENDS.dbus+=	dbus>=${DBUS_VERSION}
 .  include "../../sysutils/dbus/buildlink3.mk"
 .endif
 

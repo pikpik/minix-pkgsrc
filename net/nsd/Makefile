@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/12/12 20:34:14 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2005/12/29 06:22:00 jlam Exp $
 
 DISTNAME=	nsd-2.3.3
 CATEGORIES=	net
@@ -9,7 +9,7 @@ HOMEPAGE=	http://www.nlnetlabs.nl/nsd/index.html
 COMMENT=	Authoritative-only DNS server
 
 BUILD_DEFS+=	USE_INET6
-BUILDLINK_DEPENDS.openssl+=	openssl>=0.9.7
+BUILDLINK_API_DEPENDS.openssl+=	openssl>=0.9.7
 
 .include "../../mk/bsd.prefs.mk"
 
