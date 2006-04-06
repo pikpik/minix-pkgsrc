@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.9 2006/01/13 22:59:44 tonio Exp $
+${EMACS_INFOPREFIX}/auctex.info
 ${EMACS_LISPPREFIX}/auctex.el
 ${EMACS_LISPPREFIX}/auctex/bib-cite.el
 ${EMACS_LISPPREFIX}/auctex/bib-cite.elc
