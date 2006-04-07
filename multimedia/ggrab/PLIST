@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/ggrab
+bin/sserver
+share/doc/ggrab/README
+share/examples/rc.d/sserver
+@dirrm share/doc/ggrab
