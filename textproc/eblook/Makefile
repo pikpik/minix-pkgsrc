@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/04/11 21:47:34 tv Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:01 joerg Exp $
 #
 
 DISTNAME=	eblook-1.6.1
@@ -15,6 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 GNU_CONFIGURE=	YES
 INFO_FILES=	eblook.info
 CONFIGURE_ARGS+=--with-eb-conf=${PKG_SYSCONFDIR.eb}/eb.conf
+LIBS+=		${BUILDLINK_LDADD.iconv}
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
