@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2006/03/10 15:10:08 ghen Exp $
+# $NetBSD: Makefile,v 1.83 2006/04/04 21:16:37 wiz Exp $
 
 DISTNAME=	gnupg-1.4.3
 CATEGORIES=	security
@@ -27,10 +27,9 @@ USE_TOOLS+=		gmake
 CONFIGURE_ARGS+=	--with-static-rnd=auto
 CONFIGURE_ARGS+=	--with-mailprog=/usr/sbin/sendmail
 TEST_TARGET=		check
+INFO_FILES=		# PLIST
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
-
-INFO_FILES=	gpg.info gpgv.info
 
 .include "options.mk"
 

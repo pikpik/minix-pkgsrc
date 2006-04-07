@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/04 21:30:39 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/03/05 16:27:28 jlam Exp $
 #
 
 DISTNAME=       zsh-3.0.8
@@ -16,7 +16,7 @@ COMMENT=	The Z shell
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	makeinfo
-INFO_FILES=	zsh.info
+INFO_FILES=	# PLIST
 
 .include "../../mk/bsd.prefs.mk"
 
