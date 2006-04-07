@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/02/05 23:11:03 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/07 02:09:57 minskim Exp $
 
 DISTNAME=	latex2html-2002-2-1
 PKGNAME=	latex2html-2002.2.1
@@ -28,5 +28,5 @@ CONFIGURE_ARGS+=	--with-iconpath=${LATEX2HTML_ICONPATH:Q}
 .endif
 CONFIGURE_ARGS+=	--with-gs=${TOOLS_PATH.gs:Q}
 
-.include "../../mk/tex.buildlink3.mk"
+.include "../../print/teTeX/module.mk"
 .include "../../mk/bsd.pkg.mk"
