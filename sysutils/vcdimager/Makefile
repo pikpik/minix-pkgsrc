@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/05/22 20:08:33 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/02/05 23:10:57 joerg Exp $
 #
 
 DISTNAME=	vcdimager-0.6.2
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
-INFO_FILES=	vcdimager.info
+INFO_FILES=	# PLIST
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/07/16 19:10:40 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/04 21:30:43 jlam Exp $
 #
 
 DISTNAME=	stow-1.3.3
@@ -13,7 +13,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	perl:run
-
-INFO_FILES=	stow.info
+INFO_FILES=	# PLIST
 
 .include "../../mk/bsd.pkg.mk"

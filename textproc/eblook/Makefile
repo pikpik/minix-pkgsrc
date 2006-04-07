@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:01 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/07 18:59:30 jlam Exp $
 #
 
 DISTNAME=	eblook-1.6.1
@@ -13,7 +13,7 @@ COMMENT=	Interactive command-line interface for EPWING electric dictionaries
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	YES
-INFO_FILES=	eblook.info
+INFO_FILES=	# PLIST
 CONFIGURE_ARGS+=--with-eb-conf=${PKG_SYSCONFDIR.eb}/eb.conf
 LIBS+=		${BUILDLINK_LDADD.iconv}
 
