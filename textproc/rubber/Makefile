@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:07 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/05 16:27:28 jlam Exp $
 #
 
 DISTNAME=		rubber-1.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		textproc
 MASTER_SITES=		http://ebeffara.free.fr/pub/
 
@@ -13,13 +13,16 @@ COMMENT=		Automated system for building LaTeX documents
 USE_TOOLS+=		makeinfo
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
-INFO_FILES=		rubber.info
+INFO_FILES=		# PLIST
 TEXINFO_REQD=		4.6
 PYTHON_VERSIONS_ACCEPTED=	24 23
 TEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
 
-CONFIGURE_ARGS+=	--python=${PYTHONBIN:Q} --prefix=${PREFIX:Q} \
-			--datadir=${PREFIX}/share
+CONFIGURE_ARGS+=	--python=${PYTHONBIN:Q}				
+CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
+CONFIGURE_ARGS+=	--datadir=${PREFIX:Q}/share
+CONFIGURE_ARGS+=	--mandir=${PREFIX:Q}/${PKGMANDIR:Q}
+CONFIGURE_ARGS+=	--infodir=${PREFIX:Q}/${PKGINFODIR:Q}
 
 .include "../../lang/python/application.mk"
 .include "../../mk/tex.buildlink3.mk"
