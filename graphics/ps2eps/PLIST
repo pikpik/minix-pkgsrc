@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bbox
+bin/ps2eps
+man/man1/bbox.1
+man/man1/ps2eps.1
