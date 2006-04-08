@@ -1,4 +1,4 @@
-#     $NetBSD: Interix.x11.dist,v 1.4 2006/02/16 18:14:45 wiz Exp $
+#     $NetBSD: Interix.x11.dist,v 1.5 2006/02/22 21:42:05 wiz Exp $
 #     FreeBSD Id: BSD.x11.dist,v 1.2 1997/06/10 07:55:10 asami Exp
 #
 
@@ -389,6 +389,10 @@
                 ..
             ..
             dk
+                LC_MESSAGES
+                ..
+            ..
+            dz
                 LC_MESSAGES
                 ..
             ..
