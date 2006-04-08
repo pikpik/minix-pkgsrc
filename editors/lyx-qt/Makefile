@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/02/05 23:08:57 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2006/04/07 00:54:25 minskim Exp $
 #
 
 .include "./Makefile.common"
@@ -15,6 +15,10 @@ CONFIGURE_ARGS+= 	--with-extra-prefix=${BUILDLINK_PREFIX.qt3-libs} \
 			--with-qt-includes=${BUILDLINK_PREFIX.qt3-libs}/qt3/include \
 			--with-qt-libraries=${BUILDLINK_PREFIX.qt3-libs}/qt3/lib \
 			--with-frontend=qt
+
+# The following is a work-around because $PREFIX/qt3/lib/libqt-mt.so
+# didn't link with pthread during the configure check.
+CONFIGURE_ENV+=		qt_cv_libname=-lqt-mt
 
 .include "../../x11/qt3-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
