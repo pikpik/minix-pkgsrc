@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2006/03/05 16:27:28 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/08 05:12:12 jlam Exp $
 #
 
-DISTNAME=		rubber-1.0
-PKGREVISION=		3
+DISTNAME=		rubber-1.1
 CATEGORIES=		textproc
 MASTER_SITES=		http://ebeffara.free.fr/pub/
 
