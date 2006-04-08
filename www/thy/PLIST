@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.2 2004/04/23 22:08:00 reed Exp $
+@comment $NetBSD: PLIST,v 1.3 2005/05/02 20:34:07 reed Exp $
+info/thy.info
 man/man7/thy-auth.7
 man/man8/thy.8
 sbin/thy

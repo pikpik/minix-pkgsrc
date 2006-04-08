@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/09 14:50:31 ghen Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/11 10:07:50 ghen Exp $
 #
 
 DISTNAME=	ratpoison-1.4.0-beta4
@@ -10,10 +10,9 @@ MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/ratpoison/
 COMMENT=	Simple window manager with no fat library dependencies
 
-GNU_CONFIGURE=	YES
-USE_GNU_READLINE= YES
-
-INFO_FILES=	ratpoison.info
+GNU_CONFIGURE=		YES
+USE_GNU_READLINE=	YES
+INFO_FILES=		# PLIST
 
 REPLACE_INTERPRETER+=	bash
 REPLACE.bash.old=	/usr/bin/env bash
