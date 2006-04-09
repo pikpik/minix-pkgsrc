@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/xlog
 man/man1/xlog.1
 share/application-registry/xlog.applications
