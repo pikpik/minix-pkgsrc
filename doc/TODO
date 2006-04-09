@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4856 2006/04/09 16:18:29 wiz Exp $
+$NetBSD: TODO,v 1.4857 2006/04/09 16:54:58 minskim Exp $
 
 Suggested new packages
 ======================
@@ -1072,7 +1072,6 @@ Suggested package updates
 	o rpc2-1.28
 	o rpm-4.4.6
 	o rsnapshot-1.2.3
-	o rss2email-2.57
 	o rt-3.4.5
 	o rt-mysql-3.4.5
 	o rt-pgsql-3.4.5
