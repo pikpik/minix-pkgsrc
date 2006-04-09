@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/07 15:58:36 mjl Exp $
 #
 
 DISTNAME=		${PKGNAME}-linux
@@ -25,5 +25,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}/
 	${INSTALL_DATA_DIR} ${EGDIR}
 
-
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
