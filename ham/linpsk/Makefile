@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:42 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/09 21:04:44 jlam Exp $
 #
 
 DISTNAME=	linpsk-0.8.1
@@ -14,7 +14,6 @@ BUILD_DEPENDS+=	qt3-tools-3.*:../../x11/qt3-tools
 
 USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake
-USE_GNUMAKE=	yes
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 

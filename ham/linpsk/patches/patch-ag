@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.1 2005/03/16 15:32:12 rillig Exp $
 
 NetBSD-1.6.2 does not have struct sched_param.
 
