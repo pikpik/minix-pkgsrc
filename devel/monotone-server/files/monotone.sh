@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: monotone.sh,v 1.2 2005/12/02 17:56:25 jmmv Exp $
+# $NetBSD: monotone.sh,v 1.3 2006/02/21 16:09:16 jmmv Exp $
 #
 # PROVIDE: monotone
 # REQUIRE: DAEMON
@@ -21,7 +21,7 @@ fi
 
 name="monotone"
 rcvar=${name}
-command="@PREFIX@/bin/monotone"
+command="@PREFIX@/bin/mtn"
 command_args="--norc \
               --confdir=@PKG_SYSCONFDIR@ \
               --db=${monotone_home}/monotone.db \
@@ -37,6 +37,11 @@ required_files="@PKG_SYSCONFDIR@/branches.conf \
 start_precmd="monotone_start_precmd"
 
 monotone_start_precmd() {
+	if test ! -f ${monotone_home}/monotone.log; then
+		touch ${monotone_home}/monotone.log
+		chown ${monotone_user}:${monotone_group} \
+			${monotone_home}/monotone.log
+	fi
 	echo "=> Session started at `date`" >>${monotone_home}/monotone.log
 }
 
