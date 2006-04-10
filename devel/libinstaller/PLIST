@@ -5,9 +5,4 @@ include/installer/diskutil.h
 include/installer/functions.h
 include/installer/package.h
 include/installer/uiutil.h
-lib/libinstaller.a
-lib/libinstaller.so
-lib/libinstaller.so.4
-lib/libinstaller.so.${PKGVERSION}
-lib/libinstaller_pic.a
-@dirrm include/installer
+lib/libinstaller.la
