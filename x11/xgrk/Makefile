@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/04 09:33:36 is Exp $
 #
 
 DISTNAME=		xgrk-1.6.3
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://www.softlab.ece.ntua.gr/~sivann/xgrk/
 EXTRACT_SUFX=		.tar.gz
