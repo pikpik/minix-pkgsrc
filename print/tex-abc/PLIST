@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${PKG_LOCALTEXMFPREFIX}/doc/latex/abc/README
+${PKG_LOCALTEXMFPREFIX}/doc/latex/abc/abc.pdf
+${PKG_LOCALTEXMFPREFIX}/doc/latex/abc/example.tex
+${PKG_LOCALTEXMFPREFIX}/tex/latex/abc/abc.sty
+@dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/abc
+@dirrm ${PKG_LOCALTEXMFPREFIX}/doc/latex/abc
