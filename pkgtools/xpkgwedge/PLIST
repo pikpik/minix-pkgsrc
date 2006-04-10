@@ -1,3 +1,6 @@
-@comment $NetBSD: PLIST,v 1.3 2003/09/19 09:43:07 wiz Exp $
+@comment $NetBSD: PLIST,v 1.4 2003/11/23 06:46:54 jlam Exp $
 bin/pkgxmkmf
 lib/X11/config/xpkgwedge.def
+${IS_DARWIN}lib/X11/config/darwin.cf
+${IS_IRIX}lib/X11/config/sgi.cf
+${IS_IRIX6}lib/X11/config/X11.rules
