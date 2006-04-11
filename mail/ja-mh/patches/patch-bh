@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- uip/bbc.c.orig	2006-04-11 14:50:44.000000000 +0000
++++ uip/bbc.c
+@@ -112,8 +112,6 @@ struct bbcount {
+ 
+ /*  */
+ 
+-extern int  errno;
+-
+ static int  changed = 0;
+ static int  oops = 0;
+ static int  quitting = 0;

@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- uip/packf.c.orig	2006-04-11 14:44:10.000000000 +0000
++++ uip/packf.c
+@@ -27,9 +27,6 @@ static struct swit switches[] = {
+ 
+ /*  */
+ 
+-extern int errno;
+-
+-
+ static int  md = NOTOK;
+ 
+ char   *file = NULL;
