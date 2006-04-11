@@ -1,6 +1,5 @@
-$NetBSD: md5,v 1.1.1.1 2000/12/17 09:46:00 hubertf Exp $
+$NetBSD$
 
-MD5 (common-1.2.0.tar.gz) = 9d813322a04d84b315b23bb881282742
-SHA1 (patch-aa) = e07907ec236263033ab7f1b9900c2d7dde5441f0
-SHA1 (patch-ab) = adedc5c1bf8bbf9f5fdbbaf6db04eee505e72aa0
-SHA1 (patch-ac) = 58bbd43c7478083d657a4ba4b9b135d2970b5c02
+SHA1 (common-1.2.16.tar.gz) = 361bdabd36d114df97943bed648fc6abff741c56
+RMD160 (common-1.2.16.tar.gz) = e86aad6c4d5f4f3d8c19a89698e2faca7e0e21a2
+Size (common-1.2.16.tar.gz) = 247163 bytes
