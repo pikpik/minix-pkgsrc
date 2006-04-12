@@ -1,4 +1,4 @@
-# $NetBSD: OpenBSD.mk,v 1.21 2006/01/12 23:43:57 jlam Exp $
+# $NetBSD: OpenBSD.mk,v 1.22 2006/03/18 21:40:45 jlam Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -110,4 +110,5 @@ _OPSYS_MAX_CMDLEN_CMD=	/sbin/sysctl -n kern.argmax
 #GAMEOWN=		games
 #GAMEGRP=		games
 #GAMEMODE=		2555
+#GAMEDIRMODE=		0775
 #.endif

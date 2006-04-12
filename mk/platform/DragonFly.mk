@@ -1,4 +1,4 @@
-# $NetBSD: DragonFly.mk,v 1.25 2006/02/06 18:58:33 tv Exp $
+# $NetBSD: DragonFly.mk,v 1.26 2006/03/18 21:40:44 jlam Exp $
 #
 # Variable definitions for the DragonFly operating system.
 
@@ -95,4 +95,5 @@ _OPSYS_MAX_CMDLEN_CMD=	/sbin/sysctl -n kern.argmax
 GAMEOWN=		games
 GAMEGRP=		games
 GAMEMODE=		2555
+GAMEDIRMODE=		0775
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: BSDOS.mk,v 1.17 2006/01/12 23:43:57 jlam Exp $
+# $NetBSD: BSDOS.mk,v 1.18 2006/03/18 21:40:44 jlam Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -94,4 +94,5 @@ PKG_CREATE_USERGROUP=	NO # until it works
 #GAMEOWN=		games
 #GAMEGRP=		games
 #GAMEMODE=		2555
+#GAMEDIRMODE=		0775
 #.endif
