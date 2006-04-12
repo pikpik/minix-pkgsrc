@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/08/24 04:49:31 schmonz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:37 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 CVM_BUILDLINK3_MK:=	${CVM_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_PKGSRCDIR.cvm?=	../../security/cvm
 BUILDLINK_DEPMETHOD.cvm?=	build
 .endif	# CVM_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

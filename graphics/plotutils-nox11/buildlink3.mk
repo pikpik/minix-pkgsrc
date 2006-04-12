@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/04/17 01:14:19 snj Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:05 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PLOTUTILS_NOX11_BUILDLINK3_MK:=	${PLOTUTILS_NOX11_BUILDLINK3_MK}+
@@ -17,4 +17,4 @@ BUILDLINK_PKGSRCDIR.plotutils-nox11?=	../../graphics/plotutils-nox11
 
 .include "../../graphics/png/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

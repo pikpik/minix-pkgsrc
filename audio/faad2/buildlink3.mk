@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/02/05 23:08:06 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:21:34 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 FAAD2_BUILDLINK3_MK:=	${FAAD2_BUILDLINK3_MK}+
@@ -17,4 +17,4 @@ BUILDLINK_PKGSRCDIR.faad2?=	../../audio/faad2
 BUILDLINK_INCDIRS.faad2?=	include/faad2
 .endif	# FAAD2_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

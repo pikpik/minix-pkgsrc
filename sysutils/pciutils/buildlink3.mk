@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/02/05 23:10:56 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:46 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PCIUTILS_BUILDLINK3_MK:=	${PCIUTILS_BUILDLINK3_MK}+
@@ -17,4 +17,4 @@ BUILDLINK_PKGSRCDIR.pciutils?=	../../sysutils/pciutils
 BUILDLINK_DEPMETHOD.pciutils?=	build
 .endif	# PCIUTILS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

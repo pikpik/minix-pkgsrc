@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2004/10/03 00:17:49 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:22:30 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 BIND_BUILDLINK3_MK:=	${BIND_BUILDLINK3_MK}+
@@ -21,4 +21,4 @@ BUILDLINK_LDFLAGS.bind?=	${BUILDLINK_LDADD.bind}
 
 .include "../../security/openssl/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

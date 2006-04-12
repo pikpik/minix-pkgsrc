@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.22 2006/02/05 23:11:34 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2006/04/06 06:23:01 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GTK2_BUILDLINK3_MK:=	${GTK2_BUILDLINK3_MK}+
@@ -37,4 +37,4 @@ PRINT_PLIST_AWK+=	/^@dirrm lib\/gtk-2.0\/2.4.0\/(engines|filesystems|immodules|l
 .include "../../x11/xcursor/buildlink3.mk"
 .include "../../x11/Xrandr/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

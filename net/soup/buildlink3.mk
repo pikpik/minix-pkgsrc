@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:10:31 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:34 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SOUP_BUILDLINK3_MK:=	${SOUP_BUILDLINK3_MK}+
@@ -24,4 +24,4 @@ BUILDLINK_PKGSRCDIR.soup?=	../../net/soup
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/glib/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

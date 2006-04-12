@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/03/30 20:57:08 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:45 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 DBUS_BUILDLINK3_MK:=	${DBUS_BUILDLINK3_MK}+
@@ -20,4 +20,4 @@ PRINT_PLIST_AWK+=	/^@dirrm share\/dbus-1\/services/ \
 
 .include "../../textproc/expat/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

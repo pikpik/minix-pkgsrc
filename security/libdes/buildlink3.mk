@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2004/04/12 20:46:28 snj Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:42 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBDES_BUILDLINK3_MK:=	${LIBDES_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_PKGSRCDIR.libdes?=	../../security/libdes
 BUILDLINK_DEPMETHOD.libdes?=	build
 .endif	# LIBDES_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

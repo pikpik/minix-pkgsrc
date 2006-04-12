@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/02/05 23:10:22 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:30 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ORBIT_BUILDLINK3_MK:=	${ORBIT_BUILDLINK3_MK}+
@@ -20,4 +20,4 @@ BUILDLINK_PKGSRCDIR.ORBit?=	../../net/ORBit
 .include "../../devel/glib/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

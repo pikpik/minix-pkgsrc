@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2004/11/15 17:54:49 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2006/04/06 06:21:40 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 DB_BUILDLINK3_MK:=	${DB_BUILDLINK3_MK}+
@@ -25,4 +25,4 @@ BUILDLINK_TRANSFORM+=		l:db:db2
 .  endif
 .endif	# DB_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

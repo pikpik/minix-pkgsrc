@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/02/05 23:10:22 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:30 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SDL_NET_BUILDLINK3_MK:=	${SDL_NET_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.SDL_net?=	../../net/SDL_net
 
 .include "../../devel/SDL/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

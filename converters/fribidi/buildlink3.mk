@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/10/03 00:13:17 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:39 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 FRIBIDI_BUILDLINK3_MK:=	${FRIBIDI_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.fribidi+=	fribidi>=0.10.4nb1
 BUILDLINK_PKGSRCDIR.fribidi?=	../../converters/fribidi
 .endif	# FRIBIDI_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

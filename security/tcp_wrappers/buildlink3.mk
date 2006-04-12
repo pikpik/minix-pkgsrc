@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2005/10/18 04:32:01 grant Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/06 06:22:44 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 TCP_WRAPPERS_BUILDLINK3_MK:=	${TCP_WRAPPERS_BUILDLINK3_MK}+
@@ -24,4 +24,4 @@ BUILDLINK_LDADD.tcp_wrappers+=		-lnsl -lsocket
 BUILDLINK_LDFLAGS.tcp_wrappers?=	${BUILDLINK_LDADD.tcp_wrappers}
 .endif
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:08:28 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:39 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 OPENOBEX_BUILDLINK3_MK:=	${OPENOBEX_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.openobex+=	openobex>=1.0.1nb2
 BUILDLINK_PKGSRCDIR.openobex?=	../../comms/openobex
 .endif	# OPENOBEX_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

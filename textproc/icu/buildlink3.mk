@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/02/05 23:11:02 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/04/06 06:22:51 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ICU_BUILDLINK3_MK:=	${ICU_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.icu?=	icu>=3.4nb1
 BUILDLINK_PKGSRCDIR.icu?=	../../textproc/icu
 .endif	# ICU_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

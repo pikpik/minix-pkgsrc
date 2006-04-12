@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/02/05 23:09:30 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/06 06:22:02 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GDK_PIXBUF_BUILDLINK3_MK:=	${GDK_PIXBUF_BUILDLINK3_MK}+
@@ -23,4 +23,4 @@ BUILDLINK_CPPFLAGS.gdk-pixbuf+= \
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

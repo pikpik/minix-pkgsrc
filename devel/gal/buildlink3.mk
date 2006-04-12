@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/02/05 23:08:42 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:21:48 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GAL_BUILDLINK3_MK:=	${GAL_BUILDLINK3_MK}+
@@ -24,4 +24,4 @@ BUILDLINK_PKGSRCDIR.gal?=	../../devel/gal
 .include "../../sysutils/gnome-vfs/buildlink3.mk"
 #.include "../../textproc/libunicode/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

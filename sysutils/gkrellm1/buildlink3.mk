@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:10:50 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:45 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GKRELLM_BUILDLINK3_MK:=	${GKRELLM_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.gkrellm?=	../../sysutils/gkrellm1
 
 .include "../../graphics/imlib/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

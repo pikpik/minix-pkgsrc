@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/02/21 10:08:43 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:42 reed Exp $
 # XXX	BUILDLINK_DEPMETHOD.libnasl?=	build
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.libnasl?=	../../security/libnasl
 
 .include "../../security/nessus-libraries/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

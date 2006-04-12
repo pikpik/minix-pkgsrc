@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/12/26 22:09:50 zuntum Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:21:54 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 PCRE++_BUILDLINK3_MK:=	${PCRE++_BUILDLINK3_MK}+
@@ -17,4 +17,4 @@ BUILDLINK_PKGSRCDIR.pcrexx?=	../../devel/pcre++
 
 .include "../../devel/pcre/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/03/12 22:14:09 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:22:50 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNOME_DOC_UTILS_BUILDLINK3_MK:=	${GNOME_DOC_UTILS_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_API_DEPENDS.gnome-doc-utils+=	gnome-doc-utils>=0.6.0
 BUILDLINK_PKGSRCDIR.gnome-doc-utils?=	../../textproc/gnome-doc-utils
 .endif	# GNOME_DOC_UTILS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

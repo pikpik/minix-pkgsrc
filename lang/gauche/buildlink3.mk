@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2005/12/09 15:38:54 uebayasi Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:11 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GAUCHE_BUILDLINK3_MK:=	${GAUCHE_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.Gauche?=	../../lang/gauche
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

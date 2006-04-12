@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/10/03 00:18:19 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:49 reed Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.chasen-base?=	../../textproc/chasen-base
 
 .include "../../devel/darts/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

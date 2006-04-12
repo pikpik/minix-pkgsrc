@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:11:44 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:23:04 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 WXGTK24_BUILDLINK3_MK:=	${WXGTK24_BUILDLINK3_MK}+
@@ -25,4 +25,4 @@ BUILDLINK_PKGSRCDIR.wxGTK24?=	../../x11/wxGTK24
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.11 2006/02/05 23:09:33 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.12 2006/04/06 06:22:03 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 IMLIB2_BUILDLINK3_MK:=	${IMLIB2_BUILDLINK3_MK}+
@@ -25,4 +25,4 @@ BUILDLINK_PKGSRCDIR.imlib2?=	../../graphics/imlib2
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

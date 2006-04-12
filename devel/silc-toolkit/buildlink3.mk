@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/10/03 00:13:33 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:56 reed Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -17,4 +17,4 @@ BUILDLINK_ABI_DEPENDS.silc-toolkit+=	silc-toolkit>=0.9.12nb1
 BUILDLINK_PKGSRCDIR.silc-toolkit?=	../../devel/silc-toolkit
 .endif	# SILC_TOOLKIT_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

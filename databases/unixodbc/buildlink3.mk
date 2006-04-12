@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/10/15 11:54:10 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:43 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 UNIXODBC_BUILDLINK3_MK:=	${UNIXODBC_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.unixodbc+=	unixodbc>=2.0.11nb3
 BUILDLINK_PKGSRCDIR.unixodbc?=	../../databases/unixodbc
 .endif	# UNIXODBC_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

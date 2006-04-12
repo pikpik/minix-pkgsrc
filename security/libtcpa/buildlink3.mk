@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2004/03/26 02:27:52 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:43 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBTCPA_BUILDLINK3_MK:=	${LIBTCPA_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_DEPMETHOD.libtcpa?=	build
 
 .include "../../security/openssl/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

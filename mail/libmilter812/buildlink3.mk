@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2004/08/30 20:53:20 adrianp Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:18 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBMILTER_BUILDLINK3_MK:=	${LIBMILTER_BUILDLINK3_MK}+
@@ -20,4 +20,4 @@ PTHREAD_OPTS+=		require
 
 .include "../../mk/pthread.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

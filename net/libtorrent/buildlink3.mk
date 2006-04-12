@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/03/03 15:30:53 tron Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:33 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBTORRENT_BUILDLINK3_MK:=	${LIBTORRENT_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.libtorrent?=	../../net/libtorrent
 .include "../../devel/libsigc++2/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

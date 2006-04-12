@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2006/02/05 23:09:46 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2006/04/06 06:22:12 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MONO_BUILDLINK3_MK:=	${MONO_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.mono?=	../../lang/mono
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../textproc/icu/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

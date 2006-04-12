@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2006/02/05 23:09:41 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2006/04/06 06:22:06 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XPM_BUILDLINK3_MK:=	${XPM_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.xpm?=	../../graphics/xpm
 
 .include "../../mk/x11.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

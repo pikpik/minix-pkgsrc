@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/03/22 15:12:07 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:11 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GHC_BUILDLINK3_MK:=	${GHC_BUILDLINK3_MK}+
@@ -20,7 +20,7 @@ BUILDLINK_DEPMETHOD.ghc?=	build
 
 .include "../../devel/readline/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
 
 # We include gmp/buildlink3.mk here so that "gmp" is registered as a
 # direct dependency for any package that includes this buildlink3.mk

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:09:43 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:07 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 UNICON_IM_BUILDLINK3_MK:=	${UNICON_IM_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.unicon-im?=	../../inputmethod/unicon-im
 
 .include "../../devel/pth/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

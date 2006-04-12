@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/02/05 23:08:45 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:21:53 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSIGC++_BUILDLINK3_MK:=	${LIBSIGC++_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.libsigcxx+=	libsigc++>=1.2.7nb1
 BUILDLINK_PKGSRCDIR.libsigcxx?=	../../devel/libsigc++
 .endif	# LIBSIGC++_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

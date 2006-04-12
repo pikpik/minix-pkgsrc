@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/03/08 06:33:31 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:18 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBETPAN_BUILDLINK3_MK:=	${LIBETPAN_BUILDLINK3_MK}+
@@ -22,4 +22,4 @@ BUILDLINK_PKGSRCDIR.libetpan?=	../../mail/libetpan
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

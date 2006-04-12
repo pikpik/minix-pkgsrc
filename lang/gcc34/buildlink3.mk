@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/02/05 23:09:45 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/04/06 06:22:11 reed Exp $
 
 BUILDLINK_DEPTH:=       ${BUILDLINK_DEPTH}+
 GCC34_BUILDLINK3_MK:=  ${GCC34_BUILDLINK3_MK}+
@@ -48,4 +48,4 @@ BUILDLINK_DEPMETHOD.gcc?=	build
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=       ${BUILDLINK_DEPTH:S/+$//}

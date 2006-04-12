@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2005/12/30 21:03:59 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:41 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 IODBC_BUILDLINK3_MK:=	${IODBC_BUILDLINK3_MK}+
@@ -21,4 +21,4 @@ BUILDLINK_PKGSRCDIR.iodbc?=	../../databases/iodbc
 .  include "../../mk/pthread.buildlink3.mk"
 .endif
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

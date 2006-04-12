@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:09:44 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:11 reed Exp $
 
 BUILDLINK_DEPTH:=       ${BUILDLINK_DEPTH}+
 GCC3_ADA_BUILDLINK3_MK:=  ${GCC3_ADA_BUILDLINK3_MK}+
@@ -34,4 +34,4 @@ BUILDLINK_DEPMETHOD.gcc3-ada?=	build
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=       ${BUILDLINK_DEPTH:S/+$//}

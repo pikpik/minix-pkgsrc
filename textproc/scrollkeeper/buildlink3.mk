@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/02/05 23:11:07 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:22:52 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SCROLLKEEPER_BUILDLINK3_MK:=	${SCROLLKEEPER_BUILDLINK3_MK}+
@@ -46,4 +46,4 @@ scrollkeeper-buildlink-fake:
 	fi
 .endif	# SCROLLKEEPER_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

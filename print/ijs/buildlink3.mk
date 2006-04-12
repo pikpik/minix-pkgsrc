@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:10:37 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:36 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 IJS_BUILDLINK3_MK:=	${IJS_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.ijs+=	ijs>=0.34nb2
 BUILDLINK_PKGSRCDIR.ijs?=	../../print/ijs
 .endif	# IJS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

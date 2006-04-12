@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2006/02/05 23:08:39 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2006/04/06 06:21:44 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APR_BUILDLINK3_MK:=	${APR_BUILDLINK3_MK}+
@@ -42,4 +42,4 @@ MAKEVARS+=	PKG_BUILD_OPTIONS.apr
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:08:37 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:43 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SQLITE_BUILDLINK3_MK:=	${SQLITE_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.sqlite+=	sqlite>=2.8.16nb1
 BUILDLINK_PKGSRCDIR.sqlite?=	../../databases/sqlite
 .endif	# SQLITE_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

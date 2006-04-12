@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/11/25 22:55:54 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:52 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBLTDL_BUILDLINK3_MK:=	${LIBLTDL_BUILDLINK3_MK}+
@@ -26,4 +26,4 @@ BUILDLINK_PKGSRCDIR.libltdl?=	../../devel/libltdl
 .include "../../mk/dlopen.buildlink3.mk"
 .endif
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

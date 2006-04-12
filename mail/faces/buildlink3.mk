@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/02/05 23:09:54 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:18 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 FACES_BUILDLINK3_MK:=	${FACES_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.faces+=	faces>=1.6.1nb4
 BUILDLINK_PKGSRCDIR.faces?=	../../mail/faces
 .endif	# FACES_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

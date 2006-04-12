@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/02/05 23:11:17 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:53 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 AP_PERL_BUILDLINK3_MK:=	${AP_PERL_BUILDLINK3_MK}+
@@ -24,4 +24,4 @@ BUILDLINK_FILES.ap-perl+=	\
 
 .include "../../www/apache/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

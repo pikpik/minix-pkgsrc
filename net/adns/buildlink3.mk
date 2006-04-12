@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:10:22 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:30 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ADNS_BUILDLINK3_MK:=	${ADNS_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.adns+=	adns>=1.1nb2
 BUILDLINK_PKGSRCDIR.adns?=	../../net/adns
 .endif	# ADNS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

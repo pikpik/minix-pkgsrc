@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/09/14 17:18:06 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:34 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SAMBA_BUILDLINK3_MK:=	${SAMBA_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.samba?=	../../net/samba
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

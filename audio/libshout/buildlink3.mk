@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/02/28 02:21:20 kim Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:21:35 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSHOUT_BUILDLINK3_MK:=	${LIBSHOUT_BUILDLINK3_MK}+
@@ -20,4 +20,4 @@ BUILDLINK_PKGSRCDIR.libshout?=	../../audio/libshout
 .include "../../multimedia/libtheora/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

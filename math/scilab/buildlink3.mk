@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/02/05 23:10:04 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:22 reed Exp $
 #
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
@@ -30,4 +30,4 @@ MAKE_ENV+=	SCI=${SCI:Q}
 
 SCIVERSION=	3.1.1
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

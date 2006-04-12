@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:08:51 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:55 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_GAME_BUILDLINK3_MK:=	${PY_GAME_BUILDLINK3_MK}+
@@ -25,4 +25,4 @@ BUILDLINK_PKGSRCDIR.${PYPKGPREFIX}-game?=	../../devel/py-game
 
 .endif	# PY_GAME_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

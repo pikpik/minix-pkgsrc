@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/02/05 23:08:36 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:42 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_PSYCOPG_BUILDLINK3_MK:=	${PY_PSYCOPG_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.psycopg?=	${PYPKGPREFIX}-psycopg>=1.1.21nb1
 BUILDLINK_PKGSRCDIR.psycopg?=	../../databases/py-psycopg
 .endif	# PY_PSYCOPG_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/10/03 00:13:21 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:41 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 METAKIT_LIB_BUILDLINK3_MK:=	${METAKIT_LIB_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.metakit-lib+=	metakit-lib>=2.4.9.3nb1
 BUILDLINK_PKGSRCDIR.metakit-lib?=	../../databases/metakit-lib
 .endif	# METAKIT_LIB_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

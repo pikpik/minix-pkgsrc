@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/03/26 16:54:51 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:52 reed Exp $
 #
 # This Makefile fragment is included by packages that use xmlcatmgr.
 #
@@ -45,4 +45,4 @@ PRINT_PLIST_AWK+=	/^@dirrm share\/(sgml|xml)$$/ \
 
 .endif	# XMLCATMGR_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2004/11/02 20:36:50 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:49 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GTL_BUILDLINK3_MK:=	${GTL_BUILDLINK3_MK}+
@@ -15,4 +15,4 @@ BUILDLINK_API_DEPENDS.gtl+=		gtl>=1.2.0
 BUILDLINK_PKGSRCDIR.gtl?=	../../devel/gtl
 .endif	# GTL_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

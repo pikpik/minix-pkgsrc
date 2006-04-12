@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2005/09/19 14:56:26 hira Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:13 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PYEXTCLASS_BUILDLINK3_MK:=	${PYEXTCLASS_BUILDLINK3_MK}+
@@ -18,4 +18,4 @@ BUILDLINK_PKGSRCDIR.pyextclass?=	../../lang/py-extclass
 
 .include "../../lang/python20/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

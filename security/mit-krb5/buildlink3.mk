@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2005/04/16 14:32:53 salo Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:43 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 MIT_KRB5_BUILDLINK3_MK:=	${MIT_KRB5_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_ABI_DEPENDS.mit-krb5+=	mit-krb5>=1.4nb1
 BUILDLINK_PKGSRCDIR.mit-krb5?=		../../security/mit-krb5
 .endif	# MIT_KRB5_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

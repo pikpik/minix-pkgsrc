@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/11/08 13:34:39 tv Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:56 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SYSEXITS_BUILDLINK3_MK:=	${SYSEXITS_BUILDLINK3_MK}+
@@ -16,4 +16,4 @@ BUILDLINK_DEPMETHOD.sysexits?=	build
 BUILDLINK_PKGSRCDIR.sysexits?=	../../devel/sysexits
 .endif	# SYSEXITS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

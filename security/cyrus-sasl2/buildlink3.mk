@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/02/05 23:10:43 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/04/06 06:22:37 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 CYRUS_SASL_BUILDLINK3_MK:=	${CYRUS_SASL_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.cyrus-sasl?=	../../security/cyrus-sasl2
 # Cyrus SASL mechanisms are shared modules loaded via dlopen().
 .include "../../mk/dlopen.buildlink3.mk"
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

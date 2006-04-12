@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/02/05 23:11:20 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:53 reed Exp $
 
 BUILDLINK_DEPMETHOD.clearsilver?=	build
 
@@ -18,4 +18,4 @@ BUILDLINK_ABI_DEPENDS.clearsilver+=	clearsilver>=0.10.1
 BUILDLINK_PKGSRCDIR.clearsilver?=	../../www/clearsilver-base
 .endif
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

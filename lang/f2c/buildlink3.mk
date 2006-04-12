@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/12/05 20:50:25 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:10 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 F2C_BUILDLINK3_MK:=	${F2C_BUILDLINK3_MK}+
@@ -24,4 +24,4 @@ CONFIGURE_ENV+=         CPP=${CPP:Q}
 MAKE_ENV+=              CC_f2c=${CC:Q}
 MAKE_ENV+=              CPP=${CPP:Q}
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

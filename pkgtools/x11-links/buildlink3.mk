@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2005/06/10 03:44:07 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:36 reed Exp $
 #
 # Don't include this file manually!  It will be included as necessary
 # by bsd.buildlink3.mk.
@@ -34,4 +34,4 @@ BUILDLINK_TRANSFORM.x11-links+=	-e "s|/share/x11-links/|/|"
 
 .endif	# X11_LINKS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/03/21 06:39:33 martti Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:42 reed Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 POSTGRESQL81_CLIENT_BUILDLINK3_MK:=	${POSTGRESQL81_CLIENT_BUILDLINK3_MK}+
@@ -30,4 +30,4 @@ BUILDLINK_FILES.postgresql81-client+=	bin/pg_config
 .include "../../security/openssl/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH:S/+$//}

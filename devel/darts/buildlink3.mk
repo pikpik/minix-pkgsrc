@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2004/05/08 21:34:43 kristerw Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:47 reed Exp $
 
 BUILDLINK_DEPMETHOD.darts?=	build
 
@@ -17,4 +17,4 @@ BUILDLINK_API_DEPENDS.darts+=	darts>=0.2
 BUILDLINK_PKGSRCDIR.darts?=	../../devel/darts
 .endif	# DARTS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

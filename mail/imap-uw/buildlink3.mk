@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2005/10/05 15:49:44 salo Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:18 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 IMAP_UW_BUILDLINK3_MK:=	${IMAP_UW_BUILDLINK3_MK}+
@@ -23,4 +23,4 @@ BUILDLINK_TRANSFORM+=		l:imapuw:c-client
 
 .include "../../security/openssl/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

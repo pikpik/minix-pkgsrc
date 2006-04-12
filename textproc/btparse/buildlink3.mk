@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/09/27 12:24:06 tonio Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:49 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 BTPARSE_BUILDLINK3_MK:=	${BTPARSE_BUILDLINK3_MK}+
@@ -15,4 +15,4 @@ BUILDLINK_API_DEPENDS.btparse+=	btparse>=0.34
 BUILDLINK_PKGSRCDIR.btparse?=	../../textproc/btparse
 .endif	# BTPARSE_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

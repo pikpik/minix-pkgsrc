@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/02/05 23:09:57 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:19 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PERDITION_BUILDLINK3_MK:=	${PERDITION_BUILDLINK3_MK}+
@@ -22,4 +22,4 @@ BUILDLINK_PKGSRCDIR.perdition?=	../../mail/perdition
 #.include "../../devel/vanessa_logger/buildlink3.mk"
 #.include "../../devel/vanessa_socket/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2005/07/14 20:05:17 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:33 reed Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LZO_BUILDLINK3_MK:=	${LZO_BUILDLINK3_MK}+
@@ -15,4 +15,4 @@ BUILDLINK_API_DEPENDS.lzo+=		lzo>=2.01
 BUILDLINK_PKGSRCDIR.lzo?=	../../archivers/lzo
 .endif	# LZO_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

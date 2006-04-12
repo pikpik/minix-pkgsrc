@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/03/30 21:09:48 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/06 06:22:45 reed Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBGTOP2_BUILDLINK3_MK:=	${LIBGTOP2_BUILDLINK3_MK}+
@@ -19,4 +19,4 @@ BUILDLINK_PKGSRCDIR.libgtop2?=	../../sysutils/libgtop2
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
