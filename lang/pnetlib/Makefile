@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:47 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/18 22:59:38 wiz Exp $
 #
 
 PKGREVISION=		3
@@ -8,8 +8,6 @@ PKGREVISION=		3
 # Disable xft support for now, it's broken.
 #CONFIGURE_ARGS+=	--enable-xft
 CONFIGURE_ARGS+=	--with-x
-
-PLIST_SUBST+=		WITH_X11=
 
 CONFLICTS=		pnetlib-nox11-[0-9]*
 
