@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2005/07/15 18:27:48 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2005/10/31 17:03:02 tv Exp $
 
 DISTNAME=       bonnie
 PKGNAME=	bonnie-2.06
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	benchmarks
 MASTER_SITES=   http://www.textuality.com/bonnie/
 
