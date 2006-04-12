@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:28:52 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/05 21:40:57 adam Exp $
 
 DISTNAME=	arj-3.10.22
 CATEGORIES=	archivers
@@ -31,8 +31,8 @@ post-install:
 	${INSTALL_DATA_DIR} ${ARJ_DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/COPYING ${WRKSRC}/doc/debug.txt 	\
 					${ARJ_DOCSDIR}
-	for i in arjl.txt arjs.txt history.txt readme.txt unix.txt; do\
-		${INSTALL_DATA} ${WRKSRC}/resource/en/$$i ${ARJ_DOCSDIR};\
-		done
+.for i in arjl.txt arjs.txt history.txt readme.txt unix.txt
+	${INSTALL_DATA} ${WRKSRC}/resource/en/${i:Q} ${ARJ_DOCSDIR}
+.endfor
 
 .include "../../mk/bsd.pkg.mk"
