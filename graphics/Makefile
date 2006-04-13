@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.414 2006/04/06 16:47:17 drochner Exp $
+# $NetBSD: Makefile,v 1.415 2006/04/08 22:56:56 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -55,8 +55,6 @@ SUBDIR+=	dia-python
 SUBDIR+=	digikam
 SUBDIR+=	digikam-doc
 SUBDIR+=	digikamimageplugins
-SUBDIR+=	dvdbackup
-SUBDIR+=	dvdview
 SUBDIR+=	dx
 SUBDIR+=	dxsamples
 SUBDIR+=	eog2
