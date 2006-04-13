@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/02/05 23:08:36 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2006/03/04 21:29:11 jlam Exp $
 
 DISTNAME=	python-ldap-2.0.10
 PKGNAME=	${DISTNAME:S/python/${PYPKGPREFIX}/}
@@ -20,7 +20,7 @@ SUBST_SED.setup=		-e "s|@EXTRALIBS@|${BUILDLINK_PREFIX.cyrus-sasl}/lib ${BUILDLI
 				-e "s|@EXTRAINCS@|${BUILDLINK_PREFIX.cyrus-sasl}/include/sasl ${BUILDLINK_PREFIX.openldap}/include|"
 
 .include "../../databases/openldap/buildlink3.mk"
-.include "../../security/cyrus-sasl2/buildlink3.mk"
+.include "../../security/cyrus-sasl/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == ""

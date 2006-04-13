@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:55 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:10:42 joerg Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy2-plain/}
 PKGREVISION=	1
@@ -7,7 +7,7 @@ SASL_PLUGIN=	yes
 
 CONFLICTS=	cyrus-sasl<=2.1.19nb1
 
-.include "../../security/cyrus-sasl2/Makefile.common"
+.include "../../security/cyrus-sasl/Makefile.common"
 
 CONFIGURE_ARGS+=	--enable-plain
 

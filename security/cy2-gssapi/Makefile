@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 23:55:17 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:42 joerg Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy2-gssapi/}
 PKGREVISION=	1
@@ -7,7 +7,7 @@ SASL_PLUGIN=	yes
 
 CONFLICTS=	cyrus-sasl<=2.1.19nb1
 
-.include "../../security/cyrus-sasl2/Makefile.common"
+.include "../../security/cyrus-sasl/Makefile.common"
 
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 CONFIGURE_ARGS+=	--enable-gssapi=${KRB5BASE:Q}

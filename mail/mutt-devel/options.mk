@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.11 2005/12/05 23:55:11 rillig Exp $
+# $NetBSD: options.mk,v 1.12 2005/12/20 17:23:11 tonio Exp $
 
 # Global and legacy options
 
@@ -26,7 +26,7 @@ CONFIGURE_ARGS+=	--with-curses=${BUILDLINK_PREFIX.ncurses}
 ### SASLv2
 ###
 .if !empty(PKG_OPTIONS:Msasl)
-.  include "../../security/cyrus-sasl2/buildlink3.mk"
+.  include "../../security/cyrus-sasl/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-sasl=${BUILDLINK_PREFIX.cyrus-sasl}
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/02/05 23:09:54 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2006/03/14 01:14:30 jlam Exp $
 
 DISTNAME=		cyrus-imapd-2.1.18
 PKGREVISION=		3
@@ -128,7 +128,7 @@ PERL5_PACKLIST= \
 	auto/Cyrus/SIEVE/managesieve/.packlist
 
 .include "../../lang/perl5/module.mk"
-.include "../../security/cyrus-sasl2/buildlink3.mk"
+.include "../../security/cyrus-sasl/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 
