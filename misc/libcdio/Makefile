@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2006/03/31 23:56:28 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/04/12 16:47:51 joerg Exp $
 
 DISTNAME=	libcdio-0.76
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU:=libcdio/}
 
@@ -30,6 +30,7 @@ pre-patch:
 	${CP} ${FILESDIR}/_cdio_netbsd.c ${WRKSRC}/lib/driver/FreeBSD/freebsd.c
 .endif
 
+.include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../audio/libcddb/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
