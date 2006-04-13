@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/24 07:31:55 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:08:14 joerg Exp $
 
 DISTNAME=	libtunepimp-0.3.0
 PKGNAME=	${DISTNAME:S/lib//}
@@ -10,7 +10,7 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.musicbrainz.org/
 COMMENT=	Create MusicBrainz enabled tagging applications
 
-CONFLICTS=	trm-[0-9]*
+CONFLICTS=	trm-[0-9]* libtunepimp-[0-9]*
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
