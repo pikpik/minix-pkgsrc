@@ -1,4 +1,4 @@
-# $NetBSD: tools.NetBSD.mk,v 1.26 2006/03/06 05:25:45 jlam Exp $
+# $NetBSD: tools.NetBSD.mk,v 1.27 2006/04/13 16:35:59 jlam Exp $
 #
 # System-supplied tools for the NetBSD operating system.
 
@@ -94,4 +94,7 @@ TOOLS_PLATFORM.true?=		true			# shell builtin
 TOOLS_PLATFORM.tsort?=		/usr/bin/tsort
 TOOLS_PLATFORM.wc?=		/usr/bin/wc
 TOOLS_PLATFORM.xargs?=		/usr/bin/xargs
+.if exists(/usr/bin/xgettext)
+TOOLS_PLATFORM.xgettext?=	/usr/bin/xgettext
+.endif
 TOOLS_PLATFORM.yacc?=		/usr/bin/yacc
