@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/02/05 23:10:50 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/04/13 18:23:37 jlam Exp $
 .include "../../sysutils/gkrellm/Makefile.common"
 
-PKGREVISION=		1
+PKGREVISION=		#
 GKRELLM_PKGBASE=	gkrellm-share
 
 COMMENT=		GKrellM2 locale files
