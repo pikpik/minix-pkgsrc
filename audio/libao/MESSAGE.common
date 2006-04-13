@@ -1,0 +1,14 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.1.1.1 2004/08/27 00:05:19 wiz Exp $
+
+This libao package provides its core library but no output plugins
+by itself.  You will have to install an audio/libao-* plugin package
+in order to get audio working.
+
+  libao-arts    --  aRts plugin
+  libao-esound  --  EsounD (ESD or Enlighten Sound Daemon) plugin
+  libao-macosx  --  MacOS X plugin
+  libao-oss     --  OSS (Open Sound System) plugin
+  libao-sun     --  Sun audio plugin
+
+===========================================================================
