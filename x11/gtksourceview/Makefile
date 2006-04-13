@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/03/30 21:22:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.32 2006/04/12 19:57:58 drochner Exp $
 #
 
 DISTNAME=	gtksourceview-1.6.1
@@ -10,12 +10,10 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://gtksourceview.sourceforge.net/
 COMMENT=	Text widget that extends GTK2's GtkTextView widget
 
-BUILD_USES_MSGFMT=	yes
-
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake perl pkg-config
+USE_TOOLS+=		gmake msgfmt perl pkg-config
 
 PKGCONFIG_OVERRIDE=	gtksourceview-1.0.pc.in
 

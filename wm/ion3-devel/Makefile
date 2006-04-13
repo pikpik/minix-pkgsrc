@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/12/29 06:22:20 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/11 10:03:48 cube Exp $
 #
 
 DISTNAME=	ion-3ds-20060107
@@ -12,9 +12,8 @@ COMMENT=	Keyboard friendly tiling window manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_TOOLS+=	gmake
+USE_TOOLS+=		gmake msgfmt
 USE_PKGLOCALEDIR=	YES
-BUILD_USES_MSGFMT=	YES
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ENV+=		PKGLOCALEDIR=${PREFIX}/${PKGLOCALEDIR}/locale

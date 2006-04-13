@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2005/12/29 06:22:17 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:10:50 joerg Exp $
 
 DISTNAME=	gentoo-0.11.55
 PKGREVISION=	1
@@ -9,8 +9,7 @@ MAINTAINER=	dunse@goa.nu
 HOMEPAGE=	http://www.obsession.se/gentoo/
 COMMENT=	Two-pane filemanager using GTK+, 100% GUI configurable
 
-BUILD_USES_MSGFMT=	yes
-
+USE_TOOLS+=		msgfmt
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}

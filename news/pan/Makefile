@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/01/24 07:32:31 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2006/02/05 23:10:33 joerg Exp $
 #
 
 DISTNAME=		pan-0.14.2
@@ -11,9 +11,7 @@ MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://pan.rebelbase.com/
 COMMENT=		Newsreader for GTK2
 
-BUILD_USES_MSGFMT=	YES
-
-USE_TOOLS+=		perl pkg-config
+USE_TOOLS+=		msgfmt perl pkg-config
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

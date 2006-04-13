@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/05 00:00:09 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:09:26 joerg Exp $
 #
 
 DISTNAME=		vis5d+-1.2.1
@@ -12,7 +12,7 @@ COMMENT=		Volumetric Visualization program for scientific datasets
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=       yes
-BUILD_USES_MSGFMT=	yes
+USE_TOOLS+=		msgfmt
 
 GNU_CONFIGURE=		yes
 

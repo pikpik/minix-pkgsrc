@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/28 11:13:21 martti Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/02 10:41:41 martti Exp $
 
 PKGNAME=	vim-lang-${VIM_VERSION}.${VIM_PATCHLEVEL}
 #PKGREVISION=	1
@@ -9,7 +9,7 @@ COMMENT=	Language files for the vim editor (vi clone)
 
 DEPENDS+=	vim-share-${VIM_VERSION}.${VIM_PATCHLEVEL}{,nb*}:../../editors/vim-share
 
-BUILD_USES_MSGFMT=	yes
+USE_TOOLS+=	msgfmt
 BUILD_TARGET=	languages
 INSTALL_TARGET=	install-languages
 

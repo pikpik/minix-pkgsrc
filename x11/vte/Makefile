@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/03/30 21:18:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.31 2006/04/06 06:23:04 reed Exp $
 #
 
 DISTNAME=	vte-0.12.0
@@ -10,13 +10,11 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Terminal widget with improved accessibility and I18N support
 
-BUILD_USES_MSGFMT=	yes
-
 USE_DIRS+=		gnome2-1.2
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config
 
 CONFIGURE_ARGS+=	--disable-gtk-doc
 CONFIGURE_ARGS+=	--disable-python

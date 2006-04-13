@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/03/04 21:28:55 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/03/30 21:27:25 jmmv Exp $
 #
 
 DISTNAME=	gnome-speech-0.3.10
@@ -10,9 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME 2 text-to-speech API
 
-BUILD_USES_MSGFMT=	yes
-
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

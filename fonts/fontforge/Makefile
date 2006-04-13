@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/03/07 23:09:28 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2006/03/18 04:52:33 minskim Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
@@ -13,12 +13,9 @@ COMMENT=	Postscript font editor
 
 VERSION=	20060209
 
-BUILD_USES_MSGFMT=	yes
-USE_MSGFMT_PLURALS=	yes
-
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-freetype-src
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}

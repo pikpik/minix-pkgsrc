@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2005/12/05 20:49:48 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/02/05 23:08:11 joerg Exp $
 #
 
 DISTNAME=	madplay-0.15.2b
@@ -11,11 +11,10 @@ MAINTAINER=	simonb@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/mad/
 COMMENT=	High-quality MPEG audio decoder
 
-BUILD_USES_MSGFMT=	YES
-
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+USE_TOOLS+=		msgfmt
 
 # Avoid an ICE in gcc2 on sparc64
 CONFIGURE_ENV+=		F77=${FALSE:Q}

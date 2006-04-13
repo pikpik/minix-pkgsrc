@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/30 03:17:10 markd Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/12 11:37:19 markd Exp $
 
 DISTNAME=	kde-i18n-hr-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -8,7 +8,7 @@ COMMENT=	Language bindings for the KDE desktop
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
-BUILD_USES_MSGFMT=	yes
+USE_TOOLS+=		msgfmt
 
 SUBST_CLASSES+=		common
 SUBST_STAGE.common=	post-patch

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/24 07:32:30 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:10:26 joerg Exp $
 
 DISTNAME=	kftpgrabber-0.6.0
 PKGREVISION=	3
@@ -10,8 +10,8 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=       http://kftpgrabber.sourceforge.net/
 COMMENT=	Graphical FTP client for KDE
 
-BUILD_USES_MSGFMT=	yes
 USE_LANGUAGES=		c c++
+USE_TOOLS+=		msgfmt
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 

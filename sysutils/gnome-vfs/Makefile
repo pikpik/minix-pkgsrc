@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2006/02/05 23:10:51 joerg Exp $
+# $NetBSD: Makefile,v 1.56 2006/04/06 06:22:45 reed Exp $
 
 DISTNAME=		gnome-vfs-1.0.5
 PKGREVISION=		10
@@ -10,12 +10,11 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME Virtual File System
 
 BROKEN_GETTEXT_DETECTION=	yes
-BUILD_USES_MSGFMT=	YES
 BUILDLINK_API_DEPENDS.gnome-mime-data+=	gnome-mime-data>=2.0.1
 
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

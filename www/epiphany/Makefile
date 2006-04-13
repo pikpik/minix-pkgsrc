@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/03/30 21:26:06 jmmv Exp $
+# $NetBSD: Makefile,v 1.52 2006/04/06 06:22:53 reed Exp $
 #
 
 DISTNAME=	epiphany-2.14.0
@@ -10,13 +10,10 @@ MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/epiphany/
 COMMENT=	The web browser for the GNOME Desktop
 
-BUILD_USES_MSGFMT=	YES
-
 GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.5
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config
 USE_LIBTOOL=		YES
-USE_MSGFMT_PLURALS=	YES
 USE_PKGLOCALEDIR=	YES
 
 PKGCONFIG_OVERRIDE=	data/epiphany-1.8.pc.in

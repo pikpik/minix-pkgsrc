@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:30 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/04 21:29:07 jlam Exp $
 #
 
 DISTNAME=	abook-0.5.5
@@ -13,7 +13,7 @@ COMMENT=	Text-based addressbook program
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGLOCALEDIR=	yes
-BUILD_USES_MSGFMT=	yes
+USE_TOOLS+=		msgfmt
 USE_GNU_READLINE=	yes
 GNU_CONFIGURE=		yes
 

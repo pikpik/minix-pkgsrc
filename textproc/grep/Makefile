@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/03/05 16:27:28 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/07 19:54:17 jlam Exp $
 #
 
 DISTNAME=	grep-2.5.1
@@ -12,12 +12,11 @@ HOMEPAGE=	http://www.gnu.org/software/grep/grep.html
 COMMENT=	GNU grep
 
 USE_PKGLOCALEDIR=	YES
-BUILD_USES_MSGFMT=	YES
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--disable-perl-regexp
 
-USE_TOOLS+=		makeinfo
+USE_TOOLS+=		makeinfo msgfmt
 TEXINFO_REQD=		4.0
 INFO_FILES=		# PLIST
 

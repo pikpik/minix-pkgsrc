@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/02 10:01:43 ghen Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/02 10:02:10 ghen Exp $
 
 DISTNAME=		cplay-1.49
 PKGREVISION=		2
@@ -11,8 +11,8 @@ COMMENT=		Curses front-end for various audio players
 
 PYTHON_PATCH_SCRIPTS=	cplay
 
-BUILD_USES_MSGFMT=	yes
 USE_PKGLOCALEDIR=	yes
+USE_TOOLS+=		msgfmt
 
 PKGLOCALES=		da de hu pl
 EGDIR=			${PREFIX}/share/examples/cplay

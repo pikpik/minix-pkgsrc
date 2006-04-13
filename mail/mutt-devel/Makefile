@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/04/11 13:57:32 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2006/04/11 14:13:21 jlam Exp $
 
 DISTNAME=		mutt-1.5.11
 PKGREVISION=		4
@@ -17,9 +17,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILD_USES_MSGFMT=	yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		perl:run
+USE_TOOLS+=		msgfmt perl:run
 REPLACE_PERL=		*.pl */*.pl
 
 GNU_CONFIGURE=		yes

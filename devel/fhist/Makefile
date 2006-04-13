@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/01/15 18:31:50 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:42 joerg Exp $
 #
 
 DISTNAME=		fhist-1.13
@@ -10,11 +10,8 @@ MAINTAINER=		Matthew@Aldous.com
 HOMEPAGE=		http://fhist.sourceforge.net/
 COMMENT=		File history and comparison tools
 
-BUILD_USES_MSGFMT=	YES
-
+USE_TOOLS+=		gsoelim msgfmt
 GNU_CONFIGURE=		YES
-
-USE_TOOLS+=		gsoelim
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 

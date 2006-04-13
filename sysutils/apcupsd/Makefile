@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/12/29 06:22:16 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2006/02/05 23:10:48 joerg Exp $
 
 DISTNAME=		apcupsd-3.8.6
 PKGREVISION=		5
@@ -9,9 +9,7 @@ MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://www.sibbald.com/apcupsd/
 COMMENT=		UPS power management for APCC Products
 
-BUILD_USES_MSGFMT=	yes
-
-USE_TOOLS+=		gmake sh
+USE_TOOLS+=		gmake msgfmt sh
 
 GNU_CONFIGURE=		yes
 

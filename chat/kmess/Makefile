@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:08:25 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/03/04 21:29:03 jlam Exp $
 #
 
 DISTNAME=	kmess-1.1
@@ -10,10 +10,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kmess.sourceforge.net/
 COMMENT=	MSN Messenger Client for KDE3
 
-BUILD_USES_MSGFMT=	yes
-
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 
