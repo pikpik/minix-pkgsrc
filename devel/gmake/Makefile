@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2006/03/30 03:44:43 jlam Exp $
+# $NetBSD: Makefile,v 1.66 2006/04/02 20:10:51 wiz Exp $
 
 DISTNAME=	make-3.81
 PKGNAME=	g${DISTNAME}
@@ -42,7 +42,6 @@ MAKEFLAGS+=		GMAKE_LOCALE=${GMAKE_LOCALE:Q}
 .if !empty(GMAKE_LOCALE:M[yY][eE][sS])
 USE_PKGLOCALEDIR=		yes
 PLIST_SRC+=			${PKGDIR}/PLIST.locale
-BROKEN_GETTEXT_DETECTION=	no
 .  include "../../devel/gettext-lib/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-libintl
