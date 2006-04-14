@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/01/24 07:32:00 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2006/02/05 23:08:39 joerg Exp $
 
 .include "../../www/apache2/Makefile.common"
 
@@ -43,6 +43,8 @@ SUBST_STAGE.conf=	pre-configure
 SUBST_FILES.conf=	apr/config.layout apr-util/config.layout
 SUBST_SED.conf=		-e "s,@PREFIX@,${PREFIX},g"
 SUBST_MESSAGE.conf=	"Fixing hardcoded paths."
+
+TEST_TARGET=		check
 
 do-configure:
 	@cd ${WRKSRC}/apr && ${SETENV} ${CONFIGURE_ENV} ./configure \

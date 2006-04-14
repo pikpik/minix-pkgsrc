@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.139 2006/02/08 12:19:38 tv Exp $
+# $NetBSD: Makefile,v 1.140 2006/03/05 21:25:48 adam Exp $
 
 .include "Makefile.common"
 
@@ -23,6 +23,8 @@ GCC_REQD+=		2.95.3
 
 PLIST_SUBST+=		IM_MAJOR_VER=${IM_MAJOR_VER:Q}
 PLIST_SUBST+=		IM_MAJOR_LIB_VER=${IM_MAJOR_LIB_VER:Q}
+
+TEST_TARGET=		check
 
 .include "options.mk"
 
