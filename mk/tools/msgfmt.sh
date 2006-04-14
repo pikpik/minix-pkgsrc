@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: msgfmt.sh,v 1.7 2006/04/14 14:40:34 jlam Exp $
+# $NetBSD: msgfmt.sh,v 1.8 2006/04/14 22:16:33 jlam Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -119,9 +119,6 @@ if test -z "$debug"; then
 else
 	debug="${TEE} $pofile.debug"
 fi
-
-# XXX
-cmd="${CAT}"
 
 ${CAT} $pofile | ${AWK} '
 BEGIN {
