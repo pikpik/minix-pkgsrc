@@ -34,3 +34,5 @@ ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunyt.fd
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs
+@comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex
+@comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/makeindex
