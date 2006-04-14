@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2006/03/31 14:31:03 drochner Exp $
+# $NetBSD: Makefile,v 1.80 2006/04/05 07:04:18 uebayasi Exp $
 
 DISTNAME=	tiff-3.8.2
 PKGREVISION=	1
@@ -21,6 +21,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-rpath
 CONFIGURE_ARGS+=	--enable-cxx
 CONFIGURE_ARGS+=	--with-docdir=${PREFIX}/share/doc/tiff
+
+TEST_TARGET=		check
 
 .include "options.mk"
 
