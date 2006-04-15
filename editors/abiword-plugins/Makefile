@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/02/08 10:00:55 adam Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/06 00:18:15 wiz Exp $
 
 .include "../../editors/abiword/Makefile.common"
 
 PKGNAME=	abiword-plugins-${ABIWORD_VERSION}
-PKGREVISION=	5
 COMMENT=	Plugins enhancing Abiword's capabilities
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/abiword-plugins
@@ -16,7 +15,6 @@ CONFIGURE_ARGS+=	--disable-all
 CONFIGURE_ARGS+=	--enable-OpenDocument
 CONFIGURE_ARGS+=	--enable-OpenWriter
 CONFIGURE_ARGS+=	--enable-abicapi
-CONFIGURE_ARGS+=	--enable-abicollab
 CONFIGURE_ARGS+=	--enable-abicommand
 CONFIGURE_ARGS+=	--enable-abidash
 CONFIGURE_ARGS+=	--enable-applix
