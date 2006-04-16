@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2006/04/06 06:22:45 reed Exp $
+# $NetBSD: Makefile,v 1.19 2006/04/13 18:26:01 jmmv Exp $
 #
 
-DISTNAME=	gnome-menus-2.13.5
+DISTNAME=	gnome-menus-2.14.0
 CATEGORIES=	sysutils gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-menus/2.13/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-menus/2.14/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	jmmv@NetBSD.org
