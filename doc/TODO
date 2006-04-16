@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4882 2006/04/15 22:19:00 wiz Exp $
+$NetBSD: TODO,v 1.4883 2006/04/15 22:29:33 tonio Exp $
 
 Suggested new packages
 ======================
@@ -734,8 +734,6 @@ Suggested package updates
 	o mini_sendmail-1.3.5
 	o minivmac-2.6.1
 	o mknmz-wwwoffle-0.7.2
-	o mldonkey-2.7.5
-	o mldonkey-gui-2.7.5
 	o mlview-0.9.0
 	o mmix-20050922
 	o molden-4.4
