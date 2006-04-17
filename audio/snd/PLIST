@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2005/11/23 22:39:12 wiz Exp $
 bin/snd
 man/man1/snd.1
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/snd.mo
+share/locale/de/LC_MESSAGES/snd.mo

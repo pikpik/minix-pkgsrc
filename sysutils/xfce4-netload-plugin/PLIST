@@ -1,9 +1,9 @@
-@comment $NetBSD: PLIST,v 1.4 2004/10/08 06:21:52 martti Exp $
-${PKGLOCALEDIR}/locale/ca/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/de/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/fr/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/ko/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/lt/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/pl/LC_MESSAGES/xfce4-netload.mo
-${PKGLOCALEDIR}/locale/uk/LC_MESSAGES/xfce4-netload.mo
+@comment $NetBSD: PLIST,v 1.5 2005/06/23 07:25:06 martti Exp $
 lib/xfce4/panel-plugins/libnetload.la
+share/locale/ca/LC_MESSAGES/xfce4-netload.mo
+share/locale/de/LC_MESSAGES/xfce4-netload.mo
+share/locale/fr/LC_MESSAGES/xfce4-netload.mo
+share/locale/ko/LC_MESSAGES/xfce4-netload.mo
+share/locale/lt/LC_MESSAGES/xfce4-netload.mo
+share/locale/pl/LC_MESSAGES/xfce4-netload.mo
+share/locale/uk/LC_MESSAGES/xfce4-netload.mo

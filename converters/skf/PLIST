@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/31 03:35:25 minskim Exp $
 bin/skf
 man/ja_JP.EUC/man1/skf.1
 man/man1/skf.1
@@ -262,7 +262,7 @@ share/skf/lib/oNMSUL.stb
 share/skf/lib/oNMTVG.stb
 share/skf/lib/oNMTVL.stb
 share/skf/lib/readme.txt
-${PKGLOCALEDIR}/locale/ja/LC_MESSAGES/skf.mo
+share/locale/ja/LC_MESSAGES/skf.mo
 @dirrm share/doc/skf
 @dirrm share/skf/lib
 @dirrm share/skf
