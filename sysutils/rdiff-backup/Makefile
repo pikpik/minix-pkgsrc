@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:42 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/06 06:22:46 reed Exp $
 #
 
-DISTNAME=	rdiff-backup-1.0.1
-PKGREVISION=	1
+DISTNAME=	rdiff-backup-1.0.4
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://savannah.nongnu.org/download/rdiff-backup/
 
@@ -17,7 +16,7 @@ SUBST_CLASSES+=		path
 SUBST_STAGE.path=	post-patch
 SUBST_FILES.path=	setup.py
 SUBST_SED.path=		-e "s|%%LOCALBASE%%|${LOCALBASE}|g"
-SUBST_MESSAGE.path=	"Fixing paths."
+SUBST_MESSAGE.path=	Fixing paths.
 
 BUILDLINK_API_DEPENDS.librsync+=	librsync>=0.9.6
 
