@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/04/06 06:22:45 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/04/12 10:27:34 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GKRELLM_BUILDLINK3_MK:=	${GKRELLM_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	gkrellm
 
 .if !empty(GKRELLM_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gkrellm+=	gkrellm>=2.1.22
-BUILDLINK_ABI_DEPENDS.gkrellm?=	gkrellm>=2.2.7nb2
+BUILDLINK_ABI_DEPENDS.gkrellm?=	gkrellm>=2.2.9nb1
 BUILDLINK_PKGSRCDIR.gkrellm?=	../../sysutils/gkrellm
 .endif	# GKRELLM_BUILDLINK3_MK
 

@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/06 13:30:41 adam Exp $
 
 DISTNAME=	pgadmin3-1.4.2
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	${PGSQL_MIRRORS:=pgadmin3/release/v1.4.2/src/}
 

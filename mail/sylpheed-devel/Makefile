@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2006/02/06 18:05:53 xtraeme Exp $
+# $NetBSD: Makefile,v 1.32 2006/04/13 18:23:35 jlam Exp $
 
 DISTNAME=	sylpheed-2.2.0beta8
+PKGREVISION=	1
 CATEGORIES=	mail news x11
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sylpheed-claws/}
 MASTER_SITES=	http://sylpheed.good-day.net/sylpheed/v2.2beta/

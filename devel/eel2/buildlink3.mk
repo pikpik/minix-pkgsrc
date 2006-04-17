@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.14 2006/04/12 09:46:26 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.15 2006/04/12 10:27:07 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 EEL2_BUILDLINK3_MK:=	${EEL2_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	eel2
 
 .if !empty(EEL2_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.eel2+=	eel2>=2.10.0
-BUILDLINK_ABI_DEPENDS.eel2?=	eel2>=2.12.2nb2
+BUILDLINK_ABI_DEPENDS.eel2?=	eel2>=2.14.1nb1
 BUILDLINK_PKGSRCDIR.eel2?=	../../devel/eel2
 .endif	# EEL2_BUILDLINK3_MK
 

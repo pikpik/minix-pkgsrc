@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2006/04/12 20:11:25 drochner Exp $
+# $NetBSD: Makefile,v 1.38 2006/04/13 18:23:38 jlam Exp $
 #
 
 DISTNAME=	nautilus-cd-burner-2.14.1
+PKGREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/nautilus-cd-burner/2.14/}
 EXTRACT_SUFX=	.tar.bz2

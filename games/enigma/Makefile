@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:09:14 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/02 09:49:01 jmmv Exp $
 
 DISTNAME=	enigma-0.92
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://savannah.nongnu.org/download/enigma/
 

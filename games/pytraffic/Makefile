@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:09:21 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:43 jlam Exp $
 #
 
 DISTNAME=		pytraffic-2.5
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		games
 MASTER_SITES=	http://alpha.uhasselt.be/Research/Algebra/Members/pytraffic/
 

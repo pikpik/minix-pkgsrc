@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2006/02/05 23:11:39 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2006/03/12 13:57:24 rillig Exp $
 
 DISTNAME=	kterm-6.2.0
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 

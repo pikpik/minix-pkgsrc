@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2006/03/21 06:00:45 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2006/04/13 18:23:33 jlam Exp $
 #
 
 DISTNAME=		gturing-0.1.1
-PKGREVISION=		18
+PKGREVISION=		19
 CATEGORIES=		games gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gturing/0.1/}
 EXTRACT_SUFX=		.tar.bz2

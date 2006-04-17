@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2006/04/06 15:57:32 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/04/06 18:18:15 jlam Exp $
 
 DISTNAME=	dvipng-1.7
+PKGREVISION=	1
 CATEGORIES=	textproc converters
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvipng/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2006/03/09 21:04:44 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/09 16:08:06 rillig Exp $
 #
 
 DISTNAME=	linpsk-0.8.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	ham
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=linpsk/}
 

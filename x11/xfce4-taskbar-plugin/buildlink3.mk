@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:23:05 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/12 10:27:44 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_TASKBAR_PLUGIN_BUILDLINK3_MK:=	${XFCE4_TASKBAR_PLUGIN_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-taskbar-plugin
 
 .if !empty(XFCE4_TASKBAR_PLUGIN_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.xfce4-taskbar-plugin+=	xfce4-taskbar-plugin>=0.2.2
-BUILDLINK_ABI_DEPENDS.xfce4-taskbar-plugin?=	xfce4-taskbar-plugin>=0.2.2nb2
+BUILDLINK_ABI_DEPENDS.xfce4-taskbar-plugin?=	xfce4-taskbar-plugin>=0.2.2nb3
 BUILDLINK_PKGSRCDIR.xfce4-taskbar-plugin?=	../../x11/xfce4-taskbar-plugin
 .endif	# XFCE4_TASKBAR_PLUGIN_BUILDLINK3_MK
 

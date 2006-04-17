@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2006/01/19 11:18:41 adam Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/06 06:22:05 reed Exp $
 
 DISTNAME=	optipng-0.5
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cs.toronto.edu/~cosmin/pngtech/optipng/
 

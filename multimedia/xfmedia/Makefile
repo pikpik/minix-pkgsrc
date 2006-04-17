@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:10:18 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/13 18:23:36 jlam Exp $
 #
 
 DISTNAME=		xfmedia-0.9.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		multimedia
 MASTER_SITES=		http://spuriousinterrupt.org/projects/xfmedia/files/
 EXTRACT_SUFX=           .tar.bz2

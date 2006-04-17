@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/04/06 06:22:46 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/04/12 10:27:36 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XFCE4_FM_BUILDLINK3_MK:=	${XFCE4_FM_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-fm
 
 .if !empty(XFCE4_FM_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.xfce4-fm+=	xfce4-fm>=4.2.3
-BUILDLINK_ABI_DEPENDS.xfce4-fm?=	xfce4-fm>=4.2.3nb2
+BUILDLINK_ABI_DEPENDS.xfce4-fm?=	xfce4-fm>=4.2.3nb4
 BUILDLINK_PKGSRCDIR.xfce4-fm?=	../../sysutils/xfce4-fm
 .endif	# XFCE4_FM_BUILDLINK3_MK
 

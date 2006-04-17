@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/15 18:25:07 minskim Exp $
 #
 
 DISTNAME=		pycairo-1.0.2
 PKGNAME=		${PYPKGPREFIX}-cairo-1.0.2
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://cairographics.org/releases/
 

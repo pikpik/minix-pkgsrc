@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2006/03/05 16:27:24 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2006/03/30 03:44:43 jlam Exp $
 #
 
 DISTNAME=		guile-gtk-0.40.91
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		devel x11
 MASTER_SITES=		http://www.ir.bbn.com/~gdt/pkgsrc-wip/
 

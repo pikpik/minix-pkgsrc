@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/03/12 06:56:30 minskim Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/06 06:22:42 reed Exp $
 
 DISTNAME=	libfwbuilder-2.0.10
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	security net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fwbuilder/}
 
