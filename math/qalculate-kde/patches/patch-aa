@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/Makefile.in.orig	2005-06-11 09:32:35.000000000 +0000
+--- src/Makefile.in.orig	2006-03-24 11:16:10.000000000 +0100
 +++ src/Makefile.in
-@@ -839,7 +839,6 @@ messages: rc.cpp
+@@ -831,7 +831,6 @@ messages: rc.cpp
  	$(XGETTEXT) *.cpp -o $(podir)/qalculate_kde.pot
  
  install-exec-local:
