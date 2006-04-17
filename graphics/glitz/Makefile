@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:31 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/06 16:23:41 drochner Exp $
 
 DISTNAME=	glitz-0.4.4
 PKGREVISION=	3
@@ -23,7 +23,6 @@ CFLAGS+=		-c99
 .endif
 
 .include "../../graphics/MesaLib/buildlink3.mk"
-.include "../../x11/xextensions/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
