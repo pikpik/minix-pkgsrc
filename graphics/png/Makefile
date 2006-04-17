@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.75 2006/04/16 23:19:15 wiz Exp $
+# $NetBSD: Makefile,v 1.76 2006/04/17 12:49:16 tron Exp $
 
 DISTNAME=	libpng-1.2.9
 PKGNAME=	${DISTNAME:S/lib//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
 		http://www.libpng.org/pub/png/src/ \
@@ -21,6 +21,12 @@ GNU_CONFIGURE=	yes
 PKGCONFIG_OVERRIDE=	scripts/libpng.pc.in
 TEST_TARGET=	test
 USE_LIBTOOL=	yes
+
+SUBST_CLASSES+=		rpathfix
+SUBST_FILES.rpathfix=	scripts/libpng-config.in
+SUBST_MESSAGE.rpathfix=	Adding rpath to libpng-config.
+SUBST_SED.rpathfix=	'/^L_opts=/s|-L\([	 ]*[^	 ]*\)"|${COMPILER_RPATH_FLAG}\1 -L\1"|g'
+SUBST_STAGE.rpathfix=	pre-configure
 
 # highly version dependent -- fix up libtool .la file contents, since
 # just copying a .la file to a new filename is not enough
