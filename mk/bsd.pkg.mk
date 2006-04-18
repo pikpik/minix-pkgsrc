@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1815 2006/04/12 19:28:47 reed Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1816 2006/04/12 21:01:15 joerg Exp $
 #
 # This file is in the public domain.
 #
@@ -3902,8 +3902,9 @@ show-tools:
 #
 CTYPE?=			Updated
 NETBSD_LOGIN_NAME?=	${_NETBSD_LOGIN_NAME_cmd:sh}
-PKGSRC_CHANGES?=	${PKGSRCDIR}/doc/CHANGES
+PKGSRC_CHANGES?=	${PKGSRCDIR}/doc/CHANGES-${_CYEAR_cmd:sh}
 
+_CYEAR_cmd=		${DATE} -u +%Y
 _CDATE_cmd=		${DATE} -u +%Y-%m-%d
 _NETBSD_LOGIN_NAME_cmd=	${ID} -nu
 
