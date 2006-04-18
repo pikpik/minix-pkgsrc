@@ -1,0 +1,4 @@
+# $NetBSD$
+
+RPMFILES=		glib-1.2.10-595.${SUSE_ARCH}.rpm \
+			gtk-1.2.10-888.${SUSE_ARCH}.rpm
