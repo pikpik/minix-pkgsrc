@@ -1,0 +1,3 @@
+# $NetBSD$
+
+RPMFILES=		aspell-0.60.3-2.${SUSE_ARCH}.rpm
