@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:10:31 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/09 09:38:42 adrianp Exp $
 
 .include "../../net/snort/Makefile.common"
 
@@ -16,6 +16,15 @@ DISTINFO_FILE=	${PKGDIR}/distinfo
 
 CONFIGURE_ARGS+=	--with-mysql=${BUILDLINK_PREFIX.mysql-client}
 LDFLAGS+=		${BUILDLINK_LDFLAGS.mysql-client}
+
+PKG_OPTIONS_VAR=	PKG_OPTIONS.snort-mysql
+PKG_SUPPORTED_OPTIONS=	debug
+
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Mdebug)
+CONFIGURE_ARGS+=	--enable-debug
+.endif
 
 .include "../../mk/mysql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
