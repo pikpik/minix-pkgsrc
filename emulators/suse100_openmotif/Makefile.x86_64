@@ -1,0 +1,3 @@
+# $NetBSD$
+
+RPMFILES=		openmotif-libs-2.2.3-13.${SUSE_ARCH}.rpm
