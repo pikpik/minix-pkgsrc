@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/10 15:22:14 joerg Exp $
 #
 
-DISTNAME=	dfuibe_installer-1.1.6
+DISTNAME=	dfuibe_installer-1.1.7
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://packages.stura.uni-rostock.de/bsdinstaller/distfiles/
 
