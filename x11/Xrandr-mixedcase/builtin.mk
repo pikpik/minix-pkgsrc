@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.14 2006/03/30 18:06:19 jlam Exp $
+# $NetBSD: builtin.mk,v 1.15 2006/04/06 06:22:56 reed Exp $
 
 BUILTIN_PKG:=	Xrandr
 
@@ -65,8 +65,8 @@ MAKEVARS+=	BUILTIN_PKG.Xrandr
 .if defined(USE_BUILTIN.Xrender) && !empty(USE_BUILTIN.Xrender:M[nN][oO])
 USE_BUILTIN.Xrender=	no
 .endif
-.if defined(USE_BUILTIN.randrext) && !empty(USE_BUILTIN.randrext:M[nN][oO])
-USE_BUILTIN.randrext=	no
+.if defined(USE_BUILTIN.randrproto) && !empty(USE_BUILTIN.randrproto:M[nN][oO])
+USE_BUILTIN.randrproto=	no
 .endif
 
 .if !defined(USE_BUILTIN.Xrandr)
@@ -107,7 +107,7 @@ BUILDLINK_API_DEPENDS.Xrender+=	Xrender>=0.8
 .  if !empty(USE_BUILTIN.Xrandr:M[yY][eE][sS])
 BUILDLINK_PREFIX.Xrandr=	${X11BASE}
 USE_BUILTIN.Xrender=		yes
-USE_BUILTIN.randrext=		yes
+USE_BUILTIN.randrproto=		yes
 .  endif
 
 .endif	# CHECK_BUILTIN.Xrandr
