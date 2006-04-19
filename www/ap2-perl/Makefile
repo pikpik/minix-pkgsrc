@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:11:18 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:56 jlam Exp $
 
 DISTNAME=	mod_perl-2.0.1
 PKGNAME=	${DISTNAME:S/mod_/ap2-/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www perl5
 MASTER_SITES=	http://perl.apache.org/dist/
 
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://perl.apache.org/
 COMMENT=	Module that embeds a Perl interpreter into Apache
 
-CONFLICTS=	ap-perl-[0-9]*
+CONFLICTS=	ap-perl-[0-9]* p5-Apache-Test-[0-9]*
 
 APACHE_MODULE=		# defined
 PERL5_PACKLIST=		auto/mod_perl2/.packlist
