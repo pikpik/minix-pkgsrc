@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2006/01/24 07:32:04 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:52 joerg Exp $
 
 DISTNAME=		rt-3.2.3
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		devel
 MASTER_SITES=		http://download.bestpractical.com/pub/rt/release/
 
@@ -72,7 +72,7 @@ _RT_DB_TYPE=		Pg
 
 # Dev dependencies:
 DEPENDS+=	p5-Regexp-Common>=2.113:../../textproc/p5-Regexp-Common
-DEPENDS+=	p5-Apache-Test-[0-9]*:../../www/p5-Apache-Test
+DEPENDS+=	{p5-Apache-Test-[0-9]*,ap2-perl>=2.0.1}:../../www/p5-Apache-Test
 DEPENDS+=	p5-WWW-Mechanize>=0.72:../../www/p5-WWW-Mechanize
 
 USE_PKGLOCALEDIR=	yes
