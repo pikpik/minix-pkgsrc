@@ -1,7 +1,8 @@
-# $NetBSD: options.mk,v 1.7 2005/12/05 23:55:17 rillig Exp $
+# $NetBSD: options.mk,v 1.8 2006/04/13 21:35:24 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cyrus-saslauthd
 PKG_SUPPORTED_OPTIONS=	pam kerberos ldap gssapi
+
 .include "../../mk/bsd.options.mk"
 
 ###
@@ -10,6 +11,8 @@ PKG_SUPPORTED_OPTIONS=	pam kerberos ldap gssapi
 .if !empty(PKG_OPTIONS:Mpam)
 .  include "../../mk/pam.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pam=${PAMBASE:Q}
+.else
+CONFIGURE_ARGS+=	--without-pam
 .endif
 
 ###
@@ -22,6 +25,7 @@ BUILDLINK_INCDIRS.cyrus-sasl=	include/sasl
 CONFIGURE_ARGS+=	--with-ldap=${BUILDLINK_PREFIX.openldap}
 PLIST_SUBST+=		LDAP=
 .else
+CONFIGURE_ARGS+=	--without-ldap
 PLIST_SUBST+=		LDAP="@comment "
 .endif
 
