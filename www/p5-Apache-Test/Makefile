@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2005/08/06 06:19:36 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2005/11/23 22:19:50 wiz Exp $
 #
 
-DISTNAME=		Apache-Test-1.27
+DISTNAME=		Apache-Test-1.28
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5apt
 CATEGORIES=		www perl5
@@ -10,6 +10,8 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Apache/}
 MAINTAINER=		adam@migus.org
 HOMEPAGE=		http://search.cpan.org/dist/Apache-Test/
 COMMENT=		Wrapper for Test.pm to test an Apache server
+
+CONFLICTS+=		ap2-perl-[0-9]*
 
 PERL5_PACKLIST=		auto/Apache/Test/.packlist
 
