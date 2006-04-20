@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST.dga,v 1.2 2004/09/20 22:39:03 wiz Exp $
-lib/ggi/display/xf86dga.la
-lib/ggi/helper/helper_x_dga.la
