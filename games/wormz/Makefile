@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:09:23 joerg Exp $
 #
 
 DISTNAME=		Wormz-1.0b5
@@ -19,6 +19,8 @@ USE_TOOLS+=		gmake
 post-extract:
 	${MKDIR} ${WRKSRC}/NetBSD
 	${TOUCH} ${WRKSRC}/NetBSD/.depend
+	${MKDIR} ${WRKSRC}/DragonFly
+	${TOUCH} ${WRKSRC}/DragonFly/.depend
 
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} depend
