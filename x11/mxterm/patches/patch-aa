@@ -1,13 +1,15 @@
-$NetBSD: patch-aa,v 1.4 2005/05/06 22:24:32 gregschenzel Exp $
+$NetBSD$
 
---- main.c.orig	2004-11-05 18:29:49.000000000 -0700
-+++ main.c	2004-11-05 17:33:39.000000000 -0700
-@@ -90,6 +90,9 @@
+--- main.c.orig	2005-05-09 01:14:32.000000000 +0000
++++ main.c
+@@ -90,6 +90,11 @@ SOFTWARE.
  #include <error.h>
  #include <menu.h>
  
 +#include <utmp.h>
++#if !defined(__DragonFly__)
 +#include <utmpx.h>
++#endif
 +
  #ifdef AMOEBA
  #include <amoeba.h>
