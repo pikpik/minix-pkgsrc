@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/wmnd
+man/man1/wmnd.1
+share/wmndrc
