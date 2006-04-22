@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2005/12/29 06:22:18 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2006/03/09 18:32:33 abs Exp $
 #
 
 DISTNAME=		nut-2.0.3
@@ -6,7 +6,7 @@ PKGNAME=		ups-nut-2.0.3
 CATEGORIES=		sysutils
 MASTER_SITES=		http://random.networkupstools.org/source/2.0/
 
-MAINTAINER=		lukem@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.networkupstools.org/
 COMMENT=		Network UPS Tools
 
