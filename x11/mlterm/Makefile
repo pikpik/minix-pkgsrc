@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/02/05 23:11:40 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2006/04/17 13:46:59 wiz Exp $
 
 DISTNAME=	mlterm-2.9.2
 PKGREVISION=	4
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--without-libintl-prefix
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 
 SUBST_CLASSES+=		link
-SUBST_MESSAGE.link=	"Fixing hardcoded paths and link options."
+SUBST_MESSAGE.link=	Fixing hardcoded paths and link options.
 SUBST_STAGE.link=	post-patch
 SUBST_FILES.link=	Makefile.in */Makefile.in */*/Makefile.in \
 			*/*/*/Makefile.in man/mlterm.1 \

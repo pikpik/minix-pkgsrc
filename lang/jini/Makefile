@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:09:46 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/04/02 23:07:06 jschauma Exp $
 #
 
 DISTNAME=		jini-${SUN_VERSION}-src
@@ -19,7 +19,7 @@ ONLY_FOR_PLATFORM+=	NetBSD-1.5Z[D-Z]-*
 
 INTERACTIVE_STAGE=	fetch
 LICENSE=		scsl3-jini-tsa-1.0-license
-RESTRICTED=		"Redistribution of repackaged binaries not permitted"
+RESTRICTED=		Redistribution of repackaged binaries not permitted
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/12/28 06:08:12 schmonz Exp $
 #
 
 DISTNAME=		Ezmlm-0.05.1
@@ -23,7 +23,7 @@ SUBST_FILES.paths=	Ezmlm.pm
 SUBST_SED.paths=	-e 's|@LOCALBASE@|${LOCALBASE}|g'
 SUBST_SED.paths+=	-e 's|@QMAILDIR@|${QMAILDIR}|g'
 SUBST_SED.paths+=	-e 's|@MYSQLBASE@|${LOCALBASE}/bin|g'
-SUBST_MESSAGE.paths=	"Configuring paths."
+SUBST_MESSAGE.paths=	Configuring paths.
 
 PERL5_PACKLIST=		auto/Mail/Ezmlm/.packlist
 

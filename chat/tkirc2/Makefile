@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:45:06 tv Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:26 joerg Exp $
 
 DISTNAME=	tkirc2.46
 PKGNAME=	tkirc2-2.46
@@ -20,7 +20,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 SUBST_CLASSES+=		paths
-SUBST_MESSAGE.paths=	"Fixing hardcoded command names."
+SUBST_MESSAGE.paths=	Fixing hardcoded command names.
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	tkirc2
 SUBST_SED.paths=	-e 's,wish8.3,wish,g'

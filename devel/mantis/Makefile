@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/01/24 07:32:04 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2006/02/05 23:08:48 joerg Exp $
 
 DISTNAME=	mantis-1.0.0rc5
 PKGREVISION=	2
@@ -41,7 +41,7 @@ SUBST_CLASSES+=		conf
 SUBST_STAGE.conf=	pre-install
 SUBST_FILES.conf=	mantis.conf
 SUBST_SED.conf=		-e "s|@MANTIS_HOME@|${MANTIS_HOME}|g"
-SUBST_MESSAGE.conf=	"Fixing configuration files."
+SUBST_MESSAGE.conf=	Fixing configuration files.
 
 post-extract:
 	@${CP} ${FILESDIR}/mantis.conf ${WRKSRC}

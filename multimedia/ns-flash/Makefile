@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/29 02:16:43 markd Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/12 18:35:25 wiz Exp $
 
 CATEGORIES=		multimedia www
 MASTER_SITES=		http://fpdownload.macromedia.com/get/flashplayer/current/
@@ -38,7 +38,7 @@ CONFLICTS+=		communicator<=4.76nb1
 CONFLICTS+=		navigator<=4.76nb1
 
 LICENSE=		flash-license
-RESTRICTED=             "Redistribution not permitted"
+RESTRICTED=             Redistribution not permitted
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}

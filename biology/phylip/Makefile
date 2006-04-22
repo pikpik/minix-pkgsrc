@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/12/28 13:46:07 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/05 23:08:20 joerg Exp $
 
 DISTNAME=	phylip-3.61
 PKGREVISION=	2
@@ -9,7 +9,7 @@ MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://evolution.genetics.washington.edu/phylip.html
 COMMENT=	Phylogeny Inference Package
 
-RESTRICTED=		"No commercial distribution without a royalty agreement with the author"
+RESTRICTED=		No commercial distribution without a royalty agreement with the author
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 

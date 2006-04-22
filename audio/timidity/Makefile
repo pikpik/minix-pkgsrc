@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2006/02/05 23:08:14 joerg Exp $
+# $NetBSD: Makefile,v 1.57 2006/04/17 13:46:16 wiz Exp $
 
 DISTNAME=	TiMidity++-2.13.2
 PKGNAME=	${DISTNAME:S/TiMidity++/timidity/}
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-default-path=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--enable-audio=${TIMIDITY_NATIVE_AUDIO},vorbis,flac,speex
 
 SUBST_CLASSES+=		confdir
-SUBST_MESSAGE.confdir=	"Configuring to use PKG_SYSCONFDIR."
+SUBST_MESSAGE.confdir=	Configuring to use PKG_SYSCONFDIR.
 SUBST_STAGE.confdir=    post-patch
 SUBST_FILES.confdir=	doc/C/timidity.cfg.5 doc/ja_JP.eucJP/timidity.cfg.5
 SUBST_SED.confdir=	-e 's,/usr/local/share/timidity,${PKG_SYSCONFDIR},g'

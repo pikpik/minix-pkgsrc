@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:36 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:46 wiz Exp $
 
 DISTNAME=	espgs-${GS_VERS}-source
 PKGNAME=	ghostscript-esp-${GS_VERS}
@@ -80,7 +80,7 @@ post-extract:
 	${LN} -s ${JPEG_WRKSRC} ${WRKSRC}/jpeg
 
 SUBST_CLASSES+=         ps2epsi-sh
-SUBST_MESSAGE.ps2epsi-sh=   "Fixing ps2epsi shell."
+SUBST_MESSAGE.ps2epsi-sh=   Fixing ps2epsi shell.
 SUBST_FILES.ps2epsi-sh=     lib/ps2epsi
 SUBST_SED.ps2epsi-sh=       -e 's|/bin/sh|${SH}|'
 SUBST_STAGE.ps2epsi-sh=     post-patch

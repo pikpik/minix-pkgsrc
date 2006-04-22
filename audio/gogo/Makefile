@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:08:08 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/03/04 21:28:55 jlam Exp $
 #
 
 DISTNAME=		gogo239b
@@ -18,7 +18,7 @@ ONLY_FOR_PLATFORM=	*-*-i386
 
 USE_TOOLS+=		gmake
 
-RESTRICTED=		'Source based on patent protected Fraunhofer code'
+RESTRICTED=		Source based on patent protected Fraunhofer code
 NO_SRC_ON_FTP=	${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 LICENSE=		fee-based-commercial-use

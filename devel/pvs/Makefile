@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:08:50 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/03/20 18:15:38 jlam Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -29,7 +29,7 @@ TEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
 
 LICENSE=        	pvs-license
 # not quite sure about this, but to be on the safe side:
-RESTRICTED=     	"Redistribution not permitted - see ${HOMEPAGE}license.html"
+RESTRICTED=     	Redistribution not permitted - see ${HOMEPAGE}license.html
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=  	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}

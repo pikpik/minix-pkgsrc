@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2005/12/05 20:50:49 rillig Exp $
+# $NetBSD: Makefile,v 1.41 2005/12/29 06:22:04 jlam Exp $
 
 DISTNAME=	socks5-v1_0r2
 PKGNAME=	socks5-1.0.2
@@ -13,7 +13,7 @@ COMMENT=	SOCKS v5 application layer gateway and clients
 
 CONFLICTS=	socks4-[0-9]*
 
-RESTRICTED=		"no commercial use"
+RESTRICTED=		no commercial use
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 

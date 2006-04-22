@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:22 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/03/04 21:29:02 jlam Exp $
 #
 
 DISTNAME=	tkgate-1.6i
@@ -23,7 +23,7 @@ CONFIGURE_ENV+=		BUILDLINK_LDFLAGS=${BUILDLINK_LDFLAGS:Q}
 CONFIGURE_ENV+=		PREFIX=${PREFIX:Q}
 
 SUBST_CLASSES+=		tkgate
-SUBST_MESSAGE.tkgate=	"Fixing paths in configuration files."
+SUBST_MESSAGE.tkgate=	Fixing paths in configuration files.
 SUBST_STAGE.tkgate=	pre-configure
 SUBST_FILES.tkgate=	config.h
 SUBST_SED.tkgate=	-e 's|@LOCALBASE@|${LOCALBASE}|g'

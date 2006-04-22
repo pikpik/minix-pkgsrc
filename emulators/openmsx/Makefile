@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:09:02 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/17 13:46:23 wiz Exp $
 #
 
 DISTNAME=		openmsx-0.5.2
@@ -27,7 +27,7 @@ SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	post-patch
 SUBST_FILES.prefix=	build/custom.mk
 SUBST_SED.prefix=	-e "s,/opt/openMSX,${PREFIX}/openmsx,"
-SUBST_MESSAGE.prefix=	"Fixing installation directory."
+SUBST_MESSAGE.prefix=	Fixing installation directory.
 
 post-build:
 	@(							\

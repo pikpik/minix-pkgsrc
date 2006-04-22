@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/08/25 10:34:12 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:51 rillig Exp $
 #
 
 DISTNAME=	pkg_select-20050817
@@ -39,7 +39,7 @@ SUBST_SED.path=		-e "s|/usr/pkgsrc|${PKGSRCDIR}|g" \
 			-e "s|/usr/pkg|${PREFIX}|g" \
 			-e "s|/var/db/pkg|${PKG_DBDIR}|g" \
 			-e "s|/usr/bin/make|${MAKE}|g"
-SUBST_MESSAGE.path=     "Adjusting path."
+SUBST_MESSAGE.path=     Adjusting path.
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:56 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/01/18 21:37:01 adrianp Exp $
 
 DISTNAME=	ike-scan-1.8
 CATEGORIES=	security
@@ -15,7 +15,7 @@ SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
 SUBST_FILES.man=	ike-scan.1
 SUBST_SED.man=		-e "s|/usr/local|${PREFIX}|g"
-SUBST_MESSAGE.man=	"Fixing man pages."
+SUBST_MESSAGE.man=	Fixing man pages.
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ike-scan

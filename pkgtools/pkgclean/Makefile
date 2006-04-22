@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/11/17 22:30:09 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:51 rillig Exp $
 
 DISTNAME=	pkgclean-20051116
 CATEGORIES=	pkgtools
@@ -28,6 +28,6 @@ SUBST_STAGE.path=       post-patch
 SUBST_FILES.path=       pkgclean.sh pkgclean.1
 SUBST_SED.path+=	-e 's,@SH@,${SH},g'
 SUBST_SED.path+=	-e 's,@PKGSRCDIR@,${PKGSRCDIR},g'
-SUBST_MESSAGE.path=     "Adjusting pkgsrc directory."
+SUBST_MESSAGE.path=     Adjusting pkgsrc directory.
 
 .include "../../mk/bsd.pkg.mk"

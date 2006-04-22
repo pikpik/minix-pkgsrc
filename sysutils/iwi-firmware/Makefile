@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/10/29 08:46:45 scw Exp $
+# $NetBSD: Makefile,v 1.6 2005/11/01 22:58:42 joerg Exp $
 #
 
 DISTNAME=		ipw2200-fw-2.3
@@ -14,7 +14,7 @@ COMMENT=		Firmware binary images for iwi(4) driver
 
 LICENSE=		intel-ipw-license
 
-RESTRICTED=		"Intel Licensed Software: see http://ipw2200.sourceforge.net/firmware.php?fid=5"
+RESTRICTED=		Intel Licensed Software: see http://ipw2200.sourceforge.net/firmware.php?fid=5
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}

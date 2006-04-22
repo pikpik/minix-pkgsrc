@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/05/30 05:49:15 minskim Exp $
+# $NetBSD: Makefile,v 1.16 2005/07/16 19:10:41 jlam Exp $
 #
 
 DISTNAME=	validate-1.2.2
@@ -25,7 +25,7 @@ REPLACE_PERL=	validate
 NO_BUILD=	YES
 
 SUBST_CLASSES+=		paths
-SUBST_MESSAGE.paths=	"Fixing hardcoded paths."
+SUBST_MESSAGE.paths=	Fixing hardcoded paths.
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	validate
 SUBST_SED.paths=	-e 's,/usr/local/share,${PREFIX}/share,g' \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/04/13 18:23:36 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/04/17 13:46:42 wiz Exp $
 #
 
 DISTNAME=	kmplayer-0.9.1
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=	--without-gstreamer
 SHLIBTOOL_OVERRIDE=	libtool
 
 SUBST_CLASSES+=		desktop
-SUBST_MESSAGE.desktop=	"Fixing application launcher."
+SUBST_MESSAGE.desktop=	Fixing application launcher.
 SUBST_STAGE.desktop=	pre-configure
 SUBST_FILES.desktop=	src/kmplayer.desktop
 SUBST_SED.desktop=	-e 's|@PREFIX@|${PREFIX}|g'

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/09 21:04:40 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/06 06:21:35 reed Exp $
 
 .include "../../audio/libao/Makefile.common"
 
@@ -14,7 +14,7 @@ BUILD_DIRS=		${WRKSRC}/src/plugins/oss
 INSTALL_DIRS=		${WRKSRC}/src/plugins/oss
 
 SUBST_CLASSES+=		oss
-SUBST_MESSAGE.oss=	"Fixing paths to OSS devices."
+SUBST_MESSAGE.oss=	Fixing paths to OSS devices.
 SUBST_STAGE.oss=	pre-configure
 SUBST_FILES.oss=	src/plugins/oss/ao_oss.c
 SUBST_SED.oss=		-e 's|/dev/dsp|${DEVOSSAUDIO}|g'

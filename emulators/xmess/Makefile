@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2006/02/05 23:09:05 joerg Exp $
+# $NetBSD: Makefile,v 1.84 2006/03/09 20:51:13 kristerw Exp $
 #
 
 DISTNAME=		xmame-0.104
@@ -11,7 +11,7 @@ MAINTAINER=		kristerw@NetBSD.org
 HOMEPAGE=		http://x.mame.net/
 COMMENT=		X11 emulator for old computers and console machines
 
-RESTRICTED=		"selling is not allowed"
+RESTRICTED=		selling is not allowed
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 

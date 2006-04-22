@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:25:33 agc Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/19 04:14:50 kristerw Exp $
 #
 
 DISTNAME=	AiSSLtelnet-0.15
@@ -12,7 +12,7 @@ COMMENT=	SSL Telnet based on AiSSL
 
 GNU_CONFIGURE=	YES
 
-RESTRICTED=             "Source code redistribution is not permitted.consult okuno@mars.elcom.nitech.ac.jp."
+RESTRICTED=             Source code redistribution is not permitted.consult okuno@mars.elcom.nitech.ac.jp.
 NO_SRC_ON_FTP=          ${RESTRICTED}
 NO_SRC_ON_CDROM=        ${RESTRICTED}
 

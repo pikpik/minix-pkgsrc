@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/12/29 06:21:31 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:12 joerg Exp $
 
 DISTNAME=	moss-0.1.13
 PKGREVISION=	2
@@ -21,7 +21,7 @@ CONF_FILES=	${PREFIX}/share/moss/moss.conf.sample	\
 		${PKG_SYSCONFDIR}/moss.conf
 
 SUBST_CLASSES+=		path
-SUBST_MESSAGE.path=	"Fixing hardcoded paths."
+SUBST_MESSAGE.path=	Fixing hardcoded paths.
 SUBST_STAGE.path=	post-patch
 SUBST_FILES.path=	moss.conf.sample
 SUBST_SED.path=		-e 's,$${PREFIX}/var,${VARBASE},g'	\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:54 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:00 jlam Exp $
 #
 
 DISTNAME=	esmtp-0.5.1
@@ -18,7 +18,7 @@ PTHREAD_OPTS+=		require
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 SUBST_CLASSES+=		paths
-SUBST_MESSAGE.paths=	"Fixing hardcoded paths."
+SUBST_MESSAGE.paths=	Fixing hardcoded paths.
 SUBST_STAGE.paths=	pre-configure
 SUBST_FILES.paths=	README esmtp.1 esmtprc.5 sample.esmtprc
 SUBST_SED.paths=	-e 's|/usr/bin|${PREFIX}/bin|g'

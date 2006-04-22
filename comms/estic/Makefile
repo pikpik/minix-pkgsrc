@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/02/05 23:08:27 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/04 21:29:04 jlam Exp $
 
 DISTNAME=	estic-1.61
 PKGREVISION=	1
@@ -13,7 +13,7 @@ COMMENT=	German language configuration tool for ISTEC 1003/1008 ISDN systems
 
 EXTRACT_ONLY=	estic-1.60-sources${EXTRACT_SUFX}
 
-RESTRICTED=	"Only free distribution permitted"
+RESTRICTED=	Only free distribution permitted
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 

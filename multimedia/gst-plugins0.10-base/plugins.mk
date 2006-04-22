@@ -1,4 +1,4 @@
-# $NetBSD: plugins.mk,v 1.4 2006/03/12 12:42:05 jmmv Exp $
+# $NetBSD: plugins.mk,v 1.5 2006/04/03 15:54:14 jmmv Exp $
 #
 # This file is shared across the gst-plugins-{base,good} packages to
 # simplify their code.  It provides a framework to write simple packages
@@ -65,7 +65,7 @@ INSTALL_DIRS=		${WRKSRC}/${GST_PLUGINS0.10_DIRS}
 
 # Fix paths to already installed libraries (by the gst-plugins package).
 SUBST_CLASSES+=		libs
-SUBST_MESSAGE.libs=	"Fixing path to dependent libraries."
+SUBST_MESSAGE.libs=	Fixing path to dependent libraries.
 SUBST_STAGE.libs=	pre-configure
 SUBST_FILES.libs=
 .for _d_ in ${GST_PLUGINS0.10_DIRS}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:09:56 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:00 jlam Exp $
 #
 
 DISTNAME=	mailsync_5.2.1.orig
@@ -26,7 +26,7 @@ SUBST_FILES.conf=	configure doc/examples/mailsync doc/mailsync.1
 SUBST_SED.conf=		-e "s|@BUILDLINK_DIR@|${BUILDLINK_DIR}|g" \
 			-e "s|@SSLBASE@|${BUILDLINK_PREFIX.openssl}|g" \
 			-e "s|/usr/share|${PREFIX}/share|g"
-SUBST_MESSAGE.conf=	"Fixing configure script."
+SUBST_MESSAGE.conf=	Fixing configure script.
 
 DOCS=	COPYING NEWS README THANKS TODO doc/ABSTRACT doc/HACKING
 

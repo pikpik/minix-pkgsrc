@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/07 03:33:38 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/19 16:11:07 joerg Exp $
 #
 
 DISTNAME=		cvm-0.76
@@ -18,7 +18,7 @@ SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	do-configure
 SUBST_FILES.paths=	qmail-init.c
 SUBST_SED.paths=	-e 's|/var/qmail|${QMAILDIR}|g'
-SUBST_MESSAGE.paths=	"Fixing paths."
+SUBST_MESSAGE.paths=	Fixing paths.
 
 RCD_SCRIPTS=		cvm
 PKG_GROUPS+=		cvmlog

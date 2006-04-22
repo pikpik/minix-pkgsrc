@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/08/13 05:56:22 uebayasi Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/12 14:06:30 rillig Exp $
 
 DISTNAME=	crosspkg-netbsd1-acorn32-1.6.2
 CATEGORIES=     crosspkgtools
@@ -26,7 +26,7 @@ SITES.xsrc.tgz=		${SRC_SITES}
 EXTRACT_ONLY=	# empty
 NO_BUILD=	YES
 
-NO_PACKAGE=	"needs work to function properly as a binary package"
+NO_PACKAGE=	needs work to function properly as a binary package
 
 # Dynamically generate the PLIST from the installed files.
 CROSSFS_PLIST_FILES= \

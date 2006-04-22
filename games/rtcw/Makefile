@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:43 jlam Exp $
 
 DISTNAME=	wolf-linux-1.33.x86
 PKGNAME=	rtcw-1.33
@@ -17,7 +17,7 @@ NOT_FOR_PLATFORM=	NetBSD-*-*
 CHECK_SHLIBS=		no
 NO_BUILD=		yes
 RTCWDIR=		${PREFIX}/lib/lokigames/rtcw
-RESTRICTED=		"Size; the data set is much too big"
+RESTRICTED=		Size; the data set is much too big
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}

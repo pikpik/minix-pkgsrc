@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/02/01 15:47:04 salo Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:11:27 joerg Exp $
 #
 
 DISTNAME=	paros-3.2.9-unix
@@ -19,7 +19,7 @@ USE_JAVA=	run
 WRKSRC=		${WRKDIR}/${PKGBASE}
 
 SUBST_CLASSES+=		java
-SUBST_MESSAGE.java=	"Fixing hardcoded path to Java."
+SUBST_MESSAGE.java=	Fixing hardcoded path to Java.
 SUBST_STAGE.java=	pre-configure
 SUBST_FILES.java=	${WRKSRC}/startserver.sh
 SUBST_SED.java=		-e 's,^java,${PKG_JAVA_HOME}/bin/&,'

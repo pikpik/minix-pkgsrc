@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/09/28 20:52:24 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:33 rillig Exp $
 
 DISTNAME=		mailagent-3.0.73
 CATEGORIES=		mail
@@ -9,7 +9,7 @@ COMMENT=		Sophisticated automatic mail-processing tool
 
 USE_TOOLS+=		perl:run
 
-NO_PACKAGE=		"Correct FQDN needs to be hardcoded"
+NO_PACKAGE=		Correct FQDN needs to be hardcoded
 INTERACTIVE_STAGE=	configure
 
 HAS_CONFIGURE=		yes

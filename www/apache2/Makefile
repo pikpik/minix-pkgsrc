@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2006/02/05 23:11:18 joerg Exp $
+# $NetBSD: Makefile,v 1.96 2006/04/06 06:22:53 reed Exp $
 
 .include "Makefile.common"
 
@@ -100,13 +100,13 @@ SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	pre-configure
 SUBST_FILES.paths=	config.layout
 SUBST_SED.paths=	-e "s|@PREFIX@|${PREFIX}|g"
-SUBST_MESSAGE.paths=	"Fixing paths."
+SUBST_MESSAGE.paths=	Fixing paths.
 
 SUBST_CLASSES+=		apr-lt
 SUBST_STAGE.apr-lt=	post-configure
 SUBST_FILES.apr-lt=	build/config_vars.mk
 SUBST_SED.apr-lt=	-e "s|^\(LIBTOOL =\) [^ ]*|\1 \$$(SHELL) \$$(top_builddir)/libtool|g"
-SUBST_MESSAGE.apr-lt=	"Fixing libtool references."
+SUBST_MESSAGE.apr-lt=	Fixing libtool references.
 
 SUBST_CLASSES+=		confs
 SUBST_STAGE.confs=	post-configure
@@ -120,7 +120,7 @@ SUBST_SED.confs=	-e "s|${EGDIR}|${PKG_SYSCONFDIR}|g" \
 			-e "s|/var/log/httpd/foo\.log|logs/foo.log/|g" \
 			-e "s|^\(User[	 ]\).*|\1${APACHE_USER}|g" \
 			-e "s|^\(Group[	 ]\).*|\1${APACHE_GROUP}|g"
-SUBST_MESSAGE.confs=	"Fixing configuration files."
+SUBST_MESSAGE.confs=	Fixing configuration files.
 
 .include "options.mk"
 
