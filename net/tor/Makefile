@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/03/14 01:14:31 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2006/04/06 06:22:35 reed Exp $
 #
 
 DISTNAME=		tor-0.1.0.17
@@ -20,7 +20,9 @@ PKG_HOME?=		/var/chroot/tor
 
 RCD_SCRIPTS=            tor
 PKG_GROUPS=		${TOR_GROUP}
-PKG_USERS=              ${TOR_USER}:${TOR_GROUP}::Torifier:${PKG_HOME}
+PKG_USERS=              ${TOR_USER}:${TOR_GROUP}
+PKG_GECOS.${TOR_USER}=	Torifier
+PKG_HOME.${TOR_USER}=	${PKG_HOME}
 USER_GROUP=		${TOR_USER} ${TOR_GROUP}
 
 OWN_DIR_PERMS+=		${PKG_HOME} ${USER_GROUP} 0755

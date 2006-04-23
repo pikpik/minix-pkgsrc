@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/02/21 19:05:07 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/14 01:14:27 jlam Exp $
 
 PKGNAME=	postgresql80-server-${BASE_VERS}
 COMMENT=	PostgreSQL database server programs
@@ -59,8 +59,11 @@ FILES_SUBST+=		PGGROUP=${PGGROUP:Q}
 FILES_SUBST+=		PGHOME=${PGHOME:Q}
 BUILD_DEFS+=		PGUSER PGGROUP PGHOME
 
-PKG_USERS=		${PGUSER}:${PGGROUP}::PostgreSQL\ database\ administrator:${PGHOME}:${SH}
 PKG_GROUPS=		${PGGROUP}
+PKG_USERS=		${PGUSER}:${PGGROUP}
+PKG_GECOS.${PGUSER}=	PostgreSQL database administrator
+PKG_HOME.${PGUSER}=	${PGHOME}
+PKG_SHELL.${PGUSER}=	${SH}
 
 RCD_SCRIPTS=		pgsql
 

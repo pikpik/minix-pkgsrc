@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:09:59 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/03/04 21:30:02 jlam Exp $
 #
 
 DISTNAME=	sympa-4.1.2
@@ -84,7 +84,9 @@ SYMPA_SPOOL=	${SYMPA_VARBASE}/spool
 SYMPA_BIN=	${SYMPA_PREFIX}/bin
 
 PKG_GROUPS=	${SYMPA_GROUP}
-PKG_USERS=	${SYMPA_USER}:${SYMPA_GROUP}::Sympa\ user:${SYMPA_VARBASE}
+PKG_USERS=	${SYMPA_USER}:${SYMPA_GROUP}
+
+PKG_HOME.${SYMPA_USER}=		${SYMPA_VARBASE}
 
 .for d in sympa sympa/create_list_templates sympa/general_task_models \
 	sympa/scenari sympa/task_models sympa/templates sympa/wws_templates
