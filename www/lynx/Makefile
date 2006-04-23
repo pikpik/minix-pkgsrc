@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2006/02/13 12:37:47 drochner Exp $
+# $NetBSD: Makefile,v 1.88 2006/04/13 18:23:39 jlam Exp $
 
 #
 # NOTE: Please do not enable the lynxcgi feature unless it is lynx
@@ -77,6 +77,6 @@ post-install:
 	${FIND} ${PREFIX}/share/lynx -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
 	# gets created when applying 2.8.5.2 patch -- remove on
 	# patchless update
-	${RM} ${PREFIX}/share/lynx/lynx_doc/CHANGES.orig_dist
+	${RM} -f ${PREFIX}/share/lynx/lynx_doc/CHANGES.orig_dist
 
 .include "../../mk/bsd.pkg.mk"
