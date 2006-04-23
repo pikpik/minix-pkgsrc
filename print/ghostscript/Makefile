@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:28 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:46 wiz Exp $
 
 DISTNAME=		ghostscript-${GS_VERS}
 PKGREVISION=		8
@@ -22,6 +22,7 @@ CONFLICTS+=		ghostscript-gnu{,-nox11,-x11}-[0-9]*
 CONFLICTS+=		hpijs-[0-9]*
 
 WRKSRC=			${WRKDIR}/gs${GS_VERS}
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
@@ -153,6 +154,10 @@ MAKE_FLAGS+=		XINCLUDE= XLIBDIRS= XLIBS=${XLIBS:Q}
 
 .if ${OPSYS} == "SunOS"
 LDFLAGS+=		-L${LOCALBASE}/bsd/lib ${COMPILER_RPATH_FLAG}${LOCALBASE}/bsd/lib
+.endif
+
+.if ${OPSYS} == "IRIX"
+CONFIGURE_ENV+=		ac_cv_c_bigendian=yes
 .endif
 
 # Define whether this platform has floating point hardware:
