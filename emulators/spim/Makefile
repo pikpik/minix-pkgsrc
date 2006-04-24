@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2006/04/12 19:27:22 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2006/04/22 09:22:08 rillig Exp $
 
 DISTNAME=	spim-7.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.cs.wisc.edu/~larus/SPIM/ \
 		ftp://ftp.cs.wisc.edu/pub/spim/
@@ -23,7 +23,7 @@ USE_IMAKE=		yes
 USE_TOOLS+=		gzip lex
 XMKMF=			${X11BASE}/bin/xmkmf # don't specify -a option
 
-BUILD_TARGET=		y.tab.c depend spim xspim
+BUILD_TARGET=		y.tab.c depend all
 
 pre-configure:
 	@${RM} -f ${WRKSRC}/y.tab.*
