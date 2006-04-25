@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.13 2006/01/16 09:41:48 adam Exp $
+# $NetBSD: Makefile.common,v 1.14 2006/02/02 20:47:26 rillig Exp $
 
-DISTNAME=	ocaml-3.09.1
+DISTNAME=	ocaml-3.09.2
 CATEGORIES=	lang
 MASTER_SITES=	http://caml.inria.fr/pub/distrib/ocaml-3.09/
 EXTRACT_SUFX=	.tar.bz2
