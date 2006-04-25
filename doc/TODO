@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4912 2006/04/25 13:43:59 salo Exp $
+$NetBSD: TODO,v 1.4913 2006/04/25 14:05:44 hiramatsu Exp $
 
 Suggested new packages
 ======================
@@ -659,7 +659,7 @@ Suggested package updates
 	o kajaani-kombat-0.7
 	o kapooka-0.3
 	o kazehakase-0.3.6
-	o kbarcode-2.0.1
+	o kbarcode-2.0.2
 	o kdrill-6.4
 	o kinput2-3.1
 	o kmess-1.3
