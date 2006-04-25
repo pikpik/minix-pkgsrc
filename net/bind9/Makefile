@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.75 2005/12/29 06:21:57 jlam Exp $
+# $NetBSD: Makefile,v 1.76 2006/04/23 00:12:39 jlam Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}/
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.isc.org/sw/bind/
 COMMENT=	Version 9 of the Berkeley Internet Name Daemon, implementation of DNS
 
