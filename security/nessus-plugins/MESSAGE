@@ -1,9 +1,0 @@
-===========================================================================
-$NetBSD$
-
-Nessus may have placed some files in ${PREFIX}/lib/nessus/plugins/.desc.
-If you do not need these files any more, be sure to remove them:
-
-	rm -fr ${PREFIX}/lib/nessus/plugins/.desc
-
-===========================================================================

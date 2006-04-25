@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: nessusd.sh,v 1.1 2003/06/09 17:01:26 frueauf Exp $
 #
 
 # PROVIDE: nessusd
@@ -21,7 +21,7 @@ command_args="-D"
 nessusd_setup()
 {
 	echo "Dump of nessusd setup."
-	@PREFIX@/sbin/nessusd -d
+	${command} -d
 }
 
 load_rc_config $name
