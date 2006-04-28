@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/04/06 06:22:00 reed Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/17 13:46:30 wiz Exp $
 
 DISTNAME=	wesnoth-1.0.2
 PKGREVISION=	5
@@ -16,7 +16,7 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 UNLIMIT_RESOURCES+=	datasize
 
 REPLACE_PERL+=		utils/wmlxgettext
-USE_TOOLS+=		perl:run
+USE_TOOLS+=		perl:run msgfmt
 
 BUILDLINK_API_DEPENDS.SDL+=		SDL>=1.2.7
 BUILDLINK_API_DEPENDS.SDL_mixer+=	SDL_mixer>=1.2.5nb3
