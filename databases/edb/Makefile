@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:30 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/10 23:24:36 rillig Exp $
 #
 
 DISTNAME=		edb-1.0.3
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 
@@ -17,4 +17,5 @@ USE_LANGUAGES=		c c++
 CONFIGURE_ARGS+=	--enable-cxx
 
 .include "../../x11/gtk/buildlink3.mk"
+.include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
