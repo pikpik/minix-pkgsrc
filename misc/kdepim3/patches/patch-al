@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- kdgantt/KDGanttView.cpp.orig	2006-03-17 23:15:54.000000000 +1300
++++ kdgantt/KDGanttView.cpp
+@@ -318,7 +318,7 @@ bool KDGanttView::close ( bool alsoDelet
+   height() of TimeHeader + height() of TimeTable + height() of Legend (if shown)
+ */
+ 
+-QSize KDGanttView::sizeHint() const
++QSize KDGanttView::sizeHint()
+ {
+   bool block = myTimeTable->blockUpdating();
+   myTimeTable->setBlockUpdating( false );
