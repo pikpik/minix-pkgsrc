@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/preline
+libexec/courier/modules/local/courierdeliver
+libexec/courier/modules/local/courierlocal
+share/examples/courier/module.local
+@dirrm libexec/courier/modules/local
