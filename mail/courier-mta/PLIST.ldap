@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/courierldapaliasd
+share/examples/courier/ldapaliasrc.dist
+share/examples/rc.d/courierldapaliasd
