@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/03/30 21:27:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2006/04/17 13:46:22 wiz Exp $
 #
 
 DISTNAME=	dasher-4.0.0
@@ -19,7 +19,7 @@ USE_PKGLOCALEDIR=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly"
 # Needed for ftime(3).
 LIBS+=			-lcompat
 .endif
