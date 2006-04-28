@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/01 18:02:57 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:36 joerg Exp $
 
 DISTNAME=	OpenEXR-1.2.2
 PKGNAME=	openexr-1.2.2
@@ -15,6 +15,12 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	${WRKSRC}/OpenExr.pc.in
 TEST_TARGET=		check
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "IRIX"
+LDFLAGS+=		-lmx
+.endif
 
 .include "../../x11/fltk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
