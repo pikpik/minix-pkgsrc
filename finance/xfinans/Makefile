@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/12/05 20:50:13 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:06 joerg Exp $
 #
 
 DISTNAME=		xfinans-5.9
@@ -14,9 +14,6 @@ DEPENDS+=		gnuplot>=3.7:../../graphics/gnuplot
 
 WRKSRC=			${WRKDIR}/Xfinans/Src
 USE_IMAKE=		yes
-
-post-patch:
-	${TOUCH} ${WRKSRC}/xfinans.man
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/Xfinans
