@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2006/02/05 23:09:12 joerg Exp $
 
 DISTNAME=		battalion
 PKGNAME=		battalion-1.4
@@ -19,10 +19,8 @@ USE_TOOLS+=		gtar
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly"
 MAKE_ENV+=	LIBFLAGS=-lcompat
-.elif ${OPSYS} == "Linux"
-MAKE_ENV+=	OS="-DLINUXVERSION"
 .endif
 
 INSTALLATION_DIRS=	bin man/man6
