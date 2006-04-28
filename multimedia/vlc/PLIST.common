@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.1 2005/02/21 21:04:06 veego Exp $
+@comment $NetBSD: PLIST.common,v 1.2 2006/04/17 07:07:30 jlam Exp $
 bin/vlc
 bin/vlc-config
 bin/wxvlc
@@ -83,6 +83,7 @@ lib/vlc/demux/libaiff_plugin.so
 lib/vlc/demux/libasf_plugin.so
 lib/vlc/demux/libau_plugin.so
 lib/vlc/demux/libavi_plugin.so
+lib/vlc/demux/libdvdnav_plugin.so
 lib/vlc/demux/libdemux2_plugin.so
 lib/vlc/demux/libdemuxdump_plugin.so
 lib/vlc/demux/libdemuxsub_plugin.so
