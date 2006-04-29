@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2006/03/30 03:44:44 jlam Exp $
+# $NetBSD: Makefile,v 1.117 2006/04/13 18:23:40 jlam Exp $
 
 DISTNAME=		gtk+-1.2.10
 PKGREVISION=		9
@@ -46,6 +46,12 @@ GTK_MICRO_VERSION=	${GTK_VERSION:C/.*\.//}
 
 .if ${PKG_INSTALLATION_TYPE} == "overwrite"
 DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
+.endif
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mmipspro*)
+CFLAGS+=                -c99
 .endif
 
 # We patch the version info in the configure scripts for reasons related to
