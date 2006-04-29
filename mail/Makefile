@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.284 2006/04/18 18:56:20 cube Exp $
+# $NetBSD: Makefile,v 1.285 2006/04/28 18:12:04 jlam Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -177,7 +177,6 @@ SUBDIR+=	qmail-conf
 SUBDIR+=	qmail-lint
 SUBDIR+=	qmail-qfilter
 SUBDIR+=	qmail-run
-SUBDIR+=	qmail-users
 SUBDIR+=	qmailanalog
 SUBDIR+=	qpopper
 SUBDIR+=	qtools
