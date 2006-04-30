@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.41 2006/04/14 18:14:34 heinz Exp $
+# $NetBSD: Makefile,v 1.42 2006/04/22 09:22:07 rillig Exp $
 
 .include "../../www/apache2/Makefile.common"
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 
 HOMEPAGE=	http://apr.apache.org/
@@ -55,6 +55,9 @@ do-configure:
 post-install:
 	${RM} ${PREFIX}/libexec/apr/libtool
 	${INSTALL_SCRIPT} ${PKG_LIBTOOL} ${PREFIX}/libexec/apr/libtool
+	${INSTALL_DATA_DIR} ${PREFIX}/include/apr-0/arch/unix
+	${INSTALL_DATA} ${WRKSRC}/apr/include/arch/*.h ${PREFIX}/include/apr-0/arch
+	${INSTALL_DATA} ${WRKSRC}/apr/include/arch/unix/*.h ${PREFIX}/include/apr-0/arch/unix/
 	@${CHMOD} ${SHAREMODE} ${PREFIX}/include/apr-0/*.h
 	@${CHMOD} ${PKGDIRMODE} ${PREFIX}/include/apr-0
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/include/apr-0/
