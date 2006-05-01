@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.445 2006/04/04 15:42:44 jmmv Exp $
+# $NetBSD: Makefile,v 1.446 2006/05/01 07:23:07 jmmv Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -231,6 +231,7 @@ SUBDIR+=	p5-Kwiki-Favorites
 SUBDIR+=	p5-Kwiki-HtmlBlocks
 SUBDIR+=	p5-Kwiki-Icons-Gnome
 SUBDIR+=	p5-Kwiki-NewPage
+SUBDIR+=	p5-Kwiki-Notify-Mail
 SUBDIR+=	p5-Kwiki-PagePrivacy
 SUBDIR+=	p5-Kwiki-ParagraphBlocks
 SUBDIR+=	p5-Kwiki-PreformattedBlocks
