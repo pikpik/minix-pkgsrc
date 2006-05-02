@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:09:53 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/05 06:25:52 jlam Exp $
 #
 
 DISTNAME=	twelf-1-4
@@ -13,6 +13,7 @@ COMMENT=	Meta-language for proving properties of languages and logics
 
 DEPENDS+=	smlnj>=110.38:../../lang/smlnj
 
+LICENSE=	generic-nonlicense
 RESTRICTED=	License terms not specified; assume no redistribution rights
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
