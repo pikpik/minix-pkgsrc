@@ -1,4 +1,4 @@
-# $NetBSD: packlist.mk,v 1.4 2006/03/14 01:14:29 jlam Exp $
+# $NetBSD: packlist.mk,v 1.5 2006/04/09 06:34:32 jlam Exp $
 #
 # This Makefile fragment is intended to be included by packages that
 # create packlist files.  This file is automatically included by
@@ -88,6 +88,10 @@ perl-packlist:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	${TEST} -n ${_PERL5_PACKLIST:Q}"" || exit 0;			\
 	for file in ${_PERL5_PACKLIST}; do				\
+		if ${TEST} ! -f "$$file"; then				\
+			${ECHO} 1>&2 "Perl packlist $$file is missing."; \
+			exit 1;						\
+		fi;							\
 		${AWK} '${_PERL5_PACKLIST_AWK_STRIP_MANZ}		\
 			${_PERL5_PACKLIST_AWK_ADD_MANZ.${_MANZ}}	\
 			{ print $$0 }'					\
