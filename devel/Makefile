@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.752 2006/05/02 03:00:48 jlam Exp $
+# $NetBSD: Makefile,v 1.753 2006/05/02 04:02:15 jlam Exp $
 #
 
 COMMENT=	Development utilities
@@ -610,6 +610,7 @@ SUBDIR+=	ruby-gnome2-glib
 SUBDIR+=	ruby-gnome2-pango
 SUBDIR+=	ruby-mode
 SUBDIR+=	ruby-ncurses
+SUBDIR+=	ruby-priority-queue
 SUBDIR+=	ruby-racc
 SUBDIR+=	ruby-rd-mode
 SUBDIR+=	ruby-readline
