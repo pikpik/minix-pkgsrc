@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.322 2006/05/02 01:02:24 jlam Exp $
+# $NetBSD: Makefile,v 1.323 2006/05/03 06:36:33 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -193,6 +193,7 @@ SUBDIR+=	p5-XML-AutoWriter
 SUBDIR+=	p5-XML-Checker
 SUBDIR+=	p5-XML-Clean
 SUBDIR+=	p5-XML-DOM
+SUBDIR+=	p5-XML-Dumper
 SUBDIR+=	p5-XML-Encoding
 SUBDIR+=	p5-XML-Filter-BufferText
 SUBDIR+=	p5-XML-Filter-DetectWS
