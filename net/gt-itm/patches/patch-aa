@@ -1,13 +1,13 @@
 $NetBSD$
 
---- Makefile.orig	1996-10-23 14:05:26.000000000 -0700
+--- Makefile.orig	1996-10-23 21:05:26.000000000 +0000
 +++ Makefile
 @@ -12,7 +12,7 @@
  #LIBS = -lm -lgb5
  
  # For SunOS: uncomment the next line
 -LIBS = -lm -lgb4
-+LIBS = -lm -lgb
++LIBS = -Wl,-R${PREFIX}/lib -lm -lgb
   
  
  IDIR = ../include
