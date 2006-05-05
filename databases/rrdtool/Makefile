@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.47 2006/04/17 13:46:05 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2006/05/02 09:08:32 joerg Exp $
 
-DISTNAME=	rrdtool-1.2.12
-PKGREVISION=	3
+DISTNAME=	rrdtool-1.2.13
 CATEGORIES=	databases graphics net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/
 
@@ -29,8 +28,6 @@ PERL5_PACKLIST+=	auto/RRDs/.packlist
 
 # rrdtool explicitly forbids any use of -ffast-math
 BUILDLINK_TRANSFORM+=	rm:-ffast-math
-
-RRDDOCDIR=		${PREFIX}/share/doc/rrdtool
 
 SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	post-build
