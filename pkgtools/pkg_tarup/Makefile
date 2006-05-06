@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/06/27 23:05:42 seb Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/24 21:21:02 reed Exp $
 
 DISTNAME=	pkg_tarup-1.6.5
 CATEGORIES=	pkgtools
@@ -13,6 +13,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=    yes
 NO_BUILD=	yes
 NO_MTREE=	yes
+USE_LANGUAGES=	# none
 
 # Set SCRIPT_SUBST to substitute "@VARIABLE@" with "value"
 SCRIPT_SUBST+=	\
