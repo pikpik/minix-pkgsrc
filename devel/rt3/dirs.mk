@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: dirs.mk,v 1.1 2006/05/01 09:38:08 cube Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -12,4 +12,4 @@ RT_SHARE_DIR=	${LOCALBASE}/share/rt3
 RT_VAR_DIR=	${VARBASE}/spool/rt3
 
 RT_HTML_DIR=	${RT_SHARE_DIR}/html
-RT_I18N_DIR=	${RT_LIB_DIR}/I18N
+RT_I18N_DIR=	${RT_LIB_DIR}/RT/I18N
