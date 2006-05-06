@@ -6,7 +6,7 @@
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
 
-$_rc_subr_loaded .  /etc/rc.subr
+$_rc_subr_loaded . /etc/rc.subr
 
 name="zope3"
 rcvar=$name
@@ -30,20 +30,24 @@ zope3_precmd() {
         err 1 "${_dir} is not a directory."
     fi
     done
-    if test "${zope3_user}"; then
-        command_args="${command_args} --user ${zope3_user}"
+    if test -z "${zope3_user}"; then
+        zope3_user="@ZOPE3_USER@"
     fi
+    command_args="${command_args} --user ${zope3_user}"
 }
 
 zope3_start() {
+    echo -n "Starting Zope Application Server: "
     ${command} ${rc_flags} ${command_args} start
 }
 
 zope3_stop() {
+    echo -n "Stopping Zope Application Server: "
     ${command} ${rc_flags} ${command_args} stop
 }
 
 zope3_restart() {
+    echo -n "Restarting Zope Application Server: "
     ${command} ${rc_flags} ${command_args} restart
 }
 
