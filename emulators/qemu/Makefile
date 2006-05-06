@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2006/02/11 14:46:16 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/03/09 21:04:43 jlam Exp $
 #
 
-DISTNAME=		qemu-0.8.0
-PKGREVISION=		1
+DISTNAME=		qemu-0.8.1
 CATEGORIES=		emulators
 MASTER_SITES=		http://fabrice.bellard.free.fr/qemu/
 
@@ -46,8 +45,9 @@ PKG_FAIL_REASON+=	"${PKGNAME} cannot use "${CC_VERSION:Q}
 .endif
 
 post-install:
+	${INSTALL_DATA_DIR} ${PREFIX:Q}/share/doc/qemu
 	${INSTALL_DATA} ${FILESDIR:Q}/Makefile.multinode-NetBSD \
-		${PREFIX:Q}/share/doc/qemu
+		${PREFIX:Q}/share/doc/qemu/
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
