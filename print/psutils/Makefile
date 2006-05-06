@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.32 2005/12/05 20:50:53 rillig Exp $
+# $NetBSD: Makefile,v 1.33 2005/12/29 06:22:07 jlam Exp $
 
 DISTNAME=	psutils-p17
 PKGNAME=	psutils-1.17
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.dcs.ed.ac.uk/pub/ajcd/
 
 MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://www.go.dlr.de:8081/pdinfo_dv/psutils.html
 COMMENT=	Utilities for manipulating PostScript documents
-
-DEPENDS+=	papersize-[0-9]*:../../print/papersize
 
 WRKSRC=		${WRKDIR}/psutils
 USE_TOOLS+=	perl:run
