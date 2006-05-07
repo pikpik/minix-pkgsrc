@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:18 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2004/10/03 00:12:53 tv Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GMIME_BUILDLINK3_MK:=	${GMIME_BUILDLINK3_MK}+
@@ -12,10 +12,9 @@ BUILDLINK_PACKAGES+=	gmime
 
 .if !empty(GMIME_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gmime+=	gmime>=2.1.7
-BUILDLINK_ABI_DEPENDS.gmime+=	gmime>=2.1.9nb1
 BUILDLINK_PKGSRCDIR.gmime?=	../../mail/gmime
 .endif	# GMIME_BUILDLINK3_MK
 
 .include "../../devel/glib2/buildlink3.mk"
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
