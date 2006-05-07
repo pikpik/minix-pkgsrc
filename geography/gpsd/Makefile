@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2006/03/02 20:05:57 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2006/04/20 15:28:00 joerg Exp $
 
 DISTNAME=	gpsd-2.31
 CATEGORIES=	geography
 MASTER_SITES=	http://download.berlios.de/gpsd/
 
 MAINTAINER=	tsarna@NetBSD.org
-HOMEPAGE=	http://www.pygps.org/gpsd/
+HOMEPAGE=	http://gpsd.berlios.de/
 COMMENT=	GPS information daemon
 
 GNU_CONFIGURE=	YES
