@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/04/17 07:48:52 adam Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/17 13:46:39 wiz Exp $
 
 DISTNAME=	qalculate-kde-0.9.3.1
 PKGREVISION=	1
@@ -12,7 +12,9 @@ COMMENT=	Qalculate is a modern multi-purpose desktop calculator
 DEPENDS+=	gnuplot>=3.7:../../graphics/gnuplot
 DEPENDS+=	wget>=1.8:../../net/wget
 
+USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
+USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake msgfmt pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/kde
