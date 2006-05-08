@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/11/19 17:33:03 jmmv Exp $
 lib/bonobo/servers/BrowserBookmarksMenu.server
 libexec/browser-bookmarks-menu.py
+libexec/browser-bookmarks-menu.pyc
 @comment in libbonobo: @dirrm lib/bonobo/servers
