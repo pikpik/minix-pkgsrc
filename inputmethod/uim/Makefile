@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/09 18:04:58 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/21 06:00:46 jlam Exp $
 #
 
 DISTNAME=		uim-1.0.1
@@ -15,6 +15,7 @@ USE_LIBTOOL=		YES
 USE_NCURSES=		# clear_screen, clr_eos
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake pkg-config
+USE_LANGUAGES=		c c++
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/uim.pc.in
 GNU_CONFIGURE=		YES
 GTK2_IMMODULES=		YES
