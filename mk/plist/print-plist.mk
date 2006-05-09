@@ -1,4 +1,4 @@
-# $NetBSD: print-plist.mk,v 1.5 2006/03/20 01:48:58 jlam Exp $
+# $NetBSD: print-plist.mk,v 1.6 2006/04/17 06:12:46 jlam Exp $
 
 ###
 ### Automatic PLIST generation
@@ -126,6 +126,7 @@ print-PLIST:
 	 | ${AWK} '							\
 		{ sub("${PREFIX}/\\./", ""); }				\
 		${_PRINT_PLIST_AWK_IGNORE} { next; } 			\
+		${PRINT_PLIST_AWK}					\
 		${_PRINT_PLIST_AWK_SUBST}				\
 		/^@/ { print $$0; next }				\
 		/.*\/lib[^\/]+\.so\.[0-9]+\.[0-9]+\.[0-9]+$$/ { 	\
@@ -146,7 +147,6 @@ print-PLIST:
 			if ('$$genlinks') print $$0;			\
 			next;						\
 		}							\
-		${PRINT_PLIST_AWK}					\
 		{ print $$0; }'
 	${_PKG_SILENT}${_PKG_DEBUG}\
 	for i in `${_PRINT_PLIST_DIRS_CMD}				\
