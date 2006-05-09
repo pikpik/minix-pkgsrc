@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2006/02/28 11:10:45 martti Exp $
+# $NetBSD: Makefile,v 1.21 2006/03/02 10:41:41 martti Exp $
+
+BROKEN=			Motif support is not configured correctly.
 
 PKGNAME=		vim-motif-${VIM_VERSION}.${VIM_PATCHLEVEL}
 #PKGREVISION=		1
