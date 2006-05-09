@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- tools/abidash/xp/dashboard-frontend.c.orig	2006-05-08 21:02:01.000000000 +0000
++++ tools/abidash/xp/dashboard-frontend.c
+@@ -5,6 +5,7 @@
+ #include <unistd.h>
+ #include <sys/socket.h>
+ #include <sys/types.h>
++#include <sys/time.h>
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
+ #include <fcntl.h>
