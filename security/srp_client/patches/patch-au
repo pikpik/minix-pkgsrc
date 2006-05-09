@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- ftp/ftp/glob.c.orig	2006-05-09 19:03:06.000000000 +0000
++++ ftp/ftp/glob.c
+@@ -76,7 +76,6 @@ static	int tglob();
+ char	**ftpglob();
+ char	*globerr;
+ char	*home;
+-extern	int errno;
+ static	char *strspl(), *strend();
+ char	**copyblk();
+ 
