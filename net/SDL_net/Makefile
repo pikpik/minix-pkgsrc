@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/12/11 09:40:46 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:10:22 joerg Exp $
 
 DISTNAME=	SDL_net-1.2.5
 PKGREVISION=	5
@@ -10,9 +9,9 @@ MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://www.libsdl.org/projects/SDL_net/
 COMMENT=	Small sample cross-platform networking library for SDL
 
-GNU_CONFIGURE=		YES
-USE_LIBTOOL=            YES
-
+USE_LANGUAGES=		c c++
+USE_LIBTOOL=		yes
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-gui
 
 .include "../../devel/SDL/buildlink3.mk"
