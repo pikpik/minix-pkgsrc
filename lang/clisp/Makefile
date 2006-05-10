@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2006/04/04 19:12:10 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2006/04/06 06:22:10 reed Exp $
 
 DISTNAME=	clisp-2.38
 CATEGORIES=	lang
@@ -17,7 +17,7 @@ PKG_INSTALLATION_TYPES= overwrite pkgviews
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${MACHINE_ARCH:Malpha} || ${MACHINE_ARCH:Mamd64} || ${MACHINE_ARCH:Mx86_64}
+.if ${MACHINE_ARCH:Malpha} || ${MACHINE_ARCH:Mamd64} || ${MACHINE_ARCH:Mx86_64} || ${OPSYS} == "DragonFly"
 MODULES+=		--disable-mmap
 .endif
 
