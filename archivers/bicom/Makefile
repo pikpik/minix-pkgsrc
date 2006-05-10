@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/05/10 13:23:07 ben Exp $
+# $NetBSD: Makefile,v 1.24 2006/05/10 15:38:19 gdt Exp $
 #
 
 DISTNAME=		bicom101
@@ -42,6 +42,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bicom/bicom ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bicom
 	${INSTALL_DATA} ${WRKSRC}/README.TXT \
-		${prefix}/share/doc/bicom/readme.txt
+		${PREFIX}/share/doc/bicom/readme.txt
 
 .include "../../mk/bsd.pkg.mk"
