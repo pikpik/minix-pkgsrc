@@ -1,8 +1,8 @@
 $NetBSD$
 
---- dpid/Makefile.in.orig	2004-10-25 13:12:18.000000000 +0200
+--- dpid/Makefile.in.orig	2006-04-26 18:07:18.000000000 +0200
 +++ dpid/Makefile.in
-@@ -475,8 +475,8 @@ uninstall-am: uninstall-binPROGRAMS unin
+@@ -481,8 +481,8 @@ uninstall-am: uninstall-binPROGRAMS unin
  
  
  install-data-local :
