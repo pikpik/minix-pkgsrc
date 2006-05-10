@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2006/03/21 06:00:47 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/04/17 14:52:11 wiz Exp $
 #
+
+USE_LANGUAGES=		c c++
 
 .include "Makefile.common"
 
