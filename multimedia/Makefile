@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2006/04/13 20:19:16 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2006/04/27 19:27:43 ghen Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -93,6 +93,7 @@ SUBDIR+=	totem
 SUBDIR+=	totem-xine
 SUBDIR+=	transcode
 SUBDIR+=	vlc
+SUBDIR+=	vlc08
 SUBDIR+=	vls
 SUBDIR+=	win32-codecs
 SUBDIR+=	x264-devel
