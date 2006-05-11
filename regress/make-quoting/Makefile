@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/05/19 10:59:10 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2005/08/01 00:40:30 rillig Exp $
 #
 
 DISTNAME=	regress-make-1.0
@@ -10,6 +10,11 @@ COMMENT=	Test Makefile quoting and make(1) bugs
 
 REGRESS_TESTS=	continue dblquote for ltarget nestfor quoting sglquote	\
 	vtarget bug1 bug2
+
+WRKSRC=		${WRKDIR}
+
+do-build: do-regress
+	@${DO_NADA}
 
 do-regress:
 .for t in ${REGRESS_TESTS}
