@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/04/17 13:46:39 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/28 18:35:06 joerg Exp $
 
 DISTNAME=	qalculate-currency-0.9.3
 PKGREVISION=	2
@@ -9,6 +9,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://qalculate.sourceforge.net/
 COMMENT=	Utility for conversion between currencies using Qalculate
 
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake msgfmt pkg-config
 GNU_CONFIGURE=		yes
