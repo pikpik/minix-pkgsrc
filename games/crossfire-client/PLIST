@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.2 2002/10/21 11:55:44 wiz Exp $
+bin/cfclient
+bin/cfsndserv
+man/man6/cfclient.6
