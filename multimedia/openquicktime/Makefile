@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:18 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:30:15 jlam Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}-src
@@ -12,6 +12,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openquicktime.org/
 COMMENT=		Portable library for handling QuickTime(TM) media files
 
+USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
