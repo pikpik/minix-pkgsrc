@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/04/06 06:22:44 reed Exp $
+# $NetBSD: Makefile,v 1.17 2006/04/17 13:46:47 wiz Exp $
 
 DISTNAME=	qca-tls-1.0
 PKGREVISION=	3
@@ -13,6 +13,7 @@ COMMENT=	Cross-platform crypto API for QT - TLS plugin
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
 HAS_CONFIGURE=	yes
+USE_LANGUAGES=	c++
 
 CONFIGURE_ARGS+=        --with-openssl-inc=${SSLBASE}/include
 CONFIGURE_ARGS+=        --with-openssl-lib=${SSLBASE}/lib
