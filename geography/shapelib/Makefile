@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/27 21:18:06 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:59 tv Exp $
 #
 
 DISTNAME=		shapelib-1.2.10
+PKGREVISION=		1
 CATEGORIES=		geography
 MASTER_SITES=		http://shapelib.maptools.org/dl/
 
