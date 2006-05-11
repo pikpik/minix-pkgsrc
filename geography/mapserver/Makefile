@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:09:26 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/17 13:46:30 wiz Exp $
 #
 
 DISTNAME=		mapserver-4.0
@@ -23,9 +23,9 @@ INSTALLATION_DIRS=	bin include lib
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libmap.a ${PREFIX}/lib
 	${INSTALL_DATA} ${WRKSRC}/map.h ${PREFIX}/include
-.for PROGRAM in shp2img shp2pdf mapserv legend shptree shptreevis 	\
+.for f in shp2img shp2pdf mapserv legend shptree shptreevis		\
 	shptreetst scalebar sortshp
-	${INSTALL_PROGRAM} ${WRKSRC}/${PROGRAM} ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/${f:Q} ${PREFIX}/bin
 .endfor
 
 .include "../../converters/libiconv/buildlink3.mk"
