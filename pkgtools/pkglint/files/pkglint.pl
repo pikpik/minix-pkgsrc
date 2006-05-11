@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.576 2006/05/10 15:31:41 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.577 2006/05/10 17:14:08 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -1610,7 +1610,7 @@ sub get_vartypes_map() {
 	$fname = conf_datadir."/makevars.map";
 	$vartypes = {};
 
-	if ((my $lines = load_file($fname))) {
+	if ((my $lines = load_lines($fname, true))) {
 		foreach my $line (@{$lines}) {
 			if ($line->text =~ qr"^(?:#.*|\s*)$") {
 				# ignore empty and comment lines
@@ -1635,10 +1635,8 @@ sub get_vartypes_map() {
 						"b" => qr"(?:^|/)buildlink3\.mk$",
 						"c" => qr"(?:^|/)Makefile\.common$",
 						"h" => qr"(?:^|/)hacks\.mk$",
-						"k" => qr"\.mk$",
 						"m" => qr"(?:^|/)Makefile$",
 						"o" => qr"(?:^|/)options\.mk$",
-						"_" => qr".*",
 					};
 
 					# Transform $subject to a regular expression.
