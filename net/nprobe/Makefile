@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2005/06/17 03:50:26 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:28 joerg Exp $
 
 DISTNAME=	nProbe-source-1.3.1
-PKGREVISION=	3
+PKGREVISION=	4
 PKGNAME=	nprobe-1.3.1
 CATEGORIES=	net
 MASTER_SITES=	http://luca.ntop.org/nprobeDownload/
@@ -13,10 +13,10 @@ COMMENT=	Monitor a network interface and generate NetFlow data
 
 WRKSRC=		${WRKDIR}/nProbe
 GNU_CONFIGURE=	YES
+USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake
 BUILD_TARGET=	nprobe
 
-INTERACTIVE_STAGE=	fetch
 INSTALLATION_DIRS=	sbin
 
 # Uncomment this to make a demo version of nprobe.
