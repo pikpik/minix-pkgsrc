@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/14 21:10:07 drochner Exp $
 
 DISTNAME=       	vnc-4_1_1-unixsrc
 PKGNAME=		vncviewer-4.1.1
@@ -12,6 +12,7 @@ COMMENT=		Viewer for remote X and Win32 VNC servers
 WRKSRC=			${WRKDIR}/${DISTNAME}/unix
 CRYPTO=			yes
 NO_INSTALL_MANPAGES=	yes
+USE_LANGUAGES=		c c++
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-installed-zlib
