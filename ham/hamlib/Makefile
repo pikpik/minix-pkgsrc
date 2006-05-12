@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/28 00:10:04 wulf Exp $
+# $NetBSD: Makefile,v 1.18 2006/03/11 01:53:39 rillig Exp $
 #
 
 DISTNAME=	hamlib-1.2.5
@@ -10,6 +10,7 @@ MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://hamlib.sourceforge.net/
 COMMENT=	API for digital communications equipment
 
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
