@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2006/01/24 07:32:20 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2006/02/05 23:10:04 joerg Exp $
 #
 
 DISTNAME=	${SCIBASE}-src
@@ -36,6 +36,8 @@ CONFIGURE_ARGS+=	--with-tk-library=${TK_PREFIX}/lib
 CONFIGURE_ARGS+=	--with-tk-include=${TK_PREFIX}/include
 CONFIGURE_ENV+=		TCL_CONFIG_SH=${BUILDLINK_PREFIX.tcl}/lib/tclConfig.sh
 CONFIGURE_ENV+=		TK_CONFIG_SH=${BUILDLINK_PREFIX.tk}/lib/tkConfig.sh
+CONFIGURE_ENV+=		CC_LDFLAGS=${X11_LDFLAGS:Q}\ ${COMPILER_RPATH_FLAG:Q}${BUILDLINK_PREFIX.tk:Q}/lib
+CONFIGURE_ENV+=		FC_LDFLAGS=${X11_LDFLAGS:Q}\ ${COMPILER_RPATH_FLAG:Q}${BUILDLINK_PREFIX.tk:Q}/lib
 
 # override HOME to avoid picking up a bad ${HOME}/.scilab during the build
 MAKE_ENV+=		HOME=${WRKSRC:Q}
