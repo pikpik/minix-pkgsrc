@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/qtMeasurementTool/qtiffio.cpp.orig	2006-05-06 12:25:32.000000000 +0000
++++ src/qtMeasurementTool/qtiffio.cpp
+@@ -17,6 +17,7 @@
+ // 
+ 
+ #include <stdio.h>
++#include <sys/types.h>
+ #include <sys/mman.h>
+ 
+ #include <tiffio.h>
