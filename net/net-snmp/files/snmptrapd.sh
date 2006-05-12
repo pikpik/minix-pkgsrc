@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: snmptrapd.sh,v 1.2 2003/09/12 12:07:19 uebayasi Exp $
+# $NetBSD: snmptrapd.sh,v 1.3 2004/05/31 11:47:29 tron Exp $
 #
 # PROVIDE: snmptrapd
 # REQUIRE: DAEMON
@@ -14,7 +14,7 @@ rcvar=$name
 command="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
 snmptrapd_flags="-Ls 1"	# log using syslog w/ facility LOG_LOCAL1
-command_args="-u ${pidfile}"
+command_args="-p ${pidfile}"
 
 if [ -f @PKG_SYSCONFDIR@/snmptrapd.conf ]; then
 	command_args="${command_args} -c @PKG_SYSCONFDIR@/snmptrapd.conf"
