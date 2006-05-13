@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/12/03 14:07:10 ben Exp $
+# $NetBSD: Makefile,v 1.2 2005/06/16 06:57:38 jlam Exp $
 #
 
-DISTNAME=	freepats-20040611
+DISTNAME=	freepats-20060219
 CATEGORIES=	audio
 MASTER_SITES=	http://freepats.opensrc.org/
 EXTRACT_SUFX=	.tar.bz2
