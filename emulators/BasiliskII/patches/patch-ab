@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/Unix/video_x.cpp.orig	2005-06-11 08:52:22.000000000 +0200
+--- src/Unix/video_x.cpp.orig	2006-01-03 23:03:27.000000000 +0100
 +++ src/Unix/video_x.cpp
-@@ -2315,7 +2315,7 @@ static void update_display_dynamic(int t
+@@ -2326,7 +2326,7 @@ static void update_display_dynamic(int t
  static void update_display_static(driver_window *drv)
  {
  	// Incremental update code

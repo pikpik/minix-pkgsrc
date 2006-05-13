@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/Unix/ether_unix.cpp.orig	2005-07-03 10:21:32.000000000 +0200
+--- src/Unix/ether_unix.cpp.orig	2006-04-02 23:06:50.000000000 +0200
 +++ src/Unix/ether_unix.cpp
-@@ -33,7 +33,7 @@
+@@ -49,7 +49,7 @@
  #include <stdio.h>
  #include <map>
  
