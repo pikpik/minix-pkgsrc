@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2006/04/13 20:05:40 minskim Exp $
+# $NetBSD: Makefile,v 1.46 2006/04/17 13:46:20 wiz Exp $
 
 DISTNAME=	doxygen-1.4.5.src
 PKGNAME=	doxygen-1.4.5
@@ -10,7 +10,7 @@ MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.doxygen.org/
 COMMENT=	Documentation system for C++, Java, IDL and C
 
-TEX_ACCEPTED= teTeX1 teTeX2 teTeX3
+TEX_ACCEPTED=	teTeX2 teTeX3
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=		gmake gs:run perl flex
 USE_LANGUAGES=		c c++

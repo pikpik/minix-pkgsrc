@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/04/07 02:09:57 minskim Exp $
+# $NetBSD: Makefile,v 1.30 2006/04/07 02:23:19 minskim Exp $
 
 DISTNAME=	latex2html-2002-2-1
 PKGNAME=	latex2html-2002.2.1
@@ -12,7 +12,7 @@ COMMENT=	LaTeX to HTML converter
 
 DEPENDS+=	netpbm>=10.29nb2:../../graphics/netpbm
 
-TEX_ACCEPTED=		teTeX1 teTeX2 teTeX3
+TEX_ACCEPTED=		teTeX2 teTeX3
 USE_DIRS+=		texmf-1.0
 USE_TOOLS+=		gs:run perl:run
 GNU_CONFIGURE=		yes
