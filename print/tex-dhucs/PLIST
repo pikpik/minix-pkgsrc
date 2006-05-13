@@ -31,8 +31,12 @@ ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunpn.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunsh.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCuntz.fd
 ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf/LUCunyt.fd
+${PKG_LOCALTEXMFPREFIX}/tex/ucsplain/cwbucsol.tex
+${PKG_LOCALTEXMFPREFIX}/tex/ucsplain/ucsplain.tex
+@dirrm ${PKG_LOCALTEXMFPREFIX}/tex/ucsplain
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/unttf
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs/contrib
 @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/dhucs
 @comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex
+@comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/tex
 @comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/makeindex
