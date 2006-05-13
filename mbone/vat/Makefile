@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2005/12/05 23:55:12 rillig Exp $
+# $NetBSD: Makefile,v 1.51 2006/02/05 23:10:05 joerg Exp $
 #
 
 DISTNAME=		vatsrc-4.0b2
@@ -14,6 +14,8 @@ COMMENT=		The Visual Audio Tool - multicast audioconferencing
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${PREFIX:Q} --with-tk=${PREFIX:Q}
+
+USE_LANGUAGES=		c c++
 
 CPPFLAGS+=		-I${LOCALBASE}/include -I${LOCALBASE}/include/gsm
 
