@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:08:15 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/03/09 21:04:42 jlam Exp $
 #
 
 DISTNAME=	wmmixer-1.0-beta1
@@ -16,6 +16,7 @@ NOT_FOR_PLATFORM=	Interix-*-*
 
 WRKSRC=			${WRKDIR}/wmmixer
 USE_IMAKE=		YES
+USE_LANGUAGES=		c c++
 NO_INSTALL_MANPAGES=	YES
 
 pre-build:
