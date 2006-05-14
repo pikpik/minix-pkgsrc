@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.345 2006/03/30 21:06:17 jmmv Exp $
+# $NetBSD: Makefile,v 1.346 2006/04/10 15:46:50 joerg Exp $
 #
 
 COMMENT=	System utilities
@@ -207,6 +207,7 @@ SUBDIR+=	sux
 SUBDIR+=	swapd
 SUBDIR+=	sysgen
 SUBDIR+=	sysinfo
+SUBDIR+=	syslog-ng
 SUBDIR+=	tcx
 SUBDIR+=	tdir
 SUBDIR+=	tits
