@@ -1,0 +1,4 @@
+@comment $NetBSD$
+libexec/xscreensaver/config/webcollage.xml
+libexec/xscreensaver/webcollage
+man/man1/webcollage.1
