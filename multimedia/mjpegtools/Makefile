@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/03/31 23:56:28 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2006/04/17 13:46:42 wiz Exp $
 
 DISTNAME=	mjpegtools-1.8.0
 PKGREVISION=	4
@@ -15,6 +15,8 @@ BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 
 USE_TOOLS+=		gmake
 USE_TOOLS+=		bash:run pkg-config
+
+USE_LANGUAGES=		c c++
 
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE+=	libtool
