@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:09:23 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/17 13:46:30 wiz Exp $
 #
 
 DISTNAME=	hugov31_unix_source
@@ -16,6 +16,7 @@ DISTFILE_WX=	hugov31_wxwin_source${EXTRACT_SUFX}
 #EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 DIST_SUBDIR=	hugo-3.1.02
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake
 WRKSRC=		${WRKDIR}/hugov3.1.02/hewx
 
