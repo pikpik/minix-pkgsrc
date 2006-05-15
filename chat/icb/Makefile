@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2006/04/08 19:57:15 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/22 09:22:06 rillig Exp $
 #
 
 # Note: The file ftp://ftp.icb.net/pub/icb/icb-0.9grok2.tar.gz is way
 #	older than this here. It's got no readline support, tcl, ... - HF
 DISTNAME=		icb-5.0.9
 PKGNAME=		icb-5.0.9pl1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
