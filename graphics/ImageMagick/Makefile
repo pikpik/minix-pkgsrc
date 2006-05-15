@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.140 2006/03/05 21:25:48 adam Exp $
+# $NetBSD: Makefile,v 1.141 2006/04/14 18:14:34 heinz Exp $
 
 .include "Makefile.common"
 
 PKGNAME=	ImageMagick-${DISTVERSION}
+PKGREVISION=	1
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.simplesystems.org/ImageMagick/
@@ -39,6 +40,9 @@ CFLAGS+=		-O
 
 # Some configure_args come from Makefile.common
 CONFIGURE_ARGS+=	--without-perl
+
+# WMF linkage is currently broke, since libMagick would need symbols from libWand
+CONFIGURE_ARGS+=	--without-wmf
 
 .include "../../mk/compiler.mk"
 
