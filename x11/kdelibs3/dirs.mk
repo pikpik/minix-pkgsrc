@@ -1,4 +1,4 @@
-# $NetBSD: dirs.mk,v 1.7 2005/06/26 23:46:11 markd Exp $
+# $NetBSD: dirs.mk,v 1.8 2005/09/04 21:15:40 rillig Exp $
 #
 
 .if !defined(DIRS_KDE3_MK)
@@ -34,6 +34,7 @@ KDE3_DIRS+=	share/kde/applnk/Development
 KDE3_DIRS+=	share/kde/applnk/Editors
 KDE3_DIRS+=	share/kde/applnk/Graphics
 KDE3_DIRS+=	share/kde/applnk/Internet
+KDE3_DIRS+=	share/kde/applnk/Office
 KDE3_DIRS+=	share/kde/applnk/Settings
 KDE3_DIRS+=	share/kde/applnk/Settingsmenu
 KDE3_DIRS+=	share/kde/applnk/System
