@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:11:09 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/03/04 21:30:52 jlam Exp $
 #
 
 DISTNAME=		glclock-6.0b6.0
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.daionet.gr.jp/~masa/archives/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.daionet.gr.jp/~masa/glclock
 COMMENT=		OpenGL-based pocket watch
+
+USE_LANGUAGES=		c++
 
 MAKEFILE=		makefile
 BUILD_TARGET=		glclock
