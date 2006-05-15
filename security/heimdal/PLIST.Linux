@@ -1,0 +1,3 @@
+@comment $NetBSD$
+include/krb5/glob.h
+include/krb5/vis.h
