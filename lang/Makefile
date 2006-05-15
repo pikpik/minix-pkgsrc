@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.229 2006/04/13 21:38:12 wiz Exp $
+# $NetBSD: Makefile,v 1.230 2006/04/16 22:19:22 tonio Exp $
 #
 
 COMMENT=	Programming languages
@@ -140,6 +140,8 @@ SUBDIR+=	sather
 SUBDIR+=	sbcl
 SUBDIR+=	scheme48
 SUBDIR+=	scm
+SUBDIR+=	scsl-jdk15
+SUBDIR+=	scsl-jre15
 SUBDIR+=	siod
 SUBDIR+=	smalleiffel
 SUBDIR+=	smalltalk
