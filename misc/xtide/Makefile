@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:30:13 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/17 13:46:41 wiz Exp $
 
 DISTNAME=	xtide-2.4
 PKGREVISION=	5
@@ -14,6 +14,7 @@ EXTRACT_ONLY=	${XTIDE_SRC}
 XTIDE_SRC=	${DISTNAME}${EXTRACT_SUFX}
 
 GNU_CONFIGURE=	yes
+USE_LANGUAGES=	c++
 
 CONFIGURE_ARGS+=--sysconfdir=${PKG_SYSCONFDIR:Q}
 EGDIR=		${PREFIX}/share/examples/xtide

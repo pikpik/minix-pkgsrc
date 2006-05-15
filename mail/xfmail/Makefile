@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/02/05 23:09:59 joerg Exp $
+# $NetBSD: Makefile,v 1.38 2006/04/22 09:22:11 rillig Exp $
 
 DISTNAME=		xfmail-1.5.5
 PKGREVISION=		1
@@ -15,6 +15,7 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_X11BASE=		YES
+USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
 
 post-install:
