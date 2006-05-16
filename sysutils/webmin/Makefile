@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2006/03/14 16:00:42 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/05/16 04:01:28 jlam Exp $
 
 DISTNAME=	webmin-1.270-minimal
 PKGNAME=	${DISTNAME:S/-minimal$//}
+PKGREVISION=	1
 CATEGORIES=	sysutils www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=webadmin/}
 
