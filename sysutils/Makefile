@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.346 2006/04/10 15:46:50 joerg Exp $
+# $NetBSD: Makefile,v 1.347 2006/05/14 19:57:14 adrianp Exp $
 #
 
 COMMENT=	System utilities
@@ -231,6 +231,12 @@ SUBDIR+=	vidc-tools
 SUBDIR+=	vifm
 SUBDIR+=	vip
 SUBDIR+=	vobcopy
+SUBDIR+=	wbm-dhcpd
+SUBDIR+=	wbm-file
+SUBDIR+=	wbm-ipfilter
+SUBDIR+=	wbm-net
+SUBDIR+=	wbm-postfix
+SUBDIR+=	wbm-shell
 SUBDIR+=	webmin
 SUBDIR+=	whowatch
 SUBDIR+=	wipe
