@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/03/29 18:43:47 tv Exp $
+bin/fcpbroadcast
 bin/fcpchk
 bin/fcpget
 bin/fcpgetsite
@@ -7,4 +8,5 @@ bin/fcpinv
 bin/fcpkey
 bin/fcpput
 bin/fcpputsite
+bin/fcpreceive
 bin/ft
