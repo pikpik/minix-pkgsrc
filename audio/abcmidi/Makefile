@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/01 14:35:17 ben Exp $
 #
 
 DISTNAME=	abcMIDI-${ABCMIDIVER}
@@ -13,7 +13,7 @@ MAINTAINER=	ben@NetBSD.org
 HOMEPAGE=	http://abc.sourceforge.net/abcMIDI/
 COMMENT=	Music utilities for abc
 
-ABCMIDIVER=	2006-03-14
+ABCMIDIVER=	2006-04-22
 
 do-install:
 	cd ${WRKSRC} && ${INSTALL_PROGRAM} abc2abc abc2midi mftext \
