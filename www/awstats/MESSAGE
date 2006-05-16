@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.4 2005/08/26 20:22:56 adrianp Exp $
+$NetBSD: MESSAGE,v 1.5 2005/09/28 12:11:29 rillig Exp $
 
 An example file has been installed as
 ${PREFIX}/share/examples/awstats/awstats.conf.  After adjusting it to
@@ -10,6 +10,6 @@ configuration files.
 
 You may need to adjust the cgi-bin path of your webserver -- for details,
 refer to the documentation in
-	${PREFIX}/share/doc/html/awstats
+	${PREFIX}/share/doc/awstats
 
 ===========================================================================
