@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/05/07 09:54:55 martti Exp $
+# $NetBSD: Makefile,v 1.33 2006/05/16 19:54:02 adrianp Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 PKGREVISION=		1
@@ -32,7 +32,7 @@ CONF_FILES=		${EGDIR}/php.ini-recommended ${PKG_SYSCONFDIR}/php.ini
 OWN_DIRS=		${PREFIX}/${PHP_EXTENSION_DIR}
 
 # This can be removed once 5.1.5 is released
-DIST_SUBDIR=		${PKGNAME}
+DIST_SUBDIR=		${PKGNAME_NOREV}
 
 post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sapi/cli/php ${PREFIX}/bin/php
