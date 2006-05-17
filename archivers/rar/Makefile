@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2006/03/04 21:28:53 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2006/05/07 12:55:19 gdt Exp $
 
 DISTNAME=		rarbsd
 PKGNAME=		rar-2.02
@@ -37,7 +37,7 @@ pre-extract:
 		${ECHO} "with options COMPAT_NOMID and COMPAT_12 (and EXEC_AOUT, if ELF)."; \
 		${FALSE};						\
 	fi
-	@${CHMOD} a+x ${DISTDIR:Q}/${DISTFILES:Q}
+	${CHMOD} a+x ${DISTDIR:Q}/${DISTFILES:Q}
 
 do-build:
 	${_PKG_SILENT}${_PKG_DEBUG} set -e; set -u;			\
