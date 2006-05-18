@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/01 07:22:29 jmmv Exp $
 #
 
 DISTNAME=	cherokee-0.5.3
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.0x50.org/download/0.5/0.5.3/
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.0x50.org/
 COMMENT=	Flexible and fast web server
+
+BROKEN_IN=		pkgsrc-2006Q1
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

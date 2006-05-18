@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/03/04 21:30:21 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/14 01:14:31 jlam Exp $
 #
 
 DISTNAME=		nocol-4.3.1
@@ -10,7 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.netplex-tech.com/software/nocol/
 COMMENT=		Extensible network and system monitoring utility
 
-BROKEN_IN=		pkgsrc-2005Q4
+BROKEN_IN=		pkgsrc-2005Q4 pkgsrc-2006Q1
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure

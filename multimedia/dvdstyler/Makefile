@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:30:14 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/17 13:46:41 wiz Exp $
 #
 
 DISTNAME=	DVDStyler-1.5b4
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvdstyler/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dvdstyler.sourceforge.net/
 COMMENT=	Crossplatform DVD Authoring System
+
+BROKEN_IN=	pkgsrc-2006Q1
 
 DEPENDS+=	dvdauthor>=0.6.10:../../multimedia/dvdauthor
 DEPENDS+=	dvd+rw-tools-[0-9]*:../../sysutils/dvd+rw-tools

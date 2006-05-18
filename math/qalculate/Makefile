@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/04/22 16:29:47 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/05/11 14:21:35 joerg Exp $
 
 DISTNAME=	libqalculate-0.9.3
 PKGNAME=	qalculate-0.9.3
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qalculate/}
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://qalculate.sourceforge.net/
 COMMENT=	Qalculate is a modern multi-purpose desktop calculator
+
+BROKEN_IN=		pkgsrc-2006Q1
 
 USE_GNU_READLINE=	yes
 USE_LANGUAGES=		c c++
