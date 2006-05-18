@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/04/06 18:18:15 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/04/17 13:46:45 wiz Exp $
 
 DISTNAME=	dvipng-1.7
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvipng/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dvipng.sourceforge.net/dvipng.html
 COMMENT=	Convert DVI files to PNG files
+
+TEX_ACCEPTED=	teTeX2
 
 CONFLICTS+=	teTeX-bin-[3-9].* teTeX-bin-[1-9][0-9]*
 
