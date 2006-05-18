@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/01/04 04:29:08 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/01 17:16:01 drochner Exp $
 
 DISTNAME=	easydiskpasswd-1.0
 CATEGORIES=	sysutils
@@ -6,8 +6,6 @@ DISTFILES=	# empty
 
 MAINTAINER=	drochner@NetBSD.org
 COMMENT=	Tool to unlock a password protected USB "EasyDisk"
-
-BROKEN_IN=	pkgsrc-2005Q4
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
