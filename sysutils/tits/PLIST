@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/02/09 14:25:48 scw Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:53:57 zuntum Exp $
+share/examples/rc.d/tits
 share/examples/tits.conf
 sbin/tits
 man/man8/tits.8
