@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/03/04 21:28:55 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2006/05/14 15:25:37 joerg Exp $
 
 DISTNAME=	festival-1.95-beta
 PKGNAME=	festival-1.95beta
@@ -72,10 +72,10 @@ MAKE_ENV+=	PKG_EST_HOME=${SPEECHTOOLS:Q}				\
 INSTALLATION_DIRS=	bin libexec man/man1
 
 post-patch:
-	@${CP} ${FILESDIR}/top-Makefile ${WRKSRC}/Makefile
+	${CP} ${FILESDIR}/top-Makefile ${WRKSRC}/Makefile
 .if exists(${FILESDIR}/unknown_${OPSYS}.mak)
-	@${CP} ${FILESDIR}/unknown_${OPSYS}.mak ${SPEECHTOOLS}/config/systems/unknown_${OPSYS}.mak
-	@${CP} ${FILESDIR}/unknown_${OPSYS}.mak ${FESTIVAL}/config/systems/unknown_${OPSYS}.mak
+	${CP} ${FILESDIR}/unknown_${OPSYS}.mak ${SPEECHTOOLS}/config/systems/unknown_${OPSYS}.mak
+	${CP} ${FILESDIR}/unknown_${OPSYS}.mak ${FESTIVAL}/config/systems/unknown_${OPSYS}.mak
 .endif
 
 do-install:

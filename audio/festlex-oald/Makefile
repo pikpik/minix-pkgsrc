@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/07/19 10:22:32 grant Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:06 joerg Exp $
 
 DISTNAME=	festlex_OALD
 PKGNAME=	festlex-oald-1.4.0
@@ -21,8 +21,8 @@ NO_BUILD=	yes
 FHOME=		${PREFIX}/share/festival
 
 post-extract:
-	@ ${CHMOD} -R a+r ${WRKSRC}
-	@ ${FIND} ${WRKSRC} -type d -print | ${XARGS} ${CHMOD} 755
+	${CHMOD} -R a+r ${WRKSRC}
+	${FIND} ${WRKSRC} -type d -print | ${XARGS} ${CHMOD} 755
 
 do-install:
 	${INSTALL_DATA_DIR} ${FHOME}
