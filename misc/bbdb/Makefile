@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2006/03/20 05:35:58 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/05/18 20:29:59 wiz Exp $
 #
 
 DISTNAME=		bbdb-2.34
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail misc news
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bbdb/}
 
@@ -36,7 +36,7 @@ do-install:
 	${MKDIR} ${LISPDIR}
 	${INSTALL_DATA} ${WRKSRC}/lisp/*.el ${LISPDIR}
 	${INSTALL_DATA} ${WRKSRC}/lisp/*.elc ${LISPDIR}
-	cd ${WRKSRC}; for f in bbdb.info bbdb.info-[0-9]*; do		\
+	cd ${WRKSRC}/texinfo; for f in bbdb.info bbdb.info-[0-9]*; do	\
 		${TEST} ! -f "$$f" ||					\
 		${INSTALL_DATA} "$$f" ${PREFIX}/${PKGINFODIR};		\
 	done
