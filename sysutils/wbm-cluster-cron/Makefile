@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 04:03:45 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 21:39:44 jlam Exp $
 
 DISTNAME=	cluster-cron
 PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
+PKGREVISION=	1
 DIST_SUBDIR=	webmin-modules-${WBM_VERSION}
 
 # The version is from the module.info file from the extracted distfile.
