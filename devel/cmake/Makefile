@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/03/04 21:29:13 jlam Exp $
+# $NetBSD$
 
 DISTNAME=	cmake-2.4.2
 CATEGORIES=	devel
