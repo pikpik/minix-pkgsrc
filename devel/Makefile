@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.758 2006/05/11 03:51:11 minskim Exp $
+# $NetBSD: Makefile,v 1.759 2006/05/15 15:04:27 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -589,6 +589,7 @@ SUBDIR+=	py-urwid
 SUBDIR+=	py-zconfig
 SUBDIR+=	py24-setuptools
 SUBDIR+=	python-mode
+SUBDIR+=	qconf
 SUBDIR+=	rake
 SUBDIR+=	rapidsvn
 SUBDIR+=	ratfor

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.352 2006/05/16 17:36:43 jlam Exp $
+# $NetBSD: Makefile,v 1.353 2006/05/16 21:45:32 jlam Exp $
 #
 
 COMMENT=	System utilities
@@ -256,7 +256,6 @@ SUBDIR+=	wbm-lpadmin
 SUBDIR+=	wbm-mailboxes
 SUBDIR+=	wbm-mount
 SUBDIR+=	wbm-mysql
-SUBDIR+=	wbm-net
 SUBDIR+=	wbm-net
 SUBDIR+=	wbm-openslp
 SUBDIR+=	wbm-passwd
