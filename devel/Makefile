@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.759 2006/05/15 15:04:27 seb Exp $
+# $NetBSD: Makefile,v 1.760 2006/05/19 19:57:26 rillig Exp $
 #
 
 COMMENT=	Development utilities
@@ -315,6 +315,7 @@ SUBDIR+=	nspr
 SUBDIR+=	nspr-reference
 SUBDIR+=	nss
 SUBDIR+=	oaf
+SUBDIR+=	ocaml-findlib
 SUBDIR+=	ode
 SUBDIR+=	ogre
 SUBDIR+=	opencm
