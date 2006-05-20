@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/02/05 23:08:43 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/04/03 18:20:50 adam Exp $
 
 DISTNAME=	gnustep-base-1.12.0
 CATEGORIES=	devel gnustep
@@ -27,7 +27,7 @@ post-install:
 
 .include "../../mk/compiler.mk"
 
-.if empty(CC_VERSION:Mgcc-3*) || !exists(/usr/include/objc/objc.h)
+.if empty(CC_VERSION:Mgcc-[34]*) || !exists(/usr/include/objc/objc.h)
 .include "../../devel/gnustep-objc/buildlink3.mk"
 .endif
 
