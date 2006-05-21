@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/26 22:37:22 tron Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/13 13:32:53 wulf Exp $
 
 DISTNAME=	swig-1.3.29
 CATEGORIES=	devel
@@ -8,7 +8,7 @@ MAINTAINER=	epg@NetBSD.org
 HOMEPAGE=	http://www.swig.org/
 COMMENT=	Simplified Wrapper and Interface Generator
 
-CONFLICTS=      swig-build-[0-9]*
+CONFLICTS=	swig-build-[0-9]*
 
 CONFIGURE_ARGS+=	--with-swiglibdir=${PREFIX}/share/swig/1.3
 BUILD_TARGET=		swig
