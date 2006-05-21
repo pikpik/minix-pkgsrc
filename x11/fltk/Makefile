@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.57 2006/03/22 19:31:14 minskim Exp $
+# $NetBSD: Makefile,v 1.58 2006/04/17 13:46:52 wiz Exp $
 
 DISTNAME=	fltk-1.1.7-source
 PKGNAME=	${DISTNAME:S/-source//}
 VERS=		${DISTNAME:S/fltk-//:S/-source//}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fltk/} \
 		ftp://ftp2.easysw.com/pub/fltk/${VERS}/ \
@@ -27,6 +27,7 @@ TEST_TARGET=		test
 PTHREAD_OPTS+=		require
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-libtool=${LIBTOOL:Q}
+CONFIGURE_ARGS+=	--enable-threads
 .if exists(./descr)
 PLIST_SUBST+=           WITH_LINKS="@comment "
 .else
