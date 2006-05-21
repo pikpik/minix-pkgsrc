@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/12/05 20:50:11 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2006/02/05 23:09:02 joerg Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
@@ -32,6 +32,7 @@ CPPFLAGS+=	-DFLTK_1_0_COMPAT
 CONFIGURE_DIRS=	${POSE_BUILD_DIR}
 BUILD_DIRS=	${POSE_BUILD_DIR}
 
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake perl
 
 GNU_CONFIGURE=	YES
