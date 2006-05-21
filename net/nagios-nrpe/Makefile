@@ -37,5 +37,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/check_nrpe ${PREFIX}/libexec/nagios
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/nagios
 	${INSTALL_DATA} ${WRKSRC}/sample-config/nrpe.cfg ${PREFIX}/share/examples/nagios
+	${INSTALL_SCRIPT} ${WRKDIR}/nrpe ${PREFIX}/${RCD_SCRIPTS_EXAMPLEDIR}
 
 .include "../../mk/bsd.pkg.mk"
