@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:41 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/04/17 13:47:00 wiz Exp $
 #
 
 DISTNAME=	sip-3.1
@@ -11,6 +11,7 @@ MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/sip/index.php
 COMMENT=	Tool to create Python bindings for C++ libraries
 
+USE_LANGUAGES=		c++
 USE_LIBTOOL=		yes
 
 GNU_CONFIGURE=		yes
