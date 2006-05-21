@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/nrpe
+libexec/nagios/check_nrpe
+share/examples/nagios/nrpe.cfg
