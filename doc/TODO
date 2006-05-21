@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.4998 2006/05/20 00:24:06 wiz Exp $
+$NetBSD: TODO,v 1.4999 2006/05/20 23:10:55 wiz Exp $
 
 Suggested new packages
 ======================
@@ -456,7 +456,6 @@ Suggested package updates
 	o dnstracer-1.8
 	o docbook-xsl-1.70.0
 	o doxygen-1.4.6
-	o dpkg-1.10.28
 	o dropbear-0.48
 	o drupal-4.7.0
 	o dspam-3.6.6
