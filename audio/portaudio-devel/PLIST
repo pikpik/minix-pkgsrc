@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/portaudio2/portaudio.h
+lib/portaudio2/libportaudio.la
+lib/pkgconfig/portaudio-2.0.pc
+@dirrm include/portaudio2
+@dirrm lib/portaudio2
