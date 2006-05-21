@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:08:23 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/05/06 19:13:55 dmcmahill Exp $
 #
 
 DISTNAME=	verilog-0.8.2
@@ -16,10 +16,8 @@ CONFLICTS+=	verilog-current-[0-9]*
 USE_LANGUAGES=	c c++
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		bison gmake lex
+USE_TOOLS+=		gmake
 CONFIGURE_ARGS+=	--without-ipal
-YACC=			${LOCALBASE}/bin/bison
-TEST_DIRS=		${WRKSRC}
 TEST_TARGET=		check
 
 .include "../../devel/zlib/buildlink3.mk"
