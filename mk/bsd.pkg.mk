@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1822 2006/05/10 17:53:34 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1823 2006/05/21 14:41:29 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -438,7 +438,7 @@ _BUILD_DATE!=	${DATE} "+%Y-%m-%d %H:%M:%S %z"
 .include "../../mk/alternatives.mk"
 
 # INSTALL/DEINSTALL script framework
-.include "../../mk/install/bsd.pkginstall.mk"
+.include "../../mk/pkginstall/bsd.pkginstall.mk"
 
 # If MESSAGE hasn't been defined, then set MESSAGE_SRC to be a space-separated
 # list of files to be concatenated together to generate the MESSAGE file.

@@ -1,4 +1,4 @@
-# $NetBSD: usergroupfuncs.DragonFly,v 1.6 2006/04/29 03:49:12 jlam Exp $
+# $NetBSD: usergroupfuncs.FreeBSD,v 1.8 2006/05/10 05:41:40 jlam Exp $
 #
 # Platform-specific adduser and addgroup functionality
 # on top of pw(8).

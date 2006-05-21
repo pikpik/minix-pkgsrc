@@ -1,4 +1,4 @@
-# $NetBSD: files,v 1.13 2006/04/25 22:35:46 jlam Exp $
+# $NetBSD: files,v 1.14 2006/05/01 14:56:23 jlam Exp $
 #
 # Generate a +FILES script that reference counts config files that are
 # required for the proper functioning of the package.

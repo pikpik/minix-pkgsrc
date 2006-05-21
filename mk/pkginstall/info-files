@@ -1,4 +1,4 @@
-# $NetBSD: info-files,v 1.4 2006/04/06 17:57:34 jlam Exp $
+# $NetBSD: info-files,v 1.5 2006/04/12 21:13:56 jlam Exp $
 #
 # Generate an +INFO_FILES script that handles info file registration for
 # the package.

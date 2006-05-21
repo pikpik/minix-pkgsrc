@@ -1,4 +1,4 @@
-# $NetBSD: install,v 1.46 2006/04/25 19:54:39 jlam Exp $
+# $NetBSD: install,v 1.47 2006/05/21 00:14:51 jlam Exp $
 
 case ${STAGE} in
 PRE-INSTALL)

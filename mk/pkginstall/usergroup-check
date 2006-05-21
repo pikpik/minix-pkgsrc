@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: usergroup-check,v 1.1 2006/04/23 00:00:44 jlam Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
