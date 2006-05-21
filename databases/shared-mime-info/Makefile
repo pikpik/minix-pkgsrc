@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/30 20:47:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2006/05/08 19:41:47 jschauma Exp $
 #
 
 DISTNAME=	shared-mime-info-0.17
@@ -22,10 +22,10 @@ CONFIGURE_ARGS+=	--disable-update-mimedb
 
 CPPFLAGS+=		-DPREFIX="\"${PREFIX}\""
 
-.include "../../mk/compiler.mk"                 
+.include "../../mk/compiler.mk"
 
 .if !empty(PKGSRC_COMPILER:Mmipspro*)
-CFLAGS+=		-c99         
+CFLAGS+=		-c99
 .endif
 
 DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
