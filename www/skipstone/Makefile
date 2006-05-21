@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/03/08 09:09:44 ghen Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/17 13:46:52 wiz Exp $
 
 DISTNAME=		skipstone-0.9.4
 PKGREVISION=		1
@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.muhri.net/skipstone/
 COMMENT=		Light and fast Gecko-based browser
 
 GNU_CONFIGURE=		yes
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 
 USE_PKGLOCALEDIR=	yes
