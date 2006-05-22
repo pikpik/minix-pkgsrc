@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/04/22 09:22:08 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2006/05/13 03:44:23 minskim Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -22,8 +22,7 @@ DEPENDS+=		tk>=8.0:../../x11/tk
 WRKSRC=			${WRKDIR}
 VERSION=		3.2
 NO_BUILD=		yes
-CHECK_SHLIBS=		NO
-SHLIB_HANDLING=		NO
+CHECK_SHLIBS_SUPPORTED=	no
 INFO_FILES=		# PLIST
 TEX_ACCEPTED=		teTeX2 teTeX3
 

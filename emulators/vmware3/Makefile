@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:05 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/26 21:37:12 veego Exp $
 
 DISTNAME=	VMware-workstation-3.2.1-2242
 PKGNAME=	vmware-3.2.1pl1
@@ -30,7 +30,6 @@ DEPENDS+=	suse_vmware>=6.4nb1:../../emulators/${SUSE_DIR_PREFIX}_vmware
 LICENSE=	vmware-license
 
 WRKSRC=		${WRKDIR}/vmware-distrib
-CHECK_SHLIBS=	NO
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 # There is a kernel bug in NetBSD 3.0 for vmware.

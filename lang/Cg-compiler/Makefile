@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:59 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:43 joerg Exp $
 #
 
 DISTNAME=	CgLinux-1.3.0408-0400
@@ -14,7 +14,6 @@ COMMENT=	NVIDIA Cg Compiler for Linux
 ONLY_FOR_PLATFORM=  *-*-i386
 
 WRKSRC=		${WRKDIR}
-CHECK_SHLIBS=	no
 NO_BUILD=	yes
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/12/12 14:43:26 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:28 joerg Exp $
 #
 
 DISTNAME=	overnetclc-1.0.1
@@ -18,7 +18,6 @@ WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-CHECK_SHLIBS=	no
 
 EVAL_PREFIX=	RPM2PKGDIR=rpm2pkg
 

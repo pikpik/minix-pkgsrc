@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/03/14 01:14:33 jlam Exp $
+# $NetBSD: Makefile,v 1.37 2006/04/22 09:22:14 rillig Exp $
 
 DISTNAME=		vlnx440e
 PKGNAME=		uvscan-4.40
@@ -20,7 +20,6 @@ DEPENDS+=		suse_compat>=6.1:../../emulators/${SUSE_DIR_PREFIX}_compat
 .endif
 
 ONLY_FOR_PLATFORM=	*-*-i386
-CHECK_SHLIBS=		NO
 
 WRKSRC=			${WRKDIR}
 NO_BUILD=		yes

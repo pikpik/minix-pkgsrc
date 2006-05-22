@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/12 21:32:20 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/05 23:08:23 joerg Exp $
 
 DISTNAME=	aim-1.5.286
 PKGREVISION=	1
@@ -33,7 +33,6 @@ DEPENDS+=	suse_gtk>=${SUSE_VERSION}:../../emulators/${SUSE_DIR_PREFIX}_gtk
 ONLY_FOR_PLATFORM= *-*-i386
 
 WRKSRC=		${WRKDIR}
-CHECK_SHLIBS=	NO
 NO_BUILD=	YES
 
 EXTRACT_ONLY=	# nothing

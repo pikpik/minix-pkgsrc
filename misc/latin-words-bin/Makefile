@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:22 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:10:12 joerg Exp $
 #
 
 DISTNAME=		words-1.97-linux
@@ -12,9 +12,7 @@ HOMEPAGE=		http://users.erols.com/whitaker/wordslux.htm
 COMMENT=		Latin-to-English dictionary program (Linux binary)
 
 WRKSRC=			${WRKDIR}/words-1.97
-NO_CONFIGURE=   YES
-
-CHECK_SHLIBS=   NO
+NO_CONFIGURE=   	YES
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "NetBSD"

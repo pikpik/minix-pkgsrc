@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/01/14 03:22:51 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/02/05 23:09:21 joerg Exp $
 
 DISTNAME=	linuxq3apoint-1.32b.x86
 PKGREVISION=	2
@@ -25,7 +25,6 @@ DEPENDS+=	suse_glx>=6.4:../../emulators/${SUSE_DIR_PREFIX}_glx
 NO_SRC_ON_FTP=	no
 NO_BIN_ON_FTP=	no
 NO_CONFIGURE=	yes
-CHECK_SHLIBS=	NO
 
 USE_TOOLS+=	gtar gunzip tail
 
