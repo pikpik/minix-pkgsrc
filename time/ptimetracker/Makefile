@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:10 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/04/17 13:46:49 wiz Exp $
 
 DISTNAME=	ptimetracker-1.7.3
 PKGREVISION=	3
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.eggtart.plus.com/ptt/
 COMMENT=	Keep track of the time spent on projects
 
 # USE_GNOME=	gnomehack gnomeprefix libgtkhtml libgnomeui
+USE_LANGUAGES=		c++
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 INSTALLATION_DIRS=	bin man/man1
