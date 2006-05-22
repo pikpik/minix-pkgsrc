@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/18 17:38:31 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/21 15:44:55 rillig Exp $
 #
 
 DISTNAME=		moon-buggy-1.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games
 MASTER_SITES=		http://seehuhn.de/data/
 
@@ -13,6 +13,8 @@ COMMENT=		Game on the Moon
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sharedstatedir=${VARBASE}/games
+
+INFO_FILES=		# PLIST
 
 OWN_DIRS=		${VARBASE}/games/moon-buggy
 
