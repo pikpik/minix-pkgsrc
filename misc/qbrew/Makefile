@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:13 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:41 wiz Exp $
 
 DISTNAME=	qbrew-0.3.5
 PKGREVISION=	3
@@ -9,6 +9,7 @@ MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://www.usermode.org/code.html
 COMMENT= 	Homebrewer's recipe calculator
 
+USE_LANGUAGES=	c++
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
