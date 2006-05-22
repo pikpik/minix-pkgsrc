@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/04/13 18:23:38 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:49 wiz Exp $
 
 DISTNAME=	xfe-0.84
 PKGREVISION=	2
@@ -10,6 +10,7 @@ HOMEPAGE=	http://xfe.sourceforge.net/
 COMMENT=	Fast MS-Explorer like filemanager for X
 
 USE_DIRS+=		xdg-1.1
+USE_LANGUAGES=		c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt
 GNU_CONFIGURE=		yes
