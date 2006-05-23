@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/04/02 23:07:06 jschauma Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/22 09:22:10 rillig Exp $
 #
 
 DISTNAME=		jini-${SUN_VERSION}-src
@@ -42,14 +42,9 @@ NO_BUILD=		yes
 
 DOWNLOAD=		http://wwws.sun.com/software/communitysource/jini/download.html
 
-_FETCH_MESSAGE=	\
-	${ECHO} "======================================================================"; \
-	${ECHO} ; \
-	${ECHO} " The file ${DISTNAME}${EXTRACT_SUFX} containing the Jini(TM)"; \
-	${ECHO} " Technology Starter Kit must be fetched into ${DISTDIR} from "; \
-	${ECHO} " ${DOWNLOAD}"; \
-	${ECHO} ; \
-	${ECHO} "======================================================================"
+FETCH_MESSAGE=	"The file ${DISTNAME}${EXTRACT_SUFX} containing the Jini(TM)"
+FETCH_MESSAGE+=	"Technology Starter Kit must be fetched into ${DISTDIR} from"
+FETCH_MESSAGE+=	${DOWNLOAD:Q}
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${PREFIX}/jini
