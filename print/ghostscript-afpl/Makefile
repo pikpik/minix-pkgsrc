@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/05/22 17:20:39 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2006/05/23 09:37:46 adam Exp $
 
 DISTNAME=	ghostscript-8.54
 PKGNAME=	ghostscript-afpl-8.54
@@ -16,10 +16,6 @@ CONFLICTS+=		ghostscript-gnu{,-nox11,-x11}-[0-9]*
 
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
-
-GS_SRCS=		${DISTNAME}${EXTRACT_SUFX}
-DISTFILES=		${GS_SRCS}
-EXTRACT_ONLY=		${GS_SRCS}
 
 GS_RESOURCEDIR=		${PREFIX}/share/ghostscript/Resource
 
