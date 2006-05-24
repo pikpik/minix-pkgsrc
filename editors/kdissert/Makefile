@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:31 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/17 13:46:22 wiz Exp $
 #
 
 DISTNAME=		kdissert-1.0.5
@@ -12,6 +12,7 @@ HOMEPAGE=		http://freehackers.org/~tnagy/kdissert/
 COMMENT=		Mindmapping-like tool to generate text templates
 
 USE_PKGLOCALEDIR=	yes
+USE_LANGUAGES=		c c++
 NO_CONFIGURE=		yes
 
 BUILD_DEPENDS+=	scons>=0.96.1nb1:../../devel/scons
@@ -25,4 +26,5 @@ do-install:
 		&& ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/scons install
 
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/qt3-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
