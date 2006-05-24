@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/05/10 20:56:00 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/05/12 23:03:22 rillig Exp $
 
 WEB_PREFIX?=	${.CURDIR}/../htdocs
 
@@ -37,6 +37,9 @@ SRCS+=	chapters.ent
 
 # Make deeper TOC:
 XSL_DBX_WITH_TOC_SECTION_DEPTH?= 2 
+
+# Avoid extra normalization
+NO_TIDY?=	yes
 
 
 all:	# doing this as depends doesn't work
