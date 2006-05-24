@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2006/04/12 13:01:41 markd Exp $
+@comment $NetBSD$
 share/doc/kde/HTML/en_GB/kpresenter/faq.docbook
 share/doc/kde/HTML/en_GB/kpresenter/great-presentations.docbook
 share/doc/kde/HTML/en_GB/kpresenter/guides.docbook
