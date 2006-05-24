@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:27 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/05/21 21:32:22 rillig Exp $
 
 DISTNAME=	cube_2004_05_22
 PKGNAME=	cube-20040522
@@ -17,6 +17,7 @@ CUBE_SRC_DIR=	${WRKSRC}/source/src
 CUBE_DATA_DIR=	${PREFIX}/share/cube
 
 NO_CONFIGURE=	yes
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake unzip
 
 INSTALLATION_DIRS=	bin
