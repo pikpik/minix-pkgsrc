@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/03/21 06:00:45 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:28 wiz Exp $
 #
 
 DISTNAME=	grhino-0.15.0
@@ -10,6 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rhino.sourceforge.net/
 COMMENT=	Othello (Reversi) engine
 
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
