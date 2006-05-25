@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/04/14 09:56:03 adam Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:44 wiz Exp $
 
 DISTNAME=	kiax-0.8.5-src
 PKGNAME=	kiax-0.8.5
@@ -13,6 +13,7 @@ COMMENT=	Open internet telephony system
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
+USE_LANGUAGES=		c c++
 HAS_CONFIGURE=		yes
 
 do-configure:
