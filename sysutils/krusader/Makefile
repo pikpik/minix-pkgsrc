@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:55 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/04/17 13:46:48 wiz Exp $
 #
 
-DISTNAME=	krusader-1.51
-PKGREVISION=	3
+DISTNAME=	krusader-1.70.0
 CATEGORIES=	kde sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=krusader/}
 
@@ -19,4 +18,5 @@ SHLIBTOOL_OVERRIDE=	libtool
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/kdebase3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
