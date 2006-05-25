@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:18 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/04/28 11:10:02 joerg Exp $
 #
 
 DISTNAME=	licq-1.2.6
@@ -21,6 +21,7 @@ NOT_FOR_PLATFORM= NetBSD-*-*
 .endif
 
 GNU_CONFIGURE=		YES
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	# none
 SHLIBTOOL_OVERRIDE=	libtool */libtool */*/libtool
