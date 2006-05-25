@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/04/17 13:46:20 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2006/04/22 09:22:07 rillig Exp $
 
 DISTNAME=	anjuta-1.2.3
 PKGREVISION=	8
@@ -18,6 +18,7 @@ DEPENDS+=	libtool>=1.5.2:../../devel/libtool
 DEPENDS+=	yelp>=2.4.2:../../misc/yelp
 
 USE_DIRS+=		gnome2-1.5
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake:run pkg-config:run
