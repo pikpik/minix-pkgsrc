@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.50 2006/03/03 04:00:09 grant Exp $
+# $NetBSD: Makefile.common,v 1.51 2006/04/22 09:22:07 rillig Exp $
 
-DISTNAME=		mysql-4.1.15
+DISTNAME=		mysql-4.1.19
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_MYSQL:=MySQL-4.1/}
 
