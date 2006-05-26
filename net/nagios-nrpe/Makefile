@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2006/05/21 10:46:13 grant Exp $
 #
 
 DISTNAME=		nrpe-2.5.1
 PKGNAME=		nagios-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		net sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nagios/}
 
@@ -11,6 +12,7 @@ HOMEPAGE=       	http://sourceforge.net/projects/nagios/
 COMMENT=		Nagios remote program execution daemon
 
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		perl
 USE_PKGINSTALL=		yes
 
 PKG_SYSCONFSUBDIR=	nagios
