@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/26 21:08:53 joerg Exp $
 #
 
 DISTNAME=	Gentium_102_W
@@ -17,7 +17,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
 
-FONTS_DIRS.ttf=	${PREFIX}/lib/X11/fonts/TTF
+FONTS_DIRS.ttf+=	${PREFIX}/lib/X11/fonts/TTF
 
 do-install:
 	${INSTALL_DATA_DIR} ${FONTS_DIRS.ttf}
