@@ -1,9 +1,9 @@
 $NetBSD$
 
---- dact.h.orig	2005-01-24 11:16:06.000000000 -0500
+--- dact.h.orig	2006-03-25 14:15:34.000000000 +0100
 +++ dact.h
-@@ -80,6 +80,7 @@
- #include "strsep.h"
+@@ -121,6 +121,7 @@
+ #include "uname.h"
  #endif
  
 +#include <sys/types.h>
