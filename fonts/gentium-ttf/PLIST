@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/X11/fonts/TTF/genai102.ttf
+lib/X11/fonts/TTF/genar102.ttf
+lib/X11/fonts/TTF/geni102.ttf
+lib/X11/fonts/TTF/genr102.ttf
