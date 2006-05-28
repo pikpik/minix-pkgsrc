@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/04/03 18:25:02 adam Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/17 13:46:00 wiz Exp $
 
 DISTNAME=	gnustep-gui-0.10.3
 PKGREVISION=	1
@@ -9,8 +9,10 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	GNUstep AppKit Implementation
 
-GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--exec-prefix=${PREFIX:Q}/libexec/GNUstep
+USE_LANGUAGES=	objc
+
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=--exec-prefix=${PREFIX:Q}/libexec/GNUstep
 
 .include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../devel/gnustep-base/buildlink3.mk"

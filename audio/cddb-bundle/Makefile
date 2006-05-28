@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:08:06 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/04 21:28:54 jlam Exp $
 #
 
 DISTNAME=	cddb.bundle-0.2
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gsburn/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gsburn.sourceforge.net/
 COMMENT=	CDDB client bundle
+
+USE_LANGUAGES=	objc
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/-[^-]*$//}
 NO_CONFIGURE=	yes
