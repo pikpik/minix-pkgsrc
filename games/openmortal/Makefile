@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/04/17 13:46:29 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/05/18 20:29:59 wiz Exp $
 #
 
 DISTNAME=	openmortal-0.7
@@ -14,6 +14,7 @@ COMMENT=	Parody of Mortal Kombat with real characters
 BROKEN_IN=		pkgsrc-2006Q1
 
 GNU_CONFIGURE=	yes
+USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake
 
 REPLACE_PERL=	data/script/*.pl
