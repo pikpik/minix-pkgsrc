@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/24 07:32:50 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:11:28 joerg Exp $
 #
 
 DISTNAME=		nevow-0.3
@@ -13,6 +13,8 @@ COMMENT=		Next-generation web application templating system
 
 DEPENDS+=		${PYPKGPREFIX}-twisted>=1.3.0:../../net/py-twisted
 DEPENDS+=		${PYPKGPREFIX}-xml>=0.8.3:../../textproc/py-xml
+
+PYTHON_VERSIONS_ACCEPTED=	24 23 22
 
 WRKSRC=			${WRKDIR}/${DISTNAME}
 PY_PATCHPLIST=		yes
