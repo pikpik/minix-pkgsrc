@@ -1,9 +1,7 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:23:03 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:43 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_GTK_BUILDLINK3_MK:=	${PY_GTK_BUILDLINK3_MK}+
-
-.include "../../lang/python/pyversion.mk"
 
 .if !empty(BUILDLINK_DEPTH:M+)
 BUILDLINK_DEPENDS+=	pygtk
@@ -13,6 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npygtk}
 BUILDLINK_PACKAGES+=	pygtk
 
 .if !empty(PY_GTK_BUILDLINK3_MK:M+)
+.  include "../../lang/python/pyversion.mk"
 BUILDLINK_API_DEPENDS.pygtk+=	${PYPKGPREFIX}-gtk>=0.6.9nb4
 BUILDLINK_ABI_DEPENDS.pygtk+=	${PYPKGPREFIX}-gtk>=0.6.11nb2
 BUILDLINK_PKGSRCDIR.pygtk?=	../../x11/pygtk
