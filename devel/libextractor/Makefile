@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/05/01 21:06:56 adam Exp $
+# $NetBSD: Makefile,v 1.17 2006/05/23 10:52:22 adam Exp $
 
 DISTNAME=	libextractor-0.5.14
 CATEGORIES=	devel
@@ -29,5 +29,6 @@ SHLIBTOOL_OVERRIDE+=	${WRKSRC}/libtool
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../multimedia/libmpeg2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
