@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2005/12/29 06:22:23 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2006/02/05 23:11:24 joerg Exp $
 
 DISTNAME=	horde-2.2.9
 PKGREVISION=	1
@@ -22,8 +22,10 @@ HORDEDIR=	${PREFIX}/share/horde
 MESSAGE_SUBST+=	HORDEDIR=${HORDEDIR}
 
 .include "../../mk/bsd.prefs.mk"
+.include "../../lang/php/phpversion.mk"
 
 PKG_SYSCONFSUBDIR?=	httpd
+PHP_VERSIONS_ACCEPTED=	4
 
 CONF_FILES=	${EGDIR}/horde.conf ${PKG_SYSCONFDIR}/horde.conf
 CONF_FILES+=	${HORDEDIR}/config/horde.php.dist ${HORDEDIR}/config/horde.php
