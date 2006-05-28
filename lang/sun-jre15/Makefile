@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2006/03/14 14:09:34 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2006/05/14 14:40:36 seb Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 
-DISTNAME=	jre-1_5_0_06-linux-i586
-PKGNAME=	sun-jre15-5.0.6
-PKGREVISION=	2
+DISTNAME=	jre-1_5_0_07-linux-i586
+PKGNAME=	sun-jre15-5.0.7
 MASTER_SITES=	# empty
 
 SHORT_NAME=	JRE
