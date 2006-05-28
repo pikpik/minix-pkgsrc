@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/04/13 18:23:30 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2006/04/17 13:46:19 wiz Exp $
 #
 
 DISTNAME=		gramps-1.0.11
@@ -22,7 +22,7 @@ USE_TOOLS+=		msgfmt pkg-config
 
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
 # i18n support with other python versions appears to not work
-PYTHON_VERSION_REQD=	23
+PYTHON_VERSIONS_ACCEPTED=	23
 
 MESSAGE_SUBST+=		PYPKGPREFIX=${PYPKGPREFIX}
 

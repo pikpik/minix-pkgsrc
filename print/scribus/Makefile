@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/04/17 13:46:46 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2006/05/22 16:40:19 drochner Exp $
 
 DISTNAME=	scribus-1.2.4.1
 PKGREVISION=	1
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=        --with-qt-dir=${QTDIR:Q} \
 			--with-extra-includes=${LOCALBASE}/include
 # XXX should work with other Python versions, but there are
 # stupid assumptions in the configure script
-PYTHON_VERSION_REQD=	24
+PYTHON_VERSIONS_ACCEPTED=	24
 CONFIGURE_ARGS+=	--with-pythondir=${LOCALBASE:Q}
 # avoid CUPS libs to be pulled in
 CONFIGURE_ENV+=		ac_cv_prog_hacups=no
