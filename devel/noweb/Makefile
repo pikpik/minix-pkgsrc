@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/03/04 21:29:18 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2006/05/23 16:07:04 joerg Exp $
 
 DISTNAME=		noweb-2.9a
 PKGREVISION=		3
@@ -29,7 +29,7 @@ SUBST_STAGE.mktemp=	post-patch
 
 .if ${OPSYS} != "SunOS"
 do-configure:
-	(cd ${WRKSRC} ; ./awkname awk)
+	cd ${WRKSRC} && ./awkname awk
 .endif
 
 post-install:
