@@ -21,7 +21,7 @@ JARNAME=	AirportConfig128Bit.jar
 LIBDIR=		${PREFIX}/lib/${BINNAME}
 
 USE_JAVA=		run
-PKG_JVMS_ACCEPTED=	sun-jdk15 sun-jdk14 sun-jdk13 blackdown-jdk13 jdk14
+PKG_JVMS_ACCEPTED=	sun-jdk13 sun-jdk14 sun-jdk15 blackdown-jdk13 jdk14
 
 INSTALLATION_DIRS=	bin
 
