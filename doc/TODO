@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.5033 2006/05/30 21:17:20 wiz Exp $
+$NetBSD: TODO,v 1.5034 2006/05/30 21:27:27 wiz Exp $
 
 Suggested new packages
 ======================
@@ -452,7 +452,6 @@ Suggested package updates
 	o dmidecode-2.8
 	o dnstop-20050405
 	o dnstracer-1.8
-	o docbook-xsl-1.70.1
 	o doxygen-1.4.6
 	o dropbear-0.48
 	o dspam-3.6.6
