@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2005/12/04 22:12:07 salo Exp $
+# $NetBSD: options.mk,v 1.7 2005/12/05 23:55:14 rillig Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.lftp
@@ -26,11 +26,13 @@ CONFIGURE_ARGS+=	--without-gnutls
 CONFIGURE_ARGS+=	--without-openssl
 .endif
 
+.PHONY: post-install-perl
+
 .if !empty(PKG_OPTIONS:Mperl)
 USE_TOOLS+=		perl:run
 DEPENDS+=		p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 DEPENDS+=		p5-String-CRC32-[0-9]*:../../textproc/p5-String-CRC32
-REPLACE_PERL=		src/convert-netscape-cookies src/verify-file
+REPLACE_PERL+=		src/convert-netscape-cookies src/verify-file
 PLIST_SRC+=		${PKGDIR}/PLIST.perl
 
 post-install-perl:
