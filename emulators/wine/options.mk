@@ -1,8 +1,7 @@
-# $NetBSD: options.mk,v 1.3 2006/03/13 08:31:23 adam Exp $
+# $NetBSD: options.mk,v 1.4 2006/03/31 10:48:00 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.wine
 PKG_SUPPORTED_OPTIONS=	arts cups opengl sane
-PKG_SUGGESTED_OPTIONS=	opengl
 
 .include "../../mk/bsd.options.mk"
 
@@ -25,4 +24,9 @@ PLIST_SUBST+=	WINE_OPENGL="@comment "
 
 .if !empty(PKG_OPTIONS:Msane)
 .include "../../graphics/sane-backends/buildlink3.mk"
+.endif
+
+.if !empty(PKG_OPTIONS:Mopengl)
+.else
+CONFIGURE_ARGS+=	--without-opengl
 .endif

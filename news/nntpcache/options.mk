@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2005/12/01 20:10:41 wiz Exp $
+# $NetBSD: options.mk,v 1.2 2006/01/01 18:53:03 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.nntpcache
 PKG_SUPPORTED_OPTIONS=	nntpcache-pgp
@@ -16,5 +16,5 @@ DEPENDS+=		pgp-2.*:../../security/pgp2
 
 .if !empty(PKG_OPTIONS:Mopenldap)
 CONFIGURE_ARGS+=	--with-authinfo-ldap
-.include "../../databases/openldap/buildlink3.mk"
+.include "../../databases/openldap-client/buildlink3.mk"
 .endif

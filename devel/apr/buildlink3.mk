@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2006/04/06 06:21:44 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2006/04/12 10:27:06 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APR_BUILDLINK3_MK:=	${APR_BUILDLINK3_MK}+
@@ -36,7 +36,7 @@ MAKEVARS+=	PKG_BUILD_OPTIONS.apr
 .endif
 
 .if !empty(PKG_BUILD_OPTIONS.apr:Mldap)
-.  include "../../databases/openldap/buildlink3.mk"
+.  include "../../databases/openldap-client/buildlink3.mk"
 .endif
 
 .include "../../textproc/expat/buildlink3.mk"

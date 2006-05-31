@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2005/08/31 18:32:47 tv Exp $
+# $NetBSD: options.mk,v 1.7 2006/02/05 15:34:08 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.freeradius
 
@@ -30,7 +30,7 @@ CONFIGURE_ARGS+=	--without-rlm_dbm
 ### Use OpenLDAP for storing user details
 ###
 .if !empty(PKG_OPTIONS:Mldap)
-.  include "../../databases/openldap/buildlink3.mk"
+.  include "../../databases/openldap-client/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-rlm_ldap
 PLIST_SRC+=		${PKGDIR}/PLIST.ldap
 .else

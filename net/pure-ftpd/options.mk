@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2006/02/24 09:15:38 ghen Exp $
+# $NetBSD: options.mk,v 1.5 2006/02/24 14:35:30 ghen Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.pureftpd
 PKG_SUPPORTED_OPTIONS=	ldap mysql pgsql ssl virtualchroot utf8
@@ -11,7 +11,7 @@ PKG_OPTIONS_LEGACY_VARS+=	PURE_FTPD_USE_VIRTUAL_CHROOT:virtualchroot
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mldap)
-.  include "../../databases/openldap/buildlink3.mk"
+.  include "../../databases/openldap-client/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-ldap
 .endif
 

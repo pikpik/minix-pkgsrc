@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2005/11/25 17:20:10 martti Exp $
+# $NetBSD: options.mk,v 1.5 2006/02/13 09:16:05 martti Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.proftpd
@@ -37,7 +37,7 @@ MODULES:=	${MODULES}:mod_quotatab_ldap
 
 .if !empty(PKG_OPTIONS:Mldap)
 MODULES:=	${MODULES}:mod_ldap
-.include "../../databases/openldap/buildlink3.mk"
+.include "../../databases/openldap-client/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mmysql)
