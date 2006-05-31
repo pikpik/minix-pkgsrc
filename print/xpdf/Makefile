@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2006/03/29 17:20:09 joerg Exp $
+# $NetBSD: Makefile,v 1.56 2006/05/30 20:03:28 tron Exp $
 
 DISTNAME=	xpdf-3.01
 PKGNAME=	${DISTNAME}pl2
@@ -48,6 +48,8 @@ SUBST_STAGE.paths=	post-patch
 # Used by supplemental packages.
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xpdf
+
+BUILDLINK_API_DEPENDS.freetype2+=	freetype2>=2.2.1
 
 .include "../../fonts/t1lib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
