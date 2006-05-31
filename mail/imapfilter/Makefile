@@ -1,20 +1,20 @@
-# $NetBSD: Makefile,v 1.20 2006/01/15 14:28:07 seb Exp $
+# $NetBSD: Makefile,v 1.21 2006/03/04 21:30:00 jlam Exp $
 
-DISTNAME=		imapfilter-1.1.1
+DISTNAME=		imapfilter-1.2.1
 CATEGORIES=		mail
 MASTER_SITES=		http://imapfilter.hellug.gr/source/
+EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		lefcha@hellug.gr
 HOMEPAGE=		http://imapfilter.hellug.gr/
 COMMENT=		Mail filtering utility for the IMAP
-
 
 LDFLAGS.SunOS+=		-lsocket -lnsl
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/imapfilter
 .for f in sample.config.lua sample.extend.lua
-	${INSTALL_DATA} ${WRKSRC}/${f}			\
+	${INSTALL_DATA} ${WRKSRC}/${f} \
 		${PREFIX}/share/examples/imapfilter
 .endfor
 
