@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2006/02/20 12:08:11 adam Exp $
+# $NetBSD: Makefile.common,v 1.2 2006/03/01 21:10:55 minskim Exp $
 
 DISTNAME=	qt-x11-opensource-src-${QTVERSION}
 CATEGORIES=	x11
@@ -19,7 +19,6 @@ USE_TOOLS+=		gmake
 QTPREFIX=		${PREFIX}/qt4
 
 CONFIGURE_ARGS+=	-prefix "${QTPREFIX}" -shared -sm
-CONFIGURE_ARGS+=	-no-sql-sqlite
 CONFIGURE_ARGS+=	-release
 CONFIGURE_ARGS+=	-system-libjpeg
 CONFIGURE_ARGS+=	-system-libmng
