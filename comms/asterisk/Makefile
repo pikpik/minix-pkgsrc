@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2006/04/13 18:36:58 mjl Exp $
+# $NetBSD: Makefile,v 1.25 2006/04/23 00:12:36 jlam Exp $
 
-DISTNAME=	asterisk-1.2.7.1
+DISTNAME=	asterisk-1.2.8
 CATEGORIES=	comms net audio
 MASTER_SITES=	http://ftp.digium.com/pub/asterisk/ \
 		http://ftp.digium.com/pub/asterisk/old-releases
@@ -23,7 +23,7 @@ INSTALL_TARGET=		install samples
 #PKG_USERS= 		${ASTERISK_USER}:${ASTERISK_GROUP}
 
 # Various path settings for Asterisk
-PKG_SYSCONFSUBDIR?=	asterisk
+PKG_SYSCONFSUBDIR=	asterisk
 ASTLIBDIR?=		${PREFIX}/lib/asterisk
 ASTVARLIBDIR?=		${PREFIX}/libdata/asterisk
 ASTETCDIR?=		${PKG_SYSCONFDIR}
