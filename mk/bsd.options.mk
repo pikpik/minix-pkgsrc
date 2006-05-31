@@ -1,4 +1,4 @@
-# $NetBSD: bsd.options.mk,v 1.51 2006/04/13 21:45:14 wiz Exp $
+# $NetBSD: bsd.options.mk,v 1.52 2006/04/14 17:15:03 jlam Exp $
 #
 # This Makefile fragment provides boilerplate code for standard naming
 # conventions for handling per-package build options.
@@ -120,8 +120,8 @@
 # ### LDAP support
 # ###
 # .if !empty(PKG_OPTIONS:Mldap)
-# .  include "../../databases/openldap/buildlink3.mk"
-# CONFIGURE_ARGS+=	--enable-ldap=${BUILDLINK_PREFIX.openldap}
+# .  include "../../databases/openldap-client/buildlink3.mk"
+# CONFIGURE_ARGS+=	--enable-ldap=${BUILDLINK_PREFIX.openldap-client}
 # .endif
 #
 # ###
