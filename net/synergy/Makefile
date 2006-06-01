@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:10:31 joerg Exp $
+# $NetBSD$
 #
 
-DISTNAME=		synergy-1.2.7
+DISTNAME=		synergy-1.3.1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=synergy2/}
 
