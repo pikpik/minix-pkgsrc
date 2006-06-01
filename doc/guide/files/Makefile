@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/05/12 23:03:22 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/05/24 07:55:59 mishka Exp $
 
 WEB_PREFIX?=	${.CURDIR}/../htdocs
 
@@ -8,6 +8,7 @@ SRCS=	pkgsrc.xml
 SRCS+=	binary.xml
 SRCS+=	build.xml
 SRCS+=	buildlink.xml
+SRCS+=	creating.xml
 SRCS+=	components.xml
 SRCS+=	configuring.xml
 SRCS+=	debug.xml
