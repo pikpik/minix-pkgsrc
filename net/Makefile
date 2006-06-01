@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.617 2006/05/21 10:29:09 grant Exp $
+# $NetBSD: Makefile,v 1.618 2006/05/22 16:56:39 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -406,6 +406,7 @@ SUBDIR+=	ssync
 SUBDIR+=	stripes
 SUBDIR+=	sup
 SUBDIR+=	synergy
+SUBDIR+=	synergy1.2
 SUBDIR+=	tacacs
 SUBDIR+=	tcl-scotty
 SUBDIR+=	tcpdmerge
