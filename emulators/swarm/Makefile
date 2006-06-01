@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/16 06:57:51 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/11/03 21:51:57 rillig Exp $
 #
 
 DISTNAME=	swarm-0.61
@@ -11,6 +11,8 @@ COMMENT=	Software arm7M core emulator
 
 WRKSRC=		${WRKDIR}/swarm
 BUILD_DIRS=	src
+
+USE_LANGUAGES=	c++
 
 INSTALLATION_DIRS=	bin
 
