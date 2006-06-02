@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.4 2006/05/01 13:52:55 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2006/05/03 06:37:36 wiz Exp $
 
 PDO_DRIVER=		# empty
 PDO_VERSION=		1.0.2
 
+PHP_VERSIONS_ACCEPTED=	5
+
 .include "../../databases/php-pdo/module.mk"
 
 COMMENT=		PHP extension for PHP Data Objects (base)
-PKGREVISION=		1
 
 CONFIGURE_ARGS+=	--with-${PKGMODNAME}
-
-PHP_VERSION_REQD=	5
 
 PLIST_SRC+=		${.CURDIR}/../../databases/php-pdo/PLIST.pdo
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/01/24 07:32:41 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:11:17 joerg Exp $
 #
 
 DISTNAME=	mod_auth_radius-1.5.7
-PKGREVISION=	2
+PKGNAME=	ap13-auth-radius-1.5.7
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/
 EXTRACT_SUFX=	.tar
@@ -11,6 +11,7 @@ MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://www.freeradius.org/mod_auth_radius/
 COMMENT=	Radius authentication module for Apache
 
+CONFLICTS=	ap-auth-radius-[0-9]*
 
 APACHE_MODULE_NAME=	mod_auth_radius.so
 

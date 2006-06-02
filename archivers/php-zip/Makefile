@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2005/10/23 18:12:24 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:04 joerg Exp $
 
 MODNAME=		zip
 PECL_VERSION=		1.0
-PKGREVISION=		2
 CATEGORIES+=		archivers
 COMMENT=		PHP extension for ZIP archive handling
 
+CONFLICTS=	php-zip-[0-9]
 
 CONFIGURE_ARGS+=	--with-zip=shared,${BUILDLINK_DIR}
 

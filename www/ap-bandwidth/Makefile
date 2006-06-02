@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:17 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:56 jlam Exp $
 #
 
 DISTNAME=	mod_bandwidth.c
-PKGNAME=	ap-bandwidth-2.0.6
-PKGREVISION=	2
+PKGNAME=	ap13-bandwidth-2.0.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cohprog.com/pub/apache/module/
 EXTRACT_SUFX=	# empty
@@ -11,6 +10,8 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cohprog.com/mod_bandwidth.html
 COMMENT=	Apache module for bandwidth management
+
+CONFLICTS=	ap-bandwidth-[0-9]*
 
 WRKSRC=		${WRKDIR}
 

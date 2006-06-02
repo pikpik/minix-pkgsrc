@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:17 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2006/04/14 13:47:30 cube Exp $
 #
 
-PKGNAME=		ap-php-${PHP_BASE_VERS}
-PKGREVISION=		6
+PKGNAME=		${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}-${PHP_BASE_VERS}
 COMMENT=		Apache (${PKG_APACHE}) module for ${PKG_PHP}
+
+CONFLICTS=		ap-php-[0-9]*
 
 APACHE_MODULE=		YES
 SHLIBTOOL_OVERRIDE=	libtool

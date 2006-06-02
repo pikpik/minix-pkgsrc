@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/04/29 09:23:19 adrianp Exp $
+# $NetBSD: Makefile,v 1.4 2006/05/12 20:52:03 adrianp Exp $
 
 DISTNAME=	ingo-h3-${INGOVER}
 PKGNAME=	ingo-${INGOVER}
@@ -81,4 +81,5 @@ do-install:
 	@${CHOWN} ${APACHE_USER}:${SHAREGRP} ${INGODIR}/config
 	@${CHMOD} 0750 ${INGODIR}/config
 
+.include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"
