@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/04 21:30:08 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/06 06:22:22 reed Exp $
 #
 
 DISTNAME=	rpy-0.4.6
@@ -12,6 +12,7 @@ HOMEPAGE=       http://rpy.sourceforge.net/
 COMMENT=	R interface for Python
 
 PYDISTUTILSPKG=		YES
+PYTHON_VERSIONS_ACCEPTED=	24 23 22
 
 BUILDLINK_API_DEPENDS.R+= R>=2.2.1
 
