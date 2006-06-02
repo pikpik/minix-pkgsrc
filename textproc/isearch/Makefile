@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:54:22 grant Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:46 jlam Exp $
 
 DISTNAME=		Isearch-1.47.01
 PKGNAME=		isearch-1.47.01
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.etymon.com/Isearch/
 COMMENT=		Advanced text indexing and searching system
 
 GNU_CONFIGURE=		yes
+
+USE_LANGUAGES=		c c++
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/isearch
