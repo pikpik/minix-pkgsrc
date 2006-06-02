@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/12 18:49:24 rpaulo Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:46 joerg Exp $
 #
 
 DISTNAME=	pyOpenSSL-0.6
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyopenssl/}
 MAINTAINER=	rpaulo@NetBSD.org
 HOMEPAGE=       http://pyopenssl.sourceforge.net/
 COMMENT=        Python interface to the OpenSSL library
+
+PYTHON_VERSIONS_ACCEPTED= 24 23 22
 
 PYDISTUTILSPKG=	yes
 PYBINMODULE=	yes
