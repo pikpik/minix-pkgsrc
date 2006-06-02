@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/07/15 18:27:50 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:09:16 joerg Exp $
 #
 
 DISTNAME=	heretic2-demo-x86
@@ -18,6 +18,13 @@ NO_CONFIGURE=	yes
 EXTRACT_CMD=	${SED} '1,/^END_OF_STUB$$/d' ${DOWNLOADED_DISTFILE} | \
 								${GTAR} xzf -
 USE_TOOLS+=	gtar
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "DragonFly"
+# system gzip doesn't like the file, but zlib does.
+TOOLS_PLATFORM.gtar=	/usr/bin/bsdtar
+.endif
 
 ONLY_FOR_PLATFORM=*-*-i386
 
