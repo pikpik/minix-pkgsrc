@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/04/11 21:45:17 tv Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:12 jlam Exp $
 
 DISTNAME=	argtable-1.2
 CATEGORIES=	devel
@@ -10,9 +10,12 @@ COMMENT=	Library for parsing command line arguments of a C/C++ program
 
 GNU_CONFIGURE=		YES
 
+USE_LANGUAGES=	c c++
+
+INSTALLATION_DIRS=	include lib man/man3 share/doc/argtable
+
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/man/man3/*.3 ${PREFIX}/man/man3
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/argtable
 	${INSTALL_DATA} ${WRKSRC}/COPYING.LIB ${PREFIX}/share/doc/argtable
 
 .include "../../mk/bsd.pkg.mk"
