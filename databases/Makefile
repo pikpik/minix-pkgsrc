@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.209 2006/06/02 15:06:22 adam Exp $
+# $NetBSD: Makefile,v 1.210 2006/06/02 18:23:23 joerg Exp $
 #
 
 COMMENT=	Databases
@@ -80,6 +80,7 @@ SUBDIR+=	p5-DBIx-Datasource
 SUBDIR+=	p5-DBIx-Schema
 SUBDIR+=	p5-DBIx-SearchBuilder
 SUBDIR+=	p5-DB_File
+SUBDIR+=	p5-DB_File-Lock
 SUBDIR+=	p5-Data-Table
 SUBDIR+=	p5-Ima-DBI
 SUBDIR+=	p5-MARC
