@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/07/22 07:40:16 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2006/06/02 16:45:52 joerg Exp $
 #
 
 DISTNAME=		js-0.2.5
@@ -16,6 +16,6 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-INFO_DIR=		# PLIST
+INFO_FILES=		# PLIST
 
 .include "../../mk/bsd.pkg.mk"
