@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/09/28 20:52:24 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:04 jlam Exp $
 
 DISTNAME=		ntl-5.3.1
 PKGREVISION=		1
@@ -11,6 +11,7 @@ COMMENT=		C++ library for doing number theory
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 NO_CONFIGURE=		yes
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 MAKEFILE=		makefile
 
