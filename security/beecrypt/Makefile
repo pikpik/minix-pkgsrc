@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:47:10 tv Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:33 jlam Exp $
 
 DISTNAME=	beecrypt-4.1.1
 CATEGORIES=	security
@@ -9,6 +9,7 @@ HOMEPAGE=	http://www.virtualunlimited.com/products/beecrypt/
 COMMENT=	Multipurpose cryptographic library
 
 GNU_CONFIGURE=		YES
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 
 CONFIGURE_ARGS+=	--without-javaglue
