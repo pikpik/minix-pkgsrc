@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1829 2006/06/04 04:31:47 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1830 2006/06/04 05:25:08 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -1520,6 +1520,8 @@ do-test:
 
 # Package
 .include "${PKGSRCDIR}/mk/package/bsd.package.mk"
+
+.include "${PKGSRCDIR}/mk/bsd.pkg.update.mk"
 
 .PHONY: acquire-tools-lock
 .PHONY: acquire-wrapper-lock acquire-configure-lock acquire-build-lock
