@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: package.mk,v 1.1 2006/06/03 23:11:42 jlam Exp $
 
 _PACKAGE_COOKIE=	${WRKDIR}/.package_done
 
@@ -14,7 +14,9 @@ _PACKAGE_TARGETS+=	${_PACKAGE_COOKIE}
 _PACKAGE_TARGETS+=	release-package-lock
 
 .PHONY: package
+.if !target(package)
 package: ${_PACKAGE_TARGETS}
+.endif
 
 .PHONY: acquire-package-lock release-package-lock
 acquire-package-lock: acquire-lock
