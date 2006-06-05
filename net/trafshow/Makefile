@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:25 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/04/06 06:22:35 reed Exp $
 
 DISTNAME=	trafshow-5.2.1
 PKGREVISION=	1
@@ -20,6 +20,8 @@ BUILD_DEFS+=	USE_INET6
 .if defined(USE_INET6) && ${USE_INET6} == "YES"
 CPPFLAGS+=	-DINET6
 .endif
+
+CFLAGS.Darwin+=	-DBIND_8_COMPAT
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 share/examples/trafshow
 
