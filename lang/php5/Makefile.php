@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.17 2005/12/05 23:55:10 rillig Exp $
+# $NetBSD: Makefile.php,v 1.18 2006/04/14 13:47:29 cube Exp $
 #
 
 .include "../../lang/php5/Makefile.common"
@@ -53,7 +53,7 @@ CONFIGURE_ARGS+=	--disable-ipv6
 
 .if !empty(PKG_OPTIONS:Mssl)
 .  include "../../security/openssl/buildlink3.mk"
-CONFIGURE_ARGS+=	--with-openssl
+CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl}
 .else
 CONFIGURE_ARGS+=	--without-openssl
 .endif
