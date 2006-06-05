@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2006/04/23 13:29:04 adrianp Exp $
+# $NetBSD: Makefile,v 1.69 2006/05/29 22:08:54 tron Exp $
 
 DISTNAME=	mrtg-2.12.2
 PKGREVISION=	4
@@ -60,6 +60,7 @@ SUBST_MESSAGE.files=	Fixing default configuration files.
 
 INSTALLATION_DIRS=	bin libexec man/man1
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/gd/buildlink3.mk"
 
 post-extract:
