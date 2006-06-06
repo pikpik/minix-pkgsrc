@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/15 16:56:09 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2006/03/04 21:30:08 jlam Exp $
 #
 
 DISTNAME=		pytables-1.2.1
@@ -26,7 +26,7 @@ PYSETUPBUILDARGS+=	--ucl=${BUILDLINK_PREFIX.ucl}
 .include "../../archivers/ucl/buildlink3.mk"
 .endif
 PYSETUPINSTALLARGS=	${PYSETUPBUILDARGS}
-PYTHON_VERSIONS_ACCEPTED=	24 23 22
+PYTHON_VERSIONS_ACCEPTED=	24 23
 PLIST_SUBST+=		PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 
 post-extract:
