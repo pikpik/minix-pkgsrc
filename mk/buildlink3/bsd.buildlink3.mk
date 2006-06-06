@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.175 2006/05/06 03:28:44 reed Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.176 2006/06/04 21:04:45 joerg Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -166,9 +166,8 @@ BUILDLINK_DEPMETHOD.${_pkg_}?=	full
 # We skip the dependency calculation for some phases since they never
 # use the dependency information.
 #
-_BLNK_PHASES_SKIP_DEPENDS=	fetch patch tools buildlink configure	\
-				build test
-_BLNK_PHASES_RECURSIVE_DEPENDS=	extract none
+_BLNK_PHASES_SKIP_DEPENDS=	configure build test
+_BLNK_PHASES_RECURSIVE_DEPENDS=	none
 .if !empty(_BLNK_PHASES_SKIP_DEPENDS:M${PKG_PHASE})
 _BLNK_DEPENDS_LIST=	# empty
 .elif !empty(_BLNK_PHASES_RECURSIVE_DEPENDS:M${PKG_PHASE})
