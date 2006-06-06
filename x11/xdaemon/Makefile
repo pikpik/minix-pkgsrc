@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:45 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/02 22:58:49 hubertf Exp $
 
-DISTNAME=	xdaemon-1.1
+DISTNAME=	xdaemon-1.2
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 DISTFILES=	Daemon.README \
