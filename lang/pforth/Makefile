@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:09:47 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/04 21:29:55 jlam Exp $
 
 DISTNAME=		pfthpc21
 PKGNAME=		pforth-21
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.softsynth.com/pforth/
 COMMENT=		Portable ANS-like Forth
 
 WRKSRC=			${WRKDIR}
+USE_LANGUAGES=		c++
 USE_TOOLS+=		gmake
 MAKEFILE=		${WRKSRC}/makefile
 
