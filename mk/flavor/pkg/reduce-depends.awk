@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 #
-# $NetBSD: reduce-depends.awk,v 1.1 2006/06/03 23:11:42 jlam Exp $
+# $NetBSD: reduce-depends.awk,v 1.2 2006/06/06 14:19:10 jlam Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -125,6 +125,7 @@ BEGIN {
 			}
 			if (match_all == 0) continue
 			reduced[N++] = dep ":" pkgsrcdirs[pkgpath]
+			break
 		}
 		#
 		# If there are conflicting dependencies, then just pass them
