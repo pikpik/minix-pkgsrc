@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2006/03/10 22:41:25 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/11 10:46:27 kim Exp $
 #
 
-DISTNAME=	mstream-1.0
-PKGREVISION=	1
+DISTNAME=	mstream-1.1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.gw.com/pub/people/kim/
 
