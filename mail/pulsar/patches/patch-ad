@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/Makefile.in.orig	Thu Sep  4 20:15:21 2003
+--- src/Makefile.in.orig	2003-09-04 11:15:21.000000000 -0700
 +++ src/Makefile.in
 @@ -25,7 +25,7 @@
    install-recursive clean-recursive distclean-recursive
@@ -19,7 +19,7 @@ $NetBSD$
 -	${INSTALL} -m 0500 -g root -o root -s pulsar ${sbindir}
 -	${INSTALL} -m 0555 -g root -o root -s pulsar_crypt ${sbindir}
 -	${INSTALL} -m 0500 -g root -o root -s pulsar_deliver ${sbindir}
-+	${INSTALL} -m 0755 -d ${sbindir}
++	${BSD_INSTALL_PROGRAM_DIR} ${sbindir}
 +	${INSTALL} -m 0500 -s pulsar ${sbindir}
 +	${INSTALL} -m 0555 -s pulsar_crypt ${sbindir}
 +	${INSTALL} -m 0500 -s pulsar_deliver ${sbindir}
