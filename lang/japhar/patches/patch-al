@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/Makefile.in.orig	2006-06-06 15:09:59.000000000 +0000
++++ lib/Makefile.in
+@@ -84,7 +84,7 @@ ZLIB = @ZLIB@
+ 
+ @NEED_ZLIB_TRUE@ZLIB_DIR = zlib
+ 
+-@LIBFFI_SUPPORT_TRUE@LIBFFI_DIR = libffi
++@LIBFFI_SUPPORT_TRUE@LIBFFI_DIR =
+ 
+ @OJI_SUPPORT_TRUE@LIBOJI_DIR = liboji
+ 
