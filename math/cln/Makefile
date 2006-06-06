@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/31 23:56:28 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/06 19:46:33 adam Exp $
 
 DISTNAME=	cln-1.1.11
 CATEGORIES=	math
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.ginac.de/CLN/
 COMMENT=	CLN Class Library for Numbers
 
 USE_TOOLS+=		gmake pkg-config
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 LIBTOOL_OVERRIDE+=	libtool
