@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.420 2006/05/19 19:57:26 rillig Exp $
+# $NetBSD: Makefile,v 1.421 2006/05/21 16:59:48 xtraeme Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -213,6 +213,7 @@ SUBDIR+=	p5-Image-Imlib2
 SUBDIR+=	p5-Image-Info
 SUBDIR+=	p5-Image-Size
 SUBDIR+=	p5-PerlMagick
+SUBDIR+=	p5-RRDTool
 SUBDIR+=	p5-SWF-File
 SUBDIR+=	pear-Image_Canvas
 SUBDIR+=	pear-Image_Color
