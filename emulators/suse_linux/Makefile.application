@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.application,v 1.18 2006/03/09 20:42:38 tonio Exp $
+# $NetBSD: Makefile.application,v 1.19 2006/05/22 22:22:03 jlam Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -17,6 +17,7 @@
 .    include "../../emulators/${SUSE_DIR_PREFIX}_linux/Makefile.common"
 .  endif
 
+LDD!=	${PKG_INFO} -L suse_base | ${GREP} '/ldd$$'
 .elif ${OPSYS} == "Linux"
 # No Linux emulation is needed
 USE_NATIVE_LINUX=		# empty
