@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/02/05 23:10:39 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:31 jlam Exp $
 #
 
 DISTNAME=		python-pslib_0.2.0.orig
@@ -13,6 +13,7 @@ COMMENT=		Python bindings for pslib
 
 WRKSRC=		${WRKDIR}/python-pslib-0.2.0
 PYDISTUTILSPKG=	yes
+PYTHON_VERSIONS_ACCEPTED=	24 23
 
 .include "../../lang/python/extension.mk"
 .include "../../print/pslib/buildlink3.mk"
