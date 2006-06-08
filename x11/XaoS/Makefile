@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/17 13:47:01 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/04/22 09:22:17 rillig Exp $
 #
 
 DISTNAME=		XaoS-3.1
@@ -11,7 +11,7 @@ HOMEPAGE=		http://xaos.theory.org/
 COMMENT=		Zoomable fractal rendering doodad
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-curses-driver=no
