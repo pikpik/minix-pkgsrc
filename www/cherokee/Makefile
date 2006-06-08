@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/01 07:22:29 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/18 20:30:01 wiz Exp $
 #
 
 DISTNAME=	cherokee-0.5.3
@@ -13,6 +13,7 @@ BROKEN_IN=		pkgsrc-2006Q1
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
+USE_TOOLS+=		bison
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
