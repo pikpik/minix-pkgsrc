@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:10:58 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/17 13:46:49 wiz Exp $
 
 DISTNAME=	xnc-5.0.4.src
 PKGNAME=	xnc-5.0.4
@@ -12,7 +12,9 @@ COMMENT=	File manager for X Window
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_DIRS+=	xdg-1.1
+USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
+USE_TOOLS+=	msgfmt
 GNU_CONFIGURE=	yes
 
 .include "../../graphics/tiff/buildlink3.mk"
