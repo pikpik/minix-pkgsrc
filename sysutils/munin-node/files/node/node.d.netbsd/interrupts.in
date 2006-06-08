@@ -6,7 +6,18 @@
 #
 # Usage: Link or copy into /etc/munin/node.d/
 #
-# $Log$
+# $Log: interrupts.in,v $
+# Revision 1.1.1.1  2006/06/04 20:53:57  he
+# Import the client version of the Munin system monitoring/graphing
+# tool -- project homepage is at http://munin.sourceforge.net/
+#
+# This package has added support for NetBSD, via a number of new plugin
+# scripts where specific steps needs to be taken to collect information.
+#
+# I also modified the ntp_ plugin script to make it possible to not
+# plot the NTP poll delay, leaving just jitter and offset, which IMO
+# produces a more telling graph.
+#
 #
 #
 # Magic markers (optional - only used by munin-config and some
@@ -49,8 +60,8 @@ if [ "$1" = "config" ]; then
 
     # The fields. "label" is used in the legend. "label" is the only
     # required subfield. 
-    echo 'devint.label device interrupts'
-    echo 'softint.label software interrupts'
+    echo 'devint.label device intrs'
+    echo 'softint.label software intrs'
     echo 'ctx.label context switches'
 
     # Specify type

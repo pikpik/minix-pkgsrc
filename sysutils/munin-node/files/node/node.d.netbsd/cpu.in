@@ -9,7 +9,18 @@
 # 	config   (required)
 # 	autoconf (optional - used by munin-config)
 #
-# $Log$
+# $Log: cpu.in,v $
+# Revision 1.1.1.1  2006/06/04 20:53:57  he
+# Import the client version of the Munin system monitoring/graphing
+# tool -- project homepage is at http://munin.sourceforge.net/
+#
+# This package has added support for NetBSD, via a number of new plugin
+# scripts where specific steps needs to be taken to collect information.
+#
+# I also modified the ntp_ plugin script to make it possible to not
+# plot the NTP poll delay, leaving just jitter and offset, which IMO
+# produces a more telling graph.
+#
 #
 #
 # Magic markers - optional - used by installation scripts and
@@ -54,7 +65,7 @@ if [ "$1" = "config" ]; then
 #	USRWARNING=$PERCENT*80/100
 
     echo 'graph_title CPU usage (' $NCPU ' CPUs)'
-    echo 'graph_order system interrupt user nice idle'
+    echo 'graph_order system interrupt user idle nice'
     echo "graph_args --base 1000 -r --lower-limit 0 --upper-limit $PERCENT "
     echo 'graph_vlabel %'
     echo 'graph_scale no'
@@ -90,14 +101,6 @@ if [ "$1" = "config" ]; then
     echo 'user.min 0'
     echo "user.cdef user,$CDEF"
 
-    echo 'nice.label nice'
-    echo 'nice.draw STACK'
-    echo 'nice.max 5000'
-    echo 'nice.type DERIVE'
-    echo 'nice.info CPU time spent by nice(1)d programs'
-    echo 'nice.min 0'
-    echo "nice.cdef nice,$CDEF"
-
     echo 'idle.label idle'
     echo 'idle.draw STACK'
     echo 'idle.max 5000'
@@ -105,6 +108,14 @@ if [ "$1" = "config" ]; then
     echo 'idle.info Idle CPU time'
     echo 'idle.min 0'
     echo "idle.cdef idle,$CDEF"
+
+    echo 'nice.label nice'
+    echo 'nice.draw STACK'
+    echo 'nice.max 5000'
+    echo 'nice.type DERIVE'
+    echo 'nice.info CPU time spent by nice(1)d programs'
+    echo 'nice.min 0'
+    echo "nice.cdef nice,$CDEF"
 
     exit 0
 fi
@@ -115,8 +126,8 @@ fi
 	print "system.value " a[10];
 	print "interrupt.value " a[13];
 	print "user.value " a[4];
-	print "nice.value " a[7];
 	print "idle.value " a[16];
+	print "nice.value " a[7];
 }'
 
 
