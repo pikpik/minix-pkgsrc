@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1846 2006/06/07 18:37:06 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1847 2006/06/08 08:01:53 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -842,6 +842,9 @@ release-lock: .USE
 .  endif
 	${_PKG_SILENT}${_PKG_DEBUG}${RM} -f ${_LOCKFILE}
 .endif
+
+.PHONY: makedirs
+makedirs: ${WRKDIR}
 
 ${WRKDIR}:
 .if !defined(KEEP_WRKDIR)
