@@ -2346,8 +2346,8 @@ sub resolve_relative_path($$) {
 	$relpath =~ s,\$\{PHPPKGSRCDIR\},../../lang/php5,;
 	$relpath =~ s,\$\{SUSE_DIR_PREFIX\},suse91,;
 	$relpath =~ s,\$\{PYPKGSRCDIR\},../../lang/python23,;
-	if ($adjust_depth) {
-		$relpath =~ s,\.\./\.\.,$pkgsrcdir,;
+	if ($adjust_depth && $relpath =~ qr"^\.\./\.\./([^.].*)$") {
+		$relpath = "../../$1";
 	}
 	if (defined($pkgdir)) {
 		$relpath =~ s,\$\{PKGDIR\},$pkgdir,g;
