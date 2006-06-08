@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/mined1.c.orig	2003-05-25 20:28:23.000000000 +0000
++++ src/mined1.c
+@@ -2367,7 +2367,7 @@ VIEWmode ()
+   }
+ }
+ 
+-extern FLAG viewing_help;
++static FLAG viewing_help;
+ static void end_view_help ();
+ 
+ void
