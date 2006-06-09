@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.620 2006/06/03 23:29:58 rh Exp $
+# $NetBSD: Makefile,v 1.621 2006/06/09 06:30:11 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -57,6 +57,7 @@ SUBDIR+=	citrix_ica
 SUBDIR+=	cmu-dhcpd
 SUBDIR+=	connect
 SUBDIR+=	corkscrew
+SUBDIR+=	couriertcpd
 SUBDIR+=	ctorrent
 SUBDIR+=	dante
 SUBDIR+=	dc_gui2
