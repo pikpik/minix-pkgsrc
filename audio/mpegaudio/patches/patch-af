@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- decoder.h.orig	1994-01-05 01:12:50.000000000 +0000
++++ decoder.h
+@@ -92,14 +92,6 @@ decoder.h
+ *
+ ***********************************************************************/
+ 
+-/* The following functions are in the file "musicout.c" */
+-
+-#ifdef   PROTO_ARGS
+-extern void   usage(void);
+-#else
+-extern void   usage();
+-#endif
+-
+ /* The following functions are in the file "decode.c" */
+ 
+ #ifdef   PROTO_ARGS

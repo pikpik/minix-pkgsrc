@@ -1,12 +1,14 @@
 $NetBSD$
 
---- musicout.c.orig	Wed Jan  5 05:39:27 1994
+--- musicout.c.orig	1994-01-05 04:39:27.000000000 +0000
 +++ musicout.c
-@@ -58,6 +58,8 @@
+@@ -58,6 +58,10 @@ musicout.c
  #include        "common.h"
  #include        "decoder.h"
  
 +#include <stdlib.h>
++
++static void usage();
 +
  /********************************************************************
  /*
