@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/03/04 21:30:18 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/03/22 15:17:01 joerg Exp $
 #
 
 DISTNAME=	driftnet-0.1.6
@@ -15,6 +15,7 @@ DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 
 BUILD_TARGET=	default
 MAKE_ENV+=	CAT=${CAT:Q} TRUE=${TRUE:Q}
+USE_TOOLS+=	makedepend
 
 INSTALLATION_DIRS=	bin man/man1
 
