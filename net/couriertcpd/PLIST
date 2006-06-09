@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/couriertcpd
+bin/couriertls
+man/man1/couriertcpd.1
+man/man1/couriertls.1
+share/doc/courier/couriertcpd.html
+share/doc/courier/couriertls.html
