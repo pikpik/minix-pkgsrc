@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:08:43 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/03/04 21:29:15 jlam Exp $
 
 DISTNAME=	HDF4.2r1
 PKGNAME=	hdf-4.2r1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://hdf.ncsa.uiuc.edu/hdf4.html
 COMMENT=	NCSA Hierarchical Data Format
 
 #USE_TOOLS+=		bison
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake yacc
 USE_LANGUAGES=		c fortran
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/hdf
