@@ -1,9 +1,7 @@
-# $NetBSD: buildlink3.mk,v 1.22 2006/04/12 10:27:06 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2006/05/31 18:22:23 ghen Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APR_BUILDLINK3_MK:=	${APR_BUILDLINK3_MK}+
-
-.include "../../mk/bsd.prefs.mk"
 
 .if !empty(BUILDLINK_DEPTH:M+)
 BUILDLINK_DEPENDS+=	apr
@@ -22,14 +20,16 @@ WRAPPER_REORDER_CMDS+=	reorder:l:aprutil-0:crypt
 BUILDLINK_FILES.apr+=	bin/apr-config
 BUILDLINK_FILES.apr+=	bin/apu-config
 BUILDLINK_FILES.apr+=	lib/*.exp
-.endif	# APR_BUILDLINK3_MK
 
-.if !defined(PKG_BUILD_OPTIONS.apr)
+.include "../../mk/bsd.prefs.mk"
+
+.  if !defined(PKG_BUILD_OPTIONS.apr)
 PKG_BUILD_OPTIONS.apr!=	cd ${BUILDLINK_PKGSRCDIR.apr} && \
 			${MAKE} show-var ${MAKEFLAGS} VARNAME=PKG_OPTIONS
 MAKEFLAGS+=	PKG_BUILD_OPTIONS.apr=${PKG_BUILD_OPTIONS.apr:Q}
-.endif
+.  endif
 MAKEVARS+=	PKG_BUILD_OPTIONS.apr
+.endif	# APR_BUILDLINK3_MK
 
 .if !empty(PKG_BUILD_OPTIONS.apr:Mdb4)
 .  include "../../databases/db4/buildlink3.mk"
