@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2006/04/17 13:46:28 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2006/06/09 20:49:09 salo Exp $
 
 PKGNAME=	${DISTNAME:S/-/-client-/}
 PKGREVISION=	1
-COMMENT=	Freeciv client with Xaw interface
+COMMENT=	Freeciv client
 
 DEPENDS+=	freeciv-share>=${FC_VERS}:../../games/freeciv-share
 DEPENDS+=	freeciv-sounds>=3.0:../../games/freeciv-sounds
