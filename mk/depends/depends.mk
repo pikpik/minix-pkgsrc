@@ -1,4 +1,4 @@
-# $NetBSD: depends.mk,v 1.5 2006/06/08 08:55:10 rillig Exp $
+# $NetBSD: depends.mk,v 1.6 2006/06/08 15:45:06 jlam Exp $
 
 ######################################################################
 ### depends (PUBLIC)
@@ -36,6 +36,7 @@ _REAL_DEPENDS_TARGETS+=	depends-message
 _REAL_DEPENDS_TARGETS+=	pre-depends-hook
 _REAL_DEPENDS_TARGETS+=	depends-install
 _REAL_DEPENDS_TARGETS+=	depends-cookie
+_REAL_DEPENDS_TARGETS+=	error-check
 
 .PHONY: real-depends
 real-depends: ${_REAL_DEPENDS_TARGETS}
