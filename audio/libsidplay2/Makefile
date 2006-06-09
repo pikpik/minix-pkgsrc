@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/09 13:12:02 joerg Exp $
 #
 
 DISTNAME=	sidplay-libs-2.1.1
 PKGNAME=	libsidplay2-2.1.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sidplay2/}
 
