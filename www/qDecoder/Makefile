@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2003/07/17 22:56:01 grant Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/04 21:31:03 jlam Exp $
 
 DISTNAME=	qDecoder-7.0.1
 CATEGORIES=	www
+PKGREVISION=	1
 MASTER_SITES=	ftp://ftp.qDecoder.org/pub/qDecoder/
 EXTRACT_SUFX=	.tar.Z
 
@@ -10,6 +11,7 @@ HOMEPAGE=	http://www.qDecoder.org/
 COMMENT=	Web Application Interface for C/C++ (CGI Library)
 
 GNU_CONFIGURE=	YES
+USE_LIBTOOL=	YES
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/qDecoder
