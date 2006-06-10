@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.5 2006/06/08 15:48:42 jlam Exp $
+# $NetBSD: package.mk,v 1.6 2006/06/09 13:59:08 jlam Exp $
 
 _PACKAGE_COOKIE=	${WRKDIR}/.package_done
 
@@ -24,7 +24,7 @@ release-package-lock: release-lock
 
 .if !exists(${_PACKAGE_COOKIE})
 ${_PACKAGE_COOKIE}:
-	${_PKG_SILENT}${_PKG_DEBUG}cd ${.CURDIR} && ${MAKE} ${MAKEFLAGS} real-package PKG_PHASE=package
+	${_PKG_SILENT}${_PKG_DEBUG}cd ${.CURDIR} && ${SETENV} ${BUILD_ENV} ${MAKE} ${MAKEFLAGS} real-package PKG_PHASE=package
 .else
 ${_PACKAGE_COOKIE}:
 	@${DO_NADA}
