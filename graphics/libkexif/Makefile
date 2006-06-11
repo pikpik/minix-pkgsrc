@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:49 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/17 13:46:06 wiz Exp $
 
 DISTNAME=	libkexif-0.2.2
 PKGREVISION=	3
@@ -11,7 +11,7 @@ HOMEPAGE=	http://extragear.kde.org/apps/kipi/
 COMMENT=	Image EXIF information library manipulation
 
 USE_DIRS+=		xdg-1.1
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
