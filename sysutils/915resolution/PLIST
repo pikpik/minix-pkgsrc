@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/915resolution
+share/doc/915resolution/README.txt
+@dirrm share/doc/915resolution
