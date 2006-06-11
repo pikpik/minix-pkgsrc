@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/02/05 23:10:24 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:43 wiz Exp $
 #
 
 .include "${.CURDIR}/Makefile.common"
@@ -9,6 +9,7 @@ PKGREVISION=	4
 CONFLICTS=	gftp-gtk1-[0-9]*
 
 USE_DIRS+=	gnome2-1.5
+USE_TOOLS+=	pkg-config
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

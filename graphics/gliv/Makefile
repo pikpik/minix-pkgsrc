@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/04/13 18:23:33 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:32 wiz Exp $
 
 DISTNAME=	gliv-1.9.5
 PKGREVISION=	1
@@ -12,7 +12,7 @@ COMMENT=	OpenGL image viewer
 
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake msgfmt
+USE_TOOLS+=		gmake msgfmt pkg-config
 GNU_CONFIGURE=		yes
 
 post-install:
