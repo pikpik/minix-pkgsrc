@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:31:10 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/04/17 13:46:59 wiz Exp $
 #
 
 DISTNAME=	matchbox-nest-0.3
@@ -12,6 +12,7 @@ HOMEPAGE=	http://projects.o-hand.com/matchbox/
 COMMENT=	Matchbox Xnest wrapper
 
 GNU_CONFIGURE=	yes
+USE_TOOLS+=	pkg-config
 
 .include "../../devel/libmatchbox/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/04/17 13:46:59 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2006/04/22 09:22:17 rillig Exp $
 #
 
 DISTNAME=		matchbox-common-0.9.1
@@ -12,6 +12,7 @@ HOMEPAGE=		http://projects.o-hand.com/matchbox/
 COMMENT=		Shared icons and configuration data for Matchbox
 
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		pkg-config
 
 PKG_SYSCONFSUBDIR=	matchbox
 
