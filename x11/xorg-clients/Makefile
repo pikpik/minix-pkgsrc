@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/04/17 13:47:01 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2006/04/22 13:56:45 joerg Exp $
 
 DISTNAME=	${DISTFILES}
 PKGNAME=	xorg-clients-${XORG_VER}
@@ -20,7 +20,7 @@ XBUILD_DIRS=		lib/xtrans lib/lbxutil programs fonts/util
 XINSTALL_DIRS=		programs fonts/util
 XINSTALL_MAN_DIRS=	programs
 
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	perl:run imake
 REPLACE_PERL+=	fonts/util/bdftruncate.pl
 
 # XXX TODO: define build's VarDirectory to pkgsrc's VARBASE
