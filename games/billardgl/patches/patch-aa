@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.2 2006/03/03 19:21:43 kristerw Exp $
+$NetBSD$
 
---- src/Makefile.orig	2002-04-29 13:26:46.000000000 +0200
-+++ src/Makefile	2006-01-31 03:25:14.000000000 +0100
+--- src/Makefile.orig	2002-04-29 11:26:46.000000000 +0000
++++ src/Makefile
 @@ -11,7 +11,7 @@ CFLAGS	=	-pipe -Wall -W -DNO_DEBUG -g
  CXXFLAGS=	-pipe -Wall -W -DNO_DEBUG -g 
  INCPATH	=	-I/usr/X11R6/include 
