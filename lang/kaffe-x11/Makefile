@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/05/10 16:46:21 tonio Exp $
+# $NetBSD: Makefile,v 1.11 2006/05/29 17:47:10 joerg Exp $
 #
 
 .include "../../lang/kaffe/Makefile.common"
@@ -13,6 +13,7 @@ CONFIGURE_ARGS+=  --with-x
 CONFIGURE_ARGS+=  --without-esd
 CONFIGURE_ARGS+=  --disable-esdtest
 
+USE_TOOLS+=	pkg-config
 
 BUILD_DIRS=	config
 BUILD_DIRS+=	libraries/javalib/external/classpath
