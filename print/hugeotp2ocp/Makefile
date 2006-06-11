@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/15 17:01:53 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:10:37 joerg Exp $
 
 DISTNAME=	tetex-src-3.0
 PKGNAME=	${DISTNAME:S/tetex-src/hugeotp2ocp/}
@@ -16,6 +16,7 @@ PATCHDIR=	${.CURDIR}/../../print/teTeX3-bin/patches
 
 GNU_CONFIGURE=	yes
 BUILD_DIRS=	${WRKSRC}/texk/web2c/lib
+USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 
 CONFIGURE_ARGS+=	--without-texinfo
