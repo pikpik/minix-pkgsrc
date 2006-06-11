@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/18 16:20:25 jschauma Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:11:26 joerg Exp $
 
 DISTNAME= 		opera-acroread-1.0
 PKGREVISION=		2
@@ -14,4 +14,4 @@ CONFLICTS+=		opera-acroread7-[0-9]*
 ACROREAD=		Acrobat4
 ACRO_SUBDIR=		Browsers
 
-.include "../../www/netscape7-acroread/Makefile.common"
+.include "../../www/opera-acroread/Makefile.common"
