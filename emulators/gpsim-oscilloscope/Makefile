@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:01 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:23 wiz Exp $
 #
 
 DISTNAME=	oscilloscope-0.1.2
@@ -12,7 +12,7 @@ COMMENT=	Oscilloscope module for gpsim
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
-
+USE_TOOLS+=	pkg-config
 USE_LIBTOOL=	YES
 
 GCC_REQD+=		3.0
