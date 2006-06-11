@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.356 2006/05/21 11:31:29 rillig Exp $
+# $NetBSD: Makefile,v 1.357 2006/06/04 20:56:49 he Exp $
 #
 
 COMMENT=	System utilities
 
 SUBDIR+=	855resolution
+SUBDIR+=	915resolution
 SUBDIR+=	9base
 SUBDIR+=	acpi-iasl
 SUBDIR+=	acpidump
