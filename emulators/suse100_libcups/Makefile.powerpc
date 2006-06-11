@@ -1,0 +1,3 @@
+# $NetBSD$
+
+RPMFILES=		cups-libs-1.1.23-21.${SUSE_ARCH}.rpm
