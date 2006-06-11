@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/30 11:32:05 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:29 joerg Exp $
 #
 
 PKGNAME=	w3m-img-${W3M_VERS}
@@ -10,6 +10,8 @@ CONFLICTS+=	w3m-[0-9]*
 DISTINFO_FILE=	${.CURDIR}/../../www/w3m/distinfo
 PATCHDIR=	${.CURDIR}/../../www/w3m/patches
 PLIST_SRC=	${.CURDIR}/../../www/w3m/PLIST
+
+USE_TOOLS+=	msgfmt
 
 # Enable image support.
 _W3M_USE_IMAGE=	YES

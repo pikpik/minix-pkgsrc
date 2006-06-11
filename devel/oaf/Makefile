@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/02/28 17:39:18 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2006/04/17 13:46:04 wiz Exp $
 #
 
 DISTNAME=		oaf-0.6.10
@@ -14,7 +14,7 @@ COMMENT=		New object activation framework for GNOME
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_X11BASE=		YES
-USE_TOOLS+=		bison lex
+USE_TOOLS+=		bison lex msgfmt
 USE_LIBTOOL=		YES
 
 BROKEN_GETTEXT_DETECTION=	YES
