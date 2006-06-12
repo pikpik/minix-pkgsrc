@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2006/04/17 13:46:28 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/04/22 09:22:09 rillig Exp $
 #
 
 DISTNAME=		kapooka_0.2
 PKGNAME=		${DISTNAME:S/_/-/}
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kapooka/}
 EXTRACT_SUFX=		.tar.bz2

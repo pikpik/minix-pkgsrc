@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/04/22 09:22:08 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/15 20:10:57 joerg Exp $
 #
 
 DISTNAME=		REminiscence-0.1.6
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		games
 MASTER_SITES=		http://membres.lycos.fr/cyxdown/reminiscence/
 EXTRACT_SUFX=		.tar.bz2

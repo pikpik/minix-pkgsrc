@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2006/03/09 21:04:43 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/09 18:07:46 wiz Exp $
 #
 
 DISTNAME=	quake2-0.3
 PKGNAME=	${DISTNAME:S/quake2/quake2forge/}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://www.quakeforge.net/files/quake2forge/
 

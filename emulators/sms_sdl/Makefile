@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:09:02 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:36 jlam Exp $
 #
 
 DISTNAME=		sms_sdl-0.9.4a-r7.1-src
 PKGNAME=		sms_sdl-0.9.4a.7.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		http://membres.lycos.fr/cyxdown/smssdl/
 EXTRACT_SUFX=		.zip
