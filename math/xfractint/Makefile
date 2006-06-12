@@ -16,8 +16,11 @@ USE_LIBTOOL=		yes
 
 MAKE_FLAGS+=		BINDIR=${PREFIX}/bin
 MAKE_FLAGS+=		MANDIR=${PREFIX}/${PKGMANDIR}/man1
+MAKE_FLAGS+=		SRCDIR=${PREFIX}/share/xfractint
 BUILD_TARGET=		xfractint
 BUILDLINK_TRANSFORM+=	l:ncurses:curses
+
+INSTALLATION_DIRS=	share/xfractint
 
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
