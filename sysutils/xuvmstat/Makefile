@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:10:59 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/09 13:30:19 joerg Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/-//}
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.NetBSD.org/~chuck/gz/
 
 MAINTAINER=	wiz@NetBSD.org
 COMMENT=	Graphical display for the current UVM status
+
+ONLY_FOR_PLATFORM=	NetBSD-*-*
 
 WRKSRC=		${WRKDIR}/xuvmstat
 
