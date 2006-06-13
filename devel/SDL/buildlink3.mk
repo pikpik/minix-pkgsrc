@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.16 2006/06/12 16:20:44 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.17 2006/06/13 15:02:58 tron Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SDL_BUILDLINK3_MK:=	${SDL_BUILDLINK3_MK}+
@@ -35,14 +35,6 @@ PKG_BUILD_OPTIONS.SDL!= \
 MAKEFLAGS+=	PKG_BUILD_OPTIONS.SDL=${PKG_BUILD_OPTIONS.SDL:Q}
 .endif
 MAKEVARS+=	PKG_BUILD_OPTIONS.SDL
-
-.if !empty(PKG_BUILD_OPTIONS.SDL:Marts)
-.  include "../../audio/arts/buildlink3.mk"
-.endif
-
-.if !empty(PKG_BUILD_OPTIONS.SDL:Mesd)
-.  include "../../audio/esound/buildlink3.mk"
-.endif
 
 .if !empty(PKG_BUILD_OPTIONS.SDL:Mnas)
 .  include "../../audio/nas/buildlink3.mk"
