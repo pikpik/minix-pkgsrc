@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/05/18 20:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/11 23:44:23 joerg Exp $
 #
 
 DISTNAME=		prewikka-0.9.5
@@ -19,6 +19,7 @@ DEPENDS+=		${PYPKGPREFIX}-cheetah-[0-9]*:../../devel/py-cheetah
 PYDISTUTILSPKG=		yes
 PYBINMODULE=		yes
 PYSETUP=		setup.py
+PYTHON_VERSIONS_ACCEPTED=	24 23 22
 REPLACE_PYTHON=		prewikka-httpd
 PREWIKKA_USER?=		prewikka
 PREWIKKA_GROUP?=	prewikka
