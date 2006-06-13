@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/03/04 21:29:07 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/05/22 22:22:02 jlam Exp $
 #
 
 DISTVERSION=		2.0.7.1
@@ -48,6 +48,7 @@ post-extract:
 			${LN} -sf $$so.so.* $$so.so; \
 		done
 	@${LN} -f ${SYS_LIB}/crt* ${EGCS_WRKSRC}/gcc/
+	${RM} -r ${WRKSRC}/egcs-1.1.1/texinfo
 
 post-patch:
 	@${RM} -f ${SYS_LIB}/*.orig
