@@ -1,6 +1,6 @@
-$NetBSD: patch-aa,v 1.2 2005/08/03 13:36:05 adam Exp $
+$NetBSD$
 
---- libqalculate/Calculator.cc.orig	2004-10-18 12:30:49.000000000 +0000
+--- libqalculate/Calculator.cc.orig	2006-06-02 16:37:20.000000000 +0200
 +++ libqalculate/Calculator.cc
 @@ -33,7 +33,11 @@
  #include <sys/types.h>
@@ -13,4 +13,4 @@ $NetBSD: patch-aa,v 1.2 2005/08/03 13:36:05 adam Exp $
 +#endif
  #include <queue>
  #include <glib.h>
- 
+ //#include <dlfcn.h>
