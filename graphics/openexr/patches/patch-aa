@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- exrmaketiled/Image.h.orig	2006-06-14 20:56:22.000000000 +0200
++++ exrmaketiled/Image.h
+@@ -49,6 +49,7 @@
+ #include <string>
+ #include <map>
+ 
++class Image;
+ 
+ class ImageChannel
+ {
