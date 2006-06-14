@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/04/16 12:05:33 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2006/04/22 09:22:14 rillig Exp $
 #
 
 DISTNAME=	gnome-menus-2.14.0
@@ -12,7 +12,7 @@ COMMENT=	Implementation of the desktop menu specification for GNOME
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.2
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
