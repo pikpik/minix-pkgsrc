@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.32 2006/04/13 18:45:01 jlam Exp $
+# $NetBSD: tools.Linux.mk,v 1.33 2006/05/21 16:55:23 jlam Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -137,6 +137,9 @@ TOOLS_PLATFORM.nice?=		/usr/bin/nice
 .endif
 .if exists(/usr/bin/nroff)
 TOOLS_PLATFORM.nroff?=		/usr/bin/nroff
+.endif
+.if exists(/usr/bin/openssl)
+TOOLS_PLATFORM.openssl?=	/usr/bin/openssl
 .endif
 TOOLS_PLATFORM.patch?=		/usr/bin/patch
 .if exists(/usr/bin/printf)
