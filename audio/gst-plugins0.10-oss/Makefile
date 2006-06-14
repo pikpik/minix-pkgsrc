@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/03/09 21:04:40 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/04/22 09:22:05 rillig Exp $
 #
 
 GST_PLUGINS0.10_NAME=	oss
 GST_PLUGINS0.10_DIRS=	sys/oss
-PKGREVISION=		1
 
 .include "../../multimedia/gst-plugins0.10-good/Makefile.common"
 
