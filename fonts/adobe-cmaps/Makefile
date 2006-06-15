@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2006/04/20 17:37:00 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2006/05/22 06:31:34 rillig Exp $
 
-DISTNAME=	adobe-cmaps-20060419
+DISTNAME=	adobe-cmaps-20060615
 CATEGORIES=	fonts print
 MASTER_SITES=	# empty
 
