@@ -1,0 +1,9 @@
+#!@SH@
+#
+# $NetBSD: INSTALL,v 1.2 2003/11/05 10:45:29 agc Exp $
+
+case "${STAGE}" in
+DEINSTALL)
+	${RM} -f ${PKG_SYSCONFDIR}/templates
+	;;
+esac
