@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.619 2006/06/10 17:13:11 adrianp Exp $
+# $NetBSD: pkglint.pl,v 1.620 2006/06/14 07:44:30 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -3496,8 +3496,8 @@ sub checkline_mk_shelltext($$) {
 				}
 
 			} else {
-				$line->log_warning("Unknown shell command \"${shellword}\".");
-				$line->explain_warning(
+				$opt_warn_extra and $line->log_warning("Unknown shell command \"${shellword}\".");
+				$opt_warn_extra and $line->explain_warning(
 					"If you want your package to be portable to all platforms that pkgsrc",
 					"supports, you should only use shell commands that are covered by the",
 					"tools framework.");
