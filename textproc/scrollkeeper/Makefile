@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/04/13 18:23:38 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2006/06/04 21:09:30 schwarz Exp $
 #
 
 DISTNAME=		scrollkeeper-0.3.14
@@ -33,8 +33,6 @@ CONFIGURE_ARGS+=	--with-omfdirs=${PREFIX}/share/omf
 .else
 CONFIGURE_ARGS+=	--with-omfdirs=${LOCALBASE}/share/omf:${X11PREFIX}/share/omf
 .endif
-
-DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
 
 SCROLLKEEPER_DATADIR=	${PREFIX}/libdata/scrollkeeper
 SCROLLKEEPER_REBUILDDB=	${PREFIX}/bin/scrollkeeper-rebuilddb

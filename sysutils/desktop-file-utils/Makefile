@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/21 06:00:49 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/28 18:36:01 wiz Exp $
 #
 
 DISTNAME=	desktop-file-utils-0.11
@@ -17,8 +17,6 @@ USE_PKGLOCALEDIR=	YES
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	EMACS=no
-
-DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
 
 FILES_SUBST+=		APPLICATIONS_PATH="${PREFIX}/share/applications"
 FILES_SUBST+=		UPDATE_DESKTOPDB="${PREFIX}/bin/update-desktop-database"

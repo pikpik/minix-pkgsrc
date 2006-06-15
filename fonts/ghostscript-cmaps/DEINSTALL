@@ -7,13 +7,12 @@ GS_RESOURCEDIR="@GS_RESOURCEDIR@"
 PKG_INFO="@PKG_INFO@"
 
 case ${STAGE} in
-POST-INSTALL)
+DEINSTALL)
 	${PKG_INFO} -qL adobe-cmaps | ${GREP} "/Resource/CMap/" |
 	while read src; do
 		base=`${BASENAME} $src`
 		dest="${GS_RESOURCEDIR}/CMap/$base"
 		${RM} -f $dest
-		${LN} -sf $src $dest
 	done
 	;;
 esac

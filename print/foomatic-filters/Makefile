@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/14 01:14:32 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/04 16:26:55 joerg Exp $
 
 .include "Makefile.common"
 
@@ -36,7 +36,7 @@ DEPENDS+=	{cups>=1.0,${TEXTTOPS_DEPENDS}}:../../print/cups
 DEPENDS+=	${TEXTTOPS_DEPENDS}:../../print/mpage
 .endif
 
-DEINSTALL_TEMPLATE+=	${.CURDIR}/../../print/foomatic-filters-cups/INSTALL
+DEINSTALL_TEMPLATE+=	${.CURDIR}/../../print/foomatic-filters-cups/DEINSTALL
 INSTALL_TEMPLATE+=	${.CURDIR}/../../print/foomatic-filters-cups/INSTALL
 
 EGDIR=		${PREFIX}/share/examples/foomatic

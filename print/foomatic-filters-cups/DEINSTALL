@@ -1,0 +1,10 @@
+# $NetBSD: INSTALL,v 1.1.1.1 2005/12/17 18:26:15 jlam Exp $
+
+CUPS_FILTERDIR="@CUPS_FILTERDIR@"
+
+case ${STAGE} in
+DEINSTALL)
+	${ECHO} "Removing foomatic-rip filter from CUPS."
+	${RM} -f ${CUPS_FILTERDIR}/foomatic-rip
+	;;
+esac

@@ -1,0 +1,9 @@
+# $NetBSD$
+
+MIMEDB_PATH="@MIMEDB_PATH@"
+
+case ${STAGE} in
+POST-DEINSTALL)
+	${RM} -rf ${MIMEDB_PATH}
+	;;
+esac

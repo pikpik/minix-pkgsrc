@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/05/21 16:13:34 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/06/08 09:56:43 joerg Exp $
 #
 
 DISTNAME=	shared-mime-info-0.17
@@ -27,8 +27,6 @@ CPPFLAGS+=		-DPREFIX="\"${PREFIX}\""
 .if !empty(PKGSRC_COMPILER:Mmipspro*)
 CFLAGS+=		-c99
 .endif
-
-DEINSTALL_TEMPLATE+=	${PKGDIR}/INSTALL
 
 FILES_SUBST+=		MIMEDB_PATH="${PREFIX}/share/mime"
 FILES_SUBST+=		UPDATE_MIMEDB="${PREFIX}/bin/update-mime-database"
