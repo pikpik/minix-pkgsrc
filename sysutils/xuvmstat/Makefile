@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/09 13:30:19 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/06/12 21:38:44 joerg Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/-//}
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.NetBSD.org/~chuck/gz/
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Graphical display for the current UVM status
 
 ONLY_FOR_PLATFORM=	NetBSD-*-*

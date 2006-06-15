@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/05/22 22:22:03 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/05/26 19:15:34 joerg Exp $
 #
 
 DISTNAME=	m1074b2-lnx
@@ -8,7 +8,7 @@ CATEGORIES=	emulators audio
 MASTER_SITES=	http://www.emuhype.com/files/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.emuhype.com/index.phtml?s=misc&ss=index
 COMMENT=	Arcade video and pinball game sound emulator (Linux binary)
 
