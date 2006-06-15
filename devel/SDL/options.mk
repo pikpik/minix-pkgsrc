@@ -1,10 +1,15 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2006/06/12 16:20:44 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.SDL
-PKG_SUPPORTED_OPTIONS=	arts esound nas
-PKG_SUGGESTED_OPTIONS=	arts esound nas
+PKG_SUPPORTED_OPTIONS=	aalib arts esound nas
+PKG_SUGGESTED_OPTIONS=	aalib arts esound nas
 
 .include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Maalib)
+CONFIGURE_ARGS+=	--enable-video-aalib
+.include "../../graphics/aalib/buildlink3.mk"
+.endif
 
 .if !empty(PKG_OPTIONS:Marts)
 CONFIGURE_ARGS+=	--enable-arts
