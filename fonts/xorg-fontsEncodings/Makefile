@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:11 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/12 15:29:18 xtraeme Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fontsEncodings-${XORG_VER}
@@ -12,6 +12,8 @@ COMMENT=	X.org Encoding fonts
 
 XBUILD_DIRS=	fonts/encodings
 XEXTRACTS=	${XBUILD_DIRS}
+
+USE_TOOLS+=	imake
 
 .include "Makefile.common"
 .include "../../mk/bsd.pkg.mk"
