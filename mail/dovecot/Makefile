@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.52 2006/05/21 13:48:51 ghen Exp $
+# $NetBSD: Makefile,v 1.53 2006/06/13 16:51:40 ghen Exp $
 
 DISTNAME=		dovecot-1.0.beta9
 PKGNAME=		${DISTNAME:S/.beta/beta/}
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://www.dovecot.org/releases/
 
@@ -17,10 +18,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--with-ssldir=${SSLCERTS:Q}
-
-# ./configure checks for c++ and fortran compilers although
-# dovecot doesn't actually use them, this should be fixed.
-USE_LANGUAGES+=		c c++ fortran
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
