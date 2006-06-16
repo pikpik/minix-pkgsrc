@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.53 2006/02/17 07:48:52 martti Exp $
+# $NetBSD: Makefile,v 1.54 2006/04/08 04:30:18 martti Exp $
 
 DISTNAME=		stunnel-4.07
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.fu-berlin.de/unix/security/stunnel/ \
 			ftp://stunnel.mirt.net/stunnel/ \
@@ -23,6 +23,7 @@ PKG_SYSCONFSUBDIR=	stunnel
 
 RCD_SCRIPTS=		stunnel
 REPLACE_PERL+=		src/stunnel3.in
+USE_TOOLS+=		perl:run
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
