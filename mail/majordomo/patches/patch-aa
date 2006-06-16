@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.1.1.1 1999/06/08 17:51:26 bad Exp $
+$NetBSD: patch-aa,v 1.2 2001/03/27 11:53:18 agc Exp $
 
 --- Makefile.orig	Wed Aug 27 16:56:21 1997
 +++ Makefile	Tue Mar 27 12:41:29 2001
@@ -7,7 +7,7 @@ $NetBSD: patch-aa,v 1.1.1.1 1999/06/08 17:51:26 bad Exp $
   
  # Put the location of your Perl binary here:
 -PERL = /bin/perl
-+PERL = @LOCALBASE@/bin/perl
++PERL = @PERL@
  
  # What do you call your C compiler?
  CC = cc
