@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/01/24 20:02:37 tonio Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:31 joerg Exp $
 
 DISTNAME=		lbdb_0.31.1
 PKGNAME=		${DISTNAME:S/_/-/}
@@ -16,15 +16,15 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake perl:run
 
 CONFIGURE_ARGS+=	--libdir=${PREFIX}/libexec/lbdb/
-CONFIGURE_ARGS+=        --sysconfdir=${PKG_SYSCONFDIR:Q}
-CONFIGURE_ARGS+=  --enable-lbdb_dotlock
-CONFIGURE_ARGS+=  --without-getent
-CONFIGURE_ARGS+=  --without-evolution-addressbook-export
-CONFIGURE_ARGS+=  --without-pgp
-CONFIGURE_ARGS+=  --without-pgpk
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+CONFIGURE_ARGS+=	--enable-lbdb_dotlock
+CONFIGURE_ARGS+=	--without-getent
+CONFIGURE_ARGS+=	--without-evolution-addressbook-export
+CONFIGURE_ARGS+=	--without-pgp
+CONFIGURE_ARGS+=	--without-pgpk
 
-CONFIGURE_ENV+=   SH=${TOOLS_SH:Q}
-CONFIGURE_ENV+=   AWK=${TOOLS_AWK:Q}
+CONFIGURE_ENV+=		SH=${TOOLS_SH:Q}
+CONFIGURE_ENV+=		AWK=${TOOLS_AWK:Q}
 
 .include "options.mk"
 
