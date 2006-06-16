@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:16 tv Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:08:37 joerg Exp $
 #
 
 DISTNAME=		SQLiteManager-1.0.4
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sqlitemanager/}
 
@@ -12,11 +12,9 @@ COMMENT=		Web frontend for managing SQLite databases
 
 DEPENDS+=		php>=5.0.3nb1:../../lang/php5
 
+NO_BUILD=		yes
 
-APACHE_USER?=		www
-
-do-build:
-	# nothing
+BUILD_DEFS+=		APACHE_USER
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share
