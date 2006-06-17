@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2005/12/03 04:18:59 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.64 2006/02/10 17:07:54 drochner Exp $
 #
 
 COMMENT=	CAD tools
@@ -51,6 +51,11 @@ SUBDIR+=	pcb
 SUBDIR+=	py-MyHDL
 SUBDIR+=	py-simpy
 SUBDIR+=	qcad
+SUBDIR+=	qcad-manual-cs
+SUBDIR+=	qcad-manual-de
+SUBDIR+=	qcad-manual-en
+SUBDIR+=	qcad-manual-hu
+SUBDIR+=	qcad-partlibrary
 SUBDIR+=	sci-wcalc
 SUBDIR+=	simian
 SUBDIR+=	simian-docs
