@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:08 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/04 21:29:29 jlam Exp $
 
 DISTNAME=		STL_doc
 PKGNAME=		sgi-stl-docs-3.3
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.sgi.com/tech/stl/
 
@@ -14,7 +15,7 @@ DIST_SUBDIR=		${PKGNAME_NOREV}
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
 
-HTMLDOCDIR=		share/doc/html/sgi-stl
+HTMLDOCDIR=		share/doc/sgi-stl/html
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/${HTMLDOCDIR}
