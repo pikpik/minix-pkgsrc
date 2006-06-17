@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:10:18 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/06/12 16:28:12 wiz Exp $
 #
 
 DISTNAME=	smpeg-0.4.4
@@ -15,7 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
-USE_LANGUAGES+=	c++
+USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 
 CPPFLAGS+=	-Dunix=1
