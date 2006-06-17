@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2002/09/01 02:30:57 schmonz Exp $
+# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:47 jlam Exp $
 #
 
 DISTNAME=	p4
 HOMEPAGE=	http://www.perforce.com/perforce/products/p4.html
 COMMENT=	Perforce SCM command-line client
 
-P4BINONLY=	# defined
+P4BINONLY=	yes
 
 .include "../../devel/p4/Makefile.common"
 
