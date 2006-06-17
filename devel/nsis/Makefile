@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:08:49 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/15 17:27:19 rillig Exp $
 #
 
 DISTNAME=	nsis-${NSIS_VER}
@@ -30,8 +30,8 @@ INSTALLATION_DIRS=	bin share/nsis
 SUBST_CLASSES+=		makensis
 SUBST_STAGE.makensis=	post-patch
 SUBST_FILES.makensis=	makensis.sh
-SUBST_SED.makensis=	-e s,@@SH@@,${SH:Q}, \
-			-e s,@@MAKENSIS@@,${MAKENSIS_BIN:Q},
+SUBST_SED.makensis=	-e s,@@SH@@,${SH:Q},
+SUBST_SED.makensis+=	-e s,@@MAKENSIS@@,${MAKENSIS_BIN:Q},
 
 post-extract:
 	${CP} ${FILESDIR:Q}/makensis.sh ${WRKSRC:Q}
