@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/30 09:06:16 is Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/23 00:12:38 jlam Exp $
 #
 
 DISTNAME=	postgrey-1.24
@@ -45,7 +45,6 @@ OWN_DIRS_PERMS+=	${POSTGREY_DBDIR} \
 FILES_SUBST+=		PERL=${PERL5:Q}
 
 SUBST_CLASSES+=		postgrey
-
 SUBST_STAGE.postgrey=	pre-build
 SUBST_FILES.postgrey=	postgrey
 # Perl
