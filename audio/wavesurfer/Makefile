@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:08:15 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/22 09:22:06 rillig Exp $
 
 DISTNAME=	wavesurfer-1.7.4
 PKGREVISION=	1
@@ -25,7 +25,7 @@ SUBST_SED.wish=		-e 's,wish8.4,wish,g'
 INSTALLATION_DIRS=	bin lib
 
 do-install:
-	${CP} ${WRKSRC}/wavesurfer.tcl ${PREFIX}/bin/wavesurfer
-	${CP} -R ${WRKSRC}/wsurf1.7 ${PREFIX}/lib/
+	${INSTALL_SCRIPT} ${WRKSRC}/wavesurfer.tcl ${PREFIX}/bin/wavesurfer
+	cd ${WRKSRC} && ${PAX} -wr -pm wsurf1.7 ${PREFIX}/lib/
 
 .include "../../mk/bsd.pkg.mk"
