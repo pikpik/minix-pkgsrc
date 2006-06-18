@@ -1,7 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/27 12:11:43 adam Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:33 jlam Exp $
+${AGL}include/glitz-agl.h
 include/glitz-glx.h
 include/glitz.h
+${AGL}lib/libglitz-agl.la
 lib/libglitz-glx.la
 lib/libglitz.la
+${AGL}lib/pkgconfig/glitz-agl.pc
 lib/pkgconfig/glitz-glx.pc
 lib/pkgconfig/glitz.pc
