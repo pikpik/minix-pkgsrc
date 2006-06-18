@@ -1,4 +1,4 @@
-$NetBSD: patch-ab,v 1.4 2003/09/30 14:57:25 jmmv Exp $
+$NetBSD: patch-ab,v 1.1.1.1 2004/01/08 20:48:46 xtraeme Exp $
 
 --- configure.orig	2002-04-11 00:50:20.000000000 +0200
 +++ configure
@@ -13,7 +13,7 @@ $NetBSD: patch-ab,v 1.4 2003/09/30 14:57:25 jmmv Exp $
  	ICECAST_SHAREDIR=${prefix}
  	ICECAST_LOGDIR=logs
 -	ICECAST_LOGDIR_INST=${prefix}/logs
-+	ICECAST_LOGDIR_INST=/var/log/icecast
++	ICECAST_LOGDIR_INST=${VARBASE}/log/icecast
  	ICECAST_TEMPLATEDIR=templates
 -	ICECAST_TEMPLATEDIR_INST=${prefix}/templates
 +	ICECAST_TEMPLATEDIR_INST=${prefix}/share/icecast/templates
