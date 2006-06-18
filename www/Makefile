@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.457 2006/06/15 11:30:17 adrianp Exp $
+# $NetBSD: Makefile,v 1.458 2006/06/15 13:28:03 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -116,7 +116,6 @@ SUBDIR+=	gtkhtml38
 SUBDIR+=	haskell-cgi
 SUBDIR+=	hiawatha
 SUBDIR+=	horde
-SUBDIR+=	horde3
 SUBDIR+=	htdig
 SUBDIR+=	htdig-devel
 SUBDIR+=	htmldoc
