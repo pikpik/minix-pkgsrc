@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2006/03/20 04:15:42 jlam Exp $
+# $NetBSD: Makefile,v 1.52 2006/04/13 18:23:29 jlam Exp $
 #
 
-DISTNAME=       tar-1.15.1
+DISTNAME=	tar-1.15.1
 PKGNAME=	gtar-base-1.15.1
 PKGREVISION=	2
 SVR4_PKGNAME=	gtarb

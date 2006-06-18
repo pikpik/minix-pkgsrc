@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/05/07 12:55:19 gdt Exp $
+# $NetBSD: Makefile,v 1.44 2006/05/17 06:12:27 rillig Exp $
 
 DISTNAME=		rarbsd
 PKGNAME=		rar-2.02
@@ -18,7 +18,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
 WRKSRC=			${WRKDIR}
-EXTRACT_CMD=		${DOWNLOADED_DISTFILE} >/dev/null
+EXTRACT_CMD=		exec "$$extract_file" >/dev/null
 
 pre-extract:
 	${_PKG_SILENT}${_PKG_DEBUG} set -e; set -u;			\
