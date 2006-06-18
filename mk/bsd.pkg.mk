@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1855 2006/06/18 09:34:07 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1856 2006/06/18 09:37:55 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -494,9 +494,9 @@ CONFIGURE_SCRIPTS_OVERRIDE?=	\
 # configure to recognise NetBSD ports such as shark.
 #
 CONFIG_GUESS_OVERRIDE?=		\
-	config.guess */config.guess */*/config.guess
+	config.guess */config.guess */*/config.guess */*/*/config.guess
 CONFIG_SUB_OVERRIDE?=		\
-	config.sub */config.sub */*/config.sub
+	config.sub */config.sub */*/config.sub */*/*/config.sub
 CONFIG_RPATH_OVERRIDE?=		# set by platform file as needed
 .endif
 
