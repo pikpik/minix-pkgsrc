@@ -1,6 +1,4 @@
-# $NetBSD: package.mk,v 1.7 2006/06/10 03:23:46 jlam Exp $
-
-_PACKAGE_COOKIE=	${WRKDIR}/.package_done
+# $NetBSD: package.mk,v 1.8 2006/06/14 07:51:47 jlam Exp $
 
 ######################################################################
 ### package (PUBLIC)
