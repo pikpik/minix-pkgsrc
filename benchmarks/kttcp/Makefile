@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2005/05/23 08:53:42 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/05 20:49:51 rillig Exp $
 
 DISTNAME=	kttcp-${VERSION}
 CATEGORIES=	benchmarks net
+PKGREVISION=	1
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
@@ -19,6 +20,7 @@ NO_CHECKSUM=	yes
 
 WRKSRC=		${WRKDIR}
 MAKE_ENV+=	BINDIR=${LOCALBASE}/bin MANDIR=${LOCALBASE}/man
+MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP}
 
 INSTALLATION_DIRS=	bin
 
