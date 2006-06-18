@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/02/21 20:26:08 hubertf Exp $
+# $NetBSD: Makefile,v 1.8 2005/02/22 17:23:34 jmcneill Exp $
 #
 
 DISTNAME=	cs4235-20001009
@@ -14,5 +14,6 @@ ONLY_FOR_PLATFORM= NetBSD-*-i386
 WRKSRC=		${WRKDIR}/cs4235
 
 MAKE_ENV+=	BINDIR=${PREFIX}/bin
+MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP}
 
 .include "../../mk/bsd.pkg.mk"
