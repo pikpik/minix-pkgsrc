@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/14 01:14:28 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/06/17 19:30:12 rillig Exp $
 #
 
 DISTNAME=		freebsd_lib-2.2.7
@@ -22,10 +22,6 @@ do-install:
 	cd ${WRKSRC} && for file in `${FIND} usr -name '*.*' -print`; do \
 		${INSTALL_DATA} $$file ${PREFIX}/emul/freebsd/$$file; \
 	done
-	@${SETENV} PKG_PREFIX="${PREFIX}" ${SH} ${INSTALL_FILE} - POST-INSTALL
 	${TOUCH} ${PREFIX}/emul/freebsd/var/run/ld.so.hints
-
-show-shlib-type:
-	@${ECHO} a.out
 
 .include "../../mk/bsd.pkg.mk"
