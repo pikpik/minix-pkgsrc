@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2006/05/07 15:11:44 tv Exp $
+# $NetBSD: Makefile,v 1.26 2006/06/01 15:25:03 jlam Exp $
 #
 
 DISTNAME=	Python-2.4.3
 PKGNAME=	python24-2.4.3
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang python
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.4.3/ \
 		http://www.python.org/ftp/python/2.4.3/
