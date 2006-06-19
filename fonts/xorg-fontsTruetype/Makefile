@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/12 15:29:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/22 09:22:08 rillig Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fontsTruetype-${XORG_VER}
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_XORG}
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.x.org/
 COMMENT=	X.org Truetype fonts
+
+USE_TOOLS+=	imake
 
 BUILD_DEPENDS+=	fontconfig-[0-9]*:../../fonts/fontconfig
 DEPENDS+=	xorg-fontsEncodings>=${XORG_VER}:../../fonts/xorg-fontsEncodings
