@@ -1,0 +1,6 @@
+==============================================================================
+$NetBSD$
+
+Do not forget to include COMPAT_OSF1 in your kernel configuration file.
+OSF/1 binaries require this option in order to work.
+==============================================================================
