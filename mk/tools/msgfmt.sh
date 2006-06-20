@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: msgfmt.sh,v 1.21 2006/06/05 13:36:14 jlam Exp $
+# $NetBSD: msgfmt.sh,v 1.22 2006/06/13 13:30:40 jlam Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -130,9 +130,9 @@ BEGIN {
 	SPACE = "[ 	]*"
 	KEYWORD_SEP = "([ 	]+|[ 	]*\"|$)"
 	OBSOLETE = "#~ "
-	OBSOLETE_RE = "^(#~[ 	]+)?"
+	OBSOLETE_RE = "^(#~[ 	]+)?[ 	]*"
 	OBSOLETE_RE_MATCH = "^#~[ 	]+"
-	MSG_CONTINUATION_RE = OBSOLETE_RE "[ 	]*\""
+	MSG_CONTINUATION_RE = OBSOLETE_RE "\""
 
 	result = getline
 	if (result < 1) exit result
