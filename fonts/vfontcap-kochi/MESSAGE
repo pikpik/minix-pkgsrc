@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+You will need to appropriate insert the entries in:
+
+	${PREFIX}/${VFONTCAPDIR}/vfontcap.kochi-ttf
+
+into your VFlib configuration database, possibly replacing existing
+entries.
+===========================================================================
