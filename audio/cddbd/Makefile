@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2002/07/02 11:27:44 agc Exp $
+# $NetBSD: Makefile,v 1.7 2005/05/31 21:53:20 rillig Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
@@ -10,7 +10,7 @@ MASTER_SITES=	ftp://ftp.moonsoft.com/pub/cddbd-1.3.1/ \
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	cddbd-1.3.1.patch1.gz
 
-MAINTAINER=	bjn@visi.com
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.moonsoft.com/software.html
 COMMENT=	Internet CD Database Server
 
