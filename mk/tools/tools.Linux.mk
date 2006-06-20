@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.33 2006/05/21 16:55:23 jlam Exp $
+# $NetBSD: tools.Linux.mk,v 1.34 2006/06/14 16:57:07 jlam Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -29,7 +29,9 @@ TOOLS_PLATFORM.cmp?=		/bin/cmp
 TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 .endif
 TOOLS_PLATFORM.cp?=		/bin/cp
+.if exists(/bin/tcsh)
 TOOLS_PLATFORM.csh?=		/bin/tcsh
+.endif
 .if exists(/bin/cut)
 TOOLS_PLATFORM.cut?=		/bin/cut
 .elif exists(/usr/bin/cut)
