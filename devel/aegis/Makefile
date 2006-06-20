@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:39 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/13 18:23:30 jlam Exp $
 #
 
 DISTNAME=	aegis-4.15
@@ -13,7 +13,7 @@ COMMENT=	Aegis is a transaction base software configuration management system
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 CONFIGURE_ARGS+=	--with-nlsdir=${_PKGLOCALEDIR:Q}
-USE_TOOLS+=		groff gsoelim msgfmt
+USE_TOOLS+=		groff gsoelim msgfmt yacc
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
