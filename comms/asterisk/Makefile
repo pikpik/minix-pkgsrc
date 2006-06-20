@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/05/31 18:43:15 adam Exp $
+# $NetBSD: Makefile,v 1.27 2006/06/10 23:56:18 dsainty Exp $
 
 DISTNAME=	asterisk-1.2.8
 CATEGORIES=	comms net audio
@@ -91,6 +91,7 @@ post-patch:
 .endif
 
 .include "../../devel/ncurses/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
