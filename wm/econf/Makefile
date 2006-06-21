@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:11:12 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/04/17 13:46:50 wiz Exp $
 #
 
 DISTNAME=		enlightenment-conf-0.15
@@ -12,7 +12,7 @@ HOMEPAGE=		http://www.enlightenment.org/
 COMMENT=		Configuration tool for easily setting up Enlightenment
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
