@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:44 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:21 wiz Exp $
 #
 
 DISTNAME=		kscope-1.3.3
@@ -14,7 +14,7 @@ DEPENDS+=		cscope>=15.4:../../devel/cscope
 DEPENDS+=		exctags>=5.5.4:../../devel/exctags
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
