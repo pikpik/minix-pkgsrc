@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/04/06 16:49:55 drochner Exp $
+# $NetBSD: Makefile,v 1.33 2006/04/17 13:46:09 wiz Exp $
 #
 
 DISTNAME=		at-spi-1.7.7
@@ -11,7 +11,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Assistive Technology Service Provider Interface
 
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
