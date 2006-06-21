@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2006/05/18 20:30:00 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/05/27 12:38:27 drochner Exp $
 
 DISTNAME=		root_v5.10.00.source
 PKGNAME=		root-5.10
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		ftp://root.cern.ch/root/
 
@@ -24,7 +25,7 @@ INSTALLATION_DIRS=	bin
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	${LOWER_OPSYS}
-CONFIGURE_ARGS+=	--prefix=${PREFIX} --mandir=${PREFIX}/man/man1
+CONFIGURE_ARGS+=	--prefix=${PREFIX} --mandir=${PREFIX}/${PKGMANDIR}/man1
 CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE}
 CONFIGURE_ARGS+=	--enable-soversion
 CONFIGURE_ARGS+=	--disable-builtin-pcre
