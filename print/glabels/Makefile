@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/21 06:00:48 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/17 13:46:46 wiz Exp $
 #
 
 DISTNAME=		glabels-2.0.2
@@ -22,6 +22,7 @@ USE_TOOLS+=		gmake pkg-config
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"
+.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"
