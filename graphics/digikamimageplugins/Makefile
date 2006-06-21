@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/04/13 18:23:33 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/17 13:46:31 wiz Exp $
 
 DISTNAME=		digikamimageplugins-0.8.1
 PKGREVISION=		2
@@ -13,6 +13,7 @@ COMMENT=		Plugins for Digikam's ImageEditor
 USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake msgfmt
 USE_LANGUAGES=		c c++
+USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 MANCOMPRESSED=		yes
 
