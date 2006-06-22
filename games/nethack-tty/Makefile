@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/09/22 14:55:07 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2005/12/05 20:50:17 rillig Exp $
 #
 
 .include "../../games/nethack-lib/Makefile.common"
@@ -14,6 +14,7 @@ BUILD_TARGET=		nethack
 INSTALL_TARGET=		binfiles
 MAKE_ENV+=		GTYPE=-tty
 
+DISTINFO_FILE?=		${.CURDIR}/../nethack-lib/distinfo
 PATCHDIR=		${.CURDIR}/../nethack-lib/patches
 
 .include "../../mk/bsd.pkg.mk"
