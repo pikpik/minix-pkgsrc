@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/04/06 06:22:50 reed Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:08 wiz Exp $
 
 DISTNAME=	gnome-spell-1.0.6
 PKGREVISION=	5
@@ -13,7 +13,7 @@ COMMENT=	Spell checking as you type like gtkspell
 GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.3
 USE_PKGLOCALEDIR=	YES
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LIBTOOL=		YES
 
 BUILDLINK_API_DEPENDS.libgnomeui+=	libgnomeui>=2.8.0nb3

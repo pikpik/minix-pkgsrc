@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/21 06:00:46 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:37 wiz Exp $
 #
 
 DISTNAME=		imhangul_status_applet-0.3
@@ -15,7 +15,7 @@ DEPENDS+=		imhangul>=0.9.6:../../inputmethod/imhangul
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1 gnome2-1.5
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LIBTOOL=		yes
 
 GCONF2_SCHEMAS=		imhangul_status.schemas
