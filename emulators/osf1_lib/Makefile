@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/05/22 22:22:03 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/06/19 23:22:29 jlam Exp $
 
 DISTNAME=	netscape-4.7-3.alpha
 PKGNAME=	osf1_lib-1.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.digital.com/pub/DEC/Linux-Alpha-Tools/netscape/
 EXTRACT_SUFX=	.rpm
