@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:44:57 tv Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/09 21:04:41 jlam Exp $
 
 DISTNAME=	tosha-0.05
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/audio/
 
