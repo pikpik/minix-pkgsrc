@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/12 19:49:26 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/06/16 16:15:42 jlam Exp $
 #
 
 DISTNAME=	p11-2.10a
@@ -29,7 +29,7 @@ PLIST_SUBST+=		TAP=		# DragonFly has TAP
 .else
 PLIST_SUBST+=		TAP="@comment "
 .endif
-.if exists(/dev/tun) || exists(/dev/tun0) || exists(/dev/net/tun)
+.if exists(/dev/tun) || exists(/dev/tun0) || exists(/dev/net/tun) || ${OPSYS} == "DragonFly"
 PLIST_SUBST+=		TUN=
 .else
 PLIST_SUBST+=		TUN="@comment "
