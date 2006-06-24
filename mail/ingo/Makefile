@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/05/12 20:52:03 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2006/06/02 18:27:56 joerg Exp $
 
 DISTNAME=	ingo-h3-${INGOVER}
 PKGNAME=	ingo-${INGOVER}
@@ -10,7 +10,7 @@ MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://www.horde.org/ingo/
 COMMENT=	Horde based generic and complete mail filter rule frontend
 
-DEPENDS+=	horde>=3.0.0:../../www/horde3
+DEPENDS+=	horde>=3.0.0:../../www/horde
 
 .include "../../mk/bsd.prefs.mk"
 
