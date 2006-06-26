@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/21 18:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:11:18 joerg Exp $
 
 DISTNAME=       apache-tomcat-${TOMCAT_VERSION}
 PKGREVISION=	1
@@ -68,6 +68,7 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/conf/${CATALINA_DIR}/${f} ${EGDIR2}
 .endfor
 	${INSTALL_DATA_DIR} ${TOMCAT_LIB}
+	${RM} -r ${WRKSRC}/temp/*
 	@(cd ${WRKSRC} && ${PAX} -rw -pm . ${TOMCAT_LIB};		\
 	${FIND} ${TOMCAT_LIB} -type f -print | ${XARGS} ${CHMOD} a+r;	\
 	${FIND} ${TOMCAT_LIB} \( -type f -o -perm -u+x \) -print	\
