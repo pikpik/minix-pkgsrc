@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2004/10/03 00:13:08 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/04/11 21:44:55 tv Exp $
 #
 
 DISTNAME=	mserv-0.39a
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mserv/}
 
@@ -17,6 +17,7 @@ USE_LIBTOOL=		yes
 
 REPLACE_PERL=		support/mservedit webclient/main.cgi \
 			webclient/margin.cgi webclient/mserv.cgi
+USE_TOOLS+=		perl:run
 
 post-configure:
 	${MV} ${WRKSRC}/mserv/soundcard.h ${WRKSRC}/mserv/mservsoundcard.h
