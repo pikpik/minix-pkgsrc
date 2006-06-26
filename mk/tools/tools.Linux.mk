@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.34 2006/06/14 16:57:07 jlam Exp $
+# $NetBSD: tools.Linux.mk,v 1.35 2006/06/20 22:32:28 minskim Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -61,7 +61,9 @@ TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
 TOOLS_PLATFORM.file?=		/usr/bin/file
 TOOLS_PLATFORM.find?=		/usr/bin/find
 TOOLS_PLATFORM.gawk?=		/usr/bin/awk
+.if exists(/usr/bin/m4)
 TOOLS_PLATFORM.gm4?=		/usr/bin/m4
+.endif
 .if exists(/usr/bin/make)
 TOOLS_PLATFORM.gmake?=		/usr/bin/make
 .endif
