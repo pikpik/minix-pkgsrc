@@ -1,8 +1,8 @@
-$NetBSD: patch-as,v 1.1.1.1 2004/01/26 13:03:38 jmmv Exp $
+$NetBSD: patch-as,v 1.2 2004/03/11 17:26:02 jmmv Exp $
 
---- src/video_out/video_out_none.c.orig	2003-12-14 23:13:25.000000000 +0100
+--- src/video_out/video_out_none.c.orig	2004-09-22 20:29:15.000000000 +0000
 +++ src/video_out/video_out_none.c
-@@ -65,6 +65,8 @@ typedef struct {
+@@ -64,6 +64,8 @@ typedef struct {
  
  
  static void free_framedata(none_frame_t* frame) {
