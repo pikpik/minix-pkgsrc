@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- include/getopt.h.orig	2002-07-05 08:43:06.000000000 +0000
++++ include/getopt.h
+@@ -8,8 +8,6 @@
+ extern int	optopt, opterr, optind;
+ extern char	*optarg;
+ 
+-extern int	sp;
+-
+ extern int getopt( int , char * const argv[], const char *);
+ 
+ #endif
