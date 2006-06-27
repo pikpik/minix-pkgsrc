@@ -16,7 +16,7 @@ $NetBSD$
  char	*cmd;
  {
 -   extern  int  errno;
-+#if (!defined(BSD) || BSD < 199306)
++#if !defined(__linux__) && (!defined(BSD) || BSD < 199306)
     extern  char *sys_errlist[];
 +#endif
     int          pid;
