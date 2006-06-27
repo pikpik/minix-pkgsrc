@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/06/14 10:30:06 drochner Exp $
+# $NetBSD: Makefile,v 1.47 2006/06/21 13:10:54 joerg Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -19,12 +19,12 @@ SKIN_SITES=	http://www1.mplayerhq.hu/MPlayer/Skin/		\
 
 .include "../../multimedia/mplayer-share/Makefile.common"
 
-PKGREVISION=	1
+PKGREVISION=	2
 
 COMMENT=	Software only MPEG-1/2/4 video decoder with a GTK+ interface
 
 SKINS +=	AlienMind-1.2${EXTRACT_SUFX}			\
-		Blue-1.4${EXTRACT_SUFX}				\
+		Blue-1.5${EXTRACT_SUFX}				\
 		BlueHeart-1.5${EXTRACT_SUFX}			\
 		CornerMP-1.2${EXTRACT_SUFX}			\
 		CornerMP-aqua-1.4${EXTRACT_SUFX}		\
