@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:43 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/11 13:56:41 joerg Exp $
 #
 
 .include "${.CURDIR}/Makefile.common"
 
 COMMENT=	Multithreaded GTK2+ ftp client
-PKGREVISION=	4
+PKGREVISION=	5
 
 CONFLICTS=	gftp-gtk1-[0-9]*
 
