@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/05/25 23:51:32 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/06/12 16:28:12 wiz Exp $
 #
 
 DISTNAME=	DVDStyler-1.5b4
@@ -18,7 +18,7 @@ DEPENDS+=	mpgtx-[0-9]*:../../graphics/mpgtx
 USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		autoconf gmake pkg-config
+USE_TOOLS+=		autoconf gmake pkg-config msgfmt
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--disable-kde
