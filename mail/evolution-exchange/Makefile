@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:38 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/05/31 18:22:24 ghen Exp $
 #
 
 DISTNAME=	evolution-exchange-2.6.0
@@ -12,7 +12,7 @@ HOMEPAGE=	http://www.novell.com/products/evolution/
 COMMENT=	Support for Microsoft Exchange 2000 and 2003 in Evolution
 
 GNU_CONFIGURE=		YES
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 
