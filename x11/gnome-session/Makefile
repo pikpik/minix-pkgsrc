@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2006/04/17 13:46:53 wiz Exp $
+# $NetBSD: Makefile,v 1.68 2006/05/03 11:21:26 drochner Exp $
 #
 
 DISTNAME=		gnome-session-2.14.1
@@ -18,7 +18,7 @@ EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake perl pkg-config
+USE_TOOLS+=		gmake perl pkg-config msgfmt
 USE_LIBTOOL=		yes
 
 MAKE_ENV+=		REAL_GCONFTOOL=${GCONFTOOL2:Q}
