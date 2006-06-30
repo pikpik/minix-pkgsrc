@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/06/08 14:58:38 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2006/06/24 08:44:33 rillig Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
@@ -18,6 +18,9 @@ BUILD_TARGET=		build
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 
 INSTALLATION_DIRS=	man/man1 man/man3 man/man8
+
+post-extract:
+	${CP} ${PKGSRCDIR}/mk/gnu-config/config.guess ${WRKSRC}/scripts/gnu-os
 
 post-configure:
 	cd ${WRKSRC};						\
