@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/03/09 20:37:56 tonio Exp $
+# $NetBSD: Makefile,v 1.2 2006/04/03 18:17:55 ghen Exp $
 
 DISTNAME=		suse_libpng-${SUSE_VERSION}
+PKGREVISION=		1
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE100}
 DISTFILES=		${RPMFILES}
@@ -9,7 +10,7 @@ MAINTAINER=		tonio@NetBSD.org
 HOMEPAGE=		http://www.suse.com/
 COMMENT=		Linux compatibility package for the PNG library
 
-DEPENDS+=		suse_base>=${SUSE_VERSION}:../../emulators/suse100_base
+DEPENDS+=		suse_base-${SUSE_VERSION}{,nb*}:../../emulators/suse100_base
 
 EXTRACT_ONLY=		# empty
 NO_BUILD=		YES
