@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/04/17 13:46:31 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/22 10:17:07 joerg Exp $
 #
 
 DISTNAME=		refocus-it-2.0.0
@@ -15,6 +15,7 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 #just build the plugin
 CONFIGURE_ARGS+=	--without-cmdline
+USE_TOOLS+=		pkg-config msgfmt
 
 .include "../../graphics/gimp/buildlink3.mk"
 .include "../../textproc/intltool/buildlink3.mk"
