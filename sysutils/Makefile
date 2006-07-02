@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.358 2006/06/11 14:05:35 markd Exp $
+# $NetBSD: Makefile,v 1.359 2006/06/17 09:08:47 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -283,6 +283,7 @@ SUBDIR+=	wipe
 SUBDIR+=	wmSMPmon
 SUBDIR+=	wmcpuload
 SUBDIR+=	wmmemmon
+SUBDIR+=	wpi-firmware
 SUBDIR+=	wtail
 SUBDIR+=	xapply
 SUBDIR+=	xbatt
