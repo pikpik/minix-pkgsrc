@@ -1,4 +1,4 @@
-# $NetBSD: check-interpreter.mk,v 1.7 2006/06/16 12:03:38 rillig Exp $
+# $NetBSD$
 
 # This file checks that after installation, all files of the package
 # that start with a "#!" line will find their interpreter. Files that
