@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:22 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:37 joerg Exp $
 #
 
 DISTNAME=	plnode141
@@ -22,9 +22,6 @@ EXDIR=		${PREFIX}/share/examples/ploticus
 
 do-install:
 	${INSTALL_DATA_DIR} ${EXDIR}
-.for dir in doc gallery tabgallery thumbnails thumbpng
-	${INSTALL_DATA_DIR} ${EXDIR}/${dir}
-	${CP} -R ${WRKSRC}/${dir} ${EXDIR}
-.endfor
+	cd ${WRKSRC} && ${PAX} -rw -pp doc gallery tabgallery thumbnails thumbpng ${EXDIR}
 
 .include "../../mk/bsd.pkg.mk"
