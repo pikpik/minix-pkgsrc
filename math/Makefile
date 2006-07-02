@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2006/03/09 17:16:18 wiz Exp $
+# $NetBSD: Makefile,v 1.149 2006/06/12 16:34:32 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -14,17 +14,23 @@ SUBDIR+=	R-R2HTML
 SUBDIR+=	R-RArcInfo
 SUBDIR+=	R-Rcmdr
 SUBDIR+=	R-abind
+SUBDIR+=	R-akima
 SUBDIR+=	R-chron
 SUBDIR+=	R-clim.pact
+SUBDIR+=	R-combinat
 SUBDIR+=	R-date
+SUBDIR+=	R-gdata
 SUBDIR+=	R-genetics
 SUBDIR+=	R-geoR
 SUBDIR+=	R-gstat
+SUBDIR+=	R-gtools
 SUBDIR+=	R-httpRequest
 SUBDIR+=	R-hwde
 SUBDIR+=	R-lmm
 SUBDIR+=	R-mapproj
 SUBDIR+=	R-maps
+SUBDIR+=	R-mvtnorm
+SUBDIR+=	R-ncdf
 SUBDIR+=	R-pixmap
 SUBDIR+=	R-sgeostat
 SUBDIR+=	R-shapefiles
