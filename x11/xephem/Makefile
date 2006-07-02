@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.40 2006/06/23 11:59:53 gdt Exp $
+# $NetBSD: Makefile,v 1.41 2006/06/27 12:15:09 markd Exp $
 
 DISTNAME=	xephem-3.7.1
 PKGREVISION=	1
 CATEGORIES=	x11
+PKGREVISION=	1
 MASTER_SITES=	http://www.clearskyinstitute.com/xephem/ \
 		ftp://iphcip1.physik.uni-mainz.de/pub/xephem/
 
@@ -29,6 +30,7 @@ LICENSE=		xephem-license
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/GUI/xephem
 USE_TOOLS+=	gmake perl:run
+REPLACE_PERL+=	auxil/*.pl
 
 LIBS.SunOS+=	-lnsl -lsocket
 X11_LDFLAGS+=	${LIBS}
