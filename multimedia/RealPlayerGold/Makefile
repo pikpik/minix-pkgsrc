@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/29 13:00:07 salo Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/22 09:22:11 rillig Exp $
 #
 
 DISTNAME=		RealPlayer10GOLD
@@ -21,11 +21,11 @@ DIST_SUBDIR=		${PKGNAME_NOREV}
 .include "../../emulators/suse_linux/Makefile.application"
 
 .if !defined(USE_NATIVE_LINUX)
-DEPENDS+=		suse_base>=9.1:../../emulators/suse91_base
-DEPENDS+=		suse_fontconfig>=9.1:../../emulators/suse91_fontconfig
-DEPENDS+=		suse_freetype2>=9.1:../../emulators/suse91_freetype2
-DEPENDS+=		suse_x11>=9.1:../../emulators/suse91_x11
-DEPENDS+=		suse_gtk2>=9.1:../../emulators/suse91_gtk2
+DEPENDS+=		suse_base>=9.1:../../emulators/${SUSE_DIR_PREFIX}_base
+DEPENDS+=		suse_fontconfig>=9.1:../../emulators/${SUSE_DIR_PREFIX}_fontconfig
+DEPENDS+=		suse_freetype2>=9.1:../../emulators/${SUSE_DIR_PREFIX}_freetype2
+DEPENDS+=		suse_x11>=9.1:../../emulators/${SUSE_DIR_PREFIX}_x11
+DEPENDS+=		suse_gtk2>=9.1:../../emulators/${SUSE_DIR_PREFIX}_gtk2
 .endif
 
 REALPLAYER_SUBDIR=	lib
