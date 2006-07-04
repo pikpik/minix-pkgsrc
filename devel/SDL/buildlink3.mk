@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.18 2006/06/13 15:28:02 tron Exp $
+# $NetBSD: buildlink3.mk,v 1.19 2006/06/15 09:45:05 adam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SDL_BUILDLINK3_MK:=	${SDL_BUILDLINK3_MK}+
@@ -20,7 +20,7 @@ PTHREAD_OPTS+=	require
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} != "IRIX"
+.if ${OPSYS} != "IRIX" && ${OPSYS} != "Darwin"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .endif
