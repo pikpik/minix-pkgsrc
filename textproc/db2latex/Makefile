@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/21 06:00:49 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/06/13 22:26:32 minskim Exp $
 
 DISTNAME=	db2latex-xsl-0.8pre1
 PKGNAME=	${DISTNAME:S/xsl-//}
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-USE_LANGUAGE=	# empty
+USE_LANGUAGES=	# none
 
 DOCDIR=		${PREFIX}/share/doc/db2latex
 XSLDIR=		${PREFIX}/share/xsl/db2latex
@@ -25,7 +25,7 @@ XML_ENTRIES=	rewriteURI http://db2latex.sourceforge.net/xsl/ \
 .include "../../textproc/xmlcatmgr/catalogs.mk"
 
 post-extract:
-	cd ${WRKSRC} && ${FIND} . -name "*\**" -exec ${RM} {} \;
+	cd ${WRKSRC} && ${FIND} . -name "*\\**" -exec ${RM} {} \;
 
 pre-install:
 	${FIND} ${WRKSRC} -name \*.orig -exec ${RM} {} \;
