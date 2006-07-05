@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/04/05 13:49:26 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/04/11 20:09:52 jlam Exp $
 #
 
-DISTNAME=	openvpn-2.0.6
-PKGREVISION=	1
+DISTNAME=	openvpn-2.0.7
 CATEGORIES=	net
 MASTER_SITES=	http://openvpn.net/release/ \
 		http://openvpn.net/release/old/
