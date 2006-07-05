@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/04/17 13:46:32 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/06/21 21:31:23 joerg Exp $
 
 DISTNAME=		gthumb-2.6.9
 PKGREVISION=		3
@@ -9,7 +9,7 @@ MAINTAINER=		minskim@NetBSD.org
 HOMEPAGE=		http://gthumb.sourceforge.net/
 COMMENT=		Image viewer and browser for the GNOME Desktop
 
-USE_TOOLS+=		pkg-config msgfmt
+USE_TOOLS+=		intltool msgfmt pkg-config
 USE_DIRS+=		xdg-1.1 gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
@@ -37,7 +37,6 @@ BUILDLINK_API_DEPENDS.libglade2+=   libglade2>=2.4.0
 .include "../../print/libgnomeprintui/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/Xrender/buildlink3.mk"

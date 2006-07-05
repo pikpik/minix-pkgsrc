@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2006/04/13 18:23:37 jlam Exp $
+# $NetBSD: Makefile,v 1.55 2006/04/17 13:46:08 wiz Exp $
 
 DISTNAME=	seahorse-0.8.1
 PKGREVISION=	2
@@ -14,7 +14,7 @@ DEPENDS+=		gnupg>=1.2.1:../../security/gnupg
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
-USE_TOOLS+=		gmake msgfmt pkg-config
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
@@ -33,7 +33,6 @@ BUILDLINK_API_DEPENDS.gpgme+=	gpgme>=1.0.1nb2
 .include "../../net/libsoup-devel/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

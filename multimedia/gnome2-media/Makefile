@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/06/09 07:30:31 jnemeth Exp $
+# $NetBSD: Makefile,v 1.38 2006/06/20 15:51:29 jmmv Exp $
 
 DISTNAME=		gnome-media-2.14.0
 PKGREVISION=		2
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake msgfmt perl pkg-config xgettext
+USE_TOOLS+=		gmake intltool msgfmt perl pkg-config xgettext
 
 CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
@@ -54,7 +54,6 @@ BUILDLINK_API_DEPENDS.libgnomeui+=		libgnomeui>=2.13.2
 .include "../../net/ORBit2/buildlink3.mk"
 .include "../../sysutils/gnome-vfs2/buildlink3.mk"
 .include "../../sysutils/nautilus-cd-burner/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"

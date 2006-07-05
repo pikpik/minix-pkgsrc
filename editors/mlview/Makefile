@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/04/17 13:46:22 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2006/06/29 21:50:51 joerg Exp $
 #
 
 DISTNAME=	mlview-0.7.0
@@ -13,7 +13,7 @@ COMMENT=	XML editor for the GNOME environment
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
-USE_TOOLS+=		gmake msgfmt pkg-config
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
@@ -27,7 +27,6 @@ GCONF2_SCHEMAS=		mlview.schemas
 .include "../../devel/libgnome/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libcroco/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"

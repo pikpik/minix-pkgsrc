@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2006/04/17 13:46:11 wiz Exp $
+# $NetBSD: Makefile,v 1.59 2006/05/03 11:16:33 drochner Exp $
 #
 
 DISTNAME=	metacity-2.14.3
@@ -12,7 +12,7 @@ COMMENT=	GNOME-compliant window manager
 
 USE_DIRS+=		gnome2-1.5 theme-1.0
 USE_PKGLOCALEDIR=	YES
-USE_TOOLS+=		gmake msgfmt pkg-config
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
@@ -30,7 +30,6 @@ CONFIGURE_ARGS+=	--disable-xinerama
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
 .include "../../x11/xcursor/buildlink3.mk"

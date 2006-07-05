@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/04/17 13:46:07 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/22 10:21:14 joerg Exp $
 #
 
 DISTNAME=		goffice-0.2.1
@@ -14,7 +14,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/libgoffice-1.pc.in
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake pkg-config msgfmt
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/GConf2/buildlink3.mk"
@@ -29,7 +29,6 @@ BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.6.3
 .include "../../graphics/libart2/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libgnomeprint+=	libgnomeprint>=2.8.2
 .include "../../print/libgnomeprint/buildlink3.mk"
-.include "../../textproc/intltool/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
