@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/06/17 21:36:01 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/17 21:41:07 rillig Exp $
 #
 
 DISTNAME=	tla-1.3.4
@@ -21,6 +21,7 @@ USE_TOOLS+=	gmake
 
 HAS_CONFIGURE=		yes
 OVERRIDE_GNU_CONFIG_SCRIPTS=	yes
+OVERRIDE_DIRDEPTH=	3
 CONFIGURE_DIRS=		src/=build
 CONFIGURE_SCRIPT=	../configure
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
