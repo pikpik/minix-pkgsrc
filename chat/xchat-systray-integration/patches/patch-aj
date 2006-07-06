@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- src/settings.c.orig	2004-04-30 05:38:10.000000000 -0700
++++ src/settings.c
+@@ -3,6 +3,9 @@
+ 
+ #include "settings.h"
+ 
++GtkWidget **app2set;
++GtkWidget *spinbutton;
++
+ //file selected
+ void ok_click( GtkWidget *w, GtkFileSelection *fs )
+ {

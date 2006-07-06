@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/help.h.orig	2004-04-30 05:38:10.000000000 -0700
++++ src/help.h
+@@ -9,7 +9,7 @@ void visit_website();
+ void send_email();
+ void help_page();
+ 
+-char* version;
++extern char* version;
+ 
+ #endif
+ 
