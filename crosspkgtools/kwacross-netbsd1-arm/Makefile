@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2005/06/14 22:56:59 kristerw Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/12 14:06:30 rillig Exp $
 
 DISTNAME=	kwacross-netbsd1-arm-20050605
 CATEGORIES=     crosspkgtools
-MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-1.6.2/source/sets/
+MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/NetBSD-1.6.2/source/sets/
 EXTRACT_SUFX=	.tgz
 DISTFILES=	 ${DISTNAME}${EXTRACT_SUFX} \
 		gnusrc.tgz sharesrc.tgz src.tgz syssrc.tgz

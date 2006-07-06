@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/04/04 09:33:36 is Exp $
+# $NetBSD: Makefile,v 1.2 2006/04/10 13:48:31 is Exp $
 #
 
 DISTNAME=		xgrk-1.6.3
@@ -7,7 +7,7 @@ CATEGORIES=		x11
 MASTER_SITES=		http://www.softlab.ece.ntua.gr/~sivann/xgrk/
 EXTRACT_SUFX=		.tar.gz
 
-MAINTAINER=		is@netbsd.org
+MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://www.softlab.ece.ntua.gr/~sivann/xgrk/
 COMMENT=		Greek keyboard switcher for X11
 
