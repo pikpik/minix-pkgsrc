@@ -1,4 +1,4 @@
-# $NetBSD: extract.mk,v 1.8 2006/07/05 09:08:35 jlam Exp $
+# $NetBSD: extract.mk,v 1.9 2006/07/05 22:21:02 jlam Exp $
 #
 # The following variables may be set by the package Makefile and
 # specify how extraction happens:
@@ -119,6 +119,7 @@ extract-check-interactive:
 ###
 .PHONY: extract-cookie
 extract-cookie:
+	${_PKG_SILENT}${_PKG_DEBUG}${TEST} ! -f ${_EXTRACT_COOKIE} || ${FALSE}
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${_EXTRACT_COOKIE:H}
 	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} ${PKGNAME} > ${_EXTRACT_COOKIE}
 

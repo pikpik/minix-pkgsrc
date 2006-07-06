@@ -1,4 +1,4 @@
-# $NetBSD: bsd.tools.mk,v 1.39 2006/07/05 09:08:35 jlam Exp $
+# $NetBSD: bsd.tools.mk,v 1.40 2006/07/05 22:21:03 jlam Exp $
 #
 # Copyright (c) 2005, 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -115,6 +115,7 @@ tools-message:
 ###
 .PHONY: tools-cookie
 tools-cookie:
+	${_PKG_SILENT}${_PKG_DEBUG}${TEST} ! -f ${_TOOLS_COOKIE} || ${FALSE}
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${_TOOLS_COOKIE:H}
 	${_PKG_SILENT}${_PKG_DEBUG}${ECHO} ${USE_TOOLS:Q} > ${_TOOLS_COOKIE}
 
