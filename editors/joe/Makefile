@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2005/12/29 06:21:38 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/02/05 23:08:56 joerg Exp $
 
-DISTNAME=	joe-3.3
-PKGREVISION=	1
+DISTNAME=	joe-3.4
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=joe-editor/}
 
