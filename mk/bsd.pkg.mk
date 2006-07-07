@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1864 2006/07/06 21:59:38 jlam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1865 2006/07/07 15:59:06 jlam Exp $
 #
 # This file is in the public domain.
 #
@@ -653,7 +653,7 @@ all: ${_PKGSRC_BUILD_TARGETS}
 
 # Disable checksum
 .PHONY: checksum
-.if (defined(NO_CHECKSUM) || exists(${_EXTRACT_COOKIE})) && !target(checksum)
+.if (defined(NO_CHECKSUM) || exists(${_COOKIE.extract})) && !target(checksum)
 checksum: fetch
 	@${DO_NADA}
 .endif
