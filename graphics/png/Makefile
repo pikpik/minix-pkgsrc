@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2006/05/17 21:48:57 wiz Exp $
+# $NetBSD: Makefile,v 1.81 2006/06/29 22:21:18 wiz Exp $
 
 DISTNAME=	libpng-1.2.12
 PKGNAME=	${DISTNAME:S/lib//}
@@ -18,7 +18,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes
 PKGCONFIG_OVERRIDE=	scripts/libpng.pc.in
-TEST_TARGET=	test
+TEST_TARGET=	check
 USE_LIBTOOL=	yes
 
 .include "../../mk/bsd.prefs.mk"
