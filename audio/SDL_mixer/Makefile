@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/06/12 16:28:05 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2006/07/07 06:52:46 adam Exp $
 
 DISTNAME=	SDL_mixer-1.2.7
 CATEGORIES=	audio
@@ -28,7 +28,10 @@ post-install:
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
 		${WRKSRC}/build/playwave ${PREFIX}/bin
 
+BUILDLINK_API_DEPENDS.SDL+=	SDL>=1.2.10
+
 .include "../../audio/libvorbis/buildlink3.mk"
+.include "../../devel/SDL/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
 .include "../../multimedia/smpeg/buildlink3.mk"
 
