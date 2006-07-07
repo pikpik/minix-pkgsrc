@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/06/08 19:16:24 he Exp $
+# $NetBSD: Makefile,v 1.2 2006/06/09 13:24:20 he Exp $
 #
 
 DISTNAME=	${PKGNAME:S:-server-:_:}
@@ -14,7 +14,7 @@ DEPENDS+=	p5-Net-SSLeay>=0:../../security/p5-Net-SSLeay
 DEPENDS+=	rrdtool>=1.2:../../databases/rrdtool
 DEPENDS+=	munin-doc>=1.3.1:../../sysutils/munin-doc
 
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake perl:run
 USE_PKGINSTALL=	YES
 
 PERL5_CONFIGURE=NO

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/02/18 17:23:43 bouyer Exp $
+# $NetBSD: Makefile,v 1.2 2006/03/04 21:30:20 jlam Exp $
 #
 
 PKGNAME=	nagios-plugin-snmp-${PLUGINSVERSION}
+PKGREVISION=	1
 CATEGORIES=     net sysutils
 
 MAINTAINER=     pkgsrc-users@NetBSD.org
@@ -11,6 +12,8 @@ DEPENDS+=	nagios-plugins-${PLUGINSVERSION}:../../net/nagios-plugins
 DEPENDS+=       p5-Net-SNMP-[0-9]*:../../net/p5-Net-SNMP
 
 .include "../../net/nagios-plugins/Makefile.common"
+
+USE_TOOLS+=	perl:run
 
 BINARY_TARGET=	check_snmp check_hpjd
 SCRIPT_TARGET=	check_ifoperstatus check_ifstatus
