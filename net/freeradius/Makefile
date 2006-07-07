@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2006/04/06 06:22:32 reed Exp $
+# $NetBSD: Makefile,v 1.48 2006/04/10 15:25:04 joerg Exp $
 
 DISTNAME=	freeradius-1.1.1
 PKGREVISION=	3
@@ -23,7 +23,6 @@ USE_OLD_DES_API=	YES
 BUILDLINK_API_DEPENDS.openssl+=	openssl>=0.9.7
 
 USE_LIBTOOL=		YES
-LIBTOOL_OVERRIDE+=	libtool
 
 CONFIGURE_ARGS+=	--with-logdir=${VARBASE}/log
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}

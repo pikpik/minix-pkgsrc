@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2006/04/13 18:23:29 jlam Exp $
+# $NetBSD: Makefile,v 1.107 2006/04/17 13:46:18 wiz Exp $
 
 DISTNAME=	gaim-1.5.0
 PKGREVISION=	6
@@ -18,7 +18,7 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
-SHLIBTOOL_OVERRIDE=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 
 CONFIGURE_ARGS+=	--disable-binreloc
 CONFIGURE_ARGS+=	--disable-gevolution

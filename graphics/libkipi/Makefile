@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/04/17 13:46:06 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/11 14:30:09 joerg Exp $
 
 DISTNAME=	libkipi-0.1.2
 PKGREVISION=	3
@@ -15,7 +15,7 @@ USE_TOOLS+=		gmake msgfmt
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
-SHLIBTOOL_OVERRIDE=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"

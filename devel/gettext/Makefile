@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2006/02/20 14:04:45 joerg Exp $
+# $NetBSD: Makefile,v 1.72 2006/04/06 06:21:49 reed Exp $
 
 DISTNAME=		gettext-0.14.5
 CATEGORIES=		devel
@@ -15,7 +15,7 @@ BUILDLINK_API_DEPENDS.gettext+=	gettext-lib>=0.14.5
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-SHLIBTOOL_OVERRIDE+=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 CONFIGURE_ARGS+=	--without-included-gettext
 
 CONFIGURE_ENV+=		GCJ= ac_cv_prog_GCJ=

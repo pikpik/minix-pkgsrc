@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/04/17 13:46:36 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/12 16:28:11 wiz Exp $
 #
 
 DISTNAME=		vp-1.5
@@ -11,7 +11,6 @@ HOMEPAGE=		http://math.smsu.edu/~erik/software.php?id=63
 COMMENT=		Image viewer
 
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 GNU_CONFIGURE=		yes
 
 .include "../../devel/SDL/buildlink3.mk"

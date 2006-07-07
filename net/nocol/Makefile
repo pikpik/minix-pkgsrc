@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/06/20 22:17:14 minskim Exp $
+# $NetBSD: Makefile,v 1.28 2006/07/05 06:53:13 jlam Exp $
 #
 
 DISTNAME=		nocol-4.3.1
@@ -18,8 +18,6 @@ CONFIGURE_ARGS+=	< ${WRKSRC}/answers
 
 USE_TOOLS+=		perl:run mkdirhier yacc
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/cmu-snmp/snmp/libtool \
-			${WRKSRC}/cmu-snmp/snmpapps/libtool
 
 INSTALL_TARGET=		install root
 

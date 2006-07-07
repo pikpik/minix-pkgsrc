@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:33 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/06/20 23:44:01 joerg Exp $
 #
 
 DISTNAME=	gwenview-1.3.1
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	YES
 # Enable kipi (KDE Image Plugin Interface)
 CONFIGURE_ARGS+=	--enable-kipi
 
-SHLIBTOOL_OVERRIDE=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"

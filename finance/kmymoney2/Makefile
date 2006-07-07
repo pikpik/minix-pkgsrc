@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/03/11 03:29:20 reed Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/17 13:46:24 wiz Exp $
 
 DISTNAME=	kmymoney2-0.8
 PKGREVISION=	5
@@ -14,7 +14,7 @@ USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
-SHLIBTOOL_OVERRIDE+=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 
 .include "options.mk"
 

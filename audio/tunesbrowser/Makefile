@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/04/06 06:21:37 reed Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/17 13:46:16 wiz Exp $
 #
 
 DISTNAME=		tunesbrowser-0.3.0
@@ -13,7 +13,6 @@ COMMENT=		Front-end for DAAP client
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 USE_TOOLS+=		pkg-config
 
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/tunesbrowser

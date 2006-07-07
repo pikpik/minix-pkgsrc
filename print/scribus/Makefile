@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/05/28 16:13:11 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2006/06/11 14:30:53 joerg Exp $
 
 DISTNAME=	scribus-1.2.4.1
 PKGREVISION=	1
@@ -15,7 +15,7 @@ USE_LANGUAGES+=		c++
 PTHREAD_OPTS+=		require
 
 USE_LIBTOOL=		YES
-SHLIBTOOL_OVERRIDE+=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=        --with-qt-dir=${QTDIR:Q} \

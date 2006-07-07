@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/05/14 15:36:34 seb Exp $
+# $NetBSD: Makefile,v 1.34 2006/06/12 16:28:12 wiz Exp $
 
 DISTNAME=	mjpegtools-1.8.0
 PKGREVISION=	5
@@ -19,7 +19,7 @@ USE_TOOLS+=		bash:run pkg-config
 USE_LANGUAGES=		c c++
 
 USE_LIBTOOL=		yes
-SHLIBTOOL_OVERRIDE+=	libtool
+SHLIBTOOL_OVERRIDE=	# empty
 PKGCONFIG_OVERRIDE=	mjpegtools.pc.in
 INFO_FILES=		# PLIST
 

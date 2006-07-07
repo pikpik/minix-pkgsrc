@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/04/01 19:57:57 reed Exp $
+# $NetBSD: Makefile,v 1.18 2006/05/31 18:13:54 drochner Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -7,7 +7,6 @@ COMMENT=		PDF rendering library
 
 USE_TOOLS+=		gmake
 
-LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 #PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-cairo.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-splash.pc.in
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler.pc.in

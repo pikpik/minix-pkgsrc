@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2006/06/05 18:19:55 minskim Exp $
+# $NetBSD: Makefile,v 1.66 2006/06/06 16:42:02 jlam Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 PKGREVISION=		2
@@ -8,7 +8,6 @@ COMMENT=		HTML-embedded scripting language
 CONFLICTS+=		ap-php-4.0.3pl1
 
 # PHP uses libtool inconsistently for CGI/CLI build; don't sanify for now
-# LIBTOOL_OVERRIDE=	libtool
 LIBTOOL_OVERRIDE=	# empty
 USE_TOOLS+=		gmake lex
 
