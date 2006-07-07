@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2006/06/15 09:45:05 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2006/07/04 06:00:35 adam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SDL_BUILDLINK3_MK:=	${SDL_BUILDLINK3_MK}+
@@ -25,6 +25,7 @@ PTHREAD_OPTS+=	require
 .include "../../graphics/glu/buildlink3.mk"
 .endif
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
 .if !defined(PKG_BUILD_OPTIONS.SDL)
