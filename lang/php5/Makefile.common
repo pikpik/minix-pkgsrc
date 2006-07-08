@@ -1,8 +1,8 @@
-# $NetBSD: Makefile.common,v 1.16 2006/05/06 22:42:44 jdolecek Exp $
+# $NetBSD: Makefile.common,v 1.17 2006/05/07 13:48:02 tron Exp $
 
 .if !defined(DISTNAME)
 DISTNAME=		php-${PHP_BASE_VERS}
-DIST_SUBDIR=		${DISTNAME}
+DIST_SUBDIR=		${DISTNAME}nb1
 .endif
 CATEGORIES+=		www php5
 
