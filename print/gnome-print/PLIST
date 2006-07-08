@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2004/09/22 08:09:51 jlam Exp $
+@comment $NetBSD: PLIST,v 1.7 2006/04/17 07:07:32 jlam Exp $
 bin/gnome-font-install
 etc/gnome/fonts/gnome-print-ghostscript.fontmap
 etc/gnome/fonts/gnome-print-x11.fontmap
@@ -116,6 +116,7 @@ share/locale/zh_TW/LC_MESSAGES/gnome-print.mo
 @dirrm share/gnome-print
 @dirrm share/fonts/afms/adobe
 @dirrm share/fonts/afms
+@unexec ${RMDIR} %D/share/fonts 2> /dev/null || ${TRUE}
 @dirrm include/gnome-1.0/libgnomeprint
 @dirrm etc/gnome/fonts
 @dirrm etc/gnome
