@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.11 2006/04/12 10:27:23 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.12 2006/04/17 13:46:08 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 EVOLUTION_BUILDLINK3_MK:=	${EVOLUTION_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	evolution
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nevolution}
 BUILDLINK_PACKAGES+=	evolution
+BUILDLINK_ORDER+=	evolution
 
 .if !empty(EVOLUTION_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.evolution+=	evolution>=2.6.0

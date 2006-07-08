@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/04/18 17:17:50 reed Exp $
 
 BUILDLINK_DEPMETHOD.compositeproto?=	build
 
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	compositeproto
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ncompositeproto}
 BUILDLINK_PACKAGES+=	compositeproto
+BUILDLINK_ORDER+=	compositeproto
 
 .if !empty(COMPOSITEPROTO_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.compositeproto+=	compositeproto>=0.2.1

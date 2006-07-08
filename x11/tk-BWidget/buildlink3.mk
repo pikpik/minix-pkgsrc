@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:23:04 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:44 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	tk-BWidget
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ntk-BWidget}
 BUILDLINK_PACKAGES+=	tk-BWidget
+BUILDLINK_ORDER+=	tk-BWidget
 
 .if !empty(TK_BWIDGET_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.tk-BWidget+=	tk-BWidget>=1.7.0

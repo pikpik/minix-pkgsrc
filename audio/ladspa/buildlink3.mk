@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:00 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/05/01 18:02:11 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LADSPA_BUILDLINK3_MK:=	${LADSPA_BUILDLINK3_MK}+
@@ -9,9 +9,11 @@ BUILDLINK_DEPENDS+=	ladspa
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nladspa}
 BUILDLINK_PACKAGES+=	ladspa
+BUILDLINK_ORDER+=	ladspa
 
 .if !empty(LADSPA_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=			ladspa
+BUILDLINK_ORDER+=			ladspa
 BUILDLINK_API_DEPENDS.ladspa+=		ladspa>=1.12
 BUILDLINK_ABI_DEPENDS.ladspa?=		ladspa>=1.12nb1
 BUILDLINK_PKGSRCDIR.ladspa?=		../../audio/ladspa

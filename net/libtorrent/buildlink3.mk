@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:33 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:30 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBTORRENT_BUILDLINK3_MK:=	${LIBTORRENT_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libtorrent
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibtorrent}
 BUILDLINK_PACKAGES+=	libtorrent
+BUILDLINK_ORDER+=	libtorrent
 
 .if !empty(LIBTORRENT_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libtorrent+=		libtorrent>=0.8.0

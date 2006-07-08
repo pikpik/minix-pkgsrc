@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:18 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/12 10:27:23 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBMILTER_BUILDLINK3_MK:=	${LIBMILTER_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libmilter
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibmilter}
 BUILDLINK_PACKAGES+=	libmilter
+BUILDLINK_ORDER+=	libmilter
 
 .if !empty(LIBMILTER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libmilter+=	libmilter>=8.12.9nb1

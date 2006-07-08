@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:26 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:28 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBTHEORA_BUILDLINK3_MK:=	${LIBTHEORA_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libtheora
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibtheora}
 BUILDLINK_PACKAGES+=	libtheora
+BUILDLINK_ORDER+=	libtheora
 
 .if !empty(LIBTHEORA_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libtheora+=	libtheora>=1.0alpha3

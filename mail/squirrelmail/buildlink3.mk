@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/04/06 06:22:19 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/12 10:27:23 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SQUIRRELMAIL_BUILDLINK3_MK:=	${SQUIRRELMAIL_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	squirrelmail
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nsquirrelmail}
 BUILDLINK_PACKAGES+=	squirrelmail
+BUILDLINK_ORDER+=	squirrelmail
 
 .if !empty(SQUIRRELMAIL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.squirrelmail+=	{ja-,}squirrelmail>=1.4.6

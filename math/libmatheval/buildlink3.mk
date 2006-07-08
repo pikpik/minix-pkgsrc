@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:22:20 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:26 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBMATHEVAL_BUILDLINK3_MK:=	${LIBMATHEVAL_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libmatheval
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibmatheval}
 BUILDLINK_PACKAGES+=	libmatheval
+BUILDLINK_ORDER+=	libmatheval
 
 .if !empty(LIBMATHEVAL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libmatheval+=	libmatheval>=1.1.0

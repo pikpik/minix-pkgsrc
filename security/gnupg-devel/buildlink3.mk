@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/06/23 12:28:55 shannonjr Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/06/26 12:27:09 shannonjr Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNUPG_DEVEL_BUILDLINK3_MK:=	${GNUPG_DEVEL_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	gnupg-devel
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ngnupg-devel}
 BUILDLINK_PACKAGES+=	gnupg-devel
+BUILDLINK_ORDER+=	gnupg-devel
 
 .if ${GNUPG_DEVEL_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.gnupg-devel+=	gnupg-devel>=1.9.20nb1

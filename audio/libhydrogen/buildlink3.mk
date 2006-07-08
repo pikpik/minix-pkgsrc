@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:35 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:01 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBHYDROGEN_BUILDLINK3_MK:=	${LIBHYDROGEN_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libhydrogen
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibhydrogen}
 BUILDLINK_PACKAGES+=	libhydrogen
+BUILDLINK_ORDER+=	libhydrogen
 
 .if !empty(LIBHYDROGEN_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libhydrogen+=		libhydrogen>=0.8.0

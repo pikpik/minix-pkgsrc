@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:32 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:29 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBARES_BUILDLINK3_MK:=	${LIBARES_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libares
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibares}
 BUILDLINK_PACKAGES+=	libares
+BUILDLINK_ORDER+=	libares
 
 .include "../../mk/bsd.prefs.mk"
 

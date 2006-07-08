@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:04 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:18 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBUNGIF_BUILDLINK3_MK:=	${LIBUNGIF_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libungif
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibungif}
 BUILDLINK_PACKAGES+=	libungif
+BUILDLINK_ORDER+=	libungif
 
 .if !empty(LIBUNGIF_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libungif+=	libungif>=4.1.0

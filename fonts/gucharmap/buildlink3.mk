@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/04/12 10:27:15 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/04/17 13:46:08 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GUCHARMAP_BUILDLINK3_MK:=	${GUCHARMAP_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	gucharmap
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ngucharmap}
 BUILDLINK_PACKAGES+=	gucharmap
+BUILDLINK_ORDER+=	gucharmap
 
 .if !empty(GUCHARMAP_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gucharmap+=	gucharmap>=1.4.0

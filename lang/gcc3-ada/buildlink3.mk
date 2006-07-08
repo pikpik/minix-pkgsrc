@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:11 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:20 rillig Exp $
 
 BUILDLINK_DEPTH:=       ${BUILDLINK_DEPTH}+
 GCC3_ADA_BUILDLINK3_MK:=  ${GCC3_ADA_BUILDLINK3_MK}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=     gcc3-ada
 
 BUILDLINK_PACKAGES:=    ${BUILDLINK_PACKAGES:Ngcc3-ada}
 BUILDLINK_PACKAGES+=    gcc3-ada
+BUILDLINK_ORDER+=    gcc3-ada
 
 .if !empty(GCC3_ADA_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gcc3-ada+=      gcc3-ada>=3.3.3

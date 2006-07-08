@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:50 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:09 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBFOUNDATION_BUILDLINK3_MK:=	${LIBFOUNDATION_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libFoundation
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:NlibFoundation}
 BUILDLINK_PACKAGES+=	libFoundation
+BUILDLINK_ORDER+=	libFoundation
 
 .if !empty(LIBFOUNDATION_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libFoundation+=	libFoundation>=1.0.72.107nb1

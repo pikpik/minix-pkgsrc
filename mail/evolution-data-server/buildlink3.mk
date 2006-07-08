@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.16 2006/04/12 10:27:23 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.17 2006/05/12 17:00:39 wiz Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 EVOLUTION_DATA_SERVER_BUILDLINK3_MK:=	${EVOLUTION_DATA_SERVER_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	evolution-data-server
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nevolution-data-server}
 BUILDLINK_PACKAGES+=	evolution-data-server
+BUILDLINK_ORDER+=	evolution-data-server
 
 .if !empty(EVOLUTION_DATA_SERVER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.evolution-data-server+=	evolution-data-server>=1.4.2.1nb1

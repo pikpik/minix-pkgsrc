@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:55 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:13 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 PY_CURSESPANEL_BUILDLINK3_MK:=	${PY_CURSESPANEL_BUILDLINK3_MK}+
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	pycursespanel
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npycursespanel}
 BUILDLINK_PACKAGES+=	pycursespanel
+BUILDLINK_ORDER+=	pycursespanel
 
 .if !empty(PY_CURSESPANEL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.pycursespanel+=	${PYPKGPREFIX}-cursespanel-[0-9]*

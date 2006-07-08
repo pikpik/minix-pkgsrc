@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:56 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:14 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SYSEXITS_BUILDLINK3_MK:=	${SYSEXITS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	sysexits
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nsysexits}
 BUILDLINK_PACKAGES+=	sysexits
+BUILDLINK_ORDER+=	sysexits
 
 .if !empty(SYSEXITS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.sysexits+=	sysexits>=1.1

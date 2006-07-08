@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:43 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/17 13:46:15 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 QT2_DESIGNER_BUILDLINK3_MK:=	${QT2_DESIGNER_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	qt2-designer
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nqt2-designer}
 BUILDLINK_PACKAGES+=	qt2-designer
+BUILDLINK_ORDER+=	qt2-designer
 
 .if !empty(QT2_DESIGNER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.qt2-designer+=	qt2-designer>=2.3.1nb2

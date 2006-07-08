@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:37 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:32 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 PYREPORTLAB_BUILDLINK3_MK:=	${PYREPORTLAB_BUILDLINK3_MK}+
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	pyreportlab
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npyreportlab}
 BUILDLINK_PACKAGES+=	pyreportlab
+BUILDLINK_ORDER+=	pyreportlab
 
 .if !empty(PYREPORTLAB_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.pyreportlab+=		${PYPKGPREFIX}-reportlab-[0-9]*

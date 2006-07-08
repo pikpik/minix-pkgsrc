@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:56 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:14 rillig Exp $
 #
 # This file was created automatically using createbuildlink-3.5.
 
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	vanessa_logger
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nvanessa_logger}
 BUILDLINK_PACKAGES+=	vanessa_logger
+BUILDLINK_ORDER+=	vanessa_logger
 
 .if !empty(VANESSA_LOGGER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.vanessa_logger+=	vanessa_logger>=0.0.7

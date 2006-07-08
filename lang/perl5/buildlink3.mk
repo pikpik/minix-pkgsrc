@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.32 2006/06/09 08:38:53 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.33 2006/06/15 22:13:59 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 PERL5_BUILDLINK3_MK:=	${PERL5_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	perl
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nperl}
 BUILDLINK_PACKAGES+=	perl
+BUILDLINK_ORDER+=	perl
 
 .if !empty(PERL5_BUILDLINK3_MK:M+)
 .include "../../mk/bsd.prefs.mk"

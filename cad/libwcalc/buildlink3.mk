@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:38 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:03 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	libwcalc
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibwcalc}
 BUILDLINK_PACKAGES+=	libwcalc
+BUILDLINK_ORDER+=	libwcalc
 
 .if !empty(LIBWCALC_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libwcalc+=	libwcalc-1.0*

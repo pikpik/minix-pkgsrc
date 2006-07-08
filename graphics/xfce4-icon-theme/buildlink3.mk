@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:06 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:19 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_ICON_THEME_BUILDLINK3_MK:=	${XFCE4_ICON_THEME_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	xfce4-icon-theme
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxfce4-icon-theme}
 BUILDLINK_PACKAGES+=	xfce4-icon-theme
+BUILDLINK_ORDER+=	xfce4-icon-theme
 
 .if !empty(XFCE4_ICON_THEME_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.xfce4-icon-theme+=	xfce4-icon-theme>=4.2.3

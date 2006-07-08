@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:42 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:05 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 POSTGRESQL81_CLIENT_BUILDLINK3_MK:=	${POSTGRESQL81_CLIENT_BUILDLINK3_MK}+
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	postgresql81-client
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npostgresql81-client}
 BUILDLINK_PACKAGES+=	postgresql81-client
+BUILDLINK_ORDER+=	postgresql81-client
 
 .if !empty(POSTGRESQL81_CLIENT_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.postgresql81-client+=		postgresql81-client>=8.1.0

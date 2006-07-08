@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 06:22:44 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/17 13:46:08 wiz Exp $
 # XXX
 # XXX This file was created automatically using createbuildlink-3.10.
 # XXX After this file has been verified as correct, the comment lines
@@ -19,6 +19,7 @@ BUILDLINK_DEPENDS+=	seahorse
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nseahorse}
 BUILDLINK_PACKAGES+=	seahorse
+BUILDLINK_ORDER+=	seahorse
 
 .if !empty(SEAHORSE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.seahorse+=	seahorse>=0.8.1

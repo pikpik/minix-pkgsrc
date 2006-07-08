@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/04/18 17:14:45 reed Exp $
 
 BUILDLINK_DEPMETHOD.randrproto?=	build
 
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	randrproto
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nrandrproto}
 BUILDLINK_PACKAGES+=	randrproto
+BUILDLINK_ORDER+=	randrproto
 
 .if !empty(RANDRPROTO_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.randrproto+=	randrproto>=1.1.1

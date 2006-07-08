@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:22:22 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/12 10:27:26 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 QALCULATE_BUILDLINK3_MK:=	${QALCULATE_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	qalculate
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nqalculate}
 BUILDLINK_PACKAGES+=	qalculate
+BUILDLINK_ORDER+=	qalculate
 
 .if !empty(QALCULATE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.qalculate+=	qalculate>=0.8.2

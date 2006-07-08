@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/04/06 06:21:36 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/04/12 10:27:02 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 MUSICBRAINZ_BUILDLINK3_MK:=	${MUSICBRAINZ_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	musicbrainz
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nmusicbrainz}
 BUILDLINK_PACKAGES+=	musicbrainz
+BUILDLINK_ORDER+=	musicbrainz
 
 .if !empty(MUSICBRAINZ_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.musicbrainz+=		musicbrainz>=2.0.2

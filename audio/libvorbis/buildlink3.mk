@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:21:36 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:02 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBVORBIS_BUILDLINK3_MK:=	${LIBVORBIS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libvorbis
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibvorbis}
 BUILDLINK_PACKAGES+=	libvorbis
+BUILDLINK_ORDER+=	libvorbis
 
 .if !empty(LIBVORBIS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libvorbis+=	libvorbis>=1.0.1

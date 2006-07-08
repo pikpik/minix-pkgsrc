@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:42 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:33 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBASSUAN_BUILDLINK3_MK:=	${LIBASSUAN_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libassuan
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibassuan}
 BUILDLINK_PACKAGES+=	libassuan
+BUILDLINK_ORDER+=	libassuan
 
 .if !empty(LIBASSUAN_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libassuan+=	libassuan>=0.6.7

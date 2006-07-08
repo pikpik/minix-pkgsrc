@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/06 06:22:45 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:34 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 DBUS_GLIB_BUILDLINK3_MK:=	${DBUS_GLIB_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	dbus-glib
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ndbus-glib}
 BUILDLINK_PACKAGES+=	dbus-glib
+BUILDLINK_ORDER+=	dbus-glib
 
 .if !empty(DBUS_GLIB_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.dbus-glib+=	dbus-glib>=0.61

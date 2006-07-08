@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:53 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:11 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBRFUNCS_BUILDLINK3_MK:=	${LIBRFUNCS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	librfuncs
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibrfuncs}
 BUILDLINK_PACKAGES+=	librfuncs
+BUILDLINK_ORDER+=	librfuncs
 
 .if !empty(LIBRFUNCS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.librfuncs+=	librfuncs>=1.0.4

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:39 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:03 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 OPENOBEX_BUILDLINK3_MK:=	${OPENOBEX_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	openobex
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nopenobex}
 BUILDLINK_PACKAGES+=	openobex
+BUILDLINK_ORDER+=	openobex
 
 .if !empty(OPENOBEX_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.openobex+=	openobex>=1.0.1

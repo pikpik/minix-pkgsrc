@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/04/12 10:27:19 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/04/17 13:45:58 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PLOTUTILS_BUILDLINK3_MK:=	${PLOTUTILS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	plotutils
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nplotutils}
 BUILDLINK_PACKAGES+=	plotutils
+BUILDLINK_ORDER+=	plotutils
 
 .if !empty(PLOTUTILS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.plotutils+=	plotutils>=2.4.1nb2

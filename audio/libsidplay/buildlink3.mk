@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:36 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:01 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSIDPLAY_BUILDLINK3_MK:=	${LIBSIDPLAY_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libsidplay
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibsidplay}
 BUILDLINK_PACKAGES+=	libsidplay
+BUILDLINK_ORDER+=	libsidplay
 
 .if !empty(LIBSIDPLAY_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libsidplay+=		libsidplay>=1.36.38

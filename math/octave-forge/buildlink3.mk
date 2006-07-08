@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:21 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:26 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 OCTAVE_FORGE_BUILDLINK3_MK:=	${OCTAVE_FORGE_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	octave-forge
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Noctave-forge}
 BUILDLINK_PACKAGES+=	octave-forge
+BUILDLINK_ORDER+=	octave-forge
 
 .if !empty(OCTAVE_FORGE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.octave-forge+=	octave-forge>=2005.06.13

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/04/12 10:27:09 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/04/17 13:46:10 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBBONOBOUI_BUILDLINK3_MK:=	${LIBBONOBOUI_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libbonoboui
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibbonoboui}
 BUILDLINK_PACKAGES+=	libbonoboui
+BUILDLINK_ORDER+=	libbonoboui
 
 .if !empty(LIBBONOBOUI_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libbonoboui+=		libbonoboui>=2.8.0

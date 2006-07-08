@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/04/17 13:46:15 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/05/23 11:17:33 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 PY_CAIRO_BUILDLINK3_MK:=	${PY_CAIRO_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	pycairo
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npycairo}
 BUILDLINK_PACKAGES+=	pycairo
+BUILDLINK_ORDER+=	pycairo
 
 .if !empty(PY_CAIRO_BUILDLINK3_MK:M+)
 .  include "../../lang/python/pyversion.mk"

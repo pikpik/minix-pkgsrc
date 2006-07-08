@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:46 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:36 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 VCDIMAGER_BUILDLINK3_MK:=	${VCDIMAGER_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	vcdimager
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nvcdimager}
 BUILDLINK_PACKAGES+=	vcdimager
+BUILDLINK_ORDER+=	vcdimager
 
 .if !empty(VCDIMAGER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.vcdimager+=	vcdimager>=0.7.20

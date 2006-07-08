@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:23:05 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:46 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XSCREENSAVER_BUILDLINK3_MK:=	${XSCREENSAVER_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	xscreensaver
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxscreensaver}
 BUILDLINK_PACKAGES+=	xscreensaver
+BUILDLINK_ORDER+=	xscreensaver
 
 .if !empty(XSCREENSAVER_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.xscreensaver+=	xscreensaver>=4.14

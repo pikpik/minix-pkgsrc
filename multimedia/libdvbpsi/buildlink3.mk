@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:26 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:28 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBDVBPSI_BUILDLINK3_MK:=	${LIBDVBPSI_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libdvbpsi
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibdvbpsi}
 BUILDLINK_PACKAGES+=	libdvbpsi
+BUILDLINK_ORDER+=	libdvbpsi
 
 .if !empty(LIBDVBPSI_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libdvbpsi+=	libdvbpsi>=0.1.3

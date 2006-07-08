@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:37 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:32 rillig Exp $
 
 BUILDLINK_DEPTH:=				${BUILDLINK_DEPTH}+
 PYRLRENDERPM_BUILDLINK3_MK:=	${PYRLRENDERPM_BUILDLINK3_MK}+
@@ -11,6 +11,7 @@ BUILDLINK_DEPENDS+=	pyrlrenderpm
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npyrlrenderpm}
 BUILDLINK_PACKAGES+=	pyrlrenderpm
+BUILDLINK_ORDER+=	pyrlrenderpm
 
 .if !empty(PYRLRENDERPM_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.pyrlrenderpm+=	${PYPKGPREFIX}-reportlab-renderPM-[0-9]*

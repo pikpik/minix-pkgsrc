@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:56 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:13 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	silc-toolkit
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nsilc-toolkit}
 BUILDLINK_PACKAGES+=	silc-toolkit
+BUILDLINK_ORDER+=	silc-toolkit
 
 .if !empty(SILC_TOOLKIT_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.silc-toolkit+=	silc-toolkit>=0.9.12

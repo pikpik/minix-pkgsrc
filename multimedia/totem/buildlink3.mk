@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/04/06 18:25:39 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/04/17 13:46:10 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 TOTEM_BUILDLINK3_MK:=	${TOTEM_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	totem
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ntotem}
 BUILDLINK_PACKAGES+=	totem
+BUILDLINK_ORDER+=	totem
 
 .if !empty(TOTEM_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.totem+=	{totem,totem-xine}>=1.4.0

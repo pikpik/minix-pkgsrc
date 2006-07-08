@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/04/06 06:21:35 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/04/12 10:27:01 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSHOUT_BUILDLINK3_MK:=	${LIBSHOUT_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libshout
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibshout}
 BUILDLINK_PACKAGES+=	libshout
+BUILDLINK_ORDER+=	libshout
 
 .if !empty(LIBSHOUT_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libshout+=	libshout>=2.0

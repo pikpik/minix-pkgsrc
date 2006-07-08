@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/04/12 10:27:37 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/04/17 13:46:09 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GTKSPELL_BUILDLINK3_MK:=	${GTKSPELL_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	gtkspell
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ngtkspell}
 BUILDLINK_PACKAGES+=	gtkspell
+BUILDLINK_ORDER+=	gtkspell
 
 .if !empty(GTKSPELL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gtkspell+=	gtkspell>=2.0.2nb6

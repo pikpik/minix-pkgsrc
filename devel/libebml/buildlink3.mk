@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/04/06 06:21:50 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/04/12 10:27:09 rillig Exp $
 #
 # This Makefile fragment is included by packages that use libebml.
 #
@@ -14,6 +14,7 @@ BUILDLINK_DEPENDS+=	libebml
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibebml}
 BUILDLINK_PACKAGES+=	libebml
+BUILDLINK_ORDER+=	libebml
 
 .if !empty(LIBEBML_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libebml+=	libebml>=0.7.6

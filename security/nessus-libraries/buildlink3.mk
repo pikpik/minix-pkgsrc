@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/04/06 06:22:43 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/04/12 10:27:34 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 NESSUS_LIBRARIES_BUILDLINK3_MK:=	${NESSUS_LIBRARIES_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	nessus-libraries
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nnessus-libraries}
 BUILDLINK_PACKAGES+=	nessus-libraries
+BUILDLINK_ORDER+=	nessus-libraries
 
 .if !empty(NESSUS_LIBRARIES_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.nessus-libraries+=	nessus-libraries>=2.2.3

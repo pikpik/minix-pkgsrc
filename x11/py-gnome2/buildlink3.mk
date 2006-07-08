@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.16 2006/04/17 13:46:12 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.17 2006/06/09 14:29:56 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY_GNOME2_BUILDLINK3_MK:=	${PY_GNOME2_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	pygnome2
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npygnome2}
 BUILDLINK_PACKAGES+=	pygnome2
+BUILDLINK_ORDER+=	pygnome2
 
 .if !empty(PY_GNOME2_BUILDLINK3_MK:M+)
 .include "../../lang/python/pyversion.mk"

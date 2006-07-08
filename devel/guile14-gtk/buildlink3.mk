@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:21:49 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:09 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GUILE_GTK_BUILDLINK3_MK:=	${GUILE_GTK_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	guile-gtk
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nguile-gtk}
 BUILDLINK_PACKAGES+=	guile-gtk
+BUILDLINK_ORDER+=	guile-gtk
 
 .if !empty(GUILE_GTK_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.guile-gtk+=	guile-gtk>=0.19nb4

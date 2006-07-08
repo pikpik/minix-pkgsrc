@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:14 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:22 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SPIDERMONKEY_BUILDLINK3_MK:=	${SPIDERMONKEY_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	spidermonkey
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nspidermonkey}
 BUILDLINK_PACKAGES+=	spidermonkey
+BUILDLINK_ORDER+=	spidermonkey
 
 .if !empty(SPIDERMONKEY_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.spidermonkey+=	spidermonkey>=1.5

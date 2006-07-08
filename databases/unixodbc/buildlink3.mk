@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:43 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:05 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 UNIXODBC_BUILDLINK3_MK:=	${UNIXODBC_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	unixodbc
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nunixodbc}
 BUILDLINK_PACKAGES+=	unixodbc
+BUILDLINK_ORDER+=	unixodbc
 
 .if !empty(UNIXODBC_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.unixodbc+=	unixodbc>=2.0.11nb1

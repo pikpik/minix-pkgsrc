@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/04/12 10:27:36 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/04/17 13:46:13 wiz Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 XFCE4_NETLOAD_PLUGIN_BUILDLINK3_MK:=	${XFCE4_NETLOAD_PLUGIN_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	xfce4-netload-plugin
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nxfce4-netload-plugin}
 BUILDLINK_PACKAGES+=	xfce4-netload-plugin
+BUILDLINK_ORDER+=	xfce4-netload-plugin
 
 .if !empty(XFCE4_NETLOAD_PLUGIN_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.xfce4-netload-plugin+=	xfce4-netload-plugin>=0.3.3

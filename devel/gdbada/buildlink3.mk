@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:21:48 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/07/02 09:58:46 rillig Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GDBADA_BUILDLINK3_MK:=	${GDBADA_BUILDLINK3_MK}+
@@ -11,6 +11,7 @@ BUILDLINK_PACKAGES:=		${BUILDLINK_PACKAGES:Ngdbada} gdbada
 
 .if !empty(GDBADA_BUILDLINK3_MK:M+)
 BUILDLINK_PACKAGES+=		gdbada
+BUILDLINK_ORDER+=		gdbada
 BUILDLINK_API_DEPENDS.gdbada+=	gdbada>=5.3
 BUILDLINK_ABI_DEPENDS.gdbada+=	gdbada>=6.3nb1
 BUILDLINK_PKGSRCDIR.gdbada?=	../../devel/gdbada

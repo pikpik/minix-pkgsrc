@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:49 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:36 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	chasen-base
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nchasen-base}
 BUILDLINK_PACKAGES+=	chasen-base
+BUILDLINK_ORDER+=	chasen-base
 
 .if !empty(CHASEN_BASE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.chasen-base+=	chasen-base>=2.3.3

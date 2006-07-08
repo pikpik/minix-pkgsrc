@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/12 10:27:01 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/06/18 07:55:42 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	libdca
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibdca}
 BUILDLINK_PACKAGES+=	libdca
+BUILDLINK_ORDER+=	libdca
 
 .if !empty(LIBDTS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libdca+=	libdca>=0.0.2

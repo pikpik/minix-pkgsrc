@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:31 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/17 13:46:01 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNOME_PRINT_BUILDLINK3_MK:=	${GNOME_PRINT_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	gnome-print
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ngnome-print}
 BUILDLINK_PACKAGES+=	gnome-print
+BUILDLINK_ORDER+=	gnome-print
 
 .if !empty(GNOME_PRINT_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gnome-print+=	gnome-print>=0.36nb4

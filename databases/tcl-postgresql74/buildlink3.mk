@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:05 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/06/16 09:12:35 rillig Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 TCL_POSTGRESQL74_BUILDLINK3_MK:=	${TCL_POSTGRESQL74_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	tcl-postgresql74
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ntcl-postgresql74}
 BUILDLINK_PACKAGES+=	tcl-postgresql74
+BUILDLINK_ORDER+=	tcl-postgresql74
 
 .if !empty(TCL_POSTGRESQL74_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.tcl-postgresql74+=	tcl-postgresql74>=7.3.6

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:22:01 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:17 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 COMPFACE_BUILDLINK3_MK:=	${COMPFACE_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	compface
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ncompface}
 BUILDLINK_PACKAGES+=	compface
+BUILDLINK_ORDER+=	compface
 
 .if !empty(COMPFACE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.compface+=	compface>=1.4

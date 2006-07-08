@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/04/06 06:23:01 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/04/12 10:27:41 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GTKGLAREA_BUILDLINK3_MK:=	${GTKGLAREA_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	gtkglarea
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ngtkglarea}
 BUILDLINK_PACKAGES+=	gtkglarea
+BUILDLINK_ORDER+=	gtkglarea
 
 .if !empty(GTKGLAREA_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gtkglarea+=	gtkglarea>=1.2.2nb3

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:39 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:03 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PILOT_LINK_LIBS_BUILDLINK3_MK:=	${PILOT_LINK_LIBS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	pilot-link-libs
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Npilot-link-libs}
 BUILDLINK_PACKAGES+=	pilot-link-libs
+BUILDLINK_ORDER+=	pilot-link-libs
 
 .if !empty(PILOT_LINK_LIBS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.pilot-link-libs+=	pilot-link-libs>=0.11.7nb1

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/04/06 06:21:56 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/04/12 10:27:14 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 TCL_TCLCL_BUILDLINK3_MK:=	${TCL_TCLCL_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	tcl-tclcl
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ntcl-tclcl}
 BUILDLINK_PACKAGES+=	tcl-tclcl
+BUILDLINK_ORDER+=	tcl-tclcl
 
 .if !empty(TCL_TCLCL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.tcl-tclcl+=	tcl-tclcl>=1.15

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:45 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:34 rillig Exp $
 #
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
@@ -10,6 +10,7 @@ BUILDLINK_DEPENDS+=	file
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nfile}
 BUILDLINK_PACKAGES+=	file
+BUILDLINK_ORDER+=	file
 
 .if !empty(FILE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.file+=	file>=4.09

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/04/06 06:22:26 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/04/12 10:27:28 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBDVDCSS_BUILDLINK3_MK:=	${LIBDVDCSS_BUILDLINK3_MK}+
@@ -9,6 +9,7 @@ BUILDLINK_DEPENDS+=	libdvdcss
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibdvdcss}
 BUILDLINK_PACKAGES+=	libdvdcss
+BUILDLINK_ORDER+=	libdvdcss
 
 .if !empty(LIBDVDCSS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libdvdcss+=	libdvdcss>=1.2.4
