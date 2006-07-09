@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/06/12 16:28:12 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/06/17 21:56:25 rillig Exp $
 #
 
 DISTNAME=	smpeg-0.4.4
@@ -35,4 +35,5 @@ CONFIGURE_ARGS+=	--enable-mmx
 
 .include "options.mk"
 .include "../../devel/SDL/buildlink3.mk"
+.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
