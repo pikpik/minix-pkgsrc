@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/02/17 07:55:57 martti Exp $
+# $NetBSD: Makefile,v 1.4 2006/07/07 22:10:07 jlam Exp $
 
 DISTNAME=	xenConsole-r0.15b1-1
 PKGNAME=	xenconsole-0.15b1.1
@@ -10,7 +10,7 @@ MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://ucck.sourceforge.net/xenConsole/
 COMMENT=	Console monitor for Xen
 
-WRKSRC=		${WRKDIR:Q}/xenConsole
+WRKSRC=		${WRKDIR}/xenConsole
 
 DEPENDS+=	p5-Config-IniFiles>=2.38:../../devel/p5-Config-IniFiles
 DEPENDS+=	p5-Curses-UI>=0.95:../../devel/p5-Curses-UI
@@ -34,7 +34,7 @@ SUBST_SED.xenconsole+=		-e s,@LOCALBASE@,${LOCALBASE:Q},g
 
 REPLACE_PERL+=		xcon.pl xsnmp.pm
 
-EGDIR=			${PREFIX:Q}/share/examples/xenconsole
+EGDIR=			${PREFIX}/share/examples/xenconsole
 CONF_FILES=		${EGDIR:Q}/xcon.ini ${PKG_SYSCONFDIR:Q}/xcon.ini
 
 do-build:
