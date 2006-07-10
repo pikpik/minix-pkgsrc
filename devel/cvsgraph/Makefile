@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/04/17 13:46:20 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/04/22 09:22:07 rillig Exp $
 #
 
 DISTNAME=	cvsgraph-1.6.0
@@ -10,7 +10,7 @@ MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://www.akhphd.au.dk/~bertho/cvsgraph/
 COMMENT=	Graphically represents CVS/RCS branches and file revisions
 
-USE_TOOLS+=		lex
+USE_TOOLS+=		bison lex
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
