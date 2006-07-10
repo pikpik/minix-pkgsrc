@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/06/06 12:33:52 ghen Exp $
+# $NetBSD: Makefile,v 1.19 2006/06/06 17:32:20 ghen Exp $
 #
 
 DISTNAME=		gld-1.6
@@ -12,6 +12,8 @@ HOMEPAGE=		http://www.gasmi.net/
 COMMENT=		Standalone greylisting server for Postfix
 
 GNU_CONFIGURE=		yes
+
+LDFLAGS.SunOS+=		-lsocket -lnsl -lresolv
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 CONF_FILES_PERMS=	${EGDIR}/gld.conf ${PKG_SYSCONFDIR}/gld.conf	\
