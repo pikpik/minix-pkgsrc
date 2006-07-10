@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/23 00:12:37 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/05/18 16:11:15 cube Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 SVR4_PKGNAME=		mysqs
@@ -33,6 +33,13 @@ MESSAGE_SUBST+=		MYSQL_DATADIR=${MYSQL_DATADIR} \
 			MYSQL_USER=${MYSQL_USER} MYSQL_GROUP=${MYSQL_GROUP}
 BUILD_DEFS+=		MYSQL_DATADIR
 BUILD_DIRS=		${WRKSRC} ${WRKSRC}/man
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+CFLAGS+=		-D_POSIX_C_SOURCE=199506L -D__EXTENSIONS__
+CXXFLAGS+=		-D_POSIX_C_SOURCE=199506L -D__EXTENSIONS__
+.endif
 
 .include "../../databases/mysql5-client/buildlink3.mk"
 BUILDLINK_DEPMETHOD.readline=build
