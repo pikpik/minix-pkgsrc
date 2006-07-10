@@ -1,4 +1,4 @@
-# $NetBSD: apache.mk,v 1.11 2006/05/09 10:05:04 tron Exp $
+# $NetBSD: apache.mk,v 1.12 2006/06/02 18:27:57 joerg Exp $
 #
 # This Makefile fragment handles Apache dependencies and make variables,
 # and is meant to be included by packages that require Apache either at
@@ -36,7 +36,7 @@ APACHE_MK=	# defined
 
 # Add a runtime dependency on the apache server.
 # This may or may not create an actual dependency depending on
-# what the apache buildlink[23].mk file does.
+# what the apache buildlink3.mk file does.
 #
 .if defined(_APACHE_PKGSRCDIR)
 .  include "${_APACHE_BL_SRCDIR}/buildlink3.mk"
