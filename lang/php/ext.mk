@@ -1,4 +1,4 @@
-# $NetBSD: ext.mk,v 1.14 2006/06/01 17:44:21 jlam Exp $
+# $NetBSD: ext.mk,v 1.15 2006/06/02 18:27:56 joerg Exp $
 #
 # PHP extension package framework, for both PECL and bundled PHP extensions.
 #
@@ -90,7 +90,7 @@ do-patch:
 	cd ${WRKSRC};			\
 	for p in `${EGREP} -l '^\+\+\+ ext/${MODNAME}/' ${PATCHDIR}/patch-*`;do\
 		${SED} -e 's,^+++ ext/${MODNAME}/,+++ ,' $$p | ${PATCH} ${PATCH_ARGS}; \
-	done
+	done || ${TRUE}
 .endif
 
 .include "${PHPPKGSRCDIR}/buildlink3.mk"
