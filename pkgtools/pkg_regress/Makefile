@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2005/11/19 20:41:12 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/09 02:42:43 rillig Exp $
 
-DISTNAME=	pkg_regress-0.1
+DISTNAME=	pkg_regress-0.2
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
