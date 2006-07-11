@@ -1,4 +1,4 @@
-/* $NetBSD: info.h,v 1.9 2005/11/05 13:20:09 wiz Exp $ */
+/* $NetBSD: info.h,v 1.23 2006/07/10 21:42:18 rillig Exp $ */
 
 /* from FreeBSD Id: info.h,v 1.10 1997/02/22 16:09:40 peter Exp */
 
@@ -61,7 +61,7 @@ enum which {
 };
 
 extern int Flags;
-enum which Which;
+extern enum which Which;
 extern Boolean File2Pkg;
 extern Boolean Quiet;
 extern char *InfoPrefix;
