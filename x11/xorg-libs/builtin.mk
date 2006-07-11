@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.5 2006/04/06 06:23:05 reed Exp $
+# $NetBSD: builtin.mk,v 1.6 2006/04/18 19:48:30 reed Exp $
 
 BUILTIN_PKG:=	xorg-libs
 
@@ -69,14 +69,5 @@ CHECK_BUILTIN.xorg-libs?=	no
 BUILDLINK_PREFIX.xorg-libs=	${X11BASE}
 BUILDLINK_FILES.xorg-libs+=	lib/pkgconfig/xorg-libs.pc
 .  endif
-
-# XXX
-# XXX xorg-libs provides some X11 pieces that pkgsrc should currently
-# XXX treat as "built-in" so that extra dependencies on the pkgsrc
-# XXX versions aren't pulled in.
-# XXX
-USE_BUILTIN.Xfixes=	yes
-USE_BUILTIN.Xcomposite=	yes
-USE_BUILTIN.renderproto=	yes
 
 .endif	# CHECK_BUILTIN.xorg-libs

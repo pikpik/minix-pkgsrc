@@ -1,4 +1,10 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/07/08 22:39:48 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/07/08 23:11:16 jlam Exp $
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "xorg"
+.include "../../mk/x11.buildlink3.mk"
+.else
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 RENDERPROTO_BUILDLINK3_MK:=	${RENDERPROTO_BUILDLINK3_MK}+
@@ -18,3 +24,5 @@ BUILDLINK_DEPMETHOD.renderproto?=	build
 .endif	# RENDERPROTO_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
+
+.endif
