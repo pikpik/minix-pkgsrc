@@ -1,4 +1,4 @@
-#	$NetBSD: IRIX.sys.mk,v 1.3 2004/06/05 20:53:12 jschauma Exp $
+#	$NetBSD: OSF1.sys.mk,v 1.1 2004/11/20 04:31:35 grant Exp $
 #	@(#)sys.mk	8.2 (Berkeley) 3/21/94
 
 unix?=		We run Unix
@@ -37,7 +37,7 @@ OBJCFLAGS?=	${CFLAGS}
 COMPILE.m?=	${OBJC} ${OBJCFLAGS} ${CPPFLAGS} -c
 LINK.m?=	${OBJC} ${OBJCFLAGS} ${CPPFLAGS} ${LDFLAGS}
 
-CPP?=		CC
+CPP?=		CC -E
 CPPFLAGS?=	
 
 FC?=		f77
