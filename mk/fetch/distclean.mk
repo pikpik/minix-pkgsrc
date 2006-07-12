@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: distclean.mk,v 1.1 2006/06/06 03:05:48 jlam Exp $
 
 .PHONY: pre-distclean
 .if !target(pre-distclean)
@@ -19,8 +19,10 @@ distclean: pre-distclean clean
 		${TEST} -z "${PATCHFILES}" || ${RM} -f ${PATCHFILES};	\
 	fi
 .  if defined(DIST_SUBDIR)
-	-${_PKG_SILENT}${_PKG_DEBUG}					\
-	${TEST} ! -d ${_DISTDIR} || ${RMDIR} ${_DISTDIR} 2>/dev/null
+	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${TEST} ! -d ${_DISTDIR}					\
+	|| ${RMDIR} ${_DISTDIR} 2>/dev/null				\
+	|| ${TRUE}
 .  endif
 	${_PKG_SILENT}${_PKG_DEBUG}${RM} -f README.html
 .endif
