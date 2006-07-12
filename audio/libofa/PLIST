@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/ofa1/ofa.h
+lib/libofa.la
+lib/pkgconfig/libofa.pc
+@dirrm include/ofa1
