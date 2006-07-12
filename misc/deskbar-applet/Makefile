@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/05/18 20:29:59 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2006/07/05 05:37:43 jlam Exp $
 #
 
 DISTNAME=	deskbar-applet-2.14.0.1
@@ -23,7 +23,7 @@ PKGCONFIG_OVERRIDE=	data/deskbar-applet.pc
 
 GCONF2_SCHEMAS=		deskbar-applet.schemas
 
-PYTHON_ACCEPTED_VERSIONS=	23 24
+PYTHON_ACCEPTED_VERSIONS=	24
 PYTHON_PATCH_SCRIPTS=		deskbar/deskbar-applet.py
 PY_PATCHPLIST=			yes
 
