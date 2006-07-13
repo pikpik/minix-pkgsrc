@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2006/04/22 09:22:06 rillig Exp $
+# $NetBSD: Makefile,v 1.33 2006/05/02 13:53:18 gdt Exp $
 
-DISTNAME=	iozone3_248
-PKGNAME=	iozone-3.248
+DISTNAME=	iozone3_263
+PKGNAME=	iozone-3.263
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.iozone.org/src/current/
 EXTRACT_SUFX=	.tar
@@ -49,10 +49,10 @@ do-install:
 		${PREFIX}/share/doc/IOzone
 
 benchmark:
-	@(cd ${WRKSRC}; ./iozone -Ea | tee iozone.out)
+	cd ${WRKSRC}; ./iozone -Ea | ${TEE} iozone.out
 
 results:
-	@${MKDIR} /tmp/benches/`domainname`
-	-@${CP} ${WRKSRC}/iozone.out /tmp/benches/`domainname`/iozone.`uname`-`uname -m`-`uname -r`.`hostname`
+	${MKDIR} /tmp/benches/`domainname`
+	${CP} ${WRKSRC}/iozone.out /tmp/benches/`domainname`/iozone.`uname`-`uname -m`-`uname -r`.`hostname`
 
 .include "../../mk/bsd.pkg.mk"
