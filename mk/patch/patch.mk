@@ -1,4 +1,4 @@
-# $NetBSD: patch.mk,v 1.7 2006/07/06 22:29:53 jlam Exp $
+# $NetBSD: patch.mk,v 1.8 2006/07/07 21:24:29 jlam Exp $
 #
 # The following variables may be set in a package Makefile and control
 # how pkgsrc patches are applied.
@@ -124,7 +124,6 @@ patch-cookie:
 ###
 .PHONY: pre-patch do-patch post-patch
 
-_PKGSRC_PATCH_TARGETS+=	uptodate-digest
 .if defined(PATCHFILES)
 _PKGSRC_PATCH_TARGETS+=	distribution-patch-message
 _PKGSRC_PATCH_TARGETS+=	do-distribution-patch
@@ -295,7 +294,7 @@ do-pkgsrc-patch:
 			set -- $$algsum;				\
 			alg="$$1";					\
 			recorded="$$2";					\
-			calcsum=`${SED} -e '/\$$NetBSD.*/d' $$i | ${DIGEST} $$alg`; \
+			calcsum=`${SED} -e '/\$$NetBSD.*/d' $$i | ${TOOLS_DIGEST} $$alg`; \
 			${ECHO_PATCH_MSG} "Verifying $$filename (using digest algorithm $$alg)"; \
 			if ${TEST} "$$calcsum" != "$$recorded"; then	\
 				patch_warning "Ignoring patch file $$i: invalid checksum"; \
