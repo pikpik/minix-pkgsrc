@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2006/07/14 18:48:43 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/07/14 19:38:47 jlam Exp $
 
 .include "Makefile.common"
+
+CATEGORIES=	archivers
 
 .include "../../mk/bsd.pkg.mk"
