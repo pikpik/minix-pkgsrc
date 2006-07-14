@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/09/28 20:52:25 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2005/12/02 17:03:06 wiz Exp $
 #
 
 DISTNAME=		tnftp-20050625
@@ -18,6 +18,7 @@ CONFLICTS+=		kth-krb4-[0-9]*
 CONFLICTS+=		lukemftp-[0-9]*
 
 NO_CHECKSUM=		yes
+NO_MTREE=		yes
 
 .include "options.mk"
 
