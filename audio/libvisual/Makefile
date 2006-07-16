@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/06/25 19:19:34 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/07/03 23:33:43 wiz Exp $
 #
 
 DISTNAME=		libvisual-0.4.0
@@ -15,10 +15,13 @@ PKGCONFIG_OVERRIDE+=	${WRKSRC}/libvisual.pc.in
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
+.include "../../mk/bsd.prefs.mk"
 .include "../../mk/compiler.mk"
 
+.if ${MACHINE_ARCH} == "i386"
 .if !empty(CC_VERSION:Mgcc*)
 CPPFLAGS+=		-mmmx
+.endif
 .endif
 
 .include "../../mk/x11.buildlink3.mk"
