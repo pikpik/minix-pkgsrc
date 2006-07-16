@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/07/13 18:01:46 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2005/08/06 06:19:39 jlam Exp $
 
 DISTNAME=		HTML-Format-2.04
 PKGNAME=		p5-${DISTNAME}
@@ -16,6 +16,7 @@ DEPENDS+=		p5-HTML-Tree>=3.15:../../www/p5-HTML-Tree
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/HTML-Format/.packlist
 
 .include "../../lang/perl5/module.mk"
