@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.363 2006/07/09 15:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.364 2006/07/14 19:54:47 jlam Exp $
 #
 
 COMMENT=	System utilities
@@ -162,6 +162,7 @@ SUBDIR+=	osname
 SUBDIR+=	p5-File-NCopy
 SUBDIR+=	p5-File-Remove
 SUBDIR+=	p5-Lchown
+SUBDIR+=	p5-Parse-Syslog
 SUBDIR+=	p5-Sys-CpuLoad
 SUBDIR+=	p5-Sys-Hostname-Long
 SUBDIR+=	p5-Unix-Syslog
