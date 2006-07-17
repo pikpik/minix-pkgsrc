@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/02/05 23:08:35 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/21 20:23:49 joerg Exp $
 
 PKGNAME=		postgresql74-lib-${BASE_VERS}
 SVR4_PKGNAME=		pstgl
@@ -58,7 +58,7 @@ do-install:
 
 post-install:
 	${EGREP} -v "^#" ${FILESDIR}/man.lib > ${WRKDIR}/man_tar
-	cd ${PREFIX}/man && ${TAR} -zxm -T ${WRKDIR}/man_tar  		\
+	cd ${PREFIX}/${PKGMANDIR} && ${TAR} -zxm -T ${WRKDIR}/man_tar  		\
 		-f ${WRKSRC}/doc/man.tar.gz
 
 .include "../../security/openssl/buildlink3.mk"
