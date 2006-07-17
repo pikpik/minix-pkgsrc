@@ -1,4 +1,4 @@
-# $NetBSD: fetch.mk,v 1.7 2006/07/13 15:23:18 jlam Exp $
+# $NetBSD: fetch.mk,v 1.8 2006/07/15 23:58:52 rillig Exp $
 
 ######################################################################
 ### fetch (PUBLIC)
@@ -21,6 +21,7 @@ _MASTER_SITE_OVERRIDE=	${MASTER_SITE_OVERRIDE:=${DIST_SUBDIR}${DIST_SUBDIR:D/}}
 MASTER_SITE_LOCAL?=	${MASTER_SITE_BACKUP:=LOCAL_PORTS/}
 
 ALLFILES?=	${DISTFILES} ${PATCHFILES}
+ALLFILES:=	${ALLFILES:O:u}		# remove duplicates
 CKSUMFILES?=	${ALLFILES}
 .for __tmp__ in ${IGNOREFILES}
 CKSUMFILES:=	${CKSUMFILES:N${__tmp__}}
