@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+/usr/bin/elfdump -Dl "$@" |
+/usr/bin/nawk 'NF == 7 || NF == 8 {printf "x x %s\n",$1}'
