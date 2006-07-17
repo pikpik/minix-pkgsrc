@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/04 21:28:52 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/06/18 07:04:15 rillig Exp $
 
 DISTNAME=	freeze-2.5
 PKGREVISION=	2
@@ -16,7 +16,7 @@ BUILD_TARGET=	prog
 # Allow "melting" freeze-1.0-format archives.
 CFLAGS+=	-DCOMPAT=1
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 SUBST_CLASSES+=		freeze
 SUBST_STAGE.freeze=	post-patch
