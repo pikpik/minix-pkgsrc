@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/10/29 16:09:03 minskim Exp $
+# $NetBSD: Makefile,v 1.38 2006/03/11 13:21:24 uebayasi Exp $
 #
 
 COMMENT=	Shells
@@ -21,7 +21,6 @@ SUBDIR+=	scponly
 SUBDIR+=	scsh
 SUBDIR+=	standalone-tcsh
 SUBDIR+=	static-ast-ksh
-SUBDIR+=	static-bash2
 SUBDIR+=	static-tcsh
 SUBDIR+=	tcsh
 SUBDIR+=	xsh
