@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2006/04/22 09:22:06 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2006/06/18 07:55:42 rillig Exp $
 #
 
 DISTNAME=	libdts-0.0.2
 PKGNAME=	${DISTNAME:S/ts/ca/}
 CATEGORIES=	audio
 MASTER_SITES=	http://debian.unnet.nl/pub/videolan/libdts/0.0.2/ \
-		http://download.videolan.org/pub/videolan/libdts/0.0.2/
+		http://download.videolan.org/pub/videolan/libdca/0.0.2/
 
 MAINTAINER=	shattered@users.sourceforge.net
 HOMEPAGE=	http://developers.videolan.org/libdca.html
