@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:04 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:44 joerg Exp $
 #
 
 DISTNAME=	jam-2.5
@@ -15,6 +15,7 @@ CONFLICTS=	acunia-jam-[0-9]*
 
 DIST_SUBDIR=	${PKGNAME_NOREV}nb1
 WRKSRC=		${WRKDIR}
+USE_TOOLS+=	yacc
 
 DOCDIR=		share/doc/${PKGBASE}
 HTMLDIR=	share/doc/html/${PKGBASE}
