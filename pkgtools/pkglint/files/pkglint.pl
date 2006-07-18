@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.654 2006/07/17 13:36:57 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.655 2006/07/18 18:14:33 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -2699,7 +2699,7 @@ sub get_filetype($$) {
 		return "unknown";
 	}
 
-	$line->log_debug("Don't know the file type of ${fname}.");
+	$opt_debug_misc and $line->log_debug("Don't know the file type of ${fname}.");
 
 	return "unknown";
 }
