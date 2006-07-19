@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.22 2006/05/16 14:57:06 tron Exp $
+@comment $NetBSD: PLIST,v 1.23 2006/06/01 14:09:09 markd Exp $
 bin/kbanner.kss
 bin/kblob.kss
 bin/kclock.kss
@@ -60,7 +60,6 @@ share/kde/applnk/System/ScreenSavers/KVm.desktop
 share/kde/applnk/System/ScreenSavers/KWave.desktop
 share/kde/applnk/System/ScreenSavers/anemone.desktop
 share/kde/applnk/System/ScreenSavers/anemotaxis.desktop
-share/kde/applnk/System/ScreenSavers/ant.desktop
 share/kde/applnk/System/ScreenSavers/antinspect.desktop
 share/kde/applnk/System/ScreenSavers/antmaze.desktop
 share/kde/applnk/System/ScreenSavers/antspotlight.desktop
@@ -255,7 +254,6 @@ share/kde/applnk/System/ScreenSavers/xmatrix.desktop
 share/kde/applnk/System/ScreenSavers/xrayswarm.desktop
 share/kde/applnk/System/ScreenSavers/xspirograph.desktop
 share/kde/applnk/System/ScreenSavers/xsublim.desktop
-share/kde/applnk/System/ScreenSavers/xteevee.desktop
 share/kde/applnk/System/ScreenSavers/zoom.desktop
 share/kde/apps/kfiresaver/kfs_debris.ogg
 share/kde/apps/kfiresaver/kfs_explode.ogg
