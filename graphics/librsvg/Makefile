@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/04/17 13:46:01 wiz Exp $
 
 DISTNAME=	librsvg-1.0.3
 PKGREVISION=	2
@@ -12,8 +12,6 @@ COMMENT=	Raph's SVG library
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../graphics/gdk-pixbuf/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"

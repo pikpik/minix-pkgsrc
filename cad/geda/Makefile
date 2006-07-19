@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/02/05 23:08:21 joerg Exp $
+# $NetBSD: Makefile,v 1.47 2006/04/17 13:46:17 wiz Exp $
 #
 
 DISTNAME=	geda-${PKGVERSION}
@@ -23,8 +23,6 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		pkg-config
-
-LTCONFIG_OVERRIDE=      ${WRKSRC}/ltconfig
 
 .include "../../cad/libgeda/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

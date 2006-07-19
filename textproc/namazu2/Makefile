@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/03/12 14:36:54 taca Exp $
+# $NetBSD: Makefile,v 1.30 2006/03/18 22:22:31 wiz Exp $
 
 DISTNAME=	namazu-2.0.16
 CATEGORIES=	japanese textproc www
@@ -21,7 +21,6 @@ GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
-LTCONFIG_OVERRIDE+=	${WRKSRC}/ltconfig
 
 CONFIGURE_ARGS+= 	--localstatedir=${DATADIR:Q} \
 			--libexecdir=${PREFIX}/libexec/cgi-bin \

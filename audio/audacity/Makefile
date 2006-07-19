@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2006/05/14 15:14:32 dogcow Exp $
+# $NetBSD: Makefile,v 1.49 2006/06/11 12:22:47 joerg Exp $
 
 DISTNAME=	audacity-src-1.2.4b
 PKGNAME=	audacity-1.2.4b
@@ -24,7 +24,6 @@ CONFIGURE_ARGS+=	--with-libmad=system
 CONFIGURE_ARGS+=	--with-libsndfile=system
 CONFIGURE_ARGS+=	--with-portaudio=system
 CONFIGURE_ARGS+=	--with-vorbis=system
-LTCONFIG_OVERRIDE+=	${WRKSRC}/ltconfig
 
 CONFIG_GUESS_OVERRIDE=		\
 	config.guess */config.guess */*/config.guess */*/*/config.guess

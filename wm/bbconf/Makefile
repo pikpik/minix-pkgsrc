@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/04/17 13:46:49 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2006/05/19 08:26:22 joerg Exp $
 #
 
 DISTNAME=	bbconf-1.4
@@ -13,7 +13,6 @@ COMMENT=	Configuration tool for the blackbox window manager
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/admin/ltconfig
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../x11/qt2-libs/buildlink3.mk"

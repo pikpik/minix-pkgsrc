@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/02/05 23:08:24 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/03/04 21:29:03 jlam Exp $
 
 DISTNAME=	gale-0.99fruit
 PKGNAME=	gale-0.99f
@@ -13,7 +13,6 @@ COMMENT=	Secure instant messaging system
 
 USE_GNU_READLINE=	yes	# needs rl_named_function()
 USE_LIBTOOL=		yes
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig ${WRKSRC}/liboopltconfig
 GNU_CONFIGURE= 		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ENV+=		PROG_GLIB_CONFIG=${GLIB_CONFIG:Q}

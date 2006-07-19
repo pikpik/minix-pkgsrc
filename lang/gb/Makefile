@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/04/13 18:23:34 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/04/17 13:46:38 wiz Exp $
 #
 
 DISTNAME=		gb-0.0.20
@@ -15,7 +15,6 @@ USE_TOOLS+=		msgfmt
 USE_PKGLOCALEDIR=	YES
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 .include "../../print/gnome-print/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"

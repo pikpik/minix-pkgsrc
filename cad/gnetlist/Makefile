@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/02/05 23:08:21 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2006/04/17 13:46:17 wiz Exp $
 #
 
 DISTNAME=		geda-gnetlist-${PKGVERSION}
@@ -21,7 +21,6 @@ USE_LIBTOOL=		YES
 
 # needs GNU m4 for the PCBboard and gsch2pcb netlisters
 USE_TOOLS+=		gmake m4:run pkg-config
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 
 EVAL_PREFIX+=   PCBDIR=pcb
 CONFIGURE_ARGS+=	--with-pcbm4dir=${PCBDIR}/share/pcb/m4

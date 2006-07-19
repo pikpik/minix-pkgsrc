@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/04/13 18:23:31 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2006/04/17 13:46:20 wiz Exp $
 
 DISTNAME=	eel-1.0.2
 PKGREVISION=	3
@@ -17,7 +17,6 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
-LTCONFIG_OVERRIDE=	${WRKSRC}/ltconfig
 CPPFLAGS+=		-D_POSIX_THREAD_SYSCALL_SOFT=1
 
 .include "../../devel/gettext-lib/buildlink3.mk"
