@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.43 2005/12/29 06:21:52 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2006/03/14 01:14:30 jlam Exp $
 #
 
-DISTNAME=	popa3d-1.0
+DISTNAME=	popa3d-1.0.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.openwall.com/popa3d/ \
 		ftp://ftp.openwall.com/pub/projects/popa3d/ \
 		ftp://ftp.false.com/pub/security/popa3d/
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openwall.com/popa3d/
 COMMENT=	Secure, reliable, performant, and small pop3 server
 
@@ -23,7 +23,7 @@ FILES_SUBST+=	POPA3D_USER=${POPA3D_USER:Q}
 FILES_SUBST+=	POPA3D_GROUP=${POPA3D_GROUP:Q}
 
 SUBST_CLASSES+=		params
-SUBST_STAGE.params=	post-patch
+SUBST_STAGE.params=	pre-configure
 SUBST_FILES.params=	params.h
 SUBST_SED.params=	-e 's,/var/empty,${PREFIX}/share/empty,'	\
 			-e 's,@@POPA3D_USER@@,"${POPA3D_USER}",'
