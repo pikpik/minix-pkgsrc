@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.625 2006/07/10 07:49:29 seb Exp $
+# $NetBSD: Makefile,v 1.626 2006/07/10 17:39:34 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -62,6 +62,7 @@ SUBDIR+=	corkscrew
 SUBDIR+=	couriertcpd
 SUBDIR+=	ctorrent
 SUBDIR+=	dante
+SUBDIR+=	darkstat
 SUBDIR+=	dc_gui2
 SUBDIR+=	dctc
 SUBDIR+=	ddclient
