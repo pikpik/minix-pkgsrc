@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2006/02/16 14:24:00 gavan Exp $
+# $NetBSD: Makefile,v 1.37 2006/03/04 21:31:02 jlam Exp $
 #
 
-DISTNAME=		HTML-Parser-3.50
+DISTNAME=		HTML-Parser-3.54
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5hpa
 CATEGORIES=		www perl5
@@ -12,7 +12,8 @@ HOMEPAGE=		http://search.cpan.org/dist/HTML-Parser/
 COMMENT=		Perl5 module to parse HTML text documents
 
 DEPENDS+=		p5-HTML-Tagset>=3.0:../../www/p5-HTML-Tagset
-# needed for some self-test, but this would create a circular
+DEPENDS+=		p5-URI-[0-9]*:../../www/p5-URI
+# needed for HTTP/Headers self-test, but this would create a circular
 # dependency -- weird.
 #DEPENDS+=		p5-libwww-[0-9]*:../../www/p5-libwww
 
