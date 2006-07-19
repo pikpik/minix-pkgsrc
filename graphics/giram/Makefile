@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/06/16 14:16:54 joerg Exp $
+# $NetBSD: Makefile,v 1.50 2006/07/07 15:49:32 jlam Exp $
 #
 
 DISTNAME=	giram-0.3.5
@@ -14,7 +14,7 @@ DEPENDS+=	povray-[0-9]*:../../graphics/povray
 BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
 
 USE_PKGLOCALEDIR=	YES
-USE_TOOLS+=		gmake pkg-config msgfmt
+USE_TOOLS+=		gmake pkg-config msgfmt intltool
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 

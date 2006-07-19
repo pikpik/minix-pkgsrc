@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/04/13 18:23:35 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/17 13:46:39 wiz Exp $
 #
 
 DISTNAME=		galculator-1.2.5.2
@@ -12,7 +12,7 @@ COMMENT=		Desktop calculator with scientific / RPN modes
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake msgfmt pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config intltool
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
