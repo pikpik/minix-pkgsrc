@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/05/17 18:19:18 reed Exp $
+# $NetBSD: Makefile,v 1.31 2006/06/12 16:28:12 wiz Exp $
 #
 
 DISTNAME=	avidemux-2.1.2
@@ -14,7 +14,7 @@ GCC_REQD+=		3.0
 GNU_CONFIGURE=		yes
 USE_LANGUAGES+=		c++
 USE_LIBTOOL=		YES
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake perl pkg-config
 
 CPPFLAGS+=		-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 LIBS+=			${LIBOSSAUDIO}
