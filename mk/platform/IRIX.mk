@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.24 2006/04/12 21:01:15 joerg Exp $
+# $NetBSD: IRIX.mk,v 1.25 2006/07/10 22:17:58 jlam Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -83,7 +83,6 @@ _PATCH_BACKUP_ARG?=	-b -V simple -z # switch to patch(1) for backup suffix
 .else
 _PATCH_CAN_BACKUP=	no		# native patch(1) can make backups
 .endif
-_USE_GNU_GETTEXT=	no		# Don't use GNU gettext
 _USE_RPATH=		yes		# add rpath to LDFLAGS
 
 # flags passed to the linker to extract all symbols from static archives.
