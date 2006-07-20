@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:29:13 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/06/23 12:56:26 salo Exp $
 #
 
 DISTNAME=	chmlib-0.38
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	gmake
 
 CONFIGURE_ARGS+=	--disable-io64
 
