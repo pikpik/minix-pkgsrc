@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:10:42 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/04/23 00:12:41 jlam Exp $
 
 DISTNAME=	amavisd-new-${VERSION}${PATCHLEVEL}
 PKGNAME=	amavisd-new-${VERSION}${PATCHLEVEL:S/-//}
@@ -88,7 +88,6 @@ PTHREAD_OPTS+=          require native	# doesn't work with pth
 .  include "../../mk/pthread.buildlink3.mk"
 .else
 USE_LANGUAGES=		# empty
-NO_CONFIGURE=		yes
 PLIST_SUBST+=		MILTER="@comment "
 
 do-build:	replace-interpreter
