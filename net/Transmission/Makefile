@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/03 08:40:13 dogcow Exp $
 #
 
 DISTNAME=		Transmission-0.6.1
@@ -9,7 +9,7 @@ MAINTAINER=		dogcow@NetBSD.org
 HOMEPAGE=		http://transmission.m0k.org/
 COMMENT=		Free, lightweight BitTorrent client
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt pkg-config
 
 #--disable-openssl --disable-gtk
 GNU_CONFIGURE=		yes
