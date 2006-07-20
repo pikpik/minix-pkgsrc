@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: bsd.pkg.debug.mk,v 1.1 2006/07/20 17:10:45 rillig Exp $
 #
 
 # This file provides the `debug' target, which outputs the values of
@@ -31,7 +31,7 @@ debug: \
 _show-dbginfo-file-versions:
 	@${PRINTF} "File versions:\\n"
 	${_PKG_SILENT}${_PKG_DEBUG} set -e;				\
-	sedexpr='s,.*\(\$$NetBSD:[^$$]*\$$\).*,\1,p';			\
+	sedexpr='s,.*\([$$]NetBSD:[^$$]*\$$\).*,\1,p';			\
 	${FIND} * -type f -print					\
 	| while read fname; do						\
 	  ident=`${SED} -n "$${sedexpr}" "$${fname}"` || continue;	\
