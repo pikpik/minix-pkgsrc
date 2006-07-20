@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.426 2006/07/03 19:34:02 xtraeme Exp $
+# $NetBSD: Makefile,v 1.427 2006/07/06 20:36:44 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -12,6 +12,7 @@ SUBDIR+=	GMT
 SUBDIR+=	GUIlib
 SUBDIR+=	GeometryKit
 SUBDIR+=	GlutKit
+SUBDIR+=	GraphicsMagick
 SUBDIR+=	ImageMagick
 SUBDIR+=	ImageViewer
 SUBDIR+=	Mesa
