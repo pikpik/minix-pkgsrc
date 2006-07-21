@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2005/02/20 21:50:57 cube Exp $
+# $NetBSD: options.mk,v 1.3 2005/05/31 10:01:39 dillo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.netbsd-tap
 PKG_SUPPORTED_OPTIONS=	bpf
@@ -7,7 +7,7 @@ PKG_SUGGESTED_OPTIONS=	bpf
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mbpf)
-BUILD_ENV+=	USE_BPF=YES
+PKGSRC_MAKE_ENV+=	USE_BPF=YES
 .endif
 
 TAP_KERNEL_ENV?=	# empty

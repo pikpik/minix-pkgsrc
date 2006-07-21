@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2006/03/21 19:26:31 drochner Exp $
+# $NetBSD: Makefile,v 1.48 2006/07/06 12:27:43 markd Exp $
 
 PKGNAME=	MesaLib-${MESA_VERSION}
 PKGREVISION=	2
@@ -23,7 +23,7 @@ PTHREAD_STUBLIB= "-L${LOCALBASE}/lib -Wl,-R${LOCALBASE}/lib -lpthstub"
 .else
 PTHREAD_STUBLIB= # provided by libc
 .endif
-BUILD_ENV+=	PTHREAD_STUBLIB=${PTHREAD_STUBLIB}
+PKGSRC_MAKE_ENV+=	PTHREAD_STUBLIB=${PTHREAD_STUBLIB}
 
 pre-build:
 	cd ${WRKSRC} && ${RM} -fr src/glu src/glut progs

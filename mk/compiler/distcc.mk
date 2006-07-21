@@ -1,4 +1,4 @@
-# $NetBSD: distcc.mk,v 1.26 2005/01/12 22:56:41 jlam Exp $
+# $NetBSD: distcc.mk,v 1.27 2005/01/24 18:20:57 tv Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -96,13 +96,13 @@ PREPEND_PATH+=	${_DISTCC_DIR}/bin
 BUILD_DEPENDS+=	distcc-[0-9]*:../../devel/distcc
 
 .  if defined(DISTCC_HOSTS) && !empty(DISTCC_HOSTS)
-BUILD_ENV+=	DISTCC_HOSTS=${DISTCC_HOSTS:Q}
+PKGSRC_MAKE_ENV+=	DISTCC_HOSTS=${DISTCC_HOSTS:Q}
 .  endif
 .  if defined(DISTCC_SSH) && !empty(DISTCC_SSH)
-BUILD_ENV+=	DISTCC_SSH=${DISTCC_SSH:Q}
+PKGSRC_MAKE_ENV+=	DISTCC_SSH=${DISTCC_SSH:Q}
 .  endif
 .  if defined(DISTCC_VERBOSE) && !empty(DISTCC_VERBOSE)
-BUILD_ENV+=	DISTCC_VERBOSE=${DISTCC_VERBOSE:Q}
+PKGSRC_MAKE_ENV+=	DISTCC_VERBOSE=${DISTCC_VERBOSE:Q}
 .  endif
 
 # Create symlinks for the compiler into ${WRKDIR}.

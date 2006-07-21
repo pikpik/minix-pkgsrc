@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:57 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/20 04:59:08 jlam Exp $
 #
 
 DISTNAME=	speedbar-0.14beta4
@@ -13,7 +13,7 @@ COMMENT=	Directory and code browser for emacs
 
 .include "../../mk/emacs.mk"
 
-BUILD_ENV+=	EMACS=${EMACS}
+PKGSRC_MAKE_ENV+=	EMACS=${EMACS}
 
 NO_CONFIGURE=	yes
 USE_TOOLS+=	gmake
