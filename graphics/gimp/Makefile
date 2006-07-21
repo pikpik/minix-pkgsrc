@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.142 2006/07/07 15:14:32 tron Exp $
+# $NetBSD: Makefile,v 1.143 2006/07/10 22:06:32 adam Exp $
 
 DISTNAME=	gimp-2.2.12
 CATEGORIES=	graphics
@@ -12,8 +12,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.gimp.org/
 COMMENT=	Image manipulation program similar to Photoshop[tm]
-
-CONFLICTS+=		gimp<=1.2.3
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
