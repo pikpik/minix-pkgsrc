@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:09:53 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/05/28 00:26:27 rh Exp $
 #
 
 DISTNAME=	Pantomime-1.1.2
@@ -10,7 +10,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.collaboration-world.com/pantomime/
 COMMENT=	Objective-C mail system class library
 
-USE_LANGUAGES=	objc
+USE_LANGUAGES=	c objc
 
 WRKSRC=		${WRKDIR}/Pantomime
 NO_CONFIGURE=	yes

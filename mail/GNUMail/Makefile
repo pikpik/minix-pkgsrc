@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:38 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2006/05/28 00:26:27 rh Exp $
 #
 
 DISTNAME=	GNUMail-1.1.2
@@ -10,7 +10,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.collaboration-world.com/gnumail/
 COMMENT=	GNUstep clone of NeXT's Mail.app application
 
-USE_LANGUAGES=	objc
+USE_LANGUAGES=	c objc
 
 WRKSRC=		${WRKDIR}/GNUMail
 NO_CONFIGURE=	yes
