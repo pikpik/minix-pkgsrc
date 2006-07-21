@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.260 2006/04/12 13:01:41 markd Exp $
+# $NetBSD: Makefile,v 1.261 2006/06/17 14:28:30 minskim Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -154,6 +154,7 @@ SUBDIR+=	loco
 SUBDIR+=	logsurfer
 SUBDIR+=	lookup
 SUBDIR+=	lv
+SUBDIR+=	mirmon
 SUBDIR+=	mmv
 SUBDIR+=	molden
 SUBDIR+=	most
