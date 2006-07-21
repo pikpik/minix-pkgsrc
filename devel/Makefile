@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.769 2006/07/03 19:31:19 xtraeme Exp $
+# $NetBSD: Makefile,v 1.770 2006/07/17 22:43:11 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -18,6 +18,7 @@ SUBDIR+=	RTx-Shredder
 SUBDIR+=	Renaissance
 SUBDIR+=	SDL
 SUBDIR+=	SDL-intro-en
+SUBDIR+=	SDL-intro-ko
 SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
 SUBDIR+=	SDLmm
