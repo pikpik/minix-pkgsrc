@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/03/01 00:33:30 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:33 jlam Exp $
 
 DISTNAME=	Botan-1.4.11
 PKGNAME=	botan-1.4.11
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://files.randombit.net/botan/
 EXTRACT_SUFX=	.tbz
