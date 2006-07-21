@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2006/07/10 22:06:32 adam Exp $
+# $NetBSD: Makefile,v 1.144 2006/07/21 13:04:52 tron Exp $
 
 DISTNAME=	gimp-2.2.12
 CATEGORIES=	graphics
@@ -15,7 +15,7 @@ COMMENT=	Image manipulation program similar to Photoshop[tm]
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake msgfmt pkg-config
+USE_TOOLS+=		gmake msgfmt pkg-config intltool
 
 PKG_SYSCONFSUBDIR=	gimp/2.0
 
