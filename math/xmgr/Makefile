@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2006/03/04 21:30:09 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/07/21 05:22:33 rillig Exp $
 
 DISTNAME=		xmgr-4.1.2
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		math
 MASTER_SITES=		ftp://plasma-gate.weizmann.ac.il/pub/xmgr4/src/ \
 			ftp://plasma-gate.weizmann.ac.il/pub/xmgr4/src/old/ \
@@ -23,6 +23,9 @@ CONFIGURE_ARGS+=	--enable-acegr-home=${PREFIX:Q}
 
 BUILD_TARGET=		# empty
 INSTALL_TARGET=		install
+
+REPLACE_PERL+=		auxiliary/fdf2fit
+USE_TOOLS+=		perl:run
 
 .include "../../devel/netcdf/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
