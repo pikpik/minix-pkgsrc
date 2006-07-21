@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+Mirmon needs a configuration file. For an example, see
+
+  ${PREFIX}/share/examples/mirmon/mirmon.conf
+
+===========================================================================
