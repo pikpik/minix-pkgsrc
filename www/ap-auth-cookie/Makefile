@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/03/04 21:30:56 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2006/06/02 18:27:58 joerg Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
@@ -7,11 +7,11 @@
 DISTNAME=	mod_auth_cookie.c
 PKGNAME=	ap13-auth-cookie-1.9
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.kciLink.com/pub/
-EXTRACT_SUFX=	.gz
+MASTER_SITES=	http://raburton.lunarpages.com/apache/mod_auth_cookie/13/
+EXTRACT_SUFX=	# empty
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	ftp://ftp.kciLink.com/pub/mod_auth_cookie.txt
+HOMEPAGE=	http://raburton.lunarpages.com/apache/mod_auth_cookie/
 COMMENT=	Cookie-based authentication for Apache
 
 CONFLICTS=	ap-auth-cookie-[0-9]*
