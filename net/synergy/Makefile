@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2006/06/01 23:31:59 minskim Exp $
 #
 
 DISTNAME=		synergy-1.3.1
@@ -10,7 +10,7 @@ HOMEPAGE=		http://synergy2.sourceforge.net/
 COMMENT=		Let an user share a mouse and keyboard among computers
 
 GNU_CONFIGURE=		yes
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"

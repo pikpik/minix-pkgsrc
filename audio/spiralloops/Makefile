@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:08:14 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/03/09 21:04:41 jlam Exp $
 #
 
 DISTNAME=		SpiralLoops-2.0.0
@@ -16,7 +16,7 @@ ONLY_FOR_PLATFORM=	*-*-alpha *-*-arc *-*-cobalt *-*-dreamcast \
 			*-*-hpcmips *-*-hpcsh *-*-i386 *-*-pc532 *-*-pmax \
 			*-*-vax
 
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 MAKE_ENV+=		CXXFLAGS=${CXXFLAGS:M*:Q}

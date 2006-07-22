@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/04/17 13:46:05 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2006/07/13 17:37:34 bad Exp $
 
 DISTNAME=	libfwbuilder-2.0.12
 CATEGORIES=	security net
@@ -11,7 +11,7 @@ COMMENT=	Firewall Builder API
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
-USE_LANGUAGES=	c++
+USE_LANGUAGES=	c c++
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../net/net-snmp/buildlink3.mk"

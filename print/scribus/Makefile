@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/06/11 14:30:53 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2006/07/07 15:49:33 jlam Exp $
 
 DISTNAME=	scribus-1.2.4.1
 PKGREVISION=	1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.scribus.net/
 COMMENT=	Publishing layout with graphical interface
 
 USE_TOOLS+=		gmake perl
-USE_LANGUAGES+=		c++
+USE_LANGUAGES=		c c++
 PTHREAD_OPTS+=		require
 
 USE_LIBTOOL=		YES

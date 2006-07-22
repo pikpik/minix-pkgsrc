@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/05 18:06:42 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2006/06/16 09:30:59 rillig Exp $
 
 DISTNAME=	dbxml-1.2.1
 PKGNAME=	${DISTNAME:S/db/bdb-/}
@@ -18,7 +18,7 @@ CONFIGURE_SCRIPT=	../dist/configure
 CONFIG_GUESS_OVERRIDE=	../dist/config.guess
 CONFIG_SUB_OVERRIDE=	../dist/config.sub
 CONFIG_STATUS_OVERRIDE=	../dist/config.status
-USE_LANGUAGES+=		c++
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 
 CONFIGURE_ARGS+=	--with-berkeleydb=${BUILDLINK_PREFIX.db4}

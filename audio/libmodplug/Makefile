@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:44:54 tv Exp $
+# $NetBSD: Makefile,v 1.5 2006/03/09 21:04:40 jlam Exp $
 #
 
 DISTNAME=		libmodplug-0.7
@@ -12,7 +12,7 @@ COMMENT=		Library for decoding mod-like music formats
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

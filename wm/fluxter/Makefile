@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/08 23:29:21 minskim Exp $
 #
 
 DISTNAME=		fluxter-0.1.0
@@ -10,7 +10,7 @@ HOMEPAGE=		http://benedict.isomedia.com/homes/stevencooper/projects/fluxter.html
 COMMENT=		Workspace pager dockapp, particularly useful with Fluxbox
 
 GNU_CONFIGURE=		yes
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 
 FLUXBOX_DATA=		${PREFIX}/share/fluxbox
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}

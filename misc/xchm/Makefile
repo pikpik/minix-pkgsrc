@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/05/31 21:39:20 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2006/06/11 14:25:21 wiz Exp $
 #
 
 DISTNAME=	xchm-1.9
@@ -10,7 +10,7 @@ HOMEPAGE=	http://xchm.sourceforge.net/
 COMMENT=	CHM viewer for UNIX
 
 USE_DIRS+=		xdg-1.1
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/11/23 06:57:45 minskim Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
@@ -15,7 +15,7 @@ BUILD_DIRS=	${MY_SUBDIR}
 CONFIGURE_DIRS=	${MY_SUBDIR}
 
 GNU_CONFIGURE=	yes
-USE_LANGUAGES+=	c++
+USE_LANGUAGES=	c c++
 TEST_TARGET=            check
 
 .include "../../databases/qdbm/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/05/21 22:32:58 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/06/08 19:50:22 joerg Exp $
 
 DISTNAME=	gnugk-2.2.0
 PKGREVISION=	2
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnugk.org/
 COMMENT=	H.323 Gatekeeper
 
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes

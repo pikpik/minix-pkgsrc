@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/03/04 21:30:55 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2006/04/17 13:46:50 wiz Exp $
 #
 
 DISTNAME=	qvwm-1.1.12
@@ -14,7 +14,7 @@ COMMENT=	Windows 95/98/NT like window manager for X11
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake rm
 CONFIGURE_ENV+=	PATH_RM=${TOOLS_RM:Q}
-USE_LANGUAGES=	c++
+USE_LANGUAGES=	c c++
 
 post-install:
 	${MV} ${PREFIX}/man/man1/qvwm.1x ${PREFIX}/man/man1/qvwm.1

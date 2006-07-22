@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/05/22 14:39:44 dsainty Exp $
+# $NetBSD: Makefile,v 1.21 2006/05/22 16:39:00 drochner Exp $
 
 DISTNAME=		kphone-4.2
 PKGREVISION=		4
@@ -14,7 +14,7 @@ WRKSRC=			${WRKDIR}/kphone
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 CONFIGURE_ENV+=		QTDIR=${QTDIR:Q}
 

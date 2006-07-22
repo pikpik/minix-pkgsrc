@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/12/05 20:51:05 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:03 joerg Exp $
 
 DISTNAME=	libpathan-1.2-2-src
 PKGNAME=	${DISTNAME:S/-2-src/.2/}
@@ -16,7 +16,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME:S/-2-src//}
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		bison gmake perl
 USE_LIBTOOL=		YES
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	XERCESCROOT=${LOCALBASE:Q}
 

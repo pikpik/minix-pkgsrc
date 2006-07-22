@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/05/22 07:05:27 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/07/01 19:33:30 schmonz Exp $
 
 DISTNAME=		nullmailer-1.03
 CATEGORIES=		mail
@@ -8,7 +8,7 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://untroubled.org/nullmailer/
 COMMENT=		Simple relay-only mail transport agent
 
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/spool
