@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.628 2006/07/21 14:27:53 tron Exp $
+# $NetBSD: Makefile,v 1.629 2006/07/22 08:12:56 tron Exp $
 #
 
 COMMENT=	Networking tools
@@ -457,7 +457,6 @@ SUBDIR+=	vde
 SUBDIR+=	vino
 SUBDIR+=	vnc
 SUBDIR+=	vncviewer
-SUBDIR+=	vncviewer4
 SUBDIR+=	vpnc
 SUBDIR+=	vsftpd
 SUBDIR+=	vtun
