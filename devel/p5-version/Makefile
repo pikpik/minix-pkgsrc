@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:11 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/06/07 11:54:35 abs Exp $
 #
 
 DISTNAME=	version-0.63
@@ -13,7 +13,7 @@ COMMENT=	Perl extension for Version Objects
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PERL5_MODULE_TYPE= Module::Build
 
-USE_LANGUAGES=	# empty
+USE_LANGUAGES=	c
 PERL5_PACKLIST=	auto/version/vxs/.packlist
 
 .include "../../lang/perl5/module.mk"
