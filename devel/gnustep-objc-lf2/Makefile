@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/23 04:02:58 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/28 00:26:26 rh Exp $
 #
 
 DISTNAME=	gnustep-objc-lf2.95.3-r88
@@ -12,7 +12,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sope.opengroupware.org/en/build/thirdparty.html\#gstep_objc
 COMMENT=	Objective-C library required for libFoundation
 
-USE_LANGUAGES=	c objc
+USE_LANGUAGES=	objc
 
 WRKSRC=		${WRKDIR}/libobjc-lf2
 USE_TOOLS+=	gmake
