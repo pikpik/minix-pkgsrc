@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/python1.5/plat-${PY_PLATNAME}/CDROM.py
+lib/python1.5/plat-${PY_PLATNAME}/CDROM.pyc
+lib/python1.5/plat-${PY_PLATNAME}/CDROM.pyo
