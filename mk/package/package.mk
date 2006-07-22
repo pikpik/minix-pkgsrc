@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.13 2006/07/06 22:29:53 jlam Exp $
+# $NetBSD: package.mk,v 1.14 2006/07/07 21:24:28 jlam Exp $
 
 ######################################################################
 ### package (PUBLIC)
@@ -21,7 +21,7 @@ _PACKAGE_TARGETS+=	release-package-lock
 .  if exists(${_COOKIE.package})
 package:
 	@${DO_NADA}
-.  elif exists(${_COOKIE.barrier})
+.  elif defined(_PKGSRC_BARRIER)
 package: ${_PACKAGE_TARGETS}
 .  else
 package: barrier

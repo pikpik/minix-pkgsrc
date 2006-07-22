@@ -1,4 +1,4 @@
-# $NetBSD: configure.mk,v 1.6 2006/07/15 23:58:52 rillig Exp $
+# $NetBSD: configure.mk,v 1.7 2006/07/21 14:21:28 jlam Exp $
 #
 # CONFIGURE_SCRIPT is the path to the script to run in order to
 #	configure the software for building.  If the path is relative,
@@ -49,7 +49,7 @@ _CONFIGURE_TARGETS+=	release-configure-lock
 .  if exists(${_COOKIE.configure})
 configure:
 	@${DO_NADA}
-.  elif exists(${_COOKIE.barrier})
+.  elif defined(_PKGSRC_BARRIER)
 configure: ${_CONFIGURE_TARGETS}
 .  else
 configure: barrier
