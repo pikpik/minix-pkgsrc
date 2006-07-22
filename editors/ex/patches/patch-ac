@@ -1,6 +1,6 @@
 $NetBSD$
 
---- mapmalloc.c.orig	2003-01-28 20:04:25.000000000 +0000
+--- mapmalloc.c.orig	2003-01-28 12:04:25.000000000 -0800
 +++ mapmalloc.c
 @@ -54,6 +54,9 @@
  #include <fcntl.h>
@@ -16,7 +16,7 @@ $NetBSD$
  }
  
  /*ARGSUSED*/
-+#if defined(__DragonFly__)
++#if defined(__DragonFly__) || defined(__APPLE__)
 +void *
 +#else
  char *
