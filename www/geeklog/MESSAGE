@@ -1,8 +1,11 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1.1.1 2006/06/15 13:26:44 taca Exp $
+$NetBSD: MESSAGE,v 1.2 2006/06/18 08:34:05 taca Exp $
 
 To complete the setup, please read:
 
 	${PREFIX}/share/doc/geeklog/README
+
+And if you want to use image file uploading, please install one of these
+packages; ImageMagick, netpbm or php-gd.
 
 ===========================================================================
