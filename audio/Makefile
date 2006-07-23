@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.323 2006/07/08 04:32:54 ben Exp $
+# $NetBSD: Makefile,v 1.324 2006/07/12 13:16:51 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -169,6 +169,7 @@ SUBDIR+=	libvisual0.2-plugins
 SUBDIR+=	libvorbis
 SUBDIR+=	liteamp
 SUBDIR+=	liveice
+SUBDIR+=	lmms
 SUBDIR+=	mad
 SUBDIR+=	mad123
 SUBDIR+=	madman
