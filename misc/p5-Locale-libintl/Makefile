@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/17 20:58:38 adrianp Exp $
 
 P5_LIBINTL_VER=	1.16
 DISTNAME=	libintl-perl-${P5_LIBINTL_VER}
@@ -16,5 +16,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 PERL5_PACKLIST=		auto/libintl-perl/.packlist
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
