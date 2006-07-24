@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/07/23 04:07:34 minskim Exp $
+# $NetBSD: Makefile,v 1.41 2006/07/23 05:08:49 minskim Exp $
 
 DISTNAME=	cairo-1.2.0
 PKGREVISION=	2
@@ -41,6 +41,7 @@ CFLAGS+=			-c99
 
 TEST_TARGET=			check
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/glitz/buildlink3.mk"
