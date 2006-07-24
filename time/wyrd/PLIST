@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/wyrd
+man/man1/wyrd.1
+man/man5/wyrdrc.5
+share/examples/wyrd/wyrdrc
+@dirrm share/examples/wyrd
