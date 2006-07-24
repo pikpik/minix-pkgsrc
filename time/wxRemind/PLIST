@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/wxremalert
+bin/wxremdata
+bin/wxremind
+bin/wxremsetup
+${PYSITELIB}/wxRemind-0.6.18-py2.4.egg
