@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:47 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:31:12 jlam Exp $
 
 DISTNAME=		xfishtank-2.2
 PKGREVISION=		1
@@ -13,6 +13,6 @@ USE_IMAKE=		yes
 NO_INSTALL_MANPAGES=	yes
 
 post-patch:
-	cd ${WRKDIR}/xfishtank2.0; ${MAKE} clean
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${MAKEFLAGS} clean
 
 .include "../../mk/bsd.pkg.mk"
