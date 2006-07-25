@@ -1,4 +1,4 @@
-# $NetBSD: f2c.mk,v 1.5 2005/03/24 17:46:01 tv Exp $
+# $NetBSD: f2c.mk,v 1.6 2006/07/21 14:27:56 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -39,6 +39,8 @@
 COMPILER_F2C_MK=	defined
 
 .include "../../mk/bsd.prefs.mk"
+
+USE_LANGUAGES+=		c
 
 .if !empty(PKGPATH:Mlang/f2c) || !empty(PKGPATH:Mdevel/patch) || \
     !empty(PKGPATH:Mdevel/libtool-base)
