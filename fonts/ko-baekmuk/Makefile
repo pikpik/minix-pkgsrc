@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/17 19:35:25 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:39 jlam Exp $
 #
 
 DISTNAME=	baekmuk-2.0
@@ -35,6 +35,8 @@ REQD_DIRS+=		${FONTDIR}
 post-extract:
 	${MKDIR} ${WRKSRC}
 	${CP} ${.CURDIR}/../../fonts/ko-x11fonts/files/Makefile ${WRKSRC}
+
+do-configure:
 	cd ${WRKSRC} && ${MAKE} prepare
 
 pre-install:
