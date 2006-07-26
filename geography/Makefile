@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/11/15 02:11:43 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/05/02 20:37:09 wiz Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -11,6 +11,7 @@ SUBDIR+=	gpsdrive
 SUBDIR+=	gpspoint
 SUBDIR+=	gpsutils
 SUBDIR+=	mapserver
+SUBDIR+=	py-proj
 SUBDIR+=	shapelib
 SUBDIR+=	vis5d+
 SUBDIR+=	xrmap
