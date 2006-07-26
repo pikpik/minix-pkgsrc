@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libguile_proj.la
+${PYSITELIB}/_proj.so
+share/guile/site/proj.scm
