@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.clean.mk,v 1.4 2006/06/05 22:49:44 jlam Exp $
+# $NetBSD: bsd.pkg.clean.mk,v 1.5 2006/07/20 15:42:04 jlam Exp $
 #
 # This Makefile fragment is included to bsd.pkg.mk and defines the
 # relevant variables and targets for the "clean" phase.
@@ -33,7 +33,7 @@ clean-depends:
 	${_DEPENDS_WALK_CMD} ${PKGPATH} |				\
 	while read dir; do						\
 		cd ${.CURDIR}/../../$$dir &&				\
-		${MAKE} ${MAKEFLAGS} CLEANDEPENDS=no clean;		\
+		${RECURSIVE_MAKE} ${MAKEFLAGS} CLEANDEPENDS=no clean;	\
 	done
 
 .PHONY: pre-clean
