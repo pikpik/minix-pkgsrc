@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/13 10:29:32 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2006/07/14 07:44:21 wiz Exp $
 #
 
 DISTNAME=	hugelatex-2.0
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	# none
 DISTFILES=	# nada
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	LaTeX format files with large limits
 
 WRKSRC=		${WRKDIR}

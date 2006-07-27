@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/07 16:19:15 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2006/06/20 16:06:53 minskim Exp $
 #
 
 DISTNAME=	tetex-texmf-3.0
@@ -8,7 +8,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/unix/teTeX/3.0/distrib/}
 EXTRACT_SUFX=	.tar.gz
 
-MAINTAINER=	kei@NetBSD.org,hubertf@NetBSD.org
+MAINTAINER=	kei@NetBSD.org,pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Machine-independent part of teTeX
 

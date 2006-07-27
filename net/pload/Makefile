@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/01 18:03:08 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:10:29 joerg Exp $
 #
 
 DISTNAME=	pload-0.9.4
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	net x11
 MASTER_SITES=	http://www.engr.utk.edu/~mdsmith/pload/
 
-MAINTAINER=	hubertf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.engr.utk.edu/~mdsmith/pload/
 COMMENT=	PPP monitor for X11, monitoring totals and current in/out rates
 
