@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2005/12/29 06:22:24 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2006/01/05 22:46:12 joerg Exp $
 
 DISTNAME=	thttpd-2.25b
 PKGREVISION=	5
@@ -15,7 +15,7 @@ COMMENT=	Tiny/turbo/throttling HTTP server
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 NETBSD_LOGO=		sitedrivenby.gif
-SITES_${NETBSD_LOGO}=	http://www.NetBSD.org/images/logos/
+SITES.${NETBSD_LOGO}=	http://www.NetBSD.org/images/logos/
 
 GNU_CONFIGURE=	yes
 

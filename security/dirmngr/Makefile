@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/05/25 22:49:23 seb Exp $
+# $NetBSD: Makefile,v 1.23 2006/05/31 18:22:25 ghen Exp $
 #
 
 DISTNAME=		dirmngr-0.9.3
@@ -7,7 +7,7 @@ CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/alpha/dirmngr/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=		pth-2.0.4.tar.gz
-SITES_pth-2.0.4.tar.gz=	${MASTER_SITE_GNU:=pth/}
+SITES.pth-2.0.4.tar.gz=	${MASTER_SITE_GNU:=pth/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		shannonjr@NetBSD.org

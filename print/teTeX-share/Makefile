@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/01/20 23:41:30 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2006/01/21 18:57:42 jlam Exp $
 #
 
 DISTNAME=	tetex-texmf-2.0.2
@@ -14,7 +14,7 @@ MAINTAINER=	kei@NetBSD.org
 HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Machine-independent part of teTeX, version 2
 
-SITES_listings${EXTRACT_SUFX}= ${LOCAL_PORTS}
+SITES.listings${EXTRACT_SUFX}= ${LOCAL_PORTS}
 
 CONFLICTS+=	teTeX2-share-[0-9]*
 

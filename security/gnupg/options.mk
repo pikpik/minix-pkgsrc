@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2006/04/05 10:04:12 drochner Exp $
+# $NetBSD: options.mk,v 1.8 2006/05/31 18:22:25 ghen Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnupg
 PKG_SUPPORTED_OPTIONS=	curl idea ldap
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=	--without-libcurl
 # use of IDEA as crypto function
 LICENCE=	fee-based-commercial-use
 DISTFILES+=	idea.c.gz
-SITES_idea.c.gz=ftp://ftp.gnupg.dk/pub/contrib-dk/ \
+SITES.idea.c.gz=ftp://ftp.gnupg.dk/pub/contrib-dk/ \
 		http://www.gnupg.dk/contrib-dk/
 USE_TOOLS+=	gzcat
 

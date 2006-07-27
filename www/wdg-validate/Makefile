@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/07/16 19:10:41 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/04/22 09:22:17 rillig Exp $
 #
 
 DISTNAME=	validate-1.2.2
@@ -18,7 +18,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	validate
 EXTRACT_ONLY=	wdg-sgml-lib-1.1.4.tar.gz
-SITES_wdg-sgml-lib-1.1.4.tar.gz=	http://www.htmlhelp.com/tools/validator/src/
+SITES.wdg-sgml-lib-1.1.4.tar.gz=	http://www.htmlhelp.com/tools/validator/src/
 
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	validate
