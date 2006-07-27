@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PYSITELIB}/cmTemplate.py
+${PYSITELIB}/cmTemplate.pyc
+share/doc/${PYPKGPREFIX}-cmTemplate/cmTemplate.html
+@dirrm share/doc/${PYPKGPREFIX}-cmTemplate
