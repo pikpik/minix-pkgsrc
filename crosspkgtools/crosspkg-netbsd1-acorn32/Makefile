@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/07/02 12:36:43 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/07/06 21:14:19 jlam Exp $
 
 DISTNAME=	crosspkg-netbsd1-acorn32-1.6.2
 CATEGORIES=	crosspkgtools
@@ -35,7 +35,7 @@ CROSSFS_PLIST_FILES_CMD= \
 CROSSFS_PLIST_DIRS_CMD= \
 	(cd ${PREFIX};  ${FIND} crossfs/netbsd1-acorn32 -type d -print ) \
 	| ${SED} -e "s,^,@unexec ${RMDIR} -p %D/,"			\
-		 -e "s,\$$, 2>/dev/null || ${TRUE}","			\
+		 -e "s,\$$, 2>/dev/null || ${TRUE},"			\
 	| ${SORT} -ur
 GENERATE_PLIST+=	${CROSSFS_PLIST_FILES_CMD};
 GENERATE_PLIST+=	${CROSSFS_PLIST_DIRS_CMD};
