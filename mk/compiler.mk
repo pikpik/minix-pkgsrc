@@ -1,4 +1,4 @@
-# $NetBSD: compiler.mk,v 1.53 2006/07/20 16:44:01 rillig Exp $
+# $NetBSD: compiler.mk,v 1.54 2006/07/22 05:01:17 rillig Exp $
 #
 # This Makefile fragment implements handling for supported C/C++/Fortran
 # compilers.
@@ -162,8 +162,8 @@ fail-wrapper: .USE
 	exec 1>${.TARGET};						\
 	${ECHO} '#!'${TOOLS_SHELL:Q};					\
 	${ECHO} 'wrapperlog="$${TOOLS_WRAPPER_LOG-'${_TOOLS_WRAP_LOG:Q}'}"'; \
-	${ECHO} ${ECHO:Q} '"*** Please add USE_LANGUAGES+='${.TARGET:T:S/-fail-wrapper//:Q}' to the package Makefile." >> $$wrapperlog'; \
-	${ECHO} ${ECHO:Q} '"*** Please add USE_LANGUAGES+='${.TARGET:T:S/-fail-wrapper//:Q}' to the package Makefile." > ${WARNING_DIR}/${.TARGET:T}'; \
+	${ECHO} ${ECHO:Q} '"*** Please consider adding USE_LANGUAGES+='${.TARGET:T:S/-fail-wrapper//:Q}' to the package Makefile." >> $$wrapperlog'; \
+	${ECHO} ${ECHO:Q} '"*** Please consider adding USE_LANGUAGES+='${.TARGET:T:S/-fail-wrapper//:Q}' to the package Makefile." > ${WARNING_DIR}/${.TARGET:T}'; \
 	${ECHO} 'exit 1'
 	${_PKG_SILENT}${_PKG_DEBUG}${CHMOD} +x ${.TARGET}
 
