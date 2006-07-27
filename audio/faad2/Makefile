@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/05/30 20:53:48 tron Exp $
+# $NetBSD: Makefile,v 1.36 2006/06/12 16:28:05 wiz Exp $
 
 DISTNAME=	faad2-2.0
 PKGREVISION=	8
@@ -14,7 +14,7 @@ NO_BIN_ON_FTP=	${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/faad2
-USE_TOOLS+=	automake14 gmake
+USE_TOOLS+=	automake gmake
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	YES
 
