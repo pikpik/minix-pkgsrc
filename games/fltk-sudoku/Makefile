@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2006/06/01 13:14:18 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/18 17:40:40 reinoud Exp $
 
 DISTNAME=	fltk-1.1.7-source
 PKGNAME=	fltk-sudoku-1.1.7
@@ -18,7 +18,7 @@ HOMEPAGE=	http://www.easysw.com/~mike/sudoku/index.html
 COMMENT=	FLTK example Sudoku game creator and solver
 
 WRKSRC=			${WRKDIR}/${DISTNAME:S/-source//}
-USE_LANGUAGES=		c++
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 
