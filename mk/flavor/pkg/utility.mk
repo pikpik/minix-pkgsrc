@@ -1,4 +1,4 @@
-# $NetBSD: utility.mk,v 1.1 2006/06/03 23:11:42 jlam Exp $
+# $NetBSD: utility.mk,v 1.2 2006/07/27 21:46:46 jlam Exp $
 
 ######################################################################
 ###
@@ -50,7 +50,8 @@ show-installed-depends:
 show-needs-update:
 .if !empty(DEPENDS)
 	${_PKG_SILENT}${_PKG_DEBUG}					\
-	for i in `${RECURSIVE_MAKE} show-all-depends-dirs`; do		\
+	${_DEPENDS_WALK_CMD} -r ${PKGPATH} |				\
+	while read i; do						\
 		cd ${PKGSRCDIR}/$$i;					\
 		eval `${RECURSIVE_MAKE} show-vars-eval VARS='PKGNAME:want PKGWILDCARD:wild'`; \
 		have=`${_PKG_BEST_EXISTS} "$$wild" || ${TRUE}`;		\
