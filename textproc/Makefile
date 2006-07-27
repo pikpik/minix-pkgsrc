@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.326 2006/07/10 11:49:19 rillig Exp $
+# $NetBSD: Makefile,v 1.327 2006/07/12 17:44:29 heinz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -251,6 +251,7 @@ SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-Lupy
 SUBDIR+=	py-Reverend
 SUBDIR+=	py-SimpleParse
+SUBDIR+=	py-cmTemplate
 SUBDIR+=	py-csv
 SUBDIR+=	py-docutils
 SUBDIR+=	py-dtml
