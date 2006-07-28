@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/07/15 18:27:53 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/09/28 20:52:25 rillig Exp $
 #
 
 DISTNAME=	prereq-readme-20050521
@@ -25,6 +25,7 @@ USE_TOOLS+=	expr
 USE_TOOLS+=	fgrep
 USE_TOOLS+=	find
 USE_TOOLS+=	grep
+USE_TOOLS+=	gzip
 USE_TOOLS+=	sed
 USE_TOOLS+=	setenv
 USE_TOOLS+=	sort
