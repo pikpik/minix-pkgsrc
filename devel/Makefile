@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.770 2006/07/17 22:43:11 wiz Exp $
+# $NetBSD: Makefile,v 1.771 2006/07/21 19:54:05 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -485,6 +485,7 @@ SUBDIR+=	p5-PerlIO-via-dynamic
 SUBDIR+=	p5-PerlIO-via-symlink
 SUBDIR+=	p5-Proc-Daemon
 SUBDIR+=	p5-Proc-PID-File
+SUBDIR+=	p5-Proc-Simple
 SUBDIR+=	p5-Regexp-Shellish
 SUBDIR+=	p5-SDL
 SUBDIR+=	p5-SVN-Mirror
