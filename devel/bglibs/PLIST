@@ -74,6 +74,7 @@ lib/bglibs/crypto/sha256.a
 lib/bglibs/crypto/sha512a.a
 lib/bglibs/dict/dict.a
 lib/bglibs/dict/load.a
+lib/bglibs/dl.lib
 lib/bglibs/iobuf/iobuf.a
 lib/bglibs/iobuf/str.a
 lib/bglibs/libbg-adt.a
@@ -93,9 +94,9 @@ lib/bglibs/libbg-msg.a
 lib/bglibs/libbg-net.a
 lib/bglibs/libbg-path.a
 lib/bglibs/libbg-str.a
-lib/bglibs/libbg-sysdeps.a
+lib/bglibs/libbg-sysdeps.la
 lib/bglibs/libbg-unix.a
-lib/bglibs/libbg.a
+lib/bglibs/libbg.la
 lib/bglibs/libinstaller.a
 lib/bglibs/libinstcheck.a
 lib/bglibs/libinstshow.a

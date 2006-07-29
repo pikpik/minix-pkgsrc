@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2006/02/24 14:55:45 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/23 20:17:10 schmonz Exp $
 #
 
-DISTNAME=		bglibs-1.041
+DISTNAME=		bglibs-1.100
 CATEGORIES=		devel
 MASTER_SITES=		${HOMEPAGE}
 
@@ -11,6 +11,7 @@ COMMENT=		Collection of libraries by Bruce Guenter
 
 USE_TOOLS+=		perl:run
 MAKE_ENV+=		PERL5=${TOOLS_PERL5:Q}
+USE_LIBTOOL=		yes
 
 DJB_RESTRICTED=		NO
 DJB_MAKE_TARGETS=	NO
