@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/ggi/input/linux_evdev.la
+lib/ggi/input/linux_joy.la
+lib/ggi/input/linux_kbd.la
