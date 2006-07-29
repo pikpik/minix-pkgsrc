@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2005/12/29 06:21:50 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/07/10 22:59:26 jlam Exp $
 #
 
-DISTNAME=		mailfront-0.98
+DISTNAME=		mailfront-0.98.1
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
