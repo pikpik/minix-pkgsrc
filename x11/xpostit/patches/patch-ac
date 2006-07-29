@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- util.c.orig	1992-12-11 13:04:17.000000000 +0000
++++ util.c
+@@ -45,6 +45,7 @@ static char	*RCSid = "$Header: /home/har
+ #include <X11/Intrinsic.h>
+ #include <sys/param.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <pwd.h>
+ 
+ #include "xpostit.h"
+@@ -129,7 +130,6 @@ char *
+ SafeAlloc(nbytes)
+ register int nbytes;
+ {
+-	char *malloc();
+ 	register char *s;
+ 
+ 	if ((s = malloc(nbytes)) == NULL) {
