@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.88 2006/03/04 21:31:10 jlam Exp $
+# $NetBSD: Makefile,v 1.89 2006/03/14 01:14:35 jlam Exp $
 
-DISTNAME=	lesstif-0.94.4
-PKGREVISION=	2
+DISTNAME=	lesstif-0.95.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lesstif/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +11,8 @@ COMMENT=	API compatible clone of the OSF/Motif toolkit
 
 CONFLICTS+=	openmotif-[0-9]*
 
-USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
+USE_TOOLS+=		gmake
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-production --disable-debug --disable-verbose
