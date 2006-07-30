@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2006/05/15 10:37:33 abs Exp $
+# $NetBSD: Makefile,v 1.56 2006/06/12 16:28:11 wiz Exp $
 
 DISTNAME=	blender-2.41
 PKGREVISION=	3
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=		scons>=0.96:../../devel/scons
 WRKSRC=			${WRKDIR}/blender
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
-USE_LANGUAGES+=		c++ 
+USE_LANGUAGES=		c c++ 
 
 LDFLAGS+=		-lcrypto
 
