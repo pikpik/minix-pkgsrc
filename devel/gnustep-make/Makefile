@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2006/07/22 05:10:54 rillig Exp $
+# $NetBSD: Makefile,v 1.31 2006/07/28 01:50:58 minskim Exp $
 
 DISTNAME=	gnustep-make-1.12.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 
@@ -15,6 +15,8 @@ USE_LANGUAGES=	objc
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		INSTALL_PROGRAM=${INSTALL_SCRIPT:Q}
+CONFIGURE_ARGS+=	--disable-importing-config-file
+CONFIGURE_ARGS+=	--with-config-file=${PREFIX}/etc/GNUstep.conf
 
 CONF_FILES+=		${PREFIX}/share/examples/GNUstep/GNUstep.conf \
 			${PREFIX}/etc/GNUstep.conf
