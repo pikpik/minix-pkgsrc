@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/07/08 22:39:03 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/07/08 23:10:38 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LOUDMOUTH_BUILDLINK3_MK:=	${LOUDMOUTH_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}loudmouth
 
 .if !empty(LOUDMOUTH_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.loudmouth+=	loudmouth>=1.0
-BUILDLINK_ABI_DEPENDS.loudmouth?=	loudmouth>=1.0.1nb2
+BUILDLINK_ABI_DEPENDS.loudmouth+=	loudmouth>=1.0.1nb2
 BUILDLINK_PKGSRCDIR.loudmouth?=	../../chat/loudmouth
 .endif	# LOUDMOUTH_BUILDLINK3_MK
 
