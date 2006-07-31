@@ -23,12 +23,16 @@ include/cvm/sasl.h
 include/cvm/v1client.h
 include/cvm/v2client.h
 lib/libcvm-client.a
-lib/libcvm-command.a
-lib/libcvm-local.a
-lib/libcvm-module.a
-lib/libcvm-sasl.a
-lib/libcvm-udp.a
-lib/libcvm-v1client.a
-lib/libcvm-v2client.a
+lib/libcvm-client.la
+lib/libcvm-client.so
+lib/libcvm-command.la
+lib/libcvm-local.la
+lib/libcvm-module.la
+lib/libcvm-qmail.la
+lib/libcvm-sasl.la
+lib/libcvm-sql.la
+lib/libcvm-udp.la
+lib/libcvm-v1client.la
+lib/libcvm-v2client.la
 share/examples/rc.d/cvm
 @dirrm include/cvm
