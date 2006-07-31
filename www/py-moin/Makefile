@@ -7,10 +7,10 @@ CATEGORIES=	www python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=moin/}
 
 MAINTAINER=	joerg@NetBSD.org
-HOMEPAGE=	http://moinmoin.wiwiwiwiweb.de
-COMMENT=	A Python clone of WikiWiki
+HOMEPAGE=	http://moinmoin.wiwiwiwiweb.de/
+COMMENT=	Python clone of WikiWiki
 
-PYDISTUTILSPKG=	# defined
+PYDISTUTILSPKG=	# empty
 PYTHON_VERSIONS_ACCEPTED=	24 23
 
 REPLACE_INTERPRETER+=	env_python
