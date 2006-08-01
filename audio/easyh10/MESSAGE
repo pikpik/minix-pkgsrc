@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+For convenience you should copy the proper model template file from
+${PREFIX}/share/easyh10/model/ to "easyh10.model" or "easyh10/model"
+under the root of your H10's filesystem.
+===========================================================================
