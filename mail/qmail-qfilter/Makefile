@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2005/12/29 06:21:53 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/22 09:22:11 rillig Exp $
 #
 
 DISTNAME=		qmail-qfilter-2.1
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
