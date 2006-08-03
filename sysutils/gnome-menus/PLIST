@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2006/04/16 12:05:33 wiz Exp $
+@comment $NetBSD: PLIST,v 1.9 2006/04/17 07:07:34 jlam Exp $
 bin/gnome-menu-spec-test
 include/gnome-menus/gmenu-tree.h
 lib/libgnome-menu.la
@@ -65,7 +65,6 @@ share/locale/nb/LC_MESSAGES/gnome-menus.mo
 share/locale/ne/LC_MESSAGES/gnome-menus.mo
 share/locale/nl/LC_MESSAGES/gnome-menus.mo
 share/locale/nn/LC_MESSAGES/gnome-menus.mo
-share/locale/no/LC_MESSAGES/gnome-menus.mo
 share/locale/pa/LC_MESSAGES/gnome-menus.mo
 share/locale/pl/LC_MESSAGES/gnome-menus.mo
 share/locale/pt/LC_MESSAGES/gnome-menus.mo
