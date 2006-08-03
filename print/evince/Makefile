@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2006/05/31 18:17:23 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2006/06/21 16:12:14 jlam Exp $
 #
 
 .include "../../print/evince/Makefile.common"
 
-PKGREVISION=		1
 COMMENT=		Document viewer for the GNOME Desktop
 
 GCONF2_SCHEMAS=		evince.schemas
