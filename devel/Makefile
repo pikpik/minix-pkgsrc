@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.771 2006/07/21 19:54:05 minskim Exp $
+# $NetBSD: Makefile,v 1.772 2006/07/29 00:40:02 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -197,6 +197,8 @@ SUBDIR+=	hdf
 SUBDIR+=	hdf5
 SUBDIR+=	hptools
 SUBDIR+=	ht
+SUBDIR+=	hugs-HUnit
+SUBDIR+=	hugs-unix
 SUBDIR+=	id-utils
 SUBDIR+=	idiff
 SUBDIR+=	intel2gas
