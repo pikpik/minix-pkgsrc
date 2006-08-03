@@ -1,4 +1,4 @@
-# $NetBSD: deinstall.mk,v 1.2 2006/06/05 17:41:11 jlam Exp $
+# $NetBSD: deinstall.mk,v 1.3 2006/06/05 22:49:44 jlam Exp $
 
 # DEINSTALLDEPENDS controls whether dependencies and dependents are also
 # removed when a package is de-installed.  The valid values are:
@@ -21,7 +21,7 @@ deinstall: su-target
 	@${PHASE_MSG} "Deinstalling for ${PKGNAME}"
 .endif
 
-su-deinstall: deinstall-pkg install-clean
+su-deinstall: acquire-install-lock deinstall-pkg release-install-lock install-clean
 
 MAKEFLAGS.su-deinstall=	DEINSTALLDEPENDS=${DEINSTALLDEPENDS}
 
