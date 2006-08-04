@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.45 2006/04/08 21:20:06 jlam Exp $
+# $NetBSD: Makefile,v 1.46 2006/04/13 18:23:31 jlam Exp $
 
-DISTNAME=	id-utils-3.2
-PKGREVISION=	9
+DISTNAME=	idutils-4.1
+#PKGREVISION=	0
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU:=id-utils/}
+MASTER_SITES=	${MASTER_SITE_GNU:=idutils/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/idutils/idutils.html
@@ -28,6 +28,6 @@ REQD_DIRS=		${LISPDIR}
 .include "../../devel/gettext-lib/buildlink3.mk"
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/lisp/id-utils.el ${LISPDIR}
+	${INSTALL_DATA} ${WRKSRC}/lisp/idutils.el ${LISPDIR}
 
 .include "../../mk/bsd.pkg.mk"
