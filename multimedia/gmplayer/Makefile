@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2006/07/20 22:09:02 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2006/07/27 18:48:03 jlam Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -10,10 +10,12 @@
 
 PKGNAME=	gmplayer-${MPLAYER_PKG_VERSION}
 
-SKIN_SITES=	http://www1.mplayerhq.hu/MPlayer/Skin/		\
-		ftp://ftp1.mplayerhq.hu/MPlayer/Skin/		\
-		http://ftp5.mplayerhq.hu/mplayer/Skin/		\
-		ftp://ftp5.mplayerhq.hu/mplayer/Skin/		\
+SKIN_SITES=	http://www1.mplayerhq.hu/MPlayer/skins/		\
+		http://www2.mplayerhq.hu/MPlayer/skins/		\
+		ftp://ftp1.mplayerhq.hu/MPlayer/skins/		\
+		ftp://ftp2.mplayerhq.hu/MPlayer/skins/		\
+		http://ftp5.mplayerhq.hu/MPlayer/skins/		\
+		ftp://ftp5.mplayerhq.hu/MPlayer/skins/		\
 		ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/mplayer/ \
 		${MASTER_SITE_LOCAL:=mplayer}
 
