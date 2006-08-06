@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/trang
+libexec/trang/trang.jar
+share/doc/trang/copying.txt
+share/doc/trang/trang-manual.html
+@dirrm share/doc/trang
+@dirrm libexec/trang
