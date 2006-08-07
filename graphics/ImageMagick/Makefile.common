@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.59 2006/07/31 14:55:36 adam Exp $
+# $NetBSD: Makefile.common,v 1.60 2006/08/07 01:08:04 perry Exp $
 
 ###########################################################################
 #
@@ -8,6 +8,9 @@
 # remove its PKGREVISION upon update of ImageMagick!
 #
 ###########################################################################
+
+# XXX - REMOVE BELOW LINE WHEN UPDATING TO NEW VERSION - XXX
+DIST_SUBDIR=		${DISTNAME}-20060807
 
 IM_MAJOR_VER=		6.2.8
 IM_MINOR_VER=		8
