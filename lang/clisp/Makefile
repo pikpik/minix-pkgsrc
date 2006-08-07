@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2006/07/20 23:05:43 perry Exp $
+# $NetBSD: Makefile,v 1.56 2006/07/21 06:03:49 wiz Exp $
 
 DISTNAME=	clisp-2.39
 CATEGORIES=	lang
@@ -21,6 +21,7 @@ PKG_INSTALLATION_TYPES= overwrite pkgviews
 MODULES+=		--disable-mmap
 .endif
 
+USE_TOOLS+=		dvipdf
 USE_PKGLOCALEDIR=	YES
 BUILD_DIRS=		src
 CONFIGURE_DIRS=		. modules/i18n modules/syscalls modules/pcre modules/rawsock \
