@@ -1,11 +1,11 @@
-# $NetBSD: pyversion.mk,v 1.41 2006/06/15 16:16:12 joerg Exp $
+# $NetBSD: pyversion.mk,v 1.42 2006/06/30 07:15:30 joerg Exp $
 
 .if !defined(PYTHON_PYVERSION_MK)
 PYTHON_PYVERSION_MK=	defined
 
 .include "../../mk/bsd.prefs.mk"
 
-PYTHON_VERSION_DEFAULT?=		23
+PYTHON_VERSION_DEFAULT?=		24
 .if ${OPSYS} == "Darwin"
 PYTHON_VERSIONS_INCOMPATIBLE+=		22 21 20 15
 .endif
