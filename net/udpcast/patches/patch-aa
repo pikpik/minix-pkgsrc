@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- statistics.c.orig	2005-12-22 22:59:18.000000000 +0000
++++ statistics.c
+@@ -37,7 +37,7 @@ void receiverStatsStartTimer(receiver_st
+ static void printFilePosition(int fd) {
+ #ifndef WINDOWS
+     if(fd != -1) {
+-	loff_t offset = lseek64(fd, 0, SEEK_CUR);
++	off_t offset = lseek(fd, 0, SEEK_CUR);
+ 	printLongNum(offset);
+     }
+ #endif

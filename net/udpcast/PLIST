@@ -1,0 +1,5 @@
+@comment $NetBSD$
+sbin/udp-receiver
+sbin/udp-sender
+man/man1/udp-receiver.1
+man/man1/udp-sender.1
