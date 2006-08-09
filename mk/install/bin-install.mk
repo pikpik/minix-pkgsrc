@@ -1,4 +1,4 @@
-# $NetBSD: bin-install.mk,v 1.2 2006/08/04 07:17:58 rillig Exp $
+# $NetBSD: bin-install.mk,v 1.3 2006/08/04 20:52:27 rillig Exp $
 #
 
 # This file provides the following targets:
@@ -34,7 +34,6 @@ release-bin-install-lock: release-localbase-lock
 # Install binary pkg, without strict uptodate-check first
 .PHONY: su-bin-install
 su-bin-install: ${_SU_BIN_INSTALL_TARGETS}
-.ORDER: ${_SU_BIN_INSTALL_TARGETS}
 
 locked-su-bin-install:
 	@found=`${PKG_BEST_EXISTS} \"${PKGWILDCARD}\" || ${TRUE}`;	\
