@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- xpaint.h.orig	1998-04-13 00:27:17.000000000 -0400
++++ xpaint.h
+@@ -45,8 +45,6 @@
+ #define NULL 0
+ #endif				/* AIXV3 */
+ 
+-extern int nib;
+-
+ extern struct Global_s {
+     struct {
+ 	void *image;
