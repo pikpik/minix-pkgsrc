@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2006/04/13 18:23:31 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/06/20 22:09:16 minskim Exp $
 
-DISTNAME=	cook-2.22
-PKGREVISION=	3
+DISTNAME=	cook-2.26
 CATEGORIES=	devel
 MASTER_SITES=	http://www.canb.auug.org.au/~millerp/cook/
 
