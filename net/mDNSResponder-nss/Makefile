@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/04 21:30:20 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/10 17:35:30 drochner Exp $
 
 DISTNAME=	mDNSResponder-108
 PKGNAME=	mDNSResponder-nss-108
@@ -10,7 +10,7 @@ HOMEPAGE=	http://developer.apple.com/darwin/projects/bonjour/
 COMMENT=	Apple's mDNS responder - NetBSD nsswitch module
 
 # needs nsswitch
-ONLY_FOR_PLATFORM=	NetBSD-3.*-*
+ONLY_FOR_PLATFORM=	NetBSD-[3-9]*-*
 
 post-extract:
 	${CP} ${FILESDIR}/netbsd.c ${FILESDIR}/netbsd.h ${WRKSRC}/mDNSPosix
