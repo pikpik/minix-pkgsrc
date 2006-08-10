@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/05/13 03:44:24 minskim Exp $
+# $NetBSD: Makefile,v 1.24 2006/06/18 00:30:10 rillig Exp $
 
 DISTNAME=		advi-1.6.0
 PKGREVISION=		4
@@ -12,7 +12,7 @@ COMMENT=		Active-DVI Presenter
 
 BUILD_DEPENDS+=		ocaml>=3.04:../../lang/ocaml
 
-TEX_ACCEPTED=		teTeX2 teTeX3
+TEX_ACCEPTED=		teTeX3
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake gs:run
