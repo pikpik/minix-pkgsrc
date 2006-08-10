@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2006/06/11 06:15:43 minskim Exp $
+# $NetBSD: Makefile,v 1.159 2006/06/30 13:44:05 salo Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -26,7 +26,6 @@ SUBDIR+=	cnprint
 SUBDIR+=	cups
 SUBDIR+=	dvidvi
 SUBDIR+=	dvipdfmx
-SUBDIR+=	dvipng
 SUBDIR+=	enscript
 SUBDIR+=	epstool
 SUBDIR+=	evince
@@ -125,7 +124,6 @@ SUBDIR+=	tex-musixtex
 SUBDIR+=	tex-ocrb
 SUBDIR+=	tex-passivetex
 SUBDIR+=	tex-prosper
-SUBDIR+=	tex-textpos
 SUBDIR+=	tex-ucs
 SUBDIR+=	texmf-dirs
 SUBDIR+=	transfig
