@@ -1,4 +1,4 @@
-/*	$NetBSD: kver.c,v 1.7 2005/03/30 06:41:01 seb Exp $	*/
+/*	$NetBSD: kver.c,v 1.8 2006/04/09 17:47:46 cube Exp $	*/
 
 #include <sys/types.h>
 #include <sys/param.h>
@@ -6,6 +6,7 @@
 #include <sys/utsname.h>
 #include <assert.h>
 #include <errno.h>
+#include <stdio.h>
 #include <string.h>
 #include <err.h>
 #include <stdlib.h>
