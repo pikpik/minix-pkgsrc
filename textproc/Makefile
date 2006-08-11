@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.330 2006/08/04 14:43:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.331 2006/08/06 17:38:30 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -248,6 +248,7 @@ SUBDIR+=	php5-xsl
 SUBDIR+=	po4a
 SUBDIR+=	postgresql-autodoc
 SUBDIR+=	psgml-mode
+SUBDIR+=	pxp
 SUBDIR+=	py-FourSuite
 SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-Lupy
