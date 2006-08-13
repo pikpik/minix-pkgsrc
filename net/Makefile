@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.634 2006/08/09 18:20:46 tv Exp $
+# $NetBSD: Makefile,v 1.635 2006/08/11 15:45:40 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -336,6 +336,11 @@ SUBDIR+=	pload
 SUBDIR+=	poink
 SUBDIR+=	polsms
 SUBDIR+=	poptop
+SUBDIR+=	powerdns
+SUBDIR+=	powerdns-ldap
+SUBDIR+=	powerdns-mysql
+SUBDIR+=	powerdns-pgsql
+SUBDIR+=	powerdns-sqlite
 SUBDIR+=	ppp-lzs
 SUBDIR+=	pppd
 SUBDIR+=	pptp
