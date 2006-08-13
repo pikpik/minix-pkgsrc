@@ -1,2 +1,2 @@
 @comment $NetBSD$
-lib/pdns/libgmysqlbackend.la
+lib/pdns/libgpgsqlbackend.la
