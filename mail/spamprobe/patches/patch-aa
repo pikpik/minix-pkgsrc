@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/spamprobe/Command_import.cc.orig	2006-01-04 14:32:17.000000000 +0000
++++ src/spamprobe/Command_import.cc
+@@ -28,6 +28,7 @@
+ //    http://www.cooldevtools.com/qpl.html
+ //
+ 
++#include <assert.h>
+ #include <fstream>
+ #include "LineReader.h"
+ #include "IstreamCharReader.h"
