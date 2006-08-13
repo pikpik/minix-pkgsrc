@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:29:12 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/07/12 14:30:55 wiz Exp $
 #
 
-DISTNAME=		bzr-0.8.2
+DISTNAME=		bzr-0.9
 CATEGORIES=		devel
 MASTER_SITES=		http://www.bazaar-ng.org/pkg/
 
