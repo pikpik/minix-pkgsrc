@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.271 2006/07/17 23:39:52 wiz Exp $
+# $NetBSD: Makefile,v 1.272 2006/07/27 14:54:07 rillig Exp $
 #
 
 COMMENT=	Games
@@ -69,7 +69,6 @@ SUBDIR+=	exult
 SUBDIR+=	falcons-eye
 SUBDIR+=	fillets-ng
 SUBDIR+=	fillets-ng-data
-SUBDIR+=	fillets-ng-data-cs
 SUBDIR+=	finalbattle
 SUBDIR+=	fire
 SUBDIR+=	fkiss
