@@ -1,9 +1,8 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: upsmon.sh,v 1.5 2003/01/26 00:48:24 fredb Exp $
+# $NetBSD: upsmon.sh,v 1.6 2004/02/15 13:14:25 lukem Exp $
 #
 # PROVIDE: upsmon
-# REQUIRE: upsd
 # KEYWORD: shutdown
 
 if [ -f /etc/rc.subr ]
