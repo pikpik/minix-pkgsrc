@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/04/12 17:09:18 zuntum Exp $
+@comment $NetBSD$
 bin/Packer
 bin/critter
 man/man6/critter.6
