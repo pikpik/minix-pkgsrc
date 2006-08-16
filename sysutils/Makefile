@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.368 2006/07/25 16:31:08 salo Exp $
+# $NetBSD: Makefile,v 1.369 2006/08/13 20:04:36 adrianp Exp $
 #
 
 COMMENT=	System utilities
@@ -232,6 +232,7 @@ SUBDIR+=	toshutils
 SUBDIR+=	tpb
 SUBDIR+=	ups-nut
 SUBDIR+=	ups-nut-cgi
+SUBDIR+=	ups-nut-usb
 SUBDIR+=	usbutil
 SUBDIR+=	user
 SUBDIR+=	user_darwin
