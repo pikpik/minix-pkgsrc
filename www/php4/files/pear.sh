@@ -1,4 +1,6 @@
 #!@SH@
+#
+# $NetBSD$
 
 # first find which PHP binary to use
 if test "x$PHP_PEAR_PHP_BIN" != "x"; then
