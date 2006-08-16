@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2006/08/09 11:26:36 abs Exp $
+# $NetBSD: Makefile,v 1.65 2006/08/09 14:23:10 ghen Exp $
 
 DISTNAME=		dovecot-1.0.rc6
 PKGNAME=		${DISTNAME:S/.rc/rc/}
@@ -19,7 +19,6 @@ USE_TOOLS+=		pkg-config
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--with-ssldir=${SSLDIR:Q}
-CONFIGURE_ARGS+=	--with-ioloop=best
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
