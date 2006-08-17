@@ -1,7 +1,7 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2006/02/18 17:19:20 bouyer Exp $
+# $NetBSD: Makefile.common,v 1.2 2006/03/08 12:30:33 joerg Exp $
 #
 
-PLUGINSVERSION=	1.4.2
+PLUGINSVERSION=	1.4.3
 DISTNAME=	nagios-plugins-${PLUGINSVERSION}
 
 .include "../../net/nagios-base/Makefile.common"
