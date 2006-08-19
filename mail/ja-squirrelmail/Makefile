@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2006/06/04 12:31:31 tron Exp $
+# $NetBSD: Makefile,v 1.31 2006/08/17 13:24:45 taca Exp $
 
 DISTNAME=	squirrelmail-1.4.8
 PKGNAME=	ja-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=squirrelmail/}
 EXTRACT_SUFX=	.tar.bz2
@@ -25,6 +26,7 @@ USE_LANGUAGES=	# empty
 NO_BUILD=	yes
 USE_TOOLS+=	perl:run
 REPLACE_PERL+=	config/conf.pl
+BUILD_DEFS+=	APACHE_GROUP APACHE_USER VARBASE
 
 .include "../../mk/bsd.prefs.mk"
 
