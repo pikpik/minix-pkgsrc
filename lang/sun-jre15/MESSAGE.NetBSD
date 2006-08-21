@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE.NetBSD,v 1.7 2004/05/22 21:32:34 jmmv Exp $
+$NetBSD: MESSAGE.NetBSD,v 1.1.1.1 2004/09/30 22:11:53 rh Exp $
 
 In order to be able to run the JVM, you will need to compile your kernel
 with the following options:
@@ -17,6 +17,6 @@ You may want to read
 
 	${JAVA_HOME}/README
 
-for details about running this JDK.
+for details about running this JRE.
 
 ===========================================================================
