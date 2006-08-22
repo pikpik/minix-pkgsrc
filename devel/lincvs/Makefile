@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/04/17 13:46:21 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2006/05/22 16:51:42 wiz Exp $
 
 DISTNAME=		lincvs-1.4.4-0-generic-src
 PKGNAME=		${DISTNAME:S/-0-generic-src//}
@@ -16,7 +16,7 @@ USE_LANGUAGES=		c c++
 SUBST_CLASSES+=		qmake
 SUBST_STAGE.qmake=	post-patch
 SUBST_FILES.qmake=	lincvs.pro
-SUBST_SED.qmake=	-e 's,%%QTDIR%%,${PREFIX}${QTDIR},'
+SUBST_SED.qmake=	-e 's,%%QTDIR%%,${QTDIR},'
 
 SUBST_CLASSES+=		appdir
 SUBST_STAGE.appdir=	post-patch
