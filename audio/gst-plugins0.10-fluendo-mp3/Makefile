@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/26 13:12:34 drochner Exp $
 #
 
 DISTNAME=		gst-fluendo-mp3-0.10.2
@@ -12,6 +12,7 @@ COMMENT=		mp3 decoder for gstreamer
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		pkg-config
 
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
