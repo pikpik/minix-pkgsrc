@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/09 10:04:12 wiz Exp $
 #
 
 DISTNAME=		udpcast-20060619
@@ -17,4 +17,5 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/udp-receiver.1 ${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_MAN} ${WRKSRC}/udp-sender.1 ${PREFIX}/${PKGMANDIR}/man1
 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
