@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/04/17 13:46:43 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2006/08/05 12:20:34 adam Exp $
 
 DISTNAME=	etherape-0.9.6
 CATEGORIES=	gnome net
@@ -30,4 +30,5 @@ post-install:
 .include "../../net/libpcap/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../textproc/scrollkeeper/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
