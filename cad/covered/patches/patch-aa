@@ -1,10 +1,10 @@
 $NetBSD$
 
---- doc/Makefile.orig	Sun Aug 17 03:13:41 2003
+--- doc/Makefile.orig	2003-08-17 03:13:41.000000000 +0000
 +++ doc/Makefile
-@@ -1,13 +1,13 @@
+@@ -1,13 +1,12 @@
  all:
- 	- doxygen covered.dox
+-	- doxygen covered.dox
 -	- cd ./user; make all
 +	- cd ./user; ${MAKE} all
  
