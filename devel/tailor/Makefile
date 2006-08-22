@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/04/03 20:15:09 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/05/30 21:16:56 wiz Exp $
 #
 
-DISTNAME=		tailor-0.9.23
+DISTNAME=		tailor-0.9.26
 CATEGORIES=		devel
 MASTER_SITES=		http://darcs.arstecnica.it/
 
