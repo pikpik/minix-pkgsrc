@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.231 2006/05/15 19:44:06 tv Exp $
+# $NetBSD: Makefile,v 1.232 2006/05/19 07:50:00 rillig Exp $
 #
 
 COMMENT=	Programming languages
@@ -83,6 +83,7 @@ SUBDIR+=	librep
 SUBDIR+=	libtcl-nothread
 SUBDIR+=	lua
 SUBDIR+=	lua4
+SUBDIR+=	lush
 SUBDIR+=	maude
 SUBDIR+=	mawk
 SUBDIR+=	mercury
