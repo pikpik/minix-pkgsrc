@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/07 13:38:34 is Exp $
+@comment $NetBSD$
 share/doc/html/libpqxx/Reference/all_8h-source.html
 share/doc/html/libpqxx/Reference/all_8h.html
 share/doc/html/libpqxx/Reference/annotated.html
@@ -55,6 +55,8 @@ share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1disable__noticer-membe
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1disable__noticer.html
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1namedclass-members.html
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1namedclass.html
+share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1scoped__array-members.html
+share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1scoped__array.html
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1scoped__noticer-members.html
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1scoped__noticer.html
 share/doc/html/libpqxx/Reference/classpqxx_1_1internal_1_1transactionfocus-members.html
