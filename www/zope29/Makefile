@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2006/08/17 11:57:24 darcy Exp $
 # FreeBSD Id: ports/www/zope29/Makefile,v 1.86 2006/08/03 15:53:04 garga Exp
 
 DISTNAME=	Zope-2.9.4-final
 PKGNAME=	zope-2.9.4
 CATEGORIES=	www python
-MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
+MASTER_SITES=	http://www.zope.org/Products/Zope/${PKGVERSION}/
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	zope
 
