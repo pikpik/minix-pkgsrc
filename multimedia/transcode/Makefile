@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/06/12 16:28:13 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2006/08/06 05:16:51 kristerw Exp $
 #
 
 DISTNAME=	transcode-1.0.2
@@ -24,6 +24,14 @@ CONFIGURE_ARGS+=	--enable-oss
 CONFIGURE_ARGS+=	--disable-xio
 
 LIBS+=			${LIBOSSAUDIO}
+
+.include "../../mk/compiler.mk"
+
+.if !empty(CC_VERSION:Mgcc-4*)
+PLIST_SUBST+=		TOMSMOCOMP='@comment '
+.else
+PLIST_SUBST+=		TOMSMOCOMP=
+.endif
 
 .include "options.mk"
 .include "../../audio/lame/buildlink3.mk"
