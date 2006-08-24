@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.329 2006/08/19 00:03:50 wiz Exp $
+# $NetBSD: Makefile,v 1.330 2006/08/23 10:40:25 jmmv Exp $
 #
 
 COMMENT=	Audio tools
@@ -7,6 +7,7 @@ SUBDIR+=	SDL_mixer
 SUBDIR+=	SDL_sound
 SUBDIR+=	abcde
 SUBDIR+=	abcmidi
+SUBDIR+=	amaroc
 SUBDIR+=	amarok
 SUBDIR+=	amp
 SUBDIR+=	applerecords
