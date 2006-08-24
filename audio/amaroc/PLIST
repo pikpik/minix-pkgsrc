@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/amaroc.py
+share/doc/amaroc/README
+@dirrm share/doc/amaroc
