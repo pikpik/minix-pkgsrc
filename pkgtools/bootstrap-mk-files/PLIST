@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/07/14 23:13:00 jlam Exp $
+share/mk/bsd.README
 share/mk/bsd.dep.mk
 share/mk/bsd.depall.mk
 share/mk/bsd.doc.mk
