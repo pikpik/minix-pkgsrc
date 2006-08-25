@@ -1,4 +1,4 @@
-.\"	$NetBSD: pkg_chk.8,v 1.20 2006/07/28 21:58:04 wiz Exp $
+.\"	$NetBSD: pkg_chk.8,v 1.21 2006/08/06 12:21:09 cube Exp $
 .\"
 .\" Copyright (c) 2001 by David Brownlee (abs@NetBSD.org)
 .\" Absolutely no warranty.
@@ -126,7 +126,7 @@ Use with care, this does not record which packages were installed
 for later update.
 .It Fl s
 Building missing packages from source.
-If DEPENDS_TARGET=package is set in
+If UPDATE_TARGET=package is set in
 .Pa /etc/mk.conf ,
 then
 .Nm
