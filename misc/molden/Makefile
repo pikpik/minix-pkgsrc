@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/07/18 23:27:14 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/07/21 14:04:25 jlam Exp $
 
 DISTNAME=	molden4.2
 PKGNAME=	${DISTNAME:S/molden/&-/}
@@ -16,7 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 MAKEFILE=	makefile
 BUILD_TARGET=	molden
 
-USE_LANGUAGES=		fortran
+USE_LANGUAGES=		c fortran
 
 INTERACTIVE_STAGE=	fetch
 
