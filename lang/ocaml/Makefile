@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2006/04/25 04:58:32 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.49 2006/04/30 17:03:19 joerg Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=	1
+PKGREVISION=	2
 
 CONFIGURE_ARGS+=	-no-tk
 CONFIGURE_ENV+=		disable_x11=yes
@@ -14,7 +14,7 @@ BUILD_TARGET=		world
 ###
 
 # Stub libraries for functions missing from base system.
-.if ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly" || ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly" || ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD"
 PLIST_SRC+=	${PKGDIR}/PLIST.stub
 .endif
 
