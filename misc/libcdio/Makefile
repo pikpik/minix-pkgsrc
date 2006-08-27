@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2006/04/13 12:01:18 tron Exp $
+# $NetBSD: Makefile,v 1.30 2006/05/08 22:12:03 hira Exp $
 
 DISTNAME=	libcdio-0.76
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU:=libcdio/}
 
