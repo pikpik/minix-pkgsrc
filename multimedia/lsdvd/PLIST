@@ -1,2 +1,3 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/11 02:50:51 snj Exp $
 bin/lsdvd
+man/man1/lsdvd.1
