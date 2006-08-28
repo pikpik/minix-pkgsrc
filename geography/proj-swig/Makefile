@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/26 22:46:31 gdt Exp $
+# $NetBSD: Makefile,v 1.2 2006/08/22 19:37:40 gdt Exp $
 #
 
 DISTNAME=		proj-swig-0.01
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		geography
 MASTER_SITES=		http://acert.ir.bbn.com/downloads/acert-geospatial/
 
@@ -16,6 +16,8 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 HAS_CONFIGURE=		yes
 GNU_CONFIGURE=		yes
+
+PY_PATCHPLIST=          yes
 
 .include "../../devel/swig/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
