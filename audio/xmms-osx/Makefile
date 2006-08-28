@@ -14,11 +14,9 @@ LDFLAGS+=		-lm
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	libtool-disable-static
-USE_TOOLS+=		pkg-config
-
-USE_LANGUAGES=		c c++
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+ONLY_FOR_PLATFORM=	Darwin-*-*
 
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
