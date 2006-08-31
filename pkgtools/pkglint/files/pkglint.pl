@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.670 2006/08/28 12:41:49 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.671 2006/08/30 05:41:19 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -1813,7 +1813,8 @@ my $regex_shellword		=  qr"\s*(
 	(?:	'[^']*'			# single quoted string
 	|	\"(?:\\.|[^\"\\])*\"	# double quoted string
 	|	\`[^\`]*\`		# backticks string
-	|	\\.			# any escaped character
+	|	\\\$\$			# an escaped dollar sign
+	|	\\[^\$]			# other escaped characters
 	|	\$\{[^{}]+\}		# make(1) variable
 	|	\$\([^()]+\)		# make(1) variable, $(...)
 	|	\$[/\@<^]		# special make(1) variables
@@ -4023,7 +4024,7 @@ sub checkline_mk_shellword($$$) {
 				$state = SWST_DQUOT;
 			} elsif ($rest =~ s/^\`//) {
 				$state = SWST_BACKT;
-			} elsif ($rest =~ s/^\\[ !"#'\(\)*;\\^{|}]//) {
+			} elsif ($rest =~ s/^\\(?:[ !"#'\(\)*;\\^{|}]|\$\$)//) {
 			} elsif ($rest =~ s/^\$\$([0-9A-Z_a-z]+)//
 			    || $rest =~ s/^\$\$\{([0-9A-Z_a-z]+)\}//) {
 				my ($shvarname) = ($1);
