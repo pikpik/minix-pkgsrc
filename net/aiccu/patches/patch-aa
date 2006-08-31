@@ -32,18 +32,8 @@ $NetBSD$
  CFLAGS  += -D AICCU_TYPE="\"linux\""
  SRCS	+= ../common/aiccu_linux.c
  OBJS	+= ../common/aiccu_linux.o
-@@ -80,12 +68,20 @@ OBJS	+= ../common/aiccu_freebsd4.o
- CFLAGS	+= -pthread
- endif
+@@ -82,10 +70,10 @@ endif
  
-+# DragonFly
-+ifeq ($(shell uname | grep -c "DragonFly"),1)
-+CFLAGS  += -D AICCU_TYPE="\"freebsd4\""
-+SRCS	+= ../common/aiccu_freebsd4.c
-+OBJS	+= ../common/aiccu_freebsd4.o
-+CFLAGS	+= -pthread
-+endif
-+
  # NetBSD
  ifeq ($(shell uname | grep -c "NetBSD"),1)
 -CFLAGS	+= -D _NETBSD -D AICCU_TYPE="\"kame\""
