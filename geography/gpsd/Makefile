@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2006/05/07 06:15:14 simonb Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/10 13:04:34 joerg Exp $
 
-DISTNAME=	gpsd-2.31
+DISTNAME=	gpsd-2.33
 CATEGORIES=	geography
 MASTER_SITES=	http://download.berlios.de/gpsd/
 
