@@ -1,8 +1,8 @@
 $NetBSD$
 
---- examples/Makefile.in.orig	2006-04-30 04:48:27.000000000 +0200
+--- examples/Makefile.in.orig	2006-08-31 12:55:32.000000000 +0200
 +++ examples/Makefile.in
-@@ -235,7 +235,7 @@ INCLUDES = -I$(srcdir)/$(SNDFILEDIR) $(O
+@@ -238,7 +238,7 @@ INCLUDES = -I$(srcdir)/$(SNDFILEDIR) $(O
  sndfile_info_SOURCES = sndfile-info.c 
  sndfile_info_LDADD = $(SNDFILEDIR)/libsndfile.la
  sndfile_play_SOURCES = sndfile-play.c 
