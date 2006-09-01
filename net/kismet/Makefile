@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/03 15:09:49 salo Exp $
+# $NetBSD: Makefile,v 1.2 2006/08/04 12:02:27 skrll Exp $
 
 DISTNAME=		kismet-2006-04-R1
 PKGNAME=		kismet-2006.04.01
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.kismetwireless.net/code/
 
@@ -12,7 +13,8 @@ COMMENT=		802.11 wireless network detector, sniffer and IDS
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
 USE_NCURSES=		# needs libpanel
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake perl:run
+REPLACE_PERL+=		scripts/gpsmap-helper-earthamaps
 
 # might be appended to in options.mk
 PLIST_SRC=		PLIST
