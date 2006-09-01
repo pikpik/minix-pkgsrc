@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.36 2006/03/11 10:07:49 ghen Exp $
+# $NetBSD: Makefile,v 1.37 2006/04/17 13:46:17 wiz Exp $
 #
 
 DISTNAME=		geda-utils-${PKGVERSION}
-PKGREVISION=		2
 CATEGORIES=		cad
 
 MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Set of utilities for gEDA
 
-BUILD_DEPENDS+=		geda-symbols>=${PKGVERSION}:../../cad/geda-symbols
+BUILD_DEPENDS+=		geda-symbols-${PKGVERSION}{,nb[0-9]*}:../../cad/geda-symbols
 
 CONFLICTS+=		gEDA<19991011
 
