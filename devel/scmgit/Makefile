@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/09/02 17:11:07 rillig Exp $
 #
 
 DISTNAME=	git-1.4.1
@@ -12,6 +12,7 @@ COMMENT=	Tree History Storage Tool
 
 CONFLICTS+=	git-[0-9]*		# misc/git
 BUILD_DEPENDS+=	asciidoc-[0-9]*:../../textproc/asciidoc
+BUILD_DEPENDS+=	xmlto-[0-9]*:../../textproc/xmlto
 
 MAKE_ENV+=	DESTDIR=""
 MAKE_ENV+=	HOME=${PREFIX:Q}
