@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.780 2006/08/24 08:35:00 xtraeme Exp $
+# $NetBSD: Makefile,v 1.781 2006/08/24 10:17:46 tron Exp $
 #
 
 COMMENT=	Development utilities
@@ -649,6 +649,7 @@ SUBDIR+=	rudiments
 SUBDIR+=	rvm
 SUBDIR+=	rx
 SUBDIR+=	sablecc
+SUBDIR+=	scmgit
 SUBDIR+=	scons
 SUBDIR+=	scons-devel
 SUBDIR+=	sdcc
