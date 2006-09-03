@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/04/04 18:19:13 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2006/08/07 23:39:56 wiz Exp $
 
 DISTNAME=	sox-12.18.1
 CATEGORIES=	audio
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--with-ogg-vorbisinc=${BUILDLINK_PREFIX.libvorbis}/include
 
 PLIST_SRC=		${PKGDIR}/PLIST.common
 
-.if ${OPSYS} != "Interix"
+.if ${OPSYS} != "Interix" && ${OPSYS} != "Darwin"
 CONFIGURE_ARGS+=	--with-sun-audio
 PLIST_SRC+=		${PKGDIR}/PLIST.play
 .endif
