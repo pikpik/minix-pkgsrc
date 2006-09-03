@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/06/17 16:50:27 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/07/05 04:59:47 jlam Exp $
 #
 
 DISTNAME=	nbitools-R6.3
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kitebird.com/imake-book/
 COMMENT=	imake and tools derived from NetBSD-current/xsrc
 

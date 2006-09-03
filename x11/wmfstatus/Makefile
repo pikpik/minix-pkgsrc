@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:44 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:44 joerg Exp $
 
 DISTNAME=	wmfstatus-0.4
 PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.finik.net/files/
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.finik.net/software.html
 COMMENT=	General purpose 8x5 LCD screen for WindowMaker
 

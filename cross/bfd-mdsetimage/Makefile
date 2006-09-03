@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/12/05 20:49:56 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2006/08/24 20:18:04 kristerw Exp $
 
 DISTNAME=	bfd-mdsetimage-1.15.1
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	cross
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Mdsetimage using libbfd, used for cross-building distributions
 
 WRKSRC=		${WRKDIR}

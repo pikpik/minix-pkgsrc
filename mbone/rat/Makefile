@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/02/05 23:10:05 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2006/02/24 00:35:59 joerg Exp $
 #
 
 DISTNAME=	rat-3.0.28
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	mbone
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/3.0.28/
 
-MAINTAINER=	mycroft@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/
 COMMENT=	Robust Audio Tool - multicast audioconferencing
 

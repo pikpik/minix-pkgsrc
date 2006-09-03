@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/04/22 09:22:06 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/05/26 23:56:25 joerg Exp $
 #
 
 DISTNAME=	pymusique-0.5
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://fuware.nanocrew.net/pymusique/
 
-MAINTAINER=	augustss@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fuware.nanocrew.net/pymusique/
 COMMENT=	Interface to the iTunes Music Store
 

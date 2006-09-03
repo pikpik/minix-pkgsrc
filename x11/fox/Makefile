@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2006/06/26 13:12:00 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2006/07/17 19:20:45 wiz Exp $
 
 DISTNAME=	fox-1.4.34
 CATEGORIES=	x11
 MASTER_SITES=	http://www.fox-toolkit.org/ftp/
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fox-toolkit.org/
 COMMENT=	Fast and extensive C++ GUI toolkit
 

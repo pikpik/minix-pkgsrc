@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/04/11 21:47:00 tv Exp $
+# $NetBSD: Makefile,v 1.20 2006/02/05 23:10:31 joerg Exp $
 
 DISTNAME=		tightvnc-1.2.9
 PKGNAME=		${DISTNAME:S/tightvnc/tightvncviewer/}
@@ -7,7 +7,7 @@ CATEGORIES=		net x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vnc-tight/}
 DISTFILES=		${DISTNAME}_unixsrc.tar.bz2
 
-MAINTAINER=		mycroft@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.tightvnc.com/
 COMMENT=		Viewer for remote X and Win32 VNC servers
 

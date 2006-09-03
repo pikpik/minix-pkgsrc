@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/12/01 16:41:29 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2006/07/17 17:37:35 joerg Exp $
 
 DISTNAME=		macutil2.0b3
 PKGNAME=		macutil-2.0b3
@@ -6,7 +6,7 @@ CATEGORIES=		archivers
 MASTER_SITES=		ftp://ftp.cwi.nl/pub/dik/
 EXTRACT_SUFX=		.shar.Z
 
-MAINTAINER=		mycroft@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Create & extract Mac archive files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

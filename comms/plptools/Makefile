@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/02/05 23:08:28 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2006/03/10 23:21:53 rillig Exp $
 #
 
 DISTNAME=	plptools-0.12
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=plptools/}
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://plptools.sourceforge.net/
 COMMENT=	FTP-like and NFS-like access tools to talk to the PSION
 

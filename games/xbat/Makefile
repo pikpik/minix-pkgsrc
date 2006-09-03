@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/03/24 21:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:23 joerg Exp $
 
 DISTNAME=	xev111
 PKGNAME=	xbat-1.11
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/Xbat/
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/index_e.html
 COMMENT=	XEVIOUS like shooting game
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/06/14 10:32:35 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/09/02 20:40:41 rillig Exp $
 
 DISTNAME=	vcg.1.30.r3.17
 PKGNAME=	vcg-1.30
@@ -7,7 +7,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/graphics/vcg/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Visualization Tool for compiler graphs
 
 WRKSRC=		${WRKDIR}/vcg.1.30

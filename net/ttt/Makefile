@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:10:32 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/06/09 11:08:53 joerg Exp $
 #
 
 DISTNAME=	ttt-1.8.1
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.csl.sony.co.jp/pub/kjc/
 
-MAINTAINER=	sakamoto@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.csl.sony.co.jp/person/kjc/software.html
 COMMENT=	Tele Traffic Tapper
 
