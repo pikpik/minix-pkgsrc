@@ -1,4 +1,4 @@
-<!-- $NetBSD: components.xml,v 1.26 2006/07/24 10:32:36 rillig Exp $ -->
+<!-- $NetBSD: components.xml,v 1.27 2006/09/01 16:35:38 jmmv Exp $ -->
 
 <chapter id="components"> <?dbhtml filename="components.html"?>
   <title>Package components - files, directories and contents</title>
@@ -278,7 +278,7 @@
       
       <para>Of course, checking for features generally involves more
       work on the developer's side, but the resulting changes are
-      clearner and there are chances they will work on many other
+      cleaner and there are chances they will work on many other
       platforms.  Not to mention that there are higher chances of being
       later integrated into the mainstream sources.  Remember:
       <emphasis>It doesn't work unless it is right!</emphasis></para>
