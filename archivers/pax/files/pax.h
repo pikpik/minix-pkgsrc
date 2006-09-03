@@ -1,4 +1,4 @@
-/*	$NetBSD: pax.h,v 1.8 2004/08/21 03:28:56 jlam Exp $	*/
+/*	$NetBSD: pax.h,v 1.9 2005/12/01 03:00:01 minskim Exp $	*/
 
 /*-
  * Copyright (c) 1992 Keith Muller.
@@ -74,9 +74,7 @@
 #define ISREG		0	/* regular file */
 #define ISCHR		1	/* character device */
 #define ISBLK		2	/* block device */
-#ifdef SUPPORT_TAPE
 #define ISTAPE		3	/* tape drive */
-#endif
 #define ISPIPE		4	/* pipe/socket */
 #ifdef SUPPORT_RMT
 #define	ISRMT		5	/* rmt */
