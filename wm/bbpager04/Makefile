@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1 2006/08/20 23:07:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.2 2006/08/30 07:25:50 joerg Exp $
 #
 
 DISTNAME=	bbpager-0.4.1beta1
 PKGNAME=	bbpager04-0.4.1.1
 CATEGORIES=	wm x11
-MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bbtools/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bbtools.windsofstorm.net/available.phtml
