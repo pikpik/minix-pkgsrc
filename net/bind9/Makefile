@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2006/08/17 14:14:18 taca Exp $
+# $NetBSD: Makefile,v 1.80 2006/08/28 16:00:45 seb Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGREVISION=	1
@@ -15,6 +15,8 @@ BIND_VERSION=	9.3.2
 .include "../../mk/bsd.prefs.mk"
 BUILD_DEFS+=	USE_INET6
 # No need to set USE_INET6, will auto-detect.
+
+BUILD_DEFS+=	BIND_USER BIND_GROUP BIND_DIR VARBASE
 
 USE_LIBTOOL=		yes
 
