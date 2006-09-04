@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/06/16 05:38:00 martti Exp $
+# $NetBSD: Makefile,v 1.14 2006/02/17 08:11:58 martti Exp $
 
 DISTNAME=	LPRng_DOC-3.6.13
 PKGNAME=	LPRng-doc-3.6.13
@@ -6,7 +6,7 @@ CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.astart.com/pub/LPRng/LPRng/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	martti@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lprng.com/
 COMMENT=	LPRng documentation in dvi, text, html and ps formats
 
