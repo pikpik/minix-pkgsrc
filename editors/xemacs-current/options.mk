@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2006/05/31 18:22:23 ghen Exp $
+# $NetBSD: options.mk,v 1.7 2006/08/14 14:22:23 martin Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xemacs
 PKG_SUPPORTED_OPTIONS=	esound ldap xface canna debug
@@ -33,6 +33,6 @@ CONFIGURE_ARGS+=	--with-sound=none
 #.endif
 
 .if !empty(PKG_OPTIONS:Mdebug)
-CONFIGURE_ARGS+=	--debug
+CONFIGURE_ARGS+=	--enable-debug=yes --with-debug
 .endif
 
