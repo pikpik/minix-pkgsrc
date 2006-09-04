@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2006/04/22 09:22:13 rillig Exp $
+# $NetBSD: Makefile,v 1.34 2006/05/22 22:22:04 jlam Exp $
 
 DISTNAME=	acroread5	# Overridden below
 PKGNAME=	acroread5-5.10
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/acrobatreader/unix/5.x/
 
