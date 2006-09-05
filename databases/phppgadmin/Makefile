@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/02/05 23:08:34 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/06/02 18:27:55 joerg Exp $
 
-DISTNAME=	phpPgAdmin-3.5.5
+DISTNAME=	phpPgAdmin-3.5.6
 PKGNAME=	${DISTNAME:S/PgAdmin/pgadmin/}
-PKGREVISION=	4
 CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phppgadmin/}
 EXTRACT_SUFX=	.tar.bz2
