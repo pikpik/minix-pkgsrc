@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.25 2006/07/22 19:02:36 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2006/08/21 16:23:10 jmmv Exp $
 #
 
 DISTNAME=	monotone-0.29
 CATEGORIES=	devel
-MASTER_SITES=	http://www.venge.net/monotone/downloads/
+MASTER_SITES=	http://monotone.ca/downloads/
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://www.venge.net/monotone/
+HOMEPAGE=	http://monotone.ca/
 COMMENT=	Free distributed version control system
 
 GCC_REQD+=		3.0
