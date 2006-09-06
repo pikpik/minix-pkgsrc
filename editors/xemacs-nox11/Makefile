@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:08:59 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/20 18:21:29 jlam Exp $
 
 .include "../../editors/xemacs/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/xemacs/xemacs-nox11/}
 PKGREVISION=	2
 
-MAINTAINER=	magick@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 
 CONFLICTS=	xemacs-[0-9]*
 

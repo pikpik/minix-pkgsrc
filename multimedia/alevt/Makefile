@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:14 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/17 13:46:41 wiz Exp $
 
 DISTNAME=	alevt-1.6.0
 PKGREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/video/}
 
-MAINTAINER=	magick@bundy.zhadum.de
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://user.exit.de/froese/
 COMMENT=	Teletext decoder and browser for Brooktree 848 compatible TV cards
 

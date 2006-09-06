@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2006/06/06 14:38:31 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/07/19 19:14:37 jlam Exp $
 
 DISTNAME=		icqlib-1.0.0
 PKGREVISION=		3
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=icqlib/}
 
-MAINTAINER=		magick@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://kicq.sourceforge.net/icqlib.shtml
 COMMENT=		Implementation of the icq protocol
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.53 2006/04/17 13:46:22 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2006/09/04 09:20:51 martin Exp $
 
 DISTNAME=	xemacs-21.5.27
 
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS:=xemacs-21.5/}
 
-MAINTAINER=	magick@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xemacs.org/
 COMMENT=	*BETA* XEmacs text editor version 21.5.19
 
