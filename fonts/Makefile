@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2006/05/26 21:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.92 2006/08/06 14:33:29 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -104,6 +104,7 @@ SUBDIR+=	py-fonttools
 SUBDIR+=	sgi-fonts
 SUBDIR+=	t1lib
 SUBDIR+=	t1utils
+SUBDIR+=	terminus-font
 SUBDIR+=	tex-uhc-fonts-base
 SUBDIR+=	tex-uhc-fonts-extra
 SUBDIR+=	tex-unttf
