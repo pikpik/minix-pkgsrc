@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/26 10:27:37 martti Exp $
+share/xfce4/backdrops/paltanen.jpg
 share/xfce4/backdrops/xfce-evil.jpg
 share/xfce4/backdrops/xfce-gradiented.png
 share/xfce4/backdrops/xfce-rio.png
