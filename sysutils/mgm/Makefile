@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:42 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/13 00:20:22 rillig Exp $
 
 DISTNAME=	mgm-1.1
 PKGREVISION=	2
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.xiph.org/mgm/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.xiph.org/mgm/
+HOMEPAGE=	http://linuxmafia.com/mgm/
 COMMENT=	Moaning Goat Meter
 
 DEPENDS+=	p5-Tk-[0-9]*:../../x11/p5-Tk
