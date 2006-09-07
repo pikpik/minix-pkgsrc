@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.636 2006/08/13 09:39:53 ghen Exp $
+# $NetBSD: Makefile,v 1.637 2006/09/05 18:03:42 adrianp Exp $
 #
 
 COMMENT=	Networking tools
@@ -199,6 +199,7 @@ SUBDIR+=	mirror
 SUBDIR+=	mldonkey
 SUBDIR+=	mldonkey-gui
 SUBDIR+=	mouse-pppoe
+SUBDIR+=	mping
 SUBDIR+=	mppe-lkm
 SUBDIR+=	mrstat
 SUBDIR+=	mrt
