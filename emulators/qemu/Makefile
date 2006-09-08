@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/09/05 00:44:38 xtraeme Exp $
+# $NetBSD: Makefile,v 1.36 2006/09/08 15:27:31 xtraeme Exp $
 #
 
 DISTNAME=		qemu-0.8.2
@@ -20,7 +20,6 @@ HAS_CONFIGURE=		yes
 GCC_REQD+=		3.0
 
 .if !empty(OPSYS:NetBSD-4*)
-GCC_REQD+= 		3.4
 USE_PKGSRC_GCC= 	yes
 .endif
 
