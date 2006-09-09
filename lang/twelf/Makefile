@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/05 06:25:52 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/05/02 12:23:27 gdt Exp $
 #
 
 DISTNAME=	twelf-1-4
@@ -21,7 +21,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/twelf
-MAKEFILE=	smlnj/Makefile
+MAKE_FILE=	smlnj/Makefile
 MAKEFLAGS+=	sml=${PREFIX:Q}/bin/sml
 BUILD_TARGET=	twelf-server twelf-sml
 

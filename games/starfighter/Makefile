@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/04/17 13:46:29 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/12 16:28:11 wiz Exp $
 #
 
 DISTNAME=	starfighter-1.1-1
@@ -15,7 +15,7 @@ USE_TOOLS+=	gmake
 USE_LANGUAGES+=	c++
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-1$//}
 
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/starfighter/music

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/14 17:16:19 hamajima Exp $
+# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:31 wiz Exp $
 #
 
 DISTNAME=	cpia2_driver-1.0
@@ -21,13 +21,13 @@ do-build:
 	for f in cpia2shot cpia2view ; do		\
 		cd ${WRKSRC} && ${SETENV} ${MAKE_ENV}	\
 		NOGCCERROR=				\
-		${MAKE_PROGRAM} -f ${MAKEFILE}.$$f ;	\
+		${MAKE_PROGRAM} -f ${MAKE_FILE}.$$f ;	\
 	done
 
 do-install:
 	for f in cpia2shot cpia2view ; do			\
 		cd ${WRKSRC} && ${SETENV} ${MAKE_ENV}		\
-		${MAKE_PROGRAM} -f ${MAKEFILE}.$$f install ;	\
+		${MAKE_PROGRAM} -f ${MAKE_FILE}.$$f install ;	\
 	done
 
 .include "../../graphics/imlib/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2006/04/22 09:22:08 rillig Exp $
+# $NetBSD: Makefile,v 1.86 2006/06/15 11:40:00 dillo Exp $
 #
 
 DISTNAME=		xmame-0.106
@@ -16,7 +16,7 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_TOOLS+=		gmake
-MAKEFILE=		makefile.unix
+MAKE_FILE=		makefile.unix
 TARGET=			${PKGBASE}
 UNLIMIT_RESOURCES=	datasize
 

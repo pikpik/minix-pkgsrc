@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/03/04 21:29:01 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/05/04 16:58:05 drochner Exp $
 #
 
 DISTNAME=	myhdl-0.5.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://jandecaluwe.com/Tools/MyHDL/Overview.html
 COMMENT=	GPL Cver cosimulation support for py-MyHDL
 
 BUILD_DIRS+=	cosimulation/cver
-MAKEFILE=	makefile.lnx
+MAKE_FILE=	makefile.lnx
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/cosimulation/cver/myhdl_vpi.so \

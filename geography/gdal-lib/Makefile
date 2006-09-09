@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/05/15 22:44:28 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/06/11 20:42:49 wiz Exp $
 #
 
 DISTNAME=		gdal-1.3.1
@@ -17,7 +17,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 
-MAKEFILE=		GNUmakefile
+MAKE_FILE=		GNUmakefile
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gdal-lib
 PKG_SUPPORTED_OPTIONS=	pgsql

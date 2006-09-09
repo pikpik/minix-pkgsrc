@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/11/03 19:36:39 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/26 13:41:17 schwarz Exp $
 #
 
 DISTNAME=		GeneSplicer
@@ -16,7 +16,7 @@ EXDIR=			${PREFIX}/share/examples/genesplicer
 EXAMPLES=		arabidopsis drosophila malaria pyoelii human rice \
 			training_data_sets/Arabidopsis			  \
 			training_data_sets/Human
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 BUILD_DIRS=		sources
 INSTALLATION_DIRS=	bin
 

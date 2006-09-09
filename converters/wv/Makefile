@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2006/04/17 13:46:02 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2006/07/17 17:02:26 wiz Exp $
 
 DISTNAME=	wv-1.2.1
 CATEGORIES=	converters
@@ -20,7 +20,7 @@ CONFIGURE_ARGS+=	--with-png=${BUILDLINK_PREFIX.png}
 
 PKGCONFIG_OVERRIDE+=	wv-1.0.pc.in
 
-MAKEFILE=		GNUmakefile
+MAKE_FILE=		GNUmakefile
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

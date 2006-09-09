@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/21 14:04:25 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/08/26 18:35:33 joerg Exp $
 
 DISTNAME=	molden4.2
 PKGNAME=	${DISTNAME:S/molden/&-/}
@@ -13,7 +13,7 @@ COMMENT=	Displaying MOLecular DENsity
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 BUILD_TARGET=	molden
 
 USE_LANGUAGES=		c fortran

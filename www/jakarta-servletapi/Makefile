@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:11:24 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/02 19:51:14 wiz Exp $
 
 DISTNAME=	jakarta-servletapi-${TOMCAT_VERSION}-src
 PKGNAME=	${DISTNAME:S/-src$//}
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=	apache-ant>=1.4.1:../../devel/apache-ant
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_JAVA2=	yes
-MAKEFILE=	build.xml
+MAKE_FILE=	build.xml
 PLIST_SRC=	${PKGDIR}/PLIST ${WRKDIR}/PLIST.javadoc
 
 DOCDIR=		share/doc/java/jakarta-servletapi

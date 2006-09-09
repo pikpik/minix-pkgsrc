@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2006/06/11 00:58:39 darcy Exp $
+# $NetBSD: Makefile,v 1.48 2006/06/16 10:58:23 rillig Exp $
 
 DISTNAME=		PyGreSQL-3.8.1
 PKGNAME=		${PYPKGPREFIX}-postgresql-3.8.1
@@ -14,7 +14,7 @@ MAKE_ENV+=		MANDIR=${LOCALBASE}/man
 MAKE_ENV+=		BINDIR=${LOCALBASE}/bin
 USE_TOOLS+=		gmake
 
-MAKEFILE=		GNUmakefile
+MAKE_FILE=		GNUmakefile
 MAKE_ENV+=		INSTALLED_LIBPQ=1
 
 PY_PATCHPLIST=		yes

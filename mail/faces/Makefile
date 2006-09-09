@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/04/22 09:22:11 rillig Exp $
+# $NetBSD: Makefile,v 1.52 2006/07/29 05:35:22 minskim Exp $
 
 DISTNAME=	faces-1.6.1
 PKGREVISION=	4
@@ -46,7 +46,7 @@ REPLACE_PERL=	scripts/addxface scripts/deepen scripts/facesaddr \
 		scripts/newsfrom.faces scripts/rotary.faces
 
 do-configure:
-	${LN} -sf Makefile.dist ${WRKSRC}/${MAKEFILE}
+	${LN} -sf Makefile.dist ${WRKSRC}/${MAKE_FILE}
 	cd ${WRKSRC};							\
 	files="								\
 		x11.c							\

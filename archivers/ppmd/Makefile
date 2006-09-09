@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/19 11:30:47 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/05/17 06:12:27 rillig Exp $
 #
 
 DISTNAME=	ppmdi1
@@ -13,7 +13,7 @@ COMMENT=	PPM file compressor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-MAKEFILE=	makefile.gmk
+MAKE_FILE=	makefile.gmk
 BUILD_TARGET=	ppmd
 
 WRKSRC=		${WRKDIR}

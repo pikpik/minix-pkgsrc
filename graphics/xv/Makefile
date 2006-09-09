@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2006/04/22 09:22:10 rillig Exp $
+# $NetBSD: Makefile,v 1.65 2006/05/14 21:16:00 schwarz Exp $
 
 DISTNAME=	xv-3.10a
 PKGREVISION=	12
@@ -39,11 +39,11 @@ pre-configure:
 
 .if ${OPSYS} == "SunOS"
 post-configure:
-	${MV} ${WRKSRC}/${MAKEFILE} ${WRKSRC}/${MAKEFILE}.orig &&	\
+	${MV} ${WRKSRC}/${MAKE_FILE} ${WRKSRC}/${MAKE_FILE}.orig &&	\
 		${SED} -e 's| CC = .*| CC = ${CC}|'			\
 		-e 's| CCOPTIONS = .*| CCOPTIONS = ${CFLAGS}|'		\
 		-e 's| CDEBUGFLAGS = .*| CDEBUGFLAGS =|'		\
-		${WRKSRC}/${MAKEFILE}.orig > ${WRKSRC}/${MAKEFILE}
+		${WRKSRC}/${MAKE_FILE}.orig > ${WRKSRC}/${MAKE_FILE}
 .endif
 
 post-install:

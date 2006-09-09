@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:00 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/06 06:21:58 reed Exp $
 #
 
 DISTNAME=		rinfo26
@@ -14,7 +14,7 @@ COMMENT=		Identify arcade ROM sets
 
 USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 BUILD_TARGET=		rominfo
 EXTRACT_OPTS_ZIP=	-Laaqo
 INSTALLATION_DIRS=	bin

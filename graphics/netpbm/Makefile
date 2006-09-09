@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.142 2006/06/18 16:18:11 minskim Exp $
+# $NetBSD: Makefile,v 1.143 2006/06/25 06:35:58 adam Exp $
 
 DISTNAME=	netpbm-10.34
 CATEGORIES=	graphics
@@ -16,7 +16,7 @@ USE_TOOLS+=	bash:run gmake lex perl
 INSTALL_TARGET=	install-dev install-run
 MAKE_ENV+=	INSTALL=${INSTALL:Q} STRIPFLAG=${_STRIPFLAG_INSTALL:Q} \
 		pkgdir=${STAGEDIR:Q} MACHINE=${MACHINE:Q}
-MAKEFILE=	GNUmakefile
+MAKE_FILE=	GNUmakefile
 PLIST_SRC=	${WRKDIR}/PLIST_STAGE
 REPLACE_PERL+=	editor/ppmfade editor/ppmshadow editor/pnmquant \
 		generator/ppmrainbow manweb editor/pnmflip editor/ppmquant

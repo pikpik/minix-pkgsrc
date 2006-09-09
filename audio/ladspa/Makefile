@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/05/09 16:46:07 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/05/12 22:43:46 minskim Exp $
 #
 
 DISTNAME=	ladspa_sdk_1.12
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/ladspa_sdk/src
 USE_TOOLS+=	gmake
 USE_LANGUAGES=	c c++
 
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 
 BUILDLINK_LIBS.dl+=	${BUILDLINK_LDADD.dl}
 

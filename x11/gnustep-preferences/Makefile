@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/07/21 04:57:27 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2006/07/22 05:10:55 rillig Exp $
 #
 
 DISTNAME=	Preferences-1.2.0
@@ -16,7 +16,7 @@ USE_LANGUAGES=	objc
 
 NO_CONFIGURE=	YES
 USE_TOOLS+=	gmake
-MAKEFILE=	GNUmakefile
+MAKE_FILE=	GNUmakefile
 
 .include "../../x11/gnustep-back/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

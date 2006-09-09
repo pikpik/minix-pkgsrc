@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.10 2006/01/12 18:10:03 rillig Exp $
+# $NetBSD: Makefile.common,v 1.11 2006/03/04 21:29:45 jlam Exp $
 #
 
 DISTNAME=	3DKit-0.3.1r2
@@ -14,6 +14,6 @@ DESCR_SRC?=	${.CURDIR}/../../graphics/3DKit/DESCR
 
 NO_CONFIGURE=	YES
 USE_TOOLS+=	gmake
-MAKEFILE=	GNUmakefile
+MAKE_FILE=	GNUmakefile
 
 .include "../../mk/x11.buildlink3.mk"

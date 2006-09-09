@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/05/31 21:53:20 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/20 16:38:39 wiz Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
@@ -16,7 +16,7 @@ COMMENT=	Internet CD Database Server
 
 INTERACTIVE_STAGE=	configure install
 NO_PACKAGE=	too interactive
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 
 do-configure:
 	cd ${WRKSRC};							\

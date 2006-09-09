@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2005/12/27 20:41:33 reed Exp $
+# $NetBSD: Makefile,v 1.50 2006/07/17 17:00:33 wiz Exp $
 
 DISTNAME=	zip232
 PKGNAME=	zip-2.32
@@ -15,7 +15,7 @@ COMMENT=	Create/update ZIP files compatible with pkzip
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-MAKEFILE=	unix/Makefile
+MAKE_FILE=	unix/Makefile
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 .include "../../mk/bsd.prefs.mk"

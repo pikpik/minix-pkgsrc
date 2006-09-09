@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/21 02:07:53 wulf Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/30 16:12:01 joerg Exp $
 #
 
 DISTNAME=	dpbox-60000
@@ -13,7 +13,7 @@ COMMENT=	Multi-Protocol Amateur Packet Radio BBS
 
 WRKSRC=		${WRKDIR}/dpbox-6.00.00/source
 USE_TOOLS+=	gmake
-MAKEFILE=	Makefile.netbsd
+MAKE_FILE=	Makefile.netbsd
 
 MAKE_ENV+=	prefix=${PREFIX:Q}
 

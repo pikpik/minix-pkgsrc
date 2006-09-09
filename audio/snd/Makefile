@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2006/03/09 21:04:41 jlam Exp $
+# $NetBSD: Makefile,v 1.47 2006/08/07 23:37:49 wiz Exp $
 #
 
 DISTNAME=		snd-8.3
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake pkg-config
 
 BUILD_TARGET=		snd
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 WRKSRC=			${WRKDIR}/snd-8
 
 post-install:

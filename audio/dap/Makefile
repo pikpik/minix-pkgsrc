@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/03/09 21:04:40 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2006/05/19 16:18:51 rillig Exp $
 
 DISTNAME=		dap-2.1.2
 PKGREVISION=		6
@@ -10,7 +10,7 @@ MAINTAINER=		scw@NetBSD.org
 HOMEPAGE=		http://www.cee.hw.ac.uk/~richardk/
 COMMENT=		Digital audio recording and processing package
 
-MAKEFILE=		Makefile.netbsd
+MAKE_FILE=		Makefile.netbsd
 
 MAKE_ENV+=		X11PREFIX=${X11PREFIX:Q}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:54 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/06/27 16:30:28 minskim Exp $
 
 DISTNAME=		mapit.v1-16
 PKGNAME=		dipmap-1.16
@@ -11,7 +11,7 @@ MAINTAINER=		njohnston@globaltetrahedron.com
 HOMEPAGE=		http://www.diplom.org/Online/mapsoftware.html
 COMMENT=		Generate postscript maps from results of play-by-email Diplomacy games
 
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 USE_TOOLS+=		csh:run
 WRKSRC=			${WRKDIR}/mapit
 INSTALLATION_DIRS=	bin libexec

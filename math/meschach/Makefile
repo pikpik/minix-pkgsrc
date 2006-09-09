@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/10/07 12:32:33 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:04 jlam Exp $
 
 DISTNAME=		mesch12b
 PKGNAME=		meschach-1.2b
@@ -12,7 +12,7 @@ COMMENT=		Library of C Routines for Matrix Computations
 WRKSRC=			${WRKDIR}
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-all
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 
 pre-patch:
 	${CP} ${FILESDIR}/makefile.in ${WRKSRC}

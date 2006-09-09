@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/05/22 20:08:08 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:41 joerg Exp $
 #
 
 DISTNAME=	7pl225sr
@@ -16,7 +16,7 @@ COMMENT=	Uuencode-like file coder for AMPR BBS S&F of binary files
 LICENSE=        no-commercial-use
 
 WRKSRC=		${WRKDIR}/7plsrc.225
-MAKEFILE=	netbsd.mak
+MAKE_FILE=	netbsd.mak
 USE_TOOLS+=	gmake
 
 post-install:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:47:23 tv Exp $
+# $NetBSD: Makefile,v 1.16 2006/01/21 18:57:42 jlam Exp $
 #
 
 DISTNAME=       	crashme-2.4
@@ -13,7 +13,7 @@ COMMENT=		Try to crash machine with random arguments to random system calls
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 EXTRACT_OPTS=		-f shar
-MAKEFILE=		makefile
+MAKE_FILE=		makefile
 WRKSRC=			${WRKDIR}
 
 .include "../../mk/bsd.pkg.mk"

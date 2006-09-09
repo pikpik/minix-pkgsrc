@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:50:03 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/30 11:57:34 minskim Exp $
 #
 
 DISTNAME=	vttest-20050107
@@ -11,6 +11,6 @@ HOMEPAGE=	http://dickey.his.com/vttest/vttest.html
 COMMENT=	vt100/vt220/xterm test utility
 
 GNU_CONFIGURE=	YES
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 
 .include "../../mk/bsd.pkg.mk"

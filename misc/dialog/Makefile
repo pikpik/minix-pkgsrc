@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/03/03 22:29:58 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2006/03/04 21:30:10 jlam Exp $
 
 DISTNAME=	dialog-1.0-20060221
 PKGNAME=	${DISTNAME:C/-2/.2/}
@@ -11,7 +11,7 @@ HOMEPAGE=	http://dickey.his.com/dialog/dialog.html
 COMMENT=	Display dialog boxes from shell scripts
 
 GNU_CONFIGURE=	yes
-MAKEFILE=	makefile
+MAKE_FILE=	makefile
 
 INCOMPAT_CURSES=	NetBSD-1.5*-* NetBSD-1.6[-_.]*-* NetBSD-1.6[A-P]-*
 
