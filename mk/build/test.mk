@@ -1,4 +1,4 @@
-# $NetBSD: test.mk,v 1.5 2006/07/07 21:24:28 jlam Exp $
+# $NetBSD: test.mk,v 1.6 2006/07/22 16:31:35 jlam Exp $
 #
 # TEST_DIRS is the list of directories in which to perform the build
 #	process.  If the directories are relative paths, then they
@@ -101,7 +101,7 @@ do-test:
 	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}			\
 	cd ${WRKSRC} && cd ${_dir_} &&					\
 	${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${TEST_MAKE_FLAGS}	\
-		-f ${MAKEFILE} ${TEST_TARGET}
+		-f ${MAKE_FILE} ${TEST_TARGET}
 .    endfor
 .  else
 do-test:
