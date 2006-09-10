@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/05/16 01:15:31 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2005/05/19 19:55:30 dillo Exp $
 #
 
 DISTNAME=	watanabe-vf
@@ -12,6 +12,8 @@ COMMENT=	Watanabe-vector Japanese font
 EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+
+USE_TOOLS+=	tar
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/fonts/watanabe_font
