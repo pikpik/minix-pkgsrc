@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- ofxconnect/ofxpartner.cpp.orig	2006-09-11 07:14:37.000000000 +0000
++++ ofxconnect/ofxpartner.cpp
+@@ -31,6 +31,7 @@
+ #include "nodeparser.h"
+ 
+ #include <sys/stat.h>
++#include <unistd.h>
+ 
+ #include <iostream>
+ #include <string>
