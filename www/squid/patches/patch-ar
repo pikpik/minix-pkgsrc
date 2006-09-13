@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- tools/Makefile.in.orig	2006-07-06 17:35:32.000000000 +0900
++++ tools/Makefile.in
+@@ -720,7 +720,7 @@ info: info-recursive
+ 
+ info-am:
+ 
+-install-data-am: install-data-local
++install-data-am:
+ 
+ install-exec-am: install-binPROGRAMS install-libexecPROGRAMS
+ 
