@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.272 2006/08/13 17:45:02 adrianp Exp $
+# $NetBSD: Makefile,v 1.273 2006/09/10 00:38:14 gdt Exp $
 #
 
 COMMENT=	Security tools
@@ -6,6 +6,7 @@ COMMENT=	Security tools
 SUBDIR+=	AiCA
 SUBDIR+=	AiSSLtelnet
 SUBDIR+=	CSP
+SUBDIR+=	EasyPG
 SUBDIR+=	MyPasswordSafe
 SUBDIR+=	PAM
 SUBDIR+=	aide
@@ -51,7 +52,6 @@ SUBDIR+=	dropbear
 SUBDIR+=	dsniff
 SUBDIR+=	dsniff-nox11
 SUBDIR+=	egd
-SUBDIR+=	epg
 SUBDIR+=	flawfinder
 SUBDIR+=	fprot-workstation-bin
 SUBDIR+=	fragroute
