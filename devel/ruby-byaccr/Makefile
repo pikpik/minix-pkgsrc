@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/06 00:15:28 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2006/09/07 16:01:30 taca Exp $
 
 DISTNAME=	byaccr-0.1
 PKGNAME=	ruby-${DISTNAME}
@@ -12,7 +12,7 @@ COMMENT=	Parser generator for ruby based on 'Berkeley Yacc/Yacc for Java'
 
 EXAMPLES=	Makefile cal.y calfunc.rb main.rb
 
-post-install:
+do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/byaccr ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/byaccr
 .for f in ${EXAMPLES}
