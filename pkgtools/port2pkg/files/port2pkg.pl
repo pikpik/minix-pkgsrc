@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# $NetBSD: port2pkg.pl,v 1.14 2005/11/05 17:23:35 rillig Exp $
+# $NetBSD: port2pkg.pl,v 1.15 2006/09/13 17:05:09 ginsbach Exp $
 #
 
 require 'getopts.pl';
@@ -48,11 +48,13 @@ sub usage_and_exit {
 sub fix_new_ports {
 	my (@allfiles);
 	my ($fn, $dn);
-	rename("$pkgdir/pkg-comment", "$pkgdir/COMMENT") ||
+	if (-f "$pkgdr/pkg-comment") {
+	    rename("$pkgdir/pkg-comment", "$pkgdir/COMMENT") ||
 	    warn("can't copy $pkgdir/pkg-comment to $pkgdir/COMMENT");
+	}
 	rename("$pkgdir/pkg-descr", "$pkgdir/DESCR") ||
 	    warn("can't copy $pkgdir/pkg-descr to $pkgdir/DESCR");
-	if ( -f "$pkgdir/pkg-message") {
+	if (-f "$pkgdir/pkg-message") {
 	    rename("$pkgdir/pkg-message", "$pkgdir/MESSAGE") ||
 	    warn("can't copy $pkgdir/pkg-message to $pkgdir/MESSAGE");
 	}
