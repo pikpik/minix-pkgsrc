@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.25 2006/09/08 23:32:13 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.26 2006/09/13 12:56:46 taca Exp $
 #
 
 .if !defined(_RUBYVERSION_MK)
@@ -165,7 +165,7 @@ RUBY_USE_PTHREAD?=	no
 .else
 RUBY_USE_PTHREAD?=	yes
 PTHREAD_OPTS+=		native
-#PTHREAD_AUTO_VARS=	yes
+PTHREAD_AUTO_VARS=	yes
 .endif
 
 #
