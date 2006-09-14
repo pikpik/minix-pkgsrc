@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/09/14 13:55:10 rillig Exp $
 #
 
 DISTNAME=		bastet-0.41
@@ -7,7 +7,7 @@ MASTER_SITES=		http://fph.altervista.org/prog/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		rillig@NetBSD.org
-HOMEPAGE=		http://fph.altervista.org/prog/
+HOMEPAGE=		http://fph.altervista.org/prog/bastet.shtml
 COMMENT=		Bastard Tetris
 
 USE_TOOLS+=		gmake
