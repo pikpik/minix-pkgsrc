@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2005/08/04 10:32:01 rillig Exp $
+# $NetBSD: options.mk,v 1.6 2006/02/15 13:58:07 rillig Exp $
 #
 
 ### The charset option enables input/display support for various 8-bit
@@ -49,6 +49,7 @@ CONFIGURE_ARGS+=	--without-subshell
 .if !empty(PKG_OPTIONS:Mvfs)
 CONFIGURE_ARGS+=	--with-vfs
 PLIST_SRC+=		${PKGDIR}/PLIST.vfs
+USE_TOOLS+=		perl:run
 .else
 CONFIGURE_ARGS+=	--without-vfs
 .endif
