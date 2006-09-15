@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2006/05/22 14:56:53 tron Exp $
+# $NetBSD: Makefile,v 1.4 2006/05/22 17:02:48 drochner Exp $
 
-PKGNAME=		py-gobject-shared-2.10.1
+PKGNAME=		py-gobject-shared-2.12.1
 
 .include "../../devel/py-gobject/Makefile.common"
 
