@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.43 2006/04/17 13:46:08 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2006/06/11 22:48:13 joerg Exp $
 #
 
-DISTNAME=	gail-1.8.11
-PKGREVISION=	1
+DISTNAME=	gail-1.9.2
 CATEGORIES=	devel gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gail/1.8/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gail/1.9/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	jmmv@NetBSD.org
@@ -19,7 +18,7 @@ USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE=	gail.pc.in
 PKGCONFIG_OVERRIDE+=	gail-uninstalled.pc.in
 
-CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
+BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.10.0
 
 .include "../../devel/atk/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
