@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.7 2006/06/28 21:23:29 joerg Exp $
+# $NetBSD: Makefile.common,v 1.8 2006/09/15 14:05:23 ghen Exp $
 
-MOZ_VER=		1.0.4
+MOZ_VER=		1.0.5
 MOZ_DIST_VER?=		${MOZ_VER}
 DISTNAME?=		seamonkey-${MOZ_DIST_VER}.source
 PKGNAME=		${MOZILLA}-${MOZ_VER}
