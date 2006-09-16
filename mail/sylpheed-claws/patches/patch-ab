@@ -1,3 +1,5 @@
+$NetBSD$
+
 diff -uNr sylpheed-claws-1.0.4.orig/configure sylpheed-claws-1.0.4/configure
 --- configure.orig	2006-03-24 09:17:34.000000000 +0000
 +++ configure	2006-03-24 09:17:47.000000000 +0000
