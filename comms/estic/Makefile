@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/05/11 13:31:33 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/09/09 02:41:55 obache Exp $
 
 DISTNAME=	estic-1.61
 PKGREVISION=	1
@@ -23,7 +23,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV:C/-.*//}
 
-USE_LANGUAGES=	c++
+USE_LANGUAGES=	c c++
 
 BUILD_TARGET=	depend all
 ESTICPATCH=	${DISTNAME}-patch-from-1.60${EXTRACT_SUFX}
