@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2006/07/05 05:37:42 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2006/09/05 00:55:32 gdt Exp $
 #
 
 DISTNAME=	mail-notification-3.0
+PKGREVISION=	1
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://savannah.nongnu.org/download/mailnotify/
 

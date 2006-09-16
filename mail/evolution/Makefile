@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.112 2006/08/23 09:49:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.113 2006/09/15 15:24:57 jmmv Exp $
 
 DISTNAME=		evolution-2.8.0
+PKGREVISION=		1
 CATEGORIES=		mail time gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evolution/2.8/}
 EXTRACT_SUFX=		.tar.bz2

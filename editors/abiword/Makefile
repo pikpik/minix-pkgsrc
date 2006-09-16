@@ -1,6 +1,9 @@
-# $NetBSD: Makefile,v 1.101 2006/05/04 12:59:04 sketch Exp $
+# $NetBSD: Makefile,v 1.102 2006/07/10 21:40:49 adam Exp $
 
 .include "Makefile.common"
+
+PKGREVISION=	1
+
 COMMENT=	Open Source cross-platform word processor
 
 # GTK1 version and previous name of the GTK2 version

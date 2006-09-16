@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.41 2006/08/06 19:10:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.42 2006/09/15 15:23:12 jmmv Exp $
 #
 
 DISTNAME=	gnome-system-monitor-2.15.92
 PKGNAME=	${DISTNAME:S/gnome/gnome2/}
+PKGREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-system-monitor/2.15/}
 EXTRACT_SUFX=	.tar.bz2
