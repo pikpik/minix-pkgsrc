@@ -1,4 +1,4 @@
-# $NetBSD: check-files.mk,v 1.5 2006/06/09 16:41:09 jlam Exp $
+# $NetBSD: check-files.mk,v 1.6 2006/08/22 18:50:56 joerg Exp $
 
 .if defined(PKG_DEVELOPER)
 CHECK_FILES?=		yes
@@ -54,6 +54,7 @@ CHECK_FILES_SKIP+=	${d:C/^([^\/])/${PREFIX}\/\1/}.*
 CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.alias
 CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.dir
 CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.scale
+CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.cache-1
 .endif
 
 # Mutable charset.alias file
