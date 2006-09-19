@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2006/06/06 14:53:06 salo Exp $
+# $NetBSD: Makefile,v 1.5 2006/06/23 15:48:50 jlam Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SUSE100}
 DISTFILES=		${RPMFILES}
@@ -70,7 +70,7 @@ do-install:
 	  >>${PLIST_SRC}
 	${ECHO} "@unexec ${RMDIR} %D/${EMULSUBDIR}/etc 2>/dev/null || ${TRUE}" \
 	  >>${PLIST_SRC}
-	${SED}	-e 's:#! :#! /${EMULSUBDIR}:' \
+	${SED}	-e 's:#! :#! ${EMULDIR}:' \
 		-e 's:^RTLD=:RTLD=/${EMULSUBDIR}:' \
 		< ${LINUX_LDD} > ${LINUX_LDD}.new
 	${MV} ${LINUX_LDD}.new ${LINUX_LDD}
