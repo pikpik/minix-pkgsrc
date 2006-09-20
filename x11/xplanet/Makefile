@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/05/15 23:09:05 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2006/09/20 18:20:39 xtraeme Exp $
 
 DISTNAME=	xplanet-1.2.0
 PKGREVISION=	3
@@ -21,7 +21,7 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xplanet/${dir}
 .endfor
 
-PKG_OPTIONS_VAR=        PKG_OPTIONS.planet
+PKG_OPTIONS_VAR=        PKG_OPTIONS.xplanet
 PKG_SUPPORTED_OPTIONS=  x11
 PKG_SUGGESTED_OPTIONS=  x11
 
