@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/06 10:36:46 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2006/07/22 04:46:16 rillig Exp $
 #
 
 DISTNAME=		geos-2.0.0
+PKGREVISION=		1
 CATEGORIES=		geography
 MASTER_SITES=		http://geos.refractions.net/
 EXTRACT_SUFX=		.tar.bz2
