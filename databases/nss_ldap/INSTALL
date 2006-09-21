@@ -1,0 +1,7 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	ln -sf ${PREFIX}/lib/nss_ldap.so.1 /usr/lib/nss_ldap.so.0
+	;;
+esac

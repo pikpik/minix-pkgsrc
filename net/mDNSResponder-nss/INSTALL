@@ -1,0 +1,7 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	ln -sf ${PREFIX}/lib/nss_mdns.so.0 /usr/lib/nss_mdns.so.0
+	;;
+esac
