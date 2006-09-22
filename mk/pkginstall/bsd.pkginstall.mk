@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkginstall.mk,v 1.13 2006/07/05 22:21:03 jlam Exp $
+# $NetBSD: bsd.pkginstall.mk,v 1.14 2006/07/19 18:05:35 jlam Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and implements the
 # common INSTALL/DEINSTALL scripts framework.  To use the pkginstall
@@ -699,6 +699,8 @@ FONTS_DIRS.x11+=	${FONTS_DIRS.type1}
 USE_TOOLS+=		mkfontdir:run
 FILES_SUBST+=		MKFONTDIR=${TOOLS_PATH.mkfontdir:Q}
 .endif
+
+FILES_SUBST+=		X11_ENCODINGSDIR=${X11_ENCODINGSDIR:Q}
 
 ${_INSTALL_FONTS_DATAFILE}:
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${.TARGET:H}

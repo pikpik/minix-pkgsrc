@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2006/02/12 15:29:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/19 12:23:02 joerg Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fonts75dpi-${XORG_VER}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	fonts x11
 MASTER_SITES=	${MASTER_SITE_XORG}
 
@@ -17,6 +17,8 @@ DEPENDS+=	xorg-fontsEncodings>=${XORG_VER}:../../fonts/xorg-fontsEncodings
 XBUILD_DIRS=	fonts/encodings fonts/bdf/75dpi
 XINSTALL_DIRS=	fonts/bdf/75dpi
 XEXTRACTS=	${XBUILD_DIRS}
+
+FONTS_DIRS.x11=		${X11ROOT_PREFIX}/lib/X11/fonts/75dpi
 
 .include "../../fonts/xorg-fontsEncodings/Makefile.common"
 .include "../../mk/bsd.pkg.mk"

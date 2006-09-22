@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/12 15:29:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/18 19:37:49 joerg Exp $
 
 DISTNAME=	X11R${XORG_VER}-src1
 PKGNAME=	xorg-fontsCyrillic-${XORG_VER}
@@ -17,6 +17,8 @@ DEPENDS+=	xorg-fontsEncodings>=${XORG_VER}:../../fonts/xorg-fontsEncodings
 XBUILD_DIRS=	fonts/encodings fonts/bdf/cyrillic
 XINSTALL_DIRS=	fonts/bdf/cyrillic
 XEXTRACTS=	${XBUILD_DIRS}
+
+FONTS_DIRS.x11+=	${X11ROOT_PREFIX}/lib/X11/fonts/cyrillic
 
 .include "../../fonts/xorg-fontsEncodings/Makefile.common"
 .include "../../mk/bsd.pkg.mk"
