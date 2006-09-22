@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/07/21 06:32:57 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/07/22 05:10:54 rillig Exp $
 #
 
 DISTNAME=	Renaissance-0.8.0
@@ -13,6 +13,7 @@ COMMENT=	Structured GNUstep user interface development framework
 USE_LANGUAGES=	objc
 
 NO_CONFIGURE=	yes
+MAKE_FILE=	GNUmakefile
 
 .include "../../x11/gnustep-back/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

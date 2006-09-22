@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/07/22 05:10:54 rillig Exp $
+# $NetBSD: Makefile,v 1.40 2006/08/30 14:55:56 adam Exp $
 
 DISTNAME=	gorm-1.1.0
 PKGNAME=	Gorm-1.1.0
@@ -15,6 +15,7 @@ BUILDLINK_API_DEPENDS.gnustep-base+=	gnustep-base>=1.11.1
 BUILDLINK_API_DEPENDS.gnustep-gui+=	gnustep-gui>=0.10.1
 
 NO_CONFIGURE=	yes
+MAKE_FILE=	GNUmakefile
 
 .include "../../x11/gnustep-back/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
