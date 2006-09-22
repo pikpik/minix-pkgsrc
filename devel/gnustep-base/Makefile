@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/07/22 05:10:54 rillig Exp $
+# $NetBSD: Makefile,v 1.35 2006/08/30 14:55:00 adam Exp $
 
 DISTNAME=	gnustep-base-1.13.0
 CATEGORIES=	devel gnustep
@@ -15,6 +15,7 @@ PTHREAD_LIBS=		-lpthread
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX:Q}/libexec/GNUstep
 CONFIGURE_ENV+=		INSTALL_PROGRAM=${INSTALL_SCRIPT:Q}
+MAKE_FILE=		GNUmakefile
 
 SUBST_CLASSES+=		pthread
 SUBST_STAGE.pthread=	pre-configure
