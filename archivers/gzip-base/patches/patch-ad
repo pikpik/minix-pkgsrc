@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- inflate.c.orig	1993-08-13 10:50:00.000000000 +0100
++++ inflate.c
+@@ -316,7 +316,7 @@ int *m;                 /* maximum looku
+   {
+     *t = (struct huft *)NULL;
+     *m = 0;
+-    return 0;
++    return 2;
+   }
+ 
+ 
