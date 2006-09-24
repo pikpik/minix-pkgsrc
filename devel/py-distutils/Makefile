@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/07/22 09:16:01 recht Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:07 rillig Exp $
 #
 
 DISTNAME=	Distutils-1.0.2
@@ -16,10 +16,10 @@ PLIST_SUBST+=	PYSITELIB=${PYSITELIB:Q}
 PYTHON_DISTUTILS_BOOTSTRAP=	yes
 
 do-build:
-	(cd ${WRKSRC} && ${PYTHONBIN} setup.py build)
+	cd ${WRKSRC} && ${PYTHONBIN} setup.py build
 
 do-install:
-	(cd ${WRKSRC} && ${PYTHONBIN} setup.py install)
+	cd ${WRKSRC} && ${PYTHONBIN} setup.py install
 
 .include "../../lang/python/pyversion.mk"
 .include "../../mk/bsd.pkg.mk"
