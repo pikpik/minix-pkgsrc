@@ -1,0 +1,6 @@
+# $NetBSD$
+
+DISTNAME=	${MOZILLA}-1.5a.en-US.${MOZ_PLATFORM}-i686
+EXTRACT_SUFX=	.tar.bz2
+MOZ_PLATFORM=	linux
+MOZ_GTK2=	yes
