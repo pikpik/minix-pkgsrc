@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.48 2006/07/19 19:14:37 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2006/09/01 12:00:43 dmcmahill Exp $
 #
 
 DISTNAME=	geda-${PKGVERSION}
 CATEGORIES=	cad
+DISTFILES=	# empty
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.geda.seul.org/
