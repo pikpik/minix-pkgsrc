@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- baobab/src/baobab-utils.c.orig	2006-08-27 11:10:39.000000000 +0000
++++ baobab/src/baobab-utils.c
+@@ -27,7 +27,6 @@
+ #include <stdlib.h>
+ #include <sys/stat.h>
+ #include <string.h>
+-#include <monetary.h>
+ #include <glib/gi18n.h>
+ #include <glib/gprintf.h>
+ #include <gtk/gtk.h>
