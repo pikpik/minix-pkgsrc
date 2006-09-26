@@ -1,4 +1,0 @@
-@comment $NetBSD$
-man/man1/vtysh.1
-bin/vtysh
-share/examples/zebra/vtysh.conf.sample
