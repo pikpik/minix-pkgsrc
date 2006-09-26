@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2006/04/22 09:22:13 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/30 18:23:30 joerg Exp $
 
 DISTNAME=	nntpclnt-1.6.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/nntp/
 
@@ -24,7 +24,7 @@ PLIST_SUBST+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR:Q}
 .include "../../mk/bsd.prefs.mk"
 
 CONFIG_SH=	${FILESDIR}/config.${OPSYS}.sh
-ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* DragonFly-*-*
+ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* DragonFly-*-* Linux-*-*
 
 INSTALLATION_DIRS=	bin include lib man/man3
 
