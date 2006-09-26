@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- cache/search/hyperestraier/scripts/wwwoffle-estcmd-full.orig	2005-09-06 05:45:59.000000000 +1200
++++ cache/search/hyperestraier/scripts/wwwoffle-estcmd-full
+@@ -19,5 +19,5 @@ echo > search/hyperestraier/wwwoffle-est
+ 
+ # Do the gathering
+ 
+-estwolefind . | estcmd gather -cl -fm -px @uri -sd -cm search/hyperestraier/db - \
++estwolefind . | estcmd gather -cl -fm -px @uri -sd -cm search/hyperestraier/db/index - \
+     >> search/hyperestraier/wwwoffle-estcmd.log 2>&1
+
