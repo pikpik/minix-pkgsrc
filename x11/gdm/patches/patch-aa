@@ -2,15 +2,17 @@ $NetBSD$
 
 --- configure.orig	2006-09-04 23:27:10.000000000 +0200
 +++ configure
-@@ -28633,7 +28633,6 @@ cat confdefs.h >>conftest.$ac_ext
+@@ -28633,7 +28633,9 @@ cat confdefs.h >>conftest.$ac_ext
  cat >>conftest.$ac_ext <<_ACEOF
  /* end confdefs.h.  */
  #include <sys/statvfs.h>
--#include <sys/fstyp.h>
++#ifndef __NetBSD__
+ #include <sys/fstyp.h>
++#endif
  _ACEOF
  if { (ac_try="$ac_cpp conftest.$ac_ext"
  case "(($ac_try" in
-@@ -33911,6 +33910,7 @@ else
+@@ -33911,6 +33913,7 @@ else
     GDM_USER_PATH="$GDM_USER_PATH:/usr/bin/X11:/usr/X11R6/bin:/usr/local/bin:/opt/X11R6/bin"
     X_CONFIG_OPTIONS="-audit 0"
  fi
