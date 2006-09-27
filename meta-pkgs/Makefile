@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2006/06/10 14:25:25 salo Exp $
+# $NetBSD: Makefile,v 1.35 2006/08/04 11:55:38 jmmv Exp $
 #
 
 COMMENT=	Collections of other packages
 
-SUBDIR+=	XFree86
 SUBDIR+=	boost
 SUBDIR+=	fxtv-capture
 SUBDIR+=	gnome

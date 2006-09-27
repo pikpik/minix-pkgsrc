@@ -1,3 +1,0 @@
-@comment $NetBSD$
-${X11ROOT_PREFIX}/bin/kbd_mode
-${X11ROOT_PREFIX}/${MAN_DIR}/kbd_mode.${MAN_SUFFIX}
