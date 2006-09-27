@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:09:44 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/30 03:44:43 jlam Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-c-${GCC_VERSION}
 PKGREVISION=	1
@@ -15,6 +15,7 @@ PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 MAKE_ENV+=	ALL_GCC=${ALL_GCC:Q}
 MAKE_ENV+=	ALL_GCC_C=${ALL_GCC_C:Q}
 MAKE_ENV+=	ALL_GCC_CCC=${ALL_GCCXX_C:Q}
+MAKE_ENV+=	SHELL=/bin/sh
 
 .include "../../mk/compiler.mk"
 
