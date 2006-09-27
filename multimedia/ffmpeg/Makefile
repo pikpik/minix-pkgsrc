@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/08/11 05:40:47 ben Exp $
+# $NetBSD: Makefile,v 1.28 2006/08/11 09:37:11 drochner Exp $
 
 DISTNAME=	ffmpeg-0.4.9-pre1
 PKGNAME=	ffmpeg-0.4.9pre1
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ffmpeg/}
 
 MAINTAINER=	zul@NetBSD-fr.org
-HOMEPAGE=	http://ffmpeg.sourceforge.net/
+HOMEPAGE=	http://ffmpeg.mplayer.hu/
 COMMENT=	MPEG decoding, encoding and streaming software
 
 HAS_CONFIGURE=	YES
