@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2006/06/13 15:54:04 drochner Exp $
+# $NetBSD: Makefile,v 1.67 2006/07/08 12:50:18 drochner Exp $
 
 DISTNAME=	libxslt-1.1.17
 CATEGORIES=	textproc
@@ -22,6 +22,11 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 CONFIGURE_ARGS+=	--without-python
 
 TEST_TARGET=		check
+
+.include "../../mk/bsd.prefs.mk"
+.if !empty(LOWER_OPSYS:Mirix5*)
+CPPFLAGS+=	-Dsocklen_t=int
+.endif
 
 BUILDLINK_API_DEPENDS.libxml2+=	libxml2>=2.6.25
 
