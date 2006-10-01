@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/arena
+man/man1/arena.1
+share/doc/arena/manual.asc
+share/doc/arena/transform
+@dirrm share/doc/arena
