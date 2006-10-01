@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/08/23 10:30:02 shannonjr Exp $
+# $NetBSD: Makefile,v 1.12 2006/08/23 18:51:56 wiz Exp $
 #
 
 DISTNAME=		prewikka-${VERSION}
@@ -42,16 +42,17 @@ SUBST_FILES.code=	runPrewikka.c
 SUBST_SED.code=		-e 's,@PREFIX@,${PREFIX},g'
 SUBST_SED.code+=	-e 's,@PREWIKKA_USER@,${PREWIKKA_USER},g'
 SUBST_SED.code+=	-e 's,@PYTHONBIN@,${PYTHONBIN},g'
+
 FILES_SUBST+=	PREWIKKA_USER=${PREWIKKA_USER:Q}
 
 pre-patch:
-		${CP} ${FILESDIR}/runPrewikka.c ${WRKSRC}
+	cp ${FILESDIR}/runPrewikka.c ${WRKSRC}
 
 post-build:
-		cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${CC} ${CFLAGS} -o runPrewikka runPrewikka.c
+	cd ${WRKSRC} && env ${MAKE_ENV} ${CC} ${CFLAGS} -o runPrewikka runPrewikka.c
 
 post-install:
-		${INSTALL_PROGRAM} ${WRKSRC}/runPrewikka ${PREFIX}/sbin/runPrewikka
+	${INSTALL_PROGRAM} ${WRKSRC}/runPrewikka ${PREFIX}/sbin/runPrewikka
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

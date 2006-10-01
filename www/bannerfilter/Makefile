@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/12/29 06:22:21 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:57 jlam Exp $
 #
 
 DISTNAME=	bannerfilter-1.31
@@ -17,15 +17,13 @@ CONF_FILES=	${SHAREDIR}/bannerfilter.conf ${PKG_SYSCONFDIR}/bannerfilter.conf
 REPLACE_PERL=	redirector.pl
 
 SUBST_CLASSES+=	bf
-
 SUBST_STAGE.bf=	post-patch
 SUBST_FILES.bf=	bannerfilter.conf
 SUBST_SED.bf=	-e s,@SHAREDIR@,${SHAREDIR},g
 
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin ${SHAREDIR}/www ${SHAREDIR}/doc ${SHAREDIR}/data
 
 do-install:
-	${INSTALL_DATA_DIR} ${SHAREDIR}/www ${SHAREDIR}/doc ${SHAREDIR}/data
 	${INSTALL_DATA} ${WRKSRC}/www/* ${SHAREDIR}/www/
 	${INSTALL_DATA} ${WRKSRC}/*.data ${SHAREDIR}/data/
 	${INSTALL_DATA} ${WRKSRC}/CHANGES ${WRKSRC}/COPYING ${WRKSRC}/README ${SHAREDIR}/doc/
