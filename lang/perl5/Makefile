@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.120 2006/05/06 12:32:20 jlam Exp $
+# $NetBSD: Makefile,v 1.121 2006/07/19 18:10:32 jlam Exp $
 
 DISTNAME=	perl-5.8.8
 PKGREVISION=	3
@@ -209,7 +209,7 @@ PERL5_BUILD_THREADS_SUPPORT=	no
 .endif
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.perl
-PKG_SUPPORTED_OPTIONS=		threads
+PKG_SUPPORTED_OPTIONS=		debug threads
 .if !empty(PERL5_BUILD_THREADS_SUPPORT:M[yY][eE][sS])
 PKG_SUGGESTED_OPTIONS=		threads
 .endif
@@ -223,6 +223,10 @@ CFLAGS+=		${PTHREAD_CFLAGS}
 LIBSWANTED+=		${PTHREAD_LIBS:M-l*:S/^-l//}
 .else
 CONFIGURE_ARGS+=	-Uuseithreads
+.endif
+
+.if !empty(PKG_OPTIONS:Mdebug)
+CFLAGS+=		-DDEBUGGING
 .endif
 
 .if !empty(LIBSWANTED)
