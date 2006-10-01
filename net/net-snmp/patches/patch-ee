@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- agent/mibgroup/host/hr_device.c.orig	2005-11-18 01:44:47.000000000 +0000
++++ agent/mibgroup/host/hr_device.c
+@@ -222,7 +222,7 @@ var_hrdevice(struct variable *vp,
+ {
+     int             dev_idx, type;
+     oid            *oid_p;
+-    char           *tmp_str;
++    const char           *tmp_str;
+     static char     string[1024];
+ 
+     dev_idx =
