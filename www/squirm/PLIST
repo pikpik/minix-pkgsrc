@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/squirm
+share/examples/squirm/squirm.local.dist
+share/examples/squirm/squirm.patterns.dist
+@dirrm share/examples/squirm
