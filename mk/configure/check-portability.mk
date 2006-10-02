@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: check-portability.mk,v 1.1 2006/10/02 15:42:47 rillig Exp $
 #
 # This file contains some checks that are applied to the configure
 # scripts to check for certain constructs that are known to cause
@@ -21,14 +21,11 @@
 #	Default value: no
 #
 
-.if !empty(PKG_DEVELOPER:M[Yy][Ee][Ss])
+.if defined(PKG_DEVELOPER) && !empty(PKG_DEVELOPER:M[Yy][Ee][Ss])
 CHECK_PORTABILITY?=		yes
 .endif
 CHECK_PORTABILITY?=		no
 SKIP_PORTABILITY_CHECK?=	no
-
-_RE_TEST=	-e "test[ 	]*[^	 ].*=="
-_RE_TEST+=	-e "\\[[ 	].*==.*[ 	]\\]"
 
 .if ${CHECK_PORTABILITY:M[Yy][Ee][Ss]} != "" && \
     ${SKIP_PORTABILITY_CHECK:M[Yy][Ee][Ss]} == ""
@@ -60,4 +57,3 @@ _configure-check-for-test:
 		;;							\
 	esac
 .endfor
-
