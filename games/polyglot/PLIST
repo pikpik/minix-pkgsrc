@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/polyglot
+share/doc/polyglot/readme.txt
+share/examples/polyglot/fruit.ini

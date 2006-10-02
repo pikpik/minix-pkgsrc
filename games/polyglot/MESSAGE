@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+To use games/fruit with xboard, run
+
+    xboard -fcp 'polyglot ${PREFIX}/share/examples/polyglot/fruit.ini'
+
+===========================================================================
