@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/07/13 18:01:19 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2005/08/06 06:19:04 jlam Exp $
 #
 
 DISTNAME=	Net-Goofey-1.5
@@ -12,6 +12,9 @@ HOMEPAGE=	http://tertius.net.au/~gossamer/code/
 COMMENT=	Perl module for communicating with a Goofey server
 
 PERL5_PACKLIST=		auto/Net/Goofey/.packlist
+
+# Requires the user to enter a username/password
+INTERACTIVE_STAGE=	test
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
