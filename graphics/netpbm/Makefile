@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2006/06/25 06:35:58 adam Exp $
+# $NetBSD: Makefile,v 1.144 2006/09/09 02:42:01 obache Exp $
 
 DISTNAME=	netpbm-10.34
 CATEGORIES=	graphics
@@ -56,6 +56,16 @@ MAKE_ENV+=	NETPBMLIBTYPE="unixshared" NETPBMLIBSUFFIX="so"
 
 MAKE_ENV+=	JASPERLIB="${LDFLAGS} -ljasper"
 MAKE_ENV+=	JASPERHDR_DIR=${CPPFLAGS:M*:Q}
+
+.if ${PKGSRC_COMPILER} == "ido"
+CPPFLAGS+=	-DSGI_IDO_CC
+.endif
+
+.if !empty(LOWER_OPSYS:Mirix5*)
+# needs snprintf()
+. include "../../pkgtools/libnbcompat/buildlink3.mk"
+LIBS+=		${BUILDLINK_LDADD.libnbcompat}
+.endif
 
 .include "../../graphics/jasper/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
