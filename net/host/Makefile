@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:19 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/09/09 02:43:11 obache Exp $
 
 DISTNAME=	host-20040812
 CATEGORIES=	net
@@ -14,5 +14,12 @@ NO_CONFIGURE =	yes
 MAKE_FILE=	Makefile.BSD
 
 MAKE_FLAGS+=	__NetBSD__=1
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Darwin"
+CPPFLAGS+=	-DBIND_8_COMPAT
+BUILDLINK_TRANSFORM+=	rm:-Wl,--warn-common
+BUILDLINK_TRANSFORM+=	rm:-static
+.endif
 
 .include "../../mk/bsd.pkg.mk"
