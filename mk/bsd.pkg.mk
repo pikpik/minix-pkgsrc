@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1883 2006/08/04 07:04:38 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1884 2006/08/04 20:52:27 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -888,7 +888,7 @@ show-tools:
 #	It defaults to the local login name.
 #
 #    PKGSRC_CHANGES is the path to the CHANGES file to which the entry
-#	is appended.  It defaults to ${PKGSRCDIR}/doc/CHANGES.
+#	is appended.  It defaults to ${PKGSRCDIR}/doc/CHANGES-YYYY.
 #
 # Example usage:
 #
