@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2005/01/04 13:23:24 taca Exp $
+# $NetBSD: Makefile,v 1.17 2005/10/13 17:29:32 wiz Exp $
 #
 
-DISTNAME=	pgpdump-0.24
+DISTNAME=	pgpdump-0.25
 CATEGORIES=	security
 MASTER_SITES=	http://pgp.iijlab.net/pgpdump/
 
