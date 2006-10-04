@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:24 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/05/26 12:30:15 drochner Exp $
 
 DISTNAME=		cint5.15
 PKGNAME=		cint-5.15.174
@@ -24,7 +24,7 @@ PLIST_SUBST+= HAVE_THR="@comment "
 .endif
 
 INSTALLATION_DIRS=	bin
-USE_LANGUAGES+=		c++
+USE_LANGUAGES=		c c++
 
 post-extract:
 	${FIND} -d ${WRKSRC} -type d -name CVS -exec ${RM} -rf {} \;
