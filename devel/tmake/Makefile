@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/05/02 12:26:30 gdt Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/17 17:45:41 rillig Exp $
 #
 
 DISTNAME=	tmake-1.13
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.trolltech.com/freebies/tmake/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.trolltech.com/products/download/freebies/tmake.html
+HOMEPAGE=	http://www.trolltech.com/developer/downloads/qt/freebies/
 COMMENT=	Cross-platform Makefile Tool
 
 USE_TOOLS+=	perl:run

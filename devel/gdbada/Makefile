@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/07/02 09:58:46 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2006/07/07 15:49:31 jlam Exp $
 
 DISTNAME=	gdbada-6.3
 PKGREVISION=	2
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.johnrshannon.com/download/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	john@johnrshannon.com
-HOMEPAGE=	http://libre.act-europe.fr/GDB/
+HOMEPAGE=	https://libre2.adacore.com/GDB/
 COMMENT=	GNAT GDB : An Ada 95 Debugger
 
 # Not yet ported to AMD 64-bit machines or Darwin

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/04/06 06:21:58 reed Exp $
+# $NetBSD: Makefile,v 1.15 2006/09/09 02:41:59 obache Exp $
 #
 
 DISTNAME=		mdiff224
@@ -9,7 +9,7 @@ MASTER_SITES=		http://www.logiqx.com/Tools/MAMEDiff/
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		wiz@NetBSD.org
-HOMEPAGE=		http://www.logiqx.com/Tools/MAMEDiff/MAMEDiff.shtml
+HOMEPAGE=		http://www.logiqx.com/Tools/MAMEDiff/MAMEDiff.php
 COMMENT=		Compare MAME rom sets of different releases
 
 USE_TOOLS+=		gmake

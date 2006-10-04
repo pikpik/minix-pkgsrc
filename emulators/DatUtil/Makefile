@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/06 06:21:58 reed Exp $
+# $NetBSD: Makefile,v 1.19 2006/09/09 02:41:59 obache Exp $
 #
 
 DISTNAME=		dutil227
@@ -9,7 +9,7 @@ MASTER_SITES=		http://www.logiqx.com/Tools/DatUtil/
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		wiz@NetBSD.org
-HOMEPAGE=		http://www.logiqx.com/Tools/DatUtil/DatUtil.shtml
+HOMEPAGE=		http://www.logiqx.com/Tools/DatUtil/DatUtil.php
 COMMENT=		Create and convert emulator rom checksum files
 
 USE_TOOLS+=		gmake

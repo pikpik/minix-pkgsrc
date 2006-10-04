@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/06/07 15:44:52 minskim Exp $
+# $NetBSD: Makefile,v 1.28 2006/06/17 20:52:07 rillig Exp $
 
 DISTNAME=		p5-perl-headers
 PKGNAME=		${DISTNAME}-${OS_VERSION}
@@ -9,7 +9,7 @@ MASTER_SITES=		# empty
 DISTFILES=		# empty
 
 MAINTAINER=		jlam@pkgsrc.org
-HOMEPAGE=		http://language.perl.com/index.html
+HOMEPAGE=		http://www.perl.com/language/index.html
 COMMENT=		Perl header files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

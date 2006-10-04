@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:09:00 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/09/09 02:41:59 obache Exp $
 #
 
 DISTNAME=		rbuild27
@@ -9,7 +9,7 @@ MASTER_SITES=		http://www.logiqx.com/Tools/ROMBuild/
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		wiz@NetBSD.org
-HOMEPAGE=		http://www.logiqx.com/Tools/ROMBuild/ROMBuild.shtml
+HOMEPAGE=		http://www.logiqx.com/Tools/ROMBuild/ROMBuild.php
 COMMENT=		Arcade ROM manipulation tool
 
 USE_TOOLS+=		gmake

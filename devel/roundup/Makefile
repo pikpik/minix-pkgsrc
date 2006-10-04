@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.27 2006/02/05 23:08:52 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2006/07/15 11:39:17 recht Exp $
 
 DISTNAME=	roundup-1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://cheeseshop.python.org/packages/source/r/roundup/
 
 MAINTAINER=	recht@NetBSD.org
-HOMEPAGE=	http://roundup.sf.net/
+HOMEPAGE=	http://roundup.sourceforge.net/
 COMMENT=	Issue tracking system with command-line, web and email clients
 
 PYDISTUTILSPKG=	yes
