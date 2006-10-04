@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.784 2006/09/13 16:50:41 gdt Exp $
+# $NetBSD: Makefile,v 1.785 2006/10/01 10:49:20 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -138,6 +138,7 @@ SUBDIR+=	equeue
 SUBDIR+=	eric3
 SUBDIR+=	error
 SUBDIR+=	exctags
+SUBDIR+=	fann
 SUBDIR+=	fastdep
 SUBDIR+=	ffcall
 SUBDIR+=	fhist
