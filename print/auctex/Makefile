@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/04/06 03:32:50 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2006/06/12 12:30:05 tonio Exp $
 
 DISTNAME=		auctex-11.83
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -6,7 +6,7 @@ CATEGORIES=		print
 MASTER_SITES=		http://ftp.gnu.org/pub/gnu/auctex/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.nongnu.org/auctex/
+HOMEPAGE=		http://www.gnu.org/software/auctex/
 COMMENT=		Enhanced LaTeX mode for Emacs
 
 EMACS_MODULES=		base

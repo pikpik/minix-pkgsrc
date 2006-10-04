@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:10:43 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/04/17 13:46:47 wiz Exp $
 #
 
 DISTNAME=	gpa-0.7.0
@@ -7,7 +7,7 @@ CATEGORIES=	x11 security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/
 
 MAINTAINER=	pr@alles.prima.de
-HOMEPAGE=	http://www.gnupg.org/gpa.html
+HOMEPAGE=	http://www.gnupg.org/related_software/gpa/
 COMMENT=	GUI frontend to gnupg
 
 USE_TOOLS+=		pkg-config

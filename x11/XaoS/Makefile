@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/06/08 12:24:55 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/10/02 23:03:33 rillig Exp $
 #
 
 DISTNAME=		XaoS-3.2.2
@@ -6,7 +6,7 @@ CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xaos/}
 
 MAINTAINER=		atatat@NetBSD.org
-HOMEPAGE=		http://xaos.theory.org/
+HOMEPAGE=		http://xaos.sourceforge.net/
 COMMENT=		Zoomable fractal rendering doodad
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

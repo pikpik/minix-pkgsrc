@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:43 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/16 01:19:26 jlam Exp $
 #
 
 DISTNAME=		webnew-1.3
@@ -6,7 +6,7 @@ CATEGORIES=		www
 MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
-HOMEPAGE=		http://www.tac.nyc.ny.us/kim/webnew/
+HOMEPAGE=		http://kimmo.suominen.com/webnew/
 COMMENT=		Retrieve modification times of web documents
 
 USE_TOOLS+=		perl:run

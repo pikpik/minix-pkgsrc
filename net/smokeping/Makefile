@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2006/06/30 10:07:50 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/08/09 21:48:53 adrianp Exp $
 
 DISTNAME=	smokeping-2.0.9
 CATEGORIES=	net
-MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/pub/
+MASTER_SITES=	http://oss.oetiker.ch/smokeping/pub/
 
 MAINTAINER=	bouyer@NetBSD.org
-HOMEPAGE=	http://people.ee.ethz.ch/~oetiker/webtools/smokeping/index.en.html
+HOMEPAGE=	http://oss.oetiker.ch/smokeping/index.en.html
 COMMENT=	Latency/packet loss monitoring/graphing tool
 
 DEPENDS+=	rrdtool>=1.0:../../databases/rrdtool

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/09/12 21:37:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:51:03 rillig Exp $
 #
 
 DISTNAME=	espa~nol-1.7
@@ -7,7 +7,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.datsi.fi.upm.es/~coes/
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://lucas.hispalinux.es/htmls/coes.html
+HOMEPAGE=	http://es.tldp.org/htmls/coes.html
 COMMENT=	Spanish dictionary for interactive spelling checker
 
 DEPENDS+=	ispell-base>=3.1.20:../../textproc/ispell-base

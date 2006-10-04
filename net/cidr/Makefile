@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2005/12/27 13:54:58 seb Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/04 21:30:17 jlam Exp $
 #
 
 DISTNAME=	cidr-current
 PKGNAME=	cidr-2.3.1
 CATEGORIES=	net
-MASTER_SITES=	http://home.netcom.com/~naym/cidr/
+MASTER_SITES=	http://critical.ch/distfiles/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://home.netcom.com/~naym/cidr.html
+HOMEPAGE=	# http://home.netcom.com/~naym/cidr.html
 COMMENT=	RFC 1878 subnet calculator / helper
 
 WRKSRC=		${WRKDIR}/cidr-2.3

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/02/05 23:11:28 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2006/04/06 06:22:55 reed Exp $
 
 DISTNAME=	pycurl-7.13.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
@@ -7,7 +7,7 @@ CATEGORIES=	www python
 MASTER_SITES=	http://pycurl.sourceforge.net/download/
 
 MAINTAINER=	shell@NetBSD.org
-HOMEPAGE=	http://pycurl.sf.net/
+HOMEPAGE=	http://pycurl.sourceforge.net/
 COMMENT=	Python module interface to the cURL library
 
 PYDISTUTILSPKG=	# defined

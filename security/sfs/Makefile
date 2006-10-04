@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/04/23 00:12:42 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/09/06 20:33:24 wiz Exp $
 #
 
 DISTNAME=		sfs-0.7.2
@@ -7,7 +7,7 @@ CATEGORIES=		net security
 MASTER_SITES=		http://www.fs.net/sfswww/dist/
 
 MAINTAINER=		mike@ethmoid.org
-HOMEPAGE=		http://www.fs.net/
+HOMEPAGE=		http://www.fs.net/sfswww/
 COMMENT=		Secure, global, self-certifying network file system
 
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile-sunbird.common,v 1.6 2006/06/27 11:11:52 joerg Exp $
+# $NetBSD: Makefile-sunbird.common,v 1.7 2006/09/24 16:31:38 salo Exp $
 
 MOZILLA_BIN=		sunbird-bin
 MOZ_VER=		0.3alpha2
@@ -8,7 +8,7 @@ CATEGORIES=		time
 MASTER_SITES=		http://ftp.mozilla.org/pub/mozilla.org/calendar/sunbird/releases/${MOZ_VER:S/alpha/a/}/source/
 MASTER_SITES+=		ftp://ftp.mozilla.org/pub/mozilla.org/calendar/sunbird/releases/${MOZ_VER:S/alpha/a/}/source/
 
-HOMEPAGE=		http://www.mozilla.org/projects/calendar/sunbird.html
+HOMEPAGE=		http://www.mozilla.org/projects/calendar/sunbird/
 
 CONFIGURE_ENV+=		MOZ_SUNBIRD=1
 MAKE_ENV+=		MOZ_SUNBIRD=1

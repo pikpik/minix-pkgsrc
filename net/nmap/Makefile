@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.54 2006/07/02 19:17:26 rillig Exp $
+# $NetBSD: Makefile,v 1.55 2006/07/07 15:49:33 jlam Exp $
 #
 
 DISTNAME=	nmap-4.11
 CATEGORIES=	net security
-MASTER_SITES=	http://www.insecure.org/nmap/dist/
+MASTER_SITES=	http://insecure.org/nmap/dist/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	salo@NetBSD.org
-HOMEPAGE=	http://www.insecure.org/nmap/
+HOMEPAGE=	http://insecure.org/nmap/
 COMMENT=	Network/port scanner with OS detection
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

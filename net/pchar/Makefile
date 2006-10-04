@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.28 2006/05/14 18:45:25 seb Exp $
+# $NetBSD: Makefile,v 1.29 2006/07/17 17:24:34 wiz Exp $
 
 DISTNAME=		pchar-1.5
 CATEGORIES=		net
-MASTER_SITES=		http://www.employees.org/~bmah/Software/pchar/
+MASTER_SITES=		http://www.kitchenlab.org/www/bmah/Software/pchar/
 
 MAINTAINER=		soren@NetBSD.org
-HOMEPAGE=		http://www.employees.org/~bmah/Software/pchar/
+HOMEPAGE=		http://www.kitchenlab.org/www/bmah/Software/pchar/
 COMMENT=		Tool for measuring Internet path characteristics
 
 GNU_CONFIGURE=		yes

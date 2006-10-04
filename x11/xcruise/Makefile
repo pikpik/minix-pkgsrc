@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2003/07/17 22:56:52 grant Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:45 joerg Exp $
 #
 
 DISTNAME=	xcruise-0.24
 PKGREVISION=	1
 CATEGORIES=	x11 graphics
-MASTER_SITES=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xcruiser/}
 
 MAINTAINER=	minoura@NetBSD.org
-HOMEPAGE=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
+HOMEPAGE=	http://xcruiser.sourceforge.net/
 COMMENT=	Navigate through a three-dimensional view of a file system
 
 # LICENSE=	GPL

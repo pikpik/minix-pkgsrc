@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/04/22 09:22:16 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2006/07/18 23:27:14 jlam Exp $
 # STOP!  Don't update this to a later version of this software.
 # The JSDK and Apache Jakarta projects have merged, making the
 # jakarta-tomcat package the current version of this software.
@@ -13,7 +13,7 @@ MASTER_SITES=	# none
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jwise@NetBSD.org
-HOMEPAGE=	http://java.sun.com/products/servlet/index.html
+HOMEPAGE=	http://java.sun.com/products/servlet/index.jsp
 COMMENT=	Sun's Java Servlet Development Kit, version 2.0
 
 ARCHIVE=	http://java.sun.com/products/servlet/archive.html

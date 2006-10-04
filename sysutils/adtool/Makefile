@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:39 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/05/31 18:22:26 ghen Exp $
 #
 
 DISTNAME=	adtool-1.2
 PKGREVISION=	2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://c128.org/adtool/
+MASTER_SITES=	http://gp2x.org/adtool/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://c128.org/adtool/
+HOMEPAGE=	http://gp2x.org/adtool/
 COMMENT=	Active Directory administration utility for Unix
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

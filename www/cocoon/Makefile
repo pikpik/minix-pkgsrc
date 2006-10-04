@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.27 2006/02/05 23:11:20 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2006/05/18 20:30:01 wiz Exp $
 
 DISTNAME=	Cocoon-1.8.2
 PKGNAME=	cocoon-1.8.2
 PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://xml.apache.org/dist/cocoon/cocoon1/
+MASTER_SITES=	http://cocoon.apache.org/dist/cocoon/cocoon1/
 
 MAINTAINER=	jwise@NetBSD.org
-HOMEPAGE=	http://xml.apache.org/cocoon/
+HOMEPAGE=	http://cocoon.apache.org/
 COMMENT=	The Apache Project's XML/XSL based web publishing system
 
 BROKEN_IN=		pkgsrc-2006Q1

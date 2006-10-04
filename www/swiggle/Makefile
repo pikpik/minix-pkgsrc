@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:48:02 tv Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:29 joerg Exp $
 
 DISTNAME=	swiggle-0.3.3
 PKGREVISION=	1
 CATEGORIES=	www graphics
-MASTER_SITES=	http://mailbox.univie.ac.at/~le/swiggle/files/
+MASTER_SITES=	http://homepage.univie.ac.at/l.ertl/swiggle/files/
 
 MAINTAINER=	snj@NetBSD.org
-HOMEPAGE=	http://mailbox.univie.ac.at/~le/swiggle/
+HOMEPAGE=	http://homepage.univie.ac.at/l.ertl/swiggle/
 COMMENT=	Lightweight image gallery generator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
