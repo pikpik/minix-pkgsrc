@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/07/10 17:42:19 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2006/09/03 10:19:01 wiz Exp $
 #
 
 DISTNAME=	shared-mime-info-0.19
@@ -6,7 +6,7 @@ CATEGORIES=	databases
 MASTER_SITES=	http://freedesktop.org/~hadess/
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://www.freedesktop.org/Software/shared-mime-info
+HOMEPAGE=	http://www.freedesktop.org/wiki/Software/shared-mime-info
 COMMENT=	Core database of common types
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

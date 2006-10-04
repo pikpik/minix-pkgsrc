@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.24 2006/04/23 00:12:36 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/21 00:12:33 minskim Exp $
 #
 
 DISTNAME=		jabber-1.4.2
 PKGNAME=		jabberd-1.4.2
 PKGREVISION=		5
 CATEGORIES=		chat
-MASTER_SITES=		http://jabberd.jabberstudio.org/1.4/dist/
+MASTER_SITES=		http://download.jabberd.org/jabberd14/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://jabberd.jabberstudio.org/1.4/
+HOMEPAGE=		http://jabberstudio.org/projects/jabberd
 COMMENT=		Instant messaging server
 
 CONFLICTS=		jabberd2-[0-9]*

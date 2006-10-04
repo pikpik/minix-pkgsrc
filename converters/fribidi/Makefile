@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/09 14:50:31 ghen Exp $
+# $NetBSD: Makefile,v 1.12 2006/03/11 10:07:49 ghen Exp $
 #
 
 DISTNAME=		fribidi-0.10.4
@@ -8,7 +8,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fribidi/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://fribidi.sourceforge.net/
+HOMEPAGE=		http://fribidi.org/
 COMMENT=		Free Implementation of the Unicode Bidirectional Algorithm
 
 REPLACE_INTERPRETER+=	bash
