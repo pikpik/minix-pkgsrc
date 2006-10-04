@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2006/03/09 18:48:29 jlam Exp $
+# $NetBSD: Makefile,v 1.57 2006/03/20 18:15:38 jlam Exp $
 
 DISTNAME=	octave-${OCTAVE_VER}
 PKGNAME=	octave-current-${OCTAVE_VER}
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/bleeding-edge/ \
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
-HOMEPAGE=	http://www.che.wisc.edu/octave/
+HOMEPAGE=	http://www.octave.org/
 COMMENT=	High-level language, intended for numerical computations
 
 BUILD_DEPENDS+=	bison>=1.875:../../devel/bison

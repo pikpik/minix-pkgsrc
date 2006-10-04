@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/03/14 01:14:30 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2006/04/13 21:45:13 wiz Exp $
 
 DISTNAME=		cyrus-imapd-2.1.18
 PKGREVISION=		3
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 			ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/imap/
 
 MAINTAINER=		chris@NetBSD.org
-HOMEPAGE=		http://asg.web.cmu.edu/cyrus/imapd/
+HOMEPAGE=		http://cyrusimap.web.cmu.edu/imapd/
 COMMENT=		Cyrus IMAP server
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

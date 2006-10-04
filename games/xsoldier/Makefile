@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.16 2005/12/29 06:21:42 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/02/05 23:09:25 joerg Exp $
 #
 
 DISTNAME=		xsoldier-0.96
 PKGREVISION=		1
 CATEGORIES=		games x11
-MASTER_SITES=		http://www.surfline.ne.jp/hachi/xsoldier/
+MASTER_SITES=		http://www.interq.or.jp/libra/oohara/xsoldier/
 
 MAINTAINER=		root@garbled.net
-HOMEPAGE=		http://www.surfline.ne.jp/hachi/xsoldier.html
+HOMEPAGE=		http://www.interq.or.jp/libra/oohara/xsoldier/
 COMMENT=		Updated xgalaga type game with awesome graphics
 
 USE_IMAKE=		YES

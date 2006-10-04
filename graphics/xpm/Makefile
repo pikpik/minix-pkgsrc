@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2006/09/09 20:32:40 schwarz Exp $
+# $NetBSD: Makefile,v 1.49 2006/09/10 13:42:32 schwarz Exp $
 
 DISTNAME=       xpm-3.4k
 PKGREVISION=	6
@@ -7,7 +7,7 @@ MASTER_SITES=	http://koala.ilog.fr/ftp/pub/xpm/ \
 		${MASTER_SITE_XCONTRIB:=libraries/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.inria.fr/koala/lehors/xpm.html
+HOMEPAGE=	http://www-sop.inria.fr/koala/lehors/xpm.html
 COMMENT=	The X Pixmap library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

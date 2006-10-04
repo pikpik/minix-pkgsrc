@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.12 2006/04/05 22:35:50 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/05 23:01:15 jlam Exp $
 
 DISTNAME=	eukleides.1.0.1
 PKGNAME=	eukleides-1.0.1
 PKGREVISION=	1
 CATEGORIES=	math
-MASTER_SITES=	http://perso.wanadoo.fr/obrecht/download/
+MASTER_SITES=	http://perso.orange.fr/obrecht/download/
 
 MAINTAINER=	tsadowski@gmx.net
-HOMEPAGE=	http://perso.wanadoo.fr/obrecht/
+HOMEPAGE=	http://perso.orange.fr/obrecht/
 COMMENT=	Euclidean geometry drawing language
 
 DEPENDS+=	pstoedit>=3.31:../../graphics/pstoedit

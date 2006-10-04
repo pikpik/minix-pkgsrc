@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/08/26 18:35:33 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2006/09/09 02:43:11 obache Exp $
 
 DISTNAME=	molden4.2
 PKGNAME=	${DISTNAME:S/molden/&-/}
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	oishi@ims.ac.jp
-HOMEPAGE=	http://www.cmbi.kun.nl/~schaft/molden/molden.html
+HOMEPAGE=	http://www.cmbi.ru.nl/molden/molden.html
 COMMENT=	Displaying MOLecular DENsity
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
@@ -30,7 +30,7 @@ NO_BIN_ON_FTP=          ${RESTRICTED}
 FETCH_MESSAGE=								\
 	"Please read the following to learn how to get a copy of Molden:" \
 	""								\
-	"    http://www.cmbi.kun.nl/~schaft/molden/howtoget.html"	\
+	"    http://www.cmbi.kun.nl/molden/howtoget.html"	\
 	""								\
 	"Then put the file:"						\
 	"    ${DISTNAME}${EXTRACT_SUFX}"				\

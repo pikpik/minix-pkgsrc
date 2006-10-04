@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/05/19 13:03:56 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2006/09/09 02:43:11 obache Exp $
 #
 
 DISTNAME=		firelib-1.0.1
 CATEGORIES=		misc
-MASTER_SITES=		http://fire.org/firelib/
+MASTER_SITES=		http://fire.org/downloads/fireLib/1.0.1/
 
 MAINTAINER=		mchittur@cs.nmsu.edu
-HOMEPAGE=		http://fire.org/firelib/
+HOMEPAGE=		http://fire.org/
 COMMENT=		Library for predicting fire spread rate, intensity, and more
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

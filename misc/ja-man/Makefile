@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2006/09/03 00:56:29 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/09/24 16:30:31 joerg Exp $
 
 DISTNAME=	NetBSD1.3I-jman-19990531
 PKGNAME=	ja-man-19990531
 PKGREVISION=	2
 CATEGORIES=	japanese misc
-MASTER_SITES=	ftp://ftp.spa.is.uec.ac.jp/pub/NetBSD/jman/archives/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	ftp://ftp.spa.is.uec.ac.jp/pub/NetBSD/jman/index.html
+HOMEPAGE=	# ftp://ftp.spa.is.uec.ac.jp/pub/NetBSD/jman/index.html
 COMMENT=	Japanese on-line manual pages of NetBSD
 
 DEPENDS+=	ja-less>=332:../../misc/ja-less
