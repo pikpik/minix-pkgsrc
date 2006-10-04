@@ -10,7 +10,7 @@ PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	cddbd-1.3.1.patch1.gz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.freedb.org/src/latest/
+HOMEPAGE=	http://www.freedb.org/en/download__server_software.4.html
 COMMENT=	Internet CD Database Server
 
 INTERACTIVE_STAGE=	configure install
