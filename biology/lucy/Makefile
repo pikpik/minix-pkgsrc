@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/03/26 17:05:01 minskim Exp $
 #
 
 DISTNAME=		lucy-1.18p
@@ -6,7 +6,7 @@ CATEGORIES=		biology
 MASTER_SITES=		ftp://ftp.tigr.org/pub/software/Lucy/
 
 MAINTAINER=		dprice@cs.nmsu.edu
-HOMEPAGE=		http://www.tigr.org/software
+HOMEPAGE=		http://www.tigr.org/software/
 COMMENT=		Sequence Cleanup Program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

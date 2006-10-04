@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/05/17 06:12:27 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2006/06/18 07:04:16 rillig Exp $
 #
 
 DISTNAME=	star-1.4.3
@@ -7,7 +7,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.berlios.de/pub/star/
 
 MAINTAINER=	uebayasi@NetBSD.org
-HOMEPAGE=	http://www.fokus.gmd.de/research/cc/glone/employees/joerg.schilling/private/star.html
+HOMEPAGE=	http://cdrecord.berlios.de/old/private/star.html
 COMMENT=	The fastest tar like archiver for UNIX
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

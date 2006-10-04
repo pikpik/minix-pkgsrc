@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.12 2004/11/27 07:19:49 skrll Exp $
+# $NetBSD: Makefile,v 1.13 2005/04/11 21:44:49 tv Exp $
 #
 
 DISTNAME=	jamjar-0.7.1
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.acunia.com/wonka/
+MASTER_SITES=	http://wonka.acunia.com/
 
 MAINTAINER=	skrll@NetBSD.org
-HOMEPAGE=	http://www.acunia.com/wonka/
+HOMEPAGE=	http://wonka.acunia.com/
 COMMENT=	Acunia version of the jar archiver
 
 BUILD_DEPENDS+=	acunia-jam>=1.0:../../devel/acunia-jam

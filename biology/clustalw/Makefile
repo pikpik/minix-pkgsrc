@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:49:51 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/09/09 02:41:55 obache Exp $
 
 DISTNAME=	clustalw1.83.UNIX
 PKGNAME=	clustalw-1.83
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://ftp-igbmc.u-strasbg.fr/pub/ClustalW/ \
 		ftp://ftp.ebi.ac.uk/pub/software/unix/clustalw/
 
 MAINTAINER=	babafou@babafou.eu.org
-HOMEPAGE=	http://www-igbmc.u-strasbg.fr/BioInfo/ClustalW/
+HOMEPAGE=	http://bips.u-strasbg.fr/fr/Documentation/ClustalW/
 COMMENT=	General purpose multiple alignment program for DNA or proteins
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
