@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/03/09 21:04:41 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/05/16 17:14:10 wiz Exp $
 
 DISTNAME=	mp3blaster-3.2.0
 PKGREVISION=	3
@@ -6,7 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.stack.nl/~brama/mp3blaster/src/
 
 MAINTAINER=	rxg@NetBSD.org
-HOMEPAGE=	http://www.stack.nl/~brama/mp3blaster.html
+HOMEPAGE=	http://mp3blaster.sourceforge.net/
 COMMENT=	MP3 console curses-based player
 
 PTHREAD_OPTS+=	require

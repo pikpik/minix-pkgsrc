@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.14 2006/06/24 08:37:40 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2006/06/26 18:16:31 wiz Exp $
 
 DISTNAME=	tosha-0.05
 PKGREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/audio/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.heim3.tu-clausthal.de/~olli/tosha/
+# author's homepage is at http://www.secnetix.de/~olli/, but tosha isn't mentioned
 COMMENT=	Read CD digital audio data through the SCSI bus
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

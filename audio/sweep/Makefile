@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/03/09 21:04:41 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2006/04/13 18:23:29 jlam Exp $
 #
 
 DISTNAME=	sweep-0.8.3
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sweep/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://sweep.sourceforge.net/
+HOMEPAGE=	http://www.metadecks.org/software/sweep/
 COMMENT=	Full-featured digital sound editor
 
 USE_DIRS+=		gnome1-1.5

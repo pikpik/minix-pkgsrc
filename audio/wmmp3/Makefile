@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:39 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:15 joerg Exp $
 
 DISTNAME=	wmmp3-0.12
 PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES= 	http://www.dotfiles.com/software/wmmp3/
+# dotfiles is alive, but /software is gone
 
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://www.dotfiles.com/software/wmmp3/

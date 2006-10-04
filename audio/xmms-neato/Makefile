@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.19 2006/02/05 23:08:18 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/04 21:29:00 jlam Exp $
 #
 
 DISTNAME=	neato
 PKGNAME=	xmms-neato-20010818
 PKGREVISION=	5
 CATEGORIES=	audio
-MASTER_SITES=	http://www.rpi.edu/~mullr/xmms/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.rpi.edu/~mullr/xmms/
+HOMEPAGE=	http://web.archive.org/web/20021209022733/http://www.rpi.edu/~mullr/xmms/
 COMMENT=	Circle effect XMMS plugin
 
 GNU_CONFIGURE=	yes

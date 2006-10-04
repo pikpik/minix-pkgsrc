@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.23 2006/01/16 13:44:53 rxg Exp $
+# $NetBSD: Makefile,v 1.24 2006/02/05 23:08:15 joerg Exp $
 
 DISTNAME=	xamp-0.8-10
 PKGNAME=	xamp-0.8.10
 PKGREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	http://andrej.co.ru/~andrej/programs/xamp/ \
-		http://andrej.co.ru/~andrej/programs/xamp/backs/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.tgz
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SKIN_DATA}
 
 MAINTAINER=	rxg@NetBSD.org
-HOMEPAGE=	http://andrej.co.ru/~andrej/programs/xamp/
+HOMEPAGE=	# http://andrej.co.ru/~andrej/programs/xamp/
 COMMENT=	Version of amp (stands for `Audio Mpeg Player') plus a Qt GUI
 
 WRKSRC=		${WRKDIR}/xamp-0.8/xamp-0.8g

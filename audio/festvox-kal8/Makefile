@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:07 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/05/19 16:18:52 rillig Exp $
 
 DISTNAME=	festvox_kallpc8k
 PKGNAME=	festvox-kal8-1.4.0
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/ \
 		http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/
 
 MAINTAINER=	proff@iq.org
-HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival.html
+HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival/
 COMMENT=	8khz American English male voice for festival
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
