@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2006/05/22 19:58:48 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2006/05/28 17:31:26 rillig Exp $
 #
 
-DISTNAME=	verilog-0.8.2
+DISTNAME=	verilog-0.8.3
 CATEGORIES=	cad
 MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v0.8/
 
