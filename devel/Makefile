@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.785 2006/10/01 10:49:20 agc Exp $
+# $NetBSD: Makefile,v 1.786 2006/10/04 20:19:52 gdt Exp $
 #
 
 COMMENT=	Development utilities
@@ -597,6 +597,7 @@ SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
 SUBDIR+=	py-distutils
 SUBDIR+=	py-expect
+SUBDIR+=	py-fann
 SUBDIR+=	py-game
 SUBDIR+=	py-generate
 SUBDIR+=	py-gobject
