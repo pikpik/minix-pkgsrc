@@ -1,4 +1,4 @@
-# $NetBSD: check-portability.mk,v 1.1 2006/10/02 15:42:47 rillig Exp $
+# $NetBSD: check-portability.mk,v 1.2 2006/10/02 16:16:14 rillig Exp $
 #
 # This file contains some checks that are applied to the configure
 # scripts to check for certain constructs that are known to cause
@@ -14,7 +14,7 @@
 #
 # The following variables may be set by the package:
 #
-# SKIP_PORTABILITY_CHECKS: YesNo
+# SKIP_PORTABILITY_CHECK: YesNo
 #	Whether the above checks should be skipped for the current
 #	package.
 #
