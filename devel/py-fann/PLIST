@@ -1,0 +1,6 @@
+@comment $NetBSD$
+${PYSITELIB}/pyfann/_libfann.so
+${PYSITELIB}/pyfann/libfann.py
+${PYSITELIB}/pyfann/libfann.pyc
+${PYSITELIB}/pyfann/libfann.pyo
+@dirrm ${PYSITELIB}/pyfann
