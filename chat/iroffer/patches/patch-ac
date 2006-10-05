@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- src/iroffer_defines.h.orig	2005-12-13 11:54:17.000000000 +0900
++++ src/iroffer_defines.h
+@@ -204,7 +204,8 @@
+     defined(_OS_NetBSD)      || \
+     defined(_OS_BSDI)        || \
+     defined(_OS_BSD_OS)      || \
+-    defined(_OS_Darwin)
++    defined(_OS_Darwin)      || \
++    defined(_OS_DragonFly)
+ #define _OS_BSD_ANY
+ 
+ /* sunos */
