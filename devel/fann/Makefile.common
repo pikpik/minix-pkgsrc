@@ -1,0 +1,9 @@
+# $NetBSD:$
+
+FANNVERSION=		2.0.0
+DISTNAME=		fann-${FANNVERSION}
+CATEGORIES=		devel
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fann/}
+
+MAINTAINER=		gdt@NetBSD.org
+HOMEPAGE=		http://leenissen.dk/fann/

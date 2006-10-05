@@ -1,12 +1,7 @@
-# $NetBSD$
-#
+# $NetBSD:$
 
-DISTNAME=		fann-2.0.0
-CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fann/}
+.include "Makefile.common"
 
-MAINTAINER=		gdt@NetBSD.org
-HOMEPAGE=		http://leenissen.dk/fann/
 COMMENT=		Fast Artificial Neural Network
 
 USE_PKGLOCALEDIR=	yes
