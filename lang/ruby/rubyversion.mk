@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.26 2006/09/13 12:56:46 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.27 2006/09/14 01:43:26 taca Exp $
 #
 
 .if !defined(_RUBYVERSION_MK)
@@ -275,6 +275,7 @@ RUBY_GENERATE_PLIST =	( \
 .include "../../mk/pthread.buildlink3.mk"
 .endif
 .include "../../mk/bdb.buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
