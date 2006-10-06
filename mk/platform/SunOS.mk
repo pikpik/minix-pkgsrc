@@ -1,4 +1,4 @@
-# $NetBSD: SunOS.mk,v 1.25 2006/07/20 13:19:29 jlam Exp $
+# $NetBSD: SunOS.mk,v 1.26 2006/07/20 20:02:23 jlam Exp $
 #
 # Variable definitions for the SunOS/Solaris operating system.
 
@@ -89,8 +89,6 @@ _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip
 	@echo "  first package install."
 	@false
 .endif
-
-LOCALBASE?=		${DESTDIR}/usr/pkg
 
 .if exists(${LOCALBASE}/sbin/pkg_info)
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin

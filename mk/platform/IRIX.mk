@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.26 2006/07/20 20:02:23 jlam Exp $
+# $NetBSD: IRIX.mk,v 1.27 2006/09/10 13:44:58 schwarz Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -98,7 +98,6 @@ _INCOMPAT_ICONV=	IRIX-*-*
 _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U-s}	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-S -f}	# install(1) option to strip
 
-LOCALBASE?=		${DESTDIR}/usr/pkg
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 
 CONFIGURE_ENV+=		ABI=${ABI:Q}
