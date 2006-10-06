@@ -1,0 +1,10 @@
+<!-- $NetBSD: chapters.ent,v 1.16 2006/09/19 17:50:38 rillig Exp $ -->
+
+<!ENTITY chap.intro	SYSTEM "intro.xml">
+<!ENTITY chap.shell	SYSTEM "shell.xml">
+<!ENTITY chap.utilities	SYSTEM "utilities.xml">
+<!ENTITY chap.headers	SYSTEM "headers.xml">
+<!ENTITY chap.functions	SYSTEM "functions.xml">
+<!ENTITY chap.libraries	SYSTEM "libraries.xml">
+<!ENTITY chap.devices	SYSTEM "devices.xml">
+<!ENTITY chap.faq	SYSTEM "faq.xml">
