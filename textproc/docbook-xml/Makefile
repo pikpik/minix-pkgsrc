@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/06/04 14:04:33 schwarz Exp $
+# $NetBSD: Makefile,v 1.30 2006/07/27 18:48:04 jlam Exp $
 #
 
 DISTNAME=	docbook-xml-4.4
@@ -21,7 +21,7 @@ USE_TOOLS+=	unzip
 NO_BUILD=	YES
 EXTRACT_ONLY=	# empty
 
-INSTDIR=	${DESTDIR}${PREFIX}/share/xml
+INSTDIR=	${PREFIX}/share/xml
 DTDDIR=		${INSTDIR}/docbook
 
 VER=		4.2 4.3 4.4
