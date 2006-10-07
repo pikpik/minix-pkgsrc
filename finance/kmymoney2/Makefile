@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2006/04/17 13:46:24 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2006/07/07 15:49:32 jlam Exp $
 
-DISTNAME=	kmymoney2-0.8
-PKGREVISION=	5
+DISTNAME=	kmymoney2-0.8.5
 CATEGORIES=	finance kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kmymoney2/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,7 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kmymoney2.sourceforge.net/
 COMMENT=	Personal finance manager for KDE
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt perl
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
@@ -19,6 +18,8 @@ SHLIBTOOL_OVERRIDE=	# empty
 .include "options.mk"
 
 CONFIGURE_ARGS+=	--enable-mt
+
+REPLACE_PERL+=  admin/fixuifiles
 
 # a fix for qt-3.3.5, please remove if qt-3.3.6 (or newer) solves the problem
 SUBST_CLASSES+=		hints
