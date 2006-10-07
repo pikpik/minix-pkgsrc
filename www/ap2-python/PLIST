@@ -1,7 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/17 01:11:36 darcy Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/06/13 18:04:29 darcy Exp $
 lib/httpd/mod_python.so
-@exec %D/sbin/apxs -e -a -n python %f
-@unexec %D/sbin/apxs -e -A -n python %f
 ${PYSITELIB}/mod_python/Cookie.py
 ${PYSITELIB}/mod_python/Cookie.pyc
 ${PYSITELIB}/mod_python/Cookie.pyo
