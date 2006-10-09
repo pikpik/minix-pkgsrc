@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.16 2006/10/08 20:31:38 rillig Exp $
+# $NetBSD: package.mk,v 1.17 2006/10/09 11:44:07 joerg Exp $
 
 ######################################################################
 ### package (PUBLIC)
@@ -77,7 +77,9 @@ package-cookie:
 ### package-all is a helper target to create the binary package and
 ### generate any necessary warnings.
 ###
+.if ${_USE_DESTDIR} == "no"
 _PACKAGE_ALL_TARGETS+=	package-check-installed
+.endif
 _PACKAGE_ALL_TARGETS+=	package-create
 _PACKAGE_ALL_TARGETS+=	package-warnings
 _PACKAGE_ALL_TARGETS+=	error-check
