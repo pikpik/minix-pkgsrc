@@ -1,4 +1,4 @@
-# $NetBSD: extension.mk,v 1.13 2005/11/04 16:50:34 rillig Exp $
+# $NetBSD: extension.mk,v 1.14 2006/01/24 07:25:35 recht Exp $
 
 # derive a python version from the package name if possible
 # optionally handled quoted package names
@@ -15,11 +15,16 @@ PKG_FAIL_REASON+=	"${PKGNAME} needs dynamic loading"
 .endif
 
 .if defined(PYDISTUTILSPKG)
+.include "../../mk/bsd.prefs.mk"
+
 PYSETUP?=		setup.py
 PYSETUPBUILDARGS?=	#empty
 PYSETUPINSTALLARGS?=	#empty
 PYSETUPOPTARGS?=	-c -O1
 _PYSETUPINSTALLARGS=	${PYSETUPINSTALLARGS} ${PYSETUPOPTARGS}
+.if ${_USE_DESTDIR} != "no"
+_PYSETUPINSTALLARGS+=	--root=${DESTDIR:Q}
+.endif
 PY_PATCHPLIST?=		yes
 PYSETUPSUBDIR?=		#empty
 
