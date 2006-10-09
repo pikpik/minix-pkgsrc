@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.19 2006/10/05 01:10:59 rillig Exp $
+# $NetBSD: install.mk,v 1.20 2006/10/06 20:13:10 rillig Exp $
 
 ######################################################################
 ### install (PUBLIC)
@@ -163,7 +163,11 @@ privileged-install-hook: check-interpreter
 .endif
 
 .PHONY: install-all su-install-all
+.  if !empty(_MAKE_INSTALL_AS_ROOT:M[Yy][Ee][Ss])
 install-all: su-target
+.  else
+install-all: su-install-all
+.  endif
 su-install-all: ${_INSTALL_ALL_TARGETS}
 
 ######################################################################
