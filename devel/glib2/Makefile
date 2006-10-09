@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2006/09/10 10:18:05 wiz Exp $
+# $NetBSD: Makefile,v 1.107 2006/10/06 18:05:21 wiz Exp $
 
 DISTNAME=		glib-2.12.4
 PKGNAME=		${DISTNAME:S/glib/glib2/}
@@ -13,6 +13,7 @@ HOMEPAGE=		http://www.gtk.org/docs/glib_toc.html
 COMMENT=		Some useful routines for C programming (glib2)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt perl:run pkg-config

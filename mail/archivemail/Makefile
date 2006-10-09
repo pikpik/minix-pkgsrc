@@ -10,6 +10,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://archivemail.sourceforge.net/
 COMMENT=		Tool for archiving and compressing old email in mailboxes
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 PYDISTUTILSPKG=	yes
 
 INSTALLATION_DIRS=	man/man1 share/archivemail
