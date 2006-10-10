@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/07/11 12:51:34 abs Exp $
+# $NetBSD: Makefile,v 1.3 2006/07/22 04:46:19 rillig Exp $
 #
 
-DISTNAME=		fixesproto-3.0.2
-PKGREVISION=		1
+DISTNAME=		fixesproto-4.0
 CATEGORIES=		x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/proto/
 EXTRACT_SUFX=		.tar.bz2
