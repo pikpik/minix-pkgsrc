@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/04/18 19:23:46 reed Exp $
+# $NetBSD: Makefile,v 1.11 2006/04/18 19:46:17 reed Exp $
 #
 
 DISTNAME=		libXcomposite-1.0.1
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://freedesktop.org/
 COMMENT=		Xcomposite extension (library)
+
+CONFLICTS+=		libXcomposite-[0-9]*
 
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
