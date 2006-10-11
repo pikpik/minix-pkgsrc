@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:08:30 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/08/03 19:22:31 wiz Exp $
 
 DISTNAME=		gcc-3.3.2003.05.11
 PKGNAME=		avr-gcc-3.3.2003.05.11
@@ -31,6 +31,7 @@ MAN_AUX=		gcc-man.2003.05.11.gz
 
 MAKE_FLAGS+=		LANGUAGES="c c++"
 MAKE_ENV+=		MACHINE_ARCH=avr
+MAKE_ENV+=		SHELL=${CONFIG_SHELL}
 
 pre-build:
 		if perl -e 'use 1.10 Pod::Man' >/dev/null 2>/dev/null ; \
