@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2005/08/29 16:10:28 taca Exp $
+# $NetBSD: Makefile,v 1.16 2006/05/02 04:29:48 jlam Exp $
 
-DISTNAME=		File-MMagic-1.26
+DISTNAME=		File-MMagic-1.27
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5fim
 CATEGORIES=		misc perl5
