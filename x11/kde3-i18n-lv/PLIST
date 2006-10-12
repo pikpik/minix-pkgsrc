@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2006/04/17 07:07:42 jlam Exp $
+@comment $NetBSD$
 share/locale/lv/LC_MESSAGES/appletproxy.mo
 share/locale/lv/LC_MESSAGES/ark.mo
 share/locale/lv/LC_MESSAGES/artsbuilder.mo
@@ -238,6 +238,7 @@ share/locale/lv/LC_MESSAGES/ktip.mo
 share/locale/lv/LC_MESSAGES/ktouch.mo
 share/locale/lv/LC_MESSAGES/ktron.mo
 share/locale/lv/LC_MESSAGES/ktuberling.mo
+share/locale/lv/LC_MESSAGES/ktux.mo
 share/locale/lv/LC_MESSAGES/kuick_plugin.mo
 share/locale/lv/LC_MESSAGES/kuickshow.mo
 share/locale/lv/LC_MESSAGES/kuser.mo
