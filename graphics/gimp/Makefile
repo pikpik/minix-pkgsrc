@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.147 2006/08/26 07:44:04 adam Exp $
+# $NetBSD: Makefile,v 1.148 2006/09/16 12:20:34 jmmv Exp $
 
 DISTNAME=	gimp-2.2.13
 PKGREVISION=	1
@@ -64,6 +64,7 @@ PLIST_SUBST+=		TWAIN="@comment "
 .include "../../graphics/librsvg2/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/xpm/buildlink3.mk"
 .include "../../graphics/libwmf/buildlink3.mk"
 .include "../../print/gimp-print-lib/buildlink3.mk"
