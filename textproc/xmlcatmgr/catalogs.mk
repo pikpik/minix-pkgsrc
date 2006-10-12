@@ -32,14 +32,14 @@ XML_ENTRIES?=
 # Convert SGML_CATALOGS files into arguments for SGML_ENTRIES.
 .if !empty(SGML_CATALOGS)
 .  for c in ${SGML_CATALOGS}
-SGML_ENTRIES+=	CATALOG ${c} --
+SGML_ENTRIES+=	CATALOG ${PREFIX:=${c}} --
 .  endfor
 .endif
 
 # Convert XML_CATALOGS files into arguments for XML_ENTRIES.
 .if !empty(XML_CATALOGS)
 .  for c in ${XML_CATALOGS}
-XML_ENTRIES+=	nextCatalog ${c} --
+XML_ENTRIES+=	nextCatalog ${PREFIX:=${c}} --
 .  endfor
 .endif
 
