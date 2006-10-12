@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.58 2006/08/02 13:39:00 markd Exp $
+# $NetBSD: Makefile,v 1.59 2006/10/04 20:44:18 wiz Exp $
 
-DISTNAME=	arts-1.5.4
+DISTNAME=	arts-1.5.5
 CATEGORIES=	audio
 HOMEPAGE=	http://multimedia.kde.org/
 COMMENT=	Analog Real-Time Synthesizer
