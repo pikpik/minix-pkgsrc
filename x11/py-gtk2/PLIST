@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2006/02/07 21:27:28 drochner Exp $
+@comment $NetBSD: PLIST,v 1.9 2006/09/15 15:14:16 jmmv Exp $
 bin/pygtk-codegen-2.0
 bin/pygtk-demo
 include/pygtk-2.0/pygtk/pygtk.h
@@ -457,10 +457,8 @@ share/pygtk/2.0/defs/pangocairo.override
 @dirrm share/pygtk
 @dirrm share/gtk-doc/html/pygtk
 @dirrm ${PYSITELIB}/gtk-2.0/gtk
-@dirrm ${PYSITELIB}/gtk-2.0
 @dirrm lib/pygtk/2.0/demos/images
 @dirrm lib/pygtk/2.0/demos
 @dirrm lib/pygtk/2.0
 @dirrm lib/pygtk
 @dirrm include/pygtk-2.0/pygtk
-@dirrm include/pygtk-2.0
