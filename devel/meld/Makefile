@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/07/18 08:15:46 abs Exp $
+# $NetBSD: Makefile,v 1.3 2006/09/09 02:41:58 obache Exp $
 #
 
 DISTNAME=		meld-1.1.4
@@ -22,6 +22,7 @@ MAKE_FLAGS+=			prefix=${PREFIX}
 MAKE_FLAGS+=			localedir=${PREFIX}/${PKGLOCALEDIR}
 MAKE_FLAGS+=			PYTHON=${PYTHONBIN}
 MAKE_FILE=			GNUmakefile
+PYTHON_PATCH_SCRIPTS=		meld
 
 .include "../../lang/python/application.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
