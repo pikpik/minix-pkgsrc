@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.786 2006/10/04 20:19:52 gdt Exp $
+# $NetBSD: Makefile,v 1.787 2006/10/05 14:57:16 gdt Exp $
 #
 
 COMMENT=	Development utilities
@@ -139,6 +139,7 @@ SUBDIR+=	eric3
 SUBDIR+=	error
 SUBDIR+=	exctags
 SUBDIR+=	fann
+SUBDIR+=	fann-devel
 SUBDIR+=	fastdep
 SUBDIR+=	ffcall
 SUBDIR+=	fhist
