@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2006/05/21 18:44:46 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/09/15 15:13:55 jmmv Exp $
 #
 
-PKGNAME=		${PYPKGPREFIX}-gobject-2.12.1
+PKGNAME=		${PYPKGPREFIX}-gobject-2.12.2
 
 .include "Makefile.common"
 
