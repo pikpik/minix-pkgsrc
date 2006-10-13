@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/etrace
+bin/etrace.pl
+share/doc/etrace/README
+share/examples/etrace/Makefile
+share/examples/etrace/crumble.c
+share/etrace/ptrace.c
+@exec ${MKDIR} %D/share/examples/etrace
+@dirrm share/examples/etrace
+@dirrm share/etrace
+@dirrm share/doc/etrace
