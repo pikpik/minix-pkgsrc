@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/discid/discid.h
+lib/libdiscid.la
+lib/pkgconfig/libdiscid.pc
+@dirrm include/discid
