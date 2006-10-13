@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/07/23 20:41:24 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2006/10/04 21:36:01 wiz Exp $
 #
 
 DISTNAME=	tla-1.3.5
@@ -16,6 +16,9 @@ DEPENDS+=	diffutils-[0-9]*:../../devel/diffutils
 DEPENDS+=	gtar-base-[0-9]*:../../archivers/gtar-base
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+REPLACE_BASH+=	src/tla/tests/changeset-tests/chmod_random
+USE_TOOLS+=	bash
 
 USE_TOOLS+=	gmake
 
