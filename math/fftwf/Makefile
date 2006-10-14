@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/03/04 21:30:03 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/07/22 04:46:16 rillig Exp $
 
 .if (${MACHINE_ARCH} == "powerpc")
 DISTNAME=		fftw-3.0.1-fma
@@ -32,11 +32,13 @@ USE_TOOLS+=		gmake
 
 TEST_TARGET=		check
 
+INSTALLATION_DIRS=	${PKGMANDIR}/man1
+
 do-install:
-			${GMAKE} -C ${WRKSRC} install-libLTLIBRARIES
-			${GMAKE} -C ${WRKSRC} install-pkgconfigDATA
-			${GMAKE} -C ${WRKSRC}/tools install-binPROGRAMS
-			${INSTALL_MAN} ${WRKSRC}/tools/fftwf-wisdom.1 \
-				${LOCALBASE}/man/man1
+	gmake -C ${WRKSRC} install-libLTLIBRARIES
+	gmake -C ${WRKSRC} install-pkgconfigDATA
+	gmake -C ${WRKSRC}/tools install-binPROGRAMS
+	${INSTALL_MAN} ${WRKSRC}/tools/fftwf-wisdom.1 \
+		${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
