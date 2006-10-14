@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2006/02/19 18:26:43 adam Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/09 21:04:40 jlam Exp $
 
 DISTNAME=	fluidsynth-1.0.7
 CATEGORIES=	audio
 MASTER_SITES=	http://savannah.nongnu.org/download/fluid/
 
 MAINTAINER=	ben@NetBSD.org
-HOMEPAGE=	http://www.fluidsynth.org/
+HOMEPAGE=	http://www.nongnu.org/fluid/
 COMMENT=	Software synthesizer based on SoundFont2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

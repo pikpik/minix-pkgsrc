@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:43 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2005/07/16 19:10:38 jlam Exp $
 
 DISTNAME=	txt2html-1.28
 CATEGORIES=	converters www
-MASTER_SITES=	http://www.aigeek.com/txt2html/
+MASTER_SITES=	http://www.sethoscope.net/txt2html/
 
 MAINTAINER=	wennmach@NetBSD.org
-HOMEPAGE=	http://www.aigeek.com/txt2html/
+HOMEPAGE=	http://www.sethoscope.net/txt2html/
 COMMENT=	Text to HTML converter
 
 NO_BUILD=	YES

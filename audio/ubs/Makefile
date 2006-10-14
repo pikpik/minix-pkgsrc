@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.10 2006/05/19 16:18:53 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2006/07/02 09:53:00 rillig Exp $
 #
 
 DISTNAME=		ubs-0.17
 PKGREVISION=		3
 CATEGORIES=		audio
-MASTER_SITES=		http://aboleo.net/software/ubs/downloads/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://aboleo.net/software/ubs/
+# author's new home may be at http://www.teragon.org
+# HOMEPAGE=		http://aboleo.net/software/ubs/
 COMMENT=		Uninterrupted Broadcasting System
 
 GNU_CONFIGURE=		yes
