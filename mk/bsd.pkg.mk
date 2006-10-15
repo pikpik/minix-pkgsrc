@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1886 2006/10/09 10:30:27 joerg Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1887 2006/10/10 16:57:58 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -88,6 +88,8 @@ WRKSRC?=		${WRKDIR}/${DISTNAME}
 
 # Override for SU_CMD user check
 _SU_ROOT_USER?=		${ROOT_USER}
+_INSTALL_ROOT_USER?=	${ROOT_USER}
+_INSTALL_ROOT_GROUP?=	${ROOT_GROUP}
 
 .if (defined(INSTALL_UNSTRIPPED) && !empty(INSTALL_UNSTRIPPED:M[yY][eE][sS])) || defined(DEBUG_FLAGS)
 _INSTALL_UNSTRIPPED=	# set (flag used by platform/*.mk)
