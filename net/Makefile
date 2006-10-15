@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.639 2006/09/26 15:48:41 salo Exp $
+# $NetBSD: Makefile,v 1.640 2006/10/02 20:08:59 rillig Exp $
 #
 
 COMMENT=	Networking tools
@@ -185,6 +185,7 @@ SUBDIR+=	libsoup-devel
 SUBDIR+=	libsscript
 SUBDIR+=	libtorrent
 SUBDIR+=	libupnp
+SUBDIR+=	libvncserver
 SUBDIR+=	linc
 SUBDIR+=	llnlxdir
 SUBDIR+=	llnlxftp
