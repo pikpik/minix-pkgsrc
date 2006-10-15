@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.47 2006/06/14 16:57:07 jlam Exp $
+# $NetBSD: defaults.mk,v 1.48 2006/07/13 15:27:57 jlam Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -79,6 +79,7 @@ _TOOLS_VARNAME.fgrep=		FGREP
 _TOOLS_VARNAME.file=		FILE_CMD
 _TOOLS_VARNAME.find=		FIND
 _TOOLS_VARNAME.gawk=		AWK
+_TOOLS_VARNAME.gem=		GEM
 _TOOLS_VARNAME.gm4=		M4
 _TOOLS_VARNAME.gmake=		GMAKE
 _TOOLS_VARNAME.grep=		GREP
