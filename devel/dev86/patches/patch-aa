@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.orig	2004-06-20 19:57:52.000000000 +0200
++++ Makefile
+@@ -12,7 +12,6 @@ TARGETS=install clean other \
+     config tests dis88 doselks bootblocks ld86r
+ 
+ ELKSSRC= /usr/src/elks
+-PREFIX=  /usr
+ BINDIR=	 $(PREFIX)/bin
+ LIBDIR=  $(PREFIX)/lib/bcc
+ INCLDIR= $(PREFIX)/lib/bcc
