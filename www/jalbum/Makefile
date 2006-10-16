@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2006/07/25 07:37:30 martti Exp $
+# $NetBSD: Makefile,v 1.13 2006/10/14 08:24:59 wiz Exp $
 
 DISTNAME=		JAlbum6.5
-PKGNAME=		jalbum-6.5.1
+PKGNAME=		jalbum-6.5.4
 #PKGREVISION=		1
 CATEGORIES=		www
 MASTER_SITES=		http://jalbum.net/download/
