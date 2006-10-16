@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- gnome-doc-prepare.in.orig	2005-09-13 13:40:59.000000000 +0000
++++ gnome-doc-prepare.in
+@@ -139,7 +139,7 @@ EOF
+     ;;
+ 
+   *)
+-    if [ "x$docname" == "xyes" ]
++    if [ "x$docname" = "xyes" ]
+     then
+       newdocument="$arg" 
+       docname=no
