@@ -1,4 +1,4 @@
-$NetBSD: patch-ag,v 1.5 2006/07/06 08:37:27 dillo Exp $
+$NetBSD: patch-ag,v 1.6 2006/10/14 02:13:04 rillig Exp $
 
 --- configure.orig	2006-01-08 21:31:51.000000000 +0100
 +++ configure	2006-10-14 04:08:10.000000000 +0200
@@ -47,12 +47,3 @@ $NetBSD: patch-ag,v 1.5 2006/07/06 08:37:27 dillo Exp $
    fi
  
  
-@@ -21899,6 +21899,8 @@ do
- _ACEOF
- cat >>$CONFIG_STATUS <<\_ACEOF
-   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
-+	: Avoid regenerating within pkgsrc
-+	exit 0
-     ac_cs_recheck=: ;;
-   --version | --vers* | -V )
-     echo "$ac_cs_version"; exit 0 ;;
