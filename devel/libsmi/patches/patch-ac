@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- tools/smicache.in.orig	2005-11-25 09:13:59.000000000 +0000
++++ tools/smicache.in
+@@ -1,4 +1,4 @@
+-#!@SH@
++#!/bin/sh
+ #
+ # smicache --
+ #
