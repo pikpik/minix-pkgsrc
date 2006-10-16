@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2006/10/16 09:48:00 martti Exp $
+# $NetBSD: Makefile,v 1.68 2006/10/16 09:54:49 martti Exp $
 
 DISTNAME=	postfix-2.4-20061015
 #PKGREVISION=	1
@@ -23,6 +23,7 @@ USE_TOOLS+=	perl
 # ${PKG_SYSCONFDIR}/main.cf.
 #
 POSTFIX_QUEUE_DIR?=	${VARBASE}/spool/postfix
+BUILD_DEFS+=		VARBASE
 
 # CCARGS is a list of options to pass to the preprocessor/compiler.
 # AUXLIBS is a list of options to pass to the linker.
