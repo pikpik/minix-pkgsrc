@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2006/07/02 11:24:24 drochner Exp $
+@comment $NetBSD: PLIST,v 1.10 2006/09/15 15:23:51 jmmv Exp $
 bin/totem
 bin/totem-video-thumbnailer
 include/totem/1/plparser/totem-disc.h
@@ -118,6 +118,7 @@ share/locale/lv/LC_MESSAGES/totem.mo
 share/locale/mg/LC_MESSAGES/totem.mo
 share/locale/mk/LC_MESSAGES/totem.mo
 share/locale/ml/LC_MESSAGES/totem.mo
+share/locale/mr/LC_MESSAGES/totem.mo
 share/locale/ms/LC_MESSAGES/totem.mo
 share/locale/nb/LC_MESSAGES/totem.mo
 share/locale/ne/LC_MESSAGES/totem.mo
