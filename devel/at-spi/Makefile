@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2006/07/05 05:37:40 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2006/09/15 15:18:55 jmmv Exp $
 #
 
-DISTNAME=		at-spi-1.7.11
+DISTNAME=		at-spi-1.7.12
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/at-spi/1.7/}
 EXTRACT_SUFX=		.tar.bz2
@@ -14,8 +14,6 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-
-CONFIGURE_ARGS+=	--disable-gtk-doc
 
 PKGCONFIG_OVERRIDE+=    cspi-1.0.pc.in
 PKGCONFIG_OVERRIDE+=    libspi-1.0.pc.in
