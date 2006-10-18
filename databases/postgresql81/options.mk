@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2005/10/23 20:16:52 jlam Exp $
+# $NetBSD: options.mk,v 1.1.1.1 2006/03/20 14:45:49 uebayasi Exp $
 
 PKG_SUPPORTED_OPTIONS+=		pgsql-hier-query
 
@@ -9,7 +9,7 @@ PKG_SUPPORTED_OPTIONS+=		pgsql-hier-query
 ###
 .if !empty(PKG_OPTIONS:Mpam)
 .  include "../../mk/pam.buildlink3.mk"
-CONFIGURE_ARGS+=        --with-pam
+CONFIGURE_ARGS+=	--with-pam
 .endif
 
 ###
