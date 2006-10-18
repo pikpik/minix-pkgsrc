@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.474 2006/10/02 20:09:00 rillig Exp $
+# $NetBSD: Makefile,v 1.475 2006/10/12 08:38:25 minskim Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -132,6 +132,7 @@ SUBDIR+=	jakarta-servletapi
 SUBDIR+=	jakarta-tomcat4
 SUBDIR+=	jakarta-tomcat5
 SUBDIR+=	jalbum
+SUBDIR+=	joomla
 SUBDIR+=	jsdk20
 SUBDIR+=	jssi
 SUBDIR+=	kannel
