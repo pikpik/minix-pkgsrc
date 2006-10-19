@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.375 2006/10/18 11:45:22 markd Exp $
+# $NetBSD: Makefile,v 1.376 2006/10/19 20:24:25 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -114,6 +114,7 @@ SUBDIR+=	gst-plugins0.8-gnomevfs
 SUBDIR+=	gtk-send-pr
 SUBDIR+=	gworkspace
 SUBDIR+=	hcidump
+SUBDIR+=	hddtemp
 SUBDIR+=	hfsutils
 SUBDIR+=	i2ocfg
 SUBDIR+=	idesk
