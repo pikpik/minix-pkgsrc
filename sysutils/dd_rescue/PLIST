@@ -1,2 +1,4 @@
 @comment $NetBSD$
 bin/dd_rescue
+share/doc/dd_rescue/README
+@dirrm share/doc/dd_rescue
