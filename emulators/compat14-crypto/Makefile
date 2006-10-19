@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/14 01:14:28 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/05/22 22:22:02 jlam Exp $
 #
 
 DISTNAME=		compat14-crypto-${MACHINE_ARCH}-${VERSION}
@@ -17,6 +17,7 @@ CONFLICTS=		compat14-[0-9]*
 
 ONLY_FOR_PLATFORM=	NetBSD-*-sparc NetBSD-*-i386
 NOT_FOR_PLATFORM=	NetBSD-1.3*-* NetBSD-1.4*-*
+NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
 CRYPTO=			YES
 
