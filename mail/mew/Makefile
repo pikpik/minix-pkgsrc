@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.69 2006/07/02 10:26:14 rillig Exp $
+# $NetBSD: Makefile,v 1.70 2006/10/07 05:13:14 uebayasi Exp $
 
 DISTNAME=	mew-5.1
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/release/
+MASTER_SITES=	http://www.mew.org/Release/
 
 MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.mew.org/
