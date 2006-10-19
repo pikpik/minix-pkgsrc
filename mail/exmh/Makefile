@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/03/04 21:30:00 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2006/10/13 14:41:39 dsainty Exp $
 
 DISTNAME=	exmh-2.6.3
 PKGREVISION=	1
@@ -38,7 +38,7 @@ do-build:
 do-install:
 	${INSTALL_MAN} ${WRKSRC}/exmh.l ${PREFIX}/man/man1/exmh.1
 	for binfile in exmh-async exmh-bg exmh ftp.expect; do \
-		${INSTALL_PROGRAM} ${WRKSRC}/$$binfile ${PREFIX}/bin; \
+		${INSTALL_SCRIPT} ${WRKSRC}/$$binfile ${PREFIX}/bin; \
 	done
 	vers=`sed -ne 's/^set vers \(.*\)/\1/p' ${WRKSRC}/exmh.install`; \
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/exmh-$${vers}; \
