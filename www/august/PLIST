@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/august
+share/doc/august/keyname.tcl
+share/doc/august/license.txt
+share/doc/august/readme.txt
+share/doc/august/specchars.txt
+@dirrm share/doc/august
