@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/08/17 14:20:14 taca Exp $
+# $NetBSD: Makefile,v 1.4 2006/08/23 18:45:31 wiz Exp $
 #
 
+PKGREVISION=	1
 CATEGORIES=	net sysutils
 
 MAINTAINER=     pkgsrc-users@NetBSD.org
@@ -10,6 +11,8 @@ COMMENT=	Nagios plugins
 .include "../../net/nagios-plugins/Makefile.common"
 
 .include "../../mk/bsd.prefs.mk"
+
+USE_TOOLS+=	perl:run
 
 CONFIGURE_ARGS+= --without-pgsql --without-mysql \
 		--without-smbclient-command --without-snmpget-command \
