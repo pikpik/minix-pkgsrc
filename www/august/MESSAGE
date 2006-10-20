@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+For further functionality, consider installing graphics/ImageMagick
+and www/weblint.
+
+August uses ImageMagick commands to determine width and height of
+images and Weblint to check HTML syntax.
+
+===========================================================================
