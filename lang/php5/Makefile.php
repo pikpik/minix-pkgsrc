@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.18 2006/04/14 13:47:29 cube Exp $
+# $NetBSD: Makefile.php,v 1.19 2006/06/05 17:24:06 minskim Exp $
 #
 
 .include "../../lang/php5/Makefile.common"
@@ -25,9 +25,6 @@ CONFIGURE_ARGS+=	--with-regex=system
 CONFIGURE_ARGS+=	--without-mysql
 CONFIGURE_ARGS+=	--without-sqlite
 CONFIGURE_ARGS+=	--without-iconv
-
-CONFIGURE_ARGS+=	--enable-memory-limit
-CONFIGURE_ARGS+=	--enable-track-vars
 
 CONFIGURE_ARGS+=	--disable-posix
 CONFIGURE_ARGS+=	--disable-dom
