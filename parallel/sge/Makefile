@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:34 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/10/19 11:51:27 markd Exp $
 #
 
 PKGNAME=		sge-6.0.8
@@ -11,6 +11,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gridengine.sunsource.net/
 COMMENT=		Sun Grid Engine distributed resource management system
 DOWNLOAD=		http://gridengine.sunsource.net/servlets/ProjectDocumentList
+
+INTERACTIVE_STAGE=	fetch
 
 BUILD_DEPENDS+=		{standalone-tcsh,tcsh}-[0-9]*:../../shells/tcsh
 
