@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2006/09/17 16:49:57 jmmv Exp $
+# $NetBSD: Makefile,v 1.35 2006/09/23 13:36:06 joerg Exp $
 
-DISTNAME=	hugs98-May2006
+DISTNAME=	hugs98-Sep2006
 PKGNAME=	hugs98-200605
-PKGREVISION=	1
 CATEGORIES=	lang
-MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/2006-05/
+MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/2006-09/
 
 MAINTAINER=	nathanw@mit.edu
 HOMEPAGE=	http://www.haskell.org/hugs/
