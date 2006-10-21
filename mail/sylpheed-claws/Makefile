@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/10/10 14:40:53 reed Exp $
+# $NetBSD: Makefile,v 1.50 2006/10/16 13:06:09 reed Exp $
 
 .include "Makefile.common"
 
@@ -9,7 +9,7 @@ COMMENT=	X based e-mail and netnews client
 
 CONFLICTS=		sylpheed-[0-9]* sylpheed-gtk2-[0-9]*
 
-USE_TOOLS+=		msgfmt
+USE_TOOLS+=		msgfmt pkg-config
 PKGCONFIG_OVERRIDE+=	sylpheed-claws.pc.in
 
 #BUILDLINK_ABI_DEPENDS.libetpan+=	libetpan>=0.46
