@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/29 14:09:44 hamajima Exp $
+# $NetBSD: Makefile,v 1.5 2006/04/17 13:46:36 wiz Exp $
 #
 
 DISTNAME=	spca5xx-20060301
@@ -17,6 +17,7 @@ COMMENT=	USB Cameras based SPCA5xx Utilities
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/drivers/usb
 MAKE_ENV+=	NOGCCERROR=
+MAKE_ENV+=	${BSD_MAKE_ENV}
 
 .include "../../graphics/imlib/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
