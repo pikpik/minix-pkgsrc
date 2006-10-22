@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.641 2006/10/15 14:05:46 bouyer Exp $
+# $NetBSD: Makefile,v 1.642 2006/10/18 11:45:22 markd Exp $
 #
 
 COMMENT=	Networking tools
@@ -490,6 +490,7 @@ SUBDIR+=	wmnd
 SUBDIR+=	wmnet
 SUBDIR+=	wmpload
 SUBDIR+=	wol
+SUBDIR+=	wpa_gui
 SUBDIR+=	wu-ftpd
 SUBDIR+=	x2vnc
 SUBDIR+=	xfce4-wavelan-plugin
