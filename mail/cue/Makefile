@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2006/03/04 21:29:59 jlam Exp $
+# $NetBSD: Makefile,v 1.51 2006/10/07 08:19:08 obache Exp $
 
 DISTNAME=	cue-snap-20060417
 PKGNAME=	${DISTNAME:S/snap-//}
@@ -11,6 +11,10 @@ COMMENT=	mh-e like mail user agent
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${PKGSRC_COMPILER} == "ido"
+CPPFLAGS+=	-DNO_ATTRIBUTE
+.endif
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cue
 PKG_SUPPORTED_OPTIONS=	canna idea inet6
