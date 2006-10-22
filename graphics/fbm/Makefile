@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/03/24 21:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/04 21:29:47 jlam Exp $
 
 DISTNAME=	fbm-1.2
 CATEGORIES=	graphics converters
@@ -9,5 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Fuzzy Pixmap Manipulation utilities
 
 WRKSRC=		${WRKDIR}
+MAKE_FLAGS+=	MAN=${PREFIX}/${PKGMANDIR}/manl/
+INSTALLATION_DIRS+=	${PKGMANDIR}/manl
 
 .include "../../mk/bsd.pkg.mk"
