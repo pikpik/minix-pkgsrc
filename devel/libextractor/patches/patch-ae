@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2006-10-14 03:40:12.000000000 +0200
-+++ configure	2006-10-14 03:41:38.000000000 +0200
-@@ -28628,7 +28628,7 @@ fi;
+--- configure.orig	2006-09-06 23:07:19.000000000 +0200
++++ configure
+@@ -30949,7 +30949,7 @@ fi
  
  if test x$without_glib != xtrue
  then
