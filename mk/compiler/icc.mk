@@ -1,4 +1,12 @@
-# $NetBSD: icc.mk,v 1.1 2005/02/15 07:43:43 grant Exp $
+# $NetBSD: icc.mk,v 1.2 2005/02/16 10:48:40 grant Exp $
+#
+# This is the compiler definition for the Intel compilers.
+#
+# User-settable variables:
+#
+# ICCBASE
+#	The base directory where the compiler is installed.
+#
 
 .if !defined(COMPILER_ICC_MK)
 COMPILER_ICC_MK=	defined

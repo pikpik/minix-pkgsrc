@@ -1,4 +1,7 @@
-# $NetBSD: ccc.mk,v 1.12 2005/01/12 18:37:52 jlam Exp $
+# $NetBSD: ccc.mk,v 1.13 2005/01/12 18:42:42 jlam Exp $
+#
+# This is the compiler definition for the Compaq C Compilers.
+#
 
 .if !defined(COMPILER_CCC_MK)
 COMPILER_CCC_MK=	defined

@@ -1,4 +1,7 @@
-# $NetBSD: gcc.mk,v 1.83 2006/04/05 12:31:24 shannonjr Exp $
+# $NetBSD: gcc.mk,v 1.84 2006/07/06 11:48:03 markd Exp $
+#
+# This is the compiler definition for the GNU Compiler Collection.
+#
 
 .if !defined(COMPILER_GCC_MK)
 COMPILER_GCC_MK=	defined
