@@ -1,0 +1,5 @@
+# $NetBSD$
+
+SUBDIR=		ld as bcc-cc1 bcc
+
+.include <bsd.subdir.mk>
