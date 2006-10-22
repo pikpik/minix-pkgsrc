@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2006/07/17 12:29:57 xtraeme Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/04 20:51:40 wiz Exp $
 #
 
 DISTNAME=	obexftp-0.20
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openobex/}
 EXTRACT_SUFX=	.tar.bz2
