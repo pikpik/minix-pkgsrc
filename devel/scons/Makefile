@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/24 07:32:05 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:08:53 joerg Exp $
 #
 
 DISTNAME=		scons-0.96.1
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.scons.org/
 COMMENT=		Build system, written in Python
 
 PYDISTUTILSPKG=		yes
+INSTALLATION_DIRS=	${PKGMANDIR}/man1
 
 # XXX The dependency on py-xml below is not needed for
 # standard operation. There is an extension to scons (bksys)
@@ -19,8 +20,8 @@ PYDISTUTILSPKG=		yes
 # would be too complicated.
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/scons.1 ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/sconsign.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/scons.1 ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_MAN} ${WRKSRC}/sconsign.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

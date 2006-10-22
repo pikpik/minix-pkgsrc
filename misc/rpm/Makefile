@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2006/06/16 14:04:11 joerg Exp $
+# $NetBSD: Makefile,v 1.62 2006/09/03 00:56:29 wiz Exp $
 
 DISTNAME=	rpm-2.5.4
 PKGREVISION=	5
@@ -22,6 +22,8 @@ CONFIGURE_ARGS+=	--datadir=${PREFIX}/${PKGLOCALEDIR}
 
 # The rpm databases are kept under ${RPM_DB_PREFIX}/lib/rpm.
 CONFIGURE_ENV+=		varprefix=${RPM_DB_PREFIX:Q}
+
+MAKE_FLAGS+=		MANDIR=${PREFIX}/${PKGMANDIR}/man8
 
 RPMDIR=			${RPM_DB_PREFIX}/lib/rpm
 FILES_SUBST+=		RPMDIR=${RPMDIR:Q}
