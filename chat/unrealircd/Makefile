@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/07/18 22:43:36 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2006/10/08 22:12:09 rillig Exp $
 
 DISTNAME=	Unreal3.2.5
 PKGNAME=	unrealircd-3.2.5
@@ -19,9 +19,7 @@ WRKSRC=		${WRKDIR}/Unreal3.2
 TRE_NEEDED=	0.7.2
 CARES_NEEDED=	1.3.0
 
-# ${WRKSRC}/update is not portable, but the comment in it says that it
-# may not be modified.
-SKIP_PORTABILITY_CHECK=		yes
+CHECK_PORTABILITY_SKIP=	update
 
 BUILDLINK_API_DEPENDS.tre+=		tre-${TRE_NEEDED}
 BUILDLINK_API_DEPENDS.libcares+=	libcares-${CARES_NEEDED}nb1
