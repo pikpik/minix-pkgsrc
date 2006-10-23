@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.65 2006/04/11 08:10:40 joerg Exp $
+# $NetBSD: Makefile,v 1.66 2006/09/26 13:48:43 abs Exp $
 
 DISTNAME=	wwwoffle-2.9a
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.gedanken.freeserve.co.uk/download-wwwoffle/ \
 		ftp://ftp.ibiblio.org/pub/Linux/apps/www/servers/
@@ -31,6 +32,9 @@ SUBST_FILES.fix-paths+=         cache/search/hyperestraier/scripts/wwwoffle-ests
 SUBST_SED.fix-paths=            -e 's,@PREFIX@,${PREFIX},g'
 
 .include "options.mk"
+
+post-extract:
+	chmod -R go-w ${WRKSRC}
 
 post-build:
 	cd ${WRKSRC}/cache/search/htdig/scripts; \
