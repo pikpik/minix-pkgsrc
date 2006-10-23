@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2006/06/02 18:28:00 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/06/04 16:26:56 joerg Exp $
 
-DISTNAME=	HTTP_Request-1.2.3
+DISTNAME=	HTTP_Request-1.3.0
 #CATEGORIES+=	www
 
 MAINTAINER=	jdolecek@NetBSD.org
