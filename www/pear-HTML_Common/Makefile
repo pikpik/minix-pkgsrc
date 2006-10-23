@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2006/06/02 18:28:00 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/04 16:26:55 joerg Exp $
 
-DISTNAME=	HTML_Common-1.2.1
+DISTNAME=	HTML_Common-1.2.3
 CATEGORIES=	www
 
 MAINTAINER=	jdolecek@NetBSD.org
