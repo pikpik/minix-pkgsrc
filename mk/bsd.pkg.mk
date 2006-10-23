@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1890 2006/10/22 07:00:41 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1891 2006/10/22 07:20:06 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -946,5 +946,5 @@ changes-entry:
 .include "${PKGSRCDIR}/mk/bsd.pkg.debug.mk"
 .endif
 .if make(help)
-.include "${PKGSRCDIR}/mk/bsd.pkg.help.mk"
+.include "${PKGSRCDIR}/mk/help/help.mk"
 .endif
