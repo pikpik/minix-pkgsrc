@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2006/07/02 10:32:09 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2006/10/24 18:19:22 rillig Exp $
 #
 
-DISTNAME=		pkg_filecheck-0.2
+DISTNAME=		pkg_filecheck-0.3
 CATEGORIES=		pkgtools devel
 MASTER_SITES=		# empty
 DISTFILES=		# empty
