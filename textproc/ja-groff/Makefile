@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/09/03 00:56:30 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/09/20 10:59:40 hira Exp $
 
 DISTNAME=	groff-1.10
 PKGNAME=	ja-groff-0.99
@@ -20,6 +20,7 @@ USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes
 CONFIGURE_HAS_MANDIR=	no
 #CONFIGURE_ENV+= CXXFLAGS="-fno-rtti -fno-exceptions -O"
+MAKE_FLAGS+=	manroot=${PREFIX}/${PKGMANDIR}
 
 REPLACE_PERL=	grog/grog.pl
 REPLACE_PERL+=	afmtodit/afmtodit.pl
