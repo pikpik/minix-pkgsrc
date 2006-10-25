@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2005/12/05 20:50:56 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2005/12/05 23:55:17 rillig Exp $
 
-DISTNAME=		ipsec-tools-0.6.3
+DISTNAME=		ipsec-tools-0.6.6
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ipsec-tools/}
 EXTRACT_SUFX=		.tar.bz2
