@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 20:50:08 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/07/07 15:49:32 jlam Exp $
 #
 
 DISTNAME=		silc-toolkit-0.9.13
@@ -45,4 +45,5 @@ CONFIGURE_ARGS+=	--disable-asm
 
 .include "options.mk"
 
+.include "../../devel/libgetopt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
