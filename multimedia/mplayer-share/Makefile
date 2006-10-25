@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/03/17 02:53:00 taca Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/13 17:25:00 drochner Exp $
 
 .include "Makefile.common"
 
@@ -10,7 +10,7 @@ DEPENDS+=	mplayer-fonts-[0-9]*:../../fonts/mplayer-fonts
 NO_BUILD=	YES
 NO_CONFIGURE=	YES
 
-INSTALLATION_DIRS=	man/man1
+INSTALLATION_DIRS=	${PKGMANDIR}/man1
 
 do-install:
 	${INSTALL_MAN} ${WRKSRC}/DOCS/man/en/mplayer.1 ${PREFIX}/${PKGMANDIR}/man1
