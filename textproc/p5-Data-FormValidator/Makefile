@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2006/02/03 17:33:08 abs Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:47 jlam Exp $
 
-DISTNAME=	Data-FormValidator-4.12
+DISTNAME=	Data-FormValidator-4.40
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5 textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Data/}
@@ -14,7 +14,7 @@ DEPENDS+=	p5-File-MMagic>=1.17:../../misc/p5-File-MMagic
 DEPENDS+=	p5-Image-Size-[0-9]*:../../graphics/p5-Image-Size
 DEPENDS+=	p5-MIME-Types>=1.005:../../mail/p5-MIME-Types
 DEPENDS+=	p5-Regexp-Common-[0-9]*:../../textproc/p5-Regexp-Common
-DEPENDS+=	p5-Test-Simple-[0-9]*:../../devel/p5-Test-Simple
+DEPENDS+=	{p5-Test-Simple>=0.10,perl>=5.7.2}:../../devel/p5-Test-Simple
 
 PERL5_PACKLIST=		auto/Data/FormValidator/.packlist
 
