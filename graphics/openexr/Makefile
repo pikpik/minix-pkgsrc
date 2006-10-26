@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2006/04/28 17:55:48 jschauma Exp $
+# $NetBSD: Makefile,v 1.9 2006/05/08 11:04:40 salo Exp $
 
-DISTNAME=	OpenEXR-1.2.2
-PKGNAME=	openexr-1.2.2
-PKGREVISION=	1
+DISTNAME=	openexr-1.4.0a
+PKGNAME=	openexr-1.4.0
 CATEGORIES=	games
 MASTER_SITES=	http://savannah.nongnu.org/download/openexr/
 
@@ -10,6 +9,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openexr.com/
 COMMENT=	High dynamic-range (HDR) image file format library and tools
 
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
