@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2006/03/15 00:26:07 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/10/24 08:44:22 rillig Exp $
 
 KOFFICE_LANGUAGE=	French
 KOFFICE_LANGCODE=	fr
 PKGREVISION=		6
+
+DEPENDS+=	koffice-[0-9]*:../../misc/koffice
 
 .include "../../misc/koffice/i18n.mk"
 .include "../../mk/bsd.pkg.mk"
