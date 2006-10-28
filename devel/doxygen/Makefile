@@ -24,6 +24,13 @@ CONFIGURE_ARGS+=	--docdir ${PREFIX}/share/doc
 MAKE_ENV+=		PKGSRC_CFLAGS=${CFLAGS:M*:Q}
 MAKE_FLAGS+=		MAN1DIR=${PKGMANDIR}/man1
 
+# Workaround for "configure" issue under Solaris, where PWD is more likely
+# to be set to the working directory of the Pkgsrc "make" than the working
+# directory, because Solaris /bin/sh does not support PWD.  An empty PWD
+# will also fail, because configure's "test -z $PWD" will error if PWD is
+# unset (PWD should be quoted).
+CONFIGURE_ENV+=		PWD=${WRKSRC:Q}
+
 .if exists(./descr)
 PLIST_SUBST+=	CASESENSITIVE="@comment " CASEINSENSITIVE=""
 .else
