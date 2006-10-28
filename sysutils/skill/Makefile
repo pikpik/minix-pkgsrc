@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.19 2005/08/06 13:06:06 yyamano Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/06 13:27:01 joerg Exp $
 #
 
 DISTNAME=	skill-4.1.1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://fast.cs.utah.edu/pub/skill/
+MASTER_SITES=	ftp://ftp.flux.utah.edu/pub/skill/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kim@tac.nyc.ny.us
-HOMEPAGE=	http://www.cs.utah.edu/~forys/software.html
+HOMEPAGE=	http://mysite.verizon.net/jforys/jeffware.html
 COMMENT=	Signal processes given user names, ttys, commands, or pids
 
 NOT_FOR_PLATFORM+= Interix-*-* # currently no machdep support
