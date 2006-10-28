@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/09/20 18:20:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.33 2006/09/20 18:23:48 xtraeme Exp $
 
 DISTNAME=	xplanet-1.2.0
 PKGREVISION=	3
@@ -12,6 +12,8 @@ COMMENT=	Rotating rendered map of the Earth in X11 root window
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
+CONFIGURE_ENV+=		PERL=${_ENV_PERL:Q}
+_ENV_PERL=		${TOOLS_SETENV} perl
 
 # directory creation should be fixed in the future release of xplanet
 pre-install:
