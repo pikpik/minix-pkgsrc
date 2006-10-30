@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2006/09/15 09:50:39 he Exp $
+# $NetBSD: Makefile,v 1.6 2006/10/01 13:56:38 rillig Exp $
 #
 
-DISTNAME=	konversation-1.0
-PKGREVISION=	1
+DISTNAME=	konversation-1.0.1
 CATEGORIES=	chat
 MASTER_SITES=	http://download.berlios.de/konversation/
 EXTRACT_SUFX=	.tar.bz2
