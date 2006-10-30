@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2006-03-07 09:36:18.000000000 +1100
-+++ configure	2006-03-07 09:36:24.000000000 +1100
-@@ -2178,33 +2178,6 @@
+--- configure.orig	2006-10-30 18:39:40.000000000 +1100
++++ configure
+@@ -2178,32 +2178,6 @@ echo "${ECHO_T}yes" >&6
  fi
  fi
  
@@ -32,7 +32,6 @@ $NetBSD$
 -  fi
 -fi
 -
--
+ 
  
  # Check for libcrypto using pkg-config, defaulting to /usr/lib
- CRYPTO_LIB_DIR="$(pkg-config openssl --variable=libdir)"
