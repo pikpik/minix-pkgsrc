@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/markdown.py
+${PYSITELIB}/markdown.pyc
+${PYSITELIB}/markdown.pyo
