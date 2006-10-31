@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.depends,v 1.13 2005/06/01 18:03:06 jlam Exp $
+# $NetBSD: Makefile.depends,v 1.14 2005/06/01 18:45:46 jmmv Exp $
 #
 
 DEPENDS+=	mplayer-share>=${MPLAYER_PKG_VERSION}:../../multimedia/mplayer-share
@@ -9,4 +9,5 @@ GCC_REQD+=	2.95.3
 .  include "../../devel/binutils/buildlink3.mk"
 .endif
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
