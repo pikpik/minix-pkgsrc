@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2006/05/26 17:47:58 joerg Exp $
+@comment $NetBSD: PLIST,v 1.7 2006/10/18 19:24:07 adam Exp $
 share/doc/postgresql/FAQ
 share/doc/postgresql/FAQ_AIX
 share/doc/postgresql/FAQ_DEV
@@ -676,4 +676,5 @@ share/doc/postgresql/xoper.html
 share/doc/postgresql/xplang.html
 share/doc/postgresql/xtypes.html
 @dirrm share/doc/postgresql/TODO.detail
+@dirrm share/doc/postgresql
 @unexec ${RMDIR} %D/doc/postgresql 2>/dev/null || ${TRUE}
