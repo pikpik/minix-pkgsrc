@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2006/10/24 18:00:05 smb Exp $
 #
 
 DISTNAME=		memtest86+-1.65
 PKGNAME=		memtestplus-1.65
+PKGREVISION=            2
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.memtest.org/download/1.65/
 
@@ -25,6 +26,7 @@ SUBST_SED.delcr=	-e 's/.$$//g'
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/mdec
 	${INSTALL_DATA} ${WRKSRC}/memtest.bin ${PREFIX}/mdec/memtestplus.bin
+	${INSTALL_DATA} ${WRKSRC}/memtest ${PREFIX}/mdec/memtestplus
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/memtestplus
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/memtestplus
 	${INSTALL_DATA} ${WRKSRC}/FAQ ${PREFIX}/share/doc/memtestplus
