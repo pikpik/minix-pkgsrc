@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/04/01 21:39:54 jmmv Exp $
+# $NetBSD: Makefile,v 1.15 2006/09/08 16:27:34 jmmv Exp $
 #
 
 DISTNAME=	xdg-dirs-1.4
@@ -9,6 +9,8 @@ DISTFILES=	# empty
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared XDG directories
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	gnome2-dirs<=1.2
 
