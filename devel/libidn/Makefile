@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/10/07 08:21:42 taca Exp $
+# $NetBSD: Makefile,v 1.38 2006/10/23 22:58:17 wiz Exp $
 
 DISTNAME=	libidn-0.6.8
 CATEGORIES=	devel
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.gnu.org/software/libidn/
 COMMENT=	Internationalized Domain Names command line tool
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

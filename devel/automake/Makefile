@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2006/03/30 03:44:42 jlam Exp $
+# $NetBSD: Makefile,v 1.71 2006/10/26 14:37:55 wiz Exp $
 #
 
 DISTNAME=	automake-1.10
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html
 COMMENT=	GNU Standards-compliant Makefile generator
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	autoconf>=2.60:../../devel/autoconf
 
