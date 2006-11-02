@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/04/18 17:41:30 jlam Exp $
+# $NetBSD: Makefile,v 1.52 2006/04/23 00:12:41 jlam Exp $
 
 .include "Makefile.common"
 
@@ -15,6 +15,7 @@ BUILD_DEFS+=		SASL_DBTYPE
 .if ${SASL_DBTYPE} == "berkeley"
 USE_DB185=		no
 .  include "../../mk/bdb.buildlink3.mk"
+CONFIGURE_ENV+=	BDB_TYPE=${BDB_TYPE:Q}
 .endif
 
 CONFIGURE_ARGS+=	--with-dblib=${SASL_DBTYPE:Q}
