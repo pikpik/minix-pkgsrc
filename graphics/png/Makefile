@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2006/06/29 22:21:18 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2006/07/07 09:35:05 rillig Exp $
 
 DISTNAME=	libpng-1.2.12
 PKGNAME=	${DISTNAME:S/lib//}
@@ -15,6 +15,7 @@ HOMEPAGE=	http://www.libpng.org/pub/png/
 COMMENT=	Library for manipulating PNG images
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 PKGCONFIG_OVERRIDE=	scripts/libpng.pc.in

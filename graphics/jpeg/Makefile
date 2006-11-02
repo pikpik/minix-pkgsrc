@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2005/12/27 17:30:50 reed Exp $
+# $NetBSD: Makefile,v 1.34 2006/09/03 00:56:29 wiz Exp $
 #
 
 DISTNAME=		jpegsrc.v6b
@@ -13,6 +13,7 @@ HOMEPAGE=		http://www.ijg.org/
 COMMENT=		IJG's jpeg compression utilities
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LIBTOOL=		yes
@@ -24,9 +25,11 @@ CONFIGURE_ARGS+=	--enable-static
 INSTALL_TARGET=		install install-lib
 INSTALLATION_DIRS=	bin lib include ${PKGMANDIR}/man1
 
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/jpeg
-	${INSTALL_DATA} ${WRKSRC}/*.doc ${PREFIX}/share/doc/jpeg
-	${INSTALL_DATA} ${WRKSRC}/jpegint.h ${PREFIX}/include
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/jpeg
+	${INSTALL_DATA} ${WRKSRC}/*.doc ${DESTDIR}${PREFIX}/share/doc/jpeg
+	${INSTALL_DATA} ${WRKSRC}/jpegint.h ${DESTDIR}${PREFIX}/include
 
 .include "../../mk/bsd.pkg.mk"
