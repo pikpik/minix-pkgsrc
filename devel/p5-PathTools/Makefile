@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/25 00:23:56 minskim Exp $
 
-DISTNAME=	PathTools-3.12
+DISTNAME=	PathTools-3.23
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
