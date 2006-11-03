@@ -13,6 +13,8 @@ COMMENT=		X11 Font Index Generator
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+DEPENDS+=		mkfontscale>=1.0.1:../../fonts/mkfontscale
+
 GNU_CONFIGURE=		yes
 
 .include "../../mk/bsd.pkg.mk"
