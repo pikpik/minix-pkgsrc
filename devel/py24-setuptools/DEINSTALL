@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# $NetBSD$
+#
+
+case $STAGE in
+DEINSTALL)
+	${RM} @PYSITELIB@/easy-install.pth
+	;;
+esac
