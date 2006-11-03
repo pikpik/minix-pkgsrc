@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/06/25 09:40:01 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2006/08/14 22:36:47 wiz Exp $
 #
 
 DISTNAME=	screws-0.56
@@ -31,6 +31,11 @@ SUBST_MESSAGE.paths=	Fixing paths.
 SUBST_STAGE.paths=	pre-configure
 SUBST_FILES.paths=	src/Utils/screwsctl
 SUBST_SED.paths=	-e 's|/var/log|${VARBASE}/log|g'
+
+SUBST_CLASSES+=		man
+SUBST_STAGE.man=	pre-configure
+SUBST_FILES.man=	Makefile
+SUBST_SED.man=		-e 's,PREFIX}/man,PREFIX}/${PKGMANDIR},g'
 
 # The HSML files do not really contain a script interpreter, only
 # something very similar.
