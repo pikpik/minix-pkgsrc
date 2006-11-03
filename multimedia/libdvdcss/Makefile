@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/10/10 21:54:31 agc Exp $
+# $NetBSD: Makefile,v 1.14 2005/10/11 16:47:44 dillo Exp $
 #
 # In order to ensure compliance with U.S. and international law, please
 # do not modify this file to provide pointers to the source or homepage
@@ -13,6 +13,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	${LIBDVDCSS_HOMEPAGE}
 COMMENT=	Simple library designed for accessing DVDs
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=	Legal problems due to CSS code
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2006/10/04 20:20:03 rillig Exp $
+# $NetBSD: Makefile,v 1.83 2006/10/30 20:57:30 drochner Exp $
 
 DISTNAME=	libxml2-2.6.27
 CATEGORIES=	textproc
@@ -10,6 +10,7 @@ HOMEPAGE=	http://xmlsoft.org/
 COMMENT=	XML parser library from the GNOME project
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes

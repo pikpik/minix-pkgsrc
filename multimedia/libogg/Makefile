@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/04/22 07:32:24 lukem Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/15 13:38:51 wiz Exp $
 #
 
 DISTNAME=	libogg-1.1.3
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.xiph.org/ogg/
 COMMENT=	Ogg project codecs library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	YES
