@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.23 2006/10/13 06:32:15 rillig Exp $
+# $NetBSD: install.mk,v 1.24 2006/10/26 20:05:03 rillig Exp $
 
 ######################################################################
 ### install (PUBLIC)
@@ -246,8 +246,8 @@ install-makedirs:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
 	for dir in ${INSTALLATION_DIRS}; do				\
 		case "$$dir" in						\
-		${DESTDIR}${PREFIX}/*)					\
-			dir=`${ECHO} $$dir | ${SED} "s|^${DESTDIR}${PREFIX}/||"` ;; \
+		${PREFIX}/*)						\
+			dir=`${ECHO} $$dir | ${SED} "s|^${PREFIX}/||"` ;; \
 		/*)	continue ;;					\
 		esac;							\
 		if [ -f "${PREFIX}/$$dir" ]; then			\
