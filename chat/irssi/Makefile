@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/02/05 23:08:24 joerg Exp $
+# $NetBSD: Makefile,v 1.45 2006/03/04 06:34:13 wiz Exp $
 
 DISTNAME=		${IRSSI_DISTNAME}
 CATEGORIES=		chat
@@ -8,6 +8,8 @@ EXTRACT_SUFX=		${IRSSI_EXTRACT_SUFX}
 MAINTAINER=		mutru@iki.fi
 HOMEPAGE=		http://www.irssi.org/
 COMMENT=                Secure and modular IRC client with text mode user interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
@@ -31,7 +33,7 @@ CONF_FILES=	${EGDIR}/irssi.conf ${PKG_SYSCONFDIR}/irssi.conf
 .include "../../devel/glib2/buildlink3.mk"
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/config.h ${IRSSI_CONFIG_H}
-	${INSTALL_DATA} ${WRKSRC}/irssi-config ${IRSSI_CONFIG}
+	${INSTALL_DATA} ${WRKSRC}/config.h ${DESTDIR}${IRSSI_CONFIG_H}
+	${INSTALL_DATA} ${WRKSRC}/irssi-config ${DESTDIR}${IRSSI_CONFIG}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2006/07/03 21:23:29 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2006/10/08 23:02:30 ben Exp $
 
 DISTNAME=		autoconf-2.60
 CATEGORIES=		devel
@@ -16,6 +16,7 @@ USE_TOOLS+=		gm4:run perl:run
 CONFLICTS=		autoconf-devel-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 GNU_CONFIGURE=		YES
