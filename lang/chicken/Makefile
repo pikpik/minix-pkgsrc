@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/05/23 10:25:47 tonio Exp $
+# $NetBSD: Makefile,v 1.26 2006/10/10 15:04:38 obache Exp $
 #
 
 DISTNAME=	chicken-2.41
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.call-with-current-continuation.org/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.call-with-current-continuation.org/chicken.html
 COMMENT=	Scheme to C compiler, handling R5RS
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
