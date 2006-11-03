@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/03/07 06:29:03 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/09/03 17:13:30 ben Exp $
 #
 
 DISTNAME=	cdparanoia-III-alpha9.8
@@ -15,6 +15,7 @@ COMMENT=	CDDA reading utility with extra data verification features
 ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-*-* Linux-*-* DragonFly-*-* Darwin-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	YES
