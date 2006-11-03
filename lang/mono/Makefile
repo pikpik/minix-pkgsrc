@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2006/08/03 18:15:07 drochner Exp $
+# $NetBSD: Makefile,v 1.55 2006/10/17 19:33:47 drochner Exp $
 
 DISTNAME=	mono-1.1.13.8.1
 CATEGORIES=	lang
@@ -18,7 +18,7 @@ NOT_FOR_PLATFORM+=	NetBSD-1.6-* NetBSD-1.6.*-*
 NOT_FOR_PLATFORM+=	NetBSD-1.6[A-Z]-* NetBSD-1.6Z[AB]-*
 
 # LP64 problems
-NOT_FOR_PLATFORM+=	*-*-alpha *-*-sparc64
+NOT_FOR_PLATFORM+=	*-*-alpha *-*-sparc64 *-*-x86_64
 
 USE_TOOLS+=		bison gmake gtar perl:run pkg-config
 USE_LIBTOOL=		yes
