@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	${MKDIR} ${PREFIX}/libdata/pango
+	${PREFIX}/bin/pango-querymodules > ${PREFIX}/libdata/pango/pango.modules
+	;;
+esac
