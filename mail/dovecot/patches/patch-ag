@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/deliver/deliver.c.orig	2006-10-09 20:59:33.000000000 +0200
+--- src/deliver/deliver.c.orig	2006-11-02 21:03:30.000000000 +0100
 +++ src/deliver/deliver.c
 @@ -30,7 +30,7 @@
  
@@ -8,6 +8,6 @@ $NetBSD$
  #define DEFAULT_AUTH_SOCKET_PATH PKG_RUNDIR"/auth-master"
 -#define DEFAULT_SENDMAIL_PATH "/usr/lib/sendmail"
 +#define DEFAULT_SENDMAIL_PATH "/usr/sbin/sendmail"
- #define DEFAULT_ENVELOPE_SENDER "dovecot.deliver"
+ #define DEFAULT_ENVELOPE_SENDER "MAILER-DAEMON"
  
  /* After buffer grows larger than this, create a temporary file to /tmp
