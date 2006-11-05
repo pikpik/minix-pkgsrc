@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/08/06 06:19:14 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2005/10/25 13:37:45 wiz Exp $
 
 DISTNAME=	Storable-2.15
 PKGNAME=	p5-${DISTNAME}
@@ -11,6 +11,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Storable/
 COMMENT=	Perl extension module for persistent data storage
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Storable/.packlist
 

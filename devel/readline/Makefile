@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/03/30 03:44:43 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2006/10/22 10:55:31 wiz Exp $
 #
 
 DISTNAME=	readline-5.2
@@ -13,6 +13,7 @@ HOMEPAGE=	http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
 COMMENT=	GNU library that can recall and edit previous input
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

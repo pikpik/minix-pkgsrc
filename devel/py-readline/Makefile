@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:51 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/10/04 21:36:00 wiz Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -8,6 +8,8 @@ CATEGORIES=	devel misc python
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/current/tut/node15.html
 COMMENT=	Line editing support for Python
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/readline.c
 
