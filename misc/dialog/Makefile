@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2006/03/04 21:30:10 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2006/09/09 02:43:11 obache Exp $
 
 DISTNAME=	dialog-1.0-20060221
 PKGNAME=	${DISTNAME:C/-2/.2/}
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dickey.his.com/dialog/dialog.html
 COMMENT=	Display dialog boxes from shell scripts
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 MAKE_FILE=	makefile

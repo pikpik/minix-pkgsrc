@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/09/06 19:56:40 adam Exp $
 
 DISTNAME=	cairomm-1.2.2
 CATEGORIES=	graphics
@@ -7,6 +7,8 @@ MASTER_SITES=	http://cairographics.org/releases/
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://cairographics.org/cairomm/
 COMMENT=	C++ API for cairo
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

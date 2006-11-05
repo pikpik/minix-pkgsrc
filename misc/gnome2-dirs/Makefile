@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:10:09 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/03/30 21:14:32 jmmv Exp $
 #
 
 DISTNAME=	gnome2-dirs-1.6
@@ -9,6 +9,8 @@ DISTFILES=	# empty
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared GTK/GNOME (v2) directories
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# empty
