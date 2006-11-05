@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/10/01 08:52:01 schwarz Exp $
+# $NetBSD: Makefile,v 1.45 2006/10/09 12:52:36 joerg Exp $
 #
 
 DISTNAME=		aspell-0.60.4
@@ -49,10 +49,6 @@ REPLACE_PERL=		scripts/aspell-import
 NOT_FOR_COMPILER=	xlc
 
 LIBS.SunOS+=		-lm
-
-# Create directory for dictionaries.
-post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/lib/aspell
 
 .include "../../mk/bsd.prefs.mk"
 .if !empty(LOWER_OPSYS:Mirix5*)
