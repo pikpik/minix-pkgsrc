@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/08/28 08:30:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.25 2006/09/15 15:08:52 jmmv Exp $
 #
 
 DISTNAME=	gnome-keyring-0.6.0
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME password and secret manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES

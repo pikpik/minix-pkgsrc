@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/09/06 11:41:41 markd Exp $
+# $NetBSD: Makefile,v 1.34 2006/10/04 21:58:14 wiz Exp $
 
 DISTNAME=	libgcrypt-1.2.3
 PKGREVISION=	1
@@ -11,6 +11,7 @@ HOMEPAGE=	http://directory.fsf.org/security/libgcrypt.html
 COMMENT=	GNU cryptographic library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/01/01 22:19:44 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/02 20:52:05 wiz Exp $
 #
 
 DISTNAME=	Digest-1.15
@@ -14,6 +14,7 @@ COMMENT=	Perl5 base class for Digest:: modules
 DEPENDS+=	p5-MIME-Base64>=2.18:../../converters/p5-MIME-Base64
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Digest/.packlist

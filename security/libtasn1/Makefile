@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/05/21 00:45:13 tonio Exp $
+# $NetBSD: Makefile,v 1.30 2006/07/04 15:29:34 drochner Exp $
 
 DISTNAME=	libtasn1-0.3.5
 CATEGORIES=	security devel
@@ -13,6 +13,7 @@ HOMEPAGE=	http://www.gnutls.org/
 COMMENT=	ASN.1 structure parser library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		makeinfo
 USE_LIBTOOL=		yes
