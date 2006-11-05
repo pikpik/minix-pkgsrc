@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/08/06 06:19:26 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/09/02 08:28:48 adrianp Exp $
 #
 
 DISTNAME=	Net-IP-1.25
@@ -10,9 +10,10 @@ MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~manu/Net-IP-1.20/
 COMMENT=	Perl extension for manipulating IPv4/IPv6 addresses
 
-DEPENDS+=	p5-Math-BigInteger-[0-9]*:../../math/p5-Math-BigInteger
-
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=	p5-Math-BigInteger-[0-9]*:../../math/p5-Math-BigInteger
 
 PERL5_PACKLIST=		auto/Net/IP/.packlist
 
