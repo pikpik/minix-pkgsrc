@@ -1,4 +1,10 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.2 2006/11/03 17:31:12 joerg Exp $
+
+.include "../../mk/bsd.fast.prefs.mk"
+
+.if ${X11_TYPE} != "modular"
+.include "../../mk/x11.buildlink3.mk"
+.else
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBICE_BUILDLINK3_MK:=	${LIBICE_BUILDLINK3_MK}+
@@ -17,3 +23,5 @@ BUILDLINK_PKGSRCDIR.libICE?=	../../x11/libICE
 .endif	# LIBICE_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+
+.endif
