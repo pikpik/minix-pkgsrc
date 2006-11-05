@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+In order to use the XML support in your Apache installation, you will need
+to add the following to your httpd.conf file:
+
+  LoadFile ${PREFIX}/lib/libxml2.so
+
+===========================================================================
