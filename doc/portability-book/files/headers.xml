@@ -1,9 +1,0 @@
-<!-- $NetBSD$ -->
-
-<chapter id="headers">
-<title>C/C++: Header files</title>
-
-<para>This chapter provides information about which header files are
-available on which platform.</para>
-
-</chapter>
