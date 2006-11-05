@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2006/10/01 08:56:28 schwarz Exp $
+# $NetBSD: Makefile,v 1.69 2006/10/30 21:03:21 drochner Exp $
 
 DISTNAME=	libxslt-1.1.18
 CATEGORIES=	textproc
@@ -10,6 +10,7 @@ HOMEPAGE=	http://xmlsoft.org/XSLT/
 COMMENT=	XSLT parser library from the GNOME project
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/05/30 22:19:53 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2006/08/29 14:03:39 joerg Exp $
 #
 
 DISTNAME=		intltool-0.35.0
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Toolbox for internationalisation
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-XML-Parser>=2.34nb4:../../textproc/p5-XML-Parser
 
