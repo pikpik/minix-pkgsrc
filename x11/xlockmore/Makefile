@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2006/05/09 10:57:29 tron Exp $
+# $NetBSD: Makefile,v 1.76 2006/06/20 16:02:14 joerg Exp $
 
 .include "Makefile.common"
 
@@ -13,7 +13,7 @@ USE_TOOLS+=	pkg-config
 .include "../../audio/esound/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
