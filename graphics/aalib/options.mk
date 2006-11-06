@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/12/11 09:40:44 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.aalib
 PKG_SUPPORTED_OPTIONS=	ncurses slang x11
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--with-slang-driver=no
 .endif
 
 .if !empty(PKG_OPTIONS:Mx11)
-.  include "../../mk/x11.buildlink3.mk"
+.  include "../../x11/libX11/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-x11-driver=yes
 .else
 CONFIGURE_ARGS+=	--with-x11-driver=no
