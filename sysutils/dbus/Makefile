@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/11/04 00:42:30 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2006/11/05 17:09:00 joerg Exp $
 #
 
 DISTNAME=	dbus-0.92
@@ -74,7 +74,7 @@ PKG_GECOS.messagebus=	System message bus
 PKG_HOME.messagebus=	${VARBASE}/run/dbus
 
 post-install:
-	cd ${WRKSRC}/doc && ${INSTALL_DATA} *.html *.txt ${DOCDIR}
+	cd ${WRKSRC}/doc && ${INSTALL_DATA} *.html *.txt ${DESTDIR}${DOCDIR}
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
