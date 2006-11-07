@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xkbcomp
+man/man1/xkbcomp.1
