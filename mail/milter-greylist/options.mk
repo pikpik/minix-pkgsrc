@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2006/10/12 13:14:43 tron Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.milter-greylist
 PKG_SUPPORTED_OPTIONS=		dnsrbl drac spf
@@ -7,7 +7,7 @@ PKG_SUGGESTED_OPTIONS=		dnsrbl spf
 .include "../../mk/bsd.options.mk"
 
 ###
-### RNS Realtime Black List
+### DNS Realtime Black List
 ###
 .if empty(PKG_OPTIONS:Mdnsrbl)
 CONFIGURE_ARGS+=	--disable-dnsrbl
