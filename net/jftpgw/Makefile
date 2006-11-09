@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/03/04 21:30:19 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/04/10 09:31:01 martti Exp $
 
 DISTNAME=	    jftpgw-0.13.5
 #PKGREVISION=	    1
@@ -31,5 +31,7 @@ SUBST_CLASSES+=		config
 SUBST_STAGE.config=	post-build
 SUBST_FILES.config=	jftpgw.conf.sample
 SUBST_SED.config=	-e "s/nobody/root/"
+
+CHECK_PORTABILITY_SKIP+=	support/jftpgw.startscript.non-RH
 
 .include "../../mk/bsd.pkg.mk"
