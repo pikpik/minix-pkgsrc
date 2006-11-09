@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/07/13 17:37:34 bad Exp $
+# $NetBSD: Makefile,v 1.23 2006/07/22 04:46:18 rillig Exp $
 
 DISTNAME=	libfwbuilder-2.0.12
 CATEGORIES=	security net
@@ -7,6 +7,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fwbuilder/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fwbuilder.org/
 COMMENT=	Firewall Builder API
+
+CONFLICTS=	libfwbuilder21-[0-9]*
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
