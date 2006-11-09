@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2006/09/15 15:22:05 jmmv Exp $
+# $NetBSD: Makefile,v 1.43 2006/09/16 12:20:39 jmmv Exp $
 #
 
 DISTNAME=		gok-1.2.0
@@ -16,8 +16,6 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-
-CONFIGURE_ARGS+=	--disable-gtk-doc
 
 PKGCONFIG_OVERRIDE+=    gok-1.0.pc.in
 
