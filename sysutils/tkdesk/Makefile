@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/04 21:30:43 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/21 12:09:57 joerg Exp $
 #
 
 DISTNAME=	tkdesk-2.0
@@ -26,6 +26,6 @@ MAKE_ENV+=	LIB_RUNTIME_DIR=${BUILDLINK_PREFIX.tcl-itcl:Q}/lib \
 pre-install:
 	${RM} -Rf ${WRKSRC}/tcldesk/configs/.trash
 	${FIND} ${WRKSRC}/tcldesk -type f -name '*.orig' -print | ${XARGS} ${RM} -rf
-	${FIND} ${WRKSRC}/tcldesk -name '*' -exec ${TOUCH} {} ';'
+	${FIND} ${WRKSRC}/tcldesk -type f -print | ${XARGS} ${TOUCH}
 
 .include "../../mk/bsd.pkg.mk"

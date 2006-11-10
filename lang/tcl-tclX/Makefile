@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/02/26 21:11:28 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2006/04/06 06:22:15 reed Exp $
 #
 
 DISTNAME=	tclx8.3.5-src
@@ -55,8 +55,8 @@ post-build:
 	cd ${WRKSRC}/../tcl/unix && ${MAKE_ENV} ${MAKE} buildhelp
 
 post-install:
-	${FIND} ${PREFIX}/lib/tcl/tclX8.3/help -type d -exec ${CHMOD} ${PKGDIRMODE} '{}' \;
-	${FIND} ${PREFIX}/lib/tcl/tclX8.3/help -type f -exec ${CHMOD} ${DOCMODE} '{}' \;
+	${FIND} ${PREFIX}/lib/tcl/tclX8.3/help -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${PREFIX}/lib/tcl/tclX8.3/help -type f -print | ${XARGS} ${CHMOD} ${DOCMODE}
 	@${RM} ${PREFIX}/man/man3/TkX_Main.3
 	@${RM} ${PREFIX}/man/man3/Tkx_Init.3
 # the above links are installed based on the contents of the man page.

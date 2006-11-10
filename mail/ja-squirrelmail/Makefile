@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/08/19 14:49:36 taca Exp $
+# $NetBSD: Makefile,v 1.33 2006/08/27 10:40:39 martti Exp $
 
 DISTNAME=	squirrelmail-1.4.8
 PKGNAME=	ja-${DISTNAME}
@@ -69,7 +69,7 @@ post-extract:
 		${WRKDIR:Q}/squirrelmail.conf.dist
 
 pre-configure:
-	${FIND} ${WRKSRC:Q} \( -name "*.orig*" -o -name ".cvsignore" \) -exec ${RM} -f {} \;
+	${FIND} ${WRKSRC:Q} \( -name "*.orig*" -o -name ".cvsignore" \) -print | ${XARGS} ${RM} -f
 
 do-install:
 	${INSTALL_DATA_DIR} ${EGDIR:Q}
@@ -77,8 +77,8 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR:Q}/squirrelmail.conf.dist ${EGDIR:Q}/squirrelmail.conf
 	${CP} -R ${WRKSRC:Q}/* ${SMDIR:Q}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${SMDIR}
-	${FIND} ${SMDIR} -type d -print -exec ${CHMOD} ${PKGDIRMODE} {} \;
-	${FIND} ${SMDIR} -type f -print -exec ${CHMOD} ${SHAREMODE} {} \;
+	${FIND} ${SMDIR} -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${SMDIR} -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE}
 	${CHMOD} a+x ${SMDIR:Q}/config/conf.pl
 	${INSTALL_DATA} ${WRKSRC:Q}/data/index.php ${USER_PREFS_DIR:Q}/
 	${INSTALL_DATA} ${WRKSRC:Q}/data/.htaccess ${USER_PREFS_DIR:Q}/
