@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2006/03/20 17:13:57 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/11/10 17:57:51 perry Exp $
 
 DISTNAME=	gnus-5.10.8
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-#PKGREVISION=	2
 CATEGORIES=	mail news
 MASTER_SITES=	http://www.gnus.org/dist/
 
