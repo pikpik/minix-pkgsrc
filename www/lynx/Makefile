@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2006/10/09 01:53:06 rillig Exp $
+# $NetBSD: Makefile,v 1.93 2006/11/05 17:37:55 joerg Exp $
 
 #
 # NOTE: Please do not enable the lynxcgi feature unless it is lynx
