@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.2 2005/02/25 09:52:47 adam Exp $
 
 --- fortran/Makefile.orig	2004-12-18 18:08:01.000000000 +0000
 +++ fortran/Makefile
-@@ -69,7 +69,7 @@ PACKING_LIST	= \
+@@ -69,14 +69,14 @@ PACKING_LIST	= \
  #
  
  
@@ -11,3 +11,11 @@ $NetBSD$
  
  test:		ftest FORCE
  	./ftest
+ 
+ 
+ install:	$(INCDIR)/$(HEADER)	\
+-		$(MANDIR)/man3f/$(MANUAL)
++		$(MANDIR)/man3/$(MANUAL)
+ 
+ uninstall:
+ 	-rm -f $(INCDIR)/$(HEADER)
