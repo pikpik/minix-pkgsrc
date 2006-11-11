@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:57 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/10/01 15:15:56 rillig Exp $
 #
 
 DISTNAME=	bannerfilter-1.31
@@ -22,6 +22,8 @@ SUBST_FILES.bf=	bannerfilter.conf
 SUBST_SED.bf=	-e s,@SHAREDIR@,${SHAREDIR},g
 
 INSTALLATION_DIRS=	bin ${SHAREDIR}/www ${SHAREDIR}/doc ${SHAREDIR}/data
+
+CHECK_PORTABILITY_SKIP+=	update.sh
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/www/* ${SHAREDIR}/www/
