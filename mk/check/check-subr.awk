@@ -1,6 +1,6 @@
-# $NetBSD: check-subr.sh,v 1.2 2006/11/09 10:52:21 rillig Exp $
+# $NetBSD: check-subr.awk,v 1.1 2006/11/09 14:36:18 rillig Exp $
 #
-# This file contains shell functions that are used by the various awk
+# This file contains functions that are used by the various awk
 # programs that check things in pkgsrc. All these programs must be
 # called with the following environment variables set:
 #
