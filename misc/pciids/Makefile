@@ -1,5 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/12 11:46:21 jmmv Exp $
 #
+
 DISTNAME=	pciids-20061026
 CATEGORIES=	misc
 MASTER_SITES=	http://people.freebsd.org/~ahze/distfiles/
