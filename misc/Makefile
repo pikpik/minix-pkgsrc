@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.266 2006/10/24 00:02:15 wiz Exp $
+# $NetBSD: Makefile,v 1.267 2006/10/31 19:45:21 minskim Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -184,6 +184,7 @@ SUBDIR+=	p5-Mac-Macbinary
 SUBDIR+=	p5-Msgcat
 SUBDIR+=	p5-Search
 SUBDIR+=	parchive
+SUBDIR+=	pciids
 SUBDIR+=	pdmenu
 SUBDIR+=	php-calendar
 SUBDIR+=	php-mbstring
