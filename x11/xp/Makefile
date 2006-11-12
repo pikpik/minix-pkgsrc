@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/04/11 21:48:15 tv Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:48 joerg Exp $
 
 DISTNAME=	xp-1.2b10
 PKGREVISION=	2
@@ -9,5 +9,6 @@ MAINTAINER=	jdc@NetBSD.org
 COMMENT=	Fast X11 text file viewer using Athena widgets
 
 USE_IMAKE=	yes
+MAKE_FLAGS+=	MANPATH=${PREFIX}/${PKGMANDIR}
 
 .include "../../mk/bsd.pkg.mk"
