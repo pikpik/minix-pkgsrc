@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/pciids/pci.ids
+share/pciids/pci.db
+@dirrm share/pciids
