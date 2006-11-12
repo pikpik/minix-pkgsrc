@@ -1,4 +1,4 @@
-# $NetBSD: check-files.mk,v 1.9 2006/10/09 12:25:44 joerg Exp $
+# $NetBSD: check-files.mk,v 1.10 2006/11/09 21:29:26 rillig Exp $
 #
 # This file checks that the list of installed files matches the PLIST.
 # For that purpose it records the file list of LOCALBASE before and
@@ -326,7 +326,7 @@ ${_CHECK_FILES_ERRMSG.sysconfdir}:					\
 	if ${CMP} -s ${_CHECK_FILES_PRE.sysconfdir}			\
 		     ${_CHECK_FILES_POST.sysconfdir}; then		\
 		${DO_NADA};						\
-	else
+	else								\
 		${ECHO} "************************************************************"; \
 		${ECHO} "The package has modified ${PKG_SYSCONFDIR}"	\
 			"contents directly!";				\
