@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/Markdown
+${PERL5_SITELIB}/Markdown.pm
+share/doc/Markdown/License.text
+share/doc/Markdown/Markdown Readme.text
