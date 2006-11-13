@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/ephem.so
+share/doc/${PKGNAME}/pyephem-manual.html
+@dirrm share/doc/${PKGNAME}
