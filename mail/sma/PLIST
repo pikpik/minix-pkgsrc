@@ -1,6 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/09/24 09:25:46 tron Exp $
 bin/sma
-man/man8/sma.8.gz
+man/man8/sma.8
 share/doc/sma/README
 share/examples/sma/sma.conf
 @dirrm share/examples/sma
