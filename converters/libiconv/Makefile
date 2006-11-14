@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2005/12/29 06:21:34 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2006/06/08 03:56:21 jlam Exp $
 
 DISTNAME=	libiconv-1.10
 PKGREVISION=	3
@@ -14,6 +14,7 @@ PATCHFILES=	libiconv-1.10-ja-1.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -42,11 +43,11 @@ CFLAGS+=	-c99
 # charset.alias files, which were not removed during deinstall since
 # other packages touched them.
 pre-install:
-	${RM} -f ${PREFIX}/lib/charset.alias
+	${RM} -f ${DESTDIR}${PREFIX}/lib/charset.alias
 
 # be sure to install a new charset.alias
 post-install:
-	cd ${WRKSRC}/libcharset/lib && ${MAKE} libdir=${EGDIR} \
+	cd ${WRKSRC}/libcharset/lib && ${MAKE} libdir=${EGDIR} DESTDIR=${DESTDIR:Q} \
 		install-charset-alias
 
 .include "../../mk/bsd.pkg.mk"
