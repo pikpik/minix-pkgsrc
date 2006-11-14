@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/08/20 14:56:03 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/11/10 00:29:44 adrianp Exp $
 #
 
 DISTNAME=	libarchive-1.3.1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://people.freebsd.org/~kientzle/libarchive/src/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~kientzle/libarchive/src/
 COMMENT=	Library to read/create different archive formats
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
