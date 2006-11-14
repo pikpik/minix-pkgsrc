@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/07/05 05:37:44 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/09/16 12:20:39 jmmv Exp $
 #
 
-DISTNAME=		glabels-2.0.2
-PKGREVISION=		7
+DISTNAME=		glabels-2.0.4
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=glabels/}
 
@@ -25,4 +24,5 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
