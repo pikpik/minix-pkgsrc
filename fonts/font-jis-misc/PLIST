@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/X11/fonts/misc/jiskan16.pcf.gz
+lib/X11/fonts/misc/jiskan24.pcf.gz
+@comment @dirrm lib/X11/fonts/misc
+@comment @dirrm lib/X11/fonts
+@comment @dirrm lib/X11
