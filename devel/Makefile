@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.794 2006/11/01 07:05:34 dsainty Exp $
+# $NetBSD: Makefile,v 1.795 2006/11/03 16:24:18 joerg Exp $
 #
 
 COMMENT=	Development utilities
@@ -616,12 +616,12 @@ SUBDIR+=	py-logging
 SUBDIR+=	py-pexpect
 SUBDIR+=	py-pqueue
 SUBDIR+=	py-readline
+SUBDIR+=	py-setuptools
 SUBDIR+=	py-subversion
 SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
 SUBDIR+=	py-urwid
 SUBDIR+=	py-zconfig
-SUBDIR+=	py24-setuptools
 SUBDIR+=	python-mode
 SUBDIR+=	qconf
 SUBDIR+=	rake
