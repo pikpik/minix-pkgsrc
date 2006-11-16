@@ -1,4 +1,4 @@
-# $NetBSD: compiler.mk,v 1.54 2006/07/22 05:01:17 rillig Exp $
+# $NetBSD: compiler.mk,v 1.55 2006/07/27 20:07:06 joerg Exp $
 #
 # This Makefile fragment implements handling for supported C/C++/Fortran
 # compilers.
@@ -126,6 +126,10 @@ _COMPILER_STRIP_VARS=	# empty
 .  include "../../mk/compiler/${_compiler_}.mk"
 .endfor
 .undef _compiler_
+
+.if !defined(PKG_CPP)
+PKG_CPP:=${CPP}
+.endif
 
 # Strip the leading paths from the toolchain variables since we manipulate
 # the PATH to use the correct executable.
