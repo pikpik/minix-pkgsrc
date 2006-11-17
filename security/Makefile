@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.278 2006/11/05 14:34:50 adrianp Exp $
+# $NetBSD: Makefile,v 1.279 2006/11/09 19:11:33 bad Exp $
 #
 
 COMMENT=	Security tools
@@ -64,6 +64,7 @@ SUBDIR+=	gnome-keyring
 SUBDIR+=	gnome-keyring-manager
 SUBDIR+=	gnu-crypto
 SUBDIR+=	gnupg
+SUBDIR+=	gnupg2
 SUBDIR+=	gnupg-devel
 SUBDIR+=	gnutls
 SUBDIR+=	gpa
