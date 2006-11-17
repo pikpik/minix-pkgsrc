@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.10 2006/04/06 06:22:42 reed Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/11 12:34:48 shannonjr Exp $
 #
 
-DISTNAME=		libassuan-0.9.3
+DISTNAME=		libassuan-1.0.0
 CATEGORIES=		security
-MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/alpha/libassuan/
+MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/libassuan/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		shannonjr@NetBSD.org
-HOMEPAGE=		ftp://ftp.gnupg.org/gcrypt/alpha/libassuan/
+HOMEPAGE=		ftp://ftp.gnupg.org/gcrypt/libassuan/
 COMMENT=		The IPC library used by some GnuPG related software
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
