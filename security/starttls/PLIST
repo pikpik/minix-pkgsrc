@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/starttls
+${EMACS_LISPPREFIX}/starttls.el
+${EMACS_LISPPREFIX}/starttls.elc
