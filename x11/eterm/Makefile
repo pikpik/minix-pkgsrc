@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2006/04/17 13:46:52 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2006/05/19 16:23:47 rillig Exp $
 
 DISTNAME=	Eterm-0.9.3
 PKGNAME=	${DISTNAME:S/^E/e/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=eterm/} \
 		ftp://ftp.dti.ad.jp/pub/X/Eterm/
@@ -21,6 +21,7 @@ ETERM_SRCS=		${DISTNAME}${EXTRACT_SUFX}
 PIXMAP_FILES=		Eterm-bg-scale-1.tar.gz Eterm-bg-scale-2.tar.gz \
 			Eterm-bg-tile.tar.gz
 
+USE_TOOLS+=		perl:run
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
