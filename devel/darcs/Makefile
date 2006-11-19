@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2006/09/09 02:41:57 obache Exp $
+# $NetBSD: Makefile,v 1.15 2006/10/17 21:43:38 agc Exp $
 
 DISTNAME=		darcs-1.0.8
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.darcs.net/
 
