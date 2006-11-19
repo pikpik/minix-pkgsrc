@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/${GNU_PROGRAM_PREFIX}units
+info/units.info
+man/man1/${GNU_PROGRAM_PREFIX}units.1
+share/units.dat
