@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/05/26 19:10:43 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2006/10/04 21:38:37 wiz Exp $
 
 DISTNAME=		linuxppc_lib-2000.4.6
 PKGREVISION=		1
@@ -14,7 +14,7 @@ RPMFILES=	glibc-2.1.3-15f.ppc.rpm glib-1.2.8-3.ppc.rpm \
 DISTFILES+=	${RPMFILES}
 DISTFILES+=	openmotif-2.1.30-3_MLI_jdk.tar.gz
 
-MAINTAINER=		p99dreyf@criens.u-psud.fr
+MAINTAINER=		manu@NetBSD.org
 COMMENT=		Libraries to run Linux binaries on NetBSD/powerpc (includes X11)
 
 BUILD_DEPENDS+=		rpm2pkg>=1.2:../../pkgtools/rpm2pkg
