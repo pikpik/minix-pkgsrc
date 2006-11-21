@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/09/03 06:53:48 xtraeme Exp $
+# $NetBSD: Makefile,v 1.39 2005/10/13 08:19:31 xtraeme Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -23,6 +23,7 @@ SUBDIR+=	linpack-bench
 SUBDIR+=	lmbench
 SUBDIR+=	nbench
 SUBDIR+=	netio
+SUBDIR+=	netperf
 SUBDIR+=	netpipe
 SUBDIR+=	nettest
 SUBDIR+=	nsieve
