@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/g95
+bin/f95
+bin/${MACHINE_GNU_PLATFORM}-g95
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/f951
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/libgcc.a
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/libf95.a
+share/doc/g95/INSTALL
+share/doc/g95/G95Manual.pdf
+@dirrm share/doc/g95
