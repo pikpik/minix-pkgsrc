@@ -1,4 +1,4 @@
-# $NetBSD: bin-install.mk,v 1.5 2006/10/03 11:07:05 rillig Exp $
+# $NetBSD: bin-install.mk,v 1.6 2006/11/03 08:01:04 joerg Exp $
 #
 
 # This file provides the following targets:
@@ -20,8 +20,12 @@
 
 # List of sites carrying binary pkgs. Variables "rel" and "arch" are
 # replaced with OS release ("1.5", ...) and architecture ("mipsel", ...)
+.if ${OPSYS} == "NetBSD"
 BINPKG_SITES?= \
 	ftp://ftp.NetBSD.org/pub/NetBSD/packages/$${rel}/$${arch}
+.else
+BINPKG_SITES?=
+.endif
 
 .PHONY: bin-install
 .PHONY: do-bin-install do-bin-install-from-source
