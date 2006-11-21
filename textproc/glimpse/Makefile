@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/04/22 09:22:15 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2006/06/26 16:23:36 minskim Exp $
 
 DISTNAME=	glimpse-4.18.0
 PKGREVISION=	1
@@ -16,6 +16,7 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 
 USE_TOOLS+=	gmake lex
 GNU_CONFIGURE=	yes
+MAKE_FLAGS=	mandir=${PREFIX}/${PKGMANDIR}/man1
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/glimpse
