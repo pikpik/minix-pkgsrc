@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:46:02 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/07/01 12:54:09 adam Exp $
 
 DISTNAME=	exiftags-1.00
 CATEGORIES=	graphics
@@ -12,6 +12,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_CONFIGURE=		yes
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
