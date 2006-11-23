@@ -7,5 +7,5 @@ COMMENT=		Full featured gecko-based browser
 MOZILLA_USE_GTK2=	# yes
 MOZILLA_USE_XFT=	YES
 
-.include "../../wip/seamonkey/Makefile-seamonkey.common"
+.include "../../www/seamonkey/Makefile-seamonkey.common"
 .include "../../mk/bsd.pkg.mk"
