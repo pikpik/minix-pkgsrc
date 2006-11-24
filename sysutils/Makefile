@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.378 2006/10/19 23:00:06 bouyer Exp $
+# $NetBSD: Makefile,v 1.379 2006/11/07 20:58:53 kristerw Exp $
 #
 
 COMMENT=	System utilities
@@ -188,6 +188,7 @@ SUBDIR+=	pstree
 SUBDIR+=	pv
 SUBDIR+=	pwgen
 SUBDIR+=	py-dbus
+SUBDIR+=	py-gnome-menus
 SUBDIR+=	qlogtools
 SUBDIR+=	radeontool
 SUBDIR+=	radmind
