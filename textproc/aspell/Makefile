@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2006/10/09 12:52:36 joerg Exp $
+# $NetBSD: Makefile,v 1.46 2006/11/05 17:02:18 joerg Exp $
 #
 
 DISTNAME=		aspell-0.60.4
@@ -20,6 +20,7 @@ USE_TOOLS+=		gmake
 USE_TOOLS+=		perl:run
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
+USE_PKGLOCALEDIR=	yes
 INFO_FILES=		# PLIST
 
 CONFIGURE_ARGS+=	--enable-doc-dir=${PREFIX}/share/doc/aspell
