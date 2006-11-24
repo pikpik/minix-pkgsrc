@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/10/07 08:50:41 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/11/05 13:11:39 rillig Exp $
 #
 
 DISTNAME=	aegis-4.22
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://aegis.sourceforge.net/
 
-MAINTAINER=	Matthew@Aldous.com
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://aegis.sourceforge.net/
 COMMENT=	Aegis is a transaction base software configuration management system
 
