@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/01/05 22:46:12 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2006/07/27 18:48:04 jlam Exp $
 
 DISTNAME=	thttpd-2.25b
 PKGREVISION=	5
@@ -8,7 +8,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${NETBSD_LOGO}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
-MAINTAINER=	mike@ethmoid.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.acme.com/software/thttpd/
 COMMENT=	Tiny/turbo/throttling HTTP server
 
