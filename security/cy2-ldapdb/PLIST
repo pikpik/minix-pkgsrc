@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/sasl2/libldapdb.la
