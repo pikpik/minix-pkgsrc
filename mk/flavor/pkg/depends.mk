@@ -1,4 +1,4 @@
-# $NetBSD: depends.mk,v 1.14 2006/10/09 08:57:39 joerg Exp $
+# $NetBSD: depends.mk,v 1.15 2006/11/26 11:51:30 rillig Exp $
 
 _DEPENDS_FILE=		${WRKDIR}/.depends
 _REDUCE_DEPENDS_CMD=	${SETENV} CAT=${CAT:Q}				\
@@ -52,7 +52,7 @@ ${_DEPENDS_FILE}:
 		${TEST} -n "$$dir" || exit 1;				\
 		${ECHO} "build	$$pattern	$$dir";			\
 	done >> ${.TARGET}
-	${RUN} ${_REDUCE_DEPENDS_CMD} ${DEPENDS:Q} > ${.TARGET}.tmp	\
+	${RUN} ${_REDUCE_DEPENDS_CMD} ${DEPENDS:Q} > ${.TARGET}.tmp
 	${RUN}								\
 	exec 0< ${.TARGET}.tmp;						\
 	while read dep; do						\
