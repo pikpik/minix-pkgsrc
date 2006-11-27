@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2006/11/19 19:03:56 shannonjr Exp $
+# $NetBSD: Makefile,v 1.4 2006/11/20 22:23:24 shannonjr Exp $
 #
 
 DISTNAME=		gnupg-2.0.0
 PKGNAME=		${DISTNAME:S/gnupg/gnupg2/}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/gnupg/
 EXTRACT_SUFX=		.tar.bz2
