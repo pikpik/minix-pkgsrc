@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2006/09/04 19:27:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.51 2006/10/14 08:14:23 wiz Exp $
 
 DISTNAME=	acroread	# Overridden below
 PKGNAME=	acroread-4.05
@@ -53,7 +53,7 @@ PLATFORM=	sparcsolaris
 . endif
 .include "../../emulators/suse_linux/Makefile.application"
 .elif ${OPSYS} == "SunOS"
-. if (${MACHINE_ARCH} == "i386")
+. if (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")
 DISTNAME=	sunx86-ar-405
 WRKSRC=		${WRKDIR}/SS86RS.install
 PLATFORM=	intelsolaris
