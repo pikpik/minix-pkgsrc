@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.6 2006/11/27 16:43:58 joerg Exp $
+
+Include sys/types.h before sys/stat.h for DragonFly.
 
 --- src/gmt.h.orig	2006-11-27 16:01:49.000000000 +0000
 +++ src/gmt.h
