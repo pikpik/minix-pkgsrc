@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/01 08:24:13 ghen Exp $
 
-DISTNAME=	easyh10-1.4
+DISTNAME=	easyh10-1.5
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=easyh10/}
 
