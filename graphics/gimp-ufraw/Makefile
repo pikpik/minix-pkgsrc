@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/09/16 12:20:37 jmmv Exp $
+# $NetBSD: Makefile,v 1.33 2006/11/23 00:31:06 gdt Exp $
 
 DISTNAME=		ufraw-0.10
 PKGNAME=		gimp-${DISTNAME}
@@ -11,7 +11,7 @@ COMMENT=		GIMP plug-in for raw digicam import
 
 GNU_CONFIGURE=		yes
 
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_TOOLS+=		perl:run pod2man
 USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
