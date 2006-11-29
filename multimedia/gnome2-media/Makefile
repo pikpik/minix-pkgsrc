@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/09/15 15:23:00 jmmv Exp $
+# $NetBSD: Makefile,v 1.42 2006/09/16 12:20:34 jmmv Exp $
 
 DISTNAME=		gnome-media-2.16.1
 PKGREVISION=		1
@@ -29,7 +29,6 @@ CONFIGURE_ENV+=		CDROM_HOST="bsd"
 
 GCONF2_SCHEMAS=		CDDB-Slave2.schemas
 GCONF2_SCHEMAS+=	gnome-audio-profiles.schemas
-GCONF2_SCHEMAS+=	gnome-cd.schemas
 GCONF2_SCHEMAS+=	gnome-sound-recorder.schemas
 GCONF2_SCHEMAS+=	gnome-volume-control.schemas
 
