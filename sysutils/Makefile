@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.379 2006/11/07 20:58:53 kristerw Exp $
+# $NetBSD: Makefile,v 1.380 2006/11/24 12:57:25 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -43,6 +43,7 @@ SUBDIR+=	checkpassword-pam
 SUBDIR+=	checkperms
 SUBDIR+=	clex
 SUBDIR+=	coreutils
+SUBDIR+=	cpmtools
 SUBDIR+=	cpogm
 SUBDIR+=	cpuburn
 SUBDIR+=	cpuid
