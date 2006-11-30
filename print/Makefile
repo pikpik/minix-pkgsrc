@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2006/08/10 03:31:51 minskim Exp $
+# $NetBSD: Makefile,v 1.161 2006/08/10 03:45:32 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -27,6 +27,7 @@ SUBDIR+=	cups
 SUBDIR+=	dvidvi
 SUBDIR+=	dvipdfmx
 SUBDIR+=	enscript
+SUBDIR+=	epdfview
 SUBDIR+=	epstool
 SUBDIR+=	evince
 SUBDIR+=	evince-nautilus
