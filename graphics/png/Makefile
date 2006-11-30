@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.84 2006/11/18 14:26:19 taca Exp $
+# $NetBSD: Makefile,v 1.85 2006/11/28 21:58:17 drochner Exp $
 
 DISTNAME=	libpng-1.2.14
 PKGNAME=	${DISTNAME:S/lib//}
+# temporary, distfile was changed after release
+DIST_SUBDIR=	libpng-1.2.14-20061130
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
 		http://www.libpng.org/pub/png/src/ \
