@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	2006-11-30 17:57:09.000000000 +0000
++++ Makefile.in
+@@ -63,7 +63,7 @@ all depends: $(config_files) $(config_he
+ clean:
+ 	$(make_subdirs)
+ 
+-install: $(config_files) install-doc install-catdoc
++install: $(config_files) install-doc
+ 	$(make_subdirs)
+ 
+ 
