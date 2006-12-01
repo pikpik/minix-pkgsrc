@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.216 2006/11/01 16:39:19 bad Exp $
+# $NetBSD: Makefile,v 1.217 2006/11/07 21:04:13 kristerw Exp $
 #
 
 COMMENT=	Databases
@@ -139,6 +139,7 @@ SUBDIR+=	postgresql81-plperl
 SUBDIR+=	postgresql81-plpython
 SUBDIR+=	postgresql81-pltcl
 SUBDIR+=	postgresql81-server
+SUBDIR+=	postgresql81-tsearch2
 SUBDIR+=	pxtools
 SUBDIR+=	py-IndexedCatalog
 SUBDIR+=	py-PgSQL
