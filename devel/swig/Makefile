@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2006/05/21 16:34:19 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/06/18 10:45:06 rillig Exp $
 
-DISTNAME=	swig-1.3.29
+DISTNAME=	swig-1.3.31
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 
