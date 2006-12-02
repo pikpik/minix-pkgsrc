@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:30 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/06/08 15:56:43 minskim Exp $
 #
 
 VERSION=	3.1.1
@@ -18,6 +18,6 @@ USE_TOOLS+=	gmake lex
 GNU_CONFIGURE=  YES
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/doc/splint.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/doc/splint.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
