@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/06/08 03:56:21 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2006/11/14 13:55:34 joerg Exp $
 
 DISTNAME=	libiconv-1.10
 PKGREVISION=	3
@@ -16,6 +16,7 @@ PATCH_DIST_STRIP=	-p1
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_LANGUAGES+=		c99
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
@@ -31,12 +32,6 @@ EGDIR=			${PREFIX}/share/examples/libiconv
 REQD_FILES=		${EGDIR}/charset.alias ${PREFIX}/lib/charset.alias
 
 MAKE_ENV+=		PAX=${PAX:Q}
-
-.include "../../mk/compiler.mk"
-
-.if !empty(PKGSRC_COMPILER:Mmipspro*)
-CFLAGS+=	-c99
-.endif
 
 # remove any existing charset.alias; if it already exists, libiconv does
 # not overwrite it, and older versions of libiconv wrote incorrect
