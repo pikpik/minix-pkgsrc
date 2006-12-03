@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2006/10/17 09:44:06 markd Exp $
+# $NetBSD$
 
-KOFFICE_LANGUAGE=	Estonian
-KOFFICE_LANGCODE=       et
+KOFFICE_LANGUAGE=	French
+KOFFICE_LANGCODE=       fr
 
 DEPENDS+=	koffice-[0-9]*:../../misc/koffice
 
