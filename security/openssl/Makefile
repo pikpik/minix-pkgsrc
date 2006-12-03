@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2006/09/07 09:44:31 adrianp Exp $
+# $NetBSD: Makefile,v 1.117 2006/09/30 04:20:24 taca Exp $
 
 OPENSSL_SNAPSHOT?=	# empty
 OPENSSL_STABLE?=	# empty
@@ -71,7 +71,11 @@ CONFIGURE_ARGS+=	solaris-${OPENSSL_MACHINE_ARCH}-cc
 CONFIGURE_ARGS+=	no-asm
 .  if ${ABI} == "64"
 CONFIGURE_SCRIPT=	./Configure
+.    if !empty(CC_VERSION:Mgcc*)
+CONFIGURE_ARGS+=	irix64-mips4-gcc
+.    else
 CONFIGURE_ARGS+=	irix64-mips4-cc
+.    endif
 .  endif
 .endif
 
