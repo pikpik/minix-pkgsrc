@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/07/07 15:49:33 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2006/10/13 12:51:27 tron Exp $
 
 DISTNAME=	mjpegtools-1.8.0
 PKGREVISION=	6
@@ -27,6 +27,8 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-libquicktime
 CONFIGURE_ARGS+=	--enable-large-file
 CONFIGURE_ARGS+=	--with-lame-includes=${BUILDLINK_PREFIX.lame}
+
+BUILDLINK_TRANSFORM+=	rm:-laudio rm:-laa
 
 .include "options.mk"
 
