@@ -1,0 +1,13 @@
+@comment $NetBSD$
+bin/gnash
+bin/gparser
+bin/gprocessor
+lib/libgnashamf.la
+lib/libgnashbackend.la
+lib/libgnashbase.la
+lib/libgnashgeo.la
+lib/libgnashgui.la
+lib/libgnashserver.la
+man/man1/gnash.1
+share/gnash/gnash_128_96.ico
+@dirrm share/gnash
