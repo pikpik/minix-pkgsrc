@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2006/12/03 12:18:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.36 2006/12/04 13:55:31 tron Exp $
 #
 
 DISTNAME=	avidemux_2.3.0
 PKGNAME=	${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.berlios.de/avidemux/
 
@@ -51,10 +52,10 @@ post-configure:
 .include "../../audio/liba52/buildlink3.mk"
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
+.include "../../devel/SDL/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../lang/spidermonkey/buildlink3.mk"
-.include "../../multimedia/mjpegtools/buildlink3.mk"
 .include "../../multimedia/xvidcore/buildlink3.mk"
 .include "../../multimedia/x264-devel/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
