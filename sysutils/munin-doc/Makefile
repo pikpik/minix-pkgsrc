@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/11/12 02:03:39 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2006/11/12 02:04:59 rillig Exp $
 #
 
 DISTNAME=	${PKGNAME:S:-doc-:_:}
-PKGNAME=	munin-doc-1.3.1
+PKGNAME=	munin-doc-1.3.2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=munin/}
 
