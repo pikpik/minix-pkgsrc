@@ -1,7 +1,10 @@
+@comment $NetBSD$
 @dirrm ${RUBY_LIBDIR}/bigdecimal
 @dirrm ${RUBY_LIBDIR}/cgi/session
 @dirrm ${RUBY_LIBDIR}/cgi
 @dirrm ${RUBY_LIBDIR}/date
+@dirrm ${RUBY_LIBDIR}/digest/digest
+@dirrm ${RUBY_LIBDIR}/digest
 @dirrm ${RUBY_LIBDIR}/dl
 @dirrm ${RUBY_LIBDIR}/drb
 @dirrm ${RUBY_ARCHLIBDIR}/digest
