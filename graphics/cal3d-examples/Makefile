@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:28 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/11/19 23:11:18 rillig Exp $
 #
 
 PKGNAME=		cal3d-examples-${CAL3D_VERSION}
@@ -33,6 +33,7 @@ pre-configure:
 	cd ${WRKSRC}/examples/cally && ./autogen.sh
 	cd ${WRKSRC}/examples/miniviewer_gl && ./autogen.sh
 	${CHMOD} 755 ${WRKSRC}/tools/converter/autogen.sh
+	${CHMOD} 755 ${WRKSRC}/tools/converter/install-sh
 	cd ${WRKSRC}/tools/converter && ./autogen.sh
 
 SUBST_CLASSES+=		c3
