@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/11/20 22:23:24 shannonjr Exp $
+# $NetBSD: Makefile,v 1.5 2006/11/27 20:38:46 wiz Exp $
 #
 
 DISTNAME=		gnupg-2.0.0
@@ -24,6 +24,7 @@ INFO_FILES=		yes
 USE_TOOLS+=		gmake
 USE_TOOLS+=		autoconf
 USE_TOOLS+=		automake
+USE_TOOLS+=		gettext
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
