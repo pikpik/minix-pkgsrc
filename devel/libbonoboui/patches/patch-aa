@@ -1,0 +1,14 @@
+$NetBSD$
+
+http://bugzilla.gnome.org/show_bug.cgi?id=382692
+
+--- bonobo/bonobo-canvas-item.c.orig	2006-04-03 02:18:03.000000000 -0700
++++ bonobo/bonobo-canvas-item.c
+@@ -27,6 +27,7 @@
+ #include <gdk/gdkx.h>
+ #elif defined (GDK_WINDOWING_WIN32)
+ #include <gdk/gdkwin32.h>
++#elif defined (GDK_WINDOWING_QUARTZ)
+ #else
+ #error Port to this GDK backend
+ #endif
