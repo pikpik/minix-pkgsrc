@@ -1,0 +1,5 @@
+@comment $NetBSD$
+@dirrm share/fd
+@dirrm share/examples/fd
+@dirrm share/doc/fd/ja
+@dirrm share/doc/fd
