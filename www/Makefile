@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.487 2006/11/30 11:48:25 ghen Exp $
+# $NetBSD: Makefile,v 1.488 2006/12/04 16:06:16 xtraeme Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -53,6 +53,7 @@ SUBDIR+=	ap2-ruby
 SUBDIR+=	ap2-subversion
 SUBDIR+=	ap2-suphp
 SUBDIR+=	ap2-transform
+SUBDIR+=	ap2-xslt2
 SUBDIR+=	apache
 SUBDIR+=	apache-tomcat55
 SUBDIR+=	apache2
