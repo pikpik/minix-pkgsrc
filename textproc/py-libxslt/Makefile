@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/10/30 21:04:22 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2006/11/05 08:37:04 rillig Exp $
 
 DISTNAME=	libxslt-1.1.18
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -13,6 +13,7 @@ COMMENT=	Python wrapper for libxslt
 DEPENDS+=	${PYPKGPREFIX}-libxml2>=2.6.8:../../textproc/py-libxml2
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/python
+PYTHON_VERSIONS_ACCEPTED=	24 23
 PYDISTUTILSPKG=	YES
 PYBINMODULE=	YES
 NO_CONFIGURE=	YES
