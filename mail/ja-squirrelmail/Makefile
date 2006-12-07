@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/11/10 17:37:13 tv Exp $
+# $NetBSD: Makefile,v 1.35 2006/12/06 15:26:26 taca Exp $
 
 DISTNAME=	squirrelmail-1.4.9a
 PKGNAME=	ja-${DISTNAME}
@@ -83,7 +83,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC:Q}/data/index.php ${USER_PREFS_DIR:Q}/
 	${INSTALL_DATA} ${WRKSRC:Q}/data/.htaccess ${USER_PREFS_DIR:Q}/
 	${MV} ${PREFIX}/share/squirrelmail/contrib/conf.pl.8 \
-	  ${PKGMANDIR}/man8/squirrelmail-conf.pl.8
+	  ${PREFIX}/man/man8/squirrelmail-conf.pl.8
 
 .include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"
