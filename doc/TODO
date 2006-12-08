@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.5749 2006/12/08 16:17:58 obache Exp $
+$NetBSD: TODO,v 1.5750 2006/12/08 17:11:30 xtraeme Exp $
 
 Suggested new packages
 ======================
@@ -742,7 +742,6 @@ Suggested package updates
 	o p5-DBD-mysql-3.0008
 	o p5-DBIx-ContextualFetch-1.03
 	o p5-DBIx-SearchBuilder-1.45
-	o p5-DateTime-Set-0.25
 	o p5-Devel-SmallProf-2.00_03
 	o p5-Device-Gsm-1.37
 	o p5-Device-Modem-1.43
