@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:18 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:57 jlam Exp $
 #
 
 DISTNAME=	mod_transform-0.4.0
@@ -15,8 +15,10 @@ USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
+PKG_APACHE_ACCEPTED=	apache2 apache22
+
 CONFIGURE_ARGS+=	--with-apxs=${APXS:Q}
 
 .include "../../textproc/libxslt/buildlink3.mk"
-.include "../../www/apache2/buildlink3.mk"
+.include "../../mk/apache.mk"
 .include "../../mk/bsd.pkg.mk"

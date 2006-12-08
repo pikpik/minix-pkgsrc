@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/13 17:34:16 adrianp Exp $
 
 DISTNAME=	mod_auth_xradius-0.4.6
 PKGNAME=	ap2-auth-xradius-0.4.6
@@ -13,9 +13,11 @@ COMMENT=	Module to allow apache2 authentication against a RADIUS server
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
+PKG_APACHE_ACCEPTED=	apache2 apache22
+
 CONFIGURE_ARGS+=	--with-apxs=${PREFIX}/sbin/apxs
 
 BUILDLINK_API_DEPENDS.apache+=	apache>=2.0.42
 
-.include "../../www/apache2/buildlink3.mk"
+.include "../../mk/apache.mk"
 .include "../../mk/bsd.pkg.mk"
