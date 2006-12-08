@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2006/11/05 17:35:58 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2006/11/13 18:15:14 drochner Exp $
 
 DISTNAME=	gnutls-1.4.5
 CATEGORIES=	security devel
@@ -17,6 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
+USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
