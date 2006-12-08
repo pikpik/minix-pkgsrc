@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pngcheck
+share/doc/pngcheck/README
+@dirrm share/doc/pngcheck
