@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2006/06/08 16:03:13 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2006/07/22 04:46:16 rillig Exp $
 
 DISTNAME=	grap-1.30
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lunabase.org/~faber/Vault/software/grap/
 
