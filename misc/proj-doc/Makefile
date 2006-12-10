@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:12 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/10/24 14:24:40 gdt Exp $
 
 DISTNAME=		proj-pdf-docs
-PKGNAME=		proj-doc-1.0
+EXTRACT_SUFX=		.zip
+PKGNAME=		proj-doc-1.1
 CATEGORIES=		misc geography
 MASTER_SITES=		ftp://ftp.remotesensing.org/pub/proj/
 
