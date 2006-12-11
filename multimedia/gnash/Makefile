@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/12/05 15:15:24 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2006/12/06 00:13:05 xtraeme Exp $
 #
 
 DISTNAME=		gnash-0.7.2
@@ -20,9 +20,9 @@ USE_TOOLS+=		bash msgfmt pkg-config
 # /bin/sh finds a syntax error without line number
 CONFIG_SHELL=		${LOCALBASE}/bin/bash
 
-PLIST_SRC+=		${PKGDIR}/PLIST
-
 .include "options.mk"
+
+PLIST_SRC+=		${PKGDIR}/PLIST
 
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../audio/libmad/buildlink3.mk"
