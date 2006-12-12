@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.6 2006/11/13 15:16:20 drochner Exp $
+
+https://bugs.freedesktop.org/show_bug.cgi?id=9280
 
 --- tools/run-with-tmp-session-bus.sh.orig	2006-10-01 05:18:47.000000000 +0200
 +++ tools/run-with-tmp-session-bus.sh
