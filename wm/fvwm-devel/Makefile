@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/09/12 05:27:50 martti Exp $
+# $NetBSD: Makefile,v 1.17 2006/11/26 13:32:22 adrianp Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
-PKGREVISION=	1
+#PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.fvwm.org/
 COMMENT=	Development version of X11 Virtual window manager
 
 CONFLICTS=	fvwm1-[0-9]* fvwm2-[0-9]*
-FVWM_VER=	2.5.18
+FVWM_VER=	2.5.19
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
