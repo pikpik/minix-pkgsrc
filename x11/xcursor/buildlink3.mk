@@ -1,6 +1,6 @@
-# $NetBSD: buildlink3.mk,v 1.20 2006/07/11 14:42:04 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2006/07/13 00:57:32 joerg Exp $
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.fast.prefs.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XCURSOR_BUILDLINK3_MK:=	${XCURSOR_BUILDLINK3_MK}+

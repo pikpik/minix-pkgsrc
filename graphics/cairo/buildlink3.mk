@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.23 2006/08/10 13:50:37 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.24 2006/11/06 09:46:41 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 CAIRO_BUILDLINK3_MK:=	${CAIRO_BUILDLINK3_MK}+
@@ -19,7 +19,7 @@ BUILDLINK_PKGSRCDIR.cairo?=	../../graphics/cairo
 BUILDLINK_API_DEPENDS.Xrender+=	Xrender>=0.8
 .endif	# CAIRO_BUILDLINK3_MK
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.fast.prefs.mk"
 
 .if !defined(PKG_BUILD_OPTIONS.cairo)
 PKG_BUILD_OPTIONS.cairo!= \

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/12/05 18:04:18 tron Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/12/09 00:22:00 xtraeme Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SPIDERMONKEY_BUILDLINK3_MK:=	${SPIDERMONKEY_BUILDLINK3_MK}+
@@ -11,7 +11,7 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nspidermonkey}
 BUILDLINK_PACKAGES+=	spidermonkey
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}spidermonkey
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.fast.prefs.mk"
 
 .if !empty(SPIDERMONKEY_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.spidermonkey+=	spidermonkey>=1.5

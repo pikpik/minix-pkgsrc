@@ -1,9 +1,9 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/07/08 22:39:11 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:45 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBLTDL_BUILDLINK3_MK:=	${LIBLTDL_BUILDLINK3_MK}+
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.fast.prefs.mk"
 .if ${OPSYS} == "NetBSD"
 .  if !exists(/usr/libexec/ld.so) && !exists(/usr/libexec/ld.elf_so)
 _SKIP_LIBLTDL=		yes

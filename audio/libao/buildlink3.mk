@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 22:39:00 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/07/08 23:10:36 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBAO_BUILDLINK3_MK:=	${LIBAO_BUILDLINK3_MK}+
@@ -17,7 +17,7 @@ BUILDLINK_ABI_DEPENDS.libao+=	libao>=0.8.6nb3
 BUILDLINK_PKGSRCDIR.libao?=	../../audio/libao
 
 .  if !defined(_LIBAO_BUILDING_PLUGIN)
-.    include "../../mk/bsd.prefs.mk"
+.    include "../../mk/bsd.fast.prefs.mk"
 .    if ${OPSYS} != "Darwin" && ${OPSYS} != "Interix" && ${OPSYS} != "SunOS"
 _LIBAO_DEFAULT_PLUGIN=		oss
 .    elif ${OPSYS} == "NetBSD" || ${OPSYS} == "SunOS"
