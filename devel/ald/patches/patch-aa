@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- libDebug/configure.orig	2006-12-12 14:34:52.000000000 +0000
++++ libDebug/configure
+@@ -1813,7 +1813,7 @@ esac
+ 
+ 
+ case "${host_os}" in
+-  *freebsd*)
++  *freebsd*|*dragonfly*)
+     os_makefile_frag="freebsd-${text_frag}"
+ 
+ cat >>confdefs.h <<\_ACEOF
