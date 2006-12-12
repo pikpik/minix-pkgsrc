@@ -1,4 +1,4 @@
-# $NetBSD: Makefile$
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/07 20:30:48 plunky Exp $
 
 DISTNAME=		bcmfw-1.0
 CATEGORIES=		sysutils
@@ -10,6 +10,12 @@ SITES.bluez-firmware-1.2.tar.gz= \
 
 MAINTAINER=		plunky@rya-online.net
 COMMENT=		Broadcom 2033 Bluetooth Firmware Loader
+
+LICENSE=		bcmfw-license
+
+RESTRICTED=		No clear permission redistribute firmware
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 ONLY_FOR_PLATFORM=	NetBSD-[4-9].*-*
 
