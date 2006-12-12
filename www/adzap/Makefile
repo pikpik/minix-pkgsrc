@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2006/04/17 08:56:08 simonb Exp $
+# $NetBSD: Makefile,v 1.58 2006/07/12 02:31:00 simonb Exp $
 #
 
 DISTNAME=	adzap-20060424
@@ -14,6 +14,8 @@ COMMENT=	Filter out animated ad banners from web pages
 WRKSRC=		${WRKDIR}/adzap
 NO_BUILD=	yes
 USE_TOOLS+=	perl:run
+
+CHECK_PORTABILITY_SKIP=	scripts/update-zapper.damien
 
 INSTALLATION_DIRS=	libexec
 
