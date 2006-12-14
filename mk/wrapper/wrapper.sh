@@ -1,6 +1,6 @@
 #! @WRAPPER_SHELL@
 #
-# $NetBSD: wrapper.sh,v 1.9 2006/11/26 14:42:17 rillig Exp $
+# $NetBSD: wrapper.sh,v 1.10 2006/12/09 12:11:28 rillig Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -79,6 +79,10 @@ esac
 msg_log "$wrapperlog" "[*] $0 $*"
 
 cmd="@WRAPPEE@"
+case "$*" in
+*--wrappee-name*) $echo $cmd ; exit ;;
+esac
+
 libs=""
 rellpath=""
 do_transform=yes
