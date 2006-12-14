@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/03/04 21:28:58 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/12/12 20:27:15 wiz Exp $
 #
 
 DISTNAME=	streamripper-1.61.27
@@ -16,5 +16,6 @@ PTHREAD_OPTS+=	require
 .include "options.mk"
 
 .include "../../audio/libmad/buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
