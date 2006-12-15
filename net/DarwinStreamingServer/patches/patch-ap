@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- CommonUtilitiesLib/OSRef.h.orig	2006-12-14 19:43:43.000000000 +0100
++++ CommonUtilitiesLib/OSRef.h
+@@ -56,6 +56,9 @@ class OSRefTableUtils
+         friend class OSRefKey;
+ };
+ 
++// defined below
++class OSRefKey;
++
+ class OSRef
+ {
+     public:
