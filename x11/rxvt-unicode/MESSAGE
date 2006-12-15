@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD$
+
+If your system does not have a rxvt-unicode termcap entry, you may consider
+setting the X resource
+
+	URxvt.termName: rxvt
+
+or recompile this pkg with the option rxvt-term defined.
+===========================================================================
