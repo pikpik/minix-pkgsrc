@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2006/08/06 05:20:40 kristerw Exp $
+# $NetBSD: Makefile,v 1.13 2006/08/07 23:21:16 wiz Exp $
 #
 
-DISTNAME=		rxvt-unicode-7.9
+DISTNAME=		rxvt-unicode-8.1
 CATEGORIES=		x11
 MASTER_SITES=		http://dist.schmorp.de/rxvt-unicode/ \
 			http://dist.schmorp.de/rxvt-unicode/Attic/
@@ -26,8 +26,8 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/rxvt-unicode
 	${INSTALL_DATA} ${WRKSRC}/README.FAQ ${PREFIX}/share/doc/rxvt-unicode
 
-.include "../../fonts/Xft2/buildlink3.mk"
+.include "options.mk"
+
 .include "../../graphics/xpm/buildlink3.mk"
-.include "../../lang/perl5/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
