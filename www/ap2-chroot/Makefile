@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/02/05 23:11:18 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2006/12/08 23:34:11 xtraeme Exp $
 
 DISTNAME=	mod_chroot-0.3
 PKGNAME=	ap2-chroot-0.3
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	www security
 MASTER_SITES=	http://core.segfault.pl/~hobbit/mod_chroot/dist/
 
-MAINTAINER=	ben@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://core.segfault.pl/~hobbit/mod_chroot/
 COMMENT=	Module to easily run Apache in a chroot environment
 

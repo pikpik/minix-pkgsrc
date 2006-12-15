@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:11:02 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/04/22 09:22:15 rillig Exp $
 #
 
 DISTNAME=		helpdeco-2.1.3
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=helpdeco/}
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/helpdeco/
 COMMENT=		Windows .hlp to .rtf converter
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/12 20:21:34 rillig Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/21 22:34:08 ben Exp $
 #
 
 DISTNAME=		manual-html-4.23
@@ -7,7 +7,7 @@ CATEGORIES=		audio
 MASTER_SITES=		ftp://ftp.cs.bath.ac.uk/pub/dream/documentation/manuals/ \
 			http://www.kevindumpscore.com/download/
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.csounds.com/
 COMMENT=		Csound4 Reference Manual
 

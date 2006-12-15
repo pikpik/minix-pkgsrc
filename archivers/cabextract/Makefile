@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2006/09/23 13:02:17 ben Exp $
+# $NetBSD: Makefile,v 1.18 2006/11/02 17:57:48 joerg Exp $
 #
 
 DISTNAME=		cabextract-1.2
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.kyz.uklinux.net/downloads/
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.kyz.uklinux.net/cabextract.php
 COMMENT=		Microsoft cabinet (.CAB) file extractor
 

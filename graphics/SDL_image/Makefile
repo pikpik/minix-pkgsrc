@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2006/04/17 13:45:58 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/12 16:25:22 wiz Exp $
 
 DISTNAME=	SDL_image-1.2.5
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 
-MAINTAINER=	ben@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.libsdl.org/projects/SDL_image/
 COMMENT=	Load images as SDL surfaces
 

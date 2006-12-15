@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/16 06:57:46 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/11/08 03:38:34 tv Exp $
 #
 
 DISTNAME=		ETM-1.09
@@ -6,7 +6,7 @@ PKGNAME=		libetm-1.09
 CATEGORIES=		devel
 MASTER_SITES=		http://www.snake.net/software/ETM/
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Exception and termination manager
 

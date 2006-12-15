@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/21 22:46:22 ben Exp $
+# $NetBSD: Makefile,v 1.2 2006/09/04 14:17:51 ben Exp $
 #
 
 DISTNAME=		Csound${CSOUND_VERSION}_src
@@ -7,7 +7,7 @@ CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=csound/}
 WRKSRC=			${WRKDIR}/Csound${CSOUND_VERSION}
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/csound/
 COMMENT=		Software synthesizer and sequencer
 

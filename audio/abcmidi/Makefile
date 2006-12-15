@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/05/16 13:41:57 ben Exp $
+# $NetBSD: Makefile,v 1.3 2006/09/09 02:41:54 obache Exp $
 #
 
 DISTNAME=	abcMIDI-${ABCMIDIVER}
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.zip
 WRKSRC=		${WRKDIR}/abcmidi
 MAKE_FILE=	makefile
 
-MAINTAINER=	ben@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://abc.sourceforge.net/abcMIDI/
 COMMENT=	Music utilities for abc
 

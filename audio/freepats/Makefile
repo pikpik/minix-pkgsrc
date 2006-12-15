@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/06/16 06:57:38 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/05/13 13:38:34 wiz Exp $
 #
 
 DISTNAME=	freepats-20060219
@@ -6,7 +6,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://freepats.opensrc.org/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	ben@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://freepats.opensrc.org/
 COMMENT=	Free patches (audio samples) for TiMidity
 

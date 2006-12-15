@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/17 03:50:37 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/07/16 01:19:24 jlam Exp $
 #
 
 DISTNAME=		troffcvt-1.04
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.snake.net/software/troffcvt/
 
-MAINTAINER=		ben@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Troff/groff to RTF/HTML/TEXT converter
 
