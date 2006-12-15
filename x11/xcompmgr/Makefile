@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/04/18 19:23:47 reed Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/18 19:46:17 reed Exp $
 #
 
 DISTNAME=	xcompmgr-1.1.1
@@ -20,7 +20,7 @@ GNU_CONFIGURE=	yes
 PKG_SKIP_REASON+=	"This package is exclusively for X.org."
 .endif
 
-.include "../../x11/Xcomposite/buildlink3.mk"
-.include "../../x11/Xrender/buildlink3.mk"
 .include "../../x11/compositeproto/buildlink3.mk"
+.include "../../x11/libXcomposite/buildlink3.mk"
+.include "../../x11/libXrender/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

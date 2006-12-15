@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/08/06 05:20:40 kristerw Exp $
+# $NetBSD: Makefile,v 1.35 2006/10/04 19:38:05 rillig Exp $
 
 COMMENT=		Small, fast and light-weight window manager
 
@@ -9,6 +9,6 @@ CONFIGURE_ARGS+=	--with-imlib=no
 CONFIGURE_ARGS+=	--with-xpm=${BUILDLINK_PREFIX.xpm}
 
 .include "Makefile.common"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

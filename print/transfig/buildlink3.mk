@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/07/08 22:39:35 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:11:05 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 TRANSFIG_BUILDLINK3_MK:=	${TRANSFIG_BUILDLINK3_MK}+
@@ -18,6 +18,6 @@ BUILDLINK_PKGSRCDIR.transfig?=	../../print/transfig
 .endif	# TRANSFIG_BUILDLINK3_MK
 
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

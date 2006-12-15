@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/05/15 20:21:38 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/06/26 08:56:37 rillig Exp $
 
 DISTNAME=		Maelstrom-1.4.3-L2.0.6-src.tar.gz
 PKGNAME=		maelstrom-x11-2.0.6
@@ -43,6 +43,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.* ${PREFIX}/share/maelstrom
 	${INSTALL_PROGRAM} ${WRKSRC}/netplayd/netplayd ${PREFIX}/bin/Maelstrom_netplayd
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

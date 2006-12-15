@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2005/04/11 21:48:04 tv Exp $
+# $NetBSD: Makefile,v 1.23 2006/02/05 23:11:31 joerg Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
@@ -27,5 +27,5 @@ post-install:
 	${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
 	cd ${PREFIX} && ${LS} lib/libXaw3d* >> ${PLIST_SRC}
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

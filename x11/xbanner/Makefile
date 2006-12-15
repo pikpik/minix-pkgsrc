@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/17 03:50:44 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:45 joerg Exp $
 
 DISTNAME=		XBanner1.31
 PKGNAME=		xbanner-1.31
@@ -31,5 +31,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/samples/XBanner.ad			\
 		${PREFIX}/lib/X11/app-defaults/XBanner
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

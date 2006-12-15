@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 22:39:48 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 23:11:16 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 QT4_LIBS_BUILDLINK3_MK:=	${QT4_LIBS_BUILDLINK3_MK}+
@@ -25,14 +25,14 @@ BUILDLINK_PASSTHRU_DIRS+=	${QTDIR}
 
 PTHREAD_OPTS+=	require
 
-.include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../x11/Xrandr/buildlink3.mk"
-.include "../../x11/xcursor/buildlink3.mk"
+.include "../../x11/libXcursor/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
+.include "../../x11/libXrandr/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
 .if !defined(BUILD_QT4)

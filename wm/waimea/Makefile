@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/05/11 19:28:52 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2006/10/04 22:02:29 wiz Exp $
 #
 
 DISTNAME=	waimea-0.4.0
@@ -35,7 +35,7 @@ REPLACE_PERL = \
 	data/scripts/procinfo.pl \
 	data/scripts/stylesdir.pl.in
 
-.include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/imlib2/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

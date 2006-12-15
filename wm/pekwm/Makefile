@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/07/22 04:46:19 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/10/14 08:24:24 wiz Exp $
 #
 
 DISTNAME=	pekwm-0.1.5
@@ -33,9 +33,9 @@ CONF_FILES=
 CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
 
-.include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:11 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:53 jlam Exp $
 #
 
 DISTNAME=	wmtime-1.0b2
@@ -18,5 +18,5 @@ BUILD_DIRS=	${CONFIGURE_DIRS}
 post-extract:
 	${CP} ${WRKSRC}/Imakefile ${WRKSRC}/wmtime/Imakefile
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

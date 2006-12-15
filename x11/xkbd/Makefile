@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/01 18:03:32 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:47 joerg Exp $
 #
 
 DISTNAME=	xkbd-0.8.5
@@ -14,5 +14,5 @@ CONFIGURE_ARGS+=--enable-xpm
 
 GNU_CONFIGURE=	YES
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

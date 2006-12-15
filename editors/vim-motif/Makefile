@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/05/09 06:36:48 martti Exp $
+# $NetBSD: Makefile,v 1.23 2006/07/18 10:27:16 martti Exp $
 
 PKGNAME=		vim-motif-${VIM_VERSION}.${VIM_PATCHLEVEL}
 #PKGREVISION=		1
@@ -31,7 +31,7 @@ post-install:
 .endfor
 
 .include "../../devel/ncurses/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

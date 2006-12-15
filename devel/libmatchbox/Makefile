@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/04/17 13:46:01 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/10/16 10:48:35 obache Exp $
 #
 
 DISTNAME=	libmatchbox-1.9
@@ -13,8 +13,8 @@ USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
 
-.include "../../fonts/Xft2/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/04/17 13:46:49 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/12/12 13:59:15 joerg Exp $
 
 DISTNAME=	AfterStep-1.8.11
 PKGNAME=	${DISTNAME:S/AfterStep/afterstep/}
@@ -41,5 +41,5 @@ pre-configure:
 .include "../../audio/rplay/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

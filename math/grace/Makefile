@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/04/17 13:46:39 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2006/07/21 05:35:39 rillig Exp $
 #
 
 DISTNAME=	grace-5.1.14
@@ -32,10 +32,10 @@ post-install:
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../math/fftw2/buildlink3.mk"
 .include "../../print/pdflib/buildlink3.mk"
 .include "../../x11/Xbae/buildlink3.mk"
 .include "../../x11/XmHTML/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

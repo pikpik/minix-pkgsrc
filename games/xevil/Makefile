@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/05/15 21:10:41 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/09/09 02:42:01 obache Exp $
 
 DISTNAME=	xevilsrc2.02r2
 PKGNAME=	xevil-2.02
@@ -32,5 +32,5 @@ SUBST_STAGE.uname=	pre-configure
 SUBST_FILES.uname=	cmn/utils.cpp
 SUBST_SED.uname=	-e 's,@UNAME@,${UNAME},g'
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

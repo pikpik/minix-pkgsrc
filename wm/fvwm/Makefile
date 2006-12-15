@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/11/26 13:32:43 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2006/12/12 06:57:59 martti Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
 #PKGREVISION=	1
@@ -77,5 +77,5 @@ CONFIGURE_ARGS+=	--without-gtk-prefix
 .endif
 
 .include "../../devel/readline/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2005/10/18 20:00:00 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2006/02/05 23:11:12 joerg Exp $
 #
 
 DISTNAME=	ctwm-3.7
@@ -37,6 +37,6 @@ pre-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${EXAMPLEDIR}
 .endfor
 
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

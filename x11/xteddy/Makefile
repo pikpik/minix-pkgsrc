@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/13 22:53:00 hubertf Exp $
+# $NetBSD: Makefile,v 1.16 2006/10/04 22:06:57 wiz Exp $
 
 DISTNAME=	xteddy-1.1
 PKGREVISION=	1
@@ -15,5 +15,5 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy
 	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy/pixmaps
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

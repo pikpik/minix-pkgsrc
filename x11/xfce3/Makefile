@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/13 18:23:44 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/17 13:47:01 wiz Exp $
 
 DISTNAME=		xfce-3.8.18
 PKGREVISION=		8
@@ -38,8 +38,8 @@ CONFIGURE_ARGS+=	--disable-audiofile
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/imlib/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

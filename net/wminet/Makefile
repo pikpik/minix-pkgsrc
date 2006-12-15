@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:32 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/04 21:53:18 wiz Exp $
 
 DISTNAME=	wmnet-1.2
 PKGNAME=	wminet-1.2
@@ -14,5 +14,5 @@ NOT_FOR_PLATFORM=	Interix-*-* # no userland protocol stack support
 
 USE_X11BASE=	YES
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

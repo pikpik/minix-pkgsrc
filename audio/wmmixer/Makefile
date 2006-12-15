@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/03/09 21:04:42 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/05/14 15:22:08 joerg Exp $
 #
 
 DISTNAME=	wmmixer-1.0-beta1
@@ -22,6 +22,6 @@ NO_INSTALL_MANPAGES=	YES
 pre-build:
 	${TOUCH} ${WRKSRC}/wmmixer.man
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

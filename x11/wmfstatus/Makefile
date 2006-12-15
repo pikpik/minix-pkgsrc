@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:44 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/09/03 00:56:30 wiz Exp $
 
 DISTNAME=	wmfstatus-0.4
 PKGREVISION=	1
@@ -19,5 +19,5 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README \
 		${WRKDIR}/${DISTNAME}/HINTS ${PREFIX}/share/doc/wmfstatus
 
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

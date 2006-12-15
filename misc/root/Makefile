@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/06/21 18:10:40 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2006/07/25 22:20:58 rillig Exp $
 
 DISTNAME=		root_v5.10.00.source
 PKGNAME=		root-5.10
@@ -44,9 +44,9 @@ CONFIGURE_ARGS+=	--disable-xml
 post-extract:
 	${CP} ${FILESDIR}/Makefile.netbsd ${WRKSRC}/config
 
-.include "../../graphics/xpm/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

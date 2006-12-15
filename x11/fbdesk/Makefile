@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/04/17 13:46:52 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2006/05/11 16:57:24 joerg Exp $
 #
 
 DISTNAME=	fbdesk-1.2.1
@@ -21,5 +21,5 @@ post-install:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../fonts/Xft2/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

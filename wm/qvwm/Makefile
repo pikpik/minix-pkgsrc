@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/04/17 13:46:50 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2006/07/22 04:46:19 rillig Exp $
 #
 
 DISTNAME=	qvwm-1.1.12
@@ -22,5 +22,5 @@ post-install:
 .include "options.mk"
 .include "../../audio/esound/buildlink3.mk"
 .include "../../graphics/imlib/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

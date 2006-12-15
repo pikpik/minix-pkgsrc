@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/05/31 19:18:07 adam Exp $
+# $NetBSD: Makefile,v 1.5 2006/07/17 15:30:16 minskim Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
@@ -56,14 +56,14 @@ SUBST_FILES.socklen=	mkspecs/darwin-g++/qplatformdefs.h
 SUBST_SED.socklen=	-e 's/QT_SOCKLEN_T.*/QT_SOCKLEN_T socklen_t/'
 .endif
 
-.include "../../fonts/Xft2/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../x11/Xrandr/buildlink3.mk"
-.include "../../x11/xcursor/buildlink3.mk"
+.include "../../x11/libXcursor/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
+.include "../../x11/libXrandr/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

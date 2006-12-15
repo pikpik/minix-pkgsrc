@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2006/03/14 01:14:35 jlam Exp $
+# $NetBSD: Makefile,v 1.90 2006/07/29 14:32:12 adam Exp $
 
 DISTNAME=	lesstif-0.95.0
 CATEGORIES=	x11
@@ -64,5 +64,5 @@ post-patch:
 	done
 
 .include "../../fonts/fontconfig/buildlink3.mk"
-.include "../../x11/Xrender/buildlink3.mk"
+.include "../../x11/libXrender/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

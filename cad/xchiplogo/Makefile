@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/06/17 04:49:45 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:23 joerg Exp $
 #
 
 DISTNAME=	xchiplogo
@@ -17,7 +17,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xchiplogo ${PREFIX}/bin/xchiplogo
 
 .include "../../graphics/jpeg/buildlink3.mk"
-.include "../../graphics/xpm/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
