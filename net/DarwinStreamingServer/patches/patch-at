@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- APIModules/QTSSSpamDefenseModule.bproj/QTSSSpamDefenseModule.cpp.orig	2006-12-14 22:31:31.000000000 +0100
++++ APIModules/QTSSSpamDefenseModule.bproj/QTSSSpamDefenseModule.cpp
+@@ -39,6 +39,8 @@
+ 
+ static QTSS_ModulePrefsObject sPrefs = NULL;
+ 
++// defined below
++class IPAddrTableKey;
+ 
+ class IPAddrTableElem
+ {

@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- CommonUtilitiesLib/UDPDemuxer.h.orig	2006-12-14 20:20:20.000000000 +0100
++++ CommonUtilitiesLib/UDPDemuxer.h
+@@ -44,6 +44,8 @@ class Task;
+ //IMPLEMENTATION ONLY:
+ //HASH TABLE CLASSES USED ONLY IN IMPLEMENTATION
+ 
++// defined below
++class UDPDemuxerKey;
+ 
+ class UDPDemuxerUtils
+ {
