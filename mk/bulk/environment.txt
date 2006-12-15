@@ -1,4 +1,4 @@
-# $NetBSD: environment.txt,v 1.3 2005/11/07 18:26:22 tv Exp $
+# $NetBSD: environment.txt,v 1.4 2005/12/03 01:00:37 rillig Exp $
 #
 
 ===> Environment variables used by the bulk build scripts
@@ -35,7 +35,7 @@ which they are used.
 	STARTFILE
 
 	BULK_PREREQ
-	
+
 	=> Set by the script
 
 	BATCH=1
