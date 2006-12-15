@@ -1,5 +1,5 @@
-#!/bin/sh 
-# $NetBSD: build,v 1.95 2006/11/19 03:06:26 jschauma Exp $
+#!/bin/sh
+# $NetBSD: build,v 1.96 2006/11/27 00:05:22 jschauma Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>

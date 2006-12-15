@@ -1,4 +1,4 @@
-# $NetBSD: ccc.mk,v 1.13 2005/01/12 18:42:42 jlam Exp $
+# $NetBSD: ccc.mk,v 1.14 2006/10/22 00:14:17 rillig Exp $
 #
 # This is the compiler definition for the Compaq C Compilers.
 #
@@ -56,7 +56,7 @@ CXXFLAGS+=	-ieee
 
 # _LANGUAGES.<compiler> is ${LANGUAGES.<compiler>} restricted to the
 # ones requested by the package in USE_LANGUAGES.
-# 
+#
 _LANGUAGES.ccc=		# empty
 .for _lang_ in ${USE_LANGUAGES}
 _LANGUAGES.ccc+=	${LANGUAGES.ccc:M${_lang_}}
@@ -70,7 +70,7 @@ PREPEND_PATH+=	${_CCC_DIR}/bin
 # Create compiler driver scripts in ${WRKDIR}.
 .for _var_ in ${_CCC_VARS}
 .  if !target(${_CCC_${_var_}})
-override-tools: ${_CCC_${_var_}}        
+override-tools: ${_CCC_${_var_}}
 ${_CCC_${_var_}}:
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${.TARGET:H}
 	${_PKG_SILENT}${_PKG_DEBUG}					\

@@ -1,4 +1,4 @@
-# $NetBSD: ccache.mk,v 1.27 2006/07/21 14:27:56 jlam Exp $
+# $NetBSD: ccache.mk,v 1.28 2006/10/14 08:59:08 rillig Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -63,7 +63,7 @@ _USE_CCACHE=	NO
 # LANGUAGES.<compiler> is the list of supported languages by the compiler.
 # _LANGUAGES.<compiler> is ${LANGUAGES.<compiler>} restricted to the ones
 # requested by the package in USE_LANGUAGES.
-# 
+#
 LANGUAGES.ccache=	c c++
 _LANGUAGES.ccache=	# empty
 .for _lang_ in ${USE_LANGUAGES}

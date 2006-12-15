@@ -1,4 +1,4 @@
-# $NetBSD: xlc.mk,v 1.12 2005/01/12 22:58:29 grant Exp $
+# $NetBSD: xlc.mk,v 1.13 2006/10/22 00:14:17 rillig Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -102,7 +102,7 @@ PREPEND_PATH+=	${_XLC_DIR}/bin
 # Create compiler driver scripts in ${WRKDIR}.
 .for _var_ in ${_XLC_VARS}
 .  if !target(${_XLC_${_var_}})
-override-tools: ${_XLC_${_var_}}        
+override-tools: ${_XLC_${_var_}}
 ${_XLC_${_var_}}:
 	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${.TARGET:H}
 	${_PKG_SILENT}${_PKG_DEBUG}					\

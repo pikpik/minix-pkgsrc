@@ -1,10 +1,10 @@
-# $NetBSD: mipspro-ucode.mk,v 1.2 2004/02/18 13:32:38 jlam Exp $
+# $NetBSD: mipspro-ucode.mk,v 1.3 2005/01/12 18:36:38 jlam Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
 #
 # This code is derived from software contributed to The NetBSD Foundation
-# by 
+# by
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
