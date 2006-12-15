@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.1.1.1 2006/04/18 17:17:50 reed Exp $
+# $NetBSD: builtin.mk,v 1.2 2006/04/19 12:27:02 reed Exp $
 
 BUILTIN_PKG:=	compositeproto
 
@@ -14,7 +14,7 @@ BUILTIN_FIND_FILES.H_COMPOSITEPROTO=	\
 ### Determine if there is a built-in implementation of the package and
 ### set IS_BUILTIN.<pkg> appropriately ("yes" or "no").
 ###
-.if !defined(IS_BUILTIN.compositeproto)
+.if !defined(IS_BUILTIN.compositeproto) || ${X11BASE} == ${LOCALBASE}
 IS_BUILTIN.compositeproto=	no
 #
 # Here, we skip checking whether the files are under ${LOCALBASE} since
