@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.orig	2006-05-12 18:39:38.000000000 +0200
++++ Makefile
+@@ -1,6 +1,6 @@
+ 
+-prefix = /usr/local
+-gamesdir = ${prefix}/games
++prefix = ${PREFIX}
++gamesdir = ${prefix}/bin
+ datadir = ${prefix}/share
+ pkgdatadir = $(datadir)/games/monsterz
+ scoredir = /var/games
