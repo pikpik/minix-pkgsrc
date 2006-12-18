@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.AP2.orig	2002-07-29 02:36:34.000000000 +0100
++++ Makefile.AP2
+@@ -20,8 +20,6 @@ APACHECTL = apachectl
+ 
+ all: local-shared-build
+ 
+-install: install-modules
+-
+ clean:
+ 	-rm -f *.o *.lo *.slo *.la 
+ 
