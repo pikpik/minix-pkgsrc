@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.462 2006/12/17 18:08:15 joerg Exp $
+# $NetBSD: Makefile,v 1.463 2006/12/19 12:19:51 reed Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -391,6 +391,7 @@ SUBDIR+=	xmove
 SUBDIR+=	xmx
 SUBDIR+=	xneko
 SUBDIR+=	xnodecor
+SUBDIR+=	xorg-cf-files
 SUBDIR+=	xorg-clients
 SUBDIR+=	xorg-imake
 SUBDIR+=	xorg-libs
