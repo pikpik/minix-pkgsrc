@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/04/13 18:23:32 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/18 20:29:58 wiz Exp $
 
 DISTNAME=	fe-1.6
 PKGREVISION=	1
@@ -13,6 +13,7 @@ BROKEN_IN=		pkgsrc-2006Q1
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	msgfmt
+INCOMPAT_CURSES=	NetBSD-2* NetBSD-3*
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/fe
