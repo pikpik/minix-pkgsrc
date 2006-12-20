@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/14 20:24:11 joerg Exp $
 #
 
 DISTNAME=		font-bitstream-type1-1.0.0
@@ -13,7 +13,10 @@ COMMENT=		Bitstream Charter and Courier Type 1 outline fonts
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
+CONFIGURE_ENV+=		FCCACHE=${TRUE:Q}
+
 FONTS_DIRS.type1+=	lib/X11/fonts/Type1
+FONTS_DIRS.x11+=	lib/X11/fonts/Type1
 
 INSTALLATION_DIRS=	share/doc/font-bitstream-type1
 
