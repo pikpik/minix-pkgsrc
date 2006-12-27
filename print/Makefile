@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.162 2006/11/30 07:33:23 reed Exp $
+# $NetBSD: Makefile,v 1.163 2006/12/06 00:49:24 wiz Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -39,6 +39,7 @@ SUBDIR+=	ghostscript
 SUBDIR+=	ghostscript-afpl
 SUBDIR+=	ghostscript-esp
 SUBDIR+=	ghostscript-gnu
+SUBDIR+=	ghostscript6
 SUBDIR+=	gimp-print
 SUBDIR+=	gimp-print-cups
 SUBDIR+=	gimp-print-escputil
