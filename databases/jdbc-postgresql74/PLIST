@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/03 17:54:09 abs Exp $
-lib/java/${JARFILE}
