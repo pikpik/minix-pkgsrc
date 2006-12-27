@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/05/18 20:30:01 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2006/06/20 22:05:22 jlam Exp $
 
 DISTNAME=	hanterm-3.1.6
 PKGREVISION=	3
@@ -11,4 +11,7 @@ COMMENT=	X11R6-based xterm hacked for managing Korean languages
 
 USE_IMAKE=	YES
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

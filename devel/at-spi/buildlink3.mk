@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2006/07/08 22:39:06 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2006/07/08 23:10:41 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 AT_SPI_BUILDLINK3_MK:=	${AT_SPI_BUILDLINK3_MK}+
@@ -22,5 +22,6 @@ BUILDLINK_PKGSRCDIR.at-spi?=	../../devel/at-spi
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/libXtst/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

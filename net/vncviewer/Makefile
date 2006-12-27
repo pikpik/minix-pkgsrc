@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/05/12 09:45:12 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/07/22 19:21:11 abs Exp $
 
 DISTNAME=       	vnc-4_1_2-unixsrc
 PKGNAME=		vncviewer-4.1.2
@@ -32,5 +32,12 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/vncpasswd/vncpasswd.man \
 		${PREFIX}/man/man1/vncpasswd.1
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/libXtst/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

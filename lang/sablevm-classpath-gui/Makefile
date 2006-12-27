@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/04/17 12:21:14 tonio Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/17 13:46:38 wiz Exp $
 #
 
 .include "../../lang/sablevm-classpath/Makefile.common"
@@ -19,8 +19,12 @@ PRINT_PLIST_AWK+= \
 	/^@dirrm java\/sablevm\/lib\/sablevm-classpath$$/ \
 		{ print "@comment in sablevm-classpath: "$$0; next; }
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/libXtst/buildlink3.mk"
 .include "../../mk/java-env.mk"
 .include "../../mk/bsd.pkg.mk"

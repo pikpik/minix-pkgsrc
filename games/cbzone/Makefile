@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/05/22 20:08:00 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:09:13 joerg Exp $
 
 DISTNAME=		cbzone-sound
 PKGNAME=		cbzone-2.0c
@@ -13,4 +13,6 @@ WRKSRC=			${WRKDIR}/cbzone
 USE_TOOLS+=		gmake
 USE_IMAKE=		yes
 
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/04/17 13:46:10 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2006/08/10 17:44:11 drochner Exp $
 
 DISTNAME=	gtkglext-1.2.0
 PKGREVISION=	2
@@ -19,8 +19,11 @@ PKGCONFIG_OVERRIDE=	gdkglext.pc.in
 PKGCONFIG_OVERRIDE+=	gtkglext.pc.in
 LIBS+=			-lm
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/pango/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

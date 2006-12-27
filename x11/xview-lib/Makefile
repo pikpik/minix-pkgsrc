@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/02/05 23:11:50 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2006/03/04 21:31:14 jlam Exp $
 
 DISTNAME=		xview3.2p1-X11R6
 PKGNAME=		xview-lib-3.2.1
@@ -21,4 +21,5 @@ post-install:
 	cd ${PREFIX}/lib && ${LN} -fs libolgx.so.3.2 libolgx.so.3 && \
 		${LN} -fs libxview.so.3.2 libxview.so.3
 
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

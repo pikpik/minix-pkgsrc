@@ -1,9 +1,11 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/11/03 21:06:54 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/11/06 09:54:13 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
 .if ${X11_TYPE} != "modular"
 .include "../../graphics/xpm/buildlink3.mk"
+
+BUILDLINK_PREFIX.libXpm=	${BUILDLINK_PREFIX.xpm}
 .else
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+

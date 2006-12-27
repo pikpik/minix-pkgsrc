@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:47 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/03/04 21:31:13 jlam Exp $
 
 DISTNAME=	xless-1.7
 PKGREVISION=	2
@@ -11,4 +11,7 @@ COMMENT=	X11 text viewer; useful as an add-on tool for other apps
 
 USE_IMAKE=	yes
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

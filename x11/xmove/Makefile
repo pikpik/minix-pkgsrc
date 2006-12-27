@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:11:48 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/03/04 21:31:13 jlam Exp $
 #
 
 DISTNAME=	xmove.2.0beta2
@@ -26,4 +26,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/limitations.txt ${XMOVEDOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/using_xmove.txt ${XMOVEDOCDIR}
 
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

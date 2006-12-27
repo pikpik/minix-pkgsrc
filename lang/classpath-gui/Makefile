@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/04/17 13:46:38 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/05/16 13:27:33 tonio Exp $
 
 .include "../../lang/classpath/Makefile.common"
 
@@ -19,4 +19,5 @@ BUILDLINK_TRANSFORM.libart2+=	-e 's|/libart2-config|/libart-config|g'
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/libXtst/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

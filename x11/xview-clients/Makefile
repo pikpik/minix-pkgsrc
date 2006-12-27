@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/02/05 23:11:49 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2006/03/04 21:31:14 jlam Exp $
 
 DISTNAME=		xview3.2p1-X11R6
 PKGNAME=		xview-clients-3.2.1
@@ -28,5 +28,7 @@ post-patch:
 		${RM} -f $${file}.tmp;			\
 	done
 
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xview-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

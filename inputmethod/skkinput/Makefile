@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/14 01:14:29 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/07/05 06:53:13 jlam Exp $
 
 DISTNAME=	skkinput-2.06.3
 PKGREVISION=	2
@@ -19,4 +19,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/FAQ.jis	${PREFIX}/share/doc/skkinput
 	${INSTALL_DATA} ${WRKSRC}/BUGS.jis	${PREFIX}/share/doc/skkinput
 
+.include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

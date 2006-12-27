@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/04 21:28:59 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/08/12 14:51:39 darcy Exp $
 
 DISTNAME=       xcdplayer-2.2
 PKGREVISION=	3
@@ -19,4 +19,8 @@ pre-configure:
 	${CP} ${FILESDIR}/cdrom_freebsd.h ${WRKSRC}
 	${CP} ${WRKSRC}/xcdplayer.1 ${WRKSRC}/xcdplayer.man
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/xbitmaps/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

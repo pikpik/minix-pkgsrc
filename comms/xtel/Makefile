@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/28 17:38:47 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2006/12/15 20:32:53 joerg Exp $
 #
 
 DISTNAME=	xtel-3.3.0
@@ -11,12 +11,15 @@ HOMEPAGE=	http://pficheux.free.fr/xtel/
 COMMENT=	Minitel(r) emulator
 
 USE_IMAKE=	YES
-USE_TOOLS+=	mkfontdir
+USE_TOOLS+=	mkfontdir bdftopcf
 
 FONTS_DIRS.x11=	${PREFIX}/lib/X11/fonts/xtel
 REQD_DIRS=	${PREFIX}/lib/X11/fonts/xtel
 
 .include "../../graphics/jpeg/buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/xbitmaps/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

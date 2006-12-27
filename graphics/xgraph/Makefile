@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:41 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/09/03 00:56:29 wiz Exp $
 #
 
 DISTNAME=	xgraph-11.3.2-hack.9
@@ -12,4 +12,6 @@ COMMENT=	Tool to draw a graph on an X11 display
 
 USE_IMAKE=	yes
 
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

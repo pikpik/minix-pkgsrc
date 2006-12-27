@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/02/22 11:36:37 darcy Exp $
+# $NetBSD: Makefile,v 1.33 2006/03/04 21:29:32 jlam Exp $
 
 DISTNAME=		sam
 PKGNAME=		sam-4.3
@@ -36,4 +36,5 @@ do-build:
 	done
 .endif # SunOS
 
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

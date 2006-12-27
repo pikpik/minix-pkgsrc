@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/10/14 07:59:10 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/12/15 20:32:53 joerg Exp $
 
 DISTNAME=	wmmp3-0.12
 PKGREVISION=	2
@@ -22,5 +22,7 @@ post-install:
 	@${ECHO} "===> Installing sample.wmmp3 in ${PREFIX}/share/examples"
 	${INSTALL_DATA} ${WRKSRC}/sample.wmmp3 ${PREFIX}/share/examples
 
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

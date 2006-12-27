@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/06/16 06:57:49 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:54 joerg Exp $
 #
 
 DISTNAME=	xxgdb-1.12
@@ -25,4 +25,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/XDbx.ad ${PREFIX}/lib/X11/app-defaults/XDbx
 	${INSTALL_DATA} ${WRKSRC}/xxgdb.man ${PREFIX}/man/man1/xxgdb.1
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

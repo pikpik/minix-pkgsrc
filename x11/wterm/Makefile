@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/02/05 23:11:44 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/04/17 13:47:01 wiz Exp $
 
 DISTNAME=	wterm-6.2.9
 PKGREVISION=	7
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+= --enable-utmp --enable-wtmp
 CONFIGURE_ARGS+= --enable-xpm-background --enable-transparency
 CONFIGURE_ARGS+= --enable-menubar --enable-graphics --enable-next-scroll
 CONFIGURE_ARGS+= --enable-half-shadow
-CONFIGURE_ARGS+= --with-xpm-library=${BUILDLINK_PREFIX.xpm}
+CONFIGURE_ARGS+= --with-xpm-library=${BUILDLINK_PREFIX.libXpm}
 
 post-install:
 	${CHMOD} 4755 ${PREFIX}/bin/wterm

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/08/01 21:40:19 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/10/09 12:52:35 joerg Exp $
 
 PKGNAME=	MesaDemos-${MESA_VERSION}
 COMMENT=	OpenGL examples and Demos
@@ -31,5 +31,8 @@ do-install:
 		-s ',^./.*\.orig$$,,'		\
 		-rw . ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}/${dir}
 	${CHMOD} -R a+rX ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}
+
+.include "../../x11/libXi/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

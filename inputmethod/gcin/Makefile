@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/11 10:07:50 ghen Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/21 06:00:46 jlam Exp $
 #
 
 DISTNAME=		gcin-1.1.7
@@ -29,4 +29,5 @@ REPLACE_FILES.sh+=	scripts/modify-XIM
 REPLACE_FILES.sh+=	scripts/utf8-edit
 
 .include "../../x11/gtk2/modules.mk"
+.include "../../x11/libXtst/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

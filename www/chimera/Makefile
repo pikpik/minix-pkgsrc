@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:11:20 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:51 wiz Exp $
 #
 
 DISTNAME=	chimera-2.0a19
@@ -26,4 +26,7 @@ post-install:
 
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

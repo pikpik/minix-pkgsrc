@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/12/01 18:58:39 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2006/02/05 23:09:43 joerg Exp $
 
 DISTNAME=	kinput2-v3
 PKGNAME=	kinput2-3.0
@@ -24,4 +24,7 @@ pre-configure:
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${XMKMF}
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
