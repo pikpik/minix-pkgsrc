@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/12/14 22:10:24 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/12/19 19:11:19 wiz Exp $
 
 DISTNAME=	gpredict-0.6.1
 PKGREVISION=	1
@@ -10,7 +10,7 @@ HOMEPAGE=	http://groundstation.sourceforge.net/
 COMMENT=	Gnome satellite tracking program
 
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake msgfmt pkg-config
+USE_TOOLS+=	gmake msgfmt pkg-config intltool
 USE_PKGLOCALEDIR=yes
 GNU_CONFIGURE=	yes
 
