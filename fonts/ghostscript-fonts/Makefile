@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:39 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/11/03 19:18:38 joerg Exp $
 
 DISTNAME=		ghostscript-fonts-8.11
+PKGREVISION=		1
 CATEGORIES=		fonts
 MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=ghostscript/} \
 			ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/fonts/
@@ -33,6 +34,7 @@ WRKSRC=			${WRKDIR}/fonts
 
 FONTS_DIR=		${PREFIX}/share/ghostscript/fonts
 INSTALLATION_DIRS=	share/ghostscript/fonts
+REQD_DIRS+=		share/ghostscript
 
 do-install:
 	for ext in afm gsf pfa pfb pfm;				\
