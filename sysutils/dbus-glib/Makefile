@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2006/11/05 17:09:00 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/11/13 15:18:45 drochner Exp $
 #
 
 DISTNAME=	dbus-glib-0.72
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus-glib/
 
@@ -37,6 +38,8 @@ CONFIGURE_ARGS+=	--enable-asserts
 CONFIGURE_ARGS+=	--enable-tests
 CONFIGURE_ARGS+=	--enable-verbose-mode
 .endif
+
+BUILDLINK_API_DEPENDS.dbus+=	dbus>=0.94
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
