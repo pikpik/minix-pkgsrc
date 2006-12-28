@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2006/03/20 19:51:40 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2006/10/04 20:53:45 wiz Exp $
 #
 
 DISTNAME=		gtksql-0.3
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		databases
 MASTER_SITES=		http://membres.lycos.fr/bbrox/GtkSQL/ \
 			${MASTER_SITE_SUNSITE:=X11/gtkbuffet/apps/gtksql/} \

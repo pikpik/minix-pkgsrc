@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2006/09/02 13:48:12 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/10/14 08:01:39 wiz Exp $
 #
 
 DISTNAME=	psycopg-1.1.21
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases python
 MASTER_SITES=	http://initd.org/pub/software/psycopg/
 
