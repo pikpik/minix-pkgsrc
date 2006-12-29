@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2005/09/28 07:49:22 rillig Exp $
+# $NetBSD: Makefile,v 1.77 2006/07/02 12:29:22 rillig Exp $
 #
 
 # tools used by this Makefile
@@ -138,9 +138,12 @@ ${.CURDIR}/PKGDB:
 	done
 
 .PHONY: index
-index: ${.CURDIR}/INDEX
+index:
+	@${RM} ${.CURDIR}/INDEX
+	@${MAKE} ${.CURDIR}/INDEX
 
-${.CURDIR}/INDEX: ${.CURDIR}/PKGDB
+${.CURDIR}/INDEX:
+	@${MAKE} ${.CURDIR}/PKGDB
 	@${RM} -f ${.CURDIR}/INDEX
 	@${AWK} -f ./mk/scripts/genindex.awk PKGSRCDIR=${.CURDIR} SORT=${SORT} ${.CURDIR}/PKGDB
 	@${RM} -f ${.CURDIR}/PKGDB
