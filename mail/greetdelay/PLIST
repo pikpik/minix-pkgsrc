@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/greetdelay
+man/cat1/greetdelay.0
+man/man1/greetdelay.1
