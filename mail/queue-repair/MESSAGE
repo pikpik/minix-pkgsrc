@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+This package is incompatible with mail/qmail, as it does not follow
+symlinks properly. Use it only with non-pkgsrc qmail installations.
+Otherwise, try mail/queue-fix instead.
+
+===========================================================================
