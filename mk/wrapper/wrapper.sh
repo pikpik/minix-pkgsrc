@@ -1,6 +1,6 @@
 #! @WRAPPER_SHELL@
 #
-# $NetBSD: wrapper.sh,v 1.11 2006/12/14 22:25:19 dmcmahill Exp $
+# $NetBSD: wrapper.sh,v 1.12 2006/12/15 12:46:24 martti Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -118,7 +118,7 @@ cmd="$cmd $libs"
 
 @_WRAP_ENV@
 
-msg_log $wrapperlog "<.>" $cmd
+eval "msg_log \$wrapperlog \"<.>\" $cmd"
 wrapper_result=0
 eval "$cmd" || wrapper_result="$?"
 
