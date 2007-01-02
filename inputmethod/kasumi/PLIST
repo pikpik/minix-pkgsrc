@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/kasumi
+share/kasumi/kasumi.png
+${PKGLOCALEDIR}/locale/ja/LC_MESSAGES/kasumi.mo
+@dirrm share/kasumi
