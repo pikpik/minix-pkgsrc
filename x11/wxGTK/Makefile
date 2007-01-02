@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/03/30 15:28:12 joerg Exp $
+# $NetBSD: Makefile,v 1.50 2006/04/17 14:52:12 wiz Exp $
 #
 
 .include "Makefile.common"
@@ -18,8 +18,8 @@ post-build:
 	done
 
 post-install:
-	${INSTALL_DATA_DIR} ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/LICENCE.txt ${DOCDIR}/LICENSE
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/LICENCE.txt ${DESTDIR}${DOCDIR}/LICENSE
 
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
