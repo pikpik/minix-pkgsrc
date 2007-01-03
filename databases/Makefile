@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.219 2006/12/09 16:18:40 adam Exp $
+# $NetBSD: Makefile,v 1.220 2006/12/27 15:57:36 joerg Exp $
 #
 
 COMMENT=	Databases
@@ -25,6 +25,7 @@ SUBDIR+=	gramps2
 SUBDIR+=	gtksql
 SUBDIR+=	guile-pg
 SUBDIR+=	iodbc
+SUBDIR+=	ipa_sdb
 SUBDIR+=	java-db3
 SUBDIR+=	jdb
 SUBDIR+=	jdbc-postgresql80
