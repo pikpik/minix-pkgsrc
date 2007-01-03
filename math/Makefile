@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.152 2006/11/13 15:58:04 wulf Exp $
+# $NetBSD: Makefile,v 1.153 2006/11/19 04:57:13 obache Exp $
 #
 
 COMMENT=	Mathematics
@@ -60,6 +60,7 @@ SUBDIR+=	fftpack
 SUBDIR+=	fftw
 SUBDIR+=	fftw2
 SUBDIR+=	fftwf
+SUBDIR+=	fgmp
 SUBDIR+=	galculator
 SUBDIR+=	gap
 SUBDIR+=	gcalctool
