@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.650 2007/01/03 13:51:43 adrianp Exp $
+# $NetBSD: Makefile,v 1.651 2007/01/03 14:11:18 adrianp Exp $
 #
 
 COMMENT=	Networking tools
@@ -166,6 +166,7 @@ SUBDIR+=	kftpgrabber
 SUBDIR+=	kiax
 SUBDIR+=	kismet
 SUBDIR+=	kphone
+SUBDIR+=	ktorrent
 SUBDIR+=	lambdamoo
 SUBDIR+=	lambdamoo-core
 SUBDIR+=	lambdamoo-doc
