@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/10/04 20:46:42 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/07 06:27:30 cjs Exp $
 
 DISTNAME=	httperf-0.8
 CATEGORIES=	benchmarks www
@@ -18,12 +18,5 @@ USE_TOOLS+=		gmake
 .if ${OPSYS} == "SunOS"
 LDFLAGS+=	-lsocket -lnsl -lresolv
 .endif
-
-INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/httperf ${PREFIX}/bin/httperf
-	${INSTALL_MAN} ${WRKSRC}/httperf.man \
-	    ${PREFIX}/${PKGMANDIR}/man1/httperf.1
 
 .include "../../mk/bsd.pkg.mk"
