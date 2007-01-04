@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/07/08 22:39:27 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:59 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GLPK_BUILDLINK3_MK:=	${GLPK_BUILDLINK3_MK}+
@@ -16,5 +16,7 @@ BUILDLINK_API_DEPENDS.glpk+=	glpk>=4.8nb1
 BUILDLINK_ABI_DEPENDS.glpk+=	glpk>=4.9nb1
 BUILDLINK_PKGSRCDIR.glpk?=	../../math/glpk
 .endif	# GLPK_BUILDLINK3_MK
+
+.include "../../devel/gmp/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
