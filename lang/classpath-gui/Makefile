@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2006/05/16 13:27:33 tonio Exp $
+# $NetBSD: Makefile,v 1.12 2006/12/27 13:37:38 joerg Exp $
 
 .include "../../lang/classpath/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/classpath/classpath-gui/}
 COMMENT+=	(GUI libraries)
 
-DEPENDS+=	classpath>=0.91:../../lang/classpath
+DEPENDS+=	classpath>=0.93:../../lang/classpath
 
 USE_TOOLS+=	pkg-config
 
