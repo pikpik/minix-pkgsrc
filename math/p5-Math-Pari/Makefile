@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/14 23:03:25 heinz Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:06 jlam Exp $
 #
 
 DISTNAME=		Math-Pari-2.010703
@@ -24,7 +24,7 @@ WRKSRC.pari_cmd=		\
 	cd ${PKGSRCDIR.pari} && ${MAKE} show-var VARNAME=WRKSRC
 
 post-extract:
-	cd ${PKGSRCDIR.pari:Q} && ${MAKE} configure;		\
+	cd ${PKGSRCDIR.pari:Q} && ${MAKE} configure &&		\
 	${RM} -f ${WRKSRC}/pari-*
 	${LN} -sf ${WRKSRC.pari_cmd:sh:Q} ${WRKSRC}
 
