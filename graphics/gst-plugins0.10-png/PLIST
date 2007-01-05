@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.1 2006/01/18 12:44:02 jmmv Exp $
+lib/gstreamer-0.10/libgstpng.la
