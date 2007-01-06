@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:23 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/03/04 21:29:02 jlam Exp $
 #
 
 DISTNAME=	fugu-1.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat
 MASTER_SITES=	http://fugu.gale.org/dist/ \
 		http://fugu.gale.org/dist/old/
@@ -12,6 +12,7 @@ HOMEPAGE=	http://fugu.gale.org/
 COMMENT=	Graphical client for the gale secure instant messaging system
 
 PYTHON_VERSIONS_ACCEPTED= 20 21 # no 22 - uses Makefile.pre.in
+PYTHON_PATCH_SCRIPTS=	puffdisp.py pygale/authcache.py pygale/prettypuff.py
 
 GNU_CONFIGURE= 	YES
 CONFIGURE_ENV+=	vi_cv_path_python=${PYTHONBIN:Q}
