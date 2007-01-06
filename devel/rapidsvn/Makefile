@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2006/07/22 04:46:15 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/08/08 12:28:47 wiz Exp $
 
-DISTNAME=		rapidsvn-0.9.3
+DISTNAME=		rapidsvn-0.9.4
 CATEGORIES=		devel x11
-MASTER_SITES=		http://www.rapidsvn.org/download/
+MASTER_SITES=		http://www.rapidsvn.org/download/release/0.9.4/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://rapidsvn.tigris.org/
