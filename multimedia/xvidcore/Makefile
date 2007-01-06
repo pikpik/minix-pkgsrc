@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/10/19 00:15:15 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/11/18 21:05:13 wiz Exp $
 
 DISTNAME=	xvidcore-1.1.2
 CATEGORIES=	multimedia
@@ -33,6 +33,7 @@ GNU_CONFIGURE=	YES
 MAKE_ENV+=	MKDIR=${MKDIR:Q}
 
 .if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--disable-assembly
 post-install:
 	${RM} -f ${DESTDIR}${PREFIX}/lib/libxvidcore.so.4
 	${MV} -f ${DESTDIR}${PREFIX}/lib/libxvidcore.so ${DESTDIR}${PREFIX}/lib/libxvidcore.dylib
