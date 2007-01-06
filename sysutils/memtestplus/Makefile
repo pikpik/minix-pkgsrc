@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2006/11/01 15:38:15 mlelstv Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/06 22:26:55 smb Exp $
 #
 
 DISTNAME=		memtest86+-1.65
 PKGNAME=		memtestplus-1.65
-PKGREVISION=            2
+PKGREVISION=            3
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.memtest.org/download/1.65/
 
