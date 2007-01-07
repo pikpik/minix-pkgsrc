@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/03/24 21:12:52 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:57:43 jlam Exp $
 
 DISTNAME=	ack139
 PKGNAME=	ack-1.39
@@ -10,10 +10,10 @@ COMMENT=	Japanese code converter
 
 BUILD_TARGET=     ack
 
-INSTALLATION_DIRS=	bin man/ja_JP.EUC/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/ja_JP.EUC/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ack ${PREFIX}/bin/ack
-	${INSTALL_DATA} ${WRKSRC}/ack.1 ${PREFIX}/man/ja_JP.EUC/man1/ack.1
+	${INSTALL_DATA} ${WRKSRC}/ack.1 ${PREFIX}/${PKGMANDIR}/ja_JP.EUC/man1/ack.1
 
 .include "../../mk/bsd.pkg.mk"

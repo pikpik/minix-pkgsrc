@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.86 2006/06/15 11:40:00 dillo Exp $
+# $NetBSD: Makefile,v 1.87 2006/09/09 02:42:00 obache Exp $
 #
 
 DISTNAME=		xmame-0.106
@@ -77,7 +77,7 @@ MAKE_FLAGS+=		JOY_USB=1
 .endif
 
 OWN_DIRS=		${SPOOLDIR}
-INSTALLATION_DIRS=	bin man/man6
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
 
 post-configure:
 	cd ${WRKSRC}/doc;						\
@@ -96,7 +96,7 @@ do-install:
 		${PREFIX}/bin/${TARGET}
 	${INSTALL_PROGRAM} ${WRKSRC}/imgtool ${PREFIX}/bin/imgtool
 	${INSTALL_MAN} ${WRKSRC}/doc/${TARGET}.6			\
-		${PREFIX}/man/man6/${TARGET}.6
+		${PREFIX}/${PKGMANDIR}/man6/${TARGET}.6
 	${INSTALL_DATA_DIR} ${ROMPATH}
 	${INSTALL_DATA} ${WRKSRC}/doc/${TARGET}rc ${ROMPATH}/${TARGET}rc
 

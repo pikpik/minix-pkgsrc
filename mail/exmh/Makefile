@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/10/19 07:52:34 markd Exp $
+# $NetBSD: Makefile,v 1.44 2006/10/20 08:15:14 dsainty Exp $
 
 DISTNAME=	exmh-2.7.2
 CATEGORIES=	mail tk
@@ -32,7 +32,7 @@ do-build:
 		FILESDIR=${FILESDIR} ${SH} ${FILESDIR}/build
 
 do-install:
-	${INSTALL_MAN} ${WRKSRC}/exmh.l ${PREFIX}/man/man1/exmh.1
+	${INSTALL_MAN} ${WRKSRC}/exmh.l ${PREFIX}/${PKGMANDIR}/man1/exmh.1
 	for binfile in exmh-async exmh-bg exmh-strip exmh ftp.expect; do \
 		${INSTALL_SCRIPT} ${WRKSRC}/$$binfile ${PREFIX}/bin; \
 	done

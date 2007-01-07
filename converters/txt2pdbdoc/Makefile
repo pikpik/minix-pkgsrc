@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:09 tv Exp $
+# $NetBSD: Makefile,v 1.3 2006/10/29 18:07:48 minskim Exp $
 
 DISTNAME=	txt2pdbdoc-1.4.4
 PKGREVISION=	1
@@ -14,6 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_TOOLS+=	perl:run
 GNU_CONFIGURE=	yes
 
-INSTALLATION_DIRS=	bin man/man1 man/man4
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man4
 
 .include "../../mk/bsd.pkg.mk"

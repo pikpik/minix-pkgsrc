@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/09 14:50:31 ghen Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/11 10:07:49 ghen Exp $
 #
 
 .include "Makefile.common"
@@ -15,7 +15,7 @@ REPLACE_FILES.bash=	teach-ce.in
 BUILD_TARGET=		ce
 INSTALL_TARGET=		install man-install
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

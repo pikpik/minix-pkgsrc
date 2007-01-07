@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/12/06 00:54:25 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2006/12/18 12:36:17 gdt Exp $
 
 DISTNAME=	pkg_rolling-replace-0.04
 PKGREVISION=	3
@@ -21,7 +21,7 @@ NO_CHECKSUM=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# none
 
-INSTALLATION_DIRS=	sbin man/man8
+INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man8
 
 SUBST_CLASSES+=		makepath
 SUBST_STAGE.makepath=	pre-configure

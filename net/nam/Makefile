@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:10:27 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/08/23 10:43:49 minskim Exp $
 
 DISTNAME=	ns-allinone-2.29.3
 PKGNAME=	nam-1.11
@@ -36,7 +36,7 @@ INSTALLATION_DIRS=	bin
 .include "../../x11/tk/buildlink3.mk"
 
 post-install:
-	${INSTALL_MAN_DIR} ${PREFIX}/man/man1
-	${INSTALL_MAN} ${WRKSRC}/nam.1 ${PREFIX}/man/man1
+	${INSTALL_MAN_DIR} ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_MAN} ${WRKSRC}/nam.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

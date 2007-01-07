@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2006/07/05 05:37:39 jlam Exp $
+# $NetBSD: Makefile,v 1.58 2006/11/20 18:34:27 bad Exp $
 #
 
 DISTNAME=		jpilot-0.99.9
@@ -26,7 +26,7 @@ LDFLAGS+=		-export-dynamic
 
 DOCDIR=			${PREFIX}/share/doc/jpilot
 INCDIR=			${PREFIX}/include/jpilot
-MAN1DIR=		${PREFIX}/man/man1
+MAN1DIR=		${PREFIX}/${PKGMANDIR}/man1
 PLUGINSDIR=		${PREFIX}/lib/jpilot/plugins
 
 .include "../../comms/pilot-link-libs/buildlink3.mk"

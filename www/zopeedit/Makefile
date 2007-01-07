@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:11:30 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/03/04 21:31:06 jlam Exp $
 #
 
 DISTNAME=	zopeedit-0.7-src
@@ -18,7 +18,7 @@ PYDISTUTILSPKG=	yes
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/zopeedit
 	${INSTALL_DATA} ${WRKSRC}/README.txt ${PREFIX}/share/doc/zopeedit
-	${INSTALL_MAN} ${WRKSRC}/man/zopeedit.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/man/zopeedit.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"

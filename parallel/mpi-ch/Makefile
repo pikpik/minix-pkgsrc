@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2006/05/18 14:26:48 joerg Exp $
+# $NetBSD: Makefile,v 1.48 2006/12/22 13:24:16 obache Exp $
 
 DISTNAME=		mpich-1.2.6
 PKGREVISION=		6
@@ -108,7 +108,7 @@ post-patch:
 
 post-install:
 	cd ${WRKDIR}/docs && ${PAX} -rw . ${PREFIX}/share/doc/mpi-ch/html
-	@${RM} ${PREFIX}/man/mandesc
+	@${RM} ${PREFIX}/${PKGMANDIR}/mandesc
 	@${MV} ${PREFIX}/sbin/mpiuninstall ${PREFIX}/sbin/mpiuninstall.not
 	@${CHMOD} 444 ${PREFIX}/sbin/mpiuninstall.not
 	@${ECHO} "#!/bin/sh" > ${PREFIX}/sbin/mpiuninstall

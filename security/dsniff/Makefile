@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2005/06/17 03:50:31 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2006/02/05 23:10:43 joerg Exp $
 
 .include "Makefile.common"
 
@@ -15,6 +15,6 @@ INSTALLATION_DIRS+=	sbin man/man8
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/webspy ${PREFIX}/sbin
-	${INSTALL_MAN} ${WRKSRC}/webspy.8 ${PREFIX}/man/man8
+	${INSTALL_MAN} ${WRKSRC}/webspy.8 ${PREFIX}/${PKGMANDIR}/man8
 
 .include "../../mk/bsd.pkg.mk"

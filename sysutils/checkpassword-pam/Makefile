@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/01/14 05:15:40 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:23 tv Exp $
 #
 
 DISTNAME=		checkpassword-pam-0.99
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
-INSTALLATION_DIRS=	bin man/man8
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8
 
 .include "../../mk/pam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

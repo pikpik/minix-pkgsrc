@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/18 13:31:28 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:18 jlam Exp $
 #
 
 DISTNAME=	ftpproxy-${VERSION}
@@ -22,7 +22,7 @@ OSFLAG=		-DSOLARIS
 .endif
 MAKE_ENV+=	OSFLAG=${OSFLAG:Q} OSLIB=${LIBS:M*:Q} VERSION=${VERSION:Q}
 
-INSTALLATION_DIRS=	libexec man/man8
+INSTALLATION_DIRS=	libexec ${PKGMANDIR}/man8
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC:Q}/src/ftp.proxy ${PREFIX:Q}/libexec/

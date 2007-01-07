@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/16 06:57:45 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/09/09 02:41:57 obache Exp $
 #
 
 DISTNAME=	dmake-v4.1-src-export.all-unknown-all
@@ -16,7 +16,7 @@ MAKE_FILE=	makefile
 BUILD_TARGET=	linux
 WRKSRC=		${WRKDIR}/dmake
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-configure:
 	cd ${WRKSRC} && ${RM} unix/bsd43/dirent.h &&		\
@@ -26,7 +26,7 @@ do-configure:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dmake ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/man/dmake.tf ${PREFIX}/man/man1/dmake.1
+	${INSTALL_MAN} ${WRKSRC}/man/dmake.tf ${PREFIX}/${PKGMANDIR}/man1/dmake.1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/dmake
 	${CP} -pR ${WRKSRC}/startup ${PREFIX}/share/dmake
 

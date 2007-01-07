@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/11 19:42:25 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/12/15 14:34:21 wiz Exp $
 #
 
 DISTNAME=		RTF-1.10
@@ -14,7 +14,7 @@ COMMENT=		RTF to troff/groff/text converter
 
 WRKSRC=			${WRKDIR}/rtf
 INSTALL_TARGET=		install install.man
-INSTALLATION_DIRS=	bin man/manl
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/manl
 
 SUBST_CLASSES+=		rtf
 SUBST_STAGE.rtf=	pre-configure
@@ -46,7 +46,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rtfindent/rtfindent ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/rtfwc/rtfwc ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/man/rtf2troff.man \
-		${PREFIX}/man/manl/rtf2troff.l
+		${PREFIX}/${PKGMANDIR}/manl/rtf2troff.l
 
 .include "../../devel/libts/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

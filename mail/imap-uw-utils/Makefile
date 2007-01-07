@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:00 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/06 06:22:18 reed Exp $
 
 DISTNAME=	imap-utils
 PKGNAME=	imap-uw-utils-20050108
@@ -19,7 +19,7 @@ SRCDIRS=	icat ifrom
 CFLAGS+=	-I${BUILDLINK_PREFIX.imap-uw}/include/c-client
 LIBS+=		-lc-client -lssl -lcrypto
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-build:
 	@for prog in ${SRCDIRS}; do					\
@@ -33,7 +33,7 @@ do-install:
 		${ECHO} "==> Installing $${prog}";			\
 		cd ${WRKSRC}/$${prog};					\
 		${INSTALL_PROGRAM} $${prog} ${PREFIX}/bin;		\
-		${INSTALL_MAN} $${prog}.1 ${PREFIX}/man/man1;		\
+		${INSTALL_MAN} $${prog}.1 ${PREFIX}/${PKGMANDIR}/man1;		\
 	done
 
 .include "../../mail/imap-uw/buildlink3.mk"

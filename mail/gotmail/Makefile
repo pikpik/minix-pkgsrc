@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/12/29 06:21:50 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/02/05 23:09:55 joerg Exp $
 #
 
 DISTNAME=		gotmail-0.8.6
@@ -29,6 +29,6 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gotmail
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gotmail
 	${INSTALL_DATA} ${WRKSRC}/sample.gotmailrc ${EGDIR}
-	${INSTALL_MAN} ${WRKSRC}/gotmail.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/gotmail.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

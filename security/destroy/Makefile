@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:31 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/12/05 20:50:55 rillig Exp $
 #
 
 DISTNAME=	destroy-20040415
@@ -10,10 +10,10 @@ MAINTAINER=	shane@freebsdhackers.net
 HOMEPAGE=	http://www.freebsdhackers.net/destroy/
 COMMENT=	Program to securely destroy files on the hard disk
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/destroy ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/destroy.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/destroy.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

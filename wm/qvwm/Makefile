@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/07/22 04:46:19 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/12/15 20:33:02 joerg Exp $
 #
 
 DISTNAME=	qvwm-1.1.12
@@ -17,7 +17,7 @@ CONFIGURE_ENV+=	PATH_RM=${TOOLS_RM:Q}
 USE_LANGUAGES=	c c++
 
 post-install:
-	${MV} ${PREFIX}/man/man1/qvwm.1x ${PREFIX}/man/man1/qvwm.1
+	${MV} ${PREFIX}/${PKGMANDIR}/man1/qvwm.1x ${PREFIX}/${PKGMANDIR}/man1/qvwm.1
 
 .include "options.mk"
 .include "../../audio/esound/buildlink3.mk"

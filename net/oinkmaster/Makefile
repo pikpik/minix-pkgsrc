@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:28 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/03/09 14:06:03 adrianp Exp $
 
 DISTNAME=	oinkmaster-2.0
 CATEGORIES=	net
@@ -43,7 +43,7 @@ do-install:
 
 	${INSTALL_DATA} ${WRKSRC}/oinkmaster.conf ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/template-examples.conf ${EGDIR}
-	${INSTALL_MAN} ${WRKSRC}/oinkmaster.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/oinkmaster.1 ${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_SCRIPT} ${WRKSRC}/oinkmaster.pl ${PREFIX}/bin/oinkmaster
 	${LN} -s ${PKG_SYSCONFDIR}/classification.config \
 		${PREFIX}/share/snort/rules/classification.config

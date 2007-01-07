@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/02/05 23:08:29 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2006/03/04 21:29:07 jlam Exp $
 
 DISTNAME=	uudeview-0.5.20
 PKGNAME=	xdeview-0.5.20
@@ -19,7 +19,7 @@ BUILD_TARGET=	xdeview
 INSTALL_TARGET=	install-tcl
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/man/xdeview.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/man/xdeview.1 ${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../converters/uulib/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"

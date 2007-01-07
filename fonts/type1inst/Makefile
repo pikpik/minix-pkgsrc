@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/16 01:19:10 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:11 joerg Exp $
 #
 
 DISTNAME=		type1inst-0.6.1
@@ -14,12 +14,12 @@ USE_TOOLS+=		perl:run
 REPLACE_PERL=		t1embed type1inst
 
 NO_BUILD=		yes
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/type1inst ${PREFIX}/bin
 	@${INSTALL_SCRIPT} ${WRKSRC}/t1embed ${PREFIX}/bin
-	@${INSTALL_MAN} ${WRKSRC}/type1inst.man ${PREFIX}/man/man1/type1inst.1
+	@${INSTALL_MAN} ${WRKSRC}/type1inst.man ${PREFIX}/${PKGMANDIR}/man1/type1inst.1
 	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/type1inst
 	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/type1inst
 

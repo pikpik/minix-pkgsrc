@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/06/16 06:57:46 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/08 20:25:34 joerg Exp $
 
 DISTNAME=		ElectricFence-2.1
 PKGREVISION=		1
@@ -17,10 +17,10 @@ CFLAGS+=		-g -DPAGE_PROTECTION_VIOLATED_SIGNAL=SIGBUS
 CFLAGS+=		-g
 .endif
 
-INSTALLATION_DIRS=	lib man/man3
+INSTALLATION_DIRS=	lib ${PKGMANDIR}/man3
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libefence.a ${PREFIX}/lib
-	${INSTALL_MAN} ${WRKSRC}/libefence.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/libefence.3 ${PREFIX}/${PKGMANDIR}/man3
 
 .include "../../mk/bsd.pkg.mk"

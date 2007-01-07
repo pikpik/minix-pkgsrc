@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/06/02 18:30:14 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/07/22 04:46:17 rillig Exp $
 
 DISTNAME=	colortail-0.3.0
 CATEGORIES=	misc
@@ -15,7 +15,7 @@ CONFIGURE_ARGS+=--datadir=${PREFIX}/share/examples/colortail
 DESCR_SRC=	${WRKDIR}/.DESCR_SRC
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/colortail.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/colortail.1 ${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/colortail
 	cd ${WRKSRC}/example-conf/ && \
 	${INSTALL_DATA} conf.kernel conf.messages conf.secure \

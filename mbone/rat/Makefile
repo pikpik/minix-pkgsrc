@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/02/24 00:35:59 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/09/03 00:56:29 wiz Exp $
 #
 
 DISTNAME=	rat-3.0.28
@@ -17,7 +17,7 @@ USE_X11BASE=	yes
 
 USER=		build
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 post-patch:
 	${CP} ${WRKSRC}/Makefile_NetBSD_1 ${WRKSRC}/Makefile_NetBSD_2

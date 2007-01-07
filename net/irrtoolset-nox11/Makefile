@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 15:41:30 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/07/07 12:30:56 spz Exp $
 #
 
 DISTNAME=		IRRToolSet-4.8.2
@@ -12,7 +12,7 @@ COMMENT=		The Internet Routing Registry Toolset - client to IRRd
 
 USE_LANGUAGES=		c c++
 
-INSTALLATION_DIRS=	bin man/man1 man/man3
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man3
 
 LICENSE=		no-commercial-use
 

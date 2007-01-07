@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:28:57 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/05/26 12:33:37 drochner Exp $
 
 PKGNAME=	mpg123-esound-${MPG123_VERSION}
 PKGREVISION=	7
@@ -11,11 +11,11 @@ TARGET_SUFFIX=	-esd
 PKG_OPTIONS_VAR=PKG_OPTIONS.mpg123-esound
 .include "../../audio/mpg123/Makefile.common"
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mpg123 ${PREFIX}/bin/mpg123-esound
-	${INSTALL_MAN} ${WRKSRC}/mpg123.1 ${PREFIX}/man/man1/mpg123-esound.1
+	${INSTALL_MAN} ${WRKSRC}/mpg123.1 ${PREFIX}/${PKGMANDIR}/man1/mpg123-esound.1
 
 .include "../../audio/esound/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

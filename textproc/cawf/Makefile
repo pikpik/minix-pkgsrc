@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 23:11:00 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/22 22:50:33 tv Exp $
 #
 # Possible TODOs:
 # - set CH based on manual page section number, and real OS name
@@ -34,7 +34,7 @@ post-extract:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bsfilt ${WRKSRC}/cawf ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/*.1 ${PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/*.1 ${PREFIX}/${PKGMANDIR}/man1/
 	${INSTALL_DATA_DIR} ${PREFIX}/share/cawf
 	${INSTALL_DATA} ${WRKSRC}/common ${PREFIX}/share/cawf/
 	${INSTALL_DATA} ${WRKSRC}/device.cf ${PREFIX}/share/cawf/

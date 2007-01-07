@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:30:18 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/04/06 06:22:32 reed Exp $
 
 DISTNAME=	firewalk-5.0
 PKGREVISION=	1
@@ -23,6 +23,6 @@ MAKE_ENV+=	FIREWALK_LOC=${PREFIX:Q}
 .include "../../net/libpcap/buildlink3.mk"
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/man/firewalk.8 ${PREFIX}/man/man8
+	${INSTALL_MAN} ${WRKSRC}/man/firewalk.8 ${PREFIX}/${PKGMANDIR}/man8
 
 .include "../../mk/bsd.pkg.mk"

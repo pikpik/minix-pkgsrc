@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/12/29 06:22:03 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:24 jlam Exp $
 #
 
 DISTNAME=	export.socks.cstc.4.2.2
@@ -21,7 +21,7 @@ MAKE_ENV+=		OPTIMIZE=${CFLAGS:M*:Q}
 EGDIR=		${PREFIX}/share/examples/socks4
 CONF_FILES=	${EGDIR}/socks.conf ${PKG_SYSCONFDIR}/socks.conf
 
-INSTALLATION_DIRS=	bin lib libexec man/man1 man/man5 man/man8
+INSTALLATION_DIRS=	bin lib libexec ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 ${PKGMANDIR}/man8
 
 post-patch:
 	@cd ${WRKSRC};							\

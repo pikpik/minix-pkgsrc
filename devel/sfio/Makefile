@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/03/26 03:55:44 reed Exp $
+# $NetBSD: Makefile,v 1.14 2006/03/04 21:29:29 jlam Exp $
 #
 
 # pkgsrc/mail/sendmail (as of 8.11.0) specifically wants 1999, not 2000.
@@ -20,7 +20,7 @@ COMMENT=	Safe and Fast IO library
 
 WRKSRC=		${WRKDIR}
 
-INSTALLATION_DIRS=	man/man3
+INSTALLATION_DIRS=	${PKGMANDIR}/man3
 
 do-extract:
 	@${MKDIR} ${WRKDIR}

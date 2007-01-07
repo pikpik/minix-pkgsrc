@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/01/09 18:50:57 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/03 04:43:47 taca Exp $
 #
 
 DISTNAME=	newfile-1.0.14
@@ -19,7 +19,7 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/src/newfile.rb ${PREFIX}/bin/newfile
 	${INSTALL_DATA} ${WRKSRC}/src/fileproc.rb ${WRKSRC}/src/sytab.rb \
 		${PREFIX}/share/newfile/
-	${INSTALL_MAN} ${WRKSRC}/doc/newfile.1 ${PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/doc/newfile.1 ${PREFIX}/${PKGMANDIR}/man1/
 
 .include "../../lang/ruby/modules.mk"
 .include "../../mk/bsd.pkg.mk"

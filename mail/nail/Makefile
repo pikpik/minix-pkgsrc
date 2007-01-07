@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2005/11/20 11:08:39 cjep Exp $
+# $NetBSD: Makefile,v 1.32 2005/12/29 06:21:51 jlam Exp $
 
 DISTNAME=	nail-11.25
 CATEGORIES=	mail
@@ -29,11 +29,11 @@ EGDIR=		${PREFIX}/share/examples/nail
 
 CONF_FILES=     ${EGDIR}/nail.rc ${PKG_SYSCONFDIR}/nail.rc
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/nail ${PREFIX}/bin
-		${INSTALL_MAN} ${WRKSRC}/nail.1 ${PREFIX}/man/man1
+		${INSTALL_MAN} ${WRKSRC}/nail.1 ${PREFIX}/${PKGMANDIR}/man1
 		${INSTALL_DATA_DIR} ${EGDIR}
 		${INSTALL_DATA} ${WRKSRC}/nail.rc ${EGDIR}
 

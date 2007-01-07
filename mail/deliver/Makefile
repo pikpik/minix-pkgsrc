@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/06/20 22:13:33 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2006/10/28 15:17:17 schwarz Exp $
 
 DISTNAME=	deliver-2.1.14
 PKGREVISION=	1
@@ -39,8 +39,8 @@ post-install:
 	for FILE in deliver.1 header.1; do				\
 		CATFILE=`${BASENAME} $${FILE} .1`.0;			\
 		nroff -man $${FILE} > $${CATFILE};			\
-		${INSTALL_MAN} $${FILE} ${PREFIX}/man/man1;		\
-		${INSTALL_MAN} $${CATFILE} ${PREFIX}/man/cat1;		\
+		${INSTALL_MAN} $${FILE} ${PREFIX}/${PKGMANDIR}/man1;		\
+		${INSTALL_MAN} $${CATFILE} ${PREFIX}/${PKGMANDIR}/cat1;		\
 	done
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/deliver	\
 		${PREFIX}/share/examples/deliver

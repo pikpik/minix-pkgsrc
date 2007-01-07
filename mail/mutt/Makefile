@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.146 2006/11/02 07:52:50 joerg Exp $
+# $NetBSD: Makefile,v 1.147 2006/12/11 12:46:51 salo Exp $
 
 DISTNAME=		mutt-1.4.2.2i
 PKGREVISION=		3
@@ -101,7 +101,7 @@ pre-install:
 
 post-install:
 .if (${PKG_INSTALLATION_TYPE} == "pkgviews")
-	${MV} ${PREFIX}/man/man5/mutt-mbox.5 ${PREFIX}/man/man5/mbox.5
+	${MV} ${PREFIX}/${PKGMANDIR}/man5/mutt-mbox.5 ${PREFIX}/${PKGMANDIR}/man5/mbox.5
 .endif
 
 .include "../../mk/bsd.pkg.mk"

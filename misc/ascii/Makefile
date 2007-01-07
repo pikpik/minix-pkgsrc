@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/06/17 03:50:21 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:10 jlam Exp $
 #
 
 DISTNAME=	ascii-3.0
@@ -11,11 +11,11 @@ COMMENT=	ASCII character table program
 
 BUILD_TARGET= ascii
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ascii ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/ascii.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/ascii.1 ${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/ascii
 	${INSTALL_DATA} ${WRKSRC}/ascii.cgi ${PREFIX}/share/examples/ascii
 

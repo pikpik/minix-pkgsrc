@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/12/15 20:33:01 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/12/27 13:37:40 joerg Exp $
 #
 
 DISTNAME=	wmCalClock-1.25
@@ -20,10 +20,10 @@ USE_TOOLS+=	gmake
 MAKE_ENV+=	EXTRALIBS="-lsocket -lnsl"
 .endif
 
-INSTALLATION_DIRS=	bin man/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
-	${INSTALL_MAN} ${WRKSRC}/wmCalClock.1 ${PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKSRC}/wmCalClock.1 ${PREFIX}/${PKGMANDIR}/man1/
 	${INSTALL_PROGRAM} ${WRKSRC}/wmCalClock ${PREFIX}/bin/
 
 .include "../../x11/libXext/buildlink3.mk"

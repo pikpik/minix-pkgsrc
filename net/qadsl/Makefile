@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/02 14:13:04 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2006/10/04 21:53:18 wiz Exp $
 #
 # qadsl is now GNU Alive (wip/alive)
 
@@ -17,12 +17,12 @@ MANCOMPRESSED=	yes
 MAKE_ENV+=	LIBS=${LIBS:M*:Q}
 MAKE_ENV+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR:Q}
 
-INSTALLATION_DIRS=	man/man8 sbin share/examples
+INSTALLATION_DIRS=	${PKGMANDIR}/man8 sbin share/examples
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qadsl ${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/qadsl.conf \
 		${PREFIX}/share/examples/qadsl.conf.sample
-	${INSTALL_MAN} ${WRKSRC}/qadsl.8.gz ${PREFIX}/man/man8
+	${INSTALL_MAN} ${WRKSRC}/qadsl.8.gz ${PREFIX}/${PKGMANDIR}/man8
 
 .include "../../mk/bsd.pkg.mk"
