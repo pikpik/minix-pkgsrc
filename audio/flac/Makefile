@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.38 2006/11/02 17:59:37 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2006/12/15 14:34:19 wiz Exp $
 
-DISTNAME=	flac-1.1.2
-PKGREVISION=	1
+DISTNAME=	flac-1.1.3
 CATEGORIES=	audio archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flac/}
 
@@ -40,8 +39,9 @@ CONFIGURE_ARGS+=	--disable-asm-optimizations
 
 .include "../../mk/compiler.mk"
 
-# This version of flac doesn't seem to build correctly with -O3 using
+# Version 1.1.2 of flac doesn't seem to build correctly with -O3 using
 # the MIPSpro compiler.
+# XXX: retry for 1.1.3
 .if !empty(PKGSRC_COMPILER:Mmipspro)
 BUILDLINK_TRANSFORM+=	rm:-O3
 .endif
