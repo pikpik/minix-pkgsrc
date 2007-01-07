@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/12/06 18:30:11 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2006/12/09 01:59:54 markd Exp $
 #
 
 DISTNAME=	kaffeine-0.8.3
+PKGREVISION=	1
 CATEGORIES=	multimedia kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kaffeine/}
 EXTRACT_SUFX=	.tar.bz2

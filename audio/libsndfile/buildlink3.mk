@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/07/08 22:39:01 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 23:10:37 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBSNDFILE_BUILDLINK3_MK:=	${LIBSNDFILE_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libsndfile
 
 .if !empty(LIBSNDFILE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libsndfile+=		libsndfile>=1.0.0
-BUILDLINK_ABI_DEPENDS.libsndfile+=	libsndfile>=1.0.13nb1
+BUILDLINK_ABI_DEPENDS.libsndfile+=	libsndfile>=1.0.17nb1
 BUILDLINK_PKGSRCDIR.libsndfile?=	../../audio/libsndfile
 .endif	# LIBSNDFILE_BUILDLINK3_MK
 

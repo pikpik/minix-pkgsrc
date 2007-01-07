@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 23:10:59 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/12/12 21:52:36 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OCTAVE_BUILDLINK3_MK:=	${OCTAVE_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}octave
 
 .if !empty(OCTAVE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.octave+=	octave>=2.1.69
-BUILDLINK_ABI_DEPENDS.octave?=	octave>=2.1.72nb1
+BUILDLINK_ABI_DEPENDS.octave?=	octave>=2.1.73nb1
 BUILDLINK_PKGSRCDIR.octave?=	../../math/octave
 .endif	# OCTAVE_BUILDLINK3_MK
 
