@@ -1,9 +1,13 @@
-# $NetBSD: Makefile,v 1.39 2006/09/01 06:02:23 adam Exp $
+# $NetBSD: Makefile,v 1.40 2007/01/07 12:25:51 wiz Exp $
 
 DISTNAME=	libsndfile-1.0.17
 PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mega-nerd.com/libsndfile/
+
+PATCHFILES=	libsndfile-1.0.17+flac-1.1.3.patch.bz2
+PATCH_SITES=	${MASTER_SITE_GENTOO:=distfiles/}
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mega-nerd.com/libsndfile/
