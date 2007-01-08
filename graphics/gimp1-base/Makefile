@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/04 21:29:48 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/13 18:23:33 jlam Exp $
 #
 
 DISTNAME=		gimp-1.2.5
@@ -60,4 +60,5 @@ pre-build:
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../multimedia/mpeg-lib/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
