@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: pam-gnome-screensaver-NetBSD,v 1.1.1.1 2006/04/01 21:43:59 jmmv Exp $
 #
 # PAM configuration for the "gnome-screensaver" service
 #
 
 # auth
+auth		sufficient	pam_pwauth_suid.so
 auth		include		system
 
 # account
