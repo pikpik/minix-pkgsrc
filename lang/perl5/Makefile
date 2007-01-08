@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.123 2006/11/03 07:09:45 joerg Exp $
+# $NetBSD: Makefile,v 1.124 2006/11/03 10:48:05 joerg Exp $
 
 DISTNAME=	perl-5.8.8
 PKGREVISION=	3
@@ -242,7 +242,7 @@ CONFIGURE_ARGS+=	-Dlibswanted=${LIBSWANTED:Q}
 .include "../../mk/compiler.mk"
 
 .if ${OPSYS} == "IRIX"
-.  if ${ABI} == "64"
+.  if defined(ABI) && ${ABI} == "64"
 CONFIGURE_ARGS+=	-Dcc=${CC:Q}" -64" -Duse64bitint
 .  else
 CONFIGURE_ARGS+=	-Dcc=${CC:Q}" -n32"
