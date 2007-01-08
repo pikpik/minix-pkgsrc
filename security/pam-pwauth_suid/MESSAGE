@@ -1,0 +1,6 @@
+===========================================================================
+$NetBSD$
+
+The PAM authentication module "pam_pwauth_suid.so.0" needs to be
+installed into the directory "/usr/lib/security".
+===========================================================================
