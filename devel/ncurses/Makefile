@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.73 2006/10/13 18:07:49 tron Exp $
+# $NetBSD: Makefile,v 1.74 2006/11/05 17:49:34 joerg Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=	1
 COMMENT=	CRT screen handling and optimization package
 
 INSTALLATION_DIRS=	share/examples
@@ -20,10 +19,10 @@ SUBST_SED.ti+=		-e '/^screen.teraterm|/,/^$$/d'
 post-configure:
 	cd ${WRKSRC}/man;					\
 	for f in *.1m; do					\
-		${MV} -f $${f} `${BASENAME} $${f} .1m`.1; 	\
+		mv -f $${f} `${BASENAME} $${f} .1m`.1; 	\
 	done;							\
 	for f in *.3x; do					\
-		${MV} -f $${f} `${BASENAME} $${f} .3x`.3; 	\
+		mv -f $${f} `${BASENAME} $${f} .3x`.3; 	\
 	done
 
 post-install:

@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.8 2004/03/08 13:26:03 wiz Exp $
+$NetBSD$
 
---- c++/Makefile.in.orig	2005-06-13 00:52:56.000000000 +0200
+--- c++/Makefile.in.orig	2006-10-21 19:07:49.000000000 +0200
 +++ c++/Makefile.in
-@@ -152,7 +152,7 @@ LIB_OBJS = \
+@@ -154,7 +154,7 @@ LIB_OBJS = \
  
  ../lib/$(LIBNAME_LIBTOOL) : $(LIB_OBJS)
  	cd ../lib && $(LIBTOOL_LINK) $(CXX) $(CXXFLAGS) \
