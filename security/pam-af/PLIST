@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/security/pam_af.so
+man/man8/pam_af.8
+man/man8/pam_af_tool.8
+sbin/pam_af_tool
