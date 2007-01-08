@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/03 17:37:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/08 20:08:39 xtraeme Exp $
 
 DISTNAME=	ktorrent-${KTORRENT_VER}
 PKGREVISION=	1
@@ -16,8 +16,6 @@ USE_TOOLS+=		msgfmt perl:run
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
-
-CONFIGURE_ARGS+=	--enable-torrent-mimetype
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../security/openssl/buildlink3.mk"
