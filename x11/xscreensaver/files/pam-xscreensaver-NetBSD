@@ -1,0 +1,17 @@
+# $NetBSD$
+#
+# PAM configuration for the "xscreensaver" service
+#
+
+# auth
+auth		sufficient	pam_pwauth_suid.so
+auth		include		system
+
+# account
+account		include		system
+
+# session
+session		include		system
+
+# password
+password	include		system
