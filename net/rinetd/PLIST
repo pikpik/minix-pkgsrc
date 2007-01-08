@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/10/01 01:15:44 grant Exp $
-sbin/rinetd
+@comment $NetBSD: PLIST,v 1.2 2005/05/02 20:34:03 reed Exp $
 man/man8/rinetd.8
+sbin/rinetd
 share/examples/rc.d/rinetd
