@@ -1,6 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/05/21 22:21:10 ben Exp $
 include/portaudio2/portaudio.h
-lib/portaudio2/libportaudio.la
 lib/pkgconfig/portaudio-2.0.pc
+lib/portaudio2/libportaudio.la
 @dirrm include/portaudio2
 @dirrm lib/portaudio2
