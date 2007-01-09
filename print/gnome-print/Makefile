@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2006/06/01 16:17:42 joerg Exp $
+# $NetBSD: Makefile,v 1.75 2006/07/08 06:31:32 wiz Exp $
 
 DISTNAME=		gnome-print-0.37
 PKGREVISION=		2
@@ -38,4 +38,5 @@ BUILD_DEPENDS+=	ghostscript-fonts>=6.0:../../fonts/ghostscript-fonts
 .include "../../graphics/gdk-pixbuf-gnome/buildlink3.mk"
 .include "../../textproc/libunicode/buildlink3.mk"
 .include "../../textproc/libxml/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
