@@ -1,4 +1,4 @@
-# $NetBSD: bsd.extract.mk,v 1.1 2006/06/06 03:05:48 jlam Exp $
+# $NetBSD: bsd.extract.mk,v 1.2 2006/11/20 00:03:22 rillig Exp $
 #
 # This Makefile fragment is included to bsd.pkg.mk and defines the
 # relevant variables and targets for the "extract" phase.
@@ -28,6 +28,9 @@
 #	too.
 #
 #	Default action: Nothing.
+#
+#	Typical actions:
+#	* chmod -R a+r,u+w,go-w ${WRKSRC}
 #
 
 .include "${PKGSRCDIR}/mk/extract/extract.mk"
