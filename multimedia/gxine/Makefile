@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2007/01/05 14:54:29 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2007/01/07 12:25:54 wiz Exp $
 
-DISTNAME=	gxine-0.5.9
-PKGREVISION=	1
+DISTNAME=	gxine-0.5.10
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xine/}
 EXTRACT_SUFX=	.tar.bz2
@@ -33,5 +32,6 @@ CONF_FILES+=	${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .include "../../multimedia/xine-lib/buildlink3.mk"
 .include "../../www/firefox/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
