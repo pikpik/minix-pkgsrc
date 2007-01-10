@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.75 2006/10/19 06:40:54 martti Exp $
+# $NetBSD: Makefile,v 1.76 2007/01/07 09:14:04 rillig Exp $
 
-DISTNAME=	mrtg-2.14.7
+DISTNAME=	mrtg-2.15.0
 CATEGORIES=	net
 MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/old/ \
