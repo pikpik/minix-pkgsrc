@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/04 00:27:28 rillig Exp $
 #
 
 DISTNAME=	gdl-0.6.1
@@ -12,7 +12,7 @@ COMMENT=	Gnome Devtool Libraries
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config perl
+USE_TOOLS+=	pkg-config perl intltool
 
 PKGCONFIG_OVERRIDE+=	gdl-1.0.pc.in
 
