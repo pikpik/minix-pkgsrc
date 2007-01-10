@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/vblade
+sbin/vbladed
+man/man8/vblade.8
