@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/06/07 11:58:58 abs Exp $
+# $NetBSD: Makefile,v 1.2 2006/09/01 14:22:43 abs Exp $
 #
 
 DISTNAME=	List-MoreUtils-0.22
@@ -12,8 +12,10 @@ COMMENT=	Provide the stuff missing in List::Util
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/List/MoreUtils/.packlist
+
+# avoid trying to build the XS version.
+MAKE_PARAMS.makemaker+= -pm
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
