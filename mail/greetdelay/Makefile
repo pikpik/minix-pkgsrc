@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/12/29 10:49:25 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/06 02:52:31 schmonz Exp $
 #
 
 DISTNAME=	greetdelay-0.02
@@ -10,6 +10,8 @@ HOMEPAGE=	http://alkemio.org/software/greetdelay/
 COMMENT=	Introduces a small delay before an SMTP greeting
 
 BUILD_TARGET=	default
+
+USE_TOOLS+=	nroff
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
 
