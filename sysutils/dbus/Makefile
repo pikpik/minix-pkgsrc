@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/12/15 19:06:00 drochner Exp $
+# $NetBSD: Makefile,v 1.21 2006/12/17 15:39:33 jmmv Exp $
 #
 
 DISTNAME=	dbus-1.0.2
@@ -52,7 +52,7 @@ CONFIGURE_ARGS+=	--enable-verbose-mode
 .if !empty(PKG_OPTIONS:Mnox11)
 CONFIGURE_ARGS+=	--without-x
 .else
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .endif
 
 PKG_SYSCONFSUBDIR=	dbus-1
