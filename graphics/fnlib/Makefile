@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/04/17 13:46:04 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2006/07/19 19:14:38 jlam Exp $
 #
 
 DISTNAME=		fnlib-0.5
@@ -26,5 +26,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/fontinfo.README ${PREFIX}/share/doc/fnlib
 
 .include "../../graphics/imlib/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
