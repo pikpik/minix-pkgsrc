@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/10/02 23:03:33 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2006/10/04 22:06:56 wiz Exp $
 #
 
 DISTNAME=		XaoS-3.2.2
@@ -27,7 +27,10 @@ SUBST_SED.paths=	-e 's,/usr/share/locale,${PREFIX}/${PKGLOCALEDIR}/locale,g'
 
 INSTALLATION_DIRS=	${PKGINFODIR}
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
