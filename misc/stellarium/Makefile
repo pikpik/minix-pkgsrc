@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2006/10/01 10:27:19 adam Exp $
+# $NetBSD: Makefile,v 1.18 2006/10/06 21:01:57 adam Exp $
 
 DISTNAME=	stellarium-0.8.2
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stellarium/}
 
@@ -14,5 +15,6 @@ USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
 .include "../../devel/SDL/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
