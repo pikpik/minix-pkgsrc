@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/04/13 18:23:38 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:48 wiz Exp $
 
 DISTNAME=	kdirstat-2.4.3
 PKGREVISION=	3
@@ -17,6 +17,11 @@ GNU_CONFIGURE=          yes
 
 REPLACE_PERL=		kdirstat/fix_move_to_trash_bin.pl
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
