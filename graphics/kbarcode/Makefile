@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/10/15 12:39:10 markd Exp $
+# $NetBSD: Makefile,v 1.16 2006/11/08 10:01:33 markd Exp $
 
 DISTNAME=		kbarcode-2.0.5
 CATEGORIES=		graphics kde
@@ -19,6 +19,11 @@ DEPENDS+=	barcode-[0-9]*:../../graphics/barcode
 # Works only with KDE 3.3.x
 BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs>=3.3.0
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
