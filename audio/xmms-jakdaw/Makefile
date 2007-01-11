@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:29:00 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/10/04 20:44:20 wiz Exp $
 
 DISTNAME=	jakdaw-0.0.4
 PKGNAME=	xmms-${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	audio xmms
 MASTER_SITES=	http://www.jakdaw.ucam.org/xmms/
 
@@ -14,4 +14,5 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
 .include "../../audio/xmms/buildlink3.mk"
+.include "../../graphics/glu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
