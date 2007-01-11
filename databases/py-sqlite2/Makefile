@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/11/14 13:39:17 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/10 10:39:18 drochner Exp $
 
 DISTNAME=	pysqlite-2.3.2
 PKGNAME=	${PYPKGPREFIX}-sqlite2-2.3.2
@@ -10,6 +10,9 @@ HOMEPAGE=	http://initd.org/tracker/pysqlite
 COMMENT=	SQLite database adapter for Python
 
 PYDISTUTILSPKG=	yes
+
+do-test:
+	${PYTHONBIN} -c "from pysqlite2 import test;test.test()"
 
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../lang/python/extension.mk"
