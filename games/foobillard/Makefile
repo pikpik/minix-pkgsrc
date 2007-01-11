@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/04/17 13:46:27 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/06/12 16:28:08 wiz Exp $
 #
 
 DISTNAME=	foobillard-3.0a
@@ -28,5 +28,7 @@ CONFIGURE_ARGS+=	--enable-nvidia=no
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXi/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
