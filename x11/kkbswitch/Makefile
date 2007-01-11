@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:39 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/04/17 13:46:59 wiz Exp $
 #
 
 DISTNAME=		kkbswitch-1.4.3
@@ -17,6 +17,11 @@ GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--disable-ru-ua-layout
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
