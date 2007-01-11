@@ -1,23 +1,27 @@
 # $NetBSD: Makefile,v 1.12 2006/10/29 13:51:18 dsainty Exp $
 
 DISTNAME=	openexr-1.4.0a
-PKGNAME=	openexr-1.4.0
-PKGREVISION=	2
+PKGNAME=	openexr-exrdisplay-1.4.0
 CATEGORIES=	games
 MASTER_SITES=	http://savannah.nongnu.org/download/openexr/
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openexr.com/
-COMMENT=	High dynamic-range (HDR) image file format library and tools
+COMMENT=	GUI for openexr
 
-WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
+CONFLICTS+=	openexr<1.4.0nb1
+PATCHDIR=	${.CURDIR}/../../graphics/openexr/patches
+DISTINFO_FILE=	${.CURDIR}/../../graphics/openexr/distinfo
+
+WRKSRC=			${WRKDIR}/openexr-1.4.0
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-PKGCONFIG_OVERRIDE=	${WRKSRC}/OpenExr.pc.in
-TEST_TARGET=		check
 PTHREAD_OPTS+=		require
+
+BUILD_DIRS=		exrdisplay
+INSTALL_DIRS=		exrdisplay
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -26,4 +30,6 @@ LDFLAGS+=		-lmx
 .endif
 
 .include "../../mk/pthread.buildlink3.mk"
+.include "../../graphics/openexr/buildlink3.mk"
+.include "../../x11/fltk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
