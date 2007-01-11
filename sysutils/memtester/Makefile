@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2005/11/01 19:01:17 tv Exp $
+# $NetBSD: Makefile,v 1.14 2007/01/07 09:14:12 rillig Exp $
 #
 
-DISTNAME=		memtester-4.0.5
+DISTNAME=		memtester-4.0.6
 CATEGORIES=		sysutils
-MASTER_SITES=		${HOMEPAGE}
+MASTER_SITES=		${HOMEPAGE}old-versions/
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://pyropus.ca/software/memtester/
