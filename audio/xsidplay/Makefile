@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/04/17 13:46:17 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2006/05/22 22:58:19 wiz Exp $
 #
 
 DISTNAME=	xsidplay-1.6.5.1a
@@ -29,6 +29,11 @@ pre-configure:
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/src/xsidplay ${PREFIX}/bin
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../audio/libsidplay/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
