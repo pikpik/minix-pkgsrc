@@ -1,0 +1,19 @@
+# $NetBSD$
+#
+
+# INFO_MSG
+#	A shell command that prints the word "INFO:", followed by its
+#	arguments, onto stdout. Exits with EXIT_SUCCESS.
+#
+# WARNING_MSG
+#	A shell command that prints the word "WARNING:", followed by its
+#	arguments, onto stderr. Exits with EXIT_SUCCESS.
+#
+# ERROR_MSG
+#	A shell command that prints the word "ERROR:", followed by its
+#	arguments, onto stderr. Exits with EXIT_SUCCESS(!).
+#
+# FAIL_MSG
+#	A shell command that prints the word "ERROR:", followed by its
+#	arguments, onto stderr. Exits with EXIT_FAILURE.
+#
