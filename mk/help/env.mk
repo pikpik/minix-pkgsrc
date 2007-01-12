@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: env.mk,v 1.1 2006/10/25 17:21:35 rillig Exp $
 #
 # This file describes the *_ENV variables, where they are defined and
 # where they are used.
@@ -58,9 +58,5 @@
 #
 
 # INSTALL_SCRIPTS_ENV
-#	TODO
-#
-
-# PKGTOOLS_ENV
 #	TODO
 #
