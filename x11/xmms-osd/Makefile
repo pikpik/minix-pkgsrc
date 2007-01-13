@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:48 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/17 13:47:01 wiz Exp $
 #
 
 .include "../../x11/xosd/Makefile.common"
@@ -18,5 +18,6 @@ INSTALL_DIRS=		${WRKSRC}/src/xmms_plugin
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../graphics/gdk-pixbuf/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
+.include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/xosd/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
