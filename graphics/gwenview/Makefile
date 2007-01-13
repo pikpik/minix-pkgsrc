@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/10/06 20:23:47 markd Exp $
+# $NetBSD: Makefile,v 1.22 2006/12/03 05:07:08 markd Exp $
 #
 
 DISTNAME=	gwenview-1.4.1
@@ -20,8 +20,13 @@ CONFIGURE_ARGS+=	--enable-kipi
 
 SHLIBTOOL_OVERRIDE=	# empty
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
