@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+	To use fetchyahoo, copy
+	${PREFIX}/share/examples/fetchyahoo/fetchyahoorc to
+        ~/.fetchyahoorc and edit the config file or just run
+	fetchyahoo from the commandline.
+
+===========================================================================
