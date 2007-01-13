@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/02/27 15:49:56 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2006/05/13 13:18:20 joerg Exp $
 
 DISTNAME=	vicsrc-2.8
 PKGNAME=	${DISTNAME:S/src//}
@@ -25,5 +25,10 @@ USE_LANGUAGES=	c c++
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
 CONFIGURE_ARGS+=	--with-tk=${BUILDLINK_PREFIX.tk}
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/tk83/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
