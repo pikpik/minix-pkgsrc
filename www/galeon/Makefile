@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2006/09/24 16:30:09 salo Exp $
+# $NetBSD: Makefile,v 1.105 2006/10/30 21:29:34 drochner Exp $
 #
 
 DISTNAME=		galeon-2.0.3
@@ -34,7 +34,8 @@ CONF_FILES=		${EGDIR}/sound/events/galeon.soundlist \
 .include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
-.include "../../x11/gnome-desktop/buildlink3.mk"
 .include "../../www/seamonkey/gecko-depends.mk"
+.include "../../x11/gnome-desktop/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
