@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/12/15 20:32:52 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/01/07 12:25:52 wiz Exp $
 #
 
 DISTNAME=		lmms-0.2.0
@@ -25,6 +25,7 @@ BUILDLINK_ABI_DEPENDS.SDL+=	SDL>=1.2.11
 
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../audio/SDL_sound/buildlink3.mk"
+.include "../../audio/flac/buildlink3.mk"
 .include "../../audio/jack/buildlink3.mk"
 .include "../../audio/libsamplerate/buildlink3.mk"
 .include "../../audio/libsndfile/buildlink3.mk"
