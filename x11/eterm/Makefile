@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/11/19 01:52:40 obache Exp $
+# $NetBSD: Makefile,v 1.50 2006/11/25 14:01:18 sketch Exp $
 
 DISTNAME=	Eterm-0.9.4
 PKGNAME=	${DISTNAME:S/^E/e/}
@@ -53,6 +53,9 @@ post-extract:
 
 .include "../../devel/libast/buildlink3.mk"
 .include "../../graphics/imlib2/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXres/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
