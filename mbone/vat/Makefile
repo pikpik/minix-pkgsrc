@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2006/05/13 13:13:51 joerg Exp $
+# $NetBSD: Makefile,v 1.53 2006/09/03 00:56:29 wiz Exp $
 #
 
 DISTNAME=		vatsrc-4.0b2
@@ -21,6 +21,10 @@ CPPFLAGS+=		-I${LOCALBASE}/include -I${LOCALBASE}/include/gsm
 
 INSTALL_TARGET=		install install-man
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../audio/gsm/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/tk83/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
