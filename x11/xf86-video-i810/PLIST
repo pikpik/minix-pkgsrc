@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libI810XvMC.la
+lib/xorg/modules/drivers/i810_drv.la
+man/man4/i810.4
+@dirrm lib/xorg/modules/drivers
+@dirrm lib/xorg/modules
+@dirrm lib/xorg
