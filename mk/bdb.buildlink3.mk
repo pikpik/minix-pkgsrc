@@ -1,4 +1,4 @@
-# $NetBSD: bdb.buildlink3.mk,v 1.17 2006/07/08 23:11:17 jlam Exp $
+# $NetBSD: bdb.buildlink3.mk,v 1.18 2006/11/04 22:18:41 rillig Exp $
 #
 # This Makefile fragment is meant to be included by packages that
 # require a Berkeley DB implementation.  It abstracts finding the
@@ -17,7 +17,8 @@
 #   package can use any of db[234]
 #   package can use db-1.85 or any of db[234]
 #   package can use db-1.85 which is builtin and some subset of db[234]
-# This Makefile does not handle
+#
+# This Makefile does not handle:
 #   packages that need a specific version, e.g. db2
 #     [in such cases, include ../../database/db2/buildlink3.mk directly]
 #   packages that can use e.g. db3 or db4, but not db2
