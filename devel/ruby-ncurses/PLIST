@@ -1,6 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/26 23:00:51 xtraeme Exp $
 ${RUBY_SITEARCHLIBDIR}/ncurses_bin.${RUBY_DLEXT}
 ${RUBY_SITELIBDIR}/ncurses.rb
+${RUBY_EXAMPLESDIR}/ncurses/LICENSES_for_examples
 ${RUBY_EXAMPLESDIR}/ncurses/example.rb
 ${RUBY_EXAMPLESDIR}/ncurses/hello_ncurses.rb
 ${RUBY_EXAMPLESDIR}/ncurses/rain.rb
