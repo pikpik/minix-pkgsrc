@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2006/05/22 20:17:15 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2006/06/12 16:28:11 wiz Exp $
 
-DISTNAME=	wesnoth-1.0.2
-PKGREVISION=	6
+DISTNAME=	wesnoth-1.2.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wesnoth/}
 
@@ -11,8 +10,7 @@ COMMENT=	Fantasy turn-based strategy game
 
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES+=		c c++
-HAS_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
+GNU_CONFIGURE=		yes
 
 UNLIMIT_RESOURCES+=	datasize
 
