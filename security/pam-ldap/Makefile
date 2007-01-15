@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2006/02/05 23:10:45 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2006/05/31 18:22:26 ghen Exp $
 #
 
-DISTNAME=	pam_ldap-180
+DISTNAME=	pam_ldap-183
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.padl.com/pub/
 MASTER_SITES+=	http://www.padl.com/download/
@@ -21,7 +20,7 @@ CONFIGURE_ARGS+=	--with-ldap-conf-file=${PKG_SYSCONFDIR}/pam_ldap.conf
 CONFIGURE_ARGS+=	--with-ldap-secret-file=${PKG_SYSCONFDIR}/pam_ldap.secret
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
-MAKE_ENV+=		SHLIBTOOL=$(SHLIBTOOL)
+MAKE_ENV+=		SHLIBTOOL=${SHLIBTOOL:Q}
 
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR}
 INSTALL_TARGET=		install install-data

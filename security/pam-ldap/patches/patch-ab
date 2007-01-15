@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.5 2005/01/12 02:30:09 xtraeme Exp $
 
 --- pam_ldap.c.orig	Sun Oct 31 02:42:54 2004
 +++ pam_ldap.c	Sun Oct 31 02:48:03 2004
@@ -145,4 +145,3 @@ $NetBSD$
  		}
  	    }
  	  else if (!strcmp (newpass, miscptr))
-
