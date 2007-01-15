@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/06/28 04:55:49 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/06/28 05:01:12 rillig Exp $
 
 DISTNAME=	xneko
 PKGNAME=	xneko-4.4
@@ -30,5 +30,5 @@ post-install:
 	  esac; \
 	done
 
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
