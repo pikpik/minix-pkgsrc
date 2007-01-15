@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/01/14 05:56:29 jonb Exp $
+# $NetBSD: Makefile,v 1.11 2007/01/14 06:04:56 jonb Exp $
 
 DISTNAME=		${PKGNAME_NOREV}-source
 PKGNAME=		sbcl-1.0.1
@@ -68,6 +68,6 @@ do-build:
 	cd ${WRKSRC} && ${SH} make.sh "${SBCL_BOOT_SYSTEM}"
 
 do-install:
-	cd ${WRKSRC} && INSTALL_ROOT=${PREFIX} ${SH} install.sh
+	cd ${WRKSRC} && INSTALL_ROOT=${PREFIX} MAN_DIR=${PREFIX}/${PKGMANDIR} ${SH} install.sh
 
 .include "../../mk/bsd.pkg.mk"
