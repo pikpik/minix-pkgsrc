@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2006/07/08 23:11:15 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2006/09/15 15:11:52 jmmv Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBXKLAVIER_BUILDLINK3_MK:=	${LIBXKLAVIER_BUILDLINK3_MK}+
@@ -17,5 +17,6 @@ BUILDLINK_PKGSRCDIR.libxklavier?=	../../x11/libxklavier
 .endif	# LIBXKLAVIER_BUILDLINK3_MK
 
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../x11/libxkbfile/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
