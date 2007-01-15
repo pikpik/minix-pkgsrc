@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2006/08/30 14:53:28 adam Exp $
+# $NetBSD: Makefile,v 1.35 2006/09/16 21:47:43 rillig Exp $
 
 DISTNAME=	gnustep-make-1.13.0
+PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 
@@ -27,7 +28,6 @@ REPLACE.csh.old=	/bin/csh
 REPLACE.csh.new=	${CSH}
 REPLACE_FILES.csh=	ld_lib_path.csh
 
-.include "../../mk/x11.buildlink3.mk"
 .include "gnustep.mk"
 
 .if ${MACHINE_ARCH} == "i386"
