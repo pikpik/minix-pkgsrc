@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.49 2006/09/09 02:41:54 obache Exp $
+# $NetBSD: Makefile,v 1.50 2006/11/14 13:50:13 joerg Exp $
 
-DISTNAME=	unrarsrc-3.6.8
+DISTNAME=	unrarsrc-3.7.2
 PKGNAME=	${DISTNAME:S/src//}
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/ \
