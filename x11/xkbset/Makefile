@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:47 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/07/27 00:09:06 hubertf Exp $
 #
 
 DISTNAME=	xkbset-0.3
@@ -14,5 +14,5 @@ USE_X11BASE=	yes
 USE_TOOLS+=	perl
 REPLACE_PERL=	mskacc-gui
 
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
