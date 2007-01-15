@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/07/21 14:27:56 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2006/12/29 12:50:03 joerg Exp $
 
 DISTNAME=	xephem-3.7.1
 PKGREVISION=	1
@@ -58,5 +58,4 @@ do-install:
 	${CHOWN} -R ${SHAREOWN} ${PREFIX}/share/xephem
 
 .include "../../mk/motif.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
