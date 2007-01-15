@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2005/11/07 20:39:19 tv Exp $
+# $NetBSD: Makefile,v 1.10 2006/10/04 21:47:16 wiz Exp $
 #
 
-DISTNAME=		safecat-1.12
+DISTNAME=		safecat-1.13
 CATEGORIES=		mail
 MASTER_SITES=		http://jeenyus.net/~budney/linux/software/safecat/
 
