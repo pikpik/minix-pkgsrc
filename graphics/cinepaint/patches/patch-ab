@@ -1,8 +1,8 @@
 $NetBSD$
 
---- plug-ins/tiff/tiff_plug_in.h.orig	2005-01-17 13:47:42.000000000 +0000
+--- plug-ins/tiff/tiff_plug_in.h.orig	2006-05-28 11:40:18.000000000 +0200
 +++ plug-ins/tiff/tiff_plug_in.h
-@@ -143,9 +143,6 @@
+@@ -144,9 +144,6 @@
    #endif
  #endif
  
