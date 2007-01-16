@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xmessage
+lib/X11/app-defaults/Xmessage
+lib/X11/app-defaults/Xmessage-color
+man/man1/xmessage.1
