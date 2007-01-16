@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/04/17 13:46:11 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/06/20 17:49:56 joerg Exp $
 #
 
 DISTNAME=		exo-0.3.0
@@ -21,7 +21,12 @@ PKGCONFIG_OVERRIDE+=	${WRKSRC}/exo/exo-0.3.pc.in
 
 CONFIGURE_ARGS+=	--disable-python --with-html-dir=${PREFIX}/share/doc
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libxfce4gui/buildlink3.mk"
 .include "../../x11/libxfce4util/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
