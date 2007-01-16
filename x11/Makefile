@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.466 2006/12/28 10:22:08 wiz Exp $
+# $NetBSD: Makefile,v 1.467 2007/01/14 10:21:13 joerg Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -86,6 +86,7 @@ SUBDIR+=	gtoolkit
 SUBDIR+=	hanterm
 SUBDIR+=	hot-babe
 SUBDIR+=	hsetroot
+SUBDIR+=	iceauth
 SUBDIR+=	imwheel
 SUBDIR+=	inputproto
 SUBDIR+=	kbproto
@@ -386,6 +387,7 @@ SUBDIR+=	xlockmore-lite
 SUBDIR+=	xlogout
 SUBDIR+=	xlupe
 SUBDIR+=	xmascot
+SUBDIR+=	xmessage
 SUBDIR+=	xmindpath
 SUBDIR+=	xmms-osd
 SUBDIR+=	xmodmap
