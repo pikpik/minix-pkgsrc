@@ -7,7 +7,7 @@ $NetBSD$
  #ifdef HAVE_ICONV_H
    QCString utf8Encoded( s.length()*2 );
 -#ifdef Q_OS_FREEBSD
-+#if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
++#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(__DragonFly__)
    const char* in = s.data();
  #else
    char* in = s.data();
@@ -16,7 +16,7 @@ $NetBSD$
  
    result.resize( s.length() * 2 );
 -#ifdef Q_OS_FREEBSD
-+#if defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)
++#if (defined(Q_OS_FREEBSD) || defined(Q_OS_NETBSD)) && !defined(__DragonFly__)
    const char* in = s.data();
  #else
    char* in = s.data();
