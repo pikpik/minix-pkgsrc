@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2007/01/17 14:29:11 tron Exp $
+# $NetBSD: Makefile,v 1.160 2007/01/17 17:36:51 salo Exp $
 
 DISTNAME=	fetchmail-6.3.6
 CATEGORIES=	mail
@@ -17,6 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-hesiod
+CONFIGURE_ENV+=		PYTHON=:
 LDFLAGS+=		${CFLAGS}
 USE_TOOLS+=		msgfmt tbl
 
