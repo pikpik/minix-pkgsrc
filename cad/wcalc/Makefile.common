@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.5 2005/12/05 23:55:02 rillig Exp $
+# $NetBSD: Makefile.common,v 1.6 2006/01/08 06:31:54 dmcmahill Exp $
 #
 
 DISTNAME=       wcalc-1.0
@@ -13,6 +13,8 @@ PATCHDIR=	${.CURDIR}/../../cad/wcalc/patches
 
 GNU_CONFIGURE=  YES
 USE_LIBTOOL=	YES
+
+USE_PKGLOCALEDIR=	yes
 
 # uses vpath and a GNU make pattern rule
 USE_TOOLS+=	gmake pkg-config
