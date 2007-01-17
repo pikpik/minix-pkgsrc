@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/bsign
+man/man1/bsign.1
+share/doc/bsign/scripts/bsign_check
+share/doc/bsign/scripts/bsign_hash
+share/doc/bsign/scripts/bsign_sign
+share/doc/bsign/scripts/bsign_verify
+@dirrm share/doc/bsign/scripts
+@dirrm share/doc/bsign
