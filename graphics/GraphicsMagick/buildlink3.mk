@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/07/20 17:53:42 minskim Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/10/23 12:11:35 obache Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GRAPHICSMAGICK_BUILDLINK3_MK:=	${GRAPHICSMAGICK_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}GraphicsMagick
 
 .if ${GRAPHICSMAGICK_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.GraphicsMagick+=	GraphicsMagick>=1.1.7
+BUILDLINK_ABI_DEPENDS.GraphicsMagick?=	GraphicsMagick>=1.1.7nb1
 BUILDLINK_PKGSRCDIR.GraphicsMagick?=	../../graphics/GraphicsMagick
 .endif	# GRAPHICSMAGICK_BUILDLINK3_MK
 

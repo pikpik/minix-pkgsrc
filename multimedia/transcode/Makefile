@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2006/08/06 05:16:51 kristerw Exp $
+# $NetBSD: Makefile,v 1.34 2006/08/24 16:06:25 xtraeme Exp $
 #
 
 DISTNAME=	transcode-1.0.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.fkb.wormulon.net/transcode/ \
 		http://dl.kel.wormulon.net/transcode/ \

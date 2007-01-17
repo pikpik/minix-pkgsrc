@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2006/04/17 13:46:50 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/02 09:22:31 martti Exp $
 #
 
 DISTNAME=	fvwm-themes-${THEM_VER}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fvwm-themes/}
 EXTRACT_SUFX=	.tar.bz2
