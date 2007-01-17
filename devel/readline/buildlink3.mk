@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.26 2006/10/01 14:23:20 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.27 2006/12/12 21:52:35 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 READLINE_BUILDLINK3_MK:=	${READLINE_BUILDLINK3_MK}+
@@ -19,7 +19,7 @@ BUILDLINK_PKGSRCDIR.readline?=		../../devel/readline
 BUILDLINK_FILES.readline+=	include/history.h
 BUILDLINK_FILES.readline+=	include/readline.h
 
-BUILDLINK_TRANSFORM.readline+= \
+BUILDLINK_FNAME_TRANSFORM.readline+= \
 	-e "s|include/history\.h|include/readline/history.h|g"		\
 	-e "s|include/readline\.h|include/readline/readline.h|g"
 
