@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/02 09:49:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2006/04/17 13:46:12 wiz Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -8,6 +8,11 @@ PKGREVISION=	4
 CATEGORIES=	x11
 COMMENT=	Xfce settings manager plugins
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xfce4-mcs-manager/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
