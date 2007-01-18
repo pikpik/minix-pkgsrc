@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2005/12/27 17:40:50 reed Exp $
+# $NetBSD: Makefile,v 1.21 2006/11/05 17:23:45 joerg Exp $
 
 DISTNAME=		libart_lgpl-2.3.17
 PKGNAME=		${DISTNAME:S/_lgpl/2/}
@@ -17,5 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE=	libart-2.0.pc.in
+# bmake cannot handle the self-made libtool logic in Makefile.am.
+USE_TOOLS+=		gmake
 
 .include "../../mk/bsd.pkg.mk"
