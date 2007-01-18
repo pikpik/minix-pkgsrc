@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2006/07/19 19:14:38 jlam Exp $
+# $NetBSD: Makefile,v 1.83 2006/11/02 18:17:22 joerg Exp $
 
 DISTNAME=		glib-1.2.10
 PKGREVISION=		10
@@ -23,6 +23,7 @@ PKGCONFIG_OVERRIDE+=	gmodule.pc.in
 PKGCONFIG_OVERRIDE+=	gthread.pc.in
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/glib
 INFO_FILES=		yes
+MAKE_JOBS_SAFE=		no
 
 TEST_TARGET=		check
 
