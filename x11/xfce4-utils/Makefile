@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/04/17 13:46:13 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/12/12 06:19:33 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -19,6 +19,11 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 
 .include "options.mk"
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xfce4-mcs-plugins/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
