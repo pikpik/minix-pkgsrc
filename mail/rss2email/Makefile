@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/07/01 19:32:40 schmonz Exp $
+# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:59 rillig Exp $
 #
 
 DISTNAME=		rss2email-2.59
@@ -31,7 +31,8 @@ INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-extract:
 	${_PKG_SILENT}${_PKG_DEBUG}					\
-	${CP} ${DISTDIR}/${DISTFILES:Q} ${WRKSRC}/rss2email.py
+	${CP} ${DISTDIR}/${DISTFILES:Q} ${WRKSRC}/rss2email.py;		\
+	cd ${FILESDIR} && cp config.py r2e r2e.1 ${WRKSRC}
 
 do-install:
 	cd ${WRKSRC} &&							\
