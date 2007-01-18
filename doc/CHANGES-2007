@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2007,v 1.173 2007/01/18 14:42:58 ghen Exp $
+$NetBSD: CHANGES-2007,v 1.174 2007/01/18 18:07:33 joerg Exp $
 
 Changes to the packages collection and infrastructure in 2007:
 
@@ -261,3 +261,4 @@ Changes to the packages collection and infrastructure in 2007:
 	Updated x11/damageproto to 1.1.0 [joerg 2007-01-18]
 	Updated x11/randrproto to 1.2.0 [joerg 2007-01-18]
 	Updated x11/xproto to 7.0.10 [joerg 2007-01-18]
+	Updated biology/mummer to 3.19 [rillig 2007-01-18]
