@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:28 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/24 11:06:40 drochner Exp $
 
 PKGNAME=			${PYPKGPREFIX}-${DISTNAME}
 PKGREVISION=			1
@@ -9,6 +9,7 @@ CONFIGURE_ARGS+=		--enable-python
 CONFIGURE_ARGS+=		--with-python=${PYTHONBIN:Q}
 
 MAKE_FLAGS+=			PYTHON_SITE=${LOCALBASE}/${PYSITELIB}
+CFLAGS+=			-fPIC
 
 INSTALL_DIRS=			${WRKSRC}/python
 
