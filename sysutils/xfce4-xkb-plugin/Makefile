@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/04/17 13:46:14 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/05/04 06:14:51 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -10,5 +10,6 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://download.berlios.de/xfce-goodies/
 COMMENT=	Xfce Keyboard plugin
 
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xfce4-panel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
