@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2006/11/03 10:48:05 joerg Exp $
+# $NetBSD: Makefile,v 1.125 2007/01/08 07:13:54 rillig Exp $
 
 DISTNAME=	perl-5.8.8
 PKGREVISION=	3
@@ -75,6 +75,7 @@ CONFIGURE_ARGS+=	-Ui_malloc
 CONFIGURE_ARGS+=	-Uusemymalloc
 CONFIGURE_ARGS+=	-Uinstallusrbinperl
 MAKE_ENV+=		LC_ALL="C"
+MAKE_JOBS_SAFE=		no
 
 TEST_TARGET=		test
 
