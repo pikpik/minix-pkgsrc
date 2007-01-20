@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.54 2006/11/13 18:15:14 drochner Exp $
+# $NetBSD: Makefile,v 1.55 2006/12/08 05:44:19 rillig Exp $
 
-DISTNAME=	gnutls-1.4.5
+DISTNAME=	gnutls-1.6.1
 CATEGORIES=	security devel
 MASTER_SITES=	http://josefsson.org/gnutls/releases/ \
 		ftp://ftp.gnutls.org/pub/gnutls/ \
@@ -16,6 +16,7 @@ COMMENT=	GNU Transport Layer Security library
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake
