@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/07/08 22:39:21 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/07/08 23:10:53 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 ANTHY_BUILDLINK3_MK:=	${ANTHY_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}anthy
 
 .if !empty(ANTHY_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.anthy+=	anthy>=6300
-BUILDLINK_ABI_DEPENDS.anthy?=	anthy>=7100bnb1
+BUILDLINK_ABI_DEPENDS.anthy?=	anthy>=7900
 BUILDLINK_PKGSRCDIR.anthy?=	../../inputmethod/anthy
 .endif  # ANTHY_BUILDLINK3_MK
 
