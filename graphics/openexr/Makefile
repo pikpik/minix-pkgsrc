@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2006/10/29 13:51:18 dsainty Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/11 19:03:05 drochner Exp $
 
 DISTNAME=	openexr-1.4.0a
 PKGNAME=	openexr-1.4.0
 PKGREVISION=	2
-CATEGORIES=	games
+CATEGORIES=	graphics
 MASTER_SITES=	http://savannah.nongnu.org/download/openexr/
 
 MAINTAINER=	adam@NetBSD.org
