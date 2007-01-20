@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/06/24 14:25:46 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/09/03 00:56:28 wiz Exp $
 #
 
 DISTNAME=	cvs2cl-2.59
@@ -10,16 +10,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.red-bean.com/cvs2cl/
 COMMENT=	CVS-log-message-to-ChangeLog conversion script
 
-EXTRACT_CMD=	${ECHO}
 WRKSRC=		${WRKDIR}
-NO_CONFIGURE=	YES
-NO_BUILD=	YES
+NO_BUILD=	yes
 USE_TOOLS+=	perl
 
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_SCRIPT} ${DISTDIR}/${DISTNAME} \
-		${PREFIX}/bin/${DISTNAME:C/-.*$//}
+	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin/cvs2cl
 
 .include "../../mk/bsd.pkg.mk"
