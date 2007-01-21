@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2006/11/13 21:37:12 drochner Exp $
+# $NetBSD: Makefile,v 1.21 2006/12/05 10:22:27 wiz Exp $
 #
 
 .include "Makefile.common"
 
-PKGCONFIG_OVERRIDE=	libgda-2.0.pc.in
+PKGCONFIG_OVERRIDE=	libgda-3.0.pc.in
 
 PKG_SYSCONFSUBDIR=	libgda
 EGDIR=			${PREFIX}/share/examples/libgda
