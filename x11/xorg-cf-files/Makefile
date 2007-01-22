@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/12/19 22:54:51 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/03 08:15:53 joerg Exp $
 #
 
 DISTNAME=		xorg-cf-files-1.0.2
+PKGREVISION=		1
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/util/
 EXTRACT_SUFX=		.tar.bz2
