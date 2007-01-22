@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 21:12:55 joerg Exp $
 #
 
-DISTNAME=		libXaw-1.0.1
+DISTNAME=		libXaw-1.0.3
 CATEGORIES=		graphics x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
