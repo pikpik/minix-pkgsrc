@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2006/05/18 20:29:59 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2006/12/06 15:36:31 taca Exp $
 #
 
 DISTNAME=	FD-2.09a
 PKGNAME=	fd-2.09a
+PKGREVISION=	1
 CATEGORIES=	misc shells
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA012337/soft/fd/
 
