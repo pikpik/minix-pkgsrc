@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/02/05 23:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2006/04/17 13:46:32 wiz Exp $
 #
 
 PKGREVISION=		6
@@ -11,5 +11,5 @@ CONFLICTS+=             gnuplot-nox11-[0-9]*
 .include "../../graphics/gnuplot/Makefile.common"
 
 .include "../../graphics/plotutils/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
