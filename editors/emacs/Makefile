@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2006/07/02 10:03:14 rillig Exp $
+# $NetBSD: Makefile,v 1.98 2006/12/15 20:32:54 joerg Exp $
 
 DISTNAME=	emacs-${EMACSVERSION}a
 PKGREVISION=	7
@@ -6,6 +6,8 @@ CATEGORIES=	editors
 COMMENT=	GNU editing macros (editor)
 
 .include "../../editors/emacs/Makefile.common"
+
+USE_TOOLS+=	imake
 
 CONFLICTS+=	emacs-nox11-[0-9]*
 
@@ -37,6 +39,7 @@ CONFIGURE_ARGS+=	--with-x-toolkit=motif
 .include "../../x11/Xaw3d/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-x-toolkit=athena
 .else
+.include "../../x11/libXaw/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-x-toolkit=athena
 .endif
 
