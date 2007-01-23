@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2006/12/12 06:19:33 martti Exp $
+# $NetBSD: Makefile,v 1.27 2007/01/18 20:55:15 joerg Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfce-utils-${XFCE4_VERSION}
 PKGNAME=	xfce4-utils-${XFCE4_VERSION}
-PKGREVISION=	6
+#PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	Xfce utilities
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2006/08/11 09:43:09 drochner Exp $
+# $NetBSD: Makefile,v 1.21 2007/01/15 21:35:47 joerg Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	libxfcegui4-${XFCE4_VERSION}
 PKGNAME=	libxfce4gui-${XFCE4_VERSION}
-PKGREVISION=	4
+#PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	Xfce widget library
 

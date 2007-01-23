@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2006/04/17 13:46:13 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2007/01/18 15:25:15 joerg Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfce4-session-${XFCE4_VERSION}
 #PKGREVISION=	1
-PKGREVISION=	4
 CATEGORIES=	x11
 COMMENT=	Xfce session manager
 
