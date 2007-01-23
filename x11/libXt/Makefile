@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 20:50:11 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/16 21:25:01 joerg Exp $
 #
 
-DISTNAME=		libXt-1.0.3
-PKGREVISION=		1
+DISTNAME=		libXt-1.0.4
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
