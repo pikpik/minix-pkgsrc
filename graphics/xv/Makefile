@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2006/09/09 02:42:02 obache Exp $
+# $NetBSD: Makefile,v 1.67 2006/12/27 13:37:38 joerg Exp $
 
 DISTNAME=	xv-3.10a
 PKGREVISION=	12
@@ -28,7 +28,7 @@ LICENSE=	xv-license
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(LOWER_OPSYS:Mirix5*)
+.if !empty(LOWER_OPSYS:Mirix5*) || !empty(LOWER_OPSYS:Msolaris*)
 CPPFLAGS+=	-DNEED_ALLOCA_H
 .endif
 
