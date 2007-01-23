@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 21:26:36 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2006/11/03 22:35:46 joerg Exp $
 
+# Do NOT update to 2.1.12 as XftNameUnparse is removed again, but
+# referenced in other packages.
 DISTNAME=	libXft-2.1.10
 CATEGORIES=	fonts x11
 MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/lib/
