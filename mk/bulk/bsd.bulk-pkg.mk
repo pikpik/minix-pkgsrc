@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.132 2007/01/15 07:12:15 rillig Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.133 2007/01/22 12:24:20 rillig Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>
@@ -356,7 +356,7 @@ bulk-package:
 	  ${ECHO} "###"; \
 	  ${ECHO} ""; \
 	} | ${TEE} -a ${_BUILDLOG}
-	${RUN} \
+	${RUN} set +e; \
 	uptodate=`${RECURSIVE_MAKE} ${MAKEFLAGS} bulk-check-uptodate REF=${PKGFILE}` ; \
 	if [ $$uptodate = 1 ]; then \
 		{ ${BULK_MSG} "Nothing to be done for ${PKGNAME}." ; \
