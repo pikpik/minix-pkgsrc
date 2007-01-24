@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/02/05 23:10:31 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/07/27 18:48:03 jlam Exp $
 
 DISTNAME=		speedtouch-1.3.1
 PKGREVISION=		4
@@ -36,6 +36,8 @@ PLIST_SUBST+=           PPPOA3=""
 PLIST_SUBST+=           PPPOA3="@comment "
 CONFIGURE_ENV+=		ac_cv_lib_pthread_pthread_create=no
 .endif
+
+CHECK_PORTABILITY_SKIP+=	doc-linux/*
 
 pre-extract:
 	${MKDIR} ${WRKDIR}/firmware
