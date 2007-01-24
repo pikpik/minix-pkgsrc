@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2005/06/22 21:11:35 is Exp $
+# $NetBSD: Makefile,v 1.27 2005/12/28 04:40:46 reed Exp $
 #
 
 .include "Makefile.common"
-
-PKGREVISION=	2
 
 CONFIGURE_ARGS+=	--disable-wordview
 CONFIGURE_ENV+=		enable_wordview=no
