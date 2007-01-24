@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/07/08 23:10:48 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/12/12 21:52:35 joerg Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 SUBVERSION_BASE_BUILDLINK3_MK:=	${SUBVERSION_BASE_BUILDLINK3_MK}+
@@ -22,7 +22,7 @@ BUILDLINK_PKGSRCDIR.subversion-base?=	../../devel/subversion-base
 BUILDLINK_FILES.subversion-base+=	bin/svn-config
 .endif	# SUBVERSION_BASE_BUILDLINK3_MK
 
-.include "../../devel/apr/buildlink3.mk"
+.include "../../devel/apr0/buildlink3.mk"
 .include "../../www/neon/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

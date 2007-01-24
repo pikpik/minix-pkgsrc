@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/08/08 12:28:47 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2007/01/06 15:37:02 rillig Exp $
 
 DISTNAME=		rapidsvn-0.9.4
 CATEGORIES=		devel x11
@@ -27,7 +27,7 @@ post-install:
 		${PREFIX}/${PKGMANDIR}/man1
 
 
-.include "../../devel/apr/buildlink3.mk"
+.include "../../devel/apr0/buildlink3.mk"
 .include "../../devel/subversion-base/buildlink3.mk"
 .include "../../x11/wxGTK/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

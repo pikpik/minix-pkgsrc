@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/10/13 12:25:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.39 2006/11/03 19:34:11 joerg Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
 COMMENT=	Version control system, base programs and libraries
@@ -22,7 +22,7 @@ CONFIGURE_ARGS+=	--without-apxs
 BUILDLINK_API_DEPENDS.apr+=		apr>=0.9.5
 BUILDLINK_API_DEPENDS.neon+=	neon>=0.24.7
 
-.include "../../devel/apr/buildlink3.mk"
+.include "../../devel/apr0/buildlink3.mk"
 .include "../../www/neon/buildlink3.mk"
 
 .if !empty(PKG_BUILD_OPTIONS.apr:Mdb4)
