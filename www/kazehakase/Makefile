@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2006/07/07 15:49:34 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/09/24 16:26:54 salo Exp $
 #
 
-DISTNAME=	kazehakase-0.3.3
-PKGREVISION=	3
+DISTNAME=	kazehakase-0.4.3
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=kazehakase/17700/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=kazehakase/22887/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kazehakase.sourceforge.jp/

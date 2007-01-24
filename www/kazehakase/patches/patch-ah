@@ -1,13 +1,13 @@
-$NetBSD: patch-ah,v 1.1.1.1 2005/08/11 17:43:10 reed Exp $
+$NetBSD$
 
---- src/actions/Makefile.in.orig	2005-08-28 23:22:16.000000000 +0000
-+++ src/actions/Makefile.in
-@@ -80,7 +80,7 @@ AMTAR = @AMTAR@
- AM_CFLAGS = @AM_CFLAGS@
+--- src/actions/Makefile.in.orig	2006-11-28 09:27:07.000000000 -0600
++++ src/actions/Makefile.in	2007-01-23 20:12:28.000000000 -0600
+@@ -48,7 +48,7 @@
+ 
  AM_CPPFLAGS = \
  	-DSYSCONFDIR=\""$(sysconfdir)"\" \
 -        -DKZ_SYSCONFDIR=\""$(sysconfdir)/$(PACKAGE)"\" \
 +        -DKZ_SYSCONFDIR=\""$(sysconfdir)"\" \
  	-DGTK_DISABLE_DEPRECATED=1 \
  	-DGDK_DISABLE_DEPRECATED=1 \
- 	-DG_DISABLE_DEPRECATED=1
+ 	-DG_LOG_DOMAIN=\"Kazehakase-Actions\" \
