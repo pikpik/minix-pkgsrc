@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2006/06/07 12:42:39 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/07/07 15:49:33 jlam Exp $
 #
 
-DISTNAME=	gift-openft-0.2.1.3
-PKGREVISION=	3
+DISTNAME=	gift-openft-0.2.1.6
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gift/}
 

@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/05/08 02:06:07 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:47 jlam Exp $
 lib/giFT/libOpenFT.la
 share/giFT/OpenFT/OpenFT.conf.template
 share/giFT/OpenFT/nodes
 @dirrm share/giFT/OpenFT
+@unexec ${RMDIR} %D/lib/giFT 2>/dev/null || ${TRUE}
