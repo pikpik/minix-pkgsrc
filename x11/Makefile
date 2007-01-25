@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.470 2007/01/17 16:08:59 joerg Exp $
+# $NetBSD: Makefile,v 1.471 2007/01/18 19:57:38 kristerw Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -440,6 +440,7 @@ SUBDIR+=	xview-clients
 SUBDIR+=	xview-config
 SUBDIR+=	xview-lib
 SUBDIR+=	xwatchwin
+SUBDIR+=	xwd
 SUBDIR+=	xwit
 SUBDIR+=	xworld
 SUBDIR+=	xwrits
