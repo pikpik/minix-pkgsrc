@@ -19,9 +19,9 @@ post-patch:
 
 .if !empty(PKG_OPTIONS:Mapache22)
 BUILDLINK_API_DEPENDS.apache?=	apache>=2.0.48
-PKG_APACHE_ACCEPTED=		apache22
+PKG_APACHE_ACCEPTED=	apache22
 .else
-PKG_APACHE_ACCEPTED=		apache2
+PKG_APACHE_ACCEPTED=	apache2
 .endif
 
 .include "../../devel/subversion-base/buildlink3.mk"
