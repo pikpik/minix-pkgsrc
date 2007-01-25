@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.190 2006/12/20 01:04:47 joerg Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.191 2007/01/17 03:11:19 rillig Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -89,7 +89,11 @@ ECHO_BUILDLINK_MSG?=	${ECHO_WRAPPER_MSG}
 BUILDLINK_DIR=		${WRKDIR}/.buildlink
 BUILDLINK_BINDIR=	${BUILDLINK_DIR}/bin
 BUILDLINK_SRCDIR=	${.CURDIR}/../../mk/buildlink3
+.if ${X11_TYPE} == "modular"
+BUILDLINK_X11_DIR=	${BUILDLINK_DIR}
+.else
 BUILDLINK_X11_DIR=	${BUILDLINK_DIR:H}/.x11-buildlink
+.endif
 
 .PHONY: do-buildlink
 
