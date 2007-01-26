@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/04/22 09:22:17 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/06/11 14:42:40 joerg Exp $
 #
 
 DISTNAME=		matchbox-common-0.9.1
@@ -23,5 +23,4 @@ SUBST_FILES.session=	matchbox-session
 SUBST_SED.session=	-e 's|/etc/matchbox|${PKG_SYSCONFDIR}|g'
 
 .include "../../devel/libmatchbox/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
