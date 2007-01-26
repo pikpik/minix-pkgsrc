@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2005/08/17 03:29:27 jwise Exp $
+# $NetBSD: Makefile,v 1.25 2005/08/20 19:31:00 kristerw Exp $
 
 DISTNAME=	MHonArc-2.6.15
 PKGNAME=	mhonarc-2.6.15
@@ -23,7 +23,7 @@ do-install:
 		-binpath ${PREFIX}/bin \
 		-libpath ${PREFIX}/lib/mhonarc \
 		-docpath ${PREFIX}/share/doc/mhonarc \
-		-manpath ${PREFIX}/man \
+		-manpath ${PREFIX}/${PKGMANDIR} \
 		-batch
 
 .include "../../mk/bsd.pkg.mk"
