@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/07/11 14:42:04 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/12/12 21:52:38 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -23,6 +23,8 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xextproto
 BUILDLINK_API_DEPENDS.xextproto+=	xextproto>=7.0
 BUILDLINK_PKGSRCDIR.xextproto?=	../../x11/xextproto
 .endif	# XEXTPROTO_BUILDLINK3_MK
+
+.include "../../x11/inputproto/buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
 
