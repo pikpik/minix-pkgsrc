@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2007/01/15 16:31:03 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2007/01/17 23:47:22 wiz Exp $
 #
 
 DISTNAME=	kssh-0.7
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	security kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kssh/}
 
@@ -18,6 +18,7 @@ GNU_CONFIGURE=	YES
 BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../meta-pkgs/kde3/kde3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../net/kdenetwork3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
