@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.277 2006/12/17 10:34:03 wiz Exp $
+# $NetBSD: Makefile,v 1.278 2007/01/06 02:08:44 wiz Exp $
 #
 
 COMMENT=	Games
@@ -16,6 +16,7 @@ SUBDIR+=	angband-x11
 SUBDIR+=	anise
 SUBDIR+=	aop
 SUBDIR+=	asc
+SUBDIR+=	atomix
 SUBDIR+=	baduki
 SUBDIR+=	bastet
 SUBDIR+=	battalion
