@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ospcplay
+include/openspc.h
+lib/libopenspc.la
