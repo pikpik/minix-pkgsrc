@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2006/09/25 13:23:22 tron Exp $
+# $NetBSD: Makefile,v 1.16 2006/12/15 20:32:59 joerg Exp $
 
 DISTNAME=	fxtv-1.03
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	multimedia
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz
@@ -31,8 +31,12 @@ pre-configure:
 
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/Xaw3d/buildlink3.mk"
+.include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
