@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/03/04 21:31:11 jlam Exp $
+# $NetBSD: Makefile,v 1.42 2006/05/25 10:43:38 wiz Exp $
 
 DISTNAME=		tkman-2.2
 PKGREVISION=		1
@@ -26,5 +26,4 @@ post-install:
 		${FILESDIR}/mkindex > ${WRKDIR}/mkindex
 	${INSTALL_SCRIPT} ${WRKDIR}/mkindex ${PREFIX}/libexec
 
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
