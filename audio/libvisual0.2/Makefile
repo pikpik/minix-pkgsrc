@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2006/06/25 19:19:34 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/03 23:29:50 wiz Exp $
 #
 
 DISTNAME=		libvisual-0.2.0
 PKGNAME=		libvisual0.2-0.2.0
+PKGREVISION=		1
 CATEGORIES=		audio graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=libvisual/}
 
@@ -24,5 +25,4 @@ USE_TOOLS+=		pkg-config
 CPPFLAGS+=		-mmmx
 .endif
 
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
