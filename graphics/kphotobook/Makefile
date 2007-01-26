@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2007/01/11 11:26:44 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2007/01/17 23:47:20 wiz Exp $
 #
 
 DISTNAME=	kphotobook-0.0.6
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	kde graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kphotobook/}
 
@@ -18,6 +18,7 @@ GNU_CONFIGURE=	YES
 BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../meta-pkgs/kde3/kde3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
