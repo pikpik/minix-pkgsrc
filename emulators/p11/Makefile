@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.14 2006/06/16 16:15:42 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/06/24 09:11:42 joerg Exp $
 #
 
-DISTNAME=	p11-2.10a
-PKGREVISION=	2
+DISTNAME=	p11-2.10i
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/cats/usr/harti/p11/
+MASTER_SITES=	http://people.freebsd.org/~harti/p11/
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	packages@grumpf.hope-2000.org
 COMMENT=	PDP11 emulator
 
 GNU_CONFIGURE=		yes

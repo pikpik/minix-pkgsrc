@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- instruct.c.orig	2000-12-04 18:03:41.000000000 +0100
++++ instruct.c	2006-04-18 02:21:40.000000000 +0200
+@@ -107,7 +107,7 @@
+ }
+ void NEGB(void) {
+ 	dst = -dst;
+-	TestW(dst);
++	TestB(dst);
+ 	proc.c = (dst != 0);
+ 	proc.v = (dst == 0200);
+ }
