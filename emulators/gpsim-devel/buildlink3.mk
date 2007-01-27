@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 22:39:16 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 23:10:49 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GPSIM_BUILDLINK3_MK:=	${GPSIM_BUILDLINK3_MK}+
@@ -17,6 +17,6 @@ BUILDLINK_ABI_DEPENDS.gpsim+=	gpsim>=20050905nb3
 BUILDLINK_PKGSRCDIR.gpsim?=	../../emulators/gpsim-devel
 .endif	# GPSIM_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
-
 .include "../../x11/gtk2/buildlink3.mk"
+
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
