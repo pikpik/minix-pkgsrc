@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.6 2006/07/25 16:49:05 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2006/09/16 12:20:42 jmmv Exp $
 #
 
-PKGNAME=		ruby-gnome2-gnome-${VERSION}
+PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gnome-${VERSION}
 COMMENT=		Ruby binding of libgnome/libgnomeui-2.x
-PKGREVISION=		1
 CATEGORIES=		gnome x11
+
+CONFLICTS+=		ruby-gnome2-gnome-[0-9]*
 
 RUBY_EXTCONF_SUBDIRS=	gnome
 
-DEPENDS+=		ruby-gnome2-gnomecanvas>=${VERSION}:../../graphics/ruby-gnome2-gnomecanvas
+DEPENDS+=		${RUBY_PKGPREFIX}-gnome2-gnomecanvas>=${VERSION}:../../graphics/ruby-gnome2-gnomecanvas
 
 USE_TOOLS+=		pkg-config
 

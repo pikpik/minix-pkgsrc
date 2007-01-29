@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.3 2006/04/17 13:46:35 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2006/07/25 16:49:05 minskim Exp $
 #
 
-PKGNAME=		ruby-gnome2-libart-${VERSION}
+PKGNAME=		${RUBY_PKGPREFIX}-gnome2-libart-${VERSION}
 COMMENT=		Ruby binding of Libart_lgpl
 CATEGORIES=		graphics
 
+CONFLICTS+=		ruby-gnome2-libart-[0-9]*
+
 RUBY_EXTCONF_SUBDIRS=	libart
 
-DEPENDS+=		ruby-gnome2-glib>=${VERSION}:../../devel/ruby-gnome2-glib
+DEPENDS+=		${RUBY_PKGPREFIX}-gnome2-glib>=${VERSION}:../../devel/ruby-gnome2-glib
 USE_TOOLS+=		pkg-config
 
 .include "../../graphics/jpeg/buildlink3.mk"
