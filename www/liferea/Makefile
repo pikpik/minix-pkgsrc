@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2006/12/08 19:40:39 drochner Exp $
+# $NetBSD: Makefile,v 1.50 2007/01/23 18:23:08 drochner Exp $
 
 DISTNAME=		liferea-1.2.4
 CATEGORIES=		www
@@ -10,7 +10,7 @@ COMMENT=		Simple FeedReader clone for reading RSS/RDF feeds
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
-USE_TOOLS+=		gmake pkg-config msgfmt perl
+USE_TOOLS+=		gmake pkg-config msgfmt perl intltool
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
