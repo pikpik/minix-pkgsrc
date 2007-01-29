@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/22 18:52:25 minskim Exp $
 #
 
 DISTNAME=		YouGrabber-0.20
+PKGREVISION=		1
 CATEGORIES=		net multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=yougrabber/}
 
@@ -19,4 +20,5 @@ do-install:
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
