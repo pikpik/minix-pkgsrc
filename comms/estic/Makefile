@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/09/09 02:41:55 obache Exp $
+# $NetBSD: Makefile,v 1.24 2006/09/16 10:06:16 rillig Exp $
 
 DISTNAME=	estic-1.61
 PKGREVISION=	1
@@ -33,8 +33,6 @@ MAKE_FILE=	make/freebsd-x.mak
 
 INSTALLATION_DIRS=	bin
 
-.include "../../mk/x11.buildlink3.mk"
-
 post-extract:
 	${_PKG_SILENT}${_PKG_DEBUG}cd ${WRKSRC} && \
 	${LOCALBASE}/bin/unzip -p ${DISTDIR}/${ESTICPATCH} | \
@@ -54,4 +52,5 @@ do-install:
 	cd ${WRKSRC}/samples && \
 	${INSTALL_DATA} * ${PREFIX}/share/examples/estic
 
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
