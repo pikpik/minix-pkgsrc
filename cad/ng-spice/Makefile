@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2006/03/05 16:27:23 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2006/03/30 03:44:41 jlam Exp $
 #
 
 DISTNAME=	ng-spice-rework-17
@@ -27,5 +27,6 @@ TEXINFO_REQD=	4.6
 .include "../../devel/libgetopt/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
