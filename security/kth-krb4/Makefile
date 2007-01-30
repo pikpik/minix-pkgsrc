@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2006/06/04 13:41:10 joerg Exp $
+# $NetBSD: Makefile,v 1.46 2006/09/07 08:46:20 wennmach Exp $
 #
 
 DISTNAME=		krb4-1.2.2
@@ -55,5 +55,5 @@ post-install:
 	${INSTALL_DATA} ${FILESDIR}/services-1.5.diff ${EXAMPLEDIR}
 
 .include "../../security/openssl/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
