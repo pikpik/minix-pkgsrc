@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:43 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/09/09 02:46:09 obache Exp $
 #
 
 DISTNAME=	ssystem-1.6
@@ -34,5 +34,4 @@ do-install:
 
 .include "../../graphics/Mesa/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
