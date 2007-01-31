@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.6 2005/08/22 09:47:30 cube Exp $
+@comment $NetBSD: PLIST,v 1.7 2006/10/02 12:39:30 obache Exp $
 ${MILTER}sbin/amavis
 ${MILTER}sbin/amavis-milter
 sbin/amavisd
 sbin/amavisd-nanny
+sbin/amavisd-release
 share/doc/amavisd-new/AAAREADME.first
 share/doc/amavisd-new/INSTALL
 share/doc/amavisd-new/LDAP.schema

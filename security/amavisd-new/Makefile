@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2006/10/02 12:39:30 obache Exp $
+# $NetBSD: Makefile,v 1.25 2006/12/10 02:00:59 xtraeme Exp $
 
 DISTNAME=	amavisd-new-${VERSION}${PATCHLEVEL}
 PKGNAME=	amavisd-new-${VERSION}${PATCHLEVEL:S/-//}
+PKGREVISION=	1
 CATEGORIES=	security mail
 MASTER_SITES=	http://www.ijs.si/software/amavisd/ \
 		http://mirrors.catpipe.net/amavisd-new/ \
@@ -37,7 +38,7 @@ CONFLICTS+=	amavis-perl-[0-9]*
 .include "../../mk/bsd.prefs.mk"
 
 USE_TOOLS+=		perl:run
-REPLACE_PERL+=		amavisd amavisd-nanny
+REPLACE_PERL+=		amavisd amavisd-nanny amavisd-release
 
 AMAVIS_USER?=		vscan
 AMAVIS_GROUP?=		vscan
@@ -112,6 +113,7 @@ do-install:
 .endif
 	${INSTALL_SCRIPT} ${WRKSRC}/amavisd ${PREFIX}/sbin/amavisd
 	${INSTALL_SCRIPT} ${WRKSRC}/amavisd-nanny ${PREFIX}/sbin/amavisd-nanny
+	${INSTALL_SCRIPT} ${WRKSRC}/amavisd-release ${PREFIX}/sbin/amavisd-release
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/AAAREADME.first ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${DOCDIR}
