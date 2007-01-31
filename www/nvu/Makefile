@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/10/21 21:54:12 rillig Exp $
 #
 
 DISTNAME=	nvu-1.0-sources
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.nvu.com/
 COMMENT=	Web Authoring System
 
 BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 WRKSRC=		${WRKDIR}/mozilla
 GNU_CONFIGURE=	yes

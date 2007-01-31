@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/06/22 19:23:03 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/07/06 17:36:06 rillig Exp $
 #
 
 DISTNAME=		strace-4.5.14
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		christos@NetBSD.org
 HOMEPAGE=		http://www.liacs.nl/~wichert/strace/
 COMMENT=		Trace system calls
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 #			NetBSD < 3.99.16
 NOT_FOR_PLATFORM=	NetBSD-[012]*-* NetBSD-3.[0-9][._]*-* \

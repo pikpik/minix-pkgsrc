@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/05/22 22:22:02 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2006/06/13 16:50:59 joerg Exp $
 #
 
 DISTVERSION=		2.0.7.1
@@ -11,6 +11,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Cross-compile environment for iX86 Linux, libc v6
 
 BUILD_DEPENDS+=		rpm-[0-9]*:../../misc/rpm
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 CHECK_SHLIBS_SUPPORTED=	no
 

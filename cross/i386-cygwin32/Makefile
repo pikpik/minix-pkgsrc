@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/16 18:12:09 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:07 jlam Exp $
 #
 
 DISTVERSION=		1.0.0.0
@@ -8,6 +8,8 @@ PKGREVISION=		3
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Cross-compile environment for Cywin32/i386
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 WRKSRC=			${WRKDIR}/${EGCS_DISTNAME}
 USE_CROSS_BINUTILS=	yes

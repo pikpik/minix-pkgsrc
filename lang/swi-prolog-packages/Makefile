@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/12/15 20:32:58 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/12/27 13:37:38 joerg Exp $
 
 .include "../../lang/swi-prolog-lite/Makefile.common"
 
@@ -7,6 +7,8 @@ PKGREVISION=		1
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Packages for SWI Prolog
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 GNU_CONFIGURE=		yes
 OVERRIDE_DIRDEPTH=	3

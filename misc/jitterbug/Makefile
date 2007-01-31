@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/03/10 20:18:38 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2006/03/14 01:14:30 jlam Exp $
 
 DISTNAME=	jitterbug-1.6.2
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://jitterbug.samba.org/pub/jitterbug/
 MAINTAINER=	wennmach@NetBSD.org
 HOMEPAGE=	http://jitterbug.samba.org/
 COMMENT=	Web-oriented bug-tracking tool
+
+BROKEN_IN=		pkgsrc-2006Q4
 
 .if exists(/usr/sbin/user)
 ADDUSER=		/usr/sbin/useradd
