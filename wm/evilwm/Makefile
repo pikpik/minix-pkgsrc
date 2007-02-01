@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/04/27 10:03:05 sketch Exp $
+# $NetBSD: Makefile,v 1.24 2007/01/07 09:14:15 rillig Exp $
 #
 
 DISTNAME=	evilwm-0.99.25
@@ -11,8 +11,6 @@ COMMENT=	Minimalist Window Manager for X
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
-.include "../../mk/x11.buildlink3.mk"
-
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/evilwm ${PREFIX}/bin/evilwm
 	${INSTALL_MAN} ${WRKSRC}/evilwm.1 ${PREFIX}/${PKGMANDIR}/man1/evilwm.1
@@ -22,4 +20,6 @@ do-install:
 	    ${INSTALL_DATA} ${WRKSRC}/$$docfile ${PREFIX}/share/doc/evilwm/; \
 	done
 
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
