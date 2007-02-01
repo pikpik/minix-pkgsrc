@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	libmusepack
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libmusepack
 
 .if !empty(LIBMUSEPACK_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.libmusepack+=		libmusepack>=1.2.4
+BUILDLINK_API_DEPENDS.libmusepack+=		libmusepack>=1.0.3
 BUILDLINK_PKGSRCDIR.libmusepack?=	../../audio/libmusepack
 .endif	# LIBMUSEPACK_BUILDLINK3_MK
 
