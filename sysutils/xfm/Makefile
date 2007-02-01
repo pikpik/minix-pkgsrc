@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/01 22:45:15 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/15 20:33:01 joerg Exp $
 
 DISTNAME=	xfm-1.4.3
 PKGREVISION=	2
@@ -16,5 +16,6 @@ USE_IMAKE=	YES
 
 .include "../../x11/Xaw3d/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
