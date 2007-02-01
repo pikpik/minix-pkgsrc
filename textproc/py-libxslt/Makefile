@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2006/11/05 08:37:04 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2006/12/07 14:38:12 joerg Exp $
 
-DISTNAME=	libxslt-1.1.18
+DISTNAME=	libxslt-1.1.20
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc python
 MASTER_SITES=	ftp://xmlsoft.org/libxslt/
