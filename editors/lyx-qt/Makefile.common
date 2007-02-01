@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.42 2006/08/10 03:21:40 minskim Exp $
+# $NetBSD: Makefile.common,v 1.43 2006/11/10 17:48:48 reed Exp $
 #
 
 DISTNAME=		lyx-1.4.3
@@ -101,4 +101,3 @@ SUBST_SED.python=	-e "s,python ,${PYTHONBIN} ,"
 .include "../../textproc/aiksaurus/buildlink3.mk"
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
