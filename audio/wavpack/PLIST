@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/wavpack
+bin/wvgain
+bin/wvunpack
+include/wavpack/wavpack.h
+lib/libwavpack.la
+lib/pkgconfig/wavpack.pc
+@dirrm include/wavpack
