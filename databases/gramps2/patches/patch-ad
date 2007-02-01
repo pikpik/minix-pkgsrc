@@ -1,13 +1,13 @@
 $NetBSD$
 
---- src/ReadGedcom.py.orig	2005-12-02 06:08:01.000000000 +0100
-+++ src/ReadGedcom.py
-@@ -56,7 +56,7 @@ import DisplayTrace
- from ansel_utf8 import ansel_to_utf8
- import Utils
- import GrampsMime
+--- src/GrampsDb/_ReadGedcom.py.orig	2007-01-31 21:14:07.000000000 +0100
++++ src/GrampsDb/_ReadGedcom.py
+@@ -31,7 +31,7 @@ import os
+ import re
+ import string
+ import time
 -from bsddb import db
 +from bsddb3 import db
- from GedcomInfo import *
- from QuestionDialog import ErrorDialog, WarningDialog
+ from gettext import gettext as _
  
+ # and module sets for earlier pythons

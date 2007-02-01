@@ -1,13 +1,13 @@
 $NetBSD$
 
---- src/GrampsBSDDB.py.orig	2005-08-15 04:30:17.000000000 +0200
-+++ src/GrampsBSDDB.py
-@@ -34,7 +34,7 @@ import time
- import locale
- import sets
+--- src/GrampsDb/_GrampsBSDDB.py.orig	2007-01-31 21:10:04.000000000 +0100
++++ src/GrampsDb/_GrampsBSDDB.py
+@@ -35,7 +35,7 @@ import shutil
+ import re
+ import time
  from gettext import gettext as _
 -from bsddb import dbshelve, db
 +from bsddb3 import dbshelve, db
+ import logging
+ log = logging.getLogger(".GrampsDb")
  
- #-------------------------------------------------------------------------
- #
