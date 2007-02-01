@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/02/21 22:42:39 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/04/17 13:46:50 wiz Exp $
 #
 
 DISTNAME=	whiteBOX-0.5
@@ -24,5 +24,4 @@ pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/whiteBOX/plugins
 
 .include "../../graphics/gdk-pixbuf/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
