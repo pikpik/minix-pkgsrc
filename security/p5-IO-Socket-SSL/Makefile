@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2006/09/05 11:21:00 abs Exp $
+# $NetBSD: Makefile,v 1.24 2006/11/05 17:35:59 joerg Exp $
 
-DISTNAME=	IO-Socket-SSL-0.999
+DISTNAME=	IO-Socket-SSL-1.02
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5iss
 CATEGORIES=	security net perl5
