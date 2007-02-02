@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/06/12 16:28:09 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/09/25 14:15:25 joerg Exp $
 #
 
 DISTNAME=	glaxium_0.5
@@ -29,5 +29,4 @@ SUBST_MESSAGE.bill=	Fixing data path.
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glut/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
