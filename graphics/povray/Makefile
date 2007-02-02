@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/05/06 11:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2006/09/07 09:26:24 gavan Exp $
 
 DISTNAME=	povray-3.6.1
 PKGREVISION=	5
@@ -37,9 +37,13 @@ CONF_FILES+=	${EGDIR}/povray.ini ${PKG_SYSCONFDIR}/povray.ini
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/povray-3.6/scripts
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
