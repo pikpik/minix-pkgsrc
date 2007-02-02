@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/04/17 13:46:35 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2006/07/02 10:12:52 rillig Exp $
 
 DISTNAME=	pstoedit-3.41
 PKGREVISION=	2
@@ -40,5 +40,4 @@ post-install:
 	${INSTALL_DATA} ${DOCSRC}/readme.txt	${DOCDIR}
 
 .include "../../graphics/plotutils/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
