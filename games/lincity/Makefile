@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/07/02 10:11:09 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2007/01/07 09:13:54 rillig Exp $
 
 DISTNAME=	lincity-1.12.1
 PKGREVISION=	1
@@ -25,6 +25,11 @@ pre-install:
 post-install:
 	${LN} -sf lincity.6 ${PREFIX}/${PKGMANDIR}/man6/xlincity.6
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
