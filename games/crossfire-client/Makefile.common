@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.common,v 1.1.1.1 2006/05/11 05:57:14 adam Exp $
 
 DISTNAME=	crossfire-client-${CROSSFIRE_VERSION}
 CATEGORIES=	games x11
@@ -25,4 +25,3 @@ SUBST_SED.dsp=		-e "s|/dev/dsp|${DEVOSSAUDIO}|"
 
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
