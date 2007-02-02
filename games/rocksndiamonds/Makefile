@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/07/22 23:16:42 heinz Exp $
+# $NetBSD: Makefile,v 1.32 2006/10/01 14:34:01 rillig Exp $
 
 DISTNAME=	rocksndiamonds-3.2.0
 CATEGORIES=	games x11
@@ -77,5 +77,4 @@ do-install:
 		done ;							\
 	done
 
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
