@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/06/01 18:02:52 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:23 joerg Exp $
 #
 
 DISTNAME=		spellcast
@@ -13,6 +13,6 @@ HOMEPAGE=		http://www.eblong.com/zarf/spellcast.html
 COMMENT=		Game of dueling wizards for two players
 
 USE_X11BASE=		yes
-.include "../../mk/x11.buildlink3.mk"
 
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
