@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2006/06/20 22:20:49 minskim Exp $
+# $NetBSD: Makefile,v 1.29 2006/07/17 15:48:47 rillig Exp $
 #
 
-DISTNAME=	tin-1.8.2
+DISTNAME=	tin-1.8.3
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.tin.org/pub/news/clients/tin/current/ \
 		ftp://ftp.cs.tu-berlin.de/pub/net/news/tin/current/ \
