@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.36 2006/07/08 23:10:50 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.37 2006/12/12 21:52:35 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MESALIB_BUILDLINK3_MK:=	${MESALIB_BUILDLINK3_MK}+
@@ -29,5 +29,7 @@ BUILDLINK_TRANSFORM+=		l:MesaGL:GL
 .if !empty(MACHINE_PLATFORM:MNetBSD-[12].*)
 .include "../../devel/pthread-stublib/buildlink3.mk"
 .endif
+
+.include "../../x11/libXext/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
