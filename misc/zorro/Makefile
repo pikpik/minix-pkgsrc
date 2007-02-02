@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:10:14 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/03/04 21:30:13 jlam Exp $
 
 DISTNAME=	zorro-1.1p8
 PKGNAME=	zorro-1.1.8
@@ -14,8 +14,6 @@ DEPENDS+=	tk>=8.3.2:../../x11/tk
 NO_BUILD=	yes
 
 INSTALLATION_DIRS=	bin
-
-.include "../../mk/x11.buildlink3.mk"
 
 post-patch:
 	( cd ${WRKSRC} ; ${SED} 's|@PREFIX@|'${PREFIX}'|g' \
