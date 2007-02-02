@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:44 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/04 21:43:01 wiz Exp $
 #
 
 DISTNAME=	xroads-v0.5
@@ -13,5 +13,5 @@ COMMENT=	Overhead view maze-based shoot 'em up game
 
 WRKSRC=		${WRKDIR}/xroads-v0.5
 
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
