@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/10/24 08:57:30 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2006/11/19 11:50:24 wiz Exp $
 
 DISTNAME=	bzflag-2.0.2.20050318
 PKGNAME=	${DISTNAME:S/.20050318//}
@@ -35,7 +35,5 @@ CHECK_PORTABILITY_SKIP+=	debian/*
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
-
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
