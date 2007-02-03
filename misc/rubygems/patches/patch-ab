@@ -1,3 +1,5 @@
+$NetBSD$
+
 Index: lib/rubygems/installer.rb
 ===================================================================
 --- lib/rubygems/installer.rb	(revision 1195)
