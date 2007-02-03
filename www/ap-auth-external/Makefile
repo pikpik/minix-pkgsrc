@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/19 09:00:24 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/24 15:06:57 sborrill Exp $
 #
 
 DISTNAME=	mod_auth_external-${DISTVERS}
@@ -15,12 +15,14 @@ PKG_APACHE_ACCEPTED=	apache13 apache2
 
 .include "../../mk/apache.mk"
 
-APACHE_MODULE_NAME=	mod_auth_external.so
+APACHE_MODULE_NAME=	mod_auth_external.${MODULE_EXT}
 
 .if ${PKG_APACHE} == "apache13"
 DISTVERS=	2.1.19
+MODULE_EXT=	so
 .else
 DISTVERS=	2.2.11
+MODULE_EXT=	la
 .endif
 
 .include "../../www/apache/module.mk"
