@@ -20,9 +20,11 @@ APACHE_MODULE_NAME=	mod_auth_external.${MODULE_EXT}
 .if ${PKG_APACHE} == "apache13"
 DISTVERS=	2.1.19
 MODULE_EXT=	so
+MESSAGE_SUBST+=	MODULE_NAME=external_auth_module
 .else
 DISTVERS=	2.2.11
 MODULE_EXT=	la
+MESSAGE_SUBST+=	MODULE_NAME=auth_external_module
 .endif
 
 .include "../../www/apache/module.mk"
