@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/12/27 13:37:41 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2007/01/24 19:40:26 wiz Exp $
 
 DISTNAME=	openbox-3.3.1
 PKGREVISION=	1
@@ -12,7 +12,7 @@ COMMENT=	Standards compliant, light-weight and extensible window manager
 DEPENDS+=		vera-ttf>=1.10:../../fonts/vera-ttf
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
+USE_DIRS+=		gnome2-1.5 xdg-1.4
 USE_TOOLS+=		gmake msgfmt pkg-config
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

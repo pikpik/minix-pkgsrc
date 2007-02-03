@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/01/18 15:53:58 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2007/01/23 11:53:46 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -9,6 +9,8 @@ CATEGORIES=	wm
 COMMENT=	Xfce window manager
 
 BUILDLINK_DEPMETHOD.libXt?=	build
+
+USE_DIRS+=	xdg-1.4
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
