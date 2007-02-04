@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/04/20 16:28:54 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2007/01/29 21:22:08 wiz Exp $
 #
 
 DISTNAME=	libggi-2.1.1.src
@@ -43,13 +43,22 @@ PLIST_SUBST+=	COND_LIBVGL=""
 PLIST_SUBST+=	COND_LIBVGL="@comment "
 .endif
 
-.if exists(${X11BASE}/include/X11/extensions/xf86dga.h)
+.if ${X11_TYPE} == "modular"
+.include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
+PLIST_SUBST+=	COND_XF86DGA=""
+.elif exists(${X11BASE}/include/X11/extensions/xf86dga.h)
 PLIST_SUBST+=	COND_XF86DGA=""
 .else
 PLIST_SUBST+=	COND_XF86DGA="@comment "
 .endif
 
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../graphics/libgii/buildlink3.mk"
-
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
