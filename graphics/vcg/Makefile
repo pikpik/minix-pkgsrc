@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/09/02 20:40:41 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2006/09/03 00:56:29 wiz Exp $
 
 DISTNAME=	vcg.1.30.r3.17
 PKGNAME=	vcg-1.30
@@ -13,8 +13,6 @@ COMMENT=	Visualization Tool for compiler graphs
 WRKSRC=		${WRKDIR}/vcg.1.30
 USE_TOOLS+=	imake
 USE_X11BASE=	yes
-
-.include "../../mk/x11.buildlink3.mk"
 
 pre-patch:
 	${MKDIR} ${WRKSRC}/preconf/X11ccNetBSD
@@ -34,4 +32,5 @@ post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/vcg
 	${INSTALL_DATA} ${WRKSRC}/expl/*.vcg ${PREFIX}/share/examples/vcg
 
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
