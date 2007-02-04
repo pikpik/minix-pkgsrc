@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/12/06 20:38:38 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/12/21 08:13:17 ghen Exp $
 
 MOZILLA=		firefox
+PKG_REVISION=		1
 EXTRACT_SUFX=		.tar.bz2
 COMMENT=		Lightweight gecko-based web browser
 
