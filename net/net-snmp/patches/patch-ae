@@ -1,9 +1,9 @@
 $NetBSD$
 
---- snmplib/snmpUDPIPv6Domain.c.orig	2004-12-24 14:42:23.000000000 +0000
+--- snmplib/snmpUDPIPv6Domain.c.orig	2006-09-25 23:33:43.000000000 +0200
 +++ snmplib/snmpUDPIPv6Domain.c
-@@ -67,6 +67,10 @@ const struct in6_addr in6addr_any = IN6A
- #include <dmalloc.h>
+@@ -73,6 +73,10 @@ const struct in6_addr in6addr_any = IN6A
+ #define SS_FAMILY __ss_family
  #endif
  
 +#if defined(darwin)
