@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.28 2006/10/06 20:29:11 adam Exp $
+# $NetBSD: Makefile,v 1.29 2006/11/05 17:23:44 joerg Exp $
 
-DISTNAME=	inkscape-0.44.1
+DISTNAME=	inkscape-0.45
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 
