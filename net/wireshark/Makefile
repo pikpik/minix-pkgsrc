@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/11/01 12:59:42 tron Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/03 18:06:37 tron Exp $
 
 DISTNAME=		wireshark-0.99.5
 CATEGORIES=		net
@@ -17,6 +17,7 @@ USE_TOOLS+=		gmake perl pkg-config
 
 USE_LIBTOOL=		YES
 SHLIBTOOL_OVERRIDE=	# empty
+GCC_REQD+=		4.0
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-gtk2
