@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/03/21 06:39:33 martti Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/09 16:14:46 adam Exp $
 
 PKGNAME=	postgresql82-pltcl-${BASE_VERS}
 COMMENT=	PL/Tcl procedural language for the PostgreSQL backend
@@ -12,7 +12,7 @@ CONFIGURE_ARGS+=	--with-tclconfig="${BUILDLINK_PREFIX.tcl}/lib"
 CONFIGURE_ENV+=		TCLSH="${TCLSH}"
 TCLSH=			${BUILDLINK_PREFIX.tcl}/bin/tclsh
 
-BUILD_DIRS=		${WRKSRC}/src/pl/tcl
+BUILD_DIRS=		src/pl/tcl
 
 USE_LIBTOOL=		yes
 PKG_LIBTOOL=		${PKG_SHLIBTOOL}

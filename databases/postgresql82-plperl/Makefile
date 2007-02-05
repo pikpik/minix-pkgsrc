@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/09/09 02:41:56 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/09 16:15:06 adam Exp $
 
 PKGNAME=	postgresql82-plperl-${BASE_VERS}
 COMMENT=	PL/Perl procedural language for the PostgreSQL backend
@@ -10,7 +10,7 @@ DEPENDS+=	postgresql82-server>=${BASE_VERS}:../../databases/postgresql82-server
 PERL5_CONFIGURE=	no
 CONFIGURE_ARGS+=	--with-perl
 
-BUILD_DIRS=		${WRKSRC}/src/pl/plperl
+BUILD_DIRS=		src/pl/plperl
 MAKE_FILE=		GNUmakefile
 
 USE_LIBTOOL=		yes
