@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/04 09:33:42 wiz Exp $
 #
 
 DISTNAME=	gnome-python-desktop-2.16.0
@@ -17,6 +17,8 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 
 PKGCONFIG_OVERRIDE+=	gnome-python-desktop-2.0.pc.in
+
+PYTHON_VERSIONS_ACCEPTED=	24
 
 .include "../../graphics/py-cairo/buildlink3.mk"
 .include "../../graphics/librsvg2/buildlink3.mk"
