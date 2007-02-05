@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/30 17:09:39 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2006/09/14 14:48:27 rillig Exp $
 #
 
-DISTNAME=		djvulibre-3.5.17
-PKGNAME=		djvulibre-tools-3.5.17
+DISTNAME=		djvulibre-3.5.18
+PKGNAME=		djvulibre-tools-3.5.18
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=djvu/}
 
