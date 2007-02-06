@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/06/08 15:54:55 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/07/22 04:46:16 rillig Exp $
 #
 
 DISTNAME=		vnc2swf-0.5.0
@@ -37,5 +37,5 @@ post-install:
 	${PAX} -rw -pp -pm . ${PREFIX}/share/doc/html/vnc2swf
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
