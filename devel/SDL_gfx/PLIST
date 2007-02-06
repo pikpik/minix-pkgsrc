@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.5 2005/10/23 16:03:10 rillig Exp $
+@comment $NetBSD: PLIST,v 1.6 2007/01/07 12:06:35 adam Exp $
 include/SDL/SDL_framerate.h
+include/SDL/SDL_gfxBlitFunc.h
 include/SDL/SDL_gfxPrimitives.h
 include/SDL/SDL_gfxPrimitives_font.h
 include/SDL/SDL_imageFilter.h
