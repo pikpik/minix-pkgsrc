@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2005/05/31 10:01:36 dillo Exp $
+# $NetBSD: options.mk,v 1.4 2005/06/01 18:02:46 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.atari800
 PKG_SUPPORTED_OPTIONS=	sdl x11
@@ -8,7 +8,7 @@ PKG_SUGGESTED_OPTIONS=	sdl
 
 .if !empty(PKG_OPTIONS:Mx11)
 CONFIGURE_ARGS+=	--target=x11
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Msdl)
