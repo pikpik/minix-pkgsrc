@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.76 2007/01/17 13:43:49 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.77 2007/01/23 22:55:32 wiz Exp $
 
 .include "Makefile.common"
 PKGREVISION=	1
 
 COMMENT=	CRT screen handling and optimization package
 
-INSTALLATION_DIRS=	share/examples
+INSTALLATION_DIRS+=	share/examples
 
 .if ${OPSYS} == "SunOS"
 # misc/screen  installs screen, screen-bce and screen-s
