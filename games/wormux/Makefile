@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/02 16:08:47 drochner Exp $
 #
 
 DISTNAME=	wormux-0.7.9
@@ -12,6 +12,7 @@ COMMENT=	Battle game
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 USE_PKGLOCALEDIR= yes
+USE_TOOLS+=	pkg-config
 USE_DIRS+=	xdg-1.1
 
 WSHDIRS+= music/ingame music/menu
