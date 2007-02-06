@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/03/04 21:28:59 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2006/04/17 13:46:17 wiz Exp $
 
 DISTNAME=	WSoundPrefs-1.1.1
 PKGNAME=	wsoundprefs-1.1.1
@@ -15,4 +15,5 @@ BROKEN_GETTEXT_DETECTION=	yes
 
 .include "../../audio/wsoundserver/buildlink3.mk"
 .include "../../wm/windowmaker/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
