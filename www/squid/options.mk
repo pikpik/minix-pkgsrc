@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.9 2006/11/09 15:16:21 taca Exp $
+# $NetBSD: options.mk,v 1.10 2006/12/04 21:50:54 jdolecek Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.squid
 PKG_SUPPORTED_OPTIONS=	aufs carp icmp pam-helper snmp ssl unlinkd
@@ -16,7 +16,7 @@ PKG_SUPPORTED_OPTIONS+=	linux-netfilter
 PKG_SUPPORTED_OPTIONS+=	ipf-transparent
 .endif
 
-.if ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD"
+.if ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD" || ${OPSYS} == "DragonFly"
 PKG_SUPPORTED_OPTIONS+=	pf-transparent
 .endif
 
