@@ -1,4 +1,4 @@
-# $NetBSD: bsd.build.mk,v 1.7 2006/07/07 21:24:28 jlam Exp $
+# $NetBSD: bsd.build.mk,v 1.8 2006/07/22 16:31:35 jlam Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and provides all
 # variables and targets related to building sources for a package.
@@ -11,6 +11,13 @@
 #
 #    pre-build, do-build, post-build
 #    pre-test,  do-test,  post-test
+#
+# Package-settable variables:
+#
+# NO_BUILD
+#	When defined, the whole build phase is skipped. That includes
+#	any substitutions that have one of {pre,do,post}-build as their
+#	SUBST_STAGE.
 #
 
 _COOKIE.build=	${WRKDIR}/.build_done
