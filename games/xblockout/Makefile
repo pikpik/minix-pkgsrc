@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/02 16:05:43 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2007/02/06 12:51:41 joerg Exp $
 #
 
 DISTNAME=	xbl-1.1.5
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www710.univ-lyon1.fr/~exco/XBL/
 
