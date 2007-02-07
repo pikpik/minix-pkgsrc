@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/07/08 23:10:37 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2007/01/07 12:25:53 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SWEEP_BUILDLINK3_MK:=	${SWEEP_BUILDLINK3_MK}+
@@ -25,6 +25,5 @@ BUILDLINK_PKGSRCDIR.sweep?=	../../audio/sweep
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/tdb/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../x11/gtk/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
