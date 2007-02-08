@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/02/07 21:18:49 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/08 18:27:22 drochner Exp $
 #
 
 DISTNAME=		genius-0.7.7
@@ -6,7 +6,7 @@ CATEGORIES=		math
 MASTER_SITES=		http://ftp.5z.com/pub/genius/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://ftp.5z.com/pub/genius/
+HOMEPAGE=		http://www.jirka.org/genius.html
 COMMENT=		Calculator and math tool
 
 USE_PKGLOCALEDIR=	yes
