@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/27 00:21:33 minskim Exp $
 #
 
 DISTNAME=		pscpug032
@@ -12,6 +12,8 @@ HOMEPAGE=		http://www.diablonet.net/~mercadal/projects/pscpug/
 COMMENT=		Graph a given process's CPU usage
 
 GNU_CONFIGURE=		yes
+
+NOT_FOR_PLATFORM=	Interix-*-* # no rusage or procfs stats
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
