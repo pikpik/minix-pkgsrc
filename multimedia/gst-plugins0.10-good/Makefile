@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/07/05 08:12:30 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2006/10/12 13:33:58 drochner Exp $
 #
 
 .include "Makefile.common"
@@ -15,6 +15,9 @@ CONFIGURE_ARGS+=	--enable-annodex
 .include "../../textproc/libxml2/buildlink3.mk"
 
 GCONF2_SCHEMAS=		gstreamer-0.10.schemas
+
+# only useful if gstreamer was built with the "gstcheck" option
+TEST_TARGET=		check-torture
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/gconf/gstreamer-0.10.schemas \
