@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/12/11 11:09:06 hira Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:28:54 jlam Exp $
 #
 
-DISTNAME=	faac-1.24
-PKGREVISION=	1
+DISTNAME=	faac-1.25
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 
