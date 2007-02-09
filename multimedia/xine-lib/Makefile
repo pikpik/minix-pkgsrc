@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/02/01 07:33:33 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2007/02/07 20:04:00 drochner Exp $
 
 .include "Makefile.common"
 
@@ -33,6 +33,7 @@ BUILDLINK_API_DEPENDS.libcdio+=	libcdio>=0.75
 #.include "../../devel/SDL/buildlink3.mk"
 #.include "../../graphics/ImageMagick/buildlink3.mk"
 #.include "../../graphics/Mesa/buildlink3.mk"
+CONFIGURE_ARGS+=	--disable-opengl
 #.include "../../graphics/aalib/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
