@@ -1,4 +1,4 @@
-# $NetBSD: gcc.mk,v 1.88 2006/12/15 12:46:24 martti Exp $
+# $NetBSD: gcc.mk,v 1.89 2007/01/08 19:29:45 gavan Exp $
 #
 # This is the compiler definition for the GNU Compiler Collection.
 #
@@ -274,7 +274,7 @@ _NEED_NEWER_GCC!=	\
 .endif
 .if !empty(_USE_PKGSRC_GCC:M[yY][eE][sS]) && \
     !empty(_NEED_NEWER_GCC:M[yY][eE][sS])
-PKG_SKIP_REASON=	"Unable to satisfy dependency: ${_GCC_DEPENDS}"
+PKG_FAIL_REASON=	"Unable to satisfy dependency: ${_GCC_DEPENDS}"
 .endif
 
 # GNU ld option used to set the rpath
