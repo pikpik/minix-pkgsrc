@@ -1,4 +1,4 @@
-# $NetBSD: xorg.mk,v 1.3 2006/04/19 12:30:25 reed Exp $
+# $NetBSD: xorg.mk,v 1.4 2006/12/15 20:33:00 joerg Exp $
 #
 # This is for X.org, but use "xfree" files also.
 
@@ -41,7 +41,7 @@ CHECK_BUILTIN.${_pkg_}:=	no
 
 .for _pkg_ in ${BUILDLINK_PACKAGES:Nx11-links}
 IGNORE_PKG.${_pkg_}=	yes
-.  if !empty(IS_BUILTIN.${_pkg_}:M[yY][eE][sS])
+.  if defined(IS_BUILTIN.${_pkg_}) && !empty(IS_BUILTIN.${_pkg_}:M[yY][eE][sS])
 .    if exists(${FILESDIR}/xorg.${_pkg_})
 FILES_LIST+=	${FILESDIR}/xorg.${_pkg_}
 .    elif exists(${FILESDIR}/xfree.${_pkg_})
