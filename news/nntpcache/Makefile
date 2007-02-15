@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/03/14 12:43:10 kleink Exp $
+# $NetBSD: Makefile,v 1.28 2006/10/17 20:28:01 schwarz Exp $
 
 DISTNAME=		nntpcache-3.0.2
 CATEGORIES=		news
@@ -18,6 +18,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/spool
 CONFIGURE_ENV+=		INSTALL_SCRIPT=${INSTALL_SCRIPT:Q}
 USE_TOOLS+=		gmake
+BUILD_DEFS+=		VARBASE
 
 INSTALL_TARGET=		SUBDIRS="cf src filters http doc pgp contrib/newshound contrib/perlnewshound innreport scripts unixauth" \
 			install
