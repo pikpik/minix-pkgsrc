@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2006/10/29 15:08:27 tron Exp $
+# $NetBSD: Makefile,v 1.70 2006/11/02 18:21:18 joerg Exp $
 
 DISTNAME=	screen-4.0.3
 CATEGORIES=	misc shells
@@ -45,6 +45,9 @@ post-install:
 		${DESTDIR}${PREFIX}/share/examples/screen/etcscreenrc
 	${INSTALL_DATA} ${WRKSRC}/etc/screenrc				\
 		${DESTDIR}${PREFIX}/share/examples/screen/screenrc
+.if !empty(UNPRIVILEGED:M[Yy][Ee][Ss])
+	chmod -s ${DESTDIR}${PREFIX}/bin/${DISTNAME}
+.endif
 
 .PHONY: screen-terminfo
 screen-terminfo:
