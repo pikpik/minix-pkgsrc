@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/04/11 21:46:41 tv Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:15 joerg Exp $
 #
 
 .include "../../multimedia/libflash/Makefile.common"
@@ -19,4 +19,6 @@ MAKE_ENV+=	LIBSTDCPP=
 .endif
 
 .include "../../multimedia/libflash/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

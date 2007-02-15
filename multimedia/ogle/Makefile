@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/03/04 21:30:15 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/07/16 22:20:37 seb Exp $
 
 DISTNAME=	ogle-0.9.2
 PKGREVISION=	3
@@ -44,5 +44,9 @@ MESSAGE_SUBST+=		PKGBASE=${PKGBASE}
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../multimedia/libdvdread/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXinerama/buildlink3.mk"
+.include "../../x11/libXv/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
