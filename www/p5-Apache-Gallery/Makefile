@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/04/16 14:19:25 kim Exp $
+# $NetBSD: Makefile,v 1.35 2006/04/17 13:46:52 wiz Exp $
 #
 
 DISTNAME=	Apache-Gallery-0.9.1
@@ -101,7 +101,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/${AG}.conf ${AG_EGDIR}
 
 .include "../../graphics/imlib2/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 
 .include "../../mk/bsd.pkg.mk"
