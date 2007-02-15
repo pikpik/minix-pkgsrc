@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/05 23:59:33 salo Exp $
+# $NetBSD: Makefile,v 1.14 2006/06/16 18:43:18 jlam Exp $
 #
 
 DISTNAME=		lsh-1.4.3
@@ -12,6 +12,7 @@ COMMENT=		SSH2 client/server (version 1 of lsh)
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
+INFO_FILES=		yes
 
 .include "options.mk"
 
