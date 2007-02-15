@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/10/20 08:15:14 dsainty Exp $
+# $NetBSD: Makefile,v 1.45 2007/01/07 09:13:58 rillig Exp $
 
 DISTNAME=	exmh-2.7.2
 CATEGORIES=	mail tk
@@ -54,5 +54,4 @@ do-install:
 	done
 
 .include "../../x11/tk/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
