@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2007/02/05 12:06:16 adam Exp $
+# $NetBSD: Makefile,v 1.57 2007/02/05 19:18:37 joerg Exp $
 
 DISTNAME=	net-snmp-5.4
 CATEGORIES=	net
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.net-snmp.org/
 COMMENT=	Extensible SNMP implementation
 
 CONFLICTS=	ucd-snmp-[0-9]*
+CONFLICTS+=	nocol-[0-9]*	# bin/snmpget bin/snmpwalk
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
