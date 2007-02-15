@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/07/19 19:14:39 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/11/11 13:38:27 rillig Exp $
 
 DISTNAME=	xdvik-${XDVIK_ORIGINAL_VERS}
 PKGNAME=	ja-vfxdvik-${XDVIK_ORIGINAL_VERS}.${XDVIK_JP_PATCH_VERS}
@@ -65,5 +65,5 @@ CONFIGURE_ENV+=	INSTALL_PROGRAM=${INSTALL_PROGRAM:Q} \
 .include "../../graphics/png/buildlink3.mk"
 .include "../../print/ja-vflib-lib/buildlink3.mk"
 .include "../../www/libwww/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

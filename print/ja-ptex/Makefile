@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/06/24 20:31:16 hira Exp $
+# $NetBSD: Makefile,v 1.13 2006/07/14 14:07:33 hira Exp $
 
 DISTNAME=	ja-ptex-1.0
 PKGREVISION=	3
@@ -23,5 +23,4 @@ MESSAGE_SRC=	${PKGDIR}/MESSAGE
 
 do-install:	# empty
 
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
