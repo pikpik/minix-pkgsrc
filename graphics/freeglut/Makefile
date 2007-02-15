@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:30 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:47 jlam Exp $
 #
 
 DISTNAME=	freeglut-2.2.0
@@ -18,5 +18,5 @@ CONFIGURE_ARGS+=	--disable-replace-glut
 
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

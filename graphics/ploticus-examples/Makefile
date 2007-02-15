@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/07/02 10:12:25 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/04 21:44:47 wiz Exp $
 #
 
 DISTNAME=	plnode141
@@ -18,10 +18,9 @@ NO_BUILD=	YES
 DIST_SUBDIR=	${PKGNAME_NOREV:S/-examples//}
 EXDIR=		${PREFIX}/share/examples/ploticus
 
-.include "../../mk/x11.buildlink3.mk"
-
 do-install:
 	${INSTALL_DATA_DIR} ${EXDIR}
 	cd ${WRKSRC} && ${PAX} -rw -pp doc gallery tabgallery thumbnails thumbpng ${EXDIR}
 
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
