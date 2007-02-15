@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/12/15 20:32:59 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/01/17 23:47:22 wiz Exp $
 #
 
 DISTNAME=		gnash-0.7.2
@@ -41,5 +41,4 @@ PLIST_SRC+=		${PKGDIR}/PLIST
 
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
