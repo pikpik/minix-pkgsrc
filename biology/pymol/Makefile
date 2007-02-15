@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/01/06 14:21:15 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2007/01/08 17:23:06 joerg Exp $
 
 DISTNAME=	pymol-0_98-src
 PKGNAME=	pymol-0.98
@@ -7,7 +7,7 @@ CATEGORIES=	biology
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pymol/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	perry@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pymol.sourceforge.net/
 COMMENT=	Molecular Visualization System
 
