@@ -1,7 +1,0 @@
-@comment $NetBSD$
-bin/blokus
-bin/blokus_dedicated
-share/blokus/field.bmp
-share/blokus/font.bmp
-share/blokus/ground.bmp
-share/blokus/wall.bmp
