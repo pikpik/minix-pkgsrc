@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/prof/gmon.h.orig	2002-11-20 14:29:08.000000000 +0100
++++ src/prof/gmon.h
+@@ -119,7 +119,7 @@
+ 
+ struct tostruct
+   {
+-    char *selfpc;
++    uint32_t selfpc;
+     int count;
+     unsigned short link;
+   };
