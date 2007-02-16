@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/01/12 23:51:21 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/09 19:57:48 drochner Exp $
 
 DISTNAME=		mpeg4ip-1.5.0.1
 PKGNAME=		libmp4v2-1.5.0.1
@@ -15,9 +15,13 @@ USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_SCRIPT=	bootstrap
+# the "bootstrap" script checks too much, and isn't useful anyway
+#CONFIGURE_SCRIPT=	bootstrap
 
 BUILD_DIRS=		lib/mp4v2
 INSTALL_DIRS+=		lib/mp4v2 doc/mp4v2
+
+pre-configure:
+	${TOUCH} ${WRKSRC}/bootstrapped
 
 .include "../../mk/bsd.pkg.mk"
