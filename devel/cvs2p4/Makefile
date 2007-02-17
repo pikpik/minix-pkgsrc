@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2005/12/29 06:21:36 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/01/06 18:56:08 joerg Exp $
 #
 
 DISTNAME=	cvs2p4-2.3.3
-CATEGORIES=	devel
+CATEGORIES=	devel scm
 MASTER_SITES=	ftp://public.perforce.com/public/perforce/utils/cvs2p4/
 EXTRACT_SUFX=	.tar
 

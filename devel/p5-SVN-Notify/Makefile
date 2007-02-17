@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/04/20 10:18:24 seb Exp $
+# $NetBSD: Makefile,v 1.2 2006/10/01 22:05:38 seb Exp $
 
 DISTNAME=	SVN-Notify-2.64
 PKGNAME=	p5-${DISTNAME}
-CATEGORIES=	devel perl5
+CATEGORIES=	devel perl5 scm
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SVN/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

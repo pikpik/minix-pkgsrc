@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/12/04 17:52:23 mjl Exp $
+# $NetBSD: Makefile,v 1.2 2006/03/04 21:29:29 jlam Exp $
 #
 
 DISTNAME=		refinecvs-0.86.1251
-CATEGORIES=		devel
+CATEGORIES=		devel scm
 MASTER_SITES=		http://lev.serebryakov.spb.ru/refinecvs/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org

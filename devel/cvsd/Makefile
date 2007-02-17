@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/06/11 14:37:25 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2006/09/06 19:04:59 wiz Exp $
 
 DISTNAME=		cvsd-1.0.13
-CATEGORIES=		devel
+CATEGORIES=		devel scm
 MASTER_SITES=		http://ch.tudelft.nl/~arthur/cvsd/
 
 MAINTAINER=		eric@cirr.com

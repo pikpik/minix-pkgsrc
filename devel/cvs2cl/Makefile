@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2006/09/03 00:56:28 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2007/01/20 02:19:40 rillig Exp $
 #
 
 DISTNAME=	cvs2cl-2.59
-CATEGORIES=	devel
+CATEGORIES=	devel scm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	# Nothing
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2005/06/16 06:57:45 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/01/07 09:13:50 rillig Exp $
 #
 
 DISTNAME=	c4
 PKGNAME=	${DISTNAME}-1.6
-CATEGORIES=	devel
+CATEGORIES=	devel scm
 MASTER_SITES=	ftp://ftp.perforce.com/perforce/utils/c4/
 
 MAINTAINER=	schmonz@NetBSD.org
