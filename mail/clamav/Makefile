@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2006/12/11 18:55:45 xtraeme Exp $
+# $NetBSD: Makefile,v 1.67 2007/02/16 14:40:41 xtraeme Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -25,6 +25,7 @@ CONFIGURE_ARGS+=	--with-group=${CLAMAV_GROUP:Q}
 CONFIGURE_ARGS+=	--with-tcpwrappers
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 CONFIGURE_ARGS+=	--enable-experimental
+CONFIGURE_ARGS+=	--enable-readdir_r
 
 .include "../../mk/bsd.prefs.mk"
 
