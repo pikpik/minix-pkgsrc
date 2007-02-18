@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- lib/lookup.c.orig	Mon Jan 12 17:58:31 1998
++++ lib/lookup.c
+@@ -5,6 +5,7 @@
+ #endif
+ 
+ #include <string.h>
++#include <stdlib.h>
+ 
+ #include "intl.h"
+ #include "rpmlib.h"
