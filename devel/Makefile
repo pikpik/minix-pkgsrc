@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.809 2007/02/07 19:37:37 rmind Exp $
+# $NetBSD: Makefile,v 1.810 2007/02/18 14:19:26 xtraeme Exp $
 #
 
 COMMENT=	Development utilities
@@ -271,7 +271,7 @@ SUBDIR+=	libmemcache
 SUBDIR+=	libmemmgr
 SUBDIR+=	libmimedir
 SUBDIR+=	libmm
-SUBDIR+=	libnet
+SUBDIR+=	libnet10
 SUBDIR+=	libnet11
 SUBDIR+=	libntlm
 SUBDIR+=	liboil
