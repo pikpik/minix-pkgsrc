@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.387 2007/01/26 16:38:43 minskim Exp $
+# $NetBSD: Makefile,v 1.388 2007/01/27 00:23:30 minskim Exp $
 #
 
 COMMENT=	System utilities
@@ -174,6 +174,7 @@ SUBDIR+=	nrg2iso
 SUBDIR+=	ntfsprogs
 SUBDIR+=	nvnet
 SUBDIR+=	osname
+SUBDIR+=	p5-File-Copy-Recursive
 SUBDIR+=	p5-File-NCopy
 SUBDIR+=	p5-File-Remove
 SUBDIR+=	p5-Lchown
