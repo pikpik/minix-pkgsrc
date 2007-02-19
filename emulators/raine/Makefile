@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/07/17 20:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/09/09 02:42:00 obache Exp $
 #
 
 DISTNAME=	raines-0.43.3
@@ -39,5 +39,4 @@ post-install:
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
