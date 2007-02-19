@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.224 2007/02/05 23:10:34 rillig Exp $
+# $NetBSD: Makefile,v 1.225 2007/02/07 21:38:53 rillig Exp $
 #
 
 COMMENT=	Databases
@@ -98,6 +98,7 @@ SUBDIR+=	p5-perl-ldap
 SUBDIR+=	p5-postgresql
 SUBDIR+=	p5-qdbm
 SUBDIR+=	p5-sybperl
+SUBDIR+=	palm-db-tools
 SUBDIR+=	pear-DB
 SUBDIR+=	pgadmin3
 SUBDIR+=	pgpool
