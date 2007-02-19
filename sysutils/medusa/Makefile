@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/05/18 19:55:35 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/07/19 19:14:39 jlam Exp $
 #
 
 DISTNAME=		medusa-0.5.1
@@ -17,5 +17,5 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
 .include "../../sysutils/gnome-vfs/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXScrnSaver/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
