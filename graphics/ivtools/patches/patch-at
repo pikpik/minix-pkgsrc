@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-at,v 1.3 2007/02/15 18:26:17 joerg Exp $
 
 --- src/Time/Imakefile.orig	2007-02-15 16:49:02.000000000 +0000
 +++ src/Time/Imakefile
@@ -6,7 +6,7 @@ $NetBSD$
  #ifdef InObjectCodeDir
  
  LIB = Time
-+OTHER_CCLDFLAGS= -Wl,-rpath-link,../../IV/${ARCHORCPU} -L../../IV/${ARCHORCPU} -lIV
++OTHER_CCLDFLAGS= -Wl,-rpath-link,../../IV/${ARCHORCPU} -L../../IV/${ARCHORCPU} -lIV -lc
 +OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../IVGlyph/${ARCHORCPU} -L../../IVGlyph/${ARCHORCPU} -lIVGlyph
  
  Use_libInterViews()

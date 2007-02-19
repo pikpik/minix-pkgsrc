@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ba,v 1.1 2007/02/15 18:26:17 joerg Exp $
 
 --- src/GraphUnidraw/Imakefile.orig	2007-02-15 17:21:06.000000000 +0000
 +++ src/GraphUnidraw/Imakefile
@@ -6,7 +6,7 @@ $NetBSD$
  #ifdef InObjectCodeDir
  
  LIB = GraphUnidraw
-+OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../IV/${ARCHORCPU} -L../../IV/${ARCHORCPU} -lIV
++OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../IV/${ARCHORCPU} -L../../IV/${ARCHORCPU} -lIV -lc
 +OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../TopoFace/${ARCHORCPU} -L../../TopoFace/${ARCHORCPU} -lTopoFace
 +OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../Attribute/${ARCHORCPU} -L../../Attribute/${ARCHORCPU} -lAttribute
 +OTHER_CCLDFLAGS+= -Wl,-rpath-link,../../OverlayUnidraw/${ARCHORCPU} -L../../OverlayUnidraw/${ARCHORCPU} -lOverlayUnidraw
