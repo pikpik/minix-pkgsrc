@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/csv2pdb
+bin/pdb2csv
+lib/libpdbtools.la
