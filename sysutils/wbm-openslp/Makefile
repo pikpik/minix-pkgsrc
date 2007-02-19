@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 04:03:45 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 21:41:50 jlam Exp $
 
 DISTNAME=	openslp
 PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
@@ -9,6 +9,8 @@ WBM_VERSION=	1.270
 
 HOMEPAGE=	http://www.webmin.com/standard.html
 COMMENT=	Webmin module to configure an OpenSLP server
+
+BROKEN=		"Distfile broken"
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 04:03:45 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 15:42:42 jlam Exp $
 
 DISTNAME=	sendmail
 PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
@@ -9,6 +9,8 @@ WBM_VERSION=	1.270
 
 HOMEPAGE=	http://www.webmin.com/standard.html
 COMMENT=	Webmin module to manage Sendmail
+
+BROKEN=		"Distfile broken"
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"
