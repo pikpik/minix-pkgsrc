@@ -2,3 +2,6 @@
 bin/csv2pdb
 bin/pdb2csv
 lib/libpdbtools.la
+share/doc/palm-db-tools/manual.html
+share/doc/palm-db-tools/manual.txt
+@dirrm share/doc/palm-db-tools
