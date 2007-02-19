@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2007/02/02 22:12:28 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/19 09:47:14 rillig Exp $
 #
 
 DISTNAME=	blokus-1.0
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.saschahlusiak.de/blokus/
+DIST_SUBDIR=	blokus-1.0
 
 MAINTAINER=	rillig@NetBSD.org
 HOMEPAGE=	http://www.saschahlusiak.de/blokus/
