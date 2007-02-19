@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2006/07/25 07:07:17 gd $
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/23 22:01:00 wiz Exp $
 
 DISTNAME=	lush-1.1
 CATEGORIES=	lang
@@ -24,5 +24,4 @@ post-install:
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
