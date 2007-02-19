@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/04/09 18:07:46 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2006/06/12 16:28:10 wiz Exp $
 #
 
 DISTNAME=	quake2-0.3
@@ -14,9 +14,6 @@ COMMENT=	Enhanced Quake II engine
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
-
-USE_BUILTIN.glu=	yes
-USE_BUILTIN.MesaLib=	yes
 
 BUILDLINK_TRANSFORM+=	rm:-Werror
 CONFIGURE_ARGS+=	--program-transform-name='s/^quake2$$/quake2forge/'
@@ -44,6 +41,10 @@ CONFIGURE_ENV+=		ac_cv_header_sys_audioio_h=no
 .endif
 
 .include "../../devel/SDL/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
