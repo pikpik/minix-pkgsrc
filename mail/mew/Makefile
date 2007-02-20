@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2006/10/19 19:50:08 wiz Exp $
+# $NetBSD: Makefile,v 1.72 2007/01/19 15:10:50 taca Exp $
 
 DISTNAME=	mew-5.2
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -15,7 +15,7 @@ INFO_FILES=	yes
 
 HAS_CONFIGURE=	yes
 
-EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214 xemacs215
+EMACS_VERSIONS_ACCEPTED=	emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs214 xemacs215
 EMACS_MODULES+=			base
 
 MEW_CONTRIB_DIR=${EMACS_LISPPREFIX}/mew/contrib
