@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/07/22 17:26:59 rpaulo Exp $
+# $NetBSD: Makefile,v 1.30 2007/02/19 11:19:56 jnemeth Exp $
 
 DISTNAME=	wl-2.14.0
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -12,13 +12,13 @@ COMMENT=	Mail/news management system with IMAP4rev1 support for Emacs
 
 .include "../../mk/emacs.mk"
 
+DEPENDS+=	${EMACS_PKGNAME_PREFIX}semi>=1.14.6:../../devel/semi
 # apel and bbdb are included in xemacs-packages
 .if ${EMACS_FLAVOR} == "emacs"
 DEPENDS+=	${EMACS_PKGNAME_PREFIX}apel>=10.6:../../devel/apel
 DEPENDS+=       ${EMACS_PKGNAME_PREFIX}bbdb-[0-9]*:../../misc/bbdb
 .endif
 DEPENDS+=	${EMACS_PKGNAME_PREFIX}flim>=1.14.7:../../devel/flim
-DEPENDS+=	${EMACS_PKGNAME_PREFIX}semi>=1.14.6:../../devel/semi
 
 EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214
 
