@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:11:40 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:31:10 jlam Exp $
 #
 
 DISTNAME=		numlockx-1.1
@@ -12,10 +12,19 @@ COMMENT=		Allows you to start X with numlock turned on
 
 GNU_CONFIGURE=		yes
 
-.include "../../mk/x11.buildlink3.mk"
-
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/numlockx
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/numlockx
 
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${BUILDLINK_PREFIX.libX11:Q}/include
+CONFIGURE_ARGS+=	--x-libraries=${BUILDLINK_PREFIX.libX11:Q}/lib${LIBABISUFFIX:Q}
+.endif
+
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXtst/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
