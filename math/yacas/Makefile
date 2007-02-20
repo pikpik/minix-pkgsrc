@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/18 13:47:55 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:09 jlam Exp $
 #
 
 DISTNAME=	yacas-1.0.59
@@ -33,5 +33,6 @@ post-install:
 .endfor
 
 .include "../../math/gsl/buildlink3.mk"
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXi/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
