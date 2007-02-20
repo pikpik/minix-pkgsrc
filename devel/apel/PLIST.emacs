@@ -1,6 +1,4 @@
-@comment $NetBSD: PLIST.emacs,v 1.1 2002/09/14 02:44:36 uebayasi Exp $
-share/doc/apel/README.en
-share/doc/apel/README.ja
+@comment $NetBSD: PLIST.emacs,v 1.2 2003/01/11 09:28:47 uebayasi Exp $
 ${EMACS_LISPPREFIX}/emu/apel-ver.el
 ${EMACS_LISPPREFIX}/emu/apel-ver.elc
 ${EMACS_LISPPREFIX}/emu/broken.el
