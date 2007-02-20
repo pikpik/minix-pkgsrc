@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/cryptofs
+share/examples/fuse-cryptofs/cryptofs.conf
+share/doc/fuse-cryptofs/README
