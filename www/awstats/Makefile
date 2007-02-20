@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/07/29 05:50:36 adrianp Exp $
+# $NetBSD: Makefile,v 1.30 2007/02/15 15:00:21 rillig Exp $
 #
 
 DISTNAME=	awstats-6.6
@@ -9,7 +9,7 @@ MASTER_SITES=	http://awstats.sourceforge.net/files/
 # the version or name of the tarball. DIST_SUBDIR must be set like this
 # to avoid checksum errors.
 #
-DIST_SUBDIR=	${DISTNAME}
+DIST_SUBDIR=	${PKGNAME}
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://awstats.sourceforge.net/
