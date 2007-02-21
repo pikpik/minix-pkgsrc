@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.698 2007/02/19 12:06:03 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.699 2007/02/20 10:14:55 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -4786,7 +4786,7 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 			cad chat chinese comms converters cross crosspkgtools
 			databases devel
 			editors emulators
-			finance fonts
+			filesystems finance fonts
 			games geography gnome gnustep graphics
 			ham
 			inputmethod
