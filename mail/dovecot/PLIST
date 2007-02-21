@@ -37,13 +37,6 @@ sbin/dovecot
 sbin/dovecotpw
 share/doc/dovecot/USE-WIKI-INSTEAD
 share/doc/dovecot/auth-protocol.txt
-share/doc/dovecot/auth.txt
-share/doc/dovecot/configuration.txt
-share/doc/dovecot/design.txt
-share/doc/dovecot/index.txt
-share/doc/dovecot/mail-storages.txt
-share/doc/dovecot/multiaccess.txt
-share/doc/dovecot/nfs.txt
 share/doc/dovecot/securecoding.txt
 share/doc/dovecot/variables.txt
 share/examples/dovecot/dovecot-ldap.conf
