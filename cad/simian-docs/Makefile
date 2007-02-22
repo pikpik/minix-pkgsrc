@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/04/22 09:22:06 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/05/02 02:27:23 dmcmahill Exp $
 #
 
 DISTNAME=	simian_man_12_98
@@ -25,6 +25,6 @@ NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/simian
-	${INSTALL_DATA} ${DISTDIR}/${DISTFILES} ${PREFIX}/share/doc/simian
+	${INSTALL_DATA} ${DISTDIR}/${DISTFILES:Q} ${PREFIX}/share/doc/simian
 
 .include "../../mk/bsd.pkg.mk"

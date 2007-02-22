@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile.SunOS.sparc,v 1.1.1.1 2006/09/24 16:40:50 salo Exp $
 
-DISTNAME=	
+DISTNAME=
 
 MOZ_PLATFORM=	solaris
 

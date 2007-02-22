@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.22 2006/10/28 21:29:47 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2006/12/17 17:20:34 bouyer Exp $
 #
 
 DISTNAME=	trac-0.10.3
 CATEGORIES=	devel www
-MASTER_SITES=	http://ftp.edgewall.com/pub/trac/ \
-		ftp://ftp.edgewall.com/pub/trac/
+MASTER_SITES=	http://ftp.edgewall.org/pub/trac/ \
+		ftp://ftp.edgewall.org/pub/trac/
 
 MAINTAINER=	epg@NetBSD.org
-HOMEPAGE=	http://trac.edgewall.com/
+HOMEPAGE=	http://trac.edgewall.org/
 COMMENT=	Subversion repository browser, wiki, and issue tracking system
 
 DEPENDS+=	${PYPKGPREFIX}-clearsilver>=0.9.14:../../www/py-clearsilver

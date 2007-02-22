@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/06/04 16:26:55 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/11/06 21:37:37 jdolecek Exp $
 
 MODNAME=		wddx
 CATEGORIES+=		textproc
@@ -13,7 +13,7 @@ USE_PHP_EXT_PATCHES=	# defined
 # appease some PHP build assumpsions
 CFLAGS+=	-I${BUILDLINK_DIR}/include/libxml2 \
 		-I${BUILDLINK_DIR}/include/php/ext/date/lib
-		
+
 
 .include "../../lang/php/phpversion.mk"
 

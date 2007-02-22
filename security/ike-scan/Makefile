@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2006/04/22 09:22:14 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/01/28 01:34:42 adrianp Exp $
 
 DISTNAME=	ike-scan-1.9
 CATEGORIES=	security
-MASTER_SITES=	http://www.nta-monitor.com/ike-scan/download/
+MASTER_SITES=	http://www.nta-monitor.com/tools/ike-scan/download/
 
 MAINTAINER=	adrianp@NetBSD.org
-HOMEPAGE=	http://www.nta-monitor.com/ike-scan/
+HOMEPAGE=	http://www.nta-monitor.com/tools/ike-scan/
 COMMENT=	Fingerprinting IKE implementation
 
 GNU_CONFIGURE=		yes

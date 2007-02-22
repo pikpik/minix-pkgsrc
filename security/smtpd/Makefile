@@ -1,14 +1,17 @@
-# $NetBSD: Makefile,v 1.18 2006/07/20 20:07:13 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/11/28 16:38:00 tv Exp $
 #
 
 DISTNAME=	smtpd-2.0
 PKGREVISION=	3
 CATEGORIES=	mail security
-MASTER_SITES=	ftp://ftp.obtuse.com/pub/smtpd/
+MASTER_SITES=	http://www.netsw.org/net/ip/firewall/proxy/smtpd/
 
 PATCHFILES=	patch-smtpd-2.0-RBL.gz
+PATCH_SITES=	http://web.rge.com/pub/security/smtpd/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+# "Obtuse smtpd hasn't been developed further since 1997."
+# google for osmtpd
 HOMEPAGE=	http://www.obtuse.com/smtpd.html
 COMMENT=	Store and forward SMTP proxy
 

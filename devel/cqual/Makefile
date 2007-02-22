@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/06/29 10:59:23 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/07/17 22:16:55 rillig Exp $
 #
 
 DISTNAME=		cqual-0.991
@@ -7,7 +7,7 @@ CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cqual/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://cqual.sourceforge.net/
+HOMEPAGE=		http://www.cs.umd.edu/~jfoster/cqual/
 COMMENT=		Tool for adding type qualifiers to C
 
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/02/05 23:11:49 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/01/15 17:57:21 joerg Exp $
 #
 
 DISTNAME=		xrestop-0.3
@@ -7,7 +7,7 @@ CATEGORIES=		x11
 MASTER_SITES=		http://www.freedesktop.org/software/xrestop/
 
 MAINTAINER=		reed@reedmedia.net
-HOMEPAGE=		http://www.freedesktop.org/Software/xrestop
+HOMEPAGE=		http://www.freedesktop.org/wiki/Software/xrestop
 COMMENT=		X11 clients' server-side resource usage monitor
 
 GNU_CONFIGURE=		yes

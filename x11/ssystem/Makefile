@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2006/09/09 02:46:09 obache Exp $
+# $NetBSD: Makefile,v 1.18 2007/01/30 20:45:10 joerg Exp $
 #
 
 DISTNAME=	ssystem-1.6
 PKGREVISION=	3
 CATEGORIES=	x11 graphics
-MASTER_SITES=	${HOMEPAGE}			# ${HOMEPAGE}/hires/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	fredb@NetBSD.org
 HOMEPAGE=	http://www1.las.es/~amil/ssystem/

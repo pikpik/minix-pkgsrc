@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2006/07/11 05:03:11 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2006/10/22 07:52:27 rillig Exp $
 #
 
 DISTNAME=	compiler-1.1
@@ -31,5 +31,5 @@ do-build:
 	# Test whether backslashes are preserved in macro definitions.
 	cd ${WRKSRC} && cc -c checktype.c -DTYPE="unsigned long"
 	cd ${WRKSRC} && cc -c checktype.c -DTYPE=unsigned\ long
-	
+
 .include "../../mk/bsd.pkg.mk"

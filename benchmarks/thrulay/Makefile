@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/07/06 19:42:01 reed Exp $
+# $NetBSD: Makefile,v 1.2 2006/08/14 13:31:21 rpaulo Exp $
 
 DISTNAME=	thrulay-0.8
 CATEGORIES=	benchmarks net
-MASTER_SITES=	http://www.internet2.edu/~shalunov/thrulay/
+MASTER_SITES=	http://shlang.com/thrulay/
 
 MAINTAINER=	rpaulo@NetBSD.org
-HOMEPAGE=	http://www.internet2.edu/~shalunov/thrulay/
+HOMEPAGE=	http://shlang.com/thrulay/
 COMMENT=	TCP and UDP network capacity tester
 
 ONLY_FOR_PLATFORM=	DragonFly-*-i386 FreeBSD-*-i386 Linux-*-i386 \

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile.common,v 1.18 2006/12/01 14:09:01 joerg Exp $
+# $NetBSD: Makefile.common,v 1.19 2007/02/06 18:54:15 joerg Exp $
 
 DISTNAME=	sylpheed-claws-${SYLPHEED_VERSION}
 CATEGORIES=	mail news x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sylpheed-claws/}
 EXTRACT_SUFX=	.tar.bz2
 
-HOMEPAGE=	http://claws.sylpheed.org/
+HOMEPAGE=	http://www.claws-mail.org/
 
 DISTINFO_FILE=	${.CURDIR}/../../mail/sylpheed-claws/distinfo
 PATCHDIR=	${.CURDIR}/../../mail/sylpheed-claws/patches

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/06/15 13:31:29 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/07/22 04:46:16 rillig Exp $
 #
 
 DISTNAME=	graphopt-0.4.1
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphopt/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://schmuhl.org/graphopt/
+HOMEPAGE=	http://sourceforge.net/projects/graphopt/
 COMMENT=	Optimize graph layouts
 
 USE_DIRS+=	xdg-1.1

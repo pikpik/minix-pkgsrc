@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.16 2006/02/23 17:36:19 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/01/30 23:13:37 joerg Exp $
 #
 
 DISTNAME=	wily-0.13.41
 PKGREVISION=	1
 CATEGORIES=	editors plan9
-MASTER_SITES=	ftp://ftp.cs.yorku.ca/pub/wily/src/old/
+MASTER_SITES=	ftp://ftp.cse.yorku.ca/pub/wily/src/old/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	agc@NetBSD.org
-HOMEPAGE=	http://www.cs.yorku.ca/~oz/wily/
+HOMEPAGE=	http://www.cse.yorku.ca/~oz/wily/
 COMMENT=	Unix/X11 clone of the Plan9 acme editor/environment
 
 GNU_CONFIGURE=	yes

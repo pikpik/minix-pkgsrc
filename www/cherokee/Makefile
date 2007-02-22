@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2006/06/08 19:48:35 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/08/06 05:20:40 kristerw Exp $
 #
 
 DISTNAME=	cherokee-0.5.3
 CATEGORIES=	www
-MASTER_SITES=	http://www.0x50.org/download/0.5/0.5.3/
+MASTER_SITES=	http://www.cherokee-project.com/download/0.5/0.5.3/
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://www.0x50.org/
+HOMEPAGE=	http://www.cherokee-project.com/
 COMMENT=	Flexible and fast web server
 
 GNU_CONFIGURE=		yes

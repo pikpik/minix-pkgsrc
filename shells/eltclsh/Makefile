@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/21 15:27:42 obache Exp $
+# $NetBSD: Makefile,v 1.2 2006/11/30 18:02:28 joerg Exp $
 
 DISTNAME=	eltclsh-1.6
 PKGREVISION=	1
 CATEGORIES=	shells
-MASTER_SITES=	http://softs.laas.fr/openrobots/distfiles/
+MASTER_SITES=	http://softs.laas.fr/openrobots/php/download.php/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://softs.laas.fr/openrobots/tools/eltclsh.php
+HOMEPAGE=	https://softs.laas.fr/openrobots/wiki/eltclsh
 COMMENT=	Interactive TCL shell with editline facilities
 
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:08:08 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/17 13:46:15 wiz Exp $
 
 DISTNAME=	gkrellmms-0.5.6
 PKGNAME=	gkrellm-xmms-0.5.6
@@ -8,7 +8,7 @@ MASTER_SITES=	http://gkrellm.luon.net/files/
 
 MAINTAINER=	damon@NetBSD.org
 HOMEPAGE=	http://gkrellm.luon.net/gkrellmms.phtml
-COMMENT=	gkrellm xmms plugin
+COMMENT=	GKrellM xmms plugin
 
 WRKSRC=		${WRKDIR}/gkrellmms
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/04/28 16:54:08 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2006/06/12 16:28:11 wiz Exp $
 #
 
 DISTNAME=	tuxpaint-0.9.14
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxpaint/} \
 		ftp://ftp.sonic.net/pub/users/nbs/unix/x/tuxpaint/source/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.newbreedsoftware.com/tuxpaint/
+HOMEPAGE=	http://www.tuxpaint.org/
 COMMENT=	Drawing program for small children
 
 USE_TOOLS+=		gmake msgfmt
