@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/26 16:36:29 minskim Exp $
 
-DISTNAME=	foremost-1.3
+DISTNAME=	foremost-1.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://foremost.sourceforge.net/pkg/
 
