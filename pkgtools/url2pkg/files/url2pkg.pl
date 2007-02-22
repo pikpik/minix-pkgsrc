@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: url2pkg.pl,v 1.4 2007/01/12 21:35:52 rillig Exp $
+# $NetBSD: url2pkg.pl,v 1.5 2007/02/22 08:21:53 rillig Exp $
 #
 
 use strict;
@@ -238,7 +238,7 @@ sub generate_initial_package($) {
 	}
 
 	if (!$found) {
-		if ($url =~ qr"^http://(?:pr)?downloads\.sourceforge\.net/([^/]*)/([^/]+)\?(?:download|use_mirror=.*)$") {
+		if ($url =~ qr"^http://(?:pr)?downloads\.sourceforge\.net/([^/]*)/([^/]+)(?:\?(?:download|use_mirror=.*))?$") {
 			my $pkgbase = $1;
 			$distfile = $2;
 
