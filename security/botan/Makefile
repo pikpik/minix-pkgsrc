@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/07/21 16:22:36 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/01/31 00:04:12 wiz Exp $
 
 DISTNAME=	Botan-1.4.11
 PKGNAME=	botan-1.4.11
@@ -15,7 +15,7 @@ BROKEN_IN=		pkgsrc-2006Q4
 
 USE_TOOLS+=	perl
 
-USE_LANGUAGES+=	c++
+USE_LANGUAGES=	c++
 REPLACE_PERL+=	./configure.pl
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	./configure.pl

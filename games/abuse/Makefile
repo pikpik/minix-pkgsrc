@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/10/04 21:43:00 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/02/02 17:38:36 joerg Exp $
 
 DISTNAME=		abuse_pd
 PKGNAME=		abuse-2.0
@@ -15,7 +15,7 @@ USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		LDFLAGS=${X11_LDFLAGS:Q}
 USE_TOOLS+=		gmake gtar
-USE_LANGUAGES+=		c c++
+USE_LANGUAGES=		c c++
 
 NOT_FOR_PLATFORM=	NetBSD-*-arm32
 

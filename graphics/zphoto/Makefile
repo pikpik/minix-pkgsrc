@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/17 23:47:21 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/01 16:04:19 joerg Exp $
 #
 
 DISTNAME=	zphoto-1.2
@@ -15,7 +15,7 @@ COMMENT=	Flash-based photo album generator
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake perl
-USE_LANGUAGES+=		c c++
+USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.libiconv:Q}

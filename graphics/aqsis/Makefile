@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/08/06 05:16:50 kristerw Exp $
+# $NetBSD: Makefile,v 1.29 2007/02/15 14:58:19 joerg Exp $
 #
 
 DISTNAME=		aqsis-0.6.4
@@ -15,7 +15,7 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 
 GCC_REQD+=		2.95.3
-USE_LANGUAGES+=		c c++
+USE_LANGUAGES=		c c++
 
 .include "../../devel/libargparse/buildlink3.mk"
 .include "../../graphics/Mesa/buildlink3.mk"

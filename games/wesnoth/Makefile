@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2007/01/26 11:40:36 dillo Exp $
+# $NetBSD: Makefile,v 1.35 2007/02/02 21:42:37 joerg Exp $
 
 DISTNAME=	wesnoth-1.2.1
 PKGREVISION=	1
@@ -10,7 +10,7 @@ HOMEPAGE=	http://www.wesnoth.org/
 COMMENT=	Fantasy turn-based strategy game
 
 USE_TOOLS+=		pkg-config
-USE_LANGUAGES+=		c c++
+USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 
 UNLIMIT_RESOURCES+=	datasize
