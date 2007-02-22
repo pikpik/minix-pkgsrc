@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/04/06 06:23:04 reed Exp $
+# $NetBSD: Makefile,v 1.21 2006/12/15 20:33:05 joerg Exp $
 #
 
 DISTNAME=		libXcursor-1.1.2
@@ -21,7 +21,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    xcursor.pc.in
+PKGCONFIG_OVERRIDE+=	xcursor.pc.in
 
 BUILDLINK_API_DEPENDS.Xrender+=	Xrender>=0.8
 

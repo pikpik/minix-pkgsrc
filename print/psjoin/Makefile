@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/01/21 18:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/04 21:30:31 jlam Exp $
 #
 
 DISTNAME=		psjoin
@@ -17,7 +17,7 @@ REPLACE_PERL=		psjoin
 USE_TOOLS+=		perl:run
 WRKSRC=			${WRKDIR}
 
-INSTALLATION_DIRS=      bin
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/psjoin ${PREFIX}/bin/psjoin

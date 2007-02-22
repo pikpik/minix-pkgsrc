@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2005/03/24 21:12:57 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2005/12/05 20:50:38 rillig Exp $
 
-DISTNAME=       buffer-1.17
+DISTNAME=	buffer-1.17
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.gwdg.de/pub/linux/jurix/source/system/backup/ \
 		ftp://ftp.fu-berlin.de/unix/linux/mirrors/jurix.jura.uni-sb.de/source/system/backup/

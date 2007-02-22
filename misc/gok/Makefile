@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/11/09 21:15:55 drochner Exp $
+# $NetBSD: Makefile,v 1.45 2007/01/29 19:07:39 joerg Exp $
 #
 
 DISTNAME=		gok-1.2.0
@@ -17,7 +17,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    gok-1.0.pc.in
+PKGCONFIG_OVERRIDE+=	gok-1.0.pc.in
 
 GCONF2_SCHEMAS=		gok.schemas
 

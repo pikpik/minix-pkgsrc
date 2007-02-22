@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/07/25 22:20:58 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2006/12/15 20:32:59 joerg Exp $
 
 DISTNAME=		root_v5.10.00.source
 PKGNAME=		root-5.10
@@ -17,7 +17,7 @@ USE_LANGUAGES=		c c++
 BUILD_TARGET=
 
 .if (${MACHINE_ARCH} == "arm")
-BROKEN= 	Compilation stops due to internal compiler error
+BROKEN=	Compilation stops due to internal compiler error
 .endif
 
 INSTALLATION_DIRS=	bin

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:00 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/11/24 23:04:15 wiz Exp $
 
-DISTNAME=       #
+DISTNAME=	#
 PKGNAME=	dict-data-1.8.0
 PKGREVISION=	1
 CATEGORIES=	textproc

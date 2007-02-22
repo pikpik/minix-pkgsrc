@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/13 12:18:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/11 14:21:31 adrianp Exp $
 #
 
 DISTNAME=	adodb481
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=adodb/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	adrianp@NetBSD.org
-HOMEPAGE= 	http://adodb.sourceforge.net/
+HOMEPAGE=	http://adodb.sourceforge.net/
 COMMENT=	Active Data Objects Data Base for php4
 
 DEPENDS+=	php>=4.1.0:../../www/php4

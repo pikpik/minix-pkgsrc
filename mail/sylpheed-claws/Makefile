@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2006/12/01 14:09:01 joerg Exp $
+# $NetBSD: Makefile,v 1.53 2007/02/06 18:54:14 joerg Exp $
 
 .include "Makefile.common"
 
@@ -14,7 +14,7 @@ PKGCONFIG_OVERRIDE+=	sylpheed-claws.pc.in
 
 #BUILDLINK_ABI_DEPENDS.libetpan+=	libetpan>=0.46
 
-CONFIGURE_ARGS+=        --enable-aspell
+CONFIGURE_ARGS+=	--enable-aspell
 CONFIGURE_ARGS+=	--enable-nls
 CONFIGURE_ARGS+=	--enable-openssl
 CONFIGURE_ARGS+=	--enable-gpgme

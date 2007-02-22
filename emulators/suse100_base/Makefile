@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/06/23 15:48:50 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/09/19 19:58:46 joerg Exp $
 
 DISTNAME=		suse_base-${SUSE_VERSION}
 PKGREVISION=		3
@@ -13,8 +13,8 @@ COMMENT=		Linux compatibility package
 CONFLICTS=		linux_SuSE-5.3 linux_lib-2.4 linuxppc_lib-[0-9]*
 
 # these files are handled by manually during de-/installation/pkg_add
-CHECK_FILES_SKIP+=      ${PREFIX}/${EMULSUBDIR}/dev/.*
-CHECK_FILES_SKIP+=      ${PREFIX}/${EMULSUBDIR}/etc/ld.so.cache
+CHECK_FILES_SKIP+=	${PREFIX}/${EMULSUBDIR}/dev/.*
+CHECK_FILES_SKIP+=	${PREFIX}/${EMULSUBDIR}/etc/ld.so.cache
 
 EXTRACT_ONLY=		# empty
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC

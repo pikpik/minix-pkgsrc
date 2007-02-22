@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:10:49 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/06/01 20:56:33 joerg Exp $
 #
 
 DISTNAME=	cpuburn_1_4
@@ -16,7 +16,7 @@ ONLY_FOR_PLATFORM= *-*-i[3456]86
 
 USE_TOOLS+=	gtar
 
-WRKSRC=         ${WRKDIR}/${PKGNAME_NOREV}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 INSTALLATION_DIRS=	bin share/doc/cpuburn
 

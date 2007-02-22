@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/05/19 14:32:43 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2006/06/12 16:28:05 wiz Exp $
 #
 
 DISTNAME=	ogre-v0-12-1
@@ -20,7 +20,7 @@ USE_LIBTOOL=		yes
 
 CONFIGURE_ARGS+=	--with-platform=SDL
 
-PKGCONFIG_OVERRIDE+=    OGRE.pc.in
+PKGCONFIG_OVERRIDE+=	OGRE.pc.in
 
 .include "../../devel/devIL/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"

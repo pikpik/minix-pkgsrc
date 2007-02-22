@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/11/02 18:17:22 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2007/01/06 15:11:57 jmmv Exp $
 
 DISTNAME=	nasm-0.98.39
 PKGREVISION=	3
@@ -31,7 +31,7 @@ INSTALLATION_DIRS=	bin ${PKGINFODIR} ${PKGMANDIR}/man1 share/doc/html
 .include "../../mk/compiler.mk"
 
 .if !empty(CC_VERSION:Mgcc-2*)
-BUILDLINK_TRANSFORM+=   rm:-std=c99
+BUILDLINK_TRANSFORM+=	rm:-std=c99
 .endif
 
 .include "../../mk/bsd.pkg.mk"

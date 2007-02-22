@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:10 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/06/02 16:13:36 joerg Exp $
 #
 
 DISTNAME=	dvorakng-0.6.0rc1
@@ -9,7 +9,7 @@ MASTER_SITES=	http://www.free.of.pl/n/nopik/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-COMMENT= 	US English Dvorak keyboard tutor
+COMMENT=	US English Dvorak keyboard tutor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/11/27 21:19:58 drochner Exp $
+# $NetBSD: Makefile,v 1.25 2007/01/14 16:15:48 wiz Exp $
 
 DISTNAME=	libsoup-2.2.99
 PKGNAME=	${DISTNAME:S/soup/soup-devel/}
@@ -14,7 +14,7 @@ USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    libsoup-2.2.pc.in
+PKGCONFIG_OVERRIDE+=	libsoup-2.2.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"

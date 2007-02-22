@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2006/11/21 17:47:53 tv Exp $
+# $NetBSD: Makefile,v 1.176 2007/01/20 10:03:39 taca Exp $
 
 DISTNAME=		openssh-4.5p1
 PKGNAME=		openssh-4.5.1
@@ -53,7 +53,7 @@ LIBS+=			-lbind -ldb -lcrypt
 
 .else # not Interix
 
-PKG_GROUPS=             ${OPENSSH_GROUP}
+PKG_GROUPS=		${OPENSSH_GROUP}
 PKG_USERS=		${OPENSSH_USER}:${OPENSSH_GROUP}
 
 PKG_GECOS.${OPENSSH_USER}=	sshd privsep pseudo-user

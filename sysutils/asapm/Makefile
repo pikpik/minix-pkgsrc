@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2006/12/15 20:33:00 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2006/12/27 13:37:39 joerg Exp $
 #
 
 DISTNAME=		asapm-2.11
-PKGREVISION=    	4
+PKGREVISION=	4
 CATEGORIES=		sysutils x11
 MASTER_SITES=		http://www.tigr.net/afterstep/download/asapm/ \
 			ftp://ftp.afterstep.org/apps/asapm/ \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/01/08 18:35:09 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:37 joerg Exp $
 
 DISTNAME=		fbsql.c
 PKGNAME=		tcl-fbsql-1.06
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.fastbase.co.nz/fbsql/
 EXTRACT_SUFX=
 
 MAINTAINER=		bouyer@NetBSD.org
-HOMEPAGE=               http://www.fastbase.co.nz/fbsql/index.html
+HOMEPAGE=		http://www.fastbase.co.nz/fbsql/index.html
 COMMENT=		Tcl interface to MySQL
 
 WRKSRC=			${WRKDIR}/src

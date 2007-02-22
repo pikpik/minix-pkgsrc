@@ -1,4 +1,4 @@
-#	$NetBSD: hacks.mk,v 1.2 2005/07/29 01:15:16 grant Exp $
+#	$NetBSD: hacks.mk,v 1.3 2006/01/30 08:44:25 xtraeme Exp $
 
 .if !defined(MJPEGTOOLS_HACKS_MK)
 MJPEGTOOLS_HACKS_MK= defined
@@ -10,7 +10,7 @@ MJPEGTOOLS_HACKS_MK= defined
 .include "../../mk/compiler.mk"
 
 .if !empty(CC_VERSION:Mgcc-4.*)
-BUILDLINK_TRANSFORM+=   rm:-fmove-all-movables
+BUILDLINK_TRANSFORM+=	rm:-fmove-all-movables
 .endif
 
 .endif	# MJPEGTOOLS_HACKS_MK

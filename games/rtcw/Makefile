@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/04/22 09:22:09 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2006/05/22 22:22:03 jlam Exp $
 
 DISTNAME=	wolf-linux-1.33.x86
 PKGNAME=	rtcw-1.33
@@ -28,7 +28,7 @@ USE_TOOLS+=	gtar
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} != "Linux"
-DEPENDS+=       suse_base>=6.3:../../emulators/${SUSE_DIR_PREFIX}_base
+DEPENDS+=	suse_base>=6.3:../../emulators/${SUSE_DIR_PREFIX}_base
 .include "../../emulators/suse_linux/Makefile.application"
 .else
 .include "../../mk/x11.buildlink3.mk"

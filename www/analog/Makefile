@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.53 2006/06/02 13:11:49 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2007/01/07 09:14:15 rillig Exp $
 
-DISTNAME=       analog-6.0
+DISTNAME=	analog-6.0
 CATEGORIES=	www
-MASTER_SITES=   ${HOMEPAGE} \
+MASTER_SITES=	${HOMEPAGE} \
 		http://www.web42.com/analog/ \
 		http://analog.org/loganalysis/ \
 		http://www.gekko.de/analog/
 
-MAINTAINER=     tron@NetBSD.org
+MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://www.analog.cx/
 COMMENT=	Extremely fast program for analysing WWW logfiles
 

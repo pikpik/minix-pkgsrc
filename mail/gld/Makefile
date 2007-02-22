@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/06/06 17:32:20 ghen Exp $
+# $NetBSD: Makefile,v 1.20 2006/07/10 20:32:59 sketch Exp $
 #
 
 DISTNAME=		gld-1.6
@@ -22,8 +22,8 @@ CONF_FILES_PERMS=	${EGDIR}/gld.conf ${PKG_SYSCONFDIR}/gld.conf	\
 RCD_SCRIPTS=		gld
 GLD_USER?=		gld
 GLD_GROUP?=		gld
-PKG_GROUPS=             ${GLD_GROUP}
-PKG_USERS=              ${GLD_USER}:${GLD_GROUP}
+PKG_GROUPS=		${GLD_GROUP}
+PKG_USERS=		${GLD_USER}:${GLD_GROUP}
 PKG_GECOS.${GLD_USER}=	Greylisting Daemon user
 BUILD_DEFS+=		GLD_USER GLD_GROUP
 

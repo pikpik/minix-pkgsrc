@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/12/05 20:51:13 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:31:00 jlam Exp $
 #
 
-DISTNAME=       	CGI-Kwiki-0.18
-PKGNAME=        	p5-${DISTNAME}
+DISTNAME=	CGI-Kwiki-0.18
+PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=		p5ckw
 PKGREVISION=		2
 CATEGORIES=		www perl5

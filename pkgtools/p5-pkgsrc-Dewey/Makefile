@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/07/06 21:14:19 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/11/14 16:11:10 joerg Exp $
 
 DISTNAME=	p5-pkgsrc-Dewey-1.0
 PKGREVISION=	1
@@ -17,7 +17,7 @@ NO_CHECKSUM=	yes
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PERL5_PACKLIST=         auto/pkgsrc/Dewey/.packlist
+PERL5_PACKLIST=		auto/pkgsrc/Dewey/.packlist
 
 PKG_INSTALL_FILESDIR=	../../pkgtools/pkg_install/files
 PKG_INSTALL_FILES=	lib/dewey.c lib/dewey.h lib/defs.h

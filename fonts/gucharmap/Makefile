@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/09/15 15:13:22 jmmv Exp $
+# $NetBSD: Makefile,v 1.41 2006/09/16 12:20:34 jmmv Exp $
 #
 
 DISTNAME=	gucharmap-1.8.0
@@ -17,7 +17,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    gucharmap.pc.in
+PKGCONFIG_OVERRIDE+=	gucharmap.pc.in
 
 GTK2_IMMODULES=		yes
 

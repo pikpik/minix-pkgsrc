@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:29:51 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/04/06 06:22:05 reed Exp $
 #
 
 DISTNAME=	Imaging-1.1.5
@@ -11,7 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pythonware.com/products/pil/
 COMMENT=	Tk support for the Python Imaging Library (PIL)
 
-DIST_SUBDIR=    python
+DIST_SUBDIR=	python
 PYDISTUTILSPKG=	yes
 BUILDLINK_API_DEPENDS.python20+=	python20>=2.0.1nb4
 PY_PATCHPLIST=	yes

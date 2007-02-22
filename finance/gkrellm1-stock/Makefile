@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:09:06 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/17 13:46:24 wiz Exp $
 
 DISTNAME=	gkrellstock-0.2
 PKGNAME=	gkrellm-stock-0.2
@@ -10,7 +10,7 @@ MAINTAINER=	damon@NetBSD.org
 HOMEPAGE=	http://www.geocities.com/m_muthukumar/gkrellstock.html
 COMMENT=	gkrellm stock ticker plugin
 
-DEPENDS+=       p5-Finance-Quote-1.*:../../finance/p5-Finance-Quote
+DEPENDS+=	p5-Finance-Quote-1.*:../../finance/p5-Finance-Quote
 
 WRKSRC=		${WRKDIR}/gkrellStock-0.2
 USE_TOOLS+=	perl:run

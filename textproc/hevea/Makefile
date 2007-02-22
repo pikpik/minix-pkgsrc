@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:11:02 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/01/15 21:12:13 tonio Exp $
 
 DISTNAME=	hevea-1.09
 CATEGORIES=	textproc
@@ -10,7 +10,7 @@ COMMENT=	LaTeX to HTML translator
 
 BUILD_DEPENDS+=	ocaml>=3.07:../../lang/ocaml
 
-DIST_SUBDIR=    ${PKGNAME_NOREV}
+DIST_SUBDIR=	${PKGNAME_NOREV}
 .include "../../mk/bsd.prefs.mk"
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")

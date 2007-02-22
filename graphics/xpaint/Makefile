@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.57 2006/12/27 13:37:38 joerg Exp $
+# $NetBSD: Makefile,v 1.58 2007/01/29 22:06:43 joerg Exp $
 
-DISTNAME=       xpaint-2.7.8.1
+DISTNAME=	xpaint-2.7.8.1
 PKGREVISION=	2
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sf-xpaint/}
@@ -10,7 +10,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://sf-xpaint.sourceforge.net/
 COMMENT=	Simple paint program
 
-USE_IMAKE=      	yes
+USE_IMAKE=	yes
 USE_TOOLS+=		gmake
 MAKE_ENV+=		XMKMF=${XMKMF:Q}
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2006/07/12 17:03:43 heinz Exp $
+# $NetBSD: Makefile,v 1.39 2006/10/04 22:04:10 wiz Exp $
 #
 
 VERS=			3.20
-DISTNAME=       	CGI.pm-${VERS}
-PKGNAME=        	p5-CGI-${VERS}
+DISTNAME=	CGI.pm-${VERS}
+PKGNAME=	p5-CGI-${VERS}
 SVR4_PKGNAME=		p5cgi
 CATEGORIES=		www perl5
 MASTER_SITES+=		${MASTER_SITE_PERL_CPAN:=CGI/}

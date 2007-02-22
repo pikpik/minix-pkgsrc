@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2006/03/11 14:35:15 hira Exp $
+# $NetBSD: Makefile,v 1.18 2006/12/27 13:37:46 joerg Exp $
 
 DISTNAME=	xmascot2.5p2
-PKGNAME=        xmascot-2.5p2
+PKGNAME=	xmascot-2.5p2
 PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://cclub.tutcc.tut.ac.jp/pub/xmascot/

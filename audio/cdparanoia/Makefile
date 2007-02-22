@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/09/03 17:13:30 ben Exp $
+# $NetBSD: Makefile,v 1.24 2006/11/03 12:45:21 joerg Exp $
 #
 
 DISTNAME=	cdparanoia-III-alpha9.8
@@ -26,6 +26,6 @@ CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/cdparanoia
 MAKE_ENV+=	GCC=yes
 
 LDFLAGS.FreeBSD+=	-lcam
-LDFLAGS.DragonFly+=     -lcam
+LDFLAGS.DragonFly+=	-lcam
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/01/07 09:14:02 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2007/02/18 18:47:19 adrianp Exp $
 
 DISTNAME=	firewalk-5.0
 PKGREVISION=	2
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.packetfactory.net/Projects/firewalk/
 COMMENT=	Determines the filter rules on a packet forwarding device
 
-WRKSRC=         ${WRKDIR}/Firewalk
+WRKSRC=		${WRKDIR}/Firewalk
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	CFLAGS=-I${LOCALBASE}/include
 

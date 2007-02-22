@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/09/15 15:22:27 jmmv Exp $
+# $NetBSD: Makefile,v 1.37 2006/12/27 13:37:42 joerg Exp $
 #
 
 DISTNAME=		gnome-mag-0.13.1
@@ -16,7 +16,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    gnome-mag-1.0.pc.in
+PKGCONFIG_OVERRIDE+=	gnome-mag-1.0.pc.in
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 

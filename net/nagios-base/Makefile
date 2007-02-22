@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/08/17 14:19:00 taca Exp $
+# $NetBSD: Makefile,v 1.10 2006/10/20 08:45:10 rillig Exp $
 #
 
 DISTNAME=	nagios-2.5
@@ -56,7 +56,7 @@ EGFILES=	cgi.cfg checkcommands.cfg contactgroups.cfg contacts.cfg	\
 .for files in ${EGFILES}
 CONF_FILES+=	${EGDIR}/${files}-sample ${PKG_SYSCONFDIR}/${files}
 .endfor
-CONF_FILES+=            ${EGDIR}/nagios.conf ${PKG_SYSCONFDIR}/nagios.conf
+CONF_FILES+=		${EGDIR}/nagios.conf ${PKG_SYSCONFDIR}/nagios.conf
 
 NAGIOS_DIRS=	log/nagios log/nagios/archives run/nagios run/nagios/rw
 .for dir in ${NAGIOS_DIRS}

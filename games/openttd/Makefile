@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2006/08/22 15:27:03 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/10/06 15:41:59 ghen Exp $
 
 DISTNAME=	openttd-0.4.8-source
 PKGNAME=	openttd-0.4.8
 CATEGORIES=	games x11
-MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE:=openttd/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openttd/}
 
 MAINTAINER=	froz@icix.org
 HOMEPAGE=	http://www.openttd.com/
@@ -12,7 +12,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 USE_TOOLS+=	gmake pkg-config
 
-DATA_DIR= 	${PREFIX}/share/games/openttd
+DATA_DIR=	${PREFIX}/share/games/openttd
 
 MAKE_ENV+=	PREFIX=${PREFIX:Q}
 MAKE_ENV+=	INSTALL=1

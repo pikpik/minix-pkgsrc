@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2007/01/17 23:47:19 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2007/01/26 04:03:20 markd Exp $
 
 DISTNAME=	kmymoney2-0.8.5
 PKGREVISION=	2
@@ -20,7 +20,7 @@ SHLIBTOOL_OVERRIDE=	# empty
 
 CONFIGURE_ARGS+=	--enable-mt
 
-REPLACE_PERL+=  admin/fixuifiles
+REPLACE_PERL+=	admin/fixuifiles
 
 # a fix for qt-3.3.5, please remove if qt-3.3.6 (or newer) solves the problem
 SUBST_CLASSES+=		hints

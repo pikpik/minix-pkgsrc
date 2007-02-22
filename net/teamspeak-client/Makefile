@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/09/20 22:00:53 abs Exp $
+# $NetBSD: Makefile,v 1.3 2006/09/25 13:15:35 abs Exp $
 
 PKGNAME=		teamspeak-client-2.0.32.60
 DISTNAME=		ts2_client_rc2_2032
@@ -26,11 +26,11 @@ USE_LANGUAGES=
 
 PLIST_SRC=		${WRKDIR}/PLIST
 
-RESTRICTED=             Redistribution to third parties is expressly prohibited
-NO_SRC_ON_CDROM=        ${RESTRICTED}
-NO_BIN_ON_FTP=          ${RESTRICTED}
-NO_BIN_ON_CDROM=        ${RESTRICTED}
-LICENSE=                teamspeak-license
+RESTRICTED=		Redistribution to third parties is expressly prohibited
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
+LICENSE=		teamspeak-license
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/setup.data/image
 LIB_DIR=	${PREFIX}/lib/teamspeak-client

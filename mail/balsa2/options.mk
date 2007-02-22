@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2005/10/03 21:36:59 wiz Exp $
+# $NetBSD: options.mk,v 1.5 2006/05/31 18:22:23 ghen Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.balsa2
@@ -7,7 +7,7 @@ PKG_SUPPORTED_OPTIONS=	ldap ssl
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mldap)
-CONFIGURE_ARGS+=        --with-ldap
+CONFIGURE_ARGS+=	--with-ldap
 .  include "../../databases/openldap-client/buildlink3.mk"
 .endif
 

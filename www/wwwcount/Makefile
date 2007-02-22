@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2006/03/14 01:14:34 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/07/19 19:48:21 jlam Exp $
 
-DISTNAME=       wwwcount2.5
-PKGNAME=        wwwcount-2.5
+DISTNAME=	wwwcount2.5
+PKGNAME=	wwwcount-2.5
 PKGREVISION=	1
-CATEGORIES=     www
-MASTER_SITES=   ${MASTER_SITE_BACKUP}
+CATEGORIES=	www
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.muquit.com/muquit/software/Count/Count.html

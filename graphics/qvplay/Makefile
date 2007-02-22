@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2004/01/20 12:18:17 agc Exp $
+# $NetBSD: Makefile,v 1.8 2005/10/04 17:38:30 reed Exp $
 #
 
 DISTNAME=	qvplay-0.94
-CATEGORIES=    	graphics
+CATEGORIES=	graphics
 MASTER_SITES=	http://www.asahi-net.or.jp/~xg2k-hys/
 
 MAINTAINER=	jwise@NetBSD.org

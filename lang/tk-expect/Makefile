@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:09:53 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2007/01/07 09:13:57 rillig Exp $
 
 .include "../../lang/tcl-expect/Makefile.common"
 
@@ -11,7 +11,7 @@ COMMENT=	Tcl interpreter with both the expect and tk extensions built in
 
 DEPENDS+=	tcl-expect>=${EXPECT_VERSION}:../../lang/tcl-expect
 
-CONFIGURE_ARGS+= 	--enable-shared
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-tclconfig=${PREFIX}/lib
 CONFIGURE_ARGS+=	--with-tclinclude=${PREFIX}/include/tcl
 CONFIGURE_ARGS+=	--with-tkconfig=${PREFIX}/lib

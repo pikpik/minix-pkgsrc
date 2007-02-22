@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1 2004/02/10 12:26:24 grant Exp $
+# $NetBSD: Makefile,v 1.2 2006/02/05 23:11:21 joerg Exp $
 
-DISTNAME= 		MozillaFirebird-bin-acroread-1.0
+DISTNAME=	MozillaFirebird-bin-acroread-1.0
 PKGREVISION=		1
 
 MAINTAINER=		kei@NetBSD.org

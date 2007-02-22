@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/03/04 21:29:11 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2006/12/28 12:12:58 joerg Exp $
 
 DISTNAME=		ruby-postgres-${VERSION}
 PKGNAME=		${RUBY_PKGPREFIX}-postgresql-${VERSION}
@@ -13,7 +13,7 @@ HOMEPAGE=		http://ruby.scripting.ca/postgres/
 COMMENT=		Ruby extension for postgresql
 
 RUBY_HAS_ARCHLIB=	yes
-USE_RUBY_EXTCONF= 	yes
+USE_RUBY_EXTCONF=	yes
 VERSION=		0.7.1
 INSTALL_TARGET=		site-install
 CONFIGURE_ARGS+= --with-pgsql-include-dir=${PGSQL_PREFIX}/include/postgresql \

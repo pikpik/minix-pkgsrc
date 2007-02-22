@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/07/07 04:35:40 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2007/01/13 21:34:40 abs Exp $
 #
 
 DISTNAME=		postgresql-jdbc-8.1-${PGBUILD}.src
@@ -14,14 +14,14 @@ COMMENT=		PostgreSQL 8.1 JDBC3 driver
 PGBUILD=		408
 JARDIST=		postgresql-8.1-${PGBUILD}.jdbc3.jar
 JARFILE=		postgresql81.jar
-EXTRACT_ONLY=           ${DISTFILES:N*.jar}
+EXTRACT_ONLY=		${DISTFILES:N*.jar}
 
 USE_JAVA=		run
 USE_JAVA2=		1.4
-NO_BUILD=       	YES
+NO_BUILD=	YES
 
-EXAMPLEDIR=             share/examples/java/${PKGBASE}
-DOCDIR=                 share/doc/java/${PKGBASE}
+EXAMPLEDIR=		share/examples/java/${PKGBASE}
+DOCDIR=			share/doc/java/${PKGBASE}
 PLIST_SUBST+=		JARFILE=${JARFILE:Q}
 PLIST_SUBST+=		EXAMPLEDIR=${EXAMPLEDIR:Q}
 PLIST_SUBST+=		DOCDIR=${DOCDIR:Q}

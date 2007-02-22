@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2006/05/11 14:07:56 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/12/27 13:37:37 joerg Exp $
 
-DISTNAME=       xkobo-1.11
+DISTNAME=	xkobo-1.11
 PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=games/}  \

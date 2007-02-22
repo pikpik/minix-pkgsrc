@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/11/03 19:34:11 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2007/01/25 18:15:49 epg Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
 COMMENT=	Version control system, base programs and libraries
@@ -54,9 +54,9 @@ PLIST_SUBST+=		DAV_RA=${DAV_RA:Q}
 
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	pre-configure
-SUBST_FILES.paths=      contrib/cgi/tweak-log.cgi
-SUBST_SED.paths=        -e "s|/usr/local/bin/|${PREFIX}/bin|g"
-SUBST_MESSAGE.paths=    Fixing hardcoded /usr/local/bin paths.
+SUBST_FILES.paths=	contrib/cgi/tweak-log.cgi
+SUBST_SED.paths=	-e "s|/usr/local/bin/|${PREFIX}/bin|g"
+SUBST_MESSAGE.paths=	Fixing hardcoded /usr/local/bin paths.
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${SVNDOC}

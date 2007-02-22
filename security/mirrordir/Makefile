@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/07/19 19:14:39 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/04 21:58:14 wiz Exp $
 #
 
 DISTNAME=	mirrordir-0.10.49
@@ -17,6 +17,6 @@ USE_LIBTOOL=	yes
 
 EGDIR=		${PREFIX}/share/examples/mirrordir
 
-CONF_FILES=     ${EGDIR}/secure-mcservusers ${PKG_SYSCONFDIR}/secure-mcservusers
+CONF_FILES=	${EGDIR}/secure-mcservusers ${PKG_SYSCONFDIR}/secure-mcservusers
 
 .include "../../mk/bsd.pkg.mk"

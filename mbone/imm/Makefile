@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:10:05 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/10/04 21:48:19 wiz Exp $
 
 DISTNAME=	imm36a1
 PKGNAME=	imm-3.6a1
@@ -11,7 +11,7 @@ MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://tang.itd.nrl.navy.mil/5522/ntm/imm.html
 COMMENT=	Internet Image(or other data) Multicaster (and receiver)
 
-DEPENDS+=       xv>=3.10:../../graphics/xv
+DEPENDS+=	xv>=3.10:../../graphics/xv
 
 WRKSRC=		${WRKDIR}/${DISTNAME}.src
 BUILD_TARGET=	netbsd

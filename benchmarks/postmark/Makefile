@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2004/07/30 15:50:38 minskim Exp $
+# $NetBSD: Makefile,v 1.11 2005/03/24 21:12:51 wiz Exp $
 
-DISTNAME=       postmark-1_5.c
+DISTNAME=	postmark-1_5.c
 PKGNAME=	postmark-1.5
 CATEGORIES=	benchmarks
-MASTER_SITES=   http://www.netapp.com/ftp/
+MASTER_SITES=	http://www.netapp.com/ftp/
 EXTRACT_SUFX=	#
 
 MAINTAINER=	root@garbled.net

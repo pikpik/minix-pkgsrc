@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/09/16 12:20:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.29 2006/11/05 17:06:43 joerg Exp $
 #
 
 DISTNAME=	libcroco-0.6.1
@@ -17,7 +17,7 @@ USE_TOOLS+=		gmake pkg-config
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-PKGCONFIG_OVERRIDE+=    libcroco-0.6.pc
+PKGCONFIG_OVERRIDE+=	libcroco-0.6.pc
 
 CONFIGURE_ARGS+=	--enable-seleng=yes
 CONFIGURE_ARGS+=	--enable-layeng=yes

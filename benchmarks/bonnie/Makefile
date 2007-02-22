@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2007/01/07 09:13:47 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2007/01/18 11:16:56 rillig Exp $
 
-DISTNAME=       bonnie
+DISTNAME=	bonnie
 PKGNAME=	bonnie-2.06
 PKGREVISION=	2
 CATEGORIES=	benchmarks
-MASTER_SITES=   http://www.textuality.com/bonnie/
+MASTER_SITES=	http://www.textuality.com/bonnie/
 
 MAINTAINER=	root@garbled.net
 HOMEPAGE=	http://www.textuality.com/bonnie/index.html

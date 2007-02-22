@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: hacks.mk,v 1.1 2004/11/14 07:24:37 jlam Exp $
 
 .if !defined(BISON_HACKS_MK)
 BISON_HACKS_MK=	defined
@@ -12,7 +12,7 @@ BISON_HACKS_MK=	defined
 ###
 .if !empty(PKGSRC_COMPILER:Msunpro)
 PKG_HACKS+=		optimisation
-BUILDLINK_TRANSFORM+=   rm:-O[0-9]*
+BUILDLINK_TRANSFORM+=	rm:-O[0-9]*
 .endif
 
 .endif	# BISON_HACKS_MK

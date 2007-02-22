@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/05/13 03:44:24 minskim Exp $
+# $NetBSD: Makefile,v 1.36 2006/08/14 08:39:52 wiz Exp $
 
 DISTNAME=	coreutils-5.2.1
 PKGREVISION=	2
@@ -59,7 +59,7 @@ BUILD_DEFS+=		GNU_PROGRAM_PREFIX
 .if ${OPSYS} == "NetBSD" ||  ${OPSYS} == "FreeBSD" || \
   ${OPSYS} == "OpenBSD"
 MAKE_FLAGS+=	setuid_root_mode=a=rx
-MESSAGE_SRC=    ${.CURDIR}/MESSAGE.gsu
+MESSAGE_SRC=	${.CURDIR}/MESSAGE.gsu
 MESSAGE_SUBST+=	OPSYS=${OPSYS:Q}
 .endif
 

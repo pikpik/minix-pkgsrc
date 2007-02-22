@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/10/04 21:43:01 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/12/18 01:36:09 wiz Exp $
 #
 
 DISTNAME=	majesty_demo
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}
 
 .if !defined(USE_NATIVE_LINUX)
 .if (${MACHINE_ARCH} == "i386")
-DEPENDS+=       suse_x11>=6.3:../../emulators/${SUSE_DIR_PREFIX}_x11
+DEPENDS+=	suse_x11>=6.3:../../emulators/${SUSE_DIR_PREFIX}_x11
 .endif
 .endif
 

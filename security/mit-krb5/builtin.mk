@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.1 2006/04/10 15:04:44 tron Exp $
+# $NetBSD: builtin.mk,v 1.2 2006/04/10 18:05:16 jlam Exp $
 
 BUILTIN_PKG:=	mit-krb5
 
@@ -35,7 +35,7 @@ BUILTIN_VERSION.mit-krb5!=	${SH_KRB5_CONFIG} --version | \
 BUILTIN_VERSION.mit-krb5?=	1.4.0
 BUILTIN_PKG.mit-krb5=		mit-krb5-${BUILTIN_VERSION.mit-krb5}
 .endif
-MAKEVARS+=      BUILTIN_PKG.mit-krb5
+MAKEVARS+=	BUILTIN_PKG.mit-krb5
 
 ###
 ### Determine whether we should use the built-in implementation if it

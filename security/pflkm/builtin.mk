@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.9 2006/03/30 18:06:18 jlam Exp $
+# $NetBSD: builtin.mk,v 1.10 2006/04/06 06:22:44 reed Exp $
 
 BUILTIN_PKG:=	pflkm
 
@@ -102,9 +102,9 @@ CHECK_BUILTIN.pflkm?= no
 .if !empty(CHECK_BUILTIN.pflkm:M[nN][oO])
 
 .  if !empty(USE_BUILTIN.pflkm:M[nN][oO])
-PFCTL?=   	${BUILDLINK_PREFIX.pflkm}/bin/pfctl
+PFCTL?=		${BUILDLINK_PREFIX.pflkm}/bin/pfctl
 .  else
-PFCTL?=   	${EXE_PFCTL}
+PFCTL?=		${EXE_PFCTL}
 .  endif
 
 .endif  # CHECK_BUILTIN.pflkm

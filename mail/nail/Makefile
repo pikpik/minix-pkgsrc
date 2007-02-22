@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2005/12/29 06:21:51 jlam Exp $
+# $NetBSD: Makefile,v 1.33 2007/01/07 09:13:58 rillig Exp $
 
 DISTNAME=	nail-11.25
 CATEGORIES=	mail
@@ -27,7 +27,7 @@ MAKE_ENV+=	"SENDMAIL=/usr/lib/sendmail"
 
 EGDIR=		${PREFIX}/share/examples/nail
 
-CONF_FILES=     ${EGDIR}/nail.rc ${PKG_SYSCONFDIR}/nail.rc
+CONF_FILES=	${EGDIR}/nail.rc ${PKG_SYSCONFDIR}/nail.rc
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

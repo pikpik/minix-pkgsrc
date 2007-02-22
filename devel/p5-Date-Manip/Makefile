@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2005/08/06 06:19:09 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/07/12 16:46:44 heinz Exp $
 #
 
-DISTNAME=     	DateManip-5.44
-PKGNAME=       	${DISTNAME:S/DateManip/p5-Date-Manip/}
+DISTNAME=	DateManip-5.44
+PKGNAME=	${DISTNAME:S/DateManip/p5-Date-Manip/}
 SVR4_PKGNAME=	p5dma
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}

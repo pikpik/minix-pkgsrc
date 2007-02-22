@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.28 2006/07/29 07:48:21 minskim Exp $
+# $NetBSD: Makefile,v 1.29 2006/10/03 05:45:54 uebayasi Exp $
 
-DISTNAME=       dictd-1.9.15
-PKGNAME=        dict-client-1.9.15
+DISTNAME=	dictd-1.9.15
+PKGNAME=	dict-client-1.9.15
 PKGREVISION=	2
 CATEGORIES=	textproc
-MASTER_SITES=   ftp://ftp.dict.org/pub/dict/
+MASTER_SITES=	ftp://ftp.dict.org/pub/dict/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dict.org/

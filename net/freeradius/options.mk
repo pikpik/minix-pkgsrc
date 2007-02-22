@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.11 2006/08/09 16:42:09 adrianp Exp $
+# $NetBSD: options.mk,v 1.12 2006/08/11 16:22:04 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.freeradius
 
@@ -81,7 +81,7 @@ CONFIGURE_ARGS+=	--without-snmp
 ###
 .if !empty(PKG_OPTIONS:Mkerberos)
 .  include "../../mk/krb5.buildlink3.mk"
-CONFIGURE_ARGS+=        --with-rlm_krb5
+CONFIGURE_ARGS+=	--with-rlm_krb5
 .  if defined(KRB5_TYPE) && ${KRB5_TYPE} == "heimdal"
 CONFIGURE_ARGS+=	--enable-heimdal-krb5
 .  endif

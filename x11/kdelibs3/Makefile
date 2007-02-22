@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2007/02/07 12:17:18 markd Exp $
+# $NetBSD: Makefile,v 1.122 2007/02/07 20:38:04 abs Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGREVISION=	2
@@ -123,8 +123,8 @@ GCC_REQD+=		2.95
 #
 .if ${OPSYS} == "NetBSD"
 .  if (${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "sparc")
-CXXFLAGS:=      ${CXXFLAGS:C/-O[0-9]*/-O/g}
-CFLAGS:=        ${CFLAGS:C/-O[0-9]*/-O/g}
+CXXFLAGS:=	${CXXFLAGS:C/-O[0-9]*/-O/g}
+CFLAGS:=	${CFLAGS:C/-O[0-9]*/-O/g}
 CONFIGURE_ENV+= CXXFLAGS=${CXXFLAGS:M*:Q}
 CONFIGURE_ENV+= CFLAGS=${CFLAGS:M*:Q}
 .  endif

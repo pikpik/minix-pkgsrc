@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/04/14 18:14:34 heinz Exp $
+# $NetBSD: Makefile,v 1.34 2006/06/26 19:50:28 wiz Exp $
 #
 
 DISTNAME=	OpenSP-1.5.2
@@ -12,7 +12,7 @@ COMMENT=	SGML parser, successor to "sp"
 
 BUILD_DEPENDS+=	xmlto-[0-9]*:../../textproc/xmlto
 
-CONFLICTS+=     sp-[0-9]*
+CONFLICTS+=	sp-[0-9]*
 
 USE_TOOLS+=		gmake msgfmt perl
 USE_LANGUAGES=		c c++

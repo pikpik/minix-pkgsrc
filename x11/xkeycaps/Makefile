@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:31:13 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:45 joerg Exp $
 #
 
 DISTNAME=	xkeycaps-2.46
@@ -12,7 +12,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.jwz.org/xkeycaps/
 COMMENT=	Graphical front-end to xmodmap
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 
 pre-configure:
 .if (${MACHINE_ARCH} == "m68k")

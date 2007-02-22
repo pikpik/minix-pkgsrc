@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/06/20 23:32:36 minskim Exp $
+# $NetBSD: Makefile,v 1.27 2007/01/20 15:17:20 joerg Exp $
 
 DISTNAME=	Imaging-1.1.5
 PKGNAME=	${PYPKGPREFIX}-imaging-1.1.5
@@ -10,7 +10,7 @@ MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.pythonware.com/products/pil/
 COMMENT=	PIL, the Python Imaging Library
 
-DIST_SUBDIR=    python
+DIST_SUBDIR=	python
 PYDISTUTILSPKG= yes
 PY_PATCHPLIST=	yes
 

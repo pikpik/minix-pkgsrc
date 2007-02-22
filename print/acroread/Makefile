@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/10/14 08:14:23 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2006/11/27 13:18:10 obache Exp $
 
 DISTNAME=	acroread	# Overridden below
 PKGNAME=	acroread-4.05
@@ -41,7 +41,7 @@ WRKSRC=		${WRKDIR}/ILINXR.install
 PKG_FAIL_REASON+=	'${PKGNAME} requires Digital UNIX libraries - see compat_osf1(8)'
 .  endif
 DISTNAME=	fdec-rs-405
-PLATFORM=       alphaosf
+PLATFORM=	alphaosf
 WRKSRC=		${WRKDIR}/AOSFRS.install
 . elif (${MACHINE_ARCH} == "sparc")
 .  if !exists(/emul/svr4/usr/lib/ld.so)

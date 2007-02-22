@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:08:20 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/10/12 03:13:30 dmcmahill Exp $
 #
 
 DISTNAME=	covered-${SNAPDATE}
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES= overwrite pkgviews
 
 DEPENDS+=	verilog{,-current}-[0-9]*:../../cad/verilog
 
-CONFLICTS+=     covered-[0-9]*
+CONFLICTS+=	covered-[0-9]*
 
 SNAPDATE=	20060904
 GNU_CONFIGURE=	YES

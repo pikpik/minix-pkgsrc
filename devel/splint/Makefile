@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/06/08 15:56:43 minskim Exp $
+# $NetBSD: Makefile,v 1.12 2006/12/02 19:15:13 rillig Exp $
 #
 
 VERSION=	3.1.1
@@ -15,7 +15,7 @@ COMMENT=	Statically check C programs
 
 WRKSRC=		${WRKDIR}/splint-${VERSION}
 USE_TOOLS+=	gmake lex
-GNU_CONFIGURE=  YES
+GNU_CONFIGURE=	YES
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/splint.1 ${PREFIX}/${PKGMANDIR}/man1

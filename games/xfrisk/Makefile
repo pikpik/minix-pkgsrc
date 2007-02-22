@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/02/05 23:09:24 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/04/22 09:22:09 rillig Exp $
 #
 
 DISTNAME=	xfrisk-1.2
@@ -20,7 +20,7 @@ NO_BIN_ON_CDROM=${RESTRICTED}
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
-MAKE_ENV+=      LIBS="-lsocket -lnsl"
+MAKE_ENV+=	LIBS="-lsocket -lnsl"
 .endif
 
 # xfrisk doesn't work with standard Xaw.

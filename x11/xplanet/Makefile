@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2007/01/23 01:27:00 rillig Exp $
+# $NetBSD: Makefile,v 1.37 2007/01/26 18:22:48 joerg Exp $
 
 DISTNAME=	xplanet-1.2.0
 PKGREVISION=	3
@@ -20,9 +20,9 @@ XPLANET_DIRS=		arcs config fonts images markers origin
 XPLANET_DIRS+=		satellites scripts spice stars
 INSTALLATION_DIRS+=	${XPLANET_DIRS:C,.*,share/xplanet/&,g}
 
-PKG_OPTIONS_VAR=        PKG_OPTIONS.xplanet
-PKG_SUPPORTED_OPTIONS=  x11
-PKG_SUGGESTED_OPTIONS=  x11
+PKG_OPTIONS_VAR=	PKG_OPTIONS.xplanet
+PKG_SUPPORTED_OPTIONS=	x11
+PKG_SUGGESTED_OPTIONS=	x11
 
 .include "../../mk/bsd.options.mk"
 

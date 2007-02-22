@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2007/01/05 13:20:54 obache Exp $
+# $NetBSD: Makefile,v 1.40 2007/02/07 02:04:15 gdt Exp $
 
 PKGNAME=		amanda-server-${VERS}
 PKGREVISION=		6
@@ -15,11 +15,11 @@ CONFIGURE_ARGS+=	--without-client
 
 # Prevent configure script from finding unnecessary libraries.
 #
-CONFIGURE_ENV+=         ac_cv_lib_intl_main=no
-CONFIGURE_ENV+=         ac_cv_lib_termcap_tgetent=no
-CONFIGURE_ENV+=         ac_cv_lib_curses_tgetent=no
-CONFIGURE_ENV+=         ac_cv_lib_ncurses_tgetent=no
-CONFIGURE_ENV+=         ac_cv_lib_readline_readline=no
+CONFIGURE_ENV+=		ac_cv_lib_intl_main=no
+CONFIGURE_ENV+=		ac_cv_lib_termcap_tgetent=no
+CONFIGURE_ENV+=		ac_cv_lib_curses_tgetent=no
+CONFIGURE_ENV+=		ac_cv_lib_ncurses_tgetent=no
+CONFIGURE_ENV+=		ac_cv_lib_readline_readline=no
 
 # post-install:
 # 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/amanda

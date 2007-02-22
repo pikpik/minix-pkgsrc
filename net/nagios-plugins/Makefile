@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2006/08/23 18:45:31 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/10/20 08:54:44 rillig Exp $
 #
 
 PKGREVISION=	1
 CATEGORIES=	net sysutils
 
-MAINTAINER=     pkgsrc-users@NetBSD.org
-HOMEPAGE=       http://sourceforge.net/projects/nagiosplug/
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://sourceforge.net/projects/nagiosplug/
 COMMENT=	Nagios plugins
 
 .include "../../net/nagios-plugins/Makefile.common"

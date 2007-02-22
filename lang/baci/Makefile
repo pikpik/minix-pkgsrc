@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/06/17 04:49:47 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/06/20 22:12:25 minskim Exp $
 #
 
 DISTNAME=	bacisrc
@@ -16,7 +16,7 @@ DEPENDS+=	bison-[0-9]*:../../devel/bison
 
 USE_TOOLS+=	flex
 
-PLIST_SRC=      ${WRKDIR}/PLIST
+PLIST_SRC=	${WRKDIR}/PLIST
 
 INSTALLATION_DIRS=	bin
 

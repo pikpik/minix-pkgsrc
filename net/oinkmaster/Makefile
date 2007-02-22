@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2006/03/09 14:06:03 adrianp Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/07 09:14:04 rillig Exp $
 
 DISTNAME=	oinkmaster-2.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=oinkmaster/}
 
 MAINTAINER=	adrianp@NetBSD.org
-HOMEPAGE= 	http://oinkmaster.sourceforge.net/
+HOMEPAGE=	http://oinkmaster.sourceforge.net/
 COMMENT=	Manage snort rule updates
 
 DEPENDS+=	wget>=1.00:../../net/wget

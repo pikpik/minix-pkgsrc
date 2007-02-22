@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2005/08/06 06:19:35 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:53 jlam Exp $
 
-DISTNAME=      	Time-modules-2003.1126
+DISTNAME=	Time-modules-2003.1126
 PKGNAME=	p5-${DISTNAME:S/modules-//}
 SVR4_PKGNAME=	p5tim
 PKGREVISION=	1

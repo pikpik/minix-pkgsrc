@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/08/27 01:01:15 ben Exp $
+# $NetBSD: Makefile,v 1.27 2007/01/07 09:14:11 rillig Exp $
 
 DISTNAME=	cdrtools-2.01.01a05
 PKGNAME=	cdrtools-ossdvd-2.01.1.36
@@ -30,8 +30,8 @@ BUILDLINK_TRANSFORM+=	rmdir:/opt/schily
 .endif
 
 # avoid picking up a bad ${ARCH} during the build
-MAKE_ENV+=      ARCH=""
-MAKE_ENV+=      MAKEPROG="gmake"
+MAKE_ENV+=	ARCH=""
+MAKE_ENV+=	MAKEPROG="gmake"
 MAKE_ENV+=	COPTX=${CFLAGS:M*:Q}
 MAKE_ENV+=	LDOPTX=${LDFLAGS:M*:Q}
 

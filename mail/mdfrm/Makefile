@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/07/16 01:19:13 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/01/21 18:57:41 jlam Exp $
 #
 
 DISTNAME=	mdfrm.pl
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	#
 MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Print a summary of mail in a Maildir waiting to be read
 
-DEPENDS+=       p5-TimeDate-[0-9]*:../../time/p5-TimeDate
+DEPENDS+=	p5-TimeDate-[0-9]*:../../time/p5-TimeDate
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run
