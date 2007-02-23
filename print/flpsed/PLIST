@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/flpsed
+share/doc/flpsed/README
+@dirrm share/doc/flpsed
