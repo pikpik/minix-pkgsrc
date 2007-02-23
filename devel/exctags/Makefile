@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:29:14 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/04/13 23:36:20 rillig Exp $
 #
 
-DISTNAME=	ctags-5.5.4
+DISTNAME=	ctags-5.6
 PKGNAME=	ex${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ctags/}
@@ -18,6 +18,8 @@ CONFIGURE_ARGS+=	--with-readlib
 CONFIGURE_ARGS+=	--enable-custom-config=${PKG_SYSCONFDIR}/ctags.conf
 
 CPPFLAGS+=		-DETAGS="\"exetags\""
+# Makefile ignores CPPFLAGS
+CFLAGS+=		${CPPFLAGS}
 
 SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
