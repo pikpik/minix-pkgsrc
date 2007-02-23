@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.164 2006/12/27 17:40:50 joerg Exp $
+# $NetBSD: Makefile,v 1.165 2006/12/28 12:17:51 joerg Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -31,6 +31,7 @@ SUBDIR+=	epdfview
 SUBDIR+=	epstool
 SUBDIR+=	evince
 SUBDIR+=	evince-nautilus
+SUBDIR+=	flpsed
 SUBDIR+=	foomatic-filters
 SUBDIR+=	foomatic-filters-cups
 SUBDIR+=	foomatic-ppds
