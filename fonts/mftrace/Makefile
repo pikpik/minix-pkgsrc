@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2006/09/09 02:42:00 obache Exp $
+# $NetBSD: Makefile,v 1.16 2007/01/07 01:14:49 rillig Exp $
 
-DISTNAME=	mftrace-1.1.18
+DISTNAME=	mftrace-1.2.14
 CATEGORIES=	fonts
-MASTER_SITES=	http://www.xs4all.nl/~hanwen/mftrace/
+MASTER_SITES=	http://lilypond.org/download/sources/mftrace/
 
 MAINTAINER=	atamaniuk-pkgsrc@frobs.net
-HOMEPAGE=	http://www.xs4all.nl/~hanwen/mftrace/
+HOMEPAGE=	http://lilypond.org/mftrace/
 COMMENT=	Scalable Fonts for MetaFont
 
 DEPENDS+=	autotrace>=0.31:../../graphics/autotrace
