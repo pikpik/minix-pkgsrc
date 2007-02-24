@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.812 2007/02/21 21:08:14 minskim Exp $
+# $NetBSD: Makefile,v 1.813 2007/02/22 09:16:06 rillig Exp $
 #
 
 COMMENT=	Development utilities
@@ -84,6 +84,7 @@ SUBDIR+=	cgdb
 SUBDIR+=	check
 SUBDIR+=	chmlib
 SUBDIR+=	cmake
+SUBDIR+=	cmake-mode
 SUBDIR+=	coconut
 SUBDIR+=	codeville
 SUBDIR+=	cogito
@@ -222,8 +223,8 @@ SUBDIR+=	its4
 SUBDIR+=	jam
 SUBDIR+=	javacc
 SUBDIR+=	javadeps
-SUBDIR+=	jgrasp
 SUBDIR+=	jflex
+SUBDIR+=	jgrasp
 SUBDIR+=	kdbg
 SUBDIR+=	kdesdk3
 SUBDIR+=	kdevelop
