@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/02/05 23:10:07 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/01/07 09:14:00 rillig Exp $
 #
 
-DISTNAME=	autocue-20060129
-PKGREVISION=	1
+DISTNAME=	autocue-20070224
 CATEGORIES=	misc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
