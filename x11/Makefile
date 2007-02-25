@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.475 2007/02/25 04:30:30 dsainty Exp $
+# $NetBSD: Makefile,v 1.476 2007/02/25 04:47:34 dsainty Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -339,6 +339,7 @@ SUBDIR+=	xdaemon2
 SUBDIR+=	xdesktopwaves
 SUBDIR+=	xdialog
 SUBDIR+=	xdm3d
+SUBDIR+=	xdpyinfo
 SUBDIR+=	xearth
 SUBDIR+=	xephem
 SUBDIR+=	xev
