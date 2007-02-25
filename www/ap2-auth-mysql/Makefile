@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2006/10/04 22:04:09 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2006/12/08 23:34:10 xtraeme Exp $
 #
 
 DISTNAME=		mod_auth_mysql.c
 PKGNAME=		ap2-auth-mysql-1.11.12
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		www databases
 MASTER_SITES=		ftp://ftp.kcilink.com/pub/
 DISTFILES=		${DISTNAME}.gz mysql-group-auth.txt
@@ -12,7 +12,7 @@ MAINTAINER=		cube@NetBSD.org
 HOMEPAGE=		ftp://ftp.kcilink.com/pub/
 COMMENT=		Module to allow Apache 2 authentication against a MySQL database
 
-CONFLICTS+=		ap-auth-mysql-*
+CONFLICTS+=		ap-auth-mysql-[0-9]*
 
 DIST_SUBDIR=		ap2-auth-mysql
 EXTRACT_ONLY=		${DISTNAME}.gz
