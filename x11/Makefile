@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.476 2007/02/25 04:47:34 dsainty Exp $
+# $NetBSD: Makefile,v 1.477 2007/02/25 05:12:31 dsainty Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -327,6 +327,7 @@ SUBDIR+=	xbindkeys-tk
 SUBDIR+=	xbitmaps
 SUBDIR+=	xcb
 SUBDIR+=	xclip
+SUBDIR+=	xclock
 SUBDIR+=	xcmiscproto
 SUBDIR+=	xcolors
 SUBDIR+=	xcolorsel
