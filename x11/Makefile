@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.477 2007/02/25 05:12:31 dsainty Exp $
+# $NetBSD: Makefile,v 1.478 2007/02/25 05:55:39 dsainty Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -388,6 +388,7 @@ SUBDIR+=	xkbdata
 SUBDIR+=	xkbset
 SUBDIR+=	xkeycaps
 SUBDIR+=	xless
+SUBDIR+=	xload
 SUBDIR+=	xlockmore
 SUBDIR+=	xlockmore-lite
 SUBDIR+=	xlogout
