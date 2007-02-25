@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2006/04/06 06:22:10 reed Exp $
+# $NetBSD: Makefile,v 1.15 2007/01/17 11:14:46 tonio Exp $
 #
 
-DISTNAME=	coq-8.0pl3
-PKGREVISION=	1
+DISTNAME=	coq-8.1
 CATEGORIES=	lang math
-MASTER_SITES=	ftp://ftp.inria.fr/INRIA/coq/V8.0pl3/
+MASTER_SITES=	ftp://ftp.inria.fr/INRIA/coq/V8.1/
 
 MAINTAINER=	richards+netbsd@CS.Princeton.EDU
 HOMEPAGE=	http://coq.inria.fr/
@@ -22,7 +21,7 @@ BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.09
 .include "../../mk/bsd.prefs.mk"
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
-	(${MACHINE_ARCH} == "sparc")
+	(${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
 PLIST_SRC=	${PKGDIR}/PLIST.opt ${PKGDIR}/PLIST
 .endif
 
