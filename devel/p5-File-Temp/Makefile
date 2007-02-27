@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/10/27 12:42:57 obache Exp $
+# $NetBSD: Makefile,v 1.17 2006/11/05 17:49:34 joerg Exp $
 #
 
-DISTNAME=	File-Temp-0.17
+DISTNAME=	File-Temp-0.18
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5fte
 CATEGORIES=	devel perl5
