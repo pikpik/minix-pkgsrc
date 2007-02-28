@@ -1,0 +1,14 @@
+===========================================================================
+$NetBSD$
+
+relay-ctrl needs to be integrated into both your POP/IMAP and SMTP
+services. For SMTP, if you use mail/qmail-run, set the following
+in /etc/rc.conf:
+
+qmailsmtpd_postenv="RELAY_CTRL_DIR='${RELAY_CTRL_DIR}/allow'"
+qmailsmtpd_pretcpserver="${PREFIX}/bin/relay-ctrl-chdir"
+qmailsmtpd_presmtpd="${PREFIX}/bin/relay-ctrl-check"
+
+For other services, see ${PREFIX}/${DOCDIR}/README.
+
+===========================================================================
