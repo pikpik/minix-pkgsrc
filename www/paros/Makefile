@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/05/31 11:16:29 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/08 01:47:18 salo Exp $
 #
 
 DISTNAME=	paros-3.2.13-unix
 PKGNAME=	${DISTNAME:S/-unix//}
-CATEGORIES=	games java
+CATEGORIES=	www security java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=paros/}
 EXTRACT_SUFX=	.zip
 
