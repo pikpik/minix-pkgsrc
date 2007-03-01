@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/04/13 02:26:54 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2006/06/16 23:28:36 rillig Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -29,7 +29,6 @@ INSTALL_TARGET=	altinstall
 # installed module-building Makefile
 MAKE_ENV+=	'OPT=${CFLAGS}'
 CONFIGURE_ENV+=	'OPT=${CFLAGS}'
-SCRIPTS_ENV+=	'OPT=${CFLAGS}'
 
 SSLFLAGS=	-DUSE_SSL -I${BUILDLINK_PREFIX.openssl}/include/openssl \
 		-L${BUILDLINK_PREFIX.openssl}/lib \
