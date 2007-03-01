@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/02/20 23:49:56 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/26 19:56:35 pooka Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -8,6 +8,7 @@ SUBDIR+=	fuse-archivemount
 SUBDIR+=	fuse-cddfs
 SUBDIR+=	fuse-cryptofs
 SUBDIR+=	fuse-curlftpfs
+SUBDIR+=	fuse-encfs
 SUBDIR+=	fuse-httpfs
 SUBDIR+=	fuse-lzofs
 SUBDIR+=	fuse-ntfs-3g
