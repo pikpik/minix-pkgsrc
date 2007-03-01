@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: bsd.configure-vars.mk,v 1.1 2006/07/05 06:09:15 jlam Exp $
 #
 # CONFIGURE_DIRS is the list of directories in which to run the
 #	configure process.  If the directories are relative paths,
 #	then they are assumed to be relative to ${WRKSRC}.
 #
-# SCRIPTS_ENV is the shell environment passed to scripts invoked
-#	by pkgsrc, including xmkmf (used by the configure process).
+# SCRIPTS_ENV is the shell environment passed to xmkmf (used by
+#	the configure process).
 #
 CONFIGURE_DIRS?=	${WRKSRC}
 SCRIPTS_ENV?=		# empty
