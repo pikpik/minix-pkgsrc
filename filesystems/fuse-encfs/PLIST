@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/encfs
+bin/encfsctl
+man/man1/encfs.1
+man/man1/encfsctl.1
