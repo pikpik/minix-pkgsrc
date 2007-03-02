@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:20 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/23 20:33:05 drochner Exp $
 #
 
-DISTNAME=	libdnet-1.11
+DISTNAME=	libdnet-1.12
 CATEGORIES=	devel net
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libdnet/}
+MASTER_SITES=	http://libdnet.googlecode.com/files/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://libdnet.sourceforge.net/
+HOMEPAGE=	http://code.google.com/p/libdnet/
 COMMENT=	C interface to several low-level networking routines
 
 GNU_CONFIGURE=	yes
