@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/nelma-cap
+bin/nelma-drc
+man/man1/nelma-cap.1
+man/man1/nelma-drc.1
