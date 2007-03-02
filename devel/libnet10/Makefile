@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2007/02/15 14:22:02 rillig Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/18 18:36:21 adrianp Exp $
 #
 
 DISTNAME=	libnet-1.0.2a
+PKGREVISION=	1
 PKGNAME=	${DISTNAME:S/libnet/libnet10/}
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/deprecated/
