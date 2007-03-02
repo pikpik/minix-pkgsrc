@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:29:30 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2007/03/02 11:29:00 grant Exp $
 #
 
 DISTNAME=		vanessa_logger-0.0.7
@@ -17,10 +17,10 @@ GNU_CONFIGURE=		yes
 # __func__. So __FILE__ is the nearest replacement.
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Msunpro)
-SUBST_CLASSES+=		__function__
-SUBST_STAGE.example=	post-patch
-SUBST_FILES.example=	libvanessa_logger/vanessa_logger.h
-SUBST_SED.example=	-e "s|__FUNCTION__|__FILE__|g"
+SUBST_CLASSES+=			__function__
+SUBST_STAGE.__function__=	post-patch
+SUBST_FILES.__function__=	libvanessa_logger/vanessa_logger.h
+SUBST_SED.__function__=		-e "s|__FUNCTION__|__FILE__|g"
 .endif
 
 .include "../../mk/bsd.pkg.mk"
