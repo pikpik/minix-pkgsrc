@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.815 2007/02/27 12:44:47 wiz Exp $
+# $NetBSD: Makefile,v 1.816 2007/02/27 13:53:58 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -88,6 +88,7 @@ SUBDIR+=	cmake-mode
 SUBDIR+=	coconut
 SUBDIR+=	codeville
 SUBDIR+=	cogito
+SUBDIR+=	confuse
 SUBDIR+=	cook
 SUBDIR+=	cppunit
 SUBDIR+=	cpuflags
