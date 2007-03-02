@@ -2,6 +2,15 @@ $NetBSD$
 
 --- memcached.h.orig	2006-12-05 20:34:10.000000000 +1100
 +++ memcached.h
+@@ -76,7 +76,7 @@ typedef struct _stritem {
+     unsigned char   it_flags;   /* ITEM_* above */
+     unsigned char   slabs_clsid;/* which slab class we're in */
+     unsigned char   nkey;       /* key length, w/terminating null and padding */
+-    void * end[0];
++    void * end[];
+     /* then null-terminated key */
+     /* then " flags length\r\n" (no terminating null) */
+     /* then data with terminating \r\n (no terminating null; it's binary!) */
 @@ -282,3 +282,5 @@ void item_flush_expired(void);
  void set_current_time ();  /* update the global variable holding
                                global 32-bit seconds-since-start time
