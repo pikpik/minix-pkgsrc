@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/02/22 19:01:17 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2007/03/03 05:03:26 uebayasi Exp $
 #
 
 DISTNAME=	global-5.4
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=global/} \
 		http://www.tamacom.com/global/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/global/
 COMMENT=	Source code tag system including web browser output
 
