@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/22 22:50:31 tv Exp $
+# $NetBSD: Makefile,v 1.11 2007/01/07 09:13:49 rillig Exp $
 
 DISTNAME=	icbirc-1.8
 CATEGORIES=	chat
@@ -7,6 +7,9 @@ MASTER_SITES=	http://www.benzedrine.cx/
 MAINTAINER=	tv@NetBSD.org
 HOMEPAGE=	http://www.benzedrine.cx/icbirc.html
 COMMENT=	Proxy IRC client and ICB server
+
+# uses strlcpy
+NOT_FOR_PLATFORM=	Linux-*-*
 
 WRKSRC=		${WRKDIR}/${PKGBASE}
 MAKE_ENV+=	BINDIR="${PREFIX}/bin" MANDIR="${PREFIX}/man"
