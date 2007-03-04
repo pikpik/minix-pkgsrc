@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/08/06 23:10:30 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/09/17 01:25:18 christos Exp $
 
 DISTNAME=	idutils-4.2
 PKREVISION=	1
@@ -15,7 +15,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV+=		ac_cv_path_EMACS=no
+CONFIGURE_ENV+=		ac_cv_prog_EMACS=no
 INFO_FILES=		YES
 MAKE_ENV+=		BSD_SETENV=${SETENV:Q}
 
