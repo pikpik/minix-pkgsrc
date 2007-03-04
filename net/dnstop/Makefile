@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/10/08 12:43:38 obache Exp $
+# $NetBSD: Makefile,v 1.17 2007/01/07 09:14:02 rillig Exp $
 #
 
-DISTNAME=	dnstop-20060517
+DISTNAME=	dnstop-20070219
 CATEGORIES=	net
 MASTER_SITES=	http://dns.measurement-factory.com/tools/dnstop/src/
 
