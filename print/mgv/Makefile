@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:31 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/12/15 20:33:00 joerg Exp $
 
 DISTNAME=		mgv-3.1.5
 PKGREVISION=		4
 CATEGORIES=		print
-MASTER_SITES=		http://www.trends.net/~mu/srcs/
+MASTER_SITES=		#
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.trends.net/~mu/mgv.html
+HOMEPAGE=		http://web.archive.org/web/20020201231345/http://www.trends.net/~mu/mgv.html
 COMMENT=		Motif/LessTif user interface for Ghostscript
 
 GNU_CONFIGURE=		yes

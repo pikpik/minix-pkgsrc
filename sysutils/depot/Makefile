@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/06/21 18:34:42 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2006/10/02 21:22:05 rillig Exp $
 #
 
 DISTNAME=	depot-5.14
@@ -6,7 +6,8 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/depot/alpha/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://asg.web.cmu.edu/depot/
+# "Most of the content here is being removed and archived."
+# HOMEPAGE=	http://asg.web.cmu.edu/depot/
 COMMENT=	Maps several separate packages into a tree without merging them
 
 GNU_CONFIGURE=	yes
