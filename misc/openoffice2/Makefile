@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/02/28 22:41:45 hira Exp $
+# $NetBSD: Makefile,v 1.5 2007/03/01 16:13:20 hira Exp $
 #
 
 OO_VER=			2.1.0
@@ -133,14 +133,15 @@ ARCH=	${MACHINE_ARCH:C/i[3-6]86/i386/g}
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXcursor/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXfixes/buildlink3.mk"
 .include "../../x11/libXi/buildlink3.mk"
-.include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/compiler.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
