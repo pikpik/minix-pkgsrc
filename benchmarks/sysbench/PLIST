@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/sysbench
+share/doc/sysbench/manual.html
+@dirrm share/doc/sysbench
