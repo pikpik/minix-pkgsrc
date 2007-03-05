@@ -607,8 +607,6 @@ TOOLS_CREATE+=			pkg-config
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.pkg-config=pkg-config
 TOOLS_PATH.pkg-config=		${TOOLS_PREFIX.pkg-config}/bin/pkg-config
 .  endif
-.else
-TOOLS_FAIL+=			pkg-config
 .endif
 
 .if !defined(TOOLS_IGNORE.pod2man) && !empty(_USE_TOOLS:Mpod2man)

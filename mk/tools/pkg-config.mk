@@ -42,10 +42,8 @@
 _PKG_CONFIG_LIBDIR?=	${BUILDLINK_DIR}/lib/pkgconfig:${BUILDLINK_DIR}/share/pkgconfig
 _PKG_CONFIG_LOG?=	${WRKDIR}/.pkg-config.log
 
-.if !empty(USE_TOOLS:C/\:.*//:Mpkg-config)
 TOOLS_SCRIPT.pkg-config=	\
 	PKG_CONFIG_LIBDIR=${_PKG_CONFIG_LIBDIR:Q} ${TOOLS_SCRIPT_DFLT.pkg-config}
-.endif
 
 CONFIGURE_ENV+=	PKG_CONFIG=${TOOLS_CMD.pkg-config:Q}
 CONFIGURE_ENV+=	PKG_CONFIG_LIBDIR=${_PKG_CONFIG_LIBDIR:Q}
