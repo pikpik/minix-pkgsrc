@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2006/10/04 21:39:31 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2006/10/14 08:02:56 wiz Exp $
 #
 
 DISTNAME=		ec-fonts-mftraced-1.0.8
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		fonts
 MASTER_SITES=		http://lilypond.org/download/fonts/
 
