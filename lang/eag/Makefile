@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/10/04 21:46:13 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/15 22:29:52 joerg Exp $
 
 DISTNAME=		eag-2.3
 PKGREVISION=		2
@@ -6,7 +6,7 @@ CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.ru.nl/pub/eag/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		jaapboen@sci.kun.nl
+MAINTAINER=		jaapb@kerguelen.org
 HOMEPAGE=		http://www.cs.ru.nl/~kees/eag/
 COMMENT=		Transducer generator using affix grammars
 
