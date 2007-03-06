@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2007/01/15 06:39:38 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/31 00:04:12 wiz Exp $
 
 DISTNAME=		${PKGNAME_NOREV}-source
-PKGNAME=		sbcl-1.0.1
+PKGNAME=		sbcl-1.0.3
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sbcl/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		jonb@NetBSD.org
 HOMEPAGE=		http://www.sbcl.org/
 COMMENT=		SBCL, a Common Lisp implementation
-
-BROKEN_IN=		pkgsrc-2006Q4
 
 ONLY_FOR_PLATFORM=	NetBSD-[2-9]*-i386
 # It should be possible to have SBCL working on amd64, powerpc,
