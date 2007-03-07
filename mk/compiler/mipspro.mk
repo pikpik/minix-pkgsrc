@@ -1,4 +1,4 @@
-# $NetBSD: mipspro.mk,v 1.36 2006/12/02 22:32:59 jschauma Exp $
+# $NetBSD: mipspro.mk,v 1.37 2006/12/15 12:46:24 martti Exp $
 #
 # This is the compiler definition for the MIPSpro C compiler.
 #
@@ -74,6 +74,11 @@ _LANGUAGES.mipspro+=	${LANGUAGES.mipspro:M${_lang_}}
 .if !empty(USE_LANGUAGES:Mc99)
 _WRAP_EXTRA_ARGS.CC+=	-c99
 .endif
+
+# Normally, the #error directive only results in a warning (which is
+# explicitly allowed in ISO C99), but we want it to be an error.
+_WRAP_EXTRA_ARGS.CC+=	-diag_error 1035
+_WRAP_EXTRA_ARGS.CXX+=	-diag_error 1035
 
 # Prepend the path to the compiler to the PATH.
 .if !empty(_LANGUAGES.mipspro)
