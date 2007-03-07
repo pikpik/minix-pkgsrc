@@ -11,3 +11,13 @@ $NetBSD$
    ar_to_use="\$(CXX) -xar -o"
  else
    ar_to_use="\$(AR) cru"
+@@ -6216,7 +6216,8 @@ ac_res=`eval echo '${'$as_ac_Lib'}'`
+ 	       { echo "$as_me:$LINENO: result: $ac_res" >&5
+ echo "${ECHO_T}$ac_res" >&6; }
+ if test `eval echo '${'$as_ac_Lib'}'` = yes; then
+-  BOOST_REGEX_LIB=$ax_lib break
++  BOOST_REGEX_LIB=$ax_lib
++  break
+ fi
+ 
+   done

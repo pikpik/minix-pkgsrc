@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/04/07 19:54:17 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2007/02/22 20:35:34 wiz Exp $
 #
 
 DISTNAME=	source-highlight-2.5
@@ -21,6 +21,8 @@ INFO_FILES=	YES
 # this is only really needed for the 'test' target
 USE_TOOLS+=	gmake gsed
 TEST_TARGET=	check
+
+CONFIGURE_ARGS+=	--with-boost-regex
 
 BUILDLINK_TRANSFORM+=	l:boost_regex:boost_regex-mt
 
