@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.75 2007/01/04 13:27:12 ghen Exp $
+# $NetBSD: Makefile,v 1.76 2007/01/07 09:14:03 rillig Exp $
 
-DISTNAME=		lftp-3.5.6
+DISTNAME=		lftp-3.5.9
 CATEGORIES=		net
 MASTER_SITES=		http://ftp.yars.free.net/pub/source/lftp/ \
 			ftp://ftp.iasi.roedu.net/pub/os/Linux/network/ftp/lftp/ \
@@ -17,7 +17,7 @@ USE_PKGLOCALEDIR=	YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
-USE_GNU_READLINE=	# uses GNU readline internal _rl_mark_modified_lines
+USE_GNU_READLINE=	YES	# uses GNU readline internal _rl_mark_modified_lines
 
 SHLIBTOOL_OVERRIDE=	# empty
 
