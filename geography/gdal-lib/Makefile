@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/23 22:22:38 gdt Exp $
 #
 
 DISTNAME=		gdal-1.4.0
 PKGNAME=		gdal-lib-1.4.0
+PKGREVISION=		1
 CATEGORIES=		geography
 MASTER_SITES=		http://www.gdal.org/dl/
 
@@ -48,6 +49,7 @@ CONFIGURE_ARGS+=	--without-python
 CHECK_PORTABILITY_SKIP+=	mkbindist.sh
 
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/tiff/buildlink3.mk"
 .include "../../geography/geos/buildlink3.mk"
 .include "../../misc/proj/buildlink3.mk"
 .include "../../textproc/xerces-c/buildlink3.mk"
