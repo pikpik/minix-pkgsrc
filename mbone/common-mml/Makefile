@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/04 21:30:09 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2006/04/11 18:39:41 minskim Exp $
 #
 
 DISTNAME=	common-1.2.16
@@ -17,10 +17,11 @@ USE_LIBTOOL=	yes
 INCDIR=		${PREFIX}/include/common-mml
 DOCDIR=		${PREFIX}/share/doc/common-mml
 
+INSTALLATION_DIRS=	${INCDIR} ${DOCDIR}
+
 do-install:
 	${LIBTOOL} --mode=install \
 		${INSTALL_LIB} ${WRKSRC}/src/*.la ${PREFIX}/lib
-	${INSTALL_DATA_DIR} ${INCDIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/src/*.h ${INCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/html/*.html ${DOCDIR}
 
