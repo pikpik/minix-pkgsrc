@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: package.mk,v 1.1 2006/08/03 18:50:32 jmmv Exp $
 #
 
 PKGNAME=	hugs98-${DISTNAME}
-MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/2006-05/packages/
+MASTER_SITES=	http://cvs.haskell.org/Hugs/downloads/2006-09/packages/
 
 COMMENT+=	(Hugs package)
 

@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/03 18:52:02 jmmv Exp $
 #
 
-DISTNAME=	unix-1.0.20060515
+DISTNAME=	unix-2.0.20060921
 CATEGORIES=	devel
 
 MAINTAINER=	jmmv@NetBSD.org

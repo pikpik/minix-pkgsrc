@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/04 14:42:15 jmmv Exp $
 #
 
-DISTNAME=	HaXml-1.15.20060515
+DISTNAME=	HaXml-1.17.20060921
 CATEGORIES=	textproc
 
 MAINTAINER=	jmmv@NetBSD.org
