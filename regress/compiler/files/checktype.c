@@ -1,1 +1,3 @@
+/* $NetBSD$ */
+
 typedef TYPE t;
