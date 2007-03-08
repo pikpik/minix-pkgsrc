@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/02/02 19:35:12 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2007/03/08 19:43:10 wiz Exp $
 
 DISTNAME=	pilotmgr-1.109
 CATEGORIES=	comms
@@ -27,10 +27,10 @@ PM_DOC_DIR=	${PREFIX}/share/doc/${DISTNAME:C/-.*$//}
 INSTALLATION_DIRS=	bin
 
 post-extract:
-	@${RM} -f ${WRKSRC}/SyncCM.pm
+	${RM} -f ${WRKSRC}/SyncCM.pm
 
 pre-install:
-	@${FIND} ${WRKSRC} -name '*.orig' -print | ${XARGS} ${RM} -f
+	${FIND} ${WRKSRC} -name '*.orig' -print | ${XARGS} ${RM} -f
 
 do-install:
 	${INSTALL_DATA_DIR} ${PM_PERL_DIR}
