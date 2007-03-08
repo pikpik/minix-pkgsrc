@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/04/13 18:27:24 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2006/08/12 21:05:06 wiz Exp $
 #
 
-DISTNAME=	yasm-0.5.0
+DISTNAME=	yasm-0.6.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.tortall.net/projects/yasm/releases/
 
@@ -12,6 +12,7 @@ COMMENT=	Complete rewrite of the NASM assembler with BSD license
 USE_TOOLS+=		msgfmt
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
+TEST_TARGET=		check
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
