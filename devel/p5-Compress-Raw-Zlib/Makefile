@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2006/11/05 17:49:34 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/02 19:08:39 wiz Exp $
 
-DISTNAME=		Compress-Raw-Zlib-2.003
+DISTNAME=		Compress-Raw-Zlib-2.004
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5crz
 CATEGORIES=		devel perl5
