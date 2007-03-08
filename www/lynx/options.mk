@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2006/02/06 19:37:49 tv Exp $
+# $NetBSD: options.mk,v 1.8 2007/01/16 07:06:38 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.lynx
 PKG_SUPPORTED_OPTIONS=	inet6
@@ -55,11 +55,11 @@ CONFIGURE_ARGS+=	--enable-color-style
 ### SOCKS support
 ###
 .if !empty(PKG_OPTIONS:Msocks4)
-CONFIGURE_ARGS+= 	--with-socks
+CONFIGURE_ARGS+=	--with-socks
 .  include "../../net/socks4/buildlink3.mk"
 .endif
 .if !empty(PKG_OPTIONS:Msocks5)
-CONFIGURE_ARGS+= 	--with-socks5
+CONFIGURE_ARGS+=	--with-socks5
 .  include "../../net/socks5/buildlink3.mk"
 .endif
 
