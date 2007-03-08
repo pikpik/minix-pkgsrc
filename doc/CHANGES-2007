@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2007,v 1.549 2007/03/07 16:49:55 gson Exp $
+$NetBSD: CHANGES-2007,v 1.550 2007/03/07 21:40:14 dmcmahill Exp $
 
 Changes to the packages collection and infrastructure in 2007:
 
@@ -1085,3 +1085,4 @@ Changes to the packages collection and infrastructure in 2007:
 	Updated www/firefox2-gtk1 to 2.0.0.2nb1 [dmcmahill 2007-03-07]
 	Updated www/seamonkey to 1.1.1nb1 [dmcmahill 2007-03-07]
 	Updated www/seamonkey-gtk1 to 1.1.1nb1 [dmcmahill 2007-03-07]
+	Updated misc/dialog to 1.1.20070227 [wiz 2007-03-08]
