@@ -1,4 +1,4 @@
-# $NetBSD: utility.mk,v 1.3 2006/07/27 22:01:28 jlam Exp $
+# $NetBSD: utility.mk,v 1.4 2006/12/13 07:48:17 ghen Exp $
 
 ######################################################################
 ###
@@ -53,7 +53,7 @@ show-needs-update:
 	${_DEPENDS_WALK_CMD} -r ${PKGPATH} |				\
 	while read i; do						\
 		cd ${PKGSRCDIR}/$$i;					\
-		eval `${RECURSIVE_MAKE} show-vars-eval VARS='PKGNAME:want PKGWILDCARD:wild'`; \
+		eval `${RECURSIVE_MAKE} ${MAKEFLAGS} show-vars-eval VARS='PKGNAME:want PKGWILDCARD:wild'`; \
 		have=`${_PKG_BEST_EXISTS} "$$wild" || ${TRUE}`;		\
 		if [ -z "$$have" ]; then				\
 			${ECHO} "$$i => (none) => needs install of $$want"; \
