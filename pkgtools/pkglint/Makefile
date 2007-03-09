@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.357 2007/01/30 18:41:26 rillig Exp $
+# $NetBSD: Makefile,v 1.358 2007/02/20 12:38:32 uebayasi Exp $
 #
 
 DISTNAME=	pkglint-4.76
@@ -25,7 +25,7 @@ NO_CHECKSUM=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# none
 
-INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1 share/pkglint
+INSTALLATION_DIRS_FROM_PLIST=	yes
 
 SUBST_CLASSES+=		pkglint
 SUBST_STAGE.pkglint=	post-configure
