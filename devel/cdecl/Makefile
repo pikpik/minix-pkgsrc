@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/06/09 15:50:35 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2007/02/22 19:26:21 wiz Exp $
 #
 
 DISTNAME=	cdecl-2.5
@@ -16,6 +16,7 @@ BUILD_TARGET=		cdecl
 # missing rl_completion_matches
 USE_GNU_READLINE=	yes
 USE_TOOLS+=		lex yacc
+INSTALL_MAKE_FLAGS=	MANDIR=${PREFIX}/${PKGMANDIR}/man1
 
 EGDIR=			${PREFIX}/share/examples/cdecl
 
