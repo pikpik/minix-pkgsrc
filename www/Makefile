@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.497 2007/01/28 15:31:03 taca Exp $
+# $NetBSD: Makefile,v 1.498 2007/02/01 14:08:55 ghen Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -228,6 +228,7 @@ SUBDIR+=	p5-HTTP-Server-Simple-Static
 SUBDIR+=	p5-HTTPD-User-Manage
 SUBDIR+=	p5-Jemplate
 SUBDIR+=	p5-Kwiki
+SUBDIR+=	p5-Kwiki-Archive-Cvs
 SUBDIR+=	p5-Kwiki-Archive-Rcs
 SUBDIR+=	p5-Kwiki-BreadCrumbs
 SUBDIR+=	p5-Kwiki-Edit-RequireUserName
