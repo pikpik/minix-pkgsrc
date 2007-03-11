@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	2006-10-14 18:55:43.000000000 +0200
-+++ Makefile.in	2006-10-14 18:55:59.000000000 +0200
-@@ -370,12 +370,7 @@
+--- Makefile.in.orig	2007-03-05 20:23:25.000000000 +0100
++++ Makefile.in
+@@ -372,12 +372,7 @@ AUTOMAKE_OPTIONS = foreign
  EXTRA_DIST = INSTALL-SOURCE INSTALL-WIN-SOURCE \
  			README COPYING EXCEPTIONS-CLIENT CMakeLists.txt
  
