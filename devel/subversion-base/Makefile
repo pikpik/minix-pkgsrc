@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2007/02/22 19:26:25 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2007/03/11 21:01:05 adam Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
+PKGREVISION=	1
 COMMENT=	Version control system, base programs and libraries
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
