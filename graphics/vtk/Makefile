@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2006/09/16 19:37:51 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/15 14:33:06 joerg Exp $
 #
 
 PKGNAME=	vtk-${VTKDIST_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 
 COMMENT=	Visualization toolkit
 
