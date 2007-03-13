@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2007-03-07 14:57:17.000000000 +0100
++++ configure
+@@ -35161,7 +35161,7 @@ if test x$have_kipi = xno; then
+     echo ""
+ fi
+ 
+-if test x$have_exif2 == xno; then
++if test x$have_exif2 = xno; then
+     echo ""
+     echo ""
+     echo "------------------------------------------"
