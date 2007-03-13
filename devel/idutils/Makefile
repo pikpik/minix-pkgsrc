@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/09/17 01:25:18 christos Exp $
+# $NetBSD: Makefile,v 1.4 2007/03/04 19:21:18 dbj Exp $
 
 DISTNAME=	idutils-4.2
-PKREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=idutils/}
 
