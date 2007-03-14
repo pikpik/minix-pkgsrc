@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2007,v 1.591 2007/03/13 17:41:20 obache Exp $
+$NetBSD: CHANGES-2007,v 1.592 2007/03/14 12:39:05 markd Exp $
 
 Changes to the packages collection and infrastructure in 2007:
 
@@ -1140,3 +1140,4 @@ Changes to the packages collection and infrastructure in 2007:
 	Updated print/foomatic-ppds to 20070207 [markd 2007-03-14]
 	Updated print/foomatic-ppds-cups to 20070207 [markd 2007-03-14]
 	Updated print/cups to 1.2.8 [markd 2007-03-14]
+	Updated mail/dovecot to 1.0rc27 [ghen 2007-03-14]
