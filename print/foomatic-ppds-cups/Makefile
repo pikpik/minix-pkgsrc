@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2006/03/14 01:14:32 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/06/15 20:40:16 jlam Exp $
 
 .include "../../print/foomatic-ppds/Makefile.common"
 
 DISTNAME=	foomatic-ppds-cups-${FOOMATIC_PPDS_VERSION}
-PKGREVISION=	1
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
