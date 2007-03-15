@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2006/08/27 16:21:35 taca Exp $
+# $NetBSD: Makefile,v 1.22 2006/09/29 15:16:50 taca Exp $
 #
 
 DISTNAME=	bkpupsd-2.2.1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.SmartField.co.jp/pub/misc/ \
+MASTER_SITES=	ftp://ftp.jone-system.com/pub/misc/ \
 		ftp://ftp.back-street.net/pub/misc/
 EXTRACT_SUFX=	.tar.bz2
 
