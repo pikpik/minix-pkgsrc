@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/11/02 11:36:16 taca Exp $
+# $NetBSD: Makefile,v 1.7 2006/07/20 13:48:14 jlam Exp $
 #
 
 DISTNAME=	nqxml-1.1.3p1
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nqxml/} \
 		http://rrr.jin.gr.jp/download/
 
 MAINTAINER=	neumann@s-direktnet.de
-HOMEPAGE=	http://nqxml.sourceforge.net/
+HOMEPAGE=	http://sourceforge.net/projects/nqxml/
 COMMENT=	XML parser written in pure Ruby
 
 NO_BUILD=	yes
