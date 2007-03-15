@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/01 00:34:14 xtraeme Exp $
 #
 
 DISTNAME=	encfs-1.2.0-2
 PKGNAME=	fuse-${DISTNAME}
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=encfs/}
 EXTRACT_SUFX=	.tgz
 

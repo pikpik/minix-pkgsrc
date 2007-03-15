@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/02/20 23:44:06 xtraeme Exp $
 #
 
 DISTNAME=	httpfs_with_static_binaries_${DIST_VER}
 PKGNAME=	fuse-httpfs-${DIST_VER}
-CATEGORIES=	sysutils
+CATEGORIES=	filesystems
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=httpfs/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
