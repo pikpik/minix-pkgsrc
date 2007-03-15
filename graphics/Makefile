@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.443 2007/01/05 19:34:48 kristerw Exp $
+# $NetBSD: Makefile,v 1.444 2007/01/11 19:03:05 drochner Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -181,6 +181,7 @@ SUBDIR+=	libgiigic
 SUBDIR+=	libgnomecanvas
 SUBDIR+=	libgnomecanvasmm
 SUBDIR+=	libkexif
+SUBDIR+=	libkexiv2
 SUBDIR+=	libkipi
 SUBDIR+=	librsvg
 SUBDIR+=	librsvg2
