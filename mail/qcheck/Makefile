@@ -1,22 +1,23 @@
-# $NetBSD: Makefile,v 1.4 2003/07/17 21:46:52 grant Exp $
+# $NetBSD: Makefile,v 1.5 2005/06/16 06:58:08 jlam Exp $
 #
 
 DISTNAME=	qcheck
 PKGNAME=	qcheck-1.0
+PKGREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.meanmachine.ch/pub/unix/qmail/
+MASTER_SITES=	http://zapek.com/software/qcheck/
 
 MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Text-only biff with Maildir support
 
+DIST_SUBDIR=	${PKGNAME_NOREV}
+
 NO_CONFIGURE=	YES
 
-INSTALLATION_DIRS=	bin
-
-do-build:
-	${CC} ${CFLAGS} ${WRKSRC}/qcheck.c -o ${WRKSRC}/qcheck
+INSTALLATION_DIRS=	bin share/doc/${PKGBASE}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qcheck ${PREFIX}/bin/qcheck
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/${PKGBASE}/README
 
 .include "../../mk/bsd.pkg.mk"

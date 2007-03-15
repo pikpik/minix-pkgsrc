@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/03/12 09:05:45 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:01:08 zuntum Exp $
 bin/qcheck
+share/doc/qcheck/README
+@dirrm share/doc/qcheck
