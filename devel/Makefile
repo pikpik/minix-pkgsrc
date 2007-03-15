@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.818 2007/03/02 10:21:16 grant Exp $
+# $NetBSD: Makefile,v 1.819 2007/03/14 16:22:03 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -447,6 +447,7 @@ SUBDIR+=	p5-File-chdir
 SUBDIR+=	p5-FileHandle-Unget
 SUBDIR+=	p5-FileKGlob
 SUBDIR+=	p5-FreezeThaw
+SUBDIR+=	p5-Getopt-ArgvFile
 SUBDIR+=	p5-Getopt-Long
 SUBDIR+=	p5-Getopt-Simple
 SUBDIR+=	p5-Graph
