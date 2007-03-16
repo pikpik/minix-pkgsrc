@@ -313,6 +313,5 @@ void Job_TokenReturn(void);
 void Job_TokenFlush(void);
 Boolean Job_TokenWithdraw(void);
 void Job_ServerStart(int);
-void Job_Execv(const char *, char **);
 
 #endif /* _JOB_H_ */

@@ -220,6 +220,8 @@ CompatRunCommand(ClientData cmdp, ClientData gnp)
     const char  **av;	    	/* Argument vector for thing to exec */
     int	    	  argc;	    	/* Number of arguments in av or 0 if not
 				 * dynamically allocated */
+    Boolean 	  local;    	/* TRUE if command should be executed
+				 * locally */
     char	  *cmd = (char *)cmdp;
     GNode	  *gn = (GNode *)gnp;
 
@@ -337,6 +339,8 @@ CompatRunCommand(ClientData cmdp, ClientData gnp)
 	av = (const char **)brk_string(cmd, &argc, TRUE, &bp);
     }
 
+    local = TRUE;
+
     /*
      * Fork and execute the single command. If the fork fails, we abort.
      */
@@ -346,10 +350,10 @@ CompatRunCommand(ClientData cmdp, ClientData gnp)
     }
     if (cpid == 0) {
 	Check_Cwd(av);
-	if (*cp == '\0')
+	if (local)
 	    (void)execvp(av[0], (char *const *)UNCONST(av));
 	else
-	    Job_Execv(av[0], (char **)UNCONST(av));
+	    (void)execv(av[0], (char *const *)UNCONST(av));
 	execError("exec", av[0]);
 	_exit(1);
     }
