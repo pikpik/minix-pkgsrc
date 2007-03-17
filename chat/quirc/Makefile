@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/05/14 15:37:45 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/01/15 19:31:46 joerg Exp $
 #
 
 DISTNAME=	quirc-0.9.84
@@ -12,9 +12,13 @@ COMMENT=	Stable and powerful graphical IRC client
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake automake autoconf autoreconf
 
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
+MAKE_FLAGS+=	docdir=${PREFIX}/share/doc/quirc
+
+pre-configure:
+	cd ${WRKSRC} && autoreconf
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
