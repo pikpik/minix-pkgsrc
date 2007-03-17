@@ -1,6 +1,5 @@
 @comment $NetBSD$
 ${RUBY_SITELIBDIR}/active_record.rb
-${RUBY_SITELIBDIR}/active_record/._version.rb
 ${RUBY_SITELIBDIR}/active_record/acts/list.rb
 ${RUBY_SITELIBDIR}/active_record/acts/nested_set.rb
 ${RUBY_SITELIBDIR}/active_record/acts/tree.rb
