@@ -1,7 +1,5 @@
 @comment $NetBSD$
 ${RUBY_SITELIBDIR}/active_support.rb
-${RUBY_SITELIBDIR}/active_support/._dependencies.rb
-${RUBY_SITELIBDIR}/active_support/._version.rb
 ${RUBY_SITELIBDIR}/active_support/binding_of_caller.rb
 ${RUBY_SITELIBDIR}/active_support/breakpoint.rb
 ${RUBY_SITELIBDIR}/active_support/caching_tools.rb
