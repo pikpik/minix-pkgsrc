@@ -15,6 +15,7 @@ ${RUBY_SITELIBDIR}/action_controller/cgi_ext/cgi_ext.rb
 ${RUBY_SITELIBDIR}/action_controller/cgi_ext/cgi_methods.rb
 ${RUBY_SITELIBDIR}/action_controller/cgi_ext/cookie_performance_fix.rb
 ${RUBY_SITELIBDIR}/action_controller/cgi_ext/raw_post_data_fix.rb
+${RUBY_SITELIBDIR}/action_controller/cgi_ext/session_performance_fix.rb
 ${RUBY_SITELIBDIR}/action_controller/cgi_process.rb
 ${RUBY_SITELIBDIR}/action_controller/components.rb
 ${RUBY_SITELIBDIR}/action_controller/cookies.rb
