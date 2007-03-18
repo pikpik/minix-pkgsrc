@@ -2,6 +2,15 @@ $NetBSD$
 
 --- Configure.orig	2005-04-30 18:05:03.000000000 +0200
 +++ Configure
+@@ -24,7 +24,7 @@ export PATH
+ auth_file=web_auth_file.pl
+ 
+ # name of perl - used by author's test rig
+-PERL=${PERLNAME:-perl}
++#PERL=${PERLNAME:-perl}
+ 
+ # process cmdline args
+ while test $# -gt 0 ; do
 @@ -158,7 +158,7 @@ perlmodule(){
  }
  
