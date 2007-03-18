@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/11/05 18:05:33 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/22 19:27:07 wiz Exp $
 
-DISTNAME=	modsecurity-apache_2.0.3
-PKGNAME=	${APACHE_PKG_PREFIX}-modsecurity-2.0.3
+DISTNAME=	modsecurity-apache_2.1.0
+PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/apache_//}
 CATEGORIES=	www security
 MASTER_SITES=	http://www.modsecurity.org/download/
 
