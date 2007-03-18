@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.155 2007/02/23 21:40:19 agc Exp $
+# $NetBSD: Makefile,v 1.156 2007/03/18 19:56:58 wiz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -60,6 +60,7 @@ SUBDIR+=	libspectrum
 SUBDIR+=	linuxppc_lib
 SUBDIR+=	lrmi
 SUBDIR+=	m1
+SUBDIR+=	makeppf
 SUBDIR+=	minivmac
 SUBDIR+=	mmix
 SUBDIR+=	netbsd32_compat14
