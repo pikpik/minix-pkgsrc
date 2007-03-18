@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/06/14 15:51:38 adam Exp $
+# $NetBSD: Makefile,v 1.2 2006/12/28 12:12:59 joerg Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-psql-${QTVERSION}
-PKGREVISION=	1
 COMMENT=	QT postgresql driver
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include
@@ -13,9 +12,8 @@ CONFIGURE_ARGS+=	-L${QTDIR}/lib
 BUILD_QT4=		yes
 
 do-build:
-	cd ${WRKSRC}/src/tools/moc && ${SETENV} ${MAKE_ENV} ${GMAKE}
-	cd ${WRKSRC}/src/plugins/sqldrivers/psql && \
-		${SETENV} ${MAKE_ENV} ${GMAKE}
+	cd ${WRKSRC}/src/tools/moc && env ${MAKE_ENV} ${GMAKE}
+	cd ${WRKSRC}/src/plugins/sqldrivers/psql && env ${MAKE_ENV} ${GMAKE}
 
 SQLDRVDIR=	${QTPREFIX}/plugins/sqldrivers
 
