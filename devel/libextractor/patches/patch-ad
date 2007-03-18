@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/plugins/exiv2/Makefile.in.orig	2007-01-02 04:02:22.000000000 +0100
+--- src/plugins/exiv2/Makefile.in.orig	2007-03-12 01:35:07.000000000 +0100
 +++ src/plugins/exiv2/Makefile.in
-@@ -305,11 +305,11 @@ libextractor_exiv2_la_LINK = \
+@@ -308,11 +308,11 @@ libextractor_exiv2_la_LINK = \
    /bin/sh ../../../libtool --mode=link $(CXXLD) -o libextractor_exiv2.la
  
  libextractor_exiv2_la_LDFLAGS = \
