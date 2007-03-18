@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2006/10/07 07:10:29 obache Exp $
+# $NetBSD: Makefile,v 1.24 2007/01/07 13:29:20 rillig Exp $
 
-DISTNAME=	dar-2.3.2
+DISTNAME=	dar-2.3.3
 CATEGORIES=	archivers sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dar/}
 
@@ -38,8 +38,12 @@ PKG_SUGGESTED_OPTIONS=
 # and CPU overheads of Dar.
 .if !empty(PKG_OPTIONS:Mdar-int64)
 CONFIGURE_ARGS+=	--enable-mode=64
+PLIST_SUBST+=		DARBITS=64
 .elif !empty(PKG_OPTIONS:Mdar-int32)
 CONFIGURE_ARGS+=	--enable-mode=32
+PLIST_SUBST+=		DARBITS=32
+.else
+PLIST_SUBST+=		DARBITS=
 .endif
 
 PKGCONFIG_OVERRIDE=	src/libdar/libdar.pc.tmpl.in
