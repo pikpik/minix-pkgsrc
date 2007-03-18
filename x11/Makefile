@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.482 2007/03/07 15:06:46 joerg Exp $
+# $NetBSD: Makefile,v 1.483 2007/03/09 22:05:17 xtraeme Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -290,6 +290,7 @@ SUBDIR+=	ruby-tk
 SUBDIR+=	rxvt
 SUBDIR+=	rxvt-unicode
 SUBDIR+=	scrnsaverproto
+SUBDIR+=	setxkbmap
 SUBDIR+=	speyes
 SUBDIR+=	ssystem
 SUBDIR+=	startup-notification
