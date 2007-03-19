@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/03/27 17:06:01 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/30 04:12:20 tv Exp $
 #
 
 DISTNAME=	Mail-Milter-0.07
@@ -7,7 +7,7 @@ CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/} \
 		${MASTER_SITE_SOURCEFORGE:=pmilter/}
 
-MAINTAINER=	tv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pmilter.sourceforge.net/
 COMMENT=	Sendmail::Milter enhancement API modules
 
