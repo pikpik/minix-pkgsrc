@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/01/28 12:11:37 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2007/01/29 21:43:54 joerg Exp $
 #
 
 DISTNAME=		eboard-1.0.3
@@ -17,6 +17,7 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--man-prefix=${PREFIX}/${PKGMANDIR}
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		perl gmake pkg-config
+CONFIG_SHELL=		perl
 REPLACE_PERL+=		configure
 LDFLAGS+=		${LIBOSSAUDIO}
 
