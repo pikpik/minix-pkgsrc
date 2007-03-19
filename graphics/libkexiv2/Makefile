@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/13 10:00:30 drochner Exp $
 #
 
 DISTNAME=	libkexiv2-0.1.1
@@ -12,7 +12,7 @@ COMMENT=	KDE wrapper for exiv2
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
-USE_LANGUAGES=	c++
+USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 
 PKGCONFIG_OVERRIDE+=	libkexiv2/libkexiv2.pc.in
