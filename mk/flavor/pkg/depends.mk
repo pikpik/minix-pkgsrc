@@ -1,4 +1,4 @@
-# $NetBSD: depends.mk,v 1.24 2007/03/15 03:01:33 rillig Exp $
+# $NetBSD: depends.mk,v 1.25 2007/03/15 22:14:30 rillig Exp $
 
 _DEPENDS_FILE=		${WRKDIR}/.depends
 _REDUCE_DEPENDS_CMD=	${SETENV} CAT=${CAT:Q}				\
@@ -45,7 +45,7 @@ depends-cookie: ${_DEPENDS_FILE}
 
 ${_DEPENDS_FILE}:
 	${RUN} ${MKDIR} ${.TARGET:H}
-	${RUN} ${_REDUCE_DEPENDS_CMD} ${BUILD_DEPENDS:Q} > ${.TARGET}.build
+	${RUN} ${_REDUCE_DEPENDS_CMD} ${BOOTSTRAP_DEPENDS:Q}\ ${BUILD_DEPENDS:Q} > ${.TARGET}.build
 	${RUN}								\
 	exec 0< ${.TARGET}.build;					\
 	while read dep; do						\
