@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/xorg/modules/input/void_drv.la
+man/man4/void.4
+@comment @dirrm lib/xorg/modules/input
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
