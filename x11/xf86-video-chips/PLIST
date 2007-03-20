@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/xorg/modules/drivers/chips_drv.la
+man/man4/chips.4
+@comment @dirrm lib/xorg/modules/drivers
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
