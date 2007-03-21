@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.484 2007/03/18 19:03:54 wiz Exp $
+# $NetBSD: Makefile,v 1.485 2007/03/20 17:04:59 joerg Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -361,7 +361,13 @@ SUBDIR+=	xf86-video-cirrus
 SUBDIR+=	xf86-video-cyrix
 SUBDIR+=	xf86-video-i810
 SUBDIR+=	xf86-video-nv
+SUBDIR+=	xf86-video-tga
+SUBDIR+=	xf86-video-trident
+SUBDIR+=	xf86-video-tseng
 SUBDIR+=	xf86-video-vesa
+SUBDIR+=	xf86-video-vga
+SUBDIR+=	xf86-video-via
+SUBDIR+=	xf86-video-vmware
 SUBDIR+=	xf86-video-wsfb
 SUBDIR+=	xf86bigfontproto
 SUBDIR+=	xf86dgaproto
