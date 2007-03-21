@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2007/01/21 10:49:57 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/02/21 23:23:08 dmcmahill Exp $
 
-DISTNAME=		nss-3.11.4
+DISTNAME=		nss-3.11.5
 CATEGORIES=		security
-MASTER_SITES=		http://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_11_4_RTM/src/ \
-			ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_11_4_RTM/src/
+MASTER_SITES=		http://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_11_5_RTM/src/ \
+			ftp://ftp.mozilla.org/pub/mozilla.org/security/nss/releases/NSS_3_11_5_RTM/src/
 
 MAINTAINER=		mjl@luckie.org.nz
 HOMEPAGE=		http://www.mozilla.org/projects/security/pki/nss/
