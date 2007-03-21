@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2006/06/09 16:05:51 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2007/03/21 04:29:29 gendalia Exp $
 
 DISTNAME=	openafs-1.4.4-src
+PKGREVISION=	1
 PKGNAME=	${DISTNAME:C/-src//}
 CATEGORIES=	net sysutils
 MASTER_SITES=	http://www.openafs.org/dl/openafs/1.4.4/
