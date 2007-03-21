@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/06 02:07:50 wiz Exp $
 #
 
 DISTNAME=	gamazons-0.83
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.yorgalily.org/gamazons/src/
 

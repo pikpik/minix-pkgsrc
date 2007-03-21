@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.105 2006/10/30 21:29:34 drochner Exp $
+# $NetBSD: Makefile,v 1.106 2007/01/13 22:15:58 joerg Exp $
 #
 
 DISTNAME=		galeon-2.0.3
+PKGREVISION=		1
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=galeon/}
 EXTRACT_SUFX=		.tar.bz2

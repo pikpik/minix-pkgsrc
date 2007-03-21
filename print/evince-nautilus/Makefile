@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/12/06 14:51:36 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/15 15:33:49 joerg Exp $
 #
 
 .include "../../print/evince/Makefile.common"
-PKGREVISION=		1
+PKGREVISION=		2
 
 PKGNAME=		${DISTNAME:S/evince/evince-nautilus/}
 

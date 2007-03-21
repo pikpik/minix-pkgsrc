@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2006/12/15 20:02:34 drochner Exp $
+# $NetBSD: Makefile,v 1.38 2007/02/22 19:30:03 wiz Exp $
 
 DISTNAME=	dasher-4.2.2
+PKGREVISION=	1
 CATEGORIES=	editors gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/dasher/4.2/}
 EXTRACT_SUFX=	.tar.bz2
