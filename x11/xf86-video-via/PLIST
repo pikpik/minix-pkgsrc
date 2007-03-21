@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/libviaXvMC.la
+lib/libviaXvMCPro.la
+lib/xorg/modules/drivers/via_drv.la
+man/man4/via.4
+@comment @dirrm lib/xorg/modules/drivers
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
