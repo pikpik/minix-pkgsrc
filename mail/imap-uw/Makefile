@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2007/02/22 19:26:41 wiz Exp $
+# $NetBSD: Makefile,v 1.115 2007/03/19 17:00:17 reed Exp $
 #
 # ATTENTION:
 # The Kerberos support in this software is known to be problematic. If you
@@ -12,7 +12,7 @@ CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	jwise@NetBSD.org
 HOMEPAGE=	http://www.washington.edu/imap/
 COMMENT=	University of Washington's IMAP, POP2, and POP3 servers
 
