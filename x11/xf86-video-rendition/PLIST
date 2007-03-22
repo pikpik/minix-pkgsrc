@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/xorg/modules/drivers/rendition_drv.la
+lib/xorg/modules/v10002d.uc
+lib/xorg/modules/v20002d.uc
+man/man4/rendition.4
+@comment @dirrm lib/xorg/modules/drivers
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
