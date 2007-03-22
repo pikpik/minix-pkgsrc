@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/xorg/modules/drivers/imstt_drv.la
+man/man4/imstt.4
+@comment @dirrm lib/xorg/modules/drivers
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
