@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.27 2006/01/09 22:04:38 tron Exp $
+# $NetBSD: Makefile.common,v 1.28 2006/02/19 22:53:27 tron Exp $
 
 DISTNAME=	mpg123-0.59r
 MPG123_VERSION=	0.59.18
@@ -16,7 +16,7 @@ PATCHDIR=	${.CURDIR}/../../audio/mpg123/patches
 FILESDIR=	${.CURDIR}/../../audio/mpg123/files
 DISTINFO_FILE=	${.CURDIR}/../../audio/mpg123/distinfo
 
-LICENSE=	no-commercial-use
+LICENSE=	mpg123-license
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
