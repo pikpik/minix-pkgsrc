@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.499 2007/03/11 16:00:55 obache Exp $
+# $NetBSD: Makefile,v 1.500 2007/03/12 12:44:50 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -114,6 +114,7 @@ SUBDIR+=	galeon
 SUBDIR+=	galway
 SUBDIR+=	ganglia-webfrontend
 SUBDIR+=	geeklog
+SUBDIR+=	gitweb
 SUBDIR+=	glibwww
 SUBDIR+=	grail
 SUBDIR+=	gtkasp2php
