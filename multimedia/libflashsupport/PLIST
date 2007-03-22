@@ -1,0 +1,3 @@
+@comment $NetBSD$
+emul/linux/usr/lib/libflashsupport.so
+share/doc/libflashsupport.README
