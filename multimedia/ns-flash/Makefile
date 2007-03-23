@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 19:26:51 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/03/23 18:59:41 abs Exp $
 
 CATEGORIES=		multimedia www
-PKGREVISION=		1
+PKGREVISION=		2
 MASTER_SITES=		http://fpdownload.macromedia.com/get/flashplayer/current/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
