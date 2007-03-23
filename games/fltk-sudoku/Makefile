@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/18 17:40:40 reinoud Exp $
+# $NetBSD: Makefile,v 1.2 2006/07/27 14:53:54 rillig Exp $
 
 DISTNAME=	fltk-1.1.7-source
 PKGNAME=	fltk-sudoku-1.1.7
@@ -45,7 +45,11 @@ BUILD_TARGET=		sudoku
 do-install:
 	${INSTALL_GAME} ${WRKSRC}/test/sudoku ${PREFIX}/bin/fltk-sudoku
 
-.include "../../x11/fltk/buildlink3.mk"
-.include "../../graphics/png/buildlink3.mk"
+BUILDLINK_DEPMETHOD.libXt?=	build
+
 .include "../../graphics/jpeg/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
+.include "../../x11/fltk/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
