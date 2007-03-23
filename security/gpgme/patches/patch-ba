@@ -1,8 +1,8 @@
 $NetBSD$
 
---- assuan/assuan.h.orig	2005-10-01 14:14:48.000000000 -0600
+--- assuan/assuan.h.orig	2007-01-05 10:55:52.000000000 +0100
 +++ assuan/assuan.h
-@@ -24,6 +24,8 @@
+@@ -25,6 +25,8 @@
  #include <stdio.h>
  #include <sys/types.h>
  #include <unistd.h>
@@ -10,4 +10,4 @@ $NetBSD$
 +#include <sys/socket.h>
  
  
- /* To use this file with libraries the following macros are often
+ /* To use this file with libraries the following macros are useful:
