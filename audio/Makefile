@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.351 2007/02/09 21:23:14 drochner Exp $
+# $NetBSD: Makefile,v 1.352 2007/02/27 10:00:10 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -226,6 +226,7 @@ SUBDIR+=	musicbox
 SUBDIR+=	musicbrainz
 SUBDIR+=	musicpd
 SUBDIR+=	nas
+SUBDIR+=	nas-auscope
 SUBDIR+=	ncmpc
 SUBDIR+=	normalize
 SUBDIR+=	nosefart
