@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/18 06:35:24 schmonz Exp $
 #
 
 DISTNAME=	qmqtool-current
@@ -27,6 +27,7 @@ SUBST_SED.paths+=	-e 's,@RCD_SCRIPTS_DIR@,${RCD_SCRIPTS_DIR},g'
 SUBST_STAGE.paths=	do-configure
 
 INSTALLATION_DIRS=	sbin share/doc/qmqtool share/examples/qmqtool
+BUILD_DEFS+=		QMAILDIR
 
 do-install:
 	cd ${WRKSRC}; \
