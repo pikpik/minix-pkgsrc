@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/07/27 18:48:03 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2007/01/07 09:14:10 rillig Exp $
 #
 
 DISTNAME=		tpm-1.1b
@@ -18,7 +18,7 @@ WRKSRC=			${WRKDIR}/TPM
 
 SITES.tcpa_man_20031210.tgz= http://www.citi.umich.edu/u/rwash/projects/trusted/
 
-BUILD_DIRS=		${WRKSRC}/libtcpa ${WRKSRC}/examples
+BUILD_DIRS=		libtcpa examples
 INSTALLATION_DIRS=	bin lib ${PKGMANDIR}/man3 share/doc/${PKGBASE}
 
 do-install:
