@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- doc/Makefile.in.orig	2007-03-23 21:40:01.000000000 +0100
++++ doc/Makefile.in
+@@ -180,9 +180,7 @@ target_alias = @target_alias@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ confdir = $(sysconfdir)
+-conf_DATA = \
+-	dovecot-ldap-example.conf \
+-	dovecot-sql-example.conf
++conf_DATA = 
+ 
+ doc_DATA = \
+ 	USE-WIKI-INSTEAD \

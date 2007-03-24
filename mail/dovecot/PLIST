@@ -27,8 +27,10 @@ libexec/dovecot/deliver
 libexec/dovecot/dict
 libexec/dovecot/dovecot-auth
 libexec/dovecot/gdbhelper
+libexec/dovecot/idxview
 libexec/dovecot/imap
 libexec/dovecot/imap-login
+libexec/dovecot/logview
 libexec/dovecot/pop3
 libexec/dovecot/pop3-login
 libexec/dovecot/rawlog
@@ -39,10 +41,10 @@ share/doc/dovecot/USE-WIKI-INSTEAD
 share/doc/dovecot/auth-protocol.txt
 share/doc/dovecot/securecoding.txt
 share/doc/dovecot/variables.txt
-share/examples/dovecot/dovecot-ldap.conf
+share/examples/dovecot/dovecot-example.conf
+share/examples/dovecot/dovecot-ldap-example.conf
 share/examples/dovecot/dovecot-openssl.cnf
-share/examples/dovecot/dovecot-sql.conf
-share/examples/dovecot/dovecot.conf.default
+share/examples/dovecot/dovecot-sql-example.conf
 share/examples/dovecot/mkcert.sh
 share/examples/rc.d/dovecot
 @dirrm share/examples/dovecot
