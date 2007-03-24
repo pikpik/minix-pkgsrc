@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/domain2path
+bin/domainsplit
+bin/spamdyke
+share/doc/spamdyke/Changelog.txt
+share/doc/spamdyke/FAQ.txt
+share/doc/spamdyke/GNUGPL.txt
+share/doc/spamdyke/INSTALL.txt
+share/doc/spamdyke/README.txt
+@dirrm share/doc/spamdyke
