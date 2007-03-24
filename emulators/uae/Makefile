@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/06/11 14:36:33 joerg Exp $
+# $NetBSD: Makefile,v 1.44 2007/01/29 17:43:52 tron Exp $
 
 DISTNAME=	uae-0.8.25
 PKGREVISION=	3
@@ -36,5 +36,9 @@ do-install:
 	cd ${WRKSRC}/docs && ${INSTALL_DATA} FAQ README \
 		${PREFIX}/share/doc/uae
 
-.include "../../mk/x11.buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
