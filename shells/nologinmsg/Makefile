@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/15 20:08:41 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/20 23:08:20 wiz Exp $
 
 DISTNAME=	nologinmsg-1.0
 PKGREVISION=	1
@@ -19,6 +19,8 @@ LIBS.IRIX+=	-lnbcompat
 MAKE_FLAGS+=	LDADD=${LIBS:M*:Q}
 MAKE_FLAGS+=	BINOWN=${BINOWN:Q} BINGRP=${BINGRP:Q}
 MAKE_FLAGS+=	MANOWN=${MANOWN:Q} MANGRP=${MANGRP:Q}
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat8 ${PKGMANDIR}/man8
 
 .include "../../mk/bsd.prefs.mk"
 # XXX: ${OPSYS} != "NetBSD" ?

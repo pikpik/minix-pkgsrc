@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/10/04 21:53:15 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:52 wiz Exp $
 
 DISTNAME=	bing-1.0.4
 CATEGORIES=	net
@@ -14,8 +14,9 @@ COMMENT=	Bing is a point-to-point bandwidth measurement tool
 LDFLAGS+=	-lsocket -lnsl
 .endif
 
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8 share/doc/bing
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/bing
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/bing
 
 .include "../../mk/bsd.pkg.mk"

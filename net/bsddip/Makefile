@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/11/09 09:09:32 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/22 19:26:52 wiz Exp $
 
 DISTNAME=	bsddip-1.02
 CATEGORIES=	net
@@ -14,6 +14,8 @@ COMMENT=	Dialup IP program
 NOT_FOR_PLATFORM=	Interix-*-* # no sl(4) device
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
+
+INSTALLATION_DIRS=	${PKGMANDIR}/cat8 ${PKGMANDIR}/man8 sbin
 
 NO_CONFIGURE=	yes
 MANCOMPRESSED_IF_MANZ=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/04 21:30:03 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 19:26:47 wiz Exp $
 
 DISTNAME=	djbfft-0.76
 CATEGORIES=	math
@@ -10,6 +10,8 @@ COMMENT=	Extremely fast library for floating-point convolution
 
 DJB_RESTRICTED=		YES
 NOT_FOR_PLATFORM=	IRIX-*-*
+
+INSTALLATION_DIRS=	lib
 
 .include "../../mk/djbware.mk"
 .include "../../mk/bsd.pkg.mk"

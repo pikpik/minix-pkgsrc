@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/11/22 16:14:14 tron Exp $
+# $NetBSD: Makefile,v 1.9 2007/02/22 19:26:55 wiz Exp $
 
 DISTNAME=	libradius-linux-20040827
 PKGNAME=	${DISTNAME:S/-linux//}
@@ -12,5 +12,7 @@ COMMENT=	RADIUS client library
 CONFLICTS+=	inn-[0-9]*
 
 WRKSRC=		${WRKDIR}/libradius-linux
+
+INSTALLATION_DIRS=	include lib ${PKGMANDIR}/man3
 
 .include "../../mk/bsd.pkg.mk"

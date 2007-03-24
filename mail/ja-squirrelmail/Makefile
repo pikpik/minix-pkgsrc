@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/12/07 05:38:44 taca Exp $
+# $NetBSD: Makefile,v 1.37 2007/01/07 09:13:58 rillig Exp $
 
 DISTNAME=	squirrelmail-1.4.9a
 PKGNAME=	ja-${DISTNAME}
@@ -64,6 +64,9 @@ SUBST_SED.paths+=	-e 's,@USER_PREFS_DIR@,${USER_PREFS_DIR},g'
 SUBST_SED.paths+=	-e 's,@SMDIR@,${SMDIR},g'
 SUBST_STAGE.paths=	post-patch
 
+INSTALLATION_DIRS=	share/examples/squirrelmail share/squirrelmail \
+			${PKGMANDIR}/man8
+
 post-extract:
 	${CP} ${FILESDIR:Q}/squirrelmail.conf.dist \
 		${WRKDIR:Q}/squirrelmail.conf.dist
@@ -72,8 +75,6 @@ pre-configure:
 	${FIND} ${WRKSRC:Q} \( -name "*.orig*" -o -name ".cvsignore" \) -print | ${XARGS} ${RM} -f
 
 do-install:
-	${INSTALL_DATA_DIR} ${EGDIR:Q}
-	${INSTALL_DATA_DIR} ${SMDIR:Q}
 	${INSTALL_DATA} ${WRKDIR:Q}/squirrelmail.conf.dist ${EGDIR:Q}/squirrelmail.conf
 	${CP} -R ${WRKSRC:Q}/* ${SMDIR:Q}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${SMDIR}

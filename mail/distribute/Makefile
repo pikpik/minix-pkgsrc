@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:29 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/10/04 21:47:16 wiz Exp $
 
 DISTNAME=	distribute-2.1-pl19
 PKGNAME=	distribute-2.1.26
@@ -15,6 +15,8 @@ MAINTAINER=	itojun@itojun.org
 # HOMEPAGE=	http://www.foretune.co.jp/people/shigeya/distribute/
 # AWOL
 COMMENT=	Mail dispatcher for mailing list.  Fits nicely with majordomo
+
+INSTALLATION_DIRS=	libexec ${PKGMANDIR}/man1
 
 WRKSRC=		${WRKDIR}/distribute-pl19
 USE_TOOLS+=	perl:run

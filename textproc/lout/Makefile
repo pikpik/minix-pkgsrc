@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/11/09 06:43:11 grant Exp $
+# $NetBSD: Makefile,v 1.11 2007/02/22 19:24:01 wiz Exp $
 #
 
 DISTNAME=	lout-3.26
@@ -12,6 +12,7 @@ COMMENT=	Basser Lout, a TeX/troff-like formatter with PostScript/PDF output
 
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 INSTALL_TARGET=	allinstall
+INSTALLATION_DIRS=	bin share/doc
 
 do-configure:
 	${MV} ${WRKSRC}/makefile ${WRKSRC}/makefile.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/04/20 16:05:44 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/01/08 03:23:59 rillig Exp $
 #
 
 DISTNAME=		cambevao-2.2
@@ -14,10 +14,11 @@ MAKE_ENV+=		prefix=${PREFIX:Q}
 MAKE_FLAGS+=		INSTALL=${INSTALL_PROGRAM:Q}
 RCD_SCRIPTS=		cambevao
 
+INSTALLATION_DIRS=	bin share/examples/cambevao share/examples/rc.d
+
 ONLY_FOR_PLATFORM=	NetBSD-*-* FreeBSD-*-* DragonFly-*-*
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/cambevao
 	${INSTALL_DATA} ${WRKSRC}/cambevao.xml ${PREFIX}/share/examples/cambevao
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/cambevao.README
 	${INSTALL_SCRIPT} ${WRKSRC}/cambevao.rc.d ${PREFIX}/${RCD_SCRIPTS_EXAMPLEDIR}/cambevao

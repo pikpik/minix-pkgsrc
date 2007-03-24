@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/10/17 20:28:01 schwarz Exp $
+# $NetBSD: Makefile,v 1.29 2007/02/15 21:35:11 rillig Exp $
 
 DISTNAME=		nntpcache-3.0.2
 CATEGORIES=		news
@@ -22,6 +22,7 @@ BUILD_DEFS+=		VARBASE
 
 INSTALL_TARGET=		SUBDIRS="cf src filters http doc pgp contrib/newshound contrib/perlnewshound innreport scripts unixauth" \
 			install
+INSTALLATION_DIRS=	libexec share/doc/nntpcache
 
 post-configure:
 	@${SED} -e "s:%%PREFIX%%:${PREFIX}:g"  \
@@ -30,7 +31,6 @@ post-configure:
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/etc/rc.d
 	${INSTALL_SCRIPT} ${WRKSRC}/nntpcached.sh ${PREFIX}/etc/rc.d/nntpcached
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/nntpcache
 	cd ${WRKSRC} && ${INSTALL_DATA} README INSTALL FAQ FAQ.html LICENSING \
 		README.INN README.pam ChangeLog ${PREFIX}/share/doc/nntpcache/
 

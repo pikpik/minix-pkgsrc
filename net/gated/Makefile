@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/06/01 22:40:19 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2007/02/22 19:26:53 wiz Exp $
 
 DISTNAME=	gated-3-5-11
 PKGNAME=	gated-3.5.11
@@ -25,6 +25,8 @@ RCD_SCRIPT_SRC.gated=	${FILESDIR}/gated
 
 BUILD_TARGET=	gated
 
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8 sbin share/doc/gated
+
 post-extract:
 	@${SED} -e 's#@PREFIX@#${PREFIX}#' <${FILESDIR}/configuration \
 	    >${WRKSRC}/src/configs/netbsd
@@ -39,7 +41,6 @@ do-configure:
 		${RM} -f Config
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/gated
 	cd ${WRKSRC}/doc && ${PAX} -rw -pe . ${PREFIX}/share/doc/gated
 	${CHOWN} -R ${SHAREOWN} ${PREFIX}/share/doc/gated
 	${CHGRP} -R ${SHAREGRP} ${PREFIX}/share/doc/gated

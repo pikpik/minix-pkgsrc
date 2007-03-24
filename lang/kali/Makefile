@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:29:54 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/02/22 19:26:38 wiz Exp $
 
 DISTNAME=	kali-0.47
 CATEGORIES=	lang
@@ -10,6 +10,7 @@ COMMENT=	Distributed implementation of Scheme
 
 GNU_CONFIGURE=	yes
 BUILD_TARGET=	# empty
+INSTALLATION_DIRS=	bin include lib
 
 NOT_FOR_PLATFORM=	*-*-alpha
 

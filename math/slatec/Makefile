@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2005/04/11 21:46:31 tv Exp $
+# $NetBSD: Makefile,v 1.17 2006/07/27 18:49:47 rillig Exp $
 #
 
 DISTNAME=	slatec_src
@@ -19,6 +19,8 @@ COMMENT=	Library of mathematical and statistical Fortran 77 subroutines
 WRKSRC=			${WRKDIR}/src
 USE_LANGUAGES=		fortran
 USE_LIBTOOL=		YES
+
+INSTALLATION_DIRS=	lib
 
 post-extract:
 	cd ${FILESDIR} && cp d1mach.f i1mach.f r1mach.f ${WRKSRC}

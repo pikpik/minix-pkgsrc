@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:09:26 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/02 01:05:20 joerg Exp $
 
 DISTNAME=		xzip180
 PKGNAME=		xzip-1.8
@@ -14,6 +14,7 @@ COMMENT=		Z-code interpreter for X11 (Infocom game format)
 WRKSRC=			${WRKDIR}/xzip
 USE_X11BASE=		yes
 BUILD_TARGET=		xzip
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

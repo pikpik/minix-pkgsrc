@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/21 22:34:08 ben Exp $
+# $NetBSD: Makefile,v 1.2 2006/12/15 14:34:19 wiz Exp $
 #
 
 DISTNAME=		manual-html-4.23
@@ -15,8 +15,9 @@ NO_BUILD=		yes
 WRKSRC=			${WRKDIR}
 DIST_SUBDIR=		${PKGNAME_NOREV}
 
+INSTALLATION_DIRS=	share/doc/csound4  share/examples
+
 do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/csound4
 	cd ${WRKSRC}/csound-4.23/manual \
 	&& ${PAX} -rw -s '|.*/CVS/.*||' -s ',.*/CVS$$,,' * ${PREFIX}/share/doc/csound4
 	cd ${FILESDIR} && ${INSTALL_DATA} rt-midi-input.* \

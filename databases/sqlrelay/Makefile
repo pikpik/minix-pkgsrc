@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/25 13:51:24 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/04/30 16:01:21 joerg Exp $
 
 DISTNAME=		sqlrelay-0.37
 PKGREVISION=		2
@@ -37,6 +37,8 @@ CONF_FILES+=		${EGDIR}/sqlrelay.conf.example \
 			${PKG_SYSCONFDIR}/sqlrelay.conf
 CONF_FILES+=		${EGDIR}/sqlrelay.dtd \
 			${PKG_SYSCONFDIR}/sqlrelay.dtd
+
+INSTALLATION_DIRS=	${PREFIX}/share/examples/rc.d
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/init/netbsd/rc.d/sqlrelay ${PREFIX}/share/examples/rc.d/sqlrelay

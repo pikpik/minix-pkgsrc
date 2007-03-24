@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/06/15 13:31:29 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/02 18:47:51 joerg Exp $
 #
 
 DISTNAME=	golddigC3.0
@@ -11,6 +11,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Fast action game designed for use with X
 
 USE_X11BASE=	yes
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
 
 post-build:
 	for f in ${WRKSRC}/golddig.6 ${WRKSRC}/gdedit.6; do \

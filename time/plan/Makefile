@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/03/04 21:30:53 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2006/10/04 22:01:52 wiz Exp $
 
 DISTNAME=	plan-1.8.4
 PKGREVISION=	3
@@ -12,6 +12,8 @@ COMMENT=	Schedule planner based on X/Motif
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_X11BASE=	YES
 BUILD_TARGET=	${LOWER_OPSYS}
+
+INSTALLATION_DIRS=	${PKGMANDIR}/man4
 
 .include "../../mk/bsd.prefs.mk"
 
