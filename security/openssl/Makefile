@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2006/09/30 04:20:24 taca Exp $
+# $NetBSD: Makefile,v 1.118 2006/12/03 14:49:56 cbiere Exp $
 
 OPENSSL_SNAPSHOT?=	# empty
 OPENSSL_STABLE?=	# empty
@@ -97,6 +97,10 @@ PLIST_SUBST+=		SHLIB_MAJOR=${OPENSSL_VERS:C/\..*$//}
 
 .if ${OPSYS} == "NetBSD"
 PKG_SYSCONFDIR.openssl?=	/etc/openssl
+.endif
+
+.if ${OPSYS} == "Darwin"
+.include "../../devel/dlcompat/buildlink3.mk"
 .endif
 
 PKG_SYSCONFSUBDIR=	openssl
