@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:44:28 zuntum Exp $
-bin/ietf2datebook
+@comment $NetBSD: PLIST,v 1.2 2003/01/10 04:30:16 rh Exp $
+bin/pilot-ietf2datebook
 bin/pilot-undelete
-bin/sync-plan
+bin/pilot-sync-plan
