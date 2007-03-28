@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2006/10/09 12:52:34 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/24 16:57:41 agc Exp $
 
 DISTNAME=	argp-standalone-1.3
 PKGNAME=	argp-1.3
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.gnu.org/software/libc/manual/html_node/Argp.html
 COMMENT=	Argument parsing function from glibc
 
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	include lib
 
 do-install:
 	${INSTALL_LIB} ${WRKSRC}/libargp.a ${PREFIX}/lib/
