@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/07 09:14:05 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2007/03/24 19:21:30 joerg Exp $
 
 DISTNAME=	pim6sd-20031021a
 CATEGORIES=	net
@@ -10,7 +10,7 @@ COMMENT=	IPv6 PIM sparse mode daemon
 WRKSRC=		${WRKDIR}/${DISTNAME}/pim6sd/
 USE_TOOLS+=	lex yacc
 
-INSTALLATION_DIRS=	sbin ${PKGMANDIR}/cat5 ${PKGMANDIR}/man8 \
+INSTALLATION_DIRS=	sbin ${PKGMANDIR}/cat5 ${PKGMANDIR}/cat8 \
 			${PKGMANDIR}/man1 ${PKGMANDIR}/man5 ${PKGMANDIR}/man8
 
 post-install:
