@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/12/29 06:21:57 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2007/03/24 19:21:29 joerg Exp $
 #
 
 DISTNAME=	bftpd-1.0.24
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://bftpd.sourceforge.net/downloads/src/
 
 MAINTAINER=	virtus@wanadoo.nl
-HOMEPAGE=	http://www.bftpd.org/
+HOMEPAGE=	http://bftpd.sourceforge.net/
 COMMENT=	Small and fast FTP server
 
 GNU_CONFIGURE=	YES
