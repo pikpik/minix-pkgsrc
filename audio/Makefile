@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.352 2007/02/27 10:00:10 wiz Exp $
+# $NetBSD: Makefile,v 1.353 2007/03/24 13:49:26 markd Exp $
 #
 
 COMMENT=	Audio tools
@@ -85,8 +85,6 @@ SUBDIR+=	freepats
 SUBDIR+=	freezetag
 SUBDIR+=	gkrellm-volume
 SUBDIR+=	gkrellm-xmms
-SUBDIR+=	gkrellm1-volume
-SUBDIR+=	gkrellm1-xmms
 SUBDIR+=	glurp
 SUBDIR+=	gmp3info
 SUBDIR+=	gmpc
