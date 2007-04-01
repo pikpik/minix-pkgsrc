@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1 2005/04/30 12:23:42 drochner Exp $
 
 --- src/Makefile.in.orig	2003-10-14 20:17:54.000000000 +0200
 +++ src/Makefile.in	2003-10-14 20:18:14.000000000 +0200
