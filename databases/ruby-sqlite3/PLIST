@@ -1,8 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2006/04/05 15:18:34 minskim Exp $
 ${RUBY_DOCDIR}/sqlite3/ChangeLog
 ${RUBY_DOCDIR}/sqlite3/LICENSE
 ${RUBY_DOCDIR}/sqlite3/README
-${RUBY_DOCDIR}/sqlite3/api/blank.html
 ${RUBY_DOCDIR}/sqlite3/api/classes/DL.html
 ${RUBY_DOCDIR}/sqlite3/api/classes/DL/PtrData.html
 ${RUBY_DOCDIR}/sqlite3/api/classes/Kernel.html
