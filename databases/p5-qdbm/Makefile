@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/23 06:36:56 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2007/02/22 19:26:18 wiz Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
@@ -6,7 +6,7 @@
 PKGNAME=	p5-qdbm-1.0.0.${QDBM_VERSION}
 CATEGORIES=	databases perl5
 
-MAINTAINER=	obata@lins.jp
+MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://qdbm.sourceforge.net/
 COMMENT=	Perl interface of QDBM
 

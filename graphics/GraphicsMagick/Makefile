@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/17 23:47:19 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/06 18:05:58 joerg Exp $
 #
 
 DISTNAME=	GraphicsMagick-1.1.7
@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphicsmagick/} \
 		ftp://ftp.graphicsmagick.org/pub/GraphicsMagick/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	obata@lins.jp
+MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.graphicsmagick.org/
 COMMENT=	X application for displaying and manipulating images
 

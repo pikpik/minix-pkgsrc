@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/02/11 16:49:04 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/07 09:13:49 rillig Exp $
 
 DISTNAME=	kcc
 PKGNAME=	kcc-1.0
@@ -6,7 +6,7 @@ CATEGORIES=	japanese converters
 MASTER_SITES=	${MASTER_SITE_FREEBSD} \
 		ftp://ftp.sra.co.jp/pub/os/linux/JE/sources/base/
 
-MAINTAINER=	obata@lins.jp
+MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Kanji code converter with auto encoding detection
 
