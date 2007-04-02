@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.26 2006/03/30 03:44:41 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2006/12/28 18:19:00 joerg Exp $
 #
 
 DISTNAME=	guile-pg-0.29
 PKGREVISION=	2
 CATEGORIES=	databases
-MASTER_SITES=	http://www.glug.org/people/ttn/software/guile-pg/
+MASTER_SITES=	http://www.gnuvola.org/software/guile-pg/
 
 MAINTAINER=	gdt@NetBSD.org
-HOMEPAGE=	http://www.glug.org/people/ttn/software/guile-pg/
+HOMEPAGE=	http://www.gnuvola.org/software/guile-pg/
 COMMENT=	PostgreSQL interface for Guile
 
 USE_LIBTOOL=	YES
