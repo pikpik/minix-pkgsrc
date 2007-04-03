@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix compilation with gcc4, from Andreas Jochens via Debian.
+
+--- src/main.h.orig	2003-06-07 18:04:37.000000000 +0200
++++ src/main.h
+@@ -459,7 +459,7 @@ extern struct PlayerInfo	stored_player[]
+ #endif
+ extern struct HiScore		highscore[];
+ extern struct TapeInfo		tape;
+-extern struct JoystickInfo	joystick[];
++/* extern struct JoystickInfo	joystick[]; */
+ extern struct SetupInfo		setup;
+ extern struct GameInfo		game;
+ extern struct LaserInfo		laser;
