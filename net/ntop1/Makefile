@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/04/11 21:46:52 tv Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:21 jlam Exp $
 
 DISTNAME=		ntop-1.1
 PKGREVISION=		4
@@ -14,6 +14,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-threads=no
 
 INSTALL_TARGET=		install install-man
+INSTALLATION_DIRS=	${PKGMANDIR}/man8
 
 .include "../../net/libpcap/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
