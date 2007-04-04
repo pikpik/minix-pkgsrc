@@ -1,3 +1,0 @@
-@comment $NetBSD$
-lib/gkrellm/plugins/gkx86info.so
-@dirrm lib/gkrellm/plugins
