@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2007/02/04 22:54:13 tron Exp $
+# $NetBSD: Makefile,v 1.38 2007/02/05 06:46:10 tron Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -202,10 +202,10 @@ do-configure:
 	cd ${WRKDIR}/obj; ${SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ${WRKSRC}/configure ${CONFIGURE_ARGS}
 
 do-build:
-	(${_ULIMIT_CMD} && cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} bootstrap)
+	(${_ULIMIT_CMD} cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} bootstrap)
 .if !empty(BUILD_ADA:M[Yy][Ee][Ss])
-	(${_ULIMIT_CMD} && cd ${WRKDIR}/obj/gcc && ${SETENV} ${MAKE_ENV} ${GMAKE} gnatlib-shared)
-	(${_ULIMIT_CMD} && cd ${WRKDIR}/obj/gcc && ${SETENV} ${MAKE_ENV} ${GMAKE} gnatlib_and_tools)
+	(${_ULIMIT_CMD} cd ${WRKDIR}/obj/gcc && ${SETENV} ${MAKE_ENV} ${GMAKE} gnatlib-shared)
+	(${_ULIMIT_CMD} cd ${WRKDIR}/obj/gcc && ${SETENV} ${MAKE_ENV} ${GMAKE} gnatlib_and_tools)
 .endif
 
 do-test:
