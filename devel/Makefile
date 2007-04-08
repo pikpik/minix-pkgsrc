@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.823 2007/03/24 14:23:57 markd Exp $
+# $NetBSD: Makefile,v 1.824 2007/03/24 16:59:26 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -350,6 +350,7 @@ SUBDIR+=	ocaml-findlib
 SUBDIR+=	ode
 SUBDIR+=	ogre
 SUBDIR+=	opencm
+SUBDIR+=	opengrok
 SUBDIR+=	p4
 SUBDIR+=	p4-docs
 SUBDIR+=	p4d
