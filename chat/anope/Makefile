@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/10/20 22:40:24 adrianp Exp $
 
-DISTNAME=	anope-1.7.17
+DISTNAME=	anope-1.7.18
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=anope/}
 
