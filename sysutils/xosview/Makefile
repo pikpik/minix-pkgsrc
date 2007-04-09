@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.61 2006/12/15 20:33:01 joerg Exp $
+# $NetBSD: Makefile,v 1.62 2007/01/07 09:14:13 rillig Exp $
 
 DISTNAME=	xosview-1.8.3
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xosview/}
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	veego@NetBSD.org
 HOMEPAGE=	http://xosview.sourceforge.net/
 COMMENT=	X11 graphical display of OS statistics
 
@@ -34,6 +35,12 @@ USE_TOOLS+=	gmake
 CPPFLAGS+=	-I${X11BASE:Q}/include
 LIBS+=		-lsocket -lnsl
 .endif
+
+SUBST_CLASSES+=		paths
+SUBST_STAGE.paths=	post-configure
+SUBST_MESSAGE.paths=	Fixing manpage path.
+SUBST_FILES.paths=	Makefile
+SUBST_SED.paths=	-e s,share/man/man1,${PKGMANDIR}/man1,
 
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
