@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2006/09/16 14:45:42 jmmv Exp $
+# $NetBSD: Makefile,v 1.10 2006/11/24 18:03:35 drochner Exp $
 #
 
-DISTNAME=	iso-codes-0.58
-PKGNAME=	${DISTNAME:S/_/-/:S/.orig//}
+DISTNAME=	iso-codes-1.0
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://alioth.debian.org/projects/pkg-isocodes/
