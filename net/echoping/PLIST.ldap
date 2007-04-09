@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/echoping/ldap.la
+man/man1/echoping_ldap.1
+@unexec ${RMDIR} %D/lib/echoping 2>/dev/null || ${TRUE}
