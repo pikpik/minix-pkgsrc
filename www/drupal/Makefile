@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 19:27:19 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/04/09 19:28:27 adrianp Exp $
 
 DISTNAME=	drupal-5.1
 CATEGORIES=	www
@@ -53,6 +53,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/drupal
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/drupal
 	${INSTALL_DATA} ${WRKSRC}/*.txt ${PREFIX}/share/doc/drupal
+	${INSTALL_DATA} ${WRKSRC}/robots.txt ${DRUPAL}
 	${INSTALL_DATA} ${WRKSRC}/sites/all/README.txt \
 		${DRUPAL}/sites/all
 	${INSTALL_DATA} ${WRKSRC}/drupal.conf \
