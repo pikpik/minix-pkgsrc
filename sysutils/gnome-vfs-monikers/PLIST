@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/bonobo/monikers/libmoniker_gnome_vfs_std.la
+lib/bonobo/servers/GNOME_VFS_Moniker_std.server
+@comment in libbonobo: @dirrm lib/bonobo/servers
+@comment in libbonobo: @dirrm lib/bonobo/monikers
