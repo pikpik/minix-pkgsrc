@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/xman
+lib/X11/app-defaults/Xman
+man/man1/xman.1
+share/X11/xman.help
