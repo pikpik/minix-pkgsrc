@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xmag
+lib/X11/app-defaults/Xmag
+man/man1/xmag.1
