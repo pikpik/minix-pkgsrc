@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.824 2007/03/24 16:59:26 agc Exp $
+# $NetBSD: Makefile,v 1.825 2007/04/08 17:06:31 adrianp Exp $
 #
 
 COMMENT=	Development utilities
@@ -742,6 +742,7 @@ SUBDIR+=	vtcl
 SUBDIR+=	wide
 SUBDIR+=	xdelta
 SUBDIR+=	xmake
+SUBDIR+=	xorg-util-macros
 SUBDIR+=	xxgdb
 SUBDIR+=	yasm
 SUBDIR+=	z80-asm
