@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/22 19:01:16 wiz Exp $
 
-DISTNAME=	slony1-1.2.0
-PKGREVISION=	1
+DISTNAME=	slony1-1.2.9
 CATEGORIES=	databases
-MASTER_SITES=	http://pgfoundry.org/frs/download.php/1136/
+MASTER_SITES=	http://www.slony.info/downloads/1.2/source/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org

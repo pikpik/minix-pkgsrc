@@ -5,13 +5,13 @@ lib/postgresql/slony1_funcs.so
 lib/postgresql/xxid.so
 share/postgresql/slon.conf-sample
 share/postgresql/slony1_base.sql
-share/postgresql/slony1_base.v73.sql
 share/postgresql/slony1_base.v74.sql
 share/postgresql/slony1_base.v80.sql
+share/postgresql/slony1_base.v81.sql
 share/postgresql/slony1_funcs.sql
-share/postgresql/slony1_funcs.v73.sql
 share/postgresql/slony1_funcs.v74.sql
 share/postgresql/slony1_funcs.v80.sql
-share/postgresql/xxid.v73.sql
+share/postgresql/slony1_funcs.v81.sql
 share/postgresql/xxid.v74.sql
 share/postgresql/xxid.v80.sql
+share/postgresql/xxid.v81.sql
