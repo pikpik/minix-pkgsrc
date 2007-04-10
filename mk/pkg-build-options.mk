@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: pkg-build-options.mk,v 1.1 2007/03/18 11:09:32 rillig Exp $
 #
 # This procedure determines the PKG_OPTIONS that have been in effect
-# when the package ${pkg} has been built. When the package is not yet
-# installed, the current PKG_OPTIONS are queried.
+# when the package ${pkgbase} has been built. When the package is not
+# yet installed, the current PKG_OPTIONS are queried.
 #
 # Parameters:
 #	pkgbase
