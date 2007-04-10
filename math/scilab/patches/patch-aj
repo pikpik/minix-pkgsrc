@@ -6,7 +6,7 @@ $NetBSD$
  */
  #include "getmemory.h"
  
-+#if defined(__NetBSD__)
++#if defined(__NetBSD__) || defined(__DragonFly__)
 +#include <sys/param.h>
 +#include <sys/sysctl.h>
 +#define ARRAY_SIZE(a) (sizeof (a) / sizeof ((a)[0]))
@@ -19,7 +19,7 @@ $NetBSD$
     }
  #endif
  
-+#if defined(__NetBSD__)
++#if defined(__NetBSD__) || defined(__DragonFly__)
 +#define MEMOK 1
 +  { /* This works on *bsd and darwin.  */
 +    unsigned int usermem;
@@ -39,7 +39,7 @@ $NetBSD$
     }
  #endif
  
-+#if defined(__NetBSD__)
++#if defined(__NetBSD__) || defined(__DragonFly__)
 +#define MEMOK 1
 +  { /* This works on *bsd and darwin.  */
 +    unsigned int physmem;
