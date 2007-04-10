@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/ocaml/site-lib/ocsigen/ocsigenduce.cma
+lib/ocaml/site-lib/ocsigen/ocsigenduce.cmi
+lib/ocaml/site-lib/ocsigen/xhtml1_strict.cmi
+share/examples/ocsigen/exampleduce.cmo
