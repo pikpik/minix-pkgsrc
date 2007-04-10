@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/lbxproxy
+lib/X11/lbxproxy/AtomControl
+man/man1/lbxproxy.1
+@dirrm lib/X11/lbxproxy
