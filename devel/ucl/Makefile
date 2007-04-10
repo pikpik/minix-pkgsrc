@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2005/06/24 10:55:20 kristerw Exp $
+# $NetBSD: Makefile,v 1.15 2005/12/05 20:50:08 rillig Exp $
 #
 
-DISTNAME=	ucl-1.02
-PKGREVISION=	3
+DISTNAME=	ucl-1.03
 CATEGORIES=	devel archivers
 MASTER_SITES=	http://www.oberhumer.com/opensource/ucl/download/
 
