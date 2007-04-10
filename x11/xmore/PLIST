@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xmore
+lib/X11/app-defaults/XMore
+man/man1/xmore.1
