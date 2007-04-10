@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/06/29 12:47:19 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/07/02 14:33:22 joerg Exp $
 #
 
 DISTNAME=	jonpy-0.06
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jonpy/}
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://jonpy.sourceforge.net
 COMMENT=	Tools for FastCGI/CGI Python programs
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
