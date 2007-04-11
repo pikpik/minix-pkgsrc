@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.244 2007/02/16 16:09:23 tonio Exp $
+# $NetBSD: bsd.prefs.mk,v 1.245 2007/03/01 18:21:31 wiz Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -274,6 +274,8 @@ OBJECT_FMT?=	a.out
 OBJECT_FMT=	ELF
 .elif ${OPSYS} == "AIX"
 OBJECT_FMT=	XCOFF
+.elif ${OPSYS} == "OSF1"
+OBJECT_FMT=	ECOFF
 .endif
 
 # Calculate depth
