@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.122 2006/12/19 17:54:45 wiz Exp $
+# $NetBSD: Makefile,v 1.123 2007/03/21 12:05:55 wiz Exp $
 #
 
-DISTNAME=	gdm-2.16.4
-PKGREVISION=	1
+DISTNAME=	gdm-2.18.1
 CATEGORIES=	x11 gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdm/2.16/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdm/2.18/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -67,7 +66,7 @@ SUBST_CLASSES+=		desktop
 SUBST_MESSAGE.desktop=	Configuring GDM settings.
 SUBST_STAGE.desktop=	pre-configure
 SUBST_FILES.desktop=	config/default.desktop.in
-SUBST_FILES.desktop+=	config/gnome.desktop.in
+#SUBST_FILES.desktop+=	config/gnome.desktop.in
 SUBST_FILES.desktop+=	config/gdm.conf.in
 SUBST_SED.desktop=	-e 's/^_//g'
 SUBST_SED.desktop+=	-e 's|^User=gdm$$|User=${GDMOWN}|g'
