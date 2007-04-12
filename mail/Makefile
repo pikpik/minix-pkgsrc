@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.309 2007/03/24 07:40:03 schmonz Exp $
+# $NetBSD: Makefile,v 1.310 2007/04/08 17:07:11 adrianp Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -235,6 +235,7 @@ SUBDIR+=	vm
 SUBDIR+=	wl
 SUBDIR+=	wmbiff
 SUBDIR+=	wmmail
+SUBDIR+=	xbiff
 SUBDIR+=	xbuffy
 SUBDIR+=	xfmail
 SUBDIR+=	xmailbox
