@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xwininfo
+man/man1/xwininfo.1
