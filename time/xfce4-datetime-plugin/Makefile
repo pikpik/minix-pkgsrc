@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:11 joerg Exp $
+# $NetBSD$
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.3.1
+XFCE4_VERSION=	0.5.0
 
 DISTNAME=	xfce4-datetime-plugin-${XFCE4_VERSION}
-PKGREVISION=	3
+#PKGREVISION=	1
 CATEGORIES=	time
-MASTER_SITES=	http://download.berlios.de/xfce-goodies/
+MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-datetime-plugin/
+EXTRACT_SUFX=	.tar.gz
 COMMENT=	Xfce calendar plugin
 
 .include "../../x11/xfce4-panel/buildlink3.mk"

@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-weather-plugin
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xfce4-weather-plugin
 
 .if ${XFCE4_WEATHER_PLUGIN_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.xfce4-weather-plugin+=	xfce4-weather-plugin>=0.4.9nb3
+BUILDLINK_API_DEPENDS.xfce4-weather-plugin+=	xfce4-weather-plugin>=0.6.0
 BUILDLINK_PKGSRCDIR.xfce4-weather-plugin?=	../../misc/xfce4-weather-plugin
 .endif	# XFCE4_WEATHER_PLUGIN_BUILDLINK3_MK
 

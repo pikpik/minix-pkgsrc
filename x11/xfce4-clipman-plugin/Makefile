@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:11:46 joerg Exp $
+# $NetBSD$
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.4.1
+XFCE4_VERSION=	0.8.0
 
 DISTNAME=	xfce4-clipman-plugin-${XFCE4_VERSION}
-PKGREVISION=	3
+#PKGREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://download.berlios.de/xfce-goodies/
+MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-clipman-plugin/
 COMMENT=	Xfce clipboard plugin
 
 .include "../../x11/xfce4-panel/buildlink3.mk"

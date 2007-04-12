@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:13 wiz Exp $
+# $NetBSD$
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfce4-mixer-${XFCE4_VERSION}
-#PKGREVISION=	1
 CATEGORIES=	audio
 COMMENT=	Xfce mixer plugin
+
+USE_TOOLS+=	intltool
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

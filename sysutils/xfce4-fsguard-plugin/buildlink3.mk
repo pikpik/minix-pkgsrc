@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-fsguard-plugin
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xfce4-fsguard-plugin
 
 .if ${XFCE4_FSGUARD_PLUGIN_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.xfce4-fsguard-plugin+=	xfce4-fsguard-plugin>=0.2.1nb3
+BUILDLINK_API_DEPENDS.xfce4-fsguard-plugin+=	xfce4-fsguard-plugin>=0.3.0
 BUILDLINK_PKGSRCDIR.xfce4-fsguard-plugin?=	../../sysutils/xfce4-fsguard-plugin
 .endif	# XFCE4_FSGUARD_PLUGIN_BUILDLINK3_MK
 

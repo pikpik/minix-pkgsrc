@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:10:33 joerg Exp $
+# $NetBSD$
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.4.1
+XFCE4_VERSION=	0.5.4
 
 DISTNAME=	xfce4-wavelan-plugin-${XFCE4_VERSION}
-PKGREVISION=	4
+#PKGREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://download.berlios.de/xfce-goodies/
+MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-wavelan-plugin/
+EXTRACT_SUFX=	.tar.gz
 COMMENT=	Xfce WLAN plugin
 
 .include "../../x11/xfce4-panel/buildlink3.mk"
