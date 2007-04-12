@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/X11/XprintUtil/xprintutil.h
+lib/libXprintUtil.la
+lib/pkgconfig/xprintutil.pc
+@dirrm include/X11/XprintUtil
