@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xgamma
+man/man1/xgamma.1
