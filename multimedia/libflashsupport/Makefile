@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/22 21:46:44 abs Exp $
+# $NetBSD: Makefile,v 1.2 2007/03/24 20:27:10 christos Exp $
 #
 
 PKGNAME=	libflashsupport-1.0.2098
@@ -26,6 +26,8 @@ DEPENDS+=		suse_openssl>=9.1:../../emulators/${SUSE_DIR_PREFIX}_openssl
 .endif
 
 ONLY_FOR_PLATFORM=	*-*-i386
+
+INSTALLATION_DIRS=	share/doc
 
 do-extract:
 	${RPM2PKG} ${RPM2PKGARGS}
