@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/xsm
+lib/X11/app-defaults/XSm
+lib/X11/xsm/system.xsm
+man/man1/xsm.1
+@dirrm lib/X11/xsm
