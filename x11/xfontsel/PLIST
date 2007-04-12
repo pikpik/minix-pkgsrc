@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/xfontsel
+lib/X11/app-defaults/XFontSel
+man/man1/xfontsel.1
