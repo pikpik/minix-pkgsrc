@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/08/24 17:49:52 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/11/11 18:24:52 jschauma Exp $
 
 DISTNAME=	bootstrap-mk-files-20061111
 CATEGORIES=	pkgtools
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.pkgsrc.org/
 COMMENT=	*.mk files for the bootstrap bmake utility
 
 NO_PKGTOOLS_REQD_CHECK=	# defined
-PKG_PRESERVE=		# defined
 
 NO_CHECKSUM=	yes
 NO_MTREE=	yes
