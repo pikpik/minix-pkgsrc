@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.494 2007/04/12 15:10:12 joerg Exp $
+# $NetBSD: Makefile,v 1.495 2007/04/12 18:06:43 joerg Exp $
 #
 
 COMMENT=	Packages to support the X window system
 
 SUBDIR+=	9term
-SUBDIR+=	Terminal
 SUBDIR+=	XaoS
 SUBDIR+=	Xaw-Xpm
 SUBDIR+=	Xaw3d
@@ -207,7 +206,6 @@ SUBDIR+=	libXxf86dga
 SUBDIR+=	libXxf86misc
 SUBDIR+=	libXxf86vm
 SUBDIR+=	libdrm
-SUBDIR+=	libexo
 SUBDIR+=	libgnomekbd
 SUBDIR+=	liblbxutil
 SUBDIR+=	libxfce4gui
