@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.123 2007/01/26 02:49:25 markd Exp $
+# $NetBSD: Makefile,v 1.124 2007/02/15 14:06:48 joerg Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 PKGREVISION=	1
@@ -95,6 +95,12 @@ CONFIGURE_ARGS+=       --without-libusb
 PLIST_SUBST+=		HAVE_USBVIEW=""
 .else
 PLIST_SUBST+=		HAVE_USBVIEW="@comment "
+.endif
+
+.if ${OPSYS} == "Linux"
+PLIST_SUBST+=		HAVE_JOYSTICK=""
+.else
+PLIST_SUBST+=		HAVE_JOYSTICK="@comment "
 .endif
 
 ICONDIR=		share/icons
