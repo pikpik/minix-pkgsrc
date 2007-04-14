@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2002/07/25 11:05:02 kim Exp $
+# $NetBSD: Makefile,v 1.5 2004/01/11 23:06:54 grant Exp $
 #
+
+MAINTAINER=		agc@NetBSD.org
 
 DISTINFO_FILE=		${.CURDIR}/../../shells/tcsh/distinfo
 PATCHDIR=		${.CURDIR}/../../shells/tcsh/patches
