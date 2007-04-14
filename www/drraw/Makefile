@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2006/05/02 09:07:20 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/01/21 16:46:06 kleink Exp $
 #
 
-DISTNAME=		drraw-2.2a2
+DISTNAME=		drraw-2.2a3
 CATEGORIES=		databases graphics www
 MASTER_SITES=		http://web.taranis.org/drraw/dist/
 EXTRACT_SUFX=		.tgz
