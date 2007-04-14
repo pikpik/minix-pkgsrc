@@ -1,4 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/18 22:53:18 adrianp Exp $
+share/doc/libwhisker2/FAQ.txt
+share/doc/libwhisker2/TESTED.txt
+share/doc/libwhisker2/cookies.txt
 share/doc/libwhisker2/KNOWNBUGS
 share/doc/libwhisker2/README
 share/doc/libwhisker2/crawler.txt
