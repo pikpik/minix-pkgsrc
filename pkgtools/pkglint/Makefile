@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.358 2007/02/20 12:38:32 uebayasi Exp $
+# $NetBSD: Makefile,v 1.359 2007/03/09 03:02:35 rillig Exp $
 #
 
 DISTNAME=	pkglint-4.76
@@ -27,6 +27,8 @@ USE_LANGUAGES=	# none
 
 INSTALLATION_DIRS_FROM_PLIST=	yes
 
+.include "../../mk/bsd.prefs.mk"
+
 SUBST_CLASSES+=		pkglint
 SUBST_STAGE.pkglint=	post-configure
 SUBST_FILES.pkglint+=	lintpkgsrc.0 lintpkgsrc.1 lintpkgsrc.pl
@@ -42,8 +44,6 @@ SUBST_SED.pkglint+=	-e s\|@DISTVER@\|${DISTNAME:S/pkglint-//:Q}\|g
 SUBST_SED.pkglint+=	-e s\|@MAKE@\|${MAKE:Q}\|g
 SUBST_SED.pkglint+=	-e s\|@PERL@\|${PERL5:Q}\|g
 SUBST_SED.pkglint+=	-e s\|@DATADIR@\|${PREFIX}/share/pkglint\|g
-
-.include "../../mk/bsd.prefs.mk"
 
 # Note: This target is only intended for use by the pkglint author.
 .PHONY: quick-install
