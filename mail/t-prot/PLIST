@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/t-prot
+man/man1/t-prot.1
+share/doc/t-prot/muttrc.t-prot
+@dirrm share/doc/t-prot
