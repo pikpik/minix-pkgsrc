@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/rscode
+lib/libecc.a
+share/doc/rscode/rs.doc
+@dirrm share/doc/rscode
