@@ -1,4 +1,4 @@
-/*	$NetBSD: perform.c,v 1.10 2005/11/22 15:44:59 ben Exp $	*/
+/*	$NetBSD: perform.c,v 1.48 2007/03/08 18:20:20 joerg Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -11,7 +11,7 @@
 #if 0
 static const char *rcsid = "from FreeBSD Id: perform.c,v 1.38 1997/10/13 15:03:51 jkh Exp";
 #else
-__RCSID("$NetBSD: perform.c,v 1.10 2005/11/22 15:44:59 ben Exp $");
+__RCSID("$NetBSD: perform.c,v 1.48 2007/03/08 18:20:20 joerg Exp $");
 #endif
 #endif
 
@@ -65,7 +65,7 @@ make_dist(const char *home, const char *pkg, const char *suffix, const package_t
 	FILE   *totar;
 	pipe_to_system_t	*to_pipe;
 
-	if ((args[0] = strrchr(TAR_CMD, '/')) == NULL)
+	if ((args[0] = (char *)strrchr(TAR_CMD, '/')) == NULL)
 		args[0] = TAR_CMD;
 	else
 		args[0]++;
