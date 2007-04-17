@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.32 2006/07/08 23:11:08 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.33 2006/12/12 21:52:37 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 OPENSSL_BUILDLINK3_MK:=	${OPENSSL_BUILDLINK3_MK}+
@@ -38,5 +38,7 @@ MAKEVARS+=	PKG_BUILD_OPTIONS.openssl
 .if !empty(PKG_BUILD_OPTIONS.openssl:Mrsaref)
 .  include "../../security/rsaref/buildlink3.mk"
 .endif
+
+.include "../../mk/dlopen.buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
