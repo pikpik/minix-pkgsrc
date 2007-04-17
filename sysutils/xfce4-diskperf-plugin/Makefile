@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/04/12 09:55:13 martti Exp $
+# $NetBSD: Makefile,v 1.14 2007/04/17 18:20:06 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -10,7 +10,8 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-diskperf-plugin/
 COMMENT=	Xfce disk performance plugin
 
-NOT_FOR_PLATFORM+=	DragonFly-*-*
+ONLY_FOR_PLATFORM+=	NetBSD-*-*
+ONLY_FOR_PLATFORM+=	Linux-*-*
 
 .include "../../x11/xfce4-panel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
