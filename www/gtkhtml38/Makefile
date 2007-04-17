@@ -1,13 +1,14 @@
 # $NetBSD: Makefile,v 1.17 2007/03/21 12:05:54 wiz Exp $
 #
 
-DISTNAME=	gtkhtml-3.14.1
+DISTNAME=	gtkhtml-3.12.3
 PKGNAME=	${DISTNAME:S/gtkhtml/gtkhtml38/}
+PKGREVISION=	1
 CATEGORIES=	www gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkhtml/3.14/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkhtml/3.12/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Lightweight HTML rendering/printing/editing engine
 

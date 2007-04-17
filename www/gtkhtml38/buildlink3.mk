@@ -12,8 +12,9 @@ BUILDLINK_PACKAGES+=	gtkhtml38
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}gtkhtml38
 
 .if !empty(GTKHTML38_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.gtkhtml38+=	gtkhtml38>=3.14.0
-BUILDLINK_PKGSRCDIR.gtkhtml38?=		../../www/gtkhtml38
+BUILDLINK_API_DEPENDS.gtkhtml38+=	gtkhtml38>=3.8.0
+BUILDLINK_ABI_DEPENDS.gtkhtml38?=	gtkhtml38>=3.12.3nb1
+BUILDLINK_PKGSRCDIR.gtkhtml38?=	../../www/gtkhtml38
 .endif	# GTKHTML38_BUILDLINK3_MK
 
 # XXX: gail is not required by the .pc file but appears as a library
