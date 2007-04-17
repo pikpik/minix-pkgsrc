@@ -1,4 +1,4 @@
-# $NetBSD $
+# $NetBSD$
 #
 # This is the compiler definition for the HP-UX C/aC++ compilers.
 #
