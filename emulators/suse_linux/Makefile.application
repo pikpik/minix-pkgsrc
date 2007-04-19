@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.application,v 1.22 2006/06/26 17:53:04 salo Exp $
+# $NetBSD: Makefile.application,v 1.23 2006/06/26 19:24:05 salo Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -17,7 +17,7 @@
 .    include "../../emulators/suse_linux/unavailable.mk"
 .  endif
 
-.  if defined(RPMFILES)
+.  if defined(RPMFILES) || defined(SUSE_COMPAT32)
 .    include "../../emulators/${SUSE_DIR_PREFIX}_linux/Makefile.common"
 .  endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/04/03 18:17:55 ghen Exp $
+# $NetBSD: Makefile,v 1.3 2006/06/30 16:20:23 salo Exp $
 
 DISTNAME=		suse_libjpeg-${SUSE_VERSION}
 PKGREVISION=		1
@@ -17,9 +17,7 @@ NO_BUILD=		YES
 LIBTOOLIZE_PLIST=	NO
 PLIST_SRC=		${WRKDIR}/PLIST_DYNAMIC
 
-.if exists(Makefile.${MACHINE_ARCH})
-.include "Makefile.${MACHINE_ARCH}"
-.endif
+SUSE_INCLUDE_MAKEFILE_ARCH=	yes
 
 .include "../../emulators/suse100_linux/Makefile.common"
 .include "../../mk/bsd.pkg.mk"
