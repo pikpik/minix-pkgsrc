@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6268 2007/04/19 02:30:11 xtraeme Exp $
+$NetBSD: TODO,v 1.6269 2007/04/19 08:37:11 wiz Exp $
 
 Suggested new packages
 ======================
@@ -200,6 +200,14 @@ Suggested new packages
 	qphotosort
 	http://pintant.cat/qphotosort
 	rename photos by date to support merged albums from different sources
+
+	TinySNMP
+	http://oasis.frogfoot.net/code/tinysnmp/
+	Fast lightweight SNMPv1 daemon
+
+	BSNMP
+	http://oasis.frogfoot.net/code/tinysnmp/
+	Mini SNMP daemon
 
 Suggested package updates
 =========================
