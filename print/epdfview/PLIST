@@ -19,4 +19,4 @@ share/locale/vi/LC_MESSAGES/epdfview.mo
 @dirrm share/epdfview/ui
 @dirrm share/epdfview/pixmaps
 @dirrm share/epdfview
-@comment @dirrm share/applications
+@comment in xdg-dirs: @dirrm share/applications
