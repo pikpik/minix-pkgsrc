@@ -13,9 +13,13 @@ share/epdfview/ui/epdfview-ui-print.xml
 share/epdfview/ui/epdfview-ui.xml
 share/locale/ca/LC_MESSAGES/epdfview.mo
 share/locale/de/LC_MESSAGES/epdfview.mo
+share/locale/el/LC_MESSAGES/epdfview.mo
 share/locale/es/LC_MESSAGES/epdfview.mo
 share/locale/fr/LC_MESSAGES/epdfview.mo
+share/locale/pl/LC_MESSAGES/epdfview.mo
+share/locale/ru/LC_MESSAGES/epdfview.mo
 share/locale/vi/LC_MESSAGES/epdfview.mo
+share/locale/zh_TW/LC_MESSAGES/epdfview.mo
 @dirrm share/epdfview/ui
 @dirrm share/epdfview/pixmaps
 @dirrm share/epdfview
