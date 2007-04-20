@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.57 2007/01/21 18:13:55 minskim Exp $
+# $NetBSD: Makefile,v 1.58 2007/01/24 15:58:04 tron Exp $
 
-DISTNAME=	gnutls-1.6.1
-PKGREVISION=	1
+DISTNAME=	gnutls-1.6.2
 CATEGORIES=	security devel
 MASTER_SITES=	http://josefsson.org/gnutls/releases/ \
 		ftp://ftp.gnutls.org/pub/gnutls/ \
