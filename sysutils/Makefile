@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.394 2007/04/12 09:48:18 martti Exp $
+# $NetBSD: Makefile,v 1.395 2007/04/17 13:50:06 martti Exp $
 #
 
 COMMENT=	System utilities
@@ -55,6 +55,7 @@ SUBDIR+=	cvsreport
 SUBDIR+=	daemontools
 SUBDIR+=	dbus
 SUBDIR+=	dbus-glib
+SUBDIR+=	dbus-qt3
 SUBDIR+=	dd_rescue
 SUBDIR+=	dd_rhelp
 SUBDIR+=	depot
