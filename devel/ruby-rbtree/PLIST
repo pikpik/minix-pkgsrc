@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${RUBY_SITEARCHLIBDIR}/rbtree.${RUBY_DLEXT}
