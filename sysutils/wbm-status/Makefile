@@ -1,16 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 15:43:17 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/19 17:14:53 jlam Exp $
 
-DISTNAME=	status
-PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
-PKGREVISION=	1
-DIST_SUBDIR=	webmin-modules-${WBM_VERSION}
+WBM_NAME=	status
 
-# The version is from the module.info file from the extracted distfile.
-WBM_VERSION=	1.270
+WBM_DEPEND_MODULES+=	mailboxes
 
-DEPENDS+=	wbm-mailboxes>=1.270:../../sysutils/wbm-mailboxes
-
-HOMEPAGE=	http://www.webmin.com/standard.html
 COMMENT=	Webmin module to view the status of services
 
 .include "../../sysutils/webmin/wbm.mk"

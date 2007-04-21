@@ -1,0 +1,3 @@
+# $NetBSD$
+
+WBM_VERSION=	1.340

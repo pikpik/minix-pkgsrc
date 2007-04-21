@@ -1,16 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 15:42:30 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/19 17:14:53 jlam Exp $
 
-DISTNAME=	quota
-PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
-PKGREVISION=	1
-DIST_SUBDIR=	webmin-modules-${WBM_VERSION}
+WBM_NAME=	quota
 
-# The version is from the module.info file from the extracted distfile.
-WBM_VERSION=	1.270
+WBM_DEPEND_MODULES+=	mount
 
-DEPENDS+=	wbm-mount>=1.270:../../sysutils/wbm-mount
-
-HOMEPAGE=	http://www.webmin.com/standard.html
 COMMENT=	Webmin module to setup disk quotas
 
 .include "../../sysutils/webmin/wbm.mk"

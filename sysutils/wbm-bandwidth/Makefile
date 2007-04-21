@@ -1,15 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 04:03:45 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 15:39:59 jlam Exp $
 
-DISTNAME=	bandwidth
-PKGNAME=	wbm-${DISTNAME}-${WBM_VERSION}
-DIST_SUBDIR=	webmin-modules-${WBM_VERSION}
+WBM_NAME=	bandwidth
 
-# The version is from the module.info file from the extracted distfile.
-WBM_VERSION=	1.270
+WBM_DEPEND_MODULES=	net
 
-DEPENDS+=	wbm-net>=1.270:../../sysutils/wbm-net
-
-HOMEPAGE=	http://www.webmin.com/standard.html
 COMMENT=	Webmin module to view bandwidth usage
 
 .include "../../sysutils/webmin/wbm.mk"
