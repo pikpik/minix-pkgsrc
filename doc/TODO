@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6282 2007/04/21 15:34:58 heinz Exp $
+$NetBSD: TODO,v 1.6283 2007/04/21 18:28:41 tonio Exp $
 
 Suggested new packages
 ======================
@@ -916,7 +916,6 @@ Suggested package updates
 	o p5-Net-Z3950-0.46
 	o p5-PAR-0.90
 	o p5-PV-1.5
-	o p5-Params-Util-0.23
 	o p5-Params-Validate-0.88
 	o p5-PathTools-3.24
 	o p5-PerlMagick-6.3.2.9
