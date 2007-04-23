@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.833 2007/04/21 10:40:54 wiz Exp $
+# $NetBSD: Makefile,v 1.834 2007/04/22 21:06:40 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -757,6 +757,7 @@ SUBDIR+=	vanessa_socket
 SUBDIR+=	vtcl
 SUBDIR+=	wide
 SUBDIR+=	xdelta
+SUBDIR+=	xdelta3
 SUBDIR+=	xfce4-dev-tools
 SUBDIR+=	xmake
 SUBDIR+=	xorg-util-macros
