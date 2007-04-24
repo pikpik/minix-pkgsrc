@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/03/01 00:36:19 xtraeme Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/10 12:51:53 agc Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -13,5 +13,6 @@ SUBDIR+=	fuse-httpfs
 SUBDIR+=	fuse-lzofs
 SUBDIR+=	fuse-ntfs-3g
 SUBDIR+=	fuse-unionfs
+SUBDIR+=	u9fs
 
 .include "../mk/bsd.pkg.subdir.mk"
