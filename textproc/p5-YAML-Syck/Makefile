@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/10 22:06:08 bad Exp $
 
-DISTNAME=	YAML-Syck-0.72
+DISTNAME=	YAML-Syck-0.85
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5 textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/A/AU/AUDREYT/}
