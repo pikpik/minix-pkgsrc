@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/11 23:06:54 grant Exp $
+# $NetBSD: Makefile,v 1.6 2007/04/14 11:43:13 wiz Exp $
 #
 
 MAINTAINER=		agc@NetBSD.org
@@ -9,10 +9,10 @@ PKGDIR=			${.CURDIR}/../../shells/tcsh
 
 CONFLICTS=		tcsh-[0-9]*
 
+PKGNAME=		static-${DISTNAME}
+
 .include "../../shells/tcsh/Makefile"
 
-WRKSRC:=		${WRKDIR}/${DISTNAME}
-PKGNAME:=		static-${DISTNAME}
 COMMENT:=		Statically-linked version of the ${COMMENT}
 
 LDFLAGS+=		-static
