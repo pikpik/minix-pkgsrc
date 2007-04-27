@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.395 2007/04/17 13:50:06 martti Exp $
+# $NetBSD: Makefile,v 1.396 2007/04/21 14:33:05 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -328,9 +328,11 @@ SUBDIR+=	xentools30
 SUBDIR+=	xentools30-hvm
 SUBDIR+=	xenvstat
 SUBDIR+=	xfce4-appfinder
+SUBDIR+=	xfce4-battery-plugin
 SUBDIR+=	xfce4-cpugraph-plugin
 SUBDIR+=	xfce4-diskperf-plugin
 SUBDIR+=	xfce4-fsguard-plugin
+SUBDIR+=	xfce4-genmon-plugin
 SUBDIR+=	xfce4-netload-plugin
 SUBDIR+=	xfce4-quicklauncher-plugin
 SUBDIR+=	xfce4-systemload-plugin
