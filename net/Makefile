@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.665 2007/04/12 18:13:55 gdt Exp $
+# $NetBSD: Makefile,v 1.666 2007/04/15 11:36:24 kristerw Exp $
 #
 
 COMMENT=	Networking tools
@@ -442,6 +442,7 @@ SUBDIR+=	tcpslice
 SUBDIR+=	tcptrace
 SUBDIR+=	tcptraceroute
 SUBDIR+=	teamspeak-client
+SUBDIR+=	teamspeak-server
 SUBDIR+=	tightvnc
 SUBDIR+=	tightvncviewer
 SUBDIR+=	tinc
