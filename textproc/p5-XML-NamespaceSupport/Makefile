@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:50 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/11/05 17:06:43 joerg Exp $
 
 DISTNAME=	XML-NamespaceSupport-1.09
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,12 @@ COMMENT=	Perl module to the SAX2 NamespaceSupport class
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_LANGUAGES=		# empty
+
 PERL5_PACKLIST=		auto/XML/NamespaceSupport/.packlist
+
+post-extract:
+	${CHMOD} a-x ${WRKSRC}/NamespaceSupport.pm
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
