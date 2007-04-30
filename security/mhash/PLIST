@@ -1,4 +1,11 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:16:57 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:52 jlam Exp $
 include/mhash.h
+include/mutils/mglobal.h
+include/mutils/mhash.h
+include/mutils/mhash_config.h
+include/mutils/mincludes.h
+include/mutils/mtypes.h
+include/mutils/mutils.h
 lib/libmhash.la
 man/man3/mhash.3
+@dirrm include/mutils
