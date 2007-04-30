@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.838 2007/04/28 10:15:45 seb Exp $
+# $NetBSD: Makefile,v 1.839 2007/04/28 11:23:19 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -615,6 +615,7 @@ SUBDIR+=	pcre
 SUBDIR+=	pcre++
 SUBDIR+=	pcre-ocaml
 SUBDIR+=	pedisassem
+SUBDIR+=	perltidy
 SUBDIR+=	php-gettext
 SUBDIR+=	php-gmp
 SUBDIR+=	php-memcache
