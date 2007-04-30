@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.503 2007/04/10 20:26:30 tonio Exp $
+# $NetBSD: Makefile,v 1.504 2007/04/17 06:30:38 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -213,6 +213,7 @@ SUBDIR+=	p5-HTML-Scrubber
 SUBDIR+=	p5-HTML-SimpleParse
 SUBDIR+=	p5-HTML-StickyQuery
 SUBDIR+=	p5-HTML-Stream
+SUBDIR+=	p5-HTML-Strip
 SUBDIR+=	p5-HTML-Table
 SUBDIR+=	p5-HTML-TableExtract
 SUBDIR+=	p5-HTML-Tagset
