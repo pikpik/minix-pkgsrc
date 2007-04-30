@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/04 21:30:01 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2007/03/10 01:17:23 wiz Exp $
 
 DISTNAME=	Mail-Sendmail-0.79
 PKGNAME=	p5-${DISTNAME}
@@ -10,7 +10,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://alma.ch/perl/
 COMMENT=	Perl5 module dedicated to Sendmail
 
-DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=		p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 
 PERL5_PACKLIST=		auto/Mail/Sendmail/.packlist
 
