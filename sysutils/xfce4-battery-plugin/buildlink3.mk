@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-battery-plugin
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xfce4-battery-plugin
 
 .if ${XFCE4_BATTERY_PLUGIN_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.xfce4-battery-plugin+=	xfce4-battery-plugin>=0.5.0
+BUILDLINK_API_DEPENDS.xfce4-battery-plugin+=	xfce4-battery-plugin>=0.5.0nb1
 BUILDLINK_PKGSRCDIR.xfce4-battery-plugin?=	../../sysutils/xfce4-battery-plugin
 .endif	# XFCE4_BATTERY_PLUGIN_BUILDLINK3_MK
 
