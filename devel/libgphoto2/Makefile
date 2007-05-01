@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2007/03/20 10:22:31 abs Exp $
+# $NetBSD: Makefile,v 1.37 2007/04/25 13:36:18 sborrill Exp $
 
 DISTNAME=	libgphoto2-2.3.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gphoto/}
 EXTRACT_SUFX=	.tar.bz2
@@ -16,7 +16,7 @@ USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-CONFIGURE_FLAGS+=	DOXYGEN=no
+CONFIGURE_ENV+=		ac_cv_path_DOXYGEN=false
 PKGCONFIG_OVERRIDE+=	libgphoto2/libgphoto2.pc.in
 
 .include "../../mk/bsd.prefs.mk"
