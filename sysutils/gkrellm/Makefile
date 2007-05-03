@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.54 2007/01/09 08:10:58 joerg Exp $
+# $NetBSD: Makefile,v 1.55 2007/02/15 21:29:13 rillig Exp $
 .include "Makefile.common"
 
 GKRELLM_PKGBASE=	gkrellm
-PKGREVISION=		1
 WRKSRC=			${GKRELLM_SRCDIR}
 
 COMMENT=		GTK2 based system monitor
