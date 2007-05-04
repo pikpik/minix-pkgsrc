@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PYSITELIB}/lgconstants.py
+${PYSITELIB}/lgconstants.pyc
+${PYSITELIB}/libgmail.py
+${PYSITELIB}/libgmail.pyc
