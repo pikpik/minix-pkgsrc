@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/daap.py
+${PYSITELIB}/daap.pyc
+${PYSITELIB}/md5daap.so
