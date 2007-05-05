@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.23 2007/02/22 19:30:04 wiz Exp $
+# $NetBSD: Makefile.php,v 1.24 2007/02/25 20:05:11 jdolecek Exp $
 #
 
 .include "../../lang/php5/Makefile.common"
@@ -26,6 +26,7 @@ CONFIGURE_ARGS+=	--with-regex=system
 CONFIGURE_ARGS+=	--without-mysql
 CONFIGURE_ARGS+=	--without-sqlite
 CONFIGURE_ARGS+=	--without-iconv
+CONFIGURE_ARGS+=	--without-pear
 
 CONFIGURE_ARGS+=	--disable-posix
 CONFIGURE_ARGS+=	--disable-dom
