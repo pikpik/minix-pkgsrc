@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/24 13:47:48 markd Exp $
+# $NetBSD: Makefile,v 1.2 2007/03/24 20:27:19 markd Exp $
 
-DISTNAME=	nas-1.8.src
-PKGNAME=	nas-auscope-1.8
+DISTNAME=	nas-1.9.src
+PKGNAME=	nas-auscope-1.9
 CATEGORIES=	audio
 MASTER_SITES=	http://nas.codebrilliance.com/nas/ \
 		ftp://ftp.uni-duisburg.de/Sound/NAS/
