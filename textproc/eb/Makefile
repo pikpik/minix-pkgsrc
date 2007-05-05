@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2006/04/07 18:40:46 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2007/04/24 15:01:03 uebayasi Exp $
 
 DISTNAME=	eb-4.3
+PKGREVISION=	1
 CATEGORIES=	textproc japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/appendix/ \
 		ftp://ftp.sra.co.jp/pub/misc/eb/
@@ -49,6 +50,7 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
