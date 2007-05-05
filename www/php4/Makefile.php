@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.35 2005/12/05 23:55:23 rillig Exp $
+# $NetBSD: Makefile.php,v 1.36 2006/10/20 22:10:33 jdolecek Exp $
 
 .include "../../www/php4/Makefile.common"
 
@@ -13,6 +13,7 @@ GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--without-mysql
 CONFIGURE_ARGS+=	--without-iconv
+CONFIGURE_ARGS+=	--without-pear
 
 CONFIGURE_ARGS+=	--disable-posix
 
