@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2006/06/02 18:27:58 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/22 19:27:12 wiz Exp $
 
 DISTNAME=	Log-1.8.4
+PKGREVISION=	1
 CATEGORIES=	sysutils
 
 MAINTAINER=	jdolecek@NetBSD.org
