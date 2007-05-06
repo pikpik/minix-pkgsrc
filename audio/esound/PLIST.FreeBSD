@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST.Linux,v 1.5 2004/09/22 08:09:15 jlam Exp $
+@comment $NetBSD: PLIST.FreeBSD,v 1.1 2006/08/26 15:25:26 joerg Exp $
 bin/esddsp
 lib/libesddsp.la
+man/man1/esddsp.1
