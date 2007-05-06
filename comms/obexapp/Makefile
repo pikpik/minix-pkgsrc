@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/02/06 17:50:46 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2007/03/01 21:39:08 plunky Exp $
 #
 
 DISTNAME=	obexapp-1.4.5
@@ -29,8 +29,8 @@ SUBST_SED.var=		-e "s|/var|${VARBASE}|"
 # Sigh, this needs the GNU libiconv.
 USE_GNU_ICONV=		yes
 
-# Sigh... too many warnings with GCC 4.x, disable them for now.
-CFLAGS+=		-w
+# Too many warnings with gcc4, disable them for now.
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 # because the directory name conflicts with the rc.d script
 post-extract:
