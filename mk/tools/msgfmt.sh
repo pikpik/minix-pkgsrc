@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: msgfmt.sh,v 1.25 2006/06/23 21:05:43 jlam Exp $
+# $NetBSD: msgfmt.sh,v 1.26 2006/12/15 13:15:07 martti Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -143,12 +143,15 @@ fi
 # If the input file cannot be found as named, then also search for a file
 # with the same name that ends in ".po".
 #
-if test ! -f "$pofile"; then
-	case "$pofile" in
-	*.po)	popofile=$pofile ;;
-	*)	popofile=${pofile}.po ;;
-	esac
-	if test ! -f "$popofile"; then
+if test "$pofile" != "-" -a ! -e "$pofile"; then
+	popofile=""
+	for extension in po pot; do
+		if test -e "$pofile.$extension"; then
+			popofile="$pofile.$extension"
+			break;
+		fi
+	done
+	if test "x$popofile" = "x"; then
 		echo 1>&2 "$0: error while opening \"$pofile\" for reading: No such file or directory"
 		exit 1
 	fi
