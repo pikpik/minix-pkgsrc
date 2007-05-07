@@ -1,4 +1,4 @@
-/*	$NetBSD: cdefs.h,v 1.18 1997/06/18 19:09:50 christos Exp $	*/
+/*	$NetBSD: cdefs.h,v 1.1 2005/10/31 21:52:26 reed Exp $	*/
 
 /*
  * Copyright (c) 1991, 1993
@@ -89,7 +89,9 @@
  */
 #if defined(__STDC__) || defined(__cplusplus)
 #define	__P(protos)	protos		/* full-blown ANSI C */
+#ifndef __CONCAT
 #define	__CONCAT(x,y)	x ## y
+#endif
 #define	__STRING(x)	#x
 
 #define	__const		const		/* define reserved names to standard */
