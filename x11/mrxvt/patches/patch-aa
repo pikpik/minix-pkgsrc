@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/init.c.orig	2006-10-01 23:50:37.000000000 +0200
++++ src/init.c
+@@ -41,7 +41,7 @@
+ # define DEBUG_X
+ #else
+ # define DEBUG_LEVEL	0
+-# define DEBUG_X
++# undef DEBUG_X
+ #endif
+ 
+ #if DEBUG_LEVEL
