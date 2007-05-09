@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.in.orig	2007-01-05 22:29:02.000000000 -0800
++++ Makefile.in
+@@ -132,7 +132,7 @@ sbindir = @sbindir@
+ sharedstatedir = @sharedstatedir@
+ sysconfdir = @sysconfdir@
+ target_alias = @target_alias@
+-SUBDIRS = hangul data bindings test
++SUBDIRS = hangul data bindings
+ 
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = libhangul.pc
