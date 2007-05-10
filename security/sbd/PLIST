@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/sbd
+bin/sbdd
+share/sbd/PROTOCOL
+share/sbd/README
+share/sbd/athkey.bits
+share/sbd/deckey.bits
+share/sbd/enckey.bits
+@dirrm share/sbd
