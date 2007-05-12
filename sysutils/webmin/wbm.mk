@@ -1,4 +1,4 @@
-# $NetBSD: wbm.mk,v 1.5 2006/06/15 22:13:59 jlam Exp $
+# $NetBSD: wbm.mk,v 1.6 2007/04/21 05:22:57 obache Exp $
 #
 # Makefile fragment for Webmin modules
 #
@@ -33,6 +33,7 @@ PKGNAME=	wbm-${WBM_NAME}-${WBM_VERSION}
 DISTNAME=	webmin-${WBM_VERSION}
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=webadmin/}
 WBMSRC=		${WRKSRC}/${WBM_NAME}
+EXTRACT_ELEMENTS=${DISTNAME}/${WBM_NAME}
 .endif
 CATEGORIES+=	sysutils www
 
