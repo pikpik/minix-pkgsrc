@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ch,v 1.1.1.1 2006/10/24 22:20:11 ghen Exp $
 
 diff -ruN ../Orig/mozilla/extensions/transformiix/source/base/txCore.h ./extensions/transformiix/source/base/txCore.h
 --- ../Orig/mozilla/extensions/transformiix/source/base/txCore.h	2004-05-26 20:54:37.000000000 +0900

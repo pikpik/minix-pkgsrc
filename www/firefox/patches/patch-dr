@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-dr,v 1.1.1.1 2006/10/24 22:20:12 ghen Exp $
 
 diff -ruN ../Orig/mozilla/config/config.mk ./config/config.mk
 --- ../Orig/mozilla/config/config.mk	2005-07-29 04:48:11.000000000 +0900
