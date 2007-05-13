@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.498 2007/04/27 10:53:33 martti Exp $
+# $NetBSD: Makefile,v 1.499 2007/05/09 10:22:51 tnn Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -48,7 +48,6 @@ SUBDIR+=	fontsproto
 SUBDIR+=	fox
 SUBDIR+=	fspanel
 SUBDIR+=	fvwm-wharf
-SUBDIR+=	gdkxft
 SUBDIR+=	gdm
 SUBDIR+=	ggiterm
 SUBDIR+=	glproto
@@ -85,7 +84,6 @@ SUBDIR+=	gtkmm
 SUBDIR+=	gtksourceview
 SUBDIR+=	gtkstep
 SUBDIR+=	gtkterm2
-SUBDIR+=	gtoolkit
 SUBDIR+=	hanterm
 SUBDIR+=	hot-babe
 SUBDIR+=	hsetroot

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.156 2007/04/29 20:14:16 tnn Exp $
+# $NetBSD: Makefile,v 1.157 2007/05/05 21:35:34 wiz Exp $
 #
 
 COMMENT=	Mathematics
@@ -80,7 +80,6 @@ SUBDIR+=	graphopt
 SUBDIR+=	grpn
 SUBDIR+=	gsl
 SUBDIR+=	gtklife
-SUBDIR+=	guppi
 SUBDIR+=	lapack
 SUBDIR+=	libffm
 SUBDIR+=	libmatheval

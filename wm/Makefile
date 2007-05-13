@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.91 2007/04/20 18:14:15 kristerw Exp $
+# $NetBSD: Makefile,v 1.92 2007/05/09 10:22:51 tnn Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -38,7 +38,6 @@ SUBDIR+=	fvwm1
 SUBDIR+=	gnome-compiz-manager
 SUBDIR+=	golem
 SUBDIR+=	icecc
-SUBDIR+=	icepref
 SUBDIR+=	icewm
 SUBDIR+=	icewm-imlib
 SUBDIR+=	icewmconf
