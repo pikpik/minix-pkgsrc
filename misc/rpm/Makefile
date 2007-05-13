@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2006/10/22 06:42:43 rillig Exp $
+# $NetBSD: Makefile,v 1.64 2007/02/18 11:17:03 tonio Exp $
 
 DISTNAME=	rpm-2.5.4
 PKGREVISION=	6
@@ -12,6 +12,8 @@ COMMENT=	The Red Hat Package Manager
 CONFLICTS+=		rpm2cpio<1.0nb1
 
 NOT_FOR_PLATFORM+=	Interix-*-* # getmntent() is nonpublic; needs porting
+
+MAKE_JOBS_SAFE=		no
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt
