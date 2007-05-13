@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:43 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/02/22 19:26:21 wiz Exp $
 
-DISTNAME=	gputils-0.13.3
-PKGREVISION=	1
+DISTNAME=	gputils-0.13.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gputils/}
 
