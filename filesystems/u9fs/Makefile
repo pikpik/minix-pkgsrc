@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/10 12:51:03 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/04/24 19:06:03 agc Exp $
 #
 
 DISTNAME=	u9fs-2.0.3
@@ -12,8 +12,5 @@ COMMENT=	Unix file server using the 9P protocol
 WRKSRC=		${WRKDIR}/u9fs
 
 MAKE_FILE=	makefile
-
-post-install:
-	${INSTALL_MAN} ${WRKSRC}/u9fs.8 ${PREFIX}/${PKGMANDIR}/man8/
 
 .include "../../mk/bsd.pkg.mk"
