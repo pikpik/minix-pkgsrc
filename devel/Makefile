@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.849 2007/05/13 17:58:00 seb Exp $
+# $NetBSD: Makefile,v 1.850 2007/05/13 19:27:28 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -394,6 +394,7 @@ SUBDIR+=	p5-Class-MethodMaker
 SUBDIR+=	p5-Class-ObjectTemplate
 SUBDIR+=	p5-Class-ReturnValue
 SUBDIR+=	p5-Class-Singleton
+SUBDIR+=	p5-Class-Std
 SUBDIR+=	p5-Class-Trigger
 SUBDIR+=	p5-Class-WhiteHole
 SUBDIR+=	p5-Class-XPath
