@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.668 2007/05/06 13:28:28 heinz Exp $
+# $NetBSD: Makefile,v 1.669 2007/05/06 14:02:24 heinz Exp $
 #
 
 COMMENT=	Networking tools
@@ -420,7 +420,6 @@ SUBDIR+=	socat
 SUBDIR+=	socket++
 SUBDIR+=	socks4
 SUBDIR+=	socks5
-SUBDIR+=	soup
 SUBDIR+=	speedtouch
 SUBDIR+=	spegla
 SUBDIR+=	spread
