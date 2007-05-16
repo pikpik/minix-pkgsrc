@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2007/02/07 20:28:49 wiz Exp $
+# $NetBSD: Makefile,v 1.72 2007/02/16 20:37:52 adam Exp $
 
 DISTNAME=	gd-2.0.34
 CATEGORIES=	graphics
@@ -8,6 +8,9 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.libgd.org/
 COMMENT=	Graphics library for the dynamic creation of images
+
+# fails in test not finding libgd.a
+MAKE_JOBS_SAFE=		no
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
