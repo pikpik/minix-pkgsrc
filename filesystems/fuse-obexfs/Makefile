@@ -16,13 +16,6 @@ USE_TOOLS+=	autoconf gmake pkg-config
 pre-configure:
 	cd ${WRKSRC} && autoconf
 
-.include "../../mk/bsd.prefs.mk"
-
-# puffs does not play well with libpthread, disable it.
-.if ${OPSYS} == "NetBSD"
-BUILDLINK_TRANSFORM+=	rm:-lpthread
-.endif
-
 .include "../../comms/obexftp/buildlink3.mk"
 .include "../../comms/openobex/buildlink3.mk"
 .include "../../mk/fuse.buildlink3.mk"
