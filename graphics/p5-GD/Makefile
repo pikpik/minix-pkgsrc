@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/04/06 06:22:05 reed Exp $
+# $NetBSD: Makefile,v 1.35 2006/04/17 13:46:34 wiz Exp $
 
 DISTNAME=	GD-2.30
 PKGNAME=	p5-${DISTNAME}
@@ -11,6 +11,7 @@ MAINTAINER=	damon@brodiefamily.org
 HOMEPAGE=	http://theory.uwinnipeg.ca/CPAN/data/GD/GD.html
 COMMENT=	Perl5 interface to gd graphics library
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILDLINK_API_DEPENDS.gd+=	gd>=2.0.28
