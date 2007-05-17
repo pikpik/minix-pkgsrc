@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- configure.in.orig	2007-03-07 14:05:27.000000000 +0000
++++ configure.in
+@@ -94,14 +94,6 @@ else
+ fi
+ 
+ dnl
+-dnl check gcc
+-dnl
+-if test -n "$GCC"; then
+-   CFLAGS="-O3 -Wall -Wno-deprecated"
+-   CXXFLAGS="-O3 -Wall -Wno-deprecated"
+-fi
+-
+-dnl
+ dnl check Char Code
+ dnl 
+ AC_ARG_WITH(
