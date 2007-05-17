@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.31 2007/01/28 15:15:57 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.32 2007/03/15 16:41:01 taca Exp $
 #
 
 .if !defined(_RUBYVERSION_MK)
@@ -25,7 +25,7 @@ RUBY_VERSION_DEFAULT?=	1.8
 #
 .if ${RUBY_VERSION_DEFAULT} == "1.8"
 RUBY_VERSION?=		${RUBY18_VERSION}
-RUBY_PATCHLEVEL?=	${RUBY18_PATCHLEVEL}
+RUBY_PATCH_LEVEL?=	${RUBY18_PATCHLEVEL}
 .endif
 
 .if !empty(RUBY_PATCH_LEVEL)
