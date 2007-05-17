@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:47 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/09/10 13:26:20 heinz Exp $
 #
 
-DISTNAME=		Convert-ASN1-0.20
+DISTNAME=		Convert-ASN1-0.21
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5asn
 CATEGORIES=		converters perl5 textproc
