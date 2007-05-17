@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/01/21 12:52:44 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2007/05/12 20:56:23 gdt Exp $
 
 DISTNAME=	g-wrap-1.9.6
 PKGREVISION=	2
@@ -17,7 +17,7 @@ GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake makeinfo pkg-config
 USE_LIBTOOL=		YES
 TEST_TARGET=		check
-INFO_FILES=		# PLIST
+INFO_FILES=		YES
 
 pre-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/guile/site/g-wrap/guile/ws
