@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/24 14:22:24 markd Exp $
 
 DISTNAME=		kdiff3-0.9.91
 CATEGORIES=		devel kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kdiff3/}
 
-MAINTAINER=		fuyuki@hadaly.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://kdiff3.sourceforge.net/
 COMMENT=		File and directory diff and merge tool
 
