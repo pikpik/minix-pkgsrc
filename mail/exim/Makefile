@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2006/11/20 11:56:42 abs Exp $
+# $NetBSD: Makefile,v 1.81 2007/01/10 12:54:36 abs Exp $
 
 DISTNAME=	exim-4.66
 CATEGORIES=	mail net
@@ -22,7 +22,7 @@ MAKE_FLAGS+=	FULLECHO=''
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILD_DEFS+=	EXIM_USER EXIM_GROUP EXIM_DB
+BUILD_DEFS+=	EXIM_USER EXIM_GROUP EXIM_DB EXIM_MAX_INCLUDE_SIZE
 
 PKG_GROUPS=	${EXIM_GROUP}
 PKG_USERS=	${EXIM_USER}:${EXIM_GROUP}
@@ -80,8 +80,11 @@ pre-configure:
 	    < ${WRKSRC}/Local/Makefile.pkgsrc \
 	    > ${WRKSRC}/Local/Makefile
 .for opt in ${LOCAL_MAKEFILE_OPTIONS}
-	@${ECHO} ${opt} >> ${WRKSRC}/Local/Makefile
+	${ECHO} ${opt} >> ${WRKSRC}/Local/Makefile
 .endfor
+.if !empty(EXIM_MAX_INCLUDE_SIZE)
+	${ECHO} MAX_INCLUDE_SIZE=${EXIM_MAX_INCLUDE_SIZE} >> ${WRKSRC}/Local/Makefile
+.endif
 	${SED} -e 's:@PREFIX@:${PREFIX}:' \
 		-e 's:@PKG_SYSCONFDIR@:${PKG_SYSCONFDIR}:' \
 	    < ${WRKSRC}/Local/eximon.conf.pkgsrc \
