@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/01/07 09:14:05 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2007/02/22 19:26:57 wiz Exp $
 
 DISTNAME=		openntpd-3.9p1
 CATEGORIES=		net
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/ \
 			ftp://ftp.de.openbsd.org/pub/unix/OpenBSD/OpenNTPD/ \
 			http://ftp.lug.udel.edu/pub/OpenBSD/OpenNTPD/
 
-MAINTAINER=		peter@pointless.nl
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openntpd.org/
 COMMENT=		Free implementation of the Network Time Protocol
 

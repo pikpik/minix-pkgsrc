@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:14:09 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 19:27:02 wiz Exp $
 
 DISTNAME=	pkgclean-20051116
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	peter@pointless.nl
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Quickly clean up all work directories in pkgsrc
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

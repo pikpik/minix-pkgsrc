@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2005/12/29 06:21:41 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2006/01/23 22:44:58 recht Exp $
 
 DISTNAME=	qstat-2.10
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qstat/}
 
-MAINTAINER=	peter@pointless.nl
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.qstat.org/
 COMMENT=	Program that gathers real-time statistics from game servers
 
