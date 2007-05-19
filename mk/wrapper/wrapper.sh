@@ -1,6 +1,6 @@
 #! @WRAPPER_SHELL@
 #
-# $NetBSD: wrapper.sh,v 1.16 2007/02/22 07:15:54 rillig Exp $
+# $NetBSD: wrapper.sh,v 1.17 2007/03/15 22:09:29 rillig Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -133,7 +133,7 @@ eval "$cmd" || wrapper_result="$?"
 
 . $cleanup
 
-[ $wrapper_result -eq 0 ] || {
+[ $wrapper_result -eq 0 ] || [ "$debug" != "yes" ] || {
 	echo ""
 	echo "[wrapper.sh] note: The real command line, after the pkgsrc wrapper, was:"
 	echo "$cmd"
