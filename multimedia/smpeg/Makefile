@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/09 06:55:54 dsainty Exp $
+# $NetBSD: Makefile,v 1.18 2007/01/25 14:00:57 joerg Exp $
 #
 
 DISTNAME=	smpeg-0.4.4
@@ -11,6 +11,7 @@ MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://www.lokigames.com/development/smpeg.php3
 COMMENT=	SDL MPEG Player Library
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
