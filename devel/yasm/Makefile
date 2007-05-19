@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/08/12 21:05:06 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2007/03/08 19:09:27 wiz Exp $
 #
 
 DISTNAME=	yasm-0.6.0
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.tortall.net/projects/yasm/releases/
 MAINTAINER=	shaun@inerd.com
 HOMEPAGE=	http://www.tortall.net/projects/yasm/
 COMMENT=	Complete rewrite of the NASM assembler with BSD license
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		msgfmt
 GNU_CONFIGURE=		YES
