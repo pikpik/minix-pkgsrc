@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/sudoku-cli
+man/man6/sudoku-cli.6
+share/sudoku-cli/template
