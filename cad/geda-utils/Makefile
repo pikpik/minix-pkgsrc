@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2007/02/21 13:23:54 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.40 2007/02/22 19:26:10 wiz Exp $
 #
 
 DISTNAME=		geda-utils-${PKGVERSION}
 CATEGORIES=		cad
+PKGREVISION=		1
 
 MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.geda.seul.org/
@@ -22,7 +23,7 @@ USE_TOOLS+=		gawk:run lex perl:run pkg-config
 
 # for gnet_hier_verilog.sh.  It looks to be fairly bash
 # dependent
-DEPENDS+=		bash-[0-9]*{,nb[0-9]*}:../../shells/bash
+DEPENDS+=		bash-[0-9]*:../../shells/bash
 
 # let (f)lex rebuild this file.  The distributed one doesn't
 # always work.
