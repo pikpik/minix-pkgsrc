@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/09/27 15:18:14 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2007/03/24 22:58:46 joerg Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -13,6 +13,7 @@ SUBDIR+=	gnustep
 SUBDIR+=	gtk2-extras
 SUBDIR+=	kde3
 SUBDIR+=	matchbox
+SUBDIR+=	modular-xorg-apps
 SUBDIR+=	modular-xorg-drivers
 SUBDIR+=	modular-xorg-fonts
 SUBDIR+=	netbsd-doc
