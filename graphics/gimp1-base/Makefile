@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/13 18:23:33 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2007/01/08 16:27:29 joerg Exp $
 #
 
 DISTNAME=		gimp-1.2.5
@@ -40,8 +40,6 @@ LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
 MAKE_ENV+=		X11BASE=${X11BASE:Q}
 PLIST_SUBST+=		LOCALBASE=${LOCALBASE:Q}
-
-.include "options.mk"
 
 # Configuration files
 PKG_SYSCONFSUBDIR=	gimp/1.2
