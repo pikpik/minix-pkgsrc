@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.851 2007/05/13 20:43:56 seb Exp $
+# $NetBSD: Makefile,v 1.852 2007/05/17 17:40:28 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -350,6 +350,7 @@ SUBDIR+=	ode
 SUBDIR+=	ogre
 SUBDIR+=	opencm
 SUBDIR+=	opengrok
+SUBDIR+=	ossp-uuid
 SUBDIR+=	p4
 SUBDIR+=	p4-docs
 SUBDIR+=	p4d
