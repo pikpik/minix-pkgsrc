@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/01/05 19:56:38 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2007/03/17 13:25:46 rillig Exp $
 
 DISTNAME=	ircii-pana-1.1-final
 PKGNAME=	bitchx-1.1
@@ -18,7 +18,6 @@ WRKSRC=			${WRKDIR}/BitchX
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-ssl
 
-.include "options.mk"
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "Darwin"
