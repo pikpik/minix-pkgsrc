@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.499 2007/05/09 10:22:51 tnn Exp $
+# $NetBSD: Makefile,v 1.500 2007/05/13 14:39:17 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -227,7 +227,6 @@ SUBDIR+=	modular-xorg-server
 SUBDIR+=	mowitz
 SUBDIR+=	mrxvt
 SUBDIR+=	multi-aterm
-SUBDIR+=	multi-gnome-terminal
 SUBDIR+=	mxterm
 SUBDIR+=	neXtaw
 SUBDIR+=	numlockx

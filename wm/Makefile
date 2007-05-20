@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2007/05/09 10:22:51 tnn Exp $
+# $NetBSD: Makefile,v 1.93 2007/05/13 14:39:16 wiz Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -23,7 +23,6 @@ SUBDIR+=	ctwm
 SUBDIR+=	cwm
 SUBDIR+=	dwm
 SUBDIR+=	e16menuedit2
-SUBDIR+=	econf
 SUBDIR+=	enlightenment
 SUBDIR+=	ethemes
 SUBDIR+=	evilwm

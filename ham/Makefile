@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/11/13 18:20:41 wulf Exp $
+# $NetBSD: Makefile,v 1.20 2007/01/21 16:51:05 obache Exp $
 #
 
 COMMENT=	Wireless communication tools and applications
@@ -21,7 +21,6 @@ SUBDIR+=	gnuradio-trellis
 SUBDIR+=	gnuradio-usrp
 SUBDIR+=	gnuradio-video-sdl
 SUBDIR+=	gnuradio-wxgui
-SUBDIR+=	gpredict
 SUBDIR+=	grig
 SUBDIR+=	hamlib
 SUBDIR+=	linpsk
