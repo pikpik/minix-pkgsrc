@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2006/12/19 18:21:10 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2006/12/23 16:16:40 obache Exp $
 
 DISTNAME=	xemacs-21.5.27
 
@@ -27,9 +27,6 @@ XEMACS_WIDGETS?=	lucid
 .if ${XEMACS_WIDGETS} == "gtk"
 .  include "../../x11/gtk/buildlink3.mk"
 WITH_WIDGETS=	--with-gtk
-.elif ${XEMACS_WIDGETS} == "gnome"
-.  include "../../x11/gnome-libs/buildlink3.mk"
-WITH_WIDGETS=	--with-gnome
 .elif ${XEMACS_WIDGETS} == "motif"
 .  include "../../mk/motif.buildlink3.mk"
 .else
