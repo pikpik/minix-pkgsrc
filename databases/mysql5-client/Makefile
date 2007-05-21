@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/08/06 16:30:40 tron Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/11 18:42:27 adam Exp $
 
 PKGNAME=		${DISTNAME:S/-/-client-/}
 SVR4_PKGNAME=		mysqc
@@ -12,7 +12,7 @@ CONFIGURE_ARGS+=	--without-extra-tools
 CONFIGURE_ARGS+=	--without-server
 CONFIGURE_ARGS+=	--enable-thread-safe-client
 UNWRAP_FILES+=		scripts/mysql_config
-INFO_FILES=		# PLIST
+INFO_FILES=		yes
 
 INSTALLATION_DIRS+=	share/examples/mysql
 
