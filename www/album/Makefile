@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2006/07/13 15:14:37 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2007/05/21 09:38:02 joerg Exp $
 #
 
 DISTNAME=	album
 ALBUMREV=	3.07
 PKGNAME=	${DISTNAME}-${ALBUMREV}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://marginalhacks.com/bin/
 
@@ -13,7 +13,7 @@ HOMEPAGE=	http://marginalhacks.com/Hacks/album/
 COMMENT=	Generate HTML albums of images
 
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
-DEPENDS+=	jhead-[2-9]*:../../graphics/jhead
+DEPENDS+=	jhead>=2.0:../../graphics/jhead
 DEPENDS+=	ffmpeg-[0-9]*:../../multimedia/ffmpeg
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
