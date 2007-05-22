@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2007/01/24 19:46:45 epg Exp $
+# $NetBSD: Makefile,v 1.51 2007/01/25 17:05:35 epg Exp $
 #
 
 DISTNAME=	apr-1.2.8
@@ -9,7 +9,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_APACHE:=apr/}
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://apr.apache.org/
 COMMENT=	Apache Portable Runtime
 
