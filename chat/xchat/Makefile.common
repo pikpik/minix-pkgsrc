@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.53 2007/01/25 21:27:49 reed Exp $
+# $NetBSD: Makefile.common,v 1.54 2007/04/19 20:39:38 adrianp Exp $
 
-DISTNAME=	xchat-2.8.0
+DISTNAME=	xchat-2.8.2
 CATEGORIES=	chat
 MASTER_SITES=	http://xchat.org/files/source/2.8/
 EXTRACT_SUFX=	.tar.bz2
