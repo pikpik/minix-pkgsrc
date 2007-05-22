@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.common,v 1.54 2006/08/31 12:42:42 seb Exp $
+# $NetBSD: Makefile.common,v 1.55 2006/10/18 13:22:04 ben Exp $
 
 DISTNAME=		mysql-4.1.21
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_MYSQL:=MySQL-4.1/}
 
-MAINTAINER=		xtraeme@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mysql.com/
 
 USE_LIBTOOL=		yes
