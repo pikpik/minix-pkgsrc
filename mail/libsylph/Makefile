@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/12/01 20:22:19 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/12/06 16:30:48 joerg Exp $
 #
 
 DISTNAME=	libsylph-0.3.0
@@ -6,7 +6,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://sylpheed.sraoss.jp/sylpheed/libsylph/alpha/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sylpheed.sraoss.jp/
 COMMENT=	E-Mail client library
 
