@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.227 2007/03/11 16:46:59 grant Exp $
+# $NetBSD: Makefile,v 1.228 2007/05/06 12:59:48 obache Exp $
 #
 
 COMMENT=	Databases
@@ -70,6 +70,7 @@ SUBDIR+=	p5-DBD-Google
 SUBDIR+=	p5-DBD-Oracle
 SUBDIR+=	p5-DBD-PgPP
 SUBDIR+=	p5-DBD-SQLite
+SUBDIR+=	p5-DBD-SQLite2
 SUBDIR+=	p5-DBD-Sybase
 SUBDIR+=	p5-DBD-XBase
 SUBDIR+=	p5-DBD-mysql
