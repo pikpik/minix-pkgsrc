@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.6 2004/04/26 11:31:25 markd Exp $
 
 --- ksysguard/ksysguardd/NetBSD/diskstat.c.orig	2003-03-13 01:26:05.000000000 +1300
 +++ ksysguard/ksysguardd/NetBSD/diskstat.c
@@ -6,7 +6,7 @@ $NetBSD$
  
  int numMntPnt(void)
  {
-+#ifdef ST_RDONLY
++#ifdef HAVE_STATVFS
 +	struct statvfs *fs_info;
 +#else
  	struct statfs *fs_info;
@@ -18,7 +18,7 @@ $NetBSD$
  
  int updateDiskStat(void)
  {
-+#ifdef ST_RDONLY
++#ifdef HAVE_STATVFS
 +	struct statvfs *fs_info;
 +	struct statvfs fs;
 +#else
