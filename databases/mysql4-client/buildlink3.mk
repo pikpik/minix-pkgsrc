@@ -1,9 +1,9 @@
-# $NetBSD: buildlink3.mk,v 1.16 2006/07/08 22:39:04 jlam Exp $
+# $NetBSD$
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 MYSQL_CLIENT_BUILDLINK3_MK:=	${MYSQL_CLIENT_BUILDLINK3_MK}+
 
-.if !empty(BUILDLINK_DEPTH:M+)
+.if ${BUILDLINK_DEPTH} == "+"
 BUILDLINK_DEPENDS+=	mysql-client
 .endif
 
@@ -11,14 +11,14 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nmysql-client}
 BUILDLINK_PACKAGES+=	mysql-client
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}mysql-client
 
-.if !empty(MYSQL_CLIENT_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.mysql-client+=	mysql-client>=4.1.7
-BUILDLINK_ABI_DEPENDS.mysql-client+=	mysql-client>=4.1.15nb1
+.if ${MYSQL_CLIENT_BUILDLINK3_MK} == "+"
+BUILDLINK_API_DEPENDS.mysql-client+=	mysql-client>=4.1.22
 BUILDLINK_PKGSRCDIR.mysql-client?=	../../databases/mysql4-client
 BUILDLINK_LIBDIRS.mysql-client?=	lib/mysql
 BUILDLINK_INCDIRS.mysql-client?=	include/mysql
 .endif	# MYSQL_CLIENT_BUILDLINK3_MK
 
+.include "../../devel/readline/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 
