@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2007/02/15 14:47:09 rillig Exp $
+# $NetBSD: Makefile,v 1.72 2007/05/23 23:46:08 wiz Exp $
 
 DISTNAME=	screen-4.0.3
 CATEGORIES=	misc shells
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-sys-screenrc=${PKG_SYSCONFDIR}/screenrc
 CONFIGURE_ARGS+=	--enable-telnet
 
 PKG_SHELL=		bin/screen
-INFO_FILES=		# PLIST
+INFO_FILES=		YES
 
 .include "../../mk/bsd.prefs.mk"
 
