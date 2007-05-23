@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.73 2007/02/22 13:53:43 joerg Exp $
+# $NetBSD: Makefile,v 1.74 2007/03/23 23:03:01 abs Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
-PKGREVISION=	2
 CATEGORIES=	misc
 COMMENT=	Personal Information Management tools for the KDE desktop
 
@@ -44,6 +43,7 @@ CHECK_PORTABILITY_SKIP+=karm/test/booktime-baddate.sh \
 BUILDLINK_DEPMETHOD.qt3-tools=	full
 
 .include "../../comms/libmal/buildlink3.mk"
+.include "../../comms/libopensync/buildlink3.mk"
 .include "../../comms/pilot-link-libs/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
