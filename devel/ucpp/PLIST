@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/ucpp
+man/man1/ucpp.1
