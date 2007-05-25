@@ -1,4 +1,4 @@
-# $NetBSD: depends.mk,v 1.31 2007/05/23 00:23:24 joerg Exp $
+# $NetBSD: depends.mk,v 1.32 2007/05/25 19:07:23 joerg Exp $
 
 # This command prints out the dependency patterns for all full (run-time)
 # dependencies of the package.
@@ -95,8 +95,7 @@ _DEPENDS_INSTALL_CMD=							\
 			${STEP_MSG} "Required installed package $$pattern: $$pkg found"; \
 		fi;							\
 		;;							\
-	esac;								\
-	done
+	esac
 
 ${_DEPENDS_FILE}:
 	${RUN} ${MKDIR} ${.TARGET:H}
