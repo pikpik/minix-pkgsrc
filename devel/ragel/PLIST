@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/ragel
+bin/rlgen-cd
+bin/rlgen-dot
+bin/rlgen-java
+bin/rlgen-ruby
