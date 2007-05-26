@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.453 2007/05/20 15:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.454 2007/05/20 15:48:07 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -278,6 +278,7 @@ SUBDIR+=	ruby-gd
 SUBDIR+=	ruby-gnome2-gdkpixbuf
 SUBDIR+=	ruby-gnome2-gnomecanvas
 SUBDIR+=	ruby-gnome2-libart
+SUBDIR+=	ruby-gnome2-rsvg
 SUBDIR+=	ruby-gnuplot
 SUBDIR+=	ruby-imlib2
 SUBDIR+=	ruby-opengl
