@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2006/07/14 14:23:06 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2007/05/07 22:39:07 rillig Exp $
 #
-# This file is copied from "makefile" with the following modifications
-# for pkgsrc:
+# This file is copied from "makefile.orig" with the following
+# modifications for pkgsrc:
 #
 #    * Some problematic comments lines were stripped.
 #    * Use the supplied ytab.[ch] files instead of regenerating them
