@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.23 2007/03/04 17:22:45 tonio Exp $
+# $NetBSD: options.mk,v 1.24 2007/04/21 18:27:21 tonio Exp $
 
 # Global and legacy options
 
@@ -100,9 +100,9 @@ CONFIGURE_ARGS+=	--disable-hcache
 ### Internal SMTP relay support
 ###
 .if !empty(PKG_OPTIONS:Mmutt-smtp)
-CONFIGURE_ARGS+=       --enable-smtp
+CONFIGURE_ARGS+=	--enable-smtp
 .else
-CONFIGURE_ARGS+=       --disable-smtp
+CONFIGURE_ARGS+=	--disable-smtp
 .endif
 
 ###
