@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2005/12/05 23:55:05 rillig Exp $
+# $NetBSD: options.mk,v 1.3 2006/01/29 02:40:40 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cvs
 PKG_SUPPORTED_OPTIONS=	kerberos

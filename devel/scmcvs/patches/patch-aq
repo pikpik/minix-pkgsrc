@@ -1,4 +1,4 @@
-$NetBSD: patch-aq,v 1.8 2005/03/01 15:36:48 wiz Exp $
+$NetBSD: patch-aq,v 1.9 2006/01/29 02:40:40 wiz Exp $
 
 --- src/recurse.c.orig	2005-09-04 02:26:43.000000000 +0200
 +++ src/recurse.c

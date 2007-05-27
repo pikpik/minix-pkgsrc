@@ -1,4 +1,4 @@
-$NetBSD: patch-am,v 1.13 2005/03/01 15:36:48 wiz Exp $
+$NetBSD: patch-am,v 1.14 2006/01/29 02:40:40 wiz Exp $
 
 --- src/cvs.h.orig	2005-09-22 16:07:05.000000000 +0200
 +++ src/cvs.h

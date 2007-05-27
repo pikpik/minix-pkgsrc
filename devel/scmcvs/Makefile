@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2007/02/17 20:59:47 wiz Exp $
+# $NetBSD: Makefile,v 1.95 2007/02/20 18:47:48 wiz Exp $
 #
 
 DISTNAME=	cvs-1.11.21

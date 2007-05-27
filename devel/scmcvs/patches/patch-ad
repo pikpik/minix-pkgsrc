@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.7 2004/09/09 22:25:16 wiz Exp $
 
 --- lib/sighandle.c.orig	2004-02-03 15:37:50.000000000 +0100
 +++ lib/sighandle.c

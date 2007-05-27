@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2004/02/13 08:26:03 seb Exp $
+@comment $NetBSD: PLIST,v 1.8 2006/03/30 03:44:42 jlam Exp $
 bin/cvs
 bin/cvsbug
 bin/rcs2log

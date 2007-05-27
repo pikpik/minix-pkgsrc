@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.857 2007/05/25 23:40:12 minskim Exp $
+# $NetBSD: Makefile,v 1.858 2007/05/26 06:28:55 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -94,7 +94,6 @@ SUBDIR+=	cpuflags
 SUBDIR+=	cqual
 SUBDIR+=	cscope
 SUBDIR+=	cssc
-SUBDIR+=	cvs
 SUBDIR+=	cvs2cl
 SUBDIR+=	cvs2html
 SUBDIR+=	cvs2p4
@@ -714,6 +713,7 @@ SUBDIR+=	rudiments
 SUBDIR+=	rvm
 SUBDIR+=	rx
 SUBDIR+=	sablecc
+SUBDIR+=	scmcvs
 SUBDIR+=	scmgit
 SUBDIR+=	scons
 SUBDIR+=	scons-devel
