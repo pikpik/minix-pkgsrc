@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.502 2007/05/20 15:26:06 wiz Exp $
+# $NetBSD: Makefile,v 1.503 2007/05/20 17:28:17 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -15,6 +15,7 @@ SUBDIR+=	Xrandr
 SUBDIR+=	Xrender
 SUBDIR+=	acidlaunch
 SUBDIR+=	alacarte
+SUBDIR+=	antiright
 SUBDIR+=	appres
 SUBDIR+=	asnap
 SUBDIR+=	aterm
