@@ -1,5 +1,5 @@
 #!/usr/bin/awk -f
-# $NetBSD: genreadme.awk,v 1.25 2006/12/15 13:15:06 martti Exp $
+# $NetBSD: genreadme.awk,v 1.26 2007/02/18 00:08:36 adrianp Exp $
 #
 # Copyright (c) 2002, 2003, 2005, 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -278,8 +278,8 @@ END {
 			if ( $0 ~ /^-----BEGIN PGP SIGNATURE-----.*/ ) {
 				break;
 			}
-			if ( ( $0 !~ /^\#/ ) && 
-			     ( $0 !~ /^Hash:.*/ ) && 
+			if ( ( $0 !~ /^\#/ ) &&
+			     ( $0 !~ /^Hash:.*/ ) &&
 			     ( $0 !~ /^-----BEGIN PGP SIGNED.*/ ) &&
 			     ( $0 != "" ) ) {
 				vulpkg[i] = $1;
