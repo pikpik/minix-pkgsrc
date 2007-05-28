@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.32 2007/01/08 17:23:55 obache Exp $
+# $NetBSD: Makefile,v 1.33 2007/01/08 17:35:39 obache Exp $
 
 DISTNAME=	lha-114i
 PKGNAME=	lha-114.9
 PKGREVISION=	3
 CATEGORIES=	archivers
-MASTER_SITES=	http://www2m.biglobe.ne.jp/~dolphin/lha/prog/ \
-		ftp://ftp.win.ne.jp/pub/misc/
+MASTER_SITES=	http://www2m.biglobe.ne.jp/~dolphin/lha/prog/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
