@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2006/06/18 07:59:34 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/22 19:01:14 wiz Exp $
 
-DISTNAME=	wavesurfer-1.7.4
-PKGREVISION=	1
+DISTNAME=	wavesurfer-1.8.5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.kth.se/wavesurfer/
 
@@ -26,6 +25,6 @@ INSTALLATION_DIRS=	bin lib
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/wavesurfer.tcl ${PREFIX}/bin/wavesurfer
-	cd ${WRKSRC} && pax -wr -pm wsurf1.7 ${PREFIX}/lib/
+	cd ${WRKSRC} && pax -wr -pm wsurf1.8 ${PREFIX}/lib/
 
 .include "../../mk/bsd.pkg.mk"
