@@ -1,7 +1,9 @@
-# $NetBSD: options.mk,v 1.2 2006/07/06 08:37:27 dillo Exp $
+# $NetBSD: options.mk,v 1.3 2007/02/07 19:43:29 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.vice
-PKG_SUPPORTED_OPTIONS=	esound ffmpeg lame gnome
+# ffmpeg support for vice-1.21 needs at least ffmpeg-0.5.1
+#PKG_SUPPORTED_OPTIONS=	esound ffmpeg lame gnome
+PKG_SUPPORTED_OPTIONS=	esound lame gnome
 
 .include "../../mk/bsd.options.mk"
 
