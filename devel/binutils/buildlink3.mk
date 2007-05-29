@@ -1,9 +1,9 @@
-# $NetBSD: buildlink3.mk,v 1.18 2006/07/08 22:39:07 jlam Exp $
+# $NetBSD$
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 BINUTILS_BUILDLINK3_MK:=	${BINUTILS_BUILDLINK3_MK}+
 
-.if !empty(BUILDLINK_DEPTH:M+)
+.if ${BUILDLINK_DEPTH} == "+"
 BUILDLINK_DEPENDS+=	binutils
 .endif
 
@@ -11,10 +11,10 @@ BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nbinutils}
 BUILDLINK_PACKAGES+=	binutils
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}binutils
 
-.if !empty(BINUTILS_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.binutils+=		binutils>=2.15.0
-BUILDLINK_PKGSRCDIR.binutils?=		../../devel/binutils
-BUILDLINK_DEPMETHOD.binutils?=		build
+.if ${BINUTILS_BUILDLINK3_MK} == "+"
+BUILDLINK_API_DEPENDS.binutils+=	binutils>=2.17
+BUILDLINK_PKGSRCDIR.binutils?=	../../devel/binutils
+BUILDLINK_DEPMETHOD.binutils?=	build
 .endif	# BINUTILS_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
