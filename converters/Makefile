@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2007/02/21 12:23:11 abs Exp $
+# $NetBSD: Makefile,v 1.88 2007/04/30 01:42:44 obache Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -23,6 +23,7 @@ SUBDIR+=	fribidi
 SUBDIR+=	hztty
 SUBDIR+=	ish
 SUBDIR+=	ja-dvi2tty
+SUBDIR+=	jcode-perl
 SUBDIR+=	kcc
 SUBDIR+=	latex2rtf
 SUBDIR+=	libiconv
@@ -44,7 +45,6 @@ SUBDIR+=	p5-Unicode-Map8
 SUBDIR+=	p5-Unicode-String
 SUBDIR+=	p5-Unicode-UTF8simple
 SUBDIR+=	p5-chkjis
-SUBDIR+=	p5-jcode
 SUBDIR+=	p5-nkf
 SUBDIR+=	php-iconv
 SUBDIR+=	psiconv
