@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6365 2007/05/27 09:17:50 tnn Exp $
+$NetBSD: TODO,v 1.6366 2007/05/28 07:26:53 heinz Exp $
 
 Suggested new packages
 ======================
@@ -1020,7 +1020,6 @@ Suggested package updates
 	o profit-2.5.3
 	o projclock-0.9
 	o proxsmtp-1.6
-	o ps2eps-1.64
 	o psmisc-21.9
 	o pstoedit-3.43
 	o puf-0.93.3
