@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/29 15:40:18 taca Exp $
 #
 
 DISTNAME=	psvn.el
 PKGNAME=	psvn-${VER}
-CATEGORIES=	devel editors
+CATEGORIES=	devel editors scm
 MASTER_SITES=	http://www.xsteve.at/prg/emacs/
 DIST_SUBDIR=	psvn-${VER}
 EXTRACT_SUFX=	# empty
