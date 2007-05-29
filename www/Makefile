@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.510 2007/05/26 01:48:23 minskim Exp $
+# $NetBSD: Makefile,v 1.511 2007/05/27 02:59:35 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -295,9 +295,7 @@ SUBDIR+=	py-flup
 SUBDIR+=	py-jonpy
 SUBDIR+=	py-moin
 SUBDIR+=	py-nevow
-SUBDIR+=	py-pcgi
 SUBDIR+=	py-webpy
-SUBDIR+=	py-zpublisher
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
 SUBDIR+=	rails
@@ -362,8 +360,6 @@ SUBDIR+=	wml
 SUBDIR+=	www6to4
 SUBDIR+=	wwwcount
 SUBDIR+=	wwwoffle
-SUBDIR+=	zope
-SUBDIR+=	zope-confera
 SUBDIR+=	zope25
 SUBDIR+=	zope25-AbracadabraObject
 SUBDIR+=	zope25-BTreeFolder
