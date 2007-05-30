@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2006/07/08 23:10:40 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2006/12/12 21:52:35 joerg Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 OPENLDAP_BUILDLINK3_MK:=		${OPENLDAP_BUILDLINK3_MK}+
@@ -21,13 +21,8 @@ BUILDLINK_PKGSRCDIR.openldap-client?=	../../databases/openldap-client
 BUILDLINK_CPPFLAGS.openldap-client+=	-DLDAP_DEPRECATED
 .endif	# OPENLDAP_BUILDLINK3_MK
 
-.if !defined(PKG_BUILD_OPTIONS.openldap-client)
-PKG_BUILD_OPTIONS.openldap-client!=					\
-	cd ${BUILDLINK_PKGSRCDIR.openldap-client} &&			\
-	${MAKE} show-var ${MAKEFLAGS} VARNAME=PKG_OPTIONS
-MAKEFLAGS+=	PKG_BUILD_OPTIONS.openldap-client=${PKG_BUILD_OPTIONS.openldap-client:Q}
-.endif
-MAKEVARS+=	PKG_BUILD_OPTIONS.openldap-client
+pkgbase := openldap-client
+.include "../../mk/pkg-build-options.mk"
 
 .if !empty(PKG_BUILD_OPTIONS.openldap-client:Mkerberos) || \
     !empty(PKG_BUILD_OPTIONS.openldap-client:Msasl)

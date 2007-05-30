@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.23 2006/12/15 20:33:04 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.24 2007/01/17 23:47:26 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 KDEBASE_BUILDLINK3_MK:=	${KDEBASE_BUILDLINK3_MK}+
@@ -17,13 +17,8 @@ BUILDLINK_ABI_DEPENDS.kdebase?=	kdebase>=3.5.5nb1
 BUILDLINK_PKGSRCDIR.kdebase?=	../../x11/kdebase3
 .endif	# KDEBASE_BUILDLINK3_MK
 
-.if !defined(PKG_BUILD_OPTIONS.kdebase)
-PKG_BUILD_OPTIONS.kdebase!=						\
-	cd ${BUILDLINK_PKGSRCDIR.kdebase} &&				\
-	${MAKE} show-var ${MAKEFLAGS} VARNAME=PKG_OPTIONS
-MAKEFLAGS+=	PKG_BUILD_OPTIONS.kdebase=${PKG_BUILD_OPTIONS.kdebase:Q}
-.endif
-MAKEVARS+=	PKG_BUILD_OPTIONS.kdebase
+pkgbase := kdebase
+.include "../../mk/pkg-build-options.mk"
 
 BUILDLINK_API_DEPENDS.Xrandr+=      Xrandr>=1.0
 
