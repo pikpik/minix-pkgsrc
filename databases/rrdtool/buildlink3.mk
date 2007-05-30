@@ -12,14 +12,12 @@ BUILDLINK_PACKAGES+=	rrdtool
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}rrdtool
 
 .if ${RRDTOOL_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.rrdtool+=	rrdtool>=1.2.9
-BUILDLINK_ABI_DEPENDS.rrdtool+=	rrdtool>=1.2.12nb3
+BUILDLINK_API_DEPENDS.rrdtool+=	rrdtool>=1.2.23
 BUILDLINK_PKGSRCDIR.rrdtool?=	../../databases/rrdtool
 .endif	# RRDTOOL_BUILDLINK3_MK
 
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/libart2/buildlink3.mk"
-.include "../../www/cgilib/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
