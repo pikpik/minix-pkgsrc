@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2007/01/24 19:37:20 epg Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2007/05/30 08:54:29 rillig Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 APR_UTIL_BUILDLINK3_MK:=	${APR_UTIL_BUILDLINK3_MK}+
@@ -14,6 +14,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}apr-util
 .if !empty(APR_UTIL_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.apr-util+=	apr-util>=1.2.8
 BUILDLINK_PKGSRCDIR.apr-util?=	../../devel/apr-util
+.endif	# APR_UTIL_BUILDLINK3_MK
 
 BUILDLINK_FILES.apr-util+=	bin/apu-1-config
 BUILDLINK_FILES.apr-util+=	lib/aprutil.exp
