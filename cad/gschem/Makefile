@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2006/09/01 12:00:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.42 2007/02/23 13:51:05 dmcmahill Exp $
 #
 
 DISTNAME=		geda-gschem-${PKGVERSION}
 PKGNAME=		gschem-${PKGVERSION}
-PKGREVISION=		1
 CATEGORIES=		cad
 
 MAINTAINER=		dmcmahill@NetBSD.org
@@ -18,6 +17,10 @@ CONFLICTS+=		gEDA<19991011
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		pkg-config
+# otherwise the gettext stuff in here tries to do
+# /bin/sh /usr/bin/install -d /some/directory
+# but of course /usr/bin/install is a binary.
+MAKE_FLAGS+=		install_sh=${WRKSRC}/install-sh
 USE_PKGLOCALEDIR=	YES
 
 .include "../../cad/libgeda/buildlink3.mk"

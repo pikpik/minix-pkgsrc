@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.18 2007/02/21 13:23:53 dmcmahill Exp $
+@comment $NetBSD: PLIST,v 1.19 2007/02/23 13:51:05 dmcmahill Exp $
 bin/gschem
+bin/gschemdoc
 man/man1/gschem.1
 share/gEDA/bitmap/gschem-alignment_bottomcenter.png
 share/gEDA/bitmap/gschem-alignment_bottomleft.png
