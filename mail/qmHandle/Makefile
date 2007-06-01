@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/07/16 01:19:13 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2007/03/24 07:04:56 schmonz Exp $
 #
 
-DISTNAME=	qmhandle-1.2.0
+DISTNAME=	qmhandle-1.2.3
 PKGNAME=	${DISTNAME:S/h/H/}
-PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qmhandle/}
 
