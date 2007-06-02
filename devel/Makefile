@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.860 2007/05/27 19:43:28 heinz Exp $
+# $NetBSD: Makefile,v 1.861 2007/05/29 15:41:56 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -62,6 +62,7 @@ SUBDIR+=	boehm-gc
 SUBDIR+=	boost-build
 SUBDIR+=	boost-docs
 SUBDIR+=	boost-headers
+SUBDIR+=	boost-jam
 SUBDIR+=	boost-libs
 SUBDIR+=	boost-python
 SUBDIR+=	buddy
