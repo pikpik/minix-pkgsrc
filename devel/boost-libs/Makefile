@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/01/20 20:40:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2006/07/13 17:59:37 heinz Exp $
 #
 
 BOOST_PACKAGE=		libs
@@ -11,7 +11,7 @@ BOOST_INSTALL_LIBS=	yes
 BJAM_ARGS+=		--without-python
 BJAM_ARGS+=		--without-serialization # Requires wide I/O
 
-.include "../../devel/boost-build/bjam.mk"
+.include "../../devel/boost-jam/bjam.mk"
 
 do-build: bjam-build
 
