@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2006/06/11 14:48:29 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/09 09:16:21 joerg Exp $
 #
 
 PKGNAME=	w3m-img-${W3M_VERS}
-PKGREVISION=	5
 COMMENT=	Multilingualized version of a pager/text-based browser w3m with inline image support
 
 CONFLICTS+=	w3m-[0-9]*
