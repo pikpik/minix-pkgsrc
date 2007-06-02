@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/29 06:22:06 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/10/05 08:51:59 rillig Exp $
 #
 
 DISTNAME=		rc.subr-20041011
@@ -11,7 +11,8 @@ MAINTAINER=		grant@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Portable NetBSD rc.subr implementation for pkgsrc
 
-ONLY_FOR_PLATFORM=	Darwin-*-* Interix-*-* Linux-*-* SunOS-*-*
+ONLY_FOR_PLATFORM=	Darwin-*-* FreeBSD-[0-4].*-* Interix-*-*
+ONLY_FOR_PLATFORM+=	Linux-*-* SunOS-*-*
 
 NO_BUILD=		yes
 NO_CHECKSUM=		yes
