@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PKG_LOCALTEXMFPREFIX}/tex/latex/resume/res.cls
+@dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/resume
+@comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex
