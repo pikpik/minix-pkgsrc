@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/02 19:07:32 agc Exp $
+# $NetBSD: Makefile,v 1.2 2007/06/02 19:25:37 agc Exp $
 #
 
 DISTNAME=	metisse-0.4.0-rc4
@@ -16,8 +16,7 @@ USE_TOOLS+=		pkg-config msgfmt perl
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_GNU_READLINE=	yes	# uses read_history_range append_history
-				# history_truncate_file
+USE_GNU_READLINE=	yes	# uses read_history_range, append_history & history_truncate_file
 
 DEPENDS+=	rxvt>=2.7.10nb5:../../x11/rxvt
 
