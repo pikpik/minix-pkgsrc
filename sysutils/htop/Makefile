@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2006/03/31 05:37:08 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/25 19:30:21 agc Exp $
 #
 
-DISTNAME=	htop-0.6.5
+DISTNAME=	htop-0.6.6
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=htop/}
 
