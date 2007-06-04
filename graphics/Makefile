@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.457 2007/05/26 13:54:30 obache Exp $
+# $NetBSD: Makefile,v 1.458 2007/06/03 07:51:38 dsainty Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -270,6 +270,7 @@ SUBDIR+=	py-piddle
 SUBDIR+=	qcamview
 SUBDIR+=	qiv
 SUBDIR+=	qvplay
+SUBDIR+=	rabbit
 SUBDIR+=	radiance
 SUBDIR+=	rayshade
 SUBDIR+=	refocus-it
