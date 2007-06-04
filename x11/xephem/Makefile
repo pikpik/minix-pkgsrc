@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2007/03/02 22:20:44 gdt Exp $
+# $NetBSD: Makefile,v 1.48 2007/03/03 12:06:54 joerg Exp $
 
 DISTNAME=	xephem-3.7.2
 PKGREVISION=	1
 CATEGORIES=	x11
-MASTER_SITES=	http://www.clearskyinstitute.com/xephem/ \
-		ftp://iphcip1.physik.uni-mainz.de/pub/xephem/
+MASTER_SITES=	http://www.clearskyinstitute.com/xephem/
 
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.clearskyinstitute.com/xephem/
