@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2006/09/16 12:20:40 jmmv Exp $
+# $NetBSD: Makefile,v 1.39 2007/01/10 16:44:07 joerg Exp $
 #
 
 DISTNAME=	rox-2.4.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz

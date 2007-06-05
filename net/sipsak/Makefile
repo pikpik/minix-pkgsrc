@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2006/11/10 21:32:35 schwarz Exp $
 
 DISTNAME=	sipsak-0.9.6-1
 PKGNAME=	${DISTNAME:S/-1//}
+PKGREVISION=	1
 CATEGORIES=	net comms
 MASTER_SITES=	http://download.berlios.de/sipsak/
 
