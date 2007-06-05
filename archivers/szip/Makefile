@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2006/05/10 12:31:46 gdt Exp $
+# $NetBSD: Makefile,v 1.7 2006/07/06 14:43:27 gdt Exp $
 
 DISTNAME=	szip-2.0
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.ncsa.uiuc.edu/HDF/szip/2.0/src/
-EXTRACT_SUFX=	.tar
+MASTER_SITES=	ftp://ftp.hdfgroup.org/lib-external/szip/2.0/src/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hdf.ncsa.uiuc.edu/doc_resource/SZIP/
