@@ -1,6 +1,8 @@
-@comment $NetBSD: PLIST,v 1.4 2004/10/30 00:47:37 xtraeme Exp $
+@comment $NetBSD: PLIST,v 1.5 2004/10/30 01:02:43 wiz Exp $
 bin/cjpeg
 bin/djpeg
+bin/exifautotran
+bin/jpegexiforient
 bin/jpegtran
 bin/rdjpgcom
 bin/wrjpgcom

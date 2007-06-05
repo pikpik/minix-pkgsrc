@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2006/09/03 00:56:29 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2006/11/02 18:00:43 joerg Exp $
 #
 
 DISTNAME=		jpegsrc.v6b
 PKGNAME=		jpeg-6b
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.fu-berlin.de/unix/graphics/jpeg/ \
 			ftp://ftp.uu.net/graphics/jpeg/
@@ -27,7 +27,11 @@ INSTALLATION_DIRS=	bin lib include ${PKGMANDIR}/man1
 
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
 
+post-extract:
+	${CP} ${FILESDIR}/jpegexiforient.c ${WRKSRC}
+
 post-install:
+	${INSTALL_SCRIPT} ${FILESDIR}/exifautotran ${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/jpeg
 	${INSTALL_DATA} ${WRKSRC}/*.doc ${DESTDIR}${PREFIX}/share/doc/jpeg
 	${INSTALL_DATA} ${WRKSRC}/jpegint.h ${DESTDIR}${PREFIX}/include
