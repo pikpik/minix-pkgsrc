@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2006/05/16 21:26:46 tonio Exp $
+# $NetBSD: Makefile,v 1.5 2006/05/21 15:43:09 joerg Exp $
 #
 
-DISTNAME=		jamvm-1.4.2
-PKGREVISION=		1
+DISTNAME=		jamvm-1.4.5
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=jamvm/}
 
