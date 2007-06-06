@@ -1,10 +1,10 @@
 $NetBSD$
 
---- data/Makefile.in.orig	2005-07-20 03:41:54.000000000 -0700
+--- data/Makefile.in.orig	2007-05-03 12:03:41.000000000 -0700
 +++ data/Makefile.in
-@@ -55,7 +55,7 @@ am__installdirs = "$(DESTDIR)$(pkgdatadi
- pkgdataDATA_INSTALL = $(INSTALL_DATA)
- DATA = $(pkgdata_DATA)
+@@ -60,7 +60,7 @@ am__installdirs = "$(DESTDIR)$(pkgdatadi
+ dist_pkgdataDATA_INSTALL = $(INSTALL_DATA)
+ DATA = $(dist_pkgdata_DATA)
  DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 -pkgdatadir = $(datadir)/texmf/dvipdfm
 +pkgdatadir = $(PKG_LOCALTEXMFPREFIX)/dvipdfm
