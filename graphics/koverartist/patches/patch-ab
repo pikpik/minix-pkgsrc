@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- src/renderer.cpp.orig	2006-06-21 19:10:03.000000000 +1200
++++ src/renderer.cpp
+@@ -35,6 +35,9 @@
+ 
+ #include <iostream>
+ 
++#ifdef __NetBSD__
++#define fmin(a,b) ((a)<(b)?(a):(b))
++#endif
+ 
+ namespace KoverArtist
+ {
