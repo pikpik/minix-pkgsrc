@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.458 2007/06/03 07:51:38 dsainty Exp $
+# $NetBSD: Makefile,v 1.459 2007/06/04 04:15:55 obache Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -161,6 +161,7 @@ SUBDIR+=	jpegpixi
 SUBDIR+=	kbarcode
 SUBDIR+=	kdegraphics3
 SUBDIR+=	kipi-plugins
+SUBDIR+=	koverartist
 SUBDIR+=	kphotoalbum
 SUBDIR+=	kphotobook
 SUBDIR+=	kphotools
