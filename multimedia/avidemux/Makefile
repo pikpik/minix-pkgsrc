@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/12/08 22:06:28 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2006/12/27 12:15:31 joerg Exp $
 #
 
 DISTNAME=	avidemux_2.3.0
@@ -31,8 +31,9 @@ CONFIGURE_ARGS+=	\
 .include "../../mk/bsd.prefs.mk"
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.avidemux
+PKG_SUPPORTED_OPTIONS=	# generally, none
 .if ${MACHINE_ARCH} == "i386"
-PKG_SUPPORTED_OPTIONS=	mmx
+PKG_SUPPORTED_OPTIONS+=	mmx
 .endif
 
 .if ${OPSYS} == "Darwin"
