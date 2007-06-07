@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2006/06/26 05:21:17 jlam Exp $
+# $NetBSD: Makefile,v 1.59 2006/10/10 12:55:39 ben Exp $
 
 DISTNAME=	courier-imap-4.1.1
 PKGREVISION=	3
@@ -18,6 +18,12 @@ USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 
 PKG_SUPPORTED_OPTIONS+=	fam
+
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Mfam)
+.  include "../../mk/fam.buildlink3.mk"
+.endif
 
 # PKGNAME is a parameter to the following file
 PKGNAME=		${DISTNAME}
