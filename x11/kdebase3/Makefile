@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2007/04/14 21:40:18 markd Exp $
+# $NetBSD: Makefile,v 1.126 2007/05/23 13:05:33 markd Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -132,7 +132,12 @@ SUBST_SED.paths+=	-e 's,@LOCALBASE@,${LOCALBASE},g'
 SUBST_STAGE.paths=	post-patch
 
 pre-configure:
-	${LN} -s FreeBSD ${WRKSRC}/ksysguard/ksysguardd/DragonFly
+	cd ${WRKSRC}/ksysguard/ksysguardd && rm -f DragonFly && ln -s FreeBSD DragonFly
+
+post-configure:
+	# Make sure that fontinst has been selected.
+	# Otherwise the package gets incomplete.
+	grep "s,@include_fontinst_tn_TRUE@,," ${WRKSRC}/config.status
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/kde/templates/.source/emptydir
