@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/10/09 01:34:10 ben Exp $
+# $NetBSD: Makefile,v 1.5 2007/02/15 21:51:51 rillig Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
 PKGNAME=	${DISTNAME:S/-/tcpd-/}
@@ -16,6 +16,7 @@ CONFLICTS=	courier-imap<4.11
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 
+PKG_SUPPORTED_OPTIONS=	# none
 .include "../../mail/courier-mta/Makefile.common"
 
 # This package doesn't need to depend on courier-authlib -- just fake
