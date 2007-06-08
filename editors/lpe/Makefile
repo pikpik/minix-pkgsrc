@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2006/04/13 18:23:32 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/07/07 15:49:32 jlam Exp $
 #
 
 DISTNAME=	lpe-1.2.6
 PKGREVISION=	3
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.sasknow.com/pub/ \
-		ftp://ftp.twu.net/users/cdsmith/lpe/
+MASTER_SITES=	ftp://ftp.twu.net/users/cdsmith/lpe/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cdsmith.twu.net/professional/opensource/lpe.html
