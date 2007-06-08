@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2005/08/06 06:19:33 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/11/07 14:53:10 obache Exp $
 
-DISTNAME=	Text-Glob-0.07
+DISTNAME=	Text-Glob-0.08
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tgl
 
