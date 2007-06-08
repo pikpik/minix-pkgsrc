@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.401 2007/05/25 19:31:26 agc Exp $
+# $NetBSD: Makefile,v 1.402 2007/06/08 11:41:16 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -73,6 +73,7 @@ SUBDIR+=	dog
 SUBDIR+=	dptutil
 SUBDIR+=	duplicity
 SUBDIR+=	dvd+rw-tools
+SUBDIR+=	dvdisaster
 SUBDIR+=	dvdrecord
 SUBDIR+=	e2fsprogs
 SUBDIR+=	easydiskpasswd
