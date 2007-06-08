@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.53 2007/02/06 18:54:14 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2007/02/22 19:26:44 wiz Exp $
 
 .include "Makefile.common"
 
 #PKGNAME=	sylpheed-claws-${SYLPHEED_VERSION}
+PKGREVISION=	1
 
 MAINTAINER=	reed@NetBSD.org
 COMMENT=	X based e-mail and netnews client
