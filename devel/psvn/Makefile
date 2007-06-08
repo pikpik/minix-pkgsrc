@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/05/29 15:40:18 taca Exp $
+# $NetBSD: Makefile,v 1.2 2007/05/29 16:41:44 wiz Exp $
 #
 
 DISTNAME=	psvn.el
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.xsteve.at/prg/emacs/
 DIST_SUBDIR=	psvn-${VER}
 EXTRACT_SUFX=	# empty
 
-MAINTAINER=	pkgsrc-useres@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xsteve.at/prg/emacs/
 COMMENT=	Subversion interface for Emacs
 
