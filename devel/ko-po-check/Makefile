@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/04/12 00:44:37 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2006/07/27 18:22:55 minskim Exp $
 
-DISTNAME=	ko-po-check-0.7
+DISTNAME=	ko-po-check-0.8
 CATEGORIES=	devel korean textproc
-MASTER_SITES=	http://kldp.net/frs/download.php/3463/
+MASTER_SITES=	http://kldp.net/frs/download.php/3863/
 
 MAINTAINER=	junyoung@mogua.com
 HOMEPAGE=	http://ko-po-check.kldp.net/
