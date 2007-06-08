@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2006/09/09 02:41:56 obache Exp $
+# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:50 rillig Exp $
 
 DISTNAME=	asm.8051
 PKGNAME=	as31-19900126
 PKGREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.uu.net/usenet/comp.sources.misc/volume10/ \
-		ftp://sunsite.org.uk/usenet/comp.sources.misc/volume10/
+MASTER_SITES=	ftp://ftp.uu.net/usenet/comp.sources.misc/volume10/
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	bjh21@NetBSD.org

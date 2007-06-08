@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2007/01/24 17:28:22 reed Exp $
+# $NetBSD: Makefile,v 1.36 2007/05/15 19:39:12 heinz Exp $
 
 DISTNAME=	zlib-1.2.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
-		http://www.libpng.org/pub/png/src/ \
-		ftp://swrinde.nde.swri.edu/pub/png/src/ \
 		http://www.gzip.org/zlib/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

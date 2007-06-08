@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2007/01/06 23:45:42 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2007/05/03 12:27:54 wiz Exp $
 
 DISTNAME=	pcre-7.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/	\
-		ftp://pcre.sourceforge.net/pub/pcre/
+MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@NetBSD.org
