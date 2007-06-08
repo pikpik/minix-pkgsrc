@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/ipbt
+bin/ttydump
+bin/ttygrep
+man/man1/ipbt.1
