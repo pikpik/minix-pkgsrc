@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/08/11 15:03:08 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/18 09:59:59 tonio Exp $
 #
 
 DISTNAME=		pcre-ocaml-5.11.2
@@ -11,7 +11,16 @@ HOMEPAGE=		http://www.ocaml.info/ocaml_sources/
 COMMENT=		Perl compatible regular expressions for OCaml
 
 DEPENDS+=		ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
+
+.include "../../mk/bsd.prefs.mk"
+
 USE_TOOLS+=		gmake
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
+    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
+PLIST_SRC=		PLIST PLIST.opt
+.else
+BUILD_TARGET=		byte
+.endif
 
 EGDIR=			${PREFIX}/share/examples/pcre-ocaml
 INSTALLATION_DIRS=	${EGDIR}
