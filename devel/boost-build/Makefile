@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2006/01/20 20:40:19 jmmv Exp $
+# $NetBSD: Makefile,v 1.4 2007/06/02 17:50:28 jmmv Exp $
 #
 
 BOOST_PACKAGE=		build
 BOOST_COMMENT=		(Boost.Build framework)
 BOOST_CONFIG=		no
 
-PKGREVISION=		1
+PKGREVISION=		2
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
