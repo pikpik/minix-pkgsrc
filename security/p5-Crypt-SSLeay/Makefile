@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/11/05 17:35:58 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/06/08 07:57:10 wiz Exp $
 #
 
 DISTNAME=	Crypt-SSLeay-0.55
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Crypt/SSLeay/.packlist
 
+MAKE_ENV+=		PERL_MM_USE_DEFAULT=1
 MAKE_PARAMS+=		--lib=${SSLBASE}
 
 .include "../../lang/perl5/module.mk"
