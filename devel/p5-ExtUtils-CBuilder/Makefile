@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/15 14:56:51 seb Exp $
 
-DISTNAME=	ExtUtils-CBuilder-0.18
+DISTNAME=	ExtUtils-CBuilder-0.19
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5ecb
 CATEGORIES=	devel perl5
