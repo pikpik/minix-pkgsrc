@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2006/08/02 20:03:13 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/08/14 22:36:12 wiz Exp $
 
-DISTNAME=		imapfilter-1.2.2
-PKGREVISION=		1
+DISTNAME=		imapfilter-1.3
 CATEGORIES=		mail
 MASTER_SITES=		http://imapfilter.hellug.gr/source/
 EXTRACT_SUFX=		.tar.bz2
@@ -21,5 +20,6 @@ post-install:
 .endfor
 
 .include "../../lang/lua/buildlink3.mk"
+.include "../../devel/pcre/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
