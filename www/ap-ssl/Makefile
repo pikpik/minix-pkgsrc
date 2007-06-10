@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2006/07/23 17:25:56 wiz Exp $
+# $NetBSD: Makefile,v 1.103 2006/07/30 11:19:38 jdolecek Exp $
 
 DISTNAME=		mod_ssl-2.8.28-1.3.37
 PKGNAME=		ap13-ssl-2.8.28
@@ -14,7 +14,6 @@ COMMENT=		SSL/TLS protocols module for Apache
 CONFLICTS=		apache-1.3.[0-9] apache-*modssl-[0-9]* apache6-[0-9]*
 CONFLICTS+=		ap-ssl-[0-9]*
 
-BUILDLINK_API_DEPENDS.apache+=	apache>=1.3.37
 
 APACHE_MODULE=		yes
 
@@ -22,6 +21,9 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ssl=${SSLBASE:Q}
 
 .include "../../mk/bsd.prefs.mk"
+
+.include "../../www/apache/buildlink3.mk"
+BUILDLINK_API_DEPENDS.apache+=	apache>=1.3.37
 
 SSL_RPATH_LDFLAGS=	${LINKER_RPATH_FLAG} ${SSLBASE}/lib
 FIX_RPATH+=		SSL_RPATH_LDFLAGS
@@ -48,7 +50,6 @@ CONF_FILES+=		${EGDIR}/${FILE} ${PKG_SYSCONFDIR}/${FILE}
 .endfor
 
 .include "../../security/openssl/buildlink3.mk"
-.include "../../www/apache/buildlink3.mk"
 
 SUBST_CLASSES+=		paths perl
 SUBST_FILES.paths=	README.mkcert pkg.sslsup/mkcert.sh
