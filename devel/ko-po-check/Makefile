@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2006/07/27 18:22:55 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2007/06/08 02:55:48 minskim Exp $
 
 DISTNAME=	ko-po-check-0.8
+PKGREVISION=	1
 CATEGORIES=	devel korean textproc
 MASTER_SITES=	http://kldp.net/frs/download.php/3863/
 
