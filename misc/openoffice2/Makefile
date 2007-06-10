@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2007/05/12 14:05:54 ghen Exp $
+# $NetBSD: Makefile,v 1.18 2007/06/05 05:42:58 wiz Exp $
 #
 
 OO_VER=			2.2.0
-PKGREVISION=		3
+PKGREVISION=		4
 DISTNAME=		openoffice-${OO_VER}
 PKGNAME=		openoffice2-${OO_VER}
 CATEGORIES=		misc
@@ -89,7 +89,7 @@ post-extract:
 		${WRKSRC}/bridges/inc/bridges/cpp_uno/
 
 do-build:
-	${_ULIMIT_CMD} ${SETENV} ${MAKE_ENV} bash -c "export PTHREAD_DIAGASSERT=Ael && cd ${WRKSRC} && ./bootstrap && source ${OPENOFFICE_SETFILE}Env.Set.sh && dmake build_all"
+	${_ULIMIT_CMD} ${SETENV} ${MAKE_ENV} bash -c "cd ${WRKSRC} && ./bootstrap && source ${OPENOFFICE_SETFILE}Env.Set.sh && dmake build_all"
 
 post-build:
 	cd ${WRKDIR} &&						\
