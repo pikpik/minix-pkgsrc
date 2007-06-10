@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/04/19 18:23:56 drochner Exp $
+# $NetBSD: Makefile,v 1.47 2007/06/05 05:37:09 wiz Exp $
 
 DISTNAME=		gnome-media-2.18.0
 PKGREVISION=		1
@@ -36,7 +36,7 @@ BUILDLINK_API_DEPENDS.esound+=			esound>=0.2.23
 BUILDLINK_API_DEPENDS.gst-plugins0.10-base+=	gst-plugins0.10-base>=0.10.3
 BUILDLINK_API_DEPENDS.gstreamer0.10+=		gstreamer0.10>=0.10.3
 BUILDLINK_API_DEPENDS.gtk2+=			gtk2+>=2.10.0
-BUILDLINK_API_DEPENDS.libgnome+=		libgnomeui>=2.13.7
+BUILDLINK_API_DEPENDS.libgnome+=		libgnome>=2.13.7
 BUILDLINK_API_DEPENDS.libgnomeui+=		libgnomeui>=2.13.2
 
 .include "../../audio/esound/buildlink3.mk"
