@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:13 jlam Exp $
+# $NetBSD$
 #
 
-DISTNAME=	Perl-Tidy-20070424
+DISTNAME=	Perl-Tidy-20070508
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5pt
 CATEGORIES=	devel perl5
