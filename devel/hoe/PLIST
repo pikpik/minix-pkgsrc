@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/sow
+${RUBY_DOCDIR}/hoe/README.txt
+${RUBY_SITELIBDIR}/hoe.rb
+${RUBY_SITELIBDIR}/test_hoe.rb
+@dirrm ${RUBY_DOCDIR}/hoe
