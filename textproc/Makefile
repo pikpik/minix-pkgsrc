@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.367 2007/05/29 10:16:52 joerg Exp $
+# $NetBSD: Makefile,v 1.368 2007/06/01 19:33:01 kristerw Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -318,6 +318,7 @@ SUBDIR+=	ruby-pure-hyperestraier
 SUBDIR+=	ruby-rdtool
 SUBDIR+=	ruby-redcloth
 SUBDIR+=	ruby-rttool
+SUBDIR+=	ruby-simple-rss
 SUBDIR+=	ruby-syntax
 SUBDIR+=	ruby-xmlparser
 SUBDIR+=	ruby-xmlscan
