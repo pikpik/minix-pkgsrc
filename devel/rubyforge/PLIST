@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/rubyforge
+${RUBY_SITELIBDIR}/http-access2/cookie.rb
+${RUBY_SITELIBDIR}/http-access2/http.rb
+${RUBY_SITELIBDIR}/rubyforge.rb
+${RUBY_DOCDIR}/rubyforge/README.txt
+@dirrm ${RUBY_DOCDIR}/rubyforge
+@dirrm ${RUBY_SITELIBDIR}/http-access2
