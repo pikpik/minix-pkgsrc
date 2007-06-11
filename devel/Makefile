@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.865 2007/06/10 13:53:03 abs Exp $
+# $NetBSD: Makefile,v 1.866 2007/06/11 03:08:18 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -209,6 +209,7 @@ SUBDIR+=	guile-www
 SUBDIR+=	haskell-mode
 SUBDIR+=	hdf
 SUBDIR+=	hdf5
+SUBDIR+=	hoe
 SUBDIR+=	hptools
 SUBDIR+=	ht
 SUBDIR+=	hugs-HUnit
