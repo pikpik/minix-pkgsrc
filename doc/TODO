@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6422 2007/06/11 14:30:24 markd Exp $
+$NetBSD: TODO,v 1.6423 2007/06/11 21:08:37 xtraeme Exp $
 
 Suggested new packages
 ======================
@@ -729,7 +729,6 @@ Suggested package updates
 	o magicpoint-1.12a
 	o mailfront-1.10 [pkg/34765]
 	o mailscanner-4.54.6
-	o mairix-0.19
 	o maketool-0.8.4
 	o makeztxt-1.60
 	o manedit-0.8.1
