@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 2006/03/20 18:15:38 jlam Exp $
+# $NetBSD: Makefile,v 1.89 2006/09/27 15:46:11 abs Exp $
 
 DISTNAME=		gcc-2.95.3
 PKGREVISION=		7
@@ -15,7 +15,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/gcc/gcc.html
 COMMENT=		GNU Compiler Collection, version 2
 
-NOT_FOR_PLATFORM=	Darwin-*-* Interix-*-* *-*-x86_64
+NOT_FOR_PLATFORM=	Darwin-*-* Interix-*-* *-*-x86_64 DragonFly-*-*
 
 USE_TOOLS+=		gmake
 MAKEFLAGS+=		GMAKE_LOCALE=no
