@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2007/01/13 17:48:34 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2007/06/12 18:02:01 wiz Exp $
 
 DISTNAME=		obconf-2.0.1
 CATEGORIES=		wm
 MASTER_SITES=		http://icculus.org/openbox/obconf/
+# PR pkg/36489
+MASTER_SITES+=		http://offload1.icculus.org/openbox/obconf/
 
 MAINTAINER=		snj@NetBSD.org
 HOMEPAGE=		http://icculus.org/openbox/obconf/
