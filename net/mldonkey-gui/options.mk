@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.4 2005/11/01 21:48:22 wiz Exp $
+# $NetBSD: options.mk,v 1.5 2006/04/06 06:22:33 reed Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mldonkey-gui
 PKG_OPTIONS_REQUIRED_GROUPS+=	toolkit
 PKG_OPTIONS_GROUP.toolkit=	lablgtk lablgtk2
-PKG_SUGGESTED_OPTIONS=	lablgtk
+PKG_SUGGESTED_OPTIONS=	lablgtk2
 
 .include "../../mk/bsd.options.mk"
 
