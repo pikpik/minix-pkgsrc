@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2007/01/10 12:50:04 tron Exp $
+# $NetBSD: Makefile,v 1.58 2007/03/20 14:17:16 tron Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}-all-languages
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
@@ -35,10 +35,11 @@ BUILD_DEFS+=	APACHE_USER APACHE_GROUP
 EXDIR=		${PREFIX}/share/examples/phpmyadmin
 PMCONFFILE=	${PKG_SYSCONFDIR}/config.inc.php
 PMDIR=		${PREFIX}/share/phpmyadmin
-CONF_FILES=	${EXDIR}/config.inc.php ${PKG_SYSCONFDIR}/config.inc.php
 REPLACE_PERL+=	scripts/convertcfg.pl
-SPECIAL_PERMS=	${PKG_SYSCONFDIR}/config.inc.php ${APACHE_USER} \
-		${APACHE_GROUP} 0600
+
+CONF_FILES_PERMS=	${EXDIR}/config.inc.php \
+			${PKG_SYSCONFDIR}/config.inc.php \
+			${APACHE_USER} ${APACHE_GROUP} 0600
 
 PKG_SYSCONFSUBDIR?=	phpmyadmin
 
