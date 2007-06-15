@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/04/12 08:24:38 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/04/19 16:11:35 xtraeme Exp $
 #
 
 PKGNAME=	libflashsupport-1.0.2098
 DISTNAME=	libflashsupport-1-0-2098-i586
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.thinlincusergroup.se/forum/teknik/666951651/510222697/
 EXTRACT_SUFX=	.rpm
@@ -28,6 +29,8 @@ DEPENDS+=		suse_openssl>=9.1:../../emulators/${SUSE_DIR_PREFIX}_openssl
 ONLY_FOR_PLATFORM=	*-*-i386
 
 INSTALLATION_DIRS=	share/doc
+
+PLIST_SUBST=	EMULSUBDIR=${EMULSUBDIR}
 
 do-extract:
 	${RPM2PKG} ${RPM2PKGARGS}
