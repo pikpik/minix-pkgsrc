@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/12/27 13:37:39 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/03/14 15:49:15 rillig Exp $
 
 DISTNAME=	wmnet-1.06
 PKGREVISION=	5
@@ -21,7 +21,7 @@ MAKE_FLAGS+=	MANPATH=${PREFIX}/${PKGMANDIR}
 
 .if !empty(UNPRIVILEGED:M[Yy][Ee][Ss])
 MAKE_FLAGS+=	INSTPGMFLAGS=""
-SPECIAL_PERMS+=	bin/wmnet ${ROOT_USER} kmem 2555
+SPECIAL_PERMS+=	bin/wmnet ${BINOWN} kmem 2555
 .endif
 
 .include "../../x11/libXext/buildlink3.mk"
