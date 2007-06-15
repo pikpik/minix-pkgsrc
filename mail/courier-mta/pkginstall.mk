@@ -1,4 +1,4 @@
-# $NetBSD: pkginstall.mk,v 1.1.1.1 2006/04/28 18:10:21 jlam Exp $
+# $NetBSD: pkginstall.mk,v 1.2 2006/06/17 19:26:48 jlam Exp $
 
 # Convenience definition used below for a file or directory owned by the
 # courier user and group.
@@ -7,7 +7,8 @@ COURIER_OWNED=		${COURIER_USER} ${COURIER_GROUP}
 
 REQD_DIRS+=		${DATADIR} ${DOCDIR} ${EGDIR}			\
 			${LIBEXECDIR} ${LIBEXECDIR}/modules
-REQD_DIRS_PERMS+=	${LIBEXECDIR}/cgi-bin ${ROOT_USER} ${ROOT_GROUP} 0700
+REQD_DIRS_PERMS+=	${LIBEXECDIR}/cgi-bin				\
+				${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
 MAKE_DIRS+=		${VARBASE}/run ${COURIER_STATEDIR}
 
 ###
