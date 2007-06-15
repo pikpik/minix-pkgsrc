@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/GrampsDb/_GrampsDbBase.py.orig	2007-01-31 21:12:34.000000000 +0100
+--- src/GrampsDb/_GrampsDbBase.py.orig	2007-04-07 06:12:19.000000000 +0200
 +++ src/GrampsDb/_GrampsDbBase.py
 @@ -39,7 +39,7 @@ import random
  import locale
@@ -10,4 +10,4 @@ $NetBSD$
 +from bsddb3 import db
  from gettext import gettext as _
  
- try:
+ import logging
