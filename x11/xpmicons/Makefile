@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2007/02/02 00:18:36 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/02/15 14:54:39 rillig Exp $
 
 DISTNAME=	xpmicons-1.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	http://www.plig.org/xwinman/ \
 		ftp://ftp.cit.gu.edu.au/pub/AIcons/ \
@@ -23,12 +23,6 @@ USE_X11BASE=	yes
 NO_BUILD=	yes
 
 INSTALLATION_DIRS=	include/X11/bitmaps include/X11/pixmaps
-
-.include "../../mk/bsd.prefs.mk"
-
-.if ${X11_TYPE} != "xorg" && ${X11_TYPE} != "modular"
-PLIST_SRC=	PLIST PLIST.icons
-.endif
 
 post-extract:
 	find ${WRKSRC} -type d -name .xvpics -print | ${XARGS} rm -rf
