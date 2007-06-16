@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.149 2007/01/17 23:47:19 wiz Exp $
+# $NetBSD: Makefile,v 1.150 2007/02/06 14:52:46 adam Exp $
 
 .include "Makefile.common"
 
 PKGNAME=	ImageMagick-${DISTVERSION}
 
 MAINTAINER=	adam@NetBSD.org
-HOMEPAGE=	http://www.simplesystems.org/ImageMagick/
+HOMEPAGE=	http://www.imagemagick.org/
 COMMENT=	Package for display and interactive manipulation of images
 
 CONFLICTS=	geomview<1.8.1nb2  # used to have a program named 'animate'
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		c c++ c99
