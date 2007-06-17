@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2006/11/09 09:15:45 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2007/03/24 19:21:29 joerg Exp $
 #
 
 DISTNAME=	dtcpclient-20060526
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.imasy.or.jp/~ume/ipv6/ \
 		http://home.jp.FreeBSD.org/~ume/ipv6/
@@ -17,11 +18,15 @@ RCD_SCRIPTS=	dtcpclient
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	Fixing hardcoded paths.
-SUBST_STAGE.paths=	post-patch
-SUBST_FILES.paths=	dtcpclient.8
-SUBST_SED.paths=	's|/usr/local|${PREFIX}|g'
+SUBST_STAGE.paths=	post-configure
+SUBST_FILES.paths=	dtcpclient.8 dtcpclient.script dtcpclient.c
+SUBST_SED.paths=	-e 's|/usr/local/etc|${PKG_SYSCONFDIR}|g'
+SUBST_SED.paths+=	-e 's|/usr/local|${PREFIX}|g'
+SUBST_SED.paths+=	-e 's|/var|${VARBASE}|g'
 
-MAKE_ENV+=	${BSD_MAKE_ENV}
+MAKE_ENV+=	${BSD_MAKE_ENV} VARBASE=${VARBASE}
+
+BUILD_DEFS+=	VARBASE
 
 INSTALLATION_DIRS=	${PKGMANDIR}/cat8 ${PKGMANDIR}/man8 sbin
 
