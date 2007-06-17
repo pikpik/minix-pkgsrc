@@ -1,13 +1,13 @@
-$NetBSD: patch-ad,v 1.3 2003/11/27 17:27:29 abs Exp $
+$NetBSD$
 
---- Xvnc/config/cf/vnclibs.def.orig	2002-06-28 06:53:19.000000000 +0100
+--- Xvnc/config/cf/vnclibs.def.orig	2003-05-03 11:31:55.000000000 +0200
 +++ Xvnc/config/cf/vnclibs.def
 @@ -11,7 +11,7 @@ VNCLIBS = $(TOP)/../libvncauth/libvncaut
  /* Avoid linking with different libjpeg in /usr/shlib under Tru64. */
- VNCSYSLIBS = /usr/local/lib/libjpeg.a /usr/local/lib/libz.a
+ VNCSYSLIBS = /usr/local/lib/libjpeg.a /usr/local/lib/libz.a -lcrypt
  #else
--VNCSYSLIBS = -L/usr/local/lib -ljpeg -lz
-+VNCSYSLIBS = ${LDFLAGS} -ljpeg -lz
+-VNCSYSLIBS = -L/usr/local/lib -ljpeg -lz -lcrypt
++VNCSYSLIBS = ${LDFLAGS} -ljpeg -lz -lcrypt
  #endif
  
 -VNCCPPFLAGS = -I$(TOP)/../include -I/usr/local/include
