@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2007/03/24 19:21:30 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2007/03/25 22:06:02 tron Exp $
 
-DISTNAME=		tightvnc-1.2.9
+DISTNAME=		tightvnc-1.3.9
 PKGNAME=		${DISTNAME:S/tightvnc/tightvncviewer/}
-PKGREVISION=	2
 CATEGORIES=		net x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vnc-tight/}
 DISTFILES=		${DISTNAME}_unixsrc.tar.bz2
@@ -34,5 +33,4 @@ post-install:
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
