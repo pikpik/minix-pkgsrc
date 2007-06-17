@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2007/01/03 08:15:53 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/22 20:33:33 joerg Exp $
 #
 
 DISTNAME=		xorg-cf-files-1.0.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/util/
 EXTRACT_SUFX=		.tar.bz2
@@ -31,6 +31,7 @@ pre-configure:
 		${WRKSRC}/${sys}.cf.before > ${WRKSRC}/${sys}.cf
 .endfor
 	${SED} -e "s|@PREFIX@|${PREFIX}|g"		\
+		-e "s|@PKGMANDIR@|${PKGMANDIR}|"	\
 		-e "s|@MAKE@|${MAKE_PROGRAM}|"	${FILESDIR}/host.def > \
 		${WRKSRC}/host.def
 
