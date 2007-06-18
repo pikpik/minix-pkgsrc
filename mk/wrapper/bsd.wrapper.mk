@@ -1,4 +1,4 @@
-# $NetBSD: bsd.wrapper.mk,v 1.68 2007/04/21 14:53:19 tnn Exp $
+# $NetBSD: bsd.wrapper.mk,v 1.69 2007/06/06 13:20:34 rillig Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -590,7 +590,7 @@ ${_WRAP_BUILDCMD.${_wrappee_}}: ${WRAPPER_SRCDIR}/buildcmd
 
 .  if !target(${_WRAP_CACHE.${_wrappee_}})
 ${_WRAP_CACHE.${_wrappee_}}:
-	${RUN} mkdir ${.TARGET:H}
+	${RUN} ${MKDIR} ${.TARGET:H}
 	${RUN} echo "cachehit=no" > ${.TARGET}
 .  endif
 
