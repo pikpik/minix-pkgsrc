@@ -1,9 +1,21 @@
-#	$NetBSD: Makefile,v 1.1 2007/03/15 20:02:20 christos Exp $
-#	@(#)Makefile	8.1 (Berkeley) 5/31/93
+# $NetBSD$
 
 PROG=	rmail
 MAN=	rmail.8
 BINDIR=	@PREFIX@/bin
-MANDIR= @PREFIX@/man
+MANDIR=	@PREFIX@/@PKGMANDIR@
 
-.include <bsd.prog.mk>
+SRCS=	rmail.c
+OBJS=	rmail.o
+
+all: ${PROG}
+
+install: all
+	@INSTALL_PROGRAM@ ${PROG} ${BINDIR}/${PROG}
+	@INSTALL_MAN@ ${MAN} ${MANDIR}/man8
+
+.c.o:
+	${CC} ${CPPFLAGS} ${CFLAGS} -c $<
+
+${PROG}: ${OBJS}
+	${CC} ${LDFLAGS} -o $@ ${OBJS}
