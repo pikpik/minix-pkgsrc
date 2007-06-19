@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/02/27 15:05:41 dsainty Exp $
+# $NetBSD: Makefile,v 1.3 2007/03/21 00:16:42 joerg Exp $
 #
 
 DISTNAME=	xhost-1.0.1
@@ -14,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
+
+CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXau/buildlink3.mk"

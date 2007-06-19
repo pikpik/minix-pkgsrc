@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/26 17:55:48 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2007/03/17 18:40:59 joerg Exp $
 #
 
 DISTNAME=	xrandr-1.2.0
@@ -14,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
+
+CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 BUILDLINK_API_DEPENDS.libXrandr+=	libXrandr>=1.2
 

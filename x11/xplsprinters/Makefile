@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/22 14:53:20 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/04/12 15:06:23 joerg Exp $
 #
 
 DISTNAME=		xplsprinters-1.0.1
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
+
+CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"

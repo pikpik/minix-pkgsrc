@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/25 23:29:12 reed Exp $
 #
 
 DISTNAME=	xwd-1.0.1
@@ -12,6 +12,8 @@ COMMENT=	Dump X11 display or window to XWD X Window Dump image file
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
+
+CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
