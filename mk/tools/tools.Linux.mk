@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.39 2007/03/15 23:11:12 reed Exp $
+# $NetBSD: tools.Linux.mk,v 1.40 2007/03/17 00:14:50 reed Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -116,6 +116,9 @@ TOOLS_PLATFORM.hostname?=	/bin/hostname
 TOOLS_PLATFORM.id?=		/bin/id
 .elif exists(/usr/bin/id)
 TOOLS_PLATFORM.id?=		/usr/bin/id
+.endif
+.if exists(/usr/bin/ident)
+TOOLS_PLATFORM.ident?=		/usr/bin/ident
 .endif
 .if exists(/bin/install)
 TOOLS_PLATFORM.install?=	/bin/install
