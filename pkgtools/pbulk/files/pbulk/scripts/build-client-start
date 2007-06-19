@@ -1,0 +1,10 @@
+#!@SH@
+# $NetBSD$
+
+. @PBULK_CONFIG@
+
+set -e
+
+for client in ${build_clients}; do
+	ssh $client "${pbuild} -c ${master_port_build} -b ${pbuild_script}" &
+done
