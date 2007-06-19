@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/05 22:07:59 markd Exp $
 
 DISTNAME=		Rsibreak-0.8.0
 PKGNAME=		rsibreak-0.8.0
@@ -20,5 +20,6 @@ GNU_CONFIGURE=		yes
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/libXScrnSaver/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
