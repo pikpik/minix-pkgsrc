@@ -1,0 +1,12 @@
+#!@SH@
+# $NetBSD$
+
+. @PBULK_CONFIG@
+
+set -e
+
+${script_phase_pre_build}
+${script_phase_scan}
+${script_phase_build}
+${script_phase_report}
+${script_phase_upload}
