@@ -1,4 +1,4 @@
-# $NetBSD: tools.NetBSD.mk,v 1.33 2006/07/05 04:32:10 jlam Exp $
+# $NetBSD: tools.NetBSD.mk,v 1.34 2007/06/19 14:21:19 joerg Exp $
 #
 # System-supplied tools for the NetBSD operating system.
 
@@ -9,6 +9,7 @@ TOOLS_PLATFORM.byacc?=		/usr/bin/yacc
 .if exists(/usr/bin/bzcat)
 TOOLS_PLATFORM.bzcat?=		/usr/bin/bzcat
 .endif
+TOOLS_PLATFORM.bzip2?=		/usr/bin/bzip2
 TOOLS_PLATFORM.cat?=		/bin/cat
 TOOLS_PLATFORM.chgrp?=		/usr/bin/chgrp
 TOOLS_PLATFORM.chmod?=		/bin/chmod

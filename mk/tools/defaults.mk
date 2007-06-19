@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.48 2006/07/13 15:27:57 jlam Exp $
+# $NetBSD: defaults.mk,v 1.49 2006/10/15 01:56:06 minskim Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -58,6 +58,7 @@ _TOOLS_VARNAME.bash=		BASH
 _TOOLS_VARNAME.bison-yacc=	YACC
 _TOOLS_VARNAME.byacc=		YACC
 _TOOLS_VARNAME.bzcat=		BZCAT
+_TOOLS_VARNAME.bzip2=		BZIP2
 _TOOLS_VARNAME.cat=		CAT
 _TOOLS_VARNAME.chgrp=		CHGRP
 _TOOLS_VARNAME.chmod=		CHMOD
