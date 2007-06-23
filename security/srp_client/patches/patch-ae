@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- base/lib/shadow_.h.orig	1998-12-09 17:43:21.000000000 -0800
++++ base/lib/shadow_.h
+@@ -70,7 +70,6 @@ struct	spwd {
+ #if defined(__STDC__)
+ struct	spwd	*getspent (void);
+ struct	spwd	*getspnam (const char *);
+-struct	spwd	*sgetspent (const char *);
+ struct	spwd	*fgetspent (FILE *);
+ void	setspent (void);
+ void	endspent (void);
