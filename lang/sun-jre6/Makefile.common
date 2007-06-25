@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1 2007/02/18 19:11:28 tv Exp $
+# $NetBSD: Makefile.common,v 1.2 2007/04/26 20:35:33 tv Exp $
 
 CATEGORIES=	lang java
 COMMENT=	Sun's Java(tm) 2 Standard Edition, ${DOWNLOAD_NAME}
@@ -15,6 +15,8 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_SRC_ON_FTP=	${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_FTP=	${RESTRICTED}
+
+NOT_FOR_PLATFORM=	DragonFly-*-*
 
 INTERACTIVE_STAGE=	fetch
 
