@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2006/12/04 14:17:05 mjl Exp $
+# $NetBSD: Makefile,v 1.24 2007/06/08 11:47:21 wiz Exp $
 
 DISTNAME=	micq-0.5.4
 CATEGORIES=	chat
-MASTER_SITES=	http://www.micq.org/source/ \
-		ftp://www.micq.org/pub/micq/source/
+MASTER_SITES=	http://www.micq.org/source/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	shell@NetBSD.org
