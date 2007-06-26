@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2007/03/10 19:09:33 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/06/22 21:46:14 dmcmahill Exp $
 #
 
 DISTNAME=		cogito-0.18.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		http://www.kernel.org/pub/software/scm/cogito/
 EXTRACT_SUFX=		.tar.bz2
@@ -23,6 +23,7 @@ MAKE_FLAGS+=		prefix=${PREFIX:Q}
 .if ${OPSYS} == "SunOS"
 
 DEPENDS+=	findutils>=4.1:../../sysutils/findutils
+DEPENDS+=	mktemp>=1.5:../../sysutils/mktemp
 
 TOOLS_PLATFORM.xargs=	${LOCALBASE}/bin/${GNU_PROGRAM_PREFIX}xargs
 
