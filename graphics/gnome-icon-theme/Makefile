@@ -2,7 +2,6 @@
 #
 
 DISTNAME=		gnome-icon-theme-2.18.0
-PKGREVISION=		1
 CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme/2.18/}
 EXTRACT_SUFX=		.tar.bz2
