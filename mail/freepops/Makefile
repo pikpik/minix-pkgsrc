@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/06/12 22:38:52 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/06/28 16:36:44 schmonz Exp $
 #
 
 DISTNAME=		freepops-0.2.5
@@ -7,7 +7,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=freepops/}
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.freepops.org/
-COMMENT=		Extensible POP3 interface to webmail
+COMMENT=		POP3 gateway to AOL, Gmail, Hotmail, Juno, Yahoo, etc.
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		bash:run bison gmake gsed patch tar
