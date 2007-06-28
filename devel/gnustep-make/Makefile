@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/09/16 21:47:43 rillig Exp $
+# $NetBSD: Makefile,v 1.36 2007/01/15 18:37:27 joerg Exp $
 
 DISTNAME=	gnustep-make-1.13.0
 PKGREVISION=	1
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--with-config-file=${PREFIX}/etc/GNUstep.conf
 MAKE_FILE=		GNUmakefile
 
 CONF_FILES+=		${PREFIX}/share/examples/GNUstep/GNUstep.conf \
-			${PREFIX}/etc/GNUstep.conf
+			${PKG_SYSCONFDIR}/GNUstep.conf
 
 REPLACE_INTERPRETER+=	csh
 REPLACE.csh.old=	/bin/csh
