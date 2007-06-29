@@ -1,5 +1,5 @@
-#!@AWK@ -f -
-# $NetBSD$
+#!@AWK@ -f
+# $NetBSD: create-report-txt.awk,v 1.1.1.1 2007/06/19 19:49:59 joerg Exp $
 #
 # Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
 # All rights reserved.
