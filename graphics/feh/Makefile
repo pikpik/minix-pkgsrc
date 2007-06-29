@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/02/15 14:58:20 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2007/02/22 19:01:19 wiz Exp $
 #
 
 DISTNAME=	feh-1.3.4
@@ -16,6 +16,8 @@ GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+=	--program-transform-name=s,cam,feh_cam,
 REPLACE_PERL=		cam/cam
+
+LDFLAGS.SunOS+=		-lnsl -lsocket
 
 BUILDLINK_API_DEPENDS.giblib+=	giblib>=1.2.4
 BUILDLINK_API_DEPENDS.jpeg+=	jpeg>=6bnb3 # includes jpegint.h
