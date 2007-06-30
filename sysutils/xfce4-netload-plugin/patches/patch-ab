@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- panel-plugin/net.h.orig	2007-06-30 17:58:11.000000000 +0000
++++ panel-plugin/net.h
+@@ -62,7 +62,7 @@ typedef struct
+ #ifdef __HPUX__
+     int             wait_pcks_counter;
+     nmapi_logstat*  if_ptr;
+-#elif __FreeBSD__
++#elif defined(__FreeBSD__) || defined(__DragonFly__)
+     int             watchif;
+     int             dev_opened;
+ #elif __NetBSD__
