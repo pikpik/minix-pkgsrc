@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/10/22 06:31:43 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2007/01/18 11:55:45 rillig Exp $
 
 DISTNAME=		bcc
 PKGNAME=		bcc-95.3.12
@@ -13,6 +13,12 @@ NOT_FOR_PLATFORM+=	Interix-*-*		# no <a.out.h>
 USE_BSD_MAKEFILE=	yes
 
 INSTALLATION_DIRS=	bin lib/bcc ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "DragonFly"
+CPPFLAGS+=	-D_POSIX_SOURCE
+.endif
 
 post-extract:
 	set -e; \
