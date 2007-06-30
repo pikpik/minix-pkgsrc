@@ -1,4 +1,4 @@
-/*	$NetBSD: uucpd.c,v 1.24 2006/05/09 20:18:08 mrg Exp $	*/
+/*	$NetBSD: uucpd.c,v 1.1 2007/03/15 20:02:20 christos Exp $	*/
 
 /*
  * Copyright (c) 1985 The Regents of the University of California.
@@ -39,7 +39,7 @@ __COPYRIGHT("@(#) Copyright (c) 1985 The Regents of the University of California
 #if 0
 static char sccsid[] = "from: @(#)uucpd.c	5.10 (Berkeley) 2/26/91";
 #else
-__RCSID("$NetBSD: uucpd.c,v 1.24 2006/05/09 20:18:08 mrg Exp $");
+__RCSID("$NetBSD: uucpd.c,v 1.1 2007/03/15 20:02:20 christos Exp $");
 #endif
 #endif /* not lint */
 
@@ -70,7 +70,11 @@ __RCSID("$NetBSD: uucpd.c,v 1.24 2006/05/09 20:18:08 mrg Exp $");
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
+#if defined(__DragonFly__)
+#include <libutil.h>
+#else
 #include <util.h>
+#endif
 #include <time.h>
 #ifdef SUPPORT_UTMP
 #include <utmp.h>
