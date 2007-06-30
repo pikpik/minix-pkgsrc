@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.29 2007/01/24 19:46:45 epg Exp $
+# $NetBSD: buildlink3.mk,v 1.30 2007/05/29 22:39:17 schmonz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APR_BUILDLINK3_MK:=	${APR_BUILDLINK3_MK}+
@@ -18,6 +18,11 @@ BUILDLINK_INCDIRS.apr?=		include/apr-1
 
 BUILDLINK_FILES.apr+=	bin/apr-1-config
 BUILDLINK_FILES.apr+=	lib/apr.exp
+
+${BUILDLINK_DIR}/bin/apr-config: buildlink-directories
+	${MKDIR} ${BUILDLINK_DIR}/bin && ${LN} -fs apr-1-config ${BUILDLINK_DIR}/bin/apr-config
+
+buildlink-apr-cookie: ${BUILDLINK_DIR}/bin/apr-config
 
 .endif	# APR_BUILDLINK3_MK
 
