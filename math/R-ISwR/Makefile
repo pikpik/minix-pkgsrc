@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:10:00 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/22 19:26:45 wiz Exp $
 #
 
-PKGREVISION=             1
 CATEGORIES=		databases math
 MASTER_SITES=		${MASTER_SITE_R_CRAN:=contrib/}
 
@@ -10,7 +9,7 @@ HOMEPAGE=		${R_HOMEPAGE_BASE}/ISwR.html
 COMMENT=		Data sets and scripts for 'Introductory Statistics with R'
 
 R_PKGNAME=		ISwR
-R_PKGVER=		1.0-3
+R_PKGVER=		1.0-6
 
 .include "../../math/R/Makefile.extension"
 .include "../../mk/bsd.pkg.mk"
