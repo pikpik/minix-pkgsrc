@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/12/08 23:34:11 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2007/06/10 08:42:04 joerg Exp $
 
 DISTNAME=	mod_auth_xradius-0.4.6
-PKGNAME=	ap2-auth-xradius-0.4.6
+PKGNAME=	${APACHE_PKG_PREFIX}-auth-xradius-0.4.6
 CATEGORIES=	www databases
 MASTER_SITES=	http://www.outoforder.cc/downloads/mod_auth_xradius/
 EXTRACT_SUFX=	.tar.bz2
