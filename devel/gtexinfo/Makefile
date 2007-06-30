@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2006/11/18 15:49:02 adrianp Exp $
+# $NetBSD: Makefile,v 1.67 2007/01/08 08:50:51 rillig Exp $
 
 DISTNAME=		texinfo-4.8
 PKGNAME=		g${DISTNAME}
@@ -34,6 +34,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.locale
 CONFIGURE_ARGS+=	--disable-nls
 .endif
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 
 # This need to be defined here to override the setting in texinfo.mk
