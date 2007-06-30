@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2007/02/22 19:01:26 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/05/29 22:17:19 schmonz Exp $
 #
 
 DISTNAME=		suphp-0.6.0
-PKGNAME=		ap2-${DISTNAME}
+PKGNAME=		${APACHE_PKG_PREFIX}-${DISTNAME}
 PKGREVISION=		3
 CATEGORIES=		www
 MASTER_SITES=		http://www.suphp.org/download/
