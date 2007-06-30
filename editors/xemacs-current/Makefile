@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2006/12/23 16:16:40 obache Exp $
+# $NetBSD: Makefile,v 1.61 2007/05/20 17:20:25 wiz Exp $
 
 DISTNAME=	xemacs-21.5.27
 
@@ -38,6 +38,7 @@ WITH_WIDGETS=	--with-widgets=lucid
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
+.include "../../x11/xbitmaps/buildlink3.mk"
 
 INFOPATH=	${PREFIX}/${PKGINFODIR}:${X11BASE}/${PKGINFODIR}:${LOCALBASE}/${PKGINFODIR}
 
