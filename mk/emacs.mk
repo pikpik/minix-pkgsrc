@@ -196,7 +196,7 @@ BUILD_DEFS_EFFECTS+=	${_SYS_VARS.emacs}
 _EMACS_VERSIONS_ALL= \
 	emacs20 emacs21 emacs21nox emacs22 emacs22nox xemacs214 xemacs215
 _EMACS_VERSIONS_ACCEPTED_DEFAULT=	${_EMACS_VERSIONS_ALL}
-_EMACS_VERSION_DEFAULT.emacs=	emacs22
+_EMACS_VERSION_DEFAULT.emacs=	emacs21
 _EMACS_VERSION_DEFAULT.xemacs=	xemacs214
 _EMACS_REQD.emacs20=	emacs>=20.7
 _EMACS_REQD.emacs21=	emacs>=21.2
