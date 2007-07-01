@@ -1,0 +1,16 @@
+#! /bin/sh
+# $NetBSD$
+#
+
+cat << EOF
+===========================================================================
+
+Please remember to run:
+
+# /usr/sbin/rem_drv tun 
+# /usr/sbin/rem_drv tap
+
+and remove the tun/tap driver from /usr/kernel/drv if you have copied
+it there.
+===========================================================================
+EOF
