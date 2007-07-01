@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.72 2007/02/16 20:37:52 adam Exp $
+# $NetBSD: Makefile,v 1.73 2007/05/16 13:12:39 gdt Exp $
 
-DISTNAME=	gd-2.0.34
+DISTNAME=	gd-2.0.35
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libgd.org/releases/
 EXTRACT_SUFX=	.tar.bz2
