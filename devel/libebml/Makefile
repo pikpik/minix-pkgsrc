@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/10/04 21:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/10/08 03:11:05 salo Exp $
 #
 
 DISTNAME=	libebml-0.7.7
@@ -10,6 +10,7 @@ MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/ebml/
 COMMENT=	Extensible Binary Meta Language support library
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
