@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2005/08/10 20:56:11 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2007/01/20 17:43:36 wiz Exp $
 
 DISTNAME=	libcddb-1.3.0
 CATEGORIES=	audio
@@ -9,6 +9,7 @@ MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://libcddb.sourceforge.net/
 COMMENT=	Library to access data on a CDDB server
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGLOCALEDIR=	yes
