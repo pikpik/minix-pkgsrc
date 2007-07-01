@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/06/08 11:32:00 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2007/07/01 17:22:12 heinz Exp $
 #
 
 DISTNAME=	WWW-Mechanize-1.30
@@ -18,6 +18,7 @@ DEPENDS+=	p5-URI>=1.30:../../www/p5-URI
 # if not set explicitly
 MAKE_PARAMS+=	--mech-dump --nolive
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=	# empty
