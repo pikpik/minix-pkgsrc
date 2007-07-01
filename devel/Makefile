@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.870 2007/06/15 22:50:15 wiz Exp $
+# $NetBSD: Makefile,v 1.871 2007/06/18 00:40:17 dmcmahill Exp $
 #
 
 COMMENT=	Development utilities
@@ -743,6 +743,7 @@ SUBDIR+=	sparsehash
 SUBDIR+=	spiff
 SUBDIR+=	splint
 SUBDIR+=	st
+SUBDIR+=	stgit
 SUBDIR+=	stlport
 SUBDIR+=	stooop
 SUBDIR+=	subversion
