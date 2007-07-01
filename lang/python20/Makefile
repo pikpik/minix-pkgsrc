@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/06/16 23:28:36 rillig Exp $
+# $NetBSD: Makefile,v 1.32 2007/03/01 18:33:54 wiz Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -39,6 +39,10 @@ FIX_RPATH+=	SSLFLAGS
 #   - disable a few broken modules on 64 bit platforms (nothing important)
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+PRIVILEGED_STAGE+=	clean
+.endif
 
 .if ${OPSYS} == "SunOS"
 ZOULARIS?=	${PREFIX}/bsd
