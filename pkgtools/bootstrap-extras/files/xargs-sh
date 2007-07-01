@@ -1,0 +1,13 @@
+#! /bin/sh
+#
+# $NetBSD$
+#
+# xargs(1) on Interix is broken. It executes the utility on the command line
+# even if standard input is the empty string.
+
+d="`/bin/cat`"
+if [ "$d" != "" ]
+then
+echo "$d" | /bin/xargs $@
+exit $?
+fi
