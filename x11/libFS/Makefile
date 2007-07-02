@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 17:21:54 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/05 12:14:44 rillig Exp $
 #
 
 DISTNAME=		libFS-1.0.0
@@ -18,6 +18,12 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
 PKGCONFIG_OVERRIDE+=	libfs.pc.in
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	--disable-malloc0returnsnull
+.endif
 
 .include "../../x11/fontsproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
