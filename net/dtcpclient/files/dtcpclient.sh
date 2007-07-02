@@ -1,7 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh,v 1.5 2004/06/11 15:49:48 ume Exp $
-# $NetBSD: dtcpclient.sh,v 1.1.1.1 2005/01/23 05:07:43 hamajima Exp $
+# $NetBSD: dtcpclient.sh,v 1.2 2007/06/17 04:23:32 obache Exp $
 #
 
 # PROVIDE: dtcpclient
