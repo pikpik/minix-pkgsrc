@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2007/03/01 18:33:54 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2007/07/01 00:17:01 adrianp Exp $
 #
 
 DISTNAME=	Python-2.0.1
@@ -41,7 +41,7 @@ FIX_RPATH+=	SSLFLAGS
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-PRIVILEGED_STAGE+=	clean
+PRIVILEGED_STAGES+=	clean
 .endif
 
 .if ${OPSYS} == "SunOS"
