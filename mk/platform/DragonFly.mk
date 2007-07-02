@@ -1,4 +1,4 @@
-# $NetBSD: DragonFly.mk,v 1.28 2006/07/20 20:02:23 jlam Exp $
+# $NetBSD: DragonFly.mk,v 1.29 2007/06/18 08:14:54 joerg Exp $
 #
 # Variable definitions for the DragonFly operating system.
 
@@ -9,7 +9,6 @@ IMAKEOPTS+=	-DBuildHtmlManPages=NO
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 PW?=		/usr/sbin/pw
-RSH?=		/usr/bin/rsh
 SU?=		/usr/bin/su
 TYPE?=		type				# Shell builtin
 

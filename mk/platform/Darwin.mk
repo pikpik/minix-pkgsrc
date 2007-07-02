@@ -1,4 +1,4 @@
-# $NetBSD: Darwin.mk,v 1.21 2006/09/18 15:11:37 tron Exp $
+# $NetBSD: Darwin.mk,v 1.22 2006/10/06 14:28:46 joerg Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -12,7 +12,6 @@ PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 # XXX: default from defaults/mk.conf.  Verify/correct for this platform
 # and remove this comment.
-RSH?=		/usr/bin/rsh
 SU?=		/usr/bin/su
 TYPE?=		type				# Shell builtin
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
