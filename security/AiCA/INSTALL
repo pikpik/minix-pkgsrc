@@ -1,5 +1,5 @@
 #
-# $NetBSD
+# $NetBSD$
 
 case ${STAGE} in
 POST-INSTALL)
