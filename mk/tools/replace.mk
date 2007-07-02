@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.191 2007/06/19 14:21:18 joerg Exp $
+# $NetBSD: replace.mk,v 1.192 2007/06/19 17:01:12 joerg Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -554,7 +554,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.mtree=
 # This is installed by pkgsrc bootstrap, and is never registered, so
 # comment out the dependency on it.
 #
-#TOOLS_DEPENDS.mtree?=		mtree>=20040722:../../pkgtools/mtree
+TOOLS_DEPENDS.mtree?=		mtree>=20040722:../../pkgtools/mtree
 TOOLS_CREATE+=			mtree
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.mtree=mtree
 TOOLS_PATH.mtree=		${TOOLS_PREFIX.mtree}/bin/mtree
