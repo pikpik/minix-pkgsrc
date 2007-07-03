@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: mklivecd.sh,v 1.44 2007/04/12 23:08:35 xtraeme Exp $
+# $NetBSD: mklivecd.sh,v 1.45 2007/06/21 12:21:10 hauke Exp $
 #
 # Copyright (c) 2004-2007 Juan Romero Pardines.
 # All rights reserved.
@@ -230,7 +230,7 @@ do_conf()
     # Miscellaneous options
     : ${ENABLE_X11:=no}
     : ${MKISOFS_BIN:=@PREFIX@/bin/mkisofs}
-    : ${MKISOFS_ARGS:=-J -R -nobak -v}
+    : ${MKISOFS_ARGS:=-J -R -v}
     : ${CDRECORD_BIN:=@PREFIX@/bin/cdrecord}
     : ${CDRECORD_ARGS:=-v}
     : ${BLANK_BEFORE_BURN:=no}
@@ -672,7 +672,7 @@ do_cdlive()
 	cat > $ISODIR/etc/rc.d/root <<_EOF_
 #!/bin/sh
 #
-# \$NetBSD: mklivecd.sh,v 1.44 2007/04/12 23:08:35 xtraeme Exp $
+# \$NetBSD: mklivecd.sh,v 1.45 2007/06/21 12:21:10 hauke Exp $
 # 
 
 # PROVIDE: root
