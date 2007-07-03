@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2007/02/22 19:26:52 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2007/03/05 18:01:02 sborrill Exp $
 #
 
 # A default so lintpkgsrc is happy, overridden below
 DISTNAME=	citrix
-PKGNAME=	citrix_ica-10.0.110003
+PKGNAME=	citrix_ica-10.6.115659
 CATEGORIES=	net
 MASTER_SITES=	http://download2.citrix.com/FILES/en/products/Linux10/
 
@@ -19,7 +19,7 @@ ONLY_FOR_PLATFORM+=	DragonFly-*-i386
 .if ${OPSYS} == "NetBSD"
 .  if ${MACHINE_ARCH} == "i386"
 DISTNAME=	en.linuxx86
-PKGNAME=	citrix_ica-10.0.110003
+PKGNAME=	citrix_ica-10.6.115659
 .  elif ${MACHINE_ARCH} == "sparc"
 DISTNAME=	en.solaris
 PKGNAME=	citrix_ica-8.46.110465
