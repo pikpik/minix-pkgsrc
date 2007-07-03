@@ -1,4 +1,4 @@
-/*	$NetBSD: md5hl.c,v 1.3 2002/12/21 04:06:14 schmonz Exp $	*/
+/*	$NetBSD: md5hl.c,v 1.5 2007/07/03 18:49:46 joerg Exp $	*/
 
 /*
  * Written by Jason R. Thorpe <thorpej@netbsd.org>, April 29, 1997.
@@ -9,8 +9,6 @@
 #include <config.h>
 #endif
 
-#include <digest-types.h>
-
 #define	MDALGORITHM	MD5
 
 /* #include "namespace.h" */
@@ -20,7 +18,7 @@
 #define _DIAGASSERT(cond)	assert(cond)
 #endif
 
-/*	$NetBSD: md5hl.c,v 1.3 2002/12/21 04:06:14 schmonz Exp $	*/
+/*	$NetBSD: md5hl.c,v 1.5 2007/07/03 18:49:46 joerg Exp $	*/
 
 /*
  * ----------------------------------------------------------------------------
@@ -72,7 +70,7 @@ MDNAME(End)(ctx, buf)
 	MDNAME(Final)(digest, ctx);
 
 	for (i = 0; i < 16; i++) {
-		buf[i+i] = hex[(u_int32_t)digest[i] >> 4];
+		buf[i+i] = hex[(uint32_t)digest[i] >> 4];
 		buf[i+i+1] = hex[digest[i] & 0x0f];
 	}
 
