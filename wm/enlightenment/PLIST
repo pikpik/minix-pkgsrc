@@ -12,12 +12,6 @@ share/e16/E-docs/prev1.png
 share/e16/E-docs/prev2.png
 share/e16/E-docs/title.png
 share/e16/config/actionclasses.cfg
-share/e16/config/backup-borders.cfg
-share/e16/config/backup-colormodifiers.cfg
-share/e16/config/backup-cursors.cfg
-share/e16/config/backup-imageclasses.cfg
-share/e16/config/backup-textclasses.cfg
-share/e16/config/backup-tooltips.cfg
 share/e16/config/bindings.cfg
 share/e16/config/definitions
 share/e16/config/e16keyedit.db
