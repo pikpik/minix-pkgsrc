@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/02/05 23:08:37 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2006/06/16 10:58:08 rillig Exp $
 #
 
 DISTNAME=		SQLiteManager-1.0.4
@@ -14,7 +14,7 @@ DEPENDS+=		php>=5.0.3nb1:../../lang/php5
 
 NO_BUILD=		yes
 
-BUILD_DEFS+=		APACHE_USER
+PKG_USERS_VARS+=	APACHE_USER
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share

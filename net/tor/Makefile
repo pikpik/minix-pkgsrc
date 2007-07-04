@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2007/04/25 16:39:40 tnn Exp $
+# $NetBSD: Makefile,v 1.41 2007/04/26 20:04:37 tv Exp $
 #
 
 DISTNAME=		tor-0.1.1.26
@@ -19,6 +19,9 @@ GNU_CONFIGURE=		yes
 TOR_USER?=		tor
 TOR_GROUP?=		tor
 PKG_HOME?=		/var/chroot/tor
+
+PKG_GROUPS_VARS+=	TOR_GROUP
+PKG_USERS_VARS+=	TOR_USER
 
 RCD_SCRIPTS=		tor
 PKG_GROUPS=		${TOR_GROUP}

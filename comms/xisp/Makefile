@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/10/06 22:14:44 reed Exp $
+# $NetBSD: Makefile,v 1.27 2006/12/15 20:32:53 joerg Exp $
 #
 
 DISTNAME=		xisp-2.7p1
@@ -13,7 +13,7 @@ HOMEPAGE=		http://xisp.hellug.gr/
 COMMENT=		User-friendly X11 interface to pppd/chat
 
 PKG_GROUPS=		${DIALER_GROUP}
-BUILD_DEFS+=		DIALER_GROUP
+PKG_GROUPS_VARS+=	DIALER_GROUP
 MAKE_ENV+=		DIALER_GROUP="${DIALER_GROUP}"
 MAKE_ENV+=		VARBASE=${VARBASE:Q}
 MESSAGE_SUBST+=		DIALER_GROUP=${DIALER_GROUP}

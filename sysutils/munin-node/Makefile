@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/07/21 23:28:37 abs Exp $
+# $NetBSD: Makefile,v 1.8 2006/12/05 14:53:32 xtraeme Exp $
 #
 
 DISTNAME=	munin_${VER}
@@ -20,6 +20,9 @@ USE_TOOLS+=	gmake
 USE_PKGINSTALL=	YES
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S:_:-:}
+
+PKG_GROUPS_VARS+=	MUNIN_GROUP
+PKG_USERS_VARS+=	MUNIN_USER
 
 MUNIN_GROUP?=	munin
 MUNIN_USER?=	munin

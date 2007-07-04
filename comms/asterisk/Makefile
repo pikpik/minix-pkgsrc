@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2007/04/26 09:43:15 mjl Exp $
+# $NetBSD: Makefile,v 1.38 2007/06/24 07:52:47 mjl Exp $
 
 DISTNAME=	asterisk-1.2.19
 CATEGORIES=	comms net audio
@@ -21,6 +21,8 @@ INSTALL_TARGET=		install samples
 #ASTERISK_GROUP?= 	asterisk
 #PKG_GROUPS= 		${ASTERISK_GROUP}
 #PKG_USERS= 		${ASTERISK_USER}:${ASTERISK_GROUP}
+#PKG_GROUPS_VARS+=	ASTERISK_GROUP
+#PKG_USERS_VARS+=	ASTERISK_USER
 
 # Various path settings for Asterisk
 PKG_SYSCONFSUBDIR=	asterisk

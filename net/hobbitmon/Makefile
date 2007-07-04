@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/06/21 16:54:25 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/07/21 16:20:42 wiz Exp $
 #
 
 DISTNAME=	hobbit-4.0-beta6
@@ -33,6 +33,9 @@ PKG_USERS=	${BBUSER:Q}:${BBGROUP:Q}
 
 PKG_GECOS.${BBUSER}=	Hobbit monitor
 PKG_HOME.${BBUSER}=	${BBTOPDIR}
+
+PKG_GROUPS_VARS+=	BBGROUP
+PKG_USERS_VARS+=	BBUSER
 
 EVAL_PREFIX+=	PREFIX.fping=fping
 

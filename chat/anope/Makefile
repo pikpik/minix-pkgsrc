@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/10/20 22:40:24 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2007/04/09 09:40:23 adrianp Exp $
 
 DISTNAME=	anope-1.7.18
 CATEGORIES=	net
@@ -16,6 +16,9 @@ ANOPE_GROUP=	anope
 RCD_SCRIPTS=	anope
 FILES_SUBST+=	ANOPE_USER=${ANOPE_USER:Q}
 FILES_SUBST+=	ANOPE_GROUP=${ANOPE_GROUP:Q}
+
+PKG_USERS_VARS+=	ANOPE_USER
+PKG_GROUPS_VARS+=	ANOPE_GROUP
 
 .include "../../mk/bsd.prefs.mk"
 

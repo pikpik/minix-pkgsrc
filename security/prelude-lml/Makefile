@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/05/12 10:00:35 shannonjr Exp $
+# $NetBSD: Makefile,v 1.16 2007/06/05 05:37:34 wiz Exp $
 #
 
 DISTNAME=		prelude-lml-0.9.9
@@ -15,6 +15,9 @@ COMMENT=		Log analyzer monitoring your logfile and received syslog messages
 
 PRELUDE_USER?=		_prelude
 PRELUDE_GROUP?=		_prelude
+
+PKG_GROUPS_VARS+=	PRELUDE_GROUP
+PKG_USERS_VARS+=	PRELUDE_USER
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/05/21 16:08:32 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2007/03/24 19:21:19 joerg Exp $
 #
 
 DISTNAME=	i2cbd-2.0_BETA5
@@ -15,6 +15,7 @@ COMMENT=	Next generation Internet Citizens Band chat server
 
 BUILD_DEFS+=		ICBD_OWNER
 ICBD_OWNER?=		${ROOT_USER}
+PKG_USERS_VARS+=	ICBD_OWNER
 PLIST_SUBST+=		ICBD_OWNER=${ICBD_OWNER:Q}
 
 PKG_SYSCONFSUBDIR=	icbd

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/05/11 11:51:05 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2007/06/05 20:25:26 adrianp Exp $
 #
 
 DISTNAME=	roundcube-0.1-20070528
@@ -19,7 +19,10 @@ WRKSRC=		${WRKDIR}/roundcubemail
 
 PKG_SYSCONFSUBDIR?=	httpd
 
-BUILD_DEFS+=	APACHE_USER APACHE_GROUP VARBASE
+PKG_GROUPS_VARS+=	APACHE_GROUP
+PKG_USERS_VARS+=	APACHE_USER
+BUILD_DEFS+=		VARBASE
+
 RCDIR=		${PREFIX}/share/roundcube
 EGDIR=		${PREFIX}/share/examples/roundcube
 DOCDIR=		${PREFIX}/share/doc/roundcube

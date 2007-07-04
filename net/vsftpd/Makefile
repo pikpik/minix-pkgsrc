@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/01/03 15:54:56 tv Exp $
+# $NetBSD: Makefile,v 1.26 2007/01/07 09:14:07 rillig Exp $
 #
 
 DISTNAME=	vsftpd-2.0.4
@@ -14,6 +14,9 @@ PKG_SYSCONFSUBDIR=	vsftpd
 
 BUILD_TARGET=	vsftpd
 RCD_SCRIPTS=	vsftpd
+
+PKG_GROUPS_VARS+=	VSFTPD_GROUP
+PKG_USERS_VARS+=	VSFTPD_USER
 
 VSFTPD_USER?=	vsftpd
 VSFTPD_GROUP?=	vsftpd

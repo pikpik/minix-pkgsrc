@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.20 2007/03/11 18:42:27 adam Exp $
+# $NetBSD: Makefile.common,v 1.21 2007/05/21 04:39:59 xtraeme Exp $
 
 DISTNAME=		mysql-5.0.41
 CATEGORIES=		databases
@@ -21,6 +21,9 @@ EXTRACT_USING=		pax
 MYSQL_USER?=		mysql
 MYSQL_GROUP?=		mysql
 MYSQL_DATADIR?=		${VARBASE}/mysql
+
+PKG_USERS_VARS+=	MYSQL_USER
+PKG_GROUPS_VARS+=	MYSQL_GROUP
 
 # MYSQL_CHARSET		default character set
 # MYSQL_EXTRA_CHARSET	additional character set to be compiled in.

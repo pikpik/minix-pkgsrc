@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/12/12 13:09:21 shannonjr Exp $
+# $NetBSD: Makefile,v 1.28 2007/05/12 11:19:18 shannonjr Exp $
 #
 
 DISTNAME=		dirmngr-1.0.0
@@ -19,6 +19,8 @@ DIRMNGR_USER?=		dirmngr
 DIRMNGR_GROUP?=		dirmngr
 PKG_GROUPS=		${DIRMNGR_GROUP}
 PKG_USERS=		${DIRMNGR_USER}:${DIRMNGR_GROUP}
+PKG_GROUPS_VARS+=	DIRMNGR_GROUP
+PKG_USERS_VARS+=	DIRMNGR_USER
 
 PKG_HOME.${DIRMNGR_USER}=	${VARBASE}/dirmngr
 
