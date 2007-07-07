@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/12/27 13:54:59 seb Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/04 21:30:36 jlam Exp $
 #
 
 DISTNAME=		Crypt-DH-0.06
@@ -11,8 +11,12 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Crypt-DH/
 COMMENT=		Perl5 module for the Diffie-Hellman key exchange system
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 DEPENDS+=		p5-Math-Pari>=2.001804:../../math/p5-Math-Pari
 DEPENDS+=		p5-Crypt-Random>=0.33:../../security/p5-Crypt-Random
+
+USE_LANGUAGES=		# empty
 
 PERL5_PACKLIST=		auto/Crypt/DH/.packlist
 
