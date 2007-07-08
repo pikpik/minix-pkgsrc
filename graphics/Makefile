@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.460 2007/06/06 11:24:44 markd Exp $
+# $NetBSD: Makefile,v 1.461 2007/07/08 07:14:48 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -57,7 +57,6 @@ SUBDIR+=	dia
 SUBDIR+=	dia-python
 SUBDIR+=	digikam
 SUBDIR+=	digikam-doc
-SUBDIR+=	digikamimageplugins
 SUBDIR+=	djvulibre-lib
 SUBDIR+=	djvulibre-tools
 SUBDIR+=	dx
