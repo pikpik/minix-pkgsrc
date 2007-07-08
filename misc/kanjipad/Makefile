@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:09 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:40 wiz Exp $
 #
 
 DISTNAME=		kanjipad-2.0.0
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=		misc
 MASTER_SITES=		http://fishsoup.net/software/kanjipad/
 
-MAINTAINER=		wiz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://fishsoup.net/software/kanjipad/
 COMMENT=		Japanese handwriting recognition
 
