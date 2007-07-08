@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.459 2007/06/04 04:15:55 obache Exp $
+# $NetBSD: Makefile,v 1.460 2007/06/06 11:24:44 markd Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -180,6 +180,7 @@ SUBDIR+=	libgii
 SUBDIR+=	libgiigic
 SUBDIR+=	libgnomecanvas
 SUBDIR+=	libgnomecanvasmm
+SUBDIR+=	libkdcraw
 SUBDIR+=	libkexif
 SUBDIR+=	libkexiv2
 SUBDIR+=	libkipi
