@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/01/26 20:05:53 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/22 19:26:05 wiz Exp $
 #
 
 DISTNAME=	gtick-0.3.10
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.antcom.de/gtick/download/
 
-MAINTAINER=	rpaulo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.antcom.de/gtick/
 COMMENT=	Metronome application using GTK2+
 

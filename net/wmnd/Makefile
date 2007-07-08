@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2006/04/29 10:55:55 rpaulo Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/19 20:04:24 joerg Exp $
 
 DISTNAME=	wmnd-0.4.12
 PKGREVISION=	1
 CATEGORIES=	net x11
 MASTER_SITES=	ftp://ftp.yuv.info/pub/wmnd/releases/
 
-MAINTAINER=	rpaulo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.yuv.info/wmnd/
 COMMENT=	Dockable network monitor
 
