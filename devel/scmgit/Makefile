@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2007/04/21 10:36:58 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2007/04/26 01:23:48 dmcmahill Exp $
 #
 
-DISTNAME=	git-1.5.1.1
+DISTNAME=	git-1.5.2.3
 PKGNAME=	scm${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel scm
 MASTER_SITES=	http://www.kernel.org/pub/software/scm/git/
 
