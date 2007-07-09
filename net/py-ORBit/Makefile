@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2007/03/13 10:59:02 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2007/07/06 18:47:37 drochner Exp $
 #
 
 DISTNAME=	pyorbit-2.14.3
@@ -19,6 +19,9 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN:Q}
 
 PYTHON_VERSIONS_ACCEPTED=	24
+
+do-test:
+	(cd ${WRKSRC}/tests/c-inproc && ${PYTHONBIN} test-c-inproc.py)
 
 .include "../../net/ORBit2/buildlink3.mk"
 .include "../../lang/python/extension.mk"
