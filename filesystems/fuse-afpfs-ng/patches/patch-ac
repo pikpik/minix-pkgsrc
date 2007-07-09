@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- meta.c	2007/07/09 18:25:27	1.1
++++ meta.c	2007/07/09 18:26:36
+@@ -9,7 +9,9 @@
+ */
+ 
+ #include <fuse.h>
++#ifdef __linux__
+ #include <fuse/fuse_opt.h>
++#endif
+ #include <stdio.h>
+ #include <string.h>
+ #include <errno.h>
