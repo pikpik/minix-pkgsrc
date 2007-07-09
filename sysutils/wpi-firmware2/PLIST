@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libdata/if_wpi/LICENSE.iwlwifi-3945-ucode
+libdata/if_wpi/README.iwlwifi-3945-ucode
+libdata/if_wpi/iwlwifi-3945.ucode
+@dirrm libdata/if_wpi
