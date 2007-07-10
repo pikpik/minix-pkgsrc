@@ -68,6 +68,10 @@ java/kaffe/license.terms
 man/man1/kaffe.1
 java/kaffe/share/classpath/README
 java/kaffe/share/classpath/tools.zip
+share/locale/de/LC_MESSAGES/kaffe.mo
+share/locale/fr/LC_MESSAGES/kaffe.mo
+share/locale/zh_CN/LC_MESSAGES/kaffe.mo
+share/locale/zh_TW/LC_MESSAGES/kaffe.mo
 @dirrm java/kaffe/share/classpath
 @dirrm java/kaffe/share
 @dirrm java/kaffe/lib/security
