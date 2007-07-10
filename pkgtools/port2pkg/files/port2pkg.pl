@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
 #
-# $NetBSD: port2pkg.pl,v 1.17 2006/09/13 18:18:53 ginsbach Exp $
+# $NetBSD: port2pkg.pl,v 1.18 2007/02/23 15:29:14 ginsbach Exp $
 #
 
 require 'getopts.pl';
@@ -150,7 +150,7 @@ sub conv_Makefile {
 	open(PKG, ">$pkgdir/Makefile")
 		|| die "$pkgdir/Makefile: $!\n";
 
-	print PKG "# \$NetBSD\$\n";
+	print PKG "# \$Net" . "BSD\$\n";
 
 	# header
 	while (<PORTS>) {
