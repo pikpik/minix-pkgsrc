@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/15 20:12:07 joerg Exp $
 #
 
-DISTNAME=		libXcomposite-0.3.1
+DISTNAME=		libXcomposite-0.3.2
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
