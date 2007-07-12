@@ -1,8 +1,8 @@
-$NetBSD: patch-ah,v 1.1.1.1 2004/10/04 20:50:58 cube Exp $
+$NetBSD$
 
---- rules.mk.orig	2006-05-24 16:23:26.000000000 +0000
-+++ rules.mk
-@@ -153,9 +153,9 @@ lc_install:
+--- build/rules.mk.orig	2007-03-30 14:59:23.167755140 +0200
++++ build/rules.mk	2007-03-30 14:59:43.807466807 +0200
+@@ -153,9 +153,9 @@
  	done
  
  etc_install:
