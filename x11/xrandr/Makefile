@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2007/03/17 18:40:59 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/06/19 09:39:14 joerg Exp $
 #
 
-DISTNAME=	xrandr-1.2.0
+DISTNAME=	xrandr-1.2.1
 CATEGORIES=	x11
 MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/app/
 EXTRACT_SUFX=	.tar.bz2
