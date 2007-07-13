@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2006/10/17 16:46:49 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2006/12/06 17:45:35 joerg Exp $
 
-DISTNAME=	ctypes-1.0.0
+DISTNAME=	ctypes-1.0.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ctypes/}
