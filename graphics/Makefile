@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.461 2007/07/08 07:14:48 wiz Exp $
+# $NetBSD: Makefile,v 1.462 2007/07/08 08:48:09 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -258,11 +258,13 @@ SUBDIR+=	ppmtoxvpic
 SUBDIR+=	prag
 SUBDIR+=	ps2eps
 SUBDIR+=	pstoedit
+SUBDIR+=	py-OpenGL
 SUBDIR+=	py-biggles
 SUBDIR+=	py-cairo
 SUBDIR+=	py-gd
 SUBDIR+=	py-gdchart
 SUBDIR+=	py-gnuplot
+SUBDIR+=	py-gtkglext
 SUBDIR+=	py-imaging
 SUBDIR+=	py-imagingtk
 SUBDIR+=	py-matplotlib
