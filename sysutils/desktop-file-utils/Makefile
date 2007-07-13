@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2006/11/18 23:58:53 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2007/07/03 19:47:36 wiz Exp $
 #
 
 DISTNAME=	desktop-file-utils-0.13
+PKGREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://freedesktop.org/software/desktop-file-utils/releases/
 
@@ -26,5 +27,4 @@ PRINT_PLIST_AWK+=	/^share\/applications\/mimeinfo.cache$$/ \
 				  next; }
 
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/popt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
