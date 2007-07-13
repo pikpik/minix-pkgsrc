@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/freealut-config
+include/AL/alut.h
+lib/libalut.la
+lib/pkgconfig/freealut.pc
