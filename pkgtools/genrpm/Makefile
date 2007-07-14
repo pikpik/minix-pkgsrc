@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2007/01/07 09:14:08 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/22 19:27:02 wiz Exp $
 
-DISTNAME=	genrpm-1.0
-PKGREVISION=	1
+DISTNAME=	genrpm-1.1
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
