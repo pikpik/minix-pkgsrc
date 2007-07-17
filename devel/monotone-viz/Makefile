@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/02/17 20:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2007/07/17 20:02:36 jmmv Exp $
 #
 
 DISTNAME=		monotone-viz-0.15
@@ -25,6 +25,7 @@ do-install:
 .include "../../graphics/graphviz/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../lang/ocaml/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/lablgtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
