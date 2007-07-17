@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2007/01/26 04:13:34 markd Exp $
+# $NetBSD: Makefile,v 1.6 2007/03/13 09:53:46 drochner Exp $
 #
 
-DISTNAME=		kphotoalbum-3.0
+DISTNAME=		kphotoalbum-3.0.1
 CATEGORIES=		graphics
 MASTER_SITES=		http://ktown.kde.org/kphotoalbum/download/
 
