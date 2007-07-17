@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.872 2007/07/01 12:37:25 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.873 2007/07/09 19:47:30 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -177,6 +177,7 @@ SUBDIR+=	gflib
 SUBDIR+=	giblib
 SUBDIR+=	gindent
 SUBDIR+=	glade
+SUBDIR+=	glade3
 SUBDIR+=	glade-gnome
 SUBDIR+=	glib
 SUBDIR+=	glib2
@@ -290,6 +291,7 @@ SUBDIR+=	librsync
 SUBDIR+=	librxspencer
 SUBDIR+=	libscsi
 SUBDIR+=	libsexy
+SUBDIR+=	libsexymm
 SUBDIR+=	libsigc++
 SUBDIR+=	libsigc++2
 SUBDIR+=	libsigsegv
