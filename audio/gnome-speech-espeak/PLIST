@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/espeak-synthesis-driver
+lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Espeak.server
+@comment in libbonobo: @dirrm lib/bonobo/servers
