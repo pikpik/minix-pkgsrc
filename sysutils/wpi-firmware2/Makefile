@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/07/09 19:16:23 degroote Exp $
 #
 
-VERSION=		2.14.3
+VERSION=		2.14.4
 DISTNAME=		iwlwifi-3945-ucode-${VERSION}
 PKGNAME=		wpi-firmware2-${VERSION}
 CATEGORIES=		sysutils
