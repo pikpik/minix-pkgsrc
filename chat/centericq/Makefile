@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.65 2007/02/20 18:45:00 sborrill Exp $
+# $NetBSD: Makefile,v 1.66 2007/04/15 20:16:41 wiz Exp $
 #
 
 DISTNAME=	centericq-4.21.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	chat
 MASTER_SITES=	http://thekonst.net/download/ \
 		http://centericq.de/archive/source/releases/
