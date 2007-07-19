@@ -1,6 +1,6 @@
-$NetBSD: patch-ac,v 1.2 2006/05/16 17:32:50 wiz Exp $
+$NetBSD: patch-ac,v 1.1.1.1 2007/05/13 22:43:38 wiz Exp $
 
---- src/app-utils/gnc-exp-parser.c.orig	2006-05-15 01:07:33.000000000 +0000
+--- src/app-utils/gnc-exp-parser.c.orig	2007-04-28 23:16:37.000000000 +0000
 +++ src/app-utils/gnc-exp-parser.c
 @@ -546,9 +546,15 @@ gnc_exp_parser_parse_separate_vars (cons
  
