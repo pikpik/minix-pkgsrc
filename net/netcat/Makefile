@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/11/12 20:58:51 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2007/05/20 15:38:33 heinz Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
@@ -41,6 +41,8 @@ INSTALLATION_DIRS=	${PKGMANDIR}/man1 sbin
 post-build:
 	@cd ${WRKSRC}/data && ${SETENV} ${MAKE_ENV} ${MAKE} ${EXTRA_PROGS}
 
+# Note: the nc binary is installed into sbin to avoid a conflict with
+# editors/nedit.
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/nc ${DESTDIR:Q}${PREFIX:Q}/sbin
 .for i in ${EXTRA_PROGS}
