@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.873 2007/07/09 19:47:30 jmmv Exp $
+# $NetBSD: Makefile,v 1.874 2007/07/17 19:14:45 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -157,7 +157,6 @@ SUBDIR+=	fortran-utils
 SUBDIR+=	fromcvs
 SUBDIR+=	ftnchek
 SUBDIR+=	g-wrap
-SUBDIR+=	g-wrap196
 SUBDIR+=	gail
 SUBDIR+=	gconfmm
 SUBDIR+=	gcvs
