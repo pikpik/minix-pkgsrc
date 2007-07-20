@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/07/08 19:19:44 minskim Exp $
 #
 
 DISTNAME=		urlgfe-1.0.1
@@ -13,6 +13,7 @@ USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		pkg-config
 
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
