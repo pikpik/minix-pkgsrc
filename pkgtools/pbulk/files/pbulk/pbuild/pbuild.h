@@ -1,4 +1,4 @@
-/* $NetBSD: pbuild.h,v 1.1.1.1 2007/06/19 19:49:56 joerg Exp $ */
+/* $NetBSD: pbuild.h,v 1.2 2007/06/25 21:38:45 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -32,7 +32,9 @@
  */
 
 #include <nbcompat/queue.h>
+#ifdef HAVE_INTTYPES_H
 #include <inttypes.h>
+#endif
 
 enum job_state {
 	JOB_INIT,
