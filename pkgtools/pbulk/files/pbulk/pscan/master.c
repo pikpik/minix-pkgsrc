@@ -1,4 +1,4 @@
-/* $NetBSD: master.c,v 1.2 2007/06/19 21:06:05 joerg Exp $ */
+/* $NetBSD: master.c,v 1.3 2007/06/25 21:38:46 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -48,6 +48,8 @@
 #include <nbcompat/stdlib.h>
 #include <nbcompat/stdio.h>
 #include <nbcompat/string.h>
+
+#include <arpa/inet.h>
 
 #include "pbulk.h"
 #include "pscan.h"
