@@ -1,4 +1,4 @@
-/* $NetBSD: audit-packages.c,v 1.2 2007/07/20 22:22:52 joerg Exp $ */
+/* $NetBSD: audit-packages.c,v 1.3 2007/07/21 10:21:04 adrianp Exp $ */
 
 /*
  * Copyright (c) 2007 Adrian Portelli <adrianp@NetBSD.org>.
@@ -926,12 +926,12 @@ gen_hash(char *hash_input)
 	int i = 0;
 
 	FILE *hash_in;
+	SHA512_CTX hash_ctx;
 
 	if ((hash_in = fopen(hash_input, "r")) == NULL) {
 		errx(EXIT_FAILURE, "Unable to open: %s", hash_input);
 	}
 
-	SHA512_CTX hash_ctx;
 	SHA512_Init(&hash_ctx);
 
 	line = safe_calloc(MAXLINELEN, sizeof(char));
