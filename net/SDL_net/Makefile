@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.18 2006/06/12 16:26:30 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/05/19 22:12:53 heinz Exp $
 
-DISTNAME=	SDL_net-1.2.6
+DISTNAME=	SDL_net-1.2.7
 CATEGORIES=	net
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_net/release/
 
