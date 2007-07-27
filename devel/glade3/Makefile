@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/07/17 19:12:02 drochner Exp $
 #
 
 DISTNAME=		glade3-3.2.2
@@ -12,7 +12,7 @@ COMMENT=		User interface builder for the GTK2+ toolkit
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		pkg-config intltool gmake
+USE_TOOLS+=		pkg-config intltool gmake msgfmt
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1
 
