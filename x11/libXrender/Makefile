@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 21:18:51 joerg Exp $
 #
 
 DISTNAME=		libXrender-0.9.2
@@ -19,6 +19,12 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
 PKGCONFIG_OVERRIDE+=	xrender.pc.in
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	--disable-malloc0returnsnull
+.endif
 
 .include "../../x11/renderproto/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
