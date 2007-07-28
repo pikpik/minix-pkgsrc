@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6534 2007/07/27 08:27:29 taca Exp $
+$NetBSD: TODO,v 1.6535 2007/07/28 00:49:06 wiz Exp $
 
 Suggested new packages
 ======================
@@ -1082,7 +1082,6 @@ Suggested package updates
 	o qt2-docs-2.3.2
 	o qt2-examples-2.3.2
 	o qt2-libs-2.3.2
-	o qt4-4.3
 	o quagga-devel-0.99.6
 	o qvplay-0.95
 	o qwspritefield-1.7
