@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:31:05 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/10/04 22:04:11 wiz Exp $
 
 DISTNAME=	MailManager-0.94
 PKGNAME=	zope25-MailManager-0.94
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mailmanager/}
 
@@ -16,6 +16,7 @@ DEPENDS+=	zope25-BTreeFolder2-[0-9]*:../../www/zope25-BTreeFolder2
 DEPENDS+=	zope25-StripoGram>=1.4:../../www/zope25-StripoGram
 DEPENDS+=	zope25-Epoz>=0.5.1:../../www/zope25-Epoz
 
+REPLACE_PYTHON+=	${WRKDIR}/MailManager/scripts/*.py
 
 .include "../../www/zope25/product.mk"
 .include "../../mk/bsd.pkg.mk"
