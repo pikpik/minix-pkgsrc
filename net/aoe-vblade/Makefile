@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/02/15 14:25:52 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/03/24 19:21:28 joerg Exp $
 
 DISTNAME=	vblade-14
 PKGNAME=	aoe-vblade-14
@@ -20,7 +20,7 @@ do-build:
 .if ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "DragonFly"
 	cd ${WRKSRC} && ${CP} freebsd.c bsd.c && ${MAKE} PLATFORM=bsd
 .elif ${OPSYS} == "Linux"
-	${MAKE} PLATFORM=linux
+	cd ${WRKSRC} && ${MAKE} PLATFORM=linux
 .endif
 
 do-install:
