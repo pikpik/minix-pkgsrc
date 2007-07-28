@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/28 13:17:48 obache Exp $
 #
 
 DISTNAME=	antiright-3.4
@@ -13,6 +13,8 @@ COMMENT=	The gtkshell GUI creator, gshterm, and ACE desktop implementation
 HAS_CONFIGURE=	YES
 USE_LANGUAGES=	c
 USE_TOOLS+=	pkg-config lex yacc
+
+CPPFLAGS+=	-I${BUILDLINK_PREFIX.boehm-gc}/include/gc
 
 SUBST_CLASSES+=		mandir
 SUBST_STAGE.mandir=	pre-configure
