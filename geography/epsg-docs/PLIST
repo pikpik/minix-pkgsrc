@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/doc/epsg/G7-1.pdf
+share/doc/epsg/G7-2.pdf
+@dirrm share/doc/epsg
