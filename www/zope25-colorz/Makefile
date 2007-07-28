@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2006/02/22 20:57:29 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:31:06 jlam Exp $
 
 DISTNAME=	colorz10b2
-PKGREVISION=	2
+PKGREVISION=	3
 PKGNAME=	zope25-colorz-1.0b2
 CATEGORIES=	www
 MASTER_SITES=	http://www.zope.org/Members/maxm/productList/colorz/
@@ -13,6 +13,9 @@ COMMENT=	Color management tool
 
 ZOPE_COPYPRODUCT= zope-std-copyproduct-short
 PRODNAMES=	colorz10b2
+
+post-extract:
+	${FIND} ${WRKSRC} -type f | ${XARGS} ${CHMOD} -R go-w
 
 # clean up after patch-aa
 post-install:
