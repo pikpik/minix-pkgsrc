@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.673 2007/07/08 19:21:59 minskim Exp $
+# $NetBSD: Makefile,v 1.674 2007/07/29 07:00:59 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -240,6 +240,7 @@ SUBDIR+=	netsaint-base
 SUBDIR+=	netsaint-plugin-cluster
 SUBDIR+=	netsaint-plugin-snmp
 SUBDIR+=	netsaint-plugins
+SUBDIR+=	nfdump
 SUBDIR+=	ngrep
 SUBDIR+=	nicotine
 SUBDIR+=	nidentd
