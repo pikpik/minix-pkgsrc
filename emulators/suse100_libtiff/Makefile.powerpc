@@ -1,3 +1,0 @@
-# $NetBSD: Makefile.powerpc,v 1.2 2006/06/06 14:53:06 salo Exp $
-
-RPMFILES=		libtiff-3.7.3-2.6.${SUSE_ARCH}.rpm

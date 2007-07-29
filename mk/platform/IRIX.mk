@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.28 2006/10/06 14:28:46 joerg Exp $
+# $NetBSD: IRIX.mk,v 1.29 2007/07/02 14:03:40 joerg Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -61,6 +61,8 @@ MANCOMPRESSED=		yes
 MANZ=			yes
 . endif
 .endif
+
+_OPSYS_EMULDIR.irix=	# empty
 
 .if exists(/usr/include/netinet6)
 _OPSYS_HAS_INET6=	yes		# IPv6 is standard

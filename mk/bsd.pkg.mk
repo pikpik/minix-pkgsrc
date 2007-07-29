@@ -29,6 +29,10 @@ PKG_FAIL_REASON+=	"[bsd.pkg.mk] Run \"${MAKE} help topic=make_jobs\" to get some
 # Include any preferences, if not already included, and common definitions
 .include "${.PARSEDIR}/bsd.prefs.mk"
 
+.if defined(EMUL_PLATFORMS) && !empty(EMUL_PLATFORMS)
+.  include "${.PARSEDIR}/emulator/emulator.mk"
+.endif
+
 .include "${.PARSEDIR}/flavor/bsd.flavor-vars.mk"
 .include "${.PARSEDIR}/check/bsd.check-vars.mk"
 .include "${.PARSEDIR}/depends/bsd.depends-vars.mk"

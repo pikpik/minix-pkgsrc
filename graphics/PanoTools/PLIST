@@ -1,9 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/04/19 07:55:34 rh Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/04/20 06:58:20 rh Exp $
 bin/mkpthelpers
 bin/ptcrypt
 bin/pteditor
 bin/ptpicker
-${EMULSUBDIR}/lib/libpano12.so
+${EMULSUBDIRSLASH}lib/libpano12.so
 libexec/PanoTools/PTAverage
 libexec/PanoTools/PTInterpolate
 libexec/PanoTools/PTMorpher

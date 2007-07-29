@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.252 2007/07/17 09:20:18 joerg Exp $
+# $NetBSD: bsd.prefs.mk,v 1.253 2007/07/20 22:40:56 joerg Exp $
 #
 # Make file, included to get the site preferences, if any.  Should
 # only be included by package Makefiles before any .if defined()
@@ -580,6 +580,11 @@ PREPEND_PATH+=		${LOCALBASE}/bin
 
 # Wrapper framework definitions
 .include "${PKGSRCDIR}/mk/wrapper/wrapper-defs.mk"
+
+# Binary emulator framework definitions
+.if defined(EMUL_PLATFORMS) && !empty(EMUL_PLATFORMS)
+.  include "${PKGSRCDIR}/mk/emulator/emulator-vars.mk"
+.endif
 
 # Package system flavor definitions
 .include "${PKGSRCDIR}/mk/flavor/bsd.flavor-vars.mk"

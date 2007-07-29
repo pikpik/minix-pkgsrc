@@ -1,7 +1,7 @@
 #!/bin/sh
 #
-# $NetBSD: uvscan.sh,v 1.2 2001/08/16 05:09:22 jlam Exp $
+# $NetBSD: uvscan.sh,v 1.3 2002/10/21 07:12:34 jlam Exp $
 #
 # Wrapper script to execute McAfee(R) VirusScan
 
-exec @PREFIX@/libexec/uvscan/uvscan "$@"
+LD_LIBRARY_PATH=@PREFIX@/libexec/uvscan @PREFIX@/libexec/uvscan/uvscan "$@"

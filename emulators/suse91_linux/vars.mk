@@ -1,9 +1,0 @@
-# $NetBSD$
-
-.ifndef SUSE_VARS_MK
-SUSE_VARS_MK=1
-
-SUSE_DIR_PREFIX=	suse91
-SUSE_VERSION=		9.1
-
-.endif # SUSE_VARS_MK

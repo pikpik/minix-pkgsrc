@@ -1,4 +1,6 @@
 #!/bin/sh
+#
+# $NetBSD$
 
 UVSCANDIR="@UVSCANDIR@"
 DAT_SITE="http://download.nai.com/products/datfiles/4.x/nai/"
