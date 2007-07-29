@@ -1,0 +1,5 @@
+@comment $NetBSD$
+sbin/spreadlogd
+share/examples/rc.d/spreadlogd
+share/examples/spreadlogd/spreadlogd.conf.sample
+@dirrm share/examples/spreadlogd
