@@ -1,0 +1,11 @@
+@comment $NetBSD$
+bin/nfcapd
+bin/nfdump
+bin/nfprofile
+bin/nfreplay
+man/man1/nfcapd.1
+man/man1/nfdump.1
+man/man1/nfprofile.1
+man/man1/nfreplay.1
+share/examples/nfdump/nfclean.pl
+@dirrm share/examples/nfdump
