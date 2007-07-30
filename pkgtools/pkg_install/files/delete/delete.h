@@ -1,4 +1,4 @@
-/* $NetBSD: delete.h,v 1.3 2003/09/23 07:13:50 grant Exp $ */
+/* $NetBSD: delete.h,v 1.4 2004/11/02 00:10:15 erh Exp $ */
 
 /* from FreeBSD Id: delete.h,v 1.4 1997/02/22 16:09:35 peter Exp */
 
@@ -34,5 +34,7 @@ extern Boolean Force;
 extern Boolean Recurse_up;
 extern Boolean Recurse_down;
 extern lpkg_head_t pkgs;
+
+int     pkg_perform(lpkg_head_t *);
 
 #endif				/* _INST_DELETE_H_INCLUDE */
