@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2006/02/05 23:11:21 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/02/22 19:27:20 wiz Exp $
 
-DISTNAME=	MozillaFirebird-bin-acroread7-1.0
+DISTNAME=		MozillaFirebird-bin-acroread7-1.0
 PKGREVISION=		1
 
 MAINTAINER=		kei@NetBSD.org
@@ -12,6 +12,7 @@ CONFLICTS+=		firefox-bin-acroread3-[0-9]*
 CONFLICTS+=		firefox-bin-acroread-[0-9]*
 
 ACROREAD=		Acrobat7
-BROWSER=		Browser
+ACRO_SUBDIR=		Browser
 
 .include "../../www/firefox-bin-acroread/Makefile.common"
+.include "../../mk/bsd.pkg.mk"
