@@ -1,4 +1,4 @@
-/*	$NetBSD: lchflags.c,v 1.1.1.1 2003/03/31 05:02:49 grant Exp $	*/
+/*	$NetBSD: lchflags.c,v 1.2 2004/08/23 03:32:12 jlam Exp $	*/
 
 /*-
  * Copyright (c) 2002 The NetBSD Foundation, Inc.
@@ -44,7 +44,7 @@
 #include <nbcompat/unistd.h>
 
 int
-lchflags(const char *path, u_long flags)
+lchflags(const char *path, unsigned long flags)
 {
 	struct stat psb;
 

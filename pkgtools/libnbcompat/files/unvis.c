@@ -1,4 +1,4 @@
-/*	$NetBSD: unvis.c,v 1.10 2004/12/03 13:19:09 grant Exp $	*/
+/*	$NetBSD: unvis.c,v 1.11 2004/12/04 23:31:40 grant Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993
@@ -35,7 +35,7 @@
 #if 0
 static char sccsid[] = "@(#)unvis.c	8.1 (Berkeley) 6/4/93";
 #else
-__RCSID("$NetBSD: unvis.c,v 1.10 2004/12/03 13:19:09 grant Exp $");
+__RCSID("$NetBSD: unvis.c,v 1.11 2004/12/04 23:31:40 grant Exp $");
 #endif
 #endif /* LIBC_SCCS and not lint */
 
@@ -80,7 +80,7 @@ __warn_references(unvis,
 #define S_HEX1		7	/* hex digit */
 #define S_HEX2		8	/* hex digit 2 */
 
-#define	isoctal(c)	(((u_char)(c)) >= '0' && ((u_char)(c)) <= '7')
+#define	isoctal(c)	(((unsigned char)(c)) >= '0' && ((unsigned char)(c)) <= '7')
 #define xtod(c)		(isdigit(c) ? (c - '0') : ((tolower(c) - 'a') + 10))
 
 int
