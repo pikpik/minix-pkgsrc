@@ -1,4 +1,4 @@
-/*	$NetBSD: lstInt.h,v 1.11 2005/02/16 15:11:53 christos Exp $	*/
+/*	$NetBSD: lstInt.h,v 1.1 2005/10/31 21:52:26 reed Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990, 1993
@@ -47,7 +47,7 @@
 typedef struct ListNode {
 	struct ListNode	*prevPtr;   /* previous element in list */
 	struct ListNode	*nextPtr;   /* next in list */
-	short	    	useCount:8, /* Count of functions using the node.
+	unsigned short	 useCount:8, /* Count of functions using the node.
 				     * node may not be deleted until count
 				     * goes to 0 */
  	    	    	flags:8;    /* Node status flags */
