@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.x86_64,v 1.1 2006/12/03 00:51:22 wiz Exp $
+@comment $NetBSD: PLIST.x86_64,v 1.2 2007/01/12 18:23:39 tv Exp $
 bin/sun15-java
 bin/sun15-javaws
 bin/sun15-keytool

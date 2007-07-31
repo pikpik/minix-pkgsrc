@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/18 22:13:23 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/07/29 05:19:27 jlam Exp $
 #
 
 BD_BASENAME=	j2re
@@ -15,11 +15,6 @@ EMUL_PLATFORMS=	linux-arm
 BLACKDOWN_REL=	rc1
 DISTNAME=	${BD_BASENAME}-${RELVERSION}-RC1-linux-arm
 EXTRACT_SUFX=	.tar.bz2
-.endif
-
-PLIST_SRC=	${PKGDIR}/PLIST
-.if ${BLACKDOWN_ARCH} == "i386"
-PLIST_SRC+=	${PKGDIR}/PLIST.i386
 .endif
 
 REQD_DIRS=	${JVM_HOME}
