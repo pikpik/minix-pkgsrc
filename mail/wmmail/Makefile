@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.30 2006/02/05 23:09:59 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2007/02/06 18:59:42 joerg Exp $
 
 DISTNAME=	WMMail.app-0.64
 PKGNAME=	wmmail-0.64
 PKGREVISION=	3
 CATEGORIES=	mail x11 windowmaker
-MASTER_SITES=	http://www.eecg.utoronto.ca/~chanb/WMMail.app/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	tron@NetBSD.org
-HOMEPAGE=	http://www.eecg.toronto.edu/cgi-bin/cgiwrap/chanb/index.cgi?wmmail
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	xbiff like "mail-checker" for WindowMaker
+
+NO_SRC_ON_FTP=	already in MASTER_SITE_LOCAL
 
 DEPENDS+=	windowmaker>=0.80.0nb1:../../wm/windowmaker
 
