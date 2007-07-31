@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/01/31 00:04:11 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2007/02/22 19:26:29 wiz Exp $
 
 DISTNAME=	vmware-netbsd-1.2
 PKGNAME=	vmware-module-1.2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.wasabisystems.com/
 COMMENT=	Kernel modules for the VMware 2.x emulator
-
-BROKEN_IN=	pkgsrc-2005Q4 pkgsrc-2006Q1 pkgsrc-2006Q4
 
 CONFLICTS=	vmware-module-3*
 
