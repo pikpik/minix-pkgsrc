@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2005/08/06 06:19:11 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/03/04 21:29:21 jlam Exp $
 #
 
 DISTNAME=	FileKGlob
 PKGNAME=	p5-FileKGlob-1.2
 SVR4_PKGNAME=	p5fkg
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
@@ -15,6 +15,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=			${WRKDIR}/File
 PERL5_PACKLIST=		auto/File/KGlob/.packlist
+
+REPLACE_PERL=	KGlob.pm KGlob2RE.pm
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
