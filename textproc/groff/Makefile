@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/07/20 01:05:11 tnn Exp $
+# $NetBSD: Makefile,v 1.43 2007/07/31 14:39:50 joerg Exp $
 #
 
 DISTNAME=	groff-1.19.2
@@ -10,7 +10,7 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/groff/groff.html
 COMMENT=	GNU roff text processing suite
 
-CHECK_PERMS=		YES
+CHECK_PERMS=		NO
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES
