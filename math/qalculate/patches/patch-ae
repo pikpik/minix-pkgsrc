@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/defs2doc.cc.orig	2007-08-01 15:38:32.000000000 +0000
++++ src/defs2doc.cc
+@@ -16,7 +16,7 @@
+ #include <time.h>
+ #include <pthread.h>
+ #include <dirent.h>
+-#include <malloc.h>
++#include <stdlib.h>
+ #include <stdio.h>
+ #include <vector>
+ #include <glib.h>
