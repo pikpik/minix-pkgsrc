@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.4 2007/06/19 00:23:51 joerg Exp $
 
 # Global and legacy options
 
@@ -34,7 +34,7 @@ post-extract:
 	${CP} ${FILESDIR}/grab_bsdbktr.c ${WRKSRC}/libavformat
 
 post-patch:
-	${PATCH} --quiet -d ${WRKSRC} < ${FILESDIR}/bktr.diff
+	${PATCH} -p0 --quiet -d ${WRKSRC} < ${FILESDIR}/bktr.diff
 #TODO
 #Update the documentation
 #	${PATCH} --quiet -d ${WRKSRC} < ${FILESDIR}/ffmpeg.1.diff
