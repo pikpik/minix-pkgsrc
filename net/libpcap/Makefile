@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.35 2007/01/03 13:34:55 adrianp Exp $
+# $NetBSD: Makefile,v 1.36 2007/02/22 19:26:54 wiz Exp $
 
-DISTNAME=		libpcap-0.9.5
+DISTNAME=		libpcap-0.9.7
 SVR4_PKGNAME=		lpcap
 CATEGORIES=		net
 MASTER_SITES=	http://www.tcpdump.org/release/
