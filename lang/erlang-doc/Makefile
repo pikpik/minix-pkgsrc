@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/29 21:40:51 ghen Exp $
 
 DISTNAME=		otp_doc_html_${DIST_VERSION}
 PKGNAME=		erlang-doc-${ERLANG_VERSION}
@@ -12,7 +12,7 @@ COMMENT=		Documentation for Erlang, a concurrent functional programming language
 DIST_SUBDIR=		erlang
 
 # needs erlang installed for its directory structure
-DEPENDS+=		erlang-${ERLANG_VERSION}:../../lang/erlang
+DEPENDS+=		erlang-${ERLANG_VERSION}{,nb*}:../../lang/erlang
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
