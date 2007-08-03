@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/claws-mail/plugins/pgpmime/pgpmime.h
+lib/claws-mail/plugins/pgpmime.deps
+lib/claws-mail/plugins/pgpmime.la
+@dirrm lib/claws-mail/plugins
+@dirrm include/claws-mail/plugins/pgpmime
+@dirrm include/claws-mail/plugins
