@@ -2,6 +2,15 @@ $NetBSD$
 
 --- configure.orig	2007-05-02 21:15:51.000000000 +0200
 +++ configure
+@@ -242,7 +242,7 @@ done
+ #
+ # System-specific flags
+ #
+-SYSTEM=`uname -s`
++SYSTEM=`uname -s | tr -d /-`
+ case $SYSTEM in
+   BeOS)
+     RELEASE=`uname -r`
 @@ -287,16 +287,12 @@ EOF
      PTHREAD=yes
      ;;
