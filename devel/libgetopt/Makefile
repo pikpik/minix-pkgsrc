@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/03/04 21:29:17 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2007/01/07 09:13:51 rillig Exp $
 #
 
 DISTNAME=	libgetopt-1.4.1
@@ -15,8 +15,7 @@ WRKSRC=		${WRKDIR}/libgetopt
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "SunOS"
-MAKEFLAGS+=	NETBSD_COMPATIBLE=YES
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "AIX"
 CFLAGS+=	-DREPLACE_GETOPT
 .endif
 
