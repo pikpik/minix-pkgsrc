@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/stalonetray
+share/examples/stalonetray.rc
+man/man1/stalonetray.1
