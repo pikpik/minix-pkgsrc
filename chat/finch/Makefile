@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/07/28 12:13:33 gdt Exp $
 #
 
 PKGNAME=	finch-${VERSION}
@@ -31,7 +31,7 @@ BUILD_DIRS=finch
 pre-build:
 	# XXX Find a cleaner way.
 	${TEST} -r ${WRKSRC}/libpurple/libpurple.la || \
-	  ${LN} -s ${BUILDLINK_DIR}/lib/libpurple.la ${WRKSRC}/libpurple/.
+	  ln -s ${BUILDLINK_DIR}/lib/libpurple.la ${WRKSRC}/libpurple/.
 
 post-install:
 	${INSTALL_MAN_DIR} ${DESTDIR:Q}${PREFIX:Q}/man/man1
