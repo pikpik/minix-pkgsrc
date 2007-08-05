@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2006/12/10 13:06:45 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.76 2007/06/14 08:12:29 joerg Exp $
 
 DISTNAME=	audit-packages-1.46
 CATEGORIES=	security pkgtools
@@ -10,6 +10,8 @@ COMMENT=	Tools to show vulnerabilities in installed packages
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+CONFLICTS+=	pkg_install>=20070714
 
 USE_TOOLS+=	digest:run
 
