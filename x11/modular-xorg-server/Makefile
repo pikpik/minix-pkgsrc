@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2007/04/03 20:25:44 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2007/04/17 19:07:49 dillo Exp $
 
-DISTNAME=	xorg-server-1.2.0
-PKGREVISION=	2
+DISTNAME=	xorg-server-1.3.0.0
 PKGNAME=	modular-${DISTNAME}
 CATEGORIES=	x11
 MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/xserver/
@@ -46,10 +45,10 @@ CONFIGURE_ENV+=		GLX_DEFINES=${GLX_DEFINES:M*:Q}
 #BUILDLINK_API_DEPENDS.xf86driproto+= xf86driproto>=2.0.3nb1
 post-extract:
 	${LN} -s ${MESA_SRC:Q}/include/GL ${WRKSRC:Q}/GL/glx/GL
-PLIST_SUBST+=		GLX=""
+PLIST_SUBST+=		USE_DRI=""
 .else
 CONFIGURE_ARGS+=	--disable-glx
-PLIST_SUBST+=		GLX="@comment "
+PLIST_SUBST+=		USE_DRI"@comment "
 .endif
 
 BUILD_DEFS+=		VARBASE
