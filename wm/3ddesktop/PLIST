@@ -1,6 +1,8 @@
 @comment $NetBSD$
 bin/3ddesk
 bin/3ddeskd
+man/man1/3ddesk.1
+man/man1/3ddeskd.1
 share/3ddesktop/digits.bmp
 share/examples/3ddesktop/3ddesktop.conf
 @dirrm share/examples/3ddesktop
