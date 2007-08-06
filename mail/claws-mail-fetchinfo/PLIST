@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/claws-mail/plugins/fetchinfo_plugin.la
+@dirrm lib/claws-mail/plugins
