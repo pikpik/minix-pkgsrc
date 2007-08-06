@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/08/04 14:02:10 gdt Exp $
+# $NetBSD: Makefile,v 1.29 2007/08/06 12:54:25 gdt Exp $
 #
 
 DISTNAME=	rpc2-2.6
@@ -11,6 +11,9 @@ HOMEPAGE=	http://www.coda.cs.cmu.edu/
 COMMENT=	CMU (Coda) remote procedure call package
 
 USE_TOOLS+=		gmake perl
+# Right now yacc is not actually used, just checked for.
+USE_TOOLS+=		yacc
+
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
