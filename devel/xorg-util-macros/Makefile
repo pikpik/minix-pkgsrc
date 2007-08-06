@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/01/22 20:33:33 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/04/10 23:33:13 joerg Exp $
 #
 
 DISTNAME=		util-macros-1.1.5
 PKGNAME=		xorg-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/util/
 EXTRACT_SUFX=		.tar.bz2
