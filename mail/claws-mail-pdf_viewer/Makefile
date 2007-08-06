@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2007/08/03 02:34:51 smb Exp $
 #
 
 DISTNAME=pdf_viewer-0.5
@@ -8,6 +8,9 @@ MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	smb@NetBSD.org
 COMMENT=	Enables the viewing of PDF and PostScript attachments
+PKGREVISION=	1
+
+PLIST_SRC+=	PLIST
 
 DEPENDS+=	claws-mail>=2.10.0:../../mail/claws-mail
 
