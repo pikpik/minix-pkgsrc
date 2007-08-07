@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.38 2007/04/16 19:01:28 joerg Exp $
+# $NetBSD: Makefile.common,v 1.39 2007/07/20 16:36:59 joerg Exp $
 
 DISTNAME=	zsh-${ZSH_VERSION}
 CATEGORIES=	shells
@@ -26,6 +26,9 @@ TEXINFO_REQD=		4.0
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "../../mk/bsd.prefs.mk"
+
+# Handle any PKG_OPTIONS that this package might have.
+.sinclude "options.mk"
 
 BUILD_DEFS+=	ZSH_STATIC
 

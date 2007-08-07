@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/03/11 13:20:15 uebayasi Exp $
-
-.include "options.mk"
+# $NetBSD: Makefile,v 1.9 2006/03/18 01:02:21 uebayasi Exp $
 
 .include "../../shells/zsh/Makefile.common"
 
