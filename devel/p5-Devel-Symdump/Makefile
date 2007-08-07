@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2006/03/10 10:14:51 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.21 2006/10/21 07:54:47 obache Exp $
 #
 
-DISTNAME=	Devel-Symdump-2.0604
-PKGNAME=	p5-${DISTNAME}
+DISTNAME=	Devel-Symdump-2.07
+PKGNAME=	p5-${DISTNAME}00
 SVR4_PKGNAME=	p5dsd
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Devel/}
