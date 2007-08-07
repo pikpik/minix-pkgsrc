@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.common,v 1.1 2006/07/14 21:41:42 jlam Exp $
+# $NetBSD: Makefile.common,v 1.2 2007/07/11 19:27:18 tron Exp $
 
-DISTNAME=		tnftp-20050625
+DISTNAME=		tnftp-20070806
 SVR4_PKGNAME=		tnftp
 MASTER_SITES=		# empty
 DISTFILES=		# empty
