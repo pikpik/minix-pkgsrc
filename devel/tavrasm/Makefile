@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/09/09 02:41:58 obache Exp $
+# $NetBSD: Makefile,v 1.14 2006/10/01 21:03:36 dillo Exp $
 #
 
 DISTNAME=	tavrasm
@@ -10,11 +10,9 @@ MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://www.tavrasm.org/
 COMMENT=	Assembler for the Atmel AVR series of microcontrollers
 
-BUILD_DEPENDS+=	bison-[0-9]*:../../devel/bison
-
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV:S/.//:S/-/./}
 BUILD_DIRS=	src
-USE_TOOLS+=	lex
+USE_TOOLS+=	lex bison
 MAKE_FILE=	makefile
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
