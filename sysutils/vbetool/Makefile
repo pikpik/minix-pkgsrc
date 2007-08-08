@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/08/08 12:36:37 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2007/08/08 15:55:28 xtraeme Exp $
 #
 
 DISTNAME=	vbetool_0.7-1
 PKGNAME=	${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.srcf.ucam.org/~mjg59/vbetool/
 
