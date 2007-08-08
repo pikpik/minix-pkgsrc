@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/06/03 10:55:10 ghen Exp $
+# $NetBSD: Makefile,v 1.49 2007/06/03 10:55:36 ghen Exp $
 
 DISTNAME=		scribus-1.3.3.9
 CATEGORIES=		print
@@ -8,6 +8,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.scribus.net/
 COMMENT=		Publishing layout with graphical interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl
 USE_LANGUAGES=		c c++
