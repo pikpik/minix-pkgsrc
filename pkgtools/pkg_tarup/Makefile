@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/02/22 19:27:02 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2007/08/09 13:29:02 joerg Exp $
 
 DISTNAME=	pkg_tarup-1.6.6
 CATEGORIES=	pkgtools
@@ -28,7 +28,7 @@ SCRIPT_SUBST+=	\
 		PKG_SUFX=${PKG_SUFX:Q}			\
 		PREFIX=${PREFIX:Q}			\
 		PKG_TOOLS_BIN=${PKG_TOOLS_BIN:Q}	\
-		ROOT_USER=${ROOT_USER:Q}		\
+		ROOT_USER=${REAL_ROOT_USER:Q}		\
 		SED=${SED:Q}				\
 		SH=${SH:Q}				\
 		SU_CMD=${SU_CMD:Q}			\
