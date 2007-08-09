@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2007/06/05 05:37:30 wiz Exp $
+# $NetBSD: Makefile,v 1.122 2007/08/04 14:14:30 obache Exp $
 #
 
 DISTNAME=		gnumeric-1.6.3
@@ -28,9 +28,6 @@ GCONF2_SCHEMAS=		gnumeric-dialogs.schemas gnumeric-general.schemas \
 PLIST_SUBST+=	PERL="@comment "
 #.include "../../lang/perl5/buildlink3.mk"
 
-BUILDLINK_API_DEPENDS.libgda+=	libgda>=1.9.103
-.include "../../databases/libgda/buildlink3.mk"
-.include "../../databases/libgnomedb/buildlink3.mk"
 .include "../../devel/libgsf/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/atk/buildlink3.mk"
