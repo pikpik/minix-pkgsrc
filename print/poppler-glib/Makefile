@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/01/28 00:14:46 dillo Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 19:27:05 wiz Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -28,9 +28,11 @@ BUILD_DIRS=		${WRKSRC}/goo ${WRKSRC}/fofi ${WRKSRC}/poppler \
 			${WRKSRC}/glib
 INSTALL_DIRS=		${WRKSRC}/glib
 
+INSTALLATION_DIRS+=	lib/pkgconfig
+
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/poppler-cairo.pc ${PREFIX}/lib/pkgconfig
-	${INSTALL_DATA} ${WRKSRC}/poppler-glib.pc ${PREFIX}/lib/pkgconfig
+	${INSTALL_DATA} ${WRKSRC}/poppler-cairo.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
+	${INSTALL_DATA} ${WRKSRC}/poppler-glib.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
