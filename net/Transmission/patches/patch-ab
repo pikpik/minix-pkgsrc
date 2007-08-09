@@ -1,6 +1,6 @@
 $NetBSD$
 
---- mk/common.mk.orig	2007-05-02 21:15:51.000000000 +0200
+--- mk/common.mk.orig	2007-08-07 16:21:52.000000000 +0200
 +++ mk/common.mk
 @@ -2,3 +2,3 @@
  
@@ -23,6 +23,6 @@ $NetBSD$
  	@echo "Install $<"
 -	@$(MKDIR) $(DESTDIR)$(PREFIX)/man/man1
 -	@$(CP) $< $(DESTDIR)$(PREFIX)/man/man1/
-+	@$(MKDIR) $(PREFIX)/${PKGMANDIR}/man1
-+	@$(CP) $< $(PREFIX)/${PKGMANDIR}/man1/
++	@$(MKDIR) $(DESTDIR)$(PREFIX)/${PKGMANDIR}/man1
++	@$(CP) $< $(DESTDIR)$(PREFIX)/${PKGMANDIR}/man1/
  endef
