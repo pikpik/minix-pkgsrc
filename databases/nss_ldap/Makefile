@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2007/01/02 12:24:00 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2007/06/15 16:42:19 manu Exp $
 #
 
 DISTNAME=		nss_ldap-240
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		databases
 MASTER_SITES=		http://www.padl.com/download/
 
