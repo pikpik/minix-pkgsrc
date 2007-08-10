@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/www_fns.c.orig	2007-08-10 13:11:03.000000000 +0000
++++ src/www_fns.c
+@@ -42,7 +42,6 @@
+ #include "ui_fns.h"
+ #include <tcl.h>
+ #include <tk.h>
+-#include <malloc.h>
+ #include <string.h>
+ #include <fcntl.h>
+ #include <errno.h>
