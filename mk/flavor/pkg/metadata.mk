@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.23 2007/06/04 00:07:48 heinz Exp $
+# $NetBSD: metadata.mk,v 1.24 2007/07/02 14:54:10 joerg Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -374,10 +374,10 @@ ${_CONTENTS_FILE}: ${_CONTENTS_TARGETS}
 	${PKG_CREATE} ${_PKG_ARGS_INSTALL} -O ${PKGFILE:T} > ${.TARGET}
 
 ######################################################################
-### generate-metadata (PRIVATE)
+### _flavor-generate-metadata (PRIVATE)
 ######################################################################
-### generate-metadata is a convenience target for generating all of
-### the pkgsrc binary package meta-data files.  It populates
+### _flavor-generate-metadata is a convenience target for generating
+### all of the pkgsrc binary package meta-data files.  It populates
 ### ${PKG_DB_TMPDIR} with the following files:
 ###
 ###	+BUILD_INFO
@@ -392,15 +392,15 @@ ${_CONTENTS_FILE}: ${_CONTENTS_TARGETS}
 ###
 ### See the targets above for descriptions of each of those files.
 ###
-.PHONY: generate-metadata
-generate-metadata: ${_METADATA_TARGETS}
+.PHONY: _flavor-generate-metadata
+_flavor-generate-metadata: ${_METADATA_TARGETS}
 
 ######################################################################
-### clean-metadata (PRIVATE)
+### _flavor-clean-metadata (PRIVATE)
 ######################################################################
-### clean-metadata is a convenience target for removing the meta-data
-### directory.
+### _flavor-clean-metadata is a convenience target for removing the
+### meta-data directory.
 ###
-.PHONY: clean-metadata
-clean-metadata:
+.PHONY: _flavor-clean-metadata
+_flavor-clean-metadata:
 	${_PKG_SILENT}${_PKG_DEBUG}${RM} -fr ${PKG_DB_TMPDIR}
