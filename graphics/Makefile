@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.463 2007/07/13 15:13:08 drochner Exp $
+# $NetBSD: Makefile,v 1.464 2007/07/29 12:29:13 adrianp Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -136,6 +136,7 @@ SUBDIR+=	gthumb
 SUBDIR+=	gtkam
 SUBDIR+=	gtkglext
 SUBDIR+=	gtksee
+SUBDIR+=	guile-cairo
 SUBDIR+=	gwenview
 SUBDIR+=	gwenview-i18n
 SUBDIR+=	h5utils
