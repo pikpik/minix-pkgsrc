@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.138 2007/08/03 15:12:43 joerg Exp $
+# $NetBSD: Makefile,v 1.139 2007/08/04 12:32:01 joerg Exp $
 
 # Notes to package maintainers:
-#
-# To update this package, import from src/usr.sbin/pkg_install.
 #
 # Updating this package does not automatically necessitate bumping
 # PKGTOOLS_REQD in bsd.pkg.mk. Do so if and only if there is a critical
