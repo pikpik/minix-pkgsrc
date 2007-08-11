@@ -1,8 +1,8 @@
 $NetBSD$
 
---- include/net-snmp/net-snmp-config.h.in.orig	2006-10-12 11:54:57.000000000 +0200
+--- include/net-snmp/net-snmp-config.h.in.orig	2007-07-19 23:00:35.000000000 +0200
 +++ include/net-snmp/net-snmp-config.h.in
-@@ -1418,6 +1418,7 @@
+@@ -1460,6 +1460,7 @@
  #define NETSNMP_HPUX11ID 14
  #define NETSNMP_AIXID 15
  #define NETSNMP_MACOSXID 16
@@ -10,7 +10,7 @@ $NetBSD$
  #define NETSNMP_UNKNOWNID 255
  
  #ifdef hpux9
-@@ -1447,6 +1448,9 @@
+@@ -1489,6 +1490,9 @@
  #if defined(__FreeBSD__)
  #define NETSNMP_OSTYPE NETSNMP_FREEBSDID
  #endif
