@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2007/01/07 09:14:06 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2007/03/24 19:21:30 joerg Exp $
 
 DISTNAME=	radiusd-cistron-1.6.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/ \
 		ftp://ftp.freeradius.org/pub/radius/
@@ -12,6 +12,9 @@ COMMENT=	RADIUS-compliant remote authentication and accounting server
 
 CONFLICTS+=	freeradius-[0-9]*
 
+USE_TOOLS+=	perl:run
+
+REPLACE_PERL=	src/checkrad.pl
 
 MAKE_FILE=	Makefile.BSD
 BUILD_DIRS=	${WRKSRC}/src
@@ -52,13 +55,5 @@ post-install:
 .for i in	radiusd.8 radrelay.8 radwatch.8
 	${INSTALL_MAN} ${WRKSRC}/doc/${i} ${PREFIX}/${PKGMANDIR}/man8/
 .endfor
-
-# The sources assume <malloc.h> exists.  Create a fake one for platforms
-# that don't have it.
-post-wrapper:
-	if ${TEST} ! -f /usr/include/malloc.h; then		\
-		${ECHO} "#include <stdlib.h>"			\
-			> ${BUILDLINK_DIR}/include/malloc.h;	\
-	fi
 
 .include "../../mk/bsd.pkg.mk"
