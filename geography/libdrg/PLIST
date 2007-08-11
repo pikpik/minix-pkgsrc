@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/drg_tiff.h
+lib/libdrg.la
+lib/pkgconfig/libdrg.pc
