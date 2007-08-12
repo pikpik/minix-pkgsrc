@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/02 08:27:43 agc Exp $
+# $NetBSD: Makefile,v 1.2 2007/06/12 16:16:56 joerg Exp $
 #
 
 DISTNAME=	nucleo-0.6
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://insitu.lri.fr/metisse/download/0.4.0-rc4/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,6 +16,9 @@ USE_TOOLS+=	pkg-config
 USE_LANGUAGES+=	c c++
 USE_LIBTOOL=	yes
 
+REPLACE_PYTHON+=	docs/MacOSX/nBundle.in
+
+.include "../../lang/python/application.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
