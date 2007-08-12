@@ -1,6 +1,6 @@
-$NetBSD: patch-af,v 1.5 2006/01/19 12:53:17 adam Exp $
+$NetBSD$
 
---- src/glu/sgi/Makefile.orig	2005-07-26 07:55:56.000000000 +0200
+--- src/glu/sgi/Makefile.orig	2007-06-22 00:10:54.000000000 +0200
 +++ src/glu/sgi/Makefile
 @@ -115,9 +115,11 @@ OBJECTS = $(C_OBJECTS) $(CC_OBJECTS)
  ##### RULES #####
@@ -14,13 +14,13 @@ $NetBSD: patch-af,v 1.5 2006/01/19 12:53:17 adam Exp $
  	$(CXX) -c $(INCDIRS) $(CXXFLAGS) -DNDEBUG -DLIBRARYBUILD $< -o $@
  
  
-@@ -136,10 +138,9 @@ $(LIB_DIR):
+@@ -136,10 +138,9 @@ $(TOP)/$(LIB_DIR):
  
  # Make the library:
- $(LIB_DIR)/$(GLU_LIB_NAME): $(OBJECTS)
+ $(TOP)/$(LIB_DIR)/$(GLU_LIB_NAME): $(OBJECTS)
 -	$(TOP)/bin/mklib -o $(GLU_LIB) -linker '$(CXX)' \
 -		-major $(GLU_MAJOR) -minor $(GLU_MINOR) -patch $(GLU_TINY) \
--		-cplusplus $(MKLIB_OPTIONS) -install $(LIB_DIR) \
+-		-cplusplus $(MKLIB_OPTIONS) -install $(TOP)/$(LIB_DIR) \
 -		$(GLU_LIB_DEPS) $(OBJECTS)
 +	${LIBTOOL} --tag=CXX --mode=link ${CXX} -o ${GLU_LIB_NAME:.so=.la} \
 +		${OBJECTS:.o=.lo} -rpath ${PREFIX}/lib \
