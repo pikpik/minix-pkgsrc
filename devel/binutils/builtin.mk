@@ -1,14 +1,21 @@
-# $NetBSD: builtin.mk,v 1.4 2006/04/06 06:21:44 reed Exp $
+# $NetBSD: builtin.mk,v 1.5 2007/05/29 12:25:03 martti Exp $
+
+BINUTILS_PREFIX?=	/usr
 
 BUILTIN_PKG:=	binutils
+BUILTIN_FIND_FILES_VAR := BINUTILS_FILES
+BUILTIN_FIND_FILES.BINUTILS_FILES := ${BINUTILS_PREFIX}/include/bfd.h
 .include "../../mk/buildlink3/bsd.builtin.mk"
 
 ###
 ### Determine if there is a built-in implementation of the package and
 ### set IS_BUILTIN.<pkg> appropriately ("yes" or "no").
 ###
-# XXX Assume that the base OS always provides a built-in binutils.
+.if !empty(BINUTILS_FILES:N__nonexistent__)
 IS_BUILTIN.binutils?=	yes
+.else
+IS_BUILTIN.binutils?=	no
+.endif
 
 ###
 ### Determine whether we should use the built-in implementation if it
