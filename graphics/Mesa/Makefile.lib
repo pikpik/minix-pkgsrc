@@ -45,7 +45,7 @@ BUILD_TARGET=		pkgsrc
 .PHONY: Mesa-install-libs
 pre-install: Mesa-install-libs
 Mesa-install-libs:
-	${TEST} -z ${INSTLIBS:M*:Q}"" || ${ECHO_MSG} "Installing libraries."
+	@${TEST} -z ${INSTLIBS:M*:Q}"" || ${ECHO_MSG} "Installing libraries."
 	@for lib in "" ${INSTLIBS}; do					\
 		${TEST} -n "$$lib" || continue;				\
 		${SETENV} ${MAKE_ENV}					\

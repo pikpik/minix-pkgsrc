@@ -18,19 +18,19 @@ MAKE_FLAGS+=	LIB_DEP=""
 .include "../../graphics/Mesa/buildlink3.mk"
 
 pre-build:
-	cd ${WRKSRC} && rm -fr src
+	cd ${WRKSRC} && ${RM} -fr src
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}/${dir}
-	cd ${WRKSRC}/progs && pax	\
+	cd ${WRKSRC}/progs && ${PAX}		\
 		-s ',^./.*Makefile.*,,'	\
-		-s ',^./CVS.*,,'	\
-		-s ',^./.*\.o$$,,'	\
-		-s ',^./\.libs.*,,'	\
-		-s ',^./\.deps.*,,'	\
-		-s ',^./.*\.orig$$,,'	\
+		-s ',^./CVS.*,,'		\
+		-s ',^./.*\.o$$,,'		\
+		-s ',^./\.libs.*,,'		\
+		-s ',^./\.deps.*,,'		\
+		-s ',^./.*\.orig$$,,'		\
 		-rw . ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}/${dir}
-	chmod -R a+rX ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}
+	${CHMOD} -R a+rX ${DESTDIR}${PREFIX}/share/examples/${PKGNAME_NOREV}
 
 .include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"

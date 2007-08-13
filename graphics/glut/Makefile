@@ -19,7 +19,7 @@ INSTLIBS=	${WRKSRC}/src/glut/glx/libglut.la
 .include "../../graphics/glu/buildlink3.mk"
 
 pre-build:
-	cd ${WRKSRC} && rm -fr src/mesa src/glu src/glw progs
+	cd ${WRKSRC} && ${RM} -fr src/mesa src/glu src/glw progs
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/include/GL
