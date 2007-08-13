@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.376 2007/07/28 08:25:31 seb Exp $
+# $NetBSD: Makefile,v 1.377 2007/07/28 09:57:16 seb Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -373,4 +373,4 @@ SUBDIR+=	xslide
 SUBDIR+=	xt
 SUBDIR+=	yodl
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

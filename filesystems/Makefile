@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/07/09 19:04:55 agc Exp $
+# $NetBSD: Makefile,v 1.19 2007/08/09 21:43:57 agc Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -24,4 +24,4 @@ SUBDIR+=	fuse-wikipediafs
 SUBDIR+=	py-fuse-bindings
 SUBDIR+=	u9fs
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

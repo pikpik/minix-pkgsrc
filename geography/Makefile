@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/07/28 11:10:05 gdt Exp $
+# $NetBSD: Makefile,v 1.18 2007/08/11 02:54:08 gdt Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -29,4 +29,4 @@ SUBDIR+=	xrmap-flags
 SUBDIR+=	xrmap-hymns
 SUBDIR+=	xrmap-pdfmaps
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

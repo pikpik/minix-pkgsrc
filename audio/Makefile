@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.359 2007/07/13 14:52:07 drochner Exp $
+# $NetBSD: Makefile,v 1.360 2007/07/17 19:25:56 drochner Exp $
 #
 
 COMMENT=	Audio tools
@@ -366,4 +366,4 @@ SUBDIR+=	xmradio
 SUBDIR+=	xsidplay
 SUBDIR+=	xwave
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

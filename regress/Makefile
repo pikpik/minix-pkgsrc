@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/09/06 03:37:54 ben Exp $
+# $NetBSD: Makefile,v 1.16 2007/03/07 21:22:20 rillig Exp $
 #
 
 COMMENT=	Regression tests for pkgsrc infrastructure
@@ -18,4 +18,4 @@ SUBDIR+=	print-plist
 SUBDIR+=	subst
 SUBDIR+=	tools
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

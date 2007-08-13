@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2007/03/08 21:56:40 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2007/05/09 02:41:33 dmcmahill Exp $
 #
 
 COMMENT=	CAD tools
@@ -77,4 +77,4 @@ SUBDIR+=	wcalc-docs
 SUBDIR+=	xchiplogo
 SUBDIR+=	xcircuit
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

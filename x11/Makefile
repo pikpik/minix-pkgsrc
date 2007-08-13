@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.514 2007/08/06 14:58:13 tron Exp $
+# $NetBSD: Makefile,v 1.515 2007/08/08 17:42:51 joerg Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -518,4 +518,4 @@ SUBDIR+=	xwud
 SUBDIR+=	xxkb
 SUBDIR+=	zenity
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

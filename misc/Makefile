@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.280 2007/07/05 19:37:40 agc Exp $
+# $NetBSD: Makefile,v 1.281 2007/07/17 19:04:36 drochner Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -211,4 +211,4 @@ SUBDIR+=	yelp
 SUBDIR+=	yrolo
 SUBDIR+=	zorro
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

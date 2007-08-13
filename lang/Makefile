@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.242 2007/06/04 23:40:09 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.243 2007/06/05 05:50:16 wiz Exp $
 #
 
 COMMENT=	Programming languages
@@ -185,4 +185,4 @@ SUBDIR+=	wsbasic
 SUBDIR+=	yabasic
 SUBDIR+=	yap
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

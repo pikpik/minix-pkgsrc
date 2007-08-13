@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/05/20 15:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/07/02 16:36:33 wulf Exp $
 #
 
 COMMENT=	Wireless communication tools and applications
@@ -36,4 +36,4 @@ SUBDIR+=	xdx
 SUBDIR+=	xlog
 SUBDIR+=	yaesu
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"

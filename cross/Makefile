@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2004/11/20 16:26:04 minskim Exp $
+# $NetBSD: Makefile,v 1.40 2005/04/22 19:07:12 wiz Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -25,4 +25,4 @@ SUBDIR+=	icdprog
 SUBDIR+=	mipsEEel-netbsd
 SUBDIR+=	uisp
 
-.include "../mk/bsd.pkg.subdir.mk"
+.include "../mk/misc/category.mk"
