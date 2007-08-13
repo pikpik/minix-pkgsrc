@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 18:27:54 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/04 16:26:53 joerg Exp $
 
 MODNAME=		dba
 CATEGORIES+=		databases
@@ -17,7 +17,7 @@ CONFIGURE_ARGS+=	--without-dbm
 CONFIGURE_ARGS+=	--without-gdbm
 CONFIGURE_ARGS+=	--with-ndbm=/usr
 .else
-CONFIGURE_ARGS+=	--with-gdbm=shared,${BUILDLINK_PREFIX.gdbm}
+CONFIGURE_ARGS+=	--with-gdbm=${BUILDLINK_PREFIX.gdbm}
 CONFIGURE_ARGS+=	--without-ndbm
 .include "../../databases/gdbm/buildlink3.mk"
 .endif
