@@ -1,4 +1,4 @@
-# $NetBSD: patch.mk,v 1.10 2006/07/21 14:21:28 jlam Exp $
+# $NetBSD: patch.mk,v 1.11 2006/07/22 16:31:35 jlam Exp $
 #
 # The following variables may be set in a package Makefile and control
 # how pkgsrc patches are applied.
@@ -126,7 +126,7 @@ patch-cookie:
 ###
 .PHONY: pre-patch do-patch post-patch
 
-.if defined(PATCHFILES)
+.if !empty(PATCHFILES)
 _PKGSRC_PATCH_TARGETS+=	distribution-patch-message
 _PKGSRC_PATCH_TARGETS+=	do-distribution-patch
 .endif
