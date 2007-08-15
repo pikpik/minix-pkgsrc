@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/16 21:25:57 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/06/19 09:39:13 joerg Exp $
 #
 
-DISTNAME=		xmessage-1.0.1
+DISTNAME=		xmessage-1.0.2
 CATEGORIES=		x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/app/
 EXTRACT_SUFX=		.tar.bz2
