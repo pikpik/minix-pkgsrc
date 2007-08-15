@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/04/12 18:03:35 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/06/19 09:39:12 joerg Exp $
 #
 
-DISTNAME=		xgamma-1.0.1
+DISTNAME=		xgamma-1.0.2
 CATEGORIES=		x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/app/
 EXTRACT_SUFX=		.tar.bz2
