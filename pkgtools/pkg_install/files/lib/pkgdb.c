@@ -1,4 +1,4 @@
-/*	$NetBSD: pkgdb.c,v 1.25 2006/01/04 23:33:23 christos Exp $	*/
+/*	$NetBSD: pkgdb.c,v 1.26 2007/08/09 23:18:31 joerg Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: pkgdb.c,v 1.25 2006/01/04 23:33:23 christos Exp $");
+__RCSID("$NetBSD: pkgdb.c,v 1.26 2007/08/09 23:18:31 joerg Exp $");
 #endif
 
 /*
@@ -314,7 +314,7 @@ _pkgdb_getPKGDB_FILE(char *buf, unsigned size)
 /*
  *  Return directory where pkgdb is stored
  */
-char *
+const char *
 _pkgdb_getPKGDB_DIR(void)
 {
 	char *tmp;
