@@ -1,4 +1,4 @@
-# $NetBSD: checksum.mk,v 1.4 2007/03/07 01:06:11 rillig Exp $
+# $NetBSD: checksum.mk,v 1.5 2007/08/14 19:08:18 jlam Exp $
 #
 # See bsd.checksum.mk for helpful comments.
 #
@@ -16,7 +16,8 @@ DO_CHECKSUM_REPEATEDLY?=	no
 
 _CHECKSUM_CMD=								\
 	${SETENV} DIGEST=${TOOLS_DIGEST:Q} CAT=${TOOLS_CAT:Q}		\
-		ECHO=${TOOLS_ECHO:Q} TEST=${TOOLS_TEST:Q}		\
+		ECHO=${TOOLS_ECHO:Q} SED=${TOOLS_SED:Q}			\
+		TEST=${TOOLS_TEST:Q}					\
 	${SH} ${PKGSRCDIR}/mk/checksum/checksum				\
 
 _COOKIE.checksum=	${WRKDIR}/.checksum_done
