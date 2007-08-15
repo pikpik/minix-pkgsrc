@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2007/04/14 07:07:15 wiz Exp $
+# $NetBSD: Makefile,v 1.97 2007/08/13 08:12:41 rillig Exp $
 #
 
 COMMENT=	Archivers
@@ -10,6 +10,7 @@ SUBDIR+=	arc
 SUBDIR+=	archangel
 SUBDIR+=	arj
 SUBDIR+=	bicom
+SUBDIR+=	bsdtar
 SUBDIR+=	bunzip
 SUBDIR+=	bzip2
 SUBDIR+=	cabextract
