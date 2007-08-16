@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2006/05/22 22:22:02 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/10/19 19:37:38 wiz Exp $
 #
 
-DISTNAME=		compat14-${MACHINE_ARCH}-${VERSION}
+DISTNAME=		compat14-crypto-${MACHINE_ARCH}-${VERSION}
 PKGNAME=		compat14-${VERSION}
 PKGREVISION=		1
 CATEGORIES=		emulators
@@ -13,15 +13,16 @@ COMMENT=		Shared libraries for NetBSD 1.4 (and earlier) compatibility
 
 VERSION=		1.4.3.1
 
-CONFLICTS=		compat14-crypto-[0-9]*
+CONFLICTS=		compat14-[0-9]*
 
 ONLY_FOR_PLATFORM=	NetBSD-*-sparc NetBSD-*-i386
 NOT_FOR_PLATFORM=	NetBSD-1.3*-* NetBSD-1.4*-*
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
-NO_MTREE=		yes
-NO_BUILD=		yes
+CRYPTO=			YES
+
 CHECK_SHLIBS_SUPPORTED=	no
+BUILD_DIRS=		# empty
 
 FILES_SUBST+=		COMPAT_LIBDIR=${COMPAT_LIBDIR:Q}
 FILES_SUBST+=		COMPAT_XLIBDIR=${COMPAT_XLIBDIR:Q}
