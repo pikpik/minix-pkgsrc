@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2007/07/29 08:55:22 jlam Exp $
+# $NetBSD: Makefile,v 1.161 2007/08/13 08:12:45 rillig Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -24,7 +24,6 @@ SUBDIR+=	ckmame
 SUBDIR+=	compat12
 SUBDIR+=	compat13
 SUBDIR+=	compat14
-SUBDIR+=	compat14-crypto
 SUBDIR+=	compat16
 SUBDIR+=	cygwin_esound
 SUBDIR+=	cygwin_lib
