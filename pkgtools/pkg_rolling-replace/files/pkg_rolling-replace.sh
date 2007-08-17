@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $NetBSD: pkg_rolling-replace.sh,v 1.12 2007/08/06 15:07:56 tnn Exp $
+# $NetBSD: pkg_rolling-replace.sh,v 1.13 2007/08/08 11:28:04 tnn Exp $
 #<license>
 # Copyright (c) 2006 BBN Technologies Corp.  All rights reserved.
 #
@@ -320,7 +320,7 @@ while [ -n "$REPLACE_TODO" ]; do
             break;
         fi
     done
-    pkgdir=$(${PKG_INFO} -Bq $pkg | awk -F= '/PKGPATH=/{print $2}')
+    pkgdir=$(${PKG_INFO} -Bq $pkg | awk -F= '/PKGPATH=/{print $2}' | sed -e 's/^ //')
     echo "${OPI} Selecting $pkg ($pkgdir) as next package to replace"
     sleep 1
 
