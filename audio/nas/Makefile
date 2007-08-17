@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2007/05/05 21:31:09 markd Exp $
+# $NetBSD: Makefile,v 1.76 2007/08/15 08:12:17 markd Exp $
 
 DISTNAME=	nas-1.9.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -10,6 +10,7 @@ HOMEPAGE=	http://nas.sourceforge.net
 COMMENT=	Network Audio System
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 # 1) uses dia library before it is built
 # 2) make succeeds even with failures, making this problem non-obvious
