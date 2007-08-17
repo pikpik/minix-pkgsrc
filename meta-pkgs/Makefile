@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2007/08/13 08:12:47 rillig Exp $
+# $NetBSD: Makefile,v 1.41 2007/08/16 01:46:23 joerg Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -32,6 +32,5 @@ SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop
 SUBDIR+=	xfce4
 SUBDIR+=	xfce4-extras
-SUBDIR+=	xorg
 
 .include "../mk/misc/category.mk"
