@@ -1,4 +1,4 @@
-# $NetBSD: x11.version.mk,v 1.5 2006/09/27 15:18:15 joerg Exp $
+# $NetBSD: x11.version.mk,v 1.6 2006/10/26 17:08:08 rillig Exp $
 #
 # The following variables may be set in /etc/mk.conf:
 #
@@ -25,7 +25,6 @@
 #
 
 X11_PKGSRCDIR.native=	../../pkgtools/x11-links
-X11_PKGSRCDIR.xorg=	../../x11/xorg-libs
 
 # Makefiles that include this file can access the version of the X11
 # distribution as ${BUILTIN_X11_VERSION.${X11_TYPE}}.
