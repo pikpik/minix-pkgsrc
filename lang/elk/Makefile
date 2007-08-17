@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/06/02 16:39:15 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2006/08/17 23:51:33 adam Exp $
 
 DISTNAME=	elk-3.99.7
 CATEGORIES=	lang
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sam.zoy.org/elk/
 COMMENT=	Embeddable Scheme interpreter
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
