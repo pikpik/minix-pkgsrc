@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2007/02/20 14:30:00 joerg Exp $
+# $NetBSD: Makefile,v 1.57 2007/03/02 20:48:09 abs Exp $
 
 DISTNAME=		magicpoint-1.10a
 PKGREVISION=		11
@@ -77,12 +77,11 @@ CONFIGURE_ARGS+=	--disable-${engine}
 
 .if !empty(PKG_OPTIONS:Mxft2)
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/libXmu/buildlink3.mk"
 .endif
-
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/netpbm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
