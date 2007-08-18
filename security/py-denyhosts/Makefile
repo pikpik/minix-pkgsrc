@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/08/02 17:27:30 he Exp $
 #
 
 VER=		2.6
 DISTNAME=	DenyHosts-${VER}
 PKGNAME=	${PYPKGPREFIX}-denyhosts-${VER}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=denyhosts/}
 
