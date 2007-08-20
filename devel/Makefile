@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.881 2007/08/13 08:12:45 rillig Exp $
+# $NetBSD: Makefile,v 1.882 2007/08/14 00:12:54 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -43,6 +43,7 @@ SUBDIR+=	as31
 SUBDIR+=	asm2html
 SUBDIR+=	astyle
 SUBDIR+=	at-spi
+SUBDIR+=	atf
 SUBDIR+=	atk
 SUBDIR+=	autoconf
 SUBDIR+=	autoconf213
