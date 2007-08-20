@@ -1,4 +1,4 @@
-# $NetBSD: deinstall.mk,v 1.7 2006/11/03 08:04:06 joerg Exp $
+# $NetBSD: deinstall.mk,v 1.8 2007/03/09 00:39:55 rillig Exp $
 
 # DEINSTALLDEPENDS controls whether dependencies and dependents are also
 # removed when a package is de-installed.  The valid values are:
@@ -16,9 +16,16 @@ DEINSTALLDEPENDS?=	no
 ### It will acquire elevated privileges just-in-time.
 ###
 .PHONY: deinstall su-deinstall
-.if !target(deinstall)
+.if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
+.  if !target(deinstall)
+deinstall: su-deinstall
+	@${PHASE_MSG} "Deinstalling for ${PKGNAME}"
+.  endif
+.else
+.  if !target(deinstall)
 deinstall: su-target
 	@${PHASE_MSG} "Deinstalling for ${PKGNAME}"
+.  endif
 .endif
 
 _SU_DEINSTALL_TARGETS=	acquire-deinstall-lock
