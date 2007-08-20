@@ -1,4 +1,4 @@
-# $NetBSD: tools.FreeBSD.mk,v 1.29 2007/06/19 14:21:19 joerg Exp $
+# $NetBSD: tools.FreeBSD.mk,v 1.30 2007/06/19 17:01:12 joerg Exp $
 #
 # System-supplied tools for the FreeBSD operating system.
 
@@ -62,6 +62,7 @@ TOOLS_PLATFORM.patch?=		/usr/bin/patch
 TOOLS_PLATFORM.pax?=		/bin/pax
 TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.pwd?=		/bin/pwd
+TOOLS_PLATFORM.readelf?=	/usr/bin/readelf
 TOOLS_PLATFORM.rm?=		/bin/rm
 TOOLS_PLATFORM.rmdir?=		/bin/rmdir
 TOOLS_PLATFORM.sdiff?=		/usr/bin/sdiff
