@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.4 2005/11/21 02:06:50 ben Exp $
+$NetBSD: patch-aa,v 1.5 2006/01/26 04:48:26 ben Exp $
 
 --- tools/check-updates.pl.orig	2006-01-05 11:55:12.000000000 +0000
 +++ tools/check-updates.pl

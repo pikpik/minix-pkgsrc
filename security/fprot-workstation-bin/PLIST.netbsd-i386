@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2005/03/20 14:14:26 ben Exp $
+@comment $NetBSD: PLIST,v 1.7 2005/11/21 02:06:50 ben Exp $
 bin/f-prot
 libexec/fprot-workstation-bin/ENGLISH.TX0
 libexec/fprot-workstation-bin/f-prot
