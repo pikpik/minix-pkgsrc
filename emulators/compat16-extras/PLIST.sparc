@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/X11R6/lib/libX11.so.6.1
+${EMULSUBDIRSLASH}usr/X11R6/lib/libXext.so.6.3
+${EMULSUBDIRSLASH}usr/X11R6/lib/libXmu.so.6.0

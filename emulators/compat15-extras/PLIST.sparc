@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/X11R6/lib/libPEX5.so.6
+${EMULSUBDIRSLASH}usr/X11R6/lib/libPEX5.so.6.0
+${EMULSUBDIRSLASH}usr/X11R6/lib/libXIE.so.6
+${EMULSUBDIRSLASH}usr/X11R6/lib/libXIE.so.6.0

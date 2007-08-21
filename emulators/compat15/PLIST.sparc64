@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libutil.so.5.2

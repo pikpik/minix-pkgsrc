@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libkvm.so.5.0

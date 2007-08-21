@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libkafs.so.2.0

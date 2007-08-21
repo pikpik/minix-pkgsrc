@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libform.so.4
+${EMULSUBDIRSLASH}usr/lib/libform.so.4.0
+${EMULSUBDIRSLASH}usr/lib/libpci.so.0
+${EMULSUBDIRSLASH}usr/lib/libpci.so.0.0
+@dirrm ${EMULSUBDIRSLASH}usr/lib
+@dirrm ${EMULSUBDIRSLASH}usr
