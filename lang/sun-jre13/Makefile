@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2006/09/27 06:48:56 rillig Exp $
+# $NetBSD: Makefile,v 1.49 2007/07/29 05:19:28 jlam Exp $
 
 DISTNAME=	j2re-1_3_1_19-linux-${DIST_ARCH}
 PKGNAME=	sun-jre13-1.0.19
+PKGREVISION=	1
 MASTER_SITES=	# empty
 
 COMMENT=	Sun's Java(tm) Runtime Environment 1.3.1
