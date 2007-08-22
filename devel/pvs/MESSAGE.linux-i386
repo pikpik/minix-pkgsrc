@@ -1,0 +1,10 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.2 2005/09/02 02:27:11 jschauma Exp $
+
+The PVS Specification and Verification System requires that the kernel
+be built with the PROCFS option and that a procfs be mounted, e.g. add
+the following line to /etc/fstab:
+
+    procfs  /emul/linux/proc  procfs  rw,linux
+
+===========================================================================
