@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/yap2lc
+share/doc/yap2lc/README
+share/examples/yap2lc/ldif.template
+share/examples/yap2lc/yap2lc.conf
+@dirrm share/examples/yap2lc
+@dirrm share/doc/yap2lc
