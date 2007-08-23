@@ -1,4 +1,4 @@
-# $NetBSD: osf1.mk,v 1.1 2007/07/29 05:19:43 jlam Exp $
+# $NetBSD: darwin.mk,v 1.1 2007/08/01 16:28:08 jlam Exp $
 #
 # Darwin (Mac OS X) binary emulation framework
 #
@@ -34,7 +34,7 @@ EMUL_DISTRO=		native-darwin	# native OSF/1 (Tru64)
 EMULDIR=		${PREFIX}
 EMULSUBDIR=		# empty
 .else
-.  include "${PKGSRCDIR}/mk/emulator/darwin-${_EMUL_TYPE}.mk"
+.  include "${.PARSEDIR}/darwin-${_EMUL_TYPE}.mk"
 .endif
 
 .if (${_EMUL_TYPE} == "builtin") || (${_EMUL_TYPE} == "native")
