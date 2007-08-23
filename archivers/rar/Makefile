@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2006/06/22 21:38:06 rillig Exp $
+# $NetBSD: Makefile,v 1.47 2007/08/22 16:43:33 jlam Exp $
 
 DISTNAME=		rar	# overridden in Makefile.${EMUL_PLATFORM}
+PKGREVISION=		1
 CATEGORIES=		archivers
 MASTER_SITES=		# empty
 
