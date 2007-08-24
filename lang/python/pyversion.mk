@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.45 2006/09/07 22:12:15 rillig Exp $
+# $NetBSD: pyversion.mk,v 1.46 2007/01/07 01:04:22 rillig Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -182,5 +182,7 @@ PRINT_PLIST_AWK+=	/^(@dirrm )?${PYLIB:S|/|\\/|g}/ \
 			{ gsub(/${PYLIB:S|/|\\/|g}/, "$${PYLIB}"); \
 				print; next; }
 .endif
+
+ALL_ENV+=	PYTHON=${PYTHONBIN}
 
 .endif	# PYTHON_PYVERSION_MK
