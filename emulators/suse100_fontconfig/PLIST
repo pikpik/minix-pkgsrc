@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}etc/fonts/local.conf
