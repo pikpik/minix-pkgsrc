@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2006/01/29 22:29:01 schwarz Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:29:17 jlam Exp $
 #
 
-DISTNAME=	libosip2-2.2.2
+DISTNAME=	libosip2-3.0.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=osip/}
 
