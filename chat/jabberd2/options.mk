@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.16 2007/06/12 21:17:34 jwise Exp $
+# $NetBSD: options.mk,v 1.17 2007/07/13 09:43:36 xtraeme Exp $
 #
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.jabberd2
@@ -69,12 +69,12 @@ CONFIGURE_ARGS+=	--disable-ldap
 .endif
 
 .if !empty(PKG_OPTIONS:Mcyrus-sasl)
-CONFIGURE_ARGS+=	--with-sasl=cyrus
+CONFIGURE_ARGS+=	--enable-sasl=cyrus
 .  include "../../security/cyrus-sasl/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mgnusasl)
-CONFIGURE_ARGS+=	--with-sasl=gsasl
+CONFIGURE_ARGS+=	--enable-sasl=gsasl
 .  include "../../security/gsasl/buildlink3.mk"
 .endif
 
