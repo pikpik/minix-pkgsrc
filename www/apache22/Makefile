@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2007/06/28 01:20:52 lkundrak Exp $
+# $NetBSD: Makefile,v 1.15 2007/07/04 20:55:03 jlam Exp $
 
 .include "Makefile.common"
 
 PKGNAME=	apache-${APACHE_VERSION}
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	www
 
 HOMEPAGE=	http://httpd.apache.org/
@@ -232,12 +232,10 @@ post-install:
 	do								\
 		${AWK} '						\
 			/^Listen[ 	]*80/	{			\
-				print;					\
 				printf "%s", "Listen 0.0.0.0:80\n";	\
 				next;					\
 			}						\
 			/^Listen[ 	]*443/	{			\
-				print;					\
 				printf "%s", "Listen 0.0.0.0:443\n";	\
 				next;					\
 			}						\
