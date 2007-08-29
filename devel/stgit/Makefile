@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.73 2007/06/07 01:35:15 schmonz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/07/01 12:33:51 dmcmahill Exp $
 
-DISTNAME=	stgit-0.12.1
+DISTNAME=	stgit-0.13
 CATEGORIES=	devel
 MASTER_SITES=	http://homepage.ntlworld.com/cmarinas/stgit/
 
