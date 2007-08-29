@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.518 2007/08/05 05:57:09 obache Exp $
+# $NetBSD: Makefile,v 1.519 2007/08/13 08:12:49 rillig Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -297,6 +297,7 @@ SUBDIR+=	py-flup
 SUBDIR+=	py-jonpy
 SUBDIR+=	py-moin
 SUBDIR+=	py-nevow
+SUBDIR+=	py-swish-e
 SUBDIR+=	py-webpy
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
