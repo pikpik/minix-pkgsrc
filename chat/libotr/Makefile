@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2006/02/13 14:44:31 salo Exp $
+# $NetBSD: Makefile,v 1.6 2007/08/02 11:26:28 gdt Exp $
 
 VERSION=	3.1.0
+PKGREVISION=	1
 DISTNAME=	libotr-${VERSION}
 CATEGORIES=	chat security
 MASTER_SITES=	http://www.cypherpunks.ca/otr/
@@ -15,5 +16,6 @@ CONFIGURE_ARGS+=	--with-pic
 
 USE_LIBTOOL=	yes
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
