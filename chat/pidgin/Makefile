@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2007/08/04 14:01:38 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2007/08/13 13:22:23 tnn Exp $
 #
 
 PKGNAME=		pidgin-${PIDGIN_VERSION}
+PKGREVISION=		1
 COMMENT=		Multi-protocol Instant Messaging client GTK frontend
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -32,6 +33,7 @@ pre-build:
 	  ln -s ${BUILDLINK_DIR}/lib/libpurple.la ${WRKSRC}/libpurple/.
 
 .include "../../chat/libpurple/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
