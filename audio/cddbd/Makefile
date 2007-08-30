@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2006/09/09 02:41:54 obache Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/04 20:46:06 wiz Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
 PKGNAME=	cddbd-1.3.1p1
+PKGREVISION=	1
 CATEGORIES=	audio net
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 
@@ -13,8 +14,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedb.org/en/download__server_software.4.html
 COMMENT=	Internet CD Database Server
 
-INTERACTIVE_STAGE=	configure install
-NO_PACKAGE=	too interactive
 MAKE_FILE=	makefile
 
 do-configure:
