@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.129 2007/08/14 01:19:30 tnn Exp $
+# $NetBSD: Makefile,v 1.130 2007/08/16 00:21:38 joerg Exp $
 #
 
 COMMENT=	Communication programs
@@ -13,6 +13,7 @@ SUBDIR+=	blackened
 SUBDIR+=	bnc
 SUBDIR+=	bsflite
 SUBDIR+=	centericq
+SUBDIR+=	centerim
 SUBDIR+=	cgiirc
 SUBDIR+=	dccserver
 SUBDIR+=	dircproxy
