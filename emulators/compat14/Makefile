@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2007/08/16 14:00:12 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2007/08/21 22:49:08 jlam Exp $
 
-DISTNAME=		compat14	# overridden below
+COMPAT_PKG=		compat14	# for compat_netbsd/Makefile.common
 NETBSD_VERSION=		1.4
 PKGREVISION=		2
 

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2006/10/19 19:37:38 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2007/08/21 22:49:20 jlam Exp $
 
-DISTNAME=		compat30	# overridden below
+COMPAT_PKG=		compat30	# for compat_netbsd/Makefile.common
 NETBSD_VERSION=		3.0
 
 HOMEPAGE=		http://www.NetBSD.org/Releases/formal-3.0/index.html
