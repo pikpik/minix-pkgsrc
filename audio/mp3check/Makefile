@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2006/10/14 07:59:09 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2007/01/07 09:13:47 rillig Exp $
 
-DISTNAME=	mp3check-0.8.0
+DISTNAME=	mp3check-0.8.3
 CATEGORIES=	audio
 MASTER_SITES=	http://jo.ath.cx/soft/mp3check/
 
