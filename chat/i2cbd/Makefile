@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/07/04 20:54:32 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2007/08/30 16:04:19 joerg Exp $
 #
 
 DISTNAME=	i2cbd-2.0_BETA5
@@ -40,6 +40,5 @@ post-install:
 .for f in ${EGFILES}
 	${INSTALL_DATA} ${WRKSRC}/etc/${f:Q} ${EGDIR}
 .endfor
-	${INSTALL_SCRIPT} ${WRKDIR}/icbd.sh ${PREFIX}/share/examples/rc.d/icbd
 
 .include "../../mk/bsd.pkg.mk"
