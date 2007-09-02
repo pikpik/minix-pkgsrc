@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2007/08/09 13:29:33 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/08/29 15:42:15 joerg Exp $
 #
 
 DISTNAME=		SwishE-0.5
 PKGNAME=		${PYPKGPREFIX}-swish-e-0.5
 CATEGORIES=		textproc python
-MASTER_SITES=		http://jibe.freeshell.org/bits/SwishE/
+MASTER_SITES=		http://jibe.freeshell.org/bits/download/
 
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://jibe.freeshell.org/bits/SwishE/
