@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/08/20 23:14:01 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2007/09/03 21:50:47 wiz Exp $
 #
 
 DISTNAME=		skype_static-1.4.0.99
@@ -24,7 +24,7 @@ EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base compat fontconfig freetype2 glx x11
 
 USE_DIRS+=		xdg-1.1
-WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
+WRKSRC=			${WRKDIR}/${DISTNAME}
 
 DATADIR=		${PREFIX}/share/skype
 DOCDIR=			${PREFIX}/share/doc/skype
