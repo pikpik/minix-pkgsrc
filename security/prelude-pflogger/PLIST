@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/prelude-pflogger
+share/examples/rc.d/pflogger
+share/examples/prelude-pflogger/prelude-pflogger.conf
