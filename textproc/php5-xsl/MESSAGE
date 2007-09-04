@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+To enable this module, DOM extension must also be enabled. Make sure PHP
+configuration file ${PKG_SYSCONFDIR}/php.ini contains also:
+
+    extension=dom.so
+
+===========================================================================
