@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2006/07/26 11:53:39 markd Exp $
+# $NetBSD: Makefile,v 1.19 2007/02/15 18:26:14 joerg Exp $
 
 DISTNAME=	ivtools-1.2.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ivtools/}
 EXTRACT_SUFX=	.tgz
@@ -16,7 +16,9 @@ DEPENDS+=	pstoedit>=3.0:../../graphics/pstoedit
 DEPENDS+=	wget>=1.0:../../net/wget
 
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	imake
+USE_TOOLS+=	imake bash:run
+
+REPLACE_BASH+=	src/scripts/ivgetjpg.bash src/scripts/ivtiftopnm.bash
 
 WRKSRC=		${WRKDIR}/ivtools-1.2
 GNU_CONFIGURE=	YES
