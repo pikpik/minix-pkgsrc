@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/09/28 14:31:08 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/24 07:13:15 schmonz Exp $
 #
 
 DISTNAME=		rcorder-20031013
@@ -13,15 +13,8 @@ COMMENT=		Print a dependency ordering of interdependent files
 NO_CHECKSUM=		yes
 GNU_CONFIGURE=		yes
 
-.include "../../mk/bsd.prefs.mk"
-
-.if defined(LIBNBCOMPAT_STYLE) && (${LIBNBCOMPAT_STYLE} == "inplace")
-.  include "../../pkgtools/libnbcompat/inplace.mk"
-.else
-.  include "../../pkgtools/libnbcompat/buildlink3.mk"
-.endif
-
 do-extract:
 	${CP} -R ${FILESDIR} ${WRKSRC}
 
+.include "../../pkgtools/libnbcompat/inplace.mk"
 .include "../../mk/bsd.pkg.mk"
