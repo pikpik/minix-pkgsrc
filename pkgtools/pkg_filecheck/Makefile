@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/10/24 19:23:38 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2007/02/16 22:57:09 tonio Exp $
 #
 
 DISTNAME=		pkg_filecheck-0.4
@@ -61,7 +61,7 @@ do-install:
 
 .if ${OPSYS} != "NetBSD"
 CPPFLAGS+=	-DUSE_LIBNBCOMPAT
-.  include "../../pkgtools/libnbcompat/buildlink3.mk"
+.  include "../../pkgtools/libnbcompat/inplace.mk"
 .endif
 
 .include "../../mk/bsd.pkg.mk"

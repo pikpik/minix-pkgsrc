@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/07/14 20:11:10 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2006/10/07 16:52:19 reed Exp $
 
 .include "Makefile.common"
 
@@ -13,5 +13,5 @@ CONFLICTS+=	gcpio-[0-9]*
 CONFLICTS+=	gtar-base-[0-9]*
 .endif
 
-.include "../../pkgtools/libnbcompat/buildlink3.mk"
+.include "../../pkgtools/libnbcompat/inplace.mk"
 .include "../../mk/bsd.pkg.mk"

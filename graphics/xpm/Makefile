@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2006/12/27 13:37:38 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2007/01/06 16:45:17 rillig Exp $
 
 DISTNAME=	xpm-3.4k
 PKGREVISION=	7
@@ -31,13 +31,12 @@ SUBST_STAGE.sodots=	post-configure
 SUBST_FILES.sodots=	lib/Makefile
 SUBST_SED.sodots=	-e 's,\.so$$(SOXPMLIBREV),.so.$$(SOXPMLIBREV),g'
 
-# needs snprintf()
-. include "../../pkgtools/libnbcompat/buildlink3.mk"
-IMAKEOPTS+=	-DExtraLibraries=${BUILDLINK_LDADD.libnbcompat:Q}
+.  include "../../pkgtools/libnbcompat/inplace.mk"	# snprintf()
+IMAKEOPTS+=	-DExtraLibraries=-lnbcompat
 IMAKEOPTS+=	-DInstallCmd=${INSTALL:Q}
 
 post-configure:
-	mkdir ${WRKSRC}/usrlib
+	${MKDIR} ${WRKSRC}/usrlib
 .endif
 
 .include "../../x11/libXext/buildlink3.mk"

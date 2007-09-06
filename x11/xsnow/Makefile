@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/12/27 13:37:46 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2007/02/22 19:27:29 wiz Exp $
 
 DISTNAME=	xsnow-1.42
 PKGREVISION=	2
@@ -14,9 +14,8 @@ USE_IMAKE=	yes
 .include "../../mk/bsd.prefs.mk"
 
 .if !empty(LOWER_OPSYS:Mirix5*)
-# needs snprintf()
-. include "../../pkgtools/libnbcompat/buildlink3.mk"
-IMAKEOPTS+=	-DExtraLibraries=${BUILDLINK_LDADD.libnbcompat:Q}
+.  include "../../pkgtools/libnbcompat/inplace.mk"	# snprintf()
+IMAKEOPTS+=	-DExtraLibraries=${LIBS:Q}
 .endif
 
 .include "../../x11/libXext/buildlink3.mk"

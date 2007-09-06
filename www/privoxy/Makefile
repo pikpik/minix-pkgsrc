@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/11/24 18:26:06 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2007/07/04 20:55:05 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
@@ -67,8 +67,7 @@ post-install:
 	${CHMOD} -R a+r ${EGDIR}
 
 .if !empty(LOWER_OPSYS:Mirix5*)
-# needs snprintf
-. include "../../pkgtools/libnbcompat/buildlink3.mk"
+.  include "../../pkgtools/libnbcompat/inplace.mk"	# snprintf()
 .endif
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

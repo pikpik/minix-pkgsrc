@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/03/04 21:31:03 jlam Exp $
+# $NetBSD: Makefile,v 1.36 2006/04/13 18:23:39 jlam Exp $
 
 DISTNAME=		sitecopy-0.16.2
 CATEGORIES=		www
@@ -27,7 +27,7 @@ pre-build:
 	${LN} -sf ${WRKSRC:Q}/lib/fnmatch.h ${WRKSRC:Q}/fnmatch.h
 
 .if !exists(/usr/include/getopt.h)
-.  include "../../pkgtools/libnbcompat/buildlink3.mk"
+.  include "../../pkgtools/libnbcompat/inplace.mk"
 .endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"

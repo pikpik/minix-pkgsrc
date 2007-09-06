@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.152 2007/04/05 19:41:48 gdt Exp $
+# $NetBSD: Makefile,v 1.153 2007/04/22 09:58:10 tnn Exp $
 
 DISTNAME=	netpbm-10.34
 PKGREVISION=	1
@@ -67,9 +67,7 @@ CPPFLAGS+=	-DSGI_IDO_CC
 .endif
 
 .if !empty(LOWER_OPSYS:Mirix5*)
-# needs snprintf()
-. include "../../pkgtools/libnbcompat/buildlink3.mk"
-LIBS+=		${BUILDLINK_LDADD.libnbcompat}
+.  include "../../pkgtools/libnbcompat/inplace.mk"	# snprintf()
 .endif
 
 .include "../../graphics/jasper/buildlink3.mk"

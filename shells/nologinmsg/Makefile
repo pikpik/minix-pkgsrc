@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/20 23:08:20 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2007/03/24 19:21:31 joerg Exp $
 
 DISTNAME=	nologinmsg-1.0
 PKGREVISION=	1
@@ -27,7 +27,7 @@ INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat8 ${PKGMANDIR}/man8
 .if ${OPSYS} == "Linux" || ${OPSYS} == "IRIX" || ${OPSYS} == "Interix"
 MAKE_FLAGS+=	NOMAN=YES
 CFLAGS+=	-D__LIBNBCOMPAT
-.  include "../../pkgtools/libnbcompat/buildlink3.mk"
+.  include "../../pkgtools/libnbcompat/inplace.mk"
 .endif
 
 .include "../../devel/sysexits/buildlink3.mk"
