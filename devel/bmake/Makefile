@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2007/04/12 20:31:05 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2007/04/12 21:28:42 joerg Exp $
 #
 
 DISTNAME=	bmake-20051105
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -24,6 +24,16 @@ makesyspath=	${PREFIX}/share/mk
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
+BOOTSTRAP_ARGS=		-q -o ${OPSYS} --prefix=${PREFIX} \
+			--with-default-sys-path=${makesyspath} \
+			--mksrc none --sysconfdir=${PKG_SYSCONFDIR:Q}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS" && exists(/usr/xpg/bin/sh)
+BOOTSTRAP_ARGS+=	--with-defshell=/usr/xpg4/bin/sh
+.endif
+
 do-extract:
 	${CP} -R ${FILESDIR} ${WRKSRC}
 
@@ -31,10 +41,7 @@ do-configure:
 
 do-build:
 	cd ${WRKDIR} && \
-		${SETENV} ${MAKE_ENV} ${SH} ./bmake/boot-strap \
-		-q -o ${OPSYS} --prefix=${PREFIX} \
-		--with-default-sys-path=${makesyspath} --mksrc none \
-		--sysconfdir=${PKG_SYSCONFDIR}
+		${SETENV} ${MAKE_ENV} ${SH} ./bmake/boot-strap ${BOOTSTRAP_ARGS}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/${OPSYS}/bmake ${PREFIX}/bin
