@@ -1,12 +1,10 @@
-# $NetBSD: Makefile.php,v 1.24 2007/02/25 20:05:11 jdolecek Exp $
+# $NetBSD: Makefile.php,v 1.25 2007/05/05 21:45:12 adrianp Exp $
 #
 
 .include "../../lang/php5/Makefile.common"
 
 DISTINFO_FILE=	${.CURDIR}/../../lang/php5/distinfo
 PATCHDIR=	${.CURDIR}/../../lang/php5/patches
-
-BUILD_DEFS+=		USE_INET6
 
 USE_LIBTOOL=		YES
 USE_LANGUAGES=		c c++

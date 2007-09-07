@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/03/04 21:29:53 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2007/01/07 09:13:56 rillig Exp $
 
 DISTNAME=	skkfep0.86c
 PKGNAME=	skkfep-0.86c
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ei5nazha.yz.yamagata-u.ac.jp/~aito/aito-soft.html
 COMMENT=	Terminal based SKK-like Kana-to-Kanji FrontEnd Processor
 
-BUILD_DEFS+=	USE_INET6
+BUILD_DEFS+=	IPV6_READY
 
 WRKSRC=		${WRKDIR}/skkfep
 NO_CONFIGURE=	yes

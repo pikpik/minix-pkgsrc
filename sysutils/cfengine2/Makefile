@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/07 00:03:28 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/06/08 12:25:05 wiz Exp $
 #
 
 .include "../../sysutils/cfengine2/Makefile.common"
@@ -9,7 +9,7 @@ PKGREVISION=	1
 GNU_CONFIGURE=		YES
 PTHREAD_OPTS+=		require
 
-BUILD_DEFS+=		USE_INET6
+BUILD_DEFS+=		IPV6_READY
 
 CONFIGURE_ARGS+=	--with-berkeleydb=${BUILDLINK_PREFIX.db4}
 CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl}

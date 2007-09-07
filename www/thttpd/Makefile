@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2006/11/24 23:04:15 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2007/06/14 11:50:51 obache Exp $
 
 DISTNAME=	thttpd-2.25b
 PKGREVISION=	5
@@ -19,8 +19,8 @@ SITES.${NETBSD_LOGO}=	http://www.NetBSD.org/images/logos/
 
 GNU_CONFIGURE=	yes
 
-# Note: this pkg auto-detects IPv6 without regarding USE_INET6.
-BUILD_DEFS+=	USE_INET6
+# Note: this pkg auto-detects IPv6.
+BUILD_DEFS+=	IPV6_READY
 # thttpd syslogs at level LOG_DAEMON by default
 # change this to your preferred syslog level
 THTTPD_LOG_FACILITY?=	LOG_DAEMON

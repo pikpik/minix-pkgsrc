@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/07/22 19:21:11 abs Exp $
+# $NetBSD: Makefile,v 1.40 2007/08/06 14:54:04 tron Exp $
 
 DISTNAME=		vnc-3.3.3r2
 PKGNAME=		vnc-3.3.3.2
@@ -23,7 +23,7 @@ CRYPTO=			yes
 NO_INSTALL_MANPAGES=	yes
 USE_IMAKE=		yes
 USE_TOOLS+=		perl:run
-BUILD_DEFS+=		USE_INET6
+BUILD_DEFS+=		IPV6_READY
 
 BUILD_TARGET=		World
 

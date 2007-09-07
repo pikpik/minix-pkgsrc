@@ -456,17 +456,16 @@ PKG_INSTALLATION_TYPE?=	${PKG_INSTALLATION_TYPES:M${_pref_}:S/^/_pkginsttype_/1:
 PKG_INSTALLATION_TYPE?=	none
 
 # if the system is IPv6-ready, compile with IPv6 support turned on.
-.if defined(USE_INET6)
-.  if empty(USE_INET6:M[Yy][Ee][Ss])
-USE_INET6=		NO
-.  else
-USE_INET6=		YES
-.  endif
-.elif empty(_OPSYS_HAS_INET6:M[nN][oO])
-USE_INET6=		YES
+.if empty(_OPSYS_HAS_INET6:M[nN][oO])
+IPV6_READY=		YES
 .else
-USE_INET6=		NO
+IPV6_READY=		NO
 .endif
+
+# XXX
+# XXX Retain the following until USE_INET6 has been purged from pkgsrc-wip.
+# XXX
+USE_INET6=		${IPV6_READY}
 
 LOCALBASE?=		/usr/pkg
 X11_TYPE?=		native

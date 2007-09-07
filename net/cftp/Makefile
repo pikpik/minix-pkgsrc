@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/06 03:20:54 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/22 19:01:23 wiz Exp $
 #
 
 DISTNAME=	cftp-0.12
@@ -13,7 +13,7 @@ COMMENT=	Comfortable FTP, a full screen ftp client
 GNU_CONFIGURE=	YES
 INFO_FILES=	# PLIST
 
-BUILD_DEFS+=	USE_INET6
+BUILD_DEFS+=	IPV6_READY
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/cftp

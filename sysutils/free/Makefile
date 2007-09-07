@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:41 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/01/07 09:14:11 rillig Exp $
 #
 
 DISTNAME=		free-1.0
@@ -10,8 +10,9 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Displays memory usage
 
 
-# This pkg doesn't regard USE_INET6 (leave this comment for README-IPv6.html!)
-WRKSRC=			${WRKDIR}
+BUILD_DEFS+=	IPV6_READY
+
+WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
