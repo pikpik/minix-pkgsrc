@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.286 2007/08/24 09:57:43 heinz Exp $
+# $NetBSD: Makefile,v 1.287 2007/09/05 16:07:29 drochner Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -181,6 +181,7 @@ SUBDIR+=	sch
 SUBDIR+=	sci
 SUBDIR+=	screen
 SUBDIR+=	siag
+SUBDIR+=	softmaker-office-demo
 SUBDIR+=	splitvt
 SUBDIR+=	stellarium
 SUBDIR+=	taskjuggler
