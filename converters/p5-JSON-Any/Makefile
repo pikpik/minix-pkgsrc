@@ -11,8 +11,8 @@ COMMENT=		Wrapper Class for the various JSON classes
 
 PERL5_PACKLIST=		auto/JSON/Any/.packlist
 
-# Do not install any specific JSON converter - let user decide
-# DEPENDS+=		p5-JSON-[0-9]*:../../converters/p5-JSON
+# May need to revisit this when multiple JSON converters in pkgsrc
+DEPENDS+=		p5-JSON-[0-9]*:../../converters/p5-JSON
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
