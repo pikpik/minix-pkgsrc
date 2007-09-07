@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2007/07/03 17:20:01 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2007/08/29 21:02:45 wiz Exp $
 
 DISTNAME=	pcre-7.3
 CATEGORIES=	devel
@@ -27,5 +27,12 @@ PKGCONFIG_OVERRIDE=	libpcre.pc.in libpcrecpp.pc.in
 
 # needs a stacksize of 4mb, default is 2mb
 TEST_TARGET=		test
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(MACHINE_PLATFORM:MHPUX-11.11-*)
+CONFIGURE_ENV+=		ac_cv_func_strtoll=yes
+CPPFLAGS+=		-Dstrtoll=__strtoll
+.endif
 
 .include "../../mk/bsd.pkg.mk"
