@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.520 2007/08/29 15:57:47 joerg Exp $
+# $NetBSD: Makefile,v 1.521 2007/09/07 15:29:02 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -289,6 +289,7 @@ SUBDIR+=	php-curl
 SUBDIR+=	php-eaccelerator
 SUBDIR+=	php4
 SUBDIR+=	php4-apc
+SUBDIR+=	pound
 SUBDIR+=	privoxy
 SUBDIR+=	py-HTMLgen
 SUBDIR+=	py-clearsilver
