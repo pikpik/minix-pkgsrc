@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/normalform/SetOfSymbol.cc.orig	2004-07-30 12:58:13.000000000 +0200
+--- src/normalform/SetOfSymbol.cc.orig	2006-06-08 17:16:26.000000000 +0200
 +++ src/normalform/SetOfSymbol.cc
 @@ -51,7 +51,11 @@
  //
@@ -14,3 +14,12 @@ $NetBSD$
  #include <cstdio>
  #include <cassert>
  #include "config.h"
+@@ -271,7 +275,7 @@ void SetOfSymbol::operator =  (const Set
+ 
+ void SetOfSymbol::add(ASt as) {
+    char buffer[64];
+-   sprintf(buffer, "AS%d", as);
++   asnum_string(buffer, as);
+    add(symbols.symID(buffer));
+ }
+ 
