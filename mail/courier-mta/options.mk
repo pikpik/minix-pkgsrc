@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2007/07/04 20:54:41 jlam Exp $
+# $NetBSD: options.mk,v 1.6 2007/08/10 17:57:03 jlam Exp $
 
 # Global and legacy options
 
@@ -36,7 +36,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.esmtp
 
 RCD_SCRIPTS+=		courieresmtp courieresmtpmsa courieresmtps
 
-OWN_DIRS_PERMS+=	${PKG_SYSCONFDIR}/esmtpacceptmaildor.dir	\
+OWN_DIRS_PERMS+=	${PKG_SYSCONFDIR}/esmtpacceptmailfor.dir	\
 				${COURIER_DIR_PERMS}
 OWN_DIRS_PERMS+=	${PKG_SYSCONFDIR}/esmtppercentrelay.dir		\
 				${COURIER_DIR_PERMS}
