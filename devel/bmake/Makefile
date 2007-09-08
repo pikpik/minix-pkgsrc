@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2007/04/12 21:28:42 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2007/09/06 19:23:25 joerg Exp $
 #
 
 DISTNAME=	bmake-20051105
@@ -19,6 +19,8 @@ DEPENDS+=	bootstrap-mk-files-[0-9]*:../../pkgtools/bootstrap-mk-files
 WRKSRC=		${WRKDIR}/bmake
 NO_CHECKSUM=	yes
 NO_MTREE=	yes
+
+USE_FEATURES=	nbcompat
 
 makesyspath=	${PREFIX}/share/mk
 
@@ -47,5 +49,4 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/${OPSYS}/bmake ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/bmake.1 ${PREFIX}/${PKGMANDIR}/man1
 
-.include "../../pkgtools/libnbcompat/inplace.mk"
 .include "../../mk/bsd.pkg.mk"
