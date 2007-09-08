@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/05/22 16:39:00 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2006/07/22 04:46:17 rillig Exp $
 
 DISTNAME=		kphone-4.2
 PKGREVISION=		4
@@ -6,7 +6,7 @@ CATEGORIES=		net comms
 MASTER_SITES=		http://www.wirlab.net/kphone/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.wirlab.net/kphone/
+HOMEPAGE=		http://sourceforge.net/projects/kphone
 COMMENT=		Graphical Voice Over Internet (VoIP) phone
 
 WRKSRC=			${WRKDIR}/kphone
