@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/04/05 16:41:34 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2007/09/08 08:05:22 obache Exp $
 
 DISTNAME=	msmtp-1.4.13
 CATEGORIES=	mail
@@ -10,7 +10,6 @@ HOMEPAGE=	http://msmtp.sourceforge.net/
 COMMENT=	SMTP plugin for MUAs
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
