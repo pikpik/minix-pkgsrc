@@ -1,4 +1,4 @@
-# $NetBSD: features-vars.mk,v 1.2 2007/09/08 04:54:12 jlam Exp $
+# $NetBSD: features-vars.mk,v 1.3 2007/09/08 05:03:52 jlam Exp $
 #
 # This file is include by bsd.prefs.mk.
 #
@@ -25,7 +25,7 @@ MISSING_FEATURES=	# empty
 #	regardless of whether or not "inet6" is a requested feature
 #	in USE_FEATURES.
 #
-.if defined(_OPSYS_HAS_INET6) && empty(_OPSYS_HAS_INET6:M[nN][oO])
+.if defined(_OPSYS_HAS_INET6) && !empty(_OPSYS_HAS_INET6:M[nN][oO])
 MISSING_FEATURES+=	inet6
 .endif
 
