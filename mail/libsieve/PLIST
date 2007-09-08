@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/sieve2.h
+include/sieve2_error.h
+lib/libsieve.la
