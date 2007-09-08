@@ -1,11 +1,11 @@
-# $NetBSD: options.mk,v 1.7 2005/08/29 13:09:58 tv Exp $
+# $NetBSD: options.mk,v 1.8 2005/08/31 18:37:33 tv Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.msmtp
 
 PKG_OPTIONS_OPTIONAL_GROUPS=	ssl
 PKG_OPTIONS_GROUP.ssl=	gnutls ssl
 
-PKG_SUPPORTED_OPTIONS=	gsasl inet6
+PKG_SUPPORTED_OPTIONS=	gsasl idn inet6
 PKG_SUGGESTED_OPTIONS=	ssl
 
 .include "../../mk/bsd.options.mk"
@@ -28,4 +28,12 @@ CONFIGURE_ARGS+=	--disable-ssl
 ###
 .if !empty(PKG_OPTIONS:Mgsasl)
 .  include "../../security/gsasl/buildlink3.mk"
+.endif
+
+###
+### Internationalized Domain Names (IDN) support
+###
+.if !empty(PKG_OPTIONS:Midn)
+.  include "../../devel/libidn/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-libidn
 .endif
