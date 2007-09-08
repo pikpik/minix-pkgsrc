@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: features-vars.mk,v 1.1 2007/09/07 21:55:46 jlam Exp $
 #
 # This file is include by bsd.prefs.mk.
 #
@@ -32,6 +32,14 @@ MISSING_FEATURES+=	inet6
 .for _feature_ in err warn
 .  if defined(USE_FEATURES) && !empty(USE_FEATURES:M${_feature_})
 .    if (${OPSYS} != NetBSD) && (${OPSYS} != FreeBSD) && (${OPSYS} != DragonFly)
+MISSING_FEATURES+=	${_feature_}
+.    endif
+.  endif
+.endfor
+
+.for _feature_ in fts_close fts_open fts_read fts_set
+.  if defined(USE_FEATURES) && !empty(USE_FEATURES:M${_feature_})
+.    if !exists(/usr/include/fts.h)
 MISSING_FEATURES+=	${_feature_}
 .    endif
 .  endif
