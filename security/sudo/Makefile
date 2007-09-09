@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.95 2007/07/27 17:28:48 gdt Exp $
+# $NetBSD: Makefile,v 1.96 2007/08/18 15:09:11 taca Exp $
 #
 
-DISTNAME=		sudo-1.6.9p4
+DISTNAME=		sudo-1.6.9p5
 CATEGORIES=		security
 MASTER_SITES=		http://www.courtesan.com/sudo/dist/ \
 			ftp://ftp.courtesan.com/pub/sudo/ \
