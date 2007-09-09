@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/06/12 16:28:07 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2007/03/10 17:08:18 wiz Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
@@ -6,7 +6,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=asc-hq/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.asc-hq.org/
 COMMENT=	Turn based strategy game
 
