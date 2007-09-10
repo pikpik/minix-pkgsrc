@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2007/03/24 19:21:27 joerg Exp $
+# $NetBSD: Makefile,v 1.59 2007/07/04 20:54:46 jlam Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -51,7 +51,7 @@ SUBST_STAGE.libexec=	pre-configure
 SUBST_FILES.libexec=	man/popper.8
 SUBST_SED.libexec=	-e "s|/usr/local/lib|${PREFIX}/libexec|g"
 
-INSTALLATION_DIRS=	libexec ${PKGMANDIR}/man8 sbin share/doc share/exmaples
+INSTALLATION_DIRS=	libexec ${PKGMANDIR}/man8 sbin share/doc share/examples
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/License.txt				\
