@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/doc/hunspell-en_US/README_en_US.txt
+share/hunspell/en_US.aff
+share/hunspell/en_US.dic
+@unexec ${RMDIR} %D/share/hunspell 2>/dev/null || ${TRUE}
+@dirrm share/doc/hunspell-en_US
