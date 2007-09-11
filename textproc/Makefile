@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.378 2007/08/13 08:12:49 rillig Exp $
+# $NetBSD: Makefile,v 1.379 2007/09/08 10:26:27 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -94,6 +94,7 @@ SUBDIR+=	html
 SUBDIR+=	html2text
 SUBDIR+=	html2wml
 SUBDIR+=	hugs-HaXml
+SUBDIR+=	hunspell
 SUBDIR+=	hyperestraier
 SUBDIR+=	icu
 SUBDIR+=	intltool
