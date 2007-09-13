@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/04/29 20:01:45 tnn Exp $
+# $NetBSD: Makefile,v 1.2 2007/04/29 21:51:52 tnn Exp $
 #
 
-DISTNAME=	orpie-1.4.3
+DISTNAME=	orpie-1.5.0
 CATEGORIES=	math
 MASTER_SITES=	http://www.eecs.umich.edu/~pelzlpj/orpie/
 
@@ -9,6 +9,7 @@ MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.eecs.umich.edu/~pelzlpj/orpie/
 COMMENT=	Curses-based reverse polish notation (RPN) calculator
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake
 
