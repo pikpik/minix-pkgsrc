@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2007/09/06 18:11:57 abs Exp $
+# $NetBSD: Makefile,v 1.62 2007/09/07 10:06:22 tron Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -9,7 +9,7 @@
 #
 
 PKGNAME=	gmplayer-${MPLAYER_PKG_VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 
 BROKEN_IN=		pkgsrc-2006Q4
 
