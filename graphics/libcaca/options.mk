@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.1 2005/07/28 19:21:02 wiz Exp $
+# $NetBSD: options.mk,v 1.2 2007/02/15 14:58:21 joerg Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.libcaca
 PKG_SUPPORTED_OPTIONS=		imlib2
-PKG_OPTIONS_NONEMPTY_SETS=	driver
-PKG_OPTIONS_SET.driver=		ncurses slang x11
+PKG_OPTIONS_REQUIRED_GROUPS=	driver
+PKG_OPTIONS_GROUP.driver=	ncurses slang x11
 PKG_SUGGESTED_OPTIONS=		ncurses
 
 .include "../../mk/bsd.options.mk"
