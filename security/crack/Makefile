@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2006/10/04 21:58:13 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/02/22 19:01:24 wiz Exp $
 
 DISTNAME=	crack5.0
 PKGNAME=	crack-5.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cerias.purdue.edu/pub/tools/unix/pwdutils/crack \
 		ftp://ftp.netsw.org/system/tools/password/crack/crack/
@@ -14,6 +14,13 @@ COMMENT=	The "Sensible" Unix Password Cracker
 WRKSRC=		${WRKDIR}/c50a
 
 INSTALLATION_DIRS=	sbin
+
+REPLACE_INTERPRETER+=	xdawg
+REPLACE.xdawg.old=	.*xdawg
+REPLACE.xdawg.new=	${PREFIX}/libexec/crack/xdawg
+REPLACE_FILES.xdawg=	dict/*/*
+
+CHECK_INTERPRETER_SKIP+=	share/crack/extra/Dictstats.pl
 
 pre-configure:
 	@${ECHO} "XLIB+= -lcrypt" >> ${WRKSRC}/src/util/Makefile
