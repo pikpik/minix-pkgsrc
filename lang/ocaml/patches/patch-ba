@@ -1,6 +1,6 @@
 $NetBSD$
 
---- otherlibs/graph/Makefile.orig	2003-08-05 13:39:33.000000000 +0000
+--- otherlibs/graph/Makefile.orig	2007-01-29 13:11:16.000000000 +0100
 +++ otherlibs/graph/Makefile
 @@ -18,10 +18,10 @@
  include ../../config/Makefile
@@ -10,11 +10,11 @@ $NetBSD$
 -CAMLC=../../ocamlcomp.sh
 -CAMLOPT=../../ocamlcompopt.sh
 -MKLIB=../../boot/ocamlrun ../../tools/ocamlmklib
-+CFLAGS+=-I../../byterun $(X11_INCLUDES) $(BYTECCCOMPOPTS) $(SHAREDCCCOMPOPTS)
++CFLAGS=-I../../byterun $(X11_INCLUDES) $(BYTECCCOMPOPTS) $(SHAREDCCCOMPOPTS)
 +CAMLC=${PREFIX}/bin/ocamlc
 +CAMLOPT=${PREFIX}/bin/ocamlopt
 +MKLIB=${PREFIX}/bin/ocamlrun ${PREFIX}/bin/ocamlmklib
- COMPFLAGS=-warn-error A
+ COMPFLAGS=-warn-error A -g
  
  OBJS=open.o draw.o fill.o color.o text.o \
 @@ -50,13 +50,13 @@ clean: partialclean
