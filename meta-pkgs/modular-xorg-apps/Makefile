@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/08/06 16:14:42 tron Exp $
+# $NetBSD: Makefile,v 1.6 2007/09/03 04:49:42 dogcow Exp $
 
 DISTNAME=	# empty
 PKGNAME=	modular-xorg-apps-1.4
@@ -39,6 +39,7 @@ DEPENDS+=	xinit-[0-9]*:../../x11/xinit
 DEPENDS+=	xkill-[0-9]*:../../x11/xkill
 DEPENDS+=	xload-[0-9]*:../../x11/xload
 DEPENDS+=	xlogo-[0-9]*:../../x11/xlogo
+DEPENDS+=	xlsclients-[0-9]*:../../x11/xlsclients
 DEPENDS+=	xmag-[0-9]*:../../x11/xmag
 DEPENDS+=	xman-[0-9]*:../../x11/xman
 DEPENDS+=	xmessage-[0-9]*:../../x11/xmessage
