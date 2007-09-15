@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/07/28 12:13:33 gdt Exp $
+@comment $NetBSD: PLIST,v 1.2 2007/08/13 14:20:21 tnn Exp $
 bin/finch
 include/finch/finch.h
 include/finch/gntaccount.h
 include/finch/gntblist.h
+include/finch/gntcertmgr.h
 include/finch/gntconn.h
 include/finch/gntconv.h
 include/finch/gntdebug.h
