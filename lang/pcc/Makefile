@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2006/10/09 12:52:34 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/09/15 09:43:32 agc Exp $
 
 DISTNAME=	pcc-current
 PKGNAME=	pcc-0.9.8
@@ -14,5 +14,7 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	bin libexec
 
 .include "../../mk/bsd.pkg.mk"
