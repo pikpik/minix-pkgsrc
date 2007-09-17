@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.34 2007/03/17 14:02:13 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2007/03/18 16:02:09 yyamano Exp $
 
-DISTNAME=	xterm-224
+DISTNAME=	xterm-229
 CATEGORIES=	x11
 MASTER_SITES=	ftp://invisible-island.net/xterm/
 EXTRACT_SUFX=	.tgz
@@ -12,9 +12,14 @@ COMMENT=	Latest terminal emulator for the X Window System
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
+USE_DIRS+=	xdg-1.4
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+= --disable-imake --enable-narrowproto
+.endif
 
 .if exists(/usr/include/wchar.h)
 CONFIGURE_ARGS+= --enable-wide-chars
@@ -47,4 +52,10 @@ post-install:
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+###
+### For detection of XKB bell extension.
+###
+BUILDLINK_DEPMETHOD.libxkbfile?=	build
+.include "../../x11/libxkbfile/buildlink3.mk"
+
 .include "../../mk/bsd.pkg.mk"
