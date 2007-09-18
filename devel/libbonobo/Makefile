@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/11/05 17:49:33 joerg Exp $
+# $NetBSD: Makefile,v 1.52 2007/04/09 00:46:11 wiz Exp $
 
 DISTNAME=		libbonobo-2.18.0
 CATEGORIES=		devel gnome
@@ -16,7 +16,7 @@ CONFLICTS=		bonobo-activation-[0-9]*
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
-USE_TOOLS+=		bison gmake intltool msgfmt perl:run pkg-config
+USE_TOOLS+=		bison flex gmake intltool msgfmt perl:run pkg-config
 
 PKGCONFIG_OVERRIDE=	bonobo/libbonobo-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	bonobo-activation/bonobo-activation-2.0.pc.in
