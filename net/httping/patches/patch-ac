@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- str.h.orig	2007-07-26 09:00:31.000000000 +0100
++++ str.h
+@@ -15,6 +15,6 @@
+ 
+ #include <string.h>
+ 
+-#ifndef strndup
++#ifndef HAVE_STRNDUP
+ char *strndup(char *in, int size);
+ #endif
