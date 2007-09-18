@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2007/08/03 02:34:56 smb Exp $
 #
 
 PLUGIN_NAME=	pgpmime
@@ -11,7 +11,7 @@ CONFIGURE_ARGS+=	--enable-gpgme
 CONFIGURE_ARGS+=	--enable-pgpcore-plugin
 CONFIGURE_ARGS+=	--enable-pgpmime-plugin
 
-DEPENDS+=	claws-mail-pgpcore>=${CLAWS_VERSION}:../../mail/claws-mail-pgpcore
+DEPENDS+=	claws-mail-pgpcore-${CLAWS_VERSION}:../../mail/claws-mail-pgpcore
 
 PLIST_SRC+=	PLIST
 

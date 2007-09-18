@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.2 2007/08/06 21:41:21 smb Exp $
+# $NetBSD:$
 #
 
-DISTNAME=attachwarner-0.2.8
-PKGNAME=claws-mail-attachwarner-0.2.8
+DISTNAME=spam_report-0.2
+PKGNAME=claws-mail-spam_report-0.2
 CATEGORIES=mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	smb@NetBSD.org
-COMMENT=	Warns if a message mentions an attachment without attaching files
-
-PLIST_SRC+=	PLIST
+COMMENT=	Report spam to various places
 
 DEPENDS+=	claws-mail-${CLAWS_VERSION}:../../mail/claws-mail
 
@@ -22,5 +20,6 @@ USE_LANGUAGES+=	c
 
 .include "../../mail/claws-mail/Makefile.vers"
 .include "../../mail/claws-mail/buildlink3.mk"
+.include "../../www/curl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
