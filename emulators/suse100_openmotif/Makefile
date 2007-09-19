@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2007/04/19 15:30:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.4 2007/07/29 05:18:56 jlam Exp $
 
 DISTNAME=	suse_openmotif-${SUSE_VERSION}
 PKGREVISION=	2
 CATEGORIES=	emulators
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Linux compatibility package for OpenMotif
 
 EMUL_MODULES.linux=	x11
