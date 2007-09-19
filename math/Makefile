@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2007/08/13 08:12:47 rillig Exp $
+# $NetBSD: Makefile,v 1.160 2007/09/13 10:09:52 gson Exp $
 #
 
 COMMENT=	Mathematics
@@ -139,6 +139,7 @@ SUBDIR+=	qalculate-currency
 SUBDIR+=	qalculate-gtk
 SUBDIR+=	qalculate-kde
 SUBDIR+=	qalculate-units
+SUBDIR+=	qhull
 SUBDIR+=	quadpack
 SUBDIR+=	randlib
 SUBDIR+=	ruby-gsl
