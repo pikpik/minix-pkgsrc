@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.890 2007/09/14 20:51:42 jnemeth Exp $
+# $NetBSD: Makefile,v 1.891 2007/09/16 22:54:17 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -188,7 +188,6 @@ SUBDIR+=	gmake
 SUBDIR+=	gmp
 SUBDIR+=	gnome-build
 SUBDIR+=	gnome-common
-SUBDIR+=	gnome2-libole2
 SUBDIR+=	gnustep-base
 SUBDIR+=	gnustep-examples
 SUBDIR+=	gnustep-make
@@ -283,7 +282,6 @@ SUBDIR+=	libnet10
 SUBDIR+=	libnet11
 SUBDIR+=	libntlm
 SUBDIR+=	liboil
-SUBDIR+=	libole2
 SUBDIR+=	liboop
 SUBDIR+=	libosip
 SUBDIR+=	libportlib
