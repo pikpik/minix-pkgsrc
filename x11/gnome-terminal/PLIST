@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.18 2007/07/06 18:44:10 drochner Exp $
 bin/gnome-terminal
 lib/bonobo/servers/gnome-terminal.server
 share/applications/gnome-terminal.desktop
