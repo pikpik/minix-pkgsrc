@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.16 2006/09/16 12:20:33 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.17 2007/06/05 05:37:05 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 LIBGSF_BUILDLINK3_MK:=	${LIBGSF_BUILDLINK3_MK}+
@@ -21,7 +21,7 @@ BUILDLINK_PKGSRCDIR.libgsf?=	../../devel/libgsf
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

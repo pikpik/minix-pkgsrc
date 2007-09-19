@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2007/07/13 17:38:44 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2007/07/15 21:44:41 rillig Exp $
 #
 
 DISTNAME=	gnome-screensaver-2.18.2
+PKGREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-screensaver/2.18/}
 
@@ -70,7 +71,7 @@ post-install:
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/gnome-menus/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXScrnSaver/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"

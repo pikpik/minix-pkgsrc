@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/09/16 12:20:32 jmmv Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2007/06/05 05:37:06 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNOME_VFSMM_BUILDLINK3_MK:=	${GNOME_VFSMM_BUILDLINK3_MK}+
@@ -18,6 +18,6 @@ BUILDLINK_PKGSRCDIR.gnome-vfsmm?=	../../sysutils/gnome-vfsmm
 .endif	# GNOME_VFSMM_BUILDLINK3_MK
 
 .include "../../devel/glibmm/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

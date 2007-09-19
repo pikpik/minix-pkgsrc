@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2007/02/17 20:59:46 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2007/06/05 05:37:24 wiz Exp $
 #
 
 DISTNAME=	ArX-2.2.4
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	devel scm
 MASTER_SITES=	http://savannah.nongnu.org/download/arx/
 
@@ -40,5 +40,5 @@ do-install:
 	cd ${WRKSRC}							\
 	&& ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/scons install
 
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

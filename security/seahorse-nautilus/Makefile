@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2007/04/11 21:48:04 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2007/06/05 05:37:35 wiz Exp $
 
 DISTNAME=	seahorse-1.0.1
 PKGNAME=	seahorse-nautilus-1.0.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/seahorse/1.0/}
 EXTRACT_SUFX=	.tar.bz2
@@ -35,7 +35,7 @@ INSTALL_DIRS=	plugins/nautilus-ext
 .include "../../net/libsoup-devel/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../sysutils/nautilus/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"

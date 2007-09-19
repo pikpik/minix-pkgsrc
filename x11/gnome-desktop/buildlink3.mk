@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.23 2007/03/21 12:05:55 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.24 2007/06/05 05:37:03 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 GNOME_DESKTOP_BUILDLINK3_MK:=	${GNOME_DESKTOP_BUILDLINK3_MK}+
@@ -20,7 +20,7 @@ BUILDLINK_PKGSRCDIR.gnome-desktop?=	../../x11/gnome-desktop
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
 

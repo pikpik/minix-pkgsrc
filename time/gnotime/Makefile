@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2007/04/11 22:46:01 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/06/05 05:37:37 wiz Exp $
 
 DISTNAME=	gnotime-2.2.1
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	time gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gttr/}
 
@@ -27,7 +27,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../www/gtkhtml38/buildlink3.mk"

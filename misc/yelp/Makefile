@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.69 2007/06/05 05:37:31 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2007/07/17 10:17:11 drochner Exp $
 #
 
 DISTNAME=		yelp-2.18.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.18/}
 EXTRACT_SUFX=		.tar.bz2
@@ -50,7 +50,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"

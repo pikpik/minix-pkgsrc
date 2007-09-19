@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2007/06/05 05:37:23 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2007/06/15 17:12:27 joerg Exp $
 #
 
 DISTNAME=		gramps-1.0.11
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 
@@ -21,7 +21,7 @@ PYTHON_VERSIONS_ACCEPTED=	24
 
 MESSAGE_SUBST+=		PYPKGPREFIX=${PYPKGPREFIX}
 
-.include "../../sysutils/gnome-vfs2/buildlink3.mk"
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/scrollkeeper/omf.mk"
 .include "../../graphics/py-imaging/buildlink3.mk"
 .include "../../textproc/py-xml/buildlink3.mk"
