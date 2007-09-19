@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/06/10 08:52:30 joerg Exp $
+# $NetBSD: Makefile,v 1.49 2007/09/19 23:13:26 wiz Exp $
 
 DISTNAME=		gnome-media-2.18.0
 PKGREVISION=		2

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2006/07/07 18:21:48 drochner Exp $
+@comment $NetBSD: PLIST,v 1.12 2006/09/15 15:23:00 jmmv Exp $
 bin/cddb-slave2-properties
 bin/gnome-audio-profiles-properties
 bin/gnome-sound-recorder
