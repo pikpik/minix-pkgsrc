@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aj,v 1.1 2006/02/28 23:48:12 joerg Exp $
 
 --- sysdeps/freebsd/proclist.c.orig	2004-09-23 22:44:19.000000000 +0000
 +++ sysdeps/freebsd/proclist.c

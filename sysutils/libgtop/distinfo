@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.28 2007/04/04 18:53:44 gdt Exp $
+$NetBSD: distinfo,v 1.29 2007/06/25 21:18:52 joerg Exp $
 
 SHA1 (libgtop-2.14.2.tar.bz2) = 20e79a58c08e06e5f5e68d8ebbd575471f754e96
 RMD160 (libgtop-2.14.2.tar.bz2) = cb51f7252e015e17dcf3f1f991b36bf3e5496efe

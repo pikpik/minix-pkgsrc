@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ak,v 1.2 2007/06/25 21:18:52 joerg Exp $
 
 --- sysdeps/freebsd/procmap.c.orig	2005-12-12 10:09:39.000000000 +0000
 +++ sysdeps/freebsd/procmap.c
