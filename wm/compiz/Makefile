@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/07/16 09:39:20 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2007/09/19 23:19:10 wiz Exp $
 #
 
 DISTNAME=	compiz-0.4.0
@@ -39,7 +39,7 @@ CONFIGURE_ARGS+=	--enable-librsvg
 PLIST_SUBST+=		GNOME=""
 .include "../../x11/gnome2-control-center/buildlink3.mk"
 .include "../../wm/metacity/buildlink3.mk"
-.include "../../graphics/librsvg2/buildlink3.mk"
+.include "../../graphics/librsvg/buildlink3.mk"
 .else
 PLIST_SUBST+=		GNOME="@comment "
 .endif

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2007/09/19 08:35:11 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2007/09/19 23:19:09 wiz Exp $
 #
 
 DISTNAME=	cairo-clock_0.3.3-1
 PKGNAME=	cairo-clock-0.3.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	time
 MASTER_SITES=	http://macslow.thepimp.net/projects/cairo-clock/
 
@@ -19,6 +19,6 @@ USE_DIRS+=	xdg-1.1
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
-.include "../../graphics/librsvg2/buildlink3.mk"
+.include "../../graphics/librsvg/buildlink3.mk"
 .include "../../devel/libglade2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
