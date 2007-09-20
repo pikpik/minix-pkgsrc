@@ -1,0 +1,5 @@
+@comment $NetBSD: PLIST,v 1.2 2007/01/08 18:22:09 adam Exp $
+${PG_SUBPREFIX}lib/postgresql/libadminpack.la
+${PG_SUBPREFIX}share/doc/postgresql/contrib/README.adminpack
+${PG_SUBPREFIX}share/postgresql/contrib/adminpack.sql
+${PG_SUBPREFIX}share/postgresql/contrib/uninstall_adminpack.sql
