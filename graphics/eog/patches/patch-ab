@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2006/02/08 18:34:20 drochner Exp $
 
 --- configure.orig	2006-02-06 21:55:16.000000000 +0100
 +++ configure
