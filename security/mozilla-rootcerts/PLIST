@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/mozilla-rootcerts
+share/mozilla-rootcerts/certdata.txt
+@dirrm share/mozilla-rootcerts
