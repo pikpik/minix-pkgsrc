@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.14 2006/02/08 18:25:24 drochner Exp $
+$NetBSD: distinfo,v 1.15 2006/02/11 14:17:51 joerg Exp $
 
 SHA1 (balsa-2.3.10.tar.bz2) = 74315661721a7b222403988b2af8fbc690c1ddc4
 RMD160 (balsa-2.3.10.tar.bz2) = 2fba2b3ae62e0fa3c3d8092f559f8ab7a488c22c

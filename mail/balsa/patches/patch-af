@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1 2003/07/25 18:25:46 drochner Exp $
 
 --- src/filter-edit-callbacks.c.orig	2003-07-25 20:01:17.000000000 +0200
 +++ src/filter-edit-callbacks.c	2003-07-25 20:01:30.000000000 +0200

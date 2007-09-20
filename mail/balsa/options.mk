@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.5 2006/05/31 18:22:23 ghen Exp $
+# $NetBSD: options.mk,v 1.6 2007/02/22 19:26:40 wiz Exp $
 #
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.balsa2
+PKG_OPTIONS_VAR=	PKG_OPTIONS.balsa
 PKG_SUPPORTED_OPTIONS=	ldap ssl
 
 .include "../../mk/bsd.options.mk"

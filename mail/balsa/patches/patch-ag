@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.2 2006/02/08 18:25:24 drochner Exp $
 
 --- libbalsa/imap/imap-handle.c.orig	2005-06-11 10:23:54.000000000 +0200
 +++ libbalsa/imap/imap-handle.c
