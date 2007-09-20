@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2005/12/27 16:06:04 recht Exp $
 bin/arx
 man/man1/arx.1
 share/doc/arx/ArX.html

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.4 2007/06/30 17:17:33 joerg Exp $
 
 --- src/boost/boost/config/platform/bsd.hpp.orig	2005-01-03 23:55:25.000000000 +0000
 +++ src/boost/boost/config/platform/bsd.hpp

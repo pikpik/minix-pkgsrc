@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/06/05 05:37:24 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/09/19 23:13:14 wiz Exp $
 #
 
 DISTNAME=	ArX-2.2.4
