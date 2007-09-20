@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2007/08/30 06:20:14 wiz Exp $
+# $NetBSD: Makefile,v 1.59 2007/09/18 20:00:04 drochner Exp $
 #
 
 DISTNAME=	libgnomeprint-2.18.2
@@ -12,7 +12,7 @@ COMMENT=	Library for the GNOME2 Printing Architecture
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		bison gmake intltool msgfmt pkg-config
+USE_TOOLS+=		bison flex gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
