@@ -1,4 +1,4 @@
-$NetBSD: patch-ab,v 1.7 2006/02/26 10:39:34 wiz Exp $
+$NetBSD: patch-ab,v 1.8 2006/04/03 06:35:26 wiz Exp $
 
 --- gdk-pixbuf-loader/Makefile.in.orig	2006-04-01 16:31:29.000000000 +0000
 +++ gdk-pixbuf-loader/Makefile.in
