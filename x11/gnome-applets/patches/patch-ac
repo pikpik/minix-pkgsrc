@@ -1,4 +1,4 @@
-$NetBSD: patch-ac,v 1.4 2006/08/28 10:02:33 jmmv Exp $
+$NetBSD: patch-ac,v 1.5 2006/09/15 15:14:38 jmmv Exp $
 
 --- configure.orig	2006-09-04 16:08:23.000000000 +0200
 +++ configure

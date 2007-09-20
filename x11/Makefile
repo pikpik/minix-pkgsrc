@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.522 2007/09/19 23:53:47 wiz Exp $
+# $NetBSD: Makefile,v 1.523 2007/09/19 23:57:00 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -53,6 +53,7 @@ SUBDIR+=	fvwm-wharf
 SUBDIR+=	gdm
 SUBDIR+=	ggiterm
 SUBDIR+=	glproto
+SUBDIR+=	gnome-applets
 SUBDIR+=	gnome-desktop
 SUBDIR+=	gnome-mag
 SUBDIR+=	gnome-panel
@@ -61,7 +62,6 @@ SUBDIR+=	gnome-session
 SUBDIR+=	gnome-terminal
 SUBDIR+=	gnome-themes
 SUBDIR+=	gnome-themes-extras
-SUBDIR+=	gnome2-applets
 SUBDIR+=	gnopernicus
 SUBDIR+=	gnustep-back
 SUBDIR+=	gnustep-gui

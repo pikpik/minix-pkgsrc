@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.5 2007/04/17 17:59:07 drochner Exp $
 
---- ./stickynotes/pixmaps/Makefile.in.orig	2007-04-17 18:13:05.000000000 +0200
-+++ ./stickynotes/pixmaps/Makefile.in
-@@ -563,7 +563,7 @@ install-data-local:
+--- geyes/Makefile.in.orig	2007-03-12 14:04:23.000000000 +0100
++++ geyes/Makefile.in
+@@ -867,7 +867,7 @@ install-data-local:
  	for icon in $(icons); do \
  		SIZE=`echo $$icon | cut -d. -f2`; \
  		FILE=`echo $$icon | cut -d. -f1,3`; \

@@ -1,4 +1,4 @@
-$NetBSD: patch-ad,v 1.4 2005/03/22 16:19:42 jmmv Exp $
+$NetBSD: patch-ad,v 1.5 2005/10/12 21:59:10 jmmv Exp $
 
 --- battstat/power-management.c.orig	2005-08-30 16:32:42.000000000 +0200
 +++ battstat/power-management.c
