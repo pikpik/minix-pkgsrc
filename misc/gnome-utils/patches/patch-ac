@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.5 2007/04/11 18:06:55 drochner Exp $
 
 --- gnome-screenshot/screenshot-save.c.orig	2007-03-10 14:19:50.000000000 +0100
 +++ gnome-screenshot/screenshot-save.c
