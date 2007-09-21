@@ -1,4 +1,4 @@
-/*	$NetBSD$	*/
+/*	$NetBSD: dirent.h,v 1.1 2004/08/23 03:32:13 jlam Exp $	*/
 
 /*-
  * Copyright (c) 2004 The NetBSD Foundation, Inc.
@@ -58,7 +58,7 @@
  * Declare functions and macros that may be missing in <dirent.h>.
  */
 
-#ifndef dirfd
+#if !defined(HAVE_DIRFD) && defined(HAVE_DIR_DD_FD)
 #define dirfd(dirp)     ((dirp)->dd_fd)
 #endif
 
