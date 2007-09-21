@@ -1,4 +1,4 @@
-# $NetBSD: bin-install.mk,v 1.13 2007/09/19 13:26:19 rillig Exp $
+# $NetBSD: bin-install.mk,v 1.14 2007/09/19 13:32:59 rillig Exp $
 #
 
 # This file provides the following targets:
@@ -68,7 +68,8 @@ locked-su-do-bin-install:
 	rel=${_SHORT_UNAME_R:Q};					\
 	arch=${MACHINE_ARCH:Q};						\
 	pkg_path=${PKGREPOSITORY:Q};					\
-	for i in ${BINPKG_SITES}; do					\
+	set args ${BINPKG_SITES}; shift;				\
+	for i in "$$@"; do						\
 		pkg_path="$$pkg_path;$$i/All";				\
 	done;								\
 	${STEP_MSG} "Installing ${PKGNAME} from $$pkg_path";		\
@@ -91,7 +92,8 @@ locked-su-do-bin-install:
 	rel=${_SHORT_UNAME_R:Q};					\
 	arch=${MACHINE_ARCH:Q};						\
 	pkg_path=${PKGREPOSITORY:Q};					\
-	for i in ${BINPKG_SITES}; do					\
+	set args ${BINPKG_SITES}; shift;				\
+	for i in "$$@"; do						\
 		pkg_path="$$pkg_path;$$i/All";				\
 	done;								\
 	pkgpattern=${PKGNAME_REQD:U${PKGNAME}:Q};			\
