@@ -1,4 +1,4 @@
-/*	$NetBSD: rmd160.c,v 1.5 2007/07/27 17:08:27 joerg Exp $	*/
+/*	$NetBSD: rmd160.c,v 1.6 2007/09/14 08:12:29 joerg Exp $	*/
 
 /********************************************************************\
  *
@@ -23,7 +23,7 @@
 #endif
 
 #ifndef lint
-__RCSID("$NetBSD: rmd160.c,v 1.5 2007/07/27 17:08:27 joerg Exp $");
+__RCSID("$NetBSD: rmd160.c,v 1.6 2007/09/14 08:12:29 joerg Exp $");
 #endif	/* not lint */
 
 /* header files */
@@ -360,7 +360,7 @@ RMD160Transform(uint32_t state[5], const uint32_t block[16])
 /********************************************************************/
 
 void
-RMD160Update(RMD160_CTX *context, const uint8_t *data, uint32_t nbytes)
+RMD160Update(RMD160_CTX *context, const uint8_t *data, size_t nbytes)
 {
 	uint32_t X[16];
 	uint32_t ofs = 0;

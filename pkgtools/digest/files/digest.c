@@ -1,4 +1,4 @@
-/*	$NetBSD: digest.c,v 1.13 2007/08/03 17:10:07 tnn Exp $ */
+/*	$NetBSD: digest.c,v 1.14 2007/09/14 08:12:29 joerg Exp $ */
 
 /*
  * Copyright (c) 2001-2005 Alistair G. Crooks.  All rights reserved.
@@ -37,7 +37,7 @@
 #ifndef lint
 __COPYRIGHT("@(#) Copyright (c) 2001-2005 \
 	        The NetBSD Foundation, Inc.  All rights reserved.");
-__RCSID("$NetBSD: digest.c,v 1.13 2007/08/03 17:10:07 tnn Exp $");
+__RCSID("$NetBSD: digest.c,v 1.14 2007/09/14 08:12:29 joerg Exp $");
 #endif
 
 
@@ -61,7 +61,7 @@ __RCSID("$NetBSD: digest.c,v 1.13 2007/08/03 17:10:07 tnn Exp $");
 #endif
 
 typedef void (*HASH_init)(void *);
-typedef void (*HASH_update)(void *, const unsigned char *, unsigned int);
+typedef void (*HASH_update)(void *, const uint8_t *, size_t);
 typedef char *(*HASH_end)(void *, char *);
 typedef char *(*HASH_file)(char *, char *);
   
