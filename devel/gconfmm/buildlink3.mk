@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 23:10:42 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2006/07/29 14:09:12 adam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GCONFMM_BUILDLINK3_MK:=	${GCONFMM_BUILDLINK3_MK}+
@@ -17,7 +17,7 @@ BUILDLINK_ABI_DEPENDS.gconfmm+=	gconfmm>=2.14.0nb1
 BUILDLINK_PKGSRCDIR.gconfmm?=	../../devel/gconfmm
 .endif	# GCONFMM_BUILDLINK3_MK
 
-.include "../../devel/GConf2/buildlink3.mk"
+.include "../../devel/GConf/buildlink3.mk"
 .include "../../x11/gtkmm/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}

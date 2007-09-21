@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2007/06/05 05:37:31 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2007/09/19 23:19:04 wiz Exp $
 
 DISTNAME=	etherape-0.9.7
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	gnome net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=etherape/}
 
@@ -29,7 +29,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/services ${EGDIR}
 
 .include "../../net/libpcap/buildlink3.mk"
-.include "../../devel/libglade2/buildlink3.mk"
+.include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../textproc/scrollkeeper/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

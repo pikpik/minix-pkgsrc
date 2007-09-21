@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2007/07/17 20:02:36 jmmv Exp $
+# $NetBSD: Makefile,v 1.17 2007/07/17 21:47:40 jmmv Exp $
 #
 
 DISTNAME=		monotone-viz-0.15
+PKGREVISION=		1
 CATEGORIES=		devel scm
 MASTER_SITES=		http://oandrieu.nerim.net/monotone-viz/
 
@@ -27,5 +28,5 @@ do-install:
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
-.include "../../x11/lablgtk2/buildlink3.mk"
+.include "../../x11/lablgtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

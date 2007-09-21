@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2007/05/25 23:08:57 joerg Exp $
+# $NetBSD: Makefile,v 1.51 2007/08/10 19:14:06 tron Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -14,7 +14,7 @@ CONFLICTS=		xchat-gnome-[0-9]*
 USE_TOOLS+=		msgfmt
 USE_PKGLOCALEDIR=	YES
 USE_DIRS+=		xdg-1.1
-GCONF2_SCHEMAS=		apps_xchat_url_handler.schemas
+GCONF_SCHEMAS=		apps_xchat_url_handler.schemas
 
 CONFIGURE_ARGS+=	--enable-tcl=no
 CONFIGURE_ARGS+=	--disable-perl
@@ -51,10 +51,10 @@ post-install:
 
 .if !empty(PKG_OPTIONS:Mgnome)
 
-	${INSTALL_DATA_DIR} ${DESTDIR}${GCONF2_SCHEMAS_DIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${GCONF_SCHEMAS_DIR}
 # In case there're ever additional schema files, use ODE loop.
-	${GCONF2_SCHEMAS:@.s.@${INSTALL_DATA} ${WRKSRC}/src/common/dbus/${.s.} \
-		${DESTDIR}${GCONF2_SCHEMAS_DIR}/@}
+	${GCONF_SCHEMAS:@.s.@${INSTALL_DATA} ${WRKSRC}/src/common/dbus/${.s.} \
+		${DESTDIR}${GCONF_SCHEMAS_DIR}/@}
 .endif
 
 .include "../../mk/bsd.pkg.mk"

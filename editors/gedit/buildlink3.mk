@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2007/03/21 12:05:44 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2007/06/05 05:37:12 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GEDIT_BUILDLINK3_MK:=	${GEDIT_BUILDLINK3_MK}+
@@ -17,7 +17,7 @@ BUILDLINK_ABI_DEPENDS.gedit?=	gedit>=2.18.1nb1
 BUILDLINK_PKGSRCDIR.gedit?=	../../editors/gedit
 .endif	# GEDIT_BUILDLINK3_MK
 
-.include "../../devel/libglade2/buildlink3.mk"
+.include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"
 .include "../../x11/gtksourceview/buildlink3.mk"

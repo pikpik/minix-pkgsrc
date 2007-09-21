@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 23:10:44 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/09/24 16:48:27 adam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBGLADEMM_BUILDLINK3_MK:=	${LIBGLADEMM_BUILDLINK3_MK}+
@@ -17,7 +17,7 @@ BUILDLINK_ABI_DEPENDS.libglademm+=	libglademm>=2.6.2nb1
 BUILDLINK_PKGSRCDIR.libglademm?=	../../devel/libglademm
 .endif	# LIBGLADEMM_BUILDLINK3_MK
 
-.include "../../devel/libglade2/buildlink3.mk"
+.include "../../devel/libglade/buildlink3.mk"
 .include "../../x11/gtkmm/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2006/07/22 05:10:54 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2006/09/22 07:08:16 rillig Exp $
 
 DISTNAME=	ImageViewer-0.6.3
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	graphics gnustep
 MASTER_SITES=	http://www.nice.ch/~phip/
 

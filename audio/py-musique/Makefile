@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2006/10/04 20:44:19 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2007/02/22 19:26:06 wiz Exp $
 #
 
 DISTNAME=	pymusique-0.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.pyronecrophilia.com/content/pymusique/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2006/07/22 05:10:54 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2006/09/22 07:08:16 rillig Exp $
 #
 
 DISTNAME=		Addresses-0.4.6
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		misc gnustep
 MASTER_SITES=		http://giesler.biz/bjoern/downloads/
 

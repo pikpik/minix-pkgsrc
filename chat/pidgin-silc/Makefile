@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/08/14 01:16:26 tnn Exp $
+# $NetBSD: Makefile,v 1.2 2007/09/04 19:09:48 joerg Exp $
 #
 
 PKGNAME=		pidgin-silc-${PIDGIN_VERSION}
@@ -48,7 +48,7 @@ SUBST_SED.linkage=	-e 's/-lsilcclient -lsilc/-Wl,--whole-archive,libsilcclient.a
 
 .include "../../chat/libpurple/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
-.include "../../devel/GConf2/schemas.mk"
+.include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
 #.include "../../devel/silc-toolkit/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
