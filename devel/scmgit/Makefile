@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2007/08/29 23:34:51 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2007/09/11 09:23:54 bjs Exp $
 #
 
-DISTNAME=	git-1.5.3.1
+DISTNAME=	git-1.5.3.2
 PKGNAME=	scm${DISTNAME}
 CATEGORIES=	devel scm
 MASTER_SITES=	http://www.kernel.org/pub/software/scm/git/
@@ -58,6 +58,8 @@ PLIST_SUBST+=	IF_NEEDS_SUBPROCESS_PY=""
 .else
 PLIST_SUBST+=	IF_NEEDS_SUBPROCESS_PY="@comment "
 .endif
+
+#.include "../../mk/emacs.mk" # XXX TODO (see patch-ad)
 
 post-install:
 	chmod 644 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/git*.1
