@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.glade,v 1.1 2007/06/09 13:17:18 wiz Exp $
+@comment $NetBSD: PLIST.glade,v 1.2 2007/07/18 13:10:44 jmmv Exp $
 bin/lablgladecc2
 lib/ocaml/lablgtk2/glade.cmi
 lib/ocaml/lablgtk2/glade.cmx
