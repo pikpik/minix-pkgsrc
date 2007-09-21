@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.383 2007/09/20 20:53:30 wiz Exp $
+# $NetBSD: Makefile,v 1.384 2007/09/20 21:03:50 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -206,6 +206,7 @@ SUBDIR+=	p5-Text-Format
 SUBDIR+=	p5-Text-Glob
 SUBDIR+=	p5-Text-Kakasi
 SUBDIR+=	p5-Text-LevenshteinXS
+SUBDIR+=	p5-Text-Markdown
 SUBDIR+=	p5-Text-PDF
 SUBDIR+=	p5-Text-Quoted
 SUBDIR+=	p5-Text-Reflow
