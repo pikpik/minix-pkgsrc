@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.27 2007/01/07 09:13:57 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2007/02/06 18:21:15 joerg Exp $
 
 DISTNAME=		stalin-0.9
 PKGREVISION=		5
 CATEGORIES=		lang
-MASTER_SITES=		ftp://ftp.nj.nec.com/pub/qobi/
+MASTER_SITES=		# ftp://ftp.ecn.purdue.edu/qobi/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.neci.nj.nec.com/homepages/qobi/software.html
+HOMEPAGE=		http://cobweb.ecn.purdue.edu/~qobi/software.html
 COMMENT=		Aggressively optimizing Scheme compiler
 
 # Only ported to these 4 archs
