@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/08/05 20:03:35 tnn Exp $
+# $NetBSD: Makefile,v 1.11 2007/08/05 20:16:46 tnn Exp $
 
 DISTNAME=	gamin-0.1.9
 CATEGORIES=	sysutils
@@ -17,6 +17,7 @@ CONFIGURE_ARGS+=	--enable-debug
 CONFIGURE_ARGS+=	--disable-gtk-doc
 CONFIGURE_ARGS+=	--without-threads
 CONFIGURE_ARGS+=	--with-html-dir=${DOCDIR:Q}
+CONFIGURE_ARGS+=	--without-python
 
 PKG_SYSCONFSUBDIR=	gamin
 DOCDIR=			${PREFIX}/share/doc/gamin
