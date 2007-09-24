@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.34 2007/09/16 17:34:32 joerg Exp $
+# $NetBSD: builtin.mk,v 1.35 2007/09/18 14:14:31 joerg Exp $
 
 BUILTIN_PKG:=	gettext
 
@@ -126,7 +126,6 @@ BUILDLINK_TRANSFORM+=	rm:-lintl
 .  if !empty(USE_BUILTIN.gettext:M[nN][oO])
 _BLTN_LIBINTL=		-lintl
 _BLTN_LIBINTL+=		${BUILDLINK_LDADD.iconv}
-.  include "../../converters/libiconv/buildlink3.mk"
 .  endif
 
 BUILDLINK_LDADD.gettext?=	${_BLTN_LIBINTL}
