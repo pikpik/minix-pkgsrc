@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .if !defined(SPIDERMONKEY_HACKS_MK)
 SPIDERMONKEY_HACKS_MK=	# defined
 
