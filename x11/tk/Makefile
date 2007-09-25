@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2007/01/02 11:03:11 joerg Exp $
+# $NetBSD: Makefile,v 1.59 2007/05/29 18:37:09 heinz Exp $
 
 DISTNAME=	tk${TK_VERSION}-src
 PKGNAME=	tk-${TK_VERSION}
@@ -46,7 +46,7 @@ DESTDIRPREFIX=		${DESTDIR}${PREFIX}
 
 post-install:
 	rm -f ${DESTDIRPREFIX:Q}/bin/wish
-	ln -s wish8.4 ${DESTDIRPREFIX:Q}/bin/wish
+	${LN} -s wish8.4 ${DESTDIRPREFIX:Q}/bin/wish
 	${INSTALL_DATA} ${WRKSRC}/generic/default.h ${DESTDIRPREFIX:Q}/include/tk/generic
 	${INSTALL_DATA} ${WRKSRC}/generic/ks_names.h ${DESTDIRPREFIX:Q}/include/tk/generic
 	${INSTALL_DATA} ${WRKSRC}/generic/tk.h ${DESTDIRPREFIX:Q}/include/tk/generic

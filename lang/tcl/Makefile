@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2006/11/02 17:41:23 adam Exp $
+# $NetBSD: Makefile,v 1.61 2007/05/29 18:35:58 heinz Exp $
 
 DISTNAME=	tcl${TCL_VERSION}-src
 PKGNAME=	tcl-${TCL_VERSION}
@@ -65,7 +65,7 @@ INSTALLATION_DIRS+=	include/tcl/generic
 INSTALLATION_DIRS+=	lib/tcl
 
 post-install:
-	cd ${DESTDIR:Q}${PREFIX:Q}/bin && ln -s tclsh8.4 tclsh
+	cd ${DESTDIR:Q}${PREFIX:Q}/bin && ${LN} -s tclsh8.4 tclsh
 	${INSTALL_DATA} ${WRKSRC}/unix/tclUnixPort.h \
 		${DESTDIR:Q}${PREFIX:Q}/include/tcl/unix
 .for f in	regex.h tcl.h tclCompile.h tclDecls.h tclIO.h		\
