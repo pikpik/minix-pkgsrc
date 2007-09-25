@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2007/01/23 22:55:32 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2007/02/06 14:34:54 rillig Exp $
 
 .include "Makefile.common"
 PKGREVISION=	1
@@ -31,10 +31,10 @@ SUBST_SED.ti+=		-e '/^screen-256color/,/^$$/d'
 post-configure:
 	cd ${WRKSRC}/man;					\
 	for f in *.1m; do					\
-		mv -f $${f} `${BASENAME} $${f} .1m`.1; 	\
+		${MV} -f $${f} `${BASENAME} $${f} .1m`.1; 	\
 	done;							\
 	for f in *.3x; do					\
-		mv -f $${f} `${BASENAME} $${f} .3x`.3; 	\
+		${MV} -f $${f} `${BASENAME} $${f} .3x`.3; 	\
 	done
 
 post-install:

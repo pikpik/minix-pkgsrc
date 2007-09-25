@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/10/02 23:26:43 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2006/10/04 22:04:09 wiz Exp $
 #
 
 DISTNAME=	cronolog-1.6.2
@@ -21,7 +21,7 @@ SUBST_FILES.cl=	doc/cronolog.1m
 SUBST_SED.cl=	-e "s,/www/sbin/cronolog,${PREFIX}/sbin/cronolog,g"
 
 post-install:
-	cd ${PREFIX}/${PKGMANDIR} && mv man1/cronolog.1m man8/cronolog.8
-	cd ${PREFIX}/${PKGMANDIR} && mv man1/cronosplit.1m man8/cronosplit.8
+	cd ${PREFIX}/${PKGMANDIR} && ${MV} man1/cronolog.1m man8/cronolog.8
+	cd ${PREFIX}/${PKGMANDIR} && ${MV} man1/cronosplit.1m man8/cronosplit.8
 
 .include "../../mk/bsd.pkg.mk"

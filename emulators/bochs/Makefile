@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2006/12/04 17:37:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.48 2007/02/09 14:58:30 joerg Exp $
 
 DISTNAME=		bochs-2.3
 CATEGORIES=		emulators
@@ -112,6 +112,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 pre-configure:
 	${SED} ${BOCHSRC_SUBST} <${WRKSRC}/.bochsrc >${WRKSRC}/.bochsrc.new
-	mv ${WRKSRC}/.bochsrc.new ${WRKSRC}/.bochsrc
+	${MV} ${WRKSRC}/.bochsrc.new ${WRKSRC}/.bochsrc
 
 .include "../../mk/bsd.pkg.mk"

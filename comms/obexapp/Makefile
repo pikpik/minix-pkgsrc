@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/05/06 08:33:54 xtraeme Exp $
+# $NetBSD: Makefile,v 1.8 2007/05/22 18:53:55 plunky Exp $
 #
 
 DISTNAME=	obexapp-1.4.7
@@ -27,7 +27,7 @@ USE_GNU_ICONV=		yes
 
 # because the directory name conflicts with the rc.d script
 post-extract:
-	mv ${WRKDIR}/obexapp ${WRKDIR}/${DISTNAME}
+	${MV} ${WRKDIR}/obexapp ${WRKDIR}/${DISTNAME}
 
 .include "../../comms/openobex/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2007/03/21 19:44:10 jwise Exp $
+# $NetBSD: Makefile,v 1.59 2007/08/30 16:29:56 joerg Exp $
 
 DISTNAME=	mgetty1.1.31-Jul24
 PKGNAME=	mgetty-1.1.31
@@ -63,6 +63,6 @@ post-extract:
 	cd ${WRKSRC} && cp policy.h-dist policy.h
 
 do-configure:
-	mv ${WRKSRC}/doc/fax.1in ${WRKSRC}/doc/sendfax.1in
+	${MV} ${WRKSRC}/doc/fax.1in ${WRKSRC}/doc/sendfax.1in
 
 .include "../../mk/bsd.pkg.mk"
