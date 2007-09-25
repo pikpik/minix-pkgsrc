@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/10/23 19:59:53 minskim Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/04/17 07:07:20 jlam Exp $
 bin/tegclient
 bin/tegrobot
 bin/tegserver
@@ -274,4 +274,4 @@ share/pixmaps/teg_pix/themes/sentimental/zaire.png
 @comment in gnome2-dirs: @dirrm share/gnome/help
 @comment in gnome2-dirs: @dirrm share/gnome/apps/Games
 @comment in gnome2-dirs: @dirrm share/gnome/apps
-@comment in GConf2: @dirrm share/gconf/schemas
+@comment in GConf: @dirrm share/gconf/schemas

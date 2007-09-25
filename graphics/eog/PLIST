@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.24 2007/06/15 18:08:07 drochner Exp $
+@comment $NetBSD: PLIST,v 1.3 2007/09/20 20:48:54 wiz Exp $
 bin/eog
 share/applications/eog.desktop
 share/eog/eog-gtk-ui.xml
@@ -195,7 +195,7 @@ share/pixmaps/gnome-eog.png
 @dirrm share/gnome/help/eog/C/figures
 @dirrm share/gnome/help/eog/C
 @dirrm share/gnome/help/eog
-@comment in GConf2: @dirrm share/gconf/schemas
+@comment in GConf: @dirrm share/gconf/schemas
 @dirrm share/eog/glade
 @dirrm share/eog
 @comment in xdg-dirs: @dirrm share/applications
