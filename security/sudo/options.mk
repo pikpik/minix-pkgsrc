@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.12 2007/07/23 16:38:36 tls Exp $
+# $NetBSD: options.mk,v 1.13 2007/08/18 15:09:12 taca Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sudo
-PKG_SUPPORTED_OPTIONS=	kerberos ldap pam skey
+PKG_SUPPORTED_OPTIONS=	ldap
 PKG_OPTIONS_OPTIONAL_GROUPS= auth
 PKG_OPTIONS_GROUP.auth=	kerberos pam skey
 
