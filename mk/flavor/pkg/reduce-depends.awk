@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 #
-# $NetBSD: reduce-depends.awk,v 1.3 2006/06/06 20:05:44 jlam Exp $
+# $NetBSD: reduce-depends.awk,v 1.4 2007/06/10 07:31:42 joerg Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -50,6 +50,12 @@
 #	dependency list.  The dependency list should be passed as a single
 #	argument, and the output will be a list of the reduced dependencies,
 #	echo one on a new line.
+#
+# ENVIRONMENT
+#	CAT
+#	PKG_ADMIN
+#	PWD_CMD
+#	TEST
 #
 ######################################################################
 
