@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/09/25 10:03:54 hira Exp $
+# $NetBSD: Makefile,v 1.23 2007/09/25 10:07:06 hira Exp $
 
 DISTNAME=	cdrtools-2.01.01a35
 PKGNAME=	cdrtools-2.01.01.35
@@ -84,7 +84,7 @@ post-build:
 	done
 
 do-install:
-	for program in btcflash cdda2wav cdrecord mkhybrid mkisofs 	\
+	for program in btcflash cdda2wav cdrecord mkisofs 	\
 		readcd scgcheck scgskeleton; do				\
 	cd ${WRKSRC}/$${program};					\
 		${INSTALL_PROGRAM} OBJ/*/$${program} 			\
