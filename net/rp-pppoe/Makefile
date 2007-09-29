@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2006/11/01 15:17:13 martin Exp $
+# $NetBSD: Makefile,v 1.36 2007/02/22 19:01:24 wiz Exp $
 
 DISTNAME=	rp-pppoe-3.8
-# PKGREVISION=	0
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.roaringpenguin.com/files/download/
 
