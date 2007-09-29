@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/25 01:11:06 uebayasi Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/30 00:27:24 uebayasi Exp $
 
 DISTNAME=	Kahua-1.0.1
 PKGNAME=	${DISTNAME:C/Kahua/kahua/}
@@ -15,7 +15,8 @@ DEPENDS+=	Gauche>=0.8.8:../../lang/gauche
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--sysconfdir=${PKG_SYSCONFBASEDIR:Q}
-CONFIGURE_ARGS+=--localstatedir=${DESTDIR:Q}/var
+CONFIGURE_ARGS+=--localstatedir=${DESTDIR}${VARBASE}
+BUILD_DEFS+=	VARBASE
 
 PKG_SYSCONFSUBDIR=	kahua
 EGDIR=			${PREFIX}/share/examples/kahua
