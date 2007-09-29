@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2007/03/24 19:21:19 joerg Exp $
+# $NetBSD: Makefile,v 1.57 2007/08/30 16:22:00 joerg Exp $
 #
 
 DISTNAME=	fidogate-4.4.10
@@ -33,6 +33,9 @@ SUBST_SED.paths=	-e "s,@PREFIX@,"${PREFIX:Q}",g"
 SUBST_SED.paths+=	-e "s,@PKG_SYSCONFDIR@,"${PKG_SYSCONFDIR:Q}",g"
 SUBST_SED.paths+=	-e "s,@PKGINFODIR@,"${PKGINFODIR:Q}",g"
 SUBST_STAGE.paths=	pre-build
+
+# Too many schar/uchar issues.
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 OWN_DIRS=		${PKG_SYSCONFDIR}/fidogate
 INSTALLATION_DIRS=	${EGDIR}		lib/fidogate		\
