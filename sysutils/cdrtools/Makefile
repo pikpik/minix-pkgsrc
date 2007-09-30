@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/09/25 10:07:06 hira Exp $
+# $NetBSD: Makefile,v 1.24 2007/09/28 21:42:10 dmcmahill Exp $
 
 DISTNAME=	cdrtools-2.01.01a35
 PKGNAME=	cdrtools-2.01.01.35
@@ -94,7 +94,7 @@ do-install:
 		${INSTALL_MAN} ${WRKSRC}/$${program}/$${program}.1 	\
 			${DESTDIR}${PREFIX}/${PKGMANDIR}/man1;		\
 	done
-	for program in mkhybrid mkisofs; do				\
+	for program in mkisofs; do				\
 		${INSTALL_MAN} ${WRKSRC}/$${program}/$${program}.8 	\
 			${DESTDIR}${PREFIX}/${PKGMANDIR}/man8;		\
 	done
