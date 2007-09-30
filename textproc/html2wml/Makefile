@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/10/14 08:23:29 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/01/07 09:14:13 rillig Exp $
 
 DISTNAME=	html2wml-0.4.8r2
 PKGNAME=	html2wml-0.4.8.2
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=	textproc converters
 MASTER_SITES=	http://maddingue.free.fr/softwares/download/Html2Wml/
 
-MAINTAINER=	shell@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 # HOMEPAGE=	http://maddingue.free.fr/softwares/html2wml.html
 COMMENT=	On-the-fly HTML to WML conversion
 
