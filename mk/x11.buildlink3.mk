@@ -1,8 +1,8 @@
-# $NetBSD: x11.buildlink3.mk,v 1.7 2006/12/01 13:05:53 joerg Exp $
+# $NetBSD: x11.buildlink3.mk,v 1.8 2007/08/17 20:27:30 joerg Exp $
 #
-# This Makefile fragment is meant to be included by packages that
-# require an X11 distribution.  x11.buildlink3.mk will include the
-# buildlink3.mk file from the appropriate X11 distribution.
+# This file should only be included from the buildlink3.mk files from
+# the modular Xorg packages and only in the case that the native X11
+# distribution should be used.
 #
 
 X11_BUILDLINK3_MK:=	${X11_BUILDLINK3_MK}+
