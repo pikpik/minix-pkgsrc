@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:57 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2007/09/03 06:12:43 wiz Exp $
 #
 
 DISTNAME=	snobol-0.99.4
 PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.snobol4.com/ \
-		ftp://alpha.gnu.org/budne/snobol/
+		ftp://ftp.snobol4.org/snobol/old/
 DISTFILES=	vanilla.zip ${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
