@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2007,v 1.2104 2007/09/30 12:29:11 hira Exp $
+$NetBSD: CHANGES-2007,v 1.2105 2007/09/30 15:21:46 tnn Exp $
 
 Changes to the packages collection and infrastructure in 2007:
 
@@ -3873,3 +3873,4 @@ Changes to the packages collection and infrastructure in 2007:
 	Updated chat/pidgin-sametime to 2.2.1 [tnn 2007-09-30]
 	Updated chat/pidgin-silc to 2.2.1 [tnn 2007-09-30]
 	Updated chat/finch to 2.2.1 [tnn 2007-09-30]
+	Updated mail/squirrelmail to 1.4.11 [martti 2007-10-02]
