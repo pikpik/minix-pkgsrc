@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/07/30 19:43:49 nra Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:59:58 zuntum Exp $
 libexec/tftpd
-man/man8/tftpd.8
 man/cat8/tftpd.0
+man/man8/tftpd.8
