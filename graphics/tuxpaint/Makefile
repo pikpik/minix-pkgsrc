@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/09/20 21:37:38 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2007/09/21 13:03:55 wiz Exp $
 #
 
 DISTNAME=	tuxpaint-0.9.17
@@ -11,7 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tuxpaint.org/
 COMMENT=	Drawing program for small children
 
-USE_TOOLS+=		gmake msgfmt
+USE_TOOLS+=		gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 MANCOMPRESSED=		YES
 
