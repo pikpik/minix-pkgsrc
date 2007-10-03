@@ -1,4 +1,4 @@
-# $NetBSD: dlopen.builtin.mk,v 1.14 2005/06/26 13:11:22 minskim Exp $
+# $NetBSD: dlopen.builtin.mk,v 1.15 2007/10/02 16:20:05 heinz Exp $
 
 BUILTIN_PKG:=	dl
 
@@ -48,6 +48,7 @@ _BLNK_DLOPEN_REQUIRE_PTHREAD_PLATFORMS=					\
 	NetBSD-2.[0-9]-* NetBSD-2.[0-9].[0-9]*-*			\
 	NetBSD-2.[0-8][0-9]*-* NetBSD-2.9[0-8]*-*			\
 	NetBSD-2.99.[0-9]-* NetBSD-2.99.10-*				\
+	NetBSD-3.[0-9]_*-*						\
 	NetBSD-3.[0-9]-* NetBSD-3.[0-9].[0-9]*-*
 
 .if !defined(_BLNK_DLOPEN_REQUIRE_PTHREADS)
