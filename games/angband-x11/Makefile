@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/10/04 21:43:00 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2007/02/02 01:04:00 joerg Exp $
 #
 
 DISTNAME=	angband-3.0.3
@@ -27,6 +27,12 @@ CONFIGURE_ARGS+=	--with-setgid=games
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
 GCC_REQD+=		2.95.3
 .endif
+
+SUBST_CLASSES+=		070
+SUBST_STAGE.070=	pre-configure
+SUBST_MESSAGE.070=	Fixing file permissions.
+SUBST_FILES.070=	lib/save/Makefile.in lib/bone/Makefile.in
+SUBST_SED.070=		-e 's,070,770,g'
 
 # add spoiler files and clean up a bit
 post-install:
