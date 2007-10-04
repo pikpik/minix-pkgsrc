@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.334 2007/09/23 14:56:24 ghen Exp $
+# $NetBSD: Makefile,v 1.335 2007/09/23 15:00:27 ghen Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -38,6 +38,7 @@ SUBDIR+=	claws-mail-pgpmime
 SUBDIR+=	claws-mail-rssyl
 SUBDIR+=	claws-mail-smime
 SUBDIR+=	claws-mail-spamassassin
+SUBDIR+=	claws-mail-spamreport
 SUBDIR+=	claws-mail-synce
 SUBDIR+=	claws-mail-trayicon
 SUBDIR+=	claws-mail-vcalendar
