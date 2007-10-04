@@ -1,15 +1,18 @@
-$NetBSD: patch-ab,v 1.4 2005/06/07 00:59:49 minskim Exp $
+$NetBSD$
 
---- otherlibs/dbm/cldbm.c.orig	2003-07-08 08:50:31.000000000 -0500
+--- otherlibs/dbm/cldbm.c.orig	2003-07-08 15:50:31.000000000 +0200
 +++ otherlibs/dbm/cldbm.c
-@@ -21,8 +21,8 @@
+@@ -21,10 +21,10 @@
  #include <fail.h>
  #include <callback.h>
  
 -#ifdef DBM_USES_GDBM_NDBM
 -#include <gdbm-ndbm.h>
+-#else
 +#ifdef DBM_USES_DB
-+#include <ndbm.h>
- #else
  #include <ndbm.h>
++#else
++#include <db.h>
  #endif
+ 
+ /* Quite close to sys_open_flags, but we need RDWR */
