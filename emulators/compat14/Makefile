@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/08/21 22:49:08 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2007/08/30 16:54:07 jlam Exp $
 
 COMPAT_PKG=		compat14	# for compat_netbsd/Makefile.common
 NETBSD_VERSION=		1.4
@@ -6,7 +6,7 @@ PKGREVISION=		2
 
 CONFLICTS=		compat14-crypto-[0-9]*
 
-HOMEPAGE=		http://www.NetBSD.org/Releases/formal-1.4/index.html
+HOMEPAGE=		http://www.NetBSD.org/releases/formal-1.4/index.html
 COMMENT=		Shared libraries for NetBSD 1.4 compatibility
 
 EMUL_PLATFORMS=		netbsd-alpha netbsd-arm netbsd-i386 netbsd-m68k	\

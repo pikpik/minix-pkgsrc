@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2007/08/21 22:49:19 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2007/08/30 16:54:08 jlam Exp $
 
 COMPAT_PKG=		compat20	# for compat_netbsd/Makefile.common
 NETBSD_VERSION=		2.0
 
-HOMEPAGE=		http://www.NetBSD.org/Releases/formal-2.0/index.html
+HOMEPAGE=		http://www.NetBSD.org/releases/formal-2.0/index.html
 COMMENT=		Additional shared libraries for NetBSD 2.0 compatibility
 
 EMUL_PLATFORMS=		netbsd-i386 netbsd-sparc

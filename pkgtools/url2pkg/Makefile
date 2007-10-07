@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2007/03/19 01:38:56 rillig Exp $
+# $NetBSD: Makefile,v 1.51 2007/09/25 13:59:42 wiz Exp $
 #
 
 DISTNAME=	url2pkg-2.7
@@ -7,7 +7,7 @@ MASTER_SITES=	# none
 DISTFILES=	# none
 
 MAINTAINER=	rillig@NetBSD.org
-HOMEPAGE=	http://www.NetBSD.org/Documentation/pkgsrc/creating.html
+HOMEPAGE=	http://www.NetBSD.org/docs/pkgsrc/creating.html
 COMMENT=	Tool to automate initial steps in building a package
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
