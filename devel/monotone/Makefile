@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2007/10/03 11:03:21 bjs Exp $
+# $NetBSD: Makefile,v 1.44 2007/10/05 22:41:36 bjs Exp $
 #
 
 DISTNAME=	monotone-0.36
@@ -23,6 +23,7 @@ CONFIGURE_ARGS+=	BOOST_SUFFIX=-mt
 PKG_OPTIONS_VAR=	PKG_OPTIONS.monotone
 PKG_SUPPORTED_OPTIONS=	inet6
 
+CHECK_INTERPRETER_SKIP+=	share/monotone/contrib/*
 CHECK_PORTABILITY_SKIP+=	debian/*
 
 .include "../../mk/bsd.options.mk"
