@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/06/05 05:37:32 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2007/07/06 17:58:09 drochner Exp $
 
 DISTNAME=		wireshark-0.99.6
 CATEGORIES=		net
@@ -36,6 +36,9 @@ PTHREAD_OPTS+=		require
 .if !empty(MACHINE_PLATFORM:MDarwin-[567].*-*)
 USE_BUILTIN.libpcap=	no
 .endif
+
+# wireshark no longer builds with NetBSD 3.x provided zlib
+BUILDLINK_API_DEPENDS.zlib=zlib>=1.2.1
 
 SUBST_CLASSES+=		shell
 SUBST_STAGE.shell=	post-build
