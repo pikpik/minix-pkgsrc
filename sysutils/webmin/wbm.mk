@@ -1,4 +1,4 @@
-# $NetBSD: wbm.mk,v 1.6 2007/04/21 05:22:57 obache Exp $
+# $NetBSD: wbm.mk,v 1.7 2007/05/12 06:17:45 obache Exp $
 #
 # Makefile fragment for Webmin modules
 #
@@ -66,6 +66,7 @@ FILES_SUBST+=		WEBMIN_DIR=${WEBMIN_DIR:Q}
 FILES_SUBST+=		WEBMIN_VARDIR=${WEBMIN_VARDIR:Q}
 BUILD_DEFS+=		VARBASE
 
+INSTALL_TEMPLATES+=	${PKGSRCDIR}/sysutils/webmin/files/wbm-install.tmpl
 DEINSTALL_TEMPLATES+=	${PKGSRCDIR}/sysutils/webmin/files/wbm-deinstall.tmpl
 
 # WBM_NAME is the name of the module directory
