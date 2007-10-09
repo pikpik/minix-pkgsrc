@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2007/06/19 22:22:55 bouyer Exp $
+# $NetBSD: Makefile,v 1.53 2007/09/18 19:24:07 bouyer Exp $
 
 DISTNAME=		apcupsd-3.14.1
 PKGREVISION=		2
@@ -73,7 +73,7 @@ EGFILES= netbsd/apccontrol etc/changeme etc/commfailure etc/commok \
     etc/offbattery etc/onbattery etc/multimon.conf etc/hosts.conf
 MANFILES= apcupsd apctest
 
-INSTALLATION_DIRS=	share/examples/apcupsd share/examples/rc.d 
+INSTALLATION_DIRS=	share/examples/apcupsd share/examples/rc.d
 
 SUBST_CLASSES+=		strip
 SUBST_STAGE.strip=	pre-configure

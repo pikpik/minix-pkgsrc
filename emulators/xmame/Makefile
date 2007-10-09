@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2007/02/09 14:28:48 joerg Exp $
+# $NetBSD: Makefile,v 1.150 2007/03/25 20:42:14 wiz Exp $
 #
 
 DISTNAME=		xmame-0.106
@@ -64,7 +64,7 @@ MAKE_FLAGS+=		ARCH="${MAME_ARCH.${OPSYS}}"
 .include "../../x11/libXxf86vm/buildlink3.mk"
 MAKE_FLAGS+=		X11_DGA=1
 MAKE_FLAGS+=		X11_XV=1
-.else 
+.else
 .  if exists(${X11BASE}/include/X11/extensions/xf86dga.h)
 MAKE_FLAGS+=		X11_DGA=1
 .  endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/03/21 06:53:24 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2007/04/05 18:11:53 gdt Exp $
 
 DISTNAME=		nss-3.11.5
 CATEGORIES=		security
@@ -58,7 +58,7 @@ do-install:
 
 # The exact set of libfreebl* libs built and installed depends on the
 # operating system and platform.  For example, on solaris/sparc you might
-# get 
+# get
 #  libfreebl_32fpu_3.so
 #  libfreebl_32int_3.so
 #  libfreebl_32int64_3.so

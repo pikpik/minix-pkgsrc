@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/08/16 14:17:09 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/08/16 14:18:25 joerg Exp $
 #
 
 DISTNAME=	xf86-video-via-0.2.2
@@ -19,7 +19,7 @@ USE_TOOLS+=     pkg-config
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64" 
+.if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64"
 PLIST_SUBST+=		XVMC_SUPPORT=""
 .else
 PLIST_SUBST+=		XVMC_SUPPORT="@comment "

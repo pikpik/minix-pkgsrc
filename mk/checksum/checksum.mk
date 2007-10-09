@@ -1,4 +1,4 @@
-# $NetBSD: checksum.mk,v 1.10 2007/08/24 03:30:54 jlam Exp $
+# $NetBSD: checksum.mk,v 1.11 2007/08/31 16:30:11 jlam Exp $
 #
 # See bsd.checksum.mk for helpful comments.
 #
@@ -32,7 +32,7 @@ _CHECKSUM_CMD=								\
 		TEST=${TOOLS_TEST:Q}					\
 	${SH} ${PKGSRCDIR}/mk/checksum/checksum				\
 
-checksum checksum-phase: 
+checksum checksum-phase:
 	${RUN} set -e;							\
 	case ${.TARGET:Q} in						\
 	*-phase)	${TEST} ! -f ${_COOKIE.checksum} || exit 0 ;;	\
