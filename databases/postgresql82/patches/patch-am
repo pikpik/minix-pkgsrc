@@ -28,7 +28,7 @@ $NetBSD$
  endif
  
  
-@@ -40,7 +41,7 @@ $(SUBDIROBJS): $(SUBDIRS:%=%-recursive) 
+@@ -40,10 +41,10 @@ $(SUBDIROBJS): $(SUBDIRS:%=%-recursive) 
  .PHONY: $(SUBDIRS:%=%-recursive)
  
  $(SUBDIRS:%=%-recursive):
@@ -36,4 +36,8 @@ $NetBSD$
 +	$(MAKE) -C $(subst -recursive,,$@) libSUBSYS.la
  
  tsearch2.sql: tsearch.sql.in
- 	sed -e 's,MODULE_PATHNAME,$$libdir/$(MODULE_big),g' $< >$@
+-	sed -e 's,MODULE_PATHNAME,$$libdir/$(MODULE_big),g' $< >$@
++	sed -e 's,MODULE_PATHNAME,$$libdir/lib$(MODULE_big),g' $< >$@
+ 
+ uninstall_tsearch2.sql: untsearch.sql.in
+ 	cp $< $@
