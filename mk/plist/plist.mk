@@ -1,4 +1,4 @@
-# $NetBSD: plist.mk,v 1.30 2007/07/29 05:19:44 jlam Exp $
+# $NetBSD: plist.mk,v 1.31 2007/08/03 14:03:40 joerg Exp $
 #
 # This Makefile fragment handles the creation of PLISTs for use by
 # pkg_create(8).
@@ -29,6 +29,11 @@
 #    IGNORE_INFO_DIRS is a list of ${PREFIX}-relative paths that do
 #	*not* contain info files.
 #
+
+_VARGROUPS+=		plist
+_USER_VARS.plist=	# none
+_PKG_VARS.plist=	PLIST_SUBST PLIST_SRC GENERATE_PLIST
+_SYS_VARS.plist=	PLIST_TYPE PLIST
 
 .if ${PKG_INSTALLATION_TYPE} == "pkgviews"
 PLIST_TYPE?=	dynamic
