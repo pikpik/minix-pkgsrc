@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2006/11/21 08:38:32 tron Exp $
+# $NetBSD: Makefile,v 1.31 2007/03/07 17:33:51 gdt Exp $
 
 DISTNAME=	milter-greylist-3.0
 PKGREVISION=	1
@@ -32,6 +32,5 @@ post-install:
 	  ${PREFIX}/share/examples/milter-greylist
 
 .include "../../mail/libmilter/buildlink3.mk"
-.include "../../mail/libspf-alt/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
