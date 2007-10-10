@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:08:28 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/14 08:00:47 wiz Exp $
 
 DISTNAME=	cn2jp1.4b
 PKGNAME=	cn2jp-1.4b
@@ -16,6 +16,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake
 
 NO_CONFIGURE=	yes
+INSTALLATION_DIRS_FROM_PLIST=	yes
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/cn2jp
