@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/asmping
+bin/mcfirst
+bin/ssmping
+man/man1/asmping.1
+man/man1/mcfirst.1
+man/man1/ssmping.1
+sbin/ssmpingd
