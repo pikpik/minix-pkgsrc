@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Client.h.orig	2000-05-12 09:40:20.000000000 +0200
++++ Client.h
+@@ -184,8 +184,6 @@ private:
+     WindowManager *const m_windowManager;
+ 
+     char *getProperty(Atom);
+-    int getAtomProperty(Atom, Atom);
+-    int getIntegerProperty(Atom);
+ 
+     // accessors 
+     Boolean getState(int *);
