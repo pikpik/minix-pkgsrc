@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: nagios.sh,v 1.1.1.1 2006/02/18 17:12:20 bouyer Exp $
+# $NetBSD: nagios.sh,v 1.2 2006/05/11 07:32:02 grant Exp $
 #
 # PROVIDE: nagios
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@ config="@PKG_SYSCONFDIR@/${name}.cfg"
 command_args="-d $config"
  
 test_cmd="nagios_test"
-extra_commands="test"
+extra_commands="test reload"
 
 nagios_test()
 {
