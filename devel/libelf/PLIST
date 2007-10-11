@@ -4,5 +4,6 @@ include/libelf/gelf.h
 include/libelf/libelf.h
 include/libelf/nlist.h
 include/libelf/sys_elf.h
-lib/libelf.a
+lib/libelf.la
+lib/pkgconfig/libelf.pc
 @dirrm include/libelf
