@@ -1,8 +1,8 @@
-$NetBSD: patch-ab,v 1.8 2005/08/16 15:35:51 adam Exp $
+$NetBSD$
 
---- src/Makefile.orig	2006-07-16 02:29:15.000000000 +0200
+--- src/Makefile.orig	2007-09-13 23:32:36.000000000 +0200
 +++ src/Makefile
-@@ -141,8 +141,10 @@ ifdef BUILD_DIST				# distribution build
+@@ -142,8 +142,10 @@ ifdef BUILD_DIST				# distribution build
  OPTIONS = -O3 -Wall
  endif
  
