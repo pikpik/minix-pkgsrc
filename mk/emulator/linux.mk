@@ -1,4 +1,4 @@
-# $NetBSD: linux.mk,v 1.2 2007/08/23 17:39:47 jlam Exp $
+# $NetBSD: linux.mk,v 1.3 2007/09/07 23:04:55 wiz Exp $
 #
 # Linux binary emulation framework
 #
@@ -69,7 +69,7 @@ EMUL_DISTRO=		native-linux	# native Linux installation
 EMULDIR=		${PREFIX}
 EMULSUBDIR=		# empty
 .else
-.  include "${.PARSEDIR}/linux-${_EMUL_TYPE}.mk"
+.  include "linux-${_EMUL_TYPE}.mk"
 .endif
 
 .if (${_EMUL_TYPE} == "builtin") || (${_EMUL_TYPE} == "native")
