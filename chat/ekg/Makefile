@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.37 2006/01/17 20:49:13 adam Exp $
+# $NetBSD: Makefile,v 1.38 2006/02/05 23:08:23 joerg Exp $
 
-DISTNAME=	ekg-1.6
-PKGREVISION=	4
+DISTNAME=	ekg-1.7
 CATEGORIES=	chat
-MASTER_SITES=	http://dev.null.pl/ekg/ \
-		http://dev.null.pl/ekg/stare/
+MASTER_SITES=	http://ekg.chmurka.net/ \
+		http://ekg.chmurka.net/archive/
 
 MAINTAINER=	adam@NetBSD.org
-HOMEPAGE=	http://dev.null.pl/ekg/
+HOMEPAGE=	http://ekg.chmurka.net/
 COMMENT=	Experimental Gadu-Gadu Client (Polish instant messaging system)
 
 USE_GNU_READLINE=	yes
