@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.684 2007/10/11 19:36:50 is Exp $
+# $NetBSD: Makefile,v 1.685 2007/10/12 15:04:36 he Exp $
 #
 
 COMMENT=	Networking tools
@@ -221,6 +221,7 @@ SUBDIR+=	nagios-plugin-mysql
 SUBDIR+=	nagios-plugin-pgsql
 SUBDIR+=	nagios-plugin-radius
 SUBDIR+=	nagios-plugin-snmp
+SUBDIR+=	nagios-plugin-spamd
 SUBDIR+=	nagios-plugins
 SUBDIR+=	nam
 SUBDIR+=	nap
