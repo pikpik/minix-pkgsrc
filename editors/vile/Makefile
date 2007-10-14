@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/08/05 16:44:52 joerg Exp $
+# $NetBSD: Makefile,v 1.49 2007/10/14 04:53:35 obache Exp $
 
 DISTNAME=		vile-9.5
 PKGNAME=		${DISTNAME}r
@@ -34,7 +34,7 @@ REPLACE_PERL=		perl/vileget
 CPPFLAGS.NetBSD+=	-DMISSING_EXTERN_ENVIRON
 
 MAKE_FILE=		makefile
-INSTALL_TARGET=		install install-perl
+INSTALL_TARGET=		install install-doc install-perl
 
 DATADIR=		${PREFIX}/share/vile
 FILTERDIR=		${PREFIX}/libexec/vile
