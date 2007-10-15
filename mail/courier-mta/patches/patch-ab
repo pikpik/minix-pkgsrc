@@ -1,8 +1,8 @@
 $NetBSD$
 
---- courier/configure.orig	2007-06-23 07:56:05.000000000 -0400
+--- courier/configure.orig	Sat Sep 29 14:57:58 2007
 +++ courier/configure
-@@ -21745,9 +21745,9 @@ done
+@@ -22280,9 +22280,9 @@ done
  
  if test "$testmode" = "0"
  then
@@ -14,4 +14,4 @@ $NetBSD$
 +	INSTALL_DATA='${BSD_INSTALL_DATA}'
  fi
  
- ac_ext=cc
+ ac_ext=cpp
