@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/03 12:56:13 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2007/09/20 19:18:43 jlam Exp $
 
-DISTNAME=	courier-analog-0.14
+DISTNAME=	courier-analog-0.15
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
+
+LICENSE=	gnu-gpl-v3
 
 MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.courier-mta.org/
