@@ -1,4 +1,4 @@
-# $NetBSD: OSF1.mk,v 1.17 2007/04/14 13:02:08 tnn Exp $
+# $NetBSD: OSF1.mk,v 1.18 2007/07/29 05:19:44 jlam Exp $
 #
 # Variable definitions for the OSF1 operating system.
 
@@ -12,7 +12,7 @@
 CPP?=		/usr/bin/cpp
 ECHO_N?=	${SETENV} CMD_ENV=bsd /usr/bin/echo -n
 IMAKE_MAKE?=	${MAKE}		# program which gets invoked by imake
-PKGLOCALEDIR=	share
+PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 STRIP?=		/usr/bin/strip
 SU?=		/usr/bin/su
