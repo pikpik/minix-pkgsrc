@@ -1,4 +1,4 @@
-# $NetBSD: show.mk,v 1.6 2007/05/07 09:35:53 rillig Exp $
+# $NetBSD: show.mk,v 1.7 2007/09/12 10:08:38 rillig Exp $
 #
 # This file contains some targets that print information gathered from
 # variables. They do not modify any variables.
@@ -62,9 +62,6 @@ show-build-defs: .PHONY
 	@${ECHO} "the changes."
 	@${ECHO} "=========================================================================="
 .endif
-
-# @deprecated -- remove after 2007Q1
-build-defs-message: show-build-defs .PHONY
 
 # show-all:
 #	Prints a list of (hopefully) all pkgsrc variables that are visible
