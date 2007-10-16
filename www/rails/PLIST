@@ -143,6 +143,7 @@ ${RUBY_SITELIBDIR}/tasks/log.rake
 ${RUBY_SITELIBDIR}/tasks/misc.rake
 ${RUBY_SITELIBDIR}/tasks/pre_namespace_aliases.rake
 ${RUBY_SITELIBDIR}/tasks/rails.rb
+${RUBY_SITELIBDIR}/tasks/routes.rake
 ${RUBY_SITELIBDIR}/tasks/statistics.rake
 ${RUBY_SITELIBDIR}/tasks/testing.rake
 ${RUBY_SITELIBDIR}/tasks/tmp.rake
