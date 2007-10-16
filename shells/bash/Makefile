@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2007/08/17 22:11:35 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2007/09/18 21:20:12 wiz Exp $
 
 DISTNAME=	bash-3.2
 PKGNAME=	bash-3.2.25
@@ -69,7 +69,7 @@ BUILDLINK_DEPMETHOD.readline=	build
 .endif
 
 # the code has problems with older versions of yacc
-.if !empty(LOWER_OPSYS:Mirix5*)
+.if ${OPSYS} == "IRIX"
 USE_TOOLS+=	bison
 .endif
 

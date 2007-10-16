@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2007/04/21 06:03:44 obache Exp $
+# $NetBSD: Makefile,v 1.74 2007/04/21 11:17:47 obache Exp $
 
 DISTNAME=		w3c-libwww-5.4.0
 PKGNAME=		libwww-5.4.0
@@ -42,7 +42,7 @@ pre-configure:
 
 .include "../../mk/bsd.prefs.mk"
 
-.if empty(LOWER_OPSYS:Mirix5*)
+.if ${OPSYS} != "IRIX"
 # IRIX 5 does not have libregex
 CONFIGURE_ARGS+=	--with-regex
 .endif

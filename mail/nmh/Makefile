@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2006/12/16 13:18:54 schwarz Exp $
+# $NetBSD: Makefile,v 1.64 2007/02/22 19:26:42 wiz Exp $
 
 DISTNAME=		nmh-1.0.4
 PKGREVISION=		7
@@ -25,7 +25,7 @@ CONFLICTS+=		ja-mh6-[0-9]*
 CFLAGS+=		-O1
 .endif
 
-.if !empty(LOWER_OPSYS:Mirix5*)
+.if ${OPSYS} == "IRIX"
 CPPFLAGS+=		-DIRIX5 # for a patch with extra typedefs
 .endif
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/02/22 19:27:09 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2007/09/07 22:12:22 jlam Exp $
 
 DISTNAME=	tcp_wrappers_7.6-ipv6.1
 PKGNAME=	tcp_wrappers-7.6.1
@@ -27,7 +27,7 @@ BUILD_TARGET.Linux=	${LOWER_OPSYS}
 BUILD_TARGET.${OPSYS}=	netbsd
 .endif
 BUILD_TARGET.SunOS=	sunos5
-BUILD_TARGET.IRIX=	${LOWER_OPSYS:C|\..*||}
+BUILD_TARGET.IRIX=	irix5
 BUILD_TARGET=		${BUILD_TARGET.${OPSYS}}
 
 .if !empty(PKG_OPTIONS:Minet6)

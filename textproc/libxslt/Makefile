@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2007/07/12 19:33:03 drochner Exp $
+# $NetBSD: Makefile,v 1.77 2007/08/29 23:26:44 wiz Exp $
 
 DISTNAME=	libxslt-1.1.22
 CATEGORIES=	textproc
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--without-python
 TEST_TARGET=		check
 
 .include "../../mk/bsd.prefs.mk"
-.if !empty(LOWER_OPSYS:Mirix5*)
+.if ${OPSYS} == "IRIX"
 CPPFLAGS+=	-Dsocklen_t=int
 .endif
 

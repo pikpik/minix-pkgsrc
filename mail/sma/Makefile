@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:13:59 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 19:26:44 wiz Exp $
 
 DISTNAME=	sma-1.4
 CATEGORIES=	mail
@@ -16,7 +16,7 @@ BUILD_TARGET=	sma
 
 .include "../../mk/bsd.prefs.mk"
 
-.if empty(LOWER_OPSYS:Mirix5*)
+.if ${OPSYS} == "IRIX"
 CFLAGS+=	-DUSE_REGEXP
 .endif
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8
