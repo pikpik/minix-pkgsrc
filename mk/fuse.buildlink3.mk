@@ -1,4 +1,4 @@
-# $NetBSD: fuse.buildlink3.mk,v 1.6 2007/02/21 01:33:55 rillig Exp $
+# $NetBSD: fuse.buildlink3.mk,v 1.7 2007/03/06 00:03:40 xtraeme Exp $
 #
 # Makefile fragment for packages using the FUSE framework.
 #
@@ -6,7 +6,7 @@
 .if !defined(FUSE_BUILDLINK3_MK)
 FUSE_BUILDLINK3_MK=	# defined
 
-.include "../../mk/bsd.prefs.mk"
+.include "bsd.fast.prefs.mk"
 
 .  if ${OPSYS} == "Linux"
 
