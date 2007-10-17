@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2007/09/23 11:42:44 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2007/10/15 15:37:32 jlam Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs mail
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -21,7 +22,7 @@ COURIER_VERSION=	0.57.1
 #
 DEPENDS+=	couriertcpd>=${COURIER_VERSION}:../../net/couriertcpd
 DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
-DEPENDS+=	courier-mta>=${COURIER_VERSION}:../../mail/courier-mta
+DEPENDS+=	courier-mta>=${COURIER_VERSION}nb1:../../mail/courier-mta
 
 # The following packages must be from the same lineage as the version
 # of Courier:
