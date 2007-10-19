@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/19 16:30:31 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2006/08/17 13:57:23 taca Exp $
 
 DISTNAME=	netatalk-1.6.4a
 PKGREVISION=	3
@@ -19,6 +19,10 @@ BUILDLINK_TRANSFORM+=	l:db-4.2:db4
 CONFLICTS=	netatalk-asun-[0-9]* netatalk-umich-[0-9]*
 
 RCD_SCRIPTS=	atalkd afpd papd timelord
+
+.for f in ${RCD_SCRIPTS}
+RCD_SCRIPT_SRC.$f=	# avoid automatic handling
+.endfor
 
 BUILD_DEFS+=	VARBASE
 
