@@ -3,27 +3,30 @@
 # Variable definitions for the Linux operating system.
 
 ECHO_N?=	${ECHO} -n
-
-# imake on Linux generates Makefiles that can only be understood by
-# GNU make.
-IMAKE_MAKE?=	${GMAKE}
-
+IMAKE_MAKE?=	${GMAKE}	# program which gets invoked by imake
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
+PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 # XXX: default from defaults/mk.conf.  Verify/correct for this platform
 # and remove this comment.
 SU?=		/bin/su
 TYPE?=		type			# Shell builtin
 
+CPP_PRECOMP_FLAGS?=	# unset
+DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
 GROUPADD?=		/usr/sbin/groupadd
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
 NOLOGIN?=		/bin/false
+PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
 ROOT_GROUP?=		root
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
+ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
+ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
+ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
 USERADD?=		/usr/sbin/useradd
 
 # imake installs manpages in weird places
@@ -92,5 +95,3 @@ _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip
 ABI?=	64
 LIBABISUFFIX?=          64
 .endif
-
-.include "${.PARSEDIR}/defaults.mk"

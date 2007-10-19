@@ -3,18 +3,26 @@
 # Variable definitions for the DragonFly operating system.
 
 ECHO_N?=	${ECHO} -n
+IMAKE_MAKE?=	${MAKE}		# program which gets invoked by imake
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
+PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 PW?=		/usr/sbin/pw
 SU?=		/usr/bin/su
 TYPE?=		type				# Shell builtin
 
+CPP_PRECOMP_FLAGS?=	# unset
+DEF_UMASK?=		0022
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
 NOLOGIN?=		/sbin/nologin
+PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
 ROOT_USER?=		root
 ROOT_GROUP?=		wheel
+ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
+ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
+ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
 
 # DragonFly does not provide an X11, so default to modular X.org
 X11_TYPE?=		modular
@@ -84,5 +92,3 @@ GAMEGRP=		games
 GAMEMODE=		2555
 GAMEDIRMODE=		0775
 .endif
-
-.include "${.PARSEDIR}/defaults.mk"
