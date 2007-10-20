@@ -1,12 +1,18 @@
-# $NetBSD: options.mk,v 1.3 2007/01/30 07:09:03 wiz Exp $
+# $NetBSD: options.mk,v 1.4 2007/02/22 19:26:36 wiz Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.sane-backends
-PKG_SUPPORTED_OPTIONS=		sane-backends-hp3900
+PKG_SUPPORTED_OPTIONS=		inet6 sane-backends-hp3900
 PKG_SUGGESTED_OPTIONS=		#defined
 
 .include "../../mk/bsd.options.mk"
 
 # Package-specific option-handling
+
+.if !empty(PKG_OPTIONS:Minet6)
+CONFIGURE_ARGS+=	--enable-ipv6
+.else
+CONFIGURE_ARGS+=	--disable-ipv6
+.endif
 
 ###
 ### hp3900 support
