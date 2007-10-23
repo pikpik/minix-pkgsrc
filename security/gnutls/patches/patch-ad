@@ -1,7 +1,7 @@
 $NetBSD$
 
---- ./lib/x509/output.c.orig	2007-08-21 23:48:45.000000000 +0200
-+++ ./lib/x509/output.c
+--- lib/x509/output.c.orig	2007-09-27 11:17:18.000000000 +0000
++++ lib/x509/output.c
 @@ -84,7 +84,7 @@ asciiprint (gnutls_string * str, const c
    size_t j;
  
