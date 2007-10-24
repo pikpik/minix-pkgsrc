@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2007/09/19 23:13:38 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2007/09/21 13:04:44 wiz Exp $
 #
 
 DISTNAME=	gnome-python-2.18.2
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python binding for GNOME2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PY_PATCHPLIST=	YES
 USE_LIBTOOL=	YES
