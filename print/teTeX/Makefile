@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2006/11/05 17:34:44 joerg Exp $
+# $NetBSD: Makefile,v 1.44 2007/02/22 19:27:06 wiz Exp $
 #
 
 DISTNAME=	teTeX-3.0
@@ -21,6 +21,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+PLIST_SRC=	# empty
 
 do-install:	# do nothing
 

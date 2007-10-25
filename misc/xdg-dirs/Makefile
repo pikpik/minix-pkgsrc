@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/09/08 16:27:34 jmmv Exp $
+# $NetBSD: Makefile,v 1.16 2006/11/02 18:21:18 joerg Exp $
 #
 
 DISTNAME=	xdg-dirs-1.4
@@ -18,6 +18,7 @@ NO_BUILD=	yes
 NO_CONFIGURE=	yes
 NO_CHECKSUM=	yes
 NO_EXTRACT=	yes
+PLIST_SRC=	# empty
 USE_LANGUAGES=	# empty
 WRKSRC=		${WRKDIR}
 

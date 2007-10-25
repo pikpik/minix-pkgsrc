@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2007/05/23 12:50:58 markd Exp $
+# $NetBSD: Makefile,v 1.57 2007/10/20 10:34:50 markd Exp $
 
 DISTNAME=	kde-3.5.8
 CATEGORIES=	meta-pkgs x11 kde
@@ -28,7 +28,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_MTREE=	yes
+PLIST_SRC=	# empty (meta-package)
 
 do-install:	# empty
 

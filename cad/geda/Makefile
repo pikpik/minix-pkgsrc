@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2006/10/23 09:43:13 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.52 2007/02/22 19:26:10 wiz Exp $
 #
 
 DISTNAME=	geda-${PKGVERSION}
@@ -24,7 +24,7 @@ EXTRACT_ONLY=	# none
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_MTREE=	yes
+PLIST_SRC=	# empty (meta-package)
 
 do-install:     # empty
 

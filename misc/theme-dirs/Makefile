@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/09/28 19:51:27 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/29 06:21:55 jlam Exp $
 #
 
 DISTNAME=	theme-dirs-1.1
@@ -15,6 +15,7 @@ NO_BUILD=	yes
 NO_CONFIGURE=	yes
 NO_CHECKSUM=	yes
 NO_EXTRACT=	yes
+PLIST_SRC=	# empty
 USE_DIRS=	xdg-1.1
 USE_LANGUAGES=	# empty
 WRKSRC=		${WRKDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/08/18 15:46:23 taca Exp $
+# $NetBSD: Makefile,v 1.9 2007/08/02 15:03:09 taca Exp $
 #
 
 DISTNAME=	chasen-${CHASEN_VERSION}
@@ -16,6 +16,7 @@ DEPENDS+=	ipadic>=2.6.3:../../textproc/ipadic
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+PLIST_SRC=	# empty (meta-package)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/09/28 18:22:11 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/07/05 04:55:24 jlam Exp $
 
 DISTNAME=	sj3-server-2.0.1.20
 PKGREVISION=	3
@@ -16,6 +16,7 @@ EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
 NO_CHECKSUM=	YES
+PLIST_SRC=	# empty (meta-package)
 
 do-install:	# empty
 

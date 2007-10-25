@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/06/30 07:08:50 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/10/09 01:07:07 rillig Exp $
 
 DISTNAME=	emacs-packages-0.7
 CATEGORIES=	meta-pkgs editors
@@ -70,6 +70,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
+PLIST_SRC=	# empty (meta-package)
 
 do-install:	# empty
 

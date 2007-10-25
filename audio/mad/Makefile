@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2005/04/11 21:44:54 tv Exp $
+# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:11 joerg Exp $
 #
 
 DISTNAME=	mad-0.15.0b
@@ -19,6 +19,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	YES
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
+PLIST_SRC=	# empty (meta-package)
 
 do-install:	# empty
 

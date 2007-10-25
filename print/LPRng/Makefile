@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/06/22 13:30:24 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/09/04 08:47:17 martti Exp $
 
 DISTNAME=	LPRng-3.6.28
 PKGREVISION=	2
@@ -17,6 +17,7 @@ EXTRACT_ONLY=		# empty
 NO_CHECKSUM=		yes
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
+PLIST_SRC=		# empty (meta-package)
 
 do-install:		# empty
 

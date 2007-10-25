@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/05/17 16:22:46 tv Exp $
+# $NetBSD: Makefile,v 1.7 2007/06/02 17:52:16 jmmv Exp $
 #
 
 BOOST_PACKAGE=	meta-pkg
@@ -28,7 +28,7 @@ EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_MTREE=	yes
+PLIST_SRC=	# empty (meta-package)
 
 do-patch:	# empty
 

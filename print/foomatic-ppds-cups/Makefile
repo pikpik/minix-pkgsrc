@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/06/15 20:40:16 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2007/03/14 12:12:57 markd Exp $
 
 .include "../../print/foomatic-ppds/Makefile.common"
 
@@ -16,6 +16,7 @@ EXTRACT_ONLY=	# empty
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
+PLIST_SRC=	# empty
 
 EVAL_PREFIX+=		CUPS_PREFIX=cups
 CUPS_DATADIR=		${CUPS_PREFIX:Q}/share/cups/model

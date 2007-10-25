@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/08/02 15:15:35 kristerw Exp $
+# $NetBSD: Makefile,v 1.39 2006/08/30 00:00:30 markd Exp $
 
 .include "../../lang/swi-prolog-lite/Makefile.common"
 
@@ -14,7 +14,7 @@ DEPENDS+=		swi-prolog-packages-${SWIPLVERS}{,nb[0-9]*}:../../lang/swi-prolog-pac
 NO_BUILD=		yes
 NO_CHECKSUM=		yes
 NO_CONFIGURE=		yes
-NO_MTREE=		yes
+PLIST_SRC=		# empty (meta-package)
 
 do-install:		# empty
 

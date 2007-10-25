@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/02/05 23:09:20 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/05/26 19:22:49 joerg Exp $
 
 # Needed so configure/patch rules don't get pulled in
 NO_BUILD=	yes
@@ -20,6 +20,7 @@ DEPENDS+=	nethack-qt-${NETHACK_VERSION}{,nb*}:../../games/nethack-qt
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
+PLIST_SRC=	# empty (meta-package)
 
 do-install:	# empty
 do-patch:	# empty

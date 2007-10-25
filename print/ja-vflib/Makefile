@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/06 18:00:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/02/19 17:20:41 joerg Exp $
 
 DISTNAME=		ja-vflib-${VFLIB_VERSION}
 VFLIB_VERSION=		2.24.2nb2
@@ -18,6 +18,7 @@ EXTRACT_ONLY=		# empty
 NO_CHECKSUM=		yes
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
+PLIST_SRC=		# empty (meta-package)
 
 do-install:		# empty
 
