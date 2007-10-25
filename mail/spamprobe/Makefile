@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2006/01/07 10:27:51 hubertf Exp $
+# $NetBSD: Makefile,v 1.17 2006/08/04 20:12:31 ghen Exp $
 
-DISTNAME=	spamprobe-1.4b
-PKGNAME=	spamprobe-1.4.2
+DISTNAME=	spamprobe-1.4d
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=spamprobe/}
 
-MAINTAINER=	oherrala@ee.oulu.fi
+MAINTAINER=	ghen@NetBSD.org
 HOMEPAGE=	http://spamprobe.sourceforge.net/
 COMMENT=	Spam detector using Bayesian analysis of word counts
 
