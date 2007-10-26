@@ -1,4 +1,4 @@
-/*	$NetBSD: cond.c,v 1.29 2005/08/08 16:42:54 christos Exp $	*/
+/*	$NetBSD: cond.c,v 1.1 2005/10/31 21:34:24 reed Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.
@@ -70,14 +70,14 @@
  */
 
 #ifndef MAKE_NATIVE
-static char rcsid[] = "$NetBSD: cond.c,v 1.29 2005/08/08 16:42:54 christos Exp $";
+static char rcsid[] = "$NetBSD: cond.c,v 1.1 2005/10/31 21:34:24 reed Exp $";
 #else
 #include <sys/cdefs.h>
 #ifndef lint
 #if 0
 static char sccsid[] = "@(#)cond.c	8.2 (Berkeley) 1/2/94";
 #else
-__RCSID("$NetBSD: cond.c,v 1.29 2005/08/08 16:42:54 christos Exp $");
+__RCSID("$NetBSD: cond.c,v 1.1 2005/10/31 21:34:24 reed Exp $");
 #endif
 #endif /* not lint */
 #endif
@@ -898,12 +898,18 @@ error:
 
 		    condExpr += 5;
 
+		    if (condExpr[0] != '(')
+			Parse_Error(PARSE_WARNING, "Extra characters after \"empty\"");
 		    for (arglen = 0;
 			 condExpr[arglen] != '(' && condExpr[arglen] != '\0';
 			 arglen += 1)
 			continue;
 
 		    if (condExpr[arglen] != '\0') {
+			/* Var_Parse usually gets a string like "$(varname)".
+			 * It doesn't care about the first character, so
+			 * we can pass anything here, even the 'y' of "empty".
+			 */
 			val = Var_Parse(&condExpr[arglen - 1], VAR_CMD,
 					FALSE, &length, &doFree);
 			if (val == var_Error) {
