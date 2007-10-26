@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${PKG_LOCALTEXMFPREFIX}/tex/latex/draftwatermark/draftwatermark.sty
+share/doc/tex-draftwatermark/README
+share/doc/tex-draftwatermark/draftwatermark.pdf
+@dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex/draftwatermark
+@dirrm share/doc/tex-draftwatermark
+@comment In texmf-dirs: @dirrm ${PKG_LOCALTEXMFPREFIX}/tex/latex
+
