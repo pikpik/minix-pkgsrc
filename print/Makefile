@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2007/08/13 08:12:48 rillig Exp $
+# $NetBSD: Makefile,v 1.176 2007/09/04 20:12:55 drochner Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -115,6 +115,8 @@ SUBDIR+=	tex-bagpipetex
 SUBDIR+=	tex-chemarrow
 SUBDIR+=	tex-cooking
 SUBDIR+=	tex-dhucs
+SUBDIR+=	tex-draftwatermark
+SUBDIR+=	tex-everypage
 SUBDIR+=	tex-fixme
 SUBDIR+=	tex-foiltex
 SUBDIR+=	tex-glossaries
