@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- argparse.c.orig	2005-04-06 23:43:29.000000000 +0000
++++ argparse.c
+@@ -30,5 +30,8 @@ #undef	NO_AEXTERN
+ 
+ #include <stdio.h>
++#ifdef __STDC__
++#include <stdlib.h>
++#endif
+ #include <ctype.h>
+ #include <pwd.h>
+ 
