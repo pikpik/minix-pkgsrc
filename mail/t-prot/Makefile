@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/10 12:51:03 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/04/15 21:18:46 agc Exp $
 #
 
-DISTNAME=	t-prot-2.4
+DISTNAME=	t-prot-2.5
 CATEGORIES=	mail
 MASTER_SITES=	http://www.escape.de/users/tolot/mutt/t-prot/downloads/
 
