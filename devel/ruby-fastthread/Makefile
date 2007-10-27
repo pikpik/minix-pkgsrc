@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2007/04/30 17:03:11 minskim Exp $
 
-DISTNAME=	fastthread-1.0
+DISTNAME=	fastthread-1.0.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://rubyforge.org/frs/download.php/18637/
+MASTER_SITES=	http://rubyforge.org/frs/download.php/27041/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	minskim@NetBSD.org
