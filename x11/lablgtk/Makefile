@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2007/09/19 23:19:14 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2007/09/21 13:00:50 wiz Exp $
 #
 
-DISTNAME=	lablgtk-2.6.0
-PKGREVISION=	14
+DISTNAME=	lablgtk-2.10.0
 CATEGORIES=	x11
 MASTER_SITES=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/dist/
 
