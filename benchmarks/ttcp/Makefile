@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/01/07 09:13:48 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2007/01/18 11:28:00 rillig Exp $
 
 DISTNAME=	ttcp
 PKGNAME=	${DISTNAME}-1.12
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.ccci.com/tools/ttcp/
 COMMENT=	TCP testing and performance measuring tool
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_BSD_MAKEFILE=	yes
 WRKSRC=			${WRKDIR}
