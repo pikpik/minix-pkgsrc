@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.162 2007/10/25 21:06:15 adam Exp $
+# $NetBSD: Makefile,v 1.163 2007/10/28 16:43:00 dogcow Exp $
 
 DISTNAME=	gimp-2.4.0
 CATEGORIES=	graphics
@@ -16,6 +16,8 @@ COMMENT=	The GNU image manipulation program
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		gimp<=1.2.3
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
