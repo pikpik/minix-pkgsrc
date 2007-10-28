@@ -1,4 +1,4 @@
-/*	$NetBSD: ftp.c,v 1.1.1.6 2007/08/06 04:33:23 lukem Exp $	*/
+/*	$NetBSD: ftp.c,v 1.7 2007/08/07 02:07:02 lukem Exp $	*/
 /*	from	NetBSD: ftp.c,v 1.152 2007/07/22 05:02:50 lukem Exp	*/
 
 /*-
@@ -154,12 +154,12 @@ struct sockinet {
 		struct sockaddr_in6 su_sin6;
 #endif
 	} si_su;
-#if !defined(HAVE_STRUCT_SOCKADDR_SA_LEN)
+#if !defined(HAVE_STRUCT_SOCKADDR_IN_SIN_LEN)
 	int	si_len;
 #endif
 };
 
-#if !defined(HAVE_STRUCT_SOCKADDR_SA_LEN)
+#if !defined(HAVE_STRUCT_SOCKADDR_IN_SIN_LEN)
 # define su_len		si_len
 #else
 # define su_len		si_su.su_sin.sin_len
@@ -2122,7 +2122,7 @@ ai_unmapped(struct addrinfo *ai)
 	sin.sin_port = sin6->sin6_port;
 
 	ai->ai_family = AF_INET;
-#if defined(HAVE_STRUCT_SOCKADDR_SA_LEN)
+#if defined(HAVE_STRUCT_SOCKADDR_IN_SIN_LEN)
 	sin.sin_len = len;
 #endif
 	memcpy(ai->ai_addr, &sin, len);
