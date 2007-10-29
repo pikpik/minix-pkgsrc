@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/10/14 08:06:07 wiz Exp $
+# $NetBSD$
 #
 
 DISTNAME=	elscreen-1.4.5
@@ -19,12 +19,6 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.morishima.net/~naoto/software/elscreen/
 COMMENT=	Window manager within Emacs
 
-.include "../../mk/emacs.mk"
-
-.if ${EMACS_FLAVOR} == "emacs"
-DEPENDS+=	${EMACS_PKGNAME_PREFIX}apel-[0-9]*:../../devel/apel
-.endif
-
 NO_BUILD=	yes
 
 do-install:
@@ -33,4 +27,7 @@ do-install:
 	@${INSTALL_DATA} ${WRKDIR}/*/*.el ${EMACS_LISPPREFIX}/elscreen
 	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/elscreen
 
+.include "../../mk/emacs.mk"
+
+.include "../../devel/apel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
