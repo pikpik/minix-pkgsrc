@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/05 23:01:16 jlam Exp $
+# $NetBSD$
 #
 
 DISTNAME=	lookup-1.4.1
@@ -10,8 +10,7 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://openlab.jp/edict/lookup/index.html.ja
 COMMENT=	Electric dictionary agent for Emacs
 
-DEPENDS+=	${EMACS_PKGNAME_PREFIX}apel>=10:../../devel/apel
-DEPENDS+=	${EMACS_PKGNAME_PREFIX}eblook>=1.4:../../textproc/eblook
+DEPENDS+=	eblook>=1.4:../../textproc/eblook
 
 EMACS_VERSIONS_ACCEPTED=	emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs214 xemacs215
 
@@ -22,4 +21,6 @@ INFO_FILES=	# PLIST
 CONFIGURE_ARGS+=${EMACS_FLAVOR}
 
 .include "../../mk/emacs.mk"
+
+.include "../../devel/apel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
