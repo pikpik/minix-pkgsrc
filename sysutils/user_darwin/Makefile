@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2005/06/17 03:50:36 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/12/05 20:51:01 rillig Exp $
 #
 
-DISTNAME=		user-20040801
+DISTNAME=		user-20071026
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty
