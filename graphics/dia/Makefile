@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2007/09/19 23:18:53 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2007/09/21 13:03:48 wiz Exp $
 #
 
 .include "Makefile.common"
@@ -11,4 +11,5 @@ USE_DIRS+=	xdg-1.1
 # just to convert the manpage
 BUILD_DEPENDS+=	docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
