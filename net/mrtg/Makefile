@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2007/02/15 06:21:46 martti Exp $
+# $NetBSD: Makefile,v 1.80 2007/05/16 09:01:13 martti Exp $
 
 DISTNAME=	mrtg-2.15.2
 CATEGORIES=	net
@@ -9,6 +9,7 @@ MASTER_SITES=	http://oss.oetiker.ch/mrtg/pub/ \
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://oss.oetiker.ch/mrtg/
 COMMENT=	The Multi-Router Traffic Grapher
+LICENSE=	gnu-gpl-v2
 
 USE_TOOLS+=	perl:run
 GNU_CONFIGURE=	YES
