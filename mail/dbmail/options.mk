@@ -1,6 +1,7 @@
-# $NetBSD: options.mk,v 1.3 2006/01/10 12:39:04 ghen Exp $
+# $NetBSD: options.mk,v 1.4 2006/01/13 21:43:54 schmonz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dbmail
+PKG_SUPPORTED_OPTIONS=	sieve
 PKG_OPTIONS_REQUIRED_GROUPS=	sql
 PKG_OPTIONS_GROUP.sql=	mysql pgsql
 PKG_SUGGESTED_OPTIONS=	mysql
@@ -21,4 +22,15 @@ SQLDB=			mysql
 .if !empty(PKG_OPTIONS:Mpgsql)
 .include "../../mk/pgsql.buildlink3.mk"
 SQLDB=			pgsql
+.endif
+
+###
+### libsieve support
+###
+PLIST_SRC=      ${.CURDIR}/PLIST
+.if !empty(PKG_OPTIONS:Msieve)
+CONFIGURE_ARGS+=	--with-sieve=${BUILDLINK_PREFIX.libsieve}
+PLIST_SRC+=		${.CURDIR}/PLIST.sieve
+.include "../../mail/libsieve/buildlink3.mk"
+.include "../../mail/gmime/buildlink3.mk"
 .endif
