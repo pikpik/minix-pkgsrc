@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/11/10 10:34:26 martti Exp $
+# $NetBSD: Makefile,v 1.17 2007/04/12 10:24:02 martti Exp $
 
 DISTNAME=		JAlbum${VERSION}
 PKGNAME=		jalbum-${VERSION}
@@ -11,6 +11,7 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		martti@NetBSD.org
 HOMEPAGE=		http://jalbum.net/
 COMMENT=		Web photo album generator
+LICENSE=		gnu-lgpl-v2
 
 VERSION=		7.1
 
