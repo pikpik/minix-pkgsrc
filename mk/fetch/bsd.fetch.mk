@@ -1,4 +1,4 @@
-# $NetBSD: bsd.fetch.mk,v 1.4 2006/07/27 17:28:38 jlam Exp $
+# $NetBSD: bsd.fetch.mk,v 1.5 2007/01/02 17:54:32 rillig Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and defines the
 # relevant variables and targets for the "fetch" step.
@@ -31,7 +31,7 @@
 #	Default action: Nothing.
 #
 
-.include "${PKGSRCDIR}/mk/fetch/sites.mk"
-.include "${PKGSRCDIR}/mk/fetch/fetch.mk"
-.include "${PKGSRCDIR}/mk/fetch/fetch-list.mk"
-.include "${PKGSRCDIR}/mk/fetch/distclean.mk"
+.include "sites.mk"
+.include "fetch.mk"
+.include "fetch-list.mk"
+.include "distclean.mk"
