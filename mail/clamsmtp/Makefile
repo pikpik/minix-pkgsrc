@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2007/06/15 09:47:06 martti Exp $
+# $NetBSD: Makefile,v 1.33 2007/07/04 20:54:40 jlam Exp $
 
 DISTNAME=		clamsmtp-1.8
 PKGREVISION=		3
@@ -8,6 +8,7 @@ MASTER_SITES=		http://memberwebs.com/nielsen/software/clamsmtp/
 MAINTAINER=		martti@NetBSD.org
 HOMEPAGE=		http://memberwebs.com/nielsen/software/clamsmtp/
 COMMENT=		SMTP filter that allows you to check for viruses
+LICENSE=		modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
