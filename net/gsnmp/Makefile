@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/10/29 09:48:31 seb Exp $
 #
 
 DISTNAME=		gsnmp-0.2.0
@@ -11,6 +11,7 @@ COMMENT=		SNMP library
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
+USE_TOOLS+=		pkg-config
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../net/gnet/buildlink3.mk"
