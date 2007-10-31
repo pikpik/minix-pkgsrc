@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/10/04 22:01:52 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2006/12/27 13:37:40 joerg Exp $
 #
 
 DISTNAME=		titrax-1.98
@@ -13,7 +13,10 @@ COMMENT=		Little X11 tool to track project times
 USE_IMAKE=		YES
 USE_TOOLS+=		perl:run
 
+LICENSE=		titrax-license # missing
 RESTRICTED=		Do not sell for profit
+NO_SRC_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 post-patch:
 	${MV} ${WRKSRC}/Imakefile ${WRKSRC}/Imakefile.bak
