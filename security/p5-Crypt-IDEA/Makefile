@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/12 02:46:50 heinz Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 12:07:34 wiz Exp $
 #
 
 DISTNAME=		Crypt-IDEA-1.08
@@ -11,7 +11,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Crypt-IDEA/
 COMMENT=		Perl5 module for the IDEA symmetric key algorithm
 
 # IDEA's license
-LICENCE=		fee-based-commercial-use
+LICENSE=		fee-based-commercial-use
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
