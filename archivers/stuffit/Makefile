@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/12/15 14:34:18 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2007/07/29 05:18:36 jlam Exp $
 
 DISTNAME=		stuffit520.611linux-i386
 PKGNAME=		stuffit-5.2.0.611
@@ -10,6 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.stuffit.com/unix/stuffit/
 COMMENT=		Stuffit Archive Creator and Expander
 
+LICENSE=		generic-nonlicense
 RESTRICTED=		Redistribution not permitted
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
