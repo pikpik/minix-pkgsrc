@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.722 2007/10/25 16:08:48 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.723 2007/10/31 12:20:07 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -6795,6 +6795,7 @@ sub checkfile_package_Makefile($$$) {
 	checkperms($fname);
 
 	if (!exists($pkgctx_vardef->{"PLIST_SRC"})
+	    && !exists($pkgctx_vardef->{"GENERATE_PLIST"})
 	    && defined($pkgdir)
 	    && !-f "${current_dir}/$pkgdir/PLIST"
 	    && !-f "${current_dir}/$pkgdir/PLIST.common") {
