@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2007/07/25 13:13:09 gdt Exp $
+# $NetBSD: options.mk,v 1.7 2007/10/16 01:53:28 dmcmahill Exp $
 
 PKG_OPTIONS_VAR		= PKG_OPTIONS.gecko
 PKG_SUPPORTED_OPTIONS	= debug
@@ -31,10 +31,11 @@ CONFIGURE_ARGS+=	--enable-single-profile
 # See http://www.mozilla.org/foundation/trademarks/
 .if !empty(PKG_OPTIONS:Mofficial-mozilla-branding)
 CONFIGURE_ARGS+=	--enable-official-branding
-# XXX LICENSE=?
-# Does enabling official branding make the package non-Free?
-# Mozilla claims no: http://www.mozilla.org/foundation/trademarks/faq.html
-# The resulting binary package cannot be distributed, which seems non-Free.
+# Mozilla prohibits distribution of packages with their trademarks.
+# It is an open question if this makes the package non-Free.  Mozilla
+# claims not, but currently pkgsrc has a "open source implies no
+# redistribution restrictions" notion.
+LICENSE=		mozilla-trademark-license
 RESTRICTED=		Trademark holder prohibits distribution of modified versions.
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
