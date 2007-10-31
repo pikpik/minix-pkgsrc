@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.52 2007/04/09 00:46:11 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2007/09/18 19:24:17 rillig Exp $
 
-DISTNAME=		libbonobo-2.18.0
+DISTNAME=		libbonobo-2.20.1
 CATEGORIES=		devel gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libbonobo/2.18/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libbonobo/2.20/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		jmmv@NetBSD.org
