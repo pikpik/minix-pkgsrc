@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/01/07 09:14:13 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2007/07/29 05:19:51 jlam Exp $
 
 DISTNAME=		sm_linux_v314_install
 PKGNAME=		storage-manager-3.14
@@ -11,6 +11,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://opensource.adaptec.com/
 COMMENT=		Adaptec Storage Management software
 
+LICENSE=		generic-nonlicense
 RESTRICTED=		Redistribution not permitted
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
