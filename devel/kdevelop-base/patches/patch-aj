@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- buildtools/lib/parsers/autotools/autotools_yacc.cpp.orig	2005-09-10 20:21:44.000000000 +1200
++++ buildtools/lib/parsers/autotools/autotools_yacc.cpp
+@@ -33,6 +33,9 @@
+    define necessary library symbols; they are noted "INFRINGES ON
+    USER NAME SPACE" below.  */
+ 
++#define yylval autotools_yylval
++#define yychar autotools_yychar
++
+ /* Identify Bison output.  */
+ #define YYBISON 1
+ 
