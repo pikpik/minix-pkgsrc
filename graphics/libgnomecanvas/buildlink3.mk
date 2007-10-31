@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2006/07/08 23:10:52 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2007/09/21 13:03:51 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBGNOMECANVAS_BUILDLINK3_MK:=	${LIBGNOMECANVAS_BUILDLINK3_MK}+
@@ -19,6 +19,7 @@ BUILDLINK_PKGSRCDIR.libgnomecanvas?=	../../graphics/libgnomecanvas
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
+.include "../../devel/gail/buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
