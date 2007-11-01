@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:11:13 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:41 joerg Exp $
 
 DISTNAME=	fvwm-1.24r
 PKGNAME=	${DISTNAME:S/fvwm/fvwm1/}
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	cjs@NetBSD.org
 HOMEPAGE=	http://www.fvwm.org/
 COMMENT=	Virtual window manager for X
+#LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	xpmroot-2.*:../../x11/xpmroot
 
