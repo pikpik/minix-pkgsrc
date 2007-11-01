@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2007/09/21 13:03:31 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2007/10/28 15:31:23 joerg Exp $
 #
 
-DISTNAME=		gramps-2.2.8
-PKGREVISION=		2
+DISTNAME=		gramps-2.2.9
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 
@@ -20,6 +19,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-mime-install --enable-packager-mode
 
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
+MAKE_JOBS_SAFE=		no
 # i18n support with other python versions appears to not work
 PYTHON_VERSIONS_ACCEPTED=	24
 
