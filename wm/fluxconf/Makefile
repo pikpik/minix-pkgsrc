@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/04/15 09:39:39 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2006/04/17 13:46:50 wiz Exp $
 #
 
 DISTNAME=	fluxconf-0.9.9
@@ -13,6 +13,7 @@ COMMENT=	GTK based configuration tool for the fluxbox window manager
 DEPENDS+=		fluxbox-[0-9]*:../../wm/fluxbox
 
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--datadir=${PREFIX}/${PKGLOCALEDIR}
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt pkg-config
 
