@@ -4,4 +4,5 @@ man/man1/aria2c.1
 share/locale/de/LC_MESSAGES/aria2c.mo
 share/locale/fr/LC_MESSAGES/aria2c.mo
 share/locale/ja/LC_MESSAGES/aria2c.mo
+share/locale/nl/LC_MESSAGES/aria2c.mo
 share/locale/ru/LC_MESSAGES/aria2c.mo
