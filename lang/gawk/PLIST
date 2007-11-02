@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2006/03/30 03:44:43 jlam Exp $
+@comment $NetBSD: PLIST,v 1.11 2006/04/17 07:07:23 jlam Exp $
 bin/gawk
 bin/${PKGNAME}
 bin/igawk
@@ -47,5 +47,6 @@ share/locale/rw/LC_MESSAGES/gawk.mo
 share/locale/sv/LC_MESSAGES/gawk.mo
 share/locale/tr/LC_MESSAGES/gawk.mo
 share/locale/vi/LC_MESSAGES/gawk.mo
+share/locale/zh_CN/LC_MESSAGES/gawk.mo
 @dirrm share/awk
 @dirrm libexec/awk

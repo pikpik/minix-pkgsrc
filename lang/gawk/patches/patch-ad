@@ -1,8 +1,8 @@
 $NetBSD$
 
---- dfa.c.orig	2005-07-26 20:07:43.000000000 +0200
+--- dfa.c.orig	2007-09-03 05:30:12.000000000 +0200
 +++ dfa.c
-@@ -122,7 +122,6 @@ extern void free();
+@@ -124,7 +124,6 @@ extern void free();
  static void dfamust PARAMS ((struct dfa *dfa));
  
  static ptr_t xcalloc PARAMS ((size_t n, size_t s));
