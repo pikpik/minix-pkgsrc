@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/netbiff
+bin/netbiffd-file
+bin/netbiffd-imap
+share/doc/netbiff/CONFIG
