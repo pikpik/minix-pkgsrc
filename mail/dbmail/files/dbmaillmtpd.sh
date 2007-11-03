@@ -12,7 +12,7 @@ name="dbmaillmtpd"
 rcvar=${name}
 required_files="@PKG_SYSCONFDIR@/dbmail.conf"
 command="@PREFIX@/sbin/dbmail-lmtpd"
-pidfile="/var/run/dbmail-lmtpd.pid"
+pidfile="@VARBASE@/run/dbmail-lmtpd.pid"
 
 load_rc_config $name
 run_rc_command "$1"

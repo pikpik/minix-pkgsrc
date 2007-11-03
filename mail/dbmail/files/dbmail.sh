@@ -44,7 +44,7 @@ dbmailrcd()
 	done
 }
 
-COMMAND_LIST="dbmailimapd dbmailpop3d dbmaillmtpd"
+COMMAND_LIST="dbmailimapd dbmailpop3d dbmaillmtpd @TIMSIEVED@"
 
 name="dbmail"
 start_cmd="forward_commands"
