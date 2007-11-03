@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/01/26 13:07:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.42 2007/02/22 19:26:37 wiz Exp $
 #
 
 DISTNAME=	Gauche-0.8.9
@@ -25,6 +25,7 @@ CONFIGURE_ARGS+=	--enable-threads=pthreads
 CONFIGURE_ARGS+=	--with-iconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-iconv-lib=${BUILDLINK_LDADD.iconv:M-l*:S/-l//:Q}
 MAKE_ENV+=	ICONV_LDFLAGS=${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.iconv}/lib
+MAKE_JOBS_SAFE=	no
 
 USE_TOOLS+=	gzip makeinfo
 TEST_TARGET=	check
