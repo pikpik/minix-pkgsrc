@@ -1,0 +1,11 @@
+#!/bin/sh
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	if [ ! -e /usr/share/zoneinfo/zone.tab ]; then
+		/usr/bin/install ${PREFIX}/share/examples/zoneinfo/zone.tab \
+			/usr/share/zoneinfo
+	fi
+	;;
+esac
