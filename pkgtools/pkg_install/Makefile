@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.142 2007/09/08 21:57:59 jlam Exp $
+# $NetBSD: Makefile,v 1.143 2007/09/27 13:30:27 joerg Exp $
 
 # Notes to package maintainers:
 #
@@ -38,6 +38,7 @@ NO_PKGTOOLS_REQD_CHECK=	yes
 NO_CHECKSUM=		yes
 NO_MTREE=		yes
 PKG_PRESERVE=		yes
+CHECK_PERMS=		no
 
 # These are needed to solve a chicken-and-egg problem where pkgsrc uses
 # newer features of pkg_install, but older NetBSD installations won't
