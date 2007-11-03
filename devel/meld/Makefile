@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2006/10/12 14:29:46 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2007/06/16 02:35:08 obache Exp $
 #
 
 DISTNAME=		meld-1.1.5.1
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://ftp.gnome.org/pub/gnome/sources/meld/1.1/
 EXTRACT_SUFX=		.tar.bz2
