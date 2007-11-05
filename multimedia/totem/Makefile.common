@@ -1,10 +1,9 @@
-# $NetBSD: Makefile.common,v 1.34 2007/09/20 21:37:38 wiz Exp $
+# $NetBSD: Makefile.common,v 1.35 2007/09/21 13:04:09 wiz Exp $
 #
 
-DISTNAME=	totem-2.18.2
-PKGREVISION=	2
+DISTNAME=	totem-2.20.1
 CATEGORIES=	multimedia gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem/2.18/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem/2.20/}
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/totem/
