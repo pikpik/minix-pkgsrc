@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2007/09/30 04:08:15 taca Exp $
+# $NetBSD: Makefile,v 1.38 2007/10/06 06:12:35 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -31,7 +31,9 @@ WRKSRC=		${RUBY_WRKSRC}
 .include "../../mk/compiler.mk"
 
 .if !empty(PKGSRC_COMPILER:Msunpro)
-LIBS.SunOS+=	-lsunmath -lm
+LIBS.SunOS+=	-B static -lsunmath -B dynamic -lm
+LDFLAGS.SunOS+=	-L${SUNWSPROBASE}/lib -Wl,-R${SUNWSPROBASE}/lib
+MAKE_FLAGS+=	LDSHARED="${CC} -G"
 .else
 LIBS.SunOS+=	-lm
 .endif
