@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.527 2007/10/23 23:16:55 xtraeme Exp $
+# $NetBSD: Makefile,v 1.528 2007/11/03 17:25:27 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -54,6 +54,7 @@ SUBDIR+=	gdm
 SUBDIR+=	ggiterm
 SUBDIR+=	glproto
 SUBDIR+=	gnome-applets
+SUBDIR+=	gnome-control-center
 SUBDIR+=	gnome-desktop
 SUBDIR+=	gnome-mag
 SUBDIR+=	gnome-panel
