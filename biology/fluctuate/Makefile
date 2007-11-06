@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2005/04/11 21:45:00 tv Exp $
+# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:40 jlam Exp $
 #
 
 DISTNAME=	fluctuate1.4.src.doc
 PKGNAME=	fluctuate-1.4
 CATEGORIES=	biology
-MASTER_SITES=	ftp://evolution.genetics.washington.edu/pub/lamarc/fluctuate/
+MASTER_SITES=	http://evolution.gs.washington.edu/lamarc/fluctuate/
 
 MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://evolution.genetics.washington.edu/lamarc/fluctuate.html
