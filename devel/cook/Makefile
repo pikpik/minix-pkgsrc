@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/02/22 19:01:17 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/11/07 08:03:55 rillig Exp $
 
 DISTNAME=	cook-2.26
 PKGREVISION=	1
@@ -14,6 +14,7 @@ GNU_CONFIGURE=	yes
 MAKE_JOBS_SAFE=	no
 
 REPLACE_PERL=	bin/cook_rsh
+LIBS.SunOS+=	-lintl
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
