@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/09/21 13:03:33 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2007/10/31 19:52:34 drochner Exp $
 #
 
 DISTNAME=		at-spi-1.20.1
@@ -15,7 +15,10 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
+CONFIGURE_ENV+=		PYTHON=true
+
 PKGCONFIG_OVERRIDE+=	cspi-1.0.pc.in
+PKGCONFIG_OVERRIDE+=	libloginhelper-1.0.pc.in
 PKGCONFIG_OVERRIDE+=	libspi-1.0.pc.in
 
 BUILDLINK_API_DEPENDS.atk+=	atk>=1.18.0
