@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 17:27:30 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/22 14:47:30 joerg Exp $
 #
 
 DISTNAME=		libICE-1.0.3
@@ -18,6 +18,8 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
 PKGCONFIG_OVERRIDE+=	ice.pc.in
+
+.include "options.mk"
 
 .include "../../x11/xproto/buildlink3.mk"
 .include "../../x11/xtrans/buildlink3.mk"
