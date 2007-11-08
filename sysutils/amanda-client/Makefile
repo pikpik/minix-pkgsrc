@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2006/05/26 13:19:38 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2007/02/22 19:27:10 wiz Exp $
 #
 
 PKGNAME=		amanda-client-${VERS}
-PKGREVISION=		4
+PKGREVISION=		5
 SVR4_PKGNAME=		amacl
 
 COMMENT=		Client part of Amanda, a network backup system
