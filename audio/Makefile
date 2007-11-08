@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.362 2007/09/10 16:03:49 xtraeme Exp $
+# $NetBSD: Makefile,v 1.363 2007/09/19 23:33:09 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -131,6 +131,7 @@ SUBDIR+=	gtick
 SUBDIR+=	gtkmserv
 SUBDIR+=	gtkpod
 SUBDIR+=	guspatches
+SUBDIR+=	herrie
 SUBDIR+=	hydrogen
 SUBDIR+=	icecast
 SUBDIR+=	icecast1
