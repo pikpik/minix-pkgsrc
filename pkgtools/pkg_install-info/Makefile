@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:30:27 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2007/07/31 14:40:45 joerg Exp $
 #
 
 DISTNAME=		pkg_install-info-${VERSION}
@@ -12,6 +12,7 @@ HOMEPAGE=		http://www.gnu.org/software/texinfo/texinfo.html
 COMMENT=		Standalone GNU info file installation utility
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 
