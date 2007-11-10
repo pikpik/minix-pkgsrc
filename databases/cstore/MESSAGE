@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+The storage requirements for this package could be considered to
+be quite large - on the order of 20 Gigabytes for the complete
+data.
+
+===========================================================================
