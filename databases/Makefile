@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.234 2007/09/20 21:29:42 jlam Exp $
+# $NetBSD: Makefile,v 1.235 2007/10/11 19:27:18 ghen Exp $
 #
 
 COMMENT=	Databases
@@ -7,6 +7,7 @@ SUBDIR+=	abook
 SUBDIR+=	adodb
 SUBDIR+=	bdb-xml
 SUBDIR+=	cdb
+#SUBDIR+=	cstore	# not enabled at present due to its size requirements
 SUBDIR+=	db
 SUBDIR+=	db3
 SUBDIR+=	db4
