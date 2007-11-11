@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2007/01/06 15:09:59 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2007/02/07 18:28:00 joerg Exp $
 #
 
 DISTNAME=	xbeeb-0.4.1
 PKGREVISION=	1
 CATEGORIES=	emulators x11
-MASTER_SITES=	http://bbc.nvg.org/emul/Xbeeb/ \
-		http://www.getafile.com/cgi-bin/merlot/get/james/xbeeb/
+MASTER_SITES=	http://bbc.nvg.org/emul/Xbeeb/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dsainty@NetBSD.org
