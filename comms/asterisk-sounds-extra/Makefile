@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2006/01/25 18:41:14 riz Exp $
+# $NetBSD: Makefile,v 1.5 2006/03/04 21:29:04 jlam Exp $
 #
 
 VER=			1.2.1
 DISTNAME=		asterisk-sounds-${VER}
 PKGNAME=		asterisk-sounds-extra-${VER}
 CATEGORIES=		comms
-MASTER_SITES=		http://ftp1.digium.com/pub/asterisk/ \
-			http://ftp2.digium.com/pub/asterisk/
-
+MASTER_SITES=		http://ftp2.digium.com/pub/asterisk/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ftp.digium.com/pub/asterisk/
