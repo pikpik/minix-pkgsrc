@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.37 2007/03/24 19:21:29 joerg Exp $
+# $NetBSD: Makefile,v 1.38 2007/09/07 22:12:18 jlam Exp $
 
 DISTNAME=	irrd2.2.8
 PKGNAME=	irrd-2.2.8
 PKGREVISION=	2
 CATEGORIES=	net
-MASTER_SITES=	http://www.irrd.net/ \
-		ftp://ftp.merit.edu/radb/irrd/ \
-		ftp://ftp.merit.edu/radb/irrd/old_releases/
+MASTER_SITES=	http://www.irrd.net/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kim@tac.nyc.ny.us
