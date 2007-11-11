@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2007/09/27 13:30:27 joerg Exp $
+# $NetBSD: Makefile,v 1.144 2007/11/03 14:49:00 joerg Exp $
 
 # Notes to package maintainers:
 #
@@ -14,6 +14,7 @@ DISTFILES=		# empty
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://www.pkgsrc.org/
 COMMENT=		Package management and administration tools for pkgsrc
+#LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
