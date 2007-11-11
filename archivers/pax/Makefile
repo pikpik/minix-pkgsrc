@@ -5,7 +5,7 @@ USE_FEATURES=	nbcompat
 .include "Makefile.common"
 
 CATEGORIES=	archivers
-PKGREVISION=	2
+PKGREVISION=	3
 
 # pax installs "tar" and "cpio"
 .if defined(GNU_PROGRAM_PREFIX) && ${GNU_PROGRAM_PREFIX} == ""
