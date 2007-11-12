@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2007/10/30 14:10:10 martti Exp $
+# $NetBSD: Makefile,v 1.9 2007/10/30 19:31:42 martti Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
 #PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/ \
-		http://www.fvwm.org/generated/icon_download/ \
-		ftp://ftp.hpc.uh.edu/pub/fvwm/version-2/
+		http://www.fvwm.org/generated/icon_download/
 DISTFILES+=	fvwm-${FVWM_VER}.tar.gz fvwm_icons.tgz
 
 MAINTAINER=	martti@NetBSD.org
