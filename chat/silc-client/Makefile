@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/02/22 19:26:12 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2007/05/18 21:04:25 salo Exp $
 #
 
 DISTNAME=		${SILC_CLIENT_DISTNAME}
@@ -6,8 +6,7 @@ CATEGORIES=		chat security
 MASTER_SITES=		http://www.silcnet.org/download/client/sources/ \
 			ftp://ftp.silcnet.org/silc/client/sources/ \
 			http://www.fi.silcnet.org/download/client/sources/ \
-			ftp://ftp.au.silcnet.org/pub/silcnet/client/sources/ \
-			http://www.at.silcnet.org/download/client/sources/
+			ftp://ftp.au.silcnet.org/pub/silcnet/client/sources/
 EXTRACT_SUFX=		${SILC_CLIENT_EXTRACT_SUFX}
 
 MAINTAINER=		salo@NetBSD.org
