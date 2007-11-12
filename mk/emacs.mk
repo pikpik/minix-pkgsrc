@@ -211,9 +211,9 @@ _EMACS_REQD.emacs21nox=	emacs-nox11>=21.2<22
 _EMACS_REQD.emacs22=	emacs>=22
 _EMACS_REQD.emacs22nox=	emacs-nox11>=22
 _EMACS_REQD.xemacs214=	xemacs>=21.4<21.5
-_EMACS_REQD.xemacs214nox=	xemacs-nox>=21.4<21.5
+_EMACS_REQD.xemacs214nox=	xemacs-nox11>=21.4<21.5
 _EMACS_REQD.xemacs215=	xemacs>=21.5<21.6
-_EMACS_REQD.xemacs215nox=	xemacs-nox>=21.5<21.6
+_EMACS_REQD.xemacs215nox=	xemacs-nox11>=21.5<21.6
 _LEIM_REQD.emacs20=	leim>=20.${EMACS_VERSION_MINOR}<21
 _LEIM_REQD.emacs20nox=	${_LEIM_REQD.emacs20}
 _LEIM_REQD.emacs21=	leim>=21.${EMACS_VERSION_MINOR}<22
