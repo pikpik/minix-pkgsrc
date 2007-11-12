@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:09:40 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/12/27 13:37:38 joerg Exp $
 #
 
 DISTNAME=	viewfax-2.4
 PKGREVISION=	2
 CATEGORIES=	graphics comms
 MASTER_SITES=	ftp://ftp.hylafax.org/pub/hylafax/contrib/viewfax/ \
-		ftp://ftp.leo.org/pub/comp/networking/communication/modem/mgetty/ \
 		ftp://ftp.tuwien.ac.at/infosys/fax/hylafax/contrib/viewfax/ \
 		http://gd.tuwien.ac.at/infosys/fax/hylafax/contrib/viewfax/ \
 		ftp://ftp.ips.gov.au/mirror/hylafax/contrib/viewfax/ \
