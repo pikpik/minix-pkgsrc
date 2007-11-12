@@ -1,5 +1,9 @@
-# $NetBSD: Makefile,v 1.62 2007/06/30 17:59:03 joerg Exp $
+# $NetBSD$
 
 .include "../../editors/xemacs-current/Makefile.common"
+
+PKGNAME=	${DISTNAME:S/xemacs/xemacs-nox11/}
+
+CONFLICTS=	xemacs-[0-9]*
 
 .include "../../mk/bsd.pkg.mk"
