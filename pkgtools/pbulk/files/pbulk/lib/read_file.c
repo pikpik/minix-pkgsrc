@@ -1,4 +1,4 @@
-/* $NetBSD: read_file.c,v 1.1.1.1 2007/06/19 19:49:58 joerg Exp $ */
+/* $NetBSD: read_file.c,v 1.2 2007/06/25 21:38:44 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -67,7 +67,7 @@ read_from_file(int fd)
 
 	input[input_len] = '\0';
 	if (strlen(input) != input_len)
-		errx(1, "Invalid input");
+		errx(1, "Invalid input (NUL character found)");
 
 	return input;
 }
