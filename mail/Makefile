@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.337 2007/10/11 15:49:55 tv Exp $
+# $NetBSD: Makefile,v 1.338 2007/11/08 20:07:27 jnemeth Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -257,6 +257,7 @@ SUBDIR+=	spamassassin
 SUBDIR+=	spamd
 SUBDIR+=	spamdyke
 SUBDIR+=	spamprobe
+SUBDIR+=	sqlgrey
 SUBDIR+=	squirrelmail
 SUBDIR+=	squirrelmail-decode
 SUBDIR+=	squirrelmail-locales
