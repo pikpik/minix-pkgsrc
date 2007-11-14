@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/mp4v2/mp4.h.orig	2006-02-22 23:47:07.000000000 +0100
+--- lib/mp4v2/mp4.h.orig	2007-09-28 22:45:11.000000000 +0200
 +++ lib/mp4v2/mp4.h
-@@ -31,8 +31,16 @@
+@@ -31,8 +31,17 @@
  #ifndef __MP4_INCLUDED__
  #define __MP4_INCLUDED__
  
@@ -16,6 +16,7 @@ $NetBSD$
 +#include <stdbool.h>
 +#include <stdint.h>
 +#endif
- 
++
  #include <math.h>	/* to define float HUGE_VAL and/or NAN */
  #ifndef NAN
+ #define NAN HUGE_VAL
