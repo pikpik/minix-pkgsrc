@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/09/19 23:13:31 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2007/09/21 13:04:21 wiz Exp $
 #
 
 DISTNAME=	rox-2.4.1
@@ -38,7 +38,8 @@ SUBST_SED.bin=		-e 's,BIN="$$APP_DIR,BIN="${PREFIX}/libexec/rox,g'
 
 BUILD_TARGET=		ROX-Filer
 CONFIGURE_DIRS=		ROX-Filer/src
-CONFIGURE_SCRIPT=	configure.tmp
+CONFIGURE_SCRIPT=	./configure.tmp
+LIBS.SunOS+=		-lm
 
 post-patch:
 	${MV} ${WRKSRC:Q}/ROX-Filer/src/configure ${WRKSRC:Q}/ROX-Filer/src/${CONFIGURE_SCRIPT:Q}
