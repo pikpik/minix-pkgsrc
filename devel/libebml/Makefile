@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2006/10/08 03:11:05 salo Exp $
+# $NetBSD: Makefile,v 1.26 2007/07/01 20:20:45 heinz Exp $
 #
 
 DISTNAME=	libebml-0.7.7
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.matroska.org/downloads/libebml/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,12 +16,13 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	gmake
 USE_LANGUAGES=	c++
+USE_LIBTOOL=	yes
 
 NO_CONFIGURE=	yes
 MAKEFLAGS+=	prefix=${PREFIX:Q}
 MAKE_ENV+=	CXXFLAGS=${CXXFLAGS:M*:Q} RANLIB=${RANLIB:Q}
 BUILD_DIRS=	make/linux
-BUILD_TARGET=	staticlib
-INSTALL_TARGET=	install_headers install_staticlib
+BUILD_TARGET=	sharedlib
+INSTALL_TARGET=	install_headers install_sharedlib
 
 .include "../../mk/bsd.pkg.mk"
