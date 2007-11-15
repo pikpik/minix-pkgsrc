@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2007/05/13 11:58:48 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.30 2007/06/18 00:41:16 dmcmahill Exp $
 #
 
-DISTNAME=	gwave-20030804
-PKGREVISION=	6
+DISTNAME=	gwave-20060606
 CATEGORIES=	cad
-MASTER_SITES=	http://www.cs.unc.edu/~tell/dist/
+MASTER_SITES=	ftp://ftp.geda.seul.org/pub/geda/dist/ \
+		http://www.geda.seul.org/dist/
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.cs.unc.edu/~tell/gwave.html
