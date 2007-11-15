@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: jabberd.sh,v 1.1.1.1 2004/03/28 19:44:07 xtraeme Exp $
 #
 # KEYWORD: nostart
 
@@ -36,7 +36,7 @@ reverse_commands()
 	done
 }
 
-COMMAND_LIST="c2s resolver router s2s sm"
+COMMAND_LIST="resolver router c2s s2s sm"
 
 name="jabberd"
 start_cmd="forward_commands"
