@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.691 2007/11/04 12:36:14 rillig Exp $
+# $NetBSD: Makefile,v 1.692 2007/11/15 01:00:18 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -401,7 +401,6 @@ SUBDIR+=	rbldnsd
 SUBDIR+=	rdesktop
 SUBDIR+=	rdist6
 SUBDIR+=	rinetd
-SUBDIR+=	ripe-whois-tools
 SUBDIR+=	rootprobe
 SUBDIR+=	rp-l2tp
 SUBDIR+=	rp-pppoe
