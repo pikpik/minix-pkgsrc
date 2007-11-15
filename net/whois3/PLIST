@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/whois3
+man/man1/whois3.1
+share/${PKGNAME}/FLAGS.txt
+share/${PKGNAME}/HELP.txt
+@dirrm share/${PKGNAME}
