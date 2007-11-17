@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.20 2007/09/22 15:19:47 gdt Exp $
+# $NetBSD: replace.mk,v 1.21 2007/11/07 13:50:09 gdt Exp $
 #
 
 # _flavor-replace:
@@ -75,7 +75,7 @@ undo-replace-check: .PHONY
 ###
 replace-tarup: .PHONY
 	${RUN} [ -x ${_PKG_TARUP_CMD:Q} ] \
-	|| ${FAIL_MSG} ${_PKG_TARUP_CMD:Q}" was not found.";
+	|| ${FAIL_MSG} ${_PKG_TARUP_CMD:Q}" was not found.";		\
 	${_REPLACE_OLDNAME_CMD};					\
 	${SETENV} PKG_DBDIR=${_PKG_DBDIR} PKG_SUFX=${PKG_SUFX}		\
 		PKGREPOSITORY=${WRKDIR}					\
