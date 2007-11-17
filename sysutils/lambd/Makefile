@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/05/18 19:55:35 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2006/06/18 16:16:09 rillig Exp $
 
 DISTNAME=	lambd-20010719
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	# none
 DISTFILES=	# none
 
-MAINTAINER=	itojun@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Shutdown switch monitoring daemon for Wildlab LAMB
 
 EXTRACT_ONLY=	# none

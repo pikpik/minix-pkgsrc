@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2006/11/21 10:59:25 tron Exp $
-# KAME Id: Makefile,v 1.3 2000/01/21 12:34:29 itojun Exp
+# $NetBSD: Makefile,v 1.2 2007/01/07 09:13:48 rillig Exp $
 #
 
 DISTNAME=	netperf-2.3pl1
@@ -7,7 +6,7 @@ PKGNAME=	netperf-2.3.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.cup.hp.com/dist/networking/benchmarks/netperf/
 
-MAINTAINER=	itojun@kame.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netperf.org/
 COMMENT=	Rick Jones' network performance benchmarking package
 

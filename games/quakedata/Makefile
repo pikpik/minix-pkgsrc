@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/04/22 09:22:09 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2006/05/22 06:45:08 rillig Exp $
 
 DISTNAME=	quake106
 PKGNAME=	quakedata-1.0
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/idstuff/quake/ \
 		ftp://ftp.idsoftware.com/idstuff/quake/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	itojun@kame.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.idsoftware.com/
 COMMENT=	Game data files for Quake
 
