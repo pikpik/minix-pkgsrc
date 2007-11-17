@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/02/17 20:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2007/09/02 11:17:39 joerg Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-2-src
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.opencm.org/
 COMMENT=	Secure, high-integrity replacement for CVS
 
 WRKSRC=		${WRKDIR}/${OPENCM_VERSION}/base
-USE_TOOLS+=	gmake gzip makeinfo
+USE_TOOLS+=	gmake gzip makeinfo lex
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--with-ssl-dir=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	KRB5_BUILDLINK=${KRB5BASE:Q}

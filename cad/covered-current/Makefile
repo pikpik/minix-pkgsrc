@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/10/12 03:13:30 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/22 19:26:09 wiz Exp $
 #
 
 DISTNAME=	covered-${SNAPDATE}
@@ -18,7 +18,7 @@ CONFLICTS+=	covered-[0-9]*
 
 SNAPDATE=	20060904
 GNU_CONFIGURE=	YES
-USE_TOOLS+=	bison gmake
+USE_TOOLS+=	bison gmake lex
 
 # we use this hack of setting a cache variable because
 # the configure script uses AC_PATH_PROG to try and find

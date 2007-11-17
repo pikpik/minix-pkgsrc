@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:08:52 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/09/09 02:41:58 obache Exp $
 #
 
 DISTNAME=		rsltcsrc
@@ -16,7 +16,7 @@ BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 DEPENDS+=		gentle>=97:../../devel/gentle
 
 MAKE_FILE=		make_sunos
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake lex
 WRKSRC=			${WRKDIR}/rsl.2.4
 INSTALLATION_DIRS=	bin
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/06/30 15:05:08 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2007/07/04 20:55:02 jlam Exp $
 #
 
 DISTNAME=		suphp-0.6.0
@@ -11,6 +11,7 @@ MAINTAINER=		rillig@NetBSD.org
 HOMEPAGE=		http://www.suphp.org/
 COMMENT=		SuEXEC-like wrapper for PHP scripts
 
+USE_TOOLS+=		lex
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

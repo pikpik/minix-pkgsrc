@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/04 21:30:29 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/07/07 19:03:01 drochner Exp $
 
 DISTNAME=	gimp-print-4.2.7
 PKGNAME=	gimp-print-ijs-4.2.7
@@ -10,7 +10,7 @@ HOMEPAGE=	http://gimp-print.sourceforge.net/
 COMMENT=	GIMP print IJS server
 
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake lex
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ijs

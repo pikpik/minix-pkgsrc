@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/10/13 16:39:13 drochner Exp $
+# $NetBSD: Makefile,v 1.42 2007/01/17 23:47:20 wiz Exp $
 
 DISTNAME=	dx-4.4.4
 PKGREVISION=	1
@@ -11,7 +11,7 @@ COMMENT=	Open Visualization Data Explorer
 
 USE_LANGUAGES=		c c++
 USE_X11BASE=		yes
-USE_TOOLS+=		gmake lex sh
+USE_TOOLS+=		gmake lex yacc sh
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-javadx
 CONFIGURE_ENV+=		bsh_path=${TOOLS_SH:Q}
