@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.12 2006/06/11 14:34:17 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/12/27 13:37:35 joerg Exp $
 #
 
 DISTNAME=	terminatorX-3.82
 PKGNAME=	${DISTNAME:S/X/x/}
 PKGREVISION=	4
 CATEGORIES=	audio
-MASTER_SITES=	http://terminatorx.cx/dist/
+MASTER_SITES=	http://terminatorx.org/dist/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://terminatorx.cx/
+HOMEPAGE=	http://terminatorx.org/
 COMMENT=	Realtime audio synthesizer
 
 DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123

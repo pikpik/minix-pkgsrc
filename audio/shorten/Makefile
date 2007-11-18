@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2004/06/24 23:50:54 ben Exp $
+# $NetBSD: Makefile,v 1.10 2006/12/15 14:34:19 wiz Exp $
 #
 
 DISTNAME=	shorten-3.6.0
 CATEGORIES=	audio archivers
-MASTER_SITES=	http://www.etree.org/shnutils/shorten/source/
+MASTER_SITES=	http://www.etree.org/shnutils/shorten/dist/src/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.etree.org/shnutils/shorten/
