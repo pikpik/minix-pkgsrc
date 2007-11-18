@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2005/12/05 23:55:02 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2005/12/29 06:21:32 jlam Exp $
 
 DISTNAME=	dircproxy-1.0.5
 PKGREVISION=	2
 CATEGORIES=	chat
-MASTER_SITES=	http://www.securiweb.net/pub/oss/dircproxy/1.0/
+MASTER_SITES=	ftp://ftp.netsplit.com/pub/dircproxy/stable/ \
+		http://dircproxy.securiweb.net/pub/1.0/
 
 MAINTAINER=	sb125499@ohiou.edu
 HOMEPAGE=	http://dircproxy.securiweb.net/
