@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/03/03 12:06:54 joerg Exp $
+# $NetBSD: Makefile,v 1.49 2007/06/04 22:20:53 wiz Exp $
 
 DISTNAME=	xephem-3.7.2
 PKGREVISION=	1
@@ -25,6 +25,9 @@ LICENSE=		xephem-license
 # physical media both the original XEphem tarball and a binary built
 # from the original tarball (including possible changes for porting but
 # not changes in functionality).
+
+# uses built libpng without synchronization
+MAKE_JOBS_SAFE=	no
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/GUI/xephem
 USE_TOOLS+=	gmake perl:run
