@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/06/18 00:56:11 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2007/05/24 22:56:29 heinz Exp $
 #
 
 VERS=		0.51b3
@@ -6,7 +6,7 @@ DISTNAME=	elfsh-${VERS}-portable
 PKGNAME=	elfsh-${VERS}
 PKGREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	http://elfsh.segfault.net/files/
+MASTER_SITES=	http://elfsh.asgardlabs.org/files/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

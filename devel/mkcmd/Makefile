@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2007/01/07 09:13:51 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2007/08/30 19:44:39 joerg Exp $
 #
 
 DISTNAME=		mkcmd-8.14
 PKGREVISION=		3
 CATEGORIES=		devel
-MASTER_SITES=		http://archive.progeny.com/pundits/
+MASTER_SITES=		ftp://ftp.physics.purdue.edu/pub/pundits/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		epg@NetBSD.org
