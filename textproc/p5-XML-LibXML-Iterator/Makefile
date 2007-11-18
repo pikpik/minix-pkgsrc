@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2007/08/06 15:28:03 seb Exp $
+# $NetBSD: Makefile,v 1.11 2007/08/06 22:52:06 seb Exp $
 #
 
-DISTNAME=	XML-LibXML-Iterator-1.03
+DISTNAME=	XML-LibXML-Iterator-1.04
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5xlx
 CATEGORIES=	textproc perl5
