@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/06/04 20:06:37 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/02/22 19:26:24 wiz Exp $
 
-DISTNAME=	pexpect-0.999
+DISTNAME=	pexpect-2.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pexpect/}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://pexpect.sourceforge.net/
