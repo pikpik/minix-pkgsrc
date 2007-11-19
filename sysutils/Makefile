@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.415 2007/11/05 15:49:45 rillig Exp $
+# $NetBSD: Makefile,v 1.416 2007/11/08 20:09:49 jnemeth Exp $
 #
 
 COMMENT=	System utilities
@@ -196,6 +196,7 @@ SUBDIR+=	pflogsumm
 SUBDIR+=	pfstat
 SUBDIR+=	pftop
 SUBDIR+=	pscpug
+SUBDIR+=	psftools
 SUBDIR+=	psmisc
 SUBDIR+=	pstree
 SUBDIR+=	pv
