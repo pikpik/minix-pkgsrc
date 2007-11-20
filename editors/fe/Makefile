@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/01/06 14:59:40 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/01/30 23:52:53 wiz Exp $
 
 DISTNAME=	fe-1.6
 PKGREVISION=	1
@@ -11,6 +11,8 @@ COMMENT=	Folding editor
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	msgfmt
+
+LIBS+=		${BUILDLINK_LDADD.gettext}
 
 INSTALLATION_DIRS=	share/doc/fe
 
