@@ -1,0 +1,12 @@
+$NetBSD$
+
+These files contain platform-specific definitions that are used by the
+pkgsrc infrastructure.
+
+TODO: Document all these variables.
+
+=== Implementation notes ===
+
+Do not try to extract the definitions that are common to all files into
+another file (maybe common.mk). The code duplication is intentional
+here.
