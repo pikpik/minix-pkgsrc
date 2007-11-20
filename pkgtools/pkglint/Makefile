@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.364 2007/09/29 13:39:22 rillig Exp $
+# $NetBSD: Makefile,v 1.365 2007/10/07 12:59:14 kano Exp $
 #
 
 DISTNAME=	pkglint-4.79
@@ -17,8 +17,6 @@ DEPENDS+=	p5-pkgsrc-Dewey>=1.0:../../pkgtools/p5-pkgsrc-Dewey
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-USE_TOOLS+=	perl:run
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
