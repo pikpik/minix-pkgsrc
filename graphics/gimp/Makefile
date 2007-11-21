@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.164 2007/10/28 17:00:42 joerg Exp $
+# $NetBSD: Makefile,v 1.165 2007/11/01 09:25:07 adam Exp $
 
-DISTNAME=	gimp-2.4.1
+DISTNAME=	gimp-2.4.2
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/v2.4/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/v2.4/ \
@@ -37,7 +37,7 @@ BUILDLINK_API_DEPENDS.lcms+=		lcms>=1.12
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-gimpprint-prefix=${BUILDLINK_PREFIX.gimp-print-lib}
 
 UNLIMIT_RESOURCES+=	datasize
