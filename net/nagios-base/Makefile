@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/10/12 16:12:05 ghen Exp $
+# $NetBSD: Makefile,v 1.14 2007/10/12 16:13:52 ghen Exp $
 #
 
 DISTNAME=		nagios-2.5
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	--with-command-grp=${ROOT_GROUP:Q}
 CONFIGURE_ARGS+=	--with-init-dir=${PREFIX}/share/examples/rc.d
 CONFIGURE_ARGS+=	--with-lockfile=/var/run/nagios/nagios.lock
 
-USE_TOOLS+=		mail:run
+USE_TOOLS+=		mail:run perl
 CONFIGURE_ARGS+=	--with-mail=${TOOLS_PLATFORM.mail}
 
 RCD_SCRIPTS+=		nagios
