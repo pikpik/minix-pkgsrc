@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- librtunes/GNUmakefile.orig	2006-05-21 14:03:08.000000000 -0400
++++ librtunes/GNUmakefile
+@@ -6,7 +6,7 @@ librtunes.a:	rtunes.o ${RT}/cipher.o ${R
+ 		ar -r librtunes.a rtunes.o ${RT}/cipher.o ${RT}/mp4.o ${RT}/rtsp.o ${RT}/sys.o ${LB}/arc4random.o ${LB}/strlcat.o ${LB}/strlcpy.o
+ 
+ rtunes.o:	rtunes.c
+-		cc ${CCFLAGS} rtunes.c
++		${CC}  ${CCFLAGS} rtunes.c
+ 
+ clean:
+ 		rm -f librtunes.a *.o
