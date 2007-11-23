@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2007/05/23 12:53:00 markd Exp $
+# $NetBSD: Makefile,v 1.63 2007/10/20 10:34:15 markd Exp $
 
 DISTNAME=	arts-1.5.8
 CATEGORIES=	audio
@@ -30,5 +30,8 @@ _IN_ARTS_BUILD=		yes
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "none")
 CONFIGURE_ARGS+=	--disable-threading
 .endif
+
+post-patch:
+	cd ${FILESDIR} && cp gslglib.* ${WRKSRC}/flow/gsl/
 
 .include "../../mk/bsd.pkg.mk"
