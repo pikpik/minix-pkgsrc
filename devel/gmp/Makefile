@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/10/30 01:36:59 bjs Exp $
+# $NetBSD: Makefile,v 1.47 2007/11/07 00:18:17 gdt Exp $
 
 DISTNAME=	gmp-4.2.2
 CATEGORIES=	devel math
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		c c++ c99
-USE_TOOLS+=		gm4
+USE_TOOLS+=		gm4 autoconf
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-cxx --without-readline
@@ -52,5 +52,8 @@ BUILDLINK_TRANSFORM+=	rm:-mmmx rm:-msse rm:-msse2 rm:-msse3 rm:-m3dnow
 .    endif
 .  endif
 .endif
+
+pre-configure:
+	cd ${WRKSRC} && type autoconf && autoconf
 
 .include "../../mk/bsd.pkg.mk"
