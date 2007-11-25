@@ -1,13 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/19 12:39:30 wiz Exp $
 #
 
 DISTNAME=	mednafen-0.8.1
 CATEGORIES=	emulators
-MASTER_SITES=	http://mednafen.com/releases/files/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mednafen/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@NetBSD.org
-HOMEPAGE=	http://mednafen.com/
+HOMEPAGE=	http://mednafen.sourceforge.net/
 COMMENT=	Portable multi-system emulator
 
 WRKSRC=			${WRKDIR}/mednafen

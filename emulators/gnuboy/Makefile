@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:09:01 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/19 11:56:55 joerg Exp $
 
 DISTNAME=	gnuboy-1.0.3
 PKGREVISION=	2
 CATEGORIES=	emulators games
-MASTER_SITES=	http://gnuboy.unix-fu.org/src/
+MASTER_SITES=	http://brightrain.aerifal.cx/~laguna/src/
 
 MAINTAINER=	njl@sdf.lonestar.org
-HOMEPAGE=	http://gnuboy.unix-fu.org/
+#HOMEPAGE=	http://gnuboy.unix-fu.org/
 COMMENT=	Gameboy emulator
 
 GNU_CONFIGURE=	yes
