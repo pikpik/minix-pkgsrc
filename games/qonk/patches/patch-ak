@@ -1,0 +1,10 @@
+$NetBSD$
+
+--- src/ui/menuaction.cpp.orig	2007-09-14 05:43:03.000000000 +0000
++++ src/ui/menuaction.cpp
+@@ -1,4 +1,4 @@
+-#include "guichan/guichan.hpp"
++#include "guichan.hpp"
+ 
+ #include "menuaction.h"
+ 
