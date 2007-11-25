@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/04/10 16:09:42 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2007/06/01 20:21:03 wiz Exp $
 #
 
 DISTNAME=	liboil-0.3.12
@@ -10,6 +10,7 @@ HOMEPAGE=	http://liboil.freedesktop.org/wiki/
 COMMENT=	Library of simple, CPU-optimized functions
 
 GNU_CONFIGURE=		yes
+USE_FEATURES=		asprintf
 USE_LIBTOOL=		yes
 
 CONFIGURE_ARGS+=	--disable-glib # Only used by examples.
