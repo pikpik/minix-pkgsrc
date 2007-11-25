@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.293 2007/10/30 10:06:22 wiz Exp $
+# $NetBSD: Makefile,v 1.294 2007/11/04 12:36:14 rillig Exp $
 #
 
 COMMENT=	Games
@@ -182,6 +182,7 @@ SUBDIR+=	prboom
 SUBDIR+=	pysol
 SUBDIR+=	pytraffic
 SUBDIR+=	qnetwalk
+SUBDIR+=	qonk
 SUBDIR+=	qstat
 SUBDIR+=	quake
 SUBDIR+=	quake2forge
