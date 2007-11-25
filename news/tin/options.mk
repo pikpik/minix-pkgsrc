@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.7 2007/09/13 23:14:41 wiz Exp $
+# $NetBSD: options.mk,v 1.8 2007/09/19 05:55:05 wiz Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.tin
 PKG_SUPPORTED_OPTIONS=		icu inet6 tin-use-inn-spool
-PKG_OPTIONS_REQUIRED_GROUPS=	display
+PKG_OPTIONS_OPTIONAL_GROUPS=	display
 PKG_OPTIONS_GROUP.display=	curses ncurses ncursesw
 PKG_SUGGESTED_OPTIONS=		curses
 # untested
