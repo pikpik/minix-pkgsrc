@@ -1,4 +1,4 @@
-# $NetBSD: tools.Darwin.mk,v 1.34 2007/11/16 05:51:37 minskim Exp $
+# $NetBSD: tools.Darwin.mk,v 1.35 2007/11/22 16:39:47 tron Exp $
 #
 # System-supplied tools for the Darwin (Mac OS X) operating system.
 
@@ -35,7 +35,7 @@ TOOLS_PLATFORM.false?=		false			# shell builtin
 TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
 TOOLS_PLATFORM.file?=		/usr/bin/file
 TOOLS_PLATFORM.find?=		/usr/bin/find
-TOOLS_PLATFORM.flex?=		/usr/bin/lex
+TOOLS_PLATFORM.flex?=		/usr/bin/flex
 TOOLS_PLATFORM.gmake?=		/usr/bin/gnumake
 TOOLS_PLATFORM.gm4?=		/usr/bin/gm4
 TOOLS_PLATFORM.grep?=		/usr/bin/grep
