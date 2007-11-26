@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: nagios.sh,v 1.2 2006/05/11 07:32:02 grant Exp $
+# $NetBSD: nagios.sh,v 1.3 2007/10/11 19:24:36 ghen Exp $
 #
 # PROVIDE: nagios
 # REQUIRE: DAEMON
@@ -10,7 +10,7 @@
 name="nagios"
 rcvar=$name
 command="@PREFIX@/bin/${name}"
-pidfile="/var/run/${name}/${name}.lock"
+pidfile="/var/run/${name}.lock"
 config="@PKG_SYSCONFDIR@/${name}.cfg"
 
 command_args="-d $config"
