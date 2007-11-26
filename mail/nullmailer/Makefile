@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/03/24 06:49:02 schmonz Exp $
+# $NetBSD: Makefile,v 1.28 2007/07/04 20:54:45 jlam Exp $
 
 DISTNAME=		nullmailer-1.03
 CATEGORIES=		mail
@@ -44,8 +44,6 @@ SPECIAL_PERMS+=		libexec/nullmailer/mailq			\
 			${NULLMAILER_USER} ${NULLMAILER_GROUP} 4555
 SPECIAL_PERMS+=		libexec/nullmailer/nullmailer-queue		\
 			${NULLMAILER_USER} ${NULLMAILER_GROUP} 4555
-SPECIAL_PERMS+=		${VARBASE}/spool/nullmailer/trigger		\
-			${NULLMAILER_USER} ${NULLMAILER_GROUP} 0600
 
 SUBST_CLASSES+=		paths
 SUBST_FILES.paths=	${WRKDIR}/mailer.conf
