@@ -1,0 +1,10 @@
+# $NetBSD$
+
+CONF_INC_PHP=@CONF_INC_PHP@
+PMCONFFILE=@PMCONFFILE@
+
+case ${STAGE} in
+DEINSTALL)
+        ${RM} -f ${CONF_INC_PHP}
+	;;
+esac
