@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/08 18:13:13 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2005/12/29 06:21:54 jlam Exp $
 #
 
 DISTNAME=	beacon-1.1-0
@@ -13,6 +13,8 @@ COMMENT=	Multicast supervision tool
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/share/examples/beacon
+
+USE_TOOLS+=	perl
 
 PERL5_CONFIGURE=	NO
 PERL5_PACKLIST=		auto/Net/Multicast/Beacon/.packlist
