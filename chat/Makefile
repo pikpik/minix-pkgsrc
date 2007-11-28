@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.130 2007/08/16 00:21:38 joerg Exp $
+# $NetBSD: Makefile,v 1.131 2007/08/30 00:48:34 jnemeth Exp $
 #
 
 COMMENT=	Communication programs
@@ -14,6 +14,7 @@ SUBDIR+=	bnc
 SUBDIR+=	bsflite
 SUBDIR+=	centericq
 SUBDIR+=	centerim
+SUBDIR+=	climm
 SUBDIR+=	cgiirc
 SUBDIR+=	dccserver
 SUBDIR+=	dircproxy
@@ -65,7 +66,6 @@ SUBDIR+=	licq-gui-console
 SUBDIR+=	licq-gui-qt
 SUBDIR+=	loudmouth
 SUBDIR+=	meanwhile
-SUBDIR+=	micq
 SUBDIR+=	msnre
 SUBDIR+=	mu-conference
 SUBDIR+=	naim
