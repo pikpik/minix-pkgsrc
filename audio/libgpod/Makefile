@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2006/09/10 10:15:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2007/02/07 22:30:10 drochner Exp $
 
-DISTNAME=		libgpod-0.4.2
+DISTNAME=		libgpod-0.6.0
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtkpod/}
 
@@ -13,6 +13,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.8.0
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
