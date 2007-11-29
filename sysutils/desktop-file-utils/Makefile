@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/07/13 15:53:42 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2007/09/07 16:11:19 wiz Exp $
 #
 
 DISTNAME=	desktop-file-utils-0.14
@@ -8,6 +8,8 @@ MASTER_SITES=	http://freedesktop.org/software/desktop-file-utils/releases/
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/desktop-file-utils
 COMMENT=	Utilities to manage desktop entries
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES
