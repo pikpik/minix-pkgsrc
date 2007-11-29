@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2006/07/23 04:07:34 minskim Exp $
+# $NetBSD: options.mk,v 1.2 2006/11/06 09:46:41 joerg Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cairo
 PKG_SUPPORTED_OPTIONS=	x11
@@ -12,6 +12,8 @@ PKG_SUGGESTED_OPTIONS=	x11
 .if !empty(PKG_OPTIONS:Mx11)
 CONFIGURE_ARGS+=	--enable-xlib --enable-xlib-xrender
 PLIST_SUBST+=		X11=""
+.include "../../graphics/MesaLib/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
