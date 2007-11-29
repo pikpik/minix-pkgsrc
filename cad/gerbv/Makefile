@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2006/08/08 11:46:50 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.30 2007/10/02 06:17:09 dmcmahill Exp $
 #
 
-DISTNAME=	gerbv-1.0.2
+DISTNAME=	gerbv-1.0.3
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gerbv/}
 
