@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/01/26 01:26:46 markd Exp $
+# $NetBSD: Makefile,v 1.18 2007/10/16 23:56:02 tnn Exp $
 #
 
 .include "../../comms/pilot-link/Makefile.common"
@@ -15,9 +15,7 @@ MAKE_ENV+=		PICCLIB="libcc/libpicc.a"
 CONFIGURE_ENV+=		ac_cv_header_inttypes_h="no"
 .endif
 
-BUILD_DIRS=		${WRKSRC}/include
-BUILD_DIRS+=		${WRKSRC}/libpisock
-BUILD_DIRS+=		${WRKSRC}/libpisync
+BUILD_DIRS=		include libpisock libpisync
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
