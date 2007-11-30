@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/02/22 19:30:06 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2007/06/30 16:12:03 joerg Exp $
 
 DISTNAME=	Botan-1.4.11
 PKGNAME=	botan-1.4.11
@@ -26,11 +26,7 @@ MAKE_FLAGS+=	INSTALL_CMD_EXEC=${INSTALL_PROGRAM:Q}
 MAKE_FLAGS+=	INSTALL_CMD_DATA=${INSTALL_DATA:Q}
 MAKE_FLAGS+=	LIB_OPT=${CXXFLAGS:Q}
 
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "DragonFly"
-CXXFLAGS+=	-D_DRAGONFLY_SOURCE
-.endif
-
+CXXFLAGS.DragonFly+=	-D_DRAGONFLY_SOURCE
+BUILDLINK_TRANSFORM+=	rm:-mcpu=i686
 
 .include "../../mk/bsd.pkg.mk"
