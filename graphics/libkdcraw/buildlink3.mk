@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1 2007/07/08 07:23:37 wiz Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 LIBKDCRAW_BUILDLINK3_MK:=	${LIBKDCRAW_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libkdcraw
 
 .if ${LIBKDCRAW_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.libkdcraw+=	libkdcraw>=0.1.1
+BUILDLINK_ABI_DEPENDS.libkdcraw?=	libkdcraw>=0.1.1nb2
 BUILDLINK_PKGSRCDIR.libkdcraw?=	../../graphics/libkdcraw
 .endif	# LIBKDCRAW_BUILDLINK3_MK
 
