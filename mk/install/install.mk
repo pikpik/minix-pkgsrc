@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.46 2007/08/14 23:59:25 joerg Exp $
+# $NetBSD: install.mk,v 1.47 2007/09/13 09:44:58 rillig Exp $
 #
 # This file provides the code for the "install" phase.
 #
@@ -102,7 +102,6 @@ install-check-interactive: .PHONY
 	@${ERROR_MSG} "The installation stage of this package requires user interaction"
 	@${ERROR_MSG} "Please install manually with:"
 	@${ERROR_MSG} "	\"cd ${.CURDIR} && ${MAKE} install\""
-	${RUN} ${TOUCH} ${_INTERACTIVE_COOKIE}
 	${RUN} ${FALSE}
 .else
 	@${DO_NADA}

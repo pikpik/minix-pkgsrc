@@ -1,4 +1,4 @@
-# $NetBSD: configure.mk,v 1.18 2007/07/12 18:59:15 jlam Exp $
+# $NetBSD: configure.mk,v 1.19 2007/11/01 08:37:24 rillig Exp $
 #
 # = Package-settable variables =
 #
@@ -151,8 +151,7 @@ configure-check-interactive:
 	@${ERROR_MSG} "The configure stage of this package requires user interaction"
 	@${ERROR_MSG} "Please configure manually with:"
 	@${ERROR_MSG} "    \"cd ${.CURDIR} && ${MAKE} configure\""
-	@${TOUCH} ${_INTERACTIVE_COOKIE}
-	@${FALSE}
+	${RUN} ${FALSE}
 .else
 	@${DO_NADA}
 .endif
