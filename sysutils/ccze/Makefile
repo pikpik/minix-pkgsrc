@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:10:49 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:40 jlam Exp $
 
 DISTNAME=	ccze-0.2.1
 PKGREVISION=	1
@@ -15,6 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
+BUILDLINK_TRANSFORM+=	rm:-Wmulticharacter
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
