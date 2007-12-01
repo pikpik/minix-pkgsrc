@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/04/08 23:04:53 tonio Exp $
 #
 
-DISTNAME=	ocamlduce-3.09.3pl1
+DISTNAME=	ocamlduce-3.10.0
 CATEGORIES=	lang
 MASTER_SITES=	http://gallium.inria.fr/~frisch/ocamlcduce/download/
 
@@ -22,6 +22,8 @@ BUILD_TARGET=	opt
 INSTALL_TARGET=	install
 PLIST_SRC+=	PLIST.opt
 .endif
+
+BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.10
 
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
