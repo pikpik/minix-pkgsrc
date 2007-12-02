@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2007/02/15 21:35:11 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2007/03/24 19:21:31 joerg Exp $
 
 DISTNAME=		nntpcache-3.0.2
 CATEGORIES=		news
-MASTER_SITES=		http://www.nntpcache.com/pub/nntpcache/ \
-			ftp://ftp.cs.tu-berlin.de/pub/net/news/nntpcache/ \
-			ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/news/nntpcache/
+MASTER_SITES=		http://www.nntpcache.com/pub/nntpcache/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nntpcache.com/
