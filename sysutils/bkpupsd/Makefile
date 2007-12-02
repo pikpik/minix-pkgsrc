@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.27 2007/06/16 09:36:04 taca Exp $
+# $NetBSD: Makefile,v 1.28 2007/09/16 10:32:29 obache Exp $
 #
 
 DISTNAME=	bkpupsd-2.2.1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.jone-system.com/pub/misc/ \
-		ftp://ftp.back-street.net/pub/misc/
+MASTER_SITES=	ftp://ftp.back-street.net/pub/misc/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	taca@NetBSD.org

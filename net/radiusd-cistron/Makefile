@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2007/03/24 19:21:30 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2007/08/11 16:51:27 joerg Exp $
 
 DISTNAME=	radiusd-cistron-1.6.7
 PKGREVISION=	2
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/ \
-		ftp://ftp.freeradius.org/pub/radius/
+MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.radius.cistron.nl/

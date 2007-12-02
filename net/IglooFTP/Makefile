@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:10:20 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/20 12:45:06 joerg Exp $
 
 DISTNAME=	IglooFTP-0.6.1
 PKGREVISION=	5
 CATEGORIES=	net
-MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/file-transfer/} \
-		ftp://littleigloo.org/pub/iglooftp/
+MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/file-transfer/}
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	rxg@NetBSD.org

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2006/08/17 13:57:23 taca Exp $
+# $NetBSD: Makefile,v 1.12 2007/10/19 03:39:32 taca Exp $
 
 DISTNAME=	netatalk-1.6.4a
 PKGREVISION=	3
 CATEGORIES=	net print
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netatalk/} \
-		http://me.in-berlin.de/~jroger/netatalk/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netatalk/}
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/netatalk/

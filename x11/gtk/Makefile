@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.120 2006/12/02 22:33:00 jschauma Exp $
+# $NetBSD: Makefile,v 1.121 2007/01/02 11:26:58 joerg Exp $
 
 DISTNAME=		gtk+-1.2.10
 PKGREVISION=		9
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.gtk.org/pub/gtk/v1.2/ \
-			ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \
 			${MASTER_SITE_GNOME:=sources/gtk+/1.2/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org

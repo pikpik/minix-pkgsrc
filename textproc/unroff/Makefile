@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2006/05/18 19:55:35 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2006/06/25 07:57:22 rillig Exp $
 
 DISTNAME=		unroff-1.0
 PKGNAME=		unroff-1.0.2
 PKGREVISION=		1
 CATEGORIES=		textproc
-MASTER_SITES=		http://www-rn.informatik.uni-bremen.de/software/unroff/dist/ \
-			http://www-rn.informatik.uni-bremen.de/software/unroff/contrib/
+MASTER_SITES=		http://www-rn.informatik.uni-bremen.de/software/unroff/dist/
 
 PATCHFILES=		me-misc-patch misc-patch-2
 PATCH_DIST_STRIP=	-p1

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2006/10/30 14:07:28 adrianp Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/22 19:27:06 wiz Exp $
 #
 
 DISTNAME=	amap-5.2
 CATEGORIES=	net security
-MASTER_SITES=	http://thc.segfault.net/releases/ \
-		http://www.thc.org/releases/
+MASTER_SITES=	http://www.thc.org/releases/
 
 MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://thc.org.segfault.net/thc-amap/

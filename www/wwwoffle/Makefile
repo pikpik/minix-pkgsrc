@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.68 2007/02/22 19:27:25 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2007/03/24 19:21:33 joerg Exp $
 
 DISTNAME=	wwwoffle-2.9a
 PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://www.gedanken.freeserve.co.uk/download-wwwoffle/ \
-		ftp://ftp.ibiblio.org/pub/Linux/apps/www/servers/
+MASTER_SITES=	http://www.gedanken.freeserve.co.uk/download-wwwoffle/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	abs@NetBSD.org
