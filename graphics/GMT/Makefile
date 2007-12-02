@@ -1,16 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2007/02/15 14:58:19 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2007/10/10 21:48:42 rillig Exp $
 
 DISTNAME=	GMT4.1.4
 PKGNAME=	GMT-4.1.4
 PKGREVISION=	1
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.soest.hawaii.edu/gmt/4/		\
-		ftp://falcon.grdl.noaa.gov/pub/gmt/4/		\
-		ftp://ftp.iris.washington.edu/pub/gmt/4/	\
-		ftp://ftp.iag.usp.br/pub/gmt/4/			\
-		ftp://ftp.geologi.uio.no/pub/gmt/4/		\
-		ftp://gd.tuwien.ac.at/pub/gmt/4/		\
-		ftp://life.csu.edu.au/pub/gmt/4/		\
+MASTER_SITES=	ftp://ftp.iris.washington.edu/pub/gmt/4/	\
 		ftp://ftp.scc.u-tokai.ac.jp/pub/gmt/4/
 DISTFILES=	GMT4.1.4_man.tar.bz2 GMT4.1.4_pdf.tar.bz2	\
 		GMT4.1.4_scripts.tar.bz2 GMT4.1.4_share.tar.bz2 \
