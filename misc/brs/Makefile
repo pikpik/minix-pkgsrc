@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/12/03 15:15:04 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:33 tv Exp $
 #
 
 DISTNAME=	brs.4.00.l1
@@ -19,5 +19,6 @@ SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
 SUBST_FILES.man=	bible.1
 SUBST_SED.man=		-e s,/usr/local/lib,${PREFIX}/libdata/${PKGBASE},
+BUILDLINK_TRANSFORM+=	rm:-fwritable-strings	# gcc4 doesn't know it.
 
 .include "../../mk/bsd.pkg.mk"
