@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2006/12/27 13:37:46 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2007/02/22 19:27:29 wiz Exp $
 #
 
 DISTNAME=	xphoon.tar
 PKGNAME=	xphoon-19910918
 PKGREVISION=	2
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		${MASTER_SITE_XCONTRIB} \
-		ftp://ftp.sunet.se/pub/X11/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
