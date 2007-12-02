@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2007/02/22 19:26:34 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2007/07/17 10:35:55 drochner Exp $
 
 DISTNAME=	libmng-1.0.10
 PKGNAME=	mng-1.0.10
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libmng/} \
-		http://www.3-t.com/libmng/download/ \
 		http://www.libmng.com/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

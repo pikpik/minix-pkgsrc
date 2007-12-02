@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2006/11/05 17:23:44 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2007/01/06 21:52:14 wiz Exp $
 
 DISTNAME=	lcms-1.16
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.littlecms.com/ \
-		http://www.abaforum.es/martim/
+MASTER_SITES=	http://www.littlecms.com/
 
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.littlecms.com/

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2006/12/15 20:32:55 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2007/04/05 20:47:10 dillo Exp $
 #
 
 DISTNAME=		freesci-0.3.5
 CATEGORIES=		games
-MASTER_SITES=		http://www-plan.cs.colorado.edu/reichenb/freesci/ \
-			http://teksolv.de/~jameson/
+MASTER_SITES=		http://www-plan.cs.colorado.edu/reichenb/freesci/
 
 MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://freesci.linuxgames.com/

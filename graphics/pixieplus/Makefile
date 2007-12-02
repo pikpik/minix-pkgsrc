@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.28 2007/09/21 13:03:52 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2007/11/30 21:55:07 wiz Exp $
 #
 
 DISTNAME=	pixieplus-0.5.4
 PKGREVISION=	16
 CATEGORIES=	graphics
-MASTER_SITES=	http://people.fruitsalad.org/avleeuwen/distfiles/pixieplus/ \
-		http://www.mosfet.org/pixie/
+MASTER_SITES=	http://people.fruitsalad.org/avleeuwen/distfiles/pixieplus/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mosfet.org/pixie/
