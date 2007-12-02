@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.46 2007/09/21 13:03:41 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2007/11/30 21:55:05 wiz Exp $
 
 DISTNAME=	kvim-${KVIM_VERSION}
 PKGNAME=	vim-kde-${KVIM_VERSION}
 PKGREVISION=	14
 CATEGORIES=	editors kde
-MASTER_SITES=	ftp://ftp.rutgers.edu/pub/kde/stable/apps/KDE3.x/utils/ \
-		ftp://ftp.kde.org/pub/kde/stable/apps/KDE3.x/utils/ \
-		http://freenux.org/kvim/
+MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/apps/KDE3.x/utils/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
