@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/17 03:50:32 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:37 jlam Exp $
 
 DISTNAME=	pscan
 PKGNAME=	pscan-1.3
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.striker.ottawa.on.ca/~aland/pscan/
 COMMENT=	Security C code scanner for misuse of format strings
 
 BUILD_TARGET=	pscan
+
+USE_TOOLS+=	lex
 
 INSTALLATION_DIRS=	bin
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:10:04 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/10/04 21:47:58 wiz Exp $
 
 DISTNAME=	xeukleides.1.0.0
 PKGNAME=	xeukleides-1.0.0
@@ -15,7 +15,7 @@ DEPENDS+=	eukleides>=1.0.1:../../math/eukleides
 
 USE_X11BASE=	yes
 BUILD_TARGET=	xeukleides
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake flex
 
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/01/07 09:14:08 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2007/02/22 19:27:02 wiz Exp $
 
 DISTNAME=		trn-4.0-test76
 PKGNAME=		trn-4.76
@@ -27,7 +27,7 @@ HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ENV+=		PREFIX=${PREFIX:Q}
 USE_TOOLS+=		awk basename cat cp diff echo egrep expr grep mkdir mv
-USE_TOOLS+=		perl:run rm sed tail tr
+USE_TOOLS+=		perl:run rm sed tail tr yacc
 CONFIGURE_ENV+=		TOOLS_AWK=${TOOLS_AWK:Q}
 CONFIGURE_ENV+=		TOOLS_BASENAME=${TOOLS_BASENAME:Q}
 CONFIGURE_ENV+=		TOOLS_CAT=${TOOLS_CAT:Q}
