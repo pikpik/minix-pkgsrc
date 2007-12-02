@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2006/06/20 22:15:58 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2007/07/04 20:54:50 jlam Exp $
 
 DISTNAME=		LambdaMOO-1.8.1
 PKGNAME=		lambdamoo-1.8.1
 CATEGORIES=		net
-MASTER_SITES=		ftp://ftp.place.org/pub/moo/ \
-			${MASTER_SITE_SOURCEFORGE:=lambdamoo/} \
-			ftp://ftp.kanga.nu/pub/mirrors/download.sourceforge.net/lambdamoo/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lambdamoo/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/lambdamoo/
