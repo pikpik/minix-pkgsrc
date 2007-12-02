@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/02/07 22:30:10 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2007/11/29 18:47:27 wiz Exp $
 
 DISTNAME=		libgpod-0.6.0
 CATEGORIES=		audio
@@ -6,7 +6,7 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtkpod/}
 
 MAINTAINER=		srp@tworoads.net
 HOMEPAGE=		http://www.gtkpod.org/libgpod.html
-COMMENT=		Library for accessing iPod onboard databases, playlists, etc.
+COMMENT=		Library for accessing iPod onboard databases, playlists, etc
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

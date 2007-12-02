@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/30 11:57:34 minskim Exp $
+# $NetBSD: Makefile,v 1.6 2006/09/09 02:43:11 obache Exp $
 #
 
 DISTNAME=	vttest-20050107
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://dickey.his.com/vttest/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	drochner@NetBSD.org
-HOMEPAGE=	http://dickey.his.com/vttest/vttest.html
+HOMEPAGE=	http://invisible-island.net/vttest/vttest.html
 COMMENT=	vt100/vt220/xterm test utility
 
 GNU_CONFIGURE=	YES

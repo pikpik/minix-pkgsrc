@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/07/22 13:11:28 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2006/10/10 00:23:39 dmcmahill Exp $
 #
 
 DISTNAME=		xmlto-0.0.18
@@ -8,7 +8,7 @@ MASTER_SITES=		http://cyberelk.net/tim/data/xmlto/stable/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://cyberelk.net/tim/xmlto/index.html
+HOMEPAGE=		http://cyberelk.net/tim/software/xmlto/
 COMMENT=		Tool to help transform XML documents into other formats
 
 DEPENDS+=		getopt-[0-9]*:../../misc/getopt
