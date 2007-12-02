@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2007/02/22 19:26:19 wiz Exp $
 
 DISTNAME=		ruby-postgres-${VERSION}
 PKGNAME=		${RUBY_PKGPREFIX}-postgresql-${VERSION}
 PKGREVISION=		8
 CATEGORIES=		databases ruby
 MASTER_SITES=		http://raa.ruby-lang.org/cache/postgres/ \
-			http://ruby.scripting.ca/postgres/archive/ \
-			http://www.postgresql.jp/interfaces/ruby/archive/
+			http://ruby.scripting.ca/postgres/archive/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ruby.scripting.ca/postgres/
