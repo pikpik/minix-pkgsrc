@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/03/04 21:30:13 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2007/01/07 09:14:01 rillig Exp $
 #
 
 DISTNAME=	xjdic24
@@ -8,8 +8,6 @@ MASTER_SITES=	ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
 		http://japanology.arts.kuleuven.ac.be/mirrors/monash/ \
 		ftp://ftp.nrc.ca/pub/packages/nihongo/ \
 		http://www.bcit-broadcast.com/monash/ \
-		ftp://ftp.sedl.org/pub/mirrors/nihongo/ \
-		ftp://ftp.net.usf.edu/pub/monash/ \
 		ftp://ftp.u-aizu.ac.jp/pub/SciEng/nihongo/ftp.cc.monash.edu.au/ \
 		ftp://ftp.funet.fi/pub/culture/japan/mirrors/monash/pub/nihongo/
 EXTRACT_SUFX=	.tgz

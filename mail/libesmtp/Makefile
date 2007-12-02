@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2006/02/08 18:29:17 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2007/10/16 23:49:01 tnn Exp $
 
 DISTNAME=	libesmtp-1.0.4
 CATEGORIES=	mail devel
-MASTER_SITES=	http://www.stafford.uklinux.net/libesmtp/ \
-		http://www.tobez.org/download/port-mirrors/mail/libesmtp/ \
-		http://www.borgsdemons.com/distfiles/
+MASTER_SITES=	http://www.stafford.uklinux.net/libesmtp/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	dolemite@wuli.nu
