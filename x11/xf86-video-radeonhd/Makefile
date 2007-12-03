@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/10/23 23:15:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2007/11/30 12:00:42 joerg Exp $
 #
 
 DISTNAME=	xf86-video-radeonhd-1.0.0
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
 EXTRACT_SUFX=	.tar.bz2
