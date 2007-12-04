@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.235 2007/10/11 19:27:18 ghen Exp $
+# $NetBSD: Makefile,v 1.236 2007/11/10 11:35:10 agc Exp $
 #
 
 COMMENT=	Databases
@@ -118,6 +118,7 @@ SUBDIR+=	php-filepro
 SUBDIR+=	php-ldap
 SUBDIR+=	php-mssql
 SUBDIR+=	php-mysql
+SUBDIR+=	php-oci8
 SUBDIR+=	php-odbc
 SUBDIR+=	php-oracle
 SUBDIR+=	php-pdo
