@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2007/04/12 09:55:11 martti Exp $
+# $NetBSD: Makefile,v 1.10 2007/04/17 17:45:06 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.6.0
+XFCE4_VERSION=	0.6.2
 
 DISTNAME=	xfce4-weather-plugin-${XFCE4_VERSION}
 #PKGREVISION=	1
