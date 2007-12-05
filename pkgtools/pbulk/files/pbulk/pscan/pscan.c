@@ -1,4 +1,4 @@
-/* $NetBSD: pscan.c,v 1.3 2007/07/20 19:39:34 joerg Exp $ */
+/* $NetBSD: pscan.c,v 1.4 2007/07/21 15:12:06 tnn Exp $ */
 
 /*-
  * Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -183,6 +183,8 @@ read_limited_list(void)
 		eos = strchr(location, '\n');
 		if (eos == NULL)
 			err(1, "Incomplete or too long input line");
+		if (location == eos)
+			continue;
 		*eos = '\0';
 		add_job_full(location);
 	}
