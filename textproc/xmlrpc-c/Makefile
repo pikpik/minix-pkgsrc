@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/02/26 14:56:30 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/26 21:03:12 wiz Exp $
 #
 
 DISTNAME=	xmlrpc-c-1.09.00
@@ -10,6 +10,9 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xmlrpc-c.sourceforge.net/
 COMMENT=	Library for writing an XML-RPC server or client in C or C++
+
+# Sometimes can't open ../xmltok/libxmlrpc_xmltok.la
+MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
