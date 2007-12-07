@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/08/27 17.53.49 claudio Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/11/03 18:14:20 rillig Exp $
 
 DISTNAME=		thew-1.1.1
 PKGREVISION=		2
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		ilfoglionascosto@netcat.it
 HOMEPAGE=		http://thew.sourceforce.net/
 COMMENT=		The hermit worm
+
+AUTO_MKDIRS=		yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/thew ${PREFIX}/bin
