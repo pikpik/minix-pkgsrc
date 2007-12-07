@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.167 2007/11/22 18:12:45 tron Exp $
+# $NetBSD: Makefile,v 1.168 2007/12/02 12:06:19 wiz Exp $
 
 DISTNAME=	gimp-2.4.2
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/v2.4/ \
 		ftp://ftp.sunet.se/pub/gnu/gimp/v2.4/ \
@@ -38,7 +39,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ARGS+=	--with-gimpprint-prefix=${BUILDLINK_PREFIX.gimp-print-lib}
 
 UNLIMIT_RESOURCES+=	datasize
 
@@ -69,7 +69,6 @@ PLIST_SUBST+=	TWAIN="@comment "
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/libwmf/buildlink3.mk"
-.include "../../print/gimp-print-lib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .if empty(PKG_BUILD_OPTIONS.gtk2:Mx11)
 PLIST_SUBST+=	REMOTE="@comment "
