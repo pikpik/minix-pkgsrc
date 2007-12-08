@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/27 09:21:26 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2007/11/29 15:15:19 wiz Exp $
 
 DISTNAME=	MP3-Info-1.23
 PKGNAME=	p5-${DISTNAME}
@@ -8,6 +8,10 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=MP3/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/MP3-Info/
 COMMENT=	Manipulate/fetch info from MP3 audio files
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=		# empty
 
 PERL5_PACKLIST=		auto/MP3/Info/.packlist
 
