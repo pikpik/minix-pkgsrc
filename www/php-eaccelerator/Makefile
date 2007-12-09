@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2006/06/04 16:26:56 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/11/06 20:58:50 jdolecek Exp $
 
 MODNAME=	eaccelerator
-PECL_VERSION=	0.9.5
+PECL_VERSION=	0.9.5.2
 CATEGORIES+=	sysutils
 COMMENT=	PHP accelerator, optimizer, encoder and dynamic content cache
 
