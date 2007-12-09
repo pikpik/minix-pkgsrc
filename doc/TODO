@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6879 2007/12/07 21:16:02 wiz Exp $
+$NetBSD: TODO,v 1.6880 2007/12/09 00:23:58 hiramatsu Exp $
 
 Suggested new packages
 ======================
@@ -208,6 +208,14 @@ Suggested new packages
 	BSNMP
 	http://oasis.frogfoot.net/code/tinysnmp/
 	Mini SNMP daemon
+
+	TrueCrypt
+	http://www.truecrypt.org/
+	Hard drive encryption software
+
+	ReportMagic
+	http://www.reportmagic.org/
+	Builds nice looking statistics reports for output from www/analog
 
 Suggested package updates
 =========================
