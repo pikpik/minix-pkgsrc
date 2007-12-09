@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2006/10/04 21:53:17 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/08/16 22:39:14 joerg Exp $
 #
 
-DISTNAME=	pload-0.9.4
-PKGREVISION=	3
+DISTNAME=	pload-0.9.5
 CATEGORIES=	net x11
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/serial/ppp/}
 
