@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.6 2006/07/19 22:36:53 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/18 02:01:31 wiz Exp $
 #
 
-DISTNAME=	Config-Tiny-2.10
+DISTNAME=	Config-Tiny-2.12
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Config/}
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	rhaen@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Config-Tiny/
 COMMENT=	Read/Write .ini style files with as little code as possible
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Config/Tiny/.packlist
 
