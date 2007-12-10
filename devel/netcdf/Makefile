@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/10/04 21:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2006/11/11 22:46:14 rillig Exp $
 
 DISTNAME=	netcdf-3.6.0-p1
 PKGNAME=	netcdf-3.6.0p1
@@ -16,5 +16,6 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 MAKE_FLAGS+=		MANDIR=${PREFIX}/${PKGMANDIR}
 CPPFLAGS+=		-Df2cFortran -Dunix
+MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.pkg.mk"
