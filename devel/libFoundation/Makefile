@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.9 2006/05/28 00:26:26 rh Exp $
+# $NetBSD: Makefile,v 1.10 2006/07/22 05:10:54 rillig Exp $
 #
 
 DISTNAME=	libFoundation-1.0.72-r107
 PKGNAME=	${DISTNAME:S/-r/./}
 PKGREVISION=	2
 CATEGORIES=	devel gnustep
-MASTER_SITES=	ftp://ftp.opengroupware.org/sources/releases/		\
-		http://www.opengroupware.org/sources/releases/
+MASTER_SITES=	ftp://ftp.opengroupware.org/nightly/sources/releases/	\
+		http://download.opengroupware.org/nightly/sources/releases/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.opengroupware.org/en/devs/thirdparty/libFoundation/
