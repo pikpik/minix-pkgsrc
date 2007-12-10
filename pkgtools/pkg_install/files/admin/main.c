@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.31 2007/08/15 02:08:40 joerg Exp $	*/
+/*	$NetBSD: main.c,v 1.32 2007/08/29 15:42:39 jlam Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: main.c,v 1.31 2007/08/15 02:08:40 joerg Exp $");
+__RCSID("$NetBSD: main.c,v 1.32 2007/08/29 15:42:39 jlam Exp $");
 #endif
 
 /*
@@ -93,6 +93,7 @@ usage(void)
 	(void) fprintf(stderr, "usage: %s [-bqSV] [-d lsdir] [-K pkg_dbdir] [-s sfx] command args ...\n"
 	    "Where 'commands' and 'args' are:\n"
 	    " rebuild                     - rebuild pkgdb from +CONTENTS files\n"
+	    " rebuild-tree                - rebuild +REQUIRED_BY files from forward deps\n"
 	    " check [pkg ...]             - check md5 checksum of installed files\n"
 	    " add pkg ...                 - add pkg files to database\n"
 	    " delete pkg ...              - delete file entries for pkg in database\n"
