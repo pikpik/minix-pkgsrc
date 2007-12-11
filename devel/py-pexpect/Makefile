@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/02/22 19:26:24 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/11/19 10:14:31 tron Exp $
 
 DISTNAME=	pexpect-2.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pexpect/}
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://pexpect.sourceforge.net/
 COMMENT=	Pure Python Expect-like module
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG= yes
 PYTHON_VERSIONS_ACCEPTED=	24 23 22 21
