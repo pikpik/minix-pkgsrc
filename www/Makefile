@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.527 2007/11/06 13:53:41 rillig Exp $
+# $NetBSD: Makefile,v 1.528 2007/11/06 14:35:20 rillig Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -163,6 +163,7 @@ SUBDIR+=	mongrel
 SUBDIR+=	navigator
 SUBDIR+=	neon
 SUBDIR+=	netscape
+SUBDIR+=	nginx
 SUBDIR+=	ns-plugger-common
 SUBDIR+=	ns-plugger-communicator
 SUBDIR+=	ns-plugger-navigator
