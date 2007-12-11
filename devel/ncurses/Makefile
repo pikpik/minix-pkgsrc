@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.79 2007/09/25 08:49:05 hira Exp $
+# $NetBSD: Makefile,v 1.80 2007/09/25 10:07:05 hira Exp $
 
 .include "Makefile.common"
-PKGREVISION=	1
+PKGREVISION=	2
 
 COMMENT=	CRT screen handling and optimization package
 
