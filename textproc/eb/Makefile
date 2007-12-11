@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/05/05 09:13:31 obache Exp $
+# $NetBSD: Makefile,v 1.42 2007/06/07 13:01:27 uebayasi Exp $
 
 DISTNAME=	eb-4.3
 PKGREVISION=	1
@@ -55,6 +55,8 @@ USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 CONFIGURE_ARGS+=	--with-zlib
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
@@ -79,12 +81,12 @@ INSTALLATION_DIRS=	share/eb/appendix
 
 post-install:
 	( \
-		cd ${EB_APPENDIXDIR} && \
+		cd ${DESTDIR}${EB_APPENDIXDIR} && \
 		for f in ${EB_APPENDICES}; do \
 			${EXTRACT_CMD} ${_DISTDIR}/$${f}; \
 		done \
 	)
-	${INSTALL_DATA_DIR} ${EGDIR}
-	${INSTALL_DATA} ${WRKSRC}/eb.conf ${EGDIR}/eb.conf.default
+	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/eb.conf ${DESTDIR}${EGDIR}/eb.conf.default
 
 .include "../../mk/bsd.pkg.mk"
