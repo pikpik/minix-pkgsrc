@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/12/12 01:14:29 markd Exp $
+# $NetBSD: Makefile,v 1.18 2007/12/12 09:53:46 markd Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
@@ -40,8 +40,8 @@ do-install:
 		${QTPREFIX}/lib/
 	${SED} -e "s:${WRKSRC}:${QTPREFIX}:g" \
 		-e "s:${QTPREFIX}/lib/lib\([A-Za-z3]*\)\.la:-l\1:g" \
-		${WRKSRC}/lib/pkgconfig/${lib}.pc > ${WRKOBJ}/${lib}.pc
-	${INSTALL_DATA} ${WRKOBJ}/${lib}.pc ${PREFIX}/lib/pkgconfig/
+		${WRKSRC}/lib/pkgconfig/${lib}.pc > ${WRKDIR}/${lib}.pc
+	${INSTALL_DATA} ${WRKDIR}/${lib}.pc ${PREFIX}/lib/pkgconfig/
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/tools/porting/src/q3porting.xml ${QTPREFIX}
 	${INSTALL_LIB_DIR} ${QTPREFIX}/plugins
