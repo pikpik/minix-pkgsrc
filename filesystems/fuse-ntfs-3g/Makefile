@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2007/11/11 15:59:22 xtraeme Exp $
+# $NetBSD: Makefile,v 1.10 2007/11/20 13:30:54 xtraeme Exp $
 #
 
-DISTNAME=	ntfs-3g-1.1120
+DISTNAME=	ntfs-3g-1.913
 PKGNAME=	fuse-${DISTNAME}
 CATEGORIES=	filesystems
 MASTER_SITES=	http://www.ntfs-3g.org/
