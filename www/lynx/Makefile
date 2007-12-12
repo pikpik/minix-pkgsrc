@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2007/07/18 20:25:27 joerg Exp $
+# $NetBSD: Makefile,v 1.101 2007/09/08 18:22:38 rillig Exp $
 
 #
 # NOTE: Please do not enable the lynxcgi feature unless it is lynx
@@ -16,7 +16,7 @@ MASTER_SITES=	http://lynx.isc.org/${SUBDIR:Q}/ \
 		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/WWW/lynx/${SUBDIR:Q}/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	fredb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lynx.isc.org/
 COMMENT=	Alphanumeric display oriented World-Wide Web Client
 

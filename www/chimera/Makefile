@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:51 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/12/27 13:37:42 joerg Exp $
 #
 
 DISTNAME=	chimera-2.0a19
@@ -6,7 +6,7 @@ PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/
 
-MAINTAINER=	fredb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.chimera.org/
 COMMENT=	World Wide Web Browser for X Windows
 

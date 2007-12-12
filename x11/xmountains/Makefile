@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:46 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/02/22 19:01:28 wiz Exp $
 #
 
 DISTNAME=	xmountains_2.7
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www2.epcc.ed.ac.uk/~spb/xmountains/
 
-MAINTAINER=	fredb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www2.epcc.ed.ac.uk/~spb/xmountains/
 COMMENT=	Fractal terrain generator for X11
 
