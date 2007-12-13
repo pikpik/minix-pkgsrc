@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/12/12 20:03:48 adrianp Exp $
 #
 
 COMMENT=	ISC Dynamic Host Configuration Protocol (DHCP) Client
@@ -16,6 +16,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/client/dhclient.conf ${EGDIR}
 
-.include "../../wip/isc-dhcp/Makefile.common"
-.include "../../wip/isc-dhcp/buildlink3.mk"
+.include "../../net/isc-dhcp/Makefile.common"
+.include "../../net/isc-dhcp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
