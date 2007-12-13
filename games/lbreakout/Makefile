@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2006/05/18 12:10:12 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2006/06/12 16:28:09 wiz Exp $
 
 DISTNAME=	lbreakout-010315
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
@@ -15,10 +15,9 @@ CONFIGURE_ARGS+=	--disable-sound
 
 USE_LANGUAGES=	c c++
 
-pre-install:
-	${INSTALL_DATA_DIR} ${VARBASE:Q}/games
+REQD_DIRS=	${VARBASE}/games
+REQD_FILES_PERMS= ${PREFIX}/share/games/lbreakout/lbreakout.hscr ${VARBASE}/games/lbreakout.hscr ${GAMEOWN} ${GAMEGRP} ${GAMEDATAMODE}
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
