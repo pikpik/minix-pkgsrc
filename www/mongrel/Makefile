@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/04/30 18:28:05 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2007/04/30 19:24:11 minskim Exp $
 
 DISTNAME=	mongrel-1.0.1
 CATEGORIES=	www
@@ -16,7 +16,6 @@ DEPENDS+=	${RUBY_PKGPREFIX}-gem_plugin>=0.2.2:../../misc/ruby-gem_plugin
 DEPENDS+=	rubygems-[0-9]*:../../misc/rubygems
 
 REPLACE_RUBY_DIRS=	${WRKSRC}/examples
-REPLACE_FILE_PAT=	webrick_compare.rb
 RUBY_HAS_ARCHLIB=	yes
 
 PLIST_SRC=	${PKGDIR}/PLIST.common
