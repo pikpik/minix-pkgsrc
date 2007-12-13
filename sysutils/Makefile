@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.416 2007/11/08 20:09:49 jnemeth Exp $
+# $NetBSD: Makefile,v 1.417 2007/11/19 04:59:01 bjs Exp $
 #
 
 COMMENT=	System utilities
@@ -180,6 +180,7 @@ SUBDIR+=	open-vm-tools
 SUBDIR+=	osname
 SUBDIR+=	p5-File-Copy-Recursive
 SUBDIR+=	p5-File-Remove
+SUBDIR+=	p5-File-chmod
 SUBDIR+=	p5-GTop
 SUBDIR+=	p5-Lchown
 SUBDIR+=	p5-Parse-Syslog
