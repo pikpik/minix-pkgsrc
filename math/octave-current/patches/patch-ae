@@ -1,8 +1,8 @@
 $NetBSD$
 
---- libcruft/misc/Makefile.in.orig	2007-04-04 18:10:26.000000000 +0200
+--- libcruft/misc/Makefile.in.orig	2007-10-12 23:27:12.000000000 +0200
 +++ libcruft/misc/Makefile.in
-@@ -51,7 +51,7 @@ XCC = $(patsubst -O%, , $(CC))
+@@ -64,7 +64,7 @@ XCC = $(patsubst -O%, , $(CC))
  XALL_CFLAGS = $(patsubst -O%, , $(ALL_CFLAGS))
  
  machar.o: $(srcdir)/machar.c
