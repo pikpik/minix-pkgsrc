@@ -1,0 +1,12 @@
+# $NetBSD$
+#
+include/X11/Xdmcp.h
+lib/libXdmcp.a
+lib/libXdmcp.6.0.0.dylib
+lib/libXdmcp.6.0.0.dylib
+lib/libXdmcp.6.dylib
+lib/libXdmcp.dylib
+lib/libXdmcp.la
+lib/libXdmcp.so
+lib/libXdmcp.so.6
+lib/pkgconfig/xdmcp.pc
