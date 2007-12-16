@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/03/12 22:52:21 rmind Exp $
+# $NetBSD: Makefile,v 1.6 2007/12/07 21:33:31 drochner Exp $
 
 DISTNAME=	geany-0.12
 CATEGORIES=	devel
@@ -11,7 +11,7 @@ COMMENT=	Geany integrated development environment (IDE)
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		pkg-config msgfmt gmake perl:run
+USE_TOOLS+=		pkg-config msgfmt gmake perl:run intltool
 USE_LANGUAGES=		c c++
 USE_DIRS+=		xdg-1.1
 
