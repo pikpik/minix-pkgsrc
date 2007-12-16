@@ -1,8 +1,8 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2006/11/03 20:56:24 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2006/11/05 16:55:28 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${X11_TYPE} != "modular"
+.if ${X11_TYPE} != "modular" && !exists(${X11BASE}/lib/pkgconfig/xinerama.pc)
 .include "../../mk/x11.buildlink3.mk"
 .else
 
