@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/09/16 22:51:57 seb Exp $
 #
 
-DISTNAME=	Object-InsideOut-3.25
+DISTNAME=	Object-InsideOut-3.34
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Object/}
