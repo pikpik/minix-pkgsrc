@@ -1,11 +1,15 @@
-# $NetBSD: Darwin.mk,v 1.24 2007/07/29 05:19:44 jlam Exp $
+# $NetBSD: Darwin.mk,v 1.26 2007/10/19 13:41:35 rillig Exp $
 #
 # Variable definitions for the Darwin operating system.
 
 .if !defined(CPP) || ${CPP} == "cpp"
 CPP=		${CC} -E ${CPP_PRECOMP_FLAGS}
 .endif
+.if empty(MACHINE_PLATFORM:MDarwin-[0-8].*-i386)
+ECHO_N?=	/bin/echo -n
+.else
 ECHO_N?=	${ECHO} -n
+.endif
 LDD?=		/usr/bin/otool -L
 IMAKE_MAKE?=	${MAKE}		# program which gets invoked by imake
 PKGLOCALEDIR?=	share
