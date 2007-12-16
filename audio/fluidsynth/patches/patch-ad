@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/fluid_sys.h.orig	2003-03-11 11:57:51.000000000 -0500
+--- src/fluid_sys.h.orig	2007-11-11 20:30:20.000000000 +0100
 +++ src/fluid_sys.h
-@@ -261,7 +261,7 @@ extern fluid_profile_data_t fluid_profil
+@@ -268,7 +268,7 @@ extern fluid_profile_data_t fluid_profil
      sample data.
   */
  
