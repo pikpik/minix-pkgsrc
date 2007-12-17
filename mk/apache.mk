@@ -1,4 +1,4 @@
-# $NetBSD: apache.mk,v 1.23 2007/08/13 09:31:43 rillig Exp $
+# $NetBSD: apache.mk,v 1.24 2007/10/17 10:43:36 rillig Exp $
 #
 # This file is meant to be included by packages that require an apache
 # web server.
@@ -47,7 +47,7 @@ _SYS_VARS.apache=	PKG_APACHE APACHE_PKG_PREFIX
 
 .include "bsd.fast.prefs.mk"
 
-PKG_APACHE_DEFAULT?=		apache2
+PKG_APACHE_DEFAULT?=		apache22
 BUILD_DEFS+=			PKG_APACHE_DEFAULT
 BUILD_DEFS_EFFECTS+=		PKG_APACHE APACHE_PKG_PREFIX
 
