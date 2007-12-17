@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/05/27 02:58:40 obache Exp $
+# $NetBSD: Makefile,v 1.2 2007/06/12 21:04:56 joerg Exp $
 #
 
 DISTNAME=	mimetex
@@ -16,6 +16,8 @@ USE_LANGUAGES=	c
 
 WRKSRC=		${WRKDIR}
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 INSTALLATION_DIRS=	libexec/cgi-bin
 
 do-build:
@@ -24,6 +26,6 @@ do-build:
 			-o mimetex.cgi
 
 do-install:
-		${INSTALL_PROGRAM} ${WRKSRC:Q}/mimetex.cgi ${PREFIX}/libexec/cgi-bin
+		${INSTALL_PROGRAM} ${WRKSRC:Q}/mimetex.cgi ${DESTDIR}${PREFIX}/libexec/cgi-bin
 
 .include "../../mk/bsd.pkg.mk"
