@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.529 2007/12/11 09:13:18 ghen Exp $
+# $NetBSD: Makefile,v 1.530 2007/12/18 15:51:13 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -374,6 +374,8 @@ SUBDIR+=	www6to4
 SUBDIR+=	wwwcount
 SUBDIR+=	wwwoffle
 #SUBDIR+=	zope		# only contains Makefile fragments
+SUBDIR+=	zope-ejsplitter
+SUBDIR+=	zope-jamailhost
 SUBDIR+=	zope210
 SUBDIR+=	zope25
 SUBDIR+=	zope25-AbracadabraObject
