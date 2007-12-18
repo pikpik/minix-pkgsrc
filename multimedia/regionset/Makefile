@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2005/04/21 14:44:24 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/07 18:38:27 joerg Exp $
 #
 
 DISTNAME=		regionset-0.1
 CATEGORIES=		multimedia
 MASTER_SITES=		http://linvdr.org/download/regionset/
 
-MAINTAINER=		rumble@NetBSD.org
 HOMEPAGE=		http://linvdr.org/download/regionset/
 COMMENT=		Read and modify DVD drive region code
 
