@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:09 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2007/10/25 22:00:53 jlam Exp $
 #
 
 DISTNAME=	matchbox-0.9.5
@@ -20,12 +20,6 @@ DEPENDS+=	matchbox-panel-[0-9]*:../../x11/matchbox-panel
 DEPENDS+=	matchbox-panel-manager-[0-9]*:../../x11/matchbox-panel-manager
 DEPENDS+=	matchbox-themes-extra-[0-9]*:../../x11/matchbox-themes-extra
 
-EXTRACT_ONLY=	# empty
-NO_CHECKSUM=	yes
-NO_CONFIGURE=	yes
-NO_BUILD=	yes
-PLIST_SRC=	# empty (meta-package)
-
-do-install:	# empty
+META_PACKAGE=	yes
 
 .include "../../mk/bsd.pkg.mk"

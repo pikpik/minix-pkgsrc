@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/10/23 21:32:08 heinz Exp $
+# $NetBSD: Makefile,v 1.16 2007/10/25 22:00:55 jlam Exp $
 #
 
 DISTNAME=	netbsd-doc-1.2
@@ -10,8 +10,6 @@ DISTFILES=	# empty
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Meta-package including all packages to convert SGML->HTML
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=	opensp>=1.4:../../textproc/opensp
 DEPENDS+=	jade>=1.2.1nb3:../../textproc/jade
 DEPENDS+=	docbook>=4.0:../../textproc/docbook
@@ -21,12 +19,6 @@ DEPENDS+=	dsssl-docbook-modular>=1.54:../../textproc/dsssl-docbook-modular
 DEPENDS+=	html>=4.0:../../textproc/html
 DEPENDS+=	tidy>=20031002:../../www/tidy
 
-EXTRACT_ONLY=	# empty
-NO_CHECKSUM=	yes
-NO_CONFIGURE=	yes
-NO_BUILD=	yes
-PLIST_SRC=	# empty (meta-package)
-
-do-install:	# empty
+META_PACKAGE=	yes
 
 .include "../../mk/bsd.pkg.mk"
