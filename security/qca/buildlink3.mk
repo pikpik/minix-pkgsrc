@@ -12,12 +12,12 @@ BUILDLINK_PACKAGES+=	qca
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}qca
 
 .if !empty(QCA_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.qca+=	qca>=2.0.0
-BUILDLINK_ABI_DEPENDS.qca?=	qca>=2.0.0
+BUILDLINK_API_DEPENDS.qca+=	qca>=1.0
+BUILDLINK_ABI_DEPENDS.qca?=	qca>=1.0nb3
 BUILDLINK_PKGSRCDIR.qca?=	../../security/qca
 .endif	# QCA_BUILDLINK3_MK
 
-.include "../../x11/qt4-libs/buildlink3.mk"
-.include "../../x11/qt4-tools/buildlink3.mk"
+.include "../../x11/qt3-libs/buildlink3.mk"
+.include "../../x11/qt3-tools/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
