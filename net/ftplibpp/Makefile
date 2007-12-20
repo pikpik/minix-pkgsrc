@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/10/04 21:53:16 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2007/12/20 14:54:48 obache Exp $
 #
 
 DISTNAME=		ftplibpp-1.0.1
@@ -14,7 +14,9 @@ USE_TOOLS+=		gmake
 
 INSTALLATION_DIRS=	include lib share/doc/ftplibpp
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/ftplibpp.html ${PREFIX}/share/doc/ftplibpp
+	${INSTALL_DATA} ${WRKSRC}/ftplibpp.html ${DESTDIR}${PREFIX}/share/doc/ftplibpp
 
 .include "../../mk/bsd.pkg.mk"
