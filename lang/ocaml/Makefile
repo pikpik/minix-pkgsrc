@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2007/09/26 03:10:54 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.56 2007/11/03 22:38:12 rillig Exp $
 
 .include "Makefile.common"
 
@@ -14,7 +14,8 @@ MAKE_JOBS_SAFE=		no
 
 # Stub libraries for functions missing from base system.
 .if !empty(MACHINE_PLATFORM:MDarwin-*-powerpc) || ${OPSYS} == "DragonFly" || \
-    ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "SunOS"
+    ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "SunOS" || \
+    ${OPSYS} == "Linux"
 PLIST_SRC+=	${PKGDIR}/PLIST.stub
 .endif
 
