@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2007/03/24 19:21:33 joerg Exp $
+# $NetBSD: Makefile,v 1.70 2007/12/02 11:46:47 wiz Exp $
 
 DISTNAME=	wwwoffle-2.9a
 PKGREVISION=	1
@@ -10,7 +10,7 @@ MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.gedanken.demon.co.uk/wwwoffle/
 COMMENT=	WWW proxy with support for offline browsing
 
-USE_TOOLS+=	gmake gzip perl tar
+USE_TOOLS+=	gmake gzip perl tar lex
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+= --with-confdir=${PKG_SYSCONFDIR:Q}
