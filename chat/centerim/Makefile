@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2007/08/30 10:50:55 jnemeth Exp $
+# $NetBSD: Makefile,v 1.4 2007/10/11 13:09:10 jnemeth Exp $
 #
 
 DISTNAME=	centerim-4.22.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	chat
 MASTER_SITES=	http://www.centerim.org/download/releases/ \
 		http://transacid.de/centerim/releases/
