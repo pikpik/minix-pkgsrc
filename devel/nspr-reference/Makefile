@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2005/09/28 22:38:11 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2006/06/17 20:41:17 rillig Exp $
 #
 
 DISTNAME=		nspr-reference
 PKGNAME=		${DISTNAME}-0.1
 PKGREVISION=		1
 CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_MOZILLA:=../../nspr/doc/}
+MASTER_SITES=		${MASTER_SITE_MOZILLA_ALL:=nspr/doc/}
 
 MAINTAINER=		jschauma@NetBSD.org
 HOMEPAGE=		ftp://ftp.mozilla.org/pub/mozilla.org/nspr/doc/
