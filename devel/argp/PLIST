@@ -1,3 +1,3 @@
-@comment $NetBSD$
-lib/libargp.a
+@comment $NetBSD: PLIST,v 1.1.1.1 2007/03/24 16:57:41 agc Exp $
 include/argp.h
+lib/libargp.la
