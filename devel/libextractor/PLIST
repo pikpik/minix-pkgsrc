@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.9 2007/01/02 15:53:23 adam Exp $
+@comment $NetBSD: PLIST,v 1.10 2007/03/18 12:34:30 adam Exp $
 bin/extract
 include/extractor.h
+info/extractor.info
 lib/libextractor.la
 lib/libextractor/libextractor_asf.la
 lib/libextractor/libextractor_deb.la
