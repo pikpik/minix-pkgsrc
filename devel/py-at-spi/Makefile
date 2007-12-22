@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/09/21 13:03:33 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2007/10/31 19:52:35 drochner Exp $
 #
 
 DISTNAME=		at-spi-1.20.1
@@ -13,6 +13,7 @@ COMMENT=		Assistive Technology Service Provider Interface
 
 NO_BUILD=	yes
 PY_PATCHPLIST=	yes
+PYTHON_VERSIONS_ACCEPTED=	24
 
 PYATSPIDIR=	${PREFIX}/${PYSITELIB}/pyatspi
 do-install:
