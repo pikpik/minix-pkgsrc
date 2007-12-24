@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/12/12 21:52:38 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2007/01/30 21:00:31 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 NEXTAW_BUILDLINK3_MK:=	${NEXTAW_BUILDLINK3_MK}+
@@ -15,6 +15,18 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}neXtaw
 BUILDLINK_API_DEPENDS.neXtaw+=	neXtaw>=0.15.1
 BUILDLINK_ABI_DEPENDS.neXtaw+=	neXtaw>=0.15.1nb2
 BUILDLINK_PKGSRCDIR.neXtaw?=	../../x11/neXtaw
+
+.include "../../mk/bsd.fast.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+.PHONY: buildlink-neXtaw-inc-hack
+buildlink-neXtaw-cookie: buildlink-neXtaw-inc-hack
+ 
+buildlink-neXtaw-inc-hack: buildlink-directories
+	[ ! -h ${BUILDLINK_DIR}/include/X11/Xaw ] && \
+		${MKDIR} ${BUILDLINK_DIR}/include/X11 && \
+		${LN} -s neXtaw ${BUILDLINK_DIR}/include/X11/Xaw
+.endif
 .endif	# NEXTAW_BUILDLINK3_MK
 
 .include "../../mk/bsd.fast.prefs.mk"
