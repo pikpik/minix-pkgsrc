@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/12/20 20:17:47 jdolecek Exp $
+@comment $NetBSD: PLIST,v 1.2 2007/12/21 00:19:43 jdolecek Exp $
+lib/pkgconfig/qca2.pc
 qt4/include/QtCrypto/QtCrypto
 qt4/include/QtCrypto/qca.h
 qt4/include/QtCrypto/qca_basic.h
