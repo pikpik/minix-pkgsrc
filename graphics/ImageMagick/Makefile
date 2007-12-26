@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2007/02/06 14:52:46 adam Exp $
+# $NetBSD: Makefile,v 1.151 2007/06/16 21:58:08 heinz Exp $
 
 .include "Makefile.common"
 
@@ -47,6 +47,6 @@ CONFIGURE_ARGS+=	--without-wmf
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
