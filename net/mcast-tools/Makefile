@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/10/11 19:14:20 is Exp $
+# $NetBSD: Makefile,v 1.2 2007/12/25 17:39:39 is Exp $
 
 DISTNAME=	mcast-tools-20061214
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcast-tools/}
 
