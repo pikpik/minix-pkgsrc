@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/09/21 13:03:30 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2007/12/17 22:04:38 drochner Exp $
 #
 
 DISTNAME=		wv2-0.2.3
@@ -16,6 +16,12 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		c c++
+
+# DragonFly's iconv(3) doesn't pass the configure check
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "DragonFly"
+USE_GNU_ICONV=		yes
+.endif
 
 CONFIGURE_ARGS+=	--disable-debug
 CONFIGURE_ARGS+=	${CONFIGURE_ARGS.${ICONV_TYPE}-iconv}
