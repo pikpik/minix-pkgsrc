@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2006/08/05 13:38:26 adrianp Exp $
+# $NetBSD: Makefile,v 1.29 2007/01/07 09:14:09 rillig Exp $
 
 DISTNAME=		cfs-1.4.1
 PKGREVISION=		6
@@ -100,9 +100,11 @@ do-build:
 		${SH} ${CFS_BUILD_SCRIPT} ${BUILD_TARGET}
 
 post-install:
+	${INSTALL_MAN_DIR} ${PREFIX}/${PKGMANDIR}/man1
 	cd ${WRKSRC}; for file in *.1; do				\
 		${INSTALL_MAN} $${file} ${PREFIX}/${PKGMANDIR}/man1/$${file};	\
 	done
+	${INSTALL_MAN_DIR} ${PREFIX}/${PKGMANDIR}/man8
 	cd ${WRKSRC}; for file in *.8; do				\
 		${INSTALL_MAN} $${file} ${PREFIX}/${PKGMANDIR}/man8/$${file};	\
 	done
