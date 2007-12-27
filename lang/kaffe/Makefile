@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.69 2006/05/12 07:29:37 joerg Exp $
+# $NetBSD: Makefile,v 1.70 2007/07/10 21:16:43 minskim Exp $
 #
 
 .include "Makefile.common"
 
-PKGREVISION=	2
+PKGREVISION=	3
 
 CONFLICTS+=		kaffe-nox11-[0-9]*
 
@@ -19,16 +19,10 @@ MAKE_ENV+=		PKGLOCALEDIR=${PREFIX}/${PKGLOCALEDIR}
 JAVA_WRAPPERS=		appletviewer jar java javac javadoc javah javakey \
 			javap jdb rmic rmiregistry serialver
 
-CONF_FILES=		${JAVA_HOME}/jre/lib/security/java.security.default \
-			${JAVA_HOME}/jre/lib/security/java.security
-
 .include "../../mk/bsd.prefs.mk"
 
 UNLIMIT_RESOURCES=        datasize
 LIBS+= -lltdl
-
-PRINT_PLIST_AWK+=	/^java\/kaffe\/jre\/lib\/security\/java.security$$/ \
-				{ next; }
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 
