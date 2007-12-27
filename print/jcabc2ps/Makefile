@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/07/24 08:42:44 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2006/12/15 14:34:20 wiz Exp $
 #
 
 DISTNAME=	jcabc2ps-src
@@ -13,8 +13,12 @@ COMMENT=	Music typesetting program for abc
 
 WRKSRC=		${WRKDIR}/jcabc2ps
 
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/jcabc2ps ${PREFIX}/bin/.
-	${INSTALL_DATA} ${WRKSRC}/doc/jcabc2ps.d ${PREFIX}/${PKGMANDIR}/cat1/jcabc2ps.0
+	${INSTALL_PROGRAM} ${WRKSRC}/jcabc2ps ${DESTDIR}${PREFIX}/bin/.
+	${INSTALL_MAN} ${WRKSRC}/doc/jcabc2ps.d ${DESTDIR}${PREFIX}/${PKGMANDIR}/cat1/jcabc2ps.0
 
 .include "../../mk/bsd.pkg.mk"
