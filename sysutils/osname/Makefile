@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2004/12/03 15:15:10 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2007/12/27 11:55:51 obache Exp $
 #
 
 DISTNAME=		osname-1.1
@@ -10,8 +10,8 @@ MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Print canonical name of operating system
 
 NO_CONFIGURE=		yes
-BUILD_MAKE_FLAGS=	PREFIX=${PREFIX}
-INSTALL_MAKE_FLAGS=	PREFIX=${PREFIX}
+BUILD_MAKE_FLAGS+=	PREFIX=${PREFIX}
+INSTALL_MAKE_FLAGS+=	PREFIX=${PREFIX}
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
