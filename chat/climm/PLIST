@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2007/11/28 11:45:34 mjl Exp $
 bin/climm
+bin/micq
 man/de/man1/climm.1
 man/de/man5/climmrc.5
 man/de/man7/climmcmds.7
