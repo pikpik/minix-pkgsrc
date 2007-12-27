@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2006/04/17 13:46:46 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2007/11/17 12:04:14 rillig Exp $
 
 DISTNAME=	gimp-print-4.2.7
 PKGNAME=	gimp-print-cups-4.2.7
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gimp-print/}
 
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${EGDIR:Q}
 PKG_SYSCONFSUBDIR=	cups
 
 EGDIR=		${PREFIX}/share/examples/cups
-CONF_FILES=	${EGDIR}/config.types ${PKG_SYSCONFDIR}/config.types
+CONF_FILES=	${EGDIR}/command.types ${PKG_SYSCONFDIR}/command.types
 
 .include "../../print/cups/buildlink3.mk"
 .include "../../print/gimp-print-lib/buildlink3.mk"
