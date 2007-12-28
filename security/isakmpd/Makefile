@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2005/12/29 06:22:10 jlam Exp $
+# $NetBSD: Makefile,v 1.39 2007/11/17 13:40:15 wiz Exp $
 #
 
 DISTNAME=		isakmpd-20030903
@@ -18,7 +18,7 @@ WRKSRC=			${WRKDIR}/isakmpd
 
 BUILD_TARGET=		depend all
 
-MAKE_ENV+=		BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man
+MAKE_ENV+=		BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/${PKGMANDIR}
 
 PKG_SYSCONFSUBDIR=	isakmpd
 
