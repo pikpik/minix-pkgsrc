@@ -1,9 +1,15 @@
-# $NetBSD: builtin.mk,v 1.2 2006/04/10 18:05:16 jlam Exp $
+# $NetBSD: builtin.mk,v 1.3 2007/02/22 19:27:08 wiz Exp $
 
 BUILTIN_PKG:=	mit-krb5
 
+.include "../../mk/bsd.fast.prefs.mk"
+
 BUILTIN_FIND_FILES_VAR:=		H_MIT_KRB5 SH_KRB5_CONFIG
+.if empty(MACHINE_PLATFORM:MDarwin-9.*-*)
 BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5.h
+.else
+BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5/krb5.h
+.endif
 BUILTIN_FIND_GREP.H_MIT_KRB5=		Massachusetts Institute of Technology
 BUILTIN_FIND_FILES.SH_KRB5_CONFIG=	/usr/bin/krb5-config
 BUILTIN_FIND_GREP.SH_KRB5_CONFIG=	^[ 	]*--version)
