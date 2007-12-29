@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/02/09 20:10:50 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2007/12/09 10:55:37 drochner Exp $
 
 DISTNAME=		faad2-2.6.1
 PKGNAME=		xmms-faad-2.6.1
@@ -44,4 +44,5 @@ pre-configure:
 .include "../../audio/id3lib/buildlink3.mk"
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
