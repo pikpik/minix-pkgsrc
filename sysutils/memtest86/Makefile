@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2006/09/06 03:59:54 ben Exp $
+# $NetBSD: Makefile,v 1.18 2006/12/15 14:34:20 wiz Exp $
 #
 
-DISTNAME=		memtest86-3.2
+DISTNAME=		memtest86-3.4
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.memtest86.com/
 
@@ -15,6 +15,7 @@ USE_TOOLS+=		gmake
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/mdec
+	${INSTALL_DATA} ${WRKSRC}/memtest ${PREFIX}/mdec
 	${INSTALL_DATA} ${WRKSRC}/memtest.bin ${PREFIX}/mdec
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/memtest
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/memtest
