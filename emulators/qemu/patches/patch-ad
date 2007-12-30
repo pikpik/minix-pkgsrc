@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- block.c.orig	2007-02-05 23:01:54 +0000
++++ block.c
+@@ -29,8 +29,10 @@
+ #include <sys/stat.h>
+ #include <sys/ioctl.h>
+ #include <sys/queue.h>
++#ifndef __DragonFly__
+ #include <sys/disk.h>
+ #endif
++#endif
+ 
+ #define SECTOR_BITS 9
+ #define SECTOR_SIZE (1 << SECTOR_BITS)
