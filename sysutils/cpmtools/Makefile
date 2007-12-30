@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/30 12:04:16 obache Exp $
 #
 
 DISTNAME=		cpmtools-2.5
@@ -13,7 +13,7 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/cpmtools
 
-INSTALLATION_DIRS+=	share/cpmtools
+INSTALLATION_DIRS+=	bin share/cpmtools ${PKGMANDIR}/man1 ${PKGMANDIR}/man5
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
