@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- Makefile.orig	2003-04-24 14:14:07.000000000 +0000
++++ Makefile
+@@ -5,6 +5,5 @@ SRCS=	dialog.c tables.c
+ MAN=	i2ocfg.8
+ 
+ BINDIR=	${PREFIX}/libexec/cgi-bin
+-MANDIR=	${PREFIX}/man
+ 
+ .include <bsd.prog.mk>
