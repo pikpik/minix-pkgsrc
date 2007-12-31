@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libpthread_dbg.so.0
+${EMULSUBDIRSLASH}usr/lib/libpthread_dbg.so.0.0
+${EMULSUBDIRSLASH}usr/lib/libssh.so.5
+${EMULSUBDIRSLASH}usr/lib/libssh.so.5.0
+@dirrm ${EMULSUBDIRSLASH}usr/lib
+@dirrm ${EMULSUBDIRSLASH}usr
