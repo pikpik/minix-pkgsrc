@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.741 2007/12/22 11:15:52 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.742 2007/12/22 22:27:17 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -7403,7 +7403,11 @@ sub checkfile_PLIST($) {
 	foreach my $line (@{$lines}) {
 		my $text = $line->text;
 
-		checkline_trailing_whitespace($line);
+		if ($text =~ /\s$/) {
+			$line->log_error("pkgsrc does not support filenames ending in white-space.");
+			$line->explain_error(
+"Each character in the PLIST is relevant, even trailing white-space.");
+		}
 
 		# @foo directives.
 		if ($text =~ /^(?:\$\{[\w_]+\})?\@([a-z-]+)\s+(.*)/) {
