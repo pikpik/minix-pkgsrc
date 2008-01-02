@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2007/06/14 08:12:29 joerg Exp $
+# $NetBSD: Makefile,v 1.77 2007/08/05 21:03:16 adrianp Exp $
 
 DISTNAME=	audit-packages-1.46
 CATEGORIES=	security pkgtools
@@ -32,6 +32,15 @@ INSTALLATION_DIRS=	${CAT8DIR} ${MAN8DIR} sbin \
 MESSAGE_SRC=	${PKGDIR}/MESSAGE.DragonFly
 .else
 MESSAGE_SRC=	${PKGDIR}/MESSAGE
+.endif
+
+# If you're running NetBSD it's possible that you may already have
+# audit-packages installed as a part of the base OS.
+#
+.if ${OPSYS} == "NetBSD"
+.	if exists(/usr/sbin/audit-packages)
+PKG_FAIL_REASON+=	"audit-packages is already installed on this system"
+.	endif
 .endif
 
 CONF_FILES=	${PREFIX}/share/examples/audit-packages/audit-packages.conf \
