@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.64 2006/02/10 20:56:57 heinz Exp $
+# $NetBSD: Makefile,v 1.65 2006/03/02 10:41:41 martti Exp $
 
 PKGNAME=		vim-${VIM_VERSION}.${VIM_PATCHLEVEL}
 #PKGREVISION=		1
 
 COMMENT=		Vim editor (vi clone) without GUI
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"../../editors/vim-share/Makefile.common"
 
@@ -21,8 +23,8 @@ TEST_TARGET=		check
 
 post-install:
 .for f in rvim rview
-	${RM} -f ${PREFIX:Q}/bin/${f:Q}
-	${LN} -s vim ${PREFIX:Q}/bin/${f:Q}
+	${RM} -f ${DESTDIR:Q}${PREFIX:Q}/bin/${f:Q}
+	${LN} -s vim ${DESTDIR:Q}${PREFIX:Q}/bin/${f:Q}
 .endfor
 
 .include "../../devel/ncurses/buildlink3.mk"
