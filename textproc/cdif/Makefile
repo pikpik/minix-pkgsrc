@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:30:45 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2007/06/14 18:33:51 gdt Exp $
 #
 
 DISTNAME=		cdif-1.15
 CATEGORIES=		textproc
-MASTER_SITES=		ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/
+MASTER_SITES=		http://www.srekcah.org/~utashiro/perl/scripts/cdif/
 EXTRACT_SUFX=		# empty
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
+HOMEPAGE=		http://www.srekcah.org/~utashiro/perl/scripts/cdif/
 COMMENT=		Word context diff
 
 # XXX add cdif-license
