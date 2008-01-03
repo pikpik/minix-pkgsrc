@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2006/12/15 18:15:00 dsainty Exp $
+# $NetBSD: Makefile,v 1.24 2007/08/16 00:18:31 joerg Exp $
 
-DISTNAME=		proj-4.5.0
-PKGREVISION=		1
+DISTNAME=		proj-4.6.0
 CATEGORIES=		misc geography
-MASTER_SITES=		ftp://ftp.remotesensing.org/pub/proj/ \
-			http://dl.maptools.org/dl/proj/
+MASTER_SITES=		http://download.osgeo.org/proj/
+#MASTER_SITES=		ftp://ftp.remotesensing.org/pub/proj/ \
+#			http://dl.maptools.org/dl/proj/
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} proj-datumgrid-1.3${EXTRACT_SUFX}
 
 MAINTAINER=		gdt@NetBSD.org
