@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.903 2007/12/13 00:26:52 rhaen Exp $
+# $NetBSD: Makefile,v 1.904 2008/01/03 21:10:33 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -366,6 +366,7 @@ SUBDIR+=	p5-Algorithm-Diff
 SUBDIR+=	p5-Algorithm-Merge
 SUBDIR+=	p5-AnyEvent
 SUBDIR+=	p5-App-CLI
+SUBDIR+=	p5-App-Cmd
 SUBDIR+=	p5-AppConfig
 SUBDIR+=	p5-AppConfig-Std
 SUBDIR+=	p5-Array-Compare
