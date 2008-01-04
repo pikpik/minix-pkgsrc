@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2006/02/03 08:18:45 ghen Exp $
+# $NetBSD: Makefile,v 1.6 2007/07/04 20:54:59 jlam Exp $
 
 PKGNAME=		${DISTNAME:S/-/-clientonly-/}
 COMMENT=		The Network Backup Solution (client only)
 
 CONFLICTS=		bacula-[0-9]* bacula-client-[0-9]*
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTINFO_FILE=		${.CURDIR}/../../sysutils/bacula/distinfo
 PATCHDIR=		${.CURDIR}/../../sysutils/bacula/patches
