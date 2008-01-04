@@ -1,4 +1,4 @@
-# $NetBSD: bsd.install.mk,v 1.10 2007/03/09 03:15:33 rillig Exp $
+# $NetBSD: bsd.install.mk,v 1.11 2007/11/03 09:12:46 rillig Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and provides all
 # variables and targets related to installing packages.
@@ -21,7 +21,7 @@ _COOKIE.install=	${WRKDIR}/.install_done
 ###
 .PHONY: install
 .if !defined(NO_INSTALL)
-.  include "${PKGSRCDIR}/mk/install/install.mk"
+.  include "install.mk"
 .elif !target(install)
 .  if exists(${_COOKIE.install})
 install:

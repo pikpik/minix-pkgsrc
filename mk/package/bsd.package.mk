@@ -1,4 +1,4 @@
-# $NetBSD: bsd.package.mk,v 1.8 2006/10/08 20:31:38 rillig Exp $
+# $NetBSD: bsd.package.mk,v 1.9 2006/10/09 11:44:07 joerg Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and provides all
 # variables and targets related to binary packages.
@@ -16,7 +16,7 @@ _COOKIE.package=	${WRKDIR}/.package_done
 ###
 .PHONY: package
 .if !defined(NO_PACKAGE)
-.  include "${PKGSRCDIR}/mk/package/package.mk"
+.  include "package.mk"
 .elif !target(package)
 .  if exists(${_COOKIE.package})
 package:
