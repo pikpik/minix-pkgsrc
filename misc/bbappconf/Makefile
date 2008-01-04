@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.13 2007/01/07 09:14:00 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/15 21:53:20 joerg Exp $
 #
 
 DISTNAME=	bbappconf-0.0.2
 PKGREVISION=	1
 CATEGORIES=	misc x11 wm
-MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bbtools/}
 
 MAINTAINER=	jschauma@NetBSD.org
-HOMEPAGE=	http://bbtools.windsofstorm.net/
+HOMEPAGE=	http://bbtools.sourceforge.net/download.php?file=1
 COMMENT=	Configure the behaviour of an application under Blackbox
 
 USE_LANGUAGES=		c c++
