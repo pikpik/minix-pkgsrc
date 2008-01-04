@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2005/02/26 22:48:35 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2005/09/28 20:52:19 rillig Exp $
 #
 
 BOOST_PACKAGE=		docs
@@ -19,6 +19,7 @@ do-install:
 		-s':^libs/.*/test$$::' \
 		-s':^libs/.*/test/.*$$::' \
 		*.png *.css *.htm libs more ${DOCDIR}
+	${FIND} ${DOCDIR} -name "*.orig" -exec ${RM} "{}" \;
 	${FIND} ${DOCDIR} \
 		-type f -print | ${XARGS} ${CHOWN} ${SHAREOWN}:${SHAREGRP}
 	${FIND} ${DOCDIR} \
