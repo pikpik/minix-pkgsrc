@@ -1,4 +1,4 @@
-$NetBSD: patch-ag,v 1.8 2007/01/06 21:21:35 xtraeme Exp $
+$NetBSD: patch-ag,v 1.9 2007/12/30 17:12:45 joerg Exp $
 
 --- configure.orig	2007-02-05 23:01:54 +0000
 +++ configure
@@ -42,9 +42,9 @@ $NetBSD: patch-ag,v 1.8 2007/01/06 21:21:35 xtraeme Exp $
 +extern int foo;
 +EOF
 +if "$cc" -o $TMPE $TMPC -fno-stack-protector 2> /dev/null ; then
-+  stack_protector_present="no"
-+else
 +  stack_protector_present="yes"
++else
++  stack_protector_present="no"
 +fi
 +
  #
