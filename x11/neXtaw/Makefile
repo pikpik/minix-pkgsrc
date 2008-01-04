@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/01/30 21:00:31 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2007/06/20 16:49:18 jlam Exp $
 
 DISTNAME=	neXtaw-0.15.1
 PKGREVISION=	3
@@ -28,11 +28,11 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/FAQ ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/README.XAW3D ${DOCDIR}
 	${INSTALL_DATA_DIR} ${EGDIR}
-	cd ${WRKSRC}/doc/app-defaults; for file in *; do		\
+	set -e; cd ${WRKSRC}/doc/app-defaults; for file in *; do	\
 		case "$${file}" in					\
 		Makefile*)	continue ;;				\
 		esac;							\
-		${INSTALL_DATA} $${file} ${EGDIR};			\
+		${INSTALL_DATA} "$$file" ${EGDIR};			\
 	done
 
 .include "../../x11/libXext/buildlink3.mk"
