@@ -1,8 +1,8 @@
-$NetBSD: patch-az,v 1.9 2005/04/19 12:39:18 wiz Exp $
+$NetBSD: patch-az,v 1.1 2007/05/27 09:49:54 schmonz Exp $
 
---- src/modules.c.orig	2005-03-16 23:01:21.000000000 +0100
-+++ src/modules.c
-@@ -747,7 +747,8 @@ module `%s' is a request for a file in a
+--- src/modules.c.orig	2006-06-08 16:55:04.000000000 +0300
++++ src/modules.c	2008-01-02 14:46:53.000000000 +0200
+@@ -746,7 +746,8 @@
  		    cvs_output ("'\n", 0);
  		    cvs_flushout ();
  		}
