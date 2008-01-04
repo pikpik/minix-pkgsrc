@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.47 2007/04/14 21:40:18 markd Exp $
+@comment $NetBSD: PLIST,v 1.48 2007/05/23 13:05:34 markd Exp $
 bin/appletproxy
 bin/drkonqi
 bin/extensionproxy
@@ -53,6 +53,7 @@ bin/klipper
 bin/klocaldomainurifilterhelper
 bin/kmenuedit
 bin/knetattach
+${HAVE_COMPOSITE}bin/kompmgr
 bin/konqueror
 bin/konsole
 bin/kpager
