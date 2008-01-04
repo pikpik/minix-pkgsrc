@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/03/12 06:46:41 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/03/24 20:17:57 heinz Exp $
 #
 
 DISTNAME=		PerceptualDiff-1.0.1
@@ -14,14 +14,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
+USE_CMAKE=		yes
 
-CMAKEFLAGS.pdiff+=	-DCMAKE_INSTALL_PREFIX:PATH=${PREFIX}
-
-do-configure:
-	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
-	  ${LOCALBASE}/bin/cmake ${CMAKEFLAGS.pdiff} .
-
-.include "../../devel/cmake/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
