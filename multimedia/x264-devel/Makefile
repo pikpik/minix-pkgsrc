@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/12/02 13:04:12 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2007/12/27 22:33:51 joerg Exp $
 #
 
-SNAPSHOT_DATE=		20060127
+SNAPSHOT_DATE=		20071218
 
 DISTNAME=		x264-snapshot-${SNAPSHOT_DATE}-2245
 PKGNAME=		x264-devel-${SNAPSHOT_DATE}
