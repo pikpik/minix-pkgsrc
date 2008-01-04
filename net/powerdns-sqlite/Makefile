@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/13 09:36:24 ghen Exp $
 
 .include "../../net/powerdns/Makefile.backend"
 
 PKGNAME=		${DISTNAME:S/pdns/powerdns-sqlite/}
+PKGREVISION=		1
 COMMENT=		SQLite backend module for PowerDNS
 
 CONFIGURE_ARGS+=	--with-dynmodules="gsqlite"
