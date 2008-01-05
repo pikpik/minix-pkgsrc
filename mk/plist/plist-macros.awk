@@ -1,9 +1,11 @@
-# $NetBSD$
+# $NetBSD: plist-macros.awk,v 1.1 2007/10/31 21:09:03 rillig Exp $
 
 BEGIN {
 	IMAKE_MANINSTALL = getenv_or_die("IMAKE_MANINSTALL")
 }
 
+# XXX: Don't use this macro, since it is not yet supported.
+#
 # @imake-man dir basename extension
 #
 # Creates up to two PLIST entries for man pages of imake-style programs.
