@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.13 2007/02/22 19:27:06 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2007/12/02 11:33:18 wiz Exp $
 #
 
 DISTNAME=	amap-5.2
 CATEGORIES=	net security
-MASTER_SITES=	http://www.thc.org/releases/
+MASTER_SITES=	http://freeworld.thc.org/releases/
 
 MAINTAINER=	adrianp@NetBSD.org
-HOMEPAGE=	http://thc.org.segfault.net/thc-amap/
+HOMEPAGE=	http://freeworld.thc.org/thc-amap/
 COMMENT=	Applications and Services scanner
 
 HAS_CONFIGURE=	YES
