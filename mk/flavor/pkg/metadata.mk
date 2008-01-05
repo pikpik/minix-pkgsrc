@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.26 2007/08/14 21:32:17 jlam Exp $
+# $NetBSD: metadata.mk,v 1.27 2007/09/20 18:30:34 rillig Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -311,6 +311,7 @@ _DEPENDS_PLIST=		${WRKDIR}/.PLIST_deps
 
 ${_DEPENDS_PLIST}: ${PLIST}
 	${RUN} { \
+	${ECHO} "@name ${PKGNAME}"; \
 	${AWK} '$$1 == "full" { printf "@blddep %s\n@pkgdep %s\n", $$3, $$2; }' < ${_RDEPENDS_FILE}; \
 	${AWK} '$$1 == "bootstrap" || $$1 == "build" { printf "@blddep %s\n", $$3; }' < ${_RDEPENDS_FILE}; \
 	${CAT} ${PLIST}; } > ${.TARGET}
