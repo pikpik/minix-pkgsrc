@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.6952 2008/01/04 22:31:56 xtraeme Exp $
+$NetBSD: TODO,v 1.6953 2008/01/05 05:27:39 obache Exp $
 
 Suggested new packages
 ======================
@@ -951,7 +951,6 @@ Suggested package updates
 	o p5-IMAP-Admin-1.6.4
 	o p5-INET6-2.51
 	o p5-Image-Info-1.27
-	o p5-JSON-XS-1.52
 	o p5-Locale-Codes-2.07
 	o p5-Locale-Maketext-Fuzzy-0.10
 	o p5-Locale-Maketext-Lexicon-0.65
