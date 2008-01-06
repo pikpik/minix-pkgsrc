@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2006/04/17 13:46:24 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2006/12/27 13:37:36 joerg Exp $
 
 DISTNAME=	crack-attack-1.1.14
 PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	http://savannah.nongnu.org/download/crack-attack/
 
-MAINTAINER=	snj@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://savannah.nongnu.org/projects/crack-attack
 COMMENT=	Tetris Attack inspired game
 
