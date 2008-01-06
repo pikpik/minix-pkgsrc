@@ -1,8 +1,8 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/12/12 21:52:38 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2007/01/18 17:48:56 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${X11_TYPE} == "xorg"
+.if ${X11_TYPE} != "modular"
 .include "../../mk/x11.buildlink3.mk"
 .else
 
