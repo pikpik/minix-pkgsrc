@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.47 2007/10/25 14:58:29 obache Exp $
+# $NetBSD: Makefile,v 1.48 2007/11/16 05:30:13 bjs Exp $
 #
 
 DISTNAME=		tor-0.1.2.18
 CATEGORIES=		net security
-MASTER_SITES=		http://tor.eff.org/dist/
+MASTER_SITES=		http://www.torproject.org/dist/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://tor.eff.org/
+HOMEPAGE=		http://www.torproject.org/
 COMMENT=		Anonymizing overlay network for TCP
 
 .include "../../mk/bsd.prefs.mk"
