@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.536 2007/12/06 11:29:20 markd Exp $
+# $NetBSD: Makefile,v 1.537 2007/12/18 00:29:08 bjs Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -30,6 +30,7 @@ SUBDIR+=	desklaunch
 SUBDIR+=	deskmenu
 SUBDIR+=	devilspie
 SUBDIR+=	dfm
+SUBDIR+=	dmenu
 SUBDIR+=	dtx11session
 SUBDIR+=	dxpc
 SUBDIR+=	ebuilder
