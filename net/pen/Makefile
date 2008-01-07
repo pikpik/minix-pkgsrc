@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/09/26 21:46:27 xtraeme Exp $
+# $NetBSD: Makefile,v 1.9 2005/12/05 23:55:14 rillig Exp $
 #
 
 DISTNAME=	pen-0.15.0
@@ -9,6 +9,8 @@ MASTER_SITES=	http://siag.nu/pub/pen/					\
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://siag.nu/pen/
 COMMENT=	Load balancer for "simple" tcp based protocols
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 
