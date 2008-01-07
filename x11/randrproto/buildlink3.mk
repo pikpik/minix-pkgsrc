@@ -2,10 +2,6 @@
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${X11_TYPE} != "modular"
-.include "../../mk/x11.buildlink3.mk"
-.else
-
 BUILDLINK_DEPMETHOD.randrproto?=	build
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -25,5 +21,3 @@ BUILDLINK_PKGSRCDIR.randrproto?=	../../x11/randrproto
 .endif	# RANDRPROTO_BUILDLINK3_MK
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
-
-.endif

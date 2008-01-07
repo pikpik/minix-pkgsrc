@@ -2,10 +2,6 @@
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${X11_TYPE} != "modular"
-.include "../../mk/x11.buildlink3.mk"
-.else
-
 BUILDLINK_DEPMETHOD.xextproto?=	build
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
@@ -27,5 +23,3 @@ BUILDLINK_PKGSRCDIR.xextproto?=	../../x11/xextproto
 .include "../../x11/inputproto/buildlink3.mk"
 
 BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
-
-.endif

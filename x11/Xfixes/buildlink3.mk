@@ -2,10 +2,6 @@
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${X11_TYPE} != "modular"
-.include "../../mk/x11.buildlink3.mk"
-.else
-
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 XFIXES_BUILDLINK3_MK:=	${XFIXES_BUILDLINK3_MK}+
 
@@ -27,5 +23,3 @@ BUILDLINK_PKGSRCDIR.Xfixes?=	../../x11/Xfixes
 .include "../../x11/fixesproto/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
-
-.endif
