@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:29:19 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/12/07 07:54:38 hiramatsu Exp $
 #
 
 DISTNAME=		Array-Compare-1.14
@@ -10,7 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Array-Compare/
 COMMENT=		Perl extension for comparing arrays
 
-#DEPENDS+=		p5-Sub-Uplevel-[0-9]*:../../devel/p5-Sub-Uplevel
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_MODULE_TYPE=	Module::Build
