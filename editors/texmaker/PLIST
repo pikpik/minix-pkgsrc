@@ -39,9 +39,13 @@ share/texmaker/texmaker22x22.png
 share/texmaker/texmaker32x32.png
 share/texmaker/texmaker48x48.png
 share/texmaker/texmaker64x64.png
+share/texmaker/texmaker_de.qm
 share/texmaker/texmaker_fr.qm
+share/texmaker/texmaker_ru.qm
+share/texmaker/texmaker_zh.qm
 share/texmaker/up.gif
 share/texmaker/up_d.gif
 share/texmaker/usermanual_en.html
 share/texmaker/usermanual_fr.html
+share/texmaker/xpdf_texmaker_sh.txt
 @dirrm share/texmaker
