@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/09 14:50:31 ghen Exp $
+# $NetBSD: Makefile,v 1.20 2006/03/11 10:07:50 ghen Exp $
 #
 
 DISTNAME=	antiword-0.37
@@ -10,7 +10,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.winfield.demon.nl/index.html
 COMMENT=	Free MS Word to text and PostScript converter
 
-CONFLICTS=	siag-[0-9]*
+CONFLICTS=	siag<3.6.1
 
 USE_TOOLS+=	mktemp:run
 
