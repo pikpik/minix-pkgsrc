@@ -1,5 +1,6 @@
-# $NetBSD: Makefile.common,v 1.4 2007/09/18 03:17:24 smb Exp $
+# $NetBSD: Makefile.common,v 1.5 2007/09/18 06:40:36 wiz Exp $
 
+# used by mail/claws-mail/plugins.mk
 DISTNAME=	claws-mail-${CLAWS_VERSION}
 CATEGORIES=	mail news x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sylpheed-claws/}

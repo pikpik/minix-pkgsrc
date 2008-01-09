@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.5 2007/10/23 20:16:51 smb Exp $
+# $NetBSD$
 #
 
-DISTNAME=	attachwarner-0.2.10
-PKGNAME=	claws-mail-attachwarner-0.2.10
+DISTNAME=	tnef_parse-0.2.1
+PKGNAME=	claws-mail-tnef-0.2.1
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	smb@NetBSD.org
-COMMENT=	Warns if a message mentions an attachment without attaching files
+COMMENT=	Handles TNEF attachments from Outlook
 
-PLIST_SRC+=	PLIST
+#PLIST_SRC+=	PLIST
 
 DEPENDS+=	claws-mail-3.2.0{,nb[0-9]*}:../../mail/claws-mail
 
@@ -20,6 +20,8 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES+=	c
 
+.include "../../devel/glib2/buildlink3.mk"
+.include "../../mail/libytnef/buildlink3.mk"
 .include "../../mail/claws-mail/Makefile.vers"
 .include "../../mail/claws-mail/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
