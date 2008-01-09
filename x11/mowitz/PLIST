@@ -1,9 +1,11 @@
-@comment $NetBSD: PLIST,v 1.3 2004/09/22 08:10:06 jlam Exp $
+@comment $NetBSD$
 bin/mowitz-config
 include/Mowitz/Mowitz.h
 include/Mowitz/MwAnimator.h
 include/Mowitz/MwAnimatorP.h
 include/Mowitz/MwAnimatorTypes.h
+include/Mowitz/MwApplicationShell.h
+include/Mowitz/MwApplicationShellP.h
 include/Mowitz/MwBase.h
 include/Mowitz/MwBaseComp.h
 include/Mowitz/MwBaseCompP.h
@@ -87,6 +89,8 @@ include/Mowitz/MwTraverse.h
 include/Mowitz/MwUtils.h
 include/Mowitz/MwVSlider.h
 include/Mowitz/MwVSliderP.h
+include/Mowitz/MwXCC.h
+include/Mowitz/MwXCCP.h
 include/Mowitz/MwXFormat.h
 include/Mowitz/MwXutils.h
 lib/libMowitz.la
