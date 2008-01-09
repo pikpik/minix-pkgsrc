@@ -1,9 +1,9 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: famd.sh,v 1.1 2004/10/17 19:20:53 jmmv Exp $
 #
 # PROVIDE: famd
-# REQUIRE: DAEMON
+# REQUIRE: DAEMON rpcbind
 # KEYWORD: shutdown
 
 . /etc/rc.subr
