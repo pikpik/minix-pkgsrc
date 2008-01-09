@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: ploneversion.mk,v 1.1.1.1 2007/12/18 15:37:49 taca Exp $
 #
 
 .if !defined(_PLONEVERSION_MK)
@@ -41,7 +41,7 @@ PLONE_VERSION_ACCEPTED?=	${PLONE_VERSION_SUPPORTED}
 
 # current Plone version
 PLONE25_VERSION=		2.5.5
-PLONE3_VERSION=			3.0.4
+PLONE3_VERSION=			3.0.5
 
 BUILDLINK_API_DEPENDS.plone25?=	plone25>=${PLONE25_VERSION}
 BUILDLINK_API_DEPENDS.plone3?=	plone30>=${PLONE3_VERSION}
