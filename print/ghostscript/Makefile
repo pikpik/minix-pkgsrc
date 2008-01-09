@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.38 2007/11/03 22:39:40 rillig Exp $
+# $NetBSD: Makefile,v 1.39 2007/11/17 12:04:13 rillig Exp $
 
-DISTNAME=	ghostscript-8.60
-PKGREVISION=	1
+DISTNAME=	ghostscript-8.61
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ghostscript/}
 EXTRACT_SUFX=	.tar.bz2
