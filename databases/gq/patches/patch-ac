@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/filter.c.orig	2002-06-18 22:17:53.000000000 +0200
+--- src/filter.c.orig	2007-05-14 18:26:50.000000000 +0200
 +++ src/filter.c
-@@ -941,11 +941,11 @@ char *unindent_filter(char *indented)
+@@ -1036,11 +1036,11 @@ static char *unindent_filter(char *inden
  	       break;
  	  default:
  	       /* caught spaces before -- this is testing for \n etc */

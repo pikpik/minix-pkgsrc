@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/dt_password.c.orig	2003-11-03 22:07:57.000000000 +0100
+--- src/dt_password.c.orig	2007-05-14 18:26:51.000000000 +0200
 +++ src/dt_password.c
-@@ -45,6 +45,15 @@
+@@ -48,6 +48,15 @@
  #include <openssl/md5.h>
  #include <openssl/md4.h>
  #include <openssl/sha.h>
