@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2007/10/23 20:16:54 smb Exp $
+# $NetBSD: Makefile,v 1.6 2008/01/09 03:55:12 smb Exp $
 #
 
 DISTNAME=	rssyl-0.17
 PKGNAME=	claws-mail-rssyl-0.17
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
+PKGREVISION=	1
 
 MAINTAINER=	smb@NetBSD.org
 COMMENT=	Read RSS 1.0, 2.0 and Atom feeds in Claws-Mail
