@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/convcard
+bin/convtest
+bin/msynctool
+man/man1/convcard.1
+man/man1/msynctool.1
