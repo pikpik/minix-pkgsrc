@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/opensync/plugins/kdepim_lib.la
+lib/opensync/plugins/kdepim_sync.la
+share/opensync/defaults/kdepim-sync
