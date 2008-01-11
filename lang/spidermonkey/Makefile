@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/08/12 03:04:32 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2007/09/21 18:06:28 bjs Exp $
 
 DISTNAME=	js-1.60
 PKGNAME=	${DISTNAME:S/js/spidermonkey/}
@@ -13,6 +13,8 @@ COMMENT=	Standalone JavaScript implementation in C
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/js/src
+
+MAKE_JOBS_SAFE=	no
 
 NO_CONFIGURE=	yes
 USE_TOOLS+=	gmake
