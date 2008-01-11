@@ -1,4 +1,4 @@
-# $NetBSD: zopeversion.mk,v 1.2 2008/01/03 12:31:13 taca Exp $
+# $NetBSD: zopeversion.mk,v 1.3 2008/01/06 15:49:42 taca Exp $
 #
 
 .if !defined(_ZOPEVERSION_MK)
@@ -95,7 +95,6 @@ _ZOPE_VERSION_${zv}_OK=	yes
 # check what is installed
 .for zv in ${ZOPE_VERSION_SUPPORTED}
 .if exists(${LOCALBASE}/${ZOPE_COMMON}/zope${zv})
-#.if exists(${LOCALBASE}/zope${zv})
 _ZOPE_VERSION_${zv}_INSTALLED=	yes
 .endif
 .endfor
