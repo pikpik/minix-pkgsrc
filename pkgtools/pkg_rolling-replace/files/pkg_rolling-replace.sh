@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $NetBSD: pkg_rolling-replace.sh,v 1.14 2007/08/17 01:19:45 gdt Exp $
+# $NetBSD: pkg_rolling-replace.sh,v 1.15 2007/12/02 02:11:05 tnn Exp $
 #<license>
 # Copyright (c) 2006 BBN Technologies Corp.  All rights reserved.
 #
@@ -158,6 +158,7 @@ depgraph_installed()
 			print pkg" "pkg;				\
 			state=1;					\
 		}							\
+		/^\** PACKAGE MAY NOT BE DELETED \**$/ { state=3; }	\
 		/^./ {							\
 			if (state == 2) {				\
 				dep=$1; sub("-[0-9][^-]*$", "", dep);	\

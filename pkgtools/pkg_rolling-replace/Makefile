@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2007/08/17 01:19:45 gdt Exp $
+# $NetBSD: Makefile,v 1.15 2007/12/02 02:11:05 tnn Exp $
 
-DISTNAME=	pkg_rolling-replace-0.12
+DISTNAME=	pkg_rolling-replace-0.13
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
