@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/09/21 13:04:03 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2007/11/05 20:02:39 drochner Exp $
 #
 
-DISTNAME=	orca-2.20.1
+DISTNAME=	orca-2.20.3
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/orca/2.20/}
 EXTRACT_SUFX=	.tar.bz2
