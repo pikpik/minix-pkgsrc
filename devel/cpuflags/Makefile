@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.119 2007/09/11 05:03:30 bjs Exp $
+# $NetBSD: Makefile,v 1.120 2007/09/20 10:19:03 abs Exp $
 
-DISTNAME=	cpuflags-1.17
+DISTNAME=	cpuflags-1.18
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -16,6 +16,9 @@ NO_CONFIGURE=	yes
 
 do-extract:
 	${MKDIR} ${WRKSRC}
-	${CP} ${FILESDIR}/Makefile ${FILESDIR}/[a-z]* ${WRKSRC}
+	${CP} ${FILESDIR}/Makefile ${WRKSRC}
+	${CP} ${FILESDIR}/c* ${WRKSRC}
+	${CP} ${FILESDIR}/o* ${WRKSRC}
+	${CP} ${FILESDIR}/s* ${WRKSRC}
 
 .include "../../mk/bsd.pkg.mk"
