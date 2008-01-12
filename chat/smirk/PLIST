@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/smirk
+share/smirk/clientcmnds.hlp
+share/smirk/irccmnds.hlp
+share/smirk/keys.hlp
+@dirrm share/smirk
