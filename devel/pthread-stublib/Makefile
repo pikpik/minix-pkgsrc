@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/03/21 19:23:08 drochner Exp $
 
 DISTNAME=	pthread-stublib-1.0
 CATEGORIES=	devel
@@ -12,6 +12,10 @@ NO_CHECKSUM=	yes
 USE_LIBTOOL=	yes
 
 ONLY_FOR_PLATFORM= NetBSD-[12].*-*
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+INSTALLATION_DIRS=	lib
 
 do-extract:
 	${CP} ${FILESDIR}/pthread-stubs.c ${FILESDIR}/Makefile ${WRKSRC}
