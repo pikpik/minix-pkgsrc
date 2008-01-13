@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.35 2007/09/24 21:54:50 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.36 2007/10/06 06:12:19 taca Exp $
 #
 
 .if !defined(_RUBYVERSION_MK)
@@ -269,10 +269,10 @@ PLIST_SRC+=		${PKGDIR}/PLIST.common_end
 
 RUBY_PLIST_COMMENT_CMD= \
 	${ECHO} "@comment The following lines are automatically generated"
-RUBY_PLIST_FILES_CMD= ( cd ${PREFIX}; \
+RUBY_PLIST_FILES_CMD= ( cd ${DESTDIR}${PREFIX}; \
 	${FIND} ${RUBY_DYNAMIC_DIRS} \( -type f -o -type l \) -print ) | \
 	${SORT} -u
-RUBY_PLIST_DIRS_CMD= ( cd ${PREFIX}; \
+RUBY_PLIST_DIRS_CMD= ( cd ${DESTDIR}${PREFIX}; \
 	${FIND} ${RUBY_DYNAMIC_DIRS} -type d -print ) | ${SORT} -ru | \
 	${SED} -e 's|^|@dirrm |'
 RUBY_GENERATE_PLIST =	( \
