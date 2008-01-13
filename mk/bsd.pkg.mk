@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1932 2007/12/19 12:32:06 rillig Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1933 2008/01/01 14:20:20 obache Exp $
 #
 # This file is in the public domain.
 #
@@ -117,7 +117,7 @@ _INSTALL_UNSTRIPPED=	# set (flag used by platform/*.mk)
 ##### Non-overridable constants
 
 # Latest versions of tools required for correct pkgsrc operation.
-PKGTOOLS_REQD=		${_OPSYS_PKGTOOLS_REQD:U20051103}
+PKGTOOLS_REQD=		${_OPSYS_PKGTOOLS_REQD:U20071224}
 .if ${_USE_DESTDIR} == "user-destdir" && ${PKGTOOLS_REQD} < 20070802
 PKGTOOLS_REQD=	20070802
 .endif
