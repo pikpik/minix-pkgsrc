@@ -1,3 +1,0 @@
-@comment $NetBSD$
-include/libsetenv.h
-lib/libsetenv.la
