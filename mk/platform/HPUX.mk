@@ -1,8 +1,7 @@
-# $NetBSD: HPUX.mk,v 1.7 2007/08/02 00:11:45 tnn Exp $
+# $NetBSD: HPUX.mk,v 1.10 2007/10/19 13:41:35 rillig Exp $
 #
 # Variable definitions for the HP-UX operating system.
 
-CPP?=		/opt/langtools/lbin/cpp
 ECHO_N?=	/usr/bin/printf		# echo doesn't understand -n
 IMAKE_MAKE?=	${MAKE}			# program which gets invoked by imake
 PKGLOCALEDIR=	share
