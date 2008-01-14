@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.120 2007/11/29 13:49:11 wiz Exp $
+# $NetBSD: Makefile,v 1.121 2008/01/06 19:37:52 heinz Exp $
 #
 
-DISTNAME=		gnucash-2.2.1
-PKGREVISION=		3
+DISTNAME=		gnucash-2.2.3
 CATEGORIES=		finance
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gnucash/}
 
@@ -57,6 +56,7 @@ BUILDLINK_API_DEPENDS.pango+=	pango>=1.8.0
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../finance/libofx/buildlink3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
 .include "../../lang/perl5/buildlink3.mk"
 .include "../../misc/goffice/buildlink3.mk"
