@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITEARCHLIBDIR}/xml/libxml_so.${RUBY_DLEXT}
+${RUBY_SITELIBDIR}/xml/libxml.rb
+@dirrm ${RUBY_SITEARCHLIBDIR}/xml
+@dirrm ${RUBY_SITELIBDIR}/xml
