@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 21:06:54 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2006/11/19 01:10:24 wiz Exp $
 #
 
-DISTNAME=		libXpm-3.5.6
+DISTNAME=		libXpm-3.5.7
 CATEGORIES=		graphics x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
