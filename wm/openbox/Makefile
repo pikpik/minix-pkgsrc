@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.46 2007/11/25 12:41:36 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2008/01/14 23:07:10 tnn Exp $
 
-DISTNAME=	openbox-3.4.4
-PKGREVISION=	1
+DISTNAME=	openbox-3.4.5
 CATEGORIES=	wm x11
 MASTER_SITES=	http://icculus.org/openbox/releases/
 # PR pkg/36489
