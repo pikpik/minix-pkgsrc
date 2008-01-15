@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 22:27:45 joerg Exp $
 #
 
-DISTNAME=		libXcursor-1.1.8
+DISTNAME=		libXcursor-1.1.9
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
