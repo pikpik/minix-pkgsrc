@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/11/19 01:10:24 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/15 23:22:36 wiz Exp $
 #
 
 DISTNAME=		libXpm-3.5.7
@@ -20,6 +20,7 @@ PKGCONFIG_OVERRIDE+=	xpm.pc.in
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
