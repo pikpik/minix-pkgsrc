@@ -10,6 +10,15 @@ $NetBSD$
  #include <ctype.h>
  #ifdef XTHREADS
  #include <X11/Xthreads.h>
+@@ -215,7 +216,7 @@ static int TRANS(SocketINETClose) (Xtran
+ 
+ #ifdef UNIXCONN
+ 
+-#ifdef hpux
++#ifdef __hpux
+ 
+ #if defined(X11_t)
+ #define UNIX_PATH "/usr/spool/sockets/X11/"
 @@ -286,11 +287,6 @@ static int TRANS(SocketINETClose) (Xtran
   * that don't have IPv6 support.
   */
