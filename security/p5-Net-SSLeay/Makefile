@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2007/09/30 17:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2008/01/09 00:47:00 heinz Exp $
 
 DISTNAME=	Net-SSLeay-1.32
 PKGNAME=	p5-${DISTNAME:S/Net_/Net-/:S/.pm//}
@@ -26,6 +26,7 @@ MAKE_ENV+=		OPENSSL_PREFIX=${SSLBASE}
 MAKE_ENV+=		PERL_MM_USE_DEFAULT=1	# avoid network question
 MAKE_PARAMS=		--skipdeps
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
