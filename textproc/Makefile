@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.392 2007/12/12 08:35:53 obache Exp $
+# $NetBSD: Makefile,v 1.393 2008/01/12 20:39:22 dillo Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -342,6 +342,7 @@ SUBDIR+=	ruby-simple-rss
 SUBDIR+=	ruby-syntax
 SUBDIR+=	ruby-xmlparser
 SUBDIR+=	ruby-xmlscan
+SUBDIR+=	ruby18-libxml
 SUBDIR+=	sablotron
 SUBDIR+=	saxon
 SUBDIR+=	scew
