@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2007/12/15 11:06:12 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2008/01/15 21:43:31 joerg Exp $
 
-DISTNAME=	pbulk-0.18
+DISTNAME=	pbulk-0.19
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
