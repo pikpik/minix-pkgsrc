@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.23 2008/01/05 20:41:26 rillig Exp $
+# $NetBSD$
 
 BUILTIN_PKG:=	openssl
 
@@ -125,10 +125,10 @@ USE_BUILTIN.openssl=	${IS_BUILTIN.openssl}
 .    if defined(BUILTIN_PKG.openssl) && \
         !empty(IS_BUILTIN.openssl:M[yY][eE][sS])
 USE_BUILTIN.openssl=	yes
-.      for _dep_ in ${BUILDLINK_API_DEPENDS.openssl}
+.      for dep_ in ${BUILDLINK_API_DEPENDS.openssl}
 .        if !empty(USE_BUILTIN.openssl:M[yY][eE][sS])
 USE_BUILTIN.openssl!=							\
-	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.openssl:Q}; then \
+	if ${PKG_ADMIN} pmatch ${dep_:Q} ${BUILTIN_PKG.openssl:Q}; then \
 		${ECHO} yes;						\
 	else								\
 		${ECHO} no;						\
