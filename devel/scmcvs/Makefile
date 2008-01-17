@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2007/08/30 19:47:16 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/04 06:48:05 martti Exp $
 #
 
 DISTNAME=	cvs-1.11.22
+PKGREVISION=	1
 CATEGORIES=	devel scm
 MASTER_SITES=	http://ftp.gnu.org/non-gnu/cvs/source/stable/1.11.22/
 EXTRACT_SUFX=	.tar.bz2
@@ -14,6 +15,8 @@ COMMENT=	Concurrent Versions System
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes
+
+CONFIGURE_ARGS+=	--with-rsh=ssh
 
 CHECK_INTERPRETER_SKIP=	share/cvs/contrib/*
 
