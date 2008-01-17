@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/08/28 15:39:19 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2007/09/23 07:57:00 tnn Exp $
 #
 
 DISTNAME=	mrxvt-0.5.3
@@ -24,6 +24,7 @@ CONFIGURE_ARGS+=	--enable-24bits
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
+
 .if ${OPSYS} == "HPUX"
 CONFIGURE_ARGS+=	--disable-lastlog --disable-utmp --disable-wtmp
 .endif
@@ -42,8 +43,8 @@ INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR:Q}
 # Make mrxvt setuid root so that tty ownership setting and utmp logging
 # function correctly.
 #
-CONFIGURE_ARGS+=--enable-ttygid
-SPECIAL_PERMS=	${PREFIX}/bin/mrxvt ${SETUID_ROOT_PERMS}
+CONFIGURE_ARGS+=	--enable-ttygid
+SPECIAL_PERMS=		${PREFIX}/bin/mrxvt ${SETUID_ROOT_PERMS}
 .endif
 
 BUILDLINK_DEPMETHOD.libXt+=	build
