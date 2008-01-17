@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.26 2008/01/14 13:29:25 ghen Exp $
+# $NetBSD: options.mk,v 1.27 2008/01/16 14:21:43 ghen Exp $
 
 # Global and legacy options
 
@@ -84,7 +84,7 @@ AUXLIBS+=	-L${PGSQL_PREFIX}/lib -lpq \
 
 ###
 ### Cyrus SASL support for SMTP authentication.
-### (Dovcot SASL support is built in by default.)
+### (Dovecot SASL support is built in by default.)
 ###
 .if !empty(PKG_OPTIONS:Msasl)
 .  include "../../security/cyrus-sasl/buildlink3.mk"
