@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/04/11 21:47:20 tv Exp $
+# $NetBSD: Makefile,v 1.5 2007/05/18 10:03:31 peter Exp $
 #
 
 DISTNAME=		tls1.5.0-src
 PKGNAME=		tcl-tls-1.5.0
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tls/}
 

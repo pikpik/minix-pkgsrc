@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2007/09/20 21:37:36 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2007/09/21 13:03:28 wiz Exp $
 #
 
 DISTNAME=		sound-juicer-2.14.5
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		audio
 MASTER_SITES=		http://www.burtonini.com/computing/
 

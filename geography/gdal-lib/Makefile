@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2007/04/17 01:04:44 gdt Exp $
+# $NetBSD: Makefile,v 1.11 2007/08/16 00:42:20 joerg Exp $
 #
 
 DISTNAME=		gdal-1.4.0
 PKGNAME=		gdal-lib-1.4.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		geography
 MASTER_SITES=		http://www.gdal.org/dl/
 

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/07/08 22:39:02 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2006/07/08 23:10:38 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 GALE_BUILDLINK3_MK:=	${GALE_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}gale
 
 .if !empty(GALE_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.gale+=	gale>=0.99f
-BUILDLINK_ABI_DEPENDS.gale?=	gale>=0.99fnb1
+BUILDLINK_ABI_DEPENDS.gale?=	gale>=0.99fnb2
 BUILDLINK_PKGSRCDIR.gale?=	../../chat/gale
 .endif	# GALE_BUILDLINK3_MK
 

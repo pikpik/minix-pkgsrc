@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2006/05/21 13:20:46 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2006/07/22 04:46:14 rillig Exp $
 #
 
 DISTNAME=		mysqlcc-0.9.4-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_MYSQL:=MySQLCC/}
 

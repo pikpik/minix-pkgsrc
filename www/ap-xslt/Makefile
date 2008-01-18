@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2006/10/04 22:04:09 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2007/02/22 19:27:18 wiz Exp $
 
 DISTNAME=	modxslt-1.1
 PKGNAME=	ap13-xslt-1.1
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=modxslt/}
 

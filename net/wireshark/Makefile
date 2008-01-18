@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2007/12/15 13:53:27 tron Exp $
+# $NetBSD: Makefile,v 1.14 2007/12/19 14:26:07 tron Exp $
 
 DISTNAME=		wireshark-0.99.7
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.wireshark.org/download/src/ \
 			${MASTER_SITE_SOURCEFORGE:=wireshark/}

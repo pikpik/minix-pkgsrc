@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/10/21 07:47:25 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2007/02/22 19:01:24 wiz Exp $
 #
 
 PKGNAME=		rainbowcrack-1.2
 DISTNAME=		rainbowcrack-1.2-src
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.rainbowcrack.com/downloads/
 EXTRACT_SUFX=		.zip

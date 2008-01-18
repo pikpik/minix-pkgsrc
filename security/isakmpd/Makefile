@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2007/12/28 04:22:43 obache Exp $
+# $NetBSD: Makefile,v 1.41 2007/12/28 05:01:47 obache Exp $
 #
 
 DISTNAME=		isakmpd-20030903
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.NetBSD.org/pub/NetBSD/packages/distfiles/LOCAL_PORTS/
 

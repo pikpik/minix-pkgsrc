@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2005/12/29 06:22:09 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/14 01:14:33 jlam Exp $
 #
 
 DISTNAME=	AiCA-0.81
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://mars.elcom.nitech.ac.jp/security/
 

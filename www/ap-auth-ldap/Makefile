@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2006/05/31 18:22:26 ghen Exp $
+# $NetBSD: Makefile,v 1.30 2006/06/02 18:27:58 joerg Exp $
 
 DISTNAME=	auth_ldap-1.6.1
 PKGNAME=	ap13-auth-ldap-1.6.1
+PKGREVISION=	1
 SVR4_PKGNAME=	apldap
 CATEGORIES=	www databases
 MASTER_SITES=	http://www.rudedog.org/auth_ldap/

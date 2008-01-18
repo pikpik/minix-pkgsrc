@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2007/01/28 01:34:42 adrianp Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/22 19:01:24 wiz Exp $
 
 DISTNAME=	ike-scan-1.9
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.nta-monitor.com/tools/ike-scan/download/
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/02/22 19:26:56 wiz Exp $
 #
 
 PKGNAME=	nagios-plugin-pgsql-${PLUGINSVERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net sysutils databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

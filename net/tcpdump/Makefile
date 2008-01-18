@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2007/04/24 12:31:47 ghen Exp $
+# $NetBSD: Makefile,v 1.25 2007/08/02 15:16:51 taca Exp $
 
 DISTNAME=		tcpdump-3.9.7
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		http://www.tcpdump.org/release/
 
