@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.82 2006/11/03 19:22:55 joerg Exp $
+# $NetBSD: Makefile,v 1.83 2007/02/17 20:59:48 wiz Exp $
 #
 
 DISTNAME=	cvsync-0.24.19
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel scm
 MASTER_SITES=	ftp://ftp.cvsync.org/pub/cvsync/
 
