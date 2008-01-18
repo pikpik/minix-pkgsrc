@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.36 2007/12/17 19:31:29 drochner Exp $
+# $NetBSD: Makefile,v 1.37 2008/01/18 05:06:40 tnn Exp $
 
-DISTNAME=		gthumb-2.10.7
-PKGREVISION=		1
+DISTNAME=		gthumb-2.10.8
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gthumb/2.10/}
 
