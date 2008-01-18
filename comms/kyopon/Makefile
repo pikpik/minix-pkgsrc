@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.6 2006/06/26 06:29:25 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/07/13 11:52:28 itohy Exp $
 
-DISTNAME=		kyopon-0.4
+DISTNAME=		kyopon-0.5
 CATEGORIES=		comms
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		itohy@NetBSD.org
 #HOMEPAGE=
-COMMENT=		tool to manipulate data of Kyocera AIR-EDGE PHONE
+COMMENT=		tool to manipulate data of Kyocera PHS handset
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* DragonFly-*-*
 
