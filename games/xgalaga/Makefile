@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2006/12/27 13:37:37 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2007/03/24 19:21:24 joerg Exp $
 
 DISTNAME=		xgalaga-2.0.34
 PKGREVISION=		4
 CATEGORIES=		games x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Very fast true-to-the-original port of galaga for X11
 
 NO_SRC_ON_FTP=		"already in MASTER_SITE_LOCAL"

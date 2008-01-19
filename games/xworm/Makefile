@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:09:26 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2007/02/02 01:08:01 joerg Exp $
 
 DISTNAME=	xworm102
 PKGNAME=	xworm-1.02
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	games x11
 MASTER_SITES=	http://www.ekran.no/archive/x/
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Classic game with apples and hungry worm
 
 WRKSRC=		${WRKDIR}/XWorm

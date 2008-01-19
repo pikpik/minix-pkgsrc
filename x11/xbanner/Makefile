@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/02/05 23:11:45 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/12/15 20:33:05 joerg Exp $
 
 DISTNAME=		XBanner1.31
 PKGNAME=		xbanner-1.31
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		# empty
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hijinks.com/~spade/linux/XBanner/
 COMMENT=		Make XDM login screen look pretty
 

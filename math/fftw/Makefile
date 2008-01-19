@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.27 2006/07/21 07:07:17 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2007/12/21 22:35:42 joerg Exp $
 
 DISTNAME=	fftw-3.1.2
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.fftw.org/pub/fftw/ \
 		http://www.fftw.org/
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fftw.org/
 COMMENT=	Collection of fast C routines to compute DFTs
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/07/02 20:25:34 rillig Exp $
+# $NetBSD: Makefile,v 1.30 2006/08/31 18:04:08 rillig Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
@@ -7,7 +7,7 @@ CATEGORIES=		benchmarks
 MASTER_SITES=		ftp://ftp.bitmover.com/lmbench/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.bitmover.com/lm/lmbench/
 COMMENT=		Complete benchmark that gives a large amount of information
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/24 19:21:24 joerg Exp $
 
 DISTNAME=	jetpack
 PKGNAME=	jetpack-1.0
@@ -7,7 +7,7 @@ CATEGORIES=	games x11
 MASTER_SITES=	ftp://qiclab.scn.rain.com/pub/games/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Arcade action game for X Windows
 
 USE_IMAKE=	yes

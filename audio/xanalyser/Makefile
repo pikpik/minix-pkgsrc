@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/12/15 20:32:53 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2007/02/22 19:01:14 wiz Exp $
 #
 
 DISTNAME=	xanalyser-1.24
@@ -7,7 +7,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://arvin.schnell-web.net/xanalyser/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://arvin.schnell-web.net/xanalyser/
 COMMENT=	Frequency spectrum analyser for X
 

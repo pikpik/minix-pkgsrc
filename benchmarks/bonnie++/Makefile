@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/11 03:19:02 reed Exp $
+# $NetBSD: Makefile,v 1.20 2006/06/07 21:35:59 hira Exp $
 #
 
 DISTNAME=	bonnie++-1.03a
@@ -7,7 +7,7 @@ CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.coker.com.au/bonnie++/
 COMMENT=	Enhanced performance Test of Filesystem I/O
 

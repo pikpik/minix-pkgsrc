@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:02 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/02/22 19:26:47 wiz Exp $
 
 DISTNAME=		libffm.0.28
 PKGNAME=		libffm-0.28
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		ftp://ftp.unix-ag.org/user/nils/
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Fast alpha-optimized replacement for some libm routines
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

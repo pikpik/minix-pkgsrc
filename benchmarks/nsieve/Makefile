@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2004/01/20 12:08:12 agc Exp $
+# $NetBSD: Makefile,v 1.11 2004/07/30 15:50:38 minskim Exp $
 
 DISTNAME=		nsieve.c
 PKGNAME=		nsieve-1.2b
@@ -6,7 +6,7 @@ CATEGORIES=		benchmarks
 MASTER_SITES=		ftp://ftp.nosc.mil/pub/aburto/nsieve/
 EXTRACT_SUFX=		#empty
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Sieve of Eratosthenes benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

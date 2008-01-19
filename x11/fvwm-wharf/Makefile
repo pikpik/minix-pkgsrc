@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/12/27 13:37:42 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2007/01/07 09:14:16 rillig Exp $
 
 DISTNAME=		AfterStep-1.0
 PKGNAME=		fvwm-wharf-1.0
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		ftp://ftp.afterstep.org/pub/
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.afterstep.org/
 COMMENT=		Copy of AfterStep's Wharf compatible with fvwm2
 

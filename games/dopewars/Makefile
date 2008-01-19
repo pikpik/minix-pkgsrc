@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.36 2006/02/05 23:09:14 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2006/02/14 21:40:44 adam Exp $
 
 DISTNAME=	dopewars-1.5.12
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dopewars/}
 
-MAINTAINER=	root@garbled.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dopewars.sourceforge.net/
 COMMENT=	Make a fortune dealing drugs on the streets of New York
 

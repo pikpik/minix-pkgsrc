@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:53 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2007/02/02 14:35:20 joerg Exp $
 #
 
 DISTNAME=		xfinans-5.9
@@ -6,7 +6,7 @@ PKGREVISION=		2
 CATEGORIES=		finance x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/financial/accounting/}
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.io.com/~acroyear/xfinans/
 COMMENT=		Xfinans is a useful financial tracking, and account balancing tool
 

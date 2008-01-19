@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/02/02 17:38:36 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2007/02/22 19:30:03 wiz Exp $
 
 DISTNAME=		abuse_pd
 PKGNAME=		abuse-2.0
@@ -7,7 +7,7 @@ CATEGORIES=		games x11
 MASTER_SITES=		http://public.planetmirror.com/pub/abuse/
 DISTFILES=		${DISTNAME}.tgz abuse_data.tar.gz
 
-MAINTAINER=		root@garbled.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		# AWOL
 COMMENT=		Full color 320x200 arcade quality platform shooter
 
