@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/10/04 21:59:35 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/22 19:01:25 wiz Exp $
 
 DISTNAME=	xfsprogs-2.7.3.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -15,6 +15,7 @@ USE_TOOLS+=	gmake autoconf msgfmt
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS+=--enable-readline
 CONFIGURE_ENV+=	INSTALL_USER=${ROOT_USER} INSTALL_GROUP=${ROOT_GROUP}
+INSTALL_SH_OVERRIDE=	no
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 BUILD_TARGET=
