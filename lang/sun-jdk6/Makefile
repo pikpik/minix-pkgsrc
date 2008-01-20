@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/08/22 14:03:48 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/01/20 02:31:47 tnn Exp $
 
 DISTNAME=	jdk-6u4-linux-${DIST_ARCH}
 PKGNAME=	sun-jdk6-6.0.4
@@ -7,8 +7,7 @@ MASTER_SITES=	# empty
 DOWNLOAD_NAME=	JDK 6u4
 SHORT_NAME=	JDK
 
-DEPENDS+=	sun-jre6-6.0.3:../../lang/sun-jre6
-#DEPENDS+=	${PKGNAME_NOREV:S/jdk/jre/}*:../../lang/sun-jre6
+DEPENDS+=	${PKGNAME_NOREV:S/jdk/jre/}*:../../lang/sun-jre6
 
 WRKSRC=		${WRKDIR}/jdk1.6.0_04
 JAVA_WRAPPERS=	appletviewer apt extcheck idlj jar jarsigner \
