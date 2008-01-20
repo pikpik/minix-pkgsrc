@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/12/22 10:57:12 obache Exp $
+# $NetBSD: Makefile,v 1.26 2008/01/18 05:09:43 tnn Exp $
 #
 
 DISTNAME=		gtk-send-pr-0.4.9
@@ -14,6 +14,7 @@ COMMENT=		GTK+ based problem report tool
 USE_TOOLS+=		pkg-config
 
 CPPFLAGS.SunOS+=	-Dstrsep=strpbrk
+LDFLAGS.IRIX+=		-lgen
 
 .include "../../mail/libesmtp/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
