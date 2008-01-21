@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/07 09:13:49 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2007/04/01 01:58:37 obache Exp $
 
 DISTNAME=	kcc
 PKGNAME=	kcc-1.0
@@ -10,11 +10,13 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Kanji code converter with auto encoding detection
 
-MAKE_FLAGS+=	BINPATH=${PREFIX:Q}/bin
-MAKE_FLAGS+=	MANPATH=${PREFIX:Q}/man
-MAKE_FLAGS+=	JMANDIR=ja_JP.EUC
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+INSTALL_MAKE_FLAGS+=	BINPATH=${DESTDIR}${PREFIX}/bin
+INSTALL_MAKE_FLAGS+=	MANPATH=${DESTDIR}${PREFIX}/${PKGMANDIR}
+INSTALL_MAKE_FLAGS+=	JMANDIR=ja_JP.EUC
 
 INSTALL_TARGET=	install install.man
-INSTALLATION_DIRS=	${PKGMANDIR}/ja_JP.EUC/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/ja_JP.EUC/man1
 
 .include "../../mk/bsd.pkg.mk"
