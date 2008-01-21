@@ -1,4 +1,6 @@
-# $NetBSD: Makefile.common,v 1.22 2007/09/07 23:11:40 tron Exp $
+# $NetBSD: Makefile.common,v 1.23 2008/01/21 14:30:01 taca Exp $
+
+# used by devel/apr0/Makefile
 
 DISTNAME=		httpd-${APACHE_VERSION}
 EXTRACT_SUFX=		.tar.bz2
