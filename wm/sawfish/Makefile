@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2007/06/18 23:42:00 tnn Exp $
+# $NetBSD: Makefile,v 1.45 2007/09/14 15:04:48 tnn Exp $
 #
 
 DISTNAME=		sawfish-${SF_VERS}
-SF_VERS=		1.3.1
+SF_VERS=		1.3.2
 CATEGORIES=		x11 wm
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sawmill/}
 
