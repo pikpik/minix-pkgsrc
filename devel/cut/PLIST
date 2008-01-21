@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/cutgen-${PKGVERSION}
+include/${PKGNAME}/cut.h
+@dirrm include/${PKGNAME}
