@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.10 2006/10/04 12:07:53 obache Exp $
+# $NetBSD: Makefile.common,v 1.11 2006/10/17 13:18:52 dsainty Exp $
 #
 # This file is currently included by:
 #
@@ -33,7 +33,7 @@ PATCHDIR=		${.CURDIR}/../cyrus-sasl/patches
 
 .if defined(SASL_PLUGIN) && !empty(SASL_PLUGIN:M[yY][eE][sS])
 BUILDLINK_ABI_DEPENDS.cyrus-sasl+=	\
-			cyrus-sasl>=${PKGVERSION:S/nb*//}
+			cyrus-sasl>=${PKGVERSION:C/nb[0-9]*$//}
 .  include "../../security/cyrus-sasl/buildlink3.mk"
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.cyrus-sasl}/include/sasl
 .endif
