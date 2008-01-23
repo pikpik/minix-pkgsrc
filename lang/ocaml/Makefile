@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2007/11/03 22:38:12 rillig Exp $
+# $NetBSD: Makefile,v 1.57 2007/12/21 17:02:53 joerg Exp $
 
 .include "Makefile.common"
 
@@ -43,7 +43,7 @@ PLIST_SRC+=	${PKGDIR}/PLIST
 # to /usr/pkgsrc/devel/ocaml instead of ${WRKSRC}.  /bin/ksh, which
 # is what ${SH} is on SunOS, doesn't exhibit this behaviour.
 .if ${OPSYS} == "SunOS"
-INSTALL_MAKE_FLAGS+=	SHELL=${SH}
+INSTALL_MAKE_FLAGS+=	SHELL=${SH:Q}
 .endif
 
 .include "../../mk/bsd.pkg.mk"
