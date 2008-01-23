@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- nq/source/sys_unix.c.orig	2003-01-15 15:31:28.000000000 +0000
++++ nq/source/sys_unix.c
+@@ -69,6 +69,9 @@ shutdown (void)
+ 	fcntl (0, F_SETFL, fcntl (0, F_GETFL, 0) & ~O_NONBLOCK);
+ }
+ 
++extern void Key_Progs_Init (progs_t *pr);
++void (*x)() = Key_Progs_Init;
++
+ int
+ main (int c, const char *v[])
+ {

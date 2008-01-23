@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- libs/console/client.c.orig	2004-03-02 03:55:17.000000000 +0000
++++ libs/console/client.c
+@@ -84,7 +84,7 @@ static float       con_cursorspeed = 4;
+ 
+ static cvar_t *con_notifytime;				// seconds
+ static cvar_t *con_alpha;
+-static cvar_t *con_size;
++/* static */ cvar_t *con_size;
+ static cvar_t *con_speed;
+ static cvar_t *cl_chatmode;
+ 
