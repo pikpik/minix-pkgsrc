@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.27 2008/01/16 14:21:43 ghen Exp $
+# $NetBSD: options.mk,v 1.28 2008/01/17 13:47:01 martti Exp $
 
 # Global and legacy options
 
@@ -99,6 +99,8 @@ PLIST_SUBST+=	SASL=
 MESSAGE_SRC+=	${PKGDIR}/MESSAGE.sasl
 MESSAGE_SUBST+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
 MESSAGE_SUBST+=	SASLLIBDIR=${SASLLIBDIR}
+MAKE_DIRS+=	${SASLLIBDIR}
+CONF_FILES+=	${EXAMPLEDIR}/smtpd.conf ${SASLLIBDIR}/smtpd.conf
 .else
 PLIST_SUBST+=	SASL="@comment "
 CCARGS+=	-DDEF_SERVER_SASL_TYPE=\"dovecot\"

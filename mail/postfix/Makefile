@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.212 2008/01/16 14:21:39 ghen Exp $
+# $NetBSD: Makefile,v 1.213 2008/01/18 05:08:29 tnn Exp $
 
 DISTNAME=	postfix-2.4.6
 PKGREVISION=	2
@@ -117,10 +117,6 @@ CONF_FILES_PERMS=	# empty
 CONF_FILES_PERMS+=	${EXAMPLEDIR}/${i} ${PKG_SYSCONFDIR}/${i} \
 			${ROOT_USER} ${ROOT_GROUP} 755
 .endfor
-.if !empty(PKG_OPTIONS:Msasl)
-MAKE_DIRS+=		${SASLLIBDIR}
-CONF_FILES+=		${EXAMPLEDIR}/smtpd.conf ${SASLLIBDIR}/smtpd.conf
-.endif
 
 MAKE_ENV+=		DEBUG= # empty
 
