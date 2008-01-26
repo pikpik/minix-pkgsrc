@@ -1,0 +1,5 @@
+$NetBSD$
+
+If you are updating pbulk from earlier versions, please don't forget
+to update the configuration file. Otherwise unexpected results can
+occur.
