@@ -1,11 +1,12 @@
-# $NetBSD: options.mk,v 1.1 2005/05/31 21:35:13 wiz Exp $
+# $NetBSD: options.mk,v 1.1 2005/06/01 19:44:07 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.eterm
 
 .include "../../mk/bsd.prefs.mk"
 
+PKG_SUPPORTED_OPTIONS=	# none
 .if ${MACHINE_ARCH} == "i386"
-PKG_SUPPORTED_OPTIONS=	mmx
+PKG_SUPPORTED_OPTIONS+=	mmx
 .endif
 
 .include "../../mk/bsd.options.mk"
