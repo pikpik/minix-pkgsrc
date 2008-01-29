@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2006/04/13 18:23:36 jlam Exp $
+# $NetBSD: Makefile,v 1.94 2008/01/18 05:08:51 tnn Exp $
 
 DISTNAME=	wget-1.10.2
 PKGREVISION=	2
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_GNU:=wget/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/wget/wget.html
 COMMENT=	Retrieve files from the 'net via HTTP and FTP
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl
 
