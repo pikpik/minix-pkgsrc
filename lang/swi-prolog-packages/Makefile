@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/01/31 00:04:12 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2007/10/13 09:39:11 rillig Exp $
 
 .include "../../lang/swi-prolog-lite/Makefile.common"
 
@@ -12,6 +12,7 @@ GNU_CONFIGURE=		yes
 OVERRIDE_DIRDEPTH=	3
 USE_GNU_READLINE=	yes	# uses rl_event_hook() interface
 USE_TOOLS+=		gmake
+MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
 
