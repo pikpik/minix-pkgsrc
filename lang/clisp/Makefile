@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2007/11/03 22:36:06 rillig Exp $
+# $NetBSD: Makefile,v 1.65 2007/11/23 21:59:44 drochner Exp $
 
 DISTNAME=	clisp-2.41
 CATEGORIES=	lang
@@ -12,6 +12,7 @@ COMMENT=	CLISP, a Common Lisp implementation
 # Sparc64 has assembler code problems, see
 # http://sourceforge.net/tracker/index.php?func=detail&aid=952681&group_id=1355&atid=101355
 NOT_FOR_PLATFORM=	*-*-sparc64
+NOT_FOR_PLATFORM+=	*-*-arm
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
