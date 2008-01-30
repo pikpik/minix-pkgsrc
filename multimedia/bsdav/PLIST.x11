@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/avplay
+bin/bktrplay
+bin/bsdavplay
+man/cat1/avplay.0
+man/cat1/bktrplay.0
+man/cat1/bsdavplay.0
+man/man1/avplay.1
+man/man1/bktrplay.1
+man/man1/bsdavplay.1
