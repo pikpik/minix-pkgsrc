@@ -1,14 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/01/30 19:21:08 bjs Exp $
 #
 
 DISTNAME=	bsdav-1.4
 CATEGORIES=	multimedia
-MASTER_SITES=	http://www.NetBSD.org/~bjs/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	bjs@NetBSD.org
 HOMEPAGE=	http://jakemsr.trancell.org/
-COMMENT=	BSD Audio/Video library and tools by <jakemsr@openbsd.org>
+COMMENT=	BSD Audio/Video library and tools
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
