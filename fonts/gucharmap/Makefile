@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2007/09/21 13:03:41 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2008/01/11 13:51:41 drochner Exp $
 #
 
 DISTNAME=	gucharmap-1.10.2
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gucharmap/1.10/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://gucharmap.sourceforge.net/
+HOMEPAGE=	http://live.gnome.org/Gucharmap
 COMMENT=	Unicode/ISO10646 character map and font viewer
 
 USE_DIRS+=		gnome2-1.5
