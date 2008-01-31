@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2008/01/14 18:57:38 adam Exp $
+# $NetBSD: Makefile,v 1.90 2008/01/18 05:08:24 tnn Exp $
 
 DISTNAME=	exim-4.69
 PKGREVISION=	1
@@ -16,6 +16,7 @@ CONFLICTS+=	exim-exiscan-[0-9]*
 
 USE_TOOLS+=	perl:run
 INSTALLATION_DIRS+=	${PKGMANDIR}/man8
+BUILD_DEFS+=	VARBASE
 
 MAKE_ENV+=	SSLBASE=${SSLBASE:Q}
 MAKE_ENV+=	INST_CHOWN=${CHOWN:Q}
