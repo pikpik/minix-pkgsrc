@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2005/11/29 10:21:05 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2006/10/28 21:29:47 wiz Exp $
 #
 
 DISTNAME=	pkgse-0.3
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://imil.net/NetBSD/
 EXTRACT_SUFX=	.tgz
@@ -14,13 +15,13 @@ DEPENDS+=	p5-libwww>=5.76:../../www/p5-libwww
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_CONFIGURE=	yes
 NO_BUILD=	yes
 USE_TOOLS+=	perl:run
 
 INSTALLATION_DIRS=	bin
+REPLACE_PERL=	pkgse
 
 do-install:
-	@${INSTALL_SCRIPT} ${WRKSRC}/pkgse ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/pkgse ${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"

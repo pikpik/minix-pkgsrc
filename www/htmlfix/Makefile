@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:25 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/01/07 09:14:15 rillig Exp $
 #
 
 DISTNAME=		htmlfix-1.03
+PKGREVISION=		1
 CATEGORIES=		www
 MASTER_SITES=		http://www.mono.org/abs/tools/htmlfix/
 
@@ -12,6 +13,7 @@ DEPENDS+=	p5-HTML-FixEntities-[0-9]*:../../www/p5-HTML-FixEntities
 
 USE_TOOLS+=		perl:run
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+REPLACE_PERL=		htmlfix.pl
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/htmlfix.pl ${PREFIX}/bin/htmlfix
