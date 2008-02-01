@@ -1,4 +1,4 @@
-# $NetBSD: unprivileged.mk,v 1.13 2007/09/04 08:42:30 rillig Exp $
+# $NetBSD: unprivileged.mk,v 1.14 2007/10/20 06:57:17 dsainty Exp $
 #
 # This file collects definitions that are useful when using pkgsrc as an
 # unprivileged (non-root) user. It is included automatically by the
@@ -44,6 +44,15 @@
 #
 # XXX: How can the user say that some of the packages shouldn't override
 # the user and group names?
+#
+# PRIVILEGED_STAGES
+#	A list of phases (not stages) that are run as the privileged
+#	user. Some packages, when installed with just-in-time-su, leave
+#	temporary files in the working directory, so the "clean" phase
+#	must have enough priviledges to clean them up.
+#
+#	Possible: clean
+#	Default: (undefined)
 #
 # === System-defined variables ===
 #
