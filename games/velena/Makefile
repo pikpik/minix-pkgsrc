@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/07/25 22:55:35 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2007/07/29 01:35:57 rillig Exp $
 #
 
 DISTNAME=	veleng10
 PKGNAME=	velena-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://www.ce.unipr.it/~gbe/
 EXTRACT_SUFX=	.zip
