@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/09/02 08:38:07 rillig Exp $
+# $NetBSD: Makefile,v 1.45 2007/01/24 19:45:09 wiz Exp $
 
 DISTNAME=	jade-1.2.1
 PKGREVISION=	12
@@ -18,7 +18,7 @@ PATCH_DIST_STRIP=	-p1
 CONFLICTS+=	sp-[0-9]*
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake m4
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 

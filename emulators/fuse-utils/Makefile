@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/05/12 19:44:22 adam Exp $
+# $NetBSD: Makefile,v 1.13 2008/01/24 18:32:55 adam Exp $
 
 DISTNAME=	fuse-utils-0.9.0
 CATEGORIES=	emulators
@@ -9,6 +9,7 @@ HOMEPAGE=	http://fuse-emulator.sourceforge.net/
 COMMENT=	ZX Spectrum Emulator utilities
 
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		pkg-config
 
 LIBS+=			-lgcrypt
 LIBS+=			-lgpg-error
