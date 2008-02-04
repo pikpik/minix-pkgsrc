@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/01/27 06:11:24 obache Exp $
+# $NetBSD: Makefile,v 1.11 2008/02/03 03:01:51 obache Exp $
 #
 
 DISTNAME=		libupnp-1.6.5
@@ -25,5 +25,11 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 TEST_TARGET=		check
 
+.include "../../mk/bsd.prefs.mk"
 .include "../../mk/pthread.buildlink3.mk"
+
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/sys/pset.h)
+PTHREAD_LIBS+=		-lrt
+.endif
+
 .include "../../mk/bsd.pkg.mk"
