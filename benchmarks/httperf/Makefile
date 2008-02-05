@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/12/07 06:27:30 cjs Exp $
+# $NetBSD: Makefile,v 1.15 2007/01/03 05:50:15 cjs Exp $
 
 DISTNAME=	httperf-0.8
 CATEGORIES=	benchmarks www
@@ -11,6 +11,7 @@ COMMENT=	Popular web server benchmarking program
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes
+MAKE_JOBS_SAFE=		no
 USE_TOOLS+=		gmake
 
 .include "../../mk/bsd.prefs.mk"
