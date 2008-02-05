@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/08/11 15:22:31 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/12/02 13:04:14 wiz Exp $
 
 DISTNAME=		ghostscript-${GS_VERS}
 PKGREVISION=		10
@@ -23,7 +23,7 @@ CONFLICTS+=		hpijs-[0-9]*
 
 WRKSRC=			${WRKDIR}/gs${GS_VERS}
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake lex
 GNU_CONFIGURE=		yes
 
 REQD_DIRS+=		share/ghostscript
