@@ -55,6 +55,6 @@ do-configure:
 .endif
 
 boost-install-libs:
-	cd ${WRKSRC}/stage/lib && ${PAX} -rw -p p libboost* ${PREFIX}/lib
+	cd ${WRKSRC}/stage/lib && ${PAX} -rw -p p libboost* ${DESTDIR}${PREFIX}/lib
 
 .endif # ${BOOST_PACKAGE} == "meta-pkg"

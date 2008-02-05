@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2007/10/25 22:00:49 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2007/12/19 12:27:27 rillig Exp $
 #
 
 BOOST_PACKAGE=	meta-pkg
 BOOST_COMMENT=	(meta package)
 PKGREVISION=	3
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
