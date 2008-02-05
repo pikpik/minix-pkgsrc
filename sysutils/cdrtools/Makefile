@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/01/15 22:45:11 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2008/01/29 18:24:30 tnn Exp $
 
 DISTNAME=	cdrtools-2.01.01a37
 PKGNAME=	cdrtools-2.01.01.37
@@ -127,5 +127,4 @@ LDFLAGS+=	-lrt
 .endif
 
 .include "../../mk/oss.buildlink3.mk"
-.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
