@@ -26,14 +26,16 @@ EXTRACT_OPTS_ZIP=	-aqo
 INSTALLATION_DIRS+=	lib include
 
 .include "../../mk/bsd.prefs.mk"
-.include "../../mk/pthread.buildlink3.mk"
-
 .if ${OPSYS} == "NetBSD" && exists(/usr/include/sys/pset.h)
-PTHREAD_LIBS+=		-lrt
+RT_LIB_SCHED=		-lrt
+.else
+RT_LIB_SCHED=		# empty
 .endif
+MAKE_ENV+=		RT_LIB_SCHED=${RT_LIB_SCHED}
 
 pre-configure:
 	${CHMOD} 755 ${WRKSRC:Q}/configure
 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-$NetBSD: patch-ac,v 1.4 2004/10/05 04:06:30 ben Exp $
+$NetBSD$
 
 --- Makefile.in.orig	2003-02-11 23:24:56.000000000 +0100
 +++ Makefile.in
@@ -10,13 +10,13 @@ $NetBSD: patch-ac,v 1.4 2004/10/05 04:06:30 ben Exp $
 +CC = ${LIBTOOL} --mode=compile @CC@
  CFLAGS = @CFLAGS@ -Ipa_common
 -LIBS = @LIBS@
-+LIBS = ${LIBOSSAUDIO} -L@prefix@/lib ${COMPILER_RPATH_FLAG}@prefix@/lib @LIBS@
++LIBS = ${LIBOSSAUDIO} ${RT_LIB_SCHED} -L@prefix@/lib ${COMPILER_RPATH_FLAG}@prefix@/lib @LIBS@
  AR = @AR@
  RANLIB = @RANLIB@
  INSTALL = @INSTALL@
  SHARED_FLAGS = @SHARED_FLAGS@
 -DLL_LIBS = @DLL_LIBS@
-+DLL_LIBS = @DLL_LIBS@ ${LIBOSSAUDIO}
++DLL_LIBS = @DLL_LIBS@ ${LIBOSSAUDIO} ${RT_LIB_SCHED}
  
  OTHER_OBJS = @OTHER_OBJS@
  
