@@ -12,11 +12,11 @@ BUILDLINK_PACKAGES+=	ossp-js
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}ossp-js
 
 .if ${OSSP_JS_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.ossp-js+=	ossp-js>=1.6.20070208
+BUILDLINK_API_DEPENDS.ossp-js+=	ossp-js>=1.6.20070208nb1
 BUILDLINK_PKGSRCDIR.ossp-js?=	../../lang/ossp-js
+.  include "../../lang/ossp-js/libm.mk"
 .endif	# OSSP_JS_BUILDLINK3_MK
 
-.include "../../devel/readline/buildlink3.mk"
-.include "../../mk/dlopen.buildlink3.mk"
+.include "../../mk/dlopen/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
