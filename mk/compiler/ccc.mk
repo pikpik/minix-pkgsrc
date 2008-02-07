@@ -1,4 +1,4 @@
-# $NetBSD: ccc.mk,v 1.15 2006/12/15 12:46:24 martti Exp $
+# $NetBSD: ccc.mk,v 1.16 2007/03/15 22:33:42 rillig Exp $
 #
 # This is the compiler definition for the Compaq C Compilers.
 #
@@ -69,14 +69,14 @@ PREPEND_PATH+=	${_CCC_DIR}/bin
 .  if !target(${_CCC_${_var_}})
 override-tools: ${_CCC_${_var_}}
 ${_CCC_${_var_}}:
-	${_PKG_SILENT}${_PKG_DEBUG}${MKDIR} ${.TARGET:H}
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}${MKDIR} ${.TARGET:H}
+	${RUN}					\
 	(${ECHO} '#!${TOOLS_SHELL}';					\
 	 ${ECHO} 'exec /usr/bin/${.TARGET:T} "$$@"';			\
 	) > ${.TARGET}
-	${_PKG_SILENT}${_PKG_DEBUG}${CHMOD} +x ${.TARGET}
+	${RUN}${CHMOD} +x ${.TARGET}
 .    for _alias_ in ${_ALIASES.${_var_}:S/^/${.TARGET:H}\//}
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}					\
 	if [ ! -x "${_alias_}" ]; then					\
 		${LN} -f ${.TARGET} ${_alias_};				\
 	fi
