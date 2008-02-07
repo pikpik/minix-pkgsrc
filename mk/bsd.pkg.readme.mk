@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.readme.mk,v 1.15 2007/10/20 13:35:12 adrianp Exp $
+# $NetBSD: bsd.pkg.readme.mk,v 1.16 2008/01/03 20:51:21 adrianp Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and encapsulates the
 # code to produce README.html files in each package directory.
@@ -239,7 +239,7 @@ SED_HOMEPAGE_EXPR=	-e 's|%%HOMEPAGE%%||'
 #
 .PHONY: show-vulnerabilities-html
 show-vulnerabilities-html:
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}					\
 	if ${PKG_ADMIN} pmatch 'pkg_install<20070714' pkg_install-${PKGTOOLS_VERSION}; then \
 		if [ -f ${PKGVULNDIR}/pkg-vulnerabilities ]; then	\
 			${AWK} '/^${PKGBASE}[-<>=]+[0-9]/ { gsub("\<", "\\&lt;", $$1);	\

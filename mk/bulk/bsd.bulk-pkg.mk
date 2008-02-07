@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.bulk-pkg.mk,v 1.147 2007/12/02 12:58:25 wiz Exp $
+#	$NetBSD: bsd.bulk-pkg.mk,v 1.148 2008/01/04 15:49:07 rillig Exp $
 
 #
 # Copyright (c) 1999, 2000 Hubert Feyrer <hubertf@NetBSD.org>
@@ -550,7 +550,7 @@ bulk-package:
 	fi;								\
 	exit $$exitcode
 .if ${BULKFILESDIR} != ${PKGSRCDIR}
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}					\
 	${RMDIR} ${_BULK_PKGLOGDIR:Q} 2>/dev/null 1>&2 || ${TRUE}
 .endif
 

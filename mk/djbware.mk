@@ -1,4 +1,4 @@
-# $NetBSD: djbware.mk,v 1.19 2007/08/13 05:01:18 rillig Exp $
+# $NetBSD: djbware.mk,v 1.20 2007/10/17 10:43:37 rillig Exp $
 #
 # Makefile fragment for packages with djb-style build machinery
 #
@@ -55,7 +55,7 @@ INSTALL_TARGET?=	setup check ${DJB_INSTALL_TARGETS}
 
 .if !defined(NO_CONFIGURE) && !target(do-configure)
 do-configure:
-	${_PKG_SILENT}${_PKG_DEBUG}cd ${DJB_CONFIG_DIR};		\
+	${RUN}cd ${DJB_CONFIG_DIR};		\
 	for i in conf-*; do ${CP} $${i} $${i}.orig_dist; done;		\
 	[ -f ${DJB_CONFIG_HOME} ] && \
 		${ECHO} ${DJB_CONFIG_PREFIX} > ${DJB_CONFIG_HOME};	\

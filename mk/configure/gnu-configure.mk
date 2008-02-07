@@ -1,4 +1,4 @@
-# $NetBSD: gnu-configure.mk,v 1.5 2007/07/12 18:59:15 jlam Exp $
+# $NetBSD: gnu-configure.mk,v 1.6 2007/08/01 16:14:17 joerg Exp $
 
 _VARGROUPS+=			gnu-configure
 _USER_VARS.gnu-configure=	# none
@@ -89,14 +89,14 @@ configure-scripts-override:
 	@${STEP_MSG} "Modifying GNU configure scripts to avoid --recheck"
 .if defined(CONFIGURE_SCRIPTS_OVERRIDE) && !empty(CONFIGURE_SCRIPTS_OVERRIDE)
 	@echo HERE
-	${_PKG_SILENT}${_PKG_DEBUG}set -e;				\
+	${RUN} \
 	cd ${WRKSRC};							\
 	for file in ${CONFIGURE_SCRIPTS_OVERRIDE}; do			\
 		${TEST} -f "$$file" || continue;			\
 		${_SCRIPT.${.TARGET}};					\
 	done
 .else
-	${_PKG_SILENT}${_PKG_DEBUG}set -e;				\
+	${RUN} \
 	cd ${WRKSRC};							\
 	depth=0; pattern=${CONFIGURE_SCRIPT:T};				\
 	while ${TEST} $$depth -le ${OVERRIDE_DIRDEPTH.configure}; do	\
