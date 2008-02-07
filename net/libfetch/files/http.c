@@ -1,4 +1,4 @@
-/*	$NetBSD: http.c,v 1.1.1.1 2008/02/07 01:48:23 joerg Exp $	*/
+/*	$NetBSD: http.c,v 1.2 2008/02/07 16:14:44 joerg Exp $	*/
 /*-
  * Copyright (c) 2000-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -712,7 +712,11 @@ http_connect(struct url *URL, struct url *purl, const char *flags)
 	    fetch_ssl(conn, verbose) == -1) {
 		fetch_close(conn);
 		/* grrr */
+#ifdef EAUTH
 		errno = EAUTH;
+#else
+		errno = EPERM;
+#endif
 		fetch_syserr();
 		return (NULL);
 	}
