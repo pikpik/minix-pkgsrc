@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.417 2007/11/19 04:59:01 bjs Exp $
+# $NetBSD: Makefile,v 1.418 2007/12/13 00:28:02 rhaen Exp $
 #
 
 COMMENT=	System utilities
@@ -70,6 +70,7 @@ SUBDIR+=	dirvish
 SUBDIR+=	dmassage
 SUBDIR+=	dmesg2gif
 SUBDIR+=	dmidecode
+SUBDIR+=	dmsdos
 SUBDIR+=	dog
 SUBDIR+=	dptutil
 SUBDIR+=	duplicity
