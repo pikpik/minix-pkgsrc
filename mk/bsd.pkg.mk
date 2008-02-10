@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1935 2008/01/16 01:01:26 joerg Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1936 2008/02/07 21:36:13 rillig Exp $
 #
 # This file is in the public domain.
 #
@@ -452,6 +452,15 @@ USE_LANGUAGES?=		# empty
 # named in PKGSRC_COMPILER.
 #
 .include "compiler.mk"
+
+#Fake up a home directory
+WRAPPER_TARGETS+=	fake-home
+FAKEHOMEDIR=		${WRKDIR}/.home
+ALL_ENV+=		HOME=${FAKEHOMEDIR}
+.PHONY: fake-home
+fake-home: ${FAKEHOMEDIR}
+${FAKEHOMEDIR}:
+	${RUN} ${MKDIR} ${.TARGET}
 
 .include "wrapper/bsd.wrapper.mk"
 
