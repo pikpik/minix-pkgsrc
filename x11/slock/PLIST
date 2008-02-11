@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/slock
+share/doc/slock/README
+@dirrm share/doc/slock
