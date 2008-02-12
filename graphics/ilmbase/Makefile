@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/30 21:50:22 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/02/03 02:38:13 heinz Exp $
 
 DISTNAME=	ilmbase-1.0.1
 CATEGORIES=	graphics
@@ -15,6 +15,7 @@ USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 TEST_TARGET=		check
+LIBS.SunOS=		-lm
 
 PKGCONFIG_OVERRIDE=	IlmBase.pc.in
 PTHREAD_OPTS=		require
