@@ -1,4 +1,8 @@
-# $NetBSD: Makefile.common,v 1.5 2007/11/26 11:23:21 obache Exp $
+# $NetBSD: Makefile.common,v 1.6 2008/01/03 12:50:52 obache Exp $
+#
+# used by textproc/p5-native-hyperestraier/Makefile
+# used by textproc/ruby-native-hyperestraier/Makefile
+# used by textproc/ruby-pure-hyperestraier/Makefile
 
 DISTNAME=	hyperestraier-${HYPERESTRAIER_VERSION}
 CATEGORIES=	japanese textproc www
