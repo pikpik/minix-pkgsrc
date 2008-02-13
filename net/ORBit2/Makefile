@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.59 2007/09/18 19:10:21 drochner Exp $
+# $NetBSD: Makefile,v 1.60 2007/10/31 19:48:32 drochner Exp $
 #
 
-DISTNAME=		ORBit2-2.14.10
+DISTNAME=		ORBit2-2.14.12
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/ORBit2/2.14/}
 EXTRACT_SUFX=		.tar.bz2
@@ -48,6 +48,9 @@ PRINT_PLIST_AWK+=	/^@dirrm share\/idl$$/ \
 				  " 2>/dev/null || $${TRUE}"; next; }
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.8.0
+
+# needs interaction
+#TEST_TARGRT=	check
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../net/libIDL/buildlink3.mk"
