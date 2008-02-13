@@ -1,19 +1,23 @@
-# $NetBSD: Makefile,v 1.28 2006/08/03 18:48:59 drochner Exp $
-#
+# $NetBSD$
 
-DISTNAME=	libgdiplus-1.1.13.6
+DISTNAME=	libgdiplus-${MONO_VERSION}
 CATEGORIES=	graphics
-MASTER_SITES=	http://go-mono.com/sources/libgdiplus-1.1/
+MASTER_SITES=	http://go-mono.com/sources/libgdiplus/
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Implementation of the GDI+ API
+
+.include "../../lang/mono/Makefile.version"
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		autoconf gmake pkg-config
 USE_LIBTOOL=		yes
+USE_LANGUAGES+=		c c++
 PKGCONFIG_OVERRIDE+=	libgdiplus.pc.in
-PKGCONFIG_OVERRIDE+=	cairo/cairo.pc.in
+PKGCONFIG_OVERRIDE+=	cairo/src/cairo.pc.in
+PKGCONFIG_OVERRIDE+=	cairo/src/cairo-backend.pc.in
 GNU_CONFIGURE=		yes
 
 BUILDLINK_API_DEPENDS.freetype2+=	freetype2>=2.1.5
@@ -31,6 +35,5 @@ BUILDLINK_TRANSFORM+=		rm:-Werror
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
-
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
