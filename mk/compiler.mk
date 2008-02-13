@@ -1,4 +1,4 @@
-# $NetBSD: compiler.mk,v 1.64 2007/10/17 10:43:37 rillig Exp $
+# $NetBSD: compiler.mk,v 1.65 2008/02/07 21:36:13 rillig Exp $
 #
 # This Makefile fragment implements handling for supported C/C++/Fortran
 # compilers.
@@ -66,6 +66,7 @@
 #	...
 #	.endif
 #
+# Keywords: compiler
 
 .if !defined(BSD_COMPILER_MK)
 BSD_COMPILER_MK=	defined
