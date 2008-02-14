@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix sanity check in MM_permission (from OSSP CVS).
+
+--- mm_global.c.orig	2006-08-10 14:59:54.000000000 -0400
++++ mm_global.c
+@@ -61,7 +61,7 @@ int MM_create(size_t size, const char *f
+ 
+ int MM_permission(mode_t mode, uid_t owner, gid_t group)
+ {
+-    if (mm_global != NULL)
++    if (mm_global == NULL)
+         return -1;
+     return mm_permission(mm_global, mode, owner, group);
+ }
