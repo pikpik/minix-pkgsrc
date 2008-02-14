@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.34 2007/11/30 21:55:04 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2008/01/18 05:06:26 tnn Exp $
 
-DISTNAME=	kmysqladmin-0.7.0
-PKGREVISION=	11
+DISTNAME=	kmysqladmin-0.7.2
 CATEGORIES=	databases kde
 MASTER_SITES=	http://www.alwins-world.de/programs/download/kmysqladmin/
 
@@ -10,8 +9,8 @@ HOMEPAGE=	http://www.alwins-world.de/programs/kmysqladmin/
 COMMENT=	MySQL administration GUI
 
 USE_LANGUAGES=		c c++
-USE_LIBTOOL=		YES
-GNU_CONFIGURE=		YES
+USE_LIBTOOL=		yes
+GNU_CONFIGURE=		yes
 
 MYSQLDIR=		${BUILDLINK_PREFIX.mysql-client}
 CONFIGURE_ARGS+=	--with-mysql-include=${MYSQLDIR}/include/mysql
