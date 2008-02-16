@@ -1,6 +1,6 @@
 #!@PERL5@
 #
-# $NetBSD: patchdiff.pl,v 1.7 2005/12/13 12:05:08 wiz Exp $
+# $NetBSD: patchdiff.pl,v 1.8 2007/07/12 15:35:43 joerg Exp $
 #
 # patchdiff: compares a set of patches patch-aa, patch-ab, ... in
 #   $WRKDIR/.newpatches in the with another set in patches.
@@ -27,6 +27,7 @@ sub getfilename {
 	close(handle);
 	$_ = $1;
 	chomp();
+	s/^\.\///; # ignore leading "./", if any.
 	return $_;
      }
      close(handle);
