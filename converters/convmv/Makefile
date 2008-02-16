@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/01/14 16:25:25 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/02/11 23:28:45 heinz Exp $
 
 DISTNAME=		convmv-1.12
 CATEGORIES=		converters
@@ -13,6 +13,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		# empty
 USE_TOOLS+=		pax perl:run
+
+#LICENSE=		gnu-gplv2 or gnu-gplv3
 
 MANCOMPRESSED=		yes
 NO_BUILD=		yes
