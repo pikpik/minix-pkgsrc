@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2007/08/05 11:10:11 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2008/01/16 03:32:59 tnn Exp $
 
-DISTNAME=		posix_headers-0.5
+DISTNAME=		posix_headers-0.6
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty
