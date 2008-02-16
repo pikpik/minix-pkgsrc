@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/transmission-daemon
+bin/transmission-proxy
+bin/transmission-remote
+bin/transmissioncli
+man/man1/transmission-daemon.1
+man/man1/transmission-proxy.1
+man/man1/transmission-remote.1
+man/man1/transmissioncli.1

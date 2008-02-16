@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2008/01/18 05:08:39 tnn Exp $
+# $NetBSD: Makefile,v 1.23 2008/01/30 13:04:01 tnn Exp $
 #
-DISTNAME=		transmission-1.03
-PKGNAME=		Transmission-1.03
+DISTNAME=		transmission-1.05
+PKGNAME=		Transmission-1.05
 CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
 EXTRACT_SUFX=		.tar.bz2
@@ -21,6 +21,8 @@ LDFLAGS+=		${BUILDLINK_LDADD.getopt}
 .if !empty(OPSYS:M*BSD)
 CPPFLAGS+=		-DBSD
 .endif
+
+PLIST_SRC+=		${PKGDIR}/PLIST.common
 
 .include "options.mk"
 

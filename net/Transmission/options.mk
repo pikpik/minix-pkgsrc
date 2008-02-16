@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2007/12/02 02:51:16 tnn Exp $
+# $NetBSD: options.mk,v 1.4 2008/01/08 02:45:49 tnn Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -12,10 +12,9 @@ PKG_SUGGESTED_OPTIONS=	gtk
 . include "../../x11/gtk2/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-gtk
 USE_DIRS+=		xdg-1.1
-PLIST_SUBST+=		GTK=
+PLIST_SRC+=		${PKGDIR}/PLIST.gtk
 .else
 CONFIGURE_ARGS+=	--without-gtk
-PLIST_SUBST+=		GTK="@comment "
 pre-configure:
 	touch ${WRKSRC}/po/Makefile
 .endif
