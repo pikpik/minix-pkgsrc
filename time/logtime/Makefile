@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2004/12/03 15:15:11 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/11 11:12:34 kim Exp $
 #
 
 DISTNAME=		logtime-1.2
@@ -8,13 +8,12 @@ MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Prints date and time in a standard format
 
-.include "../../mk/bsd.prefs.mk"
-
 NO_CONFIGURE=		yes
 
 MAKE_FLAGS+=		PREFIX=${PREFIX}
 
 BUILD_TARGET=		all
 INSTALL_TARGET=		install
+INSTALLATION_DIRS=	${PKGMANDIR}
 
 .include "../../mk/bsd.pkg.mk"
