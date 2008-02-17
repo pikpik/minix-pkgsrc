@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2005/12/29 06:21:58 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2006/10/04 21:53:16 wiz Exp $
 
-DISTNAME=	${PKGNAME_NOREV:S/-//}
-PKGNAME=	delegate-8.9.6
-PKGREVISION=	1
+DISTNAME=	delegate9.7.7
+PKGNAME=	delegate-9.7.7
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.delegate.org/pub/DeleGate/ \
 		ftp://etlport.etl.go.jp/pub/DeleGate/ \
@@ -15,7 +14,6 @@ MASTER_SITES=	ftp://ftp.delegate.org/pub/DeleGate/ \
 		ftp://ftp.netsw.org/netsw/Network/IP/Firewall/Proxy/delegate/ \
 		ftp://ftp.ecrc.net/pub/netsw/Network/IP/Firewall/Proxy/delegate/ \
 		ftp://ftp.ecrc.de/ftp/data/ftp.ecrc.net/pub/netsw/Network/IP/Firewall/Proxy/delegate/
-EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.delegate.org/delegate/
