@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.194 2008/02/03 13:24:22 tnn Exp $
+# $NetBSD: Makefile,v 1.195 2008/02/03 14:07:40 tnn Exp $
 #
 # This pkg does not compile in mod_ssl, only the `mod_ssl EAPI' (a set of
 # code hooks that allow mod_ssl to be compiled separately later, if desired).
@@ -208,7 +208,7 @@ pre-patch:
 		${MODSSL_SRC}/pkg.sslmod/sslmod.patch			\
 		${MODSSL_SRC}/pkg.sslsup/sslsup.patch			\
 		| ${PATCH} ${PATCH_ARGS}
-	cd ${WRKSRC} && ${TAIL} +160					\
+	cd ${WRKSRC} && ${TAIL} -n +160					\
 		${MODSSL_SRC}/pkg.ssldoc/ssldoc.patch			\
 		| ${PATCH} ${PATCH_ARGS}
 	${FIND} ${WRKSRC} -name '*.orig' -print | ${XARGS} ${RM} -f
