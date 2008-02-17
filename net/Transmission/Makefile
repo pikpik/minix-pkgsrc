@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/01/30 13:04:01 tnn Exp $
+# $NetBSD: Makefile,v 1.24 2008/02/16 23:10:06 tnn Exp $
 #
 DISTNAME=		transmission-1.05
 PKGNAME=		Transmission-1.05
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.transmissionbt.com/
 COMMENT=		Free, lightweight BitTorrent client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config intltool msgfmt
 EXTRACT_USING=		gtar
 
