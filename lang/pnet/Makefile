@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2006/06/07 13:03:59 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2008/02/04 20:10:35 tnn Exp $
 
-DISTNAME=	pnet-0.6.6
-PKGREVISION=	2
+DISTNAME=	pnet-0.8.0
+#PKGREVISION=	1
 CATEGORIES=	lang
-MASTER_SITES=	http://www.southern-storm.com.au/download/
+MASTER_SITES=	http://download.savannah.gnu.org/releases/dotgnu-pnet/
 
 MAINTAINER=	pancake@phreaker.net
 HOMEPAGE=	http://www.dotgnu.org/
