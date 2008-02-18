@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/openpam_configure.c.orig	2004-02-09 18:00:00.000000000 -0500
+--- lib/openpam_configure.c.orig	2007-12-21 06:36:24.000000000 -0500
 +++ lib/openpam_configure.c
-@@ -262,11 +262,13 @@ openpam_read_chain(pam_handle_t *pamh,
+@@ -263,11 +263,13 @@ openpam_read_chain(pam_handle_t *pamh,
  	return (-1);
  }
  
