@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2006/07/27 18:48:03 jlam Exp $
+# $NetBSD: Makefile,v 1.53 2007/01/07 09:14:02 rillig Exp $
 
 DISTNAME=		djbdns-1.05
 PKGREVISION=		7
@@ -18,7 +18,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 # We change conf-home from the default "/usr/local" and don't
 # provide compatibility symlinks. We also patch to honor PKG_SYSCONFDIR
 # and to set reasonable permissions on standard pkgsrc directories.
-DJB_RESTRICTED=		YES
+# This no longer affects distributability, as djbdns is public domain.
+DJB_RESTRICTED=		no
 
 EGDIR=			${PREFIX}/share/examples/djbdns
 CFLAGS+=		-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR}\""
