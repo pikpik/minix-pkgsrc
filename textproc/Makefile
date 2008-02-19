@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.396 2008/02/01 20:43:04 tonio Exp $
+# $NetBSD: Makefile,v 1.397 2008/02/10 13:14:42 obache Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -91,6 +91,7 @@ SUBDIR+=	gtkspell
 SUBDIR+=	harmony
 SUBDIR+=	helpdeco
 SUBDIR+=	hevea
+SUBDIR+=	highlight
 SUBDIR+=	hre
 SUBDIR+=	html
 SUBDIR+=	html2text
