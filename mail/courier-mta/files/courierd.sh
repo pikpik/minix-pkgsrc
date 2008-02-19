@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: courierd.sh,v 1.3 2006/06/17 19:38:43 jlam Exp $
+# $NetBSD: courierd.sh,v 1.4 2007/08/10 17:57:04 jlam Exp $
 #
 # Courier core processes 
 #
@@ -36,7 +36,7 @@ courierd_prestart()
 			@COURIER_USER@ @COURIER_GROUP@ 0750
 	mkdir_perms @COURIER_STATEDIR@/msgs \
 			@COURIER_USER@ @COURIER_GROUP@ 0750
-	mkdir_perms @COURIER_STATEDIR@/tmp\
+	mkdir_perms @COURIER_STATEDIR@/tmp \
 			@COURIER_USER@ @COURIER_GROUP@ 0770
 	mkdir_perms @COURIER_STATEDIR@/track \
 			@COURIER_USER@ @COURIER_GROUP@ 0755

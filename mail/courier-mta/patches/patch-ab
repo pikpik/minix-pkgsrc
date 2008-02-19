@@ -1,8 +1,8 @@
 $NetBSD$
 
---- courier/configure.orig	Sat Sep 29 14:57:58 2007
+--- courier/configure.orig	2007-11-23 22:26:42.000000000 -0500
 +++ courier/configure
-@@ -22280,9 +22280,9 @@ done
+@@ -22366,9 +22366,9 @@ done
  
  if test "$testmode" = "0"
  then
