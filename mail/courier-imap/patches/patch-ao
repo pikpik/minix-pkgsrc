@@ -1,15 +1,15 @@
 $NetBSD$
 
---- imap/mkimapdcert.in.orig	2007-11-04 15:50:15.000000000 -0500
-+++ imap/mkimapdcert.in
+--- imap/mkpop3dcert.in.orig	2007-11-04 15:50:15.000000000 -0500
++++ imap/mkpop3dcert.in
 @@ -9,7 +9,13 @@
- # IMAP over SSL.  Normally this script would get called by an automatic
+ # POP3 over SSL.  Normally this script would get called by an automatic
  # package installation routine.
  
 -if test "@ssllib@" = "openssl"
 +case "$1" in
-+gnutls)		ssllib=gnutls ;;
-+openssl)	ssllib=openssl ;;
++gnutls)		ssllib="gnutls" ;;
++openssl)	ssllib="openssl" ;;
 +*)		ssllib="@ssllib@" ;;
 +esac
 +
@@ -24,5 +24,5 @@ $NetBSD$
 -if test "@ssllib@" = "openssl"
 +if test "$ssllib" = "openssl"
  then
- 	cp /dev/null @mydatadir@/imapd.pem
- 	chmod 600 @mydatadir@/imapd.pem
+ 	cp /dev/null @mydatadir@/pop3d.pem
+ 	chmod 600 @mydatadir@/pop3d.pem
