@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.27 2006/07/08 23:10:46 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.1 2006/10/13 18:07:49 tron Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 NCURSESW_BUILDLINK3_MK:=${NCURSESW_BUILDLINK3_MK}+
@@ -16,8 +16,6 @@ BUILDLINK_API_DEPENDS.ncursesw+=	ncursesw>=5.5
 BUILDLINK_ABI_DEPENDS.ncursesw+=	ncursesw>=5.5
 BUILDLINK_PKGSRCDIR.ncursesw?=		../../devel/ncursesw
 .endif	# NCURSESW_BUILDLINK3_MK
-
-USE_NCURSES=		YES
 
 .include "../../devel/ncurses/buildlink3.mk"
 
