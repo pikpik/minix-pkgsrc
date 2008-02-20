@@ -1,3 +1,5 @@
+# $NetBSD$
+
 PKG_OPTIONS_VAR=		PKG_OPTIONS.cone
 PKG_SUPPORTED_OPTIONS=		aspell ldap
 PKG_SUGGESTED_OPTIONS=		aspell ldap
