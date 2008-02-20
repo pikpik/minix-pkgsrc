@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/05/07 20:13:27 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/08/05 19:20:19 joerg Exp $
 #
 
 DISTNAME=		font-util-1.0.1
@@ -16,6 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
+
+LDFLAGS.IRIX+=		-lgen	# for basename(3)
 
 post-extract:
 	${CP} ${FILESDIR}/bdftruncate.c ${WRKSRC}
