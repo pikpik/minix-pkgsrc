@@ -1,9 +1,9 @@
-# $NetBSD: bin-install.mk,v 1.16 2007/11/03 10:25:33 rillig Exp $
+# $NetBSD: bin-install.mk,v 1.17 2008/02/19 22:53:34 rillig Exp $
 #
 
 # This file provides the following targets:
 #
-# bin-install
+# bin-install:
 #	Tries to install a package from a prebuilt binary package, and
 #	if that doesn't work, builds the package from source.
 #
