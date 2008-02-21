@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2007/05/07 20:13:27 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2008/02/21 01:51:53 tnn Exp $
 #
 
 DISTNAME=		mkfontscale-1.0.3
+PKGREVISION=		1
 CATEGORIES=		fonts x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/app/
 EXTRACT_SUFX=		.tar.bz2
