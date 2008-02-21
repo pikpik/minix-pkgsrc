@@ -1,4 +1,4 @@
-#	$NetBSD: IRIX.sys.mk,v 1.1.1.1 2006/07/14 23:13:01 jlam Exp $
+#	$NetBSD: IRIX.sys.mk,v 1.2 2006/08/06 18:59:41 schwarz Exp $
 #	@(#)sys.mk	8.2 (Berkeley) 3/21/94
 
 unix?=		We run Unix
@@ -67,7 +67,7 @@ LDFLAGS?=
 LINT?=		lint
 LINTFLAGS?=	-chapbxzF
 
-LORDER?=	lorder
+LORDER?=	echo
 
 MAKE?=		make
 
