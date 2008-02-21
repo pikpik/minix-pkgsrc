@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.30 2007/07/29 05:19:44 jlam Exp $
+# $NetBSD: IRIX.mk,v 1.32 2007/10/19 13:41:35 rillig Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -72,7 +72,6 @@ _OPSYS_HAS_INET6=	no		# IPv6 is not standard
 _OPSYS_HAS_JAVA=	no		# Java is not standard
 _OPSYS_HAS_MANZ=	no		# no MANZ for gzipping of man pages
 _OPSYS_HAS_OSSAUDIO=	no		# libossaudio is available
-_OPSYS_NEEDS_XPKGWEDGE=	yes		# xpkgwedge is required for X11
 _OPSYS_PERL_REQD=			# no base version of perl required
 _OPSYS_PTHREAD_AUTO=	no		# -lpthread needed for pthreads
 _OPSYS_SHLIB_TYPE=	ELF		# shared lib type
