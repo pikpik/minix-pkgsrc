@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.3 2008/02/20 22:29:48 jlam Exp $
+# $NetBSD: builtin.mk,v 1.4 2008/02/21 17:14:17 jlam Exp $
 
 BUILTIN_PKG:=	ncursesw
 
@@ -87,10 +87,10 @@ USE_BUILTIN.ncursesw=	yes
 .endif
 MAKEVARS+=	USE_BUILTIN.ncursesw
 
-# If USE_NCURSESW is defined, then only use the built-in "ncursesw"
+# If USE_NCURSES is defined, then only use the built-in "ncursesw"
 # if it's *actually* ncursesw.
 #
-.if defined(USE_NCURSESW) && !empty(IS_BUILTIN.ncursesw:M[nN][oO])
+.if defined(USE_NCURSES) && !empty(IS_BUILTIN.ncursesw:M[nN][oO])
 USE_BUILTIN.ncursesw=	no
 .endif
 
