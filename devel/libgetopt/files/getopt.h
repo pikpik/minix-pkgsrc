@@ -72,6 +72,12 @@ int getopt_long(int, char * const *, const char *,
 
 /* On some platforms, this is in libc, but not in a system header */
 extern int optreset;
+#ifdef __sgi
+extern char *optarg;
+extern int opterr;
+extern int optind;
+extern int optopt;
+#endif
 
 #ifdef __cplusplus
 };
