@@ -1,4 +1,4 @@
-$NetBSD: patch-ap,v 1.1 2006/06/20 13:29:01 tron Exp $
+$NetBSD: patch-ap,v 1.2 2007/06/08 14:16:17 wiz Exp $
 
 --- Modules/socketmodule.c.orig	2006-10-10 16:20:41.000000000 +0000
 +++ Modules/socketmodule.c
@@ -8,7 +8,7 @@ $NetBSD: patch-ap,v 1.1 2006/06/20 13:29:01 tron Exp $
  
 -#if defined(HAVE_BLUETOOTH_H) || defined(HAVE_BLUETOOTH_BLUETOOTH_H)
 +#if (defined(HAVE_BLUETOOTH_H) || defined(HAVE_BLUETOOTH_BLUETOOTH_H)) && \
-+    !defined(__NetBSD__)
++    !defined(__NetBSD__) && !defined(__DragonFly__)
  #define USE_BLUETOOTH 1
  #if defined(__FreeBSD__)
  #define BTPROTO_L2CAP BLUETOOTH_PROTO_L2CAP
