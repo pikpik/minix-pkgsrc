@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.166 2007/12/31 20:06:38 jlam Exp $
+# $NetBSD: Makefile,v 1.167 2008/02/14 11:08:27 kefren Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -112,6 +112,7 @@ SUBDIR+=	suse100_32_gdk-pixbuf
 SUBDIR+=	suse100_32_glx
 SUBDIR+=	suse100_32_gtk
 SUBDIR+=	suse100_32_gtk2
+SUBDIR+=	suse100_32_krb5
 SUBDIR+=	suse100_32_libcups
 SUBDIR+=	suse100_32_libjpeg
 SUBDIR+=	suse100_32_libpng
@@ -136,6 +137,7 @@ SUBDIR+=	suse100_gdk-pixbuf
 SUBDIR+=	suse100_glx
 SUBDIR+=	suse100_gtk
 SUBDIR+=	suse100_gtk2
+SUBDIR*=	suse100_krb5
 SUBDIR+=	suse100_libcups
 SUBDIR+=	suse100_libjpeg
 SUBDIR+=	suse100_libpng
