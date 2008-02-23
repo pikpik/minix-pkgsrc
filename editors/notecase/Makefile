@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/12/17 19:06:55 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/09 19:09:23 drochner Exp $
 #
 
 DISTNAME=	notecase-1.7.6_src
@@ -12,7 +12,7 @@ COMMENT=	Hierarchical note manager
 
 WRKSRC=		${WRKDIR}/notecase-1.7.6
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake pkg-config gsed
+USE_TOOLS+=	gmake msgfmt pkg-config gsed
 TOOLS_PLATFORM.gsed= #empty, override nonsense in tools
 USE_DIRS+=	xdg-1.1
 
