@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2007/02/26 11:55:18 obache Exp $
+# $NetBSD: Makefile,v 1.5 2007/07/26 12:21:40 obache Exp $
 #
 
-DISTNAME=	ipa-2.0.4
+DISTNAME=	ipa-2.0.5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://ipa-system.sourceforge.net/ \
 		http://www.mirrors.wiretapped.net/security/network-monitoring/ipa/ \
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	simon@comsys.ntu-kpi.kiev.ua
 HOMEPAGE=	http://ipa-system.sourceforge.net/
 COMMENT=	Pluggable accounting system
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 
