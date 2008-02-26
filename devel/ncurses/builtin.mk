@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.12 2007/01/17 03:11:18 rillig Exp $
+# $NetBSD: builtin.mk,v 1.13 2008/02/25 04:19:34 jlam Exp $
 
 BUILTIN_PKG:=	ncurses
 
@@ -74,6 +74,7 @@ USE_BUILTIN.ncurses!=							\
 # XXX
 .    if ${OPSYS} == "NetBSD"
 USE_BUILTIN.ncurses=	yes
+H_NCURSES=	/usr/include/curses.h
 .    endif
 #
 # Some platforms don't have a curses implementation that can replace
