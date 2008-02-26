@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.475 2007/12/17 19:48:00 drochner Exp $
+# $NetBSD: Makefile,v 1.476 2008/01/31 15:50:20 reed Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -188,6 +188,7 @@ SUBDIR+=	libkdcraw
 SUBDIR+=	libkexif
 SUBDIR+=	libkexiv2
 SUBDIR+=	libkipi
+SUBDIR+=	libotf
 SUBDIR+=	librsvg
 SUBDIR+=	libscigraphica
 SUBDIR+=	libungif
