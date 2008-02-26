@@ -1,11 +1,7 @@
-# $NetBSD: options.mk,v 1.7 2007/10/16 01:53:28 dmcmahill Exp $
+# $NetBSD: options.mk,v 1.8 2007/10/31 21:42:24 gdt Exp $
 
 PKG_OPTIONS_VAR		= PKG_OPTIONS.gecko
-PKG_SUPPORTED_OPTIONS	= debug
-
-.if ( ${MOZILLA_BIN} == "firefox-bin" || ${MOZILLA_BIN} == "thunderbird-bin" )
-PKG_SUPPORTED_OPTIONS  += official-mozilla-branding
-.endif
+PKG_SUPPORTED_OPTIONS	= debug official-mozilla-branding
 
 .if ( ${MOZILLA_BIN} == "firefox-bin" || ${MOZILLA_BIN} == "seamonkey-bin" || ${MOZILLA_BIN} == "thunderbird-bin" )
 PKG_SUPPORTED_OPTIONS  += mozilla-single-profile
