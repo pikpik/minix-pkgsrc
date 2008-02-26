@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/gtk-2.0/2.10.0/immodules/im-thai-libthai.la
+@comment in gtk2: @dirrm lib/gtk-2.0/2.10.0/immodules
