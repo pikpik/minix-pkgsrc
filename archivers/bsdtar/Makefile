@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2007/11/30 21:32:27 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/11/30 21:54:06 joerg Exp $
 #
 
-DISTNAME=	bsdtar-2.4.0
+DISTNAME=	bsdtar-2.4.13
 CATEGORIES=	archivers
 MASTER_SITES=	http://people.freebsd.org/~kientzle/libarchive/src/
 DISTFILES=	# empty
