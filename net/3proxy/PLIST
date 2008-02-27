@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/3proxy
+man/man8/3proxy.8
+man/man5/3proxy.cfg.5
