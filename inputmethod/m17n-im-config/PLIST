@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/m17n-im-config
+include/m17n-im-config.h
+lib/libm17n-im-config.la
+lib/pkgconfig/m17n-im-config.pc
+share/locale/fr/LC_MESSAGES/m17n-im-config.mo
+share/locale/ja/LC_MESSAGES/m17n-im-config.mo
