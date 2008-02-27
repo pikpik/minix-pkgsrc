@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2008/02/20 22:31:06 jlam Exp $
+# $NetBSD: options.mk,v 1.6 2008/02/20 22:53:49 jlam Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.cone
 PKG_SUPPORTED_OPTIONS=		aspell ldap wide-curses
@@ -51,7 +51,7 @@ CONFIGURE_ARGS+=	--with-gnutls
 ### Wide curses display
 ###
 .if !empty(PKG_OPTIONS:Mwide-curses)
-USE_NCURSESW=	yes	# termattrs()
+USE_NCURSES=	yes	# termattrs()
 .  include "../../devel/ncursesw/buildlink3.mk"
 .else
 USE_NCURSES=	yes	# termattrs()
