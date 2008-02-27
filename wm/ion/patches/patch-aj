@@ -1,6 +1,6 @@
-$NetBSD: patch-aj,v 1.1 2005/02/05 00:00:11 cube Exp $
+$NetBSD$
 
---- man/Makefile.orig	2004-07-29 03:10:32.000000000 +0000
+--- man/Makefile.orig	2004-07-28 23:10:32.000000000 -0400
 +++ man/Makefile
 @@ -22,7 +22,7 @@ include $(TOPDIR)/rules.mk
  _install:
