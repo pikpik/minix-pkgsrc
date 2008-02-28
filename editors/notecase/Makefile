@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/01/09 19:09:23 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2008/02/23 11:39:17 wiz Exp $
 #
 
-DISTNAME=	notecase-1.7.6_src
-PKGNAME=	notecase-1.7.6
+DISTNAME=	notecase-1.8.1_src
+PKGNAME=	notecase-1.8.1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=notecase/}
 
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://notecase.sourceforge.net/
 COMMENT=	Hierarchical note manager
 
-WRKSRC=		${WRKDIR}/notecase-1.7.6
+WRKSRC=		${WRKDIR}/notecase-1.8.1
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake msgfmt pkg-config gsed
 TOOLS_PLATFORM.gsed= #empty, override nonsense in tools
