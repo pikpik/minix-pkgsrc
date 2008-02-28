@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/10 11:33:00 agc Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/12 11:36:30 adam Exp $
 
 DISTNAME=	cstore0.2
 PKGNAME=	cstore-0.2
@@ -52,7 +52,7 @@ DATAFILES+=	lshipdate.sorted.mini
 DATAFILES+=	lshipdate.sorted.tiny
 DATAFILES+=	supp.data
 
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 post-extract:
 	cd ${WRKDIR} && mv ${DATAFILES} ${WRKSRC}/data

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2007/01/07 09:14:09 rillig Exp $
+# $NetBSD: Makefile,v 1.32 2007/11/17 16:00:20 rillig Exp $
 #
 
 DISTNAME=	port2pkg-1.11
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes
 NO_BUILD=	yes
 USE_TOOLS+=	gtar perl:run
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 do-extract:
 	cd ${FILESDIR} && cp port2pkg.* ${WRKSRC}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/10/04 21:59:35 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2007/10/30 02:22:54 bjs Exp $
 #
 
 DISTNAME=	netbsd-pcvt-20000611
@@ -17,7 +17,7 @@ ONLY_FOR_PLATFORM= 	NetBSD-*-*
 USE_BSD_MAKEFILE=	yes
 WRKSRC=			${WRKDIR}/pcvt/Util
 
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 do-install:
 	${INSTALL_PROGRAM} \

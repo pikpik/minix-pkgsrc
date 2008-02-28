@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/12/14 07:20:51 bjs Exp $
+# $NetBSD: Makefile,v 1.17 2008/02/07 13:16:50 tnn Exp $
 #
 
 DISTNAME=	checkperms-1.10
@@ -11,7 +11,7 @@ COMMENT=	Check and correct file permissions
 #LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 USE_BSD_MAKEFILE=	yes
 

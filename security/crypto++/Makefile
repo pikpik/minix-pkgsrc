@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/02/22 19:27:07 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2007/12/01 04:17:50 rillig Exp $
 #
 
 DISTNAME=		cryptopp552
@@ -23,7 +23,7 @@ CPPFLAGS+=		-DCRYPTOPP_DISABLE_ASM
 BUILDLINK_TRANSFORM+=	rm:-pipe rm:-msse2
 EXTRACT_OPTS_ZIP=	-aqo
 
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cryptest.exe ${PREFIX}/bin/cryptest

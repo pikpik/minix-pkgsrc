@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/05/28 20:14:00 heinz Exp $
+# $NetBSD: Makefile,v 1.49 2007/08/17 22:33:35 joerg Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
@@ -27,7 +27,7 @@ HAS_CONFIGURE=	yes
 MAKE_FILE=	makefile
 BUILD_TARGET=	# the default one
 
-INSTALLATION_DIRS_FROM_PLIST=	yes
+AUTO_MKDIRS=			yes
 
 post-extract:
 	chmod 644 ${WRKSRC}/man/man1/rletotarga.1
