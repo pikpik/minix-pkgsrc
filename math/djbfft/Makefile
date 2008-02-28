@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/03/24 19:21:27 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/03/28 13:22:23 joerg Exp $
 
 DISTNAME=	djbfft-0.76
 CATEGORIES=	math
@@ -7,8 +7,9 @@ MASTER_SITES=	http://cr.yp.to/djbfft/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cr.yp.to/djbfft.html
 COMMENT=	Extremely fast library for floating-point convolution
+#LICENSE=	public-domain
 
-DJB_RESTRICTED=		YES
+DJB_RESTRICTED=		no
 NOT_FOR_PLATFORM=	IRIX-*-*
 
 INSTALLATION_DIRS=	include lib
