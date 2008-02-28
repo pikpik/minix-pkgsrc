@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.914 2008/02/24 04:59:19 jlam Exp $
+# $NetBSD: Makefile,v 1.915 2008/02/27 14:14:44 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -87,6 +87,7 @@ SUBDIR+=	cflow-mode
 SUBDIR+=	cgdb
 SUBDIR+=	check
 SUBDIR+=	chmlib
+SUBDIR+=	chrpath
 SUBDIR+=	cmake
 SUBDIR+=	cmake-mode
 SUBDIR+=	coconut
