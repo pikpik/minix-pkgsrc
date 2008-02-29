@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2007/07/03 13:31:31 sborrill Exp $
+# $NetBSD: Makefile,v 1.36 2007/07/29 05:19:46 jlam Exp $
 
 DISTNAME=	citrix_ica-10.6.115659
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	# empty
 
