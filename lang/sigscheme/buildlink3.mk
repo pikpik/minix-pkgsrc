@@ -1,0 +1,21 @@
+# $NetBSD$
+
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
+SIGSCHEME_BUILDLINK3_MK:=	${SIGSCHEME_BUILDLINK3_MK}+
+
+.if ${BUILDLINK_DEPTH} == "+"
+BUILDLINK_DEPENDS+=	sigscheme
+.endif
+
+BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nsigscheme}
+BUILDLINK_PACKAGES+=	sigscheme
+BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}sigscheme
+
+.if ${SIGSCHEME_BUILDLINK3_MK} == "+"
+BUILDLINK_API_DEPENDS.sigscheme+=	sigscheme>=0.8.0
+BUILDLINK_PKGSRCDIR.sigscheme?=	../../lang/sigscheme
+.endif	# SIGSCHEME_BUILDLINK3_MK
+
+.include "../../devel/libgcroots/buildlink3.mk"
+
+BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
