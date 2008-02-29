@@ -1,0 +1,8 @@
+# $NetBSD: Makefile.linux-i386,v 1.1 2007/07/29 05:19:55 jlam Exp $
+
+DISTNAME=	firefox-${MOZ_DISTVER}
+MOZ_DIR=	${MOZ_DISTVER}/linux-i686/en-US
+EXTRACT_SUFX=	.tar.bz2
+
+MOZ_GTK2=	yes
+MOZ_PLATFORM=	linux
