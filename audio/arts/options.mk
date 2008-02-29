@@ -1,4 +1,4 @@
-$NetBSD$
+# $NetBSD: options.mk,v 1.1 2008/01/21 00:43:49 markd Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.arts
 PKG_SUPPORTED_OPTIONS=	esound nas jack
