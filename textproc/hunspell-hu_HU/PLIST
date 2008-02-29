@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/doc/hunspell-${DICTNAME}/README_${DICTNAME}.txt
+share/hunspell/${DICTNAME}.aff
+share/hunspell/${DICTNAME}-utf8.aff
+share/hunspell/${DICTNAME}.dic
+share/hunspell/${DICTNAME}-utf8.dic
+@dirrm share/doc/hunspell-${DICTNAME}
