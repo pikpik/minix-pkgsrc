@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.539 2008/02/17 18:19:14 minskim Exp $
+# $NetBSD: Makefile,v 1.540 2008/02/22 17:13:58 sborrill Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -113,6 +113,7 @@ SUBDIR+=	firefox-gtk1
 SUBDIR+=	firefox15
 SUBDIR+=	firefox15-bin
 SUBDIR+=	firefox15-gtk1
+SUBDIR+=	firefox3-bin
 SUBDIR+=	galeon
 SUBDIR+=	galway
 SUBDIR+=	ganglia-webfrontend
