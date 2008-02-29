@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.397 2008/02/10 13:14:42 obache Exp $
+# $NetBSD: Makefile,v 1.398 2008/02/19 02:25:04 rh Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -101,6 +101,7 @@ SUBDIR+=	hunspell
 SUBDIR+=	hunspell-de
 SUBDIR+=	hunspell-en_GB
 SUBDIR+=	hunspell-en_US
+SUBDIR+=	hunspell-hu_HU
 SUBDIR+=	hyperestraier
 SUBDIR+=	icu
 SUBDIR+=	intltool
