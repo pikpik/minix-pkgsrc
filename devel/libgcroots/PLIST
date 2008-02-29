@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/gcroots.h
+lib/libgcroots.la
+lib/pkgconfig/gcroots.pc
