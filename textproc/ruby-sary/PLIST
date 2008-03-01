@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITEARCHLIBDIR}/sary.${RUBY_DLEXT}
+${RUBY_DOCDIR}/sary/Reference.en.rd
+${RUBY_DOCDIR}/sary/Reference.ja.rd
+@dirrm ${RUBY_DOCDIR}/sary
