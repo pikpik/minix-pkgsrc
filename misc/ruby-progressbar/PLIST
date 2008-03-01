@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_SITELIBDIR}/progressbar.rb
+${RUBY_DOCDIR}/progressbar/progressbar.en.rd
+${RUBY_DOCDIR}/progressbar/progressbar.ja.rd
+@dirrm ${RUBY_DOCDIR}/progressbar
