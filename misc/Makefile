@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.294 2008/01/09 21:20:35 wiz Exp $
+# $NetBSD: Makefile,v 1.295 2008/02/27 14:14:44 obache Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -182,6 +182,7 @@ SUBDIR+=	rox-memo
 SUBDIR+=	rpm
 SUBDIR+=	ruby-daemons
 SUBDIR+=	ruby-gem_plugin
+SUBDIR+=	ruby-progressbar
 SUBDIR+=	rubygems
 SUBDIR+=	sch
 SUBDIR+=	sci
