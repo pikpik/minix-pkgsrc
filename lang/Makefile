@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2008/02/13 19:58:20 kefren Exp $
+# $NetBSD: Makefile,v 1.250 2008/02/29 13:13:05 obache Exp $
 #
 
 COMMENT=	Programming languages
@@ -106,6 +106,7 @@ SUBDIR+=	ossp-js
 SUBDIR+=	p2c
 SUBDIR+=	parrot
 SUBDIR+=	pcc
+SUBDIR+=	pcc-current
 SUBDIR+=	pear
 SUBDIR+=	perl5
 SUBDIR+=	pforth
