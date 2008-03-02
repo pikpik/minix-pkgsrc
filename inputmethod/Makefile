@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/02/26 11:41:01 obache Exp $
+# $NetBSD: Makefile,v 1.26 2008/02/27 14:14:44 obache Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -29,6 +29,9 @@ SUBDIR+=	libhangul
 SUBDIR+=	libtabe
 SUBDIR+=	m17n-im-config
 SUBDIR+=	nabi
+SUBDIR+=	prime
+SUBDIR+=	prime-dict
+SUBDIR+=	prime-el
 SUBDIR+=	sj3-dict
 SUBDIR+=	sj3-lib
 SUBDIR+=	sj3-server
