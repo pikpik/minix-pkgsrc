@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2008/02/27 18:16:37 jlam Exp $
+# $NetBSD: Makefile,v 1.44 2008/02/29 22:41:13 jlam Exp $
 #
 
 DISTNAME=	readline-5.2
@@ -25,9 +25,4 @@ BUILD_TARGET=		all-libtool
 INSTALL_TARGET=		install-libtool
 
 .include "../../mk/termcap.buildlink3.mk"
-
-.if ${TERMCAP_TYPE} == "curses"
-CONFIGURE_ARGS+=	--with-curses
-.endif
-
 .include "../../mk/bsd.pkg.mk"
