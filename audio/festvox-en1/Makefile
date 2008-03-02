@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/06/08 18:33:09 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/08/23 21:08:20 joerg Exp $
 
 DISTNAME=	festvox_en1
 PKGNAME=	festvox-en1-1.4.0
@@ -18,6 +18,8 @@ DEPENDS+=	mbrolavox-en1-980910{,nb[0-9]*}:../../audio/mbrolavox-en1
 
 LICENSE=	no-commercial-use
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes
 
@@ -29,9 +31,9 @@ post-extract:
 	${FIND} ${WRKSRC} -type d -print | ${XARGS} ${CHMOD} 755
 
 do-install:
-	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
 #ugh
-	${LN} -fs ../../../../../mbrola/voices/en1 ${MBROLA}
-	${LN} -fs ../../../../../mbrola/voices/en1/en1mrpa ${MBROLA}
+	${LN} -fs ../../../../../mbrola/voices/en1 ${DESTDIR}${MBROLA}
+	${LN} -fs ../../../../../mbrola/voices/en1/en1mrpa ${DESTDIR}${MBROLA}
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/08/29 05:35:27 ben Exp $
+# $NetBSD: Makefile,v 1.15 2006/12/15 14:34:19 wiz Exp $
 #
 
 DISTNAME=		xmms-meta-input-0.4
@@ -10,6 +10,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.corbac.com/page3.html
 COMMENT=		XMMS plugin wrapper for shell scripts
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 INSTALLATION_DIRS=	lib/xmms/Input
 REQD_DIRS+=		lib/xmms/Input/Meta
 
@@ -17,13 +19,14 @@ USE_LIBTOOL=		yes
 
 do-install:
 	${LIBTOOL} --mode=install ${INSTALL_DATA} \
-		${WRKSRC}/libmetainput.la ${PREFIX}/lib/xmms/Input
-	${INSTALL_DATA_DIR} ${PREFIX}/lib/xmms/Input/Meta
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xmms-input
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xmms-input
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/xmms-meta-input
+		${WRKSRC}/libmetainput.la ${DESTDIR}${PREFIX}/lib/xmms/Input
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/xmms/Input/Meta
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/xmms-input
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/xmms-input
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/examples/xmms-meta-input
 	cd ${WRKSRC}/Examples && ${INSTALL_SCRIPT} dsp_input esound_link midi \
-		modules mp3 spc vorbis ${PREFIX}/share/examples/xmms-meta-input
+		modules mp3 spc vorbis \
+		${DESTDIR}${PREFIX}/share/examples/xmms-meta-input
 
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

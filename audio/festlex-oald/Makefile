@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/12/28 11:47:51 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/06/08 18:33:06 wiz Exp $
 
 DISTNAME=	festlex_OALD
 PKGNAME=	festlex-oald-1.4.0
@@ -14,6 +14,8 @@ DEPENDS+=	festival>=1.4.0:../../audio/festival
 
 LICENSE=	no-commercial-use
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes
 
@@ -24,7 +26,7 @@ post-extract:
 	${FIND} ${WRKSRC} -type d -print | ${XARGS} ${CHMOD} 755
 
 do-install:
-	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
+	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

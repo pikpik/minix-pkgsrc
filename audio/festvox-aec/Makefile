@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:07 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/12/28 11:47:51 wiz Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
@@ -15,6 +15,8 @@ DEPENDS+=	festlex-ogi>=2.0:../../audio/festlex-ogi
 
 LICENSE=	no-commercial-use
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 DIST_SUBDIR=	${PKGNAME_NOREV}nb1
 WRKSRC=		${WRKDIR}/festival
 
@@ -28,7 +30,7 @@ post-extract:
 	${FIND} ${WRKSRC} -type d -name CVS -print | ${XARGS} ${RM} -fr
 
 do-install:
-	${INSTALL_DATA_DIR} ${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${FHOME}
+	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"
