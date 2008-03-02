@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2007/08/24 20:54:42 bernd Exp $
+# $NetBSD$
 #
 
-DISTNAME=	dcraw-8.77
+DISTNAME=	dcraw-8.82
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cybercom.net/~dcoffin/dcraw/archive/
-DIST_SUBDIR=	${PKGNAME}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cybercom.net/~dcoffin/dcraw/
