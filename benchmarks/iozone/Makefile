@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2007/01/07 09:13:47 rillig Exp $
+# $NetBSD: Makefile,v 1.37 2008/01/19 09:16:18 wiz Exp $
 
 DISTNAME=	iozone3_263
 PKGNAME=	iozone-3.263
@@ -16,6 +16,7 @@ LICENSE=	iozone-license
 NOT_FOR_PLATFORM=	Interix-*-* # has only 32-bit off_t
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src/current
 MAKE_FILE=		makefile
@@ -42,11 +43,12 @@ BUILD_TARGET=		generic
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/iozone ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/docs/iozone.1 ${PREFIX}/${PKGMANDIR}/man1
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/IOzone
+	${INSTALL_PROGRAM} ${WRKSRC}/iozone ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/docs/iozone.1 \
+		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/IOzone
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/docs/Iozone_ps.gz \
-		${PREFIX}/share/doc/IOzone
+		${DESTDIR}${PREFIX}/share/doc/IOzone
 
 benchmark:
 	cd ${WRKSRC}; ./iozone -Ea | ${TEE} iozone.out
