@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/08/14 13:45:11 rpaulo Exp $
+# $NetBSD: Makefile,v 1.3 2007/07/08 12:35:10 wiz Exp $
 
 DISTNAME=	cflow-1.1
 PKGNAME=	cflow-mode-1.1
@@ -9,6 +9,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/cflow/
 COMMENT=	Emacs mode for GNU cflow output
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 .include "../../mk/emacs.mk"
 
 do-build:
@@ -16,7 +18,10 @@ do-build:
 	${WRKSRC}/elisp/cflow-mode.el
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/elisp/cflow-mode.el ${EMACS_LISPPREFIX}
-	${INSTALL_DATA} ${WRKSRC}/elisp/cflow-mode.elc ${EMACS_LISPPREFIX}
+	${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}
+	${INSTALL_DATA} ${WRKSRC}/elisp/cflow-mode.el \
+		${DESTDIR}${EMACS_LISPPREFIX}
+	${INSTALL_DATA} ${WRKSRC}/elisp/cflow-mode.elc \
+		${DESTDIR}${EMACS_LISPPREFIX}
 
 .include "../../mk/bsd.pkg.mk"

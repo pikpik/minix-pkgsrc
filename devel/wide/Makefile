@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:08:54 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/01/02 01:47:24 rillig Exp $
 #
 
 DISTNAME=		wide
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		jschauma@NetBSD.org
 HOMEPAGE=		http://www2.mta.ac.il/~tal/WIDE/
 COMMENT=		IDE for the While programming language
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 WRKSRC=			${WRKDIR}/WIDE
@@ -28,12 +30,12 @@ do-configure:
 	${RM} -fr ${WRKSRC}/images/Copy*
 
 do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/wide
-	${INSTALL_DATA_DIR} ${PREFIX}/libexec/wide
-	${INSTALL_SCRIPT} ${WRKSRC}/wide ${PREFIX}/bin/wide
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/wide
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/libexec/wide
+	${INSTALL_SCRIPT} ${WRKSRC}/wide ${DESTDIR}${PREFIX}/bin/wide
 	cd ${WRKSRC} && ${PAX} -rw Study etc help images *.ini *.xml version.txt \
-				${PREFIX}/share/wide/
-	cd ${WRKSRC} && ${PAX} -rw lib ${PREFIX}/libexec/wide/
+				${DESTDIR}${PREFIX}/share/wide/
+	cd ${WRKSRC} && ${PAX} -rw lib ${DESTDIR}${PREFIX}/libexec/wide/
 
 .include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"
