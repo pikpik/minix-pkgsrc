@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2008/02/07 06:40:27 bjs Exp $
+# $NetBSD: Makefile,v 1.6 2008/02/18 05:36:51 bjs Exp $
 #
 
-DISTNAME=	pixman-0.9.6
-PKGREVISION=	5
+DISTNAME=	pixman-0.9.6pl0
+PKGNAME=	${DISTNAME:C/pl[0-9]*//}
+PKGREVISION=	6
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
@@ -18,5 +19,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 
 PKGCONFIG_OVERRIDE+=	pixman-1.pc.in
+
+WRKSRC=	 	${WRKDIR}/${PKGNAME_NOREV}
 
 .include "../../mk/bsd.pkg.mk"
