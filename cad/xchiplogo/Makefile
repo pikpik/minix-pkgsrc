@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:08:23 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/12/15 20:32:53 joerg Exp $
 #
 
 DISTNAME=	xchiplogo
@@ -11,10 +11,12 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.eleceng.adelaide.edu.au/Personal/moini/chiplogo.html
 COMMENT=	Program for generating pretty logos on VLSI chips
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/xchiplogo ${PREFIX}/bin/xchiplogo
+	${INSTALL_PROGRAM} ${WRKSRC}/xchiplogo ${DESTDIR}${PREFIX}/bin/xchiplogo
 
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"

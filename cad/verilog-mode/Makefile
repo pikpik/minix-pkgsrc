@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/28 04:25:28 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:23 joerg Exp $
 #
 
 DISTNAME=		verilog-mode-3.60
@@ -12,6 +12,8 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.verilog.com/verilog-mode.html
 COMMENT=		Verilog mode for Emacs
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 
@@ -32,7 +34,8 @@ do-build:
 	done
 
 do-install:
-	${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}
-	cd ${WRKSRC} && ${INSTALL_DATA} ${SRCS} ${SRCS:.el=.elc} ${EMACS_LISPPREFIX}
+	${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${SRCS} ${SRCS:.el=.elc}	\
+		${DESTDIR}${EMACS_LISPPREFIX}
 
 .include "../../mk/bsd.pkg.mk"
