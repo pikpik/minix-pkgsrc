@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/02/05 23:08:37 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2007/02/22 19:26:19 wiz Exp $
 
 DISTNAME=		fbsql.c
 PKGNAME=		tcl-fbsql-1.06
@@ -11,6 +11,8 @@ MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://www.fastbase.co.nz/fbsql/index.html
 COMMENT=		Tcl interface to MySQL
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=			${WRKDIR}/src
 USE_LIBTOOL=		YES
 DIST_SUBDIR=		${PKGNAME_NOREV}
@@ -22,7 +24,7 @@ do-extract:
 	${CP} ${_DISTDIR}/fbsql.c ${WRKSRC}/
 
 do-install:
-	${INSTALL_LIB} ${WRKSRC}/fbsql.so ${PREFIX}/lib/tcl
+	${INSTALL_LIB} ${WRKSRC}/fbsql.so ${DESTDIR}${PREFIX}/lib/tcl
 
 .include "../../mk/mysql.buildlink3.mk"
 .include "../../lang/tcl/buildlink3.mk"
