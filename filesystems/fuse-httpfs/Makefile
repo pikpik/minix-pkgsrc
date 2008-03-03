@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/20 23:44:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2007/03/15 22:55:21 agc Exp $
 #
 
 DISTNAME=	httpfs_with_static_binaries_${DIST_VER}
@@ -11,6 +11,8 @@ HOMEPAGE=	http://httpfs.sourceforge.net/
 COMMENT=	FUSE HTTP filesystem
 
 DIST_VER=	2.06.08.26
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}
@@ -27,7 +29,7 @@ do-build:
 		${WRKSRC}/httpfs.c -o ${WRKSRC}/httpfs
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/httpfs ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/httpfs ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/fuse.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

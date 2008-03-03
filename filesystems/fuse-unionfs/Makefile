@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/20 23:44:06 xtraeme Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/10 12:51:03 agc Exp $
 #
 
 DISTNAME=	unionfs-fuse-0.17
@@ -11,10 +11,15 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://podgorny.cz/unionfs-fuse/
 COMMENT=	FUSE-based union filesystem
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 BUILD_TARGET=	unionfs
 
+INSTALLATION_DIRS=	bin
+
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/unionfs ${PREFIX}/bin/fuse-unionfs
+	${INSTALL_PROGRAM} ${WRKSRC}/unionfs \
+		${DESTDIR}${PREFIX}/bin/fuse-unionfs
 
 .include "../../mk/fuse.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
