@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/12/29 07:04:27 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/02/05 23:09:08 joerg Exp $
 
 DISTNAME=	baekmuk-ttf-2.2
 PKGREVISION=	2
@@ -9,6 +9,8 @@ MAINTAINER=	yui@yui.pe.kr
 HOMEPAGE=	http://kldp.net/projects/baekmuk/
 COMMENT=	Baekmuk family Korean TrueType fonts
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_X11BASE=	YES
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
@@ -17,9 +19,9 @@ FONTS_DIRS.ttf=	${PREFIX}/lib/X11/fonts/TTF
 DOCDIR=		${PREFIX}/share/doc/baekmuk-ttf
 
 do-install:
-	${INSTALL_DATA_DIR} ${FONTS_DIRS.ttf}
-	${INSTALL_DATA} ${WRKSRC}/ttf/*.ttf ${FONTS_DIRS.ttf}
-	${INSTALL_DATA_DIR} ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT* ${DOCDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${FONTS_DIRS.ttf}
+	${INSTALL_DATA} ${WRKSRC}/ttf/*.ttf ${DESTDIR}${FONTS_DIRS.ttf}
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT* ${DESTDIR}${DOCDIR}
 
 .include "../../mk/bsd.pkg.mk"
