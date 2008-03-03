@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2008/01/17 09:14:51 tron Exp $
+# $NetBSD: Makefile,v 1.49 2008/03/02 13:31:07 bjs Exp $
 
 DISTNAME=	libidn-1.5
 CATEGORIES=	devel
@@ -19,6 +19,7 @@ TEXINFO_REQD=		4.1
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
 CONFIGURE_ENV+=		EMACS=${FALSE}
+CONFIGURE_ARGS+=	--disable-csharp --disable-java
 
 PKGCONFIG_OVERRIDE+=	libidn.pc.in
 TEST_TARGET=		check
