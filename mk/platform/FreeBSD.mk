@@ -1,4 +1,4 @@
-# $NetBSD: FreeBSD.mk,v 1.21 2007/07/29 05:19:44 jlam Exp $
+# $NetBSD: FreeBSD.mk,v 1.23 2007/10/19 13:41:35 rillig Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -89,8 +89,10 @@ _OPSYS_MAX_CMDLEN_CMD=	/sbin/sysctl -n kern.argmax
 # Set the group and mode to meaningful values in that case (defaults to
 # BINOWN, BINGRP and BINMODE as per defaults/mk.conf).
 .if !(empty(SETGIDGAME:M[yY][eE][sS]))
-GAMEOWN=		games
-GAMEGRP=		games
+GAMES_USER=		games
+GAMES_GROUP=		games
+GAMEOWN=		${GAMES_USER}
+GAMEGRP=		${GAMES_GROUP}
 GAMEMODE=		2555
 GAMEDIRMODE=		0775
 .endif

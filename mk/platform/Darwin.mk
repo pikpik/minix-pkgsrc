@@ -1,4 +1,4 @@
-# $NetBSD: Darwin.mk,v 1.29 2008/01/30 22:57:42 tron Exp $
+# $NetBSD: Darwin.mk,v 1.30 2008/02/17 11:45:14 yyamano Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -118,8 +118,10 @@ CONFIGURE_ENV+=		ac_cv_func_poll=no
 # BINOWN, BINGRP and BINMODE as per defaults/mk.conf).
 # FIXME: Adjust to work on this system and enable the lines below.
 #.if !(empty(SETGIDGAME:M[yY][eE][sS]))
-#GAMEOWN=		games
-#GAMEGRP=		games
+#GAMES_USER=		games
+#GAMES_GROUP=		games
+#GAMEOWN=		${GAMES_USER}
+#GAMEGRP=		${GAMES_GROUP}
 #GAMEMODE=		2555
 #GAMEDIRMODE=		0775
 #.endif

@@ -1,4 +1,4 @@
-# $NetBSD: UnixWare.mk,v 1.24 2007/07/02 14:03:41 joerg Exp $
+# $NetBSD: UnixWare.mk,v 1.26 2007/10/19 13:41:35 rillig Exp $
 #
 # Variable definitions for the UnixWare 7 operating system.
 
@@ -87,8 +87,10 @@ PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 # BINOWN, BINGRP and BINMODE as per defaults/mk.conf).
 # FIXME: Adjust to work on this system and enable the lines below.
 #.if !(empty(SETGIDGAME:M[yY][eE][sS]))
-#GAMEOWN=		games
-#GAMEGRP=		games
+#GAMES_USER=		games
+#GAMES_GROUP=		games
+#GAMEOWN=		${GAMES_USER}
+#GAMEGRP=		${GAMES_GROUP}
 #GAMEMODE=		2555
 #GAMEDIRMODE=		0775
 #.endif

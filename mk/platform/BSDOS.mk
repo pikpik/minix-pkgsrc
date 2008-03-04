@@ -1,4 +1,4 @@
-# $NetBSD: BSDOS.mk,v 1.21 2007/07/02 14:03:35 joerg Exp $
+# $NetBSD: BSDOS.mk,v 1.23 2007/10/19 13:41:34 rillig Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -89,8 +89,10 @@ PKG_CREATE_USERGROUP=	NO # until it works
 # BINOWN, BINGRP and BINMODE as per defaults/mk.conf).
 # FIXME: Adjust to work on this system and enable the lines below.
 #.if !(empty(SETGIDGAME:M[yY][eE][sS]))
-#GAMEOWN=		games
-#GAMEGRP=		games
+#GAMES_USER=		games
+#GAMES_GROUP=		games
+#GAMEOWN=		${GAMES_USER}
+#GAMEGRP=		${GAMES_GROUP}
 #GAMEMODE=		2555
 #GAMEDIRMODE=		0775
 #.endif
