@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/05/22 06:45:08 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2007/11/17 13:40:16 wiz Exp $
 
 DISTNAME=	quake106
 PKGNAME=	quakedata-1.0
@@ -20,6 +20,8 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 EXTRACT_ELEMENTS=	resource.*
 EXTRACT_OPTS_ZIP=	-qo
 
@@ -32,7 +34,8 @@ post-extract:
 	cd ${WRKDIR} && ${LHA} xfq resource.exe id1/pak0.pak
 
 do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/quake/id1
-	${INSTALL_DATA} ${WRKSRC}/id1/pak0.pak ${PREFIX}/share/quake/id1
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/quake/id1
+	${INSTALL_DATA} ${WRKSRC}/id1/pak0.pak \
+		${DESTDIR}${PREFIX}/share/quake/id1
 
 .include "../../mk/bsd.pkg.mk"

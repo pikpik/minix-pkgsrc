@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/09/09 02:42:01 obache Exp $
+# $NetBSD: Makefile,v 1.18 2006/12/15 20:32:56 joerg Exp $
 
 DISTNAME=	xevilsrc2.02r2
 PKGNAME=	xevil-2.02
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	snj@pobox.com
 HOMEPAGE=	http://www.xevil.com/
 COMMENT=	Side scrolling, bloody action game
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	makefile
 
@@ -23,9 +25,9 @@ USE_LANGUAGES=	c++
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/x11/PKGSRC/xevil ${PREFIX}/bin/xevil
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xevil
-	${INSTALL_DATA} ${WRKSRC}/instructions/* ${PREFIX}/share/doc/xevil
+	${INSTALL_PROGRAM} ${WRKSRC}/x11/PKGSRC/xevil ${DESTDIR}${PREFIX}/bin/xevil
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/xevil
+	${INSTALL_DATA} ${WRKSRC}/instructions/* ${DESTDIR}${PREFIX}/share/doc/xevil
 
 SUBST_CLASSES+=		uname
 SUBST_STAGE.uname=	pre-configure

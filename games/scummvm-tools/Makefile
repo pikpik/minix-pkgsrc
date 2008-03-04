@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/02 09:47:44 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2007/02/22 19:30:03 wiz Exp $
 #
 
 DISTNAME=		scummvm-tools-0.9.0
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://scummvm.sourceforge.net/
 COMMENT=		Conversion and compression tools for ScummVM
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/tools-0.9.0
 USE_LANGUAGES=	c c++
@@ -26,10 +28,10 @@ do-install:
         	extract_mm_c64 extract_mm_nes extract_scumm_mac \
         	extract_simon1_amiga extract_zak_c64; \
 	do \
-		${INSTALL_PROGRAM} ${WRKSRC}/$$f ${LOCALBASE}/bin; \
+		${INSTALL_PROGRAM} ${WRKSRC}/$$f ${DESTDIR}${PREFIX}/bin; \
 	done
-	${INSTALL_DATA_DIR} ${LOCALBASE}/share/doc/scummvm-tools
-	${INSTALL_DATA} ${WRKSRC}/README ${LOCALBASE}/share/doc/scummvm-tools
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/scummvm-tools
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/scummvm-tools
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"

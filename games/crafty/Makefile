@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2006/03/04 21:29:40 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2006/05/19 09:18:29 rillig Exp $
 
 DISTNAME=		crafty-18.15
 CATEGORIES=		games
@@ -11,6 +11,7 @@ DISTFILES+=		${CRAFTY_STARTPGN} ${CRAFTY_DOCFILES}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Chess engine
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		${DISTNAME}-1
 CRAFTY_DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
@@ -77,12 +78,13 @@ post-build:
 	cd ${WRKSRC} && ${WRKSRC}/crafty bookpath=.
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/crafty ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${BOOKDIR}
-	${INSTALL_DATA} ${WRKSRC}/books.bin ${BOOKDIR}
-	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_PROGRAM} ${WRKSRC}/crafty ${DESTDIR}${PREFIX}/bin
+	${INSTALL_DATA_DIR} ${DESTDIR}${BOOKDIR}
+	${INSTALL_DATA} ${WRKSRC}/books.bin ${DESTDIR}${BOOKDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR}
 	for file in ${CRAFTY_DOCFILES}; do \
-		${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/$${file} ${DOCDIR}; \
+		${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/$${file} \
+			${DESTDIR}${DOCDIR}; \
 	done
 
 .include "../../mk/bsd.pkg.mk"
