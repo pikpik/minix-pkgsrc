@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2005/07/26 09:00:42 dillo Exp $
+# $NetBSD: Makefile,v 1.1 2007/03/07 21:22:20 rillig Exp $
 #
 
 DISTNAME=	subst-1.0
 CATEGORIES=	regress
 DISTFILES=	# none
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Test the SUBST framework
 
 NO_CHECKSUM=	yes

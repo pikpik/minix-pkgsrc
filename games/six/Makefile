@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/11/30 21:55:06 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/01/18 05:06:36 tnn Exp $
 #
 
 DISTNAME=	six-0.5.3
@@ -6,7 +6,7 @@ PKGREVISION=	4
 CATEGORIES=	games
 MASTER_SITES=	http://six.retes.hu/download/
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://six.retes.hu/
 COMMENT=	Hex, a board game with very simple rules
 

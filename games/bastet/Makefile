@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/09/14 20:53:24 dogcow Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/04 06:59:03 jlam Exp $
 #
 
 DISTNAME=		bastet-0.41
@@ -7,7 +7,7 @@ CATEGORIES=		games
 MASTER_SITES=		http://fph.altervista.org/prog/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		rillig@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://fph.altervista.org/prog/bastet.shtml
 COMMENT=		Bastard Tetris
 

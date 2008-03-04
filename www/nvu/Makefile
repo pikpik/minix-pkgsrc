@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/31 00:04:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2007/12/01 21:29:52 rillig Exp $
 #
 
 DISTNAME=	nvu-1.0-sources
@@ -7,7 +7,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://cvs.nvu.com/download/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nvu.com/
 COMMENT=	Web Authoring System
 

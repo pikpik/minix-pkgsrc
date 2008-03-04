@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/11/30 21:55:10 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2008/01/18 05:08:37 tnn Exp $
 #
 
 DISTNAME=	taskjuggler-2.3.1
@@ -7,7 +7,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.taskjuggler.org/download/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.taskjuggler.org/
 COMMENT=	Project management tool
 

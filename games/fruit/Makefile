@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/10/02 20:05:20 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/04 06:59:04 jlam Exp $
 #
 
 DISTNAME=		fruit_21_linux
@@ -7,7 +7,7 @@ CATEGORIES=		games
 MASTER_SITES=		http://arctrix.com/nas/fruit/
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		rillig@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://arctrix.com/nas/fruit/
 COMMENT=		Chess playing engine
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/06/12 16:28:10 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/07/22 04:46:15 rillig Exp $
 #
 
 DISTNAME=		spaceracer-0.2.4
@@ -7,7 +7,7 @@ CATEGORIES=		games
 MASTER_SITES=		http://spaceracer.sourceforge.net/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		rillig@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://spaceracer.sourceforge.net/
 COMMENT=		3D car racing game
 

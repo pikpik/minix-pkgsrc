@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/04/16 14:48:31 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/06/30 14:19:52 schmonz Exp $
 #
 
 DISTNAME=		xfrac310
@@ -8,7 +8,7 @@ CATEGORIES=		math
 MASTER_SITES=		${HOMEPAGE}
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		rillig@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://spanky.triumf.ca/pub/fractals/programs/unix/
 COMMENT=		Fractint for X11
 
