@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.541 2008/02/19 13:49:05 xtraeme Exp $
+# $NetBSD: Makefile,v 1.542 2008/03/03 03:05:44 bjs Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -342,6 +342,7 @@ SUBDIR+=	x3270
 SUBDIR+=	xaniroc
 SUBDIR+=	xauth
 SUBDIR+=	xautolock
+SUBDIR+=	xbacklight
 SUBDIR+=	xbanner
 SUBDIR+=	xbindkeys
 SUBDIR+=	xbindkeys-tk
