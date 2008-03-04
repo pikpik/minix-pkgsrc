@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2007/10/14 05:26:21 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2008/01/18 05:06:37 tnn Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/3DKit/Makefile.common"
 PKGREVISION=	13
@@ -13,8 +15,9 @@ NO_BUILD=	YES
 WRKSRC=		${WRKDIR}
 
 do-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/3DKit
-	${INSTALL_DATA} ${WRKSRC}/${DISTFILES} ${PREFIX}/share/doc/3DKit
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/3DKit
+	${INSTALL_DATA} ${WRKSRC}/${DISTFILES} \
+		${DESTDIR}${PREFIX}/share/doc/3DKit
 
 .include "../../graphics/GlutKit/buildlink3.mk"
 .include "../../graphics/GLXKit/buildlink3.mk"

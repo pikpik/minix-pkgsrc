@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/06/05 17:25:23 joerg Exp $
 #
 
 DISTNAME=		metacam-1.2
@@ -10,13 +10,15 @@ MAINTAINER=		simonb@NetBSD.org
 HOMEPAGE=		http://www.cheeseplant.org/~daniel/pages/metacam.html
 COMMENT=		Digital camera image meta-information reader
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_LANGUAGES=		c++
 USE_TOOLS+=		gmake
 BUILD_TARGET=		default
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/metacam ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/metacam ${DESTDIR}${PREFIX}/bin
 
 .include "../../devel/libgetopt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
