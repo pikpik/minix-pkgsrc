@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/10/29 13:06:44 uebayasi Exp $
+# $NetBSD: Makefile,v 1.13 2008/01/04 05:54:57 obache Exp $
 #
 
 DISTNAME=	elscreen-1.4.5
@@ -20,13 +20,15 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.morishima.net/~naoto/software/elscreen/
 COMMENT=	Window manager within Emacs
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 NO_BUILD=	yes
 
 do-install:
-	@${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}/elscreen
-	@${INSTALL_DATA_DIR} ${PREFIX}/share/doc/elscreen
-	@${INSTALL_DATA} ${WRKDIR}/*/*.el ${EMACS_LISPPREFIX}/elscreen
-	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/elscreen
+	${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/elscreen
+	${INSTALL_DATA} ${WRKDIR}/*/*.el ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/elscreen
 
 .include "../../mk/emacs.mk"
 

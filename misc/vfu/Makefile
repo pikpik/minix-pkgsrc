@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2006/06/16 17:35:04 rillig Exp $
+# $NetBSD: Makefile,v 1.45 2006/10/04 21:49:19 wiz Exp $
 #
 
 DISTNAME=	vfu-3.04
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cade.datamax.bg/vfu/
 COMMENT=	Small, handy, easy-to-use file manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	perl:run
@@ -33,12 +35,12 @@ do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${SH} install
 
 post-install:
-	${INSTALL_DATA_DIR} ${DOCDIR} ${EGDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR} ${DESTDIR}${EGDIR}
 	cd ${WRKSRC} &&							\
 	${INSTALL_DATA} COPYING INSTALL CONFIG FAQ HISTORY NOTES README \
-		README.DOS THANKS.TO TODO XWINDOW.NOTES ${DOCDIR}
+		README.DOS THANKS.TO TODO XWINDOW.NOTES ${DESTDIR}${DOCDIR}
 	cd ${WRKSRC} &&							\
-	${INSTALL_DATA} ${WRKSRC}/vfu.conf ${EGDIR}/vfu.conf
+	${INSTALL_DATA} ${WRKSRC}/vfu.conf ${DESTDIR}${EGDIR}/vfu.conf
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
