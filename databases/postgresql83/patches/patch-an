@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/interfaces/ecpg/test/Makefile.regress.orig	2007-01-21 10:19:06.000000000 +0100
++++ src/interfaces/ecpg/test/Makefile.regress
+@@ -8,7 +8,7 @@ override LIBS := -lecpg -lpgtypes $(filt
+ ECPG = ../../preproc/ecpg --regression -I$(srcdir)/../../include
+ 
+ %: %.c
+-	$(CC) $(CPPFLAGS) $(CFLAGS) $^ $(LDFLAGS) $(LIBS) -o $@
++	${LIBTOOL} --mode=link $(CC) $(CPPFLAGS) $(CFLAGS) $^ $(LDFLAGS) $(LIBS) -o $@
+ 
+ %.c: %.pgc ../regression.h
+ 	$(ECPG) -o $@ -I$(srcdir) $<
