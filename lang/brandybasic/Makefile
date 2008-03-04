@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/10/04 21:46:12 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2007/11/20 22:11:50 rillig Exp $
 #
 
 DISTNAME=	b116
@@ -15,6 +15,8 @@ COMMENT=	Brandy Basic V interpreter - Acorn ARM Computers BASIC dialect
 
 NOT_FOR_PLATFORM=	SunOS-*-* # needs porting
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/brandy-1.0.16
 DOCDIR=		${PREFIX}/share/doc/brandy
 EXAMPLEDIR=	${PREFIX}/share/examples/brandy
@@ -24,10 +26,12 @@ USE_TOOLS+=		gtar
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_DATA_DIR} ${DOCDIR}
-	${INSTALL_DATA_DIR} ${EXAMPLEDIR}
-	cd ${WRKSRC}/docs && ${GTAR} -cf - `ls |grep -v .orig` | (cd ${DOCDIR} && tar xf -)
-	cd ${WRKSRC}/examples && ${GTAR} -cf - [a-z]* | (cd ${EXAMPLEDIR} && tar xf -)
-	${INSTALL_PROGRAM} ${WRKSRC}/brandy ${PREFIX}/bin/brandy
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${EXAMPLEDIR}
+	cd ${WRKSRC}/docs && ${GTAR} -cf - `ls |grep -v .orig` | \
+		(cd ${DESTDIR}${DOCDIR} && tar xf -)
+	cd ${WRKSRC}/examples && ${GTAR} -cf - [a-z]* | \
+		(cd ${DESTDIR}${EXAMPLEDIR} && tar xf -)
+	${INSTALL_PROGRAM} ${WRKSRC}/brandy ${DESTDIR}${PREFIX}/bin/brandy
 
 .include "../../mk/bsd.pkg.mk"
