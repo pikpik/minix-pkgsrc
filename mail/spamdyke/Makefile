@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/07/03 13:54:45 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/02/25 07:38:00 schmonz Exp $
 #
 
 DISTNAME=	spamdyke-3.1.6
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://www.spamdyke.org/
 COMMENT=	Monitors and intercept incoming SMTP connections to qmail
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/${PKGBASE}
 
@@ -30,11 +32,11 @@ INSTALLATION_DIRS=	bin share/doc/${PKGBASE}
 do-install:
 	cd ${WRKSRC};							\
 	for f in spamdyke; do						\
-		${INSTALL_PROGRAM} $${f} ${PREFIX}/bin;			\
+		${INSTALL_PROGRAM} $${f} ${DESTDIR}${PREFIX}/bin;	\
 	done;								\
 	cd ../documentation;						\
 	for f in *.txt *.html; do					\
-		${INSTALL_DATA} $${f} ${PREFIX}/share/doc/${PKGBASE};	\
+		${INSTALL_DATA} $${f} ${DESTDIR}${PREFIX}/share/doc/${PKGBASE};\
 	done
 
 .include "../../mk/resolv.buildlink3.mk"
