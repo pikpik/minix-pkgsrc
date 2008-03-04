@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2007/02/22 19:30:03 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2007/09/02 13:03:50 joerg Exp $
 #
 
 DISTNAME=	starfighter-1.1-1
+PKGNAME=	starfighter-1.1.1
 PKGREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/xtraeme/
