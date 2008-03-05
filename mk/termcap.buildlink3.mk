@@ -1,4 +1,4 @@
-# $NetBSD: termcap.buildlink3.mk,v 1.1 2008/02/29 22:41:13 jlam Exp $
+# $NetBSD: termcap.buildlink3.mk,v 1.2 2008/03/02 07:05:28 jlam Exp $
 #
 # This Makefile fragment is meant to be included by packages that require
 # a termcap implementation that supports the basic termcap functions:
@@ -44,6 +44,9 @@ BUILD_DEFS+=	TERMCAP_TYPE
 BUILDLINK_TRANSFORM+=		rm:-l${_tcap_}
 .  endif
 .endfor
+.if empty(TERMCAP_TYPE:Mcurses)
+BUILDLINK_TRANSFORM+=		rm:-lncurses
+.endif
 BUILDLINK_TRANSFORM+=		l:termcap:${BUILDLINK_LIBNAME.termcap}
 
 .endif	# TERMCAP_BUILDLINK3_MK
