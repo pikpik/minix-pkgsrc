@@ -1,4 +1,4 @@
-# $NetBSD: termcap.buildlink3.mk,v 1.4 2008/03/05 07:10:26 jlam Exp $
+# $NetBSD: termcap.buildlink3.mk,v 1.5 2008/03/05 16:23:52 jlam Exp $
 #
 # This Makefile fragment is meant to be included by packages that require
 # a termcap implementation that supports the basic termcap functions:
@@ -34,7 +34,7 @@ TERMCAP_TYPE=	none
 .else
 TERMCAP_TYPE=	curses		# pkgsrc termcap is curses
 .endif
-BUILD_DEFS+=	TERMCAP_TYPE
+BUILD_DEFS_EFFECTS+=	TERMCAP_TYPE
 
 # Most GNU configure scripts will try finding every termcap implementation,
 # so prevent them from finding any except for the one we decide upon.
