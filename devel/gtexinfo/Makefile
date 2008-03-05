@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.68 2007/06/30 14:24:14 tnn Exp $
+# $NetBSD: Makefile,v 1.69 2008/01/30 08:19:24 obache Exp $
 
 DISTNAME=		texinfo-4.11
 PKGNAME=		g${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel sysutils
 MASTER_SITES=		${MASTER_SITE_GNU:=texinfo/}
 EXTRACT_SUFX=		.tar.bz2
@@ -35,7 +36,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.locale
 CONFIGURE_ARGS+=	--disable-nls
 .endif
 
-.include "../../mk/curses.buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 
 # This need to be defined here to override the setting in texinfo.mk
