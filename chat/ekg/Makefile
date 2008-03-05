@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2007/10/14 07:48:52 adam Exp $
+# $NetBSD: Makefile,v 1.40 2008/01/18 05:06:23 tnn Exp $
 
 DISTNAME=	ekg-1.7
 PKGREVISION=	1
@@ -9,6 +9,8 @@ MASTER_SITES=	http://ekg.chmurka.net/ \
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://ekg.chmurka.net/
 COMMENT=	Experimental Gadu-Gadu Client (Polish instant messaging system)
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_GNU_READLINE=	yes
 USE_LIBTOOL=		yes
