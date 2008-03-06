@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/02/14 00:49:23 rillig Exp $
-bin/btpd
+@comment $NetBSD: PLIST,v 1.2 2006/02/22 22:09:44 wiz Exp $
 bin/btcli
 bin/btinfo
+bin/btpd
 share/doc/btpd/README
 @dirrm share/doc/btpd
