@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2006/04/06 06:22:32 reed Exp $
+# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:02 rillig Exp $
 #
 
 DISTNAME=		flodo-v4
-PKGNAME=		flodo-4-20040907
+PKGNAME=		flodo-4.20040907
 CATEGORIES=		net
 MASTER_SITES=		http://arctic.org/~dean/flodo/
 EXTRACT_SUFX=		.tar.bz2
