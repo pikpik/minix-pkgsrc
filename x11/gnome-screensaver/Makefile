@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2007/09/21 13:04:30 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2007/11/05 19:45:50 drochner Exp $
 #
 
 DISTNAME=	gnome-screensaver-2.20.0
+PKGREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-screensaver/2.20/}
 

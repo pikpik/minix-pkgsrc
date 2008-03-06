@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2007/06/05 05:37:34 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2007/10/25 21:24:53 adam Exp $
 
 DISTNAME=	gsasl-0.2.21
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://josefsson.org/gsasl/releases/ \
 		ftp://alpha.gnu.org/pub/gnu/gsasl/
