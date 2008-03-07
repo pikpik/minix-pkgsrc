@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2008/03/03 15:53:03 jlam Exp $
+# $NetBSD: Makefile,v 1.62 2008/03/07 18:17:26 mrg Exp $
 #
 
 DISTNAME=	bozohttpd-20080303
@@ -15,6 +15,9 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
+
+# This package is IP family agnostic.
+BUILD_DEFS+=		IPV6_READY
 
 MAKE_FILE=		Makefile.boot
 
