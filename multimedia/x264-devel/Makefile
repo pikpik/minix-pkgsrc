@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/01/04 18:41:54 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/01/07 13:33:27 joerg Exp $
 #
 
 SNAPSHOT_DATE=		20071218
@@ -25,6 +25,7 @@ USE_TOOLS+=		gmake
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
+CONFIGURE_ARGS+=	--enable-pic
 
 BUILD_TARGET=		default
 
