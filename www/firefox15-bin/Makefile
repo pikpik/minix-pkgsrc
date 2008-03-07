@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/05/31 07:26:46 ghen Exp $
+# $NetBSD: Makefile,v 1.3 2007/07/29 05:19:56 jlam Exp $
 
 MOZILLA=		firefox
 MOZ_VER=		1.5.0.12
@@ -11,5 +11,7 @@ DIST_SUBDIR=		${MOZILLA}/releases/${MOZ_DIR}
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_PLATFORMS+=	solaris-i386 solaris-sparc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../www/seamonkey-bin/Makefile.common"
