@@ -1,4 +1,4 @@
-# $NetBSD: modules.mk,v 1.18 2008/02/08 15:10:41 obache Exp $
+# $NetBSD: modules.mk,v 1.19 2008/03/01 02:31:56 obache Exp $
 
 .if !defined(_RUBY_MODULE_MK)
 _RUBY_MODULE_MK=	# defined
@@ -107,7 +107,7 @@ do-install:	ruby-setup-install
 
 _RUBY_SETUP_INSTALLARGS=   ${INSTALL_TARGET}
 .if ${_USE_DESTDIR} != "no"
-_RUBY_SETUP_INSTALLARGS+=   --prefix=${DESTDIR:Q}
+_RUBY_SETUP_INSTALLARGS+=   --prefix=${DESTDIR:Q}${PREFIX:Q}
 .endif
 
 ruby-setup-install:
