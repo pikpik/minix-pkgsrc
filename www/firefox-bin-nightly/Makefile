@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/09/24 16:42:56 salo Exp $
+# $NetBSD: Makefile,v 1.6 2007/07/29 05:19:53 jlam Exp $
 
 MOZILLA=	firefox
 
@@ -7,5 +7,7 @@ COMMENT=	Lightweight gecko-based web browser (nightly binary pkg)
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_PLATFORMS+=	solaris-i386 solaris-sparc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../www/seamonkey-bin-nightly/Makefile.common"
