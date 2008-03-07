@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.60 2008/01/18 05:09:48 tnn Exp $
+# $NetBSD: Makefile,v 1.61 2008/03/03 15:53:03 jlam Exp $
 #
 
 DISTNAME=	bozohttpd-20080303
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
+PKGREVISION=	1
 
 MAINTAINER=	mrg@eterna.com.au
 HOMEPAGE=	http://www.eterna.com.au/bozohttpd/
