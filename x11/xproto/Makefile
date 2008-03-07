@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2008/01/15 22:58:55 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2008/01/24 20:15:20 joerg Exp $
 #
 
-DISTNAME=		xproto-7.0.11
-PKGREVISION=		1
+DISTNAME=		xproto-7.0.12
 CATEGORIES=		x11 devel
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/proto/
 EXTRACT_SUFX=		.tar.bz2
