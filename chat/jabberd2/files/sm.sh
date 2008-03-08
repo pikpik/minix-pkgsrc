@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: sm.sh,v 1.1.1.1 2004/03/28 19:44:07 xtraeme Exp $
+# $NetBSD: sm.sh,v 1.2 2004/06/26 11:21:46 abs Exp $
 #
 # PROVIDE: sm
 # REQUIRE: DAEMON c2s
@@ -35,6 +35,8 @@ remove_pidfile()
 
 if [ -f /etc/rc.subr ]; then
 	load_rc_config $name
+	# XXX Previous commands seem to complete but not be ready.
+	sleep 5
 	run_rc_command "$1"
 else
 	@ECHO@ -n " ${name}"
