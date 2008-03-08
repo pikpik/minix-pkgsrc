@@ -1,3 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2002/06/16 12:05:29 cjep Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/03/03 04:17:41 jschauma Exp $
 bin/xclip
-${IMAKE_MAN_DIR}/xclip.${IMAKE_MANNEWSUFFIX}
+bin/xclip-copyfile
+bin/xclip-cutfile
+bin/xclip-pastefile
+man/man1/xclip.1
