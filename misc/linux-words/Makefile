@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/07 23:24:24 reed Exp $
 
 DISTNAME=		linux.words.2
-PKGNAME=		linux-words-2.0
+PKGNAME=		linux-words-2
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=libs/}
 
