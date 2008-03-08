@@ -1,9 +1,9 @@
 $NetBSD$
 
---- src/df.c.orig	2007-03-18 22:36:43.000000000 +0100
+--- src/df.c.orig	2008-01-11 14:47:21.000000000 +0100
 +++ src/df.c
-@@ -943,8 +943,10 @@ main (int argc, char **argv)
- 	     _("%scannot read table of mounted file systems"), warning);
+@@ -944,8 +944,10 @@ main (int argc, char **argv)
+ 	     _("cannot read table of mounted file systems"));
      }
  
 +#if HAVE_SYNC
