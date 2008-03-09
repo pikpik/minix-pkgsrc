@@ -1,4 +1,4 @@
-/*	$NetBSD: lstClose.c,v 1.11 2006/10/27 21:37:25 dsl Exp $	*/
+/*	$NetBSD: lstPrev.c,v 1.2 2006/10/27 21:37:25 dsl Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990, 1993
@@ -33,54 +33,47 @@
  */
 
 #ifndef MAKE_NATIVE
-static char rcsid[] = "$NetBSD: lstClose.c,v 1.11 2006/10/27 21:37:25 dsl Exp $";
+static char rcsid[] = "$NetBSD: lstPrev.c,v 1.2 2006/10/27 21:37:25 dsl Exp $";
 #else
 #include <sys/cdefs.h>
 #ifndef lint
 #if 0
-static char sccsid[] = "@(#)lstClose.c	8.1 (Berkeley) 6/6/93";
+static char sccsid[] = "@(#)lstSucc.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: lstClose.c,v 1.11 2006/10/27 21:37:25 dsl Exp $");
+__RCSID("$NetBSD: lstPrev.c,v 1.2 2006/10/27 21:37:25 dsl Exp $");
 #endif
 #endif /* not lint */
 #endif
 
 /*-
- * LstClose.c --
- *	Close a list for sequential access.
- *	The sequential functions access the list in a slightly different way.
- *	CurPtr points to their idea of the current node in the list and they
- *	access the list based on it. Because the list is circular, Lst_Next
- *	and Lst_Prev will go around the list forever. Lst_IsAtEnd must be
- *	used to determine when to stop.
+ * LstPrev.c --
+ *	return the predecessor to a given node
  */
 
 #include	"lstInt.h"
 
 /*-
  *-----------------------------------------------------------------------
- * Lst_Close --
- *	Close a list which was opened for sequential access.
- *
- * Input:
- *	l		The list to close
+ * Lst_Prev --
+ *	Return the predecessor to the given node on its list.
  *
  * Results:
- *	None.
+ *	The predecessor of the node, if it exists (note that on a circular
+ *	list, if the node is the only one in the list, it is its own
+ *	predecessor).
  *
  * Side Effects:
- *	The list is closed.
+ *	None.
  *
  *-----------------------------------------------------------------------
  */
-void
-Lst_Close(Lst l)
+LstNode
+Lst_Prev(LstNode ln)
 {
-    List 	list = l;
-
-    if (LstValid(l) == TRUE) {
-	list->isOpen = FALSE;
-	list->atEnd = Unknown;
+    if (ln == NILLNODE) {
+	return (NILLNODE);
+    } else {
+	return (ln->prevPtr);
     }
 }
 
