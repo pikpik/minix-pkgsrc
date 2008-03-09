@@ -1,7 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:58:36 zuntum Exp $
+@comment $NetBSD$
 bin/rsync
 man/man1/rsync.1
 man/man5/rsyncd.conf.5
 share/doc/rsync/README
 share/doc/rsync/tech_report.tex
+share/examples/rsync/rsyncd.conf
+@dirrm share/examples/rsync
 @dirrm share/doc/rsync
