@@ -1,4 +1,4 @@
-/*	$NetBSD: config.h,v 1.17 2004/05/07 00:04:38 ross Exp $	*/
+/*	$NetBSD: config.h,v 1.20 2007/10/14 20:22:53 apb Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.
@@ -72,10 +72,6 @@
  *	from: @(#)config.h	8.1 (Berkeley) 6/6/93
  */
 
-#ifndef DEFSHELL
-#define	DEFSHELL	1			/* Bourne shell */
-#endif
-
 /*
  * DEFMAXJOBS
  * DEFMAXLOCAL
@@ -144,13 +140,6 @@
  *				# of ${VAR}
  */
 #define SUNSHCMD
-
-/*
- * USE_PGRP
- *	Kill the process group of the job so that all the progeny of the
- *	current job dies, instead of just the one forked.
- */
-#define USE_PGRP
 
 /*
  * USE_IOVEC

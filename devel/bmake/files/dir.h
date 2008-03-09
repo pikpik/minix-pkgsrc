@@ -1,4 +1,4 @@
-/*	$NetBSD: dir.h,v 1.11 2004/02/03 19:25:29 chuck Exp $	*/
+/*	$NetBSD: dir.h,v 1.13 2008/02/15 21:29:50 christos Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.

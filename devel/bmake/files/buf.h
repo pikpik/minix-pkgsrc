@@ -1,4 +1,4 @@
-/*	$NetBSD: buf.h,v 1.10 2003/08/07 11:14:48 agc Exp $	*/
+/*	$NetBSD: buf.h,v 1.12 2008/02/15 21:29:50 christos Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.
