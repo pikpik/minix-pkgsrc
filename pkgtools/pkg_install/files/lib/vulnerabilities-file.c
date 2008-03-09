@@ -36,7 +36,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: main.c,v 1.1.1.6 2007/12/24 00:03:05 joerg Exp $");
+__RCSID("$NetBSD: vulnerabilities-file.c,v 1.1 2008/02/19 15:16:24 joerg Exp $");
 
 #if HAVE_SYS_STAT_H
 #include <sys/stat.h>
@@ -73,7 +73,7 @@ verify_signature(const char *input, size_t input_len)
 	int fd[2], status;
 
 	if (gpg_cmd == NULL)
-		err(EXIT_FAILURE, "GPG variable not set in configuration file");
+		errx(EXIT_FAILURE, "GPG variable not set in configuration file");
 
 	if (pipe(fd) == -1)
 		err(EXIT_FAILURE, "cannot create input pipes");
