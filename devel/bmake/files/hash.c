@@ -1,4 +1,4 @@
-/*	$NetBSD: hash.c,v 1.16 2005/08/04 00:20:12 christos Exp $	*/
+/*	$NetBSD: hash.c,v 1.1.1.1 2005/12/02 00:03:00 sjg Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.
@@ -70,14 +70,14 @@
  */
 
 #ifndef MAKE_NATIVE
-static char rcsid[] = "$NetBSD: hash.c,v 1.16 2005/08/04 00:20:12 christos Exp $";
+static char rcsid[] = "$NetBSD: hash.c,v 1.1.1.1 2005/12/02 00:03:00 sjg Exp $";
 #else
 #include <sys/cdefs.h>
 #ifndef lint
 #if 0
 static char sccsid[] = "@(#)hash.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: hash.c,v 1.16 2005/08/04 00:20:12 christos Exp $");
+__RCSID("$NetBSD: hash.c,v 1.1.1.1 2005/12/02 00:03:00 sjg Exp $");
 #endif
 #endif /* not lint */
 #endif
