@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.168 2008/02/22 13:34:11 obache Exp $
+# $NetBSD: Makefile,v 1.169 2008/02/29 00:22:22 obache Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -212,6 +212,7 @@ SUBDIR+=	xmame
 SUBDIR+=	xmess
 SUBDIR+=	xtrs
 SUBDIR+=	xyame
+SUBDIR+=	yabause
 SUBDIR+=	z26
 SUBDIR+=	zsnes
 
