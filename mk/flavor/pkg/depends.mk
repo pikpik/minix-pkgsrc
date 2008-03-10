@@ -1,4 +1,4 @@
-# $NetBSD: depends.mk,v 1.39 2007/09/21 07:27:41 rillig Exp $
+# $NetBSD: depends.mk,v 1.40 2007/10/14 07:42:31 rillig Exp $
 
 # This command prints out the dependency patterns for all full (run-time)
 # dependencies of the package.
@@ -53,7 +53,7 @@ _LIST_DEPENDS_CMD.bootstrap=	\
 			" "${BOOTSTRAP_DEPENDS:Q} " " " "
 
 _RESOLVE_DEPENDS_CMD=	\
-	${SETENV} _PKG_DBDIR=${_PKG_DBDIR:Q} PKG_ADMIN=${PKG_ADMIN:Q} \
+	${SETENV} _PKG_DBDIR=${_PKG_DBDIR:Q} PKG_INFO=${PKG_INFO:Q} \
 		_DEPENDS_FILE=${_DEPENDS_FILE:Q} \
 		${SH} ${PKGSRCDIR}/mk/flavor/pkg/resolve-dependencies \
 			" "${BOOTSTRAP_DEPENDS:Q} \

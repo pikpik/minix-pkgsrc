@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.200 2008/02/07 21:36:13 rillig Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.201 2008/02/19 11:12:51 xtraeme Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -278,13 +278,11 @@ _BLNK_PKG_DBDIR.${_pkg_}?=	# empty
 .    for _depend_ in ${BUILDLINK_API_DEPENDS.${_pkg_}}
 .      if empty(_BLNK_PKG_DBDIR.${_pkg_}:M*not_found)
 _BLNK_PKG_DBDIR.${_pkg_}!=	\
-	dir="";								\
-	if [ -d ${_PKG_DBDIR} ]; then					\
-		dir=`cd ${_PKG_DBDIR}; ${PKG_ADMIN} -S lsbest "${_depend_}" || ${TRUE}`; \
-	fi;								\
-	case "$$dir" in							\
+	pkg=`${PKG_INFO} -E "${_depend_}" || ${TRUE}`;			\
+	case "$$pkg" in							\
 	"")	dir="_BLNK_PKG_DBDIR.${_pkg_}_not_found" ;;		\
-	*)	if [ -f $$dir/+DEPOT ]; then				\
+	*)	dir="${_PKG_DBDIR}/$$pkg";				\
+		if [ -f $$dir/+DEPOT ]; then				\
 			dir=`${HEAD} -1 $$dir/+DEPOT`;			\
 		fi ;;							\
 	esac;								\
