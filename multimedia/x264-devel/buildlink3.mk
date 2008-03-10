@@ -1,6 +1,5 @@
-# $NetBSD: buildlink3.mk,v 1.4 2006/07/08 22:39:32 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2006/07/08 23:11:02 jlam Exp $
 
-BUILDLINK_DEPMETHOD.x264-devel?=	build
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 X264_DEVEL_BUILDLINK3_MK:=	${X264_DEVEL_BUILDLINK3_MK}+
 
