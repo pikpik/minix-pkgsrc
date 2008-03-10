@@ -1,9 +1,10 @@
-# $NetBSD: Makefile.in,v 1.4 2004/08/21 06:33:40 jlam Exp $
+# $NetBSD: Makefile.in,v 1.5 2007/07/16 09:57:59 joerg Exp $
 
 prefix=		@prefix@
 exec_prefix=	@exec_prefix@
 sbindir=	@sbindir@
 mandir=		@mandir@
+datarootdir=	@datarootdir@
 
 man1dir=	$(mandir)/man1
 cat1dir=	$(mandir)/cat1
