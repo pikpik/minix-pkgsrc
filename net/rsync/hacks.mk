@@ -5,5 +5,5 @@
 ###
 .if ${OPSYS} == "Interix"
 PKG_HACKS+=	pkgsrc-iconv
-USE_GNU_ICONV=	yes
+.include "../../converters/libiconv/buildlink3.mk"
 .endif
