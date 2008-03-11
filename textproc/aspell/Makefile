@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2007/09/11 18:42:30 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2007/10/16 23:49:00 tnn Exp $
 #
 
 DISTNAME=		aspell-0.60.5
@@ -31,7 +31,7 @@ CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "IRIX"
+.if !empty(MACHINE_PLATFORM:MIRIX-5*)
 CPPFLAGS+=	-DDECLARE_VSNPRINTF -DDECLARE_SNPRINTF
 # IRIX 5 has an older implementation of signal()
 CPPFLAGS+=	-DHAVE_OLD_SIGNAL

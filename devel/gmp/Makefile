@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/11/25 08:35:31 rillig Exp $
+# $NetBSD: Makefile,v 1.49 2007/12/02 13:04:08 wiz Exp $
 
 DISTNAME=	gmp-4.2.2
 CATEGORIES=	devel math
@@ -23,7 +23,7 @@ INFO_FILES=		# PLIST
 TEST_TARGET=		check
 
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "IRIX" && !empty(ABI)
+.if !empty(MACHINE_PLATFORM:MIRIX-5*) && !empty(ABI)
 ABI=			o32
 .endif
 
