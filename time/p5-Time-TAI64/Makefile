@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/09 10:41:48 kleink Exp $
 
-DISTNAME=	Time-TAI64-2.10
+DISTNAME=	Time-TAI64-2.11
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tt6
 CATEGORIES=	time perl5
