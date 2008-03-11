@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.13 2007/08/18 15:09:12 taca Exp $
+# $NetBSD: options.mk,v 1.14 2007/09/26 05:47:46 bjs Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sudo
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--without-pam
 .endif
 
 .if !empty(PKG_OPTIONS:Mkerberos)
+KRB5_ACCEPTED=		heimdal
+IS_BUILTIN.heimdal=	no
 .  include "../../mk/krb5.buildlink3.mk"
 CONFIGURE_ARGS+=	--without-kerb4
 CONFIGURE_ARGS+=	--with-kerb5
