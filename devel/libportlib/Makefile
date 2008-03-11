@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/12/15 14:34:20 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/03 17:45:36 jlam Exp $
 #
 
 DISTNAME=		portlib-1.01
@@ -10,7 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Portable file locking and directory reading
 
-PKG_DESTDIR_SUPPORT=	user-destir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/portlib-1.01
 INSTALLATION_DIRS=	include lib
