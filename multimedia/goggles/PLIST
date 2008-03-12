@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/goggles
+bin/ogle_gui_goggles
+share/doc/goggles/goggles_manual.pdf
+@dirrm share/doc/goggles
