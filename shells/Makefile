@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.42 2007/04/01 21:22:05 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2007/08/13 08:12:49 rillig Exp $
 #
 
 COMMENT=	Shells
 
 SUBDIR+=	ast-ksh
 SUBDIR+=	bash
+SUBDIR+=	bash-completion
 SUBDIR+=	bash2
 SUBDIR+=	bash2-doc
 SUBDIR+=	eltclsh
