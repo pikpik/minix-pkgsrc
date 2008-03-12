@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/cvsclone
+share/doc/cvsclone/README.txt
+@dirrm share/doc/cvsclone
