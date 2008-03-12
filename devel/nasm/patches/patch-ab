@@ -1,6 +1,6 @@
-$NetBSD: patch-ab,v 1.2 2008/01/28 05:38:20 bjs Exp $
+$NetBSD$
 
---- doc/Makefile.in.orig	2008-01-17 15:22:17.000000000 -0500
+--- doc/Makefile.in.orig	2008-02-19 20:08:57.000000000 +0100
 +++ doc/Makefile.in
 @@ -8,7 +8,8 @@ prefix		= @prefix@
  exec_prefix	= @exec_prefix@
@@ -28,8 +28,8 @@ $NetBSD: patch-ab,v 1.2 2008/01/28 05:38:20 bjs Exp $
  
  # exports
  export srcdir
-@@ -76,7 +76,8 @@ spotless: clean
- 	-rm -f nasmdoc*.ps
+@@ -79,7 +79,8 @@ spotless: clean
+ 	-rm -f nasmdoc*.ps inslist.src
  
  install: all
 -	$(INSTALL_DATA) info/* $(INSTALLROOT)$(infodir)
