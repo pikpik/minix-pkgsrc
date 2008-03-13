@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.237 2007/12/04 00:35:28 grant Exp $
+# $NetBSD: Makefile,v 1.238 2008/03/04 12:51:11 adam Exp $
 #
 
 COMMENT=	Databases
@@ -30,7 +30,6 @@ SUBDIR+=	ipa_sdb
 SUBDIR+=	java-db3
 SUBDIR+=	java-qdbm
 SUBDIR+=	jdb
-SUBDIR+=	jdbc-postgresql80
 SUBDIR+=	jdbc-postgresql81
 SUBDIR+=	jdbc-postgresql82
 SUBDIR+=	kmysqladmin
@@ -107,7 +106,6 @@ SUBDIR+=	p5-qdbm
 SUBDIR+=	p5-sybperl
 SUBDIR+=	palm-db-tools
 SUBDIR+=	pear-DB
-SUBDIR+=	pgadmin3
 SUBDIR+=	pgpool
 SUBDIR+=	pgtcl
 SUBDIR+=	pgtclng
@@ -133,12 +131,6 @@ SUBDIR+=	php5-mysqli
 SUBDIR+=	phpldapadmin
 SUBDIR+=	phpmyadmin
 SUBDIR+=	phppgadmin
-SUBDIR+=	postgresql80
-SUBDIR+=	postgresql80-client
-SUBDIR+=	postgresql80-plperl
-SUBDIR+=	postgresql80-plpython
-SUBDIR+=	postgresql80-pltcl
-SUBDIR+=	postgresql80-server
 SUBDIR+=	postgresql81
 SUBDIR+=	postgresql81-client
 SUBDIR+=	postgresql81-plperl
