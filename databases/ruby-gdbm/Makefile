@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/12/06 16:25:26 taca Exp $
+# $NetBSD: Makefile,v 1.16 2007/03/15 16:42:06 taca Exp $
 #
 
 DISTNAME=		${RUBY_DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=		${MASTER_SITE_RUBY}
 MAINTAINER=		taca@NetBSD.org
 HOMEPAGE=		${RUBY_HOMEPAGE}
 COMMENT=		Ruby extension to GDBM library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 RUBY_HAS_ARCHLIB=	yes
 USE_RUBY_EXTCONF=	yes
