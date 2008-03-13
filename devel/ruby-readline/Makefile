@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/12/13 10:55:51 taca Exp $
+# $NetBSD: Makefile,v 1.22 2007/03/15 16:42:59 taca Exp $
 #
 
 DISTNAME=		${RUBY_DISTNAME}
@@ -10,6 +10,8 @@ MAINTAINER=		taca@NetBSD.org
 HOMEPAGE=		${RUBY_HOMEPAGE}
 COMMENT=		Ruby extension to readline library
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 RUBY_HAS_ARCHLIB=	yes
 USE_RUBY_EXTCONF=	yes
 EXTRACT_ELEMENTS=	${RUBY_DISTNAME}/ext/readline
@@ -18,9 +20,9 @@ WRKSRC=			${RUBY_WRKSRC}/ext/readline
 RUBY_DOCS=		README README.ja
 
 post-install:
-	${INSTALL_DATA_DIR} ${RUBY_DOCDIR}/readline
+	${INSTALL_DATA_DIR} ${DESTDIR}${RUBY_DOCDIR}/readline
 .for f in ${RUBY_DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/readline
+	${INSTALL_DATA} ${WRKSRC}/${f} ${DESTDIR}${RUBY_DOCDIR}/readline
 .endfor
 
 .include "../../devel/readline/buildlink3.mk"
