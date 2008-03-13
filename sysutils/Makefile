@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.420 2008/03/08 00:57:58 reed Exp $
+# $NetBSD: Makefile,v 1.421 2008/03/12 23:53:36 tonnerre Exp $
 #
 
 COMMENT=	System utilities
@@ -202,6 +202,7 @@ SUBDIR+=	pscpug
 SUBDIR+=	psftools
 SUBDIR+=	psmisc
 SUBDIR+=	pstree
+SUBDIR+=	puppet
 SUBDIR+=	pv
 SUBDIR+=	pwgen
 SUBDIR+=	py-dbus
