@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/14 01:32:48 wiz Exp $
 #
 
 DISTNAME=	clive-0.4.6
@@ -6,7 +6,7 @@ CATEGORIES=	net multimedia www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=clive/} \
 		http://dl.gna.org/clive/0.4/src/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://clive.sourceforge.net/
 COMMENT=	Command line video extraction tool for user-uploaded video hosts
 
