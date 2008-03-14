@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.367 2008/02/06 09:33:02 bjs Exp $
+# $NetBSD: Makefile,v 1.368 2008/02/09 20:40:21 jnemeth Exp $
 #
 
 COMMENT=	Audio tools
@@ -282,6 +282,7 @@ SUBDIR+=	sidplay
 SUBDIR+=	sidplay2
 SUBDIR+=	snd
 SUBDIR+=	solfege
+SUBDIR+=	sonata
 SUBDIR+=	sound-juicer
 SUBDIR+=	sox
 SUBDIR+=	speex
