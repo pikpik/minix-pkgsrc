@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1 2007/08/04 13:44:20 smb Exp $
+# $NetBSD: Makefile,v 1.2 2007/08/16 21:57:04 joerg Exp $
 #
-DISTNAME=stalonetray-0.6.5
+DISTNAME=stalonetray-0.7.6
 CATEGORIES=x11
 MASTER_SITES=${MASTER_SITE_SOURCEFORGE:=stalonetray/}
 
