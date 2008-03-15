@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:40 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/12/11 21:40:42 heinz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
 PKGNAME=	tcl-expect-${EXPECT_VERSION}
+PKGREVISION=	1
 CATEGORIES=	lang
 
 MAINTAINER=	jwise@NetBSD.org
