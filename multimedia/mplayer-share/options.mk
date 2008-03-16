@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.27 2008/02/24 22:24:34 jdc Exp $
+# $NetBSD: options.mk,v 1.28 2008/03/16 11:56:49 wiz Exp $
 
 .if defined(PKGNAME) && empty(PKGNAME:Mmplayer-share*)
 
@@ -274,6 +274,7 @@ CONFIGURE_ARGS+=	--disable-libvorbis
 
 .if !empty(PKG_OPTIONS:Mx264)
 CONFIGURE_ARGS+=	--enable-x264
+.  include "../../multimedia/x264-devel/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--disable-x264
 .endif
