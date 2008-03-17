@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.30 2007/09/07 22:12:13 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2007/11/17 13:40:16 wiz Exp $
 
 DISTNAME=	smtpfeed-1.18
 PKGREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.kyoto.wide.ad.jp/pub/mail/smtpfeed/ \
-		ftp://ftp.kyoto.wide.ad.jp/pub/mail/sendmail/ \
-		ftp://ftp.sendmail.org/ucb/src/sendmail/
+MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/smtpfeed/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.kyoto.wide.ad.jp/mta/sendmail.html#smtpfeed
+HOMEPAGE=	http://member.wide.ad.jp/wg/smtp/smtpfeed.html
 COMMENT=	SMTP Fast Exploding External Deliverer for Sendmail
 
 # sendmail 8.x with WIDE patch works better with it, than stock 8.x.
