@@ -1,6 +1,4 @@
-// Low-level functions for atomic operations: IA64 version  -*- C++ -*-
-
-/* $NetBSD$ */
+/* $NetBSD: atomicity.h,v 1.1 2008/03/17 02:32:43 bjs Exp $ */
 
 #ifndef _NETBSD_ATOMICITY_H
 #define _NETBSD_ATOMICITY_H       1
