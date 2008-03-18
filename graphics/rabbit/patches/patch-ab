@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- bin/rabbit.orig	2008-03-01 04:54:40.000000000 -0500
++++ bin/rabbit
+@@ -4,6 +4,7 @@
+ GC.disable
+ require "rbconfig"
+ 
++require "rubygems" rescue LoadError
+ require "rabbit/console"
+ require "rabbit/source"
+ require "rabbit/renderer"
