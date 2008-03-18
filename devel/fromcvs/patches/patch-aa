@@ -2,11 +2,17 @@ $NetBSD$
 
 --- commitset/commitset.rb.orig	2008-01-29 08:46:42.000000000 -0500
 +++ commitset/commitset.rb
-@@ -1,6 +1,7 @@
+@@ -1,7 +1,12 @@
  require 'rcsfile'
  require 'find'
  require 'md5'
-+require 'rubygems' rescue LoadError	# if using sqlite3 gem
- require 'sqlite3'
+-require 'sqlite3'
++begin
++  require 'sqlite3'
++rescue LoadError
++  require 'rubygems'
++  require 'sqlite3'
++end
  
  # Fix up SQLite3
+ module SQLite3
