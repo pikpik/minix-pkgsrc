@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2007/02/22 19:26:56 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/01/18 05:08:45 tnn Exp $
 #
 
 PKGNAME=	nagios-plugin-snmp-${PLUGINSVERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net sysutils
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	tonnerre@NetBSD.org
 COMMENT=	Nagios snmp plugins
 
 DEPENDS+=	nagios-plugins-${PLUGINSVERSION}{,nb[0-9]*}:../../net/nagios-plugins
