@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2008/02/04 20:10:34 tnn Exp $
+# $NetBSD: Makefile,v 1.31 2008/03/03 02:19:51 jlam Exp $
 #
 
 DISTNAME=	ircu2.10.12.12
 PKGNAME=	${DISTNAME:S/ircu2/ircu-2/}
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=undernet-ircu/}
 
