@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/11/30 22:12:07 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/04 09:22:27 wiz Exp $
 #
 
 DISTNAME=	pkg-config-0.23
@@ -28,6 +28,7 @@ CONFIGURE_ARGS+=	--cache-file=/dev/null
 
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	glib_cv_sane_realloc=yes glib_cv_uscore=no
+CONFIGURE_ARGS+=	glib_cv_rtldglobal_broken=no
 .endif
 
 # needed for fifth test case
