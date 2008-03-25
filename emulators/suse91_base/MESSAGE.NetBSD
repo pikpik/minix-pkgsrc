@@ -1,6 +1,0 @@
-==============================================================================
-$NetBSD$
-
-Do not forget to include COMPAT_LINUX in your kernel configuration file.
-Linux binaries require this option in order to work.
-==============================================================================
