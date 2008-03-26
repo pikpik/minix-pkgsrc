@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/08/17 20:25:44 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2008/01/09 18:49:21 drochner Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -28,7 +28,6 @@ SUBDIR+=	pkg_developer
 SUBDIR+=	pkgsrc-guide-tools
 SUBDIR+=	ruby-gnome2
 SUBDIR+=	suse100
-SUBDIR+=	suse9
 SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop
 SUBDIR+=	xfce4
