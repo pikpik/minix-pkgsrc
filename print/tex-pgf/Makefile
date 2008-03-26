@@ -1,10 +1,12 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/06 00:49:00 wiz Exp $
 #
 
 DISTNAME=	pgf-1.10
 PKGNAME=	tex-${DISTNAME}
 CATEGORIES=	print graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pgf/}
+PKGREVISION=	1
+DEPENDS=	tex-xkeyval:../../print/tex-xkeyval
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pgf.sourceforge.net/
