@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/04/30 19:24:11 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2007/12/13 14:48:09 taca Exp $
 
 DISTNAME=	mongrel-1.0.1
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://rubyforge.org/frs/download.php/16719/
 EXTRACT_SUFX=	.gem
@@ -11,7 +12,6 @@ COMMENT=	Fast HTTP library and server for Ruby
 
 BUILD_DEPENDS+=	rake-[0-9]*:../../devel/rake
 DEPENDS+=	${RUBY_PKGPREFIX}-daemons>=1.0.3:../../misc/ruby-daemons
-DEPENDS+=	${RUBY_PKGPREFIX}-fastthread>=1.0.0:../../devel/ruby-fastthread
 DEPENDS+=	${RUBY_PKGPREFIX}-gem_plugin>=0.2.2:../../misc/ruby-gem_plugin
 DEPENDS+=	rubygems-[0-9]*:../../misc/rubygems
 
