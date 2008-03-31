@@ -2,11 +2,16 @@ $NetBSD$
 
 --- bin/rabrick.orig	2008-03-01 04:54:40.000000000 -0500
 +++ bin/rabrick
-@@ -1,6 +1,7 @@
+@@ -1,6 +1,12 @@
  #!/usr/bin/env ruby
  # -*- ruby -*-
  
-+require "rubygems" rescue LoadError
++begin
++  require "rubygems"
++rescue LoadError
++  nil
++end
++
  require "webrick"
  
  require 'tofu/tofulet'
