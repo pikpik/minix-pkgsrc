@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2008/03/03 16:47:47 tron Exp $
+# $NetBSD: Makefile,v 1.66 2008/04/01 16:11:21 tron Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}-all-languages
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
@@ -70,7 +70,7 @@ do-install:
 
 	${INSTALL_DATA} ${WRKSRC}/*.php ${DESTDIR}${PMDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.css ${DESTDIR}${PMDIR}
-	${MV} ${PREFIX}/share/phpmyadmin/config.sample.inc.php \
+	${MV} ${DESTDIR}${PREFIX}/share/phpmyadmin/config.sample.inc.php \
 	  ${DESTDIR}${EXDIR}/config.inc.php
 
 	${INSTALL_DATA} ${WRKSRC}/Documentation.html ${DESTDIR}${PMDIR}
