@@ -1,8 +1,8 @@
-$NetBSD: patch-br,v 1.2 2006/01/02 22:33:36 jlam Exp $
+$NetBSD$
 
---- lib/util.c.orig	2007-08-20 22:04:50.000000000 +0900
+--- lib/util.c.orig	2008-03-08 10:33:34.000000000 -0500
 +++ lib/util.c
-@@ -2597,6 +2597,26 @@ char *lock_path(const char *name)
+@@ -2598,6 +2598,26 @@ char *lock_path(const char *name)
  }
  
  /*****************************************************************
