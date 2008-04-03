@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.147 2008/02/26 13:38:57 joerg Exp $
+# $NetBSD: Makefile,v 1.148 2008/03/21 23:28:33 joerg Exp $
 
 # Notes to package maintainers:
 #
@@ -56,6 +56,7 @@ USE_NATIVE_GCC=		yes
 PKG_ADD_CMD=		${WRKSRC}/add/pkg_add
 PKG_CREATE_CMD=		${WRKSRC}/create/pkg_create
 PKG_DELETE_CMD=		${WRKSRC}/delete/pkg_delete
+PKG_INFO_CMD=		${WRKSRC}/info/pkg_info
 
 CPPFLAGS+=		-D_LARGEFILE_SOURCE -D_LARGE_FILES
 CPPFLAGS+=		-D_FILE_OFFSET_BITS=64
