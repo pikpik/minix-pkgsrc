@@ -1,4 +1,4 @@
-# $NetBSD: fetch.mk,v 1.31 2007/12/01 10:56:31 rillig Exp $
+# $NetBSD: fetch.mk,v 1.32 2007/12/01 11:11:56 rillig Exp $
 
 _MASTER_SITE_BACKUP=	${MASTER_SITE_BACKUP:=${DIST_SUBDIR}${DIST_SUBDIR:D/}}
 _MASTER_SITE_OVERRIDE=	${MASTER_SITE_OVERRIDE:=${DIST_SUBDIR}${DIST_SUBDIR:D/}}
@@ -93,6 +93,7 @@ SITES.${fetchfile:T:S/=/--/}?= ${PATCH_SITES}
 ### fetch is a public target to fetch all of the package distribution
 ### files.
 ###
+_FETCH_TARGETS+=	${_PKG_INSTALL_DEPENDS:Dpkg_install-depends}
 _FETCH_TARGETS+=	bootstrap-depends
 _FETCH_TARGETS+=	check-vulnerable
 _FETCH_TARGETS+=	pre-fetch
