@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/09/13 15:53:51 obache Exp $
+# $NetBSD: Makefile,v 1.4 2008/02/13 11:49:44 obache Exp $
 #
 
 DISTNAME=		ming-0.3.0
+PKGREVISION=		1
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ming/}
 
