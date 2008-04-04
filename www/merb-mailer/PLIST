@@ -1,0 +1,14 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/merb-mailer-${PKGVERSION}.gem
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/README
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/TODO
+${GEM_LIBDIR}/lib/merb-mailer.rb
+${GEM_LIBDIR}/lib/merb-mailer/mail_controller.rb
+${GEM_LIBDIR}/lib/merb-mailer/mailer.rb
+${GEM_LIBDIR}/lib/merb-mailer/merb_controller.rb
+${GEM_HOME}/specifications/merb-mailer-${PKGVERSION}.gemspec
+@dirrm ${GEM_LIBDIR}/lib/merb-mailer
+@dirrm ${GEM_LIBDIR}/lib
+@dirrm ${GEM_LIBDIR}
