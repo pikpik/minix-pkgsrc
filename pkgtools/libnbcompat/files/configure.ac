@@ -1,4 +1,4 @@
-dnl $NetBSD: configure.ac,v 1.59 2008/02/21 16:50:08 tnn Exp $
+dnl $NetBSD: configure.ac,v 1.60 2008/03/21 23:28:08 joerg Exp $
 
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
@@ -276,6 +276,8 @@ AC_CHECK_FUNC(fts_open, [:], [
 	])
 	AC_LIBOBJ(fts)
 ])
+
+AC_CHECK_FUNC(timegm, [:], [AC_LIBOBJ(timegm)])
 
 # Handle Darwin 7 having a poll() compatibility function.  Be
 # conservative -- if we don't find one of <poll.h> or <sys/poll.h>, then
