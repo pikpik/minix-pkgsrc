@@ -1,0 +1,12 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/merb-builder-${PKGVERSION}.gem
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/README
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/TODO
+${GEM_LIBDIR}/lib/merb-builder.rb
+${GEM_LIBDIR}/lib/merb-builder/template.rb
+${GEM_HOME}/specifications/merb-builder-${PKGVERSION}.gemspec
+@dirrm ${GEM_LIBDIR}/lib/merb-builder
+@dirrm ${GEM_LIBDIR}/lib
+@dirrm ${GEM_LIBDIR}
