@@ -1,4 +1,4 @@
-/*	$NetBSD: ftp.c,v 1.9 2008/02/07 17:57:28 joerg Exp $	*/
+/*	$NetBSD: ftp.c,v 1.10 2008/04/02 15:33:14 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -63,9 +63,9 @@
 #include <ctype.h>
 #include <errno.h>
 #include <fcntl.h>
+#include <inttypes.h>
 #include <netdb.h>
 #include <stdarg.h>
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
