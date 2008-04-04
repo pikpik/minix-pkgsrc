@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.common,v 1.1 2008/02/16 23:10:06 tnn Exp $
+bin/benc2php
 bin/transmission-daemon
 bin/transmission-proxy
 bin/transmission-remote

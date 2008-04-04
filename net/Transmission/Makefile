@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2008/02/18 13:19:15 tnn Exp $
+# $NetBSD: Makefile,v 1.28 2008/03/08 20:59:58 tnn Exp $
 #
-DISTNAME=		transmission-1.06
-PKGNAME=		Transmission-1.06
+DISTNAME=		transmission-1.10
+PKGNAME=		Transmission-1.10
 CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
 EXTRACT_SUFX=		.tar.bz2
@@ -16,7 +16,7 @@ USE_TOOLS+=		gmake pkg-config intltool msgfmt
 EXTRACT_USING=		gtar
 
 GNU_CONFIGURE=		yes
-LDFLAGS+=		${BUILDLINK_LDADD.getopt}
+LDFLAGS+=		${BUILDLINK_LDADD.getopt} ${BUILDLINK_LDADD.gettext}
 # Tell libtool to link all internal libraries statically
 LDFLAGS+=		-static
 
