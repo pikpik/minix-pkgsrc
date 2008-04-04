@@ -1,4 +1,21 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/04/11 03:26:55 minskim Exp $
-${RUBY_SITELIBDIR}/cmd.rb
-${RUBY_DOCDIR}/cmd/README
-@dirrm ${RUBY_DOCDIR}/cmd
+@comment $NetBSD$
+${GEM_HOME}/cache/cmd-${PKGVERSION}.gem
+${GEM_LIBDIR}/AUTHORS
+${GEM_LIBDIR}/CHANGELOG
+${GEM_LIBDIR}/INSTALL
+${GEM_LIBDIR}/MIT-LICENSE
+${GEM_LIBDIR}/README
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/THANKS
+${GEM_LIBDIR}/TODO
+${GEM_LIBDIR}/example/calc.rb
+${GEM_LIBDIR}/example/my-phonebook.rb
+${GEM_LIBDIR}/example/phonebook.rb
+${GEM_LIBDIR}/lib/cmd.rb
+${GEM_LIBDIR}/setup.rb
+${GEM_LIBDIR}/test/tc_cmd.rb
+${GEM_HOME}/specifications/cmd-${PKGVERSION}.gemspec
+@dirrm ${GEM_LIBDIR}/test
+@dirrm ${GEM_LIBDIR}/lib
+@dirrm ${GEM_LIBDIR}/example
+@dirrm ${GEM_LIBDIR}
