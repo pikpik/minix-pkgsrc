@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/metaid-${PKGVERSION}.gem
+${GEM_LIBDIR}/.require_paths
+${GEM_LIBDIR}/metaid.rb
+${GEM_HOME}/specifications/metaid-${PKGVERSION}.gemspec
+@dirrm ${GEM_LIBDIR}
+@exec ${MKDIR} %D/${GEM_DOCDIR}
