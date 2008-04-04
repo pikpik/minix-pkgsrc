@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/03/15 16:46:13 taca Exp $
+# $NetBSD: Makefile,v 1.9 2007/12/02 11:44:03 wiz Exp $
 #
 
 DISTNAME=	nqxml-1.1.3p1
@@ -23,7 +23,7 @@ CONTRIB_LIB=	autodis_1.rb autodis_2.rb
 TESTS=		dispatchertester.rb oasis.rb streamingparsertester.rb test.rb \
 		testresource.rb tokenizertester.rb treeparsertester.rb \
 		writertester.rb
-REPLACE_RUBY_DIRS=	${WRKSRC}/examples ${WRKSRC}/tests
+REPLACE_RUBY_DIRS=	examples tests
 
 post-install:
 	${INSTALL_DATA_DIR} ${RUBY_DOCDIR}/nqxml
