@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/cssmin-${PKGVERSION}.gem
+${GEM_LIBDIR}/HISTORY
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/lib/cssmin.rb
+${GEM_HOME}/specifications/cssmin-${PKGVERSION}.gemspec
+@dirrm ${GEM_LIBDIR}/lib
+@dirrm ${GEM_LIBDIR}
