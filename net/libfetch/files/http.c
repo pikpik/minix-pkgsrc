@@ -1,4 +1,4 @@
-/*	$NetBSD: http.c,v 1.8 2008/02/07 18:02:01 joerg Exp $	*/
+/*	$NetBSD: http.c,v 1.9 2008/04/02 15:33:15 joerg Exp $	*/
 /*-
  * Copyright (c) 2000-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -1139,6 +1139,16 @@ fetchStatHTTP(struct url *URL, struct url_stat *us, const char *flags)
 		return (-1);
 	fetchIO_close(f);
 	return (0);
+}
+
+/*
+ * List a directory
+ */
+struct url_ent *
+fetchFilteredListHTTP(struct url *url, const char *pattern, const char *flags)
+{
+	fprintf(stderr, "fetchFilteredListHTTP(): not implemented\n");
+	return (NULL);
 }
 
 /*
