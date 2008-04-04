@@ -1,0 +1,14 @@
+# $NetBSD$
+
+DISTNAME=	merb-mailer-0.9.2
+CATEGORIES=	www
+
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://www.merbivore.com/
+COMMENT=	Merb plugin that provides mailer functionality
+
+DEPENDS+=	merb-core>=0.9.2:../../www/merb-core
+DEPENDS+=	${RUBY_PKGPREFIX}-mailfactory>=1.2.3:../../mail/ruby-mailfactory
+
+.include "../../misc/rubygems/rubygem.mk"
+.include "../../mk/bsd.pkg.mk"
