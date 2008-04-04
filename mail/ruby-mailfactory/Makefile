@@ -1,0 +1,15 @@
+# $NetBSD$
+
+DISTNAME=	mailfactory-1.2.3
+PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+CATEGORIES=	mail
+
+MAINTAINER=	pkgsrc-users@NetBSD.org
+COMMENT=	MIME email message generator for Ruby
+
+DEPENDS+=	${RUBY_PKGPREFIX}-mime-types>=1.13.1:../../mail/ruby-mime-types
+
+GEM_BUILD=	gemspec
+
+.include "../../misc/rubygems/rubygem.mk"
+.include "../../mk/bsd.pkg.mk"
