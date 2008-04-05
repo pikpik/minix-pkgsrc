@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2006/05/11 19:52:03 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/15 20:33:02 joerg Exp $
 #
 
 DISTNAME=	NovaWM-0.8_alpha
 PKGNAME=	novawm-0.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=novawm/}
 
