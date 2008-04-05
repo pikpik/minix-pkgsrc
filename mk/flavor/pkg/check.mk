@@ -1,13 +1,9 @@
-# $NetBSD: check.mk,v 1.6 2008/01/03 20:51:21 adrianp Exp $
+# $NetBSD: check.mk,v 1.7 2008/03/15 16:12:27 joerg Exp $
 #
 
 # _flavor-check-vulnerable:
 #	Checks for known vulnerabilities in the package without needing
 #	audit-packages to be installed.
-#
-#	XXX: This should really be invoking audit-packages directly.
-#	Having separately maintained piece of code that inspects the
-#	vulnerabilities database is poor.
 #
 _flavor-check-vulnerable: .PHONY
 	${_PKG_SILENT}${_PKG_DEBUG}					\
