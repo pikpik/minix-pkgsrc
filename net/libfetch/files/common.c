@@ -1,4 +1,4 @@
-/*	$NetBSD: common.c,v 1.4 2008/02/07 16:30:49 joerg Exp $	*/
+/*	$NetBSD: common.c,v 1.5 2008/04/02 15:33:14 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -642,7 +642,10 @@ fetch_add_entry(struct url_ent **p, int *size, int *len,
 
 	tmp = *p + *len;
 	snprintf(tmp->name, PATH_MAX, "%s", name);
-	memcpy(&tmp->stat, us, sizeof(*us));
+	if (us)
+		memcpy(&tmp->stat, us, sizeof(*us));
+	else
+		memset(&tmp->stat, 0, sizeof(*us));
 
 	(*len)++;
 	(++tmp)->name[0] = 0;
