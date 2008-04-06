@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7179 2008/04/05 16:44:07 adam Exp $
+$NetBSD: TODO,v 1.7180 2008/04/05 21:44:36 xtraeme Exp $
 
 Suggested new packages
 ======================
@@ -571,7 +571,6 @@ Suggested package updates
 	o doxygen-1.5.5
 	o dpkg-1.13.25
 	o drscheme-371
-	o drupal-6.0
 	o dvd+rw-tools-7.1
 	o dvipng-1.9
 	o dwm-4.8
