@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2006/03/04 21:29:19 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/10/21 13:32:31 obache Exp $
 
-DISTNAME=	Class-Data-Inheritable-0.06
+DISTNAME=	Class-Data-Inheritable-0.08
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cdi
 CATEGORIES=	devel perl5
@@ -10,7 +10,10 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Class-Data-Inheritable/
 COMMENT=	Inheritable, overridable class data
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+USE_LANGUAGES=	# none
 
 PERL5_PACKLIST=	auto/Class/Data/Inheritable/.packlist
 
