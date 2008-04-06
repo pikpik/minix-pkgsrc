@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.702 2008/03/16 00:14:30 wiz Exp $
+# $NetBSD: Makefile,v 1.703 2008/04/05 15:47:24 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -7,6 +7,7 @@ SUBDIR+=	3proxy
 SUBDIR+=	6tunnel
 SUBDIR+=	DarwinStreamingServer
 SUBDIR+=	GeoIP
+SUBDIR+=	Geomyidae
 SUBDIR+=	IglooFTP
 SUBDIR+=	LaBrea
 SUBDIR+=	ORBit
