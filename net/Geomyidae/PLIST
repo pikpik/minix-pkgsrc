@@ -1,0 +1,9 @@
+@comment $NetBSD$
+man/man8/Geomyidae.8
+sbin/Geomyidae
+share/doc/Geomyidae/LICENSE
+share/doc/Geomyidae/README
+share/examples/Geomyidae/index.gph
+share/examples/rc.d/Geomyidae
+@dirrm share/examples/Geomyidae
+@dirrm share/doc/Geomyidae
