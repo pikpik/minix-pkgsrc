@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2007/11/08 19:39:43 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2007/12/02 11:26:50 wiz Exp $
 #
 
 DISTNAME=	freeWAIS-sf-2.2.12
@@ -27,6 +27,8 @@ CONFIGURE_ARGS+=	-sde -Dprefix=${PREFIX:Q}			\
 CONFIGURE_ENV+=		PERL5=${PERL5:Q}
 INSTALL_TARGET=		install install.man
 INFO_FILES=		# PLIST
+
+INSTALLATION_DIRS=	include ${PKGINFODIR}
 
 post-build:
 	cd ${WRKSRC}/doc/SF && makeinfo fwsf.texi
