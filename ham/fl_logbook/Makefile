@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/21 16:49:23 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/04 15:51:59 jlam Exp $
 #
 
 DISTNAME=		fl_logbook.121.src
@@ -20,6 +20,8 @@ USE_TOOLS+=		gmake
 MAKE_ENV+=		CFG=Release
 
 BUILD_TARGET=		#defined in dist Makefile
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/Release/fl_logbook ${DESTDIR}${PREFIX}/bin
