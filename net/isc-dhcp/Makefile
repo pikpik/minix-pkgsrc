@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/12/13 02:54:49 taca Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/03 12:25:01 adrianp Exp $
 #
 
 COMMENT=	ISC Dynamic Host Configuration Protocol (DHCP) Base
@@ -8,11 +8,10 @@ SUBDIR=		common minires dst
 
 MAN_FILES=	man5/dhcp-eval.5 man5/dhcp-options.5
 
-post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/isc-dhcp-${COMPONENT}
-	${INSTALL_DATA_DIR} ${PREFIX}/include/isc-dhcp
-	${INSTALL_DATA_DIR} ${PREFIX}/include/omapip
+INSTALLATION_DIRS=	include/isc-dhcp include/omapip \
+			lib share/doc/isc-dhcp-${COMPONENT}
 
+post-install:
 	${INSTALL_DATA} ${WRKSRC}/README \
 		${PREFIX}/share/doc/isc-dhcp-${COMPONENT}
 	${INSTALL_DATA} ${WRKSRC}/RELNOTES \
