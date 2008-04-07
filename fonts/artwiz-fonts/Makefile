@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/22 19:26:29 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/03 20:17:11 jlam Exp $
 #
 
 DISTNAME=	artwiz-aleczapka-1.3
@@ -22,6 +22,8 @@ NO_CONFIGURE=	yes
 
 FONTS_DIRS.x11=	${PREFIX}/lib/X11/fonts/artwiz
 REQD_DIRS=	${PREFIX}/lib/X11/fonts/artwiz
+
+INSTALLATION_DIRS=	lib/X11/fonts/artwiz
 
 do-install:
 	for i in ${WRKSRC}/*.pcf; do \
