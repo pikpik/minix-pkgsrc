@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/03/26 06:15:27 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=	tscp181
@@ -20,7 +20,7 @@ NO_BIN_ON_FTP= ${RESTRICTED}
 NO_SRC_ON_FTP= ${RESTRICTED}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin share/doc
 
 do-build:
 	cd ${WRKSRC} ; ${CC} ${CFLAGS} ${LDFLAGS} -o tscp *.c -lcompat
