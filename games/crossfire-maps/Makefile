@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/11 06:07:40 adam Exp $
+# $NetBSD: Makefile,v 1.2 2007/08/30 19:55:30 joerg Exp $
 
 DISTNAME=	crossfire-1.9.0-1.maps
 PKGNAME=	crossfire-maps-1.9.0.1
@@ -25,6 +25,8 @@ PLIST_SRC=	${WRKDIR}/PLIST PLIST
 REPLACE_BASH+=	brest/pshops/pshop_copier
 REPLACE_PERL+=	Info/combine.pl Info/map_sed.pl Info/rewrite_exits.pl
 REPLACE_PERL+=	Info/rewrite_styles.pl Info/update_apart.pl Info/update_exits.pl
+
+INSTALLATION_DIRS=	share/crossfire/maps
 
 do-install:
 	cd ${WRKDIR} && ${CP} -R maps ${DESTDIR}${PREFIX}/share/crossfire
