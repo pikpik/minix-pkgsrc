@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2007/11/04 16:00:02 agc Exp $
+# $NetBSD: Makefile,v 1.44 2008/01/07 17:34:37 drochner Exp $
 
 DISTNAME=	libsndfile-1.0.17
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mega-nerd.com/libsndfile/
 
@@ -27,8 +27,9 @@ CONFIGURE_ENV+=		ac_cv_c_struct_hack=yes
 # Avoid an ICE in gcc2 on sparc64
 CONFIGURE_ENV+=		F77=${FALSE:Q}
 
-.include "options.mk"
 .include "../../mk/bsd.prefs.mk"
+
+.include "options.mk"
 
 .if ${OPSYS} == "Darwin"
 BUILDLINK_PASSTHRU_DIRS+=	/Developer
