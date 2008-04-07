@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.369 2008/03/14 14:26:15 drochner Exp $
+# $NetBSD: Makefile,v 1.370 2008/03/16 09:27:37 bjs Exp $
 #
 
 COMMENT=	Audio tools
@@ -207,6 +207,7 @@ SUBDIR+=	mikmod
 SUBDIR+=	mixer.app
 SUBDIR+=	mkcdtoc
 SUBDIR+=	moc
+SUBDIR+=	moc-devel
 SUBDIR+=	moss
 SUBDIR+=	mp32ogg
 SUBDIR+=	mp3_check
