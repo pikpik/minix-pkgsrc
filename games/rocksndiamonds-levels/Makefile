@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/05/22 06:47:44 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/04 06:59:05 jlam Exp $
 
 DISTNAME=	rocksndiamonds-levels-1.0
 PKGREVISION=	3
@@ -20,6 +20,8 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# none
 WRKSRC=		${WRKDIR}/levels
+
+INSTALLATION_DIRS=	share/rocksndiamonds/levels
 
 PLIST_SRC=	${WRKDIR}/PLIST ${PKGDIR}/PLIST
 
