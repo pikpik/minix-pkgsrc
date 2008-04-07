@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2007/12/01 12:32:13 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2008/01/09 03:55:11 smb Exp $
 #
 
 DISTNAME=	notification_plugin-0.14
 PKGNAME=	claws-mail-notification-0.14
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
