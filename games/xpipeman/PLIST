@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:57:28 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/03/04 07:01:16 jlam Exp $
 bin/xpipeman
 man/man6/xpipeman.6
-share/examples/xpipeman/xpipescores
-@dirrm share/examples/xpipeman
+share/xpipeman/xpipescores
+@dirrm share/xpipeman
