@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/14 15:06:45 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/07/27 23:51:59 joerg Exp $
 #
 
 DISTNAME=		libXxf86vm-1.0.1
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
 EXTRACT_SUFX=		.tar.bz2
