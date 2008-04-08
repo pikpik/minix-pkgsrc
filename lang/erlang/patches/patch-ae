@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.1 2007/07/28 14:27:11 obache Exp $
+
+Fixed Makefile installation.
 
 --- lib/crypto/c_src/Makefile.in.orig	2007-06-11 12:59:08.000000000 +0000
 +++ lib/crypto/c_src/Makefile.in

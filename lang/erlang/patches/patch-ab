@@ -1,4 +1,6 @@
-$NetBSD: patch-ab,v 1.1 2003/08/31 01:01:56 jtb Exp $
+$NetBSD: patch-ab,v 1.2 2007/07/28 14:27:10 obache Exp $
+
+Build all .java files.
 
 --- make/otp.mk.in.orig	2007-06-11 13:01:44.000000000 +0000
 +++ make/otp.mk.in
