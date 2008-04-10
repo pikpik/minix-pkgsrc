@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2007/06/30 14:28:05 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2007/09/29 19:44:05 drochner Exp $
 #
 
 DISTNAME=		vlc-${VLC_VER}
-PKGREVISION=		18
+PKGREVISION=		19
 CATEGORIES=		multimedia
 MASTER_SITES=		http://download.videolan.org/pub/videolan/vlc/${VLC_VER}/
 EXTRACT_SUFX=		.tar.bz2
@@ -35,16 +35,7 @@ CONFIGURE_ARGS+=	--enable-flac
 CONFIGURE_ARGS+=	--disable-gtk
 CONFIGURE_ARGS+=	--with-ffmpeg-tree=${BUILDLINK_PREFIX.ffmpeg}/lib
 
-BUILD_DEFS+=		WITH_DVDCSS
-
-.if defined(WITH_DVDCSS) && !empty(WITH_DVDCSS:M[Yy][Ee][Ss])
-CONFIGURE_ARGS+=	--with-dvdcss=${BUILDLINK_PREFIX.libdvdcss}
-.include "../../multimedia/libdvdcss/buildlink3.mk"
-PLIST_SUBST+=		DVDCSS=
-.else
-CONFIGURE_ARGS+=	--disable-dvd
-PLIST_SUBST+=		DVDCSS="@comment "
-.endif
+.include "options.mk"
 
 .if ${X11_TYPE} == "modular"
 CONFIGURE_ARGS+=	x_libraries=${PREFIX}/lib
