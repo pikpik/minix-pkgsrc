@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2008/02/08 15:13:54 obache Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/04 15:30:00 jlam Exp $
 
 DISTNAME=	sqlite3-ruby-1.2.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/-ruby//}
 PKGREVISION=	1
 CATEGORIES=	databases
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sqlite-ruby.rubyforge.org/
 COMMENT=	Ruby interface for the SQLite database engine
 

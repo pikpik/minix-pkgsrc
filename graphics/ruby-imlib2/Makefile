@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/04/01 01:58:38 obache Exp $
+# $NetBSD: Makefile,v 1.14 2008/04/04 15:30:01 jlam Exp $
 
 DISTNAME=	imlib2-ruby-0.5.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
@@ -6,7 +6,7 @@ PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://pablotron.org/files/gems/
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pablotron.org/software/imlib2-ruby/
 COMMENT=	Imlib2 bindings for Ruby
 
