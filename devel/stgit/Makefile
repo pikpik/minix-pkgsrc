@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/02/11 20:18:56 bjs Exp $
+# $NetBSD: Makefile,v 1.6 2008/02/28 15:27:21 bjs Exp $
 
-DISTNAME=	stgit-20080220
+DISTNAME=	stgit-0.14.2
 CATEGORIES=	devel
-MASTER_SITES=	http://homepage.ntlworld.com/cmarinas/stgit/snapshots/
+MASTER_SITES=	http://homepage.ntlworld.com/cmarinas/stgit/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.procode.org/stgit/
