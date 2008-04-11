@@ -1,14 +1,14 @@
 $NetBSD$
 
---- gnomevfs/Makefile.in.orig	2006-09-04 23:50:39.000000000 +0200
+--- gnomevfs/Makefile.in.orig	2008-03-09 20:06:55.000000000 +0100
 +++ gnomevfs/Makefile.in
-@@ -292,9 +292,9 @@ common_ldflags = -module -avoid-version
+@@ -291,9 +291,9 @@ common_ldflags = -module -avoid-version 
  
  # libgnomevfs binding
  gnomevfs_LTLIBRARIES = _gnomevfs.la $(am__append_1)
 -_gnomevfs_la_CFLAGS = $(GNOMEVFS_CFLAGS)
 +_gnomevfs_la_CFLAGS = $(GNOMEVFS_CFLAGS) $(BONOBO_ACTIVATION_CFLAGS)
- _gnomevfs_la_LDFLAGS = $(common_ldflags) $(PYTHON_LDFLAGS) -export-symbols-regex init_gnomevfs
+ _gnomevfs_la_LDFLAGS = $(common_ldflags) -export-symbols-regex init_gnomevfs
 -_gnomevfs_la_LIBADD = $(GNOMEVFS_LIBS) $(PYTHON_LIBS)
 +_gnomevfs_la_LIBADD = $(GNOMEVFS_LIBS) $(PYTHON_LIBS) $(BONOBO_ACTIVATION_LIBS)
  _gnomevfs_la_SOURCES = vfsmodule.c vfs-uri.c vfs-file-info.c vfs-dir-handle.c \
