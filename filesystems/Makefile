@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/11/27 18:56:35 pooka Exp $
+# $NetBSD: Makefile,v 1.22 2007/12/13 07:01:09 bjs Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -10,6 +10,7 @@ SUBDIR+=	fuse-cddfs
 SUBDIR+=	fuse-chironfs
 SUBDIR+=	fuse-cryptofs
 SUBDIR+=	fuse-curlftpfs
+SUBDIR+=	fuse-djmount
 SUBDIR+=	fuse-encfs
 SUBDIR+=	fuse-gmailfs
 SUBDIR+=	fuse-gphotofs
