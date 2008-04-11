@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.924 2008/04/06 23:08:15 seb Exp $
+# $NetBSD: Makefile,v 1.925 2008/04/07 00:34:57 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -275,6 +275,7 @@ SUBDIR+=	libgnomeui
 SUBDIR+=	libgnomeuimm
 SUBDIR+=	libgphoto2
 SUBDIR+=	libgsf
+SUBDIR+=	libgweather
 SUBDIR+=	libhfs
 SUBDIR+=	libiberty
 SUBDIR+=	libidn
