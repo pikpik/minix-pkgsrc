@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/10/24 14:40:53 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/01/12 11:36:29 adam Exp $
 #
 
 DISTNAME=	bsddb3-4.5.0
@@ -21,7 +21,7 @@ PYBINMODULE=	yes
 
 .include "../../mk/pthread.buildlink3.mk"
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "native"
-PYTHON_VERSIONS_ACCEPTED=	24 23 22
+PYTHON_VERSIONS_INCOMPATIBLE=	15 20 21
 .endif
 
 do-test:
