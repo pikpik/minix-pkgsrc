@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/djmount
+share/doc/djmount/README
+@dirrm share/doc/djmount
