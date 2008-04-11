@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- programs/Makefile.in.orig	2008-04-10 15:21:35.000000000 +0200
++++ programs/Makefile.in
+@@ -712,7 +712,7 @@ info: info-am
+ 
+ info-am:
+ 
+-install-data-am: install-profileSCRIPTS
++install-data-am:
+ 
+ install-exec-am: install-binPROGRAMS install-binSCRIPTS
+ 
