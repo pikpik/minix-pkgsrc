@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2008/01/18 05:09:51 tnn Exp $
+# $NetBSD: Makefile,v 1.77 2008/03/11 18:47:41 tnn Exp $
 
 DISTNAME=		w3c-libwww-5.4.0
 PKGNAME=		libwww-5.4.0
@@ -47,16 +47,16 @@ pre-configure:
 CONFIGURE_ARGS+=	--with-regex
 .endif
 
+PLIST_VARS+=		md5
 .if ${OPSYS} == "SunOS"
-# Solaris has a /usr/lib/libmd5 which seems to be enouth, and
+# Solaris has a /usr/lib/libmd5 which seems to be enough, and
 # /usr/local/lib/libmd5 breaks /usr/lib/librt
-CONFIGURE_ARGS+= --without-md5
-PLIST_SUBST+=	MD5LIB="@comment "
+CONFIGURE_ARGS+=	--without-md5
 .else
+PLIST.md5=		yes
 .  if !exists(/usr/include/md5.h)
 CONFIGURE_ARGS+=	--with-md5=${SSLBASE:Q}
 .  endif
-PLIST_SUBST+=	MD5LIB=""
 .endif
 
 .include "../../devel/zlib/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2007/02/19 18:02:07 joerg Exp $
+# $NetBSD: options.mk,v 1.4 2007/02/22 19:27:03 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ghostscript-esp
 PKG_SUPPORTED_OPTIONS=	x11 cups
@@ -15,9 +15,10 @@ CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--without-x
 .endif
 
+PLIST_VARS+=		cups
 .if !empty(PKG_OPTIONS:Mcups)
 CONFIGURE_ARGS+=	--enable-cups
-PLIST_SUBST+=		CUPS=
+PLIST.cups=		yes
 
 CUPS_CONFDIR?=	${PKG_SYSCONFBASEDIR}/cups
 CUPS_EGDIR=	${PREFIX}/share/examples/cups
@@ -39,5 +40,4 @@ ghostscript-esp-cups-install:
 	${INSTALL_DATA} ${WRKSRC}/pstoraster/pstoraster.convs ${CUPS_EGDIR}
 .else
 CONFIGURE_ARGS+=	--disable-cups
-PLIST_SUBST+=		CUPS="@comment "
 .endif

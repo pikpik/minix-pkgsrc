@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2006/07/22 04:46:14 rillig Exp $
+# $NetBSD: options.mk,v 1.3 2007/01/14 12:28:56 obache Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.myodbc
@@ -9,14 +9,15 @@ PKG_SUGGESTED_OPTIONS=	myodbc-iodbc
 
 .include "../../mk/bsd.options.mk"
 
+PLIST_VARS+=		gui
+
 .if !empty(PKG_OPTIONS:Mmyodbc-gui)
 .  include "../../x11/qt3-tools/buildlink3.mk"
 CONFIGURE_ARGS+=	--enable-gui
 USE_LANGUAGES=		c c++
-PLIST_SUBST+=		WITH_GUI=
+PLIST.gui=		yes
 .else
 CONFIGURE_ARGS+=	--disable-gui
-PLIST_SUBST+=		WITH_GUI='@comment '
 .endif
 
 .if !empty(PKG_OPTIONS:Mmyodbc-iodbc)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2007/11/05 01:09:23 grant Exp $
+# $NetBSD: Makefile,v 1.40 2008/01/04 15:42:34 ghen Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -57,10 +57,9 @@ CONFIGURE_ARGS+= --program-suffix=${RUBY_SUFFIX:Q}
 #
 # IRIX work around which should be fixed.
 #
-.if ${OPSYS} == "IRIX"
-PLIST_SUBST+=	HAS_IO="@comment "
-.else
-PLIST_SUBST+=	HAS_IO=
+PLIST_VARS+=	io
+.if ${OPSYS} != "IRIX"
+PLIST.io=	yes
 .endif
 
 #

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/01/29 21:22:08 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2007/02/02 19:17:31 joerg Exp $
 
 DISTNAME=	libgii-0.9.1.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -31,10 +31,9 @@ PTHREAD_OPTS+=		native
 
 .include "../../mk/pthread.buildlink3.mk"
 
+PLIST_VARS+=		ggtick
 .if empty(PTHREAD_TYPE:Mnative)
-PLIST_SUBST+=		GGTICK=""
-.else
-PLIST_SUBST+=		GGTICK="@comment "
+PLIST.ggtick=		yes
 .endif
 
 BUILDLINK_DEPMETHOD.libXt?=	build

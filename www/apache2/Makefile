@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.120 2008/01/18 05:09:47 tnn Exp $
+# $NetBSD: Makefile,v 1.121 2008/01/21 14:37:22 taca Exp $
 
 .include "Makefile.common"
 
@@ -46,11 +46,8 @@ APACHE_MODULES?=	${DFLT_APACHE_MODULES}
 APACHE_MPM?=		prefork
 CONFIGURE_ARGS+=	--with-mpm=${APACHE_MPM:Q}
 BUILD_DEFS+=		APACHE_MPM
-.for mpm in prefork worker
-PLIST_SUBST.${mpm}?=		MPM_COMMENT.${mpm}="@comment "
-PLIST_SUBST+=			${PLIST_SUBST.${mpm}}
-.endfor
-PLIST_SUBST.${APACHE_MPM}=	MPM_COMMENT.${APACHE_MPM}=
+PLIST_VARS+=		mpm-prefork mpm-worker
+PLIST.${APACHE_MPM}=	yes
 
 CONFIGURE_ARGS+=	--disable-access
 CONFIGURE_ARGS+=	--disable-auth

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:42 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/07/11 20:16:33 adrianp Exp $
 #
 
 DISTNAME=		chkrootkit-0.47
@@ -33,9 +33,10 @@ SUBST_SED.helper=	-e "s|./chklastlog|${PREFIX}/bin/chklastlog|g"	\
 
 .include "../../mk/compiler.mk"
 
+PLIST_VARS+=	wtmpx
 .if ${OPSYS} == "SunOS"
 PROGRAMS+=	check_wtmpx
-PLIST_SUBST+=	WTMPX=""
+PLIST.wtmpx=	yes
 CFLAGS+=	-DSOLARIS2
 LDFLAGS+=	-lsocket
 .  if empty(CC_VERSION:Mgcc-*)
@@ -44,7 +45,6 @@ MAKE_ENV+=	STATIC="-B static"
 MAKE_ENV+=	STATIC="-static"
 .  endif
 .else
-PLIST_SUBST+=	WTMPX="@comment "
 MAKE_ENV+=	STATIC="-static"
 .endif
 

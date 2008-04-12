@@ -1,7 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.3 2006/01/23 18:53:45 xtraeme Exp $
 bin/myodbc3m
 lib/libmyodbc3.la
-${WITH_GUI}lib/libmyodbc3S.la
+${PLIST.gui}lib/libmyodbc3S.la
 lib/libmyodbc3_r.la
 share/doc/myodbc/README
 share/doc/myodbc/README.osx

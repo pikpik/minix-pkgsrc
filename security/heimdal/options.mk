@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2008/02/28 14:11:55 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.heimdal
 PKG_SUPPORTED_OPTIONS=	inet6 kerberos-prefix-cmds ldap
@@ -18,18 +18,17 @@ CONFIGURE_ARGS+=	--without-ipv6
 ###
 ### Support using LDAP as a KDC backend.
 ###
+PLIST_VARS+=		ldap
 .if !empty(PKG_OPTIONS:Mldap)
 .  include "../../databases/openldap-client/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-openldap=${BUILDLINK_PREFIX.openldap-client}
-PLIST_SUBST+=		LDAP=""
+PLIST.ldap=		yes
 
 post-install: heimdal-ldap-schema
 heimdal-ldap-schema:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/examples/heimdal
 	${INSTALL_DATA} ${WRKSRC}/lib/hdb/hdb.schema			\
 		${DESTDIR}${PREFIX}/share/examples/heimdal
-.else
-PLIST_SUBST+=		LDAP="@comment "
 .endif
 
 ###

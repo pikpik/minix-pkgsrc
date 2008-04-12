@@ -1,9 +1,11 @@
-# $NetBSD: options.mk,v 1.5 2005/10/23 14:16:46 rillig Exp $
+# $NetBSD: options.mk,v 1.6 2006/05/31 18:22:23 ghen Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xemacs
 PKG_SUPPORTED_OPTIONS=	ldap xface canna
 
 .include "../../mk/bsd.options.mk"
+
+PLIST_VARS+=		mule
 
 .if !empty(PKG_OPTIONS:Mldap)
 CONFIGURE_ARGS+=	--with-ldap
@@ -22,8 +24,7 @@ CONFIGURE_ARGS+=	--without-xface
 .if !empty(PKG_OPTIONS:Mcanna)
 .  include "../../inputmethod/canna-lib/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-canna
-PLIST_SUBST+=	FOR_MULE=''
+PLIST.mule=		yes
 .else
 CONFIGURE_ARGS+=	--without-canna
-PLIST_SUBST+=	FOR_MULE='@comment '
 .endif

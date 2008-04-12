@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/05/21 13:59:04 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2006/06/13 19:23:24 joerg Exp $
 #
 
 DISTNAME=		rudiments-0.29
@@ -15,13 +15,12 @@ USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
+PLIST_VARS+=		shm
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD"
-PLIST_SUBST+=		COND_SHM="@comment "
-.else
-PLIST_SUBST+=		COND_SHM=""
+.if ${OPSYS} != "NetBSD"
+PLIST.shm=		yes
 .endif
 
 .include "../../mk/pthread.buildlink3.mk"

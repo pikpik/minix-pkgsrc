@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2006/10/04 12:18:14 obache Exp $
+@comment $NetBSD: PLIST,v 1.10 2007/12/22 21:15:06 adam Exp $
 bin/imtest
 bin/installsieve
 bin/lmtptest
@@ -19,7 +19,7 @@ cyrus/bin/cyrdump
 cyrus/bin/deliver
 cyrus/bin/fetchnews
 cyrus/bin/fud
-${IDLED}cyrus/bin/idled
+${PLIST.idled}cyrus/bin/idled
 cyrus/bin/imapd
 cyrus/bin/ipurge
 cyrus/bin/lmtpd
@@ -36,9 +36,9 @@ cyrus/bin/notifyd
 cyrus/bin/pop3d
 cyrus/bin/pop3proxyd
 cyrus/bin/proxyd
-${LDAP}cyrus/bin/ptdump
-${LDAP}cyrus/bin/ptexpire
-${LDAP}cyrus/bin/ptloader
+${PLIST.ldap}cyrus/bin/ptdump
+${PLIST.ldap}cyrus/bin/ptexpire
+${PLIST.ldap}cyrus/bin/ptloader
 cyrus/bin/quota
 cyrus/bin/reconstruct
 cyrus/bin/rehash

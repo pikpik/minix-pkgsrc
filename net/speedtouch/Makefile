@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/01/24 17:44:02 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2007/02/22 19:26:59 wiz Exp $
 
 DISTNAME=		speedtouch-1.3.1
 PKGREVISION=		4
@@ -29,11 +29,12 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 PLIST_SUBST+=		PKG_SYSCONFDIR=${PKG_SYSCONFDIR:Q}
 RCD_SCRIPTS=		adsl
 
+PLIST_VARS+=		pppoa3
+
 .include "../../mk/pthread.buildlink3.mk"
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "native"
-PLIST_SUBST+=		PPPOA3=""
+PLIST.pppoa3=		yes
 .else
-PLIST_SUBST+=		PPPOA3="@comment "
 CONFIGURE_ENV+=		ac_cv_lib_pthread_pthread_create=no
 .endif
 

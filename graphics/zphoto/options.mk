@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1.1.1 2006/08/12 16:20:35 xtraeme Exp $
+# $NetBSD: options.mk,v 1.2 2007/11/17 01:47:02 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.zphoto
 PKG_SUPPORTED_OPTIONS=	zip wx
@@ -37,10 +37,10 @@ CONFIGURE_ARGS+=	--disable-zip
 #CONFIGURE_ARGS+=	--disable-avifile
 #.endif
 
+PLIST_VARS+=		wx
 .if !empty(PKG_OPTIONS:Mwx)
 .include "../../x11/wxGTK/buildlink3.mk"
-PLIST_SUBST+=		WX_COMMENT=
+PLIST.wx=		yes
 .else
 CONFIGURE_ARGS+=	--disable-wx
-PLIST_SUBST+=		WX_COMMENT="@comment "
 .endif

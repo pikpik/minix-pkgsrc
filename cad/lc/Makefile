@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/08/23 18:20:30 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/03 01:43:01 jlam Exp $
 
 DISTNAME=	lc	# overridden below
 PKGNAME=	lc-2.10
@@ -45,11 +45,12 @@ DISTFILES+=		lc_irix64.tar.gz
 DISTFILES+=		lc_solaris.tar.gz
 .endif
 
+PLIST_VARS+=		lcspice
+
 .if ${EMUL_PLATFORM} == "linux-x86_64"
 WRKSRC=			${WRKDIR}/lc
-PLIST_SUBST+=		HAVE_LCSPICE="@comment "
 .else
-PLIST_SUBST+=		HAVE_LCSPICE=""
+PLIST.lcspice=		yes
 .endif
 
 INSTALLATION_DIRS=	bin share

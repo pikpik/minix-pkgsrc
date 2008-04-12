@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.20 2007/04/12 09:55:12 martti Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -13,10 +13,9 @@ CONFIGURE_ARGS+=	--with-printcap=/etc/printcap
 
 .include "options.mk"
 
-.if ${OPSYS} == "SunOS"
-PLIST_SUBST+=	SOLARIS="@comment "
-.else
-PLIST_SUBST+=	SOLARIS=""
+PLIST_VARS+=	bsdlpr
+.if ${OPSYS} != "SunOS"
+PLIST.bsdlpr=	yes
 .endif
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

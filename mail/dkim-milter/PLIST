@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2008/03/09 15:09:26 adrianp Exp $
-${WITH_ARLIB}lib/libar.a
-${WITH_ARLIB}man/man3/ar.3
+@comment $NetBSD: PLIST,v 1.5 2008/04/06 12:59:11 adrianp Exp $
+${PLIST.arlib}lib/libar.a
+${PLIST.arlib}man/man3/ar.3
 lib/libdkim.a
 include/dkim.h
 libexec/dkim-filter

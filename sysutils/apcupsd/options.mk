@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2007/10/29 12:40:58 sborrill Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.apcupsd
 PKG_SUPPORTED_OPTIONS=		snmp cgi
@@ -11,10 +11,9 @@ PKG_SUGGESTED_OPTIONS=		snmp cgi
 CONFIGURE_ARGS+=	--enable-snmp		# enable SNMP driver
 .endif
 
+PLIST_VARS+=		cgi
 .if !empty(PKG_OPTIONS:Mcgi)
 CONFIGURE_ARGS+=	--enable-cgi		# include CGI support
 CONFIGURE_ARGS+=	--with-cgi-bin=${PREFIX}/libexec/cgi-bin
-PLIST_SUBST+=	CGI=
-.else
-PLIST_SUBST+=	CGI="@comment "
+PLIST.cgi=		yes
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2008/01/28 12:08:49 reinoud Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.maxima
 PKG_OPTIONS_REQUIRED_GROUPS=	lisp
@@ -19,10 +19,9 @@ CONFIGURE_ARGS+=	--enable-sbcl
 .endif
 
 # Modify PLIST
-.for opt in clisp sbcl
-.if !empty(PKG_OPTIONS:M${opt})
-PLIST_SUBST+=	${opt}=""
-.else
-PLIST_SUBST+=	${opt}="@comment "
-.endif
+PLIST_VARS+=		${PKG_OPTIONS_GROUP.lisp}
+.for opt in ${PKG_OPTIONS_GROUP.lisp}
+.  if !empty(PKG_OPTIONS:M${opt})
+PLIST.${opt}=		yes
+.  endif
 .endfor

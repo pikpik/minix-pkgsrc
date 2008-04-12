@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/06/15 17:44:45 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2007/11/17 12:04:14 rillig Exp $
 #
 
 DISTNAME=	golem-0.0.5
@@ -27,12 +27,11 @@ PKG_SUPPORTED_OPTIONS=	esound
 
 .include "../../mk/bsd.options.mk"
 
+PLIST_VARS+=		esound
 .if !empty(PKG_OPTIONS:Mesound)
 CONFIGURE_ARGS+=	--enable-sound
-PLIST_SUBST+=		NOT_SOUND=
+PLIST.esound=		yes
 .include "../../audio/esound/buildlink3.mk"
-.else
-PLIST_SUBST+=		NOT_SOUND="@comment "
 .endif
 
 CFLAGS+=	-DPKG_SYSCONFDIR="\"${PKG_SYSCONFDIR}\""

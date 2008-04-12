@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2007/11/29 17:05:34 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2008/01/13 09:30:57 joerg Exp $
 
 DISTNAME=	libiconv-1.12
 PKGREVISION=	1
@@ -39,13 +39,12 @@ MAKE_JOBS_SAFE=		no		# ENOENT(srclib)
 CFLAGS+=		-c99
 .endif
 
-
 .include "options.mk"
 
+PLIST_VARS+=		preload
+
 .if ${OPSYS} == "SunOS" || ${OPSYS} == "Linux" || ${OPSYS} == "OSF1"
-PLIST_SUBST+=		PRELOADABLE_LIBICONV=""
-.else
-PLIST_SUBST+=		PRELOADABLE_LIBICONV="@comment "
+PLIST.preload=		yes
 .endif
 
 # remove any existing charset.alias; if it already exists, libiconv does
