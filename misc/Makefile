@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.302 2008/03/25 13:43:14 wiz Exp $
+# $NetBSD: Makefile,v 1.303 2008/04/04 15:33:06 jlam Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -195,6 +195,7 @@ SUBDIR+=	stellarium
 SUBDIR+=	taskjuggler
 SUBDIR+=	tds
 SUBDIR+=	team
+SUBDIR+=	tellico
 SUBDIR+=	theme-dirs
 SUBDIR+=	ttyrec
 SUBDIR+=	udfclient
