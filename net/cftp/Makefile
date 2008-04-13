@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2007/09/07 22:12:17 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/11 16:22:32 jlam Exp $
 #
 
 DISTNAME=	cftp-0.12
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.giga.or.at/pub/nih/cftp/ \
 		ftp://ftp.giga.or.at/pub/nih/cftp/
