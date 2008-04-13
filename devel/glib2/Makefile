@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.131 2008/02/21 20:53:54 tnn Exp $
+# $NetBSD: Makefile,v 1.132 2008/04/10 12:13:49 drochner Exp $
 
 # When updating glib2, please apply patch-ak to configure.in
 # Then run a matching version of autoconf to regen patch-aa.
@@ -98,6 +98,14 @@ CONFIGURE_ARGS+=	--disable-threads
 .include "../../mk/pthread.buildlink3.mk"
 .endif
 .include "../../devel/pcre/buildlink3.mk"
-.include "../../mk/fam.buildlink3.mk"
+
+.if ${OPSYS} == "HPUX"
+PLIST_SUBST+=		FAM="@comment "
+CONFIGURE_ARGS+=	--disable-fam
+.else
+PLIST_SUBST+=		FAM=""
+FAM_ACCEPTED=		fam
+. include "../../mk/fam.buildlink3.mk"
+.endif
 
 .include "../../mk/bsd.pkg.mk"
