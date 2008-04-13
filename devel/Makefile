@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.928 2008/04/12 13:58:02 wiz Exp $
+# $NetBSD: Makefile,v 1.929 2008/04/13 07:37:47 jlam Exp $
 #
 
 COMMENT=	Development utilities
@@ -706,6 +706,7 @@ SUBDIR+=	py-idle
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
 SUBDIR+=	py-logging
+SUBDIR+=	py-newt
 SUBDIR+=	py-pexpect
 SUBDIR+=	py-pqueue
 SUBDIR+=	py-readline
