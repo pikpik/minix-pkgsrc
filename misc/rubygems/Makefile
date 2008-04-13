@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2008/03/18 03:47:07 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/03/31 15:40:43 jlam Exp $
 
-DISTNAME=	rubygems-1.1.0
+DISTNAME=	rubygems-1.1.1
 CATEGORIES=	misc ruby
-MASTER_SITES=	http://rubyforge.org/frs/download.php/34638/
+MASTER_SITES=	http://rubyforge.org/frs/download.php/35283/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	minskim@NetBSD.org
