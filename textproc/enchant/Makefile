@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2006/11/14 13:56:15 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/12/05 10:28:27 wiz Exp $
 #
 
-DISTNAME=		enchant-1.3.0
+DISTNAME=		enchant-1.4.0
 CATEGORIES=		textproc
-MASTER_SITES=		http://www.abisource.com/downloads/enchant/1.3.0/
+MASTER_SITES=		http://www.abisource.com/downloads/enchant/1.4.0/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.abisource.com/projects/enchant/
@@ -19,6 +19,7 @@ PKGCONFIG_OVERRIDE+=	enchant.pc.in
 GNU_CONFIGURE=		yes
 CFLAGS.SunOS+=		-D__EXTENSIONS__
 
+.include "options.mk"
+
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../textproc/aspell/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
