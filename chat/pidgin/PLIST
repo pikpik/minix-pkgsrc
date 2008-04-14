@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2007/12/02 04:17:54 tnn Exp $
+@comment $NetBSD: PLIST,v 1.5 2008/03/04 17:25:36 tnn Exp $
 bin/pidgin
 include/pidgin/eggtrayicon.h
 include/pidgin/gtkaccount.h
@@ -66,6 +66,7 @@ lib/pidgin/timestamp.la
 lib/pidgin/timestamp_format.la
 lib/pidgin/xmppconsole.la
 lib/pkgconfig/pidgin.pc
+share/applications/pidgin.desktop
 share/icons/hicolor/16x16/apps/pidgin.png
 share/icons/hicolor/22x22/apps/pidgin.png
 share/icons/hicolor/24x24/apps/pidgin.png

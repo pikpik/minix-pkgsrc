@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.7 2007/09/25 10:03:52 hira Exp $
+# $NetBSD: Makefile,v 1.8 2008/02/02 21:52:52 gdt Exp $
 #
 
 PKGNAME=		pidgin-${PIDGIN_VERSION}
 COMMENT=		Multi-protocol Instant Messaging client GTK frontend
+PKGREVISION=		1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"../../chat/libpurple/Makefile.common"
 
 USE_DIRS+=		xdg-1.4
-USE_TOOLS+=		msgfmt
+USE_TOOLS+=		msgfmt intltool
 
 PKGCONFIG_OVERRIDE+=	gaim.pc.in
 PKGCONFIG_OVERRIDE+=	libpurple/purple.pc.in
@@ -30,6 +31,12 @@ pre-build:
 	# XXX Find a cleaner way.
 	${TEST} -r ${WRKSRC}/libpurple/libpurple.la || \
 	  ln -s ${BUILDLINK_DIR}/lib/libpurple.la ${WRKSRC}/libpurple/.
+	cd ${WRKSRC} && ${BUILD_MAKE_CMD} pidgin.desktop
+
+post-install:
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/applications
+	${INSTALL_DATA} ${WRKSRC}/pidgin.desktop \
+	  ${DESTDIR}${PREFIX}/share/applications
 
 # XXX install pidgin.1 via doc/Makefile
 
@@ -37,6 +44,7 @@ pre-build:
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
