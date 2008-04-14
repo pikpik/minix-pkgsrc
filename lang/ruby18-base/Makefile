@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2008/01/04 15:42:34 ghen Exp $
+# $NetBSD: Makefile,v 1.41 2008/04/12 22:43:02 jlam Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -96,8 +96,7 @@ OPENSSL_EXAMPLES=	c_rehash.rb cert2text.rb cert_store_view.rb \
 			wget.rb
 PTY_EXAMPLES=		expect_sample.rb script.rb shl.rb
 
-REPLACE_RUBY_DIRS=	${WRKSRC}/bin ${WRKSRC}/ext ${WRKSRC}/lib \
-			${WRKSRC}/sample
+REPLACE_RUBY_DIRS=	bin ext lib sample
 
 pre-configure:
 	${RM} -f ${WRKSRC}/ext/curses/extconf.rb
