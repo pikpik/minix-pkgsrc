@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.51 2008/03/22 01:45:44 bjs Exp $
+# $NetBSD: Makefile,v 1.53 2008/04/05 12:53:03 tron Exp $
 
-DISTNAME=	libidn-1.6
+DISTNAME=	libidn-1.7
 CATEGORIES=	devel
 MASTER_SITES=	ftp://alpha.gnu.org/pub/gnu/libidn/ \
 		http://josefsson.org/libidn/releases/
