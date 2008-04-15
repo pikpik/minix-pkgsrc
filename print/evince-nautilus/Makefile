@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2008/01/18 05:08:54 tnn Exp $
+# $NetBSD: Makefile,v 1.24 2008/03/06 14:53:53 wiz Exp $
 #
 
 .include "../../print/evince/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/evince/evince-nautilus/}
-PKGREVISION=		2
 COMMENT=		File properties plugin for evince files
 PKG_OPTIONS_VAR=	PKG_OPTIONS.evince
 PKG_SUPPORTED_OPTIONS=	dvi djvu
@@ -31,7 +30,6 @@ INSTALL_DIRS=		properties
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
-.include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../sysutils/nautilus/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
