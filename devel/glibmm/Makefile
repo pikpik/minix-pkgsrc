@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2007/10/23 12:11:30 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2008/04/15 12:36:39 drochner Exp $
 
 DISTNAME=	glibmm-2.16.1
 CATEGORIES=	devel
@@ -6,7 +6,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/2.16/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
-HOMEPAGE=	http://gtkmm.sourceforge.net/
+HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ bindings for glib
 
 PKG_DESTDIR_SUPPORT=	user-destdir
