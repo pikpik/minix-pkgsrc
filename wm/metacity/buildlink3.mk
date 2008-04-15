@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.17 2007/09/21 13:04:26 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.18 2007/11/05 19:40:42 drochner Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 METACITY_BUILDLINK3_MK:=	${METACITY_BUILDLINK3_MK}+
@@ -21,5 +21,7 @@ BUILDLINK_PKGSRCDIR.metacity?=	../../wm/metacity
 .include "../../devel/pango/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
+.include "../../x11/libXcomposite/buildlink3.mk"
+.include "../../x11/libXdamage/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
