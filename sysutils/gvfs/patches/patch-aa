@@ -85,3 +85,12 @@ $NetBSD$
  
  pkg_failed=no
  { echo "$as_me:$LINENO: checking for KEYRING" >&5
+@@ -26600,7 +26600,7 @@ _ACEOF
+ 
+ 		msg_samba="yes"
+                 if test x$with_samba_libs != x/usr/lib; then
+-                        SAMBA_LIBS="-L$with_samba_libs -lsmbclient"
++                        SAMBA_LIBS="-L$with_samba_libs -lsmbclient -Wl,-R$with_samba_libs"
+                 else
+                 	SAMBA_LIBS="-lsmbclient"
+                 fi
