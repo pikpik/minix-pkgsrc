@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.10 2006/12/27 13:37:43 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2007/11/12 00:16:32 wiz Exp $
 
 DISTNAME=	x2x-1.27
 PKGREVISION=	2
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.digital.com/pub/Digital/SRC/x2x/
+MASTER_SITES=	http://x2x.dottedmag.net/releases/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://x2x.dottedmag.net/
 COMMENT=	One keyboard and mouse to control multiple X displays
 
 USE_IMAKE=	yes
