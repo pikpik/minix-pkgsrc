@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 19:53:21 joerg Exp $
 #
 
-DISTNAME=		printproto-1.0.3
+DISTNAME=		printproto-1.0.4
 CATEGORIES=		x11 print
 MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/proto/
 EXTRACT_SUFX=		.tar.bz2
