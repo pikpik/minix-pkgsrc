@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/08/23 20:50:52 heinz Exp $
+# $NetBSD: Makefile,v 1.9 2008/03/12 20:54:52 drochner Exp $
 #
 
 DISTNAME=		pycairo-1.4.12
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
 
 PKGCONFIG_OVERRIDE+=	pycairo.pc.in
-PYTHON_VERSIONS_ACCEPTED= 24
+PYTHON_VERSIONS_ACCEPTED= 25 24
 PY_PATCHPLIST=		yes
 
 .include "../../mk/compiler.mk"
