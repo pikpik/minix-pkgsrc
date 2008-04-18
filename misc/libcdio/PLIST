@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2006/04/12 16:47:51 joerg Exp $
+@comment $NetBSD: PLIST,v 1.13 2008/04/15 16:13:12 tron Exp $
 bin/cd-drive
 bin/cd-info
 bin/cd-paranoia
@@ -57,6 +57,8 @@ lib/libiso9660++.la
 lib/libudf.la
 lib/pkgconfig/libcdio.pc
 lib/pkgconfig/libcdio++.pc
+lib/pkgconfig/libcdio_cdda.pc
+lib/pkgconfig/libcdio_paranoia.pc
 lib/pkgconfig/libiso9660.pc
 lib/pkgconfig/libiso9660++.pc
 lib/pkgconfig/libudf.pc
