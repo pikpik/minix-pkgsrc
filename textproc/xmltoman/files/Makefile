@@ -1,4 +1,5 @@
-
+# $NetBSD$
+#
 SCRIPTS=	xmltoman xmlmantohtml
 MAN=		xmltoman.1 xmlmantohtml.1
 
