@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/02/22 17:04:34 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/14 09:39:00 wiz Exp $
 #
 
 DISTNAME=	hunspell-1.2.2
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hunspell/}
 MAINTAINER=	adam.hoka@gmail.com
 HOMEPAGE=	http://hunspell.sourceforge.net/
 COMMENT=	Improved spellchecker
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME:C/-[0-9]+$//}
 GNU_CONFIGURE=		yes
