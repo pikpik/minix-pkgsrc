@@ -1,8 +1,8 @@
-$NetBSD: patch-ac,v 1.1.1.1 2005/11/13 08:31:05 minskim Exp $
+$NetBSD: patch-ac,v 1.2 2006/03/23 00:13:10 joerg Exp $
 
---- configure.orig	2003-12-14 23:41:34.000000000 -0800
+--- configure.orig	2008-02-02 18:44:21.000000000 +0100
 +++ configure
-@@ -3833,7 +3833,7 @@ fi
+@@ -4563,7 +4563,7 @@ fi
  done
  
          ;;

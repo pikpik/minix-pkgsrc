@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/11/13 08:31:05 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/22 15:10:38 joerg Exp $
 #
 
-DISTNAME=		nload-0.6.0
+DISTNAME=		nload-0.7.0
 CATEGORIES=		net sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nload/}
 
-MAINTAINER=		bartosz@atom.eu.org
+MAINTAINER=		bartosz.kuzma@gmail.com
 HOMEPAGE=		http://www.roland-riegel.de/nload/
 COMMENT=		Monitoring network traffic and bandwidth usage
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 MANCOMPRESSED=		yes
