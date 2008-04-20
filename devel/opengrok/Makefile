@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/03/03 17:45:36 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/05 17:26:37 adrianp Exp $
 #
 
-DISTNAME=	opengrok-0.6
+DISTNAME=	opengrok-0.6.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.opensolaris.org/os/project/opengrok/files/
 
