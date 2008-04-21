@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.705 2008/04/06 23:41:16 seb Exp $
+# $NetBSD: Makefile,v 1.706 2008/04/17 12:43:22 joerg Exp $
 #
 
 COMMENT=	Networking tools
@@ -512,6 +512,7 @@ SUBDIR+=	vpnc
 SUBDIR+=	vsftpd
 SUBDIR+=	vtun
 SUBDIR+=	wakeup
+SUBDIR+=	walker
 SUBDIR+=	wap-utils
 SUBDIR+=	waste
 SUBDIR+=	wget
