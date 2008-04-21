@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2008/03/28 05:56:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.46 2008/03/30 14:39:22 darcy Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
@@ -10,7 +10,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://fontforge.sourceforge.net/
 COMMENT=	Postscript font editor
 
-VERSION=	20080302
+VERSION=	20080330
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
