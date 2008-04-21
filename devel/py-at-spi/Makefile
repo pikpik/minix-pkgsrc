@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1 2007/10/31 19:52:35 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2007/12/22 00:17:35 joerg Exp $
 #
 
-DISTNAME=		at-spi-1.20.1
-PKGNAME=		${PYPKGPREFIX}-at-spi-1.20.1
+DISTNAME=		at-spi-1.22.1
+PKGNAME=		${PYPKGPREFIX}-at-spi-1.22.1
 CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/at-spi/1.20/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/at-spi/1.22/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
