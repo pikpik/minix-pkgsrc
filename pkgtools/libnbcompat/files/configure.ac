@@ -1,4 +1,4 @@
-dnl $NetBSD: configure.ac,v 1.60 2008/03/21 23:28:08 joerg Exp $
+dnl $NetBSD: configure.ac,v 1.61 2008/04/04 15:19:10 joerg Exp $
 
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
@@ -234,6 +234,8 @@ AC_FUNC_MALLOC
 AC_FUNC_STRERROR_R
 AC_FUNC_VFORK
 AC_FUNC_VPRINTF
+
+AC_CHECK_DECLS([snprintf, vasprintf], [], [], [#include <stdio.h>])
 
 AC_REPLACE_FUNCS([asprintf err fgetln fnmatch fparseln getenv isblank \
 	lchflags lchmod lchown lutimes mkdtemp mkstemp setenv setgroupent \
