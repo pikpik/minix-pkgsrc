@@ -51,7 +51,6 @@ ${GEM_LIBDIR}/lib/thin/stats.html.erb
 ${GEM_LIBDIR}/lib/thin/stats.rb
 ${GEM_LIBDIR}/lib/thin/statuses.rb
 ${GEM_LIBDIR}/lib/thin/version.rb
-${GEM_LIBDIR}/lib/thin_backend.bundle
 ${GEM_LIBDIR}/lib/thin_parser.bundle
 ${GEM_LIBDIR}/lib/thin_parser.${RUBY_DLEXT}
 ${GEM_LIBDIR}/spec/backends/swiftiply_client_spec.rb
