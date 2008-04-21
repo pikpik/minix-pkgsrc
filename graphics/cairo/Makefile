@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.59 2008/03/12 20:48:11 drochner Exp $
+# $NetBSD: Makefile,v 1.58 2007/11/29 22:13:58 wiz Exp $
 
-DISTNAME=	cairo-1.4.14
+DISTNAME=	cairo-1.6.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 
@@ -31,6 +31,7 @@ PLIST.carbon=		yes
 .include "options.mk"
 
 BUILDLINK_API_DEPENDS.glitz+=	glitz>=0.5.1
+BUILDLINK_API_DEPENDS.pixman+=	pixman>=0.10.0
 
 # For snprintf()
 CPPFLAGS.SunOS+=		-D__EXTENSIONS__
@@ -43,4 +44,5 @@ TEST_TARGET=			check
 .include "../../graphics/glitz/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
+.include "../../x11/pixman/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
