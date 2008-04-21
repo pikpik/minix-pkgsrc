@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/04/17 21:34:14 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2008/02/20 10:53:17 xtraeme Exp $
 #
 
 DISTNAME=	Glib-${DIST_VERSION}
@@ -18,7 +18,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=	pkg-config
 
-DIST_VERSION=	1.164
+DIST_VERSION=	1.182
 
 PERL5_PACKLIST=	auto/Glib/.packlist
 
