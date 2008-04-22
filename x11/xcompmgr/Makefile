@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2007/12/19 05:43:30 bjs Exp $
+# $NetBSD: Makefile,v 1.22 2008/02/16 07:18:45 bjs Exp $
 #
 
-DISTNAME=	xcompmgr-1.1.3
-PKGREVISION=	2
+DISTNAME=	xcompmgr-1.1.4
 CATEGORIES=	x11
-MASTER_SITES=	http://xapps.freedesktop.org/release/
+MASTER_SITES =	http://xorg.freedesktop.org/archive/individual/app/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/
