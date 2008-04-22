@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.5 2006/04/06 06:21:50 reed Exp $
+# $NetBSD$
 
 BUILTIN_PKG:=	libevent
 

@@ -1,8 +1,13 @@
-@comment $NetBSD: PLIST,v 1.3 2007/02/08 17:06:28 xtraeme Exp $
+@comment $NetBSD$
 bin/event_rpcgen.py
-include/event.h
 include/evdns.h
+include/event-config.h
+include/event.h
 include/evhttp.h
+include/evrpc.h
+include/evutil.h
 lib/libevent.la
-man/man3/event.3
+lib/libevent_core.la
+lib/libevent_extra.la
 man/man3/evdns.3
+man/man3/event.3
