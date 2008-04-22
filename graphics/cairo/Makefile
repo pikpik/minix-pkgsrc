@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.58 2007/11/29 22:13:58 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2008/04/21 11:29:33 tnn Exp $
 
 DISTNAME=	cairo-1.6.4
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 
@@ -24,7 +25,6 @@ CONFIGURE_ARGS+=	--enable-ps
 PLIST_VARS+=		carbon
 .if exists(/System/Library/Frameworks/Carbon.framework)
 CONFIGURE_ARGS+=	--enable-quartz
-CONFIGURE_ARGS+=	--enable-atsui
 PLIST.carbon=		yes
 .endif
 
