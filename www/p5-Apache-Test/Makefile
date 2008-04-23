@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2007/02/18 03:25:51 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/06 15:46:54 heinz Exp $
 #
 
-DISTNAME=		Apache-Test-1.29
+DISTNAME=		Apache-Test-1.30
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5apt
 CATEGORIES=		www perl5
