@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/04/12 22:43:13 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/04/23 18:17:25 xtraeme Exp $
 #
 
 DISTNAME=	compiz-0.6.2
@@ -62,6 +62,8 @@ PLIST.kde=		yes
 .include "../../x11/libXdamage/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
+.include "../../x11/libdrm/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
