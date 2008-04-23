@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/01/18 05:09:50 tnn Exp $
+# $NetBSD: Makefile,v 1.13 2008/04/22 16:24:31 jlam Exp $
 
 PKGNAME=	${PKGNAME_BASE:S/-/-x11-/}
 
@@ -7,6 +7,8 @@ PATCHDIR=	${.CURDIR}/../../www/htmldoc/patches
 PKGDIR=		${.CURDIR}/../../www/htmldoc
 
 DESCR_SRC=	${.CURDIR}/DESCR
+
+.include "../../mk/bsd.prefs.mk"
 
 PKG_OPTIONS.htmldoc+=	htmldoc-gui
 
