@@ -1,5 +1,6 @@
 @comment $NetBSD$
 lib/libI810XvMC.la
+lib/libIntelXvMC.la
 lib/xorg/modules/drivers/ch7017.la
 lib/xorg/modules/drivers/ch7xxx.la
 lib/xorg/modules/drivers/i810_drv.so
