@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7237 2008/04/23 16:28:29 xtraeme Exp $
+$NetBSD: TODO,v 1.7238 2008/04/23 18:18:37 xtraeme Exp $
 
 Suggested new packages
 ======================
@@ -1413,7 +1413,6 @@ Suggested package updates
 	o xf86-video-glint-1.2.0
 	o xf86-video-i128-1.3.0
 	o xf86-video-i740-1.2.0
-	o xf86-video-intel-2.3.0
 	o xf86-video-neomagic-1.2.0
 	o xf86-video-rendition-4.2.0
 	o xf86-video-s3-0.6.0
