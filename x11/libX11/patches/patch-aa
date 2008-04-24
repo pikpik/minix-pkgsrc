@@ -1,8 +1,21 @@
 $NetBSD$
 
---- configure.ac.orig	2007-07-27 18:02:55.000000000 +0200
+Include pthread.h as thread stubs might be macros like on NetBSD.
+
+Define conditional for cross-compiling support.
+
+--- configure.ac.orig	2008-03-06 21:48:26.000000000 +0100
 +++ configure.ac
-@@ -304,6 +304,8 @@ else
+@@ -180,7 +180,7 @@ esac
+ AC_SUBST(XTHREADS)
+ AC_SUBST(XUSE_MTSAFE_API)
+ 
+-AC_CHECK_LIB(c, pthread_self, [thrstubs="no"], [thrstubs="yes"])
++AC_CHECK_DECLS([pthread_self], [thrstubs="no"], [thrstubs="yes"], [[#include <pthread.h>]])
+ AM_CONDITIONAL(THRSTUBS, test x$thrstubs = xyes)
+ 
+ dnl XXX incomplete, please fill this in
+@@ -322,6 +322,8 @@ else
  fi
  AC_SUBST(XKBPROTO_REQUIRES)
  
