@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.12 2004/01/22 13:00:00 adam Exp $
+@comment $NetBSD$
 include/GL/glu.h
 include/GL/glu_mangle.h
 lib/libGLU.la
-@unexec ${RMDIR} %D/include/GL >/dev/null 2>&1 || ${TRUE}
+lib/pkgconfig/glu.pc
+@comment in graphics/MesaLib: @dirrm include/GL
