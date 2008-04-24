@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/04/12 22:43:14 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/15 17:59:15 drochner Exp $
 #
 
 DISTNAME=	gnome-control-center-2.22.1
+PKGREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-control-center/2.22/}
 EXTRACT_SUFX=	.tar.bz2
@@ -30,6 +31,7 @@ PKGCONFIG_OVERRIDE+=	libwindow-settings/gnome-window-settings-2.0.pc.in
 INSTALL_MAKE_FLAGS+=	${MAKE_FLAGS}
 INSTALL_MAKE_FLAGS+=	vfsmoduleconfdir=${PREFIX}/share/examples/${PKGBASE}
 INSTALL_MAKE_FLAGS+=	menudir=${PREFIX}/share/examples/${PKGBASE}
+INSTALL_MAKE_FLAGS+=	autostartdir=${PREFIX}/share/applications
 
 GCONF_SCHEMAS+=	control-center.schemas
 GCONF_SCHEMAS+=	themus.schemas
