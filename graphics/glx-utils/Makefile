@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2006/08/01 21:40:20 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/04 15:39:10 jlam Exp $
 
 DISTNAME=	MesaDemos-${MESA_VERSION}
-PKGNAME=	glx-utils-${MESA_VERSION}
+PKGNAME=	glx-utils-${MESA_PKGVERSION}
 CATEGORIES=	x11 graphics
 COMMENT=	OpenGL glxgears and glxinfo
 
