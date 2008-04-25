@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/01/18 05:09:41 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/25 20:39:11 joerg Exp $
 #
 
 DISTNAME=	SSLCrypto-0.1.1
@@ -11,7 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freenet.org.nz/python/SSLCrypto/
 COMMENT=	Python bindings for openssl
 
-DEPENDS+=	py24-pyrex>=0.9.4.1:../../lang/py-pyrex
+DEPENDS+=	${PYPKGPREFIX}-pyrex>=0.9.4.1:../../lang/py-pyrex
 
 PYTHON_VERSIONS_ACCEPTED=	25 24
 
