@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.30 2008/02/13 14:26:23 kefren Exp $
+# $NetBSD: Makefile,v 1.31 2008/04/19 18:43:38 kefren Exp $
 
-DISTNAME=	libgdiplus-${MONO_VERSION}
+DISTNAME=	libgdiplus-1.9
 CATEGORIES=	graphics
 MASTER_SITES=	http://go-mono.com/sources/libgdiplus/
 EXTRACT_SUFX=	.tar.bz2
