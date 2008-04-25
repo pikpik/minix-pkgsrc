@@ -1,9 +1,9 @@
-# $NetBSD: Makefile.common,v 1.2 2007/10/29 12:38:02 uebayasi Exp $
+# $NetBSD: Makefile.common,v 1.3 2008/04/12 22:43:00 jlam Exp $
 
 DISTNAME=	emacs-${EMACSVERSION}a
 
 MASTER_SITES=	${MASTER_SITE_GNU:=emacs/}
-MAINTAINER=	markd@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 
 CONFLICTS=	mule-[0-9]*
