@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/02/15 14:30:19 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/11/26 22:44:53 wiz Exp $
 #
 
 DISTNAME=	pykaraoke-0.5.1
@@ -15,7 +15,7 @@ COMMENT=	Free Python-based karaoke player
 #DEPENDS+=	timidity-[0-9]*:../../audio/timidity
 
 USE_DIRS+=	xdg-1.4
-PYTHON_VERSIONS_ACCEPTED=	24
+PYTHON_VERSIONS_ACCEPTED=	25 24
 PYDISTUTILSPKG=	yes
 
 # supposedly needed, but I couldn't find out why

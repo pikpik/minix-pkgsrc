@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2008/03/13 17:38:48 joerg Exp $
 #
 
 DISTNAME=	psycopg-1.1.21
@@ -18,7 +18,6 @@ CONFIGURE_ARGS+= \
  --with-postgres-libraries=${PGSQL_PREFIX}/lib
 BUILD_TARGET=	default
 
-PYTHON_VERSIONS_ACCEPTED= 24 23 22 21
 PY_PATCHPLIST=	yes
 
 .include "../../lang/python/extension.mk"

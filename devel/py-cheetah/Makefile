@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/05/15 13:04:29 shannonjr Exp $
+# $NetBSD: Makefile,v 1.7 2007/10/31 23:15:54 shannonjr Exp $
 #
 
 DISTNAME=		Cheetah-2.0
@@ -15,7 +15,6 @@ COMMENT=		Python-powered template engine and code-generator
 PYDISTUTILSPKG=		yes
 PYBINMODULE=		yes
 PYSETUP=		setup.py
-PYTHON_VERSIONS_ACCEPTED=	24 23 22
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

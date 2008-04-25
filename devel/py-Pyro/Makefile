@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 17:10:36 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/17 21:01:29 rillig Exp $
 #
 
 DISTNAME=		Pyro-3.4
@@ -13,7 +13,6 @@ COMMENT=		Distributed Object Technology system in Python
 
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
-PYTHON_VERSIONS_ACCEPTED= 24 23 22
 PLIST_SUBST+=		PYVERSSUFFIX="-${PYVERSSUFFIX}"
 MAKE_ENV+=		PKGSRC="1"
 MAKE_ENV+=		PYVERSSUFFIX="-${PYVERSSUFFIX}"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/02 10:05:35 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/07/01 00:06:46 wiz Exp $
 #
 
 DISTNAME=	PyYAML-3.05
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.pyyaml.org/
 COMMENT=	Collection of libraries to process YAML with Python
 
 PYDISTUTILSPKG=	yes
-PYTHON_VERSIONS_ACCEPTED=	24 23
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

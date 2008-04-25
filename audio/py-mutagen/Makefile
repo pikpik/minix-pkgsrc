@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/01/13 12:06:19 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/25 23:33:19 wiz Exp $
 #
 
 DISTNAME=	mutagen-1.10
@@ -12,7 +12,6 @@ COMMENT=	Audio metadata handling for Python
 
 USE_LANGUAGES=	# none
 PYDISTUTILSPKG=	yes
-PYTHON_VERSIONS_ACCEPTED=	24 23
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

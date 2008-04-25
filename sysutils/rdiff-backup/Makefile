@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/04/17 18:39:58 recht Exp $
+# $NetBSD: Makefile,v 1.26 2007/01/14 15:24:33 obache Exp $
 #
 
 DISTNAME=	rdiff-backup-1.0.5
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.nongnu.org/rdiff-backup/
 COMMENT=	Remote incremental backup utility
 
 PYDISTUTILSPKG=		yes
-PYTHON_VERSIONS_ACCEPTED= 24 23 22
 
 SUBST_CLASSES+=		path
 SUBST_STAGE.path=	post-patch

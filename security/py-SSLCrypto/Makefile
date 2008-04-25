@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/05/05 00:03:54 agc Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/18 05:09:41 tnn Exp $
 #
 
 DISTNAME=	SSLCrypto-0.1.1
@@ -13,7 +13,7 @@ COMMENT=	Python bindings for openssl
 
 DEPENDS+=	py24-pyrex>=0.9.4.1:../../lang/py-pyrex
 
-PYTHON_VERSIONS_ACCEPTED=	24
+PYTHON_VERSIONS_ACCEPTED=	25 24
 
 PLIST_SUBST+=		PYSITELIB=${PYSITELIB:Q}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/02/15 20:34:35 bouyer Exp $
+# $NetBSD: Makefile,v 1.5 2008/02/17 16:29:03 bouyer Exp $
 #
 
 VERSION=		3.1.3
@@ -39,7 +39,6 @@ MAKE_ENV+=		XEN_TARGET_ARCH="x86_64" XEN_COMPILE_ARCH="x86_64"
 .else
 MAKE_ENV+=		XEN_TARGET_ARCH="unsupported"
 .endif
-PYTHON_VERSIONS_ACCEPTED= 24 23
 
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	pre-configure

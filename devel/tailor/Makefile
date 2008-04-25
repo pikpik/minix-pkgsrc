@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/11/08 05:19:24 bjs Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/16 08:47:27 wiz Exp $
 #
 
 DISTNAME=		tailor-0.9.31
@@ -11,7 +11,6 @@ COMMENT=		Tool to migrate changesets between various version control systems
 
 #LICENSE=		GPLv3
 PYDISTUTILSPKG=		yes
-PYTHON_VERSIONS_ACCEPTED=	24 23
 
 PYTHON_PATCH_SCRIPTS=	tailor
 

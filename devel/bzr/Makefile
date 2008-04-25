@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/04/07 20:10:10 xtraeme Exp $
+# $NetBSD: Makefile,v 1.22 2008/04/16 14:44:43 xtraeme Exp $
 #
 
 DISTNAME=		bzr-1.3.1
@@ -18,7 +18,7 @@ PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 TEST_TARGET=		check
 
-PYTHON_VERSIONS_ACCEPTED=	24
+PYTHON_VERSIONS_ACCEPTED=	25 24
 PYTHON_PATCH_SCRIPTS=		bzr bzrlib/weave.py
 
 .include "../../mk/bsd.prefs.mk"

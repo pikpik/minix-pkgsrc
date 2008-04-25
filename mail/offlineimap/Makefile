@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/01/07 09:13:59 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/16 15:46:21 tonio Exp $
 #
 
 DISTNAME=	offlineimap_${_OFFLINEIMAP_VER}
@@ -15,7 +15,6 @@ WRKSRC=		${WRKDIR}/offlineimap
 # This is only to placate pkglint
 _OFFLINEIMAP_VER=	4.0.16
 
-PYTHON_VERSIONS_ACCEPTED=	22 23 24
 PYDISTUTILSPKG=			yes
 PYTHON_PATCH_SCRIPTS=		bin/offlineimap
 PLIST_SUBST+=			PYSITELIB=${PYSITELIB:Q}

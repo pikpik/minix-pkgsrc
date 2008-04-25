@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/08/10 11:04:25 agc Exp $
+# $NetBSD: Makefile,v 1.3 2007/08/25 11:51:44 wiz Exp $
 #
 
 DISTNAME=	wikipediafs-0.3
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://wikipediafs.sourceforge.net/
 COMMENT=	FUSE filesystem for accessing the wikipedia
 
-PYTHON_VERSIONS_ACCEPTED=	24
+PYTHON_VERSIONS_ACCEPTED=	25 24
 
 PLIST_SUBST+=		PYSITELIB=${PYSITELIB:Q}
 

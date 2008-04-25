@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/13 17:38:48 joerg Exp $
 #
 
 DISTNAME=	pyPgSQL-2.4
@@ -15,7 +15,7 @@ WRKSRC=		${WRKDIR}/pypgsql
 PYDISTUTILSPKG=	YES
 PYBINMODULE=	YES
 PY_PATCHPLIST=	YES
-PYTHON_VERSIONS_ACCEPTED=	24 23 22 21
+PYTHON_VERSIONS_ACCEPTED=	25 24 23 21
 
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"
