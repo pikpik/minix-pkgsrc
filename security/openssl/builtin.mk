@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: builtin.mk,v 1.25 2008/01/17 06:42:47 tnn Exp $
 
 BUILTIN_PKG:=	openssl
 
@@ -230,10 +230,12 @@ buildlink-openssl-des-h:
 
 .  if defined(PKG_SYSCONFDIR.openssl)
 SSLDIR=	${PKG_SYSCONFDIR.openssl}
-.  elif ${OPSYS} == "NetBSD"
-SSLDIR=	/etc/openssl
 .  elif !empty(USE_BUILTIN.openssl:M[yY][eE][sS])
+.    if ${OPSYS} == "NetBSD"
+SSLDIR=	/etc/openssl
+.    else
 SSLDIR=	/etc/ssl 		# most likely place
+.    endif
 .  else
 SSLDIR=	${PKG_SYSCONFBASEDIR}/openssl
 .  endif
