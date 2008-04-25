@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/02/19 09:59:33 xtraeme Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/19 18:42:57 kefren Exp $
 
-DISTNAME=	monodoc-${MONO_VERSION}
+DISTNAME=	monodoc-1.9
 CATEGORIES=	devel
 MASTER_SITES=	http://go-mono.com/sources/monodoc/
 EXTRACT_SUFX=	.zip
