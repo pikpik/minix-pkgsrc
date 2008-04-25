@@ -148,13 +148,13 @@ $NetBSD$
 +#	@for fn in $(TOP)/include/GL/*.h; do \
 +#		$(BSD_INSTALL_DATA) $$fn $(DESTDIR)$(INSTALL_DIR)/include/GL; \
 +#	done
-+	@if [ -e "$(TOP)/$(LIB_DIR)/$(GL_LIB_NAME:.so=.la)" ]; then \
++	@if [ -f "$(TOP)/$(LIB_DIR)/$(GL_LIB_NAME:.so=.la)" ]; then \
 +		$(LIBTOOL) --mode=install $(BSD_INSTALL_LIB) \
 +			$(TOP)/$(LIB_DIR)/$(GL_LIB_NAME:.so=.la) \
 +			$(DESTDIR)$(INSTALL_DIR)/$(LIB_DIR); \
 +	fi
 +	$(BSD_INSTALL_DATA) gl.pc $(DESTDIR)$(INSTALL_DIR)/$(LIB_DIR)/pkgconfig
-+	@if [ -e "$(TOP)/$(LIB_DIR)/$(OSMESA_LIB_NAME:.so=.la)" ]; then \
++	@if [ -f "$(TOP)/$(LIB_DIR)/$(OSMESA_LIB_NAME:.so=.la)" ]; then \
 +		$(LIBTOOL) --mode=install $(BSD_INSTALL_LIB) \
 +			$(TOP)/$(LIB_DIR)/$(OSMESA_LIB_NAME:.so=.la) \
 +			$(DESTDIR)$(INSTALL_DIR)/$(LIB_DIR); \
