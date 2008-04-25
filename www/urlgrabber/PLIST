@@ -18,6 +18,9 @@ ${PYSITELIB}/urlgrabber/mirror.pyo
 ${PYSITELIB}/urlgrabber/progress.py
 ${PYSITELIB}/urlgrabber/progress.pyc
 ${PYSITELIB}/urlgrabber/progress.pyo
+${PYSITELIB}/urlgrabber/sslfactory.py
+${PYSITELIB}/urlgrabber/sslfactory.pyc
+${PYSITELIB}/urlgrabber/sslfactory.pyo
 share/doc/${PKGNAME}/ChangeLog
 share/doc/${PKGNAME}/LICENSE
 share/doc/${PKGNAME}/README
