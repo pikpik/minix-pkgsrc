@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/fcrackzip
+bin/zipinfo
+man/man1/fcrackzip.1
