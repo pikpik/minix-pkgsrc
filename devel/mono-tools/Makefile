@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/19 18:46:43 kefren Exp $
 
-DISTNAME=	mono-tools-${MONO_VERSION}
+DISTNAME=	mono-tools-1.9
 CATEGORIES=	devel
 MASTER_SITES=	http://go-mono.com/sources/mono-tools/
 EXTRACT_SUFX=	.tar.bz2
