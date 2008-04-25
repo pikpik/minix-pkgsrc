@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2008/02/18 17:06:32 xtraeme Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/19 19:23:17 kefren Exp $
 
-DISTNAME=	xsp-${MONO_VERSION}
+DISTNAME=	xsp-1.9.1
 PKGNAME=	mono-${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://go-mono.com/sources/xsp/
