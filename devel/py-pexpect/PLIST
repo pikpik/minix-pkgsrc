@@ -1,4 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/02/23 16:25:03 minskim Exp $
+@comment $NetBSD$
+${PYSITELIB}/ANSI.py
+${PYSITELIB}/ANSI.pyc
+${PYSITELIB}/ANSI.pyo
+${PYSITELIB}/FSM.py
+${PYSITELIB}/FSM.pyc
+${PYSITELIB}/FSM.pyo
 ${PYSITELIB}/fdpexpect.py
 ${PYSITELIB}/fdpexpect.pyc
 ${PYSITELIB}/fdpexpect.pyo
@@ -8,3 +14,6 @@ ${PYSITELIB}/pexpect.pyo
 ${PYSITELIB}/pxssh.py
 ${PYSITELIB}/pxssh.pyc
 ${PYSITELIB}/pxssh.pyo
+${PYSITELIB}/screen.py
+${PYSITELIB}/screen.pyc
+${PYSITELIB}/screen.pyo
