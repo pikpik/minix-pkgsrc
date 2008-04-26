@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2008/01/18 05:09:55 tnn Exp $
+# $NetBSD: Makefile,v 1.35 2008/03/06 14:53:56 wiz Exp $
 #
 
-DISTNAME=	gnome-themes-extras-0.8.1
-PKGREVISION=	15
+DISTNAME=	gnome-themes-extras-2.22.0
 CATEGORIES=	x11 gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-themes-extras/0.8/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-themes-extras/2.22/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -30,6 +29,8 @@ BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 BUILDLINK_API_DEPENDS.librsvg+=	librsvg>=2.12.6
 
+.include "../../graphics/gnome-icon-theme/buildlink3.mk"
+.include "../../graphics/icon-naming-utils/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../graphics/librsvg/buildlink3.mk"
