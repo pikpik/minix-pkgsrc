@@ -35,8 +35,15 @@ extern Boolean NoRecord;
 extern Boolean Force;
 extern Boolean Automatic;
 extern int Replace;
+extern char *Mode;
+extern char *Owner;
+extern char *Group;
+extern char *Directory;
+extern char *PkgName;
+extern char FirstPen[];
 
 int     make_hierarchy(char *);
+int     extract_plist(char *, package_t *);
 void    apply_perms(char *, char **, int);
 
 int     pkg_perform(lpkg_head_t *);

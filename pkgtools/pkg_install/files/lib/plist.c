@@ -539,7 +539,6 @@ delete_package(Boolean ign_err, Boolean nukedirs, package_t *pkg, Boolean NoDele
 			if (NoDeleteFiles)
 				break;
 			format_cmd(tmp, sizeof(tmp), p->name, Where, last_file);
-			/* XXX cleanup(0); */
 			printf("Executing `%s'\n", tmp);
 			if (!Fake && system(tmp)) {
 				warnx("unexec command for `%s' failed", tmp);

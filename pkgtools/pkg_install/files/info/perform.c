@@ -126,7 +126,7 @@ static const struct pkg_meta_desc {
 	int entry_mask;
 	int required_file;
 } pkg_meta_descriptors[] = {
-	{ offsetof(struct pkg_meta, meta_contents), CONTENTS_FNAME,
+	{ offsetof(struct pkg_meta, meta_contents), CONTENTS_FNAME ,
 	    LOAD_CONTENTS, 1},
 	{ offsetof(struct pkg_meta, meta_comment), COMMENT_FNAME,
 	    LOAD_COMMENT, 1 },
@@ -302,19 +302,30 @@ pkg_do(const char *pkg)
 	int     code = 0;
 	const char   *binpkgfile = NULL;
 
-	if (IS_URL(pkg) || (fexists(pkg) && isfile(pkg))) {
+	if (IS_URL(pkg)) {
+#ifdef BOOTSTRAP
+		errx(2, "Remote access not supported during bootstrap");
+#else
+		struct archive *archive;
+		void *remote_archive_cookie;
+
+		archive = open_remote_archive(pkg, &remote_archive_cookie);
+
+		meta = read_meta_data_from_archive(archive);
+		close_remote_archive(remote_archive_cookie);
+#endif
+	} else if (fexists(pkg) && isfile(pkg)) {
 #ifdef BOOTSTRAP
 		errx(2, "Binary packages not supported during bootstrap");
 #else
 		struct archive *archive;
-		void *archive_cookie;
+		void *remote_archive_cookie;
 
-		archive = open_archive(pkg, &archive_cookie);
+		archive = open_local_archive(pkg, &remote_archive_cookie);
 
 		meta = read_meta_data_from_archive(archive);
-		close_archive(archive_cookie);
-		if (!IS_URL(pkg))
-			binpkgfile = pkg;
+		close_local_archive(remote_archive_cookie);
+		binpkgfile = pkg;
 #endif
 	} else {
 		/*

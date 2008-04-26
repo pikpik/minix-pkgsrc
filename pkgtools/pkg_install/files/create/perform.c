@@ -91,38 +91,6 @@ register_depends(package_t *plist, char *deps, int build_only)
 }
 
 /*
- *  Expect "fname" to point at a file, and read it into
- *  the buffer returned.
- */
-static char   *
-fileGetContents(char *fname)
-{
-	char   *contents;
-	struct stat sb;
-	int     fd;
-
-	if (stat(fname, &sb) == FAIL) {
-		cleanup(0);
-		errx(2, "can't stat '%s'", fname);
-	}
-
-	contents = (char *) malloc((size_t) (sb.st_size) + 1);
-	fd = open(fname, O_RDONLY, 0);
-	if (fd == FAIL) {
-		cleanup(0);
-		errx(2, "unable to open '%s' for reading", fname);
-	}
-	if (read(fd, contents, (size_t) sb.st_size) != (size_t) sb.st_size) {
-		cleanup(0);
-		errx(2, "short read on '%s' - did not get %lld bytes",
-		    fname, (long long) sb.st_size);
-	}
-	close(fd);
-	contents[(size_t) sb.st_size] = '\0';
-	return contents;
-}
-
-/*
  * Get a string parameter as a file spec or as a "contents follow -" spec
  */
 static void

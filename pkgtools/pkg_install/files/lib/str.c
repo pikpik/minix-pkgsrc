@@ -106,3 +106,44 @@ ispkgpattern(const char *pkg)
 {
 	return strpbrk(pkg, "<>[]?*{") != NULL;
 }
+
+/*
+ * Strip off any .tgz, .tbz or .t[bg]z suffix from fname,
+ * and copy into buffer "buf", the suffix is stored in "sfx"
+ * if "sfx" is not NULL. If no suffix is found, "sfx" is set
+ * to an empty string. 
+ */
+void
+strip_txz(char *buf, char *sfx, const char *fname)
+{
+	static const char *const suffixes[] = {
+		".tgz", ".tbz", ".t[bg]z", 0};
+	const char *const *suffixp;
+	size_t len;
+
+	len = strlen(fname);
+	assert(len < PKG_PATTERN_MAX);
+
+	if (sfx)
+		sfx[0] = '\0';
+
+	for (suffixp = suffixes; *suffixp; suffixp++) {
+		size_t suffixlen = strlen(*suffixp);
+
+		if (memcmp(&fname[len - suffixlen], *suffixp, suffixlen))
+			continue;
+
+		/* matched! */
+		memcpy(buf, fname, len - suffixlen);
+		buf[len - suffixlen] = 0;
+		if (sfx) {
+			if (suffixlen >= PKG_SUFFIX_MAX)
+				errx(EXIT_FAILURE, "too long suffix '%s'", fname);
+			memcpy(sfx, *suffixp, suffixlen+1);
+			return;
+		}
+	}
+
+	/* not found */
+	memcpy(buf, fname, len+1);
+}
