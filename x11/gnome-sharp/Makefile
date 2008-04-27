@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/03/06 14:53:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/17 22:54:02 wiz Exp $
 #
 
 DISTNAME=	gnome-sharp-2.16.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	http://go-mono.com/sources/gnome-sharp2/
 
