@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/12/01 12:56:04 tonio Exp $
+# $NetBSD: Makefile,v 1.2 2007/12/27 14:00:38 joerg Exp $
 #
 
-DISTNAME=	camlp5-5.01
+DISTNAME=	camlp5-5.08
 CATEGORIES=	lang
 MASTER_SITES=	http://pauillac.inria.fr/~ddr/camlp5/distrib/src/
 EXTRACT_SUFX=	.tgz
