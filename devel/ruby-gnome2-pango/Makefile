@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/01/29 06:42:34 minskim Exp $
+# $NetBSD: Makefile,v 1.7 2007/08/19 14:31:25 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-pango-${VERSION}
@@ -13,6 +13,7 @@ RUBY_EXTCONF_SUBDIRS=	pango
 DEPENDS+=		${RUBY_PKGPREFIX}-gnome2-glib>=${VERSION}:../../devel/ruby-gnome2-glib
 
 USE_TOOLS+=		pkg-config
+DISTINFO_FILE?=		${.CURDIR}/distinfo
 
 INSTALL_TARGET=		install
 
