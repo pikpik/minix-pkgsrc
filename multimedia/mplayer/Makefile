@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2008/04/26 14:54:31 darcy Exp $
+# $NetBSD: Makefile,v 1.57 2008/04/27 15:22:10 tron Exp $
 
 PKGNAME=	mplayer-${MPLAYER_PKG_VERSION}
 PKGREVISION=	6
@@ -24,7 +24,6 @@ INSTALLATION_DIRS+=	bin
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mplayer ${DESTDIR}${PREFIX}/bin
 
-.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 
 .include "../../x11/libXinerama/buildlink3.mk"
