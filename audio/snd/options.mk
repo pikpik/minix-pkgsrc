@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/11/23 22:39:12 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.snd
 PKG_SUPPORTED_OPTIONS=	esound guile
 # fftw2 fftw3 ladspa gamin/fam mpg123 timidity
 PKG_OPTIONS_REQUIRED_GROUPS=	frontend
 PKG_OPTIONS_GROUP.frontend=	gtk motif
-PKG_SUGGESTED_OPTIONS=	gtk
+PKG_SUGGESTED_OPTIONS=	gtk guile
 
 .include "../../mk/bsd.options.mk"
 
