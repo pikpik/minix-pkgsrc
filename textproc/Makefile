@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.407 2008/04/07 18:05:43 seb Exp $
+# $NetBSD: Makefile,v 1.408 2008/04/14 22:25:01 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -283,6 +283,7 @@ SUBDIR+=	p5-XML-XUpdate-LibXML
 SUBDIR+=	p5-XML-Xerces
 SUBDIR+=	p5-YAML
 SUBDIR+=	p5-YAML-Syck
+SUBDIR+=	p5-iCal-Parser
 SUBDIR+=	p5-libxml
 SUBDIR+=	p5-mecab
 SUBDIR+=	p5-native-hyperestraier
