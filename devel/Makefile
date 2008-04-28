@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.930 2008/04/13 09:56:30 wiz Exp $
+# $NetBSD: Makefile,v 1.931 2008/04/19 18:47:19 kefren Exp $
 #
 
 COMMENT=	Development utilities
@@ -58,6 +58,7 @@ SUBDIR+=	bglibs
 SUBDIR+=	bin86
 SUBDIR+=	binutils
 SUBDIR+=	bison
+SUBDIR+=	blame
 SUBDIR+=	blib
 SUBDIR+=	bmake
 SUBDIR+=	boaconstructor
