@@ -1,10 +1,10 @@
 $NetBSD$
 
---- plugins/pcre/ruleset/Makefile.in.orig	2006-05-20 18:45:48.000000000 +0000
-+++ plugins/pcre/ruleset/Makefile.in
-@@ -285,7 +285,7 @@ ruleset_DATA = \
+--- ./plugins/pcre/ruleset/Makefile.in.orig	2008-04-24 11:48:21.000000000 -0600
++++ ./plugins/pcre/ruleset/Makefile.in
+@@ -535,7 +535,7 @@ ruleset_DATA = \
  	webmin.rules		\
- 	wu-ftp.rules		
+ 	wu-ftp.rules
  
 -rulesetdir = $(configdir)/ruleset
 +rulesetdir = $(prefix)/share/examples/prelude-lml/ruleset
