@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/11/29 12:42:48 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2008/04/19 09:35:24 wiz Exp $
 
 DISTNAME=	wesnoth-1.4.1
 CATEGORIES=	games
@@ -17,6 +17,7 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+MAKE_JOBS_SAFE=		no
 
 UNLIMIT_RESOURCES+=	datasize
 
