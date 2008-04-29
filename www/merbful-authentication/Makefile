@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:25:21 jlam Exp $
 
-DISTNAME=	merbful_authentication-0.9.2
+DISTNAME=	merbful_authentication-0.9.3
 PKGNAME=	${DISTNAME:S/_/-/g}
 CATEGORIES=	www
 
