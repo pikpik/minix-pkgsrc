@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2007/03/15 22:55:21 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/05/02 19:43:40 sborrill Exp $
 #
 
-DISTNAME=	gphotofs-0.3
+DISTNAME=	gphotofs-0.4.0
 PKGNAME=	fuse-${DISTNAME}
 CATEGORIES=	filesystems
 EXTRACT_SUFX=	.tar.bz2
@@ -22,5 +22,6 @@ post-install:
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgphoto2/buildlink3.mk"
+.include "../../devel/libltdl/buildlink3.mk"
 .include "../../mk/fuse.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
