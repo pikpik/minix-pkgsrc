@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:19:31 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/14 18:13:02 jlam Exp $
 
-DISTNAME=	mailfactory-1.3.0
+DISTNAME=	mailfactory-1.3.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	mail
 
