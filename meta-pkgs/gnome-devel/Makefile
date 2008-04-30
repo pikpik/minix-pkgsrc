@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.26 2007/10/25 22:00:51 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2007/12/19 12:27:28 rillig Exp $
 
 DISTNAME=	gnome-devel-2.16.0
 CATEGORIES=	meta-pkgs devel gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Meta-package for development utilities used in the GNOME desktop
 

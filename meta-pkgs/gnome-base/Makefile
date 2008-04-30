@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.46 2007/12/19 12:27:27 rillig Exp $
+# $NetBSD: Makefile,v 1.47 2008/04/28 18:19:45 drochner Exp $
 
 DISTNAME=	gnome-base-2.18.1
 CATEGORIES=	meta-pkgs x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Meta-package for basic components of the GNOME desktop
 

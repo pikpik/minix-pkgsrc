@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2006/11/13 19:42:38 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2007/04/10 16:38:26 drochner Exp $
 #
 
 DISTNAME=	libsexy-0.1.11
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://releases.chipx86.com/libsexy/libsexy/
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.chipx86.com/wiki/Libsexy
 COMMENT=	Collection of GTK+ widgets that beautify standard widgets
 

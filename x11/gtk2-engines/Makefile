@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2007/11/03 16:15:17 drochner Exp $
+# $NetBSD: Makefile,v 1.51 2008/04/10 16:30:03 drochner Exp $
 
 DISTNAME=		gtk-engines-2.14.1
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -6,7 +6,7 @@ CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gtk-engines/2.14/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		jmmv@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Theme engines for GTK+ version 2
 

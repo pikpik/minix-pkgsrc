@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2008/03/06 14:53:49 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2008/04/10 16:46:53 drochner Exp $
 #
 
 DISTNAME=	libbonoboui-2.22.0
@@ -6,7 +6,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libbonoboui/2.22/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME2 Object activation framework library (graphical version)
 

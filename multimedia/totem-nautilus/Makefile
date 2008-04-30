@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.37 2008/01/11 13:58:48 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/28 17:20:20 drochner Exp $
 #
 
 DISTNAME=	totem-2.22.2
@@ -6,7 +6,7 @@ PKGNAME=	totem-nautilus-2.22.2
 CATEGORIES=	multimedia gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem/2.22/}
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/totem/
 COMMENT=	Movie player for the GNOME Desktop
 

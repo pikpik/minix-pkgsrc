@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/08 15:47:39 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/10/25 22:01:02 jlam Exp $
 #
 
 DISTNAME=	xdg-x11-dirs-1.4
@@ -6,7 +6,7 @@ CATEGORIES=	misc gnome kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Shared XDG directories under the X11 tree
 
