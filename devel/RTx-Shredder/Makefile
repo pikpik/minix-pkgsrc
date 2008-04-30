@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/01 09:42:13 cube Exp $
+# $NetBSD: Makefile,v 1.2 2007/07/04 20:54:37 jlam Exp $
 #
 
 DISTNAME=	RTx-Shredder-0.03
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=RTx/}
 
-MAINTAINER=	cube@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~ruz/RTx-Shredder/
 COMMENT=	Utility to clean a RT database
 

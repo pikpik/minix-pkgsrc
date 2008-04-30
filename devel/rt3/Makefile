@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2008/04/12 22:43:00 jlam Exp $
+# $NetBSD: Makefile,v 1.31 2008/04/30 10:13:37 cube Exp $
 
 DISTNAME=		rt-3.6.6
 PKGREVISION=		3
 CATEGORIES=		devel
 MASTER_SITES=		http://download.bestpractical.com/pub/rt/release/
 
-MAINTAINER=		cube@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://bestpractical.com/rt/
 COMMENT=		Industrial-grade ticketing system
 
