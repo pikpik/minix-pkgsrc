@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.243 2008/04/07 13:47:13 he Exp $
+# $NetBSD: Makefile,v 1.244 2008/04/13 06:58:27 jlam Exp $
 #
 
 COMMENT=	Databases
@@ -107,6 +107,7 @@ SUBDIR+=	p5-qdbm
 SUBDIR+=	p5-sybperl
 SUBDIR+=	palm-db-tools
 SUBDIR+=	pear-DB
+SUBDIR+=	pear-MDB2
 SUBDIR+=	pgpool
 SUBDIR+=	pgtcl
 SUBDIR+=	pgtclng
