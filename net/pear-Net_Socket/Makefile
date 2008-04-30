@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2006/06/04 16:26:54 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/05/05 22:09:19 adrianp Exp $
 
-DISTNAME=	Net_Socket-1.0.2
+DISTNAME=	Net_Socket-1.0.8
 CATEGORIES+=	net
-PKGREVISION=	1
 
 MAINTAINER=	jdolecek@NetBSD.org
 COMMENT=	PHP classes to provide Network Socket Interface
