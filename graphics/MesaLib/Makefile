@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2008/04/25 20:11:11 bjs Exp $
+# $NetBSD: Makefile,v 1.59 2008/04/30 07:00:14 bjs Exp $
 
 PKGNAME=	MesaLib-${MESA_PKGVERSION}
 COMMENT=	Graphics library similar to SGI's OpenGL
@@ -8,8 +8,6 @@ MESA_HEADERS=	gl.h gl_mangle.h glext.h glx.h glxext.h	\
  		xmesa_xf86.h
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-INORE_CCACHE=		yes
 
 BUILD_DEFS+=		MESA_HZ MESA_EXECMEM_HEAPSIZE
 
