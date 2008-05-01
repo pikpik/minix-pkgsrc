@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7255 2008/04/29 00:24:41 bjs Exp $
+$NetBSD: TODO,v 1.7256 2008/05/01 12:10:12 wiz Exp $
 
 Suggested new packages
 ======================
@@ -528,7 +528,7 @@ Suggested package updates
 	o dap-3.7
 	o dar-2.3.7
 	o dasher-4.9.0
-	o dbench-3.04
+	o dbench-4.0
 	o dbus-1.2.1
 	o dbxml-2.1.8
 	o dc_gui2-0.80
