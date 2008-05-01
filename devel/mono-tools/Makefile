@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/04/25 08:18:01 kefren Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/27 23:09:53 wiz Exp $
 
 DISTNAME=	mono-tools-1.9
 PKGREVISION=	1
@@ -24,4 +24,5 @@ MAKE_JOBS_SAFE=		no
 .include "../../lang/mono/buildlink3.mk"
 .include "../../lang/monodoc/buildlink3.mk"
 .include "../../x11/gnome-sharp/buildlink3.mk"
+.include "../../x11/gnome-desktop-sharp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
