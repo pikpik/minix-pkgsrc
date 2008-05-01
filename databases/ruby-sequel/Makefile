@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/04/13 06:56:30 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/29 18:39:02 jlam Exp $
 
-DISTNAME=	sequel-1.5.0
+DISTNAME=	sequel-1.5.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	databases
 
