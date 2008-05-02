@@ -1,6 +1,6 @@
 $NetBSD$
 
---- liboctave/oct-time.cc.orig	2007-12-10 07:26:20.000000000 +0100
+--- liboctave/oct-time.cc.orig	2008-04-21 18:00:20.000000000 +0200
 +++ liboctave/oct-time.cc
 @@ -34,6 +34,8 @@ along with Octave; see the file COPYING.
  #include <unistd.h>
@@ -11,7 +11,7 @@ $NetBSD$
  #if defined (OCTAVE_USE_WINDOWS_API)
  #include <windows.h>
  #undef min
-@@ -355,6 +357,9 @@ octave_strptime::init (const std::string
+@@ -358,6 +360,9 @@ octave_strptime::init (const std::string
    char *p = strsave (str.c_str ());
  
    char *q = oct_strptime (p, fmt.c_str (), &t);
