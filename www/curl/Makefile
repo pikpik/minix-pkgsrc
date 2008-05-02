@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2008/03/02 14:40:26 bjs Exp $
+# $NetBSD: Makefile,v 1.80 2008/03/10 18:35:54 drochner Exp $
 
 DISTNAME=	curl-7.18.0
 PKGREVISION=	1
@@ -29,6 +29,10 @@ CONFIGURE_ENV+=		F77=${FALSE:Q}
 .if !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 TEST_TARGET=		check
 USE_TOOLS+=		perl
+.endif
+
+.if ${OPSYS} == "NetBSD" && ${_USE_DESTDIR} == "no"
+PRIVILEGED_STAGES+=	clean
 .endif
 
 .include "options.mk"
