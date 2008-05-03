@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/12/27 14:00:38 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/27 10:44:28 tonio Exp $
 #
 
 DISTNAME=	camlp5-5.08
@@ -12,6 +12,7 @@ COMMENT=	Camlp5 is a preprocessor-pretty-printer of ocaml
 
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	c # needed for optimised compiler
+MAKE_JOBS_SAFE=	no
 
 CONFIGURE_ARGS+=	--bindir ${PREFIX}/bin
 CONFIGURE_ARGS+=	--mandir ${PREFIX}/${PKGMANDIR}
