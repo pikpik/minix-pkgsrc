@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.40 2008/03/05 20:04:42 jlam Exp $
+# $NetBSD: Makefile,v 1.41 2008/04/21 17:10:40 bjs Exp $
 
 DISTNAME=	xterm-235
 CATEGORIES=	x11
-MASTER_SITES=	ftp://invisible-island.net/xterm/
+MASTER_SITES=	ftp://invisible-island.net/xterm/ \
+		http://www.sfr-fresh.com/unix/misc/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
