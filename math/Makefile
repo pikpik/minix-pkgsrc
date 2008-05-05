@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.164 2008/03/07 21:35:54 wiz Exp $
+# $NetBSD: Makefile,v 1.165 2008/03/11 16:06:32 taca Exp $
 
 COMMENT=	Mathematics
 
@@ -131,6 +131,7 @@ SUBDIR+=	py-fpconst
 SUBDIR+=	py-numarray
 SUBDIR+=	py-pytables
 SUBDIR+=	py-rpy
+SUBDIR+=	py-sympy
 SUBDIR+=	qalculate
 SUBDIR+=	qalculate-bases
 SUBDIR+=	qalculate-currency
