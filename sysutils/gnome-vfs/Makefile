@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2008/03/06 14:53:54 wiz Exp $
+# $NetBSD: Makefile,v 1.68 2008/04/10 16:25:29 drochner Exp $
 
 PKGCONFIG_OVERRIDE=	gnome-vfs-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	gnome-vfs-module-2.0.pc.in
@@ -34,5 +34,4 @@ CONFLICTS+=		gnome-vfs2-[0-9]*
 .include "../../devel/zlib/buildlink3.mk"
 
 .include "../../mk/fam.buildlink3.mk"
-.include "../../mk/krb5.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
