@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: hacks.mk,v 1.1.1.1 2008/04/28 04:14:31 bjs Exp $
 ###
 .if !defined(GAMBC_HACKS_MK)
 GAMBC_HACKS_MK=	# empty
@@ -11,4 +11,5 @@ GAMBC_HACKS_MK=	# empty
 .  if !empty(CC_VERSION:Mgcc-*)
 BUILDLINK_TRANSFORM+=	rm:-O[2-9s]*
 .  endif
+BUILDLINK_TRANSFORM+=	rm:-pipe	# XXX takes up too much memory
 .endif
