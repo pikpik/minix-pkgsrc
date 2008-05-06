@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2007/09/18 19:40:19 drochner Exp $
+# $NetBSD: Makefile,v 1.34 2008/05/05 18:54:05 drochner Exp $
 #
 
 DISTNAME=	calc-2.12.3.0
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.isthe.com/chongo/tech/comp/calc/
 COMMENT=	C arbitrary precision calculator
+
+MAKE_JOBS_SAFE=	no
 
 USE_TOOLS+=	gmake
 BUILD_TARGET=	calc-static-only
