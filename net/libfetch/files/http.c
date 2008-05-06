@@ -1,4 +1,4 @@
-/*	$NetBSD: http.c,v 1.17 2008/04/21 22:39:15 joerg Exp $	*/
+/*	$NetBSD: http.c,v 1.18 2008/04/24 07:55:00 joerg Exp $	*/
 /*-
  * Copyright (c) 2000-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2003 Thomas Klausner <wiz@NetBSD.org>
@@ -63,15 +63,15 @@
  * SUCH DAMAGE.
  */
 
+#ifdef __linux__
+/* Keep this down to Linux, it can create surprises else where. */
+#define _GNU_SOURCE
+#endif
+
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
 #include <nbcompat.h>
-
-#ifdef __linux__
-/* Keep this down to Linux, it can create surprises else where. */
-#define _XOPEN_SOURCE
-#endif
 
 #include <sys/types.h>
 #include <sys/socket.h>
