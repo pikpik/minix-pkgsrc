@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/trrntzip
+share/doc/torrentzip/README
+@dirrm share/doc/torrentzip
