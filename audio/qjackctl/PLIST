@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/qjackctl
+share/applications/qjackctl.desktop
+share/pixmaps/qjackctl.png
+@comment in xdg-dirs: @dirrm share/pixmaps
+@comment in xdg-dirs: @dirrm share/applications
