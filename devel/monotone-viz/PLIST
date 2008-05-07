@@ -1,2 +1,4 @@
 @comment $NetBSD$
 bin/monotone-viz
+share/examples/monotone-viz/monotone-viz.style.sample
+@dirrm share/examples/monotone-viz
