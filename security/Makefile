@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.318 2008/04/28 22:05:05 bouyer Exp $
+# $NetBSD: Makefile,v 1.319 2008/05/01 21:10:19 jlam Exp $
 #
 
 COMMENT=	Security tools
@@ -270,6 +270,7 @@ SUBDIR+=	ssldump
 SUBDIR+=	sslwrap
 SUBDIR+=	starttls
 SUBDIR+=	steghide
+SUBDIR+=	stegtunnel
 SUBDIR+=	stunnel
 SUBDIR+=	sudo
 SUBDIR+=	systrace-policies
