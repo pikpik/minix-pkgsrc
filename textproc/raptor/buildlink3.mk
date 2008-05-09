@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/11/19 11:50:23 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2008/01/18 05:09:45 tnn Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 RAPTOR_BUILDLINK3_MK:=	${RAPTOR_BUILDLINK3_MK}+
@@ -18,6 +18,7 @@ BUILDLINK_PKGSRCDIR.raptor?=	../../textproc/raptor
 .endif	# RAPTOR_BUILDLINK3_MK
 
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../textproc/libxslt/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
