@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/02/01 12:15:39 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/22 19:26:34 wiz Exp $
 #
 
 PKGNAME=		${DISTNAME:C/-/-nox11-/}
@@ -8,6 +8,8 @@ SVR4_PKGNAME=		gplot
 CONFLICTS+=		gnuplot-[0-9]*
 
 CONFIGURE_ARGS+=	--without-x
+
+INSTALL_ENV+=		INSTALL_XRESOURCE_DATA=no
 
 .include "../../graphics/gnuplot/Makefile.common"
 
