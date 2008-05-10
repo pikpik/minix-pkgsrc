@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/21 10:16:55 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/07 12:25:53 wiz Exp $
 #
 
 DISTNAME=	twolame-0.3.7
 PKGREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.ecs.soton.ac.uk/~njh/twolame/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=twolame/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.twolame.org/
