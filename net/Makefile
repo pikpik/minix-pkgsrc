@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.708 2008/04/25 16:18:20 kefren Exp $
+# $NetBSD: Makefile,v 1.709 2008/05/09 22:30:01 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -224,6 +224,7 @@ SUBDIR+=	mrstat
 SUBDIR+=	mrt
 SUBDIR+=	mrtg
 SUBDIR+=	msdl
+SUBDIR+=	mtftpd
 SUBDIR+=	mtr
 SUBDIR+=	mydns-mysql
 SUBDIR+=	mydns-pgsql
