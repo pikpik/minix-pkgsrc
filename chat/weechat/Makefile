@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/10/12 18:38:41 tonio Exp $
+# $NetBSD: Makefile,v 1.18 2007/10/12 23:06:27 wiz Exp $
 #
 
 DISTNAME=	weechat-0.2.6
@@ -26,5 +26,4 @@ INCOMPAT_CURSES+=	NetBSD-*-*
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
-.include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
