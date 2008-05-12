@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2007/11/04 12:36:14 rillig Exp $
+# $NetBSD: Makefile,v 1.101 2008/05/12 12:04:29 jmcneill Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -20,6 +20,7 @@ SUBDIR+=	blackbox
 SUBDIR+=	blackbox70
 SUBDIR+=	bsetroot
 SUBDIR+=	compiz
+SUBDIR+=	ccsm
 SUBDIR+=	ctwm
 SUBDIR+=	cwm
 SUBDIR+=	dwm
