@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/11 19:05:55 drochner Exp $
 #
 
-DISTNAME=	totem-pl-parser-2.22.2
+DISTNAME=	totem-pl-parser-2.22.3
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem-pl-parser/2.22/}
 EXTRACT_SUFX=	.tar.bz2
