@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7268 2008/05/12 23:30:53 tonnerre Exp $
+$NetBSD: TODO,v 1.7269 2008/05/14 15:28:00 wiz Exp $
 
 Suggested new packages
 ======================
@@ -875,7 +875,6 @@ Suggested package updates
 	o libxklavier-3.6
 	o libxml++-2.22.0
 	o lighttpd-1.4.19
-	o lilypond-2.10.33 [schmonz]
 	o lincvs-2.0.0 [now called CrossVC]
 	o links-2.1.0.35
 	o linuxsms-0.77
