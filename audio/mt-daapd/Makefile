@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2007/02/17 16:39:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2007/07/04 20:54:31 jlam Exp $
 
-DISTNAME=	mt-daapd-0.2.4
-PKGREVISION=	2
+DISTNAME=	mt-daapd-0.2.4.2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mt-daapd/}
 
