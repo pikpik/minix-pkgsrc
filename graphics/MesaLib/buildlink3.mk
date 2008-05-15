@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.44 2008/04/24 07:40:24 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.45 2008/04/24 11:55:22 tnn Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MESALIB_BUILDLINK3_MK:=	${MESALIB_BUILDLINK3_MK}+
@@ -20,7 +20,7 @@ BUILDLINK_PKGSRCDIR.MesaLib?=	../../graphics/MesaLib
 
 # See <http://developer.apple.com/qa/qa2007/qa1567.html>.
 .if !empty(MACHINE_PLATFORM:MDarwin-[9].*-*)
-BUILDLINK_LDFLAGS.MesaLib+=	-Wl,-dylib_file -Wl,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+BUILDLINK_LDFLAGS.MesaLib+=	-Wl,-dylib_file,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
 .endif
 
 pkgbase:= MesaLib
