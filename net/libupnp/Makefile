@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2008/02/04 21:52:16 tnn Exp $
+# $NetBSD: Makefile,v 1.13 2008/04/26 01:52:53 obache Exp $
 #
 
 DISTNAME=		libupnp-1.6.6
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pupnp/}
 EXTRACT_SUFX=		.tar.bz2
