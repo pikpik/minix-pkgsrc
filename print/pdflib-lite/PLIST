@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/pdfimage
+bin/pdflib-config
+bin/text2pdf
+include/pdflib.h
+lib/libpdf.la
+share/doc/pdflib/PDFlib-API-reference.pdf
+share/doc/pdflib/PDFlib-Lite-license.pdf
+@dirrm share/doc/pdflib
