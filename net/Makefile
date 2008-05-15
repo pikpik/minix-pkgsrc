@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.709 2008/05/09 22:30:01 seb Exp $
+# $NetBSD: Makefile,v 1.710 2008/05/11 20:28:35 jmcneill Exp $
 #
 
 COMMENT=	Networking tools
@@ -109,6 +109,7 @@ SUBDIR+=	fping
 SUBDIR+=	fping6
 SUBDIR+=	freenet-tools
 SUBDIR+=	freeradius
+SUBDIR+=	freeradius2
 SUBDIR+=	freewais-sf
 SUBDIR+=	ftplibpp
 SUBDIR+=	ftpproxy
