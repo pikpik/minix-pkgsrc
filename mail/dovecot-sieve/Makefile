@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.97 2007/06/16 15:01:17 ghen Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/08/27 10:40:50 ghen Exp $
 
-DISTNAME=		dovecot-sieve-1.0.2
+DISTNAME=		dovecot-sieve-1.0.3
 CATEGORIES=		mail
 MASTER_SITES=		http://www.dovecot.org/releases/sieve/
 
