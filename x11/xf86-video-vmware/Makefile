@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/20 16:36:59 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/21 00:19:09 joerg Exp $
 #
 
-DISTNAME=	xf86-video-vmware-10.15.0
+DISTNAME=	xf86-video-vmware-10.16.1
 CATEGORIES=	x11
 MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
 EXTRACT_SUFX=	.tar.bz2
