@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2008/04/05 02:14:40 tnn Exp $
+# $NetBSD: Makefile,v 1.12 2008/04/29 10:55:02 jmmv Exp $
 #
 
 PKGNAME=	libpurple-${PIDGIN_VERSION}
-PKGREVISION=	1
 COMMENT=	Multi-protocol Instant Messaging client backend
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -19,10 +18,6 @@ GCONF_SCHEMAS+=	purple.schemas
 
 PKGCONFIG_OVERRIDE+=	gaim.pc.in
 PKGCONFIG_OVERRIDE+=	libpurple/purple.pc.in
-
-CONFIGURE_ARGS+=	--disable-gevolution
-CONFIGURE_ARGS+=	--disable-gtkui
-CONFIGURE_ARGS+=	--disable-consoleui
 
 .include "options.mk"
 
