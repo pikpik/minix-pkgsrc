@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.548 2008/04/27 23:13:46 wiz Exp $
+# $NetBSD: Makefile,v 1.549 2008/05/14 07:22:37 sborrill Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -375,6 +375,7 @@ SUBDIR+=	xextproto
 SUBDIR+=	xeyes
 SUBDIR+=	xf86-input-keyboard
 SUBDIR+=	xf86-input-mouse
+SUBDIR+=	xf86-input-vmmouse
 SUBDIR+=	xf86-input-void
 SUBDIR+=	xf86-video-apm
 SUBDIR+=	xf86-video-ark
