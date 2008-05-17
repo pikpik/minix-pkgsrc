@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/09/04 19:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/09/21 13:03:29 wiz Exp $
 #
 
 PKGNAME=		pidgin-sametime-${PIDGIN_VERSION}
@@ -10,9 +10,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		msgfmt
 
-CONFIGURE_ARGS+=	--disable-gevolution
-CONFIGURE_ARGS+=	--disable-gtkui
-CONFIGURE_ARGS+=	--disable-consoleui
+CONFIGURE_ARGS+=	--enable-meanwhile
 
 BUILD_DIRS=		libpurple/protocols/sametime
 
