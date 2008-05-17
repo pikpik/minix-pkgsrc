@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/xorg/modules/input/vmmouse_drv.la
+man/man4/vmmouse.4
+@dirrm lib/xorg/modules/input
+@dirrm lib/xorg/modules
+@dirrm lib/xorg
