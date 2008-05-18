@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.1 2007/12/06 08:51:52 cjs Exp $
+
+Add change_folder_next option.
 
 --- curs_main.c.orig	2007-12-06 17:32:01.000000000 +0900
 +++ curs_main.c	2007-12-06 17:34:20.000000000 +0900
