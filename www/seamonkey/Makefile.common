@@ -1,4 +1,6 @@
-# $NetBSD: Makefile.common,v 1.28 2007/09/21 22:07:54 ghen Exp $
+# $NetBSD: Makefile.common,v 1.29 2008/02/08 10:34:19 tnn Exp $
+# used by mail/thunderbird/Makefile-thunderbird.common
+# used by www/seamonkey/Makefile-seamonkey.common
 
 MOZ_DIST_VER?=		${MOZ_VER}
 DISTNAME?=		seamonkey-${MOZ_DIST_VER}.source
