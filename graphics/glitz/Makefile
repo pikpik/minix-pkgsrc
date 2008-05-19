@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/12/02 22:32:59 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2008/04/12 22:43:01 jlam Exp $
 
 DISTNAME=	glitz-0.5.6
 PKGREVISION=	2
@@ -21,6 +21,14 @@ PLIST_VARS+=		agl
 .if exists(/System/Library/Frameworks/AGL.framework)
 PLIST.agl=		yes
 CONFIGURE_ENV+=		AGL_LIBS="-framework AGL"
+.endif
+
+.include "../../mk/bsd.prefs.mk"
+
+# This is for the benefit of the configure test; libglitz-glx already
+# links against libpthread.
+.if ${OPSYS} == "IRIX"
+BUILDLINK_TRANSFORM+=	l:GL:GL:pthread
 .endif
 
 .include "options.mk"
