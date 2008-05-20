@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.481 2008/04/27 06:41:59 wiz Exp $
+# $NetBSD: Makefile,v 1.482 2008/04/30 16:23:22 jlam Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -308,7 +308,6 @@ SUBDIR+=	showimg
 SUBDIR+=	simage
 SUBDIR+=	skencil
 SUBDIR+=	snx101view
-SUBDIR+=	sodipodi
 SUBDIR+=	spcaview
 SUBDIR+=	tesseract
 SUBDIR+=	tgif
