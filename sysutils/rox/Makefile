@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2007/11/14 13:15:36 rillig Exp $
+# $NetBSD: Makefile,v 1.44 2008/03/06 14:53:55 wiz Exp $
 #
 
 DISTNAME=	rox-2.4.1
@@ -19,7 +19,8 @@ DIST_SUBDIR=	rox
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
 
-INSTALLATION_DIRS=	libexec/rox share/Choices share/rox/ROX-Filer
+INSTALLATION_DIRS=	libexec/rox share/Choices share/rox/ROX-Filer \
+			  ${PKGMANDIR}/man1
 
 SUBST_CLASSES+=		path
 SUBST_MESSAGE.path=	Fixing hardcoded paths.
@@ -56,7 +57,7 @@ do-install:
 		-s ',^\./ROX-Filer.dbg$$,,' -s ',^\./ROX-Filer.dbg/.*,,'\
 		-s ',^\./src$$,,' -s ',^\./src/.*,,'	\
 		. ${PREFIX:Q}/share/rox/ROX-Filer
-	${INSTALL_MAN} ${WRKSRC:Q}/rox.1 ${PREFIX:Q}/man/man1
+	${INSTALL_MAN} ${WRKSRC:Q}/rox.1 ${PREFIX:Q}/${PKGMANDIR}/man1
 	${INSTALL_DATA} ${WRKSRC:Q}/rox.xml ${PREFIX:Q}/share/mime/packages
 	${INSTALL_SCRIPT} ${WRKDIR:Q}/rox ${PREFIX:Q}/bin
 
