@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/12/05 20:50:24 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/04 16:38:11 jlam Exp $
 
 DISTNAME=	se
 PKGNAME=	SmartEiffel-2.0
@@ -21,6 +21,9 @@ MAKE_ENV+=	SmartEiffel=${WRKSRC:Q}/sys/system.se
 # This package relies heavily on GCC.
 ONLY_FOR_COMPILER=	gcc
 
+CHECK_INTERPRETER_SKIP=	SmartEiffel/contrib/edb/sec \
+			  SmartEiffel/misc/benchmarks/all_bench.elate \
+			  SmartEiffel/www/libraries/eiffeldoc.sh
 post-patch:
 	${SED} "s:XXXWORKDIRXXX:${WRKDIR}:g" ${FILESDIR}/system.se \
 		> ${WRKSRC}/sys/system.se
