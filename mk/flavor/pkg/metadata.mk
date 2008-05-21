@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.28 2008/01/05 22:06:20 rillig Exp $
+# $NetBSD: metadata.mk,v 1.29 2008/01/23 14:07:07 rillig Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -44,6 +44,9 @@ ${_BUILD_INFO_FILE}: plist
 .endif
 	${RUN}${ECHO} "CATEGORIES=${CATEGORIES}" >> ${.TARGET}.tmp
 	${RUN}${ECHO} "MAINTAINER=${MAINTAINER}" >> ${.TARGET}.tmp
+.if defined(OWNER)
+	${RUN}${ECHO} "OWNER=${OWNER}" >> ${.TARGET}.tmp
+.endif	
 	${RUN}${ECHO} "BUILD_DATE=${_BUILD_DATE_cmd:sh}" >> ${.TARGET}.tmp
 	${RUN}${ECHO} "BUILD_HOST=${_BUILD_HOST_cmd:sh}" >> ${.TARGET}.tmp
 .if !empty(CHECK_SHLIBS_SUPPORTED:M[yY][eE][sS])
