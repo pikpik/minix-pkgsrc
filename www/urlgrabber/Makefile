@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/03/14 01:29:28 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/25 19:18:23 tnn Exp $
 #
 
 DISTNAME=	urlgrabber-3.1.0
@@ -16,5 +16,6 @@ PYTHON_VERSIONS_ACCEPTED=	25 24 23
 PYDISTUTILSPKG=			yes
 PY_PATCHPLIST=			yes
 
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
