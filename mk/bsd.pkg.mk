@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1940 2008/03/08 14:28:05 joerg Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1941 2008/04/03 14:07:51 joerg Exp $
 #
 # This file is in the public domain.
 #
@@ -643,7 +643,7 @@ ${.CURDIR}/${WRKDIR_BASENAME}:
 _ROOT_CMD=	cd ${.CURDIR} &&					\
 		${SETENV} ${PKGSRC_MAKE_ENV}				\
 			PATH="$${PATH}:"${SU_CMD_PATH_APPEND:Q}		\
-		${MAKE} ${MAKEFLAGS}					\
+		${MAKE} ${MAKEFLAGS} _PKGSRC_BARRIER=yes		\
 			PKG_DEBUG_LEVEL=${PKG_DEBUG_LEVEL:Q}		\
 			su-${.TARGET} ${MAKEFLAGS.su-${.TARGET}}
 
