@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2007/01/07 09:14:04 rillig Exp $
+# $NetBSD: Makefile,v 1.48 2007/08/16 23:12:20 joerg Exp $
 
 DISTNAME=	mtr-0.72
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/
 
