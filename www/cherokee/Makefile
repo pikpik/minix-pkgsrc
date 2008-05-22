@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/02/04 20:10:34 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2008/03/06 14:53:55 wiz Exp $
 #
 
 DISTNAME=	cherokee-0.5.3
@@ -12,7 +12,7 @@ COMMENT=	Flexible and fast web server
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		bison lex
+USE_TOOLS+=		bison flex
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
