@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/04/24 07:45:49 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/05/16 13:48:41 tnn Exp $
 #
 
 DISTNAME=		libX11-1.1.4
@@ -33,6 +33,8 @@ CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
 MAKE_ENV+=	CC_FOR_BUILD=${NATIVE_CC:Q} CPPFLAGS_FOR_BUILD=-I${PREFIX}/include
 .endif
+
+CPPFLAGS.OSF1+=		-pthread # Required by compiler if including pthread.h
 
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Mhp)
