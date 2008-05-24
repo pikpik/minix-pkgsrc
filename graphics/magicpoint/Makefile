@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2007/11/17 13:40:15 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2007/12/02 00:06:13 wiz Exp $
 
 DISTNAME=		magicpoint-1.10a
 PKGREVISION=		11
@@ -14,6 +14,7 @@ CONFLICTS=		mgp-[0-9]*
 
 GNU_CONFIGURE=		yes
 USE_IMAKE=		yes
+USE_LANGUAGES+=		c99
 USE_TOOLS+=		perl
 USE_TOOLS+=		pkg-config
 
