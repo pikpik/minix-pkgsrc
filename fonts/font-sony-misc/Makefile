@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/07/17 19:06:47 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/22 17:09:54 tnn Exp $
 #
 
 DISTNAME=		font-sony-misc-1.0.0
 CATEGORIES=		fonts
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/font/
+MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

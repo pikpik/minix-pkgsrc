@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2007/06/19 09:39:12 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/11/23 11:56:02 bjs Exp $
 #
 
 DISTNAME=	xload-1.0.2
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/app/
+MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
-HOMEPAGE=	http://xorg.freedesktop.org/releases/individual/app/
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	System load average display for X
 
 PKG_DESTDIR_SUPPORT=	user-destdir

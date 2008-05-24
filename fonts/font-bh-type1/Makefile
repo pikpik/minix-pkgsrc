@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2006/12/20 14:19:20 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/19 07:57:25 joerg Exp $
 #
 
 DISTNAME=		font-bh-type1-1.0.0
 CATEGORIES=		fonts
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/font/
+MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

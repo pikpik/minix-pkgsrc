@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.2 2007/08/15 18:23:57 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/30 13:17:09 tnn Exp $
 #
 
 DISTNAME=	xf86-video-mga-1.4.8
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
+MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg Matrox video driver
 
 PKG_DESTDIR_SUPPORT=    user-destdir

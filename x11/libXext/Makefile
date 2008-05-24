@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2008/03/02 14:44:47 bjs Exp $
+# $NetBSD: Makefile,v 1.6 2008/05/16 13:48:41 tnn Exp $
 #
 
 DISTNAME=		libXext-1.0.4
 CATEGORIES=		x11 devel
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
+MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

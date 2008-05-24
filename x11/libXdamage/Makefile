@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2007/03/17 17:43:18 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/29 03:50:25 bjs Exp $
 #
 
 DISTNAME=		libXdamage-1.1.1
 PKGREVISION=		1
 CATEGORIES=		x11 devel
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
+MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

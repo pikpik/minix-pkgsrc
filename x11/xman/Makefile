@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2007/08/15 21:45:51 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/24 12:00:29 xtraeme Exp $
 #
 
 DISTNAME=		xman-1.0.3
 PKGREVISION=		1
 CATEGORIES=		x11
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/app/
+MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

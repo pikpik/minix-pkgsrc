@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/15 13:36:12 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/22 17:09:53 tnn Exp $
 #
 
 DISTNAME=		font-bitstream-75dpi-1.0.0
 CATEGORIES=		fonts
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/font/
+MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

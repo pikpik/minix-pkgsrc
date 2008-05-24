@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/02 13:58:05 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2007/03/21 22:59:19 wiz Exp $
 #
 
 DISTNAME=		makedepend-1.0.1
 CATEGORIES=		devel
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/util/
+MASTER_SITES=		${MASTER_SITE_XORG:=util/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

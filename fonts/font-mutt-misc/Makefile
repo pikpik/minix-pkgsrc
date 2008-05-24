@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/15 14:57:54 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/22 17:09:54 tnn Exp $
 #
 
 DISTNAME=		font-mutt-misc-1.0.0
 CATEGORIES=		fonts
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/font/
+MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

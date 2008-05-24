@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/11/07 11:51:52 abs Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/15 22:59:16 wiz Exp $
 #
 
 DISTNAME=		libICE-1.0.4
 CATEGORIES=		x11 devel
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/lib/
+MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

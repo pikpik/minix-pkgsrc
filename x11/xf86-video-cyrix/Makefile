@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/20 15:44:13 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/03/20 16:36:59 joerg Exp $
 #
 
 DISTNAME=	xf86-video-cyrix-1.1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
+MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg Cyrix MediaGX video driver
 
 PKG_DESTDIR_SUPPORT=    user-destdir

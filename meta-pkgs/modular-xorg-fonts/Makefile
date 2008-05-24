@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/10/25 22:00:54 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2007/12/19 12:27:29 rillig Exp $
 
 DISTNAME=	# empty
 PKGNAME=	modular-xorg-fonts-1.0
 CATEGORIES=	meta-pkgs fonts x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/fonts/
+MASTER_SITES=	${MASTER_SITE_XORG:=font/}
 DISTFILES=	# empty
 
 MAINTAINER=	joerg@NetBSD.org

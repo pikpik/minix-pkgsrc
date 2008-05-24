@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/06/19 09:39:11 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/02/06 08:03:10 bjs Exp $
 #
 
 DISTNAME=		luit-1.0.3
 CATEGORIES=		x11
-MASTER_SITES=		http://xorg.freedesktop.org/releases/individual/app/
+MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org

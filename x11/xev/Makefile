@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.3 2007/06/19 09:39:12 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/16 21:52:26 wiz Exp $
 #
 
 DISTNAME=	xev-1.0.3
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/app/
+MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
-HOMEPAGE=	http://xorg.freedesktop.org/releases/individual/app/
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Display X events
 
 PKG_DESTDIR_SUPPORT=	user-destdir

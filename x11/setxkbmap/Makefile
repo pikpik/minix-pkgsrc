@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/06/19 09:39:11 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/08/05 21:23:50 joerg Exp $
 #
 
 DISTNAME=	setxkbmap-1.0.4
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/app/
+MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org

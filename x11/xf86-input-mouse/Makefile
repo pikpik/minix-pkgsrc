@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2007/08/05 23:39:02 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/01/15 23:49:48 wiz Exp $
 
 DISTNAME=	xf86-input-mouse-1.2.3
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
+MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg mouse driver
 
 PKG_DESTDIR_SUPPORT=	user-destdir

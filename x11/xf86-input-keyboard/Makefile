@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2007/08/05 23:32:47 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/15 23:46:13 wiz Exp $
 
 DISTNAME=	xf86-input-keyboard-1.2.2
 CATEGORIES=	x11
-MASTER_SITES=	http://xorg.freedesktop.org/releases/individual/driver/
+MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	joerg@NetBSD.org
+HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg keyboard driver
 
 PKG_DESTDIR_SUPPORT=	user-destdir
