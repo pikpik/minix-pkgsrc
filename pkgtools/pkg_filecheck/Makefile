@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/09/08 21:57:59 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2007/10/07 12:59:14 kano Exp $
 #
 
 DISTNAME=		pkg_filecheck-0.4
@@ -6,7 +6,7 @@ CATEGORIES=		pkgtools devel
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		dillo@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 #HOMEPAGE=		http://www.NetBSD.org/docs/pkgsrc/
 COMMENT=		Check for files not owned by any package
 

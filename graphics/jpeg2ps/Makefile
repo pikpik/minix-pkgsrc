@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:13:56 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/04 15:39:10 jlam Exp $
 #
 
 DISTNAME=	jpeg2ps-1.9
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.pdflib.com/products/more/jpeg2ps/
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pdflib.com/products/more/jpeg2ps.html
 COMMENT=	Convert jpeg images to PostScript level 2 or 3
 
