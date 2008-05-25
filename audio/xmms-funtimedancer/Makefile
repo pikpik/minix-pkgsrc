@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/06/12 16:28:05 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2007/02/22 19:01:15 wiz Exp $
 #
 
 DISTNAME=	FunTimeDancer-0.1
@@ -11,6 +11,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} FunTimeDancer-packs-1.0.tar.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/ftd/
 COMMENT=	XMMS plugin displaying an animation
+
+USE_TOOLS+=		pax
 
 post-install:
 	cd ${WRKDIR} && \

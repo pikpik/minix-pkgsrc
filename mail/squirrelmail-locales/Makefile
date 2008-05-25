@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/01/10 20:52:59 adam Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/04 17:57:20 jlam Exp $
 
 DISTNAME=	all_locales-${VER}-20071220
 PKGNAME=	squirrelmail-locales-${VER}
@@ -16,7 +16,7 @@ VER=		1.4.13
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
-USE_TOOLS+=		tar
+USE_TOOLS+=		pax
 INSTALLATION_DIRS=	share/squirrelmail
 
 WRKSRC=		${WRKDIR}

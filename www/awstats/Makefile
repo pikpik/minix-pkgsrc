@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/01/03 12:37:06 adrianp Exp $
+# $NetBSD: Makefile,v 1.35 2008/04/07 07:21:00 adam Exp $
 
 DISTNAME=	awstats-6.7
 CATEGORIES=	www
@@ -10,7 +10,7 @@ COMMENT=	Free real-time logfile analyzer to get advanced web statistics
 
 NO_BUILD=		yes
 
-USE_TOOLS+=		perl:run
+USE_TOOLS+=		perl:run pax
 REPLACE_PERL+=		tools/*.pl
 REPLACE_PERL+=		wwwroot/cgi-bin/*.pl
 REPLACE_PERL+=		wwwroot/cgi-bin/plugins/*.pm

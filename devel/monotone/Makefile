@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/04/28 15:43:52 dan Exp $
+# $NetBSD: Makefile,v 1.53 2008/04/29 20:26:47 dan Exp $
 #
 
 DISTNAME=	monotone-0.40
@@ -16,7 +16,7 @@ GCC_REQD+=		3.0
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
 UNLIMIT_RESOURCES+=	datasize
-USE_TOOLS+=		gmake makeinfo
+USE_TOOLS+=		gmake makeinfo pax
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 

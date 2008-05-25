@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/10/30 14:21:47 martti Exp $
+# $NetBSD: Makefile,v 1.19 2007/10/30 19:31:43 martti Exp $
 
 DISTNAME=		JAlbum${VERSION}
 PKGNAME=		jalbum-${VERSION}
@@ -21,6 +21,8 @@ PKG_JVMS_ACCEPTED=	blackdown-jdk13 kaffe sun-jdk13 sun-jdk14 sun-jdk15
 WRKSRC=			${WRKDIR}/JAlbum
 
 INSTALLATION_DIRS+=	${PREFIX:Q}/share/jalbum
+
+USE_TOOLS+=		pax
 
 do-build:
 	sed	-e s#@PKG_JAVA_HOME@#${PKG_JAVA_HOME:Q}#g	\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/02/15 14:20:54 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/03 17:45:34 jlam Exp $
 #
 
 DISTNAME=	apache-ant-1.7.0
@@ -18,6 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_JAVA=	run
 USE_JAVA2=	yes
+USE_TOOLS+=	pax
 NO_BUILD=	yes
 
 SUBST_CLASSES+=		ant

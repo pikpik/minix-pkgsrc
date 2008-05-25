@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/09/06 10:00:25 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2008/03/04 14:44:05 jlam Exp $
 #
 
 DISTNAME=		anthems-1.1
@@ -19,6 +19,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}
 NO_BUILD=		yes
 INSTALLATION_DIRS=	share/rmap
+USE_TOOLS+=		pax
 
 do-install:
 	cd ${WRKSRC} && pax -rw -pp anthems ${DESTDIR}${PREFIX}/share/rmap

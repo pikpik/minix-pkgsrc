@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.64 2008/03/26 13:22:00 wiz Exp $
+# $NetBSD: Makefile.common,v 1.65 2008/03/26 13:29:58 wiz Exp $
 #
 # used by databases/mysql4-server/Makefile
 
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		yes
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
-EXTRACT_USING=		pax
+EXTRACT_USING=		bsdtar
 
 # MYSQL_USER		username of the database administrator
 # MYSQL_GROUP		group of the database administrator

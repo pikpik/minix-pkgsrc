@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/10/04 21:46:12 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2007/01/18 20:44:25 rillig Exp $
 #
 
 DISTNAME=		cl74unix
@@ -13,6 +13,8 @@ COMMENT=		Another implementation of Caml
 WRKSRC=			${WRKDIR}/cl74/src
 BUILD_TARGET=		world
 MAKE_FLAGS+=		MANDIR=${PREFIX}/${PKGMANDIR}/man1
+
+USE_TOOLS+=		pax
 
 do-configure:
 	cd ${WRKSRC} && make configure

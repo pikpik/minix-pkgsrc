@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2007/08/17 22:33:35 joerg Exp $
+# $NetBSD: Makefile,v 1.50 2008/02/28 11:58:48 rillig Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
@@ -21,6 +21,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LIBTOOL=	yes
+USE_TOOLS+=	pax
 CONFIGURE_SCRIPT=./Configure
 CONFIGURE_ARGS+=	config/urt
 HAS_CONFIGURE=	yes
