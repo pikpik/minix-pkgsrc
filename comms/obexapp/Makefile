@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2007/09/25 08:49:04 hira Exp $
+# $NetBSD: Makefile,v 1.10 2007/09/25 10:07:05 hira Exp $
 #
 
 DISTNAME=	obexapp-1.4.7
 CATEGORIES=	comms
 MASTER_SITES=	http://www.geocities.com/m_evmenkin/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.geocities.com/m_evmenkin/
 COMMENT=	Obex application to transfer objects to mobile equipment
 

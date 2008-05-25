@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2008/02/20 10:37:36 xtraeme Exp $
+# $NetBSD: Makefile,v 1.39 2008/02/20 12:17:59 xtraeme Exp $
 #
 
 DISTNAME=	dvdrip-0.98.8
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	multimedia x11 sysutils
 MASTER_SITES=	http://www.exit1.org/dvdrip/dist/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.exit1.org/dvdrip/
 COMMENT=	Graphical frontend for DVD ripping
 

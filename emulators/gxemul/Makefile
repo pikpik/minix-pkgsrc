@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.33 2008/01/03 19:58:38 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2008/01/04 22:31:01 xtraeme Exp $
 #
 
 DISTNAME=	gxemul-0.4.6.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://gavare.se/gxemul/src/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gavare.se/gxemul/
 COMMENT=	Machine emulator
 

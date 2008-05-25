@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2008/02/19 09:11:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.46 2008/02/20 15:46:53 xtraeme Exp $
 #
 
 DISTNAME=	avidemux_2.4.1
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.berlios.de/avidemux/
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fixounet.free.fr/avidemux/
 COMMENT=	Graphical video editing program
 

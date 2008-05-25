@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/10/04 20:51:40 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2006/10/22 16:38:40 xtraeme Exp $
 #
 
 DISTNAME=	obexftp-0.20
@@ -7,7 +7,7 @@ CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openobex/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	xtraeme@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://openobex.triq.net/
 COMMENT=	File copying over the Object Exchange (OBEX) protocol
 
