@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.210 2008/04/15 13:00:11 tron Exp $
+# $NetBSD: replace.mk,v 1.211 2008/05/22 20:11:55 joerg Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -623,11 +623,7 @@ _PATCH_BACKUP_ARG?=		-b -V simple -z
 .  if !empty(PKGPATH:Marchivers/pax)
 MAKEFLAGS+=			TOOLS_IGNORE.pax=
 .  elif !empty(_TOOLS_USE_PKGSRC.pax:M[yY][eE][sS])
-#
-# This is installed by pkgsrc bootstrap, and is never registered, so
-# comment out the dependency on it.
-#
-#TOOLS_DEPENDS.pax?=		pax>=20040802:../../archivers/pax
+TOOLS_DEPENDS.pax?=		pax>=20040802:../../archivers/pax
 TOOLS_CREATE+=			pax
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.pax=pax
 TOOLS_PATH.pax=			${TOOLS_PREFIX.pax}/bin/pax
