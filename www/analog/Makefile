@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2007/02/22 19:27:18 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2007/05/29 09:03:12 tron Exp $
 
 DISTNAME=	analog-6.0
 PKGREVISION=	1
@@ -8,7 +8,7 @@ MASTER_SITES=	${HOMEPAGE} \
 		http://analog.org/loganalysis/ \
 		http://www.gekko.de/analog/
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.analog.cx/
 COMMENT=	Extremely fast program for analysing WWW logfiles
 

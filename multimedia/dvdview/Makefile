@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2006/05/13 13:22:49 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/15 14:50:29 joerg Exp $
 
 DISTNAME=	dvdview-1.2.2
 PKGREVISION=	4
 CATEGORIES=	multimedia
 MASTER_SITES=	http://rachmaninoff.informatik.uni-mannheim.de/dvdview/data/
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rachmaninoff.informatik.uni-mannheim.de/dvdview/
 COMMENT=	Software only MPEG-1/2 video decoder
 

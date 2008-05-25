@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2008/04/01 16:21:29 obache Exp $
+# $NetBSD: Makefile,v 1.68 2008/04/27 14:59:10 tron Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}-all-languages
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
@@ -6,7 +6,7 @@ CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phpmyadmin/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	tron@NetBSD.org
+OWNER=	tron@NetBSD.org
 HOMEPAGE=	http://www.phpmyadmin.net/
 COMMENT=	Set of PHP-scripts to adminstrate MySQL over the WWW
 

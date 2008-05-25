@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2007/02/15 14:44:49 joerg Exp $
+# $NetBSD: Makefile,v 1.50 2007/09/07 22:12:21 jlam Exp $
 
 DISTNAME=	knews-1.0b.1
 PKGNAME=	knews-1.0
@@ -6,7 +6,7 @@ PKGREVISION=	12
 CATEGORIES=	news x11
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
-MAINTAINER=	tron@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.matematik.su.se/~kjj/
 COMMENT=	X11 newsreader with support for threading and MIME
 
