@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.16 2006/08/30 14:55:00 adam Exp $
+@comment $NetBSD: PLIST,v 1.17 2007/11/25 14:42:23 adam Exp $
 bin/openapp
 share/GNUstep/System/Library/DTDs/gsdoc-0_6_5.dtd
 share/GNUstep/System/Library/DTDs/gsdoc-0_6_6.dtd
@@ -844,5 +844,4 @@ share/GNUstep/System/Tools/xmlparse
 @dirrm share/GNUstep/System/Library/Headers/GNUstepBase
 @dirrm share/GNUstep/System/Library/Headers/Foundation
 @dirrm share/GNUstep/System/Library/Documentation/man/man8
-@dirrm share/GNUstep/System/Library/Documentation/man/man1
 @dirrm share/GNUstep/System/Library/DTDs
