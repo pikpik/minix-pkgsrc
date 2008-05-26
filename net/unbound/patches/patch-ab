@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2008-05-26 22:39:38.000000000 +0200
++++ configure
+@@ -22125,7 +22125,7 @@ else
+    withval="no"
+ fi
+ 
+-if test x_$withval == x_yes -o x_$withval != x_no; then
++if test x_$withval = x_yes -o x_$withval != x_no; then
+         { echo "$as_me:$LINENO: checking for libevent" >&5
+ echo $ECHO_N "checking for libevent... $ECHO_C" >&6; }
+         if test x_$withval = x_ -o x_$withval = x_yes; then
