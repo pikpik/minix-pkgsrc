@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/04/21 12:09:57 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2006/11/10 17:44:34 tv Exp $
 #
 
 DISTNAME=	tkdesk-2.0
@@ -9,6 +9,8 @@ MASTER_SITES=	http://tkdesk.sourceforge.net/dist/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tkdesk.sourceforge.net/
 COMMENT=	Graphical file manager
+
+USE_TOOLS+=	pax
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--with-tcl=${BUILDLINK_PREFIX.tcl}/lib	\

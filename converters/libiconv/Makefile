@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2008/01/13 09:30:57 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2008/04/12 22:42:58 jlam Exp $
 
 DISTNAME=	libiconv-1.12
 PKGREVISION=	1
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES+=		c c++
 USE_LIBTOOL=		yes
+USE_TOOLS+=	pax
 GNU_CONFIGURE=		yes
 #LICENSE=		gnu-gplv3 gnu-lgplv2
 

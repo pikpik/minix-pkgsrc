@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/03/21 18:59:16 jwise Exp $
+# $NetBSD: Makefile,v 1.31 2007/03/21 19:44:11 jwise Exp $
 
 DISTNAME=	swing1_1_1
 PKGNAME=	swing-1.1.1
@@ -23,6 +23,7 @@ LICENSE=	sun-swing-license
 
 WRKSRC=		${WRKDIR}/swing-1.1.1fcs
 USE_JAVA=	run
+USE_TOOLS+=	pax
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
@@ -48,13 +49,13 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/swing.jar ${SWINGDIR}
 	${INSTALL_DATA} ${WRKSRC}/windows.jar ${SWINGDIR}
 	${INSTALL_DATA_DIR} ${HTMLDIR}
-	cd ${WRKSRC}/doc && ${PAX} -rw . ${HTMLDIR}
+	cd ${WRKSRC}/doc && pax -rw . ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/CHANGES.txt ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/LICENSE.txt ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.html ${HTMLDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.txt ${HTMLDIR}
 	${INSTALL_DATA_DIR} ${EGDIR}
-	cd ${WRKSRC}/examples && ${PAX} -rw . ${EGDIR}
+	cd ${WRKSRC}/examples && pax -rw . ${EGDIR}
 
 .include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"

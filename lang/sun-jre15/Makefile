@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/03/31 22:10:07 tnn Exp $
+# $NetBSD: Makefile,v 1.53 2008/04/12 22:43:03 jlam Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 
@@ -7,6 +7,8 @@ PKGNAME=	sun-jre15-5.0.15
 MASTER_SITES=	# empty
 
 SHORT_NAME=	JRE
+
+USE_TOOLS+=	pax
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-//:S/_/./:S/_/./:C/-linux-.*//}
 JAVA_WRAPPERS=	java javaws keytool orbd policytool rmid rmiregistry \
@@ -86,7 +88,7 @@ do-configure:
 
 pre-install:
 .if !empty(PKG_OPTIONS:Msun-jre-jce)
-	cd ${WRKDIR}/jce ; ${PAX} -rw -pe -v . ${WRKSRC}/lib/security
+	cd ${WRKDIR}/jce ; pax -rw -pe -v . ${WRKSRC}/lib/security
 .endif
 
 #

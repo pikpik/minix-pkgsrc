@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/12/28 11:47:51 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2008/03/02 06:10:31 jlam Exp $
 
 DISTNAME=	OGIlexicon-2.0
 PKGNAME=	festlex-ogi-2.0
@@ -12,6 +12,8 @@ COMMENT=	Composite pronunciation dictionary from ogi.edu for festival
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
 DEPENDS+=	festlex-poslex>=1.4.0:../../audio/festlex-poslex
+
+USE_TOOLS+=	pax
 
 LICENSE=	no-commercial-use
 
@@ -28,6 +30,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && pax -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

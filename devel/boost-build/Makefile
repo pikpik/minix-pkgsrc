@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/01/04 19:58:39 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2008/02/05 22:52:01 heinz Exp $
 #
 
 BOOST_PACKAGE=		build
@@ -6,6 +6,8 @@ BOOST_COMMENT=		(Boost.Build framework)
 BOOST_CONFIG=		no
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_TOOLS+=	pax
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
@@ -40,7 +42,7 @@ do-build:
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/boost-build
-	cd ${WRKSRC}/tools/build/v2 && ${PAX} -rw -pp -pm		\
+	cd ${WRKSRC}/tools/build/v2 && pax -rw -pp -pm		\
 		-s ':^.*\.orig$$::' . ${DESTDIR}${PREFIX}/share/boost-build
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
 	${INSTALL_DATA} ${WRKDIR}/site-config.jam ${DESTDIR}${EGDIR}

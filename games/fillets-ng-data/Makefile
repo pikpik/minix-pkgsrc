@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/10/04 21:43:00 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/04 06:59:04 jlam Exp $
 #
 
 DISTNAME=	fillets-ng-data-0.7.1
@@ -13,14 +13,15 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
+USE_TOOLS+=	pax
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/games/fillets-ng
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/fillets-ng
 	cd ${WRKSRC} && \
-		${PAX} -rw -pm font images music script sound \
+		pax -rw -pm font images music script sound \
 			${DESTDIR}${PREFIX}/share/games/fillets-ng/
 	cd ${WRKSRC}/doc/html && \
-		${PAX} -rw -pm . ${DESTDIR}${PREFIX}/share/doc/fillets-ng/
+		pax -rw -pm . ${DESTDIR}${PREFIX}/share/doc/fillets-ng/
 
 .include "../../mk/bsd.pkg.mk"

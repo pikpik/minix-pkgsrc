@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/12/28 11:47:52 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2008/03/02 06:10:32 jlam Exp $
 
 DISTNAME=	voice_tll_di-2.0
 PKGNAME=	festvox-tll-2.0
@@ -12,6 +12,8 @@ COMMENT=	American English female voice for the festival speech synthesis system
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
 DEPENDS+=	festlex-ogi>=2.0:../../audio/festlex-ogi
+
+USE_TOOLS+=	pax
 
 LICENSE=	no-commercial-use
 
@@ -29,6 +31,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && pax -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

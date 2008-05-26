@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/07/29 05:19:25 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 06:59:04 jlam Exp $
 
 DISTNAME=	eus-demo
 PKGNAME=	eus-demo-1.0
@@ -17,6 +17,8 @@ EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	x11
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_TOOLS+=	pax
 
 WRKSRC=		${WRKDIR}/${WRKNAME}
 BUILD_DIRS=	# empty
@@ -52,6 +54,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${BINTYPE}/${DISTBINNAME} \
 		${DESTDIR}${LIBDIR}/${BINNAME}
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${SHAREDIR}/${BINNAME}-README
-	cd ${WRKSRC} && ${PAX} -rw [Eai-p]* sounds ${DESTDIR}${LIBDIR}
+	cd ${WRKSRC} && pax -rw [Eai-p]* sounds ${DESTDIR}${LIBDIR}
 
 .include "../../mk/bsd.pkg.mk"

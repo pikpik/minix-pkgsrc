@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/08/10 03:21:39 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2008/03/03 00:51:44 jlam Exp $
 #
 
 DISTNAME=	skampi4
@@ -20,7 +20,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	pax perl:run
 REPLACE_PERL=	report_generator/dorep4.pl
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
@@ -38,7 +38,7 @@ do-install:
 		${DESTDIR}${PREFIX}/bin/dorep4.pl
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/skampi/dri
 	(cd ${WRKSRC}/report_generator/dri && 			\
-		${PAX} -rw . ${DESTDIR}${PREFIX}/share/skampi/dri)
+		pax -rw . ${DESTDIR}${PREFIX}/share/skampi/dri)
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/skampi
 	${INSTALL_DATA} ${WRKSRC}/${DISTNAME}_userman.ps 	\
 		${DESTDIR}${PREFIX}/share/doc/skampi/

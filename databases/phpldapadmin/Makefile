@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/10/03 14:45:42 heinz Exp $
+# $NetBSD: Makefile,v 1.28 2008/03/03 15:21:07 jlam Exp $
 
 DISTNAME=	phpldapadmin-${VERSION}
 CATEGORIES=	databases www
@@ -18,6 +18,8 @@ REPLACE_SH=	tools/po/make*
 
 DEPENDS+=	${PHP_PKG_PREFIX}-ldap>=4.1.2:../../databases/php-ldap
 DEPENDS+=	${PHP_PKG_PREFIX}-gettext>=4.1.2:../../devel/php-gettext
+
+USE_TOOLS+=	pax
 
 VERSION=	0.9.8.3
 NO_BUILD=	YES
@@ -51,7 +53,7 @@ do-install:
 		${DESTDIR}${PREFIX}/share/phpldapadmin
 
 .for i in ${PAX_DIRS}
-	cd ${WRKSRC}/${i:Q} && ${PAX} \
+	cd ${WRKSRC}/${i:Q} && pax \
 		-rwppm . ${DESTDIR}${PREFIX}/share/phpldapadmin/${i:Q}
 .endfor
 

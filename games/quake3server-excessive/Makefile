@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/02/05 23:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/04 06:59:05 jlam Exp $
 
 DISTNAME=	excessive_q3_server_003
 PKGNAME=	quake3server-excessive-003
@@ -17,12 +17,14 @@ WRKSRC=		${WRKDIR}
 .include "../../games/quake3server/Makefile.common"
 
 DEPENDS+=	quake3server>=1.32:../../games/quake3server
+USE_TOOLS+=	pax
+
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
 NO_BUILD=	yes
 Q3MODDIR=	${Q3ROOTDIR}/excessive
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${Q3MODDIR}
-	cd ${WRKSRC}/excessive && ${PAX} -rwppm . ${DESTDIR}${Q3MODDIR}
+	cd ${WRKSRC}/excessive && pax -rwppm . ${DESTDIR}${Q3MODDIR}
 
 .include "../../mk/bsd.pkg.mk"

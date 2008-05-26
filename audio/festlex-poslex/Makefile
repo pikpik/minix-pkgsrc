@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/06/08 18:33:06 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2008/03/02 06:10:31 jlam Exp $
 
 DISTNAME=	festlex_POSLEX
 PKGNAME=	festlex-poslex-1.4.0
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival/
 COMMENT=	English lexicon suitable for use with Festival
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
+USE_TOOLS+=	pax
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -25,6 +26,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && pax -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"

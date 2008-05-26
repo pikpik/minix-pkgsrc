@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:10:02 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/04 18:12:59 jlam Exp $
 #
 
 DISTNAME=	fplsa
@@ -19,13 +19,15 @@ WRKSRC=		${WRKDIR}/fplsa
 GAP_PKG_NAME=	fplsa
 BUILD_TARGET=	default
 
+USE_TOOLS+=	pax
+
 do-configure:
 	cd ${WRKSRC} && ${SH} configure ${GAP_DIRECTORY}
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${DESTDIR}${GAP_PKG_DIRECTORY}
 	@for I in README.fplsa bin doc gap init.g lib; do		\
-		cd ${WRKSRC} && ${PAX} -rw $$I ${DESTDIR}${GAP_PKG_DIRECTORY};\
+		cd ${WRKSRC} && pax -rw $$I ${DESTDIR}${GAP_PKG_DIRECTORY};\
 	done
 
 .include "../../math/gap/gap.package.mk"

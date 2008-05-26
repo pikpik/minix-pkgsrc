@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/09/21 13:04:44 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/25 20:39:14 joerg Exp $
 #
 
 DISTNAME=	rox-session-0.28
@@ -35,12 +35,14 @@ SUBST_STAGE.lib=	post-patch
 SUBST_FILES.lib=	findrox.py
 SUBST_SED.lib=		-e 's,/usr/local/lib,${PREFIX}/share/rox,g'
 
+USE_TOOLS+=	pax
+
 pre-install:
 	${RM} -f ${WRKSRC}/wm.py.orig
 	${RM} -f ${WRKSRC}/setup.py.orig
 
 do-install:
-	cd ${WRKSRC} && ${PAX} -rw . ${PREFIX}/share/rox/ROX-Session
+	cd ${WRKSRC} && pax -rw . ${PREFIX}/share/rox/ROX-Session
 
 .include "../../lang/python/application.mk"
 .include "../../sysutils/py-dbus/buildlink3.mk"

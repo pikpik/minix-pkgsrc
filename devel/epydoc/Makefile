@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:08:41 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/11/15 01:16:39 wulf Exp $
 
 DISTNAME=	epydoc-2.1
 PKGREVISION=	3
@@ -9,13 +9,15 @@ MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://epydoc.sourceforge.net/
 COMMENT=	Python documentation framework
 
+USE_TOOLS+=	pax
+
 PYDISTUTILSPKG=     yes
 
 EPYDOCDIR=	${PREFIX}/share/doc/epydoc
 
 post-install:
 	${INSTALL_DATA_DIR} ${EPYDOCDIR}
-	cd ${WRKSRC}/doc && ${PAX} -rw -pp -pm . ${EPYDOCDIR}
+	cd ${WRKSRC}/doc && pax -rw -pp -pm . ${EPYDOCDIR}
 
 .include "../../lang/python/extension.mk"
 .include "../../x11/py-Tk/buildlink3.mk"

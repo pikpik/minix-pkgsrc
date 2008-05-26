@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/09/03 21:57:52 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2007/09/07 23:06:13 wiz Exp $
 #
 
 DISTNAME=		skype_static-1.4.0.99
@@ -27,6 +27,8 @@ EMUL_MODULES.linux=	alsa base compat fontconfig freetype2 glx \
 USE_DIRS+=		xdg-1.1
 WRKSRC=			${WRKDIR}/${DISTNAME}
 
+USE_TOOLS+=	pax
+
 DATADIR=		${PREFIX}/share/skype
 DOCDIR=			${PREFIX}/share/doc/skype
 
@@ -41,7 +43,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/skype.desktop ${PREFIX}/share/applications
 	${INSTALL_DATA_DIR} ${DATADIR}
 	${INSTALL_PROGRAM} ${WRKSRC}/skype ${DATADIR}
-	cd ${WRKSRC} && ${PAX} -rwppm icons sounds ${DATADIR}
+	cd ${WRKSRC} && pax -rwppm icons sounds ${DATADIR}
 	${INSTALL_DATA_DIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/LICENSE ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}

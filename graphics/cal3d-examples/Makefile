@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/15 14:58:20 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/02/22 19:26:33 wiz Exp $
 #
 
 PKGNAME=		cal3d-examples-${CAL3D_VERSION}
@@ -11,7 +11,7 @@ DISTFILES=		TheCallyDemo-0.9.1b.zip \
 
 COMMENT=	Tools and demos for cal3d library
 
-USE_TOOLS+=		automake
+USE_TOOLS+=		automake pax
 
 CONFIGURE_ARGS+=	--with-cal3d=${PREFIX:Q}
 CONFIGURE_ARGS+=	--with-glut=${PREFIX:Q}
@@ -43,7 +43,7 @@ SUBST_SED.c3=		-e 's|@@DATADIR@@|${DATADIR}|g'
 
 post-install:
 	${INSTALL_DATA_DIR} ${DATADIR}
-	cd ${WRKDATADIR} && ${PAX} -rw -pp -s ',.*\.orig$$,,' [a-z]* ${DATADIR}
+	cd ${WRKDATADIR} && pax -rw -pp -s ',.*\.orig$$,,' [a-z]* ${DATADIR}
 
 .include "../../graphics/cal3d/buildlink3.mk"
 .include "../../graphics/Mesa/buildlink3.mk"

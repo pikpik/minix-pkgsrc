@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/12/28 11:47:51 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2008/03/02 06:10:31 jlam Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
@@ -12,6 +12,8 @@ COMMENT=	American English male voice for the festival speech synthesis system
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
 DEPENDS+=	festlex-ogi>=2.0:../../audio/festlex-ogi
+
+USE_TOOLS+=	pax
 
 LICENSE=	no-commercial-use
 
@@ -31,6 +33,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${FHOME}
-	cd ${WRKSRC} && ${PAX} -rw * ${DESTDIR}${FHOME}
+	cd ${WRKSRC} && pax -rw * ${DESTDIR}${FHOME}
 
 .include "../../mk/bsd.pkg.mk"
