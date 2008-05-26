@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.710 2008/05/11 20:28:35 jmcneill Exp $
+# $NetBSD: Makefile,v 1.711 2008/05/15 19:46:46 adrianp Exp $
 #
 
 COMMENT=	Networking tools
@@ -495,6 +495,7 @@ SUBDIR+=	tsclient
 SUBDIR+=	tsocks
 SUBDIR+=	tspc
 SUBDIR+=	ttt
+SUBDIR+=	unbound
 SUBDIR+=	ucarp
 SUBDIR+=	ucspi-ssl
 SUBDIR+=	ucspi-tcp
