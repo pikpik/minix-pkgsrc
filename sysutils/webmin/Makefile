@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/10/08 08:47:07 obache Exp $
+# $NetBSD: Makefile,v 1.22 2008/01/18 05:09:45 tnn Exp $
 
 .include "version.mk"
 
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.webmin.com/
 COMMENT=	Perl web server and CGI for Unix system administration
 
 DEPENDS+=	p5-Net-SSLeay-[0-9]*:../../security/p5-Net-SSLeay
+
+NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	# empty

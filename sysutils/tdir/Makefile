@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/02/05 23:10:56 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/01/07 09:14:13 rillig Exp $
 #
 
 DISTNAME=	tdir-1.58
@@ -10,6 +10,8 @@ MAINTAINER=	zuntum@NetBSD.org
 COMMENT=	Display directories with files ordered by ending "extension"
 
 LICENSE=	tdir-license
+
+NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 USE_TOOLS+=		gunzip
 PYTHON_PATCH_SCRIPTS=	tdir

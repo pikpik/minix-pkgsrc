@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/05/30 00:26:22 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2008/05/25 21:42:22 joerg Exp $
 #
 
 DISTNAME=	tetex-texmf-3.0
@@ -12,6 +12,7 @@ HOMEPAGE=	http://www.tug.org/tetex/
 COMMENT=	Machine-independent part of teTeX
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 CONFLICTS+=	teTeX-share-[0-9]*
 

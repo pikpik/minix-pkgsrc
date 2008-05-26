@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/04/12 22:43:01 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/05/26 02:13:20 joerg Exp $
 #
 
 DISTNAME=	rad3R6P1
@@ -14,6 +14,7 @@ HOMEPAGE=	http://www.radiance-online.org/
 COMMENT=	Physically-based, image-generating, backward raytracer
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 USE_TOOLS+=	pax
 
