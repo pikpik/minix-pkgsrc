@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/10/31 12:29:34 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2007/12/02 12:22:10 wiz Exp $
 #
 
 DISTNAME=	libidea-0.8.2b
@@ -10,6 +10,8 @@ MASTER_SITES=	ftp://ftp.psy.uq.oz.au/pub/Crypto/libeay/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.media-crypt.com/pages/fidea.html
 COMMENT=	IDEA block cipher library
+
+NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 WRKSRC=		${WRKDIR}/idea
 CRYPTO=		YES
