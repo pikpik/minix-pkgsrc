@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2008/04/26 01:23:58 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/05/21 13:50:30 wiz Exp $
 #
 
-DISTNAME=	clive-0.4.13
+DISTNAME=	clive-0.4.14
 CATEGORIES=	net multimedia www
 MASTER_SITES=	http://dl.gna.org/clive/0.4/src/ \
 		${MASTER_SITE_SOURCEFORGE:=clive/}
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--without-urlgrabber
 CONFIGURE_ARGS+=	--without-feedparser
 CONFIGURE_ARGS+=	--without-newt
-USE_LANGUAGES=	# none
+USE_LANGUAGES=	c # configure script
 PY_PATCHPLIST=			yes
 
 REPLACE_INTERPRETER+=	env_python
