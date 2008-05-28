@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2008/04/27 09:43:12 tnn Exp $
+# $NetBSD: options.mk,v 1.4 2008/05/01 15:37:13 bjs Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.MesaLib
 PKG_SUPPORTED_OPTIONS=	mesa-execmem-mmap
@@ -56,7 +56,7 @@ PKG_SUPPORTED_OPTIONS+=		dri
 ###	is advised given that it's glx/glcore modules are built from
 ###	Mesa 6.5.3 (a development release). 
 ###
-.if !empty(MACHINE_PLATFORM:MNetBSD-[4-9]*-[ix]86*)
+.if !empty(MACHINE_PLATFORM:MNetBSD-[4-9]*-*86*)
 PKG_SUGGESTED_OPTIONS+=		dri
 .endif
 
