@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/04/11 19:25:38 drochner Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/05/29 08:04:45 wiz Exp $
 bin/gvfs-cat
 bin/gvfs-copy
 bin/gvfs-info
@@ -48,6 +48,7 @@ share/gvfs/mounts/smb.mount
 share/gvfs/mounts/trash.mount
 share/locale/ar/LC_MESSAGES/gvfs.mo
 share/locale/be@latin/LC_MESSAGES/gvfs.mo
+share/locale/bg/LC_MESSAGES/gvfs.mo
 share/locale/bn_IN/LC_MESSAGES/gvfs.mo
 share/locale/ca/LC_MESSAGES/gvfs.mo
 share/locale/cs/LC_MESSAGES/gvfs.mo
