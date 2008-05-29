@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2008/04/24 15:58:31 bjs Exp $
+# $NetBSD: Makefile,v 1.10 2008/04/30 13:38:17 jmmv Exp $
 #
 
-DISTNAME=	gnome-control-center-2.22.1
-PKGREVISION=	1
+DISTNAME=	gnome-control-center-2.22.2.1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-control-center/2.22/}
 EXTRACT_SUFX=	.tar.bz2
@@ -19,9 +18,7 @@ USE_LIBTOOL=		yes
 
 CONFLICTS+=		gnome2-control-center-[0-9]* control-center-[0-9]*
 
-CONFIGURE_ARGS+=	--disable-alsa
 CONFIGURE_ARGS+=	--disable-hal
-CONFIGURE_ARGS+=	--with-gstreamer=0.10
 
 CPPFLAGS+=		-DDBUS_API_SUBJECT_TO_CHANGE
 
