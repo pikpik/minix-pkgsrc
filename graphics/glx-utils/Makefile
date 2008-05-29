@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/03/04 15:39:10 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/24 09:41:38 tnn Exp $
 
 DISTNAME=	MesaDemos-${MESA_VERSION}
 PKGNAME=	glx-utils-${MESA_PKGVERSION}
@@ -8,6 +8,8 @@ COMMENT=	OpenGL glxgears and glxinfo
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/Mesa/Makefile.common"
+
+DISTINFO_FILE=		${.CURDIR}/../MesaLib/distinfo
 
 INSTALLATION_DIRS=	bin
 
