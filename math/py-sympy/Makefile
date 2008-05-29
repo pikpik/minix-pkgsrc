@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/05/05 19:10:02 drochner Exp $
 #
 
-DISTNAME=	sympy-0.5.14
-PKGNAME=	${PYPKGPREFIX}-sympy-0.5.14
+DISTNAME=	sympy-0.5.15
+PKGNAME=	${PYPKGPREFIX}-sympy-0.5.15
 CATEGORIES=	math
 MASTER_SITES=	http://sympy.googlecode.com/files/
 
