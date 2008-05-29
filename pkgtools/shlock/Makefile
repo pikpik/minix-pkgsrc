@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/05/29 16:33:10 tnn Exp $
+# $NetBSD: Makefile,v 1.20 2008/05/29 17:03:54 tnn Exp $
 #
 
 DISTNAME=	shlock-20080529
@@ -16,7 +16,7 @@ MAKE_ENV+=		MKCATPAGES=no
 
 NO_CHECKSUM=	yes
 
-INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/cat1
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
 PKGSRC_LOCKTYPE=	none	# avoid "bootstrapping problem"
 
 do-extract:
