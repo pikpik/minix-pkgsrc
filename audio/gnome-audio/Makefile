@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2008/03/02 06:10:32 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/04/26 00:56:05 wiz Exp $
 #
 
-DISTNAME=	gnome-audio-2.22.1
+DISTNAME=	gnome-audio-2.22.2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-audio/2.22/}
 EXTRACT_SUFX=	.tar.bz2
