@@ -482,5 +482,7 @@ share/calc/xx_print.cal
 @dirrm share/calc/custom
 @dirrm share/calc/custhelp
 @dirrm share/calc
+@exec ${MKDIR} %D/include/calc/custom
+@dirrm include/calc/custom
 @dirrm include/calc
 @dirrm bin/cscript
