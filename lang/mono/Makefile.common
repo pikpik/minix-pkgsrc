@@ -1,4 +1,0 @@
-# $NetBSD: Makefile.common,v 1.2 2008/04/25 08:14:20 kefren Exp $
-# used by lang/mono/Makefile
-
-MONO_VERSION=	1.9.1

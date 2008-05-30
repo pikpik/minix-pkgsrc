@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/04/19 18:43:38 kefren Exp $
+# $NetBSD: Makefile,v 1.32 2008/04/25 08:16:51 kefren Exp $
 
 DISTNAME=	libgdiplus-1.9
 CATEGORIES=	graphics
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Implementation of the GDI+ API
-
-.include "../../lang/mono/Makefile.common"
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		autoconf gmake pkg-config

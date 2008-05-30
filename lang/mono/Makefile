@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2008/04/25 11:23:26 kefren Exp $
+# $NetBSD: Makefile,v 1.66 2008/04/28 07:10:21 kefren Exp $
 
 DISTNAME=	mono-${MONO_VERSION}
 PKGREVISION=	1
@@ -14,7 +14,8 @@ BUILD_DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 
 CONFLICTS=	pnet-[0-9]*
 
-.include "../../lang/mono/Makefile.common"
+MONO_VERSION=		1.9.1
+ALL_ENV+=		MONO_SHARED_DIR=${WRKDIR:Q}
 
 USE_TOOLS+=		bison gmake gtar perl:run pkg-config bash:run
 USE_LIBTOOL=		yes
