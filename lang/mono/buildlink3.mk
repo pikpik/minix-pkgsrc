@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.25 2008/03/21 14:52:15 kefren Exp $
+# $NetBSD: buildlink3.mk,v 1.26 2008/04/19 18:42:10 kefren Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MONO_BUILDLINK3_MK:=	${MONO_BUILDLINK3_MK}+
@@ -14,6 +14,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}mono
 .if ${MONO_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.mono+=	mono>=1.9
 BUILDLINK_PKGSRCDIR.mono?=	../../lang/mono
+ALL_ENV+=			MONO_SHARED_DIR=${WRKDIR:Q}
 .endif	# MONO_BUILDLINK3_MK
 
 .include "../../devel/glib2/buildlink3.mk"
