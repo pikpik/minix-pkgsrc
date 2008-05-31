@@ -92,3 +92,12 @@ $NetBSD$
  	done
  
  uninstall_utilities:
+@@ -795,7 +791,7 @@ install_docs:
+ 	    ($(MKDIR) -p $(DESTDIR)$(docdir) && \
+ 	    $(CHMOD) $(dmode) $(DESTDIR)$(docdir))
+ 	@cd $(DESTDIR)$(docdir) && $(RM) -rf $(DOCLIST)
+-	@cd $(srcdir)/docs && $(CP) -pr $(DOCLIST) $(DESTDIR)$(docdir)/
++	@cd $(srcdir)/docs && pax -rwpp $(DOCLIST) $(DESTDIR)$(docdir)/
+ 
+ uninstall_docs:
+ 	@cd $(DESTDIR)$(docdir) && $(RM) -rf $(DOCLIST)
