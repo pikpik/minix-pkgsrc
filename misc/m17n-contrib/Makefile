@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/02/27 14:04:58 obache Exp $
 #
 
 DISTNAME=	m17n-contrib-1.1.6
@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_LANGUAGES=		# none
+USE_LANGUAGES=		c
 
 REPLACE_AWK=	tbl2mim.awk
 
