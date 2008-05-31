@@ -1,5 +1,7 @@
+/*	$NetBSD: ksh_dir.h,v 1.2 1997/01/12 19:11:59 tls Exp $	*/
+
 /* Wrapper around the ugly dir includes/ifdefs */
-/* $Id: ksh_dir.h,v 1.1.1.1 2008/05/23 17:15:20 tnn Exp $ */
+/* $NetBSD: ksh_dir.h,v 1.2 1997/01/12 19:11:59 tls Exp $ */
 
 #if defined(HAVE_DIRENT_H)
 # include <dirent.h>
