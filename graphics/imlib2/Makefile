@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2007/09/18 19:18:10 drochner Exp $
+# $NetBSD: Makefile,v 1.44 2007/11/17 01:40:50 obache Exp $
 
 DISTNAME=	imlib2-1.4.0
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 
 MAINTAINER=	rh@NetBSD.org
-HOMEPAGE=	http://www.enlightenment.org/Libraries/Imlib2/
+HOMEPAGE=	http://docs.enlightenment.org/api/imlib2/html/
 COMMENT=	Image manipulation library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
