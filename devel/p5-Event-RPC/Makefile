@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2006/08/20 20:04:57 xtraeme Exp $
 #
 
 DISTNAME=	Event-RPC-0.90
@@ -12,7 +12,10 @@ COMMENT=	Event based transparent Client/Server RPC framework
 
 DEPENDS+=	p5-IO-Socket-SSL-[0-9]*:../../security/p5-IO-Socket-SSL
 
+USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Event/RPC/.packlist
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
