@@ -15,6 +15,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}qt4-tools
 BUILDLINK_API_DEPENDS.qt4-tools+=	qt4-tools>=4.1.0
 BUILDLINK_ABI_DEPENDS.qt4-tools+=	qt4-tools>=4.1.2nb1
 BUILDLINK_PKGSRCDIR.qt4-tools?=	../../x11/qt4-tools
+BUILDLINK_DEPMETHOD.qt4-tools?=	build
 .endif	# QT4_TOOLS_BUILDLINK3_MK
 
 .include "../../x11/qt4-libs/buildlink3.mk"
