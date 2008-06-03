@@ -113,9 +113,6 @@ share/X11/xkb/rules/README
 share/X11/xkb/rules/base
 share/X11/xkb/rules/base.lst
 share/X11/xkb/rules/base.xml
-share/X11/xkb/rules/sgi
-share/X11/xkb/rules/sun
-share/X11/xkb/rules/sun.xml
 share/X11/xkb/rules/xfree86
 share/X11/xkb/rules/xfree86.lst
 share/X11/xkb/rules/xfree86.xml
@@ -351,3 +348,4 @@ share/locale/zh_TW/LC_MESSAGES/xkeyboard-config.mo
 @dirrm share/X11/xkb/geometry
 @dirrm share/X11/xkb/compat
 @dirrm share/X11/xkb
+@comment @dirrm share/X11
