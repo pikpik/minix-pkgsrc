@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2008/02/20 15:46:53 xtraeme Exp $
+# $NetBSD: Makefile,v 1.47 2008/05/25 21:23:26 wiz Exp $
 #
 
 DISTNAME=	avidemux_2.4.1
@@ -19,6 +19,8 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt pkg-config
 USE_CMAKE=		yes
+
+CMAKE_ARGS+=		-DNO_ARTS=1
 
 LIBS+=			${LIBOSSAUDIO}
 
