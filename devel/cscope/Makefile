@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2007/01/06 22:45:49 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2007/01/20 23:39:44 wiz Exp $
 
 DISTNAME=	cscope-15.6
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cscope/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cscope.sourceforge.net/
 COMMENT=	Interactive C program browser
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		byacc lex
