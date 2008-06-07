@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2007/07/17 19:29:30 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2008/01/16 07:54:01 wiz Exp $
 #
 
 DISTNAME=		exiv2-0.16
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://www.exiv2.org/
 
