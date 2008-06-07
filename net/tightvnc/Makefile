@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/07/01 00:25:07 tnn Exp $
+# $NetBSD: Makefile,v 1.26 2008/01/18 05:08:49 tnn Exp $
 #
 
 DISTNAME=		tightvnc-1.3.9
@@ -7,7 +7,7 @@ CATEGORIES=		net x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vnc-tight/}
 DISTFILES=		${DISTNAME}_unixsrc.tar.bz2
 
-MAINTAINER=		riz@NetBSD.org
+MAINTAINER=		packages@NetBSD.org
 HOMEPAGE=		http://www.tightvnc.com/
 COMMENT=		Display X and Win32 desktops on remote X/Win32/Java displays
 
