@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.712 2008/05/26 22:38:27 joerg Exp $
+# $NetBSD: Makefile,v 1.713 2008/06/06 08:30:07 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -270,7 +270,6 @@ SUBDIR+=	nidentd
 SUBDIR+=	nipper
 SUBDIR+=	nload
 SUBDIR+=	nmap
-SUBDIR+=	nmapfe
 SUBDIR+=	nocol
 SUBDIR+=	nprobe
 SUBDIR+=	ns
