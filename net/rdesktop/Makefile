@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.33 2008/01/18 05:08:49 tnn Exp $
-#
+# $NetBSD: Makefile,v 1.34 2008/05/10 15:28:04 tonnerre Exp $
 
-DISTNAME=		rdesktop-1.5.0
-PKGREVISION=		4
+DISTNAME=		rdesktop-1.6.0
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=rdesktop/}
 
@@ -23,6 +21,12 @@ SUBST_STAGE.audio=	pre-configure
 SUBST_FILES.audio=	rdpsnd_oss.c
 SUBST_SED.audio=	-e "s,/dev/dsp,${DEVOSSAUDIO},g"
 SUBST_MESSAGE.audio=	Fixing hardcoded audio device.
+
+.include "options.mk"
+
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	--with-sound=oss
+.endif
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
