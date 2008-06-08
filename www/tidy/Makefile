@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/04/09 09:01:52 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2008/04/23 22:20:47 wiz Exp $
 #
 
 DISTNAME=	tidy-20080423
@@ -8,6 +8,8 @@ MASTER_SITES=	# manually created tarballs on ftp.NetBSD.org only
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tidy.sourceforge.net/
 COMMENT=	Fixes and tidies up HTML files
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	libxslt>=1.1.0:../../textproc/libxslt
 BUILD_DEPENDS+=	doxygen>=1.0:../../devel/doxygen
@@ -42,10 +44,10 @@ post-build:
 	doxygen htmldoc/doxygen.cfg
 
 post-install:
-	${INSTALL_MAN} ${WRKSRC}/htmldoc/tidy.1 ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_MAN} ${WRKSRC}/htmldoc/tidy.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 	for doc in ${HTML_DOCFILES}; do					\
-	    ${INSTALL_DATA} ${WRKSRC}/htmldoc/$$doc ${HTML_DOCDIR} ;	\
+	    ${INSTALL_DATA} ${WRKSRC}/htmldoc/$$doc ${DESTDIR}${HTML_DOCDIR} ;	\
 	done
-	${INSTALL_DATA} ${WRKSRC}/htmldoc/api/* ${HTML_DOCDIR}/api
+	${INSTALL_DATA} ${WRKSRC}/htmldoc/api/* ${DESTDIR}${HTML_DOCDIR}/api
 
 .include "../../mk/bsd.pkg.mk"
