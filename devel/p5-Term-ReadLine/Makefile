@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/04/12 21:28:27 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2006/07/12 17:22:38 heinz Exp $
 
 DISTNAME=	Term-ReadLine-Gnu-1.16
 PKGNAME=	p5-${DISTNAME:S/-Gnu//}
@@ -14,6 +14,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_GNU_READLINE=	yes
 PERL5_PACKLIST=		auto/Term/ReadLine/Gnu/.packlist
+
+MAKE_PARAMS+=	--includedir=${PREFIX}/include --libdir=${PREFIX}/lib
 
 REPLACE_PERL+=	Gnu/XS.pm Gnu/euc_jp.pm
 
