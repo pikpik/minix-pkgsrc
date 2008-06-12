@@ -1,4 +1,5 @@
-# $NetBSD: Makefile.common,v 1.7 2008/01/28 10:13:55 rillig Exp $
+# $NetBSD: Makefile.common,v 1.8 2008/01/31 17:37:25 rillig Exp $
+# used by x11/qt4-libs/Makefile
 
 DISTNAME=	qt-x11-opensource-src-${QTVERSION}
 CATEGORIES=	x11
