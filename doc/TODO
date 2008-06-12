@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7320 2008/06/12 09:46:12 wiz Exp $
+$NetBSD: TODO,v 1.7321 2008/06/12 15:04:41 obache Exp $
 
 Suggested new packages
 ======================
@@ -1052,7 +1052,6 @@ Suggested package updates
 	o picp-0.6.8
 	o pim6dd-20040819a
 	o pim6sd-20040824a
-	o pine-pgp-filters-1.6
 	o pinfo-0.6.9
 	o pioneers-0.12.2
 	o pircbot-1.4.4
