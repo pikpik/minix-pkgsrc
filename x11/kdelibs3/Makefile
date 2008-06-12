@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2008/04/12 22:43:14 jlam Exp $
+# $NetBSD: Makefile,v 1.137 2008/04/27 04:14:32 markd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGREVISION=	1
@@ -12,6 +12,7 @@ PATCHFILES=	post-kde-3.5.5-kinit.diff
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
 CONFLICTS+=	koffice3<=1.1.1
+CONFLICTS=	kdelibs4-[0-9]*
 
 USE_TOOLS+=		iceauth:run perl:run pkg-config
 
