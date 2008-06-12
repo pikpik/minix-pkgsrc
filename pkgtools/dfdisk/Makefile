@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/01/08 21:00:22 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:08 rillig Exp $
 #
 
 DISTNAME=	dfdisk-1.0
@@ -8,6 +8,8 @@ DISTFILES=	# empty
 
 MAINTAINER=	jmmv@NetBSD.org
 COMMENT=	Fetch distfiles from multiple locations
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_CHECKSUM=	yes

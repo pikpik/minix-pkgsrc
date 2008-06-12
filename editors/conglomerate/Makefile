@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2008/03/06 14:53:49 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2008/04/14 11:36:11 wiz Exp $
 #
 
 DISTNAME=	conglomerate-0.9.1
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=conglomerate/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.conglomerate.org/
 COMMENT=	XML editor for GNOME2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		docbook-xsl>=1.64.1:../../textproc/docbook-xsl
 DEPENDS+=		docbook-xml>=4.2nb6:../../textproc/docbook-xml

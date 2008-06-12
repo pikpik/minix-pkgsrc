@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:30 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/25 20:39:11 joerg Exp $
 #
 
 DISTNAME=	SpreadModule-1.4
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.python.org/other/spread/
 COMMENT=	Python bindings for the Spread messaging service
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	YES
 

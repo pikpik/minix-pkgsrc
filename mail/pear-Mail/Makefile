@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/02/22 19:26:42 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2007/05/05 22:09:20 adrianp Exp $
 
 DISTNAME=	Mail-1.1.14
 PKGREVISION=	1
@@ -11,6 +11,8 @@ DEPENDS+=	${PHP_PKG_PREFIX}-pear-Net_SMTP-[0-9]*:../../net/pear-Net_SMTP
 MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://pear.php.net/package/Mail
 COMMENT=	PHP Class that provides multiple interfaces for sending emails
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/php/pear.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2006/06/02 18:27:58 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/04 16:26:55 joerg Exp $
 
 MODNAME=		domxml
 CATEGORIES+=		textproc
 COMMENT=		PHP4 extension for DOM support
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PHP_VERSIONS_ACCEPTED=	4
 

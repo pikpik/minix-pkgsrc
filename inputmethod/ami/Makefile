@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:37 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2006/10/04 21:45:16 wiz Exp $
 #
 
 DISTNAME=	ami-1.0.11
@@ -10,6 +10,8 @@ MASTER_SITES=	http://kldp.net/frs/download.php/942/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kldp.net/projects/ami
 COMMENT=	Korean input method
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

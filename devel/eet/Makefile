@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/08/10 20:56:14 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/10/04 21:35:58 wiz Exp $
 #
 
 DISTNAME=	eet-0.9.9
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.enlightenment.org/Libraries/Eet/
 COMMENT=	Library for speedy storage, retrieval, and compression
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	YES

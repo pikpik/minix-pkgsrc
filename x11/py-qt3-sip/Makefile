@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2007/02/22 19:27:27 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2008/04/25 20:39:14 joerg Exp $
 #
 
 DISTNAME=	sip-4.3.2
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.river-bank.demon.co.uk/download/sip/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/sip/index.php
 COMMENT=	Tool to create Python bindings for C++ libraries
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	${PYPKGPREFIX}-qt2-sip-*
 

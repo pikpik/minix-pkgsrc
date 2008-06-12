@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/03/14 16:00:53 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2007/02/22 19:27:22 wiz Exp $
 
 DISTNAME=	Kwiki-PagePrivacy-0.10
 PKGNAME=	p5-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Kwiki/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kwiki.org/
 COMMENT=	Kwiki page-level privacy plugin
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Kwiki>=0.37nb1:../../www/p5-Kwiki
 

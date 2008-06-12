@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/27 06:41:08 wiz Exp $
 #
 
 DISTNAME=	agg-2.5
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.antigrain.com/
 MAINTAINER=	matias@dotbsd.org
 HOMEPAGE=	http://www.antigrain.com/
 COMMENT=	High Quality Rendering Engine for C++
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake msgfmt pkg-config aclocal autoheader \
             automake autoconf

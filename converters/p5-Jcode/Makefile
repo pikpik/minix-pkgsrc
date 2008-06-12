@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/08/06 06:19:05 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2006/07/09 13:13:00 taca Exp $
 #
 
 DISTNAME=	Jcode-2.06
@@ -14,6 +14,7 @@ COMMENT=	Perl5 module for handling various Japanese charsets
 DEPENDS+=	p5-MIME-Base64>=2.1:../../converters/p5-MIME-Base64
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Jcode/.packlist
 

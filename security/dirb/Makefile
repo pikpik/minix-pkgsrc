@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/11/19 11:50:25 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/01/18 05:09:37 tnn Exp $
 #
 
 PKGNAME=	dirb-1.9
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dirb/}
 MAINTAINER=	pancake@phreaker.net
 HOMEPAGE=	http://dirb.sourceforge.net/
 COMMENT=	Web Content Scanner
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=${WRKDIR}/dirb
 

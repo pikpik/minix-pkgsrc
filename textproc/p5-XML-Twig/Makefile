@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:30:50 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/11/06 13:40:41 obache Exp $
 #
 
 DISTNAME=	XML-Twig-3.26
@@ -30,6 +30,7 @@ DEPENDS+=	p5-XML-Parser>=2.23:../../textproc/p5-XML-Parser
 #DEPENDS+=	p5-libwww-[0-9]*:../../www/p5-libwww
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/XML/Twig/.packlist
 

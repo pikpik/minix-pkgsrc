@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/02/22 19:27:09 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/28 22:03:53 bouyer Exp $
 #
 
 DISTNAME=	py-smbpasswd-1.0.1
@@ -9,6 +9,8 @@ MASTER_SITES=	http://barryp.org/static/software/download/py-smbpasswd/1.0.1/
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://barryp.org/software/py-smbpasswd/
 COMMENT=	Python SMB Password Hash Generator
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYBINMODULE=	yes
 PYDISTUTILSPKG= yes

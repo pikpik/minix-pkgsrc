@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/10/14 05:02:21 obache Exp $
+# $NetBSD: Makefile,v 1.16 2007/09/21 13:04:25 wiz Exp $
 #
 
 DISTNAME=		e16menuedit2-0.0.3
@@ -9,6 +9,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 MAINTAINER=		chriswareham@chriswareham.demon.co.uk
 HOMEPAGE=		http://www.enlightenment.org/
 COMMENT=		Menu editor for the Enlightenment window manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		enlightenment-0.16.*:../../wm/enlightenment
 

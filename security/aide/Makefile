@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/07/21 20:26:45 minskim Exp $
+# $NetBSD: Makefile,v 1.27 2007/02/22 19:27:06 wiz Exp $
 #
 
 DISTNAME=	aide-0.10
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aide/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.tut.fi/~rammer/aide.html
 COMMENT=	Free intrusion detection system for checking file integrity
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.mhash?=	mhash>=0.8.17
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/07/13 14:50:17 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2007/08/30 15:16:11 joerg Exp $
 #
 
 DISTNAME=	freealut-1.1.0
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.openal.org/openal_webstf/downloads/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openal.org/
 COMMENT=	OpenAL Utility Toolkit
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

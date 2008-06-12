@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/13 18:01:32 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:22 jlam Exp $
 
 DISTNAME=	User-Identity-0.90
 PKGNAME=	p5-${DISTNAME}
@@ -13,6 +13,7 @@ COMMENT=	Helps maintaining user information from various sources
 DEPENDS+=	p5-Geography-Countries-[0-9]*:../../misc/p5-Geography-Countries
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/User/Identity/.packlist
 

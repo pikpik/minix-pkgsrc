@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2006/10/05 18:51:01 gdt Exp $
+# $NetBSD: Makefile,v 1.5 2006/10/12 19:05:08 gdt Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../devel/fann-devel/Makefile.common"
 PKGNAME=	${PYPKGPREFIX}-fann-${FANNVERSION}.${FANNDATE}

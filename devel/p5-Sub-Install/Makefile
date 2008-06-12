@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/10/24 13:14:59 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/06/10 11:38:21 abs Exp $
 
 DISTNAME=	Sub-Install-0.924
 PKGNAME=	p5-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Sub/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Sub-Install/
 COMMENT=	Install subroutines into packages easily
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Sub/Install/.packlist
 

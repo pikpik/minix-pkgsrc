@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/07/19 10:01:10 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/01/14 02:04:58 rillig Exp $
 #
 
 DISTNAME=	blackbox-0.70.1
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=blackboxwm/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://blackboxwm.sourceforge.net/
 COMMENT=	Small and fast X11R6 window manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	bsetroot-*
 CONFLICTS+=	blackbox-*

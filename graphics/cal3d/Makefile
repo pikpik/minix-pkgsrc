@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:09:28 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/22 19:26:33 wiz Exp $
 #
 
 PKGNAME=		cal3d-${CAL3D_VERSION}
 PKGREVISION=	2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/cal3d/Makefile.common"
 

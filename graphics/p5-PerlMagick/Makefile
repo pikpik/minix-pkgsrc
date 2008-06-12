@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.57 2007/01/17 23:47:20 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2007/02/06 14:52:47 adam Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/ImageMagick/Makefile.common"
 

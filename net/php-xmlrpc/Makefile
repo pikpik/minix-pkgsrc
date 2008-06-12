@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2007/02/22 19:26:57 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/08/10 16:41:51 joerg Exp $
 
 MODNAME=		xmlrpc
 CATEGORIES+=		net
 COMMENT=		PHP extension for XML-RPC support
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-xmlrpc-[0-9]*
 

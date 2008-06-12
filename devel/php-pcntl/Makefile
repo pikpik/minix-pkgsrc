@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2006/06/04 16:26:53 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2007/05/08 11:30:50 adrianp Exp $
 
 MODNAME=		pcntl
 CATEGORIES+=		devel
 COMMENT=		PHP extension for Process Control functions
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pcntl-[0-9]*
 

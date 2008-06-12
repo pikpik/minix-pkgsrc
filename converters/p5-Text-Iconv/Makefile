@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/07/13 18:01:20 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2005/08/06 06:19:05 jlam Exp $
 #
 
 DISTNAME=	Text-Iconv-1.4
@@ -11,6 +11,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-Iconv/
 COMMENT=	Perl interface to iconv() codeset conversion function
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Iconv/.packlist
 

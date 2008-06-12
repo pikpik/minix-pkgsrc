@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/04/15 18:34:32 drochner Exp $
+# $NetBSD: Makefile,v 1.33 2008/05/29 16:41:01 drochner Exp $
 #
 
 DISTNAME=	eog-2.22.2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Eye of GNOME: an image viewing and cataloging program
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

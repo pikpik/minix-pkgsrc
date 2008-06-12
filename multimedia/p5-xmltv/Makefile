@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/27 13:28:05 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/12/01 23:00:03 adrianp Exp $
 
 DISTNAME=	xmltv-0.5.45
 PKGNAME=	p5-${DISTNAME}
@@ -44,6 +44,7 @@ DEPENDS+=	p5-HTTP-Cache-Transparent-[0-9]*:../../www/p5-HTTP-Cache-Transparent
 DEPENDS+=	p5-Unicode-UTF8simple-[0-9]*:../../converters/p5-Unicode-UTF8simple
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/XMLTV/.packlist
 USE_TOOLS+=	perl

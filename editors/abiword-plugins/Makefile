@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2008/01/18 05:06:31 tnn Exp $
+# $NetBSD: Makefile,v 1.26 2008/03/06 14:53:49 wiz Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../editors/abiword/Makefile.common"
 

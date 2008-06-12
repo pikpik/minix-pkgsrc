@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/05/01 15:14:21 jmmv Exp $
+# $NetBSD: Makefile,v 1.6 2008/05/24 06:14:00 obache Exp $
 #
 
 DISTNAME=	atf-0.5
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/jmmv/atf/0.5/
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://www.NetBSD.org/~jmmv/atf/
 COMMENT=	Automated testing framework
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

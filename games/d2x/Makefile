@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/04/17 13:46:27 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2006/06/12 16:28:08 wiz Exp $
 #
 
 DISTNAME=	d2x-0.2.5
@@ -9,6 +9,8 @@ MASTER_SITES=	http://icculus.org/d2x/src/
 MAINTAINER=	airhead@users.sourceforge.net
 HOMEPAGE=	http://icculus.org/d2x/
 COMMENT=	Descent II port
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake

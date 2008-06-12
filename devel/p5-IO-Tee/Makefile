@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/13 18:01:26 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2005/08/06 06:19:11 jlam Exp $
 #
 
 DISTNAME=	IO-Tee-0.64
@@ -13,6 +13,7 @@ HOMEPAGE=	http://search.cpan.org/search?module=IO::Tee
 COMMENT=	Multiplex output to multiple output handles
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/IO/Tee/.packlist

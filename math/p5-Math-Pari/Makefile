@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/11/22 09:25:45 abs Exp $
+# $NetBSD: Makefile,v 1.29 2008/02/09 22:39:50 adrianp Exp $
 #
 
 DISTNAME=		Math-Pari-2.010709
@@ -15,6 +15,8 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Math-Pari/
 COMMENT=		Perl5 interface to the pari math library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl
 

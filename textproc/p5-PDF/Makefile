@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2005/08/06 06:19:32 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/03/04 21:30:48 jlam Exp $
 #
 
 DISTNAME=	PDF-111
@@ -12,6 +12,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.geocities.com/CapeCanaveral/Hangar/4794/
 COMMENT=	Perl5 module for pdf document manipulation
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/PDF
 PERL5_PACKLIST=		auto/PDF/.packlist

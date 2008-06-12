@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:45:36 tv Exp $
+# $NetBSD: Makefile,v 1.8 2005/09/28 20:52:19 rillig Exp $
 #
 
 DISTNAME=	pardiff-0.9.4
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pardiff/}
 MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://pardiff.sourceforge.net/
 COMMENT=	Converts diff output to paralleled (side-by-side) format
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

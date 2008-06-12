@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/11/04 15:08:44 adrianp Exp $
 #
 
 DISTNAME=	Time-Format-1.02
@@ -9,6 +9,8 @@ MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/R/RO/ROODE/
 MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/R/RO/ROODE/
 COMMENT=	Easy-to-use date/time formatting
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Test-Simple>=0.40:../../devel/p5-Test-Simple
 

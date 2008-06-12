@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/02/27 12:58:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2007/11/29 15:09:39 wiz Exp $
 
 DISTNAME=		Test-Manifest-1.22
 PKGNAME=		p5-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Test/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Test-Manifest/
 COMMENT=		Perl5 module to choose test order
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Test/Manifest/.packlist

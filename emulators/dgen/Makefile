@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/06/12 16:28:06 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2006/12/03 17:07:41 xtraeme Exp $
 #
 
 DISTNAME=	dgen-sdl-1.23
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.pknet.com/~joe/
 MAINTAINER=	pancake@phreaker.net
 HOMEPAGE=	http://www.pknet.com/~joe/dgen-sdl.html
 COMMENT=	Genesis/Megadrive emulator for Unix platforms
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if ${MACHINE_ARCH} == "i386"
 DEPENDS+=	nasm-[0-9]*:../../devel/nasm

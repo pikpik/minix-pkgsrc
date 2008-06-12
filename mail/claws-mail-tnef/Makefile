@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/01/09 14:49:36 smb Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/12 02:25:40 smb Exp $
 #
 
 DISTNAME=	tnef_parse-0.2.3
@@ -9,6 +9,8 @@ PKGREVISION=	1
 
 MAINTAINER=	smb@NetBSD.org
 COMMENT=	Handles TNEF attachments from Outlook
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 #PLIST_SRC+=	PLIST
 

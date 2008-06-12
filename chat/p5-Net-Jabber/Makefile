@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:25 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:04 jlam Exp $
 #
 
 DISTNAME=	Net-Jabber-1.26
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.jabber.org/
 COMMENT=	Provide a Perl Developer access to the Jabber protocol
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Unicode-String-[0-9]*:../../converters/p5-Unicode-String
 DEPENDS+=	p5-XML-Stream-[0-9]*:../../textproc/p5-XML-Stream

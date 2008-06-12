@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/11/07 14:53:10 obache Exp $
+# $NetBSD: Makefile,v 1.5 2007/06/08 08:42:27 wiz Exp $
 
 DISTNAME=	Text-Glob-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -12,6 +12,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Text-Glob/
 COMMENT=	Match globbing patterns against text
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Glob/.packlist
 

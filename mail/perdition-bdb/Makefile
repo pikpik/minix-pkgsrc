@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/06/28 13:46:58 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/06/08 13:12:01 wiz Exp $
 #
 
 PKGREVISION=		3
@@ -8,6 +8,8 @@ PERDITION_PKGNAME=	bdb
 BUILD_DIRS=		makebdb perdition/db/bdb
 
 BDB_ACCEPTED=		db4
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../mail/perdition/buildlink3.mk"

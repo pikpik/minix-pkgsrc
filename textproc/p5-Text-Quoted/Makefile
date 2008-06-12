@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/02/25 23:45:46 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/04/23 20:26:04 wiz Exp $
 #
 
 DISTNAME=	Text-Quoted-2.05
@@ -13,6 +13,7 @@ COMMENT=	Extract the structure of a quoted mail message
 DEPENDS+=	p5-Text-Autoformat>=1.04:../../textproc/p5-Text-Autoformat
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Text/Quoted/.packlist

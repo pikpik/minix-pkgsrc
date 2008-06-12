@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.12 2005/02/11 04:09:20 dmcmahill Exp $
 
 --- Makefile.orig	2003-10-03 01:39:34.000000000 +0000
 +++ Makefile
@@ -7,7 +7,7 @@ $NetBSD$
  SOURCEPATH = `pwd`
  VERSION = 3.2.0
 -INSTALLDIR = $(PREFIX)/opt/vipec
-+INSTALLDIR = $(PREFIX)/vipec
++INSTALLDIR = ${DESTDIR}$(PREFIX)/vipec
  ICONFILE = vipec.gif
  
  export VERSION

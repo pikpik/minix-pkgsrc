@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/10/14 08:04:25 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/18 15:12:37 obache Exp $
 
 DISTNAME=	cdl3-1.2.7
 CATEGORIES=	lang
@@ -9,6 +9,7 @@ HOMEPAGE=	http://www.cs.ru.nl/~kees/cdl3/
 COMMENT=	Programming language for the development of compilers
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes

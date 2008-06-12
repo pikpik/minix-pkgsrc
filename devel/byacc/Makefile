@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/09/09 02:41:57 obache Exp $
+# $NetBSD: Makefile,v 1.7 2006/12/09 02:27:47 markd Exp $
 #
 
 DISTNAME=	byacc-20050813
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dickey.his.com/byacc/byacc.html
 COMMENT=	Berkeley Yacc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 MAKE_FILE=	makefile

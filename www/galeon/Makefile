@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2008/03/06 14:53:55 wiz Exp $
+# $NetBSD: Makefile,v 1.115 2008/03/10 12:56:20 drochner Exp $
 #
 
 DISTNAME=		galeon-2.0.5
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://galeon.sourceforge.net/
 COMMENT=		GNOME2 Web browser based on gecko
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		galeon-devel-[0-9]*
 

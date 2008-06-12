@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/11/18 20:40:14 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/01/28 07:31:20 wiz Exp $
 #
 
 DISTNAME=	chmlib-0.39
@@ -13,6 +13,7 @@ COMMENT=	Library for dealing with Microsoft ITSS/CHM format files
 CONFLICTS=	kchm-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

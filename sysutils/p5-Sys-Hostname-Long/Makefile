@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/10/16 08:06:55 heinz Exp $
+# $NetBSD: Makefile,v 1.9 2006/06/27 19:44:49 heinz Exp $
 #
 
 DISTNAME=		Sys-Hostname-Long-1.4
@@ -12,6 +12,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Sys-Hostname-Long/
 COMMENT=		Try to get the full hostname in Perl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 

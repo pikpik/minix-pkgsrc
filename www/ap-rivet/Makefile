@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/06/02 18:27:59 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2006/08/23 11:22:06 minskim Exp $
 
 DISTNAME=	rivet-0.5.0
 PKGNAME=	ap13-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=	http://apache.mirror99.com/tcl/rivet/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tcl.apache.org/rivet/
 COMMENT=	System for creating dynamic web content via Tcl
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-rivet-[0-9]*
 

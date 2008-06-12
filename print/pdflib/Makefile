@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2006/02/05 23:10:38 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2006/04/17 14:52:11 wiz Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
@@ -11,14 +13,15 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 BUILD_TARGET=		pdflib
 DOCDIR=			${PREFIX}/share/doc/pdflib
 
+INSTALLATION_DIRS+=	${DOCDIR}
+
 post-install:
-	${INSTALL_DATA_DIR} ${DOCDIR}
 	cd ${WRKSRC}/doc; for file in					\
 		PDFlib-license.pdf					\
 		PDFlib-manual.pdf					\
 		aladdin-license.pdf;					\
 	do								\
-		${INSTALL_DATA} $${file} ${DOCDIR};			\
+		${INSTALL_DATA} $${file} ${DESTDIR}${DOCDIR};		\
 	done
 
 .include "../../mk/bsd.pkg.mk"

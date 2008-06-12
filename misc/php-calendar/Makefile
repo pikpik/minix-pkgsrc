@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 18:27:57 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/04 16:26:54 joerg Exp $
 
 MODNAME=		calendar
 CATEGORIES+=		misc
 COMMENT=		PHP extension for calendar conversion support
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-calendar-[0-9]*
 

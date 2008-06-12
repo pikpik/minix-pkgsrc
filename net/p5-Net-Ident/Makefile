@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2005/10/16 17:42:46 heinz Exp $
 #
 
 DISTNAME=		Net-Ident-1.20
@@ -12,6 +12,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Net-Ident/
 COMMENT=		Perl module implementing the client side of the ident protocol
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		#empty
 

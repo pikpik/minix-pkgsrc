@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/04/23 13:24:13 abs Exp $
+# $NetBSD: Makefile,v 1.3 2007/10/06 00:29:18 joerg Exp $
 
 DISTNAME=		Net-eBay-0.41
 PKGNAME=		p5-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
 MAINTAINER=		abs@NetBSD.org
 HOMEPAGE=		http://www.net-ebay.org/
 COMMENT=		Perl Interface to XML based eBay API
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-Crypt-SSLeay-[0-9]*:../../security/p5-Crypt-SSLeay
 DEPENDS+=		p5-Net-SSLeay-[0-9]*:../../security/p5-Net-SSLeay

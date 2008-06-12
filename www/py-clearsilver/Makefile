@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2008/04/11 15:27:22 abs Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/25 20:39:13 joerg Exp $
 
 PKGNAME=			${PYPKGPREFIX}-${DISTNAME}
 PKGREVISION=			1
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../www/clearsilver/Makefile.common"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/09/04 08:47:17 martti Exp $
+# $NetBSD: Makefile,v 1.21 2007/10/25 22:01:03 jlam Exp $
 
 DISTNAME=	LPRng-3.6.28
 PKGREVISION=	2
@@ -12,6 +12,8 @@ COMMENT=	"meta-package" for LPRng, Enhanced Printer Spooler
 
 DEPENDS+=	LPRng-core-3.8.28{,nb*}:../../print/LPRng-core
 DEPENDS+=	LPRng-doc-3.6.13:../../print/LPRng-doc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ONLY=		# empty
 NO_CHECKSUM=		yes

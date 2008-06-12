@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/02/05 23:11:00 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:44 jlam Exp $
 #
 
 DISTNAME=	aspell-it-0.53-0
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://aspell.net/
 COMMENT=	Italian language support for aspell
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	YES
 

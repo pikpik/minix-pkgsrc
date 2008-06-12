@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/08/26 16:42:25 kristerw Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/25 20:39:08 joerg Exp $
 #
 
 DISTNAME=		ZopeInterface-3.0.1
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		sifu@0xx0.net
 HOMEPAGE=		http://www.zope.org/
 COMMENT=		The zope.interface package used in Zope 3 and Twisted
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		yes
 

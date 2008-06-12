@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/02/05 11:10:03 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/04 12:45:02 adam Exp $
 
 PKGNAME=	postgresql83-pltcl-${BASE_VERS}
 COMMENT=	PL/Tcl procedural language for the PostgreSQL backend
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	postgresql83-server>=${BASE_VERS}:../../databases/postgresql83-server
 

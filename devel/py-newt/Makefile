@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2008/03/03 17:45:36 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/13 09:54:57 wiz Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../devel/newt/Makefile.common"
 
@@ -17,8 +19,8 @@ do-build:
 	${PYTHONBIN} -m py_compile ${WRKSRC}/snack.py
 
 do-install:
-	${INSTALL_LIB} ${WRKSRC}/_snackmodule.so ${PREFIX}/${PYSITELIB}
-	${INSTALL_LIB} ${WRKSRC}/snack.p* ${PREFIX}/${PYSITELIB}
+	${INSTALL_LIB} ${WRKSRC}/_snackmodule.so ${DESTDIR}${PREFIX}/${PYSITELIB}
+	${INSTALL_LIB} ${WRKSRC}/snack.p* ${DESTDIR}${PREFIX}/${PYSITELIB}
 
 .include "../../devel/newt/buildlink3.mk"
 .include "../../lang/python/extension.mk"

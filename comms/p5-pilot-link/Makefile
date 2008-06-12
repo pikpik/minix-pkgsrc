@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2007/03/27 22:24:11 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2007/05/15 13:13:25 obache Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../comms/pilot-link/Makefile.common"
 
@@ -45,7 +47,7 @@ post-extract:
 post-install:
 .for bin in pilot-ietf2datebook pilot-undelete pilot-sync-plan
 	cd ${WRKSRC}/src &&						\
-	${INSTALL_SCRIPT} ${bin} ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${bin} ${DESTDIR}${PREFIX}/bin
 .endfor
 
 .include "../../comms/pilot-link-libs/buildlink3.mk"

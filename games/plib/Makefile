@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/07/12 19:48:40 drochner Exp $
+# $NetBSD: Makefile,v 1.21 2008/03/14 14:38:46 drochner Exp $
 #
 
 DISTNAME=	plib-1.8.5
@@ -8,6 +8,8 @@ MASTER_SITES=	http://plib.sourceforge.net/dist/
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://plib.sourceforge.net/
 COMMENT=	Libraries for writing portable games/realtime interactive apps
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++

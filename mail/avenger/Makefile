@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/01/12 11:36:32 adam Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/04 11:02:25 rillig Exp $
 #
 
 DISTNAME=	avenger-0.7.7
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.mailavenger.org/dist/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mailavenger.org/dist/
 COMMENT=	SMTP server with filtering capabilities
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_SYSCONFSUBDIR=	avenger
 GNU_CONFIGURE=	yes

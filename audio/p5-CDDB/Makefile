@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/01/05 15:29:56 chuck Exp $
+# $NetBSD: Makefile,v 1.9 2007/02/27 08:54:46 wiz Exp $
 #
 
 DISTNAME=	CDDB-1.17
@@ -10,6 +10,7 @@ HOMEPAGE=	http://search.cpan.org/dist/CDDB/
 COMMENT=	High-level interface to the Compact Disc Database
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/CDDB/.packlist
 

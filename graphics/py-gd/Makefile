@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/04/17 13:46:35 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2007/02/22 19:26:35 wiz Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	${PYPKGPREFIX}-gd-1.3
@@ -10,6 +10,8 @@ EXTRACT_SUFX=
 MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://starship.python.net/~richard/gdmodule/
 COMMENT=	Python interface to gd graphics library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 BUILD_TARGET=	default

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2006/06/06 01:30:26 minskim Exp $
 
 --- doc/Makefile.in.orig	2003-07-06 14:42:37.000000000 -0700
 +++ doc/Makefile.in
@@ -8,5 +8,5 @@ $NetBSD$
  install:
 -	${INSTALL} -m 0555 -g root -o root -d ${docdir}/
 -	${INSTALL} -m 0444 -g root -o root ${DOC_FILES} ${docdir}/
-+	${BSD_INSTALL_DATA_DIR} ${docdir}/
-+	${BSD_INSTALL_DATA} ${DOC_FILES} ${docdir}/
++	${BSD_INSTALL_DATA_DIR} ${DESTDIR}${docdir}/
++	${BSD_INSTALL_DATA} ${DOC_FILES} ${DESTDIR}${docdir}/

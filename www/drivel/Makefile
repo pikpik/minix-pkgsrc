@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2008/03/06 14:53:55 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2008/05/30 12:29:00 wiz Exp $
 #
 
 DISTNAME=	drivel-2.0.3
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dropline.net/drivel/
 COMMENT=	LiveJournal client for the GNOME Desktop
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.5

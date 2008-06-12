@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 17:29:30 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/25 20:39:09 joerg Exp $
 
 DISTNAME=	py-kqueue-2.0
 PKGNAME=	${PYPKGPREFIX}-kqueue-2.0
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/jdolecek/
 
 MAINTAINER=	jdolecek@NetBSD.org
 COMMENT=	Python interface to kqueue(2) and kevent(2) system calls
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG= # defined
 

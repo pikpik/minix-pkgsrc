@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/01/07 09:14:05 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/19 16:40:28 tv Exp $
 #
 
 DISTNAME=	proxycheck-0.49a
@@ -9,13 +9,15 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.corpit.ru/mjt/proxycheck.html
 COMMENT=	Tester for open (promiscuous) proxy systems
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 HAS_CONFIGURE=	YES
 MAKE_FLAGS+=	CC=${CC:Q} CFLAGS=${CFLAGS:M*:Q} LDFLAGS=${LDFLAGS:M*:Q}
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/proxycheck ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/proxycheck.1 ${PREFIX}/${PKGMANDIR}/man1/
+	${INSTALL_PROGRAM} ${WRKSRC}/proxycheck ${DESTDIR}${PREFIX}/bin/
+	${INSTALL_MAN} ${WRKSRC}/proxycheck.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/
 
 .include "../../mk/bsd.pkg.mk"

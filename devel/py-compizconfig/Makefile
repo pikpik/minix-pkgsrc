@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/04/25 20:39:08 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/05/12 11:20:58 jmcneill Exp $
 #
 
 DISTNAME=		compizconfig-python-0.6.0
@@ -9,6 +9,8 @@ MASTER_SITES=		http://releases.compiz-fusion.org/0.6.0/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.compiz-fusion.org/
 COMMENT=		Python bindings for libcompizconfig
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

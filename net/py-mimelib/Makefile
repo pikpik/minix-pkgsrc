@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/04/17 12:22:00 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2008/04/25 20:39:11 joerg Exp $
 #
 
 DISTNAME=	email-2.5
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/mimelib/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mimelib.sourceforge.net/
 COMMENT=	Email package for Python
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 # This pkg (or an older version of it) comes with 2.2 and later;

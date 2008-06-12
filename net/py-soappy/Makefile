@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/06/07 12:52:24 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2008/04/25 20:39:11 joerg Exp $
 #
 
 DISTNAME=	SOAPpy-0.11.4
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pywebsvcs/}
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://pywebsvcs.sourceforge.net/
 COMMENT=	SOAP implementation
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	YES
 PY_PATCHPLIST=	YES

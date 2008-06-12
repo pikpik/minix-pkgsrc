@@ -1,4 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/05/11 05:58:00 adam Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../games/crossfire-client/Makefile.common"
 

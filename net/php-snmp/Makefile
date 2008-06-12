@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2006/06/04 16:26:55 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2007/09/03 19:51:40 jdolecek Exp $
 
 MODNAME=		snmp
 CATEGORIES+=		net
 COMMENT=		PHP extension for SNMP
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-snmp-[0-9]*
 

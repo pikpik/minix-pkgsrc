@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/04/25 20:39:10 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2008/04/26 02:41:00 markd Exp $
 #
 
 DISTNAME=	rpy-0.99.0
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rpy/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rpy.sourceforge.net/
 COMMENT=	R interface for Python
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		YES
 

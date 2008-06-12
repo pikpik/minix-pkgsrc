@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/09/09 02:43:10 obache Exp $
+# $NetBSD: Makefile,v 1.18 2007/06/06 12:43:31 tnn Exp $
 
 DISTNAME=		euler-1.61.0
 PKGNAME=		euler-1.61
@@ -9,6 +9,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=euler/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://euler.sourceforge.net/index.html
 COMMENT=		Interactive numerical analysis and graphics program
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes

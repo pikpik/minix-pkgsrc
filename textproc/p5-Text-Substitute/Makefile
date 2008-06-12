@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/07/13 18:01:42 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:33 jlam Exp $
 
 DISTNAME=		Text-Substitute-0.15
 PKGNAME=		p5-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.mono.org/abs/tools/Text-Substitute/
 MAINTAINER=		abs@NetBSD.org
 HOMEPAGE=		http://www.mono.org/abs/tools/Text-Substitute/
 COMMENT=		Perl5 module for text substitution from hashes
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Substitute/.packlist
 

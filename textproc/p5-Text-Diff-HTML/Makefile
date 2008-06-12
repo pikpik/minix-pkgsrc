@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:11:04 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/03/04 21:30:49 jlam Exp $
 
 DISTNAME=	Text-Diff-HTML-0.04
 PKGNAME=	p5-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DW/DWHEELER/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	HTML formatting class for Text::Diff
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Text-Diff>=0.11:../../textproc/p5-Text-Diff
 DEPENDS+=	p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser

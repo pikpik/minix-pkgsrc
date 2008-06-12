@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/08/06 06:19:31 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/03/04 21:30:37 jlam Exp $
 #
 
 DISTNAME=		SHA-1.2
@@ -10,6 +10,8 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=SHA/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Perl5 interface to the SHA1 algorithm
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/SHA/.packlist
 

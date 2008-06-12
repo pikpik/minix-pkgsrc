@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/09/01 12:00:42 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.13 2008/02/01 02:34:21 dmcmahill Exp $
 
 DISTNAME=		geda-gattrib-${PKGVERSION}
 PKGNAME=		gattrib-${PKGVERSION}
@@ -7,6 +7,8 @@ CATEGORIES=		cad
 MAINTAINER=		wulf@NetBSD.org
 HOMEPAGE=		http://www.geda.seul.org/
 COMMENT=		Attribute editor for gEDA
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../cad/geda/Makefile.common"
 

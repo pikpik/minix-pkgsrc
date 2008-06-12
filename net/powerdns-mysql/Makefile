@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2006/08/13 09:38:42 ghen Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/04 20:05:12 jmmv Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../net/powerdns/Makefile.backend"
 

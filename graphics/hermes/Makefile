@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/02/05 23:09:33 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/01/19 09:16:24 wiz Exp $
 
 DISTNAME=		Hermes-1.3.3
 PKGREVISION=		2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.clanlib.org/hermes/
 COMMENT=		Library for conversion of pixel graphics
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Hermes-1.3.3
 USE_LIBTOOL=		yes

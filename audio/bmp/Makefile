@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2008/03/06 14:53:47 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/04/12 22:42:57 jlam Exp $
 #
 
 BMP_ENABLE_ENCODERS=	yes
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 

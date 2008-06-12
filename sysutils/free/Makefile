@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/01/07 09:14:11 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2007/09/07 22:12:23 jlam Exp $
 #
 
 DISTNAME=		free-1.0
@@ -9,6 +9,7 @@ DISTFILES=		# empty
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Displays memory usage
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	IPV6_READY
 

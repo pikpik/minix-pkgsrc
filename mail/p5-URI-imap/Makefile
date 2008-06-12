@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 19:26:42 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2007/10/11 15:49:56 tv Exp $
 #
 
 DISTNAME=	URI-imap-1.01
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=URI/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Perl5 module for support of "imap" URI scheme objects
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-URI>=0:../../www/p5-URI
 

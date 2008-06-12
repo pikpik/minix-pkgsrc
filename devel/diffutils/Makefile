@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/07/20 17:09:14 minskim Exp $
+# $NetBSD: Makefile,v 1.20 2006/07/23 12:47:21 joerg Exp $
 #
 
 DISTNAME=		diffutils-2.8.1
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.gnu.org/software/diffutils/diffutils.html
 COMMENT=		GNU diff utilities - find the differences between files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 INFO_FILES=		# PLIST

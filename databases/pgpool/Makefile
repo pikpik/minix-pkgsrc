@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/01/15 17:09:50 minskim Exp $
+# $NetBSD: Makefile,v 1.8 2007/03/24 19:21:20 joerg Exp $
 
 DISTNAME=	pgpool-2.7
 CATEGORIES=	databases
@@ -7,6 +7,8 @@ MASTER_SITES=	http://pgfoundry.org/frs/download.php/572/
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://pgpool.projects.postgresql.org/
 COMMENT=	Connection pooling/replication server for PostgreSQL
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 
@@ -18,6 +20,6 @@ CONF_FILES=	${PREFIX}/share/examples/pgpool.conf.sample		\
 		${PKG_SYSCONFDIR}/pgpool.conf
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/pgpool.conf.sample ${PREFIX}/share/examples
+	${INSTALL_DATA} ${WRKSRC}/pgpool.conf.sample ${DESTDIR}${PREFIX}/share/examples
 
 .include "../../mk/bsd.pkg.mk"

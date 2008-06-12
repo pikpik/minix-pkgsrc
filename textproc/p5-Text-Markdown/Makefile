@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/04/16 09:28:04 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/01 04:22:55 schmonz Exp $
 #
 
 DISTNAME=	Text-Markdown-1.0.19
@@ -9,6 +9,8 @@ MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/B/BO/BOBTFISH/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-Markdown/
 COMMENT=	Convert Markdown to HTML
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Test-Exception-[0-9]*:../../devel/p5-Test-Exception
 DEPENDS+=	p5-List-MoreUtils-[0-9]*:../../devel/p5-List-MoreUtils

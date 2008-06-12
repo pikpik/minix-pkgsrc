@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/03/04 21:30:10 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2007/01/07 09:14:00 rillig Exp $
 
 DISTNAME=		ls
 PKGNAME=		colorls-2.2
@@ -10,6 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Ls that can use color to display file attributes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 

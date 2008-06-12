@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/05/19 07:32:29 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2006/06/12 16:28:13 wiz Exp $
 #
 
 DISTNAME=		paragui-1.0.4
@@ -9,6 +9,8 @@ MASTER_SITES=		http://savannah.nongnu.org/download/paragui/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.paragui.org/
 COMMENT=		Cross-platform high-level application framework and GUI library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++

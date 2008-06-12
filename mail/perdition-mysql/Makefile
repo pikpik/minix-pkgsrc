@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:09:57 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/09/04 21:08:53 joerg Exp $
 #
 
 PKGREVISION=		2
 
 PERDITION_COMMENT=	MySQL user database module
 PERDITION_PKGNAME=	mysql
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	bash:run
 REPLACE_BASH+=	perdition/db/mysql/perditiondb_mysql_makedb

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/12/22 00:18:08 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/04/25 20:39:09 joerg Exp $
 
 DISTNAME=	urwid-0.9.8.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=	http://excess.org/urwid/
 MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://excess.org/urwid/
 COMMENT=	Curses-based Python user interface library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-curses-[0-9]*:../../devel/py-curses
 

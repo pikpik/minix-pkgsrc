@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2001/02/01 04:34:23 jtb Exp $
 
 --- metagens/Makefile.orig	Mon Dec 11 17:56:42 1995
 +++ metagens/Makefile
@@ -16,7 +16,7 @@ $NetBSD$
  	$(CC) $(CFLAGS) -c pgc.c; mv pgc.o libpgc.a
 +
 +install :
-+	${BSD_INSTALL_DATA} libpgc.a ${PREFIX}/lib
++	${BSD_INSTALL_DATA} libpgc.a ${DESTDIR}${PREFIX}/lib
 +
  clean :
  	rm -f libpgc.a *.bak *~

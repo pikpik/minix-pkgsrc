@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/09/23 22:12:15 schwarz Exp $
+# $NetBSD: Makefile,v 1.10 2007/02/22 19:27:17 wiz Exp $
 #
 
 DISTNAME=	phoon_01apr1995
@@ -10,6 +10,8 @@ MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://www.acme.com/software/phoon/
 COMMENT=	Show phase of the moon on ASCII terminal
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/phoon
 
 .include "../../mk/bsd.prefs.mk"
@@ -18,5 +20,7 @@ WRKSRC=		${WRKDIR}/phoon
 .if ${OPSYS} == "Interix" || ${OPSYS} == "SunOS" || ${OPSYS} == "IRIX"
 MAKE_FLAGS+=	DEFINES=-DSYSV
 .endif
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

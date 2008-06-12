@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2006/06/02 18:27:58 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2006/06/04 16:26:55 joerg Exp $
 
 MODNAME=		mhash
 CATEGORIES+=		security
 COMMENT=		PHP extension for the mhash hash algorithms library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-mhash-[0-9]*
 

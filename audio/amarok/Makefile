@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2008/01/18 05:06:19 tnn Exp $
+# $NetBSD: Makefile,v 1.65 2008/04/23 18:23:33 wiz Exp $
 
 DISTNAME=		amarok-${VERSION}
 VERSION=		1.4.9.1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://amarok.kde.org/
 COMMENT=		KDE audio player
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
 
