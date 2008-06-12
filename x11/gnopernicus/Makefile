@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.53 2007/09/21 13:04:30 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2008/03/06 14:53:56 wiz Exp $
 #
 
 DISTNAME=		gnopernicus-1.1.1
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnopernicus/1.1/}
 EXTRACT_SUFX=		.tar.bz2
@@ -22,6 +22,7 @@ CONFIGURE_ARGS+=	--with-sysconfsubdir=
 PKG_SYSCONFSUBDIR=	gnopernicus
 OWN_DIRS+=		${PKG_SYSCONFDIR}/translation_tables
 EGDIR=			${PREFIX}/share/examples/gnopernicus
+REPLACE_SH+=		gnopi/gnopernicus-mag-config
 
 CONF_FILES=		${EGDIR}/translation_tables/de.a2b \
 			${PKG_SYSCONFDIR}/translation_tables/de.a2b
