@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.425 2008/04/22 20:25:00 xtraeme Exp $
+# $NetBSD: Makefile,v 1.426 2008/04/25 16:17:35 kefren Exp $
 #
 
 COMMENT=	System utilities
@@ -323,6 +323,7 @@ SUBDIR+=	wbm-telnet
 SUBDIR+=	wbm-time
 SUBDIR+=	wbm-tunnel
 SUBDIR+=	wbm-useradmin
+SUBDIR+=	wbm-virtual-server
 SUBDIR+=	webmin
 SUBDIR+=	whowatch
 SUBDIR+=	wipe
