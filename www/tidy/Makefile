@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2008/06/08 00:15:49 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2008/06/12 11:52:37 gdt Exp $
 #
 
 DISTNAME=	tidy-20080423
@@ -13,7 +13,7 @@ COMMENT=	Fixes and tidies up HTML files
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	libxslt>=1.1.0:../../textproc/libxslt
-BUILD_DEPENDS+=	doxygen>=1.0:../../devel/doxygen
+BUILD_DEPENDS+=	doxygen>=1.5.6:../../devel/doxygen
 
 WRKSRC=		${WRKDIR}/tidy
 GNU_CONFIGURE=	yes
