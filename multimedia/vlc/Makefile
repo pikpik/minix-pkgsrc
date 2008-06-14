@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/04/20 15:31:02 tonnerre Exp $
+# $NetBSD: Makefile,v 1.53 2008/05/24 10:29:40 wiz Exp $
 #
 
 DISTNAME=		vlc-${VLC_VER}
@@ -83,10 +83,14 @@ SUBST_SED.fnt=		-e "s,${ORIGFNT},${DEFAULT_FONT},"
 SUBST_FILES.fnt=	modules/misc/freetype.c
 SUBST_MESSAGE.fnt=	Fixing hardcoded paths.
 
-PLIST_VARS+=		cdda vcd
+PLIST_VARS+=		cdda vcd fb
 .if ${OPSYS} != "NetBSD"
 PLIST.cdda=		yes
 PLIST.vcd=		yes
+.endif
+.if ${OPSYS} == "Linux" && exists(/usr/include/linux/fb.h)
+CONFIGURE_ARGS+=	--enable-fb
+PLIST.fb=		yes
 .endif
 
 .if ${X11_TYPE} == "modular"
