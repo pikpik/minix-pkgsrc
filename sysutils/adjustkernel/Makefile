@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/02/22 19:27:10 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:45 joerg Exp $
 
 DISTNAME=	adjustkernel-1.7
 CATEGORIES=	sysutils
@@ -24,7 +24,7 @@ do-extract:
 	${CP} ${FILESDIR}/adjustkernel ${WRKDIR}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/adjustkernel ${PREFIX}/bin
-	${INSTALL_MAN} ${FILESDIR}/adjustkernel.1 ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_SCRIPT} ${WRKDIR}/adjustkernel ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${FILESDIR}/adjustkernel.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
