@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.938 2008/05/29 08:23:51 abs Exp $
+# $NetBSD: Makefile,v 1.939 2008/05/30 12:10:51 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -353,6 +353,7 @@ SUBDIR+=	monodevelop
 SUBDIR+=	monotone
 SUBDIR+=	monotone-server
 SUBDIR+=	monotone-viz
+SUBDIR+=	mowgli
 SUBDIR+=	mph
 SUBDIR+=	nana
 SUBDIR+=	nasm
