@@ -1,9 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2008/01/05 11:10:18 rillig Exp $
+# $NetBSD: Makefile,v 1.25 2008/05/26 10:50:17 wiz Exp $
 
-.include "Makefile.common"
+.include "../../devel/scmgit/Makefile.version"
 
+DISTNAME=	# empty
 PKGNAME=	scmgit-${GIT_VERSION}
-CATEGORIES+=	meta-pkgs
+CATEGORIES+=	meta-pkgs devel
+DISTFILES=	# empty
+MASTER_SITES=	http://www.kernel.org/pub/software/scm/git/
 
 MAINTAINER=	bjs@NetBSD.org
 COMMENT=	GIT version control suite meta-package
