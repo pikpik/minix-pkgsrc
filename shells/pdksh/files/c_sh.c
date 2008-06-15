@@ -1,14 +1,8 @@
-/*	$NetBSD: c_sh.c,v 1.12 2006/04/01 23:39:58 christos Exp $	*/
+/*	$NetBSD: c_sh.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * built-in Bourne commands
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: c_sh.c,v 1.12 2006/04/01 23:39:58 christos Exp $");
-#endif
-
 
 #include "sh.h"
 #include "ksh_stat.h" 	/* umask() */

@@ -1,4 +1,4 @@
-/*	$NetBSD: jobs.c,v 1.9 2006/02/25 00:58:34 wiz Exp $	*/
+/*	$NetBSD: jobs.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * Process and job control
@@ -23,12 +23,6 @@
  *	  process groups
  *	- NEED_PGRP_SYNC defined iff JOBS is defined - see comment below
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: jobs.c,v 1.9 2006/02/25 00:58:34 wiz Exp $");
-#endif
-
 
 #include "sh.h"
 #include "ksh_stat.h"

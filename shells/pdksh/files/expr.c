@@ -1,4 +1,4 @@
-/*	$NetBSD: expr.c,v 1.8 2005/06/26 19:09:00 christos Exp $	*/
+/*	$NetBSD: expr.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * Korn expression evaluation
@@ -6,12 +6,6 @@
 /*
  * todo: better error handling: if in builtin, should be builtin error, etc.
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: expr.c,v 1.8 2005/06/26 19:09:00 christos Exp $");
-#endif
-
 
 #include "sh.h"
 #include <ctype.h>

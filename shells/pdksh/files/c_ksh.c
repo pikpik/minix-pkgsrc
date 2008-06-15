@@ -1,13 +1,8 @@
-/*	$NetBSD: c_ksh.c,v 1.15 2006/04/24 20:00:31 christos Exp $	*/
+/*	$NetBSD: c_ksh.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * built-in Korn commands: c_*
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: c_ksh.c,v 1.15 2006/04/24 20:00:31 christos Exp $");
-#endif
 
 #include "sh.h"
 #include "ksh_stat.h"

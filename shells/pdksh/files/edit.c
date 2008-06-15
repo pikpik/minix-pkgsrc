@@ -1,15 +1,9 @@
-/*	$NetBSD: edit.c,v 1.21 2007/01/28 20:20:25 cbiere Exp $	*/
+/*	$NetBSD: edit.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * Command line editing - common code
  *
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: edit.c,v 1.21 2007/01/28 20:20:25 cbiere Exp $");
-#endif
-
 
 #include "config.h"
 #ifdef EDIT

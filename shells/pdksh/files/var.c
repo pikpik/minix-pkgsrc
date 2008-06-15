@@ -1,11 +1,4 @@
-/*	$NetBSD: var.c,v 1.14 2006/03/29 15:51:00 christos Exp $	*/
-
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: var.c,v 1.14 2006/03/29 15:51:00 christos Exp $");
-#endif
-
+/*	$NetBSD: var.c,v 1.2 2008/05/31 16:47:37 tnn Exp $	*/
 
 #include "sh.h"
 #include "ksh_time.h"

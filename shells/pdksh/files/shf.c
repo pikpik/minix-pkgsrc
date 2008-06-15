@@ -1,14 +1,8 @@
-/*	$NetBSD: shf.c,v 1.7 2005/06/26 19:09:00 christos Exp $	*/
+/*	$NetBSD: shf.c,v 1.2 2008/05/31 16:47:37 tnn Exp $	*/
 
 /*
  *  Shell file I/O routines
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: shf.c,v 1.7 2005/06/26 19:09:00 christos Exp $");
-#endif
-
 
 #include "sh.h"
 #include "ksh_stat.h"

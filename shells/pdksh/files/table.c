@@ -1,14 +1,8 @@
-/*	$NetBSD: table.c,v 1.4 2003/06/23 11:39:04 agc Exp $	*/
+/*	$NetBSD: table.c,v 1.2 2008/05/31 16:47:37 tnn Exp $	*/
 
 /*
  * dynamic hashed associative table for commands and variables
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: table.c,v 1.4 2003/06/23 11:39:04 agc Exp $");
-#endif
-
 
 #include "sh.h"
 

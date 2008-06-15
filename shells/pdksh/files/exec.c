@@ -1,14 +1,8 @@
-/*	$NetBSD: exec.c,v 1.13 2006/04/24 19:58:20 christos Exp $	*/
+/*	$NetBSD: exec.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * execute command tree
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: exec.c,v 1.13 2006/04/24 19:58:20 christos Exp $");
-#endif
-
 
 #include "sh.h"
 #include "c_test.h"

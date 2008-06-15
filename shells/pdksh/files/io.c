@@ -1,14 +1,8 @@
-/*	$NetBSD: io.c,v 1.9 2005/06/26 19:09:00 christos Exp $	*/
+/*	$NetBSD: io.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * shell buffered IO and formatted output
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: io.c,v 1.9 2005/06/26 19:09:00 christos Exp $");
-#endif
-
 
 #include <ctype.h>
 #include "sh.h"

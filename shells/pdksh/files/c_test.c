@@ -1,4 +1,4 @@
-/*	$NetBSD: c_test.c,v 1.6 2005/06/26 19:09:00 christos Exp $	*/
+/*	$NetBSD: c_test.c,v 1.2 2008/05/31 16:47:36 tnn Exp $	*/
 
 /*
  * test(1); version 7-like  --  author Erik Baalbergen
@@ -8,12 +8,6 @@
  * modified by Michael Rendell to add Korn's [[ .. ]] expressions.
  * modified by J.T. Conklin to add POSIX compatibility.
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: c_test.c,v 1.6 2005/06/26 19:09:00 christos Exp $");
-#endif
-
 
 #include "sh.h"
 #include "ksh_stat.h"

@@ -1,14 +1,8 @@
-/*	$NetBSD: version.c,v 1.5 2005/06/26 19:09:00 christos Exp $	*/
+/*	$NetBSD: version.c,v 1.2 2008/05/31 16:47:37 tnn Exp $	*/
 
 /*
  * value of $KSH_VERSION (or $SH_VERSION)
  */
-#include <sys/cdefs.h>
-
-#ifndef lint
-__RCSID("$NetBSD: version.c,v 1.5 2005/06/26 19:09:00 christos Exp $");
-#endif
-
 
 #include "sh.h"
 
