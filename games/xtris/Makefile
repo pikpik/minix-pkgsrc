@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/02/02 01:06:57 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=	xtris-1.15
@@ -17,12 +17,12 @@ USE_X11BASE=	yes
 LIBS.SunOS+=	-lsocket -lnsl
 MAKE_ENV+=	LIBS=${LIBS:Q}
 
-.include "options.mk"
-
 SETGIDGAME=	yes
 SPECIAL_PERMS+=	bin/xtris ${SETGID_GAMES_PERMS}
 SPECIAL_PERMS+=	bin/xtbot ${SETGID_GAMES_PERMS}
 SPECIAL_PERMS+=	bin/xtserv ${SETGID_GAMES_PERMS}
+
+.include "options.mk"
 
 INSTALLATION_DIRS=	bin ${PREFIX}/${PKGMANDIR}/man6
 
