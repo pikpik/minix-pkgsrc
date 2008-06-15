@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2007/10/25 22:00:52 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2007/12/19 12:27:28 rillig Exp $
+
+META_PACKAGE=	yes
 
 .include	"../../meta-pkgs/gnuradio/Makefile.version"
 
@@ -32,7 +34,5 @@ DEPENDS+=	gnuradio-trellis-${VERSION}{,nb[0-9]*}:../../ham/gnuradio-trellis
 DEPENDS+=	gnuradio-radio-astronomy-${VERSION}{,nb[0-9]*}:../../ham/gnuradio-radio-astronomy
 .endif
 DEPENDS+=	gnuradio-howto-${VERSION}{,nb[0-9]*}:../../ham/gnuradio-howto
-
-META_PACKAGE=	yes
 
 .include "../../mk/bsd.pkg.mk"

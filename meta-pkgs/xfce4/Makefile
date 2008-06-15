@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.30 2007/12/19 12:27:31 rillig Exp $
+# $NetBSD: Makefile,v 1.31 2008/01/18 05:08:32 tnn Exp $
+
+META_PACKAGE=	yes
 
 .include "Makefile.common"
 
@@ -6,8 +8,6 @@ DISTNAME=	xfce4-${XFCE4_VERSION}
 PKGREVISION=	1
 CATEGORIES=	meta-pkgs
 COMMENT=	Xfce
-
-META_PACKAGE=	yes
 
 .include "../../audio/xfce4-mixer/buildlink3.mk"
 .include "../../editors/xfce4-mousepad/buildlink3.mk"
