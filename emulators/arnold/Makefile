@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/05/25 13:16:11 dillo Exp $
+# $NetBSD: Makefile,v 1.20 2008/05/25 21:42:21 joerg Exp $
 #
 
 DISTNAME=		arnsrc27012002
@@ -33,6 +33,9 @@ USE_TOOLS+=		pax
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/arnold ${DESTDIR}${PREFIX}/bin
 	cd ${WRKSRC}/roms && pax -wr * ${DESTDIR}${SHAREDIR}/roms/
+	cd ${DESTDIR}${SHAREDIR}/roms && \
+		${FIND} . -type f -print | ${XARGS} ${CHMOD} ${SHAREMODE} && \
+		${FIND} . -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
 	cd ${WRKSRC} && ${INSTALL_DATA} readme.* \
 		${DESTDIR}${PREFIX}/share/doc/arnold
 
