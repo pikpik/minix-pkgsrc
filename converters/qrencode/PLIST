@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/qrencode
+include/qrencode.h
+lib/libqrencode.la
+lib/pkgconfig/libqrencode.pc
+man/man1/qrencode.1

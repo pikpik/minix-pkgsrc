@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2008/04/17 12:39:36 reed Exp $
+# $NetBSD: Makefile,v 1.94 2008/06/11 14:18:15 taca Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -57,6 +57,7 @@ SUBDIR+=	py-cjkcodecs
 SUBDIR+=	py-jpCodecs
 SUBDIR+=	py-zhCodecs
 SUBDIR+=	qkc
+SUBDIR+=	qrencode
 SUBDIR+=	recode
 SUBDIR+=	rpm2cpio
 SUBDIR+=	rss2html
