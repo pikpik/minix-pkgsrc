@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/01/07 09:14:08 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:42 joerg Exp $
 #
 
 DISTNAME=	binpatch-1.0
@@ -27,7 +27,7 @@ do-build:
 	  ${CC} -o binpatch binpatch.c )
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/binpatch ${PREFIX}/bin/binpatch
-	${INSTALL_MAN} ${WRKSRC}/binpatch.1 ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_PROGRAM} ${WRKSRC}/binpatch ${DESTDIR}${PREFIX}/bin/binpatch
+	${INSTALL_MAN} ${WRKSRC}/binpatch.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
