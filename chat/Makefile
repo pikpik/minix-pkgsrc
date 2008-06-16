@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.136 2008/03/08 19:01:19 reed Exp $
+# $NetBSD: Makefile,v 1.137 2008/03/10 08:59:10 martti Exp $
 #
 
 COMMENT=	Communication programs
@@ -6,6 +6,7 @@ COMMENT=	Communication programs
 SUBDIR+=	aim
 SUBDIR+=	amsn
 SUBDIR+=	anope
+SUBDIR+=	atheme
 SUBDIR+=	bitchbot
 SUBDIR+=	bitchx
 SUBDIR+=	bitlbee
