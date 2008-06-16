@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:30:31 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2006/10/04 21:56:34 wiz Exp $
 #
 
 DISTNAME=	stylewriter
@@ -15,6 +15,8 @@ DEPENDS+=	enscript>=1.6.3nb1:../../print/enscript
 
 USE_TOOLS+=	gs:run
 NO_CONFIGURE=	yes
+
+INSTALLATION_DIRS=	sbin
 
 PLIST_SRC=	${WRKDIR}/PLIST
 FILTER_DIR=	libexec/stylewriter
