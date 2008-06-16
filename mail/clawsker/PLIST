@@ -1,4 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2008/01/24 03:00:28 smb Exp $
 bin/clawsker
 share/locale/es/LC_MESSAGES/clawsker.mo
+share/locale/sr/LC_MESSAGES/clawsker.mo
+share/locale/sr@latin/LC_MESSAGES/clawsker.mo
 man/man1/clawsker.1
