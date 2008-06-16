@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/08/23 18:20:33 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/04 19:32:30 jlam Exp $
 
 PKGNAME=	libflashsupport-1.0.2098
 DISTNAME=	libflashsupport-1-0-2098-i586
@@ -24,7 +24,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}
 BUILD_DIRS=		# empty
 
-INSTALLATION_DIRS=	share/doc
+INSTALLATION_DIRS=	share/doc ${EMULSUBDIR}/usr/lib
 
 do-install:
 	${INSTALL_LIB} ${WRKDIR}/libflashsupport.so \
