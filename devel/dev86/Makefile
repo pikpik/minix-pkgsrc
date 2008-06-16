@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/11/05 20:44:04 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/08 00:13:42 reed Exp $
 #
 
 DISTNAME=	dev86-0.16.17
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://homepage.ntlworld.com/robert.debath/dev86/
 DISTFILES=	Dev86src-0.16.17.tar.gz
