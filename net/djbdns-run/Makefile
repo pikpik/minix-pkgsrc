@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/10 22:59:26 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2008/06/12 02:14:39 joerg Exp $
 #
 
 DISTNAME=		djbdns-run-20050415
@@ -35,7 +35,7 @@ PKG_USERS+=		tinydns:djbdns
 RCD_SCRIPTS=		axfrdns djbdns dnscache rbldns tinydns
 FILES_SUBST+=		PKGNAME=${PKGNAME:Q}
 
-INSTALLATION_DIRS=	bin share/doc/djbdns-run
+INSTALLATION_DIRS=	share/doc/djbdns-run
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -53,6 +53,6 @@ MAKEVARS+=	PKG_SYSCONFDIR.djbdns-run
 .endif
 
 do-install:
-	${INSTALL_DATA} ${FILESDIR}/README.pkgsrc ${PREFIX}/share/doc/djbdns-run
+	${INSTALL_DATA} ${FILESDIR}/README.pkgsrc ${DESTDIR}${PREFIX}/share/doc/djbdns-run
 
 .include "../../mk/bsd.pkg.mk"
