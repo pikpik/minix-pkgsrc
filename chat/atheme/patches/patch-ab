@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2008-02-11 02:58:20.000000000 +0000
++++ configure
+@@ -7026,7 +7026,7 @@ if test "${enable_fhs_paths+set}" = set;
+     MODDIR='${libdir}/atheme'
+     SHAREDIR='${datadir}/atheme'
+     LOGDIR='${localstatedir}/log/atheme'
+-    DATADIR='${localstatedir}/lib/atheme'
++    DATADIR='${localstatedir}/atheme'
+     RUNDIR='${localstatedir}/run/atheme'
+     ;;
+   no)
