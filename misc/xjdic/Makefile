@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/12/02 11:24:35 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/04 19:21:12 jlam Exp $
 #
 
 DISTNAME=	xjdic24
@@ -53,8 +53,8 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/xjdic.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 	${LN} -s ../edict/edict ${DESTDIR}${PREFIX}/share/xjdic/edict
 	${LN} -s ../kanjidic/kanjidic ${DESTDIR}${PREFIX}/share/xjdic/kanjidic
-	${PREFIX}/bin/xjdxgen ${DESTDIR}${PREFIX}/share/xjdic/edict
-	${PREFIX}/bin/xjdxgen ${DESTDIR}${PREFIX}/share/xjdic/kanjidic
+	${DESTDIR}${PREFIX}/bin/xjdxgen ${DESTDIR}${PREFIX}/share/xjdic/edict
+	${DESTDIR}${PREFIX}/bin/xjdxgen ${DESTDIR}${PREFIX}/share/xjdic/kanjidic
 	${SED} \
 		-e 's,/home/jwb/nihongo/dics,${PREFIX}/share/xjdic,' \
 		-e '/^kdicfile/s/kanjidic_b/kanjidic/' \
