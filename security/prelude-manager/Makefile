@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/03/03 15:15:32 shannonjr Exp $
+# $NetBSD: Makefile,v 1.25 2008/03/06 14:53:54 wiz Exp $
 #
 
 DISTNAME=		prelude-manager-0.9.11
@@ -26,6 +26,8 @@ PRELUDE_MANAGER_PID_DIR=	${VARBASE}/run/prelude-manager
 PRELUDE_USER?=		_prelude
 PRELUDE_GROUP?=		_prelude
 PRELUDE_HOME?=		${VARBASE}/spool/prelude-manager
+
+INSTALLATION_DIRS=	sbin
 
 PKG_GROUPS_VARS+=	PRELUDE_GROUP
 PKG_USERS_VARS+=	PRELUDE_USER
