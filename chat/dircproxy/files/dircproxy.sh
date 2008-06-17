@@ -1,6 +1,6 @@
 #!@SH@
 #
-# $NetBSD: dircproxy.sh,v 1.1 2003/06/02 15:20:08 jmmv Exp $
+# $NetBSD: dircproxy.sh,v 1.1.1.1 2005/04/03 14:18:02 adrianp Exp $
 #
 
 # PROVIDE: dircproxy
