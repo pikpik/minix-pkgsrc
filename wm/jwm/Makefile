@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2007/02/22 19:27:18 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/01/17 02:21:09 obache Exp $
 #
 
-DISTNAME=		jwm-1.8
+DISTNAME=		jwm-2.0.1
 CATEGORIES=		wm x11
-MASTER_SITES=		http://www.joewing.net/programs/jwm/ \
+MASTER_SITES=		http://www.joewing.net/programs/jwm/releases/ \
 			${MASTER_SITE_SOURCEFORGE:=jwm/}
 EXTRACT_SUFX=		.tar.bz2
 
