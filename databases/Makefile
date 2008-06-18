@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.247 2008/05/25 08:05:38 adam Exp $
+# $NetBSD: Makefile,v 1.248 2008/06/03 11:04:57 ghen Exp $
 #
 
 COMMENT=	Databases
@@ -23,6 +23,7 @@ SUBDIR+=	gourmet
 SUBDIR+=	gq
 SUBDIR+=	gramps
 SUBDIR+=	gramps2
+SUBDIR+=	gramps3
 SUBDIR+=	gtksql
 SUBDIR+=	guile-pg
 SUBDIR+=	iodbc
