@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/06 23:04:42 seb Exp $
 
 DISTNAME=	ruby-debug-ide-0.1.10
 PKGNAME=	${RUBYGEM_PKGPREFIX}-${DISTNAME}
-#PKGREVISION=	1
 CATEGORIES=	devel
+
+PATCH_ARGS+=	-d ${WRKDIR} --forward --quiet -E ${PATCH_STRIP}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://debug-commons.rubyforge.org/
