@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/libsvnjavahl-1.la
+lib/svn-javahl/svn-javahl.jar
+@exec ${MKDIR} %D/lib/svn-javahl/include
+@dirrm lib/svn-javahl/include
+@dirrm lib/svn-javahl
