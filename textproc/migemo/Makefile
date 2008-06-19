@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/02/10 13:08:51 obache Exp $
 
 .include "../../textproc/migemo/Makefile.common"
 
@@ -13,7 +13,7 @@ DEPENDS+=		${RUBY_PKGPREFIX}-romkan-*:../../converters/ruby-romkan
 
 USE_TOOLS+=		autoconf213 automake14 aclocal
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-rubydir=${RUBY_SITELIBDIR}
+CONFIGURE_ARGS+=	--with-rubydir=${PREFIX}/${RUBY_VENDORLIB}
 
 REPLACE_RUBY=		migemo migemo-client migemo-grep migemo-server
 
