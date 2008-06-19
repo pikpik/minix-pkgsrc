@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.939 2008/05/30 12:10:51 abs Exp $
+# $NetBSD: Makefile,v 1.940 2008/06/14 17:29:55 adrianp Exp $
 #
 
 COMMENT=	Development utilities
@@ -235,6 +235,7 @@ SUBDIR+=	its4
 SUBDIR+=	jam
 SUBDIR+=	javacc
 SUBDIR+=	javadeps
+SUBDIR+=	java-subversion
 SUBDIR+=	jflex
 SUBDIR+=	jgrasp
 SUBDIR+=	js2-mode
