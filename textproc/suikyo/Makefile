@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/02 02:38:57 obache Exp $
 #
 
 .include "Makefile.common"
@@ -16,7 +16,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-suikyo>=${SUIKYO_VER}:../../textproc/ruby-suikyo
 PKGCONFIG_OVERRIDE+=	suikyo.pc.in
 
 CONFIGURE_ARGS+=	--with-emacs-sitelispdir=${EMACS_LISPPREFIX}
-CONFIGURE_ARGS+=	--with-rubydir=${RUBY_SITELIBDIR}
+CONFIGURE_ARGS+=	--with-rubydir=${PREFIX}/${RUBY_VENDORLIB}
 
 INSTALL_TARGET=		install-pkgconfigDATA
 
