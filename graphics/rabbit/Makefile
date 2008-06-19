@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2008/03/18 06:14:31 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/31 15:26:34 jlam Exp $
 #
 
 DISTNAME=	rabbit-0.5.5
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www.cozmixng.org/~kou/download/
 
@@ -20,11 +20,14 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rttool>=1.0.2:../../textproc/ruby-rttool
 USE_RUBY_SETUP=	yes
 REPLACE_RUBY=	bin/rabbit bin/rabbit-theme-manager bin/rabrick
 
+CONFIGURE_ARGS+=	--siteruby=${PREFIX}/${RUBY_VENDORLIB_BASE} \
+			--siterubyver=${PREFIX}/${RUBY_VENDORLIB} \
+			--siterubyverarch=${PREFIX}/${RUBY_VENDORARCHLIB}
 pre-configure:
 	rm -rf ${WRKSRC}/lib/rt
 
 post-install:
-	rm ${DESTDIR}${PREFIX}/bin/rabbit.bat
+	rm -f ${DESTDIR}${PREFIX}/bin/rabbit.bat
 
 do-test:
 	cd ${WRKSRC} && ${RUBY} test/run-test.rb
