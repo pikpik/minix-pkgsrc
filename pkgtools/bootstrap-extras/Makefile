@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/04/12 22:43:09 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/19 18:12:18 joerg Exp $
 
 DISTNAME=	bootstrap-extra-files-20070702
 CATEGORIES=	pkgtools
@@ -9,6 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Extra bootstrap files and scripts for ${OPSYS}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+BOOTSTRAP_PKG=	yes
 
 NO_CHECKSUM=	yes
 NO_MTREE=	yes

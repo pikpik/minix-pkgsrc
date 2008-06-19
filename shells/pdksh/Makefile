@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/05/23 17:27:09 tnn Exp $
+# $NetBSD: Makefile,v 1.16 2008/05/31 16:51:10 tnn Exp $
 #
 
 DISTNAME=	pdksh-5.2.14
@@ -17,6 +17,7 @@ COMMENT=	Free clone of the AT&T Korn shell
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+BOOTSTRAP_PKG=	yes
 
 NO_CHECKSUM=		yes
 GNU_CONFIGURE=		yes

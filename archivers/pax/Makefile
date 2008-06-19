@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/02/07 22:27:53 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2008/03/06 04:45:58 jlam Exp $
 
 DISTNAME=		pax-20080110
 CATEGORIES=		archivers
@@ -10,6 +10,7 @@ HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		POSIX standard archiver with many extensions
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+BOOTSTRAP_PKG=	yes
 
 USE_FEATURES=		nbcompat
 
