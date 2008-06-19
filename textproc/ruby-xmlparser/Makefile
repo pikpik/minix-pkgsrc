@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2008/04/04 15:22:24 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2008/04/06 07:49:55 taca Exp $
 
 DISTNAME=	xmlparser-0.6.81
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	taca@NetBSD.org

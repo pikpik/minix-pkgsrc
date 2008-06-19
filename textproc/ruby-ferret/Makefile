@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/11 17:28:17 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/04 15:21:28 jlam Exp $
 
 DISTNAME=	ferret-0.11.6
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	minskim@NetBSD.org

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2007/06/09 00:58:51 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/04 15:21:39 jlam Exp $
 
 DISTNAME=	hpricot-0.6
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 
 MAINTAINER=	minskim@NetBSD.org
