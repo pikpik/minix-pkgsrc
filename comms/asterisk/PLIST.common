@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.11 2008/04/12 22:42:58 jlam Exp $
+@comment $NetBSD: PLIST.common,v 1.12 2008/06/13 10:10:33 mjl Exp $
 include/asterisk/acl.h
 include/asterisk/adsi.h
 include/asterisk/aes.h
@@ -9,6 +9,7 @@ include/asterisk/ast_expr.h
 include/asterisk/astdb.h
 include/asterisk/astmm.h
 include/asterisk/astobj.h
+include/asterisk/astobj2.h
 include/asterisk/astosp.h
 include/asterisk/build.h
 include/asterisk/callerid.h
