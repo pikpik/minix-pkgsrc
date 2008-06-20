@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/11/07 22:00:45 seb Exp $
+# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:24 jlam Exp $
 #
 
 DISTNAME=	sipcalc-1.1.3
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.routemeister.net/projects/sipcalc/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.routemeister.net/projects/sipcalc/
 COMMENT=	IPv4/IPv6 subnet calculator
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 

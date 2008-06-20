@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/10/12 16:06:48 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2008/03/06 14:53:51 wiz Exp $
 #
 
 DISTNAME=	gmfsk-0.6
@@ -9,6 +9,8 @@ MASTER_SITES=	http://gmfsk.connect.fi/
 MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://gmfsk.connect.fi/
 COMMENT=	Multimode HF terminal program
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake pkg-config

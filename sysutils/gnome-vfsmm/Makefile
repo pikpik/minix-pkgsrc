@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/06 14:53:54 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2008/04/26 01:07:15 wiz Exp $
 
 DISTNAME=	gnome-vfsmm-2.22.0
 CATEGORIES=	sysutils
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://gtkmm.sourceforge.net/
 COMMENT=	C++ bindings for gnome-vfs
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		doxygen-[0-9]*:../../devel/doxygen
 

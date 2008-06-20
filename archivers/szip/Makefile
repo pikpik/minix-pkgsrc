@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/07/06 14:43:27 gdt Exp $
+# $NetBSD: Makefile,v 1.8 2007/06/05 05:59:23 wiz Exp $
 
 DISTNAME=	szip-2.0
 CATEGORIES=	archivers
@@ -9,6 +9,7 @@ HOMEPAGE=	http://hdf.ncsa.uiuc.edu/doc_resource/SZIP/
 COMMENT=	Extended-Rice lossless compression
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 LICENSE=		szip-license
 RESTRICTED=		No permission to redistribute

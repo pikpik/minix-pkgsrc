@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2006/04/18 11:53:04 tron Exp $
+# $NetBSD: Makefile,v 1.20 2007/09/21 13:04:10 wiz Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../net/bittorrent/Makefile.common"
 
@@ -19,12 +21,12 @@ INSTALLATION_DIRS=	bin ${ICONS_DIR} ${ICONS_DIR}/default ${ICONS_DIR}/old
 do-build:	# empty
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/bittorrent ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/maketorrent ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/bittorrent ${DESTDIR}${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/maketorrent ${DESTDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/images/icons/default/* \
-	  ${PREFIX}/${ICONS_DIR}/default
+	  ${DESTDIR}${PREFIX}/${ICONS_DIR}/default
 	${INSTALL_DATA} ${WRKSRC}/images/icons/old/* \
-	  ${PREFIX}/${ICONS_DIR}/old
+	  ${DESTDIR}${PREFIX}/${ICONS_DIR}/old
 
 .include "../../lang/python/application.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"

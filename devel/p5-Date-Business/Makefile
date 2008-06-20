@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/03/21 18:49:32 jwise Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/21 19:44:10 jwise Exp $
 #
 
 DISTNAME=	Date-Business-1.2
@@ -13,6 +13,7 @@ HOMEPAGE=	http://www.cpan.org/
 COMMENT=	Perl5 module for fast calendar and business date calculations
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 LICENSE=	morganstanley-license
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/06/15 20:40:15 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/09/02 20:37:00 rillig Exp $
 
 DISTNAME=	ghostscript-cmaps-20020913
 PKGREVISION=	2
@@ -6,10 +6,12 @@ CATEGORIES=	fonts
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-DEPENDS+=	adobe-cmaps>=20020913:../../fonts/adobe-cmaps
-
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	CMap resources for Ghostscript
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=	adobe-cmaps>=20020913:../../fonts/adobe-cmaps
 
 GHOSTSCRIPT_REQD=	6.53
 

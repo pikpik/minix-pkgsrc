@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:21 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2007/02/06 18:43:27 abs Exp $
 
 DISTNAME=	Heap-0.71
 PKGNAME=	p5-${DISTNAME}
@@ -9,6 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Perl collection of routines for managing a heap data structure
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Heap/.packlist
 

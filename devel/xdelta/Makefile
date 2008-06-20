@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2006/03/31 05:37:09 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2008/01/19 09:16:19 wiz Exp $
 #
 
 DISTNAME=		xdelta-1.1.1
@@ -9,6 +9,8 @@ MASTER_SITES=		ftp://ftp.xcf.berkeley.edu/pub/xdelta/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.xcf.berkeley.edu/~jmacd/xdelta.html
 COMMENT=		Enhanced diff that works on binary files
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake

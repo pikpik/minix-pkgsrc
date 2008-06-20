@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:11:07 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/19 05:45:55 obache Exp $
 #
 
 DISTNAME=	scew-0.3.1
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.nongnu.org/scew/
 COMMENT=	Light-weight DOM-like object model API for Expat
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

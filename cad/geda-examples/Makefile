@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/03/03 01:40:21 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/04/03 13:22:06 joerg Exp $
 #
 
 DISTNAME=	geda-examples-${PKGVERSION}
@@ -10,7 +10,7 @@ COMMENT=	Examples for gEDA
 
 CONFLICTS+=	gEDA<19991011
 
-PKG_DESTDIR_SUPPORT=	destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../cad/geda/Makefile.common"
 

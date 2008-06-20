@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/07/19 22:44:11 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/09/08 18:42:31 wiz Exp $
 #
 
 DISTNAME=	CSS-1.07
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CSS/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/CSS/
 COMMENT=	Object oriented access to Cascading Style Sheets
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Parse-RecDescent-[0-9]*:../../devel/p5-Parse-RecDescent
 

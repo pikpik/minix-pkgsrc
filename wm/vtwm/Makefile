@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/12/15 20:33:02 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/01 21:57:56 joerg Exp $
 #
 
 DISTNAME=	vtwm-5.4.7
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.vtwm.org/downloads/
 MAINTAINER=	mehul.sanghvi@gmail.com
 HOMEPAGE=	http://www.vtwm.org/downloads/
 COMMENT=	TWM with virtual desktop, m4, sound and 3-D buttons
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:11:11 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2006/12/27 13:37:40 joerg Exp $
 
 DISTNAME=	swisswatch-0.06
 PKGREVISION=	2
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	sanpei@yy.cs.keio.ac.jp
 COMMENT=	Swiss railway clock emulation, and a fancy default appearance
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

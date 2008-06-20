@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/04 11:02:24 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/06 14:53:49 wiz Exp $
 #
 
 DISTNAME=	gnome-build-0.2.0
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/devtools/
 COMMENT=	Project management components for GNOME development
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

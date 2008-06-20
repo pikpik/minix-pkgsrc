@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/04/27 06:36:02 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2008/04/29 19:13:04 drochner Exp $
 #
 
 DISTNAME=		grhino-0.16.0
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=rhino/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://rhino.sourceforge.net/
 COMMENT=		Othello (Reversi) engine
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pkg-config msgfmt

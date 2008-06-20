@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/08/02 15:16:51 taca Exp $
+# $NetBSD: Makefile,v 1.26 2008/01/18 05:08:49 tnn Exp $
 
 DISTNAME=		tcpdump-3.9.7
 PKGREVISION=		2
@@ -8,6 +8,8 @@ MASTER_SITES=		http://www.tcpdump.org/release/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.tcpdump.org/
 COMMENT=		Network monitoring tool
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 

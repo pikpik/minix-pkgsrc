@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2007/09/21 13:04:13 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2008/03/06 14:53:53 wiz Exp $
 #
 
 DISTNAME=		tsclient-0.132
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.gnomepro.com/tsclient/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnomepro.com/tsclient/
 COMMENT=		GNOME2 Frontend for rdesktop
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	rdesktop-[0-9]*:../../net/rdesktop
 DEPENDS+=	vncviewer-[0-9]*:../../net/vncviewer

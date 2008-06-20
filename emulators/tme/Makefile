@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/03/17 13:44:17 tsutsui Exp $
+# $NetBSD: Makefile,v 1.15 2007/09/07 14:11:51 tsutsui Exp $
 #
 
 DISTNAME=		tme-0.6
@@ -9,6 +9,8 @@ MASTER_SITES=		http://csail.mit.edu/~fredette/tme/
 MAINTAINER=		skrll@NetBSD.org
 # Please do not assign PR's for this package to skrll.
 # Instead, assign them to the package author, fredette.
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 HOMEPAGE=		http://csail.mit.edu/~fredette/tme/
 COMMENT=		The Machine Emulator

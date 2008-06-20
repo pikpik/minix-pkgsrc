@@ -8,8 +8,8 @@ $NetBSD$
  
 -dictdir=`aspell dump config | grep '^\# dict-dir current: ' | cut -d' ' -f4`
 -datadir=`aspell dump config | grep '^\# data-dir current: ' | cut -d' ' -f4`
-+dictdir=`aspell config dict-dir`
-+datadir=`aspell config data-dir`
++dictdir=${DESTDIR}`aspell config dict-dir`
++datadir=${DESTDIR}`aspell config data-dir`
  
  all: $(sprog) $(sprog).dat $(sprog)_phonet.dat
  

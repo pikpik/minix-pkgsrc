@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/04/30 13:38:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.7 2008/05/15 18:19:27 drochner Exp $
 #
 
 DISTNAME=		glade3-3.4.5
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://glade.gnome.org/
 COMMENT=		User interface builder for the GTK2+ toolkit
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

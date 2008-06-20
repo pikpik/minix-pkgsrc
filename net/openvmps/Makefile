@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/05/31 17:47:45 bouyer Exp $
+# $NetBSD: Makefile,v 1.5 2007/02/22 19:26:57 wiz Exp $
 
 DISTNAME=	vmpsd-1.3
 PKGNAME=	openvmps-1.3
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vmps/}
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://vmps.sourceforge.net/
 COMMENT=	GPL implementation of the VMPS protocol
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/vmpsd
 

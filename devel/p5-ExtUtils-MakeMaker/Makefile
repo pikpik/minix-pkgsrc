@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/04/10 18:24:34 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2007/02/22 19:26:23 wiz Exp $
 #
 
 DISTNAME=	ExtUtils-MakeMaker-6.30
@@ -11,6 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Write a Makefile for an extension module from a Makefile.PL
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/ExtUtils/MakeMaker/.packlist
 

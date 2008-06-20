@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.38 2008/04/13 21:43:39 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2008/04/17 20:24:38 reed Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 COMMENT=	API for access to scanners, digital cameras, frame grabbers etc.

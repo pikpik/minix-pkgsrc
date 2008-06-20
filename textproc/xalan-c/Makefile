@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2006/03/04 21:30:52 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2008/01/24 07:17:33 xtraeme Exp $
 #
 
 DISTNAME=	Xalan-C_1_10_0-src
@@ -10,6 +10,8 @@ MASTER_SITES=	http://archive.apache.org/dist/xml/xalan-c/source/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xml.apache.org/xalan-c/
 COMMENT=	XSLT processor of the Apache Project
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/xml-xalan/c
 USE_TOOLS+=	gmake

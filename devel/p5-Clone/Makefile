@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/06/09 23:29:37 abs Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/23 20:14:42 wiz Exp $
 
 DISTNAME=	Clone-0.28
 PKGNAME=	p5-${DISTNAME}
@@ -10,6 +10,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Clone/
 COMMENT=	Perl module for recursively copying datatypes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Clone/.packlist
 

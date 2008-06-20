@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/12/21 20:35:31 jnemeth Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/03 18:02:22 drochner Exp $
 
 DISTNAME=	gettext-0.14.6
 PKGNAME=	gettext-tools-0.14.6
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_GNU:=gettext/}
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gettext/gettext.html
 COMMENT=	Tools for providing messages in different languages
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.gettext+=	gettext-lib>=0.14.5
 CONFLICTS=		gettext<0.14.5

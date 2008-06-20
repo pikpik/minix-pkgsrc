@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:08:22 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/04/17 13:46:18 wiz Exp $
 #
 
 DISTNAME=	transcalc-0.14
@@ -10,6 +10,8 @@ MASTER_SITES=	http://transcalc.sourceforge.net/
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://transcalc.sourceforge.net/
 COMMENT=	Transmission line analysis/synthesis
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	gmake pkg-config

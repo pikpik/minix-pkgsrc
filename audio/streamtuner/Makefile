@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2007/09/21 13:03:28 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2008/01/18 05:06:21 tnn Exp $
 #
 
 DISTNAME=	streamtuner-0.99.99
@@ -9,6 +9,8 @@ MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Stream directory browser
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	hicolor-icon-theme-[0-9]*:../../graphics/hicolor-icon-theme
 

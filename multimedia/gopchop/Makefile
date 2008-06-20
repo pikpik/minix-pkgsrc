@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/05 05:37:43 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2007/02/22 20:23:08 drochner Exp $
 #
 
 DISTNAME=		gopchop-1.1.7
@@ -10,6 +10,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gopchop/} \
 MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://outflux.net/unix/software/GOPchop/
 COMMENT=		MPEG2 GOP-accurate editor
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

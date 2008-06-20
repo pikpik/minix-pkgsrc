@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2006/11/14 16:58:13 drochner Exp $
+# $NetBSD: Makefile,v 1.35 2007/04/15 10:36:19 wiz Exp $
 #
 
 DISTNAME=		gnome-mime-data-2.18.0
@@ -11,6 +11,7 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		MIME and Application database for GNOME2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		gnome-vfs<=1.0.3
 

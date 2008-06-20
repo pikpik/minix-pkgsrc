@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/03/06 14:53:52 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/04/25 20:39:10 joerg Exp $
 #
 
 DISTNAME=		gstreamer-0.8.11
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gstreamer.net/
 COMMENT=		Open source multimedia framework
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		gstreamer-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/06/02 11:36:50 bad Exp $
+# $NetBSD: Makefile,v 1.26 2007/08/21 09:49:06 bad Exp $
 
 DISTNAME=	SVK-v2.0.2
 PKGNAME=	svk-2.0.2
@@ -10,6 +10,7 @@ HOMEPAGE=	http://svk.elixus.org/
 COMMENT=	Decentralized version control system built on Subversion
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/SVK/.packlist
 

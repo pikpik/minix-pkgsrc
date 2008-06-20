@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2006/03/09 21:04:40 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/04/08 11:44:28 jmmv Exp $
 #
 
 GST_PLUGINS0.10_NAME=	mad
 GST_PLUGINS0.10_DIRS=	ext/mad
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-ugly/Makefile.common"
 

@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/01 14:02:32 ghen Exp $
+# $NetBSD: Makefile,v 1.2 2007/07/29 05:20:02 jlam Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../www/firefox-bin-flash/Makefile.common"
 

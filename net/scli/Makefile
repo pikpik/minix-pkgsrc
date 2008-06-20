@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/04/06 06:22:34 reed Exp $
+# $NetBSD: Makefile,v 1.22 2007/10/29 09:53:13 seb Exp $
 #
 
 DISTNAME=		scli-0.3.1
@@ -9,6 +9,8 @@ MASTER_SITES=		ftp://ftp.ibr.cs.tu-bs.de/local/scli/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ibr.cs.tu-bs.de/projects/scli/
 COMMENT=		SNMP command line interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config gmake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/09/09 02:43:11 obache Exp $
+# $NetBSD: Makefile,v 1.7 2007/12/02 13:04:11 wiz Exp $
 #
 
 DISTNAME=	vttest-20050107
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://invisible-island.net/vttest/vttest.html
 COMMENT=	vt100/vt220/xterm test utility
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 MAKE_FILE=	makefile

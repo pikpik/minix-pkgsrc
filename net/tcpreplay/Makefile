@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/02/18 18:51:55 adrianp Exp $
+# $NetBSD: Makefile,v 1.17 2007/08/20 21:06:15 adrianp Exp $
 
 DISTNAME=	tcpreplay-3.1.1
 CATEGORIES=	net
@@ -7,6 +7,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tcpreplay/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tcpreplay.synfin.net/
 COMMENT=	Replay saved tcpdump or snoop files
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.7.2
 

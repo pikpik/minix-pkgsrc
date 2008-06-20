@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2005/07/13 18:01:45 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2005/08/06 06:19:36 jlam Exp $
 #
 
 DISTNAME=		Apache-Reload-0.07
@@ -12,6 +12,7 @@ MAINTAINER=		hiramatu@boreas.dti.ne.jp
 COMMENT=		Perl5 module to reload changed modules
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Apache/Reload/.packlist
 

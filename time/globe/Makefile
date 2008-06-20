@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2004/01/20 12:27:16 agc Exp $
+# $NetBSD: Makefile,v 1.6 2005/05/03 21:38:14 kristerw Exp $
 #
 
 DISTNAME=	globe_26mar94
@@ -11,6 +11,10 @@ MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://www.acme.com/software/globe/
 COMMENT=	Display the currently-lighted face of Earth in ASCII
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/globe
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

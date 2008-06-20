@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/01 16:53:31 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2007/07/06 19:14:02 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	wavpack
 GST_PLUGINS0.10_DIRS=	ext/wavpack
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-good/Makefile.common"
 

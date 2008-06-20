@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/02/18 18:54:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/08 19:25:32 wiz Exp $
 #
 
 DISTNAME=	scdp-1.0b
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scdp/}
 MAINTAINER=	arved@arved.at
 HOMEPAGE=	http://sourceforge.net/projects/scdp/
 COMMENT=	Program to send Cisco Discovery Protocol packets
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

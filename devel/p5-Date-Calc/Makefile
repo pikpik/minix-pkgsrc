@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/10/04 21:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2007/02/22 19:26:22 wiz Exp $
 #
 
 DISTNAME=	Date-Calc-5.4
@@ -15,6 +15,7 @@ COMMENT=	Perl5 module for Gregorian calendar date calculations
 DEPENDS+=	p5-Bit-Vector-[0-9]*:../../devel/p5-Bit-Vector
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Date/Calc/.packlist
 

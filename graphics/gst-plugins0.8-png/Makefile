@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2006/04/06 06:22:03 reed Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/17 13:46:32 wiz Exp $
 #
 
 GST_PLUGINS0.8_NAME=	png
 GST_PLUGINS0.8_DIR=	ext/libpng
 GST_PLUGINS0.8_FLAG=	pngenc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.8/Makefile.common"
 PKGREVISION=	6

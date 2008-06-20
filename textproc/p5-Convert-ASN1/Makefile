@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/09/10 13:26:20 heinz Exp $
+# $NetBSD: Makefile,v 1.21 2007/05/17 21:09:40 seb Exp $
 #
 
 DISTNAME=		Convert-ASN1-0.21
@@ -12,6 +12,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Convert-ASN1/
 COMMENT=		Perl5 module to encode/decode ASN.1 data
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Convert/ASN1/.packlist

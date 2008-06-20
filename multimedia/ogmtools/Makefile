@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2005/12/05 23:55:13 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2006/02/05 23:10:17 joerg Exp $
 #
 
 DISTNAME=	ogmtools-1.5
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	cube@NetBSD.org
 HOMEPAGE=	http://www.bunkus.org/videotools/ogmtools/
 COMMENT=	Ogg Media files manipulation tools
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES

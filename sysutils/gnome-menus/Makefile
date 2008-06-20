@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2008/04/30 13:38:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.39 2008/05/29 11:08:52 drochner Exp $
 #
 
 DISTNAME=	gnome-menus-2.22.2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Implementation of the desktop menu specification for GNOME
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.2

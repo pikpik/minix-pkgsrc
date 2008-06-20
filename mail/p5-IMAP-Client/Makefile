@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 19:26:42 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2007/10/11 15:49:57 tv Exp $
 #
 
 DISTNAME=	IMAP-Client-0.13
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IMAP/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Perl5 module for IMAP manipulation
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-IO-Socket-SSL>=0:../../security/p5-IO-Socket-SSL
 DEPENDS+=	p5-MIME-Base64>=0:../../converters/p5-MIME-Base64

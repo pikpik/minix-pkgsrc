@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/06/12 16:28:05 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2006/10/04 20:44:19 wiz Exp $
 #
 
 DISTNAME=		tcd-2.2.0
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		roland.illig@gmx.de
 HOMEPAGE=		http://www.nongnu.org/tcd/
 COMMENT=		Audio CD player using ncurses and SDL
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

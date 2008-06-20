@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/12/27 13:37:43 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2008/04/16 05:34:51 obache Exp $
 
 DISTNAME=	xaniroc
 PKGNAME=	xaniroc-1.02
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.src.tar.Z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Animate your root-cursor
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

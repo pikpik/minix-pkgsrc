@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/10/21 13:51:50 obache Exp $
+# $NetBSD: Makefile,v 1.8 2007/11/27 06:55:09 hiramatsu Exp $
 
 DISTNAME=	Class-Factory-1.06
 PKGNAME=	p5-${DISTNAME}
@@ -11,6 +11,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Class-Factory/
 COMMENT=	Base class for dynamic factory classes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Factory/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/04/26 00:36:04 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/30 13:38:17 jmmv Exp $
 #
 
 DISTNAME=		gnome-terminal-2.22.1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Xterm like terminal program for GNOME 2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		gnome-core-[0-9]* gnome2-terminal-[0-9]*
 

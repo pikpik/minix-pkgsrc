@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2006/04/17 14:52:10 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/06/14 11:00:41 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	faad
 GST_PLUGINS0.10_DIRS=	ext/faad
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-bad/Makefile.common"
 

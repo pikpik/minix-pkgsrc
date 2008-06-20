@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2006/12/27 13:37:38 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/09/21 13:03:56 wiz Exp $
 #
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/sablevm-classpath/Makefile.common"
 

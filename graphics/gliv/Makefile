@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/06/11 13:58:22 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2006/11/24 15:44:25 drochner Exp $
 
 DISTNAME=	gliv-1.9.6
 CATEGORIES=	graphics
@@ -9,15 +9,19 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://guichaz.free.fr/gliv/
 COMMENT=	OpenGL image viewer
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt pkg-config
 GNU_CONFIGURE=		yes
 
+INSTALLATION_DIRS=	share/pixmaps share/applications
+
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/gliv.png ${PREFIX}/share/pixmaps
+	${INSTALL_DATA} ${WRKSRC}/gliv.png ${DESTDIR}${PREFIX}/share/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/gliv.desktop \
-		${PREFIX}/share/applications/gnome-gliv.desktop
+		${DESTDIR}${PREFIX}/share/applications/gnome-gliv.desktop
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/gtkglext/buildlink3.mk"

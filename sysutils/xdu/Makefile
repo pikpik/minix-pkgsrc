@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:39 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/12/02 11:41:48 wiz Exp $
 #
 
 DISTNAME=	xdu-3.0
@@ -13,6 +13,8 @@ PATCHFILES+=	xdu-3.0.dirname.patch \
 MAINTAINER=	hubertf@NetBSD.org
 HOMEPAGE=	http://sd.wareonearth.com/~phil/xdu/
 COMMENT=	Display the output of "du" in an X window
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_IMAKE=	yes

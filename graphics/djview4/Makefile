@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/22 21:02:00 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/09 15:36:43 obache Exp $
 #
 
 DISTNAME=	djview4-4.2-2
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 MAINTAINER=	matias@dotbsd.org
 HOMEPAGE=	http://djvu.sourceforge.net/
 COMMENT=	Portable DjVu viewer and browser plugin
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/djview4-4.2
 GNU_CONFIGURE=	yes

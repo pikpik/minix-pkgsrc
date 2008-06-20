@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/02/15 00:30:01 heinz Exp $
 #
 
 DISTNAME=		Class-ErrorHandler-0.01
@@ -12,6 +12,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Class-ErrorHandler/
 COMMENT=		Perl base class for error handling
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 

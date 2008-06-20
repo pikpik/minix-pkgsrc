@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/02/22 19:27:12 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/01/04 08:00:50 obache Exp $
 #
 
 DISTNAME=	wmcpuload-1.0.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	coto@core.de
 HOMEPAGE=	http://seiichisato.jp/dockapps/
 COMMENT=	Dockable CPU monitor
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

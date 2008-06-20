@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2008/04/15 18:04:08 drochner Exp $
+# $NetBSD: Makefile,v 1.58 2008/05/29 11:32:26 drochner Exp $
 #
 
 DISTNAME=		gnome-applets-2.22.2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME2 panel applets
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		gst-plugins0.10-esound>=0.10.0:../../audio/gst-plugins0.10-esound
 BUILD_DEPENDS+=		gst-plugins0.10-oss>=0.10.0:../../audio/gst-plugins0.10-oss

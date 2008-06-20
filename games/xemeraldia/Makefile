@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/09/03 00:56:29 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2006/12/27 13:37:37 joerg Exp $
 
 DISTNAME=	xemeraldia-0.3
 PKGNAME=	xemeraldia-0.31
@@ -12,6 +12,8 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Game of breaking blocks
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 BUILD_TARGET=	xemeraldia

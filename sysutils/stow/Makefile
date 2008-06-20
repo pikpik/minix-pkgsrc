@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/04/07 19:54:17 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2006/10/28 21:29:47 wiz Exp $
 #
 
 DISTNAME=	stow-1.3.3
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.gnu.org/software/stow/stow.html
 COMMENT=	Maps several separate packages into a tree without merging them
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	perl:run

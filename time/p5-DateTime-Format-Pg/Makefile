@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/10/24 13:14:59 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/06/10 11:23:14 abs Exp $
 
 DISTNAME=	DateTime-Format-Pg-0.16001
 PKGNAME=	p5-${DISTNAME}
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DateTime/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DateTime-Format-Pg/
 COMMENT=	Parse and format PostgreSQL dates and times
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-DateTime-Format-Builder>=0.72:../../time/p5-DateTime-Format-Builder
 DEPENDS+=	p5-DateTime-TimeZone>=0.05:../../time/p5-DateTime-TimeZone

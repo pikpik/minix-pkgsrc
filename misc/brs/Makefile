@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/04/11 21:46:33 tv Exp $
+# $NetBSD: Makefile,v 1.8 2007/12/02 08:58:25 rillig Exp $
 #
 
 DISTNAME=	brs.4.00.l1
@@ -11,6 +11,7 @@ MAINTAINER=	bcv@hub3.net
 HOMEPAGE=	http://bible.theverge.com/brs.html
 COMMENT=	Interactive King James Version Bible
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/bible
 BUILD_TARGET=	bible

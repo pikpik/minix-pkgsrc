@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2007/02/06 18:59:42 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2007/07/31 13:07:05 tron Exp $
 
 DISTNAME=	WMMail.app-0.64
 PKGNAME=	wmmail-0.64
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	xbiff like "mail-checker" for WindowMaker
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_SRC_ON_FTP=	already in MASTER_SITE_LOCAL
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2001/06/11 06:34:37 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2003/07/17 21:42:01 grant Exp $
 
 DISTNAME=	opendis-0.0.3
 CATEGORIES=	graphics
@@ -7,6 +7,8 @@ MASTER_SITES=	http://ods.sourceforge.net/dl/
 MAINTAINER=	sommerfeld@NetBSD.org
 HOMEPAGE=	http://ods.sourceforge.net/
 COMMENT=	Download images from Flashpoint Digita-based cameras
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 #USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

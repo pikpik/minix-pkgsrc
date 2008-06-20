@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2007/06/12 02:55:16 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.52 2008/01/09 19:16:15 reed Exp $
 #
 
 DISTNAME=       siag-3.6.1
@@ -9,6 +9,8 @@ MASTER_SITES=   ftp://siag.nu/pub/siag/		\
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=       http://siag.nu/
 COMMENT=	Poor man's office suite with spreadsheet, word processor, etc
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 #DEPENDS+=	gv>=3.5.8nb1:../../print/gv
 #DEPENDS+=	gnuplot>=3.7:../../graphics/gnuplot

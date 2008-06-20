@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/10/12 23:06:27 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2008/05/11 19:10:30 tonio Exp $
 #
 
 DISTNAME=	weechat-0.2.6
@@ -11,6 +11,7 @@ HOMEPAGE=	http://weechat.flashtux.org/
 COMMENT=	Lightweight and user friendly curses based IRC client
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt

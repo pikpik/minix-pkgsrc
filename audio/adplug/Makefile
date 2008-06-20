@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/09/10 16:02:26 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/19 16:30:45 joerg Exp $
 #
 
 DISTNAME=	adplug-2.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	jfranz@bsdprojects.net
 HOMEPAGE=	http://adplug.sourceforge.net/
 COMMENT=	AdLib emulator library supporting many formats
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

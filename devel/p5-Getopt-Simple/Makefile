@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/08/10 19:01:24 gdt Exp $
+# $NetBSD: Makefile,v 1.10 2008/05/25 21:01:04 joerg Exp $
 
 DISTNAME=	Getopt-Simple-1.48
 PKGNAME=	p5-${DISTNAME}
@@ -12,6 +12,7 @@ HOMEPAGE=	http://search.cpan.org/~rsavage/Getopt-Simple/
 COMMENT=	Simple Getopt wrapper
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Getopt/Simple/.packlist
 

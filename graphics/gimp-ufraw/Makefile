@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2008/01/18 05:06:40 tnn Exp $
+# $NetBSD: Makefile,v 1.47 2008/03/06 14:53:51 wiz Exp $
 
 DISTNAME=		ufraw-0.13
 PKGNAME=		gimp-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ufraw/}
 MAINTAINER=		gdt@NetBSD.org
 HOMEPAGE=		http://ufraw.sourceforge.net/
 COMMENT=		GIMP plug-in for raw digicam import
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

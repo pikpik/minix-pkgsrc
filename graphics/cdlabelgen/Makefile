@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/12/05 20:50:19 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2005/12/30 15:00:02 ben Exp $
 
 DISTNAME=	cdlabelgen-3.6.0
 CATEGORIES=	graphics
@@ -9,11 +9,15 @@ MAINTAINER=	cube@NetBSD.org
 HOMEPAGE=	http://www.aczoom.com/tools/cdinsert/
 COMMENT=	Generate frontcards and traycards for CDs
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=	perl:run
 USE_LANGUAGES=	# empty
 
 MAKE_ENV+=	SED=${SED:Q}
 MAKE_ENV+=	MV=${MV:Q}
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 post-extract:
 	cd ${WRKSRC} && ${CHMOD} go+r *

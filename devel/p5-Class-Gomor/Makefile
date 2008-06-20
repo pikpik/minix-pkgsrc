@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2007/01/03 14:02:57 adrianp Exp $
 
 DISTNAME=	Class-Gomor-1.01
 PKGNAME=	p5-${DISTNAME}
@@ -9,6 +9,7 @@ MAINTAINER=	adrianp@NetBSD.org
 COMMENT=	Another class and object builder
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Gomor/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:52 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/03/24 19:21:29 joerg Exp $
 
 DISTNAME=	bing-1.0.4
 CATEGORIES=	net
@@ -17,7 +17,7 @@ LDFLAGS+=	-lsocket -lnsl
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8 share/doc/bing
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/bing
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/bing
 
 .include "../../mk/bsd.pkg.mk"
 

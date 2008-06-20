@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2006/03/20 18:15:38 jlam Exp $
 #
 
 DISTNAME=		ocrad-0.13
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/ocrad/ocrad.html
 COMMENT=		GNU OCR (Optical Character Recognition) program
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 USE_PKGLOCALEDIR=	yes

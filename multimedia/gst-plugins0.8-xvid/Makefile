@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2006/04/06 06:22:25 reed Exp $
+# $NetBSD: Makefile,v 1.7 2006/04/17 14:52:11 wiz Exp $
 #
 
 GST_PLUGINS0.8_NAME=	xvid
 GST_PLUGINS0.8_DIR=	ext/xvid
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.xvidcore+=	xvidcore>=1.0.3nb1
 

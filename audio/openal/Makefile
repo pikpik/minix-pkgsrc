@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/08/30 15:01:46 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2007/09/15 11:45:57 joerg Exp $
 
 DISTNAME=	openal-0.0.8
 PKGREVISION=	2
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.openal.org/openal_webstf/downloads/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openal.org/
 COMMENT=	3D positional spatialized sound library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake makeinfo
 USE_LIBTOOL=		yes

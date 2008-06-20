@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/10/14 08:02:37 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2007/02/18 02:39:23 wiz Exp $
 
 DISTNAME=	BSD-Resource-1.28
 PKGNAME=	p5-${DISTNAME}
@@ -11,6 +11,7 @@ HOMEPAGE=	http://search.cpan.org/dist/BSD-Resource/
 COMMENT=	Perl interface to BSD process resources library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/BSD/Resource/.packlist
 

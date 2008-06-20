@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/28 21:53:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/10 12:05:21 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	x264
 GST_PLUGINS0.10_DIRS=	ext/x264
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-bad/Makefile.common"
 

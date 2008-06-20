@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/05/25 20:49:39 tron Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/05 19:31:21 drochner Exp $
 
 DISTNAME=		wireshark-1.0.0
 PKGREVISION=		1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 OWNER=			tron@NetBSD.org
 HOMEPAGE=		http://www.wireshark.org/
 COMMENT=		Network protocol analyzer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		ethereal-[0-9]*
 

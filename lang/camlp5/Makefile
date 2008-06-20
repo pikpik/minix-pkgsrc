@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/05/03 18:12:13 degroote Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/16 14:08:07 joerg Exp $
 #
 
 DISTNAME=	camlp5-5.08
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://pauillac.inria.fr/~ddr/camlp5/
 COMMENT=	Camlp5 is a preprocessor-pretty-printer of ocaml
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	c # needed for optimised compiler

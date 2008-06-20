@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/09/21 13:04:14 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2008/03/06 14:53:53 wiz Exp $
 
 DISTNAME=	vino-2.18.1
 PKGREVISION=	4
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	VNC server for GNOME
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes

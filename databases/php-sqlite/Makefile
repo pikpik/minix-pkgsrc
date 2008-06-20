@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:10 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2006/06/02 18:27:55 joerg Exp $
 
 MODNAME=		SQLite
 PKGMODNAME=		sqlite
@@ -7,6 +7,8 @@ PECL_VERSION=		1.0.3
 CATEGORIES+=		databases
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		PHP extension for SQLite 2.x databases
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		php-sqlite-[0-9]*
 
