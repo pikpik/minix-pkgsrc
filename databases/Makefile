@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.248 2008/06/03 11:04:57 ghen Exp $
+# $NetBSD: Makefile,v 1.249 2008/06/18 22:23:26 gdt Exp $
 #
 
 COMMENT=	Databases
@@ -100,6 +100,7 @@ SUBDIR+=	p5-Palm
 SUBDIR+=	p5-Rose-DB
 SUBDIR+=	p5-Rose-DB-Object
 SUBDIR+=	p5-SQL-Abstract
+SUBDIR+=	p5-SQL-Abstract-Limit
 SUBDIR+=	p5-SQL-ReservedWords
 SUBDIR+=	p5-SQL-Statement
 SUBDIR+=	p5-gdbm
