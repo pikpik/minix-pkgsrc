@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/bbstoreaccounts
+bin/bbstored
+bin/bbstored-certs
+bin/bbstored-config
+bin/raidfile-config
