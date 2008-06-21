@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/PyRSS2Gen.py
+${PYSITELIB}/PyRSS2Gen.pyc
+${PYSITELIB}/PyRSS2Gen.pyo
