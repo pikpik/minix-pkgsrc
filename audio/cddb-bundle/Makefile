@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/09/22 06:33:30 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2008/01/18 05:06:19 tnn Exp $
 #
 
 DISTNAME=	cddb.bundle-0.2
@@ -11,10 +11,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gsburn.sourceforge.net/
 COMMENT=	CDDB client bundle
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/cddb.bundle
 NO_CONFIGURE=	yes
 USE_LANGUAGES=	objc
-MAKE_ENV+=	ADDITIONAL_CPPFLAGS="-Wno-import"
+MAKE_ENV+=	ADDITIONAL_CPPFLAGS="-Wno-import" \
+		GNUSTEP_INSTALLATION_DIR=${PREFIX}/share/GNUstep/Local/
 MAKE_FILE=	GNUmakefile
 
 .include "../../devel/gnustep-base/buildlink3.mk"
