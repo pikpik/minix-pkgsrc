@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/pidgin/LaTeX.so
+share/doc/pidgin-latex/README
+@dirrm share/doc/pidgin-latex
+@dirrm lib/pidgin
