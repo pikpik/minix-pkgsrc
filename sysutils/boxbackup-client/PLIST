@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/bbackupctl
+bin/bbackupd
+bin/bbackupd-config
+bin/bbackupquery
