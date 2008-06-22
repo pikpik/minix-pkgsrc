@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2008/03/03 17:45:33 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/04/04 15:30:00 jlam Exp $
 
-DISTNAME=	ZenTest-3.9.2
+DISTNAME=	ZenTest-3.10.0
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
