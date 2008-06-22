@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.714 2008/06/08 17:56:45 adrianp Exp $
+# $NetBSD: Makefile,v 1.715 2008/06/21 23:16:51 adrianp Exp $
 #
 
 COMMENT=	Networking tools
@@ -150,6 +150,7 @@ SUBDIR+=	httping
 SUBDIR+=	httptunnel
 SUBDIR+=	icsi-finger
 SUBDIR+=	iftop
+SUBDIR+=	inadyn
 SUBDIR+=	ipcalc
 SUBDIR+=	ipcheck
 SUBDIR+=	iperf
