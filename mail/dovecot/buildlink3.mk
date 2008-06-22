@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2007/08/27 10:38:51 ghen Exp $
+# $NetBSD$
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 DOVECOT_BUILDLINK3_MK:=			${DOVECOT_BUILDLINK3_MK}+
@@ -14,7 +14,7 @@ BUILDLINK_PACKAGES+=			dovecot
 BUILDLINK_ORDER:=			${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}dovecot
 
 .if !empty(DOVECOT_BUILDLINK3_MK:M+)
-BUILDLINK_API_DEPENDS.dovecot+=		dovecot>=1.0.3nb1
+BUILDLINK_API_DEPENDS.dovecot+=		dovecot>=1.1beta16
 BUILDLINK_PKGSRCDIR.dovecot?=		../../mail/dovecot
 .endif
 
