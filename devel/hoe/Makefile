@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/11 03:42:06 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/04 15:14:49 jlam Exp $
 
-DISTNAME=	hoe-1.5.1
+DISTNAME=	hoe-1.6.0
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
