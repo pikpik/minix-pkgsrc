@@ -1,3 +1,7 @@
 @comment $NetBSD$
 bin/pfstat
+bin/pfstatd
 man/man8/pfstat.8
+man/man8/pfstatd.8
+share/examples/pfstat/pfstat.conf.example
+@dirrm share/examples/pfstat
