@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:18:33 jlam Exp $
 
-DISTNAME=	rspec-1.1.3
+DISTNAME=	rspec-1.1.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel
 
