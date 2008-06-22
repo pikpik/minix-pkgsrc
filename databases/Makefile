@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2008/06/18 22:23:26 gdt Exp $
+# $NetBSD: Makefile,v 1.250 2008/06/20 15:16:20 he Exp $
 #
 
 COMMENT=	Databases
@@ -189,6 +189,7 @@ SUBDIR+=	rrdtool
 SUBDIR+=	ruby-DBD-mysql
 SUBDIR+=	ruby-DBD-postgresql
 SUBDIR+=	ruby-DBD-sqlite
+SUBDIR+=	ruby-DBD-sqlite3
 SUBDIR+=	ruby-DBI
 SUBDIR+=	ruby-activerecord
 SUBDIR+=	ruby-activerecord-odbc
