@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/03/03 17:45:37 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/04 15:19:03 jlam Exp $
 
-DISTNAME=	rubyforge-0.4.5
+DISTNAME=	rubyforge-1.0.0
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
