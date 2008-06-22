@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2008/04/04 15:19:46 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/04/13 05:25:09 jlam Exp $
 
-DISTNAME=	tmail-1.2.3
+DISTNAME=	tmail-1.2.3.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	mail
 
