@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/13 06:06:40 obache Exp $
 #
 
 DISTNAME=	tomoe-gtk-0.6.0
@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config msgfmt
 USE_PKGLOCALEDIR=	yes
 
 PKGCONFIG_OVERRIDE+=	tomoe-gtk.pc.in
