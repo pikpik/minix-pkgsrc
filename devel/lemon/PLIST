@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/lemon
+share/lemon/lempar.c
+@dirrm share/lemon
