@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2008/04/28 15:09:16 tnn Exp $
+# $NetBSD: Makefile,v 1.64 2008/05/14 15:26:14 obache Exp $
 
 DISTNAME=	cairo-1.6.4
 PKGREVISION=	2
@@ -10,6 +10,8 @@ HOMEPAGE=	http://cairographics.org/
 COMMENT=	Vector graphics library with cross-device output support
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES+=		c99
 USE_LIBTOOL=		yes
