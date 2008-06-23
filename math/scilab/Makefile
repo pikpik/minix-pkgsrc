@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2007/10/05 23:15:21 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.74 2007/10/07 20:35:04 dmcmahill Exp $
 #
 
 DISTNAME=	${SCIBASE}-src
@@ -27,6 +27,7 @@ USE_TOOLS+=		tee
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-local-xaw
+CONFIGURE_ARGS+=	--without-java
 
 EVAL_PREFIX+=		TCL_PREFIX=tcl
 EVAL_PREFIX+=		TK_PREFIX=tk
