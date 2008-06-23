@@ -18,6 +18,12 @@ BUILDLINK_PKGSRCDIR.rrdtool?=	../../databases/rrdtool
 
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/libart/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../fonts/fontconfig/buildlink3.mk"
+.include "../../devel/pango/buildlink3.mk"
+.include "../../graphics/cairo/buildlink3.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
+.include "../../devel/glib2/buildlink3.mk"
+.include "../../x11/pixman/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
