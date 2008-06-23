@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.941 2008/06/19 22:36:07 epg Exp $
+# $NetBSD: Makefile,v 1.942 2008/06/23 04:07:30 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -248,6 +248,7 @@ SUBDIR+=	ko-po-check
 SUBDIR+=	kscope
 SUBDIR+=	lcc
 SUBDIR+=	ldapsdk
+SUBDIR+=	lemon
 SUBDIR+=	libFoundation
 SUBDIR+=	libarena
 SUBDIR+=	libargparse
