@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/03/15 05:09:07 bjs Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/21 16:34:45 xtraeme Exp $
 #
 
 .include "${.CURDIR}/../scmgit/Makefile.common"
@@ -27,6 +27,10 @@ INSTALL_TARGET=		install
 PERL5_CONFIGURE= 	no
 PERL5_PACKLIST=		auto/Git/.packlist
 REPLACE_PERL+=		*.perl */*.perl */*/*.perl
+
+GITCOREDIR=		${PREFIX}/libexec/git-core/
+
+CONFIGURE_ENV+=		gitexecdir=${GITCOREDIR:Q}
 
 #.include "../../mk/emacs.mk" # XXX TODO (see patch-ad)
 
