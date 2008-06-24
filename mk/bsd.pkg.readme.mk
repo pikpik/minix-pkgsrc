@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.readme.mk,v 1.20 2008/04/18 14:26:36 joerg Exp $
+# $NetBSD: bsd.pkg.readme.mk,v 1.21 2008/06/23 01:38:54 abs Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and encapsulates the
 # code to produce README.html files in each package directory.
@@ -327,10 +327,10 @@ print-summary-data:
 	else								\
 		${ECHO} "notfor ${PKGPATH} not ${NOT_FOR_PLATFORM}";	\
 	fi;
-	if [ -n "${OWNER}" ]; then
-		@${ECHO} "owner ${PKGPATH} ${OWNER}";			\
+	if [ -n "${OWNER}" ]; then					\
+		${ECHO} "owner ${PKGPATH} ${OWNER}";			\
 	else								\
-		@${ECHO} "maintainer ${PKGPATH} ${MAINTAINER}";		\
+		${ECHO} "maintainer ${PKGPATH} ${MAINTAINER}";		\
 	fi
 	@${ECHO} "categories ${PKGPATH} ${CATEGORIES}"
 	@if [ -f ${DESCR_SRC} ]; then					\
