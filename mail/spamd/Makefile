@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/05/18 10:03:30 peter Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/04 17:57:19 jlam Exp $
 
 DISTNAME=		spamd-20060330
 CATEGORIES=		mail
@@ -74,5 +74,5 @@ do-install:
 		${DESTDIR}${PREFIX}/libexec
 	${INSTALL_DATA} ${WRKSRC}/etc/spamd.conf ${DESTDIR}${PREFIX}/share/examples/spamd
 
-.include "../../security/pflkm/buildlink3.mk"
+.include "../../mk/pf.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
