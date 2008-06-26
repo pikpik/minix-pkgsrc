@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- configure.orig	2008-06-26 15:39:25.000000000 -0400
++++ configure	2008-06-26 15:39:53.000000000 -0400
+@@ -16819,6 +16819,11 @@
+ 
+         EXTRA_BINARIES="wine-pthread"
+  ;;
++      netbsd*)
++        MAIN_BINARY="wine-kthread"
++
++        EXTRA_BINARIES="wine-pthread"
++ ;;
+     esac
+     ;;
+ esac
