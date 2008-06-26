@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- digikam/utilities/cameragui/cameracontroller.cpp.orig	2007-12-22 19:19:47 +0200
++++ digikam/utilities/cameragui/cameracontroller.cpp
+@@ -22,6 +22,11 @@
+  * 
+  * ============================================================ */
+ 
++extern "C"
++{
++#include <unistd.h>
++}
++
+ // C++ includes.
+ 
+ #include <typeinfo>
