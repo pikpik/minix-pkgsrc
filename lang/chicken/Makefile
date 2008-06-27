@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/04/07 18:23:06 tnn Exp $
+# $NetBSD: Makefile,v 1.34 2008/05/12 20:31:08 degroote Exp $
 #
 
 DISTNAME=	chicken-3.2.0
@@ -24,7 +24,7 @@ BUILD_TARGET=		all chicken.info
 .include "../../mk/bsd.prefs.mk"
 
 # PLATFORM detection:
-.if !empty(OPSYS:M*BSD)
+.if !empty(OPSYS:M*BSD)  || ${OPSYS} == "DragonFly"
 PLATFORM=	bsd
 .elif ${OPSYS} == "Linux"
 PLATFORM=	linux
