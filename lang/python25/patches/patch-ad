@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- Modules/_ctypes/libffi/configure.orig	2007-09-05 02:47:16 +0300
 +++ Modules/_ctypes/libffi/configure	2008-05-08 23:56:47 +0300
 @@ -3486,6 +3486,7 @@
