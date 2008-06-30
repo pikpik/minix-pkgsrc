@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2008/04/14 16:05:35 he Exp $
+# $NetBSD: Makefile,v 1.66 2008/06/23 16:24:30 he Exp $
 
 DISTNAME=	rrdtool-1.3.0
 PKGREVISION=	1
@@ -11,7 +11,6 @@ COMMENT=	Data analysis tool generating graphical representations
 #LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-DEPENDS+=	pkg-config>=0.23:../../devel/pkg-config
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config perl
