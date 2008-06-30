@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.3 2007/04/21 05:22:58 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/06/10 02:20:42 jnemeth Exp $
 
 PKGNAME=	wbm-${WBM_NAME}-${WBM_MOD_REV}
+PKGREVISION=	1
 DISTNAME=	${WBM_NAME}-${WBM_MOD_REV}.gpl
 MASTER_SITES=	http://download.webmin.com/download/virtualmin/
 
 WBM_NAME=	virtual-server
 WBM_STD_MODULE=	no
 WBM_MOD_REV=	3.572
-WBM_DEPEND_MODULES=	net quota
+WBM_DEPEND_MODULES=	net quota useradmin sendmail apache mysql
 
 COMMENT=	Webmin module to allow users to control their own virtual servers
 
