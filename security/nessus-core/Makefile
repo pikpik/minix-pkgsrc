@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2006/06/11 14:45:50 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2008/01/18 05:09:38 tnn Exp $
 
 .include 	"../../security/nessus/Makefile.common"
 
 DISTNAME=	nessus-core-${VERS}
-PKGREVISION=	1
+PKGREVISION=	2
 
 COMMENT=	Core module of the Nessus Network Security Scanner
 
@@ -14,7 +14,8 @@ USE_TOOLS+=		pkg-config
 CONFIGURE_ARGS+=	--enable-gtk
 CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
-CONFIGURE_ARGS+=	--sharedstatedir=${PKG_SYSCONFBASE:Q}
+CONFIGURE_ARGS+=	--sharedstatedir=${VARBASE:Q}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 CONFIGURE_ENV+=		ac_cv_path_GTKCONFIG="pkg-config gtk+-2.0" \
 			ac_cv_path_GLIBCONFIG="pkg-config glib-2.0"
 
