@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/01/12 17:56:05 tnn Exp $
+# $NetBSD: Makefile,v 1.18 2008/06/12 02:14:37 joerg Exp $
 #
 
 DISTNAME=	dpkg_1.13.25
@@ -30,6 +30,12 @@ CONFIGURE_ARGS+=	--with-start-stop-daemon=no
 CONFIGURE_ARGS+=	--with-sgml-doc=no
 CONFIGURE_ARGS+=	--with-admindir=${VARBASE}/db/dpkg
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/share/dpkg
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--enable-linker-optimisations=no
+.endif
 
 post-extract:
 	cd ${FILESDIR} && cp obstack.* ${WRKSRC}/lib/
