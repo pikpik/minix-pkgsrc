@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2008/06/19 22:33:25 epg Exp $
+# $NetBSD: Makefile,v 1.35 2008/06/29 11:36:01 gdt Exp $
 
 PKGNAME=	subversion-${SVNVER}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	Version control system, meta-package
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -10,11 +10,15 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	subversion-base-${SVNVER}{,nb[0-9]*}:../../devel/subversion-base
 DEPENDS+=	${APACHE_PKG_PREFIX}-subversion-${SVNVER}{,nb[0-9]*}:../../www/ap2-subversion
-DEPENDS+=	java-subversion-${SVNVER}{,nb[0-9]*}:../../devel/java-subversion
 DEPENDS+=	p5-subversion-${SVNVER}{,nb[0-9]*}:../../devel/p5-subversion
 DEPENDS+=	${PYPKGPREFIX}-subversion-${SVNVER}{,nb[0-9]*}:../../devel/py-subversion
 DEPENDS+=	${RUBY_PKGPREFIX}-subversion-${SVNVER}{,nb[0-9]*}:../../devel/ruby-subversion
 
+.if !empty(PKG_OPTIONS:Mjava)
+# The standard implementation of java is non-portable and non-free, so
+# we do not depend on it by default.
+DEPENDS+=	java-subversion-${SVNVER}{,nb[0-9]*}:../../devel/java-subversion
+.endif
 
 CATEGORIES+=	meta-pkgs
 
