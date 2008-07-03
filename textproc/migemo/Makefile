@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/02/10 13:08:51 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/19 14:54:26 taca Exp $
 
 .include "../../textproc/migemo/Makefile.common"
 
 PKGNAME=		${RUBY_PKGPREFIX}-migemo-${MIGEMO_VERSION}
+PKGREVISION=		1
 
 COMMENT=		Japanese text search tool/library
 
