@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2008/04/11 15:27:22 abs Exp $
+# $NetBSD: Makefile,v 1.31 2008/04/25 20:39:14 joerg Exp $
 #
 
-DISTNAME=	trac-0.10.4
+DISTNAME=	trac-0.10.5
 CATEGORIES=	devel www
 MASTER_SITES=	http://ftp.edgewall.org/pub/trac/ \
 		ftp://ftp.edgewall.org/pub/trac/
