@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2008/05/26 02:13:19 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:19 joerg Exp $
 #
 
 DISTNAME=	BillardGL-1.75
 PKGNAME=	${DISTNAME:S/BillardGL/billardgl/}
 PKGREVISION=	1
 CATEGORIES=	games
-MASTER_SITES=	http://wesley.informatik.uni-freiburg.de/~nopper/BillardGL/download/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=billardgl/}
 
 MAINTAINER=	wojtek@3miasto.net
 HOMEPAGE=	http://www.tobias-nopper.de/BillardGL/
