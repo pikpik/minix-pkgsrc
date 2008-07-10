@@ -1,0 +1,9 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	@MKDIR@ @VARBASE@/log
+	@TOUCH@ @VARBASE@/log/bftpd.log
+	@MKDIR@ @VARBASE@/run/bftpd
+	;;
+esac
