@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/06/10 02:20:42 jnemeth Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/30 05:05:47 jnemeth Exp $
 
 PKGNAME=	wbm-${WBM_NAME}-${WBM_MOD_REV}
-PKGREVISION=	1
+PKGREVISION=	2
 DISTNAME=	${WBM_NAME}-${WBM_MOD_REV}.gpl
 MASTER_SITES=	http://download.webmin.com/download/virtualmin/
 
