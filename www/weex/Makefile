@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/10/05 13:38:13 salo Exp $
+# $NetBSD: Makefile,v 1.10 2008/04/19 05:38:16 obache Exp $
 
 DISTNAME=	weex-2.6.1.5
 CATEGORIES=	www
@@ -19,6 +19,10 @@ WEEX_DOCS=	AUTHORS BUGS BUGS.ja COPYING COPYING.ja \
 		THANKS TODO TODO.ja
 
 WEEX_DOCDIR=	share/doc/weex
+
+.include "../../mk/bsd.prefs.mk"
+
+CFLAGS+=	-DG_VA_COPY=va_copy
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/${WEEX_DOCDIR}
