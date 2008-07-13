@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/04/25 15:29:34 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/05/25 19:50:05 joerg Exp $
 #
 
 DISTNAME=	bsdtar-2.5.4b
@@ -60,5 +60,7 @@ pre-configure:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bsdtar ${DESTDIR}${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/tar/bsdtar.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+
+.include "../../archivers/libarchive/hacks.mk"
 
 .include "../../mk/bsd.pkg.mk"

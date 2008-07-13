@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/04/25 15:27:30 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2008/05/25 19:50:05 joerg Exp $
 #
 
 DISTNAME=	libarchive-2.5.4b
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--disable-bsdtar
 
 do-extract:
 	${CP} -r ${FILESDIR} ${WRKSRC}
+
+.include "../../archivers/libarchive/hacks.mk"
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
