@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.6 2007/10/29 12:38:02 uebayasi Exp $
 
 PKGNAME=	emacs-nox11-${EMACSVERSION}a
+PKGREVISION=	13
 CATEGORIES=	editors
 COMMENT_EXTRA=	: non-X11 version
 
