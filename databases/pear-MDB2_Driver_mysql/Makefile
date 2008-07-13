@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/30 21:05:16 adrianp Exp $
 
 DISTNAME=	MDB2_Driver_mysql-1.4.1
+PKGREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	adrianp@NetBSD.org
