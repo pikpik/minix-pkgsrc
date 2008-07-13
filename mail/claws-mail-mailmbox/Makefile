@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/05/12 02:25:40 smb Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:33 joerg Exp $
 #
 
 DISTNAME=	mailmbox-1.14.1
@@ -11,7 +11,7 @@ COMMENT=	Handles mailboxes in mbox format
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	claws-mail-3.4.0{,nb[0-9]*}:../../mail/claws-mail
+DEPENDS+=	claws-mail-3.5.0{,nb[0-9]*}:../../mail/claws-mail
 
 .include "../../mk/bsd.prefs.mk"
 

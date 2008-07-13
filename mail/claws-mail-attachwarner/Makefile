@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/05/12 02:25:39 smb Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:33 joerg Exp $
 #
 
 DISTNAME=	attachwarner-0.2.12
@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SRC+=	PLIST
 
-DEPENDS+=	claws-mail-3.4.0{,nb[0-9]*}:../../mail/claws-mail
+DEPENDS+=	claws-mail-3.5.0{,nb[0-9]*}:../../mail/claws-mail
 
 .include "../../mk/bsd.prefs.mk"
 

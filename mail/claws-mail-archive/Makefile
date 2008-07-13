@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:33 joerg Exp $
+# $NetBSD$
 #
 
-DISTNAME=	cachesaver-0.10.7
-PKGNAME=	claws-mail-cachesaver-0.10.7
+DISTNAME=	archive-0.6
+PKGNAME=	claws-mail-archive-0.6
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	smb@NetBSD.org
-COMMENT=	Saves Claws-Mail metadata every 60 seconds
+COMMENT=	Adds archiving to Claws-Mail
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -20,6 +20,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES+=	c
 
+.include "../../archivers/libarchive/buildlink3.mk"
 .include "../../mail/claws-mail/Makefile.vers"
 .include "../../mail/claws-mail/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

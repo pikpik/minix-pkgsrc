@@ -1,0 +1,10 @@
+@comment $NetBSD$
+include/claws-mail/plugins/archive/archiver.h
+include/claws-mail/plugins/archive/archiver_prefs.h
+lib/claws-mail/plugins/archive.la
+share/locale/es/LC_MESSAGES/archive.mo
+share/locale/fr/LC_MESSAGES/archive.mo
+share/locale/pt_BR/LC_MESSAGES/archive.mo
+@dirrm lib/claws-mail/plugins
+@dirrm include/claws-mail/plugins/archive
+@dirrm include/claws-mail/plugins
