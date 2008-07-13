@@ -1,7 +1,6 @@
 # $NetBSD: Makefile,v 1.13 2006/11/10 20:15:17 rillig Exp $
 
-DISTNAME=	libsmi-0.4.5
-PKGREVISION=	2
+DISTNAME=	libsmi-0.4.8
 CATEGORIES=	devel net
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/libsmi/
 
